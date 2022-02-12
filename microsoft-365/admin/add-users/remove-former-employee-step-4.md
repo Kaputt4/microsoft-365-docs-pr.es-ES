@@ -1,5 +1,5 @@
 ---
-title: 'Paso 4: Dar a otro empleado acceso a OneDrive y Outlook datos'
+title: 'Paso 4: Reenviar el correo electrónico de un antiguo empleado a otro empleado o convertirlo a un buzón compartido'
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,173 +19,44 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
-- AdminTemplateSet
 - m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Siga los pasos de este artículo para dar a otro empleado acceso a los datos de OneDrive y Outlook antiguos.
-ms.openlocfilehash: 8825ffa78412bd9f8de60a18edc2bfac73f7bae1
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+description: Siga estos pasos para reenviar el correo electrónico de un antiguo empleado a otro empleado o convertirlo a un buzón compartido.
+ms.openlocfilehash: 910fb8c30982cc02c4d71f1236fd54095eda96c7
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520468"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765953"
 ---
-# <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Paso 4: Dar a otro empleado acceso a OneDrive y Outlook datos
+# <a name="step-4---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>Paso 4: Reenviar el correo electrónico de un antiguo empleado a otro empleado o convertirlo a un buzón compartido
 
-Cuando un empleado abandone la organización, querrá obtener acceso a sus datos de OneDrive y Outlook, hacer una copia de seguridad y elegir si se entrega a otro empleado.
-  
-## <a name="access-a-former-users-onedrive-documents"></a>Obtener acceso a los documentos OneDrive de un usuario anterior
+En este paso, se asigna la dirección de correo electrónico del antiguo empleado a otro empleado o se convierte el buzón del usuario en un buzón compartido.
 
-Si quitas la licencia de un usuario pero no eliminas la cuenta, puedes darte acceso al contenido en la cuenta del usuario OneDrive. Si elimina la cuenta del usuario, tiene 30 días de forma predeterminada para obtener acceso a los datos de OneDrive usuario anterior. [Obtenga información sobre cómo establecer la retención OneDrive usuarios eliminados](/onedrive/set-retention). Si no restaura una [cuenta de usuario](/office365/admin/add-users/restore-user) en este tiempo, se eliminará OneDrive contenido.
+## <a name="convert-former-employees-mailbox-to-a-shared-mailbox"></a>Convertir el buzón del antiguo empleado en un buzón compartido
 
-Para conservar los archivos OneDrive de un usuario anterior, primero dé acceso a su OneDrive y, a continuación, mueva los archivos que desea conservar.
+Al convertir el buzón de un usuario en un buzón compartido, se conserva todo el correo electrónico y el calendario existentes. Solo ahora está en un buzón compartido en el que varias personas podrán tener acceso a él en lugar de una persona. Puede volver a convertir un buzón compartido en un buzón de usuario (privado) más adelante si lo desea.
 
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.  
+- Crear un buzón compartido es la forma menos costosa de usar, ya que no tendrá que pagar una licencia siempre que el buzón sea inferior a **50 GB**. Si tiene más de 50 GB, tendrá que asignarle una licencia.
+- Si convierte el buzón en uno compartido, todos los mensajes de correo electrónico antiguos también estarán disponibles. Esto puede ocupar una gran cantidad de espacio.
+- Si configura el reenvío de correo electrónico, solo se enviarán *nuevos correos electrónicos* enviados al antiguo empleado al empleado actual.
 
-2. Seleccione un usuario.
+Siga estos pasos para [convertir el buzón del usuario en un buzón compartido](../email/convert-user-mailbox-to-shared-mailbox.md).
 
-3. En la página de propiedades del usuario, **seleccione OneDrive**. En **Obtener acceso a los archivos**, seleccione **Crear vínculo a archivos**.
+## <a name="forward-a-former-employees-email-to-another-employee"></a>Reenviar el correo electrónico de un antiguo empleado a otro empleado
 
-4. Seleccione el vínculo para abrir la ubicación del archivo. Descargue los archivos en el equipo o seleccione Mover  a o Copiar  para moverlos o copiarlos en su propio OneDrive o en una biblioteca compartida.
+ > [!IMPORTANT]
+ > Si configura el reenvío de correo electrónico o un buzón compartido, al final, no elimine la cuenta del antiguo empleado. Debe conservar la cuenta, puesto que se usa para anclar el reenvío de correo electrónico o el buzón compartido.
 
-> [!NOTE]
-> Puede mover o copiar hasta 500 MB de archivos y carpetas a la vez.<br/>
-> Al mover o copiar documentos que tienen historial de versiones, solo se mueve la versión más reciente.  
-
-También puede conceder acceso a otro usuario para obtener acceso a la información de un antiguo empleado OneDrive.
-
-1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración</a> como administrador global o administrador SharePoint administrador.
-
-    Si recibe un mensaje de que no tiene permiso para acceder al centro de administración, no tiene permisos de administrador en su organización.
-
-2. En el panel izquierdo, seleccione **Centros de** **administración SharePoint**\>. (Es posible que deba seleccionar **Mostrar todo** para ver la lista de centros de administración).
-
-3. Si aparece el SharePoint de administración clásico, seleccione Abrir ahora en  la parte superior de la página para abrir el centro SharePoint administración.
-
-4. En el panel izquierdo, seleccione **Más características**.
-
-5. En **Perfiles de usuario**, seleccione **Abrir**.
-
-6. En **Personas**, seleccione **Administrar perfiles de usuario**.
-
-7. Escriba el nombre del antiguo empleado y seleccione **Buscar**.
-
-8. Haga clic con el botón secundario en el usuario y, a continuación, elija **Administrar propietarios de colecciones de sitios**.
-
-9. Agregue el usuario a **administradores de la colección de sitios** y seleccione **Aceptar**.
-
-10. Ahora, el usuario podrá acceder a la dirección URL del antiguo OneDrive mediante la dirección URL OneDrive anterior. 
-
-### <a name="revoke-admin-access-to-a-users-onedrive"></a>Revocar el acceso de administrador a las OneDrive
-
-Puede darnos acceso al contenido en el OneDrive de un usuario, pero es posible que desee quitar el acceso cuando ya no lo necesite.
-
-1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración</a> como administrador global o administrador SharePoint administrador.
-
-    Si recibe un mensaje de que no tiene permiso para acceder al centro de administración, no tiene permisos de administrador en su organización.
-
-2. En el panel izquierdo, seleccione **Centros de** **administración SharePoint**\>. (Es posible que deba seleccionar **Mostrar todo** para ver la lista de centros de administración).
-
-3. Si aparece el SharePoint de administración clásico, seleccione Abrir ahora en  la parte superior de la página para abrir el centro SharePoint administración.
-
-4. En el panel izquierdo, seleccione **Más características**.
-
-5. En **Perfiles de usuario**, seleccione **Abrir**.
-
-6. En **Personas**, seleccione **Administrar perfiles de usuario**.
-
-7. Escriba el nombre del usuario y seleccione **Buscar**.
-
-8. Haga clic con el botón secundario en el usuario y, a continuación, elija **Administrar propietarios de colecciones de sitios**.
-
-9. Quite la persona que ya no necesita acceso a los datos del usuario y, a continuación, seleccione **Aceptar**.
-
-## <a name="access-the-outlook-data-of-a-former-user"></a>Obtener acceso Outlook datos de un usuario anterior
-
-Para guardar los mensajes de correo electrónico, el calendario, las tareas y los contactos del antiguo empleado, exporte la información a un archivo de Outlook datos (.pst).
-  
-1. [Agregue el correo electrónico del](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) antiguo empleado a su Outlook (Si restablece la contraseña del [usuario, puede](reset-passwords.md) establecerlo en algo que solo conoce).
-
-2. En Outlook, seleccione **Archivo**.
-
-    ![Este es el aspecto de la cinta de opciones en Outlook 2016.](../../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
-  
-3. Seleccione **Abrir &amp; Import/Export** \> **.**
-
-    ![Import/Export comando en la vista Backstage.](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
-  
-4. Seleccione **Exportar a un archivo y, a** continuación, **seleccione Siguiente**.
-
-    ![Exportar a una opción de archivo en el Asistente para importar y exportar.](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
-  
-5. Seleccione **Archivo de datos de Outlook (.pst)** y, después, haga clic en **Siguiente**.
-
-6. Seleccione la cuenta que desea exportar seleccionando el nombre o la dirección de correo electrónico, como Mailbox - Anne Weiler o anne@contoso.com. Si desea exportar todo lo que hay en su cuenta, incluido el correo, el calendario, los contactos, las tareas y las notas, asegúrese de que la casilla Incluir **subcarpetas** está activada.
-
-    > [!NOTE]
-    > Puede exportar una cuenta a la vez. Si desea exportar varias cuentas, después de exportar una cuenta, repita estos pasos.
-  
-    ![Exportar Outlook cuadro de diálogo Archivo de datos con la carpeta superior seleccionada e Incluir subcarpetas activadas.](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
-  
-7. Seleccione **Siguiente**.
-
-8. Seleccione **Examinar** para seleccionar dónde guardar el archivo Outlook datos (.pst). Escriba un  *nombre de archivo* y, a continuación, **seleccione Aceptar** para continuar.
-
-    > [!NOTE]
-    > Si ha usado la exportación antes, aparecerán la ubicación de la carpeta anterior y el nombre del archivo. Escriba un  *nombre de archivo diferente*  antes de seleccionar **Aceptar**.
-  
-9. Si va a exportar a un Archivo de datos de Outlook (.pst) existente, en **Opciones**, especifique qué desea hacer cuando exporte elementos que ya existen en el archivo.
-
-10. Seleccione **Finalizar**.
-
-Outlook la exportación inmediatamente a menos que se cree un nuevo archivo de datos de Outlook (.pst) o se utilice un archivo protegido con contraseña.
-  
-- Si está creando un archivo de Outlook de datos (.pst), una contraseña opcional puede ayudar a proteger el archivo. Cuando aparezca **el cuadro de diálogo Crear Outlook** archivo de datos, escriba la contraseña  en los cuadros  Contraseña y  Comprobar contraseña y, a continuación, **seleccione Aceptar**. En el **Outlook de diálogo Contraseña** del archivo de datos, *escriba la contraseña* y, a continuación, seleccione **Aceptar**.
-
-- Si está exportando a un archivo de datos de Outlook existente (.pst) protegido con contraseña, en el cuadro de diálogo Contraseña del archivo de datos de Outlook, escriba la contraseña *y,* **a** continuación, seleccione **Aceptar**.
-
-Vea cómo exportar [o hacer una copia de seguridad del correo electrónico, los](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) contactos y el calendario en un Outlook archivo .pst en Outlook 2010.
-
-  > [!NOTE]
-  > De forma predeterminada, el correo electrónico está disponible sin conexión durante un período de 12 meses. Si es necesario, vea cómo aumentar [los datos disponibles sin conexión](/outlook/troubleshoot/mailboxes/only-subset-items-synchronized).
-
-### <a name="give-another-user-access-to-a-former-users-email"></a>Dar acceso a otro usuario al correo electrónico de un usuario anterior
-
-Para dar acceso a los mensajes de correo electrónico, el calendario, las tareas y los contactos del antiguo empleado a otro empleado, importe la información a la bandeja de entrada Outlook otro empleado.
-
-> [!NOTE]
-> También puede convertir [el buzón del usuario anterior en un](/office365/admin/email/convert-user-mailbox-to-shared-mailbox) buzón compartido o reenviar el correo electrónico de un antiguo empleado [a otro empleado](/office365/admin/add-users/remove-former-employee#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox).
-
-1. En Outlook, vaya a **Archivo** \> **Abrir &amp; Import/Export** \> **.**
-
-    Esto inicia el Asistente para importación y exportación.
-
-2. Seleccione **Importar de otro programa o archivo** y, luego, **Siguiente**.
-
-    ![Asistente para importar y exportar.](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
-  
-3. Seleccione **Outlook archivo de datos (.pst)** y seleccione **Siguiente**.
-
-4. Vaya al archivo .pst que desea importar.
-
-5. En **Opciones**, elija cómo desea tratar con duplicados
-
-6. Seleccione **Siguiente**.
-
-7. Si se asignó una contraseña al archivo Outlook datos (.pst), escriba la contraseña y, a continuación, seleccione **Aceptar**.
-
-8. Establezca las opciones para importar elementos. Normalmente, no es necesario cambiar la configuración predeterminada.
-
-9. Seleccione **Finalizar**.
-
-> [!NOTE]
-> Los pasos siguen siendo los mismos para obtener acceso a los datos de correo electrónico OneDrive un usuario existente.
-
-> [!TIP]
-> Si desea importar o restaurar solo algunos elementos de un archivo de datos de Outlook (.pst), puede abrir el archivo de Outlook datos. A continuación, en el panel de navegación, arrastre los elementos de Outlook carpetas de archivo de datos a las carpetas Outlook existentes.
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
+2. Seleccione el nombre del empleado que desea bloquear y, a continuación, seleccione la **pestaña** Correo.
+3. En **Reenvío de correo electrónico**, seleccione **Administrar reenvío de correo electrónico**.
+4. Active **Reenviar todo el correo electrónico enviado a este buzón**. En el **cuadro Dirección de reenvío** , escriba la dirección de correo electrónico del empleado actual que va a obtener el correo electrónico.
+5. Haga clic en **Guardar**.
+6. Recuerde no eliminar la cuenta del antiguo empleado.
 
 ### <a name="cancel-outlook-meetings"></a>Cancelar Outlook reuniones
 
@@ -195,10 +66,10 @@ Si la persona tenía reuniones que reservaban equipamiento o salas, no estarán 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Agregar y quitar administradores en una cuenta OneDrive (](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)artículo)
+[Abrir y usar un buzón compartido en Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd)
 
-[Restaurar un archivo OneDrive](/onedrive/restore-deleted-onedrive) (artículo)
+[Obtener acceso al buzón de otra persona](https://support.microsoft.com/office/access-another-person-s-mailbox-a909ad30-e413-40b5-a487-0ea70b763081)
 
-[OneDrive retención y eliminación](/onedrive/retention-and-deletion) (artículo)
+[Centro de administración de Exchange en Exchange Online](/exchange/exchange-admin-center)
 
-[Compartir archivos y carpetas de OneDrive](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07)
+[Administrador de los elementos de correo y calendario de otra persona](https://support.microsoft.com/office/manage-another-person-s-mail-and-calendar-items-afb79d6b-2967-43b9-a944-a6b953190af5)

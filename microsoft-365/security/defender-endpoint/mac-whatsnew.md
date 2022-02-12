@@ -1,7 +1,7 @@
 ---
 title: Novedades de Microsoft Defender para Endpoint en Mac
 description: Obtenga información sobre los cambios principales de versiones anteriores de Microsoft Defender para Endpoint en Mac.
-keywords: 'microsoft, defender, Microsoft Defender para Endpoint, mac, installation, macos, whatsnew'
+keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, installation, macos, whatsnew
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -12,12 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.topic: reference
 ms.technology: mde
+ms.openlocfilehash: 5382118753f3c865f6fceb7cd16a7a7953e7bfad
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767621"
 ---
-
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para Endpoint en Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]

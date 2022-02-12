@@ -14,22 +14,21 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9d9b764425807f45f41f0be5c57ad872223e0c3f
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a0b2a571be5f78818279a343d253709e05814908
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166307"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766024"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solucionar problemas de instalación de Microsoft Defender para Endpoint en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -71,7 +70,7 @@ Compruebe que el paquete que va a instalar coincide con la distribución y la ve
 |mdatp. Linux.x86_64.deb|Debian y Ubuntu 16.04, 18.04 y 20.04|
 |
 
-Para [la implementación manual,](linux-install-manually.md)asegúrese de que se han elegido el distro y la versión correctas.
+Para [la implementación manual](linux-install-manually.md), asegúrese de que se han elegido el distro y la versión correctas.
 
 ## <a name="installation-failed"></a>Error en la instalación
 
@@ -123,12 +122,12 @@ service mdatp status
     sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path> 
     ```
 
-    donde está para las distribuciones de Ubuntu y Debian y `<systemd_path>` `/lib/systemd/system` /usr/lib/systemd/system' para Rhel, CentOS, Oracle y SLES. A continuación, vuelva a ejecutar el paso 2.
+    donde `<systemd_path>` está `/lib/systemd/system` para las distribuciones de Ubuntu y Debian y /usr/lib/systemd/system' para Rhel, CentOS, Oracle y SLES. A continuación, vuelva a ejecutar el paso 2.
 
-4. Si los pasos anteriores no funcionan, compruebe si SELinux está instalado y en modo de aplicación. Si es así, intenta establecerlo en modo permisivo (preferiblemente) o deshabilitado. Se puede hacer estableciendo el parámetro en "permisivo" o "deshabilitado" en el archivo, seguido `SELINUX` `/etc/selinux/config` del reinicio. Consulta la página man de selinux para obtener más detalles.
+4. Si los pasos anteriores no funcionan, compruebe si SELinux está instalado y en modo de aplicación. Si es así, intenta establecerlo en modo permisivo (preferiblemente) o deshabilitado. Se puede hacer estableciendo el parámetro `SELINUX` en "permisivo" o "deshabilitado" `/etc/selinux/config` en el archivo, seguido del reinicio. Consulta la página man de selinux para obtener más detalles.
 Ahora intente reiniciar el servicio mdatp mediante el paso 2. Revert the configuration change immediately though for security reasons after trying it and reboot.
 
-5. Si `/opt` el directorio es un vínculo simbólico, cree un montaje de enlace para `/opt/microsoft` .
+5. Si `/opt` el directorio es un vínculo simbólico, cree un montaje de enlace para `/opt/microsoft`.
 
 6. Asegúrese de que el demonio tiene permiso ejecutable.
 
@@ -158,11 +157,11 @@ Ahora intente reiniciar el servicio mdatp mediante el paso 2. Revert the configu
     findmnt -T <path_of_EICAR_file>
     ```
 
-    Los sistemas de archivos compatibles actualmente para la actividad en tiempo de acceso se enumeran [aquí.](microsoft-defender-endpoint-linux.md#system-requirements) Los archivos fuera de estos sistemas de archivos no se examinarán.
+    Los sistemas de archivos compatibles actualmente para la actividad en tiempo de acceso se enumeran [aquí](microsoft-defender-endpoint-linux.md#system-requirements). Los archivos fuera de estos sistemas de archivos no se examinarán.
 
 ## <a name="command-line-tool-mdatp-isnt-working"></a>La herramienta de línea de comandos "mdatp" no funciona
 
-1. Si al ejecutar la herramienta de línea de `mdatp` comandos se produce un `command not found` error, ejecute el siguiente comando:
+1. Si al ejecutar la herramienta de línea de comandos `mdatp` se produce un error `command not found`, ejecute el siguiente comando:
 
     ```bash
     sudo ln -sf /opt/microsoft/mdatp/sbin/wdavdaemonclient /usr/bin/mdatp

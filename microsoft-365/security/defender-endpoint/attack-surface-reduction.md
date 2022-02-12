@@ -19,12 +19,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: m365initiative-m365-defender
 ms.date: 1/18/2022
-ms.openlocfilehash: e56ffd44976d11986b6ccb6b3e8bc5cbf71e530c
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 3f3daaa068f067c8d4ffbbf40a4d8ba1d32d04b9
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326950"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766446"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>Introducción a las reglas de reducción de superficie de ataque
 
@@ -102,6 +102,8 @@ Además, cuando se desencadenan ciertas reglas de reducción de superficie de at
 
 Las notificaciones y las alertas que se generan se pueden ver en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender web</a>.
 
+Para obtener detalles específicos sobre la funcionalidad de notificación y alerta, consulta: Por alerta de regla y detalles [de](attack-surface-reduction-rules-reference.md#per-rule-alert-and-notification-details) notificación, en el artículo Referencia de reglas de reducción **de superficie de ataque**.
+
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Eventos avanzados de reducción de superficie de búsqueda y ataque
 
 Puedes usar la búsqueda avanzada para ver eventos de reducción de superficie de ataque. Para simplificar el volumen de datos entrantes, solo se pueden ver procesos únicos para cada hora con búsqueda avanzada. La hora de un evento de reducción de superficie de ataque es la primera vez que se ve ese evento dentro de la hora.
@@ -122,8 +124,7 @@ Puedes establecer reglas de reducción de superficie de ataque para dispositivos
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
   >[!NOTE]
-  >Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione. 
-
+  >Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione.
 
 Aunque las reglas de reducción de superficie de ataque no requieren una [licencia Windows E5](/windows/deployment/deploy-enterprise-licenses), si Windows E5, obtienes capacidades de administración avanzadas. Las funcionalidades avanzadas, disponibles solo en Windows E5, incluyen:
 
@@ -136,7 +137,7 @@ Estas funcionalidades avanzadas no están disponibles con una licencia Windows P
 
 Defender for Endpoint proporciona informes detallados para eventos y bloques como parte de escenarios de investigación de alertas.
 
-Puede consultar los datos del extremo de Defender [en Microsoft 365 Defender](microsoft-defender-security-center.md) mediante la [búsqueda avanzada](advanced-hunting-query-language.md). Si estás ejecutando el modo [de auditoría](audit-windows-defender.md), puedes usar la búsqueda avanzada para comprender cómo pueden afectar las reglas de reducción de superficie de ataque a tu entorno.
+Puede consultar los datos del extremo de Defender [en Microsoft 365 Defender](microsoft-defender-endpoint.md) mediante la [búsqueda avanzada](/microsoft-365/security/defender/advanced-hunting-query-language). 
 
 A continuación le mostramos un ejemplo de consulta:
 

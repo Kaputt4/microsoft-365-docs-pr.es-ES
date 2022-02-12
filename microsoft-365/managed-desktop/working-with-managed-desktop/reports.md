@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: edf1025008fe13161e32a1a824413fd5eda0f5ff
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: f37a02c8cda29f48f926125f353d5e75410d9ab5
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322378"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765497"
 ---
 # <a name="work-with-reports"></a>Trabajar con informes
 
@@ -36,6 +36,7 @@ Al seleccionar la **pestaña Informes** , verá descripciones de los informes de
 | **Tendencia de estado del dispositivo** (*en versión preliminar*) | Esto supervisa las tendencias del estado del dispositivo en los últimos 60 días para los dispositivos de Escritorio administrado de Microsoft. Las tendencias pueden ayudarte a asociar el estado del dispositivo con otros cambios con el tiempo, por ejemplo, nuevas implementaciones. |
 | [**Windows de actualizaciones de seguridad**](security-updates-report.md) (*en versión preliminar*) | Este informe muestra cómo se Windows actualizaciones de seguridad en todos los dispositivos de Escritorio administrado de Microsoft. |
 | [**Informe de uso de** aplicaciones](app-usage-report.md) | Este informe proporciona información sobre el uso típico de la aplicación en los dispositivos de Escritorio administrado de Microsoft. Para que los dispositivos proporcionen datos a este informe, deben establecerse en el nivel de datos de diagnóstico opcional. |
+| **Informe de métricas de servicio** (*en versión preliminar*) | Este informe proporciona resúmenes sencillos de métricas clave para Microsoft Managed Desktop mes a mes. |
 
 ## <a name="endpoint-analytics"></a>Análisis de puntos de conexión
 
@@ -48,7 +49,9 @@ Si endpoint analytics no se configuró automáticamente para su Azure AD organiz
 
 ## <a name="intune-reports"></a>Informes de Intune
 
-Microsoft Intune es uno de los servicios que usamos para administrar dispositivos en su nombre. En algunos casos, puede resultar útil usar informes de Intune para supervisar específicamente la administración de los dispositivos de Escritorio administrado de Microsoft. Puedes excluir los dispositivos que administramos del informe que usas para administrar otros dispositivos. Los siguientes informes permiten filtrar la funcionalidad para incluir o excluir dispositivos de Escritorio administrado de Microsoft.
+Microsoft Intune es uno de los servicios que usamos para administrar dispositivos en su nombre.
+
+En algunos casos, puede resultar útil usar informes de Intune para supervisar específicamente la administración de los dispositivos de Escritorio administrado de Microsoft. Puedes excluir los dispositivos que administramos del informe que usas para administrar otros dispositivos. Los siguientes informes permiten filtrar la funcionalidad para incluir o excluir dispositivos de Escritorio administrado de Microsoft.
 
 - [Todos los dispositivos](/mem/intune/remote-actions/device-management#get-to-your-devices)
 - [Cumplimiento de dispositivos](/mem/intune/fundamentals/reports#device-compliance-report-organizational)

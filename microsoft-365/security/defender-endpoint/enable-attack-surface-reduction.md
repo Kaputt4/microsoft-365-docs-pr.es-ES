@@ -17,12 +17,12 @@ ms.topic: how-to
 ms.collection: m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 7607d5650c9a578b2c945d602d0ef3d0af0f7e88
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: ec961261c798075e0e38b08a8c8952ca5c51b07b
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346536"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766697"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -47,7 +47,7 @@ Puedes establecer reglas de reducción de superficie de ataque para dispositivos
 - Windows server, [versión 1803 (canal semianual)](/windows-server/get-started/whats-new-in-windows-server-1803) o posterior
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
-- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
+- [Windows Server 2012 R2](/windows/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 - Windows Server 2022
 
 Para usar todo el conjunto de características de las reglas de reducción de superficie de ataque, necesitas:
@@ -60,7 +60,7 @@ Aunque las reglas de reducción de superficie de ataque no requieren una licenci
 
 Cada regla ASR contiene una de cuatro opciones:
 
-- **No configurado**: deshabilitar la regla ASR
+- **No configurado** |  **Deshabilitado**: deshabilitar la regla ASR
 - **Bloquear**: habilitar la regla ASR
 - **Auditoría**: evaluar cómo afectaría la regla ASR a su organización si está habilitada
 - **Advertencia**: habilite la regla ASR pero permita al usuario final omitir el bloque
@@ -97,11 +97,35 @@ Puede especificar archivos o carpetas individuales (con rutas de carpeta o nombr
 
 Las reglas ASR admiten variables de entorno y caracteres comodín. Para obtener información acerca del uso de caracteres comodín, vea Usar caracteres comodín en las listas de exclusión de extensión o ruta de [acceso de carpeta y nombre de archivo](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
 
+## <a name="policy-conflict"></a>Conflicto de directivas
+
+1. Si se aplica una directiva en conflicto a través de MDM y GP, la configuración aplicada desde MDM tendrá prioridad.
+
+2. Las reglas de reducción de superficie de ataque para dispositivos administrados por MEM ahora admiten el comportamiento para la fusión de configuraciones de diferentes directivas, para crear un superconjunto de directiva para cada dispositivo. Solo se combinan las opciones que no están en conflicto, mientras que las que están en conflicto no se agregan al superconjunto de reglas. Anteriormente, si dos directivas incluían conflictos para una sola configuración, ambas directivas se marcaban como en conflicto y no se implementaría ninguna configuración de ninguno de los perfiles. El comportamiento de combinación de reglas de reducción de superficie de ataque es el siguiente:
+   - Las reglas de reducción de superficie de ataque de los siguientes perfiles se evalúan para cada dispositivo al que se aplican las reglas:
+     - Dispositivos > directiva de configuración > perfil de protección de puntos de conexión > **Protección contra vulnerabilidades de seguridad de Microsoft Defender** >  [Attack Surface Reduction](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules).
+     - Directiva de seguridad > de reducción **de superficie de** ataqueSaqueque  > [las reglas de reducción de superficie](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
+     - Endpoint security > Security baselines > **Microsoft Defender ATP BaselineAttack** >  [Surface Reduction Rules](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules).
+   - Configuración que no tienen conflictos se agregan a un superconjunto de directiva para el dispositivo.
+   - Cuando dos o más directivas tienen configuraciones en conflicto, la configuración en conflicto no se agrega a la directiva combinada, mientras que las opciones que no entren en conflicto se agregan a la directiva de superconjunto que se aplica a un dispositivo.
+   - Solo se retendrá la configuración de las opciones en conflicto.
+
+## <a name="configuration-methods"></a>Métodos de configuración
+
+En esta sección se proporcionan detalles de configuración para los siguientes métodos de configuración:
+
+- [Intune](#intune)
+- [MEM](#mem)
+- [MDM](#mdm)
+- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
+- [Directiva de grupo](#group-policy)
+- [PowerShell](#powershell)
+
 Los siguientes procedimientos para habilitar reglas ASR incluyen instrucciones sobre cómo excluir archivos y carpetas.
 
-## <a name="intune"></a>Intune
+### <a name="intune"></a>Intune
 
-**Perfiles de configuración de dispositivos**
+#### <a name="device-configuration-profiles"></a>Perfiles de configuración de dispositivos
 
 1. Seleccione **Perfiles de configuración** \> **de dispositivos**. Elija un perfil de protección de extremo existente o cree uno nuevo. Para crear uno nuevo, seleccione **Crear perfil** e introduzca información para este perfil. En **Tipo de perfil**, seleccione **Protección de extremo**. Si ha elegido un perfil existente, seleccione **Propiedades** y, a continuación **, seleccione Configuración**.
 
@@ -113,7 +137,7 @@ Los siguientes procedimientos para habilitar reglas ASR incluyen instrucciones s
 
 4. Seleccione **Aceptar en** los tres paneles de configuración. A **continuación** , seleccione Crear si está creando un nuevo archivo de protección de puntos de conexión o **Guardar** si está editando uno existente.
 
-**Directiva de seguridad de extremo**
+#### <a name="endpoint-security-policy"></a>Directiva de seguridad de extremo**
 
 1. Selecciona **Reducción de superficie de ataque** \> **de seguridad de punto de conexión**. Elija una regla ASR existente o cree una nueva. Para crear una nueva, seleccione **Crear directiva** y escriba información para este perfil. Para **Tipo de perfil**, selecciona **Reglas de reducción de superficie de ataque**. Si ha elegido un perfil existente, seleccione **Propiedades** y, a continuación **, seleccione Configuración**.
 
@@ -125,7 +149,7 @@ Los siguientes procedimientos para habilitar reglas ASR incluyen instrucciones s
 
 4. Seleccione **Siguiente** en los tres paneles de configuración y, a  continuación, seleccione Crear si está creando una nueva directiva o **Guardar** si está editando una directiva existente.
 
-## <a name="mem"></a>MEM
+### <a name="mem"></a>MEM
 
 Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR personalizadas. El siguiente procedimiento usa la regla Bloquear el uso indebido de controladores [firmados vulnerables](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) explotados para el ejemplo.
 
@@ -161,7 +185,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
    - En **OMA-URI**, escriba o pegue el vínculo OMA-URI específico para la regla que va a agregar. Consulte la sección MDM de este artículo para el OMA-URI que se va a usar para esta regla de ejemplo. Para obtener GUID de regla de reducción de superficie de ataque, consulta [Descripciones por regla](attack-surface-reduction-rules-reference.md#per-rule-descriptions) en el tema: Reglas de reducción de superficie de ataque.
    - En **Tipo de datos**, seleccione **Cadena**.
    - En **Valor**, escriba o pegue el valor GUID, \= el signo y el valor state sin espacios (_GUID=StateValue_). Donde:
-     
+
      - 0 : Deshabilitar (deshabilitar la regla ASR)
      - 1 : Bloquear (habilitar la regla ASR)
      - 2: Auditoría (Evaluar cómo afectaría la regla ASR a su organización si está habilitada)
@@ -170,7 +194,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
    > [!div class="mx-imgBorder"]
    > ![Configuración de URI de OMA de MEM.](images/mem05-add-row-oma-uri.png)
 
-6. Seleccione **Guardar**. **Agregar cierres** de fila. En **Personalizado**, seleccione **Siguiente**. En las **etiquetas de ámbito del paso 3**, las etiquetas de ámbito son opcionales. Realiza una de las siguientes acciones:
+6. Haga clic en **Guardar**. **Agregar cierres** de fila. En **Personalizado**, seleccione **Siguiente**. En las **etiquetas de ámbito del paso 3**, las etiquetas de ámbito son opcionales. Realiza una de las siguientes acciones:
 
    - Seleccione **Seleccionar etiquetas de ámbito**, seleccione la etiqueta de ámbito (opcional) y, a continuación, **seleccione Siguiente**.
    - O seleccione **Siguiente**
@@ -210,7 +234,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
 >
 > Las reglas no conflictivas no producirán un error y la regla se aplicará correctamente. El resultado es que se aplica la primera regla y las siguientes reglas no conflictivas se combinan en la directiva.
 
-## <a name="mdm"></a>MDM
+### <a name="mdm"></a>MDM
 
 Use [el proveedor de servicios de configuración ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) (CSP) para habilitar y establecer individualmente el modo de cada regla.
 
@@ -238,7 +262,7 @@ Ejemplo:
 > [!NOTE]
 > Asegúrese de escribir valores de OMA-URI sin espacios.
 
-## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
+### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
 1. En Microsoft Endpoint Configuration Manager, ve a **Assets and Compliance** \> **Endpoint Protection** \> **Windows Defender Exploit Guard**.
 
@@ -252,7 +276,7 @@ Ejemplo:
 
 6. Después de crear la directiva, seleccione **Cerrar**.
 
-## <a name="group-policy"></a>Directiva de grupo
+### <a name="group-policy"></a>Directiva de grupo
 
 > [!WARNING]
 > Si administra los equipos y dispositivos con Intune, Configuration Manager u otra plataforma de administración de nivel empresarial, el software de administración sobrescribirá cualquier configuración de directiva de grupo en conflicto al iniciarse.
@@ -277,7 +301,7 @@ Ejemplo:
    > [!WARNING]
    > No use comillas, ya que no son compatibles con la columna **Nombre de** valor o la **columna** Valor.
 
-## <a name="powershell"></a>PowerShell
+### <a name="powershell"></a>PowerShell
 
 > [!WARNING]
 > Si administra los equipos y dispositivos con Intune, Configuration Manager u otra plataforma de administración de nivel empresarial, el software de administración sobrescribirá cualquier configuración de PowerShell en conflicto al iniciarse. Para permitir que los usuarios definan el valor con PowerShell, use la opción "User Defined" para la regla en la plataforma de administración.
@@ -286,7 +310,6 @@ Ejemplo:
 
 > [!div class="mx-imgBorder"]
 > ![ASR habilita "Definido por el usuario"](images/asr-user-defined.png)
-
 
 1. Escriba **powershell** en el menú Inicio, haga clic con el botón **secundario en Windows PowerShell** y seleccione **Ejecutar como administrador**.
 

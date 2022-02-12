@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ad99fe597a9c445d1c7d0dcd07b1dcd19a5ac7d5
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 1d39bd46afae270fc7ac2a9fab8b5f4a2b4aaeb2
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170614"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765989"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de rendimiento de Microsoft Defender para Endpoint en macOS
 
@@ -31,8 +30,8 @@ ms.locfileid: "61170614"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md)
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -49,7 +48,7 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
 
       Si su organización no administra el dispositivo, la protección en tiempo real se puede deshabilitar mediante una de las siguientes opciones:
 
-    - Desde la interfaz de usuario. Abra Microsoft Defender para endpoint en macOS y vaya a **Administrar configuración**.
+    - Desde la interfaz de usuario. Abra Microsoft Defender para Endpoint en macOS y vaya a **Administrar la configuración**.
 
       ![Administrar la captura de pantalla de protección en tiempo real.](images/mdatp-36-rtp.png)
 
@@ -59,17 +58,17 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
       mdatp config real-time-protection --value disabled
       ```
 
-      Si su organización administra el dispositivo, el administrador puede deshabilitar la protección en tiempo real con las instrucciones de Establecer preferencias para Microsoft Defender para endpoint [en macOS](mac-preferences.md).
+      Si su organización administra el dispositivo, el administrador puede deshabilitar la protección en tiempo real con las instrucciones de Establecer preferencias para [Microsoft Defender para endpoint en macOS](mac-preferences.md).
 
       Si el problema de rendimiento persiste mientras la protección en tiempo real está desactivada, el origen del problema podría ser detección y respuesta de puntos de conexión componente. En este caso, póngase en contacto con el servicio de soporte al cliente para obtener más instrucciones y mitigación.
 
-2. Abra Finder y  vaya a \> **Utilidades de aplicaciones**. Abra **El Monitor de** actividad y analice qué aplicaciones usan los recursos del sistema. Algunos ejemplos típicos son los actualizadores de software y los compiladores.
+2. Abra Finder y vaya a **Utilidades de** \> **aplicaciones**. Abra **El Monitor de** actividad y analice qué aplicaciones usan los recursos del sistema. Algunos ejemplos típicos son los actualizadores de software y los compiladores.
 
 3. Para buscar las aplicaciones que están desencadenando la mayoría de los exámenes, puedes usar estadísticas en tiempo real recopiladas por Defender para Endpoint en Mac.
 
       > [!NOTE]
       > Esta característica está disponible en la versión 100.90.70 o posterior.
-      Esta característica está habilitada de forma predeterminada en los canales **Dogfood** **e InsiderFast.** Si usa un canal de actualización diferente, esta característica se puede habilitar desde la línea de comandos:
+      Esta característica está habilitada de forma predeterminada en los canales **Dogfood** **e InsiderFast** . Si usa un canal de actualización diferente, esta característica se puede habilitar desde la línea de comandos:
 
       ```bash
       mdatp config real-time-protection-statistics  --value enabled

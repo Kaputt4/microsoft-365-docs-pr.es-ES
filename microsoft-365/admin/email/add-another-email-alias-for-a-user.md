@@ -17,18 +17,19 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Obtenga información sobre cómo puede tener más de una dirección de correo electrónico, denominada alias de correo electrónico, asociada con su cuenta Microsoft 365 para empresas. '
-ms.openlocfilehash: 16296c9ba748ec76fef52be3ae13bba9ff8552b1
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: f5adc9e48110aa1e2a2e6c87f2c2f7847986d741
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62155974"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766373"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Agregar otro alias de correo electrónico para un usuario
   
@@ -41,7 +42,10 @@ Por ejemplo, supongamos que Jenna tiene la dirección de correo electrónico jen
 Puede crear hasta 400 alias para un usuario. No se necesitan licencias o cargos adicionales.
   
 > [!Tip]
-> Si desea que varias personas administren el correo electrónico enviado a una única dirección de correo electrónico como info@NodPublishers.com o sales@NodPublishers.com, cree un buzón compartido. Para obtener más información, vea [Create a shared mailbox](create-a-shared-mailbox.md).
+> Si desea que varias personas administren el correo electrónico enviado a una única dirección de correo electrónico como info@NodPublishers.com o sales@NodPublishers.com, cree un buzón compartido. Para obtener más información, vea [Crear un buzón compartido](create-a-shared-mailbox.md).
+
+> [!TIP]
+> Si necesita ayuda con los pasos de este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso diario a los especialistas de pequeñas empresas a medida que crece su negocio, desde la incorporación hasta el uso diario.
   
 ## <a name="add-email-aliases-to-a-user"></a>Agregar alias de correo electrónico a un usuario
 
@@ -49,12 +53,12 @@ Debe tener derechos de administrador global para agregar alias de correo electr�
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 
-2. En la **página Usuarios activos,** seleccione el usuario > **Administrar nombre de usuario y correo electrónico**. No verá esta opción si la persona no tiene una licencia asignada. 
+2. En la **página Usuarios activos** , seleccione el usuario > **Administrar el nombre de usuario y el correo electrónico**. No verá esta opción si la persona no tiene una licencia asignada. 
     
 3. Seleccione **+ Agregar un alias** y escriba un nuevo alias para el usuario.   
     
     > [!Important] 
-    > Si recibe el mensaje de error " No se puede encontrar un parámetro que coincida con el nombre del parámetro **'EmailAddresses",** significa que tarda un poco más en terminar de configurar el espacio empresarial o el dominio personalizado si agregó uno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
+    > Si recibe el mensaje de error "No se puede encontrar un parámetro que coincida con el nombre del parámetro **'EmailAddresses**", significa que tarda un poco más en terminar de configurar el inquilino o el dominio personalizado si agregó uno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
     
   
     > [!IMPORTANT]
@@ -62,7 +66,7 @@ Debe tener derechos de administrador global para agregar alias de correo electr�
 
 
    > [!IMPORTANT]
-   >  Si recibe el mensaje de error **Este usuario se sincroniza con su Active Directory local. Algunos detalles solo** se pueden editar a través de su Active Directory local, significa que Active Directory es autoritativo para los atributos de los usuarios sincronizados, debe modificar los atributos en su Active Directory local.
+   >  Si recibe el mensaje de error **Este usuario se sincroniza con su Active Directory local. Algunos detalles solo** se pueden editar a través de Su Active Directory local, Significa que Active Directory es autoritativo para los atributos de los usuarios sincronizados, debe modificar los atributos en su Active Directory local.
   
     > [!TIP]
     > El alias de correo electrónico tiene que terminar con un dominio de la lista desplegable. Para agregar otro nombre de dominio a la lista, vea [Agregar un dominio a Microsoft 365](../setup/add-domain.md). 
@@ -75,11 +79,11 @@ Debe tener derechos de administrador global para agregar alias de correo electr�
     El usuario ahora tendrá una dirección principal y un alias. Por ejemplo, todo el correo enviado a la dirección principal de Eliza Hoffman, Eliza@NodPublishers.com, y su alias, Sales@NodPublishers.com, irá a la Bandeja de entrada de Eliza.
     
   
-7. **Cuando el usuario responda, la *dirección De* dependerá de su Outlook cliente. Outlook en la Web el alias en el que se recibió el correo electrónico (lo llamaremos el principio ping-pong). Outlook escritorio usará su alias de correo electrónico principal.** Por ejemplo, supongamos que un mensaje se envía a Sales@NodPublishers.com y llega a la bandeja de entrada de Eliza. Cuando Eliza responde al mensaje con Outlook escritorio, su dirección de correo electrónico principal aparecerá como Eliza@NodPublishers.com, no Sales@NodPublishers.com.
+7. **Cuando el usuario responde, la *dirección De* dependerá de su Outlook cliente. Outlook en la Web el alias en el que se recibió el correo electrónico (lo llamaremos el principio ping-pong). Outlook escritorio usará su alias de correo electrónico principal.** Por ejemplo, supongamos que un mensaje se envía a Sales@NodPublishers.com y llega a la bandeja de entrada de Eliza. Cuando Eliza responde al mensaje con Outlook escritorio, su dirección de correo electrónico principal aparecerá como Eliza@NodPublishers.com, no Sales@NodPublishers.com.
     
 ## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>¿Ha recibido "No se puede encontrar un parámetro que coincida con el nombre del parámetro EmailAddresses"?
 
-Si recibe el mensaje de error " No se puede encontrar un parámetro que coincida con el nombre del parámetro **EmailAddresses**" significa que tarda un poco más en terminar de configurar el espacio empresarial o el dominio personalizado si agregó uno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
+Si recibe el mensaje de error "No se puede encontrar un parámetro que coincida con el nombre del parámetro **EmailAddresses**", significa que tarda un poco más en terminar de configurar el espacio empresarial o el dominio personalizado si agregó uno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
   
 ## <a name="did-you-purchase-your-subscription-from-godaddy-or-another-partner"></a>¿Ha adquirido la suscripción con GoDaddy u otro partner?
 
@@ -88,7 +92,7 @@ Si adquirió su suscripción con GoDaddy u otro partner, tendrá que usar la con
 
 ## <a name="sending-email-from-the-proxy-address-easily"></a>Enviar correo electrónico desde la dirección proxy fácilmente
 
-En julio de 2021 se está implementando una nueva característica que permite a los usuarios enviar desde sus alias fácilmente al usar Outlook en la Web. Cuando la característica se lanza a un arrendamiento donde el administrador de inquilinos usa el cmdlet, los usuarios del arrendamiento tendrán acceso a una lista de casillas donde cada entrada corresponde a un alias en su configuración `Set-OrganizationConfig -SendFromAliasEnabled $true` de Outlook. Si selecciona un alias, aparecerá en el desplegable De del formulario Redacción.
+En julio de 2021 se está implementando una nueva característica que permite a los usuarios enviar desde sus alias fácilmente al usar Outlook en la Web. Cuando la característica se lanza a un arrendamiento donde el administrador de inquilinos usa el cmdlet, los usuarios del arrendamiento tendrán acceso a una lista de casillas donde cada entrada corresponde a `Set-OrganizationConfig -SendFromAliasEnabled $true` un alias en su configuración de Outlook. Si selecciona un alias, aparecerá en el desplegable De del formulario Redacción.
   
 ## <a name="related-content"></a>Contenido relacionado
 

@@ -19,6 +19,7 @@ ms.custom:
 - SaRA
 - MSStore_Link
 - okr_smb
+- business_assist
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -27,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Use el Asistente para la instalación para agregar el dominio Microsoft 365 en el Centro de administración de Microsoft 365 agregando un registro DNS en el host DNS.
-ms.openlocfilehash: 8562d3bd3dc4e3d550c3c8365fdfc2dcf9220f94
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: eb58c8fc69a26157aa7dfb323be03efb81ef76bf
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62155997"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766541"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Agregar un dominio a Microsoft 365
 
@@ -40,7 +41,10 @@ ms.locfileid: "62155997"
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Para agregar, modificar o quitar  dominios, debe ser **administrador** de nombres de dominio o administrador **global** de un plan empresarial [o empresarial.](https://products.office.com/business/office) Estos cambios afectan a todo el espacio empresarial; *Los administradores personalizados* *o* los usuarios normales no podrán realizar estos cambios.
+Para agregar, modificar o quitar dominios, debe **ser administrador de** nombres de dominio o administrador **global** de un [plan empresarial o empresarial](https://products.office.com/business/office). Estos cambios afectan a todo el espacio empresarial; *Los administradores personalizados* *o* los usuarios normales no podrán realizar estos cambios.
+
+> [!TIP]
+> Si necesita ayuda con los pasos de este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso diario a los especialistas de pequeñas empresas a medida que crece su negocio, desde la incorporación hasta el uso diario.
 
 ## <a name="watch-add-a-domain"></a>Watch: Add a domain
 
@@ -49,11 +53,11 @@ Para agregar, modificar o quitar  dominios, debe ser **administrador** de nombre
 Es posible que su empresa necesite varios nombres de dominio para fines diferentes. Por ejemplo, es posible que desee agregar una ortografía diferente del nombre de la compañía porque los clientes ya lo están usando y sus comunicaciones no le han llegado.
 
 1. En el Centro de administración de Microsoft 365, elija <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Configurar**</a>.
-1. En **Get your custom domain set up**, select **View**  >  **Manage**  >  **Add domain**.
+1. En **Configurar el dominio personalizado**, seleccione **ViewManageAdd** >  >  **domain**.
 1. Escriba el nuevo nombre de dominio que desea agregar y, a continuación, seleccione **Siguiente**.
-1. Inicie sesión en el registrador de dominio y, a continuación, **seleccione Siguiente**.
+1. Inicie sesión en el registrador de dominio y, a continuación, seleccione **Siguiente**.
 1. Elija los servicios para el nuevo dominio.
-1. Seleccione **Siguiente**  >  **autorizar**  >  **siguiente** y, a continuación, **Finalizar**. Se ha agregado el nuevo dominio.
+1. Seleccione **NextAuthorizeNext** >  >  y, a continuación, **Finalizar**. Se ha agregado el nuevo dominio.
 
 ## <a name="add-a-domain"></a>Agregar un dominio
 
@@ -71,48 +75,48 @@ Siga estos pasos para agregar, configurar o seguir configurando un dominio.
 
 ::: moniker-end
     
-2. Vaya a la **página Configuración**  >  **dominios.** 
+2. Vaya a la **página Configuración** >  **Domains**. 
 
 3. Seleccione **Agregar dominio**.
     
-4. Escriba el nombre del dominio que desea agregar y, a continuación, **seleccione Siguiente**.
+4. Escriba el nombre del dominio que desea agregar y, a continuación, seleccione **Siguiente**.
     
 5. Elija cómo desea comprobar que es el propietario del dominio.
     
-    1. Si el registrador de dominio usa [dominio Conectar,](#domain-connect-registrars-integrating-with-microsoft-365) [Microsoft](../get-help-with-domains/domain-connect.md) configurará los registros automáticamente al tener que iniciar sesión en el registrador y confirmar la conexión a Microsoft 365. Se te devolverá al Centro de administración y Microsoft comprobará automáticamente tu dominio.
+    1. Si el registrador de [dominio usa dominio Conectar](#domain-connect-registrars-integrating-with-microsoft-365)[, Microsoft](../get-help-with-domains/domain-connect.md) configurará los registros automáticamente al tener que iniciar sesión en el registrador y confirmar la conexión a Microsoft 365. Se te devolverá al Centro de administración y Microsoft comprobará automáticamente tu dominio.
     2. Puede usar un registro TXT para comprobar su dominio. Seleccione esto y **seleccione Siguiente** para ver instrucciones sobre cómo agregar este registro DNS al sitio web del registrador. Esto puede tardar hasta 30 minutos en comprobarse después de agregar el registro. 
-    3. Puede agregar un archivo de texto al sitio web de su dominio. Seleccione y descargue el archivo .txt del asistente para la instalación y, a continuación, cargue el archivo en la carpeta de nivel superior del sitio web. La ruta de acceso al archivo debe ser similar a: `http://mydomain.com/ms39978200.txt` . Confirmaremos que es el propietario del dominio mediante la búsqueda del archivo en su sitio web.
+    3. Puede agregar un archivo de texto al sitio web de su dominio. Seleccione y descargue el archivo .txt del asistente para la instalación y, a continuación, cargue el archivo en la carpeta de nivel superior del sitio web. La ruta de acceso al archivo debe ser similar a: `http://mydomain.com/ms39978200.txt`. Confirmaremos que es el propietario del dominio mediante la búsqueda del archivo en su sitio web.
     
 6. Elija cómo desea realizar los cambios DNS necesarios para que Microsoft use su dominio.
     
-    1. Elija **Agregar los** registros DNS para mí si su registrador admite dominio [Conectar](#domain-connect-registrars-integrating-with-microsoft-365)y [Microsoft](../get-help-with-domains/domain-connect.md) configurará los registros automáticamente si inicia sesión en su registrador y confirma la conexión a Microsoft 365.
-    2. Elija **Agregaré los** registros DNS yo mismo si desea adjuntar solo servicios de Microsoft 365 específicos a su dominio o si desea omitir esto por ahora y hacerlo más adelante. **Elija esta opción si sabe exactamente lo que hace.**
+    1. Elija **Agregar los registros DNS** para mí si su registrador admite [dominio Conectar](#domain-connect-registrars-integrating-with-microsoft-365) [y Microsoft](../get-help-with-domains/domain-connect.md) configurará los registros automáticamente al tener que iniciar sesión en su registrador y confirmar la conexión a Microsoft 365.
+    2. Elija **Agregaré los registros DNS** yo mismo si desea adjuntar solo servicios de Microsoft 365 específicos a su dominio o si desea omitir esto por ahora y hacerlo más adelante. **Elija esta opción si sabe exactamente lo que hace.**
 
-7. Si decide agregar *registros DNS*  usted mismo, seleccione Siguiente y verá una página con todos los registros que necesita agregar al sitio web de registradores para configurar su dominio. 
+7. Si decide agregar *registros DNS* usted mismo, seleccione Siguiente  y verá una página con todos los registros que necesita agregar al sitio web de registradores para configurar su dominio. 
 
     Si el portal no reconoce el registrador, puede [seguir estas instrucciones generales.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
     
     Si no conoce el proveedor de host DNS o el registrador de dominios de su dominio, vea [Encuentre su registrador de dominios o proveedor de host DNS](../get-help-with-domains/find-your-domain-registrar.md).
     
-    Si desea esperar más tarde, anule la selección de todos los servicios  y haga clic en Continuar **o,** en el paso de conexión de dominio anterior, elija Más opciones y seleccione **Omitir esto por ahora**.
+    Si desea esperar más tarde, anule la selección de todos los servicios y haga clic en Continuar **, o** en el paso de conexión  de dominio anterior elija Más opciones y seleccione **Omitir esto por ahora**.
     
-8. Selecciona **Finalizar:** ya has terminado.
+8. Selecciona **Finalizar** : ya has terminado.
 
 ## <a name="add-or-edit-custom-dns-records"></a>Agregar o editar registros DNS personalizados
 
 Siga los pasos siguientes para agregar un registro personalizado para un sitio web o un servicio de terceros.
 
-1. Inicie sesión en el Centro de administración de Microsoft en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
+1. Inicie sesión en el Centro de administración de Microsoft en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
-2. Vaya a la **página Configuración**   >  **dominios.**
+2. Vaya a la **página Configuración**  >  **Domains**.
 
 3. En la página **Dominios**, seleccione un dominio. 
     
-4. En **Configuración dns,** seleccione **Registros personalizados;** a **continuación, seleccione Nuevo registro personalizado**.
+4. En **Configuración dns**, seleccione **Registros personalizados**; a continuación **, seleccione Nuevo registro personalizado**.
 
 5. Seleccione el tipo de registro DNS que desea agregar y escriba la información del nuevo registro.
     
-6. Seleccione **Guardar**.
+6. Haga clic en **Guardar**.
 
 ## <a name="registrars-with-domain-connect"></a>Registradores con dominio Conectar
 
@@ -125,7 +129,7 @@ En el asistente, solo confirmaremos que es el propietario del dominio y, a conti
   
 ### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Registradores Conectar de dominio que se integran con Microsoft 365
 
-- [1 &amp; 1 IONOS](https://www.1and1.com/)
+- [11&amp; IONOS](https://www.1and1.com/)
 - [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
@@ -155,9 +159,9 @@ Cada Microsoft 365 organización puede tener hasta tres onmicrosoft.com dominios
 
 Para agregar un onmicrosoft.com de usuario:
 
-1. Vaya al Centro de administración de Microsoft, **Configuración**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. Vaya al Centro de administración de Microsoft, **Configuración** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
 
-2. En la **pestaña Información** general, seleccione Agregar **onmicrosoft.com dominio**.
+2. En la **pestaña Información** general, seleccione **Agregar onmicrosoft.com dominio**.
 
 Puede establecer cualquier dominio que sea de su propiedad como su dominio predeterminado.
 

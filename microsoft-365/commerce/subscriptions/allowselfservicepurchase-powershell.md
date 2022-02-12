@@ -20,27 +20,27 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar el cmdlet De PowerShell AllowSelfServicePurchase para activar o desactivar la compra de autoservicio.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 07/16/2021
-ms.openlocfilehash: 4c4272b532fd40f1062404716614f8a7ee4a5230
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.date: 12/15/2021
+ms.openlocfilehash: ebe01b9ed55b13d1d61ae1a59dca3bdb6373f285
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531902"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765785"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Usar AllowSelfServicePurchase para el módulo de PowerShell de MSCommerce
 
-El módulo de PowerShell de **MSCommerce** ya está disponible en la [Galería de PowerShell](https://aka.ms/allowselfservicepurchase-powershell-gallery). El módulo incluye un valor de parámetro **PolicyID** para **AllowSelfServicePurchase** que le permite controlar si los usuarios de su organización pueden realizar compras de autoservicio.
+El **módulo de PowerShell de MSCommerce** ya está disponible en la [Galería de PowerShell](https://aka.ms/allowselfservicepurchase-powershell-gallery). El módulo incluye un valor **de parámetro PolicyID** para **AllowSelfServicePurchase** que le permite controlar si los usuarios de su organización pueden realizar compras de autoservicio.
 
 Puede usar el módulo **MSCommerce** PowerShell para:
 
-- Ver el estado predeterminado del valor del parámetro **AllowSelfServicePurchase,** independientemente de si está habilitado o deshabilitado.
+- Ver el estado predeterminado del valor del parámetro **AllowSelfServicePurchase** , independientemente de si está habilitado o deshabilitado.
 - Ver una lista de productos aplicables y si la compra de autoservicio está habilitada o deshabilitada
 - Ver o modificar la configuración actual de un producto específico para habilitarlo o deshabilitarlo
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
-Para usar el **módulo de PowerShell de MSCommerce,** necesita:
+Para usar el **módulo de PowerShell de MSCommerce** , necesita:
 
 - Un Windows 10 móvil
 - PowerShell 5 o inferior. Actualmente, PowerShell 6.x/7.x no es compatible con este módulo.
@@ -51,7 +51,7 @@ Para usar el **módulo de PowerShell de MSCommerce,** necesita:
 
 El módulo **de PowerShell de MSCommerce** se instala en el dispositivo Windows 10 una vez y, a continuación, se importa en cada sesión de PowerShell que inicie. Descargue el **módulo MSCommerce** PowerShell de la [Galería de PowerShell](https://aka.ms/allowselfservicepurchase-powershell-gallery).
 
-Para instalar el **módulo de PowerShell de MSCommerce** con **PowerShellGet,** ejecute el siguiente comando:
+Para instalar el **módulo de PowerShell de MSCommerce** con **PowerShellGet**, ejecute el siguiente comando:
 
 ```powershell
 Install-Module -Name MSCommerce
@@ -108,10 +108,9 @@ En la tabla siguiente se enumeran los productos disponibles y **su ProductId**.
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows 365 Empresa con Windows ventaja híbrida | CFQ7TTC0HX99 |
 
-## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Ver o establecer el estado de AllowSelfServicePurchase
+*Estos IDs han cambiado. Si anteriormente bloqueaste los productos con los antiguos IDs, se bloquean automáticamente con los nuevos IDs. No se requiere trabajo adicional.
 
->[!NOTE] 
-> Estos IDs han cambiado. Si anteriormente bloqueaste los productos con los antiguos IDs, se bloquean automáticamente con los nuevos IDs. No se requiere trabajo adicional.
+## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Ver o establecer el estado de AllowSelfServicePurchase
 
 Después de ver la lista de productos disponibles para la compra de autoservicio, puede ver o modificar la configuración de un producto específico.
 
@@ -135,7 +134,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>Script de ejemplo para deshabilitar AllowSelfServicePurchase
 
-En el siguiente ejemplo se explica cómo importar el módulo **MSCommerce,** iniciar sesión con su cuenta, obtener **el ProductId** para Power Automate y, a continuación, deshabilitar **AllowSelfServicePurchase** para ese producto.
+En el ejemplo siguiente se explica cómo importar el módulo **MSCommerce**, iniciar sesión con su cuenta, obtener **el ProductId** para Power Automate y, a continuación, deshabilitar **AllowSelfServicePurchase** para ese producto.
 
 ```powershell
 Import-Module -Name MSCommerce

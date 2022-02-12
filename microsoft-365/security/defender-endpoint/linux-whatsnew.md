@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 4091a5945bbd754fb78bb957c46bd2ea5636e64d
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: 090c43ea1d2d9f2d158f94d1e509490c3faf4799
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265516"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767094"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Novedades de Microsoft Defender para Endpoint en Linux
 
@@ -44,7 +43,7 @@ ms.locfileid: "62265516"
 
 ## <a name="1014776-30121092147760"></a>101.47.76 (30.121092.14776.0)
 
-- Se agregó un nuevo modificador a la herramienta de línea de comandos para controlar si los archivos se examinan durante los exámenes a petición. Esto se puede configurar a través `mdatp config scan-archives --value [enabled/disabled]` de . De forma predeterminada, se establece en `enabled` .
+- Se agregó un nuevo modificador a la herramienta de línea de comandos para controlar si los archivos se examinan durante los exámenes a petición. Esto se puede configurar a través de `mdatp config scan-archives --value [enabled/disabled]`. De forma predeterminada, se establece en `enabled`.
 - Correcciones de errores
 
 ## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0)
@@ -59,8 +58,8 @@ ms.locfileid: "62265516"
 ## <a name="1014500-30121072145000"></a>101.45.00 (30.121072.14500.0)
 
 - Se agregaron nuevos modificadores a la herramienta de línea de comandos:
-  - Controlar el grado de paralelismo de los exámenes a petición. Esto se puede configurar a través `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]` de . De forma predeterminada, se usa un grado de paralelismo `2` de.
-  - Controlar si los exámenes después de las actualizaciones de inteligencia de seguridad están habilitados o deshabilitados. Esto se puede configurar a través `mdatp config scan-after-definition-update --value [enabled/disabled]` de . De forma predeterminada, se establece en `enabled` .
+  - Controlar el grado de paralelismo de los exámenes a petición. Esto se puede configurar a través de `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. De forma predeterminada, se usa un grado de paralelismo `2` de.
+  - Controlar si los exámenes después de las actualizaciones de inteligencia de seguridad están habilitados o deshabilitados. Esto se puede configurar a través de `mdatp config scan-after-definition-update --value [enabled/disabled]`. De forma predeterminada, se establece en `enabled`.
 - Cambiar el nivel de registro de producto ahora requiere elevación
 - Correcciones de errores
 
@@ -98,9 +97,9 @@ ms.locfileid: "62265516"
 
 ## <a name="1011853"></a>101.18.53
 
-- EDR para Linux ya [está disponible en general](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
-- Se agregó un nuevo modificador de línea de comandos ( `--ignore-exclusions` ) para omitir las exclusiones av durante los exámenes personalizados ( `mdatp scan custom` )
-- Extendido con un nuevo parámetro ( ) que permite guardar los registros de `mdatp diagnostic create` diagnóstico en un directorio `--path [directory]` diferente
+- EDR para Linux ya [está disponible por lo general](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
+- Se agregó un nuevo modificador de línea de comandos (`--ignore-exclusions`) para omitir las exclusiones av durante los exámenes personalizados (`mdatp scan custom`)
+- Extendido `mdatp diagnostic create` con un nuevo parámetro (`--path [directory]`) que permite guardar los registros de diagnóstico en un directorio diferente
 - Mejoras de rendimiento & correcciones de errores
 
 ## <a name="1011299"></a>101.12.99
@@ -122,8 +121,8 @@ ms.locfileid: "62265516"
 
 ## <a name="1010075"></a>101.00.75
 
-- Se agregó compatibilidad con los siguientes tipos de sistema de archivos: `ecryptfs` , , , , , , `fuse` , `fuseblk` `jfs` `nfs` `overlay` `ramfs` `reiserfs` `udf` y `vfat`
-- Sintaxis nueva para la [herramienta de línea de comandos](linux-resources.md#configure-from-the-command-line).
+- Se agregó compatibilidad con los siguientes tipos de sistema de archivos: `ecryptfs`, `fuse`, `fuseblk`, `jfs`, `nfs`, `overlay`, `ramfs`, `reiserfs`y `udf``vfat`
+- Nueva sintaxis para la [herramienta de línea de comandos](linux-resources.md#configure-from-the-command-line).
 - Mejoras de rendimiento & correcciones de errores
 
 ## <a name="1009070"></a>100.90.70
@@ -132,6 +131,6 @@ ms.locfileid: "62265516"
 > Al actualizar el paquete instalado desde una versión del producto anterior a 100.90.70, es posible que la actualización falle en las distribuciones basadas en Red Hat y SLES. Esto se debe a un cambio importante en una ruta de acceso de archivo. Una solución temporal es quitar el paquete anterior y, a continuación, instalar el más reciente. Este problema no existe en versiones más recientes.
 
 - Las [exclusiones antivirus ahora admiten caracteres comodín](linux-exclusions.md#supported-exclusion-types)
-- Se agregó la capacidad de solucionar [problemas de rendimiento a](linux-support-perf.md) través de la herramienta de línea de `mdatp` comandos
+- Se agregó la capacidad de solucionar [problemas de rendimiento a](linux-support-perf.md) través de la herramienta `mdatp` de línea de comandos
 - Mejoras para que la instalación del paquete sea más sólida
 - Mejoras de rendimiento & correcciones de errores

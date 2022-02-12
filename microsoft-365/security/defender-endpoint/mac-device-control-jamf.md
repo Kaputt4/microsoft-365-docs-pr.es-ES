@@ -13,23 +13,22 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 20579b54e0ce9e58c1466afbbda348730ffad839
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 74925625f6d004c1901756cde75310b345dd5747
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168527"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766037"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>Ejemplos de directivas de control de dispositivos para JAMF
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -38,7 +37,7 @@ Este documento contiene ejemplos de directivas de control de dispositivos que pu
 
 ## <a name="restrict-access-to-all-removable-media"></a>Restringir el acceso a todos los medios extraíbles
 
-En el ejemplo siguiente se restringe el acceso a todos los medios extraíbles. Tenga en cuenta el permiso que se aplica en el nivel superior de la directiva, lo que significa que todas las operaciones `none` de archivos estarán prohibidas.
+En el ejemplo siguiente se restringe el acceso a todos los medios extraíbles. Tenga en `none` cuenta el permiso que se aplica en el nivel superior de la directiva, lo que significa que todas las operaciones de archivos estarán prohibidas.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -63,7 +62,7 @@ En el ejemplo siguiente se restringe el acceso a todos los medios extraíbles. T
 
 ## <a name="set-all-removable-media-to-be-read-only"></a>Establecer todos los medios extraíbles como de solo lectura
 
-En el ejemplo siguiente se configura todos los medios extraíbles para que sean de solo lectura. Tenga en cuenta el permiso que se aplica en el nivel superior de la directiva, lo que significa que no se permitirán todas las operaciones de `read` escritura y ejecución.
+En el ejemplo siguiente se configura todos los medios extraíbles para que sean de solo lectura. Tenga en `read` cuenta el permiso que se aplica en el nivel superior de la directiva, lo que significa que no se permitirán todas las operaciones de escritura y ejecución.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -88,7 +87,7 @@ En el ejemplo siguiente se configura todos los medios extraíbles para que sean 
 
 ## <a name="disallow-program-execution-from-removable-media"></a>No permitir la ejecución del programa de medios extraíbles
 
-En el ejemplo siguiente se muestra cómo se puede no poder realizar la ejecución del programa desde medios extraíbles. Tenga en `read` cuenta los permisos y que se aplican en el nivel superior de la `write` directiva.
+En el ejemplo siguiente se muestra cómo se puede no poder realizar la ejecución del programa desde medios extraíbles. Tenga en `read` cuenta los `write` permisos y que se aplican en el nivel superior de la directiva.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -114,7 +113,7 @@ En el ejemplo siguiente se muestra cómo se puede no poder realizar la ejecució
 
 ## <a name="restrict-all-devices-from-specific-vendors"></a>Restringir todos los dispositivos de proveedores específicos
 
-En el ejemplo siguiente se restringen todos los dispositivos de proveedores específicos (en este caso identificados por `fff0` y `4525` ). El resto de dispositivos no estarán restringidos, ya que el permiso definido en el nivel superior de la directiva enumera todos los permisos posibles (lectura, escritura y ejecución).
+En el ejemplo siguiente se restringen todos los dispositivos de proveedores específicos (en este caso identificados por `fff0` y `4525`). El resto de dispositivos no estarán restringidos, ya que el permiso definido en el nivel superior de la directiva enumera todos los permisos posibles (lectura, escritura y ejecución).
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -158,7 +157,7 @@ En el ejemplo siguiente se restringen todos los dispositivos de proveedores espe
 
 ## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a>Restringir dispositivos específicos identificados por id. de proveedor, id. de producto y número de serie
 
-En el ejemplo siguiente se restringen dos dispositivos específicos, identificados por el identificador de proveedor, el id. de producto `fff0` y los números de serie y `1000` `04ZSSMHI2O7WBVOA` `04ZSSMHI2O7WBVOB` . En todos los demás niveles de la directiva, los permisos incluyen todos los valores posibles (lectura, escritura y ejecución), lo que significa que todos los demás dispositivos no estarán restringidos.
+En el ejemplo siguiente se restringen dos dispositivos específicos, identificados por el identificador de `fff0`proveedor, el id. `1000`de producto y los números de serie `04ZSSMHI2O7WBVOA` y `04ZSSMHI2O7WBVOB`. En todos los demás niveles de la directiva, los permisos incluyen todos los valores posibles (lectura, escritura y ejecución), lo que significa que todos los demás dispositivos no estarán restringidos.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

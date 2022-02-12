@@ -1,5 +1,5 @@
 ---
-title: 'Paso 5: Borrar y bloquear el dispositivo móvil de un antiguo empleado'
+title: 'Paso 5: dar a otro empleado acceso a OneDrive y Outlook datos'
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,33 +19,180 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 - m365solution-removeemployee
-- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Siga estos pasos para bloquear el acceso a dispositivos móviles de un antiguo empleado.
-ms.openlocfilehash: 7ea82659587e55242f007096e961739f0911b6ee
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+description: Siga los pasos de este artículo para dar a otro empleado acceso a los datos de OneDrive y Outlook antiguos.
+ms.openlocfilehash: 9c56e58de7a7bdbf1cec32ab3fc400c8b3b1b30c
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320936"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765905"
 ---
-# <a name="step-5---wipe-and-block-a-former-employees-mobile-device"></a>Paso 5: Borrar y bloquear el dispositivo móvil de un antiguo empleado
+# <a name="step-5---give-another-employee-access-to-onedrive-and-outlook-data"></a>Paso 5: dar a otro empleado acceso a OneDrive y Outlook datos
 
-Si tu antiguo empleado tenía un teléfono de la organización, puedes usar el Centro de administración de Exchange para borrar y bloquear ese dispositivo de modo que todos los datos de la organización se quiten del dispositivo y ya no se puedan conectar <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">a</a> Office 365. Si su organización usa Movilidad y seguridad básicas para administrar dispositivos móviles, puede borrar y bloquear esos dispositivos con Movilidad y seguridad básicas.
+Cuando un empleado abandone la organización, querrá obtener acceso a sus datos de OneDrive y Outlook, hacer una copia de seguridad y elegir si se entrega a otro empleado.
+  
+## <a name="access-a-former-users-onedrive-documents"></a>Obtener acceso a los documentos OneDrive de un usuario anterior
 
-## <a name="wipe-mobile-device-using-the-exchange-admin-center"></a>Borrar el dispositivo móvil mediante el centro Exchange administración
+Si quitas la licencia de un usuario pero no eliminas la cuenta, puedes darte acceso al contenido en la cuenta del usuario OneDrive. Si elimina la cuenta del usuario, tiene 30 días de forma predeterminada para obtener acceso a los datos de OneDrive usuario anterior. [Obtenga información sobre cómo establecer la retención OneDrive usuarios eliminados](/onedrive/set-retention). Si no restaura una [cuenta de usuario](/office365/admin/add-users/restore-user) en este tiempo, se eliminará OneDrive contenido.
 
-1. Vaya al Centro Exchange de administración > **buzones** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">de destinatarios</a>.
-1. Seleccione el usuario y, en **Dispositivos móviles**, seleccione **Ver detalles**.
-1. En la **página Detalles del** dispositivo móvil, en **Dispositivos** móviles, seleccione el dispositivo móvil, seleccione **Borrar dispositivo DataWipe**![ y](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png), a continuación, **seleccione Bloquear**.
-1. Seleccione **Guardar**.
-   > [!TIP]
-   > Asegúrese de quitar o deshabilitar al usuario de su servicio de Enterprise Blackberry local. También debe deshabilitar cualquier dispositivo BlackBerry para el usuario. Consulte la BlackBerry Business Cloud Services Administration Guide (Guía de administración de servicios de BlackBerry Business Cloud) si necesita pasos específicos sobre cómo deshabilitar al usuario.
+Para conservar los archivos OneDrive de un usuario anterior, primero dé acceso a su OneDrive y, a continuación, mueva los archivos que desea conservar.
+
+1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.  
+
+2. Seleccione un usuario.
+
+3. En la página de propiedades del usuario, **seleccione OneDrive**. En **Obtener acceso a los archivos**, seleccione **Crear vínculo a archivos**.
+
+4. Seleccione el vínculo para abrir la ubicación del archivo. Descargue los archivos en el equipo o seleccione Mover  a o Copiar  para moverlos o copiarlos en su propio OneDrive o en una biblioteca compartida.
+
+> [!NOTE]
+> Puede mover o copiar hasta 500 MB de archivos y carpetas a la vez.<br/>
+> Al mover o copiar documentos que tienen historial de versiones, solo se mueve la versión más reciente.  
+
+También puede conceder acceso a otro usuario para obtener acceso a la información de un antiguo empleado OneDrive.
+
+1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración</a> como administrador global o administrador SharePoint administrador.
+
+    Si recibe un mensaje de que no tiene permiso para acceder al centro de administración, no tiene permisos de administrador en su organización.
+
+2. En el panel izquierdo, seleccione **Centros de** **administración SharePoint**\>. (Es posible que deba seleccionar **Mostrar todo** para ver la lista de centros de administración).
+
+3. Si aparece el SharePoint de administración clásico, seleccione Abrir ahora en  la parte superior de la página para abrir el centro SharePoint administración.
+
+4. En el panel izquierdo, seleccione **Más características**.
+
+5. En **Perfiles de usuario**, seleccione **Abrir**.
+
+6. En **Personas**, seleccione **Administrar perfiles de usuario**.
+
+7. Escriba el nombre del antiguo empleado y seleccione **Buscar**.
+
+8. Haga clic con el botón secundario en el usuario y, a continuación, elija **Administrar propietarios de colecciones de sitios**.
+
+9. Agregue el usuario a **administradores de la colección de sitios** y seleccione **Aceptar**.
+
+10. Ahora, el usuario podrá acceder a la dirección URL del antiguo OneDrive mediante la dirección URL OneDrive anterior. 
+
+### <a name="revoke-admin-access-to-a-users-onedrive"></a>Revocar el acceso de administrador a las OneDrive
+
+Puede darnos acceso al contenido en el OneDrive de un usuario, pero es posible que desee quitar el acceso cuando ya no lo necesite.
+
+1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración</a> como administrador global o administrador SharePoint administrador.
+
+    Si recibe un mensaje de que no tiene permiso para acceder al centro de administración, no tiene permisos de administrador en su organización.
+
+2. En el panel izquierdo, seleccione **Centros de** **administración SharePoint**\>. (Es posible que deba seleccionar **Mostrar todo** para ver la lista de centros de administración).
+
+3. Si aparece el SharePoint de administración clásico, seleccione Abrir ahora en  la parte superior de la página para abrir el centro SharePoint administración.
+
+4. En el panel izquierdo, seleccione **Más características**.
+
+5. En **Perfiles de usuario**, seleccione **Abrir**.
+
+6. En **Personas**, seleccione **Administrar perfiles de usuario**.
+
+7. Escriba el nombre del usuario y seleccione **Buscar**.
+
+8. Haga clic con el botón secundario en el usuario y, a continuación, elija **Administrar propietarios de colecciones de sitios**.
+
+9. Quite la persona que ya no necesita acceso a los datos del usuario y, a continuación, seleccione **Aceptar**.
+
+## <a name="access-the-outlook-data-of-a-former-user"></a>Obtener acceso Outlook datos de un usuario anterior
+
+Para guardar los mensajes de correo electrónico, el calendario, las tareas y los contactos del antiguo empleado, exporte la información a un archivo de Outlook datos (.pst).
+  
+1. [Agregue el correo electrónico del antiguo empleado](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) a su Outlook. (Si [restableces la contraseña del](reset-passwords.md) usuario, puedes establecerla en algo que solo conoces).
+
+2. En Outlook, seleccione **Archivo**.
+
+    ![Este es el aspecto de la cinta de opciones en Outlook 2016.](../../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
+  
+3. Seleccione **Abrir &amp; Import/Export** \> **.**
+
+    ![Import/Export comando en la vista Backstage.](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
+  
+4. Seleccione **Exportar a un archivo y, a** continuación, **seleccione Siguiente**.
+
+    ![Exportar a una opción de archivo en el Asistente para importar y exportar.](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
+  
+5. Seleccione **Archivo de datos de Outlook (.pst)** y, después, haga clic en **Siguiente**.
+
+6. Seleccione la cuenta que desea exportar seleccionando el nombre o la dirección de correo electrónico, como Mailbox - Anne Weiler o anne@contoso.com. Si desea exportar todo lo que hay en su cuenta, incluido el correo, el calendario, los contactos, las tareas y las notas, asegúrese de que la casilla Incluir **subcarpetas** está activada.
+
+    > [!NOTE]
+    > Puede exportar una cuenta a la vez. Si desea exportar varias cuentas, después de exportar una cuenta, repita estos pasos.
+  
+    ![Exportar Outlook cuadro de diálogo Archivo de datos con la carpeta superior seleccionada e Incluir subcarpetas activadas.](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
+  
+7. Seleccione **Siguiente**.
+
+8. Seleccione **Examinar** para seleccionar dónde guardar el archivo Outlook datos (.pst). Escriba un  *nombre de archivo* y, a continuación, **seleccione Aceptar** para continuar.
+
+    > [!NOTE]
+    > Si ha usado la exportación antes, aparecerán la ubicación de la carpeta anterior y el nombre del archivo. Escriba un *nombre de archivo diferente* antes de seleccionar **Aceptar**.
+  
+9. Si va a exportar a un Archivo de datos de Outlook (.pst) existente, en **Opciones**, especifique qué desea hacer cuando exporte elementos que ya existen en el archivo.
+
+10. Seleccione **Finalizar**.
+
+Outlook la exportación inmediatamente a menos que se cree un nuevo archivo de datos de Outlook (.pst) o se utilice un archivo protegido con contraseña.
+  
+- Si está creando un archivo de Outlook de datos (.pst), una contraseña opcional puede ayudar a proteger el archivo. Cuando aparezca **el cuadro de diálogo Crear Outlook** archivo de datos, escriba la contraseña  en los cuadros  Contraseña y  Comprobar contraseña y, a continuación, **seleccione Aceptar**. En el **Outlook de diálogo Contraseña** del archivo de datos, *escriba la contraseña* y, a continuación, seleccione **Aceptar**.
+
+- Si está exportando a un archivo de datos de Outlook existente (.pst) protegido con contraseña, en el cuadro de diálogo Contraseña del archivo de datos de Outlook, escriba la contraseña *y,* **a** continuación, seleccione **Aceptar**.
+
+Vea cómo exportar [o hacer una copia de seguridad del correo electrónico, los](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) contactos y el calendario en un Outlook archivo .pst en Outlook 2010.
+
+  > [!NOTE]
+  > De forma predeterminada, el correo electrónico está disponible sin conexión durante un período de 12 meses. Si es necesario, vea cómo aumentar [los datos disponibles sin conexión](/outlook/troubleshoot/mailboxes/only-subset-items-synchronized).
+
+### <a name="give-another-user-access-to-a-former-users-email"></a>Dar acceso a otro usuario al correo electrónico de un usuario anterior
+
+Para dar acceso a los mensajes de correo electrónico, el calendario, las tareas y los contactos del antiguo empleado a otro empleado, importe la información a la bandeja de entrada Outlook otro empleado.
+
+> [!NOTE]
+> También puede convertir [el buzón del usuario anterior en un](/office365/admin/email/convert-user-mailbox-to-shared-mailbox) buzón compartido o reenviar el correo electrónico de un antiguo empleado [a otro empleado](/office365/admin/add-users/remove-former-employee#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox).
+
+1. En Outlook, vaya a **Archivo** \> **Abrir &amp; Import/Export** \> **.**
+
+    Esto inicia el Asistente para importación y exportación.
+
+2. Seleccione **Importar de otro programa o archivo** y, luego, **Siguiente**.
+
+    ![Asistente para importar y exportar.](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
+  
+3. Seleccione **Outlook archivo de datos (.pst)** y seleccione **Siguiente**.
+
+4. Vaya al archivo .pst que desea importar.
+
+5. En **Opciones**, elija cómo desea tratar los valores duplicados.
+
+6. Seleccione **Siguiente**.
+
+7. Si se asignó una contraseña al archivo Outlook datos (.pst), escriba la contraseña y, a continuación, seleccione **Aceptar**.
+
+8. Establezca las opciones para importar elementos. Normalmente, no es necesario cambiar la configuración predeterminada.
+
+9. Seleccione **Finalizar**.
+
+> [!NOTE]
+> Los pasos siguen siendo los mismos para obtener acceso a los datos de correo electrónico OneDrive un usuario existente.
+
+> [!TIP]
+> Si desea importar o restaurar solo algunos elementos de un archivo de datos de Outlook (.pst), puede abrir el archivo de Outlook datos. A continuación, en el panel de navegación, arrastre los elementos de Outlook carpetas de archivo de datos a las carpetas Outlook existentes.
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Centro de administración de Exchange en Exchange Online](/exchange/exchange-admin-center)
+[Agregar y quitar administradores en una cuenta OneDrive (](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)artículo)
+
+[Restaurar un archivo OneDrive](/onedrive/restore-deleted-onedrive) (artículo)
+
+[OneDrive retención y eliminación](/onedrive/retention-and-deletion) (artículo)
+
+[Compartir archivos y carpetas de OneDrive](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07)

@@ -11,15 +11,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3df27d3a09b5a19b4e2c4c2ecea1ab0eb8c1e157
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 6d4d76a45d69994c82c2027f57d5c3b045e82397
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245176"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765065"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para endpoint
 
@@ -35,12 +37,12 @@ Existen algunos requisitos mínimos para incorporar dispositivos al servicio. Ob
 
 > [!TIP]
 >
-> - En este artículo se describen los requisitos mínimos para Microsoft Defender para el Plan de extremo 2. Si está buscando información sobre Defender for Endpoint Plan 1, vea [Requirements for Defender for Endpoint Plan 1](mde-p1-setup-configuration.md#review-the-requirements).
-> - Obtenga información sobre las últimas mejoras de Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
+> - En este artículo se describen los requisitos mínimos para Microsoft Defender para el Plan de extremo 2. Si está buscando información acerca del Plan 1 de Defender para Endpoint, consulte [Requirements for Defender for Endpoint Plan 1](mde-p1-setup-configuration.md#review-the-requirements).
+> - Obtenga información sobre las mejoras más recientes en Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 > - Defender for Endpoint demostró las capacidades de detección y óptica líderes del sector en la reciente evaluación de MITRE. Lectura: [Insights de la evaluación basada en MITRE ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
-Para obtener información sobre los requisitos de licencias para Microsoft Defender para Endpoint, consulte Información de licencias [de Microsoft Defender para endpoints](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
+Para obtener información sobre los requisitos de licencias para Microsoft Defender para endpoint, consulte [Información de licencias de Microsoft Defender para endpoints](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
 
 Para obtener información detallada sobre las licencias, consulta el sitio [términos](https://www.microsoft.com/licensing/terms/) del producto y trabaja con el equipo de tu cuenta para obtener más información sobre los términos y condiciones.
@@ -61,8 +63,8 @@ El acceso a Defender for Endpoint se realiza a través de un explorador, que adm
 
 ### <a name="supported-windows-versions"></a>Versiones de Windows comptibles
 
-- Windows 7 SP1 Enterprise ([Requiere ESU para admitir](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
-- Windows 7 SP1 Pro ([Requiere ESU para admitir](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
+- Windows 7 SP1 Enterprise ([requiere ESU para ser compatible](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)).
+- Windows 7 SP1 Pro ([requiere ESU para ser compatible](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)).
 - Windows 8,1 Enterprise
 - Windows 8.1 Pro
 - Windows 11 Enterprise
@@ -75,7 +77,7 @@ El acceso a Defender for Endpoint se realiza a través de un explorador, que adm
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows servidor
-  - Windows Server 2008 R2 SP1 ([Requiere ESU para ser compatible](/windows-server/get-started/extended-security-updates-deploy))
+  - Windows Server 2008 R2 SP1 ([requiere ESU para ser compatible](/windows-server/get-started/extended-security-updates-deploy))
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows server, versión 1803 o posterior
@@ -98,7 +100,7 @@ Para obtener más información sobre las versiones compatibles de Windows 10, ve
 >
 > Para entornos virtuales, se recomienda usar Windows 10 Enterprise LTSC 2019 o posterior.
 
-Cuando los componentes estén actualizados en los sistemas operativos de Microsoft Windows, el soporte técnico de Microsoft Defender para endpoints seguirá el ciclo de vida del sistema operativo correspondiente. Para obtener más información, consulte [Preguntas más frecuentes sobre el ciclo de vida.](/lifecycle/faq/general-lifecycle) Por lo general, las nuevas características o capacidades se proporcionan solo en sistemas operativos que aún no han llegado al final de su ciclo de vida. Las actualizaciones de inteligencia de seguridad (actualizaciones de definición y motor) y la lógica de detección se seguirán proporcionando al menos hasta que:
+Cuando los componentes estén actualizados en los sistemas operativos de Microsoft Windows, el soporte técnico de Microsoft Defender para endpoints seguirá el ciclo de vida del sistema operativo correspondiente. Para obtener más información, consulta [Preguntas más frecuentes sobre el ciclo de vida](/lifecycle/faq/general-lifecycle). Por lo general, las nuevas características o capacidades se proporcionan solo en sistemas operativos que aún no han llegado al final de su ciclo de vida. Las actualizaciones de inteligencia de seguridad (actualizaciones de definición y motor) y la lógica de detección se seguirán proporcionando al menos hasta que:
 
 - La [fecha de finalización de la compatibilidad](/lifecycle/products/) (para sistemas operativos que no tienen un programa de actualizaciones de seguridad extendidas (ESU).
 - Fecha [de finalización de ESU](/lifecycle/faq/extended-security-updates) (para sistemas operativos que tienen un programa ESU).
@@ -138,7 +140,7 @@ De forma predeterminada, este servicio está habilitado. Es una buena práctica 
    1. Vaya a **Inicio** y escriba **cmd**.
    2. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
 
-2. Escriba el siguiente comando y presione **Entrar**:
+2. Escriba el siguiente comando y presione **ENTRAR**:
 
    ```console
    sc qc diagtrack
@@ -148,7 +150,7 @@ De forma predeterminada, este servicio está habilitado. Es una buena práctica 
 
    ![Resultado del comando de consulta sc para diagtrack.](images/windefatp-sc-qc-diagtrack.png)
 
-Deberá establecer el servicio para que se  inicie automáticamente si el START_TYPE no está establecido en **AUTO_START**.
+Deberá establecer el servicio para que se inicie automáticamente si el **START_TYPE no está** establecido en **AUTO_START**.
 
 #### <a name="use-the-command-line-to-set-the-windows-diagnostic-data-service-to-automatically-start"></a>Usar la línea de comandos para establecer el Windows de datos de diagnóstico para iniciarse automáticamente
 
@@ -156,13 +158,13 @@ Deberá establecer el servicio para que se  inicie automáticamente si el START_
     1. Vaya a **Inicio** y escriba **cmd**.
     2. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
 
-2. Escriba el siguiente comando y presione **Entrar**:
+2. Escriba el siguiente comando y presione **ENTRAR**:
 
     ```console
     sc config diagtrack start=auto
     ```
 
-3. Se muestra un mensaje de éxito. Para comprobar el cambio, escriba el siguiente comando y presione **Entrar**:
+3. Se muestra un mensaje de éxito. Para comprobar el cambio, escriba el siguiente comando y presione **ENTRAR**:
 
     ```console
     sc qc diagtrack
@@ -174,7 +176,7 @@ La conectividad a Internet en dispositivos es necesaria directamente o a través
 
 El sensor Defender for Endpoint puede usar un ancho de banda promedio diario de 5 MB para comunicarse con el servicio en la nube de Defender for Endpoint e informar de los datos cibernéticos. Las actividades únicas, como las cargas de archivos y la colección de paquetes de investigación, no se incluyen en este ancho de banda promedio diario.
 
-Para obtener más información acerca de las opciones de configuración de proxy adicionales, vea [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
+Para obtener más información sobre las opciones de configuración de proxy adicionales, consulta [Configurar el proxy de dispositivo y la configuración de conectividad a Internet](configure-proxy-internet.md).
 
 Antes de incorporar dispositivos, el servicio de datos de diagnóstico debe estar habilitado. El servicio está habilitado de forma predeterminada en Windows 10 y Windows 11.
 
@@ -188,7 +190,7 @@ Cuando Antivirus de Microsoft Defender no es el antimalware activo de la organiz
 
 Si su organización ha desactivado Antivirus de Microsoft Defender a través de la directiva de grupo u otros métodos, los dispositivos que se incorpore deben excluirse de esta directiva de grupo.
 
-Si está incorporando servidores y Antivirus de Microsoft Defender no es el antimalware activo en los servidores, Antivirus de Microsoft Defender tendrá que configurarse para ir en modo pasivo o desinstalar. La configuración depende de la versión del servidor. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md).
+Si está incorporando servidores y Antivirus de Microsoft Defender no es el antimalware activo en los servidores, Antivirus de Microsoft Defender tendrá que configurarse para ir en modo pasivo o desinstalar. La configuración depende de la versión del servidor. Para obtener más información, [consulte Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md).
 
 > [!NOTE]
 > La directiva de grupo normal no se aplica a la Protección contra alteraciones y los cambios en la configuración Antivirus de Microsoft Defender se omitirán cuando esté la protección contra alteraciones.

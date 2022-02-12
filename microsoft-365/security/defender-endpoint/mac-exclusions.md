@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dcc4faa8289ad1a51345407442d866ddb0f8000b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a069e3dd3ef99f094f96318277e077c56b7cb974
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167228"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766673"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Configurar y validar exclusiones para Microsoft Defender para endpoint en macOS
 
@@ -29,8 +28,8 @@ ms.locfileid: "61167228"
 
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -60,7 +59,7 @@ Proceso|Un proceso específico (especificado por la ruta de acceso completa o el
 
 Las exclusiones de archivos, carpetas y procesos admiten los siguientes caracteres comodín:
 
-Carácter comodín|Description|Ejemplo|Coincidencias|No coincide
+Carácter comodín|Descripción|Ejemplo|Coincidencias|No coincide
 ---|---|---|---|---
 \*|Coincide con cualquier número de caracteres, incluido ninguno (tenga en cuenta que cuando se usa este comodín dentro de una ruta de acceso, solo sustituirá una carpeta)|`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
 ?|Coincide con cualquier carácter|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`
@@ -76,7 +75,7 @@ Para obtener más información sobre cómo configurar exclusiones de JAMF, Intun
 
 ### <a name="from-the-user-interface"></a>Desde la interfaz de usuario
 
-Abra la aplicación Defender para endpoint y vaya a **Administrar** la configuración Agregar o \> **quitar exclusión...**, como se muestra en la siguiente captura de pantalla:
+Abra la aplicación Defender para endpoint y vaya a **Administrar la** \> configuración **Agregar o quitar exclusión...**, como se muestra en la siguiente captura de pantalla:
 
 ![Administrar capturas de pantalla de exclusiones.](images/mdatp-37-exclusions.png)
 
@@ -84,15 +83,15 @@ Seleccione el tipo de exclusión que desea agregar y siga las indicaciones.
 
 ## <a name="validate-exclusions-lists-with-the-eicar-test-file"></a>Validar listas de exclusiones con el archivo de prueba EICAR
 
-Puede validar que las listas de exclusión funcionan mediante `curl` la descarga de un archivo de prueba.
+Puede validar que las listas de exclusión funcionan mediante la descarga `curl` de un archivo de prueba.
 
-En el siguiente fragmento de código Bash, reemplace `test.txt` por un archivo que cumpla las reglas de exclusión. Por ejemplo, si ha excluido la `.testing` extensión, reemplace `test.txt` por `test.testing` . Si está probando una ruta de acceso, asegúrese de ejecutar el comando dentro de esa ruta.
+En el siguiente fragmento de código Bash, reemplace `test.txt` por un archivo que cumpla las reglas de exclusión. Por ejemplo, si ha excluido la `.testing` extensión, reemplace `test.txt` por `test.testing`. Si está probando una ruta de acceso, asegúrese de ejecutar el comando dentro de esa ruta.
 
 ```bash
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-Si Defender para Endpoint en Mac informa de malware, la regla no funciona. Si no hay ningún informe de malware y existe el archivo descargado, la exclusión funciona. Puede abrir el archivo para confirmar que el contenido es el mismo que el descrito en el sitio web del archivo [de prueba EICAR](http://2016.eicar.org/86-0-Intended-use.html).
+Si Defender para Endpoint en Mac informa de malware, la regla no funciona. Si no hay ningún informe de malware y existe el archivo descargado, la exclusión funciona. Puede abrir el archivo para confirmar que el contenido es el mismo que el descrito en el sitio web del archivo [de prueba eicar](http://2016.eicar.org/86-0-Intended-use.html).
 
 Si no tiene acceso a Internet, puede crear su propio archivo de prueba EICAR. Escriba la cadena EICAR en un nuevo archivo de texto con el siguiente comando Bash:
 
@@ -118,7 +117,7 @@ El nombre de la amenaza asociado a una detección en el dispositivo se puede obt
 mdatp threat list
 ```
 
-Por ejemplo, para agregar (el nombre de amenaza asociado con la detección `EICAR-Test-File (not a virus)` eicar) a la lista permitida, ejecute el siguiente comando:
+Por ejemplo, para agregar `EICAR-Test-File (not a virus)` (el nombre de amenaza asociado con la detección eicar) a la lista permitida, ejecute el siguiente comando:
 
 ```bash
 mdatp threat allowed add --name "EICAR-Test-File (not a virus)"

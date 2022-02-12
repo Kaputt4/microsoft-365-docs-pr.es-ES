@@ -14,15 +14,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cbea3514d9f2f12a8adce0f74ca0203dcc4195ae
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 3e0246160424e76d0ddce42b3dacf74c6b56e43c
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936203"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765089"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender para punto de conexión en iOS
 
@@ -44,20 +44,20 @@ ms.locfileid: "61936203"
 
 **Para usuarios finales**
 
-- Licencia de Microsoft Defender para endpoint asignada a los usuarios finales de la aplicación. Consulta [Requisitos de licencias de Microsoft Defender para puntos de conexión.](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
+- Licencia de Microsoft Defender para endpoint asignada a los usuarios finales de la aplicación. Consulta [Requisitos de licencias de Microsoft Defender para puntos de conexión](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements).
 
-- **Para dispositivos inscritos:**
+- **Para dispositivos inscritos**:
     - Los dispositivos se [inscriben a](/mem/intune/user-help/enroll-your-device-in-intune-ios) través de la Portal de empresa de Intune para aplicar directivas de cumplimiento de dispositivos de Intune. Esto requiere que al usuario final se le asigne una Microsoft Intune licencia.
-    - Portal de empresa de Intune la aplicación se puede descargar desde la [Tienda de aplicaciones de Apple.](https://apps.apple.com/us/app/intune-company-portal/id719171358)
+    - Portal de empresa de Intune aplicación se puede descargar desde la [Tienda de aplicaciones de Apple](https://apps.apple.com/us/app/intune-company-portal/id719171358).
     
     >[!NOTE]
     >Apple no permite que los usuarios de redireccionamiento descarguen otras aplicaciones de la tienda de aplicaciones, por lo que este paso debe realizarlo el usuario antes de incorporarse a la aplicación De endpoint de Microsoft Defender.
     
-    - Los dispositivos están registrados con Azure Active Directory. Esto requiere que el usuario final haya iniciado sesión a través [Microsoft Authenticator aplicación](https://apps.apple.com/app/microsoft-authenticator/id983156458).
+    - Los dispositivos están registrados con Azure Active Directory. Esto requiere que el usuario final haya iniciado sesión [a través Microsoft Authenticator aplicación](https://apps.apple.com/app/microsoft-authenticator/id983156458).
 
-- **Para dispositivos no** inscritos: los dispositivos están registrados con Azure Active Directory. Esto requiere que el usuario final haya iniciado sesión a través [Microsoft Authenticator aplicación](https://apps.apple.com/app/microsoft-authenticator/id983156458).
+- **Para dispositivos no inscritos**: los dispositivos están registrados con Azure Active Directory. Esto requiere que el usuario final haya iniciado sesión [a través Microsoft Authenticator aplicación](https://apps.apple.com/app/microsoft-authenticator/id983156458).
 
-- Para obtener más información sobre cómo asignar licencias, vea [Assign licenses to users](/azure/active-directory/users-groups-roles/licensing-groups-assign).
+- Para obtener más información sobre cómo asignar licencias, vea [Asignar licencias a los usuarios](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
 **Para administradores**
 
@@ -76,18 +76,18 @@ ms.locfileid: "61936203"
 
 - Dispositivo iOS que ejecuta iOS 12.0 y posteriores. También se admiten iPads.
 
-- El dispositivo está inscrito con la [aplicación Portal de empresa de Intune o](https://apps.apple.com/us/app/intune-company-portal/id719171358) está registrado con Azure Active Directory a través [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458) con la misma cuenta.
+- El dispositivo está inscrito con la aplicación [Portal de empresa de Intune o](https://apps.apple.com/us/app/intune-company-portal/id719171358) está registrado con Azure Active Directory a través [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458) con la misma cuenta.
 
 ## <a name="installation-instructions"></a>Instrucciones de instalación
 
 La implementación de Microsoft Defender para endpoint en iOS se puede realizar a través de Microsoft Endpoint Manager (MEM) y se admiten dispositivos supervisados y no supervisados. Los usuarios finales también pueden instalar directamente la aplicación desde la [Tienda de aplicaciones de Apple](https://aka.ms/mdatpiosappstore).
 
-- Para obtener información sobre la implementación en dispositivos inscritos mediante Microsoft Endpoint Manager o Intune, vea [Deploy Microsoft Defender for Endpoint on iOS](ios-install.md).
-- Para obtener información sobre cómo usar Defender para endpoint en la directiva de protección de aplicaciones (MAM), consulta Configurar la directiva de protección de aplicaciones para incluir las señales de riesgo de [Defender for Endpoint (MAM)](ios-install-unmanaged.md)
+- Para obtener información sobre la implementación en dispositivos inscritos mediante Microsoft Endpoint Manager o Intune, consulte [Deploy Microsoft Defender for Endpoint on iOS](ios-install.md).
+- Para obtener información sobre cómo usar Defender para endpoint en la directiva de protección de aplicaciones (MAM), consulta Configurar la directiva de protección de aplicaciones para incluir [las señales de riesgo de Defender for Endpoint (MAM)](ios-install-unmanaged.md)
 
 ## <a name="resources"></a>Recursos
 
-- Manténgase informado sobre las próximas versiones visitando Novedades de Microsoft Defender para endpoint [en iOS](ios-whatsnew.md) o nuestro [blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS).
+- Manténgase informado sobre las próximas versiones visitando Novedades de [Microsoft Defender para endpoint en iOS](ios-whatsnew.md) o nuestro [blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS).
 
 - Proporcionar comentarios a través del sistema de comentarios desde la aplicación o a través de la [consola de seguridad unificada](https://security.microsoft.com)
 

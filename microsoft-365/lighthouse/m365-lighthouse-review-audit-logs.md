@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo revisar los registros de auditoría.
-ms.openlocfilehash: a2c9efe88930ad0aae197a5cac26cf06b1386a53
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 2044e61430ef26cf671340c02363658d54414f3b
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354941"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767489"
 ---
 # <a name="review-audit-logs"></a>Revisar registros de auditoría
 
@@ -78,7 +78,7 @@ La siguiente tabla es una lista de tipos de actividad capturados en los registro
 |**restartDevice**                            | Dispositivos                          | Restart                                                          | Microsoft Endpoint Manager |
 | **syncDevice**                               | Dispositivos                          | Sincronizar                                                             | Microsoft Endpoint Manager |
 | **rebootNow**                                | Administración de amenazas                | Reiniciar                                                           | Microsoft Endpoint Manager |
-| **reprovision**                              | Espacios empresariales                          | Aprovisionamiento de reintentos                                               | Windows 365                |
+| **reprovision**                              | Windows 365     | Aprovisionamiento de reintentos                                               | Windows 365                |
 | **windowsDefenderScanFull**                  | Administración de amenazas                | Examen completo                                                       | Microsoft Endpoint Manager |
 | **windowsDefenderScan**                      | Administración de amenazas                | Examen rápido                                                       | Microsoft Endpoint Manager |
 | **windowsDefenderUpdateSignatures**          | Administración de amenazas                | Actualizar antivirus                                                | Microsoft Endpoint Manager |

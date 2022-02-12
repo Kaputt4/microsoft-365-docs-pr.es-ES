@@ -1,7 +1,7 @@
 ---
 title: Implementar la implementación de reglas de reducción de superficie de ataque (ASR)
 description: Proporciona instrucciones para implementar las reglas de reducción de superficie de ataque.
-keywords: 'Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR'
+keywords: Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,16 +11,21 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar'
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
+ms.openlocfilehash: 3229cd0a98714819009e7d50baab0872f3a67c43
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766589"
 ---
-
-# <a name="step-4-operationalize-asr-rules"></a>Paso 4: Operacionalizar reglas ASR
+# <a name="step-4-operationalize-asr-rules"></a>Paso 4: Operacionalización de reglas de ASR
 
 Después de implementar completamente las reglas de reducción de superficie de ataque (ASR), es fundamental que haya procesos para supervisar y responder a las actividades relacionadas con ASR.
 
@@ -44,6 +49,8 @@ La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en cons
 Mediante la búsqueda avanzada, es posible extraer información de reglas ASR, crear informes y obtener información detallada sobre el contexto de un evento de bloqueo o auditoría de regla ASR determinado.
 
  Puede consultar eventos de reglas ASR desde la tabla DeviceEvents en la sección de búsqueda avanzada del portal Microsoft 365 Defender web. Por ejemplo, una consulta sencilla, como la siguiente, puede informar de todos los eventos que tienen reglas ASR como origen de datos durante los últimos 30 días y los resumirá mediante el recuento ActionType, que en este caso será el nombre de código real de la regla ASR.
+
+Los eventos ASR que se muestran en el portal de búsqueda avanzada se limitan a procesos únicos que se ven cada hora. La hora del evento ASR es la primera vez que se ve el evento en esa hora.
 
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 Defender línea de comandos consulta de búsqueda avanzada](images/asr-defender365-advanced-hunting3.png)
@@ -72,10 +79,10 @@ Para obtener más información acerca de las opciones de búsqueda, consulta: [D
 
 ## <a name="topics-in-this-deployment-collection"></a>Temas de esta colección de implementación
 
-[Requisitos previos de implementación de reglas ASR](attack-surface-reduction-rules-deployment.md)
+[Requisitos previos de implementación de reglas de ASR](attack-surface-reduction-rules-deployment.md)
 
-[Paso 1: Planear la implementación de reglas ASR](attack-surface-reduction-rules-deployment-plan.md)
+[Paso 1: Planear la implementación de reglas de ASR](attack-surface-reduction-rules-deployment-plan.md)
 
-[Paso 2: Probar reglas ASR](attack-surface-reduction-rules-deployment-test.md)
+[Paso 2: Probar reglas de ASR](attack-surface-reduction-rules-deployment-test.md)
 
-[Paso 3: Implementar reglas ASR](attack-surface-reduction-rules-deployment-implement.md)
+[Paso 3: Implementar reglas de ASR](attack-surface-reduction-rules-deployment-implement.md)

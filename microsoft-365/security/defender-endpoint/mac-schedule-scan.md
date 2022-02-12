@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5621ce43443a3e620ef0166c4b362e9dc04becae
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 629db5fc343d100913d631f59a680fc9160713ed
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156333"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766001"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Programar exámenes con Microsoft Defender para endpoint en macOS
 
@@ -38,7 +37,7 @@ Aunque puede iniciar un examen de amenazas en cualquier momento con Microsoft De
 
 ## <a name="schedule-a-scan-with-launchd"></a>Programar un examen con *inicio*
 
-Puedes crear una programación de análisis mediante el demonio que *se* inicia en un dispositivo macOS.
+Puedes crear una programación de análisis mediante *el* demonio que se inicia en un dispositivo macOS.
 
 Para obtener más información sobre el formato *de archivo .plist* que se usa aquí, consulta Acerca [de los archivos](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) de lista de propiedades de información en el sitio web oficial para desarrolladores de Apple.
 
@@ -81,7 +80,7 @@ El código siguiente muestra el esquema que debe usar para programar un examen r
     </plist>
      ```
 
-2. Guarde el archivo *como com.microsoft.wdav.schedquickscan.plist*.
+2. Guarde el archivo como *com.microsoft.wdav.schedquickscan.plist*.
 
 ### <a name="schedule-a-full-scan"></a>Programar un examen completo
 
@@ -120,11 +119,11 @@ El código siguiente muestra el esquema que debe usar para programar un examen r
     </plist>
      ```
 
-2. Guarde el archivo *como com.microsoft.wdav.schedfullscan.plist*.
+2. Guarde el archivo como *com.microsoft.wdav.schedfullscan.plist*.
  
 ### <a name="load-your-file"></a>Cargar el archivo
 
-1. Abra **terminal**.
+1. Abra **Terminal**.
 2. Escriba los siguientes comandos para cargar el archivo:
 
     ```bash
@@ -134,10 +133,10 @@ El código siguiente muestra el esquema que debe usar para programar un examen r
 
 3. El examen programado se ejecutará en la fecha, hora y frecuencia definidas en la lista p. En los ejemplos anteriores, el examen se ejecuta a las 2:50 a.m. todos los viernes. 
 
-    - El `Weekday` valor de usa un entero para indicar el quinto día de la `StartCalendarInterval` semana, o viernes. El intervalo está entre 0 y 7 y 7 representa el domingo.
-    - El `Day` valor de usa un entero para indicar el tercer día del `StartCalendarInterval` mes. El intervalo está entre 1 y 31.
-    - El `Hour` valor de usa un entero para indicar la segunda hora del `StartCalendarInterval` día. El intervalo está entre 0 y 24.
-    El `Minute` valor de usa un entero para indicar cincuenta minutos de la `StartCalendarInterval` hora. El intervalo está entre 0 y 59.
+    - El `Weekday` valor de `StartCalendarInterval` usa un entero para indicar el quinto día de la semana, o viernes. El intervalo está entre 0 y 7 y 7 representa el domingo.
+    - El `Day` valor de `StartCalendarInterval` usa un entero para indicar el tercer día del mes. El intervalo está entre 1 y 31.
+    - El `Hour` valor de `StartCalendarInterval` usa un entero para indicar la segunda hora del día. El intervalo está entre 0 y 24.
+    El `Minute` valor de `StartCalendarInterval` usa un entero para indicar cincuenta minutos de la hora. El intervalo está entre 0 y 59.
     
     
  > [!IMPORTANT]
@@ -147,6 +146,6 @@ El código siguiente muestra el esquema que debe usar para programar un examen r
 
 ## <a name="schedule-a-scan-with-intune"></a>Programar un examen con Intune
 
-También puede programar exámenes con Microsoft Intune. El [script runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) shell disponible en Scripts para Microsoft Defender para [Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) persistirá cuando el dispositivo reanude el modo de suspensión. 
+También puede programar exámenes con Microsoft Intune. El [script runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) shell disponible en [Scripts para Microsoft Defender para Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) persistirá cuando el dispositivo reanude el modo de suspensión. 
 
 Consulta [Usar scripts de shell en dispositivos macOS en Intune](/mem/intune/apps/macos-shell-scripts) para obtener instrucciones más detalladas sobre cómo usar este script en tu empresa.

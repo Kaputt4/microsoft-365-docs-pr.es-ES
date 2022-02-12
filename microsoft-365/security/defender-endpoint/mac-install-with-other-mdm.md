@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 64847494bba34be838617842481ce6016e0b803a
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: c8ffab850302967b9e36e841bf035cef07ad2775
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171322"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767248"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación con un sistema de administración de dispositivos móviles (MDM) diferente para Microsoft Defender para Endpoint en macOS
 
@@ -29,15 +28,15 @@ ms.locfileid: "61171322"
 
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
  
 ## <a name="prerequisites-and-system-requirements"></a>Requisitos previos y requisitos del sistema
 
-Antes de empezar, consulta la página principal de Microsoft Defender para Endpoint [en macOS](microsoft-defender-endpoint-mac.md) para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión de software actual.
+Antes de empezar, consulta la página principal de [Microsoft Defender para Endpoint en macOS](microsoft-defender-endpoint-mac.md) para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión de software actual.
 
 
 ## <a name="approach"></a>Enfoque
@@ -67,7 +66,7 @@ La mayoría de las soluciones MDM usan el mismo modelo para administrar disposit
 
 ### <a name="package"></a>Paquete
 
-Configure la implementación de [un paquete de aplicación](mac-install-with-jamf.md)necesario, con el paquete de instalación (wdav.pkg) descargado desde Microsoft 365 Defender [portal](mac-install-with-jamf.md).
+Configure la implementación de [un paquete de aplicación necesario](mac-install-with-jamf.md), con el paquete de instalación (wdav.pkg) descargado desde [Microsoft 365 Defender portal](mac-install-with-jamf.md).
 
 Para implementar el paquete en tu empresa, usa las instrucciones asociadas con la solución MDM.
 

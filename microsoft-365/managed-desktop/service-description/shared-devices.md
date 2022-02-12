@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: fd0eae34c5ca48168587a3e495d34ab329cb05a3
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 959c557501fe1232dd92f9c501f95b2f3faa37bc
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034538"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765965"
 ---
 # <a name="shared-devices"></a>Dispositivos compartidos
 
@@ -47,24 +47,24 @@ El modo de dispositivo compartido no es una buena opción en estas situaciones:
 
 Tanto si tú como un partner administras la inscripción, puedes elegir usar el modo de dispositivo compartido.
 
-Si estás inscribiendo dispositivos tú mismo, sigue los pasos de [Registrar](../get-started/register-devices-self.md)nuevos dispositivos tú mismo y, a continuación, agréguelos al grupo Dispositivos modernos del lugar de **trabajo:Modo de dispositivo** compartido.
+Si estás inscribiendo dispositivos tú mismo, sigue los pasos de [Registrar](../get-started/register-devices-self.md) nuevos dispositivos tú mismo y, a continuación, agréguelos al grupo Dispositivos modernos del lugar de trabajo **: modo de dispositivo** compartido.
 
 > [!WARNING]
 > No intente convertir ningún dispositivo de Escritorio administrado de Microsoft existente en modo de dispositivo compartido simplemente agregándolos a este grupo. Las directivas que se aplican pueden provocar que OneDrive archivos se pierdan permanentemente.
 
-Si tienes un socio inscribir dispositivos, sigue los pasos descritos en [Pasos](../get-started/register-devices-partner.md)para que los partners registren dispositivos, pero anexa **-Shared** a la etiqueta de grupo, como se muestra en la tabla siguiente:
+Si tiene dispositivos de inscripción de un partner, siga los pasos descritos en [Pasos](../get-started/register-devices-partner.md) para que los partners registren dispositivos, pero anexe **-Shared** a la etiqueta de grupo, como se muestra en la tabla siguiente:
 
 |Perfil de dispositivo  |Etiqueta de grupo (modo estándar)  |Etiqueta de grupo (modo de dispositivo compartido)  |
 |---------|---------|---------|
 |Fecha confidencial | Microsoft365Managed_SensitiveData        |  Microsoft365Managed_SensitiveData-Shared       |
-| Power user         | Microsoft365Managed_PowerUser        | No admitido        |
+| Power user         | Microsoft365Managed_PowerUser        | No compatible        |
 |Estándar     | Microsoft365Managed_Standard        | Microsoft365Managed_Standard-Shared  |
 
 ## <a name="consequences-of-shared-device-mode"></a>Consecuencias del modo de dispositivo compartido
 
 ### <a name="device-storage"></a>Almacenamiento de dispositivos
 
-Los usuarios de dispositivos compartidos deben hacer una copia de seguridad de sus datos en la nube para poder seguirlos a otros dispositivos. Una vez que hayas registrado dispositivos en modo de dispositivo compartido, asegúrate de habilitar las características de redireccionamiento de archivos a petición y carpetas [conocidas](/onedrive/redirect-known-folders) de OneDrive. [](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e#:~:text=%20Turn%20on%20Files%20On-Demand%20%201%20Make,files%20as%20you%20use%20them%20box.%20More%20) Este enfoque minimiza el efecto que tiene cada perfil de usuario en el almacenamiento del dispositivo. Los dispositivos en modo de dispositivo compartido eliminan automáticamente los perfiles de usuario si el espacio libre en disco cae por debajo del 25 %. Esta actividad está programada para medianoche en la hora local del dispositivo, a menos que el almacenamiento se vuelva críticamente limitado.
+Los usuarios de dispositivos compartidos deben hacer una copia de seguridad de sus datos en la nube para poder seguirlos a otros dispositivos. Una vez que hayas registrado dispositivos en modo de dispositivo compartido, asegúrate de habilitar las características de redireccionamiento de [](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e#:~:text=%20Turn%20on%20Files%20On-Demand%20%201%20Make,files%20as%20you%20use%20them%20box.%20More%20) archivos a petición y carpetas [conocidas](/onedrive/redirect-known-folders) de OneDrive. Este enfoque minimiza el efecto que tiene cada perfil de usuario en el almacenamiento del dispositivo. Los dispositivos en modo de dispositivo compartido eliminan automáticamente los perfiles de usuario si el espacio libre en disco cae por debajo del 25 %. Esta actividad está programada para medianoche en la hora local del dispositivo, a menos que el almacenamiento se vuelva críticamente limitado.
 
 Microsoft Managed Desktop usa [el CSP de SharedPC](/mem/intune/configuration/shared-user-device-settings-windows) para realizar estas operaciones, así que asegúrese de que no los usa usted mismo.
 
@@ -89,13 +89,13 @@ En el modo de dispositivo compartido, solo puedes tener un perfil [de dispositiv
 
 ### <a name="apps-and-policies-assigned-to-users"></a>Aplicaciones y directivas asignadas a los usuarios
 
-En dispositivos compartidos, debes asignar cualquier aplicación o directivas que te administras a los grupos *de dispositivos,* no a los grupos de usuarios. Esto garantiza que cada usuario tenga una experiencia más coherente. La excepción [es Portal de empresa](#deploying-apps-with-company-portal).
+En dispositivos compartidos, debes asignar cualquier aplicación o directivas que te administras a los grupos *de dispositivos*, no a los grupos de usuarios. Esto garantiza que cada usuario tenga una experiencia más coherente. La excepción [es Portal de empresa](#deploying-apps-with-company-portal).
 
 ## <a name="limitations-of-shared-device-mode"></a>Limitaciones del modo de dispositivo compartido
 
 ### <a name="windows-hello"></a>Windows Hello
 
-Windows Hello la emulación de tarjetas [inteligentes](/windows/security/identity-protection/hello-for-business/hello-faq)para almacenar en caché de forma segura los PIN de usuario, lo que minimiza el número de veces que los usuarios tienen que autenticarse. Sin embargo, Windows solo permite 10 tarjetas inteligentes a la vez en un dispositivo determinado. Cuando un undécimo usuario inicia sesión por primera vez, una de las cuentas existentes perderá su tarjeta inteligente. Podrán iniciar sesión, pero su PIN no se almacenará en caché.
+Windows Hello la emulación de tarjeta inteligente para almacenar en caché de forma segura los [PIN de](/windows/security/identity-protection/hello-for-business/hello-faq) usuario, lo que minimiza el número de veces que los usuarios tienen que autenticarse. Sin embargo, Windows solo permite 10 tarjetas inteligentes a la vez en un dispositivo determinado. Cuando un undécimo usuario inicia sesión por primera vez, una de las cuentas existentes perderá su tarjeta inteligente. Podrán iniciar sesión, pero su PIN no se almacenará en caché.
 
 ### <a name="universal-print"></a>Impresión universal
 
@@ -108,13 +108,13 @@ Cuando impresión universal instala una impresora para un único usuario en un d
 Cada Microsoft Intune dispositivo tiene un usuario principal, que se asigna cuando Autopilot configura un dispositivo. Pero cuando los dispositivos se comparten, Intune requiere que se quite el usuario principal.
 
 > [!IMPORTANT]
-> Mientras el modo de dispositivo compartido está en versión preliminar pública, asegúrese de quitar el usuario principal siguiendo estos pasos: inicie sesión en el Centro de administración de Microsoft Endpoint Manager, seleccione Dispositivos Todos los dispositivos, seleccione un dispositivo, después seleccione Propiedades Quitar usuario principal y elimine el usuario que aparece >   > allí.
+> Mientras el modo de dispositivo compartido está en versión preliminar pública, asegúrese de quitar el usuario principal siguiendo estos pasos: inicie sesión en el Centro de administración de Microsoft Endpoint Manager, seleccione **DispositivosTodos**> dispositivos, seleccione un dispositivo, después seleccione **PropiedadesRemove**> al usuario principal y elimine el usuario que aparece allí.
 
 ### <a name="deploying-apps-with-company-portal"></a>Implementación de aplicaciones con Portal de empresa
 
-Es probable que algunas aplicaciones no necesiten estar presentes en todos los dispositivos, por lo que es posible que prefieras que los usuarios solo instalen esas aplicaciones cuando las [necesiten](/mem/intune/user-help/install-apps-cpapp-windows)desde Portal de empresa . Microsoft Managed Desktop deshabilita los Portal de empresa de forma predeterminada para dispositivos en modo de dispositivo compartido. Si desea habilitar Portal de empresa, puede presentar una solicitud de [cambio,](../working-with-managed-desktop/admin-support.md)pero debe tener en cuenta algunas limitaciones de esta característica en esta versión preliminar pública:
+Es probable que algunas aplicaciones no necesiten estar presentes en todos los dispositivos, por lo que es posible que prefieras que los usuarios solo instalen esas aplicaciones cuando las [necesiten de Portal de empresa](/mem/intune/user-help/install-apps-cpapp-windows). Microsoft Managed Desktop deshabilita los Portal de empresa de forma predeterminada para dispositivos en modo de dispositivo compartido. Si desea habilitar Portal de empresa, puede presentar una solicitud de [cambio, pero](../working-with-managed-desktop/admin-support.md) debe tener en cuenta algunas limitaciones de esta característica en esta versión preliminar pública:
 
-- Para que una aplicación esté disponible para los usuarios de Portal de empresa, asigne un grupo de usuarios a esa aplicación en Intune y, a continuación, agregue cada usuario [a](/mem/intune/apps/apps-deploy) ese grupo de usuarios.
+- Para que una aplicación esté disponible para los usuarios de Portal de empresa, asigne [un](/mem/intune/apps/apps-deploy) grupo de usuarios a esa aplicación en Intune y, a continuación, agregue cada usuario a ese grupo de usuarios.
 - Los dispositivos no pueden tener [un usuario principal](#primary-user).
 - Para desinstalar una aplicación que un usuario instaló a través de Portal de empresa, debes desinstalar la aplicación de todos los usuarios de ese dispositivo.
 

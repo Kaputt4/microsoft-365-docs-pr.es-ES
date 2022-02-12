@@ -21,19 +21,30 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Realice cambios en el perfil de la organización, como el nombre de la organización, la dirección, el teléfono, el contacto técnico y el correo electrónico.
-ms.date: 03/30/2021
-ms.openlocfilehash: 470c3561bd47d6c27279f45fa2041c5e4c1538f4
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.date: 02/11/2022
+ms.openlocfilehash: bec86787c3918bf794345178a15c9401bdc7ae06
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321524"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766601"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Cambiar la dirección de la organización, el contacto técnico y otra información
   
 Puede realizar cambios en el perfil de la organización, como el nombre de la organización, la dirección, el teléfono y el contacto técnico. **Debe ser un administrador global para actualizar esta información.**
   
 Para cambiar la dirección asociada a tu factura o suscripción, consulta Cambiar las direcciones de facturación [para Microsoft 365 para empresas](../../commerce/billing-and-payments/change-your-billing-addresses.md).
+
+## <a name="change-organization-settings-for-cloud-pcs"></a>Cambiar la configuración de la organización para equipos en la nube
+
+De forma predeterminada, se crean nuevos PC en la nube con el sistema operativo Windows 11 y el tipo de cuenta de usuario estándar. Para cambiar esta configuración predeterminada, siga estos pasos:
+
+1. Inicie sesión en el Centro de administración de Microsoft 365 con una cuenta de administrador global.
+2. Vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Configuración de la organización**</a>.
+3. En la **pestaña Servicios**, **seleccione Windows 365**.
+4. Seleccione el sistema operativo y el tipo de cuenta preferidos y, a continuación, **seleccione Guardar**.
+
+La configuración de la organización solo se aplica a los equipos en la nube recién creados. Cuando se cambie esta configuración, no cambiará el tipo de cuenta o el sistema operativo de los PC en la nube existentes.
 
 ## <a name="edit-organization-information"></a>Editar información de la organización
 
@@ -43,9 +54,7 @@ Para cambiar la dirección asociada a tu factura o suscripción, consulta Cambia
 Para cambiar otra información en la página de perfil de su empresa:
   
 1. En el Centro de administración, vaya a la **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**configuración de la organización**</a>.
-
 2. En la **pestaña Perfil de** la organización, seleccione **Información de la organización**.
-
 3. Actualice la información de su organización y, a continuación, **seleccione Guardar cambios**. Asegúrese de rellenar todos los campos obligatorios marcados con un * para habilitar el guardado de los cambios.
 
 A continuación se proporciona una explicación de cada campo.

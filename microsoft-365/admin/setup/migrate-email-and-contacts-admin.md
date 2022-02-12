@@ -21,6 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - adminvideo
+- business_assist
 search.appverid:
 - MET150
 - MOE150
@@ -30,18 +31,21 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Aprenda a importar contactos, calendarios y correos electrónicos de Gmail u otro proveedor de correo electrónico y migrarlos a Microsoft 365.
-ms.openlocfilehash: 91e079d24595c7c7f7d9e37eaddb49d34df886d1
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 7905dd767b29b50466729510ac0e4cff70eb242e
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530435"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767525"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Migrar correo y contactos a Microsoft 365
 
 Importe o migre el correo electrónico de Gmail u otro proveedor de correo electrónico a Microsoft 365.
   
  **¿Quiere ayuda con esto?**  [Póngase en contacto Microsoft 365 soporte técnico para empresas](../../business-video/get-help-support.md). 
+
+> [!TIP]
+> Si necesita ayuda con los pasos de este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso diario a los especialistas de pequeñas empresas a medida que crece su negocio, desde la incorporación hasta el uso diario.
   
 Para completar esta tarea, necesita usar una versión de Outlook instalada en el escritorio. Outlook se incluye en la mayoría de Microsoft 365 [planes](https://go.microsoft.com/fwlink/p/?LinkId=723731).
   
@@ -99,10 +103,10 @@ Agregue una cuenta, como su cuenta privada de Gmail, a Outlook.
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>Varios buzones: los administradores pueden importar masivamente correo electrónico, contactos y calendarios a Microsoft 365
 
-Según el sistema de correo electrónico de origen que use, podrá elegir entre varios métodos de migración masiva. Lea [Formas de migrar varias cuentas de](/Exchange/mailbox-migration/mailbox-migration) correo electrónico Microsoft 365 para decidir qué método funciona por usted.
+Según el sistema de correo electrónico de origen que use, podrá elegir entre varios métodos de migración masiva. Lea [Formas de migrar varias cuentas de correo electrónico Microsoft 365](/Exchange/mailbox-migration/mailbox-migration) para decidir qué método funciona por usted.
 
 ## <a name="related-content"></a>Contenido relacionado
 
 [Planear la configuración de Microsoft 365 para empresas](plan-your-setup.md) (artículo)\
 [Instalar Office aplicaciones](install-applications.md) (página de vínculos)\
-[Overview of the Centro de administración de Microsoft 365](Overview of the Centro de administración de Microsoft 365](.. /admin-overview/admin-center-overview.md) (vídeo)
+[Información general del Centro de administración de Microsoft 365] (Información general del Centro de administración de Microsoft 365] (../admin-overview/admin-center-overview.md) (vídeo)

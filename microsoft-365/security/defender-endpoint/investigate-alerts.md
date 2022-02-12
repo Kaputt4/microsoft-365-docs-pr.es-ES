@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: fe10cad1f3b9f7afb32b5e3b0575477aee40c55b
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: f228d0ca44589b9c140226c2b39984c717c7d9f8
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218387"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766073"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Investigar alertas en Microsoft Defender para endpoint
 
@@ -39,7 +39,7 @@ Investigue las alertas que afectan a la red, comprenda lo que significan y cómo
 
 Seleccione una alerta de la cola de alertas para ir a la página de alertas. Esta vista contiene el título de alerta, los activos afectados, el panel lateral de detalles y el artículo de alerta.
 
-En la página de alertas, comience la investigación seleccionando los activos afectados o cualquiera de las entidades en la vista de árbol del artículo de alerta. El panel de detalles se rellena automáticamente con más información sobre lo que ha seleccionado. Para ver qué tipo de información puede ver aquí, lea [Review alerts in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/review-alerts).
+En la página de alertas, comience la investigación seleccionando los activos afectados o cualquiera de las entidades en la vista de árbol del artículo de alerta. El panel de detalles se rellena automáticamente con más información sobre lo que ha seleccionado. Para ver qué tipo de información puede ver aquí, lea [Revisar alertas en Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/review-alerts).
 
 ## <a name="investigate-using-the-alert-story"></a>Investigar con el artículo de alerta
 
@@ -56,7 +56,7 @@ Expanda entidades para ver los detalles de un vistazo. Al seleccionar una entida
 
 ## <a name="take-action-from-the-details-pane"></a>Realizar acciones desde el panel de detalles
 
-Una vez que haya seleccionado una entidad de interés, el panel de detalles cambiará para mostrar información sobre  el tipo de entidad seleccionada, información histórica cuando esté disponible y ofrecer controles para realizar acciones en esta entidad directamente desde la página de alerta.
+Una vez que haya seleccionado una entidad de interés, el panel de detalles cambiará para mostrar información sobre el tipo de entidad seleccionada, información histórica cuando esté disponible y ofrecer controles para realizar acciones  en esta entidad directamente desde la página de alerta.
 
 Una vez que haya terminado de investigar, vuelva a la alerta con la que inició, marque el estado de la alerta como **Resuelto** y clasifique como **Alerta** falsa o **Alerta verdadera**. Clasificar alertas ayuda a ajustar esta funcionalidad para proporcionar alertas más verdaderas y menos falsas.
 
@@ -69,7 +69,7 @@ Si experimenta una alerta falsa con una aplicación de línea de negocio, cree u
 ![acciones y clasificación en el panel de detalles con la regla de supresión resaltada.](images/alert-false-suppression-rule.png)
 
 > [!TIP]
-> Si tienes algún problema que no se describe anteriormente, usa el botón para proporcionar comentarios 🙂 o abrir un vale de soporte técnico.
+> Si tienes algún problema que no se describe anteriormente, usa el 🙂 botón para proporcionar comentarios o abrir un vale de soporte técnico.
 
 
 ## <a name="related-topics"></a>Temas relacionados

@@ -13,16 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 82c1418d58679fef1b59e51b41052e4dfe584635
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5a17f94e3d26c08c0f6e0ca358778a65189cf6a5
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168549"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766027"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solucionar problemas de alertas o eventos que faltan para Microsoft Defender para Endpoint en Linux
 
@@ -31,12 +30,12 @@ ms.locfileid: "61168549"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-En este artículo se proporcionan algunos pasos generales para mitigar los eventos o alertas que faltan en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+En este artículo se proporcionan algunos pasos generales para mitigar los eventos o alertas que <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">faltan en Microsoft 365 Defender portal</a>.
 
-Una **vez que Microsoft Defender para endpoint** se  haya instalado correctamente en un dispositivo, se generará una página de dispositivo en el portal. Puedes revisar todos los eventos registrados en la pestaña escala de tiempo de la página del dispositivo o en la página de búsqueda avanzada. En esta sección se soluciona el caso de que faltan algunos o todos los eventos esperados.
-Por ejemplo, si faltan todos los eventos _CreatedFile._
+Una **vez que Microsoft Defender para endpoint** se haya instalado correctamente en un dispositivo,  se generará una página de dispositivo en el portal. Puedes revisar todos los eventos registrados en la pestaña escala de tiempo de la página del dispositivo o en la página de búsqueda avanzada. En esta sección se soluciona el caso de que faltan algunos o todos los eventos esperados.
+Por ejemplo, si faltan todos los eventos _CreatedFile_ .
 
 ## <a name="missing-network-and-login-events"></a>Faltan eventos de red e inicio de sesión
 
@@ -73,7 +72,7 @@ Microsoft Defender para endpoint utilizó `audit` el marco de linux para realiza
     service auditd start
     ```
 
-**En los sistemas SLES,** la auditoría de SYSCALL puede deshabilitarse de forma predeterminada y puede tenerse en cuenta si faltan `auditd` eventos.
+**En los sistemas SLES** , la auditoría de SYSCALL puede `auditd` deshabilitarse de forma predeterminada y puede tenerse en cuenta si faltan eventos.
 
 1. Para validar que la auditoría de SYSCALL no está deshabilitada, enumere las reglas de auditoría actuales:
 
@@ -87,11 +86,11 @@ Microsoft Defender para endpoint utilizó `audit` el marco de linux para realiza
     -a task, never
     ```
 
-    las reglas de auditoría se encuentran en `/etc/audit/rules.d/audit.rules` .
+    las reglas de auditoría se encuentran en `/etc/audit/rules.d/audit.rules`.
 
 ## <a name="missing-file-events"></a>Eventos de archivo que faltan
 
-Los eventos de archivo se recopilan con `fanotify` framework. En caso de que falte alguno o todos los eventos de archivo, asegúrese de que está habilitado en el dispositivo y de que el `fanotify` sistema de archivos es [compatible.](microsoft-defender-endpoint-linux.md#system-requirements)
+Los eventos de archivo se recopilan con `fanotify` framework. En caso de que falte alguno o todos los eventos de archivo, `fanotify` asegúrese de que está habilitado en el dispositivo y de que el sistema de [archivos es compatible](microsoft-defender-endpoint-linux.md#system-requirements).
 
 Enumere los sistemas de archivos del equipo con:
 

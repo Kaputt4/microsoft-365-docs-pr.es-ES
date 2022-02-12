@@ -1,7 +1,7 @@
 ---
 title: Implementar actualizaciones para Microsoft Defender para Endpoint en Mac
 description: Controle las actualizaciones de Microsoft Defender para Endpoint en Mac en entornos empresariales.
-keywords: 'microsoft, defender, Microsoft Defender para Endpoint, mac, actualizaciones, implementar'
+keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, actualizaciones, implementar
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,12 +12,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: ceff362daeb2054b6037ea0eecbeafbb9dbed4f3
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767633"
 ---
-
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Implementar actualizaciones para Microsoft Defender para Endpoint en macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -136,7 +140,7 @@ Cambie si los usuarios locales podrán hacer clic en la opción "Buscar actualiz
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|EnableCheckForUpdatesButton|
 |**Tipo de datos**|Booleano|
-|**Posibles valores**|True (predeterminado) <p> Falso|
+|**Posibles valores**|True (predeterminado) <p> False|
 |||
 
 ### <a name="disable-insider-checkbox"></a>Casilla Deshabilitar Insider
@@ -152,7 +156,7 @@ Se establece en true para que el "Join the Office Insider Program..." casilla no
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|DisableInsiderCheckbox|
 |**Tipo de datos**|Booleano|
-|**Posibles valores**|False (predeterminado) <p> Verdadero|
+|**Posibles valores**|False (predeterminado) <p> True|
 |||
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>Limitar la telemetría que se envía desde MAU
@@ -168,7 +172,7 @@ Se establece en false para enviar datos de latido mínimos, sin uso de aplicacio
 |**Dominio**|`com.microsoft.autoupdate2`|
 |**Clave**|SendAllTelemetryEnabled|
 |**Tipo de datos**|Booleano|
-|**Posibles valores**|True (predeterminado) <p> Falso|
+|**Posibles valores**|True (predeterminado) <p> False|
 |||
 
 ## <a name="example-configuration-profile"></a>Perfil de configuración de ejemplo

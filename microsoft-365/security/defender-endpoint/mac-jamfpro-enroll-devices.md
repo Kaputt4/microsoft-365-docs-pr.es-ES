@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bec8c6a2a329bff8e80c6822480ea03dd5db4898
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: ab3db2e2b64261ae00008aef448a214cd235bda9
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171082"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765557"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>Inscribir Microsoft Defender para endpoint en dispositivos macOS en Jamf Pro
 
@@ -29,8 +28,8 @@ ms.locfileid: "61171082"
 
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -44,7 +43,7 @@ Este artículo le guiará en dos métodos:
 - [Método 1: Invitaciones de inscripción](#enrollment-method-1-enrollment-invitations)
 - [Método 2: Inscripción de prestage](#enrollment-method-2-prestage-enrollments)
 
-Para obtener una lista completa, vea [About Computer Enrollment](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html).
+Para obtener una lista completa, consulte [Acerca de la inscripción de equipos](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html).
 
 ## <a name="enrollment-method-1-enrollment-invitations"></a>Método de inscripción 1: Invitaciones de inscripción
 
@@ -56,7 +55,7 @@ Para obtener una lista completa, vea [About Computer Enrollment](https://docs.ja
 
     ![Un cierre de un logotipo Description generado automáticamente.](images/b6c7ad56d50f497c38fc14c1e315456c.png)
 
-3. En **Especificar destinatarios para la lista** de > en Direcciones de correo electrónico, escriba las direcciones de correo electrónico de los destinatarios. 
+3. En **Especificar destinatarios para la lista** de **> en Direcciones** de correo electrónico, escriba las direcciones de correo electrónico de los destinatarios.
 
     ![Imagen de las opciones de configuración2.](images/718b9d609f9f77c8b13ba88c4c0abe5d.png)
 
@@ -78,7 +77,7 @@ Para obtener una lista completa, vea [About Computer Enrollment](https://docs.ja
 
 ## <a name="enrollment-method-2-prestage-enrollments"></a>Método enrollment 2: Prestage Enrollments
 
-1. En el panel de Pro Jamf, vaya a **Prestage enrollments**.
+1. En el panel de Pro Jamf, vaya a **Inscripción de prestage**.
 
     ![Imagen de configuración9.](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 

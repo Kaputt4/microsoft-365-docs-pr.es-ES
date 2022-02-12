@@ -16,21 +16,21 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 3a2623e1d37d16281b89b72b88776363ef56ea5a
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: c0861dbd3e0f3eb5219baecd19a97828a680ca19
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171028"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767513"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Portales de seguridad de Microsoft y centros de administración
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Aunque [Microsoft 365 Defender portal](microsoft-365-defender.md#the-microsoft-365-defender-portal) es el nuevo hogar para supervisar y administrar la seguridad en sus identidades, datos, dispositivos y aplicaciones, tendrá que acceder a varios portales para determinadas tareas especializadas.
+Aunque [Microsoft 365 Defender portal](microsoft-365-defender.md#the-microsoft-365-defender-portal) es el nuevo hogar para supervisar y administrar la seguridad en todas las identidades, datos, dispositivos y aplicaciones, tendrá que tener acceso a varios portales para determinadas tareas especializadas.
 
 > [!TIP] 
-> Para obtener acceso a varios portales relevantes Microsoft 365 Defender portal, seleccione **Más recursos** en el panel de navegación.
+> Para obtener acceso a varios portales relevantes desde Microsoft 365 Defender portal, seleccione **Más recursos** en el panel de navegación.
 
 ## <a name="security-portals"></a>Portales de seguridad
 
@@ -39,9 +39,9 @@ Los operadores y administradores de seguridad pueden ir a los siguientes portale
 
 | Nombre del portal | Descripción | Vínculo |
 |---|---|---| 
-| Portal de Microsoft 365 Defender | Supervisar y responder a la actividad de amenazas y reforzar la posición de seguridad en las identidades, el correo electrónico, los datos, los puntos de conexión y las aplicaciones con [Microsoft 365 Defender](microsoft-365-defender.md) | [security.microsoft.com](https://security.microsoft.com/) |
+| Portal de Microsoft 365 Defender | Supervisar y responder a la actividad de amenazas y reforzar la posición de seguridad en sus identidades, correo electrónico, datos, puntos de conexión y [aplicaciones con Microsoft 365 Defender](microsoft-365-defender.md) | [security.microsoft.com](https://security.microsoft.com/) |
 | Centro de seguridad de Microsoft Defender | Supervisar y responder a la actividad de amenazas en los puntos de conexión con las funcionalidades proporcionadas con [Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
-| Centro de seguridad y cumplimiento | Administrar [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) y [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) proteger los servicios de correo electrónico y colaboración y garantizar el cumplimiento de diversas normativas de tratamiento de datos | [protection.office.com](https://protection.office.com) |
+| Centro de seguridad y cumplimiento | Administrar [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) [y Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) proteger sus servicios de correo electrónico y colaboración, y garantizar el cumplimiento de diversas normativas de tratamiento de datos | [protection.office.com](https://protection.office.com) |
 | Portal de Defender para la nube | Usar [Microsoft Defender para la nube para](/azure/security-center/security-center-intro) reforzar la posición de seguridad de los centros de datos y las cargas de trabajo híbridas en la nube | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
 | Portal de Microsoft Defender for Identity | Identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones internas malintencionadas con señales de Active Directory con [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | Portal de Defender para Aplicaciones en la nube | Usar [Microsoft Defender para aplicaciones en](/cloud-app-security/what-is-cloud-app-security) la nube para obtener una visibilidad enriquecida, un control sobre el viaje de datos y análisis sofisticados para identificar y combatir ciberamenazas en los servicios en la nube | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
@@ -54,7 +54,8 @@ Aunque estos portales no son específicamente para administrar la seguridad, adm
 
 | Nombre del portal | Descripción | Vínculo | 
 |---|---|---| 
-| Portal de Azure | Ver y administrar [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) y todos los [recursos de Azure](/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
+| Portal de Azure | Ver y administrar todos los [recursos de Azure](/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
+| Portal de Azure Active Directory | Ver y administrar [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) | [aad.portal.azure.com](https://aad.portal.azure.com/) |
 | Centro de cumplimiento de Microsoft 365 | Administrar directivas de tratamiento de datos y garantizar [el cumplimiento de las normativas](/compliance/regulatory/offering-home) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
 | Centro de administración de Microsoft 365 | Configurar Microsoft 365 servicios de administración, administrar roles, licencias y realizar un seguimiento de las actualizaciones de los servicios Microsoft 365 cliente | [admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2166757) |
 | Centro de administración de Microsoft Endpoint Manager | Usar [Microsoft Endpoint Manager](/mem/configmgr/) para administrar y proteger dispositivos con funcionalidades combinadas de Intune y Configuration Manager | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |

@@ -1,7 +1,7 @@
 ---
 title: Implementación manual para Microsoft Defender para endpoint en macOS
-description: 'Instale Microsoft Defender para Endpoint en macOS manualmente, desde la línea de comandos.'
-keywords: 'microsoft, defender, Microsoft Defender para Endpoint, mac, instalación, implementación, desinstalación, intune, jamf, macos, catalina, mojave, high sierra'
+description: Instale Microsoft Defender para Endpoint en macOS manualmente, desde la línea de comandos.
+keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, instalación, implementación, desinstalación, intune, jamf, macos, catalina, mojave, high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,13 +12,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: 1fce7aa103de9fb90cafa88a286cbf33bc753456
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765135"
 ---
-
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación manual para Microsoft Defender para endpoint en macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -33,7 +37,7 @@ ms.technology: mde
 En este tema se describe cómo implementar Microsoft Defender para endpoint en macOS manualmente. Una implementación correcta requiere la finalización de todos los pasos siguientes:
 
 - [Descargar paquetes de instalación e incorporación](#download-installation-and-onboarding-packages)
-- [Instalación de aplicaciones (macOS 10.15 y versiones anteriores)](#application-installation-macos-1015-and-older-versions)
+- [Instalación de aplicaciones (macOS 10.15)](#application-installation-macos-1015)
 - [Instalación de aplicaciones (macOS 11 y versiones más recientes)](#application-installation-macos-11-and-newer-versions)
 - [Configuración de cliente](#client-configuration)
 
@@ -54,7 +58,7 @@ Descargue los paquetes de instalación e incorporación de Microsoft 365 Defende
 
 5. Desde un símbolo del sistema, compruebe que tiene los dos archivos.
 
-## <a name="application-installation-macos-1015-and-older-versions"></a>Instalación de aplicaciones (macOS 10.15 y versiones anteriores)
+## <a name="application-installation-macos-1015"></a>Instalación de aplicaciones (macOS 10.15)
 
 Para completar este proceso, debes tener privilegios de administrador en el dispositivo.
 

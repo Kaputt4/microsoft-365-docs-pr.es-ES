@@ -14,15 +14,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0754886d70759b4869151ad2c915a878a5ca111c
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: ce5d8fcf693b6586c134b8fe2381d3881e68d9d3
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355049"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767617"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender para endpoint- Mobile Threat Defense
 
@@ -122,7 +122,7 @@ Esto ayuda a reducir los posibles problemas que podrían surgir al implementar e
 - [Configurar características de iOS](ios-configure-features.md)
 - [Configurar Web Protection sin VPN para dispositivos iOS supervisados](ios-install.md#complete-deployment-for-supervised-devices)
 
-## <a name="resources"></a>Resources
+## <a name="resources"></a>Recursos
 
 - [Microsoft Defender para punto de conexión en Android](microsoft-defender-endpoint-android.md)
 - [Microsoft Defender para punto de conexión en iOS](microsoft-defender-endpoint-ios.md)

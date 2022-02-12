@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3ed4dd5f38369dd818d31e60e23de053dff4347
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: ba52d9587a2ac530eabeacf8c72336751a1a17d7
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171000"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767573"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de extensión de kernel en Microsoft Defender para endpoint en macOS
 
@@ -31,8 +30,8 @@ ms.locfileid: "61171000"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md)
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -45,7 +44,7 @@ Si no aprobaba la extensión del kernel durante la implementación o instalació
 
    ![Captura de pantalla deshabilitada de RTP.](images/mdatp-32-main-app-fix.png)
 
-También puede ejecutar ```mdatp health``` . Informa si la protección en tiempo real está habilitada pero no está disponible. Esto indica que la extensión del kernel no está aprobada para ejecutarse en el dispositivo.
+También puede ejecutar ```mdatp health```. Informa si la protección en tiempo real está habilitada pero no está disponible. Esto indica que la extensión del kernel no está aprobada para ejecutarse en el dispositivo.
 
 ```bash
 mdatp health
@@ -68,7 +67,7 @@ Vea las instrucciones correspondientes a la herramienta de administración que u
 
 ## <a name="manual-deployment"></a>Implementación manual
 
-Si han transcurrido menos de 30 minutos desde  que se instaló el producto, vaya a Seguridad de preferencias del sistema & Privacidad, donde debe permitir el software del sistema de desarrolladores \> "Microsoft Corporation". 
+Si han transcurrido menos de 30 minutos desde que se instaló el producto,  \> vaya a Seguridad de preferencias del sistema **& Privacidad**, donde debe permitir el  software del sistema de desarrolladores "Microsoft Corporation".
 
 Si no ves este mensaje, significa que han transcurrido 30 o más minutos y la extensión del kernel aún no se ha aprobado para ejecutarse en el dispositivo:
 
@@ -88,7 +87,7 @@ En este caso, debe realizar los siguientes pasos para desencadenar de nuevo el f
     Diagnostics for /Library/Extensions/wdavkext.kext:
     ```
 
-2. Abra **Preferencias** \> **del sistema Seguridad & privacidad** desde el menú. (Cierre primero, si está abierto).
+2. Abra **Preferencias del** \> **sistema Seguridad & privacidad** desde el menú. (Cierre primero, si está abierto).
 
 3. **Permitir** software del sistema de desarrolladores "Microsoft Corporation"
 
@@ -98,7 +97,7 @@ En este caso, debe realizar los siguientes pasos para desencadenar de nuevo el f
     sudo kextutil /Library/Extensions/wdavkext.kext
     ```
 
-    El banner debe desaparecer de la aplicación defender y ahora debe informar de que la protección en tiempo ```mdatp health``` real está habilitada y disponible:
+    El banner debe desaparecer de la aplicación defender y ahora ```mdatp health``` debe informar de que la protección en tiempo real está habilitada y disponible:
 
     ```bash
     mdatp health

@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 235a0a79a4d388cd90668697677fe09934ae176c
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 2a297813fbde94499f2d239627be6c33c153e8b0
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217763"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765113"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Investigar incidentes en Microsoft Defender para punto de conexión
 
@@ -47,7 +47,7 @@ Cuando investigues un incidente, verás lo siguiente:
 
 ## <a name="analyze-incident-details"></a>Analizar detalles de incidentes
 
-Haga clic en un incidente para ver **el panel Incidente**. Seleccione **Abrir página de incidentes** para ver los detalles del incidente y la información relacionada (alertas, dispositivos, investigaciones, evidencias, gráfico).
+Haga clic en un incidente para ver el **panel Incidentes**. Seleccione **Abrir página de incidentes** para ver los detalles del incidente y la información relacionada (alertas, dispositivos, investigaciones, evidencias, gráfico).
 
 ![Imagen de detalles del incidente1.](images/atp-incident-details.png)
 
@@ -68,7 +68,7 @@ También puede administrar una alerta y ver metadatos de alerta junto con otra i
 
 ### <a name="devices"></a>Dispositivos
 
-También puedes investigar los dispositivos que forman parte de un incidente determinado o están relacionados con ellos. Para obtener más información, vea [Investigar dispositivos](investigate-machines.md).
+También puedes investigar los dispositivos que forman parte de un incidente determinado o están relacionados con ellos. Para obtener más información, consulta [Investigar dispositivos](investigate-machines.md).
 
 ![Imagen de la pestaña dispositivos en la página detalles de incidentes.](images/atp-incident-device-tab.png)
 

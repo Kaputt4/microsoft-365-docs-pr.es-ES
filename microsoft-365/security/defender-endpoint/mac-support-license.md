@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b7a12d2eb88998496c4998396a5d7bf5084656e8
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: b0a328ffeee6ee5796cb92f00b8491b257e88a65
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520973"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765737"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de licencia para Microsoft Defender para Endpoint en macOS
 
@@ -30,14 +29,14 @@ ms.locfileid: "61520973"
 
 **Se aplica a:**
 
-- [Microsoft Defender para endpoint en macOS](microsoft-defender-endpoint-mac.md) 
- [Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037) 
- de Microsoft Defender para endpoint [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para endpoint en macOS](microsoft-defender-endpoint-mac.md)
+ Plan 1 
+ [de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037) [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Mientras estás pasando por Microsoft Defender para endpoint en [macOS](microsoft-defender-endpoint-mac.md) [y](mac-install-manually.md) pruebas de implementación manual o una prueba de concepto (PoC), es posible que recibas el siguiente error:
+Mientras estás pasando por [Microsoft Defender para endpoint en macOS](microsoft-defender-endpoint-mac.md) [y](mac-install-manually.md) pruebas de implementación manual o una prueba de concepto (PoC), es posible que recibas el siguiente error:
 
 ![Imagen de error de licencia.](images/no-license-found.png)
 
@@ -58,6 +57,6 @@ También puede encontrar este error cuando el agente de Microsoft Defender para 
 
 **Solución:**
 
-Siga las instrucciones MicrosoftDefenderATPOnboardingMacOs.py documentadas aquí: [Configuración de cliente](mac-install-manually.md#client-configuration)
+Siga las MicrosoftDefenderATPOnboardingMacOs.py instrucciones documentadas aquí: [Configuración de cliente](mac-install-manually.md#client-configuration)
 
 Para escenarios en los que Microsoft Defender para Endpoint en macOS no está actualizado, tendrás que actualizar el agente. 

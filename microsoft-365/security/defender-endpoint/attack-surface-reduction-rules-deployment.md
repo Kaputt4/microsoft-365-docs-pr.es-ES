@@ -1,7 +1,7 @@
 ---
-title: Requisitos previos de implementación de reglas ASR
+title: Requisitos previos de implementación de reglas de ASR
 description: Proporciona información general y instrucciones de requisitos previos sobre la implementación de reglas de reducción de superficie de ataque (ASR).
-keywords: 'Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR'
+keywords: Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,16 +11,21 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar'
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
 ms.date: 1/18/2022
+ms.openlocfilehash: 7a05d2712adb37121b1e625ab5c4774a60af3e81
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767213"
 ---
-
-# <a name="asr-rules-deployment-prerequisites"></a>Requisitos previos de implementación de reglas ASR
+# <a name="asr-rules-deployment-prerequisites"></a>Requisitos previos de implementación de reglas de ASR
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -105,6 +110,10 @@ Las siguientes Antivirus de Microsoft Defender componentes no deben tener más d
 - **Antivirus de Microsoft Defender de seguridad**: Microsoft actualiza continuamente la inteligencia de seguridad de Microsoft Defender (también conocida como, definición y firma) para abordar las amenazas más recientes y para refinar la lógica de detección.
 
 Mantener Antivirus de Microsoft Defender versiones actuales ayuda a reducir las reglas ASR falsos resultados positivos y mejora las Antivirus de Microsoft Defender de detección. Para obtener más información sobre las versiones actuales y cómo actualizar los distintos componentes de Antivirus de Microsoft Defender, [visite Antivirus de Microsoft Defender soporte técnico de la plataforma](manage-updates-baselines-microsoft-defender-antivirus.md).
+
+### <a name="caveat"></a>Advertencia
+
+Algunas reglas no funcionan bien si la aplicación y los scripts no firmados y desarrollados internamente tienen un uso alto. Es más difícil implementar reglas ASR si no se aplica la firma de código.
 
 ## <a name="asr-rules-deployment-steps"></a>Pasos de implementación de reglas ASR
 

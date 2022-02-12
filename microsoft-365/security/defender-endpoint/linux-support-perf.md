@@ -13,15 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6f7a3404ec0ae64e3dcdc4d6a3072e7fc2936646
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 14424f0cdff908fc641d6de1c22d25546473cc13
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172456"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766049"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solucionar problemas de rendimiento de Microsoft Defender para Endpoint en Linux
 
@@ -34,7 +34,7 @@ ms.locfileid: "62172456"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-En este documento se proporcionan instrucciones sobre cómo reducir los problemas de rendimiento relacionados con Defender para Endpoint en Linux con las herramientas de diagnóstico disponibles para poder comprender y mitigar la escasez de recursos existente y los procesos que están haciendo que el sistema entre en tales situaciones. Los problemas de rendimiento se producen principalmente por cuellos de botella en uno o varios subsistemas de hardware, según el perfil de uso de recursos en el sistema. A veces, las aplicaciones son sensibles a los recursos de E/S de disco y pueden necesitar más capacidad de CPU, y a veces algunas configuraciones no son sostenibles y pueden desencadenar demasiados procesos nuevos y abrir demasiados descriptores de archivo.
+En este documento se proporcionan instrucciones sobre cómo reducir los problemas de rendimiento relacionados con Defender para Endpoint en Linux con las herramientas de diagnóstico disponibles para poder comprender y mitigar la escasez de recursos existente y los procesos que están haciendo que el sistema entre en tales situaciones. Los problemas de rendimiento se producen principalmente por cuellos de botella en uno o varios subsistemas de hardware, según el perfil de uso de recursos en el sistema. A veces, las aplicaciones son confidenciales para los recursos de E/S de disco y pueden necesitar más capacidad de CPU, y a veces algunas configuraciones no son sostenibles y pueden desencadenar demasiados procesos nuevos y abrir demasiados descriptores de archivo.
 
 Según las aplicaciones que ejecutes y las características del dispositivo, es posible que experimentes un rendimiento subóptimo al ejecutar Defender para Endpoint en Linux. En particular, las aplicaciones o los procesos del sistema que tienen acceso a muchos recursos, como CPU, disco y memoria en un corto período de tiempo, pueden provocar problemas de rendimiento en Defender para Endpoint en Linux.
 
@@ -62,17 +62,17 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
     Configuration property updated
     ```
 
-    Si su organización administra el dispositivo, el administrador puede deshabilitar la protección en tiempo real con las instrucciones de Establecer preferencias para Defender para Endpoint [en Linux](linux-preferences.md).
+    Si tu dispositivo está administrado por tu organización, el administrador puede deshabilitar la protección en tiempo real con las instrucciones de Establecer preferencias para [Defender para Endpoint en Linux](linux-preferences.md).
 
     > [!NOTE]
-    > Si el problema de rendimiento persiste mientras la protección en tiempo real está desactivada, el origen del problema podría ser el componente detección y respuesta de puntos de conexión (EDR). En este caso, siga los pasos de la sección Solucionar problemas de rendimiento con **Microsoft Defender para** endpoint Client Analyzer de este artículo.
+    > Si el problema de rendimiento persiste mientras la protección en tiempo real está desactivada, el origen del problema podría ser el componente detección y respuesta de puntos de conexión (EDR). En este caso, siga los pasos de la sección Solucionar problemas de **rendimiento con Microsoft Defender para endpoint Client Analyzer** de este artículo.
 
 2. Para buscar las aplicaciones que desencadenan la mayoría de los exámenes, puede usar estadísticas en tiempo real recopiladas por Defender para Endpoint en Linux.
 
     > [!NOTE]
     > Esta característica está disponible en la versión 100.90.70 o posterior.
 
-    Esta característica está habilitada de forma predeterminada en los `Dogfood` `InsiderFast` canales y. Si usa un canal de actualización diferente, esta característica se puede habilitar desde la línea de comandos:
+    Esta característica está habilitada de forma predeterminada en los canales `Dogfood` y `InsiderFast` . Si usa un canal de actualización diferente, esta característica se puede habilitar desde la línea de comandos:
 
     ```bash
     mdatp config real-time-protection-statistics --value enabled
@@ -84,7 +84,7 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
     mdatp health --field real_time_protection_enabled
     ```
 
-    Compruebe que la `real_time_protection_enabled` entrada es `true` . De lo contrario, ejecute el siguiente comando para habilitarlo:
+    Compruebe que la `real_time_protection_enabled` entrada es `true`. De lo contrario, ejecute el siguiente comando para habilitarlo:
 
     ```bash
     mdatp config real-time-protection --value enabled
@@ -101,7 +101,7 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
     ```
 
     > [!NOTE]
-    > El uso (tenga en cuenta el ```--output json``` guión doble) garantiza que el formato de salida esté listo para el análisis.
+    > El ```--output json``` uso (tenga en cuenta el guión doble) garantiza que el formato de salida esté listo para el análisis.
 
     El resultado de este comando mostrará todos los procesos y su actividad de examen asociada.
 
@@ -151,7 +151,7 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
     125  CrashPlanService 164
     ```
 
-    Para mejorar el rendimiento de Defender para Endpoint en Linux, busque el que tiene el número más alto debajo de la fila y `Total files scanned` agregue una exclusión para él. Para obtener más información, vea [Configure and validate exclusions for Defender for Endpoint on Linux](linux-exclusions.md).
+    Para mejorar el rendimiento de Defender para Endpoint en Linux, busque el que tiene el número más alto debajo de `Total files scanned` la fila y agregue una exclusión para él. Para obtener más información, vea [Configure and validate exclusions for Defender for Endpoint on Linux](linux-exclusions.md).
 
     > [!NOTE]
     > La aplicación almacena estadísticas en la memoria y solo realiza un seguimiento de la actividad del archivo desde que se inició y se ha habilitado la protección en tiempo real. Los procesos que se iniciaron antes o durante períodos en los que la protección en tiempo real estaba desactivada no se cuentan. Además, solo se cuentan los eventos que desencadenaron exámenes.
@@ -165,10 +165,10 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
 **Se aplica a:**
 - Problemas de rendimiento de todos los componentes disponibles de Defender para endpoint, como AV y EDR  
 
-Microsoft Defender para endpoint client Analyzer (MDECA) puede recopilar seguimientos, registros e información de diagnóstico para solucionar problemas de rendimiento en dispositivos incorporados [en](/microsoft-365/security/defender-endpoint/onboard-configure) Linux.
+Microsoft Defender para endpoint client Analyzer (MDECA) puede recopilar seguimientos, registros e información de diagnóstico para solucionar problemas de rendimiento en dispositivos [incorporados en Linux](/microsoft-365/security/defender-endpoint/onboard-configure) .
 
 > [!NOTE]
-> Los Servicios de soporte al cliente (CSS) de Microsoft Defender para endpoints usan regularmente la herramienta Analizador de cliente de Microsoft Defender para recopilar información como, entre otras, direcciones IP, nombres de equipo que ayudarán a solucionar problemas que puedan estar experimentando con Microsoft Defender para endpoint. Para obtener más información acerca de nuestra declaración de privacidad, vea [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+> Los Servicios de soporte al cliente (CSS) de Microsoft Defender para endpoints usan regularmente la herramienta Analizador de cliente de Microsoft Defender para recopilar información como, entre otras, direcciones IP, nombres de equipo que ayudarán a solucionar problemas que puedan estar experimentando con Microsoft Defender para endpoint. Para obtener más información acerca de nuestra declaración de privacidad, consulte [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ### <a name="requirements"></a>Requisitos
 
@@ -237,7 +237,7 @@ Abra un terminal o SSH en la máquina correspondiente y ejecute los siguientes c
 
 - Health.txt
 
-  Descripción: el mismo resultado de mantenimiento básico que se muestra al ejecutar el comando de mantenimiento *mdatp.*
+  Descripción: el mismo resultado de mantenimiento básico que se muestra al ejecutar el comando de mantenimiento *mdatp* .
 
 - Events.xml
 

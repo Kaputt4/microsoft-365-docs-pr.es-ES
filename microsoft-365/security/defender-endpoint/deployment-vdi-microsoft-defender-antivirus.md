@@ -10,17 +10,17 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/08/2021
+ms.date: 02/11/2022
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 65469220cb6b001d5dbb474181f723235aa6d3a9
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 83013faf2fca5a3a281c5668973523918b883f54
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345896"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766781"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual
 
@@ -120,7 +120,7 @@ Para hacerlo:
 
     Name   ScopeName AccountName AccessControlType AccessRight
     ----   --------- ----------- ----------------- -----------
-    mdatp$ *         Everyone    Allow             Change
+    mdatp$ *         Everyone    Allow             Read
     ```
    
     > [!NOTE]
@@ -198,7 +198,7 @@ A veces, Antivirus de Microsoft Defender notificaciones se pueden enviar o conse
 
 4. Implemente el objeto de directiva de grupo como lo haría normalmente.
 
-La supresión de notificaciones impide que las notificaciones Antivirus de Microsoft Defender se muestren en el Centro de acciones en Windows 10 cuando se realizan exámenes o se realizan acciones de corrección. Sin embargo, el equipo de operaciones de seguridad verá los resultados del examen en [el portal Microsoft 365 Defender seguridad](microsoft-defender-security-center.md).
+La supresión de notificaciones impide que las notificaciones Antivirus de Microsoft Defender se muestren en el Centro de acciones en Windows 10 cuando se realizan exámenes o se realizan acciones de corrección. Sin embargo, el equipo de operaciones de seguridad verá los resultados del examen en el mientras se detectó y detuvo el ataque, las alertas, como una "alerta inicial de acceso", se desencadenaron y aparecieron en el [portal de Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender).
 
 > [!TIP]
 > Para abrir el Centro de acciones Windows 10 o Windows 11, siga uno de los pasos siguientes:

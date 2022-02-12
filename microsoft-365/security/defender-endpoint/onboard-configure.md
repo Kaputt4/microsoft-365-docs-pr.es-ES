@@ -11,22 +11,24 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 232a6879f42f2b8bb1ae6b73556db330b61a30cf
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 9ce944e49b40a2b8be477bf13ae9a42c4f4e1f67
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164903"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765101"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Incorporar dispositivos y configurar las funcionalidades de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -49,9 +51,6 @@ En general, para incorporar dispositivos al servicio:
 - Según el dispositivo, siga los pasos de configuración proporcionados en la sección incorporación del portal de Defender para endpoints
 - Usar la herramienta de administración y el método de implementación adecuados para los dispositivos
 - Ejecutar una prueba de detección para comprobar que los dispositivos están correctamente incorporados e informando al servicio
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
-
 
 
 
@@ -85,7 +84,7 @@ Después de incorporar los dispositivos, tendrás que configurar las otras funci
 
 ## <a name="supported-capabilities-for-windows-devices"></a>Funcionalidades admitidas para Windows dispositivos
 
-|Sistema operativo  |Windows 10 & 11  |Windows Server 2012 R2 <sup> [[1](#fn1)]<sup></sup>  |Windows Server 2016 [ <sup> [1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|
+|Sistema operativo  |Windows 10 & 11  |Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup>  |<sup>Windows Server 2016[[1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|
 |---------|---------|---------|---------|---------|---------|
 |**Prevención**    |         |         |         |         |         |
 |Reglas de reducción de superficie de ataque     |    v     |   v      |    v     |    v     |    v     |
@@ -110,7 +109,7 @@ Después de incorporar los dispositivos, tendrás que configurar las otras funci
 |Capacidades de respuesta de archivos: recopilar archivos, análisis profundo, bloquear archivos, detener y poner en cuarentena procesos     |      v   |    v     |     v    |    v    |    v   |
 |Respuesta en directo    |      v   |    v     |     v    |    v    |    v   |
 
-(<a id="fn1">1</a>) Hace referencia a la solución moderna y unificada para Windows Server 2012 y 2016. Para obtener más información, vea [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
+(<a id="fn1">1</a>) Hace referencia a la solución moderna y unificada para Windows Server 2012 y 2016. Para obtener más información, consulte [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
 >[!NOTE]
 >Windows 7, 8.1, Windows Server 2008 R2 incluyen compatibilidad con el sensor EDR y ANTIVIRUS con System Center Endpoint Protection (SCEP).

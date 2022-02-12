@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71d453bbc5b94b4685a65c1074244ae98b16448c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 45c08c5a3c304a23b5761d96a4d9aceb1b4f1562
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166811"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766834"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>Administrar Microsoft Defender para incidentes de punto de conexión
 
@@ -31,16 +31,16 @@ ms.locfileid: "61166811"
 
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-La administración de incidentes es una parte importante de todas las operaciones de ciberseguridad. Puede administrar incidentes seleccionando un incidente en la cola Incidentes **o** en el panel de **administración incidentes.** 
+La administración de incidentes es una parte importante de todas las operaciones de ciberseguridad. Puede administrar incidentes seleccionando un incidente en la cola **Incidentes o en** el **panel de administración incidentes**. 
 
 
-Al seleccionar un incidente de la cola **Incidentes,** se abre el panel **Administración** de incidentes, donde puede abrir la página de incidentes para obtener más información.
+Al seleccionar un incidente de la cola **Incidentes** , se abre el panel **Administración** de incidentes, donde puede abrir la página de incidentes para obtener más información.
 
 
 ![Imagen del panel de administración de incidentes.](images/atp-incidents-mgt-pane-updated.png)

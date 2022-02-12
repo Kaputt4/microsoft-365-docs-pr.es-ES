@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 430b087fc682eced9c20ef013b77ccc1d690187a
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: e7470115d053cd892b87399b53ba0b471c3cda8e
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214014"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765711"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Aplicaciones de partners en Microsoft Defender para endpoint
 
@@ -89,6 +89,7 @@ Logotipo|Nombre del partner|Descripción
 :---|:---|:---
 ![Imagen del logotipo de Aruba ClearPass Policy Manager.](images/aruba-logo.png)|[Administrador de directivas de ClearPass de Aruba](https://go.microsoft.com/fwlink/?linkid=2127544)|Asegúrese de que Defender for Endpoint está instalado y actualizado en cada extremo antes de permitir el acceso a la red
 ![Imagen del logotipo de Hexágono azul para red.](images/bluehexagon-logo.png)|[Hexágono azul para red](https://go.microsoft.com/fwlink/?linkid=2104613)|Blue Hexagon ha creado la primera plataforma de aprendizaje profundo en tiempo real de la industria para la protección contra amenazas de red
+![Imagen del logotipo de Corelight.](images/logo-corelight.png)| [Corelight]( https://corelight.com/integrations/iot-security)| Con los datos, enviados desde los dispositivos de red corelight, Microsoft 365 Defender aumenta la visibilidad de las actividades de red de los dispositivos no administrados, incluida la comunicación con otros dispositivos no administrados o redes externas.
 ![Imagen del logotipo de CyberMDX.](images/cybermdx-logo.png)|[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620)|Cyber MDX integra la visibilidad completa de los activos de salud, la prevención de amenazas y el repositorio en el entorno de Defender para endpoints
 ![Imagen del logotipo de HYAS Protect.](images/hyas-logo.png)|[HYAS Protect](https://go.microsoft.com/fwlink/?linkid=2156763)|HYAS Protect usa conocimientos relevantes de la infraestructura de atacantes para proteger proactivamente microsoft Defender para puntos de conexión de ataques cibernéticos
 ![Imagen del logotipo de detección y respuesta de red (NDR) de Vectra.](images/vectra-logo.png)|[Detección y respuesta de red (NDR) de Vectra](https://go.microsoft.com/fwlink/?linkid=866934)|Vectra aplica la IA & de seguridad para detectar y responder a ciberataques en tiempo real

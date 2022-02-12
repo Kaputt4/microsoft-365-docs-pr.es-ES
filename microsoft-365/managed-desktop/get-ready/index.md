@@ -3,27 +3,34 @@ title: Prepararse para la inscripción en el Escritorio administrado de Microsof
 description: Pasos que debe seguir para preparar la organización para la inscripción
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9d2f9a2e1b9d65e1d6baee7186df1a9b38940e12
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 09fe8332a209c8cb8ceb87684738e4e7011f853f
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210226"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767681"
 ---
 # <a name="get-ready-for-enrollment-in-microsoft-managed-desktop"></a>Prepararse para la inscripción en el Escritorio administrado de Microsoft
 
-En estos temas, se describen los pasos necesarios que llevar a cabo en la organización para preparar la inscripción, incluida la comprobación de que su entorno cumple los requisitos previos clave, la configuración de redes, la configuración de certificados y la preparación de las aplicaciones para que se incluyan en el servicio. Una vez que haya ejecutado las herramientas para evaluar la preparación, puede completar los demás pasos en cualquier orden o en paralelo. Dependiendo de su entorno, es posible que algunos de los pasos no sean relevantes para usted.
+En estos artículos se describen los pasos que deberá seguir en su organización para prepararse para la inscripción, entre los que se incluyen:
+
+- Comprobar que el entorno cumple los requisitos previos clave
+- Configuración de redes
+- Configuración de certificados
+- Preparar las aplicaciones para su inclusión en el servicio
+
+Una vez que haya ejecutado las herramientas de evaluación de preparación, puede completar los demás pasos en cualquier orden o en paralelo. Dependiendo de su entorno, es posible que algunos de los pasos no sean relevantes para usted.
 
 ![Secuencia sugerida de pasos para prepararse para la inscripción que se muestra en este artículo.](../../media/mmd-getready-sequence.png)
 
 1. Revisar los [requisitos previos del Escritorio administrado de Microsoft](prerequisites.md)
-2. Ejecutar las [herramientas para evaluar la preparación](readiness-assessment-tool.md).
+1. Ejecutar las [herramientas para evaluar la preparación](readiness-assessment-tool.md).
 1. Comprar el [Portal de empresa](../get-started/company-portal.md).
 1. Revisar los [requisitos previos para las cuentas de invitado](guest-accounts.md).
 1. Comprobar la [configuración de red](network.md).

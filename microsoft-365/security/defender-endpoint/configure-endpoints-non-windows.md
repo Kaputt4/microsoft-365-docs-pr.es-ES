@@ -13,15 +13,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 231adb590bc737c646566417db1891ac96fdb455
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 4573e7002454e9e72648df42352104abaa4c22d6
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156477"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767657"
 ---
 # <a name="onboard-non-windows-devices"></a>Incorporar dispositivos que no tienen Windows
 
@@ -51,11 +53,11 @@ Tendrás que seguir los siguientes pasos para incorporar dispositivos que no Win
 
 1. Seleccione el método de incorporación preferido:
 
-   - Para dispositivos macOS, puedes elegir incorporarlo a través de Microsoft Defender para Endpoint o a través de una solución de terceros. Para obtener más información, vea [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).
+   - Para dispositivos macOS, puedes elegir incorporarlo a través de Microsoft Defender para Endpoint o a través de una solución de terceros. Para obtener más información, consulta [Microsoft Defender para Endpoint en Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).
 
-   - Para otros dispositivos que no Windows, elija Incorporar dispositivos que no Windows a través **de la integración de terceros.**
+   - Para otros dispositivos que no Windows, elija Incorporar dispositivos que **no Windows a través de la integración de terceros**.
     1. En el panel de navegación, seleccione **Partners and APIs** \> **Partner Applications** . Asegúrese de que la solución de terceros aparece en la lista.
-    2. En la **página Aplicaciones de partners,** seleccione el partner que admita los dispositivos que no Windows asociados.
+    2. En la **página Aplicaciones de partners**, seleccione el partner que admita los dispositivos que no Windows asociados.
     3. Haga **clic en** Ver para abrir la página del partner. Siga las instrucciones proporcionadas en la página.
     4. Después de crear una cuenta o suscribirse a la solución de partners, debe llegar a una fase en la que se pida a un administrador global de inquilinos de la organización que acepte una solicitud de permiso de la aplicación asociada. Lea atentamente la solicitud de permiso para asegurarse de que está alineada con el servicio que necesita.
 
@@ -63,9 +65,9 @@ Tendrás que seguir los siguientes pasos para incorporar dispositivos que no Win
 
 ## <a name="offboard-non-windows-devices"></a>Dispositivos no Windows offboard
 
-Para dispositivos macOS y Linux, puedes elegir salir a través de Microsoft Defender para endpoint. En el panel de navegación, **seleccione Configuración** \> **Offboard** Seleccionar sistema operativo \> **para iniciar el proceso de offboarding**.
+Para dispositivos macOS y Linux, puedes elegir salir a través de Microsoft Defender para endpoint. En el panel de navegación, **seleccione Configuración** \> **Offboard** \> **Seleccionar sistema operativo para iniciar el proceso de offboarding**.
 
-También puede desactivar la integración de terceros Windows dispositivos no integrados. Habilite la cobertura para dispositivos que ejecutan plataformas que no Windows mediante [la integración de soluciones de terceros.](https://security.microsoft.com/interoperability/partners)
+También puede desactivar la integración de terceros Windows dispositivos no integrados. Habilite la cobertura para dispositivos que ejecutan plataformas que no Windows mediante [la integración de soluciones de terceros](https://security.microsoft.com/interoperability/partners).
 
 ## <a name="related-topics"></a>Temas relacionados
 - [incorporar dispositivos Windows](configure-endpoints.md)

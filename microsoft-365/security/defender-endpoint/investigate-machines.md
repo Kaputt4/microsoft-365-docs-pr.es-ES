@@ -13,15 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 185e0009fda70f78ca93f4bc72b2fb844508c111
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: dee6cec53ef6a3412d110837037f1de48fc6e92f
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217907"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765581"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Investigar dispositivos en la lista Microsoft Defender para dispositivos de punto de conexión
 
@@ -37,7 +37,7 @@ ms.locfileid: "61217907"
 Investigue los detalles de una alerta que se genera en un dispositivo específico para identificar otros comportamientos o eventos que puedan estar relacionados con la alerta o el ámbito potencial de la infracción.
 
 > [!NOTE]
-> Como parte del proceso de investigación o respuesta, puedes recopilar un paquete de investigación desde un dispositivo. Este es el modo: [Recopilar paquete de investigación de dispositivos](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices).
+> Como parte del proceso de investigación o respuesta, puedes recopilar un paquete de investigación desde un dispositivo. Este es el modo: [Recopilar paquetes de investigación de dispositivos](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices).
 
 Puedes hacer clic en los dispositivos afectados siempre que los veas en el portal para abrir un informe detallado sobre ese dispositivo. Los dispositivos afectados se identifican en las siguientes áreas:
 
@@ -87,7 +87,7 @@ Para obtener más información, vea [Investigar entidades de usuario](investigat
 
 ## <a name="tabs"></a>Pestañas
 
-Las pestañas proporcionan información de seguridad y prevención de amenazas relevante relacionada con el dispositivo. En cada pestaña, puede personalizar las columnas  que se muestran seleccionando Personalizar columnas de la barra encima de los encabezados de columna.
+Las pestañas proporcionan información de seguridad y prevención de amenazas relevante relacionada con el dispositivo. En cada pestaña, puede personalizar las columnas que se muestran seleccionando Personalizar columnas  de la barra encima de los encabezados de columna.
 
 ### <a name="overview"></a>Información general
 
@@ -97,7 +97,7 @@ La **pestaña Información** general muestra las [tarjetas para](#cards) las ale
 
 ### <a name="alerts"></a>Alertas
 
-La **pestaña** Alertas proporciona una lista de alertas asociadas con el dispositivo. Esta lista es una [](alerts-queue.md)versión filtrada de la cola de alertas y muestra una breve descripción de la alerta, gravedad (alta, media, baja, informativo), estado de la cola (nuevo, en curso, resuelto), clasificación (no establecida, alerta falsa, alerta verdadera), estado de investigación, categoría de alerta, quién está abordando la alerta y última actividad. También puede filtrar las alertas.
+La **pestaña** Alertas proporciona una lista de alertas asociadas con el dispositivo. Esta lista es una versión filtrada de la cola de alertas [y muestra](alerts-queue.md) una breve descripción de la alerta, gravedad (alta, mediana, baja, informativo), estado de la cola (nuevo, en curso, resuelto), clasificación (no establecida, alerta falsa, alerta verdadera), estado de investigación, categoría de alerta, quién está abordando la alerta y última actividad. También puede filtrar las alertas.
 
 ![Imagen de alertas relacionadas con el dispositivo.](images/alerts-device.png)
 
@@ -112,13 +112,13 @@ La **pestaña Escala** de tiempo proporciona una vista cronológica de los event
 La escala de tiempo también permite profundizar selectivamente en los eventos que se produjeron en un período de tiempo determinado. Puedes ver la secuencia temporal de eventos que se produjeron en un dispositivo durante un período de tiempo seleccionado. Para controlar aún más la vista, puede filtrar por grupos de eventos o personalizar las columnas.
 
 > [!NOTE]
-> Para que se muestren eventos de firewall, deberá habilitar la directiva de auditoría, consulte [Audit Filtering Platform connection](/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
+> Para que se muestren los eventos de firewall, deberá habilitar la directiva de auditoría, consulte [Audit Filtering Platform connection](/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
 >
 > Firewall cubre los siguientes eventos:
 >
-> - [5025:](/windows/security/threat-protection/auditing/event-5025) servicio de firewall detenido
-> - [5031:](/windows/security/threat-protection/auditing/event-5031) aplicación bloqueada para no aceptar conexiones entrantes en la red
-> - [5157:](/windows/security/threat-protection/auditing/event-5157) conexión bloqueada
+> - [5025](/windows/security/threat-protection/auditing/event-5025) : servicio de firewall detenido
+> - [5031](/windows/security/threat-protection/auditing/event-5031) : aplicación bloqueada para no aceptar conexiones entrantes en la red
+> - [5157](/windows/security/threat-protection/auditing/event-5157) : conexión bloqueada
 
 ![Imagen de la escala de tiempo del dispositivo con eventos.](images/timeline-device.png)
 
@@ -132,7 +132,7 @@ Algunas de las funciones incluyen:
 - Exportar eventos detallados de escala de tiempo del dispositivo
   - Exporte la escala de tiempo del dispositivo para la fecha actual o un intervalo de fechas especificado hasta siete días.
 
-En la sección Información adicional se proporcionan más detalles sobre determinados **eventos.** Estos detalles varían según el tipo de evento, por ejemplo:
+En la sección Información adicional se proporcionan más detalles sobre determinados **eventos** . Estos detalles varían según el tipo de evento, por ejemplo:
 
 - Contenido por Application Guard: el evento del explorador web estaba restringido por un contenedor aislado
 - Amenaza activa detectada: la detección de amenazas se produjo mientras se ejecutaba la amenaza
@@ -146,7 +146,7 @@ En la sección Información adicional se proporcionan más detalles sobre determ
 
 Seleccione un evento para ver los detalles relevantes sobre ese evento. Se muestra un panel para mostrar información general de eventos. Cuando se aplica y los datos están disponibles, también se muestra un gráfico que muestra las entidades relacionadas y sus relaciones.
 
-Para inspeccionar aún más el evento y los [](advanced-hunting-overview.md) eventos relacionados, puede ejecutar rápidamente una consulta de búsqueda **avanzada seleccionando Hunt para eventos relacionados.** La consulta devolverá el evento seleccionado y la lista de otros eventos que se produjeron aproximadamente al mismo tiempo en el mismo extremo.
+Para inspeccionar aún más el evento y los eventos relacionados, puede ejecutar rápidamente una [](advanced-hunting-overview.md) consulta de búsqueda **avanzada seleccionando Hunt para eventos relacionados**. La consulta devolverá el evento seleccionado y la lista de otros eventos que se produjeron aproximadamente al mismo tiempo en el mismo extremo.
 
 ![Imagen del panel de detalles del evento.](images/event-details.png)
 
@@ -182,7 +182,7 @@ La **tarjeta protección contra** amenazas avanzada de Azure mostrará una descr
 ![Imagen de la tarjeta de alertas activas.](images/risk-level-small.png)
 
 > [!NOTE]
-> Tendrás que habilitar la integración en Microsoft Defender para Identidad y Defender para endpoint para usar esta característica. En Defender para endpoint, puedes habilitar esta característica en características avanzadas. Para obtener más información sobre cómo habilitar características avanzadas, vea [Activar características avanzadas.](advanced-features.md)
+> Tendrás que habilitar la integración en Microsoft Defender para Identidad y Defender para endpoint para usar esta característica. En Defender para endpoint, puedes habilitar esta característica en características avanzadas. Para obtener más información sobre cómo habilitar características avanzadas, vea [Activar características avanzadas](advanced-features.md).
 
 ### <a name="logged-on-users"></a>Usuarios que han iniciado sesión
 

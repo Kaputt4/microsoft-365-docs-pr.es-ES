@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: adcf044de78b1cecb6b7b9160a196ec102e8606c
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 07e91e5b2cb93a6ba876510b558761f95489f496
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214158"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765761"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Establecer preferencias para Microsoft Defender para endpoint en macOS
 
@@ -70,10 +69,10 @@ La *sección antivirusEngine* del perfil de configuración se usa para administr
 
 Especifica la preferencia de cumplimiento del motor antivirus. Existen tres valores para establecer el nivel de cumplimiento:
 
-- En tiempo real ( ): la protección en tiempo real (examinar archivos a medida que se accede `real_time` a ellos) está habilitada.
-- A petición ( `on_demand` ): los archivos se examinan solo a petición. En esto:
+- En tiempo real (`real_time`): la protección en tiempo real (archivos de examen a medida que se accede a ellos) está habilitada.
+- A petición (`on_demand`): los archivos se examinan solo a petición. En esto:
   - La protección en tiempo real está desactivada.
-- Pasivo ( `passive` ): ejecuta el motor antivirus en modo pasivo. En esto:
+- Pasivo (`passive`): ejecuta el motor antivirus en modo pasivo. En esto:
   - La protección en tiempo real está desactivada.
   - El examen a petición está activado.
   - La corrección automática de amenazas está desactivada.
@@ -146,7 +145,7 @@ Especifica el grado de paralelismo de los exámenes a petición. Esto correspond
 
 #### <a name="exclusion-merge-policy"></a>Directiva de combinación de exclusión
 
-Especifique la directiva de combinación para exclusiones. Puede ser una combinación de exclusiones definidas por el administrador y definidas por el usuario ( ), o solo `merge` exclusiones definidas por el administrador ( `admin_only` ). Esta configuración se puede usar para restringir que los usuarios locales definan sus propias exclusiones.
+Especifique la directiva de combinación para exclusiones. Puede ser una combinación de exclusiones definidas por el administrador y definidas por el usuario (`merge`) o solo exclusiones definidas por el administrador (`admin_only`). Esta configuración se puede usar para restringir que los usuarios locales definan sus propias exclusiones.
 
 <br>
 
@@ -228,7 +227,7 @@ En la tabla siguiente se muestran los tipos de exclusión admitidos por Defender
 ||||
 
 > [!IMPORTANT]
-> Las rutas anteriores deben ser vínculos duros, no vínculos simbólicos, para poder excluirse correctamente. Puede comprobar si una ruta de acceso es un vínculo simbólico ejecutando `file <path-name>` .
+> Las rutas anteriores deben ser vínculos duros, no vínculos simbólicos, para poder excluirse correctamente. Puede comprobar si una ruta de acceso es un vínculo simbólico ejecutando `file <path-name>`.
 
 Las exclusiones de archivos, carpetas y procesos admiten los siguientes caracteres comodín:
 
@@ -278,7 +277,7 @@ Especifique el contenido excluido de la extensión de archivo.
 
 ### <a name="process-excluded-from-the-scan"></a>Proceso excluido del examen
 
-Especifique un proceso para el que se excluya toda la actividad de archivo del examen. El proceso se puede especificar por su nombre (por ejemplo, ) o la ruta de acceso `cat` completa (por ejemplo, `/bin/cat` ).
+Especifique un proceso para el que se excluya toda la actividad de archivo del examen. El proceso se puede especificar por su nombre (por ejemplo, `cat`) o la ruta de acceso completa (por ejemplo, `/bin/cat`).
 
 <br>
 
@@ -361,9 +360,9 @@ Especifique tipos de amenazas.
 
 Especifique qué acción realizar cuando se detecte una amenaza del tipo especificado en la sección anterior. Seleccione una de las opciones siguientes:
 
-- **Auditoría:** el dispositivo no está protegido contra este tipo de amenaza, pero se registra una entrada sobre la amenaza.
-- **Bloquear:** el dispositivo está protegido contra este tipo de amenaza y se te notificará en la interfaz de usuario y en la consola de seguridad.
-- **Desactivado:** el dispositivo no está protegido contra este tipo de amenaza y no se registra nada.
+- **Auditoría**: el dispositivo no está protegido contra este tipo de amenaza, pero se registra una entrada sobre la amenaza.
+- **Bloquear**: el dispositivo está protegido contra este tipo de amenaza y se te notificará en la interfaz de usuario y en la consola de seguridad.
+- **Desactivado**: el dispositivo no está protegido contra este tipo de amenaza y no se registra nada.
 
 <br>
 
@@ -379,7 +378,7 @@ Especifique qué acción realizar cuando se detecte una amenaza del tipo especif
 
 #### <a name="threat-type-settings-merge-policy"></a>Directiva de combinación de configuración de tipo de amenaza
 
-Especifique la directiva de combinación para la configuración del tipo de amenaza. Puede ser una combinación de opciones definidas por el administrador y definidas por el usuario ( ) o solo opciones definidas `merge` por el administrador ( `admin_only` ). Esta configuración se puede usar para restringir que los usuarios locales definan su propia configuración para diferentes tipos de amenazas.
+Especifique la directiva de combinación para la configuración del tipo de amenaza. Puede ser una combinación de opciones definidas por el administrador y definidas por el usuario (`merge`) o solo opciones definidas por el administrador (`admin_only`). Esta configuración se puede usar para restringir que los usuarios locales definan su propia configuración para diferentes tipos de amenazas.
 
 <br>
 
@@ -541,7 +540,7 @@ Especifique si desea mostrar u ocultar el icono del menú de estado en la esquin
 
 #### <a name="show--hide-option-to-send-feedback"></a>Mostrar u ocultar opción para enviar comentarios
 
-Especifica si los usuarios pueden enviar comentarios a Microsoft yendo a `Help`  >  `Send Feedback` .
+Especifica si los usuarios pueden enviar comentarios a Microsoft yendo a `Help` > `Send Feedback`.
 
 <br>
 
@@ -585,7 +584,7 @@ Especifique un nombre de etiqueta y su valor.
 |Sección|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
-|**Clave**|tags|
+|**Clave**|etiquetas|
 |**Tipo de datos**|Diccionario (preferencia anidada)|
 |**Comments**|Vea las secciones siguientes para obtener una descripción del contenido del diccionario.|
 |||
@@ -1057,7 +1056,7 @@ plutil -lint com.microsoft.wdav.plist
 com.microsoft.wdav.plist: OK
 ```
 
-Si el archivo está bien formado, el comando anterior genera `OK` y devuelve un código de salida de `0` . De lo contrario, se muestra un error que describe el problema y el comando devuelve un código de salida de `1` .
+Si el archivo está bien formado, el comando anterior `OK` genera y devuelve un código de salida de `0`. De lo contrario, se muestra un error que describe el problema y el comando devuelve un código de salida de `1`.
 
 ## <a name="configuration-profile-deployment"></a>Implementación de perfiles de configuración
 
@@ -1065,30 +1064,30 @@ Una vez que haya creado el perfil de configuración para su empresa, puede imple
 
 ### <a name="jamf-deployment"></a>Implementación de JAMF
 
-En la consola JAMF, abra **Perfiles** de configuración de equipos , vaya al perfil de configuración que desea usar y, a \> continuación, seleccione **Custom Configuración**. Cree una entrada con `com.microsoft.wdav` como dominio de preferencia y cargue el *.plist* generado anteriormente.
+En la consola JAMF, abra **Perfiles** \> de configuración de **equipos, vaya** al perfil de configuración que desea usar y, a continuación, **seleccione Configuración Configuración**. Cree una entrada con como `com.microsoft.wdav` dominio de preferencia y cargue *el .plist* generado anteriormente.
 
 > [!CAUTION]
-> Debes escribir el dominio de preferencia correcto ( ); de lo contrario, Microsoft Defender no reconocerá las `com.microsoft.wdav` preferencias para endpoint.
+> Debe especificar el dominio de preferencia correcto (`com.microsoft.wdav`); de lo contrario, Microsoft Defender no reconocerá las preferencias para endpoint.
 
 ### <a name="intune-deployment"></a>Implementación de Intune
 
-1. Abra **Administrar configuración** de \> **dispositivo**. Seleccione **Administrar** \> **perfiles Crear** \> **perfil**.
+1. Abre **Administrar configuración** \> **de dispositivo**. Seleccione **Administrar** \> **perfiles Crear** \> **perfil**.
 
-2. Elija un nombre para el perfil. Cambiar **Platform=macOS** a **Profile type=Custom**. Seleccione Configurar.
+2. Elija un nombre para el perfil. Cambie **Platform=macOS** a **Profile type=Custom**. Seleccione Configurar.
 
-3. Guarde el .plist generado anteriormente como `com.microsoft.wdav.xml` .
+3. Guarde el .plist generado anteriormente como `com.microsoft.wdav.xml`.
 
-4. Escriba `com.microsoft.wdav` como el nombre del perfil de configuración **personalizado**.
+4. Escriba `com.microsoft.wdav` como el **nombre del perfil de configuración personalizado**.
 
 5. Abra el perfil de configuración y cargue el `com.microsoft.wdav.xml` archivo. (Este archivo se creó en el paso 3).
 
 6. Seleccione **Aceptar**.
 
-7. Seleccione **Administrar** \> **asignaciones**. En la **pestaña Incluir,** seleccione **Asignar a todos los usuarios & Todos los dispositivos**.
+7. Seleccione **Administrar** \> **asignaciones**. En la **pestaña Incluir** , seleccione **Asignar a todos los usuarios & todos los dispositivos**.
 
 > [!CAUTION]
 > Debe escribir el nombre del perfil de configuración personalizado correcto; de lo contrario, Microsoft Defender no reconocerá estas preferencias para endpoint.
 
-## <a name="resources"></a>Resources
+## <a name="resources"></a>Recursos
 
 - [Referencia de los perfiles de configuración (documentación para desarrolladores de Apple)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)

@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender para punto de conexión en Linux
-ms.reviewer: null
+ms.reviewer: ''
 description: Describe cómo instalar y usar Microsoft Defender para Endpoint en Linux.
-keywords: 'microsoft, defender, Microsoft Defender para Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos'
+keywords: microsoft, defender, Microsoft Defender para Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,12 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
+ms.openlocfilehash: ebc5c0bfad32da316368c5c440fed23df28e9e17
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765689"
 ---
-
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -53,7 +58,7 @@ Existen varios métodos y herramientas de implementación que puede usar para in
 
 En general, debe seguir los siguientes pasos:
 
-- Asegúrese de que tiene una suscripción de Microsoft Defender para endpoint y de que tiene acceso al [portal de Microsoft Defender para endpoints](microsoft-defender-security-center.md).
+- Asegúrese de que tiene una suscripción de Microsoft Defender para endpoint.
 - Implemente Microsoft Defender para Endpoint en Linux mediante uno de los siguientes métodos de implementación:
   - La herramienta de línea de comandos:
     - [Implementación manual](linux-install-manually.md)

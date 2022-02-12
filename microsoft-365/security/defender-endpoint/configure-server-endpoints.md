@@ -13,15 +13,17 @@ ms.author: macapara
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b0e3279b7a1003fa10a112a85bc1e1d83fa14937
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 21e3a9b925581c9c199e78dab763531865a3629c
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322498"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766625"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -380,7 +382,7 @@ Después de incorporar dispositivos correctamente al servicio, deberá configura
 
 ## <a name="offboard-windows-servers"></a>Servidores de Windows offboard
 
-Puede Windows Server 2012 Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019, Windows Server 2019 Core edition en el mismo método disponible para dispositivos cliente Windows 10.
+Puede salir de Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019 y Windows Server 2019 Core edition en el mismo método disponible para Windows 10 dispositivos cliente.
 
 - [Dispositivos offboard con directiva de grupo](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [Dispositivos offboard con Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)

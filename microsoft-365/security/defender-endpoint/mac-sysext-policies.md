@@ -1,7 +1,7 @@
 ---
 title: Nuevos perfiles de configuración para macOS Catalina y versiones más recientes de macOS
-description: 'En este tema se describen los cambios que se deben realizar para beneficiarse de las extensiones del sistema, que sustituyen las extensiones de kernel en macOS Catalina y las versiones más recientes de macOS.'
-keywords: 'microsoft, defender, Microsoft Defender para Endpoint, mac, kernel, system, extensions, catalina'
+description: En este tema se describen los cambios que se deben realizar para beneficiarse de las extensiones del sistema, que sustituyen las extensiones de kernel en macOS Catalina y las versiones más recientes de macOS.
+keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -14,13 +14,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+- m365-security-compliance
 ms.topic: conceptual
-ROBOTS: 'noindex,nofollow'
+ROBOTS: noindex,nofollow
 ms.technology: mde
+ms.openlocfilehash: 0cdf60708e84b0972099330d48f19b22d26766ba
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766841"
 ---
-
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nuevos perfiles de configuración para macOS Catalina y versiones más recientes de macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]

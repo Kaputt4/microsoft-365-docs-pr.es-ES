@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 704510b6b31e47b1a68ab90ffbf5e6e7353d0969
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: b990c73f9cdb81d164bd57d1aff5b7ec61df714f
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217943"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767117"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Investigar un archivo asociado a una alerta de Microsoft Defender para punto de conexión
 
@@ -38,7 +38,7 @@ ms.locfileid: "61217943"
 
 Investigue los detalles de un archivo asociado a una alerta, comportamiento o evento específicos para determinar si el archivo muestra actividades malintencionadas, identificar la motivación del ataque y comprender el ámbito potencial de la infracción.
 
-Hay muchas maneras de obtener acceso a la página de perfil detallada de un archivo específico. Por ejemplo, puede usar la característica de búsqueda, hacer clic en un vínculo del árbol de proceso de **alerta,** gráfico de **incidentes,** escala de tiempo de artefactos o seleccionar un evento enumerado en la escala de tiempo **del dispositivo**.
+Hay muchas maneras de obtener acceso a la página de perfil detallada de un archivo específico. Por ejemplo, puedes usar la característica de búsqueda, hacer clic en un vínculo del árbol del proceso de **alerta, gráfico** de **incidentes, escala** de tiempo de artefactos o seleccionar un evento que aparece en la escala de tiempo **del dispositivo**. 
 
 Una vez en la página de perfil detallada, puede cambiar entre los diseños de página nuevos y antiguos alternando la **nueva página Archivo**. El resto de este artículo describe el diseño de página más reciente.
 
@@ -63,7 +63,7 @@ En la parte superior de la página de perfil, encima de las tarjetas de informac
 - Consultar a un experto en amenazas
 - Centro de actividades
 
-Para obtener más información sobre estas acciones, vea [Realizar acción de respuesta en un archivo](respond-file-alerts.md).
+Para obtener más información sobre estas acciones, vea [Realizar una acción de respuesta en un archivo](respond-file-alerts.md).
 
 ## <a name="file-details-malware-detection-and-file-prevalence"></a>Detalles del archivo, detección de malware y prevalencia de archivos
 
@@ -74,13 +74,13 @@ Verá detalles como MD5 del archivo, la relación de detección total de virus y
 La tarjeta de prevalencia de archivos muestra dónde se ha visto el archivo en dispositivos de la organización y en todo el mundo.
 
 > [!NOTE]
-> Los diferentes usuarios pueden ver valores distintos en los dispositivos *de la* sección de organización de la tarjeta de prevalencia de archivos. Esto se debe a que la tarjeta muestra información basada en el ámbito RBAC que tiene un usuario. Es decir, si a un usuario se le ha concedido visibilidad en un conjunto específico de dispositivos, solo verá la prevalencia organizativa de archivos en esos dispositivos.
+> Los diferentes usuarios pueden ver valores distintos en los dispositivos *de la sección de* organización de la tarjeta de prevalencia de archivos. Esto se debe a que la tarjeta muestra información basada en el ámbito RBAC que tiene un usuario. Es decir, si a un usuario se le ha concedido visibilidad en un conjunto específico de dispositivos, solo verá la prevalencia organizativa de archivos en esos dispositivos.
 
 ![Imagen de la información del archivo.](images/atp-file-information.png)
 
 ## <a name="alerts"></a>Alertas
 
-La **pestaña** Alertas proporciona una lista de alertas asociadas con el archivo. Esta lista cubre gran parte de la misma información que la cola de alertas, excepto para el grupo de dispositivos, si existe, al que pertenece el dispositivo afectado. Puede elegir qué tipo de información se muestra seleccionando Personalizar columnas **de** la barra de herramientas encima de los encabezados de columna.
+La **pestaña** Alertas proporciona una lista de alertas asociadas con el archivo. Esta lista cubre gran parte de la misma información que la cola de alertas, excepto para el grupo de dispositivos, si existe, al que pertenece el dispositivo afectado. Puede elegir qué tipo de información se muestra seleccionando Personalizar **columnas de la** barra de herramientas encima de los encabezados de columna.
 
 ![Imagen de alertas relacionadas con la sección de archivos.](images/atp-alerts-related-to-file.png)
 
@@ -97,7 +97,7 @@ Use el control deslizante o el selector de intervalos para especificar rápidame
 
 ## <a name="deep-analysis"></a>Análisis detallado
 
-La **pestaña Análisis** profundo le permite enviar el archivo para un análisis profundo, para descubrir más detalles sobre el comportamiento del archivo, así como el efecto que está teniendo dentro de sus organizaciones. [](respond-file-alerts.md#deep-analysis) Después de enviar el archivo, el informe de análisis profundo aparecerá en esta pestaña una vez que estén disponibles los resultados. Si el análisis profundo no encontró nada, el informe estará vacío y el espacio de resultados permanecerá en blanco.
+La **pestaña Análisis** profundo permite enviar el archivo para un análisis [profundo, para](respond-file-alerts.md#deep-analysis) descubrir más detalles sobre el comportamiento del archivo, así como el efecto que está teniendo en sus organizaciones. Después de enviar el archivo, el informe de análisis profundo aparecerá en esta pestaña una vez que estén disponibles los resultados. Si el análisis profundo no encontró nada, el informe estará vacío y el espacio de resultados permanecerá en blanco.
 
 ![Imagen de la pestaña análisis profundo.](images/submit-file.png)
 

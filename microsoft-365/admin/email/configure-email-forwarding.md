@@ -18,18 +18,19 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: El reenvío de correo electrónico le permite reenviar los mensajes de correo electrónico enviados a un buzón Microsoft 365 de usuario a otro buzón dentro o fuera de la organización.
-ms.openlocfilehash: 74268fe2435e4d544ad7c4e67c76870edb40356e
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 5522d9202732ca54d1a395a83e99ae2442b68eb9
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371141"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766577"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Configurar el reenvío de correo electrónico en Microsoft 365
 
@@ -37,6 +38,9 @@ Como administrador de una organización, es posible que tenga requisitos de la c
 
 > [!IMPORTANT]
 > Puede usar las directivas del filtro de correo no deseado saliente para controlar el reenvío automático a destinatarios externos. Para obtener más información, consulte [Controlar el reenvío automático de correo electrónico externo en Microsoft 365](/microsoft-365/security/office-365-security/external-email-forwarding#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
+
+> [!TIP]
+> Si necesita ayuda con los pasos de este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso diario a los especialistas de pequeñas empresas a medida que crece su negocio, desde la incorporación hasta el uso diario.
 
 ## <a name="configure-email-forwarding"></a>Configurar el reenvío de correo electrónico
 
@@ -62,10 +66,10 @@ Debe ser Administrador de Exchange o Administrador global en Microsoft 365 para 
 
     **Para reenviar a varias direcciones de correo**, puede pedir al usuario que configure una regla en Outlook para que se reenvía a las direcciones. 
     
-    1.  Abrir **reglas de** >  > **inicio de** outlook > Seleccionar administrar reglas & **alertas**  
-    1. Seleccione **Nueva regla** Seleccione Aplicar regla en el mensaje que recibo ubicado cerca de la parte inferior de la lista y, a continuación, haga clic en >  **Siguiente**.
+    1.  Abrir **reglas de** **inicio** >**de** outlook > > Seleccionar **administrar reglas & alertas**  
+    1. Seleccione **Nueva regla** > **Seleccione Aplicar regla en el mensaje que recibo ubicado** cerca de la parte inferior de la lista y, a continuación, haga clic **en Siguiente**.
     1. Haga **clic en Sí** cuando se le pida Esta regla se aplicará a todos los mensajes que reciba. 
-    1. En la lista siguiente, seleccione las acciones que **redirigen a personas** o grupos públicos y detenga el procesamiento de más **reglas**
+    1. En la lista siguiente, seleccione las acciones que **redirigen a personas o grupos públicos** y **detenga el procesamiento de más reglas**
     1. Haga clic en la frase subrayada **personas o grupo público** en la parte inferior de la ventana.
     1. Escriba la **dirección de correo electrónico a** la que se reenviará el correo en el campo Para y, a continuación, haga clic en **Aceptar**.
     1. Seleccionar **finalizar**

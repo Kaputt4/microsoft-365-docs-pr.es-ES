@@ -21,21 +21,25 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - m365solution-removeemployee
+- business_assist
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Siga los pasos de esta solución para quitar un antiguo empleado Microsoft 365 proteger los datos de su organización.
-ms.openlocfilehash: 15ef426892bcabe0af71c52f1664255cb82b6637
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 17d66e3ff39e00861acdf90e2d5f155cb9225f2c
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370253"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765893"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Información general: Quitar un antiguo empleado y datos seguros
 
 A question we often get is, "What should I do to secure data and protect access when an employee leaves my organization?" En esta serie de artículos se explica cómo bloquear el acceso a Microsoft 365 para que estos usuarios no puedan iniciar sesión en Microsoft 365, los pasos que debe seguir para proteger los datos de la organización y cómo permitir que otros empleados accedan al correo electrónico y OneDrive datos.
+
+> [!TIP]
+> Si necesita ayuda con los pasos de este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso diario a los especialistas de pequeñas empresas a medida que crece su negocio, desde la incorporación hasta el uso diario.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -57,13 +61,13 @@ Para completar los pasos de esta serie, use estas Microsoft 365 y característic
 
 Cuando un empleado deja la empresa, deberá quitarlos de Microsoft 365 para empresas. Antes de hacerlo, debe impedir que tengan acceso a los archivos de la empresa, conservar los documentos que crearon y realizar otras tareas de administrador asociadas con la eliminación de un usuario.
 
-1. En el Centro de administración, seleccione **Usuarios** y elija **Usuarios activos.**
+1. En el Centro de administración, seleccione **Usuarios** y elija **Usuarios activos**.
 1. Seleccione el usuario que desea quitar y, a continuación, **seleccione Eliminar usuario**.
 1. Active la casilla para quitar su licencia y active la casilla para quitar sus alias de correo electrónico.
-1. Active la casilla para dar a otro usuario acceso al correo electrónico del antiguo empleado y elija Seleccionar un usuario **y establecer opciones de correo electrónico.**
+1. Active la casilla para dar a otro usuario acceso al correo electrónico del antiguo empleado y elija **Seleccionar un usuario y establecer opciones de correo electrónico**.
 1. Para quitar los alias de correo electrónico asociados, seleccione **X** junto a sus alias.
 1. Revise la información del buzón compartido y seleccione **Finalizar**.
-1. Confirme que las opciones se han establecido correctamente y elija **Asignar y convertir**.
+1. Confirme que las opciones están configuradas correctamente y elija **Asignar y convertir**.
 1. Revise los resultados y seleccione **Cerrar**.
 
 Después de quitar un usuario, tiene hasta 30 días para restaurar su cuenta.

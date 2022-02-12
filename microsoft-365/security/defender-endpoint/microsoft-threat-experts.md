@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f49274f6a166bd071ebec470ed26fd2ccd6763ec
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+ms.openlocfilehash: cc9f0f4410e3f62a6f787efd01d899250cd67a93
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62218998"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765677"
 ---
 # <a name="microsoft-threat-experts"></a>Expertos en amenazas de Microsoft
 
@@ -44,13 +44,13 @@ Este servicio de búsqueda de amenazas administradas proporciona información y 
 > [!NOTE]
 > Analice los requisitos de elegibilidad con su proveedor de servicios técnicos de Microsoft y el equipo de cuenta antes de aplicar al servicio de búsqueda de amenazas administradas.
 
-Si eres cliente de Microsoft Defender para endpoints, debes solicitar Expertos en amenazas de Microsoft: Notificaciones de ataque **dirigidas** para obtener información y análisis especiales que ayuden a identificar las amenazas más críticas del entorno para que puedas responder a ellas rápidamente.
+Si eres cliente de Microsoft Defender para endpoints, debes solicitar Expertos en amenazas de Microsoft: notificaciones de ataque **dirigidas** para obtener información y análisis especiales que ayuden a identificar las amenazas más críticas del entorno para que puedas responder a ellas rápidamente.
 
 Para inscribirse en Expertos en amenazas de Microsoft: ventajas de notificaciones de ataque dirigidas, vaya **a Configuración** \> **Endpoints** \> **General** \> **Advanced features** \> **Expertos en amenazas de Microsoft- Targeted Attack Notifications** to apply. Una vez aceptado, recibirás las ventajas de las notificaciones de ataque dirigido.
 
 Póngase en contacto con su equipo de cuenta o representante de Microsoft para suscribirse **a Expertos en amenazas de Microsoft:** expertos a petición para consultar con nuestros expertos en amenazas sobre las detecciones y los conflictos relevantes a los que se enfrenta su organización.
 
-Consulte [Configure Expertos en amenazas de Microsoft capabilities](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin) para obtener más información.
+Consulte [Configure Expertos en amenazas de Microsoft capabilities para](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin) obtener más información.
 
 ## <a name="microsoft-threat-experts---targeted-attack-notification"></a>Expertos en amenazas de Microsoft: notificación de ataque dirigido
 

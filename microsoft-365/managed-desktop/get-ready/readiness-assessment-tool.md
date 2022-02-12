@@ -10,26 +10,30 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 866cebcf036c3b70470379139603a5addadb5b95
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 96bd667cf5d3661476111f7593632f0e5362cf45
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035587"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766061"
 ---
 # <a name="readiness-assessment-tools"></a>Herramientas de evaluación de preparación
 
-Para obtener la experiencia más fluida posible al inscribirse en Microsoft Managed Desktop, hay opciones de configuración y otros parámetros que debes establecer con antelación y ciertos requisitos de dispositivo y red que debes cumplir. Una herramienta, a la que se accede a través del portal de administración de Escritorio administrado de Microsoft, comprueba la configuración relacionada con la administración. Otra herramienta, que se puede descargar, comprueba los requisitos individuales del dispositivo y la configuración de red. Puede usar estas herramientas para comprobar esa configuración y recibir pasos detallados para corregir cualquier que no sea correcto.
+Para obtener la experiencia más fluida posible al inscribirse en Microsoft Managed Desktop, hay opciones de configuración y otros parámetros que debes establecer con antelación y ciertos requisitos de dispositivo y red que debes cumplir.
+
+Una herramienta, a la que se accede a través del portal de administración de Escritorio administrado de Microsoft, comprueba la configuración relacionada con la administración. Otra herramienta, que se puede descargar, comprueba los requisitos individuales del dispositivo y la configuración de red. Puede usar estas herramientas para comprobar esa configuración y recibir pasos detallados para corregir cualquier que no sea correcto.
 
 ## <a name="downloadable-readiness-assessment-checker-for-devices-and-network"></a>Control de evaluación de preparación descargable para dispositivos y red
 
-Para obtener más información sobre cómo usar el control de evaluación de preparación descargable, vea [Downloadable readiness assessment checker](readiness-assessment-downloadable.md).
+Para obtener más información sobre cómo usar el control de evaluación de preparación descargable, consulte [Downloadable readiness assessment checker](readiness-assessment-downloadable.md).
 
 ## <a name="online-readiness-assessment-tool-for-management-settings"></a>Herramienta de evaluación de preparación en línea para la configuración de administración
 
-La [](https://aka.ms/mmdart) herramienta en línea comprueba la configuración de Microsoft Endpoint Manager (específicamente, Microsoft Intune), Azure Active Directory (Azure AD) y Microsoft 365 para asegurarse de que funcionarán con Microsoft Managed Desktop. Microsoft Managed Desktop conserva los datos asociados a estas comprobaciones durante 12 meses después de la última vez que ejecute una comprobación en su Azure AD (inquilino). Después de 12 meses, lo conservamos en forma no identificada. Puede elegir eliminar los datos que recopilamos.
+La herramienta [en](https://aka.ms/mmdart) línea comprueba la configuración de Microsoft Endpoint Manager (específicamente, Microsoft Intune), Azure Active Directory (Azure AD) y Microsoft 365 para asegurarse de que funcionarán con El escritorio administrado de Microsoft.
 
-Cualquiera que tenga al menos el rol Lector global o Administrador de Intune podrá ejecutar esta herramienta, pero dos de las comprobaciones[(las](readiness-assessment-fix.md#conditional-access-policies) directivas de acceso condicional y la autenticación [multifactor](readiness-assessment-fix.md#multifactor-authentication) requieren permisos adicionales).
+Microsoft Managed Desktop conserva los datos asociados a estas comprobaciones durante 12 meses después de la última vez que ejecute una comprobación en su Azure AD (inquilino). Después de 12 meses, lo conservamos en forma no identificada. Puede elegir eliminar los datos que recopilamos.
+
+Cualquier persona con al menos el rol Lector global o Administrador de Intune podrá ejecutar esta herramienta, pero dos de las comprobaciones [(directivas](readiness-assessment-fix.md#conditional-access-policies) de acceso condicional y autenticación [multifactor](readiness-assessment-fix.md#multi-factor-authentication) requieren permisos adicionales).
 
 > [!IMPORTANT]  
 > La herramienta de evaluación de preparación en línea le ayuda a comprobar su preparación para inscribirse en Microsoft Managed Desktop por primera vez. Si su organización ya está registrada en Microsoft Managed Desktop, no use esta herramienta.
@@ -38,57 +42,63 @@ La herramienta de evaluación comprueba estos elementos:
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune configuración
 
-|Cheque  |Descripción  |
-|---------|---------|
-|Perfil de implementación de Autopilot     | Comprueba que la asignación del perfil de implementación de Autopilot no se aplica a todos los dispositivos (el perfil no debe asignarse a ningún dispositivo de Escritorio administrado de Microsoft).        |
-|Conectores de certificado     | Comprueba el estado de los conectores de certificado para asegurarse de que están activos   |
-|Acceso condicional     | Comprueba que las directivas de acceso condicional no están  asignadas a todos los usuarios (las directivas de acceso condicional no deben asignarse a cuentas de servicio de Escritorio administrado de Microsoft).    |
-|Directivas de cumplimiento de dispositivos     | Comprueba que las directivas de cumplimiento de Intune  no están asignadas a todos los usuarios (las directivas no deben asignarse a ningún dispositivo de Escritorio administrado de Microsoft).    |
-|Perfiles de configuración de dispositivos     | Confirma que los perfiles de configuración no están asignados  a todos los usuarios ni a todos los dispositivos (los perfiles de configuración no deben asignarse a ningún dispositivo de Escritorio administrado de Microsoft).     |
-|Restricciones de tipo de dispositivo     | Comprueba que Windows 10 dispositivos de la organización pueden inscribirse en Intune        |
-|Página de estado de inscripción     | Confirma que la página de estado de inscripción no está habilitada      |
-|Con una inscripción de Intune     | Comprueba que los Windows 10 de la organización Azure AD se inscribieron automáticamente en Intune         |
-|Microsoft Store para Empresas     | Confirma que Microsoft Store para Empresas está habilitado y sincronizado con Intune        |
-|Autenticación multifactor | Comprueba que la autenticación multifactor no se aplica a las cuentas de servicio de Escritorio administrado de Microsoft.
-|Scripts de PowerShell     | Comprueba que Windows PowerShell scripts no *están* asignados de una manera que se dirigiría a dispositivos de Escritorio administrado de Microsoft    |
-|Región     | Comprueba que su región es compatible con Microsoft Managed Desktop        |
-|Líneas base de seguridad     | Comprueba que el perfil de línea base de seguridad no  está dirigido a todos los usuarios o todos los dispositivos (las directivas de línea base de seguridad no deben dirigirse a ningún dispositivo de Escritorio administrado de Microsoft).       |
-|Windows aplicaciones     | Revisar qué aplicaciones quieres asignar a dispositivos de Escritorio administrado de Microsoft      |
-|Windows Hello para empresas     | Comprueba que Windows Hello para empresas está habilitada        |
-|Windows 10 de actualización     | Comprueba que la directiva de "anillo de actualización Windows 10" de Intune no está  dirigida a todos los usuarios ni a todos los dispositivos (la directiva no debe dirigirse a ningún dispositivo de Escritorio administrado de Microsoft).     |
+A continuación se muestra la Microsoft Intune configuración:
+
+| Cheque | Descripción |
+| ------ | ------ |
+| Perfil de implementación de Autopilot | Comprueba que la asignación del perfil de implementación de Autopilot no se aplica a todos los dispositivos. <br><br> El perfil no **debe** asignarse a ningún dispositivo de Escritorio administrado de Microsoft. |
+| Conectores de certificado | Comprueba el estado de los conectores de certificado para asegurarse de que están activos. |
+| Acceso condicional | Comprueba que las directivas de acceso condicional no están asignadas a todos los usuarios. <br><br> Las directivas de acceso condicional **no deben** asignarse a cuentas de servicio de Escritorio administrado de Microsoft. |
+| Directivas de cumplimiento de dispositivos | Comprueba que las directivas de cumplimiento de Intune no están asignadas a todos los usuarios. <br><br> Las directivas no **deben** asignarse a ningún dispositivo de Escritorio administrado de Microsoft. |
+| Perfiles de configuración de dispositivos | Confirma que los perfiles de configuración no están asignados a todos los usuarios ni a todos los dispositivos. <br><br> Los perfiles de configuración **no deben** asignarse a ningún dispositivo de Escritorio administrado de Microsoft. |
+| Restricciones de tipo de dispositivo | Comprueba que Windows 10 dispositivos de la organización pueden inscribirse en Intune. |
+| Página de estado de inscripción | Confirma que la página de estado de inscripción no está habilitada. |
+| Con una inscripción de Intune | Comprueba que Windows 10 dispositivos de la Azure AD se inscribieron automáticamente en Intune. |
+| Microsoft Store para Empresas | Confirma que Microsoft Store para Empresas está habilitado y sincronizado con Intune. |
+| Autenticación multifactor | Comprueba que la autenticación multifactor no se aplica a las cuentas de servicio de Escritorio administrado de Microsoft. |
+| Scripts de PowerShell | Comprueba que Windows PowerShell scripts no **están** asignados de una manera que se dirigiría a dispositivos de Escritorio administrado de Microsoft. |
+| Región | Comprueba que su región es compatible con Microsoft Managed Desktop. |
+| Líneas base de seguridad | Comprueba que el perfil de línea base de seguridad no está dirigido a todos los usuarios ni a todos los dispositivos. <br><br> Las directivas de línea base de **seguridad no deben** dirigirse a ningún dispositivo de Escritorio administrado de Microsoft. |
+| Windows aplicaciones | Revisa qué aplicaciones quieres asignar a dispositivos de Escritorio administrado de Microsoft. |
+| Windows Hello para empresas | Comprueba que Windows Hello para empresas está habilitado. |
+| Windows 10 de actualización | Comprueba que la directiva de "Windows 10 de actualización" de Intune no está dirigida a todos los usuarios ni a todos los dispositivos. <br><br> La directiva no **debe dirigirse** a ningún dispositivo de Escritorio administrado de Microsoft. |
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory configuración
 
-|Cheque  |Descripción  |
-|---------|---------|
-|Suscripciones "ad hoc" para Enterprise itinerancia de estado     | Aconseja comprobar una configuración que (si se establece en "false") podría impedir que Enterprise estado móvil funcione correctamente  |
-|Enterprise State Roaming     | Aconseja cómo comprobar si Enterprise itinerancia de estado está habilitada       |
-|Licencias     | Comprueba que ha obtenido las [licencias necesarias](prerequisites.md#more-about-licenses)         |
-|Autenticación multifactor     | Comprueba que la autenticación multifactor no se aplica a todos los usuarios (la autenticación multifactor no debe aplicarse accidentalmente a las cuentas de servicio de Escritorio administrado de Microsoft).|
-|Nombres de cuenta de seguridad   | Comprueba que ningún nombre de usuario entre en conflicto con los que Microsoft Managed Desktop reserva para su propio uso        |
-|Roles de administrador de seguridad     | Confirma que los usuarios con roles de Lector de seguridad, Operador de seguridad o Lector global se han asignado esos roles en Microsoft Defender para endpoint         |
-|Valores predeterminados de seguridad | Comprueba si su Azure AD tiene habilitados los valores predeterminados de seguridad en Azure Active Directory |
-|Restablecimiento de contraseñas de autoservicio     | Confirma que el restablecimiento de contraseñas de autoservicio está habilitado        |
-|Rol de usuario estándar     | Comprueba que los usuarios son usuarios estándar y que no tienen derechos de administrador local         |
+A continuación se muestra la Azure Active Directory configuración:
 
-## <a name="microsoft-365-apps-for-enterprise-settings"></a>Aplicaciones Microsoft 365 para empresas configuración
+| Cheque | Descripción |
+| ----- | ----- |
+| Suscripciones "ad hoc" para Enterprise itinerancia de estado | Indica cómo comprobar una configuración que, si se establece en "false", puede impedir que Enterprise estado móvil funcione correctamente. |
+| Enterprise State Roaming | Aconseja cómo comprobar si Enterprise itinerancia de estado está habilitada. |
+| Licencias | Comprueba que ha obtenido las [licencias necesarias](prerequisites.md#more-about-licenses). |
+| Autenticación multifactor | Comprueba que la autenticación multifactor no se aplica a todos los usuarios. <br><br> La autenticación multifactor no **debe** aplicarse accidentalmente a las cuentas de servicio de Escritorio administrado de Microsoft. |
+| Nombres de cuenta de seguridad | Comprueba que ningún nombre de usuario entre en conflicto con los que Microsoft Managed Desktop reserva para su propio uso. |
+| Roles de administrador de seguridad | Confirma que los usuarios con roles de Lector de seguridad, Operador de seguridad o Lector global se han asignado esos roles en Microsoft Defender para endpoint. |
+| Valores predeterminados de seguridad | Comprueba si su Azure AD tiene los valores predeterminados de seguridad habilitados en Azure Active Directory. |
+| Restablecimiento de contraseñas de autoservicio | Confirma que el restablecimiento de contraseña de autoservicio está habilitado. |
+| Rol de usuario estándar | Comprueba que los usuarios son usuarios estándar y que no tienen derechos de administrador local. |
 
-|Cheque  |Descripción  |
-|---------|---------|
-|OneDrive para la Empresa     | Comprueba si OneDrive para la Empresa está usando la configuración no compatible.        |
+## <a name="microsoft-365-apps-for-enterprise-settings"></a>Aplicaciones Microsoft 365 para la Enterprise configuración
+
+A continuación se de Aplicaciones Microsoft 365 para Enterprise configuración:
+
+| Cheque | Descripción |
+| ----- | ----- |
+| OneDrive para la Empresa | Comprueba si OneDrive para la Empresa está usando la configuración no compatible. |
 
 Para cada comprobación, la herramienta mostrará uno de los cuatro resultados posibles:
 
-|Resultado  |Significado  |
-|---------|---------|
-|Listo     | No se requiere ninguna acción antes de completar la inscripción.        |
-|Advertencia    | Siga los pasos de la herramienta para obtener la mejor experiencia con la inscripción y para los usuarios. Puedes *completar* la inscripción, pero debes solucionar estos problemas antes de implementar el primer dispositivo.        |
-|No preparado | *La inscripción producirá un* error si no se solucionan estos problemas. Siga los pasos de la herramienta para resolverlos.        |
-|Error | El rol de Azure Active Director (AD) que está usando no tiene permiso suficiente para ejecutar esta comprobación. |
+| Resultado | Significado |
+| ----- | ----- |
+| Listo | No se requiere ninguna acción antes de completar la inscripción. |
+| Advertencia | Siga los pasos de la herramienta para obtener la mejor experiencia con la inscripción y para los usuarios. <br><br> Puedes *completar* la inscripción, pero debes solucionar estos problemas antes de implementar el primer dispositivo. |
+| No preparado | **La inscripción producirá un** error si no se solucionan estos problemas. <br><br> Siga los pasos de la herramienta para resolverlos. |
+| Error | El rol de Azure Active Director (AD) que está usando no tiene permiso suficiente para ejecutar esta comprobación. |
 
 ## <a name="after-enrollment"></a>Después de la inscripción
 
-Después de completar la inscripción en Microsoft Managed Desktop, recuerda volver atrás y ajustar ciertas opciones de Configuración de Intune Azure AD configuración. Para obtener más información, vea [Ajustar la configuración después de la inscripción.](../get-started/conditional-access.md)
+Después de completar la inscripción en Microsoft Managed Desktop, recuerda volver atrás y ajustar ciertas opciones de Configuración de Intune Azure AD configuración. Para obtener más información, vea [Ajustar la configuración después de la inscripción](../get-started/conditional-access.md).
 
 ## <a name="steps-to-get-ready-for-microsoft-managed-desktop"></a>Pasos para prepararse para El escritorio administrado de Microsoft
 

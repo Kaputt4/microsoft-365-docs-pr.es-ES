@@ -13,16 +13,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 23eb3d53635334292b762941d39b9683f2a4dd9e
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 0506c5213fe6c4a9c5bb5556b987f64b22bda517
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218147"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765053"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Investigar una cuenta de usuario en Microsoft Defender para endpoint
 
@@ -59,10 +59,10 @@ Cuando investigue una entidad de cuenta de usuario, verá:
 
 ### <a name="user-details"></a>Detalles del usuario
 
-El  panel De detalles del usuario a la izquierda proporciona información sobre el usuario, como incidentes abiertos relacionados, alertas activas, nombre SAM, SID, Alertas de Identidad de Microsoft Defender, número de dispositivos en los que el usuario ha iniciado sesión, cuándo se ha visto por primera vez y por última vez, tipos de rol e inicio de sesión. Dependiendo de las características de integración que haya habilitado, verá otros detalles. Por ejemplo, si habilita la Skype para la integración empresarial, podrá ponerse en contacto con el usuario desde el portal. La sección Alertas **de ATP** de Azure contiene un vínculo que te llevará a la página de Microsoft Defender para identidad, si has habilitado la característica Microsoft Defender para identidad y hay alertas relacionadas con el usuario. La página microsoft defender para la identidad proporcionará más información sobre las alertas.
+El  panel De detalles del usuario a la izquierda proporciona información sobre el usuario, como incidentes abiertos relacionados, alertas activas, nombre SAM, SID, Alertas de Identidad de Microsoft Defender, número de dispositivos en los que el usuario ha iniciado sesión, cuándo se ha visto por primera vez y por última vez, tipos de rol e inicio de sesión. Dependiendo de las características de integración que haya habilitado, verá otros detalles. Por ejemplo, si habilita la Skype para la integración empresarial, podrá ponerse en contacto con el usuario desde el portal. La sección Alertas **de ATP de Azure** contiene un vínculo que te llevará a la página de Microsoft Defender para identidad, si has habilitado la característica Microsoft Defender para identidad y hay alertas relacionadas con el usuario. La página microsoft defender para la identidad proporcionará más información sobre las alertas.
 
 > [!NOTE]
-> Tendrás que habilitar la integración en Microsoft Defender para Identidad y Defender para endpoint para usar esta característica. En Defender para endpoint, puedes habilitar esta característica en características avanzadas. Para obtener más información sobre cómo habilitar características avanzadas, vea [Activar características avanzadas.](advanced-features.md)
+> Tendrás que habilitar la integración en Microsoft Defender para Identidad y Defender para endpoint para usar esta característica. En Defender para endpoint, puedes habilitar esta característica en características avanzadas. Para obtener más información sobre cómo habilitar características avanzadas, vea [Activar características avanzadas](advanced-features.md).
 
 Overview, Alerts y Observed in organization son pestañas diferentes que muestran varios atributos sobre la cuenta de usuario.
 
@@ -77,7 +77,7 @@ La **pestaña** Información general muestra los detalles de incidentes y una li
 
 ### <a name="alerts"></a>Alertas
 
-La **pestaña** Alertas proporciona una lista de alertas asociadas con la cuenta de usuario. Esta lista es una [](alerts-queue.md)vista filtrada de la cola de alertas y muestra alertas en las que el contexto del usuario es la cuenta de usuario seleccionada, la fecha en que se detectó la última actividad, una breve descripción de la alerta, el dispositivo asociado a la alerta, la gravedad de la alerta, el estado de la alerta en la cola y quién tiene asignada la alerta.
+La **pestaña** Alertas proporciona una lista de alertas asociadas con la cuenta de usuario. Esta lista es una vista filtrada de la cola de alertas [y muestra](alerts-queue.md) alertas en las que el contexto del usuario es la cuenta de usuario seleccionada, la fecha en que se detectó la última actividad, una breve descripción de la alerta, el dispositivo asociado a la alerta, la gravedad de la alerta, el estado de la alerta en la cola y quién tiene asignada la alerta.
 
 ### <a name="observed-in-organization"></a>Observado en la organización
 

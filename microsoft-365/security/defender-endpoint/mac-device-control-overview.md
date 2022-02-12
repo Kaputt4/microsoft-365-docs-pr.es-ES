@@ -13,28 +13,27 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7f9f51e9ce31881d66ca8a8e72fa128c458229aa
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5cb41b0bd3f185237055daa2d282f0a1d6975a49
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166175"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765545"
 ---
 # <a name="device-control-for-macos"></a>Control de dispositivos para macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 El control de dispositivos para macOS tiene los siguientes requisitos previos:
 
@@ -48,7 +47,7 @@ El control de dispositivos para macOS tiene los siguientes requisitos previos:
 
 Para configurar el control de dispositivos para macOS, debes crear una directiva que describa las restricciones que quieres establecer en tu organización.
 
-La directiva de control de dispositivos se incluye en el perfil de configuración que se usa para configurar el resto de opciones de producto. Para obtener más información, vea [Configuration profile structure](mac-preferences.md#configuration-profile-structure).
+La directiva de control de dispositivos se incluye en el perfil de configuración que se usa para configurar el resto de opciones de producto. Para obtener más información, vea [Estructura de perfiles de configuración](mac-preferences.md#configuration-profile-structure).
 
 Dentro del perfil de configuración, la directiva de control de dispositivos se define en la siguiente sección:
 
@@ -85,7 +84,7 @@ Cuando los usuarios finales hacen clic en esta notificación, se abre una págin
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|navigationTarget|
-|**Tipo de datos**|Cadena|
+|**Tipo de datos**|String|
 |**Comments**|Si no se define, el producto usa una dirección URL predeterminada que apunta a una página genérica que explica la acción realizada por el producto.|
 |
 
@@ -123,7 +122,7 @@ Esta sección de la directiva es jerárquica, lo que permite la máxima flexibil
     |-- vendor N
 ```
 
-Para obtener información sobre cómo encontrar los identificadores de dispositivo, consulta [Buscar identificadores de dispositivo.](#look-up-device-identifiers)
+Para obtener información sobre cómo buscar los identificadores de dispositivo, consulta [Buscar identificadores de dispositivo.](#look-up-device-identifiers)
 
 La directiva se evalúa desde la entrada más específica hasta la más general. Es decir, cuando un dispositivo está conectado, el producto intenta encontrar la coincidencia más específica en la directiva para cada dispositivo multimedia extraíble y aplicar los permisos en ese nivel. Si no hay coincidencia, se aplica la siguiente mejor coincidencia, hasta el permiso especificado en el nivel superior, que es el valor predeterminado cuando un dispositivo no coincide con ninguna otra entrada de la directiva.
 
@@ -135,7 +134,7 @@ En la sección medios extraíbles, hay una opción para establecer el nivel de c
 - `block` - En este nivel de cumplimiento, las operaciones que el usuario puede realizar en el dispositivo se limitan a lo que se define en la directiva. Además, se genera una notificación al usuario.
 
 > [!NOTE]
-> De forma predeterminada, el nivel de cumplimiento se establece en `audit` .
+> De forma predeterminada, el nivel de cumplimiento se establece en `audit`.
 
 <br>
 
@@ -162,7 +161,7 @@ Esta configuración se puede establecer en:
   - `execute` - Las operaciones de ejecución están permitidas en el dispositivo
 
 > [!NOTE]
-> Si `none` está presente en el nivel de permisos, cualquier otro permiso ( , , o ) se `read` `write` `execute` omitirá.
+> Si `none` está presente en el nivel de permisos, se omitirán los demás permisos (`read`, `write`o `execute`) .
 >
 > El `execute` permiso solo hace referencia a la ejecución de archivos binarios de Mach-O. No incluye la ejecución de scripts u otros tipos de cargas.
 
@@ -180,7 +179,7 @@ Esta configuración se puede establecer en:
 
 #### <a name="restrict-removable-media-by-vendor-product-and-serial-number"></a>Restringir medios extraíbles por proveedor, producto y número de serie
 
-Como se describe en [Permitir](#allow-or-block-removable-devices)o bloquear dispositivos extraíbles, los medios extraíbles, como dispositivos USB, pueden identificarse mediante el identificador de proveedor, el identificador de producto y el número de serie.
+Como se describe en [Permitir o](#allow-or-block-removable-devices) bloquear dispositivos extraíbles, los medios extraíbles, como los dispositivos USB, pueden identificarse mediante el identificador de proveedor, el id. de producto y el número de serie.
 
 En el nivel superior de la directiva de medios extraíbles, opcionalmente puede definir restricciones más granulares en el nivel de proveedor.
 
@@ -211,7 +210,7 @@ Para cada proveedor, puede especificar el nivel de permisos deseado para los dis
 |**Posibles valores**|Igual que [el nivel de permisos predeterminado](#default-permission-level)|
 |
 
-Además, puede especificar opcionalmente el conjunto de productos que pertenecen a ese proveedor para el que se definen permisos más granulares. El diccionario contiene una o más entradas, con `products` cada entrada identificada por el identificador del producto.
+Además, puede especificar opcionalmente el conjunto de productos que pertenecen a ese proveedor para el que se definen permisos más granulares. El `products` diccionario contiene una o más entradas, con cada entrada identificada por el identificador del producto.
 
 <br>
 
@@ -339,7 +338,7 @@ Para buscar el identificador de proveedor, el id. de producto y el número de se
 
 1. Inicie sesión en un dispositivo Mac.
 1. Conecta el dispositivo USB para el que quieres buscar los identificadores.
-1. En el menú de nivel superior de macOS, seleccione **Acerca de este Mac**.
+1. En el menú de nivel superior de macOS, selecciona **Acerca de este Mac**.
 
     ![Acerca de este Mac.](images/mac-device-control-lookup-1.png)
 
@@ -351,11 +350,11 @@ Para buscar el identificador de proveedor, el id. de producto y el número de se
 
     ![Vista de todos los dispositivos USB.](images/mac-device-control-lookup-3.png)
 
-1. En **Árbol de dispositivos USB,** vaya al dispositivo USB que enchufó.
+1. En **Árbol de dispositivos USB**, navega hasta el dispositivo USB que conectaste.
 
     ![Detalles de un dispositivo USB.](images/mac-device-control-lookup-4.png)
 
-1. Se muestran el id. de proveedor, el id. de producto y el número de serie. Al agregar el identificador de proveedor y el id. de producto a la directiva de medios extraíbles, solo debe agregar la parte después de `0x` . Por ejemplo, en la imagen siguiente, el id. de proveedor `1000` es y el id. de producto es `090c` .
+1. Se muestran el id. de proveedor, el id. de producto y el número de serie. Al agregar el identificador de proveedor y el id. de producto a la directiva de medios extraíbles, solo debe agregar la parte después de `0x`. Por ejemplo, en la imagen siguiente, el id. de proveedor es `1000` y el id. de producto es `090c`.
 
 #### <a name="discover-usb-devices-in-your-organization"></a>Descubrir dispositivos USB en la organización
 
@@ -369,9 +368,9 @@ DeviceEvents
 
 ## <a name="device-control-policy-deployment"></a>Implementación de directivas de control de dispositivos
 
-La directiva de control de dispositivos debe incluirse junto a la otra configuración del producto, como se describe en Establecer preferencias para Microsoft Defender para [Endpoint en macOS.](mac-preferences.md)
+La directiva de control de dispositivos debe incluirse junto a la otra configuración del producto, como se describe en Establecer preferencias para [Microsoft Defender para Endpoint en macOS](mac-preferences.md).
 
-Este perfil se puede implementar con las instrucciones enumeradas en [Implementación de perfiles de configuración.](mac-preferences.md#configuration-profile-deployment)
+Este perfil se puede implementar con las instrucciones enumeradas en [Implementación de perfiles de configuración](mac-preferences.md#configuration-profile-deployment).
 
 ## <a name="troubleshooting-tips"></a>Sugerencias para solucionar problemas
 
@@ -381,7 +380,7 @@ Después de insertar el perfil de configuración a través de Intune o JAMF, pue
 mdatp device-control removable-media policy list
 ```
 
-Este comando imprimirá en salida estándar la directiva de control de dispositivos que usa el producto. En caso de que esto se imprima, asegúrese de que (a) el perfil de configuración se haya instalado en el dispositivo desde la consola de administración y (b) sea una directiva de control de dispositivo válida, como se describe en este `Policy is empty` documento.
+Este comando imprimirá en salida estándar la directiva de control de dispositivos que usa el producto. `Policy is empty`En caso de que esto se imprima, asegúrese de que (a) el perfil de configuración se haya instalado en el dispositivo desde la consola de administración y (b) sea una directiva de control de dispositivo válida, como se describe en este documento.
 
 En un dispositivo donde la directiva se ha entregado correctamente y donde hay uno o varios dispositivos conectados, puedes ejecutar el siguiente comando para enumerar todos los dispositivos y los permisos efectivos que se les aplican.
 
@@ -400,7 +399,7 @@ Ejemplo de resultado:
 | |-o Mount point: "/Volumes/TESTUSB"
 ```
 
-En el ejemplo anterior, solo hay un dispositivo multimedia extraíble conectado y tiene y permisos, según la directiva de control de dispositivo que se entregó `read` `execute` al dispositivo.
+En el ejemplo anterior, solo `read` `execute` hay un dispositivo multimedia extraíble conectado y tiene y permisos, según la directiva de control de dispositivo que se entregó al dispositivo.
 
 ## <a name="related-topics"></a>Temas relacionados
 

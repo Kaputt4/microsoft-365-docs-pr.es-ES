@@ -21,12 +21,12 @@ search.appverid:
 description: Más información sobre Microsoft 365 Empresa Premium, un servicio de suscripción que se encarga de la parte de TI por usted.
 feedback_system: None
 ms.date: 10/20/2021
-ms.openlocfilehash: dfc19c2f603f7f561fec01e3879d9e5e234a5158
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: bee91aeb09fa2b2baff34c8f7d7193db6085b2a1
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643665"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765821"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Empresa Premium
 
@@ -48,6 +48,6 @@ Cuando se suscribe a Microsoft 365 Empresa Premium, obtiene todas las mismas her
 | Proteger sus dispositivos | Para proteger los archivos de trabajo en dispositivos, restrinja el acceso móvil, como copiar y pegar. También puede borrar de forma selectiva los datos comerciales de los dispositivos móviles registrados en caso de pérdida o robo. |
 | Características de seguridad adicionales | Las características avanzadas de Microsoft 365 Empresa Premium están disponibles para ayudarle a proteger su empresa frente a amenazas cibernéticos y proteger la información confidencial. Las funcionalidades incluyen Microsoft Defender para Office 365 Plan 1, directivas de prevención de pérdida de datos (DLP), archivado de Exchange Online, Azure Information Protection e Intune. |
 
-Si tiene Microsoft Empresa Premium, la forma más rápida de configurar la seguridad y empezar a colaborar de forma segura es seguir las instrucciones de esta biblioteca: [Microsoft 365 para empresas y campañas pequeñas](../../campaigns/index.md). Esta guía fue desarrollada en asociación con el equipo de Microsoft Defending Democracy para proteger a todos los clientes de empresas pequeñas de las amenazas cibernéticas por parte de hackers sofisticados. 
+Si tiene Microsoft Empresa Premium, la forma más rápida de configurar la seguridad y empezar a colaborar de forma segura es seguir las instrucciones de esta biblioteca: [Microsoft 365 para empresas y campañas pequeñas](../../business-premium/index.md). Esta guía fue desarrollada en asociación con el equipo de Microsoft Defending Democracy para proteger a todos los clientes de empresas pequeñas de las amenazas cibernéticas por parte de hackers sofisticados. 
 
 Para obtener los detalles completos, consulte [Contenido de Microsoft 365 Empresa](../../admin/index.yml).

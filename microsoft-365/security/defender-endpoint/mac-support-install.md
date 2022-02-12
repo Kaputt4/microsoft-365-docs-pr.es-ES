@@ -13,15 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 52fdf612ac86c1a0cc99220793461507f86a6fe3
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 5f56e28d472cb3fdf8dd089effcd4beac6e42374
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170588"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766661"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de instalación de Microsoft Defender para Endpoint en macOS
 
@@ -31,8 +30,8 @@ ms.locfileid: "61170588"
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md)
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -41,7 +40,7 @@ ms.locfileid: "61170588"
 
 Para la instalación manual, la página Resumen del asistente de instalación dice: "Se produjo un error durante la instalación. El instalador encontró un error que provocó un error en la instalación. Póngase en contacto con el editor de software para obtener ayuda". Para las implementaciones de MDM, también se muestra como un error de instalación genérica.
 
-Aunque no se muestra un error exacto al usuario final, se mantiene un archivo de registro con el progreso de la instalación en `/Library/Logs/Microsoft/mdatp/install.log` . Cada sesión de instalación se anexa a este archivo de registro. Solo puede usar `sed` para generar la última sesión de instalación:
+Aunque no se muestra un error exacto al usuario final, se mantiene un archivo de registro con el progreso de la instalación en `/Library/Logs/Microsoft/mdatp/install.log`. Cada sesión de instalación se anexa a este archivo de registro. Solo puede usar para `sed` generar la última sesión de instalación:
 
 ```bash
 sed -n 'H; /^preinstall com.microsoft.wdav begin/h; ${g;p;}' /Library/Logs/Microsoft/mdatp/install.log
@@ -54,7 +53,7 @@ correlation id=CB509765-70FC-4679-866D-8A14AD3F13CC
 preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 ```
 
-En este ejemplo, el motivo real tiene el prefijo `[ERROR]` .
+En este ejemplo, el motivo real tiene el prefijo `[ERROR]`.
 Error en la instalación porque no se admite una degradación entre estas versiones.
 
 ## <a name="mdatp-install-log-missing-or-not-updated"></a>Falta o no se actualiza el registro de instalación de MDATP
