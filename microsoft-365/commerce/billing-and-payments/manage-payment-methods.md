@@ -20,15 +20,16 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 - adminvideo
+- business_assist
 search.appverid: MET150
 description: Compre productos o servicios empresariales de Microsoft con un método de pago existente o agregue uno nuevo en el Centro de administración de Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: 82a3133e4d22514608348b060b3466a74e184278
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 7fde1149d97bb05863f4fd013f501b49203c33f6
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374297"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765533"
 ---
 # <a name="manage-payment-methods"></a>Administrar métodos de pago
 
@@ -45,6 +46,9 @@ Si su cuenta empresarial no tiene un perfil de facturación, cualquier administr
 > La opción de pagar con una cuenta bancaria no está disponible en algunos países o regiones.
 >
 > Debe usar un método de pago que haya sido emitido en el mismo país que su espacio empresarial.
+
+> [!TIP]
+> Si necesita ayuda con los pasos descritos en este tema, considere la posibilidad de [trabajar con un especialista de Microsoft Small Business](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
 
 ## <a name="watch-update-your-payment-method"></a>Ver: actualizar el método de pago
 

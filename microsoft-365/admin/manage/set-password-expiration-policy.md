@@ -18,6 +18,7 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -25,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Obtenga información sobre cómo un administrador puede establecer una directiva de expiración de contraseñas para su empresa, escuela u ONG en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: f7730e4dcadf8bb8743cd288ba5d38d45ad739b0
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 9ba871a166169a0125b68808c124b10802424dfd
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62523978"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62765593"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Cambiar la directiva de expiración de las contraseñas de la organización
 
@@ -46,11 +47,14 @@ Para poder realizar estos pasos, debe ser [Administrador global](../add-users/ab
 
 Si es un usuario, no tiene los permisos necesarios para configurar que la contraseña no expire nunca. Solicite al soporte técnico de su institución educativa o de su trabajo que siga los pasos de este artículo por usted.
 
+> [!TIP]
+> Si necesita ayuda con los pasos descritos en este tema, considere la posibilidad de [trabajar con un especialista de Microsoft Small Business](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación hasta el uso diario.
+
 ## <a name="set-password-expiration-policy"></a>Establecer directiva de expiración de contraseña
 
 Siga los siguientes pasos cuando quiera configurar las contraseñas de los usuarios para que expiren después que haya transcurrido cierto tiempo.
 
-1. En el Centro de administración de Microsoft 365, vaya a **Configuración** > **Configuración de la organización** y seleccione la pestaña <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Seguridad y privacidad**</a>.
+1. En el Centro de administración de Microsoft 365, vaya a la pestaña <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Seguridad y privacidad**</a> en **Configuración de la organización**.
 
     Si no es administrador global, no verá la opción de seguridad y privacidad.
   
@@ -63,7 +67,7 @@ Siga los siguientes pasos cuando quiera configurar las contraseñas de los usuar
 1. Escriba en la segunda casilla cuándo se debe informar a los usuarios sobre la expiración de su contraseña y luego seleccione **guardar**. Elija una cantidad de días entre 1 y 30.
 
 > [!IMPORTANT]
-> Las notificaciones de expiración de contraseña ya no se admiten en el Centro de administración de Microsoft 365 ni en ninguna aplicación de Office.
+> Las notificaciones de expiración de contraseña ya no se admiten en las aplicaciones web de Office ni en el [centro de administración](https://portal.office.com).
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>Aspectos importantes que debe conocer sobre la función de expiración de contraseña
   

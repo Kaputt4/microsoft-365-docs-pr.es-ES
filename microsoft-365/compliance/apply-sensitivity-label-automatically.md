@@ -1,24 +1,29 @@
 ---
 title: Aplicar automáticamente una etiqueta de confidencialidad al contenido de Microsoft 365
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
-ms.date: null
+ms.date: ''
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
+- M365-security-compliance
 ms.topic: article
 ms.custom: admindeeplinkMAC
 search.appverid:
-  - MOE150
-  - MET150
-description: 'Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.'
+- MOE150
+- MET150
+description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
+ms.openlocfilehash: 6802947e786f13a577a6f3bf58ea3001599ee4d8
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766085"
 ---
-
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
@@ -81,7 +86,6 @@ Use la siguiente tabla para ayudarle a identificar las diferencias en el comport
 |:-----|:-----|:-----|
 |Dependencia de la aplicación|Sí ([versiones mínimas](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |No\* |
 |Restringir por ubicación|No |Sí |
-|Condiciones: coincidencia exacta de datos para tipos de información confidencial personalizados|Sí |No |
 |Condiciones: clasificadores que se pueden entrenar|Sí |No |
 |Condiciones: opciones de uso compartido y opciones adicionales para el correo electrónico|No |Sí |
 |Condiciones: excepciones|No |Sí (solo correo electrónico) |
@@ -127,8 +131,8 @@ Solo para las directivas de etiquetado automático de correo electrónico, puede
 |Etiqueta ya existente |Reemplazar por la configuración de etiqueta: etiquetado automático para archivos y correos electrónicos  |Invalidar con directiva: etiquetado automático|
 |:-----|:-----|:-----|
 |Aplicado manualmente, cualquier prioridad|Word, Excel, PowerPoint: No <br /><br> Outlook: No  |SharePoint y OneDrive: no <br /><br> Exchange: no de forma predeterminada, pero configurable |
-|Aplicado automáticamente, prioridad inferior |Word, Excel, PowerPoint: Sí <br /><br> Outlook: Sí | SharePoint y OneDrive: Sí <br /><br> Exchange: Sí |
-|Aplicado automáticamente, mayor prioridad |Word, Excel, PowerPoint: No <br /><br> Outlook: No |SharePoint y OneDrive: no <br /><br> Exchange: no de forma predeterminada, pero configurable |
+|Etiqueta aplicada automáticamente o predeterminada de la directiva, prioridad más baja |Word, Excel, PowerPoint: Sí <br /><br> Outlook: Sí | SharePoint y OneDrive: Sí <br /><br> Exchange: Sí |
+|Etiqueta aplicada automáticamente o predeterminada de la directiva, prioridad más alta |Word, Excel, PowerPoint: No <br /><br> Outlook: No |SharePoint y OneDrive: no <br /><br> Exchange: no de forma predeterminada, pero configurable |
 
 La configuración configurable para las directivas de etiquetado automático de correo electrónico se encuentra en la página **Configuración adicional para el correo electrónico**. Esta página se muestra después de seleccionar una etiqueta de confidencialidad para una directiva de etiquetado automático que incluye la ubicación de Exchange.
 
@@ -136,7 +140,7 @@ La configuración configurable para las directivas de etiquetado automático de 
 
 Para el etiquetado integrado en las aplicaciones de Office, compruebe las[ versiones mínimas necesarias ](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) para el etiquetado automático en las aplicaciones de Office.
 
-El cliente de etiquetado unificado de Azure Information Protection admite el etiquetado automático para tipos de información confidencial integrados y personalizados, pero no para clasificadores que se pueden entrenar o tipos de información confidencial que usan Coincidencia exacta de datos (EDM).
+El cliente de etiquetado unificado de Azure Information Protection solo admite el etiquetado automático para los tipos de información confidencial integrados y personalizados, y no admite clasificadores entrenables ni tipos de información confidencial que usan Coincidencia exacta de datos (EDM) o entidades con nombre.
 
 Los ajustes de etiquetado automático para las aplicaciones de Office están disponibles al [crear o editar una etiqueta de confidencialidad](create-sensitivity-labels.md). Asegúrese de que **Archivos y mensajes de correo electrónico** está seleccionada para el ámbito de la etiqueta:
 
@@ -178,7 +182,7 @@ Si configura una etiqueta de confidencialidad solo con la EDM para sus condicion
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Configurar clasificadores capacitados para una etiqueta
 
-Si usa esta opción, cerciórese de haber publicado en su espacio empresarial al menos otra etiqueta de confidencialidad que esté configurada para la etiqueta automática y la [opción tipos de información confidencial](#configuring-sensitive-info-types-for-a-label).
+Si usa esta opción con Aplicaciones de Microsoft 365 para Windows versión 2106 o inferior, o Aplicaciones de Microsoft 365 para Mac versión 16.50 o inferior, cerciórese de haber publicado en su espacio empresarial al menos otra etiqueta de confidencialidad que esté configurada para el etiquetado automático y la [opción tipos de información confidencial](#configuring-sensitive-info-types-for-a-label). Este requisito no es necesario cuando se usan versiones posteriores en estas plataformas.
 
 Cuando seleccione la opción **Clasificadores que se pueden entrenar**, seleccione uno o más de los clasificadores que se pueden entrenar preentrenados o personalizados:
 
