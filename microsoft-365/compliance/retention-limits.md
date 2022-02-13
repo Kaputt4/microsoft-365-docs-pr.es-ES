@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Obtener información sobre el número máximo de directivas y elementos por directiva para directivas de retención y directivas de etiquetas de retención
-ms.openlocfilehash: d8746f99961d209fb76f1fbe146162d9b6e2ed59
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f7b445ab8fd0afe5fb893933c3475385e09bc84e
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370073"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62767441"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Límites de directivas de retención y directivas de etiqueta de retención.
 
@@ -37,13 +37,20 @@ Se admite un máximo de 1 000 etiquetas de retención por espacio empresarial.
 
 ## <a name="maximum-number-of-policies-per-tenant"></a>Número máximo de directivas por espacio empresarial
 
-Un solo espacio empresarial puede tener un máximo de 10 000 directivas (cualquier configuración). Este número máximo incluye las diferentes directivas de retención y otras directivas de cumplimiento como directivas para DLP, barreras de información, retenciones de eDiscovery y etiquetas de confidencialidad.
+Un solo espacio empresarial puede tener un máximo de 10 000 directivas (cualquier configuración). Este número máximo incluye las diferentes directivas para la retención, y otras directivas para el cumplimiento, como las directivas para DLP, las barreras de información, las retenciones de eDiscovery, las retenciones de litigios, las retenciones locales y las etiquetas de confidencialidad. Sin embargo, este máximo excluye:
+
+- Etiquete las directivas para SharePoint y OneDrive que solo eliminen, en lugar de conservar o retener y luego eliminar. La excepción son las directivas de aplicación automática de etiquetas para los archivos adjuntos en la nube, que siempre se incluyen en el máximo de 10000.
+- Directivas de retención de Exchange desde [la administración de registros de mensajería (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management).
 
 Dentro de este límite de 10 000 directivas, también hay algunos límites en el número máximo de directivas para la retención por carga de trabajo:
 
 - Exchange (cualquier configuración): 1800
+    - Por buzón: 25 es el máximo recomendado antes de que el rendimiento pueda verse afectado; 50 es el límite admitido.
 - SharePoint o OneDrive (se incluyen automáticamente todos los sitios): 13
 - SharePoint o OneDrive (ubicaciones específicas incluidas o excluidas): 2600
+
+> [!NOTE]
+> Estas cifras máximas para Exchange y SharePoint no son exclusivas de la retención, sino que se comparten con otros tipos de directivas de retención que incluyen las retenciones de eDiscovery, las retenciones de litigios y las retenciones locales.
 
 Aunque las directivas de retención para Microsoft Teams y Yammer usan buzones para almacenar datos con fines de retención, el número máximo de directivas para Exchange Online excluye las directivas de retención para Teams y Yammer.
 
