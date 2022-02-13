@@ -20,14 +20,15 @@ ms.custom:
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce_billing
+- business_assist
 - AdminTemplateSet
 ms.date: 10/28/2021
-ms.openlocfilehash: e0854036939e20ac362e325b14dbaaa6a36a13a6
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 839c7e94a2a89b20eef0779f44d864d69ed3a746
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355001"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "62766793"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Cómo pagar la suscripción
 
@@ -37,6 +38,9 @@ ms.locfileid: "62355001"
 Puede pagar la suscripción con tarjeta de crédito, débito o una cuenta bancaria. En algunos casos, puede pagar mediante factura, mediante cheque o transferencia electrónica de fondos (EFT). Si tiene un perfil de facturación, sus opciones son algo diferentes. Para más información, consulte [Cómo pagar la suscripción con un perfil de facturación](pay-for-subscription-billing-profile.md). Si no está seguro de si su cuenta tiene un perfil de facturación, consulte [Información de perfiles de facturación](manage-billing-profiles.md).
 
 **¿Solo quiere saber dónde enviar el pago de la factura?** Si paga la factura mediante cheque o transferencia electrónica de fondos (EFT), vea [¿Dónde envío mi cheque o pago por EFT?](#where-do-i-send-my-check-or-eft-payment)
+
+> [!TIP]
+> Si necesita ayuda con los pasos que se describen en este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación laboral hasta el uso cotidiano.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
