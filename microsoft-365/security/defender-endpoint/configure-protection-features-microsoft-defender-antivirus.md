@@ -1,7 +1,7 @@
 ---
 title: Habilitar y configurar las Antivirus de Microsoft Defender de protección
 description: Habilite la protección heurística, heurística y en tiempo real en av. de Microsoft Defender.
-keywords: heuristic, machine-learning, behavior monitor, real-time protection, always-on, Antivirus de Microsoft Defender, antimalware, security, defender
+keywords: heuristic, machine learning, behavior monitor, real-time protection, always-on, Antivirus de Microsoft Defender, antimalware, security, defender
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 374e955641a5b74a36bc506e3dfda32e1081e1a5
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: f949623b7d0647d71f4c665ed2016ee14a765e5f
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218615"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807517"
 ---
 # <a name="configure-behavioral-heuristic-and-real-time-protection"></a>Configurar la protección en tiempo real, heurística y de comportamiento
 
@@ -34,7 +34,7 @@ Antivirus de Microsoft Defender varios métodos para proporcionar protección co
 
 - Protección en la nube para la detección casi instantánea y el bloqueo de amenazas nuevas y emergentes
 - Análisis siempre en tiempo real, con supervisión del comportamiento de archivos y procesos y otra heurística (también conocida como "protección en tiempo real")
-- Actualizaciones de protección dedicadas que se basan en el aprendizaje automático, los análisis humanos y automatizados de macrodatos y el estudio detallado de la resistencia ante amenazas.
+- Actualizaciones de protección dedicadas basadas en aprendizaje automático, análisis de big-data humanos y automatizados e investigación detallada de resistencia a amenazas
 
 Puede configurar cómo Antivirus de Microsoft Defender estos métodos con la directiva de grupo, la administración System Center configuración, los cmdlets de PowerShell y Windows Instrumental de administración (WMI).
 

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Obtenga información sobre qué hacer si tiene un dominio no enrutable asociado a sus cuentas de usuario locales antes de sincronizarlas con su Microsoft 365 inquilino.
-ms.openlocfilehash: 5b1ae0f11cc024dc4fa216ae67959da82b936e00
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bea80123c1a2db11baa07cd3344f65303cdd1084
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212802"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806605"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Preparar un dominio no enrutable para la sincronización de directorios
 
@@ -37,13 +37,13 @@ Si actualmente usa un dominio ".local" para sus cuentas de usuario en AD DS, se 
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>¿Qué sucede si solo tengo un dominio local ".local"?
 
-Usa Azure AD Conectar para sincronizar su AD DS con el inquilino de Azure AD de su Microsoft 365 inquilino. Para obtener más información, vea [Integrating your on-premises identities with Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
+Usas Azure AD Conectar para sincronizar tu AD DS con el Azure AD de tu Microsoft 365 inquilino. Para obtener más información, vea [Integrating your on-premises identities with Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
   
-Azure AD Conectar sincroniza el UPN y la contraseña de los usuarios para que los usuarios puedan iniciar sesión con las mismas credenciales que usan localmente. Sin embargo, Azure AD Conectar solo sincroniza los usuarios con dominios comprobados por Microsoft 365. Esto significa que Azure AD también comprueba el dominio porque Microsoft 365 identidades están administradas por Azure AD. En otras palabras, el dominio debe ser un dominio de Internet válido (por ejemplo, .com, .org, .net, .us). Si tu AD DS interno solo usa un dominio no enrutable (por ejemplo, ".local"), esto no puede coincidir con el dominio comprobado que tienes para tu inquilino Microsoft 365 cliente. Puedes solucionar este problema cambiando el dominio principal en tu AD DS local o agregando uno o varios sufijos UPN.
+Azure AD Conectar sincroniza el UPN y la contraseña de los usuarios para que los usuarios puedan iniciar sesión con las mismas credenciales que usan localmente. Sin embargo, Azure AD Conectar sincroniza los usuarios con dominios que se comprueban mediante Microsoft 365. Esto significa que el dominio también se comprueba mediante Azure AD porque Microsoft 365 identidades se administran mediante Azure AD. En otras palabras, el dominio debe ser un dominio de Internet válido (por ejemplo, .com, .org, .net, .us). Si tu AD DS interno solo usa un dominio no enrutable (por ejemplo, ".local"), esto no puede coincidir con el dominio comprobado que tienes para tu inquilino Microsoft 365 cliente. Puedes solucionar este problema cambiando el dominio principal en tu AD DS local o agregando uno o varios sufijos UPN.
   
 ### <a name="change-your-primary-domain"></a>Cambiar el dominio principal
 
-Cambie el dominio principal a un dominio que haya comprobado en Microsoft 365, por ejemplo, contoso.com. A continuación, todos los usuarios que tienen el dominio contoso.local se actualizan a contoso.com. Sin embargo, este es un proceso muy implicado y se describe una solución más sencilla en la siguiente sección.
+Cambie el dominio principal a un dominio que haya comprobado en Microsoft 365, por ejemplo, contoso.com. A continuación, todos los usuarios que tienen el dominio contoso.local se actualizan a contoso.com. Sin embargo, este es un proceso implicado y se describe una solución más sencilla en la siguiente sección.
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>Agregar sufijos UPN y actualizar los usuarios a ellos
 
@@ -53,19 +53,19 @@ Después de actualizar los UPN para usar el dominio comprobado, estás listo par
   
 #### <a name="step-1-add-the-new-upn-suffix"></a>Paso 1: Agregar el nuevo sufijo UPN**
   
-1. En el controlador de dominio de AD DS, en el Administrador de servidores elija **Herramientas** \> **Dominios y confianzas de Active Directory**.
+1. En el controlador de dominio de AD DS, en el Administrador de servidores, elija **Herramientas** \> **Dominios y confianzas de Active Directory**.
     
     **O bien, si no tiene Windows Server 2012**
     
-    Presione **Windows + R** para abrir  el cuadro de diálogo Ejecutar y, a continuación, escriba Domain.msc y, a continuación, **elija Aceptar**.
+    Presione **Windows + R** para abrir el cuadro de diálogo Ejecutar  y, a continuación, escriba Dominio.msc y, a continuación, **elija Aceptar**.
     
     ![Elija Dominios y confianzas de Active Directory.](../media/46b6e007-9741-44af-8517-6f682e0ac974.png)
   
-2. En la **ventana Dominios y confianzas** de Active Directory, haga clic con el botón secundario en Dominios y **confianzas** de Active Directory y, a continuación, **elija Propiedades**.
+2. En la **ventana Dominios y confianzas de Active Directory** , haga clic con el botón secundario en **Dominios y confianzas de Active Directory** y, a continuación, elija **Propiedades**.
     
     ![Haga clic con el botón secundario en Dominios y confianzas de Active Directory y elija Propiedades.](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
-3. En la pestaña Sufijos **UPN,** en el cuadro Sufijos **UPN** alternativos, escriba el sufijo o sufijos UPN nuevo y, a continuación, **elija** \> **Agregar aplicar**.
+3. En la pestaña Sufijos **UPN** , en el cuadro Sufijos **UPN** alternativos, escriba el sufijo o sufijos UPN nuevo y, a continuación, **elija Agregar** \> **aplicar**.
     
     ![Agregue un sufijo UPN nuevo.](../media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
   
@@ -73,11 +73,11 @@ Después de actualizar los UPN para usar el dominio comprobado, estás listo par
     
  #### <a name="step-2-change-the-upn-suffix-for-existing-users"></a>Paso 2: Cambiar el sufijo UPN para los usuarios existentes
   
-1. En el controlador de dominio de AD DS, en el Administrador del servidor elija **Herramientas** \> **Usuarios y equipos de Active Directory**.
+1. En el controlador de dominio de AD DS, en el Administrador del servidor, elija **Herramientas** \> **Usuarios y equipos de Active Directory**.
     
     **O bien, si no tiene Windows Server 2012**
     
-    Presione **Windows + R** para abrir  el cuadro de diálogo Ejecutar y, a continuación, escriba Dsa.msc y, a continuación, haga clic en **Aceptar**
+    Presione **Windows + R** para abrir el cuadro de diálogo  Ejecutar y, a continuación, escriba Dsa.msc y, a continuación, haga clic en **Aceptar**
     
 2. Seleccione un usuario, haga clic con el botón secundario y, a continuación, elija **Propiedades**.
     

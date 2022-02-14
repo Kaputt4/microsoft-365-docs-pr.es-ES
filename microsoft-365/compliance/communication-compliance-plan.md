@@ -18,19 +18,19 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c1d55718f93efd9b1053e7ab106c397e0c1d409b
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+ms.openlocfilehash: 630143a88c453c66de2dba018d0e1cc75a770e89
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62187418"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806173"
 ---
 # <a name="plan-for-communication-compliance"></a>Planear el cumplimiento de las comunicaciones
 
 Antes de empezar con el cumplimiento [de](communication-compliance.md) las comunicaciones en su organización, hay importantes actividades de planeación y consideraciones que deben revisar los equipos de administración de tecnología de la información y cumplimiento. El conocimiento exhaustivo y la planeación de la implementación en las siguientes áreas ayudarán a garantizar que la implementación y el uso de las características de cumplimiento de comunicaciones se adapten a los procedimientos recomendados para la solución.
 
 > [!IMPORTANT]
-> Actualmente, el cumplimiento de la comunicación está disponible en inquilinos hospedados en regiones geográficas y países compatibles con las dependencias de servicio de Azure. Para comprobar que el cumplimiento de las comunicaciones es compatible con su organización, consulte [Disponibilidad de dependencia de Azure por país o región.](/troubleshoot/azure/general/dependency-availability-by-country)
+> Actualmente, el cumplimiento de la comunicación está disponible en inquilinos hospedados en regiones geográficas y países compatibles con las dependencias de servicio de Azure. Para comprobar que el cumplimiento de la comunicación es compatible con su organización, consulte [Disponibilidad de dependencia de Azure por país o región](/troubleshoot/azure/general/dependency-availability-by-country).
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Transición desde supervisión en Office 365
 
@@ -40,11 +40,11 @@ Para las organizaciones que usan directivas de supervisión en Office 365, debe 
 - Los mensajes guardados en supervisión en Office 365 coincidencias de directiva no se pueden mover ni compartir en el cumplimiento de la comunicación en Microsoft 365.
 - Para las organizaciones con ambas soluciones usadas en paralelo durante el proceso de transición, las directivas usadas en cada solución deben tener nombres de directiva únicos. Los grupos y los diccionarios de palabras clave personalizados se pueden compartir entre soluciones durante un período de transición.
 
-Para obtener información sobre la retirada para la supervisión en Office 365, consulte [Microsoft 365 Roadmap para](https://www.microsoft.com/microsoft-365/roadmap) obtener más información.
+Para obtener información sobre la retirada para la supervisión Office 365, consulte [el Microsoft 365 guía básica](https://www.microsoft.com/microsoft-365/roadmap) para obtener más información.
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>Trabajar con las partes interesadas de la organización
 
-Identifique a las partes interesadas apropiadas de su organización para colaborar en la toma de acciones en las alertas de cumplimiento de comunicaciones. Algunas partes interesadas recomendadas que deben considerar incluir [](communication-compliance.md#workflow) en la planeación inicial y el flujo de trabajo de cumplimiento de comunicaciones de extremo a extremo son personas de las siguientes áreas de su organización:
+Identifique a las partes interesadas apropiadas de su organización para colaborar en la toma de acciones en las alertas de cumplimiento de comunicaciones. Algunas partes interesadas recomendadas que deben considerar incluir en la planeación inicial y el [](communication-compliance.md#workflow) flujo de trabajo de cumplimiento de comunicaciones de extremo a extremo son personas de las siguientes áreas de su organización:
 
 - Tecnología de la información
 - Cumplimiento
@@ -57,29 +57,29 @@ Identifique a las partes interesadas apropiadas de su organización para colabor
 
 ### <a name="permissions"></a>Permisos
 
-Seleccione las partes interesadas dedicadas para supervisar y revisar las alertas y los casos en una cadencia regular en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). Asegúrese de comprender cómo asignará usuarios y partes interesadas a diferentes grupos de roles de cumplimiento de comunicaciones de su organización.
+Seleccione partes interesadas dedicadas para supervisar y revisar las alertas y los casos en una cadencia regular en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/). Asegúrese de comprender cómo asignará usuarios y partes interesadas a diferentes grupos de roles de cumplimiento de comunicaciones de su organización.
 
 > [!IMPORTANT]
 > Después de configurar los grupos de roles, los permisos del grupo de roles pueden tardar hasta 30 minutos en aplicarse a los usuarios asignados en toda la organización.
 
-Hay seis grupos de roles que se usan para configurar los permisos iniciales para administrar las características de cumplimiento de comunicaciones. Para que **el cumplimiento** de la comunicación esté disponible como una opción de menú en Centro de cumplimiento de Microsoft 365 y para continuar con estos pasos de configuración, debe estar asignado a uno de los siguientes roles o grupos de roles:
+Hay seis grupos de roles que se usan para configurar los permisos iniciales para administrar las características de cumplimiento de comunicaciones. Para que **el cumplimiento** de la comunicación esté disponible como una opción de menú en Centro de cumplimiento de Microsoft 365 y continuar con estos pasos de configuración, debe estar asignado a uno de los siguientes roles o grupos de roles:
 
-- Azure Active Directory de [*administrador global*](/azure/active-directory/roles/permissions-reference#global-administrator)
-- Azure Active Directory de [*administrador de cumplimiento normativo*](/azure/active-directory/roles/permissions-reference#compliance-administrator)
-- Centro de cumplimiento de Microsoft 365 de [*roles administración de*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) la organización
+- Azure Active Directory [*de administrador global*](/azure/active-directory/roles/permissions-reference#global-administrator)
+- Azure Active Directory [*de administrador de cumplimiento normativo*](/azure/active-directory/roles/permissions-reference#compliance-administrator)
+- Centro de cumplimiento de Microsoft 365 [*de roles administración de*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) la organización
 - Centro de cumplimiento de Microsoft 365 [*de roles administrador de cumplimiento*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
 - *Grupo de roles de cumplimiento* de comunicaciones
 - *Grupo de roles De administración de* cumplimiento de comunicaciones
 
 Los miembros de los siguientes roles tienen los mismos permisos de solución incluidos en el grupo de roles *Administración de cumplimiento* de comunicaciones:
 
-- Azure Active Directory *global*
-- Azure Active Directory *de cumplimiento*
-- Centro de cumplimiento de Microsoft 365 *administración de la organización*
-- Centro de cumplimiento de Microsoft 365 de *cumplimiento*
+- Azure Active Directory *administrador global*
+- Azure Active Directory *de cumplimiento normativo*
+- Centro de cumplimiento de Microsoft 365 *organización*
+- Centro de cumplimiento de Microsoft 365 *de cumplimiento*
 
 > [!IMPORTANT]
-> Asegúrese de que siempre tiene al  menos  un usuario en los grupos de roles Cumplimiento de comunicaciones o Administración de cumplimiento de comunicaciones (según la opción que elija) para que la configuración de cumplimiento de comunicación no entre en un escenario de "administrador cero" si determinados usuarios abandonan la organización.
+> Asegúrese de que siempre tiene al menos un usuario en los  grupos de roles  Cumplimiento de comunicaciones o Administración de cumplimiento de comunicaciones (según la opción que elija) para que la configuración de cumplimiento de comunicación no entre en un escenario de "administrador cero" si determinados usuarios abandonan la organización.
 
 En función de cómo desee administrar las alertas y directivas de cumplimiento de comunicaciones, deberá asignar usuarios a grupos de roles específicos para administrar diferentes conjuntos de características de cumplimiento de comunicación. Tiene la opción de asignar usuarios con diferentes responsabilidades de cumplimiento a grupos de roles específicos para administrar diferentes áreas de características de cumplimiento de comunicación. O puede decidir asignar todas las cuentas de usuario para administradores, analistas, investigadores y visores designados al grupo de roles *Cumplimiento* de comunicaciones. Use un único grupo de roles o varios grupos de roles para ajustarse mejor a sus requisitos de administración de cumplimiento.
 
@@ -95,14 +95,14 @@ Elija entre estas opciones de grupo de roles de solución al configurar y admini
 
 ### <a name="supervised-users"></a>Usuarios supervisados
 
-Antes de empezar a usar el cumplimiento de comunicaciones, necesita determinar a quién se debe revisar las comunicaciones. En la directiva, las direcciones de correo electrónico de los usuarios identifican a las personas o grupos de personas que se van a supervisar. Algunos ejemplos de estos grupos son Microsoft 365, listas de distribución basadas Exchange, Yammer comunidades y Microsoft Teams canales. Asimismo, puede excluir usuarios o grupos específicos de la revisión con un grupo de exclusión específico o una lista de grupos. Para obtener más información acerca de los tipos de grupos admitidos en las directivas de cumplimiento de comunicaciones, vea [Introducción al cumplimiento de comunicaciones.](communication-compliance-configure.md#step-3-optional-set-up-groups-for-communication-compliance)
+Antes de empezar a usar el cumplimiento de comunicaciones, necesita determinar a quién se debe revisar las comunicaciones. En la directiva, las direcciones de correo electrónico de los usuarios identifican a las personas o grupos de personas que se van a supervisar. Algunos ejemplos de estos grupos son Microsoft 365, listas de distribución basadas Exchange, Yammer comunidades y Microsoft Teams canales. Asimismo, puede excluir usuarios o grupos específicos de la revisión con un grupo de exclusión específico o una lista de grupos. Para obtener más información acerca de los tipos de grupos admitidos en las directivas de cumplimiento de comunicaciones, vea [Introducción al cumplimiento de la comunicación](communication-compliance-configure.md#step-3-optional-set-up-groups-for-communication-compliance).
 
 > [!IMPORTANT]
-> Los usuarios cubiertos por directivas de cumplimiento de comunicaciones deben tener una licencia de Cumplimiento de Microsoft 365 E5, una licencia de E3 de Office 365 Enterprise con el complemento de cumplimiento avanzado o estar incluidos en una suscripción Office 365 Enterprise E5. Si no tiene un plan Enterprise E5 y desea probar el cumplimiento de las comunicaciones, puede registrarse para una prueba de [Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Los usuarios cubiertos por directivas de cumplimiento de comunicaciones deben tener una licencia de Cumplimiento de Microsoft 365 E5, una licencia de E3 de Office 365 Enterprise con el complemento de cumplimiento avanzado o estar incluidos en una suscripción Office 365 Enterprise E5. Si no tiene un plan Enterprise E5 y desea probar el cumplimiento de las comunicaciones, puede registrarse para una prueba de Office 365 Enterprise [E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Reviewers
 
-Al crear una directiva de cumplimiento de comunicaciones, debe determinar quién revisa los mensajes de los usuarios supervisados. En la directiva, las direcciones de correo electrónico de los usuarios identifican a individuos o grupos de personas que revisarán las comunicaciones supervisadas. Todos los revisores deben tener buzones hospedados en Exchange Online  y deben estar asignados a los roles análisis de cumplimiento de comunicación o investigación de cumplimiento *de* comunicación. Los revisores (analistas o investigadores) también deben tener asignado el rol *de administración* de casos de cumplimiento de comunicación. Cuando se agregan revisores a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la directiva y proporciona vínculos a información sobre el proceso de revisión.
+Al crear una directiva de cumplimiento de comunicaciones, debe determinar quién revisa los mensajes de los usuarios supervisados. En la directiva, las direcciones de correo electrónico de los usuarios identifican a individuos o grupos de personas que revisarán las comunicaciones supervisadas. Todos los revisores deben tener buzones hospedados en Exchange Online y deben estar asignados a los roles análisis de *cumplimiento* de comunicación o investigación *de cumplimiento de* comunicación. Los revisores (analistas o investigadores) también deben tener asignado el rol *de administración* de casos de cumplimiento de comunicación. Cuando se agregan revisores a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la directiva y proporciona vínculos a información sobre el proceso de revisión.
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Grupos para usuarios y revisores supervisados
 
@@ -121,10 +121,10 @@ Use el siguiente gráfico para ayudarle a configurar grupos en su organización 
 
 Proteger la privacidad de los usuarios que tienen coincidencias de directiva es importante y puede ayudar a promover la objetividad en las revisiones de investigación y análisis de datos para alertas de cumplimiento de comunicaciones. Esta configuración solo se aplica a los nombres de usuario que muestran la solución de cumplimiento de comunicaciones. No afecta a cómo se muestran los nombres en otras soluciones de cumplimiento o en el Centro de administración.
 
-Para los usuarios con una coincidencia de cumplimiento de comunicación, puede elegir una de las siguientes opciones en **Configuración de cumplimiento de comunicaciones:**
+Para los usuarios con una coincidencia de cumplimiento de comunicaciones, puede elegir una de las siguientes opciones en **Configuración de cumplimiento de comunicaciones**:
 
-- **Mostrar versiones anonimizadas** de nombres de usuario:  los nombres de usuario se anonimizan para impedir que los usuarios del grupo de roles de analista de cumplimiento de comunicaciones vean quién está asociado con las alertas de directiva. Los usuarios del grupo *de roles Investigador de cumplimiento* de comunicaciones siempre verán nombres de usuario, no las versiones anonimizadas. Por ejemplo, un usuario "Grace Taylor" aparecería con un seudónimo aleatorio como "AnonIS8-988" en todas las áreas de la experiencia de cumplimiento de comunicación. Al elegir esta configuración, se anonimizan todos los usuarios con coincidencias de directivas actuales y pasadas, y se aplica a todas las directivas. La información del perfil de usuario en los detalles de la alerta de cumplimiento de comunicaciones no estará disponible cuando se elija esta opción. Sin embargo, los nombres de usuario se muestran al agregar nuevos usuarios a directivas existentes o al asignar usuarios a nuevas directivas. Si decide desactivar esta configuración, se mostrarán los nombres de usuario para todos los usuarios que tengan coincidencias de directiva actuales o pasadas.
-- **No mostrar versiones anónimas de** nombres de usuario: los nombres de usuario se muestran para todas las coincidencias de directiva actuales y pasadas para las alertas de cumplimiento de comunicaciones. La información de perfil de usuario (nombre, título, alias y organización o departamento) se muestra para el usuario para todas las alertas de cumplimiento de comunicaciones.
+- **Mostrar versiones anónimas** de nombres de usuario: los nombres de usuario se anonimizan para evitar que los usuarios del grupo de roles De acuerdo con la comunicación vean quién está asociado con las alertas de directiva. Los usuarios del grupo *de roles Investigador de cumplimiento* de comunicaciones siempre verán nombres de usuario, no las versiones anonimizadas. Por ejemplo, un usuario "Grace Taylor" aparecería con un seudónimo aleatorio como "AnonIS8-988" en todas las áreas de la experiencia de cumplimiento de comunicación. Al elegir esta configuración, se anonimizan todos los usuarios con coincidencias de directivas actuales y pasadas, y se aplica a todas las directivas. La información del perfil de usuario en los detalles de la alerta de cumplimiento de comunicaciones no estará disponible cuando se elija esta opción. Sin embargo, los nombres de usuario se muestran al agregar nuevos usuarios a directivas existentes o al asignar usuarios a nuevas directivas. Si decide desactivar esta configuración, se mostrarán los nombres de usuario para todos los usuarios que tengan coincidencias de directiva actuales o pasadas.
+- **No mostrar versiones anónimas** de nombres de usuario: los nombres de usuario se muestran para todas las coincidencias de directiva actuales y pasadas para las alertas de cumplimiento de comunicaciones. La información de perfil de usuario (nombre, título, alias y organización o departamento) se muestra para el usuario para todas las alertas de cumplimiento de comunicaciones.
 
 ## <a name="plan-for-policies"></a>Planeación de directivas
 
@@ -135,8 +135,8 @@ Al planear las directivas de cumplimiento de comunicaciones, tenga en cuenta las
 - Considere la posibilidad de agregar todos los usuarios de la organización como en el ámbito de las directivas de cumplimiento de comunicación. La identificación de usuarios específicos como en el ámbito de las directivas individuales es útil en algunas circunstancias, pero la mayoría de las organizaciones deben incluir a todos los usuarios en directivas de cumplimiento de comunicaciones optimizadas para la detección de acoso o discriminación.
 - Configure el porcentaje de comunicaciones que se revisará al 100 % para asegurarse de que las directivas están atando todos los problemas que preocupan en las comunicaciones de su organización.
 - Puede examinar las comunicaciones de [orígenes de terceros en](communication-compliance-channels.md#third-party-sources) busca de datos importados en buzones de correo de su Microsoft 365 organización. Para incluir la revisión de las comunicaciones en estas plataformas, deberá configurar un conector para estos servicios antes de que la directiva de comunicación supervise los mensajes que cumplen las condiciones de la directiva.
-- Las directivas pueden admitir la supervisión de idiomas distintos del inglés en directivas de cumplimiento de comunicaciones personalizadas. Crea un [diccionario de palabras](communication-compliance-policies.md#custom-keyword-dictionaries) clave personalizado de palabras ofensivas en el idioma que prefieras o crea tu propio modelo de aprendizaje automático con clasificadores [capacitados](classifier-get-started-with.md) en Microsoft 365.
-- Todas las organizaciones tienen diferentes estándares de comunicación y necesidades de directiva. Supervisar palabras clave específicas mediante condiciones de directiva de [cumplimiento](communication-compliance-policies.md#conditional-settings) de comunicación o supervisar tipos específicos de información con tipos de información [confidencial personalizados.](create-a-custom-sensitive-information-type.md)
+- Las directivas pueden admitir la supervisión de idiomas distintos del inglés en directivas de cumplimiento de comunicaciones personalizadas. Crea un [diccionario de palabras clave](communication-compliance-policies.md#custom-keyword-dictionaries) personalizado de palabras [ofensivas](classifier-get-started-with.md) en el idioma que prefieras o crea tu propio modelo de aprendizaje automático con clasificadores entrenables en Microsoft 365.
+- Todas las organizaciones tienen diferentes estándares de comunicación y necesidades de directiva. Supervise las palabras clave específicas mediante condiciones de directiva de cumplimiento de [comunicaciones](communication-compliance-policies.md#conditional-settings) o supervise los tipos específicos de información con [tipos de información confidencial personalizados](create-a-custom-sensitive-information-type.md).
 
 ## <a name="creating-a-communication-compliance-policy-walkthrough"></a>Crear un tutorial de directiva de cumplimiento de comunicaciones
 
@@ -149,4 +149,4 @@ Al planear las directivas de cumplimiento de comunicaciones, tenga en cuenta las
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 
-Para configurar el cumplimiento de comunicaciones para su organización de [Microsoft 365,](communication-compliance-configure.md) vea Configure communication compliance for Microsoft 365 or check out the [case study for Contoso](communication-compliance-case-study.md) y how they quickly configured a communication compliance policy to monitor for inappropriate content in Microsoft Teams, Exchange Online y Yammer comunicaciones.
+Para configurar el cumplimiento de comunicaciones para su organización de Microsoft 365, vea Configure [communication compliance for Microsoft 365](communication-compliance-configure.md) or check out the [case study for Contoso](communication-compliance-case-study.md) and how they quickly configured a communication compliance policy to monitor for inappropriate content in Microsoft Teams, Exchange Online y Yammer comunicaciones.

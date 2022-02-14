@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365solution-scenario
 ms.date: ''
-ms.openlocfilehash: 98c97afb34518f32e4d8a5da03ad35d99e5494cd
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: fb46d0c03aaaaad016ca13be5bfa26a19887794c
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320804"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807457"
 ---
 # <a name="evaluate-network-protection"></a>Evaluar protección de red
 
@@ -37,6 +37,9 @@ Este artículo le ayuda a evaluar la protección de red habilitando la caracter�
 
 > [!TIP]
 > También puede visitar el sitio web escenarios de demostración de Microsoft Defender [en demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para ver cómo funcionan otras características de protección.
+
+> [!NOTE]
+> El sitio de demostración defender para el punto de conexión en demo.wd.microsoft.com está en desuso y se quitará en el futuro.
 
 ## <a name="enable-network-protection-in-audit-mode"></a>Habilitar la protección de red en modo auditoría
 
@@ -66,13 +69,13 @@ Habilite la protección de red en modo auditoría para ver qué direcciones IP y
 
 Para revisar las aplicaciones que se habrían bloqueado, abra el Visor de eventos y filtre el identificador de evento 1125 en el registro de Microsoft-Windows-Windows Defender/Operativo. En la tabla siguiente se enumeran todos los eventos de protección de red.
 
-| Id. de evento | Provide/Source | Descripción |
+| Id. de evento | Provide/Source | Description |
 |---|---|---|
 | 5007 | Windows Defender (operativo) | Evento cuando se cambia la configuración |
 | 1125 | Windows Defender (operativo) | Evento cuando se audita una conexión de red |
 | 1126 | Windows Defender (operativo) | Evento cuando se bloquea una conexión de red |
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Protección de red](network-protection.md)
 

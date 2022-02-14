@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar Office complementos.
-ms.openlocfilehash: 409a19f9e3579978eb3e3cf03d087820e494e181
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 4a64a9dd9a15c9bc877288aa9ac8fc62c40cee51
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933772"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805885"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -48,7 +48,7 @@ Un complemento puede tardar hasta 24 horas en aparecer para todos los usuarios.
 ## <a name="before-you-begin"></a>Antes de empezar
 
 La implementación centralizada de complementos requiere que los usuarios usen licencias de Microsoft 365 Empresa (Business Basic, Business Standard, Business Premium), licencias de Office 365 Enterprise (E1/E3/E5/F3) o licencias de Microsoft 365 Enterprise (E3/E5/F3) (y se han iniciado sesión en Office su identificador de organización), licencias de Office 365 Educación (A1/A3/A5) o licencias de Microsoft 365 Educación (A3/A5) y tener buzones de correo Exchange Online y Exchange Online activos. El directorio de suscripción debe estar en o federado para Azure Active Directory.
-Puede ver requisitos específicos para Office y Exchange a continuación, o usar el Control de compatibilidad de implementación [centralizada](#centralized-deployment-compatibility-checker).
+Puede ver requisitos específicos para Office y Exchange a continuación, o usar el Control [de compatibilidad de implementación centralizada](#centralized-deployment-compatibility-checker).
 
 La implementación centralizada no es compatible con lo siguiente:
 
@@ -85,10 +85,10 @@ Póngase en contacto con el administrador de Exchange de su organización para a
 
 ### <a name="admin-requirements"></a>Requisitos de administrador
 
-Para implementar un complemento mediante la implementación centralizada, debe ser un administrador global o un administrador Exchange de la organización.
+Para implementar un complemento mediante la implementación centralizada, debe ser un administrador global o un administrador Exchange en la organización.
 
 > [!NOTE]
-> Un Exchange puede implementar un complemento solo si la propiedad **Registros** de aplicaciones está establecida en true en el centro de administración de Azure Active Directory como se muestra en la imagen siguiente:
+> Un administrador Exchange puede implementar un complemento si se agrega el rol Administrador de  aplicaciones o si la propiedad **Registros** de aplicaciones está establecida en true en el Centro de administración de Azure Active Directory como se muestra en la siguiente imagen:
 >
 > ![imagen](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 
@@ -107,12 +107,12 @@ Con el control de compatibilidad de implementación centralizada, puede comproba
    Import-Module O365CompatibilityChecker
    ```
 
-3. Ejecute el **comando Invoke-CompatabilityCheck:**
+3. Ejecute el **comando Invoke-CompatabilityCheck** :
 
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   Este comando le solicita  *_TenantDomain_* (por ejemplo, *TailspinToysIncorporated.onmicrosoft. </span> com*) y  *_las credenciales de TenantAdmin_* (use sus credenciales de administrador global) y, a continuación, solicite el consentimiento.
+   Este comando le solicita  *_TenantDomain_* (por ejemplo, *TailspinToysIncorporated.onmicrosoft.</span> com*) y  *_las credenciales de TenantAdmin_* (use sus credenciales de administrador global) y, a continuación, solicite el consentimiento.
 
    > [!NOTE]
    > Según el número de usuarios de su espacio empresarial, el comprobador puede tardar minutos u horas en realizar la comprobación. 
@@ -162,7 +162,7 @@ De forma alternativa, puede usar la API de Graph Azure Active Directory para eje
 
 ### <a name="contacting-microsoft-for-support"></a>Ponerse en contacto con Microsoft para obtener soporte técnico
 
-Si usted o sus usuarios tienen problemas para cargar el complemento mientras usan aplicaciones de Office para la web (Word, Excel, etc.), que se implementaron de forma centralizada, es posible que deba ponerse en contacto con el soporte técnico de Microsoft[(](../../business-video/get-help-support.md)obtenga información sobre cómo . Proporcione la siguiente información sobre su entorno Microsoft 365 en el vale de soporte técnico.
+Si usted o sus usuarios tienen problemas para cargar el complemento mientras usan aplicaciones de Office para la web (Word, Excel, etc.), que se implementaron de forma centralizada, es posible que deba ponerse en contacto con el soporte técnico de [Microsoft (obtenga](../../business-video/get-help-support.md) información sobre cómo hacerlo. Proporcione la siguiente información sobre su entorno Microsoft 365 en el vale de soporte técnico.
 
 | Plataforma | Información de depuración |
 |:-----|:-----|
@@ -171,8 +171,8 @@ Si usted o sus usuarios tienen problemas para cargar el complemento mientras usa
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Implementar complementos en el Centro](../manage/manage-deployment-of-add-ins.md) de administración (artículo)\
+[Implementar complementos en el Centro de administración](../manage/manage-deployment-of-add-ins.md) (artículo)\
 [Administrar complementos en el Centro de administración](manage-addins-in-the-admin-center.md) (artículo)\
 [Preguntas más frecuentes sobre implementación](../manage/centralized-deployment-faq.yml) centralizada (artículo)\
-[Actualizar su Microsoft 365 usuarios empresariales al último Office cliente](../setup/upgrade-users-to-latest-office-client.md) (artículo)
+[Actualizar su Microsoft 365 usuarios empresariales al cliente Office cliente](../setup/upgrade-users-to-latest-office-client.md) (artículo)
  

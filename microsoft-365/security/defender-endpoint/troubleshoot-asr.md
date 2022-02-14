@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f03fa0ac8f44acb3ce73076be4d43d913e32f969
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: c503c3ed4cfea4ed0645cf18a9c9bf4ebe4a5ade
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326716"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807253"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Solucionar problemas de reglas de reducción de superficie de ataque
 
@@ -65,6 +65,9 @@ Si se han cumplido todos estos requisitos previos, continúe con el siguiente pa
 ## <a name="use-audit-mode-to-test-the-rule"></a>Usar el modo de auditoría para probar la regla
 
 Puedes visitar el sitio web de prueba de Windows Defender en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para confirmar que las reglas de reducción de superficie de ataques suelen funcionar para escenarios y procesos preconfigurados en un dispositivo, o puedes usar el modo de auditoría, que permite reglas solo para informes.
+
+> [!NOTE]
+> El sitio de demostración defender para el punto de conexión en demo.wd.microsoft.com está en desuso y se quitará en el futuro.
 
 Sigue estas instrucciones en [Use the demo tool to see how attack surface reduction rules work](evaluate-attack-surface-reduction.md) to test the specific rule you're encountering problems with.
 

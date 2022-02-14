@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: En este artículo se explica la diferencia entre usar la memoria caché de objetos en SharePoint Server 2013 local y SharePoint Online.
-ms.openlocfilehash: a5d35ae0668641dd698a7e6bfc2c2573acf251e6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c763ebb1603ade7fdc98f7728fb03697c5e7425c
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199842"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807001"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>Usar la memoria caché de objetos con SharePoint Online
 
@@ -34,7 +34,7 @@ Hay un impacto negativo significativo de confiar en la memoria caché de objetos
   
 ## <a name="how-the-sharepoint-online-and-sharepoint-server-2013-object-cache-works"></a>Cómo funciona SharePoint caché de objetos SharePoint Server 2013
 
-Cuando SharePoint Server 2013 se hospeda localmente, el cliente tiene servidores front-end web privados que hospedan la memoria caché de objetos. Esto significa que la memoria caché está dedicada a un cliente y solo está limitada por la cantidad de memoria disponible y asignada a la memoria caché de objetos. Dado que solo se sirve a un cliente en el escenario local, los servidores front-end web suelen tener usuarios que hacen solicitudes a los mismos sitios una y otra vez. Esto significa que la memoria caché se completa rápidamente y permanece llena de los resultados de la consulta de lista y SharePoint objetos que los usuarios están solicitando periódicamente.
+Cuando SharePoint Server 2013 se hospeda localmente, el cliente tiene servidores front-end web privados que hospedan la memoria caché de objetos. Esto significa que la memoria caché está dedicada a un cliente y solo está limitada por la cantidad de memoria disponible y asignada a la memoria caché de objetos. Dado que solo se sirve a un cliente en el escenario local, los servidores front-end web suelen tener usuarios que hacen solicitudes a los mismos sitios una y otra vez. Esto significa que la memoria caché se completa rápidamente y permanece llena de los resultados de la consulta de lista y SharePoint objetos que los usuarios solicitan periódicamente.
   
 ![Muestra el tráfico y la carga en servidores front-end web locales.](../media/a0d38b36-4909-4abb-8d4e-4930814bb3de.png)
   
@@ -52,7 +52,7 @@ Por todas estas razones, confiar en los usuarios que tienen objetos almacenados 
   
 ## <a name="if-we-cant-rely-on-the-object-cache-to-improve-performance-in-sharepoint-online-what-do-we-use-instead"></a>Si no podemos confiar en la memoria caché de objetos para mejorar el rendimiento en SharePoint Online, ¿qué usamos en su lugar?
 
-Dado que no debe confiar en el almacenamiento en caché en SharePoint Online, debe evaluar métodos de diseño alternativos para SharePoint personalizaciones que usan la memoria caché de objetos. Esto significa usar métodos para problemas de rendimiento que no se basan en el almacenamiento en caché de objetos con el fin de producir buenos resultados para los usuarios. Esto se describe en algunos de los otros artículos de esta serie e incluyen:
+Dado que no debe confiar en el almacenamiento en caché en SharePoint Online, debe evaluar métodos de diseño alternativos para SharePoint personalizaciones que usan la memoria caché de objetos. Esto significa usar métodos para problemas de rendimiento, que no se basan en el almacenamiento en caché de objetos para producir buenos resultados para los usuarios. Esto se describe en algunos de los otros artículos de esta serie e incluye:
   
 - [Opciones de navegación para SharePoint Online](navigation-options-for-sharepoint-online.md)
     
@@ -62,4 +62,3 @@ Dado que no debe confiar en el almacenamiento en caché en SharePoint Online, de
     
 - [Retrasar la carga de imágenes y JavaScript en SharePoint Online](delay-loading-images-and-javascript-in-sharepoint-online.md)
     
-

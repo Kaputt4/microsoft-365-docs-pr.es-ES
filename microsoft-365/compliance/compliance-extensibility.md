@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo ampliar Microsoft 365 de cumplimiento normativo mediante conectores de datos de terceros y API Graph Microsoft.
-ms.openlocfilehash: 8d76d18ea37280bbd3765ebacea8dc8aac365347
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: 1127064394e5b4873adb046e2b0540b361064c9d
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265660"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806845"
 ---
 # <a name="microsoft-365-compliance-and-microsoft-priva-extensibility"></a>Microsoft 365 cumplimiento normativo y extensibilidad de Microsoft Priva
 
@@ -87,7 +87,7 @@ Para obtener información sobre los requisitos de licencia Teams DLP, [consulte 
 
 ### <a name="microsoft-graph-api-for-ediscovery-preview"></a>API Graph Microsoft para exhibición de documentos electrónicos (versión preliminar)
 
-Con [Advanced eDiscovery](overview-ediscovery-20.md), las organizaciones pueden descubrir los datos donde viven y administrar más flujos de trabajo de exhibición de documentos electrónicos completos con capacidades inteligentes de aprendizaje automático y análisis para reducir los datos al conjunto pertinente, todo ello mientras los datos permanecen dentro del límite de seguridad y cumplimiento de Microsoft 365.
+Con [Advanced eDiscovery](overview-ediscovery-20.md), las organizaciones pueden descubrir los datos donde viven y administrar más flujos de trabajo de exhibición de documentos electrónicos de extremo a extremo con capacidades inteligentes de aprendizaje automático y análisis para reducir los datos al conjunto pertinente, todo mientras los datos permanecen dentro del límite de seguridad y cumplimiento de Microsoft 365.
 
 Graph API de Advanced eDiscovery pueden usarse para crear y administrar casos, conjuntos de revisión y consultas de conjunto de revisión de forma escalable y repetible. Esto permite a los clientes y partners crear aplicaciones y flujos de trabajo para automatizar procesos comunes y repetitivos, como crear casos y administrar custodias y retenciones legales.
 

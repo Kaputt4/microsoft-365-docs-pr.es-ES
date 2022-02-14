@@ -16,16 +16,16 @@ ms.collection: M365-security-compliance
 description: Obtenga lo último en aislamiento basado en hardware. Evite que ataques actuales y emergentes como vulnerabilidades o vínculos malintencionados interrumpan la productividad de los empleados y la seguridad empresarial.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2dcd218c5c3f9ab12ab4608aec1fdaac7bd00aeb
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.openlocfilehash: d1dfe0bf7082d05fa534a34cb0dd55d9227fca1a
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520552"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807073"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Protección de aplicaciones para Office para administradores
 
-**Se aplica a:** Word, Excel y PowerPoint para Microsoft 365, Windows 10 Enterprise
+**Se aplica a:** Word, Excel y PowerPoint para Microsoft 365, Windows 10 Enterprise, Windows 11 Enterprise
 
 Protección de aplicaciones de Microsoft Defender para Office (Application Guard for Office) ayuda a evitar que los archivos que no son de confianza tengan acceso a recursos de confianza, lo que mantiene a la empresa a salvo de ataques nuevos y emergentes. En este artículo se guía a los administradores por la configuración de dispositivos para obtener una vista previa de Application Guard para Office. Proporciona información sobre los requisitos del sistema y los pasos de instalación para habilitar Application Guard Office en un dispositivo.
 
@@ -39,8 +39,8 @@ Protección de aplicaciones de Microsoft Defender para Office (Application Guard
 
 ### <a name="minimum-software-requirements"></a>Requisitos mínimos de software
 
-* **Windows 10**: Windows 10 Enterprise, versión de compilación de cliente 2004 (20H1) compilación 19041 o posterior
-* **Office**: Office Canal actual y Canal de Enterprise mensual, Versión de compilación 2011 16.0.13530.10000 o posterior. Se admiten versiones de 32 bits y 64 bits de Office.
+* **Windows**: Windows 10 Enterprise, versión de compilación de cliente 2004 (20H1) compilación 19041 o posterior. Todas las versiones de Windows 11 son compatibles. 
+* **Office**: Office Canal actual y Canal de Enterprise mensual, Versión de compilación 2011 16.0.13530.10000 o posterior. Office Semi-Annual Enterprise, versión de compilación 2108 o posterior. Se admiten versiones de 32 bits y 64 bits de Office.
 * **Paquete de actualización**: Windows 10 actualización de seguridad mensual [acumulativa KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 Para obtener información detallada sobre los requisitos del sistema, consulte [Requisitos del sistema para Protección de aplicaciones de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Además, consulte las guías del fabricante del equipo sobre cómo habilitar la tecnología de virtualización.
@@ -128,7 +128,7 @@ Office las siguientes directivas para permitirle configurar las capacidades de A
 > [!NOTE]
 > La configuración de estas directivas puede deshabilitar algunas funcionalidades de los archivos abiertos en Application Guard para Office.
 
-|Policy|Descripción|
+|Policy|Description|
 |---|---|
 |No use Application Guard para Office|Habilitar esta directiva forzará a Word, Excel y PowerPoint a usar el contenedor de aislamiento vista protegida en lugar de Application Guard para Office. Esta directiva se puede usar para deshabilitar temporalmente la Protección de aplicaciones Office cuando haya problemas al dejarla habilitada para Microsoft Edge.|
 |Configurar Application Guard para la Office anterior a la creación del contenedor|Esta directiva determina si el contenedor de protección de aplicaciones Office, para aislar archivos que no son de confianza, está creado previamente para mejorar el rendimiento en tiempo de ejecución. Si habilita esta configuración, puede especificar el número de días para continuar creando previamente un contenedor o permitir que el Office heurístico integrado cree previamente el contenedor.

@@ -16,20 +16,20 @@ ms.date: 10/14/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 52556d3193843eecfb9130ead349a20bd16fab34
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 183fedefbbb56411674ff80a9feedc507cff0530
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164147"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807529"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Configurar las funciones del Antivirus de Microsoft Defender
 
 
 **Se aplica a:**
 
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Puede configurar Antivirus de Microsoft Defender con una serie de herramientas, como:
@@ -42,9 +42,9 @@ Puede configurar Antivirus de Microsoft Defender con una serie de herramientas, 
 
 Se pueden configurar las siguientes categorías generales de características:
 
-- Protección entregada en la nube. Consulte [Protección entregada en la nube y Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
+- Protección entregada en la nube. Consulte [Cloud-delivered protection and Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
 
-- Protección siempre activa en tiempo real, incluida la protección basada en el comportamiento, la heurística y la de aprendizaje automático. Consulte [Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md).
+- Protección siempre activa en tiempo real, incluida la protección basada en el comportamiento, la heurística y el aprendizaje automático. Consulte [Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md).
 
 - Cómo interactúan los usuarios finales con el cliente en puntos de conexión individuales. Vea los siguientes recursos:
   - [Impedir que los usuarios vean o interactúen con la interfaz Antivirus de Microsoft Defender usuario](prevent-end-user-interaction-microsoft-defender-antivirus.md)

@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo mover un SharePoint a una ubicación geográfica diferente dentro de su entorno multige geográfico y comunicar las expectativas de los cambios a los usuarios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ccbe708c0fcfb51c1a28b354d8438e526815cec
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 9e4132b8399cc69067d24af6c3c9ec8e3baf52bd
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62242040"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806869"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Mover un sitio SharePoint a otra ubicación geográfica 
 
@@ -35,7 +35,7 @@ Los siguientes tipos de sitios pueden moverse entre ubicaciones geográficas:
 
 Debe ser un administrador global o un administrador de SharePoint para mover un sitio entre ubicaciones geográficas.
 
-Hay una ventana de solo lectura durante el movimiento geográfico de sitios de SharePoint de aproximadamente 4 a 6 horas, según el contenido del sitio.
+Hay una ventana de solo lectura durante el SharePoint de movimiento geográfico del sitio de aproximadamente 4-6 horas, según el contenido del sitio.
 
 ## <a name="best-practices"></a>Procedimientos recomendados
 
@@ -75,7 +75,7 @@ La hora para ambos parámetros debe especificarse según el Tiempo universal coo
 
 El movimiento geográfico del sitio de SharePoint requiere que se conecte y se realice desde la URL del administrador de SharePoint en la ubicación geográfica donde se encuentra el sitio.
 
-Por ejemplo, si la dirección URL del sitio es , conéctese a la dirección URL SharePoint <https://contosohealthcare.sharepoint.com/sites/Turbines> administrador en <https://contosohealthcare-admin.sharepoint.com> :
+Por ejemplo, si la dirección URL del sitio es <https://contosohealthcare.sharepoint.com/sites/Turbines>, conéctese a la dirección URL SharePoint administrador en <https://contosohealthcare-admin.sharepoint.com>:
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
@@ -109,7 +109,7 @@ De forma predeterminada, se cambiará la dirección URL inicial del sitio a la d
 
 <https://Contoso.sharepoint.com/sites/projectx> a <https://ContosoEUR.sharepoint.com/sites/projectx>
 
-Para los sitios sin Microsoft 365 asociación de grupo, también puede cambiar el nombre del sitio mediante el `-DestinationUrl` parámetro. Por ejemplo:
+Para los sitios sin Microsoft 365 asociación de grupo, también puede cambiar el nombre del sitio mediante el parámetro`-DestinationUrl`. Por ejemplo:
 
 <https://Contoso.sharepoint.com/sites/projectx> a <https://ContosoEUR.sharepoint.com/sites/projecty>
 
@@ -159,7 +159,7 @@ Los estados del movimiento se describen en la tabla siguiente.
 |---|---|
 |Ready to Trigger|No se ha iniciado el movimiento.|
 |Scheduled|El movimiento está en cola, pero todavía no se ha iniciado.|
-|InProgress (n/4)|El movimiento está en curso en uno de los siguientes estados: validación (1/4), copia de seguridad (2/4), restauración (3/4), limpieza (4/4).|
+|InProgress (n/4)|El movimiento está en curso en uno de los siguientes estados: Validación (1/4), Copia de seguridad (2/4), Restauración (3/4), Limpieza (4/4).|
 |Success|El movimiento se completó correctamente.|
 |Failed|No se pudo realizar el movimiento.|
 |
@@ -172,7 +172,7 @@ Los usuarios del sitio deben notar una interrupción mínima al mover su sitio a
 
 ### <a name="site"></a>Sitio
 
-Mientras se realiza el movimiento, el sitio está configurado como de solo lectura. Una vez completado el movimiento, se dirige al usuario al sitio nuevo en la nueva ubicación geográfica al hacer clic en los marcadores u en otros vínculos del sitio.
+Mientras el movimiento está en curso, el sitio se establece en solo lectura. Una vez completado el movimiento, se dirige al usuario al sitio nuevo en la nueva ubicación geográfica al hacer clic en los marcadores u en otros vínculos del sitio.
 
 ### <a name="permissions"></a>Permisos
 
@@ -213,15 +213,15 @@ Se admite la aplicación móvil de SharePoint entre las zonas geográficas y pod
 
 ### <a name="sharepoint-workflows"></a>Flujos de trabajo de SharePoint
 
-Los flujos de trabajo de SharePoint 2013 deben volver a publicarse después de mover el sitio. Los flujos de trabajo de SharePoint 2010 deberían seguir funcionando con normalidad.
+SharePoint flujos de trabajo de 2013 deben volver a publicarse después del movimiento del sitio. Los flujos de trabajo de SharePoint 2010 deberían seguir funcionando con normalidad.
 
 ### <a name="apps"></a>Aplicaciones
 
-Si se mueve un sitio con aplicaciones, debe volver a crear instancias de aplicación en la nueva ubicación geográfica del sitio, ya que es posible que la aplicación y sus conexiones no estén disponibles en la ubicación geográfica de destino.
+Si mueves un sitio con aplicaciones, debes volver a establecer la aplicación en la nueva ubicación geográfica del sitio, ya que es posible que la aplicación y sus conexiones no estén disponibles en la ubicación geográfica de destino.
 
 ### <a name="flow"></a>Flow
 
-En la mayoría de los casos los flujos seguirán funcionando después de mover geográficamente el sitio de SharePoint. Se recomienda probarlos una vez completado el movimiento.
+En la mayoría de los casos, los flujos seguirán funcionando después SharePoint movimiento geográfico del sitio. Se recomienda probarlos una vez completado el movimiento.
 
 ### <a name="power-apps"></a>Power Apps
 

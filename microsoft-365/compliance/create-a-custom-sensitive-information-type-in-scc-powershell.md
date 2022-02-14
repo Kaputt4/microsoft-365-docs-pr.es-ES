@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para directivas en el Centro de cumplimiento.
-ms.openlocfilehash: 4e9a6eb7c4766fa598b0a28f7632c7c3ed530f9e
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: ffca0717bbefdad90854f118131fe45ae3ce4dfd
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272071"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806245"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Crear un tipo de información confidencial personalizada con PowerShell
 
@@ -400,7 +400,7 @@ Microsoft 365 expone procesadores de funciones para los SIT usados habitualmente
 
 Esto le permite definir sus propios RegEx y validarlos. Para usar validadores, define tu propio RegEx y usa la `Validator` propiedad para agregar el procesador de funciones que prefieras. Una vez definido, puede usar este RegEx en un SIT.
 
-En el ejemplo siguiente, se define una expresión regular : Regex_credit_card_AdditionalDelimiters para tarjeta de crédito que, a continuación, se valida mediante la función de suma de comprobación para tarjeta de crédito mediante Func_credit_card como validador.
+En el ejemplo siguiente, se define una expresión regular : Regex_credit_card_AdditionalDelimiters para tarjeta de crédito, que luego se valida mediante la función de suma de comprobación para tarjeta de crédito mediante Func_credit_card como validador.
 
 ```xml
 <Regex id="Regex_credit_card_AdditionalDelimiters" validators="Func_credit_card"> (?:^|[\s,;\:\(\)\[\]"'])([0-9]{4}[ -_][0-9]{4}[ -_][0-9]{4}[ -_][0-9]{4})(?:$|[\s,;\:\(\)\[\]"'])</Regex>
@@ -543,7 +543,7 @@ Al cargar un archivo XML de paquete de reglas, el sistema valida el código XML 
 
 - Asegúrese de que cada elemento de entidad contiene un atributo recommendedConfidence.
 
-- Al usar el cmdlet de PowerShell hay un tamaño máximo de retorno de los datos deserializados de aproximadamente 1 megabyte.   Esto afectará al tamaño del archivo XML del paquete de reglas. Mantenga el archivo cargado limitado a un máximo de 770 megabytes como límite sugerido para obtener resultados coherentes sin errores al procesarlo.
+- Al usar el cmdlet de PowerShell, hay un tamaño máximo devuelto de los datos deserializados de aproximadamente 1 megabyte.   Esto afectará al tamaño del archivo XML del paquete de reglas. Mantenga el archivo cargado limitado a un máximo de 770 megabytes como límite sugerido para obtener resultados coherentes sin errores al procesarlo.
 
 - La estructura XML no requiere caracteres de formato, como espacios, pestañas o entradas de retorno de carro o de conexión de línea.  Anote esto al optimizar espacio en las cargas. Las herramientas como el código del elemento visual de Microsoft ofrecen características de línea de combinación para compactar el archivo XML.
 

@@ -17,18 +17,18 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: En este artículo se explican los aspectos específicos que debe tener en cuenta al diseñar páginas para obtener el mejor rendimiento en SharePoint Online.
-ms.openlocfilehash: 0a9dc1b5a6d94fe3e2afec11aeeded8f27069bac
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: deabb059e2121743b35d5519e4b8684a08dd28b4
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200142"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807241"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Introducción al ajuste del rendimiento para SharePoint Online
 
 En este artículo se explican los aspectos específicos que debe tener en cuenta al diseñar páginas para obtener el mejor rendimiento en SharePoint Online.
      
-## <a name="sharepoint-online-metrics"></a>SharePoint Métricas en línea
+## <a name="sharepoint-online-metrics"></a>SharePoint métricas en línea
 
 Las siguientes métricas generales para SharePoint Online proporcionan datos reales sobre el rendimiento:
   
@@ -46,7 +46,7 @@ Los datos nos dicen:
   
 - La mayoría de las páginas tienen un buen rendimiento en SharePoint Online.
     
-- Las páginas no personalizadas se cargan muy rápidamente.
+- Las páginas no personalizadas se cargan rápidamente.
     
 - OneDrive para la Empresa, los sitios de grupo y las páginas del sistema, como _layouts, etc., se cargan rápidamente.
     
@@ -56,7 +56,7 @@ Una prueba comparativa sencilla que puede usar sería medir el rendimiento compa
   
 ## <a name="use-a-standard-user-account-when-checking-performance"></a>Usar una cuenta de usuario estándar al comprobar el rendimiento
 
-Un administrador de la colección de sitios, el propietario del sitio, el editor o el colaborador pertenecen a grupos de seguridad adicionales, tienen permisos adicionales y, por lo tanto, tienen elementos adicionales que SharePoint carga en una página.
+Un administrador de la colección de sitios, el propietario del sitio, el editor o el colaborador pertenecen a otros grupos de seguridad, tienen más permisos y, por lo tanto, tienen elementos adicionales que SharePoint carga en una página.
   
 Esto es aplicable SharePoint local y SharePoint Online, pero en un escenario local las diferencias no se notarán tan fácilmente como en SharePoint Online.
   
@@ -76,7 +76,7 @@ Dentro de estas tres conexiones normalmente hay cinco motivos que causan el 95 %
   
 - Problemas de navegación
     
-- Lanzamiento de contenido
+- Succión de contenido
     
 - Archivos grandes
     
@@ -88,9 +88,9 @@ Dentro de estas tres conexiones normalmente hay cinco motivos que causan el 95 %
 
 Muchos de los problemas que afectan al rendimiento con SharePoint local también se aplican a SharePoint Online.
   
-Como era de esperar, tiene mucho más control sobre el rendimiento de los servidores con los servidores SharePoint. Con SharePoint Online, las cosas son un poco diferentes. Cuanto más trabajo realice un servidor, más tiempo se tarda en representar una página. Con SharePoint, el principal responsable en este sentido son páginas complejas con varios elementos web.
+Como era de esperar, tiene mucho más control sobre el rendimiento de los servidores con los servidores SharePoint. Con SharePoint Online, las cosas son un poco diferentes. Cuanto más trabajo realice un servidor, más tiempo se tarda en representar una página. Con SharePoint, los principales responsables en este aspecto son páginas complejas con varios elementos web.
   
-SharePoint Servidor local
+SharePoint servidor local
   
 ![Captura de pantalla del servidor local.](../media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
   
@@ -106,7 +106,7 @@ Algunos ejemplos de estas interacciones de servidor a servidor son:
     
 - Servidores de aplicaciones web a
     
-La otra cosa que puede ralentizar las interacciones del servidor son las pérdidas de caché. A diferencia de SharePoint local, existe una probabilidad muy escasa de que se haga clic en el mismo servidor para una página que ha visitado anteriormente; esto hace que el almacenamiento en caché de objetos sea obsoleto.
+La otra cosa que puede ralentizar las interacciones del servidor son las pérdidas de caché. A diferencia de SharePoint local, existe una pequeña probabilidad de que se haga clic en el mismo servidor para una página que ha visitado anteriormente; esto hace obsoleto el almacenamiento en caché de objetos.
   
 ### <a name="network-connection"></a>Conexión de red 
 
@@ -128,7 +128,7 @@ Independientemente de la versión de SharePoint (y la red) que esté usando, los
     
 - Distancia física grande al servidor
     
-Una característica que puede aprovechar en SharePoint Online es microsoft CDN (Content Delivery Network). Un CDN es básicamente una colección distribuida de servidores implementados en varios centros de datos. Con un CDN, el contenido de las páginas se puede hospedar en un servidor cercano al cliente incluso si el cliente está lejos del servidor SharePoint origen. Microsoft lo va a usar más en el futuro para almacenar instancias locales de páginas que no se pueden personalizar, por ejemplo, la página principal de administración SharePoint online. Para obtener más información acerca de las CDN, vea [Redes de entrega de contenido](content-delivery-networks.md).
+Una característica que puede usar en SharePoint Online es microsoft CDN (Content Delivery Network). Un CDN es básicamente una colección distribuida de servidores implementados en varios centros de datos. Con un CDN, el contenido de las páginas se puede hospedar en un servidor cercano al cliente incluso si el cliente está lejos del servidor SharePoint origen. Microsoft lo va a usar más en el futuro para almacenar instancias locales de páginas que no se pueden personalizar, por ejemplo, la página principal SharePoint administrador en línea. Para obtener más información acerca de las CDN, vea [Redes de entrega de contenido](content-delivery-networks.md).
   
 Algo que debe tener en cuenta pero que puede que no pueda hacer mucho es la velocidad de conexión de su ISP. Una herramienta de prueba de velocidad sencilla te dirá la velocidad de conexión.
   

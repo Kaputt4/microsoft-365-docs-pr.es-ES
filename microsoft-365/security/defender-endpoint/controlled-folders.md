@@ -17,18 +17,19 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: m365initiative-m365-defender
 ms.date: ''
-ms.openlocfilehash: ae9d1946f0aaa189b716c7a6b63c2bac999f7872
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 8873a8f374280834970d14f72c2e6677292f7702
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327406"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807445"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteger carpetas importantes con acceso controlado a carpetas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -54,7 +55,7 @@ El acceso controlado a carpetas funciona con una lista de aplicaciones de confia
 
 Las aplicaciones se agregan a la lista en función de su prevalencia y reputación. Las aplicaciones que son muy frecuentes en toda la organización y que nunca han mostrado ningún comportamiento que se considere malintencionado se consideran confiables. Esas aplicaciones se agregan a la lista automáticamente.
 
-Las aplicaciones también se pueden agregar manualmente a la lista de confianza mediante Configuration Manager o Intune. Se pueden realizar acciones adicionales desde Microsoft 365 Defender portal. 
+Las aplicaciones también se pueden agregar manualmente a la lista de confianza mediante Configuration Manager o Intune. Se pueden realizar acciones adicionales desde Microsoft 365 Defender portal.
 
 ## <a name="why-controlled-folder-access-is-important"></a>Por qué es importante el acceso controlado a carpetas
 
@@ -63,6 +64,9 @@ El acceso controlado a carpetas es especialmente útil para ayudar a proteger lo
 Las [carpetas protegidas](#review-controlled-folder-access-events-in-windows-event-viewer) incluyen carpetas comunes del sistema (incluidos los sectores de arranque) y puede [agregar más carpetas](customize-controlled-folders.md#protect-additional-folders). También puedes permitir [que las aplicaciones](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) les den acceso a las carpetas protegidas.
 
 Puede usar el [modo de auditoría para](audit-windows-defender.md) evaluar cómo el acceso controlado a carpetas afectaría a su organización si estuviera habilitado. También puede visitar el sitio web Windows Defender prueba en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para confirmar que la característica funciona y ver cómo funciona.
+
+> [!NOTE]
+> El sitio de demostración defender para el punto de conexión en demo.wd.microsoft.com está en desuso y se quitará en el futuro.
 
 El acceso controlado a carpetas se admite en las siguientes versiones de Windows:
 
@@ -75,6 +79,8 @@ El acceso controlado a carpetas se admite en las siguientes versiones de Windows
 
 Windows carpetas del sistema están protegidas de forma predeterminada, junto con otras carpetas:
 
+Las carpetas protegidas incluyen carpetas comunes del sistema (incluidos los sectores de arranque) y puede agregar carpetas adicionales. También puedes permitir que las aplicaciones les den acceso a las carpetas protegidas.  Las Windows de sistemas que están protegidas de forma predeterminada son:
+
 - `c:\Users\<username>\Documents`
 - `c:\Users\Public\Documents`
 - `c:\Users\<username>\Pictures`
@@ -85,16 +91,20 @@ Windows carpetas del sistema están protegidas de forma predeterminada, junto co
 - `c:\Users\Public\Music`
 - `c:\Users\<username>\Favorites`
 
+Las carpetas predeterminadas aparecen en el perfil del usuario, en **Este equipo**.
+   > [!div class="mx-imgBorder"]
+   > ![Carpetas Windows de sistemas predeterminadas protegidas](images/defaultfolders.png)
+
 > [!NOTE]
 > Puede configurar carpetas adicionales como protegidas, pero no puede quitar las Windows del sistema que están protegidas de forma predeterminada.
 
 ## <a name="requirements-for-controlled-folder-access"></a>Requisitos para el acceso controlado a carpetas
 
-El acceso controlado a carpetas [requiere Antivirus de Microsoft Defender protección en tiempo real](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
+El acceso controlado a carpetas [requiere Antivirus de Microsoft Defender protección en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Revisar eventos de acceso controlado a carpetas en el portal Microsoft 365 Defender web
 
-Defender for Endpoint proporciona informes detallados sobre eventos y bloques como parte de sus escenarios de investigación de [alertas](investigate-alerts.md) en el portal Microsoft 365 Defender alerta. (Vea [Microsoft Defender para Endpoint en Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)).)
+Defender for Endpoint proporciona informes detallados sobre eventos y bloques como parte de sus escenarios de investigación de [alertas](investigate-alerts.md) en el portal de Microsoft 365 Defender; consulte [Microsoft Defender for Endpoint en Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
 
 Puede consultar datos de punto de conexión de Microsoft Defender mediante [búsqueda avanzada](advanced-hunting-overview.md). Si usa el modo [de auditoría](audit-windows-defender.md), puede usar la búsqueda [](advanced-hunting-overview.md) avanzada para ver cómo la configuración de acceso controlado a carpetas afectaría al entorno si estuvieran habilitadas.
 

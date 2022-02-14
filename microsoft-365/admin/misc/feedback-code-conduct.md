@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 description: Obtenga información sobre el código de conducta de Microsoft para los comentarios que proporcione.
-ms.openlocfilehash: b7735a7c6560c1cce79e88f4f5612f9ef0c42ced
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 99244bcbeff09c8a6704b94814031047bcfffe9d
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60180430"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805969"
 ---
 # <a name="microsoft-feedback-code-of-conduct"></a>Código de conducta de comentarios de Microsoft
 
@@ -34,7 +34,7 @@ Además de respetar este Código de conducta, también eres responsable de cumpl
 - Cita el origen de cualquier cosa que publiques o cargues si no es tu propio contenido original. Sé sincero acerca de tus orígenes.
 - Manténlo limpio. No hay comentarios o comentarios groserías, obscenidades, ofensivos o intolerantes.
 - Si proporciona comentarios en experiencias de la comunidad, busque si los comentarios que desea dar ya se han publicado.  A continuación, puede comentar los comentarios o votar sobre él.
-- Informa de cualquier tipo de abuso que encuentres en la comunidad. encontrará vínculos "Informar de abuso" en cada publicación y en cada perfil.
+- Informa de cualquier tipo de abuso que encuentres en la comunidad. Encontrarás vínculos "Informar de abuso" en cada publicación y en cada perfil.
 
 ## <a name="dont"></a>Incorrecto
 
@@ -57,12 +57,12 @@ Además de respetar este Código de conducta, también eres responsable de cumpl
 - Pirating Microsoft software or products, or offering pirated software or products for sale, including posting product keys.
 - Infringir específicamente las licencias o términos de Microsoft, como publicar contenido o vínculos que instalarán un kernel de terceros, o eludir las medidas de seguridad integradas en el software.
 - Promover o facilitar la compra y venta de munición o armas de fuego.
-- Publicar "correo no deseado", "esquemas piramidales", "marketing de filiales" o anuncios comerciales no solicitados de cualquier tipo, incluida la publicidad de esquemas de dinero, tarjetas de descuento, asesoramiento de crédito, encuestas en línea o concursos en línea.
+- Publicar "spam", "esquemas piramidales", "marketing de filiales" o anuncios comerciales no solicitados de cualquier tipo, incluida la publicidad de esquemas de dinero, tarjetas de descuento, asesoramiento de crédito, encuestas en línea o concursos en línea.
 - Intentar manipular los foros u otras características de la comunidad, incluidos los sistemas de clasificación y reputación, al infringir cualquiera de las disposiciones de este Código de conducta, la connivencia con otros usuarios al votar o el uso de varios perfiles.
 - Ofrecimiento de realizar transferencias de dinero internacionales por importes que superen el precio de pedido de un elemento, con la intención de solicitar un reembolso de cualquier parte del pago.
 - Usar cualquier forma de dispositivo automatizado o programa de equipo que permita el envío de publicaciones sin el consentimiento expreso por escrito de Microsoft Corporation.
 
-## <a name="community-user-cautions"></a>Community Advertencias del usuario
+## <a name="community-user-cautions"></a>Community advertencias del usuario
 
 - Tenga cuidado al aceptar la ayuda directa de otro usuario. Si ese usuario sugiere que puede usar asistencia remota para ayudarle, tenga en cuenta que ese usuario tendrá acceso a su equipo y que su equipo podría ser pirateado.
 - Si se ofrece voluntariamente para ayudar a otro usuario a través del acceso remoto, tenga cuidado de no dañar su equipo de ninguna manera o de obtener acceso a la información que no está abiertamente disponible para usted. El uso indebido del acceso remoto no se tolerará y dará como resultado que se le prohíba la comunidad.

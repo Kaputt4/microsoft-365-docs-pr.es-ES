@@ -29,12 +29,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Comprenda lo que necesita saber antes de pasar por el proceso de registro para Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 0c372f52f1da5fef680a9eaeb499fcede7278489
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: bb74ab42bb16cc2d8b3a97850ae9be17600bfc9a
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643717"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805909"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Cómo registrarse: Ayuda para administradores
 
@@ -69,17 +69,18 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>¿Listo para suscribirse a una versión de prueba gratuita o comprar una suscripción?
 
 Ve [a Comparar todos los productos](https://products.office.com/compare-all-microsoft-office-products?tab=2) para elegir el plan que quieres comprar y para iniciar el asistente de registro. 
   
-Si empieza con una versión de prueba gratuita, puede [comprarla más adelante.](../../commerce/try-or-buy-microsoft-365.md) Se conservarán todos los usuarios y datos de la prueba.
+Si empiezas con una prueba gratuita, puedes [comprarla más adelante](../../commerce/try-or-buy-microsoft-365.md). Se conservarán todos los usuarios y datos de la prueba.
   
 No es necesario cancelar la prueba. Si no compra la suscripción de prueba, expira automáticamente al final del período de prueba y toda la información se elimina permanentemente.
 
-## <a name="watch-set-up-microsoft-365-business-premium"></a>Watch: Configure up Microsoft 365 Empresa Premium
+## <a name="watch-sign-up-for-microsoft-365-business-premium"></a>Consulte: Suscribirse a Microsoft 365 Empresa Premium
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
 
 ::: moniker-end
 
@@ -106,6 +107,10 @@ No es necesario cancelar la prueba. Si no compra la suscripción de prueba, expi
 
     > [!IMPORTANT]
     >  Al registrarse, asegúrese de elegir la mejor opción de pago para su organización. Para cambiar las opciones de pago, debe llamar al soporte técnico de facturación.
+
+## <a name="watch-set-up-microsoft-365-business-premium"></a>Watch: Configure up Microsoft 365 Empresa Premium
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 ## <a name="related-content"></a>Contenido relacionado
 

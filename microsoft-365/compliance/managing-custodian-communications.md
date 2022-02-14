@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Advanced eDiscovery facilita la administración del flujo de trabajo de notificación de retención legal en torno a notificar a los custodios en investigaciones legales.
-ms.openlocfilehash: 69e13523423c45a3cdcf5b81bbf2ec443a4a2b6e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: abe501624e4bc5d0b62ce49f38aa028cd112a7f8
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871482"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806653"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>Trabajar con comunicaciones en Advanced eDiscovery
 
@@ -29,7 +29,7 @@ Advanced eDiscovery permite a los departamentos legales simplificar sus procesos
 
 ## <a name="what-is-a-legal-hold-notification"></a>¿Qué es una notificación de retención legal?
 
-Un aviso de retención legal (también conocido como retención por *juicio)* es una notificación enviada desde el departamento jurídico de una organización a empleados, personal contingente o custodios de datos que pueden ser relevantes para una investigación legal. Estas notificaciones instruyen a los custodios a conservar la información almacenada electrónicamente y cualquier contenido que pueda ser relevante para un asunto legal activo o inminente. Los equipos legales deben saber que cada custodio ha recibido, leído, comprendido y aceptado cumplir con las instrucciones dadas.
+Un aviso de retención legal (también conocido como retención por *juicio) es* una notificación enviada desde el departamento jurídico de una organización a empleados, personal contingente o custodios de datos que pueden ser relevantes para una investigación legal. Estas notificaciones instruyen a los custodios a conservar la información almacenada electrónicamente y cualquier contenido que pueda ser relevante para un asunto legal activo o inminente. Los equipos legales deben saber que cada custodio ha recibido, leído, comprendido y aceptado cumplir con las instrucciones dadas.
 
 ## <a name="the-legal-hold-notification-process"></a>El proceso de notificación de retención legal
 
@@ -39,7 +39,7 @@ Con Advanced eDiscovery, los equipos legales pueden crear y personalizar su fluj
 
 1. **Aviso de emisión:** Una notificación del departamento jurídico emite (o inicia) un aviso de retención legal a los custodios que pueden tener información relevante sobre el caso. Este aviso indica a los administradores que conserven toda la información que pueda ser necesaria para la detección.
 
-2. **Aviso de ree emisión:** Durante un caso, es posible que los custodios deban conservar contenido adicional (o menos contenido) del solicitado anteriormente. Para este escenario, puede actualizar el aviso de suspensión existente y actualizarlo a los tutores.
+2. **Aviso de ree emisión:** Durante un caso, es posible que los custodios deban conservar más contenido (o menos contenido) del solicitado anteriormente. Para este escenario, puede actualizar el aviso de suspensión existente y actualizarlo a los tutores.
 
 3. **Aviso de lanzamiento:** Una vez resuelto un asunto y el custodio ya no está sujeto a un requisito de conservación, el custodio puede ser liberado del caso. Además, puede notificar al custodio que ya no es necesario conservar el contenido y proporcionar instrucciones sobre cómo reanudar su actividad laboral normal y sus datos.
 

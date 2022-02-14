@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Las etiquetas inteligentes le permiten aplicar las capacidades de aprendizaje automático al revisar el contenido en un Advanced eDiscovery caso. Use grupos de etiquetas inteligentes para mostrar los resultados de los modelos de detección de aprendizaje automático, como el modelo de privilegios abogado-cliente.
-ms.openlocfilehash: c47db0c38c13820013615ff986517a86236f186b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 80c946da943e4880dbd82ea6b34d238b80030b4c
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195550"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807193"
 ---
 # <a name="set-up-smart-tags-in-advanced-ediscovery"></a>Configurar etiquetas inteligentes en Advanced eDiscovery
 
@@ -30,21 +30,21 @@ Las funcionalidades de aprendizaje automático (ML) en Advanced eDiscovery puede
 
 ## <a name="how-to-set-up-a-smart-tag-group"></a>Cómo configurar un grupo de etiquetas inteligentes
 
-1. En un conjunto de revisión, haga **clic en Administrar conjunto de revisión** y, a continuación, haga clic en Administrar **etiquetas**.
+1. En un conjunto de revisión, haga clic **en Administrar conjunto de revisión** y, a continuación, haga clic **en Administrar etiquetas**.
 
-2. Haga **clic en Agregar grupo de** etiquetas y, a continuación, seleccione Agregar grupo de **etiquetas inteligentes**.
+2. Haga **clic en Agregar grupo de etiquetas** y, a **continuación, seleccione Agregar grupo de etiquetas inteligentes**.
 
 3. Seleccione el ML que desea asociar al grupo de etiquetas.
     
    Esto crea un grupo de etiquetas y *N* etiquetas secundarias, donde *N* es el número de salidas posibles del modelo. Por ejemplo, el [modelo de detección de privilegios abogado-cliente](attorney-privilege-detection.md) tiene dos salidas posibles: 
 
-   - **Positivo:** se usa para etiquetar documentos que contienen contenido con privilegios de abogado-cliente.
+   - **Positivo** : se usa para etiquetar documentos que contienen contenido con privilegios de abogado-cliente.
    
-   - **Negativo:** se usa para etiquetar documentos que no contienen contenido con privilegios de abogado-cliente.
+   - **Negativo** : se usa para etiquetar documentos que no contienen contenido con privilegios de abogado-cliente.
     
-    Si selecciona este modelo, se crea un grupo de etiquetas con dos etiquetas secundarias (una etiqueta secundaria denominada **Positivo** y la otra denominada **Negativo)** para el conjunto de opiniones. En este ejemplo, cada etiqueta secundaria corresponde a uno de los posibles resultados del modelo de detección de privilegios abogado-cliente.
+    Si selecciona este modelo, se crea un grupo de etiquetas con dos etiquetas secundarias (una etiqueta secundaria denominada **Positivo** y la otra denominada **Negativo**) para el conjunto de opiniones. En este ejemplo, cada etiqueta secundaria corresponde a uno de los posibles resultados del modelo de detección de privilegios abogado-cliente.
 
-4. Opcionalmente, puede cambiar el nombre del grupo de etiquetas y las etiquetas secundarias. Por ejemplo, puede cambiar el nombre de la **etiqueta Positive** a **Privileged** y **negative** tag a **Not privileged**.
+4. Opcionalmente, puede cambiar el nombre del grupo de etiquetas y las etiquetas secundarias. Por ejemplo, puede cambiar el nombre de la **etiqueta Positivo** a **Privileged** y **la etiqueta Negative** a **Not privileged**.
 
 ## <a name="how-to-use-smart-tags"></a>Cómo usar etiquetas inteligentes
 

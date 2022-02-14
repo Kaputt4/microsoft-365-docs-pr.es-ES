@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: Programe los cierres de oficina y el tiempo de descanso de los empleados del calendario de Bookings para que los empleados se marquen como no disponibles para las reservas durante las horas especificadas.
-ms.openlocfilehash: 30f43af083da6a41ab8458e377bdc9fc99690678
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ea0b9b9870d5331d58b8f0e9f7671853d0e3433b
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164073"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807049"
 ---
 # <a name="schedule-business-closures-time-off-and-vacation-time"></a>Programar cierres de negocios, tiempo libre y tiempo de vacaciones
 
@@ -28,7 +28,7 @@ Vea este vídeo o siga los pasos que se indican a continuación para programar c
 
 1. En Microsoft 365, selecciona el iniciador de aplicaciones y, a continuación, selecciona Bookings.
 
-1. En el panel de navegación, seleccione **Tiempo de** espera \> **del calendario**.
+1. En el panel de navegación, seleccione **Tiempo de** \> **espera del calendario**.
 
    ![Imagen de la vista de calendario de Bookings y botón de tiempo de espera.](../media/bookings-calendar-timeoff.png)
 
@@ -38,7 +38,7 @@ Vea este vídeo o siga los pasos que se indican a continuación para programar c
 
 1. Seleccione todos los miembros del personal.
 
-1. Seleccione **Guardar**.
+1. Haga clic en **Guardar**.
 
 Cuando un cliente intenta programar el servicio en un día que la oficina está cerrada, verá un mensaje en la página de reserva.
 
@@ -46,15 +46,15 @@ Cuando un cliente intenta programar el servicio en un día que la oficina está 
 
 ## <a name="schedule-employee-time-off"></a>Programar el tiempo de descanso de los empleados
 
-1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **Bookings**.
+1. En Microsoft 365, selecciona el iniciador de aplicaciones y, a continuación, selecciona **Bookings**.
 
    ![Imagen del iniciador de aplicaciones.](../media/bookings-applauncher.png)
 
-1. En el panel de navegación, seleccione **Tiempo de** espera \> **del calendario**.
+1. En el panel de navegación, seleccione **Tiempo de** \> **espera del calendario**.
 
    ![Imagen de la vista de calendario de Bookings y botón de tiempo de espera.](../media/bookings-calendar-timeoff.png)
 
-1. Rellene los detalles, incluidos el título, la fecha y las horas de inicio y finalización, la ubicación y las notas adicionales. Si el empleado se va a ir durante un día completo o durante varios días, seleccione **Evento Todo el día**.
+1. Rellene los detalles, incluidos el título, la fecha y las horas de inicio y finalización, la ubicación y más notas. Si el empleado se va a ir durante un día completo o durante varios días, seleccione **Evento Todo el día**.
 
 1. Seleccione el miembro del personal o los miembros que están tomando el tiempo libre.
 

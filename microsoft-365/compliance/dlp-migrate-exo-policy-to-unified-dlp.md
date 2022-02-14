@@ -18,21 +18,21 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo planear y migrar las directivas de prevención Exchange de pérdida de datos en línea a Microsoft 365 DLP.
-ms.openlocfilehash: 744ba3edbee1c6b84df9b8b5316c7df7e734cd6d
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 07d0eb19155a7f91b30feb8d7938ea574b0e75f9
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374069"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806161"
 ---
 # <a name="migrate-exchange-online-data-loss-prevention-policies-to-compliance-center"></a>Migrar directivas de prevención de pérdida de datos de Exchange Online al Centro de cumplimiento
 
-[Exchange Online directivas de prevención de pérdida de datos (DLP)](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) están en desuso. [La funcionalidad DLP mucho](dlp-learn-about-dlp.md)más enriquec Exchange Online DLP se ofrece en el centro de [Microsoft 365 cumplimiento.](https://compliance.microsoft.com/datalossprevention?viewid=policies) Puede usar el Asistente para la migración de directivas DLP para ayudarle a llevar las directivas de DLP de Exchange Online al Centro de cumplimiento donde las administrará.
+[Exchange Online directivas de prevención de pérdida de datos (DLP) están en desuso](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention). [La funcionalidad DLP mucho más enriquec](dlp-learn-about-dlp.md) Exchange Online DLP se ofrece en el [Centro de Microsoft 365 cumplimiento](https://compliance.microsoft.com/datalossprevention?viewid=policies). Puede usar el Asistente para la migración de directivas DLP para ayudarle a llevar las directivas de DLP de Exchange Online al Centro de cumplimiento donde las administrará.
 
-El asistente para migración funciona leyendo la configuración de las directivas DLP en Exchange y, a continuación, creando directivas duplicadas en el Centro de cumplimiento. De forma predeterminada, el asistente crea  las nuevas versiones de las directivas en modo de prueba, para que pueda ver el impacto que tendrían en el entorno sin aplicar ninguna de las acciones. Una vez que esté listo para realizar la transición completa a las versiones del Centro de cumplimiento, **_debe_**:
+El asistente para migración funciona leyendo la configuración de las directivas DLP en Exchange y, a continuación, creando directivas duplicadas en el Centro de cumplimiento. De forma predeterminada, el asistente crea las nuevas versiones de las  directivas en modo de prueba, para que pueda ver el impacto que tendrían en el entorno sin aplicar ninguna de las acciones. Una vez que esté listo para realizar la transición completa a las versiones del Centro de cumplimiento, **_debe_**:
 
 1. Desactive o elimine la directiva de origen en el Centro Exchange administración (EAC).
-1. Edite la versión del Centro de cumplimiento de la directiva y cambie su estado de **Test** a **Enforce**. 
+1. Edite la versión del Centro de cumplimiento de la directiva y cambie su estado de **Probar** a **Aplicar**. 
 
 > [!WARNING]
 > Si no elimina o desactiva la directiva de origen en el EAC antes de establecer la versión del Centro de cumplimiento en **Aplicar** ambos conjuntos de directivas, intentará aplicar acciones y recibirá eventos duplicados. **_Esta es una configuración no compatible._**
@@ -56,7 +56,7 @@ Hay cuatro fases para migrar directivas DLP desde Exchange a la consola de admin
 
 ### <a name="licensing-and-versions"></a>Licencias y versiones
 
-Antes de empezar con la migración de directivas DLP, debe confirmar su [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) y los complementos. 
+Antes de empezar con la migración de directivas DLP, debe confirmar la [Microsoft 365 suscripción y](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) los complementos. 
 
 Para tener acceso y usar el Asistente para migración de directivas, debe tener una de estas suscripciones o complementos
 
@@ -68,7 +68,7 @@ Para tener acceso y usar el Asistente para migración de directivas, debe tener 
 - Gobierno y protección de información de Microsoft 365 E5
 - Gobierno y protección de información de Microsoft 365 A5
 
-Para obtener una lista detallada de los requisitos de licencias dlp, consulte [Microsoft 365 Licensing guidance for security & compliance, data loss prevention](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
+Para obtener una lista detallada de los requisitos de licencias DLP, vea [Microsoft 365 Licensing guidance for security & compliance, data loss prevention](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
 
 
 ### <a name="permissions"></a>Permisos
@@ -84,23 +84,23 @@ La cuenta que use para ejecutar el asistente para migración debe tener acceso a
 1. Evalúe las directivas Exchange DLP y el Centro de cumplimiento haciendo estas preguntas:
 
 
-|Pregunta  |Action  | Procedimiento de migración|
+|Pregunta  |Acción  | Procedimiento de migración|
 |---------|---------|---------|
 |¿Sigue siendo necesaria la directiva?    |Si no es así, elimínelo o desactíelo |no migrar|
 |¿Se superpone con otras directivas DLP Exchange centro de cumplimiento?     |Si es así, ¿puede consolidar las directivas superpuestas?         |- Si se superpone con otra directiva de Exchange, cree manualmente la directiva DLP consolidada en el Centro de administración de Exchange y, a continuación, use el asistente para migración. </br> - Si se superpone con una directiva existente del Centro de cumplimiento, puede modificar la directiva existente del Centro de cumplimiento para que coincida, no migrar la versión Exchange cumplimiento|
-|¿La Exchange DLP está estrechamente definida y tiene condiciones, acciones, inclusiones y exclusiones bien definidas?     |Si es así, este es un buen candidato para migrar con el asistente, tome nota de la directiva para que recuerde volver a eliminarlo más adelante.         | migrar con el asistente|
+|¿La Exchange DLP está estrechamente definida y tiene condiciones, acciones, inclusiones y exclusiones bien definidas?     |Si es así, es un buen candidato para migrar con el asistente, tome nota de la directiva para que recuerde volver a eliminarlo más adelante.         | migrar con el asistente|
 
 ## <a name="migration"></a>Migración
 
 Después de evaluar todas las directivas dlp Exchange y del Centro de cumplimiento por necesidad y compatibilidad, puede usar el Asistente para la migración.
 
-1. Abra la [consola DLP Microsoft 365 centro de cumplimiento.](https://compliance.microsoft.com/datalossprevention?viewid=policies)
+1. Abra la [consola DLP Microsoft 365 centro de cumplimiento](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 2. Si hay directivas Exchange DLP que se pueden migrar, aparecerá un banner en la parte superior de la página que se lo informe.
 3. Elija **Migrar directivas en** el banner para abrir el asistente para migración. Se enumeran todas las Exchange DLP. No se pueden seleccionar directivas migradas anteriormente.
-4. Seleccione las directivas que desea migrar. Puede migrarlos individualmente o en grupos mediante un enfoque por fases o todos a la vez . Seleccione **Siguiente**.
+4. Seleccione las directivas que desea migrar. Puede migrarlos individualmente o en grupos mediante un enfoque por fases o todos a la vez. Seleccione **Siguiente**.
 5. Revise el panel desplegable para ver si hay advertencias o mensajes. Resuelva los problemas antes de continuar.
 6. Seleccione el modo en el que desea que se cree la nueva directiva del Centro de cumplimiento, **Active**, **Test** o **Disabled**.  El valor predeterminado es **Test**. Seleccione **Siguiente**.
-7. Si lo desea, puede crear directivas adicionales basadas en las Exchange DLP para otras ubicaciones dlp unificadas. Esto dará como resultado una nueva directiva DLP unificada para la directiva de Exchange migrada y una nueva directiva DLP unificada para las ubicaciones adicionales que elija aquí.
+7. Si lo desea, puede crear más directivas basadas en las Exchange DLP para otras ubicaciones dlp unificadas. Esto dará como resultado una nueva directiva DLP unificada para la directiva de Exchange migrada y una nueva directiva DLP unificada para cualquier otra ubicación que elija aquí.
 
 > [!IMPORTANT]
 > Las Exchange y acciones de directiva DLP que no sean compatibles con otras ubicaciones DLP, como Dispositivos, SharePoint, OneDrive, Local, MCAS o mensajes de chat y canal de Teams se eliminarán de la directiva adicional. Además, hay trabajo previo que debe realizarse para las otras ubicaciones. Vea:
@@ -120,32 +120,33 @@ Las directivas migradas aparecerán ahora en la lista de directivas DLP en la co
 ## <a name="common-errors-and-mitigation"></a>Errores y mitigación comunes
 |Mensaje de error  |Reason  | Pasos recomendados/mitigación|
 |---------|---------|---------|
-|Ya existe una directiva de cumplimiento con `<Name of the policy>` nombre en escenarios `Dlp` .    |Es probable que esta migración de directiva se haya realizado antes y, a continuación, vuelva a tentarse en la misma sesión |Actualice la sesión para actualizar la lista de directivas disponibles para la migración. Todas las directivas migradas anteriormente deben estar en el `Already migrated` estado.|
-|Ya existe una directiva de cumplimiento con `<Name of the policy>` nombre en escenarios `Hold` .     |Existe una directiva de retención con el mismo nombre en el mismo espacio empresarial.       |- Cambie el nombre de la directiva DLP en EAC a otro nombre. </br> - Reintentar la migración de la directiva afectada. |
-|`DLP-group@contoso.com` no se puede usar como valor para la condición Shared By porque es un grupo de distribución o un grupo de seguridad habilitado para correo. Use Shared by Member of predicate para detectar actividades de miembros de determinados grupos.     |Las reglas de transporte permiten que los grupos se utilicen en la condición, pero DLP unificado `sender is` no lo permite.         | Actualice la regla de transporte para quitar todas las direcciones de correo electrónico de grupo de la condición y agregar el grupo `sender is` a la condición si es `sender is a member of` necesario. Reintentar la migración de la directiva afectada|
-|No se pudo encontrar el destinatario `DLP-group@contoso.com` . Si se acaba de crear, vuelva a intentar la operación después de algún momento. Si se elimina o expira, restablezca con valores válidos e inténtelo de nuevo.     |Es probable que la dirección de grupo usada en `sender is a member of` o `recipient is a member of` condición haya expirado o no sea válida.         | - Quitar o reemplazar todas las direcciones de correo electrónico de grupo no válidas en la regla de transporte en Exchange centro de administración. </br> - Reintentar la migración de la directiva afectada.|
-|El valor especificado en predicado debe ser el grupo de seguridad `FromMemberOf` habilitado para correo.     |Las reglas de transporte permiten que los usuarios individuales se utilicen en la condición, pero DLP unificado `sender is a member of` no lo permite.         | - Actualizar la regla de transporte para quitar todas las direcciones de correo electrónico de usuario individuales de la condición y agregar los `sender is a member of` usuarios a la condición si es `sender is` necesario. </br> - Reintentar la migración de la directiva afectada.|
-|El valor especificado en predicado debe ser el grupo de seguridad `SentToMemberOf` habilitado para correo.    |Las reglas de transporte permiten que los usuarios individuales se utilicen con la condición, pero DLP unificada `recipient is a member of` no lo permite.         | - Actualizar la regla de transporte para quitar todas las direcciones de correo electrónico de usuario individuales de la condición y agregar los `recipient is a member of` usuarios a la condición si es `recipient is` necesario. </br> - Reintentar la migración de la directiva afectada.|
+|Ya existe una directiva de cumplimiento con `<Name of the policy>` nombre en escenarios `Dlp`.    |Es probable que esta migración de directiva se haya realizado antes y, a continuación, vuelva a tentarse en la misma sesión |Actualice la sesión para actualizar la lista de directivas disponibles para la migración. Todas las directivas migradas anteriormente deben estar en el `Already migrated` estado.|
+|Ya existe una directiva de cumplimiento con `<Name of the policy>` nombre en escenarios `Hold`.     |Existe una directiva de retención con el mismo nombre en el mismo espacio empresarial.       |- Cambie el nombre de la directiva DLP en EAC a otro nombre. </br> - Reintentar la migración de la directiva afectada. |
+|`DLP-group@contoso.com` no se puede usar como valor para la condición Shared By porque es un grupo de distribución o un grupo de seguridad habilitado para correo. Use Shared by Member of predicate para detectar actividades de miembros de determinados grupos.     |Las reglas de transporte permiten que los grupos se utilicen en la `sender is` condición, pero DLP unificado no lo permite.         | Actualice la regla de transporte para quitar todas las direcciones de correo electrónico de grupo `sender is` de la condición y agregar el grupo a la `sender is a member of` condición si es necesario. Reintentar la migración de la directiva afectada|
+|No se pudo encontrar el destinatario `DLP-group@contoso.com`. Si se acaba de crear, vuelva a intentar la operación después de algún momento. Si se elimina o expira, restablezca con valores válidos e inténtelo de nuevo.     |Es probable que la dirección de grupo usada en `sender is a member of` o `recipient is a member of` condición haya expirado o no sea válida.         | - Quitar o reemplazar todas las direcciones de correo electrónico de grupo no válidas en la regla de transporte en Exchange centro de administración. </br> - Reintentar la migración de la directiva afectada.|
+|El valor especificado en predicado `FromMemberOf` debe ser el grupo de seguridad habilitado para correo.     |Las reglas de transporte permiten que los usuarios individuales se utilicen en la `sender is a member of` condición, pero DLP unificado no lo permite.         | - Actualizar la regla de transporte para quitar todas las direcciones de correo electrónico de usuario individuales `sender is a member of` de la condición y agregar los usuarios a la `sender is` condición si es necesario. </br> - Reintentar la migración de la directiva afectada.|
+|El valor especificado en predicado `SentToMemberOf` debe ser el grupo de seguridad habilitado para correo.    |Las reglas de transporte permiten que los usuarios individuales se utilicen con la `recipient is a member of` condición, pero DLP unificada no lo permite.         | - Actualizar la regla de transporte para quitar todas las direcciones de correo electrónico de usuario individuales `recipient is a member of` de la condición y agregar los usuarios a la `recipient is` condición si es necesario. </br> - Reintentar la migración de la directiva afectada.|
 |El uso `<Name of condition>` del parámetro solo se admite Exchange. Quite este parámetro o active solo la Exchange ubicación.         | Es probable que exista otra directiva con el mismo nombre en el Centro de cumplimiento con otras ubicaciones como SPO/ODB/Teams para las que no se admite la condición mencionada. | Cambie el nombre de la directiva DLP Exchange centro de administración y vuelva a intentar la migración.|
 
 ## <a name="testing-and-validation---prateek-and-aakash-to-provide-a-list-of-supported-predicates-and-known-issues-before-publishing--"></a>Pruebas y validación <!--PRATEEK AND AAKASH TO PROVIDE A LIST OF SUPPORTED PREDICATES AND KNOWN ISSUES BEFORE PUBLISHING-->
 
 Pruebe y revise las directivas.
 
-1. Siga los [procedimientos de directiva](create-test-tune-dlp-policy.md#test-a-dlp-policy) Probar una DLP.
-2. Revise los eventos creados por la directiva en [el Explorador de actividades](data-classification-activity-explorer.md).
+1. Siga los [procedimientos de directiva Probar una DLP](create-test-tune-dlp-policy.md#test-a-dlp-policy) .
+2. Revise los eventos creados por la directiva en el [Explorador de actividades](data-classification-activity-explorer.md).
 
 ## <a name="review-the-policy-matches-between-exchange-admin-center-dlp-and-microsoft-365-unified-dlp"></a>Revisar las coincidencias de directiva entre Exchange DLP del Centro de administración y Microsoft 365 DLP unificada
 
 Para asegurarse de que las directivas migradas se comportan como se esperaba, puede exportar los informes de ambos centros de administración y hacer una comparación de las coincidencias de directiva.
 
 1. Conéctese a [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
-2. Exporte el [informe DLP del EAC](/powershell/module/exchange/get-maildetaildlppolicyreport?view=exchange-ps). Puede copiar este cmdlet e insertar los valores adecuados:
+2. Exporte el [informe DLP de EAC](/powershell/module/exchange/get-maildetaildlppolicyreport). Puede copiar este cmdlet e insertar los valores adecuados:
 
 ```powershell
 Get-MailDetailDlpPolicyReport -StartDate <dd/mm/yyyy -EndDate <dd/mm/yyyy> -PageSize 5000 | select Date, MessageId, DlpPolicy, TransportRule -Unique | Export-CSV <"C:\path\filename.csv"> 
 ```
-3. Exporte [el informe DLP unificado](/powershell/module/exchange/get-dlpdetailreport?view=exchange-ps). Puede copiar este cmdlet e insertar los valores adecuados:
+
+3. Exporte [el informe DLP unificado](/powershell/module/exchange/get-dlpdetailreport). Puede copiar este cmdlet e insertar los valores adecuados:
 
 ```powershell
 Get-DlpDetailReport -StartDate <dd/mm/yyyy> -EndDate <dd/mm/yyyy> -PageSize 5000 | select Date, Location, DlpCompliancePolicy, DlpComplianceRule -Unique | Export-CSV <"C:\path\filename.csv">  

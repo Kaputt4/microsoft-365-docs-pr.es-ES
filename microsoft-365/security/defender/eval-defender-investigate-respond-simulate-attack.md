@@ -22,39 +22,39 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6cc1735182a91819d38bc18ecb60de7d29085d28
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: b7118d51ce87e26b6752ac767040a26e87464f22
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61122026"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807481"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Ejecutar una simulación de ataque en un Microsoft 365 Defender piloto
 
 
-Este artículo es [el paso 1 de 2](eval-defender-investigate-respond.md) en el proceso de realizar una investigación y respuesta de un incidente en Microsoft 365 Defender un entorno piloto. Para obtener más información acerca de este proceso, vea el [artículo de introducción.](eval-defender-investigate-respond.md)
+Este artículo es [el paso 1 de 2](eval-defender-investigate-respond.md) en el proceso de realización de una investigación y respuesta de un incidente en Microsoft 365 Defender un entorno piloto. Para obtener más información acerca de este proceso, vea el [artículo de introducción](eval-defender-investigate-respond.md) .
 
-Después de preparar el entorno [piloto,](eval-defender-investigate-respond.md)es hora de probar la respuesta a incidentes de Microsoft 365 Defender y las capacidades automatizadas de investigación y corrección creando un incidente con un ataque simulado y usando el portal de Microsoft 365 Defender para investigar y responder.
+Después de preparar el entorno [piloto, es](eval-defender-investigate-respond.md) hora de probar la respuesta a incidentes de Microsoft 365 Defender y las capacidades automatizadas de investigación y corrección creando un incidente con un ataque simulado y usando el portal de Microsoft 365 Defender para investigar y responder.
 
 Un incidente en Microsoft 365 Defender es una colección de alertas correlacionadas y datos asociados que son la historia de un ataque.
 
 Los servicios y aplicaciones de Microsoft 365 crean alertas cuando detectan un evento o actividad sospechosos o malintencionados. Las alertas individuales proporcionan pistas valiosas sobre un ataque completado o en curso. Sin embargo, los ataques suelen emplear varias técnicas en distintos tipos de entidades, como dispositivos, usuarios y buzones de entrada. El resultado son varias alertas para varias entidades del espacio empresarial.
 
 >[!Note]
->Si es completamente nuevo en el análisis [](first-incident-overview.md) de seguridad y la respuesta a incidentes, consulte el tutorial Responder a su primer incidente para obtener una visita guiada a un proceso típico de análisis, corrección y revisión posterior al incidente.
+>Si es completamente nuevo en el análisis de seguridad y la respuesta a incidentes[](first-incident-overview.md), consulte el tutorial Responder a su primer incidente para obtener una visita guiada a un proceso típico de análisis, corrección y revisión posterior al incidente.
 >
 
 ## <a name="simulate-attacks-with-the-microsoft-365-defender-portal"></a>Simular ataques con el portal Microsoft 365 Defender web
 
 El portal Microsoft 365 Defender cuenta con capacidades integradas para crear ataques simulados en el entorno piloto:
 
-- Aprendizaje de simulación de ataques Microsoft 365 Defender para Office 365 en [https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator) .
+- Aprendizaje de simulación de ataques Microsoft 365 Defender para Office 365 en [https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator).
   
   En el portal Microsoft 365 Defender, seleccione Correo electrónico **& colaboración > de simulación de ataques**.
 
-- Tutoriales de ataques & simulaciones para Microsoft 365 Defender para Endpoint en [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations) .
+- Tutoriales de ataques & simulaciones para Microsoft 365 Defender para Endpoint en [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations).
 
-  En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender,</a>seleccione **Endpoints > Tutoriales & simulaciones**.
+  En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, seleccione **Endpoints > Tutoriales & simulaciones**.
 
 ### <a name="defender-for-office-365-attack-simulation-training"></a>Defender para el Office 365 de simulación de ataques
 
@@ -62,19 +62,19 @@ Defender para Office 365 con Microsoft 365 E5 o Microsoft Defender para Office 3
 
 1. Crear una simulación
 
-   Para obtener instrucciones paso a paso sobre cómo crear y enviar una nueva simulación, consulte [Simulate a phishing attack](/microsoft-365/security/office-365-security/attack-simulation-training).
+   Para obtener instrucciones paso a paso sobre cómo crear y enviar una nueva simulación, consulta [Simular un ataque de phishing](/microsoft-365/security/office-365-security/attack-simulation-training).
 
 2. Crear una carga
 
-   Para obtener instrucciones paso a paso sobre cómo crear una carga para su uso en una simulación, vea [Create a custom payload for Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-payloads).
+   Para obtener instrucciones paso a paso sobre cómo crear una carga para su uso en una simulación, consulta Crear una carga personalizada para el aprendizaje [de simulación de ataques](/microsoft-365/security/office-365-security/attack-simulation-training-payloads).
 
 3. Obtener información
 
-   Para obtener instrucciones paso a paso sobre cómo obtener información con los informes, consulte Obtener información a través del aprendizaje [de simulación de ataques.](/microsoft-365/security/office-365-security/attack-simulation-training-insights)
+   Para obtener instrucciones paso a paso sobre cómo obtener información con los informes, consulta Obtener información a través del aprendizaje [de simulación de ataques](/microsoft-365/security/office-365-security/attack-simulation-training-insights).
 
    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvB]
 
-Para obtener más información, vea [Simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started#simulations).
+Para obtener más información, consulte [Simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started#simulations).
 
 ### <a name="defender-for-endpoint-attack-tutorials--simulations"></a>Tutoriales de ataque de Defender for Endpoint & simulaciones
 
@@ -105,13 +105,13 @@ En primer lugar, debe agregar puntos de conexión al entorno piloto.
 
 En primer lugar, debes agregar un controlador de dominio de AD DS aislado y un Windows dispositivo a tu entorno piloto.
 
-1. Compruebe que el inquilino del entorno piloto [ha habilitado Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
+1. Compruebe que el espacio empresarial del entorno piloto [haya Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
 
 2. Compruebe que el controlador de dominio:
 
    - Ejecuta Windows Server 2008 R2 o una versión posterior.
-   - Informa a [Microsoft Defender para Identity](/azure/security-center/security-center-wdatp) y ha habilitado la administración [remota.](/windows-server/administration/server-manager/configure-remote-management-in-server-manager)
-   - Tiene [habilitada la integración de Microsoft Defender para Identidad](/cloud-app-security/mdi-integration) y Microsoft Defender para Aplicaciones en la nube.
+   - Informa a [Microsoft Defender para Identity](/azure/security-center/security-center-wdatp) y ha habilitado [la administración remota](/windows-server/administration/server-manager/configure-remote-management-in-server-manager).
+   - Tiene [habilitada la integración de Microsoft Defender para Identidad y Microsoft Defender para Aplicaciones en la nube](/cloud-app-security/mdi-integration) .
    - Tiene un usuario de prueba creado en el dominio de prueba. No se necesitan permisos de nivel de administrador.
 
 3. Compruebe que el dispositivo de prueba:
@@ -123,7 +123,7 @@ En primer lugar, debes agregar un controlador de dominio de AD DS aislado y un W
 
 Si usas grupos de inquilinos y dispositivos, crea un grupo de dispositivos dedicado para el dispositivo de prueba y lo insertas en el nivel superior.
 
-Una alternativa es hospedar el controlador de dominio de AD DS y probar el dispositivo como máquinas virtuales en Microsoft Azure de infraestructura. Puede usar las instrucciones de la fase [1](/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise#phase-1-create-a-simulated-intranet)de la Guía de laboratorio de pruebas de empresa simulada, pero omitir la creación de la máquina virtual APP1.
+Una alternativa es hospedar el controlador de dominio de AD DS y probar el dispositivo como máquinas virtuales en Microsoft Azure de infraestructura. Puede usar las instrucciones de la fase [1](/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise#phase-1-create-a-simulated-intranet) de la Guía de laboratorio de pruebas de empresa simulada, pero omitir la creación de la máquina virtual APP1.
 
 Este es el resultado.
 
@@ -189,7 +189,7 @@ Para ver la característica De incidentes y respuesta automatizados en acción, 
 
 Al cambiar al punto de vista del analista de SOC, ahora puede empezar a investigar el ataque en el portal de Microsoft 365 Defender datos.
 
-1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>.
+1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender web</a>.
 
 2. En el panel de navegación, seleccione **Incidentes & alertas > incidentes**.
 
@@ -205,7 +205,7 @@ Las alertas generadas durante esta simulación están asociadas con la misma ame
 
 Para ver el incidente:
 
-1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>.
+1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender web</a>.
 
 2. En el panel de navegación, seleccione **Incidentes & alertas > incidentes**.
 
@@ -277,7 +277,7 @@ Selecciona la **pestaña** Escala de tiempo para abrir la escala de tiempo del d
 
 La expansión de algunos de los comportamientos más interesantes proporciona detalles útiles, como árboles de proceso.
 
-Por ejemplo, desplácese hacia abajo hasta que encuentre el evento de alerta **Inserción de proceso sospechoso observada**. Seleccione elpowershell.exe se inserta **notepad.exe** un evento de proceso debajo de él, para  mostrar el árbol de proceso completo para este comportamiento en el gráfico Entidades de eventos en el panel lateral. Use la barra de búsqueda para filtrar si es necesario.
+Por ejemplo, desplácese hacia abajo hasta que encuentre el evento de alerta **Se observó la inyección de proceso sospechoso**. Seleccione el **powershell.exe** se inserta notepad.exe evento de proceso debajo de él, para mostrar el árbol de proceso completo para este comportamiento en el gráfico Entidades **de** eventos en el panel lateral. Use la barra de búsqueda para filtrar si es necesario.
 
 ![Ejemplo del árbol de procesos para el comportamiento de creación de archivos de PowerShell seleccionado.](../../media/mtp/fig12.png)
 
@@ -285,7 +285,7 @@ Por ejemplo, desplácese hacia abajo hasta que encuentre el evento de alerta **I
 
 En la página incidente, seleccione la **pestaña Usuarios** para mostrar la lista de usuarios implicados en el ataque. La tabla contiene información adicional sobre cada usuario, incluida la puntuación prioridad de **investigación de cada** usuario.
 
-Seleccione el nombre de usuario para abrir la página de perfil del usuario donde se puede llevar a cabo una investigación adicional. [Obtenga más información sobre cómo investigar usuarios de riesgo.](/cloud-app-security/tutorial-ueba#identify)
+Seleccione el nombre de usuario para abrir la página de perfil del usuario donde se puede llevar a cabo una investigación adicional. [Obtenga más información sobre cómo investigar usuarios riesgosos](/cloud-app-security/tutorial-ueba#identify).
 
 ![Ejemplo de página de usuario defender para aplicaciones en la nube.](../../media/mtp/fig13.png)
 
@@ -296,7 +296,7 @@ Seleccione el nombre de usuario para abrir la página de perfil del usuario dond
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Vuelva al incidente en el portal de Microsoft 365 Defender web. La **pestaña Investigaciones** de **la** página Incidentes muestra las investigaciones automatizadas desencadenadas por Microsoft Defender para Identity y Microsoft Defender para endpoint. La captura de pantalla siguiente muestra solo la investigación automatizada desencadenada por Defender for Endpoint. De forma predeterminada, Defender para endpoint corrige automáticamente los artefactos encontrados en la cola, lo que requiere corrección.
+Vuelva al incidente en el portal de Microsoft 365 Defender web. La **pestaña Investigaciones** **de la página** Incidentes muestra las investigaciones automatizadas desencadenadas por Microsoft Defender para Identity y Microsoft Defender para endpoint. La captura de pantalla siguiente muestra solo la investigación automatizada desencadenada por Defender for Endpoint. De forma predeterminada, Defender para endpoint corrige automáticamente los artefactos encontrados en la cola, lo que requiere corrección.
 
 ![Ejemplo de las investigaciones automatizadas relacionadas con el incidente.](../../media/mtp/fig14.png)
 

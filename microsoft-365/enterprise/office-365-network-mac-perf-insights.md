@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 red Ideas
-ms.openlocfilehash: d5eca1f1c842c0182bc5ce132de90eda538e0695
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: 429b066a7132cb29f2a35d43857534695391d33c
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327573"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806953"
 ---
 # <a name="microsoft-365-network-insights"></a>Microsoft 365 red Ideas
 
-**Los conocimientos de** red son métricas de rendimiento recopiladas Microsoft 365 inquilino y disponibles para que solo las puedan ver los usuarios administrativos de su inquilino. Ideas se muestran en el Centro de Administración de Microsoft 365 en <https://portal.microsoft.com/adminportal/home#/networkperformance> .
+**Los conocimientos de red son métricas** de rendimiento recopiladas Microsoft 365 inquilino y disponibles para que solo las puedan ver los usuarios administrativos de su inquilino. Ideas se muestran en el Centro de Administración de Microsoft 365 en <https://portal.microsoft.com/adminportal/home#/networkperformance>.
 
 Ideas están diseñadas para ayudar a diseñar perímetros de red para las ubicaciones de la oficina. Cada información proporciona detalles en directo sobre las características de rendimiento de un problema común específico para cada ubicación geográfica en la que los usuarios tienen acceso a su espacio empresarial.
 
@@ -74,7 +74,7 @@ Los detalles de esta información incluyen:
 
 Se recomienda la salida de red lo más cerca posible de la ubicación de la oficina.  Microsoft 365 tráfico debe enrutar de forma óptima a la red global de Microsoft y a la puerta Microsoft 365 de servicio más cercana. Tener una salida de red cercana a las ubicaciones de oficina de los usuarios también permite mejorar el rendimiento a medida que Microsoft expande tanto los puntos de presencia de red como Microsoft 365 puertas frontales de servicio en el futuro.
 
-Para obtener más información acerca de cómo resolver este problema, vea [Egress conexiones](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) de red localmente en [Microsoft 365 principios](microsoft-365-network-connectivity-principles.md)de conectividad de red .
+Para obtener más información acerca de cómo resolver este problema, vea [Egress conexiones de red localmente](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) en [Microsoft 365 principios de conectividad de red](microsoft-365-network-connectivity-principles.md).
 
 ## <a name="network-intermediary-device"></a>Dispositivo intermediario de red
 
@@ -105,7 +105,7 @@ Esta información examina el rendimiento agregado de Microsoft 365 clientes en l
 
 ### <a name="what-should-i-do"></a>¿Qué debo hacer?
 
-Puede haber muchas razones para esta condición, como la latencia en su red corporativa o ISP, cuellos de botella o problemas de diseño de arquitectura. Examine la latencia entre cada salto de la ruta entre la red de oficina y la puerta Microsoft 365 puerta principal. Para obtener más información, [vea Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
+Puede haber muchas razones para esta condición, como la latencia en su red corporativa o ISP, cuellos de botella o problemas de diseño de arquitectura. Examine la latencia entre cada salto de la ruta entre la red de oficina y la puerta Microsoft 365 puerta principal. Para obtener más información, [vea Microsoft 365 principios de conectividad de red](microsoft-365-network-connectivity-principles.md).
 
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>Uso de una puerta principal Exchange Online servicio no óptimo
 
@@ -174,7 +174,7 @@ La salida de Internet más lejos de los usuarios que estas ubicaciones reducirá
 
 ### <a name="what-should-i-do"></a>¿Qué debo hacer?
 
-Para obtener más información acerca de cómo mitigar los problemas de rendimiento relacionados con esta información, vea Microsoft 365 [global tenant performance optimization for China users](microsoft-365-networking-china.md).
+Para obtener más información sobre cómo mitigar los problemas de rendimiento relacionados con esta información, vea Microsoft 365 optimización global del rendimiento de los inquilinos [para los usuarios de China](microsoft-365-networking-china.md).
 
 ## <a name="exchange-sampled-connections-affected-by-connectivity-issues"></a>Exchange conexiones muestreadas afectadas por problemas de conectividad
 

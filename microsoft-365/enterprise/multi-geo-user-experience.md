@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: Información sobre la experiencia del usuario de SharePoint, OneDrive y Exchange en un entorno multigeográfico para Microsoft 365.
-ms.openlocfilehash: eff55ba327e1484b5aa3fd344f904c0e11f8f954
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 638aa7d65f9243bfd110eebac6473d641e1d0b61
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177152"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806941"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Experiencia del usuario en un entorno multigeográfico
 
@@ -32,7 +32,7 @@ El buzón de Exchange de un usuario se aprovisiona en su ubicación de datos pre
 
 ## <a name="hub-sites"></a>Sitios centrales
 
-Los sitios centrales de SharePoint mejoran la detección y la participación con contenido para los empleados, al crear una representación completa y coherente de proyectos, departamentos o regiones. En un entorno multigeográfico, los sitios de ubicaciones satélite pueden asociarse fácilmente con un sitio central independientemente de su ubicación geográfica. Los usuarios pueden buscar y obtener resultados en la central mediante una experiencia de búsqueda única, independientemente de la ubicación geográfica de los sitios.
+SharePoint de concentradores mejoran la detección y la interacción con el contenido de los empleados, al tiempo que crean una representación completa y coherente de proyectos, departamentos o regiones. En un entorno multigeográfico, los sitios de ubicaciones satélite pueden asociarse fácilmente con un sitio central independientemente de su ubicación geográfica. Los usuarios pueden buscar y obtener resultados en la central mediante una experiencia de búsqueda única, independientemente de la ubicación geográfica de los sitios.
 
 ## <a name="microsoft-365-app-launcher"></a>Iniciador de aplicaciones de Microsoft 365
 
@@ -44,7 +44,7 @@ Office aplicaciones como Word, Excel y PowerPoint detectarán automáticamente l
 
 ## <a name="onedrive-sync-app"></a>Sincronización de OneDrive app
 
-La aplicación Sincronización de OneDrive (versión 17.3.6943.0625 y posteriores) detectará automáticamente la ubicación geográfica OneDrive correcta para el usuario. La compatibilidad con aplicaciones de sincronización incluye la capacidad de sincronizar sitios basados en grupos independientemente de su ubicación geográfica. Tenga en cuenta que el cliente de sincronización de Groove no es compatible con las capacidades multigeográficas. 
+La aplicación Sincronización de OneDrive (versión 17.3.6943.0625 y posteriores) detectará automáticamente la ubicación geográfica OneDrive correcta para el usuario. La compatibilidad con aplicaciones de sincronización incluye la capacidad de sincronizar sitios basados en grupos independientemente de su ubicación geográfica. El Groove de sincronización no es compatible con multige-geo. 
 
 ## <a name="onedrive-location"></a>OneDrive ubicación
 
@@ -52,9 +52,9 @@ Los usuarios tendrán su OneDrive en su ubicación de datos preferida. Si un usu
 
 ## <a name="onedrive-ios-and-android"></a>OneDrive para iOS y Android 
 
-Las aplicaciones móviles de OneDrive para iOS y Android mostrarán los archivos de OneDrive y los archivos compartidos con usted, independientemente de su ubicación geográfica. La búsqueda en las aplicaciones móviles de OneDrive mostrará resultados relevantes de todas las ubicaciones geográficas. Descargue la última versión de estas aplicaciones.
+Las OneDrive móviles de iOS y Android te mostrarán los archivos OneDrive archivos compartidos contigo independientemente de su ubicación geográfica. La búsqueda desde el OneDrive aplicaciones móviles mostrará los resultados relevantes de todas las ubicaciones geográficas. Descarga la versión más reciente de estas aplicaciones.
 
-Vea [Usar OneDrive en iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) y [usar OneDrive para Android](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36) para obtener más información.
+Para obtener más información, [consulta Usar OneDrive en iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) y [Usar OneDrive para Android](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36) para obtener más información.
 
 ## <a name="onedrive-mobile-client"></a>Cliente móvil de OneDrive 
 
@@ -78,7 +78,7 @@ Se admiten los siguientes clientes de búsqueda:
 
 ## <a name="sharepoint-home"></a>Página principal de SharePoint 
 
-En SharePoint Multi-Geo su SharePoint se hospeda en la ubicación donde reside el usuario según lo determinado por su OneDrive ubicación. Por ejemplo: si el usuario tiene su OneDrive hospedado en una ubicación satélite europea, su SharePoint home se representará desde Europa. La página principal de SharePoint incluye todo el contenido relevante para el usuario independientemente de su ubicación geográfica. 
+En SharePoint Multi-Geo, la SharePoint principal se hospeda en la ubicación donde reside el usuario según su ubicación OneDrive usuario. Por ejemplo: si el usuario tiene su OneDrive hospedado en una ubicación satélite europea, su SharePoint home se representará desde Europa. La página principal de SharePoint incluye todo el contenido relevante para el usuario independientemente de su ubicación geográfica. 
 
 **Sitios seguidos, noticias de sitios, sitios recientes, sitios frecuentes y sitios sugeridos**
 
@@ -88,13 +88,13 @@ Todos estos componentes se mostrarán con independencia de la ubicación geográ
 
 Los administradores pueden configurar vínculos destacados en la página principal de SharePoint según sea adecuado para cada ubicación geográfica. Esto permite que el administrador destaque en la página principal de SharePoint de cada región los vínculos que sean apropiados para los usuarios de la región. 
 
-## <a name="sharepoint-mobile-client"></a>Cliente móvil de SharePoint 
+## <a name="sharepoint-mobile-client"></a>Cliente móvil de SharePoint
 
 El cliente móvil de SharePoint es compatible con las capacidades multigeográficas y mostrará el contenido y los resultados relevantes de todas las ubicaciones geográfica.
 
 ## <a name="sharing"></a>Uso compartido
 
-La experiencia de selector de personas muestra todos los usuarios, independientemente de su ubicación geográfica. Esto permite que un usuario pueda compartir con otro de su misma ubicación geográfica o en cualquier otra ubicación geográfica de su inquilino. El contenido de diferentes ubicaciones  geográficas se mostrará en la vista Compartido conmigo en la vista OneDrive, Word, Excel, PowerPoint y Office.com del usuario y se puede acceder a él con una experiencia de Sign-On independientemente de la ubicación geográfica en la que se hospeda.
+La experiencia de selector de personas muestra todos los usuarios, independientemente de su ubicación geográfica. Esto permite que un usuario pueda compartir con otro de su misma ubicación geográfica o en cualquier otra ubicación geográfica de su inquilino. El contenido de diferentes ubicaciones geográficas se mostrará en  la vista Compartido conmigo en la vista OneDrive, Word, Excel, PowerPoint y Office.com del usuario y se puede acceder a él con una experiencia de Sign-On única independientemente de la ubicación geográfica en la que se hospeda.
 
 ## <a name="teams-experience"></a>Experiencia de Teams
 

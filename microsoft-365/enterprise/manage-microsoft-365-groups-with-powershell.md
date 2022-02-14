@@ -23,24 +23,24 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: En este artículo, obtenga información sobre cómo realizar tareas de administración comunes para Microsoft 365 en PowerShell.
-ms.openlocfilehash: aed6af15889d7a0923207be5ea4220b3c3d6937c
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 460444e1cb2f862f4d96ed6aad0178a146864658
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422116"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806449"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>Administrar Microsoft 365 grupos con PowerShell
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-En este artículo se proporcionan los pasos para realizar tareas de administración comunes para grupos en Microsoft PowerShell. También enumera los cmdlets de PowerShell para grupos. Para obtener información sobre cómo administrar SharePoint sitios web, [vea Manage SharePoint Online sites using PowerShell](/sharepoint/manage-team-and-communication-sites-in-powershell).
+En este artículo se proporcionan los pasos para realizar tareas de administración comunes para grupos en Microsoft PowerShell. También enumera los cmdlets de PowerShell para grupos. Para obtener información sobre cómo administrar SharePoint sitios, vea [Manage SharePoint Online sites using PowerShell](/sharepoint/manage-team-and-communication-sites-in-powershell).
 
 ## <a name="link-to-your-microsoft-365-groups-usage-guidelines"></a>Vínculo a las directrices de uso Microsoft 365 grupos de usuarios
 
-Cuando los [usuarios crean o editan](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx)un grupo en Outlook , puede mostrarles un vínculo a las directrices de uso de la organización. Por ejemplo, si necesita agregar un prefijo o sufijo específicos a un nombre de grupo.
+Cuando los [usuarios crean o editan un grupo en Outlook](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx), puede mostrarles un vínculo a las directrices de uso de la organización. Por ejemplo, si necesita agregar un prefijo o sufijo específicos a un nombre de grupo.
 
-Use powershell Azure Active Directory (Azure AD) para apuntar a los usuarios a las directrices de uso de la organización para Microsoft 365 grupos. Consulte los [cmdlets Azure Active Directory](/azure/active-directory/enterprise-users/groups-settings-cmdlets) para configurar la configuración de  grupo y siga los pasos descritos en Crear configuración en el nivel de directorio para definir el hipervínculo de la directriz de uso. Una vez que ejecute el cmdlet AAD, los usuarios verán el vínculo a las directrices cuando creen o editan un grupo en Outlook.
+Use powershell Azure Active Directory (Azure AD) para apuntar a los usuarios a las directrices de uso de la organización para Microsoft 365 grupos. Consulte los [cmdlets Azure Active Directory para](/azure/active-directory/enterprise-users/groups-settings-cmdlets) configurar la configuración de grupo y siga los pasos descritos en Crear configuración  en el nivel de directorio para definir el hipervínculo de la directriz de uso. Una vez que ejecute el cmdlet AAD, los usuarios verán el vínculo a las directrices cuando creen o editan un grupo en Outlook.
 
 ![Crear un nuevo grupo con el vínculo directrices de uso.](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
 
@@ -50,9 +50,9 @@ Use powershell Azure Active Directory (Azure AD) para apuntar a los usuarios a l
 
 Si desea habilitar los grupos de Microsoft 365 para "Enviar como", use los cmdlets [Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission) y [Get-RecipientPermission](/powershell/module/exchange/get-recipientpermission) para configurar esto. Una vez que habilite esta configuración, Microsoft 365 usuarios del grupo pueden usar Outlook o Outlook en la Web para enviar y responder al correo electrónico como grupo Microsoft 365 grupo. Los usuarios pueden ir al grupo, crear un nuevo correo electrónico y cambiar el campo "Enviar como" a la dirección de correo electrónico del grupo.
 
-([También puede hacerlo en el Centro](/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)Exchange administración .)
+([También puede hacerlo en el Centro Exchange administración](/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)).
 
-Use el siguiente script, reemplazando con el alias del grupo que desea actualizar y con el alias del usuario al que desea conceder *\<GroupAlias\>* *\<UserAlias\>* permisos. [Conectar usar Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) para ejecutar este script.
+Use el siguiente script, *\<GroupAlias\>* reemplazando con el alias *\<UserAlias\>* del grupo que desea actualizar y con el alias del usuario al que desea conceder permisos. [Conectar usar Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) para ejecutar este script.
 
 ```PowerShell
 $groupAlias = "<GroupAlias>"
@@ -66,26 +66,26 @@ Una vez ejecutado el cmdlet, los usuarios pueden ir a Outlook o Outlook en la We
 
 ## <a name="create-classifications-for-microsoft-365-groups-in-your-organization"></a>Crear clasificaciones para grupos Microsoft 365 de la organización
 
-Puede crear etiquetas de confidencialidad que los usuarios de su organización puedan establecer al crear un grupo Microsoft 365 de datos. Si desea clasificar grupos, se recomienda usar etiquetas de confidencialidad en lugar de la característica de clasificación de grupos anterior. Para obtener información sobre el uso de etiquetas de confidencialidad, vea Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, Microsoft 365 grupos y [SharePoint de confidencialidad.](../compliance/sensitivity-labels-teams-groups-sites.md)
+Puede crear etiquetas de confidencialidad que los usuarios de su organización puedan establecer al crear un grupo Microsoft 365 de datos. Si desea clasificar grupos, se recomienda usar etiquetas de confidencialidad en lugar de la característica de clasificación de grupos anterior. Para obtener información sobre el uso de etiquetas de confidencialidad, vea Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams[, Microsoft 365 grupos y SharePoint sitios](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 > [!IMPORTANT]
 > Si actualmente usa etiquetas de clasificación, ya no estarán disponibles para los usuarios que creen grupos una vez habilitadas las etiquetas de confidencialidad.
 
-Todavía puede usar la característica de clasificación de grupos anterior. Puede crear clasificaciones que los usuarios de su organización pueden establecer al crear un grupo Microsoft 365 grupo. Por ejemplo, puede permitir que los usuarios establezcan "Standard", "Secret" y "Top Secret" en los grupos que creen. Las clasificaciones de grupos no se establecen de forma predeterminada y es necesario crearla para que los usuarios puedan establecerla. Use Azure Active Directory PowerShell para apuntar a los usuarios a las directrices de uso de la organización para Microsoft 365 grupos.
+Todavía puede usar la característica de clasificación de grupos anterior. Puede crear clasificaciones que los usuarios de la organización pueden establecer al crear un grupo Microsoft 365 grupo. Por ejemplo, puede permitir que los usuarios establezcan "Standard", "Secret" y "Top Secret" en los grupos que creen. Las clasificaciones de grupos no se establecen de forma predeterminada y es necesario crearla para que los usuarios puedan establecerla. Use Azure Active Directory PowerShell para apuntar a los usuarios a las directrices de uso de la organización para Microsoft 365 grupos.
 
-Consulte los [cmdlets Azure Active Directory para](/azure/active-directory/users-groups-roles/groups-settings-cmdlets) configurar la configuración de  grupo y siga los pasos descritos en Crear configuración en el nivel de directorio para definir la clasificación de Microsoft 365 grupos.
+Consulte los [cmdlets Azure Active Directory](/azure/active-directory/users-groups-roles/groups-settings-cmdlets) para configurar la configuración de grupo y siga los pasos descritos en Crear  configuración en el nivel de directorio para definir la clasificación de Microsoft 365 grupos.
 
 ```powershell
 $setting["ClassificationList"] = "Low Impact, Medium Impact, High Impact"
 ```
 
-Para asociar una descripción a cada clasificación, puede usar el atributo de configuración  *ClassificationDescriptions* para definir.
+Para asociar una descripción a cada clasificación, puede usar el atributo  *de configuración ClassificationDescriptions* para definir.
 
 ```powershell
 $setting["ClassificationDescriptions"] ="Classification:Description,Classification:Description"
 ```
 
-donde Classification coincide con las cadenas de ClassificationList.
+Donde Classification coincide con las cadenas de ClassificationList.
 
 Ejemplo:
 
@@ -107,7 +107,7 @@ New-UnifiedGroup <HighImpactGroup@constoso.com> -Classification <HighImpact> -Ac
 
 Consulte [Using PowerShell with Exchange Online](/powershell/exchange/exchange-online-powershell) and [Conectar to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) para obtener más información sobre Exchange Online PowerShell.
 
-Una vez habilitada esta configuración, el propietario del grupo podrá elegir una clasificación en el menú desplegable de Outlook  en la web y Outlook y guardarla en la página Editar grupo.
+Una vez habilitada esta configuración, el propietario del grupo podrá elegir una clasificación en el menú desplegable de Outlook en la Web y Outlook y guardarla en la página Editar grupo.
 
 ![Elija Microsoft 365 de grupo.](../media/f8d4219a-6180-491d-b0e1-4313ac83998b.png)
 
@@ -139,7 +139,7 @@ Ejecute el cmdlet Set-Unified group para agregar una sugerencia de correo al gru
 Set-UnifiedGroup -Identity "MailTip Group" -MailTip "This group has a MailTip"
 ```
 
-Junto con mailtip, también puede establecer MailTipTranslations, que especifica idiomas adicionales para la sugerencia de correo electrónico. Supongamos que desea tener la traducción al español y, a continuación, ejecute el siguiente comando:
+Junto con MailTip, también puede establecer MailTipTranslations, que especifica otros idiomas para la sugerencia de correo. Supongamos que desea tener la traducción al español y, a continuación, ejecute el siguiente comando:
 
 ```powershell
 Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" -MailTipTranslations "@{Add="ES:Esta caja no se supervisa."
@@ -147,7 +147,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-the-display-name-of-the-microsoft-365-group"></a>Cambiar el nombre para mostrar del Microsoft 365 grupo
 
-El nombre para mostrar especifica el nombre del Microsoft 365 grupo. Puede ver este nombre en el centro de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administración Exchange o</a> en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Puede editar el nombre para mostrar del grupo o asignar un nombre para mostrar a un grupo de Microsoft 365 existente ejecutando el comando Set-UnifiedGroup usuario:
+El nombre para mostrar especifica el nombre del Microsoft 365 grupo. Puedes ver este nombre en el centro de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administración Exchange o</a> <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">en Centro de administración de Microsoft 365</a>. Puede editar el nombre para mostrar del grupo o asignar un nombre para mostrar a un grupo de Microsoft 365 existente ejecutando el comando Set-UnifiedGroup usuario:
 
 ```powershell
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"

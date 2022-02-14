@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 91c64e1df7468ec259e6202bdff879efce445ac0
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4dd25a599f144a60bfd2ebeb3e9bb8b1876bd3c6
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168227"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807421"
 ---
 # <a name="evaluate-microsoft-defender-antivirus"></a>Evaluar Antivirus de Microsoft Defender
 
@@ -28,8 +28,8 @@ ms.locfileid: "61168227"
 
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Use esta guía para determinar qué tan bien Antivirus de Microsoft Defender protege contra virus, malware y aplicaciones potencialmente no deseadas.
 
@@ -39,6 +39,9 @@ Use esta guía para determinar qué tan bien Antivirus de Microsoft Defender pro
 > - Protección entregada en la nube
 > - Aprendizaje rápido (incluido Bloquear a primera vista)
 > - Bloqueo de aplicaciones potencialmente no deseado
+
+> [!NOTE]
+> El sitio de demostración defender para el punto de conexión en demo.wd.microsoft.com está en desuso y se quitará en el futuro.
 
 Explica las características importantes de protección de próxima generación de Antivirus de Microsoft Defender disponibles para pequeñas y grandes empresas, y cómo aumentan la detección y protección de malware en toda la red.
 
@@ -55,7 +58,7 @@ También puede descargar un PowerShell que habilitará automáticamente todas la
 > [!IMPORTANT]
 > La guía está diseñada actualmente para la evaluación de una sola máquina de Antivirus de Microsoft Defender. Es posible que la habilitación de toda la configuración de esta guía no sea adecuada para la implementación en el mundo real.
 >
-> Para obtener las recomendaciones más recientes para la implementación real y la supervisión de Antivirus de Microsoft Defender en una red, vea [Deploy Antivirus de Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md).
+> Para obtener las recomendaciones más recientes para la implementación y supervisión en el mundo real de Antivirus de Microsoft Defender una red, vea [Deploy Antivirus de Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -18,23 +18,23 @@ search.appverid:
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
 description: Obtenga información sobre un usuario activo de análisis Microsoft 365 de uso, informes de actividad y métricas de adopción.
-ms.openlocfilehash: a535430281eb73542808ff75d507a700c9354ca2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 748bd08e08cc5e8243c3733c4b3f8448e15ab050
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60160969"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806101"
 ---
 # <a name="active-user-in-microsoft-365-usage-reports"></a>Usuario activo en Microsoft 365 de uso
 
 ## <a name="active-user-in-usage-reports"></a>Usuario activo en informes de uso
 
-Un usuario activo de Microsoft 365 productos para Microsoft 365 [análisis](usage-analytics.md) de uso y los informes de actividad en el centro de administración se define de la siguiente manera. [](../activity-reports/activity-reports.md) 
+Un usuario activo de Microsoft 365 productos para Microsoft 365 [análisis](usage-analytics.md) de uso y los informes de actividad en el Centro [de](../activity-reports/activity-reports.md) administración se define de la siguiente manera. 
   
 |**Product**|**Definición de un usuario activo**|**Notas**|
 |:-----|:-----|:-----|
 |Exchange Online  <br/> |Cualquier usuario que haya realizado cualquiera de las siguientes acciones: marcar como leído, enviar mensajes, crear citas, enviar solicitudes de reunión, aceptar (como provisional) o rechazar las solicitudes de reunión, cancelar reuniones.  <br/> |No se representa información de calendario; esta se agregará en una próxima actualización.  <br/> |
-|SharePoint Online  <br/> |Cualquier usuario que interactuó con un archivo al crear, modificar, visualizar, eliminar, compartir (interna o externamente) o sincronizar con clientes en cualquier sitio, o al ver una página en cualquier sitio.  <br/> |La métrica de usuario activo de SharePoint Online en la aplicación de plantilla de análisis de uso de Microsoft 365 solo refleja los usuarios que realizaron actividad de archivos en un sitio de grupo o en un sitio de grupo de SharePoint. La aplicación de plantilla se actualizará para sincronizar la definición con la misma que en los informes de uso del Centro de administración.  <br/> |
+|SharePoint Online  <br/> |Cualquier usuario que interactuó con un archivo al crear, modificar, visualizar, eliminar, compartir (interna o externamente) o sincronizar con clientes en cualquier sitio, o al ver una página en cualquier sitio.  <br/> |Las métricas de usuario activas de SharePoint Online en la aplicación de plantilla de análisis de uso de Microsoft 365 solo reflejan los usuarios que realizaron actividad de archivos en un sitio de grupo o en un sitio de grupo de SharePoint. La aplicación de plantilla se actualizará para sincronizar la definición con la misma que en los informes de uso del Centro de administración.  <br/> |
 |OneDrive para la Empresa  <br/> |Cualquier usuario que interactuó con un archivo al crear, modificar, visualizar, eliminar, compartir (interna o externamente) o sincronizar con clientes.  <br/> ||
 |Yammer  <br/> |Cualquier usuario que lea, publique o dé un "me gusta" a un mensaje en Yammer.  <br/> ||
 |Skype Empresarial  <br/> |Cualquier usuario que participó en una sesión de punto a punto (como mensajería instantánea, llamadas de vídeo y audio, uso compartido de aplicaciones y transferencias de archivos), o bien que organizó o participó en una conferencia.  <br/> ||
@@ -44,7 +44,7 @@ Un usuario activo de Microsoft 365 productos para Microsoft 365 [análisis](usag
    
 ## <a name="adoption-metrics"></a>Métricas de adopción
 
-[Microsoft 365 análisis de uso contiene](usage-analytics.md) métricas de adopción adicionales relacionadas con los usuarios activos para mostrar la adopción de los productos con el tiempo. Estas métricas son válidas para el mes, el año y el producto seleccionados y se definen de la siguiente manera. 
+[Microsoft 365 análisis de uso contiene](usage-analytics.md) más métricas de adopción relacionadas con usuarios activos para mostrar la adopción de los productos con el tiempo. Estas métricas son válidas para el mes, el año y el producto seleccionados y se definen de la siguiente manera. 
   
 |**Métrica**|**Descripción**|
 |:-----|:-----|
@@ -56,5 +56,5 @@ Un usuario activo de Microsoft 365 productos para Microsoft 365 [análisis](usag
 |ActiveUsers(%)  <br/> |Porcentaje de usuarios, redondeado al décimo más cercano, activo en el mes en comparación con el número de usuarios habilitados en ese mes.  <br/> |
 |MoMReturningUsers(%)  <br/> |Porcentaje de usuarios, redondeados al décimo más cercano, activos en el mes que también estaban activos en el mes anterior en comparación con el número de usuarios activos.  <br/> |
    
-MoMReturningUsers, FirstTimeUsers, CumulativeActiveUsers se restableceron a partir del 1 de enero de 2018 con la inclusión de &amp; Microsoft Teams.
+MoMReturningUsers, FirstTimeUsers, &amp; CumulativeActiveUsers se restableceron a partir del 1 de enero de 2018 con la inclusión de Microsoft Teams.
   

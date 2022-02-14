@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Haga que su organización sea más segura contra ataques a contraseñas y prohíba las contraseñas comunes y habilite la autenticación multifactor basada en riesgos.
-ms.openlocfilehash: d05b642455369cda3897733044727719e671a619
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a77d6a157c3691739ee7f5a024796f1f203241e8
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60171764"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805897"
 ---
 # <a name="password-policy-recommendations"></a>Recomendaciones de directiva de contraseñas
 
@@ -67,7 +67,7 @@ El principal objetivo de un sistema de contraseña más seguro es la diversidad 
 
 - Prohíba las contraseñas comunes para evitar el uso de las contraseñas más vulnerables en el sistema. 
 
-- Instruya a los usuarios para que no vuelvan a usar las contraseñas de la organización para propósitos no relacionados con el trabajo
+- Instruya a los usuarios para que no usen las contraseñas de la organización para propósitos no relacionados con el trabajo
 
 - Exija el registro para la [autenticación multifactor](../security-and-compliance/set-up-multi-factor-authentication.md)
 
@@ -79,7 +79,7 @@ Esta es una guía sobre contraseñas para los usuarios de su organización. Aseg
   
 - No use una contraseña igual o similar a una que use en otros sitios web
 
-- No use solo una palabra, por ejemplo, **contraseña**, ni una frase que use habitualmente, como **ILOVEYOU.**
+- No use una sola palabra, por ejemplo, **contraseña** o una frase habitual como **Iloveyou**
 
 - Haga que las contraseñas sean difíciles de adivinar, incluso las personas que sepan mucho sobre usted, como el nombre y el cumpleaños de sus amigos y familiares, sus bandas favoritas y las frases que quiera usar.
 
@@ -89,11 +89,11 @@ Esta es una guía sobre contraseñas para los usuarios de su organización. Aseg
   
 ### <a name="password-expiration-requirements-for-users"></a>Requisitos de expiración de contraseña para usuarios
 
-Los requisitos de expiración de contraseñas son más dañinos que los que hacen que los usuarios seleccionen contraseñas predecibles, formadas por palabras secuenciales y números estrechamente relacionados entre sí. En estos casos, la contraseña siguiente puede predecirse en función de la contraseña anterior. Los requisitos de expiración de contraseñas no proporcionan ventajas de contención ya que los ciberdelincuentes casi siempre usan credenciales tan pronto como los comprometen. Consulte [Momento para reconsiderar los cambios en la contraseña obligatoria](https://go.microsoft.com/fwlink/p/?linkid=861018) para más información.
+Los requisitos de expiración de contraseñas no ayudan, ya que estos requisitos hacen que los usuarios seleccionen contraseñas predecibles, compuestas de palabras secuenciales y números estrechamente relacionados entre sí. En estos casos, la contraseña siguiente puede predecirse en función de la contraseña anterior. Los requisitos de expiración de contraseñas no ofrecen ventajas de contención, ya que los ciberdelincuentes casi siempre usan las credenciales en cuanto las obtienen. Consulte [Momento para reconsiderar los cambios en la contraseña obligatoria](https://go.microsoft.com/fwlink/p/?linkid=861018) para más información.
   
 ### <a name="requiring-long-passwords"></a>Requerir contraseñas largas
 
-Los requisitos de longitud de contraseña (con un tamaño superior a 10 caracteres) pueden dar lugar a un comportamiento de usuario predecible e indeseable. Por ejemplo, es posible que los usuarios que tengan que disponer de una contraseña de 16 caracteres elijan patrones de repetición como **fourfourfourfour** o **passwordpassword** que cumplan con los requisitos de longitud de caracteres y no sean difíciles de adivinar. Además, los requisitos de longitud aumentan las posibilidades de que los usuarios adopten otras prácticas que no sean seguras, como escribir su contraseña, volver a usarlas o almacenarlas sin cifrar en sus documentos. Para animar a los usuarios a considerar una contraseña única, le recomendamos que mantenga un requisito de longitud mínima de 8 caracteres.
+Los requisitos de longitud de contraseña (con un tamaño superior a 10 caracteres) pueden dar lugar a un comportamiento de usuario predecible e indeseable. Por ejemplo, es posible que los usuarios que tengan que disponer de una contraseña de 16 caracteres elijan patrones de repetición como **fourfourfourfour** o **passwordpassword** que cumplan con los requisitos de longitud de caracteres y no sean difíciles de adivinar. Además, los requisitos de longitud aumentan las posibilidades de que los usuarios adopten otras prácticas que no sean seguras, como escribir a mano la contraseñas, volver a usarlas o almacenarlas sin cifrar en sus documentos. Para animar a los usuarios a considerar una contraseña única, le recomendamos que mantenga un requisito de longitud mínima de 8 caracteres.
   
 ### <a name="requiring-the-use-of-multiple-character-sets"></a>Requerir el uso de varios juegos de caracteres
 
@@ -105,7 +105,7 @@ Los requisitos de complejidad de las contraseñas reducen el espacio clave y pro
 
 - Caracteres no alfanuméricos
 
-La mayoría de los usuarios usa patrones similares, por ejemplo, una letra mayúscula en la primera posición, un símbolo en la última y un número las últimas 2. Los ciberdelincuentes lo saben, por lo que ejecutan sus ataques de diccionario utilizando las sustituciones más comunes, "$" para "s", "@" para "a", "1" para "l". Obligar a sus usuarios a elegir una combinación de letras en mayúsculas, minúsculas, dígitos y caracteres especiales tiene un efecto negativo. Algunos requisitos de complejidad incluso evitan que los usuarios usen contraseñas seguras y fáciles de recordar, y obligan a que se encuentren con contraseñas menos seguras y menos fáciles de recordar.
+La mayoría de los usuarios usa patrones similares, por ejemplo, una letra mayúscula en la primera posición, un símbolo en la última y un número las últimas 2. Los ciberdelincuentes lo saben, por lo que ejecutan sus ataques de diccionario usando las sustituciones más comunes: "$" para "s", "@" para "a", "1" para "l". Obligar a sus usuarios a elegir una combinación de letras en mayúsculas, minúsculas, dígitos y caracteres especiales tiene un efecto negativo. Algunos requisitos de complejidad incluso evitan que los usuarios usen contraseñas seguras y fáciles de recordar, y obligan a que se encuentren con contraseñas menos seguras y menos fáciles de recordar.
   
 ## <a name="successful-patterns"></a>Patrones correctos
 
@@ -115,9 +115,9 @@ En cambio, estas son algunas recomendaciones para favorecer la diversidad de con
 
 El requisito de contraseña más importante que debe aplicar a los usuarios al crear contraseñas es prohibir el uso de contraseñas comunes para reducir la susceptibilidad de su organización a ataques de contraseña por fuerza bruta. Las contraseñas de usuario comunes incluyen: **abcdefg**, **contraseña**, **monkey**.
   
-### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>Instruya a los usuarios para no volver a usar contraseñas de la organización en otro lugar
+### <a name="educate-users-to-not-reuse-organization-passwords-anywhere-else"></a>Instruya a los usuarios para que no usen las contraseñas de la organización en otro sitio
 
-Uno de los mensajes más importantes para tener acceso a los usuarios de su organización es no volver a usar la contraseña de su organización en ningún otro lugar. El uso de las contraseñas de organización en sitios web externos aumenta considerablemente la probabilidad de que los ciberdelincuentes puedan comprometer estas contraseñas.
+Uno de los mensajes más importantes que debe darle a los usuarios de su organización es el de no usar la contraseña de la organización en ningún otro sitio. El uso de las contraseñas de la organización en sitios web externos aumenta considerablemente la probabilidad de que los ciberdelincuentes obtengan esas contraseñas.
   
 ### <a name="enforce-multi-factor-authentication-registration"></a>Exigir registro de Multi-Factor Authentication
 

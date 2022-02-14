@@ -25,16 +25,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga estos pasos para quitar la Microsoft 365 de un antiguo empleado.
-ms.openlocfilehash: 0491a28daac7b85c23037a722f3f810bb4eab71d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 52ab851c88d05c33de58d28d566a46b5e8b1710b
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161587"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805849"
 ---
 # <a name="step-6---remove-the-microsoft-365-license-from-a-former-employee"></a>Paso 6: Quitar la licencia Microsoft 365 de un antiguo empleado
 
 Si no quieres pagar una licencia después de que alguien abandone la organización, debes quitar su licencia Microsoft 365 y, a continuación, eliminarla de la suscripción. Puedes asignar una licencia a otro usuario si no la eliminas.
+
+Si las personas autorizadas a las que se les ha concedido permisos de exhibición de documentos electrónicos por motivos legales o de cumplimiento, deben tener acceso al buzón de correo, debe tener asignada una licencia del Plan 2 de Exchange Online (o una licencia del Plan 1 de Exchange Online con una Archivado de Exchange Online  licencia de complemento) para que se pueda aplicar una retención al buzón antes de eliminarla. Después de eliminar la cuenta de usuario, cualquier licencia Exchange Online asociada a la cuenta de usuario estará disponible para asignarla a un nuevo usuario.
   
 Al quitar la licencia, todos los datos de ese usuario se conservan durante 30 días. Puede [acceder](get-access-to-and-back-up-a-former-user-s-data.md) a los datos o [restaurar](restore-user.md) la cuenta si el usuario se vuelve a incorporar. Después de 30 días, todos los datos del usuario (excepto los documentos almacenados en SharePoint Online) se eliminan permanentemente de Microsoft 365 y no se pueden recuperar.
 
@@ -44,15 +46,15 @@ Al quitar la licencia, todos los datos de ese usuario se conservan durante 30 d�
 
 **Para reducir el número de licencias que está pagando** hasta que contrate a otra persona, siga estos pasos:
 
-1. En el Centro de  administración, vaya a la página \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Facturación de sus productos</a> y seleccione la **pestaña** Productos.
+1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de sus productos</a> y seleccione la **pestaña** Productos.
 2. Seleccione la suscripción de la que desea quitar licencias.
 3. En la página de detalles, seleccione **Quitar licencias**.
-4. En el **panel Quitar licencias,** en Nueva cantidad, en el cuadro **Total** de licencias, escriba el número total de licencias que desea para esta suscripción. Por ejemplo, si tiene 25 licencias y desea quitar una de ellas, escriba 24.
-5. Seleccione **Guardar**.
+4. En el **panel Quitar licencias** , en Nueva cantidad, en el cuadro **Total** de licencias, escriba el número total de licencias que desea para esta suscripción. Por ejemplo, si tiene 25 licencias y desea quitar una de ellas, escriba 24.
+5. Haga clic en **Guardar**.
 
 Cuando [agregues otra persona](add-users.md) a tu empresa, se te pedirá que compres una licencia al mismo tiempo, con un solo paso.
 
-Para obtener más información acerca de la administración de licencias de usuario para Microsoft 365 para empresas, vea Asignar licencias a usuarios de [Microsoft 365](../manage/assign-licenses-to-users.md)para empresas y [Unassign licenses from users in Microsoft 365 for business](../manage/remove-licenses-from-users.md).
+Para obtener más información acerca de la administración de licencias de usuario para Microsoft 365 para empresas, vea Asignar licencias a usuarios de [Microsoft 365](../manage/assign-licenses-to-users.md) para empresas y [Unassign licenses from users in Microsoft 365 for business](../manage/remove-licenses-from-users.md).
   
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>Cómo afectan las cuentas de empleados eliminadas a Skype Empresarial
 

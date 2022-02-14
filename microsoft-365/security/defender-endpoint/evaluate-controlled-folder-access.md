@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365initiative-m365-defender
 ms.date: ''
-ms.openlocfilehash: a4e3d03a8293dbfeef53687d6a91fdfcd165a44a
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 996a96f957d7446b0b951d4f1b3a34c822f64f49
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322052"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806665"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Evaluar acceso controlado a carpetas
 
@@ -41,6 +41,9 @@ Este artículo le ayuda a evaluar el acceso controlado a carpetas. Explica cómo
 
 > [!TIP]
 > También puede visitar el sitio web del escenario de demostración de Microsoft Defender para endpoint en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para confirmar que la característica funciona y ver cómo funciona.
+
+> [!NOTE]
+> El sitio de demostración defender para el punto de conexión en demo.wd.microsoft.com está en desuso y se quitará en el futuro.
 
 ## <a name="use-audit-mode-to-measure-impact"></a>Usar el modo de auditoría para medir el impacto
 
@@ -75,7 +78,7 @@ Durante la evaluación, es posible que quieras agregar a la lista de carpetas pr
 
 Vea [Proteger carpetas importantes con acceso controlado](controlled-folders.md) a carpetas para configurar la característica con herramientas de administración, como la directiva de grupo, PowerShell y los proveedores de servicios de configuración mdm (CSP).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 * [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 * [Microsoft Defender para punto de conexión](evaluate-mde.md)

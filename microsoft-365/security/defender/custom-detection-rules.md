@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bd964782303b05e97fe69996bcf3ce2c1a1e9eb8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 473d58cde13f1f776c31184b2b50e74e23810b22
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766937"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807037"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Crear y administrar reglas de detecciones personalizadas
 
@@ -114,9 +114,9 @@ DeviceEvents
 
 Con la consulta en el editor de consultas, seleccione **Crear regla de detección** y especifique los siguientes detalles de alerta:
 
-- **Nombre de detección**: nombre de la regla de detección; este nombre debe ser único.
+- **Nombre de detección**: nombre de la regla de detección; debe ser único
 - **Frecuencia**: intervalo para ejecutar la consulta y realizar acciones. [Vea instrucciones adicionales a continuación](#rule-frequency)
-- **Título de alerta**: título que se muestra con alertas desencadenadas por la regla; este título debe ser único.
+- **Título de alerta**: título que se muestra con alertas desencadenadas por la regla; debe ser único
 - **Gravedad:** riesgo potencial del componente o actividad identificado por la regla
 - **Categoría**: componente de amenaza o actividad identificada por la regla
 - **MITRE ATT&técnicas de CK**: una o más técnicas de ataque identificadas por la regla como se documentan en el marco&[CK de MITRE ATT](https://attack.mitre.org/). Esta sección está oculta para determinadas categorías de alertas, como malware, ransomware, actividad sospechosa y software no deseado

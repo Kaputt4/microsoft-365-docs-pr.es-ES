@@ -16,12 +16,12 @@ ms.date: 02/03/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c286195761a07f1a0b5b1f2524b77568f549dc3b
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: f29cf5f77acd52a4ff3ccc8384f3c64861e48b64
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354593"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806041"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurar y validar las conexiones de red del Antivirus de Windows Defender
 
@@ -35,6 +35,9 @@ Para garantizar Antivirus de Microsoft Defender protección entregada en la nube
 > [!IMPORTANT]
 > Este artículo contiene información sobre cómo configurar las conexiones de red solo para Antivirus de Microsoft Defender. Si usa Microsoft Defender para Endpoint (que incluye Antivirus de Microsoft Defender), consulte [Configure device proxy and Internet connectivity settings for Defender for Endpoint](configure-proxy-internet.md).
 
+
+> [!NOTE]
+> El sitio de demostración defender para el punto de conexión en demo.wd.microsoft.com está en desuso y se quitará en el futuro.
 
 ## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>Permitir conexiones al servicio Antivirus de Microsoft Defender nube
 

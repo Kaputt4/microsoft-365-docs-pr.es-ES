@@ -15,24 +15,24 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 3a9ca21c6cc59e2516220dd04e659d22df0a74e6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 496d9bf729eaaff6cf12e9734ae80eedacf98a63
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164867"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806125"
 ---
 # <a name="device-control-printer-protection"></a>Protección de la impresora de control de dispositivo
 
 **Se aplica a**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender para Endpoint Device Control Printer Protection bloquea la impresión de personas a través de impresoras no corporativas o impresoras USB no aprobadas.
 
 ## <a name="licensing"></a>Licencias
 
-Antes de empezar a usar Printer Protection, debe confirmar su [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). Para obtener acceso y usar la protección de impresoras, debe tener lo siguiente:
+Antes de empezar a usar Printer Protection, debes [confirmar tu Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). Para obtener acceso y usar la protección de impresoras, debe tener lo siguiente:
 
 - Microsoft 365 E3 para la implementación de directivas/funcionalidad
 - Microsoft 365 E5 para informes
@@ -76,7 +76,7 @@ Puedes implementar la directiva a través de la directiva de grupo o Intune.
 |**Lista de dispositivos de impresión conectados a USB aprobados**\*|Permitir una impresora USB específica|Sí|Sí|Sí|Sí|
 |
 
-\*Esta directiva debe usarse junto con **Habilitar restricciones de impresión del control de dispositivo.**
+\* Esta directiva debe usarse junto con **Habilitar restricciones de impresión del control de dispositivos**.
 
 ## <a name="deploy-policy-via-intune"></a>Implementar la directiva a través de Intune
 
@@ -92,7 +92,7 @@ En Intune, actualmente Device Control Printer Protection solo admite OMA-URI.
 
   `./Vendor/MSFT/Policy/Config/Printers/EnableDeviceControlUser`
 
-La cadena de compatibilidad de CSP con `<enabled/>` :
+La cadena de compatibilidad de CSP con `<enabled/>`:
 
 :::image type="content" source="../../media/customeditrow.png" alt-text="fila de edición personalizada.":::
 
@@ -106,7 +106,7 @@ La cadena de compatibilidad de CSP con `<enabled/>` :
 
   `./Vendor/MSFT/Policy/Config/Printers/ApprovedUsbPrintDevicesUser`
 
-La cadena de compatibilidad de CSP con impresoras USB aprobadas a través de la propiedad "ApprovedUsbPrintDevices", por `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872">` ejemplo:
+La cadena de compatibilidad de CSP con impresoras USB aprobadas a través de la propiedad "ApprovedUsbPrintDevices", por ejemplo `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`:
 
 :::image type="content" source="../../media/editrow.png" alt-text="editar fila.":::
 
@@ -118,11 +118,11 @@ Si el dispositivo no está unido a Intune, también puedes implementar la direct
 
 - Aplicar directiva sobre el equipo:
 
-  Impresora de plantillas administrativas de configuración \> \> del equipo: Habilitar restricciones de impresión del control de dispositivos
+  Impresora de plantillas administrativas \> de configuración del \> equipo: Habilitar restricciones de impresión del control de dispositivos
 
 - Aplicar directiva sobre el usuario:
 
-  Configuración de usuario \> Plantillas administrativas \> Impresoras del panel de \> control: Habilitar restricciones de impresión del control de dispositivos
+  Configuración de usuario \> Plantillas administrativas \> Impresoras del panel de control \> : Habilitar restricciones de impresión del control de dispositivos
 
 :::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="habilitar las restricciones de impresión de dispositivos.":::
 
@@ -130,11 +130,11 @@ Si el dispositivo no está unido a Intune, también puedes implementar la direct
 
 - Aplicar directiva sobre el equipo:
 
-  Impresora de plantillas administrativas de configuración \> \> del equipo: lista de dispositivos de impresión conectados a USB aprobados
+  Impresora de plantillas administrativas \> de configuración del \> equipo: lista de dispositivos de impresión conectados a USB aprobados
 
 - Aplicar directiva sobre el usuario:
 
-  Impresoras de panel de control de plantillas administrativas de configuración \> \> de \> usuario: lista de dispositivos de impresión conectados a USB aprobados
+  Impresoras de \> panel de \> control de plantillas administrativas \> de configuración de usuario: lista de dispositivos de impresión conectados a USB aprobados
 
 :::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="lista de dispositivos de impresión conectados usb aprobados.":::
 

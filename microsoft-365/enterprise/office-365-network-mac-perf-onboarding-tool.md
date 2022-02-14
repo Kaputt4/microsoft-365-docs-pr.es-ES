@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de prueba de conectividad de red
-ms.openlocfilehash: bea7922baa1e92ffcaaff58678141758906ab955
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 602ab10c9741126360861586776863cb43ce162e
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281464"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806209"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365 de prueba de conectividad de red
 
@@ -213,7 +213,7 @@ Esto prueba la conectividad UDP a la puerta Microsoft Teams de servicio. Si esto
 
 #### <a name="packet-loss"></a>Pérdida de paquetes
 
-Muestra la pérdida de paquetes UDP medida en una llamada de audio de prueba de 10 segundos desde el cliente a la puerta principal Microsoft Teams servicio. Esto debe ser inferior al **1,00 %** para un pase.
+Muestra la pérdida de paquetes UDP medida en una llamada de audio de prueba de 10 segundos desde el cliente a la puerta Microsoft Teams de servicio. Esto debe ser inferior al **1,00 %** para un pase.
 
 #### <a name="latency"></a>Latencia
 

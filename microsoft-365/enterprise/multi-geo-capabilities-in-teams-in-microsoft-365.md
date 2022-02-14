@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-spintranet
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo Teams funciona con Microsoft 365 Multi-Geo.
-ms.openlocfilehash: e561332052f226fe98d0304bd6a76d6b76cfd1c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0315a9ff0429c5e00c662bd7345a3b6a39a591c3
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177284"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805873"
 ---
 # <a name="multi-geo-capabilities-in-microsoft-teams"></a>Capacidades multige geográficas en Microsoft Teams
 
-Las funcionalidades multige geográficas de Teams permiten que Teams datos de chat se almacenen en reposo en una ubicación geográfica especificada. Los datos de chat constan de mensajes de chat, incluidos mensajes privados, mensajes de canal e imágenes usadas en chats.
+Las funcionalidades multige geográficas Teams permiten Teams datos de chat que se almacenan en reposo en una ubicación geográfica especificada. Los datos de chat constan de mensajes de chat, incluidos mensajes privados, mensajes de canal e imágenes usadas en chats.
 
 Teams la ubicación de datos preferida (PDL) para que los usuarios y grupos determinen dónde almacenar los datos. Si la PDL no está establecida o no es válida, los datos se almacenan en la ubicación central del inquilino.
 
@@ -51,9 +51,9 @@ Get-MultiGeoRegion -EntityType User -EntityId <UPN>
 
 ## <a name="channel-messages"></a>Mensajes de canal
 
-Cada Microsoft 365 tiene una ubicación de datos preferida (PDL) que indica la ubicación geográfica donde se almacenarán los datos relacionados. Teams usa la PDL para el grupo asociado a cada equipo para determinar dónde almacenar los datos de mensajería de canal para ese equipo. Esto incluye canales privados, así como chat que se produce dentro de una reunión de canal.
+Cada Microsoft 365 tiene una ubicación de datos preferida (PDL) que indica la ubicación geográfica donde se almacenarán los datos relacionados. Teams usa la PDL para el grupo asociado a cada equipo para determinar dónde almacenar los datos de mensajería de canal para ese equipo. Esto incluye canales privados y chat que se produce dentro de una reunión de canal.
 
-Cuando un usuario crea un nuevo equipo, la PDL de ese usuario determina qué PDL se asigna al grupo Microsoft 365 usuario. La PDL de grupo determina dónde se almacenan los datos de ese equipo. Si la PDL de ese usuario cambia más adelante, no se cambia la PDL del grupo.
+Cuando un usuario crea un nuevo equipo, la PDL de ese usuario determina qué PDL se asigna al grupo Microsoft 365 usuario. La PDL de grupo determina dónde se almacenan los datos de ese equipo. Si la PDL de ese usuario cambia más adelante, la PDL del grupo no se cambia.
 
 En el caso de los equipos existentes, si un administrador agrega o modifica la PDL para el grupo de Microsoft 365 que hace una copia de seguridad de un equipo, los datos de mensajería de canal de ese equipo se agregan a una cola de migración que se va a mover a la ubicación geográfica especificada.
 
@@ -69,7 +69,7 @@ Get-MultiGeoRegion -EntityType Group -EntityId <GroupObjectId>
 
 Teams Multi-Geo es perfecto para el usuario final. Una vez que cambie la PDL de un usuario o un grupo, los datos respectivos se pondrán en cola para la migración y la migración se producirá automáticamente sin ningún impacto para el usuario o su cliente de Teams incluso si están activos mientras se produce la migración.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Configuración de inquilino de Microsoft 365 Multi-Geo](/microsoft-365/enterprise/multi-geo-tenant-configuration)
 

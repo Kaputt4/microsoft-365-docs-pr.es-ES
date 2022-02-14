@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: Obtenga información sobre cómo usar técnicas de minificación y agrupación con Web Essentials para reducir las solicitudes HTTP y el tiempo que tarda en cargar páginas en SharePoint Online.
-ms.openlocfilehash: bf9c997fc5245fbe58e1ffd8c306f9818783bd3f
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: fabf690f523cabf67fe775bbd1a10251a477f633
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281476"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807121"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minificación y agrupación en SharePoint Online
 
 En este artículo se describe cómo usar técnicas de minificación y agrupación con Web Essentials para reducir el número de solicitudes HTTP y reducir el tiempo necesario para cargar páginas en SharePoint Online.
   
-Al personalizar el sitio web, puede terminar agregando un gran número de archivos adicionales al servidor para admitir la personalización. Agregar JavaScript, CSS e imágenes adicionales aumenta el número de solicitudes HTTP al servidor, lo que a su vez aumenta el tiempo necesario para mostrar una página web. Si tiene varios archivos del mismo tipo, puede agrupar estos archivos para que la descarga de estos archivos sea más rápida.
+Al personalizar el sitio web, puede terminar agregando un gran número de archivos adicionales al servidor para admitir la personalización. Agregar javascript, CSS e imágenes adicionales aumenta el número de solicitudes HTTP al servidor, lo que a su vez aumenta el tiempo que se tarda en mostrar una página web. Si tiene varios archivos del mismo tipo, puede agrupar estos archivos para que la descarga de estos archivos sea más rápida.
   
 Para los archivos JavaScript y CSS, también puede usar un enfoque denominado minification, donde se reduce el tamaño total de los archivos quitando espacios en blanco y otros caracteres que no son necesarios.
   

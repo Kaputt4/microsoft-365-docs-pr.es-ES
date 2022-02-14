@@ -27,12 +27,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: Este artículo contiene información para los usuarios que usan SharePoint Server 2007 para ayudarles a planear su actualización.
-ms.openlocfilehash: 9f374e3e4f2282a7740575c60eb52e7095321c92
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9c1c4c90443b632b490ac7a510394f367f688fca
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210202"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805825"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>SharePoint opciones de migración de 2007 a tener en cuenta
 
@@ -56,7 +56,7 @@ Existen varios métodos para actualizar un SharePoint de servidor. Si tiene una 
     
 - Mover manualmente datos entre colecciones de sitios o bibliotecas
     
-- FastTrack Actualización del asistente a Microsoft 365 ([SharePoint Asesor de implementación en línea](https://aka.ms/spoguidance))
+- FastTrack actualización del Asistente para Microsoft 365 ([SharePoint de implementación en línea](https://aka.ms/spoguidance))
     
 - API de migración a SharePoint Online (SPO) en Microsoft 365
     
@@ -65,26 +65,26 @@ Existen varios métodos para actualizar un SharePoint de servidor. Si tiene una 
 El conocimiento de lo que hace y se usa en la granja de servidores es una fuerza táctica a la hora de actualizar. La forma en que las personas usan SharePoint granja de servidores le ayudará a elegir entre sus opciones.
   
 > [!TIP]
-> Microsoft Office SharePoint Server 2007 también tiene una actualización gradual no cubierta aquí. Para ver una lista de artículos de actualización específicos de pasos, vea el plan de SharePoint [Server 2007 end of support .](sharepoint-2007-end-of-support.md) 
+> Microsoft Office SharePoint Server 2007 también tiene una actualización gradual no cubierta aquí. Para ver una lista de artículos de actualización específicos de pasos, vea [SharePoint Server 2007 end of support Roadmap](sharepoint-2007-end-of-support.md). 
   
-Recuerde comprobar el ciclo [de vida del](https://support.microsoft.com/lifecycle/search) producto y los requisitos del sistema para cualquier versión SharePoint a la que actualice. Esto es para que tenga en cuenta cuándo será necesaria la siguiente actualización (por ejemplo, si hace una pausa en un producto heredado como SharePoint Server 2010 para planear más actualizaciones, asegúrese de conocer su fecha de finalización de soporte técnico) y de estar seguro de que tiene hardware compatible con el plan. 
+Recuerda comprobar el ciclo de [vida del](https://support.microsoft.com/lifecycle/search) producto y los requisitos del sistema para cualquier versión SharePoint a la que estés actualizando. Esto es para que tenga en cuenta cuándo será necesaria la siguiente actualización (por ejemplo, si hace una pausa en un producto heredado como SharePoint Server 2010 para planear más actualizaciones, asegúrese de conocer su fecha de finalización de soporte técnico) y de estar seguro de que tiene hardware compatible con el plan. 
   
-Si está planeando realizar la transición de algunos sitios de SharePoint a Microsoft 365 en la nube, este es un momento para marcar un vínculo a las descripciones de servicio Microsoft 365 y [Office 365](/office365/servicedescriptions/office-365-service-descriptions-technet-library). Necesitará las descripciones de servicio para obtener información sobre las características de SharePoint Online y cómo pueden diferir de las características locales SharePoint Server. Actualizar granjas Microsoft Office SharePoint server 2007 funcionales. Si la instalación tiene sitios rotos, arréstelos antes de la actualización.
+Si está planeando realizar la transición de algunos sitios de SharePoint a Microsoft 365 en la nube, este es un momento para marcar un vínculo a las descripciones del servicio Microsoft 365 y [Office 365](/office365/servicedescriptions/office-365-service-descriptions-technet-library). Necesitará las descripciones de servicio para obtener información sobre las características de SharePoint Online y cómo pueden diferir de las características locales SharePoint Server. Actualizar granjas Microsoft Office SharePoint server 2007 funcionales. Si la instalación tiene sitios rotos, arréstelos antes de la actualización.
   
 ## <a name="a-note-about-managing-risk"></a>Una nota sobre la administración de riesgos
 
-Los métodos como "en paralelo" son importantes en el esquema de lógica de actualización. Al actualizar en paralelo, se mantiene la granja de servidores de Microsoft Office SharePoint Server 2007, pero se crea una granja de servidores con la siguiente versión (SharePoint Server 2010) en hardware nuevo. Esto ayuda de tres maneras:
+Los métodos como "en paralelo" son importantes en el esquema de lógica de actualización. Al actualizar en paralelo, se mantiene la granja de servidores de Microsoft Office SharePoint Server 2007, pero se compila una granja de servidores a partir de la siguiente versión (SharePoint Server 2010) en el nuevo hardware. Esto ayuda de tres maneras:
   
 1. Tiene un lugar para realizar copias de seguridad de las bases de datos de Microsoft Office SharePoint Server 2007 para actualizarlas por separado, mediante la base de datos adjunta.
     
-2. Si se explica que solo un pequeño número de bibliotecas de documentos críticas y otra información están en uso en la granja de servidores de Microsoft Office SharePoint Server 2007, puede elegir mover manualmente datos de Microsoft Office SharePoint Server 2007 a SharePoint Server 2010, o tomar solo sitios y webs específicos a la siguiente versión (lo que puede facilitar el trabajo).
+2. Si se sabe que solo se usan algunas bibliotecas de documentos críticas y otra información en la granja de servidores de Microsoft Office SharePoint Server 2007, puede elegir mover manualmente datos de Microsoft Office SharePoint Server 2007 a SharePoint  Server 2010 o llevar solo sitios y webs específicos a la siguiente versión (lo que puede facilitar el trabajo).
     
 3. Cuanto menos haga en la granja de servidores de Microsoft Office SharePoint Server 2007, más seguros son los datos que contiene la granja de servidores al actualizar.
     
 Métodos como In-Place actualización actuarán directamente en la granja de servidores de Microsoft Office SharePoint Server 2007, lo que le dará menos opciones fáciles para abandonar una ruta de acceso y empezar de nuevo con su entorno prístina. En la medida de lo posible, cree algunas medidas de seguridad (como realizar y probar copias de seguridad del entorno original). Por ejemplo, si la granja de servidores de Microsoft Office SharePoint Server 2007 es virtual y se duplica con fines de copia de seguridad y restauración, haga una copia de seguridad y restaure las bases de datos más actuales antes de la ventana de servicio para la actualización. Saber que tiene la opción de restaurar copias de seguridad de bases de datos no solo le dará un error seguro, sino que puede darle tranquilidad.
   
 > [!TIP]
-> Existen documentos de procedimientos recomendados para la actualización de [Microsoft Office SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc261992(v=office.12)), [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc261992(v=office.14)), [SharePoint Server 2013](/SharePoint/upgrade-and-update/best-practices-for-upgrading-from-sharepoint-2010-to-sharepoint-2013)y [SharePoint Server 2016](/SharePoint/upgrade-and-update/best-practices-for-upgrade). También puede buscar socios de [Microsoft](https://partnercenter.microsoft.com/pcv/search) que tengan experiencia con actualizaciones o Microsoft 365 migración. 
+> Existen documentos de procedimientos recomendados para la actualización de [Microsoft Office SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc261992(v=office.12)), [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc261992(v=office.14)), [SharePoint Server 2013](/SharePoint/upgrade-and-update/best-practices-for-upgrading-from-sharepoint-2010-to-sharepoint-2013) y [SharePoint Server 2016](/SharePoint/upgrade-and-update/best-practices-for-upgrade). También puede buscar socios de [Microsoft](https://partnercenter.microsoft.com/pcv/search) que tengan experiencia con actualizaciones o Microsoft 365 migración. 
   
 ## <a name="make-your-plan"></a>Hacer su plan
 
@@ -95,7 +95,7 @@ Si necesita actualizar, necesita un plan y un tamaño no se ajusta a todos en es
   
 ### <a name="first-know-your-farm"></a>En primer lugar, conozca la granja de servidores
 
-Al actualizar, la toma de decisiones debe basarse en lo que la granja de servidores hace para su organización. ¿Qué necesidad satisface? ¿Cuál es su función? Cada granja de servidores de la empresa puede tener un rol diferente. Algunas de las SharePoint granjas de servidores pueden ser *críticas,* otras pueden ser archivos de archivos; allí para el mantenimiento seguro. O bien, si la granja de servidores rellena muchos roles a la vez, es posible que necesite saber qué hacen las colecciones de sitios, webs o incluso bibliotecas de documentos, las personalizaciones y lo importantes que son. Analizar los datos en este nivel puede parecer mucho trabajo, pero ahorra tiempo y esfuerzo para dominar el dominio antes de actualizarlo o migrarlo. Una vez que conozca todas las partes en movimiento y los bits más importantes, también sabrá lo que ha superado y puede dejar atrás. Ese conocimiento solo le beneficiará en el futuro. 
+Al actualizar, la toma de decisiones debe basarse en lo que la granja de servidores hace para su organización. ¿Qué necesidad satisface? ¿Cuál es su función? Cada granja de servidores de la empresa puede tener un rol diferente. Algunas de las SharePoint granjas de servidores pueden ser *críticas*, otras pueden ser archivos de archivos, ya que existen para el mantenimiento seguro. O bien, si la granja de servidores rellena muchos roles a la vez, es posible que necesite saber qué hacen las colecciones de sitios, webs o incluso bibliotecas de documentos, las personalizaciones y lo importantes que son. Analizar los datos en este nivel puede parecer mucho trabajo, pero ahorra tiempo y esfuerzo para dominar el dominio antes de actualizarlo o migrarlo. Una vez que conozca todas las partes en movimiento y los bits más importantes, también sabrá lo que ha superado y puede dejar atrás. Ese conocimiento solo le beneficiará en el futuro. 
   
 Por lo tanto, ¿qué dicen los usuarios que es lo más importante SharePoint granja de servidores?
   
@@ -111,15 +111,15 @@ Por lo tanto, ¿qué dicen los usuarios que es lo más importante SharePoint gra
     
 - Personalizaciones
     
-Si ejecuta algo esencial para su empresa desde la granja de servidores de SharePoint, diga que actúa como un gran catálogo de datos críticos sobre los requisitos de servicio de cliente, puede poner un tick junto a "Aplicaciones críticas", pero también "Disponibilidad", es decir, su empresa se vería afectada si no pudiera usar SharePoint durante un tiempo. Del mismo modo, puede comprobar "Personalizaciones" porque los servicios críticos que ofrece la granja de servidores se basan en código personalizado, definiciones de sitio o una serie de personalizaciones que funcionan conjuntamente.
+Si ejecuta algo esencial para su empresa desde la granja de servidores de SharePoint, diga que actúa como un gran catálogo de datos críticos sobre los requisitos de servicio de cliente, puede poner una marca de graduación junto a "Aplicaciones críticas", pero también "Disponibilidad", es decir, su empresa se vería afectada si no pudiera usar SharePoint durante un tiempo. Del mismo modo, puede comprobar "Personalizaciones" porque los servicios críticos que ofrece la granja de servidores se basan en código personalizado, definiciones de sitio o muchas personalizaciones que funcionan juntas.
   
-Si SharePoint satisfacer esas necesidades sin que tenga que hacer nada fuera del uso de lo que está integrado en el software y, por lo general, lo actualiza y lleva a cabo una administración y mantenimiento normales, puede que haya elegido "SharePoint integrado". Este también puede ser su motivo para sentarse en una versión anterior de SharePoint. En otras palabras, ya hace lo que necesita y no ha necesitado actualizar hasta ahora, en Microsoft Office SharePoint Server 2007 final de soporte técnico.
+Si SharePoint satisfacer esas necesidades sin su implicación fuera del uso de lo que está integrado en el software y, por lo general, lo actualiza y lleva a cabo una administración y mantenimiento normales, puede que haya elegido "SharePoint integrado", esto también puede ser su motivo para sentarse en una versión anterior de SharePoint. En otras palabras, ya hace lo que necesita y no ha necesitado actualizar hasta ahora, en Microsoft Office SharePoint Server 2007 final de soporte técnico.
   
 Al enumerar estas cosas con viñetas, se crean criterios para la actualización. En otras palabras, cualquier actualización tendría que cumplir esta barra para ser considerada. Esto le ofrece una forma de descartar métodos que actualmente no se ajustan a sus necesidades.
   
 ### <a name="a-simple-sample-plan"></a>Un plan de ejemplo simple
 
-Es posible que deba haber un mayor consenso con el liderazgo y otros administradores en la ruta que tomará SharePoint actualización. SharePoint Los administradores de servidores suelen cooperar Microsoft SQL Server administradores, trabajar con equipos de redes y seguridad y mucho más. Si hay muchas partes interesadas, es posible que deba crear un acuerdo para el plan de actualización y migración o ajustarlo. Por ejemplo, si migra datos para que parte de su empresa use SharePoint Online en Microsoft 365, es probable que deba realizarse una optimización del rendimiento o pruebas dentro de la red. Los equipos afectados deben estar informados con antelación.
+Es posible que deba haber un mayor consenso con el liderazgo y otros administradores en la ruta que tomará SharePoint actualización. SharePoint administradores de servidor a menudo colaboran con Microsoft SQL Server administradores, trabajan con equipos de redes y seguridad, etc. Cuando hay muchas partes interesadas, es posible que deba crear un acuerdo para el plan de actualización y migración o ajustarlo. Por ejemplo, si migra datos para que parte de su empresa use SharePoint Online en Microsoft 365, es probable que deba realizarse una optimización del rendimiento o pruebas dentro de la red. Los equipos afectados deben estar informados con antelación.
   
 En mi ejemplo simple, mostro una SharePoint de administrador y, a continuación, enumero el plan que todas las partes interesadas acordaron. Para mayor claridad, documente sus acuerdos y decisiones.
   
@@ -129,9 +129,9 @@ Mi lista de viñetas "más importante":
   
 - Disponibilidad, características integradas para SharePoint y estándares de cumplimiento.
     
-- La mayoría de los datos se encuentra en tres colecciones de sitios, con un área de reuniones usada por un equipo de desarrollo especialmente importante y en uso intenso en varias zonas horarias de todo el mundo.
+- La mayoría de los datos se encuentra en tres colecciones de sitios, con un área de reuniones usada por un equipo de desarrollo importante y en uso intenso en varias zonas horarias de todo el mundo.
     
-- Hay otros diecisiete sitios que se usan ampliamente.
+- Hay otros 17 sitios que se usan ampliamente.
     
 - Dos bibliotecas de documentos (Área de reuniones y Documentos en la colección de sitios raíz) son más grandes (más de 8000 documentos cada una). Tenemos un gran número de documentos archivados y una lista con datos adjuntos de hoja de cálculo.
     
@@ -146,8 +146,8 @@ Mi lista de viñetas "más importante":
 | Sí | No |
 |:-----|:-----|
 |Actualizar bases de datos con base de datos adjunta  <br/> |Actualización local  <br/> |
-|Actualización con granjas de servidores en paralelo  <br/> |Actualización híbrida  <br/> |
-|API de migración a SPO en Microsoft 365 (para datos de sitio personales)  <br/> |SharePoint Híbrido (no necesario todavía)  <br/> |
+|Actualizar con granjas de servidores en paralelo  <br/> |Actualización híbrida  <br/> |
+|API de migración a SPO en Microsoft 365 (para datos de sitio personales)  <br/> |SharePoint híbrido (aún no es necesario)  <br/> |
 |Algunas migraciones de datos manuales a SharePoint Online para datos críticos  <br/> |FastTrack actualización del asistente a Microsoft 365  <br/> |
    
  **Mi plan propuesto:**

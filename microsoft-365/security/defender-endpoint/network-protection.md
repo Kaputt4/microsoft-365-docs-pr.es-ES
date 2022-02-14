@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: overview
 ms.collection: m365initiative-m365-defender
 ms.date: ''
-ms.openlocfilehash: dfa84cf167dfdb366ad4a7c636a85a30b6de24a4
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: b94e7f959c44e44e5b61dfd0536b3c1077d0edc5
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326938"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807205"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -42,6 +42,9 @@ La protección de red amplía la protección de [la protección web](web-protect
 
 > [!TIP]
 > Consulta el sitio de prueba de Microsoft Defender para endpoint en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para ver cómo funciona la protección de red.
+
+> [!NOTE]
+> El sitio de demostración defender para el punto de conexión en demo.wd.microsoft.com está en desuso y se quitará en el futuro.
 
 ## <a name="requirements-for-network-protection"></a>Requisitos para la protección de red
 
@@ -149,7 +152,7 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Evaluar la protección de](evaluate-network-protection.md) red | Realice un escenario rápido que demuestre cómo funciona la característica y qué eventos se crearían normalmente.
 - [Habilitar la protección de](enable-network-protection.md) red | Use directivas de grupo, PowerShell o CSP mdm para habilitar y administrar la protección de red en la red.

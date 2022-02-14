@@ -16,24 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use la acción de auditoría del buzón MailItemsAccessed para realizar investigaciones forenses de cuentas de usuarios comprometidas.
-ms.openlocfilehash: 8446c933f71717e57850bbbf2cce49391e26782c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8bfba164bf3bfb0f4fa4bea687d0fe040cff4836
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872626"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806029"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Usar auditoría avanzada para investigar cuentas comprometidas
 
 Una cuenta de usuario comprometida (también denominada *adquisición de cuenta*) es un tipo de ataque en el que un atacante obtiene acceso a una cuenta de usuario y opera como el usuario. En ocasiones, estos tipos de ataques provocan más daño de lo que el atacante podría haber planeado. Al investigar cuentas de correo electrónico comprometidas, tiene que asumir que se han comprometido más datos de correo de los que se indican mediante el seguimiento de la presencia real del atacante. Según el tipo de datos de los mensajes de correo electrónico, tiene que asumir que la información confidencial se ha visto comprometida o puede enfrentarse a sanciones, a menos que pueda demostrar que la información confidencial no se ha expuesto. Por ejemplo, las organizaciones reguladas por HIPAA se enfrentan a multas considerables si hay evidencia de que la información sanitaria del paciente (PHI) se ha expuesto. En estos casos, es poco probable que los atacantes estén interesados en la PHI, pero las organizaciones deben informar de las vulneraciones de datos, a menos que puedan probar lo contrario.
 
-Para ayudarle con la investigación de las cuentas de correo electrónico, ahora estamos realizando auditorías de los accesos a los datos por parte de protocolos de correo y clientes con la acción de auditoría del buzón *MailItemsAccessed*. Esta nueva acción de auditoría ayudará a los investigadores a entender mejor las vulneraciones de datos del correo electrónico y le ayudarán a identificar el alcance de los elementos de correo específicos que se pueden ver comprometidos. El objetivo del uso de esta nueva acción de auditoría son las actividades forenses de defensa para ayudarle a confirmar que no se han comprometido los datos de un elemento de correo determinado. Si un atacante ha obtenido acceso a una parte específica del correo, Exchange Online realiza una auditoría del evento incluso aunque no haya ninguna indicación de que el elemento de correo se haya leído.
+Para ayudarle a investigar las cuentas de correo electrónico en peligro, estamos realizando auditorías de los accesos a los datos de correo por parte de protocolos de correo y clientes con la acción de auditoría de buzones de correo *MailItemsAccessed*. Esta nueva acción de auditoría ayudará a los investigadores a entender mejor las vulneraciones de datos del correo electrónico y le ayudarán a identificar el alcance de los elementos de correo específicos que se pueden ver comprometidos. El objetivo del uso de esta nueva acción de auditoría son las actividades forenses de defensa para ayudarle a confirmar que no se han comprometido los datos de un elemento de correo determinado. Si un atacante ha obtenido acceso a una parte específica del correo, Exchange Online realiza una auditoría del evento incluso aunque no haya ninguna indicación de que el elemento de correo se haya leído.
 
-## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>La acción de auditoría del buzón MailItemsAccessed
+## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>La acción de auditoría de buzones MailItemsAccessed
 
 La nueva acción MailItemsAccessed forma parte de la nueva función de [Auditoría avanzada](advanced-audit.md). Forma parte de las [auditorías del buzón de Exchange](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) y está habilitada de forma predeterminada para los usuarios que tienen asignada una licencia de Office 365 o Microsoft 365 E5 o para las organizaciones con una suscripción al complemento de Cumplimiento de Microsoft 365 E5.
 
-La acción de auditoría del buzón MailItemsAccessed abarca todos los protocolos de correo: POP, IMAP, MAPI, EWS, Exchange ActiveSync y REST. También cubre los dos tipos de acceso al correo: *sincronización* y *enlace*.
+La acción de auditoría de buzones MailItemsAccessed abarca todos los protocolos de correo: POP, IMAP, MAPI, EWS, Exchange ActiveSync y REST. También cubre los dos tipos de acceso al correo: *sincronización* y *enlace*.
 
 ### <a name="auditing-sync-access"></a>Auditoría del acceso de sincronización
 
@@ -85,7 +85,7 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 
 Estos son los pasos para usar los registros de auditoría de MailItemsAccessed para investigar un ataque a un usuario comprometido. Cada paso muestra la sintaxis de comando para los cmdlets **Search-UnifiedAuditLog** o **Search-MailboxAuditLog**.
 
-1. Compruebe si el buzón se ha limitado. Si es así, algunos de los registros de auditoría de buzón no se han registrado. En el caso de que los registros de auditoría tengan "IsThrottled" establecido en "true", debe suponer que, durante un período de 24 horas después de que se haya generado el registro, el acceso al buzón no se ha auditado y que todos los datos de correo se han visto comprometidos.
+1. Compruebe si el buzón se ha limitado. Si es así, significa que algunos de los registros de auditoría de buzones no se han registrado. En el caso de que los registros de auditoría tengan "IsThrottled" establecido en "true", debe suponer que, durante un período de 24 horas después de que se haya generado el registro, el acceso al buzón no se ha auditado y que todos los datos de correo se han visto comprometidos.
 
    Para buscar registros de MailItemsAccessed en los que el buzón estaba limitado, ejecute el siguiente comando:
 
@@ -149,7 +149,7 @@ Estos son los pasos para usar los registros de auditoría de MailItemsAccessed p
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*MailAccessType:Bind*"} | FL
    ```
 
-   Los mensajes de correo electrónico a los que se ha accedido se identifican por su ID. de mensaje de Internet. También puede comprobar si los registros de auditoría tienen el mismo contexto que los de la otra actividad del atacante. Para más información, vea la sección [Identificar los contextos de acceso de diferentes registros de auditoría](#identifying-the-access-contexts-of-different-audit-records).
+   Los mensajes de correo electrónico a los que se ha accedido se identifican por su id. de mensaje de Internet. También puede comprobar si los registros de auditoría tienen el mismo contexto que los registros para otras actividades del atacante. Para más información, vea la sección [Identificar los contextos de acceso de diferentes registros de auditoría](#identifying-the-access-contexts-of-different-audit-records).
 
    Puede usar los datos de auditoría para las operaciones de enlace de dos maneras diferentes:
 
@@ -173,12 +173,12 @@ Los registros de auditoría duplicados para las mismas operaciones de enlace que
 |MailAccessType|Si el acceso es una operación de enlace o sincronización.|
 |MailboxUPN|El UPN del buzón en que se encuentra el correo que se está leyendo.|
 |User|UPN del usuario que lee el mensaje.|
-|SessionId|El ID. de la sesión le ayuda a diferenciar las acciones de un atacante y las actividades cotidianas de un usuario en el mismo buzón (en caso de que una cuenta sea comprometida). Para obtener más información sobre las sesiones, vea [Contextualización de la actividad del atacante en sesiones de Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801).|
+|SessionId|El id. de la sesión ayuda a diferenciar las acciones de un atacante y las actividades cotidianas de un usuario en el mismo buzón (en caso de que una cuenta esté en peligro). Para más información sobre las sesiones, vea [Contextualizar la actividad del atacante en sesiones de Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801).|
 |
 
 ## <a name="identifying-the-access-contexts-of-different-audit-records"></a>Identificar los contextos de acceso de diferentes registros de auditoría
 
-Es común que un atacante pueda obtener acceso a un buzón al mismo tiempo que el propietario del buzón obtiene acceso a él. Para diferenciar el acceso del atacante y el del propietario del buzón, hay propiedades de registro de auditoría que definen el contexto del acceso. Como se ha explicado anteriormente, cuando los valores de estas propiedades son diferentes, incluso si la actividad tiene lugar en el intervalo de agregación, se generan registros de auditoría independientes. En el ejemplo siguiente, hay tres registros de auditoría diferentes. Cada uno se diferencia por las propiedades de Id. de sesión y ClientIPAddress. También se identifican los mensajes a los que se ha accedido.
+Es común que un atacante pueda obtener acceso a un buzón al mismo tiempo que el propietario del buzón obtiene acceso a él. Para diferenciar el acceso del atacante y el del propietario del buzón, hay propiedades de registro de auditoría que definen el contexto del acceso. Como se ha explicado anteriormente, cuando los valores de estas propiedades son diferentes, incluso si la actividad tiene lugar en el intervalo de agregación, se generan registros de auditoría independientes. En el ejemplo siguiente, hay tres registros de auditoría diferentes. Cada uno se diferencia por las propiedades de id. de sesión y ClientIPAddress. También se identifican los mensajes a los que se ha accedido.
 
 <br>
 

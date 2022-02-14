@@ -26,12 +26,12 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: Obtenga más información sobre los dominios (dominio de onmicrosoft y dominio de transferencia) al encontrar respuestas a sus preguntas en preguntas más frecuentes.
-  ms.openlocfilehash: d2af94766d11e643856c3139c87ddc643057b957
-  ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+  ms.openlocfilehash: 7fcc70ac6162a038e65646a26a2a6441be8081b9
+  ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 02/09/2022
-  ms.locfileid: "62464291"
+  ms.lasthandoff: 02/14/2022
+  ms.locfileid: "62806545"
 title: Preguntas más frecuentes de dominios
 summary: "\n\nEste artículo contiene respuestas a las preguntas más frecuentes acerca de los dominios de Microsoft 365.\n\nSi no encuentra una respuesta a su pregunta, infórmenos de ello dejando un comentario y lo agregaremos a la lista.\n"
 sections:
@@ -42,7 +42,9 @@ sections:
   - question: ¿Cómo puedo validar registros SPF para mi dominio?
     answer: "Es importante que tenga o cree  **solo un registro TXT para SPF**. Si ya tiene un registro SPF, debe anexar los nuevos Microsoft 365 valores, en lugar de crear uno nuevo. Después de agregar o actualizar el registro SPF para correo electrónico de Microsoft, debe comprobar que la sintaxis es correcta con una de estas herramientas: \n  \n- [Herramientas de prueba de registros SPF](http://www.kitterman.com/spf/validate.html)\n    \n- [SPF Surveyor](https://dmarcian.com/spf-survey/)\n    \n- [Interfaz web de búsqueda](http://digwebinterface.com/)\n"
   - question: ¿Qué es un nombre de dominio?
-    answer: "Un dominio es un nombre único que aparece después del signo **@** en las direcciones de correo electrónico y después de **www.** en las direcciones web. Normalmente toma la forma del nombre de la organización y un sufijo de Internet estándar, como  *yourbusiness.com*  o  *stateuniversity.edu.* \n  \nEl uso de un dominio personalizado **como \"rob\\@ contoso.com**\" con Microsoft 365 puede ayudar a crear crédito y reconocimiento para tu marca. \n  \nPuedes comprar [un dominio en Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) y lo configuraremos automáticamente, o puedes comprar o traer uno que ya posees de un registrador de dominio.\n    \n"
+    answer: "Un dominio es un nombre único que aparece después del signo **@** en las direcciones de correo electrónico y después de **www.** en las direcciones web. Normalmente toma la forma del nombre de la organización y un sufijo de Internet estándar, como  *yourbusiness.com*  o  *stateuniversity.edu.* \n  \nEl uso de un dominio personalizado **como \"rob\\@ contoso.com**\" con Microsoft 365 puede ayudar a crear crédito y reconocimiento para tu marca. \n  \nPuedes comprar [un dominio en Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) y lo configuraremos automáticamente, o puedes comprar o traer uno que ya posees de un registrador de dominio.\n"
+  - question: ¿Es posible conectar un dominio con ofertas personales o familiares?
+    answer: "Como ventaja de su suscripción Microsoft 365 Familia o Microsoft 365 Personal, puede crear una dirección de correo electrónico personalizada que esté asociada con su buzón de Outlook.com, por ejemplo, yourname@example.com. Por el momento, solo se admite la conexión de dominios administrados por GoDaddy con Outlook.com. Para obtener más información, vea [Obtener una dirección de correo electrónico personalizada en Microsoft 365](https://support.microsoft.com/office/get-a-personalized-email-address-in-microsoft-365-75416a58-b225-4c02-8c07-8979403b427b).\n   \n"
   - question: ¿Qué sucede si mi proveedor DNS no admite determinados tipos de registros?
     answer: "Si administra sus propios registros DNS y el host DNS no admite todos los registros DNS que Microsoft 365 necesita, algunas Microsoft 365 características no funcionarán. Se recomienda transferir el dominio a un registrador que admita todos los registros DNS necesarios.\n  \nProveedores que admiten todos los registros DNS necesarios:\n  \n- Dynadot\n    \n- eNomCentral\n    \n- Europe Registry\n\n- Cloudflare\n    \n- GoDaddy\n    \n- Mantener el puntero\n    \n- MyHosting.com\n    \n- Name.com\n    \n- Casi libertad de expresión\n    \n- Nettica\n    \n- Centro de información de redes (NIC)\n    \n- Network Solutions\n    \n- Register.com\n  \n"
   - question: ¿Cómo puedo establecer o cambiar el dominio predeterminado en Microsoft 365?
