@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,18 +16,18 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-- m365initiative-defender-business
-ms.openlocfilehash: 6f59adc4c7d65748a9b1c0bfa0c33c3604b60bc2
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+- m365-initiative-defender-business
+ms.openlocfilehash: f1128b5fd9c27845bebbd4b6a0b45f93c5f3e0c6
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245356"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464552"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>Revisar acciones de corrección en el Centro de acciones
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán aquí [para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios)y agregaremos funcionalidades con regularidad.
+> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y agregaremos funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
@@ -35,19 +35,19 @@ A medida que se detectan las amenazas, las acciones de corrección se reproducen
 
 :::image type="content" source="../../media/defender-business/mdb-actioncenter.png" alt-text="Captura de pantalla del Centro de acciones":::
 
-**En este artículo se describe**:
+**En este artículo se describe lo siguiente**:
 
 - [Cómo usar el Centro de acciones](#how-to-use-the-action-center)
 - [Acciones de corrección](#remediation-actions)
 
 >
 > **¿Tiene un minuto?**
-> Por favor, <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">haga nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+> Por favor, haga <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
 >
 
 ## <a name="how-to-use-the-action-center"></a>Cómo usar el Centro de acciones
 
-1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
+1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
 2. En el panel de navegación, elija **Centro de actividades**.
 

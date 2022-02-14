@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 11/29/2021
 ms.reviewer: chventou
-ms.openlocfilehash: f7c43c0c72e3505608e3bd656dc7819bdd5ea9fd
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 40bac47a4c22e3a8706ed4b38b479fff5d500410
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244984"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62465233"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Administrar Microsoft Defender para endpoint con Configuration Manager
 
@@ -56,7 +56,7 @@ Se recomienda usar [Microsoft Endpoint Manager](/mem), que incluye [Microsoft In
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>Configurar el portal Microsoft 365 Defender web
 
-Si aún no lo ha hecho, configure el portal de Microsoft 365 Defender para ver alertas, configurar características de protección contra amenazas y ver información detallada sobre la posición de seguridad general de su organización. Vea [Microsoft 365 Defender portal](microsoft-defender-security-center.md). También puede configurar si los usuarios finales pueden ver y qué características pueden ver en Microsoft 365 Defender portal.
+Si aún no lo ha hecho, configure el portal de Microsoft 365 Defender para ver alertas, configurar características de protección contra amenazas y ver información detallada sobre la posición de seguridad general de su organización. Consulta Mientras se detectó y detuvo el ataque, las alertas, como una "alerta inicial de acceso", se desencadenaron y aparecieron en el [portal de Microsoft 365 Defender web](/microsoft-365/security/defender/microsoft-365-defender). También puede configurar si los usuarios finales pueden ver y qué características pueden ver en Microsoft 365 Defender portal.
 
 - [Información general sobre Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [Protección de extremo: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)

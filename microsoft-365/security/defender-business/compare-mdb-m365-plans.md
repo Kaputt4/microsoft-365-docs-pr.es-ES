@@ -1,13 +1,13 @@
 ---
 title: Comparar Microsoft Defender para empresas con otros Microsoft 365 planes
-description: Comprenda las diferencias entre Defender para empresas y Defender para endpoint. Saber lo que se incluye en cada plan puede ayudarle a tomar una decisión fundamentada para su empresa.
+description: Comprenda las diferencias entre Defender para empresas y Defender para endpoint. Saber lo que se incluye en cada plan puede ayudarle a tomar una decisión fundamentada para su organización.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 01/26/2022
+ms.date: 02/26/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -15,19 +15,19 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
-- m365initiative-defender-business
+- m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: b2337ddf5367242d077fb2f75fa45eaa6262e6d9
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 3d8270b2c8424668200e4242cb65e491a2cc6991
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245116"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464985"
 ---
 # <a name="compare-microsoft-defender-for-business-preview-to-microsoft-365-business-premium"></a>Comparar Microsoft Defender para empresas (versión preliminar) con Microsoft 365 Empresa Premium
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán aquí [para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios)y agregaremos funcionalidades con regularidad.
+> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y agregaremos funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
@@ -39,10 +39,10 @@ Microsoft ofrece una amplia variedad de soluciones y servicios en la nube, inclu
 - [Comparar Defender para empresas con ofertas empresariales de Microsoft Defender para Endpoint](#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2)
 
 
-**No tienes que tener una suscripción Microsoft 365 para comprar y usar Microsoft Defender para empresas (versión preliminar).** Microsoft Defender para empresas (versión preliminar) es una solución de seguridad independiente para pequeñas y medianas empresas. Si ya tienes otra suscripción (como Microsoft 365 Empresa Básico o Standard), considera la posibilidad de agregar Microsoft Defender para empresas para obtener capacidades adicionales de protección contra amenazas. 
+**No tienes que tener una suscripción Microsoft 365 para comprar y usar Microsoft Defender para empresas (versión preliminar).** Microsoft Defender para empresas (versión preliminar) es una solución de seguridad independiente para pequeñas y medianas empresas. Si ya tienes otra suscripción (como Microsoft 365 Empresa Básico o Standard), considera la posibilidad de agregar Microsoft Defender para empresas para obtener más funcionalidades de protección contra amenazas. 
 
 > [!TIP]
-> Si su empresa es una pequeña o mediana empresa (300 o menos usuarios) y desea registrarse en el programa de vista previa de Microsoft Defender para empresas, visite [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) . Para obtener más información, [vea Get Microsoft Defender for Business](get-defender-business.md).
+> Si su organización es una pequeña o mediana empresa (300 o menos usuarios) y desea registrarse en el programa de vista previa de Microsoft Defender para empresas, visite [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview). Para obtener más información, consulta [Obtener Microsoft Defender para empresas](get-defender-business.md).
 
 ## <a name="compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparar las características de seguridad de Microsoft Defender para empresas con Microsoft 365 Empresa Premium
 
@@ -61,7 +61,7 @@ En la tabla siguiente se comparan las funciones y características de seguridad 
 | [EDR](../defender-endpoint/overview-endpoint-detection-response.md) | Sí. Incluye: <br/>- Detección basada en comportamiento <br/>- Acciones de respuesta manuales <br/>- Respuesta en directo   | No |
 | [Investigación y respuesta automatizadas](../defender-endpoint/automated-investigations.md) | Sí | No |
 | [Administración de vulnerabilidades y amenazas](../defender-endpoint/tvm-dashboard-insights.md) | Sí | No |
-| Administración centralizada e informes | Sí. Puedes incorporar Windows dispositivos cliente y administrarlos en el portal de Microsoft 365 Defender ( ), o elegir administrar dispositivos en [https://security.microsoft.com](https://security.microsoft.com) Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ). | Sí. Puede administrar los Windows cliente en el Centro de administración de Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) ). Los dispositivos deben incorporarse en Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ). |
+| Administración centralizada e informes | Sí. Puedes incorporar Windows cliente y administrarlos en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) o elegir administrar dispositivos en Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). | Sí. Puede administrar los Windows cliente en el Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)). Los dispositivos deben incorporarse en Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). |
 | [API](../defender-endpoint/apis-intro.md) <br/>(permite integrar con aplicaciones personalizadas o soluciones de informes)  | Sí | Sí |
 
 
@@ -79,18 +79,18 @@ Defender para empresas (versión preliminar) ofrece funcionalidades de grado emp
 | [Protección de última generación](../defender-endpoint/next-generation-protection.md) | Sí | Sí | Sí |
 | [EDR](../defender-endpoint/overview-endpoint-detection-response.md) | Sí <sup>[[2](#fn2)]</sup> | No | Sí |
 | [Investigación y respuesta automatizadas](../defender-endpoint/automated-investigations.md) | Sí <sup>[[2](#fn2)]</sup> | No | Sí |
-| [Búsqueda de amenazas](../defender-endpoint/advanced-hunting-overview.md) y 6 meses de retención de datos | No | No | Sí |
+| [Búsqueda de amenazas](../defender-endpoint/advanced-hunting-overview.md) y seis meses de retención de datos | No | No | Sí |
 | [Análisis de amenazas](../defender-endpoint/threat-analytics.md) | Sí <sup>[[2](#fn2)]</sup> | No | Sí |
 | [Compatibilidad entre plataformas](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS y sistema operativo Android) | Sí <sup>[[3](#fn3)]</sup> | Sí | Sí |
 | [Expertos en amenazas de Microsoft](../defender-endpoint/microsoft-threat-experts.md) | No | No | Sí |
 | API de partners | Sí | Sí | Sí |
 | [Microsoft 365 Lighthouse integración](../../lighthouse/m365-lighthouse-overview.md) <br/>(Para ver incidentes de seguridad entre inquilinos de clientes) | Sí | No | No |
 
-(<a id="fn1">1</a>) Incorporar y administrar dispositivos en el portal de Microsoft 365 Defender ( ) o con otra [https://security.microsoft.com](https://security.microsoft.com) herramienta, como Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ).
+(<a id="fn1">1</a>) Incorporar y administrar dispositivos en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) o con otra herramienta, como Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
 (<a id="fn2">2</a>) Estas capacidades están optimizadas para pequeñas y medianas empresas.
 
-(<a id="fn3">3</a>) Durante el programa de vista previa, Windows dispositivos cliente se admiten en el portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ).
+(<a id="fn3">3</a>) Durante el programa de vista previa, Windows dispositivos cliente se admiten en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)).
 
 ## <a name="next-steps"></a>Siguientes pasos
 

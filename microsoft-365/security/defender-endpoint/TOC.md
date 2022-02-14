@@ -8,7 +8,6 @@
 ### [Versión preliminar de las características](preview.md)
 ### [Almacenamiento de datos y privacidad](data-storage-privacy.md)
 ### [Introducción al Centro de seguridad de Microsoft Defender](use.md)
-### [Introducción al portal](portal-overview.md)
 ### [Plan 1 de Defender para punto de conexión]()
 #### [Información general](defender-endpoint-plan-1.md)
 #### [Instalación y configuración](mde-p1-setup-configuration.md)
@@ -707,7 +706,6 @@
 
 ### [Solucionar problemas de servicio de Microsoft Defender para punto de conexión]()
 #### [Solucionar problemas de servicio](troubleshoot-mdatp.md)
-#### [Comprobar el estado del servicio](service-status.md)
 #### [Ponerse en contacto con el soporte técnico de Microsoft Defender para punto de conexión](contact-support.md)
 
 ### [Solucionar problemas de respuesta en vivo](troubleshoot-live-response.md)

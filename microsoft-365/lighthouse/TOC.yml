@@ -26,6 +26,8 @@
       href: m365-lighthouse-tenants-page-overview.md
     - name: Administrar la lista de inquilinos
       href: m365-lighthouse-manage-tenant-list.md
+    - name: Ver el estado del servicio de inquilino
+      href: m365-lighthouse-view-service-health.md
 - name: Administrar usuarios dentro de los inquilinos
   items:
     - name: Introducción a la página de usuarios

@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 01/10/2022
-ms.openlocfilehash: 6ebda98668f1593268433ee620406b70eafab2da
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.date: 02/07/2022
+ms.openlocfilehash: 86ae312247d0e796364da61201f7b01d4fec816f
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62073669"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464425"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage control de acceso
 
@@ -28,7 +28,7 @@ ms.locfileid: "62073669"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
-> La administración de directivas de grupo de este producto ya está disponible por lo general (4.18.2106): consulte Tech [Community blog: Protect your removable storage and printer with Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806)
+> La administración de directivas de grupo y la administración de directivas personalizadas y OMA-URI de Intune de este producto están disponibles por lo general (4.18.2106): consulte Tech [Community blog: Protect your removable storage and printer with Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
 
 
 Microsoft Defender para endpoint device control removable Storage Access Control permite realizar la siguiente tarea:
@@ -57,15 +57,15 @@ Microsoft Defender para endpoint device control removable Storage Access Control
 
 ## <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
 
-Implementar control de acceso Storage extraíble en Windows 10 y Windows 11 dispositivos con cliente antimalware versión **4.18.2103.3** o posterior .
+Implemente el control Storage de acceso extraíble en Windows 10 y Windows 11 dispositivos con cliente antimalware versión **4.18.2103.3 o posterior**.
 
-- **4.18.2104 o** posterior: Agregar SerialNumberId, VID_PID, compatibilidad con GPO basada en ruta de archivo, ComputerSid
+- **4.18.2104 o** posterior: Add SerialNumberId, VID_PID, filepath-based GPO support, ComputerSid
 
-- **4.18.2105** o posterior: Agregar compatibilidad con caracteres comodín para HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, la combinación de usuario específico en una máquina específica, SSD extraíble (un SSD extremo de SanDisk)/compatibilidad con SCSI conectada a USB (UAS)
+- **4.18.2105** o posterior: Agregar compatibilidad con caracteres comodín para HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, la combinación de un usuario específico en una máquina específica, SSD extraíble (un SSD extremo de SanDisk)/compatibilidad con SCSI conectada a USB (UAS)
 
 - **4.18.2107** o posterior: Agregar compatibilidad con dispositivos portátiles (WPD) Windows (para dispositivos móviles, como tabletas); agregar AccountName a la búsqueda [avanzada](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
-- **4.18.2111** o posterior: Agregue "Habilitar o deshabilitar el control de acceso Storage extraíble", "Aplicación predeterminada", tiempo de actualización de directivas de máquina cliente a través de PowerShell.
+- **4.18.2111** o posterior: Agregar "Habilitar o deshabilitar el control de acceso Storage extraíble", "Aplicación predeterminada", tiempo de actualización de directivas de máquina cliente a través de PowerShell.
 
 :::image type="content" source="images/powershell.png" alt-text="La interfaz de PowerShell.":::
 
@@ -77,7 +77,7 @@ Implementar control de acceso Storage extraíble en Windows 10 y Windows 11 disp
 Puede usar las siguientes propiedades para crear un grupo de almacenamiento extraíble:
 
 > [!NOTE]
-> Los comentarios que usan la notación de comentario XML se pueden usar en los archivos XML de regla y grupo, pero deben estar dentro de la primera etiqueta XML, no en la primera línea `<!-- COMMENT -->` del archivo XML.
+> Los comentarios que usan la notación de comentario XML `<!-- COMMENT -->` se pueden usar en los archivos XML de regla y grupo, pero deben estar dentro de la primera etiqueta XML, no en la primera línea del archivo XML.
 
 ### <a name="removable-storage-group"></a>Grupo Storage extraíble
 
@@ -86,8 +86,8 @@ Puede usar las siguientes propiedades para crear un grupo de almacenamiento extr
 |Nombre de propiedad|Descripción|Opciones|
 |---|---|---|
 |**GroupId**|GUID, un identificador único, representa el grupo y se usará en la directiva.||
-|**DescriptorIdList**|Enumera las propiedades del dispositivo que quieres usar para cubrir en el grupo. Para cada propiedad de dispositivo, consulta [Propiedades del dispositivo](device-control-removable-storage-protection.md) para obtener más detalles. Todas las propiedades distinguen mayúsculas de minúsculas. |**PrimaryId**: `RemovableMediaDevices` , `CdRomDevices` , `WpdDevices`<p>**BusId:** Por ejemplo, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**: InstancePathId es una cadena que identifica de forma única el dispositivo en el sistema, por ejemplo, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0` . El número al final (por ejemplo, &0) representa la ranura disponible y puede cambiar de un dispositivo a otro. Para obtener los mejores resultados, use un comodín al final. Por ejemplo, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>0751_55E0: coincide con este par VID/PID exacto<p>55E0: hacer coincidir cualquier medio con PID=55E0 <p>0751: hacer coincidir cualquier medio con VID=0751|
-|**MatchType**|Cuando se usan varias propiedades de dispositivo en `DescriptorIDList` , MatchType define la relación.|**MatchAll:** cualquier atributo de la relación será And; por ejemplo, si el administrador pone y , por cada USB conectado, el sistema comprobará si el USB cumple ambos `DescriptorIdList`  `DeviceID` `InstancePathID` valores. <p> **MatchAny:** los atributos de descriptorIdList serán **o** relación; por ejemplo, si el administrador pone y, por cada USB conectado, el sistema hará la aplicación siempre que el USB tenga un valor `DeviceID` `InstancePathID` **DeviceID** o **InstanceID** idéntico. |
+|**DescriptorIdList**|Enumera las propiedades del dispositivo que quieres usar para cubrir en el grupo. Para cada propiedad de dispositivo, consulta [Propiedades del dispositivo](device-control-removable-storage-protection.md) para obtener más detalles. Todas las propiedades distinguen mayúsculas de minúsculas. |**PrimaryId**: `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`<p>**BusId**: Por ejemplo, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**: InstancePathId es una cadena que identifica de forma única el dispositivo en el sistema, por ejemplo, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. El número al final (por ejemplo, &0) representa la ranura disponible y puede cambiar de un dispositivo a otro. Para obtener los mejores resultados, use un comodín al final. Por ejemplo, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>0751_55E0: coincide con este par VID/PID exacto<p>55E0: hacer coincidir cualquier medio con PID=55E0 <p>0751: hacer coincidir cualquier medio con VID=0751|
+|**MatchType**|Cuando se usan varias propiedades de dispositivo en `DescriptorIDList`, MatchType define la relación.|**MatchAll**: cualquier `DescriptorIdList` atributo de la relación **será And** ; por ejemplo, `DeviceID` `InstancePathID`si el administrador pone y , por cada USB conectado, el sistema comprobará si el USB cumple ambos valores. <p> **MatchAny**: los atributos de descriptorIdList serán **o** relación; por ejemplo, si el administrador pone `DeviceID` `InstancePathID`y, por cada USB conectado, el sistema hará la aplicación siempre que el USB tenga un valor **DeviceID** o **InstanceID** idéntico. |
 
 ### <a name="access-control-policy"></a>Directiva de control de acceso
 
@@ -99,10 +99,10 @@ Puede usar las siguientes propiedades para crear un grupo de almacenamiento extr
 | **IncludedIdList** | Los grupos a los que se aplicará la directiva. Si se agregan varios grupos, la directiva se aplicará a cualquier medio de todos esos grupos.|El IDENTIFICADOR de grupo/GUID debe usarse en esta instancia. <p> En el ejemplo siguiente se muestra el uso de GroupID: <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
 | **ExcludedIDList** | Los grupos a los que no se aplicará la directiva. | El IDENTIFICADOR de grupo/GUID debe usarse en esta instancia. |
 | **Id. de entrada** | Un PolicyRule puede tener varias entradas; cada entrada con un GUID único indica al Control de dispositivos una restricción.| |
-| **Tipo** | Define la acción de los grupos de almacenamiento extraíbles en IncludedIDList. <p>Aplicación: Permitir o denegar <p>Auditoría: AuditAllowed o AuditDenied<p> | Permitir<p>Denegar <p>AuditAllowed: define la notificación y el evento cuando se permite el acceso <p>AuditDenied: define la notificación y el evento cuando se deniega el acceso; tiene que trabajar junto con **la entrada Denegar.**<p> Cuando haya tipos de conflicto para el mismo medio, el sistema aplicará el primero de la directiva. Un ejemplo de tipo de conflicto **es Allow** y **Deny**. |
+| **Tipo** | Define la acción de los grupos de almacenamiento extraíbles en IncludedIDList. <p>Aplicación: Permitir o denegar <p>Auditoría: AuditAllowed o AuditDenied<p> | Permitir<p>Denegar <p>AuditAllowed: define la notificación y el evento cuando se permite el acceso <p>AuditDenied: define la notificación y el evento cuando se deniega el acceso; tiene que trabajar junto con **la entrada Denegar** .<p> Cuando haya tipos de conflicto para el mismo medio, el sistema aplicará el primero de la directiva. Un ejemplo de tipo de conflicto es **Allow** y **Deny**. |
 | **Sid** | El sid de usuario local o el grupo sid de usuario o el Sid del objeto AD, define si se va a aplicar esta directiva sobre un usuario o grupo de usuarios específicos; una entrada puede tener un máximo de un Sid y una entrada sin que ningún Sid signifique aplicar la directiva sobre la máquina. |  |
 | **ComputerSid** | El equipo local Sid o el grupo Sid del equipo o el Sid del objeto AD, define si se va a aplicar esta directiva sobre un equipo o grupo de máquinas específico; una entrada puede tener un máximo de un ComputerSid y una entrada sin que ComputerSid signifique aplicar la directiva sobre el equipo. Si desea aplicar una entrada a un usuario específico y a un equipo específico, agregue Sid y ComputerSid a la misma entrada. |  |
-| **Opciones** | Define si se va a mostrar la notificación o no |**0 o 4:** cuando se selecciona Tipo Permitir o Denegar. <p>0: nada<p>4: deshabilitar **AuditAllowed** y **AuditDenied** para esta entrada. Incluso si **se produce** block y la configuración auditDenied está configurada, el sistema no mostrará la notificación. <p> Cuando se **selecciona Tipo AuditAllowed:** <p>0: nada <p>1: nada <p>2: evento send<p>3: evento send <p> Cuando se **selecciona Tipo AuditDenied:** <p>0: nada <p>1: mostrar notificación <p>2: evento send<p>3: mostrar notificación y enviar evento |
+| **Opciones** | Define si se va a mostrar la notificación o no |**0 o 4**: cuando el tipo Permitir o Denegar está seleccionado. <p>0: nada<p>4: deshabilitar **AuditAllowed** y **AuditDenied** para esta entrada. Incluso si **se produce** block y la configuración auditDenied está configurada, el sistema no mostrará la notificación. <p> Cuando se **selecciona Tipo AuditAllowed** : <p>0: nada <p>1: nada <p>2: evento send<p>3: evento send <p> Cuando se **selecciona Tipo AuditDenied** : <p>0: nada <p>1: mostrar notificación <p>2: evento send<p>3: mostrar notificación y enviar evento |
 |AccessMask|Define el acceso. | **1-7**: <p>1: Leer <p>2: Escribir <p>3: Lectura y escritura <p>4: Ejecutar <p>5: Leer y ejecutar<p>6: Escribir y ejecutar <p>7: Lectura y escritura y ejecución |
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>Escenarios comunes Storage control de acceso extraíble
@@ -115,33 +115,33 @@ Para ayudarle a familiarizarse con Microsoft Defender para Endpoint Removable St
 
     1. Grupo 1: Cualquier almacenamiento extraíble y CD/DVD. Un ejemplo de almacenamiento extraíble y CD/DVD es: Group **9b28fae8-72f7-4267-a1a5-685f747a7146** en el ejemplo [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
-    2. Grupo 2: USB aprobados en función de las propiedades del dispositivo. Un ejemplo para este caso de uso es: Id. de instancia - Grupo **65fa649a-a111-4912-9294-fb6337a25038** en el archivo de ejemplo [USBs Group.xml.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
+    2. Grupo 2: USB aprobados en función de las propiedades del dispositivo. Un ejemplo para este caso de uso es: Id. de instancia - Grupo **65fa649a-a111-4912-9294-fb6337a25038** en el archivo [de ejemplo USB aprobados Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) .
 
     > [!TIP]
-    > Reemplazar `&` por en el `&amp;` valor.
+    > Reemplazar `&` por `&amp;` en el valor.
 
 2. Creación de la directiva
 
-    1. Directiva 1: Bloquear el acceso de escritura y ejecución, pero permitir los USB aprobados. Un ejemplo para este caso de uso es: PolicyRule **c544a991-5786-4402-949e-a032cb790d0e** en el ejemplo Escenario 1 Block [Write and Execute Access,](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) pero permite el acceso USBs.xmlaprobado.
+    1. Directiva 1: Bloquear el acceso de escritura y ejecución, pero permitir los USB aprobados. Un ejemplo para este caso de uso es: PolicyRule **c544a991-5786-4402-949e-a032cb790d0e** en el ejemplo [Escenario 1 Block Write and Execute Access,](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) pero permite el acceso USBs.xmlaprobado.
 
-    2. Directiva 2: Auditar el acceso de escritura y ejecución a los USB permitidos. Un ejemplo para este caso de uso es: PolicyRule **36ae1037-a639-4cff-946b-b36c53089a4c** en el ejemplo [Escenario 1](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) Audit Write and Execute access to approved USBs.xmlfile.
+    2. Directiva 2: Auditar el acceso de escritura y ejecución a los USB permitidos. Un ejemplo para este caso de uso es: PolicyRule **36ae1037-a639-4cff-946b-b36c53089a4c** en el ejemplo [Escenario 1 Audit Write and Execute access to approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
 ### <a name="scenario-2-audit-write-and-execute-access-to-all-but-block-specific-unapproved-usbs"></a>Escenario 2: Auditar el acceso de escritura y ejecución a todos los USB no aprobados específicos, pero bloqueados
 
 1. Crear grupos
 
-    1. Grupo 1: Cualquier almacenamiento extraíble y CD/DVD. Un ejemplo para este caso de uso es: Grupo **9b28fae8-72f7-4267-a1a5-685f747a7146** en el ejemplo Cualquier archivo de Storage extraíble y [CD-DVD Group.xml.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
+    1. Grupo 1: Cualquier almacenamiento extraíble y CD/DVD. Un ejemplo para este caso de uso es: Grupo **9b28fae8-72f7-4267-a1a5-685f747a7146** en el ejemplo Cualquier archivo de Storage extraíble y [CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples).
 
-    2. Grupo 2: USB no aprobados en función de las propiedades del dispositivo, por ejemplo, Id. de proveedor/Id. de producto, Nombre descriptivo : Grupo **65fa649a-a111-4912-9294-fb6337a25038** en el archivo [usbs](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) no aprobados Group.xmlejemplo.
+    2. Grupo 2: USB no aprobados basados en propiedades de dispositivo, por ejemplo, Id. de proveedor/Id. de producto, Nombre descriptivo : Grupo **65fa649a-a111-4912-9294-fb6337a25038** en el archivo [usbs no aprobados Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) ejemplo.
 
     > [!TIP]
-    > Reemplazar `&` por en el `&amp;` valor.
+    > Reemplazar `&` por `&amp;` en el valor.
 
 2. Creación de la directiva
 
     1. Directiva 1: Bloquear el acceso de escritura y ejecución a todos los USB no aprobados específicos, pero bloqueados. Un ejemplo de este caso de uso es: PolicyRule **23b8e437-66ac-4b32-b3d7-24044637fc98** en el ejemplo [Scenario 2 Audit Write and Execute access to all but block specific unapproved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
-    2. Directiva 2: Auditar el acceso de escritura y ejecución a otros usuarios. Un ejemplo de este caso de uso es: PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** en el ejemplo [Escenario 2](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) Audit write and Execute access to others.xmlfile.
+    2. Directiva 2: Auditar el acceso de escritura y ejecución a otros usuarios. Un ejemplo de este caso de uso es: PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** en el ejemplo [Escenario 2 Audit write and Execute access to others.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
 ## <a name="deploying-and-managing-policy-via-group-policy"></a>Implementación y administración de directivas mediante directiva de grupo
 
@@ -149,27 +149,27 @@ La característica Storage control de acceso extraíble te permite aplicar direc
 
 ### <a name="licensing"></a>Licencias
 
-Antes de empezar con Removable Storage Access Control, debe confirmar su [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para obtener acceso y usar el control Storage de acceso extraíble, debe tener Microsoft 365 E3 o Microsoft 365 E5.
+Antes de empezar con Removable Storage Access Control, debes confirmar tu [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para obtener acceso y usar el control Storage de acceso extraíble, debe tener Microsoft 365 E3 o Microsoft 365 E5.
 
 ### <a name="deploying-policy-via-group-policy"></a>Implementación de directivas mediante directiva de grupo
 
-1. Combine todos los grupos `<Groups>` `</Groups>` en un archivo xml.
+1. Combine todos los grupos en `<Groups>` `</Groups>` un archivo xml.
 
-    En la siguiente imagen se muestra el ejemplo del escenario 1: Impedir el acceso de escritura y ejecución a todos los usuarios, pero permitir [usbs aprobados específicos.](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs)
+    En la siguiente imagen se muestra el ejemplo del escenario 1: Impedir el acceso de escritura y ejecución a todos, pero permitir [usbs aprobados específicos](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
     :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="Pantalla que muestra las opciones de configuración que permiten USB aprobados específicos en dispositivos.":::
 
-2. Combine todas las reglas `<PolicyRules>` `</PolicyRules>` dentro de un archivo xml.
+2. Combine todas las reglas dentro `<PolicyRules>` `</PolicyRules>` de un archivo xml.
 
     Si desea restringir un usuario específico, use la propiedad SID en entry. Si no hay ningún SID en la directiva Entry, la entrada se aplicará a todas las instancias de inicio de sesión del equipo.
 
-    La siguiente imagen ilustra el uso de la propiedad SID y un ejemplo de Escenario 1: Impedir el acceso de escritura y ejecución a todos, pero permitir [usbs aprobados específicos](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
+    En la siguiente imagen se muestra el uso de la propiedad SID y un ejemplo de Escenario 1: Impedir el acceso de escritura y ejecución a todos los [USB aprobados, pero permitir determinados USB aprobados](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
     :::image type="content" source="images/usage-sid-property.png" alt-text="Pantalla que muestra un código que indica el uso del atributo de la propiedad SID.":::
 
-3. Guarde los archivos XML de regla y grupo en la carpeta de recurso compartido de red y coloque la ruta de acceso de la carpeta de recurso compartido de red en la configuración de directiva de **grupo:** Configuración del equipo Plantillas administrativas Windows Componentes Antivirus de Microsoft Defender Control de \>  \>  \>  \> dispositivos: 'Definir  **grupos de directivas de control de dispositivos' y 'Definir reglas de directiva de control de dispositivos'**.
+3. Guarde los archivos XML de regla y grupo en la carpeta de recurso compartido de red y coloque la ruta de acceso de la carpeta de recurso compartido de red en la configuración de directiva de **grupo:** \>  \> Configuración del equipo Plantillas administrativas **Windows Componentes** \> **Antivirus de Microsoft Defender** \> **Control** de dispositivos: 'Definir grupos de directivas de **control de dispositivos'** **y 'Definir reglas de directiva de control de dispositivos'**.
 
-   Si no encuentra la experiencia de usuario de configuración de directiva en la directiva de grupo,  puede descargar los archivos [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) y [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) seleccionando Raw y, a continuación, **Guardar como**.
+   Si no encuentra la experiencia de usuario de configuración de directiva en la directiva de grupo, puede descargar los archivos [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) y [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) seleccionando Raw y, a continuación, **Guardar como**.
 
    - El equipo de destino debe poder tener acceso al recurso compartido de red para tener la directiva. Sin embargo, una vez que se lee la directiva, la conexión de recurso compartido de red ya no es necesaria, incluso después del reinicio de la máquina.
 
@@ -195,7 +195,7 @@ La característica Storage control de acceso extraíble permite aplicar directiv
 
 ### <a name="licensing-requirements"></a>Requisitos de licencias
 
-Antes de empezar con Removable Storage Access Control, debe confirmar su [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para obtener acceso y usar el control Storage de acceso extraíble, debe tener Microsoft 365 E3 o Microsoft 365 E5.
+Antes de empezar con Removable Storage Access Control, debes confirmar tu [Microsoft 365 suscripción](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para obtener acceso y usar el control Storage de acceso extraíble, debe tener Microsoft 365 E3 o Microsoft 365 E5.
 
 ### <a name="permission"></a>Permiso
 
@@ -209,7 +209,7 @@ Para la implementación de directivas en Intune, la cuenta debe tener permisos p
 
 ### <a name="deploying-policy-via-oma-uri"></a>Implementación de directivas mediante OMA-URI
 
-Microsoft Endpoint Manager centro de administración ( ) Perfiles de configuración de dispositivos Crear perfil Plataforma: Windows 10 y posterior <https://endpoint.microsoft.com/> \>  \>  \>  \> **&: Personalizado**
+Microsoft Endpoint Manager centro  de administración (<https://endpoint.microsoft.com/>) **Dispositivos** \> \> **Perfiles** \> \> de configuración Crear perfil **Plataforma: Windows 10 y versiones posteriores &: Personalizado**
 
 1. Para cada grupo, cree una regla OMA-URI:
 
@@ -217,7 +217,7 @@ Microsoft Endpoint Manager centro de administración ( ) Perfiles de configuraci
 
       `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**GroupGUID**%7d/GroupData`
 
-      Por ejemplo, para cualquier almacenamiento extraíble y un grupo **de CD/DVD** en el ejemplo, el vínculo debe ser:
+      Por ejemplo, para **cualquier almacenamiento extraíble y un grupo de CD/DVD** en el ejemplo, el vínculo debe ser:
 
       `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
 
@@ -231,7 +231,7 @@ Microsoft Endpoint Manager centro de administración ( ) Perfiles de configuraci
 
       `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7b**PolicyRuleGUID**%7d/RuleData`
 
-      Por ejemplo, para la regla Bloquear escritura y ejecutar acceso, pero permitir **usbs aprobados** en el ejemplo, el vínculo debe ser:
+      Por ejemplo, para la **regla Bloquear escritura y ejecutar acceso, pero permitir usbs aprobados** en el ejemplo, el vínculo debe ser:
 
       `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bc544a991-5786-4402-949e-a032cb790d0e%7d/RuleData`
 
@@ -265,7 +265,7 @@ Microsoft Endpoint Manager centro de administración ( ) Perfiles de configuraci
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Implementación y administración de directivas mediante la interfaz de usuario de Intune
 
-Esta funcionalidad está disponible en el centro Microsoft Endpoint Manager administración ( <https://endpoint.microsoft.com/> ). Ve a **Endpoint Security Attack** Surface  >  **Reduction**  >  **Create Policy**. Elija **Plataforma: Windows 10 y posterior** con **Perfil: Control de dispositivo**.
+Esta funcionalidad está disponible en el Centro Microsoft Endpoint Manager administración (<https://endpoint.microsoft.com/>). Ve a **Endpoint SecurityAttack** >  **Surface ReductionCreate** >  **Policy**. Elija **Plataforma: Windows 10 y posterior** con **Perfil: Control de dispositivo**.
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Ver datos extraíbles Storage control de acceso en Microsoft Defender para endpoint
 
@@ -304,15 +304,15 @@ Hemos validado un grupo USB con 100.000 medios, con un tamaño de hasta 7 MB. La
 
 ### <a name="why-does-the-policy-not-work"></a>¿Por qué la directiva no funciona?
 
-La razón más común es que no hay ninguna versión de [cliente antimalware necesaria.](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints)
+La razón más común es que no hay ninguna versión de [cliente antimalware necesaria](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints).
 
-Otro motivo podría ser que el archivo XML no tenga el formato correcto, por ejemplo, no usar el formato de reducción correcto para el carácter "&" en el archivo XML, o que el editor de texto pueda agregar una marca de orden de bytes (BOM) 0xEF 0xBB 0xBF al principio de los archivos, lo que hace que el análisis XML no funcione. Una solución sencilla es descargar el [archivo de ejemplo](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (seleccione **Sin** procesar y, a continuación, **Guardar como**) y, a continuación, actualizar.
+Otro motivo podría ser que el archivo XML no tenga el formato correcto, por ejemplo, no usar el formato de reducción correcto para el carácter "&" en el archivo XML, o que el editor de texto pueda agregar una marca de orden de bytes (BOM) 0xEF 0xBB 0xBF al principio de los archivos, lo que hace que el análisis XML no funcione. Una solución sencilla es descargar el [archivo de](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) ejemplo (seleccione **Sin** procesar y, a continuación, **Guardar como**) y, a continuación, actualizar.
 
 Si va a implementar y administrar la directiva a través de la directiva de grupo, asegúrese de combinar todo PolicyRule en un archivo XML dentro de un nodo primario denominado PolicyRules y todos los grupos en un archivo XML dentro de un nodo primario denominado Grupos; si administra a través de Intune, mantenga un archivo XML PolicyRule, lo mismo, un archivo XML de grupo uno.
 
 ### <a name="there-is-no-configuration-ux-for-define-device-control-policy-groups-and-define-device-control-policy-rules-on-my-group-policy"></a>No hay ninguna experiencia de usuario de configuración para "Definir grupos de directivas de control de dispositivos" y "Definir reglas de directiva de control de dispositivos" en mi directiva de grupo
 
-No se vuelve a mostrar la experiencia de usuario de configuración de directiva de grupo, pero puede obtener los archivos adml y admx relacionados haciendo clic en "Raw" y "Guardar como" en los archivos [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) y [WindowsDefender.admx.](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx)
+No se vuelve a mostrar la experiencia de usuario de configuración de directiva de grupo, pero puede obtener los archivos adml y admx relacionados haciendo clic en "Raw" y "Guardar como" en los archivos [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) y [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) .
 
 
 ### <a name="how-can-i-know-whether-the-latest-policy-has-been-deployed-to-the-target-machine"></a>¿Cómo puedo saber si la directiva más reciente se ha implementado en el equipo de destino?

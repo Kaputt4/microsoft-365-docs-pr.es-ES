@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,17 +16,17 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: c2ccbb0ae11703b8da25569a34655cabee940c5b
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 01d6b5cc77068bc8f86d4a32777663ae251acd8d
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507738"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62465304"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business-preview"></a>Comprender el orden de la directiva en Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán aquí [para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios)y agregaremos funcionalidades con regularidad.
+> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y agregaremos funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
@@ -48,7 +48,7 @@ A medida que se agregan directivas, observará que se asigna un orden de priorid
 
 - Las directivas predeterminadas tienen el orden de prioridad más bajo
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Introducción al uso de Defender para empresas (versión preliminar)](mdb-get-started.md)
 

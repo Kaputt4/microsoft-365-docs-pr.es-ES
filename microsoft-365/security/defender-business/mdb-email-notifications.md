@@ -7,23 +7,23 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: 5ccad3a8765c18e1768f8245d90b255d50ee5182
-ms.sourcegitcommit: 74f79aacb4ffcc6cb0e315239b1493324eabb449
+ms.openlocfilehash: 5a6d896b3b18b4eea0721197c0a4766add4a20b6
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61507373"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464583"
 ---
 # <a name="set-up-email-notifications"></a>Configurar notificaciones por correo electrónico
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán aquí [para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios)y agregaremos funcionalidades con regularidad.
+> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y agregaremos funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
@@ -49,29 +49,29 @@ Al configurar las notificaciones por correo electrónico, puede elegir entre dos
 | Alertas & vulnerabilidades  | Cuando se generan alertas porque se detectan amenazas en dispositivos o cuando se detectan nuevos eventos de vulnerabilidad o vulnerabilidad, los destinatarios reciben un correo electrónico. |
 
 > [!TIP]
-> Las notificaciones por correo electrónico no son la única forma en que el equipo de **seguridad puede averiguar sobre nuevas alertas o vulnerabilidades.**
+> **Las notificaciones por correo electrónico no son la única forma en que el equipo de seguridad puede averiguar sobre nuevas alertas o vulnerabilidades**.
 > 
-> Las notificaciones por correo electrónico son una forma cómoda de ayudar a mantener informado a su equipo de seguridad en tiempo real. Pero hay otros. Por ejemplo, siempre que el equipo de seguridad inicia sesión en el portal de Microsoft 365 Defender ( ), verá tarjetas que resaltan nuevas [https://security.microsoft.com](https://security.microsoft.com) amenazas, alertas y vulnerabilidades. Defender para empresas (versión preliminar) está diseñado para resaltar información importante que le importa al equipo de seguridad tan pronto como inicie sesión.
+> Las notificaciones por correo electrónico son una forma cómoda de ayudar a mantener informado a su equipo de seguridad en tiempo real. Pero hay otros. Por ejemplo, cada vez que el equipo de seguridad inicia sesión en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), verán tarjetas que resaltan nuevas amenazas, alertas y vulnerabilidades. Defender para empresas (versión preliminar) está diseñado para resaltar información importante que le importa al equipo de seguridad tan pronto como inicie sesión.
 > 
-> El equipo de seguridad también puede elegir **Incidentes** en el panel de navegación para ver información. Para obtener más información, [vea Ver y administrar incidentes en Microsoft Defender para empresas (versión preliminar).](mdb-view-manage-incidents.md)
+> El equipo de seguridad también puede elegir **Incidentes** en el panel de navegación para ver información. Para obtener más información, [consulta Ver y administrar incidentes en Microsoft Defender para empresas (versión preliminar).](mdb-view-manage-incidents.md)
 
 ## <a name="view-and-edit-email-notifications"></a>Ver y editar notificaciones de correo electrónico
 
-Para ver o editar la configuración de notificaciones por correo electrónico de su empresa, siga estos pasos:
+Para ver o editar la configuración de notificaciones por correo electrónico de su organización, siga estos pasos:
 
-1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
+1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
 2. En el panel de navegación, **seleccione Configuración** y, a continuación, seleccione **Extremos**. A continuación, **en General**, seleccione **Notificaciones de correo electrónico**. 
 
 3. Revise la información de las **pestañas Alertas** **y** vulnerabilidades.
 
-   - Si no ve ningún elemento en  la pestaña Alertas, puede crear una regla para que se notifique a las personas cuando se generen alertas. Para obtener ayuda con esta tarea, vea [Create rules for alert notifications](../defender-endpoint/configure-email-notifications.md).
+   - Si no ve ningún elemento en la pestaña Alertas,  puede crear una regla para que se notifique a las personas cuando se generen alertas. Para obtener ayuda con esta tarea, consulte [Create rules for alert notifications](../defender-endpoint/configure-email-notifications.md).
 
-   - Si no ve ningún elemento enumerado  en la pestaña Vulnerabilidades, puede crear una regla para que se notifique a las personas cada vez que se descubra una nueva vulnerabilidad. Para obtener ayuda con esta tarea, vea [Create rules for vulnerability events](../defender-endpoint/configure-vulnerability-email-notifications.md).
+   - Si no ve ningún elemento enumerado en la pestaña Vulnerabilidades, puede crear una regla para que se notifique a las personas cada vez que se descubra una nueva vulnerabilidad. Para obtener ayuda con esta tarea, consulte [Crear reglas para eventos de vulnerabilidad](../defender-endpoint/configure-vulnerability-email-notifications.md).
 
    - Si tiene reglas creadas, seleccione una regla para editarla. También puede eliminar una regla. 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Continúe con:
 

@@ -111,20 +111,6 @@
               href: azure-integration.md
             - name: Azure ExpressRoute
               href: azure-expressroute.md
-        - name: Compatibilidad con aplicaciones de cliente y servicios
-          items:
-            - name: Compatibilidad con aplicaciones de cliente y servicios
-              href: microsoft-365-client-services-app-support.md
-            - name: Autenticación basada en certificados
-              href: microsoft-365-client-support-certificate-based-authentication.md
-            - name: Acceso condicional
-              href: microsoft-365-client-support-conditional-access.md
-            - name: Autenticación multifactor
-              href: microsoft-365-client-support-multi-factor-authentication.md
-            - name: Inicio de sesión único
-              href: microsoft-365-client-support-single-sign-on.md
-            - name: Elegir entre la Seguridad de Movilidad Básica e Intune
-              href: /office365/securitycompliance/choose-between-mdm-and-intune
         - name: Autenticación moderna híbrida
           items:
             - name: Requisitos previos para Skype Empresarial Server y Exchange Server

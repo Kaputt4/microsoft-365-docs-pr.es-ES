@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 01/26/2022
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,23 +16,23 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-- m365initiative-defender-business
+- m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 8f33d7cc5baa5394a4c90b91e51f34bcffb5321d
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 5284c92362fea008f7b42e1ce83e642353ad4d78
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245284"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62465188"
 ---
 # <a name="overview-of-microsoft-defender-for-business-preview"></a>Información general sobre Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán aquí [para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios)y agregaremos funcionalidades con regularidad.
+> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y agregaremos funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
-Microsoft Defender para empresas (versión preliminar) es una nueva solución de seguridad de extremo diseñada especialmente para la pequeña y mediana empresa (hasta 300 empleados). Con esta solución de seguridad de puntos de conexión, los dispositivos de la empresa están mejor protegidos contra ransomware, malware, phishing y otras amenazas. 
+Microsoft Defender para empresas (versión preliminar) es una nueva solución de seguridad de extremo diseñada especialmente para la pequeña y mediana empresa (hasta 300 empleados). Con esta solución de seguridad de puntos de conexión, los dispositivos de la organización están mejor protegidos contra ransomware, malware, phishing y otras amenazas. 
 
 En este artículo se describe lo que se incluye en Defender para empresas (versión preliminar), con vínculos para obtener más información sobre estas características y funcionalidades.
 
@@ -45,20 +45,20 @@ Con Defender para empresas (versión preliminar), puedes ayudar a proteger los d
 
 - **Enterprise de nivel de seguridad**. Defender para empresas (versión preliminar) ofrece potentes capacidades de seguridad de puntos de conexión de nuestra solución de [Microsoft Defender para](../defender-endpoint/microsoft-defender-endpoint.md) endpoints líder del sector y optimiza esas capacidades para que los administradores de TI admitan pequeñas y medianas empresas.
 
-- **Una solución de seguridad fácil de usar.** Defender para empresas (versión preliminar) ofrece experiencias optimizadas que le guiarán a la acción con recomendaciones e información sobre la seguridad de los puntos de conexión. No se requiere ningún conocimiento especializado, ya que Defender para empresas (versión preliminar) ofrece una configuración basada en asistentes y directivas de seguridad predeterminadas diseñadas para ayudar a proteger los dispositivos de su empresa desde el primer día.
+- **Una solución de seguridad fácil de usar**. Defender para empresas (versión preliminar) ofrece experiencias optimizadas que le guiarán a la acción con recomendaciones e información sobre la seguridad de los puntos de conexión. No se requiere ningún conocimiento especializado, ya que Defender para empresas (versión preliminar) ofrece directivas de configuración basadas en asistentes y de seguridad predeterminadas diseñadas para ayudar a proteger los dispositivos de la organización desde el primer día.
 
 - **Flexibilidad para su entorno**. Defender para empresas (versión preliminar) puede trabajar con su entorno empresarial, ya sea que use la nube de Microsoft, la tecnología local o las soluciones de productividad que no sean de Microsoft. Defender para empresas (versión preliminar) funciona con componentes integrados en Windows y con aplicaciones para dispositivos macOS, iOS y Android.
 
-- **Integración con Microsoft 365 Lighthouse**. Si es un proveedor de servicios administrados (MSP) que [usa Microsoft 365 Lighthouse,](../../lighthouse/m365-lighthouse-overview.md)hay más funcionalidades disponibles. Si sus clientes usan Microsoft 365 Empresa Premium con Defender para empresas (versión preliminar), puede ver incidentes de seguridad y alertas en todos los inquilinos de clientes que están incorporados a Microsoft 365 Lighthouse.
+- **Integración con Microsoft 365 Lighthouse**. Si es un proveedor de servicios administrados (MSP) que [usa Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), hay más funcionalidades disponibles. Si sus clientes usan Microsoft 365 Empresa Premium con Defender para empresas (versión preliminar), puede ver incidentes de seguridad y alertas en todos los inquilinos de clientes que están incorporados a Microsoft 365 Lighthouse.
 
 > [!TIP]
-> Si desea registrarse en el programa de vista previa de Microsoft Defender para empresas, visite [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) . Para obtener más información, consulta [Obtener Microsoft Defender para empresas (versión preliminar).](get-defender-business.md)
+> Si desea registrarse en el programa de vista previa de Microsoft Defender para empresas, visite [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview). Para obtener más información, consulta [Obtener Microsoft Defender para empresas (versión preliminar).](get-defender-business.md)
 
 ## <a name="how-to-use-this-guide"></a>Cómo usar esta guía
 
 **Esta guía está diseñada para**:
 
-- **Proporcionarte información general sobre Defender para empresas (versión preliminar)** para que sepas lo que se incluye y cómo funciona.
+- **Proporcionarte información general sobre Defender para empresas (** versión preliminar) para que sepas lo que se incluye y cómo funciona.
    - Use este artículo como punto de partida
    - [Comparar características de seguridad en Microsoft Defender para empresas (versión preliminar) con otros planes](compare-mdb-m365-plans.md) 
    - [Obtenga información sobre cómo obtener Microsoft Defender para empresas (versión preliminar)](get-defender-business.md)
@@ -66,11 +66,11 @@ Con Defender para empresas (versión preliminar), puedes ayudar a proteger los d
 - **Vea cómo configurar y configurar las capacidades de protección contra amenazas** 
    - [Vea cómo configurar y configurar Defender para empresas (versión preliminar)](mdb-setup-configuration.md)
 
-- **Ayuda para empezar a usar Defender para empresas (versión preliminar),** empezando por el portal Microsoft 365 Defender web 
+- **Ayuda para empezar a usar Defender for Business (versión preliminar),** empezando por el portal Microsoft 365 Defender web 
    - [Navegue por el portal Microsoft 365 Defender web](mdb-get-started.md)
    - [Probar escenarios de vista previa, tutoriales y simulaciones](mdb-tutorials.md)
 
-- **Proporcionar instrucciones sobre cómo administrar dispositivos y directivas y configuraciones de seguridad**
+- **Proporcionar instrucciones sobre la administración de dispositivos y directivas de seguridad**
    - [Administrar dispositivos](mdb-manage-devices.md)
    - [Ver o editar directivas de seguridad](mdb-view-edit-policies.md)
    - [Administrar reglas personalizadas para directivas de firewall](mdb-custom-rules-firewall.md)  
@@ -79,7 +79,7 @@ Con Defender para empresas (versión preliminar), puedes ayudar a proteger los d
 
 >
 > **¿Tiene un minuto?**
-> Por favor, <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">haga nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+> Por favor, haga <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
 >
 
 - [Obtenga más información sobre el proceso de configuración simplificado en Microsoft Defender para empresas (versión preliminar)](mdb-simplified-configuration.md)

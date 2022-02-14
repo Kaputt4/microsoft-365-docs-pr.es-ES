@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c0608464384f963e60143309f80587d103a5793d
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 60a389d2422a2d3b2f50f77bc978f9f9bbc4a087
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218663"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62463446"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Ponerse en contacto con el soporte técnico de Microsoft Defender para punto de conexión
 
@@ -46,9 +46,9 @@ Es importante conocer los roles específicos que tienen permiso para abrir casos
 
 Como mínimo, debe tener un rol de administrador de soporte técnico **o** de administrador de soporte técnico.
 
-Para obtener más información sobre qué roles tienen permiso, vea [Security Administrator permissions](/azure/active-directory/roles/permissions-reference#security-administrator). Los roles que incluyen la acción `microsoft.office365.supportTickets/allEntities/allTasks` pueden enviar un caso.
+Para obtener más información sobre qué roles tienen permiso, vea [Permisos de administrador de seguridad](/azure/active-directory/roles/permissions-reference#security-administrator). Los roles que incluyen la acción `microsoft.office365.supportTickets/allEntities/allTasks` pueden enviar un caso.
 
-Para obtener información general sobre los roles de administrador, vea [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true).
+Para obtener información general sobre los roles de administrador, consulte [Acerca de los roles de administrador](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true).
 
 ## <a name="access-the-widget"></a>Acceder al widget
 
@@ -82,7 +82,7 @@ Para obtener información sobre cómo abrir vales de soporte técnico, póngase 
 > [!NOTE]
 > Si tienes un contrato de soporte técnico premier con Microsoft, verás la etiqueta premier en el widget. Si no es así, póngase en contacto con el administrador de cuentas de Microsoft.
 
-### <a name="contact-support"></a>Ponerse en contacto con soporte técnico
+### <a name="contact-support"></a>Contactar soporte
 
 :::image type="content" source="../../media/contactsupport2.png" alt-text="póngase en contacto con el soporte técnico 2."::: </br>
 
@@ -95,4 +95,4 @@ Para obtener información sobre cómo abrir vales de soporte técnico, póngase 
 ## <a name="related-topics"></a>Temas relacionados
 
 - [Solucionar problemas de servicio](troubleshoot-mdatp.md)
-- [Comprobar el estado del servicio](service-status.md)
+- [Comprobar el estado del servicio](/microsoft-365/enterprise/view-service-health)

@@ -26,12 +26,12 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: Obtenga más información sobre los dominios (dominio de onmicrosoft y dominio de transferencia) al encontrar respuestas a sus preguntas en preguntas más frecuentes.
-  ms.openlocfilehash: 0b8790ab6c360859d94bb3cc343c1f3d238ece2b
-  ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+  ms.openlocfilehash: d2af94766d11e643856c3139c87ddc643057b957
+  ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 02/03/2022
-  ms.locfileid: "62326927"
+  ms.lasthandoff: 02/09/2022
+  ms.locfileid: "62464291"
 title: Preguntas más frecuentes de dominios
 summary: "\n\nEste artículo contiene respuestas a las preguntas más frecuentes acerca de los dominios de Microsoft 365.\n\nSi no encuentra una respuesta a su pregunta, infórmenos de ello dejando un comentario y lo agregaremos a la lista.\n"
 sections:
@@ -44,7 +44,7 @@ sections:
   - question: ¿Qué es un nombre de dominio?
     answer: "Un dominio es un nombre único que aparece después del signo **@** en las direcciones de correo electrónico y después de **www.** en las direcciones web. Normalmente toma la forma del nombre de la organización y un sufijo de Internet estándar, como  *yourbusiness.com*  o  *stateuniversity.edu.* \n  \nEl uso de un dominio personalizado **como \"rob\\@ contoso.com**\" con Microsoft 365 puede ayudar a crear crédito y reconocimiento para tu marca. \n  \nPuedes comprar [un dominio en Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) y lo configuraremos automáticamente, o puedes comprar o traer uno que ya posees de un registrador de dominio.\n    \n"
   - question: ¿Qué sucede si mi proveedor DNS no admite determinados tipos de registros?
-    answer: "Si administra sus propios registros DNS y el host DNS no admite todos los registros DNS que Microsoft 365 necesita, algunas Microsoft 365 características no funcionarán. Se recomienda transferir el dominio a un registrador que admita todos los registros DNS necesarios.\n  \nProveedores que admiten todos los registros DNS necesarios:\n  \n- Dynadot\n    \n- eNomCentral\n    \n- Europe Registry\n    \n- GoDaddy\n    \n- Mantener el puntero\n    \n- MyHosting.com\n    \n- Name.com\n    \n- Casi libertad de expresión\n    \n- Nettica\n    \n- Centro de información de redes (NIC)\n    \n- Network Solutions\n    \n- Register.com\n  \n"
+    answer: "Si administra sus propios registros DNS y el host DNS no admite todos los registros DNS que Microsoft 365 necesita, algunas Microsoft 365 características no funcionarán. Se recomienda transferir el dominio a un registrador que admita todos los registros DNS necesarios.\n  \nProveedores que admiten todos los registros DNS necesarios:\n  \n- Dynadot\n    \n- eNomCentral\n    \n- Europe Registry\n\n- Cloudflare\n    \n- GoDaddy\n    \n- Mantener el puntero\n    \n- MyHosting.com\n    \n- Name.com\n    \n- Casi libertad de expresión\n    \n- Nettica\n    \n- Centro de información de redes (NIC)\n    \n- Network Solutions\n    \n- Register.com\n  \n"
   - question: ¿Cómo puedo establecer o cambiar el dominio predeterminado en Microsoft 365?
     answer: "Debe tener al menos un dominio personalizado que haya agregado a Microsoft 365 para poder elegir un dominio predeterminado.\n\n::: moniker range=\"o365-worldwide\"\n\n1. En el centro de administración, diríjase a la página **configuración** \\> <a href=\"https://go.microsoft.com/fwlink/p/?linkid=834818\" target=\"_blank\">dominios</a>.\n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n1. En el centro de administración, diríjase a la página **configuración** > <a href=\"https://go.microsoft.com/fwlink/p/?linkid=2007048\" target=\"_blank\">dominios</a>.\n\n::: moniker-end\n    \n2. En la **página Dominios** , seleccione el dominio que desea establecer como predeterminado para las nuevas direcciones de correo electrónico. \n    \n3. Seleccione **Establecer como predeterminado**.\n    \n::: moniker range=\"o365-worldwide\"\n\nNo puede cambiar el nombre del  *dominio .onmicrosoft.com*  inicial. \n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\nNo puede cambiar el nombre del  *dominio .partner.onmschina.cn*  inicial. \n\n::: moniker-end\n\n> [!NOTE]\n> Cambiar el dominio predeterminado no afecta a las credenciales de usuario ni a su acceso a aplicaciones o servicios. Cambiar el dominio al que está asociado un usuario afectará al correo, al almacenamiento en línea y a las credenciales de inicio de sesión.\n"
   - question: ¿Puedo agregar subdominios personalizados o varios dominios a Microsoft 365?

@@ -1,6 +1,6 @@
 ---
 title: Ver o editar directivas en Microsoft Defender para empresas (versión preliminar)
-description: 'Obtenga información sobre cómo ver, editar, crear y eliminar directivas de protección de próxima generación en Microsoft Defender para empresas (versión preliminar)'
+description: Obtenga información sobre cómo ver, editar, crear y eliminar directivas de protección de próxima generación en Microsoft Defender para empresas (versión preliminar)
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -11,14 +11,19 @@ ms.date: 02/03/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
-ms.reviewer: 'inbadian, shlomiakirav'
+ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
-  - SMB
-  - M365-security-compliance
-  - m365initiative-defender-business
+- SMB
+- M365-security-compliance
+- m365-initiative-defender-business
+ms.openlocfilehash: 81cd2774115478f4d85fa1878d7ce8a598600e7f
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62465426"
 ---
-
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business-preview"></a>Ver o editar directivas en Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
@@ -26,7 +31,7 @@ ms.collection:
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
-En Microsoft Defender para empresas (versión preliminar), la configuración de seguridad se configura a través de directivas que se aplican a dispositivos. Para simplificar la configuración y la experiencia de configuración, Defender para empresas (versión preliminar) incluye directivas preconfiguradas para ayudar a proteger los dispositivos de la empresa tan pronto como se incorpore. Puede usar las directivas predeterminadas, editar directivas o crear sus propias directivas.
+En Microsoft Defender para empresas (versión preliminar), la configuración de seguridad se configura a través de directivas que se aplican a dispositivos. Para simplificar la configuración y la experiencia de configuración, Defender para empresas (versión preliminar) incluye directivas preconfiguradas para ayudar a proteger los dispositivos de la organización tan pronto como se incorpore. Puede usar las directivas predeterminadas, editar directivas o crear sus propias directivas.
 
 **En este artículo se describe cómo**:
 
@@ -42,10 +47,10 @@ En Microsoft Defender para empresas (versión preliminar), la configuración de 
 
 ## <a name="default-policies-in-defender-for-business"></a>Directivas predeterminadas en Defender para empresas
 
-En Defender para empresas (versión preliminar), hay dos tipos principales de directivas para proteger los dispositivos de la empresa:
+En Defender para empresas (versión preliminar), hay dos tipos principales de directivas para proteger los dispositivos de la organización:
 
 - **Directivas de protección de próxima** generación, que determinan Antivirus de Microsoft Defender y otras características de protección contra amenazas
-- **Directivas de firewall**, que determinan qué tráfico de red puede fluir desde y hacia los dispositivos de la empresa
+- **Directivas de firewall**, que determinan qué tráfico de red puede fluir desde y hacia los dispositivos de la organización
 
 
 ## <a name="view-your-existing-policies"></a>Ver las directivas existentes
@@ -109,7 +114,7 @@ En Defender para empresas (versión preliminar), hay dos tipos principales de di
 
 7. En la **pestaña Grupos de** dispositivos, crea un nuevo grupo de dispositivos o usa un grupo existente. Las directivas se asignan a dispositivos a través de grupos de dispositivos. Estos son algunos aspectos a tener en cuenta:
 
-   - Inicialmente, es posible que solo tenga el grupo de dispositivos predeterminado, que incluye los dispositivos que los usuarios de su empresa usan para tener acceso a los datos y el correo electrónico de la compañía. Puedes conservar y usar el grupo de dispositivos predeterminado.
+   - Inicialmente, es posible que solo tenga el grupo de dispositivos predeterminado, que incluye los dispositivos que los usuarios de su organización usan para tener acceso a los datos y el correo electrónico de la organización. Puedes conservar y usar el grupo de dispositivos predeterminado.
    - Crea un nuevo grupo de dispositivos para aplicar una directiva con una configuración específica que sea diferente de la directiva predeterminada. 
    - Cuando configuras el grupo de dispositivos, especificas determinados criterios, como la versión del sistema operativo. Los dispositivos que cumplen los criterios se incluyen en ese grupo de dispositivos, a menos que los excluyas. 
    - Todos los grupos de dispositivos, incluidos los grupos de dispositivos predeterminados y personalizados que definas, se almacenan en Azure Active Directory (Azure AD).
@@ -124,7 +129,7 @@ En Defender para empresas (versión preliminar), hay dos tipos principales de di
    - Cuando esté listo para continuar, elija **Crear directiva**.
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Elija una o varias de las siguientes tareas:
 

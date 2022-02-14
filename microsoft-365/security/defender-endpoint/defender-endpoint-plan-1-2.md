@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 01/03/2022
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: b0d2edb53df4b12c66ad010e536ede033996810f
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: d1ed6f5b45bc488c998c99efa1c35d5af869194e
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244612"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464136"
 ---
 # <a name="microsoft-defender-for-endpoint-plan-1-and-plan-2"></a>Plan 1 y Plan 2 de Microsoft Defender para Endpoint
 
@@ -33,8 +33,8 @@ ms.locfileid: "62244612"
 
 Microsoft Defender para punto de conexión es una plataforma empresarial para la seguridad de puntos de conexión concebida para ayudar a impedir, detectar e investigar las amenazas avanzadas, y responder a ellas. Defender for Endpoint proporciona protección contra amenazas avanzada que incluye antivirus, antimalware, mitigación de ransomware y mucho más, junto con la administración centralizada y los informes. Hay dos planes disponibles:   
  
-- [Plan 1 de Microsoft Defender para endpoints;](defender-endpoint-plan-1.md) y 
-- [Microsoft Defender para endpoint plan 2](microsoft-defender-endpoint.md), anteriormente conocido como [Microsoft Defender para endpoint](microsoft-defender-endpoint.md).
+- [Plan 1 de Microsoft Defender para endpoints](defender-endpoint-plan-1.md); y 
+- [Plan 2 de Microsoft Defender para Endpoint](microsoft-defender-endpoint.md), anteriormente conocido como [Microsoft Defender para Endpoint](microsoft-defender-endpoint.md).
 
 ## <a name="compare-defender-for-endpoint-plans"></a>Comparar planes de Defender para endpoints
 
@@ -42,9 +42,9 @@ En la tabla siguiente se describe lo que se incluye en cada plan en un nivel alt
 
 | [Plan 1 de Defender para punto de conexión](defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) |
 |:---|:---|
-| [Protección de última generación](defender-endpoint-plan-1.md#next-generation-protection) <br/>(incluye antimalware y antivirus) <p> [Reducción de la superficie expuesta a ataques](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [Acciones de respuesta manuales](defender-endpoint-plan-1.md#manual-response-actions) <p> [Administración centralizada](defender-endpoint-plan-1.md#centralized-management) <p>[Informes de seguridad](defender-endpoint-plan-1.md#reporting) <p>[API](defender-endpoint-plan-1.md#apis)  | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md), más: <p> [Detección de dispositivo](device-discovery.md) <p> [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md) <p> [Investigación y respuesta automatizadas](automated-investigations.md) <p> [Búsqueda avanzada de amenazas](advanced-hunting-overview.md) <p> [EDR](overview-endpoint-detection-response.md) <p> [Expertos en amenazas de Microsoft](microsoft-threat-experts.md)  |
+| [Protección de última generación](defender-endpoint-plan-1.md#next-generation-protection) <br/>(incluye antimalware y antivirus) <p> [Reducción de la superficie expuesta a ataques](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [Acciones de respuesta manuales](defender-endpoint-plan-1.md#manual-response-actions) <p> [Administración centralizada](defender-endpoint-plan-1.md#centralized-management) <p>[Informes de seguridad](defender-endpoint-plan-1.md#reporting) <p>[API](defender-endpoint-plan-1.md#apis)  | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md), además de: <p> [Detección de dispositivo](device-discovery.md) <p> [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md) <p> [Análisis de amenazas](threat-analytics.md) <p> [Investigación y respuesta automatizadas](automated-investigations.md) <p> [Búsqueda avanzada de amenazas](advanced-hunting-overview.md) <p> [EDR](overview-endpoint-detection-response.md) <p> [Expertos en amenazas de Microsoft](microsoft-threat-experts.md)  |
 | [Compatibilidad con Windows 10, iOS, sistema operativo Android y dispositivos macOS](defender-endpoint-plan-1.md#cross-platform-support) | Compatibilidad con Windows (cliente y servidor) y plataformas no Windows web<br/> (macOS, iOS, Android y Linux) |
-| Para probar Defender for Endpoint Plan 1, visite [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) . | Para probar Defender for Endpoint Plan 2, visite [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial) . |
+| Para probar Defender for Endpoint Plan 1, visite [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial). | Para probar Defender for Endpoint Plan 2, visite [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial). |
 
 ## <a name="next-steps"></a>Siguientes pasos
 

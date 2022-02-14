@@ -24,16 +24,16 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: Crea vínculos rápidos a tu correo electrónico, documentos, aplicaciones, sitios SharePoint, sitios externos y otros recursos agregando iconos personalizados al iniciador de aplicaciones.
-ms.openlocfilehash: a43f9c712bf661b4bcabba6da9df01ef0071d639
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 31121df0e1af6b8fc2be1e61ba7e0cd0714affa2
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300735"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464024"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Agregar iconos personalizados en el iniciador de aplicaciones
 
-En Microsoft 365, puedes acceder rápida y fácilmente a tu correo electrónico, calendarios, documentos y aplicaciones con el iniciador de aplicaciones ([más información](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)). Estas son aplicaciones que obtienes con Microsoft 365 aplicaciones personalizadas que agregas desde SharePoint [Store](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) o [Azure AD](/previous-versions/office/office-365-api/).
+En Microsoft 365, puedes acceder rápida y fácilmente a tu correo electrónico, calendarios, documentos y aplicaciones con el iniciador de aplicaciones ([más información](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)). Estas son las aplicaciones que obtienes con Microsoft 365 aplicaciones personalizadas que agregas desde SharePoint [Store](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) o [Azure AD](/previous-versions/office/office-365-api/).
   
 Puede agregar sus propios iconos en el iniciador de aplicaciones que apunten a sitios de SharePoint, sitios externos, aplicaciones heredadas y mucho más. El icono personalizado aparece en **Todas** las aplicaciones del iniciador de aplicaciones, pero puede anclarlo a las aplicaciones del **Inicio** e indicar a los usuarios que hagan lo mismo. Esto le facilitará la tarea de buscar los sitios, aplicaciones y recursos necesarios para realizar su trabajo. En el ejemplo siguiente, se usa un icono personalizado denominado "Contoso Portal" para obtener acceso a un sitio de intranet de SharePoint de la organización. 
   
@@ -41,9 +41,9 @@ Puede agregar sus propios iconos en el iniciador de aplicaciones que apunten a s
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Agregar un icono personalizado en el iniciador de aplicaciones
 
-1. Inicie sesión en el Centro de administración como administrador global, vaya a Configuración Org Configuración y elija la pestaña  >   **Perfil de** la organización.
+1. Inicie sesión en el Centro de administración como administrador global, vaya a **Configuración** >  **Org Configuración** y elija la pestaña **Perfil de** la organización.
     
-2. En la **pestaña Perfil de** la organización, elija Iconos del **iniciador de aplicaciones personalizados.**
+2. En la **pestaña Perfil de** la organización, elija **Iconos del iniciador de aplicaciones personalizados**.
   
 3. Seleccione **Agregar un icono personalizado**. 
   
@@ -59,7 +59,7 @@ Puede agregar sus propios iconos en el iniciador de aplicaciones que apunten a s
     > [!TIP]
     > La imagen debe tener 60 x 60 píxeles y estar disponible para todos los usuarios de la organización sin necesidad de autenticación.
 
-7. Introduzca una **Descripción** para el icono. Esto se ve cuando selecciona el icono en la página Mis aplicaciones y selecciona **Detalles de la aplicación.** 
+7. Introduzca una **Descripción** para el icono. Esto se ve al seleccionar el icono en la página Mis aplicaciones y seleccionar **Detalles de la aplicación**. 
   
 8. Seleccione **Guardar cambios** para crear el icono personalizado. 
     
@@ -70,19 +70,19 @@ Puede agregar sus propios iconos en el iniciador de aplicaciones que apunten a s
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. En el Centro de administración, vaya a la **pestaña Configuración**  >  **Organización Configuración** perfil de  >  **la** organización.
+1. En el Centro de administración, vaya a la **pestaña Configuración** >  **Org Configuración** >  **Organization profile**.
     
-2. En la página **Perfil de** la organización, vaya a **Iconos** del  iniciador de aplicaciones personalizadas , Si selecciona los tres puntos junto al icono personalizado y Seleccione **Editar icono personalizado**.
+2. En la **página Perfil de** la organización, vaya a Iconos del iniciador de aplicaciones personalizadas **, Si** selecciona los tres  puntos junto al icono personalizado y Seleccione **Editar icono personalizado**.
 
 3. Actualice el valor de los campos **Nombre del icono**, **Dirección URL**, **Descripción** o **Dirección URL de la imagen** para el icono personalizado (consulte la [Agregar un icono personalizado en el iniciador de aplicaciones](#add-a-custom-tile-to-the-app-launcher)).
     
 4. Seleccione **Actualizar** \> **cerrar**. 
     
-Para eliminar un icono personalizado, en la ventana Iconos **personalizados,** seleccione el icono, seleccione **Quitar icono**  >  **Eliminar**. 
+Para eliminar un icono personalizado, en la **ventana** Iconos personalizados, seleccione el icono, seleccione **Quitar tileDelete** > . 
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
-Además de agregar iconos al iniciador de aplicaciones, puedes agregar iconos del iniciador de aplicaciones a la barra de navegación ([más información](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)). Para personalizar el aspecto de Microsoft 365 para que coincida con la marca de su [organización,](../setup/customize-your-organization-theme.md)vea Personalizar el Microsoft 365 tema .
+ Para personalizar la apariencia de Microsoft 365 para que coincida con la marca de su organización, vea [Personalizar el Microsoft 365 tema](../setup/customize-your-organization-theme.md).
 
 ## <a name="related-content"></a>Contenido relacionado
 

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,24 +16,24 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-- m365initiative-defender-business
-ms.openlocfilehash: 780173c292fd218564a203377cb18cd274e26de2
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+- m365-initiative-defender-business
+ms.openlocfilehash: b13275a68a80cee52a756ef9b9464b5402749c27
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244840"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464973"
 ---
 # <a name="device-groups-in-microsoft-defender-for-business-preview"></a>Grupos de dispositivos en Microsoft Defender para empresas (versión preliminar)
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán aquí [para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios)y agregaremos funcionalidades con regularidad.
+> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y agregaremos funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
 En Microsoft Defender para empresas (versión preliminar), las directivas se aplican a dispositivos a través de determinadas colecciones que se denominan grupos de dispositivos. 
 
-**En este artículo se describe**:  
+**En este artículo se describe lo siguiente**:  
 
 - [Qué grupos de dispositivos son](#what-is-a-device-group)   
 - [Cómo crear grupos de dispositivos en Defender para empresas](#create-a-new-device-group)
@@ -50,7 +50,7 @@ Todos los grupos de dispositivos, incluidos los grupos de dispositivos predeterm
 
 Actualmente, en Defender para empresas (versión preliminar), puedes crear un nuevo grupo de dispositivos mientras estás en el proceso de crear o editar una directiva, como se describe en el siguiente procedimiento: 
 
-1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
+1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
 2. En el panel de navegación, elija **Configuración del dispositivo**. 
 
@@ -60,21 +60,21 @@ Actualmente, en Defender para empresas (versión preliminar), puedes crear un nu
     2. Elija **+ Agregar** para crear una nueva directiva.
 
     > [!TIP]
-    > Para obtener ayuda para crear o editar una directiva, vea Ver o editar directivas [en Microsoft Defender para empresas](mdb-view-edit-policies.md).
+    > Para obtener ayuda para crear o editar una directiva, consulta [Ver o editar directivas en Microsoft Defender para empresas](mdb-view-edit-policies.md).
 
-4. En el **paso Información general,** revise la información, edite si es necesario y, a continuación, elija **Siguiente**.
+4. En el **paso Información general** , revise la información, edite si es necesario y, a continuación, elija **Siguiente**.
 
 5. Elija **+ Crear nuevo grupo**. 
 
 6. Especifique un nombre y una descripción para el grupo de dispositivos y, a continuación, elija **Siguiente**.
 
-7. Seleccione los dispositivos que desea incluir en el grupo y, a continuación, elija **Crear grupo**.
+7. Selecciona los dispositivos que quieres incluir en el grupo y, a continuación, elige **Crear grupo**.
 
-8. En el **paso Grupos de dispositivos,** revisa la lista de grupos de dispositivos para la directiva. Si es necesario, quite un grupo de la lista. A continuación, elija **Siguiente**.
+8. En el **paso Grupos de dispositivos** , revisa la lista de grupos de dispositivos para la directiva. Si es necesario, quite un grupo de la lista. A continuación, elija **Siguiente**.
 
-9. En la **página Configuración,** revise y edite la configuración según sea necesario y, a continuación, elija **Siguiente**. Para obtener más información acerca de estas opciones, vea [Configuración.](mdb-next-gen-configuration-settings.md)
+9. En la **página Configuración** , revise y edite la configuración según sea necesario y, a continuación, elija **Siguiente**. Para obtener más información acerca de estas opciones, consulte [Configuración](mdb-next-gen-configuration-settings.md).
 
-10. En el **paso Revisar la** directiva, revise toda la configuración, realice las modificaciones necesarias y, a continuación, elija **Crear** directiva o **Actualizar directiva**.
+10. En el **paso Revisar la directiva** , revise toda la configuración, realice las modificaciones necesarias y, a continuación, elija **Crear directiva** o **Actualizar directiva**.
 
 ## <a name="next-steps"></a>Siguientes pasos
 
