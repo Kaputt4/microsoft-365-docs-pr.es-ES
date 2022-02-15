@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga más información sobre los servicios y los tipos de elementos en los que puede usar etiquetas de confidencialidad como condiciones en directivas DLP
-ms.openlocfilehash: b74911765d9249834553c09bbd4efdd02e5f97ce
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtener más información sobre los servicios y los tipos de elementos en los que se puede usar etiquetas de confidencialidad como condiciones en directivas DLP
+ms.openlocfilehash: 1117471e38b430f1d7289c6aae76994ac5acd494
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163401"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806893"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Usar etiquetas de confidencialidad como condiciones en las directivas de DLP
 
@@ -75,11 +75,11 @@ Puede usar etiquetas de confidencialidad como condiciones para estos elementos y
 
 - El uso de las etiquetas de confidencialidad como condición se admite en todas las cargas de trabajo, como se indica en la matriz de soporte más arriba.
 
-- Las sugerencias de directiva DLP se seguirán mostrando en las cargas de trabajo (excepto Outlook Win32) para las directivas DLP que contienen la etiqueta de confidencialidad como condición.
+- Las sugerencias de directivas DLP se seguirán mostrando en las cargas de trabajo (excepto Outlook Win32) para las directivas DLP que contienen la etiqueta de confidencialidad como condición.
 
 - Las etiquetas de sensibilidad también aparecerán como parte del correo del informe de incidentes si se cumple una directiva DLP con la etiqueta de confidencialidad como condición.
 
-- Los detalles de la etiqueta de confidencialidad también se mostrarán en el registro de auditoría de coincidencia de regla DLP para una coincidencia de directiva DLP que contiene la etiqueta de confidencialidad como condición.
+- Los detalles de las etiquetas de confidencialidad también se mostrarán en el registro de auditoría de coincidencia de reglas DLP para una coincidencia de directiva DLP que contiene la etiqueta de confidencialidad como condición.
 
 
 ### <a name="support-policy-tips"></a>Sugerencias de directivas compatibles
