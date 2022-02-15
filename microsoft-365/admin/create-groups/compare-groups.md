@@ -23,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
-description: Los miembros del Grupo de Microsoft 365 obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, así como Stream y Planner.
-ms.openlocfilehash: f990f2c605ce72668f28831b903ebdf8ee50c5f9
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Los miembros del Grupo de Microsoft 365 obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, así como Stream y Planner.
+ms.openlocfilehash: cc70fdf534b7240fd914c42f01b2c89843d1372f
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934626"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62805837"
 ---
 # <a name="compare-groups"></a>Comparar grupos
 
@@ -53,7 +53,7 @@ Todos estos tipos de grupo se pueden usar con Power Automate.
 
 ## <a name="microsoft-365-groups"></a>Grupos de Microsoft 365
 
-Los Grupos de Microsoft 365 se usan para la colaboración entre usuarios, tanto dentro como fuera de la compañía. Con cada Grupo de Microsoft 365, los miembros obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, así como Stream y Planner.
+Los Grupos de Microsoft 365 se usan para la colaboración entre usuarios, tanto dentro como fuera de la compañía. Con cada Grupo de Microsoft 365, los miembros obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, así como Stream y Planner.
 
 Puede agregar personas externas a su empresa a un grupo siempre y cuando esta opción se haya [habilitado por parte del administrador](manage-guest-access-in-groups.md). También puede permitir que los remitentes externos puedan enviar correos electrónicos a la dirección de correo electrónico del grupo.
 
@@ -111,9 +111,9 @@ Los buzones compartidos pueden recibir mensajes externos si el administrador ha 
 
 Los buzones compartidos incluyen un calendario que se puede usar para la colaboración.
 
-Los usuarios con permisos para el buzón del grupo pueden enviar como o enviar en nombre de la dirección de correo electrónico del buzón si el administrador le ha concedido permisos de usuario para hacerlo. Esto es especialmente útil para los buzones de ayuda y soporte técnico, ya que los usuarios pueden enviar mensajes de correo electrónico desde "Soporte técnico de Contoso" o "Escritorio de recepción del edificio A".
+Los usuarios con permisos para el buzón del grupo pueden enviar como o enviar en nombre de la dirección de correo electrónico del buzón si el administrador le ha concedido permisos de usuario para hacerlo. Esto es útil en particular para los buzones de ayuda y soporte técnico, ya que los usuarios pueden enviar mensajes de correo electrónico desde "Soporte técnico de Contoso" o "Escritorio de recepción del edificio A".
 
-No es posible migrar un buzón compartido a un Grupo de Microsoft 365. 
+No es posible migrar un buzón compartido a un Grupo de Microsoft 365.
 
 ## <a name="related-content"></a>Contenido relacionado
 

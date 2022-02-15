@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 47773d3fb7f94811a03c78f181b2552245f89f97
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: c4308c203093d2170cc1a6316db824ee9935363f
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767585"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806233"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
@@ -48,7 +48,7 @@ Microsoft Defender para punto de conexión usa la siguiente combinación de tecn
 
 - **Sensores de comportamiento del punto de conexión**. Integrados en Windows 10, estos sensores recopilan y procesan señales de comportamiento desde el sistema operativo. Los sensores envían estos datos a la instancia de nube privada aislada de Microsoft Defender para punto de conexión.
 
-- **Análisis de seguridad en la nube**. Al aprovechar los macrodatos, el aprendizaje de dispositivos y la óptica exclusiva de Microsoft en todo el ecosistema de Windows, los productos empresariales en la nube (como Office 365) y los activos en línea, las señales de comportamiento se traducen en conocimientos, detecciones y respuestas recomendadas a amenazas avanzadas.
+- **Análisis de seguridad en la nube**: al aprovechar los macrodatos, el aprendizaje de dispositivos y la óptica exclusiva de Microsoft en todo el ecosistema de Windows, los productos empresariales en la nube (como Office 365) y los activos en línea, las señales de comportamiento se traducen en información, detecciones y respuestas recomendadas a amenazas avanzadas.
 
 - **Inteligencia sobre amenazas**. Generada por cazadores de Microsoft, equipos de seguridad y aumentada por la inteligencia de amenazas proporcionada por los socios, la inteligencia de amenazas permite a Microsoft Defender para punto de conexión identificar herramientas, técnicas y procedimientos de atacantes, y generar alertas cuando se observan en los datos de sensores recopilados.
 

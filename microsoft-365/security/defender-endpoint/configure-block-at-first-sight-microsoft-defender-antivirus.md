@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1ec2694fa974cde3f8316f4ad0937fc686d16c63
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: c955ab15640a8c3154e14ba0201946e109f832a9
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444658"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807385"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activar el bloqueo a primera vista
 
@@ -152,6 +152,9 @@ Puede confirmar que el bloqueo a primera vista está habilitado en dispositivos 
 Para validar que la característica funciona, descargue el archivo de ejemplo [Bloquear a primera vista](https://demo.wd.microsoft.com/Page/BAFS). Para descargar el archivo, necesitará una cuenta en Azure AD que tenga asignado el rol Administrador de seguridad o Administrador global.
 
 Para validar que la protección habilitada para la nube funciona, siga las instrucciones de [Validar las conexiones entre la red y la nube](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
+
+> [!NOTE]
+> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está en desuso y se eliminará en el futuro.
 
 ## <a name="turn-off-block-at-first-sight"></a>Desactivar el bloqueo a primera vista
 

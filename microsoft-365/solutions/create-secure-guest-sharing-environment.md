@@ -18,12 +18,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga más información sobre las opciones disponibles para crear un entorno seguro de uso compartido para invitados en Microsoft 365, al proporcionar accesos de invitado para mejorar la colaboración.
-ms.openlocfilehash: 775a5f1376df1bca553bc1b3b9cd92072736ac60
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ae616bcaa78aa759ca5b1f1be4b1beaf8d709a00
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203740"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807613"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Crear un entorno seguro de uso compartido para invitados
 
@@ -142,7 +142,7 @@ Crear una revisión de acceso de invitados
 13. Escriba un **Nombre de revisión** y revise la configuración.
 14. Haga clic en **Crear**.
 
-Hay que tener en cuenta que los invitados pueden recibir acceso tanto a equipos o grupos, como a archivos y carpetas individuales. Cuando se da acceso a archivos y carpetas, es posible que los invitados no se agreguen a un grupo específico. Si desea realizar revisiones de acceso para invitados que no pertenezcan a un equipo o grupo, puede crear un grupo dinámico en Azure AD que contenga todos los invitados y, a continuación, crear una revisión de acceso para ese grupo. Los propietarios del sitio también pueden administrar una [expiración para invitados del sitio](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
+Es importante tener en cuenta que, para las ubicaciones de SharePoint y OneDrive, los documentos se bloquearán de forma proactiva en cuanto se detecte información confidencial (independientemente de si el documento se comparte o no), para todos los usuarios externos, mientras que los usuarios internos seguirán teniendo acceso al documento.
 
 ### <a name="more-information"></a>Más información
 

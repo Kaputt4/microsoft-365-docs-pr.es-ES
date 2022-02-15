@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenga información sobre cómo usar la búsqueda avanzada de metadatos para buscar elementos en bibliotecas de documentos de SharePoint con SharePoint Syntex.
-ms.openlocfilehash: 99cf65c5baf57255ff880a859b8fd0b24bab733f
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: b5dffe0cd0bf481c1243d87450110d545578a06b
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60717694"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62806911"
 ---
 # <a name="search-for-metadata-in-document-libraries-in-microsoft-sharepoint-syntex"></a>Buscar metadatos en bibliotecas de documentos en Microsoft SharePoint Syntex
 
@@ -39,14 +39,15 @@ La búsqueda avanzada de metadatos le permite usar los metadatos asociados a un 
 
     ![Captura de pantalla de una página de biblioteca de documentos que muestra el panel de búsqueda de metadatos.](../media/content-understanding/metadata-search-pane.png)
 
-   Actualmente hay disponibles cinco campos de búsqueda de metadatos. En el futuro se agregarán más campos.
+   Actualmente existen disponibles seis campos de búsqueda de metadatos. En el futuro se agregarán más campos.
 
    |Field    |Use este campo para  |
    |---------|---------|
    |Palabras clave |Busque una coincidencia de cadena en los metadatos o en el texto completo de un documento. |
-   |Nombre     |Busque en la columna **Nombre** en la biblioteca.          |
+   |Nombre de archivo     |Busque en la columna **Nombre** en la biblioteca.          |
    |Contactos   |Busque una coincidencia en las personas de cualquier columna de la biblioteca.   |
-   |Modified |Buscar por intervalo de fechas seleccionado en la columna **Modificado** en la biblioteca.         |
-   |Tipo     |Buscar por tipo de archivo seleccionado.        |
+   |Fecha de modificación |Buscar por intervalo de fechas seleccionado en la columna **Modificado** en la biblioteca.         |
+   |Tipo de archivo     |Buscar por tipo de archivo seleccionado (por ejemplo, documento de Word o PDF).        |
+   |Tipo de contenido  |Buscar por tipo de contenido seleccionado. Esta opción solo aparecerá si hay un tipo de contenido no predeterminado aplicado a la biblioteca. Los tipos de contenido predeterminado son *documento* y *carpeta*.        |
 
 3. Seleccione **Buscar**. Los documentos que coinciden con la búsqueda de metadatos se muestran en la página de resultados. 

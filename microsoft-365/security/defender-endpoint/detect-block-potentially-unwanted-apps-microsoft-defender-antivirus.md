@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5b0be9c044b48788e5abb04f469b9f6ab0038cd5
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b193279f9891badc78e639776a57a366a0fa8109
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374537"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807085"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Detectar y bloquear aplicaciones potencialmente no deseadas
 
@@ -87,6 +87,9 @@ También puede usar la protección contra PUA en modo de auditoría para detecta
 
 > [!TIP]
 > Visite el sitio web de demostración de Microsoft Defender para punto de conexión en [demo.wd.microsoft.com](https://demo.wd.microsoft.com/Page/UrlRep) para confirmar que la característica funciona y verla en acción.
+
+> [!NOTE]
+> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está en desuso y se eliminará en el futuro.
 
 La protección contra PUA en el modo de auditoría es útil si su empresa está realizando una comprobación interna de cumplimiento de seguridad de software y quiere evitar falsos positivos.
 

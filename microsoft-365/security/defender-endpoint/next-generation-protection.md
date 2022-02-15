@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a0f0b7a47a88fe5a94cdc37dc586ee23020723ae
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 94f920d298c5b74eff39290ced4ccdc58031ac0f
+ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244480"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "62807409"
 ---
 # <a name="next-generation-protection-overview"></a>Información sobre los servicios de protección de última generación
 
@@ -44,6 +44,9 @@ Visite el [sitio de demostración de Microsoft Defender para punto de conexión]
 - Protección entregada en la nube
 - Protección de bloqueo a primera vista (BAFS)
 - Protección contra aplicaciones potencialmente no deseadas (PUA)
+
+> [!NOTE]
+> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está en desuso y se eliminará en el futuro.
 
 ## <a name="configure-next-generation-protection-services"></a>Configurar los servicios de protección de última generación
 
