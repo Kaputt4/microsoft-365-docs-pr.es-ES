@@ -2,7 +2,7 @@
   items:
     - name: Información general
       href: index.md
-    - name: Obtener Microsoft 365 Empresa
+    - name: "Obtención de Microsoft\_365 Empresa Premium"
       href: get-microsoft-365-business-premium.md
     - name: Obtenga Microsoft 365 para Campañas
       href: get-microsoft-365-campaigns.md

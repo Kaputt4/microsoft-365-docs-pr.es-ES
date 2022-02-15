@@ -1,5 +1,5 @@
 ---
-title: Exportar datos de origen para el tipo exacto de información confidencial basada en coincidencias de datos
+title: Exportar datos de origen para el tipo de información confidencial basada en la coincidencia exacta de datos
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo exportar datos de origen para el tipo de información confidencial basada en coincidencias exactas de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b2009687e52e4911345daed1b3c16c0942fc1a65
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 8253ff73d53100c986a2bd8580830703c9f4b363
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914902"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818533"
 ---
-# <a name="export-source-data-for-exact-data-match-based-sensitive-information-type"></a>Exportar datos de origen para el tipo exacto de información confidencial basada en coincidencias de datos
+# <a name="export-source-data-for-exact-data-match-based-sensitive-information-type"></a>Exportar datos de origen para el tipo de información confidencial basada en la coincidencia exacta de datos
 
 
 La tabla de datos confidenciales es un archivo de texto que contiene filas de valores con los que comparará el contenido de los documentos para identificar datos confidenciales. Estos valores pueden ser información de identificación personal, registros de productos u otros datos confidenciales en formato de texto que desee detectar en el contenido y realizar acciones de protección.
@@ -41,7 +41,7 @@ Use estas reglas para decidir qué columnas debe usar como campos principales:
 - Si se deben detectar varias combinaciones de campos diferentes en la tabla de datos confidenciales en el contenido, identifique las columnas que son comunes a la mayoría de estas combinaciones y designe como elementos principales y combinaciones de los demás campos como elementos secundarios.
 - Si una columna que desea usar como campo principal no sigue un patrón detectable, como cualquier cadena de texto o sigue patrones detectables que estarían presentes en algún lugar en un gran porcentaje de documentos o correos electrónicos, intente elegir otras columnas mejor estructuradas como elementos principales.
 
-Por ejemplo, si tiene las columnas , , y , incluso si los nombres y apellidos son las columnas que serán comunes a las distintas combinaciones de datos que desea detectar, estas cadenas no siguen patrones fácilmente identificables y pueden ser difíciles de definir como un tipo de información `full name` `date of birth` `account number` `Social Security Number` confidencial. Esto se debe a que es posible que algunos nombres ni siquiera comiencen con mayúsculas, pueden estar formados por dos, tres o más palabras e incluso pueden contener números u otros caracteres no alfabéticos. La fecha de nacimiento puede identificarse con mayor facilidad, pero como todos los correos electrónicos y la mayoría de los documentos contendrán al menos una fecha, tampoco es un buen candidato. Los números de seguridad social y los números de cuenta son buenos candidatos para su uso como campo principal.
+Por ejemplo, `full name`si tiene las columnas , , `date of birth``account number`y `Social Security Number`, incluso si los nombres y apellidos son las columnas que serán comunes a las distintas combinaciones de datos que desea detectar, estas cadenas no siguen patrones fácilmente identificables y pueden ser difíciles de definir como un tipo de información confidencial. Esto se debe a que es posible que algunos nombres ni siquiera comiencen con mayúsculas, pueden estar formados por dos, tres o más palabras e incluso pueden contener números u otros caracteres no alfabéticos. La fecha de nacimiento puede identificarse con mayor facilidad, pero como todos los correos electrónicos y la mayoría de los documentos contendrán al menos una fecha, tampoco es un buen candidato. Los números de seguridad social y los números de cuenta son buenos candidatos para su uso como campo principal.
 
 ## <a name="save-sensitive-data-in-csv-tsv-or-pipe-separated-format"></a>Guardar datos confidenciales en .csv, .tsv o formato separado por canalización
 
@@ -57,9 +57,9 @@ El archivo de datos puede incluir un máximo de:
 
 ## <a name="next-step"></a>Paso siguiente
 
-- [Crear el esquema para tipos exactos de información confidencial basada en coincidencias de datos](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
+- [Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-- [Introducción a tipos exactos de información confidencial basada en coincidencias de datos](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
-- [Obtenga información sobre tipos de información confidencial basada en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
+- [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)

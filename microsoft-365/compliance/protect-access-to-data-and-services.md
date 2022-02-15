@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Aprende a proteger el acceso de usuarios y dispositivos a Microsoft 365 y servicios y a defenderte de la pérdida de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9659d9117359fdb7a3264c244e128a1c20d0ec14
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 121c5b8f1168e9986693fea128aa66626b3e31fe
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62326692"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818545"
 ---
 # <a name="protect-user-and-device-access"></a>Proteger el acceso de usuario y dispositivo
 
@@ -45,7 +45,7 @@ Después, configure la administración de acceso con privilegios en Office 365. 
 - [Información general sobre la administración de acceso con privilegios](privileged-access-management-overview.md)
 - [Configurar la administración del acceso con privilegios](privileged-access-management-configuration.md)
 
-Otra recomendación principal es usar estaciones de trabajo configuradas específicamente para el trabajo administrativo. Se trata de dispositivos dedicados que solo se usan para tareas administrativas. Consulte [Proteger el acceso con privilegios](/windows-server/identity/securing-privileged-access/securing-privileged-access).
+Otra recomendación principal es usar estaciones de trabajo especialmente configuradas para el trabajo administrativo. Se trata de dispositivos dedicados que solo se usan para tareas administrativas. Consulte [Proteger el acceso con privilegios](/windows-server/identity/securing-privileged-access/securing-privileged-access).
 
 Por último, puede mitigar el impacto de la falta involuntaria de acceso administrativo mediante la creación de dos o más cuentas de acceso de emergencia en el inquilino. Consulte [Administrar cuentas de acceso de emergencia en Azure AD](/azure/active-directory/users-groups-roles/directory-emergency-access). 
 
@@ -53,7 +53,7 @@ Por último, puede mitigar el impacto de la falta involuntaria de acceso adminis
 La autenticación multifactor (MFA) y las directivas de acceso condicional son herramientas eficaces para mitigar las cuentas comprometidas y el acceso no autorizado. Se recomienda implementar un conjunto de directivas que se han probado conjuntamente. Para obtener más información, incluidos los pasos de implementación, consulte [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md).
 
  Estas directivas implementan las siguientes funcionalidades:
-- Autenticación Mult-factor
+- Autenticación multifactor
 - Acceso condicional
 - Protección de aplicaciones de Intune (protección de datos y aplicaciones para dispositivos)
 - Conformidad de dispositivos de Intune

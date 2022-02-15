@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: f37a02c8cda29f48f926125f353d5e75410d9ab5
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 620e9d2bd95dc4782237af94966b5cb52579b656
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765497"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818581"
 ---
 # <a name="work-with-reports"></a>Trabajar con informes
 
@@ -36,7 +36,7 @@ Al seleccionar la **pestaña Informes** , verá descripciones de los informes de
 | **Tendencia de estado del dispositivo** (*en versión preliminar*) | Esto supervisa las tendencias del estado del dispositivo en los últimos 60 días para los dispositivos de Escritorio administrado de Microsoft. Las tendencias pueden ayudarte a asociar el estado del dispositivo con otros cambios con el tiempo, por ejemplo, nuevas implementaciones. |
 | [**Windows de actualizaciones de seguridad**](security-updates-report.md) (*en versión preliminar*) | Este informe muestra cómo se Windows actualizaciones de seguridad en todos los dispositivos de Escritorio administrado de Microsoft. |
 | [**Informe de uso de** aplicaciones](app-usage-report.md) | Este informe proporciona información sobre el uso típico de la aplicación en los dispositivos de Escritorio administrado de Microsoft. Para que los dispositivos proporcionen datos a este informe, deben establecerse en el nivel de datos de diagnóstico opcional. |
-| **Informe de métricas de servicio** (*en versión preliminar*) | Este informe proporciona resúmenes sencillos de métricas clave para Microsoft Managed Desktop mes a mes. |
+| [**Informe de métricas de servicio**](service-metrics-report.md) (*en versión preliminar*) | Este informe proporciona resúmenes sencillos de métricas clave para Microsoft Managed Desktop mes a mes. |
 
 ## <a name="endpoint-analytics"></a>Análisis de puntos de conexión
 

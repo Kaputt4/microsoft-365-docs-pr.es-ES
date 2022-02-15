@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se presenta una lista de los filtros que se pueden codificar en tipos de información confidencial personalizados.
-ms.openlocfilehash: 3c91ff4a31f8e80b4798743169d5c30195dcdcde
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e5f3fb99ec4454410c3719dc3d76356e02f03573
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175004"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818233"
 ---
 # <a name="custom-sensitive-information-type-filters-reference"></a>Personalizar referencia de filtros de tipo de información confidencial
 
-En Microsoft puede definir filtros o comprobaciones adicionales al crear un tipo de información confidencial personalizado (SIT).
+En Microsoft puede definir filtros u otras comprobaciones al crear tipos de información confidencial personalizados (SIT).
 
 ## <a name="list-of-supported-filters-and-use-cases"></a>Lista de filtros admitidos y casos de uso
 
@@ -70,7 +70,7 @@ Por ejemplo, para excluir los números a partir de 0500, 91, 091, 010 en una lis
 - 1000-3265-9874
 - 0100-7892-3012
 
-puede usar este xml
+Puede usar el siguiente xml
 
 ```xml
 <Filters id="phone_number_filters_exc">
@@ -96,7 +96,7 @@ Por ejemplo, para incluir los números a partir de 0500, 91, 091, 0100 en una li
 - 1000-3265-9874
 - 0100-7892-3012
 
-puede usar este xml
+Puede usar el siguiente xml
 
 ```xml
 <Filters id="phone_filters_inc">
@@ -115,7 +115,7 @@ Por ejemplo, para excluir los números que terminan con 0500,91.091, 0100 en una
 - 1234.4567.7091
 - 1234-8091-4564
 
-puede usar este xml
+Puede usar el siguiente xml
 
 ```xml
 <Filters id="phone_number_filters_exc">
@@ -139,7 +139,7 @@ Por ejemplo, para incluir los números que terminan con 0500, 91, 091, 0100, en 
 - 1234.4567.7091
 - 1234-8091-4564
 
-puede usar este xml
+Puede usar el siguiente xml
 
 ```xml
 <Filters id="phone_filters_inc">
@@ -157,7 +157,7 @@ Por ejemplo, para excluir números de tarjeta de crédito como 4111111111111111 
 - 4111111111111111
 - 3241891031113111
 
-puede usar este xml
+Puede usar el siguiente xml
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -178,7 +178,7 @@ Por ejemplo, para incluir números de tarjeta de crédito como 4111111111111111 
 - 4111111111111111
 - 3241891031113111
 
-puede usar este xml
+Puede usar el siguiente xml
 
 ```xml
 <Filters id="cc_filters_inc">
@@ -190,13 +190,13 @@ puede usar este xml
 
 Descripción: permite definir los caracteres anteriores que deben incluirse o excluirse siempre. Por ejemplo, si el número de tarjeta de crédito está precedido por "Id. de pedido:", quita la coincidencia de las coincidencias válidas.
 
-Por ejemplo, para excluir las repeticiones de números de teléfono que **tienen Teléfono número** y **llamarme** en cadenas antes del número de teléfono, en una lista como esta:
+Por ejemplo, para excluir las repeticiones de números de teléfono que Teléfono número de teléfono y **llamarme** **en** cadenas antes del número de teléfono, en una lista como esta:
 
-- número de teléfono 091-8974-653278
+- Teléfono número 091-8974-653278
 - Teléfono 45-124576532-123
 - 45-124576532-123
 
-puede usar este xml
+Puede usar el siguiente xml
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -210,12 +210,12 @@ puede usar este xml
   </Keyword>
 ```
 
-Por ejemplo, para incluir  repeticiones que tienen cadenas de tarjeta de crédito y **#tarjeta** antes del número de tarjeta de crédito, en una lista como esta:
+Por ejemplo, para incluir repeticiones que tienen  cadenas de tarjeta de crédito y **#** tarjeta antes del número de tarjeta de crédito, en una lista como esta:
 
 - Tarjeta de crédito 45-124576532-123 
 - 45-124576532-123 (que podría ser número de teléfono)
 
-puede usar este xml
+Puede usar el siguiente xml
 
 ```xml
 <Filters id="cc_filters_inc">
@@ -234,12 +234,12 @@ puede usar este xml
 
 Descripción: permite definir los siguientes caracteres que deben incluirse o excluirse siempre. Por ejemplo, si el número de tarjeta de crédito va seguido de '/xuid', quite la coincidencia de las coincidencias válidas.
 
-Por ejemplo, las repeticiones de exclusión superior si hay 5 instancias más de cuatro dígitos como sufijo en una lista como esta:
+Por ejemplo, las repeticiones de exclusión superior si hay cinco instancias más de cuatro dígitos como sufijo en una lista como esta:
 
 - 1234-5678-9321 4500 9870 6321 48925566
 - 1234-5678-9321
 
-puede usar este xml
+Puede usar el siguiente xml
 
 ```xml
 <Filters id="cc_number_filters_exc">
@@ -253,24 +253,27 @@ Por ejemplo, para excluir repeticiones si se siguen por **/xuidsuffix**, como un
 - 1234-5678-9321 /xuid
 - 1234-5678-9321
 
-puede usar este xml
+Puede usar este xml
 
-''xml <Filters id="cc_number_filters_exc">
+```xml
+<Filters id="cc_number_filters_exc">
     <Filter type="TextMatchFilter" direction="Prefix" logic="Exclude" textProcessorId="Keyword_false_positives_suffix">
 </Filter>
 
-  <Keyword id="Keyword_false_positives_suffix"> <Group matchStyle="string">
+  <Keyword id="Keyword_false_positives_suffix">
+    <Group matchStyle="string">
       <Term>/xuid</Term>
-    </Group> </Keyword>
+    </Group>
+  </Keyword>
 ```
 
-For example, to include an occurrence only if it is followed by **cvv** or **expires**, like two in this list:
+Por ejemplo, para incluir una repetición solo si va seguida de **cvv** o **expira**, como dos de esta lista:
 
 - 45-124576532-123 
-- 45-124576532-123  cvv 966
-- 45-124576532-123  expires 03/23
+- 45-124576532-123 cvv 966
+- 45-124576532-123 expira el 03/23
 
-you can use this xml
+Puede usar este xml
 
 ```xml
 <Filters id="cc_filters_inc">
