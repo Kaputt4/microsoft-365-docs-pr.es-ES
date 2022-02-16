@@ -1,7 +1,7 @@
 ---
 title: Soporte técnico de administrador para Escritorio administrado de Microsoft
 description: Cómo los administradores pueden obtener ayuda con el servicio
-keywords: 'Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación'
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: tiaraquan
 ms.localizationpriority: medium
@@ -9,8 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
+ms.openlocfilehash: 82903c15c0941a729f85bdbc69cba9779d4509e7
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825450"
 ---
-
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Soporte técnico de administrador para Escritorio administrado de Microsoft
 
 Puede enviar vales de soporte técnico o solicitudes de comentarios a Microsoft mediante el portal de administración de escritorio administrado de Microsoft. Las solicitudes de soporte técnico siempre se priorizan sobre los envíos de comentarios.
@@ -36,7 +41,7 @@ Las solicitudes de soporte técnico se administran de acuerdo con la gravedad de
 | ----- | ----- |
 Incidente | Necesita que el equipo de Operaciones de Escritorio administrado de Microsoft investigue un problema de usuario. Por ejemplo, un impacto generalizado de un cambio o interrupción del servicio.
 Solicitud de información | Está planeando un cambio en las redes, la configuración de proxy, los sistemas VPN, la expiración del certificado o simplemente necesita información sobre el servicio. Se recomienda una respuesta del equipo de Operaciones de escritorio administrado de Microsoft al comunicar un cambio dentro de la organización.
-Solicitud de cambio | Es necesario que el equipo de Operaciones de escritorio administrado de Microsoft realice un cambio, como mover dispositivos entre grupos de actualización.
+Solicitud de cambio | Es necesario que el equipo de Operaciones de escritorio administrado de Microsoft realice un cambio, como mover dispositivos entre grupos de actualización. Todas las solicitudes de cambio se tratan como gravedad C.
 
 > [!IMPORTANT]
 > Al crear una solicitud de soporte técnico, deberá proporcionar un contacto principal. Esta persona es responsable de trabajar con nuestros ingenieros de servicio para resolver el problema o responder a cualquier pregunta sobre un cambio solicitado. También es necesario que haya configurado previamente [](../get-started/add-admin-contacts.md) un contacto de administrador que se copiará en todas las notificaciones de caso para su área de enfoque relevante. Se pedirá a esta persona que tome el control de un caso si el contacto principal de un caso es inaccesible.
@@ -66,7 +71,7 @@ Puede editar los detalles del caso, por ejemplo, actualizar el contacto principa
 1. Seleccione el caso para abrir los detalles de la solicitud.
 1. Desplácese hasta la parte inferior de los detalles de la solicitud y seleccione **Editar**.
 1. Actualice la información editable, agregue datos adjuntos al caso o agregue una nota para el equipo de Ingeniería de servicios.
-1. Haga clic en **Guardar**.
+1. Seleccione **Guardar**.
 
 Una vez resuelto un caso, ya no se puede editar. Si una solicitud se ha resuelto durante menos de 24 horas, verá la opción de **reactivarse** en lugar de **Editar**. Una vez reactivada, puede volver a editar la solicitud.  
 

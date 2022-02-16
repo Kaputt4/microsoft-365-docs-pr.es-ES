@@ -11,146 +11,160 @@ metadata:
   ms.author: pebaum
   ms.date: 02/04/2022
   ms.localizationpriority: high
+  ms.openlocfilehash: 6625b8f8b8afd32488069a65147362c83728a327
+  ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 02/15/2022
+  ms.locfileid: "62825228"
 landingContent:
-  - title: Comenzar
-    linkLists:
-      - linkListType: video
-        links:
-          - text: ¿Qué es Microsoft 365?
-            url: admin-overview/what-is-microsoft-365.md
-          - text: Información general sobre la configuración
-            url: setup/plan-your-setup.md
-          - text: Elija una suscripción
-            url: admin-overview/sign-up-for-office-365.md
-  - title: Configuración de la nube
-    linkLists:
-      - linkListType: video
-        links:
-          - text: Registrarse para una suscripción
-            url: admin-overview/sign-up-for-office-365.md
-          - text: Configurar el servicio
-            url: setup/business-set-up.md
-          - text: Proteger equipos con Windows 10
-            url: setup/secure-win-10-pcs.md
-  - title: Configuración del dispositivo
-    linkLists:
-      - linkListType: video
-        links:
-          - text: Conectar equipos a Microsoft 365
-            url: setup/set-up-windows-devices.md
-          - text: Instalar las aplicaciones de Microsoft Office
-            url: setup/install-applications.md
-          - text: Configurar Outlook para el correo electrónico
-            url: setup/setup-outlook.md
-          - text: Importar y redirigir correo electrónico
-            url: setup/migrate-email-and-contacts-admin.md
-          - text: Mover los archivos a OneDrive
-            url: setup/files-to-onedrive.md
-          - text: Mover los archivos de la empresa a SharePoint
-            url: setup/files-to-sharepoint.md
-  - title: Móvil
-    linkLists:
-      - linkListType: video
-        links:
-          - text: Obtener la aplicación móvil de administración
-            url: admin-overview/admin-mobile-app.md
-  - title: Business Voice
-    linkLists:
-      - linkListType: video
-        links:
-          - text: ¿Qué es Business Voice?
-            url: /microsoftteams/business-voice/whats-business-voice
-          - text: Configurar Business Voice
-            url: /microsoftteams/business-voice/set-up-overview
-  - title: Administrar servicios
-    linkLists:
-      - linkListType: video
-        links:
-          - text: ¿Qué es un administrador?
-            url: add-users/about-admin-roles.md
-          - text: Introducción al centro de administración
-            url: admin-overview/admin-center-overview.md
-          - text: Crear una firma de correo electrónico para toda la empresa
-            url: setup/create-signatures-and-disclaimers.md
-          - text: Tomar medidas basándose en los informes de uso
-            url: activity-reports/activity-reports.md
-          - text: Agregar otro dominio
-            url: setup/add-domain.md
-          - text: Configurar una nueva dirección de correo electrónico de empresa
-            url: email/change-email-address.md
-  - title: Administrar usuarios
-    linkLists:
-      - linkListType: video
-        links:
-          - text: Restablecer contraseñas de usuario
-            url: add-users/reset-passwords.md
-          - text: Configurar el restablecimiento de contraseña autoasistido
-            url: add-users/let-users-reset-passwords.md
-          - text: Agregar un usuario
-            url: add-users/add-users.md
-          - text: Eliminar un usuario
-            url: add-users/remove-former-employee.md
-          - text: Agregar a otro administrador
-            url: add-users/assign-admin-roles.md
-          - text: Cambiar un nombre de usuario o una dirección de correo electrónico
-            url: add-users/change-a-user-name-and-email-address.md
-          - text: Mover usuarios a una suscripción diferente
-            url: ../commerce/try-or-buy-microsoft-365.md
-  - title: Administrar licencias y facturación
-    linkLists:
-      - linkListType: video
-        links:
-          - text: 'Ver, descargar o imprimir la factura'
-            url: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
-          - text: Comprar nuevas licencias
-            url: ../commerce/licenses/buy-licenses.md
-          - text: Quitar las licencias existentes
-            url: ../commerce/licenses/buy-licenses.md
-          - text: Actualizar el método de pago
-            url: ../commerce/billing-and-payments/manage-payment-methods.md
-  - title: Administrar dispositivos
-    linkLists:
-      - linkListType: video
-        links:
-          - text: Proteger dispositivos con Windows 10 Pro
-            url: devices/protection-settings-for-windows-10-pcs.md
-          - text: Proteger aplicaciones de Office en iOS
-            url: devices/app-protection-settings-for-android-and-ios.md
-  - title: Seguridad y cumplimiento
-    linkLists:
-      - linkListType: video
-        links:
-          - text: Información general sobre la seguridad en Microsoft 365 Empresa Premium
-            url: security-and-compliance/secure-your-business-data.md
-          - text: (¡NUEVO!) Microsoft Defender para empresas (versión preliminar)
-            url: /microsoft-365/security/defender-business/index.yml
-          - text: Proteger las cuentas de los empleados con autenticación multifactor
-            url: security-and-compliance/set-up-multi-factor-authentication.md
-          - text: Activar la detección de malware
-            url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#raise-the-level-of-protection-against-malware-in-mail
-          - text: Crear reglas de correo electrónico para protegerse contra ransomware
-            url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-ransomware
-          - text: Configurar directivas contra suplantación de identidad
-            url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-your-email-from-phishing-attacks
-          - text: Administrar datos adjuntos seguros
-            url: security-and-compliance/increase-threat-protection.md
-          - text: Administrar vínculos seguros
-            url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links
-          - text: Prevenir la pérdida de datos
-            url: security-and-compliance/set-up-compliance.md
-          - text: Cree etiquetas de confidencialidad
-            url: security-and-compliance/set-up-compliance.md
-  - title: Soporte técnico
-    linkLists:
-      - linkListType: video
-        links:
-          - text: Obtener ayuda o soporte técnico
-            url: get-help-support.md
-          - text: Configuración rápida para empleados
-            url: ../business-video/employee-quick-setup.md
-  - title: Cambiar de Google Workspace
-    linkLists:
-      - linkListType: video
-        links:
-          - text: Cambiar de Google Workspace
-            url: ../business-video/moveto-microsoft-365/move-from-google-workspace-overview.md
+- title: Comenzar
+  linkLists:
+  - linkListType: video
+    links:
+    - text: ¿Qué es Microsoft 365?
+      url: admin-overview/what-is-microsoft-365.md
+    - text: Información general sobre la configuración
+      url: setup/plan-your-setup.md
+    - text: Elija una suscripción
+      url: admin-overview/sign-up-for-office-365.md
+- title: Configuración de la nube
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Registrarse para una suscripción
+      url: admin-overview/sign-up-for-office-365.md
+    - text: Configurar el servicio
+      url: setup/business-set-up.md
+    - text: Proteger equipos con Windows 10
+      url: setup/secure-win-10-pcs.md
+- title: Configuración del dispositivo
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Conectar equipos a Microsoft 365
+      url: setup/set-up-windows-devices.md
+    - text: Instalar las aplicaciones de Microsoft Office
+      url: setup/install-applications.md
+    - text: Configurar Outlook para el correo electrónico
+      url: setup/setup-outlook.md
+    - text: Importar y redirigir correo electrónico
+      url: setup/migrate-email-and-contacts-admin.md
+    - text: Mover los archivos a OneDrive
+      url: setup/files-to-onedrive.md
+    - text: Mover los archivos de la empresa a SharePoint
+      url: setup/files-to-sharepoint.md
+- title: Móvil
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Obtener la aplicación móvil de administración
+      url: admin-overview/admin-mobile-app.md
+- title: Business Voice
+  linkLists:
+  - linkListType: video
+    links:
+    - text: ¿Qué es Business Voice?
+      url: /microsoftteams/business-voice/whats-business-voice
+    - text: Configurar Business Voice
+      url: /microsoftteams/business-voice/set-up-overview
+- title: Administrar servicios
+  linkLists:
+  - linkListType: video
+    links:
+    - text: ¿Qué es un administrador?
+      url: add-users/about-admin-roles.md
+    - text: Introducción al centro de administración
+      url: admin-overview/admin-center-overview.md
+    - text: Crear una firma de correo electrónico para toda la empresa
+      url: setup/create-signatures-and-disclaimers.md
+    - text: Tomar medidas basándose en los informes de uso
+      url: activity-reports/activity-reports.md
+    - text: Agregar otro dominio
+      url: setup/add-domain.md
+    - text: Configurar una nueva dirección de correo electrónico de empresa
+      url: email/change-email-address.md
+- title: Administrar usuarios
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Restablecer contraseñas de usuario
+      url: add-users/reset-passwords.md
+    - text: Configurar el restablecimiento de contraseña autoasistido
+      url: add-users/let-users-reset-passwords.md
+    - text: Agregar un usuario
+      url: add-users/add-users.md
+    - text: Eliminar un usuario
+      url: add-users/remove-former-employee.md
+    - text: Agregar a otro administrador
+      url: add-users/assign-admin-roles.md
+    - text: Cambiar un nombre de usuario o una dirección de correo electrónico
+      url: add-users/change-a-user-name-and-email-address.md
+    - text: Mover usuarios a una suscripción diferente
+      url: ../commerce/try-or-buy-microsoft-365.md
+- title: Administrar licencias y facturación
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Ver, descargar o imprimir la factura
+      url: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
+    - text: Comprar nuevas licencias
+      url: ../commerce/licenses/buy-licenses.md
+    - text: Quitar las licencias existentes
+      url: ../commerce/licenses/buy-licenses.md
+    - text: Actualizar el método de pago
+      url: ../commerce/billing-and-payments/manage-payment-methods.md
+- title: Administrar dispositivos
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Proteger dispositivos con Windows 10 Pro
+      url: devices/protection-settings-for-windows-10-pcs.md
+    - text: Proteger aplicaciones de Office en iOS
+      url: devices/app-protection-settings-for-android-and-ios.md
+- title: Seguridad y cumplimiento
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Información general sobre la seguridad en Microsoft 365 Empresa Premium
+      url: security-and-compliance/secure-your-business-data.md
+    - text: (¡NUEVO!) Microsoft Defender para empresas (versión preliminar)
+      url: /microsoft-365/security/defender-business/index.yml
+    - text: Proteger las cuentas de los empleados con autenticación multifactor
+      url: security-and-compliance/set-up-multi-factor-authentication.md
+    - text: Activar la detección de malware
+      url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#raise-the-level-of-protection-against-malware-in-mail
+    - text: Crear reglas de correo electrónico para protegerse contra ransomware
+      url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-ransomware
+    - text: Configurar directivas contra suplantación de identidad
+      url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-your-email-from-phishing-attacks
+    - text: Administrar datos adjuntos seguros
+      url: security-and-compliance/increase-threat-protection.md
+    - text: Administrar vínculos seguros
+      url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links
+    - text: Prevenir la pérdida de datos
+      url: security-and-compliance/set-up-compliance.md
+    - text: Cree etiquetas de confidencialidad
+      url: security-and-compliance/set-up-compliance.md
+- title: Soporte técnico
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Obtener ayuda o soporte técnico
+      url: get-help-support.md
+    - text: Configuración rápida para empleados
+      url: ../business-video/employee-quick-setup.md
+- title: Cambiar de Google Workspace a M365
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Configurar Microsoft 365 para la migración de Google Workspace
+      url: /moveto-microsoft-365/set-up-microsoft-365-forgoogle
+    - text: Agregar el dominio de Google Workspace a Microsoft 365
+      url: /moveto-microsoft-365/add-google-domain
+    - text: Migrar el calendario y el correo electrónico empresarial desde Google Workspace
+      url: /moveto-microsoft-365/migrate-email
+    - text: Conectar el dominio para Microsoft 365 para empresas
+      url: /moveto-microsoft-365/connect-domain-tom365
+    - text: Migrar archivos de Google a Microsoft 365 para empresas con el Administrador de migración
+      url: /moveto-microsoft-365/migrate-files-migration-manager

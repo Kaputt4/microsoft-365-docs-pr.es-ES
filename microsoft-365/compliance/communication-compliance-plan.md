@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 630143a88c453c66de2dba018d0e1cc75a770e89
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 77579a97016d37dd9bfc12f88db62200fbca0ccc
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806173"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825414"
 ---
 # <a name="plan-for-communication-compliance"></a>Planear el cumplimiento de las comunicaciones
 
@@ -102,7 +102,7 @@ Antes de empezar a usar el cumplimiento de comunicaciones, necesita determinar a
 
 ### <a name="reviewers"></a>Reviewers
 
-Al crear una directiva de cumplimiento de comunicaciones, debe determinar quién revisa los mensajes de los usuarios supervisados. En la directiva, las direcciones de correo electrónico de los usuarios identifican a individuos o grupos de personas que revisarán las comunicaciones supervisadas. Todos los revisores deben tener buzones hospedados en Exchange Online y deben estar asignados a los roles análisis de *cumplimiento* de comunicación o investigación *de cumplimiento de* comunicación. Los revisores (analistas o investigadores) también deben tener asignado el rol *de administración* de casos de cumplimiento de comunicación. Cuando se agregan revisores a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la directiva y proporciona vínculos a información sobre el proceso de revisión.
+Al crear una directiva de cumplimiento de comunicaciones, debe determinar quién revisa los mensajes de los usuarios supervisados. En la directiva, las direcciones de correo electrónico de los usuarios identifican a individuos o grupos de personas que revisarán las comunicaciones supervisadas. Todos los revisores deben tener buzones hospedados en Exchange Online, deben estar asignados a los grupos  de roles Del analista  de cumplimiento de comunicaciones o del investigador de cumplimiento de comunicaciones y deben estar asignados en la directiva que necesitan investigar. Cuando se agregan revisores a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la directiva y proporciona vínculos a información sobre el proceso de revisión.
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Grupos para usuarios y revisores supervisados
 

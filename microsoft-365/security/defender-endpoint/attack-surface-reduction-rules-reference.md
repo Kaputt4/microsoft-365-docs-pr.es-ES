@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: ca7f52c0a91540e68c845ca559daecd5736d9b60
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: f6672bfe090458de9ffecae77b656b6f4a8a912d
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767501"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825486"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Referencia de reglas de reducción de superficie de ataque
 
@@ -47,11 +47,10 @@ En este artículo se proporciona información sobre las reglas de reducción de 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-En la tabla siguiente se enumeran los sistemas operativos compatibles para las reglas de reducción de superficie de ataque que actualmente son productos de versión preliminar. Las reglas se enumeran en orden alfabético.
+En la tabla siguiente se enumeran los sistemas operativos compatibles para las reglas de reducción de superficie de ataque que actualmente son productos de versión preliminar. Las reglas se enumeran en orden alfabético. A menos que se indique lo contrario, la compilación mínima de Windows&nbsp; 10 es la versión 1709 (RS3, compilación 16299) o posterior; la compilación mínima de Windows&nbsp; Server es la versión 1809 o posterior.
 
-> [!Note]
->
-> - A menos que se indique lo contrario, la compilación mínima de Windows&nbsp; 10 es la versión 1709 (RS3, compilación 16299) o posterior; la compilación mínima de Windows&nbsp; Server es la versión 1809 o posterior.
+> [!NOTE]
+> Las reglas de reducción de superficie de ataque de Windows&nbsp; Server2012R2&nbsp;&nbsp; y Windows&nbsp; Server2016&nbsp; están disponibles para dispositivos incorporados mediante el paquete de soluciones unificado moderno. Para obtener más información, vea [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 >
 
 | Nombre de regla | &nbsp;Windows Server 2016 <sup>[[1](#fn1)]<sup></sup> | &nbsp;Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup> |
@@ -89,7 +88,7 @@ En la tabla siguiente se enumeran los sistemas operativos compatibles para las r
 
 |Nombre de regla|&nbsp;Windows 10|&nbsp;Windows Server 2019|&nbsp;Windows Server|
 |---|:---:|:---:|:---:|
-|[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | Versión Y 1803 (canal semianual) o posterior |
+|[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | v <br><br> versión 1803 (canal semianual) o posterior |
 |[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | Versión Y 1809 o posterior | v | v  <br><br> |
 |[Bloquear todas Office aplicaciones de creación de procesos secundarios](#block-all-office-applications-from-creating-child-processes) | v | v | v <br><br> |
 |[Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Versión Y 1803 o posterior | v <br><br> | v <br><br> |
@@ -113,7 +112,7 @@ Los vínculos a información sobre las versiones del sistema de administración 
 
 |Nombre de regla | Intune | Microsoft Endpoint Manager |Microsoft Endpoint Configuration Manager |Directiva de grupo<sup>[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v  | Y MEM OMA-URI |   | v  |  [compatible](images/checkmark.png) <br><br> |
+|[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v  | Y MEM OMA-URI |   | v  |  v |
 |[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | v |   | v | v  | v  |
 |[Bloquear todas Office aplicaciones de creación de procesos secundarios](#block-all-office-applications-from-creating-child-processes) | v |   |v <br><br> CB 1710 | v  | v  |
 |[Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v  |   | v <br><br>CB 1802 | v  | v  |
@@ -175,7 +174,7 @@ Para las reglas con el "Estado de regla" especificado:
 - **Auditoría**: este es el estado en el que se evalúa la regla ASR por su comportamiento impactivo hacia la organización o el entorno en el que se implementa. El código de este estado es 2.
 - **Advertir** Este es el estado en el que la regla ASR está habilitada y presenta una notificación al usuario final, pero permite al usuario final omitir el bloque. El código de este estado es 6.
 
-_El modo de_ advertencia es un tipo de modo de bloqueo que alerta a los usuarios sobre acciones potencialmente arriesgadas. A continuación, los usuarios pueden optar por omitir el mensaje de advertencia de bloqueo y permitir la acción subyacente. Los usuarios pueden seleccionar **Aceptar** para aplicar el bloque o seleccionar la opción de **omisión - Desbloquear** - a través de la notificación del sistema emergente del usuario final que se genera en el momento del bloque. Después de desbloquear la advertencia, la operación se permite hasta la próxima vez que se produzca el mensaje de advertencia, momento en el que el usuario final tendrá que volver a realizar la acción.
+_El modo de_ advertencia es un tipo de modo de bloqueo que alerta a los usuarios sobre acciones potencialmente arriesgadas. Los usuarios pueden elegir omitir el mensaje de advertencia de bloqueo y permitir la acción subyacente. Los usuarios pueden seleccionar **Aceptar** para aplicar el bloque o seleccionar la opción de **omisión - Desbloquear** - a través de la notificación del sistema emergente del usuario final que se genera en el momento del bloque. Después de desbloquear la advertencia, la operación se permite hasta la próxima vez que se produzca el mensaje de advertencia, momento en el que el usuario final tendrá que volver a realizar la acción.
 
 Si se hace clic en el botón permitir, el bloque se suprimirá durante 24 horas. Después de 24 horas, el usuario final tendrá que volver a permitir el bloque. El modo de advertencia para reglas ASR solo es compatible con dispositivos RS5+ (1809+). Si la omisión se asigna a reglas ASR en dispositivos con versiones anteriores, la regla estará en modo bloqueado.
 

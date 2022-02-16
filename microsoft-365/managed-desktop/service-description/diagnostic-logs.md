@@ -9,71 +9,73 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 62c96c4badd9659879bad81a631a496423259754
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 808ce2e426a0540c95195f26c9872f569e595715
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035647"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825426"
 ---
 # <a name="diagnostic-logs"></a>Registro de diagnóstico
 
-Cuando solucionemos un problema en un dispositivo administrado por Microsoft Managed Desktop, ya sea uno que haya notificado o uno identificado por nuestro servicio, es posible que tendrán que recopilar determinados registros de diagnóstico del dispositivo sin intervención del usuario. No recopilamos ningún contenido o información generado por el usuario de directorios de usuario. Solo recopilamos datos de diagnóstico y registro que tienen que ver con el estado y el estado del dispositivo.
+Tanto si ha notificado un problema como si nuestro servicio ha identificado un problema, es posible que deba recopilar determinados registros de diagnóstico del dispositivo sin intervención del usuario.
 
-Almacenamos los registros recopilados durante 28 días y, a continuación, los eliminamos. Procesamos los registros recopilados desde un dispositivo siguiendo nuestros [estándares de tratamiento de datos.](privacy-personal-data.md)
+No recopilamos ningún contenido o información generado por el usuario de directorios de usuario. Solo recopilamos datos de diagnóstico y registro que tienen que ver con el estado y el estado del dispositivo.
+
+Almacenamos los registros recopilados durante 28 días y, a continuación, los eliminamos. Procesamos los registros recopilados desde un dispositivo siguiendo nuestros [estándares de tratamiento de datos](privacy-personal-data.md).
 
 ## <a name="data-collected"></a>Datos recopilados
 
-Esta lista incluye todas las carpetas, registros de eventos, ejecutables o ubicaciones del Registro de las que Microsoft Managed Desktop puede recopilar registros de diagnóstico. Los datos reales recopilados serán un subconjunto de esta lista y dependen del problema identificado.
+Esta lista siguiente incluye todas las carpetas, registros de eventos, ejecutables o ubicaciones del Registro de las que Microsoft Managed Desktop puede recopilar registros de diagnóstico. Los datos reales recopilados serán un subconjunto de esta lista y dependen del problema identificado.
 
 ### <a name="registry-keys"></a>Claves del Registro
 
-- HKLM \\ SYSTEM \\ CurrentControlSet \\ Services
-- HKLM \\ SOFTWARE \\ Microsoft \\ Surface
-- Directivas de \\ SOFTWARE \\ HKLM \\ Microsoft Windows \\ \\ WindowsUpdate
-- HKLM \\ SYSTEM \\ CurrentControlSet \\ Control \\ MUI \\ UILanguages
-- Directivas de software HKLM \\ \\ Microsoft \\ \\ WindowsStore
-- HKLM \\ Software Microsoft Windows \\ \\ \\ CurrentVersion \\ WindowsStore \\ WindowsUpdate
-- HKLM \\ SOFTWARE Microsoft Windows NT \\ \\ \\ CurrentVersion
-- HKLM \\ SOFTWARE Microsoft Windows NT \\ \\ \\ CurrentVersion
-- HKLM \\ SOFTWARE Microsoft Windows \\ \\ \\ CurrentVersion \\ AppModel
-- HKLM \\ SYSTEM \\ CurrentControlSet \\ Control \\ FirmwareResources
-- HKLM \\ SOFTWARE \\ Microsoft \\ WindowsSelfhost
-- HKLM \\ SOFTWARE \\ Microsoft \\ WindowsUpdate
-- HKLM \\ SOFTWARE Microsoft Windows \\ \\ \\ CurrentVersion \\ Appx
-- HKLM \\ SOFTWARE Microsoft Windows NT \\ \\ \\ CurrentVersion \\ Superfetch
-- Instalación de \\ HKLM SYSTEM \\
-- HKLM \\ Software \\ Microsoft \\ IntuneManagementExtension
-- HKLM \\ SOFTWARE \\ Microsoft \\ SystemCertificates \\ AuthRoot
-- HKLM \\ SOFTWARE Microsoft Windows protección contra amenazas \\ \\ avanzada
-- HKLM \\ SOFTWARE Microsoft Windows \\ \\ \\ Autenticación de CurrentVersion \\ \\ LogonUI
-- HKLM \\ SOFTWARE Microsoft Windows \\ \\ \\ CurrentVersion Internet \\ Configuración
-- HKLM \\ Software Microsoft Windows \\ \\ \\ Desinstalación de CurrentVersion \\
-- Directivas de software hklm \\ \\
-- DIRECTIVAS DE SOFTWARE HKLM \\ \\ Microsoft \\ \\ Cryptography Configuration \\ \\ SSL
-- Directivas de \\ SOFTWARE \\ HKLM \\ Microsoft Windows Protección contra \\ amenazas avanzada
-- HKLM \\ SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ Desinstalación de CurrentVersion \\
-- HKLM \\ SYSTEM \\ CurrentControlSet \\ Control \\ SecurityProviders \\ SCHANNEL
+- HKLMSYSTEMCurrentControlSetServices\\\\\\
+- HKLMSOFTWAREMicrosoftSurface\\\\\\
+- HKLMSOFTWAREPoliciesMicrosoft\\\\\\\\ Windows\\ WindowsUpdate
+- HKLMSYSTEMCurrentControlSetControlMUIUILanguages\\\\\\\\\\
+- HKLMSoftwarePoliciesMicrosoftWindowsStore\\\\\\\\
+- HKLMSoftwareMicrosoft\\\\\\ Windows\\ CurrentVersionWindowsStoreWindowsUpdate\\\\
+- HKLMSOFTWAREMicrosoft\\\\\\ Windows NTCurrentVersion\\
+- HKLMSOFTWAREMicrosoft\\\\\\ Windows NTCurrentVersion\\
+- HKLMSOFTWAREMicrosoft\\\\\\ Windows\\ CurrentVersionAppModel\\
+- HKLMSYSTEMCurrentControlSetControlFirmwareResources\\\\\\\\
+- HKLMSOFTWAREMicrosoftWindowsSelfhost\\\\\\
+- HKLMSOFTWAREMicrosoftWindowsUpdate\\\\\\
+- HKLMSOFTWAREMicrosoft\\\\\\ Windows\\ CurrentVersionAppx\\
+- HKLMSOFTWAREMicrosoft\\\\\\ Windows NTCurrentVersionSuperfetch\\\\
+- HKLMSYSTEMSetup\\\\
+- HKLMSoftwareMicrosoftIntuneManagementExtension\\\\\\
+- HKLMSOFTWAREMicrosoftSystemCertificatesAuthRoot\\\\\\\\
+- HKLMSOFTWAREMicrosoft\\\\\\ Windows Protección contra amenazas avanzada
+- HKLMSOFTWAREMicrosoft\\\\\\ Windows\\ CurrentVersionAuthenticationLogonUI\\\\
+- HKLMSOFTWAREMicrosoft\\\\\\ Windows\\ CurrentVersionInternet\\ Configuración
+- HKLMSoftwareMicrosoft\\\\\\ Windows\\ CurrentVersionUninstall\\
+- HKLMSoftwarePolicies\\\\
+- HKLMSOFTWAREPoliciesMicrosoftCryptographyConfigurationSSL\\\\\\\\\\\\
+- HKLMSOFTWAREPoliciesMicrosoft\\\\\\\\ Windows Protección contra amenazas avanzada
+- HKLMSOFTWAREWOW6432NodeMicrosoft\\\\\\\\ Windows\\ CurrentVersionUninstall\\
+- HKLMSYSTEMCurrentControlSetControlSecurityProvidersSCHANNEL\\\\\\\\\\
 
 ### <a name="commands"></a>Comandos
 
-- %programfiles% \\ windows defendermpcmdrun.exe \\ -GetFiles
-- %windir% \\ system32 \\certutil.exe -store
-- %windir% \\ system32 \\certutil.exe -store -user my
-- %windir% \\ system32 \\Dsregcmd.exe /status
-- %windir% \\ system32 \\ipconfig.exe /all
-- %windir% \\ system32 \\ipconfig.exe /displaydns
-- %windir% \\ system32 \\mdmdiagnosticstool.exe
-- %windir% \\ system32 \\msinfo32.exe /report %temp% \\ MDMDiagnostics \\ msinfo32.log
-- %windir% \\ system32 \\netsh.exe advfirewall mostrar allprofiles
-- %windir% \\ system32 \\netsh.exe advfirewall mostrar global
-- %windir% \\ system32 \\netsh.exe perfiles de presentación de lan
-- %windir% \\ system32 \\netsh.exe winhttp show proxy
-- %windir% \\ system32 \\netsh.exe wlan mostrar perfiles
-- %windir% \\ system32 \\netsh.exe wlan show wlanreport
-- %windir% \\ system32 \\ping.exe -n 50 localhost
-- %windir% \\ system32 \\powercfg.exe /batteryreport /output %temp% \\ MDMDiagnostics \\battery-report.html
-- %windir% \\ system32 \\powercfg.exe /energy /output %temp% \\ MDMDiagnostics \\energy-report.html
+- %programfiles%\\windows defender\\mpcmdrun.exe -GetFiles
+- %windir%\\system32\\certutil.exe -store
+- %windir%\\system32\\certutil.exe -store -user my
+- %windir%\\system32\\Dsregcmd.exe /status
+- %windir%\\system32\\ipconfig.exe /all
+- %windir%\\system32\\ipconfig.exe /displaydns
+- %windir%\\system32\\mdmdiagnosticstool.exe
+- %windir%\\system32\\msinfo32.exe /report %temp%\\MDMDiagnosticsmsinfo32.log\\
+- %windir%\\system32\\netsh.exe advfirewall mostrar allprofiles
+- %windir%\\system32\\netsh.exe advfirewall mostrar global
+- %windir%\\system32\\netsh.exe perfiles de presentación de lan
+- %windir%\\system32\\netsh.exe winhttp show proxy
+- %windir%\\system32\\netsh.exe perfiles de presentación wlan
+- %windir%\\system32\\netsh.exe wlan show wlanreport
+- %windir%\\system32\\ping.exe -n 50 localhost
+- %windir%\\system32\\powercfg.exe /batteryreport /output %temp%\\MDMDiagnostics\\battery-report.html
+- %windir%\\system32\\powercfg.exe /energy /output %temp%\\MDMDiagnostics\\energy-report.html
 - bitsadmin /list /allusers /verbose
 - fltMC.exe
 - bcdedit /enum all /v
@@ -83,11 +85,11 @@ Esta lista incluye todas las carpetas, registros de eventos, ejecutables o ubica
     - Paquete Get-appxpackage -packagetype
     - Get-Service wuauserv
     - Get-NetFirewallRule
-    - Get-WmiObject -Class win32 \_ product
+    - Get-WmiObject -Class win32product\_
     - Get-ComputerInfo
     - Get-Service
     - Get-Process
-    - Get-WmiObject Win32 \_ PnPSignedDriver
+    - Get-WmiObject Win32PnPSignedDriver\_
 
 ### <a name="event-logs"></a>Registros de eventos
 
@@ -104,25 +106,25 @@ Esta lista incluye todas las carpetas, registros de eventos, ejecutables o ubica
 
 ### <a name="files"></a>Archivos
 
-- %ProgramData% \\ \\ Recopiladores de Microsoft DiagnosticLogCSP \\ \\ \* .etl
-- %ProgramData% \\ Registros de Microsoft \\ IntuneManagementExtension \\ \\ \* .\*
-- %ProgramData% \\ Microsoft Windows Defender Support \\ \\ \\MpSupportFiles.cab
-- %ProgramData% \\ Microsoft \\ Windows \\ WlanReport \\wlan-report-latest.html
-- %ProgramData% \\ Microsoft \\ Windows \\ WlanReport -SourceFileName wlan-report-latest.html
-- %windir% \\ ccm \\ logs \* .log
-- %windir% \\ ccmsetup \\ logs \* .log
-- %windir% \\ logs \\ CBS \\ cbs.log
-- %windir% \\ logs \\ measuredboot \* .\*
-- %windir% \\ Logs \\ WindowsUpdate \* .etl
-- %windir% \\ inf \\ \* .log
-- %windir% \\ servicing \\ sessions \\ActionList.xml
-- %windir% \\ servicing \\ sessions \\Sessions.xml
-- %windir% \\ SoftwareDistribution \\ DataStore \\ Logs \\ edb.log
-- %windir% \\ SoftwareDistribution \\ DataStore \\ DataStore.edb
-- %windir% \\ logs \\ dism \\ dism.log
-- %SystemRoot% \\ Registros \\ de Winevt system32 \\\\
-- %appdata% \\ Microsoft \\ Teams \\ media-stack \\ \* .blog
-- %appdata% \\ Microsoft \\ Teams \\ skylib \\ \* .blog
-- %appdata% \\ Microsoft \\ Teams \\ media-stack \\ \* .etl
-- %appdata% \\ Microsoft \\ Teams \\logs.txt
-- %windir% \\ Windows \\ System32 \\ winevt \\ \* .\*
+- %ProgramData%\\MicrosoftDiagnosticLogCSPCollectors.etl\\\\\\\*
+- %ProgramData%\\MicrosoftIntuneManagementExtensionLogs\\\\\\\*.\*
+- %ProgramData%\\Microsoft\\ Windows Defender\\ Support\\MpSupportFiles.cab
+- %ProgramData%\\Microsoft\\ Windows\\ WlanReport\\wlan-report-latest.html
+- %ProgramData%\\Microsoft\\ Windows\\ WlanReport -SourceFileName wlan-report-latest.html
+- %windir%\\ccmlogs.log\\\*
+- %windir%\\ccmsetuplogs.log\\\*
+- %windir%\\logsCBScbs.log\\\\
+- %windir%\\logsmeasuredboot\*\\.\*
+- %windir%\\LogsWindowsUpdate.etl\\\*
+- %windir%\\inf.log\\\*
+- %windir%\\servicingsessions\\\\ActionList.xml
+- %windir%\\servicingsessions\\\\Sessions.xml
+- %windir%\\SoftwareDistributionDataStoreLogsedb.log\\\\\\
+- %windir%\\SoftwareDistributionDataStoreDataStore.edb\\\\
+- %windir%\\logsdismdism.log\\\\
+- %SystemRoot%\\System32WinevtLogs\\\\\\
+- %appdata%\\Microsoft\\ Teams\\ media-stack.blog\\\*
+- %appdata%\\Microsoft\\ Teams\\ skylib.blog\\\*
+- %appdata%\\Microsoft\\ Teams\\ media-stack.etl\\\*
+- %appdata%\\Microsoft\\ Teams\\logs.txt
+- %windir%\\Windows System32winevt\\\\\*.\\\*
