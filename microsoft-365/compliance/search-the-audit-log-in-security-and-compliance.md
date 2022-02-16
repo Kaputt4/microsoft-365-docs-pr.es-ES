@@ -21,12 +21,12 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: ff963c9bad09657899e9b163dacce46e6a246c6a
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.openlocfilehash: 5d5c7820a28977bb894c30915dc26f12016bb58c
+ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520251"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62825498"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -191,13 +191,13 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Microsoft 3
 
    3. **Usuarios**: haga clic en este cuadro y, luego, seleccione uno o más usuarios para mostrarles los resultados de búsqueda. Las entradas del registro de auditoría de la actividad seleccionada realizada por los usuarios que selecciona en este cuadro, se muestran en la lista de resultados. Deje este cuadro en blanco para devolver las entradas de todos los usuarios (y cuentas de servicio) de su organización.
 
-   4. **Archivo, carpeta o sitio**: escriba algunos o todos los nombres de carpeta o de archivo para buscar las actividades relacionadas con el archivo de la carpeta que contengan la palabra clave especifica. También puede especificar una dirección URL de un archivo o carpeta. Si usa una dirección URL, asegúrese de escribir la dirección URL completa, o si escribe solo una parte de esta, de no incluir espacios ni caracteres especiales.<br/><br/>Deje este cuadro en blanco para devolver las entradas de todos los archivos y carpetas de la organización.
+   4. **Archivo, carpeta o sitio**: escriba algunos o todos los nombres de carpeta o de archivo para buscar las actividades relacionadas con el archivo de la carpeta que contengan la palabra clave especifica. También puede especificar una dirección URL de un archivo o carpeta. Si usa una dirección URL, asegúrese de escribir la ruta de acceso de dirección URL completa o si escribe una parte de la dirección URL, no incluya ningún carácter o espacio especial (sin embargo, se admite el uso del carácter comodín (\*)).<br/><br/>Deje este cuadro en blanco para devolver las entradas de todos los archivos y carpetas de la organización.
 
     > [!TIP]
     >
-    > - Si busca todas las actividades relacionadas con un **sitio**, añada el símbolo comodín (\*) detrás de la dirección URL para devolver todas las entradas para ese sitio; por ejemplo, `"https://contoso-my.sharepoint.com/personal*"`.
+    > - Si busca todas las actividades relacionadas con un **sitio**, agregue el carácter comodín (\*) después de la dirección URL para devolver todas las entradas de ese sitio; por ejemplo, `"https://contoso-my.sharepoint.com/personal*"`.
     >
-    > - Si está buscando todas las actividades relacionadas con un **archivo**, agregue el símbolo comodín (\*) antes del nombre de archivo para devolver todas las entradas para ese archivo; por ejemplo,`"*Customer_Profitability_Sample.csv"`.
+    > - Si busca todas las actividades relacionadas con un **archivo**, agregue el carácter comodín (\*) antes del nombre de archivo para devolver todas las entradas de ese archivo; por ejemplo, `"*Customer_Profitability_Sample.csv"`.
 
 4. Haga clic en **Búsqueda** para ejecutar la búsqueda mediante sus criterios de búsqueda. 
 

@@ -434,6 +434,28 @@
               href: basic-mobility-security/turn-off.md
             - name: Solucionar problemas
               href: basic-mobility-security/troubleshoot.md
+    - name: Cambiar de Google Workspace a M365
+      items:
+        - name: Información general
+          href: moveto-microsoft-365/move-from-google-workspace-overview.md
+        - name: Registrarse en Microsoft 365
+          href: admin-overview/sign-up-for-office-365.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+        - name: Configuración de Microsoft 365 para la migración a Google
+          href: moveto-microsoft-365/set-up-microsoft-365-forgoogle.md
+        - name: Configurar directivas de seguridad para dispositivos Windows
+          href: setup/secure-win-10-pcs.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+        - name: Agregar dominio de Google Workspace
+          href: moveto-microsoft-365/add-google-domain.md
+        - name: Instalar aplicaciones de Office y Microsoft Teams
+          href: setup/install-applications.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+        - name: 'Migrar correo, calendario y contactos a Microsoft 365'
+          href: moveto-microsoft-365/migrate-email.md
+        - name: Conectar el dominio a Microsoft 365
+          href: moveto-microsoft-365/connect-domain-tom365.md
+        - name: Usar el Administrador de migración para mover los datos de todos los usuarios
+          href: moveto-microsoft-365/migrate-files-migration-manager.md
+        - name: Cancelar Google Workspace
+          href: moveto-microsoft-365/cancel-google.md
     - name: Trabajar con clientes
       items:
         - name: Compartir archivos y sitios con usuarios invitados
