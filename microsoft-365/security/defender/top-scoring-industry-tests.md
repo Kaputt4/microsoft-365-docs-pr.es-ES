@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 6d617024f2a09b73b7b944fb34bd2f34d024d3c1
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: d4e4f9baaf67b921358f17dae16908bcf9fed401
+ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60661062"
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62818269"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Puntuaciones más altas en las pruebas del sector
 
@@ -35,7 +35,7 @@ Las tecnologías de [Microsoft 365 Defender](https://www.microsoft.com/security/
 
 [Microsoft 365 Defender](microsoft-365-defender.md) es un conjunto de aplicaciones unificado de defensa empresarial previa y posterior a la vulneración que coordina de forma nativa la detección, prevención, investigación y respuesta entre extremos, identidades, correo electrónico y aplicaciones para proporcionar protección integrada contra ataques sofisticados.
 
-Microsoft 365 Defender combina las funcionalidades de [Microsoft Defender para punto de conexión](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), [Microsoft Defender para Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection), [Microsoft Defender for Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/), [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) y [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) en una sola solución.
+Microsoft 365 Defender combina las funcionalidades de [Microsoft Defender para punto de conexión](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), [Microsoft Defender para Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection), [Microsoft Defender for Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/), [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) y [Microsoft Defender for Cloud Apps](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) en una sola solución.
 
 ### <a name="mitre-demonstrated-real-world-detection-response-and-protection-from-advanced-attacks"></a>MITRE: Detección demostrada, respuesta y protección en el mundo real contra ataques avanzados
 
@@ -87,15 +87,23 @@ La prueba de seguridad empresarial consta de tres partes principales: la prueba 
 
 SE Labs prueba una variedad de soluciones usadas por productos y servicios para detectar y/o protegerse de ataques. Incluye software de punto de conexión, aplicaciones de red y servicios en la nube.
 
-- Protección de punto de conexión empresarial (octubre - diciembre de 2020): [Premio AAA](https://selabs.uk/reports/enterprise-endpoint-protection-2020-q4/) <sup>**Más reciente**</sup>
+- Informe anual 2020-2021: [Premio AAA](https://selabs.uk/wp-content/uploads/2021/11/annual-report-2021.pdf) <sup>**Más reciente**</sup>
 
-    El producto de protección de nueva generación de Microsoft ha detenido todos los ataques públicos y dirigidos. Antivirus de Microsoft Defender ha obtenido excelentes resultados con su capacidad para bloquear direcciones URL malintencionadas, controlar vulnerabilidades de seguridad y clasificar correctamente aplicaciones y sitios web legítimos.
+- Endpoint Protection empresarial: octubre-diciembre de 2021: [Premio AAA](https://selabs.uk/wp-content/uploads/2021/12/oct-dec-2021-enterprise.pdf)
 
-- Protección de punto de conexión empresarial (julio - septiembre de 2020): [Premio AAA](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
+- Seguridad avanzada empresarial (EDR): Kaspersky: agosto-septiembre de 2021: [Premio AAA](https://selabs.uk/wp-content/uploads/2021/12/AS-EDR-Kaspersky-EDR-2021-1.pdf)
 
-- Protección de punto de conexión empresarial (abril - junio de 2020): [Premio AAA](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
+- Seguridad avanzada empresarial (EDR): Crowdstrike: agosto-septiembre de 2021: [Premio AAA](https://selabs.uk/wp-content/uploads/2021/12/AS-EDR-Crowdstrike-Falcon-2021-1.pdf)
 
-- Protección de punto de conexión empresarial (enero - marzo de 2020): [Premio AAA](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup> | [Análisis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
+- Respuesta a la vulneración de seguridad (detección de NDR): detección y respuesta de red de VMware NSX: agosto de 2021: [Premio AAA](https://selabs.uk/wp-content/uploads/2021/10/NDR-VMware-NSX-detection-2021-1.pdf)
+
+- Endpoint Protection empresarial (julio-septiembre de 2021): [Premio AAA](https://selabs.uk/wp-content/uploads/2021/11/july-sept-2021-enterprise.pdf)
+
+- Respuesta a la vulneración de seguridad (protección): BlackBerry Protect and BlackBerry Optics: julio de 2021: [Premio AAA](https://selabs.uk/wp-content/uploads/2021/07/BRT-BlackBerry-Protect-protection-2021-1.pdf)
+
+- Endpoint Protection empresarial: abril-junio de 2021: [Premio AAA](https://selabs.uk/wp-content/uploads/2021/07/apr-jun-2021-enterprise-1.pdf)
+
+- Endpoint Protection empresarial: enero-marzo de 2021: [Premio AAA](https://selabs.uk/wp-content/uploads/2021/04/jan-mar-2021-enterprise.pdf) <sup>**pdf**</sup>
 
 ## <a name="endpoint-detection--response"></a>Detección y respuesta de puntos de conexión.
 
