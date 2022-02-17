@@ -16,17 +16,17 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo implementar Microsoft 365 Lighthouse líneas base.
-ms.openlocfilehash: e60e364579abdc414ec9f7f3d16863f0139c9e6d
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c4cef0b966e1c35d5b8d4f282e5eeee4cb76a998
+ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372653"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62859306"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Implementar Microsoft 365 Lighthouse base 
 
 > [!NOTE]
-> Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+> Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplan los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, consulte [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse línea base le permiten implementar configuraciones de inquilino administrado estándar para proteger usuarios, dispositivos y datos dentro de los inquilinos del cliente. Hay seis configuraciones de línea base predeterminadas que vienen estándar con Lighthouse:
 
@@ -39,7 +39,7 @@ Microsoft 365 Lighthouse línea base le permiten implementar configuraciones de 
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Asegúrese de que usted y sus inquilinos de clientes cumplan los requisitos enumerados en [Requisitos para Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+Asegúrese de que usted y sus inquilinos de clientes cumplen los requisitos enumerados en [Requisitos para Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
 ## <a name="learn-more-about-the-default-baseline"></a>Más información sobre la línea base predeterminada
 
@@ -49,7 +49,7 @@ Seleccione **Líneas base en** el panel de navegación izquierdo para abrir la p
 
 ## <a name="deploy-a-baseline-configuration"></a>Implementar una configuración de línea base  
 
-1. En la página de navegación izquierda, seleccione **Inquilinos** para ver una lista de los inquilinos incorporados.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Inquilinos** para ver una lista de los inquilinos incorporados.
 
 2. Seleccione el espacio empresarial en el que desea implementar la configuración de línea base.
 

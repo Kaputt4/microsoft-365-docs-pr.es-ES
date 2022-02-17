@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo revisar los registros de auditoría.
-ms.openlocfilehash: 2044e61430ef26cf671340c02363658d54414f3b
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 69eb057c0b6a7daf835ec613b7d386e1a7fbfbaa
+ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767489"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62859246"
 ---
 # <a name="review-audit-logs"></a>Revisar registros de auditoría
 
@@ -34,58 +34,58 @@ Microsoft 365 Lighthouse auditoría registra las acciones que generan un cambio 
 
 Para ver los registros de auditoría, debe tener uno de los siguientes permisos:
 
-- Azure AD de usuario: administrador global del espacio empresarial asociado
+- Azure Active Directory (Azure AD): administrador global del espacio empresarial asociado
 
-- Rol del Centro de partners: agente de administración
+- Rol del Centro de partners de Microsoft: agente de administración
 
-## <a name="review-logs"></a>Revisar registros
+## <a name="review-audit-logs"></a>Revisar registros de auditoría
 
 1. En el panel de navegación izquierdo de Lighthouse, seleccione **Registros de auditoría**.
 
     > [!NOTE]
     > Es posible que tarde hasta 1 hora en ver nuevos registros. Vaya al servicio correspondiente para ver los cambios más recientes.
 
-2. Para filtrar los registros, refine la lista con las siguientes opciones:
+2. Filtre los registros, según sea necesario, mediante las siguientes opciones:
 
     - **Intervalo de fechas** : mes anterior, semana o día.
     - **Inquilinos: etiquetas** de inquilino o nombres de inquilino de cliente.
-    - **Actividad**: Microsoft 365 de actividad que corresponde a la acción realizada. Para obtener más información, vea tabla Tipos de actividad.
+    - **Actividad**: Microsoft 365 de actividad que corresponde a la acción realizada. Para obtener más información, consulte la [tabla](#activities) Actividades.
     - **Iniciado por**: Quién inició la acción.
 
-3. Seleccione un registro de la lista para ver detalles completos, incluido el **cuerpo de la** solicitud.
+3. Seleccione un registro de la lista para ver todos los detalles, incluido el **cuerpo de la** solicitud.
 
-Seleccione **Exportar** para exportar datos de registro a un archivo de valores separados por comas (.csv).
+    Para exportar datos de registro a un archivo de valores separados por comas (.csv), seleccione **Exportar**.
 
-## <a name="activity-types"></a>Tipos de actividad
+## <a name="activities"></a>Actividades
 
-La siguiente tabla es una lista de tipos de actividad capturados en los registros de auditoría de Lighthouse. La lista está sujeta a cambios a medida que se crean nuevas acciones. Puede usar el valor de actividad del registro de auditoría para ver qué acción se inició.
+En la tabla siguiente se enumeran las actividades capturadas en los registros de auditoría de Lighthouse. La lista está sujeta a cambios a medida que se crean nuevas acciones. Puede usar la actividad que aparece en el registro de auditoría para ver qué acción se inició.<br><br>
 
-| Nombre de la actividad    | Área en Microsoft 365 Lighthouse | Acción iniciada  | Servicio afectado           |
-|------------------|----------------------------------|-------------------|----------------------------|
-|**aplicar**                                   | Espacios empresariales                          | Aplicar plan de implementación                                           | Azure AD, Microsoft Endpoint Manager                   |
-|**assignTag**                                | Espacios empresariales                          | Aplicar una etiqueta desde un cliente                                      | Microsoft 365 Lighthouse   |
-|**changeDeploymentStatus**                   | Espacios empresariales                          | Estado del plan de acción para el plan de implementación                        | Microsoft 365 Lighthouse   |
-|**offboardTenant**                            | Espacios empresariales                          | Inactivar un cliente                                          | Microsoft 365 Lighthouse   |
-|**resetTenantOnboardingStatus**              | Espacios empresariales                          | Reactivar un cliente                                              | Microsoft 365 Lighthouse   |
-|**tenantTags**                               | Espacios empresariales                          | Crear o eliminar una etiqueta                                           | Microsoft 365 Lighthouse   |
-|**tenantCustomizedInformation**              | Espacios empresariales                          | Crear, actualizar o eliminar información de contacto o sitio web del cliente | Microsoft 365 Lighthouse   |
-|**unassignTag**                              | Espacios empresariales                          | Quitar una etiqueta de un cliente                                    | Microsoft 365 Lighthouse   |
-| **blockUserSignin**                          | Usuarios                            | Bloquear inicio de sesión                                                     | Azure AD                   |
-| **confirmUsersCompromised**                  | Usuarios                            | Confirmar que el usuario está en peligro                                        | Azure AD                   |
-| **dismissUsersRisk**                         | Usuarios                            | Descartar riesgo de usuario                                                | Azure AD                   |
-| **resetUserPassword**                        | Usuarios                            | Restablecer contraseña                                                   | Azure AD                   |
-| **setCustomerSecurityDefaultsEnabledStatus** | Usuarios                            | Habilitar MFA con valores predeterminados de seguridad                               | Azure AD                   |
-|**restartDevice**                            | Dispositivos                          | Restart                                                          | Microsoft Endpoint Manager |
-| **syncDevice**                               | Dispositivos                          | Sincronizar                                                             | Microsoft Endpoint Manager |
-| **rebootNow**                                | Administración de amenazas                | Reiniciar                                                           | Microsoft Endpoint Manager |
-| **reprovision**                              | Windows 365     | Aprovisionamiento de reintentos                                               | Windows 365                |
-| **windowsDefenderScanFull**                  | Administración de amenazas                | Examen completo                                                       | Microsoft Endpoint Manager |
-| **windowsDefenderScan**                      | Administración de amenazas                | Examen rápido                                                       | Microsoft Endpoint Manager |
-| **windowsDefenderUpdateSignatures**          | Administración de amenazas                | Actualizar antivirus                                                | Microsoft Endpoint Manager |
+| Nombre de la actividad | Área de Faro | Acción iniciada | Servicio afectado |
+|--|--|--|--|
+| **aplicar** | Espacios empresariales | Aplicar plan de implementación | Azure AD, Microsoft Endpoint Manager (MEM) |
+| **assignTag** | Espacios empresariales | Aplicar una etiqueta desde un cliente | Faro |
+| **changeDeploymentStatus** | Espacios empresariales | Estado del plan de acción para el plan de implementación | Faro |
+| **offboardTenant** | Espacios empresariales | Inactivar un cliente | Faro |
+| **resetTenantOnboardingStatus** | Espacios empresariales | Reactivar un cliente | Faro |
+| **tenantTags** | Espacios empresariales | Crear o eliminar una etiqueta | Faro |
+| **tenantCustomizedInformation** | Espacios empresariales | Crear, actualizar o eliminar un sitio web de cliente o información de contacto | Faro |
+| **unassignTag** | Espacios empresariales | Quitar una etiqueta de un cliente | Faro |
+| **blockUserSignin** | Usuarios | Bloquear inicio de sesión | Azure AD |
+| **confirmUsersCompromised** | Usuarios | Confirmar que un usuario está en peligro | Azure AD |
+| **dismissUsersRisk** | Usuarios | Descartar riesgo de usuario | Azure AD |
+| **resetUserPassword** | Usuarios | Restablecer contraseña | Azure AD |
+| **setCustomerSecurityDefaultsEnabledStatus** | Usuarios | Habilitar la autenticación multifactor (MFA) con valores predeterminados de seguridad | Azure AD |
+| **restartDevice** | Dispositivos | Restart | MEM |
+| **syncDevice** | Dispositivos | Sincronizar | MEM |
+| **rebootNow** | Administración de amenazas | Reiniciar | MEM |
+| **reprovision** | Windows 365 | Aprovisionamiento de reintentos | Windows 365 |
+| **windowsDefenderScanFull** | Administración de amenazas | Examen completo | MEM |
+| **windowsDefenderScan** | Administración de amenazas | Examen rápido | MEM |
+| **windowsDefenderUpdateSignatures** | Administración de amenazas | Actualizar antivirus | MEM |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-Si necesita más información, puede usar la API de Microsoft Graph para obtener acceso a más eventos de auditoría. Para obtener más información, vea [Overview for multi-tenant management using the Microsoft 365 Lighthouse API](/graph/managedtenants-concept-overview).
+Si necesita más información, use la API de Microsoft Graph para obtener acceso a más eventos de auditoría. Para obtener más información, vea [Overview for multi-tenant management using the Microsoft 365 Lighthouse API](/graph/managedtenants-concept-overview).
 
 ## <a name="related-content"></a>Contenido relacionado
 

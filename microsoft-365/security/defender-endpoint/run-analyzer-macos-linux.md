@@ -18,14 +18,15 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e79ccf29695f0bc74c75cf12d617e273d974b24b
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 087e7ff666ddcad02b5ead5ab62b483e60541a90
+ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213690"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62859282"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Ejecutar el analizador de clientes en macOS o Linux
+
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -35,7 +36,7 @@ ms.locfileid: "62213690"
 1. Descargue la [herramienta analizador de cliente XMDE](https://aka.ms/XMDEClientAnalyzer) en la máquina macOS o Linux que necesita investigar.
 
    > [!NOTE]
-   > El hash SHA256 actual de "XMDEClientAnalyzer.zip" que se descarga del vínculo anterior es: "34C0DA20A6B38A1695139495891CD74EF7E07EB1DE06923547B351665A32DF6".
+   > El hash SHA256 actual de "XMDEClientAnalyzer.zip" que se descarga desde el vínculo anterior es: "AA6E73A5F451C3B78B066C9D5EE6499CE3C2F1A6E05CCE691A6055F36F93A3B".
 
 2. Extraiga el contenido de XMDEClientAnalyzer.zip en el equipo.
 
@@ -102,7 +103,7 @@ Ayuda de sintaxis adicional:
 
 - mde_diagnostic.zip
 
-  Descripción: el mismo resultado de diagnóstico que se genera al ejecutar la creación de diagnóstico de *mdatp* en [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
+  Descripción: el mismo resultado de diagnóstico que se genera al ejecutar *la creación de diagnóstico de mdatp* en [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
 
   o
 
@@ -122,7 +123,7 @@ Ayuda de sintaxis adicional:
 
 - Health.txt
 
-  Descripción: el mismo resultado de mantenimiento básico que se muestra al ejecutar el comando de mantenimiento *mdatp.*
+  Descripción: el mismo resultado de mantenimiento básico que se muestra al ejecutar el comando de mantenimiento *mdatp* .
 
 - Events.xml
 

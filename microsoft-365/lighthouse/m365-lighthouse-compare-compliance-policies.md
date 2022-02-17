@@ -16,23 +16,23 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo comparar la configuración de directiva de cumplimiento de dispositivos.
-ms.openlocfilehash: 05f67cda1e99aff0b43109c5f55f78efaf30049c
-ms.sourcegitcommit: f3c912780bbcf5a5b47de192202adb3afbd5952b
+ms.openlocfilehash: 5e4fc396e2ea1e1cce576f6064f4239179db33cc
+ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62219030"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62859258"
 ---
 # <a name="compare-device-compliance-policy-settings"></a>Comparar la configuración de directiva de cumplimiento de dispositivos
 
 > [!NOTE]
-> Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+> Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplan los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, consulte [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Microsoft 365 Lighthouse permite ver directivas de cumplimiento en todos los inquilinos en una sola vista. Puede impulsar la seguridad y la estandarización en todos los inquilinos comparando directivas. Puede filtrar las vistas para ver las opciones que se han configurado (frente a las opciones que no se han configurado), las opciones que difieren en sus configuraciones o simplemente las que coinciden. También puede buscar la configuración específica que le interesa y ver cómo se compara entre las directivas.
+Microsoft 365 Lighthouse permite ver directivas de cumplimiento en todos los inquilinos en una sola vista. Puede impulsar la seguridad y la estandarización en todos los inquilinos comparando directivas. Puede filtrar las vistas para ver las opciones que se han configurado (frente a las opciones que no se han configurado), las opciones que difieren en sus configuraciones o las que coinciden. También puede buscar configuraciones específicas para ver cómo se comparan entre directivas.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Los dispositivos deben tener una licencia de Intune y estar inscritos en Microsoft Endpoint Manager (MEM).
+Asegúrese de que los dispositivos tienen una Microsoft Intune y están inscritos en Microsoft Endpoint Manager (MEM).
 
 ## <a name="compare-policy-settings"></a>Comparar la configuración de directiva
 
@@ -40,7 +40,7 @@ Microsoft 365 Lighthouse permite ver directivas de cumplimiento en todos los inq
 
 2. Seleccione la pestaña **Directivas**.
 
-3. En la **lista** desplegable Filtros, seleccione un sistema operativo/plataforma.
+3. En la **lista** desplegable Filtros, seleccione un sistema operativo o una plataforma.
 
    > [!NOTE]
    > Solo puede comparar directivas con el mismo sistema operativo o plataforma.
@@ -49,7 +49,7 @@ Microsoft 365 Lighthouse permite ver directivas de cumplimiento en todos los inq
 
 5. Seleccione **Comparar**.
 
-Puede filtrar los resultados para ver Configuración **diferentes**, **Configuración que** coincidan o **Configuración de configuración**.
+Puede filtrar los resultados para ver Configuración **que difieren**, Configuración **que coincidan** o **configuración configurada**.
 
 ## <a name="configure-a-policy-setting"></a>Configurar una configuración de directiva
 
@@ -63,7 +63,7 @@ Puede filtrar los resultados para ver Configuración **diferentes**, **Configura
 
 5. En MEM, edite la configuración de directiva según sea necesario.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 A medida que realiza ajustes de directiva, asegúrese de evaluar los cambios con respecto a la configuración de línea base actual. Para obtener más información, vea [Overview of using baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md).
 
