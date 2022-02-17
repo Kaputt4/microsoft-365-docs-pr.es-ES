@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 7e516d78c781782e24c26ddedfa7b8996bb44fe0
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: d3562126a678e486fd97f3c760841f9ba4de7193
+ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322438"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62859294"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -65,7 +65,9 @@ Otros tipos de buzones, como RoomMailbox —que se usa en las salas de conferenc
 
 Teams usa un servicio de chat con tecnología de Azure como almacenamiento principal para todos los mensajes (chats y mensajes de canal). Si necesita eliminar mensajes de Teams por motivos de cumplimiento, las políticas de retención de Teams pueden eliminar mensajes después de un período específico, según el momento en que se crearon. Luego, los mensajes se eliminan permanentemente de los buzones de correo de Exchange donde se almacenaron para las operaciones de cumplimiento y del almacenamiento principal que usa el servicio de chat subyacente con tecnología de Azure. Para más información sobre la arquitectura subyacente, consulte[Seguridad y cumplimiento en Microsoft Teams](/MicrosoftTeams/security-compliance-overview) y, específicamente, la sección [Arquitectura de protección de la información](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
-Aunque los datos de los mensajes de canales y chats de Teams se almacenan en los buzones de correo, debe configurar una directiva de retención para los **mensajes de canal de Teams** y las ubicaciones de los **chats de Teams**. Los mensajes de canal y los chats de Teams no se incluyen en las políticas de retención configuradas para buzones de correo de usuarios o grupos de Exchange. Si se agrega un usuario a un chat, se ingiere una copia de todos los mensajes compartidos con ellos en su buzón. La fecha de creación de esos mensajes no cambia para el nuevo usuario y sigue siendo la misma para todos los usuarios.
+Aunque los datos de los mensajes de canales y chats de Teams se almacenan en los buzones de correo, debe configurar una directiva de retención para los **mensajes de canal de Teams** y las ubicaciones de los **chats de Teams**. Los mensajes de canal y los chats de Teams no se incluyen en las políticas de retención configuradas para buzones de correo de usuarios o grupos de Exchange. De forma similar, las directivas de retención para Teams no afectan a otros buzones almacenados de elementos de correo electrónico.
+
+Si se agrega un usuario a un chat, se ingiere una copia de todos los mensajes compartidos con ellos en su buzón. La fecha de creación de esos mensajes no cambia para el nuevo usuario y sigue siendo la misma para todos los usuarios.
 
 > [!NOTE]
 > Si un usuario está incluido en una directiva de retención activa que retiene los mensajes de Teams y usted elimina el buzón de un usuario incluido en esta directiva, para retener los datos de Teams, el buzón se convierte en un [buzón inactivo](inactive-mailboxes-in-office-365.md). Si no necesita conservar estos datos de Teams para el usuario, excluya la cuenta de usuario de la directiva de retención y [espere a que este cambio surta efecto](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect) antes de eliminar su buzón.
