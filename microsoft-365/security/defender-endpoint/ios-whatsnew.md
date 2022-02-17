@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 098ea7ee2934ac811035414b295a71012edc88e2
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 723dc6a70d9a8d37ef05cb301c41f0fea3911da9
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766913"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879149"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Novedades de Microsoft Defender para endpoint en iOS
 
@@ -36,6 +36,10 @@ ms.locfileid: "62766913"
 ## <a name="improved-experience-on-supervised-ios-devices"></a>Experiencia mejorada en dispositivos iOS supervisados
 
 Microsoft Defender para endpoint en iOS ahora tiene capacidad especializada en dispositivos iOS/iPadOS supervisados, dadas las capacidades de administración mejoradas que proporciona la plataforma en estos tipos de dispositivos. También puede proporcionar Protección web **sin configurar una VPN local en el dispositivo**. Esto proporciona a los usuarios finales una experiencia perfecta mientras siguen estando protegidos contra la suplantación de identidad (phishing) y otros ataques basados en web. Para obtener más información, visite [esta documentación](ios-install.md#complete-deployment-for-supervised-devices)
+
+## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-app-store"></a>Microsoft Defender para endpoint ahora es Microsoft Defender en la Tienda de aplicaciones
+
+Microsoft Defender para endpoint ya está disponible como **Microsoft Defender** en la tienda de aplicaciones. Con esta actualización, la aplicación estará disponible como versión preliminar para **los consumidores de la región de Estados Unidos**. En función de cómo inicie sesión en la aplicación con su cuenta personal o laboral, tendrá acceso a las características de Microsoft Defender para Endpoint o a las características de Microsoft Defender para individuos. Para obtener más información, consulta [este blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals).
 
 ## <a name="threat-and-vulnerability-management"></a>Administración de amenazas y vulnerabilidades
 

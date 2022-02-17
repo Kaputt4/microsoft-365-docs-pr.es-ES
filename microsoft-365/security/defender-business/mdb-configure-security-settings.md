@@ -7,22 +7,22 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 12/29/2021
+ms.date: 02/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 941189e1db95d493eedd67297a2dd19abc3ecc9e
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 3d1c024858e81031c5ae985857211723db7b10ac
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62463482"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879185"
 ---
 # <a name="configure-your-security-policies-in-microsoft-defender-for-business-preview"></a>Configurar las directivas de seguridad en Microsoft Defender para empresas (versión preliminar)
 
@@ -98,9 +98,9 @@ En la tabla siguiente se describe la configuración para ver (y, si es necesario
 | **Centro de seguridad** | **Zona horaria** | Seleccione la zona horaria que se usará para las fechas y horas mostradas en incidentes, amenazas detectadas e investigación automatizada & corrección. Puede usar UTC o la zona horaria local (*recomendado*).  |
 | **Microsoft 365 Defender** | **Account** | Ver detalles, como dónde se almacenan los datos, el identificador de inquilino y el identificador de la organización (organización). |
 | **Microsoft 365 Defender**  | **Versión preliminar de las características**  | Activa las características de vista previa para probar las próximas características y nuevas funcionalidades. Puede ser uno de los primeros en obtener una vista previa de las nuevas características y proporcionar comentarios. |
-| **Puntos de conexión**  | **Notificaciones por correo electrónico** | Configurar o editar las reglas de notificación de correo electrónico. Cuando se detectan vulnerabilidades o se crea una alerta, los destinatarios especificados en las reglas de notificación de correo electrónico recibirán un correo electrónico. [Obtenga más información sobre las notificaciones por correo electrónico](mdb-email-notifications.md). |
-| **Puntos de conexión**   | **Administración de dispositivos** >  **Incorporación** | Incorporar dispositivos a Defender para empresas mediante un script descargable. Para obtener más información, consulta [Incorporación de un dispositivo con un script local en Defender para empresas](mdb-onboard-devices.md#onboard-a-device-using-a-local-script-in-defender-for-business).   |  
-| **Puntos de conexión**  |  **Administración de dispositivos** >  **Offboarding** | Dispositivos offboard (quitar) de Defender para empresas (versión preliminar). Al salir de un dispositivo, ya no envía datos a Defender para empresas (versión preliminar), pero los datos recibidos antes de la salida se conservan. Para obtener más información, consulta [Offboard a device](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-device).  |
+| **Puntos de conexión**  | **Notificaciones de correo electrónico** | Configurar o editar las reglas de notificación de correo electrónico. Cuando se detectan vulnerabilidades o se crea una alerta, los destinatarios especificados en las reglas de notificación de correo electrónico recibirán un correo electrónico. [Obtenga más información sobre las notificaciones por correo electrónico](mdb-email-notifications.md). |
+| **Puntos de conexión**   | **Administración de dispositivos** >  **Incorporación** | Incorporar dispositivos a Defender para empresas mediante un script descargable. Para obtener más información, consulta [Incorporación de dispositivos a Microsoft Defender para empresas (versión preliminar).](mdb-onboard-devices.md)   |  
+| **Puntos de conexión**  |  **Administración de dispositivos** >  **Offboarding** | Dispositivos offboard (quitar) de Defender para empresas (versión preliminar). Al salir de un dispositivo, ya no envía datos a Defender para empresas (versión preliminar), pero los datos recibidos antes de la salida se conservan. Para obtener más información, consulta [Offboarding a device](mdb-onboard-devices.md#offboarding-a-device).  |
 
 ### <a name="access-your-settings-in-the-microsoft-365-defender-portal"></a>Acceder a la configuración en el portal de Microsoft 365 Defender web
 

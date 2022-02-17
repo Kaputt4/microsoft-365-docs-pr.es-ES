@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 82903c15c0941a729f85bdbc69cba9779d4509e7
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: ad8ae319be7515282dc51e9dd9a519660b5d91f6
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62825450"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879125"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Soporte técnico de administrador para Escritorio administrado de Microsoft
 
@@ -22,15 +22,15 @@ Puede enviar vales de soporte técnico o solicitudes de comentarios a Microsoft 
 
 ## <a name="open-a-new-support-request"></a>Abrir una nueva solicitud de soporte técnico
 
-Las solicitudes de soporte técnico se administran de acuerdo con la gravedad descrita en la [tabla de definición de gravedad](#sev). Se revisan los comentarios y se proporciona una respuesta cuando se solicita.
+Las solicitudes de soporte técnico se administran de acuerdo con la gravedad descrita en la [tabla de definición de gravedad](#support-request-severity-definitions). Se revisan los comentarios y se proporciona una respuesta cuando se solicita.
 
 **Para abrir una nueva solicitud de soporte técnico:**
 
 1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al menú **Administración de inquilinos**.
-2. En la sección Escritorio administrado de Microsoft, seleccione **Solicitudes de servicio**.
+2. En la **sección Escritorio administrado de Microsoft** , seleccione **Solicitudes de servicio**.
 3. En la **sección Solicitudes de servicio** , seleccione **+ Nueva solicitud de soporte técnico**.
 4. Seleccione el **tipo de solicitud** que coincida con la ayuda que necesita. En la tabla siguiente se describen las opciones.
-5. Seleccione el **nivel de gravedad** . Para obtener más información, vea [Support request severity definitions](#sev).
+5. Seleccione el **nivel de gravedad** . Para obtener más información, vea [tabla de definición de gravedad](#support-request-severity-definitions).
 6. Proporcione tanta información sobre la solicitud como sea posible para ayudar al equipo a responder rápidamente. Según el tipo de solicitud, es posible que deba proporcionar diferentes detalles.
 7. Revise toda la información que proporcionó para obtener precisión.
 8. Cuando haya terminado, seleccione **Crear**.
@@ -81,8 +81,6 @@ Agradecemos sus comentarios y los usamos para mejorar la experiencia de soporte 
 
 Cuando sea el contacto principal de una solicitud de soporte técnico, recibirá un correo electrónico de Microsoft Managed Desktop Operations. El correo electrónico preguntará sobre su experiencia después de que se haya resuelto el problema. Los comentarios se supervisan y comparten activamente con la ingeniería para mejorar el servicio y priorizar las características futuras. Asegúrese de centrarse en su experiencia y no incluir información personal en el formulario de comentarios. Para obtener más información acerca de la privacidad, consulte la [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
-<span id="sev" />
-
 ## <a name="support-request-severity-definitions"></a>Definiciones de gravedad de solicitud de soporte técnico
 
 El tiempo de respuesta inicial es el período desde el que envía la solicitud de soporte técnico hasta que un ingeniero de Escritorio administrado de Microsoft se pone en contacto con usted y comienza a trabajar en la solicitud de soporte técnico. El tiempo de respuesta inicial varía según el impacto empresarial de la solicitud. Se basa en la gravedad de la solicitud.
@@ -93,7 +91,7 @@ El tiempo de respuesta inicial es el período desde el que envía la solicitud d
 | Nivel de gravedad | Situación | Tiempo de respuesta inicial | Respuesta esperada de usted |
 | ----- | ----- |----- | ----- |
 | **Gravedad A: <br> Impacto crítico** | **Impacto empresarial crítico** <br>Su empresa tiene una pérdida o degradación significativa de los servicios y requiere atención inmediata.<p>**Impacto importante en la compatibilidad de aplicaciones**<br>Toda la empresa está experimentando un impacto financiero debido a que los dispositivos no responden o pierden la funcionalidad crítica. | **Inicial:** < 1 hora <p> **Actualización**: 60 minutos <br> Hay disponible soporte técnico las 24 horas todos los días.</p> | Cuando selecciona Gravedad A, confirma que el problema tiene un impacto empresarial crítico, con una grave pérdida y degradación de los servicios. <br><br> El problema requiere una respuesta inmediata y te comprometes a un compromiso continuo todos los días con el equipo de Microsoft hasta que se resuelva. De lo contrario, Microsoft puede, a su discreción, disminuir la gravedad al nivel B.<br><br> También se asegura de que Microsoft tenga su información de contacto precisa.
-**Gravedad B: Impacto <br> moderado** | **Impacto empresarial moderado**<br>Su negocio tiene una pérdida o degradación moderada de los servicios, pero el trabajo puede continuar razonablemente de manera deficiente.<p>**Impacto moderado de la compatibilidad de aplicaciones**<br>Un grupo empresarial específico ya no es productivo, debido a que los dispositivos no responden o pierden la funcionalidad crítica.| **Inicial**: < 4 horas. <p> **Actualización**: 12 horas; 24 horas al día durante el horario de soporte técnico del administrador (de lunes a viernes).| Cuando selecciona Gravedad B, confirma que el problema tiene un impacto moderado en su negocio con la pérdida y degradación de los servicios. Sin embargo, las soluciones alternativas permiten una continuidad comercial razonable, aunque temporal. <br><br> El problema requiere una respuesta urgente. Si seleccionas soporte técnico todos los días al enviar la solicitud de soporte técnico, te comprometes a un compromiso continuo todos los días con el equipo de Microsoft hasta que se resuelva. De lo contrario, Microsoft podría, a su discreción, disminuir la gravedad al nivel C. Si seleccionas soporte técnico-horas de administración cuando envías un incidente de gravedad B, Microsoft se pondrá en contacto contigo solo durante las horas de soporte técnico de administrador.<br><br>También se asegura de que Microsoft tenga su información de contacto precisa.
+**Gravedad B: Impacto <br> moderado** | **Impacto empresarial moderado**<br>Su negocio tiene una pérdida o degradación moderada de los servicios, pero el trabajo puede continuar razonablemente de manera deficiente.<p>**Impacto moderado de la compatibilidad de aplicaciones**<br>Un grupo empresarial específico ya no es productivo, debido a que los dispositivos no responden o pierden la funcionalidad crítica.| **Inicial**: < 4 horas. <p> **Actualización**: 12 horas; 24 horas al día durante el horario de soporte técnico del administrador (de lunes a viernes).| Cuando selecciona Gravedad B, confirma que el problema tiene un impacto moderado en su negocio con la pérdida y degradación de los servicios. Sin embargo, las soluciones alternativas permiten una continuidad comercial razonable, aunque temporal. <br><br> El problema requiere una respuesta urgente. Si seleccionas soporte *técnico todos* los días al enviar la solicitud de soporte técnico, te comprometes a un compromiso continuo todos los días con el equipo de Microsoft hasta que se resuelva. De lo contrario, Microsoft podría, a su discreción, disminuir la gravedad al nivel C. Si seleccionas *soporte técnico-horas de* administración cuando envías un incidente de gravedad B, Microsoft se pondrá en contacto contigo solo durante las horas de soporte técnico de administrador.<br><br>También se asegura de que Microsoft tenga su información de contacto precisa.
 **Gravedad C: impacto <br> mínimo** | **Impacto empresarial mínimo**<br> Su empresa funciona con impedimentos menores de los servicios.<p>**Impacto de compatibilidad de aplicaciones secundarias**<br>Los usuarios potencialmente no relacionados experimentan problemas de compatibilidad menores que no impiden la productividad. | **Inicial**: < 8 horas.<p> **Actualización**: 24 horas; Soporte técnico las 24 horas del día durante el horario de soporte técnico del administrador (de lunes a viernes). | Cuando selecciona Gravedad C, confirma que el problema tiene un impacto mínimo en su empresa con un impedimento de servicio menor.<br><br> Para un incidente de gravedad C, Microsoft solo se pondrá en contacto contigo durante las horas de soporte técnico del administrador.<br><br> También se asegura de que Microsoft tenga su información de contacto precisa.
 
 ### <a name="more-support-request-information"></a>Más información de solicitud de soporte técnico
