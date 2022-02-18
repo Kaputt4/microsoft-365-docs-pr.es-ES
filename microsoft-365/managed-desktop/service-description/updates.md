@@ -11,12 +11,12 @@ manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5e696f1b89cf03bbd4123252ea967e2aca10ef49
-ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
+ms.openlocfilehash: bf6ead692a82d485f6a8e3b3148bc05484c887a8
+ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62879257"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62896020"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Cómo se controlan las actualizaciones en Microsoft Managed Desktop
 
@@ -34,11 +34,11 @@ Las actualizaciones publicadas por Microsoft son acumulativas y se clasifican co
 
 Microsoft Managed Desktop usa cuatro Azure AD para administrar actualizaciones:
 
-| Group | Descripción |
+| Group | Description |
 | ------ | ------ |
-| Prueba | Se usa para validar los cambios de directiva de Escritorio administrado de Microsoft, las actualizaciones del sistema operativo, las actualizaciones de características y otros cambios que se insertan en la Azure AD ("inquilino"). El grupo De prueba es: <ul><li>Lo mejor para las pruebas o los usuarios que pueden proporcionar comentarios anticipados.</li><li>Exento de los contratos de nivel de servicio establecidos y la compatibilidad con usuarios.</li><li>Disponible para validar la compatibilidad de aplicaciones con nuevos cambios en la directiva o el sistema operativo.</li></ul> |
+| Prueba | Se usa para validar los cambios de directiva de Escritorio administrado de Microsoft, las actualizaciones del sistema operativo, las actualizaciones de características y otros cambios que se insertan en la Azure AD ("inquilino"). El grupo De prueba es: <br><ul><li>Lo mejor para las pruebas o los usuarios que pueden proporcionar comentarios anticipados.</li><li>Exento de los contratos de nivel de servicio establecidos y la compatibilidad con usuarios.</li><li>Disponible para validar la compatibilidad de aplicaciones con nuevos cambios en la directiva o el sistema operativo.</li></ul> |
 | Primero | Contiene los primeros usuarios y dispositivos de software que podrían estar sujetos a actualizaciones previas a la versión. <br><br> Los dispositivos de este grupo pueden experimentar interrupciones si hay escenarios que no se han cubierto durante las pruebas en el anillo de prueba. |
-| Rápida | Prioriza la velocidad sobre la estabilidad. El grupo Rápido es: <ul><li>Es útil para detectar problemas de calidad antes de ofrecerlos al grupo Broad.</li> <li>La siguiente capa de validación y suele ser más estable que los grupos Test y First.</li></ul> |
+| Rápida | Prioriza la velocidad sobre la estabilidad. El grupo Rápido es: <br><ul><li>Es útil para detectar problemas de calidad antes de ofrecerlos al grupo Broad.</li> <li>La siguiente capa de validación y suele ser más estable que los grupos Test y First.</li></ul> |
 | Amplias | Este grupo es el último que tiene actualizaciones de características y calidad disponibles. <br><br> El grupo Broad contiene la mayoría de los usuarios de la Azure AD y, por lo tanto, favorece la estabilidad sobre la velocidad en la implementación. Las pruebas de aplicaciones deben realizarse con este grupo porque el entorno es el más estable. |
 
 ### <a name="moving-devices-between-update-groups"></a>Mover dispositivos entre grupos de actualización

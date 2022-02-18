@@ -15,14 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b4ae8490fadecf60d4414218f42cac83b9035270
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: d687273a3029f3de080f06f328d4d40853142353
+ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354989"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62896104"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar las opciones de proxy de dispositivo y de conectividad a Internet
 
@@ -174,7 +175,7 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 <br>
 
 **** 
-|Hoja de cálculo de la lista de dominios| Descripción|
+|Hoja de cálculo de la lista de dominios| Description|
 |---|---|
 |Lista de direcciones URL de Microsoft Defender para puntos de conexión para clientes comerciales| Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo para clientes comerciales. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
 | Lista de direcciones URL de punto de conexión de Microsoft Defender para clientes de Gov/GCC/DoD | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sos para clientes gov/GCC/DoD. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
@@ -239,7 +240,7 @@ El \*extremo de dirección URL .blob.core.windows.net se puede reemplazar por la
 
 Compruebe que la configuración del proxy se completó correctamente. A continuación, WinHTTP puede detectar y comunicarse a través del servidor proxy del entorno y, a continuación, el servidor proxy permitirá el tráfico a las direcciones URL del servicio Defender for Endpoint.
 
-1. Descargue la [herramienta Analizador de cliente de Microsoft Defender](https://aka.ms/mdeanalyzer) para puntos de conexión en el equipo, donde se está ejecutando el sensor Defender for Endpoint.
+1. Descargue la [herramienta Analizador de cliente de Microsoft Defender](https://aka.ms/mdeanalyzer) para puntos de conexión en el equipo, donde se está ejecutando el sensor Defender for Endpoint. Para los servidores de nivel inferior, use la última edición de vista previa disponible para descargar la herramienta Beta de [Microsoft Defender para endpoint client Analyzer](https://aka.ms/BetaMDEAnalyzer).
 
 2. Extrae el contenido de MDEClientAnalyzer.zip en el dispositivo.
 
