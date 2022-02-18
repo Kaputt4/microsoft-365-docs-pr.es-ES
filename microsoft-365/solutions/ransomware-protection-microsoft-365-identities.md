@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
 description: Use inicios de sesión seguros y Acceso condicional para proteger los recursos de Microsoft 365 frente a ataques de ransomware.
-ms.openlocfilehash: 23a9833952aca745e869c13139823b4b0a9400bf
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 57fad156a4e7b97d3029c224059041d692224ed2
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60666691"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62887403"
 ---
 # <a name="step-3-protect-identities"></a>Paso 3. Proteger identidades
 
@@ -42,7 +42,7 @@ A continuación, implemente las [Directivas comunes de acceso a dispositivos e i
 
 En el caso de los inicios de sesión de usuario, estas directivas incluyen:
 
-- Requerir MFA para las cuentas prioritarias (inmediatamente) y, finalmente, todas las cuentas de usuario.
+- Requerir autenticación multifactor (MFA) para [cuentas prioritarias](/microsoft-365/admin/setup/priority-accounts) (inmediatamente) y, a la larga, para todas las cuentas de usuario.
 - Requerir inicios de sesión de alto riesgo para usar MFA.
 - Requerir que los usuarios de alto riesgo con inicios de sesión de alto riesgo cambien sus contraseñas.
 
@@ -50,7 +50,7 @@ En el caso de los inicios de sesión de usuario, estas directivas incluyen:
 
 Use estos procedimientos recomendados:
 
-- Implemente el principio de [least-privilege](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) y use la protección con contraseña, tal como se describe en [Intentar seguridad de inicio de sesión](#increase-sign-in-security) para las cuentas de usuario que aún usan contraseñas para sus inicios de sesión. 
+- Implemente el principio de [privilegio mínimo](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) y use la protección con contraseña como se describe en [Aumentar la seguridad de inicio de sesión](#increase-sign-in-security) para las cuentas de usuario que aún usan contraseñas para el inicio de sesión. 
 - Evite el uso de cuentas de servicio de nivel de administrador en todo el dominio. 
 - Restrinja los privilegios administrativos locales para limitar la instalación de Troyanos de Acceso Remoto (RAT, por sus siglas en inglés) y otras aplicaciones no deseadas.
 - Use Azure AD acceso condicional para validar explícitamente la confianza de los usuarios y estaciones de trabajo antes de permitir el acceso a los portales administrativos. Consulte [este ejemplo](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management) para Microsoft Azure Portal.
@@ -69,7 +69,7 @@ Debe hacer que los usuarios de su organización conozcan lo siguiente:
 
 ## <a name="resulting-configuration"></a>Configuración resultante
 
-Esta es la protección contra ransomware para su espacio empresarial de los pasos 1-3.
+Esta es la protección contra ransomware para el espacio empresarial de los pasos 1 a 3.
 
 ![Protección contra ransomware para su espacio empresarial de Microsoft 365 después del paso 3](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step3.png)
 

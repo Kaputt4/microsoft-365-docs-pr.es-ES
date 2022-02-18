@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilice los servicios de seguridad y cumplimiento de Microsoft 365 para proteger sus aplicaciones, datos y dispositivos para los trabajadores híbridos.
-ms.openlocfilehash: e1a5c277f9b5f06313fc924756dc72dbf47fad78
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7c898a1ef588ce8eee553490eaa8f5dd452df9e0
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934723"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886395"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>Paso 3: implementar la seguridad y el cumplimiento de la normativa para los trabajadores híbridos
 
@@ -41,7 +41,7 @@ El trabajo remoto necesita los siguientes elementos de seguridad y cumplimiento:
 
 Estas son las características de Microsoft 365 que proporcionan servicios de seguridad y cumplimiento para los trabajadores híbridos.
 
-![Utilice estos servicios de Microsoft 365 para mantener la seguridad y el cumplimiento.](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
+:::image type="content" source="../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png" alt-text="Utilice estos servicios de Microsoft 365 para mantener la seguridad y el cumplimiento" lightbox="../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png":::
 
 ## <a name="security"></a>Seguridad
 
@@ -90,7 +90,7 @@ Para sus trabajadores híbridos, ha implementado:
   - Protección contra malware para datos de servicio en la nube, correo electrónico y dispositivos Windows 11 o 10
 - Cumplimiento
   - Etiquetado consistente para niveles de sensibilidad y protección
-  - Políticas para prevenir la filtración de información
+  - Directivas para evitar la filtración de información
   - Cumplimiento de las regulaciones de datos regionales
 
 ## <a name="next-step"></a>Paso siguiente

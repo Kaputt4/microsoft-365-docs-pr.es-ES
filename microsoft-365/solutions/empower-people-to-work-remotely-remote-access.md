@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Asegúrese de que los trabajadores remotos puedan tener acceso a los recursos locales y optimizar el acceso a los servicios en la nube de Microsoft 365.
-ms.openlocfilehash: de2d8e5e58471ad994c611013e77909ed0ab0542
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 11fb3e37efe67103780fc4d234837da3bc15d97f
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871945"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886305"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Paso 2: Proporcionar acceso remoto a los servicios y aplicaciones locales
 
@@ -57,7 +57,7 @@ Con el túnel dividido, puede configurar el cliente VPN para excluir determinado
 
 Para optimizar el acceso a los recursos en la nube de Microsoft 365, configure los clientes VPN de túnel dividido para excluir el tráfico a los puntos de conexión de Microsoft 365 de la categoría **Optimizar** por la conexión VPN. Para obtener más información, consulte [Office 365 endpoint categories](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories) (Categorías de puntos de conexión de Office 365). Vea la lista de puntos de conexión de la categoría Optimizar [aquí](../enterprise/urls-and-ip-address-ranges.md).
 
-Este es el flujo de tráfico resultante, en el que la mayoría del tráfico para las aplicaciones en la nube de Microsoft 365 omiten la conexión VPN.
+Este es el flujo de tráfico resultante, en el que la mayor parte del tráfico de las aplicaciones en la nube de Microsoft 365 omiten la conexión VPN.
 
 :::image type="content" source="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png" alt-text="Tráfico de red de clientes de VPN con túneles." lightbox="../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png":::
 

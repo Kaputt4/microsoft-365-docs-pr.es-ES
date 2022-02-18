@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
 description: Paso a paso para proteger los recursos de Microsoft 365 frente a ataques de ransomware.
-ms.openlocfilehash: 81f97ba6327f5f1803d972ad9e62f2333e65bc2b
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 634888ac603be17265733c4443a69495015296d7
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110276"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886041"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Implementar la protección contra ransomware para el inquilino de Microsoft 365
 
@@ -43,7 +43,7 @@ Para obtener más información sobre la protección contra ransomware en todos l
 
 La seguridad de los servicios en la nube de Microsoft es una asociación entre usted y Microsoft:
 
-- Los servicios en la nube de Microsoft se basan en unos cimientos de confianza y seguridad. Microsoft le proporciona funcionalidades y controles de seguridad para ayudarle a proteger sus datos y sus aplicaciones.
+- Los servicios en la nube de Microsoft se basan en unos cimientos de confianza y seguridad. Microsoft le proporciona controles de seguridad y capacidades que le ayudarán a proteger sus datos y aplicaciones.
 - Usted es propietario de sus datos e identidades, así como es usted mismo el encargado de protegerlos, tal y como debe hacer con sus recursos locales y con la seguridad de los componentes en la nube que controle.
 
 Al combinar estas capacidades y responsabilidades, podemos proporcionarle la mejor protección contra un ataque de ransomware.
@@ -56,7 +56,7 @@ Un atacante de ransomware que se haya infiltrado en un inquilino de Microsoft 3
 - Cifrado de archivos locales
 - Copia de archivos fuera del inquilino (filtración de datos)
 
-Sin embargo, los servicios en línea de Microsoft 365 tienen muchas funcionalidades y controles integrados para proteger los datos de los clientes frente a ataques de ransomware. En las secciones siguientes, se proporciona un resumen de estos. Para obtener más información sobre cómo Microsoft protege los datos de los clientes, consulte [Protección contra ransomware y software en Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection).
+Sin embargo, los servicios en línea de Microsoft 365 tienen muchas capacidades y controles integrados para proteger los datos del cliente de ataques de ransomware. En las secciones siguientes, se proporciona un resumen de estos. Para obtener más información sobre cómo Microsoft protege los datos de los clientes, consulte [Protección contra ransomware y software en Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection).
 
 >[!Note]
 >Un ataque de ransomware en un inquilino de Microsoft 365 supone que el atacante tiene credenciales de cuenta de usuario válidas para un inquilino y tiene acceso a todos los archivos y recursos que se le permiten a la cuenta de usuario. Un atacante sin credenciales de cuenta de usuario válidas tendría que descifrar los datos en reposo que Microsoft 365 haya cifrado con el uso del cifrado predeterminado y mejorado. Para obtener más información, consulte [Información general sobre el cifrado y la administración de claves](/compliance/assurance/assurance-encryption). 
@@ -76,13 +76,13 @@ Los archivos de SharePoint y OneDrive para la Empresa están protegidos por:
 
    Si el ransomware crea una nueva copia cifrada del archivo y elimina el archivo antiguo, los clientes tienen 93 días para restaurarlo desde la papelera de reciclaje. Después de 93 días, hay una ventana de 14 días en la que Microsoft todavía puede recuperar los datos. 
   
-   Para minimizar la carga del personal de seguridad y soporte técnico, entrene a los usuarios con información sobre cómo [restaurar archivos de la papelera de reciclaje](https://support.microsoft.com/en-us/office/restore-deleted-items-from-the-site-collection-recycle-bin-5fa924ee-16d7-487b-9a0a-021b9062d14b).
+   Para minimizar la carga del personal de seguridad y soporte técnico, entrene a los usuarios con información sobre cómo [restaurar archivos de la papelera de reciclaje](https://support.microsoft.com/office/restore-deleted-items-from-the-site-collection-recycle-bin-5fa924ee-16d7-487b-9a0a-021b9062d14b).
 
-- [Restauración de archivos](https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/announcing-new-onedrive-for-business-feature-files-restore/ba-p/147436)
+- [Restauración de archivos](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15)
 
    Una solución completa de autoservicio de recuperación para SharePoint y OneDrive que permite a los administradores y usuarios finales restaurar archivos a partir de cualquier fecha durante los últimos 30 días.
 
-   Para minimizar la carga del personal del departamento de soporte técnico de TI y seguridad, entrene a los usuarios sobre la [Restauración de archivos](https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/announcing-new-onedrive-for-business-feature-files-restore/ba-p/147436).
+   Para minimizar la carga del personal del departamento de soporte técnico de TI y seguridad, entrene a los usuarios sobre la [Restauración de archivos](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15).
 
 
 En el caso de los archivos de OneDrive y SharePoint, Microsoft puede revertir su espacio a un momento dado anterior de hasta 14 días, si se produce un ataque masivo.
@@ -119,11 +119,11 @@ Puede evitar que un atacante de ransomware copie archivos fuera de su inquilino 
 
     Bloquee descargas de información confidencial, como archivos. 
 
-    También puede usar directivas de sesión para [Control de aplicaciones de acceso condicional de Microsoft Cloud App Security](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization) para supervisar el flujo de información entre el usuario y la aplicación en tiempo real.
+    También se puede usar directivas de sesión para el [Control de aplicaciones de acceso condicional de Defender for Cloud](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization) y, así, supervisar el flujo de información entre un usuario y una aplicación en tiempo real.
 
 ## <a name="whats-in-this-solution"></a>Acerca de esta solución
 
-Esta solución le guiará a través de la implementación de características de protección y mitigación de Microsoft 365, configuraciones y operaciones continuas para minimizar la capacidad de un atacante de ransomware de usar los datos críticos en su inquilino de Microsoft 365 para retener a su organización para un futuro rescate.
+Esta solución le guiará a través de la implementación de características de protección y mitigación de Microsoft 365, configuraciones y operaciones continuas para minimizar la capacidad de un atacante de ransomware de usar los datos críticos del espacio empresarial de Microsoft 365 para intentar pedir rescate.
 
 ![Pasos para protegerse contra ransomware con Microsoft 365](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-step-grid.png)
 
@@ -155,31 +155,31 @@ Para proteger a su inquilino de Microsoft 365 de un ataque de ransomware, use e
 
 | Funcionalidad o característica | Description | Ayuda... | Licencias |
 |:-------|:-----|:-------|:-------|
-| Puntuación de seguridad de Microsoft |  Mide la posición de seguridad de un inquilino de Microsoft 365 | Evalúe la configuración de seguridad y sugiera mejoras. | Microsoft 365 E3 o Microsoft 365 E5 |
-| Reglas de reducción de la superficie expuesta a ataques | Reduce la vulnerabilidad de su organización a los ciberataques mediante una variedad de opciones de configuración | Bloquea la actividad sospechosa y el contenido vulnerable. | Microsoft 365 E3 o Microsoft 365 E5 |
-| Configuración de correo electrónico de Exchange |  Habilita los servicios que reducen la vulnerabilidad de su organización a un ataque basado en correo electrónico | Evite el acceso inicial a su inquilino a través de suplantación de identidad (phishing) y otros ataques basados en correo electrónico.  | Microsoft 365 E3 o Microsoft 365 E5 |
-| Configuración de Microsoft Windows, Microsoft Edge y aplicaciones de Microsoft 365 para empresas | Proporciona configuraciones de seguridad estándar del sector que son ampliamente conocidas y probadas. | Evite ataques a través de Windows, Edge y aplicaciones de Microsoft 365 para empresas. | Microsoft 365 E3 o Microsoft 365 E5 |
+| Puntuación de seguridad de Microsoft |  Mide la posición de seguridad de un espacio empresarial de Microsoft 365. | Evalúe la configuración de seguridad y sugiera mejoras. | Microsoft 365 E3 o Microsoft 365 E5 |
+| Reglas de reducción de la superficie expuesta a ataques | Reduce la vulnerabilidad de la organización a los ciberataques mediante una variedad de opciones de configuración. | Bloquea la actividad sospechosa y el contenido vulnerable. | Microsoft 365 E3 o Microsoft 365 E5 |
+| Configuración de correo electrónico de Exchange |  Habilita los servicios que reducen la vulnerabilidad de la organización a un ataque basado en el correo electrónico. | Evite el acceso inicial a su inquilino a través de suplantación de identidad (phishing) y otros ataques basados en correo electrónico.  | Microsoft 365 E3 o Microsoft 365 E5 |
+| Configuración de Microsoft Windows, Microsoft Edge y aplicaciones de Microsoft 365 para empresas | Proporciona configuraciones de seguridad estándar del sector que son ampliamente conocidas y están probadas. | Evite ataques a través de Windows, Edge y aplicaciones de Microsoft 365 para empresas. | Microsoft 365 E3 o Microsoft 365 E5 |
 |
 
 ### <a name="2-detection-and-response"></a>2. Detección y respuesta
 
 | Funcionalidad o característica | Description | Ayuda a detectar y responder a... | Licencias |
 |:-------|:-----|:-------|:-------|
-| Microsoft 365 Defender | Combina señales y orquesta las funcionalidades en una única solución <br><br> Permite a los profesionales de seguridad unir señales de amenazas y determinar el ámbito y el impacto completos de una amenaza <br><br> Automatiza las acciones para evitar o detener el ataque y reparar, de manera automática, los buzones afectados, los puntos de conexión y las identidades de usuario. | Incidentes, que son las alertas combinadas y los datos que componen un ataque. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
-| Microsoft Defender for Identity |  Identifica, detecta e investiga amenazas avanzadas, identidades en peligro y acciones internas malintencionadas dirigidas a su organización a través de una interfaz de seguridad basada en la nube que usa las señales de Active Directory Domain Services (AD DS) local. | Credenciales en peligro para cuentas de AD DS. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
-| Microsoft Defender para Office 365 | Protege la organización frente a las amenazas dañinas que se presentan en mensajes de correo electrónico, vínculos (URL) y herramientas de colaboración. <br><br> Protege contra malware, phishing, suplantación de identidad y otros tipos de ataques. | Ataques de suplantación de identidad (phishing). | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
-| Microsoft Defender para punto de conexión | Habilita la detección y respuesta a amenazas avanzadas en los puntos de conexión (dispositivos) | La instalación de malware y el dispositivo están en peligro. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
-| Azure Active Directory (Azure AD) Identity Protection | Automatiza la detección y corrección de riesgos basados en identidades y la investigación de esos riesgos. | Vulneración de credenciales en cuentas de Azure AD y elevación de privilegios. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
-| Microsoft Defender for Cloud Apps | Agente de seguridad de acceso a la nube para la detección, investigación y gobernanza en todos los servicios en la nube de Microsoft y de terceros | Movimiento lateral y filtración de datos. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
+| Microsoft 365 Defender | Combina señales y dispone las funcionalidades en una única solución. <br><br> Permite a los profesionales de la seguridad reunir las señales de amenazas y determinar el ámbito y el impacto completos de una amenaza. <br><br> Automatiza las acciones para evitar o detener el ataque y reparar de manera automática los buzones afectados, los puntos de conexión y las identidades de usuario. | Incidentes, que son las alertas combinadas y los datos que componen un ataque. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
+| Microsoft Defender for Identity |  Identifica, detecta e investiga amenazas avanzadas, identidades en peligro y acciones internas malintencionadas dirigidas a la organización a través de una interfaz de seguridad basada en la nube que usa las señales de Active Directory Domain Services (AD DS) local. | Credenciales en peligro para cuentas de AD DS. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
+| Microsoft Defender para Office 365 | Protege a la organización frente a las amenazas dañinas que se presentan en mensajes de correo electrónico, vínculos (URL) y herramientas de colaboración. <br><br> Protege contra software malintencionado, phishing, suplantación de identidad y otro tipo de ataques. | Ataques de suplantación de identidad (phishing). | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
+| Microsoft Defender para punto de conexión | Habilita la detección y respuesta a amenazas avanzadas en los distintos puntos de conexión (dispositivos). | La instalación de malware y el dispositivo están en peligro. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
+| Azure Active Directory (Azure AD) Identity Protection | Automatiza la detección y corrección de riesgos basados en identidades y la investigación de dichos riesgos. | Vulneración de credenciales en cuentas de Azure AD y elevación de privilegios. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
+| Defender for Cloud Apps | Agente de seguridad de acceso a la nube para la detección, investigación y gobernanza en todos los servicios en la nube de Microsoft y de terceros | Movimiento lateral y filtración de datos. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
 |
 
 ### <a name="3-identities"></a>3. Identidades
 
 | Funcionalidad o característica | Description | Ayuda a evitar... | Licencias |
 |:-------|:-----|:-------|:-------|
-|Protección de contraseñas de Azure AD|Bloquear contraseñas de una lista común y entradas personalizadas.|Determinación de la contraseña de la cuenta de usuario local o en la nube.|Microsoft 365 E3 o Microsoft 365 E5|
-|Autenticación multifactor aplicada con acceso condicional|Requerir la autenticación multifactor según las propiedades del inicio de sesión con directivas de acceso condicional.|Acceso y vulneración de credenciales.|Microsoft 365 E3 o Microsoft 365 E5|
-|Autenticación multifactor aplicada con acceso condicional basado en riesgos|Requerir la autenticación multifactor según el riesgo de los inicios de sesión del usuario con Azure AD Identity Protection. |Acceso y vulneración de credenciales.|Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5|
+|Protección de contraseñas de Azure AD | Bloquear contraseñas de una lista común y entradas personalizadas. | Determinación de la contraseña de la cuenta de usuario local o en la nube. |Microsoft 365 E3 o Microsoft 365 E5|
+|Autenticación multifactor aplicada con acceso condicional | Requerir la autenticación multifactor según las propiedades del inicio de sesión con directivas de acceso condicional. | Acceso y vulneración de credenciales. | Microsoft 365 E3 o Microsoft 365 E5|
+|Autenticación multifactor aplicada con acceso condicional basado en riesgos | Requerir la autenticación multifactor según el riesgo de los inicios de sesión de usuario con Azure AD Identity Protection. |Acceso y vulneración de credenciales. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5|
 |
 
 ### <a name="4-devices"></a>4. Dispositivos
@@ -188,10 +188,10 @@ Para administración de dispositivos y aplicaciones:
 
 | Funcionalidad o característica | Description | Ayuda a evitar... | Licencias |
 |:-------|:-----|:-------|:-------|
-| Microsoft Intune | Administrar dispositivos y las aplicaciones que se ejecutan en ellos  | Dispositivo o aplicación en peligro y acceso. | Microsoft 365 E3 o E5 |
+| Microsoft Intune | Administrar dispositivos y las aplicaciones que se ejecutan en ellos.  | Dispositivo o aplicación en peligro y acceso. | Microsoft 365 E3 o E5 |
 |  |  |  |  |
 
-Para dispositivos con Windows 10:
+Para dispositivos Windows 11 o 10:
 
 | Funcionalidad o característica | Description | Ayuda... | Licencias |
 |:-------|:-----|:-------|:-------|
@@ -205,10 +205,10 @@ Para dispositivos con Windows 10:
 
 | Funcionalidad o característica | Description | Ayuda... | Licencias |
 |:-------|:-----|:-------|:-------|
-| Acceso controlado a carpetas | Protege los datos al comprobar las aplicaciones con una lista de aplicaciones conocidas y de confianza | Impedir que los archivos se modifiquen o se cifren mediante ransomware. | Microsoft 365 E3 o Microsoft 365 E5 |
+| Acceso controlado a carpetas | Protege los datos al comprobar las aplicaciones con una lista de aplicaciones conocidas y de confianza. | Impedir que los archivos se modifiquen o se cifren mediante ransomware. | Microsoft 365 E3 o Microsoft 365 E5 |
 | Microsoft Information Protection | Permite que las etiquetas de confidencialidad se apliquen a la información que es rescatable. | Impedir el uso de información filtrada. | Microsoft 365 E3 o Microsoft 365 E5 |
-| Prevención de pérdida de datos (DLP) | Protege los datos confidenciales y reduce el riesgo al impedir que los usuarios los compartan de forma inapropiada | Evitar la filtración de datos. | Microsoft 365 E3 o Microsoft 365 E5 |
-| Microsoft Defender for Cloud Apps | Agente de seguridad de acceso a la nube para detección, investigación y gobernanza | Detecte el movimiento lateral y evite la filtración de datos. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
+| Prevención de pérdida de datos (DLP) | Protege los datos confidenciales y reduce el riesgo al impedir que los usuarios los compartan de forma inapropiada. | Evitar la filtración de datos. | Microsoft 365 E3 o Microsoft 365 E5 |
+| Defender for Cloud Apps | Un agente de seguridad de acceso a la nube para detección, investigación y gobernanza. | Detecte el movimiento lateral y evite la filtración de datos. | Microsoft 365 E5 o Microsoft 365 E3 con el complemento Seguridad de Microsoft 365 E5 |
 |
 
 ## <a name="impact-on-users-and-change-management"></a>Impacto en los usuarios y administración de cambios
@@ -240,6 +240,7 @@ Información clave de Microsoft:
 - [Protéjase contra ransomware y extorsión de manera rápida](/security/compass/protect-against-ransomware)
 - [Informe de Microsoft Digital Defense 2021](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (vea las páginas 10-19)
 - [Ransomware: informe de análisis de amenazas generalizado y continuo](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) en el portal de Microsoft 365 Defender
+- [Enfoque y procedimientos recomendados](/security/compass/incident-response-playbook-dart-ransomware-approach) de ransomware del equipo de detección y respuesta de Microsoft (DART) y [caso práctico](/security/compass/dart-ransomware-case-study)
 
 Microsoft 365:
 
