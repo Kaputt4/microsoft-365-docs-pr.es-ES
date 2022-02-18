@@ -25,19 +25,18 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenga información sobre cómo colaborar de forma segura en su pequeña empresa o campaña con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 71ef42c8e95ed241a7e1566197f67c1563ec6101
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 7f53ee3df70e2310e7bb83d676fa18b544e3fb31
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766334"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886285"
 ---
 # <a name="microsoft-365-business-premium-overview"></a>Microsoft 365 Empresa Premium introducción
 
 En nuestro mundo actual, mantener la seguridad de los datos y las comunicaciones es prioritario, especialmente en el caso de campañas políticas, consultorios médicos y jurídicos y muchas otras pequeñas empresas. Aproveche las características de seguridad de Microsoft 365 Empresa Premium para colaborar de forma segura en su pequeña empresa. Esta solución ofrece un conjunto de recomendaciones diseñadas para ayudarle a protegerse y a proteger sus datos. Esta biblioteca incluye ayuda para configurar y usar este entorno recomendado, sea cual sea su tipo de empresa.
 
-
-![Microsoft 365 Empresa Premium protege sus herramientas de productividad, sus herramientas de colaboración, el almacenamiento de archivos, el correo electrónico, los dispositivos y su identidad.](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
+:::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Empresa Premium protege las aplicaciones, el almacenamiento de archivos, el correo electrónico, los dispositivos y las identidades.":::
 
 Esta configuración incluye las siguientes instrucciones para la productividad, colaboración, almacenamiento de archivos, correo electrónico, dispositivos e identidad para proteger su negocio:
 

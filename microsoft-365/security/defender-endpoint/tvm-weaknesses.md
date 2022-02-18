@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12ee0e4464383bb634605ab6553485e1a946c003
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 23b0235382e748071f0d8e060e15624b5332326d
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936997"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62887311"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnerabilidades en mi organización: Administración de amenazas y vulnerabilidades
 
@@ -29,7 +29,7 @@ ms.locfileid: "61936997"
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -39,7 +39,7 @@ ms.locfileid: "61936997"
 
 Threat y administración de vulnerabilidades usa las mismas señales en Defender for Endpoint's endpoint protection para examinar y detectar vulnerabilidades.
 
-En la página Puntos débiles se enumeran las vulnerabilidades de software a las que se exponen los dispositivos al enumerar el identificador vulnerabilidades y **exposiciones** comunes (CVE). También puede ver la gravedad, la clasificación del Sistema de puntuación de vulnerabilidad común (CVSS), la prevalencia en su organización, la vulneración correspondiente, las perspectivas de amenazas y mucho más.
+En **la página Puntos débiles** se enumeran las vulnerabilidades de software a las que se exponen los dispositivos al enumerar el identificador vulnerabilidades y exposiciones comunes (CVE). También puede ver la gravedad, la clasificación del Sistema de puntuación de vulnerabilidad común (CVSS), la prevalencia en su organización, la vulneración correspondiente, las perspectivas de amenazas y mucho más.
 
 > [!NOTE]
 > Si no hay ningún identificador CVE oficial asignado a una vulnerabilidad, el nombre de vulnerabilidad se asigna mediante Administración de amenazas y vulnerabilidades.
@@ -51,12 +51,12 @@ En la página Puntos débiles se enumeran las vulnerabilidades de software a las
 
 Acceder a la página Puntos débiles de varias maneras diferentes:
 
-- Selección de **puntos débiles** en el menú de navegación **Administración** de vulnerabilidades en el [Microsoft 365 Defender portal] (portal-overview.md)
+- Selección de **puntos débiles** en el **menú de navegación Administración** de vulnerabilidades en [el portal de Microsoft 365 Defender vulnerabilidades](portal-overview.md)
 - Búsqueda global
 
 ### <a name="navigation-menu"></a>Menú de navegación
 
-Vaya al menú **de navegación Administración** de vulnerabilidades y seleccione Puntos **débiles** para abrir la lista de CVEs.
+Vaya al menú **de navegación Administración** de **vulnerabilidades y seleccione Puntos débiles** para abrir la lista de CVEs.
 
 ### <a name="vulnerabilities-in-global-search"></a>Vulnerabilidades en la búsqueda global
 
@@ -65,7 +65,7 @@ Vaya al menú **de navegación Administración** de vulnerabilidades y seleccion
 ![Cuadro de búsqueda global con la opción desplegable "vulnerabilidad" seleccionada y un cve de ejemplo.](images/tvm-vuln-globalsearch.png)
 3. Selecciona CVE para abrir un panel desplegable con más información, incluida la descripción de vulnerabilidad, los detalles, las perspectivas de amenazas y los dispositivos expuestos.
 
-Para ver el resto de las vulnerabilidades en la página Puntos **débiles,** escriba CVE y, a continuación, seleccione buscar.
+Para ver el resto de las vulnerabilidades en la página Puntos **débiles** , escriba CVE y, a continuación, seleccione buscar.
 
 ## <a name="weaknesses-overview"></a>Información general sobre debilidades
 
@@ -78,7 +78,7 @@ Corrija las vulnerabilidades de los dispositivos expuestos para reducir el riesg
 Vea cualquier información relacionada sobre infracciones y amenazas en la columna **Amenaza** cuando los iconos estén de color rojo.
 
  > [!NOTE]
- > Priorice siempre las recomendaciones asociadas con amenazas continuas. Estas recomendaciones se marcan con el icono de información de amenazas ![ Dibujo simple de un error rojo.](images/tvm_bug_icon.png) e icono de información de vulneración ![ Dibujo simple de una flecha que alcanza un destino. ](images/tvm_alert_icon.png) .
+ > Priorice siempre las recomendaciones asociadas con amenazas continuas. Estas recomendaciones se marcan con el icono de información de amenazas ![Dibujo simple de un error rojo.](images/tvm_bug_icon.png) e icono de información de vulneración ![Dibujo simple de una flecha que alcanza un destino](images/tvm_alert_icon.png).
 
 El icono de información de infracciones se resalta si hay una vulnerabilidad encontrada en su organización.
 ![Ejemplo de un texto de información de infracciones que podría aparecer al pasar el mouse sobre el icono. Este dice que "la posible alerta activa está asociada con esta recomendación.](images/tvm-breach-insights.png)
@@ -108,13 +108,13 @@ La información de dispositivo expuesta no estará disponible para las CVE con s
 
 ### <a name="top-vulnerable-software-in-the-dashboard"></a>Software vulnerable superior en el panel
 
-1. Ve al panel [de Administración de amenazas y vulnerabilidades y](tvm-dashboard-insights.md) desplázate hacia abajo hasta el widget de software **vulnerable** superior. Verás el número de vulnerabilidades encontradas en cada software, junto con la información sobre amenazas y una vista de alto nivel de la exposición del dispositivo con el tiempo.
+1. Ve al panel [de Administración de amenazas y vulnerabilidades y](tvm-dashboard-insights.md) desplázate hacia abajo hasta el **widget de software vulnerable** superior. Verás el número de vulnerabilidades encontradas en cada software, junto con la información sobre amenazas y una vista de alto nivel de la exposición del dispositivo con el tiempo.
 
     ![Tarjeta de software vulnerable superior con cuatro columnas: software, debilidades, amenazas, dispositivos expuestos.](images/tvm-top-vulnerable-software500.png)
 
 2. Seleccione el software que desea investigar para ir a una página de investigación.
 
-3. Seleccione la **pestaña Vulnerabilidades detectadas.**
+3. Seleccione la **pestaña Vulnerabilidades detectadas** .
 
 4. Seleccione la vulnerabilidad que desea investigar para obtener más información sobre los detalles de vulnerabilidad
 

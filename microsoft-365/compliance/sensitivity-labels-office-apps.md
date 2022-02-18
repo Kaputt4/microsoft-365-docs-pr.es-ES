@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d4e8484f10f70d00b7db7422306ec625925d059d
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: efd28dbe00960c2644c476f6cd689c79385eed9d
+ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62825462"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62879221"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -408,26 +408,26 @@ Para el etiquetado integrado, identifique las versiones mínimas de Outlook que 
 
 Cuando la aplicación de Outlook sea compatible con una configuración de etiqueta predeterminada diferente a la configuración de etiqueta predeterminada para documentos:
 
-- En el Asistente para directivas de etiqueta de la página **Aplicar una etiqueta predeterminada a los correos electrónicos**, puede especificar la elección de la etiqueta de confidencialidad que se aplicará a todos los correos electrónicos sin etiqueta o ninguna etiqueta predeterminada. Esta configuración es independiente de la configuración **Aplicar esta etiqueta de forma predeterminada a los documentos** en la página anterior **Configuración de directiva para documentos** del Asistente.
+- En la configuración de directivas de etiqueta del Centro de cumplimiento de Microsoft 365, en la página **Aplicar una etiqueta predeterminada a los correos electrónicos**: puede especificar la elección de la etiqueta de confidencialidad que se aplicará a todos los correos electrónicos sin etiquetar o ninguna etiqueta predeterminada. Esta configuración es independiente de la configuración **Aplicar esta etiqueta de forma predeterminada a los documentos** establecida en la página de la configuración anterior **Configuración de directivas para documentos**.
 
-Cuando la aplicación de Outlook no admita una configuración de etiqueta predeterminada diferente a la configuración de etiqueta predeterminada para los documentos, Outlook siempre usará el valor que especifique en **Aplicar esta etiqueta de forma predeterminada a los documentos** en la página **Configuración de directiva para documentos** del Asistente para directivas de etiqueta.
+Cuando la aplicación Outlook no admite una configuración de etiqueta predeterminada que sea diferente de la configuración de etiqueta predeterminada para los documentos: Outlook siempre usará el valor que especifique para **Aplicar esta etiqueta de forma predeterminada a los documentos** en la página de configuración de directivas de etiquetas **Configuración de directivas para documentos**.
 
 Cuando la aplicación de Outlook admita desactivar la etiqueta obligatoria:
 
-- En el Asistente para directivas de etiqueta de la página **Configuración de directiva**, seleccione **Requerir que los usuarios apliquen una etiqueta a su correo electrónico o documentos**. Después, seleccione **Siguiente** > **Siguiente** y desactive la casilla **Requerir que los usuarios apliquen una etiqueta a sus mensajes**. Seleccione la casilla si quiere que la etiqueta obligatoria se aplique a correos electrónicos, así como a documentos.
+- En la configuración de directivas de etiqueta del Centro de cumplimiento de Microsoft 365, en la página **Configuración de directiva**: seleccione **Requerir a los usuarios que apliquen una etiqueta a su correo electrónico o documentos**. Después, seleccione **Siguiente** > **Siguiente** y desactive la casilla **Requerir que los usuarios apliquen una etiqueta a sus mensajes**. Seleccione la casilla si quiere que la etiqueta obligatoria se aplique a correos electrónicos, así como a documentos.
 
 Cuando la aplicación de Outlook no admita desactivar la etiqueta obligatoria: si selecciona **Requerir que los usuarios apliquen una etiqueta a su correo electrónico o documentos** como configuración de directiva, Outlook siempre pedirá a los usuarios que seleccionen una etiqueta para los correos electrónicos que no la tengan.
 
 > [!NOTE]
 > Si ha configurado las opciones avanzadas de PowerShell **OutlookDefaultLabel** y **DisableMandatoryInOutlook** con los cmdlets [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) o [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy):
 > 
-> Los valores seleccionados para estas opciones de configuración de PowerShell se reflejan en el Asistente para directivas de etiqueta y funcionan automáticamente en las aplicaciones de Outlook compatibles con esta configuración. El resto de las opciones avanzadas de PowerShell siguen siendo compatibles solo con el cliente de etiquetado unificado de Azure Information Protection.
+> Los valores elegidos para esta configuración de PowerShell se reflejan en la configuración de directivas de etiqueta del centro de cumplimiento y funcionan automáticamente para las aplicaciones de Outlook que admiten esta configuración. El resto de las opciones avanzadas de PowerShell siguen siendo compatibles solo con el cliente de etiquetado unificado de Azure Information Protection.
 
 ## <a name="auditing-labeling-activities"></a>Actividades de etiquetado de auditoría
 
 Para obtener información sobre los eventos de auditoría generados por actividades de etiquetas de confidencialidad, vea la sección [Actividades de etiquetas de confidencialidad](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) en [Buscar en el registro de auditoría en el centro de cumplimiento](search-the-audit-log-in-security-and-compliance.md).
 
-Esta información de auditoría se representa visualmente en el [explorador de contenido](data-classification-content-explorer.md) y en el [explorador de actividades](data-classification-activity-explorer.md) para ayudarle a comprender cómo se usan las etiquetas de confidencialidad y dónde se encuentra el contenido etiquetado.
+Esta información de auditoría se representa visualmente en el [explorador de contenido](data-classification-content-explorer.md) y en el [explorador de actividades](data-classification-activity-explorer.md) para ayudarle a comprender cómo se usan las etiquetas de confidencialidad y dónde se encuentra el contenido etiquetado. También puede crear informes personalizados con su elección de administración de eventos e información de seguridad (SIEM) al [exportar y configurar los registros de auditoría](export-view-audit-log-records.md).
 
 ## <a name="end-user-documentation"></a>Documentación para el usuario final
 

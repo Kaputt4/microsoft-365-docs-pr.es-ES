@@ -8,6 +8,8 @@
   items:
     - name: Crear cuenta base de prueba
       href: createAccount.md
+    - name: Crear un paquete
+      href: buildpackage.md
     - name: Cargar un paquete
       href: uploadApplication.md
     - name: Upload archivos binarios & dependencias

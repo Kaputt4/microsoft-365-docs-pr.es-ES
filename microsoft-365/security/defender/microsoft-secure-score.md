@@ -23,18 +23,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 60d804594b3e4f1daad2ea4813a55205c24a3dac
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: d31fa35ddf84b63a115cf3128673794617fcc730
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172168"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886897"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-La Puntuación de seguridad de Microsoft es una medida de la actitud de seguridad de una organización, donde un número más alto indica que se han tomado más acciones de mejora. Se puede encontrar en https://security.microsoft.com/securescore el portal de Microsoft 365 Defender [.](microsoft-365-defender.md#the-microsoft-365-defender-portal)
+La Puntuación de seguridad de Microsoft es una medida de la actitud de seguridad de una organización, donde un número más alto indica que se han tomado más acciones de mejora. Se puede encontrar en el https://security.microsoft.com/securescore portal [Microsoft 365 Defender web](microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
 Seguir las recomendaciones de la puntuación de seguridad puede proteger a su organización de amenazas. Desde un panel centralizado en el portal de Microsoft 365 Defender, las organizaciones pueden supervisar y trabajar en la seguridad de sus Microsoft 365 identidades, aplicaciones y dispositivos.
 
@@ -43,6 +43,9 @@ La puntuación de seguridad ayuda a las organizaciones a:
 * Informar sobre el estado actual de la situación en materia de seguridad de la organización.
 * Mejorar la situación de seguridad proporcionando capacidad de descubrimiento, visibilidad, orientación y control.  
 * Comparar con puntos de referencia y establecer indicadores clave de rendimiento (KPI).
+
+Vea este vídeo para obtener una introducción rápida a la puntuación segura.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWUPrP]
 
 Las organizaciones obtienen acceso a visualizaciones sólidas de métricas y tendencias, integración con otros productos de Microsoft, comparación de puntuaciones con organizaciones similares y mucho más. La puntuación también puede reflejar cuándo las soluciones de terceros han abordado las acciones recomendadas.
 
@@ -90,7 +93,7 @@ Recomendaciones para otros productos de seguridad próximamente. Las recomendaci
 
 ### <a name="security-defaults"></a>Valores predeterminados de seguridad
 
-Microsoft Secure Score ha actualizado las acciones de mejora para admitir los valores predeterminados de seguridad en Azure Active Directory , lo que facilita la protección de la organización con opciones de seguridad preconfiguradas para [ataques](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)comunes.
+Microsoft Secure Score ha actualizado las acciones de mejora para admitir los valores predeterminados de seguridad en Azure Active Directory, lo que facilita la protección de la organización con opciones de seguridad preconfiguradas para [ataques](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) comunes.
 
 Si activas los valores predeterminados de seguridad, se te concederán puntos completos para las siguientes acciones de mejora:
 
@@ -131,7 +134,7 @@ Puntuación segura de Microsoft es un resumen numérico de la posición de segur
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos escuchar sus comentarios
 
-Si tiene algún problema, háganoslo saber publicando en la comunidad [seguridad, privacidad & cumplimiento.](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) Estamos supervisando la comunidad y proporcionaremos ayuda.
+Si tiene algún problema, háganoslo saber publicando en la comunidad seguridad [, privacidad & cumplimiento](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Estamos supervisando la comunidad y proporcionaremos ayuda.
 
 ## <a name="related-resources"></a>Recursos relacionados
 

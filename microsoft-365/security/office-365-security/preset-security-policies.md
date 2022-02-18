@@ -1,5 +1,5 @@
 ---
-title: Directivas de seguridad predefinidas
+title: Directivas de seguridad preestablecidas
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,12 +16,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en todas las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c101b63d0d6839ae0406c738268ed653292575f
-ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
+ms.openlocfilehash: ff81eea4232693662a907695ea0cef0d94941ac6
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62487460"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62887259"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad predefinidas en EOP y Microsoft Defender para Office 365
 
@@ -63,10 +63,7 @@ El perfil determina el nivel de protección. Los perfiles siguientes están disp
 
   Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
 
-- **Protección integrada (solo** Defender para Office 365): un perfil que habilita la protección de Caja fuerte vínculos y Caja fuerte datos adjuntos. Esta configuración proporciona de forma eficaz directivas predeterminadas para Caja fuerte vínculos y Caja fuerte datos adjuntos, que nunca tenían directivas predeterminadas.
-
-  > [!NOTE]
-  > La **directiva de seguridad preestablecida** de protección integrada se encuentra actualmente en Disponibilidad general, disponible para todas las organizaciones.
+- **Protección integrada (solo** Defender para Office 365): un perfil que habilita la protección de Caja fuerte vínculos y Caja fuerte datos adjuntos. Este perfil proporciona de forma eficaz directivas predeterminadas para Caja fuerte vínculos y Caja fuerte datos adjuntos, que nunca tenían directivas predeterminadas.
 
   Para **la protección integrada**, la directiva de seguridad preestablecida está predeterminada para todos los clientes de Defender Office 365 cliente. Aunque no se recomienda, también puede configurar excepciones basadas en **usuarios, grupos** y dominios para que la  protección no se aplique a usuarios específicos.
 
@@ -125,7 +122,7 @@ Por ejemplo, si existe una configuración de seguridad en protección estándar 
 
   Para obtener más información, consulte los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Nota**: Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos y permisos necesarios para _otras características_ de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  **Nota**: Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos y permisos necesarios para _otras características_ de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>Usar el portal Microsoft 365 Defender para asignar directivas de seguridad predeterminadas estándar y estrictas a los usuarios
 
