@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: La extensión de cumplimiento de Microsoft extiende la supervisión y el control de las actividades de archivo y acciones protectoras al explorador Google Chrome
-ms.openlocfilehash: e41343f14e799f354906361fe88f6a99dba12908
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 15c62369bb8b4fc02926fa0e2b0bfc4834c371ac
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950670"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909716"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension"></a>Obtenga información sobre el Centro de cumplimiento de Microsoft
 
@@ -38,7 +38,7 @@ La extensión de cumplimiento de Microsoft le permite auditar y administrar los 
 
 actividad |description  | acciones compatibles de directiva|
 |---------|---------|---------|
-|archivo copiado en la nube  | Detecta si un usuario intenta cargar un elemento confidencial en un dominio de servicio restringido con el explorador Chrome. |auditar, bloquear|
+|archivo copiado en la nube  | Detecta si un usuario intenta cargar un elemento confidencial en un dominio de servicio restringido con el explorador Chrome. |auditar, bloquear con invalidación, bloquear|
 |archivo impreso  |Detecta si un usuario trata de imprimir un elemento confidencial abierto en el explorador Chrome en una impresora local o de la red |auditar, bloquear con invalidación, bloquear|
 |archivo copiado en el portapapeles |Se detecta cuando un usuario intenta copiar información de un elemento confidencial que se está viendo en el explorador Chrome y, a continuación, lo pega en otra aplicación, proceso o elemento. |auditar, bloquear con invalidación, bloquear|
 |archivo copiado en un almacenamiento extraíble    | Detecta si un usuario intenta copiar un elemento o información confidencial de un elemento confidencial abierto en el explorador Chrome en un medio extraíble o dispositivo USB |auditar, bloquear con invalidación, bloquear|

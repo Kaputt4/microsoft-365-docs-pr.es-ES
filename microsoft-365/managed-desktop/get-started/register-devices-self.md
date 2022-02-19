@@ -4,21 +4,26 @@ description: Registrar dispositivos usted mismo para que puedan ser administrado
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
+ms.openlocfilehash: 8aba31c60d587667c4623d18b2a3d0e389681685
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909740"
 ---
-
 # <a name="register-new-devices-yourself"></a>Registre nuevos dispositivos usted mismo
 
 Microsoft Managed Desktop puede funcionar con dispositivos nuevos o puede reutilizar los dispositivos que ya tenga. Si reutiliza dispositivos, debe volver a crear una imagen de ellos. Puedes registrar dispositivos con Microsoft Managed Desktop en el portal Microsoft Endpoint Manager web.
 
 > [!NOTE]
-> ¿Trabaja con un partner para obtener dispositivos? Si es así, no tiene que preocuparse por obtener los hashes de hardware; se ocuparán de eso por usted. Asegúrese de que su partner establece una relación con usted en el [Centro de partners](https://partner.microsoft.com/dashboard). El partner puede obtener más información en la [ayuda del Centro de partners](/partner-center/request-a-relationship-with-a-customer). Una vez establecida esta relación, el partner simplemente registrará dispositivos en su nombre, sin que sea necesario realizar ninguna acción adicional. Si quieres ver los detalles o tu partner tiene preguntas, consulta Pasos para que [los partners registren dispositivos](register-devices-partner.md). Una vez registrados los dispositivos, puedes continuar con [la comprobación de la imagen](#check-the-image) y la [entrega de los dispositivos](#deliver-the-device) a los usuarios.
+> ¿Trabaja con un partner para obtener dispositivos? Si es así, no tiene que preocuparse por obtener los hashes de hardware; se ocuparán de eso por usted. Asegúrese de que su partner establece una relación con usted en el [Centro de partners](https://partner.microsoft.com/dashboard). El partner puede obtener más información en la [ayuda del Centro de partners](/partner-center/request-a-relationship-with-a-customer). <br><br>Una vez establecida esta relación, el partner simplemente registrará dispositivos en su nombre, sin que sea necesario realizar ninguna acción adicional. Si quieres ver los detalles o tu partner tiene preguntas, consulta Pasos para que [los partners registren dispositivos](register-devices-partner.md). Una vez registrados los dispositivos, puedes continuar con [la comprobación de la imagen](#check-the-image) y la [entrega de los dispositivos](#deliver-the-device) a los usuarios.
 
 ## <a name="prepare-to-register-brand-new-devices"></a>Prepararse para registrar dispositivos nuevos
 
@@ -101,7 +106,7 @@ Puedes supervisar el progreso del registro del dispositivo en la página princip
 | Registro pendiente | El registro aún no se ha completado. Vuelva más tarde. |
 | Error de registro | No se pudo completar el registro. Para obtener más información, consulte [Troubleshooting device registration](#troubleshooting-device-registration). |
 | Listo para el usuario | El registro se ha registrado correctamente. El dispositivo ya está listo para entregarse al usuario. El Escritorio administrado de Microsoft los guiará a través de la configuración por primera vez, por lo que no es necesario realizar ninguna preparación adicional. |
-| Activa | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Este estado también indica que usan regularmente el dispositivo. |
+| Activo | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Este estado también indica que usan regularmente el dispositivo. |
 | Inactivo | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Sin embargo, no han usado el dispositivo recientemente (en los últimos siete días).  |
 
 #### <a name="troubleshooting-device-registration"></a>Solución de problemas de registro de dispositivos

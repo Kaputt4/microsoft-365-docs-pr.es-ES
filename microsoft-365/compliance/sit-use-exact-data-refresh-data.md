@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: Actualice el archivo de tabla de origen de información confidencial.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 79442356066263485c70bf455af5a6a44a0355d4
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 14ef2997da92e0f902fd757a3cbff2735fdeada5
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903715"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909728"
 ---
 # <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Actualizar el archivo de tabla de origen de información confidencial de coincidencia de datos exactos 
 
-Puede actualizar la base de datos de información confidencial dos veces cada 24 horas. Tendrás que volver ahajar y cargar la tabla de origen de información confidencial.
+Puede actualizar la base de datos de información confidencial hasta 5 veces en cada período de 24 horas. Tendrás que volver ahajar y cargar la tabla de origen de información confidencial.
 
 1. Vuelva a exportar los datos confidenciales a una aplicación, como Microsoft Excel, y guarde el archivo en .csv, formato .tsv o canal (|) delimitado. Mantenga el mismo nombre de archivo y la misma ubicación que usó cuando ha hashado y cargado previamente el archivo. Vea Export [source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) para obtener información detallada sobre cómo exportar los datos confidenciales y obtenerlos en el formato correcto.
 

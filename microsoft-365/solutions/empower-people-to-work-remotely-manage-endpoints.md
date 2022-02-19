@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Use Microsoft Endpoint Manager para administrar sus dispositivos, equipos y otros puntos de conexión.
-ms.openlocfilehash: 3d4a46a3513078b904afbe2b4f09642f338c8a81
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 03d212071db686079a76115d7cb94d2abb4cde88
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939430"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886419"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Paso 4. Implementar la administración de puntos de conexión para sus dispositivos, PCs y otros puntos de conexión
 
@@ -30,7 +30,7 @@ Con los trabajadores remotos, es necesario admitir un número creciente de dispo
 
 [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) proporciona servicios y herramientas para administrar dispositivos móviles, equipos de escritorio, equipos virtuales, dispositivos incorporados y servidores mediante la combinación de los siguientes servicios, los cuales puede que ya conozca o esté usando.
 
-![Los componentes de Endpoint Management para Microsoft 365.](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+:::image type="content" source="../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png" alt-text="Los componentes de la administración de puntos de conexión para Microsoft 365" lightbox="../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png":::
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -38,9 +38,9 @@ Microsoft Intune es un servicio basado en la nube que se centra en la administra
 
 - **MDM:** Para los dispositivos que pertenecen a la organización, puede ejercer un control total que incluya la configuración, las características y la seguridad. Los dispositivos se "inscriben" en Intune, donde reciben las directivas de Intune con reglas y configuraciones. Por ejemplo, puede establecer requisitos para la contraseña y el PIN, crear una conexión VPN, configurar la protección contra amenazas y mucho más.
 
-- **MAM:** Es posible que los trabajadores remotos no quieran que usted tenga el control total de sus dispositivos personales, conocidos también como dispositivos Bring Your Own Device (BYOD). Puede dar opciones a sus trabajadores remotos y seguir protegiendo a su organización. Por ejemplo, los trabajadores remotos pueden inscribir sus dispositivos si quieren tener acceso completo a los recursos de su organización. O bien, si estos usuarios solo quieren tener acceso al correo electrónico o a Microsoft Teams, entonces use las directivas de protección de aplicaciones que requieren la autenticación multifactor (MFA) para usar estas aplicaciones.
+- **MAM:** es posible que los trabajadores remotos no quieran que usted tenga el control total de sus dispositivos personales, conocidos también como dispositivos Bring Your Own Device (BYOD). Puede dar opciones a sus trabajadores remotos y seguir protegiendo a su organización. Por ejemplo, los trabajadores remotos pueden inscribir sus dispositivos si quieren tener acceso completo a los recursos de su organización. O bien, si estos usuarios solo quieren tener acceso al correo electrónico o a Microsoft Teams, entonces use las directivas de protección de aplicaciones que requieren la autenticación multifactor (MFA) para usar estas aplicaciones.
 
-Para obtener más información, consulte la solución básica [Administrar puntos de conexión con Intune y Microsoft 365](manage-devices-with-intune-overview.md).
+Para obtener más información, consulte la solución de la fundación [Administrar dispositivos con Intune](manage-devices-with-intune-overview.md).
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
@@ -58,17 +58,9 @@ Para obtener más información, vea esta [introducción a la administración con
 
 ## <a name="endpoint-analytics"></a>Análisis de puntos de conexión
 
-Análisis de puntos de conexión es un servicio basado en la nube que se integra con Configuration Manager y proporciona información e inteligencia que permiten fundamentar la toma de decisiones con respecto a los clientes de Windows. Combina datos de la organización con datos agregados de millones de dispositivos conectados a los servicios en la nube de Microsoft. 
+Análisis de puntos de conexión pretende mejorar la productividad de los usuarios y disminuir los costos de soporte técnico de TI al proporcionar información sobre la experiencia del usuario. La información permite que TI optimice la experiencia del usuario final con un soporte técnico proactivo y detecte regresiones a la experiencia del usuario mediante la evaluación del impacto de los cambios de configuración en el usuario.
 
-Con Análisis de puntos de conexión, puede:
-
-- Crear un inventario de las aplicaciones que se ejecutan en la organización.
-- Evaluar la compatibilidad de aplicaciones con las últimas actualizaciones de características de Windows 10.
-- Identificar problemas de compatibilidad y recibir sugerencias de mitigación basadas en las perspectivas sobre los datos habilitadas en la nube.
-- Crear grupos piloto que representen toda la aplicación y el estado del controlador a través de un conjunto mínimo de dispositivos.
-- Implementar Windows 10 en los dispositivos de prueba piloto y en producción.
-
-Para más información, consulte esta [Información general sobre Análisis de puntos de conexión](/mem/configmgr/desktop-analytics/overview)
+Para más información, consulte esta [Información general sobre Análisis de puntos de conexión](/mem/analytics/overview)
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 

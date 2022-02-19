@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtener información sobre cómo crear un extractor en Microsoft SharePoint Syntex.
-ms.openlocfilehash: e6598704375aad88efcdbaef700ee0187c4f7e07
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 1d0aebf610897d07d051ba9e5f3e218dd582bbad
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60665083"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909672"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Crear un extractor en Microsoft SharePoint Syntex
 
@@ -42,8 +42,12 @@ Es necesario crear un extractor para cada entidad del documento que se desea ext
 
 2. En la pantalla del extractor de **Nueva entidad**, escriba el nombre de su extractor en el campo **Nombre del nuevo extractor**. Por ejemplo, llámelo **Fecha de inicio del servicio** si desea extraer la fecha de inicio del servicio de cada documento de renovación de contrato. También puede optar por reutilizar una columna creada previamente (por ejemplo, una columna de metadatos administrados).
 
+    De forma predeterminada, el tipo de columna es **Línea única de texto**. Si desea cambiar el tipo de columna, seleccione **Configuración** >  avanzadaColumn tipo **y, a** continuación, seleccione el tipo que desea usar.
+
+    ![Captura de pantalla de la parte Configuración avanzada del panel Extractor de nueva entidad que muestra la opción Tipo de columna.](../media/content-understanding/advanced-settings-column-type.png) 
+
     > [!NOTE]
-    > Para extractores con el tipo de columna **Línea única de texto,** el límite máximo de caracteres es 255. Cualquier carácter que escriba que exceda el límite se trunca.
+    > Para los extractores con el tipo de columna **Línea única de texto**, el límite máximo de caracteres es 255. Cualquier carácter que escriba que exceda el límite se trunca.
 
 3. Cuando termine, haga clic en **Crear**.
 

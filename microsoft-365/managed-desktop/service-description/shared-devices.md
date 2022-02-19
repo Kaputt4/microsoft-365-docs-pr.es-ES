@@ -9,31 +9,33 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 959c557501fe1232dd92f9c501f95b2f3faa37bc
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 3682087e47db062240b001e8631f73ae8cbc1cda
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765965"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909692"
 ---
 # <a name="shared-devices"></a>Dispositivos compartidos
 
-Microsoft Managed Desktop te permite registrar dispositivos en "modo de dispositivo compartido", similar al modo de dispositivo compartido ofrecido por [Microsoft Intune](/mem/intune/configuration/shared-user-device-settings). Los dispositivos de este modo están optimizados para situaciones en las que los usuarios no están vinculados a un solo escritorio y cambian con frecuencia dispositivos, normalmente trabajadores de primera línea, como los responsables de los servicios bancarios o el personal de enfermería. Puede aplicar cualquiera de los perfiles de Escritorio administrado de Microsoft a [dispositivos](profiles.md) en este modo. Los dispositivos registrados en este modo tienen algunas diferencias importantes:
+Microsoft Managed Desktop te permite registrar dispositivos en "modo de dispositivo compartido", similar al modo de dispositivo compartido ofrecido por [Microsoft Intune](/mem/intune/configuration/shared-user-device-settings).
+
+Los dispositivos de este modo están optimizados para situaciones en las que los usuarios no están vinculados a un solo escritorio y cambian con frecuencia los dispositivos. Por ejemplo, los trabajadores de primera línea, como los responsables de los bancos o el personal de enfermería. Puede aplicar cualquiera de los perfiles de Escritorio administrado de Microsoft a [dispositivos](profiles.md) en este modo. Los dispositivos registrados en este modo tienen algunas diferencias importantes:
 
 - [El almacenamiento de](#device-storage) dispositivos está optimizado para usuarios compartidos.
 - [Se eliminan las cuentas](#deletion-of-inactive-accounts) inactivas.
 - [Las cuentas de](#guest-accounts) invitado no son compatibles de forma predeterminada.
 - [Microsoft 365 aplicaciones para](#microsoft-365-apps-for-enterprise) licencias empresariales está optimizada para dispositivos compartidos.
 
-Dado que eliges usar el modo de dispositivo compartido en el punto de registro en Microsoft Managed Desktop, si quieres cambiarlo de este modo más adelante, tendrás que des registrarlo y volver a registrarlo.
+Dado que eliges usar el modo de dispositivo compartido en el punto de registro en el Escritorio administrado de Microsoft, si quieres cambiar de este modo más adelante, debes desinscribilo y volver a registrarlo.
 
 ## <a name="when-to-use-shared-device-mode"></a>Cuándo usar el modo de dispositivo compartido
 
 Cualquier situación en la que los usuarios cambian de dispositivos con frecuencia.
 
-Por ejemplo, los administradores de cuentas bancarias pueden estar en una ubicación administrando depósitos, pero se mueven a una oficina back office para ayudar a los clientes con una hipoteca. En cada una de esas ubicaciones, el dispositivo ejecuta diferentes aplicaciones y está optimizado para esas tareas, aunque son usadas por varias personas.
+Por ejemplo, los administradores de cuentas bancarias pueden estar en una ubicación administrando depósitos, pero se mueven a una oficina back office para ayudar a los clientes con una hipoteca. En cada una de estas ubicaciones, el dispositivo ejecuta diferentes aplicaciones y está optimizado para esas tareas, aunque son usadas por varias personas.
 
-El personal de enfermería suele moverse entre salas y oficinas a medida que interactúan con los pacientes, para que puedan iniciar sesión en una estación de trabajo en una oficina, pero conectarse a su escritorio remoto y tomar notas, solo para repetir esto en una sala diferente con un paciente diferente.
+El personal de enfermería suele moverse entre las salas y las oficinas a medida que interactúan con los pacientes. Pueden iniciar sesión en una estación de trabajo en una oficina, pero conectarse a su escritorio remoto y tomar notas, y repetir este proceso en una sala diferente con un paciente diferente.
 
 ## <a name="when-not-to-use-shared-device-mode"></a>Cuándo no usar el modo de dispositivo compartido
 
@@ -54,11 +56,11 @@ Si estás inscribiendo dispositivos tú mismo, sigue los pasos de [Registrar](..
 
 Si tiene dispositivos de inscripción de un partner, siga los pasos descritos en [Pasos](../get-started/register-devices-partner.md) para que los partners registren dispositivos, pero anexe **-Shared** a la etiqueta de grupo, como se muestra en la tabla siguiente:
 
-|Perfil de dispositivo  |Etiqueta de grupo (modo estándar)  |Etiqueta de grupo (modo de dispositivo compartido)  |
-|---------|---------|---------|
-|Fecha confidencial | Microsoft365Managed_SensitiveData        |  Microsoft365Managed_SensitiveData-Shared       |
-| Power user         | Microsoft365Managed_PowerUser        | No compatible        |
-|Estándar     | Microsoft365Managed_Standard        | Microsoft365Managed_Standard-Shared  |
+| Perfil de dispositivo | Etiqueta de grupo Autopilot (modo estándar) | Etiqueta de grupo (modo de dispositivo compartido) |
+| ----- | ----- | ----- |
+| Datos confidenciales | Microsoft365Managed_SensitiveData |  Microsoft365Managed_SensitiveData-Shared |
+| Power user | Microsoft365Managed_PowerUser | No se admite |
+| Estándar  | Microsoft365Managed_Standard | Microsoft365Managed_Standard-Shared |
 
 ## <a name="consequences-of-shared-device-mode"></a>Consecuencias del modo de dispositivo compartido
 
@@ -89,7 +91,7 @@ En el modo de dispositivo compartido, solo puedes tener un perfil [de dispositiv
 
 ### <a name="apps-and-policies-assigned-to-users"></a>Aplicaciones y directivas asignadas a los usuarios
 
-En dispositivos compartidos, debes asignar cualquier aplicación o directivas que te administras a los grupos *de dispositivos*, no a los grupos de usuarios. Esto garantiza que cada usuario tenga una experiencia más coherente. La excepción [es Portal de empresa](#deploying-apps-with-company-portal).
+En dispositivos compartidos, debes asignar cualquier aplicación o directivas que te estés administrando a los grupos *de dispositivos*, no a los grupos de usuarios. La asignación a grupos de dispositivos garantiza que cada usuario tenga una experiencia más coherente. La excepción [es Portal de empresa](#deploying-apps-with-company-portal).
 
 ## <a name="limitations-of-shared-device-mode"></a>Limitaciones del modo de dispositivo compartido
 
@@ -112,10 +114,12 @@ Cada Microsoft Intune dispositivo tiene un usuario principal, que se asigna cuan
 
 ### <a name="deploying-apps-with-company-portal"></a>Implementación de aplicaciones con Portal de empresa
 
-Es probable que algunas aplicaciones no necesiten estar presentes en todos los dispositivos, por lo que es posible que prefieras que los usuarios solo instalen esas aplicaciones cuando las [necesiten de Portal de empresa](/mem/intune/user-help/install-apps-cpapp-windows). Microsoft Managed Desktop deshabilita los Portal de empresa de forma predeterminada para dispositivos en modo de dispositivo compartido. Si desea habilitar Portal de empresa, puede presentar una solicitud de [cambio, pero](../working-with-managed-desktop/admin-support.md) debe tener en cuenta algunas limitaciones de esta característica en esta versión preliminar pública:
+Es probable que algunas aplicaciones no necesiten estar presentes en todos los dispositivos, por lo que es posible que prefieras que los usuarios solo instalen esas aplicaciones cuando las [necesiten de Portal de empresa](/mem/intune/user-help/install-apps-cpapp-windows).
+
+Microsoft Managed Desktop deshabilita los Portal de empresa de forma predeterminada para dispositivos en modo de dispositivo compartido. Si desea habilitar la Portal de empresa, puede presentar una [solicitud de cambio](../working-with-managed-desktop/admin-support.md). Sin embargo, debe tener en cuenta algunas limitaciones de esta característica en esta versión preliminar pública:
 
 - Para que una aplicación esté disponible para los usuarios de Portal de empresa, asigne [un](/mem/intune/apps/apps-deploy) grupo de usuarios a esa aplicación en Intune y, a continuación, agregue cada usuario a ese grupo de usuarios.
-- Los dispositivos no pueden tener [un usuario principal](#primary-user).
+- Los dispositivos no pueden tener un [usuario principal](#primary-user).
 - Para desinstalar una aplicación que un usuario instaló a través de Portal de empresa, debes desinstalar la aplicación de todos los usuarios de ese dispositivo.
 
 > [!CAUTION]
@@ -123,7 +127,7 @@ Es probable que algunas aplicaciones no necesiten estar presentes en todos los d
 
 ### <a name="redeployment-of-microsoft-365-apps-for-enterprise"></a>Reimplementación de Aplicaciones Microsoft 365 para empresas
 
-Durante la versión preliminar pública, si Aplicaciones Microsoft 365 debe volver a implementarse, los usuarios tendrán que ponerse en contacto con su personal de soporte técnico local para solicitar que un agente eleve y vuelva a instalar Aplicaciones Microsoft 365 para empresas en ese dispositivo.
+Durante la versión preliminar pública, si Aplicaciones Microsoft 365 debe volver a implementarse, los usuarios deben ponerse en contacto con su personal de soporte técnico local para solicitar que un agente eleve y vuelva a instalar Aplicaciones Microsoft 365 para empresas en ese dispositivo.
 
 ### <a name="microsoft-teams"></a>Microsoft Teams
 
