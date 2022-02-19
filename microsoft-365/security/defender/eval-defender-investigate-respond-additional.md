@@ -23,33 +23,33 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c9f1a4c051aaf9cb542e73a7cf077c7ed1038411
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 362e8360900f53d7bfc9eccf12d1107091860cb9
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171124"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903627"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pruebe Microsoft 365 Defender de respuesta a incidentes en un entorno piloto
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Este artículo es [el paso 2 de 2](eval-defender-investigate-respond.md) en el proceso de realizar una investigación y respuesta de un incidente en Microsoft 365 Defender un entorno piloto. Para obtener más información acerca de este proceso, vea el [artículo de introducción.](eval-defender-investigate-respond.md)
+Este artículo es [el paso 2 de 2](eval-defender-investigate-respond.md) en el proceso de realizar una investigación y respuesta de un incidente en Microsoft 365 Defender un entorno piloto. Para obtener más información acerca de este proceso, vea el [artículo de introducción](eval-defender-investigate-respond.md) .
 
-Una vez que haya realizado una respuesta [a incidentes para](eval-defender-investigate-respond-simulate-attack.md)un ataque simulado, estas son algunas Microsoft 365 Defender capacidades para explorar:
+Una vez que haya realizado una respuesta [a incidentes para un ataque simulado](eval-defender-investigate-respond-simulate-attack.md), estas son algunas Microsoft 365 Defender capacidades para explorar:
 
 |Funcionalidad |Descripción |
 |:-------|:-----|
-| [Priorizar incidentes](#prioritize-incidents) | Use el filtrado y ordenación de la cola de incidentes para determinar qué incidentes se deben solucionar a continuación. |
-| [Administrar incidentes](#manage-incidents) | Modifique las propiedades de incidentes para garantizar la asignación correcta, agregar etiquetas y comentarios y resolver un incidente. |
-| [Investigación y respuesta automatizadas](#examine-automated-investigation-and-response-with-the-action-center) | Capacidades de investigación y respuesta automatizadas (AIR) que pueden ayudar a su equipo de operaciones de seguridad a abordar las amenazas de forma más eficaz y eficaz. El Centro de acciones es una experiencia de "panel único de cristal" para las tareas de incidentes y alertas, como la aprobación de acciones de corrección pendientes. |
-| [Búsqueda avanzada de amenazas](#advanced-hunting) | Una herramienta de búsqueda de amenazas basada en consultas que le permite inspeccionar proactivamente los eventos de la red y localizar indicadores y entidades de amenazas. También se usa la búsqueda avanzada durante la investigación y la corrección de un incidente. |
+| [Priorización de incidentes](#prioritize-incidents) | Use el filtrado y ordenación de la cola de incidentes para determinar qué incidentes se deben solucionar a continuación. |
+| [Administración de incidentes](#manage-incidents) | Modifique las propiedades de incidentes para garantizar la asignación correcta, agregar etiquetas y comentarios y resolver un incidente. |
+| [Investigación y respuesta automatizadas](#examine-automated-investigation-and-response-with-the-action-center) | Use las capacidades de investigación y respuesta automatizadas (AIR) para ayudar a su equipo de operaciones de seguridad a abordar las amenazas de forma más eficaz y eficaz. El Centro de acciones es una experiencia de "panel único de cristal" para las tareas de incidentes y alertas, como la aprobación de acciones de corrección pendientes. |
+| [Búsqueda avanzada de amenazas](#use-advanced-hunting) | Use consultas para inspeccionar proactivamente los eventos de la red y localizar indicadores y entidades de amenazas. También se usa la búsqueda avanzada durante la investigación y la corrección de un incidente. |
 
 
 ## <a name="prioritize-incidents"></a>Priorizar incidentes
 
-You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Por ejemplo:
+Puede acceder a la cola de incidentes desde **Incidentes & alertas > incidentes en** el inicio rápido del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender incidentes</a>. Por ejemplo:
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Ejemplo de la cola de incidentes.":::
 
@@ -57,15 +57,15 @@ La **sección Incidentes y alertas** más recientes muestra un gráfico del núm
 
 Para examinar la lista de incidentes y priorizar su importancia para la asignación e investigación, puede: 
 
-- Configure columnas personalizables (seleccione **Elegir columnas**) para darle visibilidad a las distintas características del incidente o las entidades afectadas. Esto le ayuda a tomar una decisión fundamentada con respecto a la priorización de incidentes para su análisis.
+- Configure columnas personalizables (seleccione **Elegir** columnas) para darle visibilidad a las diferentes características del incidente o las entidades afectadas. Esto le ayuda a tomar una decisión fundamentada con respecto a la priorización de incidentes para su análisis.
 
 - Use el filtrado para centrarse en un escenario o amenaza específicos. La aplicación de filtros en la cola de incidentes puede ayudar a determinar qué incidentes requieren atención inmediata. 
 
-En la cola de incidentes predeterminada, seleccione **Filtros** para ver un panel **Filtros,** desde el que puede especificar un conjunto específico de incidentes. Aquí le mostramos un ejemplo.
+En la cola de incidentes predeterminada, seleccione **Filtros** para ver un panel **Filtros** , desde el que puede especificar un conjunto específico de incidentes. Por ejemplo:
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Ejemplo del panel de filtros de la cola de incidentes.":::
 
-Para obtener más información, vea [Priorizar incidentes](incident-queue.md).
+Para obtener más información, consulte [Priorizar incidentes](incident-queue.md).
 
 ## <a name="manage-incidents"></a>Administrar incidentes
 
@@ -88,9 +88,9 @@ Estas son las formas en que puede administrar sus incidentes:
 
   Agregue etiquetas que el equipo de seguridad usa para clasificar incidentes, que se pueden filtrar más adelante.
   
-- Asignar el incidente a usted mismo
+- Asignar el incidente
 
-  Asígnelo al nombre de la cuenta de usuario, que se puede filtrar más adelante.
+  Asígnelo a un nombre de cuenta de usuario, que se puede filtrar más adelante.
   
 - Resolver un incidente
 
@@ -104,11 +104,11 @@ Estas son las formas en que puede administrar sus incidentes:
 
   Use comentarios para el progreso, las notas u otra información basada en los procedimientos recomendados del equipo de seguridad. El historial de comentarios completo está disponible en la **opción Comentarios e** historial de la página de detalles de un incidente.
 
-Para obtener más información, vea [Manage incidents](manage-incidents.md).
+Para obtener más información, vea [Administrar incidentes](manage-incidents.md).
 
 ## <a name="examine-automated-investigation-and-response-with-the-action-center"></a>Examinar la investigación automatizada y la respuesta con el Centro de acción
 
-En función de cómo se configuren las capacidades automatizadas de investigación y respuesta para su organización, las acciones de corrección se toman automáticamente o solo tras la aprobación del equipo de operaciones de seguridad. Todas las acciones, ya sean pendientes o completadas, se enumeran en el Centro de [acciones,](m365d-action-center.md)que enumera las acciones de corrección pendientes y completadas para los dispositivos, el contenido de colaboración & correo electrónico y las identidades en una ubicación.
+En función de cómo se configuren las capacidades automatizadas de investigación y respuesta para su organización, las acciones de corrección se toman automáticamente o solo tras la aprobación del equipo de operaciones de seguridad. Todas las acciones, ya sean pendientes o completadas, se enumeran en el Centro de [acciones, que](m365d-action-center.md) enumera las acciones de corrección pendientes y completadas para los dispositivos, el contenido de colaboración & correo electrónico y las identidades en una ubicación.
 
 Por ejemplo:
 
@@ -120,9 +120,9 @@ En el Centro de acciones, puede seleccionar acciones pendientes y, a continuaci�
 
 Aprobar (o rechazar) acciones pendientes tan pronto como sea posible para que las investigaciones automatizadas puedan continuar y completarse de forma oportuna.
 
-Para obtener más información, vea [Automated investigation and response](m365d-autoir.md) y Action [Center](m365d-action-center.md).
+Para obtener más información, vea [Automated investigation and response](m365d-autoir.md) y [Action Center](m365d-action-center.md).
 
-## <a name="advanced-hunting"></a>Búsqueda avanzada de amenazas
+## <a name="use-advanced-hunting"></a>Usar la búsqueda avanzada
 
 > [!NOTE]
 > Antes de ayudarle a través de la simulación de búsqueda avanzada, vea el siguiente vídeo para comprender los conceptos avanzados de búsqueda, vea dónde puede encontrarlo en el portal y sepa cómo puede ayudarle en sus operaciones de seguridad.
@@ -134,14 +134,14 @@ Para obtener más información, vea [Automated investigation and response](m365d
 
 Si la simulación de ataque de [PowerShell](eval-defender-investigate-respond-simulate-attack.md#simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional) sin archivos opcional era un ataque real que ya había alcanzado la fase de acceso a credenciales, puede usar la búsqueda avanzada en cualquier momento de la investigación para buscar proactivamente en eventos y registros de la red con lo que ya sabe de las alertas generadas y las entidades afectadas. 
 
-Por ejemplo, en función de la información de la alerta de reconocimiento de direcciones IP y de usuario [(SMB),](eval-defender-investigate-respond-simulate-attack.md#alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity) puede usar la tabla para buscar todos los eventos de enumeración de sesiones SMB o encontrar más actividades de detección en otros protocolos de Microsoft Defender para datos de identidad mediante la `IdentityDirectoryEvents` `IdentityQueryEvents` tabla.
+Por ejemplo, en función de la información de la alerta de reconocimiento de direcciones IP y de usuario [(SMB](eval-defender-investigate-respond-simulate-attack.md#alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity) ), `IdentityDirectoryEvents` puede usar la tabla para buscar todos los eventos de enumeración de sesiones SMB o encontrar más actividades de detección en otros protocolos de Microsoft Defender `IdentityQueryEvents` para datos de identidad mediante la tabla.
 
 
 ### <a name="hunting-environment-requirements"></a>Requisitos del entorno de búsqueda
 
 Hay un único buzón interno y un dispositivo necesarios para esta simulación. También necesitará una cuenta de correo electrónico externa para enviar el mensaje de prueba.
 
-1. Compruebe que el espacio empresarial [ha habilitado Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
+1. Compruebe que el inquilino ha [habilitado Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
 2. Identificar un buzón de destino que se usará para recibir correo electrónico.
 
    - Microsoft Defender debe supervisar este buzón Office 365
@@ -160,21 +160,21 @@ Hay un único buzón interno y un dispositivo necesarios para esta simulación. 
 
 ### <a name="run-the-simulation"></a>Ejecutar la simulación
 
-1. Desde una cuenta de correo electrónico externa, envíe un correo electrónico al buzón identificado en el paso 2 de la sección de requisitos del entorno de búsqueda. Incluya datos adjuntos que se permitirán a través de las directivas de filtro de correo electrónico existentes. Este archivo no necesita ser malintencionado ni ejecutable. Los tipos de archivo <i>sugeridos.pdf</i>, <i>.exe</i> (si está permitido) o un tipo de documento Office como un archivo de Word.
+1. Desde una cuenta de correo electrónico externa, envíe un correo electrónico al buzón identificado en el paso 2 de la sección de requisitos del entorno de búsqueda. Incluya datos adjuntos que se permitirán a través de las directivas de filtro de correo electrónico existentes. Este archivo no necesita ser malintencionado ni ejecutable. Los tipos de archivo <i> sugeridos.pdf</i>, <i>.exe</i> (si está permitido) o un tipo de documento Office como un archivo de Word.
 
 2. Abra el correo electrónico enviado desde el dispositivo configurado como se define en el paso 3 de la sección de requisitos del entorno de búsqueda. Abra los datos adjuntos o guarde el archivo en el dispositivo.
 
 #### <a name="go-hunting"></a>Ir a buscar
 
-1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>.
+1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender web</a>.
 
-2. En el panel de navegación, seleccione **Buscar > Búsqueda avanzada.**
+2. En el panel de navegación, seleccione **Buscar > Búsqueda avanzada**.
 
 3. Cree una consulta que comience recopilando eventos de correo electrónico.
 
    1. Seleccione **Consulta > Nuevo**.
 
-   1. En los **grupos de** correo electrónico en **Búsqueda avanzada,** haga doble clic en **EmailEvents**. Debería verlo en la ventana de consulta.
+   1. En los **grupos de** correo electrónico en **Búsqueda avanzada**, haga doble clic en **EmailEvents**. Debería verlo en la ventana de consulta.
 
       ```console
       EmailEvents
@@ -192,7 +192,7 @@ Hay un único buzón interno y un dispositivo necesarios para esta simulación. 
         > [!NOTE]
         > La búsqueda avanzada muestra los resultados de la consulta como datos tabulares. También puede optar por ver los datos en otros tipos de formato, como gráficos.
 
-   1. Vea los resultados y vea si puede identificar el correo electrónico que abrió. El mensaje puede tardar hasta dos horas en aparecer en la búsqueda avanzada. Para restringir los resultados, puede agregar la condición **where** a la consulta para buscar solo correos electrónicos que tengan "yahoo.com" como senderMailFromDomain. Aquí le mostramos un ejemplo.
+   1. Vea los resultados y vea si puede identificar el correo electrónico que abrió. El mensaje puede tardar hasta dos horas en aparecer en la búsqueda avanzada. Para restringir los resultados, puede agregar la condición **where** a la consulta para buscar solo correos electrónicos que tengan "yahoo.com" como senderMailFromDomain. Por ejemplo:
 
       ```console
       EmailEvents
@@ -203,7 +203,7 @@ Hay un único buzón interno y un dispositivo necesarios para esta simulación. 
 
       ![Ejemplo del panel lateral inspeccionar registro que se abre cuando se selecciona un resultado de búsqueda avanzado.](../../media/advanced-hunting-incident-response-try-2.png)
 
-4. Ahora que ha comprobado que puede ver el correo electrónico, agregue un filtro para los datos adjuntos. Céntrate en todos los correos electrónicos con datos adjuntos en el entorno. Para esta simulación, céntrate en los correos electrónicos entrantes, no en los que se envían desde el entorno. Quite los filtros que haya agregado para buscar el mensaje y agregar "| donde **AttachmentCount > 0** y **EmailDirection**  ==  **"Inbound""**
+4. Ahora que ha comprobado que puede ver el correo electrónico, agregue un filtro para los datos adjuntos. Céntrate en todos los correos electrónicos con datos adjuntos en el entorno. Para esta simulación, céntrate en los correos electrónicos entrantes, no en los que se envían desde el entorno. Quite los filtros que haya agregado para buscar el mensaje y agregar "| donde **AttachmentCount > 0** y **EmailDirection** == **"Inbound""**
 
    La siguiente consulta le mostrará el resultado con una lista más corta que la consulta inicial para todos los eventos de correo electrónico:
 
@@ -212,7 +212,7 @@ Hay un único buzón interno y un dispositivo necesarios para esta simulación. 
    | where AttachmentCount > 0 and EmailDirection == "Inbound"
    ```
 
-5. A continuación, incluya la información sobre los datos adjuntos (como: nombre de archivo, hashes) en el conjunto de resultados. Para ello, únase a la **tabla EmailAttachmentInfo.** Los campos comunes que se usan para unirse, en este caso son **NetworkMessageId** y **RecipientObjectId**.
+5. A continuación, incluya la información sobre los datos adjuntos (como: nombre de archivo, hashes) en el conjunto de resultados. Para ello, únase a la **tabla EmailAttachmentInfo** . Los campos comunes que se usan para unirse, en este caso son **NetworkMessageId** y **RecipientObjectId**.
 
    La siguiente consulta también incluye una línea adicional "| **project-rename EmailTimestamp=Timestamp**" que le ayudará a identificar qué marca de tiempo estaba relacionada con el correo electrónico y las marcas de tiempo relacionadas con las acciones de archivo que agregará en el paso siguiente.
 
@@ -238,7 +238,7 @@ Hay un único buzón interno y un dispositivo necesarios para esta simulación. 
 
    Ahora ha creado una consulta que identificará todos los correos electrónicos entrantes en los que el usuario abrió o guardó los datos adjuntos. También puede refinar esta consulta para filtrar para dominios de remitente específicos, tamaños de archivo, tipos de archivo, entre otros.
 
-7. Las funciones son un tipo especial de unión, lo que te permite extraer más datos de TI sobre un archivo como su prevalencia, la información del firmante y el emisor, etc. Para obtener más detalles sobre el archivo, use el enriquecimiento de la función **FileProfile():**
+7. Las funciones son un tipo especial de unión, lo que te permite extraer más datos de TI sobre un archivo como su prevalencia, la información del firmante y el emisor, etc. Para obtener más detalles sobre el archivo, use el **enriquecimiento de la función FileProfile(** ):
 
     ```console
     EmailEvents
@@ -253,11 +253,11 @@ Hay un único buzón interno y un dispositivo necesarios para esta simulación. 
 
 #### <a name="create-a-detection"></a>Crear una detección
 
-Una vez que haya creado una consulta que  identifique la información que le gustaría recibir alerta sobre si se producirían en el futuro, puede crear una detección personalizada a partir de la consulta.
+Una vez que haya creado una consulta que identifique la información que le gustaría recibir alerta  sobre si se producirían en el futuro, puede crear una detección personalizada a partir de la consulta.
 
 Las detecciones personalizadas ejecutarán la consulta según la frecuencia que establezca y los resultados de las consultas crearán alertas de seguridad, en función de los activos afectados que elija. Estas alertas se correlacionarán con incidentes y se pueden triager como cualquier otra alerta de seguridad generada por uno de los productos.
 
-1. En la página de consulta, quite las líneas 7 y 8 que se agregaron en el paso 7 de las instrucciones Ir a buscar y haga clic en **Crear regla de detección.**
+1. En la página de consulta, quite las líneas 7 y 8 que se agregaron en el paso 7 de las instrucciones Ir a buscar y haga clic en **Crear regla de detección**.
 
    ![Ejemplo de dónde puede hacer clic en Crear regla de detección en la página de búsqueda avanzada.](../../media/advanced-hunting-incident-response-try-3.png)
 
@@ -294,24 +294,6 @@ Las detecciones personalizadas ejecutarán la consulta según la frecuencia que 
 
    ![Ejemplo de la página de datos adjuntos de correo electrónico donde puede ver el estado de la ejecución de la regla, alertas y acciones desencadenadas, editar la detección, y así sucesivamente.](../../media/mtp/fig28.png)
 
-<!--
-
-### Advanced hunting walk-through exercises
-
-To learn more about advanced hunting, the following webcasts will walk you through the capabilities of advanced hunting within Microsoft 365 Defender to create cross-pillar queries, pivot to entities, and create custom detections and remediation actions.
-
-> [!NOTE]
-> Be prepared with your own GitHub account to run the hunting queries in your pilot test lab environment.
-
-|Title|Description|Download MP4|Watch on YouTube|CSL file to use|
-|---|---|---|---|---|
-|Episode 1: KQL fundamentals|We'll cover the basics of advanced hunting capabilities in Microsoft 365 Defender. Learn about available advanced hunting data and basic KQL syntax and operators.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[Episode 1: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
-|Episode 2: Joins|We'll continue learning about data in advanced hunting and how to join tables together. Learn about inner, outer, unique, and semi joins, and the nuances of the default Kusto innerunique join.|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[Episode 2: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|
-|Episode 3: Summarizing, pivoting, and visualizing data|Now that we're able to filter, manipulate, and join data, it's time to start summarizing, quantifying, pivoting, and visualizing. In this episode, we'll cover the summarize operator and some of the calculations you can perform while diving into additional tables in the advanced hunting schema. We turn our datasets into charts that can help improve analysis.|[MP4](https://aka.ms/MTP29JUL20_MP4)|[YouTube](https://youtu.be/UKnk9U1NH6Y)|[Episode 3: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl)|
-|Episode 4: Let's hunt! Applying KQL to incident tracking|Time to track some attacker activity! In this episode, we'll use our improved understanding of KQL and advanced hunting in Microsoft 365 Defender to track an attack. Learn some of the tips and tricks used in the field to track attacker activity, including the ABCs of cybersecurity and how to apply them to incident response.|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[Episode 4: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
-|
-
---> 
 
 ### <a name="expert-training-on-advanced-hunting"></a>Formación de expertos sobre la búsqueda avanzada
 

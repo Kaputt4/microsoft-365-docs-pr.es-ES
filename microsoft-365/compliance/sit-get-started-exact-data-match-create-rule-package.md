@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: Crear un paquete de reglas o tipo de información confidencial de coincidencia exacta de datos
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b28669a2791685d172889bf6486b89b9d971e36
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: eb15f54a8a944e1c764a2540f36926dd433fb2d3
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271927"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62900751"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>Crear un paquete de reglas o tipo de información confidencial de coincidencia exacta de datos
 
-Puede crear el tipo de información confidencial (SIT) de coincidencia exacta de datos (EDM) con el esquema [EDM](#use-the-edm-schema-and-sit-wizard) y el asistente SIT en el Centro de cumplimiento o crear manualmente el archivo XML del paquete de [reglas.](#create-a-rule-package-manually) También puede combinar ambos mediante un método para crear el esquema y editarlo posteriormente con el otro método.
+Puede crear un tipo de información confidencial (SIT) de coincidencia exacta de datos (EDM) con el esquema [EDM](#use-the-edm-schema-and-sit-wizard) y el asistente SIT en el Centro de cumplimiento o crear manualmente el archivo XML del paquete de [reglas.](#create-a-rule-package-manually) También puede combinar ambos mediante un método para crear el esquema y editarlo posteriormente con el otro método.
 
 Si no está familiarizado con sits basado en EDM o su implementación, debe familiarizarse con:
 
@@ -54,7 +54,7 @@ Realice los pasos descritos en estos artículos:
   - Si seleccionó la opción Delimitadores ignorados para la columna de elemento principal del esquema, asegúrese de que el SIT personalizado que cree coincida con los datos con y sin los delimitadores seleccionados.
   - Si usa un SIT integrado, asegúrese de que detectará exactamente las cadenas que desea seleccionar y no incluirá caracteres circundantes ni excluirá ninguna parte válida de la cadena tal como se almacena en la tabla de información confidencial.
 
-Consulte [Definiciones de entidad de tipo de información confidencial](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) [y Introducción a tipos de información confidencial personalizados](create-a-custom-sensitive-information-type.md#get-started-with-custom-sensitive-information-types).
+Vea [Definiciones de entidad de tipo de información confidencial](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) y [Crear tipos de información confidencial personalizados en el Centro de cumplimiento](create-a-custom-sensitive-information-type.md).
 
 ### <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Usar el Esquema de coincidencia exacta de datos y el asistente para información de tipo confidencial
 

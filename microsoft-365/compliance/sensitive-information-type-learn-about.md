@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: En este artículo se proporciona información general sobre los tipos de información confidencial y cómo detectan información confidencial como números de cuenta bancaria, tarjeta de crédito o seguridad social para identificar elementos confidenciales
-ms.openlocfilehash: 920934e8961110aae3333a30979878483cac51b3
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: 6bc15ae90d591e2f2c4e432dce025201c9f13c18
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265498"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903792"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
@@ -31,7 +31,9 @@ Identificar y clasificar elementos confidenciales que están bajo el control de 
 - reconocimiento automatizado de patrones, como tipos de información confidencial
 - [aprendizaje automático](classifier-learn-about.md)
 
-Los tipos de información confidencial son clasificadores basados en patrones. Detectan información confidencial como seguridad social, tarjeta de crédito o números de cuenta bancaria para identificar elementos confidenciales, consulte Definiciones de entidades de tipos [de información confidencial](sensitive-information-type-entity-definitions.md)
+Los tipos de información confidencial (SIT) son clasificadores basados en patrones. Detectan información confidencial como seguridad social, tarjeta de crédito o números de cuenta bancaria para identificar elementos confidenciales, consulte [Definiciones](sensitive-information-type-entity-definitions.md) de entidades de tipos de información confidencial para obtener una lista completa de todos los SIT.
+
+Microsoft proporciona un gran número de SIT preconfigurados o puede crear los suyos propios.
 
 ## <a name="sensitive-information-types-are-used-in"></a>Los tipos de información confidencial se usan en
 
@@ -43,6 +45,32 @@ Los tipos de información confidencial son clasificadores basados en patrones. D
 - [Administración de riesgos interna](insider-risk-management-solution-overview.md)
 - [Directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Priva](/privacy/priva)
+
+## <a name="categories-of-sensitive-information-types"></a>Categorías de tipos de información confidencial
+
+### <a name="built-in-sensitive-information-types"></a>Integrados en tipos de información confidencial
+
+Microsoft crea estos SIT en la consola de cumplimiento de forma predeterminada. Estos SIT no se pueden editar, pero se pueden usar como plantillas y copiarse para crear tipos de información confidencial personalizados.
+
+### <a name="named-entity-sensitive-information-types"></a>Tipos de información confidencial de entidad con nombre
+
+Los SIT de entidad con nombre también se muestran en la consola de cumplimiento de forma predeterminada. Detectan nombres de personas, direcciones físicas y términos y condiciones médicas. No se pueden editar ni copiar. Vea, [Obtenga información sobre las entidades con nombre (versión preliminar)](named-entities-learn.md#learn-about-named-entities-preview) para obtener más información. Los SIT de entidad con nombre se incluyen en dos tipos:
+
+**un-bundled**
+
+Estos SIT de entidad con nombre tienen un enfoque más estrecho, como un solo país o una sola clase de términos. Úselos cuando necesite una directiva DLP con un ámbito de detección más estrecho. Vea ejemplos [de SIT de entidad con nombre](named-entities-learn.md#examples-of-named-entity-sits).
+
+**bundled**
+
+Los SIT de entidad con nombre agrupados detectan todas las coincidencias posibles en una clase, como Todas las direcciones físicas. Úsenlos como criterios generales en las directivas DLP para detectar elementos confidenciales. Vea ejemplos [de SIT de entidad con nombre](named-entities-learn.md#examples-of-named-entity-sits).
+
+### <a name="custom-sensitive-information-types"></a>Tipos de información confidencial personalizada
+
+Si los tipos de información confidencial preconfigurados no satisfacen sus necesidades, puede crear sus propios tipos de información confidencial personalizados que defina completamente o puede copiar uno de los integrados y modificarlo. Consulte Crear [un tipo de información confidencial personalizada en el Centro de cumplimiento](create-a-custom-sensitive-information-type.md) para obtener más información.
+
+### <a name="exact-data-match-sensitive-information-types"></a>Datos exactos coinciden con tipos de información confidencial
+
+Todos los SIT basados en EDM se crean desde cero. Se usan para detectar elementos que tienen valores exactos que se definen en una base de datos de información confidencial. Vea, [Obtenga información sobre los tipos exactos de información confidencial basada en coincidencias de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) para obtener más información.
 
 ## <a name="fundamental-parts-of-a-sensitive-information-type"></a>Partes fundamentales de un tipo de información confidencial
 
@@ -62,6 +90,8 @@ Obtenga más información sobre los niveles de confianza en este vídeo
 
 
  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]  
+
+
 
 ### <a name="example-sensitive-information-type"></a>Tipo de información confidencial de ejemplo
 
@@ -106,7 +136,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Número de identidad nacional de Argentina 
-- Identidad 
+- Identity 
 - Identificación tarjeta de identidad nacional 
 - DNI 
 - Registro nacional de personas de NIC 

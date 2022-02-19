@@ -22,26 +22,26 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c533684213bcae9ab21ad644f6a71e5e10db057c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 32d8927172e7479f125c0e3b1ae44441cbc3de13
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871165"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903888"
 ---
 # <a name="train-your-security-staff-for-microsoft-365-defender"></a>Entrena al personal de seguridad para Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Con la urgencia de proteger su organización y sus datos de atacantes, debe incorporar rápidamente su personal de seguridad para Microsoft 365 Defender. Microsoft proporciona varios tipos de recursos de aprendizaje y autoejecución para Microsoft 365 Defender servicios asociados.
 
 
 ## <a name="microsoft-365-defender-ninja-training"></a>Microsoft 365 Defender entrenamiento de Ninja
 
-[Microsoft 365 Defender El](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376) aprendizaje de Ninja es un conjunto de secciones y módulos organizados que le ayudarán a pasar por las características y funciones de Microsoft 365 Defender, todo lo que pasa a través de las cargas de trabajo, pero no las cargas de trabajo individuales en sí. 
+[Microsoft 365 Defender formación de Ninja](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376) es un conjunto de secciones y módulos organizados para pasar por las características y funciones de Microsoft 365 Defender. El aprendizaje se realiza a través de los orígenes&mdash; de señales de amenaza, como Microsoft Defender para Endpoint&mdash; y otros, pero no cubre los propios orígenes individuales. 
 
 El contenido está estructurado en tres niveles de conocimiento diferentes, con varios módulos: Fundamentales, Intermedios y Expertos. Cada nivel incluye una comprobación de conocimientos para probar la comprensión del material.
 
@@ -58,15 +58,12 @@ Use estas rutas de aprendizaje de Microsoft Learn y sus módulos para crear una 
 
 El [Microsoft 365 Defender de aprendizaje del portal incluye](https://security.microsoft.com/learning) estas rutas de aprendizaje:
 
- - Introducción al centro de Microsoft 365 seguridad
-
- - Cómo investigar con Microsoft 365 Defender
-
- - Microsoft 365 Defender basic training
-
- - Aprendizaje básico de Microsoft Defender para endpoint
-
- - Microsoft Defender para Office 365 procedimientos recomendados
+- Introducción al centro de Microsoft 365 seguridad
+- Cómo investigar con Microsoft 365 Defender
+- Microsoft 365 Defender basic training
+- Aprendizaje básico de Microsoft Defender para endpoint
+- Microsoft Defender para Office 365 procedimientos recomendados
+- Instalación
 
 ## <a name="hands-on-with-a-trial-environment"></a>Práctica con un entorno de prueba
 
@@ -74,5 +71,5 @@ Una de las mejores maneras de aprender es configurando y probando Microsoft 365 
 
 ## <a name="simulating-an-attack"></a>Simulación de un ataque
 
-Para probar al personal de seguridad sobre su capacidad para detectar y responder a un ciberataque, usa un ataque simulado. Consulta [Simular ataques con el portal Microsoft 365 Defender para](eval-defender-investigate-respond-simulate-attack.md#simulate-attacks-with-the-microsoft-365-defender-portal) obtener más información. 
+Para probar al personal de seguridad sobre su capacidad para detectar y responder a un ciberataque, usa un ataque simulado. Consulta [Simular ataques con el portal de Microsoft 365 Defender para](eval-defender-investigate-respond-simulate-attack.md#simulate-attacks-with-the-microsoft-365-defender-portal) obtener más información. 
 

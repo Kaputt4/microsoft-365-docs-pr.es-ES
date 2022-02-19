@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: f7c2d35cbc8343779f9ccfb2cc369da9b4d7db4a
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: b0a89bc8a79f3ea2c5c0b3c1f01039944565a75c
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401503"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62900763"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>Ilustraciones de la nube de Microsoft para arquitectos de TI
 
@@ -33,7 +33,7 @@ Obtenga información sobre los ciberataques más comunes y cómo Microsoft puede
 
 | Item | Descripción |
 |:-----|:-----|
-|[![Ilustración del póster Ataques comunes. ](../media/solutions-architecture-center/common-attacks-model-thumb.png) ](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> Actualizado en septiembre de 2021 | Este póster ilustra la ruta de acceso de los ataques comunes y en él se describen las funcionalidades que ayudan a detener a los intrusos en cada fase de un ataque. <br/><br/>**Guías de soluciones relacionadas** <br/> <ul><li>[Evaluar Microsoft 365 Defender y realizar una prueba piloto](../security/defender/eval-overview.md)</li><li>[Configuraciones recomendadas de acceso a dispositivos y identidades](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[Implementar la protección de la información para las normativas de privacidad de datos con Microsoft 365](information-protection-deploy.md)</li><li>[Implementar la protección contra ransomware para el inquilino de Microsoft 365](ransomware-protection-microsoft-365.md)</li><li>[Soluciones de riesgos internos en Microsoft 365](../compliance/insider-risk-solution-overview.md)</li></ul>
+|[![Ilustración del póster Ataques comunes.](../media/solutions-architecture-center/common-attacks-model-thumb.png) ](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> Actualizado en septiembre de 2021 | Este póster ilustra la ruta de acceso de los ataques comunes y en él se describen las funcionalidades que ayudan a detener a los intrusos en cada fase de un ataque. <br/><br/>**Guías de soluciones relacionadas** <br/> <ul><li>[Evaluar Microsoft 365 Defender y realizar una prueba piloto](../security/defender/eval-overview.md)</li><li>[Configuraciones recomendadas de acceso a dispositivos y identidades](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[Implementar la protección de la información para las normativas de privacidad de datos con Microsoft 365](information-protection-deploy.md)</li><li>[Implementar la protección contra ransomware para el inquilino de Microsoft 365](ransomware-protection-microsoft-365.md)</li><li>[Soluciones de riesgos internos en Microsoft 365](../compliance/insider-risk-solution-overview.md)</li></ul>
 
 <a name="identity"></a>
 ### <a name="microsoft-cloud-identity-for-it-architects"></a>Identidad de nube de Microsoft para arquitectos de TI
@@ -51,7 +51,7 @@ Lo que los arquitectos de TI necesitan saber sobre la seguridad en las plataform
   
 | Elemento | Descripción |
 |:-----|:-----|
-|[![Miniatura del modelo de seguridad en la nube de Microsoft para arquitectos empresariales.](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> Actualizado en diciembre de 2021 | Este modelo contiene lo siguiente: <ul><li>Responsabilidades de seguridad de Microsoft y clientes</li><li>Acceso de dispositivos e identidades</li><li>Protección contra amenazas</li><li>Protección de la información </li><li>Protección de aplicaciones en la nube </li></ul><br/>|
+|[![Miniatura del modelo de seguridad en la nube de Microsoft para arquitectos empresariales.](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> Actualizado en febrero de 2022 | Este modelo contiene lo siguiente: <ul><li>Responsabilidades de seguridad de Microsoft y clientes</li><li>Acceso de dispositivos e identidades</li><li>Protección contra amenazas</li><li>Protección de la información </li><li>Protección de aplicaciones en la nube </li></ul><br/>|
    
 <a name="networking"></a>
 ### <a name="microsoft-cloud-networking-for-it-architects"></a>Redes en la nube de Microsoft para arquitectos de TI
@@ -60,7 +60,7 @@ Lo que los arquitectos de TI necesitan saber sobre las redes para las plataforma
   
 | Elemento | Descripción |
 |:-----|:-----|
-|[![Imagen digital del modelo de redes en la nube de Microsoft.](../media/solutions-architecture-center/msft-cloud-networking-model-thumb.png)](../downloads/MSFT_cloud_architecture_networking.pdf) <br/>  [Ver como un PDF](../downloads/MSFT_cloud_architecture_networking.pdf) \| [Descargar como pdf](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf) \| [Descargar como un Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.vsdx)   <br/>Actualizado en agosto de 2020 | Este modelo contiene lo siguiente: <ul><li> Adaptación de la red para la conectividad en la nube </li><li> Elementos comunes de la conectividad en la nube de Microsoft </li><li> ExpressRoute para la conectividad en la nube de Microsoft </li><li> Diseño de redes para SaaS de Microsoft, PaaS de Azure y IaaS de Azure </li></ul><br/>  <br/>|
+|[![Imagen digital del modelo de redes en la nube de Microsoft.](../media/solutions-architecture-center/msft-cloud-networking-model-thumb.png)](../downloads/MSFT_cloud_architecture_networking.pdf) <br/>  [Ver como un PDF](../downloads/MSFT_cloud_architecture_networking.pdf) \| [Descargar como pdf](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf)\| [Descargar como un Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.vsdx)   <br/>Actualizado en agosto de 2020 | Este modelo contiene lo siguiente: <ul><li> Adaptación de la red para la conectividad en la nube </li><li> Elementos comunes de la conectividad en la nube de Microsoft </li><li> ExpressRoute para la conectividad en la nube de Microsoft </li><li> Diseño de redes para SaaS de Microsoft, PaaS de Azure y IaaS de Azure </li></ul><br/>  <br/>|
 
 <a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-it-architects"></a>Nube híbrida de Microsoft para arquitectos de TI
@@ -69,7 +69,7 @@ Lo que los arquitectos de TI necesitan saber sobre la nube híbrida para las pla
   
 | Item | Descripción |
 |:-----|:-----|
-|[![Imagen digital del modelo de nube híbrida de Microsoft.](../media/solutions-architecture-center/msft-hybrid-cloud-model-thumb.png)](../downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [Ver como un PDF](../downloads/MSFT_cloud_architecture_hybrid.pdf) \| [Descargar como pdf](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf) \| [Descargar como un Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.vsdx)     <br>Actualizado en agosto de 2020 | Este modelo contiene lo siguiente: <ul><li> Ofertas de la nube de Microsoft (SaaS, IaaS de Azure y PaaS de Azure) y sus elementos comunes. </li><li> Arquitectura de nube híbrida para las ofertas en la nube de Microsoft </li><li> Escenarios de nube híbrida para SaaS de Microsoft (Office 365), IaaS de Azure y PaaS de Azure </li></ul><br/>|
+|[![Imagen digital del modelo de nube híbrida de Microsoft.](../media/solutions-architecture-center/msft-hybrid-cloud-model-thumb.png)](../downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [Ver como un PDF](../downloads/MSFT_cloud_architecture_hybrid.pdf)\| [Descargar como pdf](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf)\| [Descargar como un Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.vsdx)     <br>Actualizado en agosto de 2020 | Este modelo contiene lo siguiente: <ul><li> Ofertas de la nube de Microsoft (SaaS, IaaS de Azure y PaaS de Azure) y sus elementos comunes. </li><li> Arquitectura de nube híbrida para las ofertas en la nube de Microsoft </li><li> Escenarios de nube híbrida para SaaS de Microsoft (Office 365), IaaS de Azure y PaaS de Azure </li></ul><br/>|
 
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Métodos de arquitectura para migraciones de inquilino a inquilino de la nube de Microsoft 
 En esta serie de temas se muestran varios métodos de arquitectura para las fusiones, las adquisiciones, las ventas y otros casos que podrían llevarle a migrar a un nuevo inquilino en la nube. Estos temas proporcionan instrucciones de punto de partida para la planeación de recursos empresariales. 
@@ -81,6 +81,6 @@ En esta serie de temas se muestran varios métodos de arquitectura para las fusi
 
 ## <a name="related-resources"></a>Recursos relacionados
 
-Obtenga recursos para crear sus propios diagramas de diseño de arquitectura: [Microsoft 365 de arquitectura y plantillas](architecture-icons-templates.md).
+Obtenga recursos para crear sus propios diagramas de diseño de arquitectura: [Microsoft 365 y plantillas de arquitectura](architecture-icons-templates.md).
 
-Vaya al [Centro de arquitectura de Azure](/azure/architecture/).
+Vaya al Centro [de arquitectura de Azure](/azure/architecture/).

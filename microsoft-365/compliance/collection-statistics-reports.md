@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo obtener acceso y usar estadísticas e informes para borradores de colecciones y colecciones que se han confirmado en un conjunto de revisión en Advanced eDiscovery.
-ms.openlocfilehash: 32867324dfef6cd0e7c9d7a5a396d066e5b5ad67
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a520bd3f05e7729a1a36101d4be334d984b39739
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197706"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903605"
 ---
 # <a name="collection-statistics-and-reports-in-advanced-ediscovery"></a>Estadísticas e informes de colección en Advanced eDiscovery
 
@@ -39,27 +39,27 @@ En esta sección se muestra un resumen gráfico de los elementos estimados devue
 
 ![Estimaciones de colección para una colección borrador.](../media/AeDCollectionEstimates.png)
 
-- **Elementos estimados por ubicaciones:** el número total de elementos estimados devueltos por la colección. También se muestra el número específico de elementos ubicados en buzones de correo y ubicados en sitios.
+- **Elementos estimados por ubicaciones**: el número total de elementos estimados devueltos por la colección. También se muestra el número específico de elementos ubicados en buzones de correo y ubicados en sitios.
 
-- **Ubicaciones estimadas con aciertos:** el número total de ubicaciones de contenido que contienen elementos devueltos por la colección. También se muestra el número específico de ubicaciones de buzones y sitios.
+- **Ubicaciones estimadas con aciertos**: el número total de ubicaciones de contenido que contienen elementos devueltos por la colección. También se muestra el número específico de ubicaciones de buzones y sitios.
 
-- **Volumen de datos por ubicación (en MB):** tamaño total de todos los elementos estimados devueltos por la colección. También se muestra el tamaño específico de los elementos de buzón y los elementos del sitio.
+- **Volumen de datos por ubicación (en MB):** Tamaño total de todos los elementos estimados devueltos por la colección. También se muestra el tamaño específico de los elementos de buzón y los elementos del sitio.
 
 ### <a name="condition-report"></a>Informe de condiciones
 
 En esta sección se muestran estadísticas sobre la consulta de búsqueda de colección y el número de elementos estimados que coinciden con diferentes partes de la consulta de búsqueda. Puede usar estas estadísticas para analizar el número de elementos que coinciden con cada componente de la consulta de búsqueda. Esto puede ayudarle a refinar los criterios de búsqueda de la colección y, si es necesario, restringir el ámbito de la colección.
 
-- **Tipo de ubicación:** tipo de ubicación de contenido a la que se aplican las estadísticas de consulta. El valor de **Exchange** indica una ubicación de buzón; un valor de **SharePoint** indica una ubicación del sitio.
+- **Tipo de ubicación**: tipo de ubicación de contenido a la que se aplican las estadísticas de consulta. El valor de **Exchange** indica una ubicación de buzón; un valor de **SharePoint** indica una ubicación del sitio.
 
-- **Parte:** la parte de la consulta de búsqueda a la que se aplican las estadísticas. **Primary** indica toda la consulta de búsqueda. **Palabra** clave indica que las estadísticas de la fila son para una palabra clave específica. Si usa una lista de palabras clave cuando para la consulta de búsqueda de la colección, las estadísticas de cada componente de la consulta se incluyen en esta tabla.
+- **Parte**: la parte de la consulta de búsqueda a la que se aplican las estadísticas. **Primary** indica toda la consulta de búsqueda. **Palabra** clave indica que las estadísticas de la fila son para una palabra clave específica. Si usa una lista de palabras clave cuando para la consulta de búsqueda de la colección, las estadísticas de cada componente de la consulta se incluyen en esta tabla.
 
-- **Condición:** el componente real (palabra clave o condición) de la consulta de búsqueda que se ha ejecutado para la colección borrador que devuelve las estadísticas mostradas en la fila correspondiente.
+- **Condición**: el componente real (palabra clave o condición) de la consulta de búsqueda que se ha ejecutado para la colección borrador que devuelve las estadísticas mostradas en la fila correspondiente.
 
-- **Ubicaciones con** aciertos: el número de ubicaciones de contenido (especificadas por la columna **Tipo** de ubicación) que contienen elementos que coinciden con la consulta principal o de palabra clave enumerada en la **columna Condición.**
+- **Ubicaciones con aciertos**: el número de ubicaciones de contenido (especificadas por la columna **Tipo** de ubicación) que contienen elementos que coinciden con la consulta principal o de palabra clave enumerada en la **columna Condición** .
 
-- **Elementos:** el número de elementos (desde la ubicación de contenido especificada) que coinciden con la consulta enumerada en la **columna Condición.** Como se explicó anteriormente, si un elemento contiene varias instancias de una palabra clave que se está buscando, solo se cuenta una vez en esta columna.
+- **Elementos**: el número de elementos (desde la ubicación de contenido especificada) que coinciden con la consulta enumerada en la **columna Condición** . Como se explicó anteriormente, si un elemento contiene varias instancias de una palabra clave que se está buscando, solo se cuenta una vez en esta columna.
 
-- **Tamaño (MB):** tamaño total de todos los elementos encontrados (en la ubicación de contenido especificada) que coinciden con la consulta de búsqueda en la **columna Condición.**
+- **Tamaño (MB):** el tamaño total de todos los elementos encontrados (en la ubicación de contenido especificada) que coinciden con la consulta de búsqueda en la **columna Condición** .
 
 ### <a name="top-locations"></a>Ubicaciones principales
 
@@ -90,23 +90,23 @@ Esta sección de **la pestaña** Resumen contiene estadísticas y otra informaci
   > [!TIP]
   > Mantenga el cursor sobre las barras de elementos primarios o secundarios para mostrar el número total de elementos primarios o secundarios.
 
-- **Elementos primarios**. El número de elementos devueltos por la colección que se usó para recopilar los elementos que se agregaron al conjunto de revisión. Este número corresponde (y es igual a) el número estimado de elementos que se muestra en la sección **Parámetros de colección.** El número de elementos primarios que recopila información que se usó para recopilar los elementos que se agregaron al conjunto de revisión.
+- **Elementos primarios**. El número de elementos devueltos por la colección que se usó para recopilar los elementos que se agregaron al conjunto de revisión. Este número corresponde (y es igual a) el número estimado de elementos que se muestra en la sección **Parámetros de colección** . El número de elementos primarios que recopila información que se usó para recopilar los elementos que se agregaron al conjunto de revisión.
  
-   Un elemento primario puede contener varios elementos secundarios. Por ejemplo, un mensaje de correo electrónico es un elemento primario si contiene un archivo adjunto o tiene datos adjuntos en la nube. En este caso, el archivo adjunto o el destino de los datos adjuntos en la nube se consideran elementos secundarios. Al confirmar una colección, los elementos primarios y los elementos secundarios correspondientes se agregan al conjunto de revisión como elementos o archivos individuales.
+   Un elemento primario puede contener varios elementos secundarios. Por ejemplo, un mensaje de correo electrónico es un elemento primario si contiene un archivo adjunto o tiene datos adjuntos en la nube. En este caso, el archivo adjunto o el archivo de destino de los datos adjuntos de la nube se considera un elemento secundario. Al confirmar una colección, los elementos primarios y los elementos secundarios correspondientes (como archivos adjuntos y datos adjuntos en la nube) se agregan al conjunto de revisión como elementos o archivos individuales.
 
-- **Elementos secundarios**. Número de elementos secundarios agregados al conjunto de revisión. Los elementos secundarios son datos adjuntos u otras partes de un elemento primario. Los elementos secundarios incluyen archivos adjuntos, datos adjuntos en la nube, imágenes y firmas de correo electrónico. Cuando se confirma una colección en un conjunto de revisión, los elementos secundarios se extraen, indizan y se agregan al conjunto de revisión como archivos individuales.
+- **Elementos secundarios**. Número de elementos secundarios agregados al conjunto de revisión. Solo los elementos secundarios que son datos adjuntos de archivos y datos adjuntos en la nube se agregan al conjunto de revisión como archivos individuales. Otros tipos de elementos secundarios, como firmas de correo electrónico e imágenes. se extraen de un elemento primario y, a continuación, se procesan mediante reconocimiento óptico de caracteres (OCR) para extraer cualquier texto del elemento secundario. El texto extraído de estos tipos de elementos secundarios se agrega a su elemento primario para que pueda verlo en el conjunto de revisión. Al no agregar elementos secundarios al conjunto de revisión como un archivo independiente, Advanced eDiscovery ayuda a simplificar el proceso de revisión limitando el número de elementos potencialmente inmateriales del conjunto de revisión.
 
 - **Elementos únicos**. Número de elementos únicos agregados al conjunto de revisión. Los elementos únicos son exclusivos del conjunto de revisión. Todos los elementos son únicos cuando se agrega la primera colección a un nuevo conjunto de revisión porque no había elementos anteriores en el conjunto de revisión.
 
-- **Elementos duplicados identificados**. Número de elementos de la colección que no se agregaron al conjunto de revisión porque ya existe el mismo elemento en el conjunto de revisión. Las estadísticas sobre elementos duplicados pueden ayudar a explicar las diferencias entre el número de elementos estimados de una colección borrador y el número real de elementos agregados al conjunto de revisión.
+- **Elementos duplicados identificados**. El número de elementos de la colección que no se agregaron al conjunto de revisión porque ya existe el mismo elemento en el conjunto de revisión. Las estadísticas sobre elementos duplicados pueden ayudar a explicar las diferencias entre el número de elementos estimados de una colección borrador y el número real de elementos agregados al conjunto de revisión.
 
 ### <a name="indexing"></a>Indización
 
 La **sección Indización** de la pestaña **Resumen** de un conjunto de revisión confirmado contiene información de indización sobre los elementos agregados al conjunto de revisión.
 
-**Nuevos elementos indizados**. El número de elementos que se indexó recientemente antes de que se agregaron al conjunto de revisión. Un ejemplo de un elemento recién indizado son elementos secundarios que se extraen de un elemento primario y luego se indizan antes de agregarlos al conjunto de revisión. Además, los elementos que no se encuentran en orígenes de datos  de custodia y ubicaciones de contenido no custodial que aparecen en la pestaña Orígenes de datos en el caso se indizan antes de agregarlos a la revisión. Por ejemplo, los elementos recién indizados incluirían elementos recopilados de ubicaciones adicionales.
+**Nuevos elementos indizados**. El número de elementos que se indexó recientemente antes de que se agregaron al conjunto de revisión. Ejemplos de un elemento recién indizado son elementos secundarios extraídos de un elemento primario y luego indizados antes de agregarlos al conjunto de revisión. Además, los elementos que no se encuentran en orígenes de datos de custodia y ubicaciones de contenido no custodial que aparecen  en la pestaña Orígenes de datos en el caso se indizan antes de agregarlos a la revisión. Por ejemplo, los elementos recién indizados incluirían elementos recopilados de ubicaciones adicionales.
 
-**Elementos indizados actualizados**. El número de elementos parcialmente indizados que se indizaron correctamente y se agregaron al conjunto de revisión. Esta estadística indica los elementos parcialmente indizados de la  pestaña Ubicaciones de contenido custodial y no custodial Orígenes de datos que se indizaron correctamente cuando la colección se competía en el conjunto de revisión.
+**Elementos indizados actualizados**. El número de elementos parcialmente indizados que se indizaron correctamente y se agregaron al conjunto de revisión. Esta estadística indica los elementos parcialmente indizados de la pestaña Ubicaciones de contenido custodial y no custodial Orígenes de datos que se indizaron correctamente cuando la colección se competía en el conjunto de revisión.
 
 **Errores de indización**. El número de elementos parcialmente indizados que no se pudieron indizar antes de que se agregaron al conjunto de revisión. Estos elementos pueden requerir corrección de errores.
 
@@ -120,15 +120,15 @@ Las estadísticas mostradas en la **pestaña Estadísticas de** búsqueda son la
 
 ## <a name="differences-between-draft-collection-estimates-and-the-actual-committed-collection"></a>Diferencias entre las estimaciones de borrador de colección y la colección comprometida real
 
-Al ejecutar un borrador de colección, se muestra una estimación del número de elementos  (y su  tamaño total) que cumplen los criterios de colección en la pestaña Resumen y en la sección Estimaciones de colección de la pestaña **Estadísticas de** búsqueda. Después de confirmar un borrador de colección en un conjunto de revisión, el número real de elementos (y su tamaño total) agregados al conjunto de revisión suelen ser diferentes de las estimaciones. En la mayoría de los casos, se agregan más elementos al conjunto de revisión de los estimados desde la colección borrador. En la siguiente lista se describen los motivos más comunes de estas diferencias y sugerencias para identificarlas:
+Al ejecutar un borrador de colección, se muestra una estimación del número de elementos (y su tamaño total) que cumplen los criterios de colección en  la pestaña Resumen y en  la sección Estimaciones de colección de la pestaña **Estadísticas de** búsqueda. Después de confirmar un borrador de colección en un conjunto de revisión, el número real de elementos (y su tamaño total) agregados al conjunto de revisión suelen ser diferentes de las estimaciones. En la mayoría de los casos, se agregan más elementos al conjunto de revisión de los estimados desde la colección borrador. En la siguiente lista se describen los motivos más comunes de estas diferencias y sugerencias para identificarlas:
 
-- **Elementos secundarios**. Elementos secundarios que se extraen de sus elementos primarios y se agregan como archivos individuales. El número de elementos secundarios puede aumentar significativamente el número de elementos que se agregan realmente al conjunto de revisión. En general, el número de  elementos primarios  identificados en la sección Contenido de la colección de la ficha Resumen de una colección comprometida debe ser igual al número de elementos estimados de la colección borrador.
+- **Elementos secundarios**. Elementos secundarios (como datos adjuntos de archivos y datos adjuntos en la nube) que se extraen de sus elementos primarios y se agregan como archivos individuales. El número de elementos secundarios puede aumentar el número de elementos que se agregan realmente al conjunto de revisión. En general, el número de elementos primarios identificados  en la sección Contenido de  la colección de la ficha Resumen de una colección comprometida debe ser igual al número de elementos estimados de la colección borrador.
 
 - **Elementos duplicados**. No se agregarán los elementos de la colección borrador que ya se hayan agregado al conjunto de revisión de una colección anterior. Como se explicó anteriormente, el número de elementos duplicados de la colección se muestra en la sección **Contenido** de la colección de la **ficha** Resumen.
 
 - **Opciones de configuración de colección**. Al confirmar un borrador de colección en un conjunto de revisión, debe tener la opción de incluir subprocesos de conversación, datos adjuntos en la nube y versiones de documentos. Cualquiera de estos elementos que se agregan al conjunto de revisión no se incluye en las estimaciones de la colección borrador. Solo se identifican y recopilan cuando se confirma la colección. Seleccionar estas opciones probablemente aumentará el número de elementos agregados al conjunto de revisión. 
 
-    Por ejemplo, varias versiones de SharePoint documentos no se incluyen en la estimación de la colección borrador. Pero si selecciona la opción para incluir todas las versiones del documento al exportar los resultados de búsqueda, lo que aumentará el número real (y el tamaño total) de los elementos agregados al conjunto de opiniones. 
+    Por ejemplo, varias versiones de SharePoint documentos no se incluyen en la estimación de la colección borrador. Pero si selecciona la opción para incluir todas las versiones del documento al confirmar un borrador de colección, aumentará el número real (y el tamaño total) de los elementos agregados al conjunto de revisión.
 
     Para obtener más información acerca de estas opciones, vea [Commit a draft collection to a review set](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery). 
 
@@ -140,4 +140,4 @@ Estos son otros motivos por los que los resultados estimados de una colección d
 
 - **Elementos sin indizar**. Si la colección borrador incluía la búsqueda en todos los buzones de Exchange o en todos los sitios de SharePoint, solo se agregarán al conjunto de revisión elementos sin indizar de ubicaciones de contenido que contengan elementos que coincidan con los criterios de la colección. En otras palabras, si no se encuentra ningún resultado en un buzón o sitio, los elementos no indexados de ese buzón o sitio no se agregarán al conjunto de revisión. Sin embargo, los elementos sin indizar de todas las ubicaciones de contenido (incluso aquellos que no contienen elementos que coincidan con la consulta de colección) se incluirán en los resultados estimados de la colección.
 
-    Como alternativa, si el borrador de colección incluía ubicaciones de contenido específicas  (lo que significa que se exportarán los buzones o sitios específicos que se especifican en la página Ubicaciones adicionales del asistente para borrador de colección), los elementos no indexados (que no se excluyen por los criterios de colección) de las ubicaciones de contenido especificadas en la búsqueda. En este caso, el número estimado de elementos sin indexar y el número de elementos sin indexar que se agregan al conjunto de revisión debe ser el mismo.
+    Como alternativa, si el borrador de colección incluía ubicaciones de contenido específicas (lo que significa que se exportarán los buzones o  sitios específicos que se especifican en la página Ubicaciones adicionales del asistente para borrador de colección), los elementos no indexados (que no se excluyen por los criterios de colección) de las ubicaciones de contenido especificadas en la búsqueda. En este caso, el número estimado de elementos sin indexar y el número de elementos sin indexar que se agregan al conjunto de revisión debe ser el mismo.

@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 9ef59cc47addce2a8f2171038f5894071549a40b
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: b9cc3e0ab911515d010b1a6e7feaac5cff8aed51
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156489"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903944"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Administrar incidentes en Microsoft 365 Defender
 
@@ -34,11 +34,11 @@ ms.locfileid: "62156489"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-La administración de incidentes es fundamental para garantizar que las amenazas se contengan y se aborde.
+La administración de incidentes es fundamental para garantizar que los incidentes se nombren, asignen y etiqueten para optimizar el tiempo en el flujo de trabajo de incidentes y contener y solucionar más rápidamente las amenazas.
 
-Puede administrar incidentes desde incidentes & **alertas > incidentes en** el inicio rápido del portal de Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Por ejemplo:
+Puede administrar incidentes desde incidentes & **alertas > incidentes** en el inicio rápido del portal de Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Por ejemplo:
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Ejemplo de la cola de incidentes." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -60,7 +60,7 @@ Puede mostrar este panel desde el vínculo **Administrar incidentes** en:
 - Panel de propiedades de un incidente en la cola de incidentes.
 - **Página de** resumen de un incidente.
 
-En los casos en los que quiera mover alertas de  un incidente a otro, también puede hacerlo desde la pestaña Alertas, creando así un incidente más grande o más pequeño que incluya todas las alertas relevantes.
+En los casos en los que quiera mover alertas de un incidente a otro, también puede hacerlo desde  la pestaña Alertas, creando así un incidente más grande o más pequeño que incluya todas las alertas relevantes.
 
 ## <a name="edit-the-incident-name"></a>Editar el nombre del incidente
 
@@ -75,16 +75,16 @@ Puede editar el nombre del incidente desde el campo **Nombre del** incidente en 
 
 Puede agregar etiquetas personalizadas a un incidente, por ejemplo, para marcar un grupo de incidencias con características comunes. Posteriormente, puede filtrar la cola de incidentes para todos los incidentes que contengan una etiqueta específica.
 
-Al empezar a escribir, tiene la opción de seleccionar de una lista de etiquetas seleccionadas.
+Al empezar a escribir, tiene la opción de seleccionar de una lista de etiquetas usadas previamente y seleccionadas.
 
 ## <a name="assign-an-incident"></a>Asignar un incidente
 
-Si aún no se ha asignado un incidente, puede seleccionar el cuadro Asignar **a** y especificar la cuenta de usuario. Para volver a asignar un incidente, quite la cuenta de asignación actual seleccionando la "x" junto al nombre de la cuenta y, a continuación, seleccione el cuadro Asignar **a.** Al asignar la propiedad de un incidente, se asigna la misma propiedad a todas las alertas asociadas.
+Si aún no se ha asignado un incidente, puede seleccionar el cuadro Asignar **a** y especificar la cuenta de usuario. Para volver a asignar un incidente, quite la cuenta de asignación actual seleccionando la "x" junto al nombre de la cuenta y, a continuación, seleccione el cuadro Asignar **a** . Al asignar la propiedad de un incidente, se asigna la misma propiedad a todas las alertas asociadas.
 
 Puede obtener una lista de incidentes asignados filtrando la cola de incidentes. 
 
 1. En la cola de incidentes, seleccione **Filtros**.
-2. en la **sección Asignación de** incidentes, desactive **Seleccionar todo** y seleccione Asignado **a mí**.
+2. en la **sección Asignación de** incidentes, desactive **Seleccionar todo** y seleccione **Asignado a mí**.
 3. Seleccione **Aplicar** y, a continuación, cierre el **panel** Filtros.
 
 A continuación, puede guardar la dirección URL resultante en el explorador como marcador para ver rápidamente la lista de incidentes asignados.
@@ -97,19 +97,19 @@ Un incidente que no se resuelve se muestra como **Activo**.
 
 ## <a name="set-the-classification-and-determination"></a>Establecer la clasificación y la determinación
 
-La clasificación de incidentes es si se trata de una alerta verdadera o una alerta falsa, que se configura desde el **campo Clasificación.** 
+La clasificación de incidentes es si se trata de una alerta verdadera o una alerta falsa, que se configura desde el **campo Clasificación** . 
 
-Si se trataba de una alerta verdadera, también debe especificar qué tipo de amenaza era con el **campo Determinación.** La especificación del tipo de amenaza ayuda a su equipo de seguridad a ver los patrones de amenaza y a actuar para defender a su organización de ellos. 
+Si se trataba de una alerta verdadera, también debe especificar qué tipo de amenaza era con el **campo Determinación** . La especificación del tipo de amenaza ayuda a su equipo de seguridad a ver los patrones de amenaza y a actuar para defender a su organización de ellos. 
 
 ## <a name="add-comments"></a>Agregar comentarios
 
-Puede agregar varios comentarios a un incidente con el **campo Comentario.** Cada comentario se agrega a los eventos históricos del incidente. Puede ver los comentarios y el historial de un incidente desde el vínculo **Comentarios e** historial en la **página Resumen.**
+Puede agregar varios comentarios a un incidente con el **campo Comentario** . Cada comentario se agrega a los eventos históricos del incidente. Puede ver los comentarios y el historial de un incidente desde el vínculo **Comentarios e** historial en la **página Resumen** .
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-Para nuevos incidentes, inicie la [investigación](investigate-incidents.md).
+Para nuevos incidentes, comience la [investigación](investigate-incidents.md).
 
-Para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
+Para incidentes en proceso, continúe con la [investigación](investigate-incidents.md).
 
 Para los incidentes resueltos, realice una [revisión posterior al incidente](first-incident-post.md).
 

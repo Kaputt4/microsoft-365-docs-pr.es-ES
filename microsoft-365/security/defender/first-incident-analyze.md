@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8e3d80cf1446541687ee2da1795b37ecf5d71865
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 3854c8891f1cc5175c87b9842d9c30b3164a6f46
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121655"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903639"
 ---
-# <a name="step-1-triage-and-analyze-your-first-incident"></a>Paso 1. Triage and analyze your first incident
+# <a name="step-1-triage-and-analyze-your-first-incident"></a>Paso 1. Triage and analyze your first incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -44,7 +44,7 @@ Una vez que se detecte un incidente de seguridad, Microsoft 365 Defender los det
 
 Microsoft 365 Defender recibe alertas y eventos de varias plataformas de seguridad de Microsoft como orígenes de detección para crear una imagen holística y un contexto de actividad malintencionada. Estos son los posibles orígenes de detección:
 
-- [Microsoft Defender para endpoint](../defender-endpoint/microsoft-defender-endpoint.md) es una solución detección y respuesta de puntos de conexión (EDR) que usa el antivirus de Microsoft Defender y la protección contra amenazas avanzada habilitada en la nube con Microsoft Security Graph. Defender for Endpoint es una plataforma unificada para la protección preventiva, la detección posterior a la infracción, la investigación automatizada y la respuesta. Protege los puntos de conexión de ciberamenazas, detecta ataques avanzados e infracciones de datos, automatiza los incidentes de seguridad y mejora la posición de seguridad.
+- [Microsoft Defender para endpoint](../defender-endpoint/microsoft-defender-endpoint.md) es una solución detección y respuesta de puntos de conexión (EDR) que usa antivirus de Microsoft Defender y protección contra amenazas avanzada habilitada en la nube con Microsoft Security Graph. Defender for Endpoint es una plataforma unificada para la protección preventiva, la detección posterior a la infracción, la investigación automatizada y la respuesta. Protege los puntos de conexión de ciberamenazas, detecta ataques avanzados e infracciones de datos, automatiza los incidentes de seguridad y mejora la posición de seguridad.
 - [Microsoft Defender for Identity](/defender-for-identity/what-is) es una solución de seguridad basada en la nube que usa las señales locales de Servicios de dominio de Active Directory (AD DS) para identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones internas malintencionadas dirigidas a su organización.
 - [Microsoft Defender para Aplicaciones](/cloud-app-security/) en la nube actúa como un guardián para el acceso de agente en tiempo real entre los usuarios de la empresa y los recursos en la nube que usan, independientemente del dispositivo que usen.
 - [Microsoft Defender para Office 365](../office-365-security/overview.md) protege su organización contra amenazas malintencionadas en mensajes de correo electrónico, vínculos (URL) y herramientas de colaboración.
@@ -59,14 +59,14 @@ La respuesta a incidentes Microsoft 365 Defender se inicia una vez que se hace u
 
 Una guía de ejemplo útil para determinar qué incidente se debe priorizar en Microsoft 365 Defender puede resumirse mediante la fórmula: *Gravedad + Impacto = Prioridad*.
 
-- **La gravedad** es el nivel designado por Microsoft 365 Defender y sus componentes de seguridad integrados.
+- **Gravedad es** el nivel designado por Microsoft 365 Defender y sus componentes de seguridad integrados.
 - **El** impacto lo determina la organización y, por lo general, incluye, entre otros, un número umbral de usuarios, dispositivos, servicios afectados (o una combinación de los mismos) e incluso un tipo de alerta.
 
 A continuación, los analistas inician investigaciones en función de los **criterios de** prioridad establecidos por la organización.
 
 La priorización de incidentes puede variar según la organización. NIST recomienda también considerar el impacto funcional e informativo del incidente y la capacidad de recuperación.
 
-A continuación se muestra un solo enfoque para el triage:
+A continuación se muestra solo un enfoque para el triaje que se debe tener en cuenta:
 
 1. Vaya a la [página incidentes](incidents-overview.md) para iniciar el triaje. Aquí puede ver una lista de incidentes que afectan a su organización. De forma predeterminada, se organizan desde el incidente más reciente hasta el más antiguo. Desde aquí, también puede ver diferentes columnas para cada incidente que muestran su gravedad, categoría, número de alertas activas y entidades afectadas, entre otras. Puede personalizar el conjunto de columnas y ordenar la cola de incidentes por algunas de estas columnas seleccionando el nombre de columna. También puede filtrar la cola de incidentes según sus necesidades. Para obtener una lista completa de los filtros disponibles, vea [Priorizar incidentes](incident-queue.md#available-filters).
 
@@ -80,7 +80,7 @@ A continuación se muestra un solo enfoque para el triage:
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png" alt-text="Ejemplo de un panel lateral de incidentes.":::
 
-   Por ejemplo, al ver qué tácticas de [MITRE ATT&CK](https://attack.mitre.org/) usó el atacante en función de las categorías del incidente, puede priorizar este incidente porque el atacante usó credenciales robadas, estableció el comando y el control, realizó movimiento lateral y exfiltró algunos datos. Esto sugiere que el atacante ya ha entrado en profundidad en la red y posiblemente ha robado información confidencial.
+   Por ejemplo, al ver qué tácticas de [MITRE ATT&CK](https://attack.mitre.org/) usa el atacante en función de las categorías del incidente, puede priorizar este incidente porque el atacante usó credenciales robadas, estableció el comando y el control, realizó movimiento lateral y exfiltró algunos datos. Esto sugiere que el atacante ya ha entrado en profundidad en la red y posiblemente ha robado información confidencial.
 
    Además, si su organización ha implementado el marco de confianza cero, consideraría el acceso a credenciales como una infracción de seguridad importante que vale la pena priorizar.
 
@@ -96,19 +96,19 @@ A continuación se muestra un solo enfoque para el triage:
 
 ## <a name="analyze-your-first-incident"></a>Analizar el primer incidente
 
-Es igualmente importante comprender el contexto que rodea las alertas. A menudo, una alerta no es un solo evento independiente. Hay una cadena de procesos creados, comandos y acciones que podrían no haber ocurrido al mismo tiempo. Por lo tanto, un analista debe buscar la primera y la última actividad de la entidad sospechosa en las escalas de tiempo del dispositivo para comprender el contexto de las alertas.
+Es igualmente importante comprender el contexto que rodea las alertas. A menudo, una alerta no es un solo evento independiente. Hay una cadena de procesos creados, comandos y acciones que podrían no haber ocurrido al mismo tiempo. Por lo tanto, debes buscar la primera y la última actividad de la entidad sospechosa en las escalas de tiempo del dispositivo para comprender el contexto de las alertas.
 
-Hay varias maneras de leer y analizar datos mediante Microsoft 365 Defender pero el objetivo final para los analistas es responder a los incidentes lo antes posible. Aunque Microsoft 365 Defender reducir significativamente el tiempo medio de corrección [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) a través de la característica de investigación y respuesta automatizada líder del sector, siempre hay casos que requieren análisis manual. [](m365d-autoir.md)
+Hay varias maneras de leer y analizar datos mediante Microsoft 365 Defender pero el objetivo final para los analistas es responder a los incidentes lo antes posible. Aunque Microsoft 365 Defender reducir significativamente el tiempo medio de corrección [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) a través de la característica de investigación [](m365d-autoir.md) y respuesta automatizada líder del sector, siempre hay casos que requieren análisis manual.
 
 Aquí le mostramos un ejemplo:
 
-1. Una vez determinada la prioridad del triage, un analista comienza un análisis en profundidad seleccionando el nombre del incidente. En esta página se muestra el **resumen de incidentes** donde se muestran los datos en las pestañas para ayudar con el análisis. En la **pestaña** Alertas, se muestra el tipo de alertas. Los analistas pueden hacer clic en cada alerta para profundizar en el origen de detección correspondiente.
+1. Una vez que se haya determinado la prioridad del triage, puede comenzar un análisis en profundidad seleccionando el nombre del incidente. En esta página se muestra el **resumen de incidentes** donde se muestran los datos en las pestañas para ayudar con el análisis. En la **pestaña** Alertas, se muestra el tipo de alertas. Los analistas pueden hacer clic en cada alerta para profundizar en el origen de detección correspondiente.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="Ejemplo de la pestaña Resumen de un incidente.":::
 
     Para obtener una guía rápida sobre qué dominio cubre cada origen de detección, revise la [sección Detectar](#detection-by-microsoft-365-defender) de este artículo.
 
-2. Desde la **pestaña Alertas,** un analista puede pivotar al origen de detección para llevar a cabo una investigación y un análisis más exhaustivos. Por ejemplo, al seleccionar Detección de malware con Microsoft Defender para aplicaciones en la nube como origen de detección, el analista se lleva a la página de alerta correspondiente.
+2. Desde la **pestaña** Alertas, puede pivotar al origen de detección para llevar a cabo una investigación y un análisis más exhaustivos. Por ejemplo, al seleccionar Detección de malware con Microsoft Defender para aplicaciones en la nube como origen de detección, el analista se lleva a la página de alerta correspondiente.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="Ejemplo de selección de una alerta de un incidente.":::
 
@@ -118,15 +118,15 @@ Aquí le mostramos un ejemplo:
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="Ejemplo de una página de usuario.":::
 
-4. En la página de usuario hay una lista cronológica de eventos a partir de un inicio de sesión arriesgado desde una alerta de dirección IP de red *TOR.* Aunque la desconfianza de una actividad depende de la naturaleza de la forma en que una organización lleva a cabo su negocio, en la mayoría de los casos el uso de The Onion Router (TOR), una red que permite a los usuarios navegar por la web de forma anónima, en un entorno empresarial puede considerarse altamente improbable e innecesario para operaciones en línea regulares.
+4. En la página de usuario hay una lista cronológica de eventos a partir de un inicio de sesión arriesgado desde una alerta de dirección *IP de red TOR* . Aunque la desconfianza de una actividad depende de la naturaleza de la forma en que una organización lleva a cabo su negocio, en la mayoría de los casos el uso de The Onion Router (TOR), una red que permite a los usuarios navegar por la web de forma anónima, en un entorno empresarial puede considerarse altamente improbable e innecesario para operaciones en línea regulares.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-event-list.png" alt-text="Ejemplo de la lista cronológica de eventos de un usuario.":::
 
-5. Cada alerta se puede seleccionar para obtener más información sobre la actividad. Por ejemplo, al seleccionar Actividad desde una alerta de **dirección IP de Tor,** se llega a la propia página de esa alerta. Annette es administradora de Office 365, lo que significa que tiene privilegios elevados y el incidente de origen podría haber llevado al acceso a información confidencial.
+5. Cada alerta se puede seleccionar para obtener más información sobre la actividad. Por ejemplo, al seleccionar **Actividad desde una alerta de dirección IP de Tor** , se llega a la propia página de esa alerta. Annette es administradora de Office 365, lo que significa que tiene privilegios elevados y el incidente de origen podría haber llevado al acceso a información confidencial.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="Ejemplo de detalles de alertas para Microsoft Defender para aplicaciones en la nube.":::
 
-6. Al seleccionar otras alertas, un analista puede obtener una imagen completa del ataque.
+6. Al seleccionar otras alertas, puedes obtener una imagen completa del ataque.
 
 ## <a name="next-step"></a>Paso siguiente
 

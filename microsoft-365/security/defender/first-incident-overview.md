@@ -22,23 +22,23 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: be0d0070f094a238114dd5d483e2a8ed29e043a0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ced4fd4fc56a4aa6d189e9c7761ce661bd477796
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198030"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62904100"
 ---
 # <a name="responding-to-your-first-incident"></a>Responder al primer incidente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 La estrategia de respuesta a incidentes de una organización determina su capacidad para hacer frente a incidentes de seguridad y ciberdelincuencia cada vez más disruptivos. Aunque es importante tomar medidas de prevención, la capacidad de actuar rápidamente para contener, eliminar y recuperarse de incidentes detectados puede minimizar los daños y las pérdidas empresariales.
 
-Este tutorial de respuesta a incidentes muestra cómo, como parte de un equipo de operaciones de seguridad, puede realizar la mayoría de los pasos clave de respuesta a incidentes en Microsoft 365 Defender. Estos son los pasos:
+Este tutorial de respuesta a incidentes muestra cómo, como parte de un equipo de operaciones de seguridad (SecOps), puede realizar la mayoría de los pasos clave de respuesta a incidentes en Microsoft 365 Defender. Estos son los pasos:
 
 - Preparación de la postura de seguridad
 - Para cada incidente:
@@ -48,15 +48,15 @@ Este tutorial de respuesta a incidentes muestra cómo, como parte de un equipo d
 
 El Instituto Nacional de Estándares y Tecnología (NIST) define un incidente de seguridad como "una ocurrencia que realmente o potencialmente pone en peligro la confidencialidad, integridad o disponibilidad de un sistema de información; o la información que procesa, almacena o transmite el sistema; o que constituye una infracción o una amenaza inminente de violación de las directivas de seguridad, los procedimientos de seguridad o las directivas de uso aceptables".
 
-Los incidentes en Microsoft 365 Defender son los puntos de partida lógicos para el análisis y la respuesta a incidentes. El análisis y la corrección de incidentes suele ser la mayor parte de las tareas de un equipo de operaciones de seguridad.
+Los incidentes en Microsoft 365 Defender son los puntos de partida lógicos para el análisis y la respuesta a incidentes. El análisis y la corrección de incidentes suele ser la mayor parte de las tareas y el tiempo de un equipo (SecOps).
 
 ## <a name="next-step"></a>Paso siguiente
 
 [![Prepare su organización y Microsoft 365 inquilino.](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
 
-Asegúrese de que su organización y Microsoft 365 inquilino esté [preparado para el tratamiento de incidentes.](first-incident-prepare.md)
+Asegúrese de que su organización y Microsoft 365 inquilino esté [preparado para el tratamiento de incidentes](first-incident-prepare.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Instrucciones de respuesta a incidentes para Microsoft 365 Defender:
 

@@ -21,19 +21,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8b511bb5818ae923c30347dfe71853ca791061ae
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 46facb53ebffb26095a9de4cab60d255285cc949
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933220"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62904122"
 ---
 # <a name="investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>Investigar y responder con Microsoft 365 Defender en un entorno piloto
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-En este artículo se describe el proceso para crear incidentes con simulaciones de ataque y tutoriales y usar Microsoft 365 Defender para investigar y responder. Antes de iniciar este proceso, asegúrese de que [](eval-overview.md) ha revisado el proceso general para evaluar Microsoft 365 Defender y ha creado el entorno [Microsoft 365 Defender evaluación](eval-create-eval-environment.md).
+En este artículo se describe el proceso para crear incidentes con simulaciones de ataque y tutoriales y usar Microsoft 365 Defender para investigar y responder. Antes de iniciar este proceso, asegúrese de haber revisado el proceso general para evaluar Microsoft 365 Defender [](eval-overview.md) y de haber creado el entorno [Microsoft 365 Defender evaluación](eval-create-eval-environment.md).
 
 Siga estos pasos.
 
@@ -41,11 +41,11 @@ Siga estos pasos.
 
 En la tabla siguiente se describen los pasos de la ilustración.
 
-| |Paso  |Descripción  |
-|---------|---------|---------|
-|1|[Simular ataques](eval-defender-investigate-respond-simulate-attack.md)     |   Simule ataques en el entorno de evaluación y use el portal de Microsoft 365 Defender para realizar la respuesta a incidentes.      |
-|2|[Probar capacidades de respuesta a incidentes ](eval-defender-investigate-respond-additional.md)    |    Pruebe características y funcionalidades en Microsoft 365 Defender.     |
-||||
+|Paso  |Descripción  |
+|---------|---------|
+| 1. [Simular ataques](eval-defender-investigate-respond-simulate-attack.md)     |   Simule ataques en el entorno de evaluación y use el portal de Microsoft 365 Defender para realizar la respuesta a incidentes.      |
+| 2. [Probar las capacidades de respuesta a incidentes ](eval-defender-investigate-respond-additional.md)    |    Pruebe funciones y características adicionales de respuesta a incidentes en Microsoft 365 Defender.     |
+|||
 
 ### <a name="navigation-you-may-need"></a>Navegación que puede necesitar
 

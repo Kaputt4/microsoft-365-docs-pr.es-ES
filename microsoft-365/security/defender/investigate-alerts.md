@@ -1,26 +1,32 @@
 ---
 title: Investigar alertas en Microsoft 365 Defender
-description: 'Investigar las alertas que se ven en dispositivos, usuarios y buzones.'
-keywords: 'incidentes, alertas, investigar, analizar, responder, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365'
+description: Investigar las alertas que se ven en dispositivos, usuarios y buzones.
+keywords: incidentes, alertas, investigar, analizar, responder, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
-  - MOE150
+- MOE150
 ms.technology: m365d
+ms.openlocfilehash: cfa39ca38046c131de2531b4ad6446626895090f
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903956"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
 
@@ -44,10 +50,6 @@ De forma predeterminada, la cola de alertas del portal de Microsoft 365 Defender
 En la cola de alertas predeterminada, puede seleccionar **Filtrar** para ver un panel **Filtro** , desde el que puede especificar un subconjunto de las alertas. Por ejemplo:
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Ejemplo del panel de filtros para la cola de alertas en el portal Microsoft 365 Defender web.":::
-
-<!--
-UPDATE SCREENSHOT
---> 
 
 Puede filtrar alertas según estos criterios:
 
@@ -106,7 +108,7 @@ Microsoft 365 Defender alertas pueden venir de soluciones como Microsoft Defende
 
 | Origen de alertas | Carácter anteponer |
 | :---|:--- |
-| Microsoft Defender para Office 365 | `fa{GUID}` <br> Ejemplo: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender para Office 365 | `fa{GUID}` <br> Ejemplo: `fa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender para punto de conexión | `da` o para `ed` alertas de detección personalizadas <br> |
 | Microsoft Defender for Identity | `aa{GUID}` <br> Ejemplo: `aa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Cloud Apps |`ca{GUID}` <br> Ejemplo: `ca123a456b-c789-1d2e-12f1g33h445h6i` |
@@ -195,11 +197,11 @@ Para ver el proceso detallado paso a paso, vea el vídeo [aquí](https://www.mic
 
 En este vídeo también se describe cómo conectar power automate a Defender for Cloud Apps.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)

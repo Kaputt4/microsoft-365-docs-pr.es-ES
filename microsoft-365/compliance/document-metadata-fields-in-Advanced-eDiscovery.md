@@ -16,51 +16,51 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se definen los campos de metadatos de los documentos de un conjunto de revisión en un caso Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: 84b7a63f61091a799978fd3d880666b81f5a5df4
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: a1ce1cf43cb2b5d741731948288ab60f48cf5352
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942889"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62901087"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos de documento en eDiscovery avanzado
 
 En la tabla siguiente se enumeran los campos de metadatos de los documentos de un conjunto de revisión en un caso Advanced eDiscovery. La tabla proporciona la siguiente información:
 
-- **Nombre del** campo y Nombre del campo **mostrar:** el nombre del campo de metadatos y el nombre del campo que se muestra al ver los metadatos de archivo de un documento seleccionado en un conjunto de revisión. Algunos campos de metadatos no se incluyen al ver los metadatos de archivo de un documento. Estos campos se resaltan con un asterisco (*).
+- **Nombre del** campo y **Nombre del** campo mostrar: el nombre del campo de metadatos y el nombre del campo que se muestra al ver los metadatos de archivo de un documento seleccionado en un conjunto de revisión. Algunos campos de metadatos no se incluyen al ver los metadatos de archivo de un documento. Estos campos se resaltan con un asterisco (*).
 
-- **Nombre del campo que se puede buscar:** Nombre de la propiedad que puede buscar al ejecutar una [consulta de conjunto de revisión](review-set-search.md). Una celda en blanco significa que no puede buscar el campo en una consulta de conjunto de revisión.
+- **Nombre del campo que se puede buscar:** Nombre de la propiedad que puede buscar al ejecutar una consulta [de conjunto de revisión](review-set-search.md). Una celda en blanco significa que no puede buscar el campo en una consulta de conjunto de revisión.
 
 - **Nombre del campo exportado:** Nombre del campo de metadatos que se incluye cuando se exportan documentos.  Una celda en blanco significa que el campo no se incluye con los metadatos exportados.
 
 - **Descripción:** Una descripción del campo de metadatos.
 
 > [!NOTE]
-> El **campo Palabras clave de** la búsqueda del conjunto de [revisión](./review-set-search.md) usa lenguaje de consulta de palabras clave (KQL). Los campos **enumerados** en la columna **Nombre** de campo que se puede buscar se pueden usar en el campo Palabras clave en una búsqueda de conjunto de revisión para formar consultas complejas sin tener que usar el generador de consultas. Para obtener más información acerca de KQL, vea [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
+> El **campo Palabras clave de** la [búsqueda del conjunto de revisión](./review-set-search.md) usa lenguaje de consulta de palabras clave (KQL). Los campos **enumerados** en la columna **Nombre** de campo que se puede buscar se pueden usar en el campo Palabras clave en una búsqueda de conjunto de revisión para formar consultas complejas sin tener que usar el generador de consultas. Para obtener más información acerca de KQL, consulte [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
 <br>
 
 ****
 
-|Nombre del campo y Nombre del campo para mostrar|Nombre del campo que se puede buscar|Nombre del campo exportado|Description|
+|Nombre del campo y Nombre del campo para mostrar|Nombre del campo que se puede buscar|Nombre del campo exportado|Descripción|
 |---|---|---|---|
 |Id. de contenido de datos adjuntos|AttachmentContentId||Identificador de contenido de datos adjuntos del elemento.|
 |Puntuación de privilegios de cliente de abogado|AttorneyClientPrivilegeScore||Puntuación de contenido del modelo de privilegios abogado-cliente.|
 |Autor|Autor|Doc_authors|Autor de los metadatos del documento.|
 |BCC|Bcc|Email_bcc|Campo CCO para tipos de mensaje. Format es **DisplayName \<SMTPAddress\>**.|
 |CC|Cc|Email_cc|Campo Cc para tipos de mensaje. Format es **DisplayName \<SMTPAddress\>**.|
-|Etiquetas de cumplimiento|ComplianceLabels|Compliance_labels|[Etiquetas de](retention.md) retención aplicadas al contenido en Office 365.|
+|Etiquetas de cumplimiento|ComplianceLabels|Compliance_labels|[Etiquetas de](retention.md) retención aplicadas al contenido Office 365.|
 |Ruta compuesta|CompoundPath|Compound_path|Ruta de acceso legible humana que describe el origen del elemento.|
 |Contenido*|Contenido||Texto extraído del elemento.|
 |Cuerpo de la conversación|ConversationBody||Cuerpo de conversación del elemento.|
-|Id. de conversación|ConversationId|Conversation_ID|Identificador de conversación del mensaje. Para Teams 1:1 y chats de grupo, todos los archivos de transcripción y sus elementos de familia dentro de la misma conversación comparten el mismo identificador de conversación. Para obtener más información, vea [Advanced eDiscovery flujo de trabajo de contenido en Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
+|Id. de conversación|ConversationId|Conversation_ID|Identificador de conversación del mensaje. Para Teams 1:1 y chats de grupo, todos los archivos de transcripción y sus elementos de familia dentro de la misma conversación comparten el mismo identificador de conversación. Para obtener más información, [vea Advanced eDiscovery flujo de trabajo para el contenido de Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
 |Id. de familia de conversación|ConversationFamilyID|ConversationFamilyID|Identificador que identifica los elementos individuales de una conversación, así como los elementos relacionados de la conversación.|
 |Índice de conversación||Conversation_index|Índice de conversación del mensaje.|
 |Nombre de conversación||ConversationName|Este campo depende del tipo de contenido.<br>**Teams chat 1:1:** primeros 40 caracteres del primer mensaje.<br>**Teams chat 1:N:** Nombre del chat de grupo; si no está disponible, los primeros 40 caracteres del primer mensaje.<br>**Teams channel post:** Subpartida publicar título o anuncio; si no está disponible, los primeros 40 caracteres del primer mensaje.|
 |Hora de pdf de conversación|ConversationPdfTime||Fecha en la que se creó la versión PDF de la conversación.|
 |Tiempo de grabación de redacción de conversación|ConversationRedactionBurnTime||Fecha en la que se creó la versión PDF de la conversación para Chat.|
 |Tema de conversación|ConversationTopic||Tema de conversación del elemento.|
-|Tipo de conversación|ConversationType|ConversationType|Tipo de conversación de chat. Los valores son: <br>**Teams 1:1 y chats** de grupo y todas las conversaciones Yammer: Grupo<br>**Teams canales y canales privados:** Canal|
+|Tipo de conversación|ConversationType|ConversationType|Tipo de conversación de chat. Los valores son: <br>**Teams 1:1 y chats de grupo y todas las conversaciones Yammer: Grupo**<br>**Teams canales y canales privados:** Canal|
 |Contiene mensaje eliminado|ContainsDeletedMessage|ContainsDeletedMessage|Indica si la transcripción del chat incluye un mensaje eliminado|
 |Contiene mensaje editado|ContainsEditedMessage|ContainsEditedMessage|Indica si la transcripción del chat incluye un mensaje editado|
 |Teams de anuncio|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Título de un [anuncio de teams](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
@@ -79,7 +79,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |DocLastSavedBy||Doc_last_saved_by|Nombre del usuario que guardó por última vez el documento.|
 |Tema dominante|DominantTheme|Dominant_theme|Tema dominante calculado para análisis.|
 |Subconjunto duplicado||Duplicate_subset|Id. de grupo para duplicados exactos.|
-|EmailAction*||Email_action|Los valores **son None,** **Reply** o **Forward**; según la línea de asunto de un mensaje.|
+|EmailAction*||Email_action|Los valores **son None**, **Reply** o **Forward**; según la línea de asunto de un mensaje.|
 |Recibo de entrega de correo electrónico solicitado||Email_delivery_receipt|Dirección de correo electrónico proporcionada en encabezados de Internet para el recibo de entrega.|
 |Importancia|EmailImportance|Email_importance|Importancia del mensaje: **0** - Low; **1** : Normal; **2** - High|
 |Errores de procesamiento omitido|ErrorIgnored|Error_Ignored|Se omitió el error y no se corrija.|
@@ -87,7 +87,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |EmailLevel*||Email_level|Indica el nivel de un mensaje dentro del subproceso de correo electrónico al que pertenece; los datos adjuntos heredan el valor de su mensaje primario.|
 |Id. de mensaje de correo electrónico||Email_message_ID|Identificador de mensaje de Internet del mensaje.|
 |EmailReadReceiptRequested||Email_read_receipt|Dirección de correo electrónico proporcionada en encabezados de Internet para recibo de lectura.|
-|Seguridad de correo electrónico|EmailSecurity|Email_security|Configuración de seguridad del mensaje: **0** - Ninguno; **1:** Firmado; **2** : cifrado; **3:** cifrado y firmado.|
+|Seguridad de correo electrónico|EmailSecurity|Email_security|Configuración de seguridad del mensaje: **0** - Ninguno; **1** : Firmado; **2** : cifrado; **3** : cifrado y firmado.|
 |Confidencialidad del correo electrónico|EmailSensitivity|email_sensitivity|Configuración de confidencialidad del mensaje: **0** - Ninguno; **1** Personal; **2** - Privado; **3** - CompanyConfidential.|
 |Conjunto de correo electrónico|EmailSet|Email_set|Id. de grupo para todos los mensajes del mismo conjunto de correo electrónico.|
 |EmailThread*||Email_thread|Posición del mensaje dentro del conjunto de correo electrónico; consta de los IDs de nodo de la raíz al mensaje actual y se separan por puntos (.).|
@@ -108,7 +108,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Tiene abogado|HasAttorney||**True** cuando al menos uno de los participantes se encuentra en la lista de abogados; de lo contrario, el valor es **False**.|
 |HasText*||Has_text|Indica si el elemento tiene texto; los valores posibles **son True** y **False**.|
 |Identificador inmutable||Immutable_ID|Este identificador se usa para identificar de forma única un documento dentro de un conjunto de revisión. Este campo no se puede usar en una búsqueda de conjunto de revisión y el identificador no se puede usar para tener acceso a un documento en su ubicación nativa.|
-|Tipo inclusivo|InclusiveType|Inclusive_type|Tipo inclusivo calculado para análisis: **0:** no inclusivo; **1** : inclusive; **2** : menos inclusivo; **3:** copia inclusiva.|
+|Tipo inclusivo|InclusiveType|Inclusive_type|Tipo inclusivo calculado para análisis: **0** : no inclusivo; **1** : inclusive; **2** : menos inclusivo; **3** : copia inclusiva.|
 |En Reply To Id||In_reply_to_ID|En respuesta a Id. del mensaje.|
 |InputFileExtension||Original_file_extension|La extensión de archivo original del archivo.|
 |InputFileID||Input_file_ID|El identificador de archivo del elemento de nivel superior del conjunto de revisión. Para datos adjuntos, este identificador será el identificador del elemento primario. Esto se puede usar para agrupar familias.|
@@ -120,13 +120,13 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Clase Item|ItemClass|Item_class|Clase de elemento suministrada por el servidor exchange; por ejemplo, **IPM. Nota**|
 |Última modificación|LastModifiedDate|Doc_date_modified|Fecha de última modificación de los metadatos del documento.|
 |Id. de carga|LoadId|Load_ID|Identificador del conjunto de carga en el que se agregó el elemento a un conjunto de revisión.|
-|Ubicación|Ubicación|Ubicación|Cadena que indica el tipo de ubicación de la que se han origen los documentos.<p>**Datos importados:** datos no Office 365 datos<br>**Teams:** Microsoft Teams<br>**Exchange:** Exchange buzones de correo<br>**SharePoint:** SharePoint sitios<br>**OneDrive:** OneDrive cuentas|
+|Ubicación|Ubicación|Ubicación|Cadena que indica el tipo de ubicación de la que se han origen los documentos.<p>**Datos importados**: datos no Office 365 datos<br>**Teams**- Microsoft Teams<br>**Exchange**: Exchange buzones de correo<br>**SharePoint**: SharePoint sitios<br>**OneDrive**: OneDrive cuentas|
 |Nombre de ubicación|LocationName|Location_name|Cadena que identifica el origen del elemento. Para Exchange, esta será la dirección SMTP del buzón; para SharePoint y OneDrive, la dirección URL de la colección de sitios.|
 |||Marked_as_pivot|Este archivo es el elemento dinámico de un conjunto casi duplicado.|
 |Marcado como representante|MarkAsRepresentative||Un documento de cada conjunto de duplicados exactos se marca como representantes.|
 |Fecha de finalización de la reunión|MeetingEndDate|Meeting_end_date|Fecha de finalización de la reunión para reuniones.|
 |Fecha de inicio de la reunión|MeetingStartDate|Meeting_start_date|Fecha de inicio de la reunión para reuniones.|
-|Tipo de mensaje|MessageKind|Message_kind|Tipo de mensaje que se debe buscar. Valores posibles: contacts **<p> <br> docs <br> email <br> externaldata <br> faxes <br> im <br> <br> journals <br> meetings microsoftteams** (devuelve elementos de chats, reuniones y llamadas en Microsoft Teams) notas publicaciones **<br> <br> <br> rssfeeds <br> tasks <br> voicemail**|
+|Tipo de mensaje|MessageKind|Message_kind|Tipo de mensaje que se debe buscar. Valores posibles: **<p><br><br><br><br>los documentos de contactos envía faxes <br><br>externos de datos externos <br><br>a reuniones de microsoftteams** (devuelve elementos de chats, reuniones y llamadas en Microsoft Teams) **<br><br><br>notas que publica correo de voz de tareas rssfeeds <br><br>**|
 |Identificador principal de datos adjuntos modernos||ModernAttachment_ParentId|El identificador inmutable del elemento primario del documento.|
 |Extensión nativa|NativeExtension|Native_extension|Extensión nativa del elemento.|
 |Nombre de archivo nativo|NativeFileName|Native_file_name|Nombre de archivo nativo del elemento.|
@@ -138,8 +138,8 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Autores de O365||O365_authors|Autor de SharePoint.|
 |O365 creado por||O365_created_by|Creado por desde SharePoint.|
 |Fecha de creación de O365||O365_date_created|Fecha de creación a partir SharePoint.|
-|Fecha de modificación de O365||O365_date_modified|Fecha de última modificación de SharePoint.|
-|O365 modificado por||O365_modified_by|Modificado por desde SharePoint.|
+|O365ModifiedDate||O365_date_modified|La fecha en que se modificó un documento (o versión del documento) SharePoint o OneDrive para la Empresa. Esta es la misma fecha de modificación que la que se muestra en el historial de versiones en la SharePoint y OneDrive usuario.|
+|O365 modificado por||O365_modified_by|Modificado por desde SharePoint o OneDrive.|
 |Otros custodios|DedupedCustodians|Deduped_custodians|Lista de custodios de documentos que son duplicados exactos (para correo electrónico, basado en contenido; para documentos, basados en hash).|
 |Otros IDs de archivo|DedupedFileIds|Deduped_file_IDs|Lista de los nombres de archivo de documentos que son duplicados exactos (para correo electrónico, basado en contenido; para documentos, basados en hash).|
 |Otras rutas de acceso|Dedupedcompoundpath|Deduped_compound_path|Lista de rutas de acceso compuestas de documentos que son duplicados exactos (correo electrónico: basado en contenido, documentos: basados en hash).|
@@ -177,12 +177,13 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Nombre del equipo|TeamName|TeamName|**Teams: Nombre** del equipo<br>**Yammer: Community** nombre|
 |Lista de temas|ThemesList|Themes_list|Lista de temas calculada para análisis.|
 |Título|Título|Doc_title|Título de los metadatos del documento. Título de los metadatos del documento. Para Teams y Yammer, este es el valor de la propiedad ConversationName.|
-|To|To|Email_to|Para el campo para los tipos de mensaje. Format es **DisplayName \<SmtpAddress>**|
+|To|To|Email_to|Para el campo para los tipos de mensaje. Format es **DisplayName\<SmtpAddress>**|
 |Único en el conjunto de correo electrónico|UniqueInEmailSet||**False** si hay un duplicado de los datos adjuntos en su conjunto de correo electrónico.|
 |Id. de grupo de versión||Version_Group_Id|Agrupa las distintas versiones del mismo documento.|
+|VersionNumber||Version_Number|Número de versión de un documento recopilado de SharePoint o OneDrive para la Empresa. Este es el mismo número de versión que el que se muestra en el historial de versiones en la SharePoint y OneDrive usuario.|
 |Se ha corregido|WasRemediated|Was_Remediated|**True** si el elemento se ha corregido, de lo contrario **Es False**.|
 |Word count|WordCount|Word_count|Número de palabras en el elemento.|
 |||||
 
 > [!NOTE]
-> Para obtener más información acerca de las propiedades que se pueden buscar al buscar en ubicaciones de contenido Office 365 cuando se recopilan datos para un caso Advanced eDiscovery, vea [Consultas de](keyword-queries-and-search-conditions.md)palabras clave y condiciones de búsqueda para búsqueda de contenido .
+> Para obtener más información acerca de las propiedades que se pueden buscar al buscar Office 365 de contenido cuando se recopilan datos para un caso Advanced eDiscovery, vea [Consultas de](keyword-queries-and-search-conditions.md) palabras clave y condiciones de búsqueda para búsqueda de contenido.

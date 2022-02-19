@@ -1,5 +1,5 @@
 ---
-title: Actualizar el archivo de tabla de origen de información confidencial
+title: Actualizar el archivo de tabla de origen de información que coincide exactamente con los datos
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 description: Actualice el archivo de tabla de origen de información confidencial.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fd083b798785f0dbfca8603f8b7bc28fece6004e
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 79442356066263485c70bf455af5a6a44a0355d4
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914852"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903715"
 ---
-# <a name="refresh-your-sensitive-information-source-table-file"></a>Actualizar el archivo de tabla de origen de información confidencial 
+# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Actualizar el archivo de tabla de origen de información confidencial de coincidencia de datos exactos 
 
 Puede actualizar la base de datos de información confidencial dos veces cada 24 horas. Tendrás que volver ahajar y cargar la tabla de origen de información confidencial.
 
@@ -35,7 +35,7 @@ Puede actualizar la base de datos de información confidencial dos veces cada 24
 
 2. Use los procedimientos de [Hash y cargue](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) la tabla de origen de información confidencial para obtener datos exactos que coincidan con los tipos de información confidencial para cargar el archivo de origen de la tabla de información confidencial.
 
-2. Puede usar el [Programador de tareas para](/windows/desktop/TaskSchd/task-scheduler-start-page) automatizar el hash y cargar la tabla de origen de información confidencial para el procedimiento de tipos de información confidencial de coincidencia de [datos](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) exactos. Puede programar tareas con varios métodos:
+2. Puede usar el [Programador de tareas para](/windows/desktop/TaskSchd/task-scheduler-start-page) automatizar el [hash y cargar](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) la tabla de origen de información confidencial para el procedimiento de tipos de información confidencial de coincidencia de datos exactos. Puede programar tareas con varios métodos:
 
    |Método|Qué hacer|
    |---|---|

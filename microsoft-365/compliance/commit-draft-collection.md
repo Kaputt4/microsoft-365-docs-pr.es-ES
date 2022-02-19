@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Después de crear e iterar en una colección borrador, puede confirmarla en un conjunto de revisión. Cuando se confirma un borrador de colección, los elementos recopilados se agregan al conjunto de revisión en el caso. Después de que los elementos recopilados estén en el conjunto de revisión, puede analizarlos, revisarlos y exportarlos.
-ms.openlocfilehash: 0d230f02f08b5a29b2c53ab20ff175f8c7db9ac6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d74d1b062101973d2d3cb055700c59a2d25c0d14
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173576"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903585"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>Confirmar un borrador de colección en un conjunto de revisión en Advanced eDiscovery
 
@@ -34,13 +34,13 @@ Cuando esté satisfecho con los elementos que haya recopilado en una colección 
    ![Lista de colecciones en un caso.](../media/CommitDraftCollections1.png)
 
    > [!TIP]
-   > Un valor de en la columna Estado identifica las colecciones de borrador que se pueden `Estimated` agregar a un conjunto de revisión.  Un estado de indica que ya se ha agregado una colección `Committed` a un conjunto de revisión.
+   > Un valor de `Estimated` en la **columna Estado** identifica las colecciones de borrador que se pueden agregar a un conjunto de revisión. Un estado de `Committed` indica que ya se ha agregado una colección a un conjunto de revisión.
 
-2. En la **página Colecciones,** seleccione el borrador de colección que desea confirmar en un conjunto de revisión.
+2. En la **página Colecciones** , seleccione el borrador de colección que desea confirmar en un conjunto de revisión.
 
-3. En la parte inferior de la página desplegable, seleccione **Acciones**  >  **Editar colección**.
+3. En la parte inferior de la página desplegable, seleccione **Colección ActionsEdit** > .
 
-4. En el Asistente para editar colección, haga clic **en Siguiente** hasta que se muestre **la página** Guardar borrador o recopilar.
+4. En el Asistente para editar colección, haga clic **en Siguiente** hasta que se **muestre la página** Guardar borrador o recopilar.
 
 5. Configure las siguientes opciones:
 
@@ -50,23 +50,30 @@ Cuando esté satisfecho con los elementos que haya recopilado en una colección 
 
    3. Configure las opciones de colección adicionales:
 
-       - **Teams y Yammer:** seleccione esta opción para agregar subprocesos de conversación a la colección que incluyan los elementos de chat devueltos por la consulta de búsqueda en la colección. Esto significa que se reconstruye la conversación de chat que contiene elementos que coinciden con los criterios de búsqueda. Esto te permite revisar los elementos de chat en el contexto de la conversación de ida y vuelta. Para obtener más información, vea [Subprocesos de conversación en Advanced eDiscovery](conversation-review-sets.md).
+      ![Configure opciones de colección adicionales.](../media/AeDAdditionalCollectionSettings.png).
 
-       - **Datos adjuntos en la** nube: seleccione esta opción para incluir datos adjuntos modernos o archivos vinculados cuando los resultados de la colección se agregan al conjunto de revisión. Esto significa que el archivo de destino de un archivo adjunto o vinculado moderno se agrega al conjunto de revisión.
+       a. **Teams y Yammer**: seleccione esta opción para agregar subprocesos de conversación a la colección que incluyan los elementos de chat devueltos por la consulta de búsqueda en la colección. Esto significa que se reconstruye la conversación de chat que contiene elementos que coinciden con los criterios de búsqueda. Esto te permite revisar los elementos de chat en el contexto de la conversación de ida y vuelta. Para obtener más información, vea [Subprocesos de conversación en Advanced eDiscovery](conversation-review-sets.md).
 
-       - **SharePoint:** seleccione esta opción para habilitar la colección de todas las versiones de un documento SharePoint según los límites de versión y los parámetros de búsqueda de la colección. Si selecciona esta opción, aumentará significativamente el tamaño de los elementos que se agregan al conjunto de revisión.
+       b. **Datos adjuntos en** la nube: seleccione esta opción para incluir datos adjuntos modernos o archivos vinculados cuando los resultados de la colección se agregan al conjunto de revisión. Esto significa que el archivo de destino de un archivo adjunto o vinculado moderno se agrega al conjunto de revisión.
+
+       > [!NOTE]
+       > Las dos opciones para recopilar mensajes contextuales Teams y Yammer y datos adjuntos en la nube se seleccionan de forma predeterminada (y atenuadas) para los casos que se crearon con el nuevo formato de caso. Para obtener más información, [vea Usar el nuevo formato de caso](advanced-ediscovery-new-case-format.md).
+
+       c. **Elementos parcialmente indizados**: seleccione esta opción para agregar elementos parcialmente indizados de orígenes de datos adicionales al conjunto de revisión. Si la colección ha buscado orígenes de datos adicionales (como se especifica en  la página Ubicaciones adicionales del asistente para colecciones), es posible que haya elementos parcialmente indizados de estas ubicaciones que desee agregar al conjunto de revisión. Los orígenes de datos custodiales y no custodiales normalmente no tienen elementos parcialmente indizados. Esto se debe a que el proceso de indización avanzada vuelve a indizar los elementos cuando se agregan orígenes de datos de custodia y no custodia a un caso. Además, agregar elementos parcialmente indizados aumentará el número de elementos agregados al conjunto de revisión. <p> Después de agregar elementos parcialmente indizados al conjunto de revisión, puede aplicar un filtro para ver específicamente estos elementos. Para obtener más información, vea [Filter partially indexed items](review-set-search.md#filter-partially-indexed-items)
+
+      d. **SharePoint:** seleccione esta opción para habilitar la colección de todas las versiones de un documento SharePoint según los límites de versión y los parámetros de búsqueda de la colección. Si selecciona esta opción, aumentará significativamente el tamaño de los elementos que se agregan al conjunto de revisión. Después de agregar versiones de documento al conjunto de revisión, 
 
    4. Configure las opciones para definir la escala de la colección que se agregará al conjunto de revisión:
 
-      - **Agregar todos los resultados de la** colección: seleccione esta opción para agregar todos los elementos que coincidan con los criterios de búsqueda de la colección al conjunto de revisión.
+      - **Agregar todos los resultados de** la colección: seleccione esta opción para agregar todos los elementos que coincidan con los criterios de búsqueda de la colección al conjunto de revisión.
 
       - **Agregar una muestra de los resultados** de la colección: seleccione esta opción para agregar una muestra de los resultados de la colección al conjunto de revisión en lugar de agregar todos los resultados. Si selecciona esta opción, haga clic **en Editar parámetros de ejemplo** y elija una de las siguientes opciones:
 
-         - **Ejemplo basado en la confianza:** los elementos de la colección se agregan al conjunto de revisión se determinarán por los parámetros estadísticos que establezca. Si normalmente usa un nivel de confianza y un intervalo al muestrear los resultados, es preciso especificarlos en los cuadros desplegables. De lo contrario, use la configuración predeterminada.
+         - **Ejemplo basado en la confianza**: los elementos de la colección se agregan al conjunto de revisión se determinarán por los parámetros estadísticos que establezca. Si normalmente usa un nivel de confianza y un intervalo al muestrear los resultados, es preciso especificarlos en los cuadros desplegables. De lo contrario, use la configuración predeterminada.
 
-         - **Ejemplo aleatorio:** los elementos de la colección se agregan al conjunto de revisión en función de una selección aleatoria del porcentaje especificado del número total de elementos devueltos por la búsqueda.
+         - **Ejemplo aleatorio**: los elementos de la colección se agregan al conjunto de revisión en función de una selección aleatoria del porcentaje especificado del número total de elementos devueltos por la búsqueda.
 
-6. En la **página Revisar la colección,** puede revisar la configuración de la colección que configuró en la página anterior. Haga **clic en** Editar si desea cambiarlos.
+6. En la **página Revisar la colección** , puede revisar la configuración de la colección que configuró en la página anterior. Haga **clic en** Editar si desea cambiarlos.
 
 7. Haga **clic en Enviar** para crear la colección borrador. Se muestra una página que confirma que se creó la colección.
 
@@ -74,22 +81,20 @@ Cuando esté satisfecho con los elementos que haya recopilado en una colección 
 
 Cuando se confirma un borrador de colección en un conjunto de revisión, sucede lo siguiente:
 
-- Si creó un nuevo conjunto de revisión para confirmar la colección, el conjunto de revisión se crea y se muestra en la pestaña **Conjuntos** de revisión en el caso. El estado del nuevo conjunto de revisión es **Ready**. Este valor de estado significa que se ha creado el conjunto de revisión; no significa que la colección se haya agregado al conjunto de revisión. El estado de agregar elementos de la colección al conjunto de revisión se muestra en la **pestaña Colecciones.**
+- Si creó un nuevo conjunto de revisión para confirmar la colección, el conjunto de revisión se crea y se muestra en la pestaña **Conjuntos** de revisión en el caso. El estado del nuevo conjunto de revisión es **Listo**. Este valor de estado significa que se ha creado el conjunto de revisión; no significa que la colección se haya agregado al conjunto de revisión. El estado de agregar elementos de la colección al conjunto de revisión se muestra en la **pestaña Colecciones** .
 
 - La consulta de búsqueda de colección se vuelve a ejecutar. Esto significa que los resultados de búsqueda reales copiados en el conjunto de revisión pueden ser diferentes de los resultados estimados que se devolvieron cuando se presentó la última ejecución de la búsqueda de colección.
 
 - Todos los elementos de los resultados de la búsqueda se copian del origen de datos original en el servicio en directo y se copian en una ubicación Azure Storage segura en la nube de Microsoft.
 
-- Todos los elementos (incluidos el contenido y los metadatos) que no se encuentran en orígenes de datos custodios o no custodios se reindexa (en un proceso denominado indización *profunda)* para que todos los datos del conjunto de revisión puedan buscarse completamente durante la revisión de los datos del caso. La reindexación del contenido de una colección da como resultado búsquedas exhaustivas y rápidas al buscar o filtrar el contenido del conjunto de revisión durante la investigación de casos.
-
-- Los SharePoint y OneDrive documentos cifrados y los mensajes de correo electrónico adjuntos de archivos cifrados que se devuelven en los resultados de la búsqueda se descifran al confirmar la colección en un conjunto de revisión. Puede revisar y consultar los archivos descifrados en el conjunto de revisión. Para obtener más información, vea [Decryption in Microsoft 365 eDiscovery tools](ediscovery-decryption.md).
+- Los SharePoint y OneDrive documentos cifrados y los mensajes de correo electrónico adjuntos de archivos cifrados que se devuelven en los resultados de la búsqueda se descifran al confirmar la colección en un conjunto de revisión. Puede revisar y consultar los archivos descifrados en el conjunto de revisión. Para obtener más información, vea [Descifrado en Microsoft 365 herramientas de exhibición de documentos electrónicos](ediscovery-decryption.md).
 
 - La funcionalidad de reconocimiento óptico de caracteres (OCR) extrae texto de imágenes e incluye el texto de la imagen con el contenido que se agrega a un conjunto de opiniones. Para obtener más información, consulte la [sección Reconocimiento óptico de caracteres](#optical-character-recognition) de este artículo.
 
-- Una vez completada correctamente la confirmación, el valor de la columna de estado de en la **ficha Colecciones** se cambia a `Committed` .
+- Una vez completada correctamente la confirmación, el valor de la columna de estado de en la **ficha Colecciones** se cambia a `Committed`.
 
 ## <a name="optical-character-recognition"></a>Reconocimiento óptico de caracteres
 
 Al confirmar una colección en un conjunto de revisión, la funcionalidad de reconocimiento óptico de caracteres (OCR) de Advanced eDiscovery extrae automáticamente texto de imágenes e incluye el texto de la imagen con el contenido que se agrega a un conjunto de opiniones. Puede ver el texto extraído en el visor de texto del archivo de imagen seleccionado en el conjunto de revisión. Esto le permite realizar más análisis y revisar el texto de las imágenes. OCR es compatible con archivos sueltos, datos adjuntos de correo electrónico e imágenes incrustadas. Para obtener una lista de los formatos de archivo de imagen compatibles con OCR, vea [Tipos de archivo admitidos en Advanced eDiscovery](supported-filetypes-ediscovery20.md#image).
 
-Tiene que habilitar la funcionalidad de OCR para cada caso que cree en eDiscovery avanzado. Para obtener más información, vea [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).
+Tiene que habilitar la funcionalidad de OCR para cada caso que cree en eDiscovery avanzado. Para obtener más información, consulte [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).

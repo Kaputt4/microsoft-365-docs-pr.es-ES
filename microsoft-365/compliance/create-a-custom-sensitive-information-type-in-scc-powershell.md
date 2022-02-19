@@ -6,7 +6,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 audience: Admin
-ms.article: article
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para directivas en el Centro de cumplimiento.
-ms.openlocfilehash: ffca0717bbefdad90854f118131fe45ae3ce4dfd
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 89c215ca52b255a6e3aed72ff032cdd2475c0d87
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806245"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903866"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Crear un tipo de información confidencial personalizada con PowerShell
 
@@ -235,7 +235,7 @@ Los tipos de información confidencial también pueden usar funciones integradas
 
 Por ejemplo, un distintivo de id. de empleado tiene una fecha de contratación, `Func_us_date` por lo que esta entidad personalizada puede usar la función integrada para identificar una fecha en el formato que se usa habitualmente en Estados Unidos.
 
-Para obtener más información, vea [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md).
+Para obtener más información, vea [Funciones de tipo de información confidencial](sit-functions.md).
 
 ![Marcado XML que muestra el elemento Match que hace referencia a la función integrada.](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
 
@@ -325,7 +325,7 @@ Además del atributo confidenceLevel de cada elemento Pattern, el elemento Entit
 
 ## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>¿Quiere admitir otros idiomas en la interfaz de usuario del Centro de cumplimiento? [Elemento LocalizedStrings]
 
-Si el equipo de cumplimiento usa el Centro de cumplimiento de Microsoft 365 para crear directivas en distintas configuraciones regionales y diferentes idiomas, puede proporcionar versiones localizadas del nombre y la descripción del tipo de información confidencial personalizado. Cuando el equipo de cumplimiento use Microsoft 365 en un idioma admitido, verán el nombre localizado en la interfaz de usuario.
+Si el equipo de cumplimiento usa el Centro de cumplimiento de Microsoft 365 para crear directivas en diferentes configuraciones regionales y en diferentes idiomas, puede proporcionar versiones localizadas del nombre y la descripción del tipo de información confidencial personalizada. Cuando el equipo de cumplimiento use Microsoft 365 en un idioma compatible, verá el nombre localizado en la interfaz de usuario.
 
 ![Recuento de instancias y configuración de precisión de coincidencia.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
@@ -912,4 +912,4 @@ Puede copiar este marcado, guardarlo como un archivo XSD y usarlo para validar e
 
 - [Obtenga más información acerca de la prevención de pérdida de datos](dlp-learn-about-dlp.md)
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
-- [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md)
+- [Funciones de tipo de información confidencial](sit-functions.md)

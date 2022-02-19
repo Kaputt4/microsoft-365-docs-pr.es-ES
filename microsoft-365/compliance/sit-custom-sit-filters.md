@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se presenta una lista de los filtros que se pueden codificar en tipos de información confidencial personalizados.
-ms.openlocfilehash: e5f3fb99ec4454410c3719dc3d76356e02f03573
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: bcecc13776b20f8b4c61eaf499a99397931fe498
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818233"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903758"
 ---
 # <a name="custom-sensitive-information-type-filters-reference"></a>Personalizar referencia de filtros de tipo de información confidencial
 
@@ -343,4 +343,4 @@ Los filtros se aplicarán en **todas las** instancias clasificadas por cualquier
 
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 
-- [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md)
+- [Funciones de tipo de información confidencial](sit-functions.md)

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a040b42b3d6006e99101596548105701aa36f935
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: ff9f6159bcfb85bd5c423b9775e70edd0ece2209
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121697"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903932"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Paso 3. Realizar una revisión posterior al incidente de su primer incidente
 
@@ -48,7 +48,7 @@ Al asignar alertas a este marco del sector, puede:
 - Identificar las diferencias de habilidades en el reconocimiento del método de ataque.
 - Crea un Power Automate Playbook para una corrección más rápida.
 
-La actividad de revisión posterior a los incidentes también puede dar como resultado ajustar los procesos de configuración de seguridad y del equipo de seguridad, mejorando las capacidades de respuesta de la organización.
+La actividad de revisión posterior a los incidentes también puede dar como resultado ajustar la configuración de seguridad y los procesos del equipo de seguridad para simplificar las capacidades de respuesta de la organización.
 
 ## <a name="next-step"></a>Paso siguiente
 

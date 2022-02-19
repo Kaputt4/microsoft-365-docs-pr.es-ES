@@ -25,12 +25,12 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: material de referencia de prevención de pérdida de datos
-ms.openlocfilehash: 85fa08419b964555ce036b96a78f8c3fe6bab3a1
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 0c7fe1d3ccf1b74641be1d05506f1cc53b743218
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422872"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903533"
 ---
 # <a name="data-loss-prevention-reference"></a>Referencia de prevención de pérdida de datos
 
@@ -73,7 +73,7 @@ With a DLP policy, you can:
 
 Para crear y administrar las directivas DLP, vaya a la página sobre la prevención de pérdida de datos del Centro de cumplimiento de Microsoft 365.
 
-![Página de prevención de pérdida de datos en el Office 365 de &amp; cumplimiento de seguridad.](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Página de prevención de pérdida de datos en el Office 365 de cumplimiento &amp; de seguridad.](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -545,7 +545,7 @@ Cuando crea una directiva DLP que incluye Microsoft Teams como ubicación, la di
 
 ## <a name="permissions"></a>Permisos
 
-De forma predeterminada, los administradores globales, los administradores de seguridad y los administradores de cumplimiento tendrán acceso para crear y aplicar una directiva DLP. Otros miembros del equipo de cumplimiento que crearán directivas DLP necesitan permisos en el Centro de &amp; cumplimiento de seguridad. De forma predeterminada, el administrador de inquilinos tendrá acceso a esta ubicación y puede conceder a los responsables de cumplimiento y a otras personas acceso al Centro de cumplimiento de seguridad, sin darles todos los permisos de un administrador &amp; de inquilinos. Para ello, le recomendamos que:
+De forma predeterminada, los administradores globales, los administradores de seguridad y los administradores de cumplimiento tendrán acceso para crear y aplicar una directiva DLP. Otros miembros del equipo de cumplimiento que crearán directivas DLP necesitan permisos en el Centro de cumplimiento &amp; de seguridad. De forma predeterminada, &amp; el administrador de inquilinos tendrá acceso a esta ubicación y puede conceder a los responsables de cumplimiento y a otras personas acceso al Centro de cumplimiento de seguridad, sin darles todos los permisos de un administrador de inquilinos. Para ello, le recomendamos que:
 
 1. Crear un grupo en Microsoft 365 y adición de responsables de cumplimiento.
 
@@ -591,6 +591,6 @@ Sin embargo, los informes de DLP necesitan extraer datos de todo Microsoft 365,
 
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 
-- [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md)
+- [Funciones de tipo de información confidencial](sit-functions.md)
 
 - [Crear un tipo personalizado de información confidencial](create-a-custom-sensitive-information-type.md)

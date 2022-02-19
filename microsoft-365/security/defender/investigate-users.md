@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 165f1ccb1e0a059d61802e9a8e026b9dbef3efc2
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: bfb8e1fb42dcde1a3140e0990221536c1b76b4f8
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914385"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62904012"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>Investigar usuarios en Microsoft 365 Defender
 
@@ -32,9 +32,9 @@ ms.locfileid: "60914385"
 
 **Se aplica a:**
 
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Parte de la investigación de incidentes puede incluir cuentas de usuario. Comience con la **pestaña Usuarios** para un incidente de Incidentes & **de** \> **_alertas_ _ *\> _* Usuarios**.
+Parte de la investigación de incidentes puede incluir cuentas de usuario. Puede ver los detalles de las cuentas de usuario identificadas en las alertas de un incidente en el portal de Microsoft 365 Defender desde **Incidents & alerts** \> **_incident_*_ \> _* Users**. Por ejemplo:
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Ejemplo de una página Usuarios para un incidente." lightbox="../../media/investigate-incidents/incident-users.png":::
 
@@ -43,11 +43,11 @@ Para obtener un resumen rápido de una cuenta de usuario para el incidente, sele
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Ejemplo del panel de resumen de la cuenta de usuario para un incidente." lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
 
 > [!NOTE]
-> La página Usuario muestra Azure Active Directory organización (Azure AD) así como grupos, lo que le ayuda a comprender los grupos y permisos asociados con un usuario.
+> La página de usuario muestra Azure Active Directory organización (Azure AD) así como grupos, lo que le ayuda a comprender los grupos y permisos asociados con un usuario.
 
-En esta página desplegable, puede revisar la información de amenazas del usuario, incluidos los incidentes actuales, las alertas activas y el nivel de riesgo, así como la exposición del usuario, cuentas, dispositivos y mucho más.
+En este panel, puede revisar la información de amenazas del usuario, incluidos los incidentes actuales, las alertas activas y el nivel de riesgo, así como la exposición del usuario, cuentas, dispositivos y mucho más.
 
-Además, puede realizar acciones directamente en el portal de Microsoft 365 Defender para abordar un usuario en peligro, confirmando que el usuario está en peligro o requiriendo que vuelva a iniciar sesión.
+Además, puede realizar acciones directamente en el portal de Microsoft 365 Defender para solucionar un usuario en peligro, como confirmar que la cuenta de usuario está en peligro o requerir un nuevo inicio de sesión.
 
 Desde aquí, puede seleccionar **Ir a la página de usuario** para ver los detalles de una cuenta de usuario. Por ejemplo:
 
@@ -55,22 +55,22 @@ Desde aquí, puede seleccionar **Ir a la página de usuario** para ver los detal
 
 También puede ver esta página seleccionando el nombre de la cuenta de usuario de la lista de la **página** Usuarios.
 
-Puede ver la pertenencia a grupos para el usuario, seleccionando el número en **Grupos**.
+Puede ver la pertenencia a grupos para el usuario seleccionando el número en **Grupos**.
 
 :::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="Ejemplo de pertenencia a un grupo para un usuario." lightbox="../../media/investigate-users/user-group-membership.png":::
 
-Al seleccionar el icono en **Administrador,** puede ver dónde está el usuario en el árbol de la organización.
+Al seleccionar el icono en **Administrador**, puede ver dónde está el usuario en el árbol de la organización.
 
-La página Microsoft 365 Defender usuario del portal combina información de Microsoft Defender para endpoint, Microsoft Defender for Identity y Microsoft Cloud App Security (en función de las licencias que tenga).
+La página Microsoft 365 Defender usuario del portal de Microsoft 365 Defender combina información de Microsoft Defender para endpoint, Microsoft Defender para Identidad y Microsoft Defender para aplicaciones en la nube (en función de las licencias que tenga).
 
-Esta página muestra información específica del riesgo de seguridad de una cuenta de usuario. Esto incluye una puntuación que ayuda a evaluar el riesgo y los eventos recientes y las alertas que contribuyeron al riesgo general del usuario.
+Esta página muestra información específica del riesgo de seguridad de una cuenta de usuario, que incluye una puntuación que ayuda a evaluar el riesgo y los eventos recientes y las alertas que contribuyeron al riesgo general.
 
 Desde esta página, puede realizar estas acciones adicionales:
 
 - Marcar la cuenta de usuario como comprometida
 - Requerir que el usuario inicie sesión de nuevo
 - Suspender la cuenta de usuario
-- Consulta la configuración Azure Active Directory (Azure AD) de la cuenta de usuario
+- Consulta la configuración Azure AD cuenta de usuario
 - Ver los archivos propiedad de la cuenta de usuario
 - Ver archivos compartidos con este usuario.
 
@@ -78,16 +78,9 @@ Por ejemplo:
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Ejemplo de las acciones de una cuenta de usuario para un incidente." lightbox="../../media/investigate-users/incidents-ss-user-details-actions.png":::
 
-<!--
-You can access this page from multiple areas in the Microsoft 365 Defender portal. You can access this page from a specific incident in the **Users** tab. Some alerts might include users as a specific affected asset. You can also search for users.  
-
-Learn more about how to investigate users and potential risk [in this Cloud App Security tutorial](/cloud-app-security/tutorial-ueba#:~:text=To%20identify%20who%20your%20riskiest,user%20page%20to%20investigate%20them).
-
--->
-
 ## <a name="view-lateral-movement-paths"></a>Ver rutas de movimiento lateral
 
-Al seleccionar  la pestaña Rutas de movimiento lateral, puede ver un mapa totalmente dinámico y en el que se puede hacer clic que le proporciona una representación visual de las rutas de acceso de movimiento lateral hacia y desde este usuario que se puede usar para infiltrar la red.
+Al seleccionar la pestaña  Rutas de movimiento lateral, puede ver un mapa totalmente dinámico y en el que se puede hacer clic que le proporciona una representación visual de las rutas de acceso de movimiento lateral hacia y desde este usuario que se puede usar para infiltrar la red.
 
 El mapa le proporciona una lista de la cantidad de saltos entre equipos o usuarios que un atacante tendría que hacer y desde este usuario para poner en peligro una cuenta confidencial, y si el usuario tiene una cuenta confidencial, puede ver cuántos recursos y cuentas están conectados directamente.
 
@@ -101,7 +94,7 @@ Para obtener más información, vea [Rutas de movimiento lateral](/defender-for-
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)

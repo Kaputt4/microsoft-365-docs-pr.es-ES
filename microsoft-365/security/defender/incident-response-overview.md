@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a8ade86c701b35cf8526bf51fafaacaacaa628ec
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: f66f98d8de585d8b92fad50f70ad812b861d9202
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245248"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903900"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>Investigar y responder con Microsoft 365 Defender
 
@@ -46,10 +46,10 @@ Estas son las tareas principales de investigar y responder para Microsoft 365 De
 
 Los servicios y aplicaciones de Microsoft 365 crean alertas cuando detectan un evento o actividad sospechosos o malintencionados. Las alertas individuales proporcionan pistas valiosas sobre un ataque completado o en curso. Sin embargo, los ataques suelen emplear varias técnicas en distintos tipos de entidades, como dispositivos, usuarios y buzones de entrada. El resultado son varias alertas para varias entidades del espacio empresarial. Dado que unir las alertas individuales para obtener información sobre un ataque puede ser un desafío y un consumo de tiempo, Microsoft 365 Defender agrega automáticamente las alertas y su información asociada a un incidente.
 
-De forma continua, identifique los incidentes más prioritarios para su análisis y resolución en la cola de incidentes y prepárelos para su respuesta. Esta es una combinación de:
+De forma continua, debe identificar los incidentes de mayor prioridad para el análisis y la resolución en la cola de incidentes y prepararlos para la respuesta. Esta es una combinación de:
 
-- [Triaging](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.
-- [Administrar](manage-incidents.md) incidentes modificando su título, asignándolos a un analista y agregando etiquetas y comentarios.
+- [Priorizar la determinación](incident-queue.md) de los incidentes de mayor prioridad mediante el filtrado y ordenación de la cola de incidentes. Esto también se conoce como triaging.
+- [Administrar](manage-incidents.md) incidentes modificando su título, asignándolos a un analista, agregando etiquetas y comentarios y, cuando se resuelven, clasificándolos.
 
 Para cada incidente, use el flujo de trabajo de respuesta a incidentes para analizar el incidente y sus alertas y datos para contener el ataque, eliminar la amenaza, recuperarse del ataque y aprender de él. Vea [este ejemplo](incidents-overview.md#example-incident-response-workflow-for-microsoft-365-defender) para obtener Microsoft 365 Defender.
 
@@ -57,9 +57,9 @@ Para cada incidente, use el flujo de trabajo de respuesta a incidentes para anal
 
 Si su organización usa Microsoft 365 Defender, el equipo de operaciones de seguridad recibe una alerta en el portal de Microsoft 365 Defender siempre que se detecte una actividad o artefacto malintencionados o sospechosos. Dado el flujo interminable de amenazas que pueden llegar, los equipos de seguridad a menudo se enfrentan al desafío de abordar el alto volumen de alertas. Afortunadamente, Microsoft 365 Defender capacidades de investigación y respuesta automatizadas (AIR) que pueden ayudar a su equipo de operaciones de seguridad a abordar las amenazas de forma más eficaz y eficaz.
 
-Cuando se completa una investigación automatizada, se llega a un veredicto para cada parte de evidencia de un incidente implicado. Según el veredicto, se identifican las acciones de corrección. En algunos casos, las acciones de corrección se toman automáticamente; en otros casos, las acciones de corrección esperan la aprobación a través del centro Microsoft 365 Defender acción. 
+Cuando se completa una investigación automatizada, se llega a un veredicto por cada parte de evidencia de un incidente. Según el veredicto, se identifican las acciones de corrección. En algunos casos, las acciones de corrección se toman automáticamente; en otros casos, las acciones de corrección esperan la aprobación a través del centro Microsoft 365 Defender acción. 
 
-Vea [Investigación automatizada y respuesta en Microsoft 365 Defender](m365d-autoir.md) para obtener más información.
+Consulte [Investigación y respuesta automatizadas en Microsoft 365 Defender](m365d-autoir.md) para obtener más información.
 
 ## <a name="proactive-search-for-threats-with-advanced-hunting"></a>Búsqueda proactiva de amenazas con búsqueda avanzada
 
@@ -83,12 +83,12 @@ El análisis de amenazas es una funcionalidad de inteligencia de amenazas Micros
 
 El análisis de amenazas también incluye información sobre incidentes relacionados y activos afectados dentro de Microsoft 365 inquilino para cada amenaza identificada.
 
-Cada amenaza identificada incluye un informe de analista, un análisis completo de la amenaza escrita por investigadores de seguridad de Microsoft que están a la vanguardia de la detección y el análisis de ciberseguridad y pueden proporcionar información sobre cómo aparecen los ataques en Microsoft 365 Defender.
+Cada amenaza identificada incluye un informe de analista, un análisis completo de la amenaza escrita por los investigadores de seguridad de Microsoft que están a la vanguardia de la detección y el análisis de ciberseguridad. Estos informes también pueden proporcionar información sobre cómo aparecen los ataques en Microsoft 365 Defender.
 
-Para obtener más información, vea [Análisis de amenazas en Microsoft 365 Defender](threat-analytics.md).
+Para obtener más información, consulte [Análisis de amenazas en Microsoft 365 Defender](threat-analytics.md).
 
 ## <a name="collaborate-with-microsoft-experts"></a>Colaborar con expertos de Microsoft
 
 Expertos en amenazas de Microsoft: las notificaciones de ataque dirigidos son un servicio de búsqueda de amenazas administrado. Una vez que apliques y te acepten, recibirás notificaciones de ataques dirigidos de expertos en amenazas de Microsoft, para que no te pierdas las amenazas críticas a tu entorno. Estas notificaciones le ayudarán a proteger los puntos de conexión, el correo electrónico y las identidades de su organización. Expertos en amenazas de Microsoft: expertos a petición te permiten obtener consejos de expertos sobre las amenazas a las que se enfrenta la organización y puedes obtener ayuda sobre las amenazas a las que se enfrenta la organización. Está disponible como servicio de suscripción adicional.
 
-Para obtener más información, [vea Expertos en amenazas de Microsoft en Microsoft 365 overview](/security/mtp/microsoft-threat-experts.md).
+Para obtener más información, [vea Expertos en amenazas de Microsoft en Microsoft 365 información general](/security/mtp/microsoft-threat-experts.md).

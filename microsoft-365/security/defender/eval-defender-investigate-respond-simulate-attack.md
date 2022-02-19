@@ -22,12 +22,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b7118d51ce87e26b6752ac767040a26e87464f22
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: a3e1543ed56580983fec5b7eee6366e817d82079
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807481"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62904164"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Ejecutar una simulación de ataque en un Microsoft 365 Defender piloto
 
@@ -62,15 +62,15 @@ Defender para Office 365 con Microsoft 365 E5 o Microsoft Defender para Office 3
 
 1. Crear una simulación
 
-   Para obtener instrucciones paso a paso sobre cómo crear y enviar una nueva simulación, consulta [Simular un ataque de phishing](/microsoft-365/security/office-365-security/attack-simulation-training).
+   Para obtener instrucciones paso a paso sobre cómo crear e iniciar una nueva simulación, consulta [Simular un ataque de phishing](/microsoft-365/security/office-365-security/attack-simulation-training).
 
 2. Crear una carga
 
-   Para obtener instrucciones paso a paso sobre cómo crear una carga para su uso en una simulación, consulta Crear una carga personalizada para el aprendizaje [de simulación de ataques](/microsoft-365/security/office-365-security/attack-simulation-training-payloads).
+   Para obtener instrucciones paso a paso sobre cómo crear una carga para su uso dentro de una simulación, consulta Crear una carga personalizada para el aprendizaje de [simulación de ataques](/microsoft-365/security/office-365-security/attack-simulation-training-payloads).
 
 3. Obtener información
 
-   Para obtener instrucciones paso a paso sobre cómo obtener información con los informes, consulta Obtener información a través del aprendizaje [de simulación de ataques](/microsoft-365/security/office-365-security/attack-simulation-training-insights).
+   Para obtener instrucciones paso a paso sobre cómo obtener información con los informes, consulta Obtener información a través del [aprendizaje de simulación de ataques](/microsoft-365/security/office-365-security/attack-simulation-training-insights).
 
    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvB]
 
@@ -83,15 +83,15 @@ Estas son las simulaciones de Defender para puntos de conexión de Microsoft:
 - El documento deja atrás la puerta trasera
 - Investigación automatizada (puerta trasera)
 
-Hay simulaciones adicionales de Attack IQ y SafeBreach. También hay un conjunto de tutoriales.
+Hay simulaciones adicionales de orígenes de terceros. También hay un conjunto de tutoriales.
 
 Para cada simulación o tutorial:
 
-1. Descargue y lea el documento de recorrido correspondiente proporcionado con la simulación o escenario seleccionado.
+1. Descargue y lea el documento de acceso completo correspondiente proporcionado.
 
 2. Descargue el archivo de simulación. Puedes elegir descargar el archivo o script en el dispositivo de prueba, pero no es obligatorio.
 
-3. Ejecute el archivo de simulación o el script en el dispositivo de prueba como se indica en el documento de recorrido.
+3. Ejecute el archivo de simulación o el script en el dispositivo de prueba como se indica en el documento de paso a paso.
 
  Para obtener más información, vea [Experience Microsoft Defender for Endpoint through simulated attack](/microsoft-365/security/defender-endpoint/attack-simulations).
 
@@ -322,11 +322,11 @@ Una vez completada la investigación y confirmada su corrección, resolverá el 
 
 En la **página** Incidente, seleccione **Administrar incidente**. Establezca el estado en **Resolver incidente** y seleccione **Alerta verdadera** para la clasificación y **pruebas de seguridad** para la determinación.
 
-![Ejemplo de la página incidentes con el panel administrar incidentes abierto donde puede hacer clic en el modificador para resolver incidentes.](../../media/mtp/fig16.png)
+![Ejemplo de la página incidentes con el panel administrar incidentes abierto donde puede resolver el incidente.](../../media/mtp/fig16.png)
 
 Cuando se resuelve el incidente, resuelve todas las alertas asociadas en el portal de Microsoft 365 Defender y los portales relacionados.
 
-Esto ajusta la simulación de ataque para el análisis de incidentes, la investigación automatizada y la resolución de incidentes.
+Esto ajusta las simulaciones de ataque para el análisis de incidentes, la investigación automatizada y la resolución de incidentes.
 
 ## <a name="next-step"></a>Paso siguiente
 

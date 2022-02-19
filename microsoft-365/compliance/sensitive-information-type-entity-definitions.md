@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Hay muchos tipos de información confidencial que están listos para su uso en las directivas DLP. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo.
-ms.openlocfilehash: 208c36aec9baf1aeee2856869b3a789312305a9b
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: a3d2592af6b7692b5a5e634947deb811412b5650
+ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766901"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62903824"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -102,7 +102,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 ## <a name="all-full-names"></a>Todos los nombres completos
 
-Se trata de una entidad con nombre agrupada que detecta nombres completos de personas de todos los países o regiones compatibles, que incluyen Australia, China, Japón, Estados Unidos y países de la UE. Use este SIT para detectar todas las coincidencias posibles de nombres completos.
+Todos los nombres completos son una entidad con nombre agrupada. Detecta nombres completos de personas de todos los países o regiones compatibles, que incluyen Australia, China, Japón, Estados Unidos y países de la UE. Use este SIT para detectar todas las coincidencias posibles de nombres completos.
 
 ### <a name="format"></a>Formato
 
@@ -118,13 +118,13 @@ No.
 
 ### <a name="description"></a>Descripción
 
-Esta entidad con nombre SIT coincide con los nombres personales que un humano identificaría como un nombre de elevada confianza. Usa tres recursos principales:
+Esta entidad con nombre SIT coincide con los nombres personales que un humano identificaría como un nombre de elevada confianza. Por ejemplo, si se encuentra una cadena que consta de un nombre determinado y se le sigue un nombre de familia, se realiza una coincidencia con elevada confianza. Usa tres recursos principales:
 
 -   Diccionario de nombres determinados.
 -   Diccionario de nombres de familia.
 -   Patrones de cómo se forman los nombres.
 
-Los tres recursos son diferentes para cada país. Por ejemplo, para los nombres del diccionario de Estados Unidos, si se encuentra una cadena que consta de un nombre determinado y está seguida de un nombre de familia, se realiza una coincidencia con elevada confianza. Las cadenas *que Olivia Wilson* desencadenaría una coincidencia. Los nombres de familia/dados comunes tienen una mayor confianza que los nombres más raros. Sin embargo, el patrón también permite coincidencias parciales. Por ejemplo, un nombre determinado del diccionario seguido de un nombre de familia que no está en el diccionario, como *Tomas Richard* desencadenaría una coincidencia parcial. Las coincidencias parciales tienen menos confianza.
+Los tres recursos son diferentes para cada país.  Las cadenas *que Olivia Wilson* desencadenaría una coincidencia. Los nombres de familia/dados comunes tienen una mayor confianza que los nombres más raros. Sin embargo, el patrón también permite coincidencias parciales. Si se encuentra un nombre determinado del diccionario y le sigue un nombre de familia que no está en el diccionario, se desencadena una coincidencia parcial. Por ejemplo, *Tomas Richard* desencadenaría una coincidencia parcial. Las coincidencias parciales tienen menos confianza.
 
 Además, los patrones que un humano vería como indicativos de nombres también coinciden con la confianza adecuada. Como *O. Wilson*, *O.P. Wilson*, *Dr. O. P. Wilson*, *Wilson, O.P.* o *T. Richard, Jr.* serían coincidencias.
 
@@ -162,7 +162,7 @@ Además, los patrones que un humano vería como indicativos de nombres también 
 
 ## <a name="all-medical-terms-and-conditions"></a>Todos los términos y condiciones médicos
 
-Se trata de una entidad con nombre agrupada que detecta términos médicos y condiciones médicas. Solo detecta términos en inglés. Use este SIT para detectar todas las coincidencias posibles de términos y condiciones médicas.
+Todos los términos y condiciones médicas son una entidad con nombre agrupada que detecta términos y condiciones médicas. Solo detecta términos en inglés. Use este SIT para detectar todas las coincidencias posibles de términos y condiciones médicas.
 
 ### <a name="format"></a>Formato
 
@@ -178,7 +178,7 @@ No
 
 ### <a name="description"></a>Descripción
 
-Esta entidad con nombre agrupada coincide con el texto que menciona las condiciones médicas que están presentes en diccionarios seleccionados. Hay un diccionario seleccionado por idioma admitido. Los diccionarios son de varios recursos médicos internacionales. Los diccionarios seleccionados incorporan tantas condiciones médicas como sea posible sin riesgo de un gran número de falsos positivos. . Cada entrada contiene los diferentes formularios en los que se escribe una sola condición para garantizar la cobertura, por ejemplo:
+Esta entidad con nombre agrupada coincide con el texto que menciona las condiciones médicas que están presentes en diccionarios seleccionados. Hay un diccionario seleccionado por idioma admitido. Los diccionarios son de muchos recursos médicos internacionales. Los diccionarios incluyen tantas condiciones médicas como sea posible sin riesgo de un gran número de falsos positivos. Cada entrada contiene los diferentes formularios en los que se escribe una sola condición para garantizar la cobertura, por ejemplo:
 
 - *TB*
 - *tuberculosis*
@@ -202,7 +202,7 @@ Esta entidad con nombre agrupada SIT contiene estos SIT individuales.
 
 ## <a name="all-physical-addresses"></a>Todas las direcciones físicas
 
-Se trata de una entidad agrupada SIT que detecta patrones relacionados con direcciones físicas de todos los países o regiones compatibles.
+Todas las direcciones físicas son una entidad agrupada SIT, que detecta patrones relacionados con direcciones físicas de todos los países o regiones compatibles.
 
 ### <a name="format"></a>Formato
 
@@ -225,52 +225,52 @@ La coincidencia de direcciones de calle está diseñada para coincidir con las c
 -   Patrones de códigos postales.
 -   Patrones de formatos de dirección.
 
-Los recursos son diferentes para cada país. Los recursos principales son los patrones de formatos de direcciones que se usan en un país determinado. Los distintos formatos se eligen para asegurarse de que el mayor número de direcciones posible coincidan, sin correr el riesgo de un número elevado de falsos positivos. Estos formatos permiten flexibilidad, por ejemplo, una dirección puede omitir el código postal u omitir un nombre de ciudad o tener una calle sin sufijo de calle. En todos los casos, estas coincidencias se usan para aumentar la confianza de la coincidencia.
+Los recursos son diferentes para cada país. Los recursos principales son los patrones de formatos de direcciones que se usan en un país determinado. Se eligen distintos formatos para asegurarse de que se coincidan tantas direcciones como sea posible. Estos formatos permiten flexibilidad, por ejemplo, una dirección puede omitir el código postal u omitir un nombre de ciudad o tener una calle sin sufijo de calle. En todos los casos, estas coincidencias se usan para aumentar la confianza de la coincidencia.
 
-Tenga en cuenta que los patrones están diseñados para que coincidan con direcciones individuales, no con ubicaciones genéricas. Por lo tanto, cadenas como *Redmond, WA 98052* o *Main Street, Albuquerque* no coincidirán.
+Los patrones están diseñados para que coincidan con direcciones individuales, no con ubicaciones genéricas. Por lo tanto, cadenas como *Redmond, WA 98052* o *Main Street, Albuquerque* no coincidirán.
 
 ### <a name="contains"></a>Contains
 
 Esta entidad con nombre agrupada SIT contiene estos SIT individuales:
 
-- Dirección física de Australia
-- Dirección física de Austria
-- Dirección física de Bélgica
-- Dirección física de Brasil
-- Dirección física de Bulgaria
-- Dirección física de Canadá
-- Dirección física de Croacia
-- Dirección física de Chipre
-- Dirección física de la República Checa
-- Dirección física de Dinamarca
-- Dirección física de Estonia
-- Dirección física de Finlandia
-- Dirección física de Francia
-- Dirección física de Alemania
-- Dirección física de Grecia
-- Dirección física de Hungría
-- Dirección física de Islandia
-- Dirección física de Irlanda
-- Dirección física de Italia
-- Dirección física de Letonia
-- Dirección física de Liechtenstein
-- Dirección física de Lituania
-- Dirección física de Luxemburgo
-- Dirección física de Malta
-- Dirección física neerlandesa
-- Dirección física de Nueva Zelanda
-- Dirección física de Noruega
-- Dirección física de Polonia
-- Dirección física de Portugal
-- Dirección física de Rumania
-- Dirección física de Eslovaquia
-- Dirección física de Eslovenia
-- Dirección física de España
-- Dirección física de Suecia
-- Dirección física de Suiza
-- Dirección física de Turquía
-- Dirección física del Reino Unido
-- Dirección física de Estados Unidos
+- Direcciones físicas de Australia
+- Direcciones físicas de Austria
+- Direcciones físicas de Bélgica
+- Direcciones físicas de Brasil
+- Direcciones físicas de Bulgaria
+- Direcciones físicas de Canadá
+- Direcciones físicas de Croacia
+- Direcciones físicas de Chipre
+- Direcciones físicas de república checa
+- Direcciones físicas de Dinamarca
+- Direcciones físicas de Estonia
+- Direcciones físicas de Finlandia
+- Direcciones físicas de Francia
+- Direcciones físicas de Alemania
+- Direcciones físicas de Grecia
+- Direcciones físicas de Hungría
+- Direcciones físicas de Islandia
+- Direcciones físicas de Irlanda
+- Direcciones físicas de Italia
+- Direcciones físicas de Letonia
+- Direcciones físicas de Liechtenstein
+- Direcciones físicas de Lituania
+- Direcciones físicas de Luxemburgo
+- Direcciones físicas de Malta
+- Direcciones físicas neerlandeses
+- Direcciones físicas de Nueva Zelanda
+- Direcciones físicas de Noruega
+- Direcciones físicas de Polonia
+- Direcciones físicas de Portugal
+- Direcciones físicas de Rumania
+- Direcciones físicas de Eslovaquia
+- Direcciones físicas de Eslovenia
+- Direcciones físicas de España
+- Direcciones físicas de Suecia
+- Direcciones físicas de Suiza
+- Direcciones físicas de Turquía
+- Direcciones físicas del Reino Unido
+- Direcciones físicas de Estados Unidos
 
 ### <a name="supported-languages"></a>Idiomas admitidos
 
@@ -894,7 +894,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 ## <a name="australia-physical-addresses"></a>Direcciones físicas de Australia 
 
-Entidad con nombre desagrupada, detecta patrones relacionados con la dirección física de Australia.
+Entidad con nombre desagrupada, detecta patrones relacionados con la dirección física de Australia. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 medium
@@ -1255,7 +1255,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="austria-physical-addresses"></a>Direcciones físicas de Austria
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Austria. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Austria. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -2316,7 +2316,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="belgium-physical-addresses"></a>Direcciones físicas de Bélgica
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con direcciones físicas de Bélgica.
+Esta entidad con nombre desagrupada detecta patrones relacionados con direcciones físicas de Bélgica. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -2392,7 +2392,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="blood-test-terms"></a>Términos del examen de sangre
 
-Esta entidad con nombre desagrupada detecta términos relacionados con análisis de sangre, como *hCG*. Solo admite términos en inglés.
+Esta entidad con nombre desagrupada detecta términos relacionados con análisis de sangre, como *hCG*. Solo admite términos en inglés. También se incluye en la [entidad SIT todos los términos y condiciones](#all-medical-terms-and-conditions) médicos incluidos.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -2400,7 +2400,7 @@ Alto
 
 ## <a name="brand-medication-names"></a>Nombres de medicación de marca
 
-Esta entidad con nombre desagrupada detecta nombres de medicamentos de marca, como *Tylenol*. Solo admite términos en inglés.
+Esta entidad con nombre desagrupada detecta nombres de medicamentos de marca, como *Tylenol*. Solo admite términos en inglés. También se incluye en la [entidad SIT todos los términos y condiciones](#all-medical-terms-and-conditions) médicos incluidos.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -2605,7 +2605,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 ## <a name="brazil-physical-addresses"></a>Direcciones físicas de Brasil
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Brasil. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Brasil. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -2853,7 +2853,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="bulgaria-physical-addresses"></a>Direcciones físicas de Bulgaria
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Bulgaria. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Bulgaria. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -3448,7 +3448,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="canada-physical-addresses"></a>Direcciones físicas de Canadá
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Canadá. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Canadá. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -4367,7 +4367,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="croatia-physical-addresses"></a>Direcciones físicas de Croacia
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Croacia. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Croacia. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -4672,7 +4672,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="cyprus-physical-addresses"></a>Direcciones físicas de Chipre
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Chipre. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Chipre. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -5104,7 +5104,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="czech-republic-physical-addresses"></a>Direcciones físicas de república checa
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de la República Checa. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de la República Checa. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -5468,7 +5468,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 ## <a name="denmark-physical-addresses"></a>Direcciones físicas de Dinamarca
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Dinamarca. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Dinamarca. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -5477,7 +5477,7 @@ Mediano
 
 ## <a name="diseases"></a>Las enfermedades
 
-Esta entidad con nombre desagrupada detecta texto que coincide con nombres de enfermedad, como *la diabetes*. Solo admite términos en inglés.
+Esta entidad con nombre desagrupada detecta texto que coincide con nombres de enfermedad, como *la diabetes*. Solo admite términos en inglés. También se incluye en la [entidad SIT todos los términos y condiciones](#all-medical-terms-and-conditions) médicos incluidos.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -5873,7 +5873,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="estonia-physical-addresses"></a>Direcciones físicas de Estonia
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Estonia. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Estonia. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -6809,7 +6809,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="finland-physical-addresses"></a>Direcciones físicas de Finlandia
 
-Esta entidad con nombre sin agrupar detecta patrones relacionados con la dirección física de Finlandia. 
+Esta entidad con nombre sin agrupar detecta patrones relacionados con la dirección física de Finlandia. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -7172,7 +7172,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="france-physical-addresses"></a>Direcciones físicas de Francia
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Francia. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Francia. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -7403,7 +7403,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="generic-medication-names"></a>Nombres de medicamentos genéricos
 
-Esta entidad con nombre desagrupada detecta nombres de medicamentos genéricos, como *acetominofeno*. Solo admite términos en inglés.
+Esta entidad con nombre desagrupada detecta nombres de medicamentos genéricos, como *paracetamol*. Solo admite términos en inglés. También se incluye en la [entidad SIT todos los términos y condiciones](#all-medical-terms-and-conditions) médicos incluidos.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -7764,7 +7764,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 ## <a name="germany-physical-addresses"></a>Direcciones físicas de Alemania
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Alemania. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Alemania. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -8207,7 +8207,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="greece-physical-addresses"></a>Direcciones físicas de Grecia
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Grecia. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Grecia. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -8737,7 +8737,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="hungary-physical-addresses"></a>Direcciones físicas de Hungría
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Hungría. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Hungría. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -8955,7 +8955,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="iceland-physical-addresses"></a>Direcciones físicas de Islandia
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Islandia. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Islandia. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -8963,7 +8963,7 @@ Mediano
 
 ## <a name="impairments-listed-in-the-us-disability-evaluation-under-social-security"></a>Impedimentos enumerados en la evaluación de discapacidades de EE.UU. en la Seguridad Social
 
-Esta entidad con nombre no agrupada detecta los nombres de las discapacidades enumeradas en la Evaluación de discapacidades de Estados Unidos en el Seguro Social, como *la distrofia muscular*. Solo admite términos en inglés.
+Esta entidad con nombre no agrupada detecta los nombres de las discapacidades enumeradas en la Evaluación de discapacidades de Estados Unidos en el Seguro Social, como *la distrofia muscular*. Solo admite términos en inglés. También se incluye en la [entidad SIT todos los términos y condiciones](#all-medical-terms-and-conditions) médicos incluidos.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -10093,7 +10093,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 ## <a name="ireland-physical-addresses"></a>Direcciones físicas de Irlanda
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Irlanda. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Irlanda. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -10548,7 +10548,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="italy-physical-addresses"></a>Direcciones físicas de Italia
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Italia. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Italia. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -11123,7 +11123,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="lab-test-terms"></a>Términos de prueba de laboratorio
 
-Esta entidad con nombre desagrupada detecta términos relacionados con pruebas de laboratorio, como *el péptido C de la insulina*. Solo admite términos en inglés.
+Esta entidad con nombre desagrupada detecta términos relacionados con pruebas de laboratorio, como *el péptido C de la insulina*. Solo admite términos en inglés. También se incluye en la [entidad SIT todos los términos y condiciones](#all-medical-terms-and-conditions) médicos incluidos.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -11513,7 +11513,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="latvia-physical-addresses"></a>Direcciones físicas de Letonia
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Letonia. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Letonia. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -11522,7 +11522,7 @@ Mediano
 
 ## <a name="liechtenstein-physical-addresses"></a>Direcciones físicas de Liechtenstein
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Liechtenstein . 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Liechtenstein. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas. 
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -11531,7 +11531,7 @@ Mediano
 
 ## <a name="lifestyles-that-relate-to-medical-conditions"></a>Estilos de vida relacionados con condiciones médicas
 
-Esta entidad con nombre no agrupada detecta términos relacionados con estilos de vida que pueden resultar en una condición médica, como *el tabaquismo*. Solo admite términos en inglés.
+Esta entidad con nombre no agrupada detecta términos relacionados con estilos de vida que pueden resultar en una condición médica, como *el tabaquismo*. Solo admite términos en inglés. También se incluye en la [entidad SIT todos los términos y condiciones](#all-medical-terms-and-conditions) médicos incluidos.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -11794,7 +11794,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="lithuania-physical-addresses"></a>Direcciones físicas de Lituania
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Lituania. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Lituania. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -12297,7 +12297,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="luxemburg-physical-addresses"></a>Direcciones físicas de Luxemburgo
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Luxemburgo. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Luxemburgo. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -12681,7 +12681,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="malta-physical-addresses"></a>Direcciones físicas de Malta
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Malta. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Malta. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -12779,7 +12779,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 ## <a name="medical-specialities"></a>Especialidades médicas
 
-Esta entidad con nombre desagrupada detecta términos relacionados con las especialidades médicas, como *la dermatología*.  Solo admite términos en inglés.
+Esta entidad con nombre desagrupada detecta términos relacionados con las especialidades médicas, como *la dermatología*.  Solo admite términos en inglés. También se incluye en la [entidad SIT todos los términos y condiciones](#all-medical-terms-and-conditions) médicos incluidos.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -13211,7 +13211,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="netherlands-physical-addresses"></a>Direcciones físicas neerlandeses
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de los Países Bajos. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de los Países Bajos. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -13657,7 +13657,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="new-zealand-physical-addresses"></a>Direcciones físicas de Nueva Zelanda
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Nueva Zelanda. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Nueva Zelanda. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -13780,7 +13780,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="norway-physical-addresses"></a>Direcciones físicas de Noruega
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Noruega. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Noruega. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -14193,7 +14193,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 ## <a name="poland-physical-addresses"></a>Direcciones físicas de Polonia
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Polonia. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Polonia. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -14663,7 +14663,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="portugal-physical-addresses"></a>Direcciones físicas de Portugal
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Portugal. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Portugal. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -15082,7 +15082,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="romania-physical-addresses"></a>Direcciones físicas de Rumania
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Rumania. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Rumania. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -15655,7 +15655,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 ## <a name="slovakia-physical-addresses"></a>Direcciones físicas de Eslovaquia
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Eslovaquia. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Eslovaquia. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -15912,7 +15912,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="slovenia-physical-addresses"></a>Direcciones físicas de Eslovenia
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Eslovenia. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Eslovenia. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -16535,7 +16535,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="spain-physical-addresses"></a>Direcciones físicas de España
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de España. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de España. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -16788,7 +16788,7 @@ Este tipo de información confidencial identifica estas palabras clave mediante 
 
 ## <a name="surgical-procedures"></a>Procedimientos quirúrgicos
 
-Esta entidad con nombre desagrupada detecta términos relacionados con procedimientos quirúrgicos, como *la apendicectomía*.  Solo admite términos en inglés.
+Esta entidad con nombre desagrupada detecta términos relacionados con procedimientos quirúrgicos, como *la apendicectomía*.  Solo admite términos en inglés. También se incluye en la [entidad SIT todos los términos y condiciones](#all-medical-terms-and-conditions) médicos incluidos.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -17131,7 +17131,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="sweden-physical-addresses"></a>Direcciones físicas de Suecia
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Suecia. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Suecia. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -17297,7 +17297,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="switzerland-physical-addresses"></a>Direcciones físicas de Suiza
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Suiza. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Suiza. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -17638,7 +17638,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="turkey-physical-addresses"></a>Direcciones físicas de Turquía
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Turquía. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Turquía. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -17647,7 +17647,7 @@ Mediano
 
 ## <a name="types-of-medication"></a>Tipos de medicación
 
-Esta entidad con nombre desagrupada detecta nombres de medicación, como *la insulina*.  Solo admite términos en inglés.
+Esta entidad con nombre desagrupada detecta nombres de medicación, como *la insulina*.  Solo admite términos en inglés. También se incluye en la [entidad SIT todos los términos y condiciones](#all-medical-terms-and-conditions) médicos incluidos.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -17665,7 +17665,7 @@ Combinación de 18 letras y dígitos en el formato especificado
 18 letras y dígitos:
 - Cinco letras (no distinguen mayúsculas de minúsculas) o el dígito "9" en lugar de una letra.
 - Un dígito.
-- Cinco dígitos en el formato de fecha MMDDY para la fecha de nacimiento. El séptimo carácter se incrementa en 50 si el controlador es mujer; para exampe, de 51 a 62 en lugar de 01 a 12.
+- Cinco dígitos en el formato de fecha MMDDY para la fecha de nacimiento. El séptimo carácter se incrementa en 50 si el controlador es mujer; por ejemplo, de 51 a 62 en lugar de 01 a 12.
 - Dos letras (no distinguen mayúsculas de minúsculas) o el dígito "9" en lugar de una letra.
 - Cinco dígitos.
 
@@ -18012,7 +18012,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ## <a name="uk-physical-addresses"></a>Reino Unido direcciones físicas
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física del Reino Unido. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física del Reino Unido. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
@@ -18377,7 +18377,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 ## <a name="us-physical-addresses"></a>Direcciones físicas de EE. UU.
 
-Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Estados Unidos. 
+Esta entidad con nombre desagrupada detecta patrones relacionados con la dirección física de Estados Unidos. También se incluye en la [entidad con nombre SIT todas las direcciones](#all-physical-addresses) físicas agrupadas.
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
