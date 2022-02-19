@@ -322,7 +322,7 @@
               href: named-entities-learn.md
         - name: Introducción a los tipos de información confidencial
           items:
-            - name: Introducción a los tipos de información confidencial personalizados - Centro de cumplimiento
+            - name: 'Creación de tipos personalizados de información confidencial: Centro de cumplimiento'
               href: create-a-custom-sensitive-information-type.md
             - name: Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos
               href: sit-get-started-exact-data-match-based-sits-overview.md
@@ -344,6 +344,10 @@
               href: sit-modify-edm-schema-configurable-match.md
             - name: Crear notificaciones para actividades de coincidencia exacta de datos (vista previa)
               href: sit-edm-notifications-activities.md
+            - name: Administrar tipos personalizados de información confidencial en el Centro de cumplimiento
+              href: sit-manage-custom-sits-compliance-center.md
+            - name: Validadores REGEX de tipos de información confidencial y comprobaciones adicionales
+              href: sit-regex-validators-additional-checks.md
             - name: Crear un tipo de información confidencial personalizada con PowerShell
               href: create-a-custom-sensitive-information-type-in-scc-powershell.md
             - name: Eliminar un tipo de información confidencial personalizada con PowerShell
@@ -366,8 +370,8 @@
           items:
             - name: Definiciones de entidad de tipos de información confidencial
               href: sensitive-information-type-entity-definitions.md
-            - name: Qué buscan las funciones de DLP
-              href: what-the-dlp-functions-look-for.md
+            - name: Funciones de tipo de información confidencial
+              href: sit-functions.md
             - name: Personalizar referencia de filtros de tipo de información confidencial
               href: sit-custom-sit-filters.md
     - name: Clasificadores que se pueden entrenar

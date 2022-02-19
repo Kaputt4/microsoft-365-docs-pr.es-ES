@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
 description: Use el acceso controlado a carpetas, MIP, DLP y Microsoft Defender for Cloud Apps para proteger sus datos confidenciales de Microsoft 365.
-ms.openlocfilehash: 4d6218ef32b10f99fcd1836444add49a7c4cb40c
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e5973373b9a831a8abaf8356866524c6c0639224
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110048"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886995"
 ---
 # <a name="step-5-protect-information"></a>Paso 5. Proteger información
 
@@ -31,7 +31,7 @@ Dado que los atacantes de ransomware también examinarán los datos locales ubic
 Para proporcionar protección adicional a la información confidencial en su espacio empresarial de Microsoft 365:
 
 - Busque su información confidencial.
-- Implemente permisos estrictos y elimine el acceso amplio (por ejemplo, demasiados usuarios con capacidades de escritura, edición y eliminación).
+- Implemente permisos estrictos y elimine el acceso amplio (por ejemplo, impedir que demasiados usuarios tengan capacidades de escritura, edición y eliminación).
 - Proteja su información confidencial.
 
 >[!Note]
@@ -54,17 +54,17 @@ Para cada tipo de información confidencial, determine lo siguiente:
 - Su ubicación actual, como una carpeta de OneDrive o SharePoint o un lugar de colaboración, como un equipo de Microsoft Teams
 - Los permisos actuales, que constan de:
 
-   - Las cuentas de usuario que tienen acceso a ella
+   - Las cuentas de usuario que tienen acceso
 
-   - Las acciones que se permiten por parte de cada cuenta que tiene acceso a ella
+   - Las acciones que se permiten por parte de cada cuenta que tiene acceso 
 
 ## <a name="implement-strict-permissions-for-locations-with-sensitive-information"></a>Implementar permisos estrictos para ubicaciones con información confidencial
 
-El uso de permisos estrictos dentro de su espacio empresarial de Microsoft 365 es el principio de privilegios mínimos para ubicaciones y lugares de comunicaciones, que en Microsoft 365 suelen ser carpetas de OneDrive, sitios y carpetas de SharePoint, y equipos. 
+La implementación de permisos estrictos dentro de su espacio empresarial de Microsoft 365 utiliza el principio de privilegios mínimos para ubicaciones y lugares de comunicaciones, que en Microsoft 365 suelen ser carpetas de OneDrive, sitios y carpetas de SharePoint, y equipos. 
 
 Aunque es más fácil crear ubicaciones de almacenamiento de archivos o equipos con acceso amplio (como el valor predeterminado de todos los usuarios de la organización), en el caso de la información confidencial, las cuentas de usuario permitidas y las acciones permitidas deben limitarse al conjunto mínimo necesario para cumplir los requisitos empresariales y de colaboración.
 
-Una vez que un atacante de ransomware se ha infiltrado en el espacio empresarial, intenta escalar sus privilegios poniendo en peligro las credenciales de las cuentas de usuario con un ámbito más amplio de permisos en el espacio empresarial, como cuentas de rol de administrador o cuentas de usuario que tienen acceso a información confidencial. 
+Una vez que un atacante ransomware se ha infiltrado en su inquilino, intentan aumentar sus privilegios al poner en peligro las credenciales de las cuentas de usuario con ámbitos de permisos más amplios en el inquilino, como cuentas de rol de administrador o cuentas de usuario que tienen acceso a información confidencial. 
 
 En función de este comportamiento típico del atacante, hay dos niveles de dificultad para el atacante:
 
@@ -80,11 +80,11 @@ Puede garantizar permisos estrictos en su espacio empresarial con estos pasos:
 3. Realice la administración de cambios para los usuarios para que las ubicaciones futuras de información confidencial se creen y mantengan con permisos estrictos.
 4. Audite y supervise las ubicaciones en busca de información confidencial para asegurarse de que no se conceden permisos amplios.
 
-Consulte [Configurar la colaboración segura con Microsoft 365 y Microsoft Teams](setup-secure-collaboration-with-teams.md) para obtener instrucciones detalladas. Un ejemplo de un lugar de comunicación y colaboración con permisos estrictos para información confidencial es un [equipo con aislamiento de seguridad](/microsoft-365/solutions/secure-teams-security-isolation).
+Consulte [Configurar el uso compartido seguro de archivos y la colaboración con Microsoft Teams](setup-secure-collaboration-with-teams.md) para obtener instrucciones detalladas. Un ejemplo de un lugar de comunicación y colaboración con permisos estrictos para información confidencial es un [equipo con aislamiento de seguridad](/microsoft-365/solutions/secure-teams-security-isolation).
 
 ## <a name="protect-your-sensitive-information"></a>Proteger su información confidencial
 
-Para proteger la información confidencial en caso de que un atacante de ransomware tenga acceso a ella:
+Para proteger la información confidencial en caso de que un atacante de ransomware obtenga acceso a ella:
 
 - Use el [acceso controlado a carpetas](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) para que sea más difícil para las aplicaciones no autorizadas modificar los datos en carpetas controladas.
 
@@ -100,13 +100,13 @@ Los cambios administrativos en permisos amplios pueden provocar que se deniegue 
 
 Además, para la protección de la información confidencial en su espacio empresarial de Microsoft 365, entrene a los usuarios para que realicen lo siguiente:
 
-- Creen lugares de comunicación y colaboración con permisos estrictos (el conjunto mínimo de cuentas de usuario para el acceso y las acciones mínimas permitidas para cada una). 
+- Creen lugares de comunicación y colaboración con permisos estrictos (el conjunto mínimo de cuentas de usuario para el acceso y las acciones mínimas permitidas para cada cuenta). 
 - Apliquen las etiquetas de confidencialidad adecuadas a la información confidencial.
 - Use el acceso controlado a carpetas.
 
 ## <a name="resulting-configuration"></a>Configuración resultante
 
-Esta es la protección contra ransomware para su espacio empresarial de los pasos 1-5.
+Esta es la protección contra ransomware para el espacio empresarial de los pasos 1 a 5.
 
 ![Protección contra ransomware para su espacio empresarial de Microsoft 365 después del paso 5](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step5.png)
 
@@ -119,6 +119,7 @@ Información clave de Microsoft:
 - [Protéjase contra ransomware y extorsión de manera rápida](/security/compass/protect-against-ransomware)
 - [Informe de Microsoft Digital Defense 2021](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (vea las páginas 10-19)
 - [Ransomware: informe de análisis de amenazas generalizado y continuo](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) en el portal de Microsoft 365 Defender
+- [Enfoque y procedimientos recomendados](/security/compass/incident-response-playbook-dart-ransomware-approach) de ransomware del equipo de detección y respuesta de Microsoft (DART) y [caso práctico](/security/compass/dart-ransomware-case-study)
 
 Microsoft 365:
 
@@ -128,7 +129,6 @@ Microsoft 365:
 - [Proteger su equipo con Windows 10 de los ataques de ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Control de ransomware en SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - [Informes de análisis de amenazas para ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) en el portal de Microsoft 365 Defender
-
 
 Microsoft 365 Defender:
 

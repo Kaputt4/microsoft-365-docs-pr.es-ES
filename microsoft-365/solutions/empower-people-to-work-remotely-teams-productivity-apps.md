@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Puede hacer que los usuarios sean más productivos utilizando Teams, Exchange, SharePoint y otros servicios de Microsoft 365.
-ms.openlocfilehash: 36aa96b1355eec41060881da26f7e709a5058898
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 97a0342347d848a27a8402b5b8506536c95c55c9
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190154"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886235"
 ---
 # <a name="step-5-deploy-hybrid-worker-productivity-apps-and-services"></a>Paso 5: Implementar servicios y aplicaciones de productividad para los trabajadores híbridos
 
@@ -40,7 +40,7 @@ Para tener productividad, los usuarios deben comunicarse y colaborar entre sí. 
 
 ## <a name="keep-people-connected-with-microsoft-teams"></a>Mantener a los usuarios conectados con Microsoft Teams
 
-Teams le permite charlar, reunirse, llamar y colaborar en un único sitio. Millones de personas hacen su trabajo en Teams cada día porque reúne todo lo que se necesita para trabajar in situ o a distancia en un centro de trabajo en equipo. 
+Teams con Microsoft Teams permite a su organización charlar, reunirse, llamar y colaborar en un único sitio. Millones de personas hacen su trabajo con Teams cada día porque reúne todo lo que se necesita para trabajar in situ o a distancia en un centro de trabajo en equipo. 
 
 Para obtener instrucciones detalladas, consulte [Soporte técnico para trabajadores remotos con Microsoft Teams](/microsoftteams/support-remote-work-with-teams). 
 
@@ -48,7 +48,7 @@ Vea los webcasts [Habilitando trabajo híbrido con Microsoft Teams](https://reso
 
 ### <a name="chat-and-conversations"></a>Chats y conversaciones
 
-Los chats y las conversaciones encadenadas se encuentran en el centro de Teams con soporte para chats individuales y chats y conversaciones grupales. Los trabajadores remotos pueden compartir información, opiniones y personalidad con GIF, adhesivos y emojis en chats grupales o en mensajes individuales.
+Los chats y las conversaciones encadenadas se encuentran en el centro de Teams con soporte para chats individuales y chats y conversaciones grupales. Los trabajadores remotos pueden compartir información, opiniones y personalidad con imágenes, adhesivos y emojis en chats de grupales o en mensajes individuales.
 
 ### <a name="meetings-and-conferencing"></a>Reuniones y conferencias 
 
@@ -56,7 +56,7 @@ Teams puede, sin duda, ayudar a mantener la comunicación y el intercambio de in
 
 ### <a name="calling"></a>Llamadas
 
-Teams es compatible con llamadas VoIP directas entre usuarios e incluso otras organizaciones que usen federación. Usa los mismos códecs que las reuniones y proporciona una gran calidad de audio en todo el mundo sin cargos RTC adicionales. Sin embargo, algunos usuarios pueden necesitar un número de teléfono exclusivo para recibir llamadas externas cuando trabajan in situ o a distancia. Teams puede ofrecer rápidamente un servicio de telefonía en la nube para que estos usuarios puedan realizar y recibir llamadas telefónicas.
+Teams es compatible con llamadas VoIP directas entre usuarios e incluso otras organizaciones que usen federación. Usa los mismos códecs que las reuniones y proporciona un excelente audio en todo el mundo sin cargos adicionales de RTC. Sin embargo, algunos usuarios pueden necesitar un número de teléfono exclusivo para recibir llamadas externas cuando trabajan in situ o a distancia. Teams puede ofrecer rápidamente un servicio de telefonía en la nube para que estos usuarios puedan realizar y recibir llamadas telefónicas.
 
 ### <a name="apps-and-workflows"></a>Aplicaciones y flujos de trabajo
 

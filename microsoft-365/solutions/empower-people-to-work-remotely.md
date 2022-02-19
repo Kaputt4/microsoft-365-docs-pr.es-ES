@@ -19,22 +19,22 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: trabajar desde casa, trabajo desde casa, híbrido, trabajador remoto, trabajo híbrido, empleados remotos, conectividad híbrida, acceso remoto, trabajo remoto, teletrabajo, teletrabajar, trabajo móvil, trabajo remoto, empleo remoto, trabajar desde cualquier lugar, lugar de trabajo flexible
 description: Desplazarse por las capas de la infraestructura para que los trabajadores híbridos puedan acceder de forma segura a los recursos locales y de Microsoft 365..
-ms.openlocfilehash: 3eb70d99e44f296144ea9fa9c79ffd41475888ef
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 0370d30584021ab8560a24c7e54e3a7c7aadeb1f
+ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871916"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62886259"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Configure su infraestructura para el trabajo híbrido con Microsoft 365
 
-Para asegurar y optimizar la productividad y la colaboración de sus trabajadores, debe permitir que los trabajadores in situ y remotos accedan de forma fácil y segura a la información, las herramientas y los recursos de su organización, tanto en las instalaciones como en la nube. Esta solución le guían por la implementación de capas clave de infraestructura que permiten a los trabajadores realizar el mejor trabajo posible, dondequiera que estén.
+Para proteger y optimizar la productividad y colaboración del trabajador, debe permitir que los trabajadores locales y remotos accedan a la información, herramientas y recursos locales y basados en la nube de su organización de forma fácil y segura. Esta solución le guían por la implementación de capas clave de infraestructura que permiten a los trabajadores realizar el mejor trabajo posible, dondequiera que estén.
 
 Los trabajadores híbridos pueden trabajar in situ o a distancia en una combinación de lugares. Permitir a los empleados trabajar fuera de una oficina tradicional es importante para muchas organizaciones:
 
 - Contratar y retener a los trabajadores que no están dispuestos a trasladarse o que requieren un entorno de trabajo flexible.
 - Reducir los desplazamientos de los trabajadores, dejándoles más tiempo para ser productivos y para actividades que reduzcan el estrés fuera del trabajo.
-- Ahorrar en espacio de oficina.
+- Ahorre espacio en la oficina.
 
 Microsoft 365 cuenta con las capacidades necesarias para que sus trabajadores híbridos puedan trabajar in situ o de forma remota
 
