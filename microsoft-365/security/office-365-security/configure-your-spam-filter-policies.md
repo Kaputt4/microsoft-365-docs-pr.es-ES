@@ -1,25 +1,30 @@
 ---
 title: Configuración de las directivas de filtro de correo no deseado
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: null
+ms.date: ''
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: high
 search.appverid:
-  - MET150
+- MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
-  - M365-security-compliance
-ms.custom: null
-description: 'Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).'
+- M365-security-compliance
+ms.custom: ''
+description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
+ms.openlocfilehash: 1ac240f402d230362cb33ea818e62c1e0629eb39
+ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909752"
 ---
-
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -110,11 +115,11 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
 
 5. En la página **Umbral de correo electrónico en masa y propiedades de correo no deseado** que aparece, configure las opciones siguientes:
 
-   - **Umbral de correo electrónico en masa**: especifica el nivel de quejas masivas (BCL) de un mensaje que desencadena la acción especificada para el veredicto de filtrado de correo no deseado **en masa** que configurará en la siguiente página (mayor que el valor especificado, no superior al mismo o igual al mismo). Un valor superior indica que el mensaje es menos deseado (tiene más posibilidades de parecer correo no deseado). El valor predeterminado es 7. Para más información, consulte [Valores de nivel de quejas masivas (BCL) en EOP](bulk-complaint-level-values.md) y [¿Cuál es la diferencia entre el correo electrónico no deseado y el correo electrónico en masa?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+   - **Umbral de correo electrónico en masa**: especifica el nivel de quejas masivas (BCL) de un mensaje que desencadena la acción especificada para el veredicto de filtrado de correo no deseado **en masa** que configurará en la siguiente página. Un valor superior indica que el mensaje es menos deseado (tiene más posibilidades de parecer correo no deseado). El valor predeterminado es 7. Para más información, consulte [Valores de nivel de quejas masivas (BCL) en EOP](bulk-complaint-level-values.md) y [¿Cuál es la diferencia entre el correo electrónico no deseado y el correo electrónico en masa?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
      De forma predeterminada, la configuración solo para PowerShell _MarkAsSpamBulkMail_ está `On` en directivas contra correo no deseado. Esta configuración afecta enormemente a los resultados de un veredicto de filtrado **en masa**:
 
-     - **_MarkAsSpamBulkMail_ está Activado**: una BCL que es superior al umbral se convierte en un SCL 6 que corresponde a un veredicto de filtrado de **Correo no deseado**, y la acción del veredicto de filtrado **en masa** se lleva a cabo en el mensaje.
+     - **_MarkAsSpamBulkMail_ está Activado**: una BCL que es superior o igual al umbral se convierte en un SCL 6 que corresponde a un veredicto de filtrado de **Correo no deseado**, y la acción del veredicto de filtrado **en masa** se lleva a cabo en el mensaje.
      - **_MarkAsSpamBulkMail_ está desactivada**: el mensaje está marcado con los BCL, pero no se realiza _ninguna acción_ para un veredicto de filtrado **en masa**. De hecho, el umbral de BCL y el veredicto de filtrado **en masa** no son relevantes.
 
    - **Aumentar la puntuación del correo no deseado**, **Marcar como correo no deseado**<sup>\*</sup> y **Modo de prueba**: la configuración del Filtro avanzado de correo no deseado (ASF) desactivada de forma predeterminada.
