@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f66f98d8de585d8b92fad50f70ad812b861d9202
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: c54d2989941d5c91cc2626941af36cf6cdf205ce
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903900"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329563"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>Investigar y responder con Microsoft 365 Defender
 
@@ -55,11 +55,11 @@ Para cada incidente, use el flujo de trabajo de respuesta a incidentes para anal
 
 ## <a name="automated-investigation-and-remediation"></a>Investigación y corrección automatizadas
 
-Si su organización usa Microsoft 365 Defender, el equipo de operaciones de seguridad recibe una alerta en el portal de Microsoft 365 Defender siempre que se detecte una actividad o artefacto malintencionados o sospechosos. Dado el flujo interminable de amenazas que pueden llegar, los equipos de seguridad a menudo se enfrentan al desafío de abordar el alto volumen de alertas. Afortunadamente, Microsoft 365 Defender capacidades de investigación y respuesta automatizadas (AIR) que pueden ayudar a su equipo de operaciones de seguridad a abordar las amenazas de forma más eficaz y eficaz.
+Si su organización usa Microsoft 365 Defender, el equipo de operaciones de seguridad recibe una alerta en el portal de Microsoft 365 Defender siempre que se detecte una actividad o artefacto malintencionado o sospechoso. Dado el flujo interminable de amenazas que pueden llegar, los equipos de seguridad a menudo se enfrentan al desafío de abordar el alto volumen de alertas. Afortunadamente, Microsoft 365 Defender capacidades de investigación y respuesta automatizadas (AIR) que pueden ayudar a su equipo de operaciones de seguridad a abordar las amenazas de forma más eficaz y eficaz.
 
 Cuando se completa una investigación automatizada, se llega a un veredicto por cada parte de evidencia de un incidente. Según el veredicto, se identifican las acciones de corrección. En algunos casos, las acciones de corrección se toman automáticamente; en otros casos, las acciones de corrección esperan la aprobación a través del centro Microsoft 365 Defender acción. 
 
-Consulte [Investigación y respuesta automatizadas en Microsoft 365 Defender](m365d-autoir.md) para obtener más información.
+Consulte [Investigación automatizada y respuesta en Microsoft 365 Defender](m365d-autoir.md) para obtener más información.
 
 ## <a name="proactive-search-for-threats-with-advanced-hunting"></a>Búsqueda proactiva de amenazas con búsqueda avanzada
 
@@ -81,7 +81,7 @@ El análisis de amenazas es una funcionalidad de inteligencia de amenazas Micros
 - Superficies de ataque comunes
 - Malware frecuentes
 
-El análisis de amenazas también incluye información sobre incidentes relacionados y activos afectados dentro de Microsoft 365 inquilino para cada amenaza identificada.
+El análisis de amenazas también incluye información sobre incidentes relacionados y activos afectados dentro de su Microsoft 365 inquilino para cada amenaza identificada.
 
 Cada amenaza identificada incluye un informe de analista, un análisis completo de la amenaza escrita por los investigadores de seguridad de Microsoft que están a la vanguardia de la detección y el análisis de ciberseguridad. Estos informes también pueden proporcionar información sobre cómo aparecen los ataques en Microsoft 365 Defender.
 
@@ -89,6 +89,6 @@ Para obtener más información, consulte [Análisis de amenazas en Microsoft 365
 
 ## <a name="collaborate-with-microsoft-experts"></a>Colaborar con expertos de Microsoft
 
-Expertos en amenazas de Microsoft: las notificaciones de ataque dirigidos son un servicio de búsqueda de amenazas administrado. Una vez que apliques y te acepten, recibirás notificaciones de ataques dirigidos de expertos en amenazas de Microsoft, para que no te pierdas las amenazas críticas a tu entorno. Estas notificaciones le ayudarán a proteger los puntos de conexión, el correo electrónico y las identidades de su organización. Expertos en amenazas de Microsoft: expertos a petición te permiten obtener consejos de expertos sobre las amenazas a las que se enfrenta la organización y puedes obtener ayuda sobre las amenazas a las que se enfrenta la organización. Está disponible como servicio de suscripción adicional.
+Expertos en amenazas de Microsoft: las notificaciones de ataque dirigidos son un servicio de búsqueda de amenazas administrado. Una vez que apliques y te acepten, recibirás notificaciones de ataques dirigidos de expertos en amenazas de Microsoft, para que no te pierdas las amenazas críticas a tu entorno. Estas notificaciones le ayudarán a proteger los puntos de conexión, el correo electrónico y las identidades de su organización. Expertos en amenazas de Microsoft: los expertos a petición le permiten obtener consejos de expertos sobre las amenazas a las que se enfrenta su organización y puede obtener ayuda sobre las amenazas a las que se enfrenta su organización. Está disponible como servicio de suscripción adicional.
 
 Para obtener más información, [vea Expertos en amenazas de Microsoft en Microsoft 365 información general](/security/mtp/microsoft-threat-experts.md).

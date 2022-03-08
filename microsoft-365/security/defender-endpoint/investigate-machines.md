@@ -11,17 +11,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dee6cec53ef6a3412d110837037f1de48fc6e92f
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: b707a6f684df6b9888fb8f2d50c4bba9a6dd3195
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765581"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324177"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Investigar dispositivos en la lista Microsoft Defender para dispositivos de punto de conexión
 
@@ -138,7 +136,7 @@ En la sección Información adicional se proporcionan más detalles sobre determ
 - Amenaza activa detectada: la detección de amenazas se produjo mientras se ejecutaba la amenaza
 - Corrección sin éxito: se invocó un intento de corregir la amenaza detectada, pero se falló
 - Corrección correcta: la amenaza detectada se detuvo y se limpió
-- Advertencia omitida por el usuario: la advertencia Windows Defender SmartScreen fue descartada e invalidada por un usuario
+- Advertencia omitida por el usuario: la Windows Defender smartscreen fue descartada e invalidada por un usuario
 - Script sospechoso detectado: se encontró un script potencialmente malintencionado en ejecución
 - La categoría de alerta: si el evento condujo a la generación de una alerta, se proporciona la categoría de alerta ("Movimiento lateral", por ejemplo)
 
@@ -152,7 +150,7 @@ Para inspeccionar aún más el evento y los eventos relacionados, puede ejecutar
 
 ### <a name="security-recommendations"></a>Recomendaciones de seguridad
 
-**Las recomendaciones de** seguridad se generan desde Microsoft Defender para la funcionalidad de administración de [& de](tvm-dashboard-insights.md) vulnerabilidades de Endpoint. Si selecciona una recomendación, se mostrará un panel en el que podrá ver detalles relevantes, como la descripción de la recomendación y los posibles riesgos asociados a no aprobarla. Consulte [Recomendación de seguridad](tvm-security-recommendation.md) para obtener más información.
+**Las recomendaciones de** seguridad se generan desde Microsoft Defender para la funcionalidad de administración de [& de vulnerabilidades de](tvm-dashboard-insights.md) Endpoint. Si selecciona una recomendación, se mostrará un panel en el que podrá ver detalles relevantes, como la descripción de la recomendación y los posibles riesgos asociados a no aprobarla. Consulte [Recomendación de seguridad](tvm-security-recommendation.md) para obtener más información.
 
 ![Imagen de la pestaña recomendaciones de seguridad.](images/security-recommendations-device.png)
 

@@ -2,8 +2,8 @@
 title: Microsoft 365 optimización global del rendimiento de inquilinos para usuarios de China
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 11/17/2020
+manager: scotv
+ms.date: 3/3/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,19 +16,28 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: En este artículo se proporcionan instrucciones para optimizar el rendimiento de la red para los usuarios de China de Microsoft 365 inquilinos globales.
-ms.openlocfilehash: 65f80137786ea708e2ee0200e63600906fd18d24
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6c99245d523048d30124fc8f8b0c01d7c2004327
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166987"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326935"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>Microsoft 365 optimización global del rendimiento de inquilinos para usuarios de China
 
 > [!IMPORTANT]
-> Esta guía es específica para escenarios de uso en los que los usuarios de Microsoft 365 **ubicados** en China se conectan a un **inquilino Microsoft 365 global.** Esta guía no **se aplica** a los inquilinos de Office 365 operados por 21Vianet.
+> Esta guía es específica para escenarios de uso en los que los usuarios de Microsoft 365 **ubicados en China** se conectan a un **inquilino Microsoft 365 global**. Esta guía no **se aplica** a los inquilinos de Office 365 operados por 21Vianet.
 
-Para las empresas con inquilinos de Microsoft 365 globales y una presencia corporativa en China, el rendimiento de los clientes Microsoft 365 los usuarios basados en China puede ser complicado por factores exclusivos de la arquitectura de Internet de China Telco.
+>[!NOTE]
+>Este artículo forma parte de un conjunto de artículos que abordan la optimización Microsoft 365 usuarios remotos.
+
+>- Para obtener información general sobre cómo usar el túnel dividido de VPN para optimizar la conectividad Microsoft 365 usuarios remotos, vea [Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md).
+>- Para obtener instrucciones detalladas sobre cómo implementar el túnel dividido de VPN, consulte [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
+>- Para obtener una lista detallada de escenarios de túnel dividido de VPN, consulte [Escenarios de túnel dividido de VPN comunes para Microsoft 365](microsoft-365-vpn-common-scenarios.md).
+>- Para obtener instrucciones sobre cómo proteger el Teams de medios en entornos de túnel dividido de VPN, consulte [Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md).
+>- Para obtener información sobre cómo configurar stream y eventos en directo en entornos VPN, consulte [Special considerations for Stream and live events in VPN environments](microsoft-365-vpn-stream-and-live-events.md).
+
+Para las empresas con inquilinos de Microsoft 365 globales y una presencia corporativa en China, el rendimiento de los clientes de Microsoft 365 para los usuarios basados en China puede ser complicado por factores exclusivos de la arquitectura de Internet de China Telco.
 
 Los ISP de China han regulado conexiones offshore a Internet pública global que pasan por dispositivos perimetrales propensos a altos niveles de congestión de red transfronteriza. Esta congestión crea pérdida de paquetes y latencia para todo el tráfico de Internet que entra y sale de China.
 
@@ -45,35 +54,35 @@ Muchas empresas con Microsoft 365 inquilinos y usuarios globales en China han im
 > [!IMPORTANT]
 > Al igual que con todas las implementaciones de WAN privadas, siempre debe consultar los requisitos normativos de su país o región para asegurarse de que la configuración de red está en cumplimiento.
 
-Como primer paso, es fundamental que siga nuestras instrucciones de red comparativas en [Planificación](./network-planning-and-performance.md)de red y ajuste del rendimiento para Microsoft 365 . El objetivo principal debe ser evitar el acceso a los servicios Microsoft 365 global desde Internet en China si es posible.
+Como primer paso, es fundamental que siga nuestra guía de red de referencia en Planificación de red y ajuste del rendimiento [para Microsoft 365](./network-planning-and-performance.md). El objetivo principal debe ser evitar el acceso a los servicios Microsoft 365 global desde Internet en China si es posible.
 
-- Aproveche su red privada existente para llevar Microsoft 365 tráfico de red entre las redes de oficina de China y las ubicaciones offshore que se desenlace en Internet pública fuera de China. Casi cualquier ubicación fuera de China proporcionará una ventaja clara. Los administradores de red pueden optimizar aún más la salida en áreas con una interconexión de baja latencia con la [red global de Microsoft.](/azure/networking/microsoft-global-network) Hong Kong, Singapur, Japón y Corea del Sur son ejemplos.
-- Configure los dispositivos de usuario para que accedan a la red corporativa a través de una conexión VPN para permitir que Microsoft 365 tráfico transite el vínculo externo privado de la red corporativa. Asegúrese de que los clientes VPN no estén configurados para usar el túnel dividido o de que los dispositivos de usuario estén configurados para omitir el túnel dividido para Microsoft 365 tráfico. Para obtener información adicional sobre cómo optimizar la conectividad VPN Teams tráfico multimedia en tiempo real, vea [esta sección](#optimizing-microsoft-teams-meetings-network-performance-for-users-in-china).
-- Configure la red para enrutar todo Microsoft 365 tráfico a través de su vínculo privado offshore. Si debe minimizar el volumen de tráfico en su vínculo privado, puede elegir enrutar  solo  los puntos de conexión en la categoría **Optimizar** y permitir que las solicitudes permitan que los puntos de conexión predeterminados transiten por Internet. Esto mejorará el rendimiento y minimizará el consumo de ancho de banda al limitar el tráfico optimizado a los servicios críticos que son más sensibles a la alta latencia y la pérdida de paquetes.
+- Aproveche su red privada existente para llevar Microsoft 365 tráfico de red entre redes de oficina de China y ubicaciones offshore que se desenlace en Internet pública fuera de China. Casi cualquier ubicación fuera de China proporcionará una ventaja clara. Los administradores de red pueden optimizar aún más la salida en áreas con una interconexión de baja latencia con la [red global de Microsoft](/azure/networking/microsoft-global-network). Hong Kong, Singapur, Japón y Corea del Sur son ejemplos.
+- Configure los dispositivos de usuario para que accedan a la red corporativa a través de una conexión VPN para permitir que Microsoft 365 tráfico transite el vínculo offshore privado de la red corporativa. Asegúrese de que los clientes VPN no estén configurados para usar túnel dividido o de que los dispositivos de usuario estén configurados para omitir el túnel dividido para Microsoft 365 tráfico. Para obtener información adicional sobre cómo optimizar la conectividad VPN Teams tráfico multimedia en tiempo real, vea [esta sección](#optimizing-microsoft-teams-meetings-network-performance-for-users-in-china).
+- Configure la red para enrutar todo Microsoft 365 tráfico a través de su vínculo offshore privado. Si debe minimizar el volumen de tráfico en su vínculo privado, puede elegir enrutar solo los puntos de conexión en la categoría **Optimizar** y permitir que las solicitudes  permitan que  los puntos de conexión predeterminados transiten por Internet. Esto mejorará el rendimiento y minimizará el consumo de ancho de banda al limitar el tráfico optimizado a los servicios críticos que son más sensibles a la alta latencia y la pérdida de paquetes.
 - Si es posible, use UDP en lugar de TCP para el tráfico de streaming de medios en directo, como para Teams. UDP ofrece un mejor rendimiento de streaming de medios en directo que TCP.
 
-Para obtener información sobre cómo enrutar selectivamente Microsoft 365 tráfico, vea [Managing Office 365 endpoints](managing-office-365-endpoints.md). Para obtener una lista de todas las direcciones URL y direcciones IP Office 365 todo el mundo, vea Office 365 direcciones URL e [intervalos de direcciones IP](urls-and-ip-address-ranges.md).
+Para obtener información sobre cómo enrutar selectivamente Microsoft 365 tráfico, vea [Managing Office 365 endpoints](managing-office-365-endpoints.md). Para obtener una lista de todas las direcciones URL y direcciones IP Office 365 todo el mundo, consulte Office 365 [direcciones URL e intervalos de direcciones IP](urls-and-ip-address-ranges.md).
 
 ![Microsoft 365 tráfico optimizado.](../media/O365-networking/China-O365-optimized.png)
 
 ## <a name="user-best-practices"></a>Procedimientos recomendados para el usuario
 
-Los usuarios de China que se conectan a inquilinos Microsoft 365 globales desde ubicaciones remotas como casas, cafeterías, hoteles y sucursales sin conexión a redes empresariales pueden experimentar un rendimiento de red deficiente porque el tráfico entre sus dispositivos y Microsoft 365 debe transitar por los circuitos de red transfronterizos congestionados de China.
+Los usuarios de China que se conectan a inquilinos de Microsoft 365 globales desde ubicaciones remotas como casas, cafeterías, hoteles y sucursales sin conexión a redes empresariales pueden experimentar un rendimiento de red deficiente porque el tráfico entre sus dispositivos y Microsoft 365 debe transitar por los circuitos de red transfronterizos congestionados de China.
 
 Si las redes privadas transfronterizas o el acceso VPN a la red corporativa no son una opción, los problemas de rendimiento por usuario aún pueden mitigarse mediante la formación de los usuarios basados en China para que sigan estos procedimientos recomendados.
 
 - Use clientes Office enriquecidos que admitan el almacenamiento en caché (por ejemplo, Outlook, Teams, OneDrive, etc.) y eviten clientes basados en web. Office almacenamiento en caché de cliente y las características de acceso sin conexión pueden reducir considerablemente el impacto de la congestión y la latencia de la red.
-- Si el inquilino Microsoft 365 se ha configurado con la característica _de audioconferencia,_ Teams usuarios pueden unirse a reuniones a través de la red telefónica conmutada (RTC). Para obtener más información, [vea Audioconferencia en Office 365](/microsoftteams/audio-conferencing-in-office-365).
-- Si los usuarios experimentan problemas de rendimiento de red, deben informar a su departamento de TI para solucionar problemas y escalar al soporte técnico de Microsoft si se sospechan problemas con Microsoft 365 servicios. No todos los problemas son causados por el rendimiento de la red transfronteriza.
+- Si el inquilino Microsoft 365 se ha configurado con la característica _de audioconferencia_, Teams usuarios pueden unirse a reuniones a través de la red telefónica conmutada (RTC). Para obtener más información, [vea Audioconferencia en Office 365](/microsoftteams/audio-conferencing-in-office-365).
+- Si los usuarios experimentan problemas de rendimiento de red, deben informar a su departamento de TI para solucionar problemas y escalar a soporte técnico de Microsoft si se sospechan problemas con Microsoft 365 servicios. No todos los problemas son causados por el rendimiento de la red transfronteriza.
 
-## <a name="optimizing-microsoft-teams-meetings-network-performance-for-users-in-china"></a>Optimizar el rendimiento Microsoft Teams de red de reuniones para los usuarios de China
+## <a name="optimizing-microsoft-teams-meetings-network-performance-for-users-in-china"></a>Optimizar el rendimiento Microsoft Teams de red de reuniones para usuarios en China
 
 Para las organizaciones con inquilinos de Microsoft 365 globales y una presencia en China, el rendimiento Microsoft 365 cliente de los usuarios basados en China puede ser complicado por factores únicos de la arquitectura de Internet de China. Muchas empresas y escuelas han notificado buenos resultados siguiendo esta guía. Sin embargo, el ámbito se limita a las ubicaciones de red de usuario que están bajo control de la configuración de redes de TI, por ejemplo, ubicaciones de oficina o puntos de conexión hogar/móvil con conectividad VPN. Microsoft Teams llamadas y reuniones se usan a menudo desde ubicaciones externas, como oficinas en casa, ubicaciones móviles, en la carretera y cafeterías. Dado que las llamadas y las reuniones dependen del tráfico multimedia en tiempo real, estas Teams experiencias son especialmente sensibles a la congestión de la red.
 
-Como resultado, Microsoft se ha asociado con proveedores de telecomunicaciones para llevar el tráfico de medios en tiempo real de Teams y Skype Empresarial Online mediante una ruta de red preferencial de mayor calidad entre las conexiones de Internet nacionales y públicas en China y los servicios Teams y Skype en la nube global de Microsoft 365. Esta funcionalidad ha dado como resultado una mejora de más de diez veces en la pérdida de paquetes y otras métricas clave que afectan a la experiencia del usuario.
+Como resultado, Microsoft se ha asociado con proveedores de telecomunicaciones para llevar tráfico de medios en tiempo real de Teams y Skype Empresarial Online mediante una ruta de red preferencial de mayor calidad entre las conexiones de Internet nacionales y públicas en China y los servicios Teams y Skype en la nube global de Microsoft 365. Esta funcionalidad ha dado como resultado una mejora de más de diez veces en la pérdida de paquetes y otras métricas clave que afectan a la experiencia del usuario.
 
 >[!IMPORTANT]
->Actualmente, estas mejoras no abordan la asistencia a reuniones de Eventos de Microsoft Live, como reuniones de difusión grandes o de estilo "town hall" con Teams o Microsoft Stream. Para ver una reunión de eventos en directo, los usuarios en China deben usar una red privada o una solución SDWAN/VPN. Sin embargo, las mejoras en la red beneficiarán a los usuarios que presenten o produzcan una reunión de Live Events, ya que esa experiencia actúa como una reunión Teams normal para el productor o moderador.
+>Actualmente, estas mejoras no abordan la asistencia a reuniones de Eventos de Microsoft Live, como reuniones de difusión grandes o de estilo "town hall" con Teams o Microsoft Stream. Para ver una reunión de eventos en directo, los usuarios en China deben usar una red privada o una solución SDWAN/VPN. Sin embargo, las mejoras de red beneficiarán a los usuarios que presenten o produzcan una reunión de Live Events, ya que esa experiencia actúa como una reunión Teams normal para el productor o moderador.
 
 ### <a name="organization-network-best-practices-for-teams-meetings"></a>Procedimientos recomendados de la red de Teams reuniones
 
@@ -81,14 +90,14 @@ Debe considerar cómo aprovechar estas mejoras de red, dado que las instruccione
 
 1. No haga nada nuevo. Siga las instrucciones anteriores sobre la omisión de red privada para evitar la congestión transfronteriza. Teams tráfico multimedia en tiempo real aprovechará esa configuración, como antes.
 2. Implementar un patrón dividido/híbrido.
-   - Use las instrucciones anteriores para todo el tráfico marcado para la optimización, excepto Teams reuniones y llamar al tráfico multimedia en tiempo real.
-   - Enruta Teams y llama al tráfico multimedia en tiempo real a través de Internet público. Consulte la siguiente información para obtener información específica sobre cómo identificar el tráfico de red multimedia en tiempo real.
+   - Use las instrucciones anteriores para todo el tráfico marcado para la optimización, excepto Teams reuniones y llamadas al tráfico multimedia en tiempo real.
+   - Enruta Teams reunión y llamar al tráfico multimedia en tiempo real a través de Internet público. Consulte la siguiente información para obtener información específica sobre cómo identificar el tráfico de red multimedia en tiempo real.
 
 Enviar Teams tráfico de audio y vídeo multimedia en tiempo real a través de Internet público, que usa la conectividad de mayor calidad, puede provocar un ahorro considerable de costos, ya que es gratuito frente al pago enviar ese tráfico a través de una red privada. Puede haber ventajas adicionales similares si los usuarios también usan clientes SDWAN o VPN. Algunas organizaciones también pueden preferir que más de sus datos atraviesen conexiones públicas a Internet como práctica general.
 
-Las mismas opciones podrían aplicarse a las configuraciones de SDWAN o VPN. Por ejemplo, un usuario usa sdwan o VPN para enrutar el tráfico de Microsoft 365 a la red corporativa y, a continuación, aprovechar la extensión privada de esa red para evitar la congestión transfronteriza. Sdwan o VPN del usuario ahora se pueden configurar para excluir Teams reunión y llamar al tráfico en tiempo real del enrutamiento VPN. Esta configuración de VPN se conoce como túnel dividido. Consulta [Túnel dividido de VPN para obtener Office 365](/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel) para obtener más información.
+Las mismas opciones podrían aplicarse a las configuraciones de SDWAN o VPN. Por ejemplo, un usuario usa sdwan o VPN para enrutar el tráfico Microsoft 365 la red corporativa y, a continuación, aprovechar la extensión privada de esa red para evitar la congestión transfronteriza. Sdwan o VPN del usuario ahora se pueden configurar para excluir Teams reunión y llamar al tráfico en tiempo real del enrutamiento VPN. Esta configuración de VPN se conoce como túnel dividido. Consulta [Túnel dividido de VPN para obtener Office 365](/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel) para obtener más información.
 
-También puede seguir usando su SDWAN o VPN para todo el tráfico Microsoft 365, incluido el Microsoft Teams en tiempo real. Microsoft no tiene recomendaciones sobre el uso de soluciones SDWAN o VPN.
+También puede seguir usando su SDWAN o VPN para todo el tráfico Microsoft 365, incluido el tráfico Microsoft Teams en tiempo real. Microsoft no tiene recomendaciones sobre el uso de soluciones SDWAN o VPN.
 
 ### <a name="home-mobile-and-user-network-best-practices-for-teams-meetings"></a>Procedimientos recomendados de red principal, móvil y de usuario para Teams reuniones
 
@@ -98,18 +107,32 @@ Sin embargo, los datos de otros servicios Microsoft 365 , y otro tráfico en Tea
 
 ### <a name="identifying-teams-real-time-media-network-traffic"></a>Identificación Teams tráfico de red multimedia en tiempo real
 
-Para configurar un dispositivo de red o una configuración de VPN/SDWAN, solo debes excluir el Teams de audio y vídeo multimedia en tiempo real. Los detalles de tráfico se pueden encontrar para el identificador 11 en la lista oficial de direcciones OFFICE 365 direcciones URL e [intervalos de direcciones IP.](urls-and-ip-address-ranges.md#skype-for-business-online-and-microsoft-teams) Todas las demás configuraciones de red deben permanecer tal y como están.
+Para configurar un dispositivo de red o una configuración de VPN/SDWAN, solo debes excluir el tráfico de audio y vídeo de medios Teams tiempo real. Los detalles de tráfico se pueden encontrar para el identificador 11 en la lista oficial de direcciones [OFFICE 365 direcciones URL e intervalos de direcciones IP](urls-and-ip-address-ranges.md#skype-for-business-online-and-microsoft-teams). Todas las demás configuraciones de red deben permanecer tal y como están.
 
-Microsoft está trabajando continuamente para mejorar la experiencia Microsoft 365 usuario y el rendimiento de los clientes en la gama más amplia posible de arquitecturas y características de red. Visite el [Office 365 Networking Tech Community](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking) para iniciar o unirse a una conversación, buscar recursos y enviar sugerencias y solicitudes de características
+Microsoft trabaja continuamente para mejorar la experiencia Microsoft 365 usuario y el rendimiento de los clientes en la gama más amplia posible de arquitecturas y características de red. Visite el [Office 365 Networking Tech Community](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking) para iniciar o unirse a una conversación, buscar recursos y enviar sugerencias y solicitudes de características
 
-## <a name="related-topics"></a>Temas relacionados
+## <a name="related-articles"></a>Artículos relacionados
 
-[Planeamiento de red y ajuste del rendimiento para Microsoft 365](./network-planning-and-performance.md)
+[Información general: Túnel dividido de VPN para Microsoft 365](microsoft-365-vpn-split-tunnel.md)
+
+[Implementación de túnel dividido de VPN para Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md)
+
+[Escenarios comunes de túnel dividido de VPN para Microsoft 365](microsoft-365-vpn-common-scenarios.md)
+
+[Proteger el tráfico Teams multimedia para el túnel dividido de VPN](microsoft-365-vpn-securing-teams.md)
+
+[Consideraciones especiales para stream y eventos en directo en entornos VPN](microsoft-365-vpn-stream-and-live-events.md)
 
 [Principios de conectividad de red de Microsoft 365](microsoft-365-network-connectivity-principles.md)
 
-[Administrar puntos de conexión de Office 365](managing-office-365-endpoints.md)
+[Evaluar la conectividad de red de Microsoft 365](assessing-network-connectivity.md)
 
-[Direcciones URL e intervalos de direcciones IP de Office 365](urls-and-ip-address-ranges.md)
+[Microsoft 365 de red y rendimiento](network-planning-and-performance.md)
+
+[Formas alternativas para que los profesionales de seguridad y de TI logren controles de seguridad modernos en los escenarios de trabajo remoto específicos (blog del Equipo de Seguridad de Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+
+[Mejorando el rendimiento de la VPN en Microsoft: usando perfiles de VPN de Windows 10 para permitir conexiones automáticas ](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
+
+[Funcionando con VPN: cómo Microsoft mantiene conectado a su personal remoto](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
 [Red global de Microsoft](/azure/networking/microsoft-global-network)

@@ -1,6 +1,6 @@
 ---
 title: Cómo notificar falsos positivos o falsos negativos después de una investigación automatizada en Microsoft Defender para Office 365
-description: ¿Se ha detectado algo perdido o incorrecto por AIR en Microsoft Defender para Office 365? Obtenga información sobre cómo enviar falsos positivos o falsos negativos a Microsoft para su análisis.
+description: ¿Se ha detectado algo incorrecto o perdido por AIR en Microsoft Defender para Office 365? Obtenga información sobre cómo enviar falsos positivos o falsos negativos a Microsoft para su análisis.
 keywords: automatizado, investigación, alerta, desencadenador, acción, corrección, falso positivo, falso negativo
 search.appverid: met150
 ms.mktglfcycl: deploy
@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.prod: m365-security
 ms.date: 01/29/2021
 ms.localizationpriority: medium
@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: aaf3e052e29893f0584edd730cf80bd82c34257e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 98164fd42a0ed2e2d79e2319823363057d15e7d3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61882167"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318611"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Cómo notificar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
@@ -37,7 +37,7 @@ ms.locfileid: "61882167"
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Si las capacidades de investigación y respuesta [automatizadas (AIR)](automated-investigation-response-office.md) en Office 365 detectaron o detectaron algo incorrectamente, hay pasos que el equipo de operaciones de seguridad puede llevar a cabo para solucionarlo. Estas acciones incluyen:
+Si las capacidades de investigación y respuesta [automatizadas (AIR) en Office 365](automated-investigation-response-office.md) detectaron o detectaron algo incorrectamente, hay pasos que el equipo de operaciones de seguridad puede tomar para solucionarlo. Estas acciones incluyen:
 
 - [Notificar un falso positivo/negativo a Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Ajustar alertas](#adjust-an-alert-to-prevent-false-positives-from-recurring) (si es necesario); y
@@ -47,19 +47,19 @@ Use este artículo como guía.
 
 ## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Notificar un falso positivo/negativo a Microsoft para su análisis
 
-Si AIR en Microsoft Defender para Office 365 perdió un mensaje de correo electrónico, un archivo adjunto de correo electrónico, una dirección URL en un mensaje de correo electrónico o una dirección URL en un archivo Office, puede enviar correo no deseado [sospechoso, phish,](admin-submission.md)direcciones URL y archivos a Microsoft para examinar Office 365 .
+Si AIR en Microsoft Defender para Office 365 perdió un mensaje de correo electrónico, un archivo adjunto de correo electrónico, una dirección URL en un mensaje de correo electrónico o una dirección URL en un archivo Office, puede enviar correo no deseado [sospechoso, phish,](admin-submission.md) direcciones URL y archivos a Microsoft para realizar un examen Office 365.
 
-También puede enviar [un archivo a Microsoft para el análisis de malware.](https://www.microsoft.com/wdsi/filesubmission)
+También puede enviar [un archivo a Microsoft para el análisis de malware](https://www.microsoft.com/wdsi/filesubmission).
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Ajustar una alerta para evitar que los falsos positivos se repitan
 
-Si una alerta se desencadena por uso legítimo o la alerta es inexacta, puedes administrar alertas en el portal de [Defender para Aplicaciones en la nube](/cloud-app-security/managing-alerts).
+Si una alerta se desencadena mediante un uso legítimo o la alerta es inexacta, puedes administrar alertas en el [portal de Defender para Aplicaciones en la nube](/cloud-app-security/managing-alerts).
 
-Si tu organización usa [Microsoft Defender](/windows/security/threat-protection) para endpoint además de Office 365 y un archivo, dirección IP, dirección URL o dominio se trata como malware en un dispositivo, aunque sea seguro, puedes crear un indicador personalizado con una acción ["Permitir"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)para el dispositivo .
+Si tu organización usa [Microsoft Defender](/windows/security/threat-protection) para endpoint además de Office 365 y un archivo, dirección IP, dirección URL o dominio se trata como malware en un dispositivo, aunque sea seguro, puedes crear un indicador personalizado con una acción ["Permitir"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) para el dispositivo.
 
 ## <a name="undo-a-remediation-action"></a>Deshacer una acción de corrección
 
-En la mayoría de los casos, si se ha realizado una acción de corrección en un mensaje de correo electrónico, datos adjuntos de correo electrónico o una dirección URL, y el elemento en realidad no es una amenaza, el equipo de operaciones de seguridad puede deshacer la acción de corrección y tomar medidas para evitar que el falso positivo se repita. Puede usar el Explorador [de amenazas](#undo-an-action-using-threat-explorer) o la pestaña Acciones para una [investigación para](#undo-an-action-in-the-action-center) deshacer una acción.
+En la mayoría de los casos, si se ha realizado una acción de corrección en un mensaje de correo electrónico, datos adjuntos de correo electrónico o una dirección URL, y el elemento en realidad no es una amenaza, el equipo de operaciones de seguridad puede deshacer la acción de corrección y tomar medidas para evitar que el falso positivo se repita. Puede usar el Explorador [de amenazas](#undo-an-action-using-threat-explorer) o la pestaña Acciones para [una investigación para](#undo-an-action-in-the-action-center) deshacer una acción.
 
 > [!IMPORTANT]
 > Asegúrese de que tiene los permisos necesarios antes de intentar realizar las siguientes tareas.
@@ -82,10 +82,10 @@ Con el Explorador de amenazas, el equipo de operaciones de seguridad puede encon
 
 En el Centro de acciones, puede ver las acciones de corrección que se realizaron y potencialmente deshacer la acción.
 
-1. En el Microsoft 365 Defender en , vaya al Centro <https://security.microsoft.com> de acciones seleccionando Centro de **acciones**. Para ir directamente al Centro de acciones, use <https://security.microsoft.com/action-center/> .
+1. En el Microsoft 365 Defender en <https://security.microsoft.com>, vaya al Centro de acciones seleccionando **Centro de acciones**. Para ir directamente al Centro de acciones, use <https://security.microsoft.com/action-center/>.
 2. En el Centro de acciones, seleccione la **pestaña** Historial para ver la lista de acciones completadas.
 3. Seleccione un elemento. Se abre el panel desplegable.
-4. En el panel desplegable, seleccione **Deshacer**. (Solo las acciones que se pueden deshacer tendrán **un botón Deshacer).**
+4. En el panel desplegable, seleccione **Deshacer**. (Solo las acciones que se pueden deshacer tendrán **un botón Deshacer** ).
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,5 +1,5 @@
 ---
-title: Crear un informe de suspensiones en casos de eDiscovery
+title: Usar un script para crear un informe de retención de exhibición de documentos electrónicos
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,22 +20,22 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo generar un informe que contenga información sobre todas las retenciones asociadas a casos de exhibición de documentos electrónicos.
-ms.openlocfilehash: 953b2aaa1b133d79b82f17e5f75603947cc5d6d7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 568d4fa351879d271004d0f0749881f3de4b4a49
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200574"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319481"
 ---
-# <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Crear un informe de suspensiones en casos de eDiscovery
+# <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>Usar un script para crear un informe en espera en casos de exhibición de documentos electrónicos
 
-El script de este artículo permite a los administradores de exhibición de documentos electrónicos y a los administradores de exhibición de documentos electrónicos generar un informe que contenga información sobre todas las retenciones asociadas con casos de exhibición de documentos electrónicos en el centro de cumplimiento en Office 365 o Microsoft 365. El informe contiene información como el nombre del caso al que está asociada una retención, las ubicaciones de contenido que se colocan en espera y si la retención está basada en consultas. Si hay casos que no tienen ninguna retención, el script creará un informe adicional con una lista de casos sin retenciones.
+El script de este artículo permite a los administradores de exhibición de documentos electrónicos y a los administradores de exhibición de documentos electrónicos generar un informe que contenga información sobre todas las retenciones asociadas con los casos principales y Advanced eDiscovery en el Centro de cumplimiento de Microsoft 365. El informe contiene información como el nombre del caso al que está asociada una retención, las ubicaciones de contenido que se colocan en espera y si la retención está basada en consultas. Si hay casos que no tienen ninguna retención, el script creará un informe adicional con una lista de casos sin retenciones.
 
 Vea la [sección Más información](#more-information) para obtener una descripción detallada de la información incluida en el informe.
 
 ## <a name="admin-requirements-and-script-information"></a>Requisitos de administración e información de script
 
-- Para generar un informe sobre todos los casos de exhibición de documentos electrónicos de la organización, debe ser administrador de exhibición de documentos electrónicos en la organización. Si es administrador de exhibición de documentos electrónicos, el informe solo incluirá información sobre los casos a los que puede tener acceso. Para obtener más información acerca de los permisos de exhibición de documentos electrónicos, vea [Asignar permisos de exhibición de documentos electrónicos.](assign-ediscovery-permissions.md)
+- Para generar un informe sobre todos los casos de exhibición de documentos electrónicos de la organización, debe ser administrador de exhibición de documentos electrónicos en la organización. Si es administrador de exhibición de documentos electrónicos, el informe solo incluirá información sobre los casos a los que puede tener acceso. Para obtener más información acerca de los permisos de exhibición de documentos electrónicos, vea [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
 
 - El script de este artículo tiene un control de errores mínimo. El objetivo principal es crear rápidamente un informe sobre las retenciones asociadas a los casos de exhibición de documentos electrónicos de la organización.
 
@@ -61,12 +61,13 @@ Después de conectarse a PowerShell del Centro de seguridad & cumplimiento, el s
    " "
    #prompt users to specify a path to store the output files
    $time=get-date
-   $Path = Read-Host 'Enter a file path to save the report to a .csv file'
+   $Path = Read-Host 'Enter a folder path to save the report to a .csv file (filename is created automatically)'
    $outputpath=$Path+'\'+'CaseHoldsReport'+' '+$time.day+'-'+$time.month+'-'+$time.year+' '+$time.hour+'.'+$time.minute+'.csv'
    $noholdsfilepath=$Path+'\'+'CaseswithNoHolds'+' '+$time.day+'-'+$time.month+'-'+$time.year+' '+$time.hour+'.'+$time.minute+'.csv'
    #add case details to the csv file
    function add-tocasereport{
    Param([string]$casename,
+   [String]$casetype,
    [String]$casestatus,
    [datetime]$casecreatedtime,
    [string]$casemembers,
@@ -84,6 +85,7 @@ Después de conectarse a PowerShell del Centro de seguridad & cumplimiento, el s
    )
    $addRow = New-Object PSObject
    Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Case name" -Value $casename
+   Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Case type" -Value $casetype
    Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Case status" -Value $casestatus
    Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Case members" -Value $casemembers
    Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Case created time" -Value $casecreatedtime
@@ -98,12 +100,12 @@ Después de conectarse a PowerShell del Centro de seguridad & cumplimiento, el s
    Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Hold query" -Value $ContentMatchQuery
    Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Hold created time (UTC)" -Value $holdcreatedtime
    Add-Member -InputObject $addRow -MemberType NoteProperty -Name "Hold changed time (UTC)" -Value $holdchangedtime
-   $allholdreport = $addRow | Select-Object "Case name","Case status","Hold name","Hold enabled","Case members", "Case created time","Case closed time","Case closed by","Exchange locations","SharePoint locations","Hold query","Hold created by","Hold created time (UTC)","Hold last changed by","Hold changed time (UTC)"
+   $allholdreport = $addRow | Select-Object "Case name","Case type","Case status","Hold name","Hold enabled","Case members", "Case created time","Case closed time","Case closed by","Exchange locations","SharePoint locations","Hold query","Hold created by","Hold created time (UTC)","Hold last changed by","Hold changed time (UTC)"
    $allholdreport | export-csv -path $outputPath -notypeinfo -append -Encoding ascii
    }
    #get information on the cases and pass values to the case report function
    " "
-   write-host "Gathering a list of cases and holds..."
+   write-host "Gathering a list of Core eDiscovery cases and holds..."
    " "
    $edc =Get-ComplianceCase -ErrorAction SilentlyContinue
    foreach($cc in $edc)
@@ -112,7 +114,7 @@ Después de conectarse a PowerShell del Centro de seguridad & cumplimiento, el s
    if($cc.status -eq 'Closed')
    {
    $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
-   add-tocasereport -casename $cc.name -casestatus $cc.Status -caseclosedby $cc.closedby -caseClosedDateTime $cc.ClosedDateTime -casemembers $cmembers
+   add-tocasereport -casename $cc.name -casetype $cc.casetype -casestatus $cc.Status -caseclosedby $cc.closedby -caseClosedDateTime $cc.ClosedDateTime -casemembers $cmembers
    }
    else{
    $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
@@ -122,7 +124,38 @@ Después de conectarse a PowerShell del Centro de seguridad & cumplimiento, el s
    foreach ($policy in $policies)
    {
    $rule=Get-CaseHoldRule -Policy $policy.name
-   add-tocasereport -casename $cc.name -casemembers $cmembers -casestatus $cc.Status -casecreatedtime $cc.CreatedDateTime -holdname $policy.name -holdenabled $policy.enabled -holdcreatedby $policy.CreatedBy -holdlastmodifiedby $policy.LastModifiedBy -ExchangeLocation (($policy.exchangelocation.name)-join ';') -SharePointLocation (($policy.sharePointlocation.name)-join ';') -ContentMatchQuery $rule.ContentMatchQuery -holdcreatedtime $policy.WhenCreatedUTC -holdchangedtime $policy.WhenChangedUTC
+   add-tocasereport -casename $cc.name -casetype $cc.casetype -casemembers $cmembers -casestatus $cc.Status -casecreatedtime $cc.CreatedDateTime -holdname $policy.name -holdenabled $policy.enabled -holdcreatedby $policy.CreatedBy -holdlastmodifiedby $policy.LastModifiedBy -ExchangeLocation (($policy.exchangelocation.name)-join ';') -SharePointLocation (($policy.sharePointlocation.name)-join ';') -ContentMatchQuery $rule.ContentMatchQuery -holdcreatedtime $policy.WhenCreatedUTC -holdchangedtime $policy.WhenChangedUTC
+   }
+   }
+   else{
+   write-host "No hold policies found in case:" $cc.name -foregroundColor 'Yellow'
+   " "
+   [string]$cc.name | out-file -filepath $noholdsfilepath -append
+   }
+   }
+   }
+   #get information on the cases and pass values to the case report function
+   " "
+   write-host "Gathering a list of Advanced eDiscovery cases and holds..."
+   " "
+   $edc =Get-ComplianceCase -CaseType Advanced -ErrorAction SilentlyContinue
+   foreach($cc in $edc)
+   {
+   write-host "Working on case :" $cc.name
+   if($cc.status -eq 'Closed')
+   {
+   $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
+   add-tocasereport -casename $cc.name -casestatus -casetype $cc.casetype $cc.Status -caseclosedby $cc.closedby -caseClosedDateTime $cc.ClosedDateTime -casemembers $cmembers
+   }
+   else{
+   $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
+   $policies = Get-CaseHoldPolicy -Case $cc.Name | %{ Get-CaseHoldPolicy $_.Name -Case $_.CaseId -DistributionDetail}
+   if ($policies -ne $NULL)
+   {
+   foreach ($policy in $policies)
+   {
+   $rule=Get-CaseHoldRule -Policy $policy.name
+   add-tocasereport -casename $cc.name -casetype $cc.casetype -casemembers $cmembers -casestatus $cc.Status -casecreatedtime $cc.CreatedDateTime -holdname $policy.name -holdenabled $policy.enabled -holdcreatedby $policy.CreatedBy -holdlastmodifiedby $policy.LastModifiedBy -ExchangeLocation (($policy.exchangelocation.name)-join ';') -SharePointLocation (($policy.sharePointlocation.name)-join ';') -ContentMatchQuery $rule.ContentMatchQuery -holdcreatedtime $policy.WhenCreatedUTC -holdchangedtime $policy.WhenChangedUTC
    }
    }
    else{
@@ -149,14 +182,14 @@ Después de conectarse a PowerShell del Centro de seguridad & cumplimiento, el s
 
    El script pedirá una carpeta de destino en la que guardar el informe.
 
-4. Escriba el nombre de ruta de acceso completa de la carpeta en la que se guardará el informe y, a continuación, presione **Entrar**.
+4. Escriba el nombre de ruta de acceso completa de la carpeta en la que se guardará el informe y, a continuación, presione **ENTRAR**.
 
    > [!TIP]
    > Para guardar el informe en la misma carpeta en la que se encuentra el script, escriba un punto (".") cuando se le pida una carpeta de destino. Para guardar el informe en una subcarpeta de la carpeta donde se encuentra el script, simplemente escriba el nombre de la subcarpeta.
 
-   El script comienza a recopilar información sobre todos los casos de exhibición de documentos electrónicos de la organización. No obtenga acceso al archivo de informe mientras se ejecuta el script. Una vez completado el script, se muestra un mensaje de confirmación en la Windows PowerShell sesión. Después de mostrar este mensaje, puede obtener acceso al informe en la carpeta especificada en el paso 4. El nombre de archivo del informe es `CaseHoldsReport<DateTimeStamp>.csv` .
+   El script comienza a recopilar información sobre todos los casos de exhibición de documentos electrónicos de la organización. No obtenga acceso al archivo de informe mientras se ejecuta el script. Una vez completado el script, se muestra un mensaje de confirmación en la Windows PowerShell sesión. Después de mostrar este mensaje, puede obtener acceso al informe en la carpeta especificada en el paso 4. El nombre de archivo del informe es `CaseHoldsReport<DateTimeStamp>.csv`.
 
-   Además, el script también crea un informe con una lista de casos que no tienen ninguna retención. El nombre de archivo de este informe es `CaseswithNoHolds<DateTimeStamp>.csv` .
+   Además, el script también crea un informe con una lista de casos que no tienen ninguna retención. El nombre de archivo de este informe es `CaseswithNoHolds<DateTimeStamp>.csv`.
 
    Este es un ejemplo de ejecución del CaseHoldsReport.ps1 script.
 
@@ -167,6 +200,8 @@ Después de conectarse a PowerShell del Centro de seguridad & cumplimiento, el s
 El informe de casos que se crea al ejecutar el script de este artículo contiene la siguiente información sobre cada retención. Como se ha explicado anteriormente, debe ser un administrador de exhibición de documentos electrónicos para devolver información de todas las retenciones de la organización. Para obtener más información acerca de las retenciones de casos, vea [casos de exhibición de documentos electrónicos](./get-started-core-ediscovery.md).
 
 - El nombre de la retención y el nombre del caso de exhibición de documentos electrónicos al que está asociada la retención.
+
+- Si la retención está asociada a un caso principal o Advanced eDiscovery caso.
 
 - Si el caso de exhibición de documentos electrónicos está activo o cerrado.
 

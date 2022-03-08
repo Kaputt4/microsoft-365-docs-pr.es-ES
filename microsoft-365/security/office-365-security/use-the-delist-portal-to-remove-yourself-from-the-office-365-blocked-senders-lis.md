@@ -1,5 +1,5 @@
 ---
-title: Quitarse de la lista de remitentes bloqueados
+title: Quitarse de la lista de remitentes bloqueados y de la dirección 5.7.511 Errores de acceso denegado
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,17 +17,17 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: En este artículo, aprenderá a usar el portal de deslist para quitarse de la lista Microsoft 365 remitentes bloqueados.
+description: En este artículo, aprenderá a usar el portal de deslist para quitarse de la lista Microsoft 365 remitentes bloqueados. Esta es la mejor respuesta para solucionar los errores denegados de Acceso 5.7.511.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78e25da9a8f04d1ad730cd049ca38df596ab2f03
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 36187288b2a7acf1a852e6c203cbb84035ba5d7a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190226"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320247"
 ---
-# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados
+# <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>Usar el portal de deslist para quitarse de la lista de remitentes bloqueados y solucionar los errores de Acceso denegado 5.7.511
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "60190226"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-¿Recibe un mensaje de error cuando intenta enviar un correo electrónico a un destinatario cuya dirección de correo electrónico está en Microsoft 365? Si cree que no debe recibir el mensaje de error, puede usar el portal de deslist para quitarse de la lista de remitentes bloqueados.
+¿Recibe un mensaje de error cuando intenta enviar un correo electrónico a un destinatario cuya dirección de correo electrónico está en Microsoft 365 (por ejemplo, y la dirección 5.7.511 Acceso denegado)? Si cree que no debe recibir el mensaje de error, puede usar el portal de deslist para quitarse de la lista de remitentes bloqueados.
 
 ## <a name="what-is-the-blocked-senders-list"></a>¿Qué es la lista de remitentes bloqueados?
 
@@ -44,11 +44,19 @@ Microsoft usa la lista de remitentes bloqueados para proteger a sus clientes con
 
 Sabrá que lo hemos agregado a la lista cuando reciba una respuesta a un mensaje de correo que incluya un error similar al siguiente:
 
-> 550 5.7.606-649 Acceso denegado, prohibido enviar IP [_IP address_]; para solicitar la eliminación de esta lista, visite <https://sender.office.com/> y siga las instrucciones. Para más información, consulte [Informes de no entrega de correo electrónico en Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+> 550 5.7.606-649 Acceso denegado, prohibido el envío de IP [_dirección IP_] (por ejemplo. 5.7.511 Acceso denegado: Para solicitar la eliminación de esta lista, visite <https://sender.office.com/> y siga las instrucciones. Para más información, consulte [Informes de no entrega de correo electrónico en Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
 donde _dirección IP_ es la dirección IP del equipo en el que se ejecuta el servidor de correo.
 
-### <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Para usar el portal de deslist para quitarse de la lista de remitentes bloqueados
+## <a name="verify-senders-before-removing-them-from-the-blocked-senders-list"></a>Comprobar remitentes antes de eliminarlos de la lista de remitentes bloqueados
+
+Hay buenas razones para que los remitentes se desenrosque en la lista de remitentes bloqueados, pero pueden producirse errores. Echa un vistazo a este vídeo para obtener una explicación equilibrada de los remitentes bloqueados y la deslistación.
+<p>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvD]
+
+
+## <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list-after-errors-like-57511-access-denied"></a>Para usar el portal de deslist para quitarse de la lista de remitentes bloqueados (después de errores como 5.7.511 Acceso denegado)
 
 1. En un explorador web, vaya a <https://sender.office.com>.
 
@@ -71,8 +79,16 @@ donde _dirección IP_ es la dirección IP del equipo en el que se ejecuta el ser
     > [!NOTE]
     > Pueden pasar hasta 24 horas o los resultados pueden variar ampliamente antes de eliminar las restricciones.
 
-Consulta [Crear listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md) y Protección contra correo no deseado saliente en [EOP](outbound-spam-controls.md) para evitar que se bloquee una IP.
+Consulta [Crear listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md) y [Protección contra correo no](outbound-spam-controls.md) deseado saliente en EOP para evitar que se bloquee una IP.
+
+### <a name="how-do-fix-error-code-57511"></a>Cómo corregir el código de error 5.7.511
+ 
+Si se produce un problema al entregar un mensaje de correo electrónico que envió, Office 365 o Microsoft 365 le enviará un correo electrónico para informarle. El correo electrónico que reciba es una notificación de estado de entrega, que también se conoce como DSN o mensaje de devolución. Un informe de no entrega (NDR) es el tipo de notificación de estado más común e indica que un mensaje no se entregó. En determinadas situaciones, Microsoft debe llevar a cabo investigaciones adicionales contra el tráfico de su IP y, si recibe el código NDR 5.7.511, no podrá usar el  portal de deslist.
+ 
+>   550 5.7.511 Acceso denegado, remitente prohibido[xxx.xxx.xxx.xxx]. Para solicitar la eliminación de esta lista, reenvía este mensaje a delist@messaging.microsoft.com. Para obtener más información, vaya a https://go.microsoft.com/fwlink/?LinkId=526653. 
+ 
+En el correo electrónico para solicitar la eliminación de esta lista, proporcione el código NDR completo y la dirección IP. Microsoft se pondrá en contacto con usted en un plazo de 48 horas con los siguientes pasos. 
 
 ## <a name="more-information"></a>Más información
-
-El formulario de deslisting **para Outlook.com, el servicio de** consumidor se puede encontrar [aquí](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75). Asegúrese de leer primero las [preguntas más frecuentes](https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx) para obtener la dirección *del* envío.
+  
+El formulario de deslisting **para Outlook.com, el servicio** de consumidor se puede encontrar [aquí](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75). Asegúrese de leer primero las [preguntas más frecuentes](https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx) para obtener la *dirección del* envío.

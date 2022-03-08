@@ -2,8 +2,8 @@
 title: 'Puntuación de productividad de Microsoft: colaboración de contenido'
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles de la colaboración de contenido: las personas experimenta la puntuación de productividad.'
-ms.openlocfilehash: 3295c614383c48302d4737223b880a754ddf3b1c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 12ef0d1f56e8aa122942394e9214b501c85ababd
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60171740"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324933"
 ---
 # <a name="content-collaboration--people-experiences"></a>Colaboración de contenido: experiencias de personas
 
-La puntuación de productividad proporciona información sobre el recorrido de transformación digital de su organización a través del uso de Microsoft 365 y las experiencias tecnológicas que lo admiten. La puntuación de su organización refleja las mediciones de la experiencia de personas y tecnología y se puede comparar con los puntos de referencia de organizaciones similares al tuyo. La categoría de colaboración de contenido forma parte de las mediciones de experiencias de personas. Para obtener más información, consulte la información general [sobre](productivity-score.md) la puntuación de productividad y lea la Declaración [de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+La puntuación de productividad proporciona información sobre el recorrido de transformación digital de su organización a través del uso de Microsoft 365 y las experiencias tecnológicas que lo admiten. La puntuación de su organización refleja las mediciones de la experiencia de personas y tecnología y se puede comparar con los puntos de referencia de organizaciones similares al tuyo. La categoría de colaboración de contenido forma parte de las mediciones de experiencias de personas. Para obtener más información, consulte la información general sobre la puntuación [de](productivity-score.md) productividad y lea la Declaración [de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -38,11 +38,11 @@ Para empezar con las perspectivas de colaboración de contenido, los usuarios de
 - SharePoint
 - Exchange Online
 
-Para obtener más información, vea [Asignar licencias a los usuarios.](../manage/assign-licenses-to-users.md)
+Para obtener más información, vea [Asignación de licencias a usuarios](../manage/assign-licenses-to-users.md).
 
  Después de que las personas hayan estado activas en los productos anteriores al menos una vez en los últimos 28 días, empezarás a ver los conocimientos.
 
-## <a name="why-your-organization39s-content-collaboration-score-matters"></a>Por qué la organización&#39;la puntuación de colaboración de contenido es importante
+## <a name="why-your-organization39s-content-collaboration-score-matters"></a>Por qué la puntuación de colaboración&#39;contenido de su organización es importante
 
 Un aspecto clave de la transformación digital es cómo colaboran las personas en los archivos. Con el contenido en Microsoft 365, las personas acceden, crean, modifican y colaboran en el contenido con otras personas desde cualquier ubicación. La investigación muestra que cuando las personas colaboran con archivos en línea, cada persona ahorra un promedio de 100 minutos por semana.
 
@@ -51,7 +51,7 @@ Un aspecto clave de la transformación digital es cómo colaboran las personas e
 Proporcionamos una información principal que contiene las métricas clave para la colaboración de contenido en su organización. A continuación, se usa un marco de puntuación detallado a continuación para estas métricas para calcular la puntuación de la organización.
 
 > [!NOTE]
-> El 22 de abril de 2021, cambiamos la forma en que se calcula la métrica de colaboradores. Esto afecta a la información [principal,](#primary-insight)a la información de [colaboración de](#number-of-files-collaborated-on)archivos y a la forma en que se mide la puntuación de colaboración de contenido. Este cambio ayuda a reducir el ruido en los datos de agentes no humanos (o bots) de Microsoft y otras aplicaciones de terceros, lo que da como resultado una puntuación más precisa y útil.
+> El 22 de abril de 2021, cambiamos la forma en que se calcula la métrica de colaboradores. Esto afecta a la información [principal](#primary-insight), a la información de colaboración [de](#number-of-files-collaborated-on) archivos y a la forma en que se mide la puntuación de colaboración de contenido. Este cambio ayuda a reducir el ruido en los datos de agentes no humanos (o bots) de Microsoft y otras aplicaciones de terceros, lo que da como resultado una puntuación más precisa y útil.
 
 ### <a name="primary-insight"></a>Información principal
 
@@ -60,20 +60,20 @@ Microsoft OneDrive para empresas y SharePoint ayudar a los usuarios a crear, lee
 :::image type="content" source="../../media/collabscore_primary.jpg" alt-text="Información principal de la puntuación de colaboración de comunicación.":::
 
 
-Los tipos que se consideran para esta información incluyen archivos Word, Excel, PowerPoint, OneNote y PDF.
+Los tipos que se consideran para esta información son word, Excel, PowerPoint, OneNote archivos PDF.
 
 1. **Encabezado:** Muestra el porcentaje de personas de la organización que tienen acceso a OneDrive o SharePoint que colaboran en el contenido.
 2. **Cuerpo:** Proporciona más información sobre cómo los comportamientos de leer y crear archivos en línea están vinculados a la colaboración en archivos.
 3. **Visualización (estado actual):**
-    - Barras horizontales donde las partes de color azul representan el porcentaje de personas habilitadas para la colaboración de archivos a través de OneDrive o SharePoint que han sido **lectores,** creadores o colaboradores en archivos en línea en los **últimos** 28 días.
+    - Barras horizontales donde las partes de color azul representan el porcentaje de personas habilitadas para la colaboración de archivos a través de OneDrive o SharePoint que han sido lectores **,** creadores o colaboradores en archivos en línea en los **últimos** 28 días.
 
         Se definen de la siguiente manera:</br>
         **Lectores:** Personas que acceden o descargan archivos en línea en OneDrive o SharePoint.</br>
-        **Creadores:** Personas que crean, modifican, cargan, sincronizan, comprueban, copian o mueven archivos OneDrive o SharePoint línea.</br>
-        **Colaboradores:** Personas que colaboran con archivos en línea mediante OneDrive o SharePoint. Dos personas son colaboradores si una de ellas lee o edita un archivo Aplicación de Office o PDF en línea después de que la otra persona lo haya creado o modificado, dentro de una ventana de 28 días.
+        **Creadores:** Personas que crean, modifican, cargan, sincronizan, comprueban, copian o mueven archivos OneDrive o SharePoint.</br>
+        **Colaboradores:** Personas que colaboran con archivos en línea mediante OneDrive o SharePoint. Dos personas son colaboradores si una de ellas lee o edita un archivo Aplicación de Office o PDF en línea después de que la otra persona lo haya creado o modificado, en una ventana de 28 días.
 
         > [!NOTE]
-        > Los archivos que se consideran en la visualización son archivos Word, Excel, PowerPoint, OneNote o PDF que están en línea y guardados en OneDrive o SharePoint. 
+        > Los archivos que se consideran en la visualización son archivos word, Excel, PowerPoint, OneNote o PDF que están en línea y se guardan en OneDrive o SharePoint. 
 
     - El resaltado (numerador/denominador) de la fracción se usa para calcular el porcentaje expresado en cada una de las barras horizontales.
     
@@ -85,7 +85,7 @@ Los tipos que se consideran para esta información incluyen archivos Word, Excel
         - Denominador: número de personas que han tenido acceso a OneDrive o SharePoint durante al menos 1 de los últimos 28 días. </br> 
       - **Colaboradores:**</br>
         - Numerador: número de personas que han colaborado en archivos en línea en OneDrive o SharePoint en los últimos 28 días</br>
-        - Denominador: Número de personas a las que ha tenido acceso para OneDrive o SharePoint durante al menos 1 de los últimos 28 días
+        - Denominador: número de personas a las que ha tenido acceso para OneDrive o SharePoint durante al menos 1 de los últimos 28 días
 
     - El valor de referencia del mismo nivel para cada lector, creador y colaborador también se muestra como un porcentaje. En otras palabras, el valor del número de creadores se muestra como un porcentaje del número de personas que tienen acceso a OneDrive o SharePoint.
     
@@ -100,7 +100,7 @@ El gráfico de visualizaciones de tendencias muestra la línea de tendencia de l
 
 ### <a name="scoring-framework"></a>Marco de puntuación
 
-La puntuación de colaboración de contenido de la organización mide en un nivel agregado (organización) si las personas están leyendo, creando o colaborando de forma coherente en archivos Office en línea como Word, Excel, PowerPoint, OneNote o PDF, o en OneDrive o SharePoint.
+La puntuación de colaboración de contenido de la organización mide en un nivel agregado (organización) si las personas están leyendo, creando o colaborando de forma coherente en archivos Office en línea como Word, Excel, PowerPoint, OneNote o ARCHIVOS PDF, o en OneDrive o SharePoint.
 
 Las puntuaciones no se proporcionan en el nivel de usuario individual.
 
@@ -114,11 +114,11 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
 1. **Encabezado:** Resalta el porcentaje de personas activas en Microsoft 365 Office que crean archivos en OneDrive o SharePoint.
 2. **Cuerpo:** Proporciona información sobre el valor de la creación de contenido en OneDrive y SharePoint.
-3. **Visualización:** El desglose de la visualización representa la medida en que las personas que usan Microsoft Office aplicaciones para crear archivos en OneDrive y SharePoint, de la siguiente manera:
-      - **OneDrive:** La parte azul (coloreada) de la barra y la fracción de la barra representan el porcentaje de personas activas en Office aplicaciones que crean contenido en OneDrive como se muestra a continuación:
+3. **Visualización:** El desglose de la visualización representa la medida en que las personas que usan Microsoft Office aplicaciones para crear archivos en OneDrive y SharePoint, como se indica a continuación:
+      - **OneDrive:** la parte azul (coloreada) de la barra y la fracción de la barra representan el porcentaje de personas activas en aplicaciones de Office que crean contenido en OneDrive de la siguiente manera:
         - Numerador: número de personas que crean, modifican, cargan, sincronizan, comprueban, copian o mueven archivos Office en línea en OneDrive en los últimos 28 días.</br>
         - Denominador: el número de personas que tienen acceso a OneDrive o SharePoint y acceder a archivos de office en los últimos 28 días.
-      - **SharePoint:** La parte azul (coloreada) de la barra y la fracción de la barra representan el porcentaje de personas que están activas en aplicaciones Office y crean contenido en SharePoint como:</br>
+      - **SharePoint:** la parte azul (coloreada) de la barra y la fracción de la barra representan el porcentaje de personas que están activas en aplicaciones Office y crean contenido en SharePoint como:</br>
          - Numerador: número de personas que crean, modifican, cargan, sincronizan, comprueban, copian o mueven archivos Office en línea (archivos Microsoft Word, Excel, PowerPoint o OneNote) en SharePoint en los últimos 28 días.</br>
         - Denominador: el número de personas que tienen acceso a OneDrive o SharePoint y han accedido a Office archivos en los últimos 28 días.
 
@@ -182,14 +182,14 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
 :::image type="content" source="../../media/networkperfstrength.png" alt-text="Gráfico que muestra el rendimiento de la red OneDrive y SharePoint.":::
 
-1. **Encabezado:** Resalta el porcentaje de dispositivos de todos los probados que tienen una conexión de red deficiente a OneDrive y SharePoint. 
+1. **Encabezado:** Destaca el porcentaje de dispositivos de todos los probados que tienen una conexión de red deficiente a OneDrive y SharePoint. 
 2. **Cuerpo:** Proporciona información sobre por qué el rendimiento de la conexión de red es importante para la colaboración. 
 3. **Visualización:** Muestra un porcentaje de dispositivos con diferentes niveles de rendimiento de conectividad de red relacionados con OneDrive y SharePoint:
-      - **81-100 (mejor):** la parte verde oscuro (coloreada) de la barra representa el porcentaje de dispositivos con el mejor rendimiento.
-      - **61-80:** la parte verde (coloreada) de la barra representa el porcentaje de dispositivos con una puntuación de rendimiento de red entre 60-80. 
-      - **41-60:** La parte naranja (coloreada) de la barra representa el porcentaje de dispositivos con una puntuación de rendimiento de red entre 40-60. 
-      - **21-40:** La parte roja (coloreada) de la barra representa el porcentaje de dispositivos con una puntuación de rendimiento de red entre 20-40. 
-      - **0-20:** la parte roja oscura (coloreada) de la barra representa el porcentaje de dispositivos con la peor puntuación de rendimiento de red entre 0 y 20. 
+      - **81-100 (mejor):** La parte verde oscuro (coloreada) de la barra representa el porcentaje de dispositivos con el mejor rendimiento.
+      - **61-80**: La parte verde (coloreada) de la barra representa el porcentaje de dispositivos con una puntuación de rendimiento de red entre 60-80. 
+      - **41-60**: La parte naranja (coloreada) de la barra representa el porcentaje de dispositivos con una puntuación de rendimiento de red entre 40-60. 
+      - **21-40**: La parte roja (coloreada) de la barra representa el porcentaje de dispositivos con una puntuación de rendimiento de red entre 20 y 40. 
+      - **0-20**: La parte roja oscura (coloreada) de la barra representa el porcentaje de dispositivos con la peor puntuación de rendimiento de red entre 0 y 20. 
 
 ## <a name="related-content"></a>Contenido relacionado
 

@@ -2,13 +2,13 @@
 title: Conectar los registros DNS en GoDaddy para Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: Aprenda a comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en GoDaddy para Microsoft.
-ms.openlocfilehash: ac71bbe1c57e1471e1ff343df75f034cc15c5901
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 728fd6cc34517213b338e3da07e6a275a1a727d3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60647789"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313557"
 ---
 # <a name="connect-your-dns-records-at-godaddy-to-microsoft-365"></a>Conectar los registros DNS en GoDaddy para Microsoft 365
 
@@ -40,7 +40,7 @@ Si GoDaddy es su proveedor de hosting DNS, siga los pasos de este artículo para
 
 Tiene dos opciones para configurar registros DNS para su dominio:
 
-- [**Usar dominio Conectar**](#use-domain-connect-to-verify-and-set-up-your-domain) Si no ha configurado el dominio con otro proveedor de servicios de correo electrónico, siga los pasos de Dominio Conectar para comprobar y configurar automáticamente el nuevo dominio para usarlo con Microsoft 365.
+- [**Usar dominio Conectar**](#use-domain-connect-to-verify-and-set-up-your-domain) Si no ha configurado el dominio con otro proveedor de servicios de correo electrónico, siga los pasos de dominio Conectar para comprobar y configurar automáticamente el nuevo dominio para usarlo con Microsoft 365.
 
    OR
 
@@ -50,7 +50,7 @@ Tiene dos opciones para configurar registros DNS para su dominio:
 
 Siga estos pasos para comprobar y configurar automáticamente el dominio de GoDaddy con Microsoft 365:
 
-1. En el Centro de administración de Microsoft 365, seleccione **Configuración**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**dominios**</a>y seleccione el dominio que desea configurar.
+1. En el Centro de administración de Microsoft 365, **seleccione Configuración** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a> y seleccione el dominio que desea configurar.
 
 1. Seleccione los tres puntos (más acciones) > elija **Iniciar configuración**.
 
@@ -80,13 +80,13 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 
 1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled).
 
-   Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la esquina superior derecha y, a continuación, **seleccione Mis productos**.
+   Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la parte superior derecha y, a continuación, **seleccione Mis productos**.
 
 1. En **Dominios**, seleccione los tres puntos junto al dominio que desea comprobar y, a continuación, **seleccione Administrar DNS**.
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Seleccione Administrar DNS en la lista desplegable.":::
 
-1. En **Registros**, seleccione **AGREGAR** (Es posible que tenga que desplazarse hacia abajo).
+1. En **Registros**, seleccione **AGREGAR** (es posible que tenga que desplazarse hacia abajo).
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="Seleccione AGREGAR.":::
 
@@ -98,7 +98,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 
    |**Tipo** |**Host**|**Valor TXT**|**TTL** |
    |:-----|:-----|:-----|:-----|
-   |TXT |@|MS=ms *XXXXXXXX*<br>**Nota:** Este es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|1 hora  <br>|
+   |TXT |@|MS=ms *XXXXXXXX*<br>**Nota**: Este es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|1 hora  <br>|
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXT-values.png" alt-text="Rellene los valores de la tabla para el registro TXT.":::
 
@@ -112,9 +112,9 @@ Ahora que ha agregado el registro en el sitio de su registrador de dominios, deb
   
 Para comprobar el registro en Microsoft 365:
   
-1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**dominios**</a>.
 
-1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**.
+1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar configuración**.
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
 
@@ -129,7 +129,7 @@ Para comprobar el registro en Microsoft 365:
 
 1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled).
 
-   Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la esquina superior derecha y, a continuación, **seleccione Mis productos**.
+   Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la parte superior derecha y, a continuación, **seleccione Mis productos**.
 
 2. En **Dominios**, seleccione los tres puntos junto al dominio que desea comprobar y, a continuación, **seleccione Administrar DNS**.
 
@@ -149,7 +149,7 @@ Para comprobar el registro en Microsoft 365:
 
     |**Tipo**|**Host**|**Señala a**|**Prioridad**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtener el  *\<domain-key\>*  de su cuenta de Microsoft.           [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/> |1 hora  <br/> |
+    |MX  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtener el de  *\<domain-key\>*  su cuenta de Microsoft.           [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/> |1 hora  <br/> |
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Rellene los valores de la tabla para el registro MX.":::
 
@@ -159,7 +159,7 @@ Para comprobar el registro en Microsoft 365:
 
 1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled).
 
-   Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la esquina superior derecha y, a continuación, **seleccione Mis productos**.
+   Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la parte superior derecha y, a continuación, **seleccione Mis productos**.
 
 2. En **Dominios**, seleccione los tres puntos junto al dominio que desea comprobar y, a continuación, **seleccione Administrar DNS**.
 
@@ -190,11 +190,11 @@ Para comprobar el registro en Microsoft 365:
 ### <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *SPF*  que incluya ambos conjuntos de valores.
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga  un único registro SPF que incluya ambos conjuntos de valores.
 
 1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled).
 
-   Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la esquina superior derecha y, a continuación, **seleccione Mis productos**.
+   Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la parte superior derecha y, a continuación, **seleccione Mis productos**.
 
 2. En **Dominios**, seleccione los tres puntos junto al dominio que desea comprobar y, a continuación, **seleccione Administrar DNS**.
 
@@ -222,13 +222,13 @@ Para comprobar el registro en Microsoft 365:
 
 ## <a name="advanced-option-skype-for-business"></a>Opción avanzada: Skype Empresarial
 
-Solo seleccione esta opción si su organización usa Skype Empresarial servicios de comunicación en línea como chat, llamadas de conferencia y videollamadas, además de Microsoft Teams. Skype necesita 4 registros: 2 registros SRV para la comunicación de usuario a usuario y 2 registros CNAME para iniciar sesión y conectar usuarios al servicio.
+Solo seleccione esta opción si su organización usa Skype Empresarial para servicios de comunicación en línea como chat, llamadas de conferencia y videollamadas, además de Microsoft Teams. Skype necesita 4 registros: 2 registros SRV para la comunicación de usuario a usuario y 2 registros CNAME para iniciar sesión y conectar usuarios al servicio.
 
 ### <a name="add-the-two-required-srv-records"></a>Agregar los dos registros SRV necesarios
 
 1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled).
 
-   Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la esquina superior derecha y, a continuación, **seleccione Mis productos**.
+   Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la parte superior derecha y, a continuación, **seleccione Mis productos**.
 
 1. En **Dominios**, seleccione los tres puntos junto al dominio que desea comprobar y, a continuación, **seleccione Administrar DNS**.
 
@@ -266,7 +266,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
   
 1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled).
 
-   Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la esquina superior derecha y, a continuación, **seleccione Mis productos**.
+   Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la parte superior derecha y, a continuación, **seleccione Mis productos**.
 
 2. En **Dominios**, seleccione los tres puntos junto al dominio que desea comprobar y, a continuación, **seleccione Administrar DNS**.
 
@@ -304,7 +304,7 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
 
 1. Para empezar, vaya a su página de dominios en GoDaddy a través de [este vínculo](https://account.godaddy.com/products/?go_redirect=disabled).
 
-   Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la esquina superior derecha y, a continuación, **seleccione Mis productos**.
+   Si se le pide que inicie sesión, use sus credenciales de inicio de sesión, seleccione el nombre de inicio de sesión en la parte superior derecha y, a continuación, **seleccione Mis productos**.
 
 1. En **Dominios**, seleccione los tres puntos junto al dominio que desea comprobar y, a continuación, **seleccione Administrar DNS**.
 

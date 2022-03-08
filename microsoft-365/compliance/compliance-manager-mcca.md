@@ -2,8 +2,8 @@
 title: Analizador de configuración de cumplimiento de Microsoft para administrador de cumplimiento
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo usar El analizador de configuración de cumplimiento de Microsoft para rápida ejecución con El Administrador de cumplimiento de Microsoft.
-ms.openlocfilehash: 2e0327a11067a4e474831d95b2c74c4c289086ce
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+description: Obtenga información sobre cómo usar El analizador de configuración de cumplimiento de Microsoft para  rápida ejecución con El Administrador de cumplimiento de Microsoft.
+ms.openlocfilehash: 3c5230a8a9998c4b924e5a9d4a9565ae1c97db89
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747231"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325115"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analizador de configuración de cumplimiento de Microsoft para el Administrador de cumplimiento (versión preliminar)
 
@@ -36,7 +36,7 @@ MCCA puede ayudarle a ver rápidamente qué acciones de mejora en el Administrad
 
 Un recurso adicional para comprender MCCA es visitar las instrucciones [readme en GitHub](https://github.com/OfficeDev/MCCA#overview). Esta página proporciona información detallada sobre los requisitos previos y proporciona instrucciones de instalación completas. No necesita una cuenta de GitHub para tener acceso a esta página.
 
-**Disponibilidad:** MCCA está disponible para todas las organizaciones con licencias de Office 365 y Microsoft 365 y clientes del Departamento de Defensa (DoD GCC) Community (GCC) del Gobierno de los Estados Unidos.
+**Disponibilidad**: MCCA está disponible para todas las organizaciones con licencias de Office 365 y Microsoft 365 y clientes del Departamento de Defensa (DoD) Community (GCC) moderados, GCC Altos y del Departamento de Defensa (DoD).
 
 ## <a name="install-mcca-and-run-a-report"></a>Instalar MCCA y ejecutar un informe
 
@@ -44,14 +44,14 @@ Puede instalar la herramienta MCCA mediante Windows PowerShell. Una vez que desc
 
 ### <a name="step-1-install-windows-powershell"></a>Paso 1: Instalar Windows PowerShell
 
-Para empezar, necesitará el módulo Exchange Online PowerShell (v2.0.3 o posterior) que esté disponible en la galería de PowerShell. [Obtener instrucciones de instalación](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.3).
+Para empezar, necesitará el módulo Exchange Online PowerShell (v2.0.3 o posterior) que esté disponible en la galería de PowerShell. [Obtenga instrucciones de instalación](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.3).
 
 ### <a name="step-2-install-mcca"></a>Paso 2: Instalar MCCA
 
 Para instalar MCCA, empiece con PowerShell en modo de administrador. Siga los pasos siguientes:
 
-1. Seleccione el Windows **Inicio.**
-1. Escriba **PowerShell**, haga clic con el botón secundario **en Windows PowerShell** y, a continuación, seleccione Ejecutar como **administrador**.
+1. Seleccione el Windows **Inicio**.
+1. Escriba **PowerShell**, haga clic con el botón secundario en **Windows PowerShell** y, a continuación, **seleccione Ejecutar como administrador**.
 1. En el símbolo del sistema, escriba lo siguiente:
 
     ```powershell
@@ -69,17 +69,17 @@ Después de instalar MCCA, puede ejecutar MCCA y generar un informe. Para ejecut
     Get-MCCAReport
     ```
 
-    Si es un cliente GCC High, deberá proporcionar un parámetro de entrada adicional para ejecutar el informe:
+    Si es un cliente GCC high, deberá proporcionar un parámetro de entrada adicional para ejecutar el informe:
 
     ```powershell
     Get-MCCAReport -ExchangeEnvironmentName O365USGovGCCHigh
     ```
 
-3. Una vez que se ejecuta MCCA, realiza una comprobación de versión inicial y pide credenciales. En el símbolo del sistema Introducir el nombre de usuario, inicie sesión con la dirección de correo Microsoft 365 de la cuenta de usuario ( vea los[roles aptos para crear informes](#role-based-reporting)). A continuación, escriba la contraseña en el símbolo del sistema de contraseña.
+3. Una vez que se ejecuta MCCA, realiza una comprobación de versión inicial y pide credenciales. En el símbolo del sistema Introducir el nombre de usuario, inicie sesión con la dirección de correo Microsoft 365 de la cuenta de usuario (vea los roles aptos [para crear informes](#role-based-reporting)). A continuación, escriba la contraseña en el símbolo del sistema de contraseña.
 
 A continuación, el informe tarda aproximadamente entre 2 y 5 minutos en generarse. Cuando haya terminado, se abrirá una ventana del explorador y se mostrará el informe HTML. Cada vez que ejecute la herramienta, pedirá sus credenciales y generará un nuevo informe. Este informe se almacena localmente en el directorio siguiente:
 
-C:\Users \<username> \AppData\Local\Microsoft\MCCA. 
+C:\Users\<username>\AppData\Local\Microsoft\MCCA. 
 
 Puede obtener acceso a los informes generados anteriormente desde este directorio.
 
@@ -149,9 +149,9 @@ MCCA evalúa las configuraciones actuales con respecto a las acciones de mejora 
 
 Junto a cada solución de Microsoft hay cuadros codificados por colores que indican el número de elementos que corresponden a acciones de mejora en el Administrador de cumplimiento. Las acciones se desglosan en tres estados de estado:
 
-- **Aceptar:** las acciones que cumplen las condiciones recomendadas y no necesitan atención en este momento
-- **Mejora:** acciones que necesitan atención
-- **Recomendación:** acciones que no necesitan atención, pero para las que se recomiendan procedimientos recomendados
+- **Aceptar**: las acciones que cumplen las condiciones recomendadas y no necesitan atención en este momento
+- **Mejora**: acciones que necesitan atención
+- **Recomendación**: acciones que no necesitan atención, pero para las que se recomiendan procedimientos recomendados
  
 Seleccione un cuadro para ver las mejoras y recomendaciones.
 
@@ -159,7 +159,7 @@ Seleccione un cuadro para ver las mejoras y recomendaciones.
 
 Selecciona el desplegable junto a la **etiqueta Mejora** a la derecha de la acción de mejora. Verás un resumen rápido y detalles sobre la configuración actual y las acciones de mejora recomendadas. El resumen incluye vínculos directos al Administrador de cumplimiento, la solución aplicable en el Centro de cumplimiento de Microsoft 365 y documentación relevante.
 
-Al hacer clic en el vínculo Administrador de cumplimiento, se muestra una vista filtrada de todas las acciones de mejora de esa solución que aún no se han implementado. Desde allí, puede ver el número de puntos que puede lograr para aumentar la puntuación de cumplimiento [y](compliance-score-calculation.md)las evaluaciones a las que se aplican, así como las normativas y certificaciones aplicables.
+Al hacer clic en el vínculo Administrador de cumplimiento, se muestra una vista filtrada de todas las acciones de mejora de esa solución que aún no se han implementado. Desde allí, puede ver el número de puntos que puede lograr para aumentar la puntuación de [cumplimiento, las](compliance-score-calculation.md) evaluaciones a las que se aplican y las normativas y certificaciones aplicables.
 
 Para DLP, hay un botón **Script** de corrección que le proporciona un script de PowerShell generado previamente en función de lo que se recomienda. Puede copiarla y pegarla directamente en la consola de PowerShell. Creará una directiva DLP en modo de prueba
 
@@ -169,6 +169,6 @@ Selecciona el desplegable junto a la **etiqueta** Recomendación a la derecha de
 
 ## <a name="resources"></a>Recursos
 
-Para obtener información más detallada sobre cómo instalar, configurar y usar MCCA, consulte las instrucciones [readme](https://github.com/OfficeDev/MCCA#overview) en GitHub (no se requiere GitHub cuenta).
+Para obtener información más detallada sobre cómo instalar, configurar y usar MCCA, consulte las instrucciones [README en GitHub](https://github.com/OfficeDev/MCCA#overview) (no se requiere GitHub cuenta).
 
-Para obtener más información Windows PowerShell, comience [en Cómo usar la documentación de PowerShell](/powershell/scripting/how-to-use-docs). Vea también [Starting Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell).
+Para obtener más información Windows PowerShell, comience [en Cómo usar la documentación de PowerShell](/powershell/scripting/how-to-use-docs). Vea también [Inicio Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell).

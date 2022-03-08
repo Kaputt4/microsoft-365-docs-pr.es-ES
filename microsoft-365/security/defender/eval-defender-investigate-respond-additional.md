@@ -1,6 +1,6 @@
 ---
-title: Pruebe Microsoft 365 Defender de respuesta a incidentes en un entorno piloto
-description: Pruebe las capacidades de respuesta a incidentes en Microsoft 365 Defender priorizar y administrar incidentes, automatizar investigaciones y usar la búsqueda avanzada en la detección de amenazas.
+title: Pruebe Microsoft 365 Defender capacidades de respuesta a incidentes en un entorno piloto
+description: Pruebe las capacidades de respuesta a incidentes Microsoft 365 Defender priorizar y administrar incidentes, automatizar investigaciones y usar la búsqueda avanzada en la detección de amenazas.
 keywords: Microsoft 365 Defender prueba, pruebe Microsoft 365 Defender, evalúe Microsoft 365 Defender, Microsoft 365 Defender de evaluación, Microsoft 365 Defender  pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -11,8 +11,8 @@ ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 manager: dansimp
 audience: ITPro
@@ -23,17 +23,17 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 362e8360900f53d7bfc9eccf12d1107091860cb9
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: cc57c2b39466e84d5652ef60c56d6951fbe86714
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903627"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324093"
 ---
-# <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pruebe Microsoft 365 Defender de respuesta a incidentes en un entorno piloto
+# <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pruebe Microsoft 365 Defender capacidades de respuesta a incidentes en un entorno piloto
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Este artículo es [el paso 2 de 2](eval-defender-investigate-respond.md) en el proceso de realizar una investigación y respuesta de un incidente en Microsoft 365 Defender un entorno piloto. Para obtener más información acerca de este proceso, vea el [artículo de introducción](eval-defender-investigate-respond.md) .
 
@@ -49,7 +49,7 @@ Una vez que haya realizado una respuesta [a incidentes para un ataque simulado](
 
 ## <a name="prioritize-incidents"></a>Priorizar incidentes
 
-Puede acceder a la cola de incidentes desde **Incidentes & alertas > incidentes en** el inicio rápido del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender incidentes</a>. Por ejemplo:
+Puede acceder a la cola de incidentes desde **Incidentes & alertas > incidentes** en el inicio rápido del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender incidentes</a>. Por ejemplo:
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Ejemplo de la cola de incidentes.":::
 
@@ -108,7 +108,7 @@ Para obtener más información, vea [Administrar incidentes](manage-incidents.md
 
 ## <a name="examine-automated-investigation-and-response-with-the-action-center"></a>Examinar la investigación automatizada y la respuesta con el Centro de acción
 
-En función de cómo se configuren las capacidades automatizadas de investigación y respuesta para su organización, las acciones de corrección se toman automáticamente o solo tras la aprobación del equipo de operaciones de seguridad. Todas las acciones, ya sean pendientes o completadas, se enumeran en el Centro de [acciones, que](m365d-action-center.md) enumera las acciones de corrección pendientes y completadas para los dispositivos, el contenido de colaboración & correo electrónico y las identidades en una ubicación.
+En función de cómo se configuren las capacidades automatizadas de investigación y respuesta para su organización, las acciones de corrección se toman automáticamente o solo tras la aprobación del equipo de operaciones de seguridad. Todas las acciones, ya sean pendientes o completadas, se enumeran en el Centro de [acciones, que](m365d-action-center.md) enumera las acciones de corrección pendientes y completadas para los dispositivos, el correo electrónico & contenido de colaboración y las identidades en una ubicación.
 
 Por ejemplo:
 
@@ -150,11 +150,11 @@ Hay un único buzón interno y un dispositivo necesarios para esta simulación. 
 
 3. Configurar un dispositivo de prueba:
 
-    a. Asegúrese de que está usando Windows 10 versión 1903 o posterior.
+    a. Asegúrese de que usa Windows 10 versión 1903 o posterior.
 
     b. Une el dispositivo de prueba al dominio de prueba.
 
-    c. [Active la Antivirus de Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si tiene problemas para habilitar Antivirus de Windows Defender, consulte [este tema de solución de problemas](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+    c. [Active Antivirus de Windows Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Si tiene problemas para habilitar Antivirus de Windows Defender, consulte [este tema de solución de problemas](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
     d. [Incorporación a Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
@@ -172,7 +172,7 @@ Hay un único buzón interno y un dispositivo necesarios para esta simulación. 
 
 3. Cree una consulta que comience recopilando eventos de correo electrónico.
 
-   1. Seleccione **Consulta > Nuevo**.
+   1. Seleccione **Nuevo > consulta**.
 
    1. En los **grupos de** correo electrónico en **Búsqueda avanzada**, haga doble clic en **EmailEvents**. Debería verlo en la ventana de consulta.
 

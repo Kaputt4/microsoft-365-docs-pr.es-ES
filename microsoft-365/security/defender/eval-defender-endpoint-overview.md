@@ -1,6 +1,6 @@
 ---
-title: Evaluar Información general de Microsoft Defender para puntos de conexión, incluida la revisión de la arquitectura
-description: Pasos para la configuración de un entorno Microsoft 365 Defender de prueba o entorno piloto. Pruebe y experimente cómo la solución de seguridad está diseñada para proteger dispositivos, identidades, datos y aplicaciones de su organización.
+title: Paso 4. Evaluar Información general de Microsoft Defender para puntos de conexión, incluida la revisión de la arquitectura
+description: Pasos para la configuración de un entorno Microsoft 365 Defender prueba o entorno piloto. Pruebe y experimente cómo la solución de seguridad está diseñada para proteger dispositivos, identidades, datos y aplicaciones de su organización.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,21 +22,21 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1eaca5f9902b9617e47cc70d270f569d3a9dc60a
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 24600644e08bdc2b0a208d68d6da1078543bd2bd
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172132"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325955"
 ---
-# <a name="evaluate-microsoft-defender-for-endpoint-overview"></a>Evaluación de Información general sobre puntos de conexión de Microsoft Defender
+# <a name="step-4-evaluate-microsoft-defender-for-endpoint-overview"></a>Paso 4. Evaluación de Información general sobre puntos de conexión de Microsoft Defender
 
 **Se aplica a:**
 
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 
-En este artículo se describe el proceso para habilitar y pilotar Microsoft Defender para endpoint. Antes de iniciar este proceso, asegúrese de que [](eval-overview.md) ha revisado el proceso general para evaluar Microsoft 365 Defender y ha creado el entorno [Microsoft 365 Defender evaluación](eval-create-eval-environment.md). 
+En este artículo se describe el proceso para habilitar y pilotar Microsoft Defender para endpoint. Antes de iniciar este proceso, asegúrese de haber revisado el proceso general para evaluar Microsoft 365 Defender [](eval-overview.md) y de haber creado el entorno [Microsoft 365 Defender evaluación.](eval-create-eval-environment.md) 
 <br>
 
 Siga estos pasos para habilitar y pilotar Microsoft Defender para endpoint.

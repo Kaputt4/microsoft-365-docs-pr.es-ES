@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 14c83d007d2506e0e85c156f4d738f78f91fad75
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: be685d39bbda3b96f689c13a3bc3485c011f1ec8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321032"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319885"
 ---
 # <a name="device-status-report"></a>Informe de estado del dispositivo
 
@@ -39,7 +39,7 @@ Informamos del estado del dispositivo con las siguientes etiquetas:
 | Etiqueta de estado del dispositivo | Descripción |
 | ------ | ------ |
 | Listo para el usuario | Dispositivos que se han registrado correctamente con nuestro servicio y listos para ser entregados a un usuario.|
-| Activo | Dispositivos que se usan. <ul><li>Han cumplido los criterios de actividad (seis horas, dos continuas) para la versión de actualización de seguridad más reciente.</li> <li>Se han registrado con Microsoft Intune al menos una vez en los últimos cinco días.</li></ul> |
+| Activa | Dispositivos que se usan. <ul><li>Han cumplido los criterios de actividad (seis horas, dos continuas) para la versión de actualización de seguridad más reciente.</li> <li>Se han registrado con Microsoft Intune al menos una vez en los últimos cinco días.</li></ul> |
 | Sincronizado | Dispositivos que se usan y se han registrado con Intune en los últimos 28 días.
 | Sin sincronización | Dispositivos que se usan pero que no se han registrado con Intune en los últimos 28 días. |
-| Otro | La etiqueta agrega varios estados de error que pueden producirse, normalmente durante el registro del dispositivo. Para obtener más información, consulte [Troubleshooting device registration](../get-started/register-devices-self.md#troubleshooting-device-registration). |
+| Otro | La etiqueta agrega varios estados de error que pueden producirse, normalmente durante el registro del dispositivo. Para obtener más información, consulte [Troubleshooting device registration](../get-started/manual-registration.md#troubleshooting-device-registration). |

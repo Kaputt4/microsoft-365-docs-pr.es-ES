@@ -13,17 +13,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e364a2cffcd1c18c3d220e0747010a855fafed2a
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 530846d4a7c18900f0697806bb656aa653b71947
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345956"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326179"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Preguntas más frecuentes sobre detección de dispositivos
 
@@ -49,7 +47,7 @@ Tienes la opción de desactivar la detección de dispositivos a través de la [p
 
 En este modo, los puntos de conexión incorporados a Microsoft Defender para Endpoint pueden sondear activamente los dispositivos observados en la red para enriquecer los datos recopilados (con una cantidad insignificante de tráfico de red). Solo los dispositivos observados por el modo de detección básico se sondearán activamente en modo estándar. Este modo es muy recomendable para crear un inventario de dispositivos confiable y coherente. Si decide deshabilitar este modo y seleccionar el modo de detección básico, es probable que solo obtenga una visibilidad limitada de los puntos de conexión no administrados en la red.
 
- El modo estándar también aprovecha los protocolos comunes de detección que usan consultas de multidifusión en la red para encontrar aún más dispositivos, además de los que se han ovserved mediante el método pasivo.
+ El modo estándar también aprovecha los protocolos de detección comunes que usan consultas de multidifusión en la red para encontrar aún más dispositivos, además de los que se observaron mediante el método pasivo.
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>¿Puedo controlar qué dispositivos realizan la detección estándar?
 
@@ -69,7 +67,7 @@ El motor de detección distingue entre los eventos de red que se reciben en la r
 
 ## <a name="what-protocols-are-you-capturing-and-analyzing"></a>¿Qué protocolos está capturando y analizando?
 
-De forma predeterminada, todos los dispositivos incorporados que se ejecutan Windows 10 versión 1809 o posterior, Windows 11, Windows Server 2019 o Windows Server 2022 capturan y analizan los siguientes protocolos: ARP, CDP, DHCP, DHCPv6, IP (encabezados), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (encabezados SYN), UDP (encabezados), WSD
+De forma predeterminada, todos los dispositivos incorporados que se Windows 10 versión 1809 o posterior, Windows 11, Windows Server 2019 o Windows Server 2022 capturan y analizan los siguientes protocolos: ARP, CDP, DHCP, DHCPv6, IP (encabezados), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (encabezados SYN), UDP (encabezados), WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>¿Qué protocolos usa para el sondeo activo en la detección estándar?
 Cuando un dispositivo está configurado para ejecutar la detección estándar, los servicios expuestos se sondean mediante los siguientes protocolos: ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, AFP, CrestonCIP, IphoneSync, WinRM, VNC, SLP, LDAP, LDAP
@@ -90,7 +88,7 @@ Como la detección de dispositivos usa métodos pasivos para detectar dispositiv
 
 Los dispositivos se sondearán activamente cuando se observan cambios en las características del dispositivo para asegurarse de que la información existente esté actualizada (normalmente, los dispositivos sondeados no más de una vez en un período de tres semanas)
 
-## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>Mi herramienta de seguridad ha creado una alerta UnicastScanner.ps1 actividad de detección de puertos iniciada por ella, ¿qué debo hacer?
+## <a name="my-security-tool-raised-alert-on-unicastscannerps1--psscript_guidps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>Mi herramienta de seguridad ha creado una alerta en UnicastScanner.ps1 /PSScript_{GUID}.ps1 actividad de detección de puertos iniciada por ella, ¿qué debo hacer?
 
 Microsoft firma los scripts de sondeo activos y son seguros. Puede agregar la siguiente ruta de acceso a la lista de exclusión: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps1`
 
@@ -126,7 +124,7 @@ Normalmente, los dispositivos no administrados no se sondearía más de una vez 
 
 ### <a name="your-windows-device-already-runs-active-discovery"></a>El dispositivo Windows ya ejecuta la detección activa
 
-Las capacidades de detección activa siempre se han incrustado en el sistema operativo Windows, para buscar dispositivos, puntos de conexión e impresoras cercanos, para facilitar las experiencias de "plug and play" y el uso compartido de archivos entre puntos de conexión de la red. Se implementa una funcionalidad similar en dispositivos móviles, equipos de red y aplicaciones de inventario por nombrar algunas.  
+Las capacidades de detección activa siempre se han incrustado en el sistema operativo Windows, para buscar dispositivos cercanos, puntos de conexión e impresoras, para facilitar las experiencias de "plug and play" y el uso compartido de archivos entre los puntos de conexión de la red. Se implementa una funcionalidad similar en dispositivos móviles, equipos de red y aplicaciones de inventario por nombrar algunas.  
 
 La detección estándar usa los mismos métodos de detección para identificar dispositivos y para tener una visibilidad unificada para todos los dispositivos de la red en el Microsoft 365 Defender inventario de dispositivos. Por ejemplo: la detección estándar identifica los puntos de conexión cercanos en la red de la misma forma Windows listas de impresoras disponibles en la red. 
 

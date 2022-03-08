@@ -14,20 +14,20 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 ms.localizationpriority: medium
-description: En este artículo se proporciona información a los administradores globales SharePoint sobre cómo habilitar SharePoint Multi-Geo en ubicaciones geográficas satélite.
-ms.openlocfilehash: e48e6feedfab47f6faa17cadcff1d858bced4379
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: En este artículo se proporciona información a los administradores globales SharePoint sobre cómo SharePoint Multi-Geo ubicaciones geográficas satélites.
+ms.openlocfilehash: b542c1ee77c7b4ca7a6179bac5ce5eaa1090606a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172076"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330445"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>Habilitar SharePoint Multi-Geo en su ubicación geográfica de satélite
 
 Este artículo es para los administradores globales o de SharePoint que crearon una ubicación de satélite multigeográfica **antes** de que las funcionalidades multigeográficas de SharePoint estuvieran disponibles el 27 de marzo de 2019 y que no hayan habilitado SharePoint Multi-Geo en sus ubicaciones geográficas de satélite. 
 
 >[!Note]
->Si ha agregado una nueva ubicación geográfica **después el 27 de marzo**, no es necesario realizar estas acciones, ya que la nueva ubicación geográfica ya estará habilitada para OneDrive y SharePoint Multi-Geo.
+>Si ha agregado una nueva ubicación geográfica después del 27 de marzo de **2019**, no es necesario realizar estas instrucciones, ya que la nueva ubicación geográfica ya estará habilitada para OneDrive y SharePoint Multi-Geo.
 
 Estas instrucciones le permitirán habilitar SharePoint en la ubicación de satélite, por lo que los usuarios del satélite multigeográfico pueden aprovechar las funcionalidades de OneDrive y SharePoint Multi-Geo en Office 365. 
 

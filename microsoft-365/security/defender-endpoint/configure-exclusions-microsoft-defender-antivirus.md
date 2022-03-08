@@ -1,6 +1,6 @@
 ---
 title: Configurar exclusiones para Antivirus de Microsoft Defender exámenes
-description: Puede excluir los archivos (incluidos los archivos modificados por procesos especificados) y las carpetas de que Antivirus de Microsoft Defender. Valide las exclusiones con PowerShell.
+description: Puede excluir los archivos (incluidos los archivos modificados por procesos especificados) y las carpetas para que no se puedan examinar Antivirus de Microsoft Defender. Valide las exclusiones con PowerShell.
 keywords: ''
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -14,15 +14,13 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.collection:
-- M365-security-compliance
-- m365initiative-defender-endpoint
-ms.openlocfilehash: 5a26951535b6e2197d8ada45b2108e62f15fda03
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.collection: m365-security-compliance
+ms.openlocfilehash: 6ef9cfcec1c54cf9754d7152c098d7ef5b67b456
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245152"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330557"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes
 
@@ -31,13 +29,13 @@ ms.locfileid: "62245152"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-Puede excluir determinados archivos, carpetas, procesos y archivos abiertos por procesos de Antivirus de Microsoft Defender análisis. Estas exclusiones se aplican [a los exámenes programados,](scheduled-catch-up-scans-microsoft-defender-antivirus.md) [](run-scan-microsoft-defender-antivirus.md)a los exámenes a petición y a la protección y supervisión siempre activas en tiempo [real.](configure-real-time-protection-microsoft-defender-antivirus.md) Las exclusiones de los archivos abiertos por proceso solo se aplican a la protección en tiempo real.
+Puede excluir determinados archivos, carpetas, procesos y archivos abiertos por procesos de Antivirus de Microsoft Defender análisis. Estas exclusiones se aplican [a los exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)[, los](run-scan-microsoft-defender-antivirus.md) exámenes a petición y la protección y supervisión siempre activas [en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md). Las exclusiones de los archivos abiertos por proceso solo se aplican a la protección en tiempo real.
 
 ## <a name="configure-and-validate-exclusions"></a>Configurar y validar exclusiones
 
 Para configurar y validar exclusiones, vea lo siguiente:
 
-- [Configurar y validar exclusiones según el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md). Puede excluir archivos de los Antivirus de Microsoft Defender en función de su extensión de archivo, nombre de archivo o ubicación.
+- [Configure y valide exclusiones en función del nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md). Puede excluir archivos de los Antivirus de Microsoft Defender en función de su extensión de archivo, nombre de archivo o ubicación.
 
 - [Configurar y validar exclusiones para los archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md). Puede excluir archivos de los exámenes abiertos por un proceso específico.
 
@@ -58,7 +56,7 @@ Tenga en cuenta los siguientes puntos al definir exclusiones:
 
 - Revise y audite los cambios en la lista de exclusiones. El equipo de seguridad debe conservar el contexto en torno a por qué se agregó una exclusión determinada para evitar confusiones más adelante. El equipo de seguridad debe poder proporcionar respuestas específicas a preguntas sobre por qué existen exclusiones.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Antivirus de Microsoft Defender exclusiones en Windows Server 2016](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [Errores comunes para evitarlos cuando se definen exclusiones](common-exclusion-mistakes-microsoft-defender-antivirus.md)

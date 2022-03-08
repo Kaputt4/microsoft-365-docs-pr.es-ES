@@ -13,14 +13,14 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 996a96f957d7446b0b951d4f1b3a34c822f64f49
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 85e2da73fd54bd4d24e5ab8c4d104e33b5b4d877
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806665"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326123"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Evaluar acceso controlado a carpetas
 
@@ -40,10 +40,10 @@ Es especialmente útil para ayudar a proteger contra [ransomware](https://www.mi
 Este artículo le ayuda a evaluar el acceso controlado a carpetas. Explica cómo habilitar el modo de auditoría para que pueda probar la característica directamente en su organización.
 
 > [!TIP]
-> También puede visitar el sitio web del escenario de demostración de Microsoft Defender para endpoint en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para confirmar que la característica funciona y ver cómo funciona.
+> También puede visitar el sitio web de escenario de demostración de Microsoft Defender para endpoint en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para confirmar que la característica funciona y ver cómo funciona.
 
 > [!NOTE]
-> El sitio de demostración defender para el punto de conexión en demo.wd.microsoft.com está en desuso y se quitará en el futuro.
+> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está obsoleto y se eliminará en el futuro.
 
 ## <a name="use-audit-mode-to-measure-impact"></a>Usar el modo de auditoría para medir el impacto
 
@@ -57,11 +57,11 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 > [!TIP]
 > Si quieres auditar completamente cómo funcionará el acceso controlado a carpetas en tu organización, tendrás que usar una herramienta de administración para implementar esta configuración en dispositivos de tus redes.
-También puedes usar la directiva de grupo, Intune, la administración de dispositivos móviles (MDM) o Microsoft Endpoint Manager para configurar e implementar la configuración, como se describe en el tema principal de acceso controlado [a carpetas](controlled-folders.md).
+También puedes usar la directiva de grupo, Intune, la administración de dispositivos móviles (MDM) o Microsoft Endpoint Manager para configurar e implementar la configuración, tal como se describe en el tema principal de acceso controlado a [carpetas](controlled-folders.md).
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Revisar los eventos de acceso controlado a carpetas Windows visor de eventos
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Revisar eventos de acceso controlado a carpetas en Windows visor de eventos
 
-Los siguientes eventos de acceso controlado a carpetas aparecen en Windows visor de eventos en la carpeta Microsoft/Windows/Windows Defender/Operational.
+Los siguientes eventos de acceso controlado a carpetas aparecen Windows visor de eventos en la carpeta Microsoft/Windows/Windows Defender/Operational.
 
 Id. de evento | Descripción
 -|-

@@ -2,13 +2,13 @@
 title: Conectar los registros DNS en IONOS por 1&1 a Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en 1&1 IONOS para Microsoft.
-ms.openlocfilehash: 8dc3a509a05e55e984d1c06e59319661a19019e7
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 54e18972fe2d5e2ccd8c3ab266b20241e67f68a9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648724"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313613"
 ---
 # <a name="connect-your-dns-records-at-ionos-by-11-to-microsoft-365"></a>Conectar los registros DNS en IONOS por 1&1 a Microsoft 365
 
@@ -39,7 +39,7 @@ Si IONOS por 1&1 es su proveedor de hospedaje DNS, siga los pasos descritos en e
 
 Tiene dos opciones para configurar registros DNS para su dominio:
 
-- [**Usar dominio Conectar**](#use-domain-connect-to-verify-and-set-up-your-domain) Si no ha configurado el dominio con otro proveedor de servicios de correo electrónico, siga los pasos de Dominio Conectar para comprobar y configurar automáticamente el nuevo dominio para usarlo con Microsoft 365. 
+- [**Usar dominio Conectar**](#use-domain-connect-to-verify-and-set-up-your-domain) Si no ha configurado el dominio con otro proveedor de servicios de correo electrónico, siga los pasos de dominio Conectar para comprobar y configurar automáticamente el nuevo dominio para usarlo con Microsoft 365. 
 
     OR
 
@@ -49,7 +49,7 @@ Tiene dos opciones para configurar registros DNS para su dominio:
 
 Siga estos pasos para comprobar y configurar automáticamente sus IONOS por 1&1 dominio con Microsoft 365:
 
-1. En el Centro de administración de Microsoft 365, seleccione **Configuración**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**dominios**</a>y seleccione el dominio que desea configurar.
+1. En el Centro de administración de Microsoft 365, **seleccione Configuración** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a> y seleccione el dominio que desea configurar.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-1.png" alt-text="Seleccione el dominio en Microsoft 365.":::
 
@@ -61,7 +61,7 @@ Siga estos pasos para comprobar y configurar automáticamente sus IONOS por 1&1 
 
 1. En la página Agregar registros DNS, seleccione **Agregar registros DNS**.
 
-1. En la página de inicio de sesión&IONOS by 1, inicie sesión en su cuenta y seleccione **Conectar** y **Permitir**.
+1. En la página ionos por 1&inicio de sesión 1, inicie sesión en su cuenta y seleccione **Conectar** y **Permitir**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-3.png" alt-text="Seleccione Conectar y, a continuación, Permitir.":::
 
@@ -72,8 +72,8 @@ Siga estos pasos para comprobar y configurar automáticamente sus IONOS por 1&1 
 Después de agregar estos registros en IONOS por 1&1, el dominio se configurará para que funcione con servicios Microsoft.
   
 > [!CAUTION]
-> Tenga en cuenta que IONOS por 1&1 no permite que un dominio tenga un registro MX y un registro CNAME de detección automática de nivel superior. Esto limita las formas en que puede configurar Exchange Online para Microsoft. Hay una solución alternativa, pero  se recomienda emplearla solo si ya tiene experiencia con la creación de subdominios en IONOS por 1&1.
-> Si a [](../setup/domains-faq.yml) pesar de esta limitación de servicio decide administrar sus propios registros DNS de Microsoft en IONOS por 1&1, siga los pasos descritos en este artículo para comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online, entre otros.
+> Tenga en cuenta que IONOS por 1&1 no permite que un dominio tenga un registro MX y un registro CNAME de detección automática de nivel superior. Esto limita las formas en que puede configurar Exchange Online para Microsoft. Hay una solución alternativa, pero se recomienda emplearla solo  si ya tiene experiencia con la creación de subdominios en IONOS por 1&1.
+> Si a pesar [](../setup/domains-faq.yml) de esta limitación de servicio decide administrar sus propios registros DNS de Microsoft en IONOS por 1&1, siga los pasos descritos en este artículo para comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online, entre otros.
   
 > [!NOTE]
 > Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, vea [Encontrar y solucionar problemas después de agregar el dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -87,7 +87,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
   
 1. Para empezar, vaya a la página de dominios de IONOS por 1&1 mediante [este vínculo](https://my.1and1.com/). You'll be prompted to log in.
 
-1. Seleccione **Menú** y, a continuación, **seleccione Dominios y SSL**.
+1. Seleccione **Menú** y, a continuación **, dominios y SSL**.
   
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Seleccione Dominios y SSL.":::
   
@@ -99,7 +99,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Seleccione Agregar registro.":::
 
-1. Seleccione la **sección TXT.**
+1. Seleccione la **sección TXT** .
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-4.png" alt-text="Seleccione la sección TXT.":::
 
@@ -119,9 +119,9 @@ Ahora que ha agregado el registro en el sitio de su registrador de dominios, vol
 
 Para comprobar el registro en Microsoft 365:
   
-1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**dominios**</a>.
 
-1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**.
+1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar configuración**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
 
@@ -139,7 +139,7 @@ Para comprobar el registro en Microsoft 365:
 
 1. Para empezar, vaya a la página de dominios de IONOS por 1&1 mediante [este vínculo](https://my.1and1.com/). You'll be prompted to log in.
 
-1. Seleccione **Menú** y, a continuación, **seleccione Dominios y SSL**.
+1. Seleccione **Menú** y, a continuación **, dominios y SSL**.
   
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Seleccione Dominios y SSL.":::
   
@@ -151,7 +151,7 @@ Para comprobar el registro en Microsoft 365:
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Seleccione Agregar registro.":::
 
-1. Seleccione la **sección MX.**
+1. Seleccione la **sección MX** .
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-MX.png" alt-text="Seleccione la sección MX.":::
   
@@ -165,7 +165,7 @@ Para comprobar el registro en Microsoft 365:
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-MX-Save.png" alt-text="Seleccione Guardar.":::
 
-1. Si ya hay registros MX enumerados, elimine cada  uno de ellos seleccionando la papelera Eliminar registro en la **página** Agregar registro.
+1. Si ya hay registros MX enumerados, elimine cada uno de ellos seleccionando la papelera  Eliminar registro en la **página** Agregar registro.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-Delete.png" alt-text="Seleccione Eliminar registro.":::
 
@@ -176,7 +176,7 @@ Para comprobar el registro en Microsoft 365:
   
 1. Para empezar, vaya a la página de dominios de IONOS por 1&1 mediante [este vínculo](https://my.1and1.com/). You'll be prompted to log in.
 
-1. Seleccione **Menú** y, a continuación, **seleccione Dominios y SSL**.
+1. Seleccione **Menú** y, a continuación **, dominios y SSL**.
   
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Seleccione Dominios y SSL.":::
   
@@ -200,9 +200,9 @@ Para comprobar el registro en Microsoft 365:
     |:-----|:-----|
     |autodescubrir  <br/> | autodiscover.outlook.com |
 
-1. En **Acciones** para **el** subdominio de detección automática que acaba de crear, seleccione el control de engranaje y, a continuación, **seleccione DNS** en la lista desplegable. <br/>
+1. En **Acciones** **para el** subdominio de detección automática que acaba de crear, seleccione el control de engranaje y, a continuación, **seleccione DNS** en la lista desplegable. <br/>
 
-1. Seleccione **Agregar registro** y, a continuación, seleccione la sección **CNAME.**
+1. Seleccione **Agregar registro** y, a continuación, seleccione la **sección CNAME** .
 
 1. En el cuadro de diálogo **Alias:**, escriba o copie y pegue solo el valor **Alias** de la tabla siguiente. <br/>
 
@@ -215,14 +215,14 @@ Para comprobar el registro en Microsoft 365:
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *SPF*  que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](../../enterprise/external-domain-name-system-records.md). Para validar el registro SPF, puede usar una de estas herramientas[de validación de SPF](../setup/domains-faq.yml). 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga  un único registro SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](../../enterprise/external-domain-name-system-records.md). Para validar el registro SPF, puede usar una de estas [herramientas de validación deSPF](../setup/domains-faq.yml). 
   
 > [!NOTE]
 > Si se ha registrado con 1und1.de, [inicie sesión aquí](https://go.microsoft.com/fwlink/?linkid=859152). 
   
 1. Para empezar, vaya a la página de dominios de IONOS por 1&1 mediante [este vínculo](https://my.1and1.com/). You'll be prompted to log in.
 
-1. Seleccione **Menú** y, a continuación, **seleccione Dominios y SSL**.
+1. Seleccione **Menú** y, a continuación **, dominios y SSL**.
   
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Seleccione Dominios y SSL.":::
   
@@ -234,7 +234,7 @@ Para comprobar el registro en Microsoft 365:
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Seleccione Agregar registro.":::
 
-1. Seleccione la **sección SPF (TXT).**
+1. Seleccione la **sección SPF (TXT** ).
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SPFTXT.png" alt-text="Seleccione la sección SPF (TXT).":::
 
@@ -250,13 +250,13 @@ Para comprobar el registro en Microsoft 365:
 
 ## <a name="advanced-option-skype-for-business"></a>Opción avanzada: Skype Empresarial
 
-Solo seleccione esta opción si su organización usa Skype Empresarial servicios de comunicación en línea como chat, llamadas de conferencia y videollamadas, además de Microsoft Teams. Skype necesita 4 registros: 2 registros SRV para la comunicación de usuario a usuario y 2 registros CNAME para iniciar sesión y conectar usuarios al servicio.
+Solo seleccione esta opción si su organización usa Skype Empresarial para servicios de comunicación en línea como chat, llamadas de conferencia y videollamadas, además de Microsoft Teams. Skype necesita 4 registros: 2 registros SRV para la comunicación de usuario a usuario y 2 registros CNAME para iniciar sesión y conectar usuarios al servicio.
 
 ### <a name="add-two-additional-cname-records"></a>Agregar dos registros CNAME adicionales
   
 1. Para empezar, vaya a la página de dominios de IONOS por 1&1 mediante [este vínculo](https://my.1and1.com/). You'll be prompted to log in.
 
-1. Seleccione **Menú** y, a continuación, **seleccione Dominios y SSL**.
+1. Seleccione **Menú** y, a continuación **, dominios y SSL**.
   
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Seleccione Dominios y SSL.":::
   
@@ -282,7 +282,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
 
 1. En **Acciones** para el subdominio **lyncdiscover** que acaba de crear, seleccione el control de engranaje y, a continuación, **seleccione DNS** en la lista desplegable. <br/>
 
-1. Seleccione **Agregar registro** y, a continuación, seleccione la sección **CNAME.**
+1. Seleccione **Agregar registro** y, a continuación, seleccione la **sección CNAME** .
 
 1. En el cuadro de diálogo **Alias:**, escriba o copie y pegue solo el valor **Alias** de la tabla siguiente. <br/>
 
@@ -304,7 +304,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Seleccione Agregar registro.":::
 
-1. Seleccione la **sección CNAME.**
+1. Seleccione la **sección CNAME** .
 
 1. en el **cuadro Alias:** escriba o copie y pegue solo el **valor Alias** de la tabla siguiente. 
 
@@ -321,7 +321,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
   
 1. Para empezar, vaya a la página de dominios de IONOS por 1&1 mediante [este vínculo](https://my.1and1.com/). You'll be prompted to log in.
 
-1. Seleccione **Menú** y, a continuación, **seleccione Dominios y SSL**.
+1. Seleccione **Menú** y, a continuación **, dominios y SSL**.
   
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Seleccione Dominios y SSL.":::
   
@@ -333,7 +333,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Seleccione Agregar registro.":::
 
-1. Seleccione la **sección SRV.**
+1. Seleccione la **sección SRV** .
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SRV.png" alt-text="Seleccione la sección SRV.":::
 
@@ -364,7 +364,7 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
   
 1. Para empezar, vaya a la página de dominios de IONOS por 1&1 mediante [este vínculo](https://my.1and1.com/). You'll be prompted to log in.
 
-1. Seleccione **Menú** y, a continuación, **seleccione Dominios y SSL**.
+1. Seleccione **Menú** y, a continuación **, dominios y SSL**.
   
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Seleccione Dominios y SSL.":::
   
@@ -390,7 +390,7 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
 
 1. En **Acciones** para el subdominio **enterpriseregistration** que acaba de crear, seleccione el control de engranaje y, a continuación, **seleccione DNS** en la lista desplegable. <br/>
 
-1. Seleccione **Agregar registro** y, a continuación, seleccione la sección **CNAME.**
+1. Seleccione **Agregar registro** y, a continuación, seleccione la **sección CNAME** .
 
 1. En el cuadro de diálogo **Alias:**, escriba o copie y pegue solo el valor **Alias** de la tabla siguiente. <br/>
 
@@ -412,7 +412,7 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Seleccione Agregar registro.":::
 
-1. Seleccione la **sección CNAME.**
+1. Seleccione la **sección CNAME** .
 
 1. en el **cuadro Alias:** escriba o copie y pegue solo el **valor Alias** de la tabla siguiente. 
 

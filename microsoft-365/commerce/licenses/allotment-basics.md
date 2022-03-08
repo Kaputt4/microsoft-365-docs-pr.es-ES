@@ -2,8 +2,8 @@
 title: Conceptos básicos de asignación
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
 audience: Admin
@@ -16,14 +16,15 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_licensing
+search.appverid: MET150
 description: Obtenga información sobre la nueva característica de asignación.
 ms.date: 03/17/2021
-ms.openlocfilehash: 4a908441dbdaa5ecafcd140233b75adca0c22e4a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b41b3e27b7a3b05a9b80c3ac9590139adcee6fc6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167731"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325450"
 ---
 # <a name="allotment-basics"></a>Conceptos básicos de asignación
 
@@ -35,17 +36,17 @@ También puede delegar la administración de las asignaciones. Los propietarios 
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Debe cumplir los requisitos de licencias para [licencias basadas en grupos.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)
+Debe cumplir los requisitos de licencias para [licencias basadas en grupos](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
 
 Puede usar las asignaciones con cualquier producto disponible para los usuarios:
 
-- Office suites y productos independientes
-- Enterprise y productos de movilidad
+- Conjuntos de aplicaciones de Office y productos independientes
+- Productos de movilidad y empresa
 - Productos de Dynamics 365
 
 Los siguientes productos no se pueden usar con asignaciones:
 
-- Microsoft Store aplicaciones
+- Aplicaciones de Microsoft Store
 - Software perpetuo o software que se asigna directamente a un usuario si no hay ninguna licencia implicada.
 - Recursos de Azure
 
@@ -53,4 +54,4 @@ Debe ser un administrador global o de licencia para empezar con una asignación.
 
 ## <a name="getting-started"></a>Introducción
 
-La característica de asignación está disponible en una vista previa privada solo para un pequeño número de clientes. Si está interesado en unirse, rellene este formulario: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) .
+La característica de asignación está disponible en una vista previa privada solo para un pequeño número de clientes. Si está interesado en unirse, rellene este formulario: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).

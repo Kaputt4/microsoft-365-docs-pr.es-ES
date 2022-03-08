@@ -2,8 +2,8 @@
 title: 'Puntuación de productividad de Microsoft: comunicación'
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles de la comunicación: las personas experimentan la puntuación de productividad.'
-ms.openlocfilehash: 96303783afd9a77d4f490e412f0c182dc040d079
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3755f3e8c0ab482a2726d1e132d6e2296df08dc7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157163"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325927"
 ---
 # <a name="communication--people-experiences"></a>Comunicación: experiencias de personas
 
-La puntuación de productividad admite el viaje a la transformación digital con información sobre cómo su organización usa Microsoft 365 y las experiencias tecnológicas que la admiten. La puntuación de su organización refleja las mediciones la experiencia tecnológica y de los usuarios, y se puede comparar con los puntos de referencia de empresas de igual tamaño que la suya. La categoría de comunicación forma parte de las medidas de experiencia de las personas. Para obtener más información, consulte la información general [sobre](productivity-score.md) la puntuación de productividad y lea la Declaración [de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+Productivity Score admite el viaje a la transformación digital con información sobre cómo su organización usa Microsoft 365 y las experiencias tecnológicas que la admiten. La puntuación de su organización refleja las mediciones la experiencia tecnológica y de los usuarios, y se puede comparar con los puntos de referencia de empresas de igual tamaño que la suya. La categoría de comunicación forma parte de las medidas de experiencia de las personas. Para obtener más información, consulte la información general sobre la puntuación [de](productivity-score.md) productividad y lea la Declaración [de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -38,13 +38,13 @@ Para empezar con la información de comunicación, los usuarios de la organizaci
 - Yammer
 - Exchange Online
 
-Para obtener más información, vea [Asignar licencias a los usuarios.](../manage/assign-licenses-to-users.md)
+Para obtener más información, vea [Asignación de licencias a usuarios](../manage/assign-licenses-to-users.md).
 
 Después de que las personas hayan estado activas en los productos anteriores al menos una vez en los últimos 28 días, empezarás a ver los conocimientos.
 
 ## <a name="why-your-organizations-communication-score-matters"></a>Por qué la puntuación de comunicación de su organización es importante
 
-Microsoft entiende que las personas tienen diferentes necesidades de comunicación. Para obtener una respuesta rápida a una pregunta, es posible que elija enviar un mensaje instantáneo. Si desea enviar actualizaciones de estado a su liderazgo, puede elegir un mensaje de correo electrónico. Para llegar a una audiencia más amplia, puede elegir publicar un mensaje de la comunidad. Microsoft 365 esta flexibilidad en los modos de comunicación para satisfacer las necesidades de todos. La investigación muestra que el uso de herramientas de comunicación en tiempo real crea una organización más unificada y genera moral, independientemente de la ubicación.
+Microsoft entiende que las personas tienen diferentes necesidades de comunicación. Para obtener una respuesta rápida a una pregunta, es posible que elija enviar un mensaje instantáneo. Si desea enviar actualizaciones de estado a su liderazgo, puede elegir un mensaje de correo electrónico. Para llegar a una audiencia más amplia, puede elegir publicar un mensaje de la comunidad. Microsoft 365 permite esta flexibilidad en los modos de comunicación para satisfacer las necesidades de todos. La investigación muestra que el uso de herramientas de comunicación en tiempo real crea una organización más unificada y genera moral, independientemente de la ubicación.
 
 ## <a name="how-we-calculate-the-communication-score"></a>Cómo calculamos la puntuación de comunicación
 
@@ -70,8 +70,8 @@ Microsoft 365 proporciona a los usuarios la flexibilidad para adaptarse al estil
 
    - Barra horizontal donde la parte azul representa el porcentaje expresado en el encabezado
    - Resalta el (numerador/denominador) usado para calcular el porcentaje expresado en el encabezado:
-     - **Numerador:**# de personas que usan más de un modo de comunicación en los últimos 28 días
-     - **Denominador:**# de personas marcadas como habilitadas para más de un producto de comunicación en los últimos 28 días
+     - **Numerador**: # de personas que usan más de un modo de comunicación en los últimos 28 días
+     - **Denominador**: # de personas marcadas como habilitadas para más de un producto de comunicación en los últimos 28 días
    - **El valor de punto** de referencia del mismo nivel de la métrica clave también se muestra como un porcentaje
 
 4. **Ver recursos de comunicación:** Al hacer clic aquí, se enlistaría todo el contenido de soporte técnico en forma de vídeos o artículos relacionados con la comunicación. Desde estos puedes navegar a la lista de reproducción personalizada para Comunicación y, posteriormente, para todas las categorías de puntuación de productividad.
@@ -104,17 +104,17 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
    - **Personas que envían correos electrónicos:** La parte coloreada y la fracción representan el porcentaje de usuarios habilitados para Exchange que envían correos electrónicos. Esta fracción se construye a partir de:
 
-     - **Numerador:** personas que envían correos electrónicos en los últimos 28 días.
-     - **Denominador:** personas habilitadas para Exchange en los últimos 28 días.
+     - **Numerador**: personas que envían correos electrónicos en los últimos 28 días.
+     - **Denominador**: personas habilitadas para Exchange en los últimos 28 días.
 
-   - **Personas que envían mensajes en Microsoft Teams:** La parte coloreada y la fracción representan el porcentaje de usuarios habilitados para Microsoft Teams que envían mensajes. Esta fracción se construye a partir de:
+   - **Personas que envían mensajes en Microsoft Teams:** la parte coloreada y la fracción representan el porcentaje de usuarios habilitados para Microsoft Teams que envían mensajes. Esta fracción se construye a partir de:
 
-     - **Numerador:** personas que envían mensajes Microsoft Teams en los últimos 28 días.
-     - **Denominador:** personas habilitadas para Microsoft Teams en los últimos 28 días.
+     - **Numerador**: personas que envían mensajes Microsoft Teams en los últimos 28 días.
+     - **Denominador**: personas habilitadas para Microsoft Teams en los últimos 28 días.
 
    - **Personas que publiquen en comunidades:** La parte coloreada y la fracción representan el porcentaje de usuarios habilitados para Yammer que se están publicando en comunidades. Esta fracción se construye a partir de:
 
-     - **Numerador:** Personas que han publicado en Yammer comunidades en los últimos 28 días.
+     - **Numerador:** Personas publicando en Yammer comunidades en los últimos 28 días.
      - **Denominador:** Personas habilitadas para Yammer en los últimos 28 días.
 
 4. **Ver contenido relacionado:** Seleccione este vínculo para ver vídeos intercalados y otro contenido de ayuda relacionado.
@@ -129,12 +129,12 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
 3. **Visualización:** Desglosa la tasa de respuesta de los nuevos subprocesos de correo electrónico en función de si @mentions o no:
 
-   - **Respuestas a correos electrónicos con \@ menciones:** la parte coloreada y la fracción representan la tasa de respuesta de los nuevos subprocesos de correo electrónico que contienen @mentions. Esta fracción se construye a partir de:
+   - **Respuestas a correos electrónicos con \@menciones:** la parte coloreada y la fracción representan la tasa de respuesta de los nuevos subprocesos de correo electrónico que contienen @mentions. Esta fracción se construye a partir de:
 
      - **Numerador:** Nuevos subprocesos de correo electrónico @mentions que se iniciaron y recibieron una respuesta en los últimos 28 días.
      - **Denominador:** Nuevos subprocesos de correo electrónico @mentions que se iniciaron en los últimos 28 días.
 
-   - **Respuestas a correos electrónicos sin \@ menciones:** la parte coloreada y la fracción representan la tasa de respuesta de los nuevos subprocesos de correo electrónico que contienen @mentions. Esta fracción se construye a partir de:
+   - **Respuestas a correos electrónicos sin \@menciones:** la parte coloreada y la fracción representan la tasa de respuesta de los nuevos subprocesos de correo electrónico que contienen @mentions. Esta fracción se construye a partir de:
 
      - **Numerador:** Nuevos subprocesos de correo electrónico que no contienen @mentions, que se iniciaron y también recibieron una respuesta en los últimos 28 días.
      - **Denominador:** Nuevos subprocesos de correo electrónico que no contienen @mentions que se iniciaron en los últimos 28 días.
@@ -168,7 +168,7 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
 :::image type="content" source="../../media/yammerqsandas.png" alt-text="[Preguntas y respuestas en Yammer]":::
 
-1. **Encabezado:** Resalta las publicaciones marcadas como preguntas en Yammer que han recibido una respuesta marcada como Mejor respuesta como un porcentaje de todas las publicaciones marcadas como preguntas en Yammer en los últimos &quot; &quot; 28 días.
+1. **Encabezado:** Resalta las publicaciones marcadas como preguntas en Yammer &quot;&quot; que han recibido una respuesta marcada como Mejor respuesta como un porcentaje de todas las publicaciones marcadas como preguntas en Yammer en los últimos 28 días.
 
 2. **Cuerpo:** Proporciona información sobre el valor del uso de preguntas y respuestas en Yammer para compartir conocimientos.
 
@@ -176,7 +176,7 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
    - **Preguntas:** La parte coloreada de la barra y el número asociado representa el número total de publicaciones marcadas como preguntas en los últimos 28 días.
    - **Preguntas con respuestas:** La parte coloreada de la barra y el número asociado representa el número de publicaciones marcadas como preguntas y han recibido respuestas en los últimos 28 días.
-   - **Preguntas con mejores respuestas:** La parte coloreada de la barra y el número asociado representa el número de publicaciones que se marcaron como preguntas y que también han recibido la mejor respuesta en los &quot; &quot; últimos 28 días.
+   - **Preguntas con mejores respuestas:** La parte coloreada de la barra y el número asociado representa el número de publicaciones &quot;&quot; que se marcaron como preguntas y que también han recibido la mejor respuesta en los últimos 28 días.
 
 4. **Ver contenido relacionado:** Seleccione este vínculo para ver vídeos intercalados y otro contenido de ayuda relacionado.
 

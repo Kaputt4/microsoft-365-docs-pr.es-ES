@@ -2,8 +2,8 @@
 title: Comprar un nombre de dominio
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,23 +24,23 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Obtenga información sobre cómo comprar un nombre de dominio en Microsoft 365.
-ms.openlocfilehash: 77270f7ba045d58ae29092437d3356371a40dc38
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 8b9c4cea91caf91b5797515314342a7967af96d1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805861"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316987"
 ---
 # <a name="buy-a-domain-name"></a>Comprar un nombre de dominio
 
 > [!NOTE]
-> Si su organización usa Office 365 operado por 21Vianet en China, vea How [to buy a domain for Office 365 operated by 21Vianet in China](#how-to-buy-a-domain-for-office-365-operated-by-21vianet).
+> Si su organización usa Office 365 operado por 21Vianet en China, consulte How [to buy a domain for Office 365 operated by 21Vianet in China](#how-to-buy-a-domain-for-office-365-operated-by-21vianet).
 
  *Para agregar, modificar o quitar **dominios, debe** ser administrador **global** de [un plan empresarial o empresarial](https://products.office.com/business/office). Estos cambios afectan a todo el inquilino, los administradores *personalizados* o los usuarios *normales* no podrán realizar estos cambios.*  
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
-## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Inicie sesión y vaya a Configuración \> Dominios comprar \> un dominio
+## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Iniciar sesión e ir a Configuración \> Dominios comprar \> un dominio
 
 1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
     
@@ -76,7 +76,7 @@ Puede elegir entre los siguientes dominios de nivel superior para su dominio.
 Ofrecemos una suscripción de privacidad de dominio gratuita con la compra de un dominio. Esto mantiene la información de contacto adjunta al registro de su dominio con ICANN privada. [Obtenga más información.](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ## <a name="buy-a-domain-from-another-domain-registrar"></a>Comprar un dominio a otro registrador de dominios
-Si desea comprar un dominio a un registrador de dominios que no sea [GoDaddy](https://www.godaddy.com), le recomendamos que use uno a continuación que admita la configuración automática (dominio Conectar). 
+Si desea comprar un dominio de un registrador de dominios que no sea [GoDaddy](https://www.godaddy.com), le recomendamos que use uno debajo que admita la configuración automática (dominio Conectar). 
   
 - [11&amp; IONOS](https://www.1and1.com/)
 - [WordPress](https://www.wordpress.com) 

@@ -11,16 +11,15 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
+ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 1e235329fa57a703ab678049dd0da2d4f135de99
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: d250fefbdcc2c268563b6321ee7d91eca4881063
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767366"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328699"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Novedades de Microsoft Defender para Endpoint en Android
 
@@ -47,7 +46,7 @@ Compilación de la versión: 1.0.3501.0301 Mes de la versión: Noviembre de 2021
 **Cómo afectará esto a su organización:** Estos cambios tendrán efecto si usa Microsoft Defender para Endpoint en dispositivos que ejecutan Android 11 o versiones posteriores y actualiza Defender para endpoint para publicar la compilación 1.0.3501.0301 o posterior.
 
 > [!NOTE]
-> El administrador no puede configurar los nuevos permisos de almacenamiento en "Auto Approve" a través de Microsoft Endpoint Manager. El usuario tendrá que tomar medidas para proporcionar acceso a este permiso.
+> Los nuevos permisos de almacenamiento no se pueden configurar por el administrador en "Auto Approve" a través de Microsoft Endpoint Manager. El usuario tendrá que tomar medidas para proporcionar acceso a este permiso.
 
 - **Experiencia del usuario:** Los usuarios recibirán una notificación que indica que falta un permiso para la seguridad de la aplicación. Si el usuario niega este permiso, la funcionalidad "Seguridad de la aplicación" se desactivará en el dispositivo. Si el usuario no acepta o deniega el permiso, seguirá recibiendo el mensaje al desbloquear su dispositivo o abrir la aplicación, hasta que se haya aprobado.
 
@@ -58,7 +57,7 @@ Compilación de la versión: 1.0.3501.0301 Mes de la versión: Noviembre de 2021
 
 Notifique a los usuarios y al departamento de soporte técnico (según corresponda) que los usuarios tendrán que aceptar los nuevos permisos cuando se le pida después de haber actualizado Defender for Endpoint para crear la versión 1.0.3501.0301 o posterior. Para aceptar los permisos, los usuarios deben:
 
-1. Pulsa en la notificación Defender para endpoint desde la aplicación o abre la aplicación Defender para endpoint. Los usuarios verán una pantalla que enumera los permisos necesarios. Faltará una marca de verificación verde junto al Storage permiso.
+1. Pulsa en la notificación Defender para endpoint desde la aplicación o abre la aplicación Defender para endpoint. Los usuarios verán una pantalla que enumera los permisos necesarios. Faltará una marca de verificación verde junto al permiso Storage usuario.
 
 2. Pulsa **Comenzar**.
 

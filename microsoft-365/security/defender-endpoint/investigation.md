@@ -11,18 +11,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 54cf42f18c6e31a11649dccc2181e88ffb21dd51
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 1749404942b42778ecde99417a8e3501c7c4f4cf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283694"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327229"
 ---
 # <a name="investigation-resource-type"></a>Tipo de recurso Investigación
 
@@ -43,7 +41,7 @@ Representa una entidad de investigación automatizada en Defender para endpoint.
 
 Para obtener más información, vea [Overview of automated investigations](automated-investigations.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 Método|Tipo de valor devuelto|Descripción
 :---|:---|:---
@@ -55,14 +53,14 @@ Método|Tipo de valor devuelto|Descripción
 
 Propiedad|Tipo|Descripción
 :---|:---|:---
-Id.|String|Identidad de la entidad de investigación. 
+Id.|Cadena|Identidad de la entidad de investigación. 
 startTime|DateTime Nullable|La fecha y hora en que se creó la investigación.
 endTime|DateTime Nullable|La fecha y la hora en que se completó la investigación.
-cancelledBy|String|El identificador del usuario o aplicación que canceló esa investigación.
+cancelledBy|Cadena|El identificador del usuario o aplicación que canceló esa investigación.
 Estado|Enum|El estado actual de la investigación. Los valores posibles son: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
 statusDetails|Cadena|Información adicional sobre el estado de la investigación.
-machineId|String|El identificador del dispositivo en el que se ejecuta la investigación.
-computerDnsName|String|Nombre del dispositivo en el que se ejecuta la investigación.
+machineId|Cadena|El identificador del dispositivo en el que se ejecuta la investigación.
+computerDnsName|Cadena|Nombre del dispositivo en el que se ejecuta la investigación.
 triggeringAlertId|Cadena|El identificador de la alerta que desencadenó la investigación.
 
 ## <a name="json-representation"></a>Representación json

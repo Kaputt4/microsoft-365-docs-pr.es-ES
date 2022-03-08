@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ff9f6159bcfb85bd5c423b9775e70edd0ece2209
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 3139cab64a967ed65a16867b53ad57a6913afd2c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903932"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325899"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Paso 3. Realizar una revisión posterior al incidente de su primer incidente
 
@@ -46,7 +46,7 @@ Al asignar alertas a este marco del sector, puede:
 - Determinar la atribución de adversaria y de campaña.
 - Realizar análisis de tendencias.
 - Identificar las diferencias de habilidades en el reconocimiento del método de ataque.
-- Crea un Power Automate Playbook para una corrección más rápida.
+- Crea un Power Automate playbook para una corrección más rápida.
 
 La actividad de revisión posterior a los incidentes también puede dar como resultado ajustar la configuración de seguridad y los procesos del equipo de seguridad para simplificar las capacidades de respuesta de la organización.
 

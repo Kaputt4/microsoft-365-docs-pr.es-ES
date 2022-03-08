@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 090c43ea1d2d9f2d158f94d1e509490c3faf4799
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 58ba49a49b41d80bacb31efa780530e44a146fc1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767094"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326767"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Novedades de Microsoft Defender para Endpoint en Linux
 
@@ -28,6 +28,11 @@ ms.locfileid: "62767094"
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## <a name="1015880-30122012158800"></a>101.58.80 (30.122012.15880.0)
+
+- La herramienta de línea de comandos ahora admite la restauración de archivos en cuarentena en una ubicación que no sea la que se detectó originalmente. Esto se puede hacer a través de `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`.
+- Correcciones de errores
 
 ## <a name="1015662-30121122156620"></a>101.56.62 (30.121122.15662.0)
 
@@ -39,7 +44,7 @@ ms.locfileid: "62767094"
 
 ## <a name="1015257-30121092152570"></a>101.52.57 (30.121092.15257.0)
 
-- Se agregó una funcionalidad para detectar los jars de log4j vulnerables en uso por Java aplicaciones. La máquina se inspecciona periódicamente para ejecutar procesos Java con tarros log4j cargados. La información se notifica al back-end de Microsoft Defender para endpoint y se expone en el área de administración de vulnerabilidades del portal.
+- Se agregó una funcionalidad para detectar los jars de log4j vulnerables que usan Java aplicaciones. La máquina se inspecciona periódicamente para ejecutar procesos Java con tarros log4j cargados. La información se notifica al back-end de Microsoft Defender para endpoint y se expone en el área de administración de vulnerabilidades del portal.
 
 ## <a name="1014776-30121092147760"></a>101.47.76 (30.121092.14776.0)
 

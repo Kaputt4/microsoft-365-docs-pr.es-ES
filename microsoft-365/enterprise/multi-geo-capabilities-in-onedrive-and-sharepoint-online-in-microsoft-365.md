@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: admindeeplinkSPO
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
@@ -18,16 +18,16 @@ ms.collection:
 ms.localizationpriority: medium
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Expanda la presencia de Microsoft 365 a varias regiones geográficas con las capacidades multigeográficas de OneDrive Online.
-ms.openlocfilehash: 52bdbeddec29879e5f985dd1dff64db0d04b8072
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 778efca6035dad05ec9bc77298b888e50f381ca1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189038"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330039"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>Capacidades multigeográficas de OneDrive y SharePoint Online
 
-Las funcionalidades Multi-Geo en OneDrive y SharePoint Online permiten controlar recursos compartidos como sitios de grupo de SharePoint y buzones de grupo de Microsoft 365 almacenados en reposo en una ubicación geográfica especificada.
+Las funcionalidades multigeo en OneDrive y SharePoint Online permiten controlar recursos compartidos como sitios de grupo de SharePoint y buzones de grupo de Microsoft 365 almacenados en reposo en una ubicación geográfica especificada.
 
 Todos los usuarios, buzones de grupo y sitios de SharePoint tienen una Ubicación de datos preferida (PDL) que indica la ubicación geográfica donde están almacenados los datos relacionados. Los datos personales de los usuarios (buzón de Exchange y OneDrive), junto con los Grupos de Microsoft 365 o los sitios de SharePoint que creen, pueden almacenarse en la ubicación geográfica especificada para cumplir los requisitos de residencia de datos. También puede [especificar administradores diferentes para cada ubicación geográfica](add-a-sharepoint-geo-admin.md).
 
@@ -39,7 +39,7 @@ El OneDrive de cada usuario lo puede aprovisionar o [mover un administrador](mov
 
 ## <a name="sharepoint-sites-and-groups"></a>Sitios y grupos de SharePoint
 
-La administración de la característica multigeográfica está disponible en el Centro de administración de SharePoint. Encontrará información detallada en la [correspondiente entrada de blog](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302).
+La administración de la característica Multi-Geo está disponible a través <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">del centro SharePoint administración</a>. Encontrará información detallada en la [correspondiente entrada de blog](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302).
 
 Cuando un usuario crea un sitio de SharePoint conectado al grupo en un entorno multigeográfico, su PDL se utiliza para determinar la ubicación geográfica donde se crean el sitio y su buzón de grupo asociado. (Si el valor de la PDL del usuario no se ha configurado o se ha establecido en una ubicación geográfica que no se ha configurado como una ubicación de satélite, el sitio y el buzón se crean en la ubicación central).
 
@@ -47,7 +47,7 @@ Microsoft 365 servicios distintos de Exchange, OneDrive, SharePoint y Teams no s
 
 ## <a name="managing-the-multi-geo-environment"></a>Administrar el entorno multigeográfico
 
-Puede configurar y administrar su entorno multigeográfico mediante el Centro de administración de SharePoint. 
+La configuración y administración del entorno multigeós se realiza a través <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">del centro SharePoint administración</a>. 
 
 ![Captura de pantalla de la página de ubicaciones geográficas en SharePoint centro de administración.](../media/sharepoint-multi-geo-admin-center.png)
 

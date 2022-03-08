@@ -2,8 +2,8 @@
 title: Escriba la clave de producto comprada en Microsoft Open
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,39 +14,39 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_purchase
+- AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX
-description: Obtenga información sobre cómo activar, renovar o agregar licencias a una suscripción Microsoft 365 para empresas.
+description: Obtenga información sobre cómo activar, renovar o agregar licencias a una suscripción de Microsoft 365 para empresas.
 ms.date: 10/21/2020
-ms.openlocfilehash: a967bd1cebdf33850d632779835f97d6fac4cbf0
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 3ed0d47587d04b4058b878ec938a216a0083f36b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321536"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330179"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Escriba la clave de producto comprada en Microsoft Open
 
-Si ha comprado Microsoft 365 para empresas de un Programa [de licencias abiertas de Microsoft](https://go.microsoft.com/fwlink/p/?LinkID=613298), este artículo es para usted. Los clientes de licencias por volumen que compraron una clave de producto pueden seguir este tema para activar, renovar o agregar licencias a una suscripción.
+Si compró Microsoft 365 para empresas a través de un Programa de [licencias abiertas de Microsoft](https://go.microsoft.com/fwlink/p/?LinkID=613298), este artículo es para usted. Los clientes de licencias por volumen que compraron una clave de producto pueden seguir este tema para activar, renovar o agregar licencias a una suscripción.
   
  **¿Necesita ayuda inmediatamente?** [Llamar al Soporte técnico de Microsoft](../admin/get-help-support.md).
   
  **¿Necesita algo más?**
 
- **Para obtener ayuda con Microsoft 365 inicio o personal**, consulte [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).
+ **Para obtener ayuda con Microsoft 365 Home o Personal,** consulte [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).
   
- **Para obtener ayuda Microsoft 365 Empresa Estándar compra en una** tienda comercial, consulta Introducir la clave de producto [comprada en una tienda comercial](enter-your-product-key.md).
+ **Para obtener ayuda con Microsoft 365 Business Standard** comprado en una tienda comercial, consulta Introducir la clave de producto [comprada en una tienda comercial](enter-your-product-key.md).
   
 ## <a name="activate-renew-or-add-licenses-to-a-subscription-purchased-from-microsoft-open"></a>Activar, renovar o agregar licencias a una suscripción comprada desde Microsoft Open
 
-Si compró Microsoft 365 un programa de licencias abiertas de Microsoft, el sistema escribe automáticamente la clave al activar, renovar o agregar licencias a una suscripción.
+Si compró Microsoft 365 en un programa de licencias abiertas de Microsoft, el sistema escribe automáticamente la clave al activar, renovar o agregar licencias a una suscripción.
   
-1. Después de comprar una clave de un partner Microsoft 365, compruebe en la bandeja de entrada un correo electrónico de Microsoft que contenga un vínculo de activación.
+1. Después de comprar una clave de un partner de Microsoft 365, comprueba en la bandeja de entrada un correo electrónico de Microsoft que contenga un vínculo de activación.
 
     > [!TIP]
-    >  El correo se envía a la persona que aparece como administrador en línea en el contrato de licencia por volumen. Si no está seguro de quién está designado como administrador en línea, pregunte a su Microsoft 365 asociado. 
+    >  El correo se envía a la persona que aparece como administrador en línea en el contrato de licencia por volumen. Si no está seguro de quién está designado como administrador en línea, pregunte a su partner de Microsoft 365. 
   
 2. Siga el vínculo del correo electrónico para iniciar sesión con su cuenta profesional o educativa, acepte el contrato de Open License y renueve la suscripción. Para obtener un tutorial paso a paso, descargue la guía pdf [Activate Online Services: Microsoft 365 Subscription](https://go.microsoft.com/fwlink/p/?LinkId=618100), que trata cómo activar una nueva suscripción, renovar una suscripción existente o agregar licencias a una suscripción existente.
 
@@ -55,7 +55,7 @@ Si compró Microsoft 365 un programa de licencias abiertas de Microsoft, el sist
   
 ## <a name="whats-next"></a>¿Cuál es el siguiente paso?
 
-Si no es nuevo en Microsoft 365 para empresas, obtenga información sobre cómo configurar Microsoft 365 [para su organización](../admin/setup/setup.md).
+Si es nuevo en Microsoft 365 para empresas, obtenga información sobre cómo configurar [Microsoft 365 para su organización](../admin/setup/setup.md).
   
 ## <a name="still-having-trouble-with-product-keys"></a>¿Todavía tiene problemas con las claves de producto?
 

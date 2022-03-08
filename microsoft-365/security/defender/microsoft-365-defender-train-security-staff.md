@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 32d8927172e7479f125c0e3b1ae44441cbc3de13
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 43e90c152f3eae42c9d24673bbc00bc282b963f3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903888"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326403"
 ---
 # <a name="train-your-security-staff-for-microsoft-365-defender"></a>Entrena al personal de seguridad para Microsoft 365 Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "62903888"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Con la urgencia de proteger su organización y sus datos de atacantes, debe incorporar rápidamente su personal de seguridad para Microsoft 365 Defender. Microsoft proporciona varios tipos de recursos de aprendizaje y autoejecución para Microsoft 365 Defender servicios asociados.
+Con la urgencia de proteger su organización y sus datos de atacantes, debe incorporar rápidamente su personal de seguridad para Microsoft 365 Defender. Microsoft proporciona varios tipos de recursos de aprendizaje y autoejecución para Microsoft 365 Defender y los servicios asociados.
 
 
 ## <a name="microsoft-365-defender-ninja-training"></a>Microsoft 365 Defender entrenamiento de Ninja
@@ -47,7 +47,7 @@ El contenido está estructurado en tres niveles de conocimiento diferentes, con 
 
 ## <a name="microsoft-learn-learning-paths"></a>Rutas de aprendizaje de Microsoft Learn
 
-Use estas rutas de aprendizaje de Microsoft Learn y sus módulos para crear una comprensión de Microsoft 365 Defender y Microsoft Defender para endpoint, un módulo y una unidad a la vez.
+Use estas rutas de aprendizaje de Microsoft Learn y sus módulos para comprender Microsoft 365 Defender y Microsoft Defender para endpoint, un módulo y una unidad a la vez.
 
  - [Detectar y responder a ataques cibernéticos con Microsoft 365 Defender](/learn/paths/defender-detect-respond/)
 

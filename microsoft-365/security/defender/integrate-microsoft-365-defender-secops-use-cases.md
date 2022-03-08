@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3019602f3b6120129243ab7a683da1d01f89bb1e
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 9b4640872f4e4fbdba65b1e29ceee5575e583bac
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172036"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330221"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>Paso 5. Desarrollar y probar casos de uso
 
@@ -96,7 +96,7 @@ Por ejemplo, en el ejemplo de escenario anti phishing, los equipos soc podrían 
 | Equipo de SOC | Requisito | Personas para cumplir requisitos | Proceso para cumplir requisitos | Tecnología relevante | Gap identified | Usar registro de cambio de casos | Exempt (Y/N) |
 |:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
 | Equipo de inteligencia y análisis de amenazas | Los orígenes de datos están alimentando correctamente los motores de inteligencia de amenazas. | Analista/ingeniero de inteligencia de amenazas | Requisitos de fuente de datos establecidos, desencadenadores de inteligencia de amenazas de orígenes aprobados | Microsoft Defender para identity, Microsoft Defender para endpoint | El equipo de inteligencia de amenazas no usaba script de automatización para vincular Microsoft 365 Defender API con motores intel de amenazas | Agregar Microsoft 365 Defender como orígenes de datos a motores de amenazas <BR> <BR> Actualizar la libreta de casos de uso | N |
-| Equipo de supervisión | Los orígenes de datos están alimentando correctamente los paneles de supervisión | Alertas de supervisión y supervisión de SO & C de nivel 1,2 | Flujo de trabajo para informar sobre la puntuación & seguridad del Centro de cumplimiento | [Alertas en el Centro de & seguridad](/microsoft-365/security/office-365-security/alerts)  <br><br> Supervisión de puntuación segura  | Ningún mecanismo para que los analistas de SOC informen sobre la detección correcta de nuevas variantes de suplantación de identidad (phishing) para mejorar la puntuación segura <br><br> [Informes en el Centro de & seguridad](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)| Agregar un proceso para realizar un seguimiento de la mejora de puntuación segura en los flujos de trabajo de informes | N | 
+| Equipo de supervisión | Los orígenes de datos están alimentando correctamente los paneles de supervisión | Alertas de nivel 1,2 soc analyst–monitoring & | Flujo de trabajo para informar sobre la puntuación & seguridad del Centro de cumplimiento | [Alertas en el Centro de & seguridad](/microsoft-365/security/office-365-security/alerts)  <br><br> Supervisión de puntuación segura  | Ningún mecanismo para que los analistas de SOC informen sobre la detección correcta de nuevas variantes de suplantación de identidad (phishing) para mejorar la puntuación segura <br><br> [Informes en el Centro de seguridad & cumplimiento](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)| Agregar un proceso para realizar un seguimiento de la mejora de puntuación segura en los flujos de trabajo de informes | N | 
 | Equipo de Ingeniería y SecOps | Las actualizaciones de control de cambios se realizan en los runbooks de equipo soc | Ingeniero soc de nivel 2 | Procedimiento de notificación de control de cambios para runbooks de equipo SOC | Cambios aprobados en dispositivos de seguridad | Los cambios en Microsoft 365 Defender conectividad a la tecnología de seguridad SOC requieren aprobación | Agregar Microsoft Defender para aplicaciones en la nube, Defender for Identity, Defender para endpoint, Security & Compliance Center a runbooks soc | v |
 |||||||||
 
@@ -109,7 +109,7 @@ Además, los equipos SOC podrían haber realizado los descubrimientos descritos 
 | Supervisión Teams | El estado de amenaza y vulnerabilidad se notifica a través del portal de intranet de la empresa | Analista de SOC de nivel 2 | Informes generados automáticamente desde Microsoft 365 Defender que muestran el progreso de corrección de los activos | [Alertas en el Centro de & seguridad](/microsoft-365/security/office-365-security/alerts) <br><br> Supervisión de puntuación segura | No se comunican vistas ni informes de panel a los propietarios de activos sobre la amenaza y el estado de vulnerabilidad de los activos. | Cree un script de automatización para rellenar el estado de corrección de vulnerabilidad de activos críticos y de alto riesgo para la organización. | N |
 |||||||||
 
-En estos casos de uso de ejemplo, las pruebas revelaron varias diferencias en los requisitos del equipo SOC que se establecieron como líneas base para las responsabilidades de cada equipo. La lista de comprobación de casos de uso puede ser tan completa como sea necesario para garantizar que el equipo de SOC esté preparado para la integración Microsoft 365 Defender con los requisitos de SOC nuevos o existentes. Dado que se trata de un proceso iterativo, el proceso de desarrollo de casos de uso y el contenido de salida de casos de uso servirán de forma natural para actualizar y madurar los runbooks del SOC con las lecciones aprendidas.
+En estos casos de uso de ejemplo, las pruebas revelaron varias diferencias en los requisitos del equipo SOC que se establecieron como líneas base para las responsabilidades de cada equipo. La lista de comprobación de casos de uso puede ser tan completa como sea necesario para garantizar que el equipo de SOC esté preparado para la integración Microsoft 365 Defender con los requisitos SOC nuevos o existentes. Dado que se trata de un proceso iterativo, el proceso de desarrollo de casos de uso y el contenido de salida de casos de uso servirán de forma natural para actualizar y madurar los runbooks del SOC con las lecciones aprendidas.
 
 ## <a name="update-production-runbooks-and-playbooks"></a>Actualizar runbooks de producción y playbooks
 
@@ -136,7 +136,7 @@ Por ejemplo, la fase de preparación podría incluir una matriz if/then o XoR de
 
 | ¿Por qué se garantiza la escalación? | Paso siguiente |
 |:-------|:-----|
-| Alerta en la supervisión SOC clasificada como **desencadenada** crítica > **500/hora** | Vaya a Playbook A, Section 2, Activity 5 (con un vínculo a la sección playbook) |
+| Alerta en supervisión SOC clasificada como **desencadenada** crítica > **500/hora** | Vaya a Playbook A, Section 2, Activity 5 (con un vínculo a la sección playbook) |
 | eCommerce reported potential DDoS attack | Invocar Playbook B-Section C, Actividad 19 (con un vínculo a la sección del libro de reproducción) |
 | El ejecutivo informó de un correo electrónico sospechoso como intento de suplantación de identidad | Vaya a Playbook 5, Section 2, Activity 5 (con un vínculo a la sección de playbook) |
 |||

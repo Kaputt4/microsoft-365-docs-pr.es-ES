@@ -19,15 +19,16 @@ f1.keywords: NOCSH
 ms.custom:
 - admindeeplinkMAC
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 ms.localizationpriority: high
 recommendations: false
 description: Obtenga más información sobre las opciones para limitar o deshabilitar el uso compartido de Microsoft 365.
-ms.openlocfilehash: a34a1a457ed9c53f6393d65617f8ac0d9e611209
-ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
+ms.openlocfilehash: b2e327d5a5c670ada389a3dfceb2775e516ac2aa
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "61660171"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323477"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limitar el uso compartido en Microsoft 365
 
@@ -110,12 +111,13 @@ Para desactivar las solicitudes de acceso
 Puede limitar el uso compartido de sitios a dominios específicos al permitirlos o bloquearlos.
 
 Para limitar el uso compartido del sitio por dominio
-1. En el Centro de administración de SharePoint, en **Sitios**, haga clic en **Sitios activos**.
-2. Haga clic en el sitio que quiere configurar.
-3. En **Uso compartido externo** de la pestaña **Directivas**, haga clic en **Editar**.
+
+1. En el Centro de administración de SharePoint en **Sitios**, seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a>.
+2. Seleccione el sitio que quiere configurar.
+3. En la pestaña **Directivas**, en **Uso compartido externo**, seleccione **Editar**.
 4. En **Configuración avanzada para uso compartido externo**, seleccione **Limitar uso compartido por dominio**.
-5. Agregue los dominios que quiera permitir o bloquear y, después, haga clic en **Guardar**.
-6. Haga clic en **Guardar**.
+5. Agregue los dominios que desea permitir o bloquear y, a continuación, seleccione **Guardar**.
+6. Seleccione **Guardar**.
 
     ![Captura de pantalla de la configuración en el nivel de sitio de dominios permitidos.](../media/limit-site-sharing-by-domain.png)
 
@@ -144,18 +146,19 @@ Para limitar el uso compartido de sitios, archivos y carpetas a los propietarios
 Si quiere evitar el uso compartido de archivos y carpetas de SharePoint o OneDrive con usuarios externos a la organización, puede desactivar el uso compartido de invitados para toda la organización o para un sitio individual.
 
 Para desactivar el uso compartido de invitados de SharePoint en su organización
-1. En el Centro de administración de SharePoint, en **Directivas**, haga clic en **Uso compartido**.
+
+1. En el Centro de administración de SharePoint en **Directivas**, seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a>.
 2. En **Uso compartido externo**, arrastre el control deslizante de SharePoint hacia abajo hasta **Solo los usuarios de la organización**.
-3. Haga clic en **Guardar**.
+3. Seleccione **Guardar**.
 
     ![Captura de pantalla de la configuración de uso compartido en el nivel de organización de SharePoint configurado como Cualquier usuario.](../media/sharepoint-tenant-sharing-off.png)
 
 
 Para desactivar el uso compartido de invitados en un sitio
-1. En el Centro de administración de SharePoint, en **Sitios**, haga clic en **Sitios activos**.
-2. Haga clic en el sitio que quiere configurar.
-3. En **Uso compartido externo** de la pestaña **Directivas**, haga clic en **Editar**.
-4. En **Uso compartido externo**, elija **Solo los usuarios de la organización** y, después, haga clic en **Guardar**.
+1. En el Centro de administración de SharePoint en **Sitios**, seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a>.
+2. Seleccione el sitio que quiere configurar.
+3. En la pestaña **Directivas**, en **Uso compartido externo**, seleccione **Editar**.
+4. En **Uso compartido externo**, elija **Solo los usuarios de su organización** y, después, seleccione **Guardar**.
 
     ![Captura de pantalla de la configuración de compartición a nivel de sitio de SharePoint establecida en Sólo personas de su organización.](../media/sharepoint-site-external-sharing-settings-off.png)
 
@@ -164,17 +167,19 @@ Puede desactivar el uso compartido de invitados para un OneDrive individual haci
 Si quiere permitir el uso compartido con personas externas a la organización, pero quiere asegurarse de que todos los usuarios se autentican, puede deshabilitar los vínculos de tipo *Cualquiera* (uso compartido anónimo) para toda la organización o para un sitio individual.
 
 Para desactivar los vínculos de tipo *Cualquiera* en el nivel de organización
-1. En el Centro de administración de SharePoint, en **Directivas**, haga clic en **Uso compartido**.
+
+1. En el Centro de administración de SharePoint en **Directivas**, seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a>.
 2. En **Uso compartido externo**, arrastre el control deslizante de SharePoint hacia abajo hasta **Invitados nuevos y existentes**.
-3. Haga clic en **Guardar**.
+3. Seleccione **Guardar**.
 
     ![Captura de pantalla de la configuración de uso compartido en el nivel de organización de SharePoint configurado como Invitados nuevos y existentes.](../media/sharepoint-guest-sharing-new-existing-guests.png)
 
 Desactivar los vínculos de tipo *Cualquiera*
-1. En el Centro de administración de SharePoint, en **Sitios**, haga clic en **Sitios activos**.
-2. Haga clic en el sitio que quiere configurar.
-3. En **Uso compartido externo** de la pestaña **Directivas**, haga clic en **Editar**.
-4. En **Uso compartido externo**, elija **Invitados nuevos y existentes** y, después, haga clic en **Guardar**.
+
+1. En el Centro de administración de SharePoint en **Sitios**, seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a>.
+2. Seleccione el sitio que quiere configurar.
+3. En la pestaña **Directivas**, en **Uso compartido externo**, seleccione **Editar**.
+4. En **Uso compartido externo**, elija **Invitados nuevos y existentes** y, después, seleccione **Guardar**.
 
     ![Captura de pantalla de la configuración de uso compartido de nivel de sitio de SharePoint establecida en Configuración nueva y existente.](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
 

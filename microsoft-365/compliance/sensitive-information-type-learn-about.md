@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: En este artículo se proporciona información general sobre los tipos de información confidencial y cómo detectan información confidencial como números de cuenta bancaria, tarjeta de crédito o seguridad social para identificar elementos confidenciales
-ms.openlocfilehash: 6bc15ae90d591e2f2c4e432dce025201c9f13c18
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: fbe23bbb6c639857367cc0b8467f6084e9116af1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903792"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318849"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
@@ -42,7 +42,6 @@ Microsoft proporciona un gran número de SIT preconfigurados o puede crear los s
 - [Etiquetas de retención](retention.md)
 - [Administración de riesgos internos](insider-risk-management.md)
 - [Cumplimiento de las comunicaciones](communication-compliance.md)
-- [Administración de riesgos interna](insider-risk-management-solution-overview.md)
 - [Directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Priva](/privacy/priva)
 
@@ -50,7 +49,7 @@ Microsoft proporciona un gran número de SIT preconfigurados o puede crear los s
 
 ### <a name="built-in-sensitive-information-types"></a>Integrados en tipos de información confidencial
 
-Microsoft crea estos SIT en la consola de cumplimiento de forma predeterminada. Estos SIT no se pueden editar, pero se pueden usar como plantillas y copiarse para crear tipos de información confidencial personalizados.
+Microsoft crea estos SIT en la consola de cumplimiento de forma predeterminada. Estos SIT no se pueden editar, pero se pueden usar como plantillas y copiarse para crear tipos de información confidencial personalizados. Vea [definiciones de entidad de tipo de información confidencial](sensitive-information-type-entity-definitions.md) para obtener una lista completa de todos los SIT.
 
 ### <a name="named-entity-sensitive-information-types"></a>Tipos de información confidencial de entidad con nombre
 
@@ -86,7 +85,7 @@ Cada entidad de tipo de información confidencial se define mediante estos campo
 
 ![Diagrama de evidencia corroborativa y ventana de proximidad.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-Obtenga más información sobre los niveles de confianza en este vídeo
+Obtenga más información sobre los niveles de confianza en este breve vídeo.
 
 
  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]  
@@ -136,7 +135,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Número de identidad nacional de Argentina 
-- Identity 
+- Identidad 
 - Identificación tarjeta de identidad nacional 
 - DNI 
 - Registro nacional de personas de NIC 
@@ -174,7 +173,7 @@ Puede elegir entre varias opciones para crear tipos de información confidencial
 - **Usar PowerShell** : puede configurar tipos de información confidencial personalizados con PowerShell. Aunque este método es más complejo que utilizar la interfaz de usuario, tendrá más opciones de configuración. Vea [Crear un tipo de información confidencial en el centro de cumplimiento y seguridad PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 > [!NOTE]
-> Los niveles de confianza mejorados están disponibles para su uso inmediato en Prevención de pérdida de datos para servicios de Microsoft 365, Microsoft Information Protection para servicios Microsoft 365, Cumplimiento de comunicaciones, Gobierno de la información y Administración de registros.
+> Los niveles de confianza mejorados están disponibles para su uso inmediato en prevención de pérdida de datos para servicios de Microsoft 365, Microsoft Information Protection para servicios Microsoft 365, cumplimiento de comunicaciones, gobierno de información y administración de registros.
 > Microsoft 365 Information Protection ahora admite idiomas de juego de caracteres de doble byte para:
 > - Chino (simplificado)
 > - Chino (tradicional)
@@ -188,7 +187,7 @@ Puede elegir entre varias opciones para crear tipos de información confidencial
 > - Por ejemplo, para detectar una palabra clave como "机密的document", utilice dos variantes de la palabra clave; una con un espacio entre el texto japonés y el inglés y otra sin espacio entre el texto japonés y el inglés. Por lo tanto, las palabras clave que deben agregarse en el SIT deben ser "机密的document" y "机密的document". Del mismo modo, para detectar la frase "東京オリンピック2020", se deben utilizar dos variantes: "東京オリンピック 2020" y "東京オリンピック2020"".
 > 
 > Junto con caracteres de chino,japonés/doble byte, si la lista de palabras clave/frases también contiene palabras no chinas/japonesas (como solo inglés), debe crear dos diccionarios/listas de palabras clave. Uno para las palabras clave que contienen caracteres chinos, japoneses o de dos bytes; y otro solo para inglés. 
-> - Por ejemplo, si desea crear un diccionario o una lista de palabras clave con tres frases "Extremadamente confidencial", "機密性 机密的 
+> - Por ejemplo, si desea crear un diccionario o lista de palabras clave con tres frases "Extremadamente confidencial", "機密性 机密的 
 >     1. Extremadamente confidencial
 >     2. 機密性が高い, 机密的document y 机密的 document
 > 

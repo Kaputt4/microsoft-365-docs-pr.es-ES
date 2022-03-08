@@ -15,20 +15,20 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2bf43507b624cc1dae78534d579d01c1f2cef096
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 14d45f4ac22a9707b380d817cb89da1bbee562e2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167951"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326515"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -44,7 +44,7 @@ El filtrado de contenido web está disponible en los principales exploradores we
 
 - Se impide que los usuarios accedan a sitios web en categorías bloqueadas, ya sea que estén explorando localmente o lejos.
 
-- El equipo de seguridad puede implementar cómodamente directivas para grupos de usuarios que usan grupos de dispositivos definidos en Microsoft Defender para la configuración del control de acceso basado en roles de [punto de conexión.](/microsoft-365/security/defender-endpoint/rbac)
+- El equipo de seguridad puede implementar directivas cómodamente en grupos de usuarios que usan grupos de dispositivos definidos en Microsoft Defender para la configuración de control de acceso basado en roles de [punto de conexión](/microsoft-365/security/defender-endpoint/rbac).
 
 - El equipo de seguridad puede acceder a los informes web en la misma ubicación central, con visibilidad sobre los bloques reales y el uso web.
 
@@ -56,40 +56,40 @@ Antes de probar esta característica, asegúrese de cumplir los siguientes requi
 
 - Tiene acceso a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
-- Los dispositivos de su organización están ejecutando Windows 10 Anniversary Update (versión 1607) o posterior, o Windows 11 con las actualizaciones [antivirus/antimalware](manage-updates-baselines-microsoft-defender-antivirus.md)más recientes.
+- Los dispositivos de la organización ejecutan Windows 10 Anniversary Update (versión 1607) o posterior, o Windows 11 con las actualizaciones [antivirus/antimalware más recientes](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 - Windows Defender SmartScreen y Network Protection están habilitados en los dispositivos de la organización.
 
 ## <a name="data-handling"></a>Control de datos
 
-Los datos se almacenan en la región seleccionada como parte de la configuración de administración de datos de [Microsoft Defender para](data-storage-privacy.md)endpoint. Los datos no abandonarán el centro de datos en esa región. Además, sus datos no se compartirán con terceros, incluidos nuestros proveedores de datos.
+Los datos se almacenan en la región que se seleccionó como parte de la configuración de administración de datos de [Microsoft Defender para puntos de conexión](data-storage-privacy.md). Los datos no abandonarán el centro de datos en esa región. Además, sus datos no se compartirán con terceros, incluidos nuestros proveedores de datos.
 
 ## <a name="turn-on-web-content-filtering"></a>Activar el filtrado de contenido web
 
-En la navegación a la izquierda en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal,</a>seleccione **Configuración** \> **Extremos generales** \>  \> **avanzadas**. Desplácese hacia abajo hasta que vea la entrada para el filtrado **de contenido web**. Cambie la alternancia a **Las preferencias Activar** **y Guardar**.
+En la navegación a la izquierda en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, seleccione **Configuración** \> **Características avanzadas generales** \>  \> **de los puntos de conexión**. Desplácese hacia abajo hasta que vea la entrada para el **filtrado de contenido web**. Cambie la alternancia a **Las preferencias Activar** **y Guardar**.
 
 ### <a name="configure-web-content-filtering-policies"></a>Configurar directivas de filtrado de contenido web
 
-Las directivas de filtrado de contenido web especifican qué categorías de sitio están bloqueadas en qué grupos de dispositivos. Para administrar las directivas, vaya a **Configuración** filtrado de contenido web de puntos de conexión \>  \>  (en **Reglas**).
+Las directivas de filtrado de contenido web especifican qué categorías de sitio están bloqueadas en qué grupos de dispositivos. Para administrar las directivas, vaya a **Configuración** \> **filtrado** \> de contenido **web** de puntos de conexión (en **Reglas**).
 
 Las directivas se pueden implementar para bloquear cualquiera de las siguientes categorías primarias o secundarias:
 
 <details>
 <summary>Contenido para adultos</summary>
 
-**Sectas:** sitios relacionados con grupos o movimientos cuyos miembros muestran su pasión por un sistema de creencias diferente de los que se aceptan socialmente. 
+**Sectas**: sitios relacionados con grupos o movimientos cuyos miembros muestran la pasión por un sistema de creencias que es diferente de los que se aceptan socialmente. 
 
 **Juegos de** azar: juegos de azar en línea y sitios que promueven las habilidades y prácticas de juego.
 
-**Desnudez:** sitios que proporcionan imágenes o vídeos completos frontales y semidesnudos, normalmente en forma artística, y pueden permitir la descarga o venta de dichos materiales.
+**Desnudez**: sitios que proporcionan imágenes o vídeos completos frontales y semidesnudos, normalmente en forma artística, y pueden permitir la descarga o venta de dichos materiales.
 
-**Pornografía/ sexualmente explícita:** sitios que contienen contenido sexualmente explícito en un formulario textual o basado en imágenes. Cualquier forma de material orientado sexualmente también se muestra aquí.
+**Pornografía/ sexualmente explícita**: sitios que contienen contenido sexualmente explícito en un formulario textual o basado en imágenes. Cualquier forma de material orientado sexualmente también se muestra aquí.
 
-**Educación** sexual: sitios que analizan el sexo y la sexualidad de forma informativa y no voyeurista, incluidos los sitios que proporcionan educación sobre la reproducción humana y la contracepción, sitios que ofrecen consejos sobre la prevención de infecciones de las enfermedades sexuales y sitios que ofrecen consejos sobre asuntos de salud sexual.
+**Educación** sexual: sitios que analizan el sexo y la sexualidad de forma informativa y no voyeurista, incluidos los sitios que proporcionan educación sobre la reproducción humana y la contracepción, los sitios que ofrecen consejos sobre la prevención de infecciones de las enfermedades sexuales y sitios que ofrecen consejos sobre asuntos de salud sexual.
 
-**Sin sabor:** sitios orientados a contenidos inadecuados para que los niños de la escuela puedan ver o que un empleador no se sienta cómodo con el acceso de su personal, pero no necesariamente violento o pornográfico.
+Insígible: sitios orientados a contenido inadecuado para que los escolares puedan ver o que un empleador se incomoda con el acceso de su personal, pero no necesariamente violento o pornográfico.
 
-**Violencia:** sitios que muestran o promueven contenido relacionado con la violencia contra humanos o animales.
+**Violencia**: sitios que muestran o promueven contenido relacionado con la violencia contra humanos o animales.
 
 </details>
 
@@ -100,60 +100,60 @@ Las directivas se pueden implementar para bloquear cualquiera de las siguientes 
 
 **Uso compartido de** imágenes: sitios que se usan principalmente para buscar o compartir fotos, incluidos los que tienen aspectos sociales.
 
-**Punto a punto:** sitios que hospedan software punto a punto (P2P) o facilitan el uso compartido de archivos mediante software P2P.
+**Punto a** punto: sitios que hospedan software punto a punto (P2P) o facilitan el uso compartido de archivos mediante software P2P.
 
-**Streaming media & descargas:** sitios cuya función principal es la distribución de medios de streaming o sitios que permiten a los usuarios buscar, ver o escuchar contenido multimedia de streaming.
+**Streaming media & descargas**: sitios cuya función principal es la distribución de medios de streaming o sitios que permiten a los usuarios buscar, ver o escuchar contenido multimedia de streaming.
   
 </details>
 
 <details>
 <summary>Responsabilidad legal</summary>
 
-**Imágenes de maltrato infantil:** sitios que incluyen imágenes de maltrato infantil o pornografía. 
+**Imágenes de maltrato infantil**: sitios que incluyen imágenes de maltrato infantil o pornografía. 
 
-**Actividad criminal:** sitios que dan instrucciones sobre, consejos o promoción de actividades ilegales.
+**Actividad criminal**: sitios que dan instrucciones sobre, consejos sobre o promoción de actividades ilegales.
 
-**Piratería:** sitios que proporcionan recursos para un uso ilegal o cuestionable del software o hardware del equipo, incluidos los sitios que distribuyen material protegido por derechos de autor que se ha roto.
+**Piratería**: sitios que proporcionan recursos para un uso ilegal o cuestionable de software o hardware del equipo, incluidos los sitios que distribuyen material protegido por derechos de autor que se ha roto.
 
-Odio **&** la intolerancia: sitios que promueven opiniones agresivas, degradantes o abusivos sobre cualquier sector de la población que pueda identificarse por raza, religión, género, edad, nacionalidad, discapacidad física, situación económica, preferencias sexuales o cualquier otra opción de estilo de vida.
+**Odio &** la intolerancia: sitios que promueven opiniones agresivas, degradantes o abusivos sobre cualquier sector de la población que pueda identificarse por raza, religión, sexo, edad, nacionalidad, discapacidad física, situación económica, preferencias sexuales o cualquier otra opción de estilo de vida.
 
-**Drogas ilegales:** sitios que venden sustancias ilegales/controladas, promueven el uso indebido de las sustancias o venden parafernalia relacionada.
+**Drogas ilegales**: sitios que venden sustancias ilegales/controladas, promueven el uso indebido de las sustancias o venden parafernalia relacionada.
 
-**Software ilegal:** sitios que contienen o promueven el uso de malware, spyware, botnets, estafas de phishing o piratería & robo de derechos de autor.
+**Software ilegal**: sitios que contienen o promueven el uso de malware, spyware, botnets, estafas de phishing o piratería & robo de derechos de autor.
 
-**Engaño escolar:** sitios relacionados con el plagio o la infidelidad en la escuela. 
+**Trampas en la** escuela: sitios relacionados con el plagio o la infidelidad en la escuela. 
 
-**Autolesión:** sitios que promueven la autolesión, incluidos los sitios de ciberacoso que contienen mensajes abusivos o amenazantes hacia los usuarios.
+**Autolesión**: sitios que promueven la autolesión, incluidos los sitios de ciberacoso que contienen mensajes abusivos o amenazantes hacia los usuarios.
 
-**Armas:** cualquier sitio que vende armas o que aboga por el uso de armas, incluidas, entre otras, las armas, los cuchillos y las munición.
+**Armas**: cualquier sitio que vende armas o que promueve el uso de armas, incluidas, entre otras, las armas, los cuchillos y las munición.
 
 </details>
 
 <details>
 <summary>Ocio</summary>
 
-**Chat:** sitios que son principalmente salas de chat basadas en web.
+**Chat**: sitios que son principalmente salas de chat basadas en web.
 
-**Juegos:** sitios relacionados con juegos de vídeo o de equipo, incluidos los sitios que promueven los juegos a través del hospedaje de servicios en línea o información relacionada con los juegos.
+**Juegos**: sitios relacionados con juegos de vídeo o de equipo, incluidos los sitios que promueven los juegos a través del hospedaje de servicios en línea o información relacionada con los juegos.
 
-**Mensajería instantánea:** sitios que se pueden usar para descargar software de mensajería instantánea o mensajería instantánea basada en cliente.
+**Mensajería instantánea**: sitios que se pueden usar para descargar software de mensajería instantánea o mensajería instantánea basada en cliente.
 
 **Professional: sitios** que proporcionan servicios de red profesionales.
 
-**Redes sociales:** sitios que proporcionan servicios de redes sociales.
+**Redes sociales**: sitios que proporcionan servicios de redes sociales.
 
-**Correo electrónico basado en web:** sitios que ofrecen servicios de correo basados en web.
+**Correo electrónico basado en web**: sitios que ofrecen servicios de correo basados en web.
   
 </details>
 
 <details>
 <summary>Sin categorizar</summary>
 
-**Dominios recién registrados:** sitios que se han registrado recientemente en los últimos 30 días y que aún no se han movido a otra categoría.
+**Dominios recién registrados**: sitios que se han registrado recientemente en los últimos 30 días y que aún no se han movido a otra categoría.
 
-**Dominios estacionados:** sitios que no tienen contenido o que están estacionados para su uso posterior.
+**Dominios estacionados**: sitios que no tienen contenido o que están estacionados para su uso posterior.
   
-**NOTA:** Uncategorized contiene solo dominios recién registrados y dominios estacionados, y no incluye todos los demás sitios fuera de estas categorías.
+**NOTA**: Uncategorized contiene solo dominios recién registrados y dominios estacionados, y no incluye todos los demás sitios fuera de estas categorías.
   
 </details>
 
@@ -161,7 +161,7 @@ Odio **&** la intolerancia: sitios que promueven opiniones agresivas, degradante
 
 Para agregar una nueva directiva, siga estos pasos:
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, elija **Configuración** filtrado de  >  **contenido web**+ Agregar  >  **directiva**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, elija **Configuración** >  **Web content filtering** > **+ Add policy**.
 
 2. Especifique un nombre.
 
@@ -187,7 +187,7 @@ Es posible invalidar la categoría bloqueada en el filtrado de contenido web par
 
 Para definir un indicador personalizado, siga estos pasos:
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender,</a>vaya **a Configuración** Dirección URL de indicadores de puntos de \>  \>  \> **conexión/Elemento de** \> **adición de dominio**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender</a>, vaya **a Configuración** \> **dirección** \>  \> URL de indicadores de puntos de conexión **/Elemento de** \> agregar **dominio**.
 
 2. Escriba el dominio del sitio.
 
@@ -197,13 +197,13 @@ Para definir un indicador personalizado, siga estos pasos:
 
 Si encuentra un dominio que se ha categorizado incorrectamente, puede disputar la categoría directamente desde el portal.
 
-Para disputar la categoría de un dominio, vaya a **Report** \> **Web protection Web** Content Filtering \> **Details** \> **Domains**. En la pestaña dominios de los informes de filtrado de contenido web, verá puntos suspensivos junto a cada uno de los dominios. Mantenga el puntero sobre estos puntos suspensivos y seleccione **Categoría de disputa**.
+Para disputar la categoría de un dominio, vaya a **Reports** \> **Web protection** \> **Web Content Filtering Details** \> **Domains**. En la pestaña dominios de los informes de filtrado de contenido web, verá puntos suspensivos junto a cada uno de los dominios. Mantenga el puntero sobre estos puntos suspensivos y seleccione **Categoría de disputa**.
 
-Se abrirá un panel donde puede seleccionar la prioridad y agregar más detalles, como la categoría sugerida para la recategorización. Una vez completado el formulario, seleccione **Enviar**. Nuestro equipo revisará la solicitud en un plazo de un día laborable. Para desbloquear inmediatamente, cree un [indicador de permitir personalizado](indicator-ip-domain.md).
+Se abrirá un panel donde puede seleccionar la prioridad y agregar más detalles, como la categoría sugerida para la recategorización. Una vez completado el formulario, seleccione **Enviar**. Nuestro equipo revisará la solicitud en un plazo de un día laborable. Para desbloquear inmediatamente, cree un [indicador allow personalizado](indicator-ip-domain.md).
 
 ### <a name="url-category-lookup"></a>Búsqueda de categorías de dirección URL
 
-Para determinar la categoría de un sitio web, puede usar la función de búsqueda de dirección URL disponible en el portal de Microsoft 365 Defender ( ) en <https://security.microsoft.com> **Búsqueda de extremos** \> . En los resultados de búsqueda url, la categoría de filtrado de contenido web aparece en **Dirección URL/Detalles del dominio**. Los administradores también pueden disputar la categoría del dominio directamente desde esta página, como se muestra en la imagen siguiente. Si no se muestra el resultado de la categoría, la dirección URL no está asignada actualmente a una categoría de filtrado de contenido web existente.
+Para determinar la categoría de un sitio web, puede usar la función de búsqueda de dirección URL disponible en el portal<https://security.microsoft.com> de Microsoft 365 Defender () en **Búsqueda de puntos de conexión**\>. En los resultados de la búsqueda de dirección URL, la categoría de filtrado de contenido web aparece en **Dirección URL/Detalles del dominio**. Los administradores también pueden disputar la categoría del dominio directamente desde esta página, como se muestra en la imagen siguiente. Si no se muestra el resultado de la categoría, la dirección URL no está asignada actualmente a una categoría de filtrado de contenido web existente.
 
 ![Imagen de los resultados de búsqueda de categorías de filtrado de contenido web.](../../media/web-content-filtering-category-lookup.png)
 
@@ -237,11 +237,11 @@ Para obtener acceso a los **detalles del informe** para cada tarjeta, seleccione
 
 ![Imagen de los detalles del informe de protección web.](images/web-protection-report-details.png)
 
-- **Categorías web:** enumera las categorías de contenido web que han tenido intentos de acceso en su organización. Seleccione una categoría específica para abrir un menú desplegable de resumen.
+- **Categorías web**: enumera las categorías de contenido web que han tenido intentos de acceso en su organización. Seleccione una categoría específica para abrir un menú desplegable de resumen.
 
-- **Dominios:** enumera los dominios web a los que se ha accedido o bloqueado en la organización. Seleccione un dominio específico para ver información detallada sobre ese dominio.
+- **Dominios**: enumera los dominios web a los que se ha accedido o bloqueado en la organización. Seleccione un dominio específico para ver información detallada sobre ese dominio.
 
-- **Grupos de dispositivos:** enumera todos los grupos de dispositivos que han generado actividad web en la organización
+- **Grupos de dispositivos**: enumera todos los grupos de dispositivos que han generado actividad web en la organización
 
 Use el filtro de intervalo de tiempo en la parte superior izquierda de la página para seleccionar un período de tiempo. También puede filtrar la información o personalizar las columnas. Seleccione una fila para abrir un panel desplegable con más información sobre el elemento seleccionado.
 
@@ -249,9 +249,11 @@ Use el filtro de intervalo de tiempo en la parte superior izquierda de la págin
 
 Solo Microsoft Edge se admite si la configuración del sistema operativo del dispositivo es Server (**cmd** \> **Systeminfo** \> **OS Configuration**). La protección de red solo se admite en el modo de inspección en dispositivos de servidor, que es responsable de proteger el tráfico en exploradores de terceros compatibles.
 
+Solo Microsoft Edge se admite y La protección de red no se admite en Windows 10 hosts multi-sesión de Azure Virtual Desktop.
+
 La protección de red actualmente no admite la inspección SSL, lo que puede provocar que algunos sitios puedan ser permitidos por el filtrado de contenido web que normalmente se bloquearía. Los sitios se permitirían debido a la falta de visibilidad del tráfico cifrado después de que se haya realizado el protocolo de enlace TLS y a la imposibilidad de analizar determinados redireccionamientos.  Esto incluye redirecciones desde algunas páginas de inicio de sesión de correo basadas en web a la página del buzón. Como solución alternativa aceptada, puede crear un indicador de bloqueo personalizado para la página de inicio de sesión para garantizar que ningún usuario pueda acceder al sitio. Tenga en cuenta que esto puede bloquear su acceso a otros servicios asociados con el mismo sitio web. 
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Introducción a protección web](web-protection-overview.md)
 - [Protección contra amenazas web](web-threat-protection.md)

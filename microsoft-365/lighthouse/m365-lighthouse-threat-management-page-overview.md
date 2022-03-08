@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Lighthouse Introducción a la página de administración de amenazas
+title: Microsoft 365 Lighthouse de la página de administración de amenazas
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,23 +16,20 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Administración de amenazas.
-ms.openlocfilehash: 6eb5ed0c37295a7683b2eb16068f96f912aefb91
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e57163ba462e241c74a96db78fe701c024a037ff
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178676"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329888"
 ---
-# <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Microsoft 365 Lighthouse Introducción a la página de administración de amenazas 
-
-> [!NOTE]
-> Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+# <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Microsoft 365 Lighthouse de la página de administración de amenazas 
 
 **Se aplica a:**
 
 - Windows 10
 
-Antivirus de Microsoft Defender protege a los inquilinos, usuarios y dispositivos de amenazas de software, incluidos virus, malware y spyware. Es una protección sólida y continua que está integrada en Windows 10 y se incluye con Microsoft 365 Empresa Premium y Microsoft &nbsp; 365 &nbsp; E3.  
+Antivirus de Microsoft Defender los inquilinos, usuarios y dispositivos contra amenazas de software, incluidos virus, malware y spyware. Es una protección sólida y continua que está integrada en Windows 10 y se incluye con Microsoft 365 Empresa Premium y Microsoft365E3&nbsp;&nbsp;.  
   
 Para obtener acceso a la página Administración de amenazas en Microsoft 365 Lighthouse, seleccione **Administración** de amenazas en el panel de navegación izquierdo para ver la posición de seguridad de los inquilinos del cliente frente a las amenazas. Verás inquilinos, usuarios y dispositivos que requieren tu atención y recomendaciones que te ayudarán a reducir el riesgo.  
   
@@ -40,13 +37,13 @@ Para obtener acceso a la página Administración de amenazas en Microsoft 365 Li
   
 En la pestaña Información general de la página Administración de amenazas, puede supervisar el estado del antivirus en todos los inquilinos para identificar las áreas que necesitan atención.
 
-:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-overview-tab.png" alt-text="Captura de pantalla de la pestaña Información general >.":::
+:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-overview-tab.png" alt-text="Captura de pantalla de la pestaña Información general.":::
 
 ## <a name="threats-tab"></a>Pestaña Amenazas
 
 En la pestaña Amenazas de la página Administración de amenazas, puede ver las amenazas Activas, Mitigadas, Resueltas y Permitidas en todos los inquilinos. También puede corregir varias amenazas al mismo tiempo en todos los inquilinos filtrando y desglosando cada amenaza para saber qué dispositivos, usuarios o inquilinos se ven afectados.
 
-:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-threats-tab.png" alt-text="Captura de pantalla de la página de línea base predeterminada.>.":::
+:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-threats-tab.png" alt-text="Captura de pantalla de la página de línea base predeterminada.":::
   
 Puede filtrar las amenazas mediante:
 
@@ -73,7 +70,7 @@ En la tabla siguiente se enumeran los distintos estados de amenaza y su definici
 
 ## <a name="antivirus-protection-tab"></a>Ficha Protección antivirus
 
-La pestaña Protección antivirus de la página Administración de amenazas muestra los dispositivos en todos los inquilinos y su estado Antivirus de Microsoft Defender protección. Puedes evaluar el estado y tomar medidas para uno o varios dispositivos que pueden ser vulnerables. También puedes seleccionar un dispositivo para ver más información, como Información general del dispositivo, Amenazas actuales y Estados de acción del dispositivo.
+La pestaña Protección antivirus de la página Administración de amenazas muestra los dispositivos en todos los inquilinos y su Antivirus de Microsoft Defender protección. Puedes evaluar el estado y tomar medidas para uno o varios dispositivos que pueden ser vulnerables. También puedes seleccionar un dispositivo para ver más información, como Información general del dispositivo, Amenazas actuales y Estados de acción del dispositivo.
 
 :::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-antivirus-tab.png" alt-text="Captura de pantalla de la pestaña Antivirus.":::
 

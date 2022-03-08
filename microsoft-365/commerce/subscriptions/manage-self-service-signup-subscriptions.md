@@ -2,8 +2,8 @@
 title: Administrar suscripciones de registro de autoservicio
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,32 +14,32 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 search.appverid: MET150
 description: Obtenga información sobre cómo administrar suscripciones de registro de autoservicio gratuitas para su organización.
 ms.date: 03/17/2021
-ms.openlocfilehash: 24f852a1eb9983e211000b59bda32eaa2c6bf0fa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: be93a09ca63a4ee24945438be59b725e7d41911c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192384"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328391"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Administrar suscripciones de registro de autoservicio
 
 ## <a name="what-are-self-service-sign-up-subscriptions"></a>¿Qué son las suscripciones de registro de autoservicio?
 
-Hay un número limitado de suscripciones de registro de autoservicio gratuitas disponibles para que los usuarios de su organización puedan registrarse. Un usuario solo puede registrarse y usar una suscripción de registro de autoservicio por sí mismo. Las suscripciones de registro de autoservicio se administran bloqueando la suscripción de los usuarios y eliminando las suscripciones gratuitas para las que los usuarios se han registrado. Para obtener más información sobre el registro de autoservicio y las suscripciones disponibles, vea [Using self-service sign up in your organization](../../admin/misc/self-service-sign-up.md).
+Hay un número limitado de suscripciones de registro de autoservicio gratuitas disponibles para que los usuarios de su organización puedan registrarse. Un usuario solo puede registrarse y usar una suscripción de registro de autoservicio por sí mismo. Las suscripciones de registro de autoservicio se administran bloqueando la suscripción de los usuarios y eliminando las suscripciones gratuitas para las que los usuarios se han registrado. Para obtener más información sobre el registro de autoservicio y las suscripciones disponibles, consulte [Using self-service sign up in your organization](../../admin/misc/self-service-sign-up.md).
 
 ## <a name="view-a-list-of-self-service-sign-up-subscriptions"></a>Ver una lista de suscripciones de registro de autoservicio
 
 1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Libre**. Se muestra una lista de todas las suscripciones de registro de autoservicio.
+2. En la **pestaña Productos** , seleccione el icono de filtro y, a continuación, **seleccione Libre**. Se muestra una lista de todas las suscripciones de registro de autoservicio.
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>¿En qué se diferencian estas suscripciones de las suscripciones de compra sin servicio?
 
-Las suscripciones de registro de autoservicio son gratuitas y están disponibles para una lista más grande de productos que las suscripciones de compra de autoservicio. Cuando un usuario se inscribe en una suscripción de compra de autoservicio, es responsable de pagar por ella. Las suscripciones de compra de autoservicio solo están disponibles para productos de Power Platform (Power BI, Power Apps y Power Automate), Project y Visio. Para obtener más información, consulta Preguntas más frecuentes [sobre la compra de autoservicio.](self-service-purchase-faq.yml)
+Las suscripciones de registro de autoservicio son gratuitas y están disponibles para una lista más grande de productos que las suscripciones de compra de autoservicio. Cuando un usuario se inscribe en una suscripción de compra de autoservicio, es responsable de pagar por ella. Las suscripciones de compra de autoservicio solo están disponibles para productos de Power Platform (Power BI, Power Apps y Power Automate), Project y Visio. Para obtener más información, consulta [Preguntas más frecuentes sobre la compra de autoservicio](self-service-purchase-faq.yml).
 
 ## <a name="block-users-from-signing-up"></a>Impedir que los usuarios se inscriba
 
@@ -51,11 +51,11 @@ Use el cmdlet [**Set-MsolCompanySettings**](/powershell/module/msonline/set-msol
 > Al eliminar una suscripción de registro de autoservicio, se bloquea a todos los usuarios el acceso a sus datos y correo electrónico y se eliminan todos los datos y el correo electrónico.
 
 1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Libre**.
+2. En la **pestaña Productos** , seleccione el icono de filtro y, a continuación, **seleccione Libre**.
 3. Seleccione la suscripción de registro de autoservicio que desea eliminar. 
-4. En la página detalles de la suscripción, en la sección **Suscripciones y configuración de pago,** seleccione Eliminar **suscripción**.
-5. En el **panel Eliminar suscripción,** active la casilla y, a continuación, **seleccione Eliminar suscripción.**
+4. En la página detalles de la suscripción, en la sección **Suscripciones y configuración de pago** , seleccione **Eliminar suscripción**.
+5. En el **panel Eliminar suscripción** , active la casilla y, a continuación, **seleccione Eliminar suscripción**.
 
 ## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>Tengo una suscripción de registro de autoservicio que bloquea la eliminación de directorios
 
-Los productos de registro de autoservicio para los que los usuarios individuales pueden registrarse también crean un usuario invitado para la autenticación en el directorio de Azure AD. Para evitar la pérdida de datos, estos productos de autoservicio bloquean las eliminaciones de directorios hasta que se eliminan completamente del directorio. El administrador de Azure AD solo las puede eliminar. Para obtener más información, vea [Delete a directory in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-delete-howto).
+Los productos de registro de autoservicio para los que los usuarios individuales pueden registrarse también crean un usuario invitado para la autenticación en el Azure AD usuario. Para evitar la pérdida de datos, estos productos de autoservicio bloquean las eliminaciones de directorios hasta que se eliminan completamente del directorio. Solo el administrador Azure AD eliminar. Para obtener más información, [vea Delete a directory in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-delete-howto).

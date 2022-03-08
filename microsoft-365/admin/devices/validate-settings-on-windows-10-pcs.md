@@ -1,5 +1,5 @@
 ---
-title: Validar la configuración de protección de aplicaciones Windows 10 equipos
+title: Validar la configuración de protección de aplicaciones para equipos con Windows 10
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -26,35 +26,38 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Obtén información sobre cómo comprobar que la Microsoft 365 de protección de aplicaciones empresariales ha tenido efecto en los dispositivos Windows 10 usuarios.
-ms.openlocfilehash: 311da3efec8cd3ad57e722aea5a8c3888d1af7b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtén información sobre cómo comprobar que la configuración de protección de aplicaciones de Microsoft 365 para empresas ha tenido efecto en los dispositivos Windows 10 de los usuarios.
+ms.openlocfilehash: be25acb8414705c48a8763a0530ec2a70565de83
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165333"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313599"
 ---
-# <a name="validate-device-protection-settings-for-windows-10-pcs"></a>Validar la configuración de protección de dispositivos Windows 10 equipos
+# <a name="validate-device-protection-settings-for-windows-10-pcs"></a>Validar la configuración de protección de dispositivos para equipos con Windows 10
 
-## <a name="verify-that-windows-10-device-policies-are-set"></a>Comprobar que Windows 10 directivas de dispositivo están establecidas
+> [!NOTE]
+> Microsoft Defender para empresas se está implementando para los clientes de Microsoft 365 Empresa Premium, a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para dispositivos. [Obtenga más información sobre Defender para empresas](../../security/defender-business/mdb-overview.md).
 
-Después de [configurar directivas de dispositivos,](protection-settings-for-windows-10-pcs.md)la directiva puede tardar hasta unas horas en tener efecto en los dispositivos de los usuarios. Puedes confirmar que las directivas se han hecho efectivas mirando varias Windows Configuración pantallas en los dispositivos de los usuarios. Dado que los usuarios no podrán modificar la configuración de actualización Windows y Antivirus de Windows Defender en sus dispositivos Windows 10, muchas opciones se atenuarán.
+## <a name="verify-that-windows-10-device-policies-are-set"></a>Comprobar que las directivas de dispositivo de Windows 10 están establecidas
+
+Después de [configurar directivas de dispositivo](protection-settings-for-windows-10-pcs.md), la directiva puede tardar hasta unas horas en tener efecto en los dispositivos de los usuarios. Puedes confirmar que las directivas se han hecho efectivas si ves varias pantallas de configuración de Windows en los dispositivos de los usuarios. Dado que los usuarios no podrán modificar la configuración de Windows Update y Antivirus de Microsoft Defender en sus dispositivos Windows 10, muchas opciones se atenuarán.
   
-1. Ve a **Configuración** actualizar las Windows de reinicio de actualización y confirma que todas las opciones \> **&amp;** \>  \>  están atenuadas. 
+1. Ve a **Configuración Actualizar** \> **seguridad Opciones &amp;** \> de **reinicio de Windows Update** \> y confirma que todas las opciones están atenuadas. 
     
     ![Todas las opciones reiniciar están atenuadas.](../../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. Ve a **Configuración** Actualizar seguridad Windows Opciones avanzadas de actualización y confirma que todas las opciones \> **&amp;** \>  \>  están atenuadas. 
+2. Ve a **Configuración** \> **Actualizar seguridad Opciones &amp;** \> **avanzadas de Windows Update** \> y confirma que todas las opciones están atenuadas. 
     
-    ![Windows Las opciones de actualizaciones avanzadas están atenuadas.](../../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+    ![Las opciones de actualizaciones avanzadas de Windows están atenuadas.](../../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
-3. Vaya a **Configuración** Actualizar seguridad \> **&amp; Windows** Opciones avanzadas de \>  \> **actualización** \> **Elija cómo se entregan las actualizaciones**.
+3. Ve a **Configuración Actualizar** \> **seguridad Opciones &amp;** \> **avanzadas de Windows Update** \>  \> **Elige cómo se entregan las actualizaciones**.
     
     Confirme que puede ver el mensaje (en rojo) de que algunas opciones de configuración están ocultas o administradas por la organización y todas las opciones están atenuadas.
     
     ![Elegir cómo se entregan las actualizaciones en la página indica que la configuración está oculta o administrada por la organización.](../../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
-4. Para abrir el Centro Windows Defender seguridad, vaya **a Configuración** Actualizar seguridad Windows Defender haga clic en Abrir Windows Defender Protección contra virus del Centro de seguridad Protección contra amenazas de \> **&amp;** \>  \>  \> **&amp;** \> **&amp; virus configuración**. 
+4. Para abrir el Centro Windows Defender seguridad,  \> **&amp;** \>  \> vaya a Configuración Actualizar seguridad Windows Defender haga clic en Abrir **Windows Defender Protección** \> **&amp;** \> **&amp;** contra virus del Centro de seguridad Configuración de protección contra amenazas de virus. 
     
 5. Compruebe que todas las opciones están atenuadas. 
     
@@ -62,5 +65,6 @@ Después de [configurar directivas de dispositivos,](protection-settings-for-win
   
 ## <a name="related-content"></a>Contenido relacionado
 
-[Microsoft 365 documentación y recursos para empresas](/admin)\
-[Establecer configuraciones de dispositivo para equipos PC con Windows 10](protection-settings-for-windows-10-pcs.md)
+[Documentación y recursos de Microsoft 365 para empresas](/admin)\
+[Establecer configuraciones de dispositivos para equipos con](protection-settings-for-windows-10-pcs.md)
+ Windows 10 [Principales 10 formas de proteger los planes de Microsoft 365 para empresas](../security-and-compliance/secure-your-business-data.md)

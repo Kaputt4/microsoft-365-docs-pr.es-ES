@@ -11,14 +11,15 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Use la taxonomía del almacén de términos al crear un extractor en el modelo de comprensión de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: dd064a1e93692f79b5cfc5417b0b5b09df09c9fd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 909f26026ddf26163a12e1d14c1790f4af93a160
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197490"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328811"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Aprovechar la taxonomía del almacén de términos al crear un extractor en Microsoft SharePoint Syntex
 
@@ -36,7 +37,7 @@ Por ejemplo, el modelo identifica y clasifica todos los documentos de **Contrato
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Usar una columna de metadatos administrados en el extractor
 
-Los conjuntos de términos están configurados en el almacén de términos de los servicios de metadatos administrados (MMS) en el Centro de Administración de SharePoint. En el ejemplo siguiente, el *conjunto de términos* de [Servicios de contrato](/sharepoint/managed-metadata#term-set) se configura para incluir varios términos, incluido *Creativo*.  En los detalles, se muestra que el término tiene tres sinónimos (*Diseño*, *Gráficos* y *Topografía*) y los sinónimos se deberían traducir como *Creativo*. 
+Los conjuntos de términos se configuran en el almacén de términos servicios de metadatos administrados (MMS) en el <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centro de administración de SharePoint</a>. En el ejemplo siguiente, el *conjunto de términos* de [Servicios de contrato](/sharepoint/managed-metadata#term-set) se configura para incluir varios términos, incluido *Creativo*.  En los detalles, se muestra que el término tiene tres sinónimos (*Diseño*, *Gráficos* y *Topografía*) y los sinónimos se deberían traducir como *Creativo*. 
 
    ![Conjunto de términos.](../media/content-understanding/term-store.png)</br>
 

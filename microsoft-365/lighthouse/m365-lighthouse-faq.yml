@@ -17,19 +17,14 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga respuestas a las preguntas más frecuentes (preguntas frecuentes) sobre Microsoft 365 Lighthouse.
-  ms.openlocfilehash: 948b4584f2f10cdfd3f709cfe007d1367ba110a9
-  ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+  ms.openlocfilehash: 746ec9210e517921d1c2145c9e87f0d339a67758
+  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 12/09/2021
-  ms.locfileid: "61373733"
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63326174"
 title: Microsoft 365 Lighthouse preguntas más frecuentes (preguntas frecuentes)
 summary: >
-  > [!NOTE]
-
-  > Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
-
   Este artículo contiene respuestas a las preguntas más frecuentes (preguntas frecuentes) sobre Microsoft 365 Lighthouse.
 
 
@@ -42,34 +37,33 @@ sections:
       Microsoft 365 Lighthouse es un portal de administración que ayuda a los proveedores de servicios administrados (MSP) a proteger y administrar dispositivos, datos y usuarios a escala para clientes de pequeñas y medianas empresas (SMB) que usan Microsoft 365 Empresa Premium o Microsoft 365 E3.  Lighthouse simplifica la incorporación de inquilinos al recomendar líneas base de configuración de seguridad adaptadas a las PYME y proporcionar vistas multiinquilino en todos los entornos de clientes. Para obtener más información, vea [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
   - question: ¿Cuál es la diferencia entre Microsoft 365 Lighthouse y Faro de Azure?
     answer: >
-      Microsoft 365 Lighthouse se centra en los Microsoft 365 en lugar de en los servicios de Azure. Aunque Azure Lighthouse está integrado en Azure Portal y permite a los partners de TI administrar varios inquilinos para Azure, Microsoft 365 Lighthouse es un portal independiente que ayuda a los MSP a administrar varios inquilinos de clientes Microsoft 365 Empresa Premium o Microsoft 365 E3 cliente. Para obtener más información sobre Microsoft 365 Lighthouse, vea [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). Para obtener más información acerca de Azure Lighthouse, vea [¿Qué es Azure Lighthouse?](/azure/lighthouse/overview)
+      Microsoft 365 Lighthouse está centrado en los Microsoft 365 en lugar de en los servicios de Azure. Aunque Azure Lighthouse está integrado en Azure Portal y permite a los partners de TI administrar varios inquilinos para Azure, Microsoft 365 Lighthouse es un portal independiente que ayuda a los MSP a administrar varios inquilinos Microsoft 365 Empresa Premium o Microsoft 365 E3 clientes. Para obtener más información sobre Microsoft 365 Lighthouse, vea [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). Para obtener más información acerca de Azure Lighthouse, vea [¿Qué es Azure Lighthouse?](/azure/lighthouse/overview)
   - question: ¿Cuánto Microsoft 365 Lighthouse costo?
     answer: >
-      No hay costos adicionales asociados con el uso de la versión preliminar de Lighthouse para administrar Microsoft 365 Empresa Premium y Microsoft 365 E3 y dispositivos conectados. Actualmente, Lighthouse se encuentra en Versión preliminar y está disponible para los MSP que den servicio a pequeñas y medianas empresas y que tengan una relación Proveedor de soluciones en la nube (CSP) con sus clientes. Tenga en cuenta que los proveedores indirectos no son compatibles actualmente con Lighthouse. Para obtener más información, vea [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+      No hay costos adicionales asociados con el uso de Lighthouse para administrar Microsoft 365 Empresa Premium y Microsoft 365 E3 y dispositivos conectados. Lighthouse está disponible para los MSP que den servicio a pequeñas y medianas empresas y que tengan una relación Proveedor de soluciones en la nube (CSP) con sus clientes. Tenga en cuenta que los proveedores indirectos no son compatibles actualmente con Lighthouse. Para obtener más información, vea [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
   - question: ¿Cuáles son los requisitos para usar Microsoft 365 Lighthouse?
     answer: >
       Para obtener una lista de los requisitos actuales, vea [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
   - question: ¿En qué países y regiones Microsoft 365 Lighthouse disponible?
     answer: >
-      Lighthouse está disponible en todos los países donde Microsoft 365 está disponible, excepto China y la Autoridad Palestina. Sin embargo, las características de Lighthouse, como la administración de dispositivos y la administración de amenazas, dependen de Microsoft Intune y la administración de usuarios se basa en Azure Active Directory (Azure AD) e Intune y Azure AD pueden no estar disponibles en determinados países y regiones. Para obtener una lista completa de Microsoft 365, Azure AD y disponibilidad de Intune, vea [Disponibilidad internacional](https://www.microsoft.com/microsoft-365/business/international-availability).
+      El faro está disponible en todos los países donde Microsoft 365 está disponible, excepto China y la Autoridad Palestina. Sin embargo, las características de Lighthouse, como la administración de dispositivos y la administración de amenazas, dependen de Microsoft Intune y la administración de usuarios se basa en Azure Active Directory (Azure AD) e Intune y Azure AD pueden no estar disponibles en determinados países y regiones. Para obtener una lista completa de Microsoft 365, Azure AD y disponibilidad de Intune, consulte [Disponibilidad internacional](https://www.microsoft.com/microsoft-365/business/international-availability).
 
 
       El faro no está disponible en las nubes nacionales.
   - question: ¿Cómo me inscribo en Microsoft 365 Lighthouse?
     answer: >
-      Para registrarse en Lighthouse, deberás estar registrado en el programa CSP. Actualmente no podemos admitir proveedores indirectos. Para obtener instrucciones sobre cómo registrarse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). Para obtener más información sobre el programa CSP, vea [el Proveedor de soluciones en la nube introducción al programa](/partner-center/csp-overview).
+      Para registrarse en Lighthouse, deberás estar registrado en el programa CSP. Actualmente no podemos admitir proveedores indirectos. Para obtener instrucciones sobre cómo registrarse, consulte [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). Para obtener más información sobre el programa CSP, consulte [el Proveedor de soluciones en la nube del programa](/partner-center/csp-overview).
   - question: He terminado de registrarme, por lo que ¿por qué no veo ningún dato de inquilino del cliente?
     answer: >
-      Los datos del inquilino del cliente pueden tardar hasta 48 horas en cargarse en Lighthouse. Si han pasado más de 48 horas desde que completó la incorporación, póngase en contacto con nuestro equipo de soporte técnico para obtener ayuda. Deberás proporcionarles información cuando completes la incorporación y proporciones capturas de pantalla y registros relevantes. Para obtener más información, vea [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+      Los datos del inquilino del cliente pueden tardar hasta 48 horas en cargarse en Lighthouse. Si han pasado más de 48 horas desde que completó la incorporación, póngase en contacto con nuestro equipo de soporte técnico para obtener ayuda. Deberás proporcionarles información cuando completes la incorporación y proporciones capturas de pantalla y registros relevantes. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
   - question: ¿Por qué veo datos para algunos inquilinos de clientes, pero no para otros?
-    answer: >
-      Para que los datos del inquilino del cliente se muestren en Lighthouse, los partners deben establecer privilegios de administrador delegados (DAP) con los clientes a través del Centro de partners. Para obtener más información, vea [Solicitar una relación de revendedor con un cliente en el Centro de partners.](/partner-center/request-a-relationship-with-a-customer) Los inquilinos también deben tener al menos Microsoft 365 Empresa Premium o Microsoft 365 E3 suscripción y menos de 500 usuarios con licencia en su inquilino. Para obtener más información, vea [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and Microsoft 365 Lighthouse [Tenants page overview](m365-lighthouse-tenants-page-overview.md).
-  - question: ¿Qué sucede si no deseo ver ciertos inquilinos en Microsoft 365 Lighthouse?
+    answer: "\nPara que los datos del inquilino del cliente se muestren en Lighthouse, los MSP deben establecer privilegios de administrador delegados (DAP) o privilegios de administrador delegados pormenorizados (GDAP) con los clientes a través del Centro de partners. Para obtener más información, consulta [Solicitar una relación de revendedor con un cliente en el Centro de partners](/partner-center/request-a-relationship-with-a-customer). Los inquilinos también deben tener al menos Microsoft 365 Empresa Premium o Microsoft 365 E3 suscripción y menos de 1000 usuarios con licencia en su inquilino. Para obtener más información, vea [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Microsoft 365 Lighthouse Tenants page overview](m365-lighthouse-tenants-page-overview.md).\n"
+  - question: ¿Qué ocurre si no deseo ver ciertos inquilinos en Microsoft 365 Lighthouse?
     answer: >
       Si no desea ver determinados inquilinos y sus datos en Lighthouse, puede desactivar esos inquilinos. Para desactivar un inquilino, siga estos pasos:
 
 
-      1. Seleccione **Inquilinos en** el panel de navegación izquierdo para abrir la **página Inquilinos.**
+      1. Seleccione **Inquilinos en** el panel de navegación izquierdo para abrir la **página Inquilinos** .
 
       1. Busque el espacio empresarial que desea desactivar, seleccione los tres puntos junto al nombre del inquilino y, a continuación, seleccione **Inactivar inquilino**.
 
@@ -77,7 +71,7 @@ sections:
           > [!NOTE]
           > Una vez inactivado un inquilino, no podrá realizar ninguna acción en el espacio empresarial hasta que se complete la inactivación. La inactivación puede tardar hasta 48 horas en completarse.
 
-      Para obtener más información acerca de los inquilinos, [vea Microsoft 365 Lighthouse de la página de inquilinos.](m365-lighthouse-tenants-page-overview.md)
+      Para obtener más información acerca de los inquilinos, [consulte Microsoft 365 Lighthouse de la página inquilinos.](m365-lighthouse-tenants-page-overview.md)
   - question: ¿Microsoft 365 Lighthouse si los inquilinos de mis clientes tienen otras suscripciones además de Microsoft 365 Empresa Premium o Microsoft 365 E3?
     answer: >
       Lighthouse le ayuda a administrar los inquilinos de clientes que tienen Microsoft 365 Empresa Premium o Microsoft 365 E3 licencias para sus usuarios. Para los usuarios de inquilinos de clientes que no tienen licencias de Premium o E3, la funcionalidad de Lighthouse será limitada. Por ejemplo, si un usuario no tiene una licencia que incluya Intune, los dispositivos de ese usuario, el estado de cumplimiento del dispositivo y el estado de amenazas no estarán disponibles; y si un usuario no tiene una licencia que incluya Azure AD P1, la contraseña y la administración de inicio de sesión de ese usuario no estarán disponibles. Para obtener más información, vea [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
@@ -86,10 +80,10 @@ sections:
       Si cumple los requisitos para usar Lighthouse, está cualificado para administrar equipos en la nube de cliente en Lighthouse. Para obtener una lista de los requisitos actuales, vea [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
   - question: ¿Dónde puedo comprar Windows 365 (PC en la nube) para mis clientes?
     answer: >
-      Puede comprar Windows 365 licencias a través de todos los canales de ventas comerciales de Microsoft disponibles. Una licencia comprada equivale a la compra de un equipo en la nube. Actualmente, a cada usuario solo se le puede asignar un equipo en la nube del mismo tipo de SKU, pero se pueden asignar varios equipos en la nube si son de distintos tipos de SKU. Para comparar Windows planes y precios de 365, consulte Get [the Windows 365 Cloud PC that's right for you](https://www.microsoft.com/windows-365/business/compare-plans-pricing).
+      Puede comprar 365 licencias Windows a través de todos los canales de ventas comerciales de Microsoft disponibles. Una licencia comprada equivale a la compra de un equipo en la nube. Actualmente, a cada usuario solo se le puede asignar un equipo en la nube del mismo tipo de SKU, pero se pueden asignar varios equipos en la nube si son de distintos tipos de SKU. Para comparar Windows planes y precios de 365, consulte [Get the Windows 365 Cloud PC that's right for you](https://www.microsoft.com/windows-365/business/compare-plans-pricing).
   - question: ¿Cómo puedo obtener ayuda y soporte técnico?
     answer: >
-      En Faro, seleccione **el ?** en la parte superior del portal para abrir el **panel de** ayuda. Desde aquí puede acceder a artículos de auto help o ponerse en contacto con el soporte técnico. Para obtener más información acerca de las opciones de ayuda y soporte técnico, vea [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+      En Faro, seleccione **el ?** en la parte superior del portal para abrir el **panel de** ayuda. Desde aquí puede acceder a artículos de auto help o ponerse en contacto con el soporte técnico. Para obtener más información acerca de las opciones de ayuda y soporte técnico, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
   - question: ¿Dónde puedo enviar comentarios e ideas?
     answer: >-
       Sus comentarios son importantes para nosotros. Hay varias maneras diferentes de enviar comentarios:

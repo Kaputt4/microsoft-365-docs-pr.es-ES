@@ -2,8 +2,8 @@
 title: Administrador de cumplimiento de Microsoft
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos y sugiere acciones recomendadas para ayudar a solucionar los riesgos.
-ms.openlocfilehash: 47040da384c33e853f0c11735053bb8850735c3d
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 289d82e8bc5f404589b263a2b6dec499d9e3b7e2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747759"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317673"
 ---
 # <a name="microsoft-compliance-manager"></a>Administrador de cumplimiento de Microsoft
 
@@ -31,7 +31,7 @@ ms.locfileid: "60747759"
 
 ## <a name="what-is-compliance-manager"></a>¿Qué es el Administrador de cumplimiento?
 
-[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) es una característica de la Centro de cumplimiento de Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">que</a> le ayuda a administrar los requisitos de cumplimiento de su organización con mayor facilidad y comodidad. El Administrador de cumplimiento puede ayudarle a lo largo del proceso de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, estar al corriente de las normativas y certificaciones e informar a los auditores.
+[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) es una característica de la <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365 que le</a> ayuda a administrar los requisitos de cumplimiento de su organización con mayor facilidad y comodidad. El Administrador de cumplimiento puede ayudarle a lo largo del proceso de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, estar al corriente de las normativas y certificaciones e informar a los auditores.
 
 Vea el vídeo siguiente para obtener información sobre cómo el Administrador de cumplimiento puede ayudar a simplificar la forma en que su organización administra el cumplimiento:
 <br>
@@ -50,7 +50,7 @@ El Administrador de cumplimiento ayuda a simplificar el cumplimiento y reducir l
 
 El panel del Administrador de cumplimiento muestra la puntuación de cumplimiento actual, le ayuda a ver qué necesita atención y le guía a las acciones de mejora clave. A continuación se muestra un ejemplo de cómo será el panel del Administrador de cumplimiento:
 
-![Administrador de cumplimiento: panel.](../media/compliance-manager-dashboard.png "Panel del Administrador de cumplimiento")
+![Panel del Administrador de cumplimiento.](../media/compliance-manager-dashboard.png "Panel del Administrador de cumplimiento")
 
 ## <a name="understanding-your-compliance-score"></a>Descripción de la puntuación de cumplimiento
 
@@ -62,7 +62,7 @@ El Administrador de cumplimiento le proporciona una puntuación inicial basada e
 
 [Comprender cómo se calcula la puntuación de cumplimiento](compliance-score-calculation.md).
 
-[Obtenga información sobre cómo trabajar con acciones de mejora](compliance-manager-improvement-actions.md).
+[Aprenda a trabajar con acciones de mejora](compliance-manager-improvement-actions.md).
 
 ## <a name="key-elements-controls-assessments-templates-improvement-actions"></a>Elementos clave: controles, evaluaciones, plantillas, acciones de mejora
 
@@ -74,9 +74,9 @@ Un control es un requisito de una normativa, un estándar o una directiva. Defin
 
 El Administrador de cumplimiento realiza un seguimiento de los siguientes tipos de controles:
 
-1. **Controles administrados por Microsoft:** controles para los servicios en la nube de Microsoft, que Microsoft es responsable de implementar
-2. **Los controles:** a veces denominados controles administrados por el cliente, estos son controles implementados y administrados por la organización
-3. **Controles compartidos:** estos son controles que su organización y Microsoft comparten la responsabilidad de implementar
+1. **Controles administrados por Microsoft**: controles para los servicios en la nube de Microsoft, que Microsoft es responsable de implementar
+2. **Los controles**: a veces denominados controles administrados por el cliente, estos son controles implementados y administrados por la organización.
+3. **Controles compartidos**: estos son controles que su organización y Microsoft comparten la responsabilidad de implementar
 
 ##### <a name="learn-more"></a>Más información
 
@@ -91,12 +91,12 @@ Una evaluación es la agrupación de controles de un reglamento, estándar o dir
 Las evaluaciones tienen varios componentes:
 
 - **Servicios dentro del ámbito**: configuración específica de los servicios Microsoft aplicables a la evaluación
-- **Controles administrados de Microsoft:** controles para los servicios en la nube de Microsoft, que Microsoft implementa en su nombre
-- **Los controles:** a veces denominados controles administrados por el cliente, estos son controles implementados y administrados por la organización
-- **Controles compartidos:** estos son controles que su organización y Microsoft comparten la responsabilidad de implementar
+- **Controles administrados por Microsoft**: controles para los servicios en la nube de Microsoft, que Microsoft implementa en su nombre
+- **Los controles**: a veces denominados controles administrados por el cliente, estos son controles implementados y administrados por la organización.
+- **Controles compartidos**: estos son controles que su organización y Microsoft comparten la responsabilidad de implementar
 - **Puntuación de** evaluación: muestra el progreso en el logro de puntos posibles totales de las acciones dentro de la evaluación administradas por su organización y por Microsoft
 
-Al crear evaluaciones, las asignará a un grupo. Puede configurar grupos de la forma que sea más lógica para su organización. Por ejemplo, puede agrupar evaluaciones por año de auditoría, región, solución, equipos dentro de su organización o de alguna otra forma. Una vez creados los grupos, puede filtrar el panel del Administrador [de cumplimiento](compliance-manager-setup.md#filtering-your-dashboard-view) para ver la puntuación por uno o varios grupos.
+Al crear evaluaciones, las asignará a un grupo. Puede configurar grupos de la forma que sea más lógica para su organización. Por ejemplo, puede agrupar evaluaciones por año de auditoría, región, solución, equipos dentro de su organización o de alguna otra forma. Una vez creados los grupos, puede filtrar [el panel del Administrador de cumplimiento](compliance-manager-setup.md#filtering-your-dashboard-view) para ver la puntuación por uno o varios grupos.
 
 ##### <a name="learn-more"></a>Más información
 
@@ -108,9 +108,9 @@ El Administrador de cumplimiento proporciona plantillas para ayudarle a crear r�
 
 ##### <a name="learn-more"></a>Más información
 
-[Ver la lista de plantillas de evaluación proporcionadas por el Administrador de cumplimiento](compliance-manager-templates-list.md).
+[Vea la lista de plantillas de evaluación proporcionadas por el Administrador de cumplimiento](compliance-manager-templates-list.md).
 
-[Obtenga instrucciones detalladas para crear y modificar plantillas para evaluaciones.](compliance-manager-templates.md)
+[Obtenga instrucciones detalladas para crear y modificar plantillas para evaluaciones](compliance-manager-templates.md).
 
 ### <a name="improvement-actions"></a>Acciones de mejora
 
@@ -120,7 +120,7 @@ Las acciones de mejora ayudan a centralizar las actividades de cumplimiento. Cad
 
 [Use acciones de mejora para administrar el flujo de trabajo de cumplimiento](compliance-manager-improvement-actions.md).
 
-[Obtenga información sobre cómo las acciones afectan a la puntuación de cumplimiento](compliance-score-calculation.md#action-types-and-points).
+[Obtenga información sobre cómo afectan las acciones a la puntuación de cumplimiento](compliance-score-calculation.md#action-types-and-points).
 
 ## <a name="supported-languages"></a>Idiomas admitidos
 
@@ -155,6 +155,6 @@ El Administrador de cumplimiento está disponible en los siguientes idiomas:
 
 Obtenga información sobre cómo iniciar sesión, asignar permisos y roles, configurar la configuración y personalizar la vista del panel en [Introducción al Administrador de cumplimiento](compliance-manager-setup.md).
 
-A continuación, comience a personalizar el Administrador de cumplimiento para ayudarle a cumplir con los estándares del sector que más importan a su organización mediante la [configuración de evaluaciones](compliance-manager-assessments.md).
+A continuación, comience a personalizar el Administrador de cumplimiento para ayudarle a cumplir con los estándares del sector que más importan a su [organización mediante la configuración de evaluaciones](compliance-manager-assessments.md).
 
-Para ayudarle a cumplir con las normativas de privacidad de datos, hemos diseñado un flujo de trabajo para guiarlo a través de un proceso completo para planear e implementar funcionalidades en Microsoft 365, incluido el uso del Administrador de cumplimiento. Para obtener más información, consulte [Implementar la protección de la información para normativas de privacidad de datos con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
+Para ayudarle a cumplir con las normativas de privacidad de datos, hemos diseñado un flujo de trabajo para guiarlo a través de un proceso integral para planear e implementar funcionalidades en Microsoft 365, incluido el uso del Administrador de cumplimiento. Para obtener más información, consulte [Implementar la protección de la información para normativas de privacidad de datos con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 

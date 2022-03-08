@@ -12,21 +12,23 @@ f1.keywords:
 ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear un grupo Microsoft 365 con una ubicación de datos preferida especificada en un entorno multige geográfico.
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ce4ed337b07206e6508a5955edc2c264586df4b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkSPO
+ms.openlocfilehash: 7de00ad0d94cda0a47f4981d78ebc07cedab6ada
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370949"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318807"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-preferred-data-location"></a>Crear un grupo Microsoft 365 con una ubicación de datos preferida específica
 
 Cuando los usuarios de un entorno multige geográfico crean un grupo de Microsoft 365, la ubicación de datos preferida (PDL) del grupo se establece automáticamente en la del usuario. Los administradores globales, de SharePoint y de Exchange pueden crear grupos en cualquier región que seleccionen. 
 
-Si necesita crear un grupo con un PDL específico, puede hacerlo desde el Centro de administración de SharePoint o a través del cmdlet New-UnifiedGroup de Exchange Online de Microsoft PowerShell. Al hacerlo, tanto el buzón del grupo como el sitio de SharePoint asociado con el grupo se aprovisionarán en el PDL especificado.
+Si necesita crear un grupo con una PDL específica, puede hacerlo desde el Centro de administración de <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint</a> o a través del cmdlet Exchange Online New-UnifiedGroup PowerShell de Microsoft. Al hacerlo, tanto el buzón del grupo como el sitio de SharePoint asociado con el grupo se aprovisionarán en el PDL especificado.
 
-Para crear un grupo Microsoft 365 con la PDL que especifique, vaya al Centro de administración de SharePoint en la ubicación geográfica donde desea crear el sitio de grupo.
+Para crear un grupo Microsoft 365 con la PDL que especifique, vaya al Centro de administración de <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint</a> en la ubicación geográfica donde desea crear el sitio de grupo.
 
 Por ejemplo:
 

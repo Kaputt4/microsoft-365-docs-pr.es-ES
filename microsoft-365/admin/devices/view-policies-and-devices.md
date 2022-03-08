@@ -24,21 +24,24 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Para ver las directivas y acciones de dispositivo, inicie sesión en Microsoft 365 para empresas.
-ms.openlocfilehash: 95eb5c73c1d81cb9b5c803e58ea74243b22b13d4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 55c4eb51164ece4bbb7f3092de25d3ff92f40737
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165321"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313585"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Ver y administrar directivas y dispositivos
 
 Este artículo se aplica a Microsoft 365 Empresa Premium.
 
+> [!NOTE]
+> Microsoft Defender para empresas se está implementando para los clientes de Microsoft 365 Empresa Premium, a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para dispositivos. [Obtenga más información sobre Defender para empresas](../../security/defender-business/mdb-overview.md).
+
 ## <a name="view-and-edit-device-policies"></a>Ver y editar directivas de dispositivos
 
 1.  Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
-2. En el panel de navegación izquierdo, elija **Directivas de** \> **dispositivos**.
+2. En la navegación izquierda, elija **Directivas de** \> **dispositivos**.
 
     En esta página, puede crear, editar, cambiar el grupo de destino o eliminar una directiva.
 
@@ -46,9 +49,12 @@ Este artículo se aplica a Microsoft 365 Empresa Premium.
   
 ## <a name="view-and-manage-devices"></a>Ver y administrar dispositivos
 
-1. En la navegación izquierda, elija **Dispositivos** \> **administrar**. 
+1. En la navegación izquierda, elija **Administrar** \> **dispositivos**. 
     
     En esta página, puede seleccionar uno o varios dispositivos y quitar datos de la empresa. En el caso de los dispositivos con Windows 10 para los que tenga configuradas las opciones de protección, también puede elegir restablecer la configuración de fábrica.
   
    ![Página Administrar dispositivos.](../../media/devicesmanage.png)
 
+## <a name="see-also"></a>Vea también
+
+[Principales 10 formas de proteger los planes de Microsoft 365 para empresas](../security-and-compliance/secure-your-business-data.md)

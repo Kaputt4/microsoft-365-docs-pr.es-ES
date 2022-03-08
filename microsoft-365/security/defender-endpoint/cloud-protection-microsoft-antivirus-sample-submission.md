@@ -1,6 +1,6 @@
 ---
 title: Protección en la nube y envío de ejemplo en Antivirus de Microsoft Defender
-description: Obtenga información sobre la protección y la protección entregadas en la nube Antivirus de Microsoft Defender
+description: Obtenga información sobre la protección y los Antivirus de Microsoft Defender
 keywords: Antivirus de Microsoft Defender, tecnologías de última generación, envío de ejemplo antivirus, av de próxima generación, aprendizaje automático, antimalware, seguridad, defender, nube, protección entregada en la nube
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -13,19 +13,19 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
+ms.date: 02/24/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3ffd18a0b2a0e81f2f3a425434f5e786d8dc598d
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 9df9c387f24671d6790d9219590eeac490f2f1aa
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171553"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328139"
 ---
 # <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>Protección en la nube y envío de ejemplo en Antivirus de Microsoft Defender
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus de Microsoft Defender
 
 Antivirus de Microsoft Defender muchos mecanismos inteligentes para detectar malware. Una de las capacidades más eficaces es la capacidad de aplicar la potencia de la nube para detectar malware y realizar análisis rápidos. La protección en la nube y el envío automático de muestras funcionan Antivirus de Microsoft Defender para ayudar a proteger contra amenazas nuevas y emergentes. 
@@ -36,7 +36,7 @@ En este artículo se proporciona información general sobre la protección en la
 
 ## <a name="how-cloud-protection-and-sample-submission-work-together"></a>Cómo funcionan conjuntamente la protección en la nube y el envío de muestras
 
-Para comprender cómo funciona la protección en la nube junto con el envío de ejemplo, puede resultar útil comprender cómo Defender for Endpoint protege contra amenazas. Microsoft Intelligent Security Graph los datos de amenazas de una amplia red de sensores. Microsoft capas de modelos de aprendizaje automático basados en la nube que pueden evaluar archivos basados en las señales del cliente y la amplia red de sensores y datos en la seguridad inteligente Graph. Este enfoque proporciona a Defender for Endpoint la capacidad de bloquear muchas amenazas nunca vistas. 
+Para comprender cómo funciona la protección en la nube junto con el envío de ejemplo, puede resultar útil comprender cómo Defender for Endpoint protege contra amenazas. Microsoft Intelligent Security Graph los datos de amenazas de una amplia red de sensores. Microsoft capas de modelos de aprendizaje automático basados en la nube que pueden evaluar los archivos en función de las señales del cliente y la amplia red de sensores y datos en el sistema de seguridad inteligente Graph. Este enfoque proporciona a Defender for Endpoint la capacidad de bloquear muchas amenazas nunca vistas. 
 
 En la siguiente imagen se muestra el flujo de protección en la nube y el envío de ejemplo con Antivirus de Microsoft Defender:
 
@@ -50,16 +50,16 @@ Antivirus de Microsoft Defender y la protección en la nube bloquean automática
 
 3. Antivirus de alta precisión, que detecta malware común a través de técnicas heurísticas y genéricas.
 
-4. La protección avanzada basada en la nube se proporciona para los casos en los que Antivirus de Microsoft Defender ejecución en el punto de conexión necesita más inteligencia para comprobar la intención de un archivo sospechoso.
+4. La protección avanzada basada en la nube se proporciona para los casos en los que Antivirus de Microsoft Defender en el punto de conexión necesita más inteligencia para comprobar la intención de un archivo sospechoso.
 
    1. En caso de Antivirus de Microsoft Defender una determinación clara, los metadatos de archivo se envían al servicio de protección en la nube. A menudo, en milisegundos, el servicio de protección en la nube puede determinar en función de los metadatos si el archivo es malintencionado o no es una amenaza.  
 
       - La consulta en la nube de metadatos de archivo puede ser el resultado del comportamiento, la marca de la web u otras características en las que no se determina un veredicto claro.
       - Se envía una pequeña carga de metadatos, con el objetivo de alcanzar un veredicto de malware o no una amenaza. Los metadatos no incluyen información de identificación personal (PII). La información, como los nombres de archivo, se aplica hash.
       - Puede ser sincrónico o asincrónico. Para sincrónico, el archivo no se abrirá hasta que la nube represente un veredicto. Para los asincrónicos, el archivo se abrirá mientras la protección en la nube realiza su análisis.
-      - Los metadatos pueden incluir atributos PE, atributos de archivo estáticos, atributos dinámicos y contextuales, y mucho más (vea Ejemplos de metadatos enviados [al servicio de protección en la nube).](#examples-of-metadata-sent-to-the-cloud-protection-service)
+      - Los metadatos pueden incluir atributos PE, atributos de archivo estáticos, atributos dinámicos y contextuales, y mucho más (vea Ejemplos de metadatos enviados [al servicio de protección en la nube](#examples-of-metadata-sent-to-the-cloud-protection-service)).
 
-   2. Después de examinar los metadatos, si Antivirus de Microsoft Defender protección en la nube no puede alcanzar un veredicto concluyente, puede solicitar una muestra del archivo para una inspección posterior. Esta solicitud respeta la configuración de configuración para el envío de ejemplo:
+   2. Después de examinar los metadatos, si Antivirus de Microsoft Defender protección en la nube no puede llegar a un veredicto concluyente, puede solicitar una muestra del archivo para su posterior inspección. Esta solicitud respeta la configuración de configuración para el envío de ejemplo:
 
       1. **Enviar muestras seguras automáticamente** (valor predeterminado)
          - Caja fuerte ejemplos son ejemplos que se consideran que no contienen normalmente datos de PII como: .bat, .scr, .dll, .exe.
@@ -87,7 +87,7 @@ Antivirus de Microsoft Defender y la protección en la nube bloquean automática
 
 ## <a name="cloud-protection-levels"></a>Niveles de protección en la nube
 
-La protección en la nube está habilitada de forma predeterminada en Antivirus de Microsoft Defender. Le recomendamos que mantenga habilitada la protección en la nube, aunque puede configurar el nivel de protección de su organización. Vea [Especificar el nivel de protección entregado en la nube para Antivirus de Microsoft Defender](specify-cloud-protection-level-microsoft-defender-antivirus.md).
+La protección en la nube está habilitada de forma predeterminada en Antivirus de Microsoft Defender. Le recomendamos que mantenga habilitada la protección en la nube, aunque puede configurar el nivel de protección de su organización. Consulte [Especificar el nivel de protección entregado en la nube para Antivirus de Microsoft Defender](specify-cloud-protection-level-microsoft-defender-antivirus.md).
 
 ## <a name="sample-submission-settings"></a>Configuración de envío de ejemplo
 
@@ -97,7 +97,7 @@ Además de configurar el nivel de protección en la nube, puede configurar las o
 - **Enviar todas las muestras automáticamente**  
 - **No enviar muestras**  
 
-Para obtener información acerca de las opciones de configuración con Intune, Configuration Manager, GPO o PowerShell, vea [Turn on cloud protection in Antivirus de Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
+Para obtener información acerca de las opciones de configuración mediante Intune, Configuration Manager, GPO o PowerShell, consulte Activar la protección [en la nube en Antivirus de Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
 
 ## <a name="examples-of-metadata-sent-to-the-cloud-protection-service"></a>Ejemplos de metadatos enviados al servicio de protección en la nube
 
@@ -122,7 +122,7 @@ Además, Defender for Endpoint ha recibido varias certificaciones de cumplimient
 - SOC I, II, III
 - y PCI
 
-Para obtener más información, consulte los recursos siguientes:
+Para más información, consulte los siguientes recursos:
 
 - [Ofertas de cumplimiento de Azure](/azure/storage/common/storage-compliance-offerings) 
 - [Portal de confianza del servicio](https://servicetrust.microsoft.com)
@@ -130,13 +130,15 @@ Para obtener más información, consulte los recursos siguientes:
 
 ## <a name="other-file-sample-submission-scenarios"></a>Otros escenarios de envío de ejemplo de archivo
 
-Hay dos escenarios más en los que Defender for Endpoint puede solicitar un ejemplo de archivo que no esté relacionado con la protección de la nube en Antivirus de Microsoft Defender. Estos escenarios se describen en la tabla siguiente:
+Hay dos escenarios más en los que Defender for Endpoint puede solicitar un ejemplo de archivo que no esté relacionado con la protección en la nube en Antivirus de Microsoft Defender. Estos escenarios se describen en la tabla siguiente:
 
-| Escenario | Description |
+| Escenario | Descripción |
 |:---|:---|
-|Colección de ejemplos de archivos manual en el portal Microsoft 365 Defender archivo | Al incorporar dispositivos a Defender for Endpoint, puede configurar las opciones [para detección y respuesta de puntos de conexión (EDR).](overview-endpoint-detection-response.md) Por ejemplo, hay una configuración para habilitar colecciones de muestras desde el dispositivo, que puede confundirse fácilmente con la configuración de envío de ejemplo descrita en este artículo. <br/><br/>La EDR controla la colección de muestras de archivos de dispositivos cuando se solicita a través del portal de Microsoft 365 Defender y está sujeta a los roles y permisos ya establecidos. Esta configuración puede permitir o bloquear la recopilación de archivos desde el punto de conexión para características como el análisis profundo en el portal Microsoft 365 Defender web. Si esta configuración no está configurada, el valor predeterminado es habilitar la colección de muestras. <br/><br/>Obtenga información sobre las opciones de configuración de Defender for Endpoint, vea: Herramientas y métodos de incorporación [para Windows 10 dispositivos en Defender para endpoint](configure-endpoints.md) |
-| Análisis automatizado de contenido de investigación y respuesta | Cuando se ejecutan investigaciones automatizadas en dispositivos (cuando se configura para ejecutarse automáticamente en respuesta a una alerta o ejecutarse manualmente), los archivos identificados como [sospechosos](automated-investigations.md) se pueden recopilar desde los puntos de conexión para una inspección posterior. Si es necesario, la característica de análisis de contenido de archivos para investigaciones automatizadas se puede deshabilitar en el portal Microsoft 365 Defender datos. <br/><br/> Los nombres de extensión de archivo también se pueden modificar para agregar o quitar extensiones para otros tipos de archivo que se envían automáticamente durante una investigación automatizada. <br/><br/> Para obtener más información, vea [Manage automation file uploads](manage-automation-file-uploads.md). |
+|Colección de ejemplo de archivo manual en el portal Microsoft 365 Defender archivo | Al incorporar dispositivos a Defender para endpoint, puedes configurar las opciones [detección y respuesta de puntos de conexión (EDR).](overview-endpoint-detection-response.md). Por ejemplo, hay una configuración para habilitar colecciones de muestras desde el dispositivo, que puede confundirse fácilmente con la configuración de envío de ejemplo descrita en este artículo. <br/><br/>La EDR controla la colección de muestras de archivos de dispositivos cuando se solicita a través del portal de Microsoft 365 Defender y está sujeta a los roles y permisos ya establecidos. Esta configuración puede permitir o bloquear la recopilación de archivos desde el punto de conexión para características como el análisis profundo en el portal Microsoft 365 Defender web. Si esta configuración no está configurada, el valor predeterminado es habilitar la colección de muestras. <br/><br/>Obtenga información sobre las opciones de configuración de Defender for Endpoint, vea: Herramientas y métodos de incorporación [para Windows 10 dispositivos en Defender para endpoint](configure-endpoints.md) |
+| Análisis automatizado de contenido de investigación y respuesta | Cuando se ejecutan investigaciones automatizadas en dispositivos (cuando se configura para ejecutarse automáticamente en respuesta a una alerta o ejecutarse manualmente), los archivos [identificados como sospechosos](automated-investigations.md) se pueden recopilar desde los puntos de conexión para una inspección posterior. Si es necesario, la característica de análisis de contenido de archivos para investigaciones automatizadas se puede deshabilitar en el portal Microsoft 365 Defender web. <br/><br/> Los nombres de extensión de archivo también se pueden modificar para agregar o quitar extensiones para otros tipos de archivo que se envían automáticamente durante una investigación automatizada. <br/><br/> Para obtener más información, consulte [Manage automation file uploads](manage-automation-file-uploads.md). |
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Información sobre los servicios de protección de última generación](next-generation-protection.md)
+
+[Configure la corrección para Antivirus de Microsoft Defender detecciones.](configure-remediation-microsoft-defender-antivirus.md)

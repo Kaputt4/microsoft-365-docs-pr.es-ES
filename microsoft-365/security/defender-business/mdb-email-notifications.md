@@ -7,26 +7,25 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: 5a6d896b3b18b4eea0721197c0a4766add4a20b6
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 86588289a4a94a46ddca6022b12a70ac6965a904
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464583"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329689"
 ---
 # <a name="set-up-email-notifications"></a>Configurar notificaciones por correo electrónico
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y agregaremos funcionalidades con regularidad.
+> Microsoft Defender para empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
-
 
 Puede configurar las notificaciones por correo electrónico para su equipo de seguridad. A continuación, a medida que se generen alertas o se descubran nuevas vulnerabilidades, se notificará automáticamente a los usuarios del equipo de seguridad. 
 
@@ -38,6 +37,11 @@ Puede configurar las notificaciones por correo electrónico para su equipo de se
 
 3. [Continúe con los pasos siguientes](#next-steps).
 
+
+>
+> **¿Tiene un minuto?**
+> Por favor, haga <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+>
 
 ## <a name="types-of-email-notifications"></a>Tipos de notificaciones de correo electrónico
 
@@ -51,15 +55,15 @@ Al configurar las notificaciones por correo electrónico, puede elegir entre dos
 > [!TIP]
 > **Las notificaciones por correo electrónico no son la única forma en que el equipo de seguridad puede averiguar sobre nuevas alertas o vulnerabilidades**.
 > 
-> Las notificaciones por correo electrónico son una forma cómoda de ayudar a mantener informado a su equipo de seguridad en tiempo real. Pero hay otros. Por ejemplo, cada vez que el equipo de seguridad inicia sesión en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), verán tarjetas que resaltan nuevas amenazas, alertas y vulnerabilidades. Defender para empresas (versión preliminar) está diseñado para resaltar información importante que le importa al equipo de seguridad tan pronto como inicie sesión.
+> Las notificaciones por correo electrónico son una forma cómoda de ayudar a mantener informado a su equipo de seguridad en tiempo real. Pero hay otros. Por ejemplo, cada vez que el equipo de seguridad inicia sesión en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), verán tarjetas que resaltan nuevas amenazas, alertas y vulnerabilidades. Defender para empresas está diseñado para resaltar información importante que le importa al equipo de seguridad tan pronto como inicie sesión.
 > 
-> El equipo de seguridad también puede elegir **Incidentes** en el panel de navegación para ver información. Para obtener más información, [consulta Ver y administrar incidentes en Microsoft Defender para empresas (versión preliminar).](mdb-view-manage-incidents.md)
+> El equipo de seguridad también puede elegir **Incidentes** en el panel de navegación para ver información. Para obtener más información, consulta [Ver y administrar incidentes en Microsoft Defender para empresas](mdb-view-manage-incidents.md).
 
 ## <a name="view-and-edit-email-notifications"></a>Ver y editar notificaciones de correo electrónico
 
 Para ver o editar la configuración de notificaciones por correo electrónico de su organización, siga estos pasos:
 
-1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
+1. Vaya al portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
 2. En el panel de navegación, **seleccione Configuración** y, a continuación, seleccione **Extremos**. A continuación, **en General**, seleccione **Notificaciones de correo electrónico**. 
 
@@ -71,9 +75,8 @@ Para ver o editar la configuración de notificaciones por correo electrónico de
 
    - Si tiene reglas creadas, seleccione una regla para editarla. También puede eliminar una regla. 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Continúe con:
 
-- [Paso 4: Incorporar dispositivos a Microsoft Defender para empresas (versión preliminar)](mdb-onboard-devices.md)
-
+- [Paso 4: Incorporar dispositivos a Microsoft Defender para empresas](mdb-onboard-devices.md)

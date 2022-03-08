@@ -2,8 +2,8 @@
 title: 'Configurar la integración de soporte técnico con ServiceNow: autenticación básica'
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,18 +17,18 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guía de configuración y instalación de aplicaciones certificadas con ámbito para ServiceNow.
-ms.openlocfilehash: cf9b5149847b51d9d701a49e32624ada3f708a17
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 23fab410b17cea9635c63b0ed0e4225d158dfdc8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321488"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323855"
 ---
 # <a name="configure-support-integration-with-servicenow---basic-authentication"></a>Configurar la integración de soporte técnico con ServiceNow: autenticación básica
 
 ## <a name="prerequisites-basic-authentication"></a>Requisitos previos (autenticación básica)
 
-Estos requisitos previos son necesarios para configurar la Microsoft 365 **la integración de soporte técnico**.
+Estos requisitos previos son necesarios para configurar la **Microsoft 365 la integración de compatibilidad**.
 
 1. \[AAD administrador\] Cree Azure AD aplicación en su Microsoft 365 inquilino.
 
@@ -68,7 +68,7 @@ Estos requisitos previos son necesarios para configurar la Microsoft 365 **la in
 
 1. \[Administrador de ServiceNow\] Configure el proveedor de OAuth entrante.
 
-    Si el ámbito no está establecido en **Global**, **&gt; vaya a Configuración Developer &gt; Applications** y cambie a **Global**.
+    Si el ámbito no está establecido en **Global**, **&gt; vaya a Configuración Aplicaciones &gt;** para desarrolladores y cambie a **Global**.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, chat o mensaje de texto Descripción generada automáticamente":::
 
@@ -86,9 +86,9 @@ Estos requisitos previos son necesarios para configurar la Microsoft 365 **la in
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image8.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image8.png" alt-text="Interfaz gráfica de usuario, descripción de la aplicación generada automáticamente":::
 
-## <a name="optional-allow-the-services-ip-addresses-to-microsoft-365-support-integration"></a>\[OPCIONAL\] Permitir que las direcciones IP del servicio se Microsoft 365 integración de soporte técnico
+## <a name="optional-allow-the-services-ip-addresses-to-microsoft-365-support-integration"></a>\[OPCIONAL\] Permitir que las direcciones IP del servicio Microsoft 365 la integración de soporte técnico
 
-Si su empresa limita el acceso a Internet con sus propias directivas, habilite el acceso de red para el servicio de integración de soporte técnico de Microsoft 365 al permitir las direcciones IP siguientes para el acceso a la API entrante y saliente:
+Si su empresa limita el acceso a Internet con sus propias directivas, habilite el acceso de red para el servicio de Microsoft 365 admitir la integración al permitir las direcciones IP siguientes para el acceso a la API entrante y saliente:
 
 - 52.149.152.32
 
@@ -103,11 +103,11 @@ Si su empresa limita el acceso a Internet con sus propias directivas, habilite e
 - 20.105.151.142
 
 > [!NOTE]
-> Este comando de terminal enumera todas las direcciones IP activas del servicio para Microsoft 365 integración de compatibilidad:`nslookup`` connector.rave.microsoft.com`
+> Este comando de terminal enumera todas las direcciones IP activas del servicio para Microsoft 365 integración de soporte técnico:`nslookup`` connector.rave.microsoft.com`
 
-## <a name="configure-the-microsoft-365-support-integration-application"></a>Configurar la aplicación Microsoft 365 de integración de soporte técnico
+## <a name="configure-the-microsoft-365-support-integration-application"></a>Configurar la aplicación Microsoft 365 de integración compatible
 
-La Microsoft 365 de integración de soporte técnico se puede configurar en Microsoft 365 compatibilidad.
+La Microsoft 365 de integración de soporte técnico se puede configurar en la Microsoft 365 compatibilidad.
 
 Estos pasos son necesarios para configurar la integración entre la instancia de ServiceNow y Microsoft 365 compatibilidad.
 
@@ -115,7 +115,7 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="Interfaz gráfica de usuario, descripción de tabla generada automáticamente":::
 
-1. \[Administrador de ServiceNow\] Vaya **a Microsoft 365 configuración de soporte &gt; técnico para** abrir el flujo de trabajo de integración.
+1. \[Administrador de ServiceNow\] Vaya **Microsoft 365 configuración de soporte &gt; técnico** para abrir el flujo de trabajo de integración.
 
     > [!NOTE]
     > Si ve el error "Read operation against 'oauthentity\_' from scope 'xmiomsm365assis\_\_\_' has been refused due to the table's cross-scope access policy", it was caused by your table access policy. Debe asegurarse de que **todos los ámbitos de aplicación &gt; Puede leer** se comprueban para la oauthentity\_ de la tabla.
@@ -136,7 +136,7 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-3.png" lightbox="../../media/ServiceNow-guide/snowbasic-3.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
 1. \[Administrador de ServiceNow Configurar\] las opciones de salida.
-    1. Registrar la Azure Active Directory (AAD) App.
+    1. Registrar la aplicación Azure Active Directory (AAD).
     1. Después de completar las instrucciones de la sección requisitos previos, haga clic en **Listo**. De lo contrario, siga las instrucciones del asistente para crear el registro de aplicación necesario en AAD.
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-4.png" lightbox="../../media/ServiceNow-guide/snowbasic-4.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
@@ -162,11 +162,11 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image17.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image17.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::
 
-1. Vaya a **Administración de Microsoft 365 Portal Configuración &gt; &gt; Configuración de la organización Perfiles &gt; de organización**.
+1. Vaya a **Administración de Microsoft 365 Configuración Configuración &gt; &gt; organización perfiles &gt; de organización**.
 
 1. Configure las opciones de integración de compatibilidad:
 
-    Seleccione la **pestaña Información básica >** **Herramienta** >  de soporte técnico **internoServiceNow** y escriba el valor **de Identificador** de aplicación saliente en el id. de aplicación para emitir el **campo Token de** autenticación. Este identificador de aplicación saliente se encuentra en el paso 6: completar la integración, que se creó en [el paso 1 de requisitos previos (autenticación básica\#](#prerequisites-basic-authentication)).
+    Seleccione la **pestaña Información básica >** **Herramienta** >  de soporte **internoServiceNow** y escriba el valor **de Identificador** de aplicación saliente en el id. de aplicación para emitir el **campo Token de autenticación**. Este identificador de aplicación saliente se encuentra en el paso 6: completar la integración, que se creó en [el paso 1 de requisitos previos (autenticación básica\#](#prerequisites-basic-authentication)).
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
@@ -201,6 +201,16 @@ Estos pasos son necesarios para configurar la integración entre la instancia de
     La Microsoft 365 de integración de soporte técnico ejecutará pruebas para garantizar que la integración funciona. Si hay un problema con la configuración, un mensaje de error explicará lo que debe solucionarse. De lo contrario, la aplicación está lista.
      :::image type="content" source="../../media/ServiceNow-guide/snowbasic-9.png" lightbox="../../media/ServiceNow-guide/snowbasic-9.png" alt-text="Interfaz gráfica de usuario, texto, aplicación, descripción de correo electrónico generada automáticamente":::
 
+1. \[Administrador de ServiceNow\] Habilite la integración de soporte técnico de Microsoft para un usuario existente.
+
+    Microsoft 365 la integración de soporte técnico está habilitada para el usuario con uno de estos roles:
+
+    - xmiomsm365assis.insightsuser\_\_\_\_
+
+    - xmiomsm365assis.administrator\_\_\_
+
 1. \[OPTIONAL\] [El usuario con el vínculo role x_mioms_m365_assis.administrator] Vincular Administración de Microsoft 365 cuenta.
-    Si algún usuario tiene el rol x_mioms_m365_assis.administrator y usa diferentes cuentas de Microsoft 365 para administrar un caso de soporte técnico de Microsoft 365, debe ir Microsoft 365 soporte técnico > Cuenta de vínculo para configurar su correo electrónico de administrador Microsoft 365.
+
+    Si algún usuario tiene el rol x_mioms_m365_assis.administrator y usa diferentes cuentas de Microsoft 365 para administrar un caso de soporte técnico de Microsoft 365, debe ir Microsoft 365 soporte técnico > Link Account para configurar su correo electrónico de administrador Microsoft 365.
+    
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Interfaz gráfica de usuario, texto, descripción de la aplicación generada automáticamente":::

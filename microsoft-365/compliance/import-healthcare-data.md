@@ -14,24 +14,24 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de registros de salud electrónicos (EHR) desde su sistema de salud a Microsoft 365. Esto le permite usar datos EHR en directivas de administración de riesgos internas para ayudarle a detectar actividad de acceso no autorizado a datos de pacientes por parte de sus empleados.
-ms.openlocfilehash: 1be80dea0bd5692f07edbe34df1bf61cd85f3337
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 7fac743afe76e0cc3f5ae44cbd1236a2f7b3c0d3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320696"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327033"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configurar un conector para importar datos de auditoría de EHR de atención sanitaria (versión preliminar)
 
-Puede configurar un conector de datos en el Centro de cumplimiento de Microsoft 365 importar datos de auditoría para la actividad del usuario en el sistema de registros electrónicos de salud (EHR) de su organización. Los datos de auditoría de su sistema ehr de salud incluyen datos de eventos relacionados con el acceso a los registros de salud de un paciente. Los datos de auditoría de EHR de atención sanitaria pueden ser usados por la solución de administración [de riesgos Microsoft 365](insider-risk-management.md) información interna para ayudar a proteger su organización del acceso no autorizado a la información del paciente.
+Puede configurar un conector de datos en el Centro de cumplimiento de Microsoft 365 importar datos de auditoría para la actividad del usuario en el sistema de registros electrónicos de salud (EHR) de su organización. Los datos de auditoría de su sistema ehr de salud incluyen datos de eventos relacionados con el acceso a los registros de salud de un paciente. Los datos de auditoría de EHR de cuidado de la salud pueden ser usados por la solución de Microsoft 365 de administración de riesgos internas para [ayudar a proteger](insider-risk-management.md) su organización del acceso no autorizado a la información del paciente.
 
 La configuración de un conector de atención médica consta de las siguientes tareas:
 
-- Crear una aplicación en Azure Active Directory (Azure AD) para obtener acceso a un extremo de API que acepte un archivo de texto separado por tabulaciones que contenga datos de auditoría de EHR de atención sanitaria.
+- Crear una aplicación en Azure Active Directory (Azure AD) para tener acceso a un extremo de API que acepte un archivo de texto separado por pestañas que contenga datos de auditoría de EHR de atención sanitaria.
 
 - Crear un archivo de texto con todos los campos necesarios según se define en el esquema del conector.
 
-- Crear una instancia de conector de atención médica en el Centro de cumplimiento de Microsoft 365.
+- Creación de una instancia de conector de atención médica en el Centro de cumplimiento de Microsoft 365.
 
 - Ejecución de un script para insertar datos de auditoría de EHR de atención médica en el extremo de la API.
 
@@ -39,7 +39,7 @@ La configuración de un conector de atención médica consta de las siguientes t
 
 ## <a name="before-you-set-up-the-connector"></a>Antes de configurar el conector
 
-- Al usuario que crea el conector de atención médica en el paso 3 se le debe asignar el rol De importación de buzones de Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol Exportar importación de buzones y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos [](/Exchange/permissions-exo/role-groups#modify-role-groups) de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+- El usuario que crea el conector de atención médica en el paso 3 debe tener asignado el rol de administrador del conector de datos. Este rol es necesario para agregar conectores en la **página Conectores de datos** de la Centro de cumplimiento de Microsoft 365. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, vea la sección "Roles en los centros de seguridad y cumplimiento" en Permisos en el [Centro de seguridad & cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de la organización puede crear un grupo de roles personalizado, asignar el rol de administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, vea la sección "Crear un grupo de roles personalizado" en [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - Debe determinar cómo recuperar o exportar los datos del sistema EHR de salud de su organización (diariamente) y crear un archivo de texto que se describe en el paso 2. El script que ejecute en el paso 4 insertará los datos del archivo de texto en el punto de conexión de la API.
 
@@ -47,11 +47,11 @@ La configuración de un conector de atención médica consta de las siguientes t
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Crear una aplicación en Azure Active Directory
 
-El primer paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector de cuidado de la salud que creas en el paso 3. La creación de esta aplicación Azure AD autenticar la solicitud de inserción del archivo de texto que contiene datos de auditoría de EHR de atención sanitaria. Durante la creación de esta Azure AD, asegúrate de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
+El primer paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector de cuidado de la salud que creas en el paso 3. La creación de esta aplicación Azure AD autenticar la solicitud de inserción del archivo de texto que contiene datos de auditoría de EHR de salud. Durante la creación de esta Azure AD, asegúrate de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
 
-- Azure AD de aplicación (también denominado id. *de aplicación* o *id. de cliente*)
+- Azure AD de aplicación (también denominado id. *de aplicación* o *identificador de cliente*)
 
-- Azure AD secreto de aplicación (también denominado secreto *de cliente*)
+- Azure AD secreto de aplicación (también denominado *secreto de cliente*)
 
 - Identificador de inquilino (también denominado *id. de directorio*)
 
@@ -66,7 +66,7 @@ El siguiente paso es crear un archivo de texto que contenga información sobre e
 
 En la tabla siguiente se enumeran los campos necesarios para habilitar escenarios de administración de riesgos de insider. Un subconjunto de estos campos es obligatorio. Estos campos se resaltan con un asterisco (*). Si falta alguno de los campos obligatorios en el archivo de texto, el archivo no se validará y los datos del archivo no se importarán.
 
-|Campo|Categoría|
+|Field|Categoría|
 |:----|:----------|
 | Nombre de *TimeEvent<br/> de creación*<br/>Id. de estación de trabajo<br/>Sección de eventos<br/>Categoría del evento |Estos campos se usan para identificar eventos de actividad de acceso en el sistema EHR de salud.|
 | Id. de reg del paciente<br/>Nombre del *pacientePatient<br/> Apellido del paciente de segundo <br/>nombre* <br/>Línea de dirección del paciente 1* <br/>Línea de dirección del paciente 2<br/>Ciudad del paciente* <br/>Código postal del paciente*  <br/>Estado del paciente <br/>País del paciente <br/>Departamento del paciente              | Estos campos se usan para identificar la información del perfil del paciente.|

@@ -1,9 +1,9 @@
 ---
 title: Paso 5. Proteger información
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
 description: Use el acceso controlado a carpetas, MIP, DLP y Microsoft Defender for Cloud Apps para proteger sus datos confidenciales de Microsoft 365.
-ms.openlocfilehash: e5973373b9a831a8abaf8356866524c6c0639224
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 0011a3c9fc0d24815818b67906b8f404a191563e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886995"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325101"
 ---
 # <a name="step-5-protect-information"></a>Paso 5. Proteger información
 

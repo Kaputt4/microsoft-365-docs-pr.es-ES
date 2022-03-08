@@ -2,8 +2,8 @@
 title: Análisis de correo electrónico en investigaciones para Microsoft Defender para Office 365
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -15,18 +15,18 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 keywords: respuesta automatizada a incidentes, investigación, corrección, protección contra amenazas
-description: Vea cómo funcionan los análisis de correo electrónico en investigaciones en Microsoft Defender para Office 365.
+description: Vea cómo funcionan los análisis de correo electrónico en las investigaciones en Microsoft Defender para Office 365.
 ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 93855320f21d537fdd03e81424b6105575f37485
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 5737a2d1974805dc55b85b7ff8f4117cbc1da898
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121212"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318191"
 ---
 # <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>Análisis de correo electrónico en investigaciones para Microsoft Defender para Office 365
 
@@ -72,14 +72,14 @@ Para garantizar que las acciones de investigación estén actualizadas, cualquie
 
 ## <a name="the-display-of-incident-evidence-for-email-and-email-clusters"></a>Presentación de pruebas de incidentes para clústeres de correo electrónico y correo electrónico
 
-Las pruebas basadas en correo electrónico en la pestaña Evidencia y **respuesta** de un incidente ahora muestran la siguiente información.
+Las pruebas basadas en correo electrónico en **la pestaña Evidencia y respuesta** de un incidente ahora muestran la siguiente información.
 
 :::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="Ejemplo de información de análisis de correo electrónico en Evidencia y respuesta." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
 
 De las llamadas numeradas de la figura:
 
 1. Puede realizar acciones de corrección, además del Centro **de acciones**.
-2. Puede realizar acciones de corrección para clústeres de correo electrónico con **un** veredicto malintencionado (pero no **sospechoso).**
+2. Puede realizar acciones de corrección para clústeres de correo electrónico **con un** veredicto malintencionado (pero no **sospechoso**).
 3. Para el veredicto de correo no deseado de correo electrónico, la suplantación de identidad (phishing) se divide en alta confianza y phishing normal.
 
    Para un veredicto malintencionado, las categorías de amenazas son malware, phish de elevada confianza, dirección URL malintencionada y archivo malintencionado.
@@ -89,7 +89,7 @@ De las llamadas numeradas de la figura:
 4. El recuento de correo electrónico por se basa en la ubicación de entrega más reciente e incluye contadores para correo electrónico en buzones de correo, no en buzones y locales.
 5. Incluye la fecha y hora de la consulta, que podrían actualizarse para los datos más recientes.
 
-Para los clústeres de  correo electrónico o correo electrónico de la pestaña Entidades de un **incidente,** Prevenido significa que no había correos electrónicos malintencionados en el buzón para este elemento (correo o clúster). Aquí le mostramos un ejemplo.
+Para los clústeres de correo electrónico o  correo electrónico de la pestaña Entidades de un **incidente,** Prevenido significa que no había correos electrónicos malintencionados en el buzón para este elemento (correo o clúster). Aquí le mostramos un ejemplo.
 
 :::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="Ejemplo de un correo electrónico impedido." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
 

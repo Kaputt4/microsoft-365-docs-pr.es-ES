@@ -2,8 +2,8 @@
 title: Comprobación de la información de contacto de ICANN
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 0413dcce-26be-4b8c-b3fa-73ac1ac4fb35
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo validar su información de contacto para cumplir con las normativas de ICANN.
-ms.openlocfilehash: 6789dff94ae26479cef87cae28326ddfb60ef5b4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a1ea60422ebd503ff1cfaac325a5a74433756831
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164349"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324919"
 ---
 # <a name="icann-verification-of-contact-information"></a>Comprobación de la información de contacto de ICANN
 

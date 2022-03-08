@@ -2,8 +2,8 @@
 title: Instalar aplicaciones de Office
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: landing-page
@@ -24,12 +24,12 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 description: Ahora que ya has configurado Microsoft 365, aprende a instalar aplicaciones Office individuales en tu Mac, PC o dispositivos móviles.
-ms.openlocfilehash: e943e5dd07f51ff6885cbb5f2567643597f360b9
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 9e573307bb0c2de1a0b6f4a9157bd35a4b81fe8a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128213"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317337"
 ---
 # <a name="install-office-applications"></a>Instalar aplicaciones de Office
 
@@ -53,7 +53,7 @@ Siga estos vínculos para obtener información sobre cómo:
   
 - Instalar Office aplicaciones: [instalar Office en tu PC o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
-- Instalar otras aplicaciones: [Project](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281), [Visio](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710), o [Skype Empresarial](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
+- Instalar otras aplicaciones: [Project](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281), [Visio](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710) o [Skype Empresarial](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
 
 - Configurar dispositivos móviles: [configuración Microsoft 365 móvil - Ayuda](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)
 
@@ -69,4 +69,4 @@ Si has comprado Azure Active Directory Premium (AADP) plan 1 o plan 2, eres eleg
 
 ## <a name="related-content"></a>Contenido relacionado
   
-[Solucionar problemas al instalar Office y Microsoft 365](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2) (artículo)
+[Solucionar problemas de Office y Microsoft 365](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2) (artículo)

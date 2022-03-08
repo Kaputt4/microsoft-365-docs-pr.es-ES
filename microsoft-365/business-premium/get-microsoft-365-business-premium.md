@@ -22,24 +22,24 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Obtenga Microsoft 365 Empresa Premium para que pueda proteger su empresa de amenazas de ciberseguridad a dispositivos, correo electrónico, datos y comunicaciones.
-ms.openlocfilehash: 041202327c82ddffa02660acf9eb6127d65ada2a
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Obtenga Microsoft 365 Empresa Premium para proteger su empresa de amenazas de ciberseguridad a dispositivos, correo electrónico, datos y comunicaciones.
+ms.openlocfilehash: 2e6ad120407a7bc84e089b997c990e04d438ab29
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766346"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318513"
 ---
 # <a name="how-to-get-microsoft-365-business-premium"></a>Cómo obtener Microsoft 365 Empresa Premium
 
 En este artículo se describe cómo obtener Microsoft 365 Empresa Premium para su empresa. Hay varias opciones:
 
-- [Comprar o probar Microsoft 365 Empresa Premium por su cuenta](#get-microsoft-365-business-premium-on-your-own)
+- [Pruebe o compre Microsoft 365 Empresa Premium por su cuenta](#get-microsoft-365-business-premium-on-your-own)
 - [Trabajar con un proveedor de soluciones](#work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium)
 
 ## <a name="get-microsoft-365-business-premium-on-your-own"></a>Obtener Microsoft 365 Empresa Premium por su cuenta
 
-Consulta [Probar o comprar una suscripción Microsoft 365 para empresas](../commerce/try-or-buy-microsoft-365.md). En el [Microsoft 365 Products](https://www.aka.ms/office365signup), elija **Microsoft 365 Empresa Premium**.
+Consulta [Probar o comprar una suscripción Microsoft 365 para empresas](../commerce/try-or-buy-microsoft-365.md). En el [sitio Microsoft 365 Productos](https://www.aka.ms/office365signup), elija **Microsoft 365 Empresa Premium**.
 
 ## <a name="work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium"></a>Trabajar con un proveedor de soluciones de Microsoft para obtener Microsoft 365 Empresa Premium
 
@@ -57,4 +57,4 @@ Para encontrar un proveedor de soluciones en su área, siga estos pasos:
 
 ## <a name="what-does-microsoft-365-business-premium-include"></a>¿Qué Microsoft 365 Empresa Premium incluye?
 
-[Ver los Microsoft 365 de suscripción de usuario para pequeñas y medianas empresas](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM)
+[Ver las Microsoft 365 de suscripción de usuario para pequeñas y medianas empresas](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM)

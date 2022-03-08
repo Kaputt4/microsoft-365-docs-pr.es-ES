@@ -2,8 +2,8 @@
 title: Cerrar la cuenta
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
-- commerce_subscription
 - AdminTemplateSet
 search.appverid: MET150
 description: Al cerrar su cuenta con Microsoft, se elimina toda la información relacionada con su cuenta, incluidas las licencias, los usuarios y los datos de usuario.
 ms.date: 04/02/2021
-ms.openlocfilehash: bfa5243eab6826626410ee54659a351f8ca7711a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b1ac828d047d2c2b9f39185a66ccc77976b8324b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371249"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317295"
 ---
 # <a name="close-your-account"></a>Cerrar la cuenta
 
@@ -42,18 +42,18 @@ Debe ser un administrador global o de facturación para realizar las tareas de e
 
 Elimine todos los usuarios excepto un administrador global. El administrador global completa los pasos para cerrar la cuenta. Antes de poder eliminar el directorio al final de este proceso, debe eliminar todos los demás usuarios.
 
-Si los usuarios se sincronizan desde local, desactive primero la sincronización y, a continuación, elimine los usuarios del directorio en la nube mediante Azure Portal o Azure PowerShell cmdlets.
+Si los usuarios se sincronizan desde el entorno local, desactive primero la sincronización y, a continuación, elimine los usuarios del directorio en la nube con Azure Portal o Azure PowerShell cmdlets.
 
 Para eliminar usuarios, vea [User management admin: Delete one or more users](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-office-365).
 
 También puede usar el cmdlet [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) de PowerShell para eliminar usuarios en masa.
 
-Si su organización usa Active Directory que se sincroniza con Microsoft Azure Active Directory (Azure AD), elimine la cuenta de usuario de Active Directory en su lugar. Para obtener instrucciones, vea [Bulk delete users in Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete).
+Si su organización usa Active Directory que se sincroniza con Microsoft Azure Active Directory (Azure AD), elimine la cuenta de usuario de Active Directory en su lugar. Para obtener instrucciones, consulte [Eliminación masiva de usuarios en Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete).
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Paso 2: Cancelar todas las suscripciones activas
 
 1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. En la **pestaña Productos,** busque una suscripción activa. Seleccione los tres puntos (más acciones) y, después, seleccione **Cancelar suscripción**.
+2. En la **pestaña Productos** , busque una suscripción activa. Seleccione los tres puntos (más acciones) y, después, seleccione **Cancelar suscripción**.
 3. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Opcionalmente, proporcione algún comentario.
 4. Seleccione **Guardar**.
 5. Repita los pasos del 1 al 4 para cancelar todas las suscripciones activas.
@@ -61,23 +61,23 @@ Si su organización usa Active Directory que se sincroniza con Microsoft Azure A
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>Paso 3: Eliminar todas las suscripciones deshabilitadas
 
 1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. En la **pestaña Productos,** seleccione una suscripción deshabilitada.
-3. En la página detalles de la suscripción, en la sección Configuración de **suscripción y pago,** seleccione **Eliminar suscripción**.
-4. En el **panel Eliminar suscripción,** seleccione **Eliminar suscripción**.
-5. En el **cuadro de diálogo** Eliminar suscripción, seleccione **Sí**.
+2. En la **pestaña Productos** , seleccione una suscripción deshabilitada.
+3. En la página detalles de la suscripción, en la **sección Configuración de suscripción y pago** , seleccione **Eliminar suscripción**.
+4. En el **panel Eliminar suscripción** , seleccione **Eliminar suscripción**.
+5. En el **cuadro de diálogo Eliminar suscripción** , seleccione **Sí**.
 6. Para cada suscripción deshabilitada, repita los pasos del 3 al 5 hasta que se eliminen todas las suscripciones.
 
 > [!NOTE]
-> Si no puede eliminar inmediatamente una suscripción deshabilitada, póngase [en contacto con el soporte técnico](../admin/get-help-support.md).
+> Si no puedes eliminar inmediatamente una suscripción deshabilitada, ponte [en contacto con el soporte técnico](../admin/get-help-support.md).
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>Paso 4: Deshabilitar la autenticación multifactor
 
-1. Inicie sesión en el Centro de administración con una cuenta de administrador global. Para comprobar qué roles tiene, vea [Comprobar roles de administrador en la organización](../admin/add-users/assign-admin-roles.md#check-admin-roles-in-your-organization).
-2. Vaya a la **página Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">usuarios activos.</a>
+1. Inicie sesión en el Centro de administración con una cuenta de administrador global. Para comprobar qué roles tiene, consulte [Comprobar roles de administrador en la organización](../admin/add-users/assign-admin-roles.md#check-admin-roles-in-your-organization).
+2. Vaya a la **página** <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuariosactivos</a> > .
 3. Elija **Autenticación multifactor**.
 4. En la página autenticación multifactor, deshabilite todas las cuentas excepto la cuenta de administrador global que está usando actualmente.
 
-También puede usar [PowerShell para deshabilitar la autenticación multifactor para varios usuarios.](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell)
+También puede usar [PowerShell para deshabilitar la autenticación multifactor para varios usuarios](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell).
 
 
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>Paso 5: Eliminar el directorio en Azure Active Directory
@@ -85,7 +85,7 @@ También puede usar [PowerShell para deshabilitar la autenticación multifactor 
 1. Inicie sesión en el <a href="https://aad.portal.azure.com/" target="_blank">centro Azure AD administración con</a> una cuenta de administrador global.
 2. Seleccione **Azure Active Directory**.
 3. Cambie a la organización que desea eliminar.
-4. Seleccione **Eliminar inquilino**.
+4. Seleccione **Eliminar espacio empresarial**.
 5. Si su organización falla una o más comprobaciones, verá un vínculo a más información sobre cómo pasar las comprobaciones. Después de pasar todas las comprobaciones, **seleccione Eliminar** para completar el proceso.
 
 Después de completar este paso final, la cuenta con Microsoft se cierra y elimina.

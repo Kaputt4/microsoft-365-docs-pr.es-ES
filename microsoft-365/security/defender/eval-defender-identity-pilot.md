@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -21,18 +21,18 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c30e6d318801dbfb63f4bfb7b5bbaf64dad24ac0
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 3801fdb4a7aeda5e75c4e36f622f7e76604d96a6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172120"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318737"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Piloto de Microsoft Defender para identidad
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Este artículo es [el paso 3 de 3](eval-defender-identity-overview.md) en el proceso de configuración del entorno de evaluación para Microsoft Defender for Identity. Para obtener más información acerca de este proceso, vea el [artículo de introducción](eval-defender-identity-overview.md).
 
@@ -72,4 +72,4 @@ Pruebe los tutoriales de Defender for Identity:
 
 Vuelva a la introducción a [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
-Vuelva a la introducción a [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+Volver a la introducción a [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)

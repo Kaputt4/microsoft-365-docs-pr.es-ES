@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,24 +16,24 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 2200c32d910a5afd20a8ff01c6e24625d72ae21c
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 7df23c9f823f5c3c0435743f7a05cf4421704b32
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464595"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329801"
 ---
-# <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business-preview"></a>Administrar las reglas personalizadas para directivas de firewall en Microsoft Defender para empresas (versión preliminar)
+# <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>Administrar las reglas personalizadas para directivas de firewall en Microsoft Defender para empresas
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y agregaremos funcionalidades con regularidad.
+> Microsoft Defender para empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
 
-Microsoft Defender para empresas (versión preliminar) incluye directivas de firewall que ayudan a proteger los dispositivos del tráfico de red no deseado. Puede usar reglas personalizadas para definir excepciones para las directivas de firewall. Es decir, puede usar reglas personalizadas para bloquear o permitir conexiones específicas.
+Microsoft Defender para empresas incluye directivas de firewall que ayudan a proteger los dispositivos del tráfico de red no deseado. Puede usar reglas personalizadas para definir excepciones para las directivas de firewall. Es decir, puede usar reglas personalizadas para bloquear o permitir conexiones específicas.
 
-Para obtener más información sobre las directivas y la configuración de firewall, consulte [Firewall in Microsoft Defender for Business (versión preliminar).](mdb-firewall.md).
+Para obtener más información sobre las directivas y la configuración de firewall, consulte [Firewall in Microsoft Defender for Business](mdb-firewall.md).
 
 **En este artículo se describe cómo**:
 
@@ -41,9 +41,14 @@ Para obtener más información sobre las directivas y la configuración de firew
 - [Editar una regla personalizada para una directiva de firewall](#edit-a-custom-rule-for-a-firewall-policy)
 - [Eliminar una regla personalizada](#delete-a-custom-rule)
 
+>
+> **¿Tiene un minuto?**
+> Por favor, haga <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+>
+
 ## <a name="create-a-custom-rule-for-a-firewall-policy"></a>Crear una regla personalizada para una directiva de firewall
 
-1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
+1. Vaya al portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
 2. Vaya a **Configuración de EndpointsDevice** >  y revise la lista de directivas.
 
@@ -66,7 +71,7 @@ Para obtener más información sobre las directivas y la configuración de firew
 
 ## <a name="edit-a-custom-rule-for-a-firewall-policy"></a>Editar una regla personalizada para una directiva de firewall
 
-1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
+1. Vaya al portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
 2. Vaya a **Configuración de EndpointsDevice** >  y revise la lista de directivas.
 
@@ -91,7 +96,7 @@ Para obtener más información sobre las directivas y la configuración de firew
 
 ## <a name="delete-a-custom-rule"></a>Eliminar una regla personalizada
 
-1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
+1. Vaya al portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
 2. Vaya a **Configuración de EndpointsDevice** >  y revise la lista de directivas.
 
@@ -103,10 +108,10 @@ Para obtener más información sobre las directivas y la configuración de firew
 
 6. En la pantalla de confirmación, elija **Eliminar**. 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-- [Ver y administrar incidentes en Microsoft Defender para empresas (versión preliminar)](mdb-view-manage-incidents.md)
+- [Ver y administrar incidentes en Microsoft Defender para empresas](mdb-view-manage-incidents.md)
 
-- [Responder y mitigar amenazas en Microsoft Defender para empresas (versión preliminar)](mdb-respond-mitigate-threats.md)
+- [Responder y mitigar amenazas en Microsoft Defender para empresas](mdb-respond-mitigate-threats.md)
 
 - [Revisar acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)

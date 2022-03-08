@@ -1,13 +1,13 @@
 ---
-title: Asignar roles y permisos en Microsoft Defender para empresas (versión preliminar)
-description: Obtenga información sobre cómo asignar roles y permisos en Microsoft Defender para empresas (versión preliminar)
+title: Asignar roles y permisos en Microsoft Defender para empresas
+description: Obtenga información sobre cómo asignar roles y permisos en Microsoft Defender para empresas
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,25 +16,25 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 134b5ec8bcd390cc7f7908a09be5c2d1bd85169c
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 4dce33caf6976dc891daf365aeb0235d81753fdb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464795"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325801"
 ---
-# <a name="assign-roles-and-permissions-in-microsoft-defender-for-business-preview"></a>Asignar roles y permisos en Microsoft Defender para empresas (versión preliminar)
+# <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>Asignar roles y permisos en Microsoft Defender para empresas
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y agregaremos funcionalidades con regularidad.
+> Microsoft Defender para empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
-Para realizar tareas en el portal de Microsoft 365 Defender, como configurar Microsoft Defender para empresas (versión preliminar), ver informes o realizar acciones de respuesta en las amenazas detectadas, se deben asignar los permisos adecuados al equipo de seguridad. Los permisos se conceden a través de roles asignados en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) o en [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
+Para realizar tareas en el portal de Microsoft 365 Defender, como configurar Microsoft Defender para empresas, ver informes o realizar acciones de respuesta en las amenazas detectadas, se deben asignar los permisos adecuados al equipo de seguridad. Los permisos se conceden a través de roles asignados en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) o en [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
 
 ## <a name="what-to-do"></a>Qué hacer
 
-1. [Obtenga información sobre los roles en Defender para empresas (versión preliminar).](#roles-in-defender-for-business)
+1. [Obtenga información sobre los roles en Defender para empresas](#roles-in-defender-for-business).
 
 2. [Ver o editar asignaciones de roles para el equipo de seguridad](#view-or-edit-role-assignments).
 
@@ -48,20 +48,20 @@ Para realizar tareas en el portal de Microsoft 365 Defender, como configurar Mic
 
 ## <a name="roles-in-defender-for-business"></a>Roles en Defender para empresas
 
-En la tabla siguiente se describen los tres roles que se pueden asignar en Defender para empresas (versión preliminar). [Obtenga más información acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md). <br/><br/>
+En la tabla siguiente se describen los tres roles que se pueden asignar en Defender para empresas. [Obtenga más información acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md). <br/><br/>
 
 | Nivel de permisos | Descripción |
 |:---|:---|
-| **Administradores globales** (también denominados administradores globales) <br/><br/> *Como práctica recomendada, limite el número de administradores globales.* | Los administradores globales pueden realizar todo tipo de tareas. La persona que se ha registrado en la organización para Microsoft 365 o para Microsoft Defender para empresas (versión preliminar) es un administrador global de forma predeterminada. <br/><br/> Los administradores globales pueden acceder o cambiar la configuración en todos Microsoft 365 portales, como: <br/>- El Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) |
+| **Administradores globales** (también denominados administradores globales) <br/><br/> *Como práctica recomendada, limite el número de administradores globales.* | Los administradores globales pueden realizar todo tipo de tareas. La persona que se ha registrado en la organización para Microsoft 365 o para Microsoft Defender para empresas es un administrador global de forma predeterminada. <br/><br/> Los administradores globales pueden acceder o cambiar la configuración en todos Microsoft 365 portales, como: <br/>- El Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) |
 | **Administradores de seguridad** (también denominados administradores de seguridad) | Los administradores de seguridad pueden realizar las siguientes tareas: <br/>- Ver y administrar directivas de seguridad <br/>- Ver y administrar alertas y amenazas de seguridad (estas actividades incluyen realizar acciones de respuesta en puntos de conexión) <br/>- Ver información e informes de seguridad |
 | **Lector de seguridad** | Los lectores de seguridad pueden realizar las siguientes tareas: <br/>- Ver directivas de seguridad <br/>- Ver alertas y amenazas de seguridad <br/>- Ver información e informes de seguridad  |
 
 
 ## <a name="view-or-edit-role-assignments"></a>Ver o editar asignaciones de roles
 
-1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
+1. Vaya al portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
-2. En el panel de navegación, elija **Permisos & roles** y, a continuación, en **Azure AD**, seleccione **Roles**.
+2. En el panel de navegación, elija **Permisos & roles y**, a continuación, en **Azure AD**, seleccione **Roles**.
 
 3. Seleccione uno de los siguientes roles para abrir su panel lateral:
 
@@ -72,17 +72,17 @@ En la tabla siguiente se describen los tres roles que se pueden asignar en Defen
    > [!IMPORTANT]
    > Microsoft recomienda conceder a los usuarios acceso solo a lo que necesitan para realizar sus tareas. A este concepto se *le llama privilegios mínimos* para los permisos. Para obtener más información, vea [Procedimientos recomendados para el acceso con privilegios mínimos para las aplicaciones](/azure/active-directory/develop/secure-least-privileged-access). 
 
-4. En el panel lateral, seleccione el vínculo **Administrar miembros en Azure AD** usuario. Esta acción le lleva a Azure Active Directory (Azure AD) donde puede ver y administrar las asignaciones de roles.
+4. En el panel lateral, seleccione el **vínculo Administrar miembros en Azure AD**. Esta acción le lleva a Azure Active Directory (Azure AD) donde puede ver y administrar las asignaciones de roles.
 
 5. Seleccione un usuario para abrir su perfil y, a continuación, elija **Roles asignados**.
 
    - Para agregar un rol, elija **+ Agregar asignaciones**.
    - Para quitar un rol, elija **X Quitar asignaciones**. 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Continúe con:
 
 - [Paso 3: Configurar notificaciones por correo electrónico](mdb-email-notifications.md)
 
-- [Paso 4: Incorporar dispositivos a Microsoft Defender para empresas (versión preliminar)](mdb-onboard-devices.md)
+- [Paso 4: Incorporar dispositivos a Microsoft Defender para empresas](mdb-onboard-devices.md)

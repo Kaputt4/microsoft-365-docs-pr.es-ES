@@ -16,12 +16,12 @@ ms.collection:
 description: Seguridad en Office 365, desde EOP a Defender para Office 365 Planes 1 y 2, Configuraciones de seguridad estándar vs. estrictas y mucho más. Comprenda qué tiene y cómo proteger sus propiedades.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2866fd9c0da06d9c4f8288f63666842460e85e27
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: 20bb1dcf9c34f0f7507d8fec7c9025de03461533
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818509"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317029"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Introducción a la seguridad Office 365 Microsoft Defender para Office 365 seguridad
 
@@ -29,7 +29,7 @@ ms.locfileid: "62818509"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
-En este artículo se le presentará el nuevo Microsoft Defender para Office 365 de seguridad en la nube. Ya sea que forme parte de un Centro de operaciones de seguridad, es un Administrador de seguridad nuevo en el espacio o quiera hacer un repaso, puede empezar por aquí.
+En este artículo se le presenta el nuevo Microsoft Defender para Office 365 de seguridad en la nube. Ya sea que forme parte de un Centro de operaciones de seguridad, es un Administrador de seguridad nuevo en el espacio o quiera hacer un repaso, puede empezar por aquí.
 
 > [!CAUTION]
 > Si usa **Outlook.com**, **Microsoft 365 Familia** o **Microsoft 365 Personal** y necesita información sobre *Vínculos seguros* o *Datos adjuntos seguros*, ***haga clic en este vínculo***: [Seguridad avanzada de Outlook.com para los suscriptores Microsoft 365](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -125,7 +125,7 @@ Esta referencia rápida le ayudará a comprender qué funcionalidades se incluye
 
 |Defender para Office 365 Plan 1|Defender para Office 365 Plan 2|
 |---|---|
-|Funcionalidades de configuración, protección y detección: <ul><li>[Archivos adjuntos seguros](safe-attachments.md)</li><li>[Vínculos seguros](safe-links.md)</li><li>[Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Protección contra phishing en Microsoft Defender para Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Detecciones en tiempo real](threat-explorer.md)</li></ul>|Capacidades del Plan 1 de Defender para Office 365 <p> --- además --- <p> Funcionalidades de automatización, investigación, corrección y educación: <ul><li>[Rastreadores de amenazas](threat-trackers.md)</li><li>[Explorador de amenazas](threat-explorer.md)</li><li>[Investigación y respuesta automatizadas](office-365-air.md)</li><li>[Aprendizaje de simulación de ataque](attack-simulation-training.md)</li><li>[Microsoft 365 Defender búsqueda avanzada](advanced-hunting-overview.md)</li><li>[Microsoft 365 Defender incidentes](investigate-incidents.md)</li><li>[Microsoft 365 Defender alertas](investigate-alerts.md)</li></ul>|
+|Funcionalidades de configuración, protección y detección: <ul><li>[Archivos adjuntos seguros](safe-attachments.md)</li><li>[Vínculos seguros](safe-links.md)</li><li>[Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Protección contra phishing en Microsoft Defender para Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Detecciones en tiempo real](threat-explorer.md)</li></ul>|Capacidades del Plan 1 de Defender para Office 365 <p> --- además --- <p> Funcionalidades de automatización, investigación, corrección y educación: <ul><li>[Rastreadores de amenazas](threat-trackers.md)</li><li>[Explorador de amenazas](threat-explorer.md)</li><li>[Investigación y respuesta automatizadas](office-365-air.md)</li><li>[Aprendizaje de simulación de ataque](attack-simulation-training.md)</li><li>[Búsqueda proactiva de amenazas con búsqueda avanzada en Microsoft 365 Defender](../defender/advanced-hunting-overview.md)</li><li>[Investigar incidentes en Microsoft 365 Defender](../defender/investigate-incidents.md)</li><li>[Investigar alertas en Microsoft 365 Defender](../defender/investigate-alerts.md)</li></ul>|
 
 - El Plan 2 de Microsoft Defender para Office 365 está incluido en Office 365 E5, Office 365 A5 y Microsoft 365 E5.
 
@@ -137,7 +137,7 @@ Esta referencia rápida le ayudará a comprender qué funcionalidades se incluye
 
 - Si su suscripción actual no incluye Microsoft Defender para Office 365 y quiere tenerlo, [contacte al departamento de ventas para iniciar un periodo de prueba](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html) y descubra cómo funciona Microsoft Defender para Office 365 en su organización.
 
-- Los clientes de Microsoft Defender para Office 365 P2 tienen acceso **Microsoft 365 Defender** integración para detectar, revisar y responder de forma eficaz a incidentes y alertas.
+- Los clientes de Microsoft Defender para Office 365 P2 tienen acceso a **Integración de Microsoft Defender para Office 365** para detectar, revisar y responder eficazmente a incidentes y alertas.
 
 > [!TIP]
 > ***Sugerencia de Insider** _. Puede usar la tabla de contenido de docs.microsoft.com para obtener información sobre EOP y sobre Microsoft Defender para Office 365. Vuelva a la página [Información general de seguridad de Office 365](index.yml)y verá la tabla de contenido en la barra lateral. Comienza con la Implementación (lo que incluye la migración) y después continúa con la prevención, la detección, la investigación y la respuesta. <p> Esta estructura está dividida de modo que los temas de _ *Administración de seguridad** están seguidos por los temas de **Operaciones de seguridad**. Si es un miembro nuevo en cualquier rol de trabajo, use el vínculo de esta sugerencia y sus conocimientos de la tabla de contenido para ayudarle a conocer el espacio. No olvide usar los *vínculos de comentarios* y *calificar los artículos* sobre la marcha. Los comentarios nos ayudan a mejorar lo que le ofrecemos.

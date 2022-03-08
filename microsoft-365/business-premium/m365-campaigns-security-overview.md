@@ -23,13 +23,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Aprenda a proteger su campaña o negocio aumentando la seguridad con Microsoft 365.
-ms.openlocfilehash: 14582edff3153649a36bf12b3fd25212c6c1543d
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Obtenga información sobre cómo proteger su campaña o negocio aumentando la seguridad con Microsoft 365.
+ms.openlocfilehash: 17144ea8c361c3fb3665addd9567cfcb18ca0172
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62768010"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329035"
 ---
 # <a name="bump-up-security-protection-for-your-campaign-or-business"></a>Mejorar la protección de seguridad para su campaña o negocio
 
@@ -43,8 +43,8 @@ Vea este vídeo para ver cómo proteger su campaña o negocio:
 
 A continuación, siga los pasos para:
 
-- [Protección contra malware y otras amenazas](m365-campaigns-increase-protection.md)
-- [Proteger el acceso a los datos de la](m365-campaigns-conditional-access.md) campaña protegiendo sus cuentas y aplicaciones
-- [Proteger cuentas de administrador](m365-campaigns-protect-admin-accounts.md)
-- [Configurar dispositivos móviles](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
+- [Protección contra malware y otras amenazas](m365bp-increase-protection.md)
+- [Proteger el acceso a los datos de la](m365bp-conditional-access.md) campaña protegiendo sus cuentas y aplicaciones
+- [Proteger cuentas de administrador](m365bp-protect-admin-accounts.md)
+- [Configurar dispositivos móviles](../business/set-up-mobile-devices.md)
 - [Proporcionar formación a los usuarios](m365-campaigns-users.md)

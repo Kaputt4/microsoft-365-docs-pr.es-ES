@@ -1,27 +1,32 @@
 ---
 title: Administrar relaciones de partners
 f1.keywords:
-  - NOCSH
-ms.author: cmcatee
+- NOCSH
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: 'tugu, jmueller'
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
-  - M365-subscription-management
-  - Adm_O365
+- M365-subscription-management
+- Adm_O365
 ms.custom:
-  - AdminSurgePortfolio
-  - commerce_subscriptions
-  - admindeeplinkMAC
+- commerce_subscriptions
+- AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid: MET150
 description: Obtenga información sobre cómo trabajar con proveedores de soluciones certificados por Microsoft (partners) para comprar y administrar productos y servicios para su organización o escuela.
 ms.date: 02/04/2022
+ms.openlocfilehash: c07267989e8df7203cced6c3a21ffd9aa667347f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328979"
 ---
-
 # <a name="manage-partner-relationships"></a>Administrar relaciones de partners
 
 Puede trabajar con proveedores de soluciones certificados por Microsoft (partners) para comprar y administrar productos y servicios para su organización o escuela. Hay algunos pasos necesarios para configurar las cosas.
@@ -32,7 +37,7 @@ Puede trabajar con proveedores de soluciones certificados por Microsoft (partner
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o de facturación para realizar estos pasos. Para obtener más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o de facturación para realizar estos pasos. Para más información, consulte[Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>¿Qué puede hacer un partner para mi organización o escuela?
 
@@ -44,7 +49,7 @@ Hay varias formas de que un partner pueda trabajar con usted. En función de las
 | Revendedor | Partners que venden productos de Microsoft a su organización o escuela. |
 | Administrador delegado | Partners que administran productos y servicios para su organización o escuela. En Azure Active Directory (AD), el partner es un administrador global para el inquilino. Este rol les permite administrar servicios como la creación de cuentas de usuario, la asignación y administración de licencias y el restablecimiento de contraseñas. |
 | Revendedor & administrador delegado | Partners que venden y administran productos y servicios de Microsoft a su organización o escuela. |
-| Partner | Usted le da a su partner una cuenta de usuario en su inquilino y trabajan con otras servicios Microsoft en su nombre. |
+| Partner | Le das a tu partner una cuenta de usuario en el espacio empresarial y funcionan con otras servicios Microsoft en tu nombre. |
 | Tutor | Los partners pueden restablecer las contraseñas y controlar los incidentes de soporte técnico. |
 | Partner del & de servicios de Microsoft Products (MPSA) | Si ha trabajado con varios partners a través del programa MPSA, puede permitirles ver las compras realizadas entre sí. |
 | Socio de línea de negocio (LOB) | Los partners pueden desarrollar, enviar y administrar aplicaciones de LOB específicas para su organización o escuela. |
@@ -65,7 +70,7 @@ Después de encontrar un socio y decidir trabajar con ellos, te envían una invi
 1. En el correo electrónico, seleccione el vínculo para ir al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 2. En la **página Aceptar contrato & autorizar al partner** , seleccione el vínculo para el Contrato de cliente de **Microsoft** y lea el documento.
 3. Active la casilla para confirmar que ha leído el contrato.
-4. Seleccione **Aceptar & autorizar**.
+4. Seleccione **Aceptar & Autorizar**.
 5. Se muestra la lista de partners con los que está trabajando. Seleccione cualquier partner para ver detalles.
 
 ## <a name="review-and-accept-a-microsoft-customer-agreement"></a>Revisar y aceptar un contrato de cliente de Microsoft
@@ -80,7 +85,7 @@ Si ya tienes un partner pero aún no has firmado un Contrato de cliente de Micro
 
 ## <a name="remove-partner-admin-roles"></a>Quitar roles de administrador de partners
 
-Según la solicitud realizada por el partner, al aceptar la invitación, acepta darles roles de administrador global y de soporte técnico. Cuando se conceden estos roles de administrador a un partner, se les conceden automáticamente privilegios de administrador delegados en Azure AD. Para obtener más información, consulte [Delegated admin privileges in Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
+Según la solicitud realizada por el partner, al aceptar la invitación, acepta darles roles de administrador global y de soporte técnico. Al conceder estos roles de administrador a un partner, se les conceden automáticamente privilegios de administrador delegados en Azure AD. Para obtener más información, consulte [Delegated admin privileges in Azure AD](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad).
 
 La nueva característica de privilegios administrativos delegados pormenorizados (GDAP) proporciona a los partners un acceso más detallado y con límite de tiempo a las cargas de trabajo de sus clientes. Esto significa que los partners pueden resolver mejor los problemas de seguridad de sus clientes. Los partners también pueden proporcionar más servicios a clientes que no se sientan cómodos con los niveles actuales de acceso de partners y que tienen requisitos normativos para proporcionar solo acceso con privilegios mínimos a los partners. Con GDAP, acepta dar a los partners roles especificados en su solicitud. Estos roles son personalizables, por lo que puede hablar con su partner si determinados permisos no son aprobados por usted.
 
@@ -88,8 +93,10 @@ Si no quieres dar roles de administrador al partner, cancela la invitación en l
 
 Puede quitar roles de administrador de un partner en cualquier momento. La eliminación de los roles de administrador no quita la relación de partner. Todavía pueden trabajar con usted en una capacidad diferente, como un revendedor. Si decides que ya no quieres trabajar con un partner, ponte en contacto con tu partner para finalizar la relación.
 
-1. En el Centro de administración, vaya a la **Configuración** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">de relaciones departner</a>.
+1. En el Centro de administración, vaya a la **página Configuración** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">relaciones departner</a>.
 2. En la **página Relaciones de partner** , seleccione la fila que contiene el nombre del partner que desea quitar.
 3. Seleccione la fila que contiene el nombre del partner.
 4. En la página del asociado, seleccione **Quitar roles**.
 5. En el **cuadro de diálogo Quitar roles** , seleccione **Sí**.
+
+Si no ve la opción **Quitar roles** , póngase en contacto con el [Centro de partners](https://partner.microsoft.com/support).

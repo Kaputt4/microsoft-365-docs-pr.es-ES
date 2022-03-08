@@ -14,16 +14,14 @@ ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: d331cf93097f66ddc5a464710d67b864419ab05c
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: c5a738584f1705365db1c4fad61f190a42d97660
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464664"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330235"
 ---
 # <a name="client-behavioral-blocking"></a>Contención y bloqueo de comportamiento del cliente
 
@@ -45,7 +43,7 @@ La protección antivirus funciona mejor cuando se combina con la protección en 
 
 [Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) detectar comportamientos sospechosos, código malintencionado, ataques sin archivos y en memoria, y mucho más en un dispositivo. Cuando se detectan comportamientos sospechosos, Antivirus de Microsoft Defender supervisa y envía esos comportamientos sospechosos y sus árboles de proceso al servicio de protección en la nube. El aprendizaje automático diferencia entre aplicaciones malintencionadas y comportamientos buenos en milisegundos y clasifica cada artefacto. En tiempo casi real, tan pronto como se encuentra que un artefacto es malintencionado, se bloquea en el dispositivo.
 
-Cada vez que se detecta un comportamiento sospechoso[](alerts-queue.md), se genera una alerta y está visible en el while the attack was detected and stopped, alerts, such as an "initial access alert", were triggered and appeared in the [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender) (formerly Microsoft 365 Defender).
+Cada vez que se detecta un comportamiento sospechoso[](alerts-queue.md), se genera una alerta y está visible en el objeto While the attack was detected and stopped, alerts, such as an "initial access alert", were triggered and appeared in the [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender) (formerly Microsoft 365 Defender).
 
 El bloqueo de comportamiento del cliente es eficaz porque no solo ayuda a evitar que se inicie un ataque, sino que puede ayudar a detener un ataque que se ha comenzado a ejecutar. Además, con el [bloqueo de bucle de comentarios](feedback-loop-blocking.md) (otra capacidad de bloqueo y contención del comportamiento), se evitan ataques en otros dispositivos de la organización.
 

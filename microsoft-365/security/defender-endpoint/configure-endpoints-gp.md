@@ -1,7 +1,7 @@
 ---
 title: Incorporación Windows dispositivos a Microsoft Defender para endpoint a través de la directiva de grupo
 description: Use la directiva de grupo para implementar el paquete de configuración Windows dispositivos para que se incorpore al servicio.
-keywords: 'configurar dispositivos mediante la directiva de grupo, la administración de dispositivos, configurar Microsoft Defender para dispositivos de punto de conexión, incorporar Microsoft Defender para dispositivos de punto de conexión, directiva de grupo'
+keywords: configurar dispositivos mediante la directiva de grupo, la administración de dispositivos, configurar Microsoft Defender para dispositivos de punto de conexión, incorporar Microsoft Defender para dispositivos de punto de conexión, directiva de grupo
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,8 +16,13 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
 ms.technology: mde
+ms.openlocfilehash: 3b20242247e33f8550ce4d153c2f2618c64d7007
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324345"
 ---
-
 # <a name="onboard-windows-devices-using-group-policy"></a>Incorporar dispositivos Windows mediante directiva de grupo 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -38,9 +43,9 @@ ms.technology: mde
 > Para Windows Server 2019 y Windows Server 2022, es posible que deba reemplazar NT AUTHORITY\Well-Known-System-Account por NT AUTHORITY\SYSTEM del archivo XML que crea la preferencia de directiva de grupo.
 
 > [!NOTE]
-> Si usa la nueva solución unificada de Microsoft Defender para endpoints para Windows Server 2012 R2 y 2016, asegúrese de usar los archivos ADMX más recientes del almacén central para obtener acceso a las opciones correctas de directiva de Microsoft Defender para puntos de conexión. Consulta [Cómo crear y administrar la Tienda central](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) para plantillas administrativas de directiva de grupo en Windows y descarga los archivos más recientes para usarlos **con Windows 10**.
+> Si usa la nueva solución unificada de Microsoft Defender para endpoints para Windows Server 2012 R2 y 2016, asegúrese de usar los archivos ADMX más recientes del almacén central para obtener acceso a las opciones de directiva de Microsoft Defender para endpoint correctas. Consulta [Cómo crear y administrar la Tienda central](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) para plantillas administrativas de directiva de grupo en Windows y descarga los archivos más recientes para usarlos **con Windows 10**.
 
-Consulte el [ARCHIVO PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [o Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint.
+Consulte el [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) o [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint.
 
 1. Abra el archivo de paquete de configuración de GP (`WindowsDefenderATPOnboardingPackage.zip`) que descargó del Asistente para incorporación de servicios. También puede obtener el paquete desde el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender:</a>
 
@@ -52,7 +57,7 @@ Consulte el [ARCHIVO PDF](https://download.microsoft.com/download/5/6/0/5609001f
 
     1. Haga **clic en Descargar paquete** y guarde el .zip archivo.
 
-2. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que pueda tener acceso el dispositivo. Debe tener una carpeta denominada *OptionalParamsPolicy* y el archivo *WindowsDefenderATPOnboardingScript.cmd*.
+2. Extrae el contenido del archivo .zip a una ubicación compartida de solo lectura a la que pueda tener acceso el dispositivo. Debe tener una carpeta denominada *OptionalParamsPolicy* y el archivo *WindowsDefenderATPOnboardingScript.cmd*.
 
 3. Para crear un nuevo GPO, abra la Consola de administración de directivas de [grupo](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), haga clic con el botón secundario en **Objetos** de directiva de grupo que desea configurar y haga clic en **Nuevo**. Escriba el nombre del nuevo GPO en el cuadro de diálogo que se muestra y haga clic en **Aceptar**.
 
@@ -60,7 +65,7 @@ Consulte el [ARCHIVO PDF](https://download.microsoft.com/download/5/6/0/5609001f
 
 5. En el **Editor de administración de directivas de** grupo, vaya a **Configuración del** equipo, preferencias **y, a** continuación, **configuración del panel de control**.
 
-6. Haga clic con el botón secundario en **Tareas programadas**, elija **Nuevo** y, a continuación, haga clic en Tarea **inmediata (al menos Windows 7).**.
+6. Haga clic con el botón secundario en **Tareas programadas**, elija **Nuevo** y, a continuación, haga clic en Tarea inmediata **(al menos Windows 7).**.
 
 7. En la **ventana Tarea** que se abre, vaya a la **pestaña General** . En **Opciones de seguridad,** **haga clic en Cambiar usuario o grupo** y escriba SISTEMA y, a continuación, haga clic **en Comprobar nombres y, a** continuación, **en Aceptar**. NT AUTHORITY\SYSTEM aparece como la cuenta de usuario en la que se ejecutará la tarea.
 
@@ -103,7 +108,7 @@ Puede usar la directiva de grupo (GP) para configurar opciones, como las opcione
 
 4. Haga **clic en Directivas** y, a continuación **, en Plantillas administrativas**.
 
-5. Haga **clic Windows componentes y****, a continuación, Windows Defender ATP**.
+5. Haga **clic Windows componentes y**, **a continuación, Windows Defender ATP**.
 
 6. Elige habilitar o deshabilitar el uso compartido de muestras desde tus dispositivos.
 
@@ -114,13 +119,13 @@ Puede usar la directiva de grupo (GP) para configurar opciones, como las opcione
 
 ### <a name="update-endpoint-protection-configuration"></a>Actualizar la configuración de protección de puntos de conexión
 
-Después de configurar el script de incorporación, siga editando la misma directiva de grupo para agregar configuraciones de protección de extremos. Realice ediciones de directivas de grupo desde un sistema que ejecute Windows 10 o Server 2019, Windows 11 o Windows Server 2022 para asegurarse de que tiene todas las capacidades Antivirus de Microsoft Defender necesarias. Es posible que deba cerrar y volver a abrir el objeto de directiva de grupo para registrar las opciones de configuración de Defender ATP.
+Después de configurar el script de incorporación, siga editando la misma directiva de grupo para agregar configuraciones de protección de extremos. Realice ediciones de directivas de grupo desde un sistema que ejecute Windows 10 o Server 2019, Windows 11 o Windows Server 2022 para asegurarse de que tiene todas las funcionalidades Antivirus de Microsoft Defender necesarias. Es posible que deba cerrar y volver a abrir el objeto de directiva de grupo para registrar las opciones de configuración de Defender ATP.
 
 Todas las directivas se encuentran en `Computer Configuration\Policies\Administrative Templates`.
 
 **Ubicación de la directiva:** \Windows Components\Windows Defender ATP
 
-Policy|Configuración
+Directiva|Setting
 ---|---
 Enable\Disable Sample (colección)|Habilitado: "Habilitar la colección de muestras en máquinas" activada
 
@@ -128,7 +133,7 @@ Enable\Disable Sample (colección)|Habilitado: "Habilitar la colección de muest
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender
 
-Policy|Configuración
+Directiva|Setting
 ---|---
 Configurar la detección para aplicaciones potencialmente no deseadas|Enabled, Block
 
@@ -136,18 +141,18 @@ Configurar la detección para aplicaciones potencialmente no deseadas|Enabled, B
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\MAPS
 
-Policy|Configuración
+Directiva|Setting
 ---|---
 Unirse a Microsoft MAPS|Mapas avanzados habilitados
 Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales | Habilitado, Enviar muestras seguras
 
 <br>
 
-**Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\Real-time Protection
+**Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\Protección en tiempo real
 
-Policy|Configuración
+Directiva|Setting
 ---|---
-Desactivar la protección en tiempo real|Deshabilitado
+Desactivar la protección en tiempo real|Deshabilitada
 Activar la supervisión del comportamiento|Habilitado
 Examinar todos los archivos y datos adjuntos descargados|Habilitado
 Supervisar la actividad de archivos y programas en el equipo|Habilitado
@@ -158,7 +163,7 @@ Supervisar la actividad de archivos y programas en el equipo|Habilitado
 
 Estas opciones configuran exámenes periódicos del extremo. Se recomienda realizar un examen rápido semanal, lo que permite el rendimiento.
 
-Policy|Configuración
+Directiva|Setting
 ---|---
 Compruebe la inteligencia de seguridad de virus y spyware más reciente antes de ejecutar un examen programado |Habilitado
 
@@ -180,7 +185,7 @@ Obtén la lista actual de GUID de reglas de reducción de superficie de ataque d
 
    ![Imagen de configuración de reducción de superficie de ataque.](images/asr-guid.png)
 
-Policy|Ubicación|Configuración
+Directiva|Ubicación|Setting
 ---|---|---
 Configurar acceso controlado a carpetas| \Windows Components\Antivirus de Microsoft Defender\Protección contra vulnerabilidades de seguridad de Microsoft Defender\Controlled Folder Access| Habilitado, modo auditoría
 
@@ -195,7 +200,7 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 > [!NOTE]
 > Las directivas de incorporación y de incorporación no deben implementarse en el mismo dispositivo al mismo tiempo, de lo contrario esto provocará colisiones impredecibles.
 
-1. Obtenga el paquete de offboarding del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender web</a>:
+1. Obtenga el paquete de offboarding del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender:</a>
 
     1. En el panel de navegación, **seleccione Configuración** >  **EndpointsDevice** >  **managementOffboarding** > .
 
@@ -205,7 +210,7 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 
     1. Haga **clic en Descargar paquete** y guarde el .zip archivo.
 
-2. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que pueda tener acceso el dispositivo. Debe tener un archivo denominado *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2. Extrae el contenido del archivo .zip a una ubicación compartida de solo lectura a la que pueda tener acceso el dispositivo. Debe tener un archivo denominado *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3. Abra la [Consola de administración de directivas de grupo](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), haga clic con el botón secundario en el objeto de directiva de grupo (GPO) que desea configurar y haga clic en **Editar**.
 
@@ -219,7 +224,7 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 
 8. En el campo Nombre, escriba un nombre adecuado para la tarea programada (por ejemplo, Defender for Endpoint Deployment).
 
-9. Vaya a la **pestaña Acciones** y **seleccione Nuevo...**. Asegúrese de **que Iniciar un programa** está seleccionado en el **campo** Acción. Escriba la ruta de acceso UNC, con el nombre de dominio completo (FQDN) del servidor de archivos, del archivo *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* .
+9. Vaya a la **pestaña Acciones** y **seleccione Nuevo...**. Asegúrese de **que Iniciar un programa** está seleccionado en el **campo** Acción. Escriba la ruta de acceso UNC, con el nombre de dominio completo (FQDN) del servidor de archivos, del archivo *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* compartido.
 
 10. Seleccione **Aceptar y** cierre las ventanas GPMC abiertas.
 
@@ -245,7 +250,7 @@ Crea una nueva directiva de grupo o agrupa esta configuración con las otras dir
 
 1. Después de elegir el GP o crear uno nuevo, edite el GP.
 
-2. Vaya a **Configuración del** >  **equipoPoliciesAdministrative** >  **Templates** >  **Windows Components** >  **Antivirus de Microsoft Defender** >  **Real-time Protection**.
+2. Vaya a **Configuración del** >  **equipoPoliciesAdministrative** >  **Templates** >  **Windows Components** >  **Antivirus de Microsoft Defender** >  **Protección en tiempo real**.
 
     :::image type="content" source="images/realtime-protect.png" alt-text="protección en tiempo real.":::
 
@@ -297,6 +302,12 @@ Vaya a **Directivas de configuración del** \>  \> equipo **Plantillas** \> **ad
 
 :::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="enviar ejemplo de archivo cuando sea necesario realizar un análisis adicional.":::
 
+> [!NOTE]
+> La **opción Enviar todas las** muestras proporcionará el mayor análisis de archivos binarios/scripts/docs, lo que aumenta la posición de seguridad.
+La **opción Enviar muestras seguras** limita el tipo de archivos binarios/scripts/documentos que se analizan y disminuye la posición de seguridad. 
+
+Para obtener más información, consulte [Activar la protección en la nube en Antivirus de Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md) y Protección de la nube y envío de ejemplo [en Antivirus de Microsoft Defender.](cloud-protection-microsoft-antivirus-sample-submission.md)
+
 ### <a name="check-for-signature-update"></a>Buscar la actualización de firmas
 
 Vaya a **Directivas de configuración del** \>  \> equipo **Plantillas** \> **administrativas Windows componentes Antivirus de Microsoft Defender** \> actualizaciones **de** \> **inteligencia de seguridad**.
@@ -308,7 +319,7 @@ Vaya a **Directivas de configuración del** \>  \> equipo **Plantillas** \> **ad
 ### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>Configurar el tiempo de espera de entrega en la nube y el nivel de protección
 
 Vaya a **Directivas de configuración del** \>  \> equipo **Plantillas** \> **administrativas Windows componentes Antivirus de Microsoft Defender** \>  \> **MpEngine**.
-Al configurar la directiva de nivel de protección en la nube en **Default Antivirus de Microsoft Defender blocking policy**, se deshabilitará la directiva. Esto es lo que se necesita para establecer el nivel de protección en el valor predeterminado de Windows.
+Al configurar la directiva de nivel de protección en la nube en **Predeterminada Antivirus de Microsoft Defender de bloqueo,** se deshabilitará la directiva. Esto es lo que se necesita para establecer el nivel de protección en el valor predeterminado de Windows.
 
 :::image type="content" source="images/config-extended-cloud-check.png" alt-text="comprobación de nube extendida de config.":::
 

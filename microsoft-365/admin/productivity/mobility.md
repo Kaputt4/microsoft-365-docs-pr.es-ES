@@ -2,8 +2,8 @@
 title: 'Puntuación de productividad de Microsoft: movilidad'
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles de la movilidad: las personas experimenta la puntuación productividad.'
-ms.openlocfilehash: 6eaf50b73af0d6c15e270ca00a5c89f477ed9a4f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 13d3fb9be30def2d8308037890a501d624d09b49
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196266"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319789"
 ---
 # <a name="mobility--people-experiences"></a>Movilidad: experiencias de personas
 
-La puntuación de productividad proporciona información sobre el recorrido de transformación digital de su organización a través del uso de Microsoft 365 y las experiencias tecnológicas que lo admiten. La puntuación de su organización refleja las mediciones de la experiencia de personas y tecnología y se puede comparar con los puntos de referencia de organizaciones similares al tuyo. La categoría de movilidad forma parte de las medidas de experiencia de las personas. Para obtener más información, consulte la información general [sobre](productivity-score.md) la puntuación de productividad y lea la Declaración [de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+La puntuación de productividad proporciona información sobre el recorrido de transformación digital de su organización a través del uso de Microsoft 365 y las experiencias tecnológicas que lo admiten. La puntuación de su organización refleja las mediciones de la experiencia de personas y tecnología y se puede comparar con los puntos de referencia de organizaciones similares al tuyo. La categoría de movilidad forma parte de las medidas de experiencia de las personas. Para obtener más información, consulte la información general sobre la puntuación [de](productivity-score.md) productividad y lea la Declaración [de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -41,13 +41,13 @@ Para empezar con mobility insights, los usuarios de la organización deben tener
 - PowerPoint
 - OneNote
 
-Para obtener más información, vea [Asignar licencias a los usuarios.](../manage/assign-licenses-to-users.md)
+Para obtener más información, vea [Asignación de licencias a usuarios](../manage/assign-licenses-to-users.md).
 
 Después de que las personas hayan estado activas en los productos anteriores al menos una vez en los últimos 28 días, empezarás a ver los conocimientos.
 
-## <a name="why-your-organization39s-mobility-score-matters"></a>Por qué su organización&#39;la puntuación de movilidad es importante
+## <a name="why-your-organization39s-mobility-score-matters"></a>Por qué la puntuación&#39;la organización es importante
 
-Un pilar fundamental de la productividad de la organización es la capacidad de las personas para trabajar de forma flexible desde cualquier lugar. Con Microsoft 365, las personas pueden mantenerse conectadas con Outlook, Microsoft Teams y Yammer. Las personas también pueden colaborar sin problemas en el contenido mediante Word, Excel, PowerPoint y OneNote desde cualquier ubicación y plataformas.
+Un pilar fundamental de la productividad de la organización es la capacidad de las personas para trabajar de forma flexible desde cualquier lugar. Con Microsoft 365, las personas pueden mantenerse conectadas con Outlook, Microsoft Teams y Yammer. Las personas también pueden colaborar sin problemas en el contenido con Word, Excel, PowerPoint y OneNote desde cualquier ubicación y plataformas.
 
 ## <a name="how-we-calculate-the-score"></a>Cómo calculamos la puntuación
 
@@ -63,8 +63,8 @@ Microsoft 365 permite a los usuarios trabajar de forma flexible en todas las apl
 2. **Cuerpo:** Proporciona más información sobre cómo el uso de estas aplicaciones en varias plataformas puede promover la eficacia y la satisfacción.
 3. **Visualización (estado actual):** Muestra cuántas personas usan más de una plataforma en escritorio, móvil y web para al menos una Microsoft 365 (lista siguiente) de la siguiente manera:
     - **Barra horizontal** donde la parte azul (coloreada) representa el porcentaje expresado en el encabezado.
-    - **La fracción** de la barra resalta el (numerador/denominador) usado para calcular el porcentaje en el encabezado.
-        - Numerador: el número de personas de la organización que usan cualquier aplicación de Microsoft Outlook, Word, Excel, PowerPoint, OneNote y Microsoft Teams, Yammer y Skype en más de una plataforma desde el escritorio, la web y el móvil en los últimos 28 días.
+    - **La** fracción de la barra resalta el (numerador/denominador) usado para calcular el porcentaje en el encabezado.
+        - Numerador: el número de personas de su organización que usan cualquier aplicación de Microsoft Outlook, Word, Excel, PowerPoint, OneNote y Microsoft Teams, Yammer y Skype en más de una plataforma desde escritorio, web y móvil en los últimos 28 días.
         - Denominador: el número de personas con licencia para Aplicaciones Microsoft 365, Exchange, Yammer, Microsoft Teams o Skype durante al menos 1 de los últimos 28 días.
     - El **valor de referencia** del mismo nivel para la métrica clave también se muestra como un porcentaje.
 4. **Ver recursos de movilidad:** Seleccione este vínculo para ver el contenido de la ayuda.
@@ -77,7 +77,7 @@ Este gráfico muestra la línea de tendencia, donde el numerador es el número d
 
 ### <a name="scoring-framework"></a>Marco de puntuación
 
-La puntuación de movilidad de la organización mide en un nivel de organización (agregado) si las personas usan Aplicaciones Microsoft 365: Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer y Skype - en las diferentes plataformas: escritorio, web y móvil.
+La puntuación de movilidad de la organización mide en un nivel de organización (agregado) si las personas usan Aplicaciones Microsoft 365: Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer y Skype  - en las diferentes plataformas: escritorio, web y móvil.
 
 Las puntuaciones no se proporcionan en el nivel de usuario individual.
 
@@ -90,10 +90,10 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 :::image type="content" source="../../media/outlook-across-platforms.png" alt-text="Gráfico que muestra cuántas personas usan Outlook en varias plataformas.":::
 
 1. **Encabezado:** Muestra el porcentaje de personas activas en Outlook que usan Outlook en varias plataformas.
-2. **Cuerpo:** Proporciona información sobre el valor del uso de Outlook dispositivos móviles para mantener la conexión desde cualquier lugar en el correo electrónico.
+2. **Cuerpo:** Proporciona información sobre el valor del uso de Outlook dispositivos móviles para ayudar a mantenerse conectado desde cualquier lugar en el correo electrónico.
 3. **Visualización:** Muestra el porcentaje de personas que están activas en Outlook y usan una o más de una plataforma:
       - **Varias plataformas:**
-        - Numerador: el número de personas que han usado Outlook en al menos dos plataformas desde escritorio, móvil o web en los últimos 28 días.
+        - Numerador: el número de personas que han usado Outlook al menos dos plataformas desde escritorio, móvil o web en los últimos 28 días.
         - Denominador: el número de personas que han usado Outlook al menos una vez en los últimos 28 días.
       - **Solo escritorio:**
         - Numerador: el número de personas que han usado Outlook solo en una plataforma de escritorio en los últimos 28 días.
@@ -107,11 +107,11 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
 ### <a name="use-of-teams-across-platforms"></a>Uso de Teams plataformas
 
-:::image type="content" source="../../media/teams-across-platforms.png" alt-text="Gráfico que muestra cuántas personas usan Teams en más de una o única plataforma.":::
+:::image type="content" source="../../media/teams-across-platforms.png" alt-text="Gráfico que muestra cuántas personas usan Teams en más de una o una sola plataforma.":::
 
-1. **Encabezado:** Muestra qué porcentaje de personas que están activas en Microsoft Teams la usan en varias plataformas.
+1. **Encabezado:** Muestra qué porcentaje de personas que están activas en Microsoft Teams lo usan en varias plataformas.
 2. **Cuerpo:** Proporciona información sobre el valor de usar Teams dispositivos móviles para ayudar a las personas a mantenerse al día en los mensajes mientras trabajan desde cualquier ubicación.
-3. **Visualización:** Muestra el porcentaje de personas activas en Microsoft Teams que la usan en una sola plataforma o en varias: 
+3. **Visualización:** Muestra el porcentaje de personas activas en Microsoft Teams que lo usan en una sola plataforma o en varias: 
     - **Varias plataformas:**
         - Numerador: número de personas que han usado Teams en los últimos 28 días en 2 o más de las siguientes plataformas: escritorio, móvil o web.
         - Denominador: el número de personas que han usado Microsoft Teams al menos una vez en los últimos 28 días.
@@ -131,7 +131,7 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
 1. **Encabezado:** Muestra el porcentaje de personas activas en Aplicaciones Microsoft 365 (Word, Excel, PowerPoint y OneNote) en varias plataformas.
 2. **Cuerpo:** Proporciona información sobre el valor de proporcionar a los usuarios de la organización la flexibilidad para tener acceso a sus archivos desde cualquier lugar.
-3. **Visualización:** La vertical agrupada está pensada para representar el número de personas que usan cada una de las aplicaciones consideradas (Word, Excel, PowerPoint y OneNote) en una o varias plataformas. Para cada una de estas aplicaciones, las barras representan lo siguiente:
+3. **Visualización:** La vertical agrupada está pensada para representar el número de personas que usan cada una de las aplicaciones consideradas (Word, Excel, PowerPoint y OneNote) en plataformas únicas o múltiples. Para cada una de estas aplicaciones, las barras representan lo siguiente:
       - **Varias plataformas:** El número de usuarios activos en una aplicación en al menos dos plataformas en los últimos 28 días.
       - **Solo escritorio:** El número de usuarios activos en la aplicación solo en la plataforma de escritorio en los últimos 28 días.
       - **Solo web:** El número de usuarios activos en la aplicación solo en la plataforma web en los últimos 28 días.

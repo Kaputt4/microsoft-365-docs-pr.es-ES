@@ -1,13 +1,13 @@
 ---
-title: Administrar dispositivos en Microsoft Defender para empresas (versión preliminar)
-description: Obtenga información sobre cómo administrar dispositivos en Microsoft Defender para empresas (versión preliminar)
+title: Administrar dispositivos en Microsoft Defender para empresas
+description: Obtenga información sobre cómo administrar dispositivos en Microsoft Defender para empresas
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 02/14/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,26 +17,29 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 498fa3824ec1e022cbf0abcb0c7789e5e236262e
-ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
+ms.openlocfilehash: e0c564fda55393d9f60bd79081a309bde1e87f02
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62879197"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329353"
 ---
-# <a name="manage-devices-in-microsoft-defender-for-business-preview"></a>Administrar dispositivos en Microsoft Defender para empresas (versión preliminar)
+# <a name="manage-devices-in-microsoft-defender-for-business"></a>Administrar dispositivos en Microsoft Defender para empresas
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y agregaremos funcionalidades con regularidad.
+> Microsoft Defender para empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
-En Microsoft Defender para empresas (versión preliminar), puedes administrar dispositivos de la siguiente manera:
+En Microsoft Defender para empresas, puedes administrar dispositivos de la siguiente manera:
 
 - [Ver una lista de dispositivos incorporados](#view-the-list-of-onboarded-devices) para ver su nivel de riesgo, nivel de exposición y estado de mantenimiento
+
 - [Realizar acciones en un dispositivo que](#take-action-on-a-device-that-has-threat-detections) tenga detecciones de amenazas
-- [Incorporación de un dispositivo a Defender para empresas (versión preliminar)](#onboard-a-device)  
-- [Offboard a device from Defender for Business (preview)](#offboard-a-device)
+
+- [Incorporación de un dispositivo a Defender para empresas](#onboard-a-device)  
+
+- [Offboard a device from Defender for Business](#offboard-a-device)
 
 >
 > **¿Tiene un minuto?**
@@ -47,13 +50,13 @@ En Microsoft Defender para empresas (versión preliminar), puedes administrar di
 
 :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Captura de pantalla del inventario de dispositivos":::
 
-1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
+1. Vaya al portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
 2. En el panel de navegación, elija **Inventario de dispositivos**.
 
 3. Selecciona un dispositivo para abrir su panel desplegable, donde puedes obtener más información sobre su estado y tomar medidas. 
 
-   Si aún no tienes ningún dispositivo en la lista, incorpora dispositivos [a Microsoft Defender para empresas (versión preliminar)](mdb-onboard-devices.md)
+   Si aún no tienes ningún dispositivo en la lista, incorpora dispositivos [a Microsoft Defender para empresas](mdb-onboard-devices.md)
 
 ## <a name="take-action-on-a-device-that-has-threat-detections"></a>Realizar acciones en un dispositivo que tenga detecciones de amenazas
 
@@ -69,17 +72,17 @@ En Microsoft Defender para empresas (versión preliminar), puedes administrar di
 
 ## <a name="onboard-a-device"></a>Incorporación de un dispositivo
 
-Consulta [Incorporar dispositivos a Microsoft Defender para empresas (versión preliminar).](mdb-onboard-devices.md)
+Consulta [Incorporar dispositivos a Microsoft Defender para empresas](mdb-onboard-devices.md).
 
 ## <a name="offboard-a-device"></a>Fuera de un dispositivo
 
 Consulta [Offboarding a device](mdb-onboard-devices.md#offboarding-a-device).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-- [Ver y administrar incidentes en Microsoft Defender para empresas (versión preliminar)](mdb-view-manage-incidents.md)
+- [Ver y administrar incidentes en Microsoft Defender para empresas](mdb-view-manage-incidents.md)
 
-- [Responder y mitigar amenazas en Microsoft Defender para empresas (versión preliminar)](mdb-respond-mitigate-threats.md)
+- [Responder y mitigar amenazas en Microsoft Defender para empresas](mdb-respond-mitigate-threats.md)
 
 - [Revisar acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)
 

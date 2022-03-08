@@ -11,14 +11,15 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Aprenda cómo crear un clasificador en Microsoft SharePoint Syntex
-ms.openlocfilehash: 1fe4200c68d6458d20a71b834bd2a0b08319ecb2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5e9be6065e0328a412e73680a0200ea7929c8011
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203020"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324877"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Crear un clasificador en Microsoft SharePoint Syntex
 
@@ -61,7 +62,7 @@ El primer paso para crear el modelo es nombrarlo:
 
 Cuando se crea un modelo, también se crea un nuevo tipo de contenido para el sitio. Un tipo de contenido representa una categoría de documentos que tienen características comunes y comparten una colección de columnas o propiedades de metadatos para ese contenido en particular. Los tipos de contenido de SharePoint se administran en la [Galería de tipos de contenido](https://support.microsoft.com/office/create-or-customize-a-site-content-type-27eb6551-9867-4201-a819-620c5658a60f). Para este ejemplo, al crear el modelo, va a crear un nuevo *tipo de contenido* Renovación de contrato.
 
-Seleccionar **Configuración avanzada** si quiere asignar este modelo a un tipo de contenido existente en la galería de tipos de contenido de SharePoint para usar su esquema. Los tipos de contenido de empresa se almacenan en el concentrador de tipo de contenido en el centro de administración de SharePoint y se distribuyen en todos los sitios del espacio empresarial. Tenga en cuenta que, aunque puede usar un tipo de contenido existente para aprovechar su esquema para ayudar con la identificación y la clasificación, aún necesita entrenar el modelo para extraer la información de los archivos que identifica.</br>
+Seleccione **Configuración avanzada** si desea asignar este modelo a un tipo de contenido empresarial existente en la galería de tipos SharePoint contenido <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank"></a> para usar su esquema. Los tipos de contenido de empresa se almacenan en el concentrador de tipo de contenido en el centro de administración de SharePoint y se distribuyen en todos los sitios del espacio empresarial. Tenga en cuenta que, aunque puede usar un tipo de contenido existente para aprovechar su esquema para ayudar con la identificación y la clasificación, aún necesita entrenar el modelo para extraer la información de los archivos que identifica.</br>
 
 ![Configuración avanzada](../media/content-understanding/advanced-settings.png)
 
@@ -106,7 +107,7 @@ Después de agregar los archivos de ejemplo, debe etiquetarlos como ejemplos pos
 > [!NOTE]
 > Etiquete como mínimo cinco ejemplos positivos. También debe etiquetar al menos un ejemplo negativo. 
 
-## <a name="create-an-explanation&quot;></a>Crear una explicación
+## <a name="create-an-explanation"></a>Crear una explicación
 
 El siguiente paso consiste en crear una explicación en la página de entrenamiento. Una explicación ayuda al modelo a comprender cómo se reconoce el documento. Por ejemplo, los documentos de renovación de contrato siempre contienen una *cadena de texto:* solicitud para divulgación adicional.
 
@@ -119,7 +120,7 @@ Para crear una explicación:
 2. En la página entrenamiento, en la sección **archivos entrenados** debería ver una lista de los archivos de ejemplo que etiquetó anteriormente. Seleccione uno de los archivos positivos de la lista, y se mostrará en el visor.
 3. En la sección de Explicación, seleccione **Nuevo** y después **En blanco**.
 4. En la **página** Crear una explicación:</br>
-    a. Escriba el **Nombre** (por ejemplo, &quot;bloque de divulgación").</br>
+    a. Escriba el **Nombre** (por ejemplo, "bloque de divulgación").</br>
     b. Seleccione el **Tipo**. Para la muestra, seleccione **Lista de frases**,ya que se añade una cadena de texto.</br>
     c. En el cuadro **Escriba aquí**, escriba la cadena. Agregue "solicitud para divulgación adicional" para el ejemplo. Puede seleccionar **Distinguir mayúsculas de minúsculas** si la cadena tiene que distinguir mayúsculas de minúsculas.</br>
     d. Haga clic en **Guardar**.

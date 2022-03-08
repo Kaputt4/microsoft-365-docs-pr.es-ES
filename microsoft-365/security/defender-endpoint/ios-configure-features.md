@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d4052ef2e73b7b81630c8013e17cad533383b215
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+ms.openlocfilehash: 3179ab18ab27bb41f5c0b1577d73ff48b3470b98
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61578536"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326081"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurar Microsoft Defender para endpoint en características de iOS
 
@@ -39,7 +39,7 @@ ms.locfileid: "61578536"
 
 Microsoft Defender para endpoint en iOS junto con Microsoft Intune y Azure Active Directory permite aplicar el cumplimiento de dispositivos y las directivas de acceso condicional en función de la puntuación de riesgo del dispositivo. Defender for Endpoint es una solución de Mobile Threat Defense (MTD) que puedes implementar para aprovechar esta funcionalidad a través de Intune.
 
-Para obtener más información acerca de cómo configurar el acceso condicional con Defender para endpoint en iOS, vea [Defender for Endpoint e Intune](/mem/intune/protect/advanced-threat-protection).
+Para obtener más información acerca de cómo configurar el acceso condicional con Defender para endpoint en iOS, consulte [Defender for Endpoint and Intune](/mem/intune/protect/advanced-threat-protection).
 
 ### <a name="jailbreak-detection-by-microsoft-defender-for-endpoint"></a>Detección de jailbreak por Microsoft Defender para endpoint
 
@@ -47,11 +47,13 @@ Microsoft Defender para endpoint tiene la capacidad de detectar dispositivos adm
 
 ## <a name="web-protection-and-vpn"></a>Protección web y VPN
 
-De forma predeterminada, Defender para endpoint en iOS incluye y habilita la característica de protección web. La [protección web](web-protection-overview.md) ayuda a proteger los dispositivos frente a las amenazas web y a los usuarios frente a ataques de suplantación de identidad. Defender para endpoint en iOS usa una VPN para proporcionar esta protección. Tenga en cuenta que se trata de una VPN local y, a diferencia de la VPN tradicional, el tráfico de red no se envía fuera del dispositivo.
+De forma predeterminada, Defender para endpoint en iOS incluye y habilita la característica de protección web. La [protección web](web-protection-overview.md) ayuda a proteger los dispositivos frente a las amenazas web y a los usuarios frente a ataques de suplantación de identidad. Tenga en cuenta que los indicadores antiphishing e personalizados (direcciones URL e IP) se admiten como parte de La protección web. El filtrado de contenido web actualmente no se admite en iOS.
+
+Defender para endpoint en iOS usa una VPN para proporcionar esta funcionalidad. Tenga en cuenta que se trata de una VPN local y, a diferencia de la VPN tradicional, el tráfico de red no se envía fuera del dispositivo.
 
 Aunque está habilitado de forma predeterminada, puede haber algunos casos que requieran deshabilitar VPN. Por ejemplo, quieres ejecutar algunas aplicaciones que no funcionan cuando se configura una VPN. En tales casos, puedes optar por deshabilitar VPN desde la aplicación en el dispositivo siguiendo los pasos siguientes:
 
-1. En el dispositivo iOS, abre la **aplicación Configuración,** haz clic o pulsa **General** y, a continuación, **VPN.**
+1. En el dispositivo iOS, abre la aplicación **Configuración**, haz clic o pulsa **General** y, a continuación, **VPN**.
 1. Haga clic o pulse en el botón "i" de Microsoft Defender para endpoint.
 1. Desactiva la **Conectar a petición** para deshabilitar VPN.
 
@@ -59,7 +61,7 @@ Aunque está habilitado de forma predeterminada, puede haber algunos casos que r
     > ![Los config de VPN se conectan a petición.](images/ios-vpn-config.png)
 
 > [!NOTE]
-> La protección web no estará disponible cuando la VPN esté deshabilitada. Para volver a habilitar Protección web, abra la aplicación Microsoft Defender para endpoint en el dispositivo y haga clic o pulse **Iniciar VPN**.
+> La protección web no estará disponible cuando la VPN esté deshabilitada. Para volver a habilitar Protección web, abre la aplicación Microsoft Defender para endpoint en el dispositivo y haz clic o pulsa **en Iniciar VPN**.
 
 ## <a name="co-existence-of-multiple-vpn-profiles"></a>Coexistencia de varios perfiles vpn
 
@@ -71,14 +73,14 @@ Microsoft Defender para endpoint se puede configurar para enviar señales de ame
 
 Los pasos para configurar directivas de protección de aplicaciones con Microsoft Defender para endpoint son los siguientes:
 
-1. Configure la conexión desde el espacio empresarial Microsoft Endpoint Manager a Microsoft Defender para Endpoint. En el Centro de administración  de [Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a Conectores de administración de inquilinos y tokens de Microsoft Defender para Endpoint (en Plataforma cruzada) o Endpoint Security Microsoft Defender para Endpoint \>  \>   \>  (en Configuración) y active los alternancias en Directiva de protección de **aplicaciones Configuración para iOS**.
-1. Seleccione Guardar. Debería ver que **el estado de** conexión ahora está establecido en **Habilitado**.
-1. Crear directiva de protección de aplicaciones: una vez completada la configuración del conector de Microsoft Defender para puntos de conexión, vaya a **Directivas** de protección de aplicaciones \>  (en Directiva) para crear una nueva directiva o actualizar una existente.
+1. Configure la conexión desde el espacio empresarial Microsoft Endpoint Manager a Microsoft Defender para endpoint. En el Centro de administración de [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431),  \> ve a Conectores de administración de **inquilinos y tokens** \> de **Microsoft Defender** para endpoint (en Plataforma cruzada) o **Endpoint Security** \> **Microsoft Defender para** Endpoint (en Configuración) y activa los alternancias en Directiva de protección de **aplicaciones Configuración para iOS**.
+1. Seleccione Guardar. Debería ver que **el estado de conexión** ahora está establecido en **Habilitado**.
+1. Crear directiva de protección de aplicaciones: una vez completada la configuración del conector de Microsoft Defender para puntos de conexión, vaya a **Directivas** \> de protección de **aplicaciones (en** Directiva) para crear una nueva directiva o actualizar una existente.
 1. Seleccione la plataforma, **Aplicaciones, Protección de datos, Configuración** de requisitos de Acceso que su organización requiere para la directiva.
-1. En **Condiciones del** dispositivo de inicio \> **condicional,** encontrarás la configuración Nivel máximo de amenaza del dispositivo **permitido.** Esto tendrá que configurarse en Low, Medium, High o Secured. Las acciones disponibles serán Bloquear acceso **o** **Borrar datos**. Es posible que vea un cuadro de diálogo informativo para asegurarse de que el conector está configurado antes de que esta configuración suba a efecto. Si el conector ya está configurado, puede omitir este cuadro de diálogo.
+1. En **Condiciones del** \> **dispositivo de inicio condicional**, encontrarás la configuración Nivel máximo permitido **de amenazas del dispositivo**. Esto tendrá que configurarse en Low, Medium, High o Secured. Las acciones disponibles **serán Bloquear el** acceso o **Borrar datos**. Es posible que vea un cuadro de diálogo informativo para asegurarse de que el conector está configurado antes de que esta configuración suba a efecto. Si el conector ya está configurado, puede omitir este cuadro de diálogo.
 1. Termina con Asignaciones y guarda la directiva.
 
-Para obtener más información sobre mam o directiva de protección de aplicaciones, consulta configuración de la directiva de protección de aplicaciones [de iOS](/mem/intune/apps/app-protection-policy-settings-ios).
+Para obtener más información sobre mam o directiva de protección de aplicaciones, consulta [configuración de la directiva de protección de aplicaciones de iOS](/mem/intune/apps/app-protection-policy-settings-ios).
 
 ### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>Implementación de Microsoft Defender para endpoint para MAM o en dispositivos no inscritos
 
@@ -97,12 +99,12 @@ Los clientes ahora pueden habilitar el control de privacidad para el informe de 
 
 Siga estos pasos para habilitar la privacidad y no recopilar el nombre de dominio como parte del informe de alertas de suplantación de identidad.
 
-1. En [Microsoft Endpoint Manager centro de administración y](https://go.microsoft.com/fwlink/?linkid=2109431) vaya a Directivas de configuración de **aplicaciones**  >  **Agregar**  >    >  **dispositivos administrados.**
+1. En [Microsoft Endpoint Manager de administración y](https://go.microsoft.com/fwlink/?linkid=2109431) vaya a Directivas de configuración **de** >  **AppsAppAddManaged** >  >  devices.
 1. Asigne a la directiva un nombre, **Platform > iOS/iPadOS**, seleccione el tipo de perfil.
 1. Selecciona **Microsoft Defender para Endpoint** como la aplicación de destino.
-1. En Configuración, seleccione Usar diseñador **de** configuraciones y agregue **DefenderExcludeURLInReport** como clave y tipo de valor como **booleano**
-   - Para habilitar la privacidad y no recopilar el nombre de dominio, escriba el valor como `true` y asigne esta directiva a los usuarios. De forma predeterminada, este valor se establece en `false` .
-   - Para los usuarios con el conjunto de claves como , la alerta de phish no contendrá la información de nombre de dominio siempre que Defender for Endpoint detecte y bloquee un sitio `true` malintencionado.
+1. En Configuración, seleccione **Usar diseñador de** configuraciones y agregue **DefenderExcludeURLInReport** como clave y tipo de valor como **booleano**
+   - Para habilitar la privacidad y no recopilar el nombre de dominio, escriba el valor como `true` y asigne esta directiva a los usuarios. De forma predeterminada, este valor se establece en `false`.
+   - Para los usuarios con el conjunto de claves como `true`, la alerta de phish no contendrá la información de nombre de dominio siempre que Defender for Endpoint detecte y bloquee un sitio malintencionado.
 1. Haz **clic en Siguiente** y asigna este perfil a dispositivos o usuarios dirigidos.
 
 Activar o desactivar los controles de privacidad anteriores no afectará a la comprobación de cumplimiento del dispositivo ni al acceso condicional.
@@ -116,24 +118,24 @@ Para proteger los datos corporativos de acceso en dispositivos iOS con jailbreak
 
 Siga los pasos siguientes para crear una directiva de cumplimiento contra dispositivos con jailbreak.
 
-1. En [Microsoft Endpoint Manager de administración,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a **Directivas de** cumplimiento de  ->  **dispositivos** Crear  ->  **directiva**. Seleccione "iOS/iPadOS" como plataforma y haga clic **en Crear**.
+1. En [Microsoft Endpoint Manager de administración](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **DevicesCompliance** ->  **policiesCreate** ->  Policy. Seleccione "iOS/iPadOS" como plataforma y haga clic en **Crear**.
 
     > [!div class="mx-imgBorder"]
     > ![Crear directiva.](images/ios-jb-policy.png)
 
 2. Especifique un nombre de la directiva, por ejemplo, "Compliance Policy for Jailbreak".
-3. En la página Configuración de cumplimiento, haga clic para expandir **la sección Estado del** dispositivo y haga clic en **Bloquear** para el **campo Dispositivos con jailbreak.**
+3. En la página Configuración de cumplimiento, haga clic para expandir **la sección Estado del** dispositivo y haga clic **en Bloquear** para **el campo Dispositivos con jailbreak** .
 
     > [!div class="mx-imgBorder"]
     > ![Directiva Configuración.](images/ios-jb-settings.png)
 
-4. En la **sección Acción por** incumplimiento, seleccione las acciones según sus requisitos y seleccione **Siguiente**.
+4. En la **sección Acción por** incumplimiento, seleccione las acciones según sus requisitos y **seleccione Siguiente**.
 
     > [!div class="mx-imgBorder"]
     > ![Acciones de directiva.](images/ios-jb-actions.png)
 
-5. En la **sección Asignaciones,** seleccione los grupos de usuarios que desea incluir para esta directiva y, a continuación, **seleccione Siguiente**.
-6. En la **sección Review+Create,** compruebe que toda la información especificada es correcta y, a continuación, **seleccione Crear**.
+5. En la **sección Asignaciones** , seleccione los grupos de usuarios que desea incluir para esta directiva y, a continuación, **seleccione Siguiente**.
+6. En la **sección Review+Create** , compruebe que toda la información especificada es correcta y, a continuación, seleccione **Crear**.
 
 ## <a name="configure-custom-indicators"></a>Configurar indicadores personalizados
 

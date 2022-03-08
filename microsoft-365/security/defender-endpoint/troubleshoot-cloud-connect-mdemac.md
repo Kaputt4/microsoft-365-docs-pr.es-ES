@@ -11,25 +11,23 @@ author: lovina-saldanha
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12475d72341eee97915990c61339be7d297349f9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 677737f530e35ed52a2a1f3fe7a8d6f18c26e7b6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168419"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326574"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de conectividad en la nube para Microsoft Defender para endpoint en macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Plataforma** macOS
@@ -72,7 +70,7 @@ Si un proxy o firewall bloquea el tráfico anónimo, asegúrese de que el tráfi
 
 > [!WARNING]
 > No se admiten servidores proxy autenticados. Asegúrese de que solo se usa PAC, WPAD o un proxy estático. Los servidores proxy de inspección e interceptación de SSL tampoco se admiten por motivos de seguridad. Configure una excepción para que la inspección SSL y el servidor proxy pasen directamente los datos de Microsoft Defender para endpoint en macOS a las direcciones URL relevantes sin interceptación. Agregar el certificado de interceptación al almacén global no permitirá la interceptación.
-Para probar que una conexión no está bloqueada: en un explorador como Microsoft Edge para Mac o Safari abrir https://x.cp.wd.microsoft.com/api/report y https://cdn.x.cp.wd.microsoft.com/ping .
+Para probar que una conexión no está bloqueada: en un explorador como Microsoft Edge para Mac o Safari abierto https://x.cp.wd.microsoft.com/api/report y https://cdn.x.cp.wd.microsoft.com/ping.
 
 Opcionalmente, en Terminal, ejecute el siguiente comando:
 

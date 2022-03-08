@@ -7,14 +7,20 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: null
+search.appverid: ''
 ms.collection:
-  - enabler-strategic
-  - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear un modelo de procesamiento de formularios en SharePoint Syntex.
+ms.openlocfilehash: 6048eabe8bb57da40d940923e313bd496ec1ecec
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330501"
 ---
-
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Crear un modelo de procesamiento de formularios en Microsoft SharePoint Syntex
 
 </br>
@@ -69,13 +75,13 @@ El primer paso para crear un modelo de procesamiento de formularios es asignar u
 
         - Si selecciona **Una lista existente**, en el cuadro **Lista seleccionada**, elija la lista que quiere usar.
 
-4. Al crear un modelo de procesamiento de formularios, también crea un nuevo tipo de contenido de SharePoint. Un tipo de contenido de SharePoint representa una categoría de documentos que tienen características comunes y comparten una colección de columnas o propiedades de metadatos para ese contenido en particular. Los tipos de contenido de SharePoint se administran a través del Centro de administración de SharePoint.
+4. Al crear un modelo de procesamiento de formularios, también crea un nuevo tipo de contenido de SharePoint. Un tipo de contenido de SharePoint representa una categoría de documentos que tienen características comunes y comparten una colección de columnas o propiedades de metadatos para ese contenido en particular. SharePoint los tipos de contenido se administran a través <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">del centro SharePoint administración</a>.
 
    Para asignar este modelo a un tipo de contenido existente en la galería de tipos de contenido de SharePoint, seleccione **Configuración avanzada**.
 
     ![Captura de pantalla que muestra la configuración avanzada en el panel Crear un modelo para procesar formularios.](../media/content-understanding/new-form-model-advanced-settings.png) 
 
-   1. En la sección **Tipo de contenido**, elija si quiere crear un nuevo tipo de contenido o usar uno existente. 
+   1. En la <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">galería de tipos de contenido</a>, elija si desea crear un nuevo tipo de contenido o usar uno existente. 
 
    2. Para usar un tipo de contenido existente, seleccione **Seleccionar uno** y elija un tipo de contenido de la lista.
 
@@ -160,7 +166,7 @@ Para ejecutar el flujo:
 
 1. Seleccione un archivo y, a continuación, **seleccione Integrar** >  **Power Automate** >  **Crear un flujo**.
 
-2. En el **panel Crear un flujo**, seleccione **Enviar un correo electrónico después SharePoint Syntex procesos de un archivo**.
+2. En el **panel Crear un flujo**, seleccione **Enviar un correo electrónico después de SharePoint Syntex procesa un archivo**.
 
     ![Captura de pantalla que muestra la opción Crear un panel de flujo y flujo resaltadas.](../media/content-understanding/integrate-create-flow.png) 
 

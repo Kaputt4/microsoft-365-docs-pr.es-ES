@@ -16,17 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Usuarios.
-ms.openlocfilehash: d7b20d37aa9669ac6726efab19268018f5d10973
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: fad5ff4b41b43efb68c7e230401b80e50cea95a4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937465"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329945"
 ---
 # <a name="microsoft-365-lighthouse-users-page-overview"></a>Microsoft 365 Lighthouse de la página Usuarios 
-
-> [!NOTE]
-> Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse permite administrar usuarios en cuentas de inquilino de clientes seleccionando **Usuarios** en el panel de navegación izquierdo para abrir la página Usuarios. Desde esta página, puede buscar usuarios y evaluar y actuar en función del estado de seguridad de sus cuentas de usuario. También puede ver información sobre usuarios arriesgados y el estado de la autenticación multifactor y el restablecimiento de contraseñas de autoservicio.  
   
@@ -38,13 +35,21 @@ Desde la pestaña Buscar usuarios, puede buscar rápidamente en los inquilinos u
 
 ## <a name="risky-users-tab"></a>Pestaña Usuarios arriesgados
 
-La pestaña Usuarios riesgosos muestra las cuentas de usuario de los inquilinos que se han marcado para un comportamiento de riesgo. Seleccione cualquiera de los usuarios para ver más información sobre un riesgo detectado o para mitigar un riesgo mediante el restablecimiento de la contraseña de un usuario o el bloqueo del inicio de sesión.
+La pestaña Usuarios riesgosos muestra las cuentas de usuario de los inquilinos que se han marcado para un comportamiento de riesgo. Seleccione cualquiera de los usuarios para ver más información sobre un riesgo detectado o para mitigar un riesgo mediante el restablecimiento de la contraseña de un usuario o el bloqueo del inicio de sesión. Para obtener más información acerca de los tipos de riesgo y la detección, vea [¿Qué es el riesgo?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
+
+La pestaña Usuarios riesgosos también incluye las siguientes opciones:
+- **Exportar:** Seleccione esta opción para exportar datos de cumplimiento de dispositivos a Excel de valores separados por comas (.csv).
+- **Actualizar:** Selecciona para recuperar los datos de cumplimiento del dispositivo más actuales.
+- **Confirme que los usuarios están en peligro:** Seleccione esta opción para confirmar que el usuario está en peligro.
+- **Descartar el riesgo de usuario:** Seleccione para descartar el riesgo de usuario.  
+- **Restablecer contraseña:** Seleccione para cambiar o restablecer la contraseña de usuario.
+- **Bloquear inicio de sesión:** Seleccione esta opción para impedir que alguien inicie sesión como este usuario.
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-risky-users-tab.png" alt-text="Captura de pantalla de la pestaña Usuarios arriesgados.":::
 
 ## <a name="multifactor-authentication-tab"></a>Ficha Autenticación multifactor
 
-La pestaña Autenticación multifactor proporciona información detallada sobre el estado de la habilitación de autenticación multifactor (MFA) en los inquilinos. Seleccione cualquier inquilino de la lista para ver más detalles sobre ese espacio empresarial, incluidas las directivas de acceso condicional que requieren MFA ya configuradas y qué usuarios aún no se han registrado para MFA.
+La pestaña Autenticación multifactor proporciona información detallada sobre el estado de la habilitación de autenticación multifactor (MFA) en los inquilinos. Seleccione cualquier inquilino de la lista para ver más detalles sobre ese inquilino, incluidas las directivas de acceso condicional que requieren MFA ya configuradas y qué usuarios aún no se han registrado para MFA.
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-mfa-tab.png" alt-text="Captura de pantalla de la pestaña Autenticación multifactor.":::
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo encontrar recursos de Microsoft SharePoint Syntex.
-ms.openlocfilehash: 665a28c07e5405299cb88ffdce3fbafa1210415a
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: db8526cbf85be1b9db5b95ed0739d0ec948c2faa
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322088"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323169"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Introducción a Microsoft SharePoint Syntex
 
@@ -41,7 +41,7 @@ Los recursos de esta página están diseñados para ayudarle a empezar a aprende
 
 ## <a name="get-started"></a>Introducción
 
-Los recursos de esta sección le ayudarán a obtener más información sobre los tres métodos de clasificación y extracción de datos usados por SharePoint Syntex: descripción de documentos, procesamiento de formularios y reconstrucción previa.
+Los recursos de esta sección le ayudarán a obtener más información sobre los tres métodos de clasificación y extracción de datos usados por SharePoint Syntex: comprensión de documentos, procesamiento de formularios y reconstrucción previa.
 
 > [!NOTE]
 > Puede empezar a trabajar con SharePoint Syntex sin comprar licencias [crear un centro de contenido desde el Centro de administración de SharePoint](create-a-content-center.md). Los usuarios sin licencia pueden crear modelos de comprensión de documentos, pero no pueden aplicarlos a una biblioteca de documentos.
@@ -87,8 +87,9 @@ Los recursos de esta sección ayudan a los usuarios a aprender a crear y configu
 |Aplicar una etiqueta de retención al modelo|[Aplicar una etiqueta de retención a un modelo de comprensión mediante documentos](./apply-a-retention-label-to-a-model.md)|
 |Aplique una etiqueta de confidencialidad a su modelo|[Agregar una etiqueta de confidencialidad a un modelo de comprensión mediante documentos](./apply-a-sensitivity-label-to-a-model.md)|
 |Usar modelos precompilados para extraer información de documentos |[Usar un modelo precompilado para extraer información de facturas o recibos](./prebuilt-models.md)|
+|Crear y entrenar modelos localmente en un SharePoint web |[Crear un modelo en un sitio SharePoint local](./create-local-model.md)|
 |Usar modelos formados en otros centros de contenido |[Publicar y descubrir modelos de comprensión de documentos](./model-discovery.md)|
-|Realizar consultas basadas en metadatos en bibliotecas de documentos|[Buscar metadatos en bibliotecas de documentos](./metadata-search.md)|
+|Realizar consultas basadas en metadatos en bibliotecas de documentos|[Búsqueda de metadatos en bibliotecas de documentos](./metadata-search.md)|
 |Usar la taxonomía del almacén de términos de servicios de metadatos administrados al crear un extractor|[Aprovechar la taxonomía del almacén de términos al crear un extractor](./leverage-term-store-taxonomy.md)|
 |Obtenga información sobre cómo ver los datos de los modelos|[Análisis de uso del modelo](./model-usage-analytics.md)|
 |Obtener información sobre cómo usar el modo de accesibilidad al formar un modelo|[Modo de accesibilidad de SharePoint Syntex](./accessibility-mode.md)|

@@ -2,8 +2,8 @@
 title: Mover usuarios a una suscripción diferente
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
 audience: Admin
@@ -14,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - AdminSurgePortfolio
 - manage_licenses
-- commerce_subscriptions
 search.appverid: MET150
 description: Obtén información sobre cómo mover usuarios entre suscripciones.
 ms.date: 07/01/2020
-ms.openlocfilehash: 3ae6aa20c684c2745ef280c51a1203ae87f8da40
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: f1aff383bb4e83b7cefae0f6d15c496ab3117919
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370361"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326277"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Mover usuarios a una suscripción diferente
 
@@ -53,13 +53,13 @@ Debe ser administrador global, de licencia o de usuario para asignar licencias. 
 
 3. En la parte superior, seleccione **Administrar licencias de producto**.
 
-4. En el **panel Administrar licencias de productos,** seleccione **Reemplazar**  y seleccione las licencias que desea asignar a los usuarios.
+4. En el **panel Administrar licencias de productos** , seleccione **Reemplazar**  y seleccione las licencias que desea asignar a los usuarios.
 
-5. En la parte inferior, seleccione **Guardar cambios** \> **cerrar**.
+5. En la parte inferior, seleccione **Guardar cambios cerrar**\>.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-Si no va a reasignar las licencias no [usadas](../../managed-desktop/get-started/assign-licenses.md)a otros usuarios, considere la posibilidad de quitar las licencias de la suscripción para que no pague más licencias de las que necesita. [](../../commerce/licenses/buy-licenses.md)
+Si no va a reasignar las licencias no [usadas](../../managed-desktop/get-started/assign-licenses.md) a otros usuarios, considere la posibilidad [](../../commerce/licenses/buy-licenses.md) de quitar las licencias de la suscripción para que no pague más licencias de las que necesita.
 
 ## <a name="related-content"></a>Contenido relacionado
 

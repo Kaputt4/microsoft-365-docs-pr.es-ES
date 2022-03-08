@@ -15,13 +15,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo obtener acceso y usar estadísticas e informes para borradores de colecciones y colecciones que se han confirmado en un conjunto de revisión en Advanced eDiscovery.
-ms.openlocfilehash: a520bd3f05e7729a1a36101d4be334d984b39739
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+description: Obtenga información sobre cómo obtener acceso y usar estadísticas e informes para borradores de colecciones y colecciones que se han comprometido a un conjunto de revisión en Advanced eDiscovery.
+ms.openlocfilehash: 4b5cf37639d497d615a0772e084507018cb829cf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903605"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325157"
 ---
 # <a name="collection-statistics-and-reports-in-advanced-ediscovery"></a>Estadísticas e informes de colección en Advanced eDiscovery
 
@@ -94,7 +94,7 @@ Esta sección de **la pestaña** Resumen contiene estadísticas y otra informaci
  
    Un elemento primario puede contener varios elementos secundarios. Por ejemplo, un mensaje de correo electrónico es un elemento primario si contiene un archivo adjunto o tiene datos adjuntos en la nube. En este caso, el archivo adjunto o el archivo de destino de los datos adjuntos de la nube se considera un elemento secundario. Al confirmar una colección, los elementos primarios y los elementos secundarios correspondientes (como archivos adjuntos y datos adjuntos en la nube) se agregan al conjunto de revisión como elementos o archivos individuales.
 
-- **Elementos secundarios**. Número de elementos secundarios agregados al conjunto de revisión. Solo los elementos secundarios que son datos adjuntos de archivos y datos adjuntos en la nube se agregan al conjunto de revisión como archivos individuales. Otros tipos de elementos secundarios, como firmas de correo electrónico e imágenes. se extraen de un elemento primario y, a continuación, se procesan mediante reconocimiento óptico de caracteres (OCR) para extraer cualquier texto del elemento secundario. El texto extraído de estos tipos de elementos secundarios se agrega a su elemento primario para que pueda verlo en el conjunto de revisión. Al no agregar elementos secundarios al conjunto de revisión como un archivo independiente, Advanced eDiscovery ayuda a simplificar el proceso de revisión limitando el número de elementos potencialmente inmateriales del conjunto de revisión.
+- **Elementos secundarios**. Número de elementos secundarios agregados al conjunto de revisión. Solo los elementos secundarios que son datos adjuntos de archivos y datos adjuntos en la nube se agregan al conjunto de revisión como archivos individuales. Otros tipos de elementos secundarios, como firmas de correo electrónico e imágenes, se extraen de un elemento primario y, a continuación, se procesan mediante reconocimiento óptico de caracteres (OCR) para extraer cualquier texto del elemento secundario. El texto extraído de estos tipos de elementos secundarios se agrega a su elemento primario para que pueda verlo en el conjunto de revisión. Al no agregar elementos secundarios al conjunto de revisión como un archivo independiente, Advanced eDiscovery ayuda a simplificar el proceso de revisión limitando el número de elementos potencialmente inmateriales del conjunto de revisión.
 
 - **Elementos únicos**. Número de elementos únicos agregados al conjunto de revisión. Los elementos únicos son exclusivos del conjunto de revisión. Todos los elementos son únicos cuando se agrega la primera colección a un nuevo conjunto de revisión porque no había elementos anteriores en el conjunto de revisión.
 

@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector DataParser de ServiceNow de 17a-4 para importar y archivar datos de ServiceNow en Microsoft 365.
-ms.openlocfilehash: f0aa908d8037dddbcf3ca00bb47d32979a042e76
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6fe10ffd8a5f850220b648c048c166415911a7d0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195730"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328909"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-servicenow"></a>Configurar un conector para archivar datos de ServiceNow
 
 Use [ServiceNow DataParser](https://www.17a-4.com/dataparser/) de 17a-4 LLC para importar y archivar datos de ServiceNow a buzones de usuario de su Microsoft 365 organización. DataParser incluye un conector ServiceNow configurado para capturar elementos de un origen de datos de terceros e importar esos elementos a Microsoft 365. El conector DataParser de ServiceNow convierte los datos de ServiceNow en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
 
-Una vez que los datos de ServiceNow se almacenan en buzones de usuario, puede aplicar características de cumplimiento Microsoft 365 como retención por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector ServiceNow para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
+Una vez que los datos de ServiceNow se almacenan en buzones de usuario, puede aplicar Microsoft 365 características de cumplimiento como retención por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector ServiceNow para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
 ## <a name="overview-of-archiving-servicenow-data"></a>Información general sobre el archivado de datos de ServiceNow
 
@@ -37,25 +37,25 @@ En la siguiente introducción se explica el proceso de uso de un conector de dat
 
 3. El conector DataParser de ServiceNow que cree en el Centro de cumplimiento de Microsoft 365 se conecta a DataParser y transfiere los mensajes a una ubicación Azure Storage segura en la nube de Microsoft.
 
-4. Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **ServiceNow DataParser** en los buzones de usuario y los elementos de ServiceNow se importan a esa carpeta. El conector determina a qué buzón se importarán los elementos mediante el valor de la *propiedad Email.* Cada elemento ServiceNow contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante.
+4. Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **ServiceNow DataParser en los buzones** de usuario y los elementos de ServiceNow se importan a esa carpeta. El conector determina a qué buzón se importarán los elementos mediante el valor de la *propiedad Email* . Cada elemento ServiceNow contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante.
 
 ## <a name="before-you-set-up-a-connector"></a>Antes de configurar un conector
 
 - Crear una cuenta dataParser para conectores de Microsoft. Para ello, póngase en [contacto con 17a-4 LLC](https://www.17a-4.com/contact/). Debe iniciar sesión en esta cuenta al crear el conector en el paso 1.
 
-- El usuario que crea el conector DataParser de ServiceNow en el paso 1 (y lo completa en el paso 3) debe estar asignado al rol Exportación de importación de buzones en Exchange Online. Este rol es necesario para agregar conectores en la **página Conectores de datos** de la Centro de cumplimiento de Microsoft 365. De forma predeterminada, este rol no se asigna a un grupo de roles en Exchange Online. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+- El usuario que crea el conector DataParser de ServiceNow en el paso 1 (y lo completa en el paso 3) debe tener asignado el rol de administrador del conector de datos. Este rol es necesario para agregar conectores en la **página Conectores de datos** de la Centro de cumplimiento de Microsoft 365. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, vea la sección "Roles en los centros de seguridad y cumplimiento" en Permisos en el [Centro de seguridad & cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de la organización puede crear un grupo de roles personalizado, asignar el rol de administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, vea la sección "Crear un grupo de roles personalizado" en [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Este conector de datos está disponible en GCC entornos en la Microsoft 365 us government cloud. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de cumplimiento y protección de datos de Microsoft 365. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
+- Este conector de datos 17a-4 está disponible en GCC entornos en la Microsoft 365 us government cloud. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de cumplimiento y protección de datos de Microsoft 365. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
 ## <a name="step-1-set-up-a-servicenow-dataparser-connector"></a>Paso 1: Configurar un conector DataParser de ServiceNow
 
 El primer paso es obtener acceso a la página Conectores de datos de la Centro de cumplimiento de Microsoft 365 y crear un conector de 17a-4 para los datos de ServiceNow.
 
-1. Vaya a <https://compliance.microsoft.com> y, a continuación, haga clic en **Conectores de datos**  >  **ServiceNow DataParser**.
+1. Vaya a <https://compliance.microsoft.com> y, a continuación, **haga clic en Conectores de datosServiceNow** >  **DataParser**.
 
-2. En la página Descripción del producto **DataParser de ServiceNow,** haga clic **en Agregar conector**.
+2. En la **página Descripción del producto DataParser de ServiceNow** , haga clic **en Agregar conector**.
 
-3. En la **página Términos de** servicio, haga clic **en Aceptar**.
+3. En la **página Términos de** servicio, haga clic en **Aceptar**.
 
 4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **Siguiente**.
 
@@ -73,11 +73,11 @@ El conector DataParser de ServiceNow asignará automáticamente a los usuarios a
 
 Después de crear un conector DataParser de ServiceNow, puede ver el estado del conector en el Centro de cumplimiento de Microsoft 365.
 
-1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores de datos** en la navegación izquierda.
+1. Vaya a <https://compliance.microsoft.com> y haga clic **en Conectores de datos** en la navegación izquierda.
 
 2. Haga clic en la pestaña **Conectores** y, a continuación, seleccione el conector DataParser de ServiceNow que creó para mostrar la página desplegable, que contiene las propiedades e información sobre el conector.
 
-3. En **Estado del conector con origen,** haga clic en el vínculo Descargar **registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene datos que se han importado a la nube de Microsoft.
+3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene datos que se han importado a la nube de Microsoft.
 
 ## <a name="known-issues"></a>Problemas conocidos
 

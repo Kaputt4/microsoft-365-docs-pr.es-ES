@@ -8,25 +8,25 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365-initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: b9cc3e0ab911515d010b1a6e7feaac5cff8aed51
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 3418eac69930819fdb0e3fd8d1bae80312f89a9f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903944"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326417"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Administrar incidentes en Microsoft 365 Defender
 
@@ -48,7 +48,7 @@ Estas son las formas en que puede administrar sus incidentes:
 - [Agregar etiquetas de incidentes](#add-incident-tags)
 - [Asignar el incidente a una cuenta de usuario](#assign-an-incident)
 - [Resolverlos](#resolve-an-incident)
-- [Establecer su clasificación y determinación](#set-the-classification-and-determination)
+- [Especificar su clasificación](#specify-the-classification)
 - [Agregar comentarios](#add-comments)
 
 Puede administrar incidentes desde el panel **Administrar incidentes** para un incidente. Por ejemplo:
@@ -95,17 +95,22 @@ Si el incidente se ha corregido, seleccione **Resolver incidente** para mover la
 
 Un incidente que no se resuelve se muestra como **Activo**.
 
-## <a name="set-the-classification-and-determination"></a>Establecer la clasificación y la determinación
+## <a name="specify-the-classification"></a>Especificar la clasificación
 
-La clasificación de incidentes es si se trata de una alerta verdadera o una alerta falsa, que se configura desde el **campo Clasificación** . 
+En el **campo** Clasificación, se especifica si el incidente es:
 
-Si se trataba de una alerta verdadera, también debe especificar qué tipo de amenaza era con el **campo Determinación** . La especificación del tipo de amenaza ayuda a su equipo de seguridad a ver los patrones de amenaza y a actuar para defender a su organización de ellos. 
+- **No se establece** (el valor predeterminado).
+- **Verdadero positivo** con un tipo de amenaza. Use esta clasificación para incidentes que indiquen con precisión una amenaza real. La especificación del tipo de amenaza ayuda a su equipo de seguridad a ver los patrones de amenaza y a actuar para defender a su organización de ellos.
+- **Actividad informativo y esperada** con un tipo de actividad. Usa las opciones de esta categoría para clasificar incidentes para pruebas de seguridad, actividad roja del equipo y comportamiento inusual esperado de usuarios y aplicaciones de confianza.
+- **Falso positivo** para tipos de incidentes que determine que se pueden ignorar porque son técnicamente inexactos o engañosos.
+
+Clasificar incidentes y especificar su estado y tipo ayuda a ajustar los Microsoft 365 Defender para proporcionar una mejor determinación de detección con el tiempo.
 
 ## <a name="add-comments"></a>Agregar comentarios
 
 Puede agregar varios comentarios a un incidente con el **campo Comentario** . Cada comentario se agrega a los eventos históricos del incidente. Puede ver los comentarios y el historial de un incidente desde el vínculo **Comentarios e** historial en la **página Resumen** .
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Para nuevos incidentes, comience la [investigación](investigate-incidents.md).
 

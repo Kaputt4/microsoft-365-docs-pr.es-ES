@@ -1,5 +1,5 @@
 ---
-title: Obtenga información sobre cómo proporcionar comentarios a Microsoft
+title: Información sobre cómo proporcionar comentarios a Microsoft
 f1.keywords:
 - NOCSH
 ms.author: Kwekua
@@ -10,14 +10,14 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 description: Obtenga información sobre las distintas formas en que puede proporcionar comentarios a Microsoft sobre los productos y servicios de Microsoft.
-ms.openlocfilehash: 0aba87571f4b4fddb38f9cd5cae526d62d2e2c64
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 6e21c143a48ddf643461f8c471d8fd063edabd5c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064276"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325913"
 ---
-# <a name="learn-about-how-to-provide-feedback-to-microsoft"></a>Obtenga información sobre cómo proporcionar comentarios a Microsoft
+# <a name="learn-about-how-to-provide-feedback-to-microsoft"></a>Información sobre cómo proporcionar comentarios a Microsoft
 
 Microsoft valora sus comentarios y cada día vemos los comentarios de los usuarios en nuestros diversos productos y servicios en todas las plataformas.  Al proporcionar comentarios claros, puedes tener el mayor impacto en los productos y características que quieras ver o mejorar.
 
@@ -27,7 +27,7 @@ Tanto si está proporcionando comentarios directamente en una aplicación o siti
 
 - Si usa una experiencia de comentarios de la comunidad, Microsoft priorizará los comentarios que los grandes volúmenes de nuestros usuarios están experimentando o solicitando.  Para ver si los comentarios que desea proporcionar ya existen, busque los comentarios existentes para ver si alguien de la comunidad ya ha mencionado sus comentarios.  Es posible que tenga los mismos comentarios que otra persona y que pueda agregar su voz a los comentarios existentes en lugar de crear una copia de ella.  Si no puedes encontrar comentarios como los tuyos, es hora de agregar nuevos comentarios
 - Al proporcionar comentarios a Microsoft, es importante que mantengas los comentarios específicos de un solo tema a la vez.  Los equipos de productos están leyendo continuamente los comentarios y, cuando vemos comentarios similares de diferentes usuarios, intentamos combinarlos para ver el impacto total en nuestra base de usuarios.  Proporcionar comentarios sobre un solo tema a la vez nos ayuda a vincular comentarios similares.
-- Si está experimentando un problema, intente describir los pasos que realizó que provocaron que se produjese ese problema.  Es excelente saber si el problema es intermitente o sucede cada vez, por lo que nuestros equipos de producto pueden echar un vistazo a él e intentar reproducir el problema.  Si usa Centro de opiniones sobre Windows y la configuración de diagnóstico lo permite, puede usar la característica "Recrear mi problema" para adjuntar capturas de pantalla y registros de diagnóstico a medida que reproduce el problema al que se enfrenta.  Por lo general, más detalles son mejores.  Si estás usando una aplicación y tiende a bloquearse cada vez que se realiza una acción, incluye eso en la descripción además de decirnos que la aplicación se bloquea.
+- Si está experimentando un problema, intente describir los pasos que realizó que provocaron que se produjese ese problema.  Es excelente saber si el problema es intermitente o sucede cada vez, por lo que nuestros equipos de producto pueden echar un vistazo a él e intentar reproducir el problema.  Si usa Centro de opiniones sobre Windows y la configuración de diagnóstico lo permite, puede usar la característica "Recrear mi problema" para adjuntar capturas de pantalla y registros de diagnóstico mientras reproduce el problema al que se enfrenta.  Por lo general, más detalles son mejores.  Si estás usando una aplicación y tiende a bloquearse cada vez que se realiza una acción, incluye eso en la descripción además de decirnos que la aplicación se bloquea.
 - Siempre que proporciones comentarios, recuerda no proporcionar información identificable, como números de teléfono o direcciones de correo electrónico, y asegúrate de evitar dejar información personal en las capturas de pantalla que adjuntas.  Otros usuarios pueden ver los comentarios enviados en plataformas de la comunidad y no desea exponer datos personales.
 - Cuando termine de enviar sus comentarios, puede iniciar sesión en el portal de comentarios para ver los comentarios que envió anteriormente a Microsoft y ver el estado de los comentarios.  Si proporcionaste comentarios Centro de opiniones sobre Windows, puedes abrir la aplicación y ver la sección Mis comentarios para ver el estado de tus comentarios.
 
@@ -43,7 +43,7 @@ Según la plataforma y la aplicación, es posible que puedas enviar registros y 
 
 ### <a name="sending-feedback-from-feedback-our-community-feedback-web-portal"></a>Enviar comentarios desde Feedback, nuestro portal web de comentarios de la comunidad
 
-Si usa [comentarios,](https://feedbackportal.microsoft.com/)puede proporcionar comentarios directamente en el portal web.  Community comentarios le permiten examinar o votar los comentarios de la comunidad. Community comentarios se muestran públicamente en diferentes foros. Su nombre de usuario se mostrará mediante los comentarios que envíe públicamente o los comentarios que proporcione.
+Si [usa comentarios,](https://feedbackportal.microsoft.com/) puede proporcionar comentarios directamente en el portal web.  Community comentarios le permiten examinar o votar los comentarios de la comunidad. Community comentarios se muestran públicamente en diferentes foros. Su nombre de usuario se mostrará mediante los comentarios que envíe públicamente o los comentarios que proporcione.
 
 :::image type="content" source="../../media/sending-feedback-community-portal.png" alt-text="Screenshot: Selection of Microsoft products you can send feedback on":::
 
@@ -51,7 +51,7 @@ Seleccionar un foro te permite ver todos los comentarios relacionados con ese pr
 
 ### <a name="sending-feedback-from-windows-feedback-hub"></a>Enviar comentarios desde Centro de opiniones sobre Windows
 
-Si usa Centro de opiniones sobre Windows, puede proporcionar comentarios desde la aplicación centro de opiniones.  Para obtener más información sobre el uso del Centro de opiniones, puede [leer este artículo](/windows-insider/feedback).  El Centro de opiniones también te permite ver los comentarios de otros usuarios de la comunidad directamente desde el Windows dispositivo.  También puede examinar, enviar o comentar comentarios sobre los comentarios existentes, o enviar los suyos propios mediante el nuevo formulario de comentarios para proporcionar informes de errores o sugerencias de características.
+Si usas Centro de opiniones sobre Windows, puedes proporcionar comentarios desde la aplicación centro de opiniones.  Para obtener más información sobre el uso del Centro de opiniones, puede [leer este artículo](/windows-insider/feedback).  El Centro de opiniones también te permite ver los comentarios de otros usuarios de la comunidad directamente desde el Windows dispositivo.  También puede examinar, enviar o comentar comentarios sobre los comentarios existentes, o enviar los suyos propios mediante el nuevo formulario de comentarios para proporcionar informes de errores o sugerencias de características.
 
 :::image type="content" source="../../media/summarize-your-feedback.png" alt-text="Captura de pantalla: página para escribir y resumir sus comentarios":::
 
@@ -70,7 +70,7 @@ A través Centro de opiniones sobre Windows y el portal web de comentarios, Micr
 
 Verá cada tarjeta de comentarios en el portal de comentarios etiquetado con uno de los estados siguientes. Puedes encontrar esta etiqueta de estado como se muestra en la captura de pantalla siguiente.
 
-:::image type="content" source="../../media/ink-to-text-conversion.png" alt-text="Screenshot: Example of feedback card on Ink to text conversion on an iPad":::
+:::image type="content" source="../../media/ink-to-text-conversion.png" alt-text="Captura de pantalla: Ejemplo de tarjeta de comentarios en Ink para la conversión de texto en un iPad":::
 
 **Lo tenemos**  Sus comentarios se enviaron correctamente. Aunque no podemos responder a cada envío, supervisamos todos los envíos de comentarios.
 Este es el estado predeterminado de los comentarios una vez enviados y significa que los comentarios se enviaron correctamente a nuestro sistema.
@@ -96,7 +96,7 @@ Sus comentarios pasarán a este estado cuando no podamos seguir los pasos siguie
 **Ya es compatible**  Creemos que esto ya existe en el producto.
 Sus comentarios se movería a este estado cuando el equipo del producto haya revisado sus comentarios y determinado que hay una solución alternativa al problema al que se enfrenta o que su pregunta ya está implementada en el producto. Por lo general, la respuesta de Microsoft contendrá más información sobre lo que puede hacer para la auto-ayuda.
 
-**¡Excelentes noticias! Hemos agregado esta sugerencia.**
+**¡Excelentes noticias! Hemos agregado esta sugerencia**  .
 Cuando el equipo de producto ha implementado y ha publicado o está lanzando una nueva compilación con la mejora, sus comentarios se movería a este estado. Normalmente, la respuesta de Microsoft contendrá instrucciones relevantes sobre cómo obtener acceso a nuevas características o correcciones.
 
 **Hemos realizado mejoras**  Hemos realizado una actualización debido a sus comentarios.
@@ -114,8 +114,7 @@ Los empleados de Microsoft o los proveedores aprobados pueden realizar la modera
 
 ## <a name="data-handling-and-privacy"></a>Tratamiento y privacidad de datos
 
-Entendemos que cuando usa productos y servicios de Microsoft, nos confía uno de sus activos más valiosos: sus datos.  Nos aseguramos de que los comentarios que recibimos se almacenan y se administran en las reglas de gobierno de Microsoft y que solo se puede acceder a ella para usos aprobados.  No usamos el correo electrónico, el chat, los archivos u otro contenido personal para dirigirte a los anuncios.  Cuando recopilamos datos, los usamos para mejorar sus experiencias.  Directiva de privacidad de Microsoft.
-Gracias por todos los comentarios que nos ha proporcionado para ayudar a mejorar nuestros productos y servicios.  Le agradecemos. Gracias por formar parte de nuestra comunidad.
+Entendemos que cuando usa productos y servicios de Microsoft, nos confía uno de sus activos más valiosos: sus datos.  Nos aseguramos de que los comentarios que recibimos se almacenan y se administran en las reglas de gobierno de Microsoft y que solo se puede acceder a ella para usos aprobados.  No usamos el correo electrónico, el chat, los archivos u otro contenido personal para dirigirte a los anuncios.  Cuando recopilamos datos, los usamos para mejorar sus experiencias. Gracias por formar parte de nuestra comunidad.
 
 ## <a name="have-feedback-about-the-new-feedback-web-portal"></a>¿Tiene comentarios sobre el nuevo portal web de comentarios?
 

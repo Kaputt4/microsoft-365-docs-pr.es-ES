@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree evaluaciones en El Administrador de cumplimiento de Microsoft para ayudarle a cumplir los requisitos de normativas y certificaciones que son importantes para su organización.
-ms.openlocfilehash: 950178b638b020e9d44301db3a335c73bbb55311
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 59f2bd89a798567d51c3e28fda574e7b9f0ba326
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444549"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319537"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Crear y administrar evaluaciones en el Administrador de cumplimiento
 
@@ -39,7 +39,7 @@ Todas las evaluaciones se enumeran en la pestaña evaluaciones del Administrador
 
 ## <a name="data-protection-baseline-default-assessment"></a>Evaluación predeterminada de línea base de protección de datos
 
-Para empezar, Microsoft proporciona una **evaluación predeterminada en** el Administrador de cumplimiento para la línea **base Microsoft 365 protección de datos.** Esta evaluación de línea base tiene un conjunto de controles para los reglamentos y estándares clave para la protección de datos y el gobierno general de datos. Esta línea base se basa en elementos principalmente de NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) e ISO (International Organization for Standardization), así como de FedRAMP (Federal Risk and Authorization Management Program) y GDPR (Reglamento general de protección de datos de la Unión Europea).
+Para empezar, Microsoft proporciona una **evaluación predeterminada en** el Administrador de cumplimiento para la línea Microsoft 365 **base de protección de datos**. Esta evaluación de línea base tiene un conjunto de controles para los reglamentos y estándares clave para la protección de datos y el gobierno general de datos. Esta línea base se basa en elementos principalmente de NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) e ISO (International Organization for Standardization), así como de FedRAMP (Federal Risk and Authorization Management Program) y GDPR (Reglamento general de protección de datos de la Unión Europea).
 
 Esta evaluación se usa para calcular la puntuación de cumplimiento inicial la primera vez que se llega al Administrador de cumplimiento, antes de configurar cualquier otra evaluación. El Administrador de cumplimiento recopila las señales iniciales de Microsoft 365 soluciones. Verá de un vistazo el rendimiento de su organización con respecto a los estándares y normativas clave de protección de datos y verá las acciones de mejora sugeridas que deben realizarse.
 
@@ -180,9 +180,11 @@ Obtenga más información sobre cómo se realiza un seguimiento y una puntuació
 
 Cuando una actualización esté disponible para una evaluación, verá una notificación y tendrá la opción de aceptar la actualización o aplazar la actualización más adelante.
 
+Las actualizaciones están disponibles para evaluaciones basadas en plantillas de Microsoft, como las diseñadas para su uso con Microsoft 365. Si su organización usa plantillas universales para evaluar otros productos, es posible que la herencia no sea compatible. Para obtener más información, vea [Extender plantillas de evaluación](compliance-manager-templates-extend.md).
+
 ### <a name="what-causes-an-update"></a>Qué causa una actualización
 
-Una actualización de evaluación se produce cuando hay cambios de plantilla subyacentes que afectan a la puntuación. Los cambios pueden implicar ajustar la asignación de control u otras instrucciones basadas en cambios normativos o cambios en el producto. Las actualizaciones de evaluación pueden originarse en su organización (por ejemplo, cuando se modifica una [plantilla personalizada](compliance-manager-templates-modify.md) , así como desde Microsoft.
+Una actualización de evaluación se produce cuando hay cambios de plantilla subyacentes que afectan a la puntuación. Los cambios pueden implicar ajustar la asignación de control u otras instrucciones basadas en cambios normativos o cambios en el producto. Las actualizaciones de evaluación pueden originarse desde la organización (por ejemplo, cuando se modifica una plantilla [personalizada](compliance-manager-templates-modify.md)) así como desde Microsoft.
 
 Si Microsoft actualiza una plantilla del Administrador de cumplimiento que extendió, la evaluación heredará dichas actualizaciones una vez que las acepte. La evaluación conservará los atributos adicionales que aplicó a la evaluación cuando la extendió.
 
@@ -225,7 +227,7 @@ Si está en medio de completar una evaluación, es posible que desee asegurarse 
 
 ## <a name="export-an-assessment-report"></a>Exportar un informe de evaluación
 
-Puede exportar una evaluación a un archivo Excel para las partes interesadas en el cumplimiento de la organización o para auditores y reguladores externos. En la página de detalles de la evaluación, seleccione el botón **Generar** informe cerca de la parte superior de la página, que crea un archivo Excel que puede guardar y compartir.
+Puede exportar una evaluación a un archivo Excel para las partes interesadas en el cumplimiento de la organización o para auditores y reguladores externos. En la página de detalles de la evaluación, seleccione el botón Generar informe cerca de la parte superior de la página, que crea un archivo Excel que puede guardar y compartir.
 
 El informe es una instantánea de la evaluación a partir de la fecha y hora de la exportación. Contiene los detalles de los controles administrados por usted y Microsoft, incluidos el estado de implementación, la fecha de prueba y los resultados de la prueba.
 

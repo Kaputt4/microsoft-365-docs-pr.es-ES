@@ -2,8 +2,8 @@
 title: Administrar compras de autoservicio (administradores)
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: mijeffer, pablom
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_ssp
 - AdminSurgePortfolio
 - okr_smb
-- commerce_ssp
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a administrar las compras de autoservicio realizadas por los usuarios de su organización.
 ms.date: 03/26/2021
-ms.openlocfilehash: 854a013779f9d1b3d141b1770860740f633e8130
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 19f276107de7b1dd1053e500d249950a8700ac41
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371921"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319733"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Administrar compras de autoservicio (administrador)
 
@@ -47,7 +47,7 @@ También puede controlar si los usuarios de su organización pueden realizar com
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
 ::: moniker-end
 
-2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
+2. En la **pestaña Productos** , seleccione el icono de filtro y, a continuación, seleccione **Autoservicio**.
 3. Para ver más detalles sobre una suscripción, elija una de la lista.
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Ver quién tiene licencias para una suscripción de compra de autoservicio
@@ -67,20 +67,20 @@ También puede controlar si los usuarios de su organización pueden realizar com
 
 ::: moniker-end
 
-2. Seleccione el icono de filtro y, a continuación, **elija Autoservicio.**
+2. Seleccione el icono de filtro y, a continuación, **elija Autoservicio**.
 3. Seleccione un producto para ver las licencias asignadas a personas.
     > [!NOTE]
-    > Si hay varias compras para un producto, ese producto  solo aparece una vez y la columna Cantidad disponible muestra el total de todas las suscripciones compradas para ese producto.
+    > Si hay varias compras para un producto, ese producto solo aparece una vez y la columna Cantidad  disponible muestra el total de todas las suscripciones compradas para ese producto.
 4. La **lista** de usuarios se agrupa por los nombres de las personas que realizaron compras de autoservicio.
 5. Para exportar una lista de usuarios con licencias para estas suscripciones, elija las suscripciones que desea exportar y, a continuación, **elija Exportar usuarios**.
 
 ## <a name="disable-or-enable-self-service-purchases"></a>Deshabilitar o habilitar compras de autoservicio
 
-Puede deshabilitar o habilitar compras de autoservicio para los usuarios de su organización. El módulo de PowerShell de **MSCommerce** incluye un valor de parámetro **PolicyID** para **AllowSelfServicePurchase** que le permite controlar si los usuarios de su organización pueden realizar compras de autoservicio y para qué productos.
+Puede deshabilitar o habilitar compras de autoservicio para los usuarios de su organización. El **módulo de PowerShell de MSCommerce** incluye un valor de parámetro **PolicyID** para **AllowSelfServicePurchase** que le permite controlar si los usuarios de su organización pueden realizar compras de autoservicio y para qué productos.
 
 Puede usar el módulo **MSCommerce** PowerShell para:
 
-- Ver el estado predeterminado del valor del parámetro **AllowSelfServicePurchase,** ya sea que esté habilitado o deshabilitado por el producto
+- Ver el estado predeterminado del valor del parámetro **AllowSelfServicePurchase** , ya sea que esté habilitado o deshabilitado por el producto
 - Ver una lista de productos aplicables y si la compra de autoservicio está habilitada o deshabilitada
 - Ver o modificar la configuración actual de un producto específico para habilitarlo o deshabilitarlo
 
@@ -92,21 +92,21 @@ Puede asignar licencias existentes o comprar suscripciones adicionales a través
 
 ::: moniker range="o365-worldwide"
 
-1. En el Centro de administración, vaya a la página **Servicios de compra** de > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">facturación.</a>
+1. En el Centro de administración, vaya a la página **Servicios de compra** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">de facturación</a> .
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página **Servicios de compra** de > **facturación.**
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración</a>, vaya a la página **Servicios de compra** > **de facturación** .
 
 ::: moniker-end
 
 2. Busque y elija el producto que desea comprar y, a continuación, elija **Comprar**.
 3. Complete los pasos restantes para completar la compra.
 4. Siga los pasos de [Ver](#view-who-has-licenses-for-a-self-service-purchase-subscription) quién tiene licencias para una suscripción comprada por autoservicio para exportar una lista de usuarios a los que hacer referencia en el paso siguiente.
-5. Asignar licencias a todos los usuarios que tienen una licencia en la otra suscripción. Para ver los pasos [completos, vea Asignar licencias a los usuarios.](../../admin/manage/assign-licenses-to-users.md)
-6. Póngase en contacto con la persona que compró la suscripción de compra de autoservicio y pídale que [la cancele.](manage-self-service-purchases-users.md#cancel-a-subscription)
+5. Asignar licencias a todos los usuarios que tienen una licencia en la otra suscripción. Para ver los pasos [completos, vea Asignar licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md).
+6. Póngase en contacto con la persona que compró la suscripción de compra de autoservicio y pídale que [la cancele](manage-self-service-purchases-users.md#cancel-a-subscription).
 
 ## <a name="take-over-a-self-service-purchase-subscription"></a>Asumir una suscripción de compra de autoservicio
 
@@ -130,16 +130,16 @@ Al mover usuarios a una suscripción diferente, la suscripción antigua se cance
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración</a>, vaya a la página **Facturación** > **de sus** productos.
 
 ::: moniker-end
 
-2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
+2. En la **pestaña Productos** , seleccione el icono de filtro y, a continuación, seleccione **Autoservicio**.
 3. Selecciona la suscripción que quieras asumir.
-4. En la página detalles de la suscripción, en la sección **Suscripciones y** configuración, seleccione Tomar el control de **esta suscripción.**
+4. En la página detalles de la suscripción, en la **sección Suscripciones y** configuración, seleccione **Tomar el control de esta suscripción**.
 5. En el panel derecho, seleccione **Mover usuarios**.
-6. Seleccione el producto al que desea mover los usuarios y, a continuación, **seleccione Mover usuarios**.
-7. En el **cuadro Mover usuarios a,** seleccione **Mover usuarios**. El proceso de movimiento puede tardar varios minutos. No cierre el explorador mientras se ejecuta el proceso.
+6. Seleccione el producto al que desea mover los usuarios y, a continuación, seleccione **Mover usuarios**.
+7. En el **cuadro Mover usuarios a** , seleccione **Mover usuarios**. El proceso de movimiento puede tardar varios minutos. No cierre el explorador mientras se ejecuta el proceso.
 8. Cuando finalice el proceso de movimiento, cierre el **panel Mover completado**.
 9. En la página de detalles de la suscripción, el estado **de** suscripción de la suscripción comprada por autoservicio se muestra como **Eliminado**.
 
@@ -155,21 +155,21 @@ Cuando decide cancelar una suscripción de compra de autoservicio, los usuarios 
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración</a>, vaya a la página **Facturación** > **de sus** productos.
 
 ::: moniker-end
 
-2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
+2. En la **pestaña Productos** , seleccione el icono de filtro y, a continuación, seleccione **Autoservicio**.
 3. Seleccione la suscripción que quiere cancelar.
-4. En la página detalles de la suscripción, en la sección **Suscripciones y** configuración, seleccione Tomar el control de **esta suscripción.**
+4. En la página detalles de la suscripción, en la **sección Suscripciones y** configuración, seleccione **Tomar el control de esta suscripción**.
 5. En el panel derecho, seleccione **Cancelar suscripción**.
 6. Seleccione un motivo para la cancelación en la lista desplegable y, a continuación, **seleccione Cancelar suscripción**.
 7. En el **cuadro ¿Está seguro de que desea cancelar?** seleccione **Cancelar suscripción**.
 8. Cierre el panel derecho.
-9. En la página de detalles de la suscripción, el **estado de suscripción** se muestra como **Eliminado**.
+9. En la página de detalles de la suscripción, el **estado de la** suscripción se muestra como **Eliminado**.
 
 ## <a name="need-help-contact-us"></a>¿Necesita ayuda? Póngase en contacto con nosotros.
 
-Para obtener preguntas comunes acerca de las compras de autoservicio, consulta Preguntas más frecuentes sobre compras [de autoservicio.](self-service-purchase-faq.yml)
+Para obtener preguntas comunes acerca de las compras de autoservicio, consulta [Preguntas más frecuentes sobre compras de autoservicio](self-service-purchase-faq.yml).
 
 Si tiene preguntas o necesita ayuda con las compras de autoservicio, póngase [en contacto con el soporte técnico](../../admin/get-help-support.md).

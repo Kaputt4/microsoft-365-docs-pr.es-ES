@@ -16,17 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar la lista de inquilinos.
-ms.openlocfilehash: c2a1bfe65f2002f6b8c6548eabea5dc450366c32
-ms.sourcegitcommit: cd3f5e3b7fea37fdcd8c811d01afd60ea68301ca
+ms.openlocfilehash: 3c62761bdb5fbed08be07e909d465aa0a790ff97
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61254407"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330431"
 ---
 # <a name="manage-your-tenant-list"></a>Administrar la lista de inquilinos
-
-> [!NOTE]
-> Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Para ayudarle a administrar la lista de inquilinos en Microsoft 365 Lighthouse, puede aplicar etiquetas personalizadas a los inquilinos. Estas etiquetas se pueden usar para organizar los inquilinos y también pueden ayudarle a filtrar las vistas y los conocimientos existentes disponibles para conjuntos relevantes de inquilinos. Puede administrar las etiquetas desde la página Inquilinos. Una vez creado y asignado, puede filtrar los datos dentro de los inquilinos, usuarios, dispositivos, administración de amenazas y Windows 365 páginas en función de una etiqueta.
 
@@ -38,17 +35,17 @@ Para administrar etiquetas de inquilino, debe:
 
 - Complete los procesos descritos en el artículo [Registrarse Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) registro.
 
-- Complete los procesos descritos en el artículo [Configurar Microsoft 365 Lighthouse seguridad del portal.](m365-lighthouse-configure-portal-security.md)
+- Complete los procesos descritos en el artículo [Configurar Microsoft 365 Lighthouse seguridad del portal](m365-lighthouse-configure-portal-security.md).
 
 - Ser administrador global del inquilino asociado.
 
 ## <a name="create-a-tag"></a>Crear una etiqueta
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Inquilinos**.
+1. En el panel de navegación izquierdo de Faro, seleccione **Inquilinos**.
 
 2. Seleccione **Administrar etiquetas**.
 
-3. En el **panel Administrar etiquetas,** seleccione **Agregar etiqueta**.
+3. En el **panel Administrar etiquetas** , seleccione **Agregar etiqueta**.
 
 4. Escriba un nombre y una descripción.
 
@@ -56,11 +53,11 @@ Para administrar etiquetas de inquilino, debe:
 
 ## <a name="edit-a-tag"></a>Editar una etiqueta
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Inquilinos**.
+1. En el panel de navegación izquierdo de Faro, seleccione **Inquilinos**.
 
 2. Seleccione **Administrar etiquetas**.
 
-3. En el **panel Administrar etiquetas,** seleccione la etiqueta que desea editar.
+3. En el **panel Administrar etiquetas** , seleccione la etiqueta que desea editar.
 
 4. Edite el nombre o la descripción según sea necesario.
 
@@ -68,7 +65,7 @@ Para administrar etiquetas de inquilino, debe:
 
 ## <a name="assign-a-tag"></a>Asignar una etiqueta
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Inquilinos**.
+1. En el panel de navegación izquierdo de Faro, seleccione **Inquilinos**.
 
 2. En la lista de inquilinos, seleccione los tres puntos (más acciones) junto al espacio empresarial que desea etiquetar.
 
@@ -76,23 +73,24 @@ Para administrar etiquetas de inquilino, debe:
 
 4. Seleccione una etiqueta de la lista. Solo puede seleccionar una etiqueta a la vez.
 
-Las etiquetas que ya están asignadas al inquilino tendrán una marca de verificación a la derecha del nombre de la etiqueta. También puede asignar una etiqueta a varios inquilinos seleccionando la casilla situada junto a cada inquilino de la lista, seleccionando Asignar etiquetas y, a continuación, seleccionando una etiqueta de la lista.
+Las etiquetas que ya están asignadas al inquilino tendrán una marca de verificación a la derecha del nombre de la etiqueta. También puede asignar una etiqueta a varios inquilinos seleccionando la casilla situada junto a cada inquilino de la lista, seleccionando Asignar etiquetas y, a continuación **,** seleccionando una etiqueta de la lista.
 
-**NOTA:** Puede crear hasta 30 etiquetas únicas y asignarlas a tantos inquilinos como sea necesario.
+> [!NOTE]
+> Puede crear hasta 30 etiquetas únicas y asignarlas a tantos inquilinos como sea necesario.
 
 ## <a name="delete-a-tag"></a>Eliminar una etiqueta
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Inquilinos**.
+1. En el panel de navegación izquierdo de Faro, seleccione **Inquilinos**.
 
 2. Seleccione **Administrar etiquetas**.
 
-3. En el **panel Administrar etiquetas,** seleccione la etiqueta que desea eliminar.
+3. En el **panel Administrar etiquetas** , seleccione la etiqueta que desea eliminar.
 
 4. Seleccione **Eliminar etiqueta**.
 
 ## <a name="remove-a-tag"></a>Quitar una etiqueta
 
-1. En el panel de navegación izquierdo de Lighthouse, seleccione **Inquilinos**.
+1. En el panel de navegación izquierdo de Faro, seleccione **Inquilinos**.
 
 2. En la lista de inquilinos, seleccione los tres puntos (más acciones) junto al espacio empresarial que desea editar.
 
@@ -100,9 +98,9 @@ Las etiquetas que ya están asignadas al inquilino tendrán una marca de verific
 
 4. Seleccione la etiqueta que desea quitar.
 
-Las etiquetas que están asignadas actualmente tienen una marca de verificación a la derecha del nombre. También puede quitar una etiqueta de varios inquilinos seleccionando la casilla situada junto a cada inquilino de la lista, seleccionando Asignar etiquetas y, a continuación, seleccionando una etiqueta activada de la lista.
+Las etiquetas que están asignadas actualmente tienen una marca de verificación a la derecha del nombre. También puede quitar una etiqueta de varios inquilinos seleccionando la casilla situada junto a cada inquilino de la lista, seleccionando Asignar etiquetas y, a continuación **,** seleccionando una etiqueta activada de la lista.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de crear y asignar etiquetas, puede usarlas para filtrar los inquilinos. Vaya a cualquiera de las otras páginas (Usuarios, Dispositivos, Administración de amenazas o Windows 365) y seleccione una o más etiquetas en el filtro Inquilino. Puede crear nuevas etiquetas para admitir vistas específicas basadas en cada página.
 

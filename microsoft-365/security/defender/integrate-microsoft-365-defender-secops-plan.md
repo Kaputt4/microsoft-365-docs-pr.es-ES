@@ -1,6 +1,6 @@
 ---
-title: Paso 1. Planear la preparación Microsoft 365 Defender operaciones
-description: Los conceptos básicos de la planeación de Microsoft 365 Defender preparación de operaciones al integrar Microsoft 365 Defender en las operaciones de seguridad.
+title: Paso 1. Planear la preparación de las operaciones de Microsoft 365 Defender
+description: Conceptos básicos de planear la preparación de las operaciones de Microsoft 365 Defender al integrar Microsoft 365 Defender en las operaciones de seguridad.
 keywords: incidentes, alertas, investigar, correlación, ataque, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365, respuesta a incidentes, ciberataque, secops, operaciones de seguridad, soc
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: bb3759b673475690a49e0909e2da67644990950e
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 45abe5dfa77e9ed224f2d55e15986eba732f2aff
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172300"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326445"
 ---
-# <a name="step-1-plan-for-microsoft-365-defender-operations-readiness"></a>Paso 1. Planear la preparación Microsoft 365 Defender operaciones
+# <a name="step-1-plan-for-microsoft-365-defender-operations-readiness"></a>Paso 1. Planear la preparación de las operaciones de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Independientemente del vencimiento actual de las operaciones de seguridad, es importante que se alinee con el Centro de operaciones de seguridad (SOC). Aunque no hay un solo modelo que se adapte a todas las organizaciones, hay ciertos aspectos que son más comunes que otros. 
 
@@ -42,7 +42,7 @@ En las secciones siguientes se describen las funciones principales del SOC.
 
 ## <a name="provide-situational-awareness-of-modern-threats"></a>Proporcionar conciencia situacional de las amenazas modernas
 
-Un equipo de SOC se prepara y busca amenazas nuevas y entrantes para que puedan trabajar con la organización para establecer contramedidas y respuestas. El equipo de SOC debe tener personal altamente formado en métodos y técnicas de ataque modernos y comprender los actores de amenazas. Los marcos y la inteligencia de amenazas compartidas, como la cadena [cyber kill](https://www.microsoft.com/security/blog/2016/11/28/disrupting-the-kill-chain/) o el marco de&CK de [MITRE ATT,](https://attack.mitre.org/) pueden capacitar a su personal de analistas de amenazas y cazadores de amenazas.
+Un equipo de SOC se prepara y busca amenazas nuevas y entrantes para que puedan trabajar con la organización para establecer contramedidas y respuestas. El equipo de SOC debe tener personal altamente formado en métodos y técnicas de ataque modernos y comprender los actores de amenazas. Los marcos y la inteligencia de amenazas compartidas, como la cadena [cyber kill](https://www.microsoft.com/security/blog/2016/11/28/disrupting-the-kill-chain/) o el marco de [&CK de MITRE ATT](https://attack.mitre.org/) , pueden habilitar a su personal de analistas de amenazas y cazadores de amenazas.
 
 ## <a name="provide-first-second-and-potentially-third-level-responses-to-cyber-incidents-and-events"></a>Proporcionar respuestas de primer, segundo y potencialmente de tercer nivel a incidentes y eventos cibernéticos
 
@@ -50,7 +50,7 @@ El SOC es la primera línea de defensa frente a eventos e incidentes de segurida
 
 ## <a name="centralize-monitoring-and-logging-of-your-organizations-security-sources"></a>Centralizar la supervisión y el registro de los orígenes de seguridad de la organización 
 
-Por lo general, la función principal del equipo soc es asegurarse de que todos los dispositivos de seguridad, como firewalls, sistemas de prevención de intrusiones, sistemas de prevención de pérdida de datos, sistemas de Administración de amenazas y vulnerabilidades y sistemas de identidad, funcionen correctamente y se supervisen. Los equipos soc trabajarán con las operaciones de red más amplias, como identidad, DevOps, nube, aplicación, ciencia de datos y otros equipos empresariales para garantizar que el análisis de la información de seguridad esté centralizado y protegido. Además, el equipo soc es responsable de mantener los registros de los datos en formatos utilizables y legibles, lo que podría incluir el análisis y normalización de formatos distintos.
+Por lo general, la función principal del equipo soc es asegurarse de que todos los dispositivos de seguridad, como firewalls, sistemas de prevención de intrusiones, sistemas de prevención de pérdida de datos, sistemas de administración de amenazas y vulnerabilidades, y sistemas de identidad funcionan correctamente y se supervisan. Los equipos soc trabajarán con las operaciones de red más amplias, como identidad, DevOps, nube, aplicación, ciencia de datos y otros equipos empresariales para garantizar que el análisis de la información de seguridad esté centralizado y protegido. Además, el equipo soc es responsable de mantener los registros de los datos en formatos utilizables y legibles, lo que podría incluir el análisis y normalización de formatos distintos.
 
 ## <a name="establish-red-blue-and-purple-team-operational-readiness"></a>Establecer preparación operativa del equipo rojo, azul y púrpura
 

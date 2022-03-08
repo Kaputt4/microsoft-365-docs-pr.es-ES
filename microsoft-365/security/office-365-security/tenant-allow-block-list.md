@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a administrar los permisos y los bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d7e3e56ccdaa59b39a6f65a63684b5b715db352e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: e27da44a38162955df252e29c1754c93a2dc8967
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942565"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318569"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
@@ -37,25 +37,25 @@ ms.locfileid: "61942565"
 >
 > Algunas de las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y no están disponibles en todas las organizaciones.
 >
-> Si su organización no tiene las características de suplantación de identidad como se describe en este artículo, vea la experiencia de administración de suplantación de identidad anterior en [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
+> Si su organización no tiene las características de suplantación de identidad como se describe en este artículo, consulte la experiencia de administración de suplantación de identidad anterior en Manage [spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
 
-En Microsoft 365 organizaciones con buzones de correo en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, es posible que no esté de acuerdo con el veredicto de filtrado de EOP. Por ejemplo, un mensaje bueno puede marcarse como malo (un falso positivo) o un mensaje malo se puede permitir a través (un falso negativo).
+En Microsoft 365 organizaciones con buzones de correo en Exchange Online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, es posible que no esté de acuerdo con el veredicto de filtrado de EOP. Por ejemplo, un mensaje bueno puede marcarse como malo (un falso positivo) o un mensaje malo se puede permitir a través (un falso negativo).
 
-La lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Defender le ofrece una forma de invalidar manualmente los Microsoft 365 de filtrado. La lista de inquilinos permitidos o bloqueados se usa durante el flujo de correo para los mensajes entrantes (no se aplica a los mensajes dentro de la organización) y en el momento de los clics del usuario. Puede especificar los siguientes tipos de invalidaciones:
+La lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Defender proporciona una forma de invalidar manualmente los Microsoft 365 de filtrado. La lista de inquilinos permitidos o bloqueados se usa durante el flujo de correo para los mensajes entrantes (no se aplica a los mensajes dentro de la organización) y en el momento de los clics del usuario. Puede especificar los siguientes tipos de invalidaciones:
 
 - Direcciones URL que se bloquearán.
 - Archivos que se va a bloquear.
 - Mensajes de correo electrónico o dominios del remitente que se bloquearán.
-- Remitentes suplantados para permitir o bloquear. Si invalida el veredicto permitir o bloquear en la información de inteligencia suplantada, el remitente  suplantado se convierte en una entrada manual de permitir o bloquear que solo aparece en la pestaña Suplantación de identidad de la lista de permitidos o bloqueados del inquilino. [](learn-about-spoof-intelligence.md) También puede crear entradas de permitir o bloquear manualmente para remitentes suplantados aquí antes de que los detecte la inteligencia de suplantación de identidad.
+- Remitentes suplantados para permitir o bloquear. Si invalida el veredicto permitir o bloquear en la información de inteligencia suplantada[, el](learn-about-spoof-intelligence.md) remitente suplantado se convierte en una entrada manual de permitir o bloquear que  solo aparece en la pestaña Suplantación de identidad de la lista de permitidos o bloqueados del inquilino. También puede crear entradas de permitir o bloquear manualmente para remitentes suplantados aquí antes de que los detecte la inteligencia de suplantación de identidad.
 - Direcciones URL que se permiten.
 - Archivos que se permiten.
 - Mensajes de correo electrónico o dominios del remitente que se permitirán.
 
-En este artículo se describe cómo configurar entradas en la lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin Exchange Online buzones de correo).
+En este artículo se describe cómo configurar entradas en la lista de inquilinos permitidos o bloqueados en el portal de Microsoft 365 Defender o en PowerShell (PowerShell de Exchange Online para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin Exchange Online buzones de correo).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **Listas de inquilinos permitidos o** bloqueados, use <https://security.microsoft.com/tenantAllowBlockList> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la página **Listas de inquilinos permitidos o** bloqueados, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 - Los archivos se especifican mediante el valor hash SHA256 del archivo. Para buscar el valor hash SHA256 de un archivo en Windows, ejecute el siguiente comando en un símbolo del sistema:
 
@@ -63,9 +63,9 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
   ```
 
-  Un valor de ejemplo es `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a` . No se admiten valores de hash perceptual (pHash).
+  Un valor de ejemplo es `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. No se admiten valores de hash perceptual (pHash).
 
-- Los valores de dirección URL disponibles se describen en la sintaxis url de la sección Lista de [inquilinos permitidos o](#url-syntax-for-the-tenant-allowblock-list) bloqueados más adelante en este artículo.
+- Los valores de dirección URL disponibles se describen en la sintaxis [url de la sección Lista de inquilinos permitidos o](#url-syntax-for-the-tenant-allowblock-list) bloqueados más adelante en este artículo.
 
 - La lista de inquilinos permitidos o bloqueados permite un máximo de 500 entradas para remitentes, 500 entradas para direcciones URL, 500 entradas para hashes de archivo y 1024 entradas para suplantación de identidad (remitentes suplantados).
 
@@ -80,12 +80,12 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
 - Debe tener asignados permisos en el portal de Microsoft 365 Defender para poder realizar los procedimientos descritos en este artículo:
-  - **Remitentes, direcciones URL y archivos:**
-    - Para agregar y quitar valores de la lista de inquilinos permitidos o bloqueados, debe ser miembro de los grupos de roles Administración de la **organización,** Administrador de seguridad o Operador de seguridad o se le asigna el rol Administrador de **allowBlockList** de inquilino. 
+  - **Remitentes, direcciones URL y archivos**:
+    - Para agregar y quitar valores de la lista de inquilinos permitidos o bloqueados, debe ser miembro de los grupos de roles Administración de la  **organización, Administrador** de seguridad o Operador de seguridad, o se le asigna el rol Administrador **allowBlockList** de inquilino.
     - Para obtener acceso de solo lectura a la lista de inquilinos permitidos o bloqueados, debe ser miembro de los grupos de roles Lector **global** o Lector **de** seguridad.
-  - **Suplantación:** una de las siguientes combinaciones:
+  - **Suplantación**: una de las siguientes combinaciones:
     - **Administración de organizaciones**
-    - **Administrador de seguridad** <u>y</u> **Configuración de solo vista** o Administración de la organización de solo **vista**.
+    - **Administrador de** <u>seguridad y</u> **configuración de solo vista** o **Administración de la organización de solo vista**.
 
   Para obtener más información, vea los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
@@ -99,58 +99,61 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
 ### <a name="use-the-microsoft-365-defender-portal"></a>Uso del portal de Microsoft 365 Defender
 
-En el portal Microsoft 365 Defender en , vaya a Directivas & directivas de amenazas Listas de inquilinos <https://security.microsoft.com>  \>  \> **permitidos o** bloqueados en la **sección** Reglas. Para ir directamente a la página **Listas de inquilinos permitidos o** bloqueados, use <https://security.microsoft.com/tenantAllowBlockList> .
+En el portal Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas &** \> **directivas** \> de amenazas Listas de inquilinos **permitidos o** bloqueados en la **sección** Reglas. Para ir directamente a la página **Listas de inquilinos permitidos o** bloqueados, use <https://security.microsoft.com/tenantAllowBlockList>.
 
-Para agregar todos los bloques, vea [Add blocks in the Tenant Allow/Block List](manage-tenant-blocks.md).
+Para agregar todos los bloques, vea [Agregar bloques en la lista de inquilinos permitidos o bloqueados](manage-tenant-blocks.md).
 
-Para agregar todos los permitidos, vea [Agregar permite en la lista de inquilinos permitidos o bloqueados.](manage-tenant-allows.md)
+Para agregar todas las permitidos, consulta [Agregar permitidos en la lista de inquilinos permitidos o bloqueados](manage-tenant-allows.md).
 
-Para modificar y quitar todos los bloques y permitir, vea Modificar y quitar entradas en la lista de [inquilinos permitidos o bloqueados.](modify-remove-entries-tenant-allow-block.md)
+Para modificar y quitar todos los bloques y permitidos, consulte [Modificar y quitar entradas en la lista de inquilinos permitidos o bloqueados](modify-remove-entries-tenant-allow-block.md).
 
 ### <a name="use-exchange-online-powershell-or-standalone-eop-powershell"></a>Usar Exchange Online PowerShell o PowerShell independiente de EOP
 
-Para administrar todas las permitidos y bloques, vea Agregar bloques en la lista de inquilinos [permitidos/bloqueados](manage-tenant-blocks.md), Agregar permite en la lista de inquilinos [permitir/bloquear](manage-tenant-allows.md)y Modificar y quitar entradas en la lista de inquilinos permitidos [o bloqueados.](modify-remove-entries-tenant-allow-block.md)
+Para administrar todas las permitidos y bloques, vea Agregar bloques en la lista de inquilinos permitidos [o](manage-tenant-blocks.md) bloqueados, Agregar permite en la lista de inquilinos permitir [/](manage-tenant-allows.md)bloquear y Modificar y quitar entradas en la lista de inquilinos [permitidos/bloqueados](modify-remove-entries-tenant-allow-block.md).
 
 ## <a name="view-entries-in-the-tenant-allowblock-list"></a>Ver entradas en la lista de inquilinos permitidos o bloqueados
 
-1. En el portal Microsoft 365 Defender en , vaya a Directivas & directivas de amenazas Listas de inquilinos <https://security.microsoft.com>  \>  \> **permitidos o** bloqueados en la **sección** Reglas. Para ir directamente a la página **Listas de inquilinos permitidos o** bloqueados, use <https://security.microsoft.com/tenantAllowBlockList> .
+1. En el portal Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas &** \> **directivas** \> de amenazas Listas de inquilinos **permitidos o** bloqueados en la **sección** Reglas. Para ir directamente a la página **Listas de inquilinos permitidos o** bloqueados, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Seleccione la pestaña que desee. Las columnas disponibles dependen de la pestaña seleccionada:
 
    - **Remitentes**:
-     - **Valor:** el dominio del remitente o la dirección de correo electrónico.
-     - **Action:** el valor **Allow** o **Block**.
+     - **Valor**: el dominio del remitente o la dirección de correo electrónico.
+     - **Action**: el valor **Allow** o **Block**.
+     - **Modificado por**
      - **Actualizado por última vez**
      - **Quitar en**
      - **Notas**
-   - **DIRECCIONES URL:**
-     - **Value**: La dirección URL.
-     - **Action:** el valor **Allow** o **Block**.
+   - **DIRECCIONES URL**:
+     - **Valor**: la dirección URL.
+     - **Action**: el valor **Allow** o **Block**.
+     - **Modificado por**
      - **Actualizado por última vez**
      - **Quitar en**
      - **Notas**
    - **Files**
-     - **Valor:** hash de archivo.
-     - **Action:** el valor **Allow** o **Block**.
+     - **Valor**: hash de archivo.
+     - **Action**: el valor **Allow** o **Block**.
+     - **Modificado por**
      - **Actualizado por última vez**
      - **Quitar en**
      - **Notas**
    - **Spoofing**
      - **Usuario suplantado**
      - **Infraestructura de envío**
-     - **Tipo de suplantación:** el **valor Interno** o **Externo**.
-     - **Action:** el valor **Block** o **Allow**.
+     - **Tipo de suplantación**: valor **Interno** o **Externo**.
+     - **Action**: el valor **Block** o **Allow**.
 
    Puede hacer clic en un encabezado de columna para ordenar en orden ascendente o descendente.
 
    Puede hacer clic **en Grupo** para agrupar los resultados. Los valores disponibles dependen de la pestaña seleccionada:
 
-   - **Remitentes:** puede agrupar los resultados por **Acción**.
-   - **DIRECCIONES URL:** puede agrupar los resultados por **Acción**.
-   - **Archivos:** puede agrupar los resultados por **Acción**.
-   - **Suplantación:** puede agrupar los resultados por **tipo Action** o **Spoof**.
+   - **Remitentes**: puede agrupar los resultados por **Acción**.
+   - **DIRECCIONES URL**: puede agrupar los resultados por **Acción**.
+   - **Archivos**: puede agrupar los resultados por **Acción**.
+   - **Suplantación**: puede agrupar los resultados por **tipo Action** o **Spoof**.
 
-   Haga **clic en** Buscar, escriba todo o parte de un valor y, a continuación, presione ENTRAR para buscar un valor específico. Cuando haya terminado, haga clic en ![ Borrar icono de búsqueda.](../../media/m365-cc-sc-close-icon.png) **Borrar búsqueda**.
+   Haga **clic en** Buscar, escriba todo o parte de un valor y, a continuación, presione ENTRAR para buscar un valor específico. Cuando haya terminado, haga clic en ![Borrar icono de búsqueda.](../../media/m365-cc-sc-close-icon.png) **Desactive la búsqueda**.
 
    Haga **clic en** Filtrar para filtrar los resultados. Los valores que están disponibles en **el** control desplegable Filtro que aparece dependen de la pestaña seleccionada:
 
@@ -173,7 +176,7 @@ Para administrar todas las permitidos y bloques, vea Agregar bloques en la lista
      - **Action**
      - **Tipo de suplantación**
 
-   Cuando haya terminado, haga clic en **Aplicar**. Para borrar los filtros existentes, haga clic **en Filtrar** y, en el **menú** desplegable Filtro que aparece, haga clic en **Borrar filtros**.
+   Cuando haya terminado, haga clic en **Aplicar**. Para borrar los filtros existentes, haga clic **en Filtrar** y, en **el menú desplegable** Filtro que aparece, haga clic **en Borrar filtros**.
 
 4. Cuando haya terminado, haga clic en **Agregar**.
 
@@ -229,7 +232,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Ge
 
 ## <a name="url-syntax-for-the-tenant-allowblock-list"></a>Sintaxis de dirección URL para la lista de inquilinos permitidos o bloqueados
 
-- Las direcciones IP4v e IPv6 están permitidas, pero los puertos TCP/UDP no.
+- Las direcciones IPv4 e IPv6 están permitidas, pero los puertos TCP/UDP no.
 
 - No se permiten extensiones de nombre de archivo (por ejemplo, test.pdf).
 
@@ -240,11 +243,11 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Ge
   - Hay al menos un carácter a la izquierda del punto.
   - Hay al menos dos caracteres a la derecha del punto.
 
-  Por ejemplo, `t.co` se permite; `.com` o no `contoso.` se permite.
+  Por ejemplo, `t.co` se permite; `.com` o `contoso.` no se permite.
 
 - Las subpaths no están implícitas para allows.
 
-  Por ejemplo, `contoso.com` no incluye `contoso.com/a` .
+  Por ejemplo, `contoso.com` no incluye `contoso.com/a`.
 
 - Los caracteres comodín (*) se permiten en los siguientes escenarios:
 
@@ -254,7 +257,7 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Ge
 
   - Un comodín derecho debe seguir una barra diagonal (/) para especificar una ruta de acceso.
 
-    Por ejemplo, `contoso.com/*` se permite; `contoso.com*` o no `contoso.com/ab*` se permite.
+    Por ejemplo, `contoso.com/*` se permite; `contoso.com*` o `contoso.com/ab*` no se permite.
 
   - `*.com*` no es válido (no es un dominio resolvible y el comodín derecho no sigue una barra diagonal).
 
@@ -264,9 +267,9 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Ge
 
   - Una tilde izquierda implica un dominio y todos los subdominios.
 
-    Por `~contoso.com` ejemplo, incluye `contoso.com` y `*.contoso.com` .
+    Por ejemplo `~contoso.com` , incluye `contoso.com` y `*.contoso.com`.
 
-- Se producirá un error en las entradas de dirección URL que contienen protocolos (por ejemplo, , o ) porque las entradas de dirección URL se `http://` aplican a todos los `https://` `ftp://` protocolos.
+- Se producirá un error en las entradas de dirección URL que contienen protocolos (por ejemplo, `http://`, `https://`o `ftp://`) porque las entradas de dirección URL se aplican a todos los protocolos.
 
 - No se admite ni se requiere un nombre de usuario o contraseña.
 
@@ -284,7 +287,7 @@ Las entradas de dirección URL válidas y sus resultados se describen en las sec
 
 - **Permitir coincidencia**: contoso.com
 
-- **Permitir que no coincida**:
+- **Permitir no coincidir**:
 
   - abc-contoso.com
   - contoso.com/a
@@ -304,18 +307,18 @@ Las entradas de dirección URL válidas y sus resultados se describen en las sec
   - www.contoso.com
   - www.contoso.com/q=a@contoso.com
 
-- **Bloque no coincidente:** abc-contoso.com
+- **Bloque no coincidente**: abc-contoso.com
 
 #### <a name="scenario-left-wildcard-subdomain"></a>Escenario: comodín izquierdo (subdominio)
 
 **Entrada**: `*.contoso.com`
 
-- **Permitir coincidencia y** **Bloquear coincidencia:**
+- **Permitir coincidencia y** **Bloquear coincidencia**:
 
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Permitir no coincidente y** **Bloquear no coincidente**:
+- **Permitir no coincidir y** **Bloquear no coincidente**:
 
   - 123contoso.com
   - contoso.com
@@ -326,13 +329,13 @@ Las entradas de dirección URL válidas y sus resultados se describen en las sec
 
 **Entrada**: `contoso.com/a/*`
 
-- **Permitir coincidencia y** **Bloquear coincidencia:**
+- **Permitir coincidencia y** **Bloquear coincidencia**:
 
   - contoso.com/a/b
   - contoso.com/a/b/c
   - contoso.com/a/?q=joe@t.com
 
-- **Permitir no coincidente y** **Bloquear no coincidente**:
+- **Permitir no coincidir y** **Bloquear no coincidente**:
 
   - contoso.com
   - contoso.com/a
@@ -343,13 +346,13 @@ Las entradas de dirección URL válidas y sus resultados se describen en las sec
 
 **Entrada**: `~contoso.com`
 
-- **Permitir coincidencia y** **Bloquear coincidencia:**
+- **Permitir coincidencia y** **Bloquear coincidencia**:
 
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Permitir no coincidente y** **Bloquear no coincidente**:
+- **Permitir no coincidir y** **Bloquear no coincidente**:
 
   - 123contoso.com
   - contoso.com/abc
@@ -359,7 +362,7 @@ Las entradas de dirección URL válidas y sus resultados se describen en las sec
 
 **Entrada**: `contoso.com/*`
 
-- **Permitir coincidencia y** **Bloquear coincidencia:**
+- **Permitir coincidencia y** **Bloquear coincidencia**:
 
   - contoso.com/?q=whatever@fabrikam.com
   - contoso.com/a
@@ -369,13 +372,13 @@ Las entradas de dirección URL válidas y sus resultados se describen en las sec
   - contoso.com/b/a/c
   - contoso.com/ba
 
-- **Permitir no coincidente y** **Bloquear no coincidente:** contoso.com
+- **Permitir no coincidir** y **Bloquear no coincidente**: contoso.com
 
 #### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>Escenario: subdominio comodín izquierdo y sufijo comodín derecho
 
 **Entrada**: `*.contoso.com/*`
 
-- **Permitir coincidencia y** **Bloquear coincidencia:**
+- **Permitir coincidencia y** **Bloquear coincidencia**:
 
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
@@ -383,13 +386,13 @@ Las entradas de dirección URL válidas y sus resultados se describen en las sec
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **Permitir no coincidente y** **Bloquear no coincidente:** contoso.com/b
+- **Permitir no coincidir** y **Bloquear no coincidente**: contoso.com/b
 
 #### <a name="scenario-left-and-right-tilde"></a>Escenario: tilde izquierda y derecha
 
 **Entrada**: `~contoso.com~`
 
-- **Permitir coincidencia y** **Bloquear coincidencia:**
+- **Permitir coincidencia y** **Bloquear coincidencia**:
 
   - contoso.com
   - contoso.com/a
@@ -397,7 +400,7 @@ Las entradas de dirección URL válidas y sus resultados se describen en las sec
   - www.contoso.com/b
   - xyz.abc.contoso.com
 
-- **Permitir no coincidente y** **Bloquear no coincidente**:
+- **Permitir no coincidir y** **Bloquear no coincidente**:
 
   - 123contoso.com
   - contoso.org
@@ -408,7 +411,7 @@ Las entradas de dirección URL válidas y sus resultados se describen en las sec
 
 - **Permitir coincidencia** y **Bloquear coincidencia**: 1.2.3.4
 
-- **Permitir no coincidente y** **Bloquear no coincidente**:
+- **Permitir no coincidir y** **Bloquear no coincidente**:
 
   - 1.2.3.4/a
   - 11.2.3.4/a
@@ -417,7 +420,7 @@ Las entradas de dirección URL válidas y sus resultados se describen en las sec
 
 **Entrada**: `1.2.3.4/*`
 
-- **Permitir coincidencia y** **Bloquear coincidencia:**
+- **Permitir coincidencia y** **Bloquear coincidencia**:
 
   - 1.2.3.4/b
   - 1.2.3.4/baaaa
@@ -426,14 +429,14 @@ Las entradas de dirección URL válidas y sus resultados se describen en las sec
 
 Las siguientes entradas no son válidas:
 
-- **Faltan valores de dominio o no son válidos:**
+- **Valores de dominio que faltan o no son válidos**:
 
   - contoso
   - \*.contoso.\*
   - \*.com
   - \*.pdf
 
-- **Comodín en el texto o sin caracteres de espaciado:**
+- **Comodín en el texto o sin caracteres de espaciado**:
 
   - \*contoso.com
   - contoso.com\*
@@ -447,14 +450,14 @@ Las siguientes entradas no son válidas:
   - contoso.com:443
   - abc.contoso.com:25
 
-- **Caracteres comodín no descriptivos:**
+- **Caracteres comodín no descriptivos**:
 
   - \*
   - \*.\*
 
 - **Caracteres comodín intermedios**:
 
-  - conto \* so.com
+  - conto\* so.com
   - conto~so.com
 
 - **Caracteres comodín dobles**
@@ -464,16 +467,16 @@ Las siguientes entradas no son válidas:
 
 ## <a name="domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Sintaxis de par de dominio para entradas de remitente suplantadas en la lista de inquilinos permitidos/bloqueados
 
-Un par de dominio para un remitente suplantado en la lista de inquilinos permitidos o bloqueados usa la siguiente sintaxis: `<Spoofed user>, <Sending infrastructure>` .
+Un par de dominio para un remitente suplantado en la lista de inquilinos permitidos o bloqueados usa la siguiente sintaxis: `<Spoofed user>, <Sending infrastructure>`.
 
-- **Usuario suplantado:** este valor implica la dirección de correo electrónico del usuario  suplantado que se muestra en el cuadro De de los clientes de correo electrónico. Esta dirección también se conoce como `5322.From` la dirección. Los valores válidos son:
+- **Usuario suplantado**: este valor implica la dirección de correo electrónico del usuario suplantado que se muestra en el cuadro De de  los clientes de correo electrónico. Esta dirección también se conoce como la `5322.From` dirección. Los valores válidos son:
   - Una dirección de correo electrónico individual (por ejemplo, chris@contoso.com).
   - Un dominio de correo electrónico (por ejemplo, contoso.com).
-  - El carácter comodín (por ejemplo, \* ).
+  - El carácter comodín (por ejemplo, \*).
 
 - **Infraestructura de** envío: este valor indica el origen de los mensajes del usuario suplantado. Los valores válidos son:
-  - El dominio encontrado en una búsqueda dns inversa (registro PTR) de la dirección IP del servidor de correo electrónico de origen (por ejemplo, fabrikam.com).
-  - Si la dirección IP de origen no tiene ningún registro PTR, la infraestructura de envío se identifica como \<source IP\> /24 (por ejemplo, 192.168.100.100/24).
+  - Dominio encontrado en una búsqueda dns inversa (registro PTR) de la dirección IP del servidor de correo electrónico de origen (por ejemplo, fabrikam.com).
+  - Si la dirección IP de origen no tiene ningún registro PTR, \<source IP\>la infraestructura de envío se identifica como /24 (por ejemplo, 192.168.100.100/24).
 
 Estos son algunos ejemplos de pares de dominio válidos para identificar remitentes suplantados:
 
@@ -483,7 +486,7 @@ Estos son algunos ejemplos de pares de dominio válidos para identificar remiten
 
 El número máximo de entradas de remitente suplantadas es 1000.
 
-Agregar un par de dominio solo permite o bloquea *la* combinación del usuario suplantado *y la* infraestructura de envío. No permite el correo electrónico del usuario suplantado de ningún origen, ni permite el correo electrónico del origen de la infraestructura de envío para ningún usuario suplantado. 
+Agregar un par de dominio solo permite o *bloquea la combinación* del usuario suplantado *y la* infraestructura de envío. No permite el correo electrónico del usuario suplantado de ningún origen, ni permite el correo electrónico del origen de la infraestructura de envío para ningún usuario suplantado. 
 
 Por ejemplo, agrega una entrada allow para el siguiente par de dominio:
 

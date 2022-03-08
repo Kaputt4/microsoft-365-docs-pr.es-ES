@@ -2,8 +2,8 @@
 title: Información general de configuración de compatibilidad de Microsoft 365 con ServiceNow
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 description: Guía de configuración y instalación de aplicaciones certificadas con ámbito para ServiceNow.
-ms.openlocfilehash: 99024eabd4009dcdd14b3d999afe5ee1875fe23e
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: dc69f6210eda4ba04dfd0aecf9795bfcba2efe22
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62825332"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324331"
 ---
 # <a name="microsoft-365-support-integration-with-servicenow-configuration-overview"></a>Información general de configuración de compatibilidad de Microsoft 365 con ServiceNow
 
@@ -34,7 +34,7 @@ Para obtener **Microsoft 365 la aplicación de integración** de soporte técnic
 
 ## <a name="key-features"></a>Características principales
 
-Estas son las características clave que se obtienen con la aplicación Microsoft 365 de integración de soporte técnico en la instancia de ServiceNow:
+Estas son las características clave que encontrarás con la aplicación de Microsoft 365 de integración de soporte técnico en la instancia de ServiceNow:
 
 - Incidentes de estado del servicio: información sobre los incidentes de mantenimiento del servicio de Microsoft conocidos, incluidos el impacto del usuario, el ámbito, el estado actual y la próxima actualización esperada. Con el aprendizaje automático, los incidentes de ServiceNow coinciden con los incidentes de estado del servicio de Microsoft en función del campo de descripción breve.
 
@@ -54,7 +54,7 @@ Estas son las características clave que se obtienen con la aplicación Microsof
 
 Para continuar con esta guía, asegúrese de que los siguientes permisos están disponibles y configurados para los entornos durante todo el proceso:
 
-- Azure Active Directory administrador (AAD) que puede crear aplicaciones Azure AD web
+- Azure Active Directory administrador (AAD) que puede crear Azure AD aplicaciones
 
 - Administrador de ServiceNow
 
@@ -66,7 +66,7 @@ Para configurar la **Microsoft 365 la integración de soporte técnico**:
 
 - Registrar aplicaciones en Microsoft Azure Active Directory (AAD) para la autenticación de llamadas DE API salientes y entrantes.
 
-- Cree entidades de ServiceNow con Microsoft Azure AD aplicación para el flujo de datos salientes y entrantes.
+- Cree entidades de ServiceNow con Microsoft Azure AD aplicación para el flujo de datos entrante y saliente.
 
 - Integre la instancia de ServiceNow con el soporte técnico de Microsoft a través Microsoft 365 de administración.
 
@@ -80,16 +80,19 @@ Permisos necesarios:
 
 - oauthentityprofile\_\_
 
-Después de Microsoft 365 se haya instalado la aplicación de integración de soporte técnico, se crean dos accesos entre ámbitos de aplicación. Si no se crean correctamente, creó manualmente.
+Después de Microsoft 365 la aplicación de integración de soporte técnico, se crean dos accesos entre ámbitos de aplicación. Si no se crean correctamente, creó manualmente.
 
-## <a name="what-configuration-is-right-for-your-organization"></a>¿Qué configuración es adecuada para su organización?
+## <a name="setup-the-integration"></a>Configurar la integración
 
-Después de descargar la aplicación, ve al Asistente para Microsoft 365 configuración en el entorno SNOW para completar el proceso de configuración.
+Después de descargar la aplicación, ve al asistente para Microsoft 365 configuración en el entorno SNOW para completar el proceso de configuración.
 :::image type="content" source="../../media/154124985-76e13e7d-b32e-4741-830b-bbb110d3ecbf.png" alt-text="Asistente para configuración de nieve":::
 
 Para obtener más información sobre los pasos, visite las páginas siguientes:
-- Si el entorno de ServiceNow permite la autenticación básica (acceso con la credencial de usuario de ServiceNow) para las llamadas entrantes al servicio web, siga las instrucciones de Configurar Microsoft 365 la integración de soporte técnico con la autenticación básica de [ServiceNow](servicenow-basic-authentication.md).
-- Si el entorno servicenow no permite la autenticación básica (acceso con la credencial de usuario de ServiceNow) para las llamadas entrantes al servicio web, siga las instrucciones en Configurar Microsoft 365 la integración de compatibilidad con Azure AD [token](servicenow-aad-oauth-token.md) de autenticación.
+- Si el entorno de ServiceNow permite la autenticación básica (acceso con la credencial de usuario de ServiceNow) para las llamadas entrantes a los servicios web, siga las instrucciones de Configurar Microsoft 365 la integración de soporte técnico con la autenticación básica de [ServiceNow](servicenow-basic-authentication.md).
+- Si el entorno de ServiceNow NO permite la autenticación básica (acceso con credenciales de usuario de ServiceNow) para las llamadas entrantes al servicio web, siga las instrucciones de Configurar Microsoft 365 la integración de compatibilidad con Azure AD [token](servicenow-aad-oauth-token.md) de autenticación.
   - Esta configuración requerirá un inquilino de SSO para que AAD token de autenticación funcione correctamente.
 
-Para comprender cada característica, consulte [Microsoft 365 la integración de soporte técnico](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
+Para comprender cada característica, consulte Microsoft 365 [integración de soporte técnico](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
+
+> [!NOTE]
+> Esta aplicación no se admite en entornos regulados o restringidos.

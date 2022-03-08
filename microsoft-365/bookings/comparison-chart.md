@@ -8,19 +8,19 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
-description: Gráfico de comparación que muestra las diferencias de características entre la aplicación web de Bookings y la aplicación Teams Bookings.
-ms.openlocfilehash: 594674584c189dc03d60ec49c5b3a0fbb4ce34eb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Gráfico de comparación que muestra las diferencias de características entre la aplicación web de Bookings y la aplicación de Teams Bookings.
+ms.openlocfilehash: cd253c41eafe3a478e6a2f12bf94977f81688347
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189806"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319747"
 ---
 # <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>Gráfico de comparación: aplicación web de Bookings frente a bookings Teams aplicación
 
 La aplicación Bookings en Teams permite a los programadores controlar sus tareas principales y cambiar algunas configuraciones. Sin embargo, la web de Bookings incluye características avanzadas y opciones de configuración que aún no están disponibles en la Teams aplicación.
 
-Teams las características de la aplicación se agregan todo el tiempo y continuaremos actualizando esta lista. Consulta la sección ¿Está disponible toda la funcionalidad de la aplicación **web de Bookings original en Microsoft Teams?** en preguntas más frecuentes [para](bookings-faq.yml) obtener más detalles.
+Teams las características de la aplicación se agregan todo el tiempo y continuaremos actualizando esta lista. Consulta la sección ¿Está disponible toda la funcionalidad de la aplicación **web de Bookings original en Microsoft Teams?** en las preguntas más [frecuentes para obtener](bookings-faq.yml) más información.
 
 | Característica | Aplicación web de Bookings | Bookings Teams app |
 |:---|:---|:---|
@@ -37,3 +37,4 @@ Teams las características de la aplicación se agregan todo el tiempo y continu
 | Publicar una página de programación de autoservicio | Sí | No |
 | Administrar contactos de clientes | Sí | No |
 | Establecer el tiempo de espera para el personal | Sí | No |
+| Vista de cola programada | No | Sí |

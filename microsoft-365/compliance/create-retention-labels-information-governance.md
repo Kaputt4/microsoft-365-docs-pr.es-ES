@@ -1,24 +1,29 @@
 ---
 title: Crear etiquetas de retención para excepciones a las directivas de retención
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: null
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
-  - SPO_Content
+- M365-security-compliance
+- SPO_Content
 search.appverid:
-  - MOE150
-  - MET150
-description: 'Instrucciones para crear etiquetas de retención para excepciones a las directivas de retención para la gobernanza de información, de modo que pueda conservar lo que necesita y eliminar lo que no.'
+- MOE150
+- MET150
+description: Instrucciones para crear etiquetas de retención para excepciones a las directivas de retención para la gobernanza de información, de modo que pueda conservar lo que necesita y eliminar lo que no.
+ms.openlocfilehash: 699df2a62204115c60271a5d5aa70613db48c7d5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327271"
 ---
-
 # <a name="create-retention-labels-for-exceptions-to-your-retention-policies"></a>Crear etiquetas de retención para excepciones a las directivas de retención
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
@@ -27,9 +32,11 @@ Como parte de la estrategia de información de gobernanza para conservar lo que 
 
 Mientras que las directivas de retención se aplican automáticamente a todos los elementos en el nivel de contenedor (como sitios de SharePoint, buzones de usuario, etc.), las etiquetas de retención se aplican a elementos individuales, como un documento de SharePoint o un mensaje de correo electrónico.
 
-Asegúrese de comprender los [principios de retención](retention.md#the-principles-of-retention-or-what-takes-precedence) antes de usar etiquetas de retención para complementar una directiva de retención para elementos específicos de SharePoint, OneDrive o Exchange. Normalmente, usará etiquetas de retención para conservar elementos específicos durante más tiempo que una directiva de retención aplicada, pero también se pueden usar para aplicar un período de eliminación diferente.
+Asegúrese de comprender los [principios de retención](retention.md#the-principles-of-retention-or-what-takes-precedence) antes de usar etiquetas de retención para complementar una directiva de retención para elementos específicos de SharePoint, OneDrive o Exchange. Normalmente, usará etiquetas de retención para conservar elementos específicos durante más tiempo que una directiva de retención aplicada, pero también se pueden usar para invalidar la eliminación automática al final del período de retención o aplicar un período de eliminación diferente.
 
-Por ejemplo: la mayoría del contenido de los sitios de SharePoint debe conservarse durante tres años, lo que está cubierto por una directiva de retención. Pero tiene algunos documentos del contrato que deben conservarse durante siete años. Estas excepciones se pueden solucionar con etiquetas de retención. Después de asignar la directiva de retención a todos los sitios de SharePoint, aplique las etiquetas de retención a los documentos del contrato. Todos los elementos de SharePoint se conservarán durante tres años y solo los documentos del contrato se conservarán durante siete años.
+Por ejemplo: la mayoría del contenido de los sitios SharePoint debe conservarse durante tres años, lo que está cubierto por una directiva de retención. Pero tiene algunos documentos del contrato que deben conservarse durante siete años. Estas excepciones se pueden solucionar con etiquetas de retención. Después de asignar la directiva de retención a todos los sitios de SharePoint, aplique las etiquetas de retención a los documentos del contrato. Todos los elementos de SharePoint se conservarán durante tres años y solo los documentos del contrato se conservarán durante siete años.
+
+Para obtener más ejemplos de cómo se pueden usar las etiquetas de retención como excepciones a las directivas de retención, vea [Combinación de directivas de retención y etiquetas de retención](retention.md#combining-retention-policies-and-retention-labels).
 
 Las etiquetas de retención también admiten más funcionalidades que las directivas de retención. Para obtener más información, vea [Comparar las capacidades de las directivas de retención y las etiquetas de retención](retention.md#compare-capabilities-for-retention-policies-and-retention-labels).
 

@@ -11,32 +11,32 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en prevención de suplantación de identidad mediante el aprendizaje de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
+description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en la prevención de suplantación de identidad mediante el aprendizaje de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 065b456d5a53a4d803c67ac0ac6ddc270391851a
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: 31c8fd7b0369e5af522cd79b9bee7c5ee8460cc5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295450"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329647"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simular un ataque de suplantación de identidad con entrenamiento de simulación de ataque en Defender para Office 365
 
 **Se aplica a** [Microsoft Defender para Office 365 plan 2](defender-for-office-365.md)
 
-El aprendizaje de simulación de ataques en Microsoft Defender Office 365 plan 2 o Microsoft 365 E5 permite ejecutar simulaciones de ciberataque benignas en su organización. Estas simulaciones prueban sus directivas y prácticas de seguridad, así como capacitan a sus empleados para aumentar su concienciación y disminuir su susceptibilidad a los ataques. En este artículo se explica cómo crear un ataque de suplantación de identidad simulado mediante el entrenamiento de simulación de ataques.
+El aprendizaje de simulación de ataques en Microsoft Defender para Office 365 Plan 2 o Microsoft 365 E5 te permite ejecutar simulaciones de ciberataques benignas en tu organización. Estas simulaciones prueban sus directivas y prácticas de seguridad, así como capacitan a sus empleados para aumentar su concienciación y disminuir su susceptibilidad a los ataques. En este artículo se explica cómo crear un ataque de suplantación de identidad simulado mediante el entrenamiento de simulación de ataques.
 
 Para obtener información de introducción sobre el aprendizaje de simulación de ataques, consulta [Introducción al aprendizaje de simulación de ataques](attack-simulation-training-get-started.md).
 
 Para iniciar un ataque de suplantación de identidad simulada, siga estos pasos:
 
-1. En el portal Microsoft 365 Defender en <https://security.microsoft.com>, vaya a La pestaña Simulaciones de aprendizaje **de simulación de ataques &** \>  \> **correo electrónico.**
+1. En el portal Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico &** \> la pestaña Simulaciones de simulación **de ataques** \> de colaboración.
 
    Para ir directamente a la **pestaña Simulaciones** , use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
 
 2. En la **pestaña Simulaciones** , seleccione ![Iniciar un icono de simulación.](../../media/m365-cc-sc-create-icon.png) **Inicie una simulación**.
 
-   ![Inicie un botón de simulación en la pestaña Simulaciones del aprendizaje de simulación de ataque en el portal Microsoft 365 Defender de simulación.](../../media/attack-sim-training-simulations-launch.png)
+   ![Inicie un botón de simulación en la pestaña Simulaciones del aprendizaje de simulación de ataque en el portal Microsoft 365 Defender búsqueda.](../../media/attack-sim-training-simulations-launch.png)
 
 3. Se abrirá el Asistente para creación de simulación. El resto de este artículo describe las páginas y la configuración que contienen.
 
@@ -88,7 +88,7 @@ Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
   - **Baja**
   - **Media**
   - **Alta**
-- **Source**: indica si la carga se creó en la organización o si forma parte del catálogo de carga preexistnte de Microsoft. Los valores admitidos son:
+- **Source**: indica si la carga se creó en la organización o si forma parte del catálogo de carga preexistnte de Microsoft. Los valores válidos son:
   - **Global** (integrado)
   - **Inquilino** (personalizado)
   - **Todo**
@@ -102,14 +102,14 @@ Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
 
 Cuando haya terminado de configurar los filtros, haga clic **en Aplicar**, **Cancelar** o **Borrar filtros**.
 
-![Seleccione la página de carga en Aprendizaje de simulación de ataque en el portal de Microsoft 365 Defender ataque.](../../media/attack-sim-training-simulations-select-payload.png)
+![Seleccione la página de carga útil en El aprendizaje de simulación de ataques en el portal de Microsoft 365 Defender ataque.](../../media/attack-sim-training-simulations-select-payload.png)
 
 Si selecciona una carga de la lista, los detalles sobre la carga se muestran en un menú desplegable:
 
 - La **pestaña Información** general contiene un ejemplo y otros detalles sobre la carga.
 - La **pestaña Simulaciones iniciadas** contiene el nombre **de la simulación**, la tasa de **clics**, **la velocidad comprometida** y la **acción**.
 
-![Detalles de carga en el aprendizaje de simulación de ataque en el portal Microsoft 365 Defender ataque.](../../media/attack-sim-training-simulations-select-payload-details.png)
+![Detalles de carga en el aprendizaje de simulación de ataque en el portal Microsoft 365 Defender carga.](../../media/attack-sim-training-simulations-select-payload-details.png)
 
 Si selecciona una carga de la lista haciendo clic en el nombre, un ![icono Enviar una carga de prueba.](../../media/m365-cc-sc-create-icon.png) **Enviar un botón de** prueba aparece en la página principal, donde puede enviar una copia del correo electrónico de carga a usted mismo (el usuario que ha iniciado sesión actualmente) para su inspección.
 
@@ -138,7 +138,7 @@ En la **página Usuarios de** destino, seleccione quién recibirá la simulació
         - **Usuarios no dirigidos por una simulación en los últimos tres meses**
         - **Reincidentes**
 
-      - **Etiquetas de** usuario: las etiquetas de usuario son identificadores para grupos específicos de usuarios (por ejemplo, cuentas de prioridad). Para obtener más información, consulta [Etiquetas de usuario en Microsoft Defender para obtener Office 365](user-tags.md).
+      - **Etiquetas de** usuario: las etiquetas de usuario son identificadores para grupos específicos de usuarios (por ejemplo, cuentas de prioridad). Para obtener más información, consulta [Etiquetas de usuario en Microsoft Defender para Office 365](user-tags.md).
 
           Use las siguientes opciones:
 
@@ -156,7 +156,7 @@ En la **página Usuarios de** destino, seleccione quién recibirá la simulació
         - Seleccionar **todo el título**
         - Seleccione los valores de Título existentes.
 
-      ![Filtrado de usuarios en la página Usuarios de destino del aprendizaje de simulación de ataque en el portal Microsoft 365 Defender ataque.](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
+      ![Filtrado de usuarios en la página Usuarios de destino en Aprendizaje de simulación de ataques en el portal Microsoft 365 Defender web.](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
 
       Después de identificar los criterios, los usuarios afectados se muestran en la  sección Lista de usuarios que aparece, donde puede seleccionar algunos o todos los destinatarios detectados.
 
@@ -194,7 +194,7 @@ En la **página Asignar aprendizaje** , puede asignar cursos para la simulación
       - **7 días después de que finalice la simulación**
   - **Sin formación**: si selecciona este valor, la única opción de la página es el botón  Siguiente que le llevará a la página [**De aterrizaje**](#landing-page).
 
-![Agregue el aprendizaje recomendado en la página Asignación de aprendizaje en El entrenamiento de simulación de ataques en el portal Microsoft 365 Defender búsqueda.](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
+![Agregue el aprendizaje recomendado en la página Asignación de aprendizaje en El aprendizaje de simulación de ataques en el portal Microsoft 365 Defender búsqueda.](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
 
 ### <a name="training-assignment"></a>Asignación de aprendizaje
 
@@ -249,7 +249,7 @@ Las páginas de aterrizaje seleccionadas por Microsoft están disponibles en 12 
 - **Seleccionar preferencia de página de aterrizaje**: Los valores disponibles son:
   - **Usar la página de aterrizaje predeterminada de Microsoft**: este es el valor predeterminado que tiene las siguientes opciones asociadas para configurar:
     - **Seleccionar diseño de página de aterrizaje**: seleccione una de las plantillas disponibles.
-    - **Agregar logotipo**: haga **clic en Examinar** para buscar y seleccionar un .png, .jpeg o .gif archivo. Para quitar el logotipo, haga clic en **Quitar**.
+    - **Agregar logotipo**: haga clic **en Examinar** para buscar y seleccionar un .png, .jpeg o .gif archivo. Para quitar el logotipo, haga clic en **Quitar**.
     - **Agregar indicadores de carga al** correo electrónico: esta configuración no está disponible si seleccionó previamente Datos adjuntos de **malware** o **Vincular a malware** en la [página Seleccionar](#select-a-social-engineering-technique) técnica.
 
       Seleccione **Agregar indicadores de carga al correo electrónico** para ayudar a los usuarios a aprender a identificar mensajes de suplantación de identidad.
@@ -361,6 +361,7 @@ Estas son las opciones de configuración disponibles:
     - **Seleccionar hora de inicio**
 - **Configurar el número de días para finalizar la simulación después**: El valor predeterminado es 2.
 - **Habilitar la entrega de zonas horarias conscientes** de la región: entregar mensajes de ataque simulados a los empleados durante el horario laboral según su región.
+- **Mostrar la página de datos intersticiales** de la técnica de unidad por: puede mostrar la superposición que aparece para los ataques de la técnica de dirección URL de unidad-bu. Para ocultar la superposición e ir directamente a la página de aterrizaje, des seleccione esta opción.
 
 Cuando termine, haga clic en **Siguiente**.
 

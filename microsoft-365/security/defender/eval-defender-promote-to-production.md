@@ -1,5 +1,5 @@
 ---
-title: Promover el entorno Microsoft 365 Defender evaluación a Producción
+title: Paso 7. Promover el entorno Microsoft 365 Defender evaluación a Producción
 description: Use este artículo para promover las evales de MDI, MDO, MDE y Defender for Cloud Apps a su entorno vivo en Microsoft 365 Defender o M365D.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,14 +20,14 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e4b852ef7f252033a67e6aa3f1f8183400c18bdb
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 47f36d965c9b2b6ef5f106c590e47fe0251163d8
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943309"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323981"
 ---
-# <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>Promover el entorno Microsoft 365 Defender evaluación a la producción
+# <a name="step-7-promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>Paso 7. Promover el entorno Microsoft 365 Defender evaluación a la producción
 
 **Se aplica a:**
 - Microsoft 365 Defender
@@ -40,7 +40,7 @@ A continuación, complete cualquier configuración adicional y expanda los grupo
 
 Defender for Identity no requiere ninguna configuración adicional. Solo asegúrate de haber comprado las licencias necesarias e instalado el sensor en todos los controladores de dominio de Active Directory y servidores de Servicios de federación de Active Directory (AD FS).
 
-## <a name="microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365
+## <a name="microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365
 
 Después de evaluar o pilotar MDO correctamente, se puede promover a todo el entorno de producción.
 
@@ -52,11 +52,11 @@ Después de evaluar o pilotar MDO correctamente, se puede promover a todo el ent
 
 ## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
-Para promover el entorno de evaluación de Microsoft Defender para endpoints de un entorno piloto a la producción, simplemente incorpore más puntos de conexión al servicio con cualquiera de las herramientas y métodos [admitidos.](../defender-endpoint/onboard-configure.md)
+Para promover el entorno de evaluación de Microsoft Defender para endpoint desde un entorno piloto hasta la producción, simplemente incorpore más puntos de conexión al servicio con cualquiera de las herramientas y métodos [admitidos](../defender-endpoint/onboard-configure.md).
 
 Usa las siguientes directrices generales para incorporar más dispositivos a Microsoft Defender para endpoint.
 
-1. Compruebe que el dispositivo cumple los [requisitos mínimos](../defender-endpoint/minimum-requirements.md).
+1. Comprueba que el dispositivo cumple los [requisitos mínimos](../defender-endpoint/minimum-requirements.md).
 2. Según el dispositivo, siga los pasos de configuración proporcionados en la sección incorporación del portal defender para endpoints.
 3. Usa la herramienta de administración y el método de implementación adecuados para tus dispositivos.
 4. Ejecute una prueba de detección para comprobar que los dispositivos están correctamente incorporados e informando al servicio.

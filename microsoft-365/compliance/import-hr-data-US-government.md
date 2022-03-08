@@ -15,13 +15,13 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
-description: Los administradores de la nube del gobierno de Estados Unidos pueden configurar un conector de datos para importar datos de empleados del sistema de recursos humanos (HR) de su organización a Microsoft 365. Esto le permite usar datos de recursos humanos en directivas de administración de riesgos internos para ayudarle a detectar actividad de usuarios específicos que pueden representar una amenaza interna para su organización.
-ms.openlocfilehash: abfe43d1f0b61952c2dbc0f603250723965953a1
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+description: Los administradores de la nube del Gobierno de Estados Unidos pueden configurar un conector de datos para importar datos de empleados desde el sistema de recursos humanos (HR) de su organización a Microsoft 365. Esto le permite usar datos de recursos humanos en directivas de administración de riesgos internos para ayudarle a detectar actividad de usuarios específicos que pueden representar una amenaza interna para su organización.
+ms.openlocfilehash: c342499c2ea18f4d6ad2f737db3d1dc32bb9fb3f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271867"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330515"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configurar un conector para importar datos de recursos humanos en US Government
 
@@ -29,7 +29,10 @@ Puede configurar un conector de datos en el Centro de cumplimiento de Microsoft 
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Al usuario que crea el conector de recursos humanos en el paso 3 se le debe asignar el rol De importación de buzones de Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol Exportar importación de buzones y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos [](/Exchange/permissions-exo/role-groups#modify-role-groups) de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+- El usuario que crea el conector de RECURSOS humanos en el paso 3 debe tener asignado el rol de administrador de Conector de datos. Este rol es necesario para agregar conectores en la **página Conectores de datos** de la Centro de cumplimiento de Microsoft 365. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, vea la sección "Roles en los centros de seguridad y cumplimiento" en Permisos en el [Centro de seguridad & cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de la organización puede crear un grupo de roles personalizado, asignar el rol de administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, vea la sección "Crear un grupo de roles personalizado" en [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+
+   > [!NOTE]
+   > Actualmente, el rol de administrador de Conector de datos no se admite en entornos GCC administración de Estados Unidos. Por lo tanto, el usuario que crea el conector de recursos humanos en GCC entornos High y DoD debe tener asignado el rol De importación de buzones de Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol Exportar importación de buzones y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos [](/Exchange/permissions-exo/role-groups#modify-role-groups) de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
 - Deberá determinar cómo recuperar o exportar los datos del sistema de recursos humanos de su organización (de forma regular) y agregarlos al archivo CSV que se describe en el paso 2. El script que ejecute en el paso 4 cargará los datos de RECURSOS humanos del archivo CSV en la nube de Microsoft.
 
@@ -37,11 +40,11 @@ Puede configurar un conector de datos en el Centro de cumplimiento de Microsoft 
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Crear una aplicación en Azure Active Directory
 
-El primer paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación corresponderá al conector de recursos humanos que creas en el paso 3. Al crear esta aplicación, Azure AD autenticar el conector de recursos humanos cuando se ejecuta e intenta acceder a la organización. Esta aplicación también se usará para autenticar el script que se ejecuta en el paso 4 para cargar los datos de recursos humanos en la nube de Microsoft. Durante la creación de esta Azure AD, asegúrate de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
+El primer paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación corresponderá al conector de recursos humanos que creas en el paso 3. La creación de esta aplicación permitirá Azure AD autenticar el conector de RECURSOS humanos cuando se ejecute e intente obtener acceso a la organización. Esta aplicación también se usará para autenticar el script que se ejecuta en el paso 4 para cargar los datos de recursos humanos en la nube de Microsoft. Durante la creación de esta Azure AD, asegúrate de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
 
-- Azure AD de aplicación (también denominado id. *de aplicación* o *id. de cliente*)
+- Azure AD de aplicación (también denominado id. *de aplicación* o *identificador de cliente*)
 
-- Azure AD secreto de aplicación (también denominado secreto *de cliente*)
+- Azure AD secreto de aplicación (también denominado *secreto de cliente*)
 
 - Identificador de inquilino (también denominado *id. de directorio*)
 
@@ -72,7 +75,7 @@ Después de crear el archivo CSV con los datos de RECURSOS humanos necesarios, g
 
 ## <a name="step-3-create-the-hr-connector"></a>Paso 3: Crear el conector de RECURSOS HUMANOS
 
-El siguiente paso es crear un conector de recursos humanos en el Centro de cumplimiento de Microsoft 365. Después de ejecutar el script en el paso 4, el conector de RECURSOS humanos que cree ingerirá los datos de RECURSOS humanos del archivo CSV a su Microsoft 365 organización. En este paso, asegúrese de copiar el identificador de trabajo que se genera al crear el conector. Usará el identificador de trabajo al ejecutar el script.
+El siguiente paso es crear un conector de RECURSOS humanos en el Centro de cumplimiento de Microsoft 365. Después de ejecutar el script en el paso 4, el conector de RECURSOS humanos que cree ingerirá los datos de RECURSOS humanos del archivo CSV a su Microsoft 365 organización. En este paso, asegúrese de copiar el identificador de trabajo que se genera al crear el conector. Usará el identificador de trabajo al ejecutar el script.
 
 1. Vaya a la página Centro de cumplimiento de Microsoft 365 y seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Conectores de** datos</a>.
 
@@ -114,7 +117,7 @@ El siguiente paso es crear un conector de recursos humanos en el Centro de cumpl
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>Paso 4: Ejecutar el script de ejemplo para cargar los datos de recursos humanos
 
-El último paso para configurar un conector de recursos humanos es ejecutar un script de ejemplo que cargará los datos de RECURSOS humanos en el archivo CSV (que creó en el paso 2) en la nube de Microsoft. En concreto, el script carga los datos en el conector de recursos humanos. Después de ejecutar el script, el conector de RECURSOS humanos que creó en el paso 3 importa los datos de recursos humanos Microsoft 365 la organización de Microsoft 365 a la que pueden tener acceso otras herramientas de cumplimiento, como la solución de administración de riesgos insider. Después de ejecutar el script, considere la posibilidad de programar una tarea para ejecutarla automáticamente diariamente para que los datos de terminación de empleados más actuales se carguen en la nube de Microsoft. Consulte [Programar el script para que se ejecute automáticamente](#optional-step-6-schedule-the-script-to-run-automatically).
+El último paso para configurar un conector de recursos humanos es ejecutar un script de ejemplo que cargará los datos de RECURSOS humanos en el archivo CSV (que creó en el paso 2) en la nube de Microsoft. En concreto, el script carga los datos en el conector de recursos humanos. Después de ejecutar el script, el conector de RRHH que creó en el paso 3 importa los datos de RECURSOS humanos a su organización de Microsoft 365 donde pueden tener acceso otras herramientas de cumplimiento, como la solución de administración de riesgos Insider. Después de ejecutar el script, considere la posibilidad de programar una tarea para ejecutarla automáticamente diariamente para que los datos de terminación de empleados más actuales se carguen en la nube de Microsoft. Consulte [Programar el script para que se ejecute automáticamente](#optional-step-6-schedule-the-script-to-run-automatically).
 
 1. Vaya a la ventana que dejó abierta desde el paso anterior para obtener acceso al sitio GitHub con el script de ejemplo. Como alternativa, abra el sitio marcador o use la dirección URL que copió.
 
@@ -140,7 +143,7 @@ El último paso para configurar un conector de recursos humanos es ejecutar un s
    |:-----|:-----|:-----|
    |`tenantId`|El identificador de la Microsoft 365 organización que obtuvo en el paso 1. También puede obtener el identificador de inquilino de su organización en la  hoja Información general del centro Azure AD administración. Esto se usa para identificar la organización.|
    |`appId` |El Azure AD de aplicación para la aplicación que creaste en Azure AD en el paso 1. Esto lo usa Azure AD para la autenticación cuando el script intenta obtener acceso a su Microsoft 365 organización. |
-   |`appSecret`|El Azure AD de aplicación de la aplicación que creaste en Azure AD en el paso 1. También se usa para la autenticación.|
+   |`appSecret`|El Azure AD de aplicación para la aplicación que creaste en Azure AD paso 1. También se usa para la autenticación.|
    |`jobId`|Identificador de trabajo para el conector de recursos humanos que creó en el paso 3. Esto se usa para asociar los datos de recursos humanos que se cargan en la nube de Microsoft con el conector de recursos humanos.|
    |`csvFilePath`|Ruta de acceso del archivo CSV (almacenado en el mismo sistema que el script) que creó en el paso 2. Intente evitar espacios en la ruta de acceso del archivo; de lo contrario, use comillas simples.|
    |||

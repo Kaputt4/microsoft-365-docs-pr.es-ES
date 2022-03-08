@@ -2,8 +2,8 @@
 title: Novedades del Administrador de cumplimiento de Microsoft
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,18 +17,25 @@ search.appverid:
 - MOE150
 - MET150
 description: Descubra las novedades del Pesebre de cumplimiento y lo que está por venir. Obtenga información sobre evaluaciones actualizadas, nuevas plantillas de evaluación, nuevas acciones y mucho más.
-ms.openlocfilehash: a5489241b223b076e3ef44432fd934afb732b38f
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 48aed2e173231e3945bcdd3de73052de9f970a5b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444418"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317659"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Novedades del Administrador de cumplimiento de Microsoft
 
 **En este artículo:** Obtenga información sobre las actualizaciones recientes en el Administrador de cumplimiento.
 
 ## <a name="february-2022"></a>Febrero de 2022
+
+### <a name="continuous-compliance-assessment-of-improvement-actions"></a>Evaluación continua del cumplimiento de las acciones de mejora
+
+Estamos agregando pruebas automatizadas y generación de pruebas para más de 35 acciones de mejora en el Administrador de cumplimiento que no estaban cubiertas anteriormente por puntuación segura. Con la evaluación continua del cumplimiento, puede recibir actualizaciones sobre cuáles de estas acciones de mejora ha completado si son relevantes para sus evaluaciones de cumplimiento y tiene licencia para acceder a las soluciones relevantes. La evaluación continua de cumplimiento también proporciona a los usuarios visibilidad de la lógica de puntuación de las acciones de mejora y proporciona información y pruebas sobre por qué recibió una puntuación determinada. Esta característica funciona junto con las integraciones existentes con Microsoft 365 puntuación segura y las acciones automatizadas que haya configurado anteriormente seguirán funcionando tal y como están. Obtenga más información sobre [la configuración de pruebas automatizadas](compliance-manager-setup.md#set-up-automated-testing).
+### <a name="alerts-and-alert-policies"></a>Directivas de alertas y alertas
+
+Los usuarios ahora pueden establecer alertas para los cambios en el Administrador de cumplimiento que una organización quiere realizar un seguimiento. Con un asistente de configuración fácil, puede crear directivas de alerta para crear notificaciones cuando se suceden los siguientes tipos de eventos: un cambio de puntuación de acción de mejora, un cambio de asignación de acción de mejora, un cambio de estado de prueba o implementación en una acción de mejora y una carga o eliminación de archivos en la pestaña Documentos de una acción de mejora. Para obtener más información, visite [Alertas y directivas de alertas del Administrador de cumplimiento](compliance-manager-alert-policies.md).
 
 ### <a name="try-recommended-assessment-templates-for-your-organization"></a>Pruebe las plantillas de evaluación recomendadas para su organización
 
@@ -49,7 +56,7 @@ Zero Trust es un enfoque proactivo e integrado de la seguridad en todas las capa
 - Red de confianza cero
 - Visibilidad de confianza cero, automatización y orquestación
 
-### <a name="new-assessment-templates"></a>Nuevas plantillas de evaluación
+### <a name="new-preview-templates"></a>Nuevas plantillas de vista previa
 
 Las siguientes plantillas de evaluación ya están disponibles en versión preliminar:
 
@@ -79,11 +86,11 @@ Publicamos nuevas plantillas de evaluación, incluidas:
 
 ### <a name="integration-with-microsoft-priva"></a>Integración con Microsoft Priva
 
-El Administrador de cumplimiento ahora puede trabajar de la mano con Microsoft Priva, una solución que puede ayudarle a proteger los datos personales que su organización almacena en Microsoft 365. Priva ofrece herramientas para ayudarle a visualizar y comprender sus datos, implementar directivas para administrar escenarios de riesgo clave y administrar solicitudes de derechos de sujeto. Cuando se toman medidas en Priva para proteger los datos personales que almacena, esto puede contribuir a las evaluaciones de privacidad en el Administrador de cumplimiento y puede ayudarle a mejorar la puntuación de cumplimiento. Para ver cómo Priva y otras soluciones contribuyen a su puntuación y obtener información sobre las posibles oportunidades de mejoras adicionales,  consulte la pestaña Soluciones en el Administrador de cumplimiento. También puede encontrar más detalles sobre Priva en [Learn about Microsoft Priva](/privacy/priva).
+El Administrador de cumplimiento ahora puede trabajar de la mano con Microsoft Priva, una solución que puede ayudarle a proteger los datos personales que la organización almacena en Microsoft 365. Priva ofrece herramientas para ayudarle a visualizar y comprender sus datos, implementar directivas para administrar escenarios de riesgo clave y administrar solicitudes de derechos de sujeto. Cuando se toman medidas en Priva para proteger los datos personales que almacena, esto puede contribuir a las evaluaciones de privacidad en el Administrador de cumplimiento y puede ayudarle a mejorar la puntuación de cumplimiento. Para ver cómo Priva y otras soluciones contribuyen a su puntuación y obtener información sobre las posibles oportunidades de mejoras adicionales,  consulte la pestaña Soluciones en el Administrador de cumplimiento. También puede encontrar más detalles sobre Priva en [Learn about Microsoft Priva](/privacy/priva).
 
 ## <a name="july-2021"></a>Julio de 2021
 
-Agregamos la capacidad de crear evaluaciones para productos distintos de Microsoft 365, basándonos en nuevas versiones universales de nuestras plantillas. Para obtener más información, comience con [Trabajar con plantillas de evaluación](compliance-manager-templates.md).
+Agregamos la capacidad de crear evaluaciones para productos que no Microsoft 365, basándonos en nuevas versiones universales de nuestras plantillas. Para obtener más información, comience con [Trabajar con plantillas de evaluación](compliance-manager-templates.md).
 
 ## <a name="may-2021"></a>Mayo de 2021
 
@@ -91,7 +98,7 @@ Agregamos la capacidad de crear evaluaciones para productos distintos de Microso
 
 Publicamos 75 nuevas plantillas de evaluación, entre las que se incluyen:
 - Ley de privacidad de Australia
-- Cis Microsoft 365 base de datos 1 y 2
+- Cis Microsoft 365 base 1 y 2
 - Alemania: requisitos de supervisión para TI en instituciones financieras (BAIT)
 - Sarbanes-Oxley act
 - Sudáfrica: Ley de promoción del acceso a la información
@@ -104,7 +111,7 @@ Consulte la lista completa de plantillas [de evaluación](compliance-manager-tem
 
 El Administrador de cumplimiento ya está disponible para los clientes del DoD del gobierno de Estados Unidos, además de los clientes Community (GCC) moderados y GCC high.
 
-## <a name="march-2021"></a>Marzo 2021
+## <a name="march-2021"></a>Marzo de 2021
 
 ### <a name="active-and-inactive-templates"></a>Plantillas activas e inactivas
 

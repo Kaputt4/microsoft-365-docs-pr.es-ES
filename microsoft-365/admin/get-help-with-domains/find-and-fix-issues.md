@@ -2,8 +2,8 @@
 title: Buscar y corregir problemas después de agregar el dominio o los registros DNS
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Aprenda a realizar un seguimiento de los problemas que se encuentran al configurar un dominio personalizado asegurándose de que los registros DNS estén configurados correctamente.
-ms.openlocfilehash: 932eef134890784c76e6acfc85283159cdd9c7b9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7fa5a18ff0e4b7f0db8749f5659fefdd89cb3fcd
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164744"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316889"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Buscar y corregir problemas después de agregar el dominio o los registros DNS
 
@@ -39,7 +39,7 @@ ms.locfileid: "60164744"
 Configurar el dominio para que funcione con Microsoft 365 puede ser un desafío. El sistema DNS puede ser un poco enrevesado y la configuración DNS de su dominio afecta a importantes actividades empresariales, como el correo electrónico.
 
 > [!NOTE]
-> Para comprobar si hay problemas con el dominio, compruebe su estado. Vaya a **Configurar**  >  **dominios** y vea las notificaciones en la **columna** Estado. Si ve un problema, seleccione los tres puntos (más acciones) y, a continuación, elija **Comprobar estado**. El panel que se abre describirá los problemas que se produzcan con el dominio.
+> Para comprobar si hay problemas con el dominio, compruebe su estado. Vaya a **SetupDomains**  >  y vea las notificaciones en la **columna** Estado. Si ve un problema, seleccione los tres puntos (más acciones) y, a continuación, elija **Comprobar estado**. El panel que se abre describirá los problemas que se produzcan con el dominio.
   
 ## <a name="whats-going-on"></a>¿Qué sucede?
 
@@ -47,7 +47,7 @@ Configurar el dominio para que funcione con Microsoft 365 puede ser un desafío.
     
 - [Outlook¿no funciona?](#outlook-isnt-working)
     
-- [El correo electrónico de todos los usuarios se cambió a Microsoft 365 y solo querías que el correo electrónico cambiara.](#everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch)
+- [El correo electrónico de todos se cambió a Microsoft 365 y solo querías que el correo electrónico cambiara.](#everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch)
 
 - [¿No se puede confirmar el estado de la cuenta educativa o sin ánimo de lucro?](#cant-confirm-non-profit-or-school-account-status)
 
@@ -69,34 +69,34 @@ Hay algunas razones comunes por las que la comprobación del dominio puede no fu
 
 Si ha configurado correctamente el registro MX y otros registros DNS de su dominio pero el correo electrónico no funciona, podemos ayudarle a [solucionar los problemas relacionados con Outlook](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues).
   
-## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>El correo electrónico de todos los usuarios se cambió a Microsoft 365 y solo querías que el correo electrónico cambiara.
+## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>El correo electrónico de todos se cambió a Microsoft 365 y solo querías que el correo electrónico cambiara.
 <a name="BKMK_EmailSwitched"> </a>
 
 Al agregar el dominio a Microsoft 365, normalmente el registro MX del dominio se actualiza (por usted o Microsoft 365) para que apunte a Microsoft 365 y todo el correo electrónico enviado a ese dominio empezará a llegar a Microsoft 365. Asegúrese de que ha creado buzones en Microsoft 365 para todos los usuarios que tienen correo electrónico en su dominio ANTES de cambiar el registro MX.
   
-¿Qué sucede si no desea mover el correo electrónico de todos los usuarios de su dominio a Microsoft 365? En su lugar, puede tomar [medidas para Microsoft 365 con solo unas cuantas](../setup/domains-faq.yml)direcciones de correo electrónico.
+¿Qué sucede si no desea mover el correo electrónico de todos los usuarios de su dominio a Microsoft 365? En su lugar, puede tomar [medidas para Microsoft 365 con solo unas cuantas direcciones de correo electrónico](../setup/domains-faq.yml).
   
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>¿No se puede confirmar el estado de la cuenta educativa o sin ánimo de lucro?
 <a name="BKMK_validateAcct"> </a>
 
 Hay un par de escenarios en los que solo tiene que comprobar el dominio de su organización y no configurar ningún servicio. Por ejemplo, para demostrar que Microsoft 365 que su organización cumple los requisitos para una suscripción a la escuela.
   
-Consulta las instrucciones de Comprobar tu dominio Microsoft 365 para probar la propiedad, la organización sin ánimo de lucro o el estado [educativo,](../setup/domains-faq.yml) o para activar Yammer para asegurarte de que has completado todos los pasos necesarios. Es un poco diferente para cada situación. 
+Consulta las instrucciones de Comprobar tu dominio Microsoft 365 para demostrar la propiedad, la organización sin ánimo de lucro o el estado educativo[,](../setup/domains-faq.yml) o para activar Yammer para asegurarte de que has completado todos los pasos necesarios. Es un poco diferente para cada situación. 
   
 ## <a name="services-not-working-with-your-domain"></a>¿Los servicios no funcionan con su dominio?
 
-Podemos ayudarle a localizar los problemas de configuración DNS de su dominio. El solucionador de problemas de dominios Microsoft 365 le mostrará los registros que necesiten corregirse y exactamente en qué deben establecerse los registros. 
+Podemos ayudarle a localizar los problemas de configuración DNS de su dominio. El solucionador de problemas de Microsoft 365 le mostrará los registros que necesite corregir y exactamente en qué deben establecerse los registros. 
 
 > [!TIP]
-> ¿Ha configurado DNS correctamente pero el correo electrónico no funciona en la versión de escritorio de Outlook? Consulte los [diferentes escenarios de](/exchange/mail-flow-best-practices/mail-flow-best-practices) flujo de correo que puede tener con Microsoft 365 para asegurarse de que las cosas están configuradas correctamente para su empresa. O bien, obtenga más ayuda para solucionar problemas con el correo electrónico aquí: [Solucionar problemas de Outlook](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
+> ¿Ha configurado DNS correctamente pero el correo electrónico no funciona en la versión de escritorio de Outlook? Echa un vistazo [a los diferentes escenarios](/exchange/mail-flow-best-practices/mail-flow-best-practices) de flujo de correo que puedes tener con Microsoft 365 para asegurarte de que tienes las cosas configuradas correctamente para tu empresa. O bien, obtenga más ayuda para solucionar problemas con el correo electrónico aquí: [Solucionar problemas de Outlook](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
   
 ## <a name="accessing-your-website-isnt-working"></a>¿El acceso a su sitio web no funciona?
 
 Si ha corregido cualquier problema de DNS y sigue teniendo dificultades, pruebe los siguientes procedimientos.
   
-- Las personas no pueden llegar a su sitio web *en contoso.com:* [Realizar un seguimiento de los problemas del sitio web](../setup/add-domain.md)
+- Las personas no pueden acceder a su sitio web en *contoso.com*: [Realizar un seguimiento de los problemas del sitio web](../setup/add-domain.md)
     
-- No puede actualizar el registro A o el registro CNAME para que apunten a su sitio web: Actualice los [registros DNS personalizados en Microsoft 365](../setup/add-domain.md)
+- No puede actualizar el registro A o el registro CNAME para que apunten a su sitio web: [Actualice los registros DNS personalizados en Microsoft 365](../setup/add-domain.md)
 
 ## <a name="related-content"></a>Contenido relacionado
 

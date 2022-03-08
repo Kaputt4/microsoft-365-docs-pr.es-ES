@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: da12be831aa93032b5d087d36e551df0f6370560
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c922213a262fdc9c61d6f79d0205e6ead96fd44a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191520"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326435"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Acciones de corrección en Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "60191520"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Durante y después de una investigación automatizada en Microsoft 365 Defender, las acciones de corrección se identifican para elementos malintencionados o sospechosos. Algunos tipos de acciones de corrección se toman en dispositivos, también denominados puntos de conexión. Otras acciones de corrección se toman en el contenido del correo electrónico. Las investigaciones automatizadas se completan después de que se realicen, aprueben o rechacen las acciones de corrección.
 
@@ -50,17 +50,17 @@ En la tabla siguiente se resumen las acciones de corrección que se admiten actu
 |:---------|:---------|
 |- Recopilar paquete de investigación <br/>- Aislar dispositivo (esta acción se puede deshacer)<br/>- Máquina offboard <br/>- Ejecución de código de lanzamiento <br/>- Liberar de cuarentena <br/>- Ejemplo de solicitud <br/>- Restringir la ejecución de código (esta acción se puede deshacer) <br/>- Ejecutar examen antivirus <br/>- Detener y poner en cuarentena      |- Dirección URL de bloqueo (hora de hacer clic)<br/>- Eliminar mensajes de correo electrónico o clústeres<br/>- Correo electrónico en cuarentena<br/>- Poner en cuarentena datos adjuntos de correo electrónico<br/>- Desactivar el reenvío de correo externo          |
 
-Las acciones de corrección, ya sean pendientes de aprobación o ya completadas, se pueden ver en el [Centro de acciones.](m365d-action-center.md)
+Las acciones de corrección, ya sean pendientes de aprobación o ya completadas, se pueden ver en el [Centro de acciones](m365d-action-center.md).
 
 ## <a name="remediation-actions-that-follow-automated-investigations"></a>Acciones de corrección que siguen investigaciones automatizadas
 
-Cuando se completa una investigación automatizada, se llega a un veredicto para cada elemento de prueba implicado. Según el veredicto, se identifican las acciones de corrección. En algunos casos, las acciones correctivas se toman automáticamente, en otros casos, las acciones correctivas esperan aprobación. Todo depende de cómo se configure [la investigación automatizada y la respuesta](m365d-configure-auto-investigation-response.md).
+Cuando se completa una investigación automatizada, se llega a un veredicto para cada elemento de prueba implicado. Según el veredicto, se identifican las acciones de corrección. En algunos casos, las acciones correctivas se toman automáticamente, en otros casos, las acciones correctivas esperan aprobación. Todo depende de cómo se configure [la investigación y la respuesta automatizadas](m365d-configure-auto-investigation-response.md).
 
 En la tabla siguiente se muestran los posibles resultados:
 
 | Veredicto    | Entidades afectadas    | Resultados|
 |------|------|------|
-| Malintencionado    | Dispositivos (puntos de conexión)    | Las acciones de corrección se toman automáticamente [](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) (suponiendo que los grupos de dispositivos de la organización estén establecidos en **Full - remediar las amenazas automáticamente)**|
+| Malintencionado    | Dispositivos (puntos de conexión)    | Las acciones de corrección se toman automáticamente (suponiendo que los grupos de [](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) dispositivos de la organización estén establecidos en **Completo: corregir las amenazas automáticamente**)|
 | Malintencionado    | Contenido de correo electrónico (URL y datos adjuntos) | Acciones de corrección recomendadas pendientes de aprobación|
 | Sospechoso    | Dispositivos o contenido de correo electrónico | Acciones de corrección recomendadas pendientes de aprobación|
 | No se encontraron amenazas    | Dispositivos o contenido de correo electrónico    | No es necesario realizar ninguna acción correctiva|
@@ -75,7 +75,7 @@ Además de las acciones de corrección que siguen investigaciones automatizadas,
 - [Acción de búsqueda](../defender-endpoint/advanced-hunting-overview.md) avanzada en dispositivos o correo electrónico
 - [Acción](../office-365-security/threat-explorer.md) del explorador en el contenido de correo electrónico, como mover correo electrónico a correo no deseado, eliminar correo electrónico de forma suave o eliminar correo electrónico de forma permanente
 - Acción [de respuesta en](/windows/security/threat-protection/microsoft-defender-atp/live-response) directo manual, como eliminar un archivo, detener un proceso y quitar una tarea programada
-- Acción de respuesta en directo [con Microsoft Defender para API](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)de punto de conexión, como aislar un dispositivo, ejecutar un examen antivirus y obtener información sobre un archivo
+- Acción de respuesta en directo con [Microsoft Defender para LAS API](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis) de punto de conexión, como aislar un dispositivo, ejecutar un examen antivirus y obtener información sobre un archivo
 
 ## <a name="next-steps"></a>Pasos siguientes
 

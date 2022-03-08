@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 454bc457603b64916bfdaf947d867404bd6569db
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: ed1867ee1ea27010d29d19edd18ef12febe6eb2e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444466"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317561"
 ---
 # <a name="assign-licenses"></a>Asignar licencias
 
@@ -32,7 +32,7 @@ Si tiene alguna dificultad con la asignación de licencias, póngase en contacto
 1. Implementar y asignar el [Portal de empresa de Intune](company-portal.md).
 1. Asignar licencias (en este artículo).
 1. [Implementar las aplicaciones](deploy-apps.md).
-1. [Configurar los dispositivos](set-up-devices.md).
+1. [Preparar dispositivos](prepare-devices.md).
 1. Configurar la [experiencia de primera ejecución con el Autopilot y la página de estado de inscripción](esp-first-run.md).
 1. [Habilitar las características de soporte técnico para el usuario](enable-support.md).
 1. [Preparar a los usuarios para que usen los dispositivos](get-started-devices.md).

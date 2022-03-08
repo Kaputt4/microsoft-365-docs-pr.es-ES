@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6bfec4b38d3451d25d65c63ce46fb8df74cd6d0e
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 6ae973f6483035c450aea78664bf804ea0c67cb3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172000"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330207"
 ---
 # <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>Integración de Microsoft 365 Defender en las operaciones de seguridad
 
@@ -39,7 +39,7 @@ ms.locfileid: "62172000"
 
 Un Centro de operaciones de seguridad (SOC) moderno es una organización adaptable basada en inteligencia que adopta la estrategia de defensa contra amenazas de mover procesos de seguridad más temprano en el proceso de implementación para que la seguridad esté integrada. Esto significa que la asignación tradicional de tecnologías y procesos aislados a analistas de seguridad únicos ya no admite el gran aumento de datos procedentes de varios orígenes. Se pide a los analistas e ingenieros de seguridad que tomen un enfoque más holístico y que usen información compartida en diferentes plataformas y disciplinas para tomar medidas eficaces.
 
-Por este motivo, la implementación e implementación de la plataforma Microsoft 365 Defender necesitará una planeación cuidadosa con el equipo de SOC para optimizar las operaciones diarias y la administración del ciclo de vida del servicio Microsoft 365 Defender en sí. Este contenido explora varios conceptos sobre cómo operar e integrar Microsoft 365 Defender con personas, procesos y tecnologías nuevas o existentes que forman la base de las operaciones de seguridad modernas.
+Por este motivo, la implementación e implementación de la plataforma Microsoft 365 Defender necesitará una planeación cuidadosa con el equipo de SOC para optimizar las operaciones diarias y la administración del ciclo de vida del servicio Microsoft 365 Defender propio. Este contenido explora varios conceptos sobre cómo operar e integrar Microsoft 365 Defender con personas, procesos y tecnologías nuevas o existentes que forman la base de las operaciones de seguridad modernas.
 
 Si aún no está familiarizado con Microsoft 365 Defender, consulte estos artículos:
 
@@ -56,7 +56,7 @@ Si su organización ya ha implementado algunos aspectos de Microsoft 365 Defende
 
 Este contenido está diseñado para lo siguiente:
 
-- DevOps de operaciones de seguridad (SecOps)
+- DevOps y operaciones de seguridad (SecOps)
 - Equipos de ingeniería de seguridad
 - Equipos de IT
 - OSC y CTO
@@ -71,7 +71,7 @@ Siga estos pasos para integrar Microsoft 365 Defender en su SOC.
 - [Paso 1. Planear la preparación Microsoft 365 Defender operaciones](integrate-microsoft-365-defender-secops-plan.md)
 - [Paso 2. Realizar una evaluación de preparación de integración SOC con el marco de confianza cero](integrate-microsoft-365-defender-secops-readiness.md)
 - [Paso 3. Plan for Microsoft 365 Defender integration with your SOC catalog of services](integrate-microsoft-365-defender-secops-services.md)
-- [Paso 4. Definir Microsoft 365 Defender funciones, responsabilidades y supervisión](integrate-microsoft-365-defender-secops-roles.md)
+- [Paso 4. Definir Microsoft 365 Defender roles, responsabilidades y supervisión](integrate-microsoft-365-defender-secops-roles.md)
 - [Paso 5. Desarrollar y probar casos de uso](integrate-microsoft-365-defender-secops-use-cases.md)
 - [Paso 6. Identificar tareas de mantenimiento soc](integrate-microsoft-365-defender-secops-tasks.md)
 

@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f18ff452d7f268aa652af097db19f53f2002d8ae
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+ms.openlocfilehash: 45497f74db9c68959d4b23e013c6ea483e86378a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62187214"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323967"
 ---
 # <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>Paso 3. Plan for Microsoft 365 Defender integration with your SOC catalog of services
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Un Centro de operaciones de seguridad (SOC) establecido debe tener un catálogo de servicios que pueda incluir:
 
@@ -47,7 +47,7 @@ Un Centro de operaciones de seguridad (SOC) establecido debe tener un catálogo 
 - Respuesta a incidentes 
 - Equipo de respuesta a incidentes de seguridad del equipo (CSIRT) (que se puede segregar de SOC) 
 - Pruebas de cumplimiento
-- Supervisión de fraudes & amenazas insider
+- Supervisión de la & de amenazas insider
 - Supervisión de eventos & incidentes de seguridad 
 - Detección de vulnerabilidades
 - Detección extendida y respuesta (XDR)/Orquestación de seguridad, automatización y respuesta (SOAR)
@@ -55,7 +55,7 @@ Un Centro de operaciones de seguridad (SOC) establecido debe tener un catálogo 
 - Prevención de pérdida de datos
 - Supervisión de marca
 
-Dado que las Microsoft 365 Defender abarcan varias funciones, el equipo de SOC tendrá que determinar qué roles y responsabilidades son más adecuados para administrar cada componente de Microsoft 365 Defender y alinearse con la función de servicio.
+Dado que Microsoft 365 Defender tecnologías abarcan varias funciones, el equipo de SOC tendrá que determinar qué roles y responsabilidades son más adecuados para administrar cada componente de Microsoft 365 Defender y alinearse con la función de servicio.
 
 Los componentes de Microsoft 365 Defender son:
 
@@ -69,7 +69,7 @@ Los componentes de Microsoft 365 Defender son:
 
 Dado que Microsoft 365 Defender componentes y tecnologías abarcan varias funciones, el equipo de SOC tendrá que determinar qué roles y responsabilidades son más adecuados para administrar cada componente de Microsoft 365 Defender y alinearse con la función de servicio.
 
-Para integrar las capacidades de Microsoft 365 Defender, deberá refinar los servicios SOC. Para obtener más información sobre las capacidades de Microsoft 365 Defender, vea los siguientes artículos:
+Para integrar las capacidades de Microsoft 365 Defender, deberá refinar los servicios SOC. Para obtener más información acerca de las funcionalidades de Microsoft 365 Defender, vea los siguientes artículos:
 
 - [¿Qué es Microsoft Defender para punto de conexión?](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 - [¿Qué es Microsoft Defender for Identity?](/defender-for-identity/what-is)
@@ -78,4 +78,4 @@ Para integrar las capacidades de Microsoft 365 Defender, deberá refinar los ser
 
 ## <a name="next-step"></a>Paso siguiente
 
-[Paso 4. Definir Microsoft 365 Defender funciones, responsabilidades y supervisión](integrate-microsoft-365-defender-secops-roles.md)
+[Paso 4. Definir Microsoft 365 Defender roles, responsabilidades y supervisión](integrate-microsoft-365-defender-secops-roles.md)

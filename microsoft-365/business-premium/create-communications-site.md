@@ -1,5 +1,5 @@
 ---
-title: Crear un SharePoint de comunicaciones
+title: Crear un sitio SharePoint de comunicaciones
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -18,17 +18,18 @@ ms.custom:
 - Adm_O365
 - MiniMaven
 - MSB365
+- admindeeplinkSPO
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre por qué y cómo crear un SharePoint de comunicaciones para su campaña o negocio con Microsoft 365.
-ms.openlocfilehash: 8e65a508a215049279834b553bba09422375aa59
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: d2634f8793c142cc34d6c1708481aa8e4df3184b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766322"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326333"
 ---
 # <a name="create-a-communications-site-in-sharepoint"></a>Crear un sitio de comunicaciones en SharePoint
 
@@ -57,11 +58,11 @@ Los siguientes vínculos para PowerPoint y PDF se pueden descargar e imprimir en
 ## <a name="set-it-up"></a>Configúrelo
 
 1. Inicie sesión en https://Office.com.
-2. En la esquina superior izquierda de la página, selecciona el icono del iniciador de aplicaciones y, a continuación **, selecciona el icono SharePoint** aplicación. Si no ve el icono **SharePoint, haga** clic en el icono Sitios o en  Todos si SharePoint  no está visible.
+2. En la esquina superior izquierda de la página, selecciona el icono del iniciador de aplicaciones y, a continuación **, selecciona el icono SharePoint** aplicación. Si no ve el icono SharePoint, haga clic en el icono Sitios o  en Todos si  SharePoint no está visible.
 3. En la parte superior de la SharePoint principal, haga clic **en + Crear sitio** y elija la **opción Sitio de** comunicación.
 
 Obtenga información [sobre los sitios de comunicaciones](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) y [cómo crear un sitio de comunicación en SharePoint Online](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb).
 
 ## <a name="admin-settings"></a>Configuración de administrador
 
-Si no ve el vínculo **+ Crear** sitio, es posible que la creación de sitios de autoservicio no esté disponible en Microsoft 365. Para crear un sitio de grupo, póngase en contacto con la persona que administra Microsoft 365 en su organización. Si es un administrador de Microsoft 365, vea Administrar la creación de sitios en [SharePoint Online](/sharepoint/manage-site-creation) para habilitar la creación de sitios de autoservicio para su organización o Administrar sitios en el nuevo centro de administración de [SharePoint](/sharepoint/manage-sites-in-new-admin-center) para crear un sitio desde el Centro de administración de SharePoint Online.
+Si no ve el vínculo **+ Crear** sitio, es posible que la creación de sitios de autoservicio no esté disponible en Microsoft 365. Para crear un sitio de grupo, póngase en contacto con la persona que administra Microsoft 365 en su organización. Si es un administrador de Microsoft 365, vea Administrar la creación de sitios en [SharePoint Online](/sharepoint/manage-site-creation) para habilitar la creación de sitios de autoservicio para su organización o Administrar sitios en el nuevo centro de administración de [SharePoint](/sharepoint/manage-sites-in-new-admin-center) para crear un sitio desde el centro de administración de <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint</a>.

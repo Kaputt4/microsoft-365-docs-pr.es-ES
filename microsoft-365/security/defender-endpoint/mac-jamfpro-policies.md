@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 981e2afc2bfe3ff27bf5be492c98f96229a6deab
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 23420223102eafeab7783f7b81ac60c06670626c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766889"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326375"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurar las directivas de Microsoft Defender para endpoint en macOS en Jamf Pro
 
@@ -54,7 +54,7 @@ Deberá seguir los pasos siguientes:
 
 2. Seleccione macOS como sistema operativo y Administración de dispositivos móviles /Microsoft Intune como método de implementación.
 
-    ![Imagen de Centro de seguridad de Microsoft Defender.](images/onboarding-macos.png)
+    ![Imagen de Microsoft 365 Defender portal.](images/onboarding-macos.png)
 
 3. Seleccione **Descargar paquete de incorporación** (WindowsDefenderATPOnboardingPackage.zip).
 
@@ -110,7 +110,7 @@ Deberá seguir los pasos siguientes:
 
     ![Imagen de destinos.](images/jamfpro-targets.png)
 
-10. Haga clic en **Guardar**.
+10. Seleccione **Guardar**.
 
     ![Imagen de los equipos de destino de implementación.](images/jamfpro-deployment-target.png)
 
@@ -124,7 +124,7 @@ Deberá seguir los pasos siguientes:
 
 ## <a name="step-3-configure-microsoft-defender-for-endpoint-settings"></a>Paso 3: Configurar Microsoft Defender para la configuración del punto de conexión
 
-Puede usar JAMF Pro GUI para editar la configuración individual de Microsoft Defender para endpoints o usar el método heredado mediante la creación de una configuración Plist en un editor de texto y la carga en JAMF Pro.
+Puede usar JAMF Pro GUI para editar la configuración individual de Microsoft Defender para endpoints, o bien usar el método heredado mediante la creación de una configuración Plist en un editor de texto y la carga en JAMF Pro.
 
 Tenga en cuenta que debe usar exactamente como `com.microsoft.wdav` dominio de **preferencia, Microsoft** Defender para endpoint usa solo este nombre y `com.microsoft.wdav.ext` para cargar su configuración administrada.
 
@@ -138,7 +138,7 @@ Tenga en cuenta que debe usar exactamente como `com.microsoft.wdav` dominio de *
     curl -o ~/Documents/schema.json https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/schema/schema.json
     ```
 
-2. Cree un nuevo perfil de configuración en Equipos -> perfiles de configuración, escriba los siguientes detalles en la **pestaña General** :
+2. Cree un nuevo perfil de configuración en Equipos -> perfiles de configuración, escriba los siguientes detalles en la **ficha General** :
 
     ![Nuevo perfil.](images/644e0f3af40c29e80ca1443535b2fe32.png)
 
@@ -148,11 +148,11 @@ Tenga en cuenta que debe usar exactamente como `com.microsoft.wdav` dominio de *
     - Nivel: Nivel de equipo (predeterminado)
     - Método Distribution: Instalar automáticamente (valor predeterminado)
 
-3. Desplácese hacia abajo hasta la pestaña & **personalizado Configuración**, seleccione Aplicaciones **externas, haga** clic en Agregar y use  **el** esquema personalizado como origen para usarlo para el dominio de preferencia.
+3. Desplácese hacia abajo hasta la pestaña & **personalizado Configuración**, seleccione Aplicaciones **externas, haga** clic en Agregar y  use **el** esquema personalizado como origen para usarlo para el dominio de preferencia.
 
     ![Agregar esquema personalizado.](images/4137189bc3204bb09eed3aabc41afd78.png)
 
-4. Escribe `com.microsoft.wdav` como dominio de preferencia, haz clic en **Agregar** esquema **y Upload** el archivo schema.json descargado en el paso 1. Haga clic en **Guardar**.
+4. Escribe `com.microsoft.wdav` como dominio de preferencia, haz clic en **Agregar** esquema **y Upload** el archivo schema.json descargado en el paso 1. Haga clic en **Guardar**.
 
     ![Upload esquema.](images/a6f9f556037c42fabcfdcb1b697244cf.png)
 
@@ -181,7 +181,7 @@ Tenga en cuenta que debe usar exactamente como `com.microsoft.wdav` dominio de *
     ![Opciones de configuración: listo.](images/dd55405106da0dfc2f50f8d4525b01c8.png)
 
 Microsoft Defender para endpoint agrega nueva configuración con el tiempo. Esta nueva configuración se agregará al esquema y se publicará una nueva versión en Github.
-Todo lo que necesita hacer para tener actualizaciones es descargar un esquema actualizado, editar el perfil de configuración existente y  editar el esquema en la pestaña Aplicación **& configuración Configuración** usuario.
+Todo lo que necesita hacer para tener actualizaciones es descargar un esquema actualizado, editar el perfil de configuración existente y **editar** el esquema en la pestaña Aplicación **& configuración Configuración** usuario.
 
 ### <a name="legacy-method"></a>Método Legacy
 
@@ -208,7 +208,7 @@ Todo lo que necesita hacer para tener actualizaciones es descargar un esquema ac
     - archive_bomb
     - cloudService
     - automaticSampleSubmission
-    - etiquetas
+    - tags
     - hideStatusMenuIcon
 
      Para obtener información, vea [Lista de propiedades para el perfil de configuración completa de JAMF](mac-preferences.md#property-list-for-jamf-full-configuration-profile).
@@ -336,11 +336,11 @@ Todo lo que necesita hacer para tener actualizaciones es descargar un esquema ac
 
     ![Imagen de la aplicación y la configuración personalizada.](images/e1cc1e48ec9d5d688087b4d771e668d2.png)
 
-6. Seleccione **Upload (archivo PLIST).**.
+6. Seleccione **Upload archivo (archivo PLIST).**.
 
     ![Imagen del archivo plist de opciones de configuración.](images/6f85269276b2278eca4bce84f935f87b.png)
 
-7. En **Dominio de preferencias**, escriba `com.microsoft.wdav`, luego **seleccione Upload Archivo PLIST**.
+7. En **Dominio de preferencias**, escriba `com.microsoft.wdav`, a continuación **, seleccione Upload archivo PLIST**.
 
     ![Imagen del dominio de preferencias de configuración.](images/db15f147dd959e872a044184711d7d46.png)
 
@@ -363,7 +363,7 @@ Todo lo que necesita hacer para tener actualizaciones es descargar un esquema ac
     >
     >![Imagen de la carga de archivos de Intune de configuración.](images/8e69f867664668796a3b2904896f0436.png)
 
-11. Haga clic en **Guardar**.
+11. Seleccione **Guardar**.
 
     ![Imagen de configuración Guardar imagen.](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
 
@@ -484,7 +484,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
     ![Imagen de la aplicación de configuración y la configuración personalizada.](images/1f72e9c15eaafcabf1504397e99be311.png)
 
-6. Seleccione **Upload (archivo PLIST).**.
+6. Seleccione **Upload archivo (archivo PLIST).**.
 
     ![Imagen de la configuración plist.](images/1213872db5833aa8be535da57653219f.png)
 
@@ -505,7 +505,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
     ![Imagen de configuración de configuración uplimg.](images/4ec20e72c8aed9a4c16912e01692436a.png)
 
-11. Haga clic en **Guardar**.
+11. Seleccione **Guardar**.
 
     ![Imagen de la configuración saveimg.](images/253274b33e74f3f5b8d475cf8692ce4e.png)
 
@@ -604,7 +604,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
 15. Seleccione **Agregar**.
 
-16. Haga clic en **Guardar**.
+16. Seleccione **Guardar**.
 
 17. Seleccione **Listo**.
 
@@ -658,7 +658,7 @@ Como alternativa, puede descargar [fulldisk.mobileconfig](https://github.com/mic
 
     ![La imagen de las opciones de configuración agrega imágenes.](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. Haga clic en **Guardar**.
+9. Seleccione **Guardar**.
 
     ![Imagen de la configuración saveimag.](images/0add8019b85a453b47fa5c402c72761b.png)
 
@@ -713,7 +713,7 @@ Como alternativa, puede descargar [kext.mobileconfig](https://github.com/microso
 
    ![Imagen de addima de configuración de configuración.](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. Haga clic en **Guardar**.
+9. Seleccione **Guardar**.
 
    ![Imagen del ámbito sysext de configuración.](images/sysext-scope.png)
 
@@ -723,7 +723,7 @@ Como alternativa, puede descargar [kext.mobileconfig](https://github.com/microso
 
 ## <a name="step-9-configure-network-extension"></a>Paso 9: Configurar extensión de red
 
-Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal de Microsoft 365 Defender web. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
+Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal de Microsoft 365 Defender. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
 
 Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
@@ -766,7 +766,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
     ![Imagen de configuración adim.](images/0dde8a4c41110dbc398c485433a81359.png)
 
-7. Haga clic en **Guardar**.
+7. Seleccione **Guardar**.
 
     ![Imagen de configuración de savimg netextscop.](images/netext-scope.png)
 
@@ -824,7 +824,7 @@ Siga las instrucciones de [Programar exámenes con Microsoft Defender para endpo
 
      ![Imagen de la pestaña de limitación de configuración.](images/56dac54634d13b2d3948ab50e8d3ef21.png)
 
-8. Haga clic en **Guardar**. El paquete se carga en Jamf Pro.
+8. Seleccione **Guardar**. El paquete se carga en Jamf Pro.
 
    ![Imagen del paquete de configuración upl jamf pro.](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
@@ -851,7 +851,7 @@ Siga las instrucciones de [Programar exámenes con Microsoft Defender para endpo
 
     ![Imagen de la comprobación de la configuración.](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
-13. Haga clic en **Guardar**.
+13. Seleccione **Guardar**.
 
 14. Seleccione **Paquetes > Configurar**.
 
@@ -861,7 +861,7 @@ Siga las instrucciones de [Programar exámenes con Microsoft Defender para endpo
 
     ![Imagen de las opciones de configuración MDATP y MDA add.](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
-16. Haga clic en **Guardar**.
+16. Seleccione **Guardar**.
 
     ![Imagen de configuraciónsavimg.](images/9d6e5386e652e00715ff348af72671c6.png)
 

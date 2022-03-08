@@ -1,5 +1,5 @@
 ---
-title: Configurar un conector para archivar datos de chat Conectar ICE en Microsoft 365
+title: Configurar un conector para archivar datos de ice Conectar chat en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Obtenga información sobre cómo configurar y usar un conector 17a-4 ICE Conectar Chat DataParser para importar y archivar datos de chat de ICE Conectar en Microsoft 365.
-ms.openlocfilehash: 632426422bd8f9db984b66fdea08276b7345441c
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+description: Obtenga información sobre cómo configurar y usar un conector 17a-4 ICE Conectar Chat DataParser para importar y archivar datos de chat de ice Conectar en Microsoft 365.
+ms.openlocfilehash: fa6b440f77b0c7836de5bf94f108eaffaa12d2fa
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643011"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63318331"
 ---
-# <a name="set-up-a-connector-to-archive-ice-connect-chat-data"></a>Configurar un conector para archivar datos de chat Conectar ICE
+# <a name="set-up-a-connector-to-archive-ice-connect-chat-data"></a>Configurar un conector para archivar datos de ice Conectar chat
 
-Use [ice DataParser](https://www.17a-4.com/ice-dataparser/) de 17a-4 LLC para importar y archivar datos de ICE Conectar Chat a buzones de usuario de su Microsoft 365 organización. DataParser incluye un conector de chat ice configurado para capturar elementos de un origen de datos de terceros e importar esos elementos a Microsoft 365. El conector DataParser de ICE convierte los datos de chat de ICE Conectar a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
+Use [el Ice DataParser](https://www.17a-4.com/ice-dataparser/) de 17a-4 LLC para importar y archivar datos de ICE Conectar Chat a buzones de usuario de su Microsoft 365 organización. DataParser incluye un conector de chat ice configurado para capturar elementos de un origen de datos de terceros e importar esos elementos a Microsoft 365. El conector DataParser de ICE convierte los datos de chat de ICE Conectar a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
 
 Una vez que los datos de chat de Conectar ICE se almacenan en buzones de usuario, puede aplicar características de cumplimiento de Microsoft 365 como retención por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector DataParser de ICE para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
@@ -35,27 +35,27 @@ En la siguiente introducción se explica el proceso de uso de un conector de dat
 
 2. De forma regular, el DataParser recopila Conectar elementos de chat de ice. DataParser también convierte el contenido de un mensaje en un formato de mensaje de correo electrónico.
 
-3. El conector DataParser de ICE que cree en el Centro de cumplimiento de Microsoft 365 se conecta a DataParser y transfiere los mensajes a una ubicación Azure Storage segura en la nube de Microsoft.
+3. El conector DataParser de ICE que crea en el Centro de cumplimiento de Microsoft 365 se conecta a DataParser y transfiere los mensajes a una ubicación Azure Storage segura en la nube de Microsoft.
 
-4. Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **ICE DataParser** en los buzones de usuario y los elementos de chat de Conectar ICE se importan a esa carpeta. El conector determina a qué buzón se importarán los elementos mediante el valor de la *propiedad Email.* Cada elemento Conectar chat de ICE contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante.
+4. Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **ICE DataParser en los buzones** de usuario y los elementos de chat de ice Conectar se importan a esa carpeta. El conector determina a qué buzón se importarán los elementos mediante el valor de la *propiedad Email* . Cada elemento Conectar chat de ICE contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante.
 
 ## <a name="before-you-set-up-a-connector"></a>Antes de configurar un conector
 
 - Crear una cuenta dataParser para conectores de Microsoft. Para ello, póngase en [contacto con 17a-4 LLC](https://www.17a-4.com/contact/). Debe iniciar sesión en esta cuenta al crear el conector en el paso 1.
 
-- El usuario que crea el conector DataParser de ICE en el paso 1 (y lo completa en el paso 3) debe estar asignado al rol De exportación de importación de buzones en Exchange Online. Este rol es necesario para agregar conectores en la **página Conectores de datos** de la Centro de cumplimiento de Microsoft 365. De forma predeterminada, este rol no se asigna a un grupo de roles en Exchange Online. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+- El usuario que crea el conector DataParser ice en el paso 1 (y lo completa en el paso 3) debe tener asignado el rol de administrador del conector de datos. Este rol es necesario para agregar conectores en la **página Conectores de datos** de la Centro de cumplimiento de Microsoft 365. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, vea la sección "Roles en los centros de seguridad y cumplimiento" en Permisos en el [Centro de seguridad & cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de la organización puede crear un grupo de roles personalizado, asignar el rol de administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, vea la sección "Crear un grupo de roles personalizado" en [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Este conector de datos de 17a-4 está disponible en GCC entornos en la Microsoft 365 us government cloud. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de cumplimiento y protección de datos de Microsoft 365. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
+- Este conector de datos 17a-4 está disponible en GCC entornos en la Microsoft 365 us government cloud. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de cumplimiento y protección de datos de Microsoft 365. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
 ## <a name="step-1-set-up-an-ice-dataparser-connector"></a>Paso 1: Configurar un conector DataParser de ICE
 
-El primer paso es obtener acceso a la página Conectores de datos en el Centro de cumplimiento de Microsoft 365 y crear un conector de 17a-4 para datos de chat de Conectar ICE.
+El primer paso es obtener acceso a la página Conectores de datos de la Centro de cumplimiento de Microsoft 365 y crear un conector de 17a-4 para datos de chat de Conectar ICE.
 
-1. Vaya a <https://compliance.microsoft.com> y, a continuación, haga clic **en Conectores de datos** ICE  >  **DataParser**.
+1. Vaya a <https://compliance.microsoft.com> y, a continuación, **haga clic en Conectores de datosICE** >  **DataParser**.
 
-2. En la página de descripción del **producto DataParser** de ICE, haga clic **en Agregar conector**.
+2. En la página **descripción del producto DataParser de ICE** , haga clic **en Agregar conector**.
 
-3. En la **página Términos de** servicio, haga clic **en Aceptar**.
+3. En la **página Términos de** servicio, haga clic en **Aceptar**.
 
 4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **Siguiente**.
 
@@ -73,11 +73,11 @@ El conector DataParser de ICE asignará automáticamente a los usuarios a sus Mi
 
 Después de crear un conector DataParser de ICE, puede ver el estado del conector en el Centro de cumplimiento de Microsoft 365.
 
-1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores de datos** en la navegación izquierda.
+1. Vaya a <https://compliance.microsoft.com> y haga clic **en Conectores de datos** en la navegación izquierda.
 
 2. Haga clic **en** la pestaña Conectores y, a continuación, seleccione el conector DataParser ice que creó para mostrar la página desplegable, que contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen,** haga clic en el vínculo Descargar **registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene datos que se han importado a la nube de Microsoft.
+3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene datos que se han importado a la nube de Microsoft.
 
 ## <a name="known-issues"></a>Problemas conocidos
 

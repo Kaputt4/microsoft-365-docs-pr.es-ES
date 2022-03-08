@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo proteger su información confidencial mediante Microsoft 365 y herramientas de prevención de pérdida de datos y haga un recorrido por el ciclo de vida de DLP.
-ms.openlocfilehash: 4d6cd204a6aafc261e6648d6f81ea359a5fcdfb8
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: f64fa30ed0f2eddae03a14451c55f95c9e4249a3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354977"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317687"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Obtenga más información acerca de la prevención contra la pérdida de datos
 
@@ -30,15 +30,15 @@ En Microsoft 365, implemente la prevención de pérdida de datos definiendo y ap
 
 - Microsoft 365 servicios como Teams, Exchange, SharePoint y OneDrive
 - Office aplicaciones como Word, Excel y PowerPoint
-- Windows 10, Windows 11 y macOS (Catalina 10,15 y posteriores) extremos
+- Windows 10, Windows 11 y macOS (Catalina 10.15 y posteriores) extremos
 - aplicaciones en la nube que no son de Microsoft
 - recursos compartidos de archivos locales y recursos SharePoint.
 
 Microsoft 365 detecta elementos confidenciales mediante el análisis de contenido profundo, no solo mediante un simple examen de texto. El contenido se analiza para las coincidencias de datos principales con las palabras clave, la evaluación de expresiones regulares, la validación de funciones internas y las coincidencias de datos secundarias que están cerca de la coincidencia de datos principal. Además, DLP también usa algoritmos de aprendizaje automático y otros métodos para detectar contenido que coincida con las directivas DLP.
 
-## <a name="dlp-is-part-of-the-larger-microsoft-365-compliance-offering"></a>DLP es parte de la oferta de cumplimiento Microsoft 365 mayor
+## <a name="dlp-is-part-of-the-larger-microsoft-365-compliance-offering"></a>DLP forma parte de la oferta de cumplimiento Microsoft 365 mayor
 
-Microsoft 365 DLP es solo una de las herramientas de cumplimiento Microsoft 365 que usará para ayudar a proteger los elementos confidenciales dondequiera que vivan o viajen. Debe comprender las otras herramientas del conjunto Microsoft 365 herramientas de cumplimiento, cómo se interrelacionan y funcionan mejor juntos.  Vea, [Microsoft 365 de cumplimiento normativo para](protect-information.md) obtener más información sobre el proceso de protección de la información.
+Microsoft 365 DLP es solo una de las herramientas de cumplimiento Microsoft 365 que usará para ayudar a proteger los elementos confidenciales dondequiera que vivan o viajen. Debe comprender las otras herramientas del conjunto de herramientas Microsoft 365 cumplimiento, cómo se interrelacionan y funcionan mejor juntos.  Vea, [Microsoft 365 de cumplimiento normativo para](protect-information.md) obtener más información sobre el proceso de protección de la información.
 
 ## <a name="protective-actions-of-dlp-policies"></a>Acciones de protección de directivas DLP
 
@@ -50,7 +50,7 @@ Microsoft 365 directivas DLP son cómo supervisar las actividades que los usuari
 - para los datos en reposo, los elementos confidenciales se pueden bloquear y mover a una ubicación de cuarentena segura
 - para Teams chat, la información confidencial no se mostrará
 
-Todas las actividades supervisadas por DLP se registran en [Microsoft 365 registro de auditoría](search-the-audit-log-in-security-and-compliance.md) de forma predeterminada y se enrutan al [Explorador de actividades](data-classification-activity-explorer.md). Cuando un usuario realiza una acción que cumple los criterios de una directiva DLP y tiene las alertas configuradas, DLP proporciona alertas en el panel de administración de alertas [dlp](dlp-configure-view-alerts-policies.md).
+Todas las actividades supervisadas por DLP se registran en [Microsoft 365 registro](search-the-audit-log-in-security-and-compliance.md) de auditoría de forma predeterminada y se enrutan al [Explorador de actividades](data-classification-activity-explorer.md). Cuando un usuario realiza una acción que cumple los criterios de una directiva DLP y tiene las alertas configuradas, DLP proporciona alertas en el panel de administración de alertas [dlp](dlp-configure-view-alerts-policies.md).
 
 ## <a name="dlp-lifecycle"></a>Ciclo de vida de DLP
 
@@ -65,7 +65,7 @@ Normalmente, una implementación dlp sigue estas fases principales.
 
 ### <a name="plan-for-dlp"></a>Plan para DLP
 
-Microsoft 365 y protección dlp son nativas de las aplicaciones que los usuarios usan todos los días. Esto ayuda a proteger los elementos confidenciales de las organizaciones de actividades arriesgadas, incluso si los usuarios no están acostumbrados a las prácticas y el pensamiento de prevención de pérdida de datos. Si su organización y sus usuarios son nuevos en las prácticas de prevención de pérdida de datos, la adopción de DLP puede requerir un cambio en los procesos empresariales y habrá un cambio de cultura para los usuarios. Sin embargo, con una planeación, prueba y ajuste adecuados, las directivas DLP protegerán los elementos confidenciales al tiempo que minimizarán las posibles interrupciones de los procesos empresariales.
+Microsoft 365 y la protección dlp son nativas de las aplicaciones que los usuarios usan todos los días. Esto ayuda a proteger los elementos confidenciales de las organizaciones de actividades arriesgadas, incluso si los usuarios no están acostumbrados a las prácticas y el pensamiento de prevención de pérdida de datos. Si su organización y sus usuarios son nuevos en las prácticas de prevención de pérdida de datos, la adopción de DLP puede requerir un cambio en los procesos empresariales y habrá un cambio de cultura para los usuarios. Sin embargo, con una planeación, prueba y ajuste adecuados, las directivas DLP protegerán los elementos confidenciales al tiempo que minimizarán las posibles interrupciones de los procesos empresariales.
 
 **Planeación de tecnología para DLP**
 
@@ -143,7 +143,7 @@ ubicación | incluir/excluir por|
 |Correo electrónico de Exchange| grupos de distribución|
 |Sitios de SharePoint |sitios |
 |Cuentas de OneDrive |cuentas o grupos de distribución |
-|Mensajes de canales y chats de Teams |cuentas |
+|Mensajes de canales y chats de Teams |cuenta o grupo de distribución |
 |Windows 10, Windows 11 y dispositivos macOS (Catalina 10.15 y posteriores) |usuario o grupo |
 |Microsoft Cloud App Security |instancia |
 |Repositorios locales| Ruta de acceso de archivo de repositorio|
@@ -157,7 +157,7 @@ ubicación | incluir/excluir por|
 4. **Elija la acción que se debe realizar cuando se cumplen** las condiciones de la directiva: las acciones dependen de la ubicación donde se esté produciendo la actividad.  Por ejemplo:
 
 - SharePoint/Exchange/OneDrive: bloquear a las personas que están fuera del formulario de la organización acceder al contenido. Muestre al usuario una sugerencia y envíele una notificación por correo electrónico en la que se le envíe una notificación de que está tomando una acción que está prohibida por la directiva DLP.
-- Teams chat y canal: impedir que se comparta información confidencial en el chat o canal
+- Teams chat y canal: bloquear la información confidencial para que no se comparta en el chat o canal
 - Windows 10, Windows 11 y dispositivos macOS (Catalina 10.15 y posteriores): auditar o restringir la copia de un elemento confidencial en un dispositivo USB extraíble
 - Office aplicaciones: muestra un elemento emergente que notifica al usuario que está participando en un comportamiento arriesgado y bloquea o bloquea, pero permite la invalidación.
 - Recursos compartidos de archivos locales: mueva el archivo desde donde se almacena a una carpeta de cuarentena
@@ -181,11 +181,11 @@ Después de que la directiva se sincroniza en las ubicaciones adecuadas, empieza
 
 ## <a name="viewing-policy-application-results"></a>Visualización de los resultados de la aplicación de directiva
 
-DLP informa de una gran cantidad de información en Microsoft 365 de supervisión, coincidencias y acciones de directivas y actividades de usuario. Tendrás que consumir y actuar sobre esa información para ajustar las directivas y las acciones de ajuste realizadas en elementos confidenciales. La telemetría entra en el centro [de Microsoft 365 registros](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) de auditoría primero, se procesa y se abre paso a distintas herramientas de informes. Cada herramienta de informes tiene un propósito diferente.
+DLP informa de una gran cantidad de información en Microsoft 365 de supervisión, coincidencias y acciones de directivas y actividades de usuario. Tendrás que consumir y actuar sobre esa información para ajustar las directivas y las acciones de ajuste realizadas en elementos confidenciales. La telemetría entra en el centro [de Microsoft 365 registros de auditoría](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) primero, se procesa y se abre paso a distintas herramientas de informes. Cada herramienta de informes tiene un propósito diferente.
 
 ### <a name="dlp-alerts-dashboard"></a>Panel de alertas DLP
 
-Cuando DLP realiza una acción en un elemento confidencial, puede recibir una notificación de esa acción a través de una alerta configurable. En lugar de que estas alertas se amontonen en un buzón para que las haga, el Centro de cumplimiento las pone a disposición en el Panel de administración de alertas [DLP](dlp-configure-view-alerts-policies.md). Use el panel de alertas DLP para configurar alertas, revisarlas, analizarlas y realizar un seguimiento de la resolución de alertas DLP. Este es un ejemplo de alertas generadas por coincidencias de directiva y actividades desde Windows 10 dispositivos.
+Cuando DLP realiza una acción en un elemento confidencial, puede recibir una notificación de esa acción a través de una alerta configurable. En lugar de que estas alertas se amontonen en un buzón para que las haga, el Centro de cumplimiento las pone a disposición en el Panel de administración de alertas [DLP](dlp-configure-view-alerts-policies.md). Use el panel de alertas DLP para configurar alertas, revisarlas, analizarlas y realizar un seguimiento de la resolución de alertas DLP. Este es un ejemplo de alertas generadas por las coincidencias de directivas y las actividades de Windows 10 dispositivos.
 
 > [!div class="mx-imgBorder"]
 > ![Información de la alerta.](../media/Alert-info-1.png)

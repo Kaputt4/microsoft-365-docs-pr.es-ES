@@ -23,17 +23,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo estas recomendaciones de seguridad Microsoft 365 Empresa Premium afectan a los usuarios y protege los datos.
-ms.openlocfilehash: 3404422345e682542762029aecd048cf22cc9e9b
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Obtenga información sobre cómo estas recomendaciones de seguridad Microsoft 365 Empresa Premium afectan a los usuarios y protege sus datos.
+ms.openlocfilehash: cf0af6aab22c4a025a0c6b907fc3cade397d0dcc
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767981"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328475"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>Cómo afectan estas recomendaciones de seguridad a los usuarios
 
-Las recomendaciones de seguridad Microsoft 365 en esta solución hacen que sea mucho más difícil que los hackers obtengan acceso a su entorno. La contraoferta es que los usuarios tendrán que ser conscientes de cómo trabajar en este entorno más seguro. We understand a little extra patience is required, but it's worth it to keep your organization protected.
+Las recomendaciones de seguridad para Microsoft 365 en esta solución hacen que sea mucho más difícil que los hackers obtengan acceso a su entorno. La contraoferta es que los usuarios tendrán que ser conscientes de cómo trabajar en este entorno más seguro. We understand a little extra patience is required, but it's worth it to keep your organization protected.
 
 ![Ilustración que resume los puntos clave de abajo para iPhones, dispositivos Android, Mac, Windows 10, uso compartido y personal clave.](../media/M365-democracy-Users_900px.png)
 
@@ -45,13 +45,13 @@ Todos los usuarios deben tener en cuenta y usar estas prácticas de correo elect
 - Compruebe los correos electrónicos legítimos y busque sugerencias de seguridad de La suplantación de identidad avanzada en Defender para Office 365 protección.
 - Abra solo vínculos y datos adjuntos seguros, tal como lo comprueban Caja fuerte vínculos y Caja fuerte datos adjuntos.
 
-Obtenga más información [sobre la autenticación multifactor](m365-campaigns-multifactor-authentication.md) y [la suplantación de identidad (phishing) y otros ataques](m365-campaigns-phishing-and-attacks.md).
+Obtenga más información [sobre la autenticación multifactor](m365bp-multifactor-authentication.md) y [la suplantación de identidad (phishing) y otros ataques](m365-campaigns-phishing-and-attacks.md).
 
 Descargue una [infografía con](m365-campaigns-protect-campaign-infographic.md) sugerencias para usted y los miembros de su equipo.
 
 ## <a name="set-up-iphones-and-android-devices"></a>Configurar dispositivos iPhone y Android
 
-Todos los usuarios que agregues a tu entorno tendrán que tardar unos minutos en configurar [iPhones y dispositivos Android](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) para que funcionen de forma segura:
+Todos los usuarios que agregues a tu entorno tendrán que tardar unos minutos en configurar [iPhones y dispositivos Android](../business/set-up-mobile-devices.md) para que funcionen de forma segura:
 
 - Configura dispositivos para usar la autenticación multifactor con la aplicación de autenticación.
 - Usa aplicaciones móviles de Microsoft, incluidas Outlook Mobile, Word, OneDrive y otras aplicaciones de Microsoft de la tienda de aplicaciones. No se admiten las aplicaciones de correo nativas que se incluyen en dispositivos iPhone y Android. 
@@ -59,14 +59,14 @@ Todos los usuarios que agregues a tu entorno tendrán que tardar unos minutos en
 
 Después de configurar estos, se pedirá a los usuarios que usen la aplicación de autenticación al acceder a los datos de la organización en estos dispositivos, incluido el correo.
 
-## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>Mantener mac byod y Windows 10 equipos nuevos
+## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>Mantener mac byod y equipos Windows 10 nuevos
 
 También es importante que los usuarios mantengan actualizado su dispositivo de trabajo principal:
 
-- Instala las versiones más recientes de Office de escritorio y mantén las actualizaciones actualizadas cuando se le solicite.
-- Manténgase al tanto de las actualizaciones del sistema operativo, como Windows actualizaciones.
+- Instala las versiones más recientes de Office de escritorio y mantén esto actualizado con actualizaciones cuando se le solicite.
+- Manténgase al tanto de las actualizaciones del sistema operativo, como las Windows actualizaciones.
 
-Para [dispositivos Windows 10 y Mac](m365-campaigns-protect-pcs-macs.md) no administrados, los usuarios tienen la responsabilidad de asegurarse de que las características de seguridad básicas están habilitadas.
+Para [dispositivos Windows 10 y Mac](m365bp-protect-pcs-macs.md) no administrados, los usuarios tienen la responsabilidad de asegurarse de que las características de seguridad básicas están habilitadas.
 
 **Habilitar capacidades de seguridad básicas en dispositivos WINDOWS 10 BYOD y Mac**
 
@@ -82,4 +82,4 @@ Es posible que los usuarios puedan tener la tentación de compartir y almacenar 
 
 ## <a name="set-up-managed-windows-10-devices"></a>Configurar dispositivos Windows 10 administrados
 
-Se recomienda que los miembros del personal más importantes usen dispositivos Windows 10 recién adquiridos que administre. Te mostraremos cómo administrar [y proteger estos dispositivos](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). Esto garantiza que los miembros del personal que son el objetivo de mayor valor para los hackers reciban la mayor protección.
+Te recomendamos que los miembros del personal más importantes usen dispositivos Windows 10 recién adquiridos que administras. Te mostraremos cómo administrar [y proteger estos dispositivos](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). Esto garantiza que los miembros del personal que son el objetivo de mayor valor para los hackers reciban la mayor protección.

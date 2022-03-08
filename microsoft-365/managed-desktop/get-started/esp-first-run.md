@@ -1,7 +1,7 @@
 ---
 title: Experiencia de primera ejecución con piloto automático y la página de estado de inscripción
-description: 'Cómo implementar la experiencia de ESP, la configuración usada y los cambios de configuración'
-keywords: 'Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación'
+description: Cómo implementar la experiencia de ESP, la configuración usada y los cambios de configuración
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: tiaraquan
 ms.author: tiaraquan
@@ -10,15 +10,20 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
+ms.openlocfilehash: ff4e7dc306ea3a017cb94261673d1325bc7cf94e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324597"
 ---
-
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>Experiencia de primera ejecución con piloto automático y la página de estado de inscripción
 
 Microsoft Managed Desktop usa [Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot) y la página de estado de inscripción [(ESP)](/windows/deployment/windows-autopilot/enrollment-status) de Microsoft Intune para proporcionar la mejor experiencia de primera ejecución posible a los usuarios.
 
 ## <a name="initial-deployment"></a>Implementación inicial
 
-Para proporcionar la experiencia ESP, debe registrar dispositivos en el servicio de Escritorio administrado de Microsoft. Para obtener más información sobre el registro, consulta [Registrar nuevos dispositivos](../get-started/register-devices-self.md) tú mismo o [Pasos para que los partners registren dispositivos](../get-started/register-devices-partner.md).
+Para proporcionar la experiencia ESP, debe registrar dispositivos en el servicio de Escritorio administrado de Microsoft. Para obtener más información sobre el registro, [consulte Registro manual o](../get-started/manual-registration.md) [Registro de partners](../get-started/partner-registration.md).
 Página de estado de inscripción y Piloto automático para la implementación aprovisionada previamente están habilitadas de forma predeterminada en Microsoft Managed Desktop.
 
 ## <a name="autopilot-profile-settings"></a>Configuración del perfil de Autopilot
@@ -61,11 +66,11 @@ La experiencia continúa de la siguiente manera:
 
 1. La experiencia de Autopilot se inicia y el usuario escribe sus credenciales.
 2. El dispositivo abre la página Estado de inscripción y continúa con las fases preparación del dispositivo y configuración del dispositivo. El tercer paso (configuración de cuenta *) se omite* actualmente en la configuración de Escritorio administrado de Microsoft porque el ESP de usuario está deshabilitado. El dispositivo se reinicia.
-3. Después de reiniciar, el dispositivo abre la Windows inicio de sesión con **Otro usuario**.
+3. Después de reiniciar, el dispositivo abre la Windows inicio de sesión con **otro usuario**.
 4. Los usuarios escriben sus credenciales de nuevo y se abre el escritorio.
 
 > [!NOTE]
-> Las aplicaciones de Win32 solo se implementan durante ESP si Windows 10 versión es 1903 o posterior.
+> Las aplicaciones de Win32 solo se implementan durante ESP si la Windows 10 es 1903 o posterior.
 
 ![Página de inicio de la configuración de Autopilot que muestra las fases de "preparación del dispositivo" y "configuración del dispositivo".](../../media/mmd-autopilot-screenshot.png)
 
@@ -79,7 +84,7 @@ La experiencia continúa de la siguiente manera:
 ## <a name="sequence-of-events-in-autopilot-for-pre-provisioned-deployment"></a>Secuencia de eventos en Autopilot para la implementación aprovisionada previamente
 
 1. El administrador de TI vuelve a crear imágenes o restablece el dispositivo si es necesario.
-2. El administrador de TI inicia el dispositivo, llega a la experiencia de salida y presiona la tecla Windows cinco veces.
+2. El administrador de TI inicia el dispositivo, llega a la experiencia de salida y presiona la Windows cinco veces.
 3. El administrador de TI selecciona Windows aprovisionamiento de Autopilot y, a continuación, selecciona **Continuar**. En la Windows configuración de Autopilot, se mostrará información sobre el dispositivo.
 4. El administrador de TI selecciona **Aprovisionar** para iniciar el proceso de aprovisionamiento.
 5. El dispositivo inicia ESP y pasa por las fases de preparación y configuración del dispositivo. Durante la fase de configuración del dispositivo, verás la instalación de la **aplicación x de x** mostrada (según la configuración exacta del perfil ESP).
@@ -125,7 +130,7 @@ Es posible que quieras solicitar una plantilla de nombre de dispositivo diferent
 1. Implementar y asignar el [Portal de empresa de Intune](company-portal.md).
 1. [Asignar las licencias](assign-licenses.md).
 1. [Implementar las aplicaciones](deploy-apps.md).
-1. [Configurar los dispositivos](set-up-devices.md).
+1. [Preparar dispositivos](prepare-devices.md).
 1. Configure la experiencia de primera ejecución con Autopilot y la página Estado de inscripción (en este artículo).
 1. [Habilitar las características de soporte técnico para el usuario](enable-support.md).
 1. [Preparar a los usuarios para que usen los dispositivos](get-started-devices.md).

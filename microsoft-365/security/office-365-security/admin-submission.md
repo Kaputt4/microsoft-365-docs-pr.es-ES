@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal de envíos en el portal de Microsoft 365 Defender para enviar correos electrónicos sospechosos, correos de suplantación de identidad sospechosos, correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y datos adjuntos de correo electrónico a Microsoft para volver a examinarlos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 57dedee4f2502f5fd9db293fb4ea947cf50bee1d
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 6a897ba6973dfba86e3d0628088bad419c61c04c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241944"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324050"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el portal de envíos para enviar correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft
 
@@ -39,68 +39,68 @@ Cuando envíe un mensaje de correo electrónico para su análisis, recibirá:
 
 - **Comprobación de autenticación de** correo electrónico: detalles sobre si la autenticación de correo electrónico se ha pasado o no cuando se entregó.
 - **Aciertos de** directiva: información sobre las directivas que pueden haber permitido o bloqueado el correo electrónico entrante en su inquilino, invalidando nuestros veredictos de filtro de servicio.
-- **Reputación/detonación de carga:** examen actualizado de las direcciones URL y datos adjuntos del mensaje.
-- **Análisis del calificador:** revisión realizada por calificadores humanos para confirmar si los mensajes son malintencionados o no.
+- **Reputación/detonación de carga**: examen actualizado de las direcciones URL y datos adjuntos del mensaje.
+- **Análisis de calificadores**: revisión realizada por calificadores humanos para confirmar si los mensajes son malintencionados o no.
 
 > [!IMPORTANT]
 > El análisis de reputación/detonación y calificador de carga no se realiza en todos los inquilinos. La información se bloquea para que no salga de la organización cuando los datos no deben salir del límite del espacio empresarial con fines de cumplimiento.
 
-Para obtener otras formas de enviar mensajes de correo electrónico, direcciones URL y datos adjuntos a Microsoft, vea [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+Para obtener otras formas de enviar mensajes de correo electrónico, direcciones URL y datos adjuntos a Microsoft, vea [Informar de mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com/>. Para ir directamente a la **página Envíos,** use <https://security.microsoft.com/reportsubmission> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com/>. Para ir directamente a la **página Envíos** , use <https://security.microsoft.com/reportsubmission>.
 
 - Para enviar mensajes y archivos a Microsoft, debe ser miembro de uno de los siguientes grupos de roles:
-  - **Administrador de seguridad** **o lector de** seguridad en el Microsoft 365 Defender [portal](permissions-microsoft-365-security-center.md).
+  - **Administrador de** seguridad **o lector de seguridad** [en el portal Microsoft 365 Defender seguridad](permissions-microsoft-365-security-center.md).
   
-    Tenga en cuenta que la pertenencia a este grupo de roles es necesaria para ver los [envíos](#view-user-submissions-to-microsoft) de usuarios al buzón personalizado, tal como se describe más adelante en este artículo.
+    Tenga en cuenta que la pertenencia a este grupo de roles es necesaria para [ver los envíos](#view-user-submissions-to-microsoft) de usuarios al buzón personalizado, tal como se describe más adelante en este artículo.
 
 - Los administradores pueden enviar mensajes tan antiguos como 30 días si aún están disponibles en el buzón y no purgados por el usuario u otro administrador.
 
 - Los envíos de administradores se limitan a las siguientes tasas:
   - Envíos máximos en un período de 15 minutos: 150 envíos
   - Mismos envíos en un período de 24 horas: 3 envíos
-  - Mismos envíos en un período de 15 minutos: 1 envíos
+  - Mismos envíos en un período de 15 minutos: 1 envío
   
-- Para obtener más información acerca de cómo los usuarios pueden enviar mensajes y archivos a Microsoft, vea [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+- Para obtener más información acerca de cómo los usuarios pueden enviar mensajes y archivos a Microsoft, vea [Informar de mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="report-suspicious-content-to-microsoft"></a>Informar de contenido sospechoso a Microsoft
 
-1. En el portal Microsoft 365 Defender en , vaya a la página Envíos en Correo electrónico <https://security.microsoft.com> &   \> **envíos de colaboración**. Para ir directamente a la **página Envíos,** use <https://security.microsoft.com/reportsubmission> .
+1. En el Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la página **Envíos** en **Acciones & envíos**\>. Para ir directamente a la **página Envíos** , use <https://security.microsoft.com/reportsubmission>.
 
-2. En la **página Envíos,** compruebe que la pestaña **Enviado** para el análisis está seleccionada, seleccione el correo electrónico que desea notificar y, a continuación, haga clic en Enviar a Microsoft para el ![ icono de análisis.](../../media/m365-cc-sc-create-icon.png) **Enviar a Microsoft para su análisis**.
+2. En la página Envíos, compruebe que la  pestaña Correos  electrónicos o datos  **adjuntos** de correo electrónico o direcciones URL esté seleccionada en función del tipo de contenido que desea notificar y, a continuación, ![haga clic en Enviar a Microsoft para el icono de análisis.](../../media/m365-cc-sc-create-icon.png) **Enviar a Microsoft para su análisis**.
 
-3. Use el menú desplegable Enviar a **Microsoft** para análisis que parece enviar el correo electrónico, la dirección URL o los datos adjuntos de correo electrónico, tal como se describe en las secciones siguientes.
+3. Use el **menú desplegable Enviar a Microsoft** para análisis que parece enviar el tipo de contenido correspondiente (correo electrónico, dirección URL o datos adjuntos de correo electrónico) como se describe en las secciones siguientes.
 
    > [!NOTE]
    > Los envíos de archivos y direcciones URL no están disponibles en las nubes que no permiten que los datos abandone el entorno. La capacidad de seleccionar Archivo o DIRECCIÓN URL se mostrará en gris.
 
 ### <a name="notify-users-from-within-the-portal"></a>Notificar a los usuarios desde el portal
 
-1. En el portal Microsoft 365 Defender en , vaya a la página Envíos en Correo electrónico <https://security.microsoft.com> &   \> **envíos de colaboración**. Para ir directamente a la **página Envíos,** use <https://security.microsoft.com/reportsubmission> .
+1. En el Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la página **Envíos** en **Correo electrónico & envíos de** \> **colaboración**. Para ir directamente a la **página Envíos** , use <https://security.microsoft.com/reportsubmission>.
 
-2. En la **página Envíos,** seleccione la pestaña **Mensajes** notificados por el usuario y, a continuación, seleccione el mensaje que desea marcar y notificar.
+2. En la **página Envíos** , seleccione **la pestaña Mensajes** notificados por el usuario y, a continuación, seleccione el mensaje que desea marcar y notificar.
 
-3. Seleccione la **lista desplegable Marcar como y** notificar y, a continuación, seleccione No **se** encontraron amenazas \> **de suplantación** de identidad o correo no **deseado.**
+3. Seleccione la **lista desplegable Marcar como y** notificar y, a continuación, **seleccione No se** \> encontraron amenazas **de suplantación de identidad** o **correo no deseado**.
 
    :::image type="content" alt-text="Enviar mensajes desde el portal." source="../../media/unified-submission-user-reported-message.png" lightbox="../../media/unified-submission-user-reported-message.png":::
 
-El mensaje notificado se marcará como un falso positivo o un falso negativo. Se enviará automáticamente una notificación por correo electrónico desde el portal al usuario que informó del mensaje.
+El mensaje notificado se marcará como un falso positivo o un falso negativo. Una notificación de correo electrónico se envía automáticamente desde el portal al usuario que informó del mensaje.
 
 ### <a name="submit-a-questionable-email-to-microsoft"></a>Enviar un correo electrónico cuestionable a Microsoft
 
-1. En el **cuadro Seleccionar el tipo de envío,** compruebe que **el** correo electrónico está seleccionado en la lista desplegable.
+1. En el **cuadro Seleccionar el tipo de envío** , compruebe que **el correo** electrónico está seleccionado en la lista desplegable.
 
 2. En la **sección Agregar el identificador de mensaje de red o cargar** el archivo de correo electrónico, use una de las siguientes opciones:
-   - Agregar el identificador de mensaje de red de correo **electrónico:** se trata de un valor GUID que está disponible en el encabezado **X-MS-Exchange-Organization-Network-Message-Id** en el mensaje o en el encabezado **X-MS-Office365-Filtering-Correlation-Id** en mensajes en cuarentena.
-   - **Upload el archivo de correo electrónico (.msg o .eml):** haga clic **en Examinar archivos**. En el cuadro de diálogo que se abre, busque y seleccione el archivo .eml o .msg y, a continuación, haga clic **en Abrir**.
+   - Agregar el identificador de mensaje de red de **correo electrónico:** este es un valor GUID que está disponible en el encabezado **X-MS-Exchange-Organization-Network-Message-Id** en el mensaje o en el encabezado **X-MS-Office365-Filtering-Correlation-Id** en mensajes en cuarentena.
+   - **Upload el archivo de correo electrónico (.msg o .eml):** Haga clic **en Examinar archivos**. En el cuadro de diálogo que se abre, busque y seleccione el archivo .eml o .msg y, a continuación, haga clic en **Abrir**.
 
 3. En el **cuadro Elegir un destinatario con un** problema, especifique el destinatario con el que desea ejecutar una comprobación de directiva. La comprobación de directivas determinará si el correo electrónico omitió el examen debido a directivas de usuario u organización.
 
-4. En la **sección Seleccionar un motivo para enviar a Microsoft,** seleccione una de las siguientes opciones:
+4. En la **sección Seleccionar un motivo para enviar a Microsoft** , seleccione una de las siguientes opciones:
    - **No debería haber sido bloqueado (Falso positivo)**
-   - **Debería haber sido bloqueado (Falso negativo):** en la sección El correo electrónico debería haber sido categorizado como sección que aparece, seleccione uno de los siguientes valores (si no está seguro, use su mejor criterio): 
+   - **Debería haber sido bloqueado (Falso negativo):** En la sección  El correo electrónico debería haber sido categorizado como sección que aparece, seleccione uno de los siguientes valores (si no está seguro, use su mejor criterio):
      - **Suplantación de identidad**
      - **Malware**
      - **Correo no deseado**
@@ -112,13 +112,15 @@ El mensaje notificado se marcará como un falso positivo o un falso negativo. Se
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Enviar una dirección URL sospechosa a Microsoft
 
-1. En el **cuadro Seleccionar el tipo de envío,** seleccione DIRECCIÓN **URL** en la lista desplegable.
+1. En el **cuadro Seleccionar el tipo de envío** , seleccione **DIRECCIÓN URL** en la lista desplegable.
 
-2. En el **cuadro Dirección URL** que aparece, escriba la dirección URL completa (por ejemplo, `https://www.fabrikam.com/marketing.html` ).
+2. En el **cuadro Dirección URL** que aparece, escriba la dirección URL completa (por ejemplo, `https://www.fabrikam.com/marketing.html`).
 
-3. En la **sección Seleccionar un motivo para enviar a Microsoft,** seleccione una de las siguientes opciones:
+3. En la **sección Seleccionar un motivo para enviar a Microsoft** , seleccione una de las siguientes opciones:
    - **No debería haber sido bloqueado (Falso positivo)**
-   - **Debería haber sido bloqueado (Falso negativo):** en la sección Esta **dirección URL** debería haber sido categorizada como sección que aparece, seleccione **Phish** o **Malware**.
+   - **Debería haber sido bloqueado (Falso negativo):** En la sección Esta **dirección URL** debería haber sido categorizada como sección que aparece, seleccione uno de los siguientes valores (si no está seguro, use su mejor criterio):
+     - **Suplantación de identidad**
+     - **Malware**
 
 4. Cuando haya terminado, haga clic en **Enviar**.
 
@@ -127,36 +129,38 @@ El mensaje notificado se marcará como un falso positivo o un falso negativo. Se
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>Enviar datos adjuntos de correo electrónico sospechosos a Microsoft
 
-1. En el **cuadro Seleccionar el tipo de envío,** seleccione Datos **adjuntos** de correo electrónico de la lista desplegable.
+1. En el **cuadro Seleccionar el tipo de envío** , seleccione **Datos adjuntos de correo electrónico** de la lista desplegable.
 
-2. En la **sección Archivo** que aparece, haga clic en **Examinar archivos**. En el cuadro de diálogo que se abre, busque y seleccione el archivo y, a continuación, haga clic en **Abrir**.
+2. En la **sección Archivo** que aparece, haga clic **en Examinar archivos**. En el cuadro de diálogo que se abre, busque y seleccione el archivo y, a continuación, haga clic en **Abrir**.
 
-3. En la **sección Seleccionar un motivo para enviar a Microsoft,** seleccione una de las siguientes opciones:
+3. En la **sección Seleccionar un motivo para enviar a Microsoft** , seleccione una de las siguientes opciones:
    - **No debería haber sido bloqueado (Falso positivo)**
-   - **Debería haber sido bloqueado (Falso negativo):** en la sección Este archivo debería haber sido categorizado como sección que aparece, **Malware** es la única opción y se selecciona automáticamente. 
+   - **Debería haber sido bloqueado (Falso negativo):** en la sección  Este archivo debería haber sido categorizado como sección que aparece, seleccione uno de los siguientes valores (si no está seguro, use su mejor criterio):
+     - **Suplantación de identidad**
+     - **Malware**
 
 4. Cuando haya terminado, haga clic en **Enviar**.
 
     > [!div class="mx-imgBorder"]
-    > ![Ejemplo de envío de nuevos datos adjuntos.](../../media/submission-file-flyout.png)
+    > ![Ejemplo de envío de nuevos datos adjuntos.](../../media/submit-email-attachment-for-analysis.png)
 
 > [!NOTE]
 > Si el filtrado de malware ha reemplazado los datos adjuntos del mensaje por el archivo Text.txt de alerta de malware, debe enviar el mensaje original desde la cuarentena que contiene los datos adjuntos originales. Para obtener más información sobre la cuarentena y cómo liberar mensajes con falsos positivos de malware, vea [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
 
 ## <a name="view-admin-submissions-to-microsoft"></a>Ver envíos de administrador a Microsoft
 
-1. En el portal Microsoft 365 Defender en , vaya a la página Envíos en Correo electrónico <https://security.microsoft.com> &   \> **envíos de colaboración**. Para ir directamente a la **página Envíos,** use <https://security.microsoft.com/reportsubmission> .
+1. En el Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la página **Envíos** en **Acciones & envíos**\>. Para ir directamente a la **página Envíos** , use <https://security.microsoft.com/reportsubmission>.
 
-2. En la **página Envíos,** compruebe que **la** pestaña Correos electrónicos, dirección **URL** o **Datos** adjuntos de correo electrónico esté seleccionada.
+2. En la **página Envíos** , compruebe **que la pestaña** Correos electrónicos, **dirección URL** **o datos** adjuntos de correo electrónico esté seleccionada.
 
-   - Puede ordenar las entradas haciendo clic en un encabezado de columna disponible. Haga **clic en** Personalizar columnas para mostrar un máximo de siete columnas. Los valores predeterminados están marcados con un asterisco (<sup>\*</sup>):
+   - Puede ordenar las entradas haciendo clic en un encabezado de columna disponible. Haga **clic en Personalizar columnas** para mostrar un máximo de siete columnas. Los valores predeterminados están marcados con un asterisco (<sup>\*</sup>):
      - **Nombre del envío**<sup>\*</sup>
      - **Remitente**<sup>\*</sup>
      - **Destinatario**
      - **Fecha enviada**<sup>\*</sup>
      - **Motivo para enviar**<sup>\*</sup>
-     - **Estado de reescaneo**<sup>\*</sup>
-     - **Volver a examinar el resultado**<sup>\*</sup>
+     - **Estado**<sup>\*</sup>
+     - **Resultado**<sup>\*</sup>
      - **Veredicto de filtro**
      - **Motivo de entrega/bloqueo**
      - **Identificador de envío**
@@ -174,33 +178,36 @@ El mensaje notificado se marcará como un falso positivo o un falso negativo. Se
      Cuando haya terminado, haga clic en **Aplicar**.
 
      > [!div class="mx-imgBorder"]
-     > ![Nueva personalización de las opciones de columna para envíos de administrador.](../../media/admin-submission-customize-columns.png)
+     > ![Nueva personalización de las opciones de columna para envíos de administrador.](../../media/submit-admin-submissios-customize-columns.png)
 
    - Para filtrar las entradas, haga clic **en Filtrar**. Los filtros disponibles son:
-     - **Fecha enviada:** **Fecha de inicio** y Fecha de **finalización**.
-     - **Identificador de envío:** valor GUID que se asigna a cada envío.
+     - **Fecha enviada**: **Fecha de inicio y** **Fecha de finalización**.
+     - **Identificador de envío**: valor GUID que se asigna a cada envío.
      - **Id. de mensaje de red**
      - **Sender**
      - **Destinatario**
      - **Nombre**
      - **Enviado por**
+     - **Motivo para enviar**
+     - **Estado**
+     - **Tags**
 
      Cuando haya terminado, haga clic en **Aplicar**.
 
      > [!div class="mx-imgBorder"]
-     > ![Nuevas opciones de filtro para envíos de administrador.](../../media/admin-submission-filters.png)
+     > ![Nuevas opciones de filtro para envíos de administrador.](../../media/submit-admin-submissions-view-filters.png)
 
    - Para agrupar las entradas, haga clic **en Agrupar** y seleccione uno de los siguientes valores de la lista desplegable:
      - **Ninguna**
      - **Tipo**
      - **Motivo**
      - **Estado**
-     - **Volver a examinar el resultado**
+     - **Resultado**
      - **Tags**
 
    - Para exportar las entradas, haga clic en **Exportar**. En el cuadro de diálogo que aparece, guarde el .csv archivo.
 
-### <a name="admin-submission-rescan-details"></a>Detalles de reescaneo de envío de administrador
+### <a name="admin-submission-result-details"></a>Detalles del resultado del envío de administrador
 
 Los mensajes que se envían en envíos de administrador se revisan y los resultados se muestran en el menú desplegable de detalles de envíos:
 
@@ -209,15 +216,15 @@ Los mensajes que se envían en envíos de administrador se revisan y los resulta
 - Actualice los resultados de cancelación para ver si las direcciones URL o los archivos contenidos en el mensaje son malintencionados o no.
 - Comentarios de los calificadores.
 
-Si se encontró una invalidación, se volverá a ejecutar una detección que se completará en unos minutos. Si no hubo un problema en la autenticación o entrega de correo electrónico no se vio afectado por una invalidación, los comentarios de los calificadores podrían tardar hasta un día.
+Si se encontró una invalidación, el resultado debería estar disponible en varios minutos. Si no hubo un problema en la autenticación o entrega de correo electrónico no se vio afectado por una invalidación, los comentarios de los calificadores podrían tardar hasta un día.
 
 ## <a name="view-user-submissions-to-microsoft"></a>Ver envíos de usuario a Microsoft
 
-Si ha implementado el complemento Report  [Message](enable-the-report-message-add-in.md), el complemento Report [Phishing](enable-the-report-phish-add-in.md)o los usuarios usan los informes integrados en [Outlook en la Web,](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)puede ver qué usuarios están informando en la pestaña Mensaje notificado por el usuario.
+Si ha implementado el complemento Report [Message](enable-the-report-message-add-in.md), el complemento [Report Phishing](enable-the-report-phish-add-in.md) o los usuarios usan los informes integrados en [Outlook en la Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), puede ver qué usuarios están informando en la pestaña Mensaje de usuario notificado.
 
-1. En el portal Microsoft 365 Defender en , vaya a la página Envíos en Correo electrónico <https://security.microsoft.com> &   \> **envíos de colaboración**. Para ir directamente a la **página Envíos,** use <https://security.microsoft.com/reportsubmission> .
+1. En el Microsoft 365 Defender en <https://security.microsoft.com>, vaya a la página **Envíos** en **Acciones & envíos**\>. Para ir directamente a la **página Envíos** , use <https://security.microsoft.com/reportsubmission>.
 
-2. En la **página Envíos,** seleccione la **pestaña Mensajes notificados por el** usuario.
+2. En la **página Envíos** , seleccione la **pestaña Mensajes notificados por el** usuario.
 
    - Puede ordenar las entradas haciendo clic en un encabezado de columna disponible. Haga **clic en Personalizar columnas** para mostrar las opciones. Los valores predeterminados están marcados con un asterisco (<sup>\*</sup>):
 
@@ -226,12 +233,13 @@ Si ha implementado el complemento Report  [Message](enable-the-report-message-ad
      - **Fecha notificada**<sup>\*</sup>
      - **Remitente**<sup>\*</sup>
      - **Motivo notificado**<sup>\*</sup>
-     - **Volver a examinar el resultado**<sup>\*</sup>
+     - **Resultado**<sup>\*</sup>
      - **Id. de mensaje notificado**
      - **Id. de mensaje de red**
      - **IP del remitente**
      - **Notificado desde**
      - **Simulación de phishing**
+     - **Convertido a envío de administrador**
      - **Etiquetas**<sup>\*</sup>
      - **Marcado como**<sup>\*</sup>
      - **Marcado por**
@@ -240,35 +248,38 @@ Si ha implementado el complemento Report  [Message](enable-the-report-message-ad
      Cuando haya terminado, haga clic en **Aplicar**.
 
    - Para filtrar las entradas, haga clic **en Filtrar**. Los filtros disponibles son:
-     - **Fecha notificada**: **Fecha de inicio** y Fecha de **finalización**.
+     - **Fecha notificada**: **Fecha de inicio** y **fecha de finalización**.
      - **Informe realizado por**
      - **Asunto del correo electrónico**
      - **Id. de mensaje notificado**
      - **Id. de mensaje de red**
      - **Sender**
-     - **Motivo notificado:** **No es correo no** deseado, **phish** o correo **no deseado.**
-     - **Simulación de phish:** **Sí** o **No**
+     - **Motivo notificado**: **No es correo no** deseado, **suplantación de identidad** o **correo no deseado**
+     - **Notificado desde**: **complemento de Microsoft** **o complemento de terceros**
+     - **Simulación de phish**: **Sí** o **No**
+     - **Convertido a envío de administrador**: **Sí** o **No**
      - **Tags**
 
      Cuando haya terminado, haga clic en **Aplicar**.
 
      > [!div class="mx-imgBorder"]
-     > ![Nuevas opciones de filtro para envíos de usuarios.](../../media/admin-submission-reported-messages.png)
+     > ![Nuevas opciones de filtro para envíos de usuarios.](../../media/submit-user-submissions-view-filters.png)
 
    - Para agrupar las entradas, haga clic **en Agrupar** y seleccione uno de los siguientes valores de la lista desplegable:
      - **Ninguna**
      - **Motivo**
      - **Sender**
      - **Informe realizado por**
-     - **Volver a examinar el resultado**
+     - **Resultado**
      - **Notificado desde**
      - **Simulación de phishing**
+     - **Convertido a envío de administrador**
      - **Tags**
    
    - Para exportar las entradas, haga clic en **Exportar**. En el cuadro de diálogo que aparece, guarde el .csv archivo.
 
 > [!NOTE]
-> Si las organizaciones están configuradas para enviar mensajes notificados por el usuario solo  al buzón personalizado, los mensajes notificados no se enviarán para volver a examinarse y los resultados de los mensajes notificados por el usuario siempre estarán vacíos.
+> Si las organizaciones están configuradas para enviar mensajes notificados por el usuario solo al buzón personalizado, los mensajes notificados no se enviarán para  volver a examinarse y los resultados de los mensajes notificados por el usuario siempre estarán vacíos.
 
 ### <a name="undo-user-submissions"></a>Deshacer envíos de usuarios
 

@@ -1,7 +1,7 @@
 ---
-title: Inventario de software en Administración de amenazas y vulnerabilidades
-description: La página de inventario de software de Microsoft Defender para el Administración de amenazas y vulnerabilidades muestra cuántas debilidades y vulnerabilidades se han detectado en el software.
-keywords: Administración de amenazas y vulnerabilidades, Microsoft Defender para endpoint, inventario de software de Microsoft Defender para endpoint, Microsoft Defender para el inventario de amenazas de punto de conexión & administración de vulnerabilidades, Microsoft Defender para endpoints & administración de vulnerabilidades de software, inventario de software de Microsoft Defender para Endpoint tvm, inventario de software de tvm
+title: Inventario de software en la administración de amenazas y vulnerabilidades
+description: La página de inventario de software de Microsoft Defender para la administración de amenazas y vulnerabilidades de Endpoint muestra cuántas debilidades y vulnerabilidades se han detectado en el software.
+keywords: administración de amenazas y vulnerabilidades, Microsoft Defender para endpoint, Inventario de software de Microsoft Defender para endpoint, Microsoft Defender para la administración de vulnerabilidades & amenazas de Endpoint, Inventario de software de administración de vulnerabilidades de Microsoft Defender para Endpoint, Inventario de software tvm de Microsoft & Defender para Endpoint, inventario de software tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,54 +16,63 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b0e32fe31b69149bac4bac1796a0260763e9a078
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: e6bf614730caa9060a334c0a01c2dfe64b24df78
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164243"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325293"
 ---
-# <a name="software-inventory---threat-and-vulnerability-management"></a>Inventario de software: Administración de amenazas y vulnerabilidades
+# <a name="software-inventory---threat-and-vulnerability-management"></a>Inventario de software: administración de amenazas y vulnerabilidades
+
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-El inventario de software en Administración de amenazas y vulnerabilidades es una lista de software conocido en su organización con enumeraciones de plataforma [común (CPE) oficiales.](https://nvd.nist.gov/products/cpe) Los productos de software sin un CPE oficial no tienen vulnerabilidades publicadas. También incluye detalles como el nombre del proveedor, el número de debilidades, las amenazas y el número de dispositivos expuestos.
+El inventario de software en la administración de amenazas y vulnerabilidades es una lista de software conocido en su organización. El filtro predeterminado de la página de inventario de software muestra todo el software con enumeraciones de plataforma [común (CPE) oficiales](https://nvd.nist.gov/products/cpe). La vista incluye detalles como el nombre del proveedor, el número de debilidades, las amenazas y el número de dispositivos expuestos.
 
-## <a name="how-it-works"></a>Funcionamiento
+Puede quitar el filtro **CPE Disponible** para obtener más visibilidad y aumentar el ámbito de búsqueda en todo el software instalado de la organización. Esto significa que todo el software, incluido el software sin CPE, se mostrará ahora en la lista de inventario de software.
 
-En el campo de la detección, estamos aprovechando el mismo conjunto de señales responsables de la detección y evaluación de vulnerabilidades en Microsoft Defender para la detección de puntos de conexión y las capacidades [de respuesta.](overview-endpoint-detection-response.md)
+> [!NOTE]
+> Dado que la administración de vulnerabilidades usa las CPE para identificar el software y las vulnerabilidades, aunque los productos de software sin CPE se mostrarán en la página de inventario de software, la administración de amenazas y vulnerabilidades y la información como, vulnerabilidades, número de dispositivos expuestos y debilidades no estarán disponibles para ellos.
+
+## <a name="how-it-works"></a>Cómo funciona
+
+En el campo de la detección, estamos aprovechando el mismo conjunto de señales responsables de la detección y evaluación de vulnerabilidades en Microsoft Defender para la detección de puntos de conexión y las capacidades [de respuesta](overview-endpoint-detection-response.md).
 
 Dado que es en tiempo real, en cuestión de minutos, verá información de vulnerabilidad a medida que se descubran. El motor captura automáticamente información de varias fuentes de seguridad. De hecho, verás si un software determinado está conectado a una campaña de amenazas en directo. También proporciona un vínculo a un informe de Análisis de amenazas tan pronto como esté disponible.
 
 ## <a name="navigate-to-the-software-inventory-page"></a>Vaya a la página Inventario de software
 
-Para obtener acceso a la página Inventario de software, seleccione **Inventario** de software Administración de amenazas y vulnerabilidades menú de navegación en [el portal de Microsoft 365 Defender.](portal-overview.md)
+Para acceder a la página de inventario de software, seleccione **Inventario** de software en el menú de navegación de administración de amenazas y vulnerabilidades del [portal de Microsoft 365 Defender](portal-overview.md).
 
 Ver software en dispositivos específicos en las páginas de dispositivos individuales de la [lista de dispositivos](machines-view-overview.md).
 
 > [!NOTE]
-> Si busca software con la búsqueda global de Microsoft Defender para endpoint, asegúrese de colocar un carácter de subrayado en lugar de un espacio. Por ejemplo, para obtener los mejores resultados de búsqueda, escribiría "windows_10" o "windows_11" en lugar de "Windows 10" o "Windows 11".
+> Si busca software con la búsqueda global de Microsoft Defender para endpoint, asegúrese de colocar un carácter de subrayado en lugar de un espacio. Por ejemplo, para obtener los mejores resultados de búsqueda, escribirías "windows_10" o "windows_11" en lugar de "Windows 10" o "Windows 11".
 
 ## <a name="software-inventory-overview"></a>Introducción al inventario de software
 
 La **página** Inventario de software se abre con una lista de software instalado en la red, incluido el nombre del proveedor, las debilidades encontradas, las amenazas asociadas a ellos, los dispositivos expuestos, el impacto en la puntuación de exposición y las etiquetas.
 
-Puede filtrar la vista de lista en función de las debilidades encontradas en el software, las amenazas asociadas con ellos y las etiquetas como si el software ha llegado al final de la compatibilidad.
+De forma predeterminada, la vista se filtra mediante **código de producto (CPE): disponible**. También puede filtrar la vista de lista en función de las debilidades encontradas en el software, las amenazas asociadas con ellos y etiquetas como si el software ha llegado al final de la compatibilidad.
 
-:::image type="content" alt-text="Ejemplo de la página de aterrizaje para el inventario de software." source="images/tvm-software-inventory.png" lightbox="images/tvm-software-inventory.png":::
+:::image type="content" alt-text="Ejemplo de la página de aterrizaje para el inventario de software." source="images/software-inventory-page.png" lightbox="images/tvm-software-inventory.png":::
 
-Seleccione el software que desea investigar. Se abrirá un panel desplegable con una vista más compacta de la información de la página. Puede profundizar en la investigación y seleccionar Abrir **página de software,** o marcar cualquier incoherencia técnica seleccionando **Imprecisión de informe.**
+Seleccione el software que desea investigar. Se abrirá un panel desplegable con una vista más compacta de la información de la página. Puede profundizar en la investigación y seleccionar Abrir **página de software**, o marcar cualquier incoherencia técnica seleccionando **Imprecisión de informe**.
 
 ### <a name="software-that-isnt-supported"></a>Software que no es compatible
 
-El software que actualmente no es compatible con amenazas & administración de vulnerabilidades puede estar presente en la página Inventario de software. Como no se admite, solo estarán disponibles datos limitados. Filtra por software no compatible con la opción "No disponible" en la sección "Debilidad".
+El software que actualmente no es compatible con las amenazas & la administración de vulnerabilidades puede estar presente en la página de inventario de software. Como no se admite, solo estarán disponibles datos limitados. Filtra por software no compatible con la opción "No disponible" en la sección "Debilidad".
 
 :::image type="content" alt-text="Filtro de software no compatible." source="images/tvm-unsupported-software-filter.png" lightbox="images/tvm-unsupported-software-filter.png":::
 
@@ -74,13 +83,11 @@ Lo siguiente indica que el software no es compatible:
 - Texto informativo agregado en el panel lateral y en la página de software
 - La página de software no tendrá las recomendaciones de seguridad, vulnerabilidades detectadas ni secciones de escala de tiempo de eventos
 
-Actualmente, los productos sin CPE no se muestran en la página de inventario de software, solo en el inventario de software de nivel de dispositivo.
-
 ## <a name="software-inventory-on-devices"></a>Inventario de software en dispositivos
 
-En el panel Microsoft 365 Defender navegación del portal, vaya al **[Inventario de dispositivos.](machines-view-overview.md)** Selecciona el nombre de un dispositivo para abrir la página  del dispositivo (como Computer1) y luego selecciona la pestaña Inventario de software para ver una lista de todo el software conocido presente en el dispositivo. Seleccione una entrada de software específica para abrir el menú desplegable con más información.
+En el panel de navegación del portal de Microsoft 365 Defender, vaya al **[Inventario de dispositivos](machines-view-overview.md)**. Selecciona el nombre de un dispositivo para abrir la página del dispositivo (como Computer1) y luego  selecciona la pestaña Inventario de software para ver una lista de todo el software conocido presente en el dispositivo. Seleccione una entrada de software específica para abrir el menú desplegable con más información.
 
-El software puede estar visible en el nivel del dispositivo incluso si actualmente no es compatible con Administración de amenazas y vulnerabilidades. Sin embargo, solo estarán disponibles datos limitados. Sabrás si el software no es compatible porque dirá "No disponible" en la columna "Debilidad".
+El software puede estar visible en el nivel del dispositivo incluso si actualmente no es compatible con la administración de amenazas y vulnerabilidades. Sin embargo, solo estarán disponibles datos limitados. Sabrás si el software no es compatible porque dirá "No disponible" en la columna "Debilidad".
 
 El software sin CPE también puede aparecer en este inventario de software específico del dispositivo.
 
@@ -90,7 +97,7 @@ Consulta la evidencia de dónde hemos detectado un software específico en un di
 
 Seleccione un nombre de software para abrir el menú desplegable y busque la sección denominada "Evidencia de software".
 
-:::image type="content" alt-text="Ejemplo de prueba de software Windows 10 de la lista de dispositivos, que muestra la ruta del Registro de pruebas de software." source="images/tvm-software-evidence.png" lightbox="images/tvm-software-evidence.png":::
+:::image type="content" alt-text="Ejemplo de prueba de software de Windows 10 de la lista de dispositivos, que muestra la ruta del Registro de pruebas de software." source="images/tvm-software-evidence.png" lightbox="images/tvm-software-evidence.png":::
 
 ## <a name="software-pages"></a>Páginas de software
 
@@ -98,7 +105,7 @@ Puede ver las páginas de software de varias maneras diferentes:
 
 - Página de inventario de > Seleccione un nombre de software > Página Seleccionar **software abierto** en el control desplegable
 - [Página recomendaciones de](tvm-security-recommendation.md) seguridad > Seleccionar una recomendación > Página Seleccionar **software abierto** en el control desplegable
-- [Página](threat-and-vuln-mgt-event-timeline.md) escala de tiempo de eventos > Seleccione un evento > Seleccione el nombre de software con hipervínculo (como Visual Studio 2017) en la sección denominada "Componente relacionado" en el control desplegable
+- [Página](threat-and-vuln-mgt-event-timeline.md) escala de tiempo de eventos > Seleccione un evento > Seleccione el nombre del software con hipervínculo (como Visual Studio 2017) en la sección denominada "Componente relacionado" en el control desplegable
 
  Aparecerá una página completa con todos los detalles de un software específico y la siguiente información:
 
@@ -114,16 +121,25 @@ Puede ver las páginas de software de varias maneras diferentes:
 
 ## <a name="report-inaccuracy"></a>Imprecisión de informe
 
-Informe de un falso positivo cuando vea información imprecisa, inexacta o incompleta. También puede informar sobre las recomendaciones de seguridad que ya se han corregido.
+Informe de una imprecisión cuando vea información de vulnerabilidad y resultados de evaluación incorrectos.
 
 1. Abra el control desplegable de software en la página Inventario de software.
-2. Seleccione **Error de informe**.
-3. En el panel desplegable, seleccione la categoría de imprecisión en el menú desplegable, rellene la dirección de correo electrónico y los detalles sobre la imprecisión.
-4. Seleccione **Enviar**. Sus comentarios se envían inmediatamente a los Administración de amenazas y vulnerabilidades expertos.
+2. Seleccione **Informar de imprecisión**.
+3. En el panel desplegable, elija un problema desde el que informar:
+
+    - un detalle de software es incorrecto
+    - el software no está instalado en ningún dispositivo de mi organización
+    - el número de dispositivos instalados o expuestos es incorrecto
+
+4. Rellene los detalles solicitados sobre la imprecisión. Esto variará en función del problema que informe.
+
+![Imprecisión de informe](images/report-inaccuracy-software.png)
+
+5. Seleccione **Enviar**. Sus comentarios se envían inmediatamente a los expertos en administración de amenazas y vulnerabilidades.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Información general sobre amenazas administración de vulnerabilidades amenazas](next-gen-threat-and-vuln-mgt.md)
+- [Introducción a la administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Recomendaciones de seguridad](tvm-security-recommendation.md)
 - [Línea de tiempo de eventos](threat-and-vuln-mgt-event-timeline.md)
 - [Ver y organizar la lista de Microsoft Defender para dispositivos de punto de conexión](machines-view-overview.md)

@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,23 +21,23 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0c00ecdde6f94d7737cb4dc8d503b83469821fb5
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: d0add9fe000966cdeb2ffc5ce23e4ba0690bbadb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171901"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320289"
 ---
 # <a name="microsoft-365-defender-integration-with-microsoft-sentinel"></a>integración de Microsoft 365 Defender con Microsoft Sentinel
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 El Microsoft 365 Defender para Microsoft Sentinel (versión preliminar) envía toda la información Microsoft 365 Defender incidentes y alertas a Microsoft Sentinel y mantiene los incidentes sincronizados. 
 
-Una vez que agregue el conector, Microsoft 365 Defender incidentes que incluyan todas las alertas asociadas, entidades e información relevante recibida de Microsoft Defender para &mdash; endpoint, Microsoft Defender for Identity, Microsoft Defender para Office 365 y Microsoft Defender para &mdash; aplicaciones en la nube se transmiten a Microsoft Sentinel como datos de información de seguridad y administración de eventos (SIEM), lo que proporciona contexto para realizar triajes y respuesta a incidentes con Microsoft Sentinel. 
+Una vez que agregue el conector, Microsoft 365 Defender incidentes que incluyan todas las alertas asociadas&mdash;, entidades e información relevante recibida de Microsoft Defender para endpoint, Microsoft Defender para Identity, Microsoft Defender para Office 365 y Microsoft Defender para&mdash; aplicaciones en la nube se transmiten a Microsoft Sentinel como datos de información de seguridad y administración de eventos (SIEM), lo que proporciona contexto para realizar triajes y respuesta a incidentes con Microsoft Sentinel. 
 
 Una vez en Microsoft Sentinel, los incidentes permanecen sincronizados bidireccionalmente con Microsoft 365 Defender, lo que le permite aprovechar las ventajas del portal de Microsoft 365 Defender y Microsoft Sentinel en Azure Portal para la investigación y respuesta de incidentes.
 

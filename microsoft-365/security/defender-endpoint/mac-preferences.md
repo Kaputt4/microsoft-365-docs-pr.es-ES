@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07e91e5b2cb93a6ba876510b558761f95489f496
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: cb3f38b861f85849165be330e03fe1d96a9c708c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765761"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326711"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Establecer preferencias para Microsoft Defender para endpoint en macOS
 
@@ -555,6 +555,26 @@ Especifica si los usuarios pueden enviar comentarios a Microsoft yendo a `Help` 
 |**Comments**|Disponible en Microsoft Defender para endpoint versión 101.19.61 o posterior.|
 |||
 
+
+
+#### <a name="control-sign-in-to-consumer-version-of-microsoft-defender"></a>Controlar el inicio de sesión en la versión de consumidor de Microsoft Defender
+
+Especifica si los usuarios pueden iniciar sesión en la versión de consumidor de Microsoft Defender.
+
+<br>
+
+****
+
+|Sección|Valor|
+|---|---|
+|**Dominio**|`com.microsoft.wdav`|
+|**Clave**|consumerExperience|
+|**Tipo de datos**|Cadena|
+|**Posibles valores**|habilitado (predeterminado) <p> deshabilitado|
+|**Comments**|Disponible en Microsoft Defender para endpoint versión 101.60.18 o posterior.|
+|||
+
+
 ### <a name="endpoint-detection-and-response-preferences"></a>Preferencias de detección y respuesta de extremos
 
 Administrar las preferencias del componente detección y respuesta de puntos de conexión (EDR) de Microsoft Defender para endpoint en macOS.
@@ -584,7 +604,7 @@ Especifique un nombre de etiqueta y su valor.
 |Sección|Valor|
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
-|**Clave**|etiquetas|
+|**Clave**|tags|
 |**Tipo de datos**|Diccionario (preferencia anidada)|
 |**Comments**|Vea las secciones siguientes para obtener una descripción del contenido del diccionario.|
 |||
@@ -1064,7 +1084,7 @@ Una vez que haya creado el perfil de configuración para su empresa, puede imple
 
 ### <a name="jamf-deployment"></a>Implementación de JAMF
 
-En la consola JAMF, abra **Perfiles** \> de configuración de **equipos, vaya** al perfil de configuración que desea usar y, a continuación, **seleccione Configuración Configuración**. Cree una entrada con como `com.microsoft.wdav` dominio de preferencia y cargue *el .plist* generado anteriormente.
+En la consola JAMF, abra **Perfiles** \> de configuración de **equipos, vaya** al perfil de configuración que desea usar y, a continuación, **seleccione Configuración**. Cree una entrada con como `com.microsoft.wdav` dominio de preferencia y cargue *el .plist* generado anteriormente.
 
 > [!CAUTION]
 > Debe especificar el dominio de preferencia correcto (`com.microsoft.wdav`); de lo contrario, Microsoft Defender no reconocerá las preferencias para endpoint.

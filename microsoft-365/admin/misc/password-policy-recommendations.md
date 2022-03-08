@@ -22,16 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Haga que su organización sea más segura contra ataques a contraseñas y prohíba las contraseñas comunes y habilite la autenticación multifactor basada en riesgos.
-ms.openlocfilehash: a77d6a157c3691739ee7f5a024796f1f203241e8
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 46e6c4ba163df0693630896b8db17b4eefe9828a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805897"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312582"
 ---
 # <a name="password-policy-recommendations"></a>Recomendaciones de directiva de contraseñas
 
 Como administrador de una organización, usted es el responsable de establecer la directiva de contraseñas para los usuarios de su organización. El establecimiento de la directiva de contraseñas puede resultar complicado y confuso, y en este artículo se proporcionan recomendaciones para que la organización sea más segura frente a ataques de contraseñas.
+
+Las cuentas basadas solo en la nube de Microsoft tienen una directiva de contraseña predefinida que no se puede cambiar. Los únicos elementos que puede cambiar son el número de días hasta que expire una contraseña y si las contraseñas expiran o no. 
   
 Para determinar con qué frecuencia expiran las contraseñas de Microsoft 365 en la organización, vea [Establecer la directiva de expiración de contraseñas para Microsoft 365](../manage/set-password-expiration-policy.md).
 

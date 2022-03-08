@@ -14,16 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security-compliance
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: af522fcd479b2fbcf8d3327f4cb382987cb7ad46
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 4261e32721da86233a0a929a435c318904d6ac12
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218579"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324149"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Crear un proceso de implementación gradual personalizado para actualizaciones de Microsoft Defender
 
@@ -56,21 +56,21 @@ En la tabla siguiente se enumeran las opciones de directiva de grupo disponibles
 ## <a name="group-policy"></a>Directiva de grupo
 
 > [!NOTE]
-> Se publicará una plantilla ADMX de Defender actualizada junto con la versión 21H2 de Windows 10. Una versión no localizada está disponible para su descarga en https://github.com/microsoft/defender-updatecontrols .
+> Se publicará una plantilla ADMX de Defender actualizada junto con la versión 21H2 de Windows 10. Una versión no localizada está disponible para su descarga en https://github.com/microsoft/defender-updatecontrols.
 
 Puede usar la [directiva de grupo](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN) para configurar y administrar Antivirus de Microsoft Defender en los puntos de conexión.
 
 En general, puede usar el siguiente procedimiento para configurar o cambiar la configuración Antivirus de Microsoft Defender de directiva de grupo:
 
-1. En el equipo de administración de directivas de grupo, abra la Consola de administración de directivas de **grupo,** haga clic con el botón secundario en el objeto de directiva de grupo  (GPO) que desea configurar y haga clic en **Editar**.
+1. En el equipo de administración de directivas de grupo, abra la Consola de administración de directivas de **grupo, haga** clic con el botón secundario en el objeto de directiva de **grupo (** GPO) que desea configurar y haga clic en **Editar**.
 
 2. Con el Editor de administración de directivas de grupo, vaya a **Configuración del equipo**.
 
 3. Haga clic **en Plantillas administrativas**.
 
-4. Expanda el árbol para **Windows componentes > Antivirus de Microsoft Defender**.
+4. Expanda el árbol para Windows **componentes > Antivirus de Microsoft Defender**.
 
-5. Expanda la sección (denominada  Ubicación en la tabla de este tema) que contiene la configuración que desea configurar, haga doble clic en la configuración para abrirlo y realice cambios en la configuración.
+5. Expanda la sección (denominada Ubicación en la  tabla de este tema) que contiene la configuración que desea configurar, haga doble clic en la configuración para abrirlo y realice cambios en la configuración.
 
 6. [Implemente el GPO actualizado como lo hace normalmente](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx).
 
@@ -78,9 +78,9 @@ En general, puede usar el siguiente procedimiento para configurar o cambiar la c
 
 Siga las instrucciones del siguiente vínculo para crear una directiva personalizada en Intune:
 
-[Agregar configuración personalizada para Windows 10 dispositivos en Microsoft Intune: Azure \| Microsoft Docs](/mem/intune/configuration/custom-settings-windows-10)
+[Agregar configuración personalizada para Windows 10 dispositivos en Microsoft Intune: Azure \|Microsoft Docs](/mem/intune/configuration/custom-settings-windows-10)
 
-Para obtener más información sobre el CSP de Defender usado para el proceso de implementación gradual, vea [Defender CSP](/windows/client-management/mdm/defender-csp).
+Para obtener más información sobre el CSP de Defender usado para el proceso de implementación gradual, consulta [CSP de Defender](/windows/client-management/mdm/defender-csp).
 
 ## <a name="powershell"></a>PowerShell
 

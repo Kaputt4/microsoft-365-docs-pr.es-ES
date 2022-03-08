@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -22,12 +22,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a3e1543ed56580983fec5b7eee6366e817d82079
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 3712875579c7d157fe52a5e115d059fc88b4b6d7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904164"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326501"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Ejecutar una simulación de ataque en un Microsoft 365 Defender piloto
 
@@ -46,7 +46,7 @@ Los servicios y aplicaciones de Microsoft 365 crean alertas cuando detectan un e
 
 ## <a name="simulate-attacks-with-the-microsoft-365-defender-portal"></a>Simular ataques con el portal Microsoft 365 Defender web
 
-El portal Microsoft 365 Defender cuenta con capacidades integradas para crear ataques simulados en el entorno piloto:
+El Microsoft 365 Defender cuenta con capacidades integradas para crear ataques simulados en el entorno piloto:
 
 - Aprendizaje de simulación de ataques Microsoft 365 Defender para Office 365 en [https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator).
   
@@ -103,9 +103,9 @@ En primer lugar, debe agregar puntos de conexión al entorno piloto.
 
 ### <a name="add-pilot-environment-endpoints"></a>Agregar extremos de entorno piloto
 
-En primer lugar, debes agregar un controlador de dominio de AD DS aislado y un Windows dispositivo a tu entorno piloto.
+En primer lugar, debes agregar un controlador de dominio de AD DS aislado y un dispositivo Windows a tu entorno piloto.
 
-1. Compruebe que el espacio empresarial del entorno piloto [haya Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
+1. Compruebe que el inquilino del entorno piloto [ha habilitado Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
 
 2. Compruebe que el controlador de dominio:
 
@@ -148,7 +148,7 @@ Para ejecutar la simulación del escenario de ataque:
 
 2. Inicie sesión en el dispositivo de prueba con la cuenta de usuario de prueba.
 
-3. Abra una Windows PowerShell en el dispositivo de prueba.
+3. Abre una Windows PowerShell en el dispositivo de prueba.
 
 4. Copie el siguiente script de simulación:
 
@@ -178,7 +178,7 @@ Verá este mensaje en la consola de PowerShell cuando se complete este script:
 ran NetSessionEnum against [DC Name] with return code result 0
 ```
 
-Para ver la característica De incidentes y respuesta automatizados en acción, mantenga el notepad.exe proceso abierto. Verá El incidente automatizado y la respuesta detienen el Bloc de notas proceso.
+Para ver la característica De incidentes y respuesta automatizados en acción, mantenga abierto notepad.exe proceso. Verá Que los incidentes automatizados y la respuesta detengan el Bloc de notas proceso.
 
 ### <a name="investigate-the-incident-for-the-simulated-attack"></a>Investigar el incidente del ataque simulado
 
@@ -187,7 +187,7 @@ Para ver la característica De incidentes y respuesta automatizados en acción, 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Al cambiar al punto de vista del analista de SOC, ahora puede empezar a investigar el ataque en el portal de Microsoft 365 Defender datos.
+Al cambiar al punto de vista del analista soc, ahora puede empezar a investigar el ataque en el portal de Microsoft 365 Defender web.
 
 1. Abra el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender web</a>.
 
@@ -277,7 +277,7 @@ Selecciona la **pestaña** Escala de tiempo para abrir la escala de tiempo del d
 
 La expansión de algunos de los comportamientos más interesantes proporciona detalles útiles, como árboles de proceso.
 
-Por ejemplo, desplácese hacia abajo hasta que encuentre el evento de alerta **Se observó la inyección de proceso sospechoso**. Seleccione el **powershell.exe** se inserta notepad.exe evento de proceso debajo de él, para mostrar el árbol de proceso completo para este comportamiento en el gráfico Entidades **de** eventos en el panel lateral. Use la barra de búsqueda para filtrar si es necesario.
+Por ejemplo, desplácese hacia abajo hasta que encuentre el evento de alerta **Se observó la inyección de proceso sospechoso**. Seleccione el **powershell.exe para** notepad.exe de proceso debajo de él, para mostrar el árbol de proceso completo para este comportamiento en el gráfico Entidades **de** eventos en el panel lateral. Use la barra de búsqueda para filtrar si es necesario.
 
 ![Ejemplo del árbol de procesos para el comportamiento de creación de archivos de PowerShell seleccionado.](../../media/mtp/fig12.png)
 
@@ -324,7 +324,7 @@ En la **página** Incidente, seleccione **Administrar incidente**. Establezca el
 
 ![Ejemplo de la página incidentes con el panel administrar incidentes abierto donde puede resolver el incidente.](../../media/mtp/fig16.png)
 
-Cuando se resuelve el incidente, resuelve todas las alertas asociadas en el portal de Microsoft 365 Defender y los portales relacionados.
+Cuando se resuelve el incidente, resuelve todas las alertas asociadas en el portal Microsoft 365 Defender y los portales relacionados.
 
 Esto ajusta las simulaciones de ataque para el análisis de incidentes, la investigación automatizada y la resolución de incidentes.
 

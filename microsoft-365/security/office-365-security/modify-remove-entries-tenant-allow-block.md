@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a modificar y quitar entradas en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f2662ac41e5df5cf2eb36413d8a58568ff336841
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f1ab3f815cc64af6d1383df228ef7961c3afdcec
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60212010"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330193"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>Modificar y quitar entradas a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -32,32 +32,34 @@ ms.locfileid: "60212010"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Puede usar el portal Microsoft 365 Defender o PowerShell para modificar y quitar entradas en la lista de inquilinos permitidos o bloqueados.
+Puede usar el portal de Microsoft 365 Defender o PowerShell para modificar y quitar entradas en la lista de inquilinos permitidos o bloqueados.
 
 ## <a name="use-the-microsoft-365-defender-portal"></a>Uso del portal de Microsoft 365 Defender
 
 ### <a name="modify-entries-in-the-tenant-allowblock-list"></a>Modificar entradas en la lista de inquilinos permitidos o bloqueados
 
-1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
+1. En el portal de Microsoft 365 Defender, vaya a **Directivas &** \>  \>  \> reglas de amenazas Sección Reglas de directivas de amenazas.
 
 2. Seleccione la pestaña que contiene el tipo de entrada que desea modificar:
-   - **Remitentes)
+   - **Remitentes**
+   - **Spoofing**
    - **DIRECCIONES URL**
    - **Files**
-   - **Spoofing**
 
-3. Seleccione la entrada que desea modificar y, a continuación, haga clic ![ en Editar icono.](../../media/m365-cc-sc-edit-icon.png) **Edición**. Los valores que puede modificar en el control desplegable que aparece dependen de la pestaña seleccionada en el paso anterior:
+
+3. Seleccione la entrada que desea modificar y, a continuación, haga clic en ![Editar icono.](../../media/m365-cc-sc-edit-icon.png) **Edición**. Los valores que puede modificar en el control desplegable que aparece dependen de la pestaña seleccionada en el paso anterior:
    - **Remitentes**
      - **No expire nunca** ni la fecha de expiración.
      - **Nota opcional**
+   - **Spoofing**
+     - **Acción**: puede cambiar el valor a **Permitir** o **Bloquear**.
    - **DIRECCIONES URL**
      - **No expire nunca** ni la fecha de expiración.
      - **Nota opcional**
    - **Files**
      - **No expire nunca** ni la fecha de expiración.
      - **Nota opcional**
-   - **Spoofing**
-     - **Acción:** puede cambiar el valor a **Permitir** o **Bloquear**.
+
 4. Cuando haya terminado, haga clic en **Guardar**.
 
 > [!NOTE]
@@ -65,23 +67,23 @@ Puede usar el portal Microsoft 365 Defender o PowerShell para modificar y quitar
 
 ### <a name="remove-entries-from-the-tenant-allowblock-list"></a>Quitar entradas de la lista de inquilinos permitidos o bloqueados
 
-1. En el portal Microsoft 365 Defender, vaya a **Directivas &** sección Reglas de directivas de amenazas sección Listas de \>  \>  \> **inquilinos permitidos o bloqueados.**
+1. En el portal de Microsoft 365 Defender, vaya a **Directivas &** \>  \>  \> reglas de amenazas Sección Reglas de directivas de amenazas.
 
 2. Seleccione la pestaña que contiene el tipo de entrada que desea quitar:
    - **Remitentes**
+   - **Spoofing**
    - **DIRECCIONES URL**
    - **Files**
-   - **Spoofing**
+ 
+3. Seleccione la entrada que desea quitar y, a continuación, haga clic en ![Eliminar icono.](../../media/m365-cc-sc-delete-icon.png) **Eliminar**.
 
-3. Seleccione la entrada que desea quitar y, a continuación, haga clic en ![ Eliminar icono.](../../media/m365-cc-sc-delete-icon.png) **Eliminar**.
-
-4. En el cuadro de diálogo de advertencia que aparece, haga clic **en Eliminar**.
+4. En el cuadro de diálogo de advertencia que aparece, haga clic en **Eliminar**.
 
 ## <a name="use-powershell"></a>Usar PowerShell
 
-### <a name="modify-block-file-and-url-entries-in-the-tenant-allowblock-list"></a>Modificar entradas de archivo de bloque y dirección URL en la lista de inquilinos permitidos o bloqueados
+### <a name="modify-allow-or-block-sender-file-and-url-entries-in-the-tenant-allowblock-list"></a>Modificar permitir o bloquear entradas de remitente, archivo y dirección URL en la lista de inquilinos permitidos o bloqueados
 
-Para modificar entradas de remitente, archivo y dirección URL de bloques en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
+Para modificar permitir o bloquear entradas de remitente, archivo y dirección URL en la lista de permitidos o bloqueados de inquilinos, use la sintaxis siguiente:
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
@@ -95,9 +97,9 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
-### <a name="remove-url-or-file-entries-from-the-tenant-allowblock-list"></a>Quitar direcciones URL o entradas de archivo de la lista de inquilinos permitidos o bloqueados
+### <a name="remove-allow-or-block-sender-url-or-file-entries-from-the-tenant-allowblock-list"></a>Quitar permitir o bloquear entradas de remitente, dirección URL o archivo de la lista de inquilinos permitidos o bloqueados
 
-Para quitar entradas de remitente, archivo y dirección URL de la lista de inquilinos permitidos o bloqueados, use la siguiente sintaxis:
+Para quitar o bloquear entradas de remitente, archivo y dirección URL de la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Ids <"Id1","Id2",..."IdN">
@@ -111,7 +113,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
 
-### <a name="modify-allow-or-block-spoofed-sender-entries"></a>Modificar permitir o bloquear entradas de remitente suplantadas
+### <a name="modify-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list"></a>Modificar permitir o bloquear entradas de remitente suplantadas de la lista de inquilinos permitidos o bloqueados
 
 Para modificar permitir o bloquear entradas de remitente suplantadas en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
 
@@ -125,10 +127,10 @@ En este ejemplo se cambia la entrada de remitente suplantada de permitir a bloqu
 Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -Action Block
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, [vea Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems).
+Para obtener información detallada sobre la sintaxis y los parámetros, [vea Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems).
 
-### <a name="remove-allow-or-block-spoofed-sender-entries"></a>Quitar entradas de remitente suplantados de identidad o bloquear
-
+### <a name="remove-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list"></a>Quitar entradas de remitente suplantados de identidad de la lista de permitidos o bloqueados del inquilino
+ 
 Para quitar entradas de remitente de suplantación de identidad de la lista de inquilinos permitidos o bloqueados, use la siguiente sintaxis:
 
 ```powershell

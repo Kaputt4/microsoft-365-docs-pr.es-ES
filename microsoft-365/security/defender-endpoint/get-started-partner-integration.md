@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 988632e84614b49262c9cc7b8a74b493c1a48b01
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: b063d8435817d7dd64c3febf6e3399f3876ef894
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171976"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319831"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Convertirse en socio de Microsoft Defender para punto de conexión
 
@@ -35,17 +35,17 @@ Para convertirse en un partner de soluciones de Defender for Endpoint, deberá s
 
 ## <a name="step-1-subscribe-to-a-microsoft-defender-for-endpoint-license"></a>Paso 1: Suscribirse a una licencia de Microsoft Defender para endpoint
 
-¿Desea experimentar Defender for Endpoint? [Registrarse para obtener una versión de prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink). Suscribirte te permite usar un inquilino de Microsoft Defender para endpoint con hasta tres dispositivos para desarrollar soluciones que se integren con Microsoft Defender para Endpoint.
+¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink). Suscribirte te permite usar un inquilino de Microsoft Defender para endpoint con hasta tres dispositivos para desarrollar soluciones que se integren con Microsoft Defender para Endpoint.
 
 ## <a name="step-2-fulfill-the-solution-validation-and-certification-requirements"></a>Paso 2: Cumplir los requisitos de validación y certificación de la solución
 
-La mejor manera de que los partners tecnológicos certifiquen que su integración funciona es que un [](https://securitycenter.microsoft.com/interoperability/partners) cliente conjunto apruebe el diseño de integración sugerido (el cliente puede usar la opción Recomendar **un** partner en la página Aplicación de partners en el Centro de seguridad de Microsoft Defender) y hacer que se prueba y se degrada al equipo de Microsoft Defender para endpoints.
+La mejor manera de que los partners tecnológicos certifiquen que su integración funciona es que un cliente conjunto apruebe el diseño de integración sugerido  (\(el cliente puede usar la opción Recomendar un partner Partners y api > [](https://security.microsoft.com/interoperability/partnersapps) Aplicaciones\) de partners en la página Aplicación de partners del Microsoft 365 Defender y hacer que se probara y se demostrase en el equipo de Microsoft Defender para endpoints.
 
 Una vez que el equipo de Microsoft Defender para endpoint haya revisado y aprobado la integración, le dirigiremos a que se le incluya como socio en la Asociación de seguridad inteligente de Microsoft.
 
 ## <a name="step-3-get-listed-in-the-microsoft-defender-for-endpoint-partner-application-portal"></a>Paso 3: Obtener una lista en el portal de aplicaciones de partners de Microsoft Defender para endpoint
 
-Microsoft Defender para endpoint admite la detección e [](partner-applications.md) integración de aplicaciones de terceros mediante la página de partners del producto que está incrustada en el portal de administración de Microsoft Defender para endpoints.
+Microsoft Defender para endpoint admite la detección e integración de aplicaciones de terceros mediante la [](partner-applications.md) página de partners del producto que está incrustada en el portal de administración de Microsoft Defender para endpoints.
 
 Para que su empresa aparezca como partner en la página de partners del producto, deberá proporcionar la siguiente información:
 
@@ -53,8 +53,8 @@ Para que su empresa aparezca como partner en la página de partners del producto
 2. Nombre del producto que se va a presentar.
 3. Proporcione una descripción del producto de 15 palabras.
 4. Vínculo a la página de aterrizaje para que el cliente complete la entrada de integración o blog que incluirá información suficiente para los clientes. Los equipos de marketing e ingeniería deben revisar cualquier nota de prensa, incluido el nombre del producto de Microsoft Defender para endpoint. Espere al menos 10 días para que se haga el proceso de revisión.
-5. Si usa un enfoque de Azure AD multiinquilino, necesitará el nombre Azure AD aplicación para realizar un seguimiento del uso de la aplicación.
-6. Incluya el User-Agent en cada llamada api realizada a Microsoft Defender para el conjunto público endpoint de API o Graph API de seguridad. Esto se usará con fines estadísticos, solución de problemas y reconocimiento de partners. Además, este paso es un requisito para pertenecer a Microsoft Intelligent Security Association (MISA).
+5. Si usa un enfoque de Azure AD multiinquilino, necesitamos el nombre Azure AD aplicación para realizar un seguimiento del uso de la aplicación.
+6. Incluya el User-Agent en cada llamada a la API realizada a Microsoft Defender para el conjunto público endpoint de API o Graph API de seguridad. Esto se usará con fines estadísticos, solución de problemas y reconocimiento de partners. Además, este paso es un requisito para pertenecer a Microsoft Intelligent Security Association (MISA).
 
    Siga estos pasos:
 

@@ -12,16 +12,16 @@ ms.author: tiaraquan
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: medium
-ms.openlocfilehash: a381bc70e73bf3bbb9f654f5d5dfffd2047f8ab5
-ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
+ms.openlocfilehash: c70b15a3d35dc4b19c5961e9fbe0404780c12309
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62895984"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330263"
 ---
 # <a name="privacy"></a>Privacidad
 
-Microsoft Managed Desktop es un servicio de TI como servicio (ITaaS) para clientes de la nube empresarial diseñado para mantener los dispositivos de Windows de los empleados implementados y actualizados.
+Microsoft Managed Desktop es un servicio de TI como servicio (ITaaS) para clientes empresariales en la nube diseñado para mantener los dispositivos Windows de los empleados implementados y actualizados.
 
 También proporciona operaciones y administración de servicios de TI, supervisa la seguridad y la respuesta a incidentes, y la compatibilidad con los usuarios. En este artículo se proporcionan más detalles sobre la plataforma de datos y el cumplimiento de la privacidad de Microsoft Managed Desktop.
 
@@ -57,7 +57,7 @@ Los equipos de operaciones de ingeniería de escritorio administrado de Microsof
 
 ### <a name="microsoft-windows-10-diagnostic-data"></a>Datos Windows 10 diagnóstico de Microsoft
 
-Microsoft Managed Desktop usa [Windows 10 datos](/windows/privacy/windows-diagnostic-data) de diagnóstico mejorados para mantener Windows seguros, actualizados, solucionar problemas y realizar mejoras en el producto.
+Microsoft Managed Desktop usa Windows 10 [datos de](/windows/privacy/windows-diagnostic-data) diagnóstico mejorados para mantener Windows, actualizados, solucionar problemas y realizar mejoras en el producto.
 
 La configuración de datos de diagnóstico mejorada incluye información más detallada sobre los dispositivos inscritos en El escritorio administrado de Microsoft y su configuración, capacidades y estado del dispositivo. Cuando se seleccionan datos de diagnóstico mejorados, se recopilan datos, incluidos los datos de diagnóstico necesarios. Para obtener más información, vea [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection) about the Windows 10 diagnostic data setting and data collection.
 
@@ -65,7 +65,7 @@ La terminología de los datos de diagnóstico cambiará en versiones futuras de 
 
 Microsoft Managed Desktop solo procesa y almacena datos de nivel del sistema Windows 10 datos de diagnóstico opcionales que se originan a partir de dispositivos inscritos, como la confiabilidad de aplicaciones y dispositivos, y la información de rendimiento. Microsoft Managed Desktop no procesa ni almacena los datos personales de los clientes, como el chat y el historial del explorador, la voz, el texto o los datos de voz.
 
-Para obtener más información acerca de la recopilación de datos de diagnóstico de Microsoft Windows 10, vea la sección Dónde almacenamos y procesamos datos [personales](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) de la Declaración de privacidad de Microsoft.
+Para obtener más información acerca de la recopilación de datos de diagnóstico de Microsoft Windows 10, [](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) vea la sección Dónde almacenamos y procesamos datos personales de la Declaración de privacidad de Microsoft.
 
 ### <a name="microsoft-windows-update-for-business"></a>Actualización Windows Microsoft para empresas
 
@@ -77,7 +77,7 @@ La identificación de los datos usados por Microsoft Managed Desktop se almacena
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
-Microsoft Intune recopila, procesa y comparte datos con Microsoft Managed Desktop para admitir operaciones y servicios empresariales. Para obtener más información acerca de los datos recopilados en Intune, vea [Recopilación de datos en Intune](/mem/intune/protect/privacy-data-collect) 
+Microsoft Intune recopila, procesa y comparte datos con Microsoft Managed Desktop para admitir operaciones y servicios empresariales. Para obtener más información acerca de los datos recopilados en Intune, vea [Recopilación de datos en Intune](/mem/intune/protect/privacy-data-collect)
 
 Para obtener más información sobre Microsoft Intune de datos, vea [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations). Intune respeta las selecciones de ubicación de almacenamiento realizadas por el administrador para los datos del cliente.
 
@@ -95,7 +95,7 @@ Para obtener más información sobre Microsoft Defender para las ubicaciones de 
 
 ### <a name="microsoft-365-apps-for-enterprise"></a>Aplicaciones de Microsoft 365 para empresas
 
-Aplicaciones Microsoft 365 para Enterprise recopila y comparte datos con Microsoft Managed Desktop para garantizar que dichas aplicaciones estén actualizadas con la versión más reciente. Estas actualizaciones se basan en canales de actualización predefinidos administrados por Microsoft Managed Desktop. Para obtener más información sobre Aplicaciones Microsoft 365 de almacenamiento y recopilación de datos de Aplicaciones Microsoft 365, consulte [Microsoft Defender for Endpoint data storage and privacy](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect).
+Aplicaciones Microsoft 365 para Enterprise recopila y comparte datos con Microsoft Managed Desktop para garantizar que dichas aplicaciones estén actualizadas con la versión más reciente. Estas actualizaciones se basan en canales de actualización predefinidos administrados por Microsoft Managed Desktop. Para obtener más información sobre las ubicaciones de almacenamiento y recopilación de datos de Aplicaciones Microsoft 365, consulte [Microsoft Defender for Endpoint data storage and privacy](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect).
 
 ## <a name="major-data-change-notification"></a>Notificación de cambio de datos principal
 
@@ -125,7 +125,7 @@ Para obtener más información general acerca de las solicitudes de interesados 
 
 Para ejercer las solicitudes del interesado en los datos recopilados por el sistema de administración de casos de Escritorio administrado de Microsoft, consulte las siguientes solicitudes del interesado:
 
-| Solicitudes de los interesados | Description |
+| Solicitudes de los interesados | Descripción |
 | ------ | ------ |
 | Datos de Microsoft Defender para alertas de extremo | El administrador de seguridad puede solicitar la eliminación o extracción de datos personales relacionados con alertas de Microsoft Defender para puntos de conexión mediante el envío de una solicitud de informe en el [Portal de administración](https://aka.ms/memadmin). <br><br> Proporcione la siguiente información de envío: <br><ul><li>Tipo de solicitud: Solicitud de cambio</li><li>Categoría: Seguridad</li><li>Subcategoría: Otros</li><li>Descripción: proporcione los nombres de dispositivo relevantes.</li></ul> |
 | Datos de solicitudes de soporte técnico de Microsoft Managed Desktop | El administrador de TI puede solicitar la eliminación o extracción de solicitudes de soporte relacionados con datos personales mediante el envío de una solicitud de informe en el [Portal de administración](https://aka.ms/memadmin). <br><br> Proporcione la siguiente información de envío: <ul><li>Tipo de solicitud: Solicitud de cambio</li><li>Categoría: Seguridad</li><li>Subcategoría: Otros</li><li>Descripción: proporcione los nombres de dispositivo o nombres de usuario relevantes.</li></ul>

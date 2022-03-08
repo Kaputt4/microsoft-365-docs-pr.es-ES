@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 9933731fa550bc7ef5df567920e97f9f6559e7f8
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: a52995ff9ab2f946ca11417d4ed7bfa13825353f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265636"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326790"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Implementar y realizar un seguimiento de la configuración configurable: Escritorio administrado de Microsoft
 
@@ -38,9 +38,9 @@ Por ejemplo, usaremos una imagen de fondo de escritorio en estas instrucciones. 
 
 **Para implementar cambios:**
 
-1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos.**
+1. Inicie sesión para [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos**.
 2. En la sección Escritorio administrado de Microsoft, **seleccione Configuración**.
-3. En el **área de trabajo** Estado de implementación, seleccione la configuración que desea implementar. A continuación, seleccione la implementación por fases que se implementará.
+3. En el **área de trabajo Estado de** implementación, seleccione la configuración que desea implementar. A continuación, seleccione la implementación por fases que se implementará.
 4. Seleccione **Implementar** para implementar el cambio en uno de los grupos de implementación.
 
 > [!NOTE]
@@ -50,21 +50,21 @@ Por ejemplo, usaremos una imagen de fondo de escritorio en estas instrucciones. 
 
 Se recomienda implementar en grupos de implementación en este orden: Test, First, Fast y, a continuación, Broad.
 
-Cuando los cambios se completan en cada grupo, el estado cambia a **Complete**.
+Cuando los cambios se completan en cada grupo, el estado cambia a **Completado**.
 
 <!-- Needs picture updated to show MEM ![Deployment status workspace with columns for date updated, version, test, first, fast, and broad. The Proxy row is expanded, showing a dated setting flagged as "complete" in each of the four deployment groups.](../../media/2completeedit.png) -->
 
 ## <a name="revert-deployment"></a>Revertir implementación
 
-Después de implementar un cambio, puede revertir desde **el estado de implementación**. Cuando se revierte un cambio que está **en curso** o **completado,** se detiene la implementación actual. La configuración volverá a la última versión que se implementó en todos los grupos.
+Después de implementar un cambio, puede revertir desde **el estado de implementación**. Cuando se revierte un cambio que está **en curso** o **completado**, se detiene la implementación actual. La configuración volverá a la última versión que se implementó en todos los grupos.
 
 Por ejemplo, revertiremos la imagen en segundo plano del escritorio.
 
 **Para revertir un cambio:**
 
-1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos.**
+1. Inicie sesión para [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos**.
 2. En la sección Escritorio administrado de Microsoft, **seleccione Configuración**.
-3. En el **área de trabajo** Estado de implementación, seleccione la configuración que desea revertir. A continuación, seleccione la implementación por fases que desea revertir.
+3. En el **área de trabajo Estado de** implementación, seleccione la configuración que desea revertir. A continuación, seleccione la implementación por fases que desea revertir.
 4. En **¿Necesita revertir este cambio?**, seleccione **Revertir implementación**.
 
 <!-- Needs picture updated to show MEM ![Deployment status workspace. Browser start pages is selected, opening a pane on the right side with data about the submitted change and its status. At the bottom is the "need to revert this change" area where you can select "Revert deployment."](../../media/3revert.png) -->

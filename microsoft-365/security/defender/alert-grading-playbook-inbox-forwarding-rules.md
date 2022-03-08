@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,19 +21,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: dee9c4a51175f9fbeac8b6d21f29490081258ba0
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 08178a1672e3bdd5b124138f698b42be8181373a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524242"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325507"
 ---
 # <a name="alert-grading-for-suspicious-inbox-forwarding-rules"></a>Clasificación de alertas para reglas de reenvío de bandeja de entrada sospechosas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Los actores de amenazas pueden usar cuentas de usuario comprometidas para varios fines malintencionados, como leer correos electrónicos en la bandeja de entrada de un usuario, crear reglas de bandeja de entrada para reenviar correos electrónicos a cuentas externas, enviar correos de suplantación de identidad, entre otros. Las reglas de la bandeja de entrada malintencionadas son muy comunes durante las campañas de suplantación de identidad (BEC) y de correo electrónico empresarial, y es importante supervisarlas de forma coherente.
 

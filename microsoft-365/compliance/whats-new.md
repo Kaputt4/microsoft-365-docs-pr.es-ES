@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes según sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
+description: Ya sea agregar nuevas soluciones al centro de cumplimiento, actualizar las características existentes en función de sus comentarios o implementar documentación actualizada y actualizada, Microsoft 365 le ayudará a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: bfbae00812400b211abdda9d7310179cc65e2c15
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 15a97fc419bc6e4264f3c3cd0bbe389b79e5c2f0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444670"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326977"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -41,11 +41,34 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365](mi
 >
 > Y visite la [guía básica de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para obtener información sobre Microsoft 365 características que se iniciaron, se están implementando, están en desarrollo, se han cancelado o publicado anteriormente.
 
+## <a name="february-2022"></a>Febrero de 2022
+
+### <a name="ediscovery"></a>eDiscovery
+
+- [Administrar plantillas de](advanced-ediscovery-communications-library.md) comunicaciones de custodia en Advanced eDiscovery: los administradores de exhibición de documentos electrónicos ahora pueden crear plantillas de comunicaciones de custodia que se pueden usar en cualquier Advanced eDiscovery caso de la organización.
+- [Administrar agentes](advanced-ediscovery-issuing-officers.md) emisores en Advanced eDiscovery: los administradores de exhibición de documentos electrónicos pueden agregar una lista de agentes emisores que se pueden asignar a comunicaciones de custodia en cualquier Advanced eDiscovery caso de la organización.
+
+### <a name="information-governance-and-records-management"></a>Administración de registros y gobierno de la información
+
+- [Los ámbitos adaptables](retention.md#adaptive-or-static-policy-scopes-for-retention) para las directivas de retención y las directivas de etiquetas de retención están disponibles por lo general (GA). Las instrucciones para [](retention-settings.md#to-configure-an-adaptive-scope) configurar un ámbito adaptable ahora incluyen más información para ámbitos de sitio de SharePoint: Referencia de entrada de blog para usar propiedades de sitio personalizadas y cómo usar la propiedad site SiteTemplate para incluir o excluir tipos de sitio específicos con el generador de consultas avanzado.
+- [La búsqueda de](retention.md#policy-lookup) directivas en la solución de gobierno de información ya está disponible (GA).
+- PowerShell alternativa a la configuración de administración de registros que permite a los usuarios eliminar elementos etiquetados en SharePoint y OneDrive mediante AllowFilesWithKeepLabelToBeDeletedSPO y AllowFilesWithKeepLabelToBeDeletedODB de [Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) y [Set-PnPTenant]( /powershell/module/sharepoint-pnp/set-pnptenant).
+
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+
+- Nueva guía Por qué elegir el etiquetado integrado de MIP en el complemento [AIP](sensitivity-labels-aip.md) para aplicaciones de Office si usa el cliente de etiquetado unificado de Azure Information Protection (AIP) para Windows equipos. Esta página incluye información sobre la nueva vista previa privada para Office aplicaciones.
+- Nueva configuración para [directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange):
+  - Configuración adicional para que el correo electrónico admita siempre la aplicación de una etiqueta de confidencialidad coincidente y para aplicar el cifrado al correo electrónico recibido desde fuera de la organización.
+  - Las exclusiones para instancias específicas (usuarios, grupos, sitios) se admiten mediante la nueva  opción Excluido cuando se especifica la selección predeterminada de **All** para **Included**.
+- Ahora en versión preliminar: los dispositivos móviles (iOS y Android) admiten [la co-autoría](sensitivity-labels-coauthoring.md) cuando tienes versiones mínimas y optas por esta vista previa.
+- La compatibilidad para establecer el tipo de vínculo de uso compartido predeterminado se extiende a documentos individuales en SharePoint y OneDrive. Para obtener más información, vea el nuevo [artículo Use sensitivity labels to configure the default sharing link type for sites and documents in SharePoint and OneDrive]( sensitivity-labels-default-sharing-link.md).
+- Teams centro de administración ahora admite etiquetas de contenedor (etiquetas de confidencialidad con el ámbito de grupos & sitios).
+
 ## <a name="january-2022"></a>Enero de 2022
 
 ### <a name="microsoft-information-governance"></a>Gobernanza de información de Microsoft
 
-- La página y la sección de Microsoft [Information Governance en Microsoft 365](manage-information-governance.md) de la documentación se revisan y reestructuran considerablemente para ayudarle a encontrar más fácilmente información relacionada con las soluciones que configura en el Centro de cumplimiento de Microsoft 365: Conectores de datos, Gobierno de información y Administración de registros. Como parte de esta revisión, la documentación proporciona una distinción más clara para los escenarios de retención para el gobierno de la información frente a la administración de registros.
+- La página y la sección gobierno de información de Microsoft en Microsoft 365 de la documentación se revisan y reestructuran sustancialmente para ayudarle a encontrar más fácilmente información relacionada [con](manage-information-governance.md) las soluciones que configura en el Centro de cumplimiento de Microsoft 365: Conectores de datos, Gobierno de información y Administración de registros. Como parte de esta revisión, la documentación proporciona una distinción más clara para los escenarios de retención para el gobierno de la información frente a la administración de registros.
 - [Obtenga información sobre el gobierno de](information-governance.md) la información: nuevo, para admitir la reestructuración.
 - [Introducción al gobierno de](get-started-with-information-governance.md) la información: nuevo, para reemplazar "Introducción a la retención", en este artículo se incluyen los pasos de introducción para todas las capacidades de gobierno de la información, que incluyen la retención.
 - [Cree etiquetas de retención para excepciones a las directivas](create-retention-labels-information-governance.md) de retención: nuevo escenario identificado para usar etiquetas de retención para el gobierno de la información en lugar de la administración de registros.
@@ -60,7 +83,7 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365](mi
 - Compatibilidad con los nuevos [roles y grupos de roles de MIP](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels), ahora en versión preliminar.
 - Nuevas [funcionalidades de supervisión](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) para directivas de etiquetado automático.
 - Ahora, implementando: etiqueta predeterminada para documentos existentes en Canal actual (versión preliminar) y texto de justificación para Office en la Web.
-- Anunciada para el Canal de Semi-Annual Enterprise julio con versión 2202+: Co-autoría y auditoría para Outlook.
+- Anunciado para el canal de Semi-Annual Enterprise de julio con versión 2202+: Co-autoría y auditoría para Outlook.
 
 ## <a name="december-2021"></a>Diciembre de 2021
 
@@ -75,7 +98,7 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365](mi
 ### <a name="information-governance"></a>Información de gobierno
 
 - [Habilitar buzones de archivo en el centro de cumplimiento](enable-archive-mailboxes.md#run-diagnostics-on-archive-mailboxes) : sección agregada sobre la nueva herramienta de diagnóstico para buzones de archivo
-- [Usar la carga de red para importar los archivos PST](use-network-upload-to-import-pst-files.md#step-2-upload-your-pst-files-to-microsoft-365) de su organización a Microsoft 365: la importación de PST ahora es compatible con AzCopy v10
+- [Usar la carga de red para importar los archivos PST](use-network-upload-to-import-pst-files.md#step-2-upload-your-pst-files-to-microsoft-365) de la organización a Microsoft 365: la importación de PST ahora es compatible con AzCopy v10
 - [Restaurar un buzón inactivo](restore-an-inactive-mailbox.md) : procedimiento revisado para restaurar un buzón inactivo agregando primero LegacyExchangeDN de buzón inactivo al buzón de destino
 
 ### <a name="information-protection"></a>Protección de la información
@@ -85,7 +108,7 @@ Ya sea agregar nuevas soluciones al [Centro de cumplimiento de Microsoft 365](mi
 ### <a name="retention-and-records-management"></a>Administración de registros y retención
 
 - Nueva guía sobre [cuánto tiempo se tarda en que las directivas de retención entren en vigor](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
-- Nueva configuración de inquilino: una configuración de administración de registros que impide la edición de propiedades de elementos etiquetados SharePoint marcados como registro y bloqueados, y otra configuración para impedir que los usuarios desbloqueen elementos marcados como registro
+- Nueva configuración de inquilino: una configuración de administración de registros que impide la edición de propiedades de elementos SharePoint etiquetados que se marcan como registro y bloqueados, y otra configuración para impedir que los usuarios desbloqueen elementos marcados como registro
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 
@@ -112,7 +135,7 @@ Se agregaron los siguientes artículos para la incorporación de dispositivos:
 - [Use el nuevo formato de caso en Advanced eDiscovery](advanced-ediscovery-new-case-format.md) nuevo formato de caso se publicó a disponibilidad general y cambió el nombre de "formato de caso grande"
 
 ### <a name="retention-and-records-management"></a>Administración de registros y retención
-- Implementar: nueva configuración de administración de registros que controla si los usuarios pueden eliminar SharePoint y OneDrive elementos etiquetados. Anteriormente, las etiquetas de retención configuradas para retener contenido y que no marcaban elementos como registros impedía a los usuarios eliminar contenido etiquetado en SharePoint cuando esta acción se permitía en OneDrive. Para obtener más información, vea [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
+- Implementar: nueva configuración de administración de registros que controla si los SharePoint y OneDrive pueden ser eliminados por los usuarios. Anteriormente, las etiquetas de retención configuradas para retener contenido y que no marcaban elementos como registros impedía a los usuarios eliminar contenido etiquetado en SharePoint cuando esta acción se permitía en OneDrive. Para obtener más información, vea [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
 ### <a name="sensitive-information-types"></a>Tipos de información confidencial
 
@@ -164,11 +187,11 @@ Se agregaron los siguientes artículos nuevos:
 ### <a name="ediscovery"></a>eDiscovery
 
 - Recopilar datos adjuntos en la nube en [Advanced eDiscovery](advanced-ediscovery-cloud-attachments.md) además de recopilar la versión más reciente de los datos adjuntos de la nube, puede recopilar la versión que se compartió en un mensaje de correo electrónico o una conversación de chat de Teams; la nueva capacidad de aplicar automáticamente una etiqueta de retención a los datos adjuntos de la nube permite recopilar la versión compartida.
-- [Configure](advanced-ediscovery-historical-versions.md) versiones históricas en Advanced eDiscovery nueva funcionalidad que indiza todas las versiones de documentos almacenados en un sitio de SharePoint para la búsqueda; esto significa que las versiones de documentos que contienen contenido que coincide con una consulta de colección se devuelven en los resultados de la búsqueda.
+- [Advanced eDiscovery Configure](advanced-ediscovery-historical-versions.md) versiones históricas en una nueva funcionalidad que indiza todas las versiones de documentos almacenados en un sitio de SharePoint para la búsqueda; esto significa que las versiones de documentos que contienen contenido que coincide con una consulta de colección se devuelven en los resultados de la búsqueda.
 
 ### <a name="encryption"></a>Cifrado
 
-- [Usar el cifrado de un](/microsoftteams/teams-end-to-end-encryption) extremo a otro para las llamadas Microsoft Teams (versión preliminar pública) Nuevo contenido para la versión preliminar pública.
+- [Usar el cifrado de un](/microsoftteams/teams-end-to-end-encryption) extremo a otro para las llamadas de Microsoft Teams (versión preliminar pública) Nuevo contenido para la versión preliminar pública.
 
 ### <a name="information-governance"></a>Información de gobierno
 
@@ -220,12 +243,12 @@ Se agregaron los siguientes artículos nuevos:
 
 ### <a name="data-connectors"></a>Conectores de datos
 
-- [Archivar datos de terceros en Microsoft 365](archiving-third-party-data.md#data-connectors-in-the-us-government-cloud) conectores de datos de CellTrust y 17a-4 LLC ahora disponibles en GCC organizaciones en la nube de Us Government
+- [Archivar datos de terceros en Microsoft 365](archiving-third-party-data.md#data-connectors-in-the-us-government-cloud) conectores de datos de CellTrust y 17a-4 LLC ahora disponibles en organizaciones GCC en la nube del Gobierno de Estados Unidos
 - [Configurar un conector para archivar datos de YouTube](archive-youtube-data.md) proporciona nuevas instrucciones para esta característica en la versión preliminar pública.
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- Use el [editor KQL](ediscovery-kql-editor.md) para crear consultas de búsqueda en una vista previa pública de una nueva forma de crear consultas de búsqueda en búsqueda de contenido, exhibición de documentos electrónicos principales y Advanced eDiscovery; el editor de KQL proporciona autocompleción para las propiedades y condiciones compatibles con búsquedas y muestra listas de valores admitidos para las propiedades y condiciones estándar; el editor KQL también proporciona detección de errores y sugerencias para corregir posibles errores en consultas de búsqueda
+- Use el [editor de KQL](ediscovery-kql-editor.md) para crear consultas de búsqueda de vista previa pública de una nueva forma de crear consultas de búsqueda en búsqueda de contenido, exhibición de documentos electrónicos principales y Advanced eDiscovery; el editor de KQL proporciona autocompleción para las propiedades y condiciones compatibles con búsquedas y muestra listas de valores admitidos para las propiedades y condiciones estándar; el editor KQL también proporciona detección de errores y sugerencias para corregir posibles errores en consultas de búsqueda
 
 ### <a name="information-barriers"></a>Barreras de información
 
@@ -242,52 +265,10 @@ Se agregaron los siguientes artículos nuevos:
 
 ### <a name="retention-and-records-management"></a>Administración de registros y retención
 - [La revisión de disposición de varias](disposition.md) fases ya está disponible generalmente (GA), con nuevos eventos [de auditoría](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities). La revisión de disposición de varias fases permite especificar hasta cinco fases consecutivas de revisión de disposición para una etiqueta de retención y los revisores pueden agregar otros usuarios a su fase de revisión de eliminación. También puede personalizar las notificaciones por correo electrónico y los avisos.
-- Los canales privados [para Teams directivas de](create-retention-policies.md#retention-policy-for-teams-locations) retención están disponibles por lo general (GA).
+- Los canales [privados para Teams directivas de](create-retention-policies.md#retention-policy-for-teams-locations) retención están disponibles por lo general (GA).
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
-- [La co-autoría y autoguardado](sensitivity-labels-coauthoring.md) ahora están disponibles (GA) para Windows (versión mínima de 2107 desde canal actual o canal Enterprise mensual) y macOS (versión mínima de 16.51).
+- [La co-autoría y autoguardado](sensitivity-labels-coauthoring.md) ahora están disponibles (GA) para Windows (versión mínima de 2107 desde canal actual o canal de Enterprise mensual) y macOS (versión mínima de 16.51).
 - Implementación para aplicaciones Office que usan etiquetas integradas: la configuración de etiqueta predeterminada ahora admite documentos existentes, así como documentos nuevos. Este cambio de comportamiento proporciona paridad con el cliente de unificación de etiquetado de Azure Information Protection. Para obtener más información sobre el lanzamiento por aplicación y las versiones mínimas, vea la [tabla de funciones](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) para Word, Excel y PowerPoint.
-- Las etiquetas de contenedor ahora [admiten la configuración predeterminada de vínculos de uso compartido mediante la configuración avanzada de PowerShell](sensitivity-labels-teams-groups-sites.md#configure-settings-for-the-default-sharing-link-for-a-site-by-using-powershell-advanced-settings).
+- Las etiquetas de contenedor ahora [admiten la configuración predeterminada de vínculos de uso compartido mediante la configuración avanzada de PowerShell](sensitivity-labels-teams-groups-sites.md#configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings).
 - Las [tablas de](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) funcionalidades que muestran las versiones mínimas admitidas para el etiquetado integrado ahora tienen versiones para El canal actual, el canal de Enterprise mensual y el canal Semi-Annual Enterprise integrado.
-
-## <a name="august-2021"></a>Agosto de 2021
-
-### <a name="app-governance"></a>Gobierno de aplicaciones
-- [Entradas expandida para obtener información sobre alertas](app-governance-anomaly-detection-alerts.md#collection-alerts). Se agregaron nuevas entradas para describir información adicional sobre alertas ahora disponible en el gobierno de la aplicación.
-
-### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
-- [Los canales de cumplimiento](communication-compliance-channels.md) de comunicación agregaron nueva compatibilidad con características de vista previa para el examen de datos adjuntos modernos en Teams chats y canales privados.
-
-### <a name="compliance--service-assurance"></a>Garantía de & cumplimiento
-
-- [La garantía del](/compliance/) servicio se ha actualizado con actualizaciones de contenido de revisión trimestral para las certificaciones y las instrucciones de aplicabilidad:
-  - Arquitectura
-  - Registro de auditoría
-  - Cifrado y administración de claves
-  - Administración de identidad y acceso
-  - Microsoft 365 de acceso
-  - Seguridad de red
-  - Privacidad
-  - Resiliencia y continuidad
-  - Administración de riesgos
-  - Operación y desarrollo de seguridad
-  - Supervisión de seguridad
-  - Administración de suministros
-  - Administración de amenazas y vulnerabilidades
-
-### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
-
-- [Referencia de directiva de prevención de pérdida de datos](dlp-policy-reference.md). Se agregó una nueva página de referencia de directiva para ayudarle a crear directivas.
-
-### <a name="insider-risk-management"></a>Administración de riesgos internos
-- [Obtenga información sobre y configure la detección de señales del explorador de administración de riesgos insider](insider-risk-management-browser-support.md). Característica de vista previa para configurar la detección de señales del explorador para exploradores Edge y Chrome.
-
-### <a name="retention-and-records-management"></a>Administración de registros y retención
-- [Diagrama de flujo para determinar cuándo se](retention-flowchart.md) conservará o eliminará permanentemente un elemento para complementar los conceptos y ejemplos de los principios de retención.
-
-### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
-- Mejoras en las directivas de etiquetado automático que incluyen números [admitidos](apply-sensitivity-label-automatically.md) más altos para sitios y directivas, compatibilidad con todos los sitios de OneDrive y SharePoint y la capacidad de seleccionar sitios SharePoint disponibles en lugar de tener que escribir cada sitio por dirección URL y mejoras de simulación.
-- El etiquetado automático en Office como una configuración de etiqueta de confidencialidad ahora admite [exact data match (EDM)](apply-sensitivity-label-automatically.md#custom-sensitive-information-types-with-exact-data-match).
-- Las etiquetas predeterminadas ahora se [extienden Power BI (en versión preliminar).](/power-bi/admin/service-security-sensitivity-label-default-label-policy).
-- Los eventos de auditoría de Outlook en la Web que se encuentran [](data-classification-activity-explorer-available-events.md) en el explorador de actividades ahora están completamente desarrollados, lo que significa que la actividad del usuario para las etiquetas integradas ya está disponible para todas las aplicaciones Office en toda la plataforma.
-- Las [](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) tablas de funcionalidades admitidas tienen una nueva nota al pie para Windows para aclarar que las versiones mínimas son para el canal actual y una sugerencia para comparar más fácilmente versiones anteriores que omiten ceros iniciales con las versiones más recientes.

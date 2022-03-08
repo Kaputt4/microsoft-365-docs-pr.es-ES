@@ -1,6 +1,6 @@
 ---
 title: Informe de inventario de dispositivos
-description: ''
+description: En este artículo se describe el informe de inventario de dispositivos
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: tiaraquan
@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 531410fb840675dc8930078570aab84e9a1f1425
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: d5710fafd57c0c43419eb1a8ed31d2cba5c62084
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035683"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319926"
 ---
 # <a name="device-inventory-report"></a>Informe de inventario de dispositivos
 
-En la **vista Dispositivos,** puede seleccionar la pestaña Exportar **todo** para descargar un archivo delimitado por comas, incluida esta información:
+En la **vista Dispositivos** , puede seleccionar la pestaña Exportar **todo** para descargar un archivo delimitado por comas, incluida esta información:
 
 - Número de serie
 - Nombre del dispositivo

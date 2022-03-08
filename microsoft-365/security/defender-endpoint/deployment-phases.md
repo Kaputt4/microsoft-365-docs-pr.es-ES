@@ -17,19 +17,19 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8463d4b9c330d65ad36d60f20e93fbf00d95959e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 5715a796e0c7b78ae369f074b5edcb6ccfc8ae90
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164543"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330571"
 ---
 # <a name="deployment-phases"></a>Fases de implementación
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -81,8 +81,8 @@ Todas estas funcionalidades están disponibles para microsoft defender para los 
 
 ### <a name="in-scope"></a>En el ámbito
 
-- Uso de Microsoft Endpoint Manager y Microsoft Endpoint Manager para incorporar puntos de conexión en el servicio y configurar funcionalidades
-- Habilitar las funcionalidades de Defender detección y respuesta de puntos de conexión endpoint (EDR)
+- Uso de Microsoft Endpoint Manager y Microsoft Endpoint Configuration Manager para incorporar puntos de conexión en el servicio y configurar funcionalidades
+- Habilitar las capacidades de Defender para detección y respuesta de puntos de conexión extremo (EDR)
 - Habilitar las capacidades de defender para la plataforma de protección de puntos de conexión (EPP)
   - Protección de última generación
   - Reducción de la superficie expuesta a ataques
@@ -94,7 +94,7 @@ Los siguientes están fuera del ámbito de esta guía de implementación:
 - Configuración de soluciones de terceros que podrían integrarse con Defender for Endpoint
 - Pruebas de penetración en entornos de producción
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Fase 1: Preparación](prepare-deployment.md)
 - [Fase 2: Configuración](production-deployment.md)

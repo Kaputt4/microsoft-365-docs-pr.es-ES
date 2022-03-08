@@ -16,19 +16,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Cumplimiento de dispositivos.
-ms.openlocfilehash: d1c4cb8fde2d3f653e77020e4ad29f70da266a06
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 76cb914b878b3da8236e91ddda538cb13fa3aa8c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302355"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317603"
 ---
 # <a name="microsoft-365-lighthouse-device-compliance-page-overview"></a>Microsoft 365 Lighthouse de la página de cumplimiento de dispositivos
 
-> [!NOTE]
-> Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
-Microsoft 365 Lighthouse permite ver información e información relacionada con el cumplimiento de dispositivos  de Intune para todos los inquilinos de clientes seleccionando Dispositivos en el panel de navegación izquierdo para abrir la página Cumplimiento de dispositivos. En esta página, puede obtener información general sobre el estado de cumplimiento entre inquilinos, ver una lista de dispositivos para cada inquilino y obtener informes de estado sobre las directivas y la configuración de cumplimiento.
+Microsoft 365 Lighthouse permite ver información e información relacionada con el cumplimiento de dispositivos de Intune para todos los inquilinos de clientes seleccionando Dispositivos en el panel de navegación izquierdo para abrir la página Cumplimiento de dispositivos. En esta página, puede obtener información general sobre el estado de cumplimiento entre inquilinos, ver una lista de dispositivos para cada inquilino y obtener informes de estado sobre las directivas y la configuración de cumplimiento.
 
 ## <a name="overview-tab"></a>Ficha Información general  
   
@@ -42,11 +39,11 @@ Para exportar datos de cumplimiento de dispositivos a un Excel de valores separa
 
 ## <a name="devices-tab"></a>Pestaña Dispositivos
 
-En la pestaña Dispositivos, la barra de recuento y anotación coloreada muestra el número total de dispositivos en todos los inquilinos del cliente que tienen los siguientes estados de cumplimiento: Compatible, No compatible, En período de gracia y No evaluado. Para obtener más información acerca de los distintos estados de cumplimiento, vea [Monitor Intune Device compliance policies](/mem/intune/protect/compliance-policy-monitor).
+En la pestaña Dispositivos, la barra de recuento y anotación coloreada muestra el número total de dispositivos en todos los inquilinos del cliente que tienen los siguientes estados de cumplimiento: Compatible, No compatible, En período de gracia y No evaluado. Para obtener más información acerca de los distintos estados de cumplimiento, consulte [Monitor Intune Device compliance policies](/mem/intune/protect/compliance-policy-monitor).
 
 Para ver qué inquilinos tienen dispositivos con un estado de cumplimiento específico, seleccione ese estado en la barra de anotación de recuento para filtrar la lista. Para ver los estados de cumplimiento del dispositivo para uno o varios inquilinos de clientes específicos, use el menú desplegable **Inquilinos** para filtrar la lista.
 
-Selecciona cualquier nombre de dispositivo de la lista para ver más detalles sobre el estado de cumplimiento actual del dispositivo. Puedes sincronizar o reiniciar el dispositivo, o seleccionar Ver dispositivo en **Microsoft Endpoint Manager** si necesitas solucionar problemas o realizar más acciones.
+Selecciona cualquier nombre de dispositivo de la lista para ver más detalles sobre el estado de cumplimiento actual del dispositivo. Puedes sincronizar o reiniciar el dispositivo, o seleccionar **Ver dispositivo en Microsoft Endpoint Manager** si necesitas solucionar problemas o realizar más acciones.
 
 > [!NOTE]
 > Cuando reinicias un dispositivo, el propietario del dispositivo no se notifica automáticamente y puede perder el trabajo no guardado. Por este motivo, es posible que quieras notificar al propietario del dispositivo antes de reiniciar un dispositivo.
@@ -71,7 +68,7 @@ Seleccione cualquier nombre de directiva de la lista para ver más detalles sobr
 
 La pestaña Directivas también incluye las siguientes opciones:
 
-- **Exportar:** Seleccione esta opción para exportar datos de directiva de cumplimiento de dispositivos a un Excel de valores separados por comas (.csv).
+- **Exportar:** Seleccione esta opción para exportar datos de directiva de cumplimiento de dispositivos a Excel de valores separados por comas (.csv).
 - **Actualizar:** Seleccione esta opción para recuperar los datos de directiva de cumplimiento de dispositivos más actuales.
 - **Buscar:** Escribe palabras clave para localizar rápidamente una directiva de cumplimiento de dispositivos específica en la lista.
 
@@ -85,7 +82,7 @@ Para ver la configuración no compatible para dispositivos en una plataforma esp
 
 Seleccione cualquier nombre de configuración no compatible en la lista para abrir un panel donde puede ver una lista de inquilinos que tienen dispositivos con esa configuración específica no compatible. Desde aquí, puede explorar más detalladamente si selecciona cualquier espacio empresarial de la lista para ver información sobre los dispositivos dentro de ese espacio empresarial que tienen la configuración específica no compatible. También puedes sincronizar o reiniciar el dispositivo, o seleccionar Ver dispositivo en **Microsoft Endpoint Manager** si necesitas solucionar problemas o realizar más acciones.
 
-La Configuración también incluye las siguientes opciones:
+La Configuración pestaña también incluye las siguientes opciones:
 
 - **Exportar:** Seleccione esta opción para exportar datos de configuración no compatibles a un Excel de valores separados por comas (.csv).
 - **Actualizar:** Seleccione esta opción para recuperar los datos de configuración no compatibles más actuales.

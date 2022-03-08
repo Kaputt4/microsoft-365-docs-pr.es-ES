@@ -11,20 +11,22 @@ ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 2ba44974fa2181ccf0b1d4ef0a5705d630aff0d3
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: fe29027dab3b3395c14729ee7e04cbe7cebf7261
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035695"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317169"
 ---
 # <a name="device-names"></a>Nombres del dispositivo
 
-Microsoft Managed Desktop usa Windows Autopilot, Azure Active Directory y Microsoft Intune. Para que estos servicios funcionen juntos sin problemas, los dispositivos necesitan nombres uniformes y estandarizados. Microsoft Managed Desktop aplica un formato de nombre estandarizado (con el formato *MMD-%RAND11*) cuando se inscriben dispositivos. Windows Autopilot asigna estos nombres. Para obtener más información acerca de Autopilot, vea [First-run experience with Autopilot and the Enrollment Status Page](../get-started/esp-first-run.md).
+Microsoft Managed Desktop usa Windows Autopilot, Azure Active Directory y Microsoft Intune.
+
+Para que estos servicios funcionen juntos sin problemas, los dispositivos necesitan nombres uniformes y estandarizados. Microsoft Managed Desktop aplica un formato de nombre estandarizado (del `MMD-%RAND11`formulario) cuando se inscriben dispositivos. Windows Autopilot asigna estos nombres. Para obtener más información acerca de Autopilot, consulte [First-run experience with Autopilot and the Enrollment Status Page](../get-started/esp-first-run.md).
 
 ## <a name="automated-name-changes"></a>Cambios de nombre automatizados
 
-Si más adelante se cambia el nombre de un dispositivo, Microsoft Managed Desktop cambiará automáticamente el nombre a un nuevo nombre en el formato estandarizado. Este proceso se produce cada cuatro horas. El cambio de nombre tiene lugar la próxima vez que el usuario reinicie el dispositivo.
+Si más adelante se cambia el nombre de un dispositivo, Microsoft Managed Desktop cambiará automáticamente su nombre por un nuevo nombre en el formato estandarizado. Este proceso se produce cada cuatro horas. El cambio de nombre tiene lugar la próxima vez que el usuario reinicie el dispositivo.
 
 > [!IMPORTANT]
-> Si el entorno depende de nombres de dispositivo específicos (por ejemplo, para admitir una configuración de red determinada), debes investigar las opciones para quitar esa dependencia antes de inscribirte en Microsoft Managed Desktop. Si debe mantener la dependencia de nombre, puede enviar una solicitud a través del portal de [administración](../working-with-managed-desktop/admin-support.md) para deshabilitar la función de cambio de nombre y usar el formato de nombre deseado.
+> Si el entorno depende de nombres de dispositivo específicos (por ejemplo, para admitir una configuración de red determinada), debes investigar las opciones para quitar esa dependencia antes de inscribirte en Microsoft Managed Desktop.<br><br>Si debe mantener la dependencia de nombre, puede enviar una solicitud a través del [portal de administración](../working-with-managed-desktop/admin-support.md) para deshabilitar la función de cambio de nombre y usar el formato de nombre deseado.

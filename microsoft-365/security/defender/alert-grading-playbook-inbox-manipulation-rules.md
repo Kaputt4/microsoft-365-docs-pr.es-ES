@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,19 +21,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: e1bfb37ebf88ffd67a7fcfaddde46141583fb717
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 89d068feb5051a72e7592b7ea365b2e253e35115
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524098"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325983"
 ---
 # <a name="alert-grading-for-suspicious-inbox-manipulation-rules"></a>Clasificación de alertas para reglas de manipulación de bandeja de entrada sospechosas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Los actores de amenazas pueden usar cuentas de usuario comprometidas para muchos fines malintencionados, como leer correos electrónicos en la bandeja de entrada de un usuario, crear reglas de bandeja de entrada para reenviar correos electrónicos a cuentas externas, eliminar seguimientos y enviar correos de suplantación de identidad. Las reglas de la bandeja de entrada malintencionadas son comunes durante las campañas de suplantación de identidad (BEC) y de correo electrónico empresarial y es importante supervisarlas de forma coherente. 
 
@@ -193,7 +193,7 @@ CloudAppEvents
 3. Busque otras actividades malintencionadas realizadas por la cuenta de usuario afectada.
 4. Compruebe si hay otra actividad sospechosa en el inquilino que se originó desde la misma IP o desde el mismo ISP (si el ISP es poco común) para encontrar otras cuentas de usuario comprometidas.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre la clasificación de alertas](alert-grading-playbooks.md)
 - [Actividad de reenvío de correo electrónico sospechoso](alert-grading-playbook-email-forwarding.md)

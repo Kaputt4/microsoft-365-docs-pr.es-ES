@@ -2,8 +2,8 @@
 title: ¿Cuál es el objetivo del registro CNAME adicional para Office 365?
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,14 +18,14 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NOINDEX
-description: Obtenga más información sobre el registro CNAME 'MSOID' en Office 365 que le dirige al mejor servidor para procesos de autenticación, de modo que obtenga una respuesta más rápida.
+description: Obtenga más información sobre el registro CNAME 'MSOID' en Office 365 que le dirige al mejor servidor para procesos de autenticación, por lo que obtiene una respuesta más rápida.
 monikerRange: o365-21vianet
-ms.openlocfilehash: e51847065ac3f91f44b8be35932869e9418e8a70
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1b053ac0df7cd770b5627b688e90641688f94141
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188798"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63325129"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>¿Cuál es el objetivo del registro CNAME adicional para Office 365?
 
@@ -39,8 +39,8 @@ Al ejecutar una aplicación cliente que funcione con Office 365, como Skype Empr
   
 Si en su dominio falta este registro CNAME, estas aplicaciones usarán un extremo de autenticación predeterminado que está ubicado en Estados Unidos, por lo que la autenticación puede ser más lenta. Si este registro CNAME no se configura correctamente (por ejemplo, si la **dirección de destino** contiene un error ortográfico), estas aplicaciones no podrán completar la autenticación.
   
- **Si Office 365 los registros DNS** del dominio, Office 365 configurar este registro CNAME automáticamente. 
+ **Si Office 365 los registros DNS** de su dominio, Office 365 configura este registro CNAME automáticamente. 
   
- **Si va a administrar registros DNS para su** dominio en el host DNS, cree este registro usted mismo siguiendo las instrucciones del host [DNS](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+ **Si va a administrar registros DNS para su dominio en el host DNS,** cree este registro usted mismo siguiendo las instrucciones [del host DNS](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
   
-Si está planeando una implementación de Office 365 y desea obtener más información sobre todos los registros DNS que puede que necesite agregar o actualizar, lea acerca de ellos en [Referencia:](../../enterprise/external-domain-name-system-records.md)Registros del sistema de nombres de dominio externos para Office 365 .
+Si está planeando una implementación de Office 365 y desea obtener más información sobre todos los registros DNS que puede que necesite agregar o actualizar, lea acerca de ellos en Referencia: Registros del sistema de nombres de dominio externos [para Office 365](../../enterprise/external-domain-name-system-records.md).

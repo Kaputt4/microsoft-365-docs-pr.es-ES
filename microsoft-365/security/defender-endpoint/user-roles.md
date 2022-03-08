@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a959edf1eaefcb25fd3fb8279e7e03d317c4f12e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6f853df2d37cc41b2effb55ff10418af67df2bd6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168359"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324079"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>Crear y administrar roles para el control de acceso basado en roles
 
@@ -28,7 +28,7 @@ ms.locfileid: "61168359"
 
 **Se aplica a:**
 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-roles-abovefoldlink)
@@ -41,7 +41,7 @@ Los siguientes pasos le guían sobre cómo crear roles en Microsoft 365 Defender
 
 1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> cuenta con un administrador de seguridad o un rol de administrador global asignado.
 
-2. En el panel de navegación, **seleccione Configuración** roles de extremos \>  \>  (en **Permisos).**
+2. En el panel de navegación, **seleccione Configuración** \> **roles de extremos** \> (en **Permisos**).
 
 3. Seleccione **Agregar elemento**.
 
@@ -61,22 +61,22 @@ Los siguientes pasos le guían sobre cómo crear roles en Microsoft 365 Defender
 ### <a name="permission-options"></a>Opciones de permiso
 
 - **Ver datos**
-  - **Operaciones de seguridad:** ver todos los datos de operaciones de seguridad en el portal
-  - **Amenaza y administración de vulnerabilidades:** ver Administración de amenazas y vulnerabilidades datos en el portal
+  - **Operaciones de seguridad** : ver todos los datos de operaciones de seguridad en el portal
+  - **Amenaza y administración de vulnerabilidades**: ver Administración de amenazas y vulnerabilidades datos en el portal
 
 - **Acciones de corrección activas**
-  - **Operaciones de seguridad:** realizar acciones de respuesta, aprobar o descartar acciones de corrección pendientes, administrar listas permitidas o bloqueadas para automatización e indicadores
-  - **Amenazas y administración de vulnerabilidades: control de excepciones:** crear nuevas excepciones y administrar excepciones activas
+  - **Operaciones de seguridad** : realizar acciones de respuesta, aprobar o descartar acciones de corrección pendientes, administrar listas permitidas o bloqueadas para automatización e indicadores
+  - **Amenazas y administración de vulnerabilidades: control de excepciones**: crear nuevas excepciones y administrar excepciones activas
   - **Amenazas y administración de vulnerabilidades: control de** corrección: enviar nuevas solicitudes de corrección, crear vales y administrar las actividades de corrección existentes
 
-- **Investigación de alertas:** administrar alertas, iniciar investigaciones automatizadas, ejecutar exámenes, recopilar paquetes de investigación, administrar etiquetas de dispositivo y descargar solo archivos ejecutables portátiles (PE)
+- **Investigación de alertas** : administrar alertas, iniciar investigaciones automatizadas, ejecutar exámenes, recopilar paquetes de investigación, administrar etiquetas de dispositivo y descargar solo archivos ejecutables portátiles (PE)
 
 - **Administrar la configuración del** sistema del portal: configurar las opciones de almacenamiento, SIEM y la API intel de amenazas (se aplica globalmente), la configuración avanzada, las cargas automatizadas de archivos, los roles y los grupos de dispositivos
 
     > [!NOTE]
     > Esta configuración solo está disponible en el rol Administrador de Microsoft Defender para puntos de conexión (predeterminado).
 
-- **Administrar la configuración** de seguridad en Defender para la nube: configure las opciones de supresión de alertas, administre las exclusiones de carpetas para la automatización, los dispositivos integrados y externos, y administre las notificaciones de correo electrónico, administre el laboratorio de evaluación
+- **Administrar la configuración de seguridad** en el Centro de seguridad: configure la configuración de supresión de alertas, administre las exclusiones de carpetas para la automatización, los dispositivos integrados y externos, administre las notificaciones de correo electrónico y administre el laboratorio de evaluación
 
 - **Capacidades de respuesta en directo**
   - **Comandos** básicos:
@@ -93,9 +93,9 @@ Para obtener más información sobre los comandos disponibles, consulta [Investi
 
 ## <a name="edit-roles"></a>Editar roles
 
-1. Inicie sesión <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en</a> Microsoft 365 Defender cuenta con el rol Administrador de seguridad o Administrador global asignado.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> cuenta con el rol Administrador de seguridad o Administrador global asignado.
 
-2. En el panel de navegación, **seleccione Configuración** roles de extremos \>  \>  (en **Permisos).**
+2. En el panel de navegación, **seleccione Configuración** \> **roles de extremos** \> (en **Permisos**).
 
 3. Seleccione el rol que desea editar.
 
@@ -107,9 +107,9 @@ Para obtener más información sobre los comandos disponibles, consulta [Investi
 
 ## <a name="delete-roles"></a>Eliminar roles
 
-1. Inicie sesión <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en</a> Microsoft 365 Defender cuenta con el rol Administrador de seguridad o Administrador global asignado.
+1. Inicie sesión en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> cuenta con el rol Administrador de seguridad o Administrador global asignado.
 
-2. En el panel de navegación, **seleccione Configuración** roles de extremos \>  \>  (en **Permisos).**
+2. En el panel de navegación, **seleccione Configuración** \> **roles de extremos** \> (en **Permisos**).
 
 3. Seleccione el rol que desea eliminar.
 

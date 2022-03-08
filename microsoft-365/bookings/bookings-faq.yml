@@ -9,12 +9,12 @@ metadata:
   ms.service: bookings
   ms.localizationpriority: medium
   description: Preguntas frecuentes de Microsoft Bookings.
-  ms.openlocfilehash: fc48e3d15ea7e1b38c1a7458e3509ab803ea8a35
-  ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+  ms.openlocfilehash: 5532248b44bdda524399ce713377f5565f20eb7c
+  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 02/14/2022
-  ms.locfileid: "62806197"
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63318065"
 title: Preguntas más frecuentes de Microsoft Bookings
 summary: ''
 sections:
@@ -23,7 +23,7 @@ sections:
   - question: >
       ¿Qué es Microsoft Bookings?
     answer: >
-      Microsoft Bookings es una aplicación Microsoft 365 que facilita la programación y la administración de citas. Bookings incluye un calendario de reservas basado en web y se integra con Outlook para optimizar el calendario de su personal, lo que proporciona a los clientes la flexibilidad de reservar una hora que mejor les funcione. Los correos electrónicos de notificación automatizados reducen los no-shows y las organizaciones ahorran tiempo con una reducción en las tareas de programación repetitivas. Bookings te ayuda a realizar citas virtuales fácilmente a través de Skype o Microsoft Teams, y te ayuda a administrar la programación diaria a través de la aplicación Bookings en Teams. Con la capacidad integrada de personalizar, Bookings está diseñado para satisfacer las necesidades de varias partes de cualquier organización.
+      Microsoft Bookings es una aplicación Microsoft 365 que facilita la programación y administración de citas. Bookings incluye un calendario de reservas basado en web y se integra con Outlook para optimizar el calendario de su personal, lo que proporciona flexibilidad a los clientes para reservar una hora que mejor les funcione. Los correos electrónicos de notificación automatizados reducen los no-shows y las organizaciones ahorran tiempo con una reducción en las tareas de programación repetitivas. Bookings te ayuda a realizar citas virtuales fácilmente a través de Skype o Microsoft Teams, y te ayuda a administrar la programación diaria a través de la aplicación Bookings en Teams. Con la capacidad integrada de personalizar, Bookings está diseñado para satisfacer las necesidades de varias partes de cualquier organización.
   - question: >
       ¿Cómo se usa Microsoft Bookings?
     answer: >
@@ -69,7 +69,7 @@ sections:
   - question: >
       ¿Está disponible toda la funcionalidad de la aplicación web de Bookings original en Microsoft Teams?
     answer: >
-      Una versión ligera de Bookings ya está disponible como una aplicación en Teams. Encontrará más información en Overview [of the Bookings app in Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b). Hay una funcionalidad de vínculos profundos para salir en la aplicación web y, después de la configuración, el uso diario de Bookings puede realizarse sin salir de Teams. La información fluye entre plataformas.
+      Una versión ligera de Bookings ya está disponible como una aplicación en Teams. Encontrará más información en Overview [of the Bookings app in Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b). Hay una funcionalidad de vínculos profundos para salir en la aplicación web y, después de la instalación, el uso diario de Bookings se puede hacer sin salir de Teams. La información fluye entre plataformas.
   - question: >
       ¿Bookings es una oferta de pequeña empresa o una Enterprise o ambas?
     answer: >
@@ -122,13 +122,13 @@ sections:
   questions:
   - question: >
       ¿Cómo puedo obtener Microsoft Bookings?
-    answer: "Bookings está disponible con las siguientes suscripciones: \n- Office 365: A3, A5, E3, E5, F1, F3\n- Microsoft 365: A3, A5, E3, E5, F1, F3, Business Standard, Business Premium. Puedes usar Bookings con una aplicación complementaria de iOS y Android. Bookings no está disponible como una aplicación independiente. Outlook Web App o Outlook en la Web deben habilitarse para usar Bookings, ya que almacena datos en Outlook.\n\nUna licencia de Bookings proporciona funcionalidad completa al producto, incluida la creación y administración de calendarios. También permite a los usuarios ver y editar calendarios existentes, cuando estos usuarios se agregan como personal en un rol de administrador o visor.\n"
+    answer: "Bookings está disponible con las siguientes suscripciones: \n- Office 365: A3, A5, E3, E5, F1, F3\n- Microsoft 365: A3, A5, E3, E5, F1, F3, Business Standard, Business Premium. Puedes usar Bookings con una aplicación complementaria de iOS y Android. Bookings no está disponible como una aplicación independiente. Outlook Web App o Outlook en la Web deben habilitarse para usar Bookings, ya que almacena datos dentro de Outlook.\n\nUna licencia de Bookings proporciona funcionalidad completa al producto, incluida la creación y administración de calendarios. También permite a los usuarios ver y editar calendarios existentes, cuando estos usuarios se agregan como personal en un rol de administrador o visor.\n"
   - question: >
       ¿Necesito migrar mi cuenta de correo electrónico de mi proveedor actual a Microsoft 365?
     answer: >
-      Puede mantener su proveedor actual, pero Bookings enviará todas las notificaciones al correo electrónico usado en su Microsoft 365 cuenta.
+      Puedes mantener tu proveedor actual, pero Bookings enviará todas las notificaciones al correo electrónico usado en tu Microsoft 365 cuenta.
   - question: >
-      ¿Pueden mis empleados usar Bookings sin Microsoft 365 cuenta?
+      ¿Mis empleados pueden usar Bookings sin una Microsoft 365 cuenta?
     answer: >
       Sí. Puede agregar su personal con cualquier correo electrónico y seguirán teniendo la confirmación de correo electrónico y la invitación del calendario cuando alguien reserva una cita con ellos.
   - question: >
@@ -173,7 +173,7 @@ sections:
   - question: >
       ¿Se pueden enviar notificaciones de correo electrónico como el nombre de dominio del inquilino?
     answer: >
-      Las direcciones de correo electrónico se controlan y administran en el Microsoft 365 de configuración y dependen de las opciones de configuración de dominio allí. Encontrará más información [aquí](/powershell/module/exchange/get-accepteddomain).
+      Las direcciones de correo electrónico se controlan y administran en el Microsoft 365 de configuración y dependen de las opciones de configuración de dominio que haya. Encontrará más información [aquí](/powershell/module/exchange/get-accepteddomain).
   - question: >
       ¿La capacidad de enviar mensajes SMS depende de un servicio o configuración específica diferente?
     answer: >
@@ -193,7 +193,7 @@ sections:
   - question: >
       ¿Los calendarios pueden permanecer inéditos (no accesibles al público) pero seguir siendo accesibles para los usuarios designados?
     answer: >
-      Sí. Hay una casilla en la pestaña De la página Booking de la aplicación web: requerir una cuenta Microsoft 365 o Office 365 de **mi organización para reservar**. Si se selecciona esta casilla, se restringe el acceso a la página de autoservicio solo a aquellos que se encuentran dentro del espacio empresarial. El calendario de Bookings que se encuentra dentro de la aplicación web para la creación y administración solo puede tener acceso a las personas que se agregan como personal a la página con roles de administrador o visor.
+      Sí. Hay una casilla de verificación en la pestaña Página de reserva de la aplicación web: requerir una cuenta Microsoft 365 o Office 365 de mi **organización para reservar**. Si se selecciona esta casilla, se restringe el acceso a la página de autoservicio solo a aquellos que se encuentran dentro del espacio empresarial. El calendario de Bookings que se encuentra dentro de la aplicación web para la creación y administración solo puede tener acceso a las personas que se agregan como personal a la página con roles de administrador o visor.
 
 
       :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Control de acceso de página de reserva en Bookings":::
@@ -204,7 +204,7 @@ sections:
   - question: >
       ¿Puedo desactivar las notificaciones de correo electrónico para el tiempo de espera?
     answer: >
-      El tiempo de espera de grabación en la aplicación web de Bookings siempre desencadenará un correo electrónico de notificación a los miembros del personal. Si algún miembro del personal está confundido acerca de la notificación, se recomienda agregar más detalles en las notas o el título de la notificación de Time-Off, para informar mejor al personal sobre lo que está ocurriendo en el lado de administrador.
+      El tiempo de espera de grabación en la aplicación web de Bookings siempre desencadenará un correo electrónico de notificación a los miembros del personal. Si algún miembro del personal está confundido con la notificación, se recomienda agregar más detalles en las notas o el título de la notificación de Time-Off, para informar mejor al personal sobre lo que está ocurriendo en el lado de administrador.
   - question: >
       ¿Se pueden clonar o duplicar calendarios de Bookings y se pueden templar para facilitar el escalado?
     answer: >
@@ -234,7 +234,7 @@ sections:
   - question: >
       ¿Dónde se almacenan los datos de Bookings?
     answer: >
-      Bookings es una aplicación Microsoft 365, lo que significa que todos los datos se almacenan en la plataforma Microsoft 365 y en Exchange. Bookings sigue todas las directivas de almacenamiento de datos establecidas por Microsoft, que son las mismas directivas que todas las Office siguen. Bookings usa buzones compartidos en Exchange almacenar detalles de cliente, personal, servicio y cita. Las directivas de cumplimiento para buzones compartidos Exchange también se aplican a los buzones de Bookings. Todos los datos de clientes (incluida la información proporcionada por los clientes al reservar) se capturan en Bookings y se almacenan dentro de la aplicación, por lo que se almacenan en Exchange. Microsoft Bookings usa las mismas directivas que Microsoft 365, que puedes encontrar [aquí.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
+      Bookings es una Microsoft 365, lo que significa que todos los datos se almacenan en la plataforma Microsoft 365 y en Exchange. Bookings sigue todas las directivas de almacenamiento de datos establecidas por Microsoft, que son las mismas directivas que todas las Office siguen. Bookings usa buzones compartidos en Exchange almacenar detalles de cliente, personal, servicio y cita. Las directivas de cumplimiento para buzones compartidos Exchange también se aplican a los buzones de Bookings. Todos los datos de clientes (incluida la información proporcionada por los clientes al reservar) se capturan en Bookings y se almacenan dentro de la aplicación, por lo que se almacenan en Exchange. Microsoft Bookings usa las mismas directivas que usa Microsoft 365, que puede encontrar [aquí.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
   - question: >
       ¿Hay alguna forma de administrar de forma centralizada los calendarios de Bookings para todos los usuarios?
     answer: >
@@ -242,18 +242,18 @@ sections:
   - question: >
       ¿Cómo se autentican los usuarios?
     answer: >
-      El acceso a la aplicación web de Bookings implica la autenticación mediante la autenticación Azure Active Directory (AAD). La página de reserva de autoservicio puede estar disponible para todos los usuarios con el vínculo página web. Sin embargo, cuando la configuración Requerir una cuenta Microsoft 365 o Office 365 de mi organización **para** reservar está seleccionada, la página está restringida para su uso solo en el espacio empresarial de Microsoft 365 (mediante la autenticación AAD).
+      El acceso a la aplicación web de Bookings implica la autenticación mediante la autenticación Azure Active Directory (AAD). La página de reserva de autoservicio puede estar disponible para todos los usuarios con el vínculo página web. Sin embargo, cuando se selecciona la opción Requerir una cuenta Microsoft 365 o **Office 365** de mi organización para reservar, la página está restringida para su uso solo en el espacio empresarial de Microsoft 365 (mediante la autenticación AAD).
 
 
       :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Control de acceso de página de reserva en Bookings":::
   - question: >
       ¿Los datos del cliente dejan el sistema de producción por algún motivo?
     answer: >
-      Sí, dado que Bookings forma parte de Exchange, permitimos que las API de Graph y las API de Exchange Web Services (EWS) para que los clientes descarguen sus propios datos a los que tienen acceso.
+      Sí, dado que Bookings forma parte de Exchange, permitimos Graph API y API de Exchange Web Services (EWS) para que los clientes descarguen sus propios datos a los que tienen acceso.
   - question: >
       ¿Existe la posibilidad de personalizar direcciones de correo electrónico para las respuestas de los clientes?
     answer: >
-      Existe la capacidad de definir a qué dirección de correo electrónico envía el cliente sus respuestas. Esta configuración se encuentra en la **pestaña Información empresarial**. El propio nombre del buzón de Bookings también se puede cambiar en Exchange, a través de los procesos Exchange de cambio de nombre de buzón de correo.
+      Existe la capacidad de definir a qué dirección de correo electrónico envía el cliente sus respuestas. Esta configuración se encuentra en la **pestaña Información empresarial**. El propio nombre del buzón de Bookings también se puede cambiar en Exchange, a través de los procesos Exchange de cambio de nombre del buzón de correo.
   - question: >
       Nos gustaría que el cliente aceptara nuestros términos y condiciones durante el proceso de reserva. ¿Es posible?
     answer: >
@@ -271,7 +271,7 @@ sections:
 - name: Preguntas técnicas
   questions:
   - question: >
-      Si un usuario programa una cita para un servicio que consta de una reunión en línea, ¿cómo recibe el vínculo Microsoft Teams a la reunión si deja vacío el campo de dirección de correo electrónico opcional?
+      Si un usuario programa una cita para un servicio que consta de una reunión en línea, ¿cómo recibe el vínculo Microsoft Teams la reunión si deja vacío el campo de dirección de correo electrónico opcional?
     answer: >
       Si el sistema no tiene la información de correo electrónico del cliente, no hay forma de que el correo de confirmación se entregue al cliente y, por lo tanto, no recibirá un vínculo Teams cliente. La solución es establecer la dirección de correo electrónico como un campo obligatorio, que puede hacer en la pestaña Servicios de Bookings. Recuerde que siempre que cree un nuevo servicio en Bookings, el campo de correo electrónico del cliente se establece como un campo obligatorio de forma predeterminada.
   - question: >
@@ -302,7 +302,7 @@ sections:
       Para que Bookings se sincronice correctamente con los calendarios de los miembros del personal, cada miembro del personal debe compartir su calendario. Cada miembro del personal debe seguir estas instrucciones para compartir su propio calendario.
 
 
-      1. Inicie sesión en Microsoft 365 y, a continuación, **seleccione Outlook** desde el iniciador de aplicaciones.
+      1. Inicie sesión en Microsoft 365 y, a continuación, **seleccione Outlook** en el iniciador de aplicaciones.
 
          > [!div class="mx-imgBorder"]
          > ![Imagen de Outlook en el iniciador de aplicaciones](../media/bookings-applauncher-outlook.png)
@@ -326,7 +326,7 @@ sections:
       Si un empleado ha dejado su empresa y los ha quitado de su organización de Microsoft 365 o Office 365, debe quitar ese usuario de Bookings para que no se muestre en el calendario y evitar que los clientes reserven citas con ellos.
 
 
-      1. Inicie sesión en Microsoft 365 y, a continuación, vaya al **personal de Bookings**\>.
+      1. Inicie sesión en Microsoft 365 y, a continuación, vaya a **Personal de bookings**\>.
 
 
       1. Mantenga el cursor del mouse sobre el nombre del miembro del personal. **Los** iconos **de** edición y eliminación aparecen a la derecha de **la Teléfono** columna.
@@ -354,4 +354,4 @@ sections:
 
 
       Si sigue viendo este error después de un período prolongado de tiempo o lo ve a menudo, póngase en contacto con el soporte técnico.
-additionalContent: "\n## <a name=\"additional-resources\"></a>Recursos adicionales\n\n- [Microsoft Bookings amplía la disponibilidad en el blog de empresas](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)\n\n- [Cómo funciona el vídeo de Microsoft Bookings](https://support.office.com/article/microsoft-bookings-69c45b78-6de4-4f28-9449-cdcc18b7ae45)\n\n- [Empezar a usar Microsoft Bookings](get-access.md)\n\n- [Activa o desactiva Microsoft Bookings](turn-bookings-on-or-off.md)\n\n- [Agregar usuarios de forma individual o masiva](../admin/add-users/add-users.md)\n\n- [Agregar personal a Bookings](add-staff.md)\n\n- [Componentes de API para automatizar una vez definida la plantilla](/graph/api/bookingbusiness-post-bookingbusinesses)\n\n- [Dirección URL del calendario de bookings para mostrar](https://outlook.office.com/bookings/calendar)\n\n- [Directivas de cumplimiento de bookings](/compliance/regulatory/gdpr-dsr-Office365#bookings)\n\n- [Personalizar y publicar la página de reserva](customize-booking-page.md)\n\n- [Configuración del buzón de inquilino](/powershell/module/exchange/get-accepteddomain)\n\n- [Reservas de grupo](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)\n\n- [Métricas de bookings y seguimiento de actividad](metrics-and-activity-tracking.md)\n\n- [M365 Public Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)\n\n- Enviar comentarios a [través de UserVoice](https://outlook.uservoice.com/forums/314907-microsoft-bookings/suggestions/39505261-365-admins-should-have-full-access-to-all-bookings)"
+additionalContent: "\n## <a name=\"additional-resources\"></a>Recursos adicionales\n\n- [Microsoft Bookings amplía la disponibilidad en el blog de empresas](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)\n\n- [Cómo funciona el vídeo de Microsoft Bookings](https://support.office.com/article/microsoft-bookings-69c45b78-6de4-4f28-9449-cdcc18b7ae45)\n\n- [Empezar a usar Microsoft Bookings](get-access.md)\n\n- [Activa o desactiva Microsoft Bookings](turn-bookings-on-or-off.md)\n\n- [Agregar usuarios de forma individual o masiva](../admin/add-users/add-users.md)\n\n- [Agregar personal a Bookings](add-staff.md)\n\n- [Componentes de API para automatizar una vez definida la plantilla](/graph/api/bookingbusiness-post-bookingbusinesses)\n\n- [Dirección URL del calendario de bookings para mostrar](https://outlook.office.com/bookings/calendar)\n\n- [Directivas de cumplimiento de bookings](/compliance/regulatory/gdpr-dsr-Office365#bookings)\n\n- [Personalizar y publicar la página de reserva](customize-booking-page.md)\n\n- [Configuración del buzón de inquilino](/powershell/module/exchange/get-accepteddomain)\n\n- [Reservas de grupo](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)\n\n- [Métricas de bookings y seguimiento de actividad](metrics-and-activity-tracking.md)\n\n- [M365 Public Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)"
