@@ -3,8 +3,8 @@ title: Ver los resultados de una investigación automatizada en Microsoft 365
 keywords: AIR, autoIR, Microsoft Defender para endpoint, automatizado, investigación, corrección, acciones
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -19,12 +19,12 @@ description: Durante y después de una investigación automatizada en Microsoft 
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80c58c0e4c084199537dcfbb9097541a0cba71a0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 54b9389d323c1e775b50bf63beaa33b0c4b0cae6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191424"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314089"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Detalles y resultados de una investigación automatizada en Microsoft 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "60191424"
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Cuando se [produce una investigación](office-365-air.md) automatizada en Microsoft [Defender](defender-for-office-365.md)para Office 365 , los detalles sobre esa investigación están disponibles durante y después del proceso de investigación automatizado. Si tiene los permisos necesarios, puede ver esos detalles en el portal Microsoft 365 Defender web. Los detalles de la investigación le proporcionan el estado actualizado y la capacidad de aprobar cualquier acción pendiente.
+Cuando se [produce una investigación](office-365-air.md) automatizada en [Microsoft Defender](defender-for-office-365.md) para Office 365, los detalles sobre esa investigación están disponibles durante y después del proceso de investigación automatizado. Si tiene los permisos necesarios, puede ver esos detalles en el portal Microsoft 365 Defender web. Los detalles de la investigación le proporcionan el estado actualizado y la capacidad de aprobar cualquier acción pendiente.
 
 > [!TIP]
 > Consulte la nueva página de investigación unificada en el Microsoft 365 Defender web. Para obtener más información, vea [(¡NUEVO!) Página de investigación unificada](../defender/m365d-autoir-results.md#new-unified-investigation-page).
@@ -49,32 +49,32 @@ El estado de la investigación indica el progreso del análisis y las acciones. 
 |---|---|
 |**Iniciando**|La investigación se ha desencadenado y está a la espera de empezar a ejecutarse.|
 |**En funcionamiento**|El proceso de investigación ha comenzado y está en curso. Este estado también se produce cuando se [aprueban acciones](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) pendientes.|
-|**No se encontró ninguna amenaza**|La investigación ha finalizado y no se ha identificado ninguna amenaza (cuenta de usuario, mensaje de correo electrónico, dirección URL o archivo). <p> **SUGERENCIA:** Si sospecha que se ha perdido algo (como un falso negativo), puede tomar medidas con el Explorador [de amenazas](threat-explorer.md).|
-|**Amenazas encontradas**|La investigación automatizada encontró problemas, pero no hay acciones de corrección específicas para resolver esos problemas. <p> El **estado Amenazas encontradas** puede producirse cuando se identificó algún tipo de actividad de usuario, pero no hay acciones de limpieza disponibles. Algunos ejemplos incluyen cualquiera de las siguientes actividades de usuario: <ul><li>Un [evento de prevención de pérdida de](../../compliance/dlp-learn-about-dlp.md) datos</li><li>Anomalía de envío de correo electrónico</li><li>Malware enviado</li><li>Phish enviado</li></ul> <p> La investigación no encontró direcciones URL malintencionadas, archivos o mensajes de correo electrónico que corregir y ninguna actividad de buzón para corregir, como desactivar reglas de reenvío o delegación. <p> **SUGERENCIA:** Si sospecha que se ha perdido algo (como un falso negativo), puede investigar y tomar medidas con el [Explorador de amenazas](threat-explorer.md)|
-|**Terminado por sistema**|La investigación se detuvo. Una investigación puede detenerse por varias razones: <ul><li>Las acciones pendientes de la investigación expiraron. Tiempo de espera de las acciones pendientes después de esperar la aprobación durante una semana</li><li>Hay demasiadas acciones. Por ejemplo, si hay demasiados usuarios haciendo clic en direcciones URL malintencionadas, puede superar la capacidad de la investigación para ejecutar todos los analizadores, por lo que la investigación se detiene.</li></ul> <p> **SUGERENCIA:** Si una investigación se detiene antes de realizar acciones, intente usar [el](threat-explorer.md) Explorador de amenazas para buscar y solucionar las amenazas.|
+|**No se encontró ninguna amenaza**|La investigación ha finalizado y no se ha identificado ninguna amenaza (cuenta de usuario, mensaje de correo electrónico, dirección URL o archivo). <p> **SUGERENCIA**: Si sospecha que se ha perdido algo (como un falso negativo), puede tomar medidas con el Explorador [de amenazas](threat-explorer.md).|
+|**Amenazas encontradas**|La investigación automatizada encontró problemas, pero no hay acciones de corrección específicas para resolver esos problemas. <p> El **estado Amenazas encontradas** puede producirse cuando se identificó algún tipo de actividad de usuario, pero no hay acciones de limpieza disponibles. Algunos ejemplos incluyen cualquiera de las siguientes actividades de usuario: <ul><li>Un [evento de prevención de pérdida de](../../compliance/dlp-learn-about-dlp.md) datos</li><li>Anomalía de envío de correo electrónico</li><li>Malware enviado</li><li>Phish enviado</li></ul> <p> La investigación no encontró direcciones URL malintencionadas, archivos o mensajes de correo electrónico que corregir y ninguna actividad de buzón para corregir, como desactivar reglas de reenvío o delegación. <p> **SUGERENCIA**: Si sospecha que se ha perdido algo (como un falso negativo), puede investigar y tomar medidas con el Explorador [de amenazas](threat-explorer.md)|
+|**Terminado por sistema**|La investigación se detuvo. Una investigación puede detenerse por varias razones: <ul><li>Las acciones pendientes de la investigación expiraron. Tiempo de espera de las acciones pendientes después de esperar la aprobación durante una semana</li><li>Hay demasiadas acciones. Por ejemplo, si hay demasiados usuarios haciendo clic en direcciones URL malintencionadas, puede superar la capacidad de la investigación para ejecutar todos los analizadores, por lo que la investigación se detiene.</li></ul> <p> **SUGERENCIA**: Si una investigación se detiene antes de realizar acciones, intente usar el [Explorador](threat-explorer.md) de amenazas para buscar y solucionar las amenazas.|
 |**Acción pendiente**|The investigation has found a threat, such as a malicious email, a malicious URL, or a risky mailbox setting, and an action to remediate that threat is [awaiting approval](air-review-approve-pending-completed-actions.md). <p> El **estado De la acción** pendiente se desencadena cuando se encuentra cualquier amenaza con una acción correspondiente. Sin embargo, la lista de acciones pendientes puede aumentar a medida que se ejecuta una investigación. Vea los detalles de la investigación para ver si otros elementos aún están pendientes de finalización.|
-|**Corregido**|La investigación finalizó y se aprobaron todas las acciones de corrección (señaladas como totalmente remediadas). <p> **NOTA:** Las acciones de corrección aprobadas pueden tener errores que impiden que se puedan realizar las acciones. Independientemente de si las acciones de corrección se han completado correctamente, el estado de la investigación no cambia. Ver detalles de investigación.|
-|**Parcialmente corregido**|La investigación dio como resultado acciones de corrección y algunas se aprobaron y completaron. Otras acciones aún están [pendientes.](air-review-approve-pending-completed-actions.md)|
+|**Corregido**|La investigación finalizó y se aprobaron todas las acciones de corrección (señaladas como totalmente remediadas). <p> **NOTA**: Las acciones de corrección aprobadas pueden tener errores que impiden realizar las acciones. Independientemente de si las acciones de corrección se han completado correctamente, el estado de la investigación no cambia. Ver detalles de investigación.|
+|**Parcialmente corregido**|La investigación dio como resultado acciones de corrección y algunas se aprobaron y completaron. Otras acciones aún están [pendientes](air-review-approve-pending-completed-actions.md).|
 |**Failed**|Al menos un analizador de investigación encontró un problema en el que no se pudo completar correctamente. <p> **NOTA** Si se produce un error en una investigación después de que se aprobaron las acciones de corrección, es posible que las acciones de corrección se hubieran hecho correctamente. Ver los detalles de la investigación.|
-|**En cola por limitación**|Se está celebrando una investigación en una cola. Cuando se completen otras investigaciones, comienzan las investigaciones en cola. La limitación ayuda a evitar un rendimiento de servicio deficiente.  <p> **SUGERENCIA:** Las acciones pendientes pueden limitar el número de investigaciones nuevas que se pueden ejecutar. Asegúrese de aprobar [(o rechazar)](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)acciones pendientes .|
-|**Terminado por limitación**|Si una investigación se mantiene en la cola demasiado tiempo, se detiene. <p> **SUGERENCIA:** Puede iniciar [una investigación desde el Explorador de amenazas](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
+|**En cola por limitación**|Se está celebrando una investigación en una cola. Cuando se completen otras investigaciones, comienzan las investigaciones en cola. La limitación ayuda a evitar un rendimiento de servicio deficiente.  <p> **SUGERENCIA**: Las acciones pendientes pueden limitar el número de investigaciones nuevas que se pueden ejecutar. Asegúrese de aprobar [(o rechazar) acciones pendientes](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions).|
+|**Terminado por limitación**|Si una investigación se mantiene en la cola demasiado tiempo, se detiene. <p> **SUGERENCIA**: Puede iniciar [una investigación desde el Explorador de amenazas](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
 |
 
 ## <a name="view-details-of-an-investigation"></a>Ver detalles de una investigación
 
-1. Vaya al portal de Microsoft 365 Defender ( <https://security.microsoft.com> ) e inicie sesión.
+1. Vaya al portal Microsoft 365 Defender (<https://security.microsoft.com>) e inicie sesión.
 2. En el panel de navegación, seleccione **Centro de acciones**.
-3. En las **pestañas Pendiente** o **Historial,** seleccione una acción. Se abre el panel desplegable.
+3. En las **pestañas Pendiente** **o Historial,** seleccione una acción. Se abre el panel desplegable.
 4. En el panel desplegable, seleccione **Abrir página de investigación**. 
 5. Use las distintas pestañas para obtener más información sobre la investigación.
 
 ## <a name="view-details-about-an-alert-related-to-an-investigation"></a>Ver detalles sobre una alerta relacionada con una investigación
 
-Ciertos tipos de alertas desencadenan una investigación automatizada en Microsoft 365. Para obtener más información, vea [directivas de alerta que desencadenan investigaciones automatizadas.](office-365-air.md#which-alert-policies-trigger-automated-investigations)
+Ciertos tipos de alertas desencadenan una investigación automatizada en Microsoft 365. Para obtener más información, vea [directivas de alerta que desencadenan investigaciones automatizadas](office-365-air.md#which-alert-policies-trigger-automated-investigations).
 
-1. Vaya al portal de Microsoft 365 Defender ( <https://security.microsoft.com> ) e inicie sesión.
+1. Vaya al portal Microsoft 365 Defender (<https://security.microsoft.com>) e inicie sesión.
 2. En el panel de navegación, seleccione **Centro de acciones**.
-3. En las **pestañas Pendiente** o **Historial,** seleccione una acción. Se abre el panel desplegable.
+3. En las **pestañas Pendiente** **o Historial,** seleccione una acción. Se abre el panel desplegable.
 4. En el panel desplegable, seleccione **Abrir página de investigación**.
 5. Seleccione la **pestaña** Alertas para ver una lista de todas las alertas asociadas con esa investigación.
 6. Seleccione un elemento de la lista para abrir su panel desplegable. Allí, puede ver más información sobre la alerta.
@@ -83,11 +83,11 @@ Ciertos tipos de alertas desencadenan una investigación automatizada en Microso
 
 - Los recuentos de correo electrónico se calculan en el momento de la investigación y algunos recuentos se recalculan al abrir los flyouts de investigación (en función de una consulta subyacente).
 
-- Los recuentos de correo electrónico  que se muestran para los clústeres de correo electrónico en la pestaña Correo electrónico y el valor de cantidad de correo electrónico que se muestra en el control desplegable del clúster se calculan en el momento de la investigación y no cambian.
+- Los recuentos de correo electrónico que se muestran para los  clústeres de correo electrónico en la pestaña Correo electrónico y el valor de cantidad de correo electrónico que se muestra en el control desplegable del clúster se calculan en el momento de la investigación y no cambian.
 
-- El recuento de correo electrónico  que se muestra en la parte inferior de la pestaña Correo electrónico del control desplegable del clúster de correo electrónico y el recuento de mensajes de correo electrónico mostrados en el Explorador reflejan los mensajes de correo electrónico recibidos después del análisis inicial de la investigación.
+- El recuento de correo electrónico que se muestra en  la parte inferior de la pestaña Correo electrónico del control desplegable del clúster de correo electrónico y el recuento de mensajes de correo electrónico mostrados en el Explorador reflejan los mensajes de correo electrónico recibidos después del análisis inicial de la investigación.
 
-  Por lo tanto, un clúster de correo electrónico que muestra una cantidad original de 10 mensajes de correo electrónico mostraría una lista de correo electrónico total de 15 cuando lleguen cinco mensajes de correo electrónico más entre la fase de análisis de investigación y cuando el administrador revisa la investigación. Del mismo modo, las investigaciones antiguas podrían empezar a mostrar recuentos más altos de los que muestran las consultas de Explorer, ya que los datos de Microsoft Defender para el Plan 2 de Office 365 expiran después de siete días para las pruebas y después de 30 días para las licencias de pago.
+  Por lo tanto, un clúster de correo electrónico que muestra una cantidad original de 10 mensajes de correo electrónico mostraría una lista de correo electrónico total de 15 cuando lleguen cinco mensajes de correo electrónico más entre la fase de análisis de investigación y cuando el administrador revisa la investigación. Del mismo modo, es posible que las investigaciones antiguas comiencen a mostrar recuentos superiores a los que muestran las consultas de Explorer, ya que los datos de Microsoft Defender para el Plan 2 de Office 365 expiran después de siete días para las pruebas y después de 30 días para las licencias de pago.
 
   Mostrar recuentos históricos y actuales en diferentes vistas se realiza para indicar el impacto del correo electrónico en el momento de la investigación y el impacto actual hasta el momento en que se ejecuta la corrección.
 
@@ -95,10 +95,10 @@ Ciertos tipos de alertas desencadenan una investigación automatizada en Microso
 
 - Las anomalías de volumen representan una amenaza potencial y, en consecuencia, podrían ser menos graves en comparación con las amenazas de malware o phish que se identifican con motores antivirus, detonaciones o reputación malintencionada.
 
-- No es necesario aprobar todas las acciones. Si no está de acuerdo con la acción recomendada o su organización no  elige determinados tipos de acciones, puede optar por Rechazar las acciones o simplemente ignorarlas y no realizar ninguna acción.
+- No es necesario aprobar todas las acciones. Si no está de acuerdo con la acción recomendada o su organización no elige determinados tipos de acciones, puede optar por Rechazar las  acciones o simplemente ignorarlas y no realizar ninguna acción.
 
 - La aprobación o el rechazo de todas las acciones permite que la investigación se cierre completamente (el estado se corrige), mientras que algunas acciones dejan resultados incompletos en el estado de la investigación cambiando a un estado parcialmente corregido.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Revisar y aprobar acciones pendientes](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)

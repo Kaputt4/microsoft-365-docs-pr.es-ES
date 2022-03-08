@@ -26,16 +26,19 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Aprende a crear, editar o eliminar una directiva de administración de aplicaciones y a proteger archivos de trabajo en dispositivos Android o iOS.
-ms.openlocfilehash: 3c6a3401fdef42dec19b6d66f4b9fa8cd78106e5
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 6849b24f691f7b567cc55dce2dda21f2a7e93f22
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401215"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313991"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Establecer la configuración de protección de aplicaciones para dispositivos Android o iOS
 
 Este artículo se aplica a Microsoft 365 Empresa Premium.
+
+> [!NOTE]
+> Microsoft Defender para empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para dispositivos. [Obtenga más información sobre Defender para empresas](../../security/defender-business/mdb-overview.md).
 
 ## <a name="watch-secure-office-apps-on-ios"></a>Watch: Secure Office apps on iOS
 
@@ -44,60 +47,60 @@ Este artículo se aplica a Microsoft 365 Empresa Premium.
 Puede configurar una directiva de acceso de usuario que requiera que los usuarios móviles escriban un PIN o una huella digital para iniciar sesión y también cifre los archivos de trabajo almacenados en sus dispositivos.
 
 1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
-1. En **Directivas,** elija **Agregar directiva**.
-1. En el **panel Agregar directiva,** escriba un nombre en **Nombre** de directiva y elija el tipo de directiva que desee en Tipo **de directiva**.
+1. En **Directivas**, elija **Agregar directiva**.
+1. En el **panel Agregar directiva** , escriba un nombre en **Nombre** de directiva y elija el tipo de directiva que desee en **Tipo de directiva**.
 1. Activa Administrar **cómo los usuarios acceden Office archivos en** dispositivos móviles y, a continuación, asegúrate de que las tres opciones de configuración siguientes estén activadas:
     - **Requerir una huella digital o un PIN para obtener acceso a las aplicaciones de Office**
     - **Proteger los archivos de trabajo cuando se pierden o se roban dispositivos**
     - **Cifrar archivos de trabajo**
 
-1. En **Archivos de estas aplicaciones se protegerán,** selecciona las Office que quieras proteger en dispositivos móviles.
-1. En **Quién se obtiene esta configuración?**, todos los usuarios están  seleccionados de forma predeterminada, pero puede elegir Cambiar para seleccionar los grupos de seguridad que haya creado.
-1. Para finalizar la creación de la directiva, elija **Agregar**.
-1. En la **página Agregar directiva,** elija **Cerrar**.
-1. En la página principal del Centro de administración, confirme  que la nueva directiva se agregó eligiendo Directivas y revisando la directiva en la **página** Directivas.
+1. En **Archivos de estas aplicaciones se protegerán**, selecciona las Office que quieras proteger en dispositivos móviles.
+1. En **Quién se obtienen estas** opciones de configuración, todos los usuarios están seleccionados de forma predeterminada, pero puede  elegir Cambiar para seleccionar los grupos de seguridad que haya creado.
+1. Para terminar de crear la directiva, elija **Agregar**.
+1. En la **página Agregar directiva** , elija **Cerrar**.
+1. En la página principal del Centro de administración, confirme que la nueva directiva se agregó eligiendo Directivas y revisando la directiva en la **página** Directivas.
 
 ## <a name="create-an-app-management-policy"></a>Crear una directiva de administración de aplicaciones
 
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
     
-2. En la navegación izquierda, elija **Directivas de** \>  \> **dispositivos Agregar**.
+2. En el panel de navegación izquierdo, elija **Agregar directivas** \> **de** \> **dispositivos**.
   
 3. En el panel **Agregar directiva**, escriba un nombre único para esta directiva. 
     
-4. En **Tipo de directiva,** elija **Administración de aplicaciones** para Android o Administración de aplicaciones para **iOS,** en función del conjunto de directivas que desee crear. 
+4. En **Tipo de directiva**, elija **Administración de aplicaciones para Android** o Administración de aplicaciones para **iOS**, según el conjunto de directivas que desee crear. 
     
-5. Expande **Proteger archivos de trabajo cuando se pierden o** roban dispositivos y Administrar cómo los usuarios acceden Office archivos en **dispositivos móviles.** Configure las opciones de configuración que le gustarían. **Administrar cómo los usuarios acceden Office archivos** en dispositivos móviles está  desactivado de forma predeterminada, pero se recomienda activarlo y aceptar los valores predeterminados.  Para obtener más información, vea [Configuración disponible](#available-settings). 
+5. **Expande Proteger archivos de trabajo cuando se pierden o** roban dispositivos y administrar cómo los usuarios **acceden Office archivos en dispositivos móviles**. Configure las opciones de configuración que le gustarían. **Administrar cómo los usuarios acceden Office archivos** en dispositivos móviles  está desactivado de forma predeterminada, pero se recomienda activarlo  y aceptar los valores predeterminados. Para obtener más información, consulte [Configuración disponible](#available-settings). 
     
     Siempre puede usar el vínculo **Restablecer la configuración predeterminada** para volver a la configuración predeterminada. 
     
     ![Captura de pantalla de Crear una directiva con la administración de aplicaciones para Android seleccionada.](../../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
-6. Después, decida **a qué usuarios se aplica esta configuración**. Si no desea usar el  grupo de seguridad predeterminado Todos los usuarios, elija Cambiar **,** elija los grupos de seguridad que obtienen esta configuración \> **Seleccione**.
+6. Después, decida **a qué usuarios se aplica esta configuración**. Si no desea usar el grupo de seguridad predeterminado **Todos** los usuarios, elija Cambiar **, elija** los grupos de seguridad que obtienen esta configuración \> **Seleccionar**.
     
 7. Por último, elija **Listo** para guardar la directiva y asignarla a los dispositivos. 
     
 ## <a name="edit-an-app-management-policy"></a>Editar una directiva de administración de aplicaciones
 
-1. En la **tarjeta Directivas,** elija **Editar directiva**.
+1. En la **tarjeta Directivas** , elija **Editar directiva**.
     
 2. En el panel **Editar directiva**, seleccione la directiva que quiere cambiar. 
     
 3. Elija **Editar** junto a cada configuración para cambiar los valores de la directiva. Al cambiar un valor, se guarda automáticamente en la directiva.
     
-4. Cuando haya terminado, cierre el **panel Editar directiva.** 
+4. Cuando haya terminado, cierre el **panel Editar directiva** . 
     
 ## <a name="delete-an-app-management-policy"></a>Eliminar una directiva de administración de aplicaciones
 
-1. En la **página Directivas,** elija una directiva y, a continuación, **Elimine**.
+1. En la **página Directivas** , elija una directiva y, a continuación **, Eliminar**.
     
-2. En el **panel Eliminar directiva,** elija **Confirmar** para eliminar la directiva o directivas que eligió. 
+2. En el **panel Eliminar directiva** , elija **Confirmar** para eliminar la directiva o directivas que eligió. 
     
 ## <a name="available-settings"></a>Configuración disponible
 
-En las tablas siguientes se proporciona información detallada acerca de la configuración disponible para proteger los archivos de trabajo en dispositivos y la configuración que controla la forma en que los usuarios acceden Office archivos desde sus dispositivos móviles.
+En las tablas siguientes se proporciona información detallada acerca de la configuración disponible para proteger los archivos de trabajo en dispositivos y la configuración que controla cómo los usuarios tienen acceso Office archivos desde sus dispositivos móviles.
   
- Para obtener más información, [vea How do protection features in Microsoft 365 Empresa Premium map to Intune settings](map-protection-features-to-intune-settings.md). 
+ Para obtener más información, vea [How do protection features in Microsoft 365 Empresa Premium map to Intune settings](map-protection-features-to-intune-settings.md). 
   
 ### <a name="settings-that-protect-work-files"></a>Opciones de configuración que protegen los archivos de trabajo
 
@@ -117,8 +120,12 @@ Las siguientes opciones de configuración permiten administrar la forma en que l
 
 |Configuración  <br/> |Descripción  <br/> |
 |:-----|:-----|
-|Requerir una huella digital o un PIN para obtener acceso a las aplicaciones de Office  <br/> |Si esta configuración es **On,** los usuarios deben proporcionar otra forma de autenticación, además de su nombre de usuario y contraseña, para poder usar Office aplicaciones en sus dispositivos móviles.<br/> |
+|Requerir una huella digital o un PIN para obtener acceso a las aplicaciones de Office  <br/> |Si esta configuración es **On**, los usuarios deben proporcionar otra forma de autenticación, además de su nombre de usuario y contraseña, para poder usar Office aplicaciones en sus dispositivos móviles.<br/> |
 |Restablecer el PIN cuando no se haya podido iniciar sesión el siguiente número de veces  <br/> |Para impedir que un usuario no autorizado adivine aleatoriamente un PIN, este se restablecerá después de que se escriba de forma errónea el número de veces que especifique.  <br/> |
 |Requerir que los usuarios inicien sesión de nuevo si las aplicaciones de Office han estado inactivas durante  <br/> |Esta configuración determina cuánto tiempo puede estar inactivo un usuario antes de que se le pida que inicie sesión de nuevo.  <br/> |
 |Denegar el acceso a los archivos de trabajo en dispositivos con jailbreak o rooting  <br/> |Puede que algunos usuarios habilidosos tengan un dispositivo con jailbreak o rooting. Esto quiere decir que el usuario puede modificar el sistema operativo, lo que podría hacer que el dispositivo sea más vulnerable ante ataques de malware. Estos dispositivos se bloquean cuando esta configuración está **activada**.  <br/> |
-|No permitir que los usuarios copien contenido de aplicaciones Office en aplicaciones personales  <br/> |Se permite de manera predeterminada, pero si la configuración está **activada**, el usuario podría copiar información de un archivo de trabajo en uno personal. Si la configuración está **desactivada**, el usuario no podrá copiar información de una cuenta de trabajo a una aplicación o cuenta personales.  <br/> |
+|No permitir que los usuarios copien contenido de Office aplicaciones en aplicaciones personales  <br/> |Se permite de manera predeterminada, pero si la configuración está **activada**, el usuario podría copiar información de un archivo de trabajo en uno personal. Si la configuración está **desactivada**, el usuario no podrá copiar información de una cuenta de trabajo a una aplicación o cuenta personales.  <br/> |
+
+## <a name="see-also"></a>Consulte también
+
+[Principales 10 formas de proteger Microsoft 365 para planes empresariales](../security-and-compliance/secure-your-business-data.md)

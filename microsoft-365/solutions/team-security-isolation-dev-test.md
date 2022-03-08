@@ -14,14 +14,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom: admindeeplinkCOMPLIANCE
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 description: Configure la infraestructura y seguridad que permita a los empleados trabajar de forma remota desde cualquier lugar y en cualquier momento.
-ms.openlocfilehash: 602bec66eec26551ae6d98bafdb99466747d8fa9
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 8ea359f2c0de98ac35b90a379e5a60c4578e66cf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524086"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323421"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Configurar un equipo con aislamiento de seguridad en un entorno de desarrollo y pruebas
 
@@ -173,15 +175,14 @@ La etiqueta **Estrategia empresarial** puede tardar algún tiempo en estar dispo
 
 Después, aplique la nueva etiqueta al equipo **Estrategia empresarial** y actualice el tipo de vínculo para compartir predeterminado con el fin de reducir el riesgo de compartir por error archivos y carpetas a un público más amplio del previsto.
 
-1. Abra el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint).
-1. En **Sitios**, haga clic en **Sitios activos**.
-1. Haga clic en el sitio **Estrategia empresarial**.
-1. En **Uso compartido externo** de la pestaña **Confidencialidad**, haga clic en **Editar**.
-1. Seleccione la etiqueta **Estrategia empresarial** y, después, haga clic en **Guardar**.
-1. En **Uso compartido externo** de la pestaña **Directivas**, haga clic en **Editar**.
+1. Abra el Centro de administración de SharePoint en **Sitios** y seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a>.
+1. Seleccione el sitio **Estrategia empresarial**.
+1. En la pestaña **Directivas**, en **Confidencialidad**, seleccione **Editar**.
+1. Seleccione la etiqueta **Estrategia empresarial** y, a continuación, seleccione **Guardar**.
+1. En la pestaña **Directivas**, en **Uso compartido externo**, seleccione **Editar**.
 1. Elija **Solo personas de la organización**.
 1. En **Tipo de vínculo de uso compartido predeterminado**, desactive la casilla de verificación **Igual que la configuración de nivel de organización** y seleccione **Usuarios con acceso existente**.
-1. Haga clic en **Guardar**.
+1. Seleccione **Guardar**.
 
 Después, configure el uso compartido de los propietarios solo para el equipo de **Estrategia empresarial**.
 

@@ -27,16 +27,19 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: Obtén información sobre los distintos estados del dispositivo en la lista Acciones del dispositivo en la página Principal de administración Microsoft 365 para empresas.
-ms.openlocfilehash: c70740077e42d2dc7b8b15ac7e563d8e245ac455
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 798a753f6d523a3f586ac32698cda80a127c44b5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165525"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313823"
 ---
 # <a name="device-states"></a>Estados de dispositivo
 
 Este artículo se aplica a Microsoft 365 Empresa Premium.
+
+> [!NOTE]
+> Microsoft Defender para empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para dispositivos. [Obtenga más información sobre Defender para empresas](../../security/defender-business/mdb-overview.md).
 
 Los dispositivos de la lista **Acciones de dispositivo** (página principal del administrador \> **Acciones de dispositivo**) pueden tener los estados siguientes.
   
@@ -46,7 +49,7 @@ Los dispositivos de la lista **Acciones de dispositivo** (página principal del 
 |:-----|:-----|
 |Administrado por Intune  <br/> |Administrado por Microsoft 365 Empresa Premium.  <br/> |
 |Pendiente de retirada  <br/> |Microsoft 365 Empresa Premium está preparándose para quitar los datos de la compañía del dispositivo.  <br/> |
-|Retirada en curso  <br/> |Microsoft 365 Empresa Premium está quitando datos de la compañía del dispositivo.  <br/> |
+|Retirada en curso  <br/> |Microsoft 365 Empresa Premium está quitando los datos de la compañía del dispositivo.  <br/> |
 |Error de retirada  <br/> | No se pudo completar la acción para quitar los datos de la compañía.  <br/> |
 |Retirada cancelada  <br/> |Se canceló la acción Retirar.  <br/> |
 |Borrado pendiente  <br/> |Esperando a que se inicie el restablecimiento de fábrica.  <br/> |
@@ -57,3 +60,7 @@ Los dispositivos de la lista **Acciones de dispositivo** (página principal del 
 |Pendiente de eliminación  <br/> |La acción de eliminación está pendiente.  <br/> |
 |Detectado  <br/> |Microsoft 365 Empresa Premium ha detectado el dispositivo.  <br/> |
    
+
+## <a name="see-also"></a>Consulte también
+
+[Principales 10 formas de proteger Microsoft 365 para planes empresariales](../security-and-compliance/secure-your-business-data.md)

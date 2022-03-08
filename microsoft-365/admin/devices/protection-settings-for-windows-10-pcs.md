@@ -25,16 +25,19 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Obtenga información sobre la configuración disponible en Microsoft 365 para empresas para proteger Windows 10 dispositivos.
-ms.openlocfilehash: 4019fb5d76824dc33bb5947d1bd3b25072b39bbd
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+ms.openlocfilehash: 26a9921d1c950990adcb4a28516ce2207fb3bcd1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128033"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313781"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Editar o crear la configuración de protección de dispositivos Windows 10 equipos
 
 Este artículo se aplica a Microsoft 365 Empresa Premium.
+
+> [!NOTE]
+> Microsoft Defender para empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para dispositivos. [Obtenga más información sobre Defender para empresas](../../security/defender-business/mdb-overview.md).
 
 Después de configurar la configuración predeterminada de la protección Windows en la página Configuración, puede agregar otras nuevas que se apliquen a todos los usuarios o a un conjunto de usuarios. También puede editar cualquiera de las que haya creado.
 
@@ -45,10 +48,10 @@ Vea un vídeo sobre cómo proteger Windows 10 dispositivos con Microsoft 365 Emp
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
-2. En la navegación izquierda, elija **Directivas** \> **de** \> **dispositivos Agregar**.
+2. En la navegación izquierda, elija **Agregar directivas** \> **de** \> **dispositivos**.
 3. En el panel **Agregar directiva**, escriba un nombre único para esta directiva. 
 4. En **Tipo de directiva**, elija **Configuración de dispositivos Windows 10**.
-5. Expanda **Proteger dispositivos Windows 10** \> configure las opciones como quiera. Para obtener más información, vea [Configuración disponible](#available-settings). 
+5. Expanda **Proteger dispositivos Windows 10** \> configure las opciones como quiera. Para obtener más información, consulte [Configuración disponible](#available-settings). 
     
     Siempre puede usar el vínculo **Restablecer la configuración predeterminada** para volver a la configuración predeterminada. 
     
@@ -77,10 +80,14 @@ Para obtener más información, vea [How do protection features in Microsoft 365
 |Proteger los equipos PC de amenazas basadas en web en Microsoft Edge  <br/> |Activa opciones de configuración en Edge para proteger a los usuarios de sitios y descargas malintencionados.  <br/> |
 |Usar reglas que reducen la superficie expuesta a ataques de los dispositivos  <br/> |Al activar la reducción de la superficie expuesta a ataques, se bloquean acciones y aplicaciones que suelen usarse en ataques de malware para infectar dispositivos. Esta opción solo está disponible si el Antivirus de Windows Defender está activado. Para obtener más información, vea [Reducir las superficies expuestas a ataques](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection).  <br/> |
 |Proteger carpetas de amenazas como ransomware  <br/> |Esta opción usa el acceso controlado a las carpetas para proteger los datos de la compañía ante la modificación de aplicaciones sospechosas, malintencionadas, como ransomware. Se impide que estos tipos de aplicaciones puedan realizar cambios en las carpetas protegidas. Esta opción solo está disponible si el Antivirus de Windows Defender está activado. Consulta [Proteger carpetas con acceso controlado a carpetas](/mem/configmgr/protect/deploy-use/create-deploy-exploit-guard-policy#bkmk_CFA) para obtener más información.  <br/> |
-|Impedir el acceso a la red a contenido potencialmente malintencionado en Internet  <br/> |Use esta configuración para bloquear las conexiones de usuario salientes a ubicaciones de Internet de baja reputación que pueden hospedar estafas de phishing, vulnerabilidades de seguridad u otro contenido malintencionado. Esta configuración solo está disponible si Antivirus de Windows Defender está establecida en **On**. Para obtener más información, vea [Protect your network](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).  <br/> |
-|Ayudar a proteger archivos y carpetas en equipos PC ante el acceso no autorizado con BitLocker  <br/> |BitLocker protege los datos al cifrar los discos duros del equipo y proteger ante la exposición de datos en caso del robo o pérdida de un equipo. Para obtener más información, consulta [Preguntas más frecuentes de Bitlocker](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions).  <br/> |
+|Impedir el acceso a la red a contenido potencialmente malintencionado en Internet  <br/> |Use esta configuración para bloquear las conexiones de usuario salientes a ubicaciones de Internet de baja reputación que pueden hospedar estafas de phishing, vulnerabilidades de seguridad u otro contenido malintencionado. Esta configuración solo está disponible si Antivirus de Windows Defender está establecida en **On**. Para obtener más información, consulte [Proteger la red](/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).  <br/> |
+|Ayudar a proteger archivos y carpetas en equipos PC ante el acceso no autorizado con BitLocker  <br/> |BitLocker protege los datos mediante el cifrado de las unidades de disco duro del equipo y protege contra la exposición a datos si se pierde o se roba un equipo. Para obtener más información, consulta [Preguntas más frecuentes de BitLocker](/windows/security/information-protection/BitLocker/BitLocker-frequently-asked-questions).  <br/> |
 |Permitir a los usuarios descargar aplicaciones desde la Microsoft Store  <br/> |Permite a los usuarios descargar e instalar aplicaciones desde la Microsoft Store. Las aplicaciones pueden ser de cualquier tipo, desde juegos hasta herramientas de productividad, por lo que dejamos esta configuración **activada**, pero puede desactivarla para obtener una capa de seguridad adicional.  <br/> |
-|Permitir a los usuarios acceder a Cortana  <br/> |Cortana puede ser muy útil. Cortana activar o desactivar la configuración, dar instrucciones y asegurarse de que está a tiempo para las citas, por lo que esta configuración se mantiene activa de **forma** predeterminada.  <br/> |
+|Permitir a los usuarios acceder a Cortana  <br/> |Cortana puede ser muy útil. Cortana puede activar o desactivar la configuración, dar instrucciones y asegurarse de que está a tiempo para las citas, por lo que esta configuración se mantiene activa **de forma predeterminada**.  <br/> |
 |Permitir a los usuarios recibir sugerencias de Windows y anuncios de Microsoft  <br/> |Las sugerencias de Windows pueden ser útiles y orientar a los usuarios cuando se publiquen nuevas características.  <br/> |
 |Mantener actualizados automáticamente los dispositivos con Windows 10  <br/> |Garantiza que los dispositivos con Windows 10 reciban automáticamente las actualizaciones más recientes.  <br/> |
 |Apagar la pantalla del dispositivo cuando esté inactivo durante esta cantidad de tiempo  <br/> |Garantiza que los datos de la compañía estén protegidos si un usuario está inactivo. Puede que un usuario trabaje en una ubicación pública, como una cafetería, y se aparte o se distraiga durante un momento, lo que dejaría su dispositivo vulnerable ante miradas indiscretas. Esta configuración le permite controlar cuánto tiempo puede estar inactivo un usuario antes de que se apague la pantalla.  <br/> |
+
+## <a name="see-also"></a>Consulte también
+
+[Principales 10 formas de proteger Microsoft 365 para planes empresariales](../security-and-compliance/secure-your-business-data.md)

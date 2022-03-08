@@ -12,18 +12,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo aprovisionar y usar la plantilla de sitio del Centro de contenido en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 342a8b42b8aa8a9bb60867f57379ce00db068c17
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 2650b98decc7977c4343f75b27ed46e2381abdef
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62902653"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314551"
 ---
 # <a name="use-the-content-center-site-template-for-microsoft-sharepoint-syntex"></a>Use la plantilla de sitio del Centro de contenido para Microsoft SharePoint Syntex
 
-El SharePoint Syntex centro de contenido es una plantilla de sitio lista para implementar SharePoint diseñada para ayudarle a comprender mejor SharePoint Syntex funcionalidades.
+El SharePoint Syntex centro de contenido es una plantilla de sitio de instrucciones SharePoint lista para implementar diseñada para ayudarle a comprender mejor SharePoint Syntex capacidades.
 
 Se te presentarán las herramientas y la información que necesitarás para crear y entrenar tus propios modelos. A continuación, podrá usar este sitio como repositorio de contenido central o como centro de control para administrar sus propios SharePoint Syntex web.
 
@@ -40,7 +39,7 @@ El sitio del Centro de contenido se puede aprovisionar desde el [SharePoint de l
 > [!NOTE]
 > Debe ser un administrador global o SharePoint administrador en Microsoft 365 aprovisionar el sitio.
 
-1. En la página principal del libro de [SharePoint](https://lookbook.microsoft.com/), en el menú Ver los diseños, seleccione **SharePoint Syntex** >  **SharePoint Syntex Centro de contenido**.
+1. En la página principal del libro de [SharePoint](https://lookbook.microsoft.com/), en el menú Ver los diseños, seleccione **SharePoint Syntex** >  **SharePoint Syntex de contenido**.
 
 2. En la **página Centro de** contenido, seleccione **Agregar al espacio empresarial**.
 
@@ -54,11 +53,11 @@ El sitio del Centro de contenido se puede aprovisionar desde el [SharePoint de l
 
 5. Seleccione **Abrir sitio** y verá el sitio del Centro de contenido. Desde aquí, puede explorar el sitio y obtener más información sobre SharePoint Syntex. 
 
-Para obtener más información sobre el aprovisionamiento desde el SharePoint de libros de apariencia, vea [Aprovisionar una nueva solución de caminos de aprendizaje](/office365/customlearning/custom_provision).
+Para obtener más información sobre el aprovisionamiento desde el SharePoint de libreta de apariencias, vea [Aprovisionar una nueva solución de caminos de aprendizaje](/office365/customlearning/custom_provision).
 
 ## <a name="explore-the-site"></a>Explorar el sitio
 
-El sitio del Centro de contenido incluye páginas rellenadas previamente que le indican los pasos para empezar a usar SharePoint Syntex en la organización. 
+El sitio del Centro de contenido incluye páginas rellenadas previamente que le indican los pasos para empezar a usar SharePoint Syntex en su organización. 
 
 ### <a name="get-started-with-sharepoint-syntex"></a>Introducción a SharePoint Syntex
 

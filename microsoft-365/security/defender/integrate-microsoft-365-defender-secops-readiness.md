@@ -1,6 +1,6 @@
 ---
 title: Paso 2. Realizar una evaluación de preparación de integración SOC con el marco de confianza cero
-description: Los conceptos básicos de realizar una evaluación de preparación de integración SOC con el marco de confianza cero al integrar Microsoft 365 Defender en las operaciones de seguridad.
+description: Los conceptos básicos de realizar una evaluación de preparación de integración SOC con Zero Trust Framework al integrar Microsoft 365 Defender en las operaciones de seguridad.
 keywords: incidentes, alertas, investigar, correlación, ataque, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365, respuesta a incidentes, ciberataque, secops, operaciones de seguridad, soc
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,21 +22,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ca58d56e9caf6aa8a359a0776fc160cca04fec8a
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 1197edf14977c0232936531399d726f62ab70889
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171795"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314313"
 ---
 # <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>Paso 2. Realizar una evaluación de preparación de integración SOC con el marco de confianza cero
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Una vez definidas las funciones principales del equipo del Centro de operaciones de seguridad (SOC), el siguiente paso para su organización es prepararse para la adopción de Microsoft 365 Defender a través de un enfoque de confianza [cero.](/security/zero-trust/) La adopción puede ayudarle a determinar los requisitos necesarios para implementar Microsoft 365 Defender con prácticas modernas líderes del sector, al tiempo que evalúa las capacidades de Microsoft 365 Defender en su entorno.
+Una vez definidas las funciones principales del equipo del Centro de operaciones de seguridad (SOC), el siguiente paso para su organización es prepararse para la adopción de Microsoft 365 Defender a través de un enfoque de confianza [cero](/security/zero-trust/). La adopción puede ayudarle a determinar los requisitos necesarios para implementar Microsoft 365 Defender con prácticas modernas líderes del sector, al tiempo que evalúa las capacidades de Microsoft 365 Defender en su entorno.
 
 Este enfoque se basa en una base sólida de protecciones e incluye áreas clave como identidad, puntos de conexión (dispositivos), datos, aplicaciones, infraestructura y redes. El equipo de evaluación de preparación determinará las áreas en las que aún no se ha cumplido un requisito fundamental para habilitar Microsoft 365 Defender y necesitará corrección.
 
@@ -48,7 +48,7 @@ Estos son algunos de los elementos que tendrán que corregirse para que el SOC o
 - **Infraestructura:** Gran número de licencias SaaS sin licencia, sin seguridad de contenedor y otras.
 - **Redes:** Problemas de rendimiento debido a un ancho de banda bajo, red plana, problemas de seguridad inalámbrica y otros.
 
-Las organizaciones también deben seguir el [artículo de Microsoft 365 Defender](m365d-enable.md) para capturar el conjunto de requisitos de configuración de línea base. Estos pasos determinarán a su vez las actividades de corrección que los equipos de SOC tendrán que llevar a cabo para desarrollar eficazmente casos de uso. 
+Las organizaciones también deben seguir el [artículo de activación Microsoft 365 Defender](m365d-enable.md) para capturar el conjunto de requisitos de configuración de línea base. Estos pasos determinarán a su vez las actividades de corrección que los equipos de SOC tendrán que llevar a cabo para desarrollar eficazmente casos de uso. 
 
 Los procedimientos de adopción y la creación de casos de uso se describen en los pasos 3 y 4.
 

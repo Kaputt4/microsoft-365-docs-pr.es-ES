@@ -19,51 +19,63 @@ ms.custom:
 search.appverid:
 - MET150
 description: La movilidad básica y la seguridad pueden ayudarle a proteger y administrar sus dispositivos móviles.
-ms.openlocfilehash: 73df4cd8aa4eb8dea8ef7c96304e48caf1f15f8a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 04ee7e7dfbc4937d4add2e4c27e7f686b596fadb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61908014"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314887"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Capacidades de Movilidad y seguridad básicas
 
-La movilidad y la seguridad básicas pueden ayudarle a proteger y administrar dispositivos móviles como iPhones, iPads, Androides y teléfonos Windows usados por usuarios con licencia Microsoft 365 en su organización. Puedes crear directivas de administración de dispositivos móviles con configuraciones que puedan ayudar a controlar el acceso a los documentos y correo electrónico Microsoft 365 de la organización para dispositivos móviles y aplicaciones compatibles. Si un dispositivo se pierde o se lo roban, puede borrarlo de forma remota para quitar la información confidencial de la organización.
+La movilidad y la seguridad básicas pueden ayudarle a proteger y administrar dispositivos móviles como iPhones, iPads, Androides y teléfonos Windows usados por usuarios con licencia Microsoft 365 en su organización. Puedes crear directivas de administración de dispositivos móviles con configuraciones que puedan ayudar a controlar el acceso a los documentos y Microsoft 365 correo electrónico de la organización para dispositivos móviles y aplicaciones compatibles. Si un dispositivo se pierde o se lo roban, puede borrarlo de forma remota para quitar la información confidencial de la organización.
 
-## <a name="supported-operating-systems"></a>Sistemas operativos compatibles 
+## <a name="supported-operating-systems"></a>Sistemas operativos admitidos
 
-Siga la Microsoft Intune de sistemas operativos para sistemas operativos compatibles para dispositivos que usan movilidad y seguridad básicas. Para obtener más información, consulta [Sistemas operativos compatibles con Intune.](/mem/intune/fundamentals/supported-devices-browsers)
+Siga la Microsoft Intune de sistemas operativos para los sistemas operativos mínimos admitidos para dispositivos por Basic Mobility and Security. Para obtener más información, consulta [Sistemas operativos compatibles con Intune](/mem/intune/fundamentals/supported-devices-browsers).
+
+Puedes usar Movilidad y seguridad básicas para proteger y administrar los siguientes dispositivos.
+
+- iOS
+- Android (incluido Samsung Knox)<sup>1</sup>
+- Windows <sup>2, 3</sup>
+
+<sup>1</sup> Después de junio de 2020, las versiones de Android posteriores al 9 no pueden administrar la configuración de contraseña excepto en dispositivos Samsung Knox.
+
+<sup>2</sup> El control de acceso Windows 8.1 dispositivos RT está limitado a Exchange ActiveSync.
+
+<sup>3</sup> El control de Windows 10 requiere una suscripción que incluya Azure AD Premium y el dispositivo debe unirse a Azure Active Directory.
 
 > [!NOTE]
 > Los dispositivos ya inscritos con versiones anteriores del sistema operativo siguen funcionando aunque las capacidades pueden cambiar sin previo aviso.
 
-Si los usuarios de la organización usan dispositivos móviles que no son compatibles con La movilidad y la seguridad básicas, es posible que quieras bloquear el acceso Exchange ActiveSync la aplicación Microsoft 365 un correo electrónico para esos dispositivos, para ayudar a que los datos de la organización sean más seguros. Para ver los pasos para bloquear Exchange ActiveSync, consulta [Manage device access settings in Basic Mobility and Security](manage-device-access-settings.md).
+Si los usuarios de la organización usan dispositivos móviles que no son compatibles con La movilidad y la seguridad básicas, es posible que desee bloquear el acceso Exchange ActiveSync la aplicación Microsoft 365 un correo electrónico para esos dispositivos, para ayudar a que los datos de su organización sean más seguros. Para ver los pasos para bloquear Exchange ActiveSync, consulta [Administrar la configuración de acceso a dispositivos en Basic Mobility and Security](manage-device-access-settings.md).
 
 ## <a name="access-control-for-microsoft-365-email-and-documents"></a>Control de acceso para Microsoft 365 correo electrónico y documentos
 
-Las aplicaciones admitidas para los distintos tipos de dispositivos móviles de la siguiente tabla piden a los usuarios que se inscriban en Movilidad y seguridad básicas donde hay una nueva directiva de administración de dispositivos móviles que se aplica al dispositivo de un usuario y el usuario no ha inscrito previamente el dispositivo. Si el dispositivo de un usuario no cumple una directiva, en función de cómo configure la directiva, es posible que un usuario no tenga acceso Microsoft 365 los recursos de estas aplicaciones o que tenga acceso, pero Microsoft 365 informe de una infracción de directiva.
+Las aplicaciones admitidas para los distintos tipos de dispositivos móviles de la siguiente tabla piden a los usuarios que se inscriban en Movilidad y seguridad básicas donde hay una nueva directiva de administración de dispositivos móviles que se aplica al dispositivo de un usuario y el usuario no ha inscrito previamente el dispositivo. Si el dispositivo de un usuario no cumple una directiva, en función de cómo configures la directiva, es posible que un usuario no tenga acceso Microsoft 365 los recursos de estas aplicaciones o que tengan acceso, pero Microsoft 365 informe de una infracción de directiva.
 
-|**Producto**|**iOS 10.0 o posterior**|**Android 5.0 o posterior**|
+|**Producto**|**iOS**|**Android**|
 |:-----|:-----|:-----|
 |**Exchange** Exchange ActiveSync incluye correo electrónico integrado y aplicaciones de terceros, como TouchDown, que usan Exchange ActiveSync versión 14.1 o posterior. |Correo |Correo electrónico |
-|**Office**   y  **OneDrive para la Empresa** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**En teléfonos y tabletas:**<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Solamente en teléfonos:** <br/> Office Mobile |
+| Office y  **OneDrive para la Empresa** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**En teléfonos y tabletas**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Solamente en teléfonos:** <br/> Office Mobile |
 
 > [!NOTE]
 >
 > - La compatibilidad con iOS 10.0 y versiones posteriores incluye iPhone y iPad dispositivos.
 > - La administración de dispositivos del sistema operativo BlackBerry no es compatible con seguridad básica y movilidad. Usa BlackBerry Business Cloud Services (BBCS) de BlackBerry para administrar dispositivos blackBerry OS. Los dispositivos Blackberry que ejecutan el sistema operativo Android se admiten como dispositivos Android estándar
-> - No se pedirá a los usuarios que se inscriban y no se les bloqueará ni se les notifica por infracción de directivas si usan el explorador móvil para acceder Microsoft 365 SharePoint sitios, documentos en Office Online o correo electrónico en Outlook Web App.
+> - No se pedirá a los usuarios que se inscriban y no se les bloqueará ni se les notifica por infracción de directiva si usan el explorador móvil para acceder Microsoft 365 SharePoint sitios, documentos en Office Online o correo electrónico en Outlook Web App.
 
-En el siguiente diagrama se muestra lo que sucede cuando un usuario con un dispositivo nuevo inicia sesión en una aplicación que admite el control de acceso con Movilidad y seguridad básicas. El usuario no tiene acceso a Microsoft 365 en la aplicación hasta que inscribe su dispositivo.
+En el siguiente diagrama se muestra lo que sucede cuando un usuario con un dispositivo nuevo inicia sesión en una aplicación que admite el control de acceso con Movilidad y seguridad básicas. El usuario tiene bloqueado el acceso a Microsoft 365 en la aplicación hasta que inscribe su dispositivo.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Control de acceso básico de movilidad y seguridad.":::
 
 > [!NOTE]
-> Las directivas y las reglas de acceso creadas en Basic Mobility and Security for Microsoft 365 Empresa Estándar invalidarán Exchange ActiveSync directivas de buzón de dispositivo móvil y reglas de acceso de dispositivos creadas en el centro de administración de Exchange dispositivo. Una vez que un dispositivo se inscribe en Movilidad básica y seguridad para Microsoft 365 Empresa Estándar, se omitirá cualquier directiva de buzón de dispositivo móvil o regla de acceso de dispositivo Exchange ActiveSync aplicada al dispositivo. Para obtener más información sobre Exchange ActiveSync, vea [Exchange ActiveSync en Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
+> Las directivas y las reglas de acceso creadas en Movilidad básica y seguridad para Microsoft 365 Empresa Estándar invalidarán Exchange ActiveSync directivas de buzón de dispositivo móvil y reglas de acceso de dispositivos creadas en el centro de administración Exchange dispositivo. Una vez que un dispositivo se inscribe en Movilidad básica y seguridad para Microsoft 365 Empresa Estándar, se omitirá cualquier directiva de buzón de dispositivo móvil o regla de acceso de dispositivo Exchange ActiveSync aplicada al dispositivo. Para obtener más información Exchange ActiveSync, vea  [Exchange ActiveSync en Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
 
 ## <a name="policy-settings-for-mobile-devices"></a>Configuración de directivas para dispositivos móviles
 
-Si crea una directiva para bloquear el acceso con determinadas opciones activadas, los usuarios no podrán acceder Microsoft 365 los recursos de Microsoft 365 al usar una aplicación compatible que se muestra en Control de acceso para documentos y correo electrónico de [Microsoft 365.](capabilities.md)
+Si creas una directiva para bloquear el acceso con determinadas configuraciones activadas, los usuarios no podrán acceder Microsoft 365 los recursos de Microsoft 365 al usar una aplicación compatible que aparece en control de acceso para documentos y correo electrónico de [Microsoft 365](capabilities.md).
 
 La configuración que puede impedir que los usuarios accedan Microsoft 365 recursos se encuentran en estas secciones:
 
@@ -83,7 +95,7 @@ En las secciones siguientes se enumera la configuración de directiva que puede 
 
 ## <a name="security-settings"></a>Configuración de seguridad
 
-|**Nombre de la configuración**|**iOS 7.1 y versiones posteriores**|**Android 5 y versiones posteriores**|**Samsung Knox**|
+|**Nombre de la configuración**|**iOS** |**Android**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Requerir contraseña|Sí|Sí|Sí|
 |Evitar contraseña simple|Sí|No|No|
@@ -96,29 +108,29 @@ En las secciones siguientes se enumera la configuración de directiva que puede 
 
 ## <a name="encryption-settings"></a>Configuración de cifrado
 
-|**Nombre de la configuración**|**iOS 7.1 y versiones posteriores**|**Android 5 y versiones posteriores**|**Samsung Knox**|
+|**Nombre de la configuración**|**iOS** |**Android**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|Requerir cifrado de datos en<sup>dispositivos 1</sup> |No|Sí|Sí|
+|Requerir cifrado de datos en <sup>dispositivos1</sup> |No|Sí|Sí|
 
 <sup>1</sup> Con Samsung Knox, también puede requerir cifrado en tarjetas de almacenamiento.
 
 ## <a name="jail-broken-setting"></a>Configuración de descodificación
 
-|**Nombre de la configuración**|**iOS 7.1 y versiones posteriores**|**Android 5 y versiones posteriores**|**Samsung Knox**|
+|**Nombre de la configuración**|**iOS** |**Android**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |El dispositivo no se puede descodificar ni descifrar |Sí|Sí|Sí|
 
 ## <a name="managed-email-profile-option"></a>Opción de perfil de correo electrónico administrado
 
-La siguiente opción puede impedir que los usuarios tengan acceso Microsoft 365 correo electrónico si usan un perfil de correo electrónico creado manualmente. Los usuarios de dispositivos iOS deben eliminar su perfil de correo electrónico creado manualmente para que puedan tener acceso a su correo electrónico. Después de eliminar el perfil, se crea automáticamente un nuevo perfil en el dispositivo. Para obtener instrucciones sobre cómo los usuarios finales pueden cumplir con las normas, consulte [Se encontró una cuenta de correo electrónico existente.](/intune-user-help/existing-company-email-account-found)
+La siguiente opción puede impedir que los usuarios tengan acceso Microsoft 365 correo electrónico si usan un perfil de correo electrónico creado manualmente. Los usuarios de dispositivos iOS deben eliminar su perfil de correo electrónico creado manualmente para que puedan tener acceso a su correo electrónico. Después de eliminar el perfil, se crea automáticamente un nuevo perfil en el dispositivo. Para obtener instrucciones sobre cómo pueden cumplir los usuarios finales, consulta [Se encontró una cuenta de correo electrónico existente](/intune-user-help/existing-company-email-account-found).
 
-|**Nombre de la configuración**|**iOS 7.1 y versiones posteriores**|**Android 5 y versiones posteriores**|**Samsung Knox**|
+|**Nombre de la configuración**|**iOS** |**Android**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |El perfil de correo electrónico es administrado |Sí|No|No|
 
 ## <a name="cloud-settings"></a>Configuración de nube
 
-|**Nombre de la configuración**|**iOS 7.1 y versiones posteriores**|**Android 5 y versiones posteriores**|**Samsung Knox**|
+|**Nombre de la configuración**|**iOS** |**Android**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Requerir copia de seguridad cifrada |Sí|No|No|
 |Bloquear copia de seguridad de la nube |Sí|No|No|
@@ -129,14 +141,14 @@ La siguiente opción puede impedir que los usuarios tengan acceso Microsoft 365 
 
 ## <a name="system-settings"></a>Configuración del sistema
 
-|**Nombre de la configuración**|**iOS 7.1 y versiones posteriores**|**Android 5 y versiones posteriores**|**Samsung Knox**|
+|**Nombre de la configuración**|**iOS** |**Android**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Bloquear captura de pantalla |Sí|No|Sí|
 |Bloquear el envío de datos de diagnóstico de dispositivos |Sí|No|Sí|
 
 ## <a name="application-settings"></a>Configuración de aplicaciones
 
-|**Nombre de la configuración**|**iOS 7.1 y versiones posteriores**|**Android 5 y versiones posteriores**|**Samsung Knox**|
+|**Nombre de la configuración**|**iOS** |**Android**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Bloquear las videoconferencias en el dispositivo |Sí|No|No|
 |Bloquear el acceso a la tienda de aplicaciones |Sí|No|Sí|
@@ -144,16 +156,16 @@ La siguiente opción puede impedir que los usuarios tengan acceso Microsoft 365 
 
 ## <a name="device-capabilities-settings"></a>Configuración de las funcionalidades del dispositivo
 
-|**Nombre de la configuración**|**iOS 7.1 y versiones posteriores**|**Android 5 y versiones posteriores**|**Samsung Knox**|
+|**Nombre de la configuración**|**iOS** |**Android**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Bloquear conexión con almacenamiento extraíble |Sí|Sí|No|
 |Bloquear conexión Bluetooth |Sí|Sí|No|
 
 ## <a name="additional-settings"></a>Otras configuraciones
 
-Puede establecer la siguiente configuración de directiva adicional mediante cmdlets de PowerShell del Centro de & seguridad. Para obtener más información, vea [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell).
+Puede establecer la siguiente configuración de directiva adicional mediante cmdlets de PowerShell del Centro de & seguridad. Para obtener más información,  [veaSecurity & Compliance Center PowerShell](/powershell/exchange/scc-powershell).
 
-|**Nombre de la configuración**|**iOS 7.1 y versiones posteriores**|**Android 5 y versiones posteriores**|
+|**Nombre de la configuración**|**iOS** |**Android**|
 |:-----|:-----|:-----|
 |CameraEnabled|Sí|Sí|
 |RegionRatings|Sí|No|
@@ -171,7 +183,7 @@ Puede establecer la siguiente configuración de directiva adicional mediante cmd
 
 ## <a name="settings-supported-by-windows"></a>Configuración compatible con Windows
 
-Puedes administrar Windows 10 dispositivos mediante la inscripción como dispositivos móviles. Una vez implementada una directiva aplicable, los usuarios con dispositivos Windows 10 tendrán que inscribirse en Movilidad y seguridad básicas la primera vez que usen la aplicación de correo electrónico integrada para acceder Microsoft 365 su correo electrónico Azure AD (requiere una suscripción premium).
+Puedes administrar Windows 10 dispositivos inscritos como dispositivos móviles. Una vez implementada una directiva aplicable, los usuarios con dispositivos Windows 10 tendrán que inscribirse en Movilidad y seguridad básicas la primera vez que usen la aplicación de correo electrónico integrada para acceder Microsoft 365 su correo electrónico de Microsoft 365 (requiere una suscripción premium Azure AD).
 
 La siguiente configuración es compatible con Windows 10 que están inscritos como dispositivos móviles. Esta configuración no impedirá que los usuarios accedan a Microsoft 365 recursos.
 
@@ -190,7 +202,7 @@ La siguiente configuración es compatible con Windows 10 que están inscritos co
 - Recordar el historial de contraseñas y evitar la reutilización
 
 > [!NOTE]
-> La siguiente configuración que regula las contraseñas solo controla las Windows locales. Windows cuentas proporcionadas a través de unirse a un dominio o Azure Active Directory no se ven afectadas por esta configuración.
+> La siguiente configuración que regula las contraseñas solo controla las cuentas Windows locales. Windows cuentas proporcionadas a través de unirse a un dominio o Azure Active Directory no se ven afectadas por esta configuración.
 
 ### <a name="system-settings"></a>Configuración del sistema
 
@@ -218,9 +230,9 @@ Puede establecer esta configuración de directiva adicional mediante cmdlets de 
 
 ## <a name="remotely-wipe-a-mobile-device"></a>Borrar de forma remota un dispositivo móvil
 
-Si se pierde o se roba un dispositivo, puedes quitar datos confidenciales de la organización y ayudar a impedir el acceso a los recursos de la organización de Microsoft 365 realizando una eliminación desde el Centro de seguridad & cumplimiento > Prevención de pérdida de datos Administración de **dispositivos**  >  . Puede realizar un borrado selectivo para quitar solo los datos de la organización o un borrado completo para eliminar toda la información de un dispositivo y restaurar la configuración original.
+Si se pierde o se roba un dispositivo, puedes quitar datos confidenciales de la organización y ayudar a impedir el acceso a los recursos de la organización de Microsoft 365 realizando una eliminación desde el Centro de seguridad & cumplimiento > **Prevención** >  de pérdida de **datosDispositivo**. Puede realizar un borrado selectivo para quitar solo los datos de la organización o un borrado completo para eliminar toda la información de un dispositivo y restaurar la configuración original.
 
-Para obtener más información, [consulta Borrar un dispositivo móvil en Basic Mobility and Security](wipe-mobile-device.md).
+Para obtener más información,  [consultaWipe un dispositivo móvil en Basic Mobility and Security](wipe-mobile-device.md).
 
 ## <a name="related-content"></a>Contenido relacionado
 

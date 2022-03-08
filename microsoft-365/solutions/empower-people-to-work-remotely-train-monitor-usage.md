@@ -2,8 +2,8 @@
 title: 'Paso 6: proporcione formación a sus trabajadores y dicte instrucciones mediante comentarios'
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Proporcione formación a los usuarios y asegúrese de que se dé respuesta a los problemas rápidamente.
-ms.openlocfilehash: ed2b1ab30de5c7c2a808a78ce99727e6e77e6e63
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: cb9fa844a9359318d4458fc8f800f834fd9e6f02
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61936791"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314033"
 ---
 # <a name="step-6-train-your-workers-and-address-usage-feedback"></a>Paso 6: proporcione formación a sus trabajadores y dicte instrucciones mediante comentarios
 

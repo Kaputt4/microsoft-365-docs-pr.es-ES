@@ -22,23 +22,23 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: ee2aadd844eebf6da436c1d6d02b6244f093bfd6
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: d9f1b4619670c1998dbac584bf7ef4e1d1f940b6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171988"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314229"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Evaluar la posición de seguridad con Puntuación segura de Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-La Puntuación de seguridad de Microsoft es una medida de la actitud de seguridad de una organización, donde un número más alto indica que se han tomado más acciones de mejora. Se puede encontrar en https://security.microsoft.com/securescore el portal de Microsoft 365 Defender [.](microsoft-365-defender.md)
+La Puntuación de seguridad de Microsoft es una medida de la actitud de seguridad de una organización, donde un número más alto indica que se han tomado más acciones de mejora. Se puede encontrar en el https://security.microsoft.com/securescore portal [de Microsoft 365 Defender web](microsoft-365-defender.md).
 
 Para ayudarle a encontrar la información que necesita más rápidamente, las acciones de mejora de Microsoft se organizan en grupos:
 
 - Identidad (Azure Active Directory cuentas & roles)
-- Device (Microsoft Defender para endpoint, conocido como [Puntuación segura de Microsoft para dispositivos](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
+- Dispositivo (Microsoft Defender para endpoint, conocido como [Puntuación segura de Microsoft para dispositivos](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 - Aplicaciones (correo electrónico y aplicaciones en la nube, incluidas Office 365 y Microsoft Defender para aplicaciones en la nube)
 
 >[!NOTE]
@@ -50,15 +50,15 @@ En la página Introducción a la puntuación segura de Microsoft, vea cómo se d
 
 ## <a name="check-your-current-score"></a>Comprobar la puntuación actual
 
-Para comprobar la puntuación actual, vaya a la página de información general de puntuación segura de Microsoft y busque el icono que indica **La puntuación segura**. La puntuación se mostrará como un porcentaje, junto con el número de puntos que has logrado del total de puntos posibles.
+Para comprobar la puntuación actual, vaya a la página De información general de Puntuación segura de Microsoft y busque el icono que indica **La puntuación segura**. La puntuación se mostrará como un porcentaje, junto con el número de puntos que has logrado del total de puntos posibles.
 
 Además, si selecciona el botón **Incluir** junto a la puntuación, puede elegir diferentes vistas de la puntuación. Estas diferentes vistas de puntuación se mostrarán en el gráfico en el icono de puntuación y en el gráfico de desglose de puntos.
 
 Las siguientes son las puntuaciones que puedes agregar a tu vista de la puntuación general para ofrecerte una imagen más completa de la puntuación general:
 
-- **Puntuación planeada:** mostrar la puntuación proyectada cuando se completan las acciones planeadas
-- **Puntuación de licencia actual:** mostrar la puntuación que se puede lograr con la licencia de Microsoft actual
-- **Puntuación alcanzable:** mostrar la puntuación que se puede lograr con las licencias de Microsoft y la aceptación del riesgo actual
+- **Puntuación planeada**: mostrar la puntuación proyectada cuando se completan las acciones planeadas
+- **Puntuación de licencia actual**: mostrar la puntuación que se puede lograr con la licencia actual de Microsoft
+- **Puntuación alcanzable**: mostrar la puntuación que se puede lograr con las licencias de Microsoft y la aceptación del riesgo actual
 
 Esta vista es la que tendrá si has incluido todas las vistas de puntuación posibles:
 
@@ -90,14 +90,14 @@ Agrega **notas** para realizar un seguimiento del progreso o cualquier otra cosa
 
 Elija los estados y las notas de registro específicas de la acción de mejora.
 
-- **To address:** you recognize that the improvement action is necessary and plan to address it at some point in the future. Este estado también se aplica a las acciones que se detectan como parcialmente, pero que no se completan completamente.
-- **Planeado:** hay planes concretos para completar la acción de mejora.
-- **Riesgo aceptado:** la seguridad siempre debe estar equilibrada con la facilidad de uso y no todas las recomendaciones funcionarán para su entorno. Cuando ese es el caso, puede optar por aceptar el riesgo, o el riesgo restante, y no aplicar la acción de mejora. No se le dará ningún punto, pero la acción ya no estará visible en la lista de acciones de mejora. Puede ver esta acción en el historial o deshacerla en cualquier momento.
+- **To address** : you recognize that the improvement action is necessary and plan to address it at some point in the future. Este estado también se aplica a las acciones que se detectan como parcialmente, pero que no se completan completamente.
+- **Planeado** : hay planes concretos para completar la acción de mejora.
+- **Riesgo aceptado** : la seguridad siempre debe estar equilibrada con la facilidad de uso y no todas las recomendaciones funcionarán para su entorno. Cuando ese es el caso, puede optar por aceptar el riesgo, o el riesgo restante, y no aplicar la acción de mejora. No se le dará ningún punto, pero la acción ya no estará visible en la lista de acciones de mejora. Puede ver esta acción en el historial o deshacerla en cualquier momento.
 - **Resuelto a través de** terceros y **Resuelto** mediante mitigación alternativa: la acción de mejora ya ha sido abordada por una aplicación o software de terceros, o una herramienta interna. Obtendrás los puntos que vale la acción, por lo que tu puntuación refleja mejor tu posición de seguridad general. Si una herramienta interna o de terceros ya no cubre el control, puede elegir otro estado. Tenga en cuenta que Microsoft no tendrá visibilidad sobre la integridad de la implementación si la acción de mejora se marca como uno de estos estados.
 
 #### <a name="threat--vulnerability-management-improvement-actions"></a>Acciones de & administración de vulnerabilidades de amenazas
 
-Para las acciones de mejora en la categoría "Dispositivo", no puedes elegir estados. En su lugar, se le dirigirá a la recomendación de Administración de amenazas y vulnerabilidades [de](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) seguridad asociada [en el Centro de seguridad de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/use) para tomar medidas. La excepción que elija y la justificación que escriba será específica de ese portal. No estará presente en el portal de puntuación segura de Microsoft.
+Para las acciones de mejora en la categoría "Dispositivo", no puedes elegir estados. En su lugar, se le dirigirá a la recomendación de Administración de amenazas y vulnerabilidades [de](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) seguridad asociada en el Microsoft 365 Defender tomar medidas. La excepción que elija y la justificación que escriba será específica de ese portal. No estará presente en el portal de puntuación segura de Microsoft.
 
 #### <a name="completed-improvement-actions"></a>Acciones de mejora completadas
 
@@ -107,7 +107,7 @@ Las acciones de mejora tienen un estado "completado" una vez que se han logrado 
 
 La sección denominada **De un vistazo** te mostrará la categoría, los ataques contra los que puede proteger y el producto.
 
-**El impacto** del usuario es lo que experimentarán los  usuarios si se aprueba la acción de mejora y los usuarios afectados son las personas que se verán afectadas.
+**El impacto** del usuario es lo que experimentarán los usuarios si se aprueba la acción de mejora y  los usuarios afectados son las personas que se verán afectadas.
 
 ### <a name="implement-the-improvement-action"></a>Implementar la acción de mejora
 
@@ -117,7 +117,7 @@ Entre los requisitos previos se incluyen las licencias necesarias o las acciones
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos escuchar sus comentarios
 
-Si tiene algún problema, háganoslo saber publicando en la comunidad [seguridad, privacidad & cumplimiento.](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) Estamos supervisando la comunidad y proporcionaremos ayuda.
+Si tiene algún problema, háganoslo saber publicando en la comunidad seguridad [, privacidad & cumplimiento](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Estamos supervisando la comunidad y proporcionaremos ayuda.
 
 ## <a name="related-resources"></a>Recursos relacionados
 

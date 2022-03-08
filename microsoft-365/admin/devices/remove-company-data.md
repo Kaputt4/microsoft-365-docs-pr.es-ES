@@ -25,32 +25,37 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: Descubra cómo usar Microsoft 365 para empresas para quitar los datos de la empresa que los usuarios tienen en sus dispositivos o Windows equipos.
-ms.openlocfilehash: ec5734154913148945e3c37d80e6a5c994af85f9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7cd26dfc2ea73e32fb7588a4d1e15098594a9313
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165381"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313809"
 ---
 # <a name="remove-company-data-from-devices"></a>Eliminar datos de la empresa de dispositivos
 
 Este artículo se aplica a Microsoft 365 Empresa Premium.
 
+> [!NOTE]
+> Microsoft Defender para empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para dispositivos. [Obtenga más información sobre Defender para empresas](../../security/defender-business/mdb-overview.md).
+
 ## <a name="remove-company-data"></a>Quitar datos de la empresa
 
-Puede usar Microsoft 365 para empresas para quitar los datos de [](app-protection-settings-for-android-and-ios.md) la [](protection-settings-for-windows-10-devices.md) empresa que los usuarios tienen en sus dispositivos o equipos Windows que están protegidos por Microsoft 365. **Si elimina los datos de la empresa de un dispositivo, no los podrá restaurar más adelante**. 
+Puede usar Microsoft 365 para empresas para quitar los datos de la empresa que los usuarios tienen en sus dispositivos o [](protection-settings-for-windows-10-devices.md) Windows equipos protegidos por Microsoft 365.[](app-protection-settings-for-android-and-ios.md) **Si elimina los datos de la empresa de un dispositivo, no los podrá restaurar más adelante**. 
   
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
-2. En la navegación izquierda, elija **Dispositivos** \> **administrar**.  
+2. En la navegación izquierda, elija **Administrar**  \> **dispositivos**.
   
 3. En la **página** Administrar, elija o busque un usuario que desee quitar los datos y elija el nombre. 
     
-4. En el siguiente panel, selecciona el dispositivo o los dispositivos de la **lista Dispositivos.** En el panel del dispositivo que se abre, puedes elegir restablecer el dispositivo a la configuración de fábrica o quitar datos de la compañía, según el tipo de dispositivo. 
+4. En el siguiente panel, selecciona el dispositivo o los dispositivos de la **lista Dispositivos** . En el panel del dispositivo que se abre, puedes elegir restablecer el dispositivo a la configuración de fábrica o quitar datos de la compañía, según el tipo de dispositivo. 
     
     ![En el panel quitar datos de la empresa, selecciona el dispositivo del que quieres quitar los datos.](../../media/resetorremove.png)
   
 5. En el panel de confirmación, elija **Confirmar** \> **cerrar**.
     
 
+## <a name="see-also"></a>Consulte también
 
+[Principales 10 formas de proteger Microsoft 365 para planes empresariales](../security-and-compliance/secure-your-business-data.md)

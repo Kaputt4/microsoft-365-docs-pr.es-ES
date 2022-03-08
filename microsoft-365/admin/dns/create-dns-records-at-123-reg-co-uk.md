@@ -2,13 +2,13 @@
 title: Conectar los registros DNS en 123-reg.co.uk a Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
-description: Aprenda a comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en 123-reg.co.uk microsoft.
-ms.openlocfilehash: 64fdb9df70598aed5113620ea11caf8f70b5926a
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: Obtenga información sobre cómo comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en 123-reg.co.uk microsoft.
+ms.openlocfilehash: 050aad4ca3e0e768b160a7ba210a93e163d72fe7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648712"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314943"
 ---
 # <a name="connect-your-dns-records-at-123-regcouk-to-microsoft-365"></a>Conectar los registros DNS en 123-reg.co.uk a Microsoft 365
 
@@ -53,7 +53,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Seleccione el dominio que desea comprobar.":::
 
-3. En la página Administrar dominio, en **Configuración avanzada del dominio,** elija **Administrar DNS**.
+3. En la página Administrar dominio, en **Configuración avanzada del dominio**, elija **Administrar DNS**.
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Seleccione Administrar DNS en la lista desplegable.":::
   
@@ -80,9 +80,9 @@ Ahora que ha agregado el registro en el sitio del registrador de dominios, volve
   
 Para comprobar el registro en Microsoft 365:
   
-1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**dominios**</a>.
 
-1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**. 
+1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar configuración**. 
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
 
@@ -101,7 +101,7 @@ Para comprobar el registro en Microsoft 365:
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Seleccione el nombre del dominio que desea editar.":::
 
-3. En la página Administrar dominio, en **Configuración avanzada del dominio,** elija **Administrar DNS**.
+3. En la página Administrar dominio, en **Configuración avanzada del dominio**, elija **Administrar DNS**.
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Seleccione Administrar DNS en la lista desplegable.":::
   
@@ -133,7 +133,7 @@ Para comprobar el registro en Microsoft 365:
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Seleccione el nombre del dominio que desea editar.":::
 
-3. En la página Administrar dominio, en **Configuración avanzada del dominio,** elija **Administrar DNS**.
+3. En la página Administrar dominio, en **Configuración avanzada del dominio**, elija **Administrar DNS**.
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Seleccione Administrar DNS en la lista desplegable.":::
   
@@ -158,7 +158,7 @@ Para comprobar el registro en Microsoft 365:
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro SPF para su dominio, no cree uno nuevo para Microsfot. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *SPF*  que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](../../enterprise/external-domain-name-system-records.md). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml). 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro SPF para su dominio, no cree uno nuevo para Microsfot. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga  un único registro SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](../../enterprise/external-domain-name-system-records.md). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml). 
   
 1. Para empezar, vaya a su página de dominios en 123-reg.co.uk a través de [este vínculo](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Se le pedirá que inicie sesión primero .
 
@@ -166,7 +166,7 @@ Para comprobar el registro en Microsoft 365:
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Seleccione el nombre del dominio que desea editar.":::
 
-3. En la página Administrar dominio, en **Configuración avanzada del dominio,** elija **Administrar DNS**.
+3. En la página Administrar dominio, en **Configuración avanzada del dominio**, elija **Administrar DNS**.
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Seleccione Administrar DNS en la lista desplegable.":::
   
@@ -186,7 +186,7 @@ Para comprobar el registro en Microsoft 365:
 
 ## <a name="advanced-option-skype-for-business"></a>Opción avanzada: Skype Empresarial
 
-Solo seleccione esta opción si su organización usa Skype Empresarial servicios de comunicación en línea como chat, llamadas de conferencia y videollamadas, además de Microsoft Teams. Skype necesita 4 registros: 2 registros SRV para la comunicación de usuario a usuario y 2 registros CNAME para iniciar sesión y conectar usuarios al servicio.
+Solo seleccione esta opción si su organización usa Skype Empresarial para servicios de comunicación en línea como chat, llamadas de conferencia y videollamadas, además de Microsoft Teams. Skype necesita 4 registros: 2 registros SRV para la comunicación de usuario a usuario y 2 registros CNAME para iniciar sesión y conectar usuarios al servicio.
 
 ### <a name="add-the-two-required-srv-records"></a>Agregar los dos registros SRV necesarios
 
@@ -196,7 +196,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Seleccione el nombre del dominio que desea editar.":::
 
-3. En la página Administrar dominio, en **Configuración avanzada del dominio,** elija **Administrar DNS**.
+3. En la página Administrar dominio, en **Configuración avanzada del dominio**, elija **Administrar DNS**.
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Seleccione Administrar DNS en la lista desplegable.":::
   
@@ -233,7 +233,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Seleccione el nombre del dominio que desea editar.":::
 
-1. En la página Administrar dominio, en **Configuración avanzada del dominio,** elija **Administrar DNS**.
+1. En la página Administrar dominio, en **Configuración avanzada del dominio**, elija **Administrar DNS**.
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Seleccione Administrar DNS en la lista desplegable.":::
   
@@ -273,7 +273,7 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
 
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Seleccione el nombre del dominio que desea editar.":::
 
-1. En la página Administrar dominio, en **Configuración avanzada del dominio,** elija **Administrar DNS**.
+1. En la página Administrar dominio, en **Configuración avanzada del dominio**, elija **Administrar DNS**.
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Seleccione Administrar DNS en la lista desplegable.":::
   

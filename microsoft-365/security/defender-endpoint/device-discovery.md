@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
+ms.author: siosulli
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 56c7c2ab6a8023be8a570c5b33c64112d8545df1
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 9045c9a425b78f46d39ebb63664b693bf40252c4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767669"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314400"
 ---
 # <a name="device-discovery-overview"></a>Información general de la detección de dispositivo
 
@@ -52,7 +52,7 @@ Vea este vídeo para obtener una introducción rápida de cómo se detección de
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
 
-Junto con esta funcionalidad, una recomendación de seguridad para incorporar dispositivos a Microsoft Defender para Endpoint está disponible como parte de la experiencia existente de administración de amenazas y vulnerabilidades.
+Junto con esta funcionalidad, una recomendación de seguridad para incorporar dispositivos a Microsoft Defender para Endpoint está disponible como parte de la experiencia Administración de amenazas y vulnerabilidades usuario existente.
 
 ## <a name="discovery-methods"></a>Métodos de detección
 
@@ -74,19 +74,21 @@ Puedes cambiar y personalizar la configuración de detección, para obtener más
 
 ## <a name="device-inventory"></a>Inventario de dispositivos
 
-Los dispositivos que se han detectado pero aún no se han incorporado y protegidos por Microsoft Defender para endpoint aparecerán en el Inventario de dispositivos en la pestaña Puntos de conexión.
+Los dispositivos detectados pero que aún no se han incorporado y protegidos por Microsoft Defender para Endpoint aparecerán en el inventario de dispositivos en la pestaña Equipos y móviles.
 
-Puedes usar un filtro en la lista de inventario de dispositivos denominada Estado de incorporación, que puede tener cualquiera de los siguientes valores:
+Para evaluar estos dispositivos, puedes usar un filtro en la lista de inventario de dispositivos denominada Estado de incorporación, que puede tener cualquiera de los siguientes valores:
 
 - Incorporado: el punto de conexión se incorpora a Microsoft Defender para endpoint.
 - Se puede incorporar: el punto de conexión se descubrió en la red y el sistema operativo se identificó como uno compatible con Microsoft Defender para endpoint, pero no está incorporado actualmente. Recomendamos encarecidamente la incorporación de estos dispositivos.
 - No compatible: el punto de conexión se ha detectado en la red, pero Microsoft Defender no admite endpoint.
 - Información insuficiente: el sistema no pudo determinar la compatibilidad del dispositivo. Habilitar la detección estándar en más dispositivos de la red puede enriquecer los atributos detectados.
 
-![Imagen del panel de inventario de dispositivos.](images/2b62255cd3a9dd42f3219e437b956fb9.png)
+![Imagen del panel de inventario de dispositivos.](images/device-discovery-inventory.png)
 
 > [!TIP]
 > Siempre puedes aplicar filtros para excluir dispositivos no administrados de la lista de inventario de dispositivos. También puede usar la columna de estado de incorporación en las consultas API para filtrar los dispositivos no administrados.
+
+Para obtener más información, consulta [Inventario de dispositivos](machines-view-overview.md).
 
 ## <a name="network-device-discovery"></a>Detección de dispositivos de red
 
@@ -106,7 +108,7 @@ Para abordar el desafío de obtener la visibilidad suficiente para localizar, id
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>Evaluación de vulnerabilidad en dispositivos detectados
 
-Las vulnerabilidades y riesgos en los dispositivos, así como otros dispositivos no administrados detectados en la red, forman parte de los flujos actuales de TVM en "Security Recomendaciones" y se representan en páginas de entidad en todo el portal.
+Las vulnerabilidades y riesgos en los dispositivos, así como en otros dispositivos no administrados detectados en la red, forman parte de los flujos actuales de TVM en "Security Recomendaciones" y se representan en páginas de entidad en todo el portal.
 Busque recomendaciones de seguridad relacionadas con "SSH" para buscar vulnerabilidades SSH relacionadas con dispositivos administrados y no administrados.
 
 ![Imagen del panel de recomendaciones de seguridad.](images/1156c82ffadd356ce329d1cf551e806c.png)
@@ -134,16 +136,6 @@ DeviceNetworkEvents
 | where ActionType == "ConnectionAcknowledged" or ActionType == "ConnectionAttempt"
 | take 10
 ```
-
-## <a name="changed-behavior"></a>Comportamiento cambiado
-
-En la siguiente sección se enumeran los cambios que observará en Microsoft Defender para endpoint y <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal cuando</a> esta funcionalidad esté habilitada.
-
-1. Se espera que los dispositivos que no están incorporados a Microsoft Defender para endpoint aparezcan en el inventario de dispositivos, la búsqueda avanzada y las consultas api. Esto puede aumentar significativamente el tamaño de los resultados de la consulta.
-    1. Las tablas "DeviceInfo" y "DeviceNetworkInfo" en la búsqueda avanzada ahora mantendrán el dispositivo detectado. Puedes filtrar esos dispositivos mediante el atributo "OnboardingStatus".
-    2. Se espera que los dispositivos detectados aparezcan en los resultados de consulta de la API de streaming. Puede filtrar esos dispositivos mediante el filtro `OnboardingStatus` de la consulta.
-2. Los dispositivos no administrados se asignarán a grupos de dispositivos existentes según los criterios definidos.
-3. En raras ocasiones, la detección estándar puede desencadenar alertas en monitores de red o herramientas de seguridad. Proporcione comentarios, si experimenta este tipo de eventos, para evitar que estos problemas se repitan. Puede excluir explícitamente destinos específicos o subredes enteras de ser sondeados activamente por la detección estándar.
 
 ## <a name="next-steps"></a>Siguientes pasos
 

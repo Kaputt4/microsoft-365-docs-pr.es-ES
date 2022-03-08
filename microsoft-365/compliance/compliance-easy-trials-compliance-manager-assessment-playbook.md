@@ -2,8 +2,8 @@
 title: Cuaderno de estrategias de evaluaciones premium del Administrador de cumplimiento de Microsoft
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuaderno de estrategias de evaluaciones premium del Administrador de cumplimiento de Microsoft.
-ms.openlocfilehash: e03fca9adfad720a4203885e98f2a9474243bbc4
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 7beff27d5d2eb7693f165d479bbc8df6e190d028
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61561141"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321031"
 ---
 # <a name="trial-playbook-microsoft-compliance-manager-premium-assessments"></a>Cuaderno de estrategias: evaluaciones premium del Administrador de cumplimiento de Microsoft
 
@@ -70,7 +70,7 @@ Hay dos maneras de habilitar la prueba del complemento de evaluación premium: a
 
 ### <a name="enable-trial-via-the-compliance-trial"></a>Habilitar la prueba a través de la prueba de cumplimiento
 
-1. En el Centro de cumplimiento, seleccione **Pruebas en** el panel de navegación izquierdo. Se mostrarán las pruebas disponibles.
+1. En el Centro de cumplimiento, seleccione **Pruebas** en el panel de navegación izquierdo. Se mostrarán las pruebas disponibles.
 1. Elija **Pruebe ahora** para las evaluaciones premium del Administrador de cumplimiento.
 1. Se le mostrará una página de información y la capacidad de obtener más información antes de configurar la prueba.
 1. Al elegir **Configurar**, los cambios pueden tardar hasta dos horas en surtir efecto. Tendrá que iniciar sesión de nuevo para ver las plantillas disponibles.
@@ -87,7 +87,7 @@ Después de iniciar la evaluación premium, verá un resumen en el panel en el q
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
-**Microsoft Docs**: obtenga información detallada sobre cómo funcionan las evaluaciones premium del Administrador de cumplimiento y cómo implementarlas mejor para su organización. Visita [Documentos](compliance-manager-templates.md).
+**Microsoft Docs**: obtenga información detallada sobre cómo funcionan las evaluaciones premium del Administrador de cumplimiento y cómo implementarlas mejor para su organización. Visite [Docs](compliance-manager-templates.md).
 
 **Vídeos de procedimientos**: Consulte los siguientes vídeos para obtener más información:
 
