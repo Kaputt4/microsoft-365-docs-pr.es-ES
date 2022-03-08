@@ -17,14 +17,15 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkSPO
 recommendations: false
 description: Obtenga información sobre cómo implementar equipos con la protección de datos con un nivel de confidencialidad alto.
-ms.openlocfilehash: 27d2183a3f6f5f43f4461bc83fe3b33ac9f4f56e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 053f92f0a3f7551d747c81b13b3832798c7e953c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169364"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312602"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configuración de equipos con protección de datos con un nivel de confidencialidad alto
 
@@ -129,12 +130,11 @@ Cada vez que cree un nuevo equipo con la etiqueta de confidencialidad alta, debe
 
 Para actualizar el tipo de vínculo para compartir predeterminado del sitio
 
-1. Abra el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint).
-2. En **Sitios**, haga clic en **Sitios activos**.
-3. Haga clic en el sitio que está asociado al equipo.
-4. En **Uso compartido externo** de la pestaña **Directivas**, haga clic en **Editar**.
-5. En Tipo de vínculo de uso compartido predeterminado, desactive la casilla de verificación **Igual que la configuración de nivel de organización** y seleccione **Usuarios con acceso existente**.
-6. Haga clic en **Guardar**.
+1. Abra el centro de administración SharePoint y, en **Sitios**, seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a>.
+1. Haga clic en el sitio que está asociado al equipo.
+1. En la pestaña **Directivas** de la pestaña **Uso compartido externo**, haga clic en **Editar**.
+1. En Tipo de vínculo de uso compartido predeterminado, desactive la casilla de verificación **Igual que la configuración de nivel de organización** y seleccione **Usuarios con acceso existente**.
+1. Seleccione **Guardar**.
 
 #### <a name="private-channels"></a>Canales privados
 

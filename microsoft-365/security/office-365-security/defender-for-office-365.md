@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft Defender para Office 365 incluye archivos adjuntos seguros, vínculos seguros, herramientas avanzadas antiphishing, herramientas de creación de informes y funciones de inteligencia sobre amenazas.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6756ba1c0315bb2b89c272d8153715cffe8f976
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: f78194541db8221aad1243966ddee6b6dc071d7d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818569"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317057"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365
 
@@ -56,7 +56,7 @@ En esta guía interactiva, aprenderá cómo proteger su organización con Micros
 
 ## <a name="getting-started"></a>Introducción
 
-Si no está familiarizado con Microsoft Defender para Office 365 o prefiere aprender mediante la *práctica*, puede que le convenga analizar por partes la configuración inicial de Microsoft Defender para Office 365, investigar y consultar informes utilizando este artículo como referencia. Aquí se muestran fragmentos previos de configuración de manera lógica:
+Si no está familiarizado con Microsoft Defender para Office 365 o prefiere *aprender mediante la práctica*, puede que le convenga analizar por partes la configuración inicial de Microsoft Defender para Office 365, investigar y consultar informes utilizando este artículo como referencia. Estos son fragmentos lógicos de configuración temprana:
 
 - Configure todo con "*anti*" en el nombre.
   - antimalware
@@ -81,7 +81,7 @@ La siguiente tabla es un resumen de lo que se incluye en cada plan.
 
 |Defender para Office 365 Plan 1|Defender para Office 365 Plan 2|
 |---|---|
-|Funcionalidades de configuración, protección y detección: <ul><li>[Archivos adjuntos seguros](safe-attachments.md)</li><li>[Vínculos seguros](safe-links.md)</li><li>[Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Protección contra phishing en Microsoft Defender para Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Detecciones en tiempo real](threat-explorer.md)</li></ul>|Capacidades del Plan 1 de Defender para Office 365 <p> --- además --- <p> Funcionalidades de automatización, investigación, corrección y educación: <ul><li>[Rastreadores de amenazas](threat-trackers.md)</li><li>[Explorador de amenazas](threat-explorer.md)</li><li>[Investigación y respuesta automatizadas](office-365-air.md)</li><li>[Aprendizaje de simulación de ataque](attack-simulation-training.md)</li><li>[Búsqueda avanzada de amenazas de Microsoft 365 Defender](advanced-hunting-overview.md)</li><li>[Incidentes de Microsoft 365 Defender](investigate-incidents.md)</li><li>[Alertas de Microsoft 365 Defender](investigate-alerts.md)</li></ul>|
+|Funcionalidades de configuración, protección y detección: <ul><li>[Archivos adjuntos seguros](safe-attachments.md)</li><li>[Vínculos seguros](safe-links.md)</li><li>[Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Protección contra phishing en Microsoft Defender para Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Detecciones en tiempo real](threat-explorer.md)</li></ul>|Capacidades del Plan 1 de Defender para Office 365 <p> --- además --- <p> Funcionalidades de automatización, investigación, corrección y educación: <ul><li>[Rastreadores de amenazas](threat-trackers.md)</li><li>[Explorador de amenazas](threat-explorer.md)</li><li>[Investigación y respuesta automatizadas](office-365-air.md)</li><li>[Aprendizaje de simulación de ataque](attack-simulation-training.md)</li><li>[Búsqueda proactiva de amenazas con la búsqueda avanzada de Microsoft 365 Defender](../defender/advanced-hunting-overview.md)</li><li>[Investigar incidentes con Microsoft 365 Defender](../defender/investigate-incidents.md)</li><li>[Investigar alertas con Microsoft 365 Defender](../defender/investigate-alerts.md)</li></ul>|
 
 
 - El Plan 2 de Microsoft Defender para Office 365 está incluido en Office 365 E5, Office 365 A5 y Microsoft 365 E5.

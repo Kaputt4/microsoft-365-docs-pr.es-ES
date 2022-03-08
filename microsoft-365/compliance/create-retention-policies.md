@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 115dcce1e99583ab0c3345da683be0b826b24ff7
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 37e94d43f2cfeab0e1135c42de34726ee5895714
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524074"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320597"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -92,7 +92,7 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
 
 5. En la página **Decidir si quiere conservar el contenido, eliminarlo, o ambos**, especifique las opciones de configuración para conservar y eliminar el contenido.
 
-   Puede crear una directiva de retención que sólo retenga el contenido sin eliminarlo, que retenga y luego elimine después de un período de tiempo determinado, o que sólo elimine el contenido después de un período de tiempo determinado. Para más información, consulte [Configuración para conservar y eliminar contenido](retention-settings.md#settings-for-retaining-and-deleting-content).
+   Puede crear una directiva de retención que sólo retenga el contenido sin eliminarlo, que retenga y luego elimine después de un período de tiempo determinado, o que sólo elimine el contenido después de un período de tiempo determinado. Para saber más, vea la [Configuración para conservar y eliminar contenido](retention-settings.md#settings-for-retaining-and-deleting-content).
 
 6. Complete la configuración y guarde los ajustes.
 
@@ -156,7 +156,7 @@ Es posible que una directiva de retención que se aplique a los grupos de Micros
 
 5. En la página **Decidir si quiere conservar el contenido, eliminarlo, o ambos**, especifique las opciones de configuración para conservar y eliminar el contenido. 
     
-    Puede crear una directiva de retención que sólo retenga el contenido sin eliminarlo, que retenga y luego elimine después de un período de tiempo determinado, o que sólo elimine el contenido después de un período de tiempo determinado. Para más información, consulte [Configuración para conservar y eliminar contenido](retention-settings.md#settings-for-retaining-and-deleting-content).
+    Puede crear una directiva de retención que sólo retenga el contenido sin eliminarlo, que retenga y luego elimine después de un período de tiempo determinado, o que sólo elimine el contenido después de un período de tiempo determinado. Para saber más, vea la [Configuración para conservar y eliminar contenido](retention-settings.md#settings-for-retaining-and-deleting-content).
 
 6. Complete la configuración y guarde los ajustes.
 
@@ -164,7 +164,7 @@ Para obtener más información sobre cómo funcionan las directivas de retenció
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>Directivas de retención adicionales que se necesitan para admitir Yammer
 
-Yammer es más que solo mensajes de la comunidad y mensajes privados. Para conservar y eliminar los mensajes de correo electrónico de su red de Yammer, configure una directiva de retención adicional que incluya a los grupos de Microsoft 365 que se usan para Yammer, mediante la ubicación de los **Grupos de Microsoft 365**. 
+Yammer ofrece elementos que van más allá de los mensajes de comunidad y los mensajes privados. Para conservar y eliminar los mensajes de correo electrónico de su red de Yammer, configure una directiva de retención adicional que incluya a los grupos de Microsoft 365 que se usan para Yammer, mediante la ubicación de los **Grupos de Microsoft 365**. 
 
 Para conservar y eliminar los archivos almacenados en Yammer, necesitará una directiva de retención que incluya las ubicaciones de los **grupos de Microsoft 365** o de las **cuentas de OneDrive**:
 
@@ -204,7 +204,7 @@ Use las siguientes instrucciones para crear directivas de retención que aplique
 
 5. En la página **Decidir si quiere conservar el contenido, eliminarlo, o ambos**, especifique las opciones de configuración para conservar y eliminar el contenido.
     
-    Puede crear una directiva de retención que sólo retenga el contenido sin eliminarlo, que retenga y luego elimine después de un período de tiempo determinado, o que sólo elimine el contenido después de un período de tiempo determinado. Para más información, consulte [Configuración para conservar y eliminar contenido](retention-settings.md#settings-for-retaining-and-deleting-content) en esta página.
+    Puede crear una directiva de retención que sólo retenga el contenido sin eliminarlo, que retenga y luego elimine después de un período de tiempo determinado, o que sólo elimine el contenido después de un período de tiempo determinado. Para más información, consulte [Configuración para retener y eliminar contenido](retention-settings.md#settings-for-retaining-and-deleting-content) en esta página.
 
 6. Complete la configuración y guarde los ajustes.
 
@@ -214,15 +214,23 @@ Cuando se crea y envía una directiva de retención, ésta puede tardar hasta si
   
 ![Diagrama de cuándo surte efecto la directiva de retención.](../media/retention-policy-timings.png)
 
-En primer lugar, la directiva de retención debe distribuirse a las ubicaciones seleccionadas y luego aplicarse al contenido. Se puede comprobar el estado de distribución de la directiva de retención seleccionándola en la página **Directivas de retención** del centro de cumplimiento. En el panel flotante, si el estado es **Desactivado (Error)** y en los detalles de las ubicaciones aparece un mensaje que indica que se está tardando más de lo esperado en implementar la directiva (para SharePoint) o en intentar volver a implementarla (para OneDrive), intente ejecutar el comando de PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) para volver a intentar la distribución de directivas:
+En primer lugar, la directiva de retención debe distribuirse a las ubicaciones seleccionadas y luego aplicarse al contenido. Se puede comprobar el estado de distribución de la directiva de retención seleccionándola en la página **Directivas de retención** del centro de cumplimiento. En el panel flotante, si el estado es **(Error)** y en los detalles de las ubicaciones aparece un mensaje que indica que se está tardando más de lo esperado en implementar la directiva o en intentar volver a implementarla, intente ejecutar el comando de PowerShell [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy)o el [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) para volver a intentar la distribución de directivas:
 
 1. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-2. Ejecute el siguiente comando:
+2. Ejecute uno de los siguientes comandos:
     
-    ```PowerShell
-    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-    ```
+    - Para las ubicaciones de directiva **mensajes de canal privado de Teams**, **mensajes de usuario de Yammer** y **mensajes de la comunidad Yammer**:
+    
+        ```PowerShell
+        Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
+    
+    - Para todas las demás ubicaciones de directiva, como el **correo electrónico Exchange**, **sitios de SharePoint**, **mensajes del canal Teams**, etc.:
+    
+        ```PowerShell
+        Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
 
 ## <a name="updating-retention-policies"></a>Actualización de las directivas de retención
 
