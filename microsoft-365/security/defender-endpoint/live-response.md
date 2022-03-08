@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bc7b18088d25e47cd214da2df94ff5eb524f2e78
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: e0e2490fb9026ff23e55990930ddedeb48144b92
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171915"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315979"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigar entidades en dispositivos con respuesta en directo
 
@@ -61,21 +61,21 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
     - [Versión 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) con [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Versión 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) con [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **macOS:** solo aplicable a public preview, versión mínima requerida: 101.43.84 
+  - **macOS** : solo aplicable a public preview, versión mínima requerida: 101.43.84 
   
    > [!NOTE]
    > Actualmente solo se admiten sistemas macOS basados en Intel.
     
 
-  - **Linux:** solo aplicable a public preview, versión mínima requerida: 101.45.13 
+  - **Linux** : solo aplicable a public preview, versión mínima requerida: 101.45.13 
     
-  - **Windows Server 2012 R2:** con [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
+  - **Windows Server 2012 R2**: con [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
   
-  - **Windows Server 2016:** con [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
+  - **Windows Server 2016**: con [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
 
   - **Windows Server 2019**
-    - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) posterior
-    - Versión 1809 (con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
+    - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) más adelante
+    - Versión 1809 ( [con KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
     
   - **Windows Server 2022**
 
@@ -83,7 +83,7 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
 
 - **Habilitar la respuesta en directo desde la página de configuración avanzada**.
 
-  Tendrás que habilitar la funcionalidad de respuesta en directo en la [página Configuración de características avanzadas.](advanced-features.md)
+  Tendrás que habilitar la funcionalidad de respuesta en directo en la [página Configuración de características avanzadas](advanced-features.md) .
 
   > [!NOTE]
   > Solo los usuarios con roles de administración global o de seguridad pueden editar esta configuración.
@@ -93,7 +93,7 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
   > [!NOTE]
   > Solo los usuarios con roles de administración global o de seguridad pueden editar esta configuración.
 
-- **Asegúrese de que el dispositivo tiene asignado un** nivel de corrección de automatización .
+- **Asegúrate de que el dispositivo tenga asignado un nivel de corrección de automatización**.
 
   Tendrás que habilitar, al menos, el nivel mínimo de corrección para un grupo de dispositivos determinado. De lo contrario, no podrá establecer una sesión de live response a un miembro de ese grupo.
 
@@ -101,7 +101,7 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
 
   ![Imagen del mensaje de error.](images/live-response-error.png)
 
-- **Habilitar la ejecución de script sin signo de respuesta** en directo (opcional).
+- **Habilitar la ejecución de script sin signo de respuesta en directo** (opcional).
 
   >[!IMPORTANT]
   >La comprobación de firmas solo se aplica a los scripts de PowerShell. 
@@ -109,7 +109,7 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
   > [!WARNING]
   > Permitir el uso de scripts sin signo puede aumentar la exposición a amenazas.
 
-  No se recomienda ejecutar scripts sin firma, ya que puede aumentar la exposición a amenazas. Sin embargo, si debe usarlos, deberá habilitar la configuración en la [página Configuración de características avanzadas.](advanced-features.md)
+  No se recomienda ejecutar scripts sin firma, ya que puede aumentar la exposición a amenazas. Sin embargo, si debe usarlos, deberá habilitar la configuración en la [página Configuración de características avanzadas](advanced-features.md) .
 
 - **Asegúrese de que tiene los permisos adecuados**.
 
@@ -140,13 +140,13 @@ El panel también le da acceso a:
 
 1. Inicie sesión en Microsoft 365 Defender portal.
 
-2. Vaya a **Endpoints > Inventario de dispositivos** y seleccione un dispositivo para investigar. Se abre la página dispositivos.
+2. Ve a **Endpoints > Inventario de dispositivos** y selecciona un dispositivo para investigar. Se abre la página dispositivos.
 
 3. Inicie la sesión de respuesta activa seleccionando **Iniciar sesión de respuesta en directo**. Se muestra una consola de comandos. Espere mientras la sesión se conecta al dispositivo.
 
 4. Use los comandos integrados para realizar trabajos de investigación. Para obtener más información, vea [Comandos de respuesta en directo](#live-response-commands).
 
-5. Después de completar la investigación, seleccione **Desconectar sesión** y, a continuación, **seleccione Confirmar**.
+5. Después de completar la investigación, selecciona **Desconectar sesión** y, a continuación, **selecciona Confirmar**.
 
 ## <a name="live-response-commands"></a>Comandos de respuesta en directo
 
@@ -209,7 +209,7 @@ Los siguientes comandos están disponibles para los roles de usuario a los que s
 
 ## <a name="use-live-response-commands"></a>Usar comandos de respuesta en directo
 
-Los comandos que se pueden usar en la consola siguen principios similares a [Windows comandos](/windows-server/administration/windows-commands/windows-commands#BKMK_c).
+Los comandos que puede usar en la consola siguen principios similares a [Windows comandos](/windows-server/administration/windows-commands/windows-commands#BKMK_c).
 
 Los comandos avanzados ofrecen un conjunto más sólido de acciones que te permiten realizar acciones más eficaces, como descargar y cargar un archivo, ejecutar scripts en el dispositivo y realizar acciones de corrección en una entidad.
 
@@ -221,16 +221,16 @@ Para escenarios en los que quieras obtener un archivo de un dispositivo que est�
 > Se aplican los siguientes límites de tamaño de archivo:
 >
 > - `getfile` límite: 3 GB
-> - `fileinfo` límite: 10 GB
+> - `fileinfo` límite: 30 GB
 > - `library` límite: 250 MB
 
 ### <a name="download-a-file-in-the-background"></a>Descargar un archivo en segundo plano
 
 Para permitir que el equipo de operaciones de seguridad continúe investigando un dispositivo afectado, los archivos ahora se pueden descargar en segundo plano.
 
-- Para descargar un archivo en segundo plano, en la consola de comandos de respuesta en directo, escriba `download <file_path> &` .
+- Para descargar un archivo en segundo plano, en la consola de comandos de respuesta en directo, escriba `download <file_path> &`.
 - Si está esperando a que se descargue un archivo, puede moverlo al fondo mediante Ctrl + Z.
-- Para llevar una descarga de archivos al primer plano, en la consola de comandos de respuesta en directo, escriba `fg <command_id>` .
+- Para llevar una descarga de archivos al primer plano, en la consola de comandos de respuesta en directo, escriba `fg <command_id>`.
 
 Estos son algunos ejemplos:
 
@@ -238,10 +238,10 @@ Estos son algunos ejemplos:
 
 ****
 
-|Get-Help|Qué hace|
+|Comando|Qué hace|
 |---|---|
 |`getfile "C:\windows\some_file.exe" &`|Inicia la descarga de un archivo *denominadosome_file.exe* en segundo plano.|
-|`fg 1234`|Devuelve una descarga con el identificador de comando *1234* en primer plano.|
+|`fg 1234`|Devuelve una descarga con el identificador *de comando 1234* en primer plano.|
 |
 
 ### <a name="put-a-file-in-the-library"></a>Colocar un archivo en la biblioteca
@@ -281,7 +281,7 @@ Antes de poder ejecutar scripts de PowerShell/Bash, primero debe cargarlo en la 
 
 Después de cargar el script en la biblioteca, use el `run` comando para ejecutar el script.
 
-Si tiene previsto usar un script de PowerShell sin signo en la sesión, deberá habilitar la configuración en la [página Configuración de características avanzadas.](advanced-features.md)
+Si tiene previsto usar un script de PowerShell sin signo en la sesión, deberá habilitar la configuración en la [página Configuración de características avanzadas](advanced-features.md) .
 
 > [!WARNING]
 > Permitir el uso de scripts sin signo puede aumentar la exposición a amenazas.
@@ -330,7 +330,7 @@ La respuesta en directo admite tipos de salida de formato JSON y tabla. Para cad
 
 ## <a name="supported-output-pipes"></a>Canalizaciones de salida admitidas
 
-La respuesta en directo admite la canalización de salida a la CLI y al archivo. CLI es el comportamiento de salida predeterminado. Puede canalizar el resultado a un archivo mediante el siguiente comando: [comando] > [filename].txt.
+La respuesta en directo admite la canalización de salida a la CLI y al archivo. CLI es el comportamiento de salida predeterminado. Puede canalizar el resultado a un archivo mediante el siguiente comando: [command] > [filename].txt.
 
 Ejemplo:
 
@@ -351,6 +351,7 @@ Selecciona la **pestaña Registro de** comandos para ver los comandos usados en 
 
 - Las sesiones de respuesta en directo están limitadas a 25 sesiones de respuesta en directo a la vez.
 - El valor de tiempo de espera inactivo de la sesión de respuesta en directo es de 30 minutos.
+- Los comandos de respuesta en directo individuales tienen un límite de tiempo de 10 minutos, `getfile`a excepción de , `findfile`y `run`, que tienen un límite de 30 minutos.
 - Un usuario puede iniciar hasta 10 sesiones simultáneas.
 - Un dispositivo solo puede estar en una sesión a la vez.
 - Se aplican los siguientes límites de tamaño de archivo:

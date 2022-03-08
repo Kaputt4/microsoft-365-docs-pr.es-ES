@@ -2,8 +2,8 @@
 title: Crear registros DNS para Microsoft con DNS basado en Windows
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Obtenga información sobre cómo comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en dns basado Windows para Microsoft.
-ms.openlocfilehash: 43cc3679f33a929545ed3d9deec388126aec853c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0349366e1cb3af23de1161a69b9b37305cc1237a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165297"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313487"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Crear registros DNS para Microsoft con DNS basado en Windows
 
@@ -36,26 +36,26 @@ ms.locfileid: "60165297"
    
 Si hospeda sus propios registros DNS utilizando DNS basado en Windows, siga los pasos indicados en este artículo para configurar los registros para el correo electrónico, Skype Empresarial Online, y para otras tareas.
   
-Para empezar, debe buscar los registros DNS en [un DNS](#find-your-dns-records-in-windows-based-dns) Windows para poder actualizarlos. Además, si está planeando sincronizar su Active Directory local con Microsoft, vea Dirección de correo electrónico no enrutable usada como [UPN](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory)en su Active Directory local.
+Para empezar, debe buscar los [registros DNS en un DNS](#find-your-dns-records-in-windows-based-dns) basado Windows para poder actualizarlos. Además, si está planeando sincronizar su Active Directory local con Microsoft, consulte Dirección de correo electrónico no enrutable usada como [UPN en su Active Directory local](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory).
   
-Problemas con el flujo de correo u otros problemas después de agregar registros DNS, vea Solucionar problemas después de cambiar el nombre de [dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
+Problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulta [Solucionar problemas después de cambiar el nombre de dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Buscar los registros DNS en DNS basado en Windows
-<a name="BKMK_find_your_dns_1"></a> Vaya a la página que tiene los registros DNS de su dominio. Si está trabajando en Windows Server 2008, vaya a **Iniciar**  >  **ejecución**. Si está trabajando en Windows Server 2012, presione la Tecla Windows y **r**. Escriba **dnsmgmnt.msc** y luego seleccione **Aceptar**. En el Administrador dns, expanda **\<DNS server name\> \> Zonas de búsqueda directa**. Seleccione su dominio. Ya está listo para crear los registros DNS.
+<a name="BKMK_find_your_dns_1"> </a> Vaya a la página que tiene los registros DNS de su dominio. Si está trabajando en Windows Server 2008, vaya a **StartRun** > . Si está trabajando en Windows Server 2012, presione la Tecla Windows y **r**. Escriba **dnsmgmnt.msc** y luego seleccione **Aceptar**. En el Administrador dns, expanda **\<DNS server name\>  \> Zonas de búsqueda directa**. Seleccione su dominio. Ya está listo para crear los registros DNS.
    
 ## <a name="add-mx-record"></a>Agregar registro MX
 <a name="BKMK_add_MX"> </a>
 
 Agregue un registro MX para que el correo electrónico de su dominio se envíe a Microsoft.
-- El registro MX que agregará incluye un valor (el valor **Points to address)** que tiene un aspecto similar al siguiente: .mail.protection.outlook.com, donde es un valor como \<MX token\> \<MX token\> MSxxxxxxx. 
+- El registro MX que agregará incluye un valor (el valor **Points to address** ) que tiene un aspecto similar al siguiente: \<MX token\>.mail.protection.outlook.com, \<MX token\> donde es un valor como MSxxxxxxx. 
 - En la fila MX de la Exchange Online de la página Agregar registros DNS en Microsoft, copie el valor que aparece en Puntos para dirección. Usará este valor en el registro que está creando en esta tarea. 
-- En la página Administrador dns del dominio, vaya a **Exchanger de** correo de  >  **acción (MX).** Para encontrar esta página para el dominio, vea [Buscar los registros DNS en Windows DNS basado en el dominio](#find-your-dns-records-in-windows-based-dns).  
+- En la página Administrador dns del dominio, vaya a **ActionMail** >  **Exchanger (MX)**. Para encontrar esta página para el dominio, consulte [Buscar los registros DNS en Windows DNS basado en el usuario](#find-your-dns-records-in-windows-based-dns).  
 - En el **cuadro de diálogo Nuevo registro de** recursos, asegúrese de que los campos están establecidos exactamente en los siguientes valores: 
     - Nombre de host:  
     - @Address: pegue el valor points to address que acaba de copiar de Microsoft aquí.  
     - Pref: 
 - Seleccione **Guardar cambios**.
-- Elimine los registros MX obsoletos. Si tiene registros MX antiguos para este dominio que enrutar el correo electrónico en otro lugar, active la casilla situada junto a cada registro antiguo y, a continuación, **seleccione**  >  **Eliminar aceptar**. 
+- Elimine los registros MX obsoletos. Si tiene registros MX antiguos para este dominio que enrutar el correo electrónico en otro lugar, active la casilla junto a cada registro antiguo y, a continuación, **seleccione EliminarOK** > . 
    
 ## <a name="add-cname-records"></a>Agregar registros CNAME
 <a name="BKMK_add_CNAME"> </a>
@@ -65,12 +65,12 @@ Agregue los registros CNAME necesarios para Microsoft. Si se enumeran registros 
 > [!IMPORTANT]
 > Si tienes Administración de dispositivos móviles (MDM) para Microsoft, debes crear dos registros CNAME adicionales. Siga el procedimiento que utilizó para los otros cuatro registros CNAME, pero suministre los valores de la siguiente tabla. (Si no tienes MDM, puedes omitir este paso). 
 
-- En la página Administrador dns del dominio, vaya a **Action**  >  **CNAME (CNAME)**.
+- En la página Administrador dns del dominio, vaya a **ActionCNAME** >  **(CNAME)**.
 - En el **cuadro de diálogo Nuevo registro de** recursos, asegúrese de que los campos están establecidos exactamente en los siguientes valores:  
     - Nombre de host: detección automática
     - Tipo: 
     - CNAMEAddress: autodiscover.outlook.com
-- Seleccione **O** K.
+- Seleccione **OK**.
 
 Agregue registro CNAME SIP. 
 - En la página Administrador dns del dominio, vaya a **Action** \> **CNAME (CNAME)**. 
@@ -113,7 +113,7 @@ Agregue el registro CNAME de MDM Enterpriseenrollment.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *SPF*  que incluya ambos conjuntos de valores. 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga  un único registro SPF que incluya ambos conjuntos de valores. 
   
 Agregue el registro TXT de SPF para su dominio para prevenir el correo basura.
   
@@ -135,8 +135,8 @@ Agregue el registro TXT de SPF para su dominio para prevenir el correo basura.
 Agregue los dos registros SRV necesarios para Microsoft.
 
 Agregue el registro SRV SIP para conferencias web de Skype Empresarial Online.  <br/> 
--  En la página Administrador dns del dominio, vaya a **Acción** \> **Otros nuevos registros**. 
--   En la **ventana Tipo de registro de** recursos, seleccione Ubicación de servicio **(SRV)** y, a continuación, **seleccione Crear registro**. 
+-  En la página Administrador dns de su dominio, vaya a **Acción** \> **Otros nuevos registros**. 
+-   En la **ventana Tipo de registro de** recursos, seleccione **Ubicación de servicio (SRV)** y, a continuación, **seleccione Crear registro**. 
 -   En el **cuadro de diálogo Nuevo registro de** recursos, asegúrese de que los campos están establecidos exactamente en los siguientes valores:  
     -  Servicio: _sip
     -  Protocolo: _tls
@@ -148,8 +148,8 @@ Agregue el registro SRV SIP para conferencias web de Skype Empresarial Online.  
 
 
 Agregue el registro SRV SIP para la federación de Skype Empresarial Online.  
--  En la página Administrador dns del dominio, vaya a **Acción** \> **Otros nuevos registros**.  
--  En la **ventana Tipo de registro de** recursos, seleccione Ubicación de servicio **(SRV)** y, a continuación, **seleccione Crear registro**. 
+-  En la página Administrador dns de su dominio, vaya a **Acción** \> **Otros nuevos registros**.  
+-  En la **ventana Tipo de registro de** recursos, seleccione **Ubicación de servicio (SRV)** y, a continuación, **seleccione Crear registro**. 
 -   En el **cuadro de diálogo Nuevo registro de** recursos, asegúrese de que los campos están establecidos exactamente en los siguientes valores:  
     -  Servicio: _sipfederationtls
     -  Protocolo: _tcp
@@ -170,15 +170,15 @@ Antes de agregar los registros DNS para configurar el servicios Microsoft, Micro
 
 1. Recopilar información de Microsoft.  <br/> 
 2. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>. 
-3. En la **página Dominios,** en la columna **Acciones** del dominio que está comprobando, seleccione **Iniciar instalación**. 
-4. En la **página Agregar un dominio a Microsoft,** seleccione Iniciar paso **1**. 
-5. On the **Confirm that you own your domain** page, in the See instructions for performing this step **with** drop-down list, choose **General instructions**. 
+3. En la **página Dominios** , en la **columna Acciones** del dominio que está comprobando, seleccione **Iniciar configuración**. 
+4. En la **página Agregar un dominio a Microsoft** , seleccione **Inicio paso 1**. 
+5. On the **Confirm that you own your domain** page, in the **See instructions for performing this step with** drop-down list, choose **General instructions**. 
 6. En la tabla, copie el valor Destination or Points to Address. Lo necesitará en el siguiente paso. Se recomienda copiar y pegar este valor para que todo el espaciado sea correcto.
 
 Agregue un registro TXT. 
 -  En la página Administrador dns del dominio, vaya a **Texto de** \> **acción (TXT)**. 
 -   En el **cuadro de diálogo Nuevo registro de** recursos, seleccione **Editar**.  
--  En el área Nombres  **de host** personalizados del cuadro de diálogo Nuevo registro de recursos, asegúrese de que los campos están establecidos exactamente en los siguientes valores. 
+-  En el **área Nombres de host** personalizados  del cuadro de diálogo Nuevo registro de recursos, asegúrese de que los campos están establecidos exactamente en los siguientes valores. 
 
 > [!IMPORTANT] 
 > En algunas versiones de Windows DNS Manager, es posible que el dominio se haya configurado para que, al crear un registro txt, el nombre principal tenga el valor predeterminado del dominio primario. En esta situación, al agregar un registro TXT, establezca el nombre de host en blanco (ningún valor) en lugar de configurarlo para @ o el nombre de dominio. 
@@ -186,7 +186,7 @@ Agregue un registro TXT.
 - Nombre de host: @
 - Tipo: TXT
 - Dirección: pegue aquí el valor Destino o Puntos a dirección que acaba de copiar de Microsoft.  
-- Seleccione **Aceptar**  >  **listo**.
+- Seleccione **AceptarDone** > .
 
 Compruebe su dominio en Microsoft.  
 > [!IMPORTANT]
@@ -194,7 +194,7 @@ Compruebe su dominio en Microsoft.
 
 - Vuelva a Microsoft y siga los pasos siguientes para solicitar una comprobación de verificación. La comprobación busca el registro TXT que agregó en el paso anterior. Cuando encuentra el registro correcto TXT, el dominio se comprueba.  
 1. En el Centro de administración, vaya a la página **Dominios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">de</a> instalación.
-2. En la **página Dominios,** en la columna **Acción** del dominio que está comprobando, seleccione **Iniciar configuración**. 
+2. En la **página Dominios** , en la columna **Acción** del dominio que está comprobando, seleccione **Iniciar instalación**. 
 3. En la **página Confirmar que es el** propietario de su dominio, seleccione **listo,** compruebe ahora y, a continuación, en el cuadro de diálogo de confirmación, seleccione **Finalizar**. 
    
 > [!NOTE]
@@ -203,7 +203,7 @@ Compruebe su dominio en Microsoft.
 ## <a name="non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory"></a>Dirección de correo electrónico no enrutable usada como un UPN en su Active Directory local
 <a name="BKMK_ADNote"> </a>
 
-Si está planeando sincronizar su Active Directory local con Microsoft, querrá asegurarse de que el sufijo de nombre principal de usuario (UPN) de Active Directory sea un sufijo de dominio válido y no un sufijo de dominio no compatible como @contoso.local. Si necesita cambiar el sufijo UPN, vea [How to prepare a non-routable domain for directory synchronization](../../enterprise/prepare-a-non-routable-domain-for-directory-synchronization.md).
+Si está planeando sincronizar su Active Directory local con Microsoft, querrá asegurarse de que el sufijo de nombre principal de usuario (UPN) de Active Directory sea un sufijo de dominio válido y no un sufijo de dominio no compatible, como @contoso.local. Si necesita cambiar el sufijo UPN, consulte [How to prepare a non-routable domain for directory synchronization](../../enterprise/prepare-a-non-routable-domain-for-directory-synchronization.md).
   
 > [!NOTE]
 >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 

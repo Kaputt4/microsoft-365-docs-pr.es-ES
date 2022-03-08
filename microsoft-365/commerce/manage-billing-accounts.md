@@ -2,8 +2,8 @@
 title: Comprender las cuentas de facturación
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
@@ -14,23 +14,23 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
 description: Obtenga información sobre las cuentas de facturación y cómo se usan para administrar la configuración de la cuenta, las facturas, los métodos de pago y las compras.
 ms.date: 03/17/2021
-ms.openlocfilehash: 5107ca7bd545eb202999d96266e6ab7688db767c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 8d80e94cbb415f93015673065e47d2fe36194bc0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370937"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315783"
 ---
 # <a name="understand-billing-accounts"></a>Comprender las cuentas de facturación
 
-Se crea una cuenta de facturación cuando se registra para probar o comprar productos de Microsoft. Usas tu cuenta de facturación para administrar la configuración de la cuenta, las facturas, los métodos de pago y las compras. Puedes tener acceso a varias cuentas de facturación. Por ejemplo, se inscribió en Microsoft 365 directamente, o bien tiene acceso al contrato de servicios de Enterprise Agreement de productos de & Microsoft o al contrato de cliente de Microsoft. Para cada uno de estos escenarios, tendrías una cuenta de facturación independiente.
+Se crea una cuenta de facturación cuando se registra para probar o comprar productos de Microsoft. Usas tu cuenta de facturación para administrar la configuración de la cuenta, las facturas, los métodos de pago y las compras. Puedes tener acceso a varias cuentas de facturación. Por ejemplo, se inscribió en Microsoft 365 directamente, o bien tiene acceso al contrato de Enterprise Agreement de productos de Microsoft, al Contrato de servicios de & de Microsoft o al contrato de cliente de Microsoft. Para cada uno de estos escenarios, tendrías una cuenta de facturación independiente.
 
 El <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> admite actualmente el siguiente tipo de cuentas de facturación:
 
@@ -44,7 +44,7 @@ La <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">p
 
 La parte superior de la **página de** detalles cuentas de facturación es su perfil de cuenta y contiene información legal y fiscal sobre su organización. Puedes actualizar tu perfil para cambiar la dirección legal y el número de teléfono. Esta cuenta es la entidad jurídica que paga los productos que compra.
 
-En la tabla siguiente se enumeran los términos importantes que se ven en la página de detalles **cuentas de** facturación.
+En la tabla siguiente se enumeran los términos importantes que se ven en la página **de detalles cuentas de** facturación.
 
 | Nombre del campo | Descripción |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -53,10 +53,10 @@ En la tabla siguiente se enumeran los términos importantes que se ven en la pá
 | Estado de la cuenta | Campo de solo lectura que especifica el estado de su cuenta comercial con Microsoft. |
 | Id. de impuestos | Si está fuera de los Estados Unidos, debe proporcionar un IVA o equivalente local. Para obtener más información, consulte [Información sobre impuestos](billing-and-payments/tax-information.md). |
 | Contrato | Cuando se crea una cuenta de facturación, ya sea mediante una compra directa o un acuerdo de licencias por volumen, un firmante de la organización acepta o firma un acuerdo que describe los términos & condiciones de la cuenta. Si procede, esta vista enumera un historial de acuerdos. Si tienes que aceptar términos actualizados, se muestra un vínculo para **Aprobar** acuerdo. |
-| Perfiles de facturación | Un perfil de facturación define las propiedades de la factura, como quién recibe la factura, cómo se entrega la factura, los términos de pago y un número de pedido. Para distribuir la facturación en toda la organización, puede crear varios perfiles de facturación e identificar el perfil de facturación adecuado en el momento de la compra. Para obtener más información sobre los perfiles de facturación y cómo usarlos para crear opciones de facturación más flexibles para su organización, comprenda los perfiles [de facturación](billing-and-payments/manage-billing-profiles.md). |
+| Perfiles de facturación | Un perfil de facturación define las propiedades de la factura, como quién recibe la factura, cómo se entrega la factura, los términos de pago y un número de pedido. Para distribuir la facturación en toda la organización, puede crear varios perfiles de facturación e identificar el perfil de facturación adecuado en el momento de la compra. Para obtener más información sobre los perfiles de facturación y cómo usarlos para crear opciones de facturación más flexibles para su [organización, comprenda los perfiles de facturación](billing-and-payments/manage-billing-profiles.md). |
 
 > [!NOTE]
-> Si necesita cambiar el **nombre** o la dirección vendidos, pero no ve un vínculo **Editar,** debe ponerse en contacto con el soporte técnico [para](../admin/get-help-support.md) cambiarlo. Las solicitudes para un cambio **de nombre** vendido requerirán una comprobación de crédito. Complete [este formulario](https://www.microsoft.com/download/details.aspx?id=102732)y esté listo para compartir uno de los siguientes documentos con Microsoft al ponerse en contacto con el soporte técnico:
+> Si necesita cambiar **el nombre o** la dirección vendidos, pero no ve un vínculo **Editar** , debe ponerse en contacto con el soporte [técnico para](../admin/get-help-support.md) cambiarlo. Las solicitudes para un cambio **de nombre** vendido requerirán una comprobación de crédito. Complete [este formulario](https://www.microsoft.com/download/details.aspx?id=102732) y esté listo para compartir uno de los siguientes documentos con Microsoft cuando se contacte con el soporte técnico:
 >
 > - Documento emitido por el gobierno o carta de registro
 > - Imprimir del registro de la empresa local
@@ -76,7 +76,7 @@ Puede proporcionar a otros usuarios acceso a la cuenta de facturación en el <a 
 - **Lector de cuentas de facturación** &mdash; Puede ver cuentas.
 
 > [!Note]
-> Los roles de cuenta de facturación solo se aplican a cuentas de facturación y no se aplican a otros escenarios Centro de administración de Microsoft 365 facturación.
+> Los roles de cuenta de facturación solo se aplican a cuentas de facturación y no se aplican a otros Centro de administración de Microsoft 365 escenarios.
 
 ## <a name="related-content"></a>Contenido relacionado
 

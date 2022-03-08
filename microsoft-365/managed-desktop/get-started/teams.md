@@ -10,12 +10,12 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 audience: ITPro
-ms.openlocfilehash: 21d69770fb16ac40b25cd9ff4fefd5ccf5b2f0fb
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 3dfdd9f5187fba9a1e19e56a4df24cf1f7eff44b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345944"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322441"
 ---
 # <a name="microsoft-teams"></a>Microsoft Teams
 
@@ -23,14 +23,14 @@ ms.locfileid: "62345944"
 
 ## <a name="initial-deployment"></a>Implementación inicial
 
-La mayoría de los proveedores de hardware aún no incluyen Teams como parte de sus imágenes. Microsoft Managed Desktop implementa Teams en los dispositivos mediante Microsoft Intune. Todos los dispositivos administrados [tienen Teams .msi paquete instalado](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works). El .msi garantiza que todos los usuarios, que inician sesión en un dispositivo, Microsoft Teams estén listos para su uso. Cuando el paquete termina de instalarse por primera vez, Teams se inicia automáticamente y agrega un acceso directo al escritorio.
+La mayoría de los proveedores de hardware aún no incluyen Teams como parte de sus imágenes. Microsoft Managed Desktop implementa Teams en los dispositivos mediante Microsoft Intune. Todos los dispositivos [administrados tienen Teams .msi paquete instalado](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works). El .msi garantiza que todos los usuarios, que inician sesión en un dispositivo, Microsoft Teams estén listos para su uso. Cuando el paquete termina de instalarse por primera vez, Teams se inicia automáticamente y agrega un acceso directo al escritorio.
 
 ### <a name="microsoft-intune-changes"></a>Microsoft Intune cambios
 
 Microsoft Managed Desktop agrega dos aplicaciones a su Azure AD organización para Microsoft Teams. Se implementan en clientes de 64 o 32 bits según corresponda para el dispositivo:  
 
-- Modern Workplace: Teams machine wide Installer x64  
-- Modern Workplace: Teams machine wide Installer x32
+- Modern Workplace: Teams Machine Wide Installer x64  
+- Modern Workplace: Teams Machine Wide Installer x32
 
 ## <a name="updates"></a>Actualizaciones
 

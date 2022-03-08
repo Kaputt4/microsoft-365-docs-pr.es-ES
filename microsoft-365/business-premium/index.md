@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Empresa Premium introducción
+title: Microsoft 365 Empresa Premium información general
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -25,14 +25,14 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtenga información sobre cómo colaborar de forma segura en su pequeña empresa o campaña con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 7f53ee3df70e2310e7bb83d676fa18b544e3fb31
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 77ca1cb7171097a0cae6063db20b1868dcd1b448
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886285"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321633"
 ---
-# <a name="microsoft-365-business-premium-overview"></a>Microsoft 365 Empresa Premium introducción
+# <a name="microsoft-365-business-premium-overview"></a>Microsoft 365 Empresa Premium información general
 
 En nuestro mundo actual, mantener la seguridad de los datos y las comunicaciones es prioritario, especialmente en el caso de campañas políticas, consultorios médicos y jurídicos y muchas otras pequeñas empresas. Aproveche las características de seguridad de Microsoft 365 Empresa Premium para colaborar de forma segura en su pequeña empresa. Esta solución ofrece un conjunto de recomendaciones diseñadas para ayudarle a protegerse y a proteger sus datos. Esta biblioteca incluye ayuda para configurar y usar este entorno recomendado, sea cual sea su tipo de empresa.
 
@@ -42,18 +42,20 @@ Esta configuración incluye las siguientes instrucciones para la productividad, 
 
 | Protección para | Descripción | Vínculos |
 | ----- | ----- | ----- | ----- |
-|Correo electrónico | Utilice la autenticación multifactor, la Protección avanzada contra suplantación (phishing) de ATP, Vínculos seguros y Archivos adjuntos seguros de ATP y correo electrónico cifrado para la información confidencial.| [Establecer autenticación multifactor](m365-campaigns-multifactor-authentication.md), [Protección contra ataques de suplantación (phishing)](m365-campaigns-phishing-and-attacks.md), [Cifrar o etiquetar correo electrónico confidencial](send-encrypted-email.md) |
-|Dispositivos Android y iPhones |Utilice la autenticación multifactor, configure aplicaciones móviles de Microsoft y utilice un PIN | [Configurar la autenticación multifactor](m365-campaigns-multifactor-authentication.md), [Configurar dispositivos móviles](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)|
-|Traiga sus Propios Dispositivos (BYOD) Mac y Windows 10 |Mantenga Office actualizado, así como los sistemas operativos, y habilite características de seguridad. | [Proteger equipos Windows 10 y Mac no administrados](m365-campaigns-protect-pcs-macs.md) |
+|Correo electrónico | Use autenticación multifactor, anti phishing avanzado, vínculos de Caja fuerte y datos adjuntos Caja fuerte y correo electrónico cifrado para obtener información confidencial.| [Configurar la autenticación multifactor](m365bp-multifactor-authentication.md) <br/><br/>[Proteger contra ataques de suplantación de identidad](m365-campaigns-phishing-and-attacks.md)<br/><br/>[Cifre o etiquete su correo electrónico confidencial](send-encrypted-email.md) |
+|Dispositivos Android y iPhones |Usar la autenticación multifactor, configurar aplicaciones móviles de Microsoft y requerir un PIN | [Configurar la autenticación multifactor](m365bp-multifactor-authentication.md)<br/><br/>[Configurar dispositivos móviles](../business/set-up-mobile-devices.md)|
+|Bring-your-own-devices (BYOD) para Mac y Windows pc |Mantenga Office actualizado, así como los sistemas operativos, y habilite características de seguridad. | [Proteger dispositivos Windows y Mac no administrados](m365bp-protect-pcs-macs.md) |
 |Almacenar y compartir archivos de manera segura | Comparta archivos y vídeos de Microsoft Teams, OneDrive, SharePoint y Microsoft Stream, y proteja datos confidenciales.| [Compartir archivos y vídeos](share-files-and-videos.md) |
-|Dispositivos Windows 10 no administrados |Utilice dispositivos administrados para los empleados clave y proteja dichos dispositivos. | [Configurar dispositivos administrados](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
+|Dispositivos Windows administrados |Utilice dispositivos administrados para los empleados clave y proteja dichos dispositivos. | [Configurar dispositivos administrados](../business/set-up-windows-devices.md) |
 
 ## <a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>Configuración de seguridad recomendada para Microsoft 365 Empresa Premium
 
 Esta configuración de seguridad recomendada para Microsoft 365 Empresa Premium le permite:
 
 - Confiar en herramientas de colaboración y productividad empresarial de confianza, como Outlook, Word, Excel y otros productos de Office.
-- Proteger sus archivos de trabajo en todos sus dispositivos iOS, Android y Windows 10 con una seguridad de nivel empresarial que es fácil de administrar.
+
+- Proteja los archivos de trabajo en todos los dispositivos iOS, Android y Windows con seguridad de nivel empresarial que sea fácil de administrar.
+
 - Aplicar protección adicional para cuentas de usuario e identidades.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
@@ -63,7 +65,9 @@ Si bien las campañas para las elecciones federales y de algunos estados de los 
 Esta biblioteca incluye lo siguiente:
 
 - Instrucciones de configuración prescriptiva para agregar mayor seguridad.
-- Ayuda a los usuarios para configurar dispositivos para un acceso seguro.
+
+- Ayuda para que los usuarios configuren dispositivos para el acceso seguro.
+
 - Instrucciones sobre cómo colaborar y compartir de forma segura.
 
 Para más información sobre lo que se incluye, consulte [Microsoft 365 Empresa Premium](https://www.microsoft.com/microsoft-365/business).
@@ -72,9 +76,9 @@ Para más información sobre lo que se incluye, consulte [Microsoft 365 Empresa 
 
 Para empezar, siga estos pasos:
 
+- Para pequeñas y medianas empresas: [Obtenga Microsoft 365 Empresa Premium](get-microsoft-365-business-premium.md)
+
 - Para campañas: [Obtenga Microsoft 365 para Campañas](get-microsoft-365-campaigns.md)
-- Para cualquier negocio: [Obtenga información acerca de cómo trabajarán los usuarios con Microsoft 365](m365-campaigns-users.md)
-- Para cualquier negocio: [Configurar Microsoft 365](microsoft-365-campaigns-setup-overview.md)
 
 ## <a name="solutions-for-your-business"></a>Soluciones para su empresa
 

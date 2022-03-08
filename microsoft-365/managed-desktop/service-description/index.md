@@ -12,35 +12,41 @@ ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 81311b0f5e6b9f1366c8acf21de95336b1947596
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 78c5e48634f24fa83bc79b6ef112187a5e536022
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62034634"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317589"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Descripción del servicio Escritorio administrado de Microsoft
 
-Escritorio administrado de Microsoft es un servicio que proporciona a los usuarios una experiencia moderna y segura y siempre mantiene los dispositivos actualizados con las últimas versiones de la edición de Windows 10 Enterprise, Aplicaciones de Microsoft 365 para empresas y los servicios de seguridad de Microsoft, entre los que se incluyen:
+Microsoft Managed Desktop proporciona a los usuarios una experiencia moderna segura y siempre mantiene los dispositivos actualizados con las versiones más recientes de los servicios de seguridad de Windows 10 Enterprise edition, Aplicaciones Microsoft 365 para empresas y Microsoft, incluidos:
 
-- Inscripción simplificada de nuevos dispositivos
-- Configuración de dispositivos
-- Características para proteger a los usuarios y los dispositivos, como Windows Hello, BitLocker, SecureBoot y el modo de seguridad basado en la virtualización de acuerdo con los procedimientos recomendados de Microsoft
-- Servicios de supervisión y corrección de seguridad de dispositivos
-- Compatibilidad de aplicaciones, mediante [Asesoría de aplicaciones](/fasttrack/products-and-capabilities#app-assure)
-- Administración de actualizaciones para Windows 10 y Aplicaciones de Microsoft 365 para empresas
-- Datos de análisis sobre el uso de dispositivos y aplicaciones
-- Soporte técnico de TI para usuarios
-- Soporte operacional para profesionales de TI
+- Inscripción simplificada de nuevos dispositivos.
+- Configuración de dispositivos.
+- Características para mantener los usuarios y dispositivos seguros, incluidos Windows Hello, BitLocker, SecureBoot y seguridad basada en virtualización según los procedimientos recomendados de Microsoft.
+- Servicios de corrección y supervisión de seguridad de dispositivos.
+- Compatibilidad de aplicaciones, a través [de App Assure](/fasttrack/products-and-capabilities#app-assure).
+- Administración de actualizaciones para Windows 10 y Aplicaciones Microsoft 365 para empresas aplicaciones.
+- Datos analíticos sobre el uso de dispositivos y aplicaciones.
+- Compatibilidad con TI para los usuarios.
+- Soporte operativo para profesionales de TI.
 
-Para más información sobre los servicios específicos incluidos en el Escritorio administrado de Microsoft, vea otros artículos en esta sección. Si ya ha decidido que Escritorio administrado de Microsoft es para usted, los artículos de [Prepararse para la inscripción en el Escritorio administrado de Microsoft](../get-ready/index.md) le proporcionan los pasos necesarios para prepararse para unirse al servicio.
+## <a name="included-services"></a>Servicios incluidos
 
-- [Regiones e idiomas admitidos](regions-languages.md) muestra qué regiones e idiomas son compatibles con el servicio.
-- Para garantizar la mejor experiencia para los usuarios, Escritorio administrado de Microsoft solo admite ciertos dispositivos. [Dispositivos de programa](device-list.md) especifica los modelos de dispositivos y configuraciones exactas que puede usar con el servicio, independientemente de si usted los proporciona o de si trabaja con un partner.
-- [Servicios de dispositivo](device-services.md) especifica los servicios relacionados con el dispositivo que Microsoft proporcionará a los suscriptores.
-- [Configuración del dispositivo](device-policies.md) clarifica las directivas de administración de dispositivos móviles predeterminadas y relacionadas con la seguridad que el servicio aplicará a los dispositivos inscritos.
-- [Seguridad](security.md) especifica los datos recopilados desde dispositivos inscritos, así como las características y directivas relacionadas con la seguridad del dispositivo, la administración de identidades y acceso, la seguridad de red y la seguridad de la información.
-- [Actualizaciones](updates.md) describe los distintos grupos de actualización que Escritorio administrado de Microsoft usa para implementar las actualizaciones en los dispositivos.
-- [Soporte](support.md) clarifica el soporte de Microsoft para su organización y usuarios.
-- [Operaciones y supervisión](operations-and-monitoring.md) explica cómo funciona la administración de cambios con Escritorio administrado de Microsoft, incluidos los procedimientos estándar para solicitar y preparar los cambios en la implementación.
-- [Requisitos de la aplicación](mmd-app-requirements.md) describe los tipos de aplicaciones y comportamientos que se admiten en Escritorio administrado de Microsoft y la división de roles y responsabilidades para la implementación y administración de aplicaciones.
+Para obtener información detallada acerca de los servicios específicos incluidos con Microsoft Managed Desktop, consulte los artículos siguientes.
+
+Si ya ha decidido que Microsoft Managed Desktop es su lugar, los artículos de Prepararse para la inscripción en [Microsoft Managed Desktop](../get-ready/index.md) le proporcionarán los pasos para prepararse para unirse al servicio.
+
+| Servicio | Descripción |
+| ----- | ----- |
+| [Idiomas y regiones compatibles](regions-languages.md) | Explica qué regiones e idiomas son compatibles con el servicio. |
+| [Dispositivos del programa](device-list.md) | Para garantizar la mejor experiencia para los usuarios, Escritorio administrado de Microsoft solo admite ciertos dispositivos. [Los dispositivos](device-list.md) de programación especifican los modelos y configuraciones de dispositivo exactos que puedes usar con el servicio. Puede proporcionarlas o trabajar con un partner. |
+| [Servicios del dispositivo](device-services.md) | Especifica los servicios relacionados con el dispositivo que Microsoft proporcionará a los suscriptores.
+| [Configuración del dispositivo](device-policies.md) | Aclara las directivas de administración de dispositivos móviles predeterminadas y relacionadas con la seguridad que el servicio aplicará a los dispositivos inscritos. |
+| [Seguridad](security.md) | Especifica los datos recopilados de dispositivos inscritos, las características y directivas relacionadas con la seguridad de dispositivos, la administración de identidades y acceso, la seguridad de red y la seguridad de la información. |
+| [Actualizaciones](updates.md) | Describe los distintos grupos de actualizaciones que Microsoft Managed Desktop usa para realizar actualizaciones en los dispositivos.
+| [Soporte técnico](support.md) | Aclara el soporte técnico que Microsoft proporciona para su organización y usuarios. |
+| [Operaciones y monitoreo](operations-and-monitoring.md) | Explica cómo funciona la administración de cambios con Microsoft Managed Desktop. Esto incluye procedimientos estándar para solicitar y preparar los cambios en la implementación. |
+| [Requisitos de aplicaciones](mmd-app-requirements.md) | Describe los tipos de aplicaciones y comportamientos permitidos en Microsoft Managed Desktop y la división de roles y responsabilidades para la implementación y administración de aplicaciones. |

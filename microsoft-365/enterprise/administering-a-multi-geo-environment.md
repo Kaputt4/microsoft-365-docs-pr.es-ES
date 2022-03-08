@@ -9,18 +9,20 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- admindeeplinkSPO
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 ms.localizationpriority: medium
 description: Los administradores pueden obtener información sobre cómo administrar SharePoint y OneDrive en un entorno multige geográfico.
-ms.openlocfilehash: 31d361b2936c3d7bceca7137499c659030717eba
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 126b5de915fba7168b3895bbb05ccef6dcad749b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214198"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312059"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administración de un entorno de Multi-Geo
 
@@ -28,7 +30,7 @@ A continuación, se muestra cómo funcionan los servicios de Microsoft 365 en un
 
 ## <a name="administrator-experience"></a>Experiencia de administrador
 
-El [SharePoint de administración tiene](https://admin.microsoft.com/sharepoint) una pestaña **Ubicaciones** geográficas en la navegación izquierda que incluye un mapa de ubicaciones geográficas donde puede ver y administrar las ubicaciones geográficas. Use esta página para agregar o eliminar ubicaciones geográficas para el espacio empresarial.
+El SharePoint de administración tiene una pestaña <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">**Ubicaciones**</a> geográficas en la navegación izquierda que incluye un mapa de ubicaciones geográficas donde puede ver y administrar las ubicaciones geográficas. Use esta página para agregar o eliminar ubicaciones geográficas para el espacio empresarial.
 
 ## <a name="audit-log-search"></a>Búsqueda de registros de auditoría
 
@@ -43,7 +45,7 @@ Los servicios BCS, Secure Store y Apps tienen todos instancias independientes en
 
 ## <a name="compliance-admin-center"></a>Centro de administración de cumplimiento
 
-Hay un centro de cumplimiento central para un inquilino multigefia: Microsoft 365 [centro de administración de cumplimiento.](https://compliance.microsoft.com/)
+Hay un centro de cumplimiento central para un inquilino multigeómico: Microsoft 365 [de administración de cumplimiento](https://compliance.microsoft.com/).
 
 ## <a name="ediscovery"></a>eDiscovery
 
@@ -79,7 +81,7 @@ Los administradores pueden configurar y administrar directivas de uso compartido
 
 ## <a name="stream"></a>Stream
 
-Los vídeos cargados en Stream en un chat 1:1 se almacenan en el OneDrive de la persona que se carga. Las grabaciones de reuniones se almacenan en el OneDrive de cada asistente que registra la reunión.
+Los vídeos cargados en Stream en un chat 1:1 se almacenan en la OneDrive de la persona que se carga. Las grabaciones de reuniones se almacenan en OneDrive de cada asistente que registra la reunión.
 
 ## <a name="taxonomy"></a>Taxonomía
 
@@ -97,4 +99,4 @@ Vea [Trabajar con perfiles de usuario en un espacio empresarial multigeográfico
 
 ## <a name="yammer"></a>Yammer
 
-Yammer no es una carga de trabajo Multi-Geo. Yammer subprocesos almacenados en Yammer se colocarán en la ubicación central del espacio empresarial. Yammer está implementando un cambio de almacenamiento de archivos que almacenará los Yammer dentro de SharePoint. Yammer archivos almacenados en SharePoint se colocará el SharePoint asociado con el Yammer grupo. SharePoint los sitios de grupo se basan en la lógica pdl, tal como se describe [en SharePoint sitios y grupos](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups).
+Yammer no es una carga de trabajo Multi-Geo. Yammer subprocesos almacenados en Yammer se colocarán en la ubicación central del inquilino. Yammer está implementando un cambio de almacenamiento de archivos que almacenará los Yammer dentro de SharePoint. Yammer archivos almacenados en SharePoint se colocará el SharePoint asociado con el Yammer grupo. SharePoint los sitios de grupo se basan en la lógica pdl, tal como se describe [en SharePoint sitios y grupos](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups).

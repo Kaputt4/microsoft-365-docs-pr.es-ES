@@ -2,8 +2,8 @@
 title: Ampliar plantillas de evaluación en Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo ampliar las plantillas de evaluación en Microsoft Compliance Manager para agregar y modificar controles.
-ms.openlocfilehash: d47488f578436b1ea8bd865855d681d8778d07bd
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 4c9e4543a046e09733711500ae6162a547e3602b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60703074"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316216"
 ---
 # <a name="extend-assessment-templates-in-microsoft-compliance-manager"></a>Ampliar plantillas de evaluación en Microsoft Compliance Manager
 
@@ -33,7 +33,7 @@ Para ampliar una plantilla, usará instrucciones especiales para modificar los d
 
 ## <a name="extend-microsoft-assessment-templates"></a>Ampliar plantillas de evaluación de Microsoft
 
-Al extender una plantilla de Microsoft, como una creada para su uso con Microsoft 365, todavía puede recibir actualizaciones publicadas por Microsoft. Las actualizaciones pueden producirse cuando hay cambios en el producto o regulación relacionados (vea [Aceptar actualizaciones para evaluaciones).](compliance-manager-assessments.md#accept-updates-to-assessments)
+Al extender una plantilla de Microsoft, como una creada para su uso con Microsoft 365, todavía puede recibir actualizaciones publicadas por Microsoft. Las actualizaciones pueden producirse cuando hay cambios en la regulación o el producto relacionados (vea [Aceptar actualizaciones en evaluaciones](compliance-manager-assessments.md#accept-updates-to-assessments)).
 
 ### <a name="prepare-template-data-and-create-extension"></a>Preparar datos de plantilla y crear extensión
 
@@ -41,13 +41,13 @@ Para prepararlo, deberá ensamblar una hoja de cálculo Excel formato especial p
 
 - La hoja de cálculo solo debe contener las acciones y controles que desee agregar a la evaluación.
 - La hoja de cálculo no puede contener ninguno de los controles o acciones que ya existen en la evaluación que desea modificar.
-- Considere la posibilidad de incluir "extensión" en el título de la plantilla, por ejemplo, "RGPD – extensión [nombre de la empresa]". Esto facilita la identificación en la  lista de la página plantillas de evaluación como distinta de la plantilla estándar proporcionada por Microsoft o una plantilla personalizada con un nombre similar.
+- Considere la posibilidad de incluir "extensión" en el título de la plantilla, por ejemplo, "RGPD – extensión [nombre de la empresa]". Esto facilita la identificación en la lista de la página plantillas  de evaluación como distinta de la plantilla estándar proporcionada por Microsoft o una plantilla personalizada con un nombre similar.
 
 Después de dar formato a la hoja de cálculo, siga los pasos siguientes.
 
-1. Vaya a la **página Plantillas de evaluación** y seleccione Crear nueva **plantilla.** Se abrirá un asistente para la creación de plantillas.
+1. Vaya a la **página Plantillas de evaluación** y seleccione **Crear nueva plantilla**. Se abrirá un asistente para la creación de plantillas.
 
-2. Elija el tipo de plantilla que desea crear. En este caso, seleccione **Extender una plantilla de Microsoft** y, a continuación, Seleccionar plantilla de **Microsoft**.
+2. Elija el tipo de plantilla que desea crear. En este caso, seleccione **Extender una plantilla de Microsoft** y, a continuación, **Seleccione plantilla de Microsoft**.
 
 3. Aparece un panel desplegable de selección de plantilla en el lado derecho de la pantalla, que muestra una lista de todas las plantillas y su estado de activo o inactivo. El **contador de plantillas** activadas muestra cuántas plantillas están actualmente en uso del número total disponible para usar. Si supera el límite, una barra de mensajes le proporcionará aviso.
 
@@ -57,20 +57,20 @@ Después de dar formato a la hoja de cálculo, siga los pasos siguientes.
 
 6. En la siguiente pantalla se muestra la plantilla seleccionada. Si es correcto, seleccione **Siguiente**. (Si es incorrecto, **elija Seleccionar una plantilla diferente** para volver a elegir).
 
-7. En la **Upload de** archivos,  seleccione Examinar para buscar y cargar el archivo Excel formato que contiene todos los datos de plantilla necesarios.
+7. En la **Upload de** archivos, seleccione Examinar para buscar  y cargar el archivo Excel formato que contiene todos los datos de plantilla necesarios.
 
 8. Si no hay ningún problema con el archivo, en la siguiente pantalla se muestra el nombre del archivo cargado. Seleccione **Siguiente** para continuar (si necesita cambiar el archivo, **seleccione Upload otro archivo**).
 
     - Si hay un problema con el archivo, un mensaje de error en la parte superior explica lo que está mal. Tendrás que corregir y volver a cargar el archivo. Los errores se producen si la hoja de cálculo tiene un formato incorrecto o si hay información no válida en determinados campos.
 
-9. La **pantalla Revisar y finalizar** muestra el número de acciones y controles de mejora y la puntuación máxima de la plantilla. Cuando esté listo para aprobar, seleccione **Siguiente**. (Si necesita realizar cambios, seleccione **Upload otro archivo**.)
+9. La **pantalla Revisar y finalizar** muestra el número de acciones y controles de mejora y la puntuación máxima de la plantilla. Cuando esté listo para aprobar, seleccione **Siguiente**. (Si necesita realizar cambios, seleccione **Upload un archivo diferente**).
 
 10. La última pantalla confirma que se ha creado una plantilla nueva. Seleccione **Listo** para salir del asistente.
 
-11. Llegarás a la página de detalles de la nueva plantilla. Desde aquí puede crear su evaluación seleccionando **Crear evaluación**. Para obtener instrucciones, vea [Build and manage assessments](compliance-manager-assessments.md#create-assessments).
+11. Llegarás a la página de detalles de la nueva plantilla. Desde aquí puede crear la evaluación seleccionando **Crear evaluación**. Para obtener instrucciones, vea [Crear y administrar evaluaciones](compliance-manager-assessments.md#create-assessments).
 
 ## <a name="extend-universal-assessment-templates"></a>Ampliar plantillas de evaluación universal
 
-Las versiones universales de las plantillas también se pueden ampliar para personalizar las evaluaciones específicas del producto. Recibirá una plantilla de extensión especial cuando cree una evaluación con una plantilla universal y la evaluación tenga una combinación única de producto y certificación. Este archivo se puede modificar para satisfacer sus necesidades. Para obtener instrucciones sobre cómo editar la plantilla, vea las instrucciones para [modificar una plantilla](compliance-manager-templates-modify.md).
+Las versiones universales de las plantillas también se pueden ampliar para personalizar las evaluaciones específicas del producto. Recibirá una plantilla de extensión especial cuando cree una evaluación con una plantilla universal y la evaluación tenga una combinación única de producto y certificación. Este archivo se puede modificar para satisfacer sus necesidades. Para obtener instrucciones sobre cómo editar la plantilla, consulte las instrucciones para [modificar una plantilla](compliance-manager-templates-modify.md).
 
 Al editar una plantilla universal, se puede cambiar todo el contenido de la plantilla, pero al hacerlo se romperá la herencia con la plantilla primaria. Esto significa que ya no recibirá automáticamente actualizaciones de Microsoft si se actualiza la plantilla primaria.

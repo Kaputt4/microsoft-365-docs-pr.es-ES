@@ -2,13 +2,13 @@
 title: Conectar los registros DNS en Namecheap para Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
-description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en Namecheap para Microsoft.
-ms.openlocfilehash: 31938656e17104d1388b53c05b6ccf3af9afc30f
-ms.sourcegitcommit: da11ffdf7a09490313dfc603355799f80b0c60f9
+description: Obtenga información sobre cómo comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en Namecheap para Microsoft.
+ms.openlocfilehash: 146b76ef95a725faa3457eaf1795b153133cef92
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60587034"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314999"
 ---
 # <a name="connect-your-dns-records-at-namecheap-to-microsoft-365"></a>Conectar los registros DNS en Namecheap para Microsoft 365
 
@@ -63,7 +63,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="Seleccione DNS avanzado.":::
 
-1. En la **sección REGISTROS DE HOST,** seleccione **AGREGAR NUEVO REGISTRO**.
+1. En la **sección REGISTROS DE HOST** , seleccione **AGREGAR NUEVO REGISTRO**.
 
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="Seleccione AGREGAR NUEVO REGISTRO.":::
 
@@ -94,9 +94,9 @@ Ahora que ha agregado el registro en el sitio de su registrador de dominios, deb
 
 Para comprobar el registro en Microsoft 365:
   
-1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**dominios**</a>.
     
-1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**. 
+1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar configuración**. 
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
 
@@ -117,7 +117,7 @@ Para comprobar el registro en Microsoft 365:
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="Elija Lista de dominios en la lista desplegable.":::
 
-1. En la **página Lista de** dominios, seleccione el dominio que desea editar y, a continuación, seleccione **Administrar**.
+1. En la **página Lista de** dominios, seleccione el dominio que desea editar y, a continuación, **seleccione Administrar**.
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="Seleccione Administrar.":::
 
@@ -125,7 +125,7 @@ Para comprobar el registro en Microsoft 365:
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="Seleccione DNS avanzado.":::
 
-1. En la **sección CONFIGURACIÓN DEL CORREO,** seleccione **MX personalizado** en **la** lista desplegable Reenvío de correo electrónico. 
+1. En la **sección CONFIGURACIÓN DEL CORREO** , seleccione **MX personalizado** **en la lista** desplegable Reenvío de correo electrónico. 
     
     (Es posible que tenga que desplazarse hacia abajo).
 
@@ -141,7 +141,7 @@ Para comprobar el registro en Microsoft 365:
     
     |**Tipo**|**Host**|**Valor**|**Prioridad**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |Registro MX  <br/> |@  <br/> |\<*domain-key*\>.mail.protection.outlook.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> **Nota:** Obtener el  *\<domain-key\>*  de su cuenta de Microsoft.  [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/> |30 min  <br/> |
+    |Registro MX  <br/> |@  <br/> |\<*domain-key*\>.mail.protection.outlook.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> **Nota:** Obtener el de  *\<domain-key\>*  su cuenta de Microsoft.  [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/> |30 min  <br/> |
 
      :::image type="content" source="../../media/f3b76d62-5022-48c1-901b-8615a8571309.png" alt-text="Copie y pegue los valores de la tabla.":::
 
@@ -171,7 +171,7 @@ Para comprobar el registro en Microsoft 365:
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="Seleccione Lista de dominios.":::
 
-1. En la **página Lista de** dominios, seleccione el dominio que desea editar y, a continuación, seleccione **Administrar**.
+1. En la **página Lista de** dominios, seleccione el dominio que desea editar y, a continuación, **seleccione Administrar**.
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="Seleccione Administrar.":::
 
@@ -179,7 +179,7 @@ Para comprobar el registro en Microsoft 365:
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="Seleccione DNS avanzado.":::
 
-1. En la **sección REGISTROS DE HOST,** seleccione **AGREGAR NUEVO REGISTRO**.
+1. En la **sección REGISTROS DE HOST** , seleccione **AGREGAR NUEVO REGISTRO**.
 
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="Seleccione AGREGAR NUEVO REGISTRO.":::
 
@@ -205,7 +205,7 @@ Para comprobar el registro en Microsoft 365:
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro *SPF*  que incluya ambos conjuntos de valores. 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga  un único registro SPF que incluya ambos conjuntos de valores. 
 
 1. Para empezar, vaya a la página de dominios de Namecheap mediante [este vínculo](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). Se te pedirá que inicies sesión y continúes.
     
@@ -213,7 +213,7 @@ Para comprobar el registro en Microsoft 365:
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="Seleccione Lista de dominios.":::
 
-1. En la **página Lista de** dominios, seleccione el dominio que desea editar y, a continuación, seleccione **Administrar**.
+1. En la **página Lista de** dominios, seleccione el dominio que desea editar y, a continuación, **seleccione Administrar**.
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="Seleccione Administrar.":::
 
@@ -221,7 +221,7 @@ Para comprobar el registro en Microsoft 365:
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="Seleccione DNS avanzado.":::
 
-1. En la **sección REGISTROS DE HOST,** seleccione **AGREGAR NUEVO REGISTRO**.
+1. En la **sección REGISTROS DE HOST** , seleccione **AGREGAR NUEVO REGISTRO**.
 
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="Seleccione AGREGAR NUEVO REGISTRO.":::
 
@@ -248,7 +248,7 @@ Para comprobar el registro en Microsoft 365:
 
 ## <a name="advanced-option-skype-for-business"></a>Opción avanzada: Skype Empresarial
 
-Solo seleccione esta opción si su organización usa Skype Empresarial servicios de comunicación en línea como chat, llamadas de conferencia y videollamadas, además de Microsoft Teams. Skype necesita 4 registros: 2 registros SRV para la comunicación de usuario a usuario y 2 registros CNAME para iniciar sesión y conectar usuarios al servicio.
+Solo seleccione esta opción si su organización usa Skype Empresarial para servicios de comunicación en línea como chat, llamadas de conferencia y videollamadas, además de Microsoft Teams. Skype necesita 4 registros: 2 registros SRV para la comunicación de usuario a usuario y 2 registros CNAME para iniciar sesión y conectar usuarios al servicio.
 
 ### <a name="add-the-two-required-srv-records"></a>Agregar los dos registros SRV necesarios
 
@@ -260,7 +260,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="Elija Lista de dominios.":::
 
-1. En la **página Lista de** dominios, seleccione el dominio que desea editar y, a continuación, seleccione **Administrar**.
+1. En la **página Lista de** dominios, seleccione el dominio que desea editar y, a continuación, **seleccione Administrar**.
 
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="Seleccione Administrar.":::
 
@@ -268,7 +268,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="Seleccione DNS avanzado.":::
 
-1. En la **sección REGISTROS DE HOST,** seleccione **AGREGAR NUEVO REGISTRO**.
+1. En la **sección REGISTROS DE HOST** , seleccione **AGREGAR NUEVO REGISTRO**.
 
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="Seleccione AGREGAR NUEVO REGISTRO.":::
 
@@ -299,7 +299,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
 
 ### <a name="add-the-two-required-cname-records"></a>Agregar los dos registros CNAME necesarios 
   
-1. En la **sección REGISTROS DE HOST,** seleccione **AGREGAR NUEVO REGISTRO**.
+1. En la **sección REGISTROS DE HOST** , seleccione **AGREGAR NUEVO REGISTRO**.
     
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="Seleccione AGREGAR NUEVO NOMBRE.":::
 
@@ -342,7 +342,7 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
 
      :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="Seleccione Lista de dominios.":::
 
-1. En la **página Lista de** dominios, seleccione el dominio que desea editar y, a continuación, seleccione **Administrar**.
+1. En la **página Lista de** dominios, seleccione el dominio que desea editar y, a continuación, **seleccione Administrar**.
     
      :::image type="content" source="../../media/fb2020d8-707c-4148-835e-304ac6244d66.png" alt-text="Seleccione Administrar.":::
 
@@ -350,7 +350,7 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
 
      :::image type="content" source="../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png" alt-text="Seleccione Administrar registros DNS en la lista desplegable.":::
 
-1. En la **sección REGISTROS DE HOST,** seleccione **AGREGAR NUEVO REGISTRO**.
+1. En la **sección REGISTROS DE HOST** , seleccione **AGREGAR NUEVO REGISTRO**.
     
      :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="Seleccione AGREGAR NUEVO REGISTRO.":::
 
@@ -370,7 +370,7 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
        
      :::image type="content" source="../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png" alt-text="Copie y pegue los valores de la tabla.":::
 
-1. Seleccione el **control Guardar cambios.** 
+1. Seleccione el **control Guardar cambios** . 
 
      :::image type="content" source="../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png" alt-text="Seleccione el control Guardar cambios.":::
 

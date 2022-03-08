@@ -15,24 +15,21 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo comparar la configuración de directiva de cumplimiento de dispositivos.
-ms.openlocfilehash: 5e4fc396e2ea1e1cce576f6064f4239179db33cc
-ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
+description: Para proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo comparar la configuración de directiva de cumplimiento de dispositivos.
+ms.openlocfilehash: 30645ef4d59fcdee0d994ae709ff9bb45fc21b09
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62859258"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320373"
 ---
 # <a name="compare-device-compliance-policy-settings"></a>Comparar la configuración de directiva de cumplimiento de dispositivos
-
-> [!NOTE]
-> Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplan los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, consulte [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
 Microsoft 365 Lighthouse permite ver directivas de cumplimiento en todos los inquilinos en una sola vista. Puede impulsar la seguridad y la estandarización en todos los inquilinos comparando directivas. Puede filtrar las vistas para ver las opciones que se han configurado (frente a las opciones que no se han configurado), las opciones que difieren en sus configuraciones o las que coinciden. También puede buscar configuraciones específicas para ver cómo se comparan entre directivas.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Asegúrese de que los dispositivos tienen una Microsoft Intune y están inscritos en Microsoft Endpoint Manager (MEM).
+Asegúrese de que los dispositivos Microsoft Intune una licencia y estén inscritos en Microsoft Endpoint Manager (MEM).
 
 ## <a name="compare-policy-settings"></a>Comparar la configuración de directiva
 
@@ -49,7 +46,7 @@ Asegúrese de que los dispositivos tienen una Microsoft Intune y están inscrito
 
 5. Seleccione **Comparar**.
 
-Puede filtrar los resultados para ver Configuración **que difieren**, Configuración **que coincidan** o **configuración configurada**.
+Puede filtrar los resultados para ver Configuración **diferentes**, Configuración **que coincidan** o **Configuración**.
 
 ## <a name="configure-a-policy-setting"></a>Configurar una configuración de directiva
 
@@ -63,7 +60,7 @@ Puede filtrar los resultados para ver Configuración **que difieren**, Configura
 
 5. En MEM, edite la configuración de directiva según sea necesario.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 A medida que realiza ajustes de directiva, asegúrese de evaluar los cambios con respecto a la configuración de línea base actual. Para obtener más información, vea [Overview of using baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md).
 

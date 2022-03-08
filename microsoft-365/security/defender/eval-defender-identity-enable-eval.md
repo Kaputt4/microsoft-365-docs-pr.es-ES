@@ -1,6 +1,6 @@
 ---
 title: Habilitar el entorno de evaluación para Microsoft Defender for Identity
-description: Configure Microsoft Defender for Identity en un entorno piloto Microsoft 365 Defender de prueba mediante la instalación de & la configuración del sensor y la descubriendo administradores locales en otros equipos.
+description: Configure Microsoft Defender for Identity en Microsoft 365 Defender laboratorio de prueba o entorno piloto instalando & configurar el sensor y descubriendo administradores locales en otros equipos.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -21,17 +21,17 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6910336dea0559ad241c240cde09d3929fe2e422
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: ac5c1a1bb541dee61155a55f23a78533c2b5360c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62170980"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311611"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Habilitar el entorno de evaluación para Microsoft Defender for Identity
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Este artículo es [el paso 2 de 2](eval-defender-identity-overview.md) en el proceso de configuración del entorno de evaluación para Microsoft Defender for Identity. Para obtener más información acerca de este proceso, vea el [artículo de introducción](eval-defender-identity-overview.md).
 
@@ -72,7 +72,7 @@ En las máquinas en las que instaló el sensor, configure la colección Windows 
 
 |  |Paso     |Más información  |
 |---------|---------|---------|
-|1     | Configurar Windows de registro de eventos         | [Configurar Windows event (colección)](/defender-for-identity/configure-windows-event-collection)        |
+|1     | Configurar Windows de registro de eventos         | [Configurar Windows Event](/defender-for-identity/configure-windows-event-collection)        |
 |2     | Configurar la configuración de proxy de Internet        | [Configurar el proxy de punto de conexión y las opciones de conectividad a Internet para el Sensor de Microsoft Defender for Identity](/defender-for-identity/configure-proxy)        |
 |   |         |         |
 
@@ -80,11 +80,11 @@ En las máquinas en las que instaló el sensor, configure la colección Windows 
 
 La detección de rutas de movimiento lateral de Microsoft Defender for Identity se basa en consultas que identifican a los administradores locales en máquinas específicas. Estas consultas se realizan con el protocolo SAM-R, mediante la cuenta defender para el servicio de identidad. 
 
-Para asegurarse de que Windows clientes y servidores permiten que la cuenta de Defender for Identity realice SAM-R, se debe realizar una modificación en la directiva de grupo para agregar la cuenta de servicio Defender for Identity además de las cuentas configuradas que aparecen en la directiva de acceso a la red. Asegúrese de aplicar directivas de grupo a todos los equipos **excepto a los controladores de dominio**.
+Para asegurarse de que Windows clientes y servidores permiten que su cuenta de Defender for Identity realice SAM-R, se debe realizar una modificación en la directiva de grupo para agregar la cuenta de servicio Defender for Identity además de las cuentas configuradas que aparecen en la directiva de acceso a la red. Asegúrese de aplicar directivas de grupo a todos los equipos **excepto a los controladores de dominio**.
 
 Para obtener instrucciones sobre cómo hacerlo, consulte [Configure Microsoft Defender for Identity to make remote calls to SAM](/defender-for-identity/install-step8-samr). 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Paso 3 de 3: [Piloto de Microsoft Defender para identidad](eval-defender-identity-pilot.md)
 

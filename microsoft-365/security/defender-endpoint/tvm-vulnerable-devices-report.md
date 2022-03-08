@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f096433534abb91b9cb14b8db2737dacf566624
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 50b30d38a42aab37c295a9f65bd070dd9613927c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167987"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312682"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>Informe de dispositivos vulnerables: Administración de amenazas y vulnerabilidades
 
@@ -29,8 +29,8 @@ ms.locfileid: "61167987"
 
 **Se aplica a:**
 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -44,9 +44,9 @@ Hay dos columnas:
 - Tendencias (con el tiempo). Puede mostrar los últimos 30 días, 3 meses, 6 meses o un intervalo de fechas personalizado.
 - Estado (información actual)
 
-**Filtro:** puedes filtrar los datos por niveles de gravedad de vulnerabilidad, disponibilidad de vulnerabilidad, antigüedad de vulnerabilidad, plataforma del sistema operativo, Windows 10 o Windows versión 11 o grupo de dispositivos.
+**Filtro**: puedes filtrar los datos por niveles de gravedad de vulnerabilidad, disponibilidad de vulnerabilidad, antigüedad de vulnerabilidad, plataforma del sistema operativo, Windows 10 o Windows versión 11 o grupo de dispositivos.
 
-**Explorar en profundidad:** si hay una información que desea explorar más adelante, seleccione el gráfico de barras relevante para ver una lista filtrada de dispositivos en la página Inventario de dispositivos. Desde allí, puede exportar la lista.
+**Explorar en profundidad**: si hay una información que desea explorar más adelante, seleccione el gráfico de barras relevante para ver una lista filtrada de dispositivos en la página Inventario de dispositivos. Desde allí, puede exportar la lista.
 
 ## <a name="severity-level-graphs"></a>Gráficos de nivel de gravedad
 
@@ -76,7 +76,7 @@ El número de dispositivos en cada sistema operativo que se exponen debido a vul
 
 Número de dispositivos en cada Windows 10 o Windows 11 que se exponen debido a aplicaciones vulnerables u sistema operativo.
 
-![Un gráfico de dispositivos vulnerables actuales por Windows 10 versión y un gráfico que muestra los dispositivos vulnerables Windows 10 versión con el tiempo.](images/tvm-report-version.png)lightbox="images/tvm-report-version.png":::
+:::image type="content" alt-text="Un gráfico de dispositivos vulnerables actuales por Windows 10 versión y un gráfico que muestra los dispositivos vulnerables Windows 10 versión con el tiempo." source="images/tvm-report-version.png" lightbox="images/tvm-report-version.png":::
 
 ## <a name="related-topics"></a>Temas relacionados
 

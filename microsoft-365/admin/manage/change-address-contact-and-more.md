@@ -2,8 +2,8 @@
 title: Cambiar la dirección de la organización, el contacto técnico y otra información
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
@@ -15,19 +15,19 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- commerce_billing
 - AdminSurgePortfolio
-- commcerce_billing
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
 description: Realice cambios en el perfil de la organización, como el nombre de la organización, la dirección, el teléfono, el contacto técnico y el correo electrónico.
 ms.date: 02/11/2022
-ms.openlocfilehash: bec86787c3918bf794345178a15c9401bdc7ae06
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 4c5fdda4a2f089afc7e63a570290fdc08dc46440
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766601"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316651"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Cambiar la dirección de la organización, el contacto técnico y otra información
   
@@ -41,7 +41,7 @@ De forma predeterminada, se crean nuevos PC en la nube con el sistema operativo 
 
 1. Inicie sesión en el Centro de administración de Microsoft 365 con una cuenta de administrador global.
 2. Vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Configuración de la organización**</a>.
-3. En la **pestaña Servicios**, **seleccione Windows 365**.
+3. En la **pestaña** Servicios, **seleccione Windows 365**.
 4. Seleccione el sistema operativo y el tipo de cuenta preferidos y, a continuación, **seleccione Guardar**.
 
 La configuración de la organización solo se aplica a los equipos en la nube recién creados. Cuando se cambie esta configuración, no cambiará el tipo de cuenta o el sistema operativo de los PC en la nube existentes.
@@ -53,7 +53,7 @@ La configuración de la organización solo se aplica a los equipos en la nube re
 
 Para cambiar otra información en la página de perfil de su empresa:
   
-1. En el Centro de administración, vaya a la **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**configuración de la organización**</a>.
+1. En el Centro de administración, vaya a la **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**configuración de la**</a> organización.
 2. En la **pestaña Perfil de** la organización, seleccione **Información de la organización**.
 3. Actualice la información de su organización y, a continuación, **seleccione Guardar cambios**. Asegúrese de rellenar todos los campos obligatorios marcados con un * para habilitar el guardado de los cambios.
 
@@ -63,8 +63,8 @@ A continuación se proporciona una explicación de cada campo.
 
 |**Field**  |**Descripción**  |
 |---------|---------|
-|Nombre  <br/>   | El nombre introducido aquí es lo que los usuarios verán en las páginas siguientes:  <br/>  Página de inicio de sesión: si los usuarios han configurado otras cuentas de TE102824469 con las direcciones de correo electrónico de su empresa o escuela, puede que vean el nombre de la organización en la página de inicio de sesión. Esto les ayuda a distinguir entre su cuenta de cuenta profesional o educativa y el resto de sus cuentas, de modo que pueden identificar cuál de ellas usar al iniciar sesión.  <br/>  Página y enlace del perfil de la organización: el enlace al perfil de la organización muestra el nombre de la organización.  <br/>  Yammer navegación: en Yammer, la navegación izquierda usa el nombre de la organización como el nombre de la red Yammer principal.  <br/> Sincronización de OneDrive cliente: el nombre de la organización se muestra en explorador de archivos en Windows y Finder en Mac, las rutas de acceso de archivo, el centro de actividades de OneDrive, la información sobre herramientas del icono de la nube de OneDrive y la ventana de configuración de OneDrive. Actualmente, la actualización del nombre de la organización no la actualiza para los clientes configurados. <br/> MS Teams: Conmutador de organización en Teams muestra el nombre de la organización <br/>  |
-|Dirección, ciudad, estado o provincia, código postal  <br/>     | La dirección especificada aquí es lo que verá en la factura, en Sold To: The Sold To address on your bill is the same as your organization address on your profile page (see [Understand your bill or invoice for Microsoft 365 for business](../../commerce/billing-and-payments/understand-your-invoice2.md).  <br/>        |
+|Nombre  <br/>   | El nombre introducido aquí es lo que los usuarios verán en las páginas siguientes:  <br/>  Página de inicio de sesión: si los usuarios han configurado otras cuentas de TE102824469 con las direcciones de correo electrónico de su empresa o escuela, puede que vean el nombre de la organización en la página de inicio de sesión. Esto les ayuda a distinguir entre su cuenta de cuenta profesional o educativa y el resto de sus cuentas, de modo que pueden identificar cuál de ellas usar al iniciar sesión.  <br/>  Página y enlace del perfil de la organización: el enlace al perfil de la organización muestra el nombre de la organización.  <br/>  Yammer navegación: en Yammer, la navegación izquierda usa el nombre de la organización como el nombre de la red Yammer principal.  <br/> Sincronización de OneDrive cliente: el nombre de la organización se muestra en el Explorador de archivos en Windows y Finder en Mac, las rutas de acceso de archivo, el centro de actividades de OneDrive, la información sobre herramientas del icono de la nube de OneDrive y la ventana de configuración de OneDrive. Actualmente, la actualización del nombre de la organización no la actualiza para los clientes configurados. <br/> MS Teams: Conmutador de organización en Teams muestra el nombre de la organización <br/>  |
+|Dirección, ciudad, estado o provincia, código postal  <br/>     | La dirección especificada aquí es lo que verá en su factura, en Sold To: The Sold To address on your bill is the same as your organization address on your profile page (see [Understand your bill or invoice for Microsoft 365 for business](../../commerce/billing-and-payments/understand-your-invoice2.md).  <br/>        |
 |País o región  <br/>    | Esto es el país o la región donde la compañía tiene su sede central. El país o la región que se seleccione determina los servicios disponibles, los impuestos y la moneda de facturación del país o la región, y la ubicación del centro de datos más cercano (vea las [restricciones de licencia de Microsoft Office](https://office.microsoft.com/redir/FX103037529)).  <br/>NOTA: Una vez seleccionado, no se puede cambiar el país o la región. Si desea cambiar la selección, deberá cancelar la suscripción y registrarse de nuevo. Para obtener ayuda con este proceso, [póngase en contacto con el soporte técnico](../../business-video/get-help-support.md).        |
 |Teléfono  <br/>     | Este es el número principal de la compañía. Por lo general, el número de la sede central de su empresa.  <br/>        |
 |Contacto técnico  <br/> |Esta es la dirección de correo electrónico de la persona técnica principal que administra su Microsoft 365 suscripción. Esta es la persona que recibirá comunicaciones sobre Microsoft 365 estado del servicio.  <br/> |

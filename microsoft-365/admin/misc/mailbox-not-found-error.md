@@ -2,8 +2,8 @@
 title: Aparece el error No se pudo encontrar el buzón en Outlook en la Web
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Un error **No se pudo encontrar el buzón** significa que la cuenta que usó para conectarse a Outlook en la Web no tiene una licencia de Exchange Online.
-ms.openlocfilehash: a83219dbd22446d210d59b2c8613915129ecc1cb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: afde59262be1fd0776dd94bafc9c8b0d2e75bebc
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167983"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316413"
 ---
 # <a name="getting-a-mailbox-not-found-error-in-outlook-on-the-web"></a>¿Aparece el error No se pudo encontrar el buzón en Outlook en la Web?
 

@@ -2,8 +2,8 @@
 title: 'Centro de administración de Microsoft 365: introducción'
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Use una vista simplificada en Microsoft 365 para administrar tareas comunes o la vista de panel para configuraciones y tareas más complejas.
-ms.openlocfilehash: c6443ef9406f49fe8f27aa5977aac1e046583587
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 92d6188ee843d9c3148e1036894ab9a3819247af
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421815"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315937"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Información general del Centro de administración de Microsoft 365
 
@@ -130,7 +130,7 @@ Microsoft 365 es una solución completa e inteligente que incluye Office 365, Wi
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
 
-Para obtener más información, [vea Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md). 
+Para obtener más información, vea [Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md). 
 
 ### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>He encontrado un error o quiero solicitar una mejora de características. Cómo puedo informar a Microsoft?
 

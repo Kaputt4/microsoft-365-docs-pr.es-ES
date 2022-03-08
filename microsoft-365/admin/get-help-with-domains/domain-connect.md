@@ -1,9 +1,9 @@
 ---
-title: Uso de dominios Conectar
+title: Uso de dominio Conectar
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,15 +20,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
-description: Obtenga información sobre cómo trabajar con registradores Conectar habilitados y agregar su dominio a Microsoft 365.
-ms.openlocfilehash: 6203292332d895d99131c4ab324fc342da9aaeed
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre cómo trabajar con los registradores Conectar dominio habilitados y agregue su dominio a Microsoft 365.
+ms.openlocfilehash: 1691d86ebd459ee69faca8d3a21d99b0caa89fca
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164793"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316917"
 ---
-# <a name="using-domain-connect"></a>Uso de dominios Conectar
+# <a name="using-domain-connect"></a>Uso de dominio Conectar
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca.
 
@@ -41,7 +41,7 @@ En el asistente, solo confirmaremos que es el propietario del dominio y, a conti
 
 ## <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Registradores Conectar de dominio que se integran con Microsoft 365
 
-- [1 &amp; 1 IONOS](https://www.1and1.com/)
+- [11&amp; IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)
@@ -55,4 +55,4 @@ En el asistente, solo confirmaremos que es el propietario del dominio y, a conti
 
 Después de finalizar la instalación, el registro MX del dominio se actualiza para que apunte a Microsoft 365 y todo el correo electrónico de su dominio empezará a llegar a Microsoft 365. Asegúrese de que ha agregado usuarios y configurado buzones en Microsoft 365 para todos los usuarios que reciban correo electrónico en su dominio.
 
-Si tiene un sitio web que usa con su empresa, seguirá funcionando como hasta ahora. Los pasos Conectar configuración del dominio no afectan al sitio web.
+Si tiene un sitio web que usa con su empresa, seguirá funcionando como hasta ahora. Los pasos Conectar configuración del dominio no afectan a su sitio web.

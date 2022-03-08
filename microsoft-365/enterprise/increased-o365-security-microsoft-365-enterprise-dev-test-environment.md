@@ -15,14 +15,15 @@ ms.custom:
 - Ent_TLGs
 - admindeeplinkMAC
 - admindeeplinkDEFENDER
+- admindeeplinkSPO
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Use esta Guía del laboratorio de pruebas para habilitar la configuración Microsoft 365 seguridad adicional de su Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 5d431bba21c02daf2ec5af384e2d4fde53ab6edb
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+description: Use esta Guía del laboratorio de pruebas para habilitar la configuración Microsoft 365 seguridad adicional que Microsoft 365 entorno de prueba empresarial.
+ms.openlocfilehash: bf64bb23192eb4a4d2b3700a2b0c4390efc1f53e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111704"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327915"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Mayor Microsoft 365 seguridad para su Microsoft 365 entorno de prueba empresarial
 
@@ -46,21 +47,21 @@ Si desea configurar una mayor seguridad Microsoft 365 en una empresa simulada, s
 
 ## <a name="phase-2-configure-increased-microsoft-365-security"></a>Fase 2: Configurar una mayor Microsoft 365 seguridad
 
-En esta fase, se habilita una mayor Microsoft 365 seguridad para su Microsoft 365 entorno de prueba empresarial. Para obtener más detalles y opciones de configuración, consulte [Configure your tenant for increased security](/office365/securitycompliance/tenant-wide-setup-for-increased-security).
+En esta fase, se habilita una mayor seguridad Microsoft 365 para el entorno Microsoft 365 de prueba empresarial. Para obtener más detalles y opciones de configuración, consulte [Configure your tenant for increased security](/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Configurar SharePoint Online para bloquear aplicaciones que no admiten la autenticación moderna
 
-Las aplicaciones que no admiten la autenticación moderna no pueden tener configuraciones de identidad y acceso a [dispositivos aplicadas,](../security/office-365-security/microsoft-365-policies-configurations.md) lo que es un elemento importante para proteger la suscripción Microsoft 365 y sus activos digitales. 
+Las aplicaciones que no admiten la autenticación moderna no pueden tener configuraciones de identidad y acceso a [dispositivos aplicadas](../security/office-365-security/microsoft-365-policies-configurations.md), lo que es un elemento importante para proteger la suscripción Microsoft 365 y sus activos digitales. 
 
 1. Vaya a la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> e inicie sesión en su Microsoft 365 de laboratorio de pruebas con su cuenta de administrador global.
     
   - Si usa el entorno de prueba Microsoft 365 ligero, inicie sesión desde el equipo local.
     
-  - Si usa el entorno de prueba simulado de Microsoft 365 empresa, use [Azure Portal](https://portal.azure.com) para conectarse a la máquina virtual CLIENT1 y, a continuación, inicie sesión desde CLIENT1.
+  - Si usa el entorno de prueba de Microsoft 365 empresa simulada, use [Azure Portal](https://portal.azure.com) para conectarse a la máquina virtual CLIENT1 y, a continuación, inicie sesión desde CLIENT1.
  
-2. En la nueva **pestaña Centro de administración de Microsoft 365,** en **Centros de administración** en el panel de navegación izquierdo, haga clic en **SharePoint**.
-3. En la nueva **pestaña SharePoint centro de administración,** haga clic en Directivas > control de **acceso**.
-4. Haga **clic en Aplicaciones que no admiten la autenticación moderna,** seleccione Bloquear **acceso** y, a continuación, haga clic en **Guardar**.
+2. En la nueva **pestaña Centro de administración de Microsoft 365**, en **Centros de administración** en el panel de navegación izquierdo, haga clic **en SharePoint**.
+3. En la nueva **pestaña SharePoint centro de administración**, seleccione **Control PoliciesAccess** > .<a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank"></a>
+4. Selecciona **Aplicaciones que no admiten la autenticación moderna**, selecciona **Bloquear acceso** y, a continuación, **selecciona Guardar**.
 
 
 ### <a name="enable-defender-for-office-365-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>Habilitar Defender para Office 365 para SharePoint, OneDrive para la Empresa y Microsoft Teams
@@ -69,7 +70,7 @@ Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams protects y
 
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de seguridad & cumplimiento e</a> inicie sesión con su cuenta de administrador global.
 
-2. En el panel de navegación izquierdo, en **Administración de** amenazas, haga **clic** en Directiva y, a continuación, haga clic Caja fuerte **datos adjuntos**. 
+2. En el panel de navegación izquierdo, en **Administración de** amenazas, **haga clic en** Directiva y, a continuación, **haga clic Caja fuerte datos adjuntos**. 
 
 3. En **Proteger archivos en SharePoint, OneDrive y Microsoft Teams**. seleccione **Activar ATP para SharePoint, OneDrive y Microsoft Teams**.
 
@@ -87,8 +88,8 @@ Para asegurarse de que el procesamiento antimalware se realiza en archivos con t
 1. Haga clic en el botón Atrás del explorador para volver a la **página** Directiva.
 2. Haga **clic en Antimalware**.
 3. Haga doble clic en la directiva denominada **Default**.
-4. En la ventana **Directiva antimalware,** haga clic **en Configuración**.
-4. En **Filtro de tipos comunes de datos adjuntos,** seleccione **Activar** y, a continuación, haga clic **en Guardar**.
+4. En la ventana **Directiva antimalware**, haga clic **en Configuración**.
+4. En **Filtro Tipos comunes de datos adjuntos**, **seleccione Activar** y, a continuación, haga clic en **Guardar**.
 
 
 ## <a name="phase-3-examine-the-security-dashboard"></a>Fase 3: Examinar el panel de seguridad
@@ -97,30 +98,30 @@ La administración de amenazas en Microsoft 365 puede ayudarle a controlar y adm
 
 Para ver el panel de seguridad:
 
-1. Si es necesario, vaya al Centro de <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">seguridad & cumplimiento e</a> inicie sesión con su cuenta de administrador global.
+1. Si es necesario, vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de seguridad & cumplimiento</a> e inicie sesión con su cuenta de administrador global.
 
-2. En el panel de navegación izquierdo, en **Administración de amenazas,** haga clic en **Panel**.
+2. En el panel de navegación izquierdo, en **Administración de amenazas**, haga clic en **Panel**.
 
 Echa un vistazo de cerca a todas las tarjetas del panel para familiarizarte con la información proporcionada.
 
-Para obtener más información, vea [Panel de seguridad](../security/office-365-security/security-dashboard.md).
+Para obtener más información, consulte [Panel de seguridad](../security/office-365-security/security-dashboard.md).
 
 
 ## <a name="phase-4-examine-microsoft-secure-score"></a>Fase 4: Examinar la puntuación segura de Microsoft
 
 Puntuación segura de Microsoft muestra su posición de seguridad como un número, que indica el nivel actual con respecto a las características que están disponibles en su suscripción. También te ofrece una lista de acciones de mejora que puedes realizar para mejorar tu puntuación.
 
-1. Cree una nueva pestaña en el explorador, vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de</a>Microsoft 365 Defender y, a continuación, haga clic en **Puntuación segura**.
+1. Cree una nueva pestaña en el explorador, vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal</a> de Microsoft 365 Defender y, a continuación, haga clic en **Puntuación segura**.
 2. En la **pestaña Información**  general, anote su puntuación segura actual y cómo se compara con el promedio global y las suscripciones con un número similar de licencias.
 3. En la **pestaña Acciones de** mejora, lee la lista de acciones que puedes realizar para aumentar la puntuación.
 
-Para obtener más información, vea [Puntuación segura de Microsoft](../security/defender/microsoft-secure-score.md).
+Para obtener más información, consulta [Puntuación segura de Microsoft](../security/defender/microsoft-secure-score.md).
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-Explore características [y capacidades adicionales](m365-enterprise-test-lab-guides.md#information-protection) de protección de la información en el entorno de prueba.
+Explore características [y capacidades](m365-enterprise-test-lab-guides.md#information-protection) adicionales de protección de la información en el entorno de prueba.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 

@@ -2,8 +2,8 @@
 title: Entender su factura o recibo de Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,118 +14,170 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_billing
 - TopSMBIssues
 - okr_smb
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
 search.appverid: MET150
-description: Interpretar los cargos, la facturación y la información de pago en su factura de Microsoft 365 para empresas, y cómo cambiar un número de pedido de compra.
-ms.date: 05/04/2021
-ms.openlocfilehash: 946f403d05150a4995aeacf8adc99f02ffb6c761
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+description: Aprende a interpretar los cargos, la facturación y la información de pago en tu factura Microsoft 365 factura o factura empresarial.
+ms.date: 03/04/2022
+ms.openlocfilehash: e8a27dbdab3f49412f78d0ef7dcb533266d5f4f4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374633"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322410"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Entender su factura o recibo de Microsoft 365 para empresas
 
-> [!IMPORTANT]
-> A partir del 26 de enero de 2021, ya no se admitirán cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si usted es un cliente existente en alguno de esos países, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones, pero siempre que la cuenta bancaria esté en buenos términos.
+La factura o factura proporciona un resumen de los cargos de la suscripción e incluye instrucciones sobre cómo realizar un pago.
 
-Sea mensual o anualmente (dependiendo de la opción que elija al comprar la suscripción), recibirá un correo electrónico en el que se le indicará que su nuevo extracto de facturación está disponible en el Centro de administración. [Obtenga más información sobre cómo encontrar y ver su factura](view-your-bill-or-invoice.md).
-  
-Su factura contiene dos páginas. La página 1 es el resumen de la factura, y contiene la información general acerca de esta, del pedido, del importe debido, de cómo realizar el pago y de cómo ponerse en contacto con el soporte técnico.
-  
-![Page 1 of a sample invoice.](../../media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
-  
-La página 2 contiene los detalles acerca de la actividad de facturación para cada suscripción.
-  
-![Page 2 of a sample invoice.](../../media/808195cb-b1d2-4492-a748-29671ccecdd2.png)
-  
-Para obtener descripciones de los campos y términos incluidos en su factura, consulte [Glosario de los campos de la factura](#invoice-field-glossary) más tarde en este artículo.
-  
-## <a name="understand-billing-concepts"></a>Comprender los conceptos de facturación
-
-Antes de ver su factura, es útil entender algunos de los conceptos principales de facturación.
-  
-### <a name="invoice-balance-vs-order-balance"></a>Saldo de la factura frente a saldo del pedido
-
- **Saldo de factura** es la cantidad que se muestra en la factura, y solo es el importe debido para ese periodo de facturación en concreto. El **saldo del pedido** total es la suma de todas las facturas sin pagar. Puede ver el saldo del pedido en la sección **Facturación** del Centro de administración.
-  
-### <a name="billing-frequency-vs-invoice-frequency"></a>Frecuencia de facturación frente a frecuencia de las facturas
-
- **Frecuencia de facturación** significa con qué frecuencia se le factura. Las suscripciones se facturan mensual o anualmente, dependiendo de la opción seleccionada al comprar la suscripción. **Frecuencia de facturas** significa con qué frecuencia recibe una factura. Si eligió la facturación anual, solo recibirá una factura al año, a no ser que la actividad de la suscripción requiera un cargo o crédito.
-  
-Si tiene más de un pedido, recibirá una factura para cada uno de ellos.
-  
-## <a name="invoice-field-glossary"></a>Glosario de los campos de la factura
-
-La tabla siguiente describe los campos que es posible que vea en su factura. Algunos de los campos que se muestran aquí puede que no aparezcan en su factura, según si paga mediante factura, tarjeta de crédito o cuenta bancaria.
-  
 > [!NOTE]
-> El pago a través de una cuenta bancaria no está disponible en algunos países o regiones.
-  
-|**Nombre**|**Descripción**|
-|:-----|:-----|
-|Precio anual|Las suscripciones se facturan mensual o anualmente. Si escogió facturación anual durante la compra de la suscripción, el precio de la licencia anual se refleja en la factura. Si desea cambiar la frecuencia de facturación, tendrá que cancelar la suscripción y volver a comprarla con la nueva frecuencia de facturación.|
-|Período de facturación|Período de facturación es el período de tiempo desde la última fecha de la factura. Período de servicio es el período de tiempo durante el cual se le cobrará por usar el servicio.|
-|Facturar a|Esta es la dirección de su departamento de facturación y suele ser la misma que la dirección del solicitante. Para actualizar la dirección de facturación, consulte [Cambiar las direcciones de facturación](change-your-billing-addresses.md).|
-|Cargos|La página 1 de la factura resume todos los cargos para el período de facturación de esta. La página 2 muestra los cargos detallados para cada suscripción.|
-|Cheque|Si paga mediante factura y el pago por cheque se ofrece en su país, en la parte inferior de la página 1 se incluye información acerca de dónde enviar su pago. Haga referencia al número de factura en su cheque.|
-|Créditos|La página 1 de la factura resume todos los créditos para el período de facturación de esta. La página 2 muestra los créditos detallados para cada suscripción.|
-|Número de pedido de compra del cliente|El número de pedido de compra (PO). Si actualiza el número de pedido de compra, se incluirá en las próximas facturas. [Cambiar el número de pedido de compra](#change-your-purchase-order-number).  <br/> **NOTA** No puede agregar el número de orden de compra a una factura existente.           |
-|Días|Cada transacción de facturación está asociada a un período de servicio. La columna Días indica el número de días en ese período de servicio.|
-|Descuentos|La página 1 de la factura resume todos los descuentos para el período de facturación de esta. La página 2 muestra los descuentos detallados para cada suscripción.|
-|Fecha de vencimiento|La fecha en la que vence el pago de la factura. Si la suscripción se paga con tarjeta de crédito o cuenta bancaria, el cobro se efectuará en la tarjeta de crédito o en la cuenta bancaria el día siguiente a la fecha de facturación.<br/> **NOTA** El pago a través de una cuenta bancaria no está disponible en algunos países o regiones.           |
-|Transferencia electrónica de fondos|Si ha elegido "factura" como el método de pago de la suscripción, la página 1 contiene la información de la cuenta bancaria de Microsoft para pagos electrónicos (transferencia, ACH, SEPA, etc.). Por lo general, su banco tendrá un campo de referencia que completa cuando envía un pago. Haga referencia al número de factura que se muestra en este campo.|
-|Total general|Esta fila incluye los importes totales de todas las columnas de cargos, descuentos, créditos, subtotal, impuestos y total para todas las suscripciones que aparecen en la factura.|
-|Fecha de la factura|La fecha en la que se creó la factura. La fecha de facturación es el día posterior al final de su período de facturación. Por ejemplo, si el período de facturación comprende del 15 de enero al 14 de febrero, la fecha de facturación es el 15 de febrero.|
-|Número de factura|El único número asignado a la factura. Haga referencia al número de factura en su pago.|
-|Precio mensual|Las suscripciones se facturan mensual o anualmente. Si escogió la facturación mensual durante la compra de la suscripción, el precio de licencia mensual se refleja en la factura. Si desea cambiar la frecuencia de facturación, tendrá que cancelar la suscripción y volver a comprarla con la nueva frecuencia de facturación.|
-|Número de pedido|Cada vez que compra una nueva suscripción, se crea un pedido. Cada mes, recibirá una factura para cada pedido.|
-|Instrucciones de pago|Si paga con tarjeta de crédito, verá "No pague - se ha cargado a la tarjeta de crédito del archivo". Si paga mediante factura, verá instrucciones para pagar mediante Transferencia electrónica de fondos (EFT) y cheque (si procede).|
-|Términos de pago|El número de días desde la fecha de facturación cuando el pago vence. El estándar es de 30 días.|
-|Producto|En la página 1 de la factura, "Servicios en línea" es el término genérico que se usa para describir las suscripciones. En la página 2, verá los nombres individuales de la suscripción.|
-|CANT.|El número de licencias compradas durante el Período de servicio.|
-|Período de servicio|Período de servicio es el período de tiempo durante el cual se le cobrará por usar el servicio. Un período de facturación es el período de tiempo desde la última fecha de facturación.|
-|Dirección de uso del servicio|La dirección donde se usa el servicio, normalmente es la misma que la dirección del solicitante. Para actualizar su Dirección de uso del servicio, consulte [Cambiar las direcciones de facturación](change-your-billing-addresses.md).|
-|Vendido a|El nombre de la empresa y la dirección. Para actualizar esta información, consulte [Cambiar la dirección de la empresa, el correo electrónico de contacto técnico y otra información](../../admin/manage/change-address-contact-and-more.md).  |
-|Subtotal|Cada suscripción que aparece en la factura tiene una fila subtotal independiente de todas las columnas de cargos, descuentos, créditos, subtotal, impuestos y total para esa suscripción.|
-|Impuestos|La página 1 de la factura muestra el total de impuestos. La pagina 2 muestra la tasa impositiva aplicada y el importe total de impuestos para cada elemento de línea. Si su factura contiene impuestos y su empresa está exenta de impuestos, [póngase en contacto con el soporte técnico](../../admin/get-help-support.md).  |
-|Total|La cantidad vencida para el período de facturación de la factura.|
+> Si tienes otras suscripciones en lugar de o además de Microsoft 365, consulta [Comprender tu factura o factura](understand-your-invoice.md).
+
+## <a name="how-often-and-when-am-i-billed"></a>¿Con qué frecuencia y cuándo se me factura?
+
+Según la frecuencia de facturación que elijas al comprar la suscripción, recibirás una factura mensual o anual. Si elige facturación anual, solo recibirá una factura al año, a menos que la actividad de su suscripción agrega un nuevo cargo o un crédito.
+
+La cantidad de tiempo desde la última fecha de facturación se denomina Período *de facturación* y se encuentra en la página uno de la factura. Esta hora representa el intervalo de fechas durante el cual se acumulan los cargos de la factura actual. Si ha realizado un cambio en su suscripción fuera de este intervalo de fechas, como agregar o quitar licencias, los cargos asociados aparecen en la factura para el siguiente período de facturación.
+
+A partir de la página dos de la factura, verá los cargos agrupados por su *período de servicio*. El período de servicio es el intervalo de fechas durante el cual se le cobrará por usar el servicio.
+
+Al final de cada período de facturación, recibe un correo electrónico que indica que la nueva factura está lista para ver o descargar en el Centro de administración de Microsoft 365. Si tiene más de un pedido, recibirá una factura para cada pedido. Obtenga información sobre [cómo buscar y ver su factura o factura](view-your-bill-or-invoice.md).
+
+## <a name="why-is-my-total-due-different-from-last-month"></a>¿Por qué mi vencimiento total es diferente del mes pasado?
+
+El importe facturado por su suscripción refleja el precio de licencia multiplicado por el número de licencias compradas y los impuestos o tarifas necesarios.
+
+Si el importe facturado es diferente del esperado, esto puede suceder por algunos motivos:
+
+- Ha agregado o quitado licencias de la suscripción. Las licencias modificadas a medio plazo se reflejan en la siguiente factura. Es posible que vea un crédito y una nueva facturación del período de servicio anterior para tener en cuenta este cambio. Para obtener más información sobre cómo se ve esto en la factura, consulte [la página dos a continuación](#page-two) .
+- La suscripción se canceló. Recibe una factura después de la cancelación con cualquier saldo pendiente menos los créditos.
+- La suscripción se renovó para un nuevo período y el precio de la licencia ha cambiado.
+
+## <a name="overview-of-the-invoice-pdf"></a>Información general sobre la factura .PDF
+
+La factura es un .PDF que contiene al menos dos páginas. [La página uno](#page-one) es el resumen de facturación y contiene información general sobre la factura, el pedido, el importe debido y las instrucciones de pago, si procede.
+
+:::image type="content" source="../../media/understand-your-invoice2/invoice-page-1.png" alt-text="Página uno de los .PDF de factura que muestra la información de alto nivel sobre su pedido.":::
+
+[La página dos](#page-two) contiene detalles sobre la actividad de facturación de cada suscripción durante el período de servicio.
+
+:::image type="content" source="../../media/understand-your-invoice2/invoice-page-2.png" alt-text="Página dos de la lista de .PDF que muestra la actividad de facturación de cada suscripción.":::
+
+## <a name="header"></a>Encabezado
+
+El encabezado aparece en la parte superior de cada página de factura, e incluye el mes de servicio, y la fecha de **factura, que** es la fecha en que Microsoft creó la factura. La factura se crea al día siguiente del final del período de facturación. Por ejemplo, si el período de facturación es del 15 de enero al 14 de febrero, la fecha de facturación es el 15 de febrero.
+
+El encabezado también incluye un **número de factura**, el número único asignado a la factura. Si paga mediante transferencia electrónica de fondos (EFT) o cheque, incluya el número de factura con el pago.
+
+Por último, el encabezado incluye la **fecha de vencimiento** para el pago de la factura y muestra el importe total debido. Si paga la suscripción con una tarjeta de crédito o cuenta bancaria, le cobraremos su tarjeta o cuenta el día después de la fecha de facturación.
+
+## <a name="footer"></a>Pie de página
+
+El pie de página aparece en la parte inferior de cada página de factura e incluye la dirección del centro de negocios de Microsoft. En función de su país o región, puede incluir otra información como el número de teléfono para llamar para facturación o soporte técnico, un vínculo a artículos de auto ayuda en línea y la dirección y el identificador fiscal de Microsoft en su país o región.
+
+## <a name="page-one"></a>Página uno
+
+La página uno de la factura contiene información de direcciones de su organización, detalles de alto nivel sobre su pedido, un resumen de los totales de factura e instrucciones sobre cómo pagar la factura.
+
+:::image type="content" source="../../media/understand-your-invoice2/invoice-page1-details.png" alt-text="La sección principal de la página uno de la factura.":::
+
+### <a name="addresses"></a>Direcciones
+
+Tres direcciones aparecen en la parte superior de la primera página. La **dirección Sold-To** es el nombre y la dirección de la organización que compró la suscripción. La **dirección de facturación** es la dirección del departamento de facturación. **Dirección de uso del** servicio es la dirección donde se usa el servicio. Normalmente, estas direcciones son las mismas. Según el tamaño y la configuración de la organización, estas direcciones pueden ser diferentes.
+
+Para actualizar la **dirección sold-to** , consulte [Change your organization's address, technical contact, and more](../../admin/manage/change-address-contact-and-more.md)**. Para actualizar la dirección de uso de facturación** o **servicio**, consulta [Cambiar las direcciones de facturación](change-your-billing-addresses.md).
+
+#### <a name="order-details"></a>Detalles del pedido
+
+En la página uno de la factura, el **producto** es "Servicios en línea", el término genérico que usamos para describir su suscripción. En la página dos se enumeran los productos individuales del pedido.
+
+**Número de pedido de** cliente es el número de pedido de compra (PO) que especifique. No puede agregar un número de pedido de compra a una factura existente. Si actualiza el número de pedido de compra, se incluye en las facturas futuras. Para cambiar el número de pedido, consulte [Cambiar el número de pedido de compra](#change-your-purchase-order-number).
+
+**Número de** pedido es el identificador único global (GUID) que identifica el pedido. Cada vez que compre una suscripción nueva, se crea un nuevo pedido con un nuevo número de pedido. Recibe una factura para cada pedido cada período de facturación.
+
+**Período de** facturación es el período desde la última fecha de facturación.
+
+**Términos de** pago es el número de días a partir de la fecha de facturación cuando vence el pago. El plazo de pago estándar es de 30 días.
+
+**Fecha de vencimiento** es la fecha en que vence el pago de la factura. Si su suscripción se paga con una tarjeta de crédito o cuenta bancaria, le cobraremos su tarjeta o cuenta el día después de la fecha de facturación.
+
+### <a name="billing-summary"></a>Resumen de facturación
+
+La página uno de la factura muestra los totales de los siguientes elementos para el período de facturación de la factura. La página dos contiene detalles para cada categoría.
+
+- Cargos
+- Descuentos
+- Créditos
+- Impuestos
+- Total
+
+### <a name="payment-instructions"></a>Instrucciones de pago
+
+If you pay by credit card, you see "Please DO NOT PAY. Se le cobrará el importe debido a través del método de pago seleccionado". Si paga por factura, esta sección contiene instrucciones para pagar por EFT o comprobar.
+
+### <a name="electronic-fund-transfer-eft-and-check"></a>Transferencia electrónica de fondos (EFT) y comprobación
+
+Si eligió "factura" como método de pago de suscripción, la página uno contiene la sección **Transferencia** electrónica de fondos que muestra la información de la cuenta bancaria de Microsoft para pagos electrónicos (cable, ACH, SEPA, y así sucesivamente). Normalmente, el banco tiene un campo de referencia que completa al enviar un pago. Asegúrese de hacer referencia al número de factura en ese campo.
+
+Si aceptamos pagos mediante la comprobación de su país o región, también verá una sección **Comprobar** que contiene el nombre del destinatario de pago y la dirección postal. Asegúrese de hacer referencia al número de factura en la comprobación.
+
+### <a name="support"></a>Soporte técnico
+
+En algunos países o regiones, la factura tiene una  sección soporte técnico que incluye instrucciones sobre cómo ver las facturas anteriores en el Centro de administración de Microsoft 365. También incluye un vínculo a artículos de auto help, y para algunos países y regiones, el número de teléfono de soporte.
+
+## <a name="page-two"></a>Página dos
+
+El nombre del producto de la suscripción se encuentra en la parte superior de la página dos. A continuación se muestra la fórmula que explica cómo se calculan los cargos. Si tiene más de un producto en su pedido, verá una sección independiente para cada producto y los cargos asociados.
+
+### <a name="new-charges"></a>Nuevos cargos
+
+:::image type="content" source="../../media/understand-your-invoice2/invoice-new-charges.png" alt-text="La sección Nuevos cargos de la página dos de la factura.":::
+
+La **sección Nuevos cargos** muestra el período de servicio durante el cual se agregaron cargos, descuentos, créditos e impuestos. Muestra el número de licencias incluidas durante el período de servicio, el precio por licencia y el número de días del período de servicio.
+
+### <a name="previous-charges"></a>Cargos anteriores
+
+:::image type="content" source="../../media/understand-your-invoice2/invoice-previous-charges.png" alt-text="Sección Cargos anteriores de la página dos de la factura.":::
+
+La **sección Cargos anteriores** muestra un crédito por los cargos que pagó por la factura anterior. Si realizó un cambio durante el período de facturación anterior, la factura incluye la **sección Cargos** anteriores. Por ejemplo, si agregó o quitó licencias a mitad de período, la  sección Cargos anteriores muestra el número de licencias para ese período de servicio, junto con el precio mensual por licencia, el número de días en el período de servicio, los cargos y otros importes que se aplican.
+
+### <a name="charges-during-this-billing-period"></a>Cargos durante este período de facturación
+
+:::image type="content" source="../../media/understand-your-invoice2/invoice-charges-this-period.png" alt-text="La sección Cargos durante este período de facturación de la página dos de la factura.":::
+
+La **sección Cargos durante este período de facturación** muestra los cambios realizados en la suscripción durante este período de facturación. Si realizó un cambio durante el período de facturación anterior, la factura también incluye la **sección Cambios durante este período de facturación** . Por ejemplo, si agregó o quitó licencias a mitad de período, la  sección Cargos durante este período de facturación enumera los cambios en la suscripción y cuándo se produjeron. Los cargos o reembolsos que se le deben debido a esos cambios se prorratea para el número de días afectados durante el período de facturación.
 
 ## <a name="change-your-purchase-order-number"></a>Cambiar el número de pedido de compra
 
 Si paga mediante factura, puede agregar o cambiar el número de orden de compra (PO) de su suscripción.
-  
+
 > [!NOTE]
 > No puede agregar un número de pedido de compra a una factura existente. El número de pedido de compra aparecerá en todas las facturas futuras.
 
-::: moniker range="o365-worldwide"
+1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+2. En la pestaña **Productos**, seleccione la suscripción que desee cambiar.
+3. En la página de detalles de la suscripción, en **Configuración de pago y suscripción**, seleccione **Editar factura**.
+4. En la parte inferior del **panel Editar detalles para** pagar por factura, escriba el número de pedido y, a continuación, **seleccione Guardar**.
 
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+## <a name="run-the-unknown-charge-diagnostic"></a>Ejecutar el diagnóstico de cargos desconocidos
 
-::: moniker-end
+Como administrador global de Microsoft 365, puede usar una herramienta de diagnóstico que se ejecuta en el Centro de administración de Microsoft 365 para investigar cargos inesperados de Microsoft que aparecen en el extracto de su banco o tarjeta de crédito.
 
-::: moniker range="o365-21vianet"
+> [!NOTE]
+> El diagnóstico de cargos desconocidos solo está disponible para los clientes que han comprado sus productos y servicios desde Microsoft.com, incluidos Microsoft 365 Enterprise, Educación y para organizaciones sin fines de lucro.
 
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
+Seleccione el vínculo **Ejecutar pruebas** que aparece a continuación para abrir la herramienta de diagnóstico en el Centro de administración de Microsoft 365.
 
-::: moniker-end
-
-1. En la pestaña **Productos**, seleccione la suscripción que desee cambiar.
-
-1. En la página de detalles de la suscripción, en **Configuración de pago y suscripción**, seleccione **Editar factura**.
-
-1. En la parte inferior del panel **Editar detalles para pagar con un mensaje de voz**, escriba su número de pedido de compra y, después, seleccione **Guardar**.
+>[!div class="nextstepaction"]
+>[Ejecutar pruebas: cargo desconocido](https://aka.ms/PillarUnknownCharge)
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Obtenga más información sobre cómo encontrar y ver su factura](view-your-bill-or-invoice.md) (artículo)\
-[Información de facturación de Microsoft 365 para empresas en México](mexico-billing-info.md) (artículo)\
-[Cambiar las direcciones de facturación](change-your-billing-addresses.md) (artículo)\
-[Cambiar la dirección de la organización y otra información del perfil](../../admin/manage/change-address-contact-and-more.md) (artículo)\
+[Vea su factura o recibo](view-your-bill-or-invoice.md) (artículo)\
 [Pagar la suscripción a Microsoft 365 para empresas](pay-for-your-subscription.md) (artículo)\
+[Administrar métodos de pago](manage-payment-methods.md) (artículo)\
+[Información de facturación de Microsoft 365 para empresas en México](mexico-billing-info.md) (artículo)\
 [Opciones de pago de Minecraft: Education Edition](/education/windows/school-get-minecraft) (artículo)

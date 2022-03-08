@@ -1,14 +1,12 @@
 ---
 title: Entender los perfiles de facturación
-f1.keywords:
-- NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - MACBillingBillsPaymentsBillingProfiles
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -16,18 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: Obtenga información sobre cómo los perfiles de facturación admiten facturas.
 ms.date: 04/02/2021
-ms.openlocfilehash: 8407e3855a8e497c730925a424b999ed07da6228
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 472b5c4754d686877077133467e33592b5c0b85e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188558"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311876"
 ---
 # <a name="understand-billing-profiles"></a>Entender los perfiles de facturación
 
@@ -35,7 +33,7 @@ Un perfil de facturación contiene un método de pago, información de facturaci
 
 > [!NOTE]
 >
-> Los perfiles de facturación no están disponibles para los clientes que compren productos y servicios de Microsoft.com o en la página **Servicios** de compra del Centro de administración de Microsoft 365.
+> Los perfiles de facturación no están disponibles para los clientes que compran productos y servicios de Microsoft.com o en la página **Servicios** de compra de la Centro de administración de Microsoft 365.
 
 ## <a name="what-are-billing-profile-roles"></a>¿Qué son los roles de perfil de facturación?
 
@@ -54,7 +52,7 @@ Los roles de los perfiles de facturación tienen permisos para controlar las com
 >
 > Si sigues estos pasos y la lista de perfiles de facturación está vacía, significa que no tienes un perfil de facturación y no puedes usar esta característica.
 
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
+1. En el Centro de administración, vaya a la página **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
 2. Seleccione la **pestaña Perfil de facturación** y, a continuación, seleccione un perfil de facturación de la lista.
 
 Cada perfil de facturación incluye la siguiente información:
@@ -62,7 +60,7 @@ Cada perfil de facturación incluye la siguiente información:
 - **Nombre y estado del perfil de facturación** &ndash; Nombre único del perfil de facturación y si el perfil de facturación está activo o deshabilitado para la compra.
 - **Configuración de factura** &ndash; Moneda basada en el país de la cuenta de facturación, información sobre la frecuencia y la fecha de facturación, la opción de recibir facturas como datos adjuntos de correo electrónico y un campo de número de pedido opcional
 - **Métodos de pago** &ndash; Muestra el método de pago principal y de copia de seguridad, si lo hay, para el perfil
-- **Cuenta de facturación** &ndash; Nombre de la cuenta de facturación a la que está relacionado el perfil. Para obtener más información acerca de las cuentas de facturación, vea [Comprender cuentas de facturación.](../manage-billing-accounts.md)
+- **Cuenta de facturación** &ndash; Nombre de la cuenta de facturación a la que está relacionado el perfil. Para obtener más información acerca de las cuentas de facturación, consulte [Comprender cuentas de facturación](../manage-billing-accounts.md).
 - **Información de contacto** &ndash; Dirección de facturación y nombre de contacto y dirección de correo electrónico
 - **Roles de perfil de facturación** &ndash; Una lista de personas a las que se asigna uno de los roles de perfil de facturación para hacer cosas para ese perfil. Por ejemplo, pagar facturas, agregar un número de PEDIDO o reemplazar el método de pago que se usa para realizar compras.
 
@@ -72,9 +70,9 @@ Cada perfil de facturación incluye la siguiente información:
 
 ## <a name="need-help-contact-support"></a>¿Necesita ayuda? Ponerse en contacto con soporte técnico
 
-Si tiene preguntas o necesita ayuda con los cargos de Azure, cree una solicitud de soporte <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">técnico con soporte técnico de Azure</a>.
+Si tiene preguntas o necesita ayuda con los cargos de Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">cree una solicitud de soporte técnico con soporte técnico de Azure</a>.
 
-Si tiene preguntas o necesita ayuda con su perfil de facturación en Centro de administración de Microsoft 365, póngase [en contacto con el soporte técnico](../../business-video/get-help-support.md).
+Si tiene preguntas o necesita ayuda con su perfil de facturación en Centro de administración de Microsoft 365, póngase [en contacto con el soporte técnico](../../admin/get-help-support.md).
 
 ## <a name="related-content"></a>Contenido relacionado
 

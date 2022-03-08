@@ -15,20 +15,20 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-- AdminSurgePortfolio
 - commerce_licensing
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 'Quite una licencia de un buzón compartido para asignarla a otro usuario o devolver la licencia para que no la pague. '
 ms.date: 05/11/2021
-ms.openlocfilehash: 89e5e3023121bb4633d7c8c1e2f92fbecc5f3e18
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 6de6f213cc0df7a216122d55ef07e270586aea12
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370565"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314803"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Quitar la licencia de un buzón compartido
 
@@ -36,14 +36,14 @@ Los buzones compartidos normalmente no requieren una licencia. Siga estas instru
 
 > [!NOTE]
 >
-> Se Exchange Online una licencia del Plan 2 en los siguientes escenarios:
+> Se Exchange Online licencia del Plan 2 en los siguientes escenarios:
 >
 > - El buzón compartido tiene más de 50 GB de almacenamiento en uso.
 > - El buzón compartido usa archivado local.
 > - El buzón compartido se coloca en retención por juicio.
 > - El buzón compartido tiene asignada una Microsoft 365 Defender de correo.
 > 
-> Para obtener instrucciones paso a paso sobre cómo asignar licencias, vea [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users). 
+> Para obtener instrucciones paso a paso sobre cómo asignar licencias, consulte [Asignar licencias a los usuarios](/microsoft-365/admin/manage/assign-licenses-to-users). 
 
 
 ## <a name="remove-the-license"></a>Quitar la licencia
@@ -65,11 +65,11 @@ Los buzones compartidos normalmente no requieren una licencia. Siga estas instru
   
 2. Seleccione el buzón compartido.
 
-3. Una de **las pestañas Licencias y Aplicaciones,** expanda **Licencias** y desactive la casilla de la licencia que desea quitar.
+3. Una de **las pestañas Licencias y Aplicaciones** , expanda **Licencias** y desactive la casilla de la licencia que desea quitar.
 
 4. Seleccione **Guardar cambios**.
 
-5. Cuando vuelva a la **página Usuarios activos,** el estado del buzón compartido será **Sin licencia.**
+5. Cuando vuelva a la **página Usuarios activos** , el estado del buzón compartido será **Sin licencia**.
 
 6. Sigue pagando por la licencia. Para dejar de pagar por ella, [quite la licencia de la suscripción](../../commerce/licenses/buy-licenses.md).
 

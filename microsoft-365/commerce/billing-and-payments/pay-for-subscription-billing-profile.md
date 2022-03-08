@@ -2,8 +2,8 @@
 title: Pagar la suscripción con un perfil de facturación
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,16 +16,16 @@ ms.collection:
 search.appverid: MET150
 description: Obtén información sobre las opciones de pago disponibles para pagar tu suscripción con un perfil de facturación.
 ms.custom:
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 ms.date: 10/29/2021
-ms.openlocfilehash: 8e7e53ae188a8b91dbe6ceb1d6db79997348e134
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 42b0852e61e81228d1094bad575e6439c3c77745
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354653"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321535"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Cómo pagar la suscripción con un perfil de facturación
 
@@ -51,7 +51,7 @@ Para poder pagar con factura, debe:
 
 Si se requiere una comprobación de crédito, recibirá una notificación cuando compre la suscripción. Si acepta que se comuniquen con usted, recibirá un correo electrónico que incluye más información sobre cómo solicitar la aprobación de crédito. Las comprobaciones de crédito suelen completarse en un plazo de dos días laborables.
 
-Si tu perfil de facturación está con el respaldo de una factura, recibes un correo electrónico cuando el extracto de facturación esté listo para ver. Este correo electrónico no contiene una copia del extracto de facturación. Sin embargo, puede elegir recibir [las facturas de su organización como datos adjuntos de correo electrónico](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). El extracto de facturación incluye información sobre las opciones de pago, además de dónde debe enviarse. Si escribe un número de pedido de compra (PO) en su perfil de facturación, el número aparecerá en el extracto de facturación. Para información sobre cómo acceder a los extractos de facturación, vea [Ver su factura](view-your-bill-or-invoice.md).
+Si tu perfil de facturación está con el respaldo de una factura, recibes un correo electrónico cuando el extracto de facturación esté listo para ver. Este correo electrónico no contiene una copia del extracto de facturación. Sin embargo, puede elegir [recibir las facturas de su organización como datos adjuntos de correo electrónico](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). El extracto de facturación incluye información sobre las opciones de pago, además de dónde debe enviarse. Si escribe un número de pedido de compra (PO) en su perfil de facturación, el número aparecerá en el extracto de facturación. Para información sobre cómo acceder a los extractos de facturación, vea [Ver su factura](view-your-bill-or-invoice.md).
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>¿Dónde envío mi cheque o pago por EFT?
 

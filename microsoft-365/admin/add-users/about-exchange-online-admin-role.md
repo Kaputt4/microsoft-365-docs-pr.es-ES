@@ -2,8 +2,8 @@
 title: Acerca del Exchange Online de administración
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -21,29 +21,29 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: Exchange administradores en línea administran el correo electrónico y los buzones de su organización. Por ejemplo, recuperan elementos eliminados en el buzón de un usuario.
-ms.openlocfilehash: f889b2c482734518d1a73802c3422c13bc5c4a59
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+description: Exchange administradores en línea administran el correo electrónico y los buzones de correo de la organización. Por ejemplo, recuperan elementos eliminados en el buzón de un usuario.
+ms.openlocfilehash: f046d9d85c677d0793d2b991736185b49f4174e9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421395"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315335"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Acerca del Exchange Online de administración
 
-Para ayudarle a administrar Microsoft 365, [](assign-admin-roles.md) puede asignar permisos a los usuarios para administrar el correo electrónico y los buzones de su organización desde el centro de administración de <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange.</a> Para ello, debe asignarlos al rol de administrador de Exchange.
+Para ayudarle a administrar Microsoft 365, puede asignar permisos a los [](assign-admin-roles.md) usuarios para administrar el correo electrónico y los buzones de la organización desde el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro Exchange administración</a>. Para ello, debe asignarlos al rol de administrador de Exchange.
   
- **Sugerencia:** Al asignar a alguien al Exchange de administración, asígnele también el rol de administrador de servicio. De esta forma, pueden ver información importante en el Centro de administración de Microsoft 365, como el estado del servicio Exchange Online, y las notificaciones de cambio y lanzamiento.
+ **Sugerencia**: Al asignar a alguien al Exchange de administración, asígnele también el rol de administrador del servicio. De esta forma, pueden ver información importante en el Centro de administración de Microsoft 365, como el estado del servicio de Exchange Online, y las notificaciones de cambio y publicación.
 
-Estas son algunas de las tareas clave que los usuarios pueden realizar cuando se les asigna el Exchange de administración:
+Estas son algunas de las tareas clave que los usuarios pueden realizar cuando se les asigna el rol Exchange de administración:
   
 - [Recuperar elementos eliminados en un buzón de usuario: ayuda para administradores](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
-- [Configurar una directiva de archivo y eliminación para buzones de su organización.](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+- [Configurar una directiva de archivo y eliminación para buzones de correo de la organización](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md).
 
 - Configure características de buzón como la directiva de uso compartido de buzones: cómo los usuarios pueden compartir información de calendario y contactos con otros usuarios externos a su organización.
 
-- Configure los[delegados](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" Enviar como " y "[Enviar en nombre](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" para el buzón de alguien. Por ejemplo, un ejecutivo podría querer que su asistente tenga la capacidad de enviar correo en su nombre.
+- Configure los delegados "[Enviar como](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" y "[Enviar en](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user) nombre" para el buzón de alguien. Por ejemplo, un ejecutivo podría querer que su asistente tenga la capacidad de enviar correo en su nombre.
 
 - [Cree un buzón compartido para](../email/create-a-shared-mailbox.md) que un grupo de personas pueda supervisar y enviar correo electrónico desde una dirección de correo electrónico común.
 

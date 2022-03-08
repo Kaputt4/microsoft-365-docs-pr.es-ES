@@ -1,7 +1,7 @@
 ---
 title: Implementar aplicaciones en dispositivos
 description: Información para agregar e implementar aplicaciones en dispositivos de Escritorio administrado de Microsoft.
-keywords: 'Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación, aplicaciones, aplicaciones de línea de negocio, aplicaciones de línea de negocio, aplicaciones de LOB'
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación, aplicaciones, aplicaciones de línea de negocio, aplicaciones de línea de negocio, aplicaciones de LOB
 ms.service: m365-md
 author: tiaraquan
 ms.localizationpriority: medium
@@ -9,15 +9,20 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
+ms.openlocfilehash: d0c8dbb71a56701cb5ca75aadb1a5bcc7290844f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323365"
 ---
-
 # <a name="deploy-apps-to-devices"></a>Implementar aplicaciones en dispositivos
 
 Parte de la incorporación a Microsoft Managed Desktop incluye agregar e implementar aplicaciones en los dispositivos del usuario. Una vez que estés usando el portal de Escritorio administrado de Microsoft, puedes agregar e implementar tus aplicaciones.
 
 El proceso general tiene este aspecto:
 
-1. [Agregar aplicaciones al portal de Escritorio](#1) administrado de Microsoft: estas aplicaciones pueden ser aplicaciones de línea de negocio (LOB) existentes o aplicaciones de Microsoft Store para Empresas que hayas sincronizado con Intune.
+1. [Agregar aplicaciones al portal de Escritorio](#1) administrado de Microsoft: estas aplicaciones pueden ser aplicaciones de línea de negocio (LOB) existentes o aplicaciones de Microsoft Store para Empresas que haya sincronizado con Intune.
 2. [Crear Azure Active Directory (AD) para la](#2) asignación de aplicaciones: usarás estos grupos para administrar la asignación de aplicaciones.
 3. [Asignar aplicaciones a los usuarios](#3).
 
@@ -35,7 +40,7 @@ Puedes agregar las aplicaciones de línea de negocio (LOB) al portal de escritor
 
 En este procedimiento, seleccionarás el tipo de aplicación que quieres agregar y, a continuación, configurarás y cargarás el origen de la aplicación.
 
-**Para agregar la aplicación de LOB o Windows aplicación al portal de Escritorio administrado de Microsoft:**
+**Para agregar la aplicación lob o la Windows aplicación al portal de escritorio administrado de Microsoft:**
 
 Puede iniciar sesión en el portal de Escritorio administrado de Microsoft o iniciar sesión en Intune y, a continuación, buscar Escritorio administrado de Microsoft. A continuación, mostraremos el inicio de sesión en el portal de Escritorio administrado de Microsoft:
 
@@ -43,7 +48,7 @@ Puede iniciar sesión en el portal de Escritorio administrado de Microsoft o ini
 2. En **Inventario**, selecciona **Aplicaciones**.
 3. En la sección Carga de trabajo aplicaciones, seleccione **Agregar**.
 4. En **Agregar aplicación**, selecciona **Aplicación de línea de negocio** **o Windows aplicación (Win32)**.
-    - Si **seleccionaste** Aplicación de línea de negocio, consulta Agregar una aplicación de línea de negocio Windows a [Microsoft Intune](/intune/lob-apps-windows) para obtener instrucciones sobre cómo agregar y configurar aplicaciones de línea de negocio.
+    - Si has seleccionado **Aplicación** de línea de negocio, consulta Agregar una aplicación de línea de negocio Windows [a Microsoft Intune](/intune/lob-apps-windows) para obtener instrucciones sobre cómo agregar y configurar aplicaciones de línea de negocio.
     - Si **seleccionaste Windows aplicación (Win32),** consulta Administración de aplicaciones de [Win32](/intune/apps-win32-app-management) para obtener instrucciones sobre cómo agregar y configurar Windows aplicaciones.
 
 <span id="msfb-apps">
@@ -58,7 +63,7 @@ Si no te has registrado con Microsoft Store para Empresas, puedes registrarte cu
 2. Selecciona **Comprar para mi grupo**.
 3. Usa Buscar para buscar la aplicación que quieras y selecciona la aplicación.
 4. En los detalles del producto, selecciona **Obtener la aplicación**.
-Microsoft Store agrega la aplicación a **Tus productos** para tu organización.
+Microsoft Store agrega la aplicación a **Los productos** de la organización.
 
 **Para comprobar que una sincronización entre Intune y Microsoft Store para Empresas está activa:**
 
@@ -69,10 +74,10 @@ Microsoft Store agrega la aplicación a **Tus productos** para tu organización.
 
 **Para forzar una sincronización entre Intune y Microsoft Store para Empresas:**
 
-1. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Seleccione **Administración de inquilinos**, **después Conectores y tokens** y, a continuación **, Microsoft Store para Empresas**.
+1. Inicie sesión en el [Centro de administración del Administrador de puntos de conexión de Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Seleccione **Administración de inquilinos**, después **Conectores y tokens** y, a continuación **, Microsoft Store para Empresas**.
 3. Selecciona **Habilitado** para **habilitar Microsoft Store para Empresas sincronización te permite acceder a aplicaciones compradas por volumen con Intune.**
-4. Selecciona el idioma que prefieras y, a continuación, selecciona Sincronizar para obtener las aplicaciones que has comprado del Microsoft Store en Intune.
+4. Selecciona tu idioma preferido y, a continuación, selecciona **Sincronizar** para obtener las aplicaciones que has comprado del Microsoft Store en Intune.
 
 <span id="2" />
 
@@ -82,7 +87,7 @@ Crea tres Azure AD para cada aplicación. En esta tabla se describen los grupos 
 
 Tipo de asignación de aplicaciones | Uso en grupo | Nombre Azure AD ejemplo |
 --- | --- | --- |
-Disponible |  La aplicación estará disponible desde Portal de empresa o sitio web. | MMD– *nombre de la aplicación* : disponible |
+Disponible |  La aplicación estará disponible desde Portal de empresa aplicación o sitio web. | MMD– *nombre de la aplicación* : disponible |
 Obligatorio |  La aplicación se instala en dispositivos de los grupos seleccionados. | MMD– *nombre de la aplicación* : obligatorio |
 Desinstalar |  La aplicación se desinstala de los dispositivos de los grupos seleccionados. | MMD : *nombre de la aplicación* : desinstalar |
 
@@ -112,7 +117,7 @@ Agregue los usuarios a estos grupos a:
 1. Implementar y asignar el [Portal de empresa de Intune](company-portal.md).
 1. [Asignar las licencias](assign-licenses.md).
 1. Implementar aplicaciones (en este artículo).
-1. [Configurar los dispositivos](set-up-devices.md).
+1. [Preparar dispositivos](prepare-devices.md).
 1. Configurar la [experiencia de primera ejecución con el Autopilot y la página de estado de inscripción](esp-first-run.md).
 1. [Habilitar las características de soporte técnico para el usuario](enable-support.md).
 1. [Preparar a los usuarios para que usen los dispositivos](get-started-devices.md).

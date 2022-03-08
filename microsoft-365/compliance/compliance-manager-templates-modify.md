@@ -2,8 +2,8 @@
 title: Modificar plantillas de evaluación en Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo modificar plantillas de evaluación en Microsoft Compliance Manager.
-ms.openlocfilehash: 539da4118843e8d72ead07b06a351d2245c2f6d9
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: d409c21d31c909e7e6a59c308c7087e26ec78e24
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335471"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320569"
 ---
 # <a name="modify-assessment-templates-in-microsoft-compliance-manager"></a>Modificar plantillas de evaluación en Microsoft Compliance Manager
 
-Al trabajar con evaluaciones en el Administrador de cumplimiento, es posible que desee modificar una plantilla de evaluación que haya creado. El proceso es similar al proceso [de](compliance-manager-templates-create.md) creación de plantillas en el que se cargará un archivo Excel con los datos de la plantilla.
+Al trabajar con evaluaciones en el Administrador de cumplimiento, es posible que desee modificar una plantilla de evaluación que haya creado. El proceso es similar al proceso [de](compliance-manager-templates-create.md) creación de plantillas en el que cargará un archivo Excel con los datos de la plantilla.
 
 Sin embargo, hay detalles que debe tener en cuenta a medida que se da formato al archivo con cambios en los datos de plantilla existentes. **Te recomendamos que revises estas instrucciones cuidadosamente para asegurarte de que no sobrescriba los datos existentes que quieras conservar.**
 
@@ -35,7 +35,7 @@ Para obtener más información sobre el formato de esta hoja de cálculo, consul
 
 ## <a name="format-your-excel-file-to-modify-an-existing-template"></a>Dar formato Excel archivo para modificar una plantilla existente
 
-En la **página plantillas de** evaluación, seleccione la plantilla que desea   modificar, que mostrará su página de detalles. A **continuación, seleccione Exportar a Excel**. Se descargará Excel archivo con todos los datos de la plantilla. Guarde el archivo en el equipo local.
+En  **yourassessment templatespage** , seleccione la plantilla que desea modificar, que mostrará su página de detalles. A continuación **, seleccioneExportar para Excel**. Se descargará Excel archivo con todos los datos de la plantilla. Guarde el archivo en el equipo local.
 
 Para trabajar con este archivo, vaya a una sección siguiente para encontrar rápidamente las instrucciones que necesita:
 
@@ -53,7 +53,7 @@ En la **pestaña** Plantillas, puede editar cualquier elemento de la columna **d
 ### <a name="add-an-improvement-action"></a>Agregar una acción de mejora
 
 1. Vaya a la **pestaña** Acciones. Agregue la información en los campos necesarios en la primera fila vacía debajo de las acciones existentes.
-2. Vaya a la **pestaña ControlFamily.** Busque la fila que contiene el control al que se asigna la acción de mejora. Agregue la nueva acción a la **columna controlActionTitle** de esa fila (recuerde separar varias acciones en este campo con dos puntos y comas, sin espacio entre).
+2. Vaya a la **pestaña ControlFamily** . Busque la fila que contiene el control al que se asigna la acción de mejora. Agregue la nueva acción a la **columna controlActionTitle** de esa fila (recuerde separar varias acciones en este campo con dos puntos y comas, sin espacio entre).
 3. Guarde la hoja de cálculo.
 
 ### <a name="edit-an-improvement-actions-information"></a>Editar la información de una acción de mejora
@@ -77,7 +77,7 @@ Tenga en cuenta que los títulos de acción, tanto para las acciones de mejora c
 
 Para quitar una acción de mejora de una plantilla, tendrás que quitarla de cada control que haga referencia a ella. Siga los pasos siguientes para modificar la hoja de cálculo:
 
-1. En la **pestaña ControlFamily,** busque el título de la acción de mejora que desea quitar.
+1. En la **pestaña ControlFamily** , busque el título de la acción de mejora que desea quitar.
 2. Elimine el título de la acción de mejora en las celdas donde aparece. Si la acción de mejora es la única acción de esa fila, elimine toda la fila (que quita el control).
 3. En la **pestaña** Acciones, elimine la fila que contiene la acción de mejora que está eliminando.
 4. Guarde la hoja de cálculo.
@@ -90,7 +90,7 @@ Quitar una acción de mejora de una plantilla no quita completamente la acción 
 
 Para quitar un control, modifique la hoja de cálculo siguiendo los pasos siguientes y vuelva a importar la hoja de cálculo:
 
-1. En la **pestaña ControlFamily,** busque el control que desea quitar en la **columna controlName.**
+1. En la **pestaña ControlFamily** , busque el control que desea quitar en la **columna controlName** .
 2. Elimine la fila de ese control.
     - Si este control eliminado contiene acciones de mejora a las que ningún otro control hace referencia, deberá quitar esas acciones de mejora de la **pestaña** Acciones. De lo contrario, recibirá un error de validación.
 
@@ -103,7 +103,7 @@ Al volver a importar la hoja de cálculo a la plantilla, el control se quitará 
 Después de Excel y guardado el archivo, siga estos pasos.
 
 1. Vuelva a abrir la página de la plantilla de evaluación y seleccione la plantilla. En la página de detalles de la plantilla, seleccione **Modificar plantilla** para iniciar el asistente de modificación.
-2. En la **Upload de archivos,** seleccione **Examinar** para buscar y cargar el Excel archivo.
+2. En la **pantalla Upload archivo**, seleccione **Examinar para** buscar y cargar el Excel archivo.
 3. Si no hay ningún problema con el archivo, en la siguiente pantalla se muestra el nombre del archivo cargado. Seleccione **Siguiente** para continuar (si necesita cambiar el archivo, **seleccione Upload otro archivo**).
     - Si hay un problema con el archivo, un mensaje de error en la parte superior explica lo que está mal. Tendrás que corregir el archivo y cargarlo de nuevo. Los errores se producen si la hoja de cálculo tiene un formato incorrecto o si hay información no válida en determinados campos.
 

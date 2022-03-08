@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo administrar conjuntos de revisión para que pueda analizar, consultar, ver, etiquetar y exportar datos en un Advanced eDiscovery caso.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 16c6e8aa5f3cf278b90ab7fd338bcac203b7489a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a3aa836782dd464be2e62ca729efd85484c8aebf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206102"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315615"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Administrar conjuntos de revisión en Advanced eDiscovery
 
@@ -40,7 +40,7 @@ Los conjuntos de revisión son un conjunto estático de documentos donde puede a
 
 ## <a name="create-a-review-set"></a>Crear un conjunto de revisión
 
-Los conjuntos de revisión se pueden crear en la **pestaña Conjuntos de revisión** haciendo clic **en + Agregar conjunto de revisión.**
+Los conjuntos de revisión se pueden crear en la **pestaña Conjuntos de revisión** haciendo clic **en + Agregar conjunto de revisión**.
 
 ![Agregar conjunto de revisión.](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
@@ -57,3 +57,6 @@ Hay tres formas diferentes de agregar datos a un conjunto de revisión en un Adv
 2. [Cargar datos que no son de Microsoft 365 en un conjunto de revisión](load-non-Office-365-data-into-a-review-set.md)
 
 3. [Agregar datos a un conjunto de revisión desde otro conjunto de revisión](add-data-to-review-set-from-another-review-set.md)
+
+> [!NOTE]
+> No puede eliminar elementos de un conjunto de revisión y no puede eliminar conjuntos de revisión de un caso. Para eliminar un conjunto de revisión (y eliminar los datos en él), debe eliminar el Advanced eDiscovery caso en el que se encuentra el conjunto de revisión. Para más información, consulte [Cerrar o eliminar un caso de eDiscovery avanzado](close-or-delete-case.md).

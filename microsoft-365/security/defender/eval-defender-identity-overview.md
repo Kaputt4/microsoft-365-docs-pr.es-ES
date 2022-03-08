@@ -1,5 +1,5 @@
 ---
-title: Evaluar Microsoft 365 Defender información general sobre la identidad, configurar la evaluación
+title: Paso 2. Evaluar Microsoft 365 Defender información general sobre la identidad y configurar la evaluación
 description: Pasos para la evaluación de Microsoft 365 Defender identidad, incluidos los requisitos, habilitar o activar la eval y configurar el piloto o la prueba.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -22,20 +22,20 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 77ccebb394230c38140bc8cd62c97262ff1ddf7a
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 37b387d1e38ca3e49406773820a63a6e0d239356
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171807"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311583"
 ---
-# <a name="evaluate-microsoft-defender-for-identity-overview"></a>Evaluación de Información general sobre identidades de Microsoft Defender
+# <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>Paso 2. Evaluación de Información general sobre identidades de Microsoft Defender
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-En este artículo se describe el proceso para habilitar y pilotar Microsoft Defender for Identity. Antes de iniciar este proceso, asegúrese de que [](eval-overview.md) ha revisado el proceso general para evaluar Microsoft 365 Defender y ha creado el entorno [Microsoft 365 Defender evaluación](eval-create-eval-environment.md). 
+En este artículo se describe el proceso para habilitar y pilotar Microsoft Defender for Identity. Antes de iniciar este proceso, asegúrese de haber revisado el proceso general para evaluar Microsoft 365 Defender [](eval-overview.md) y de haber creado el entorno [Microsoft 365 Defender evaluación.](eval-create-eval-environment.md) 
 <br>
 
 Siga estos pasos para habilitar y pilotar Microsoft Defender para Identity.

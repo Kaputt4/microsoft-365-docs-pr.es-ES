@@ -13,23 +13,21 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6b345eb898b84de9f15772e11fdc92e1af5dde6a
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ab6a23d1f2c8893a86fb6432ab9fece95a10006c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167015"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322889"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>Comprender el informe HTML del analizador de cliente
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 El analizador de cliente genera un informe en formato HTML. Obtenga información sobre cómo revisar el informe para identificar posibles problemas del sensor para que pueda solucionarlos.
 
@@ -55,7 +53,7 @@ Use el siguiente ejemplo para comprender el informe.
 
 ## <a name="open-a-support-ticket-to-microsoft-and-include-the-analyzer-results"></a>Abrir un vale de soporte técnico a Microsoft e incluir los resultados del analizador
 
-Para incluir archivos de resultados del analizador [al abrir un vale](contact-support.md#open-a-service-request)de soporte técnico, asegúrese de usar la sección **Datos** adjuntos e incluir el `MDEClientAnalyzerResult.zip` archivo:
+Para incluir archivos de resultados [del analizador al abrir un vale de soporte](contact-support.md#open-a-service-request) técnico, asegúrese de usar la sección **Datos** adjuntos e incluir el `MDEClientAnalyzerResult.zip` archivo:
 
 ![Imagen del símbolo del sistema de datos adjuntos.](images/508c189656c3deb3b239daf811e33741.png)
 

@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: En este artículo, aprenderá a agregar ubicaciones de satélite y a configurar su espacio empresarial de Microsoft 365 Multi-Geo
-ms.openlocfilehash: 232791705dacfa9442304434559b67a4b01ca7dd
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: 9842ff2295a64f544940f579d732c688735ae341
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818257"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312087"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Configuración de inquilino de Microsoft 365 Multi-Geo
 
@@ -44,17 +44,15 @@ Debe añadir una ubicación satélite para cada ubicación geográfica donde qui
 
 Para agregar una ubicación de satélite
 
-1. Abra el Centro de administración de SharePoint.
+1. Abra el Centro de administración de SharePoint. y vaya a <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">**Ubicaciones geográficas**</a>.
 
-2. Navegue a la pestaña **Geo locations** (Ubicaciones geográficas).
+1. Seleccione **Agregar ubicación**.
 
-3. Haga clic en **Agregar ubicación**.
+1. Seleccione la ubicación que desea agregar y, a continuación, seleccione **Siguiente**.
 
-4. Seleccione la ubicación que quiere agregar y haga clic en **Siguiente**.
+1. Escriba el dominio que desea usar con la ubicación geográfica y, a continuación, seleccione **Agregar**.
 
-5. Escriba el dominio que quiere usar con la ubicación geográfica y haga clic en **Agregar**.
-
-6. Haga clic en **Cerrar**.
+1. Seleccione **Cerrar**.
 
 El aprovisionamiento puede tardar desde unas horas hasta 72 horas, dependiendo del tamaño del espacio empresarial. Una vez completado el aprovisionamiento de una ubicación por satélite, recibirá un correo electrónico de confirmación. Cuando la nueva ubicación geográfica aparezca en azul en el mapa de la pestaña **Ubicaciones geográficas** del Centro de administración de OneDrive, podrá proceder a establecer la ubicación de datos preferida de los usuarios a esa ubicación geográfica. 
 
@@ -106,7 +104,7 @@ Los procedimientos de esta sección requieren el [Módulo de Microsoft Azure Act
 Se recomienda incluir el establecimiento de la ubicación de datos preferida del usuario como parte del flujo de trabajo de creación de usuarios estándar.
 
 > [!IMPORTANT]
-> Para los nuevos usuarios sin OneDrive aprovisionados, licencia la cuenta y espera al menos 48 horas después de que se establezca la PDL de un usuario para que los cambios se propaguen antes de que el usuario inicie sesión en OneDrive. (El establecimiento de la PDL antes de que el usuario inicie sesión para aprovisionar OneDrive para la Empresa garantiza que la nueva instancia de OneDrive del usuario se aprovisionará en la ubicación correcta).
+> Para usuarios nuevos sin OneDrive aprovisionado, licencia la cuenta y espera al menos 48 horas después de que se establezca la PDL de un usuario para que los cambios se propaguen antes de que el usuario inicie sesión en OneDrive. (El establecimiento de la PDL antes de que el usuario inicie sesión para aprovisionar OneDrive para la Empresa garantiza que la nueva instancia de OneDrive del usuario se aprovisionará en la ubicación correcta).
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>Aprovisionamiento de OneDrive y efecto de la PDL
 

@@ -16,16 +16,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los límites de casos, los límites de indización y los límites de búsqueda en vigor para la solución Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: c07d53766a0542ebf9fd7753a211a305515e8444
-ms.sourcegitcommit: df1ad7118c4a95a310a4f17124322a6ae6ace26f
+ms.openlocfilehash: fc658f4502bf510cf34297435db75bd7cdd7c136
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "60268687"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316204"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Límites de eDiscovery avanzado
 
-En este artículo se describen los límites de la solución Advanced eDiscovery en Microsoft 365.
+En este artículo se describen los límites de la Advanced eDiscovery solución en Microsoft 365.
 
 ## <a name="case-and-review-set-limits"></a>Límites de conjunto de casos y revisión
 
@@ -34,25 +34,25 @@ En la tabla siguiente se enumeran los límites de los casos y los conjuntos de r
 | Descripción del límite | Límite |
 |:-----|:-----|
 |Número total de documentos que se pueden agregar a un caso (para todos los conjuntos de revisión de un caso).  <br/> |3 millones <br/> |
-|Tamaño total del archivo por conjunto de carga. Esto incluye la carga de Office 365 en un conjunto de revisión.  <br/> |300 GB <br/> |
+|Tamaño total del archivo por conjunto de carga. Esto incluye la carga sin Office 365 en un conjunto de revisión.  <br/> |300 GB <br/> |
 |Cantidad total de datos cargados en todos los conjuntos de revisión de la organización por día.<br/> |2 TB <br/> |
 |Número máximo de conjuntos de carga por caso.  <br/> |200 <br/> |
 |Número máximo de conjuntos de revisión por caso.  <br/> |20 <br/> |
 |Número máximo de grupos de etiquetas por caso.  <br/> |1,000 |
-|Número máximo de etiquetas únicas por caso. <br/> |1.000<sup>6</sup> |
-|Trabajos simultáneos máximos en la organización para agregar contenido a un conjunto de revisión. Estos trabajos se **denominan Agregar datos a un conjunto** de revisión y se muestran en la **pestaña** Trabajos en un caso.| 10<sup>4</sup> |
+|Número máximo de etiquetas únicas por caso. <br/> |1.0001<sup></sup> |
+|Trabajos simultáneos máximos en la organización para agregar contenido a un conjunto de revisión. Estos trabajos se **denominan Agregar datos a un conjunto** de revisión y se muestran en la **pestaña** Trabajos en un caso.| <sup>102</sup> |
 |Trabajos simultáneos máximos para agregar contenido a un conjunto de opiniones por usuario. Estos trabajos se **denominan Agregar datos a un conjunto** de revisión y se muestran en la **pestaña** Trabajos en un caso. | 3 |
 |||
 
 ## <a name="hold-limits"></a>Límites de retención
 
-En la tabla siguiente se enumeran los límites para las retenciones asociadas con un Advanced eDiscovery caso.
+En la tabla siguiente se enumeran los límites para las retenciones asociadas a Advanced eDiscovery caso.
 
 | Descripción del límite | Límite |
 |:-----|:-----|
-|Número máximo de retenciones de casos para una organización. Este límite incluye el total combinado de retenciones en la exhibición de documentos electrónicos principales y Advanced eDiscovery casos. <br/> |10,000  <br/> |
+|Número máximo de directivas de retención para una organización. Este límite incluye el total combinado de directivas de retención en la exhibición de documentos electrónicos principales y Advanced eDiscovery casos. <br/> |10.0003<sup></sup>  <br/> |
 |Número máximo de buzones en una única retención de casos. Este límite incluye el total combinado de buzones de usuario y los buzones asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos. <br/> |1,000  <br/> |
-|Número máximo de sitios en una única retención de casos. Este límite incluye el total combinado de sitios OneDrive para la Empresa, SharePoint y los sitios asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos.  <br/> |100  <br/> |
+|Número máximo de sitios en una única retención de casos. Este límite incluye el total combinado de sitios OneDrive para la Empresa, sitios SharePoint y los sitios asociados con grupos de Microsoft 365, Microsoft Teams y Yammer grupos.  <br/> |100  <br/> |
 
 ## <a name="indexing-limits"></a>Límites de indexación
 
@@ -60,30 +60,30 @@ En la tabla siguiente se enumeran los límites de indización en Advanced eDisco
 
 | Descripción del límite | Límite |
 |:-----|:-----|
-|Número máximo de caracteres extraídos de un único archivo.  <br/> |10 millones<sup>1</sup> <br/> |
-|Tamaño máximo de un solo archivo.   <br/> |150 MB<sup>1</sup> <br/> |
-|Profundidad máxima de los elementos incrustados en un documento.  <br/> |25<sup>1</sup> <br/> |
-|Tamaño máximo de los archivos procesados por reconocimiento óptico de caracteres (OCR).  <br/> |24 MB<sup>1</sup> <br/>  
+|Número máximo de caracteres extraídos de un único archivo.  <br/> |10 <sup>millones4</sup> <br/> |
+|Tamaño máximo de un solo archivo.   <br/> |150 <sup>MB4</sup> <br/> |
+|Profundidad máxima de los elementos incrustados en un documento.  <br/> |<sup>254</sup> <br/> |
+|Tamaño máximo de los archivos procesados por reconocimiento óptico de caracteres (OCR).  <br/> |24 <sup>MB4</sup> <br/>  
 |||
 
 ## <a name="search-limits"></a>Límites de búsqueda
 
-Los límites descritos en esta sección están relacionados con el uso de la herramienta de búsqueda en la pestaña **Búsquedas** para recopilar datos de un caso. Para obtener más información, vea [Recopilar datos para un caso en Advanced eDiscovery](collecting-data-for-ediscovery.md).
+Los límites descritos en esta sección están relacionados con el uso de la herramienta de búsqueda en la **pestaña Búsquedas** para recopilar datos de un caso. Para obtener más información, vea [Recopilar datos para un caso en Advanced eDiscovery](collecting-data-for-ediscovery.md).
 
 | Descripción del límite | Límite |
 |:-----|:-----|
 |Número máximo de buzones o sitios que se pueden buscar en una sola búsqueda. |Sin límite|
 |Número máximo de búsquedas que se pueden ejecutar al mismo tiempo. |Sin límite |
 |Número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo. |10 | 
-|Número máximo de caracteres para una consulta de búsqueda (incluidos los operadores y las condiciones). |10 000<sup>2</sup>|
-|Número máximo de caracteres para una consulta de búsqueda para SharePoint y OneDrive para la Empresa (incluidos los operadores y las condiciones). |10,000<br>4.000 con caracteres comodín<sup>2</sup>|
-|Número mínimo de caracteres alfa para caracteres comodín de prefijo; por ejemplo, **un \* *_ o _* set \***.|3 |  
-|Variantes máximas devueltas cuando se usa el carácter comodín de prefijo para buscar una frase exacta o cuando se usa un prefijo comodín y el **operador booleano NEAR.** |10 000<sup>3</sup>|
+|Número máximo de caracteres para una consulta de búsqueda (incluidos los operadores y las condiciones). |10.0005<sup></sup>|
+|Número máximo de caracteres para una consulta de búsqueda para SharePoint y OneDrive para la Empresa (incluidos los operadores y condiciones). |10,000<br>4.000 con caracteres <sup>comodín5</sup>|
+|Número mínimo de caracteres alfa para caracteres comodín de prefijo; por ejemplo, **one\**_ o _* set\***.|3 |  
+|Variantes máximas devueltas cuando se usa el carácter comodín de prefijo para buscar una frase exacta o cuando se usa un prefijo comodín y el **operador booleano NEAR** . |10.0006<sup></sup>|
 |Número máximo de elementos por buzón de usuario que se muestran en la página de vista previa para las búsquedas. Se muestran los elementos más recientes. |100|
 |Número máximo de elementos de todos los buzones que se muestran en la página de vista previa para las búsquedas.|1,000|
 |Número máximo de buzones que se pueden obtener una vista previa de los resultados de la búsqueda.  Si hay más de 1.000 buzones que contienen elementos que coinciden con la consulta de búsqueda, solo los 1.000 buzones con más resultados están disponibles para la vista previa.|1,000|
 |Número máximo de elementos de los sitios SharePoint y OneDrive para la Empresa que se muestran en la página de vista previa para las búsquedas. Se muestran los elementos más recientes. |200|
-|Número máximo de SharePoint y OneDrive para la Empresa que se pueden obtener una vista previa de los resultados de búsqueda. Si hay más de 200 sitios que contienen elementos que coinciden con la consulta de búsqueda, solo los 200 sitios principales con más resultados están disponibles para la vista previa.|200|
+|Número máximo de SharePoint y OneDrive para la Empresa que se pueden obtener una vista previa de los resultados de la búsqueda. Si hay más de 200 sitios que contienen elementos que coinciden con la consulta de búsqueda, solo los 200 sitios principales con más resultados están disponibles para la vista previa.|200|
 |Número máximo de elementos por buzón de carpetas públicas que se muestran en la página de vista previa para las búsquedas. |100|
 |Número máximo de elementos encontrados en todos los elementos de buzón de carpetas públicas que se muestran en la página de vista previa para las búsquedas. |200|
 |Número máximo de buzones de carpetas públicas que se pueden obtener una vista previa de los resultados de búsqueda. Si hay más de 500 buzones de carpetas públicas que contienen elementos que coinciden con la consulta de búsqueda, solo los 500 buzones principales con más resultados están disponibles para la vista previa.|500|
@@ -124,26 +124,26 @@ Los límites descritos en esta sección están relacionados con la exportación 
 
 | Descripción del límite | Límite |
 |:-----|:-----|
-|Tamaño total del archivo o número máximo de documentos descargados de un conjunto de revisión.  <br/> |3 MB o 50 documentos<sup>5</sup>|
+|Tamaño total del archivo o número máximo de documentos descargados de un conjunto de revisión.  <br/> |3 MB o 50 <sup>documentos7</sup>|
 |||
 
-<br/>
-<br/>
+## <a name="notes"></a>Notas
 
 > [!NOTE]
-> <sup>1</sup> Cualquier elemento que supere un único límite de archivo se mostrará como un error de procesamiento.
+> <sup>1</sup> Este es el número máximo de etiquetas que puede crear en un caso. Este límite no está relacionado con el número de documentos que se pueden etiquetar.
 >
-> <sup>2</sup> Al buscar SharePoint y OneDrive para la Empresa, los caracteres de las direcciones URL de los sitios que se buscan cuentan con este límite. El número total de caracteres consta de:<br>
+> <sup>2</sup> Este límite se comparte con la exportación de contenido en otras herramientas de exhibición de documentos electrónicos. Esto significa que las exportaciones simultáneas en búsqueda de contenido y exhibición de documentos electrónicos principales (y agregar contenido para revisar conjuntos en Advanced eDiscovery) se aplican a este límite.
+>
+> <sup>3</sup> Cuando pone más de 1.000 buzones o 100 sitios en espera en una única directiva de retención, el sistema escalará automáticamente la retención según sea necesario. Esto significa que el sistema agregará automáticamente ubicaciones de datos a varias directivas de retención, en lugar de agregarlas a una sola directiva de retención. Sin embargo, todavía se aplica el límite de 10 000 directivas de retención de casos por organización.
+>
+> <sup>4</sup> Cualquier elemento que supere un único límite de archivo se mostrará como un error de procesamiento.
+>
+> <sup>5</sup> Al buscar SharePoint y OneDrive para la Empresa, los caracteres de las direcciones URL de los sitios que se buscan cuentan con este límite. El número total de caracteres consta de:<br>
 > - Todos los caracteres de los campos Usuarios y Filtros.
 > - Todos los filtros de permisos de búsqueda que se aplican al usuario.
 > - Los caracteres de cualquier propiedad de ubicación de la búsqueda; Esto incluye ExchangeLocation,PublicFolderLocation,SharPointLocation,ExchangeLocationExclusion,PublicFolderLocationExclusion,SharePointLocationExclusion, OneDriveLocationExclusion.
 >   Por ejemplo, incluir todos los sitios SharePoint y las cuentas de OneDrive en la búsqueda contarán como seis caracteres, ya que la palabra "ALL" aparecerá para el campo SharePointLocation y OneDriveLocation.
 >
-> <sup>3</sup> Para consultas que no son de frase (un valor de palabra clave que no usa comillas dobles) usamos un índice de prefijo especial. Esto nos indica que una palabra se produce en un documento, pero no donde se produce en el documento. Para realizar una consulta de frase (un valor de palabra clave con comillas dobles), debemos comparar la posición dentro del documento para las palabras de la frase. Esto significa que no podemos usar el índice de prefijo para las consultas de frases. En este caso, expandemos internamente la consulta con todas las palabras posibles a las que se expande el prefijo; por ejemplo, **time \* *_ puede expandirse a _*"time OR timer OR times OR timex OR timeboxed OR ..."**. El límite de 10 000 es el número máximo de variantes a las que se puede expandir la palabra, no el número de documentos que coinciden con la consulta. Para los términos que no son frases no hay ningún límite superior.
+> <sup>6</sup> Para consultas que no son de frase (un valor de palabra clave que no usa comillas dobles) se usa un índice de prefijo especial. Esto nos indica que una palabra se produce en un documento, pero no donde se produce en el documento. Para realizar una consulta de frase (un valor de palabra clave con comillas dobles), debemos comparar la posición dentro del documento para las palabras de la frase. Esto significa que no podemos usar el índice de prefijo para las consultas de frases. En este caso, expandemos internamente la consulta con todas las palabras posibles a las que se expande el prefijo; por ejemplo,  **time\**_ puede expandirse a _*"time OR timer OR times OR timex OR timeboxed OR ..."**. El límite de 10 000 es el número máximo de variantes a las que se puede expandir la palabra, no el número de documentos que coinciden con la consulta. Para los términos que no son frases no hay ningún límite superior.
 >
-> <sup>4</sup> Este límite se comparte con la exportación de contenido en otras herramientas de exhibición de documentos electrónicos. Esto significa que las exportaciones simultáneas en búsqueda de contenido y exhibición de documentos electrónicos principales (y agregar contenido para revisar conjuntos en Advanced eDiscovery) se aplican a este límite.
->
-> <sup>5</sup> Este límite se aplica a la descarga de documentos seleccionados de un conjunto de opiniones. No se aplica a la exportación de documentos de un conjunto de revisión. Para obtener más información acerca de la descarga y exportación de documentos, vea [Export case data in Advanced eDiscovery](exporting-data-ediscover20.md).
->
-> <sup>6</sup> Este es el número máximo de etiquetas que puede crear en un caso. Este límite no está relacionado con el número de documentos que se pueden etiquetar.
->
+> <sup>7</sup> Este límite se aplica a la descarga de documentos seleccionados de un conjunto de opiniones. No se aplica a la exportación de documentos de un conjunto de revisión. Para obtener más información acerca de la descarga y exportación de documentos, vea [Exportar datos de casos en Advanced eDiscovery](exporting-data-ediscover20.md).

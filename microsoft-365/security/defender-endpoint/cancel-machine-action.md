@@ -14,18 +14,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 86adc16c5e275daf371c98c7a9709df4977025e8
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: fc4191043e19df7fea4f350d85acd78d2eca1551
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302163"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322917"
 ---
 # <a name="cancel-machine-action-api"></a>Cancelar API de acción de máquina
 
@@ -45,7 +43,7 @@ ms.locfileid: "61302163"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Cancelar una acción de máquina iniciada que aún no está en estado final (completada, cancelada, con errores).
+Cancelar una acción de máquina ya iniciada que aún no está en estado final (completada, cancelada, fallida).
 
 ## <a name="limitations"></a>Limitaciones
 
@@ -53,7 +51,7 @@ Cancelar una acción de máquina iniciada que aún no está en estado final (com
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Get started](apis-intro.md).
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Introducción](apis-intro.md).
 
 |Tipo de permiso|Permiso|Nombre para mostrar de permisos|
 |---|---|---|
@@ -70,12 +68,12 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 |Nombre|Tipo|Descripción|
 |---|---|---|
-|Authorization|String|{token} de portador. Obligatorio.|
+|Authorization|Cadena|{token} de portador. Obligatorio.|
 |Content-Type|string|application/json. Obligatorio.|
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
-|Parámetro|Tipo|Description|
+|Parámetro|Tipo|Descripción|
 |---|---|---|
 |Comentario|Cadena|Comentario para asociarlo con la acción de cancelación.|
 

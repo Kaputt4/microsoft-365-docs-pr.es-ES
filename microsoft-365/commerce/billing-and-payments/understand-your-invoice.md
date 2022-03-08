@@ -1,14 +1,12 @@
 ---
 title: Entender su factura o recibo
-f1.keywords:
-- CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - MACBillingBillsPaymentsInvoices
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -16,19 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: Obtenga información acerca de cómo leer y comprender su factura o recibo de productos empresariales de Microsoft.
-keywords: cuentas de facturación, información de la organización, facturas
 ms.date: 05/04/2021
-ms.openlocfilehash: 3f6eaef9e26578f759a64fdf55dfeb6882be2458
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: ce057a9a3fc72ab1ba818047112451f984894d99
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371273"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315811"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Entender su factura o recibo
 
@@ -154,6 +151,6 @@ Si tiene preguntas o necesita ayuda con su factura en el Centro de administraci�
 ## <a name="related-content"></a>Contenido relacionado
 
 [Conozca su factura o recibo por la compra de Microsoft 365 para Empresas](understand-your-invoice2.md) (artículo)\
-[Seguimiento del saldo de crédito de Azure del](/azure/billing/billing-mca-check-azure-credits-balance) contrato de cliente de Microsoft (artículo)\
+[Seguimiento del saldo de crédito de Azure del contrato de cliente de Microsoft](/azure/billing/billing-mca-check-azure-credits-balance) (artículo)\
 [Revisar la factura del contrato de cliente de Microsoft](/azure/cost-management-billing/understand/review-customer-agreement-bill) (artículo)\
 [Introducción a la cuenta de facturación del Contrato de cliente de Microsoft](/azure/billing/billing-mca-overview) (artículo)

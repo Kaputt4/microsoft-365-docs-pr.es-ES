@@ -17,12 +17,12 @@ ms.topic: how-to
 ms.collection: m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: ec961261c798075e0e38b08a8c8952ca5c51b07b
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 9f5d721148bdbd70347868d8e237a8454b33c346
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766697"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312101"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -42,7 +42,7 @@ Características de reducción de superficie de ataque en Windows versiones
 
 Puedes establecer reglas de reducción de superficie de ataque para dispositivos que ejecutan cualquiera de las siguientes ediciones y versiones de Windows:
 
-- Windows 10 Pro versión [1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
+- Windows 10 Pro, [versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
 - Windows 10 Enterprise versión [1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
 - Windows server, [versión 1803 (canal semianual)](/windows-server/get-started/whats-new-in-windows-server-1803) o posterior
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
@@ -68,10 +68,10 @@ Cada regla ASR contiene una de cuatro opciones:
 > [!IMPORTANT]
 > Actualmente, el modo de advertencia no es compatible con tres reglas ASR al configurar reglas ASR en Microsoft Endpoint Manager (MEM). Para obtener más información, consulta [Casos en los que no se admite el modo de advertencia](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported).
 
-Se recomienda usar reglas ASR con una licencia de E5 de Windows (o SKU de licencia similar) para aprovechar las capacidades avanzadas de supervisión e informes disponibles en [Microsoft Defender para](microsoft-defender-endpoint.md) endpoint (Defender para endpoint). Sin embargo, si tiene otra licencia, como Windows Professional o Windows E3 que no incluyen funciones avanzadas de supervisión e informes, puede desarrollar sus propias herramientas de supervisión e informes encima de los eventos que se generan en cada punto de conexión cuando se desencadenan reglas ASR (por ejemplo, reenvío de eventos).
+Se recomienda usar reglas ASR con una licencia de E5 de Windows (o SKU de licencia similar) para aprovechar las capacidades avanzadas de supervisión e informes disponibles en [Microsoft Defender para](microsoft-defender-endpoint.md) endpoint (Defender para endpoint). Sin embargo, si tiene otra licencia, como Windows Professional o Windows E3 que no incluyen capacidades avanzadas de supervisión e informes, puede desarrollar sus propias herramientas de supervisión e informes sobre los eventos que se generan en cada extremo cuando se desencadenan reglas ASR (por ejemplo, reenvío de eventos).
 
 > [!TIP]
-> Para obtener más información sobre Windows licencias, [consulte Windows 10 Licensing y](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) obtenga la [Guía de licencias por volumen para Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
+> Para obtener más información sobre Windows licencias, consulte [Windows 10 Licensing y](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) obtenga la [Guía de licencias por volumen para Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
 
 Puedes habilitar las reglas de reducción de superficie de ataque mediante cualquiera de estos métodos:
 
@@ -104,7 +104,7 @@ Las reglas ASR admiten variables de entorno y caracteres comodín. Para obtener 
 2. Las reglas de reducción de superficie de ataque para dispositivos administrados por MEM ahora admiten el comportamiento para la fusión de configuraciones de diferentes directivas, para crear un superconjunto de directiva para cada dispositivo. Solo se combinan las opciones que no están en conflicto, mientras que las que están en conflicto no se agregan al superconjunto de reglas. Anteriormente, si dos directivas incluían conflictos para una sola configuración, ambas directivas se marcaban como en conflicto y no se implementaría ninguna configuración de ninguno de los perfiles. El comportamiento de combinación de reglas de reducción de superficie de ataque es el siguiente:
    - Las reglas de reducción de superficie de ataque de los siguientes perfiles se evalúan para cada dispositivo al que se aplican las reglas:
      - Dispositivos > directiva de configuración > perfil de protección de puntos de conexión > **Protección contra vulnerabilidades de seguridad de Microsoft Defender** >  [Attack Surface Reduction](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules).
-     - Directiva de seguridad > de reducción **de superficie de** ataqueSaqueque  > [las reglas de reducción de superficie](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
+     - Directiva de seguridad > **de reducción de superficie de** ataqueSaqueque  > [las reglas de reducción de superficie](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
      - Endpoint security > Security baselines > **Microsoft Defender ATP BaselineAttack** >  [Surface Reduction Rules](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules).
    - Configuración que no tienen conflictos se agregan a un superconjunto de directiva para el dispositivo.
    - Cuando dos o más directivas tienen configuraciones en conflicto, la configuración en conflicto no se agrega a la directiva combinada, mientras que las opciones que no entren en conflicto se agregan a la directiva de superconjunto que se aplica a un dispositivo.
@@ -129,7 +129,7 @@ Los siguientes procedimientos para habilitar reglas ASR incluyen instrucciones s
 
 1. Seleccione **Perfiles de configuración** \> **de dispositivos**. Elija un perfil de protección de extremo existente o cree uno nuevo. Para crear uno nuevo, seleccione **Crear perfil** e introduzca información para este perfil. En **Tipo de perfil**, seleccione **Protección de extremo**. Si ha elegido un perfil existente, seleccione **Propiedades** y, a continuación **, seleccione Configuración**.
 
-2. En el panel **Protección de** puntos de **conexión, selecciona Windows Defender Protección contra** vulnerabilidades de seguridad y, a continuación, selecciona **Reducción de superficie de ataque**. Seleccione la configuración deseada para cada regla ASR.
+2. En el panel **Protección de** puntos de **conexión, selecciona Windows Defender Protección contra vulnerabilidades** de seguridad y, a continuación, selecciona **Reducción de superficie de ataque**. Seleccione la configuración deseada para cada regla ASR.
 
 3. En **Excepciones de reducción de superficie de ataque**, escribe archivos y carpetas individuales. También puede seleccionar **Importar para** importar un archivo CSV que contenga archivos y carpetas que se excluirán de las reglas ASR. Cada línea del archivo CSV debe tener el siguiente formato:
 
@@ -162,6 +162,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
 
    - En **Plataforma**, seleccione **Windows 10 y versiones posteriores**
    - En **Tipo de perfil**, seleccione **Plantillas**
+   - Si las reglas ASR ya están establecidas a través de la seguridad del extremo, en **Tipo de** perfil, **seleccione Configuración Catálogo**.
 
    Seleccione **Personalizado** y, a continuación, **seleccione Crear**.
 
@@ -178,7 +179,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
    > [!div class="mx-imgBorder"]
    > ![Configuración de MEM.](images/mem04-2-configuration-settings.png)
 
-5. Haga clic **en Agregar** de nuevo. Se **abre la ventana Agregar fila OMA-URI Configuración**. En **Agregar fila**, haga lo siguiente:
+5. Haga clic **en Agregar** de nuevo. Se **abre el Configuración agregar fila OMA-URI**. En **Agregar fila**, haga lo siguiente:
 
    - En **Nombre**, escriba un nombre para la regla.
    - En **Descripción**, escriba una breve descripción.
@@ -194,7 +195,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
    > [!div class="mx-imgBorder"]
    > ![Configuración de URI de OMA de MEM.](images/mem05-add-row-oma-uri.png)
 
-6. Haga clic en **Guardar**. **Agregar cierres** de fila. En **Personalizado**, seleccione **Siguiente**. En las **etiquetas de ámbito del paso 3**, las etiquetas de ámbito son opcionales. Realiza una de las siguientes acciones:
+6. Seleccione **Guardar**. **Agregar cierres** de fila. En **Personalizado**, seleccione **Siguiente**. En las **etiquetas de ámbito del paso 3**, las etiquetas de ámbito son opcionales. Realiza una de las siguientes acciones:
 
    - Seleccione **Seleccionar etiquetas de ámbito**, seleccione la etiqueta de ámbito (opcional) y, a continuación, **seleccione Siguiente**.
    - O seleccione **Siguiente**
@@ -285,7 +286,7 @@ Ejemplo:
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
-3. Expande el árbol para **Windows componentes Antivirus de Microsoft Defender** \>  \> Protección contra vulnerabilidades de seguridad de Microsoft Defender **reducción de superficie** \> de ataque.
+3. Expande el árbol para **Windows componentes Antivirus de Microsoft Defender** \>  \> **Protección contra vulnerabilidades de seguridad de Microsoft Defender** \> **superficie de ataque**.
 
 4. Selecciona **Configurar reglas de reducción de superficie de ataque** y selecciona **Habilitado**. A continuación, puede establecer el estado individual de cada regla en la sección de opciones. Seleccione **Mostrar...** y escriba el identificador de regla en la columna **Nombre** de valor y el estado elegido en la **columna** Valor de la siguiente manera:
 

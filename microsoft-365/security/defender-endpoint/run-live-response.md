@@ -14,18 +14,16 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6e8146a5e73cb056f6e22ec975f909c281d0890a
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: e81c235105a7c7479a917c7cb7cc404e2553f2f1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300963"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323525"
 ---
 # <a name="run-live-response-commands-on-a-device"></a>Ejecutar comandos de respuesta en directo en un dispositivo
 
@@ -81,14 +79,14 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
     - [Versión 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) con [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
   - **Windows Server 2019: solo se aplica a la versión preliminar pública**
-    - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) posterior
-    - Versión 1809 (con [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
+    - Versión 1903 o (con [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) más adelante
+    - Versión 1809 ( [con KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
     
   - **Windows Server 2022**
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea [Get started](apis-intro.md).
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Introducción](apis-intro.md).
 
 |Tipo de permiso|Permiso|Nombre para mostrar de permisos|
 |---|---|---|
@@ -110,7 +108,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
-|Parámetro|Tipo|Description|
+|Parámetro|Tipo|Descripción|
 |---|---|---|
 |Comentario|Cadena|Comentario para asociarlo a la acción.|
 |Comandos|Matriz|Comandos que se ejecutarán. Los valores permitidos son PutFile, RunScript, GetFile.|

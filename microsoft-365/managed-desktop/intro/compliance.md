@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: d34807d20f0b203efb3d45b6fe45eddce632e275
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 2606b6c241b364464b4c6f205a3beb13af50a814
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62035081"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320387"
 ---
 # <a name="compliance"></a>Cumplimiento
 
@@ -39,14 +39,13 @@ Microsoft Managed Desktop ha logrado las siguientes certificaciones:
 - [Ley de portabilidad y responsabilidad del seguro de salud (HIPAA)](/compliance/regulatory/offering-hipaa-hitech)
 - [Marco común de seguridad (CSF) de Health Information Trust Alliance (HITRUST)](/compliance/regulatory/offering-hitrust)
 
-
 ## <a name="auditor-reports-and-compliance-certificates"></a>Informes de auditor y certificados de cumplimiento
 
-Puede encontrar información relevante, incluidos los requisitos técnicos y de control, en el Portal de confianza de servicios [(STP),](https://servicetrust.microsoft.com/)el repositorio central para dicha información sobre Microsoft Cloud Service ofertas. Puede descargar informes de auditor, certificados de cumplimiento y mucho más desde la sección [Informes de](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) auditoría del STP.
+Puede encontrar información relevante, incluidos los requisitos técnicos y de control, en [el Portal de confianza de servicios (STP).](https://servicetrust.microsoft.com/). Este portal es el repositorio central para dicha información sobre Microsoft Cloud Service ofertas. Puede descargar informes de auditor, certificados de cumplimiento y mucho más desde la sección [Informes de](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) auditoría del STP.
 
 > [!NOTE]
 > Dado que Microsoft Managed Desktop se ejecuta en Azure, los documentos relevantes suelen tener nombres de archivo como "Microsoft Azure, Dynamics 365 y otros servicios en línea". En esos documentos, normalmente puede encontrar Microsoft Managed Desktop en la categoría "Microsoft Online Services" o "Supervisión y administración".
 
 ## <a name="shared-responsibility"></a>Responsabilidad compartida
 
-El cumplimiento de los servicios en la nube es una responsabilidad compartida entre los proveedores de servicios en la nube y sus clientes. Para obtener más información, vea [Responsabilidad compartida en la nube.](/azure/security/fundamentals/shared-responsibility)
+El cumplimiento de los servicios en la nube es una responsabilidad compartida entre los proveedores de servicios en la nube y sus clientes. Para obtener más información, consulte [Responsabilidad compartida en la nube](/azure/security/fundamentals/shared-responsibility).

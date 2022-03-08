@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 5382118753f3c865f6fceb7cd16a7a7953e7bfad
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 10ecf1f3906e7968328729257feea9c272562ffb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767621"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322637"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para Endpoint en Mac
 
@@ -31,6 +31,19 @@ ms.locfileid: "62767621"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1015950-20122021159500"></a>101.59.50 (20.122021.15950.0)
+
+- Esta versión agrega compatibilidad con macOS 12.3. A partir de macOS 12.3, [Apple quita Python 2.7](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes). No habrá ninguna versión de Python preinstalada en macOS de forma predeterminada. **ACCIÓN NECESARIA**: 
+  - Los usuarios deben actualizar Microsoft Defender para Endpoint para Mac a la versión 101.59.50 (o posterior) antes de actualizar sus dispositivos a macOS Monterey 12.3 (o posterior). Esta versión mínima 101.59.50 es un requisito previo para eliminar problemas relacionados con Python con Microsoft Defender para Endpoint para Mac en macOS Monterey.
+  - Para las implementaciones remotas, las configuraciones de MDM existentes deben actualizarse a Microsoft Defender para Endpoint para Mac versión 101.59.50 (o posterior). Al insertar a través de MDM una versión anterior de Microsoft Defender para Endpoint para Mac a macOS Monterey 12.3 (o posterior) provocará un error de instalación.
+
+## <a name="1015910-20122012159100"></a>101.59.10 (20.122012.15910.0)
+
+- La herramienta de línea de comandos ahora admite la restauración de archivos en cuarentena en una ubicación que no sea la que se detectó originalmente. Esto se puede hacer a través de `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`.
+- Control de dispositivo extendido para controlar dispositivos conectados a través de Thunderbolt 3
+- Se ha mejorado el control de las directivas de control de dispositivos que contienen los IDs de proveedor y los IDs de producto no válidos. Antes de esta versión, si la directiva contenía uno o más IDs no válidos, se omitió toda la directiva. A partir de esta versión, solo se omiten las partes no válidas de la directiva. Los problemas con la directiva se han presentado a través de `mdatp device-control removable-media policy list`.
+- Correcciones de errores
 
 ## <a name="1015662-20121122156620"></a>101.56.62 (20.121122.15662.0)
 
@@ -186,7 +199,7 @@ ms.locfileid: "62767621"
 
 ## <a name="1010723"></a>101.07.23
 
-- Se agregaron nuevos campos a la salida de `mdatp --health` para comprobar el estado del modo pasivo y el EDR de grupo
+- Se agregaron nuevos campos al resultado de `mdatp --health` para comprobar el estado del modo pasivo y el EDR de grupo
 
   > [!NOTE]
   > `mdatp --health` se reemplazará con en `mdatp health` una actualización futura del producto.
@@ -305,6 +318,6 @@ ms.locfileid: "62767621"
   > El mecanismo para conceder este consentimiento depende de cómo implementó Microsoft Defender para endpoint:
   >
   > - Para las implementaciones manuales, vea las instrucciones actualizadas en el [tema Implementación](mac-install-manually.md#how-to-allow-full-disk-access) manual.
-  > - Para las implementaciones administradas, vea las instrucciones actualizadas en los temas de implementación basada en [JAMF](mac-install-with-jamf.md) [y Microsoft Intune de implementación basada en](mac-install-with-intune.md#create-system-configuration-profiles) JAMF.
+  > - Para las implementaciones administradas, vea las instrucciones actualizadas en los temas de implementación basada en JAMF [y Microsoft Intune de implementación basada en](mac-install-with-intune.md#create-system-configuration-profiles) [JAMF](mac-install-with-jamf.md).
 
 - Mejoras de rendimiento & correcciones de errores

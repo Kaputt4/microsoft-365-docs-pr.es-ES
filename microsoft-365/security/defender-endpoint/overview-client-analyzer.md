@@ -13,29 +13,27 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9b4363b529ce9087e640c9bfaa32c8d21f410710
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 0de2fbe98527d8fe36f2b8c5d5db0453988501a7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531068"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323505"
 ---
 # <a name="troubleshoot-sensor-health-using-microsoft-defender-for-endpoint-client-analyzer"></a>Solucionar problemas de estado del sensor con Microsoft Defender para endpoint client Analyzer
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender para Endpoint Client Analyzer (MDECA) puede ser útil [](/microsoft-365/security/defender-endpoint/onboard-configure) al diagnosticar problemas de estado o confiabilidad del sensor en dispositivos integrados que ejecutan Windows, Linux o macOS. Por ejemplo, es posible que desee ejecutar el analizador en una máquina que parezca no estar en buen estado según el estado de mantenimiento del sensor mostrado (Inactivo, Sin datos de [sensor](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors) o Comunicaciones deficientes) en el portal de seguridad.
+Microsoft Defender para Endpoint Client Analyzer (MDECA) puede ser útil al diagnosticar problemas de estado o confiabilidad del sensor [](/microsoft-365/security/defender-endpoint/onboard-configure) en dispositivos integrados que ejecutan Windows, Linux o macOS. Por ejemplo, es posible que desee ejecutar el analizador en una máquina que parezca no estar en buen estado según el estado de mantenimiento del sensor mostrado (Inactivo, Sin datos de [sensor](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors) o Comunicaciones deficientes) en el portal de seguridad.
 
 Además de los evidentes problemas de mantenimiento del sensor, MDECA puede recopilar otros seguimientos, registros e información de diagnóstico para solucionar escenarios complejos como:
 
 - Compatibilidad de aplicaciones (AppCompat), rendimiento, conectividad de red o
-- Comportamiento inesperado relacionado con [Endpoint Data Loss Prevention](/microsoft-365/compliance/endpoint-dlp-learn-about).
+- Comportamiento inesperado relacionado con [la prevención de pérdida de datos de punto de conexión](/microsoft-365/compliance/endpoint-dlp-learn-about).
 
 ## <a name="privacy-notice"></a>Aviso de privacidad
 
@@ -45,19 +43,19 @@ Además de los evidentes problemas de mantenimiento del sensor, MDECA puede reco
 
 - Una vez completada la recopilación de datos, la herramienta guarda los datos localmente en el equipo dentro de una subcarpeta y un archivo zip comprimido.
 
-- No se envía ningún dato automáticamente a Microsoft. Si está usando la herramienta durante la colaboración en un problema de soporte técnico, es posible que se le pida que envíe los datos comprimidos a Css de Microsoft mediante secure file Exchange para facilitar la investigación del problema.
+- No se envía ningún dato automáticamente a Microsoft. Si usa la herramienta durante la colaboración en un problema de soporte técnico, es posible que se le pida que envíe los datos comprimidos a CSS de Microsoft mediante secure file Exchange para facilitar la investigación del problema.
 
 Para obtener más información acerca de la Exchange de archivos seguros, vea [How to use Secure File Exchange to exchange files with Microsoft Support](/troubleshoot/azure/general/secure-file-exchange-transfer-files)
 
-Para obtener más información acerca de nuestra declaración de privacidad, vea [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+Para obtener más información acerca de nuestra declaración de privacidad, consulte [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
-- Antes de ejecutar el analizador, se recomienda asegurarse de que la configuración de proxy o firewall permita el acceso a las direcciones URL de servicio de [Microsoft Defender para puntos de conexión.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
+- Antes de ejecutar el analizador, se recomienda asegurarse de que la configuración de proxy o firewall permite el acceso a las direcciones URL de [servicio de Microsoft Defender para puntos de conexión](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
-- El analizador puede ejecutarse en ediciones admitidas de [Windows,](minimum-requirements.md#supported-windows-versions) [Linux](microsoft-defender-endpoint-linux.md#system-requirements)o [macOS](microsoft-defender-endpoint-mac.md#system-requirements) antes de la incorporación a Microsoft Defender para Endpoint.
+- El analizador puede ejecutarse en ediciones admitidas de [Windows](minimum-requirements.md#supported-windows-versions), [Linux](microsoft-defender-endpoint-linux.md#system-requirements) o [macOS](microsoft-defender-endpoint-mac.md#system-requirements) antes de la incorporación a Microsoft Defender para Endpoint.
 
-- Para Windows dispositivos, si ejecuta el analizador directamente en máquinas específicas y no de forma remota a través de [Live Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log), sysInternals [PsExec.exe](/sysinternals/downloads/psexec) debe poder ejecutarse (al menos temporalmente). El analizador llama a PsExec.exe herramienta para ejecutar comprobaciones de conectividad en la nube como Sistema local y emular el comportamiento del servicio SENSE.
+- En Windows dispositivos, si ejecuta el analizador directamente en equipos específicos y no de forma remota a través de [Live Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log), sysInternals [PsExec.exe](/sysinternals/downloads/psexec) debe poder ejecutarse (al menos temporalmente). El analizador llama a PsExec.exe herramienta para ejecutar comprobaciones de conectividad en la nube como Sistema local y emular el comportamiento del servicio SENSE.
 
     > [!NOTE]
-    > En dispositivos Windows, si usas la regla Reducción de superficie de ataque (ASR) Bloquear creaciones de proceso que se originen a partir de comandos PSExec y [WMI,](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)es posible que quieras deshabilitar temporalmente la regla o configurar una exclusión en la regla [ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) para permitir que el analizador ejecute comprobaciones de conectividad en la nube según lo esperado.
+    > En dispositivos Windows, si usas la regla Reducción de superficie de ataque (ASR) Bloquear creaciones de proceso que se originen a partir de comandos [PSExec y WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands), es posible que quieras deshabilitar temporalmente la regla o configurar una exclusión en la regla [ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) para permitir que el analizador ejecute comprobaciones de conectividad en la nube según lo esperado.

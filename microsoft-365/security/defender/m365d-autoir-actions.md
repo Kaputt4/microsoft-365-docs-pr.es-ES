@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,15 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: how-to
-ms.custom: autoir
+ms.custom:
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 7f43c41570e8b097e0652b3909d603600de9f96a
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 775781a5df9149ae99f1a051303f5d55c23f1bab
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914241"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323239"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Ver y administrar acciones en el Centro de acciones
 
@@ -40,16 +42,16 @@ Las características de protección contra amenazas Microsoft 365 Defender puede
 
 - [Las investigaciones automatizadas](m365d-autoir.md) pueden dar como resultado acciones de corrección que se toman automáticamente o esperar su aprobación.
 - Antivirus, antimalware y otras características de protección contra amenazas pueden provocar acciones de corrección, como bloquear un archivo, una dirección URL o un proceso, o enviar un artefacto a la cuarentena.
-- El equipo de operaciones de seguridad puede realizar [](advanced-hunting-overview.md) acciones de corrección manualmente, como durante la búsqueda avanzada o al investigar [alertas](investigate-alerts.md) [o incidentes.](investigate-incidents.md)
+- El equipo de operaciones de seguridad puede realizar acciones de corrección manualmente, como [](advanced-hunting-overview.md) durante la búsqueda avanzada o al investigar [alertas o incidentes](investigate-incidents.md).[](investigate-alerts.md)
 
 > [!NOTE]
-> Debe tener los [permisos adecuados para](m365d-action-center.md#required-permissions-for-action-center-tasks) aprobar o rechazar acciones de corrección. Para obtener más información, vea los [requisitos previos](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
+> Debe tener los [permisos adecuados para](m365d-action-center.md#required-permissions-for-action-center-tasks) aprobar o rechazar acciones de corrección. Para obtener más información, consulte los [requisitos previos](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 
 ## <a name="review-pending-actions-in-the-action-center"></a>Revisar acciones pendientes en el Centro de acciones
 
 Es importante aprobar (o rechazar) las acciones pendientes tan pronto como sea posible para que las investigaciones automatizadas puedan continuar y completarse de forma oportuna. 
 
-1. Vaya a [https://security.microsoft.com](https://security.microsoft.com) e inicie sesión. 
+1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal e</a> inicie sesión. 
 
 2. En el panel de navegación, elija **Centro de actividades**. 
 
@@ -61,7 +63,7 @@ Es importante aprobar (o rechazar) las acciones pendientes tan pronto como sea p
    - Seleccione **Abrir página de investigación** para ver más detalles sobre la investigación.
    - Seleccione **Aprobar** para iniciar una acción pendiente.
    - Seleccione **Rechazar** para evitar que se haga una acción pendiente.
-   - Seleccione **Ir a la búsqueda** para ir a Búsqueda [avanzada.](advanced-hunting-overview.md) 
+   - Seleccione **Ir a la búsqueda** para ir a [Búsqueda avanzada](advanced-hunting-overview.md). 
 
 ## <a name="undo-completed-actions"></a>Deshacer acciones completadas
 
@@ -73,7 +75,7 @@ Si has determinado que un dispositivo o un archivo no es una amenaza, puedes des
 
 ### <a name="undo-one-remediation-action"></a>Deshacer una acción de corrección
 
-1. Vaya al Centro de acciones ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) e inicie sesión.
+1. Vaya al Centro de acciones ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) e inicie sesión.
 
 2. En la **pestaña** Historial, seleccione una acción que desee deshacer.
 
@@ -81,7 +83,7 @@ Si has determinado que un dispositivo o un archivo no es una amenaza, puedes des
 
 ### <a name="undo-multiple-remediation-actions"></a>Deshacer varias acciones de corrección
 
-1. Vaya al Centro de acciones ( https://security.microsoft.com/action-center) e inicie sesión.
+1. Vaya al Centro de acciones (https://security.microsoft.com/action-center) e inicie sesión.
 
 2. En la **pestaña** Historial, seleccione las acciones que desea deshacer. Asegúrese de seleccionar los elementos que tienen el mismo tipo de acción. Se abre un panel desplegable.
 
@@ -89,11 +91,11 @@ Si has determinado que un dispositivo o un archivo no es una amenaza, puedes des
 
 ### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>Para quitar un archivo de la cuarentena en varios dispositivos 
 
-1. Vaya al Centro de acciones ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) e inicie sesión.
+1. Vaya al Centro de acciones ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) e inicie sesión.
 
-2. En la **pestaña Historial,** seleccione un archivo que tenga un tipo de acción **de archivo en** cuarentena.
+2. En la **pestaña Historial** , seleccione un archivo que tenga un tipo de acción **de archivo en** cuarentena.
 
-3. En el panel de la parte derecha de la pantalla, seleccione **Aplicar a X más** instancias de este archivo y, a continuación, seleccione **Deshacer**.
+3. En el panel de la parte derecha de la pantalla, seleccione **Aplicar a X más instancias de este** archivo y, a continuación, seleccione **Deshacer**.
 
 ## <a name="next-steps"></a>Siguientes pasos
 

@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: a34e876e1ea6f9be9004609daf8afeec97cc4fbb
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.openlocfilehash: e56fb2e550adb870ed096f90c7d8d9b90c1de249
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295127"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314715"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Investigar actividades de administración de riesgos de insider
 
@@ -28,7 +28,7 @@ Investigar actividades de usuario arriesgadas es un primer paso importante para 
 
 Los informes de actividad de usuario permiten examinar las actividades de usuarios específicos durante un período de tiempo definido sin tener que asignarlas de forma temporal o explícita a una directiva de administración de riesgos de insider. En la mayoría de los escenarios de administración de riesgos internas, los usuarios se definen explícitamente en las directivas y pueden tener alertas de directiva (según los eventos desencadenantes) y puntuaciones de riesgo asociadas con las actividades. Pero en algunos escenarios, es posible que desee examinar las actividades de los usuarios que no están definidas explícitamente en una directiva. Estas actividades pueden ser para usuarios que han recibido una sugerencia sobre el usuario y actividades potencialmente arriesgadas, o usuarios que normalmente no necesitan asignarse a una directiva de administración de riesgos de información interna.
 
-Después de configurar los indicadores en la página de administración de riesgos **Configuración**, se detecta actividad de usuario para la actividad de riesgo asociada a los indicadores seleccionados. No es obligatorio configurar una directiva para que los informes de actividad de los usuarios detecten e informen actividades de riesgo por parte de los usuarios de la organización. Las actividades incluidas en los informes de actividad de usuario no requieren desencadenar eventos para que se muestren las actividades. Esta configuración significa que toda la actividad detectada para el usuario está disponible para su revisión, independientemente de si tiene un evento desencadenante o si crea una alerta. Los informes se crean por usuario y pueden incluir todas las actividades durante un período personalizado de 90 días. No se admiten varios informes para el mismo usuario.
+Después de configurar los indicadores en la página de administración de riesgos **Configuración** información interna, se detecta actividad de usuario para la actividad de riesgo asociada a los indicadores seleccionados. No es obligatorio configurar una directiva para que los informes de actividad de los usuarios detecten e informen actividades de riesgo por parte de los usuarios de la organización. Las actividades incluidas en los informes de actividad de usuario no requieren desencadenar eventos para que se muestren las actividades. Esta configuración significa que toda la actividad detectada para el usuario está disponible para su revisión, independientemente de si tiene un evento desencadenante o si crea una alerta. Los informes se crean por usuario y pueden incluir todas las actividades durante un período personalizado de 90 días. No se admiten varios informes para el mismo usuario.
 
 Después de examinar las actividades de un usuario, los investigadores pueden descartar actividades individuales como benignas, compartir o enviar por correo electrónico un vínculo al informe con otros investigadores, o elegir asignar al usuario de forma temporal o explícita a una directiva de administración de riesgos de insider. Los usuarios deben estar asignados al grupo de *roles Investigadores* de administración de riesgos de Insider para ver la **página Informes de actividad de** usuario.  
 
@@ -73,7 +73,7 @@ El panel de alertas **de riesgo interno** le permite ver y actuar en las alertas
 Puede realizar una triage de alertas en uno de los siguientes estados:
 
 - **Confirmado**: una alerta confirmada y asignada a un caso nuevo o existente.
-- **Descartado**: una alerta descartada como benigna en el proceso de evaluación.
+- **Descartado**: una alerta descartada como benigna en el proceso de evaluación. Puede proporcionar una razón para el despido de alertas e incluir notas que están disponibles en el historial de alertas del usuario para proporcionar contexto adicional para referencias futuras o para otros revisores. Estas razones pueden variar desde actividades esperadas, eventos no impactantes, simplemente reducir el número de actividades de alerta para el usuario o un motivo relacionado con las notas de alerta. Entre las opciones de clasificación de motivos se incluyen *Activity is expected for this user*, *Activity is impactful enough for me to investigate further*, and *Alerts for this user contain too much activity*.
 - **Revisión de** necesidades: una nueva alerta en la que aún no se han realizado acciones de evaluación.
 - **Resuelto**: una alerta que forma parte de un caso cerrado y resuelto.
 
@@ -93,6 +93,7 @@ Según el número y el tipo de directivas activas de administración de riesgos 
 - **Gravedad**: seleccione uno o más niveles de gravedad de riesgo de alerta para filtrar la lista de alertas. Las opciones son *Alta*, *Media*, y *Baja*.
 - **Hora detectada**: seleccione las fechas de inicio y finalización para cuando se creó la alerta. Este filtro busca alertas entre las 00:00 UTC de la fecha de inicio y las 00:00 UTC de la fecha de finalización. Para filtrar alertas para un día específico, escriba la fecha del día en el campo **Fecha** de inicio y la fecha del día siguiente en el **campo Fecha de** finalización.
 - **Directiva**: seleccione una o más directivas para filtrar las alertas generadas por las directivas seleccionadas.
+- **Factores de riesgo**: seleccione uno de los factores de riesgo más para filtrar la lista de alertas. Las opciones son *Actividades de exfiltración* acumulativas, *Las actividades incluyen* contenido prioritario, *Actividades* de secuencia y *Actividades incluyen dominios no permitidos*.
 
 ## <a name="search-alerts-on-the-alert-dashboard"></a>Alertas de búsqueda en el panel de alertas
 
@@ -104,7 +105,7 @@ Puede ayudar a ahorrar tiempo de triaje para que los analistas e investigadores 
 
 Para descartar una alerta de riesgo de insider, siga estos pasos:
 
-1. En la [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos **de Insider** y seleccione la **pestaña** Alertas.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Alertas.
 2. En el **panel De alertas**, seleccione la alerta (o alertas) con el estado *Necesita revisión* que desea descartar.
 3. En la barra de comandos Alertas, seleccione **Descartar alertas**.
 4. En el **panel de detalles** Descartar alertas, puede revisar los detalles de usuario y directiva asociados con las alertas seleccionadas.
@@ -114,33 +115,70 @@ Para descartar una alerta de riesgo de insider, siga estos pasos:
 
 Para realizar una evaluación de una alerta de riesgo insider, siga estos pasos:
 
-1. En la [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos **de Insider** y seleccione la **pestaña** Alertas.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Alertas.
 2. En el **panel De alertas**, seleccione la alerta que desea triage.
-3. En la **página Detalles de** alerta, puede revisar la información sobre la alerta y puede confirmar la alerta y crear un nuevo caso, confirmar la alerta y agregarla a un caso existente, o descartar la alerta. Esta página también incluye el estado actual de la alerta y el nivel de gravedad del riesgo de alerta, enumerado como Alto, Medio o Bajo. El nivel de gravedad puede aumentar o disminuir con el tiempo si la alerta no está triaged.
+3. En la **página Detalles de** alerta, puede revisar la información sobre la alerta. Puede confirmar la alerta y crear un nuevo caso, confirmar la alerta y agregarla a un caso existente, o descartar la alerta. Esta página también incluye el estado actual de la alerta y el nivel de gravedad del riesgo de alerta, enumerado como Alto, Medio o Bajo. El nivel de gravedad puede aumentar o disminuir con el tiempo si la alerta no está triaged.
 
-    Las pestañas de la **página Detalles de** alerta proporcionan más información para la alerta:
-    - **Resumen**: esta pestaña contiene información general sobre la alerta.
-        - **¿Cuál fue el evento desencadenante?**: Muestra el evento de activación más reciente que instó a la directiva a empezar a asignar puntuaciones de riesgo a la actividad del usuario.
-        - **Actividad que generó esta alerta**: muestra la actividad de riesgo superior y la coincidencia de directiva durante el período de evaluación de actividad que llevó a la alerta que se generó.
-        - **Perspectivas de riesgos para la actividad en esta alerta**: muestra el número de información de riesgos para la alerta. Algunos ejemplos son si la alerta contiene actividades de secuencia, riesgo acumulado de actividad de exfiltración, actividad que incluye eventos con dominios no permitidos, actividad que incluye eventos con contenido prioritario o actividades que son inusuales para el usuario.
-        - **Detalles del** usuario: muestra información general sobre el usuario asignado a la alerta. Si la anonimización está habilitada, los campos nombre de usuario, dirección de correo electrónico, alias y organización se anonimizan.
-        - **Detalles de** la alerta: incluye el período de tiempo desde que se generó la alerta, se enumeran las directivas que generaron la alerta y se muestra el caso generado a partir de la alerta. Para las alertas nuevas, el **campo Caso** muestra Ninguno.
-        - **Contenido detectado**: incluye contenido asociado a las actividades de riesgo de la alerta y resume los eventos de actividad por áreas clave. Al seleccionar un vínculo de actividad, se abre el explorador de actividades y se muestran más detalles sobre la actividad.
-    - **Explorador de actividades**: esta pestaña abre el **Explorador de actividades**. Para obtener más información, consulte la siguiente sección de este artículo.
+Use las siguientes secciones y pestañas en la página Detalles de alerta para obtener más información acerca de la alerta:
 
-## <a name="retention-and-item-limits"></a>Límites de retención y elementos
+### <a name="headersummary-section"></a>Sección Encabezado/Resumen
 
-A medida que la administración de riesgos insider alerta la antigüedad, su valor para minimizar la actividad de riesgo disminuye para la mayoría de las organizaciones. Por el contrario, los casos activos y los artefactos asociados (alertas, información, actividades) siempre son valiosos para las organizaciones y no deben tener una fecha de expiración automática. Esto incluye todas las alertas y artefactos futuros en un estado activo para cualquier usuario asociado con un caso activo.
+Esta sección contiene información general sobre el usuario y la alerta. Esta información está disponible para contexto mientras se revisa información detallada sobre la actividad detectada incluida en la alerta para el usuario:
 
-Para ayudar a minimizar el número de elementos antiguos que proporcionan un valor actual limitado, se aplican los siguientes límites y retención para alertas de administración de riesgos, casos e informes de actividad del usuario:
+- **Actividad que generó esta alerta**: muestra la actividad de riesgo superior y la coincidencia de directiva durante el período de evaluación de actividad que llevó a la alerta que se generó.
+- **Evento de desencadenamiento**: muestra el evento de activación más reciente que instó a la directiva a empezar a asignar puntuaciones de riesgo a la actividad del usuario.
+- **Perfil de usuario**: muestra información general sobre el usuario asignado a la alerta. Si la anonimización está habilitada, los campos nombre de usuario, dirección de correo electrónico, alias y organización se anonimizan.
+- **Historial de alertas de** usuario: muestra una lista de alertas para el usuario durante los últimos 30 días. Incluye un vínculo para ver el historial completo de alertas del usuario.
 
-|**Item**|**Retención/límite**|
-|:-------|:------------------|
-| Alertas con estado de revisión de necesidades | 120 días desde la creación de alertas y, a continuación, eliminado automáticamente |
-| Casos activos (y artefactos asociados) | Retención indefinida, nunca expira |
-| Casos resueltos (y artefactos asociados) | 120 días desde la resolución de casos y, a continuación, eliminado automáticamente |
-| Número máximo de casos activos | 100 |
-| Informes de actividades de usuario | 120 días desde la detección de actividad y, a continuación, eliminado automáticamente |
+### <a name="all-risk-factors"></a>Todos los factores de riesgo
+
+Esta pestaña abre el resumen de factores de riesgo para la actividad de alerta del usuario. Los factores de riesgo pueden ayudarle a determinar el riesgo que tiene la actividad de este usuario durante la revisión. Los factores de riesgo incluyen resúmenes para:
+
+- **Actividades de exfiltración principales**: muestra las actividades de exfiltración con el número o eventos más altos de la alerta.
+- **Actividades de exfiltración acumulativas**: muestra eventos asociados con actividades de exfiltración acumulativas.
+- **Secuencias de actividades**: muestra las actividades detectadas asociadas con secuencias de riesgo.
+- **Actividad inusual para este usuario**: muestra actividades para el usuario que se consideran inusuales y una salida de sus actividades habituales.
+- **Contenido prioritario**: muestra las actividades asociadas con el contenido de prioridad.
+- **Dominios no permitidos**: muestra actividades para eventos asociados con dominios no permitidos.
+- **Acceso a registros de mantenimiento**: muestra actividades para eventos asociados con el acceso a registros de mantenimiento.
+
+Con estos filtros, solo verás alertas con estos factores de riesgo, pero es posible que la actividad que generó una alerta no entre en ninguna de estas categorías. Por ejemplo, es posible que se haya generado una alerta que contenga actividades de secuencia simplemente porque el usuario copió un archivo en un dispositivo USB.
+
+### <a name="content-detected"></a>Contenido detectado
+
+La sección de la **pestaña Todos los factores** de riesgo incluye contenido asociado a las actividades de riesgo de la alerta y resume los eventos de actividad por áreas clave. Al seleccionar un vínculo de actividad, se abre el explorador de actividades y se muestran más detalles sobre la actividad.
+
+### <a name="activity-explorer"></a>Explorador de actividad
+
+Esta pestaña abre el explorador de actividades. Para obtener más información, vea la sección Explorador de actividades de este artículo.
+
+### <a name="user-activity"></a>Actividad de usuario
+
+El **gráfico de actividades de** usuario es una de las herramientas más eficaces para el análisis e investigación de riesgos internos para alertas y casos en la solución de administración de riesgos insider. Esta pestaña está estructurada para permitir la revisión rápida de todas las actividades de un usuario, incluida una escala de tiempo histórica de todas las alertas, detalles de alerta, la puntuación de riesgo actual para el usuario y la secuencia de eventos de riesgo.  
+
+![Actividad de usuario de administración de riesgos insider.](../media/insider-risk-user-activities.png)
+
+1. **Filtros de tiempo**: de forma predeterminada, los tres últimos meses de actividades que se muestran en el gráfico de actividades de usuario. Puede filtrar fácilmente la vista de gráfico seleccionando las pestañas *6* meses, *3* meses o *1* mes en el gráfico de burbujas.
+2. **Actividad y detalles de alerta de** riesgo: las actividades de riesgo se muestran visualmente como burbujas de color en el gráfico de actividades de usuario. Las burbujas se crean para diferentes categorías de riesgo y. Seleccione una burbuja para mostrar los detalles de cada actividad de riesgo. Los detalles incluyen:
+    - **Fecha** de la actividad de riesgo.
+    - Categoría **de actividad de riesgo**. Por ejemplo, *los correos electrónicos* con datos adjuntos enviados fuera de la organización o archivos descargados *de SharePoint Online*.
+    - **Nivel de riesgo** de la alerta. Esta puntuación es la puntuación numérica para el nivel de gravedad del riesgo de alerta.
+    - Número de eventos asociada a la alerta. También están disponibles vínculos a cada archivo o correo electrónico asociado con la actividad de riesgo.
+3.  **Filtros y ordenación (versión preliminar):**:
+    - **Categoría de** riesgo: filtre las actividades por las siguientes categorías de riesgo: Actividades con puntuaciones de *riesgo > 15 (a* menos que esté en una secuencia) y *Actividades de secuencia*.
+    - **Tipo de** actividad: filtre las actividades por los siguientes tipos: *Access*, *Deletion*, *Collection*, *Exfiltration*, *Infiltration*, *Obfuscation* y *Security*.
+    - **Ordenar por**: enumerar las actividades de escala de tiempo *por fecha ocurrida* o *puntuación de riesgo*.
+4. **Secuencia de riesgos (versión preliminar):** el orden cronológico de las actividades de riesgo es un aspecto importante de la investigación de riesgos y la identificación de estas actividades relacionadas es una parte importante de la evaluación del riesgo general para su organización. Las actividades de alerta relacionadas se muestran con líneas de conexión para resaltar que estas actividades están asociadas a un área de riesgo mayor. Esta vista de actividades puede ayudar a los investigadores a "conectar los puntos" literalmente para las actividades de riesgo que podrían haber sido vistas como eventos aislados o aislados. Seleccione cualquier burbuja de la secuencia para mostrar los detalles de todas las actividades de riesgo asociadas. Los detalles incluyen:
+
+    - **Nombre** de la secuencia.
+    - **Fecha** o **Intervalo de fechas** de la secuencia.
+    - **Puntuación de** riesgo para la secuencia. Esta puntuación es la puntuación numérica de la secuencia de los niveles combinados de gravedad del riesgo de alerta para cada actividad relacionada de la secuencia.
+    - **Número de eventos asociados con cada alerta de la secuencia**. También están disponibles vínculos a cada archivo o correo electrónico asociado con cada actividad de riesgo.
+    - **Mostrar actividades en secuencia**. Muestra la secuencia como una línea de resaltado en el gráfico de burbujas y expande los detalles de alerta para mostrar todas las alertas relacionadas en la secuencia.
+
+4. **Leyenda de actividad de** riesgo: en la parte inferior del gráfico de actividad del usuario, una leyenda codificada por colores le ayuda a determinar rápidamente la categoría de riesgo para cada alerta.
+5. **Cronología de actividad de riesgo**: se muestra la cronología completa de todas las alertas de riesgo asociadas con el caso, incluidos todos los detalles disponibles en la burbuja de alerta correspondiente.
+6. **Acciones de caso**: las opciones para resolver el caso se encuentran en la barra de herramientas de acciones de caso. Al ver un caso, puede resolver un caso, enviar un aviso de correo electrónico al usuario o escalar el caso para una investigación de datos o usuarios.
 
 ## <a name="activity-explorer"></a>Explorador de actividad
 
@@ -157,18 +195,19 @@ Use los filtros Ámbito de actividad y Perspectiva de riesgos para mostrar y ord
     - Toda la actividad puntuada para este usuario
     - Solo actividad puntuada en esta alerta
 
-- **Filtros de información de riesgos**: filtra la actividad aplicable a todas las directivas que asignan puntuaciones de riesgo.
-    - Actividades de exfiltración acumulativas
-    - Incluye evento con contenido de prioridad
-    - Incluye evento con dominio no permitido
-    - Actividades de secuencia
+- **Filtros de factor de** riesgo: filtra la actividad del factor de riesgo aplicable a todas las directivas que asignan puntuaciones de riesgo Esto incluye toda la actividad de todas las directivas para los usuarios del ámbito.
     - Actividad inusual
+    - Incluye eventos con contenido prioritario
+    - Incluye eventos con dominio no permitido
+    - Actividades de secuencia
+    - Actividades de exfiltración acumulativas
+    - Actividades de acceso a registros de mantenimiento
 
 ![Introducción al explorador de actividades de administración de riesgos de Insider.](../media/insider-risk-activity-explorer.png)
 
 Para usar el **explorador de actividades**, siga estos pasos:
 
-1. En la [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos **de Insider** y seleccione la **pestaña** Alertas.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Alertas.
 2. En el **panel De alertas**, seleccione la alerta que desea triage.
 3. En el **panel de detalles Alertas**, seleccione **Abrir vista expandida**.
 4. En la página de la alerta seleccionada, seleccione la **pestaña Explorador de** actividades.
@@ -186,13 +225,27 @@ Al seleccionar los eventos de una actividad de la escala de tiempo de actividad,
 
 A medida que se revisa y se revisa la alerta, puede crear un nuevo caso para investigar aún más la actividad de riesgo. Para crear un caso para una alerta, siga estos pasos:
 
-1. En la [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos **de Insider** y seleccione la **pestaña** Alertas.
+1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Alertas.
 2. En el **panel de alertas**, seleccione la alerta para la que desea confirmar y crear un nuevo caso.
-3. En el **panel Detalles de alertas**, seleccione **ActionsConfirm** >  **alerts & crear caso**.
+3. En el **panel Detalles de alertas**, seleccione **ActionsConfirm** >  **alerts & create case**.
 4. En el **cuadro de diálogo** Confirmar alerta y crear caso de riesgo interno, escriba un nombre para el caso, seleccione usuarios para agregar como colaboradores y agregue comentarios según corresponda. Los comentarios se agregan automáticamente al caso como nota de caso.
 5. Seleccione **Crear caso** para crear un nuevo caso o **cancelar** para cerrar el cuadro de diálogo sin crear un caso.
 
 Una vez creado el caso, los investigadores y analistas pueden administrar y actuar en el caso. Para obtener más información, consulte el [artículo sobre casos de administración de riesgos de Insider](insider-risk-management-cases.md) .
+
+## <a name="retention-and-item-limits"></a>Límites de retención y elementos
+
+A medida que la administración de riesgos insider alerta la antigüedad, su valor para minimizar la actividad de riesgo disminuye para la mayoría de las organizaciones. Por el contrario, los casos activos y los artefactos asociados (alertas, información, actividades) siempre son valiosos para las organizaciones y no deben tener una fecha de expiración automática. Esto incluye todas las alertas y artefactos futuros en un estado activo para cualquier usuario asociado con un caso activo.
+
+Para ayudar a minimizar el número de elementos antiguos que proporcionan un valor actual limitado, se aplican los siguientes límites y retención para alertas de administración de riesgos, casos e informes de actividad del usuario:
+
+|**Item**|**Retención/límite**|
+|:-------|:------------------|
+| Alertas con estado de revisión de necesidades | 120 días desde la creación de alertas y, a continuación, eliminado automáticamente |
+| Casos activos (y artefactos asociados) | Retención indefinida, nunca expira |
+| Casos resueltos (y artefactos asociados) | 120 días desde la resolución de casos y, a continuación, eliminado automáticamente |
+| Número máximo de casos activos | 100 |
+| Informes de actividades de usuario | 120 días desde la detección de actividad y, a continuación, eliminado automáticamente |
 
 ## <a name="get-help-managing-your-insider-risk-alert-queue"></a>Obtener ayuda para administrar la cola de alertas de riesgo de insider
 

@@ -20,12 +20,12 @@ ms.custom:
 description: Más información sobre cómo usar DomainKeys Identified Mail (DKIM) con Microsoft 365 para asegurarse de que los mensajes que se envían desde su dominio personalizado sean de confianza para los sistemas de correo electrónico de destino.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1740d910f95a0076da34b7a08e66853fb7cca598
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 25333a1616bb1f4e4e529c17813bdd58f4c768b4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939638"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312955"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado
 
@@ -91,13 +91,11 @@ Paso 1: Haga clic en el dominio en el que quiere configurar DKIM en la página d
 
 ![Página DKIM en el portal de Microsoft 365 Defender con un dominio seleccionado.](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
 
-Paso 2: Haga clic en Crear claves DKIM.
+Paso 2: Deslice el botón de alternancia a **Habilitar**. Verá una ventana emergente que indica que necesita agregar registros CNAME.
 
-![Control flotante de detalles del dominio con el botón Crear claves DKIM.](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
+![Deslice el botón de alternancia a Habilitado para habilitar DKIM.](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
 
 Paso 3: Copiar los CNAMES que se muestran en la ventana emergente.
-
-![Ventana emergente Publicar CNAME que contiene los dos registros CNAME que se van a copiar.](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
 
 Paso 4: Publicar los registros CNAME copiados en el proveedor de servicios DNS.
 
@@ -333,7 +331,7 @@ Deshabilitar la directiva de firmas no deshabilita DKIM completamente. Después 
 ## <a name="default-behavior-for-dkim-and-microsoft-365"></a>Comportamiento predeterminado para DKIM y Microsoft 365
 <a name="DefaultDKIMbehavior"> </a>
 
-Si no habilita DKIM, Microsoft 365 crea automáticamente una clave pública DKIM de 2048 bits para el dominio de dirección de enrutamiento de correo en Microsoft Online (MOERA)/inicial y la clave privada asociada que se almacena internamente en nuestro centro de datos. De forma predeterminada, Microsoft 365 usa una configuración de firmas predeterminada para los dominios que no tienen una directiva local. Esto significa que si no configura DKIM, Microsoft 365 usará su política predeterminada y se creará la clave para habilitar DKIM para el dominio.
+Si no habilita DKIM, Microsoft 365 crea automáticamente una clave pública DKIM de 2048 bits para su dirección de enrutamiento de correo electrónico en línea de Microsoft (MOERA)/dominio inicial y la clave privada asociada que almacenamos internamente en nuestro centro de datos. De forma predeterminada, Microsoft 365 usa una configuración de firma predeterminada para los dominios que no tienen directivas establecidas. Esto significa que si no configura un DKIM usted mismo, Microsoft 365 usará su directiva predeterminada y las claves que genera para habilitar DKIM para su dominio.
 
 Además, si deshabilita la firma DKIM en el dominio personalizado después de habilitarlo, después de un período de tiempo, Microsoft 365 aplicará automáticamente la directiva de dominio inicial o MOERA para el dominio personalizado.
 
@@ -395,9 +393,12 @@ Por ejemplo, el registro DKIM tendría el siguiente aspecto:
 
 Una vez que haya configurado DKIM, si aún no ha configurado SPF, debe hacerlo. Para obtener una introducción rápida a SPF y configurarlo rápidamente, consulte [**Configurar SPF en Microsoft 365 para ayudar a evitar la suplantación de identidad**](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Para obtener una comprensión más detallada de cómo Microsoft 365 usa SPF, o para solucionar problemas o implementaciones no estándar, como las implementaciones híbridas, comience con [Cómo Microsoft 365 usa el marco de directivas de remitente (SPF) para evitar la suplantación de identidad](how-office-365-uses-spf-to-prevent-spoofing.md). 
 
-A continuación, consulte [**Usar DMARC para validar el correo electrónico**](use-dmarc-to-validate-email.md). Los [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md) incluyen la sintaxis y los campos de encabezado que usa Microsoft 365 para efectuar comprobaciones de DKIM.
+A continuación, consulte [**Usar DMARC para validar el correo electrónico**](use-dmarc-to-validate-email.md). Los [Encabezados de filtro de correo no deseado del mensaje](anti-spam-message-headers.md) incluyen los campos de sintaxis y encabezado usados por Microsoft 365 para las comprobaciones DKIM.
 
 **Esta prueba validará** que la configuración de firma DKIM se ha configurado correctamente y que se han publicado las entradas DNS adecuadas.
+
+> [!NOTE]
+> Esta función requiere una cuenta de administrador de Microsoft 365. Esta característica no está disponible para Microsoft 365 Gobierno, Microsoft 365 operado por 21Vianet o Microsoft 365 Alemania.
 
 <div class="nextstepaction">
 <p><a href="https://admin.microsoft.com/AdminPortal/?searchSolutions=DKIM#/homepage" data-linktype="external">Ejecutar pruebas: DKIM</a></p>

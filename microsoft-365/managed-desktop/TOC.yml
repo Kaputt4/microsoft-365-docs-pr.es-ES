@@ -112,16 +112,23 @@
           href: get-started/localization.md
         - name: Validar los dispositivos nuevos
           href: get-started/validate-device.md
-        - name: Configurar dispositivos
-          href: get-started/set-up-devices.md
+        - name: Preparar dispositivos
+          href: null
           items:
-            - name: Registre nuevos dispositivos usted mismo
-              href: get-started/register-devices-self.md
+            - name: Introducción
+              href: get-started/prepare-devices.md
+            - name: Registro de dispositivos
+              href: null
               items:
-                - name: Pasos para que los Socios puedan registrar dispositivos
-                  href: get-started/register-devices-partner.md
-            - name: Registre dispositivos existentes usted mismo
-              href: get-started/register-reused-devices-self.md
+                - name: Métodos de registro del dispositivo
+                  href: get-started/device-registration-methods.md
+                  items:
+                    - name: Registro manual
+                      href: get-started/manual-registration.md
+                    - name: Registro de asociados
+                      href: get-started/partner-registration.md
+                    - name: Registro manual para dispositivos existentes
+                      href: get-started/manual-registration-existing-devices.md
         - name: Habilitar características de soporte técnico para usuarios
           href: get-started/enable-support.md
         - name: Prepare a los usuarios para que usen dispositivos
@@ -184,5 +191,5 @@
               href: working-with-managed-desktop/config-setting-deploy.md
         - name: Vista previa y prueba de Windows 11 con Escritorio administrado de Microsoft
           href: working-with-managed-desktop/test-win11-mmd.md
-    - name: Cambiar el historial de la documentación de Escritorio administrado de Microsoft
+    - name: Historial de cambios
       href: change-history-managed-desktop.md

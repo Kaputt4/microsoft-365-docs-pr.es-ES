@@ -1,5 +1,5 @@
 ---
-title: Libros de juegos de clasificación de alertas
+title: Cuadernos de estrategias de calificación de alertas
 description: Revisa las alertas de ataques conocidos y toma las acciones recomendadas para corregir el ataque y proteger la red.
 keywords: incidentes, alertas, investigar, analizar, responder, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365
 search.appverid: met150
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,19 +23,19 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: fe0beb88cf613a5a966fc0534dfa4def715e81d2
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 129a4f2efd9a47c09535be3ba0f56504f3da697c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355234"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328013"
 ---
-# <a name="alert-grading-playbooks"></a>Libros de juegos de clasificación de alertas
+# <a name="alert-grading-playbooks"></a>Cuadernos de estrategias de calificación de alertas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Los libros de juegos de clasificación de alertas te permiten revisar metóricamente y clasificar rápidamente las alertas de ataques conocidos y realizar acciones recomendadas para corregir el ataque y proteger la red. La clasificación de alertas también ayudará a clasificar correctamente el incidente general.
 
@@ -48,9 +48,9 @@ Como investigador de seguridad o analista del Centro de operaciones de seguridad
 >Puede proporcionar comentarios a Microsoft sobre alertas de verdaderos positivos y falsos positivos, no solo al final de la investigación, sino también durante el proceso de investigación. Esto puede ayudar a Microsoft con el análisis futuro y la clasificación de eventos de seguridad.
 >
 
-## <a name="microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365
+## <a name="microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365
 
-[Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) protege su organización contra amenazas malintencionadas que suponen mensajes de correo electrónico, vínculos (URL) y herramientas de colaboración. Microsoft Defender para Office 365 incluye:
+[Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) protege su organización contra las amenazas malintencionadas que suponen los mensajes de correo electrónico, los vínculos (URL) y las herramientas de colaboración. Microsoft Defender para Office 365 incluye:
 
 - Directivas de protección contra amenazas
 
@@ -74,7 +74,7 @@ Defender para Office 365 alertas se puede clasificar como:
 - Falso positivo (FP) para actividad no malintencionada confirmada.
 
 >[!Note]
->Microsoft 365 Defender portal reúne [https://security.microsoft.com](https://security.microsoft.com) la funcionalidad de los portales de seguridad de Microsoft existentes. El portal Microsoft 365 Defender hace hincapié en el acceso rápido a la información, diseños más sencillos y reunir información relacionada para un uso más fácil.
+>Microsoft 365 Defender portal reúne [https://security.microsoft.com](https://security.microsoft.com) las funciones de los portales de seguridad de Microsoft existentes. El Microsoft 365 Defender hace hincapié en el acceso rápido a la información, diseños más sencillos y reunir información relacionada para un uso más fácil.
 >
 
 ## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
@@ -91,12 +91,12 @@ Las alertas de Defender para Aplicaciones en la nube se pueden clasificar como:
 - Positivo real benigno (B-TP) para actividad sospechosa pero no malintencionada, como una prueba de penetración u otra acción sospechosa autorizada. 
 - FP para actividad no malintencionada confirmada.
 
-## <a name="alert-grading-playbooks"></a>Libros de juegos de clasificación de alertas
+## <a name="alert-grading-playbooks"></a>Cuadernos de estrategias de calificación de alertas
 
 Consulta estos libros de juegos para ver los pasos para calificar alertas más rápidamente para las siguientes amenazas:
 
 - [Actividad de reenvío de correo electrónico sospechoso](alert-grading-playbook-email-forwarding.md)
 - [Reglas sospechosas de manipulación de la bandeja de entrada](alert-grading-playbook-inbox-manipulation-rules.md)
-- [Reglas de reenvío de bandeja de entrada sospechosas](alert-grading-playbook-inbox-forwarding-rules.md)
+- [Reglas del reenvío sospechoso desde la bandeja de entrada](alert-grading-playbook-inbox-forwarding-rules.md)
 
 Consulte [Investigar alertas](investigate-alerts.md) para obtener información sobre cómo examinar las alertas con el portal Microsoft 365 Defender web.

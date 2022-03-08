@@ -7,8 +7,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.date: 11/24/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 547356fadc05c2359b4c6cd639bc22110bf8be93
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 31b2a7b41c26bdba22e6f364e517471e31e9115c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346283"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313025"
 ---
 # <a name="overview-of-automated-investigations"></a>Introducción a las investigaciones automatizadas
 
@@ -84,7 +84,10 @@ Todas las acciones de corrección, ya sean pendientes o completadas, se realiza 
 
 ## <a name="requirements-for-air"></a>Requisitos para AIR
 
-Su organización debe tener Defender para endpoint (consulte [Requisitos mínimos para Microsoft Defender para Endpoint](minimum-requirements.md).
+Su organización debe tener Defender para endpoint (consulte [Requisitos mínimos para Microsoft Defender para endpoint](minimum-requirements.md)).
+
+> [!NOTE]
+> La investigación y la respuesta automatizadas Antivirus de Microsoft Defender para ejecutarse en modo pasivo o en modo activo. Si Antivirus de Microsoft Defender está deshabilitado o desinstalado, la investigación automatizada y la respuesta no funcionarán correctamente.
 
 Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 
@@ -103,7 +106,7 @@ Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 - [Consulta la guía interactiva: Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 - [Configurar las capacidades automatizadas de investigación y corrección en Microsoft Defender para endpoint](configure-automated-investigations-remediation.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Protección PUA](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Investigación y respuesta automatizadas en Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/office-365-air)

@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
-ms.openlocfilehash: 89170c4479af29e9a4b3f46fa3b44ae2fcfa5500
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: aee590f7479119ee7e8679b1048a691f156ccc77
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444622"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315083"
 ---
 # <a name="access-the-admin-portal"></a>Acceso al portal de administración
 
@@ -30,7 +30,7 @@ La puerta de enlace al servicio de Escritorio administrado de Microsoft [es Micr
 
 Su cuenta administrativa necesitará permisos específicos para tener acceso a las características administrativas de Escritorio administrado de Microsoft en Microsoft Endpoint Manager.
 
-Puede administrar el acceso de administrador a estas características dentro de la organización mediante el control de acceso basado en roles. Hay Azure Active Directory (Azure AD) de administrador y roles integrados de Escritorio administrado de Microsoft están disponibles para proporcionar un control más detallado a las distintas características del portal de administración de escritorio administrado de Microsoft. Para obtener más información acerca Azure Active Directory roles, [vea Azure AD roles integrados](/azure/active-directory/roles/permissions-reference).
+Puede administrar el acceso de administrador a estas características dentro de la organización mediante el control de acceso basado en roles. Hay Azure Active Directory (Azure AD) de administrador y roles integrados de Escritorio administrado de Microsoft para proporcionar un control más detallado a las diferentes características del portal de administración de escritorio administrado de Microsoft. Para obtener más información acerca Azure Active Directory roles, [vea Azure AD roles integrados](/azure/active-directory/roles/permissions-reference).
 
 A diferencia Azure AD roles de administrador que se aplican a varios productos y servicios de Microsoft, los roles integrados son específicos de Microsoft Managed Desktop y solo garantizan el acceso a las características de administrador de este servicio. Los administradores pueden asignar roles integrados a los usuarios individualmente o en combinación Azure AD roles de administrador para agregar permisos de Escritorio administrado de Microsoft a cuentas de administrador existentes.
 
@@ -70,7 +70,7 @@ Para facilitar la administración de roles integrados, hay un grupo de seguridad
 
 **Para asignar usuarios a uno de estos grupos de seguridad:**
 
-1. Vaya al portal Microsoft Endpoint Manager web.
+1. Vaya al Microsoft Endpoint Manager web.
 2. En el panel izquierdo, seleccione **Grupos**.
 3. Busque Roles **modernos del lugar de** trabajo y, a continuación, seleccione el grupo asociado con el rol que desea asignar.
 4. Seleccione **Miembros** en el lado izquierdo y, a continuación, **seleccione + Agregar miembros** en la barra de comandos.
@@ -101,7 +101,7 @@ Para facilitar la administración de roles integrados, hay un grupo de seguridad
 1. Implementar y asignar el [Portal de empresa de Intune](company-portal.md).
 1. [Asignar las licencias](assign-licenses.md).
 1. [Implementar las aplicaciones](deploy-apps.md).
-1. [Configurar los dispositivos](set-up-devices.md).
+1. [Preparar dispositivos](prepare-devices.md).
 1. Configurar la [experiencia de primera ejecución con el Autopilot y la página de estado de inscripción](esp-first-run.md).
 1. [Habilitar las características de soporte técnico para el usuario](enable-support.md).
 1. [Preparar a los usuarios para que usen los dispositivos](get-started-devices.md).

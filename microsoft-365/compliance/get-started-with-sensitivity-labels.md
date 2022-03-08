@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Se ha decidido a implementar etiquetas de confidencialidad para proteger los datos de su organización, pero no sabe por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: b5d7a6c18f112b7f35aa2599ff2639894a735f9b
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: adc939d44715bcfaeb97cdbfa530f55a5aeecd4e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171879"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322091"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
@@ -73,7 +73,7 @@ Como alternativa al uso de los roles predeterminados, puede crear un nuevo grupo
 > - **Investigadores de Information Protection**
 > - **Lectores de Information Protection**
 >
-> Para obtener una explicación de cada uno de ellos y de los nuevos roles que contienen, seleccione un grupo de roles en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> > **Permisos y roles** > **Centro de cumplimiento** > **Roles** y, a continuación, revise la descripción en el panel desplegable. O bien, consulte [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
+> Para obtener una explicación de cada uno de ellos y de los nuevos roles que contienen, seleccione un grupo de roles en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> > **Permisos y roles** > **Centro de cumplimiento** > **Roles** y, a continuación, revise la descripción en el panel desplegable. También puede consultar [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
 
 Para obtener instrucciones sobre cómo agregar usuarios al grupo de roles predeterminado, roles o crear sus propios grupos de roles, consulte [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md).
 
@@ -99,6 +99,7 @@ Todos los escenarios requieren que [Crear y configurar etiquetas de confidencial
 |Usar la coautoría y guardar automáticamente en las aplicaciones de escritorio de Office cuando los documentos están cifrados | [Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md)
 |Aplicar automáticamente etiquetas de confidencialidad a documentos y mensajes de correo electrónico | [Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)|
 |Use etiquetas de confidencialidad para proteger el contenido de Teams y SharePoint |[Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](sensitivity-labels-teams-groups-sites.md)|
+|Usar etiquetas de confidencialidad para configurar el tipo de vínculo de uso compartido predeterminado para los sitios y documentos individuales en SharePoint y OneDrive |[Usar etiquetas de confidencialidad para establecer el vínculo de uso compartido predeterminado para sitios y documentos en SharePoint y OneDrive](sensitivity-labels-default-sharing-link.md)|
 |Aplicar una etiqueta de confidencialidad a un modelo de comprensión de documentos, de modo que los documentos identificados en una biblioteca SharePoint se clasifiquen y se protejan automáticamente |[Aplicar una etiqueta de confidencialidad a un modelo en Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)|
 |Prevenir o advertir a los usuarios sobre el uso compartido de archivos o correos electrónicos con una etiqueta de confidencialidad específica |[Usar etiquetas de confidencialidad como condiciones en las directivas de DLP](dlp-sensitivity-label-as-condition.md) |
 |Aplicar una etiqueta de retención para conservar o eliminar archivos o correos electrónicos que tengan una etiqueta de confidencialidad específica|[Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido](apply-retention-labels-automatically.md) |

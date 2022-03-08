@@ -13,24 +13,22 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6dd14da2955cf9ee701f7b2bf6031bf27c78beda
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a2763cdd670ee3916dfe4e9d3cbd42df21709f41
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166415"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316021"
 ---
 # <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>Descargar el analizador de cliente de Microsoft Defender para endpoint
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Obtenga información sobre cómo descargar el analizador de cliente de Microsoft Defender para endpoint en sistemas operativos Windows, macOS y Linux compatibles.
+Obtenga información sobre cómo descargar el analizador de cliente de Microsoft Defender para endpoint en sistemas operativos compatibles Windows, macOS y Linux.
 
 ## <a name="download-client-analyzer-for-windows-os"></a>Descargar analizador de cliente para Windows sistema operativo
 

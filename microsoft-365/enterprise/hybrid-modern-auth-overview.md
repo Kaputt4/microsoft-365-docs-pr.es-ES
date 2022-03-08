@@ -15,13 +15,13 @@ ms.collection:
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: En este artículo, aprenderá acerca de la autenticación moderna híbrida y los requisitos previos para su uso con servidores Skype Empresarial y Exchange locales.
-ms.openlocfilehash: f0abb01b7a03405f576a12766b21b3c36113004d
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+description: En este artículo, aprenderá acerca de la autenticación moderna híbrida y los requisitos previos para su uso con servidores Skype Empresarial y Exchange local.
+ms.openlocfilehash: efce3b5a04f2e9500330cab87d7ba8e62ca49db0
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807313"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312871"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Introducción a la autenticación moderna híbrida y requisitos previos para el uso en Skype Empresarial y los servidores de Exchange locales
 
@@ -46,9 +46,9 @@ La autenticación moderna es un término genérico para una combinación d méto
 
 La administración de identidades de usuario con la autenticación moderna ofrece a los administradores distintas herramientas para la protección de los recursos y ofrece métodos más seguros de administración de identidades para escenarios locales (Exchange y Skype Empresarial), implementaciones híbridas de Exchange y dominios divididos o híbridos de Skype Empresarial.
 
-Dado que Skype Empresarial funciona estrechamente con Exchange, el comportamiento de inicio de sesión Skype Empresarial usuarios cliente se verán afectados por el estado de autenticación moderno de Exchange. También es aplicable si tiene una arquitectura híbrida de dominio dividido de  Skype Empresarial, en la que tiene Skype Empresarial Online y Skype Empresarial local, con usuarios en ambas ubicaciones.
+Dado Skype Empresarial funciona estrechamente con Exchange, el comportamiento de inicio de sesión Skype Empresarial usuarios cliente se verán afectados por el estado de autenticación moderno de Exchange. También es aplicable si tiene una arquitectura híbrida de dominio dividido  de Skype Empresarial, en la que tiene Skype Empresarial Online y Skype Empresarial local, con usuarios en ambas ubicaciones.
 
-Para obtener más información acerca de la autenticación moderna en Office 365, vea [Office 365 Client App Support - Multi-factor authentication](microsoft-365-client-support-multi-factor-authentication.md).
+Para obtener más información acerca de la autenticación moderna en Office 365, [vea Office 365 Client App Support - Multi-factor authentication](microsoft-365-client-support-multi-factor-authentication.md).
 
 > [!IMPORTANT]
 > A partir de agosto de 2017, todos los nuevos espacios empresariales de Office 365 que incluyen Skype Empresarial online y Exchange online tienen la autenticación moderna habilitada de manera predeterminada. Los espacios empresariales preexistentes no tendrán un cambio en el estado de su MA predeterminado, pero todos los nuevos espacios empresariales admiten automáticamente el conjunto ampliado de características de identidad que aparecen anteriormente. Para comprobar el estado de su MA, vea la sección [Comprobar el estado de la autenticación moderna de su entorno local](hybrid-modern-auth-overview.md#BKMK_CheckStatus).
@@ -60,7 +60,7 @@ Cuando se usa la autenticación moderna con un servidor de Exchange o Skype Empr
 
 El cambio a evoSTS permite que los servidores locales usen OAuth (emisión de tokens) para autorizar a los clientes, y también el uso de métodos de seguridad comunes en la nube (igual que la autenticación multifactor). Además, el evoSTS emite tokens que permiten que los usuarios soliciten el acceso a los recursos sin proporcionar su contraseña como parte de la solicitud. Independientemente de la ubicación de los usuarios (en línea o en el entorno local) y de la ubicación donde se encuentre el recurso necesario, EvoSTS se convertirá en el centro de autorización de usuarios y clientes cuando se configure la autenticación moderna.
 
-Por ejemplo, si un cliente de Skype Empresarial necesita tener acceso Exchange un servidor para obtener información de calendario en nombre de un usuario, usa la Biblioteca de autenticación de Microsoft (MSAL) para hacerlo. MSAL es una biblioteca de código diseñada para que los recursos protegidos del directorio estén disponibles para las aplicaciones cliente mediante tokens de seguridad de OAuth. MSAL funciona con OAuth para comprobar notificaciones y para intercambiar tokens (en lugar de contraseñas), para conceder a un usuario acceso a un recurso. En el pasado, la autoridad de una transacción como esta (el servidor que sabe cómo validar notificaciones de usuario y emitir los tokens necesarios) podría haber sido un servicio de token de seguridad local o incluso servicios de federación de Active Directory. Sin embargo, la autenticación moderna centraliza dicha autoridad al usar Azure AD.
+Por ejemplo, si un cliente Skype Empresarial necesita tener acceso Exchange un servidor para obtener información de calendario en nombre de un usuario, usa la Biblioteca de autenticación de Microsoft (MSAL) para hacerlo. MSAL es una biblioteca de código diseñada para que los recursos protegidos del directorio estén disponibles para las aplicaciones cliente mediante tokens de seguridad de OAuth. MSAL funciona con OAuth para comprobar notificaciones y para intercambiar tokens (en lugar de contraseñas), para conceder a un usuario acceso a un recurso. En el pasado, la autoridad de una transacción como esta (el servidor que sabe cómo validar notificaciones de usuario y emitir los tokens necesarios) podría haber sido un servicio de token de seguridad local o incluso servicios de federación de Active Directory. Sin embargo, la autenticación moderna centraliza dicha autoridad al usar Azure AD.
 
 Esto también significa que, aunque el servidor de Exchange y los entornos de Skype Empresarial puedan ser totalmente locales, el servidor de autorización estará en línea, y el entorno local debe tener la capacidad de crear y mantener una conexión con la suscripción de Office 365 en la nube (y la instancia de Azure AD que la suscripción usa como directorio).
 
@@ -100,7 +100,7 @@ Verifique y compruebe estos elementos antes de continuar:
   - Todos los servidores deben tener la actualización acumulativa de mayo de 2017 (CU5) para Skype Empresarial Server 2015 o posterior
     - **Excepción:** Aplicación de sucursal con funciones de supervivencia (SBA) puede estar en la versión actual (basada en Lync 2013)
   - El dominio SIP se ha agregado como un dominio federado en Office 365
-  - Todos los front-ends SFB deben tener conexiones salientes a Internet, a direcciones URL de autenticación de Office 365 (TCP 443) y CRLs raíz de certificado conocidas (TCP 80) enumeradas en las filas 56 y 125 de la sección "Microsoft 365 Common and Office" de direcciones URL e [intervalos](urls-and-ip-address-ranges.md) de direcciones IP de Office 365.
+  - Todos los front-ends SFB deben tener conexiones salientes a Internet, a direcciones URL de autenticación de Office 365 (TCP 443) y CRLs raíz de certificado conocidas (TCP 80) enumeradas en las filas 56 y 125 de la sección "Microsoft 365 Common and Office" de las direcciones URL de Office 365 y los [intervalos](urls-and-ip-address-ranges.md) de direcciones IP.
 
 - **Skype Empresarial en un entorno híbrido de Office 365**
   - Una implementación de Skype Empresarial Server 2019 con todos los servidores que ejecuten Skype Empresarial Server 2019.
@@ -158,7 +158,7 @@ Verifique y compruebe estos elementos antes de continuar:
   |Outlook para iOS y Android  <br/> | Tecnología de sincronización de Microsoft <br/> |Consulte [Usar la autenticación moderna híbrida con Outlook para iOS y Android](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) para más información.  <br/> |
   |Exchange ActiveSync clientes (por ejemplo, correo de iOS11)  <br/> |Exchange ActiveSync  <br/> |Para los clientes de Exchange ActiveSync que son compatibles con la autenticación moderna, debe volver a crear el perfil para cambiar de la autenticación básica a la autenticación moderna.  <br/> |
 
-    Los clientes y/o protocolos que no aparecen (por ejemplo, POP3) no admiten la autenticación moderna con Exchange local y siguen usando mecanismos de autenticación heredados incluso después de habilitar la autenticación moderna en el entorno.
+    Los clientes o protocolos que no aparecen (por ejemplo, POP3) no admiten la autenticación moderna con Exchange local y siguen usando mecanismos de autenticación heredados incluso después de habilitar la autenticación moderna en el entorno.
 
 - **Requisitos previos generales**
   - Los escenarios de bosque de recursos requerirán una confianza de dos vías con el bosque de cuentas para garantizar que las búsquedas SID correctas se realicen durante las solicitudes de autenticación moderna híbrida. 
@@ -169,7 +169,8 @@ Verifique y compruebe estos elementos antes de continuar:
     > [!NOTE]
     > La autenticación moderna híbrida no es compatible con el [Agente híbrido](/exchange/hybrid-deployment/hybrid-agent).
 
-  - Asegúrese de que tanto un usuario de prueba local como un usuario de prueba híbrida que se encuentra en Office 365 puedan iniciar sesión en el cliente de escritorio de Skype Empresarial (si desea usar la autenticación moderna con Skype) y Microsoft Outlook (si desea usar la autenticación moderna con Exchange).
+  - Asegúrese de que, tanto un usuario de prueba local como un usuario de prueba híbrida alojado en Office 365, puedan iniciar sesión en el cliente de escritorio de Skype Empresarial (si desea usar la autenticación moderna con Skype) y Microsoft Outlook (si desea usar la autenticación moderna con Exchange).
+  - Asegúrese de que la configuración SignInOptions de Microsoft Office no esté configurada en su configuración más restrictiva. Para obtener más información, vea [How to allow Office to connect to the Internet](/office365/troubleshoot/access-management/office-feature-disabled).
 
 ## <a name="what-else-do-i-need-to-know-before-i-begin"></a>¿Qué más necesito saber antes de comenzar?
 <a name="BKMK_Whatelse"> </a>

@@ -2,8 +2,8 @@
 title: Administrar compras de autoservicio (usuarios)
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: mijeffer, pablom
 audience: Admin
@@ -12,18 +12,18 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom:
-- AdminSurgePortfolio
 - commerce_ssp
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Los usuarios pueden aprender a administrar sus compras de autoservicio.
 ms.date: 03/17/2021
-ms.openlocfilehash: 86b147ebd81842dee4aa15795650dee9c0f3fe5c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: bf3404a900872090048b6b092d97f81fd5fd7c5a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372905"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316525"
 ---
 # <a name="manage-self-service-purchases-users"></a>Administrar compras de autoservicio (usuarios)
 
@@ -45,7 +45,7 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
 ::: moniker-end
-2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
+2. En la **pestaña Productos** , seleccione el icono de filtro y, a continuación, seleccione **Autoservicio**.
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>Cómo comprar más o reducir licencias
 
@@ -59,9 +59,9 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
 ::: moniker-end
-2. En la **pestaña Productos,** seleccione la suscripción para la que desea comprar más o reducir las licencias.
-3. Elija **Comprar licencias o** Quitar **licencias.**
-4. En el panel derecho, en el cuadro **Licencias totales,** escriba el número total de licencias que desea para esta suscripción y, a continuación, **elija Guardar**. Por ejemplo, si tiene 100 licencias y desea agregar 5 más, escriba 105.
+2. En la **pestaña Productos** , seleccione la suscripción para la que desea comprar más o reducir las licencias.
+3. Elija **Comprar licencias o** **Quitar licencias**.
+4. En el panel derecho, en el cuadro **Total** de licencias, escriba el número total de licencias que desea para esta suscripción y, a continuación, **elija Guardar**. Por ejemplo, si tiene 100 licencias y desea agregar 5 más, escriba 105.
 
 ## <a name="assign-or-unassign-licenses"></a>Asignar o desasignación de licencias
 
@@ -101,7 +101,7 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 2. Elija el producto para el que desea desasignación de licencias.
 3. Elija los usuarios a los que desea desasignación de licencias.
 4. Elija **Unassign licenses**.
-5. En el **cuadro Unassign licenses,** elija **Unassign**.
+5. En el **cuadro Unassign licenses** , elija **Unassign**.
 
 ## <a name="cancel-a-subscription"></a>Cancelar una suscripción
 
@@ -117,13 +117,13 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 ::: moniker-end
 2. En la pestaña **Productos**, busque la suscripción que quiere cancelar. Seleccione los tres puntos (más acciones) y después elija **Cancelar suscripción**.
 3. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Opcionalmente, proporcione los comentarios que tenga.
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
 ## <a name="manage-your-payment-details"></a>Administrar los detalles de pago
 
-1. En el Centro de administración, ve a la página  >  **Facturación & perfiles**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">de facturación.</a>
+1. En el Centro de administración, vaya a la página **BillingBills** >  **& paymentsBilling** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">profiles</a>.
 2. Seleccione un perfil de facturación de la lista.
-3. En la página de detalles del perfil de facturación, en **Método de pago,** elija una de las siguientes opciones:
+3. En la página detalles del perfil de facturación, en **Método de pago**, elija una de las siguientes opciones:
     - Si desea actualizar un método de pago existente, seleccione **Editar**.
     - Si desea agregar un nuevo método de pago, seleccione **Reemplazar**.
 4. En el panel derecho, escriba los detalles de la tarjeta y, a continuación, **elija Guardar**.
@@ -139,15 +139,15 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 
 1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
 2. En la **pestaña Métodos de** pago, elija **Agregar un método de pago**.
-3. En el **panel Agregar un método de** pago, escriba la información del nuevo método de pago y, a continuación, elija **Agregar**.
+3. En el **panel Agregar un método de** pago, escriba la información del nuevo método de pago y, a continuación, **elija Agregar**.
 
 ## <a name="view-your-invoices"></a>Ver las facturas
 
-1. En el Centro de administración, vaya a **Facturación**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">facturación & de pagos.</a>
-2. En la **pestaña Facturas,** seleccione la factura que desea ver. Si no hay facturas visibles, cambie **Pasados 3** meses a **Pasados 6** meses o **Especifique un intervalo de fechas**.
+1. En el Centro de administración, vaya a **BillingBills** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& de pagos</a>.
+2. En la **pestaña Facturas** , seleccione la factura que desea ver. Si no hay facturas visibles, cambie **Pasados 3** meses a **Pasados 6** meses o **Especifique un intervalo de fechas**.
 
 ## <a name="need-help-contact-us"></a>¿Necesita ayuda? Póngase en contacto con nosotros.
 
-Para obtener preguntas comunes acerca de las compras de autoservicio, consulta Preguntas más frecuentes sobre compras [de autoservicio.](self-service-purchase-faq.yml)
+Para obtener preguntas comunes acerca de las compras de autoservicio, consulta [Preguntas más frecuentes sobre compras de autoservicio](self-service-purchase-faq.yml).
 
 Si tiene preguntas o necesita ayuda con las compras de autoservicio, póngase [en contacto con el soporte técnico](../../admin/get-help-support.md).

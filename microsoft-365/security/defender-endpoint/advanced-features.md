@@ -14,17 +14,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0d0faebdf3b815bdca968cdd790767c5d36179b6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 56a836e14051e3f621fb42fd518fb2cf5efe8bed
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165215"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327705"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -36,8 +36,8 @@ Según los productos de seguridad de Microsoft que use, algunas características
 
 ## <a name="enable-advanced-features"></a>Habilitar características avanzadas
 
-1. En el panel de navegación, **seleccione Configuración** Características avanzadas \> **de** \> **endpoints**.
-2. Seleccione la característica avanzada que desea configurar y alternar la configuración entre **On** y **Off**.
+1. En el panel de navegación, **seleccione Configuración** \> **características avanzadas de** \> **extremos**.
+2. Seleccione la característica avanzada que desea configurar y alternar la configuración entre **Activar** y **Desactivar**.
 3. Haga clic **en Guardar preferencias**.
 
 Use las siguientes características avanzadas para protegerse mejor de los archivos potencialmente malintencionados y obtener una mejor información durante las investigaciones de seguridad.
@@ -48,15 +48,18 @@ Active esta característica para aprovechar las características automatizadas d
 
 ## <a name="live-response"></a>Respuesta en directo
 
+> [!NOTE]
+> La respuesta activa requiere **que se** active la investigación automatizada antes de habilitarla en la sección configuración avanzada del portal de Microsoft Defender para endpoints.
+
 Active esta característica para que los usuarios con los permisos adecuados puedan iniciar una sesión de respuesta en directo en dispositivos.
 
-Para obtener más información acerca de las asignaciones de roles, vea [Create and manage roles](user-roles.md).
+Para obtener más información acerca de las asignaciones de roles, [vea Create and manage roles](user-roles.md).
 
 ## <a name="live-response-for-servers"></a>Respuesta en directo para servidores
 
 Active esta característica para que los usuarios con los permisos adecuados puedan iniciar una sesión de respuesta en directo en los servidores.
 
-Para obtener más información acerca de las asignaciones de roles, vea [Create and manage roles](user-roles.md).
+Para obtener más información acerca de las asignaciones de roles, [vea Create and manage roles](user-roles.md).
 
 ## <a name="live-response-unsigned-script-execution"></a>Ejecución de script sin signo de respuesta en directo
 
@@ -84,7 +87,7 @@ La detección y respuesta de puntos de conexión (EDR) en modo de bloqueo propor
 Para los inquilinos creados en o después de Windows 10, versión 1809, la capacidad de investigación automatizada y corrección está configurada de forma predeterminada para resolver alertas en las que el estado del resultado del análisis automatizado es "No se encontraron amenazas" o "Corregido". Si no quieres que las alertas se resuelvan automáticamente, tendrás que desactivar manualmente la característica.
 
 > [!TIP]
-> Para los inquilinos creados antes de esa versión, deberá activar manualmente esta característica desde la [página Características avanzadas.](https://security.microsoft.com//preferences2/integration)
+> Para los inquilinos creados antes de esa versión, deberá activar manualmente esta característica desde la [página Características avanzadas](https://security.microsoft.com//preferences2/integration) .
 
 > [!NOTE]
 >
@@ -102,9 +105,9 @@ Esta característica permite bloquear archivos potencialmente malintencionados e
 
 Para activar **Permitir o bloquear** archivos:
 
-1. En el panel de navegación, **seleccione Configuración** \> **Características avanzadas** \>  \> **generales de** \> puntos de conexión Permitir o bloquear archivo .
+1. En el panel de navegación, **seleccione Configuración** \> **características avanzadas** \>  \> **generales de** \> extremos **permitir o bloquear el archivo**.
 
-1. Alterna la configuración entre **On** y **Off**.
+1. Alterna la configuración entre **Activar** y **Desactivar**.
  
     :::image type="content" source="../../media/alloworblockfile.png" alt-text="Imagen de la configuración avanzada de la característica de archivo de bloqueo.":::
 
@@ -116,7 +119,7 @@ Después de activar esta característica, puede [bloquear archivos a través](re
 
 Activar esta característica permite crear indicadores para direcciones IP, dominios o direcciones URL, que determinan si se permitirán o bloquearán en función de la lista de indicadores personalizada.
 
-Para usar esta característica, los dispositivos deben Windows 10 versión 1709 o posterior, o Windows 11. También deben tener protección de red en modo de bloqueo y versión 4.18.1906.3 o posterior de la plataforma antimalware vea [KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834).
+Para usar esta característica, los dispositivos deben ejecutarse Windows 10 versión 1709 o posterior, o Windows 11. También deben tener protección de red en modo de bloqueo y versión 4.18.1906.3 o posterior de la plataforma antimalware vea [KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834).
 
 Para obtener más información, vea [Administrar indicadores](manage-indicators.md).
 
@@ -128,7 +131,7 @@ Durante algunos tipos de ataques cibernéticos, los actores malos intentan desha
 
 La protección contra alteraciones bloquea Antivirus de Microsoft Defender y evita que se cambie la configuración de seguridad a través de aplicaciones y métodos.
 
-Esta característica está disponible si su organización usa Antivirus de Microsoft Defender y la protección basada en la nube está habilitada. Para obtener más información, vea [Use next-generation technologies in Antivirus de Microsoft Defender through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md).
+Esta característica está disponible si su organización usa Antivirus de Microsoft Defender y la protección basada en la nube está habilitada. Para obtener más información, consulte [Use next-generation technologies in Antivirus de Microsoft Defender through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md).
 
 Mantenga activada la protección contra alteraciones para evitar cambios no deseados en la solución de seguridad y sus características esenciales.
 
@@ -144,10 +147,10 @@ Para obtener más información, vea [Investigar una cuenta de usuario](investiga
 
 ## <a name="skype-for-business-integration"></a>Skype Empresarial integración
 
-La habilitación Skype Empresarial integración le permite comunicarse con los usuarios mediante Skype Empresarial, correo electrónico o teléfono. Esto puede ser útil cuando necesita comunicarse con el usuario y mitigar los riesgos.
+La habilitación Skype Empresarial integración le ofrece la capacidad de comunicarse con los usuarios mediante Skype Empresarial, correo electrónico o teléfono. Esto puede ser útil cuando necesita comunicarse con el usuario y mitigar los riesgos.
 
 > [!NOTE]
-> Cuando un dispositivo se aísla de la red, hay una ventana emergente donde puedes elegir habilitar las comunicaciones Outlook y Skype que permite las comunicaciones al usuario mientras se desconectan de la red. Esta configuración se aplica a Skype y Outlook comunicación cuando los dispositivos están en modo aislado.
+> Cuando un dispositivo se aísla de la red, hay una ventana emergente en la que puedes habilitar las comunicaciones de Outlook y Skype que permiten las comunicaciones al usuario mientras están desconectados de la red. Esta configuración se aplica a Skype y Outlook comunicación cuando los dispositivos están en modo aislado.
 
 ## <a name="microsoft-defender-for-identity-integration"></a>Integración de Microsoft Defender para identidades
 
@@ -158,32 +161,28 @@ La integración con Microsoft Defender for Identity te permite pivotar directame
 
 ## <a name="office-365-threat-intelligence-connection"></a>Office 365 de inteligencia de amenazas
 
-Esta característica solo está disponible si tienes un Office 365 E5 activo o el complemento inteligencia de amenazas. Para obtener más información, vea la Office 365 Enterprise de producto de E5.
+Esta característica solo está disponible si tienes un Office 365 E5 activo o el complemento de inteligencia de amenazas. Para obtener más información, vea la Office 365 Enterprise de producto de E5.
 
-Al activar esta característica, podrás incorporar datos de Microsoft Defender para Office 365 en Microsoft 365 Defender para llevar a cabo una investigación de seguridad completa en Office 365 buzones y dispositivos Windows.
+Al activar esta característica, podrás incorporar datos de Microsoft Defender para Office 365 en Microsoft 365 Defender para llevar a cabo una investigación de seguridad completa en buzones de correo y dispositivos Office 365 Windows.
 
 > [!NOTE]
 > Tendrás que tener la licencia adecuada para habilitar esta característica.
 
-Para recibir la integración contextual de dispositivos en Office 365 inteligencia de amenazas, deberás habilitar la configuración de Defender para endpoints en el panel Seguridad & cumplimiento. Para obtener más información, vea [Threat investigation and response](/microsoft-365/security/office-365-security/office-365-ti).
+Para recibir la integración contextual de dispositivos en Office 365 inteligencia de amenazas, deberás habilitar la configuración de Defender for Endpoint en el panel Seguridad & cumplimiento. Para obtener más información, vea [Investigación y respuesta de amenazas](/microsoft-365/security/office-365-security/office-365-ti).
 
 ## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Expertos en amenazas de Microsoft: notificaciones de ataque dirigido
 
 De los dos componentes de Microsoft Threat Expert, la notificación de ataques dirigidos está en disponibilidad general. La funcionalidad de expertos a petición aún está en versión preliminar. Solo puede usar la funcionalidad de expertos a petición si ha solicitado una vista previa y la aplicación se ha aprobado. Puedes recibir notificaciones de ataques dirigidos desde Expertos en amenazas de Microsoft a través del panel de alertas del portal de defender para puntos de conexión y por correo electrónico si lo configuras.
 
 > [!NOTE]
-> La Expertos en amenazas de Microsoft de Defender for Endpoint está disponible con una licencia de E5 para [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
+> La Expertos en amenazas de Microsoft de Defender for Endpoint está disponible con una licencia E5 para [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
 
 ## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
 Al habilitar esta configuración, Defender para las señales de punto de conexión se remite a Microsoft Defender para aplicaciones en la nube para proporcionar una mayor visibilidad del uso de aplicaciones en la nube. Los datos reenviados se almacenan y procesan en la misma ubicación que los datos de Defender for Cloud Apps.
 
 > [!NOTE]
-> Esta característica estará disponible con una licencia E5 para [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) en dispositivos que ejecutan Windows 10, versión 1709 (compilación del sistema operativo 16299.1085 con [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, versión 1809  (Compilación del sistema operativo 17763.379 con [KB4489899),](https://support.microsoft.com/help/4489899)versiones Windows 10 versiones posteriores o Windows 11.
-
-## <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
-
-Reenvía las señales de Microsoft Defender para puntos de conexión a Puntuación segura de Microsoft en el portal Microsoft 365 Defender usuario. Al activar esta característica, Microsoft Secure Score ofrece visibilidad sobre la posición de seguridad del dispositivo. Los datos reenviados se almacenan y procesan en la misma ubicación que los datos de puntuación segura de Microsoft.
+> Esta característica estará disponible con una licencia E5 para [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) en dispositivos que ejecutan Windows 10, versión 1709 (compilación del sistema operativo 16299.1085 con [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, versión 1809  (Compilación del sistema operativo 17763.379 con [KB4489899](https://support.microsoft.com/help/4489899)), versiones Windows 10 versiones posteriores o Windows 11.
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>Habilitar la integración de Microsoft Defender para endpoints desde el portal de Microsoft Defender para identidades
 
@@ -193,13 +192,13 @@ Para recibir la integración contextual de dispositivos en Microsoft Defender fo
 
 2. Haga **clic en Crear la instancia**.
 
-3. Alterna la configuración de integración a **Activar** y haz clic **en Guardar**.
+3. Alterna la configuración de integración en **Activar** y haz clic en **Guardar**.
 
 Después de completar los pasos de integración en ambos portales, podrás ver alertas relevantes en la página detalles del dispositivo o detalles del usuario.
 
 ## <a name="web-content-filtering"></a>Filtrado de contenido web
 
-Bloquear el acceso a sitios web que contengan contenido no deseado y realizar un seguimiento de la actividad web en todos los dominios. Para especificar las categorías de contenido web que desea bloquear, cree una [directiva de filtrado de contenido web](https://security.microsoft.com/preferences2/web_content_filtering_policy). Asegúrese de que tiene protección de red en modo de bloqueo al implementar la línea base de seguridad de [Microsoft Defender para](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2)endpoints .
+Bloquear el acceso a sitios web que contengan contenido no deseado y realizar un seguimiento de la actividad web en todos los dominios. Para especificar las categorías de contenido web que desea bloquear, cree una [directiva de filtrado de contenido web](https://security.microsoft.com/preferences2/web_content_filtering_policy). Asegúrese de que tiene protección de red en modo de bloqueo al implementar la línea base de seguridad de [Microsoft Defender para puntos de conexión](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2).
 
 ## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Compartir alertas de extremo con el Centro de cumplimiento de Microsoft
 
@@ -209,7 +208,7 @@ Después de configurar los indicadores de infracción de directivas de seguridad
 
 ## <a name="microsoft-intune-connection"></a>Microsoft Intune conexión
 
-Defender for Endpoint se puede integrar con [Microsoft Intune](/intune/what-is-intune) para habilitar el acceso condicional basado en riesgos [del dispositivo.](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune) Al activar [esta característica,](configure-conditional-access.md)podrás compartir información de dispositivo defender para endpoint con Intune, lo que mejora la aplicación de directivas.
+Defender for Endpoint se puede integrar con [Microsoft Intune](/intune/what-is-intune) [para habilitar el acceso condicional basado en riesgos del dispositivo](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune). Al activar [esta característica](configure-conditional-access.md), podrás compartir información de dispositivo defender para endpoint con Intune, lo que mejora la aplicación de directivas.
 
 > [!IMPORTANT]
 > Tendrás que habilitar la integración en Intune y Defender for Endpoint para usar esta característica. Para obtener más información sobre pasos específicos, vea [Configure Conditional Access in Defender for Endpoint](configure-conditional-access.md).
@@ -217,14 +216,14 @@ Defender for Endpoint se puede integrar con [Microsoft Intune](/intune/what-is-i
 Esta característica solo está disponible si tiene lo siguiente:
 
 - Un inquilino con licencia para Enterprise Mobility + Security E3 y Windows E5 (o Microsoft 365 Enterprise E5)
-- Un entorno Microsoft Intune activo, con dispositivos Windows administrados por Intune [Azure AD unidos a](/azure/active-directory/devices/concept-azure-ad-join/).
+- Un entorno Microsoft Intune activo, con dispositivos Windows administrados por Intune [Azure AD unidos](/azure/active-directory/devices/concept-azure-ad-join/).
 
 ### <a name="conditional-access-policy"></a>Directiva de acceso condicional
 
 Al habilitar la integración de Intune, Intune creará automáticamente una directiva clásica de acceso condicional (CA). Esta directiva de ca clásica es un requisito previo para configurar informes de estado en Intune. No debe eliminarse.
 
 > [!NOTE]
-> La directiva de CA clásica creada por Intune es distinta de las directivas modernas de acceso [condicional,](/azure/active-directory/conditional-access/overview/)que se usan para configurar puntos de conexión.
+> La directiva de CA clásica creada por Intune es distinta de las directivas modernas de acceso [condicional, que](/azure/active-directory/conditional-access/overview/) se usan para configurar puntos de conexión.
 
 ## <a name="device-discovery"></a>Detección de dispositivo
 
@@ -233,7 +232,7 @@ Le ayuda a encontrar dispositivos no administrados conectados a la red corporati
 > [!NOTE]
 > Siempre puedes aplicar filtros para excluir dispositivos no administrados de la lista de inventario de dispositivos. También puede usar la columna de estado de incorporación en las consultas API para filtrar los dispositivos no administrados.
 
-## <a name="preview-features"></a>Versión preliminar de las características
+## <a name="preview-features"></a>Vista previa de las características
 
 Obtenga información sobre las nuevas características en la versión preliminar de Defender for Endpoint. Pruebe las próximas características al activar la experiencia de vista previa.
 

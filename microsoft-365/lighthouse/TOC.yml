@@ -12,6 +12,8 @@
   items:
     - name: Configurar la seguridad del portal
       href: m365-lighthouse-configure-portal-security.md
+    - name: Configurar roles
+      href: m365-lighthouse-set-up-roles.md
     - name: Revisar registros de auditoría
       href: m365-lighthouse-review-audit-logs.md
 - name: Proteger clientes con líneas base
@@ -38,10 +40,12 @@
       href: m365-lighthouse-manage-mfa.md
     - name: Administrar el restablecimiento de contraseñas de autoservicio
       href: m365-lighthouse-manage-sspr.md
-    - name: Restablecer contraseña de usuario
+    - name: Restablecer una contraseña de usuario
       href: m365-lighthouse-reset-user-password.md
     - name: Buscar usuarios
       href: m365-lighthouse-search-for-users.md
+    - name: Ver y administrar usuarios riesgosos
+      href: m365-lighthouse-view-manage-risky-users.md
 - name: Administrar dispositivos
   items:
     - name: Introducción a la página de cumplimiento de dispositivos
@@ -60,5 +64,9 @@
   items:
     - name: Obtener ayuda y soporte técnico
       href: m365-lighthouse-get-help-and-support.md
+    - name: Problemas conocidos
+      href: m365-lighthouse-known-issues.md
+    - name: Solucionar problemas y resolver mensajes de error
+      href: m365-lighthouse-troubleshoot.md
     - name: Preguntas más frecuentes (preguntas frecuentes)
       href: m365-lighthouse-faq.yml

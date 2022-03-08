@@ -11,13 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
-ms.openlocfilehash: 7e5acdde2d60db88b68273d0f1158ae1694a523e
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: 4a7a84023f3155c2b6f1405a3da5d8c5776d0047
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61559957"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322063"
 ---
 # <a name="push-content-types-to-a-hub"></a>Insertar tipos de contenido en un centro
 
@@ -34,7 +35,7 @@ Para que esta característica funcione, los tipos de contenido que se insertan y
 
 Insertar tipos de contenido en un centro
 
-1. En el Centro de administración de SharePoint, expanda **Servicios de contenido** y, después, seleccione **Galería de tipo de contenido**.
+1. En el Centro de administración de SharePoint, expanda **Servicios de contenido** y, después, seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">**Galería de tipo de contenido**</a>.
 2. Seleccione el tipo de contenido que quiere insertar en el centro.
 3. Seleccione **Editar** en la barra de comandos.
 4. Seleccione **Elegir sitios del sitio central**.

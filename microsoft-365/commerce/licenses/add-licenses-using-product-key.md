@@ -2,8 +2,8 @@
 title: Agregar licencias a o extender una suscripción pagada por usar una clave de producto
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: argani, nicholak
 audience: Admin
@@ -14,26 +14,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_licensing
 - TopSMBIssues
 - AdminSurgePortfolio
-- commerce_licensing
 search.appverid: MET150
 description: Obtenga información sobre cómo agregar licencias a o ampliar su suscripción con una clave de producto.
 ROBOTS: NOINDEX
 ms.date: 04/07/2021
-ms.openlocfilehash: e9fed54eb7006906e7d54888709c14cdbff8a903
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 4d14f00115059cf28cff71ac126b1f0fdfbb3890
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370961"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311873"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Agregar licencias a o extender una suscripción pagada por usar una clave de producto
 
 Las licencias de prepago se emiten como un código alfanumérico de 25 caracteres. Después de comprar las licencias que necesita, puede agregarlas a la suscripción. También puedes usar una clave de producto para extender la fecha de expiración de la suscripción.
 
 > [!NOTE]
-> Si no desea comprar una clave de producto nueva, siempre puede optar por agregar una tarjeta de crédito o una cuenta bancaria a su suscripción para pagar más licencias o ampliar la fecha de expiración de la suscripción. Para obtener más información, vea [Renew your subscription](../subscriptions/renew-your-subscription.md).
+> Si no desea comprar una clave de producto nueva, siempre puede optar por agregar una tarjeta de crédito o una cuenta bancaria a su suscripción para pagar más licencias o ampliar la fecha de expiración de la suscripción. Para obtener más información, consulta [Renovar la suscripción](../subscriptions/renew-your-subscription.md).
   
 ## <a name="add-licenses-to-your-subscription"></a>Agregar licencias a su suscripción
 
@@ -47,13 +47,13 @@ Las licencias de prepago se emiten como un código alfanumérico de 25 caractere
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
 ::: moniker-end
 
-2. En la **pestaña Productos,** seleccione la suscripción a la que desea agregar licencias.
-3. En la página detalles de la suscripción, en la **sección Licencias,** seleccione **Agregar más licencias.**
-4. En el **panel Agregar más licencias,** seleccione **Usar una clave** de producto nueva y sin usar y, a continuación, **seleccione Siguiente**.
+2. En la **pestaña Productos** , seleccione la suscripción a la que desea agregar licencias.
+3. En la página detalles de la suscripción, en la **sección Licencias** , seleccione **Agregar más licencias**.
+4. En el **panel Agregar más licencias**, seleccione **Usar una clave** de producto nueva y sin usar y, a continuación, **seleccione Siguiente**.
 5. Escriba la clave de producto y, a continuación, **seleccione Siguiente**.
     > [!NOTE]
     > Si tiene más de una clave de producto, puede seleccionar **Agregar otra clave de producto** o escribirlas.
-6. Revise los detalles del pedido y, a continuación, **seleccione Canjear**.
+6. Revisa los detalles del pedido y, a continuación, **selecciona Canjear**.
   
 ## <a name="extend-the-expiration-date-of-your-subscription"></a>Ampliar la fecha de expiración de la suscripción
 
@@ -67,13 +67,13 @@ Las licencias de prepago se emiten como un código alfanumérico de 25 caractere
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
 ::: moniker-end
 
-2. En la **pestaña Productos,** seleccione la suscripción que desea extender.
-3. En la página detalles de la suscripción, en la sección Configuración de **suscripción y pago,** seleccione **Extender fecha de finalización**.
-4. En la **página Renovar o agregar licencias de** usuario, seleccione Usar una clave de producto nueva y sin usar y, **a** continuación, **seleccione Siguiente**.
+2. En la **pestaña Productos** , seleccione la suscripción que desea extender.
+3. En la página detalles de la suscripción, en la **sección Configuración de suscripción y pago** , seleccione **Extender fecha de finalización**.
+4. En la **página Renovar o agregar licencias de** usuario, seleccione **Usar una clave** de producto nueva y sin usar y, a continuación, **seleccione Siguiente**.
 5. Escriba la clave de producto y, a continuación, **seleccione Siguiente**.
     > [!NOTE]
     > Si tiene más de una clave de producto, puede seleccionar **Agregar otra clave de producto** o escribirlas.
-6. Revise los detalles del pedido y, a continuación, **seleccione Canjear**.
+6. Revisa los detalles del pedido y, a continuación, **selecciona Canjear**.
 
 ## <a name="related-articles"></a>Artículos relacionados
 

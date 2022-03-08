@@ -1,13 +1,11 @@
 ---
 title: Proteger dispositivos con Windows 10
-f1.keywords:
-- CSH
 ms.author: sharik
 author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
-f1_keywords:
+f1.keywords:
 - O365E_BCSSetup4WindowsConfig
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -28,18 +26,18 @@ search.appverid:
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: Obtén información sobre cómo configurar la configuración de la directiva de dispositivo predeterminada que cualquier dispositivo Windows 10 recibirá al iniciar sesión en su cuenta laboral o educativa.
-ms.openlocfilehash: 1a39fdad31de5e4aef2fa5bbc4995d9c4c8bbb90
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 88453ee07c21038a6d4ca190471f22f200658c1a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191246"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327495"
 ---
 # <a name="secure-windows-10-devices"></a>Proteger dispositivos con Windows 10
 
 Este artículo se aplica a Microsoft 365 Empresa Premium.
 
-Las opciones que configure aquí forman parte de la directiva de dispositivo predeterminada para Windows 10. Todos los usuarios que conecten un Windows 10, incluidos los dispositivos móviles y los equipos, al iniciar sesión con su cuenta de trabajo recibirán automáticamente esta configuración. Recomendamos que acepte la directiva predeterminada durante la configuración y que, posteriormente, agregue directivas para grupos de usuarios específicos.
+Las opciones que configure aquí forman parte de la directiva de dispositivo predeterminada para Windows 10. Todos los usuarios que conecten un Windows 10, incluidos dispositivos móviles y equipos, al iniciar sesión con su cuenta de trabajo recibirán automáticamente esta configuración. Recomendamos que acepte la directiva predeterminada durante la configuración y que, posteriormente, agregue directivas para grupos de usuarios específicos.
   
 ## <a name="settings-to-secure-windows-10-devices"></a>Configuración para proteger dispositivos con Windows 10
 

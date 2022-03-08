@@ -12,14 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo aprovisionar, usar y personalizar la plantilla de sitio administración de contratos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 649596392cf2d7a8fc90ffc479d8875c69f26ffe
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: e5629dd370899d504e9b64ef577a06ebf1bd3777
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904461"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320471"
 ---
 # <a name="use-the-contracts-management-site-template-for-microsoft-sharepoint-syntex"></a>Use la plantilla de sitio Administración de contratos para Microsoft SharePoint Syntex
 
@@ -31,7 +30,7 @@ El sitio de administración de contratos es una plantilla de sitio SharePoint li
 
 El sitio de administración de contratos incluye páginas rellenadas previamente, elementos web y navegación del sitio. El sitio se puede personalizar para incorporar la personalización de marca, la información de los empleados, la información de directiva y planeación de su organización, el flujo de trabajo, los contactos y los recursos.
 
-El sitio usa la potencia de un modelo SharePoint Syntex que se ejecuta en bibliotecas de documentos para clasificar documentos y extraer metadatos. El sitio proporciona bibliotecas de documentos precompilados para empezar rápidamente, pero también puede crear las suyas propias según sea necesario. El sitio incluye las siguientes bibliotecas características:
+El sitio usa la potencia de un modelo SharePoint Syntex que se ejecuta en una biblioteca SharePoint documentos para clasificar documentos y extraer metadatos. El sitio proporciona bibliotecas de documentos precompilados para empezar rápidamente, pero también puede crear las suyas propias según sea necesario. El sitio incluye las siguientes bibliotecas características:
 
 - **Regiones** : clasificar los documentos de contrato por área geográfica, país o región.
 
@@ -41,9 +40,9 @@ El sitio usa la potencia de un modelo SharePoint Syntex que se ejecuta en biblio
 
 - **Clientes** : busque información de cliente en una ubicación conveniente.
 
-- **Modelos** : use esta biblioteca de modelos para clasificar documentos y extraer metadatos. Los usuarios pueden crear sus propios modelos para satisfacer sus necesidades y agregarlos a esta biblioteca.
+- **Modelos** : use el modelo de esta biblioteca para clasificar documentos y extraer metadatos. Los usuarios pueden crear sus propios modelos para satisfacer sus necesidades y agregarlos a esta biblioteca.
 
-- **Biblioteca de contratos de** ejemplo: busque archivos clasificados y que han extraído metadatos con el SharePoint Syntex modelo. 
+- **Biblioteca de contratos de** ejemplo: busque archivos clasificados y que han extraído metadatos mediante el SharePoint Syntex modelo. 
 
 Hay una vista independiente en la biblioteca en la que puede realizar un seguimiento de otros metadatos, como el estado, y que usa el formato de biblioteca de documentos para mostrarla de una forma más visual.
 
@@ -70,7 +69,7 @@ El sitio de administración de contratos se puede aprovisionar desde [el SharePo
 
 5. Seleccione **Abrir sitio** y verá el sitio de administración de contratos. Desde aquí, puede explorar el sitio y personalizar las páginas y el contenido. 
 
-Para obtener más información sobre el aprovisionamiento desde el SharePoint de libros de apariencia, vea [Aprovisionar una nueva solución de caminos de aprendizaje](/office365/customlearning/custom_provision).
+Para obtener más información sobre el aprovisionamiento desde el SharePoint de libreta de apariencias, vea [Aprovisionar una nueva solución de caminos de aprendizaje](/office365/customlearning/custom_provision).
 
 ## <a name="customize-the-site"></a>Personalizar el sitio
 
@@ -99,6 +98,16 @@ Tiene el control de la navegación del sitio para el sitio de administración de
 - Establezca un [público objetivo como audiencia](https://support.microsoft.com/office/target-navigation-news-and-files-to-specific-audiences-33d84cb6-14ed-4e53-a426-74c38ea32293) para dirigir vínculos de navegación específicos a usuarios específicos. 
 - [Elimine las páginas no deseadas](https://support.microsoft.com/office/delete-a-page-from-a-sharepoint-site-1d4197b8-31b6-460d-906b-3fb492a51db1) si lo necesita.
 
+
+### <a name="add-other-workflows"></a>Agregar otros flujos de trabajo
+
+El sitio de administración de contratos contiene los componentes que necesita para empezar, pero también puede incluir componentes adicionales, como:
+
+- Use un [flujo Power Automate para](/power-automate/getting-started) desencadenar un flujo de trabajo cuando se agrega un nuevo contrato a la **biblioteca solicitudes de** contrato.
+- Cree modelos [SharePoint Syntex adicionales](/microsoft-365/contentunderstanding/#models).
+- Use la [característica de ensamblado de](content-assembly.md) contenido en la **biblioteca plantillas** .
+- Cree una [solución de administración de contratos](solution-manage-contracts-in-microsoft-365.md) mediante SharePoint Syntex junto con otros componentes de Microsoft 365.
+
 ## <a name="share-the-site-with-others"></a>Compartir el sitio con otros usuarios
 
 [Compartir el sitio con otros usuarios](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658). Asocie con otros usuarios de su organización para asegurarse de que el sitio de administración de contratos es ampliamente conocido y adoptado.
@@ -111,6 +120,3 @@ Factores clave de éxito para administrar el sitio de administración de contrat
 - Use información de análisis [de sitios](https://support.microsoft.com/office/view-usage-data-for-your-sharepoint-site-2fa8ddc2-c4b3-4268-8d26-a772dc55779e) para promover el contenido en la página principal, actualizar la navegación o reescribir el contenido para mayor claridad.
 - Revise el sitio de administración de contratos según sea necesario para asegurarse de que el contenido es nuevo y sigue siendo relevante.
 
-## <a name="see-also"></a>Vea también
-
-[Administrar contratos con una solución de Microsoft 365](solution-manage-contracts-in-microsoft-365.md)

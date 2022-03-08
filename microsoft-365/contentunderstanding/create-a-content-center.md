@@ -8,17 +8,18 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.custom: admindeeplinkSPO
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Crear un centro de contenido en Microsoft SharePoint Syntex
-ms.openlocfilehash: e44ed9433562bdfe8da471bd08c4711bc405b92d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 0bab102ae440b8cf2c797458e7602c61794d0d06
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205958"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311597"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Crear un centro de contenido en Microsoft SharePoint Syntex
 
@@ -46,7 +47,7 @@ Un administrador de SharePoint puede crear un sitio del centro de contenido del 
 
 Para crear un nuevo centro de contenido:
 
-1. En el Centro de administración de Microsoft 365, vaya a la página [Centro de administración de SharePoint **Sitios activos**](https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true).
+1. En el Centro de administración de Microsoft 365, vaya al centro de administración SharePoint <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">de administración > **sitios activos**</a>.
 
 2. En la página **Sitios activos**, haga clic en **Crear** y seleccione **Otras opciones**.
 
@@ -59,7 +60,7 @@ Para crear un nuevo centro de contenido:
 
 5. Seleccione **Terminado**.
  
-Después de crear un sitio del centro de contenido, verá que aparece en la página **Sitios activos** en el Centro de administración de SharePoint. 
+Después de crear un sitio del centro de contenido, lo verá en <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**sitios**</a> activos en el centro de administración SharePoint contenido. 
 
 ### <a name="give-access-to-additional-users"></a>Conceder acceso a otros usuarios
  

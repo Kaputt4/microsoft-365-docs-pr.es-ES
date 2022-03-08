@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 81fdf04686f62acf3a2acce7e1bb400fe1d51aaa
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 2837b6009c143ea724d8c13d2548eeeca80e431d
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904078"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321325"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Paso 2. Corregir el primer incidente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Microsoft 365 Defender proporciona capacidades de detección y análisis, sino que también proporciona contención y eliminación de malware. La contención incluye pasos para reducir el impacto del ataque, mientras que la eliminación garantiza que todos los seguimientos de la actividad del atacante se quiten de la red. Microsoft 365 Defender ofrece varias acciones de corrección que se pueden configurar para corregir automáticamente [](m365d-autoir.md) según el sistema operativo de los dispositivos afectados y el tipo de ataque.
 
@@ -54,7 +54,7 @@ Microsoft 365 Defender ofrece varias acciones de corrección que los analistas p
 
 - **Detener y poner en cuarentena** el archivo: esta acción incluye la detención de procesos en ejecución, la cuarentena de archivos y la eliminación de datos persistentes, como cualquier clave del Registro. Esta acción tiene efecto en dispositivos con Windows 11 o Windows 10, versión 1703 o posterior, donde se observó el archivo en los últimos 30 días. 
 - **Agregar indicadores para bloquear** o permitir el archivo: impedir la propagación posterior de un ataque en su organización mediante la prohibición de archivos potencialmente malintencionados o malware sospechoso. Esta operación impedirá que el archivo se lea, escriba o ejecute en dispositivos de la organización.
-- **Descargar o recopilar** archivo: esta acción permite a los analistas descargar un archivo en un archivo de archivo protegido .zip contraseña para su análisis posterior por parte de la organización.
+- **Descargar o recopilar** archivo: esta acción permite a los analistas descargar un archivo en un archivo de archivo protegido .zip contraseña para su posterior análisis por parte de la organización.
 - **Análisis profundo** : esta acción ejecuta un archivo en un entorno de nube seguro y totalmente instrumentado. Los resultados de análisis profundo muestran las actividades del archivo, los comportamientos observados y los artefactos asociados, como archivos eliminados, modificaciones del Registro y comunicación con direcciones IP. 
 
 Siguiendo el ejemplo de [Detectar, analizar](first-incident-analyze.md#analyze-your-first-incident) y analizar incidentes, un analista puede corregir este incidente con estas acciones:
@@ -74,14 +74,14 @@ La mayoría de las acciones de corrección se pueden aplicar y realizar un segui
 
 ## <a name="using-playbooks"></a>Uso de Playbooks
 
-Además, la corrección automatizada se puede crear con playbooks. Actualmente, Microsoft tiene [plantillas de Playbook GitHub](https://github.com/microsoft/Microsoft-Cloud-App-Security/tree/master/Playbooks) que proporcionan libros de reproducción para los siguientes escenarios:
+Además, la corrección automatizada se puede crear con playbooks. Actualmente, Microsoft tiene [plantillas de Playbook en GitHub](https://github.com/microsoft/Microsoft-Cloud-App-Security/tree/master/Playbooks) que proporcionan libros de reproducción para los siguientes escenarios:
 
 - Quitar el uso compartido de archivos confidenciales después de solicitar la validación del usuario
 - Auto-triage infrequent country alerts
 - Solicitar una acción de administrador antes de deshabilitar una cuenta
 - Deshabilitar reglas de bandeja de entrada malintencionadas
 
-Los playbooks usan Power Automate para crear flujos de automatización de procesos robotizados personalizados para automatizar determinadas actividades una vez que se han desencadenado criterios específicos. Las organizaciones pueden crear libros de reproducción desde plantillas existentes o desde cero. 
+Los libros de reproducción Power Automate para crear flujos de automatización de procesos robotizados personalizados para automatizar determinadas actividades una vez que se han desencadenado criterios específicos. Las organizaciones pueden crear libros de reproducción desde plantillas existentes o desde cero. 
 
 Por ejemplo:
  
@@ -95,7 +95,7 @@ Los libros de reproducción también se pueden crear durante [la revisión poste
 
 Obtenga información sobre cómo [realizar una revisión posterior al incidente de un incidente](first-incident-post.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

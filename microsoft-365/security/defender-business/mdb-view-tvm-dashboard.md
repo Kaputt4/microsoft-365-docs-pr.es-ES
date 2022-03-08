@@ -1,5 +1,5 @@
 ---
-title: Ver el panel de administración & vulnerabilidades en Microsoft Defender para empresas (versión preliminar)
+title: Ver el panel de administración & vulnerabilidades en Microsoft Defender para empresas
 description: Use el panel de & amenazas & de & de administración de vulnerabilidades para ver los elementos importantes que se deben abordar.
 search.appverid: MET150
 author: denisebmsft
@@ -17,36 +17,43 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: abc50e2e37f8884bbca043320de0ad02c310f41a
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 013617f9fb1982a110fcc31dab709e8b95c77c00
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62465347"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313011"
 ---
-# <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business-preview"></a>Usar el panel de & administración de vulnerabilidades en Microsoft Defender para empresas (versión preliminar)
+# <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Usar el panel de administración & vulnerabilidades en Microsoft Defender para empresas
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas ya está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarlo. Incorporaremos un conjunto inicial de clientes y asociados en las próximas semanas y ampliaremos la versión preliminar antes de la disponibilidad general. Ten en cuenta que la vista previa se iniciará con un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y agregaremos funcionalidades con regularidad.
+> Microsoft Defender para empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
-Microsoft Defender para empresas (versión preliminar) incluye un panel de administración de vulnerabilidades & amenazas que está diseñado para ahorrar tiempo y esfuerzo al equipo de seguridad. Además de proporcionar una puntuación de exposición, también puedes ver información sobre dispositivos expuestos y recomendaciones de seguridad. Puede usar el panel de administración & de vulnerabilidades para:
+Microsoft Defender para empresas incluye un panel de administración & vulnerabilidades que está diseñado para ahorrar tiempo y esfuerzo al equipo de seguridad. Además de proporcionar una puntuación de exposición, también puedes ver información sobre dispositivos expuestos y recomendaciones de seguridad. Puede usar el panel de administración de & de vulnerabilidades para:
 
 - Ver la puntuación de exposición, que está asociada a dispositivos de la organización
-- Vea las recomendaciones de seguridad más destacadas, como solucionar las comunicaciones con dispositivos con problemas, activar la protección de firewall o actualizar las Antivirus de Microsoft Defender de seguridad.
+
+- Vea las recomendaciones de seguridad más destacadas, como solucionar las comunicaciones con dispositivos con problemas, activar la protección de firewall o actualizar Antivirus de Microsoft Defender de seguridad
+
 - Ver actividades de corrección, como los archivos que se enviaron a la cuarentena o las vulnerabilidades encontradas en dispositivos
 
 ¿Quiere ver cómo funciona? Vea este vídeo, que describe threat & vulnerability management in [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r1nv]
 
-Para obtener más información sobre la administración & vulnerabilidades de amenazas, [consulte Threat and administración de vulnerabilidades in Microsoft Defender for Endpoint](../defender-endpoint/next-gen-threat-and-vuln-mgt.md).
+Para obtener más información sobre la administración & vulnerabilidad de amenazas, [consulte Threat and administración de vulnerabilidades in Microsoft Defender for Endpoint](../defender-endpoint/next-gen-threat-and-vuln-mgt.md).
+
+>
+> **¿Tiene un minuto?**
+> Por favor, haga <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+>
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Tutoriales y simulaciones en Microsoft Defender para empresas (versión preliminar)](mdb-tutorials.md)
+- [Tutoriales y simulaciones en Microsoft Defender para empresas](mdb-tutorials.md)
 
-- [Incorporar dispositivos a Microsoft Defender para empresas (versión preliminar)](mdb-onboard-devices.md)
+- [Incorporación de dispositivos a Microsoft Defender para empresas](mdb-onboard-devices.md)
 
-- [Ver o editar directivas en Microsoft Defender para empresas (versión preliminar)](mdb-view-edit-create-policies.md)
+- [Ver o editar directivas en Microsoft Defender para empresas](mdb-view-edit-create-policies.md)

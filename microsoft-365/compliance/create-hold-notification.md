@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Usa la herramienta Comunicaciones en un Advanced eDiscovery caso para enviar, recopilar y realizar un seguimiento de las notificaciones de retención legal.
+description: Usa la herramienta comunicaciones en un Advanced eDiscovery caso para enviar, recopilar y realizar un seguimiento de las notificaciones de retención legal.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3d4f8529486a4e17a1c21cc861b8d3694e6486c7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5c0bda35ffe2547e1c30b4bbf0a6c7d0d0563b7b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60158231"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315673"
 ---
 # <a name="create-a-legal-hold-notice"></a>Crear un aviso de retención legal
 
@@ -36,40 +36,38 @@ En el artículo se describen los pasos del flujo de trabajo de notificación de 
 
 El primer paso es especificar los detalles adecuados para los avisos de retención legal u otras comunicaciones de custodia.
 
-![Página de comunicación de nombre.](../media/NameCommunication.PNG)
+![Página De comunicación de nombre.](../media/NameCommunication.PNG)
 
 1. En el Centro de cumplimiento de Microsoft 365, vaya a **eDiscovery > Advanced** para mostrar la lista de casos de su organización.
 
-2. Seleccione un caso, haga clic en la **pestaña** Comunicaciones y, a continuación, haga clic **en Nueva comunicación.**
+2. Seleccione un caso, haga clic en la **pestaña** Comunicaciones y, a continuación, haga clic **en Nueva comunicación**.
 
-3. En la **página Comunicación de** nombre, especifique los siguientes detalles de comunicación (obligatorios).
+3. En la **página Comunicación de** nombre, especifique la siguiente configuración de comunicación.
 
-    - **Nombre:** este es el nombre de la comunicación.
+    - **Nombre**: este es el nombre de la comunicación.
 
-    - **Oficial emisor:** la lista desplegable muestra una lista de miembros de casos. Para obtener más información sobre cómo agregar nuevos miembros a un caso, vea [Create an Advanced eDiscovery case](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case). Cada aviso enviado a los custodios se enviará en nombre del oficial emisor especificado.
+    - **Oficial emisor**: la lista desplegable muestra los usuarios de la organización que pueden seleccionarse como el responsable emisor de la comunicación. Cada comunicación enviada a los custodios se enviará en nombre del oficial emisor seleccionado. La lista desplegable de usuarios está formada por los miembros del caso y los responsables de emisión de toda la organización. Estos agentes emisores los agrega un administrador de exhibición de documentos electrónicos y están disponibles en todos Advanced eDiscovery casos de la organización. Para obtener más información, vea [Manage issuing officers](advanced-ediscovery-issuing-officers.md).
 
-> [!NOTE]
-> El oficial emisor debe tener un **buzón activo** para aparecer en la lista desplegable Oficial emisor
-
+    - **Seleccionar plantilla de** comunicación: la lista desplegable muestra las plantillas de la biblioteca de comunicaciones en la página Advanced eDiscovery configuración. Si selecciona una plantilla, se mostrará en el **contenido del portal** Definir como punto de partida para el texto de la notificación que está creando. Si no selecciona una plantilla, tendrá que crear el aviso usted mismo desde cero. Para obtener más información acerca de las plantillas de comunicación, vea [Manage custodian communications templates](advanced-ediscovery-communications-library.md).
 
 4. Haga clic en **Siguiente**.
 
 ## <a name="step-2-define-the-portal-content"></a>Paso 2: Definir el contenido del portal
 
-A continuación, puede crear y agregar el contenido del aviso de retención. En la **página Definir contenido del portal** del Asistente para crear **comunicación,** especifique el contenido del aviso de retención. Este contenido se anexará automáticamente a los avisos de emisión, reedición, aviso y escalación. Además, este contenido aparecerá en el Portal de cumplimiento del custodio.
+A continuación, puede crear y agregar el contenido del aviso de retención. En la **página Definir contenido del portal** del Asistente **para crear comunicación** , especifique el contenido del aviso de retención. Este contenido se anexará automáticamente a los avisos de emisión, reedición, aviso y escalación. Además, este contenido aparecerá en el Portal de cumplimiento del custodio. Si seleccionó una plantilla de la biblioteca de comunicaciones, se mostrará y proporcionará un punto de partida para el aviso que está creando.
 
-![Página de contenido del portal.](../media/PortalContent.PNG)
+![Página Contenido del portal.](../media/PortalContent.PNG)
 
 Para crear el contenido del portal:
 
-1. Escriba (o corte y pegue desde otro documento) el aviso de retención en el cuadro de texto del contenido del portal.
+1. Escriba (o corte y pegue desde otro documento) el aviso de retención en el cuadro de texto del contenido del portal. Si seleccionó una plantilla de comunicaciones en la página del asistente anterior, se mostrará la plantilla. Puede editar el contenido de la plantilla según sea necesario.
 
 2. Inserte variables de combinación en el aviso para personalizar el aviso y compartir el Portal de cumplimiento de custodia.
 
 3. Haga clic en **Siguiente**.
 
   > [!TIP]
-  > Para obtener más información sobre cómo personalizar el contenido y el formato del contenido del portal, vea [Use the Communications Editor](using-communications-editor.md).
+  > Para obtener más información sobre cómo personalizar el contenido y el formato del contenido del portal, consulte [Use the Communications Editor](using-communications-editor.md).
 
 ## <a name="step-3-set-the-required-notifications"></a>Paso 3: Establecer las notificaciones necesarias
 
@@ -79,13 +77,13 @@ Para configurar y enviar un aviso de retención, debe incluir las notificaciones
 
 ### <a name="issuance-notification"></a>Notificación de emisión
 
-Una vez creada la comunicación, **el** oficial emisor especificado inicia la notificación de emisión. La notificación de emisión es la primera comunicación enviada al custodio para informarle sobre sus obligaciones de conservación.
+Una vez creada la comunicación **, el oficial** emisor especificado inicia la notificación de emisión. La notificación de emisión es la primera comunicación enviada al custodio para informarle sobre sus obligaciones de conservación.
 
 Para crear una notificación de emisión:
 
-1. En el icono **Emisión,** haga clic **en Editar**.
+1. En el icono **Emisión** , haga clic en **Editar**.
 
-2. Si es necesario, agregue miembros o personal de casos adicionales a los **campos Cc** y **CCO.** Para agregar varios usuarios a estos campos, separe las direcciones de correo electrónico con un punto y coma.
+2. Si es necesario, agregue miembros o personal de casos adicionales a los **campos Cc** y **CCO** . Para agregar varios usuarios a estos campos, separe las direcciones de correo electrónico con un punto y coma.
 
 3. Especifique el **asunto** para el aviso (obligatorio).
 
@@ -95,32 +93,32 @@ Para crear una notificación de emisión:
 
 ### <a name="re-issuance-notification"></a>Re-Issuance notificación
 
-A medida que avanza el caso, es posible que los custodios deban conservar datos adicionales o inferiores a los que se instruyeron anteriormente. Después de actualizar el contenido del portal, se envía la notificación de nueva emisión y se alerta a los custodios sobre cualquier cambio en sus obligaciones de conservación.
+A medida que avanza el caso, es posible que los custodios deban conservar datos adicionales o inferiores a los que se instruyeron anteriormente. Después de actualizar el contenido del portal, se envía la notificación de reedición y se alerta a los custodios sobre cualquier cambio en sus obligaciones de conservación.
 
-Para crear una notificación de nueva emisión:
+Para crear una notificación de reedición:
 
-1. En el **icono Reissue,** haga clic en **Editar**.
+1. En el icono **Reissue** , haga clic en **Editar**.
 
-2. Si es necesario, agregue miembros o personal de casos adicionales a los **campos Cc** y **CCO.** Para agregar varios usuarios a estos campos, separe las direcciones de correo electrónico con un punto y coma.
+2. Si es necesario, agregue miembros o personal de casos adicionales a los **campos Cc** y **CCO** . Para agregar varios usuarios a estos campos, separe las direcciones de correo electrónico con un punto y coma.
 
 3. Especifique el **asunto** para el aviso (obligatorio).
 
-4. Especifique el contenido o instrucciones adicionales que desea proporcionar al custodio (obligatorio). El contenido del portal que definió en el paso 2 se agrega al final del aviso de ree emisión.
+4. Especifique el contenido o instrucciones adicionales que desea proporcionar al custodio (obligatorio). El contenido del portal que definió en el paso 2 se agrega al final del aviso de reedición.
 
 5. Haga clic en **Guardar**.
 
 > [!NOTE]
-> Si se modifica el contenido del portal (en la página Definir contenido del **portal** en el Asistente para editar comunicaciones), la notificación de nueva emisión se enviará automáticamente a todos los custodios asignados al aviso.  Después de enviar la notificación, se pedirá a los custodios que vuelvan a confirmar su notificación de retención. Si ha configurado flujos de trabajo de aviso o de escalación, estos también se volverán a iniciar. Para obtener más información acerca de qué otros eventos de administración de casos desencadenan comunicaciones, vea [Eventos que desencadenan notificaciones](#events-that-trigger-notifications).
+> Si se modifica el contenido del portal (en la página Definir contenido del **portal** en el Asistente para editar comunicaciones), la notificación de nueva emisión se enviará automáticamente a todos los custodios asignados al aviso. Después de enviar la notificación, se pedirá a los custodios que vuelvan a confirmar su notificación de retención. Si ha configurado flujos de trabajo de aviso o de escalación, estos también se volverán a iniciar. Para obtener más información acerca de qué otros eventos de administración de casos desencadenan comunicaciones, vea [Eventos que desencadenan notificaciones](#events-that-trigger-notifications).
 
 ### <a name="release-notification"></a>Notificación de lanzamiento
 
-Una vez resuelto un asunto o si un custodio ya no está sujeto a la conservación del contenido, puede liberar al custodio de un caso. Si el custodio recibió previamente un aviso de retención, la notificación de liberación puede usarse para alertar a los custodios de que han sido liberados de su obligación.
+Una vez resuelto un asunto o si un custodio ya no está sujeto a la conservación del contenido, puede liberar al custodio de un caso. Si el custodio recibió previamente un aviso de retención, la notificación de liberación se puede usar para avisar a los custodios de que han sido liberados de su obligación.
 
 Para crear una notificación de lanzamiento:
 
-1. En el **icono Versión,** haga clic **en Editar**.
+1. En el **icono Versión** , haga clic en **Editar**.
 
-2. Si es necesario, agregue miembros o personal de casos adicionales a los **campos Cc** y **CCO.** Para agregar varios usuarios a estos campos, separe las direcciones de correo electrónico con un punto y coma.
+2. Si es necesario, agregue miembros o personal de casos adicionales a los **campos Cc** y **CCO** . Para agregar varios usuarios a estos campos, separe las direcciones de correo electrónico con un punto y coma.
 
 3. Especifique el **asunto** para el aviso (obligatorio).
 
@@ -132,7 +130,7 @@ Para crear una notificación de lanzamiento:
 
 Opcionalmente, puede simplificar el flujo de trabajo para realizar un seguimiento con custodios no responsables mediante la creación y programación de notificaciones automatizadas de avisos y escalamiento.
 
-![Página aviso/escalación.](../media/ReminderEscalations.PNG)
+![Página Aviso/Escalación.](../media/ReminderEscalations.PNG)
 
 ### <a name="reminders"></a>Reminders
 
@@ -140,9 +138,9 @@ Después de enviar una notificación de retención, puede realizar un seguimient
 
 Para programar avisos:
 
-1. En el **icono Aviso,** haga clic **en Editar**.
+1. En el icono **Aviso** , haga clic en **Editar**.
 
-2. Habilite el **flujo de trabajo** Aviso activando el botón de **alternancia** Estado (obligatorio).
+2. Habilite el **flujo de trabajo** Aviso activando el botón **de alternancia** Estado (obligatorio).
 
 3. Especifique el **intervalo de aviso (en días)** (obligatorio). Este es el número de días que hay que esperar antes de enviar las primeras notificaciones de aviso y seguimiento. Por ejemplo, si establece el intervalo de aviso en siete días, el primer aviso se enviará siete días después de que se emitió inicialmente la notificación de retención. Todos los avisos posteriores también se enviarían cada siete días.
 
@@ -160,7 +158,7 @@ En algunas situaciones, es posible que necesite formas adicionales de hacer un s
 
 Para programar escalaciones:
 
-1. En el icono **Escalación,** haga clic **en Editar**.
+1. En el icono **Escalación** , haga clic en **Editar**.
 
 2. Habilite el **flujo de trabajo escalación** activando el **botón de alternancia** Estado.
 
@@ -178,7 +176,7 @@ Para programar escalaciones:
 
 Después de finalizar el contenido de las notificaciones, seleccione los custodios a los que desea enviar notificaciones.
 
-![Seleccione Página de custodios.](../media/SelectCustodians.PNG)
+![Seleccione La página Custodios.](../media/SelectCustodians.PNG)
 
 Para agregar custodios:
 
@@ -193,7 +191,7 @@ Para agregar custodios:
 
 ## <a name="step-6-review-settings"></a>Paso 6: Revisar la configuración
 
-Después de revisar la configuración y hacer **clic** en Enviar para completar la comunicación, el sistema iniciará automáticamente el flujo de trabajo de comunicación enviando el aviso de emisión.
+Después de revisar la configuración y **hacer clic en** Enviar para completar la comunicación, el sistema iniciará automáticamente el flujo de trabajo de comunicación enviando el aviso de emisión.
 
 ## <a name="events-that-trigger-notifications"></a>Eventos que desencadenan notificaciones
 
@@ -202,7 +200,7 @@ En la tabla siguiente se describen los eventos del proceso de administración de
 |Tipo de comunicación|Trigger |
 |:---------|:---------|
 |Avisos de emisión|La creación inicial de la notificación. También puede reenviar manualmente una notificación de retención. |
-|Avisos de ree emisión|Actualizar el contenido del portal en la **página Definir contenido del portal** en el Asistente para editar **comunicaciones.**|
+|Avisos de reedición|Actualizar el contenido del portal en la **página Definir contenido del portal** en el **Asistente para editar comunicaciones** .|
 |Avisos de lanzamiento|El custodio se libera del caso.|
 |Reminders|Intervalo y número de avisos configurados para el aviso.|
 |Escalaciones|Intervalo y número de avisos configurados para la escalación.|

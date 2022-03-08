@@ -1,5 +1,5 @@
 ---
-title: Restablecer contraseña de usuario
+title: Restablecer una contraseña de usuario
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,20 +15,17 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo restablecer la contraseña de usuario.
-ms.openlocfilehash: 0840725ffb74072d6f5973aa7175066a31fe32bb
-ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
+description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo restablecer una contraseña para un solo usuario o para varios usuarios de riesgo en diferentes inquilinos.
+ms.openlocfilehash: 5217db990816b8a1ec6ed927f8f9e05827cc215b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62859270"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311555"
 ---
-# <a name="reset-user-password"></a>Restablecer contraseña de usuario
+# <a name="reset-a-user-password"></a>Restablecer una contraseña de usuario
 
-> [!NOTE]
-> Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplan los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, consulte [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
-Microsoft 365 Lighthouse permite cambiar o restablecer las contraseñas de usuario. Puede restablecer la contraseña de un solo usuario o de varios usuarios de riesgo en distintos inquilinos.
+Microsoft 365 Lighthouse permite cambiar o restablecer contraseñas de usuario. Puede restablecer la contraseña de un solo usuario o de varios usuarios de riesgo en distintos inquilinos.
 
 ## <a name="reset-a-password-for-a-user"></a>Restablecer una contraseña para un usuario
 

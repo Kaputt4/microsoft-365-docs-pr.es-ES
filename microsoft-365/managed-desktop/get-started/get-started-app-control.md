@@ -1,7 +1,7 @@
 ---
 title: Introducción al control de aplicaciones
 description: En este artículo se describe cómo habilitar el control de aplicaciones
-keywords: 'Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación'
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: tiaraquan
 ms.author: tiaraquan
@@ -10,8 +10,13 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
+ms.openlocfilehash: a671bf36e957ffc416f51ec531aaeed6ddfa41b3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315405"
 ---
-
 # <a name="get-started-with-app-control"></a>Introducción al control de aplicaciones
 
 Antes de habilitar el control de aplicaciones en el entorno, asegúrese de revisar y comprender cómo lo implementa [Microsoft Managed Desktop](../service-description/app-control.md) y sus roles y responsabilidades.
@@ -62,7 +67,7 @@ Siempre puede abrir otra solicitud de soporte técnico para pausar o revertir pa
 1. Implementar y asignar el [Portal de empresa de Intune](company-portal.md).
 1. [Asignar las licencias](assign-licenses.md).
 1. [Implementar las aplicaciones](deploy-apps.md).
-1. [Configurar los dispositivos](set-up-devices.md).
+1. [Preparar dispositivos](prepare-devices.md).
 1. Configurar la [experiencia de primera ejecución con el Autopilot y la página de estado de inscripción](esp-first-run.md).
 1. [Habilitar las características de soporte técnico para el usuario](enable-support.md).
 1. [Preparar a los usuarios para que usen los dispositivos](get-started-devices.md).

@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e20b993d577f144e80c99479bac7bf70e484f785
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a32c8c91350218da619de18e0b1b398a93bf7fda
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168887"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312677"
 ---
 # <a name="resources"></a>Recursos
 
@@ -30,7 +30,7 @@ ms.locfileid: "61168887"
 
 **Se aplica a:**
 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -77,7 +77,7 @@ Si puede reproducir un problema, aumente primero el nivel de registro, ejecute e
 
 Si se produce un error durante la instalación, el instalador solo informará de un error general.
 
-El registro detallado se guardará en `/var/log/microsoft/mdatp/install.log` .
+El registro detallado se guardará en `/var/log/microsoft/mdatp/install.log`.
 Si tiene problemas durante la instalación, envíenos este archivo para que podamos diagnosticar la causa.
 
 ## <a name="uninstall"></a>Desinstalar
@@ -142,9 +142,9 @@ En la tabla siguiente se enumeran los comandos de algunos de los escenarios más
 |Administración de cuarentena|Quitar todos los archivos de la cuarentena|`mdatp threat quarantine remove-all`|
 |Administración de cuarentena|Agregar un archivo detectado como una amenaza a la cuarentena|`mdatp threat quarantine add --id [threat-id]`|
 |Administración de cuarentena|Quitar un archivo detectado como una amenaza de la cuarentena|`mdatp threat quarantine remove --id [threat-id]`|
-|Administración de cuarentena|Restaurar un archivo desde la cuarentena|`mdatp threat quarantine restore --id [threat-id]`|
+|Administración de cuarentena|Restaurar un archivo desde la cuarentena|`mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`|
 |Detección y respuesta de extremos|Establecer la vista previa anticipada (sin usar)|`mdatp edr early-preview [enable|disable]`|
 |Detección y respuesta de extremos|Establecer group-id|`mdatp edr group-ids --group-id [group-id]`|
-|Detección y respuesta de extremos|Establecer o quitar etiqueta, solo `GROUP` compatible|`mdatp edr tag set --name GROUP --value [tag]`|
+|Detección y respuesta de extremos|Establecer o quitar etiqueta, solo compatible `GROUP`|`mdatp edr tag set --name GROUP --value [tag]`|
 |Detección y respuesta de extremos|Enumerar exclusiones (raíz)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
 |

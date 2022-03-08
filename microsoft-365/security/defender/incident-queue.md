@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fafb48af3aa0c38146073a0682323496bc0431e2
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 38bfde92a2988cd8bdbca770402af96a4b9c5134
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903968"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321843"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorizar incidentes en Microsoft 365 Defender
 
@@ -39,9 +39,9 @@ ms.locfileid: "62903968"
 
 Microsoft 365 Defender aplica análisis de correlación y agrega alertas relacionadas e investigaciones automatizadas de diferentes productos en un incidente. Microsoft 365 Defender activa alertas únicas en actividades que solo se pueden identificar como malintencionadas dada la visibilidad de un extremo a otro que Microsoft 365 Defender en todo el conjunto de productos. Esta vista proporciona a los analistas de seguridad la historia de ataques más amplia, lo que les ayuda a comprender mejor y tratar las amenazas complejas en toda la organización.
 
-La **cola Incidentes muestra** una colección de incidentes que se crearon en dispositivos, usuarios y buzones. Le ayuda a ordenar los incidentes para asignar prioridades y crear una decisión de respuesta de ciberseguridad fundamentada. Esto también se conoce como triaje de incidentes.
+La **cola Incidentes muestra** una colección de incidentes que se crearon en dispositivos, usuarios y buzones. Le ayuda a ordenar los incidentes para priorizar y crear una decisión de respuesta a la ciberseguridad informada, un proceso conocido como evaluación de incidentes.
 
-Puede acceder a la cola de incidentes desde **Incidentes & alertas > incidentes en** el inicio rápido del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender incidentes</a>. Por ejemplo:
+Puede acceder a la cola de incidentes desde **Incidentes & alertas > incidentes** en el inicio rápido del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender incidentes</a>. Por ejemplo:
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Ejemplo de la cola de incidentes." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -58,15 +58,17 @@ Por ejemplo: *Incidente de varias fases en varios puntos de conexión notificado
 > [!NOTE]
 > Los incidentes que existían antes de la implementación de la nomenclatura automática de incidentes no tendrán su nombre cambiado.
 
-La cola de incidentes también expone varias opciones de filtrado que, cuando se aplican, le permiten realizar un amplio barrido de todos los incidentes existentes en su entorno o decidir centrarse en un escenario o amenaza específicos. Aplicar filtros en la cola de incidentes puede ayudar a determinar qué incidente requiere atención inmediata. 
+La cola de incidentes también proporciona varias opciones de filtrado que, cuando se aplican, le permiten realizar un amplio barrido de todos los incidentes existentes en su entorno o decidir centrarse en un escenario o amenaza específicos. Aplicar filtros en la cola de incidentes puede ayudar a determinar qué incidente requiere atención inmediata. 
+
+La **lista Filtros** que se encuentra encima de la lista de incidentes muestra los filtros aplicados actualmente.
 
 ## <a name="available-filters"></a>Filtros disponibles
 
-En la cola de incidentes predeterminada, puede seleccionar  Filtros para ver un panel Filtros, desde el que puede ver un conjunto filtrado de incidentes. Aquí le mostramos un ejemplo.
+En la cola de incidentes predeterminada, puede seleccionar **Filtrar** para ver un  panel Filtro, desde el que se especifica un conjunto filtrado de incidentes. Por ejemplo:
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Ejemplo del panel de filtros de la cola de incidentes." lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
-El filtro predeterminado es mostrar todas las alertas e incidentes con un **estado nuevo** **y en** curso.
+También puede ver el panel **Filtro** seleccionando cualquiera de los filtros de la lista **Filtros encima de** la lista de incidentes.
 
 En esta tabla se enumeran los nombres de filtro disponibles.
 
@@ -74,21 +76,27 @@ En esta tabla se enumeran los nombres de filtro disponibles.
 |:-------|:-----|
 | Estado | Seleccione **Nuevo**, **En curso** o **Resuelto**. |
 | Severity | La gravedad de un incidente indica el impacto que puede tener en los activos. Cuanto mayor sea la gravedad, mayor será el impacto y, por lo general, se requiere la atención más inmediata. Seleccione **High**, **Medium**, **Low** o **Informational**. |
-| Asignación de incidentes | Seleccione Asignado a cualquier persona, Asignado a mí o Sin asignar. |
+| Asignación de incidentes | Seleccione el usuario o los usuarios asignados. |
 | Múltiples orígenes del servicio  | Especifique si el filtro es para más de un origen de servicio. |
-| Orígenes del servicio  | Filtra para ver solo incidentes que contienen alertas de: Gobierno de aplicaciones, Microsoft 365 Defender, Microsoft Defender para Office 365, Microsoft Defender para endpoint, Microsoft Defender para identidad, Microsoft Defender para aplicaciones en la nube. |
+| Orígenes del servicio  | Especifique incidentes que contengan alertas de: Gobierno de aplicaciones, Microsoft 365 Defender, Microsoft Defender para Office 365, Microsoft Defender para endpoint, Microsoft Defender para identidad, Microsoft Defender para aplicaciones en la nube. |
 | Etiquetas | Seleccione uno o varios nombres de etiqueta de la lista. |
 | Varias categorías  | Especifique si el filtro es para más de una categoría. |
 | Categorías | Elija categorías para centrarse en tácticas, técnicas o componentes de ataque específicos vistos. |
-| Plataforma del sistema operativo | Limitar la vista de cola de incidentes por sistema operativo. |
-| Clasificación | Filtrar incidentes en función de las clasificaciones establecidas de las alertas relacionadas. Seleccione **Alerta verdadera**, **Alertas falsas** o **No establecido**. |
-| Estado de investigación | Filtrar incidentes por el estado de la investigación automatizada.  |
-| Amenaza asociada | Filtrar incidentes por una amenaza con nombre.  |
-| Actors | Filtrar incidentes por un actor de amenazas con nombre.  |
-| Confidencialidad de datos | Algunos ataques tienen por objetivo extraer datos confidenciales o importantes. Al aplicar un filtro para ver si hay datos confidenciales implicados en el incidente, puede determinar rápidamente si la información confidencial se ha visto comprometida y así dar prioridad a estos incidentes. <br><br>Este filtro solo está disponible si Microsoft Information Protection está activado.|
+| Entidades | Especifique el nombre de un activo, como un usuario, un dispositivo, un buzón o un nombre de aplicación. |
+| Confidencialidad de datos | Algunos ataques tienen por objetivo extraer datos confidenciales o importantes. Al aplicar un filtro para etiquetas de confidencialidad específicas, puede determinar rápidamente si la información confidencial puede verse comprometida y priorizar la solución de esos incidentes. <br><br> Este filtro solo está disponible si Microsoft Information Protection está activado. |
+| Grupos de dispositivo | Especifica un [nombre de grupo de](/windows/security/threat-protection/microsoft-defender-atp/machine-groups) dispositivos. |
+| Plataforma del sistema operativo | Especificar sistemas operativos de dispositivos. |
+| Clasificación | Especifique el conjunto de clasificaciones de las alertas relacionadas. |
+| Estado de investigación automatizada | Especifique el estado de la investigación automatizada.  |
+| Amenaza asociada | Especifique una amenaza con nombre.  |
+| Actors | Especifique un actor de amenaza con nombre.  |
 |||
 
-## <a name="save-defined-filters-as-urls"></a>Guardar filtros definidos como direcciones URL
+El filtro predeterminado es mostrar todas las alertas e incidentes con el estado **New** y **In progress** y con una gravedad de **Low**, **Medium** o **High**.
+
+Puede quitar rápidamente un filtro seleccionando la **X** en el nombre de un filtro en la **lista Filtros** . 
+
+## <a name="save-custom-filters-as-urls"></a>Guardar filtros personalizados como direcciones URL
 
 Una vez que haya configurado un filtro útil en la cola de incidentes, puede marcar la dirección URL de la pestaña del explorador o guardarla como un vínculo en una página web, un documento de Word o un lugar de su elección. Esto le dará acceso con un solo clic a las vistas clave de la cola de incidentes, como:
 
@@ -105,6 +113,26 @@ Una vez que haya configurado un filtro útil en la cola de incidentes, puede mar
 
 Una vez que haya compilado y almacenado la lista de vistas de filtro útiles como direcciones URL, puede usarla para procesar y priorizar rápidamente los incidentes de la cola y administrarlos para su posterior asignación y análisis.[](manage-incidents.md)
 
+## <a name="search-for-incidents"></a>Buscar incidentes
+
+En el **cuadro Buscar nombre o id.** encima de la lista de incidentes, puede escribir el identificador de incidente o el nombre del incidente. Al seleccionar un incidente de la lista de resultados de búsqueda, el portal de Microsoft 365 Defender abre una nueva pestaña con las propiedades del incidente, desde la que puede iniciar la [investigación](investigate-incidents.md).
+
+## <a name="search-for-impacted-assets"></a>Búsqueda de activos afectados
+
+Puedes nombrar un activo&mdash; como un usuario, dispositivo,&mdash; buzón o nombre de aplicación y encontrar todos los incidentes relacionados. 
+
+## <a name="specify-a-time-range"></a>Especificar un intervalo de tiempo
+
+La lista predeterminada de incidentes es para los que se produjeron en los últimos seis meses. Puede especificar un nuevo intervalo de tiempo en el cuadro desplegable situado junto al icono del calendario seleccionando:
+
+ - 1 día
+ - 3 días
+ - 1 semana
+ - 30 días
+ - 30 días
+ - 6 meses
+ - Un intervalo personalizado en el que puede especificar fechas y horas
+
 ## <a name="next-steps"></a>Siguientes pasos
 
 Después de determinar qué incidente requiere la prioridad más alta, selecciónelo y:
@@ -112,7 +140,7 @@ Después de determinar qué incidente requiere la prioridad más alta, selecció
 - [Administrar](manage-incidents.md) las propiedades del incidente para etiquetas, asignación, resolución inmediata de incidentes falsos positivos y comentarios.
 - Comience las [investigaciones](investigate-incidents.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)
 - [Investigar incidentes](investigate-incidents.md)

@@ -1,14 +1,14 @@
 ---
 title: Investigar usuarios en Microsoft 365 Defender
-description: Investigue a los usuarios por un incidente en el portal Microsoft 365 Defender web.
+description: Investigue a los usuarios por un incidente en Microsoft 365 Defender portal.
 keywords: seguridad, malware, Microsoft 365, M365, centro de seguridad, monitor, informe, identidades, datos, dispositivos, aplicaciones, incidentes, análisis, respuesta
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: bfb8e1fb42dcde1a3140e0990221536c1b76b4f8
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: d49ef6b31e6446f3452d0efdce2e918813eabcc6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62904012"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327551"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>Investigar usuarios en Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "62904012"
 
 - Microsoft 365 Defender
 
-Parte de la investigación de incidentes puede incluir cuentas de usuario. Puede ver los detalles de las cuentas de usuario identificadas en las alertas de un incidente en el portal de Microsoft 365 Defender desde **Incidents & alerts** \> **_incident_*_ \> _* Users**. Por ejemplo:
+Parte de la investigación de incidentes puede incluir cuentas de usuario. You can see the details of user accounts identified in the alerts of an incident in the Microsoft 365 Defender portal from **Incidents & alerts** \> **_incident_*_ \> _* Users**. Por ejemplo:
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Ejemplo de una página Usuarios para un incidente." lightbox="../../media/investigate-incidents/incident-users.png":::
 
@@ -47,7 +47,7 @@ Para obtener un resumen rápido de una cuenta de usuario para el incidente, sele
 
 En este panel, puede revisar la información de amenazas del usuario, incluidos los incidentes actuales, las alertas activas y el nivel de riesgo, así como la exposición del usuario, cuentas, dispositivos y mucho más.
 
-Además, puede realizar acciones directamente en el portal de Microsoft 365 Defender para solucionar un usuario en peligro, como confirmar que la cuenta de usuario está en peligro o requerir un nuevo inicio de sesión.
+Además, puede realizar acciones directamente en el portal de Microsoft 365 Defender para dirigirse a un usuario en peligro, como confirmar que la cuenta de usuario está en peligro o requerir un nuevo inicio de sesión.
 
 Desde aquí, puede seleccionar **Ir a la página de usuario** para ver los detalles de una cuenta de usuario. Por ejemplo:
 
@@ -61,7 +61,7 @@ Puede ver la pertenencia a grupos para el usuario seleccionando el número en **
 
 Al seleccionar el icono en **Administrador**, puede ver dónde está el usuario en el árbol de la organización.
 
-La página Microsoft 365 Defender usuario del portal de Microsoft 365 Defender combina información de Microsoft Defender para endpoint, Microsoft Defender para Identidad y Microsoft Defender para aplicaciones en la nube (en función de las licencias que tenga).
+La página Microsoft 365 Defender usuario del portal de Microsoft 365 Defender combina información de Microsoft Defender para Endpoint, Microsoft Defender para Identity y Microsoft Defender para Aplicaciones en la nube (en función de las licencias que tenga).
 
 Esta página muestra información específica del riesgo de seguridad de una cuenta de usuario, que incluye una puntuación que ayuda a evaluar el riesgo y los eventos recientes y las alertas que contribuyeron al riesgo general.
 
@@ -94,7 +94,7 @@ Para obtener más información, vea [Rutas de movimiento lateral](/defender-for-
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)

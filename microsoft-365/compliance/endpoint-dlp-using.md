@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 0f663ac949419c3a726a0af23eba4a0f14928515
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 5fc271028e4c20d431c4535fcdbf902bf17cdbb4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281452"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311849"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -107,7 +107,7 @@ Al igual que los dispositivos Windows 10, puede agregar sus propias exclusiones 
 
 - Las definiciones de ruta de acceso del archivo no distinguen mayúsculas de minúsculas, por lo que `User` es igual que `user`.
 
-- Admite valores carácter comodín. Por lo tanto, una definición de ruta de acceso puede contener un `*` en medio de la ruta de acceso o al final de la ruta de acceso. Por ejemplo: `/Users/*/Library/Application Support/Microsoft/Teams/*`
+- Se admiten valores de carácter comodín. Por lo tanto, una definición de ruta de acceso puede contener un `*` a la mitad o al final de la ruta de acceso. Por ejemplo: `/Users/*/Library/Application Support/Microsoft/Teams/*`
 
 #####  <a name="recommended-file-path-exclusions-preview"></a>Exclusiones recomendadas de ruta de acceso del archivo (versión preliminar)
 
@@ -125,7 +125,7 @@ Por motivos de rendimiento, DLP de punto de conexión incluye una lista de exclu
 
 Las aplicaciones no permitidas son una serie de aplicaciones que crea que no tienen acceso a un archivo protegido por la prevención de pérdida de datos (DLP). Está disponible para dispositivos Windows 10 y macOS (versión preliminar).
 
-Cuando la configuración de **Acceso por parte de aplicaciones y exploradores no permitidos** de una directiva esté activada y una aplicación que esté en esta lista de aplicaciones no permitidas intente acceder a un archivo protegido, la actividad se permitirá, se bloqueará o se bloqueará, y los usuarios podrán invalidar la restricción. Toda actividad es auditada y está disponible para su revisión en el explorador de actividades.
+Cuando la configuración **Acceso por parte de aplicaciones no permitidas** de una directiva está activada y una aplicación que está en la lista de no permitidas intenta acceder a un archivo protegido, la actividad podrá ser permitida o bloqueada, aunque los usuarios podrán anular la restricción. Toda la actividad es auditada y está disponible para su revisión en el explorador de actividades.
 
 > [!IMPORTANT]
 > No incluya la ruta de acceso al archivo ejecutable, solo el nombre del archivo ejecutable (por ejemplo, browser.exe).
@@ -271,23 +271,23 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 
 3. Para este escenario, elija **Privacidad**, después **Datos de información de identificación personal (PII) de Estados Unidos**, y elija **Siguiente**.
 
-4. Desactive el campo **Estado** para todas las ubicaciones excepto para **Dispositivos**. Elija **Siguiente**.
+4. Desactive el campo **Estado** para todas las ubicaciones, excepto para **Dispositivos**. A continuación, elija **Siguiente**.
 
 5. Acepte la selección predeterminada **Revisar y personalizar la configuración a partir de la plantilla** y elija **Siguiente**.
 
 6. Acepte los valores predeterminados **Acciones de protección** y elija **Siguiente**.
 
-7. Seleccione **Auditar o restringir actividades en dispositivos Windows** y deje las acciones configuradas en **Solo auditar**. Elija **Siguiente**.
+7. Seleccione **Auditar o restringir actividades en dispositivos Windows** y deje las acciones configuradas en **Solo auditar**. A continuación, elija **Siguiente**.
 
-8. Acepte el valor predeterminado **Me gustaría probarlo primero** y elija **Mostrar sugerencias de directiva durante el modo de prueba**. Elija **Siguiente**.
+8. Acepte el valor predeterminado **Me gustaría probarlo primero** y elija **Mostrar sugerencias de directiva durante el modo de prueba**. A continuación, elija **Siguiente**.
 
 9. Revise la configuración y elija **Enviar**.
 
 10. La nueva directiva DLP se mostrará en la lista de directivas.
 
-11. Compruebe que los datos de los puntos de conexión supervisados se encuentren en el Explorador de actividades. Configure el filtro por ubicación de los dispositivos, agregue la directiva y, después, filtre por nombre de directiva para ver el impacto de esta directiva. Consulte [Introducción al Explorador de actividades](data-classification-activity-explorer.md), de ser necesario.
+11. Compruebe el Explorador de actividades para obtener los datos de los puntos de conexión supervisados. Configure el filtro por ubicación para los dispositivos, agregue la directiva y, después, filtre por nombre de directiva para ver su impacto. Consulte [Introducción al Explorador de actividades](data-classification-activity-explorer.md), de ser necesario.
 
-12. Intente compartir una prueba que incluya contenido que activará la condición de datos de información de identificación personal (PII) de Estados Unidos con alguien ajeno a su organización. Esto debería activar la directiva.
+12. Intente compartir una prueba que incluya contenido que activará la condición de datos de información de identificación personal (DCP) de Estados Unidos con alguien ajeno a su organización. Esto debería activar la directiva.
 
 13. Compruebe que el evento se encuentre en el Explorador de actividades.
 
@@ -453,7 +453,7 @@ Hay tres pasos:
 
 7. Abra la carpeta de cuarentena y confirme que el archivo original está allí.
  
-8. Compruebe que los datos de los puntos de conexión supervisados se encuentren en el Explorador de actividades. Configure el filtro por ubicación de los dispositivos, agregue la directiva y, después, filtre por nombre de directiva para ver el impacto de esta directiva. Consulte [Introducción al Explorador de actividades](data-classification-activity-explorer.md), de ser necesario.
+8. Compruebe el Explorador de actividades para obtener los datos de los puntos de conexión supervisados. Configure el filtro por ubicación para los dispositivos, agregue la directiva y, después, filtre por nombre de directiva para ver su impacto. Consulte [Introducción al Explorador de actividades](data-classification-activity-explorer.md), de ser necesario.
 
 9. Compruebe que el evento se encuentre en el Explorador de actividades.
 
@@ -465,7 +465,7 @@ Hay tres pasos:
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
 - [Microsoft Defender para punto de conexión](/windows/security/threat-protection/)
-- [Herramientas y métodos de incorporación para equipos con Windows 10](/microsoft-365/compliance/dlp-configure-endpoints).
+- [Incorporar dispositivos Windows 10 y Windows 11 en la información general de Microsoft 365](/microsoft-365/compliance/device-onboarding-overview)
 - [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Unido a Azure Active Directory (AAD)](/azure/active-directory/devices/concept-azure-ad-join)
 - [Descargue el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

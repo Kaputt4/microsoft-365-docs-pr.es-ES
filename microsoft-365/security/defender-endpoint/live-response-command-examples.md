@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c91c0c5afc449d2e8fdfc415fae83fcc2c913c6a
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 325146ba7ed40e27c50eaca490c70d3988b1198f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172324"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312674"
 ---
 # <a name="live-response-command-examples"></a>Ejemplos de comandos de respuesta en vivo
 
@@ -34,7 +34,7 @@ ms.locfileid: "62172324"
 
 Obtenga información sobre los comandos comunes usados en la respuesta en directo y vea ejemplos sobre cómo se usan normalmente.
 
-Según el rol que tenga, puede ejecutar comandos de respuesta en directo básicos o avanzados. Para obtener más información sobre los comandos básicos y avanzados, vea Investigar entidades en [dispositivos con respuesta en directo.](live-response.md)
+Según el rol que tenga, puede ejecutar comandos de respuesta en directo básicos o avanzados. Para obtener más información sobre los comandos básicos y avanzados, consulta [Investigar entidades en dispositivos con respuesta en directo](live-response.md).
 
 ## `analyze`
 
@@ -117,7 +117,7 @@ getfile c:\Users\user\Desktop\work.txt -auto
 > - Archivos vacíos
 > - Archivos virtuales o archivos que no están totalmente presentes localmente
 >
-> PowerShell *admite* estos tipos [de archivo.](/powershell/scripting/overview)
+> PowerShell *admite* estos tipos [de archivo](/powershell/scripting/overview).
 >
 > Use PowerShell como alternativa, si tiene problemas al usar este comando desde Live Response.
 
@@ -180,7 +180,7 @@ registry HKEY_CURRENT_USER\Console
 ```
 
 ```console
-# Show information about a specific registry value
+# Show information about a specific registry value (the double backslash \\ indicates a registry value versus key)
 registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
 ```
 
@@ -195,6 +195,11 @@ remediate file c:\Users\user\Desktop\malware.exe
 ```console
 # Remediate process with specific PID
 remediate process 7960
+```
+
+```console
+# Remediate a registry value (the double backslash \\ indicates a registry value versus key)
+remediate registry HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\\SPStartup
 ```
 
 ```console
@@ -216,8 +221,8 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 
 > [!NOTE]
 >
-> Para los comandos de larga ejecución como '**run**' o '**getfile**', es posible que desee usar el símbolo ' ' al final del comando para realizar esa acción en **&** segundo plano.
-> Esto le permitirá seguir investigando la máquina y volver al comando en segundo plano cuando termine con '**fg**' [comando básico](live-response.md#basic-commands).
+> Para los comandos de larga ejecución, como "**run**" o "**getfile**", es posible que desee usar el símbolo "**&**" al final del comando para realizar esa acción en segundo plano.
+> Esto te permitirá seguir investigando la máquina y volver al comando en segundo plano cuando termines con el comando básico "**fg**["](live-response.md#basic-commands).
 
 ## `scheduledtask`
 

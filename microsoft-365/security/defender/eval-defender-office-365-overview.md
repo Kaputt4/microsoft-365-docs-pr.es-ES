@@ -1,5 +1,5 @@
 ---
-title: Evaluar Microsoft Defender para obtener información Office 365 información general
+title: Paso 3. Evaluar Microsoft Defender para obtener información Office 365 información general
 description: Use esta información general para obtener información sobre los pasos para configurar un piloto de MDO, incluidos los requisitos, habilitar o activar la eval y configurar el piloto.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,22 +21,22 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 60b32c59b4326f2c9b2259fe99446ca5fc569ecc
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 0f564d308384cff466f0cd51e0c6a791150a605e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172096"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320821"
 ---
-# <a name="enable-and-pilot-microsoft-defender-for-office-365"></a>Habilitar y piloto Microsoft Defender para Office 365
+# <a name="step-3-enable-and-pilot-microsoft-defender-for-office-365"></a>Paso 3. Habilitar y piloto Microsoft Defender para Office 365
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-En este artículo se describe el proceso para habilitar y pilotar Microsoft Defender para Office 365. Antes de iniciar este proceso, asegúrese de que [](eval-overview.md) ha revisado el proceso general para evaluar Microsoft 365 Defender y ha creado el entorno [Microsoft 365 Defender evaluación](eval-create-eval-environment.md). 
+En este artículo se describe el proceso para habilitar y pilotar Microsoft Defender para Office 365. Antes de iniciar este proceso, asegúrese de haber revisado el proceso general para evaluar Microsoft 365 Defender [](eval-overview.md) y de haber creado el entorno [Microsoft 365 Defender evaluación.](eval-create-eval-environment.md) 
 <br>
 
-Siga estos pasos para habilitar y piloto Microsoft Defender para Office 365.
+Use los siguientes pasos para habilitar y pilotar Microsoft Defender para Office 365.
 
 ![Pasos para agregar Microsoft Defender para Office al entorno de evaluación de Defender.](../../media/defender/m365-defender-office-eval-steps.png)
 

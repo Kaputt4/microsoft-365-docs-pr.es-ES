@@ -2,10 +2,10 @@
 title: Administrar directivas de reclamación automática
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.review: yinggiy, pablom
+ms.reviewer: yinggiy, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,30 +14,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_licensing
+- AdminSurgePortfolio
 description: Aprende a crear y administrar directivas de notificación automática que asignan automáticamente licencias a los usuarios para determinadas aplicaciones.
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: 28d05e0e3b1d1e8692672bf741a612ebee02e39f
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: d6cb3d78de914e84e831947089aeadf277e72ddf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753498"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321101"
 ---
 # <a name="manage-auto-claim-policies"></a>Administrar directivas de reclamación automática
 
 Una directiva de notificación automática permite a los usuarios reclamar automáticamente una licencia de un producto la primera vez que inician sesión en una aplicación. Como administrador, normalmente se asignan licencias a los usuarios manualmente o mediante licencias basadas en grupos. Al usar directivas de notificación automática, administra los productos para los que los usuarios pueden reclamar automáticamente licencias. También puede controlar de qué productos provienen esas licencias.
-
-Después de crear una directiva de notificación automática, puede realizar las siguientes tareas para administrar la directiva:
-
-- [Activar o desactivar la directiva](#turn-a-policy-on-or-off)
-- [Editar el nombre descriptivo de la directiva](#edit-the-policy-friendly-name)
-- [Agregar o quitar productos de copia de seguridad](#add-or-remove-backup-products)
-- [Administrar las aplicaciones y servicios de asignación](#change-the-assigning-apps-and-services)
-- [Cambiar el orden de asignación](#change-the-assigning-order-for-backup-products)
-- [Ver un informe de directiva](#view-an-auto-claim-policy-report)
 
 > [!IMPORTANT]
 > Actualmente, las directivas de notificación automática solo están disponibles para Microsoft Teams. En el futuro, habrá más productos disponibles para su uso.
@@ -59,9 +50,9 @@ De forma predeterminada, la característica de directiva de notificación autom�
 
 Solo un administrador global puede desactivar una configuración de directiva de notificación automática.
 
-1. En el Centro de administración, vaya a la **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">configuración de la organización.</a>
-2. Cerca de la parte inferior de la tabla, seleccione Aplicaciones y servicios **de propiedad del usuario.**
-3. En el panel derecho, desactive el cuadro Permitir a los usuarios **auto-reclamar licencias la primera vez que inicien sesión.**
+1. En el Centro de administración, vaya a la **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">configuración de la</a> organización.
+2. Cerca de la parte inferior de la tabla, selecciona **Servicios y aplicaciones propiedad del usuario**.
+3. En el panel derecho, desactive el cuadro Permitir a los usuarios **auto-reclamar licencias la primera vez que inicien sesión**.
 
 Si ya tiene una directiva activa, pero no desea que más usuarios reclame licencias, [desactive la directiva](#turn-a-policy-on-or-off). Cuando desactivas una directiva de notificación automática, no más usuarios pueden reclamar una licencia a partir de ese momento. Los usuarios que ya han reclamado una licencia no pierden su licencia.
 
@@ -69,20 +60,20 @@ Si ya tiene una directiva activa, pero no desea que más usuarios reclame licenc
 
 En <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">la pestaña Directiva de notificación automática</a> se enumeran las directivas que se crean. En esta pestaña, puedes ver: el nombre de la directiva, la aplicación asociada a la directiva, el producto asignado a la directiva, el número de licencias disponibles y el estado de la directiva.
 
-Al crear una directiva de notificación automática, puede agregarle un producto de copia de seguridad. Si el producto principal no tiene licencias, el producto de copia de seguridad se usa para asignar licencias a los usuarios. Puede agregar hasta cuatro productos de copia de seguridad [y cambiar el orden en que se usan](#change-the-assigning-order-for-backup-products). Para obtener más información, vea [Agregar o quitar productos de copia de seguridad.](#add-or-remove-backup-products)
+Al crear una directiva de notificación automática, puede agregarle un producto de copia de seguridad. Si el producto principal no tiene licencias, el producto de copia de seguridad se usa para asignar licencias a los usuarios. Puede agregar hasta cuatro productos de copia de seguridad [y cambiar el orden en que se usan](#change-the-assigning-order-for-backup-products). Para obtener más información, vea [Agregar o quitar productos de copia de seguridad](#add-or-remove-backup-products).
 
 > [!NOTE]
 > Actualmente, solo puede crear una directiva de notificación automática. El número de directivas que puede crear aumentará a medida que más productos puedan usar esta característica.
 
 1. En el Centro de administración, vaya a la página **Licencias** \> **de facturación** y, a continuación, seleccione la <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">pestaña Directiva de notificación</a> automática.
 2. Seleccione **Agregar una directiva**.
-3. En la **página Nombre de esta directiva de notificación automática,** escriba un nombre para la directiva y, a continuación, seleccione **Siguiente**.
+3. En la **página Nombre de esta directiva de notificación automática** , escriba un nombre para la directiva y, a continuación, **seleccione Siguiente**.
 4. En la **página Establecer una aplicación de notificación** automática y un producto, selecciona una aplicación y la suscripción desde la que asignar licencias.
-5. Si desea agregar un producto de copia de seguridad, seleccione Agregar un producto de copia de **seguridad a** esta directiva y, a continuación, seleccione el producto de la lista.
+5. Si desea agregar un producto de copia de seguridad, seleccione **Agregar un producto de copia de seguridad a** esta directiva y, a continuación, seleccione el producto de la lista.
 6. Seleccione **Siguiente**.
-7. En la **página Seleccionar aplicaciones,** desactive o seleccione los cuadros para que las aplicaciones excluyan o incluyan con la licencia y, a continuación, **seleccione Siguiente**.
+7. En la **página Seleccionar aplicaciones** , desactive o seleccione los cuadros para que las aplicaciones excluyan o incluyan con la licencia y, a continuación, **seleccione Siguiente**.
 8. Si agregó uno o más productos de copia de seguridad, repita el paso 7 para cada producto. De lo contrario, vaya al paso 9.
-9. En la **página Revisar y finalizar,** compruebe la nueva información de directiva, realice los cambios necesarios y, a continuación, **seleccione Crear directiva**.
+9. En la **página Revisar y finalizar** , compruebe la nueva información de directiva, realice los cambios necesarios y, a continuación, **seleccione Crear directiva**.
 10. Seleccione **Cerrar**.
 
 ## <a name="turn-a-policy-on-or-off"></a>Activar o desactivar una directiva
@@ -91,14 +82,14 @@ Al desactivar una directiva, no más usuarios pueden reclamar licencias en esa d
 
 1. En el Centro de administración, vaya a la página **Licencias** \> **de facturación** y, a continuación, seleccione la <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">pestaña Directiva de notificación</a> automática.
 2. Seleccione la directiva que desea editar.
-3. En el panel de detalles, en Activar o desactivar esta **directiva,** active o desactive la casilla.
+3. En el panel de detalles, en **Activar o** desactivar esta directiva, active o desactive la casilla.
 4. Seleccione **Guardar** para cerrar el panel de detalles.
 
 ## <a name="edit-the-policy-friendly-name"></a>Editar el nombre descriptivo de la directiva
 
 1. En el Centro de administración, vaya a la página **Licencias** \> **de facturación** y, a continuación, seleccione la <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">pestaña Directiva de notificación</a> automática.
 2. Seleccione la directiva que desea editar.
-3. En el panel de detalles, en la **sección Nombre de directiva,** seleccione **Editar**.
+3. En el panel de detalles, en la **sección Nombre de directiva** , seleccione **Editar**.
 4. Escriba un nuevo nombre de directiva y, a continuación, **seleccione Guardar**.
 5. Seleccione **Guardar** para cerrar el panel de detalles.
 
@@ -115,10 +106,10 @@ Al quitar un producto de copia de seguridad, ya no se usa para asignar licencias
 
 1. En el Centro de administración, vaya a la página **Licencias** \> **de facturación** y, a continuación, seleccione la <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">pestaña Directiva de notificación</a> automática.
 2. Seleccione la directiva que desea editar.
-3. En el panel de detalles, en la parte inferior, seleccione **Agregar un producto de copia de seguridad a esta directiva.**
+3. En el panel de detalles, en la parte inferior, seleccione **Agregar un producto de copia de seguridad a esta directiva**.
     > [!NOTE]
     > Si no ve este vínculo, es porque solo tiene un producto asociado a su cuenta.
-4. En el **panel Agregar un producto,** use la lista desplegable para elegir un producto para agregar a la directiva y, a continuación, **seleccione Agregar**.
+4. En el **panel Agregar un producto** , use la lista desplegable para elegir un producto que agregar a la directiva y, a continuación, **seleccione Agregar**.
 5. Seleccione **Guardar** para cerrar el panel de detalles.
 
 ### <a name="remove-a-backup-product"></a>Quitar un producto de copia de seguridad
@@ -126,7 +117,7 @@ Al quitar un producto de copia de seguridad, ya no se usa para asignar licencias
 1. En el Centro de administración, vaya a la página **Licencias** \> **de facturación** y, a continuación, seleccione la <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">pestaña Directiva de notificación</a> automática.
 2. Seleccione la directiva que desea editar.
 3. En el panel de detalles, en la parte inferior, seleccione **Quitar un producto**.
-4. En el **panel Quitar un producto del** panel de directivas, seleccione el cuadro de la directiva que desea quitar y, a continuación, seleccione **Guardar**.
+4. En el **panel Quitar un producto del panel de** directivas, seleccione el cuadro de la directiva que desea quitar y, a continuación, **seleccione Guardar**.
 5. Cierre el panel de detalles.
 
 ## <a name="change-the-assigning-apps-and-services"></a>Cambiar las aplicaciones y servicios de asignación
@@ -135,8 +126,8 @@ Cada producto tiene asociada una colección de aplicaciones y servicios. Para ca
 
 1. En el Centro de administración, vaya a la página **Licencias** \> **de facturación** y, a continuación, seleccione la <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">pestaña Directiva de notificación</a> automática.
 2. Seleccione la directiva que desea editar.
-3. En el panel de detalles, en **Aplicaciones y servicios,** seleccione **Editar**.
-4. En el panel Aplicaciones y  **servicios,** en la lista desplegable Producto, seleccione un solo producto o seleccione Todos los **productos**.
+3. En el panel de detalles, en **Aplicaciones y servicios**, seleccione **Editar**.
+4. En el **panel Aplicaciones y servicios** , **en la lista** desplegable Producto, seleccione un solo producto o **seleccione Todos los productos**.
 5. Active o desactive las casillas de aplicaciones y servicios a los que desea que los usuarios tengan o no acceso.
 6. Cuando haya terminado, seleccione **Guardar** y, a continuación, cierre el panel de detalles.
 
@@ -146,7 +137,7 @@ Si tienes productos de copia de seguridad asignados a la directiva, puedes cambi
 
 1. En el Centro de administración, vaya a la página **Licencias** \> **de facturación** y, a continuación, seleccione la <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">pestaña Directiva de notificación</a> automática.
 2. Seleccione la directiva que desea editar.
-3. En el panel de detalles, en la sección **Licencias de** productos, seleccione el cuadro situado junto al producto que desea mover y, a continuación, seleccione **Subir** o **Bajar.**
+3. En el panel de detalles, en la sección **Licencias de** productos, seleccione el cuadro situado junto al producto que desea mover y, a continuación, seleccione **Subir o** **Bajar**.
 4. Repita el paso 3 para cada producto que desee reordenar.
 5. Cuando haya terminado de reordenar los productos, seleccione **Guardar** para cerrar el panel de detalles.
 

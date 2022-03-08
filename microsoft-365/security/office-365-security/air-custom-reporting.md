@@ -3,8 +3,8 @@ title: Soluciones de informes personalizadas con investigación y respuesta auto
 keywords: SIEM, API, AIR, autoIR, Microsoft Defender para endpoint, investigación automatizada, integración, informe personalizado
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -21,32 +21,32 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b1c0501bb044129c4fa626428dfc616ea8414e0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8d2812f9f2e1100a923dc5f9bb22a9b6df218a78
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174380"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321731"
 ---
 # <a name="custom-or-third-party-reporting-solutions-for-microsoft-defender-for-office-365"></a>Soluciones de informes personalizadas o de terceros para Microsoft Defender para Office 365
 
-Con [Microsoft Defender para Office 365,](defender-for-office-365.md)obtiene información detallada acerca de las [investigaciones automatizadas.](air-view-investigation-results.md) Sin embargo, algunas organizaciones también usan una solución de informes personalizada o de terceros. Si su organización desea integrar información sobre [investigaciones automatizadas](office-365-air.md) con dicha solución, puede usar la API de actividad Office 365 administración.
+Con [Microsoft Defender para Office 365](defender-for-office-365.md), obtiene información [detallada sobre las investigaciones automatizadas](air-view-investigation-results.md). Sin embargo, algunas organizaciones también usan una solución de informes personalizada o de terceros. Si su organización desea integrar información acerca de las investigaciones [automatizadas](office-365-air.md) con dicha solución, puede usar la API de actividad Office 365 administración.
 
 **Se aplica a**
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Con [Microsoft Defender para Office 365,](defender-for-office-365.md)obtiene información detallada acerca de las [investigaciones automatizadas.](air-view-investigation-results.md) Sin embargo, algunas organizaciones también usan una solución de informes personalizada o de terceros. Si su organización desea integrar información acerca de las investigaciones automatizadas con dicha solución, puede usar la API de Office 365 actividad de administración.
+Con [Microsoft Defender para Office 365](defender-for-office-365.md), obtiene información [detallada sobre las investigaciones automatizadas](air-view-investigation-results.md). Sin embargo, algunas organizaciones también usan una solución de informes personalizada o de terceros. Si su organización desea integrar información acerca de las investigaciones automatizadas con dicha solución, puede usar la API de actividad Office 365 administración.
 
 |Recurso|Descripción|
 |:---|:---|
 |[Información general de las API de administración de Office 365](/office/office-365-management-api/office-365-management-apis-overview)|La API Office 365 actividad de administración proporciona información sobre diversos eventos y acciones de usuario, administrador, sistema y directiva de Microsoft 365 y Azure Active Directory de actividad.|
 |[Introducción a las API de administración de Office 365](/office/office-365-management-api/get-started-with-office-365-management-apis)|La API Office 365 management usa Azure AD para proporcionar servicios de autenticación para que la aplicación obtenga acceso a Microsoft 365 datos. Siga los pasos de este artículo para configurar esto.|
-|[Referencia de las API de Actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference)|Puede usar la API de Office 365 actividad de administración para recuperar información sobre acciones y eventos de usuario, administrador, sistema y directiva de Microsoft 365 y registros de actividad de Azure AD. Lea este artículo para obtener más información sobre cómo funciona.|
-|[Esquema de la API de Actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-schema)|Obtenga información general sobre el [esquema común](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) y el esquema de investigación y respuesta de defender para [Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) y amenazas para obtener información sobre tipos específicos de datos disponibles a través de la API de actividad de administración Office 365 administración.|
+|[Referencia de las API de Actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference)|Puede usar la API de Office 365 actividad de administración para recuperar información sobre acciones y eventos de usuario, administrador, sistema y directiva de Microsoft 365 y Azure AD de actividad. Lea este artículo para obtener más información sobre cómo funciona.|
+|[Esquema de la API de Actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-schema)|Obtenga información general sobre el [esquema común](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) y el esquema de investigación y respuesta de [defender para Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) y amenazas para obtener información sobre tipos específicos de datos disponibles a través de la API de actividad de administración Office 365 administración.|
 |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Investigación y respuesta automatizadas en Microsoft 365 Defender](/microsoft-365/security/defender/m365d-autoir)

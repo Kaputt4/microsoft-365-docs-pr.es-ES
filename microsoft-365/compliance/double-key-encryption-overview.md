@@ -4,7 +4,7 @@ description: Preguntas más frecuentes acerca del cifrado de clave doble para Mi
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 12/11/2020
+ms.date: 02/28/2022
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 8cdc4d71609430dd7bcb19edc3b55c49a3b9401d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 269937e78ffee6956df5a4dc8dc978fa30043912
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200538"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320989"
 ---
 # <a name="double-key-encryption-frequently-asked-questions"></a>Preguntas más frecuentes sobre cifrado de clave doble
 
@@ -37,7 +37,7 @@ Deberá usar el cliente de etiquetado unificado de Azure Information Protection 
 
 ## <a name="what-microsoft-365-apps-can-i-use-with-dke"></a>¿Aplicaciones Microsoft 365 puedo usar con DKE?
 
-Puede usar etiquetas DKE para proteger documentos mediante las versiones de escritorio de Word, Excel y PowerPoint en Windows. Asegúrese de que está usando *.12711 o versiones posteriores (versiones de escritorio de Word, PowerPoint y Excel) en Windows.
+Puede usar etiquetas DKE para proteger documentos con las versiones de escritorio de Word, Excel y PowerPoint en Windows. Asegúrese de que está usando *.12711 o versiones posteriores (versiones de escritorio de Word, PowerPoint y Excel) en Windows.
 
 ## <a name="how-is-double-key-encryption-different-from-the-existing-hold-your-own-key-hyok-solution"></a>¿En qué se diferencia el cifrado de clave doble de la solución de retención existente de su propia clave (HYOK)?
 
@@ -61,7 +61,7 @@ DKE no admite estos entornos porque el servicio requiere acceso a Microsoft Azur
 
 ## <a name="where-can-i-store-double-key-encrypted-documents"></a>¿Dónde puedo almacenar documentos cifrados de doble clave?
 
-Puede almacenar documentos cifrados de doble clave local o en la nube. En la nube, puede mover contenido cifrado a SharePoint Online y OneDrive para la Empresa. Dado que Microsoft no tiene acceso a la clave privada, los datos cifrados permanecen opacos para Microsoft. Esto también significa que no puede ver los documentos cifrados en línea en Office Web Apps.
+Puede almacenar documentos cifrados de doble clave local o en la nube. En la nube, puedes mover contenido cifrado a SharePoint Online y OneDrive para la Empresa. Dado que Microsoft no tiene acceso a la clave privada, los datos cifrados permanecen opacos para Microsoft. Esto también significa que no puede ver los documentos cifrados en línea en Office Web Apps.
 
 ## <a name="what-regions-and-languages-is-double-key-encryption-available-in-is-double-key-encryption-available-worldwide"></a>¿En qué regiones e idiomas está disponible el cifrado de clave doble? ¿El cifrado de clave doble está disponible en todo el mundo?
 

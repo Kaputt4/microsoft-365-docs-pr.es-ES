@@ -8,14 +8,19 @@ audience: admin
 ms.topic: article
 ms.customer: intro-overview
 ms.prod: microsoft-365-enterprise
-search.appverid: null
+search.appverid: ''
 ms.collection:
-  - enabler-strategic
-  - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre la comprensión de documentos en Microsoft SharePoint Syntex.
+ms.openlocfilehash: 4c4910ac2cec9688af60c6999e67e1be41701ef3
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322595"
 ---
-
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Introducción a la comprensión de documentos en Microsoft SharePoint Syntex
 
 
@@ -49,7 +54,7 @@ Después de publicar el modelo, utilice el centro de contenido para aplicarlo a 
 
 Los modelos de comprensión de documentos usan la tecnología de reconocimiento óptico de caracteres (OCR) para examinar archivos PDF, imágenes y TIFF. Los archivos se examinan cuando se entrena un modelo con archivos de ejemplo y cuando se ejecuta el modelo en archivos de una biblioteca de documentos.
 
-Tenga en cuenta las siguientes diferencias Microsoft Office archivos basados en texto y archivos escaneados por OCR (PDF, imagen o TIFF):
+Tenga en cuenta las siguientes diferencias Microsoft Office archivos basados en texto y archivos examinados por OCR (PDF, imagen o TIFF):
 
 - Archivos de Office: truncados a 64 000 caracteres (durante el entrenamiento y cuando se ejecuta en archivos de una biblioteca de documentos).
 
@@ -108,6 +113,7 @@ Los modelos de comprensión mediante documentos admiten los siguientes tipos de 
 ### <a name="supported-languages"></a>Idiomas admitidos
 
 Los modelos de descripción de documentos admiten los siguientes idiomas:
+- Inglés
 - Francés
 - Alemán
 - Italiano

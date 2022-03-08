@@ -15,28 +15,23 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 774bad728b8cac0eadf71c3b97ceff0b1f9aabc8
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 11f2c6202d31a3715a73b189648dcef0ade79b0b
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165191"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322875"
 ---
 # <a name="provide-feedback-on-the-microsoft-defender-for-endpoint-client-analyzer-tool"></a>Proporcionar comentarios sobre la herramienta del analizador de cliente de Microsoft Defender para endpoints
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-Si tiene comentarios o sugerencias que nos ayudarán a mejorar el analizador de cliente de Microsoft Defender para endpoints, use cualquiera de estas opciones para enviar comentarios:
+Si tiene comentarios o sugerencias que nos ayudarán a mejorar el analizador de cliente de Microsoft Defender para endpoints, use el siguiente vínculo para enviar comentarios:
 
-1. Portal de Microsoft Defender para puntos de conexión (securitycenter.windows.com):
+Microsoft 365 Defender web (security.microsoft.com):
 
-    ![Imagen del icono de comentarios sonriente.](images/3e2db5015cd4f47436b4765b2303f4f5.png)
-
-2. Microsoft 365 Defender web (security.microsoft.com):
-
-    ![Imagen del botón enviar comentarios.](images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png)
+![Imagen del botón enviar comentarios.](images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png)

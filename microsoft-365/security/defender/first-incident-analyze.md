@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3854c8891f1cc5175c87b9842d9c30b3164a6f46
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: dd39ace81a6128b9edcc33581c8386c06adf0d5f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903639"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323253"
 ---
-# <a name="step-1-triage-and-analyze-your-first-incident"></a>Paso 1. Triage and analyze your first incident
+# <a name="step-1-triage-and-analyze-your-first-incident"></a>Paso 1. Triage and analyze your first incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "62903639"
 
 A medida que pasa algún tiempo estableciendo, implementando y manteniendo medidas de seguridad de acuerdo con los estándares de la organización, puede configurar soluciones de seguridad para ayudarle a identificar rápidamente los riesgos y amenazas de seguridad. Microsoft 365 Defender permite detectar, realizar una triaje e investigar incidentes a través de su experiencia de un solo panel de cristal, donde puede encontrar la información que necesita para tomar decisiones a tiempo.
 
-Una vez que se detecte un incidente de seguridad, Microsoft 365 Defender los detalles que necesitará para realizar una triaje o priorizar un incidente o incidentes sobre otros. Después de determinar la priorización, los analistas pueden centrar su energía en investigar los casos que se les han asignado.
+Una vez que se detecte un incidente de seguridad, Microsoft 365 Defender presenta detalles que necesitará para realizar una triaje o priorizar un incidente o incidentes sobre otros. Después de determinar la priorización, los analistas pueden centrar su energía en investigar los casos que se les han asignado.
 
 ## <a name="detection-by-microsoft-365-defender"></a>Detección por Microsoft 365 Defender
 
@@ -51,7 +51,7 @@ Microsoft 365 Defender recibe alertas y eventos de varias plataformas de segurid
 - [Azure Security Center](/azure/security-center/security-center-introduction) es un sistema de administración de seguridad de infraestructura unificada que refuerza la posición de seguridad de los centros de datos y proporciona protección contra amenazas avanzada en las cargas de trabajo híbridas en la nube y en las instalaciones.
 
 
-En Microsoft 365 Defender, los incidentes se identifican mediante la correlación de [alertas](incidents-overview.md) de estos diferentes orígenes de detección. En lugar de gastar recursos en cadenas o distinguir varias alertas en sus respectivos incidentes, puede empezar con la cola de incidentes en Microsoft 365 Defender inmediato. Esto le permite realizar triajes de incidentes de manera eficaz en puntos de conexión, identidades, correo electrónico y aplicaciones, y reducir los daños causados por un ataque.
+En Microsoft 365 Defender, [los incidentes se](incidents-overview.md) identifican mediante la correlación de alertas de estos diferentes orígenes de detección. En lugar de gastar recursos en cadenas o distinguir varias alertas en sus respectivos incidentes, puede empezar con la cola de incidentes en Microsoft 365 Defender inmediato. Esto le permite realizar triajes de incidentes de manera eficaz en puntos de conexión, identidades, correo electrónico y aplicaciones, y reducir los daños causados por un ataque.
 
 ## <a name="triage-your-incidents"></a>Triage your incidents
 
@@ -98,7 +98,7 @@ A continuación se muestra solo un enfoque para el triaje que se debe tener en c
 
 Es igualmente importante comprender el contexto que rodea las alertas. A menudo, una alerta no es un solo evento independiente. Hay una cadena de procesos creados, comandos y acciones que podrían no haber ocurrido al mismo tiempo. Por lo tanto, debes buscar la primera y la última actividad de la entidad sospechosa en las escalas de tiempo del dispositivo para comprender el contexto de las alertas.
 
-Hay varias maneras de leer y analizar datos mediante Microsoft 365 Defender pero el objetivo final para los analistas es responder a los incidentes lo antes posible. Aunque Microsoft 365 Defender reducir significativamente el tiempo medio de corrección [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) a través de la característica de investigación [](m365d-autoir.md) y respuesta automatizada líder del sector, siempre hay casos que requieren análisis manual.
+Hay varias maneras de leer y analizar datos mediante Microsoft 365 Defender pero el objetivo final para los analistas es responder a incidentes lo antes posible. Aunque Microsoft 365 Defender reducir significativamente el tiempo medio de corrección [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) a través de la característica de investigación y [](m365d-autoir.md) respuesta automatizada líder en el sector, siempre hay casos que requieren análisis manual.
 
 Aquí le mostramos un ejemplo:
 
@@ -134,7 +134,7 @@ Aquí le mostramos un ejemplo:
 
 Obtenga información sobre [cómo corregir incidentes](first-incident-remediate.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

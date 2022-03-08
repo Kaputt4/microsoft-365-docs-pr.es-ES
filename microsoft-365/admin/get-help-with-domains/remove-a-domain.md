@@ -2,8 +2,8 @@
 title: Quitar un dominio
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,21 +25,21 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Obtenga información sobre cómo quitar un dominio antiguo de Microsoft 365 y mover usuarios y grupos a otro dominio o cancelar la suscripción.
-ms.openlocfilehash: 875858804912ab75d0a5a0bab45c9bb1614c82ca
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 3da47275e090296c9b192b4bd60ad19dd8cf4149
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765161"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316833"
 ---
 # <a name="remove-a-domain"></a>Quitar un dominio
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca.
 
-¿Está quitando el dominio porque desea agregarlo a un plan de Microsoft 365 suscripción diferente? ¿O solo quiere cancelar su suscripción? Puede [cambiar su plan o suscripción](../../commerce/subscriptions/switch-to-a-different-plan.md), o bien [cancelar la suscripción](../../commerce/subscriptions/cancel-your-subscription.md).
+¿Está quitando el dominio porque desea agregarlo a un plan de suscripción Microsoft 365 diferente? ¿O solo quiere cancelar su suscripción? Puede [cambiar su plan o suscripción](../../commerce/subscriptions/switch-to-a-different-plan.md), o bien [cancelar la suscripción](../../commerce/subscriptions/cancel-your-subscription.md).
 
 > [!TIP]
-> Si necesita ayuda con los pasos de este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso diario a los especialistas de pequeñas empresas a medida que crece su negocio, desde la incorporación hasta el uso diario.
+> Si necesita ayuda con los pasos que se describen en este tema, considere la posibilidad de [trabajar con un especialista en pequeñas empresas de Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). Con Business Assist, usted y sus empleados obtienen acceso de forma ininterrumpida a especialistas de pequeñas empresas a medida que hace crecer su negocio, desde la incorporación laboral hasta el uso cotidiano.
 
 ### <a name="step-1-move-users-to-another-domain"></a>Paso 1: Mover usuarios a otro dominio
 
@@ -115,6 +115,9 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 ::: moniker range="o365-worldwide"
 
+> [!NOTE]
+> Si va a quitar un dominio personalizado, vea [quitar un dominio personalizado](#remove-a-custom-domain) antes de continuar.
+
 1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
 
 ::: moniker-end
@@ -130,6 +133,35 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 3. En el panel derecho, seleccione **Quitar**.
 
 4. Siga los avisos adicionales y, a continuación, **seleccione Cerrar**.
+
+
+
+
+### <a name="remove-a-custom-domain"></a>Quitar un dominio personalizado
+
+Si cancela la suscripción y usa un dominio personalizado, hay algunos pasos adicionales que debe realizar antes de poder cancelar la suscripción. 
+
+#### <a name="change-your-domain-nameserver-records-if-needed"></a>Cambiar los registros del servidor de nombres de su dominio (si es necesario)
+
+Si configuró un dominio personalizado, debió agregar registros DNS para que el dominio trabajara con los servicios de Microsoft 365. Antes de quitar el dominio, asegúrese de actualizar los registros DNS, como el registro MX de su dominio, en el host DNS.
+
+Por ejemplo, cambie el registro MX de su host DNS. El correo electrónico que se envía a su dominio deja de llegar a su dirección de Microsoft y va a su nuevo proveedor de correo electrónico. (Un registro MX determina dónde se envía el correo electrónico del dominio).
+
+- Si los registros de su servidor de nombres (NS) [apuntan a servidores de nombres de Microsoft 365](../../admin/setup/add-domain.md), el cambio del registro MX no surtirá efecto hasta que no cambie dichos registros NS para que apunten al nuevo host DNS (consulte el paso 2).
+
+- Antes de actualizar el registro MX, informe a sus usuarios la fecha en que planea cambiar su correo electrónico y el nuevo proveedor de correo electrónico que pretende usar. Además, si los usuarios desean mover su correo electrónico existente de Microsoft al nuevo proveedor, deben realizar pasos adicionales.
+
+- El día que cambie el registro MX, asegúrese de guardar los [](/microsoft-365/commerce/subscriptions/cancel-your-subscription#save-your-data) datos y desinstalar [Office si es necesario](/microsoft-365/commerce/subscriptions/cancel-your-subscription#uninstall-office-optional).
+
+#### <a name="update-your-domain-mx-and-other-dns-records-if-youre-using-a-custom-domain"></a>Actualizar el registro MX y otros registros DNS de su dominio (si usa un dominio personalizado)
+
+Si cambió los registros del servidor de nombres (NS) a Microsoft 365 al configurar su dominio, deberá configurar o actualizar el registro MX y el resto de los registros DNS del host DNS que planea usar, y después, cambiar el registro NS a dicho host DNS.
+
+Si no cambió los registros NS cuando configuró su dominio, al modificar el registro MX, el correo empezará a redirigirse inmediatamente a la nueva dirección.
+
+Para cambiar los registros NS, vea [Change nameservers to set up Microsoft 365 with any domain registrar](../../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
+
+
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>¿Cuánto tiempo tarda un dominio en quitarse?
 

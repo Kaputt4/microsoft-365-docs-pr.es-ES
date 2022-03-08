@@ -2,8 +2,8 @@
 title: Solicitar un crédito para la retención de impuestos en su cuenta (clientes de India)
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
@@ -16,23 +16,23 @@ ms.collection:
 search.appverid: MET150
 description: Obtenga información sobre cómo solicitar un crédito en su cuenta para la retención de impuestos que pagó. Este artículo solo se aplica a los clientes de india.
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: cf4e742dfae6866a20690b900604042a1c411503
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bd1f9af95d28ab8204c53afbe47c7def3230dbda
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189638"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327887"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Solicitar un crédito para la retención de impuestos en su cuenta (clientes de India)
 
 > [!NOTE]
 >
-> Si su organización no está basada en India, consulte Solicitar un crédito para la retención de impuestos [en su cuenta (clientes globales).](withholding-tax-credit-global.md)
+> Si su organización no está basada en India, consulte Solicitar un crédito para la retención de [impuestos en su cuenta (clientes globales).](withholding-tax-credit-global.md).
 
 Los clientes de India reciben facturas de Web Direct (Azure y Microsoft 365) facturadas por Microsoft Regional Sales Pte Ltd. Singapur (MRS) y hacen pagos transfronterizos a Singapur para liquidar la factura. Si retuvo impuestos al enviar el pago, en este artículo se explica el proceso para reclamar un crédito por la retención de impuestos (WHT) en su cuenta con MRS.
 
@@ -42,7 +42,7 @@ Si retuvo los impuestos al enviar el pago a MRS y depositó el impuesto retenido
 
 La solicitud WHT debe incluir los siguientes elementos:
 
-- Una copia completada del formulario de retención [de crédito fiscal](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) (rellenada por el cliente)
+- Una copia completada del formulario [de retención de crédito fiscal](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) (rellenada por el cliente)
 - Un certificado TDS firmado digitalmente (formulario 16A) emitido por el Departamento de Impuestos sobre la Renta de la India (proporcionado por el cliente)
 
 Envíe la solicitud WHT abriendo un vale con soporte técnico de Microsoft.
@@ -53,7 +53,7 @@ Si su método de pago es una tarjeta de crédito y realizó un pago completo a M
 
 La solicitud WHT debe incluir los siguientes elementos:
 
-- Una copia completada del formulario de retención [de crédito fiscal](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) (rellenada por el cliente)
+- Una copia completada del formulario [de retención de crédito fiscal](https://download.microsoft.com/download/a/2/a/a2a35969-2d54-4faa-ba41-6a50525eba70/WHT%20Credit%20Form%20-%20India.docx) (rellenada por el cliente)
 - Un certificado TDS firmado digitalmente (formulario 16A) emitido por el Departamento de Impuestos sobre la Renta de la India (proporcionado por el cliente)
 
 Enviar la solicitud WHT abriendo un vale con soporte técnico de Microsoft
@@ -67,7 +67,7 @@ En la tabla siguiente se muestran las fechas de vencimiento y las escalas de tie
 | 1 | Abril - Junio | 15 de agosto | 31 de agosto |
 | 2 | Julio - Septiembre | 15-Nov | 30-Nov |
 | 3 | Octubre - Diciembre | 15 de febrero | 28 de febrero |
-| 4  | Enero - Marzo | 15-Jun | 30-Jun |
+| 4 | Enero - Marzo | 15-Jun | 30-Jun |
 
 > [!IMPORTANT]
 >

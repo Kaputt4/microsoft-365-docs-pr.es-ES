@@ -4,28 +4,29 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekua
-manager: svidican
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
-- Adm_O365
+- Adm_O365W
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkSPO
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Los roles de administrador se asignan a funciones empresariales y proporcionan permisos para realizar tareas específicas en el Centro de administración. Por ejemplo, el Administrador de servicios abre vales de soporte técnico con Microsoft.
-ms.openlocfilehash: 8232e95649ac894e8a024a2d2ac4e7b4261cb1f2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 813cc178b572be5a6b1abc28d355ede020918c55
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161923"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315251"
 ---
 # <a name="get-started-with-the-roles-page"></a>Introducción a la página roles
 
@@ -34,7 +35,7 @@ En la página Roles, puede conceder a los usuarios permisos para realizar tareas
 ![Figura que muestra roles de administrador.](../../media/roles-main-page.png)
 
 > [!TIP]
-> ¿Busca las descripciones detalladas de los roles? Consulte [Roles integrados](/azure/active-directory/roles/permissions-reference) de Azure AD y [Acerca de los roles de administrador](/microsoft-365/admin/add-users/about-admin-roles).
+> ¿Busca las descripciones detalladas de los roles? Consulte Azure AD [roles integrados y](/azure/active-directory/roles/permissions-reference) Acerca [de los roles de administrador](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="about-the-admin-roles-page"></a>Acerca de la página roles de administrador
 
@@ -62,7 +63,7 @@ Asigne el Exchange de administrador a los usuarios que necesiten ver y administr
 
 ### <a name="global-admin"></a>Administrador global
 
-Asigne el rol de administrador global a los usuarios que necesiten acceso global a la mayoría de las características y datos de administración en los servicios en línea de Microsoft. Otorgar acceso global a un gran número de usuarios es un riesgo para la seguridad y le recomendamos que solo tenga entre 2 y 4 administradores globales. Solo los administradores globales pueden restablecer las contraseñas de todos los usuarios y agregar y administrar dominios. También pueden abrir y administrar solicitudes de soporte técnico para el soporte técnico de Microsoft . La persona que se inscribió en los servicios en línea de Microsoft se convierte automáticamente en administrador global. [Más información](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Asigne el rol de administrador global a los usuarios que necesiten acceso global a la mayoría de las características y datos de administración en los servicios en línea de Microsoft. Otorgar acceso global a un gran número de usuarios es un riesgo para la seguridad y le recomendamos que solo tenga entre 2 y 4 administradores globales. Solo los administradores globales pueden restablecer las contraseñas de todos los usuarios y agregar y administrar dominios. También pueden abrir y administrar solicitudes de soporte técnico para el soporte técnico de Microsoft. La persona que se inscribió en los servicios en línea de Microsoft se convierte automáticamente en administrador global. [Más información](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="global-reader"></a>Lector global
 
@@ -78,11 +79,11 @@ Asigne el rol de administrador de servicio a los usuarios que necesitan crear so
 
 ### <a name="sharepoint-admin"></a>Administrador de SharePoint
 
-Al comprar una suscripción Microsoft 365, se crea automáticamente un sitio de grupo y el administrador global se establece como administrador de la colección de sitios principal. Asigna el SharePoint de administrador a los usuarios a los que quieras acceder al centro SharePoint administración. Los usuarios con el SharePoint administrador pueden crear y administrar colecciones de sitios, designar administradores de colecciones de sitios y administrar perfiles de usuario. Los usuarios con el SharePoint de administración también pueden administrar grupos Microsoft 365 y abrir solicitudes de soporte técnico a través del soporte técnico de Microsoft. [Más información](/sharepoint/sharepoint-admin-role)
+Al comprar una suscripción Microsoft 365, se crea automáticamente un sitio de grupo y el administrador global se establece como administrador de la colección de sitios principal. Asigna el SharePoint de administrador a los usuarios a los que quieras acceder al <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centro SharePoint administración</a>. Los usuarios con el SharePoint administrador pueden crear y administrar colecciones de sitios, designar administradores de colecciones de sitios y administrar perfiles de usuario. Los usuarios con el SharePoint de administración también pueden administrar grupos de Microsoft 365 y abrir solicitudes de soporte técnico a través del soporte técnico de Microsoft. [Más información](/sharepoint/sharepoint-admin-role)
 
 ### <a name="teams-service-admin"></a>Administrador de servicios de Teams
 
-Asigna el Teams de administración a los usuarios a los que quieres acceder y administrar el centro Teams & Skype administración. Los usuarios con el Teams de administración también pueden administrar grupos Microsoft 365 y abrir solicitudes de soporte técnico a través del soporte técnico de Microsoft. [Más información](/MicrosoftTeams/using-admin-roles)
+Asigna el Teams de administrador a los usuarios a los que quieras acceder y administrar el centro Teams & Skype administración. Los usuarios con el Teams de administración también pueden administrar Microsoft 365 y abrir solicitudes de soporte técnico a través del soporte técnico de Microsoft. [Más información](/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>Administrador de usuarios
 

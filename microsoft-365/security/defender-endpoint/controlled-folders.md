@@ -15,14 +15,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.collection: m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 8873a8f374280834970d14f72c2e6677292f7702
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: ea3e45a5469c9769f55f9ce90f799c54556de814
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807445"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322903"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteger carpetas importantes con acceso controlado a carpetas
 
@@ -66,7 +66,7 @@ Las [carpetas protegidas](#review-controlled-folder-access-events-in-windows-eve
 Puede usar el [modo de auditoría para](audit-windows-defender.md) evaluar cómo el acceso controlado a carpetas afectaría a su organización si estuviera habilitado. También puede visitar el sitio web Windows Defender prueba en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para confirmar que la característica funciona y ver cómo funciona.
 
 > [!NOTE]
-> El sitio de demostración defender para el punto de conexión en demo.wd.microsoft.com está en desuso y se quitará en el futuro.
+> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está obsoleto y se eliminará en el futuro.
 
 El acceso controlado a carpetas se admite en las siguientes versiones de Windows:
 
@@ -96,13 +96,13 @@ Las carpetas predeterminadas aparecen en el perfil del usuario, en **Este equipo
    > ![Carpetas Windows de sistemas predeterminadas protegidas](images/defaultfolders.png)
 
 > [!NOTE]
-> Puede configurar carpetas adicionales como protegidas, pero no puede quitar las Windows del sistema que están protegidas de forma predeterminada.
+> Puede configurar carpetas adicionales como protegidas, pero no puede quitar las carpetas Windows del sistema que están protegidas de forma predeterminada.
 
 ## <a name="requirements-for-controlled-folder-access"></a>Requisitos para el acceso controlado a carpetas
 
 El acceso controlado a carpetas [requiere Antivirus de Microsoft Defender protección en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md).
 
-## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Revisar eventos de acceso controlado a carpetas en el portal Microsoft 365 Defender web
+## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Revisar los eventos de acceso controlado a carpetas en el portal de Microsoft 365 Defender control
 
 Defender for Endpoint proporciona informes detallados sobre eventos y bloques como parte de sus escenarios de investigación de [alertas](investigate-alerts.md) en el portal de Microsoft 365 Defender; consulte [Microsoft Defender for Endpoint en Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
 
@@ -115,9 +115,9 @@ DeviceEvents
 | where ActionType in ('ControlledFolderAccessViolationAudited','ControlledFolderAccessViolationBlocked')
 ```
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Revisar los eventos de acceso controlado a carpetas Windows visor de eventos
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Revisar eventos de acceso controlado a carpetas en Windows visor de eventos
 
-Puedes revisar el registro Windows eventos para ver los eventos que se crean cuando el acceso controlado a carpetas bloquea (o audita) una aplicación:You can review the Windows event log to see events that are created when controlled folder access blocks (or audits) an app:
+Puedes revisar el registro Windows eventos para ver los eventos que se crean cuando el acceso controlado a carpetas bloquea (o audita) una aplicación:
 
 1. Descargue el [paquete de evaluación](https://aka.ms/mp7z2w) y extraiga el archivo *cfa-events.xml* a una ubicación fácilmente accesible en el dispositivo.
 2. Escriba **Visor de** eventos en el menú Inicio para abrir el visor Windows eventos.
@@ -137,7 +137,7 @@ En la tabla siguiente se muestran los eventos relacionados con el acceso control
 
 ## <a name="view-or-change-the-list-of-protected-folders"></a>Ver o cambiar la lista de carpetas protegidas
 
-Puedes usar la aplicación Seguridad de Windows para ver la lista de carpetas protegidas por el acceso controlado a carpetas.
+Puedes usar la aplicación Seguridad de Windows para ver la lista de carpetas que están protegidas por el acceso controlado a carpetas.
 
 1. En tu Windows 10 o Windows 11 dispositivo, abre la Seguridad de Windows aplicación.
 2. Seleccione **Protección antivirus y contra amenazas**.

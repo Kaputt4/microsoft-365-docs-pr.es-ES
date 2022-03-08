@@ -25,18 +25,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga estos pasos para quitar la Microsoft 365 de un antiguo empleado.
-ms.openlocfilehash: 52ab851c88d05c33de58d28d566a46b5e8b1710b
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: b724e8d65c990396ad376544de86d4ffd0cb5fdc
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805849"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315167"
 ---
-# <a name="step-6---remove-the-microsoft-365-license-from-a-former-employee"></a>Paso 6: Quitar la licencia Microsoft 365 de un antiguo empleado
+# <a name="step-6---remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>Paso 6: Quitar y eliminar la Microsoft 365 de un antiguo empleado
 
-Si no quieres pagar una licencia después de que alguien abandone la organización, debes quitar su licencia Microsoft 365 y, a continuación, eliminarla de la suscripción. Puedes asignar una licencia a otro usuario si no la eliminas.
+Si no quieres pagar una licencia después de que alguien salga de la organización, debes quitar su licencia de Microsoft 365 y, a continuación, eliminarla de la suscripción. Puedes asignar una licencia a otro usuario si no la eliminas.
 
-Si las personas autorizadas a las que se les ha concedido permisos de exhibición de documentos electrónicos por motivos legales o de cumplimiento, deben tener acceso al buzón de correo, debe tener asignada una licencia del Plan 2 de Exchange Online (o una licencia del Plan 1 de Exchange Online con una Archivado de Exchange Online  licencia de complemento) para que se pueda aplicar una retención al buzón antes de eliminarla. Después de eliminar la cuenta de usuario, cualquier licencia Exchange Online asociada a la cuenta de usuario estará disponible para asignarla a un nuevo usuario.
+Si las personas autorizadas a las que se les ha concedido permisos de exhibición de documentos electrónicos por motivos legales o de cumplimiento, deben tener acceso al buzón de correo, se le debe asignar una licencia del Plan 2 de Exchange Online (o una licencia del Plan 1 de Exchange Online con una Archivado de Exchange Online  licencia de complemento) para que se pueda aplicar una retención al buzón antes de eliminarla. Después de eliminar la cuenta de usuario, cualquier licencia Exchange Online asociada con la cuenta de usuario estará disponible para asignarla a un nuevo usuario.
   
 Al quitar la licencia, todos los datos de ese usuario se conservan durante 30 días. Puede [acceder](get-access-to-and-back-up-a-former-user-s-data.md) a los datos o [restaurar](restore-user.md) la cuenta si el usuario se vuelve a incorporar. Después de 30 días, todos los datos del usuario (excepto los documentos almacenados en SharePoint Online) se eliminan permanentemente de Microsoft 365 y no se pueden recuperar.
 
@@ -50,7 +50,7 @@ Al quitar la licencia, todos los datos de ese usuario se conservan durante 30 d�
 2. Seleccione la suscripción de la que desea quitar licencias.
 3. En la página de detalles, seleccione **Quitar licencias**.
 4. En el **panel Quitar licencias** , en Nueva cantidad, en el cuadro **Total** de licencias, escriba el número total de licencias que desea para esta suscripción. Por ejemplo, si tiene 25 licencias y desea quitar una de ellas, escriba 24.
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 Cuando [agregues otra persona](add-users.md) a tu empresa, se te pedirá que compres una licencia al mismo tiempo, con un solo paso.
 

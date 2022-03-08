@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: b5f52c1aee2586d325149c6656674fef16200773
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 5668dcb0dd2b7f48a52fd2377dec3d666d17a013
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444634"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315461"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Agregar y verificar los contactos de administración en el portal de administración
 
@@ -33,7 +33,7 @@ Los contactos de administrador deben ser la mejor persona o grupo que pueda resp
 | Dispositivos | Estado del dispositivo, solución de problemas con dispositivos de Escritorio administrado de Microsoft. |
 | Seguridad | Solución de problemas de seguridad con dispositivos de Escritorio administrado de Microsoft. |
 | Servicio de ayuda de IT | En los casos en que nuestro personal de soporte técnico entrega los vales de usuario fuera de las áreas de soporte técnico de Microsoft Managed Desktop. |
-| Otros | Para problemas no cubiertos por otras áreas. |
+| Otro | Para problemas no cubiertos por otras áreas. |
 
 > [!IMPORTANT]
 > **Quien elija para estos contactos debe tener el conocimiento y la autoridad para tomar decisiones para su entorno de Escritorio administrado de Microsoft.**
@@ -61,7 +61,7 @@ Los contactos de administrador son necesarios al [enviar una solicitud de soport
 1. Implementar y asignar el [Portal de empresa de Intune](company-portal.md).
 1. [Asignar las licencias](assign-licenses.md).
 1. [Implementar las aplicaciones](deploy-apps.md).
-1. [Configurar los dispositivos](set-up-devices.md).
+1. [Preparar dispositivos](Prepare-devices.md).
 1. Configurar la [experiencia de primera ejecución con el Autopilot y la página de estado de inscripción](esp-first-run.md).
 1. [Habilitar las características de soporte técnico para el usuario](enable-support.md).
 1. [Preparar a los usuarios para que usen los dispositivos](get-started-devices.md).

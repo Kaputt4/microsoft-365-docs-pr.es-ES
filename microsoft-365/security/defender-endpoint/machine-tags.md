@@ -14,24 +14,24 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d4e429ca851a21c3ad4863d11dd90d7223d9c6b3
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 65df8553f5ee3b7dd7876557398e0d4aa22c7bd5
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170598"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323533"
 ---
 # <a name="create-and-manage-device-tags"></a>Crear y administrar etiquetas de dispositivos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Agregue etiquetas en los dispositivos para crear una afiliación de grupos lógica. Las etiquetas de dispositivo son compatibles con la asignación adecuada de la red, lo que permite adjuntar diferentes etiquetas para capturar contexto y habilitar la creación de listas dinámicas como parte de un incidente. Las etiquetas se pueden usar como filtro en la **vista de lista** Dispositivos o para agrupar dispositivos. Para obtener más información sobre la agrupación de dispositivos, consulta [Crear y administrar grupos de dispositivos.](machine-groups.md)
+Agregue etiquetas en los dispositivos para crear una afiliación de grupos lógica. Las etiquetas de dispositivo son compatibles con la asignación adecuada de la red, lo que permite adjuntar diferentes etiquetas para capturar contexto y habilitar la creación de listas dinámicas como parte de un incidente. Las etiquetas se pueden usar como filtro en la **vista Inventario** de dispositivos o para agrupar dispositivos. Para obtener más información sobre la agrupación de dispositivos, consulta [Crear y administrar grupos de dispositivos](machine-groups.md).
 
 Puedes agregar etiquetas en dispositivos de las siguientes maneras:
 
@@ -47,14 +47,14 @@ Para agregar etiquetas de dispositivo con la API, consulte [API para agregar o q
 
 1. Seleccione el dispositivo en el que quiere administrar las etiquetas. Puede seleccionar o buscar un dispositivo desde cualquiera de las siguientes vistas:
 
-   - **Panel de operaciones de seguridad:** seleccione el nombre del dispositivo en la sección Dispositivos principales con alertas activas.
+   - **Panel de operaciones de seguridad** : seleccione el nombre del dispositivo en la sección Dispositivos principales con alertas activas.
    - **Cola de alertas**: seleccione el nombre del dispositivo junto al icono de dispositivo en la cola de alertas.
-   - **Lista de dispositivos**: seleccione el nombre del dispositivo de la lista de dispositivos.
+   - **Inventario de dispositivos** : seleccione el nombre del dispositivo de la lista de dispositivos.
    - **Cuadro de búsqueda**: seleccione Dispositivo en el menú desplegable y escriba el nombre del dispositivo.
 
      También puede acceder a la página de la alerta a través del archivo y las vistas IP.
 
-2. Seleccione **Administrar etiquetas** en la fila Acciones de respuesta.
+2. Seleccione **Administrar etiquetas** en la fila de Acciones de respuesta.
 
     :::image type="content" alt-text="Imagen del botón administrar etiquetas." source="images/manage-tags-option.png":::
 
@@ -62,7 +62,7 @@ Para agregar etiquetas de dispositivo con la API, consulte [API para agregar o q
 
     :::image type="content" alt-text="Imagen de agregar etiquetas en un dispositivo1." source="images/create-new-tag.png":::
 
-Las etiquetas se agregan a la vista de dispositivo y también se reflejarán en la **vista de lista Dispositivos.** A continuación, puede usar el **filtro Etiquetas** para ver la lista relevante de dispositivos.
+Las etiquetas se agregan a la vista de dispositivo y también se reflejarán en la **vista Inventario de** dispositivos. A continuación, puede usar el **filtro Etiquetas** para ver la lista relevante de dispositivos.
 
 > [!NOTE]
 > Es posible que el filtrado no funcione en nombres de etiquetas que contengan paréntesis.
@@ -79,10 +79,10 @@ También puede eliminar etiquetas de esta vista.
 > Solo se aplica a los siguientes dispositivos:
 >
 > - Windows 11
-> - Windows 10, versión 1709 o posterior
-> - Windows server, versión 1803 o posterior
+> - Windows 10 versión 1709 o posterior
+> - Windows Server, versión 1803 o posterior
 > - Windows Server 2016
-> - Windows Server 2012 R2
+> - Windows Server 2012 R2
 > - Windows Server 2008 R2 SP1
 > - Windows 8.1
 > - Windows 7 SP1

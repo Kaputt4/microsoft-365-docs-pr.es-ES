@@ -1,14 +1,14 @@
 ---
-title: Conectar los registros DNS de OVH a Microsoft 365
+title: Conectar los registros DNS en OVH a Microsoft 365
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -21,21 +21,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
-description: Obtenga información sobre cómo comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en OVH para Microsoft.
-ms.openlocfilehash: 5bf6b052be9297f3d121897f8e8de5ec8fa2a9e4
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: Aprenda a comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en OVH para Microsoft.
+ms.openlocfilehash: 9c181536c418baebd3ba8eb1929095ac2d828ef6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60660759"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63314985"
 ---
-# <a name="connect-your-dns-records-at-ovh-to-microsoft-365"></a>Conectar los registros DNS de OVH a Microsoft 365
+# <a name="connect-your-dns-records-at-ovh-to-microsoft-365"></a>Conectar los registros DNS en OVH a Microsoft 365
 
 [Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml) si no encuentra lo que busca.
   
-Si OVH es su proveedor de hospedaje DNS, siga los pasos de este artículo para comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online, y así sucesivamente.
+Si OVH es su proveedor de hospedaje DNS, siga los pasos descritos en este artículo para comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online, entre otros.
 
-Después de agregar estos registros en OVH, el dominio se configurará para que funcione con servicios Microsoft.
+Después de agregar estos registros en OVH, el dominio se configurará para que funcione con los servicios de Microsoft.
 
 > [!NOTE]
 >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -51,7 +51,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 
     ![Inicio de sesión de OVH.](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
 
-1. En la página de aterrizaje del panel, en **Ver toda mi actividad,** seleccione el nombre del dominio que desea editar.
+1. En la página de aterrizaje del panel, en **Ver toda mi** actividad, seleccione el nombre del dominio que desea editar.
   
 1. Seleccione **zona DNS**.
 
@@ -83,9 +83,9 @@ Ahora que ha agregado el registro en el sitio de su registrador de dominios, deb
 
 Para comprobar el registro en Microsoft 365:
   
-1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. En el Centro de administración, ve a Los **dominios de** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**configuración**</a>.
 
-1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar instalación**. 
+1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar configuración**. 
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
 
@@ -102,7 +102,7 @@ Para comprobar el registro en Microsoft 365:
 
     ![Inicio de sesión de OVH.](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-1. En la página de aterrizaje del panel, en **Ver toda mi actividad,** seleccione el nombre del dominio que desea editar.
+1. En la página de aterrizaje del panel, en **Ver toda mi** actividad, seleccione el nombre del dominio que desea editar.
   
 1. Seleccione **zona DNS**.
 
@@ -123,7 +123,7 @@ Para comprobar el registro en Microsoft 365:
   
     |**Subdominio**|**TTL**|**Prioridad**|**Objetivo**|
     |:-----|:-----|:-----|:-----|
-    |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |0  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/> |\<domain-key\>.mail.protection.outlook.com.  <br/> **Nota:** Obtener el  *\<domain-key\>*  de su cuenta de Microsoft.  [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)  |
+    |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |0  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/> |\<domain-key\>.mail.protection.outlook.com.  <br/> **Nota:** Obtener el de  *\<domain-key\>*  su cuenta de Microsoft.  [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)  |
 
     ![Registro MX de OVH para correo.](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
@@ -135,7 +135,7 @@ Para comprobar el registro en Microsoft 365:
 
     ![Registro MX de OVH seleccione Confirmar.](../../media/090bfb11-a753-4af0-8982-582a4069a169.png)
 
-1. Elimine cualquier otro registro MX de la lista de la **página de zona DNS.** Seleccione cada registro y, en la **columna Acciones,** seleccione el icono Eliminar de **papelera.**
+1. Elimine cualquier otro registro MX de la lista de la **página de zona DNS** . Seleccione cada registro y, en la **columna Acciones**, seleccione el icono Eliminar **de papelera.**
 
     ![OVH elimina el registro MX.](../../media/892b328b-7057-4828-b8c5-fe26284dc8c2.png)
   
@@ -147,7 +147,7 @@ Para comprobar el registro en Microsoft 365:
 
     ![Inicio de sesión de OVH.](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-1. En la página de aterrizaje del panel, en **Ver toda mi actividad,** seleccione el nombre del dominio que desea editar.
+1. En la página de aterrizaje del panel, en **Ver toda mi** actividad, seleccione el nombre del dominio que desea editar.
   
 1. Seleccione **zona DNS**.
 
@@ -178,13 +178,13 @@ Para comprobar el registro en Microsoft 365:
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *SPF*  que incluya ambos conjuntos de valores. 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga  un único registro SPF que incluya ambos conjuntos de valores. 
   
 1. Para empezar, vaya a la página dominios de OVH mediante [este vínculo](https://www.ovh.com/manager/). You'll be prompted to log in.
 
     ![Inicio de sesión de OVH.](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-1. En la página de aterrizaje del panel, en **Ver toda mi actividad,** seleccione el nombre del dominio que desea editar.
+1. En la página de aterrizaje del panel, en **Ver toda mi** actividad, seleccione el nombre del dominio que desea editar.
   
 1. Seleccione **zona DNS**.
 
@@ -200,7 +200,7 @@ Para comprobar el registro en Microsoft 365:
 
     |**Subdominio**|**TTL**|**Valor**|
     |:-----|:-----|:-----|
-    |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |v=spf1 include:spf.protection.outlook.com -all <br/**Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
+    |(se deja en blanco)  <br/> |3600 (segundos)  <br/> |v=spf1 include:spf.protection.outlook.com -all <br/**Note:** Se recomienda copiar y pegar esta entrada para que todo el espaciado permanezca correcto.           |
 
     ![OVH Agregar registro TXT para SPF.](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
   
@@ -214,7 +214,7 @@ Para comprobar el registro en Microsoft 365:
   
 ## <a name="advanced-option-skype-for-business"></a>Opción avanzada: Skype Empresarial
 
-Solo seleccione esta opción si su organización usa Skype Empresarial servicios de comunicación en línea como chat, llamadas de conferencia y videollamadas, además de Microsoft Teams. Skype necesita 4 registros: 2 registros SRV para la comunicación de usuario a usuario y 2 registros CNAME para iniciar sesión y conectar usuarios al servicio.
+Solo seleccione esta opción si su organización usa Skype Empresarial para servicios de comunicación en línea como chat, llamadas de conferencia y videollamadas, además de Microsoft Teams. Skype necesita 4 registros: 2 registros SRV para la comunicación de usuario a usuario y 2 registros CNAME para iniciar sesión y conectar usuarios al servicio.
 
 ### <a name="add-the-two-required-srv-records"></a>Agregar los dos registros SRV necesarios
 
@@ -222,7 +222,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
 
     ![Inicio de sesión de OVH.](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-1. En la página de aterrizaje del panel, en **Ver toda mi actividad,** seleccione el nombre del dominio que desea editar.
+1. En la página de aterrizaje del panel, en **Ver toda mi** actividad, seleccione el nombre del dominio que desea editar.
   
 1. Seleccione **zona DNS**.
 
@@ -241,7 +241,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
     |_sip._tls|3600 (s.) |100 |  1  | 443 |sipdir.online.lync.com. **Este valor DEBE terminar con un punto (.)**><br> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto. | 
     |_sipfederationtls._tcp| 3600 (s.)|100 | 1 | 5061 | sipfed.online.lync.com. **Este valor DEBE terminar en punto (.).**<br> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.    | 
   
-1. Para agregar el otro registro SRV, seleccione Agregar otro **registro,** cree un registro con los valores de la siguiente fila de la tabla y, a continuación, **seleccione Crear registros**.
+1. Para agregar el otro registro SRV, seleccione Agregar otro **registro, cree** un registro con los valores de la siguiente fila de la tabla y, a continuación, **seleccione Crear registros**.
 
 > [!NOTE]
 > Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, vea [Encontrar y solucionar problemas después de agregar el dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -252,7 +252,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial servicios
 
     ![Inicio de sesión de OVH.](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-1. En la página de aterrizaje del panel, en **Ver toda mi actividad,** seleccione el nombre del dominio que desea editar.
+1. En la página de aterrizaje del panel, en **Ver toda mi** actividad, seleccione el nombre del dominio que desea editar.
   
 1. Seleccione **zona DNS**.
 
@@ -294,7 +294,7 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
 
     ![Inicio de sesión de OVH.](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-1. En la página de aterrizaje del panel, en **Ver toda mi actividad,** seleccione el nombre del dominio que desea editar.
+1. En la página de aterrizaje del panel, en **Ver toda mi** actividad, seleccione el nombre del dominio que desea editar.
   
 1. Seleccione **zona DNS**.
 

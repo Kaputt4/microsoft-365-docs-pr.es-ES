@@ -13,13 +13,13 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector de datos para importar datos de registros electrónicos de salud (EHR) desde el sistema épico de su organización para Microsoft 365. Esto le permite usar datos de EHR épicos en directivas de administración de riesgos internas para ayudarle a detectar actividad de acceso no autorizado a datos de pacientes por parte de sus empleados.
-ms.openlocfilehash: 0da7386aa2b230492fedd5fdac5477d204aa63a8
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+description: Los administradores pueden configurar un conector de datos para importar datos de registros electrónicos de salud (EHR) desde el sistema épico de su organización a Microsoft 365. Esto le permite usar datos de EHR épicos en directivas de administración de riesgos internas para ayudarle a detectar actividad de acceso no autorizado a datos de pacientes por parte de sus empleados.
+ms.openlocfilehash: 364d172b35411bd532d781eafc6e8a59c1339ce7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321128"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311779"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Configurar un conector para importar datos de auditoría de Épico EHR (versión preliminar)
 
@@ -39,7 +39,7 @@ La configuración de un conector épico consta de las siguientes tareas:
 
 ## <a name="before-you-set-up-the-connector"></a>Antes de configurar el conector
 
-- Al usuario que crea el conector épico en el paso 3 se le debe asignar el rol De importación de buzones de Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol Exportar importación de buzones y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos [](/Exchange/permissions-exo/role-groups#modify-role-groups) de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+- El usuario que crea el conector épico en el paso 3 debe tener asignado el rol de administrador del conector de datos. Este rol es necesario para agregar conectores en la **página Conectores de datos** de la Centro de cumplimiento de Microsoft 365. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, vea la sección "Roles en los centros de seguridad y cumplimiento" en Permisos en el [Centro de seguridad & cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de la organización puede crear un grupo de roles personalizado, asignar el rol de administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, vea la sección "Crear un grupo de roles personalizado" en [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - Debe determinar cómo recuperar o exportar los datos del sistema Épico EHR de su organización (diariamente) y crear un archivo de texto que se describe en el paso 2. El script que ejecute en el paso 4 insertará los datos del archivo de texto en el punto de conexión de la API.
 
@@ -49,9 +49,9 @@ La configuración de un conector épico consta de las siguientes tareas:
 
 El primer paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector épico que creas en el paso 3. La creación de esta aplicación Azure AD autenticar la solicitud de inserción del archivo de texto que contiene registros de auditoría de EHR épicos. Durante la creación de esta Azure AD, asegúrate de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
 
-- Azure AD de aplicación (también denominado id. *de aplicación* o *id. de cliente*)
+- Azure AD de aplicación (también denominado id. *de aplicación* o *identificador de cliente*)
 
-- Azure AD secreto de aplicación (también denominado secreto *de cliente*)
+- Azure AD secreto de aplicación (también denominado *secreto de cliente*)
 
 - Identificador de inquilino (también denominado *id. de directorio*)
 
@@ -118,7 +118,7 @@ También puede hacer clic en **Editar** para cambiar el identificador de aplicac
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-epic-ehr-audit-records"></a>Paso 4: Ejecutar el script de ejemplo para cargar los registros de auditoría de Ehr épico
 
-El último paso para configurar un conector de Epic es ejecutar un script de ejemplo que cargará los datos de registros de auditoría de EHR épicos en el archivo de texto (que creó en el paso 1) en la nube de Microsoft. En concreto, el script carga los datos en el conector épico. Después de ejecutar el script, el conector épico que creó en el paso 3 importa los datos de los registros de auditoría de Ehr épico a su organización de Microsoft 365, a la que pueden acceder otras herramientas de cumplimiento, como la solución de administración de riesgos Insider. Después de ejecutar el script, considere la posibilidad de programar una tarea para ejecutarla automáticamente diariamente para que los datos de terminación de empleados más actuales se carguen en la nube de Microsoft. Vea [(Opcional) Paso 6: Programar el script para que se ejecute automáticamente](#optional-step-6-schedule-the-script-to-run-automatically).
+El último paso para configurar un conector de Epic es ejecutar un script de ejemplo que cargará los datos de registros de auditoría de EHR épicos en el archivo de texto (que creó en el paso 1) en la nube de Microsoft. En concreto, el script carga los datos en el conector épico. Después de ejecutar el script, el conector épico que creó en el paso 3 importa los datos de los registros de auditoría de EHR épicos a su organización de Microsoft 365, a la que pueden acceder otras herramientas de cumplimiento, como la solución de administración de riesgos Insider. Después de ejecutar el script, considere la posibilidad de programar una tarea para ejecutarla automáticamente diariamente para que los datos de terminación de empleados más actuales se carguen en la nube de Microsoft. Vea [(Opcional) Paso 6: Programar el script para que se ejecute automáticamente](#optional-step-6-schedule-the-script-to-run-automatically).
 
 > [!NOTE]
 > Como se ha indicado anteriormente, el tamaño máximo del archivo de texto que contiene los datos de auditoría es de 3 GB. El número máximo de filas es de 5 millones. El script que ejecute en este paso llevará entre 30 y 40 minutos importar los datos de auditoría de archivos de texto grandes. Además, el script dividirá archivos de texto grandes en bloques más pequeños de filas de 100K y, a continuación, importará esos bloques secuencialmente.

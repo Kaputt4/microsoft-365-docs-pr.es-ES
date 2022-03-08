@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: fe4a5e97704cbf1d4851484397e7c4424c099d3c
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 2349fb9ac736653b9a74c42aecf5e71cc95381ca
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524194"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321521"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>Clasificación de alertas para actividad de reenvío de correo electrónico sospechosa
 
@@ -37,7 +37,7 @@ ms.locfileid: "62524194"
 
 Los actores de amenazas pueden usar cuentas de usuario comprometidas para varios fines malintencionados, como leer correos electrónicos en la bandeja de entrada de un usuario, reenviar correos electrónicos a destinatarios externos y enviar correos de suplantación de identidad, entre otros. Es posible que el usuario de destino no tenga conocimiento de que se reenvía su correo electrónico. Esta es una táctica muy común que usan los atacantes cuando las cuentas de usuario están en peligro.
 
-Los correos electrónicos se pueden reenviar manualmente o automáticamente mediante reglas de reenvío. El reenvío automático se puede implementar de varias maneras, como reglas de bandeja de entrada, Exchange de transporte (ETR) y reenvío SMTP. Aunque el reenvío manual requiere una acción directa de los usuarios, es posible que no conozcan todos los correos electrónicos reenviados automáticamente. En Microsoft 365, se genera una alerta cuando un usuario reenvía automáticamente un correo electrónico a una dirección de correo electrónico potencialmente malintencionada.
+Los correos electrónicos se pueden reenviar manualmente o automáticamente mediante reglas de reenvío. El reenvío automático se puede implementar de varias maneras, como reglas de bandeja de entrada, Exchange regla de transporte (ETR) y reenvío SMTP. Aunque el reenvío manual requiere una acción directa de los usuarios, es posible que no conozcan todos los correos electrónicos reenviados automáticamente. En Microsoft 365, se genera una alerta cuando un usuario reenvía automáticamente un correo electrónico a una dirección de correo electrónico potencialmente malintencionada.
 
 Este libro de juegos te ayuda a investigar alertas de actividad de reenvío de correo electrónico sospechosos y calificarlas rápidamente como un verdadero positivo (TP) o un falso positivo (FP). A continuación, puede realizar las acciones recomendadas para las alertas de TP para corregir el ataque.
 
@@ -61,7 +61,7 @@ Los atacantes pueden configurar reglas de correo electrónico para ocultar los c
 
 Algunas reglas pueden mover todos los correos electrónicos a otra carpeta y marcarlos como "leídos", mientras que algunas reglas pueden mover solo los correos que contienen palabras clave específicas en el asunto o mensaje de correo electrónico. Por ejemplo, la regla de bandeja de entrada puede establecerse para buscar palabras clave como "factura", "phish", "no responder", "correo electrónico sospechoso" o "correo no deseado", entre otras, y moverlas a una cuenta de correo electrónico externa. Los atacantes también pueden usar el buzón de usuario en peligro para distribuir correo no deseado, correos electrónicos de suplantación de identidad o malware.
  
-Microsoft Defender para Office 365 detectar y alertar sobre reglas de reenvío de correo electrónico sospechosas, lo que le permite buscar y eliminar reglas ocultas en el origen.
+Microsoft Defender para Office 365 detectar y alertar sobre reglas de reenvío de correo electrónico sospechosas, lo que te permite buscar y eliminar reglas ocultas en el origen.
 
 Para obtener más información, consulta estas entradas de blog:
 
@@ -83,7 +83,7 @@ El **campo** Motivo contiene la siguiente información relacionada con esta aler
 
 - El tipo de reenvío (FT) es uno de los siguientes:
 
-    -  Exchange de transporte (ETR): reenviada mediante y Exchange de transporte 
+    -  Exchange regla de transporte (ETR): reenviada mediante y Exchange regla de transporte 
 
     -  SMTP: reenviado mediante el reenvío de buzones
 
@@ -103,7 +103,7 @@ Al investigar esta alerta, debe determinar:
 
 ### <a name="is-the-user-account-and-its-mailbox-compromised"></a>¿La cuenta de usuario y su buzón están en peligro?
 
-Al ver el comportamiento pasado del remitente y las actividades recientes, debe poder determinar si la cuenta del usuario debe considerarse comprometida o no. Puede ver los detalles de las alertas generadas desde la página del usuario en el portal Microsoft 365 Defender usuario. 
+Al ver el comportamiento pasado del remitente y las actividades recientes, debe poder determinar si la cuenta del usuario debe considerarse comprometida o no. Puede ver los detalles de las alertas generadas desde la página del usuario en el portal Microsoft 365 Defender web. 
 
 También puede analizar estas actividades adicionales para el buzón afectado:
 
@@ -113,7 +113,7 @@ También puede analizar estas actividades adicionales para el buzón afectado:
 
     - Observe cuántos de los correos electrónicos enviados contienen información confidencial. 
 
-- Evalúe el comportamiento de inicio de sesión arriesgado en el portal Microsoft Azure usuario.
+- Evalúe el comportamiento de inicio de sesión arriesgado en el portal de Microsoft Azure usuario.
 - Compruebe si hay actividades malintencionadas en el dispositivo del usuario.
 
 ### <a name="are-the-activities-malicious"></a>¿Las actividades son malintencionadas?
@@ -141,7 +141,7 @@ El Explorador de amenazas proporciona una experiencia de investigación interact
  
     :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-recipients-list.png" alt-text="Ejemplo de la lista de destinatarios" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-recipients-list.png":::
 
-    - Quién más ha reenviado correos electrónicos a estos destinatarios.
+    - Quién ha reenviado correos electrónicos a estos destinatarios.
 
     - ¿Cuántos correos electrónicos se han reenviado a estos destinatarios?
 
@@ -283,7 +283,7 @@ Una vez que determine que las actividades asociadas convierten esta alerta en Tr
 
 4. Compruebe si hay actividades adicionales originadas por cuentas afectadas, direcciones IP y remitentes sospechosos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre la clasificación de alertas](alert-grading-playbooks.md)
 - [Reglas del reenvío sospechoso desde la bandeja de entrada](alert-grading-playbook-inbox-forwarding-rules.md)

@@ -1,18 +1,23 @@
 ---
 title: Prepare a los usuarios para que usen dispositivos
 description: Información que le ayudará a preparar a los usuarios para usar dispositivos
-keywords: 'Escritorio administrado de Microsoft, dispositivo, introducción, Microsoft 365'
+keywords: Escritorio administrado de Microsoft, dispositivo, introducción, Microsoft 365
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
+ms.openlocfilehash: 02bcb482de675e94c9b7c4f8eec80aae2f943ebe
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323141"
 ---
-
 # <a name="get-your-users-ready-to-use-devices"></a>Prepare a los usuarios para que usen dispositivos
 
 Una vez que un dispositivo de Escritorio administrado de Microsoft está en manos del usuario, empezar es rápido y fácil. Los dispositivos vienen preconfigurados con la versión actual de Windows y configuraciones, y las aplicaciones se instalan desde la nube a medida que el usuario completa la instalación.
@@ -46,7 +51,7 @@ En este momento, estás listo para pasar a implementar [aplicaciones](deploy-app
 1. Implementar y asignar el [Portal de empresa de Intune](company-portal.md).
 1. [Asignar las licencias](assign-licenses.md).
 1. [Implementar las aplicaciones](deploy-apps.md).
-1. [Configurar los dispositivos](set-up-devices.md).
+1. [Preparar dispositivos](prepare-devices.md).
 1. Configurar la [experiencia de primera ejecución con el Autopilot y la página de estado de inscripción](esp-first-run.md).
 1. [Habilitar las características de soporte técnico para el usuario](enable-support.md).
 1. Prepare a los usuarios para usar dispositivos (en este artículo).

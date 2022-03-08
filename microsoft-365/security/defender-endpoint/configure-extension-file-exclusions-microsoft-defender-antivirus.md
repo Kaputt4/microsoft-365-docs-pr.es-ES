@@ -13,14 +13,14 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 12/17/2021
+ms.date: 02/27/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 616dde760ab24d12efe5c4621a1ee1829cb1798f
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: be22c80e51551b5de2a2aeed2f0dff0db9a8481f
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61566668"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323659"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta
 
@@ -30,14 +30,14 @@ ms.locfileid: "61566668"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus de Microsoft Defender
 
-Puede definir exclusiones para Antivirus de Microsoft Defender que se aplican [](run-scan-microsoft-defender-antivirus.md)a exámenes programados, [](schedule-antivirus-scans.md)exámenes a petición y protección y supervisión siempre activas en tiempo [real.](configure-real-time-protection-microsoft-defender-antivirus.md) **Por lo general, no es necesario aplicar exclusiones**. Si necesita aplicar exclusiones, puede elegir entre varios tipos diferentes:
+Puede definir exclusiones para Antivirus de Microsoft Defender que se aplican a exámenes programados[, exámenes](schedule-antivirus-scans.md) a petición [](run-scan-microsoft-defender-antivirus.md)y protección y supervisión siempre activas [en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md). **Por lo general, no es necesario aplicar exclusiones**. Si necesita aplicar exclusiones, puede elegir entre varios tipos diferentes:
 
 - Exclusiones basadas en extensiones de archivo y ubicaciones de carpetas (descritas en este artículo)
 - [Exclusiones de archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Antivirus de Microsoft Defender exclusiones no se aplican a otras funcionalidades de Microsoft Defender para endpoints, como [detección y respuesta de puntos de conexión (EDR),](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)reglas de reducción de superficie de ataque [(ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction)y acceso controlado a carpetas [.](/microsoft-365/security/defender-endpoint/controlled-folders) Los archivos que se excluyen mediante los métodos descritos en este artículo aún pueden desencadenar EDR alertas y otras detecciones.
-> Para excluir archivos de forma general, agrégálos a los indicadores [personalizados](/microsoft-365/security/defender-endpoint/manage-indicators)de Microsoft Defender para endpoint .
+> Antivirus de Microsoft Defender exclusiones no se aplican a otras funcionalidades de Microsoft Defender para endpoints, como [detección y respuesta de puntos de conexión (EDR),](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)reglas de reducción de superficie de ataque [(ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) y acceso controlado a [carpetas](/microsoft-365/security/defender-endpoint/controlled-folders). Los archivos que se excluyen mediante los métodos descritos en este artículo aún pueden desencadenar EDR alertas y otras detecciones.
+> Para excluir archivos de forma general, agrégálos a los indicadores [personalizados](/microsoft-365/security/defender-endpoint/manage-indicators) de Microsoft Defender para endpoint.
 
 ## <a name="before-you-begin"></a>Antes de empezar...
 
@@ -50,7 +50,7 @@ Para excluir determinados archivos de Antivirus de Microsoft Defender exámenes,
 > [!NOTE]
 > Las exclusiones también se aplican a las detecciones de aplicaciones potencialmente no deseadas (PUA).
 >
-> Las exclusiones automáticas solo se aplican Windows Server 2016 y versiones posteriores. Estas exclusiones no son visibles en la Seguridad de Windows y en PowerShell.
+> Las exclusiones automáticas solo se aplican Windows Server 2016 y posteriores. Estas exclusiones no son visibles en la aplicación Seguridad de Windows y en PowerShell.
 
 En la tabla siguiente se enumeran algunos ejemplos de exclusiones basadas en la extensión de archivo y la ubicación de la carpeta. 
 <br/><br/>
@@ -69,17 +69,17 @@ En la tabla siguiente se enumeran algunos ejemplos de exclusiones basadas en la 
 
 ## <a name="important-notes-about-exclusions-based-on-file-extensions-and-folder-locations"></a>Notas importantes sobre exclusiones basadas en extensiones de archivo y ubicaciones de carpetas
 
-- El uso de caracteres comodín, como el asterisco ( ) modificará la forma en que se interpretan las \* reglas de exclusión. Vea la [sección Usar caracteres comodín](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) en la sección Ruta de acceso de carpeta y nombre de archivo o listas de exclusión de extensión para obtener información importante sobre cómo funcionan los caracteres comodín.
+- El uso de caracteres comodín como el asterisco (\*) modificará la forma en que se interpretan las reglas de exclusión. Vea la [sección Usar caracteres comodín](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) en la sección Ruta de acceso de carpeta y nombre de archivo o listas de exclusión de extensión para obtener información importante sobre cómo funcionan los caracteres comodín.
 
 - No excluya las unidades de red asignadas. Especifique la ruta de acceso de red real.
 
-- Las carpetas que son puntos de reanco que se crean después de que se inicie el servicio de Antivirus de Microsoft Defender y que se hayan agregado a la lista de exclusión no se incluirán. Reinicie el servicio (reiniciando Windows) para que los nuevos puntos de repetición se reconozcan como un destino de exclusión válido.
+- Las carpetas que son puntos de reanco que se crean después de que se inicie el servicio Antivirus de Microsoft Defender y que se hayan agregado a la lista de exclusión no se incluirán. Reinicie el servicio (reiniciando Windows) para que los nuevos puntos de reanualción se reconozcan como un destino de exclusión válido.
 
-- Las exclusiones se aplican [a los exámenes programados,](scheduled-catch-up-scans-microsoft-defender-antivirus.md)los exámenes [a](run-scan-microsoft-defender-antivirus.md)petición y la protección en tiempo [real,](configure-real-time-protection-microsoft-defender-antivirus.md)pero no en Defender para el extremo. Para definir exclusiones en Defender para endpoint, use [indicadores personalizados](manage-indicators.md).
+- Las exclusiones se aplican [a los exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md), los exámenes [a](run-scan-microsoft-defender-antivirus.md) petición y la protección [en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md), pero no en Defender para endpoint. Para definir exclusiones en Defender para endpoint, usa [indicadores personalizados](manage-indicators.md).
 
-- De forma predeterminada, los cambios locales realizados en las listas (por usuarios con privilegios de administrador, incluidos los cambios realizados con PowerShell y WMI) se combinarán con las listas definidas (e implementadas) por la directiva de grupo, Configuration Manager o Intune. Las listas de directivas de grupo tienen prioridad cuando hay conflictos. Además, los cambios en la lista de exclusión realizados con la directiva de grupo están visibles en la [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
+- De forma predeterminada, los cambios locales realizados en las listas (por usuarios con privilegios de administrador, incluidos los cambios realizados con PowerShell y WMI) se combinarán con las listas definidas (e implementadas) por la directiva de grupo, Configuration Manager o Intune. Las listas de directivas de grupo tienen prioridad cuando hay conflictos. Además, los cambios en la lista de exclusión realizados con la directiva de grupo están visibles en [la Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
 
-- Para permitir que los cambios locales invaliden la configuración de implementación administrada, configure cómo se combinan las listas de [exclusiones definidas local y globalmente.](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists)
+- Para permitir que los cambios locales invaliden la configuración de implementación administrada, configure cómo se combinan las listas de [exclusiones definidas local y globalmente](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists).
 
 ## <a name="configure-the-list-of-exclusions-based-on-folder-name-or-file-extension"></a>Configurar la lista de exclusiones según el nombre de carpeta o la extensión de archivo
 
@@ -103,13 +103,13 @@ Vea [How to create and deploy antimalware policies: Exclusion settings](/configm
 
 1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón secundario en el objeto de directiva de grupo que quiera configurar y seleccione **Editar**.
 
-2. En el **Editor de administración de directivas de grupo,** vaya a Configuración del **equipo** y seleccione **Plantillas administrativas.**
+2. En el **Editor de administración de directivas de grupo** , vaya **a Configuración del equipo y** seleccione **Plantillas administrativas**.
 
-3. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> **exclusiones**.
+3. Expanda el árbol para **Windows componentes Antivirus de Microsoft Defender** \>  \> **exclusiones**.
 
 4. Abra la **configuración Exclusiones de ruta de** acceso para su edición y agregue las exclusiones.
     1. Establezca la opción en **Habilitado**.
-    2. En la **sección Opciones,** seleccione **Mostrar**.
+    2. En la **sección Opciones** , seleccione **Mostrar**.
     3. Especifique cada carpeta en su propia línea en la **columna Nombre de** valor.
     4. Si va a especificar un archivo, asegúrese de escribir una ruta de acceso completa al archivo, incluida la letra de unidad, la ruta de acceso de carpeta, el nombre del archivo y la extensión. 
     5. Escriba **0** en la **columna** Valor.
@@ -118,7 +118,7 @@ Vea [How to create and deploy antimalware policies: Exclusion settings](/configm
 
 6. Abra la **configuración Exclusiones de extensión** para editar y agregue las exclusiones.
     1. Establezca la opción en **Habilitado**.
-    2. En la **sección Opciones,** seleccione **Mostrar**.
+    2. En la **sección Opciones** , seleccione **Mostrar**.
     3. Escriba cada extensión de archivo en su propia línea en la **columna Nombre de** valor.
     4. Escriba **0** en la **columna** Valor.
 
@@ -156,9 +156,9 @@ En la tabla siguiente se enumeran los valores que puede usar en la `<exclusion l
 |Todos los archivos de una carpeta (incluidos los archivos en subdirectorios) o un archivo específico|`-ExclusionPath`|
 
 > [!IMPORTANT]
-> Si ha creado una lista, ya sea con o con el `Set-MpPreference` `Add-MpPreference` cmdlet de nuevo `Set-MpPreference` sobrescribirá la lista existente.
+> Si ha creado una lista, ya sea con `Set-MpPreference` o `Add-MpPreference`con `Set-MpPreference` el cmdlet de nuevo sobrescribirá la lista existente.
 
-Por ejemplo, el siguiente fragmento de código haría que Antivirus de Microsoft Defender análisis excluyan cualquier archivo con la `.test` extensión de archivo:
+Por ejemplo, el siguiente fragmento de código haría que Antivirus de Microsoft Defender análisis excluyan cualquier archivo con la extensión `.test` de archivo:
 
 ```PowerShell
 Add-MpPreference -ExclusionExtension ".test"
@@ -169,17 +169,17 @@ Add-MpPreference -ExclusionExtension ".test"
 
 ### <a name="use-windows-management-instrumentation-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>Usar Windows Instrumental de administración de archivos (WMI) para configurar exclusiones de nombre de archivo, carpeta o extensión de archivo
 
-Use los [métodos Set, Add y Remove](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) de la clase MSFT_MpPreference para las siguientes propiedades:
+Use los [métodos Set, Add y Remove de la clase MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para las siguientes propiedades:
 
 ```WMI
 ExclusionExtension
 ExclusionPath
 ```
 
-El **uso de Set**, **Add** y **Remove** es análogo a sus equivalentes en PowerShell: , `Set-MpPreference` y `Add-MpPreference` `Remove-MpPreference` .
+El **uso de Set**, **Add** y **Remove** es análogo a sus equivalentes en PowerShell: `Set-MpPreference`, `Add-MpPreference`y `Remove-MpPreference`.
 
 > [!TIP]
-> Para obtener más información, [vea Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+> Para obtener más información, [vea Windows Defender API de WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 <a id="man-tools"></a>
 
@@ -191,15 +191,16 @@ Consulta [Agregar exclusiones en la aplicación Seguridad de Windows para](micro
 
 ## <a name="use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>Usar caracteres comodín en el nombre de archivo y la ruta de acceso de carpeta o listas de exclusión de extensión
 
-Puede usar el asterisco, el signo de interrogación o las variables de entorno (como ) como caracteres comodín al definir elementos en la lista de exclusión de ruta de acceso de carpeta o nombre `*` `?` de `%ALLUSERSPROFILE%` archivo. La forma en que se interpretan estos caracteres comodín difiere de su uso habitual en otras aplicaciones e idiomas. Asegúrese de leer esta sección para comprender sus limitaciones específicas.
+Puede usar el asterisco `*`, el signo `?`de interrogación o las variables de entorno ( `%ALLUSERSPROFILE%`como ) como caracteres comodín al definir elementos en la lista de exclusión de ruta de acceso de carpeta o nombre de archivo. La forma en que se interpretan estos caracteres comodín difiere de su uso habitual en otras aplicaciones e idiomas. Asegúrese de leer esta sección para comprender sus limitaciones específicas.
 
 > [!IMPORTANT]
 > Existen limitaciones clave y escenarios de uso para estos caracteres comodín:
 >
 > - El uso de variables de entorno se limita a las variables de máquina y las aplicables a los procesos que se ejecutan como una cuenta NT AUTHORITY\SYSTEM.
+> - Solo puede usar un máximo de seis caracteres comodín por entrada.
 > - No puede usar un comodín en lugar de una letra de unidad.
 > - Un asterisco `*` en una exclusión de carpeta se mantiene en su lugar para una sola carpeta. Use varias instancias de para `\*\` indicar varias carpetas anidadas con nombres no especificados.
-> - Actualmente, Microsoft Endpoint Configuration Manager admite caracteres comodín (como `*` o `?` ).
+> - Actualmente, Microsoft Endpoint Configuration Manager admite caracteres comodín (como `*` o `?`).
     
 En la tabla siguiente se describe cómo se pueden usar los caracteres comodín y se proporcionan algunos ejemplos.
 
@@ -207,16 +208,16 @@ En la tabla siguiente se describe cómo se pueden usar los caracteres comodín y
 
 |Carácter comodín|Ejemplos|
 |---|---|
-|`*` (asterisco) <p> En **las inclusiones de** nombre de archivo y extensión de archivo, el asterisco reemplaza cualquier número de caracteres y solo se aplica a los archivos de la última carpeta definida en el argumento. <p> En **las exclusiones de carpetas,** el asterisco reemplaza a una sola carpeta. Use varias `*` barras diagonales de carpeta `\` para indicar varias carpetas anidadas. Después de hacer coincidir el número de carpetas comodín y con nombre, también se incluyen todas las subcarpetas.|`C:\MyData\*.txt` incluye `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` incluye cualquier archivo y `C:\somepath\Archives\Data` sus subcarpetas, `C:\somepath\Authorized\Data` y sus subcarpetas <p> `C:\Serv\*\*\Backup` incluye cualquier archivo y `C:\Serv\Primary\Denied\Backup` sus subcarpetas y `C:\Serv\Secondary\Allowed\Backup` sus subcarpetas|
-|`?` (signo de interrogación)  <p> En **las inclusiones** de nombre de archivo y extensión de archivo, el signo de interrogación reemplaza a un solo carácter y solo se aplica a los archivos de la última carpeta definida en el argumento. <p> En **las exclusiones de carpetas,** el signo de interrogación reemplaza un solo carácter en un nombre de carpeta. Después de hacer coincidir el número de carpetas comodín y con nombre, también se incluyen todas las subcarpetas.|`C:\MyData\my?.zip` incluye `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` incluye cualquier archivo en `C:\somepath\P\Data` y sus subcarpetas  <p> `C:\somepath\test0?\Data` incluiría cualquier archivo en `C:\somepath\test01\Data` y sus subcarpetas|
+|`*` (asterisco) <p> En **las inclusiones** de nombre de archivo y extensión de archivo, el asterisco reemplaza cualquier número de caracteres y solo se aplica a los archivos de la última carpeta definida en el argumento. <p> En **las exclusiones de carpetas**, el asterisco reemplaza a una sola carpeta. Use varias barras `*` diagonales de carpeta `\` para indicar varias carpetas anidadas. Después de hacer coincidir el número de carpetas comodín y con nombre, también se incluyen todas las subcarpetas.|`C:\MyData\*.txt` incluye `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` incluye cualquier archivo y `C:\somepath\Archives\Data` sus subcarpetas, y `C:\somepath\Authorized\Data` sus subcarpetas <p> `C:\Serv\*\*\Backup` incluye cualquier archivo y `C:\Serv\Primary\Denied\Backup` sus subcarpetas y `C:\Serv\Secondary\Allowed\Backup` sus subcarpetas|
+|`?` (signo de interrogación)  <p> En **las inclusiones** de nombre de archivo y extensión de archivo, el signo de interrogación reemplaza a un solo carácter y solo se aplica a los archivos de la última carpeta definida en el argumento. <p> En **las exclusiones de carpetas**, el signo de interrogación reemplaza un solo carácter en un nombre de carpeta. Después de hacer coincidir el número de carpetas comodín y con nombre, también se incluyen todas las subcarpetas.|`C:\MyData\my?.zip` incluye `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` incluye cualquier archivo en `C:\somepath\P\Data` y sus subcarpetas  <p> `C:\somepath\test0?\Data` incluiría cualquier archivo en `C:\somepath\test01\Data` y sus subcarpetas|
 |Variables de entorno <p> La variable definida se rellena como una ruta de acceso cuando se evalúa la exclusión.|`%ALLUSERSPROFILE%\CustomLogFiles` incluiría `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
 
 > [!IMPORTANT]
 > Si mezcla un argumento de exclusión de archivos con un argumento de exclusión de carpeta, las reglas se detendrán en la coincidencia del argumento de archivo en la carpeta coincidente y no buscarán coincidencias de archivos en ninguna subcarpeta.
 >
-> Por ejemplo, puede excluir todos los archivos que comiencen por "date" en las carpetas `c:\data\final\marked` y mediante el argumento rule `c:\data\review\marked` `c:\data\*\marked\date*` .
+> Por ejemplo, puede excluir todos los archivos que comiencen por "date" `c:\data\final\marked` en las carpetas y `c:\data\review\marked` mediante el argumento rule `c:\data\*\marked\date*`.
 >
-> Sin embargo, este argumento no coincidirá con ningún archivo de subcarpetas en `c:\data\final\marked` o `c:\data\review\marked` .
+> Sin embargo, este argumento no coincidirá con ningún archivo de subcarpetas en o `c:\data\final\marked` `c:\data\review\marked`.
 
 <a id="review"></a>
 
@@ -300,13 +301,13 @@ Puede recuperar los elementos de la lista de exclusión mediante uno de los sigu
 - [Seguridad de Windows app](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
-> Los cambios de lista de exclusión realizados con la directiva de **grupo se** mostrarán en las listas de la [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
+> Los cambios en la lista de exclusión realizados con la directiva de **grupo se** mostrarán en las listas de la [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
 >
-> Los cambios realizados en la Seguridad de Windows **no se mostrarán** en las listas de directivas de grupo.
+> Los cambios realizados en la Seguridad de Windows no **se mostrarán** en las listas de directivas de grupo.
 
 Si usa PowerShell, puede recuperar la lista de dos maneras:
 
-- Recupere el estado de todas las Antivirus de Microsoft Defender preferencias. Cada lista se muestra en líneas independientes, pero los elementos de cada lista se combinan en la misma línea.
+- Recupera el estado de todas las Antivirus de Microsoft Defender preferencias. Cada lista se muestra en líneas independientes, pero los elementos de cada lista se combinan en la misma línea.
 - Escribe el estado de todas las preferencias en una variable y usa esa variable para llamar solo a la lista específica que te interesa. Cada uso de `Add-MpPreference` se escribe en una nueva línea.
 
 ### <a name="validate-the-exclusion-list-by-using-mpcmdrun"></a>Validar la lista de exclusión mediante MpCmdRun
@@ -331,7 +332,7 @@ Use el siguiente cmdlet:
 Get-MpPreference
 ```
 
-En el siguiente ejemplo, se resaltan los elementos contenidos en `ExclusionExtension` la lista:
+En el siguiente ejemplo, se resaltan `ExclusionExtension` los elementos contenidos en la lista:
 
 :::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Salida de PowerShell para Get-MpPreference.":::
 
@@ -357,17 +358,17 @@ Para obtener más información, vea [Usar cmdlets de PowerShell para configurar 
 
 ## <a name="validate-exclusions-lists-with-the-eicar-test-file"></a>Validar listas de exclusiones con el archivo de prueba EICAR
 
-Puede validar que las listas de exclusión funcionan mediante PowerShell con el cmdlet o la `Invoke-WebRequest` clase WebClient de .NET para descargar un archivo de prueba.
+Puede validar que las listas de exclusión funcionan mediante PowerShell `Invoke-WebRequest` con el cmdlet o la clase WebClient de .NET para descargar un archivo de prueba.
 
-En el siguiente fragmento de código de PowerShell, reemplace `test.txt` por un archivo que cumpla las reglas de exclusión. Por ejemplo, si ha excluido la `.testing` extensión, reemplace `test.txt` por `test.testing` . Si está probando una ruta de acceso, asegúrese de ejecutar el cmdlet dentro de esa ruta de acceso.
+En el siguiente fragmento de código de PowerShell, reemplace `test.txt` por un archivo que cumpla las reglas de exclusión. Por ejemplo, si ha excluido la `.testing` extensión, reemplace `test.txt` por `test.testing`. Si está probando una ruta de acceso, asegúrese de ejecutar el cmdlet dentro de esa ruta de acceso.
 
 ```PowerShell
 Invoke-WebRequest "http://www.eicar.org/download/eicar.com.txt" -OutFile "test.txt"
 ```
 
-Si Antivirus de Microsoft Defender informa de malware, la regla no funciona. Si no hay ningún informe de malware y existe el archivo descargado, la exclusión funciona. Puede abrir el archivo para confirmar que el contenido es el mismo que el que se describe en el sitio web del archivo [de prueba EICAR](http://www.eicar.org/86-0-Intended-use.html).
+Si Antivirus de Microsoft Defender informa de malware, la regla no funciona. Si no hay ningún informe de malware y existe el archivo descargado, la exclusión funciona. Puede abrir el archivo para confirmar que el contenido es el mismo que el que se describe en el sitio web del archivo [de prueba eicar](http://www.eicar.org/86-0-Intended-use.html).
 
-También puede usar el siguiente código de PowerShell, que llama a la clase .NET WebClient para descargar el archivo de prueba, como con el cmdlet; reemplace por un archivo que cumpla con la regla que va `Invoke-WebRequest` `c:\test.txt` a validar:
+También puede usar el siguiente código de PowerShell, que llama a la clase .NET WebClient `Invoke-WebRequest` para descargar el archivo de prueba, como con el cmdlet; `c:\test.txt` reemplace por un archivo que cumpla con la regla que va a validar:
 
 ```PowerShell
 $client = new-object System.Net.WebClient
@@ -382,7 +383,7 @@ Si no tiene acceso a Internet, puede crear su propio archivo de prueba EICAR esc
 
 También puede copiar la cadena en un archivo de texto en blanco e intentar guardarla con el nombre de archivo o en la carpeta que está intentando excluir.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Configurar y validar exclusiones en Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)

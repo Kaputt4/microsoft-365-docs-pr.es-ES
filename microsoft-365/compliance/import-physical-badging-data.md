@@ -15,16 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Los administradores pueden configurar un conector de datos para importar datos desde el sistema de protección física de su organización a Microsoft 365. Esto le permite usar estos datos en directivas de administración de riesgos internos para ayudarle a detectar el acceso a sus edificios físicos por usuarios específicos que pueden indicar una posible amenaza interna para su organización.
-ms.openlocfilehash: 7eddede8b98d1b676e51a95e4fed3787f56d0bf0
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: e70217fa98e283883ab70bbe924d6f01f27613b4
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272059"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312227"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurar un conector para importar datos de badging físicos (versión preliminar)
 
-Puede configurar un conector de datos en el Centro de cumplimiento de Microsoft 365 para importar datos de error físicos, como los eventos de acceso físico sin procesar de los empleados o las alarmas de acceso físico generadas por el sistema de error de la organización. Algunos ejemplos de puntos de acceso físicos son una entrada a un edificio o una entrada a la sala de servidores o al centro de datos. La solución de administración de riesgos Microsoft 365 personal puede usar los datos de daños físicos para [ayudar a proteger](insider-risk-management.md) su organización contra la actividad malintencionada o el robo de datos dentro de la organización.
+Puede configurar un conector de datos en el Centro de cumplimiento de Microsoft 365 para importar datos de error físicos, como los eventos de acceso físico sin procesar de los empleados o las alarmas de acceso físico generadas por el sistema de badging de la organización. Algunos ejemplos de puntos de acceso físicos son una entrada a un edificio o una entrada a la sala de servidores o al centro de datos. La solución de administración de riesgos de información interna puede usar los datos de Microsoft 365 físicos para [ayudar a proteger](insider-risk-management.md) su organización de la actividad malintencionada o el robo de datos dentro de la organización.
 
 La configuración de un conector de error físico consta de las siguientes tareas:
 
@@ -40,7 +40,10 @@ La configuración de un conector de error físico consta de las siguientes tarea
 
 ## <a name="before-you-set-up-the-connector"></a>Antes de configurar el conector
 
-- Al usuario que crea el conector de badging físico en el paso 3 se le debe asignar el rol De importación de buzones de Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol Exportar importación de buzones y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos [](/Exchange/permissions-exo/role-groups#modify-role-groups) de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+- El usuario que crea el conector de badging físico en el paso 3 debe tener asignado el rol de administrador del conector de datos. Este rol es necesario para agregar conectores en la **página Conectores de datos** de la Centro de cumplimiento de Microsoft 365. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, vea la sección "Roles en los centros de seguridad y cumplimiento" en Permisos en el [Centro de seguridad & cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de la organización puede crear un grupo de roles personalizado, asignar el rol de administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, vea la sección "Crear un grupo de roles personalizado" en [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+
+   > [!NOTE]
+   > Actualmente, el rol de administrador de Conector de datos no se admite en entornos GCC administración de Estados Unidos. Por lo tanto, el usuario que crea el conector de recursos humanos en GCC entornos High y DoD debe tener asignado el rol De importación de buzones de Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un nuevo grupo de roles, asignar el rol Exportar importación de buzones y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos [](/Exchange/permissions-exo/role-groups#modify-role-groups) de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
 - Debe determinar cómo recuperar o exportar los datos del sistema de badging físico de su organización (diariamente) y crear un archivo JSON que se describe en el paso 2. El script que ejecute en el paso 4 insertará los datos del archivo JSON en el punto de conexión de la API.
 
@@ -52,9 +55,9 @@ La configuración de un conector de error físico consta de las siguientes tarea
 
 El primer paso es crear y registrar una nueva aplicación en Azure Active Directory (Azure AD). La aplicación se corresponderá con el conector de badging físico que creas en el paso 3. La creación de esta aplicación permitirá Azure AD autenticar la solicitud de inserción para la carga JSON que contiene datos de pérdida de datos físicos. Durante la creación de esta Azure AD, asegúrate de guardar la siguiente información. Estos valores se usarán en pasos posteriores.
 
-- Azure AD de aplicación (también denominado id. *de aplicación* o *id. de cliente*)
+- Azure AD de aplicación (también denominado id. *de aplicación* o *identificador de cliente*)
 
-- Azure AD secreto de aplicación (también denominado secreto *de cliente*)
+- Azure AD secreto de aplicación (también denominado *secreto de cliente*)
 
 - Identificador de inquilino (también denominado *id. de directorio*)
 
@@ -72,7 +75,7 @@ El archivo JSON debe cumplir con la definición de esquema requerida por el cone
 |AssetId|El identificador de referencia del activo físico o punto de acceso físico.|Cadena alfanumérica|
 |AssetName|Nombre descriptivo del activo físico o punto de acceso físico.|Cadena alfanumérica|
 |EventTime|La marca de tiempo de acceso.|Fecha y hora, en formato UTC|
-|AccessStatus|Valor de `Success` o `Failed`|Cadena|
+|AccessStatus|Valor de `Success` o `Failed`|String|
 |||
 
 Este es un ejemplo de un archivo JSON que se ajusta al esquema requerido:
@@ -172,7 +175,7 @@ Después de ejecutar el script, el archivo JSON que contiene los datos de pérdi
 > [!NOTE]
 > El número máximo de registros en el archivo JSON que puede procesar la API es de 50 000 registros.
 
-1. Vaya a [este GitHub sitio para](https://github.com/microsoft/m365-physical-badging-connector-sample-scripts/blob/master/push_physical_badging_records.ps1) obtener acceso al script de ejemplo.
+1. Vaya a [este GitHub para](https://github.com/microsoft/m365-physical-badging-connector-sample-scripts/blob/master/push_physical_badging_records.ps1) obtener acceso al script de ejemplo.
 
 2. Haga clic en **el botón** Sin procesar para mostrar el script en la vista de texto
 
@@ -194,7 +197,7 @@ Después de ejecutar el script, el archivo JSON que contiene los datos de pérdi
 
    |Parámetro|Descripción|
    |---|---|
-   |tenantId|Este es el identificador de la Microsoft 365 organización que obtuvo en el paso 1. También puede obtener el tenantId para su organización en la hoja **Información general del** centro Azure AD administración. Esto se usa para identificar la organización.|
+   |tenantId|Este es el identificador de la Microsoft 365 organización que obtuvo en el paso 1. También puede obtener el tenantId para su organización en la hoja  Información general del centro Azure AD administración. Esto se usa para identificar la organización.|
    |appId|Este es el identificador Azure AD aplicación para la aplicación que creaste en Azure AD en el paso 1. Esto lo usa Azure AD para la autenticación cuando el script intenta obtener acceso a su Microsoft 365 organización.|
    |appSecret|Este es el secreto Azure AD aplicación para la aplicación que creaste en Azure AD paso 1. Esto también se usa para la autenticación.|
    |jobId|Este es el identificador de trabajo del conector de badging físico que creó en el paso 3. Esto se usa para asociar los datos de mal estado físico que se insertan en la nube de Microsoft con el conector de malging físico.|
@@ -216,7 +219,7 @@ Después de ejecutar el script, el archivo JSON que contiene los datos de pérdi
 
 ## <a name="step-5-monitor-the-physical-badging-connector"></a>Paso 5: Supervisar el conector de badging físico
 
-Después de crear el conector de descarga física e insertar los datos de pérdida de datos físicos, puede ver el conector y el estado de carga en el Centro de cumplimiento de Microsoft 365. Si programa el script para que se ejecute automáticamente de forma regular, también puede ver el estado actual después de la última vez que se ejecutó el script.
+Después de crear el conector de badging físico e insertar los datos de pérdida de datos físicos, puede ver el conector y el estado de carga en el Centro de cumplimiento de Microsoft 365. Si programa el script para que se ejecute automáticamente de forma regular, también puede ver el estado actual después de la última vez que se ejecutó el script.
 
 1. Vaya a la Centro de cumplimiento de Microsoft 365 y seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Conectores de datos**</a>.
 

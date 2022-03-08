@@ -2,8 +2,8 @@
 title: Registrarse para obtener Office 365 con una dirección de correo electrónico personal
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,19 +19,19 @@ search.appverid:
 ms.assetid: 20816b8b-8b21-458f-81c1-320b8116597e
 ROBOTS: NOINDEX
 description: 'Obtenga información sobre cómo registrarse Office 365 con su dirección de correo electrónico personal, si no prefiere agregar un dominio personalizado. '
-ms.openlocfilehash: ffac363aa8caaa1d8791499479f040e84b3fdfd4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: df681f8a59e25d418d56b82310da7229f5180432
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60178244"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312423"
 ---
 # <a name="signing-up-for-office-365-with-a-personal-email-address"></a>Registrarse para obtener Office 365 con una dirección de correo electrónico personal
 
 ## <a name="when-you-skip-adding-a-custom-domain"></a>Al omitir agregar un dominio personalizado
 
 
-Cuando te registras para Office 365 con tu dirección de correo electrónico personal y omites agregar un dominio personalizado por ahora, limitas el acceso [a](../get-help-with-domains/what-is-a-domain.md) determinadas características.
+Cuando te registras para Office 365 con tu dirección de correo electrónico personal y omites agregar un dominio personalizado por ahora, limitas tu acceso [a](../get-help-with-domains/what-is-a-domain.md) determinadas características.
 
 Si decide agregar un dominio personalizado ahora, tiene acceso a todas las características premium siguientes:
 
@@ -51,7 +51,7 @@ Si decide agregar un dominio personalizado ahora, tiene acceso a todas las carac
 
 ## <a name="how-to-add-a-domain"></a>Cómo agregar un dominio
 
-En el Centro de administración, vaya **a Configurar**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>  >  **Agregar dominio**.
+En el Centro de administración, vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">SetupDomainsAdd</a> >  >  **domain**.
 
 
 

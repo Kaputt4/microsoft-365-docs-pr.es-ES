@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5a359938dbee85ea64b5f46804761410cae1f48e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: b1c133048e6600d553f0530e135ebfc2c441dd84
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166631"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323673"
 ---
 # <a name="access-the-microsoft-365-defender-mssp-customer-portal"></a>Obtener acceso Microsoft 365 Defender portal de clientes de MSSP
 
@@ -36,9 +36,9 @@ ms.locfileid: "61166631"
 > [!NOTE]
 > Este conjunto de pasos se dirige al MSSP.
 
-De forma predeterminada, los clientes MSSP tienen acceso Microsoft 365 Defender inquilino mediante la siguiente dirección URL: `https://securitycenter.windows.com/` .
+De forma predeterminada, los clientes de MSSP tienen acceso Microsoft 365 Defender inquilino a través de la siguiente dirección URL: `https://security.microsoft.com/`.
 
-Sin embargo, los MSSP tendrán que usar una dirección URL específica del inquilino en el siguiente formato: para obtener acceso al portal de  `https://securitycenter.windows.com?tid=customer_tenant_id` clientes de MSSP.
+Sin embargo, los MSSP tendrán que usar una dirección URL específica del inquilino en el siguiente formato:  `https://security.microsoft.com?tid=customer_tenant_id` para obtener acceso al portal de clientes de MSSP.
 
 En general, los MSSP tendrán que agregarse a cada una de las Azure AD cliente de MSSP que tienen la intención de administrar.
 
@@ -50,7 +50,7 @@ Siga estos pasos para obtener el identificador de inquilino del cliente MSSP y, 
 
 3. Seleccione **Azure Active Directory > propiedades**. Encontrará el identificador de inquilino en el campo Id. de directorio.
 
-4. Para obtener acceso al portal de clientes de MSSP, reemplace el `customer_tenant_id` valor en la siguiente dirección URL: `https://securitycenter.windows.com/?tid=customer_tenant_id` .
+4. Para obtener acceso al portal de clientes de MSSP, reemplace el `customer_tenant_id` valor en la siguiente dirección URL: `https://security.microsoft.com/?tid=customer_tenant_id`.
 
 ## <a name="related-topics"></a>Temas relacionados
 

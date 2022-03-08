@@ -4,7 +4,7 @@ description: DKE le permite proteger datos altamente confidenciales mientras man
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 01/29/2021
+ms.date: 02/28/2022
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: dd445fae8f344be68726fd9dda6457badc18f5c5
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: b16733a1d42ca245f096038f567be6fbd0c3fb2a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767453"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320611"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Cifrado de clave doble para Microsoft 365
 
@@ -37,7 +37,7 @@ Para obtener más información acerca de las claves raíz de inquilino predeterm
 
 ## <a name="when-your-organization-should-adopt-dke"></a>Cuando su organización debe adoptar DKE
 
-El cifrado de clave doble está pensado para los datos más confidenciales que están sujetos a los requisitos de protección más estrictos. DKE no está pensado para todos los datos. En general, usarás cifrado de clave doble para proteger solo una pequeña parte de los datos generales. Debe realizar la debida diligencia en la identificación de los datos adecuados para cubrir con esta solución antes de implementar. En algunos casos, es posible que deba restringir el ámbito y usar otras soluciones para la mayoría de los datos, como Microsoft Information Protection con claves administradas por Microsoft o BYOK. Estas soluciones son suficientes para documentos que no están sujetos a protecciones mejoradas y requisitos normativos. Además, estas soluciones le permiten usar los servicios de Office 365 más eficaces; servicios que no puede usar con contenido cifrado DKE. Por ejemplo:
+El cifrado de clave doble está pensado para los datos más confidenciales que están sujetos a los requisitos de protección más estrictos. DKE no está pensado para todos los datos. En general, usarás cifrado de clave doble para proteger solo una pequeña parte de los datos generales. Debe realizar la debida diligencia en la identificación de los datos adecuados para cubrir con esta solución antes de implementar. En algunos casos, es posible que deba restringir el ámbito y usar otras soluciones para la mayoría de los datos, como Microsoft Information Protection con claves administradas por Microsoft o BYOK. Estas soluciones son suficientes para documentos que no están sujetos a protecciones mejoradas y requisitos normativos. Además, estas soluciones le permiten usar los servicios Office 365 más eficaces; servicios que no puede usar con contenido cifrado DKE. Por ejemplo:
 
 - Reglas de transporte como antimalware y correo no deseado que requieren visibilidad en los datos adjuntos
 - Microsoft Delve
@@ -59,13 +59,13 @@ Si sus organizaciones tienen cualquiera de los siguientes requisitos, puede usar
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>Requisitos de sistema y licencias para DKE
 
-**El cifrado de clave doble Microsoft 365** viene con Microsoft 365 E5. Si no tiene una licencia Microsoft 365 E5, puede registrarse para una [versión de prueba](https://aka.ms/M365E5ComplianceTrial). Para obtener más información acerca de estas licencias, [vea Microsoft 365 de licencias para seguridad y & cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+**Double Key Encryption for Microsoft 365** viene con Microsoft 365 E5. Si no tiene una licencia de Microsoft 365 E5, puede registrarse para una [versión de prueba](https://aka.ms/M365E5ComplianceTrial). Para obtener más información acerca de estas licencias, [vea Microsoft 365 guía de licencias para el cumplimiento de & seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Azure Information Protection**. DKE funciona con etiquetas de confidencialidad y requiere Azure Information Protection.
 
 Las etiquetas de confidencialidad DKE están disponibles para los usuarios finales a través del botón de confidencialidad en el cliente de etiquetado unificado AIP en Office aplicaciones de escritorio. Instale estos requisitos previos en cada equipo cliente donde desee proteger y consumir documentos protegidos.
 
-**Microsoft Office aplicaciones para empresas** versión 2009 o posterior (versiones de escritorio de Word, PowerPoint y Excel) en Windows.
+**Microsoft Office aplicaciones para** empresas versión 2009 o posterior (versiones de escritorio de Word, PowerPoint y Excel) en Windows.
 
 **Azure Information Protection Unified Labeling Client versions** 2.7.93.0 o posterior. Descargue e instale el cliente de etiquetado unificado desde el [Centro de descarga de Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
 
@@ -73,7 +73,7 @@ Las etiquetas de confidencialidad DKE están disponibles para los usuarios final
 
 **Aplicaciones compatibles**. [Aplicaciones Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clientes en Windows, incluidos Word, Excel y PowerPoint.
 
-**Compatibilidad con contenido en línea**. Puede almacenar documentos y archivos protegidos con cifrado de clave doble en línea tanto en Microsoft SharePoint como en OneDrive para la Empresa. Antes de cargar en estas ubicaciones, debe etiquetar y proteger documentos y archivos con DKE. Puede compartir contenido cifrado por correo electrónico, pero no puede ver documentos y archivos cifrados en línea. En su lugar, debe ver el contenido protegido con las aplicaciones de escritorio y los clientes admitidos en el equipo local.
+**Compatibilidad con contenido en línea**. Puede almacenar documentos y archivos protegidos con cifrado de clave doble en línea en Microsoft SharePoint y OneDrive para la Empresa. Antes de cargar en estas ubicaciones, debe etiquetar y proteger documentos y archivos con DKE. Puede compartir contenido cifrado por correo electrónico, pero no puede ver documentos y archivos cifrados en línea. En su lugar, debe ver el contenido protegido con las aplicaciones de escritorio y los clientes admitidos en el equipo local.
 
 ## <a name="overview-of-deploying-dke"></a>Información general sobre la implementación de DKE
 
@@ -81,7 +81,7 @@ Seguirá estos pasos generales para configurar DKE. Una vez completados estos pa
 
 1. Implemente el servicio DKE tal como se describe en este artículo.
 
-2. Cree una etiqueta con cifrado de clave doble. En el Centro de cumplimiento de Microsoft 365, vaya a **Protección de la información** y cree una nueva etiqueta con cifrado de clave doble. Consulte [Restringir el acceso al contenido mediante etiquetas de confidencialidad para aplicar cifrado](./encryption-sensitivity-labels.md).
+2. Cree una etiqueta con cifrado de clave doble. En el Centro de cumplimiento de Microsoft 365, vaya a **Protección de la información** y cree una nueva etiqueta con Cifrado de clave doble. Consulte [Restringir el acceso al contenido mediante etiquetas de confidencialidad para aplicar cifrado](./encryption-sensitivity-labels.md).
 
 3. Use etiquetas de cifrado de clave doble. Proteja los datos seleccionando la etiqueta Double Key Encrypted de la cinta de opciones De confidencialidad en Microsoft Office.
 
@@ -96,7 +96,7 @@ Vea el [vídeo de implementación de cifrado de clave](https://youtu.be/vDWfHN_k
 Seguirá estos pasos generales para configurar el cifrado de clave doble para su organización.
 
 1. [Instalar requisitos previos de software para el servicio DKE](#install-software-prerequisites-for-the-dke-service)
-1. [Clonar el repositorio de GitHub clave doble](#clone-the-dke-github-repository)
+1. [Clonar el repositorio de cifrado de GitHub clave doble](#clone-the-dke-github-repository)
 1. [Modificar la configuración de la aplicación](#modify-application-settings)
 1. [Generar claves de prueba](#generate-test-keys)
 1. [Crear el proyecto](#build-the-project)
@@ -133,7 +133,7 @@ Instale estos requisitos previos en el equipo donde desea instalar el servicio D
 
 ### <a name="clone-the-dke-github-repository"></a>Clonar el repositorio de GitHub DKE
 
-Microsoft proporciona los archivos de origen DKE en un GitHub de datos. Clone el repositorio para crear el proyecto localmente para el uso de su organización. El repositorio de GitHub DKE se encuentra en [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService).
+Microsoft proporciona los archivos de origen DKE en un GitHub de datos. Clone el repositorio para crear el proyecto localmente para el uso de su organización. El repositorio GitHub DKE se encuentra en [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService).
 
 Las siguientes instrucciones están destinadas a usuarios de git o usuarios Visual Studio Code experiencia:
 
@@ -144,14 +144,14 @@ Las siguientes instrucciones están destinadas a usuarios de git o usuarios Visu
     Por ejemplo:
 
    > [!div class="mx-imgBorder"]
-   > ![Clone el repositorio del servicio de cifrado de clave doble GitHub.](../media/dke-clone.png)
+   > ![Clone el repositorio del servicio de cifrado de clave doble desde GitHub.](../media/dke-clone.png)
 
 3. En Visual Studio Code, seleccione **Ver paleta** \> **de comandos** y **seleccione Git: Clonar**. Para ir a la opción de la lista, empiece a escribir para `git: clone` filtrar las entradas y, a continuación, selecciónelo en la lista desplegable. Por ejemplo:
 
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Code opción GIT:Clone.](../media/dke-vscode-clone.png)
 
-4. En el cuadro de texto, pegue la dirección URL que copió de Git y seleccione **Clonar desde GitHub**.
+4. En el cuadro de texto, pegue la dirección URL que copió de Git y seleccione **Clonar en GitHub**.
 
 5. En el **cuadro de diálogo** Seleccionar carpeta que aparece, busque y seleccione una ubicación para almacenar el repositorio. En el símbolo del sistema, seleccione **Abrir**.
 
@@ -332,7 +332,7 @@ Ahora ya está listo para [crear el proyecto DKE](#build-the-project).
 
 Use las siguientes instrucciones para crear el proyecto DKE localmente:
 
-1. En Visual Studio Code, en el repositorio de servicios DKE, seleccione **Ver** \> paleta de comandos y, a continuación, **escriba compilación** en el símbolo del sistema.
+1. En Visual Studio Code, en el repositorio de servicios de DKE, seleccione **Ver** \> paleta de comandos y, a continuación, escriba **compilación** en el símbolo del sistema.
 
 2. En la lista, elija **Tareas: Ejecutar tarea de compilación**.
 
@@ -427,7 +427,7 @@ DKE se implementa y puede examinar las claves de prueba que ha creado. Continúe
 
 #### <a name="publish-via-ftp"></a>Publicar a través de FTP
 
-1. Conectar al Servicio de aplicaciones que [creaste anteriormente](#deploy-the-dke-service-and-publish-the-key-store).
+1. Conectar a App Service que [creaste anteriormente](#deploy-the-dke-service-and-publish-the-key-store).
 
    En el explorador, vaya a: **Azure portalApp** >  **ServiceDeployment** >  **CenterManual** >  **DeploymentFTPDashboard** >  > .
 
@@ -485,7 +485,7 @@ Para registrar el servicio DKE:
 
 3. Seleccione un tipo de cuenta en las opciones que se muestran.
 
-   Si usas un Microsoft Azure con un dominio no personalizado, como **onmicrosoft.com**, selecciona Cuentas solo en este directorio de la organización **(solo Microsoft : inquilino único).**
+   Si usas Microsoft Azure con un dominio no personalizado, como **onmicrosoft.com**, selecciona Cuentas solo en este directorio de la organización **(solo Microsoft : inquilino único).**
 
    Por ejemplo:
 
@@ -505,7 +505,7 @@ Para registrar el servicio DKE:
    Por ejemplo: `https://mydkeservicetest.com`
 
    - La dirección URL que escriba debe coincidir con el nombre de host donde se implementa el servicio DKE.
-   - El dominio debe ser un [dominio registrado](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains).
+   - El dominio debe ser un [dominio comprobado](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains).
    - Si está probando localmente con Visual Studio, use `https://localhost:5001`.
    - En todos los casos, el esquema debe ser **https**.
 
@@ -581,7 +581,7 @@ Si no migra contenido, el contenido protegido por HYOK no se verá afectado.
 
 Nos damos cuenta de que para algunos clientes de sectores altamente regulados, esta implementación de referencia estándar con claves basadas en software puede que no sea suficiente para satisfacer sus obligaciones y necesidades de cumplimiento mejoradas. Nos hemos asociado con proveedores de módulos de seguridad de hardware (HSM) de terceros para admitir opciones de administración de claves mejoradas en el servicio DKE, incluidos:
 
- - [Entrust](https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.)
+- [Entrust](https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.)
 
 - [Thales](https://cpl.thalesgroup.com/cloud-security/encryption/double-key-encryption)
 

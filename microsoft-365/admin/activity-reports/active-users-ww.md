@@ -1,7 +1,7 @@
 ---
 title: Evaluar el informe Microsoft 365 usuarios activos
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: Obtenga información sobre cómo obtener un informe de usuarios activos mediante el panel de informes de Microsoft 365 en el Centro de administración de Microsoft 365 y averiguar cuántas licencias de productos se usan.
-ms.openlocfilehash: 793f83e28c396add9046f2c464efbdfef2b291f8
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 9f8b9f12782727121a878cfa353e42291d340688
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60553369"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312899"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>Evaluar el informe Microsoft 365 usuarios activos
 
@@ -38,11 +38,11 @@ Por ejemplo, puede usar el informe **Usuarios activos** para conocer cuántas li
 ## <a name="how-to-get-to-the-active-users-report"></a>Obtener acceso al informe Usuarios activos
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso. 
-2. En la página principal del panel, haga clic en el botón **Ver más** en la tarjeta Usuarios activos - Microsoft 365 Servicios.
+2. En la página principal del panel, haga clic en el botón **Ver más** en la tarjeta Usuarios activos - Microsoft 365 servicios.
 
 ## <a name="interpret-the-active-users-report"></a>Interpretar el informe Usuarios activos
 
-Puede ver usuarios activos en el informe de Office 365 seleccionando la **pestaña Usuarios activos.**<br/>![Microsoft 365: Microsoft Office 365 usuarios activos.](../../media/56fe2e54-76ad-49e5-886f-1344c2697258.png)
+Puede ver usuarios activos en el informe de Office 365 seleccionando la **pestaña Usuarios activos**.<br/>![Microsoft 365: Microsoft Office 365 usuarios activos.](../../media/56fe2e54-76ad-49e5-886f-1344c2697258.png)
 
 - El informe Usuarios activos permite ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si ve un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
 
@@ -65,4 +65,4 @@ Si su suscripción está operada por 21Vianet, no verá Yammer.
 
 
 
-Si las directivas de la organización le impiden ver los informes en los que la información del usuario es identificable, puede cambiar la configuración de privacidad de todos estos informes. Consulte la sección **¿Cómo se ocultan los detalles del nivel de usuario?** en Informes de actividad [en el Centro de administración de Microsoft 365](activity-reports.md).  
+Si las directivas de la organización le impiden ver los informes en los que la información del usuario es identificable, puede cambiar la configuración de privacidad de todos estos informes. Consulte la sección **¿Cómo ocultar los detalles del nivel de usuario?** en Informes de actividad [en el Centro de administración de Microsoft 365](activity-reports.md).  

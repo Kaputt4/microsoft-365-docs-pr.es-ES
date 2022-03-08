@@ -2,11 +2,11 @@
 title: Comprender las suscripciones y licencias en Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -14,24 +14,24 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_licensing
 - okr_smb
 - AdminSurgePortfolio
 - manage_licenses
-- commerce_licensing
 - AdminTemplateSet
 search.appverid: MET150
 description: Las aplicaciones y servicios que reciba dependen del producto Microsoft 365 que haya comprado, como Aplicaciones Microsoft 365 para negocios.
 ms.date: 07/01/2020
-ms.openlocfilehash: e380ac61033435a86118f7178da9e014d13ad436
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: fefdca1b1321e19d76a227ecd313708e700b9c01
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524050"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313319"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprender las suscripciones y licencias en Microsoft 365 para empresas
 
-Cuando compras una suscripción a Microsoft 365 para empresas, te registras para un conjunto de aplicaciones y servicios que pagas mensualmente o anualmente. Las aplicaciones y servicios que recibe como parte de la suscripción dependen del producto que haya comprado, como Aplicaciones Microsoft 365 para negocios o Microsoft 365 Empresa Estándar. Puede ver lo que incluye cada producto en la [Microsoft 365 para pequeñas y medianas empresas](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1).
+Cuando compras una suscripción a Microsoft 365 para empresas, te registras para un conjunto de aplicaciones y servicios que pagas mensualmente o anualmente. Las aplicaciones y servicios que reciba como parte de la suscripción dependen del producto que haya comprado, como Aplicaciones Microsoft 365 para negocios o Microsoft 365 Empresa Estándar. Puede ver lo que incluye cada producto en la [Microsoft 365 para pequeñas y medianas empresas](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1).
 
 Cuando compra una suscripción, debe especificar el número de licencias que necesita, en función de cuántos usuarios tiene en su organización. Después de comprar una suscripción, crea cuentas para los usuarios de la organización y, a continuación, asigna una licencia a cada persona. A medida que cambien las necesidades de la organización, puede comprar más licencias para dar cabida a personas nuevas o reasignar licencias a otros usuarios cuando alguien abandone la organización.
 
@@ -39,7 +39,7 @@ Si tiene más de una suscripción, puede asignar licencias a usuarios diferentes
 
 ## <a name="how-many-devices-can-people-install-office-on"></a>¿En cuántos dispositivos se puede instalar Office?
 
-Si la suscripción incluye cualquiera de los siguientes productos, cada persona puede instalar Office hasta cinco equipos pc o Mac, cinco tabletas y cinco teléfonos.
+Si la suscripción incluye cualquiera de los siguientes productos, cada persona puede instalar Office en hasta cinco equipos pc o Mac, cinco tabletas y cinco teléfonos.
 
 :::row:::
    :::column span="":::

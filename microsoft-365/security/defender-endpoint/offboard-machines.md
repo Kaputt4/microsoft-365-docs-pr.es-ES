@@ -1,6 +1,6 @@
 ---
 title: Dispositivos offboard del servicio Microsoft Defender para endpoints
-description: Incorporación Windows dispositivos, servidores, dispositivos que no Windows desde el servicio de Microsoft Defender para endpoints
+description: Incorporar Windows dispositivos, servidores, dispositivos que no Windows desde el servicio de Microsoft Defender para endpoints
 keywords: offboarding, Microsoft Defender for Endpoint offboarding, offboarding
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 19f4b517682fa58bde7253c074dc4402f6f95bf9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c2ec837ebc9fef0aabd2810dbd22db24597c52da
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163427"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63322609"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Dispositivos offboard del servicio Microsoft Defender para endpoints
 
@@ -27,7 +27,7 @@ ms.locfileid: "61163427"
 
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Plataformas**
@@ -45,11 +45,11 @@ Siga las instrucciones correspondientes según el método de implementación pre
 >
 > Los datos de los dispositivos no incluidos (como escala de tiempo, alertas, vulnerabilidades, etc.) permanecerán en el portal hasta que expire el período [de](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) retención configurado.
 >
-> El perfil del dispositivo (sin datos) [](machines-view-overview.md) permanecerá en la lista de dispositivos durante no más de 180 días.
+> El perfil del dispositivo (sin datos) permanecerá en la lista de [](machines-view-overview.md) dispositivos durante no más de 180 días.
 >
-> Además, los dispositivos que [no](tvm-exposure-score.md) están activos en los últimos 30 días no se tienen en cuenta en los datos que reflejan la puntuación de exposición Administración de amenazas y vulnerabilidades de la organización y la puntuación segura de Microsoft para dispositivos.
+> Además, los dispositivos [que no están](tvm-exposure-score.md) activos en los últimos 30 días no se tienen en cuenta en los datos que reflejan la puntuación de exposición de Administración de amenazas y vulnerabilidades de la organización y la puntuación segura de Microsoft para dispositivos.
 >
-> Para ver solo los dispositivos activos, puede filtrar por estado [de](machines-view-overview.md#health-state)mantenimiento, [etiquetas de dispositivo](machine-tags.md) o grupos de [máquinas.](machine-groups.md)
+> Para ver solo los dispositivos activos, puede filtrar por estado de [mantenimiento del sensor](machines-view-overview.md#use-filters-to-customize-the-device-inventory-views), [etiquetas de dispositivo o](machine-tags.md) [grupos de máquinas](machine-groups.md).
 
 ## <a name="offboard-windows-devices"></a>Dispositivos Windows offboard
 

@@ -4,8 +4,8 @@ f1.keywords:
 - NOCSH
 - fwlink 2135143
 - India-only
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
@@ -21,12 +21,12 @@ search.appverid: MET150
 description: Obtenga información sobre cómo actualizar de Microsoft Teams gratuita a una nueva suscripción Microsoft 365 para empresas.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020
-ms.openlocfilehash: 1382ec4e272b7bede184f47ebbaf64780907b40e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a767eb058490f35b58c2e9ab549539afc610a4e7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200634"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321367"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>Actualizar de Microsoft Teams gratuito a Microsoft 365 para empresas
 
@@ -49,7 +49,7 @@ Para comenzar el proceso, obtenga el identificador de cuenta de trabajo o escuel
 
 Después de tener la cuenta de trabajo o escuela subyacente para su organización Microsoft Teams gratuita, debe restablecer la contraseña de la cuenta.
 
-1. Vaya a la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Cuando se le pida que inicie sesión, elija **Olvidé mi contraseña.**
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>. Cuando se le pida que inicie sesión, elija **Olvidé mi contraseña**.
 2. Complete el procedimiento de restablecimiento de contraseña con la cuenta de trabajo o escuela subyacente (la que termina con *.onmicrosoft.com*).
 3. Complete los pasos de comprobación. Recibirá un correo electrónico con un código que se usará para establecer una nueva contraseña.
 4. Escriba el código para completar el proceso de verificación.
@@ -68,11 +68,11 @@ Usa la cuenta de trabajo o escuela subyacente que recuperaste y la nueva contras
 
 Ahora que tiene una nueva suscripción Microsoft 365 para empresas, puede asignar licencias a los usuarios existentes en su Microsoft Teams organización gratuita.
 
-1. En el Centro de administración, vaya a **Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos.**</a>
-2. Seleccione los usuarios a los que desea asignar licencias Microsoft 365 para empresas y, a continuación, **seleccione Administrar licencias de productos**.
-3. En el **panel Administrar licencias de productos,** seleccione Reemplazar **asignaciones de licencias existentes**.
-4. En el **panel Reemplazar productos existentes,** busque el Microsoft 365 para empresas que compró y cambie la alternancia a **On**.
-5. Seleccione **Reemplazar** y, a continuación, **seleccione Cerrar**.
+1. En el Centro de administración, vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**UsuariosActivos**</a> > .
+2. Seleccione los usuarios a los que desea asignar licencias de Microsoft 365 para empresas y, a continuación, **seleccione Administrar licencias de productos**.
+3. En el **panel Administrar licencias de productos** , seleccione **Reemplazar asignaciones de licencias existentes**.
+4. En el **panel Reemplazar productos existentes**, busque el Microsoft 365 para empresas que compró y cambie la alternancia a **Activar**.
+5. Seleccione **Reemplazar** y, a continuación, **cierre**.
 
 ## <a name="related-content"></a>Contenido relacionado
 

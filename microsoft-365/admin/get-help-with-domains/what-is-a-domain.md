@@ -2,8 +2,8 @@
 title: ¿Qué es un dominio?
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,50 +17,50 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
-description: Obtén información sobre lo que es un dominio y cómo puedes comprar un dominio o usar el dominio predeterminado de tu empresa para empezar a usar OneDrive aplicaciones de Microsoft.
+description: Obtén información sobre qué es un dominio y cómo puedes comprar un dominio o usar el dominio predeterminado de tu empresa para empezar a usar OneDrive aplicaciones de Microsoft.
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7d3c38b3c9ff89bed613413405fec54718ebdd42
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: eb7ba8a7f9ddcec9d222921e6e6171ea229e0064
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60659989"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316693"
 ---
 # <a name="what-is-a-domain"></a>¿Qué es un dominio?
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
-Un dominio es un nombre único que aparece después del signo **@** en las direcciones de correo electrónico y después de **www.** en las direcciones web. Normalmente toma la forma del nombre de su organización y un sufijo de Internet estándar, como *su empresa. <span> com* o *stateuniversity. <span> edu*. 
+Un dominio es un nombre único que aparece después del signo **@** en las direcciones de correo electrónico y después de **www.** en las direcciones web. Normalmente toma la forma del nombre de su organización y un sufijo de Internet estándar, como *su empresa.<span> com* o *stateuniversity.<span> edu*. 
   
-Usar un dominio personalizado como *rob@contoso. <span> com* con Microsoft 365 puede ayudar a crear la credibilidad y el reconocimiento de su marca. 
+Usar un dominio personalizado como *rob@contoso.<span> com* con Microsoft 365 puede ayudar a crear la credibilidad y el reconocimiento de su marca. 
   
 ## <a name="choose-the-experience-thats-best-for-you"></a>Seleccione la experiencia que se adapte mejor a sus necesidades:
 
  **Comprar un nuevo dominio:**
   
-Use Microsoft 365 para comprar un nuevo dominio: configuraremos todo. [Aprende más.](buy-a-domain-name.md)
+Use Microsoft 365 para comprar un nuevo dominio: configuraremos todo. [Obtenga más información.](buy-a-domain-name.md)
   
  **Use un dominio de su propiedad:**
   
-Si ya tienes un dominio como *you@yourcompany. <span> com* puedes agregarlo y empezar a usar OneDrive aplicaciones de Microsoft inmediatamente. Necesitará dedicar unos minutos a configurar el correo y Skype Empresarial. 
+Si ya tienes un dominio como *you@yourcompany.<span> com* puedes agregarlo y empezar a usar OneDrive aplicaciones de Microsoft de inmediato. Necesitará dedicar unos minutos a configurar el correo y Skype Empresarial. 
   
 > [!TIP]
 > ¿No sabe dónde está registrado su dominio? [Obtenga ayuda para encontrar su registrador de dominios](find-your-domain-registrar.md)
   
  **Use un dominio de Microsoft por ahora:**
   
-Puede usar un dominio de Microsoft como  *yourcompany.onmicrosoft. <span> com*  para iniciar sesión por ahora y agregar un dominio personalizado más adelante. 
+Puede usar un dominio de Microsoft como  *yourcompany.onmicrosoft.<span> com*  para iniciar sesión por ahora y agregar un dominio personalizado más adelante. 
   
 > [!IMPORTANT]
-> Si selecciona esta opción, el nombre que escriba para su dominio .onmicrosoft.com se usará en todas las direcciones URL SharePoint y OneDrive. Es posible que no pueda cambiar este nombre, así que asegúrese de que está escrito correctamente es el nombre que desea usar desde una perspectiva de personal de marca. 
+> Si selecciona esta opción, el nombre que escriba para el dominio .onmicrosoft.com se usará en todas las direcciones URL SharePoint y OneDrive. Es posible que no pueda cambiar este nombre, así que asegúrese de que está escrito correctamente es el nombre que desea usar desde una perspectiva de personal de marca. 
   
 ## <a name="feeling-stuck"></a>¿Está bloqueado?
 
-Llamar al soporte técnico de [Microsoft: obtener ayuda para configurar un dominio](../../business-video/get-help-support.md)
+Llamar al soporte técnico de Microsoft [: obtener ayuda para configurar un dominio](../../business-video/get-help-support.md)
 
 ## <a name="related-content"></a>Contenido relacionado
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Lighthouse Windows de la página 365 (equipos en la nube)
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
@@ -15,18 +15,15 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Windows 365 (equipos en la nube).
-ms.openlocfilehash: a0d828a382000502f6700d585624b967a740ff36
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la Windows 365 (equipos en la nube).
+ms.openlocfilehash: 60b96974e0070e4a151484a162c3eafc18d0bf4a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163185"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315531"
 ---
 # <a name="windows-365-cloud-pcs-page-overview"></a>Windows de la página 365 (equipos en la nube)  
-
-> [!NOTE]
-> Las características descritas en este artículo están en Versión preliminar, están sujetas a cambios y solo están disponibles para los partners que cumplen los [requisitos](m365-lighthouse-requirements.md). Si su organización no tiene Microsoft 365 Lighthouse, vea [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
   
 Windows 365 es un servicio basado en la nube que permite a los administradores de Microsoft Endpoint Manager (MEM) aprovisionar y administrar equipos en la nube para sus usuarios que tienen una licencia Windows 365. Windows 365 está totalmente integrado con MEM para la administración de dispositivos y con Microsoft 365 Lighthouse para la administración de partners de equipos en la nube en todos sus inquilinos de clientes.
 
@@ -43,7 +40,7 @@ En la pestaña Información general, la barra de recuento y anotación coloreada
 
 Puede ver un desglose de los estados del equipo en la nube para cada inquilino de cliente en la lista debajo de la barra de anotaciones. Para ver qué inquilinos tienen equipos en la nube con un estado específico, seleccione ese estado en la barra de anotación de recuento para filtrar la lista. Para ver los estados del equipo en la nube para uno o varios inquilinos de clientes específicos, use el menú desplegable **Inquilinos** para filtrar la lista.
 
-Para obtener información de estado detallada para un inquilino de cliente determinado, seleccione un valor debajo de cualquiera de las columnas de estado para ese inquilino. Según la columna en la  que se encuentra  el valor, se abrirá la pestaña Conexiones de red locales o Todos los equipos en la nube y se mostrará más información.
+Para obtener información de estado detallada para un inquilino de cliente determinado, seleccione un valor debajo de cualquiera de las columnas de estado para ese inquilino. Según la columna en la que se encuentra el valor, se abrirá la pestaña Conexiones de red locales o Todos los equipos en la nube y se mostrará más información.
 
 La pestaña Información general también incluye las siguientes opciones:
 
@@ -75,11 +72,11 @@ La pestaña Todos los equipos en la nube también incluye las siguientes opcione
 - **Actualizar:** Seleccione esta opción para recuperar los datos de PC en la nube más actuales.
 - **Exportar:** Seleccione esta opción para exportar datos del equipo en la nube a Excel de valores separados por comas (.csv).
 - **Buscar:** Escriba palabras clave para localizar rápidamente un equipo en la nube específico en la lista.
-- **Reintentar el aprovisionamiento:** Seleccione de 1 a 20 equipos en la nube de la lista que tienen un estado de Error de aprovisionamiento y, a continuación, seleccione esta opción para reintentar el aprovisionamiento de esos equipos en la nube.
+- **Reintentar el aprovisionamiento:** Seleccione de 1 a 20 equipos en la nube de la lista que tienen un estado de Error de aprovisionamiento **y, a** continuación, seleccione esta opción para reintentar el aprovisionamiento de esos equipos en la nube.
 
-Para ver una lista completa de los estados de aprovisionamiento de equipos en la nube y lo que significan, consulte [Información](/windows-365/enterprise/device-management-overview#column-details) general sobre administración de dispositivos para equipos en la nube en la biblioteca de documentación de Windows 365.
+Para ver una lista completa de los estados de aprovisionamiento de equipos en la nube y su significación, consulte [Información](/windows-365/enterprise/device-management-overview#column-details) general sobre administración de dispositivos para equipos en la nube en la biblioteca de documentación de Windows 365.
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="Captura de pantalla de la Windows 365 Todos los equipos en la nube.":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="Captura de pantalla de Windows pestaña 365 Todos los equipos en la nube.":::
 
 ## <a name="on-premises-network-connections-tab"></a>Ficha Conexiones de red local
 
@@ -89,7 +86,7 @@ En la lista debajo de la barra de recuento y anotación, puede ver todas las con
 
 Para ver las conexiones con un estado de aprovisionamiento específico, seleccione ese estado en la barra de recuento y anotación para filtrar la lista. Para ver los estados de conexión de uno o varios inquilinos de clientes específicos, use el menú desplegable **Inquilinos** para filtrar la lista.
 
-Si necesita tomar medidas o solucionar problemas de una conexión en la lista, seleccione Ver detalles de conexión **en Microsoft Endpoint Manager**.
+Si necesita tomar medidas o solucionar problemas de una conexión en la lista, seleccione **Ver detalles de conexión en Microsoft Endpoint Manager**.
 
 La pestaña Conexiones de red local también incluye las siguientes opciones:
 
@@ -102,5 +99,5 @@ La pestaña Conexiones de red local también incluye las siguientes opciones:
 ## <a name="related-content"></a>Contenido relacionado
 
 [¿Qué es Windows 365?](/windows-365/overview) (artículo)\
-[Windows de administración de dispositivos 365 para equipos en](/windows-365/enterprise/device-management-overview) la nube (artículo)\
+[Windows de administración de dispositivos de 365 para equipos en la](/windows-365/enterprise/device-management-overview) nube (artículo)\
 [Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)

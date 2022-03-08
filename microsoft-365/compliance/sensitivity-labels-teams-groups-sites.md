@@ -13,16 +13,17 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkSPO
 search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: d7d5ae1dfea2179c698922c4ddb045de0cd20ce5
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 39caee37f8bf8b2f885824bbdd12ca7b5b372e69
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354965"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320513"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -174,52 +175,11 @@ Limitaciones conocidas de esta versión preliminar:
     - Flujos de trabajo que usan PowerApps o Power Automate
     - Aplicaciones de terceros
 
-### <a name="configure-settings-for-the-default-sharing-link-for-a-site-by-using-powershell-advanced-settings"></a>Configuración de las opciones del vínculo de uso compartido predeterminado para un sitio mediante la configuración avanzada de PowerShell
+### <a name="configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings"></a>Configuración de las opciones del tipo de vínculo de uso compartido predeterminado para un sitio mediante la configuración avanzada de PowerShell
 
-Además de la configuración de etiquetas para sitios y grupos que puede configurar desde el centro de cumplimiento, también puede configurar el tipo de vínculo de uso compartido predeterminado para un sitio y los permisos de vínculo de uso compartido.
+Además de la configuración de etiquetas para sitios y grupos que puede configurar desde el centro de cumplimiento, también puede configurar el tipo de vínculo de uso compartido predeterminado para un sitio. Las etiquetas de confidencialidad de los documentos también se pueden configurar para un tipo de vínculo de uso compartido predeterminado. Esta configuración, que ayuda a evitar el uso compartido excesivo, se selecciona automáticamente cuando los usuarios seleccionan el botón **Compartir** en sus aplicaciones de Office. 
 
-Para obtener más información sobre cómo funciona esta configuración, vea [Cambie el tipo de vínculo predeterminado para un sitio](/sharepoint/change-default-sharing-link).
-
-Esta configuración de etiqueta adicional para el vínculo de uso compartido solo está disponible actualmente como un parámetro de PowerShell *AdvancedSettings* y el [Set-Label](/powershell/module/exchange/set-label) y [New-Label](/powershell/module/exchange/new-labelpolicy) cmdlets de [Security & PowerShell del Centro de cumplimiento](/powershell/exchange/scc-powershell):
-
-- **DefaultSharingScope**: los valores disponibles son:
-    - **SpecificPeople**: Establece el vínculo para compartir predeterminado para este sitio en el vínculo de “Usuarios específicos”
-    - **Organización**: Establece el vínculo para compartir predeterminado para este sitio en el vínculo organización o en el vínculo que se puede compartir de la empresa.
-    - **Anyone**: Establece el vínculo para compartir predeterminado de este sitio en Acceso anónimo o en un vínculo tipo Cualquiera.
-
-- **DefaultShareLinkPermission**: los valores disponibles son:
-    - **Ver**: establece el permiso de vínculo predeterminado para que el sitio "vea" los permisos
-    - **Editar**: establece el permiso de vínculo predeterminado para que el sitio "edite" los permisos
-
-Estos dos valores son el equivalente de los parámetros *DefaultSharingScope* y *DefaultShareLinkPermission* del cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite).
-
-Ejemplos de PowerShell, donde el GUID de la etiqueta de confidencialidad es **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
-
-- Para establecer el tipo de vínculo de uso compartido en SpecificPeople:
-    
-    ````powershell
-    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope="SpecificPeople"}
-    ````
-
-- Para establecer los permisos de vínculo de uso compartido en Editar:
-    
-    ````powershell
-    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
-    ````
-
-#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>Sugerencias de PowerShell para especificar la configuración avanzada
-
-Aunque puede especificar la etiqueta de confidencialidad por su nombre, se recomienda usar el GUID de etiqueta para evitar posibles confusiones sobre la especificación del nombre de la etiqueta o el nombre para mostrar. Para encontrar el GUID:
-
-````powershell
-Get-Label | Format-Table -Property DisplayName, Name, Guid
-````
-
-Para quitar cualquiera de estas opciones avanzadas de una directiva de etiqueta, use la misma sintaxis de parámetros AdvancedSettings pero especifique un valor de cadena nulo. Por ejemplo:
-
-````powershell
-Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope=""}
-````
+Para obtener más información e instrucciones, vea [Uso de las etiquetas de confidencialidad para configurar el tipo de vínculo de uso compartido predeterminado para sitios y documentos en SharePoint y OneDrive](sensitivity-labels-default-sharing-link.md).
 
 ## <a name="sensitivity-label-management"></a>Administración de etiquetas de confidencialidad
 
@@ -351,7 +311,7 @@ Esta serie de comandos le permite etiquetar varios sitios en el espacio empresar
 
 ## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>Ver y administrar etiquetas de confidencialidad en el centro de administración de SharePoint
 
-Para ver, ordenar y buscar las etiquetas de confidencialidad aplicadas, use la página **Sitios activos** en el nuevo Centro de administración de SharePoint. Puede que primero necesite agregar la columna **Confidencialidad**:
+Para ver, ordenar y buscar las etiquetas de confidencialidad aplicadas, use la página <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a> en el nuevo Centro de administración de SharePoint. Es posible que primero necesite agregar la columna **Confidencialidad:**
 
 ![La columna Confidencialidad en la página Sitios activos.](../media/manage-site-sensitivity-labels.png)
 
@@ -488,7 +448,7 @@ Todos estos eventos de auditoría se pueden encontrar en la categoría [Activida
 
 ## <a name="how-to-disable-sensitivity-labels-for-containers"></a>Cómo deshabilitar etiquetas de confidencialidad para contenedores
 
-Puede desactivar las etiquetas de confidencialidad para Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint siguiendo las mismas instrucciones que se indican en [Habilitar la compatibilidad con etiquetas de confidencialidad en PowerShell](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). Sin embargo, para deshabilitar la característica, en el paso 5, especifique `$setting["EnableMIPLabels"] = "False"`.
+Puede desactivar las etiquetas de confidencialidad para Microsoft Teams, Grupos de Microsoft 365 y sitios de SharePoint siguiendo las mismas instrucciones que se indican en [Habilitar compatibilidad con las etiquetas de confidencialidad en PowerShell](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). Sin embargo, para deshabilitar esta característica, especifique `$setting["EnableMIPLabels"] = "False"` en el Paso 5.
 
 Además de hacer que todas las opciones de configuración para grupos y sitios no estén disponibles cuando cree o edite etiquetas de confidencialidad, esta acción revierte la propiedad que usan los contenedores para su configuración. Al habilitar las etiquetas de confidencialidad para Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint se cambia la propiedad **Clasificación** (usada para la [clasificación de grupos de Azure AD](#classic-azure-ad-group-classification)) a **Confidencialidad**. Cuando deshabilita las etiquetas de confidencialidad para contenedores, estos ignoran la propiedad Confidencialidad y vuelven a usar la propiedad Clasificación.
 

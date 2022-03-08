@@ -2,8 +2,8 @@
 title: 'Puntuación de productividad de Microsoft: Microsoft 365 de aplicaciones'
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,20 +19,20 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles del estado Aplicaciones Microsoft 365: puntuación de productividad de experiencias tecnológicas.'
-ms.openlocfilehash: e1dbbd0f52ac0d06d5f5af677fb7acf3a4762a3c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 22bc1d503bc177722cb12d54c63adc3869755491
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176108"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321773"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Estado de Aplicaciones de Microsoft 365: experiencias tecnológicas
 
-La puntuación de productividad proporciona información sobre el recorrido de transformación digital de su organización a través del uso de Microsoft 365 y las experiencias tecnológicas que lo admiten. La puntuación de su organización refleja las mediciones de la experiencia de personas y tecnología y se puede comparar con los puntos de referencia de organizaciones similares al tuyo. La categoría de estado de aplicaciones forma parte de las medidas que se enmarcan en las experiencias tecnológicas. Para obtener más información, consulte la información general [sobre](productivity-score.md) la puntuación de productividad y lea la Declaración [de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+La puntuación de productividad proporciona información sobre el recorrido de transformación digital de su organización a través del uso de Microsoft 365 y las experiencias tecnológicas que lo admiten. La puntuación de su organización refleja las mediciones de la experiencia de personas y tecnología y se puede comparar con los puntos de referencia de organizaciones similares al tuyo. La categoría de estado de aplicaciones forma parte de las medidas que se enmarcan en las experiencias tecnológicas. Para obtener más información, consulte la información general sobre la puntuación [de](productivity-score.md) productividad y lea la Declaración [de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
 
-## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Por qué la puntuación de&#39;de Microsoft 365 de la organización es importante
+## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Por qué la puntuación de&#39;de Microsoft 365 de aplicaciones es importante
 
-La productividad de la organización depende del entorno de aplicaciones en buen estado. Los dispositivos que ejecutan la mayoría de las versiones actuales de Microsoft 365 aplicaciones en el canal recomendado son más seguros y ayudan a los usuarios de la organización a sacar el máximo partido de las características de Microsoft 365.
+La productividad de la organización depende del entorno de aplicaciones en buen estado. Los dispositivos que ejecutan la mayoría de las versiones actuales de Microsoft 365 aplicaciones en el canal recomendado son más seguros y ayudan a los usuarios de su organización a sacar el máximo partido de las características de Microsoft 365.
 
 ## <a name="how-we-calculate-the-microsoft-365-apps-health-score"></a>Cómo calculamos la puntuación de Microsoft 365 de mantenimiento de aplicaciones
 
@@ -67,7 +67,7 @@ La puntuación Microsoft 365 de estado de las aplicaciones de Microsoft 365 mide
 
 ## <a name="explore-your-organization-microsoft-365-app-channels-and-versions"></a>Explorar la organización Microsoft 365 canales y versiones de aplicaciones
 
-También proporcionamos información de soporte técnico que le ayuda a obtener visibilidad adicional sobre los canales y versiones que los dispositivos de su organización están ejecutando actualmente. Estas métricas adicionales no contribuyen a tu puntuación de productividad, pero pueden ayudarte a crear un plan de acción para aumentar la puntuación de estado de las aplicaciones de Microsoft 365 al asegurarte de que los dispositivos ejecuten aplicaciones Microsoft 365 en los canales recomendados.
+También proporcionamos información de soporte técnico que le ayuda a obtener visibilidad adicional sobre los canales y versiones que los dispositivos de su organización están ejecutando actualmente. Estas métricas adicionales no contribuyen a tu puntuación de productividad, pero pueden ayudarte a crear un plan de acción para aumentar la puntuación de estado de las aplicaciones de Microsoft 365 al asegurarte de que los dispositivos ejecuten aplicaciones Microsoft 365 en canales recomendados.
 
 ### <a name="devices-on-current-channel-and-running-supported-versions"></a>Dispositivos en el canal actual y versiones compatibles en ejecución
 
@@ -78,7 +78,7 @@ También proporcionamos información de soporte técnico que le ayuda a obtener 
 1. **Visualización:**  El desglose de la visualización representa hasta qué punto el porcentaje de dispositivos en las versiones más recientes y admitidas de Microsoft 365 aplicaciones en diferentes canales), de la siguiente manera:
     - **Versiones compatibles:** La barra azul representa el porcentaje de dispositivos que se ejecutan en la versión compatible de Microsoft 365 aplicaciones.
     - **Últimas versiones:** La barra de color teal representa el porcentaje de dispositivos en las versiones más recientes.
-1. **Obtenga más información:**   Seleccione este vínculo para ver el contenido de la ayuda.
+1. **Aprende más:**   Seleccione este vínculo para ver el contenido de la ayuda.
 
 ### <a name="devices-running-latest-and-supported-versions"></a>Dispositivos que ejecutan versiones más recientes y compatibles
 
@@ -93,7 +93,7 @@ También proporcionamos información de soporte técnico que le ayuda a obtener 
     - **Versiones más recientes:** La parte teal (coloreada) de la barra y la fracción (numerador/denominador) de la barra representa el porcentaje de dispositivos que ejecutan versiones recientes de Microsoft 365 aplicaciones.
         - Numerador: el número de dispositivos en versiones recientes de Microsoft 365 aplicaciones en los últimos 28 días
         - Denominador: el número de dispositivos que usan Microsoft 365 aplicaciones en los últimos 28 días
-1. **Obtenga más información:**   Seleccione este vínculo para ver el contenido de la ayuda.
+1. **Aprende más:**   Seleccione este vínculo para ver el contenido de la ayuda.
 
 #### <a name="trend-visualization-of-the-devices"></a>Visualización de tendencias de los dispositivos
 
@@ -107,7 +107,7 @@ Esta sección te ayuda a actuar en las métricas en las que quieres centrarte pr
 
 Las siguientes columnas se presentan en la tabla en el nivel de canal/versión:
 
-- **Canal:** canal Microsoft 365 aplicaciones actuales en los dispositivos.
+- **Canal**: canal Microsoft 365 aplicaciones actuales en los dispositivos.
 - **Estado:**   Microsoft 365 aplicaciones admiten el estado de los dispositivos en función del canal y la versión actuales.
 - **Versiones:**   Versiones Microsoft 365 aplicaciones actuales en los dispositivos.
 - **# de dispositivos:**  Número de dispositivos.

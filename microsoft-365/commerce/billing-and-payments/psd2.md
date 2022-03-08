@@ -2,8 +2,8 @@
 title: Directiva 2 de servicios de pago y autenticación segura de clientes para clientes comerciales
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jamitche, jmueller
 audience: Admin
@@ -14,24 +14,23 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- AdminSurgePortfolio
 - commerce_billing
+- AdminSurgePortfolio
 search.appverid: MET150
-description: A partir del 14 de septiembre de 2019, los bancos de los 31 países del Espacio Económico Europeo deben comprobar la identidad de la persona que realiza una compra en línea antes de poder procesar el pago".
-keywords: directiva 2 de servicios de pago, autenticación segura de clientes, autenticación multifactor
+description: A partir del 14 de septiembre de 2019, los bancos de los 31 países del Espacio Económico Europeo deben comprobar la identidad de la persona que realiza una compra en línea antes de poder procesar el pago.
 ms.date: 11/03/2020
-ms.openlocfilehash: 7b2fdec6a921979dc5f314c5441b42eac84f6f1d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 72b0ab8c118d0fa94e3ced5fe2748a11247335ca
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60167743"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63321115"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Directiva 2 de servicios de pago y autenticación segura de clientes para clientes comerciales
 
 A partir del 14 de septiembre de 2019, los bancos de los 31 países del Espacio Económico Europeo deben comprobar la identidad de la persona que realiza una compra en línea antes de poder procesar el pago. Esta comprobación requiere autenticación multifactor para garantizar que sus compras en línea estén seguras y protegidas. La fecha de este requisito de verificación se retrasará para algunos países.
 
-Para obtener más información, vea Preguntas más frecuentes de [Microsoft sobre la Directiva 2](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication)de servicios de pago y Autenticación segura del cliente .
+Para obtener más información, consulta [Preguntas más frecuentes de Microsoft sobre la Directiva 2 de servicios de pago y Autenticación segura de clientes](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication).
 
 ## <a name="when-is-multi-factor-authentication-required"></a>¿Cuándo se requiere la autenticación multifactor?
 
