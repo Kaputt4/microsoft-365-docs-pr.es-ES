@@ -15,14 +15,15 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 recommendations: false
 description: Obtenga información acerca de cómo crear un equipo con una etiqueta de confidencialidad exclusiva para la seguridad.
-ms.openlocfilehash: 293ac9a1a28757dacba39d30e619ac41be786e04
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 2ca2e6320ddd119c4dcb20db2f816c9e9a4453ae
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785887"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324401"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configuración de un equipo con aislamiento de seguridad
 
@@ -160,11 +161,11 @@ Para publicar una etiqueta de confidencialidad:
 Una vez que se haya publicado la etiqueta, debe aplicarla al equipo para que se apliquen las configuraciones de uso compartido de invitados y dispositivos administrados. Esta acción se lleva a cabo en el Centro de administración de SharePoint. Tenga en cuenta que la etiqueta puede tardar algún tiempo en estar disponible una vez que se ha publicado.
 
 Para aplicar la etiqueta de confidencialidad
-1. Abra el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint).
-2. En **Sitios**, haga clic en **Sitios activos**.
-3. Haga clic en el sitio que está asociado al equipo.
-4. En **Uso compartido externo** de la pestaña **Confidencialidad**, haga clic en **Editar**.
-5. Seleccione la etiqueta que ha creado y haga clic en **Guardar**.
+
+1. Abra el Centro de administración de SharePoint en **Sitios** y seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a>.
+1. Haga clic en el sitio que está asociado al equipo.
+1. En la pestaña **Directivas**, en **Confidencialidad**, seleccione **Editar**.
+1. Seleccione la etiqueta que ha creado y, a continuación, seleccione **Guardar**.
 
 ## <a name="sharepoint-settings"></a>Configuración de SharePoint
 
@@ -186,13 +187,13 @@ La configuración de uso compartido de invitado que eligió al crear la etiqueta
 También actualizará el tipo de vínculo para compartir predeterminado con el fin de reducir el riesgo de compartir por error archivos y carpetas a un público más amplio del previsto.
 
 Para actualizar la configuración del sitio
-1. Abra el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint).
-2. En **Sitios**, haga clic en **Sitios activos**.
-3. Haga clic en el sitio que está asociado al equipo.
-4. En **Uso compartido externo** de la pestaña **Directivas**, haga clic en **Editar**.
-5. Si permitió el uso compartido de invitado al crear la etiqueta confidencial, asegúrese de que **Invitados nuevos y existentes** está seleccionado. Si no ha permitió el uso compartido cuando creó la etiqueta, elija **Solo las personas de la organización**.
-6. En Tipo de vínculo de uso compartido predeterminado, desactive la casilla de verificación **Igual que la configuración de nivel de organización** y seleccione **Usuarios con acceso existente**.
-7. Haga clic en **Guardar**.
+
+1. Abra el Centro de administración de SharePoint y, en **Sitios**, seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a>
+1. Haga clic en el sitio que está asociado al equipo.
+1. En la pestaña **Directivas**, en **Uso compartido externo**, seleccione **Editar**.
+1. Si permitió el uso compartido de invitado al crear la etiqueta confidencial, asegúrese de que **Invitados nuevos y existentes** está seleccionado. Si no ha permitió el uso compartido cuando creó la etiqueta, elija **Solo las personas de la organización**.
+1. En Tipo de vínculo de uso compartido predeterminado, desactive la casilla de verificación **Igual que la configuración de nivel de organización** y seleccione **Usuarios con acceso existente**.
+1. Seleccione **Guardar**.
 
 #### <a name="private-channels"></a>Canales privados
 

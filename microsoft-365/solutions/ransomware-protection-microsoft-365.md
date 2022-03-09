@@ -1,9 +1,9 @@
 ---
 title: Implementar la protección contra ransomware para el inquilino de Microsoft 365
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
 description: Paso a paso para proteger los recursos de Microsoft 365 frente a ataques de ransomware.
-ms.openlocfilehash: 634888ac603be17265733c4443a69495015296d7
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: c356a0e3fac83c77a7e1eb1eda6e169405f43863
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886041"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324415"
 ---
 # <a name="deploy-ransomware-protection-for-your-microsoft-365-tenant"></a>Implementar la protección contra ransomware para el inquilino de Microsoft 365
 
@@ -145,7 +145,7 @@ Esta solución usa los principios de [Confianza cero](/security/zero-trust/):
 - **Usar acceso con privilegios mínimos:** limite el acceso del usuario con acceso suficiente y justo a tiempo (JIT/JEA), directivas adaptables basadas en los riesgos y protección de datos.
 - **Asumir la vulneración:** minimice el radio de explosión y el acceso a los segmentos. Compruebe el cifrado de un extremo a otro y use análisis para obtener visibilidad, impulsar la detección de amenazas y mejorar las defensas.
 
-A diferencia del acceso convencional a la intranet, que confía en todo lo que hay detrás del firewall de una organización, Confianza cero trata cada inicio de sesión y acceso como si se originase en una red no controlada, ya sea detrás del firewall de la organización o en Internet. Confianza cero requiere protección para la red, la infraestructura, las identidades, los puntos de conexión, las aplicaciones y los datos.
+A diferencia del acceso convencional a la intranet, que confía en todo lo que hay detrás del firewall de una organización, Confianza cero trata cada inicio de sesión y acceso como si se originase desde una red no controlada, ya sea detrás del firewall de la organización o en Internet. Confianza cero requiere protección para la red, la infraestructura, las identidades, los puntos de conexión, las aplicaciones y los datos.
 
 ## <a name="microsoft-365-capabilities-and-features"></a>Funcionalidades y características de Microsoft 365
 

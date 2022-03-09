@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 02/07/2022
-ms.openlocfilehash: a0bca99258bd256797437cdc4756910fc713cf26
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.date: 03/09/2022
+ms.openlocfilehash: 9f323d902f0e421ea73303706e0785f9bd76f3ff
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401192"
+ms.locfileid: "63406069"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage Control de acceso
 
@@ -35,8 +35,6 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 
 - auditar, permitir o impedir el acceso de lectura, escritura o ejecución al almacenamiento extraíble con o sin exclusión
 
-<br/><br/>
-
 |Privilegio|Permiso|
 |---|---|
 |Acceso|Lectura, Escritura, Ejecución|
@@ -45,8 +43,6 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 |Compatibilidad con GPO|Sí|
 |Soporte técnico basado en usuarios|Sí|
 |Compatibilidad basada en máquina|Sí|
-
-<br/><br/>
 
 |Funcionalidad|Descripción|Implementar a través de Intune|Implementar a través de la directiva de grupo|
 |---|---|---|---|
@@ -68,6 +64,8 @@ Implemente el control Storage de acceso extraíble en Windows 10 y Windows 11 di
 
 - **4.18.2111** o posterior: Agregar "Habilitar o deshabilitar el control de acceso Storage extraíble", "Aplicación predeterminada", tiempo de actualización de directivas de máquina cliente a través de PowerShell, información de archivos
 
+- **4.18.2201 o posterior**: admite una copia del archivo escrito en el almacenamiento permitido a través de OMA-URI
+
 :::image type="content" source="images/powershell.png" alt-text="La interfaz de PowerShell.":::
 
 > [!NOTE]
@@ -82,17 +80,13 @@ Puede usar las siguientes propiedades para crear un grupo de almacenamiento extr
 
 ### <a name="removable-storage-group"></a>Grupo Storage extraíble
 
-<br/><br/>
-
 |Nombre de propiedad|Descripción|Opciones|
 |---|---|---|
 |**GroupId**|GUID, un identificador único, representa el grupo y se usará en la directiva.||
-|**DescriptorIdList**|Enumera las propiedades del dispositivo que quieres usar para cubrir en el grupo. Para cada propiedad de dispositivo, consulta [Propiedades del dispositivo](device-control-removable-storage-protection.md) para obtener más detalles. Todas las propiedades distinguen mayúsculas de minúsculas. |**PrimaryId**: `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`<p>**BusId**: Por ejemplo, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**: InstancePathId es una cadena que identifica de forma única el dispositivo en el sistema, por ejemplo, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. El número al final (por ejemplo, &0) representa la ranura disponible y puede cambiar de un dispositivo a otro. Para obtener los mejores resultados, use un comodín al final. Por ejemplo, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>0751_55E0: coincide con este par VID/PID exacto<p>55E0: hacer coincidir cualquier medio con PID=55E0 <p>0751: hacer coincidir cualquier medio con VID=0751|
+|**DescriptorIdList**|Enumera las propiedades del dispositivo que quieres usar para cubrir en el grupo. Para cada propiedad de dispositivo, consulta [Propiedades del dispositivo](device-control-removable-storage-protection.md) para obtener más detalles. Todas las propiedades distinguen mayúsculas de minúsculas. |**PrimaryId**: `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`<p>**BusId**: Por ejemplo, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**: InstancePathId es una cadena que identifica de forma única el dispositivo en el sistema, por ejemplo, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. El número al final (por ejemplo, &0) representa la ranura disponible y puede cambiar de un dispositivo a otro. Para obtener los mejores resultados, use un comodín al final. Por ejemplo, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>`0751_55E0`: coincide con este par VID/PID exacto<p>`_55E0`: coincide con cualquier medio con PID=55E0 <p>`0751_`: coincide con cualquier medio con VID=0751|
 |**MatchType**|Cuando se usan varias propiedades de dispositivo en `DescriptorIDList`, MatchType define la relación.|**MatchAll**: cualquier `DescriptorIdList` atributo de la relación **será And** ; por ejemplo, `DeviceID` `InstancePathID`si el administrador pone y , por cada USB conectado, el sistema comprobará si el USB cumple ambos valores. <p> **MatchAny**: los atributos de descriptorIdList serán **o** relación; por ejemplo, si el administrador pone `DeviceID` `InstancePathID`y, por cada USB conectado, el sistema hará la aplicación siempre que el USB tenga un valor **DeviceID** o **InstanceID** idéntico. |
 
 ### <a name="access-control-policy"></a>Directiva de control de acceso
-
-<br/><br/>
 
 | Nombre de propiedad | Descripción | Opciones |
 |---|---|---|
@@ -164,7 +158,7 @@ Antes de empezar con Removable Storage Access Control, debes confirmar tu [Micro
 
     Si desea restringir un usuario específico, use la propiedad SID en entry. Si no hay ningún SID en la directiva Entry, la entrada se aplicará a todas las instancias de inicio de sesión del equipo.
     
-    Si desea supervisar la información de archivos para el acceso de escritura, use accessmask correcto con la opción correcta (8 o 16); Este es el ejemplo de [capturar información de archivo](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml).
+    Si desea supervisar la información de archivos para el acceso de escritura, use accessmask correcto con la opción correcta (16); Este es el ejemplo de [capturar información de archivo](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml).
 
     En la siguiente imagen se muestra el uso de la propiedad SID y un ejemplo de Escenario 1: Impedir el acceso de escritura y ejecución a todos los [USB aprobados, pero permitir determinados USB aprobados](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
@@ -181,6 +175,7 @@ Antes de empezar con Removable Storage Access Control, debes confirmar tu [Micro
 4. Aplicación predeterminada: le permite establecer el acceso predeterminado (Denegar o Permitir) en medios extraíbles si no hay ninguna directiva. Por ejemplo, solo tienes una directiva (denegar o permitir) para RemovableMediaDevices, pero no tienes ninguna directiva para CdRomDevices o WpdDevices, y estableces denegar de forma predeterminada a través de esta directiva, se bloqueará el acceso de lectura y escritura/ejecución a CdRomDevices o WpdDevices.
 
    - Una vez que implemente esta configuración, verá **Default Allow** o **Default Deny**.
+   - Tenga en cuenta tanto el nivel de disco como el nivel del sistema de archivos AccessMask al configurar esta configuración, por ejemplo, si desea denegar de forma predeterminada pero permitir un almacenamiento específico, debe permitir el acceso a nivel de disco y a nivel del sistema de archivos, debe establecer AccessMask en 63.
 
     :::image type="content" source="images/148609579-a7df650b-7792-4085-b552-500b28a35885.png" alt-text="Código predeterminado de PowerShell Permitir o Denegar predeterminado":::
 
@@ -188,13 +183,13 @@ Antes de empezar con Removable Storage Access Control, debes confirmar tu [Micro
 
     :::image type="content" source="images/148608318-5cda043d-b996-4146-9642-14fccabcb017.png" alt-text="Configuración del control de dispositivos":::
 
-   - Una vez que implemente esta configuración, verá "Habilitado" o "Deshabilitado": deshabilitado significa que esta máquina no tiene removible Storage directiva de control de acceso.
+   - Una vez que implemente esta configuración, verá **Habilitado** o **Deshabilitado**. Deshabilitado significa que esta máquina no tiene removible Storage de control de acceso en ejecución.
 
     :::image type="content" source="images/148609685-4c05f002-5cbe-4aab-9245-83e730c5449e.png" alt-text="Control de dispositivo habilitado o deshabilitado en código de PowerShell":::
 
 6. Establezca la ubicación de una copia del archivo: si desea tener una copia del archivo cuando se produce el acceso de escritura, debe establecer la ubicación donde el sistema puede guardar la copia.
     
-    Debe implementar esto junto con las opciones AccessMask y Option correctas: vea el paso 2 anterior.
+    Implemente esto junto con las opciones AccessMask y Option correctas: vea el paso 2 anterior.
 
     :::image type="content" source="../../media/define-device-control-policy-rules.png" alt-text="Directiva de grupo: establecer la ubicación para la evidencia del archivo":::
 
@@ -246,7 +241,7 @@ Microsoft Endpoint Manager centro  de administración (<https://endpoint.microso
 
     - Tipo de datos: String (archivo XML)
        
-    Si desea supervisar la información de archivos para el acceso de escritura, use accessmask correcto con la opción correcta (8 o 16); Este es el ejemplo de [capturar información de archivo](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml).
+    Si desea supervisar la información de archivos para el acceso de escritura, use accessmask correcto con la opción correcta (16); Este es el ejemplo de [capturar información de archivo](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml).
 
 3. Aplicación predeterminada: le permite establecer el acceso predeterminado (Denegar o Permitir) en medios extraíbles si no hay ninguna directiva. Por ejemplo, solo tienes una directiva (denegar o permitir) para RemovableMediaDevices, pero no tienes ninguna directiva para CdRomDevices o WpdDevices, y estableces denegar de forma predeterminada a través de esta directiva, se bloqueará el acceso de lectura y escritura/ejecución a CdRomDevices o WpdDevices.
 
@@ -258,6 +253,7 @@ Microsoft Endpoint Manager centro  de administración (<https://endpoint.microso
       `DefaultEnforcementDeny = 2`
 
     - Una vez que implemente esta configuración, verá **Default Allow** o **Default Deny**
+    - Tenga en cuenta tanto el nivel de disco como el nivel del sistema de archivos AccessMask al configurar esta configuración, por ejemplo, si desea denegar de forma predeterminada pero permitir un almacenamiento específico, debe permitir el acceso a nivel de disco y a nivel del sistema Fiel, debe establecer AccessMask en 63.
 
     :::image type="content" source="images/148609590-c67cfab8-8e2c-49f8-be2b-96444e9dfc2c.png" alt-text="Código de PowerShell de la aplicación predeterminada":::
 
@@ -276,7 +272,7 @@ Microsoft Endpoint Manager centro  de administración (<https://endpoint.microso
 
 5. Establezca la ubicación de una copia del archivo: si desea tener una copia del archivo cuando se produce el acceso de escritura, debe establecer la ubicación donde el sistema puede guardar la copia.
     
-    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
+    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation;**username**;**password**`
 
     - Tipo de datos: String
     

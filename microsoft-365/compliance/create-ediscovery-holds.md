@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede crear una retención asociada a un caso de exhibición de documentos electrónicos principal en Microsoft 365 conservar el contenido relevante para una investigación o un caso legal.
-ms.openlocfilehash: 0d80197becdeb07c917602ff27a1ad9b2c882029
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 976c0e47195c520620cfa57e996cee42df509593
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322119"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63406041"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
@@ -81,6 +81,9 @@ Para crear una retención de exhibición de documentos electrónicos asociada a 
 10. Después de configurar una retención basada en consultas, haga clic en **Siguiente**.
 
 11. Revise la configuración (y edite si es necesario) y, a continuación, haga clic en **Enviar**.
+
+> [!NOTE]
+> Al crear una retención basada en consultas, todo el contenido de las ubicaciones seleccionadas se coloca inicialmente en espera. Posteriormente, cualquier contenido que no coincida con la consulta especificada se borra de la retención cada siete a 14 días. Sin embargo, una retención basada en consultas no borrará el contenido si se aplican más de cinco retenciones de cualquier tipo a una ubicación de contenido o si algún elemento tiene problemas de indización.
 
 ## <a name="query-based-holds-placed-on-sites"></a>Retenciones basadas en consultas colocadas en sitios
 

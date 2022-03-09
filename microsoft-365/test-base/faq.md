@@ -2,8 +2,8 @@
 title: Preguntas más frecuentes sobre la base de pruebas
 description: Revisar las preguntas más frecuentes
 search.appverid: MET150
-author: mansipatel-usl
-ms.author: mapatel
+author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 668631563b35a848df5bfbdfd930be17efce8c04
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e21774ada245a3b9d5c131998b7c60b4a4778210
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203668"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63406013"
 ---
 # <a name="test-base-faq"></a>Preguntas más frecuentes sobre la base de pruebas
 
@@ -29,7 +29,7 @@ ms.locfileid: "60203668"
 
 Para enviar el paquete de la aplicación, vaya a [Azure Portal](https://www.aka.ms/testbaseportal "Página principal de base de prueba") y cargue una carpeta comprimida que contenga los archivos binarios, las dependencias y los scripts de prueba de la aplicación a través del panel del portal de prueba base de autoservicio. 
 
-Consulte la guía del usuario de incorporación para obtener más información o póngase en contacto con nuestro equipo en para obtener <testbasepreview@microsoft.com> ayuda y más información.
+Consulta la guía del usuario de incorporación para obtener más información o ponte en contacto con nuestro equipo en <testbasepreview@microsoft.com> para obtener ayuda y más información.
 
 **P: ¿Qué son las pruebas de salida (OOB)**
 
@@ -51,9 +51,9 @@ Las pruebas de lista para usar (OOB) le proporcionan telemetría estandarizada e
 
 **A:** Sí, Test Base admite pruebas funcionales. Las pruebas funcionales son pruebas que permiten a nuestros clientes ejecutar sus scripts para ejecutar funciones personalizadas en su aplicación. 
 
-Para enviar el paquete de la aplicación para pruebas funcionales, basta con cargar la carpeta comprimida que contiene los archivos binarios, dependencias y scripts de prueba de la aplicación a través de nuestro panel del portal de autoservicio. 
+Para enviar el paquete de la aplicación para pruebas funcionales, cargue la carpeta comprimida que contiene los archivos binarios, dependencias y scripts de prueba de la aplicación a través de nuestro panel del portal de autoservicio. 
 
-Consulte la guía del usuario de incorporación para obtener más información o póngase en contacto con nuestro equipo en para obtener <testbasepreview@microsoft.com> ayuda y más información.
+Consulta la guía del usuario de incorporación para obtener más información o ponte en contacto con nuestro equipo en <testbasepreview@microsoft.com> para obtener ayuda y más información.
 
 **P: ¿Cómo controla Test Base nuestros datos de prueba?**
 
@@ -71,7 +71,7 @@ También tendrá que proporcionar (cargar) los archivos binarios dependientes de
 
 **P: ¿Cuánto tiempo proporciona Test Base los resultados de las pruebas?**
 
-**A:** Para cada prueba que ejecutemos en las compilaciones de versión previa, proporcionaremos resultados en un plazo de 48 horas en el panel [de Azure Portal.](https://www.aka.ms/testbaseportal "Página principal de base de prueba")
+**A:** Para cada prueba que ejecutemos en las compilaciones de versión previa, proporcionaremos resultados en un plazo de 48 horas en el panel [de Azure Portal](https://www.aka.ms/testbaseportal "Página principal de base de prueba") .
 
 **P: ¿Puede reiniciar después de la instalación?**
 
@@ -91,7 +91,7 @@ Aunque para las pruebas funcionales, puede especificar si se requiere un reinici
 
 **P: ¿Cuál es la diferencia entre las pruebas de actualización de seguridad y las pruebas de actualización de características?**
 
-**A:** Para las pruebas de **<ins></ins>** actualización de seguridad, se prueban las actualizaciones de seguridad mensuales previas a la publicación en Windows que se centran en mantener a nuestros usuarios siempre seguros y protegidos. Para las pruebas de actualización **<ins></ins>** de características, se prueba con las actualizaciones de características binacionales previas a la versión, que introducen nuevas características y capacidades en Windows.
+**A:** Para las pruebas de actualización de seguridad, **<ins></ins>** se prueban las actualizaciones de seguridad mensuales previas a la publicación en Windows, que se centra en mantener a nuestros usuarios siempre seguros y protegidos. Para las pruebas de actualización de características, se **<ins></ins>** prueban con las actualizaciones de características binacionales previas a la versión, que introducen nuevas características y capacidades en Windows.
 
 ## <a name="debugging-options"></a>Opciones de depuración
 
@@ -133,10 +133,10 @@ Además de las pruebas de actualizaciones de seguridad previas a la versión, se
 
 **P: ¿Hay un costo asociado con el servicio?**
 
-**A:** El servicio Base de prueba será gratuito para los usuarios hasta la Disponibilidad general (GA). En ese momento, anunciaremos una estructura de costos que estará en vigor para todos los clientes. 
+**A:** A partir del 1 de marzo de 2022, se le proporcionarán 100 horas gratuitas (con un valor de 800 USD) que expirarán en 6 meses según su suscripción para sus necesidades de validación. Después de que las horas libres se consuman (o expiraron antes de usarse), se te medirá automáticamente a 8 USD por hora en función de tu uso.   
 
 **P: ¿Cómo puedo proporcionar comentarios sobre Test Base?**
 
 **A:** Para compartir sus comentarios sobre Test Base, seleccione el icono **Comentarios** en la parte inferior izquierda del portal. Incluye una captura de pantalla con el envío para ayudar a Microsoft a comprender mejor tus comentarios. 
 
-También puede enviar sugerencias de productos y enviar otras ideas en <testbasepreview@microsoft.com> .
+También puede enviar sugerencias de productos y enviar otras ideas en <testbasepreview@microsoft.com>.

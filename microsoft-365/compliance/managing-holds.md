@@ -21,12 +21,12 @@ description: Obtenga información sobre cómo colocar retenciones en los custodi
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkMAC
-ms.openlocfilehash: 2c19b608f01f30df83e914bbe34d29aa85bd5af3
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+ms.openlocfilehash: d731c0cda31f96f5274ca0c2fd56d5e14901f3a9
+ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148640"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63406163"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Administrar retenciones en Advanced eDiscovery
 
@@ -42,9 +42,9 @@ Para ver la directiva de retención de custodia:
 
 2. Vaya a la **pestaña Orígenes** para agregar custodios dentro de su caso. Para obtener información sobre cómo agregar y poner a los custodios en espera en un caso Advanced eDiscovery, vea [Agregar custodios a un caso](add-custodians-to-case.md). Si ya ha agregado custodios y los ha puesto en espera, vaya al paso 3.
 
-3. Vaya a la **pestaña Retenciones** y haga clic **en \<HoldId> CustodianHold**.
+3. Vaya a la **pestaña Retenciones** y haga clic **en CustodianHold\<HoldId>**.
 
-4. En la página desplegable, puede ver las estadísticas de retención de la directiva. También puede realizar acciones como aplicar una consulta a la retención basada en custodia. Para obtener más información acerca de la creación de una consulta de retención y el uso de condiciones, vea Consultas de palabras clave y condiciones [de búsqueda para búsqueda de contenido](keyword-queries-and-search-conditions.md).
+4. En la página desplegable, puede ver las estadísticas de retención de la directiva. También puede realizar acciones como aplicar una consulta a la retención basada en custodia. Para obtener más información acerca de cómo crear una consulta de retención y usar condiciones, vea Consultas de palabras clave y condiciones [de búsqueda para búsqueda de contenido](keyword-queries-and-search-conditions.md).
 
 ## <a name="manage-non-custodial-holds"></a>Administrar retenciones sin custodia
 
@@ -60,9 +60,9 @@ Para crear una retención sin custodia para un Advanced eDiscovery caso:
   
 2. Haga **clic en** Abrir junto al caso en el que desea crear las retenciones.
   
-3. En la página principal del caso, haga clic en la **pestaña Retenciones.**
+3. En la página principal del caso, haga clic en la **pestaña Retenciones** .
   
-4. En la **pestaña Retenciones,** haga clic **en Crear**.
+4. En la **pestaña Retenciones** , haga clic en **Crear**.
   
 5. En la **página Nombre de la** retención, asigne un nombre a la retención. El nombre de la suspensión debe ser exclusivo en la organización.
 
@@ -72,23 +72,23 @@ Para crear una retención sin custodia para un Advanced eDiscovery caso:
   
 8. Elija las ubicaciones de contenido que desea poner en espera. Puede retener buzones, sitios y carpetas públicas.
 
-   1. **Exchange correo** electrónico: haga clic en Elegir **usuarios,** grupos o equipos y, a continuación, haga clic en Elegir **usuarios, grupos** o equipos de nuevo para especificar los buzones que se colocarán en espera. Use el cuadro de búsqueda para encontrar buzones de usuario y grupos de distribución (para colocar una suspensión en los buzones de miembros de grupo) para suspenderlos. También puede colocar una retención en el buzón asociado para un grupo de Microsoft 365 o un equipo de Microsoft. Active la casilla usuario, grupo, equipo, haga clic **en Elegir** y, a continuación, haga clic **en Listo**.
+   1. **Exchange** correo electrónico: haga clic en Elegir usuarios, grupos o equipos y, a continuación **,** vuelva a hacer clic en Elegir usuarios **,** grupos o equipos para especificar los buzones que se colocarán en espera. Use el cuadro de búsqueda para encontrar buzones de usuario y grupos de distribución (para colocar una suspensión en los buzones de miembros de grupo) para suspenderlos. También puede colocar una retención en el buzón asociado para un grupo de Microsoft 365 o un equipo de Microsoft. Active la casilla usuario, grupo, equipo, haga clic **en Elegir** y, a continuación, haga clic **en Listo**.
 
       > [!NOTE]
       > Al hacer clic **en Elegir usuarios,** grupos o equipos para especificar los buzones que se colocarán en espera, el selector de buzones que se muestra está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda.
 
-   1. **SharePoint:** haga **clic** en Elegir sitios  y, a continuación, en Elegir sitios de nuevo para especificar SharePoint y OneDrive para la Empresa sitios que se colocarán en espera. Escriba la dirección URL de cada sitio que quiere colocar en suspensión. También puede agregar la dirección URL del sitio SharePoint para un grupo Microsoft 365 o un equipo de Microsoft. Haga **clic en** Elegir y, a continuación, en **Listo.**
+   1. **SharePoint:** **haga clic en** Elegir sitios y, a continuación, haga clic en Elegir sitios de nuevo para especificar SharePoint y OneDrive para la Empresa sitios que se colocarán en espera. Escriba la dirección URL de cada sitio que quiere colocar en suspensión. También puede agregar la dirección URL del sitio SharePoint para un grupo de Microsoft 365 o un equipo de Microsoft. Haga **clic en** Elegir y, a continuación, en **Listo**.
 
       > [!NOTE]
-      > La dirección URL de la cuenta OneDrive usuario incluye su nombre principal de usuario (UPN) (por ejemplo, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). En el caso poco frecuente de que se cambie el UPN de una persona, su dirección URL OneDrive también cambiará para incorporar el nuevo UPN. Si la cuenta OneDrive de un usuario forma parte de una retención sin custodia y se cambia su UPN, debe actualizar la retención y apuntar a la nueva dirección URL OneDrive administrador. Para más información, consulte [Cómo afectan los cambios de UPN a la dirección URL de OneDrive](/onedrive/upn-changes).
+      > La dirección URL de la cuenta OneDrive usuario incluye su nombre principal de usuario (UPN) (por ejemplo, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`). En el caso poco frecuente de que se cambie el UPN de una persona, su dirección URL OneDrive también cambiará para incorporar el nuevo UPN. Si la cuenta de OneDrive de un usuario forma parte de una retención sin custodia y se cambia su UPN, debe actualizar la retención y apuntar a la nueva dirección URL OneDrive usuario. Para más información, consulte [Cómo afectan los cambios de UPN a la dirección URL de OneDrive](/onedrive/upn-changes).
 
-   1. **Exchange carpetas públicas:** mueva el modificador de alternancia a la posición Todos para poner todas las carpetas públicas de su Exchange Online organización en espera. No puede elegir carpetas públicas específicas para poner en suspensión. Deje el modificador de alternancia establecido en **Ninguno** si no desea poner una retención en carpetas públicas.
+   1. **Exchange carpetas públicas**: mueva el modificador de alternancia a la posición Todos para poner en espera todas las carpetas públicas de Exchange Online organización. No puede elegir carpetas públicas específicas para poner en suspensión. Deje el modificador de alternancia establecido en **Ninguno** si no desea poner una retención en carpetas públicas.
 
 9. Cuando haya terminado de agregar ubicaciones de contenido a la retención, haga clic en **Siguiente**.
   
 10. Para crear una retención basada en consultas con condiciones, complete lo siguiente. De lo contrario, simplemente haga clic **en Siguiente**.
 
-    - En el cuadro de **palabras** clave , escriba una consulta de búsqueda en el cuadro para que solo se mantenga en espera el contenido que cumpla los criterios de búsqueda. Puede especificar palabras clave, propiedades de mensaje o propiedades de documento, como nombres de archivo. También puede usar consultas más complejas que usen un operador booleano, como AND, OR o NOT. Si deja el cuadro de palabra clave vacío, todo el contenido ubicado en las ubicaciones de contenido especificadas se colocará en espera.
+    - En el cuadro de **palabras** clave, escriba una consulta de búsqueda en el cuadro para que solo se mantenga en espera el contenido que cumpla los criterios de búsqueda. Puede especificar palabras clave, propiedades de mensaje o propiedades de documento, como nombres de archivo. También puede usar consultas más complejas que usen un operador booleano, como AND, OR o NOT. Si deja el cuadro de palabra clave vacío, todo el contenido ubicado en las ubicaciones de contenido especificadas se colocará en espera.
 
     - Haga  **clic en** Agregar condiciones para agregar una o más condiciones para restringir la consulta de búsqueda para la retención. Cada condición agrega una cláusula a la consulta de búsqueda KQL que se crea y se ejecuta al crear la retención. Por ejemplo, puede especificar un intervalo de fechas para que los documentos de correo electrónico o de sitio que se crearon dentro del intervalo de fechas se coloquen en espera. Una condición se conecta lógicamente a la consulta de palabra clave (especificada en el cuadro de palabra clave) mediante el operador AND. Esto significa que los elementos deben satisfacer tanto la consulta de palabras clave como la condición que se va a colocar en espera.
 
@@ -96,7 +96,10 @@ Para crear una retención sin custodia para un Advanced eDiscovery caso:
 
 11. Después de configurar una retención basada en consultas, haga clic en **Siguiente**.
 
-12. Revise la configuración y, a continuación, **haga clic en Crear esta retención.**
+12. Revise la configuración y, a continuación, haga clic **en Crear esta retención**.
+
+> [!NOTE]
+> Al crear una retención basada en consultas, todo el contenido de las ubicaciones seleccionadas se coloca inicialmente en espera. Posteriormente, cualquier contenido que no coincida con la consulta especificada se borra de la retención cada siete a 14 días. Sin embargo, una retención basada en consultas no borrará el contenido si se aplican más de cinco retenciones de cualquier tipo a una ubicación de contenido o si algún elemento tiene problemas de indización.
 
 > [!NOTE]
 > Si la dirección SMTP del usuario cambia después de poner el buzón del usuario en espera, el buzón permanecerá en espera. Para usar la nueva dirección SMTP para colocar la retención, cree una nueva retención.
@@ -109,7 +112,7 @@ Tenga en cuenta lo siguiente sobre las estadísticas de retención:
 
 - El número total de elementos en espera indica el número de elementos de todos los orígenes de contenido que están en espera. Si ha creado una retención basada en consultas, esta estadística indica el número de elementos que coinciden con la consulta.
   
-- El número de elementos en espera también incluye elementos no indexados que se encuentran en las ubicaciones de contenido. Si crea una retención basada en consultas, todos los elementos no indexados de las ubicaciones de contenido se colocan en espera. Esto incluye elementos sin indizar que no coinciden con los criterios de búsqueda de una retención basada en consultas y elementos sin indizar que podrían estar fuera de una condición de intervalo de fechas. Esto es diferente de lo que sucede al ejecutar una búsqueda de contenido, en la que los elementos no indexados que no coinciden con la consulta de búsqueda o que se excluyen por una condición de intervalo de fechas no se incluyen en los resultados de la búsqueda. Para obtener más información acerca de los elementos sin indizar, vea [Elementos parcialmente indizados](partially-indexed-items-in-content-search.md)en Búsqueda de contenido en Office 365 .
+- El número de elementos en espera también incluye elementos no indexados que se encuentran en las ubicaciones de contenido. Si crea una retención basada en consultas, todos los elementos no indexados de las ubicaciones de contenido se colocan en espera. Esto incluye elementos sin indizar que no coinciden con los criterios de búsqueda de una retención basada en consultas y elementos sin indizar que podrían estar fuera de una condición de intervalo de fechas. Esto es diferente de lo que sucede al ejecutar una búsqueda de contenido, en la que los elementos no indexados que no coinciden con la consulta de búsqueda o que se excluyen por una condición de intervalo de fechas no se incluyen en los resultados de la búsqueda. Para obtener más información acerca de los elementos no indexados, vea [Elementos parcialmente indizados en Búsqueda de contenido en Office 365](partially-indexed-items-in-content-search.md).
 
 - Puede obtener las estadísticas de retención más recientes haciendo clic en Actualizar estadísticas para volver a ejecutar una estimación de búsqueda que calcule el número actual de elementos en espera.
 
@@ -117,13 +120,13 @@ Tenga en cuenta lo siguiente sobre las estadísticas de retención:
 
 - Es normal que el número de elementos en espera aumente con el tiempo porque los usuarios cuyo buzón o sitio están en espera suelen enviar o recibir un nuevo mensaje de correo electrónico y crear nuevos documentos SharePoint y OneDrive para la Empresa.
 
-- Si un sitio SharePoint o una cuenta de OneDrive se mueve a una región diferente en un entorno multige geográfico, las estadísticas de ese sitio no se incluirán en las estadísticas de retención. Sin embargo, el contenido del sitio seguirá en espera. Además, si un sitio se mueve a una región diferente, la dirección URL que se muestra en la retención no se actualizará. Tendrás que editar la retención y actualizar la dirección URL.
+- Si un sitio SharePoint o una cuenta OneDrive se mueve a una región diferente en un entorno multige geográfico, las estadísticas de ese sitio no se incluirán en las estadísticas de retención. Sin embargo, el contenido del sitio seguirá en espera. Además, si un sitio se mueve a una región diferente, la dirección URL que se muestra en la retención no se actualizará. Tendrás que editar la retención y actualizar la dirección URL.
 
 ## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>Colocar una retención en Microsoft Teams y Office 365 grupos
 
 Microsoft Teams se basa en Office 365 grupos. Por lo tanto, su retención en Advanced eDiscovery es similar.
 
-- **¿Cómo puedo asignar un sitio Microsoft 365 grupos o Microsoft Teams a un administrador? ¿Y qué pasa con la colocación de una retención no custodial en Microsoft 365 grupos y Microsoft Teams?** Microsoft Teams se basa en Microsoft 365 grupos. Por lo tanto, su retención en un caso de exhibición de documentos electrónicos es similar. Tenga en cuenta lo siguiente al colocar Microsoft 365 grupos y Microsoft Teams en espera.
+- **¿Cómo puedo asignar un sitio Microsoft 365 grupos de Microsoft Teams a un administrador? ¿Y qué sucede con la colocación de una retención no custodial en grupos Microsoft 365 y Microsoft Teams?** Microsoft Teams se basa en Microsoft 365 grupos. Por lo tanto, su retención en un caso de exhibición de documentos electrónicos es similar. Tenga en cuenta lo siguiente al colocar Microsoft 365 grupos y Microsoft Teams en espera.
 
   - Para poner contenido ubicado en grupos Microsoft 365 y Microsoft Teams en espera, debe especificar el buzón y el sitio SharePoint asociado con un grupo o equipo.
   
@@ -140,8 +143,8 @@ Microsoft Teams se basa en Office 365 grupos. Por lo tanto, su retención en Adv
     > [!NOTE]
     > Para ejecutar el cmdlet Get-UnifiedGroup debe tener asignado el rol de destinatarios con permiso de vista en Exchange Online o ser un miembro de un grupo de roles que tenga asignado el rol de destinatarios con permiso de vista.
 
-  - Cuando se busca el buzón de un usuario, no se buscará ningún grupo de Microsoft 365 o equipo de Microsoft del que el usuario sea miembro. Del mismo modo, cuando se coloca una retención de grupo de Microsoft 365 o microsoft team, solo el buzón de grupo y el sitio de grupo se colocan en espera; los buzones y los sitios OneDrive para la Empresa de los miembros del grupo no se colocan en espera a menos que los agregue explícitamente como custodios o coloque sus orígenes de datos en espera. Por lo tanto, si necesita poner un grupo de Microsoft 365 o un equipo de Microsoft en espera para un custodio específico, considere la posibilidad de asignar el sitio de grupo y el buzón de grupo al custodio (consulte Managing Custodians in Advanced eDiscovery). Si el grupo Microsoft 365 o Microsoft Team no es atribuible a un único custodio, considere la posibilidad de agregar el origen a una retención que no sea de custodia.
-  - Para obtener una lista de los miembros de un grupo de Microsoft 365 o de Microsoft Team, puede ver las propiedades en la página Grupos principales en  >  [](https://go.microsoft.com/fwlink/p/?linkid=2052855) el Centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
+  - Cuando se busca en el buzón de un usuario, no se buscará ningún grupo de Microsoft 365 o Microsoft Team del que el usuario sea miembro. Del mismo modo, cuando se coloca una retención de grupo de Microsoft 365 o microsoft team, solo el buzón de grupo y el sitio de grupo se colocan en espera; los buzones y los sitios OneDrive para la Empresa de los miembros del grupo no se colocan en espera a menos que los agregue explícitamente como custodios o coloque sus orígenes de datos en espera. Por lo tanto, si necesita poner un grupo de Microsoft 365 o un equipo de Microsoft en espera para un custodio específico, considere la posibilidad de asignar el sitio de grupo y el buzón de grupo al custodio (consulte Managing Custodians in Advanced eDiscovery). Si el Microsoft 365 grupo o Microsoft Team no es atribuible a un único custodio, considere la posibilidad de agregar el origen a una retención que no sea de custodia.
+  - Para obtener una lista de los miembros de un grupo de Microsoft 365 o microsoft team, puede ver las propiedades en la página [**HomeGroups**](https://go.microsoft.com/fwlink/p/?linkid=2052855)  >  en el Centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
 
     ```powershell
     Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
@@ -152,7 +155,7 @@ Microsoft Teams se basa en Office 365 grupos. Por lo tanto, su retención en Adv
 
   - Las conversaciones de canal que forman parte de un Microsoft Teams se almacenan en el buzón asociado al equipo. Asimismo, los archivos que los miembros del equipo comparten en un canal se almacenan en el sitio de SharePoint del equipo. Por lo tanto, debe poner el buzón de Microsoft Team y SharePoint sitio en espera para conservar conversaciones y archivos en un canal.
   
-  - Como alternativa, las conversaciones que forman parte de la lista de chat de Microsoft Teams se almacenan en el buzón de los usuarios que participan en el chat.  Los archivos que un usuario comparte en conversaciones de chat se almacenan en el OneDrive para la Empresa del usuario que comparte el archivo. Por lo tanto, debe poner los buzones de usuario individuales y OneDrive para la Empresa sitios en espera para conservar conversaciones y archivos en la lista de chat.
+  - Como alternativa, las conversaciones que forman parte de la lista de chat de Microsoft Teams se almacenan en el buzón de los usuarios que participan en el chat.  Los archivos que un usuario comparte en conversaciones de chat se almacenan en el OneDrive para la Empresa del usuario que comparte el archivo. Por lo tanto, debe poner los buzones de usuario individuales y OneDrive para la Empresa sitios en espera para conservar conversaciones y archivos en la lista chat.
   
   - Cada canal de equipo o equipo de Microsoft contiene un wiki para tomar notas y colaborar. El contenido de esta se guarda automáticamente en un archivo con un formato .mht. Este archivo se almacena en la biblioteca de documentos de Datos Wiki de Teams en el sitio de SharePoint del equipo. Para poner el contenido en espera del wiki, coloque el sitio de SharePoint del grupo en suspensión.
 
