@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ebc5c0bfad32da316368c5c440fed23df28e9e17
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: b125689f6eaf2bad5ebfef9977417abdea051f3b
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765689"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401138"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -43,7 +43,7 @@ En este tema se describe cómo instalar, configurar, actualizar y usar Microsoft
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-- Acceso al portal de Microsoft 365 Defender web
+- Acceso al portal Microsoft 365 Defender web
 - Distribución de Linux con [el administrador del](https://systemd.io/) sistema con sistema
 - Experiencia de nivel principiante en scripts de Linux y BASH
 - Privilegios administrativos en el dispositivo (en caso de implementación manual)
@@ -121,6 +121,7 @@ Si experimenta algún error de instalación, consulte [Troubleshooting installat
        - 2.6.32-754.35.1.el6.x86_64
        - 2.6.32-754.39.1.el6.x86_64
        - 2.6.32-754.41.2.el6.x86_64
+       - 2.6.32-754.43.1.el6.x86_64
        - 2.6.32-754.6.3.el6.x86_64
        - 2.6.32-754.9.1.el6.x86_64
 
@@ -191,7 +192,7 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 |Hoja de cálculo de la lista de dominios| Descripción|
 |---|---|
 |Lista de direcciones URL de Microsoft Defender para puntos de conexión para clientes comerciales | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo para clientes comerciales. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Lista de direcciones URL de punto de conexión de Microsoft Defender para clientes de Gov/GCC/DoD| Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sos para clientes gov/GCC/DoD. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+| Lista de direcciones URL de Punto de conexión de Microsoft Defender para clientes de Gov/GCC/DoD| Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sos para clientes gov/GCC/DoD. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 |
 
 
@@ -222,7 +223,7 @@ Las instrucciones sobre cómo configurar el producto en entornos empresariales e
 
 ## <a name="common-applications-to-microsoft-defender-for-endpoint-can-impact"></a>Las aplicaciones comunes para Microsoft Defender para endpoint pueden afectar
 
-Las cargas de trabajo de E/S elevadas de determinadas aplicaciones pueden experimentar problemas de rendimiento cuando se instala Microsoft Defender para endpoint. Estas incluyen aplicaciones para escenarios para desarrolladores como Jenkins y Jira, y cargas de trabajo de base de datos como OracleDB y Postgres. Si experimenta una degradación del rendimiento, considere la posibilidad de establecer exclusiones para aplicaciones de confianza, teniendo en cuenta los errores de exclusión comunes [Antivirus de Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) en cuenta. Para obtener instrucciones adicionales, considere la posibilidad de consultar documentación sobre las exclusiones antivirus de aplicaciones de terceros.
+Las cargas de trabajo de E/S elevadas de determinadas aplicaciones pueden experimentar problemas de rendimiento cuando se instala Microsoft Defender para endpoint. Estas incluyen aplicaciones para escenarios para desarrolladores como Jenkins y Jira, y cargas de trabajo de base de datos como OracleDB y Postgres. Si experimenta una degradación del rendimiento, considere la posibilidad de establecer exclusiones para aplicaciones de confianza, teniendo en [cuenta](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) los errores de exclusión Antivirus de Microsoft Defender comunes. Para obtener instrucciones adicionales, considere la posibilidad de consultar documentación sobre las exclusiones antivirus de aplicaciones de terceros.
 
 ## <a name="resources"></a>Recursos
 

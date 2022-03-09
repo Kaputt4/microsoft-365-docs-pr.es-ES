@@ -17,28 +17,28 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo seleccionar y exportar contenido de un conjunto de Advanced eDiscovery para presentaciones o revisiones externas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dba9708bfda6d1b98a2861615e56518067822100
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6384d45121fc39d120d6906e46594b8b04124471
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175172"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401068"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Exportar documentos de un conjunto de revisión en Advanced eDiscovery
 
-La exportación permite a los usuarios personalizar el contenido que se incluye en el paquete de descarga al exportar el documento de un conjunto de revisión en Advanced eDiscovery.
+La exportación permite a los usuarios personalizar el contenido que se incluye en el paquete de descarga al exportar el documento desde un conjunto de revisión de Advanced eDiscovery.
 
 Para exportar documentos de un conjunto de revisión:
 
-1. En el Centro de cumplimiento de Microsoft 365, abra el Advanced eDiscovery, seleccione la  pestaña Conjuntos de revisión y, a continuación, seleccione el conjunto de revisión que desea exportar.
+1. En el Centro de cumplimiento de Microsoft 365, abra el Advanced eDiscovery caso, seleccione la pestaña Conjuntos de revisión y, a continuación, seleccione el conjunto de revisión que desea exportar.
 
-2. En el conjunto de revisión, haga clic **en Exportar**  >  **acción**.
+2. En el conjunto de revisión, haga clic **en** **ActionExport** > .
 
    La herramienta Exportar muestra la página de control flotante con los valores para configurar la exportación. Algunas opciones están seleccionadas de forma predeterminada, pero puede cambiar estas opciones. Consulte la siguiente sección para obtener descripciones de las opciones de exportación que puede configurar.
 
    ![Opciones de configuración para exportar elementos de un conjunto de revisión.](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
-3. Después de configurar la exportación, haga clic **en Exportar** para iniciar el proceso de exportación. Según la opción seleccionada  en la sección Opciones de salida, puede tener acceso a los archivos de exportación mediante descarga directa o en la cuenta de Azure Storage organización.
+3. Después de configurar la exportación, haga clic **en Exportar** para iniciar el proceso de exportación. Según la opción seleccionada en la sección Opciones  de salida, puede tener acceso a los archivos de exportación mediante descarga directa o en la cuenta de Azure Storage organización.
 
 > [!NOTE]
 > Los trabajos de exportación se conservan durante la vida útil del caso. Sin embargo, debe descargar el contenido de un trabajo de exportación en un plazo de 30 días después de que se complete el trabajo de exportación.
@@ -47,9 +47,9 @@ Para exportar documentos de un conjunto de revisión:
 
 Use las siguientes opciones para configurar la exportación. No todas las opciones están permitidas para algunas opciones de salida, sobre todo, la exportación de archivos de texto y archivos PDF redactadas no se permite al exportar al formato PST.
 
-- **Nombre de exportación:** nombre del trabajo de exportación. Esto se usará para nombrar los archivos ZIP que se descargarán.
+- **Nombre de exportación**: nombre del trabajo de exportación. Esto se usará para nombrar los archivos ZIP que se descargarán.
 
-- **Descripción:** campo de texto libre para agregar una descripción.
+- **Descripción**: campo de texto libre para agregar una descripción.
 
 - **Exportar estos documentos**
 
@@ -63,11 +63,11 @@ Use las siguientes opciones para configurar la exportación. No todas las opcion
   
   - Solo informes: solo se crean el archivo de resumen y carga.
   
-  - Archivos sueltos y PST (el correo electrónico se agrega a los ARCHIVOS PST cuando es posible): los archivos se exportan en un formato similar a la estructura de directorio original que ven los usuarios en sus aplicaciones nativas.  Para obtener más información, vea [la sección Archivos sueltos y estructura de exportación de PST.](#loose-files-and-pst-export-structure)
+  - Archivos sueltos y PST (el correo electrónico se agrega a los ARCHIVOS PST cuando es posible): los archivos se exportan en un formato similar a la estructura de directorio original que ven los usuarios en sus aplicaciones nativas.  Para obtener más información, vea [la sección Archivos sueltos y estructura de exportación de PST](#loose-files-and-pst-export-structure) .
   
   - Estructura de directorio condensada: los archivos se exportan e incluyen en la descarga.
   
-  - Estructura de directorio condensada exportada a su Azure Storage: los archivos se exportan a la cuenta de Azure Storage organización. Para esta opción, debe proporcionar la dirección URL del contenedor en su cuenta de Azure Storage a la que exportar los archivos. También debe proporcionar el token de firma de acceso compartido (SAS) para su Azure Storage cuenta. Para obtener más información, vea [Export documents in a review set to an Azure Storage account](download-export-jobs.md).
+  - Estructura de directorio condensada exportada a Azure Storage cuenta: los archivos se exportan a la cuenta de Azure Storage organización. Para esta opción, debe proporcionar la dirección URL del contenedor en su cuenta de Azure Storage a la que exportar los archivos. También debe proporcionar el token de firma de acceso compartido (SAS) para su Azure Storage cuenta. Para obtener más información, vea [Export documents in a review set to an Azure Storage account](download-export-jobs.md).
 
 - **Include**
   
@@ -87,13 +87,17 @@ Si selecciona esta opción de exportación, el contenido exportado se organiza e
 
 - Summary.csv: incluye un resumen del contenido exportado desde el conjunto de revisión
 
-- Carpeta raíz: esta carpeta en el nombre [Export Name] x de z.zip y se repetirá para cada partición de archivo ZIP.
+- Carpeta raíz: esta carpeta en el nombre [Export Name] x de z.zip y se repetirá para cada partición de archivo ZIP. La carpeta raíz contiene lo siguiente:
   
   - Export_load_file_x de z.csv: el archivo de metadatos.
   
   - Advertencias y errores x de z.csv: este archivo incluye información sobre los errores detectados al intentar exportar desde el conjunto de revisión.
   
-  - Exchange: esta carpeta contiene todo el contenido de Exchange almacenado en archivos PST. Los archivos PDF redactados no se pueden incluir con esta opción. Si se selecciona un archivo adjunto en el conjunto de revisión, el correo electrónico primario se exportará con los datos adjuntos adjuntos adjuntos.
+  - Exchange: esta carpeta contiene todo el contenido de Exchange almacenado en archivos PST. Los archivos PDF redactados no se pueden incluir con esta opción. Si se selecciona un archivo adjunto en el conjunto de revisión, el mensaje de correo electrónico primario se exportará con los datos adjuntos adjuntos. Esta carpeta también puede contener los siguientes elementos: 
+
+    - Mensajes protegidos de Information Rights Management (IRM) que se han descodificado. 
+    - Mensajes corregidos por error. 
+    - Datos adjuntos modernos o vínculos a los que se hace referencia en los mensajes. 
   
   - SharePoint: esta carpeta contiene todo el contenido nativo de SharePoint en un formato de archivo nativo. Los archivos PDF redactados no se pueden incluir con esta opción.
 
@@ -107,7 +111,7 @@ Si selecciona esta opción de exportación, el contenido exportado se organiza e
   
   - Advertencias y errores x de z.csv: este archivo incluye información sobre los errores detectados al intentar exportar desde el conjunto de revisión.
 
-  - NativeFiles: esta carpeta contiene todos los archivos nativos que se exportaron. Los archivos nativos se reemplazan por archivos PDF redactados si ha seleccionado la opción Reemplazar *nativos* redactados con ARCHIVOS PDF convertidos.
+  - NativeFiles: esta carpeta contiene todos los archivos nativos que se exportaron. Los archivos nativos se reemplazan por archivos PDF redactados si ha seleccionado la opción Reemplazar nativos redactados con *ARCHIVOS PDF* convertidos.
   
   - Error_files: esta carpeta contiene archivos que tuvieron un error de extracción u otro procesamiento. Los archivos se colocarán en carpetas independientes, ya sea ExtractionError o ProcessingError. Estos archivos se enumeran en el archivo de carga.
 
@@ -115,4 +119,4 @@ Si selecciona esta opción de exportación, el contenido exportado se organiza e
 
 ### <a name="condensed-directory-structure-exported-to-your-azure-storage-account"></a>Estructura de directorio condensada exportada a Azure Storage cuenta
 
-Esta opción usa la misma estructura general que la estructura de directorio condensada, pero el contenido no está comprimido y los datos se guardan en su Azure Storage cuenta. Esta opción se usa generalmente al trabajar con un proveedor de exhibición de documentos electrónicos de terceros. Para obtener más información sobre cómo usar esta opción, vea Exportar documentos en una revisión [establecida en una cuenta Azure Storage .](download-export-jobs.md)
+Esta opción usa la misma estructura general que la estructura de directorio condensada *, pero* el contenido no está comprimido y los datos se guardan en la cuenta Azure Storage usuario. Esta opción se usa generalmente al trabajar con un proveedor de exhibición de documentos electrónicos de terceros. Para obtener más información sobre cómo usar esta opción, vea [Exportar documentos en una revisión establecida en una cuenta Azure Storage usuario](download-export-jobs.md).

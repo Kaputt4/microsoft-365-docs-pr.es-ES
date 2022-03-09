@@ -19,40 +19,40 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usa la movilidad básica y la seguridad integradas para quitar información de los dispositivos inscritos.
-ms.openlocfilehash: ed658abc55d065e6d271893dc80a293e19373a34
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d5f610e2a9180f1d147f68e6aabf4a7291787033
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165885"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400174"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Borrar un dispositivo móvil en Movilidad básica y seguridad
 
-Puedes usar la movilidad y seguridad básicas integradas para Microsoft 365 para quitar solo la información de la organización o para realizar un restablecimiento de fábrica para eliminar toda la información de un dispositivo móvil y restaurarla a la configuración de fábrica.
+Puedes usar la movilidad y seguridad básicas integradas para Microsoft 365 para quitar solo información organizativa o para realizar un restablecimiento de fábrica para eliminar toda la información de un dispositivo móvil y restaurarla a la configuración de fábrica.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Los dispositivos móviles pueden almacenar información confidencial de la organización y proporcionar acceso a los recursos Microsoft 365 organización. Para ayudar a proteger la información de su organización, puede realizar el restablecimiento de fábrica o quitar los datos de la empresa:
+Los dispositivos móviles pueden almacenar información confidencial de la organización y proporcionar acceso a los recursos de Microsoft 365 organización. Para ayudar a proteger la información de su organización, puede realizar el restablecimiento de fábrica o quitar los datos de la empresa:
 
 - **Restablecimiento de** fábrica: elimina todos los datos del dispositivo móvil de un usuario, incluidas las aplicaciones instaladas, las fotos y la información personal. Una vez completada la eliminación, el dispositivo se restaura a su configuración de fábrica.
 
 - **Quitar datos de la** empresa: quita solo los datos de la organización y deja las aplicaciones instaladas, las fotos y la información personal en el dispositivo móvil de un usuario.
 
-- **Cuando se elimina un dispositivo (Restablecimiento** de fábrica o Quitar datos de empresa), el dispositivo se quita de la lista de dispositivos administrados.
+- **Cuando se elimina un dispositivo (** Restablecimiento de fábrica o Quitar datos de la empresa), el dispositivo se quita de la lista de dispositivos administrados.
     
-- **Restablecer automáticamente** un dispositivo: puedes configurar una directiva básica de movilidad y seguridad que restablece automáticamente un dispositivo después de que el usuario intente introducir la contraseña del dispositivo sin éxito un número específico de veces. Para ello, siga los pasos descritos en Crear directivas [de seguridad de dispositivos en movilidad y seguridad básicas.](create-device-security-policies.md)
+- **Restablecer automáticamente** un dispositivo: puedes configurar una directiva básica de movilidad y seguridad que restablece automáticamente un dispositivo de fábrica después de que el usuario intente introducir la contraseña del dispositivo sin éxito un número específico de veces. Para ello, siga los pasos descritos  [enCrear directivas de seguridad de dispositivos en movilidad y seguridad básicas](create-device-security-policies.md).
     
-- **Si quieres conocer la experiencia del** usuario al borrar su dispositivo, consulta ¿Cuál es el impacto del usuario y del   [dispositivo?](#whats-the-user-and-device-impact).
+- **Si quieres conocer la experiencia del** usuario al borrar su dispositivo, consulta ¿Cuál es el impacto del usuario   [y del dispositivo?](#whats-the-user-and-device-impact).
 
 ## <a name="wipe-a-mobile-device"></a>Borrar un dispositivo móvil
 
-1. Vaya a la [Centro de administración de Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
+1. Vaya al  [Centro de administración de Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
 
 2. Escribe Administración de dispositivos móviles en el campo de búsqueda y selecciona **Administración de dispositivos móviles** en la lista de resultados.
 
     :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Opción básica de administración de dispositivos móviles Movilidad y Secruity.":::
 
-3. Seleccione **Administrar dispositivos**.
+3. Selecciona **Administrar dispositivos**.
 
 4. Seleccione el dispositivo que desea quitar.
 
@@ -60,7 +60,7 @@ Los dispositivos móviles pueden almacenar información confidencial de la organ
 
 6. Seleccione el tipo de eliminación remota que desea realizar.
 
-    - Para realizar una eliminación completa y restaurar el dispositivo a su configuración de fábrica, seleccione **Restablecimiento de fábrica.**
+    - Para realizar un borrado completo y restaurar el dispositivo a su configuración de fábrica, selecciona **Restablecimiento de fábrica**.
     - Para realizar un borrado selectivo y eliminar solo Microsoft 365 de la organización, seleccione **Quitar datos de la empresa**.
     - Para quitar el dispositivo de la organización, selecciona **Quitar dispositivo**.
 
@@ -82,7 +82,7 @@ Borre un dispositivo por estos motivos:
 
 El borrado se envía inmediatamente al dispositivo móvil y el dispositivo se marca como no compatible en Azure Active Directory. Aunque todos los datos se quitan cuando un dispositivo se restablece a los valores predeterminados de fábrica, en la tabla siguiente se describe qué contenido se quita para cada tipo de dispositivo cuando un dispositivo quita los datos de la empresa.
 
-|**Impacto en el contenido**|**iOS 10 y versiones posteriores**|**Android 5 y versiones posteriores**|
+|**Impacto en el contenido**|**iOS**|**Android**|
 |:-----|:-----|:-----|
 |Microsoft 365 datos de la aplicación se borran si el dispositivo está protegido por directivas de Protección de aplicaciones de Intune. Las aplicaciones no se quitan. Para dispositivos que no están protegidos por directivas de administración de aplicaciones móviles (MAM), Outlook y OneDrive no quitarán los datos almacenados en caché.<br/>**Nota** Para aplicar directivas de Protección de aplicaciones de Intune, debe tener una licencia de Intune.|Sí|Sí|
 |La configuración de directiva aplicada por Movilidad básica y Seguridad a los dispositivos ya no se aplica; los usuarios pueden cambiar la configuración.|Sí|Sí|

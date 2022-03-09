@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: obtenga información sobre las condiciones y excepciones de la directiva dlp
-ms.openlocfilehash: a0354fe6392d739fa1b616e92625b7507cca823f
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 771674b82e50987397fc1ae754f0b96719a04ae5
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172264"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401124"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Condiciones de directiva DLP, excepciones y acciones
 
@@ -30,7 +30,7 @@ Las condiciones y excepciones de las directivas DLP identifican los elementos co
 - Las excepciones definen qué excluir.
 - Las acciones definen lo que sucede como consecuencia de la condición o excepción que se cumple
 
-La mayoría de las condiciones y excepciones tienen una propiedad que admite uno o más valores. Por ejemplo, si la directiva DLP se aplica Exchange  mensajes de correo electrónico, la condición El remitente es requiere el remitente del mensaje. Algunas condiciones tienen dos propiedades. Por ejemplo, la condición **Un encabezado de mensaje incluye cualquiera de estas palabras** requiere una propiedad que especifique el campo de encabezado del mensaje y una segunda propiedad que especifique el texto que hay que buscar en el campo de encabezado. Algunas condiciones o excepciones no tienen propiedades. Por ejemplo, la **condición Attachment is password protected** simplemente busca datos adjuntos en los mensajes protegidos con contraseña.
+La mayoría de las condiciones y excepciones tienen una propiedad que admite uno o más valores. Por ejemplo, si la directiva DLP se aplica Exchange mensajes de correo electrónico, la condición El  remitente es requiere el remitente del mensaje. Algunas condiciones tienen dos propiedades. Por ejemplo, la condición **Un encabezado de mensaje incluye cualquiera de estas palabras** requiere una propiedad que especifique el campo de encabezado del mensaje y una segunda propiedad que especifique el texto que hay que buscar en el campo de encabezado. Algunas condiciones o excepciones no tienen propiedades. Por ejemplo, la **condición Attachment is password protected** simplemente busca datos adjuntos en los mensajes protegidos con contraseña.
 
 Las acciones suelen necesitar propiedades adicionales. Por ejemplo, cuando la regla de directiva DLP redirige un mensaje, debe especificar a dónde se redirige el mensaje.
 <!-- Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.-->
@@ -48,43 +48,39 @@ Las tablas de las secciones siguientes describen las condiciones y excepciones q
 
 ### <a name="senders"></a>Remitentes
 
-Si usa la dirección del remitente como condición o excepción, el campo real donde se busca el valor varía según el tipo de regla que use. Para las reglas basadas en DLP, la dirección de sobre se usa como dirección del remitente. Para Exchange de transporte, la dirección de encabezado se usa como dirección del remitente.
+Si usa la dirección del remitente como condición o excepción, el campo real donde se busca el valor varía según la ubicación de la dirección del remitente configurada. De forma predeterminada, las reglas DLP usan la dirección de encabezado como dirección del remitente.
 
-<!--
-> [!NOTE]
-> Starting January 20, 2022, the default sender address location will be moved to the Header address along with the availability of the -SenderAddressLocation parameter to configure desired behavior at a DLP rule level.
+![Imagen de un encabezado de correo electrónico que muestra la diferencia entre la dirección Envelope (P1) y la dirección Header (P2)](../media/dlp-conditions-exceptions-meetinginvite-callouts.png)
 
-![image](https://user-images.githubusercontent.com/53205984/145942298-6b435ba6-d146-44fe-a1c5-58babeaf8d7a.png)
-
-At the tenant level, you can configure a sender address location to be used across all rules, unless overridden by a single rule. To revert tenant DLP policy configuration to evaluate the sender address from the Envelope across all rules, you can run the following command:
+En el nivel de inquilino, puede configurar una ubicación de dirección de remitente para que se utilice en todas las reglas, a menos que se invalide mediante una sola regla. Para establecer la configuración de directiva DLP de inquilino para evaluar la dirección del remitente desde el sobre en todas las reglas, puede ejecutar el siguiente comando:
 
 ```PowerShell
 Set-PolicyConfig –SenderAddressLocation Envelope
 ```
 
-To configure the sender address location at a DLP rule level, the parameter is _SenderAddressLocation_. The available values are:
+Para configurar la ubicación de la dirección del remitente en un nivel de regla DLP, el parámetro es _SenderAddressLocation_. Los valores disponibles son los siguientes:
 
-- **Header**: Only examine senders in the message headers (for example, the **From**, **Sender**, or **Reply-To** fields). This is the default value.
+- **Encabezado**: solo examine los remitentes de los encabezados de mensaje (por ejemplo, los campos **From**, **Sender** o **Reply-To** ). Este es el valor predeterminado.
 
-- **Envelope**: Only examine senders from the message envelope (the **MAIL FROM** value that was used in the SMTP transmission, which is typically stored in the **Return-Path** field).
+- **Sobre**: solo examine los remitentes del sobre del mensaje (el valor **MAIL FROM** que se usó en la transmisión SMTP, que normalmente se almacena en el **campo Return-Path** ).
 
-- **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
+- **Encabezado o sobre** (`HeaderOrEnvelope`) Examinar remitentes en el encabezado del mensaje y en el sobre del mensaje.
 <br>
--->
+
 |condición o excepción en DLP|parámetros de condición/excepción en Microsoft 365 PowerShell|tipo de propiedad|description|
 |---|---|---|---|
-|El remitente es|condición: *From* <br/> excepción: *ExceptIfFrom*|Direcciones|Mensajes enviados por los buzones de correo, los usuarios de correo, los contactos de correo o Microsoft 365 de la organización.|
-|El remitente es un miembro de |_FromMemberOf_ <br/> _ExceptIfFromMemberOf_|Direcciones|Mensajes enviados por un miembro del grupo de distribución especificado, grupo de seguridad habilitado para correo o Microsoft 365 grupo.|
-|La dirección IP del remitente es|condición: *SenderIPRanges*<br/> *excepción: ExceptIfSenderIPRanges*|IPAddressRanges|Mensajes en los que la dirección IP del remitente coincide con la dirección IP especificada o se encuentra en el intervalo de direcciones IP especificado.|
-|La dirección del remitente contiene palabras|condición: *FromAddressContainsWords* <br/> *excepción: ExceptIfFromAddressContainsWords*|Words|Mensajes que contienen las palabras especificadas en la dirección de correo electrónico del remitente.|
-|La dirección del remitente coincide con patrones|condición: *FromAddressMatchesPatterns* <br/> *excepción: ExceptFromAddressMatchesPatterns*|Patrones|Mensajes en los que la dirección de correo electrónico contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
-|El dominio del remitente es|condición: *SenderDomainIs* <br/> *excepción: ExceptIfSenderDomainIs*|DomainName|Mensajes en los que el dominio de la dirección de correo electrónico del remitente coincide con el valor especificado. Si necesita buscar dominios  de remitente que contengan el dominio especificado (por ejemplo, cualquier subdominio de un dominio), use la condición La dirección del remitente coincide **(***FromAddressMatchesPatterns*) y especifique el dominio mediante la sintaxis: \. 'dominio \. com$'.|
+|El remitente es|condición: *From* <br/> excepción: *ExceptIfFrom*|Addresses|Mensajes enviados por los buzones de correo, los usuarios de correo, los contactos de correo o Microsoft 365 de la organización.|
+|El remitente es un miembro de |_FromMemberOf_ <br/> _ExceptIfFromMemberOf_|Addresses|Mensajes enviados por un miembro del grupo de distribución especificado, grupo de seguridad habilitado para correo o Microsoft 365 grupo.|
+|La dirección IP del remitente es|condición: *SenderIPRanges*<br/> excepción: *ExceptIfSenderIPRanges*|IPAddressRanges|Mensajes en los que la dirección IP del remitente coincide con la dirección IP especificada o se encuentra en el intervalo de direcciones IP especificado.|
+|La dirección del remitente contiene palabras|condición: *FromAddressContainsWords* <br/> excepción: *ExceptIfFromAddressContainsWords*|Words|Mensajes que contienen las palabras especificadas en la dirección de correo electrónico del remitente.|
+|La dirección del remitente coincide con patrones|condición: *FromAddressMatchesPatterns* <br/> excepción: *ExceptFromAddressMatchesPatterns*|Patrones|Mensajes en los que la dirección de correo electrónico contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
+|El dominio del remitente es|condición: *SenderDomainIs* <br/> excepción: *ExceptIfSenderDomainIs*|DomainName|Mensajes en los que el dominio de la dirección de correo electrónico del remitente coincide con el valor especificado. Si necesita buscar dominios de remitente que contengan el dominio especificado (por ejemplo, cualquier subdominio de un dominio), use la condición **Match(***FromAddressMatchesPatterns*) de la dirección del remitente y especifique el dominio mediante la sintaxis: '\.domaincom\.$'.|
 |Ámbito del remitente|condición: *FromScope* <br/> excepción: *ExceptIfFromScope*|UserScopeFrom|Mensajes enviados por remitentes internos o externos.|
-|Las propiedades especificadas del remitente incluyen cualquiera de estas palabras|condición: *SenderADAttributeContainsWords* <br/> *excepción: ExceptIfSenderADAttributeContainsWords*|Primera propiedad:  `ADAttribute` <p> Segunda propiedad: `Words`|Mensajes en los que el atributo Active Directory especificado del remitente contiene alguna de las palabras especificadas.|
-|Las propiedades especificadas del remitente coinciden con estos patrones de texto|condición: *SenderADAttributeMatchesPatterns* <br/> *excepción: ExceptIfSenderADAttributeMatchesPatterns*|Primera propiedad:  `ADAttribute` <p> Segunda propiedad: `Patterns`|Mensajes en los que el atributo Active Directory especificado del remitente contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
+|Las propiedades especificadas del remitente incluyen cualquiera de estas palabras|condición: *SenderADAttributeContainsWords* <br/> excepción: *ExceptIfSenderADAttributeContainsWords*|Primera propiedad:  `ADAttribute` <p> Segunda propiedad: `Words`|Mensajes en los que el atributo Active Directory especificado del remitente contiene alguna de las palabras especificadas.|
+|Las propiedades especificadas del remitente coinciden con estos patrones de texto|condición: *SenderADAttributeMatchesPatterns* <br/> excepción: *ExceptIfSenderADAttributeMatchesPatterns*|Primera propiedad:  `ADAttribute` <p> Segunda propiedad: `Patterns`|Mensajes en los que el atributo Active Directory especificado del remitente contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
 |
 
-### <a name="recipients"></a>Recipientes
+### <a name="recipients"></a>Recipients
 
 <br>
 
@@ -92,11 +88,11 @@ To configure the sender address location at a DLP rule level, the parameter is _
 
 |condición o excepción en DLP|parámetros de condición/excepción en Microsoft 365 PowerShell|tipo de propiedad|description|
 |---|---|---|---|
-|El destinatario es|condición: *SentTo* <br/> excepción: *ExceptIfSentTo*|Direcciones|Mensajes en los que uno de los destinatarios es el buzón, el usuario de correo o el contacto de correo especificados en la organización. Los destinatarios pueden estar en los campos **Para,** **Cc** o **CCO** del mensaje.|
-|El dominio del destinatario es|condición: *RecipientDomainIs* <br/> *excepción: ExceptIfRecipientDomainIs*|DomainName|Mensajes en los que el dominio de la dirección de correo electrónico del destinatario coincide con el valor especificado.|
-|La dirección del destinatario contiene palabras|condición: *AnyOfRecipientAddressContainsWords* <br/> *excepción: ExceptIfAnyOfRecipientAddressContainsWords*|Words|Mensajes que contienen las palabras especificadas en la dirección de correo electrónico del destinatario. <br/>**Nota**: Esta condición no considera los mensajes que se envían a direcciones de proxy del destinatario. Solo coincide con los mensajes que se envían a la dirección de correo electrónico principal del destinatario.|
-|La dirección del destinatario coincide con patrones|condición: *AnyOfRecipientAddressMatchesPatterns* <br/> *excepción: ExceptIfAnyOfRecipientAddressMatchesPatterns*|Patrones|Mensajes en los que la dirección de correo electrónico de un destinatario contiene patrones de texto que coinciden con las expresiones regulares especificadas. <br/> **Nota**: Esta condición no considera los mensajes que se envían a direcciones de proxy del destinatario. Solo coincide con los mensajes que se envían a la dirección de correo electrónico principal del destinatario.|
-|Enviado a miembro de|condición: *SentToMemberOf* <br/> *excepción: ExceptIfSentToMemberOf*|Direcciones|Mensajes que contienen destinatarios que son miembros del grupo de distribución especificado, grupo de seguridad habilitado para correo o Microsoft 365 grupo. El grupo puede incluirse en los campos **To**, **Cc** o **Bcc** del mensaje.|
+|El destinatario es|condición: *SentTo* <br/> excepción: *ExceptIfSentTo*|Addresses|Mensajes en los que uno de los destinatarios es el buzón, el usuario de correo o el contacto de correo especificados en la organización. Los destinatarios pueden estar en los campos **Para**, **Cc** o **CCO** del mensaje.|
+|El dominio del destinatario es|condición: *RecipientDomainIs* <br/> excepción: *ExceptIfRecipientDomainIs*|DomainName|Mensajes en los que el dominio de la dirección de correo electrónico del destinatario coincide con el valor especificado.|
+|La dirección del destinatario contiene palabras|condición: *AnyOfRecipientAddressContainsWords* <br/> excepción: *ExceptIfAnyOfRecipientAddressContainsWords*|Words|Mensajes que contienen las palabras especificadas en la dirección de correo electrónico del destinatario. <br/>**Nota**: Esta condición no considera los mensajes que se envían a direcciones de proxy del destinatario. Solo coincide con los mensajes que se envían a la dirección de correo electrónico principal del destinatario.|
+|La dirección del destinatario coincide con patrones|condición: *AnyOfRecipientAddressMatchesPatterns* <br/> excepción: *ExceptIfAnyOfRecipientAddressMatchesPatterns*|Patrones|Mensajes en los que la dirección de correo electrónico de un destinatario contiene patrones de texto que coinciden con las expresiones regulares especificadas. <br/> **Nota**: Esta condición no considera los mensajes que se envían a direcciones de proxy del destinatario. Solo coincide con los mensajes que se envían a la dirección de correo electrónico principal del destinatario.|
+|Enviado a miembro de|condición: *SentToMemberOf* <br/> excepción: *ExceptIfSentToMemberOf*|Addresses|Mensajes que contienen destinatarios que son miembros del grupo de distribución especificado, grupo de seguridad habilitado para correo o Microsoft 365 grupo. El grupo puede incluirse en los campos **To**, **Cc** o **Bcc** del mensaje.|
 |Las propiedades especificadas del destinatario incluyen cualquiera de estas palabras |_RecipientADAttributeContainsWords_ <br/> _ExceptIfRecipientADAttributeContainsWords_|Primera propiedad:  `ADAttribute` <p> Segunda propiedad: `Words`|Mensajes en los que el atributo Active Directory especificado del destinatario contiene alguna de las palabras especificadas. <p> Tenga en cuenta que el atributo **Country** requiere el valor de código de país de dos letras (por ejemplo, DE para Alemania).|
 |Las propiedades especificadas del destinatario coinciden con estos patrones de texto |_RecipientADAttributeMatchesPatterns_ <br/> _ExceptIfRecipientADAttributeMatchesPatterns_|Primera propiedad:  `ADAttribute` <p> Segunda propiedad: `Patterns`|Mensajes en los que el atributo Active Directory especificado del destinatario contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
 |
@@ -109,11 +105,11 @@ To configure the sender address location at a DLP rule level, the parameter is _
 
 |condición o excepción en DLP|parámetros de condición/excepción en Microsoft 365 PowerShell|tipo de propiedad|description|
 |---|---|---|---|
-|Asunto contiene palabras o frases|condición: *SubjectContainsWords* <br/> *excepción: ExceptIf SubjectContainsWords*|Words|Mensajes que contengan las palabras especificadas en el campo Subject.|
-|El asunto coincide con patrones|condición: *SubjectMatchesPatterns* <br/> *excepción: ExceptIf SubjectMatchesPatterns*|Patrones|Mensajes en los que el campo Asunto contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
-|El contenido contiene|condición: *ContentContainsSensitiveInformation* <br/> excepción *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Mensajes o documentos que contienen información confidencial definida por las directivas de prevención de pérdida de datos (DLP).|
-|Patrón de coincidencias de asunto o cuerpo|condición: *SubjectOrBodyMatchesPatterns* <br/> *excepción: ExceptIfSubjectOrBodyMatchesPatterns*|Patrones|Mensajes en los que el campo de asunto o el cuerpo del mensaje contienen patrones de texto que coinciden con las expresiones regulares especificadas.|
-|Asunto o Cuerpo contiene palabras|condición: *SubjectOrBodyContainsWords* <br/> *excepción: ExceptIfSubjectOrBodyContainsWords*|Words|Mensajes que tienen las palabras especificadas en el campo de asunto o el cuerpo del mensaje|
+|Asunto contiene palabras o frases|condición: *SubjectContainsWords* <br/> excepción: *ExceptIf SubjectContainsWords*|Words|Mensajes que contengan las palabras especificadas en el campo Subject.|
+|El asunto coincide con patrones|condición: *SubjectMatchesPatterns* <br/> excepción: *ExceptIf SubjectMatchesPatterns*|Patrones|Mensajes en los que el campo Asunto contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
+|El contenido contiene|condición: *ContentContainsSensitiveInformation* <br/> *excepción ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Mensajes o documentos que contienen información confidencial definida por las directivas de prevención de pérdida de datos (DLP).|
+|Patrón de coincidencias de asunto o cuerpo|condición: *SubjectOrBodyMatchesPatterns* <br/> excepción: *ExceptIfSubjectOrBodyMatchesPatterns*|Patrones|Mensajes en los que el campo de asunto o el cuerpo del mensaje contienen patrones de texto que coinciden con las expresiones regulares especificadas.|
+|Asunto o Cuerpo contiene palabras|condición: *SubjectOrBodyContainsWords* <br/> excepción: *ExceptIfSubjectOrBodyContainsWords*|Words|Mensajes que tienen las palabras especificadas en el campo de asunto o el cuerpo del mensaje|
 |
 
 ### <a name="attachments"></a>Attachments
@@ -124,16 +120,16 @@ To configure the sender address location at a DLP rule level, the parameter is _
 
 |condición o excepción en DLP|parámetros de condición/excepción en Microsoft 365 PowerShell|tipo de propiedad|description|
 |---|---|---|---|
-|Los datos adjuntos están protegidos con contraseña|condición: *DocumentIsPasswordProtected* <br/> *excepción: ExceptIfDocumentIsPasswordProtected*|ninguno|Mensajes en los que un archivo adjunto está protegido por contraseña (y, por lo tanto, no se puede examinar). La detección de contraseñas solo funciona Office documentos, .zip y archivos .7z.|
-|La extensión de archivo de datos adjuntos es|condición: *ContentExtensionMatchesWords* <br/> *excepción: ExceptIfContentExtensionMatchesWords*|Words|Mensajes en los que la extensión de archivo de los datos adjuntos coincide con cualquiera de las palabras especificadas.|
-|No se pudo examinar el contenido de los datos adjuntos de correo electrónico|condición: *DocumentIsUnsupported* <br/>*excepción: ExceptIf DocumentIsUnsupported*|N/D|Mensajes en los que los datos adjuntos no se reconocen de forma Exchange Online.|
-|El contenido de los datos adjuntos de correo electrónico no ha completado el examen|condición: *ProcessingLimitExceeded* <br/> *excepción: ExceptIfProcessingLimitExceeded*|N/D|Mensajes en los que el motor de reglas no pudo completar el examen de los datos adjuntos. Puede usar esta condición para crear reglas que trabajen conjuntamente para identificar y procesar mensajes en los que el contenido no pudo examinarse por completo.|
-|El nombre del documento contiene palabras|condición: *DocumentNameMatchesWords* <br/> *excepción: ExceptIfDocumentNameMatchesWords*|Words|Mensajes en los que el nombre de archivo de un archivo adjunto coincide con cualquiera de las palabras especificadas.|
-|El nombre del documento coincide con los patrones|condición: *DocumentNameMatchesPatterns* <br/> *excepción: ExceptIfDocumentNameMatchesPatterns*|Patrones|Mensajes en los que el nombre de archivo de los datos adjuntos contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
-|La propiedad del documento es|condición: *ContentPropertyContainsWords* <br/> *excepción: ExceptIfContentPropertyContainsWords*|Words|Mensajes o documentos donde la extensión de archivo de un archivo adjunto coincide con cualquiera de las palabras especificadas.|
-|El tamaño del documento es igual o mayor que|condición: *DocumentSizeOver* <br/> *excepción: ExceptIfDocumentSizeOver*|Size|Mensajes en los que algún documento adjunto es mayor o igual que el valor especificado.|
-|El contenido de cualquier archivo adjunto incluye alguna de estas palabras|condición: *DocumentContainsWords* <br/> *excepción: ExceptIfDocumentContainsWords*|`Words`|Mensajes en los que un archivo adjunto contiene las palabras especificadas.|
-|Cualquier contenido adjunto coincide con estos patrones de texto|condición: *DocumentMatchesPatterns* <br/> *excepción: ExceptIfDocumentMatchesPatterns*|`Patterns`|Mensajes en los que un archivo adjunto contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
+|Los datos adjuntos están protegidos con contraseña|condición: *DocumentIsPasswordProtected* <br/> excepción: *ExceptIfDocumentIsPasswordProtected*|ninguno|Mensajes en los que un archivo adjunto está protegido por contraseña (y, por lo tanto, no se puede examinar). La detección de contraseñas solo funciona Office documentos, .zip y archivos .7z.|
+|La extensión de archivo de datos adjuntos es|condición: *ContentExtensionMatchesWords* <br/> excepción: *ExceptIfContentExtensionMatchesWords*|Words|Mensajes en los que la extensión de archivo de los datos adjuntos coincide con cualquiera de las palabras especificadas.|
+|No se pudo examinar el contenido de los datos adjuntos de correo electrónico|condición: *DocumentIsUnsupported* <br/>excepción: *ExceptIf DocumentIsUnsupported*|No aplicable|Mensajes en los que los datos adjuntos no se reconocen de forma Exchange Online.|
+|El contenido de los datos adjuntos de correo electrónico no ha completado el examen|condición: *ProcessingLimitExceeded* <br/> excepción: *ExceptIfProcessingLimitExceeded*|N/D|Mensajes en los que el motor de reglas no pudo completar el examen de los datos adjuntos. Puede usar esta condición para crear reglas que trabajen conjuntamente para identificar y procesar mensajes en los que el contenido no pudo examinarse por completo.|
+|El nombre del documento contiene palabras|condición: *DocumentNameMatchesWords* <br/> excepción: *ExceptIfDocumentNameMatchesWords*|Words|Mensajes en los que el nombre de archivo de un archivo adjunto coincide con cualquiera de las palabras especificadas.|
+|El nombre del documento coincide con los patrones|condición: *DocumentNameMatchesPatterns* <br/> excepción: *ExceptIfDocumentNameMatchesPatterns*|Patrones|Mensajes en los que el nombre de archivo de los datos adjuntos contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
+|La propiedad del documento es|condición: *ContentPropertyContainsWords* <br/> excepción: *ExceptIfContentPropertyContainsWords*|Words|Mensajes o documentos donde la extensión de archivo de un archivo adjunto coincide con cualquiera de las palabras especificadas.|
+|El tamaño del documento es igual o mayor que|condición: *DocumentSizeOver* <br/> excepción: *ExceptIfDocumentSizeOver*|Size|Mensajes en los que algún documento adjunto es mayor o igual que el valor especificado.|
+|El contenido de cualquier archivo adjunto incluye alguna de estas palabras|condición: *DocumentContainsWords* <br/> excepción: *ExceptIfDocumentContainsWords*|`Words`|Mensajes en los que un archivo adjunto contiene las palabras especificadas.|
+|Cualquier contenido adjunto coincide con estos patrones de texto|condición: *DocumentMatchesPatterns* <br/> excepción: *ExceptIfDocumentMatchesPatterns*|`Patterns`|Mensajes en los que un archivo adjunto contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
 |
 
 ### <a name="message-headers"></a>Encabezados de mensaje
@@ -144,8 +140,8 @@ To configure the sender address location at a DLP rule level, the parameter is _
 
 |condición o excepción en DLP|parámetros de condición/excepción en Microsoft 365 PowerShell|tipo de propiedad|description|
 |---|---|---|---|
-|El encabezado contiene palabras o frases|condición: *HeaderContainsWords* <br/> *excepción: ExceptIfHeaderContainsWords*|Tabla hash|Los mensajes que contienen el campo de encabezado especificado y el valor de ese campo de encabezado contiene las palabras especificadas.|
-|El encabezado coincide con patrones|condición: *HeaderMatchesPatterns* <br/> *excepción: ExceptIfHeaderMatchesPatterns*|Tabla hash|Los mensajes que contienen el campo de encabezado especificado y el valor de ese campo de encabezado contiene las expresiones regulares especificadas.|
+|El encabezado contiene palabras o frases|condición: *HeaderContainsWords* <br/> excepción: *ExceptIfHeaderContainsWords*|Tabla hash|Los mensajes que contienen el campo de encabezado especificado y el valor de ese campo de encabezado contiene las palabras especificadas.|
+|El encabezado coincide con patrones|condición: *HeaderMatchesPatterns* <br/> excepción: *ExceptIfHeaderMatchesPatterns*|Tabla hash|Los mensajes que contienen el campo de encabezado especificado y el valor de ese campo de encabezado contiene las expresiones regulares especificadas.|
 
 ### <a name="message-properties"></a>Propiedades de los mensajes
 
@@ -155,9 +151,9 @@ To configure the sender address location at a DLP rule level, the parameter is _
 
 |condición o excepción en DLP|parámetros de condición/excepción en Microsoft 365 PowerShell|tipo de propiedad|description|
 |---|---|---|---|
-|Con importancia|condición: *WithImportance* <br/> *excepción: ExceptIfWithImportance*|Importancia|Mensajes marcados con el nivel de importancia especificado.|
+|Con importancia|condición: *WithImportance* <br/> excepción: *ExceptIfWithImportance*|Importancia|Mensajes marcados con el nivel de importancia especificado.|
 |El juego de caracteres de contenido contiene palabras|condición: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*|CharacterSets|Mensajes que contienen alguno de los nombres de juego de caracteres especificados.|
-|Tiene invalidación de remitente|condición: *HasSenderOverride* <br/> *excepción: ExceptIfHasSenderOverride*|N/D|Mensajes en los que el remitente ha elegido invalidar una directiva de prevención de pérdida de datos (DLP). Para obtener más información acerca de las directivas DLP, [vea Learn about data loss prevention](./dlp-learn-about-dlp.md)|
+|Tiene invalidación de remitente|condición: *HasSenderOverride* <br/> excepción: *ExceptIfHasSenderOverride*|N/D|Mensajes en los que el remitente ha elegido invalidar una directiva de prevención de pérdida de datos (DLP). Para obtener más información acerca de las directivas DLP, [vea Learn about data loss prevention](./dlp-learn-about-dlp.md)|
 |Coincidencias de tipo de mensaje|condición: *MessageTypeMatches* <br/> excepción: *ExceptIfMessageTypeMatches*|MessageType|Mensajes del tipo especificado.|
 |El tamaño del mensaje es mayor o igual que|condición: *MessageSizeOver* <br/> excepción: *ExceptIfMessageSizeOver*|`Size`|Mensajes en los que el tamaño total (mensaje más archivos adjuntos) es mayor o igual al valor especificado. **Nota**: Los límites de tamaño de los mensajes en los buzones se evalúan antes de las reglas de flujo de correo. Un mensaje que es demasiado grande para un buzón se rechazará antes de que una regla con esta condición sea capaz de actuar en el mensaje.|
 |
@@ -174,15 +170,15 @@ En esta tabla se describen las acciones disponibles en DLP.
 |---|---|---|---|
 |Establecer encabezado|SetHeader|Primera propiedad: *Nombre de encabezado* </br> Segunda propiedad: *Valor de encabezado*|El parámetro SetHeader especifica una acción para la regla DLP que agrega o modifica un campo de encabezado y un valor en el encabezado del mensaje. Este parámetro usa la sintaxis "HeaderName:HeaderValue". Puede especificar varios pares de nombre de encabezado y valor separados por comas|
 |Quitar encabezado|RemoveHeader|Primera propiedad: *MessageHeaderField*</br> Segunda propiedad: *String*|El parámetro RemoveHeader especifica una acción para la regla DLP que quita un campo de encabezado del encabezado del mensaje. Este parámetro usa la sintaxis "HeaderName" o "HeaderName:HeaderValue". Puede especificar varios nombres de encabezado o pares de nombre de encabezado y valor separados por comas|
-|Redirigir el mensaje a usuarios específicos|*RedirectMessageTo*|Direcciones|Redirige el mensaje a los destinatarios especificados. El mensaje no se entrega a los destinatarios originales y no se envía ninguna notificación al remitente ni a los destinatarios originales.|
-|Reenviar el mensaje para su aprobación al administrador del remitente|Moderado|Primera propiedad: *ModerateMessageByManager*</br> Segunda propiedad: *Boolean*|El parámetro Moderate especifica una acción para la regla DLP que envía el mensaje de correo electrónico a un moderador. Este parámetro usa la sintaxis: @{ModerateMessageByManager = <$true \| $false>;|
+|Redirigir el mensaje a usuarios específicos|*RedirectMessageTo*|Addresses|Redirige el mensaje a los destinatarios especificados. El mensaje no se entrega a los destinatarios originales y no se envía ninguna notificación al remitente ni a los destinatarios originales.|
+|Reenviar el mensaje para su aprobación al administrador del remitente|Moderado|Primera propiedad: *ModerateMessageByManager*</br> Segunda propiedad: *Boolean*|El parámetro Moderate especifica una acción para la regla DLP que envía el mensaje de correo electrónico a un moderador. Este parámetro usa la sintaxis: @{ModerateMessageByManager = <$true \|$false>;|
 |Reenviar el mensaje para su aprobación a aprobadores específicos|Moderado|Primera propiedad: *ModerateMessageByUser*</br>Segunda propiedad: *Addresses*|El parámetro Moderate especifica una acción para la regla DLP que envía el mensaje de correo electrónico a un moderador. Este parámetro usa la sintaxis: @{ ModerateMessageByUser = @("emailaddress1","emailaddress2",..."emailaddressN")}|
-|Agregar destinatario|AddRecipients|Primera propiedad: *Field*</br>Segunda propiedad: *Addresses*|Agrega uno o varios destinatarios al campo Para/Cc/CCO del mensaje. Este parámetro usa la sintaxis: @{<AddToRecipients \| CopyTo \| BlindCopyTo> = "emailaddress"}|
-|Agregar el administrador del remitente como destinatario|AddRecipients|Primera propiedad: *AddedManagerAction*</br>Segunda propiedad: *Field*|Agrega el administrador del remitente al mensaje como el tipo de destinatario especificado (To, Cc o Bcc) o redirige el mensaje al administrador del remitente sin notificar al remitente ni al destinatario. Esta acción solo funciona si el atributo Manager del remitente se define en Active Directory. Este parámetro usa la sintaxis: @{AddManagerAsRecipientType = "<Para \| cc \| cco>"}|
+|Agregar destinatario|AddRecipients|Primera propiedad: *Field*</br>Segunda propiedad: *Addresses*|Agrega uno o varios destinatarios al campo Para/Cc/CCO del mensaje. Este parámetro usa la sintaxis: @{<AddToRecipients \|CopyTo \|BlindCopyTo> = "emailaddress"}|
+|Agregar el administrador del remitente como destinatario|AddRecipients|Primera propiedad: *AddedManagerAction*</br>Segunda propiedad: *Field*|Agrega el administrador del remitente al mensaje como el tipo de destinatario especificado (To, Cc o Bcc) o redirige el mensaje al administrador del remitente sin notificar al remitente ni al destinatario. Esta acción solo funciona si el atributo Manager del remitente se define en Active Directory. Este parámetro usa la sintaxis: @{AddManagerAsRecipientType = "<Para \|cc \|cco>"}|
 Asunto de anteponer|PrependSubject|Cadena|Agrega el texto especificado al principio del campo Subject del mensaje. Considere la posibilidad de usar un espacio o un signo de dos puntos (:) como último carácter del texto especificado para diferenciarlo del texto del asunto original.  </br>Para evitar que se agregue la misma cadena a los mensajes que ya contienen el texto del asunto (por ejemplo, respuestas), agregue la excepción "El asunto contiene palabras" (ExceptIfSubjectContainsWords) a la regla.|
-|Aplicar declinación de responsabilidades HTML|ApplyHtmlDisclaimer|Primera propiedad: *Text*</br>Segunda propiedad: *Location*</br>Tercera propiedad: *Acción de reserva*|Aplica la declinación de responsabilidades HTML especificada a la ubicación necesaria del mensaje.</br>Este parámetro usa la sintaxis: @{ Text = " " ; Location = <Append \| Prepend>; FallbackAction = <Wrap \| Ignore \| Reject> }|
+|Aplicar declinación de responsabilidades HTML|ApplyHtmlDisclaimer|Primera propiedad: *Text*</br>Segunda propiedad: *Location*</br>Tercera propiedad: *Acción de reserva*|Aplica la declinación de responsabilidades HTML especificada a la ubicación necesaria del mensaje.</br>Este parámetro usa la sintaxis: @{ Text = " " ; Location = <Append \|Prepend>; FallbackAction = <Wrap \|Ignore \|Reject> }|
 |Quitar Cifrado de mensajes de Office 365 protección de derechos y derechos|RemoveRMSTemplate|No aplicable|Quita Office 365 cifrado aplicado en un correo electrónico|
-|Entregar el mensaje a la cuarentena hospedada |_Quarantine_|N/D| Esta acción se encuentra actualmente en **versión preliminar pública.** Durante esta fase, los correos electrónicos puestos en cuarentena por directivas DLP mostrarán el tipo de directiva como ExchangeTransportRule.</br> Entrega el mensaje a la cuarentena en EOP. Para obtener más información, vea [Quarantined email messages in EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
+|Entregar el mensaje a la cuarentena hospedada |_Quarantine_|N/D| Esta acción se encuentra actualmente en **versión preliminar pública**. Durante esta fase, los correos electrónicos puestos en cuarentena por directivas DLP mostrarán el tipo de directiva como ExchangeTransportRule.</br> Entrega el mensaje a la cuarentena en EOP. Para obtener más información, vea [Mensajes de correo electrónico en cuarentena en EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
 |
 
 <!--|Modify Subject|ModifySubject|PswsHashTable | Remove text from the subject line that matches a specific pattern and replace it with different text. See the example below. You can: </br>- **Replace** all matches in the subject with the replacement text </br>- **Append** to remove all matches in the subject and inserts the replacement text at the end of the subject. </br>- **Prepend** to remove all matches and inserts the replacement text at the beginning of the subject. See ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|-->

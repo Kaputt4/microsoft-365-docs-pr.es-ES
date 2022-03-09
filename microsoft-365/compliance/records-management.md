@@ -17,15 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom:
+- admindeeplinkCOMPLIANCE
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la administración de registros de Microsoft 365, puede aplicar programaciones de retención en un plan de archivos para administrar la retención, la declaración de registros y la eliminación.
-ms.openlocfilehash: d5d4752e76a2a39b1c5fafab964d13ce11873e9b
-ms.sourcegitcommit: f5854c27de231d446e13a45b56c6bcd018175c52
+ms.openlocfilehash: c7546216a935960e5c4b66b37bb3308d0a69e89e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62083064"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324821"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Aprenda sobre la administración de registros en Microsoft 365
 
@@ -51,7 +52,7 @@ Use las siguientes funciones para dar soporte a la solución de administración 
 
 Con estas funciones, puede incorporar los requisitos y las programaciones de retención de su organización en una solución de administración de registros para administrar la retención, la declaración de registros y la eliminación para dar soporte a todo el ciclo de vida del contenido.
 
-Además de la documentación en línea, puede resultar útil descargar una [presentación con preguntas frecuentes](https://aka.ms/MIPC/Blog-RecordsManagementWebinar) de un seminario web sobre la administración de registros. La grabación del seminario web real ya no está disponible.
+Además de la documentación en línea, puede resultar útil descargar un [conjunto de diapositivas con las preguntas más frecuentes](https://aka.ms/MIPC/Blog-RecordsManagementWebinar) de un seminario web sobre la administración de registros. La grabación del seminario web propiamente dicho ya no está disponible.
 
 ## <a name="records"></a>Registros
 
@@ -91,9 +92,9 @@ Una etiqueta de retención estándar tiene opciones de retención y acciones, pe
 
 Notas al pie:
 
-<sup>1</sup> Permitido de forma predeterminada, pero puede ser bloqueado por una configuración de inquilino para archivos de más de 0 bytes: Vaya al nodo **Administración de registros** en el centro de cumplimiento de Microsoft 365 > **Configuración de administración de registros** > **Etiquetas de retención** > **Permita la edición de propiedades de registro** y, a continuación, desactive la configuración **Permitir usuarios para editar las propiedades del registro**.
+<sup>1</sup> De forma predeterminada, está permitida la edición de las propiedades de un registro bloqueado, pero se puede bloquear mediante una opción de configuración de espacio empresarial en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/) > **Administración de registros** > **Configuración de administración de registros** > **Etiquetas de retención** > **Permitir la edición de propiedades del registro**.
 
-<sup>2</sup> Para SharePoint y OneDrive, se puede bloquear como una configuración de espacio empresarial en el Centro de cumplimiento de Microsoft 365 > **Administración de registros** > **Configuración de administración de registros** > **Etiquetas de retención** > **Eliminación de elementos**
+<sup>2</sup> En SharePoint y OneDrive, el borrado de elementos etiquetados se puede bloquear como una opción de configuración de espacio empresarial en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/) > **Administración de registros** > **Configuración de administración de registros** > **Etiquetas de retención** > **Borrado de elementos**.
 
 Cuando se aplica una etiqueta de retención a un elemento de lista que tiene datos adjuntos de documento, ese documento no hereda la configuración de retención y se puede eliminar del elemento de lista. En cambio, si se declara un registro con una etiqueta de retención, los datos adjuntos del documento heredarán la configuración de retención y no se podrán eliminar.
 

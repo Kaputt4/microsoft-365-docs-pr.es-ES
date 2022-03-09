@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 Informes en el Centro de administración: OneDrive para la Empresa actividad'
+title: Microsoft 365 OneDrive para la Empresa de actividad
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el OneDrive de uso de la organización y conozca la actividad de cada usuario OneDrive, el número de archivos compartidos y el uso del almacenamiento.
-ms.openlocfilehash: 8cfd6dfbcff15c118f9ad54ef29e5cec6cf4d6bf
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 52e925774ba2315f582f1b5ba50a4a75fe221c10
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648860"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400801"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365 Informes en el Centro de administración: OneDrive para la Empresa actividad
+# <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365 informes en el Centro de administración: OneDrive para la Empresa actividad
 
 El panel Microsoft 365 informes le muestra la introducción a la actividad en todos los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle más información pormenorizada acerca de las actividades dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
   
@@ -44,7 +44,7 @@ Puede ver las actividades en el informe OneDrive seleccionando la **pestaña** A
 
 Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![OneDrive de actividad: elija columnas.](../../media/252f311f-ffde-4e5a-9158-2b822bf86964.png)
 
-También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos.
+También puede exportar los datos del informe a un Excel .csv archivo seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos.
 
 Puede visualizar el informe de **actividad de OneDrive para la Empresa** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
@@ -52,12 +52,12 @@ Puede visualizar el informe de **actividad de OneDrive para la Empresa** para ve
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |Nombre de usuario del propietario de la OneDrive cuenta.  <br/> |
-|Fecha de última actividad (UTC)  <br/> |La fecha más reciente en la que se realizó una actividad de archivo OneDrive cuenta para el intervalo de fechas seleccionado. . Para ver las actividades realizadas en una fecha específica, seleccione la fecha directamente en el gráfico.  <br/> |
+|Fecha de última actividad (UTC)  <br/> |La última fecha en la que se realizó una actividad de archivo en la OneDrive para el intervalo de fechas seleccionado. . Para ver las actividades realizadas en una fecha específica, seleccione la fecha directamente en el gráfico.  <br/> |
 |Archivos vistos o editados  <br/> |El número de archivos que el usuario cargó, descargó, modificó o visualizó.   <br/> |
-|Archivos sincronizados  <br/> |El número de archivos que se han sincronizado desde el dispositivo local de un usuario con la cuenta OneDrive usuario. <br/> |
+|Archivos sincronizados  <br/> |El número de archivos que se han sincronizado desde el dispositivo local de un usuario a la cuenta OneDrive usuario. <br/> |
 |Archivos compartidos internamente  <br/> | El número de archivos que se han compartido con usuarios de la organización o con usuarios de grupos (que pueden incluir usuarios externos).  <br/> |
 |Archivos compartidos externamente  <br/> |El número de archivos que se han compartido con usuarios externos a la organización. <br/>|
-|Deleted  <br/> | Esto indica que se quitó la licencia del usuario.  <br/> NOTA: La actividad de un usuario eliminado seguirá mostrándose en un informe siempre y cuando se le haya concedido una licencia en algún momento durante el período de tiempo seleccionado. En la columna **Eliminado** puede observar que es posible que el usuario ya no esté activo, pero ha contribuido a los datos del informe.  <br/> |
+|Eliminada  <br/> | Esto indica que se quitó la licencia del usuario.  <br/> NOTA: La actividad de un usuario eliminado seguirá mostrándose en un informe siempre y cuando se le haya concedido una licencia en algún momento durante el período de tiempo seleccionado. En la columna **Eliminado** puede observar que es posible que el usuario ya no esté activo, pero ha contribuido a los datos del informe.  <br/> |
 |Fecha de eliminación  <br/> |La fecha en la que se quitó la licencia del usuario. <br/>|
 |Producto asignado  <br/> |Los Microsoft 365 que tienen licencia para el usuario.|
 |||

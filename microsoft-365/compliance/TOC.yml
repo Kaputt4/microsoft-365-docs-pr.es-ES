@@ -396,6 +396,8 @@
       items:
         - name: Información sobre las etiquetas de confidencialidad
           href: sensitivity-labels.md
+        - name: Por qué elegir el etiquetado integrado de MIP para aplicaciones de Office
+          href: sensitivity-labels-aip.md
         - name: Empezar a usar las etiquetas de confidencialidad
           href: get-started-with-sensitivity-labels.md
         - name: Crear y publicar etiquetas de confidencialidad
@@ -410,6 +412,8 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Habilitar la coautoría para documentos cifrados por etiquetas de confidencialidad
           href: sensitivity-labels-coauthoring.md
+        - name: Establecer el tipo de vínculo de uso compartido predeterminado mediante etiquetas de confidencialidad
+          href: sensitivity-labels-default-sharing-link.md
         - name: Administrar etiquetas de confidencialidad en las aplicaciones de Office
           href: sensitivity-labels-office-apps.md
     - name: Cifrado
@@ -774,7 +778,7 @@
               href: export-a-content-search-report.md
             - name: Usar un script para agregar usuarios a una retención de eDiscovery
               href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
-            - name: Crear un informe de retención de eDiscovery
+            - name: Usar un script para crear un informe de suspensiones
               href: create-a-report-on-holds-in-ediscovery-cases.md
             - name: Ver las estadísticas de los resultados de la búsqueda
               href: view-keyword-statistics-for-content-search.md
@@ -830,8 +834,15 @@
               href: manage-hold-notification.md
             - name: Confirmar una notificación de retención
               href: acknowledge-hold-notification.md
-        - name: Administrar suspensiones
+            - name: Administrar responsables emisores
+              href: advanced-ediscovery-issuing-officers.md
+            - name: Administrar plantillas de comunicaciones de custodios
+              href: advanced-ediscovery-communications-library.md
+        - name: Administrar retenciones
           href: managing-holds.md
+          items:
+            - name: Usar un script para crear un informe de suspensiones
+              href: create-a-report-on-holds-in-ediscovery-cases.md
         - name: Administrar errores de procesamiento
           href: processing-data-for-case.md
           items:
@@ -1036,8 +1047,10 @@
           href: compliance-manager-templates-format-excel.md
         - name: Lista de plantillas del Administrador de cumplimiento
           href: compliance-manager-templates-list.md
-        - name: Asignar y completar las acciones de mejora
+        - name: Trabajar con acciones de mejora
           href: compliance-manager-improvement-actions.md
+        - name: Crear y administrar directivas de alertas
+          href: compliance-manager-alert-policies.md
         - name: Cómo se calcula su puntuación de cumplimiento
           href: compliance-score-calculation.md
         - name: Herramienta de análisis de configuración de cumplimiento

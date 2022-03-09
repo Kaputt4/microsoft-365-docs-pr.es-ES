@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 Informes en el Centro de administración: actividad de formularios'
+title: Centro de administración de Microsoft 365 de actividad de formularios
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,15 +19,15 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo obtener un informe de actividad de Microsoft Forms mediante el panel Microsoft 365 informes en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 900ae6c273d47785296b94622060f2fe3b6dc0ca
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+description: Obtenga información sobre cómo obtener un informe de actividad de Microsoft Forms mediante el panel de informes de Microsoft 365 en el Centro de administración de Microsoft 365.
+ms.openlocfilehash: 7b44dfe9fe8582a9efa7d768e9136b77f5d4219b
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60652877"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400922"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365 Informes en el Centro de administración: actividad de formularios
+# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365 informes en el Centro de administración: actividad de formularios
 
 El panel Microsoft 365 informes le muestra la introducción a la actividad en todos los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle más información pormenorizada acerca de las actividades dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
   
@@ -44,7 +44,7 @@ Puede ver las actividades en el informe formularios seleccionando la **pestaña*
 
 Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Informe de actividad de formularios: elija columnas.](../../media/0c9b0b69-5dc7-43ea-8e2c-54407b6ce2ab.png)
 
-También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
+También puede exportar los datos del informe a un Excel .csv archivo seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
 
 El **informe de actividad** formularios se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   

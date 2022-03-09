@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 informes en el Centro de administración: OneDrive para la Empresa uso'
+title: Microsoft 365 OneDrive para la Empresa de uso
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Obtenga el OneDrive para la Empresa de uso para conocer el número total de archivos y almacenamiento usados en toda la organización. '
-ms.openlocfilehash: 3a7cf36be7d0ae12acf1a1ad6d9ace8a83afc2bd
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d3b884f374cf3dde572bd67ad905fc308a1701d1
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61918220"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400787"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>Microsoft 365 informes en el Centro de administración: OneDrive para la Empresa uso
 
@@ -42,20 +42,20 @@ Por ejemplo, la tarjeta de OneDrive en el panel le ofrece una vista general del 
   
 ## <a name="interpret-the-onedrive-usage-report"></a>Interpretar el informe de uso de OneDrive
 
-Puede ver el uso en el informe OneDrive selección de la **pestaña** Uso.<br/>![Microsoft 365: Microsoft OneDrive de uso.](../../media/3cdaf2fb-1817-479b-a0e1-2afa228690cf.png)
+Puede ver el uso en el informe OneDrive mediante la pestaña **Uso**.<br/>![Microsoft 365: informe Microsoft OneDrive de uso.](../../media/3cdaf2fb-1817-479b-a0e1-2afa228690cf.png)
 
 Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![OneDrive de uso: elija columnas.](../../media/9ee80f25-cfe3-411d-8e31-08f1507d18c1.png)
 
-También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
+También puede exportar los datos del informe a un Excel .csv archivo seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
 
-El **OneDrive para la Empresa de uso** se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
+El **OneDrive para la Empresa de** uso se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
 |Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |URL  <br/> |La dirección web del usuario OneDrive. <br/> |
-|Deleted  <br/> |El estado de eliminación del OneDrive. Pueden pasar al menos 7 días hasta que las cuentas se marquen como eliminadas.  <br/> |
-|Owner  <br/> |Nombre de usuario del administrador principal de la OneDrive.   <br/> |
+|Eliminada  <br/> |El estado de eliminación del OneDrive. Pueden pasar al menos 7 días hasta que las cuentas se marquen como eliminadas.  <br/> |
+|Propietario  <br/> |Nombre de usuario del administrador principal del OneDrive.   <br/> |
 |Nombre principal del propietario  <br/> |La dirección de correo electrónico del propietario del OneDrive. <br/> |
 |Fecha de última actividad (UTC)  <br/> | La última fecha en que se realizó una actividad de archivo en el OneDrive. Si la OneDrive no ha tenido actividad de archivos, el valor se mostrará en blanco.  <br/> |
 |Archivos  <br/> |El número de archivos de la OneDrive. <br/>|

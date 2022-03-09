@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: 8be6fc228a623f3a1f76efdf56354ba30beb9650
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 252d32e0f301bf332bf8143082ec86be2f1072ea
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767693"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320051"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
@@ -41,7 +41,7 @@ Para leer el anuncio de lanzamiento, consulte la entrada de blog [La coautoría 
 
 Antes de habilitar esta configuración para admitir la coautoría en las aplicaciones de escritorio de Office, es importante comprender que esta acción realiza cambios en los metadatos de etiquetado que se guardan y leen desde archivos de Office.
 
-En los metadatos de etiquetado se incluye información que identifica el espacio empresarial y la etiqueta de confidencialidad aplicada. El cambio que realiza esta configuración es el formato de metadatos y la ubicación para los archivos Word, Excel y PowerPoint. No necesita realizar ninguna acción para archivos cifrados o correos electrónicos; el cambio de metadatos de los archivos cifrados es compatible con versiones anteriores y no hay cambios en los correos electrónicos. Sin embargo necesita ser consciente de los cambios de metadatos de los archivos cifrados que se pueden actualizar automáticamente pero que no son compatibles con versiones anteriores.
+En los metadatos de etiquetado se incluye información que identifica el espacio empresarial y la etiqueta de confidencialidad aplicada. El cambio que realiza esta configuración es el formato de metadatos y la ubicación para los archivos Word, Excel y PowerPoint. No necesita realizar ninguna acción para archivos cifrados o correos electrónicos, ya que el cambio de metadatos de los archivos cifrados es compatible con versiones anteriores y no hay cambios en los correos electrónicos. Sin embargo necesita ser consciente de los cambios de metadatos de los archivos cifrados que se pueden actualizar automáticamente pero que no son compatibles con versiones anteriores.
 
 Este cambio afecta a los archivos que acaba de etiquetar y a los archivos que ya están etiquetados. Cuando use aplicaciones y servicios compatibles con la configuración de coautoría:
 - Para los archivos que se etiquetaron recientemente, solo se usan el nuevo formato y la ubicación para los metadatos de etiquetado.
@@ -81,8 +81,8 @@ Asegúrese de entender los siguientes requisitos previos antes de activar esta c
 - Aplicaciones de Microsoft 365 para empresas:
     - **Windows**: versión mínima 2107 del Canal actual o del Canal empresarial mensual
     - **macOS**: versión mínima 16.51
-    - **iOS**: aún no compatible
-    - **Android**: aún no compatible
+    - **iOS**: ahora en versión preliminar cuando [opta por participar](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) con una versión mínima 2.58
+    - **Android**: ahora en versión preliminar cuando [opta por participar](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) con una versión mínima 16.0.14931
 
 - Todas las aplicaciones, servicios y herramientas operativas de su espacio empresarial deben admitir los nuevos [metadatos de etiquetado](#metadata-changes-for-sensitivity-labels). Si usa alguna de las siguientes, compruebe las versiones mínimas requeridas:
     
@@ -107,6 +107,12 @@ Los servicios de Microsoft 365 admiten automáticamente los nuevos metadatos de 
 - [Directivas DLP que usan etiquetas de confidencialidad como condiciones](dlp-sensitivity-label-as-condition.md)
 - [Microsoft Defender for Cloud Apps configurado para aplicar etiquetas de confidencialidad](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
+### <a name="opt-in-to-the-preview-of-co-authoring-for-ios-and-android"></a>Participar en la versión preliminar de la coautoría para iOS y Android
+
+Para probar la versión preliminar de la coautoría para iOS y Android, debe tener las versiones mínimas indicadas en la sección anterior y también solicitar que el inquilino se agregue a la versión preliminar: [Consentimiento para habilitar la coautoría de archivos cifrados con etiquetas de confidencialidad en dispositivos móviles](https://ncv.microsoft.com/5Oob3oDj1O)
+
+Para más información, vea el siguiente anuncio de entrada de blog: [La coautoría en documentos cifrados de Microsoft Information Protection está ahora en versión preliminar pública en dispositivos móviles](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/3081369)
+
 ## <a name="limitations"></a>Limitaciones
 
 Antes de habilitar la configuración de espacio empresarial para la coautoría de archivos cifrados con etiquetas de confidencialidad, asegúrese de comprender las siguientes limitaciones de esta característica.
@@ -115,7 +121,7 @@ Antes de habilitar la configuración de espacio empresarial para la coautoría d
     
     Específico de Excel: Los metadatos para una etiqueta de confidencialidad que no aplica cifrado pueden eliminarse de un archivo si alguien edita y guarda el archivo con una versión de Excel que no admite los cambios de metadatos de etiquetado para etiquetas de confidencialidad.
 
-- Las aplicaciones de Office no son compatibles para iOS y Android actualmente.
+- Las aplicaciones de Office compatibles con iOS y Android se encuentran actualmente en [versión preliminar](https://office.com/insider).
 
 - La coautoría y el autoguardado no son compatibles y no funcionan en documentos de Office etiquetados y cifrados que usan cualquiera de las siguientes [configuraciones para el cifrado](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **Permitir a los usuarios asignar permisos cuando aplican la etiqueta** y la casilla **En Word, PowerPoint y Excel, pedir a los usuarios que especifiquen los permisos** está seleccionada. Esta configuración se denomina a veces "permisos definidos por el usuario".

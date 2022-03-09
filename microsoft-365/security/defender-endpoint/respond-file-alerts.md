@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e3f4efb5c52acb40ecb30ac17a8b144de9eaa106
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 0e7253993a1c05bd25e6dd13865826c42dd7603a
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245392"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400256"
 ---
 # <a name="take-response-actions-on-a-file"></a>Realizar acciones de respuesta en un archivo
 
@@ -35,7 +35,7 @@ ms.locfileid: "62245392"
 
 Responda rápidamente a los ataques detectados deteniendo y anulando archivos o bloqueando un archivo. Después de realizar acciones en los archivos, puede comprobar los detalles de la actividad en el Centro de acciones.
 
-Las acciones de respuesta están disponibles en la página de perfil detallada de un archivo. Una vez en esta página, puede cambiar entre los diseños de página nuevo y antiguo cambiando la **nueva página archivo**. El resto de este artículo describe el diseño de página más reciente.
+Las acciones de respuesta están disponibles en la página de perfil detallada de un archivo. Una vez en esta página, puede cambiar entre los diseños de página nuevo y antiguo cambiando la **nueva página Archivo**. El resto de este artículo describe el diseño de página más reciente.
 
 Las acciones de respuesta se ejecutan en la parte superior de la página de archivos e incluyen:
 
@@ -45,7 +45,7 @@ Las acciones de respuesta se ejecutan en la parte superior de la página de arch
 - Consultar a un experto en amenazas
 - Centro de actividades
 
-También puede enviar archivos para un análisis profundo, para ejecutar el archivo en un espacio aislado seguro en la nube. Cuando se complete el análisis, se obtiene un informe detallado que proporciona información sobre el comportamiento del archivo. Puede enviar archivos para análisis profundo y leer informes anteriores seleccionando la **pestaña Análisis profundo.** Se encuentra debajo de las tarjetas de información de archivos.
+También puede enviar archivos para un análisis profundo, para ejecutar el archivo en un espacio aislado seguro en la nube. Cuando se complete el análisis, se obtiene un informe detallado que proporciona información sobre el comportamiento del archivo. Puede enviar archivos para análisis profundo y leer informes anteriores seleccionando la **pestaña Análisis profundo** . Se encuentra debajo de las tarjetas de información de archivos.
 
 Algunas acciones requieren ciertos permisos. En la tabla siguiente se describe qué acción pueden realizar ciertos permisos en archivos ejecutables portátiles (PE) y que no son PE:
 
@@ -72,7 +72,7 @@ Puede contener un ataque en su organización al detener el proceso malintenciona
 >
 > - El dispositivo en el que estás llevando a Windows 10, versión 1703 o posterior y Windows 11
 > - El archivo no pertenece a editores de terceros de confianza o no está firmado por Microsoft
-> - Antivirus de Microsoft Defender debe ejecutarse al menos en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
+> - Antivirus de Microsoft Defender debe ejecutarse al menos en modo pasivo. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
 La **acción Detener y poner en** cuarentena archivo incluye la detención de procesos en ejecución, la cuarentena de los archivos y la eliminación de datos persistentes, como las claves del Registro.
 
@@ -85,11 +85,11 @@ Esta acción tiene efecto en dispositivos con Windows 10, versión 1703 o poster
 
 1. Seleccione el archivo que desea detener y poner en cuarentena. Puede seleccionar un archivo de cualquiera de las siguientes vistas o usar el cuadro De búsqueda:
 
-   - **Alertas:** haga clic en los vínculos correspondientes de la línea de tiempo Descripción o Detalles de la escala de tiempo del artículo de alerta
+   - **Alertas** : haga clic en los vínculos correspondientes de la línea de tiempo Descripción o Detalles de la escala de tiempo del artículo de alerta
    - **Cuadro de** búsqueda: **seleccione Archivo** en el menú desplegable y escriba el nombre del archivo
 
    > [!NOTE]
-   > La acción de detener y poner en cuarentena el archivo está limitada a un máximo de 1000 dispositivos. Para detener un archivo en un mayor número de dispositivos, vea [Agregar indicador para bloquear o permitir el archivo](#add-indicator-to-block-or-allow-a-file).
+   > La acción de detener y poner en cuarentena el archivo está limitada a un máximo de 1000 dispositivos. Para detener un archivo en un número mayor de dispositivos, consulta [Agregar indicador para bloquear o permitir el archivo](#add-indicator-to-block-or-allow-a-file).
 
 2. Vaya a la barra superior y seleccione **Detener y Poner en cuarentena archivo**.
 
@@ -103,14 +103,14 @@ Esta acción tiene efecto en dispositivos con Windows 10, versión 1703 o poster
 
    ![Imagen del centro de acciones de archivos de detenerse y poner en cuarentena.](images/atp-stopnquarantine-file.png)
 
-   - **Tiempo de envío:** muestra cuándo se envió la acción.
-   - **Correcto:** muestra el número de dispositivos en los que se ha detenido y puesto en cuarentena el archivo.
-   - **Error:** muestra el número de dispositivos en los que se ha fallado la acción y los detalles sobre el error.
-   - **Pendiente:** muestra el número de dispositivos desde los que aún se ha detenido y puesto en cuarentena el archivo. Esto puede tardar tiempo en casos en los que el dispositivo está desconectado o no conectado a la red.
+   - **Tiempo de envío** : muestra cuándo se envió la acción.
+   - **Correcto** : muestra el número de dispositivos en los que se ha detenido y puesto en cuarentena el archivo.
+   - **Error** : muestra el número de dispositivos en los que se ha fallado la acción y los detalles sobre el error.
+   - **Pendiente** : muestra el número de dispositivos desde los que aún se ha detenido y puesto en cuarentena el archivo. Esto puede tardar tiempo en casos en los que el dispositivo está desconectado o no conectado a la red.
 
 4. Seleccione cualquiera de los indicadores de estado para ver más información sobre la acción. Por ejemplo, seleccione **Error** al ver dónde falló la acción.
 
-#### <a name="notification-on-device-user"></a>Notificación en el usuario del dispositivo
+#### <a name="notification-on-device-userf"></a>Notificación en userf del dispositivo
 
 Cuando se quita el archivo de un dispositivo, se muestra la siguiente notificación:
 
@@ -130,7 +130,7 @@ Puede revertir y quitar un archivo de la cuarentena si ha determinado que está 
 
    1. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
 
-2. Escriba el siguiente comando y presione **Entrar**:
+2. Escriba el siguiente comando y presione **ENTRAR**:
 
    ```dos
    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
@@ -146,7 +146,7 @@ Puede revertir y quitar un archivo de la cuarentena si ha determinado que está 
 
 ## <a name="download-or-collect-file"></a>Descargar o copiar archivos
 
-Si selecciona **Descargar archivo de** las acciones de respuesta, puede descargar un archivo local protegido con contraseña .zip que contenga el archivo. Aparecerá un flyout donde puede registrar un motivo para descargar el archivo y establecer una contraseña.
+Al seleccionar **Descargar archivo de** las acciones de respuesta, puede descargar un archivo local protegido con contraseña .zip que contenga el archivo. Aparecerá un flyout donde puede registrar un motivo para descargar el archivo y establecer una contraseña.
 
 De forma predeterminada, debería poder descargar archivos que se encuentran en cuarentena.
 
@@ -154,11 +154,11 @@ De forma predeterminada, debería poder descargar archivos que se encuentran en 
 
 ### <a name="download-quarantined-files"></a>Descargar archivos en cuarentena
 
-Los archivos que han sido puestos en cuarentena por Antivirus de Microsoft Defender o el equipo de seguridad se guardarán de forma compatible de acuerdo con las configuraciones [de envío de ejemplo](enable-cloud-protection-microsoft-defender-antivirus.md). El equipo de seguridad puede descargar los archivos directamente desde la página de detalles del archivo a través del botón "Descargar archivo". **Esta característica de vista previa está activada de forma predeterminada.**
+Los archivos que han sido puestos en cuarentena por Antivirus de Microsoft Defender o el equipo de seguridad se guardarán de forma compatible de acuerdo con las configuraciones de [envío de ejemplo](enable-cloud-protection-microsoft-defender-antivirus.md). El equipo de seguridad puede descargar los archivos directamente desde la página de detalles del archivo a través del botón "Descargar archivo". **Esta característica de vista previa está activada de forma predeterminada**.
 
-La ubicación depende de la configuración geográfica de su organización (UE, Reino Unido o EE. UU.). Un archivo en cuarentena solo se recopilará una vez por organización. Obtenga más información sobre la protección de datos de Microsoft desde el Portal de confianza de servicio en https://aka.ms/STP .
+La ubicación depende de la configuración geográfica de su organización (UE, Reino Unido o EE. UU.). Un archivo en cuarentena solo se recopilará una vez por organización. Obtenga más información sobre la protección de datos de Microsoft desde el Portal de confianza de servicio en https://aka.ms/STP.
 
-Tener activada esta configuración puede ayudar a los equipos de seguridad a examinar archivos potencialmente no deseados e investigar incidentes de forma rápida y menos arriesgada. Sin embargo, si necesita desactivar esta configuración, vaya **a Configuración** Características avanzadas de extremos descargar archivos en cuarentena para \>  \>  \>  ajustar la configuración. [Más información sobre las características avanzadas](advanced-features.md)
+Tener activada esta configuración puede ayudar a los equipos de seguridad a examinar archivos potencialmente no deseados e investigar incidentes de forma rápida y menos arriesgada. Sin embargo, si necesita desactivar esta configuración, vaya  **a Configuración** \> Características avanzadas de **endpoints** \>  \> Descargar archivos en cuarentena para ajustar la configuración. [Más información sobre las características avanzadas](advanced-features.md)
 
 #### <a name="backing-up-quarantined-files"></a>Copia de seguridad de archivos en cuarentena
 
@@ -187,7 +187,7 @@ Impedir la propagación posterior de un ataque en la organización mediante la p
 
 > [!IMPORTANT]
 >
-> - Esta característica está disponible si su organización usa Antivirus de Microsoft Defender y la protección entregada en la nube está habilitada. Para obtener más información, vea [Manage cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+> - Esta característica está disponible si su organización usa Antivirus de Microsoft Defender y la protección entregada en la nube está habilitada. Para obtener más información, consulte [Manage cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 >
 > - La versión del cliente Antimalware debe ser 4.18.1901.x o posterior.
 > - Esta característica está diseñada para evitar que el malware sospechoso (o los archivos potencialmente malintencionados) se descarguen de la web. Actualmente es compatible con archivos ejecutables portátiles (PE), incluidos _.exe_ archivos _.dll_ archivos. La cobertura se extenderá con el tiempo.
@@ -201,7 +201,7 @@ Impedir la propagación posterior de un ataque en la organización mediante la p
 
 ### <a name="enable-the-block-file-feature"></a>Habilitar la característica de archivo de bloqueo
 
-Para empezar a bloquear archivos, primero debe activar la característica [ **Bloquear**](advanced-features.md) o permitir en Configuración.
+Para empezar a bloquear archivos, primero debe activar la característica [**Bloquear o** permitir en](advanced-features.md) Configuración.
 
 ### <a name="allow-or-block-file"></a>Permitir o bloquear archivo
 
@@ -211,9 +211,9 @@ Los archivos bloqueados automáticamente por un indicador no aparecerán en el C
 
 Consulta [Administrar indicadores para](manage-indicators.md) obtener más información sobre cómo bloquear y generar alertas en los archivos.
 
-Para detener el bloqueo de un archivo, quite el indicador. Puede hacerlo a través de la acción **Editar indicador** en la página de perfil del archivo. Esta acción estará visible en la  misma posición que la acción Agregar indicador, antes de agregar el indicador.
+Para detener el bloqueo de un archivo, quite el indicador. Puede hacerlo a través de la acción **Editar indicador** en la página de perfil del archivo. Esta acción estará visible en la misma posición que la acción  Agregar indicador, antes de agregar el indicador.
 
-También puede editar indicadores desde la **página Configuración,** en  \> **Indicadores de reglas**. Los indicadores se enumeran en esta área mediante el hash de su archivo.
+También puede editar indicadores desde la **página Configuración**, en **Indicadores** \> **de reglas**. Los indicadores se enumeran en esta área mediante el hash de su archivo.
 
 ## <a name="consult-a-threat-expert"></a>Consultar a un experto en amenazas
 
@@ -239,24 +239,24 @@ También se muestran todos los demás detalles relacionados, como la fecha y hor
 Las investigaciones de seguridad cibernética suelen desencadenarse mediante una alerta. Las alertas están relacionadas con uno o varios archivos observados que a menudo son nuevos o desconocidos. La selección de un archivo le lleva a la vista de archivos donde puede ver los metadatos del archivo. Para enriquecer los datos relacionados con el archivo, puede enviar el archivo para un análisis profundo.
 
 La característica análisis profundo ejecuta un archivo en un entorno de nube seguro y totalmente instrumentado. Los resultados de análisis profundo muestran las actividades del archivo, los comportamientos observados y los artefactos asociados, como archivos eliminados, modificaciones del Registro y comunicación con ip.
-Actualmente, el análisis profundo admite un amplio análisis de archivos ejecutables portátiles (PE) (incluidos _.exe_ archivos _.dll_ portátil).
+Actualmente, el análisis profundo admite un amplio análisis de archivos ejecutables portátiles (PE) (incluidos _.exe_ archivos _.dll_ archivos).
 
 El análisis profundo de un archivo tarda varios minutos. Una vez completado el análisis de archivos, la pestaña Análisis profundo se actualizará para mostrar un resumen y la fecha y hora de los últimos resultados disponibles.
 
-El resumen de análisis profundo incluye una lista de *comportamientos observados,* algunos de los cuales pueden indicar actividad malintencionada y *observables,* incluidos los ip contactados y los archivos creados en el disco. Si no se encontró nada, estas secciones mostrarán un breve mensaje.
+El resumen de análisis profundo incluye una lista de *comportamientos observados*, algunos de los cuales pueden indicar actividad malintencionada y *observables*, incluidos los ip contactados y los archivos creados en el disco. Si no se encontró nada, estas secciones mostrarán un breve mensaje.
 
 Los resultados del análisis profundo se comparan con la inteligencia de amenazas y cualquier coincidencia generará alertas adecuadas.
 
-Use la característica de análisis profundo para investigar los detalles de cualquier archivo, normalmente durante una investigación de una alerta o por cualquier otro motivo en el que sospeche un comportamiento malintencionado. Esta característica está disponible en la **pestaña Análisis profundo,** en la página de perfil del archivo.
+Use la característica de análisis profundo para investigar los detalles de cualquier archivo, normalmente durante una investigación de una alerta o por cualquier otro motivo en el que sospeche un comportamiento malintencionado. Esta característica está disponible en la **pestaña Análisis profundo** , en la página de perfil del archivo.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
 
-**Enviar** para análisis profundo está habilitado cuando el archivo está disponible en la colección de muestras back-end de Defender for Endpoint, o si se observó en un dispositivo Windows 10 que admite el envío a un análisis profundo.
+**Enviar para un** análisis profundo está habilitado cuando el archivo está disponible en la colección de muestras de back-end de Defender for Endpoint, o si se observó en un dispositivo Windows 10 que admite el envío a un análisis profundo.
 
 > [!NOTE]
 > Solo los archivos Windows 10 y Windows 11 se pueden recopilar automáticamente.
 
-También puedes enviar un ejemplo a través del Portal del Centro de seguridad de [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx) si el archivo no se  observó en un dispositivo Windows 10 (o Windows 11) y esperar a que el botón Enviar para análisis profundo esté disponible.
+También puedes enviar un ejemplo a través del [Portal del Centro](https://www.microsoft.com/security/portal/submission/submit.aspx) de seguridad de Microsoft si el archivo no se observó en un dispositivo Windows 10 (o Windows 11) y esperar a que el botón Enviar para  análisis profundo esté disponible.
 
 > [!NOTE]
 > Debido a los flujos de procesamiento back-end en el Portal del Centro de seguridad de Microsoft, podría haber hasta 10 minutos de latencia entre el envío de archivos y la disponibilidad de la característica de análisis profundo en Defender para endpoint.
@@ -265,8 +265,8 @@ También puedes enviar un ejemplo a través del Portal del Centro de seguridad d
 
 1. Seleccione el archivo que desea enviar para un análisis profundo. Puede seleccionar o buscar un archivo en cualquiera de las vistas siguientes:
 
-    - **Alertas:** seleccione los vínculos de archivo de **la línea de tiempo Descripción** o **Detalles** de la línea de tiempo de artículo de alerta
-    - **Lista dispositivos:** seleccione los vínculos de archivo de la **sección Descripción** o **Detalles** de la sección Dispositivo **en la** organización
+    - **Alertas** : seleccione los vínculos de archivo de **la línea de tiempo Descripción** **o Detalles** de la línea de tiempo de artículo de alerta
+    - **Lista dispositivos** : seleccione los vínculos de archivo de la **sección Descripción** o **Detalles** de **la sección Dispositivo en la** organización
     - **Cuadro de** búsqueda: **seleccione Archivo** en el menú desplegable y escriba el nombre del archivo
 
 2. En la **pestaña Análisis profundo** de la vista archivo, seleccione **Enviar**.
@@ -274,7 +274,7 @@ También puedes enviar un ejemplo a través del Portal del Centro de seguridad d
    ![Solo puede enviar archivos PE en la sección de detalles del archivo.](images/submit-file.png)
 
    > [!NOTE]
-   > Solo se admiten archivos PE, incluidos _.exe_ y _.dll_ archivos.
+   > Solo se admiten archivos PE, _incluidos.exe_ y _.dll_ archivos.
 
    Se muestra una barra de progreso y proporciona información sobre las distintas etapas del análisis. A continuación, puede ver el informe cuando se haya realizado el análisis.
 
@@ -293,7 +293,7 @@ Puede ver el informe completo que proporciona detalles en las secciones siguient
 Los detalles proporcionados pueden ayudarle a investigar si hay indicaciones de un posible ataque.
 
 1. Seleccione el archivo que envió para un análisis profundo.
-2. Seleccione la **pestaña Análisis profundo.** Si hay informes anteriores, el resumen del informe aparecerá en esta pestaña.
+2. Seleccione la **pestaña Análisis profundo** . Si hay informes anteriores, el resumen del informe aparecerá en esta pestaña.
 
     ![El informe de análisis profundo muestra información detallada en varias categorías.](images/analysis-results-nothing500.png)
 
@@ -318,9 +318,9 @@ Si encuentra un problema al intentar enviar un archivo, pruebe cada uno de los s
       Value = 1 - allow sample collection
     ```
 
-5. Cambie la unidad organizativa a través de la directiva de grupo. Para obtener más información, vea [Configure with Group Policy](configure-endpoints-gp.md).
+5. Cambie la unidad organizativa a través de la directiva de grupo. Para obtener más información, vea [Configurar con directiva de grupo](configure-endpoints-gp.md).
 
-6. Si estos pasos no resuelven el problema, póngase en [contacto winatp@microsoft.com](mailto:winatp@microsoft.com).
+6. Si estos pasos no resuelven el problema, póngase en contacto con el soporte técnico.
 
 ## <a name="related-topics"></a>Temas relacionados
 

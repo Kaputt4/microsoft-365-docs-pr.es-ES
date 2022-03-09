@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 Informes en el Centro de administración: informe Yammer de uso de dispositivos'
+title: Centro de administración de Microsoft 365 Yammer de uso de dispositivos
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén el Yammer de uso del dispositivo para saber qué dispositivos usan los usuarios Yammer dispositivos.
-ms.openlocfilehash: 25dbf966d0756cf90e39dcbe69d587434d3de3ae
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: fc59060cc4ec0ad3d34aae2b165bcb36ee1aee89
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60648748"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400425"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Microsoft 365 Informes en el Centro de administración: informe Yammer de uso de dispositivos
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Microsoft 365 informes en el Centro de administración: informe Yammer de uso de dispositivos
 
 El panel Microsoft 365 informes le muestra la introducción a la actividad en todos los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
   
@@ -36,7 +36,7 @@ Los informes de uso de dispositivos de Yammer proporcionan información sobre lo
 ## <a name="how-do-i-get-to-the-yammer-device-usage-report"></a>¿Cómo puedo tener acceso al informe de uso de dispositivos de Yammer?
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso. 
-2. En la página principal del panel, haga clic en el **botón Ver más** en la Yammer panel.
+2. En la página principal del panel, haga clic en el botón **Ver más** en la Yammer panel.
   
 ## <a name="interpret-the-yammer-device-usage-report"></a>Interpretar el informe Yammer uso de dispositivos
 
@@ -44,14 +44,14 @@ Puedes ver el uso en el informe de OneDrive seleccionando la **pestaña Uso del*
 
 Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Yammer de uso de dispositivos: elija columnas.](../../media/fc1fc8db-e197-4878-85c7-7ba0d67b9379.png)
 
-También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
+También puede exportar los datos del informe a un Excel .csv archivo seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
 
 El **Yammer de** uso del dispositivo se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
 |Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
-|Nombre de usuario  <br/> |La dirección de correo electrónico del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo. Esta cuadrícula muestra a los usuarios que iniciaron sesión Yammer la cuenta Microsoft 365 o que iniciaron sesión en la red mediante el inicio de sesión único. <br/> |
+|Nombre de usuario  <br/> |La dirección de correo electrónico del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo. Esta cuadrícula muestra los usuarios que iniciaron sesión Yammer la cuenta Microsoft 365 o que iniciaron sesión en la red mediante el inicio de sesión único. <br/> |
 |Nombre para mostrar  <br/> |Nombre completo del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo.  <br/> |
 |Estado del usuario  <br/> |Uno de tres valores: Activo, Eliminado o Suspendido. En estos informes se muestran datos para usuarios activos, suspendidos y eliminados. No reflejan usuarios pendientes, porque los usuarios pendientes no publican, leen o indican que les gusta un mensaje.   <br/> |
 |Fecha de cambio de estado (UTC)  <br/> |La fecha en la que se cambió el estado del usuario en Yammer.  <br/> |

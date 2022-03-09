@@ -7,14 +7,19 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: null
+search.appverid: ''
 ms.collection:
-  - enabler-strategic
-  - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear y configurar un modelo precompilado en SharePoint Syntex.
+ms.openlocfilehash: 7867fe197fd53e6095f51869fc5aaad18af9157b
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401054"
 ---
-
 # <a name="use-a-prebuilt-model-to-extract-info-from-invoices-or-receipts-in-microsoft-sharepoint-syntex"></a>Usar un modelo precompilado para extraer información de facturas o recibos en Microsoft SharePoint Syntex
 
 Los modelos precompilados están previamente entrenados para reconocer documentos y la información estructurada de los documentos. En lugar de tener que crear un nuevo modelo personalizado desde cero, puede iterar en un modelo preentrenado existente para agregar campos específicos que se ajusten a las necesidades de su organización. 
@@ -124,6 +129,9 @@ Para cambiar el nombre de un extractor desde el panel **Extractores** :
 - Para guardar los cambios y volver a la página principal del modelo, en el panel **Extractores** , **seleccione Guardar y salir**.
 
 - Si está listo para aplicar el modelo a una biblioteca, en el área del documento, seleccione **Siguiente**. En el **panel Agregar a biblioteca** , elija la biblioteca a la que desea agregar el modelo y, a continuación, **seleccione Agregar**.
+
+> [!TIP]
+> Puede cambiar la vista de la biblioteca de documentos para que se ajuste a sus necesidades o preferencias. Para obtener más información, [vea Cambiar la vista en una biblioteca de documentos](apply-a-model.md#change-the-view-in-a-document-library).
 
 ## <a name="see-also"></a>Consulte también
 

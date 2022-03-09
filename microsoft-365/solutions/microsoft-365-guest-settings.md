@@ -16,15 +16,16 @@ f1.keywords: NOCSH
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 ms.localizationpriority: high
 recommendations: false
 description: Más información sobre las opciones de configuración de uso compartido de invitados disponibles en Microsoft 365 que pueden afectar al uso compartido con personas de fuera de su organización.
-ms.openlocfilehash: bf0a85f43733ac90d55dde9ded38efd273a9c485
-ms.sourcegitcommit: d7cdbdda9b829c49caa3105eb47d3f26b88a5daf
+ms.openlocfilehash: 2b6aac7a02c6c7c5feda041a2b06147c67dfa285
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "61660115"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316539"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referencia de la configuración de uso compartido de invitados de Microsoft 365
 
@@ -68,7 +69,7 @@ El Centro de administración de Microsoft 365 tiene configuración a nivel de or
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
-|Permitir que los usuarios agreguen nuevos invitados a la organización|Activado|Si se establece en **Sí**, los miembros de Azure AD pueden invitar a través de Azure AD; si se establece en **No**, no pueden hacerlo. Cuando se establece en **Sí**, los miembros del Grupo de Microsoft 365 pueden invitar con la aprobación del propietario; cuando se establece en **No**, los miembros del Grupo de Microsoft 365 pueden invitar con la aprobación del propietario, pero los propietarios deben ser administradores globales para poder aprobar. <p> Tenga en cuenta que la opción **Los miembros pueden invitar** hace referencia a los miembros de Azure AD (frente a los invitados) y no a los miembros del sitio o grupo de Microsoft 365. <p> Esto es idéntico a la opción de configuración **Los miembros pueden invitar** en las relaciones de organización de Azure Active Directory.|
+|Permitir que los usuarios agreguen nuevos invitados a la organización|Activado|Si se establece en **Sí**, los miembros de Azure AD pueden invitar a través de Azure AD; si se establece en **No**, no pueden hacerlo. Cuando se establece en **Sí**, los miembros de grupos de Microsoft 365 pueden invitar a invitados con la aprobación del propietario; cuando se establece en **No**, los miembros de grupos de Microsoft 365 pueden invitar a invitados con aprobación de propietario, pero los propietarios deben ser administradores globales para aprobar. <p> Tenga en cuenta que la opción **Los miembros pueden invitar** hace referencia a los miembros de Azure AD (frente a los invitados) y no a los miembros del sitio o grupo de Microsoft 365. <p> Esto es idéntico a la opción de configuración **Los miembros pueden invitar** en las relaciones de organización de Azure Active Directory.|
 
 ### <a name="microsoft-365-groups"></a>Grupos de Microsoft 365
 
@@ -133,7 +134,7 @@ El conmutador principal de acceso de invitado de Teams, **Permitir el acceso de 
 |Eliminar mensajes enviados|Activado|Si está **Activado**, los invitados pueden eliminar los mensajes que se enviaron previamente; si está **Desactivado**, no pueden hacerlo.|
 |Chat|Activado|Si está **Activado**, los invitados pueden usar chat en Teams; si está **Desactivado**, no pueden hacerlo.|
 |Usar Giphys en las conversaciones|Activado|Si está **Activado**, los invitados pueden usar Giphys en las conversaciones; si está **Desactivado**, no pueden hacerlo.|
-|Clasificación del contenido de Giphy|Moderado|Si se establece en **Permitir todo el contenido**, los invitados pueden insertar todos los Giphys en chats, independientemente de la clasificación de contenido. Si se establece en **Moderado**, los invitados pueden insertar Giphys en los chats, pero se les restringirá de forma moderada el contenido para adultos. Si se establece en **Estricto**, los invitados pueden insertar Giphys en los chats, pero se les restringirá insertar contenido para adultos.|
+|Clasificación del contenido de Giphy|Moderado|Cuando se establece en **Permitir todo el contenido**, los invitados pueden insertar todos los Giphys en los chats, independientemente de la clasificación del contenido. Si se establece en **Moderado**, los invitados pueden insertar Giphys en los chats, pero se les restringirá de forma moderada el contenido para adultos. Si se establece en **Estricto**, los invitados pueden insertar Giphys en los chats, pero se les restringirá insertar contenido para adultos.|
 |Usar Memes en las conversaciones|Activado|Si está **Activado**, los invitados pueden usar memes en las conversaciones; si está **Desactivado**, no pueden hacerlo.|
 |Usar adhesivos en las conversaciones|Activado|Si está **Activado**, los invitados pueden usar adhesivos en las conversaciones; si está **Desactivado**, no pueden hacerlo.|
 |Permitir el lector inmersivo para ver mensajes|Activado|Si está **Activado**, los invitados pueden ver los mensajes en el lector inmersivo; si está **Desactivado**, no pueden hacerlo.|
@@ -148,7 +149,7 @@ Esta configuración afecta a todos los sitios de la organización. No afecta dir
 
 Como OneDrive es una jerarquía de sitios dentro de SharePoint, la configuración de uso compartido en el nivel de la organización afecta directamente a OneDrive al igual que otros sitios de SharePoint.
 
-**Navegación:** Centro de administración de SharePoint > Uso compartido
+**Navigación:** Centro de administración de SharePoint > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a>
 
 ![Captura de pantalla de la configuración de uso compartido en el nivel de organización de SharePoint.](../media/external-sharing.png)
 
@@ -159,7 +160,7 @@ Como OneDrive es una jerarquía de sitios dentro de SharePoint, la configuració
 
 ### <a name="sharepoint-and-onedrive-advanced-sharing-settings"></a>Configuración de uso compartido avanzado de SharePoint y OneDrive
 
-**Navegación:** Centro de administración de SharePoint > Uso compartido
+**Navigación:** Centro de administración de SharePoint > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a>
 
 ![Captura de pantalla de la configuración de uso compartido adicional en el nivel de organización de SharePoint.](../media/external-sharing.png)
 
@@ -176,7 +177,7 @@ Como OneDrive es una jerarquía de sitios dentro de SharePoint, la configuració
 
 Cuando se comparten archivos y carpetas en SharePoint y OneDrive, los destinatarios con los que se comparte reciben un vínculo con los permisos para el archivo o la carpeta en lugar de obtener acceso directo a ellos. Existen varios tipos de vínculos disponibles y puede elegir el tipo de vínculo predeterminado que se muestra a los usuarios cuando comparten un archivo o una carpeta. También puede establecer permisos y opciones de expiración para vínculos de *Cualquiera*.
 
-**Navegación:** Centro de administración de SharePoint > Uso compartido
+**Navigación:** Centro de administración de SharePoint > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a>
 
 ![Captura de pantalla de la configuración de uso compartido de los archivos y carpetas de nivel de organización de SharePoint.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
@@ -199,7 +200,10 @@ Puede establecer permisos para el uso compartido de invitados para cada sitio de
 
 Si en el sitio se ha aplicado una etiqueta de confidencialidad, puede que dicha etiqueta controle la configuración de uso compartido externo. Para obtener más información, consulte [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
-**Navegación:** Centro de administración de SharePoint > Sitios activos > seleccione el sitio > Editar uso compartido externo
+> [!NOTE]
+> La configuración de uso compartido de sitios de canal solo se puede cambiar mediante el cmdlet de PowerShell [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite).
+
+**Navegación:** Centro de administración de SharePoint > <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a> > seleccionar el sitio > pestaña **Directivas** > **Editar uso compartido externo**
 
 ![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint.](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -211,7 +215,7 @@ Si en el sitio se ha aplicado una etiqueta de confidencialidad, puede que dicha 
 
 Puede establecer valores predeterminados para los tipos de vínculos y permisos, y la configuración de expiración para *Cualquiera* para cada sitio. Cuando se establece en el nivel de sitio, esta configuración reemplaza la configuración de nivel de organización. Tenga en cuenta que, si se deshabilitan los vínculos *Cualquiera* en el nivel de la organización, *Cualquiera* no será un tipo de vínculo disponible en el nivel de sitio.
 
-**Navegación:** Centro de administración de SharePoint > Sitios activos > seleccione el sitio > Editar uso compartido externo
+**Navegación:** Centro de administración de SharePoint > <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a> > seleccionar el sitio > pestaña **Directivas** > **Editar uso compartido externo**
 
 ![Captura de pantalla de la configuración de vínculos para compartir en el nivel de sitio de SharePoint.](../media/sharepoint-site-link-sharing-settings.png)
 

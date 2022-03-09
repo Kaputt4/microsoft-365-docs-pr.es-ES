@@ -196,7 +196,7 @@
 
 
 ### [Configurar opciones de portal]()
-#### [Configurar preferencias](preferences-setup.md)
+#### [Configurar las opciones generales de Defender para punto de conexión](preferences-setup.md)
 #### [General]()
 ##### [Comprobar la ubicación del almacenamiento de datos y actualizar la configuración de retención de datos](data-retention-settings.md)
 ##### [Configurar notificaciones de alerta](configure-email-notifications.md)
@@ -259,6 +259,12 @@
 #### [Habilitar la integración de datos de Corelight](corelight-integration.md)
 #### [Preguntas más frecuentes sobre la detección de dispositivo](device-discovery-faq.md)
 
+### [Inventario de dispositivos]()
+#### [Inventario de dispositivos](machines-view-overview.md)
+#### [Excluir dispositivos](exclude-devices.md)
+#### [Marcas de eventos de escala de tiempo de dispositivo](device-timeline-event-flag.md)
+#### [Administrar etiquetas y grupo de dispositivos](machine-tags.md)
+
 ### [Dispositivos de red](network-devices.md)
 
 ### [Informes de firewalls de host en Microsoft Defender para punto de conexión](host-firewall-reporting.md)
@@ -320,6 +326,7 @@
 #### [Usar el análisis rápido limitado en el Antivirus de Windows Defender](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Optimizar el rendimiento de Antivirus de Microsoft Defender](tune-performance-defender-antivirus.md)
 #### [Compatibilidad con otros productos para la seguridad](microsoft-defender-antivirus-compatibility.md)
+#### [Buscar nombres de detección de malware para Microsoft Defender para punto de conexión](find-defender-malware-name.md)
 
 #### [Obtener actualizaciones contra malware y antivirus](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Administrar el original para las actualizaciones de protección del Antivirus de Windows Defender](manage-protection-updates-microsoft-defender-antivirus.md)
@@ -413,11 +420,6 @@
 ##### [Investigar un dominio](investigate-domain.md)
 ###### [Investigar eventos de conexión que ocurren tras los servidores proxy de reenvío](investigate-behind-proxy.md)
 ##### [Reactivar una cuenta de usuario](investigate-user.md)
-
-#### [Lista de dispositivos]()
-##### [Ver y organizar la lista de dispositivos](machines-view-overview.md)
-##### [Marcas de eventos de escala de tiempo de dispositivo](device-timeline-event-flag.md)
-##### [Administrar etiquetas y grupo de dispositivos](machine-tags.md)
 
 #### [Realizar acciones de respuesta]()
 ##### [Realizar acciones de respuesta en un dispositivo]()
@@ -548,6 +550,12 @@
 ###### [IP]()
 ####### [Obtener alertas relacionadas con IP](get-ip-related-alerts.md)
 ####### [Obtener estadísticas de IP](get-ip-statistics.md)
+
+###### [Biblioteca de respuestas inmediatas]()
+####### [Propiedades y métodos de la biblioteca de respuestas inmediatas](live-response-library-methods.md)
+####### [Archivos de biblioteca de lista](list-library-files.md)
+####### [Cargar en la biblioteca de respuestas inmediatas](upload-library.md)
+####### [Eliminar de la biblioteca](delete-library.md)
 
 
 ###### [Máquina]()

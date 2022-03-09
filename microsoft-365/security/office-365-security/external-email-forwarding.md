@@ -15,12 +15,12 @@ ms.custom:
 description: En este artículo se tratan temas como reenvío de correo electrónico externo, reenvío automático, 5.7.520 Acceso denegado, deshabilitación del reenvío externo, mensajes "El administrador ha deshabilitado el reenvío externo", así como la directiva de correo no deseado saliente.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: db9c790c91e1335853b6647de63edb7ca6ee9a25
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 228bb4402fd67ba8e56dd84b270c64977667ff2d
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168971"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401026"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Controlar el reenvío automático de correo electrónico externo en Microsoft 365
 
@@ -35,19 +35,19 @@ Como administrador, es posible que tenga requisitos de la empresa para restringi
 
 Los siguientes tipos de reenvío automático están disponibles en Microsoft 365:
 
-- Los usuarios pueden configurar [reglas de](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) la Bandeja de entrada para reenviar automáticamente mensajes a remitentes externos (deliberadamente o como resultado de una cuenta comprometida).
-- Los administradores pueden configurar [el reenvío de buzones](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (también conocido como reenvío _SMTP)_ para reenviar automáticamente mensajes a destinatarios externos. El administrador puede elegir si simplemente reenviar mensajes o mantener copias de mensajes reenviados en el buzón.
+- Los usuarios pueden configurar [reglas de la Bandeja](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) de entrada para reenviar automáticamente mensajes a remitentes externos (deliberadamente o como resultado de una cuenta comprometida).
+- Los administradores pueden configurar [el reenvío de buzones](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (también conocido como reenvío _SMTP_) para reenviar automáticamente mensajes a destinatarios externos. El administrador puede elegir si simplemente reenviar mensajes o mantener copias de mensajes reenviados en el buzón.
 
 > [!NOTE]
 > Los usuarios con reenvío automático desde sistemas de correo electrónico locales a través de Microsoft 365 estarán sujetos a los mismos controles de directiva que los buzones de correo en la nube en una próxima actualización. Esta actualización se comunicará a través de la publicación del Centro de mensajes.
 
 Puede usar las directivas del filtro de correo no deseado saliente para controlar el reenvío automático a destinatarios externos. Hay tres opciones disponibles:
 
-- **Automático: controlado por el sistema:** se bloquea el reenvío externo automático. El reenvío automático interno de mensajes seguirá funcionando. Esta configuración es la predeterminada.
+- **Automático: controlado por el sistema**: esta es la configuración predeterminada. Esta configuración es ahora la misma que **Off**. Cuando esta configuración se introdujo originalmente, era equivalente a **On**. Con el tiempo, gracias a los principios de seguridad de forma [predeterminada](secure-by-default.md), esta configuración se cambió gradualmente a **Desactivado** para todos los clientes. Para obtener más información, consulta [esta entrada de blog](https://techcommunity.microsoft.com/t5/exchange-team-blog/all-you-need-to-know-about-automatic-email-forwarding-in/ba-p/2074888). 
 - **On**: El reenvío externo automático está permitido y no restringido.
-- **Desactivado:** el reenvío externo automático está deshabilitado y dará como resultado un informe de no entrega (también conocido como NDR o mensaje de desenviamiento) al remitente.
+- **Desactivado**: el reenvío externo automático está deshabilitado y dará como resultado un informe de no entrega (también conocido como NDR o mensaje de desenviamiento) al remitente.
 
-Para obtener instrucciones sobre cómo configurar estas opciones, vea [Configure outbound spam filtering in EOP](configure-the-outbound-spam-policy.md).
+Para obtener instrucciones sobre cómo configurar estas opciones, consulte [Configurar el filtrado de correo no deseado saliente en EOP](configure-the-outbound-spam-policy.md).
 
 > [!NOTE]
 >
@@ -61,14 +61,22 @@ Para obtener instrucciones sobre cómo configurar estas opciones, vea [Configure
 Como administrador, es posible que ya haya configurado otros controles para permitir o bloquear el reenvío automático de correo electrónico. Por ejemplo:
 
 - [Dominios remotos](/exchange/mail-flow-best-practices/remote-domains/remote-domains) para permitir o bloquear el reenvío automático de correo electrónico a algunos o todos los dominios externos.
-- Condiciones y acciones en Exchange de flujo de correo [(también](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) conocidas como reglas de transporte) para detectar y bloquear mensajes reenviados automáticamente a destinatarios externos.
+- Las condiciones y las acciones Exchange reglas de flujo de [correo (también](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) conocidas como reglas de transporte) para detectar y bloquear mensajes reenviados automáticamente a destinatarios externos.
 
-La configuración de dominio remoto y las reglas de flujo de correo son independientes de la configuración de las directivas de filtro de correo no deseado saliente. Por ejemplo:
+Cuando una configuración permite el reenvío externo, pero otra bloquea el reenvío externo, el bloque suele ganar. En la tabla siguiente se describen ejemplos:
 
-- Se permite el reenvío automático para un dominio remoto, pero se bloquea el reenvío automático en directivas de filtro de correo no deseado saliente. En este ejemplo, se bloquean los mensajes reenviados automáticamente.
-- Permite el reenvío automático en directivas de filtro de correo no deseado saliente, pero usa reglas de flujo de correo o configuración de dominio remoto para bloquear el correo electrónico reenviado automáticamente. En este ejemplo, las reglas de flujo de correo o la configuración de dominio remoto bloquearán los mensajes reenviados automáticamente.
+<br>
 
-Esta independencia de características le permite (por ejemplo) permitir el reenvío automático en directivas de filtro de correo no deseado saliente, pero usar dominios remotos para controlar los dominios externos a los que los usuarios pueden reenviar mensajes.
+****
+
+|Escenario|Resultado|
+|---|---|
+|<ul><li>Configure las opciones de dominio remoto para permitir el reenvío automático.</li><li>El reenvío automático en la directiva de filtro de correo no deseado saliente se establece en **Desactivado**.</li></ul>|Se bloquean los mensajes reenviados automáticamente a los destinatarios de los dominios afectados.|
+|<ul><li>Configure las opciones de dominio remoto para permitir el reenvío automático.</li><li>El reenvío automático en la directiva de filtro de correo no deseado saliente se establece en **Automático: controlado por el sistema**.</li></ul>|Se bloquean los mensajes reenviados automáticamente a los destinatarios de los dominios afectados. <p> Como se describió anteriormente, **Automático: controlado** por el sistema se usa para **significar On**, pero la configuración ha cambiado con el tiempo para **significar Desactivado** en todas las organizaciones. <p> Para mayor claridad, debe configurar la directiva de filtro de correo no deseado saliente en **On** o **Off**.|
+|<ul><li>El reenvío automático en la directiva de filtro de correo no deseado saliente se establece en **On**</li><li>Se usan reglas de flujo de correo o dominios remotos para bloquear el correo electrónico reenviado automáticamente.</li></ul>|Los mensajes reenviados automáticamente a los destinatarios afectados se bloquean mediante reglas de flujo de correo o dominios remotos.|
+|
+
+Puede usar este comportamiento (por ejemplo) para permitir el reenvío automático en directivas de filtro de correo no deseado saliente, pero usar dominios remotos para controlar los dominios externos a los que los usuarios pueden reenviar mensajes.
 
 ## <a name="how-to-find-users-that-are-automatically-forwarding"></a>Cómo buscar usuarios que se reenvía automáticamente
 
@@ -76,21 +84,21 @@ Puede ver información sobre los usuarios que reenvía automáticamente mensajes
 
 La siguiente información es necesaria para crear la regla de flujo de correo en el Centro Exchange administración (EAC):
 
-- **Aplicar esta regla si** (condición): **un encabezado de mensaje** coincide con estos patrones \> **de texto**. Ten en cuenta que es posible que deba hacer clic **en Más opciones** para ver esta opción.
-  - **Nombre de encabezado**: `X-MS-Exchange-Inbox-Rules-Loop`
+- **Aplicar esta regla si** (condición): **un encabezado de mensaje** \> **coincide con estos patrones de texto**. Ten en cuenta que es posible que deba hacer clic **en Más opciones** para ver esta opción.
+  - **Nombre del encabezado**: `X-MS-Exchange-Inbox-Rules-Loop`
   - **Valor de encabezado**: `.`
 
-  La condición tiene este aspecto: el encabezado **'X-MS-Exchange-Inbox-Rules-Loop'** coincide **con '.'**
+  La condición tiene este aspecto: **el encabezado 'X-MS-Exchange-Inbox-Rules-Loop'** coincide **con '.'**
 
   Esta condición coincidirá con cualquier valor del encabezado.
 
-- (Opcional) **Haga lo siguiente** (acción): puede configurar una acción opcional. Por ejemplo, puede usar  la acción Modificar las propiedades del mensaje establecer un encabezado de mensaje , con el nombre de encabezado \>  **X-Forwarded** y el valor **True**. Sin embargo, no es necesario configurar una acción.
-- Establezca **Auditar esta calle con el nivel de gravedad** en el valor **Low,** **Medium** o **High**. Esta configuración permite usar el informe de reglas Exchange [de](view-email-security-reports.md#exchange-transport-rule-report) transporte para obtener detalles de los usuarios que están reenviando.
+- (Opcional) **Haga lo siguiente** (acción): puede configurar una acción opcional. Por ejemplo, puede usar la  \> acción Modificar las propiedades del mensaje establecer un encabezado de **mensaje, con** el nombre de encabezado **X-Forwarded** y el valor **True**. Sin embargo, no es necesario configurar una acción.
+- Establezca **Auditar esta calle con el nivel de gravedad** en el valor **Low**, **Medium** o **High**. Esta configuración le permite usar el informe Exchange [regla de transporte para](view-email-security-reports.md#exchange-transport-rule-report) obtener detalles de los usuarios que están reenviando.
 
 ![Propiedades de regla de flujo de correo en el EAC para que una regla identifique los mensajes reenviados.](../../media/mail-flow-rule-for-forwarded-messages.png)
 
 ## <a name="blocked-email-forwarding-messages"></a>Mensajes de reenvío de correo electrónico bloqueados
 
-Cuando se detecta un mensaje como reenviado  automáticamente y la directiva de filtro de [correo](configure-the-outbound-spam-policy.md) no deseado saliente bloquea esa actividad, el mensaje se devuelve al remitente en un NDR que contiene la siguiente información:
+Cuando se detecta un mensaje como reenviado automáticamente y la directiva de filtro de  [correo](configure-the-outbound-spam-policy.md) no deseado saliente bloquea esa actividad, el mensaje se devuelve al remitente en un NDR que contiene la siguiente información:
 
 `5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)`

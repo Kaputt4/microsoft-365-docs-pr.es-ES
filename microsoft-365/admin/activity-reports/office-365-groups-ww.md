@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 informes en el Centro de administración: Microsoft 365 grupos'
+title: Centro de administración de Microsoft 365 de grupos
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -21,26 +21,26 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenga un informe Microsoft 365 grupos para conocer los grupos y sus actividades.
-ms.openlocfilehash: 4e6963f5026e62b03d95a4f499277259a6773cdb
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: ff3a5fa428bb993dac9a518229744754d106e589
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61520853"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400815"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 informes en el Centro de administración: Microsoft 365 grupos
 
-El panel Microsoft 365 informes le muestra la introducción a la actividad en todos los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe Microsoft 365 grupos, puede obtener información sobre la actividad de los grupos de su organización y ver cuántos grupos se crean y usan.
+El panel Microsoft 365 informes le muestra la introducción a la actividad en todos los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe Microsoft 365 grupos, puede obtener información sobre la actividad de los grupos de la organización y ver cuántos grupos se están creando y utilizando.
   
 ## <a name="how-to-get-to-the-groups-report"></a>Cómo llegar al informe de grupos
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.
 
-2. En la página principal  del panel, haga clic en el botón Ver más en los usuarios activos ( Aplicaciones Microsoft 365 o los usuarios activos - tarjeta de servicios Microsoft 365 para llegar a la página Office 365 informe.
+2. En la página principal del panel, haga  clic en el botón Ver más en la tarjeta Usuarios activos - Aplicaciones Microsoft 365 o Usuarios activos - Microsoft 365 Servicios para llegar a la página Office 365 informe.
   
 ## <a name="interpret-the-groups-report"></a>Interpretar el informe de grupos
 
-Puede ver las activaciones en el informe de Office 365 seleccionando la **pestaña Actividad grupos.**
+Puede ver las activaciones en el informe de Office 365 seleccionando la **pestaña Actividad grupos**.
 
 :::image type="content" alt-text="Microsoft 365: Microsoft Office 365 de grupos." source="../../media/ab90e30b-8938-4110-ab3d-ee472a4cfe21.png" lightbox="../../media/ab90e30b-8938-4110-ab3d-ee472a4cfe21.png":::
 
@@ -48,14 +48,14 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.
 
 :::image type="content" alt-text="Office 365 de actividad de grupos: elija columnas." source="../../media/1600556a-f5f1-47d9-b325-cd77c78f4004.png":::
 
-También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
+También puede exportar los datos del informe a un Excel .csv archivo seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
 
 El **informe** de grupos se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
 
 |Métrica|Definición|
 |:-----|:-----|
 |Nombre del grupo |Nombre del grupo. |
-|Deleted |Número de grupos eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true. |
+|Eliminada |Número de grupos eliminados. Si el grupo se elimina, pero tuvo actividad durante el período de presentación de informes, se mostrará en la cuadrícula con esta marca establecida en true. |
 |Propietario del grupo |Nombre del propietario del grupo. |
 |Fecha de última actividad (UTC) |La última fecha en la que el grupo recibió un mensaje. Es la última fecha en que hubo actividad en una conversación de correo electrónico, Yammer o el sitio. |
 |Tipo |Tipo de grupo. Puede ser un grupo público o privado. |
@@ -63,18 +63,18 @@ El **informe** de grupos se puede ver para ver las tendencias de los últimos 7 
 |Correos electrónicos en Exchange (total) |El número total de elementos en el buzón del grupo. |
 |Almacenamiento de buzones usado para Exchange (MB) |El almacenamiento usado por el buzón del grupo. |
 |SharePoint (total) |El número de archivos almacenados en SharePoint de grupo. |
-|SharePoint (activo) |El número de archivos del sitio de grupo SharePoint que se actuaron (vistos o modificados, sincronizados, compartidos interna o externamente) durante el período de informes. |
+|SharePoint (activo) |Número de archivos del sitio de grupo SharePoint que se actuaron (vistos o modificados, sincronizados, compartidos interna o externamente) durante el período de informes. |
 |Almacenamiento total del sitio usado para SharePoint (MB) |La cantidad de almacenamiento en MB usada durante el período de informes. |
 |Mensajes en Yammer (publicado) |Número de mensajes publicados en el grupo Yammer durante el período de informes. |
-|Mensajes en Yammer (lectura) |Número de conversaciones leídas en el grupo Yammer durante el período de informes. |
+|Mensajes en Yammer (lectura) |El número de conversaciones que se leen en el grupo Yammer durante el período de informes. |
 |Mensajes en Yammer (me gusta) |El número de mensajes que le gustaron en el grupo Yammer durante el período de informes. |
-|Members |El número de miembros del grupo. |
+|Miembros |El número de miembros del grupo. |
 |Miembros externos |El número de usuarios externos del grupo.|
 
 
 ## <a name="related-content"></a>Contenido relacionado
 
 [Microsoft 365 informes en el Centro de administración](activity-reports.md) (artículo)\
-[Informes e información inteligentes en el Centro](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance) de seguridad y & cumplimiento (artículo)\
+[Informes e información inteligentes en el Centro de seguridad y & cumplimiento](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance) (artículo)\
 [Microsoft 365 informes en el centro de administración : Usuarios activos](../../admin/activity-reports/active-users-ww.md) (artículo)
 

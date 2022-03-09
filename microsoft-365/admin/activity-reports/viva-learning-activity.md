@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 Informes en el Centro de administración: actividad Learning Viva'
+title: Centro de administración de Microsoft 365 de actividades Learning Viva
 ms.author: efrene
 author: efrene
 manager: scotv
@@ -18,27 +18,27 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe Microsoft 365 actividad de Viva Learning mediante el panel Microsoft 365 informes de Centro de administración de Microsoft 365.
-ms.openlocfilehash: 64ea4da8e87d1ba1b09a7f85617c6972ce26308e
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 382513700f6008aa2b89f32f23f31b19cce63cab
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60651431"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400397"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---viva-learning-activity"></a>Microsoft 365 Informes en el Centro de administración: actividad Learning Viva
+# <a name="microsoft-365-reports-in-the-admin-center---viva-learning-activity"></a>Microsoft 365 informes en el Centro de administración: actividad Learning Viva
 
-Como administrador Microsoft 365, el panel informes le muestra la información general sobre la actividad en varios productos de la organización. Le permite explorar para obtener una visión más detallada de las actividades específicas de cada producto. Consulte los informes de actividad en el Centro de administración de Microsoft 365. 
+Como administrador Microsoft 365, el panel informes le muestra la introducción a la actividad en varios productos de su organización. Le permite explorar para obtener una visión más detallada de las actividades específicas de cada producto. Consulte los informes de actividad en el Centro de administración de Microsoft 365. 
 
-Por ejemplo, puede comprender la actividad de los usuarios de Viva Learning licencia mirando sus interacciones. También te ayuda a comprender el tipo de características que se usan en la Learning app.
+Por ejemplo, puede comprender la actividad de los usuarios con licencia de Viva Learning viendo sus interacciones. También te ayuda a comprender el tipo de características que se usan en la Learning app.
 
 ## <a name="how-do-i-get-to-the-to-the-viva-learning-activity-report"></a>¿Cómo puedo llegar al informe de actividades Learning Viva?  
 
-1. En el Centro de administración, vaya a la **página Uso**  >  **de** informes. 
-2. En la página principal del panel, seleccione el **botón Ver más** en la tarjeta viva Learning panel. 
+1. En el Centro de administración, vaya a la **página** **ReportsUsage** > . 
+2. En la página principal del panel, seleccione el **botón Ver más** en la tarjeta Viva Learning panel. 
 
-## <a name="interpret-the-microsoft-365-apps-usage-report"></a>Interpretar el informe Aplicaciones Microsoft 365 de uso
+## <a name="interpret-the-microsoft-365-apps-usage-report"></a>Interpretar el Aplicaciones Microsoft 365 de uso
 
-Puede obtener una vista de la actividad de Viva Learning del usuario consultando los gráficos **Usuarios activos** y **Actividades de** usuario.
+Puede obtener una vista de la actividad viva Learning del usuario consultando los gráficos **Usuarios activos** y **Actividades de** usuario.
 
 ![Aplicaciones Microsoft 365 de uso.](../../media/viva-learning-charts.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Habilitar protección de red
 description: Habilite la protección de red con la directiva de grupo, PowerShell o Mobile Device Management y Configuration Manager.
-keywords: Protección de ANetwork, vulnerabilidades, sitio web malintencionado, ip, dominio, dominios, habilitar, activar
+keywords: Protección de red, vulnerabilidades, sitio web malintencionado, ip, dominio, dominios, habilitar, activar
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,17 +10,17 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: ''
+ms.reviewer: mkaminska
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: acf474f472450456014a581366c8860d87607a79
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b21b2f2a69ab9a85f1f5003104969364ae9c6e78
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322651"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63401152"
 ---
 # <a name="turn-on-network-protection"></a>Habilitar protección de red
 
@@ -57,7 +57,8 @@ Si falta la clave, vaya a **SOFTWARE** \> **Microsoft** \> **Windows Defender** 
    - 2, o modo **auditoría**
 
     :::image type="content" alt-text="Clave del Registro de Protección de red." source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
-
+    
+    
 ## <a name="enable-network-protection"></a>Habilitar la protección de red
 
 Habilite la protección de red mediante cualquiera de estos métodos:
@@ -89,6 +90,9 @@ Habilite la protección de red mediante cualquiera de estos métodos:
 ### <a name="mobile-device-management-mdm"></a>Administración de dispositivos móviles (MDM)
 
 Use [el proveedor ./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) configuration service provider (CSP) para habilitar o deshabilitar la protección de red o habilitar el modo de auditoría.
+
+[Actualice la plataforma antimalware de Microsoft Defender a la versión más](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc) reciente antes de habilitar o deshabilitar la protección de red o habilitar el modo de auditoría.
+
 
 ### <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
@@ -164,6 +168,7 @@ Confirme que la protección de red está habilitada en un equipo local mediante 
 
 7. En la cinta de opciones, seleccione **Implementar** para implementar la directiva en una colección.
 
+
 > [!IMPORTANT]
 > Una vez que implemente una directiva de Protección contra vulnerabilidades de seguridad desde Configuration Manager, la configuración de Protección contra vulnerabilidades de seguridad no se quitará de los clientes si quita la implementación. `Delete not supported` se registra en el exploitguardhandler.log del cliente de Configuration Manager si se quita la implementación de Exploit Guard del cliente. <!--CMADO8538577-->
 > El siguiente script de PowerShell se puede ejecutar en contexto system para quitar esta configuración:<!--CMADO9907132-->
@@ -183,7 +188,7 @@ Confirme que la protección de red está habilitada en un equipo local mediante 
 > $exploitGuardObject.Put()
 >```  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Protección de red](network-protection.md)
 

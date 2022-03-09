@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 informes en el centro de administración: actividad Ideas Viva'
+title: Centro de administración de Microsoft 365 de actividad Ideas Viva
 ms.author: efrene
 author: efrene
 manager: scotv
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe Aplicaciones Microsoft 365 de uso para la actividad de Viva Ideas en el panel Microsoft 365 informes de Centro de administración de Microsoft 365.
-ms.openlocfilehash: 1e9fd70b0fa50efba2984ca7aa75a5c8670100ad
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: bb7f36c1db632fc1745c9dbe8f63f9e6f20909b4
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319240"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400676"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>Microsoft 365 informes en el centro de administración: actividad Ideas Viva
 

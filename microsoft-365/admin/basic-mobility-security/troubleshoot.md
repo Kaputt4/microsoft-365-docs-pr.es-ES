@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Pruebe estos pasos para realizar un seguimiento de los problemas básicos de movilidad y seguridad
-ms.openlocfilehash: f625fbc642392ee575b35f225f5e65b942362c4a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2ac25e36fced24e5b50e7e89d36dae3e842fda04
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165945"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400369"
 ---
 # <a name="troubleshoot-basic-mobility-and-security"></a>Solucionar problemas de movilidad y seguridad básicas
 
@@ -39,9 +39,9 @@ Para empezar, compruebe lo siguiente:
 
 ## <a name="ios-phone-or-tablet"></a>Teléfono o tableta iOS
 
-- Asegúrese de que ha configurado un certificado de APNs. Para obtener más información, consulta [Crear un certificado APNs para dispositivos iOS.](create-an-apns-certificate-for-ios-devices.md)
+- Asegúrese de que ha configurado un certificado de APNs. Para obtener más información, consulta [Crear un certificado apns para dispositivos iOS](create-an-apns-certificate-for-ios-devices.md).
 
-- En **Configuración** general (o administración de   >  ****   >  **dispositivos),** asegúrese de que un perfil de administración no esté instalado. Si es así, quítela.
+- En  **Configuración** >  **GeneralProfile** >  **(o Administración de dispositivos),** asegúrese de que un perfil de administración no esté instalado. Si es así, quítela.
 
 - Si ves el mensaje de error "El dispositivo no se inscribió", inicia sesión en Microsoft 365 y asegúrate de que se haya asignado una licencia que incluya Exchange Online al usuario que ha iniciado sesión en el dispositivo.
 
@@ -53,19 +53,19 @@ Para empezar, compruebe lo siguiente:
 
 ## <a name="windows-rt"></a>Windows RT
 
-- Asegúrese de que el dominio está configurado en Microsoft 365 para trabajar con movilidad y seguridad básicas. Para obtener más información, consulta [Configurar movilidad básica y seguridad.](set-up.md)
+- Asegúrese de que el dominio está configurado en Microsoft 365 para trabajar con movilidad y seguridad básicas. Para obtener más información, consulta [Configurar movilidad básica y seguridad](set-up.md).
     
-- Asegúrese de que el usuario elige **Activar en** lugar de   elegir **Unirse.**
+- Asegúrese de que el usuario  **eligeTurn Onrather**  en lugar de  **elegirJoin**.
 
 ## <a name="windows-10-pc"></a>Windows 10 PC
 
-- Asegúrese de que el dominio está configurado en Microsoft 365 para trabajar con movilidad y seguridad básicas. Para obtener más información, consulta [Configurar movilidad básica y seguridad.](set-up.md)
+- Asegúrese de que el dominio está configurado en Microsoft 365 para trabajar con movilidad y seguridad básicas. Para obtener más información, consulta [Configurar movilidad básica y seguridad](set-up.md).
     
-- A menos que haya Azure Active Directory Premium, asegúrese de que el usuario elija **Inscribirse** en administración de dispositivos solo en lugar de elegir    **Conectar**.
+- A menos que Azure Active Directory Premium, asegúrate de que el usuario  **eligeEnrollar en Administración**  de dispositivos antes de  **elegir Conectar**.
 
 ## <a name="android-phone-or-tablet"></a>Teléfono o tableta Android
 
-- Asegúrate de que el dispositivo ejecuta Android 4.4 o posterior.
+- Asegúrate de que el dispositivo ejecuta Android.
 
 - Asegúrate de que Chrome esté actualizado y esté configurado como el explorador predeterminado.
 
