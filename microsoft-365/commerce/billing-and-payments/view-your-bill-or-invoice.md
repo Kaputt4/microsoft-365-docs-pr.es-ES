@@ -2,8 +2,8 @@
 title: Ver la factura
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -15,22 +15,22 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_billing
 - TopSMBIssues
 - okr_smb
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
 - adminvideo
 description: Busque la factura o el extracto en el Centro de administración de Microsoft 365. También puede guardar e imprimir una copia de la factura.
 ms.date: 01/25/2022
-ms.openlocfilehash: b7a8c6a1ec58fdeb74349f06a3a9ef25c390482d
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 02905b1e31dc295d8b5d79bc150a0c93823c9dd7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355013"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63316371"
 ---
 # <a name="view-your-bill-or-invoice"></a>Ver la factura o recibo
 
@@ -49,7 +49,7 @@ Debe ser un administrador global o de facturación para realizar los pasos descr
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
 
 1. En el Centro de administración de Microsoft 365, seleccione **Facturación** en el panel de navegación izquierdo y, a continuación, seleccione la pestaña <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">**Facturas**</a>.
-1. Seleccione una factura para verla. Si no ve ninguna factura, seleccione **Filtrar por: Últimos 6 meses** de la lista desplegable.
+1. Seleccione una factura para verla. Si no ve una factura, seleccione **Filtrar por: últimos 6 meses** en la lista desplegable.
 1. Para ver los detalles de la factura, seleccione **Descargar PDF** en la esquina superior derecha de la misma.
 
 ## <a name="view-a-bill-or-invoice"></a>Ver una factura

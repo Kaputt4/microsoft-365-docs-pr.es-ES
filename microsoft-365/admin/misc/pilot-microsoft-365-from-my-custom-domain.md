@@ -2,8 +2,8 @@
 title: Prueba piloto de Microsoft 365 desde mi dominio personalizado
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información acerca de cómo probar la funcionalidad de correo electrónico de mi dominio personalizado en un buzón de Microsoft 365 usando solo dos cuentas de prueba.
-ms.openlocfilehash: bde6daacba3e7adad1a69748074638e651445d8f
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: cc977afd32c1b3b660ec01285c36132a8e1d27b2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421335"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323743"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Prueba piloto de Microsoft 365 desde mi dominio personalizado
 
@@ -137,7 +137,7 @@ Asegúrese de que ha realizado lo siguiente en Microsoft 365 u Office 365:
 
 ### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. Configurar un conector desde Microsoft 365 u Office 365 hacia su servidor de correo electrónico
 
-Para crear un conector en Microsoft 365 u Office 365, seleccione **Administrador** > **Exchange** para ir al Centro de administración de Exchange. A continuación, seleccione **flujo de correo** > <a href="https://go.microsoft.com/fwlink/?linkid=2183136" target="_blank">**conectores**</a>.
+Para crear un conector en Microsoft 365 u Office 365, seleccione **Administrador** > **Exchange** para ir al Centro de administración de Exchange. A continuación, seleccione **flujo de correo** > <a href="https://go.microsoft.com/fwlink/?linkid=2183136" target="_blank">**Conectores**</a>.
 
 Configure los conectores con el asistente.
 

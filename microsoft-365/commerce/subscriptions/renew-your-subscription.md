@@ -2,8 +2,8 @@
 title: Renovar Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_subscriptions
 - SaRA
 - AdminSurgePortfolio
-- commerce_subscriptions
 - AdminTemplateSet
 search.appverid: MET150
 description: Obtenga información acerca de cómo renovar la mayoría de la suscripción de Microsoft 365 al activar o desactivar la facturación periódica.
 ms.date: 05/04/2021
-ms.openlocfilehash: 2fe78acab6423bbedefe2cad9dc7ae7ae3efe449
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b50e92bf71d4c172b55aa69db33fc3572d660684
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370085"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63330165"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renovar Microsoft 365 para empresas
 
@@ -60,7 +60,7 @@ Si ha pagado por adelantado su suscripción con una clave de producto, la suscri
 
 2. Elija la suscripción para la que quiere administrar la facturación periódica.
 3. En la página Detalles de la suscripción, en **Configuración de suscripción y pago**, seleccione **Editar facturación periódica**.
-4. En el panel **Editar la configuración de facturación periódica**, seleccione **Activado**, **Activado pero renovar una vez** o **Desactivar**.
+4. En el panel **Editar facturación periódica**, seleccione **Activado**, **Activado pero renovar una vez** o **Desactivar**.
 5. Seleccione **Guardar**.
 
     > [!NOTE]

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 6802947e786f13a577a6f3bf58ea3001599ee4d8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: f617338448b71541d5ab0d914ab1a3198d4f486c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766085"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319665"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -69,7 +69,7 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
 
     Específico para el etiquetado automático para Exchange:
     
-    - A diferencia del etiquetado manual o el etiquetado automático con aplicaciones de Office, los adjuntos PDF y los adjuntos de Office también se examinan en busca de las condiciones que especifique en la directiva de etiquetado automático. Cuando hay una coincidencia, el correo electrónico se etiqueta, pero no los datos adjuntos.
+    - A diferencia del etiquetado manual o el etiquetado automático con las aplicaciones de Office, tanto los datos adjuntos de PDF como los datos adjuntos de Office también se analizan en función de las condiciones que especifique en la directiva de etiquetado automático. Cuando haya una coincidencia, el correo electrónico se etiquetará, pero no los datos adjuntos.
         - En el caso de los archivos PDF, si la etiqueta aplica cifrado, estos archivos se cifran mediante el [Cifrado de mensajes de Office 365 (OME)](ome.md) cuando el espacio empresarial está [habilitado para los datos adjuntos de PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
         - Para estos archivos de Office, son compatibles Word, PowerPoint y Excel. Si la etiqueta aplica cifrado, se cifran mediante el [Cifrado de mensajes de Office 365 (OME)](ome.md).
     - Si tiene reglas de flujo de correo de Exchange o directivas de prevención de pérdida de datos (DLP) que aplican el cifrado IRM: cuando estas reglas o directivas y una directiva de etiquetado automático identifican contenido, se aplica la etiqueta. Si esa etiqueta aplica el cifrado, la configuración de IRM de las reglas de flujo de correo de Exchange o de las directivas DLP se pasa por alto. Sin embargo, si esa etiqueta no aplica el cifrado, la configuración de IRM de las reglas de flujo de correo o de las directivas DLP se aplica además de la etiqueta.
@@ -124,7 +124,7 @@ Comportamiento predeterminado si el etiquetado automático invalidará una etiqu
 - El etiquetado automático reemplazará una [etiqueta de confidencialidad de menor prioridad](sensitivity-labels.md#label-priority-order-matters) que se aplicó automáticamente, pero no una etiqueta de prioridad más alta.
     
     > [!TIP]
-    > Por ejemplo, la etiqueta de confidencialidad en la parte superior de la lista del centro de cumplimiento se denomina **Público** con un número de pedido (prioridad) de 0 y la etiqueta de confidencialidad de la parte inferior de la lista se denomina **Extremadamente confidencial** con un número de pedido (prioridad de 4). La etiqueta **Extremadamente confidencial** puede invalidar la etiqueta **Público** pero no al revés.
+    > Por ejemplo, la etiqueta de confidencialidad en la parte superior de la lista del centro de cumplimiento se denomina **Público** con un criterio de ordenación (prioridad) de 0, y la etiqueta de confidencialidad de la parte inferior de la lista se denomina **Extremadamente confidencial** con un criterio de ordenación (prioridad de 4). La etiqueta **Extremadamente confidencial** puede invalidar la etiqueta **Público** pero no al revés.
 
 Solo para las directivas de etiquetado automático de correo electrónico, puede seleccionar una configuración para invalidar siempre una etiqueta de confidencialidad existente, independientemente de cómo se haya aplicado.
 
@@ -311,7 +311,7 @@ En todos los casos, los archivos coincidentes se etiquetan hasta que la cuenta d
 
 5. En la página **Cambiar el nombre de la directiva de etiquetado automático**: proporcione un nombre único y, opcionalmente, una descripción que ayude a identificar la etiqueta aplicada automáticamente, las ubicaciones y las condiciones que identifican el contenido que se va a etiquetar.
 
-6. En la página **Elegir ubicaciones en las que quiere aplicar la etiqueta**: seleccione y especifique las ubicaciones de Exchange, SharePoint y OneDrive. Si no desea mantener el valor predeterminado de **Todos** para las ubicaciones elegidas, seleccione el vínculo para elegir instancias específicas. Después, seleccione **Siguiente**.
+6. En la página **Elegir ubicaciones en las que quiere aplicar la etiqueta**: seleccione y especifique las ubicaciones de Exchange, SharePoint y OneDrive. Si no desea mantener el valor predeterminado de **Todo** para las ubicaciones elegidas, seleccione el vínculo para elegir las instancias específicas que desea incluir o seleccione el vínculo para elegir las instancias específicas que desea excluir. Después, seleccione **Siguiente**.
 
     ![Página Elegir ubicaciones para la configuración de etiquetado automático.](../media/locations-auto-labeling-wizard.png)
     
@@ -354,7 +354,7 @@ En todos los casos, los archivos coincidentes se etiquetan hasta que la cuenta d
     
     - **Reemplazar automáticamente las etiquetas ya existentes que tienen la misma prioridad o una prioridad inferior**: aplicable a los correos electrónicos entrantes y salientes, al seleccionar esta configuración, se garantiza que siempre se aplicará una etiqueta de confidencialidad coincidente. Si no selecciona esta configuración, no se aplicará una etiqueta de confidencialidad coincidente a los correos electrónicos que tengan una etiqueta de confidencialidad ya existente con una [mayor prioridad](sensitivity-labels.md#label-priority-order-matters) o que se etiquetaron manualmente.
     
-    - **Aplicar cifrado al correo electrónico recibido desde fuera de la organización**: al seleccionar esta opción, debe asignar un [ propietario de Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) para cerciorarse de que una persona autorizada de su organización tiene [derechos de uso](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) de control total para los correos electrónicos enviados desde fuera de su organización y las etiquetas de directiva con cifrado. Este rol podría ser necesario para quitar más adelante el cifrado o asignar diferentes derechos de uso para los usuarios de su organización.
+    - **Aplicar el cifrado al correo electrónico recibido de fuera de la organización**: al seleccionar esta opción, debe asignar un [propietario Administrador de derechos](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) para asegurarse de que una persona autorizada de su organización tenga control total del [uso de derechos](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) para los correos electrónicos enviados desde fuera de su organización y su etiquetas de directiva con cifrado. Este rol podría ser necesario para quitar más adelante el cifrado o asignar diferentes derechos de uso para los usuarios de su organización.
         
         Para **Asignar un propietario de Rights Management**, especifique un único usuario mediante una dirección de correo electrónico que sea propiedad de su organización. No especifique un contacto de correo, un buzón compartido ni ningún tipo de grupo, ya que no se admiten para este rol.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Obtenga información sobre el archivado de expansión automática, que proporciona almacenamiento de archivo adicional para buzones de Exchange Online.
-ms.openlocfilehash: 527eea4f0fe97ba689cb70bddb78091112e1f353
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 1b4b8d81868cc97fc8e8faf5b0dc449e4c07a868
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241340"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63328867"
 ---
 # <a name="learn-about-auto-expanding-archiving"></a>Información sobre el archivado de expansión automática
 
@@ -48,7 +48,7 @@ Esta es una introducción rápida del proceso.
 2. Un administrador habilita el archivado de expansión automática para el buzón. Cuando el buzón de archivo (incluida la carpeta Elementos recuperables) alcanza los 90 GB, se convierte en un archivo de expansión automática y Microsoft 365 agrega espacio de almacenamiento al archivo hasta que alcanza un tamaño máximo de 1,5 TB. El espacio de almacenamiento adicional puede tardar hasta 30 días en aprovisionarse.
 
    > [!NOTE]
-   > Si un buzón se coloca en espera o se asigna a una directiva de retención, la cuota de almacenamiento para el buzón de archivo aumenta a 110 GB cuando se habilita el archivado de expansión automática. Del mismo modo, la cuota de advertencia de archivo se aumenta a 100 GB.
+   > Si un buzón se coloca en espera o se asigna a una directiva de retención, la cuota de almacenamiento para el buzón de archivo se aumenta a 110 GB cuando se habilita el archivado de expansión automática. Del mismo modo, la cuota de advertencia de archivo se aumenta a 100 GB.
 
 3. Microsoft 365 agrega automáticamente más espacio de almacenamiento cuando sea necesario.
 
@@ -92,11 +92,11 @@ Estos son algunos aspectos a tener en cuenta al usar Outlook o Outlook en la Web
 
 - Si un buzón de archivo tiene al menos un área de almacenamiento expandida automáticamente, no puede eliminar una carpeta del buzón de archivo ni del archivo auxiliar. En otras palabras, después de aprovisionar un área de almacenamiento expandida automáticamente, no puede eliminar ninguna carpeta del archivo.
 
-- Puede eliminar elementos en un área de almacenamiento de expansión automática. Sin embargo, no puede usar la característica Recuperar elementos eliminados para recuperar un elemento después de habilitar el archivado de expansión automática para un buzón.
+- Puede eliminar elementos de un área de almacenamiento expandida automáticamente. Sin embargo, no puede usar la característica Recuperar elementos eliminados para recuperar un elemento después de habilitar el archivado de expansión automática para un buzón.
 
-- La búsqueda de archivado expandido automáticamente está disponible en Outlook para la web (OWA). De forma similar a Archivo en línea, puede buscar elementos que se movieron a un área de almacenamiento adicional. Cuando se selecciona archivo como ámbito de búsqueda en OWA, se buscarán todos los archivos (incluidos los archivos expandidos automáticamente) y sus subcarpetas correspondientes.
+- La búsqueda de archivado expandido automáticamente está disponible en Outlook para la web (OWA). De forma similar a Archivo en línea, puede buscar elementos que se movieron a un área de almacenamiento adicional. Cuando se selecciona archivo como ámbito de búsqueda en OWA, se buscarán todos los archivos (incluidos los archivos expandidos automáticamente) y sus subcarpetas correspondientes. Tenga en cuenta que no se admite la búsqueda para la característica de archivos de expansión automática en una situación de archivo solo en la nube (el buzón principal sigue siendo local).
 
-- La búsqueda de archivo expandido automáticamente está disponible en Outlook escritorio en canal actual (versión preliminar). Dentro de esta vista previa, el ámbito buzón actual está disponible, lo que le permite buscar en el archivo expandido automáticamente. Para obtener más información sobre esta y otras características de soporte técnico de Microsoft Search, vea [Cómo Outlook para Windows conectado a Exchange Online utiliza Búsqueda de Microsoft](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
+- La búsqueda de archivos de expansión automática está disponible en Outlook para Windows en el Canal empresarial mensual. Con esta actualización, el ámbito buzón actual está disponible, lo que le permite buscar en el archivo expandido automáticamente. Tenga en cuenta que no se admite la búsqueda para la característica de archivos de expansión automática en una situación de archivo solo en la nube (el buzón principal sigue siendo local). Para obtener más información sobre esta y otras características de soporte técnico de Microsoft Search, vea [Cómo Outlook para Windows conectado a Exchange Online utiliza Búsqueda de Microsoft](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045). 
 
 - Es posible que los recuentos de elementos en Outlook y los recuentos leídos o no leídos (en Outlook y Outlook en la web) en un archivo expandido automáticamente no sean precisos.
 
