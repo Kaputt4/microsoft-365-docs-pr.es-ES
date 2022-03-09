@@ -1,24 +1,29 @@
 ---
 title: Configurar las opciones de retención para conservar o eliminar contenido automáticamente
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: null
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
-  - SPO_Content
+- M365-security-compliance
+- SPO_Content
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
+ms.openlocfilehash: decf8f53f30c7f29636e50900fe994aae25e6552
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326991"
 ---
-
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
@@ -56,7 +61,9 @@ Si elige usar ámbitos adaptables, se le pedirá que seleccione qué tipo de ám
 |**Sitios de SharePoint**. Se aplica a:  <br/> - Sitios de SharePoint <br/> - Cuentas de OneDrive |Dirección URL del sitio <br/>Nombre del sitio <br/> Propiedades personalizadas de SharePoint: RefinableString00 - RefinableString99 |
 |**Grupos de Microsoft 365**. Se aplica a:  <br/> - Grupos de Microsoft 365 <br/> - Mensajes del canal de Teams <br/> - Mensajes de la comunidad de Yammer |Nombre <br/> Nombre para mostrar <br/> Descripción <br/> Direcciones de correo <br/> Alias <br/> Atributos personalizados de Exchange: CustomAttribute1 - CustomAttribute15 |
 
-Los nombres de propiedad de los sitios se basan en propiedades administradas de sitios de SharePoint y los nombres de atributo para usuarios y grupos se basan en [propiedades de destinatarios filtrables](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) que se asignan a atributos de Azure AD. Por ejemplo:
+Los nombres de propiedad de los sitios se basan en las propiedades administradas del sitio de SharePoint. Para obtener información sobre los atributos personalizados, vea [Usar propiedades personalizadas del sitio de SharePoint para aplicar la retención de Microsoft 365 con ámbitos de directiva adaptables](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
+
+Los nombres de atributo de los usuarios y grupos se basan en [propiedades de destinatario filtrables](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) que se asignan a atributos de Azure AD. Por ejemplo:
 
 - **Alias** se asigna al nombre LDAP **mailNickname**, que se muestra como **Correo electrónico** en el centro de administración de Azure AD.
 - Las **direcciones de correo electrónico** se asignan al nombre LDAP **proxyAddresses**, que se muestra como **otras direcciones de correo electrónico** en el centro de administración de Azure AD.
@@ -72,7 +79,9 @@ Una única directiva de retención puede tener uno o varios ámbitos adaptables.
 
 #### <a name="to-configure-an-adaptive-scope"></a>Para configurar un ámbito adaptable
 
-Antes de configurar el ámbito adaptable, use la sección anterior para identificar qué tipo de ámbito crear y qué atributos y valores se usarán. Es posible que deba trabajar con otros administradores para confirmar esta información y, además, confirme que las propiedades de los sitios de SharePoint estén indexadas.
+Antes de configurar el ámbito adaptable, use la sección anterior para identificar qué tipo de ámbito crear y qué atributos y valores usará. Es posible que tenga que trabajar con otros administradores para confirmar esta información. 
+
+Específicamente para los sitios de SharePoint, es posible que se necesite una configuración adicional de SharePoint si planea usar [propiedades de sitio personalizadas](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), desplácese hasta una de las siguientes ubicaciones:
     
@@ -82,7 +91,7 @@ Antes de configurar el ámbito adaptable, use la sección anterior para identifi
     - Si usa la solución de gobernanza de la información:
        - **Soluciones** > **Gobierno de información** > **Pestaña Ámbitos adaptables** > + **Crear ámbito**
     
-    ¿No encuentra inmediatamente la solución en el panel de navegación? Primero seleccione **Mostrar todo**. 
+    ¿No encuentra inmediatamente la solución en el panel de navegación? Primero, seleccione **Mostrar todo**. 
 
 2. Siga los avisos de configuración para seleccionar primero el tipo de ámbito y luego los atributos o propiedades que desea usar para crear la pertenencia dinámica y escriba los valores de atributo o propiedad.
     
@@ -104,19 +113,31 @@ Antes de configurar el ámbito adaptable, use la sección anterior para identifi
     - Para los ámbitos de **Usuario** y **Grupos de Microsoft 365**, use la [Sintaxis de filtrado OPATH](/powershell/exchange/recipient-filters). Por ejemplo, para crear un ámbito de usuario que defina su pertenencia por departamento, país y estado:
     
         ![Ejemplo de ámbito adaptable con consulta avanzada.](../media/example-adaptive-scope-advanced-query.png)
+        
+        Una de las ventajas de usar el generador de consultas avanzado para estos ámbitos es tener una opción más amplia de operadores de consulta:
+        - **y**
+        - **o**
+        - **no**
+        - **eq** (igual a)
+        - **ne** (no es igual a)
+        - **lt** (menor que)
+        - **gt**(mayor que)
+        - **like** (comparación de cadenas)
+        - **notlike** (comparación de cadenas)
     
     - Para ámbitos de **sitios de SharePoint**, use Lenguaje de consulta de palabras clave (KQL). Es posible que ya esté familiarizado con el uso de KQL para búsquedas en SharePoint mediante propiedades de sitio indexadas. Para ayudarle a especificar estas consultas KQL, vea [Referencia de sintaxis del lenguaje de consulta de palabras clave (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
-    
-    Una de las ventajas de usar el generador de consultas avanzadas es tener una opción más amplia de operadores de consulta:
-    - **y**
-    - **o**
-    - **no**
-    - **eq** (igual a)
-    - **ne** (no es igual a)
-    - **lt** (menor que)
-    - **gt**(mayor que)
-    - **like** (comparación de cadenas)
-    - **notlike** (comparación de cadenas)
+        
+        Por ejemplo, dado que los ámbitos de los sitios de SharePoint incluyen automáticamente todos los tipos de sitio de SharePoint, que incluyen sitios de OneDrive y conectados a grupos de Microsoft 365, puede usar la propiedad de sitio indexado **SiteTemplate** para incluir o excluir tipos de sitio específicos. Las plantillas que puede especificar:
+        - SITEPAGEPUBLISHING para sitios de comunicación modernos
+        - GROUP para sitios conectados a grupos de Microsoft 365
+        - TEAMCHANNEL para sitios de canal privado de Microsoft Teams
+        - STS para un sitio de grupo clásico de SharePoint
+        - SPSPERS para sitios de OneDrive
+        
+        Por lo tanto, para crear un ámbito adaptable que incluya solo sitios de comunicación modernos y excluya sitios de OneDrive y conectados a grupos de Microsoft 365, especifique la siguiente consulta de KQL:
+        ````console
+        SiteTemplate=SITEPAGEPUBLISHING
+        ````
     
     Puede [validar estas consultas avanzadas](#validating-advanced-queries) independientemente de la configuración del ámbito.
     
@@ -196,7 +217,7 @@ Si elige usar ámbitos estáticos, debe decidir si la directiva ha de aplicarse 
 
 A excepción de Skype Empresarial, el valor predeterminado indica que todas las instancias de las ubicaciones seleccionadas se incluyen automáticamente en la directiva sin que tenga que especificarlas como incluidas.
 
-Por ejemplo, **Todos los destinatarios** para la ubicación de **correo electrónico de Exchange**. Con esta configuración predeterminada, todos los buzones de usuario existentes se incluirán en la directiva y los buzones nuevos creados después de aplicar la directiva, la heredarán de forma automática.
+Por ejemplo, **Todos los destinatarios** para la ubicación de **correo electrónico de Exchange**. Con esta configuración predeterminada, todos los buzones de usuario existentes se incluirán en la directiva y los nuevos buzones creados después de aplicar la directiva heredarán automáticamente la directiva.
 
 #### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Una directiva con inclusiones o exclusiones específicas
 
@@ -290,7 +311,7 @@ Para volver al valor predeterminado del buzón y del sitio de SharePoint para lo
 
 Al configurar una directiva de aplicación automática que usa tipos de información confidencial y seleccionar la ubicación **Grupos de Microsoft 365**:
 
-- No se incluyen los buzones de grupo de Microsoft 365. Para incluir estos buzones en la directiva, seleccione la ubicación de **Correo electrónico de Exchange**.
+- No se incluyen los buzones de grupo de Microsoft 365. Para incluir estos buzones en la directiva, seleccione la ubicación **correo electrónico de Exchange** en su lugar.
 
 #### <a name="what-happens-if-a-microsoft-365-group-is-deleted-after-a-policy-is-applied"></a>Qué sucede si un grupo de Microsoft 365 se elimina después de aplicar una directiva
 
@@ -313,7 +334,7 @@ A diferencia del correo electrónico de Exchange, no puede activar el estado de 
 
 Después de seleccionar la opción **Editar**, en el panel **Skype Empresarial**, puede seleccionar el cuadro oculto antes de la columna **Nombre** para incluir rápidamente a todos los usuarios. Sin embargo, es importante entender que cada usuario tiene que contar con una inclusión específica en la directiva. Por lo tanto, si selecciona esta casilla para incluir 1 000, será lo mismo que si selecciona manualmente 1 000 usuarios, que es el máximo admitido en Skype Empresarial.
 
-Tenga en cuenta que **Historial de conversaciones**, una carpeta en Outlook, es una característica que no tiene nada que ver con el archivado de Skype. El **Historial de conversaciones** puede estar desactivado por el usuario final, pero el archivado para Skype se realiza almacenando una copia de las conversaciones de Skype en una carpeta oculta que está disponible para eDiscovery pero es inaccesible para el usuario.
+Tenga en cuenta que **Historial de conversaciones**, una carpeta de Outlook, es una característica que no tiene nada que ver con el archivado de Skype. El usuario final puede desactivar **Historial de conversaciones**, pero el archivado para Skype se realiza almacenando una copia de las conversaciones de Skype en una carpeta oculta que está disponible para eDiscovery, pero inaccesible para el usuario.
 
 ## <a name="settings-for-retaining-and-deleting-content"></a>Configuración para conservar y eliminar el contenido
 
@@ -383,7 +404,7 @@ Algunas opciones de configuración no se pueden cambiar después de haber creado
 
 Si edita una directiva de retención y el contenido ya está sujeto a la configuración original de su directiva de retención, la configuración actualizada se aplicará automáticamente a estos elementos, además de los elementos identificados recientemente.
 
-Por lo general, esta actualización es bastante rápida, pero puede tardar varios días. Cuando la replicación de la directiva en todas las ubicaciones de Microsoft 365 se haya completado, verá que el estado de la directiva de retención en el centro de cumplimiento de Microsoft 365 cambia de **Activado (Pendiente)** a **Activado (Correcto)**.
+Normalmente, esta actualización es bastante rápida, pero puede llevar varios días. Cuando la replicación de la directiva en todas las ubicaciones de Microsoft 365 se haya completado, verá que el estado de la directiva de retención en el Centro de cumplimiento de Microsoft 365 cambia de **Activado (Pendiente)** a **Activado (Éxito)**.
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>Bloquear la directiva para impedir que se realicen cambios
 
