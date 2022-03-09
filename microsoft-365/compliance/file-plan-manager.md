@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: El plan de archivos ofrece funciones avanzadas de administración para las etiquetas de retención.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 464cbe5af7ea08755ec3d49949d4707448566b27
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 2e028bae676b949c662a86178bac5e8ccdc557bf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241412"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63317715"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Usar el plan de archivos para crear y administrar etiquetas de retención
 
@@ -117,9 +117,9 @@ Al seleccionar **Elegir** para cada uno de estos descriptores opcionales, puede 
 
 1. En la página **Plan de archivos**, seleccione **+ Crear una etiqueta** > **Etiqueta de retención**
 
-2. Siga las indicaciones del proceso de configuración.
+2. Siga las indicaciones del proceso de configuración. Tenga cuidado con el nombre que elija, ya que no se puede cambiar después de guardar la etiqueta.
     
-    
+    Para obtener más información sobre la configuración de retención, consulte [Configuración para conservar y eliminar contenido](retention-settings.md#settings-for-retaining-and-deleting-content).
     
     Para usar la etiqueta de retención para declarar registros, seleccione **Marcar elementos como registros** o **Marcar elementos como registros normativos**. Para obtener más información, vea [Configurar etiquetas de retención para declarar registros](declare-records.md#configuring-retention-labels-to-declare-records).
 
@@ -129,7 +129,7 @@ Al seleccionar **Elegir** para cada uno de estos descriptores opcionales, puede 
 
 ## <a name="edit-retention-labels"></a>Editar etiquetas de retención
 
-Para editar una etiqueta de retención existente, selecciónela en la página **Plan de archivos** y, a continuación, seleccione la opción **Editar etiqueta** para iniciar el proceso Editar etiqueta de retención, que le permite cambiar la descripción de la etiqueta y cualquier configuración elegible.
+Para editar una etiqueta de retención existente, selecciónela en la página **Plan de archivos** y, a continuación, seleccione la opción **Editar etiqueta** para iniciar el proceso de edición de etiqueta de retención, que le permite cambiar la descripción de la etiqueta y cualquier configuración elegible.
 
 Algunas opciones de configuración no se pueden cambiar después de crear y guardar la etiqueta, entre las que se incluyen:
 - El nombre de la etiqueta de retención y la configuración de retención, excepto el período de retención. Sin embargo, no se puede cambiar el período de retención cuando el período de retención se basa en cuándo se etiquetaron los elementos.

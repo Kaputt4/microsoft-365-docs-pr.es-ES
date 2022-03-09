@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: b0d179a412a2e0470db844a7e9b422c8ae89db34
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: ac57859d7f27b22060b88189e79d386791535c9e
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62320684"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319397"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -264,13 +264,38 @@ La siguiente tabla le ayudará a identificar si debe usar una directiva de reten
 
 ### <a name="combining-retention-policies-and-retention-labels"></a>Combinación de directivas de retención y etiquetas de retención
 
-No tiene que elegir entre usar solo directivas de retención o solo etiquetas de retención. Ambos métodos se pueden usar juntos y, de hecho, se complementan entre sí para obtener una solución más completa. Por ejemplo:
+No tiene que elegir entre usar solo directivas de retención o solo etiquetas de retención. Ambos métodos se pueden usar juntos y, de hecho, se complementan entre sí para obtener una solución más completa.
+
+Los ejemplos siguientes son solo algunas de las formas en que puede combinar directivas de retención y etiquetas de retención para la misma ubicación.
+
+Para obtener más información acerca de cómo funcionan las directivas de retención y las etiquetas de retención conjuntamente y cómo determinar el resultado combinado, consulte la siguiente sección en la que se explican [los principios de la retención y las prioridades](#the-principles-of-retention-or-what-takes-precedence).
+
+**Ejemplo para que los usuarios invaliden la eliminación automática**
+
+Escenario: de forma predeterminada, el contenido de las cuentas de OneDrive de los usuarios se elimina automáticamente después de cinco años, pero los usuarios deben tener la opción de invalidar esta acción para documentos específicos.
 
 1. Puede crear y configurar una directiva de retención que elimine el contenido automáticamente al cabo de cinco años de la última modificación y aplicar la directiva a todas las cuentas de OneDrive.
 
 2. Puede crear y configurar una etiqueta de retención que mantenga el contenido para siempre y agregarla a una directiva de etiquetas que publique en todas las cuentas de OneDrive. Debe explicar a los usuarios cómo aplicar manualmente esta etiqueta a documentos específicos que se deban excluir de la eliminación automática si no se modifican después de cinco años.
 
-Para obtener más información acerca de cómo funcionan las directivas de retención y las etiquetas de retención conjuntamente y cómo determinar el resultado combinado, vea la siguiente sección en la que se explican los principios de la retención y las prioridades.
+**Ejemplo para conservar elementos durante más tiempo**
+
+Escenario: de forma predeterminada, los elementos de SharePoint se conservan automáticamente y luego se eliminan después de cinco años, pero los documentos de bibliotecas específicas deben conservarse durante diez años.
+
+1. Cree y configure una directiva de retención que retenga y luego elimine automáticamente el contenido después de cinco años, y aplique la directiva a todas las instancias de SharePoint y Grupos de Microsoft 365.
+
+2. Cree y configure una etiqueta de retención que retenga automáticamente el contenido durante diez años. Esta etiqueta se publica para los administradores de sitios de SharePoint, de modo que puedan aplicarla como etiqueta predeterminada para que la hereden todos los elementos de bibliotecas de documentos específicas.
+
+**Ejemplo para eliminar elementos en un período de tiempo más corto**
+
+Escenario: de forma predeterminada, los correos electrónicos no se conservan, pero se eliminan automáticamente después de diez años. Sin embargo, los correos electrónicos relacionados con un proyecto específico que tiene un nombre de código de versión preliminar deben eliminarse automáticamente después de un año.
+
+1. Cree y configure una directiva de retención que elimine automáticamente el contenido después de diez años, y aplique la directiva a todos los destinatarios de Exchange.
+
+2. Cree y configure una etiqueta de retención que elimine automáticamente el contenido después de un año. Entre las opciones para aplicar esta etiqueta a los correos electrónicos pertinentes se incluyen:
+    - Cree una directiva de etiquetado automático que identifique el contenido mediante el nombre del código del proyecto como la palabra clave y aplique la directiva a todos los destinatarios de Exchange
+    - Publique la etiqueta e indique a los usuarios implicados en el proyecto cómo crear una regla automática en Outlook que aplique esta etiqueta.
+    - Publique la etiqueta e indique a los usuarios cómo crear una carpeta en Outlook para todos los correos electrónicos relacionados con el proyecto y aplicar la etiqueta publicada a la carpeta y, a continuación, cree una regla de Outlook para mover todos los correos electrónicos relacionados con el proyecto a esta carpeta.
 
 ## <a name="how-long-it-takes-for-retention-settings-to-apply"></a>Cuánto tiempo tarda la configuración de retención en aplicarse
 
@@ -289,11 +314,11 @@ A menudo, las directivas surtirán efecto y las etiquetas estarán visibles en m
 
 Al crear una directiva de retención o una directiva de etiqueta de retención, debe elegir entre adaptable y estática para definir el ámbito de la directiva.
 
-- Un **ámbito adaptable** usa una consulta que usted especifique, por lo que la pertenencia no es estática, sino dinámica, ya que se ejecuta diariamente en los atributos o propiedades que especifique para las ubicaciones seleccionadas. Puede usar varios ámbitos adaptables con una sola directiva.
+- Un **ámbito adaptable** usa una consulta que usted especifique, por lo que la pertenencia no es estática, sino dinámica, ya que se ejecuta diariamente en los atributos o propiedades que especifique para las ubicaciones seleccionadas. Puede usar múltiples ámbitos adaptables con una única directiva.
     
     Ejemplo: los correos electrónicos y los documentos de OneDrive para ejecutivos requieren un período de retención más largo que los usuarios estándares. Cree una directiva de retención con un ámbito adaptable que use el puesto de trabajo del atributo Azure AD de "Ejecutivo" y, a continuación, seleccione las ubicaciones de correo electrónico de Exchange y cuentas de OneDrive para la directiva. No es necesario especificar direcciones de correo electrónico ni direcciones URL de OneDrive para estos usuarios porque el ámbito adaptable recupera automáticamente estos valores. Para los nuevos ejecutivos, no es necesario volver a configurar la directiva de retención porque estos nuevos usuarios con sus valores correspondientes para el correo electrónico y OneDrive se seleccionan automáticamente.
 
-- Un **ámbito estático** no usa consultas y está limitado en la configuración, ya que puede aplicarse a todas las instancias de una ubicación especificada o usar la inclusión y exclusiones para instancias específicas de esa ubicación. Estas tres opciones a veces se conocen como "de toda la organización", "includes" y "excluye", respectivamente.
+- Un **ámbito estático** no usa consultas y está limitado en la configuración, ya que puede aplicarse a todas las instancias de una ubicación especificada o bien usar la inclusión y las exclusiones para instancias específicas de esa ubicación. Estas tres opciones a veces se conocen como "de toda la organización", "incluyente" y "excluyente" respectivamente.
     
     Ejemplo: los correos electrónicos y los documentos de OneDrive para ejecutivos requieren un período de retención más largo que los usuarios estándares. Crea una directiva de retención con un ámbito estático que selecciona las ubicaciones de correo electrónico de Exchange y cuentas de OneDrive para la directiva. Para la ubicación del correo electrónico de Exchange, puede identificar un grupo que contenga solo los ejecutivos, por lo que debe especificar este grupo para la directiva de retención y la pertenencia al grupo con las direcciones de correo electrónico respectivas se recupera cuando se crea la directiva. Para la ubicación de cuentas OneDrive, debe identificar y, a continuación, especificar direcciones URL de OneDrive individuales para cada ejecutivo. Para los nuevos ejecutivos, debe volver a configurar la directiva de retención para agregar las nuevas direcciones de correo electrónico y direcciones URL de OneDrive. También debe actualizar las direcciones URL de OneDrive siempre que se produzca un cambio en el UPN de un ejecutivo.
     
@@ -301,15 +326,15 @@ Al crear una directiva de retención o una directiva de etiqueta de retención, 
 
 Ventajas de usar ámbitos adaptables:
 
-- No hay límites en el [número de elementos por directiva](retention-limits.md#maximum-number-of-items-per-policy). Aunque las directivas adaptables siguen estando sujetas a las limitaciones de [número máximo de directivas por inquilino](retention-limits.md#maximum-number-of-policies-per-tenant), la configuración más flexible probablemente dará como resultado muchas menos directivas.
+- Sin límites en el [número de elementos por directiva](retention-limits.md#maximum-number-of-items-per-policy). Aunque las directivas adaptables siguen estando sujetas a las limitaciones de [número máximo de directivas por inquilino](retention-limits.md#maximum-number-of-policies-per-tenant), la configuración más flexible probablemente dará como resultado muchas menos directivas.
 
-- Objetivos más eficaces para sus requisitos de retención. Por ejemplo, puede asignar diferentes configuraciones de retención a los usuarios según su ubicación geográfica mediante el uso de atributos de Azure AD existentes sin la sobrecarga administrativa de crear y mantener grupos para este fin.
+- Objetivos más eficaces para los requisitos de retención. Por ejemplo, puede asignar diferentes configuraciones de retención a los usuarios según su ubicación geográfica mediante el uso de atributos de Azure AD existentes sin la sobrecarga administrativa de crear y mantener grupos para este fin.
 
 - La pertenencia basada en consultas proporciona resistencia frente a cambios empresariales que podrían no reflejarse de forma confiable en la pertenencia a grupos o en procesos externos que dependen de la comunicación entre departamentos.
 
 - Una sola directiva de retención puede incluir ubicaciones para Microsoft Teams y Yammer, mientras que cuando se usa un ámbito estático, estas ubicaciones requieren su propia directiva de retención.
     
-- Puede aplicar una configuración de retención específica solo a buzones inactivos. Esta configuración no es posible con un ámbito estático porque, en el momento en que se asigna la directiva, los ámbitos estáticos no admiten la inclusión específica de destinatarios con buzones inactivos.
+- Puede aplicar una configuración de retención específica solo a los buzones inactivos. Esta configuración no es posible con un ámbito estático porque, en el momento en que se asigna la directiva, los ámbitos estáticos no admiten la inclusión específica de destinatarios con buzones inactivos.
 
 Ventajas de usar ámbitos estáticos:
 
@@ -334,7 +359,7 @@ Puede configurar varias directivas de retención para Microsoft 365, así como v
 
 Debe especificar la dirección de correo electrónico exacta de un usuario, la dirección URL exacta de un sitio o la dirección de correo electrónico exacta de un grupo de Microsoft 365.
 
-La opción para sitios incluye cuentas de OneDrive. Para obtener información sobre cómo especificar la dirección URL de la cuenta de OneDrive de un usuario, vea [Obtener una lista de todas las direcciones URL de OneDrive de usuario de su organización](/onedrive/list-onedrive-urls).
+La opción para sitios incluye cuentas de OneDrive. Para obtener información sobre cómo especificar la dirección URL de la cuenta de OneDrive de un usuario, consulte [Obtener una lista de todas las direcciones URL de OneDrive de usuario de su organización](/onedrive/list-onedrive-urls).
 
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Los principios de retención o qué tiene precedencia
 
@@ -614,4 +639,4 @@ Si ha configurado los sitios de SharePoint para directivas de tipo de contenido 
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
-Consulte [Introducción a la gobernanza de la información](get-started-with-information-governance.md). Este artículo contiene información sobre suscripciones, permisos y vínculos a instrucciones de configuración de un extremo a otro para escenarios de retención.
+Consulte [Introducción a Information Governance](get-started-with-information-governance.md). Este artículo contiene información sobre suscripciones, permisos y vínculos a instrucciones de configuración de un extremo a otro para escenarios de retención.

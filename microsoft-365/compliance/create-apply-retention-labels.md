@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para publicar etiquetas de retención para poder aplicarlas en aplicaciones para conservar lo que necesita y eliminar lo que no.
-ms.openlocfilehash: 8a190020ce79431471b446c53b584c033c44e13a
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 17a49e2cdeffde5ed3dff91c3dac64e1ddf333ed
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354689"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319439"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publicar etiquetas de retención y aplicarlas en aplicaciones
 
@@ -64,7 +64,7 @@ Antes de crear la directiva de etiqueta de retención, decida si será **adaptab
     - Si usa la gobernanza de la información:
         - **Soluciones** > **Gobierno de información** > pestaña **Directivas de etiquetas** > **Publicar etiquetas**
     
-    ¿No encuentra inmediatamente la solución en el panel de navegación? Primero seleccione **Mostrar todo**. 
+    ¿No encuentra inmediatamente la solución en el panel de navegación? Primero, seleccione **Mostrar todo**. 
 
 2. Siga las indicaciones para crear la directiva de etiqueta de retención. Tenga cuidado con el nombre que elija para la directiva, ya que no se puede cambiar después de guardar la directiva.
 
@@ -84,21 +84,29 @@ Para editar una directiva de etiqueta de retención existente (el tipo de direct
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>Cuando las etiquetas de retención estén disponibles para aplicarlas
 
-Si publica etiquetas de retención en SharePoint o OneDrive, esas etiquetas suelen aparecer para que los usuarios las seleccionen en un día. Sin embargo, tenga en cuenta que pueden tardar en aparecer hasta siete días. 
+Si publica etiquetas de retención en SharePoint o OneDrive, aparecerán normalmente en un día para que los usuarios puedan seleccionarlas. Sin embargo, tenga en cuenta que pueden tardar en aparecer hasta siete días. 
 
 Si publica etiquetas de retención en Exchange, las etiquetas de retención pueden tardar hasta siete días en aparecer para los usuarios y el buzón debe contener al menos 10 MB de datos.
 
 ![Diagrama de cuándo las etiquetas publicadas surten efecto.](../media/retention-labels-published-timings.png)
 
-Si las etiquetas no aparecen después de siete días, compruebe el **Estado** de la directiva de etiqueta seleccionándola en la página **Directivas de etiqueta** en el centro de cumplimiento. Si ve el estado como **Desactivado (error)** y, en los detalles de las ubicaciones, un mensaje indica que se está tardando más de lo esperado en implementar la directiva (para SharePoint) o en probar la implementación de la directiva (para OneDrive), pruebe a ejecutar el comando de PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) para volver a intentar la distribución de la directiva:
+Si las etiquetas no aparecen después de siete días, compruebe el **Estado** de la directiva de etiqueta seleccionándola en la página **Directivas de etiqueta** en el centro de cumplimiento. Si el estado es **(Error)** y en los detalles de las ubicaciones aparece un mensaje que indica que se está tardando más de lo esperado en implementar la directiva o en intentar volver a implementarla, intente ejecutar el comando de PowerShell [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) o [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) para volver a intentar la distribución de directivas:
 
-1. [Conectarse al PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
+1. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-2. Ejecute el siguiente comando:
+2. Ejecute uno de los siguientes comandos:
     
-    ``` PowerShell
-    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-   ```
+    - Para las ubicaciones de directiva **mensajes de canal privado de Teams**, **mensajes de usuario de Yammer** y **mensajes de la comunidad Yammer**:
+    
+        ```PowerShell
+        Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
+    
+    - Para todas las demás ubicaciones de directiva, como el **correo electrónico Exchange**, **sitios de SharePoint**, **mensajes del canal Teams**, etc.:
+    
+        ```PowerShell
+        Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
 
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Cómo comprobar el estado de las etiquetas de retención publicadas en Exchange
 

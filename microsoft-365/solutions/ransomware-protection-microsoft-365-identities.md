@@ -1,9 +1,9 @@
 ---
 title: Paso 3. Proteger identidades
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
 description: Use inicios de sesión seguros y Acceso condicional para proteger los recursos de Microsoft 365 frente a ataques de ransomware.
-ms.openlocfilehash: 57fad156a4e7b97d3029c224059041d692224ed2
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 548e0649d7180ef39f693049210a91c1e0dce312
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62887403"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63320233"
 ---
 # <a name="step-3-protect-identities"></a>Paso 3. Proteger identidades
 
@@ -53,7 +53,7 @@ Use estos procedimientos recomendados:
 - Implemente el principio de [privilegio mínimo](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) y use la protección con contraseña como se describe en [Aumentar la seguridad de inicio de sesión](#increase-sign-in-security) para las cuentas de usuario que aún usan contraseñas para el inicio de sesión. 
 - Evite el uso de cuentas de servicio de nivel de administrador en todo el dominio. 
 - Restrinja los privilegios administrativos locales para limitar la instalación de Troyanos de Acceso Remoto (RAT, por sus siglas en inglés) y otras aplicaciones no deseadas.
-- Use Azure AD acceso condicional para validar explícitamente la confianza de los usuarios y estaciones de trabajo antes de permitir el acceso a los portales administrativos. Consulte [este ejemplo](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management) para Microsoft Azure Portal.
+- Use el acceso condicional de Azure AD para validar explícitamente la confianza de los usuarios y las estaciones de trabajo antes de permitir el acceso a los portales administrativos. Consulte [este ejemplo](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management) de Azure Portal.
 - Habilite la administración de contraseñas de administrador local.
 - Determine dónde inician sesión las cuentas con privilegios altos y expone las credenciales. Las cuentas con privilegios altos no deben estar presentes en estaciones de trabajo.
 - Deshabilite el almacenamiento local de contraseñas y credenciales.

@@ -21,12 +21,12 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 5d5c7820a28977bb894c30915dc26f12016bb58c
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: 71b7bb5d5588f19ff4134c133377b3e9ca83c780
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62825498"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63319355"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -104,7 +104,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
   - Para los usuarios que tengan asignadas otras licencias de Office 365 o Microsoft 365 (que no sean E5), los registros de auditoría se conservarán durante 90 días. Para obtener una lista de las suscripciones de Office 365 y Microsoft 365 que admiten el registro de auditoría unificado, consulte [la descripción del servicio del centro de seguridad y cumplimiento](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
-    > Incluso si la auditoría de buzón está activada de forma predeterminada, es posible que los eventos de auditoría del buzón de algunos usuarios no se encuentren en búsquedas de registro de auditoría en el Centro de cumplimiento de Microsoft 365 o a través de la API de Actividad de administración de Office 365. Para obtener más información, vea [Más información sobre el registro de auditoría del buzón de correo](enable-mailbox-auditing.md#more-information).
+    > Incluso si la auditoría de buzón está activada de forma predeterminada, es posible que observe que los eventos de auditoría del buzón de algunos usuarios no se encuentran en búsquedas de registro de auditoría en el Cumplimiento de Microsoft 365 o a través de la API de Actividad de administración de Office 365. Para obtener más información, consulte [Más información sobre el registro de auditoría del buzón](enable-mailbox-auditing.md#more-information).
 
 - Si desea desactivar la búsqueda en el registro de auditoría de su organización, puede ejecutar el comando siguiente en el PowerShell remoto conectado a su organización de Exchange Online:
 
@@ -169,7 +169,7 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Microsoft 3
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión.
 
     > [!TIP]
-    > Use una sesión de exploración privada (no una sesión normal) para obtener acceso al Centro de cumplimiento de Microsoft 365, ya que esto evitará que las credenciales con las que inició sesión actualmente sean usadas. Presione **CTRL+MAYÚS+N** para abrir una sesión de Exploración de InPrivate en Microsoft Edge o una sesión de exploración privada en Google Chrome (denominada ventana de incógnito).
+    > Use una sesión de exploración privada (que no sea una sesión regular) para obtener acceso al Centro de cumplimiento de Microsoft 365, ya que así se evita que se puedan usar las credenciales con las que ha iniciado sesión actualmente. Para abrir una sesión de exploración de InPrivate en Microsoft Edge o una sesión privada en Google Chrome (llamada ventana de incógnito), pulse **CTRL + MAYÚS + N**.
 
 2. En el panel izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Auditoría**.
 
@@ -201,7 +201,7 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Microsoft 3
 
 4. Haga clic en **Búsqueda** para ejecutar la búsqueda mediante sus criterios de búsqueda. 
 
-   Los resultados de la búsqueda se cargan y, después de unos minutos, se muestran en una nueva página. Cuando finaliza la búsqueda, se muestra el número de resultados que se ha encontrado. Se mostrará un máximo de 5 000 eventos en incrementos de 150 eventos. Si hay más de 5 000 eventos que cumplen los criterios de búsqueda, se muestran los 5 000 eventos más recientes.
+   Los resultados de la búsqueda se cargan y, después de unos minutos, se muestran en una nueva página. Cuando finaliza la búsqueda, se muestra el número de resultados que se ha encontrado. Se mostrará un máximo de 50 000 eventos en incrementos de 150 eventos.
 
    ![El número de resultados se muestra al acabar la búsqueda.](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
@@ -217,11 +217,11 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Microsoft 3
 
 - Haga clic en **Borrar** para borrar los criterios actuales de búsqueda. El intervalo de fecha vuelve al predeterminado de los últimos siete días. También puede hacer clic en **Borrar todo para mostrar los resultados de todas las actividades** para cancelar todas las actividades seleccionadas.
 
-- Si 5 000 resultados son encontrados, puede suponer que probablemente existen más de 5,000 eventos que cumplen los criterios de búsqueda. Puede restringir los criterios de búsqueda y volver a ejecutar la búsqueda para devolver menos resultados o puede exportar todos los resultados de búsqueda al seleccionar **Exportar resultado**\>**Descargar todos los resultados**.
+- Si se encuentran 50 000 resultados, puede suponer que probablemente existen más de 50 000 eventos que cumplen los criterios de búsqueda. Puede restringir los criterios de búsqueda y volver a ejecutar la búsqueda para devolver menos resultados o puede exportar todos los resultados de búsqueda al seleccionar **Exportar resultado**\>**Descargar todos los resultados**.
 
 ### <a name="step-2-view-the-search-results"></a>Paso 2: Ver los resultados de la búsqueda
 
-Los resultados de una búsqueda de registro de auditoría se muestran en **Resultados** en la página **Búsqueda de registros de auditoría**. Como se mencionó anteriormente se muestran un máximo de 5 000 eventos (más recientes) en incrementos de 150 eventos. Para mostrar más eventos puede usar la barra de desplazamiento en el panel **Resultados** o también puede presionar **Mayús+Fin** para mostrar los siguientes 150 eventos.
+Los resultados de una búsqueda de registro de auditoría se muestran en **Resultados** en la página **Búsqueda de registros de auditoría**. Como se mencionó anteriormente, se muestran un máximo de 50 000 eventos (más recientes) en incrementos de 150 eventos. Use la barra de desplazamiento o pulse **MAYÚS + Fin** para mostrar los 150 eventos siguientes.
 
 Los resultados contienen la siguiente información sobre cada evento que la búsqueda ha devuelto:
 
@@ -241,7 +241,7 @@ Los resultados contienen la siguiente información sobre cada evento que la bús
 - **Detalle**: información adicional sobre una actividad. Nuevamente, no todas las actividades tendrán un valor.
 
 > [!TIP]
-> Haga clic en un encabezado de columna en **Resultados** para ordenarlos. Puede ordenar los resultados de la A hasta la Z o de la Z hasta la A. Haga clic en el encabezado **Fecha** para ordenar los resultados del más antiguo al más nuevo o al revés.
+> Haga clic en un encabezado de columna en **Resultados** para ordenarlos. Puede ordenar los resultados de A a Z o de Z a A. Haga clic en el encabezado **Fecha** para ordenar los resultados del más antiguo al más nuevo o al revés.
 
 #### <a name="view-the-details-for-a-specific-event"></a>Ver los detalles de un evento específico
 
@@ -430,8 +430,8 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
-|Archivo al que se tiene acceso|FileAccessed|Cuenta de sistema o usuario que tiene acceso al archivo.|
-|(ninguno)|FileAccessedExtended|Esto está relacionado con la actividad "Archivo al que se tiene acceso" (FileAccessed). Se registra un evento FileAccessedExtended cuando la misma persona tiene acceso continuamente a un archivo durante un largo período (hasta 3 horas). <br/><br/> El objetivo del registro de eventos FileAccessedExtended es reducir el número de eventos FileAccessed que se registran cuando se tiene acceso continuamente a un archivo. Esto ayuda a reducir el ruido de varios registros FileAccessed para lo que básicamente es la misma actividad de usuario y le permite centrarse en el evento FileAccessed inicial (el más importante).|
+|Archivo al que se tiene acceso|FileAccessed|Cuenta de sistema o usuario que tiene acceso al archivo. Una vez que un usuario accede a un archivo, el evento FileAccessed no se vuelve a registrar en el mismo usuario durante los próximos cinco minutos.|
+|(ninguno)|FileAccessedExtended|Esto está relacionado con la actividad "Archivo accedido" (FileAccessed). Un evento de FileAccessedExtended se registra cuando la misma persona obtiene continuamente un archivo durante un período prolongado (hasta 3 horas). <br/><br/> El objetivo del registro de eventos FileAccessedExtended es reducir el número de eventos FileAccessed que se registran cuando se tiene acceso continuamente a un archivo. Esto ayuda a reducir el ruido de varios registros FileAccessed para lo que básicamente es la misma actividad de usuario y le permite centrarse en el evento FileAccessed inicial (el más importante).|
 |Se ha cambiado la etiqueta de retención de un archivo|ComplianceSettingChanged|Se aplicó o se quitó una etiqueta de retención de un documento. Este evento se activa cuando una etiqueta de retención es aplicada manual o automáticamente a un mensaje.|
 |Estado de registro cambiado a bloqueado|LockRecord|El estado de registro de una etiqueta de retención que clasifica un documento como un registro ha siso bloqueado. Esto significa que el documento no se puede modificar ni eliminar. Solo los usuarios que tengan al menos asignado el permiso de colaborador para un sitio podrán cambiar el estado de registro de un documento.|
 |Cambiado el estado del registro a bloqueado|UnlockRecord|El estado de registro de una etiqueta de retención que clasifica un documento como un registro ha sido bloqueado. Esto significa que el documento puede ser modificado o eliminado. Solo los usuarios que tengan al menos asignado el permiso de colaborador para un sitio podrán cambiar el estado de registro de un documento.|
@@ -446,7 +446,7 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |Malware detectado en archivo|FileMalwareDetected|El antivirus de SharePoint detecta el malware en un archivo.|
 |Extracción del archivo descartada|FileCheckOutDiscarded|El usuario descarta (o deshace) un archivo extraído. Esto significa que los cambios que se realizaron en el archivo cuando estaba desprotegido se descartan y no se guardan en la versión del documento de la biblioteca de documentos.|
 |Archivo descargado|FileDownloaded|El usuario descarga un documento de un sitio.|
-|Archivo modificado|FileModified|La cuenta del sistema o usuario modifica el contenido o las propiedades de un documento ubicado en un sitio.|
+|Archivo modificado|FileModified|La cuenta del sistema o usuario modifica el contenido o las propiedades de un documento ubicado en un sitio. El sistema espera cinco minutos antes de que registre otro evento FileModified cuando el mismo usuario modifique el contenido o las propiedades del mismo documento.|
 |(ninguno)|FileModifiedExtended|Esto está relacionado con la actividad "Archivo modificado" (FileModified). Un evento de FileModifiedExtended se registra cuando la misma persona modifica continuamente un archivo durante un período prolongado (hasta 3 horas). <br/><br/> El objetivo del registro de eventos FileModifiedExtended es reducir el número de eventos FileModified que se registran cuando se modifica continuamente un archivo. Esto ayuda a reducir el ruido de varios registros de FileModified para lo que básicamente es la misma actividad de usuario, y le permite centrarse en el evento FileModified inicial (el más importante).|
 |Archivo movido|FileMoved|El usuario mueve un documento de su ubicación actual en un sitio a una nueva ubicación.|
 |(ninguno)|FilePreviewed|El usuario obtiene la vista previa de un documento de SharePoint o de OneDrive para un sitio de Empresas. Estos sucesos suelen producirse en grandes volúmenes basándose en una sola actividad, como ver una galería de imágenes.|
@@ -459,9 +459,9 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |Archivo al que se le ha cambiado el nombre|FileRenamed|El usuario cambia el nombre de un documento en un sitio.|
 |Archivo restaurado|FileRestored|El usuario restaura un documento de la papelera de reciclaje de un sitio. |
 |Archivo cargado|FileUploaded|El usuario carga un documento a una carpeta de un sitio. |
-|Página visualizada|PageViewed|El usuario visualiza una página en un sitio. No incluye el uso de un explorador web para ver los archivos ubicados en una biblioteca de documentos.|
-|(ninguno)|PageViewedExtended|Esto está relacionado con la actividad "Página visualizada" (PageViewed). Se registra un evento PageViewedExtended cuando la misma persona visualiza continuamente una página web durante un periodo extendido (hasta 3 horas). <br/><br/> El objetivo del registro de eventos PageViewedExtended es reducir el número de eventos PageViewed que se registran cuando se visualiza una página continuamente. Esto ayuda a reducir el ruido de varios registros de PageViewed para lo que básicamente es la misma actividad de usuario, y le permite centrarse en el evento inicial PageViewed(el más importante).|
-|Ver señalado por el cliente|ClientViewSignaled|El cliente de un usuario (como un sitio web o una aplicación móvil) ha señalado que el usuario ha visto la página indicada. Esta actividad a menudo se registra después de un evento de PagePrefetched para una página. <br/><br/>**Nota**: Como el cliente señaliza eventos ClientViewSignaled, en lugar del servidor, es posible que el servidor no pueda registrar el evento y, por lo tanto, puede que no aparezca en el registro de auditoría. También es posible que la información del registro de auditoría no sea confiable. Sin embargo, dado que la identidad del usuario se valida por el token usado para crear la señal, la identidad del usuario que aparece en el registro de auditoría correspondiente es precisa. |
+|Página visualizada|PageViewed|El usuario visualiza una página en un sitio. No incluye el uso de un explorador web para ver los archivos ubicados en una biblioteca de documentos. Una vez que un usuario visualiza una página, el evento PageViewed no se vuelve a registrar para el mismo usuario durante los próximos cinco minutos.|
+|(ninguno)|PageViewedExtended|Esto está relacionado con la actividad "página visualizada" (PageViewed). Un evento PageViewedExtended se registra cuando la misma persona visualiza continuamente una página web durante un período prolongado (hasta 3 horas). <br/><br/> El objetivo del registro de eventos PageViewedExtended es reducir el número de eventos PageViewed que se registran cuando se visualiza una página continuamente. Esto ayuda a reducir el ruido de varios registros de PageViewed para lo que básicamente es la misma actividad de usuario, y le permite centrarse en el evento inicial PageViewed(el más importante).|
+|Ver señalado por el cliente|ClientViewSignaled|El cliente de un usuario (como un sitio web o una aplicación móvil) ha señalado que el usuario ha visto la página indicada. Esta actividad a menudo se registra después de un evento de PagePrefetched para una página. <br/><br/>**Nota**: Como el cliente señaliza eventos ClientViewSignaled, en lugar del servidor, es posible que el servidor no pueda registrar el evento y, por lo tanto, puede que no aparezca en el registro de auditoría. También es posible que la información del registro de auditoría no sea confiable. Sin embargo, dado que la identidad del usuario se valida por el token usado para crear la señal, la identidad del usuario que aparece en el registro de auditoría correspondiente es precisa. El sistema espera cinco minutos antes de que registre el mismo evento cuando el cliente del mismo usuario indica que el usuario ha visualizado de nuevo la página.|
 |(ninguno)|PagePrefetched|El cliente de un usuario (como el sitio web o la aplicación móvil) ha solicitado la página indicada para ayudar a mejorar el rendimiento si el usuario la explora. Este evento se registra para indicar que el contenido de la página se ha servido para el cliente del usuario. Este evento no es una indicación definitiva de que el usuario ha navegado hasta la página. <br/><br/> Cuando el cliente muestra el contenido de la página (de acuerdo con la solicitud del usuario), debe generarse un evento ClientViewSignaled. No todos los clientes son compatibles con la búsqueda previa, y por lo tanto, algunas actividades que se buscan previamente se pueden registrar como eventos PageViewed.|
 ||||
 
@@ -469,15 +469,15 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 
 **¿Podrían algunas actividades no relacionadas con el usuario desencadenar los registros de auditoría de FilePreviewed que contienen un agente de usuario como "OneDriveMpc-Transform_Thumbnail"?**
 
-No sabemos de escenarios donde las acciones no relacionadas con el usuario generen eventos como estos. Las acciones de usuario como abrir una tarjeta de perfil de usuario (haciendo clic en su nombre o dirección de correo electrónico en un mensaje en Outlook en la Web) generan eventos similares.
+No sabemos de escenarios donde las acciones no relacionadas con el usuario generan eventos como estos. Las acciones de usuario como abrir una tarjeta de Perfil de usuario (haciendo clic en su nombre o dirección de correo electrónico en un mensaje en Outlook en la Web) generan eventos similares.
 
 **¿Las llamadas a OneDriveMpc-Transform_Thumbnail siempre son desencadenadas por el usuario intencionalmente?**
 
-No. Sin embargo, algunos eventos similares pueden registrarse como resultado de la búsqueda previa del explorador.
+No. Sin embargo, los eventos similares se pueden registrar como resultado de la búsqueda previa del explorador.
 
 **Si vemos que un evento de FilePreviewed proviene de una dirección IP registrada por Microsoft, ¿significa que la vista previa se mostró en la pantalla del dispositivo del usuario?**
 
-No. Es posible que el evento se haya registrado como resultado de la búsqueda previa del explorador.
+No. Es posible que el evento se haya registrado como resultado de la búsqueda previa en el explorador.
 
 **¿Hay algún escenario en el que se generen eventos FileAccessed cuando un usuario obtiene una vista previa de un documento?**
 
@@ -495,7 +495,7 @@ Aquí se muestran algunos otros escenarios en los que se puede identificar app@s
 
 - Microsoft Teams. De forma similar a los grupos de Microsoft 365, los registros de auditoría se generan para crear una colección de sitios, actualizar listas y agregar miembros a un grupo de SharePoint cuando se crea un equipo.
 
-- Características de cumplimiento. Estas se dan cuando un administrador implementa características de cumplimiento, como directivas de retención, suspensiones de eDiscovery y etiquetas de confidencialidad de aplicación automática.
+- Características de cumplimiento. Cuando un administrador implementa características de cumplimiento, como directivas de retención, suspensiones de eDiscovery y etiquetas de sensibilidad de aplicación automática.
 
 En estas y otras situaciones, verá que se crearon varios registros de auditoría con app@sharepoint como usuario específico en un período de tiempo breve, a menudo con unos pocos segundos de separación. Esto indica que se activaron probablemente por la misma tarea iniciada por el usuario. Además, los campos ApplicationDisplayName y EventData del registro de auditoría pueden ayudarle a identificar el escenario o la aplicación que desencadenó el evento.
 
@@ -524,7 +524,7 @@ En la siguiente tabla se describen las actividades relacionadas cuando los usuar
 |:-----|:-----|:-----|
 |Lista creada|ListCreated|Un usuario ha creado una lista de SharePoint.|
 |Columna de lista creada|ListColumnCreated|Un usuario ha creado una columna de lista de SharePoint. Una columna de lista es una columna que está adjunta a una o más listas de SharePoint.|
-|Lista de tipo de contenido de lista creado|ListContentTypeCreated|Lista de tipo de contenido creado por un usuario. Una lista de tipo de contenido es un tipo de contenido que está adjunta a una o más listas de SharePoint.|
+|Lista de tipo de contenido de lista creado|ListContentTypeCreated|Un usuario creó un tipo de contenido de lista. Un tipo de contenido de lista es un tipo de contenido que está asociado a una o más listas de SharePoint.|
 |Lista de ítems creada|ListItemCreated|Un usuario creó un elemento en una lista de SharePoint existente.|
 |Una columna de sitio creada.|SiteColumnCreated|Un usuario ha creado una columna de sitio de SharePoint. Una columna de sitio es una columna que no está adjunta a una lista. Las columnas de sitio también son estructuras de metadatos que se pueden usar en cualquier lista en una web determinada.|
 |Tipo de contenido de sitio creado|Sitio de ContentType creado|Tipo de contenido de sitio creado por un usuario. Un tipo de contenido de sitio es un tipo de contenido que está adjunto al sitio principal.|
@@ -543,7 +543,7 @@ En la siguiente tabla se describen las actividades relacionadas cuando los usuar
 |Lista de elementos actualizada|ListItemUpdated|Un usuario ha actualizado una lista de elementos de SharePoint modificando una o más propiedades.|
 |Una columna de sitio actualizada.|SiteColumnUpdated|Un usuario ha actualizado una de columna de sitio de SharePoint modificando una o más propiedades.|
 |Tipo de contenido de sitio actualizado|SiteContentTypeUpdated|Un usuario ha actualizado una lista de tipo de contenido modificando una o más propiedades.|
-|Elemento de lista visualizado|ListItemViewed|Un usuario ha visto un elemento de lista de SharePoint.|
+|Elemento de lista visualizado|ListItemViewed|Un usuario ha visto un elemento de lista de SharePoint. Una vez que un usuario visualiza un elemento de lista, el evento ListItemViewed no se vuelve a registrar para el mismo usuario durante los próximos cinco minutos.|
 ||||
 
 ### <a name="sharing-and-access-request-activities"></a>Actividades de solicitud de acceso y uso compartido
@@ -558,7 +558,7 @@ La siguiente tabla describe las actividades de solicitud de acceso y uso compart
 |Nivel de permiso agregado a la colección de sitios|PermissionLevelAdded|Un nivel de permisos se agregó a una colección de sitios.|
 |Solicitud de acceso aceptada|AccessRequestAccepted|Una solicitud de acceso a un sitio, carpeta o documento que se ha aceptado y al usuario solicitante se le ha concedido el acceso.|
 |Invitación de uso compartido aceptada|SharingInvitationAccepted|El usuario (miembro o invitado) ha aceptado una invitación de uso compartido y se le ha concedido acceso a un recurso. Este evento incluye información sobre el usuario al que se ha invitado y la dirección de correo electrónico que se ha usado para aceptar la invitación (podrían ser diferentes). Esta actividad a menudo está acompañada por un segundo evento que describe cómo se le ha concedido acceso al usuario al recurso, por ejemplo, al agregar el usuario a un grupo que tiene acceso al recurso.|
-|Invitación de uso compartido bloqueada|SharingInvitationBlocked|Una invitación para compartir enviada por un usuario de su organización está bloqueada por una normativa de uso compartido externa que permite o niega el uso compartido externo basándose en el dominio del usuario de destino. En este caso, la invitación para compartir se bloqueó porque: <br/> El dominio del usuario de destino no está incluido en la lista de dominios permitidos. <br/> O bien: <br/> El dominio del usuario de destino está incluido en la lista de dominios bloqueados. <br/> Para obtener más información acerca de cómo permitir o bloquear el uso compartido externo en función de los dominios, consulte [Dominios restringidos para el uso compartido en SharePoint en línea y OneDrive para Empresas](/sharepoint/restricted-domains-sharing).|
+|Invitación de uso compartido bloqueada|SharingInvitationBlocked|Una invitación para uso compartido enviada por un usuario de su organización está bloqueada por una directiva de uso compartido externa que permite o deniega el uso compartido externo en función del dominio del usuario de destino. En este caso, la invitación de uso compartido se bloqueó por el siguiente motivo: <br/> El dominio del usuario de destino no está incluido en la lista de dominios permitidos. <br/> O bien: <br/> El dominio del usuario de destino está incluido en la lista de dominios bloqueados. <br/> Para obtener más información acerca de cómo permitir o bloquear el uso compartido externo en función de los dominios, consulte [Dominios restringidos para el uso compartido en SharePoint en línea y OneDrive para Empresas](/sharepoint/restricted-domains-sharing).|
 |Solicitud de acceso creada|AccessRequestCreated|El usuario solicita acceso a un sitio, carpeta o documento al que no tiene permiso para acceder.|
 |Vínculo creado que se puede compartir de la empresa |CompanyLinkCreated|El usuario ha creado un vínculo empresarial de recursos. los vínculos empresariales solo pueden usarse por los miembros de su organización. No pueden ser usados por invitados.|
 |Vínculo anónimo creado|AnonymousLinkCreated|El usuario ha creado un vínculo anónimo a un recurso. Cualquier persona con este vínculo puede tener acceso al recurso sin tener que autenticarse.|
@@ -610,7 +610,7 @@ La siguiente tabla enumera eventos relacionan asignar permisos en SharePoint con
 |Configuración de solicitud de acceso modificada|WebRequestAccessModified|La configuración de solicitud de acceso fueron modificadas en un sitio.|
 |Configuración modificada "los miembros pueden compartir" |WebMembersCanShareModified|Los **miembros pueden compartir** la configuración se ha modificado en un sitio.|
 |Nivel de permiso modificado en una colección de sitios|PermissionLevelModified|Un nivel de permisos se modificó en una colección de sitios.|
-|Permisos de sitio modificados|SitePermissionsModified|El administrador o el propietario del sitio (o la cuenta de sistema) cambia el nivel de permisos que se asignan a un grupo en un sitio. Esta actividad también se registra si todos los permisos son removidos de un grupo. <br/><br/> **Nota**:Esta operación se ha dejado de usar en SharePoint en línea. Para buscar eventos relacionados, puede buscar otras actividades relacionadas con el permiso como **Administradores de la colección de sitios agregados**, **Usuario o grupo agregado a un grupo de SharePoint**,**Usuario permitido para crear grupos**, **Grupo creado** y **Grupo eliminado**.|
+|Permisos de sitio modificados|SitePermissionsModified|El administrador o el propietario del sitio (o la cuenta de sistema) cambia el nivel de permisos que se asignan a un grupo en un sitio. Esta actividad también se registra si todos los permisos son removidos de un grupo. <br/><br/> **NOTA**: esta operación está en desuso en SharePoint Online. Para buscar eventos relacionados, puede buscar otras actividades relacionadas con permisos, como **Administrador de la colección de sitios agregados**, **Usuario o grupo agregado a un grupo de SharePoint**, **Usuario con permiso para crear grupos**, **Grupo creado** y **Grupo eliminado.**|
 |Nivel de permiso eliminado de la colección de sitios|PermissionLevelRemoved|Un nivel de permisos se eliminó de una colección de sitios.|
 |Administradores de la colección de sitios removidos|SiteCollectionAdminRemoved|El administrador de la colección de sitios o el propietario remueve una persona como administrador de la colección de sitios a un sitio. Esta actividad también se registra cuando un administrador se remueve así mismo de la lista de colección de administradores a la cuenta de OneDrive de un usuario (editando el perfil de usuario en el Centro de administración de SharePoint).  Para devolver esta actividad en los resultados de búsqueda del registro de auditoría, tiene que buscar todas las actividades.|
 |Usuario o grupo removido al grupo de SharePoint|RemovedFromGroup|El usuario ha removido un miembro o invitado de un grupo de SharePoint. Esto puede haber sido una acción intencionada o el resultado de otra actividad, como un evento sin uso compartido.|
@@ -669,19 +669,19 @@ La siguiente tabla enumera las actividades que pueden registrarse mediante el re
 |Elementos de buzón a los que se ha accedido|MailItemsAccessed|Se han leído mensajes o se obtuvo acceso a los mensajes del buzón. Los registros de auditoría de esta actividad se activan de una de estas dos maneras: cuando un cliente de correo (por ejemplo, Outlook) realiza una operación de vinculación en mensajes o cuando los protocolos de correo (como Exchange ActiveSync o IMAP) sincronizan elementos en una carpeta de correo. Esta actividad solo se registra para los usuarios que tengan una licencia de Office 365 o Microsoft 365 E5. Analizar los registros de auditoría de esta actividad es útil al investigar cuentas de correo electrónico vulnerables. Para obtener más información, vea la sección "Eventos de Auditoría avanzada" en [Auditoría avanzada](advanced-audit.md#advanced-audit-events). |
 |Permisos de buzón de delegado agregados|Add-MailboxPermission|Un administrador asignó el permiso de FullAccess del buzón a un usuario (conocido como delegado) para el buzón de otra persona. El permiso FullAccess permite al delegado abrir el buzón de la otra persona, así como leer y administrar el contenido del buzón. El registro de auditoría de esta actividad también se genera cuando una cuenta del sistema del servicio Microsoft 365 realiza tareas de mantenimiento periódicamente en nombre de su organización. Una tarea común que realiza una cuenta del sistema es actualizar los permisos de los buzones del sistema. Para obtener más información, vea Cuentas del sistema en [Cuentas del sistema en los registros de auditoría del buzón de correo de Exchange](#system-accounts-in-exchange-mailbox-audit-records).|
 |Se ha agregado o quitado un usuario con acceso delegado a la carpeta calendario|UpdateCalendarDelegation|Se ha agregado o quitado un usuario como delegado hacia el calendario del buzón de otro usuario. La delegación de calendario otorga a otra persona en la misma organización permisos para administrar el calendario del propietario del buzón.|
-|Se agregaron permisos a la carpeta|AddFolderPermissions|Un permiso de la carpeta se ha cambiado. Los permisos de carpeta controlan qué usuarios de su organización pueden tener acceso las carpetas de un buzón de correo y los mensajes que contienen.|
+|Se agregaron permisos a la carpeta|AddFolderPermissions|Se ha agregado un permiso de carpeta. Los permisos de carpetas controlan qué usuarios de la organización pueden tener acceso a las carpetas de un buzón de correo y los mensajes ubicados en esas carpetas.|
 |Mensajes copiados a otra carpeta|Copiar|Se ha copiado un mensaje a otra carpeta.|
 |Elementos del buzón creado|Crear|Se crea un elemento en la carpeta de Calendario, Contactos, Notas o Tareas en el buzón. Por ejemplo, se crea una nueva solicitud de reunión. No se audita la creación, el envío ni la recepción de un mensaje. Además, no se audita la creación de una carpeta del buzón.|
 |Nueva regla de bandeja de entrada creada en la aplicación web de Outlook|New-InboxRule|El propietario de un buzón u otro usuario con acceso al buzón creó una regla de la bandeja de entrada en la aplicación web de Outlook.|
 |Mensajes eliminados de la carpeta elementos eliminados|SoftDelete|Un mensaje se ha eliminado de manera permanente o se ha eliminado de la carpeta Elementos eliminados. Estos elementos se mueven a la carpeta Elementos recuperables. Los mensajes también se mueven a la carpeta elementos recuperables cuando un usuario lo selecciona y presiona **Mayús+Supr**.|
-|Mensaje etiquetado como un registro|ApplyRecordLabel|Un mensaje se clasificó como un registro. Esto ocurre cuando una etiqueta de retención que clasifica el contenido como un registro se aplica manual o automáticamente a un mensaje.|
+|Mensaje etiquetado como un registro|ApplyRecordLabel|Un mensaje se clasificó como un registro. Esto tiene lugar cuando una etiqueta de retención que clasifica el contenido como un registro se aplica manual o automáticamente a un mensaje.|
 |Mensajes movidos a otra carpeta|Mover|Se ha movido un mensaje a otra carpeta.|
 |Mensajes movidos a la carpeta Elementos eliminados|MoveToDeletedItems|Un mensaje se ha eliminado y movido a la carpeta Elementos eliminados.|
 |Permiso de carpeta modificada|UpdateFolderPermissions|Un permiso de la carpeta se ha cambiado. Los permisos de carpeta controlan qué usuarios de su organización pueden tener acceso a las carpetas del buzón de correo y los mensajes que contienen.|
 |Regla de bandeja de entrada modificada de la aplicación web de Outlook |Set-InboxRule|El propietario de un buzón u otro usuario con acceso al buzón modificó una regla de la bandeja de entrada usando la aplicación web de Outlook.|
 |Mensajes que se han purgado del buzón|HardDelete|Un mensaje se ha purgado de la carpeta Elementos recuperables (eliminado permanentemente del buzón).|
 |Permisos de buzón de delegado quitados|Remove-MailboxPermission|Un administrador quitó el permiso FullAccess (que se asignó a un delegado) del buzón de una persona. Una vez que se haya quitado el permiso FullAccess, el delegado no podrá abrir el buzón de la otra persona ni acceder a ningún contenido.|
-|Permisos quitados de la carpeta|RemoveFolderPermissions|Un permiso de la carpeta se ha removido. Los permisos de carpeta controlan qué usuarios de su organización pueden tener acceso las carpetas de un buzón de correo y los mensajes que contienen.|
+|Permisos quitados de la carpeta|RemoveFolderPermissions|Se ha quitado un permiso de carpeta. Los permisos de carpetas controlan qué usuarios de la organización pueden tener acceso a las carpetas de un buzón de correo y los mensajes ubicados en esas carpetas.|
 |Enviar mensaje|Enviar|Un mensaje ha sido enviado, respondido o reenviado. Esta actividad solo se registra para los usuarios que tengan una licencia de Office 365 o Microsoft 365 E5. Para obtener más información, vea la sección "Eventos de Auditoría avanzada" en [Auditoría avanzada](advanced-audit.md#advanced-audit-events).|
 |Mensaje enviado mediante los permisos de Enviar como|SendAs|Un mensaje se ha enviado con el permiso enviar como. Esto significa que otro usuario ha enviado el mensaje como si proviniera del propietario del buzón.|
 |Mensaje enviado mediante los permisos en nombre de|SendOnBehalf|Un mensaje se envió mediante el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje en nombre del propietario del buzón. El mensaje indica el destinatario en nombre de quien se envió el mensaje y quién lo envió realmente.|
@@ -713,7 +713,7 @@ En la tabla siguiente se enumeran las actividades de administración de los usua
 |Restablecer contraseña de usuario|Restablecer contraseña de usuario.|El administrador restablece la contraseña de un usuario.|
 |Establecer una propiedad que fuerce al usuario a cambiar la contraseña|Forzar el cambio de la contraseña de usuario.|Un administrador estableció la propiedad que obliga a un usuario a cambiar su contraseña la próxima vez que inicie sesión en Microsoft 365.|
 |Establecer propiedades de licencia|Establecer propiedades de licencia.|Un administrador modificó las propiedades de una licencia asignada a un usuario.|
-|Usuario actualizado|Actualizar usuario.|Un administrador cambia una o más propiedades de una cuenta de usuario. Para obtener una lista de las propiedades de usuario que pueden actualizarse, consulte la sección "Actualizar atributos de usuario" en [Eventos del informe de auditoría de Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).|
+|Usuario actualizado|Actualizar usuario.|Un administrador cambió una o más propiedades de una cuenta de usuario. Para obtener una lista de las propiedades de usuario que pueden actualizarse, consulte la sección "Actualizar atributos de usuario" en [Eventos de informe de auditoría de Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).|
 ||||
 
 ### <a name="azure-ad-group-administration-activities"></a>Actividades de administración de grupos de Azure AD
@@ -777,7 +777,7 @@ En la siguiente tabla se enumeran las actividades relacionadas con los dominios 
 |Se ha agregado un socio al directorio|Agregar asociado a la empresa.|Se ha agregado un socio (administrador delegado) a la organización.|
 |Dominio removido de la empresa|Quitar dominio de la empresa.|Se ha quitado un dominio de la organización.|
 |Se ha removido un socio del directorio|Quitar asociado de la empresa.|Se ha quitado un socio (administrador delegado) de la organización.|
-|Establecer información de la organización|Establecer la información de la empresa.|Se ha actualizado la información de empresa de la organización. Esto incluye las direcciones de correo electrónico del correo electrónico relacionado con las suscripciones enviado mediante Microsoft 365, así como las notificaciones técnicas sobre los servicios de Microsoft 365.|
+|Establecer información de la organización|Establecer la información de la empresa.|Se ha actualizado la información de la empresa para la organización. Esto incluye las direcciones de correo electrónico para el correo electrónico relacionado con las suscripciones enviado por Microsoft 365 y notificaciones técnicas sobre los servicios de Microsoft 365.|
 |Establecer autenticación de dominio|Establecer autenticación de dominio.|Se ha cambiado la configuración de la autenticación de dominio de la organización.|
 |Se ha actualizado la configuración de federación para un dominio|Establecer la configuración de federación en un dominio.|Se ha cambiado la configuración de federación (uso compartido externo) de la organización.|
 |Establecer normativas de contraseña|Establecer la directiva de contraseña.|Se han cambiado las restricciones de caracteres y longitud de las contraseñas de usuario de la organización.|
@@ -866,7 +866,7 @@ En la siguiente tabla, se enumeran las actividades de usuario y de administrador
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
-|Directiva de retención de datos cambiada|SoftDeleteSettingsUpdated|Un administrador superior actualizó la configuración de la directiva de retención de datos de la red a eliminación permanente o eliminación temporal. Solo los administradores superiores pueden realizar esta operación.|
+|Directiva de retención de datos cambiada|SoftDeleteSettingsUpdated|Un administrador superior actualizó la configuración de la directiva de retención de datos de la red a Eliminación permanente o Eliminación temporal. Solo los administradores superiores pueden realizar esta operación.|
 |Configuración de red cambiada|NetworkConfigurationUpdated|Un administrador superior o de red cambió la configuración de la red de Yammer. Esto incluye establecer el intervalo de exportación de datos y habilitar el chat.|
 |Configuración del perfil de red cambiada|ProcessProfileFields|Un administrador superior o de red cambia la información que aparece en los perfiles de usuario para los usuarios de su red.|
 |Modo de contenido privado cambiado|SupervisorAdminToggled|Un administrador superior activa o desactiva el *Modo de contenido privado*. Este modo permite a un administrador ver publicaciones de grupos privados y mensajes privados entre los usuarios (o grupos de usuarios). Solo los administradores superiores pueden realizar esta operación.|
@@ -940,7 +940,7 @@ Si se lleva a cabo una actividad de Forms por parte de un coautor o alguien que 
 |Formulario creado|CreateForm|Un nuevo formulario ha sido creado por el propietario. <br><br>Propiedad DataMode:string indica que el formulario actual está configurado para sincronizarse con un libro de Excel nuevo o existente si el valor de propiedad es igual a DataSync. La propiedad ExcelWorkbookLink:string indica el Id. de libro de Excel asociado del formulario actual.|
 |Formulario editado|EditForm|Al crear, eliminar o editar una pregunta, el propietario del formulario lo edita. La propiedad *EditOperation:string* indica el nombre de la operación de edición. Las posibles operaciones son:<br/>- CreateQuestion<br/>- CreateQuestionChoice <br/>- DeleteQuestion <br/>- DeleteQuestionChoice <br/>- DeleteFormImage <br/>- DeleteQuestionImage <br/>- UpdateQuestion <br/>- UpdateQuestionChoice <br/>-UploadFormImage/Bing/Onedrive <br/>- UploadQuestionImage <br/>-Cambiar tema <br><br>FormImage incluye cualquier lugar dentro de los formularios en los que el usuario pueda subir una imagen, como en la cadena de consulta o como tema en la imagen de fondo.|
 |Formulario movido|MoveForm|Un formulario ha sido movido por el propietario. <br><br>La propiedad DestinationUserId: la cadena indica el ID de usuario de la persona que ha movido el formulario. La propiedad NewFormId: la cadena es el nuevo ID para el formulario recién copiado. La propiedad IsDelegateAccess:boolean indica que la acción de movimiento del formulario actual se realiza a través de la página del delegado de administrador.|
-|Formulario eliminado|DeleteForm|Un formulario ha sido eliminado por el propietario. Esto incluye SoftDelete (eliminar la opción utilizada y mover el formulario a la papelera de reciclaje) y HardDelete (Se vacía la papelera de reciclaje).|
+|Formulario eliminado|DeleteForm|Propietario del formulario elimina un formulario. Esto incluye SoftDelete (opción de eliminación usada y formulario movido a la papelera de reciclaje) y HardDelete (la papelera de reciclaje está vacía).|
 |Formulario visto (tiempo de diseño)|ViewForm|Un formulario existente ha sido abierto por el propietario para su edición. <br><br>La propiedad AccessDenied:boolean indica que se ha denegado el acceso del formulario actual debido a la comprobación de permisos. La propiedad FromSummaryLink:boolean indica que la solicitud actual procede de la página de vínculo de resumen.|
 |Vista previa del formulario|PreviewForm|Un formulario ha sido previsualizado por el propietario con la función vista previa.|
 |Formulario exportado|ExportForm|Los resultados han sido exportado a Excel por el propietario del formulario. <br><br>La propiedad ExportFormat:string indicará si el archivo de Excel se puede descargar o ver en línea.|
@@ -1008,7 +1008,7 @@ En la tabla siguiente se enumeran los eventos resultantes del uso de [etiquetas 
 |:-----|:-----|:-----|
 |Etiqueta de confidencialidad aplicada al sitio|SensitivityLabelApplied|Se ha aplicado una etiqueta de confidencialidad a un sitio de SharePoint o Teams.|
 |Etiqueta de confidencialidad eliminada del sitio|SensitivityLabelRemoved|Se ha quitado una etiqueta de confidencialidad de un sitio de SharePoint o Teams.|
-|Etiqueta de confidencialidad aplicada al archivo|FileSensitivityLabelApplied|Se ha aplicado una etiqueta de confidencialidad a un documento usanado aplicaciones de Microsoft 365, mediante Office en la web. o una directiva de etiquetado automático.|
+|Etiqueta de confidencialidad aplicada al archivo|FileSensitivityLabelApplied|Se ha aplicado una etiqueta de confidencialidad a un documento mediante Aplicaciones de Microsoft 365, Office en la Web o una directiva de etiquetado automático.|
 |Se ha cambiado la etiqueta de confidencialidad aplicada al archivo|FileSensitivityLabelChanged<br /><br>SensitivityLabelUpdated|Se ha aplicado una etiqueta de confidencialidad diferente a un documento. <br /><br>Las operaciones de esta actividad son diferentes en función de cómo se cambió la etiqueta:<br /> - Office en la Web o una directiva de etiquetado automático (FileSensitivityLabelChanged) <br /> - Aplicaciones de Microsoft 365 (SensitivityLabelUpdated)|
 |Etiqueta de confidencialidad modificada en un sitio|SensitivityLabelChanged|Se ha aplicado una etiqueta de confidencialidad diferente a un sitio de SharePoint o Teams.|
 |Etiqueta de confidencialidad eliminada del sitio|FileSensitivityLabelRemoved|Se ha quitado una etiqueta de confidencialidad de un documento con aplicaciones de Microsoft 365, Office en la web, una directiva de etiquetado automático o el cmdlet [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile).|
@@ -1033,7 +1033,7 @@ En la tabla siguiente se describen las actividades de configuración de las [dir
 | Ámbito de adaptación actualizado | SetAdaptiveScope | El administrador cambió la descripción o consulta de un ámbito de adaptación existente. |
 | Configuración actualizada para una directiva de retención | SetRetentionComplianceRule | El administrador cambió la configuración de retención de una directiva de retención existente. La configuración de retención incluye cuánto tiempo se retienen los elementos y qué sucede con los elementos cuando expira el período de retención (como eliminar elementos, retener elementos o retenerlos y luego eliminarlos). Esta actividad también corresponde a la ejecución del cmdlet [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule). |
 | Etiqueta de retención actualizada |SetComplianceTag  | El administrador actualizó una etiqueta de retención existente.|
-| Directiva de retención actualizada |SetRetentionCompliancePolicy |El administrador actualizó una directiva de retención existente. Las actualizaciones que desencadenan este evento incluyen agregar o excluir ubicaciones de contenido a las que se aplica la directiva de retención.|
+| Directiva de retención actualizada |SetRetentionCompliancePolicy |El administrador actualizó una política de retención existente. Las actualizaciones que desencadenan este evento incluyen la inclusión o exclusión de ubicaciones de contenido a las que se aplica la política de retención.|
 ||||
 
 ### <a name="briefing-email-activities"></a>Actividades de correo de informe de tareas pendientes
@@ -1116,7 +1116,7 @@ Aquí se muestran algunas sugerencias para buscar actividades de administrador d
 
 - Para mostrar eventos del registro de auditoría de administración de Exchange, haga clic en la columna **Actividad** para ordenar los nombres de cmdlet en orden alfabético.
 
-- Para obtener información sobre qué cmdlet se ha ejecutado, qué parámetros y valores de parámetro se han usado y qué objetos se han visto afectados, tendrá que exportar los resultados de búsqueda y seleccionar la opción **Descargar todos los resultados**. Para más información, consulte[Exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md)
+- Para obtener información sobre qué cmdlet se ha ejecutado, qué parámetros y valores de parámetro se han usado y qué objetos se han visto afectados, puede exportar los resultados de la búsqueda seleccionando la opción **Descargar todos los resultados**. Para obtener más información, consulte [Exportar, configurar y ver registros del registro de auditoría](export-view-audit-log-records.md).
 
 - También puede usar el `Search-UnifiedAuditLog -RecordType ExchangeAdmin` comando de PowerShell Exchange en línea para devolver solo los registros de auditoría del registro de auditoría de administración de Exchange. Se puede tardar hasta 30 minutos después de ejecutar el cmdlet de Exchange para que se devuelva la entrada del registro de auditoría correspondiente en los resultados de la búsqueda. Para obtener más información, consulte [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog). Para obtener información sobre cómo exportar los resultados de búsqueda devueltos por el cmdlet **Search-UnifiedAuditLog** a un archivo CSV, consulte la sección "sugerencias para exportar y ver el registro de auditoría" [exportar, configurar y ver el registro de auditoría registros](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -1152,7 +1152,7 @@ Sí. La API de Actividad de administración de Office 365 se usa para capturar l
 
 **¿Hay otras formas de obtener registros de auditoría que no sean en el centro de seguridad y cumplimiento o con la API de Actividad de administración de Office 365?**
 
-No. Estas son las dos únicas formas de obtener datos del servicio de auditoria.
+No. Éstas son las dos únicas formas de obtener datos del servicio de auditoría.
 
 **¿Necesito habilitar individualmente la auditoría en cada servicio en el que deseo capturar registros de auditoría?**
 
@@ -1160,7 +1160,7 @@ En la mayoría de los servicios, la auditoría se habilita de forma predetermina
 
 **¿El servicio de auditoría admite la con la desduplicación de registros?**
 
-No. La canalización del servicio de auditoría está casi en tiempo real, y por lo tanto no es compatible con la des duplicación.
+No. La canalización del servicio de auditoría se produce casi en tiempo real y, por lo tanto, no es compatible con la desduplicación.
 
 **¿Dónde se almacenan los datos de auditoría?**
 
