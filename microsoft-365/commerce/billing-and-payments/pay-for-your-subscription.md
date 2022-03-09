@@ -2,8 +2,8 @@
 title: Pagar la suscripción
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,19 +16,19 @@ ms.collection:
 search.appverid: MET150
 description: Use una tarjeta de crédito o débito o una cuenta bancaria para pagar la suscripción de Microsoft 365 para empresas. O bien, en algunos casos puede pagar mediante factura.
 ms.custom:
+- commerce_billing
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-- commerce_billing
 - business_assist
 - AdminTemplateSet
 ms.date: 10/28/2021
-ms.openlocfilehash: 839c7e94a2a89b20eef0779f44d864d69ed3a746
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: fb6948c59505eaa3316dab73708658f7b31c43e7
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766793"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63326305"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Cómo pagar la suscripción
 
@@ -69,7 +69,7 @@ Si se requiere una comprobación de crédito, recibirá una notificación cuando
 >
 > Si lo prefiere, puede pagar mediante transferencia electrónica entre cuentas. El organismo y el número de cuenta aparecen en la parte inferior de la factura. Debe especificar el número de factura en el campo de identificación de transferencia.
 
-Si paga su suscripción mediante factura, recibirá un correo electrónico que indica que su extracto de facturación está listo. Este correo electrónico no contiene una copia del extracto de facturación. Sin embargo, puede elegir [recibir las facturas de su organización como datos adjuntos de correo electrónico](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). El extracto de facturación incluye información sobre las opciones de pago, además de dónde debe enviarse. Si escribe un número de pedido de compra al comprar una suscripción, el número aparece en su extracto de facturación. Para información sobre cómo acceder a los extractos de facturación, vea [Ver su factura](view-your-bill-or-invoice.md).
+Si paga con factura su suscripción, recibirá un correo electrónico cuando el extracto de facturación esté listo para verlo. Este correo electrónico no contiene una copia del extracto de facturación. Sin embargo, puede elegir [recibir las facturas de su organización como datos adjuntos de correo electrónico](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). El extracto de facturación incluye detalles sobre las opciones para realizar un pago y dónde enviarlo. Si escribe un número de pedido de compra al comprar una suscripción, el número aparece en el extracto de facturación. Para obtener información sobre el acceso a los extractos de facturación, consulte [Ver su orden o factura](view-your-bill-or-invoice.md).
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>¿Qué debo hacer si tengo un saldo pendiente?
 
@@ -86,7 +86,7 @@ Si no agregó el método de pago usado para pagar la suscripción, debe reemplaz
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>¿Dónde envío mi cheque o pago por EFT?
 
-[Compruebe la factura ](view-your-bill-or-invoice.md)para ver las instrucciones de pago para su país o región. Si no está seguro de la cantidad que debe, puede comprobar su factura y el historial de facturación en línea en la pestaña **Facturas** de la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
+[Compruebe la factura](view-your-bill-or-invoice.md) para obtener instrucciones de pago para su país o región. Si no está seguro de cuánto debe, puede comprobar la factura y el historial de facturación en línea en la pestaña **Facturas** de la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank"> Facturas y pagos</a>.
 
 > [!NOTE]
 > - El pago con cheque solo está disponible en algunos países.

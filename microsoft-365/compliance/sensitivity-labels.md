@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad de Microsoft Information Protecti
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 9c1eb0e7ba8f1c9388dd61f5e3433e47f9cd0cf4
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1c7ec0f9411d767e588e391eb7eb94ec95a219fb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61940643"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312213"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -59,7 +59,7 @@ Puede usar etiquetas de confidencialidad para:
 
 - **Proteger el contenido de las aplicaciones de Office en distintos dispositivos y plataformas.** Compatible con Word, Excel, PowerPoint y Outlook en las aplicaciones de escritorio de Office y Office en la Web. Compatible con Windows, Mac OS, iOS y Android.
 
-- **Proteger el contenido de aplicaciones y servicios de terceros** con Microsoft Defender for Cloud Apps. Con Defender for Cloud Apps se puede detectar, clasificar, etiquetar y proteger el contenido de servicios y aplicaciones de terceros tales como SalesForce, Box o DropBox, incluso si la aplicación o el servicio de terceros no lee ni admite etiquetas de confidencialidad.
+- **Proteger el contenido en los servicios y aplicaciones de terceros** con Microsoft Defender for Cloud Apps. Con Defender for Cloud Apps se puede detectar, clasificar, etiquetar y proteger el contenido de servicios y aplicaciones de terceros tales como SalesForce, Box o DropBox, incluso si la aplicación o el servicio de terceros no lee ni admite etiquetas de confidencialidad.
 
 - **Proteger contenedores** que incluyan Teams, Grupos de Microsoft 365 y sitios de SharePoint. Por ejemplo, configurar las opciones de privacidad, el acceso de usuarios externos, el uso compartido externo y el acceso desde dispositivos no administrados.
 
@@ -104,11 +104,13 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
     
     ![Marca de agua y encabezado aplicados a un documento.](../media/Sensitivity-label-watermark-header.png)
     
+    Las marcas dinámicas también se admiten mediante variables. Por ejemplo, inserte el nombre de la etiqueta o el nombre del documento en el encabezado, pie de página o marca de agua. Para obtener más información, vea [Marcadores dinámicos con variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables).
+    
     ¿Necesita comprobar cuándo se aplican marcas de contenido? Consulte [Cuándo las aplicaciones de Office aplican marcado de contenido y cifrado](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption).
     
-    Algunas, aunque no todas las aplicaciones admiten marcas dinámicas mediante el uso de variables. Por ejemplo, inserte el nombre de la etiqueta o el nombre del documento en el encabezado, pie de página o marca de agua. Para obtener más información, vea [Marcadores dinámicos con variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables).
+    Si tiene plantillas o flujos de trabajo basados en documentos específicos, pruebe esos documentos con las marcas de contenido elegidas antes de que la etiqueta esté disponible para los usuarios. Algunas restricciones de longitud de cadena que deben tenerse en cuenta:
     
-    Longitudes de cadena: las marcas de agua están limitadas a 255 caracteres. Los encabezados y pies de página tienen un límite de 1024 caracteres, excepto en Excel. Excel tiene un límite total de 255 caracteres para encabezados y pies de página, pero este límite incluye caracteres que no son visibles, como códigos de formato. Si se alcanza ese límite, la cadena que escriba no se mostrará en Excel.
+    Las marcas de agua están limitadas a 255 caracteres. Los encabezados y pies de página tienen un límite de 1024 caracteres, excepto en Excel. Excel tiene un límite total de 255 caracteres para encabezados y pies de página, pero este límite incluye caracteres que no son visibles, como códigos de formato. Si se alcanza ese límite, la cadena que escriba no se mostrará en Excel.
 
 - **Proteja el contenido de los contenedores como sitios y grupos** cuando habilita la capacidad de [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, los grupos de Microsoft 365 y los sitios de SharePoint](sensitivity-labels-teams-groups-sites.md).
     
@@ -119,6 +121,8 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
     ![Aviso para asignar una etiqueta necesaria.](../media/Sensitivity-label-Prompt-for-required-label.png)
     
     Para más información sobre la configuración del **Etiquetado automático de archivos y correos electrónicos** cuando se crea o edita una etiqueta de confidencialidad, consulte [Aplicar automáticamente una etiqueta de confidencialidad al contenido](apply-sensitivity-label-automatically.md) para las aplicaciones de Office y [Etiquetado en Azure Purview](/azure/purview/create-sensitivity-label).
+
+- **Establezca el tipo de vínculo de uso compartido predeterminado** para los sitios y documentos individuales de SharePoint. Para ayudar a evitar que los usuarios compartan demasiado, establezca el [ámbito y los permisos predeterminados](sensitivity-labels-default-sharing-link.md) para cuando los usuarios compartan documentos desde SharePoint y OneDrive.
 
 ### <a name="label-scopes"></a>Ámbitos de etiqueta
 
@@ -237,30 +241,16 @@ Si no ve la etiqueta o el comportamiento del valor de la directiva de etiquetas 
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>Etiquetas de confidencialidad y Azure Information Protection
 
-Al usar etiquetas de confidencialidad en Aplicaciones de Microsoft 365 en equipos Windows, tiene la opción de usar el etiquetado integrado en las aplicaciones de Office o el [cliente de Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2).
+Las etiquetas de confidencialidad integradas en Aplicaciones de Microsoft 365 en Windows, macOS, iOS y Android se ven y se comportan de forma muy similar en estos dispositivos para proporcionar a los usuarios una experiencia de etiquetado coherente. Sin embargo, en equipos de Windows, también puede usar el [cliente de Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2). Este cliente está ahora en [modo de mantenimiento](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613).
 
-Dado que las etiquetas integradas no usan un complemento de Office, tal y como las usa el cliente de Azure Information Protection, tienen la ventaja de una mayor estabilidad y un mejor rendimiento. También admiten las características más recientes, como clasificadores avanzados.
-
-De forma predeterminada, la etiqueta integrada está desactivada en estas aplicaciones cuando el cliente de Azure Information Protection está instalado. Para cambiar este comportamiento predeterminado y usar etiquetas integradas para las aplicaciones de Office, vea [cliente de etiquetado integrado de Office y el cliente de Azure Information Protection](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
-
-Al mantener el cliente de Azure Information Protection instalado pero deshabilitado en las aplicaciones de Office, obtiene la ventaja de usar el cliente de Azure Information Protection con etiquetas de confidencialidad para lo siguiente:
-
-- Un escáner para detectar información confidencial almacenada localmente y, si quiere, etiquete el contenido
-
-- Opciones de botón derecho en el explorador de archivos para que los usuarios puedan aplicar etiquetas a todos los tipos de archivo
-
-- Un visor para mostrar archivos cifrados para texto, imágenes o documentos PDF
-
-- Un módulo de PowerShell para detectar información confidencial en los archivos locales y aplicar o quitar las etiquetas y el cifrado de estos archivos.
-
-Si no está familiarizado con Azure Information Protection, consulte [Elija la solución de etiquetado de Windows](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) en la documentación de Azure Information Protection.
+Si usa el cliente AIP, consulte [Por qué elegir el etiquetado integrado de MIP en lugar del complemento de AIP para las aplicaciones de Office](sensitivity-labels-aip.md) para comprender y administrar las opciones de etiquetado para los equipos de Windows.
 
 ### <a name="azure-information-protection-labels"></a>Etiquetas de Azure Information Protection
 
 > [!NOTE]
 > La administración de las etiquetas de Azure Information Protection en el Microsoft Azure Portal quedó obsoleta el **31 de marzo de 2021**. Obtenga más información en el anuncio oficial de la [eliminación de las etiquetas](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
 
-Si su espacio empresarial aún no está en la [plataforma de etiquetas unificada](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), debe activar el etiquetado unificado antes de poder usar etiquetas de confidencialidad. Para obtener más información acerca de este proceso, consulte [Cómo migrar las etiquetas de Azure Information Protection a etiquetas de confidencialidad unificadas](/azure/information-protection/configure-policy-migrate-labels) 
+Si su espacio empresarial aún no está en la [plataforma de etiquetas unificada](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), debe activar el etiquetado unificado antes de poder usar etiquetas de confidencialidad. Para obtener más información acerca de este proceso, consulte [Cómo migrar las etiquetas de Azure Information Protection a etiquetas de confidencialidad unificadas](/azure/information-protection/configure-policy-migrate-labels)
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>Etiquetas de confidencialidad y el SDK de Microsoft Information Protection
 

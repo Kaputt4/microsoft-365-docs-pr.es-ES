@@ -44,8 +44,14 @@
           items:
             - name: Información general sobre el túnel dividido VPN
               href: microsoft-365-vpn-split-tunnel.md
+            - name: Escenarios comunes de túnel dividido VPN
+              href: microsoft-365-vpn-common-scenarios.md
             - name: Implementación del túnel dividido VPN
               href: microsoft-365-vpn-implement-split-tunnel.md
+            - name: Protección del tráfico multimedia Teams para la tunelización dividida VPN
+              href: microsoft-365-vpn-securing-teams.md
+            - name: Transmisión y eventos en directo en entornos VPN
+              href: microsoft-365-vpn-stream-and-live-events.md
             - name: Optimización de Microsoft 365 para usuarios de China
               href: microsoft-365-networking-china.md
             - name: Optimización del tráfico de Microsoft 365 para trabajadores remotos con el cliente VPN nativo de Windows 10
@@ -182,6 +188,8 @@
               href: microsoft-365-mailbox-utilization-service-alerts.md
             - name: Alertas de servicio para retrasos de origen MRS
               href: microsoft-365-mrs-source-delays-service-alerts.md
+            - name: Alertas de servicio para los mensajes en cola para los destinatarios externos
+              href: microsoft-365-external-recipient-service-alerts.md
         - name: Guías de configuración
           href: setup-guides-for-microsoft-365.md
     - name: Varios inquilinos
@@ -263,7 +271,7 @@
       href: deploy-identity-solution-identity-model.md
     - name: Paso 2. Proteger las cuentas con privilegios
       href: protect-your-global-administrator-accounts.md
-    - name: Paso 3. Proteger sus cuentas de usuario
+    - name: Paso 3. Proteger las cuentas de usuario
       href: microsoft-365-secure-sign-in.md
     - name: Paso 4. Implementar su modelo de identidad
       items:

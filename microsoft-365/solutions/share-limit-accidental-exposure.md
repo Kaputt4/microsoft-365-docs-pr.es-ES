@@ -12,17 +12,17 @@ ms.collection:
 - m365solution-3tiersprotection
 - m365solution-securecollab
 - m365initiative-externalcollab
-ms.custom: ''
+ms.custom: admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo limitar la exposición accidental de información al compartir archivos con usuarios externos a la organización.
-ms.openlocfilehash: 4c60f77f7f7807395a503ce083795e76398d99b4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c1bf6424e2be70118dd2d85671a857a8a33ef2f9
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196254"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63329063"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limitar la exposición accidental de archivos al compartirlos con usuarios externos a la organización
 
@@ -43,7 +43,8 @@ Si deshabilita los vínculos de tipo *Cualquiera*, los usuarios podrán seguir c
 En función de sus necesidades, puede deshabilitar los vínculos de tipo *Cualquiera* para sitios específicos o para toda la organización.
 
 Para desactivar los vínculos de tipo *Cualquiera* de su organización, haga lo siguiente: 
-1. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **Uso compartido**.
+
+1. En el centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a>.
 2. Establezca la configuración de uso compartido externo de SharePoint como **Invitados nuevos y existentes**.
 
    ![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint a nivel de organización.](../media/sharepoint-organization-external-sharing-controls-new-users.png)
@@ -51,14 +52,15 @@ Para desactivar los vínculos de tipo *Cualquiera* de su organización, haga lo 
 3. Haga clic en **Guardar**.
 
 Desactivar los vínculos de tipo *Cualquiera*
-1. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, expanda **Sitios** y haga clic en **Sitios activos**.
+
+1. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, expanda **Sitios** y haga clic en <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a>.
 2. Seleccione el sitio que quiere configurar.
-3. En la cinta de opciones, haga clic en **Uso compartido**.
+3. En la cinta de opciones, seleccione **Uso compartido**.
 4. Asegúrese de que el uso compartido está establecido como **Invitados nuevos y existentes**.
 
    ![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint a nivel de sitio.](../media/sharepoint-site-external-sharing-settings.png)
 
-5. Si ha realizado cambios, haga clic en **Guardar**.
+5. Si ha realizado algún cambio, seleccione **Guardar**.
 
 ## <a name="domain-filtering"></a>Filtrado de dominios
 
@@ -71,7 +73,8 @@ Con una lista de dominios rechazados, puede especificar una lista de dominios de
 Las listas de permitidos y rechazados solo afectan al uso compartido con invitados. Los usuarios aún podrán compartir con personas de dominios prohibidos mediante el uso de vínculos de tipo *Cualquiera* si no los ha deshabilitado. Para obtener los mejores resultados con las listas de dominios permitidos y de denegación, considere la posibilidad de deshabilitar los vínculos de tipo *Cualquiera* como se ha descrito anteriormente.
 
 Para configurar una lista de dominios permitidos o denegados
-1. En el centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **Uso compartido**.
+
+1. En el centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a>
 2. En **Configuración avanzada para uso compartido externo**, active la casilla **Limitar uso compartido externo por dominio**.
 3. Haga clic en **Agregar dominios**.
 4. Seleccione si quiere bloquear dominios, escriba los dominios y haga clic en **Aceptar**.
@@ -87,14 +90,15 @@ Si quiere limitar el uso compartido de dominios en un nivel más alto que ShareP
 Puede restringir el uso compartido de archivos, carpetas y sitios con usuarios externos a la organización a los miembros de un grupo de seguridad específico. Esto es útil si quiere habilitar el uso compartido externo, pero con un flujo de trabajo de aprobación o un proceso de solicitud. Como alternativa, puede requerir que sus usuarios completen un curso de capacitación antes de que se agreguen al grupo de seguridad y se les permita compartir con el exterior.
 
 Para limitar el uso compartido externo a los miembros de un grupo de seguridad
-1. En el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint), en el panel de navegación izquierdo, en **Directivas**, haga clic en **Uso compartido**.
+
+1. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, en **Directivas**, haga clic en <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a>.
 2. En **Uso compartido externo**, expanda **Más configuraciones de uso compartido externo**.
 
 3. Seleccione **Permitir que solo los usuarios de grupos de seguridad específicos compartan externamente** y luego seleccione **Administrar grupos de seguridad**.
 
     ![Captura de pantalla del panel Administrar grupos de seguridad.](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
-4. En el cuadro **Agregar un grupo de seguridad**, escriba un nombre para el grupo de seguridad. Se mostrará el cuadro de grupo de seguridad.
+4. En el cuadro **Agregar un grupo de seguridad**, escriba un nombre para un grupo de seguridad. Aparece el cuadro de grupo de seguridad.
 
 5. Junto al nombre del grupo de seguridad, en el menú **Puede compartir con**, seleccione:
 

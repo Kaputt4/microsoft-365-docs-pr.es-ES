@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de retención para declarar registros.
-ms.openlocfilehash: 7c1599bd40059559b9e0d19383a08fe2382e6442
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 93e51698109819f4743dd4b5b45f5a5177739a2a
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241704"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324849"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usar etiquetas de retención para declarar registros
 
@@ -69,6 +69,11 @@ Instrucciones completas:
 
 - [Aplicar una etiqueta de retención a contenido automáticamente](apply-retention-labels-automatically.md) (no es compatible con los registros normativos)
 
+## <a name="tenant-setting-for-editing-record-properties"></a>Configuración del inquilino para editar las propiedades del registro
+
+Si va a usar etiquetas de retención para declarar elementos como registros (en lugar de registros normativos) en SharePoint y OneDrive, considere si necesita cambiar la configuración predeterminada del espacio empresarial que permite a los usuarios editar las propiedades de un [registro bloqueado](record-versioning.md) cuando los archivos tengan más de 0 bytes.
+
+Para cambiar este valor predeterminado, vaya al [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/) > **Administración de registros** > **Configuración de la administración de registros** > **Etiquetas de retención** > **Permitir la edición de las propiedades del registro** y, a continuación, deshabilite el ajuste **Permitir a los usuarios editar las propiedades del registro**.
 
 ## <a name="applying-the-configured-retention-label-to-content"></a>Aplicar una etiqueta de retención configurada al contenido
 
@@ -95,4 +100,4 @@ Para obtener más información sobre cómo buscar estos eventos, vea [Buscar en 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para obtener una lista de los escenarios admitidos por la administración de registros, vea [Escenarios comunes de la administración de registros](get-started-with-records-management.md#common-scenarios).
+Obtenga más información sobre cómo usar el [control de versiones del registro para actualizar los registros almacenados en SharePoint o OneDrive](record-versioning.md).

@@ -14,16 +14,17 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga más información sobre las opciones disponibles para crear un entorno seguro de uso compartido para invitados en Microsoft 365, al proporcionar accesos de invitado para mejorar la colaboración.
-ms.openlocfilehash: ae616bcaa78aa759ca5b1f1be4b1beaf8d709a00
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 97b9c3c26fce137ad4471bbf080d4b7340c8b622
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807613"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323799"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Crear un entorno seguro de uso compartido para invitados
 
@@ -180,8 +181,8 @@ Cómo restringir el acceso de los invitados a solo web para Grupos y Equipos:
 
 Cómo restringir el acceso de los invitados a solo web para SharePoint
 
-1. En el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint), expanda **Directivas** y haga clic en **Control de acceso**.
-2. Haga clic en **Dispositivos no administrados**.
+1. En el Centro de administración de SharePoint, expanda **Directivas** y haga clic en <a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">**Control de acceso**</a>.
+2. Seleccione **Dispositivos no administrados**.
 3. Seleccione la opción **Permitir el acceso limitado a solo web** y, a continuación, haga clic en **Guardar**.
 
 Tenga en cuenta que esta configuración del Centro de administración de SharePoint crea una directiva de apoyo de acceso condicional en Azure AD.

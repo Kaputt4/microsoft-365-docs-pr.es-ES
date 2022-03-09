@@ -1,27 +1,32 @@
 ---
 title: Iniciar la retención cuando se produzca un evento
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: null
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
+- M365-security-compliance
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 ms.custom:
-  - seo-marvel-apr2020
-  - seo-marvel-may2020
-  - seo-marvel-jun2020
-description: 'Por lo general, como parte de una solución de administración de registros, puede configurar una etiqueta para iniciar el período de retención en función de un evento identificado.'
+- seo-marvel-apr2020
+- seo-marvel-may2020
+- seo-marvel-jun2020
+description: Por lo general, como parte de una solución de administración de registros, puede configurar una etiqueta para iniciar el período de retención en función de un evento identificado.
+ms.openlocfilehash: ad5fb2ef567525fa021acb0388ebc5cc98b1148c
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63313305"
 ---
-
 # <a name="start-retention-when-an-event-occurs"></a>Iniciar la retención cuando se produzca un evento
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
@@ -107,7 +112,7 @@ Si está usando un tipo de evento existente en lugar de crear un nuevo tipo de e
 
 ### <a name="step-2-create-a-new-event-type-for-your-label"></a>Paso 2: crear un nuevo tipo de evento para su etiqueta
 
-Para la configuración de retención, si seleccionó **Crear nuevo tipo de evento**, escriba un nombre y una descripción para su tipo de evento. Luego seleccione **Siguiente**, **Enviar** y **Listo**.
+Para la configuración de retención, si seleccionó **Crear nuevo tipo de evento**, escriba un nombre y una descripción para su tipo de evento. A continuación, seleccione **Siguiente**, **Enviar** y **Listo**.
 
 Regrese a la página **Definir la configuración de retención**, para **Iniciar el período de retención basado en eventos**, utilice la lista desplegable para seleccionar el tipo de evento que creó.
 
@@ -115,7 +120,7 @@ Regrese a la página **Definir la configuración de retención**, para **Iniciar
 ### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>Paso 3: Publicar o aplicar automáticamente las etiquetas de retención basadas en eventos
 
 Al igual que las etiquetas de retención, debe publicar o aplicar automáticamente una etiqueta basada en eventos para que se aplique de forma manual o automática al contenido:
-- [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
+- [Publicar etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
 - [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)
 
 ### <a name="step-4-enter-an-asset-id"></a>Paso 4: Escribir un id. de activo

@@ -34,6 +34,8 @@
           href: apply-a-retention-label-to-a-model.md
         - name: Aplicar una etiqueta de confidencialidad
           href: apply-a-sensitivity-label-to-a-model.md
+        - name: Creación de un modelo local
+          href: create-local-model.md
         - name: Análisis de uso del modelo
           href: model-usage-analytics.md
         - name: Aprovechar la taxonomía del almacén de términos al crear un extractor
@@ -60,6 +62,8 @@
       href: prebuilt-models.md
     - name: Aplicar una etiqueta de retención
       href: apply-a-retention-label-to-a-model.md
+    - name: Creación de un modelo local
+      href: create-local-model.md
     - name: Análisis de uso del modelo
       href: model-usage-analytics.md
 - name: Ensamble de contenidos
@@ -118,5 +122,9 @@
           href: solution-manage-contracts-step2.md
         - name: Paso 3. Usar Power Automate
           href: solution-manage-contracts-step3.md
+    - name: Plantilla del sitio Administración de contratos
+      href: use-contracts-management-site.md
+    - name: Plantilla del sitio Centro de documentación
+      href: use-content-center-site.md
 - name: Extensibilidad
   href: /sharepoint/dev/apis/syntex/syntex-model-rest-api

@@ -16,16 +16,17 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los pasos de configuración necesarios para Microsoft 365 para configurar un equipo para la colaboración en tareas, conversaciones y documentación con invitados en Teams.
-ms.openlocfilehash: 4128f6cd5293972dd7383eed0802f7969f488d8a
-ms.sourcegitcommit: 6722f66915dfe30c3d0ade97b3e9080a9592251b
+ms.openlocfilehash: bb6ccf4f3e17192d86675d99072eca8b836973e2
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60899647"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63324555"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -110,10 +111,10 @@ Si quiere permitir el uso compartido de archivos y carpetas con personas sin aut
 
 Para establecer la configuración de uso compartido de nivel de organización de SharePoint
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, en el panel de navegación izquierdo, en **Centros de administración**, haga clic en **SharePoint**.
-2. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, expanda el panel de navegación **Directivas** y haga clic en **Uso compartido**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, en el panel de navegación izquierdo, en **Centros de administración**, seleccione **SharePoint**.
+2. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, expanda **Directivas** y seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a>.
 3. Asegúrese de que el uso compartido externo de SharePoint está establecido en **Cualquier usuario** o **Invitados nuevos y existentes**.
-4. Si ha realizado cambios, haga clic en **Guardar**.
+4. Si ha realizado cambios, seleccione **Guardar**.
 
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>Configuración de vínculos predeterminada para el nivel de organización de SharePoint
@@ -133,9 +134,9 @@ Elija uno de los siguientes tipos de vínculos, que se seleccionará de forma pr
 
 Para establecer la configuración de vínculos predeterminada para el nivel de organización de SharePoint
 
-1. Vaya a la página de Uso compartido en el Centro de administración de SharePoint.
+1. Vaya a <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a> en el Centro de administración de SharePoint.
 2. En **Vínculos de archivos y carpetas**, seleccione el vínculo para compartir predeterminado que quiere usar.
-3. Si ha realizado cambios, haga clic en **Guardar**.
+3. Si ha realizado cambios, seleccione **Guardar**.
 
 ## <a name="create-a-team"></a>Crear un equipo
 
@@ -158,11 +159,11 @@ Compruebe la configuración de uso compartido de nivel de sitio para asegurarse 
 ![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint.](../media/sharepoint-site-external-sharing-settings.png)
 
 Para establecer la configuración de uso compartido de nivel de sitio
-1. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, expanda **Sitios** y haga clic en **Sitios activos**.
+1. En el Centro de administración de SharePoint, en el panel de navegación izquierdo, expanda **Sitios** y seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a>.
 2. Seleccione el sitio para el equipo recién creado.
-3. Haga clic en ... y elija **Uso compartido**.
+3. Seleccione... y elija **Uso compartido**.
 4. Asegúrese de que el uso compartido está establecido en **Cualquiera** o en **Invitados nuevos y existentes**.
-5. Si ha realizado cambios, haga clic en **Guardar**.
+5. Si ha realizado cambios, seleccione **Guardar**.
 
 ## <a name="invite-users"></a>Invitar a usuarios
 

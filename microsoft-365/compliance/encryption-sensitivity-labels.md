@@ -1,7 +1,7 @@
 ---
 title: Restringir el acceso al contenido utilizando etiquetas de confidencialidad para aplicar la cifrado
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,14 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
+- M365-security-compliance
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 2e337ef74975bd761de89b4aaae03379344efeed
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63311905"
 ---
-
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
@@ -188,6 +193,8 @@ Al asignar permisos, puede elegir:
 - Cualquier usuario autenticado. Asegúrese de comprender las [limitaciones y requisitos](#requirements-and-limitations-for-add-any-authenticated-users) de esta configuración antes de seleccionarla.
 
 - Cualquier usuario específico o grupo de seguridad habilitado para correo electrónico, grupo de distribución o grupo de Microsoft 365 ([anteriormente denominado grupo de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) en Azure AD. El grupo de Microsoft 365 puede tener [pertenencia estática o dinámica](/azure/active-directory/users-groups-roles/groups-create-rule). Tenga en cuenta que no puede usar un grupo de [distribución dinámico de Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) porque este tipo de grupo no está sincronizado con Azure AD, y no puede usar un grupo de seguridad que no esté habilitado para correo electrónico.
+    
+    Dentro de un grupo especificado que es compatible con esta opción, el servicio de Azure Information Protection [autenticará individualmente a cada usuario](/azure/information-protection/prepare#azure-information-protection-requirements-for-user-accounts) antes de poder abrir el contenido cifrado.
 
 - Cualquier dirección de correo electrónico o dominio. Use esta opción para especificar todos los usuarios de otra organización que usan Azure AD, escribiendo un nombre de dominio de dicha organización. También puede usar esta opción para proveedores de redes sociales si escribe su nombre de dominio, como **gmail.com**, **hotmail.com** o **outlook.com**.
 
@@ -424,7 +431,7 @@ Cifrar los documentos y mensajes de correo electrónico más confidenciales le a
 
 - Cuando los usuarios autorizados abren documentos cifrados en sus aplicaciones de Office, ven el nombre y descripción de la etiqueta en una barra de mensajes amarilla en la parte superior de la aplicación. Cuando los permisos de cifrado se extienden a personas fuera de la organización, revise detenidamente los nombres y descripciones de las etiquetas que estarán visibles en esta barra de mensajes cuando se abra el documento.
 
-- Para que varios usuarios puedan modificar un archivo cifrado al mismo tiempo, deben usar Office para la Web.  O, para Windows y Mac, se ha [habilitado la coautoría para los archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md) y los usuarios tienen las [versiones mínimas necesarias](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) de Word, Excel y PowerPoint. Si este no es el caso, y el archivo ya está abierto:
+- Para que varios usuarios editen un archivo cifrado al mismo tiempo, todos deben usar Office en la Web o debe haber [habilitado la co-autoría de archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md) y todos los usuarios deben tener [aplicaciones de Office compatibles con esta característica](sensitivity-labels-coauthoring.md#prerequisites). Si este no es el caso, y el archivo ya está abierto:
 
   - En las aplicaciones de Office (Windows, Mac, Android y iOS), los usuarios verán un mensaje de **archivo en uso** con el nombre de la persona que ha desprotegido el archivo. Podrán ver una copia de solo lectura, guardar y editar una copia del archivo, y recibir una notificación cuando el archivo esté disponible.
   - En Office para la Web, los usuarios ven un mensaje de error que indica que no pueden editar el documento con otras personas. A continuación, pueden seleccionar **Abrir en Vista de lectura**.
@@ -435,7 +442,7 @@ Cifrar los documentos y mensajes de correo electrónico más confidenciales le a
 
 - Si se agrega una etiqueta que aplica el cifrado a través de una aplicación de Office, cuando el documento está [extraído en SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de) y el usuario descarta la desprotección, el documento permanece etiquetado y cifrado.
 
-- A menos que [haya habilitado la coautoría de archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md), las siguientes acciones para archivos cifrados no son compatibles con aplicaciones de Office (Windows, Mac, Android e iOS) y los usuarios ven un mensaje de error que indica que algo salió mal. Sin embargo, la funcionalidad de SharePoint se puede usar como alternativa:
+- A menos que haya [habilitado la coautoría de archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md), las siguientes acciones para archivos cifrados no son compatibles con aplicaciones de Office (Windows, Mac, Android e iOS) y los usuarios ven un mensaje de error que indica que algo salió mal. Sin embargo, se puede usar la funcionalidad de SharePoint como alternativa:
 
   - Ver, restaurar y guardar copias de versiones anteriores. Como alternativa, los usuarios pueden realizar estas acciones con Office en la web cuando [permitir y configurar el control de versiones para una lista o biblioteca](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
   - Cambie el nombre o la ubicación de los archivos. Como alternativa, los usuarios pueden [renombre un archivo, carpeta o vínculo en una biblioteca de documentos](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) en SharePoint.

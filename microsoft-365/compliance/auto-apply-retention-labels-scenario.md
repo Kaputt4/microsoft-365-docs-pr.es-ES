@@ -12,17 +12,19 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-ms.custom: admindeeplinkCOMPLIANCE
+ms.custom:
+- admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 search.appverid:
 - MOE150
 - MET150
 description: Cómo puede usar las etiquetas de retención para administrar el ciclo de vida de los documentos en SharePoint con metadatos para clasificar el contenido, aplicar las etiquetas automáticamente y usar la retención basada en eventos para iniciar el período de retención.
-ms.openlocfilehash: 586f9074628ed3c4c272715378b1ba413ebdd3ec
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: 35c43a96e07fe52d9e5e0cc0a72195353b6f5da6
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753672"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63327173"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint
 
@@ -148,7 +150,7 @@ Básicamente, queremos indicar a Microsoft 365 que "aplique la etiqueta de reten
 
 Cuando SharePoint indexa contenido, genera automáticamente propiedades rastreadas para cada columna de sitio. Para este escenario, nos interesan las propiedades **Tipo de documento** y **Estado**. Necesitamos documentos en la biblioteca con el tipo de contenido correcto y las columnas de sitio rellenadas, para que la búsqueda pueda crear las propiedades rastreadas.
 
-En el Centro de administración de SharePoint, abra la configuración de búsqueda y seleccionar **Administrar el esquema de búsqueda** para ver y configurar las propiedades rastreadas.
+En el <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centro de administración de SharePoint</a>, abra la configuración de búsqueda y seleccionar **Administrar el esquema de búsqueda** para ver y configurar las propiedades rastreadas.
 
 ![Propiedades rastreadas en el esquema de búsqueda.](../media/SPRetention8.png)
 
@@ -179,7 +181,7 @@ Para obtener más información sobre las propiedades rastreadas y administradas,
 
 KQL no puede usar propiedades rastreadas en las consultas de búsqueda. Necesita usar una propiedad administrada. En un escenario de búsqueda típico, creamos una propiedad administrada y la asignamos a la propiedad rastreada que necesitamos. Sin embargo, para aplicar las etiquetas de retención automáticamente, solo se pueden especificar las propiedades administradas predefinidas en KQL y no las propiedades administradas personalizadas. Se puede usar un conjunto de propiedades administradas predefinidas en el sistema para las cadenas de *RefinableString00* a *RefinableString199*. Para obtener una lista completa, vea [Propiedades administradas sin usar predeterminadas](/sharepoint/manage-search-schema#default-unused-managed-properties). Estas propiedades administradas predeterminadas suelen usarse para definir refinadores de búsqueda.
 
-Para que la consulta KQL aplique automáticamente la etiqueta de retención correcta en el contenido de documentos del producto, asignamos las propiedades rastreadas **ows\_Doc\_x0020\_Type* y *ows\_\_Status** a dos propiedades administradas que se pueden refinar. En nuestro entorno de prueba para este escenario, no se usan **RefinableString00** ni **RefinableString01**. Determinamos esto al analizar las **Propiedades administradas** en **Administrar esquema de búsqueda** en el Centro de administración de SharePoint.
+Para que la consulta KQL aplique automáticamente la etiqueta de retención correcta en el contenido de documentos del producto, asignamos las propiedades rastreadas **ows\_Doc\_x0020\_Type* y *ows\_\_Status** a dos propiedades administradas que se pueden refinar. En nuestro entorno de prueba para este escenario, no se usan **RefinableString00** ni **RefinableString01**. Determinamos esto al analizar las **Propiedades administradas** en **Administrar esquema de búsqueda** en el <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centro de administración de SharePoint</a>.
 
 [ ![Propiedades administradas en el esquema de búsqueda.](../media/SPRetention12.png) ](../media/SPRetention12.png#lightbox)
 

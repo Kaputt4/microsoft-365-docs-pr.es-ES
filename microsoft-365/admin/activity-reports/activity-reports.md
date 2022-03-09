@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 36176ceee1ace993a95e661ab5d71ee062956692
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 9f54d3b582b08ba38cc6f9f815224f01fcad3dcb
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074407"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63315349"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -110,7 +110,8 @@ Dependiendo de su suscripción, aquí están los informes disponibles en todos l
 |[Actividad de conferencias organizada de Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Sí|Sí|No[^1]|No[^1]|Sí|
 |[Actividad de participantes de conferencias de Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Sí|Sí|No[^1]|No[^1]|Sí|
 |[Actividad punto a punto de Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Sí|Sí|No[^1]|No[^1]|Sí|
-|[Actividades de aprendizaje Viva](viva-learning-activity.md)|Sí|N/D|N/D|N/D|N/D|
+|[Actividades de aprendizaje Viva](viva-learning-activity.md)|Sí|N/D|N/D|No aplicable|N/D|
+|[Actividad de Viva Insights](viva-insights-activity.md)|Sí|Sí|N/D|N/D|N/D|
 
 [^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
 [^2]: The service is not available in the environment so no plan to release the report.

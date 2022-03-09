@@ -14,16 +14,17 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: En este artículo, obtendrá información sobre los procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados.
-ms.openlocfilehash: 40bf61820f28656e6f038e76f066e9b122b30177
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ffe1219c468deef8c78e51e410e862ec52532483
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149639"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63323841"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados.
 
@@ -42,21 +43,19 @@ Una vez que el vínculo para *Cualquiera* haya expirado, ya no podrá usarse par
 
 Establezca una fecha de expiración para los vínculos para Cualquiera a través de la organización
 
-1. Abra el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint).
-2. En el panel de navegación izquierdo, expanda **Directivas** y haga clic en **Uso compartido**.
-3. En la **Elegir opciones de permisos y expiración para vínculos para Cualquiera**, seleccione la casilla **Los vínculos deben expirar dentro de este número de días**.</br>
+1. Abra el Centro de administración de SharePoint, expanda **Directivas** y, a continuación, seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a>.
+1. En la **Elegir opciones de permisos y expiración para vínculos para Cualquiera**, seleccione la casilla **Los vínculos deben expirar dentro de este número de días**.</br>
    ![Captura de pantalla de la configuración de los vínculos para cualquier usuario en el nivel de organización de SharePoint.](../media/sharepoint-organization-anyone-link-expiration.png)
-4. Escriba un número de días en el cuadro y después haga clic en **Guardar**.
+1. Escriba un número de días en el cuadro y después haga clic en **Guardar**.
 
 Establezca una fecha de expiración para los vínculos para Cualquiera de un sitio concreto
 
-1. Abra el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint).
-2. En el panel de navegación izquierdo, expanda **Sitios** y, después, haga clic en **Sitios activos**.
-3. Seleccione el sitio web que quiera cambiar y haga clic en **Uso compartido**.
-4. En **Configuración avanzada para los vínculos para Cualquiera**, en **Expiración de los vínculos para Cualquiera**, desactive la casilla **Igual que la configuración de nivel de organización**.</br>
+1. Abra el Centro de administración de SharePoint, expanda **Sitios** y, a continuación, seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a>.
+1. Seleccione el sitio que desea cambiar y, a continuación, seleccione **Uso compartido**.
+1. En **Configuración avanzada para los vínculos para Cualquiera**, en **Expiración de los vínculos para Cualquiera**, desactive la casilla **Igual que la configuración de nivel de organización**.</br>
    ![Recorte de pantalla de la configuración de la expiración de los vínculos para cualquier usuario en el nivel del sitio de SharePoint.](../media/sharepoint-organization-anyone-link-expiration-site.png)
-5. Seleccione la opción **Los vínculos deben expirar dentro de este número de días** y escriba un número de días en el cuadro.
-6. Haga clic en **Guardar**.
+1. Seleccione la opción **Los vínculos deben expirar dentro de este número de días** y escriba un número de días en el cuadro.
+1. Seleccione **Guardar**.
 
 Tenga en cuenta que una vez que el vínculo para *Cualquiera* expire, el archivo o la carpeta se podrá volver a compartir con un nuevo vínculo para *Cualquiera*.
 
@@ -70,9 +69,8 @@ Si desea permitir el uso compartido sin autenticarse, pero le preocupa que los u
 
 Establezca los permisos para los vínculos para Cualquiera a través de la organización
 
-1. Abra el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint).
-2. En el panel de navegación izquierdo, haga clic en **Uso compartido**.
-3. En **Configuración avanzada de vínculos para "Cualquiera"**, seleccione los permisos de los archivos y carpetas que quiera usar.</br>
+1. Abra el Centro de administración de SharePoint y seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a>.
+1. En **Configuración avanzada de vínculos para "Cualquiera"**, seleccione los permisos de los archivos y carpetas que quiera usar.</br>
    ![Captura de pantalla de la configuración de permisos de los vínculos para cualquier usuario en el nivel de organización de SharePoint.](../media/sharepoint-organization-anyone-link-permissions.png)
 
 Con los vínculos para *Cualquiera* que se establecen en **Vista**, los usuarios pueden seguir compartiendo archivos y carpetas con los invitados y concederles permisos de edición mediante vínculos para *Personas específicas*. Estos vínculos requieren la autenticación de los usuarios externos a la organización. Puede realizar un seguimiento de la actividad de los invitados en los archivos y carpetas compartidos con dichos vínculos.
@@ -84,23 +82,22 @@ Cuando *Cualquiera* está habilitado para su organización, el vínculo de uso c
 Para mitigar este riesgo, puede cambiar la configuración de vínculo predeterminado a un vínculo que solo funcione para las personas de su organización. Los usuarios que quieran compartir con otros usuarios no autenticados tendrían que seleccionar esa opción específicamente.
 
 Para establecer el vínculo de uso compartido de archivos y carpetas predeterminado para la organización
-1. Abra el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint).
-2. En el panel de navegación izquierdo, haga clic en **Uso compartido**.
-3. En **Vínculos de archivos y carpetas**, seleccione **Solo personas de la organización**.
+1. Abra el Centro de administración de SharePoint y seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a>.
+1. En **Vínculos de archivos y carpetas**, seleccione **Solo personas de la organización**.
 
    ![Captura de pantalla de la configuración del tipo de vínculo predeterminado de SharePoint.](../media/sharepoint-default-sharing-link-company-link.png)
 
-4. Haga clic en **Guardar**
+1. Seleccione **Guardar**.
 
 Para establecer el vínculo de uso compartido de archivos y carpetas predeterminado para un sitio web concreto
-1. Abra el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint).
-2. En el panel de navegación izquierdo, expanda **Sitios** y, después, haga clic en **Sitios activos**.
-3. Seleccione el sitio web que quiera cambiar y haga clic en **Uso compartido**.
-4. En **Tipo de vínculo de uso compartido predeterminado**, desactive la casilla **Igual que la configuración de nivel de organización**.
+
+1. Abra el Centro de administración de SharePoint, expanda **Sitios** y, a continuación, seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Sitios activos**</a>.
+1. Seleccione el sitio que desea cambiar y, a continuación, seleccione **Uso compartido**.
+1. En **Tipo de vínculo de uso compartido predeterminado**, desactive la casilla **Igual que la configuración de nivel de organización**.
 
    ![Recorte de pantalla de la configuración del tipo de vínculo predeterminado para el nivel del sitio de SharePoint.](../media/sharepoint-organization-anyone-link-permissions-site.png)
 
-5. Seleccione la opción **Solo personas de la organización** y haga clic en **Guardar**.
+1. Seleccione la opción **Solo personas de la organización** y, a continuación, seleccione **Guardar**.
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>Impida el uso compartido no autenticado de contenido confidencial
 

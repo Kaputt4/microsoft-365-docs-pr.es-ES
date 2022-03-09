@@ -18,14 +18,15 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 recommendations: false
 description: Obtenga información acerca de cómo implementar equipos con un nivel de protección de base de referencia.
-ms.openlocfilehash: ac16f3a1fd70cca22d0cc44e326d173b30cff77f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 21fe46a9df9b67c41ff2c0a21fbbe175295e1fdf
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208366"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63312745"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configure equipos con la protección de base de referencia
 
@@ -68,10 +69,10 @@ El uso compartido de invitados está activado de forma predeterminada para los g
 Para reducir el riesgo de compartir accidentalmente archivos o carpetas con personas de fuera de su organización, le recomendamos que cambie el vínculo de uso compartido predeterminado para SharePoint a *Solo personas de la organización*. (Si los usuarios necesitan compartir externamente y ha habilitado el uso compartido de invitados, aún podrán cambiar el tipo de vínculo al compartir).
 
 Para cambiar el vínculo para compartir predeterminado
-1. Abra el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint).
-2. En **Directivas**, haga clic en **Uso compartido**.
-3. En **Vínculos de archivos y carpetas**, seleccione **Solo personas de la organización**.
-4. Haga clic en **Guardar**.
+
+1. Abra el Centro de administración de SharePoint en **Directivas**, seleccione <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a>.
+1. En **Vínculos de archivos y carpetas**, seleccione **Solo personas de la organización**.
+1. Seleccione **Guardar**.
 
 Para disfrutar de la mejor experiencia de uso compartido de invitados, también le recomendamos que habilite la [Integración de SharePoint y OneDrive con B2B de Azure AD](/sharepoint/sharepoint-azureb2b-integration-preview).
 
