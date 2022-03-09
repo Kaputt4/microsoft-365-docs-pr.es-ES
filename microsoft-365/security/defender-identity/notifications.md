@@ -1,6 +1,6 @@
 ---
 title: Notificaciones de Identidad de Microsoft Defender en Microsoft 365 Defender
-description: Obtenga información sobre cómo establecer notificaciones de Microsoft Defender para identidad en Microsoft 365 Defender.
+description: Obtén información sobre cómo establecer notificaciones de Microsoft Defender para identidad en Microsoft 365 Defender.
 ms.date: 05/20/2021
 ms.topic: how-to
 author: dcurwin
@@ -8,18 +8,18 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: b33ee0f59ca02d305ec703ab47aa1d0f2f95b8da
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 4e8969e51673676ecf13dc579ae304622e23e75d
+ms.sourcegitcommit: 1de72e5fd8af0ebc4a0dc91f47d2243498cfe5b9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963340"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63384611"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Notificaciones de Defender for Identity en Microsoft 365 Defender
 
 **Se aplica a:**
 
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 - Defender for Identity
 
 En este artículo se explica cómo trabajar con [Microsoft Defender para notificaciones](/defender-for-identity) de identidad en [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
@@ -31,7 +31,7 @@ En este artículo se explica cómo trabajar con [Microsoft Defender para notific
 
 En Microsoft 365 Defender, puedes agregar destinatarios para notificaciones por correo electrónico de problemas de estado en Defender for Identity.
 
-1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya **a Configuración** y, a continuación, **Identities**.
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya a Configuración y, a **continuación**, **Identities**.
 
     ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
 
@@ -46,17 +46,17 @@ En Microsoft 365 Defender, puedes agregar destinatarios para notificaciones por 
     ![Ejemplo de correo electrónico de problema de estado.](../../media/defender-identity/health-email.png)
 
     > [!NOTE]
-    > El correo electrónico proporciona dos vínculos para obtener más detalles sobre el problema. Puede ir al Centro de mantenimiento **MDI** o al nuevo centro de **mantenimiento en M365D**.
+    > El correo electrónico proporciona dos vínculos para obtener más detalles sobre el problema. Puede ir al Centro de salud **MDI** o al nuevo centro de **mantenimiento de M365D**.
 
 ## <a name="alert-notifications"></a>Notificaciones de alerta
 
 En Microsoft 365 Defender, puede agregar destinatarios para notificaciones por correo electrónico de alertas detectadas.
 
-1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya **a Configuración** y, a continuación, **Identities**.
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya a Configuración y, a **continuación**, **Identities**.
 
     ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
 
-1. Seleccione **Notificaciones de alerta**.
+1. Seleccione **Notificaciones de alerta.**
 
 1. Escriba la dirección de correo electrónico del destinatario. Seleccione **Agregar**.
 
@@ -66,13 +66,16 @@ En Microsoft 365 Defender, puede agregar destinatarios para notificaciones por c
 
 Defender for Identity puede notificarte cuando detecta actividades sospechosas enviando alertas de seguridad y estado a tu servidor de Syslog a través de un sensor designado.
 
-1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya **a Configuración** y, a continuación, **Identities**.
+> [!NOTE]
+> Para obtener información sobre cómo integrar Defender for Identity con Microsoft Sentinel, consulte [Microsoft 365 Defender integración con Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
+
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya a Configuración y, a **continuación**, **Identities**.
 
     ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
 
 1. Seleccione **Notificaciones de Syslog**.
 
-1. Para habilitar la notificación de syslog, establece la alternancia del servicio **de Syslog** en **la posición** activa.
+1. Para habilitar la notificación de syslog, establece la alternancia **del servicio de Syslog** en **la posición** activa.
 
     ![Activar el servicio de syslog.](../../media/defender-identity/syslog-service.png)
 
@@ -82,19 +85,19 @@ Defender for Identity puede notificarte cuando detecta actividades sospechosas e
 
 1. Escriba los siguientes detalles:
 
-    - **Sensor:** en la lista desplegable, elija el sensor que enviará las alertas.
-    - **Punto de conexión** de servicio y **puerto:** escriba la dirección IP o el nombre de dominio completo (FQDN) del servidor de syslog y especifique el número de puerto. Solo puede configurar un extremo de Syslog.
-    - **Transporte:** seleccione el **protocolo** de transporte (TCP o UDP).
-    - **Formato:** seleccione el formato (RFC 3164 o RFC 5424).
+    - **Sensor** : en la lista desplegable, elija el sensor que enviará las alertas.
+    - **Punto de conexión** de servicio y **puerto** : escriba la dirección IP o el nombre de dominio completo (FQDN) del servidor de syslog y especifique el número de puerto. Solo puede configurar un extremo de Syslog.
+    - **Transporte** : seleccione el **protocolo** de transporte (TCP o UDP).
+    - **Formato** : seleccione el formato (RFC 3164 o RFC 5424).
 
 1. Seleccione **Enviar notificación SIEM de prueba** y compruebe que el mensaje se recibe en la solución de infraestructura de Syslog.
 
 1. Seleccione **Guardar**.
 
-1. Una vez configurado el servicio **de Syslog,** puede elegir qué tipos de notificaciones (alertas o problemas de estado) deben enviarse al servidor de Syslog.
+1. Una vez configurado el servicio **de Syslog**, puede elegir qué tipos de notificaciones (alertas o problemas de estado) enviar a su servidor de Syslog.
 
     ![Servicio de Syslog configurado.](../../media/defender-identity/syslog-configured.png)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Administrar alertas de seguridad de Defender for Identity](manage-security-alerts.md)
