@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Obtener información sobre el número máximo de directivas y elementos por directiva para directivas de retención y directivas de etiquetas de retención
-ms.openlocfilehash: f7b445ab8fd0afe5fb893933c3475385e09bc84e
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 4cd8fc5f141f9e039a271e8534e156e4df0582e9
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767441"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419133"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Límites de directivas de retención y directivas de etiqueta de retención.
 
@@ -39,7 +39,8 @@ Se admite un máximo de 1 000 etiquetas de retención por espacio empresarial.
 
 Un solo espacio empresarial puede tener un máximo de 10 000 directivas (cualquier configuración). Este número máximo incluye las diferentes directivas para la retención, y otras directivas para el cumplimiento, como las directivas para DLP, las barreras de información, las retenciones de eDiscovery, las retenciones de litigios, las retenciones locales y las etiquetas de confidencialidad. Sin embargo, este máximo excluye:
 
-- Etiquete las directivas para SharePoint y OneDrive que solo eliminen, en lugar de conservar o retener y luego eliminar. La excepción son las directivas de aplicación automática de etiquetas para los archivos adjuntos en la nube, que siempre se incluyen en el máximo de 10000.
+- Directivas de etiquetado automático para SharePoint y OneDrive, a menos que sean para datos adjuntos de la nube.
+- Directivas de etiquetas publicadas para SharePoint y OneDrive que solo eliminen, en lugar de conservar o retener y luego eliminar.
 - Directivas de retención de Exchange desde [la administración de registros de mensajería (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management).
 
 Dentro de este límite de 10 000 directivas, también hay algunos límites en el número máximo de directivas para la retención por carga de trabajo:
