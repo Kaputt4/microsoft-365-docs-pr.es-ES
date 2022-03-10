@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6d4d76a45d69994c82c2027f57d5c3b045e82397
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 03ac5ed0d63fb88639e9b7e1b55987bf328476e1
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765065"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419077"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para endpoint
 
@@ -73,6 +73,11 @@ El acceso a Defender for Endpoint se realiza a través de un explorador, que adm
 - Windows 11 Pro Education
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (o posterior)](/windows/whats-new/ltsc/)
+- Windows 10 Enterprise loT
+
+    >[!NOTE]
+    >Aunque Windows 10 IoT Enterprise es un sistema operativo compatible en Microsoft Defender para endpoints y permite a los OEM/OEM distribuirlo como parte de su producto o solución, los clientes deben seguir las instrucciones del OEM/ODM sobre el software instalado basado en host y la compatibilidad.
+
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
@@ -80,7 +85,7 @@ El acceso a Defender for Endpoint se realiza a través de un explorador, que adm
   - Windows Server 2008 R2 SP1 ([requiere ESU para ser compatible](/windows-server/get-started/extended-security-updates-deploy))
   - Windows Server 2012 R2
   - Windows Server 2016
-  - Windows server, versión 1803 o posterior
+  - Windows Server, versión 1803 o posterior
   - Windows Server 2019
   - Windows Server 2022
 - Windows Virtual Desktop
@@ -91,16 +96,16 @@ Los requisitos de hardware de Defender para Endpoint en dispositivos son los mis
 
 > Cores: 2 minimum, 4 preferred Memory: 1 GB minimum, 4 preferred
 
-Para obtener más información sobre las versiones compatibles de Windows 10, vea (/windows/release-health/release-information).
+Para obtener más información sobre las versiones compatibles Windows 10, vea (/windows/release-health/release-information).
 
 > [!NOTE]
-> Las máquinas que ejecutan versiones móviles de Windows (como Windows CE y Windows 10 Mobile) no son compatibles.
+> Las máquinas que ejecutan versiones móviles Windows (como Windows CE y Windows 10 Mobile) no son compatibles.
 >
 > Las máquinas virtuales que Windows 10 Enterprise 2016 LTSB pueden encontrar problemas de rendimiento si se ejecutan en plataformas de virtualización que no son de Microsoft.
 >
 > Para entornos virtuales, se recomienda usar Windows 10 Enterprise LTSC 2019 o posterior.
 
-Cuando los componentes estén actualizados en los sistemas operativos de Microsoft Windows, el soporte técnico de Microsoft Defender para endpoints seguirá el ciclo de vida del sistema operativo correspondiente. Para obtener más información, consulta [Preguntas más frecuentes sobre el ciclo de vida](/lifecycle/faq/general-lifecycle). Por lo general, las nuevas características o capacidades se proporcionan solo en sistemas operativos que aún no han llegado al final de su ciclo de vida. Las actualizaciones de inteligencia de seguridad (actualizaciones de definición y motor) y la lógica de detección se seguirán proporcionando al menos hasta que:
+Cuando los componentes estén actualizados en sistemas operativos de Microsoft Windows, el soporte técnico de Microsoft Defender para endpoints seguirá el ciclo de vida del sistema operativo correspondiente. Para obtener más información, consulta [Preguntas más frecuentes sobre el ciclo de vida](/lifecycle/faq/general-lifecycle). Por lo general, las nuevas características o capacidades se proporcionan solo en sistemas operativos que aún no han llegado al final de su ciclo de vida. Las actualizaciones de inteligencia de seguridad (actualizaciones de definición y motor) y la lógica de detección se seguirán proporcionando al menos hasta que:
 
 - La [fecha de finalización de la compatibilidad](/lifecycle/products/) (para sistemas operativos que no tienen un programa de actualizaciones de seguridad extendidas (ESU).
 - Fecha [de finalización de ESU](/lifecycle/faq/extended-security-updates) (para sistemas operativos que tienen un programa ESU).
@@ -152,7 +157,7 @@ De forma predeterminada, este servicio está habilitado. Es una buena práctica 
 
 Deberá establecer el servicio para que se inicie automáticamente si el **START_TYPE no está** establecido en **AUTO_START**.
 
-#### <a name="use-the-command-line-to-set-the-windows-diagnostic-data-service-to-automatically-start"></a>Usar la línea de comandos para establecer el Windows de datos de diagnóstico para iniciarse automáticamente
+#### <a name="use-the-command-line-to-set-the-windows-diagnostic-data-service-to-automatically-start"></a>Use la línea de comandos para establecer el Windows de datos de diagnóstico para que se inicie automáticamente
 
 1. Abra un símbolo del sistema con privilegios elevados en el extremo:
     1. Vaya a **Inicio** y escriba **cmd**.
@@ -184,22 +189,22 @@ Antes de incorporar dispositivos, el servicio de datos de diagnóstico debe esta
 
 El agente de Defender for Endpoint depende de la capacidad de Antivirus de Microsoft Defender para examinar archivos y proporcionar información sobre ellos.
 
-Configure las actualizaciones de inteligencia de seguridad en los dispositivos defender para puntos de conexión Antivirus de Microsoft Defender sea el antimalware activo o no. Para obtener más información, vea [Manage Antivirus de Microsoft Defender updates and apply baselines](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
+Configurar las actualizaciones de inteligencia de seguridad en los dispositivos defender para puntos de conexión Antivirus de Microsoft Defender es el antimalware activo o no. Para obtener más información, vea [Manage Antivirus de Microsoft Defender updates and apply baselines](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
 Cuando Antivirus de Microsoft Defender no es el antimalware activo de la organización y usa el servicio Defender for Endpoint, Antivirus de Microsoft Defender pasa al modo pasivo.
 
 Si su organización ha desactivado Antivirus de Microsoft Defender a través de la directiva de grupo u otros métodos, los dispositivos que se incorpore deben excluirse de esta directiva de grupo.
 
-Si está incorporando servidores y Antivirus de Microsoft Defender no es el antimalware activo en los servidores, Antivirus de Microsoft Defender tendrá que configurarse para ir en modo pasivo o desinstalar. La configuración depende de la versión del servidor. Para obtener más información, [consulte Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md).
+Si está incorporando servidores y Antivirus de Microsoft Defender no es el antimalware activo en los servidores, Antivirus de Microsoft Defender tendrá que configurarse para ir en modo pasivo o desinstalar. La configuración depende de la versión del servidor. Para obtener más información, [vea Antivirus de Microsoft Defender compatibilidad.](microsoft-defender-antivirus-compatibility.md)
 
 > [!NOTE]
 > La directiva de grupo normal no se aplica a la Protección contra alteraciones y los cambios en la configuración Antivirus de Microsoft Defender se omitirán cuando esté la protección contra alteraciones.
 
 ## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Antivirus de Microsoft Defender controlador antimalware de inicio anticipado (ELAM) está habilitado
 
-Si está ejecutando el Antivirus de Microsoft Defender como el producto antimalware principal en sus dispositivos, el agente de Defender for Endpoint se incorporará correctamente.
+Si está ejecutando Antivirus de Microsoft Defender como el producto antimalware principal en sus dispositivos, el agente defender para endpoint se incorporará correctamente.
 
-Si ejecuta un cliente antimalware de terceros y usa soluciones de administración de dispositivos móviles o Microsoft Endpoint Manager (rama actual), deberá asegurarse de que el controlador ELAM de Antivirus de Microsoft Defender está habilitado. Para obtener más información, vea [Ensure that Antivirus de Microsoft Defender is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+Si está ejecutando un cliente antimalware de terceros y usa soluciones de administración de dispositivos móviles o Microsoft Endpoint Manager (rama actual), deberá asegurarse de que el controlador ELAM está habilitado Antivirus de Microsoft Defender. Para obtener más información, vea [Ensure that Antivirus de Microsoft Defender is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="related-topics"></a>Temas relacionados
 

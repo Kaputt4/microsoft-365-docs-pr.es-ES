@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 98660e437463a79ce263edd29f2cd01725d19762
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8c7100774057d399667a3176670a55d5b4479c73
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322931"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419035"
 ---
 # <a name="use-the-wizard-to-set-up-microsoft-defender-for-business"></a>Usar el asistente para configurar Microsoft Defender para empresas
 
@@ -53,7 +53,7 @@ El asistente está diseñado para ayudarle a configurar Defender for Business de
 
 2. **Incorpore y configure Windows dispositivos.** En este paso, puede incorporar rápidamente los dispositivos de Windows de la organización a Defender para empresas. La incorporación de dispositivos de inmediato ayuda a proteger esos dispositivos desde el primer día. Consulta [Incorporar dispositivos a Microsoft Defender para empresas](mdb-onboard-devices.md) para obtener más información.
 
-   - Si ya usa Microsoft Intune (parte de Microsoft Endpoint Manager) y su organización tiene dispositivos inscritos en Endpoint Manager, se le preguntará si desea usar la incorporación automática para algunos o todos los dispositivos Windows inscritos. La incorporación automática configura una conexión entre Endpoint Manager y Defender para empresas y, a continuación, incorpora Windows dispositivos a Defender para empresas sin problemas.
+   - Si ya usa Microsoft Intune (parte de Microsoft Endpoint Manager) y su organización tiene dispositivos inscritos en Endpoint Manager, se le preguntará si desea usar la incorporación automática para algunos o todos los dispositivos Windows inscritos.[](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager) La incorporación automática configura una conexión entre Endpoint Manager y Defender para empresas y, a continuación, incorpora Windows dispositivos a Defender para empresas sin problemas.
 
    - Si aún no estás usando Endpoint Manager, o si tienes dispositivos que no son de Windows inscritos en Endpoint Manager, puedes incorporar dispositivos a Defender para empresas manualmente. 
    

@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en la prevención de suplantación de identidad mediante el aprendizaje de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 31c8fd7b0369e5af522cd79b9bee7c5ee8460cc5
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 17e4bb55ee2c571c2e66b648d277f0a896551f39
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329647"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419366"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simular un ataque de suplantación de identidad con entrenamiento de simulación de ataque en Defender para Office 365
 
@@ -88,7 +88,7 @@ Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
   - **Baja**
   - **Media**
   - **Alta**
-- **Source**: indica si la carga se creó en la organización o si forma parte del catálogo de carga preexistnte de Microsoft. Los valores válidos son:
+- **Source**: indica si la carga se creó en la organización o si forma parte del catálogo de carga preexistnte de Microsoft. Los valores admitidos son:
   - **Global** (integrado)
   - **Inquilino** (personalizado)
   - **Todo**
@@ -252,8 +252,6 @@ Las páginas de aterrizaje seleccionadas por Microsoft están disponibles en 12 
     - **Agregar logotipo**: haga clic **en Examinar** para buscar y seleccionar un .png, .jpeg o .gif archivo. Para quitar el logotipo, haga clic en **Quitar**.
     - **Agregar indicadores de carga al** correo electrónico: esta configuración no está disponible si seleccionó previamente Datos adjuntos de **malware** o **Vincular a malware** en la [página Seleccionar](#select-a-social-engineering-technique) técnica.
 
-      Seleccione **Agregar indicadores de carga al correo electrónico** para ayudar a los usuarios a aprender a identificar mensajes de suplantación de identidad.
-
     Para obtener una vista previa de los resultados, haga clic en el **botón Abrir panel de vista previa** en la parte inferior de la página.
 
   - **Usar una dirección URL** personalizada: esta configuración no está disponible si seleccionó previamente Datos adjuntos de **malware** o **Vincular a malware** en la [página Seleccionar técnica](#select-a-social-engineering-technique) .
@@ -261,18 +259,19 @@ Las páginas de aterrizaje seleccionadas por Microsoft están disponibles en 12 
     Si selecciona Usar **una dirección URL** personalizada, debe agregar la dirección URL en el cuadro **Escriba** la dirección URL de la página de aterrizaje personalizada que aparece. No hay otras opciones disponibles en la página.
 
   - **Cree su propia página de aterrizaje**: este valor tiene las siguientes opciones asociadas para configurar:
-    - **Agregar indicadores de carga al** correo electrónico: esta configuración no está disponible si seleccionó previamente Datos adjuntos de **malware** o **Vincular a malware** en la [página Seleccionar](#select-a-social-engineering-technique) técnica.
-
-      Seleccione **Agregar indicadores de carga al correo electrónico** para ayudar a los usuarios a aprender a identificar mensajes de suplantación de identidad.
+    - **Agregar indicadores de carga al correo** electrónico: esta configuración está disponible para seleccionar solo si se cumplen las dos condiciones siguientes:
+      - Ha seleccionado previamente **Credential harvest**, **Link in attachment** o **Drive-by URL** en la [página Seleccionar técnica](#select-a-social-engineering-technique) .
+      - Después de agregar la **etiqueta Dinámica** denominada **Insertar contenido de correo electrónico** en el contenido de la página.
 
     - Contenido de la página: hay dos pestañas disponibles:
       - **Texto**: hay disponible un editor de texto enriquecido para crear la página de aterrizaje. Además de la configuración típica de fuente y formato, están disponibles las siguientes opciones:
         - **Etiqueta dinámica**: seleccione entre las siguientes etiquetas:
-          - **Username**
-          - **Nombre del remitente de correo electrónico**
-          - **Dirección de correo electrónico del remitente**
-          - **Asunto del correo electrónico**
-          - **Contenido de correo electrónico**
+          - **Insertar nombre**
+          - **Insertar el nombre del remitente**
+          - **Insertar correo electrónico del remitente**
+          - **Insertar asunto de correo electrónico**
+          - **Insertar contenido de correo electrónico**
+          - **Insertar fecha**
         - **Usar de forma predeterminada**: seleccione una plantilla disponible para empezar. Puede modificar el texto y el diseño en el área de edición. Para restablecer la página de aterrizaje al texto predeterminado y al diseño de la plantilla, haga clic **en Restablecer como predeterminado**.
     - **Código**: puede ver y modificar el código HTML directamente.
 

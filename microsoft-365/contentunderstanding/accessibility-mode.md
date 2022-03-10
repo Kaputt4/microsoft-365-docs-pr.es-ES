@@ -1,5 +1,5 @@
 ---
-title: Modo de accesibilidad de SharePoint Syntex
+title: Modo de accesibilidad en SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -8,17 +8,17 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo usar el modo de accesibilidad al entrenar un modelo en SharePoint Syntex.
-ms.openlocfilehash: 6a27615e0b676fdcefb617d76a206d9f47c6f882
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre cómo usar el modo de características de accesibilidad al entrenar y trabajar con modelos en SharePoint Syntex.
+ms.openlocfilehash: 09fd16259a44a2aa4d1b82dca49fffa76065690b
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179000"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419063"
 ---
-# <a name="sharepoint-syntex-accessibility-mode"></a>Modo de accesibilidad de SharePoint Syntex
+# <a name="accessibility-mode-in-sharepoint-syntex"></a>Modo de accesibilidad en SharePoint Syntex
 
-En [SharePoint Syntex,](index.md)los usuarios pueden activar el modo de accesibilidad en todas las fases del aprendizaje del modelo (etiqueta, aprendizaje, prueba) al trabajar con documentos de ejemplo. El uso del modo de accesibilidad puede ayudar a los usuarios a tener una accesibilidad de teclado más fácil a medida que navegan y etiquetan elementos en el visor de documentos.
+En [SharePoint Syntex](index.md), los usuarios pueden activar el modo de accesibilidad en todas las etapas del aprendizaje del modelo (etiqueta, aprendizaje, prueba) al trabajar con documentos de ejemplo. El uso del modo de accesibilidad puede ayudar a los usuarios a tener una accesibilidad de teclado más fácil a medida que navegan y etiquetan elementos en el visor de documentos.
 
 Esto ayuda a los usuarios a usar sus teclados para navegar por el texto en el visor de documentos y escuchar una narración no solo de los valores seleccionados, sino también de acciones (como etiquetar o quitar el etiquetado del texto seleccionado) o valores de etiquetas predichos al entrenar el modelo con documentos de ejemplo adicionales. 
 
@@ -27,7 +27,7 @@ Esto ayuda a los usuarios a usar sus teclados para navegar por el texto en el vi
 
 ## <a name="requirements"></a>Requisitos
 
-Para escuchar el audio de la narración, asegúrate de activar la aplicación [narrador](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) en la configuración del narrador en tu Windows 10 sistema.
+Para escuchar el audio de la narración, asegúrate de activar la aplicación [narrador](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) en la configuración del narrador en el Windows 10 sistema.
 
 ![Activar narrador.](../media/content-understanding/narrator-settings.png)
 

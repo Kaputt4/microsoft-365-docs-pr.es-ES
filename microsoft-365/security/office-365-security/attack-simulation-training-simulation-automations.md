@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear simulaciones automatizadas que contienen técnicas y cargas específicas que se inician cuando se cumplen las condiciones especificadas en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: a7b49baf23734bccf42df8215e384593ad48d30a
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 47732960ad5fac9884f388836ea23a2b9283c93c
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62887067"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419352"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatización de la simulación para el aprendizaje de simulación de ataques
 
@@ -33,7 +33,7 @@ Para crear una automatización de simulación, siga estos pasos:
 
 2. En la **pestaña Automatización de Simulation** , seleccione ![Crear icono de automatización.](../../media/m365-cc-sc-create-icon.png) **Crear automatización**.
 
-   ![Cree el botón de automatización en la pestaña Automatización de simulación en el aprendizaje de simulación de ataques en el portal Microsoft 365 Defender web.](../../media/attack-sim-training-sim-automations-create.png)
+   ![Cree el botón de automatización en la pestaña Simulation automations en El aprendizaje de simulación de ataques en el portal Microsoft 365 Defender web.](../../media/attack-sim-training-sim-automations-create.png)
 
 3. Se abrirá el Asistente para creación. El resto de este artículo describe las páginas y la configuración que contienen.
 
@@ -91,7 +91,7 @@ Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
   - **Baja**
   - **Media**
   - **Alta**
-- **Source**: indica si la carga se creó en la organización o si forma parte del catálogo de carga preexistnte de Microsoft. Los valores válidos son:
+- **Source**: indica si la carga se creó en la organización o si forma parte del catálogo de carga preexistnte de Microsoft. Los valores admitidos son:
   - **Global**
   - **Espacio empresarial**
   - **Todo**
@@ -110,7 +110,7 @@ Si selecciona una carga de la lista haciendo clic en el nombre, los detalles sob
 - La **pestaña Información** general contiene un ejemplo y otros detalles sobre la carga.
 - La **pestaña Simulaciones iniciadas** contiene el nombre **de la simulación**, la tasa de **clics**, **la velocidad comprometida** y la **acción**.
 
-![Detalles de carga en el aprendizaje de simulación de ataque en el portal Microsoft 365 Defender ataque.](../../media/attack-sim-training-simulations-select-payload-details.png)
+![Detalles de carga en el aprendizaje de simulación de ataque en el portal Microsoft 365 Defender carga.](../../media/attack-sim-training-simulations-select-payload-details.png)
 
 Cuando termine, haga clic en **Siguiente**.
 
@@ -140,7 +140,7 @@ En la **página Usuarios de** destino, seleccione quién recibirá la simulació
         - Seleccionar **todo el título**
         - Seleccione los valores de Título existentes.
 
-      ![Filtrado de usuarios en la página Usuarios de destino del aprendizaje de simulación de ataque en el portal Microsoft 365 Defender ataque.](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
+      ![Filtrado de usuarios en la página Usuarios de destino en Aprendizaje de simulación de ataques en el portal Microsoft 365 Defender web.](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
 
       Después de identificar los criterios, los usuarios afectados se muestran en la  sección Lista de usuarios que aparece, donde puede seleccionar algunos o todos los destinatarios detectados.
 
@@ -178,7 +178,7 @@ En la **página Asignar aprendizaje** , puede asignar cursos para la simulación
       - **7 días después de que finalice la simulación**
   - **Sin formación**: si selecciona este valor, la única opción de la página es el botón  Siguiente que le llevará a la página [**De aterrizaje**](#landing-page).
 
-![Agregue el aprendizaje recomendado en la página Asignación de aprendizaje en El entrenamiento de simulación de ataques en el portal Microsoft 365 Defender búsqueda.](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
+![Agregue el aprendizaje recomendado en la página Asignación de aprendizaje en El aprendizaje de simulación de ataques en el portal Microsoft 365 Defender búsqueda.](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
 
 ### <a name="training-assignment"></a>Asignación de aprendizaje
 
@@ -258,19 +258,20 @@ En la **página Página de** aterrizaje, se configura la página web a la que se
 
     Debe configurar las siguientes opciones adicionales en la página **Página de** aterrizaje:
 
-    - **Indicadores de carga**: esta configuración no está disponible si seleccionó previamente Datos adjuntos de **malware** o **Vincular a malware** en la página [Seleccionar técnicas de ingeniería](#select-one-or-more-social-engineering-techniques) social.
-
-      Seleccione **Agregar indicadores de carga al correo electrónico** para ayudar a los usuarios a aprender a identificar mensajes de suplantación de identidad.
+    - **Indicadores de carga** útil: esta configuración está disponible para seleccionar solo si se cumplen las dos condiciones siguientes:
+      - Ha seleccionado previamente **Credential harvest**, **Link in attachment** o **Drive-by URL** en la [página Seleccionar técnicas de ingeniería social](#select-one-or-more-social-engineering-techniques) .
+      - Después de agregar la **etiqueta Dinámica** denominada **Insertar contenido de correo electrónico** en el contenido de la página.
 
     - Contenido de la página: hay dos pestañas disponibles:
 
       - **Texto**: hay disponible un editor de texto enriquecido para crear la página de aterrizaje. Además de la configuración típica de fuente y formato, están disponibles las siguientes opciones:
         - **Etiqueta dinámica**: seleccione entre las siguientes etiquetas:
-          - **Username**
-          - **Nombre del remitente de correo electrónico**
-          - **Dirección de correo electrónico del remitente**
-          - **Asunto del correo electrónico**
-          - **Contenido de correo electrónico**
+          - **Insertar nombre**
+          - **Insertar el nombre del remitente**
+          - **Insertar correo electrónico del remitente**
+          - **Insertar asunto de correo electrónico**
+          - **Insertar contenido de correo electrónico**
+          - **Insertar fecha**
         - **Usar de forma predeterminada**: seleccione una de las 5 plantillas de página de aterrizaje disponibles para empezar. Puede modificar el texto y el diseño en el área de edición. Para restablecer la página de aterrizaje al texto predeterminado y al diseño de la plantilla, haga clic **en Restablecer como predeterminado**.
         - **Vínculo de aprendizaje**: en el cuadro de diálogo Dirección **URL** de aprendizaje de nombre que aparece, escriba un título de vínculo para  el vínculo de aprendizaje y, a continuación, haga clic en Confirmar para agregar el vínculo a la página de aterrizaje.
       - **Código**: puede ver y modificar el código HTML directamente.
@@ -391,7 +392,7 @@ En la **página Detalles del** inicio, configure las siguientes opciones adicion
 - **Use cargas únicas en simulaciones dentro de una automatización**: de forma predeterminada, esta configuración no está seleccionada.
 - **Infractores reincidentes de** destino: de forma predeterminada, esta configuración no está seleccionada. Si lo selecciona, configure la siguiente configuración que aparece:
   - **Escriba el número máximo de veces que un** usuario puede ser dirigido dentro de esta automatización: escriba un valor de 1 a 10.
-- **Enviar correo electrónico de simulación en función** de la configuración de zona horaria actual del usuario desde Outlook aplicación web: de forma predeterminada, esta configuración no está seleccionada.
+- **Enviar correo electrónico de simulación** en función de la configuración de zona horaria actual del usuario desde Outlook aplicación web: de forma predeterminada, esta configuración no está seleccionada.
 - **Mostrar la página de datos intersticiales** de la técnica de unidad por: esta configuración solo está disponible si seleccionó dirección **URL** de unidad por en la página Seleccionar técnicas **[de ingeniería social](#select-one-or-more-social-engineering-techniques)** . De forma predeterminada, la configuración está activa (![icono Activar o desactivar](../../media/scc-toggle-on.png)).
 
 ## <a name="review-simulation-automation"></a>Revisar la automatización de simulación

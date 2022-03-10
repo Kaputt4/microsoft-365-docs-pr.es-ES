@@ -14,13 +14,13 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 ms.localizationpriority: medium
-description: Busque escenarios sobre cómo usar SharePoint Syntex en su organización.
-ms.openlocfilehash: 16688f08183e55c8e2f52cdbcd50919dff680c1b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Busque escenarios empresariales sobre cómo usar SharePoint Syntex en su organización.
+ms.openlocfilehash: fe4f72dc56014e5bc990e5ea39bd019785bd8572
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192060"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419091"
 ---
 # <a name="scenarios-and-use-cases-for-microsoft-sharepoint-syntex"></a>Escenarios y casos de uso de Microsoft SharePoint Syntex
 
@@ -28,7 +28,7 @@ Use los siguientes escenarios de ejemplo para preguntar ideas sobre cómo puede 
 
 - [Escenario: realizar un seguimiento de los datos de las facturas con el procesamiento de formularios](adoption-scenarios.md#scenario-track-data-from-invoices-with-form-processing)
 - [Escenario: realizar un seguimiento de la información de los contratos con la comprensión de documentos](adoption-scenarios.md#scenario-track-information-from-contracts-with-document-understanding)
-- [Escenario: evite riesgos con procesos de administración de registros, gobierno de documentos y cumplimiento basados en SharePoint Syntex](adoption-scenarios.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex)
+- [Escenario: evitar riesgos con procesos de administración de registros, gobierno de documentos y cumplimiento basados en SharePoint Syntex](adoption-scenarios.md#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex)
 - [Escenario: capturar información de documentos inaccesibles anteriormente](adoption-scenarios.md#scenario-capture-information-from-previously-inaccessible-documents)
 - [Escenario: mejorar el procesamiento de datos para proporcionar información y análisis](adoption-scenarios.md#scenario-improve-data-processing-to-provide-insights-and-analytics)
 - [Escenario: Automatizar el procesamiento de pedidos](adoption-scenarios.md#scenario-automate-order-processing)
@@ -70,7 +70,7 @@ Al automatizar este escenario, puede:
 - Ahorre tiempo y dinero mediante la extracción automática de datos de los contratos en lugar de hacerlo manualmente.
 - Asegúrese de un mejor cumplimiento mediante el uso de etiquetas de retención para garantizar que los contratos se conservan correctamente.
 
-## <a name="scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex"></a>Escenario: evite riesgos con procesos de administración de registros, gobierno de documentos y cumplimiento basados en SharePoint Syntex
+## <a name="scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex"></a>Escenario: evitar riesgos con procesos de administración de registros, gobierno de documentos y cumplimiento basados en SharePoint Syntex
 
 Reducir los riesgos es un objetivo común para la mayoría de las empresas. Es posible que necesite:
 
@@ -129,7 +129,7 @@ Al automatizar este escenario, puede asegurarse de que:
 
 ## <a name="scenario-simplify-visa-renewal-process"></a>Escenario: Simplificar el proceso de renovación de visas
 
-SharePoint Syntex puede ayudarle a automatizar avisos y renovaciones para la información clave del contrato. Por ejemplo, un director de recursos humanos debe asegurarse de que los visados de los empleados estén actualizados o renovados a tiempo. Quieren ofrecer a los usuarios un proceso sencillo e intuitivo para actualizar sus Visas. Necesitan una solución que extraiga las fechas de renovación de los contratos y envíe automáticamente avisos a los empleados cuando se acercan las fechas de renovación.
+SharePoint Syntex puede ayudarle a automatizar avisos y renovaciones de información clave del contrato. Por ejemplo, un director de recursos humanos debe asegurarse de que los visados de los empleados estén actualizados o renovados a tiempo. Quieren ofrecer a los usuarios un proceso sencillo e intuitivo para actualizar sus Visas. Necesitan una solución que extraiga las fechas de renovación de los contratos y envíe automáticamente avisos a los empleados cuando se acercan las fechas de renovación.
 
 Al automatizar este escenario, puede asegurarse de que:
 
@@ -137,6 +137,6 @@ Al automatizar este escenario, puede asegurarse de que:
 - Se reduce el número de avisos manuales.
 - Se reduce el número de multas por incumplimiento.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Adopción SharePoint Syntex Microsoft: Introducción](adoption-getstarted.md)

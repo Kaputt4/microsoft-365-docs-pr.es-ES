@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos de información confidencial personalizados en el Centro de cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2526ab9fdde4e5cedbbf3e831e6ec8ac9a6a5747
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: e21e77fdd113942618c021f69c2cf8be64ac742f
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62900819"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419119"
 ---
 # <a name="create-custom-sensitive-information-types-in-the-compliance-center"></a>Crear tipos de información confidencial personalizados en el Centro de cumplimiento
 
@@ -207,4 +207,6 @@ Por ejemplo, si desea que la regla desencadene una coincidencia cuando se encuen
 > Al crear una regex que utilice un guión de doble byte o un punto de doble byte, asegúrese de escapar ambos caracteres como se escaparía un guión o un punto en una regex. A continuación le mostramos un ejemplo de regex a modo de referencia:
 >    - (?<!\d) ([4][0-9]{3} [\-?\-\t]*[0-9]{4})
 >
+> Los caracteres especiales de doble byte no deben usarse en la palabra clave.
+> 
 > Se recomienda utilizar una coincidencia de cadenas en lugar de una coincidencia de palabras en una lista de palabras clave.

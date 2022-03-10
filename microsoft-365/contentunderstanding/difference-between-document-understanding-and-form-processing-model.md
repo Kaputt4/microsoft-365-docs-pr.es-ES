@@ -1,5 +1,5 @@
 ---
-title: Diferencias entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios
+title: Diferencias entre la comprensión de documentos y los modelos de procesamiento de formularios
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre la diferencia clave entre un modelo de comprensión de documentos y un modelo de procesamiento de formularios.
-ms.openlocfilehash: 8a97c4a2c03d95a5ba9724423a405cb49d4a90fe
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+description: Obtenga información sobre las diferencias clave entre un modelo de comprensión de documentos y un modelo de procesamiento de formularios.
+ms.openlocfilehash: 0605beb2b034343cc53e32058905870f75f811a4
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818521"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419296"
 ---
-# <a name="difference-between-document-understanding-and-form-processing-models"></a>Diferencias entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios 
+# <a name="differences-between-document-understanding-and-form-processing-models"></a>Diferencias entre la comprensión de documentos y los modelos de procesamiento de formularios 
 
 La comprensión de contenidos en Microsoft SharePoint Syntex le permite identificar y clasificar documentos cargados en bibliotecas de documentos de SharePoint, así como extraer información relevante de cada archivo.  Por ejemplo, a medida que se carguen los archivos en una biblioteca de documentos de SharePoint, todos los archivos identificados como *Órdenes de compra* se clasifican como tales y, a continuación, se muestran en una vista personalizada de una biblioteca de documentos. Además, puede extraer información específica de cada archivo (por ejemplo, *Número de pedido de compra* y *Total*) y mostrarlo como una columna en la vista de la biblioteca de documentos. 
 
