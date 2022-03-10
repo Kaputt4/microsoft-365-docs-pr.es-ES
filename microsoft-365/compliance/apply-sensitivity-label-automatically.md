@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: f617338448b71541d5ab0d914ab1a3198d4f486c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ab47315fe56124f54b1404ceebc015a715eb74ee
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319665"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419324"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -315,15 +315,19 @@ En todos los casos, los archivos coincidentes se etiquetan hasta que la cuenta d
 
     ![Página Elegir ubicaciones para la configuración de etiquetado automático.](../media/locations-auto-labeling-wizard.png)
     
-    Para especificar cuentas individuales de OneDrive, vea [Obtener una lista de las direcciones URL de OneDrive de todos los usuarios de su organización](/onedrive/list-onedrive-urls).
+    Obtener más información sobre las ubicaciones:
+    
+    - Si elige **Exchange** y desea etiquetar el correo electrónico entrante desde fuera de su organización, debe mantener el valor predeterminado de **Todos** incluido. Para que esta configuración esté en el ámbito de usuarios específicos de la organización, elija **Reglas avanzadas** en el paso siguiente. A continuación, configure las condiciones para incluir destinatarios específicos en su organización para lograr el requisito de ámbito para un subconjunto de usuarios.
+    
+    - Para especificar cuentas individuales de OneDrive, vea [Obtener una lista de las direcciones URL de OneDrive de todos los usuarios de su organización](/onedrive/list-onedrive-urls).
 
-7. Para la página **Configurar reglas comunes o avanzadas**: mantenga el valor predeterminado de las **Reglas comunes** para definir reglas que identifiquen el contenido que se va a etiquetar en todas las ubicaciones seleccionadas. Si necesita reglas diferentes por ubicación, seleccione **Reglas avanzadas**. Luego, seleccione **Siguiente**.
+7. Para la página **Configurar reglas comunes o avanzadas**: mantenga el valor predeterminado de las **Reglas comunes** para definir reglas que identifiquen el contenido que se va a etiquetar en todas las ubicaciones seleccionadas. Si necesita reglas diferentes por ubicación, incluidas más opciones para Exchange, seleccione **Reglas avanzadas**. Luego, seleccione **Siguiente**.
 
     Las reglas usan condiciones que incluyen tipos de información confidencial y opciones de uso compartido:
     - En el caso de los tipos de información confidencial, puede seleccionar tipos de información integrados y personalizados.
     - En las opciones de uso compartido, puede elegir **solo con las personas de mi organización** o **con personas ajenas a mi organización**.
 
-    Si la única ubicación es **Exchange** o si selecciona **Reglas avanzadas**, hay otras condiciones que puede seleccionar:
+    Si la única ubicación es **Exchange** y ha seleccionado **Reglas avanzadas**, hay otras condiciones que puede seleccionar:
     - La dirección IP del remitente es
     - El dominio del destinatario es
     - El destinatario es

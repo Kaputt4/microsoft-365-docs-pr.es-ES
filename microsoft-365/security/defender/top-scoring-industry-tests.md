@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: d4e4f9baaf67b921358f17dae16908bcf9fed401
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: c12a0dbb56e81c6b2c6d7953cff77e367f2e435d
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818269"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419338"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Puntuaciones más altas en las pruebas del sector
 
@@ -41,7 +41,7 @@ Microsoft 365 Defender combina las funcionalidades de [Microsoft Defender para p
 
 Una parte fundamental del enfoque de pruebas de MITRE es imitar los ataques del mundo real para comprender si las soluciones ofrecen la detección y respuesta adecuadas. Mientras que la prueba se centra en la detección y respuesta de puntos de conexión, los ataques APT29 simulados de MITRE abarcan varios dominios de ataque, lo que crea oportunidades para ayudar a las defensas, más allá de la protección de puntos de conexión. Microsoft ha ampliado la visibilidad más allá del punto de conexión con Microsoft 365 Defender.
 
-- Evaluación basada en ATT&CK de Microsoft 365 Defender (mayo de 2020): [Detección inicial en el mundo real](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
+- Evaluación basada en ATT&CK de Microsoft 365 Defender de abril de 2021: [la evaluación demuestra que Microsoft Defender para punto de conexión detiene los ataques avanzados en plataformas](https://www.microsoft.com/security/blog/2021/04/21/)
 
  Microsoft 365 Defender ha proporcionado casi un 100 % de cobertura a través de las fases de la cadena de ataque. Ha proporcionado una visibilidad inicial integrada en las actividades de atacantes. La visibilidad reduce considerablemente el trabajo manual del centro de operaciones de seguridad y las soluciones de proveedores que dependían de cambios específicos en la configuración. Microsoft 365 Defender también tuvo los fallos de visibilidad más pequeños, lo que reduce la capacidad del atacante para operar sin ser detectado.
 
@@ -55,33 +55,33 @@ Antivirus de Microsoft Defender es la [protección de nueva generación](https:/
 
 Las pruebas de revisión y certificación de productos AV-TEST se realizan en tres categorías: protección, rendimiento y facilidad de uso. Las puntuaciones siguientes son para la categoría Protección que tiene dos puntuaciones: Pruebas del mundo real y Conjunto de referencias de AV-TEST (conocido como "Malware predominante").
 
-- Prueba AV-TEST de usuario empresarial de noviembre y diciembre de 2020: [Puntuación de protección 6,0/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2020/microsoft-defender-antivirus-4.18-205017/) <sup>**Más reciente**</sup>
+- Prueba AV-TEST de usuario empresarial de noviembre y diciembre de 2021: [Puntuación de protección 6,0/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2021/microsoft-defender-antivirus-4.18-212622/) <sup>**Más reciente**</sup>
 
-    Antivirus de Microsoft Defender obtuvo una Puntuación de protección perfecta de 6,0/6,0, con un 100 % en noviembre y diciembre. Se usaron 11 382 muestras de malware.
+    Antivirus de Microsoft Defender obtuvo una Puntuación de protección perfecta de 6,0/6,0, con un 100 % en noviembre y diciembre. Se usaron 18 870 muestras de malware.
 
-- Prueba AV-TEST de usuario empresarial de septiembre y octubre de 2020: [Puntuación de protección 6,0/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/)
+- Prueba AV-TEST de usuario empresarial de septiembre y octubre de 2021: [Puntuación de protección 6,0/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2021/microsoft-defender-antivirus-4.18-212518/)
 
-- Prueba AV-TEST de usuario empresarial de julio y agosto de 2020: [Puntuación de protección 6,0/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/)
+- Prueba AV-TEST de usuario empresarial de julio y agosto de 2021: [Puntuación de protección 6,0/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2021/microsoft-defender-antivirus-4.18-212419/)
 
-- Prueba AV-TEST de usuario empresarial de mayo y junio de 2020: [Puntuación de protección 6,0/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/)
+- Prueba AV-TEST de usuario empresarial de mayo y junio de 2021: [Puntuación de protección 6,0/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2021/microsoft-defender-antivirus-4.18-212318/)
 
-- Prueba AV-TEST de usuario empresarial de marzo y abril de 2020: [Puntuación de protección 5,5/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
+- Prueba AV-TEST de usuario empresarial de marzo y abril de 2021: [Puntuación de protección 6,0/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2021/microsoft-defender-antivirus-4.18-212216/)
 
-- Prueba AV-TEST de usuario empresarial de enero y febrero de 2020: [Puntuación de protección 5,5/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/) | [Análisis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
+- Prueba AV-TEST de usuario empresarial de enero y febrero de 2021: [Puntuación de protección 6,0/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2021/microsoft-defender-antivirus-4.18-212117/) | [Análisis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
 
 ### <a name="av-comparatives-protection-rating-of-998-in-the-latest-test"></a>AV-Comparatives: Calificación de protección del 99,8 % en la última prueba
 
 La prueba de seguridad empresarial consta de tres partes principales: la prueba de Protección en el mundo real, que imita los ataques de malware en línea, la prueba de Protección de malware donde el malware entra en el sistema desde fuera de Internet (por ejemplo, por USB) y la Prueba de rendimiento que examina el impacto en el rendimiento del sistema.
 
-- Prueba de seguridad empresarial 2020 (agosto - noviembre): [Protección en el mundo real 99,8 %](https://www.av-comparatives.org/tests/business-security-test-2020-august-november/) <sup>**Más reciente**</sup>
+- Prueba de seguridad empresarial 2021 (agosto - noviembre): [Tasa de protección en el mundo real 99,8 %](https://www.av-comparatives.org/tests/business-security-test-2021-august-november/) <sup>**Más reciente**</sup>
 
     Antivirus de Microsoft Defender ha tenido una puntuación alta de forma consistente en las clasificaciones de Protección en el mundo real durante el año pasado, con un 99,8 % en la última prueba.
 
-- Prueba de seguridad empresarial de 2020 (marzo - junio): [Protección en el mundo real 99,7 %](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/)
+- Prueba de seguridad empresarial de 2021 (marzo - junio): [Tasa de protección en el mundo real 99,7 %](https://www.av-comparatives.org/tests/business-security-test-2021-march-june/)
 
-- Prueba de seguridad empresarial de 2019 (agosto - noviembre): [Protección en el mundo real 99,6 %](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/)
+- Prueba de seguridad empresarial de 2020 (agosto - noviembre): [Tasa de protección en el mundo real 99,8 %](https://www.av-comparatives.org/tests/business-security-test-2020-august-november/)
 
-- Prueba de seguridad empresarial de 2019 (marzo - junio): [Protección en el mundo real 99,9 %](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/) | [Análisis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
+- Prueba de seguridad empresarial de 2020 (marzo - junio): [Tasa de protección en el mundo real 99,7 %](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) | [Análisis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
 ### <a name="se-labs-aaa-award-in-the-latest-test"></a>SE Labs: Premio AAA en la prueba más reciente
 
@@ -110,14 +110,6 @@ SE Labs prueba una variedad de soluciones usadas por productos y servicios para 
 Las funciones de [detección y respuesta en el punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) de Microsoft Defender para punto de conexión proporcionan detecciones de ataques avanzadas que son casi en tiempo real y permiten tomar medidas. Los analistas de seguridad pueden asignar prioridades a las alertas de forma eficaz, obtener visibilidad para todo el ámbito de la vulneración y llevar a cabo acciones de respuesta para corregir las amenazas.
 
 Las funcionalidades de protección de punto de conexión y EDR de Microsoft Defender para punto de conexión han obtenido resultados positivos de pruebas y publicaciones del sector. [SC Labs evaluó las herramientas de seguridad de puntos de conexión](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/) en junio de 2020 y proporcionó a Microsoft Defender para punto de conexión [5/5 estrellas](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/). Destacaron la habilidad de Microsoft Defender para punto de conexión de proteger las organizaciones contra el panorama de amenazas moderno mediante un conjunto completo de funcionalidades de seguridad. SC Labs también identificó la solución de seguridad de punto de conexión como integral y unificada. También reconocieron la convergencia de la protección de puntos de conexión con la funcionalidad de detección y respuesta de puntos de conexión, ya que ahora la cadena de ataque está totalmente cubierta por soluciones.
-
-### <a name="mitre-industry-leading-optics-and-detection-capabilities"></a>MITRE: Visión y capacidades de detección líderes en el sector
-
-MITRE ha probado la capacidad de los productos para detectar las técnicas usadas frecuentemente por el grupo de ataques dirigidos APT3 (también conocido como algo así como Boron o UPS). Para aislar las capacidades de detección, se desactivaron todas las características de protección y prevención. Microsoft se complace en ser uno de los primeros proveedores de EDR en registrarse para la evaluación de MITRE basada en la estructura de ATT&CK. El marco es ampliamente considerado hoy en día como el catálogo más amplio de técnicas y tácticas de atacantes.
-
-- Evaluación basada en ATT&CK de Microsoft Defender para punto de conexión (diciembre de 2018): [Visión y capacidades de detección](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/) | [Análisis](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/MITRE-evaluation-highlights-industry-leading-EDR-capabilities-in/ba-p/369831)
-
-    Microsoft Defender para punto de conexión ofrece una cobertura completa de las técnicas de atacantes en toda la cadena de ataques. Entre los aspectos destacados se incluye la extensión de telemetría, la fuerza de la inteligencia de amenazas y la detección automática avanzada a través del aprendizaje automático, heurística y la supervisión del comportamiento.
 
 ## <a name="to-what-extent-are-tests-representative-of-protection-in-the-real-world"></a>¿En qué medida son las pruebas representativas de la protección en el mundo real?
 
