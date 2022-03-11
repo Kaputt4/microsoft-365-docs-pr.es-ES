@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 5fc271028e4c20d431c4535fcdbf902bf17cdbb4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cecd489aa5ceb5f0d5d233a4bf09caa24dee6f8b
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311849"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419161"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -168,7 +168,7 @@ Restrinja el uso compartido de los archivos confidenciales que coincidan con las
 
 #### <a name="unallowed-browsers"></a>Exploradores no permitidos
 
-Para los dispositivos de Windows, agregue exploradores, identificados por sus nombres ejecutables, que no tendrán acceso a los archivos que cumplan las condiciones de una directiva DLP aplicada cuya restricción de carga a servicios en la nube esté configurada para bloquearse o bloquear una invalidación. Cuando estos exploradores no puedan acceder a un archivo, los usuarios finales verán una notificación del sistema que les pedirá que abran el archivo a través de Microsoft Edge.
+Para los dispositivos de Windows, agregue exploradores, identificados por sus nombres ejecutables, que no tendrán acceso a los archivos que cumplan las condiciones de una directiva DLP aplicada cuya restricción de carga a servicios en la nube esté configurada para bloquearse o bloquear una invalidación. Cuando se bloquea el acceso de estos exploradores a un archivo, los usuarios finales verán una notificación del sistema en la que se les pide que abran el archivo a través de Microsoft Edge o que muestren un mensaje personalizado si se ha configurado uno.
 
 Para dispositivos macOS, debe agregar la ruta de acceso de archivo completa. Para encontrar la ruta de acceso completa de las aplicaciones de Mac:
 
@@ -431,7 +431,7 @@ Hay tres pasos:
 
 #### <a name="test-auto-quarantine-on-the-windows-10-device"></a>Probar la cuarentena automática en el dispositivo Windows 10
 
-1. Inicie sesión en el equipo Windows 10 con la cuenta de usuario que especificó en [Configurar una directiva para bloquear la sincronización de archivos de OneDrive con la etiqueta de confidencialidad Extremadamente confidencial](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) del paso 5.
+1. Inicie sesión en el equipo Windows 10 con la cuenta de usuario que especificó en [Configure una directiva para bloquear la sincronización de archivos de OneDrive con la etiqueta de confidencialidad Extremadamente confidencial](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) paso 5.
 
 2. Cree una carpeta con un contenido que no se sincronizará en OneDrive. Por ejemplo:
 
