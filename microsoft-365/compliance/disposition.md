@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, cuando usa una revisión para eliminación o los elementos marcados como registros se eliminan automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: 5ee5af04b399d7f7d0ba94dc3b943d259d57ff34
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2d078eb00ffa6d2dd8279c7e5eb65a8fcfb6fa53
+ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942349"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "63419189"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -49,7 +49,7 @@ Además:
 
 - Para ver el contenido de los elementos durante el proceso de eliminación, agregue usuarios al grupo de roles **visor de contenido del Explorador de contenido**. Si los usuarios no tienen los permisos de este grupo de roles, todavía pueden seleccionar una acción de revisión para eliminación para completar la revisión para eliminación, pero deben hacerlo sin poder ver el contenido del elemento desde el panel de vista previa mínima del centro de cumplimiento.
 
-- De forma predeterminada, cada persona que accede a la página **Eliminación** solo ve los elementos que tienen asignados para revisar. Para que un administrador de administración de registros vea todos los elementos asignados a todos los usuarios y todas las etiquetas de retención que están configuradas para la revisión para eliminación: vaya a **Configuración de administración de registros** > **Disposición** para seleccionar y, a continuación, habilitar un grupo de seguridad habilitado para correo que contenga las cuentas de administrador.
+- De forma predeterminada, cada persona que tiene acceso a la página **Eliminación** solo ve los elementos que están asignados para revisar. Para que un administrador de administración de registros vea todos los elementos asignados a todos los usuarios y todas las etiquetas de retención configuradas para revisión de eliminación: vaya a **Configuración de administración de registros** > **Eliminación** para seleccionar y habilitar un grupo de seguridad habilitado para correo que contenga las cuentas de administrador.
     
     Los grupos de Microsoft 365 y los grupos de seguridad que no están habilitados para correo no admiten esta característica y no se muestran en la lista para seleccionar. Si necesita crear un grupo de seguridad habilitado para un correo nuevo, use el vínculo al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> para crear el grupo nuevo. 
     
@@ -187,7 +187,7 @@ Como puede ver en el ejemplo que se muestra, las acciones admitidas son las sigu
   
 - **Aprobar eliminación**:
     - Cuando se selecciona esta acción para una fase provisional de revisión para eliminación (ha configurado varias fases): el elemento se mueve a la siguiente fase de eliminación.
-    - Cuando se selecciona esta acción para la última fase de revisión para eliminación, o solo hay una fase de eliminación: el elemento se marca como apto para la eliminación permanente. El momento exacto para esa eliminación depende de la carga de trabajo. Para más información, vea [Cómo funciona la configuración de retención con el contenido local](retention.md#how-retention-settings-work-with-content-in-place).
+    - Cuando se selecciona esta acción para la última fase de revisión de eliminación, o solo hay una fase de eliminación: el elemento se marca como apto para la eliminación permanente, lo cual sucede en el plazo de 7 días.
 - **Volver a etiquetar**:
     - Cuando se selecciona esta acción, el elemento sale del proceso de revisión para eliminación de la etiqueta original. Después, el elemento está sujeto a la configuración de retención de la nueva etiqueta de retención seleccionada.
 - **Extender**:
