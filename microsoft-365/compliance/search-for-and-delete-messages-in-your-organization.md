@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el Centro de cumplimiento de Microsoft 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: 33c65cb61be14d72631fd3a272b68f2dad2ffea6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9361f7dea0e1b12d50733b9b1d1e91ac15577ab9
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204232"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400998"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Buscar y eliminar mensajes de correo electrónico
 
@@ -36,8 +36,8 @@ Puede usar la característica Búsqueda de contenido para buscar y eliminar un m
 
 - Mensajes que contienen datos confidenciales
 
-> [!CAUTION]
-> Búsqueda y depuración es una característica eficaz que permite eliminar mensajes de correo electrónico de los buzones de la organización a cualquier usuario que tenga asignados los permisos necesarios.
+> [!TIP]
+> Si su organización tiene una suscripción a Defender para Office 365 Plan 2, se recomienda usar el procedimiento detallado en [Corregir el correo electrónico malintencionado que se ha entregado en Office 365](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365), en lugar de seguir el procedimiento descrito en este artículo.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -64,7 +64,7 @@ El siguiente paso es conectarse al PowerShell del Centro de seguridad y cumplimi
 
 ## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>Paso 2: Crear una búsqueda de contenido para encontrar el mensaje que se desea eliminar
 
-El segundo paso es crear y ejecutar una búsqueda de contenido para encontrar el mensaje que desea quitar de los buzones de la organización. Para crear la búsqueda, puede usar el Centro de cumplimiento de Microsoft 365 o ejecutar los cmdlets **New-ComplianceSearch** y **Start-ComplianceSearch** en el PowerShell del Centro de seguridad y cumplimiento. Los mensajes que coincidan con la consulta de esta búsqueda se eliminarán al ejecutar el comando **New-ComplianceSearchAction-Purge** en el [paso 3](#step-3-delete-the-message). Para obtener información sobre cómo crear una búsqueda de contenido y configurar consultas de búsqueda, vea los temas siguientes:
+El segundo paso consiste en crear y ejecutar una búsqueda de contenido para buscar el mensaje que desee quitar de los buzones de la organización. Puede crear la búsqueda mediante el Centro de cumplimiento de Microsoft 365 o ejecutando los cmdlets **New-ComplianceSearch** y **Start-ComplianceSearch** en Seguridad y cumplimiento de PowerShell. Los mensajes que coincidan con la consulta de esta búsqueda se eliminarán al ejecutar el cmdlet **New-ComplianceSearchAction -Purge** en el [Paso 3](#step-3-delete-the-message). Para obtener información sobre cómo crear una búsqueda de contenido y configurar consultas de búsqueda, vea los temas siguientes:
 
 - [Búsqueda de contenido en Office 365](content-search.md)
 
@@ -145,7 +145,7 @@ Para obtener más información, vea [ New-ComplianceSearchAction](/powershell/mo
 
 - **¿Cómo se obtiene el estado de la operación de búsqueda y eliminación?**
 
-  Ejecute **Get-ComplianceSearchAction** para obtener el estado de la operación de eliminación.  El objeto que se crea al ejecutar el cmdlet **New-ComplianceSearchAction** se denomina con este formato: `<name of Content Search>_Purge`.
+  Ejecute el cmdlet **Get-ComplianceSearchAction** para obtener el estado de la operación de eliminación. El objeto que se crea al ejecutar el cmdlet **New-ComplianceSearchAction** tiene este formato: `<name of Content Search>_Purge`. 
 
 - **¿Qué ocurre después de eliminar un mensaje?**
 

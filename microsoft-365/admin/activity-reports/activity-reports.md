@@ -1,5 +1,5 @@
 ---
-title: Informes de actividad en el Centro de Administración de Microsoft 365
+title: Informes de actividad del Centro de administración de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 9f54d3b582b08ba38cc6f9f815224f01fcad3dcb
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8dd72f1f153bb9052317afca1d0370645d8ad85b
+ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315349"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63400984"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
