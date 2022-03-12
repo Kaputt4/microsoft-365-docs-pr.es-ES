@@ -19,12 +19,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: fc236ea646e9da487c5e2e1178ddf9ca460cb4ae
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c44d710b4067ec12b0234c88e02d2d89729819a6
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325143"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449686"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
@@ -138,7 +138,7 @@ Después de revisar los conceptos básicos del mensaje, es el momento de abrir u
 Ahora que ha revisado los detalles del mensaje para la alerta, puede elegir varias acciones de corrección:
 
 - **Resolver**: al seleccionar el control **Resolver**, se quita inmediatamente el mensaje de  la cola de alertas pendientes y no se puede realizar ninguna acción adicional en el mensaje. Al seleccionar **Resolver**, básicamente ha cerrado la alerta sin clasificación adicional. Todos los mensajes resueltos se muestran en la **pestaña Resuelto** .
-- **Report as misclassified (preview):** You can always resolve a message as misclassified at any point during the message review workflow. La clase errónea significa que la alerta no era procesable o que la alerta se generó incorrectamente por el proceso de alerta y los clasificadores que se pueden entrenar. La resolución del elemento como clasificado erróneamente envía contenido del mensaje, datos adjuntos y el asunto del mensaje (incluidos los metadatos) a Microsoft para ayudar a mejorar los clasificadores que se pueden entrenar. Los datos que se envían a Microsoft no contienen información que pueda identificar o usarse para identificar a los usuarios de su organización. No se pueden realizar acciones adicionales en el mensaje y todos los mensajes mal clasificados se muestran en la **pestaña** Resuelto.
+- **Informe como clasificado erróneamente**: siempre puede resolver un mensaje como mal clasificado en cualquier momento durante el flujo de trabajo de revisión de mensajes. La clase errónea significa que la alerta no era procesable o que la alerta se generó incorrectamente por el proceso de alerta y los clasificadores que se pueden entrenar. La resolución del elemento como clasificado erróneamente envía contenido del mensaje, datos adjuntos y el asunto del mensaje (incluidos los metadatos) a Microsoft para ayudar a mejorar los clasificadores que se pueden entrenar. Los datos que se envían a Microsoft no contienen información que pueda identificar o usarse para identificar a los usuarios de la organización. No se pueden realizar acciones adicionales en el mensaje y todos los mensajes mal clasificados se muestran en la **pestaña** Resuelto.
 - **Power Automate (versión preliminar):** Use un flujo de Power Automate para automatizar las tareas de proceso de un mensaje de alerta. De forma predeterminada, el cumplimiento de  la comunicación incluye el Administrador de notificaciones cuando un usuario tiene una plantilla de flujo de alerta de cumplimiento de comunicación que los revisores pueden usar para automatizar el proceso de notificación para los usuarios con alertas de mensajes. Para obtener más información acerca de cómo crear y administrar Power Automate flujos de comunicación, vea la sección **Paso 5:** Considerar Power Automate flujos en este artículo.
 - **Etiqueta como**: Etiquete *el mensaje como* *compatible, no* conforme o tan *cuestionable* como se refiere a las directivas y estándares de su organización. Agregar etiquetas y etiquetas de comentarios le ayuda a alertas de directivas de microfiltro para escalaciones o como parte de otros procesos de revisión interna. Una vez completado el etiquetado, también puede decidir resolver el mensaje para sacarlo de la cola de revisión pendiente.
 - **Notify**: Puede usar el control **Notify** para asignar una plantilla de aviso personalizada a la alerta y enviar un aviso de advertencia al usuario. Elija la plantilla de aviso adecuada configurada en el área **Configuración** de cumplimiento de comunicaciones y seleccione **Enviar** para enviar un aviso por correo electrónico al usuario que envió el mensaje y para resolver el problema.

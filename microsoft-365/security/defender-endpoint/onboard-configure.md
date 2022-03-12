@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4492b50cfdfb0125a9079eb1f4a4945b6e06e011
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 0922c827330fff25d7da1bbc69147c7a50f474df
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807469"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449756"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>Incorporar dispositivos y configurar las funcionalidades de Microsoft Defender para punto de conexión
 
@@ -69,13 +69,13 @@ En la tabla siguiente se enumeran las herramientas disponibles en función del e
 En la tabla siguiente se enumeran las herramientas disponibles en función del extremo que necesita incorporar.
 
 ## <a name="configure-capabilities-of-the-service"></a>Configurar funcionalidades del servicio
-Los dispositivos de incorporación permiten la detección y respuesta de puntos de conexión de Micorosft Defender para Endpoint.
+Los dispositivos de incorporación permiten de detección y respuesta de puntos de conexión funcionalidad de Micorosft Defender para endpoint.
 
 Después de incorporar los dispositivos, tendrás que configurar las otras funcionalidades del servicio. En la tabla siguiente se enumeran las capacidades que puede configurar para obtener la mejor protección para su entorno.
 
 | Funcionalidad | Descripción |
 |-|-|
-| [Configuración de la & de vulnerabilidades (TVM)](tvm-prerequisites.md) | Threat & Vulnerability Management es un componente de Microsoft Defender para endpoint y proporciona a los administradores de seguridad y a los equipos de operaciones de seguridad un valor único, incluidos: <br><br> - Información en tiempo detección y respuesta de puntos de conexión (EDR) correlacionada con vulnerabilidades de punto de conexión. <br><br> - Contexto de vulnerabilidad de dispositivo incalculable durante las investigaciones de incidentes. <br><br> - Procesos de corrección integrados a Microsoft Intune y Microsoft System Center Configuration Manager.  |
+| [Configurar la & de vulnerabilidades (TVM)](tvm-prerequisites.md) | Threat & Vulnerability Management es un componente de Microsoft Defender para Endpoint y proporciona a los administradores de seguridad y a los equipos de operaciones de seguridad un valor único, incluidos: <br><br> - Información en tiempo detección y respuesta de puntos de conexión (EDR) correlacionada con vulnerabilidades de punto de conexión. <br><br> - Contexto de vulnerabilidad de dispositivo incalculable durante las investigaciones de incidentes. <br><br> - Procesos de corrección integrados a Microsoft Intune y Microsoft System Center Configuration Manager.  |
 | [Configurar la protección de última generación (NGP)](configure-microsoft-defender-antivirus-features.md) | Antivirus de Microsoft Defender es una solución antimalware integrada que proporciona protección de última generación para escritorios, equipos portátiles y servidores. El Antivirus de Microsoft Defender incluye:<br> <br>-Protección entregada en la nube para la detección casi instantánea y el bloqueo de amenazas nuevas y emergentes. Junto con Intelligent Security Graph y el aprendizaje automático, la protección en la nube forma parte de las tecnologías de última generación utilizadas por el Antivirus de Microsoft Defender.<br> <br> - Análisis siempre continuo mediante la supervisión avanzada del comportamiento de procesos y archivos y otras heurísticas (también conocida como "protección en tiempo real").<br><br> - Actualizaciones de protección dedicadas basadas en aprendizaje automático, análisis de big-data humanos y automatizados e investigación detallada de resistencia a amenazas. |
 | [Configurar la reducción de superficie de ataque (ASR)](overview-attack-surface-reduction.md) | Las capacidades de reducción de superficie de ataque en Microsoft Defender para endpoint ayudan a proteger los dispositivos y aplicaciones de la organización frente a amenazas nuevas y emergentes. |
 | [Configurar las capacidades de & de investigación automática (AIR)](configure-automated-investigations-remediation.md) | Microsoft Defender para endpoint usa investigaciones automatizadas para reducir significativamente el volumen de alertas que deben investigarse individualmente. La característica de investigación automatizada aprovecha varios algoritmos de inspección y procesos usados por analistas (como playbooks) para examinar alertas y tomar medidas de corrección inmediatas para resolver infracciones. Esto reduce considerablemente el volumen de alertas, lo que facilita que los expertos de operaciones de seguridad puedan centrarse en amenazas más complejas y otras iniciativas de alto valor. |
@@ -88,7 +88,7 @@ Después de incorporar los dispositivos, tendrás que configurar las otras funci
 |---------|---------|---------|---------|---------|---------|
 |**Prevención**    |         |         |         |         |         |
 |Reglas de reducción de superficie de ataque     |    v     |   v      |    v     |    v     |    v     |
-|Control de dispositivo     |     v    |    N     |    N     |    N     |    N     |  
+|Control de dispositivos     |     v    |    N     |    N     |    N     |    N     |  
 |Firewall     |      v   |    v     |     v    |    v    |    v   |
 |Protección de red     |      v   |    v     |     v    |    v    |    v   |
 |Protección de última generación     |      v   |    v     |     v    |    v    |    v   |
@@ -96,12 +96,12 @@ Después de incorporar los dispositivos, tendrás que configurar las otras funci
 |Protección web     |       v   |    v     |     v    |    v    |    v   |
 |||||||
 |**Detección**     |         |         |         |||
-|Búsqueda avanzada de amenazas     |      v   |    v     |     v    |    v    |    v   |
+|Búsqueda avanzada     |      v   |    v     |     v    |    v    |    v   |
 |Indicadores de archivo personalizados     |      v   |    v     |     v    |    v    |    v   |
 |Indicadores de red personalizados     |      v   |    v     |     v    |    v    |    v   |
 |EDR bloquear & modo pasivo     |      v   |    v     |     v    |    v    |    v   |
 |Sensor de detección de sensores     |      v   |    v     |     v    |    v    |    v   |
-|Detección & de dispositivos de red de endpoint     |      v   |    N     |     N    |    N    |    N   |
+|Detección & de dispositivos de red de punto de conexión     |      v   |    N     |     N    |    N    |    N   |
 |||||||
 |**Respuesta**     |         |         |         |||
 |Respuesta automática de & investigación (AIR)    |      v   |    v     |     v    |    v    |    v   |
@@ -109,7 +109,7 @@ Después de incorporar los dispositivos, tendrás que configurar las otras funci
 |Capacidades de respuesta de archivos: recopilar archivos, análisis profundo, bloquear archivos, detener y poner en cuarentena procesos     |      v   |    v     |     v    |    v    |    v   |
 |Respuesta en directo    |      v   |    v     |     v    |    v    |    v   |
 
-(<a id="fn1">1</a>) Hace referencia a la solución moderna y unificada para Windows Server 2012 y 2016. Para obtener más información, consulte [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
+(<a id="fn1">1</a>) Hace referencia a la solución moderna y unificada para Windows Server 2012 R2 y 2016. Para obtener más información, [vea Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
 >[!NOTE]
 >Windows 7, 8.1, Windows Server 2008 R2 incluyen compatibilidad con el sensor EDR y ANTIVIRUS con System Center Endpoint Protection (SCEP).

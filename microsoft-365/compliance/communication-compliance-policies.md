@@ -2,24 +2,29 @@
 title: Directivas de Cumplimiento de comunicaciones
 description: Obtenga más información sobre las directivas de cumplimiento de comunicaciones.
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 f1_keywords:
-  - ms.o365.cc.SupervisoryReview
+- ms.o365.cc.SupervisoryReview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-  - Strat_O365_IP
-  - M365-security-compliance
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
-  - MET150
-  - MOE150
+- MET150
+- MOE150
+ms.openlocfilehash: 33961088105e838add3634024bb85807a6550eb7
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450736"
 ---
-
 # <a name="communication-compliance-policies"></a>Directivas de Cumplimiento de comunicaciones
 
 ## <a name="policies"></a>Directivas
@@ -27,7 +32,7 @@ search.appverid:
 > [!IMPORTANT]
 > No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas en la [Microsoft 365 de cumplimiento de comunicaciones](https://compliance.microsoft.com/supervisoryreview).
 
-Puede crear directivas de cumplimiento de comunicaciones para organizaciones de Microsoft 365 en el Centro de cumplimiento de Microsoft 365. Las directivas de cumplimiento de comunicación definen qué comunicaciones y usuarios están sujetos a revisión en su organización, definen las condiciones personalizadas que deben cumplir las comunicaciones y especifican quién debe hacer las revisiones. Los usuarios *asignados al* rol de administrador de cumplimiento de comunicaciones pueden configurar directivas y cualquier persona que tenga asignado  este rol puede acceder a la página Cumplimiento de comunicaciones y a la configuración global en el Centro de cumplimiento de Microsoft 365. Si es necesario, puede exportar el historial de modificaciones de una directiva a un archivo .csv (valores separados por comas) que también incluya el estado de las alertas pendientes de revisión, los elementos escalados y los elementos resueltos. No se puede cambiar el nombre de las directivas y se pueden eliminar cuando ya no sea necesario.
+Puede crear directivas de cumplimiento de comunicaciones para organizaciones de Microsoft 365 en el Centro de cumplimiento de Microsoft 365. Las directivas de cumplimiento de comunicación definen qué comunicaciones y usuarios están sujetos a revisión en su organización, definen las condiciones personalizadas que deben cumplir las comunicaciones y especifican quién debe hacer las revisiones. Los usuarios *asignados al* rol De administrador de cumplimiento de comunicaciones pueden configurar directivas y cualquier persona que tenga asignada  esta función puede acceder a la página Cumplimiento de comunicaciones y a la configuración global del Centro de cumplimiento de Microsoft 365. Si es necesario, puede exportar el historial de modificaciones de una directiva a un archivo .csv (valores separados por comas) que también incluya el estado de las alertas pendientes de revisión, los elementos escalados y los elementos resueltos. No se puede cambiar el nombre de las directivas y se pueden eliminar cuando ya no sea necesario.
 
 ## <a name="policy-templates"></a>Plantillas de directiva
 
@@ -35,7 +40,7 @@ Las plantillas de directiva son configuraciones de directiva predefinidas que pu
 
 |**Área**|**Plantilla de directiva**|**Detalles**|
 |:-----|:-----|:-----|
-| **Texto inapropiado** | Detectar texto inadecuado | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: entrante, saliente, interno <br> - Porcentaje de revisión: 100% <br> - Condiciones: amenazas, discriminación (versión preliminar) y clasificadores de hostigamiento dirigido |
+| **Texto inapropiado** | Detectar texto inadecuado | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: entrante, saliente, interno <br> - Porcentaje de revisión: 100% <br> - Condiciones: clasificadores de amenazas, discriminación y hostigamiento dirigido |
 | **Imágenes inapropiadas** | Detectar imágenes inapropiadas | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: entrante, saliente, interno <br> - Porcentaje de revisión: 100% <br> - Condiciones: clasificadores de imágenes para adultos y racy |
 | **Información confidencial** | Supervisar la información confidencial | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: entrante, saliente, interno <br> - Porcentaje de revisión: 10% <br> - Condiciones: información confidencial, patrones de contenido y tipos integrados, opción de diccionario personalizado, datos adjuntos de más de 1 MB |
 | **Cumplimiento normativo** | Supervisar el cumplimiento normativo | - Ubicaciones: Exchange Online, Microsoft Teams, Yammer, Skype Empresarial <br> - Dirección: entrante, saliente <br> - Porcentaje de revisión: 10% <br> - Condiciones: opción de diccionario personalizado, datos adjuntos de más de 1 MB |
@@ -74,10 +79,10 @@ Para copiar una directiva y crear una nueva directiva, siga estos pasos:
 
 1. Seleccione la directiva que desea copiar.
 2. Seleccione **Copiar botón de** barra de comandos de directiva en la barra de comandos o seleccione **Copiar directiva** en el menú de acciones de la directiva.
-3. En el **panel Copiar directiva** , puede aceptar el nombre predeterminado de la directiva en el **campo Nombre** de directiva o cambiar el nombre de la directiva. El nombre de la directiva de la nueva directiva no puede ser el mismo que una directiva activa o desactivada existente. Complete el **campo Descripción** según sea necesario.
+3. En el **panel Copiar directiva** , puede aceptar el nombre predeterminado de la directiva en el **campo Nombre** de directiva o cambiar el nombre de la directiva. El nombre de la directiva para la nueva directiva no puede ser el mismo que una directiva activa o desactivada existente. Complete el **campo Descripción** según sea necesario.
 4. Si no necesita más personalización de la directiva, seleccione **Copiar directiva** para completar el proceso. Si necesita actualizar la configuración de la nueva directiva, seleccione **Personalizar directiva**. Esto inicia el asistente para directivas para ayudarle a actualizar y personalizar la nueva directiva.
 
-## <a name="storage-limit-notification-preview"></a>Storage notificación de límite (versión preliminar)
+## <a name="storage-limit-notification-preview"></a>Storage de límite (versión preliminar)
 
 Cada directiva de cumplimiento de comunicaciones tiene un tamaño límite de almacenamiento de 100 GB o 1 millón de mensajes, lo que se alcance primero. A medida que la directiva se acerca a estos límites, los correos electrónicos de notificación se envían  automáticamente a los usuarios asignados a los grupos de roles De administración de cumplimiento de comunicaciones o *cumplimiento de* comunicaciones. Los mensajes de notificaciones se envían cuando el tamaño de almacenamiento o el recuento de mensajes alcanzan el 80, 90 y el 95 por ciento del límite. Cuando se alcanza el límite de directiva, la directiva se desactiva automáticamente y la directiva deja de procesar mensajes para alertas.
 
@@ -138,7 +143,7 @@ Los clasificadores globales y capacitados integrados analizan los mensajes envia
 Los clasificadores globales y capacitados para el cumplimiento de la comunicación analizan las comunicaciones en busca de términos, imágenes y sentimientos para los siguientes tipos de idioma y contenido:
 
 - **Imágenes para adultos**: busca imágenes sexualmente explícitas en la naturaleza.
-- **Discriminación (versión preliminar):** busca un lenguaje discriminatorio explícito y es especialmente sensible al lenguaje discriminatorio frente a las comunidades afroestadounides/negras en comparación con otras comunidades.
+- **Discriminación**: busca un lenguaje discriminatorio explícito y es especialmente sensible al lenguaje discriminatorio en comparación con otras comunidades.
 - **Imágenes gory**: busca imágenes que represente la violencia y la sangre.
 - **Profanidad**: busca expresiones profanas que ensoñen a la mayoría de las personas.
 - **Imágenes racias**: busca imágenes sexualmente sugerentes en la naturaleza, pero que contienen contenido menos explícito que las imágenes que se consideran adultos.
@@ -158,7 +163,7 @@ Para obtener información acerca de los clasificadores que se pueden entrenar en
 
 Configure directivas de cumplimiento de comunicación integradas o personalizadas para examinar e identificar texto impreso o escrito a mano de imágenes que puedan ser inapropiadas en su organización. La [compatibilidad integrada de Azure Cognitive Services](/azure/cognitive-services/computer-vision/overview-ocr) y el examen óptico para identificar texto en imágenes ayudan a los analistas e investigadores a detectar y actuar en casos en los que se puede perder una conducta inapropiada en comunicaciones que no son principalmente textuales.
 
-Puede habilitar el reconocimiento óptico de caracteres (OCR) en nuevas directivas de plantillas, directivas personalizadas o actualizar directivas existentes para ampliar la compatibilidad con el procesamiento de imágenes incrustadas y datos adjuntos. Cuando se habilita en una directiva creada a partir de una plantilla de directiva, se admite el examen automático para imágenes incrustadas o adjuntas en el correo electrónico Microsoft Teams mensajes de chat. En el caso de las imágenes incrustadas en archivos de documento, no se admite el examen OCR. Para las directivas personalizadas, una o más configuraciones condicionales asociadas con palabras clave, clasificadores integrados o tipos de información confidencial deben configurarse en la directiva para habilitar la selección del examen OCR.
+Puede habilitar el reconocimiento óptico de caracteres (OCR) en nuevas directivas de plantillas, directivas personalizadas o actualizar directivas existentes para ampliar la compatibilidad con el procesamiento de imágenes incrustadas y datos adjuntos. Cuando se habilita en una directiva creada a partir de una plantilla de directiva, se admite el examen automático para imágenes incrustadas o adjuntas en el correo electrónico y Microsoft Teams mensajes de chat. En el caso de las imágenes incrustadas en archivos de documento, no se admite el examen OCR. Para las directivas personalizadas, una o más configuraciones condicionales asociadas con palabras clave, clasificadores integrados o tipos de información confidencial deben configurarse en la directiva para habilitar la selección del examen OCR.
 
 Las imágenes de 50 KB a 4 MB en los siguientes formatos de imagen se examinan y procesan:
 
@@ -222,7 +227,7 @@ Si desea reducir la cantidad de contenido que se va a revisar, puede especificar
 
 ## <a name="alert-policies"></a>Directivas de alerta
 
-Después de configurar una directiva, se crea automáticamente una directiva de alerta correspondiente y se generan alertas para los mensajes que coinciden con las condiciones definidas en la directiva. Puede tardar hasta 24 horas después de crear una directiva de inicio para recibir alertas de indicadores de actividad. De forma predeterminada, todos los desencadenadores de alerta de coincidencias de directiva tienen asignado un nivel de gravedad de medio en la directiva de alerta asociada. Las alertas se generan para una directiva de cumplimiento de comunicaciones una vez que se cumple el nivel de umbral de desencadenador de agregación en la directiva de alerta asociada. Se envía una notificación de correo electrónico una vez cada 24 horas para las alertas, independientemente del número de mensajes individuales que coincidan con las condiciones de la directiva. Por ejemplo, Contoso tiene habilitada una directiva de contenido inadecuado y, para el 1 de enero, hubo 100 coincidencias de directiva que generaron 6 alertas. Una única notificación por correo electrónico para las 6 alertas se envía a finales del 1 de enero.
+Después de configurar una directiva, se crea automáticamente una directiva de alerta correspondiente y se generan alertas para los mensajes que coinciden con las condiciones definidas en la directiva. Puede tardar hasta 24 horas después de crear una directiva de inicio para recibir alertas de indicadores de actividad. De forma predeterminada, todos los desencadenadores de alerta de coincidencias de directiva tienen asignado un nivel de gravedad de medio en la directiva de alerta asociada. Las alertas se generan para una directiva de cumplimiento de comunicaciones una vez que se cumple el nivel de umbral de desencadenador de agregación en la directiva de alerta asociada. Se envía una notificación de correo electrónico una vez cada 24 horas para las alertas, independientemente del número de mensajes individuales que coincidan con las condiciones de la directiva. Por ejemplo, Contoso tiene habilitada una directiva de contenido inadecuada y, para el 1 de enero, hubo 100 coincidencias de directiva que generaron seis alertas. Una única notificación por correo electrónico para las seis alertas se envía a finales del 1 de enero.
 
 Para las directivas de cumplimiento de comunicaciones, los siguientes valores de directiva de alerta están configurados de forma predeterminada:
 

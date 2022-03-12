@@ -16,16 +16,16 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo encontrar recursos de Microsoft SharePoint Syntex.
-ms.openlocfilehash: db8526cbf85be1b9db5b95ed0739d0ec948c2faa
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3b8c85cfd405e68884df844c502473cdd95a4fa5
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323169"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449434"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Introducción a Microsoft SharePoint Syntex
 
-SharePoint Syntex es un servicio de Microsoft 365 que ayuda a las organizaciones a:
+SharePoint Syntex es un servicio Microsoft 365 que ayuda a las organizaciones a:
 
 - Emplear inteligencia artificial avanzada y aprendizaje automático para ampliar las experiencias humanas
 - Automatizar el procesamiento de contenido
@@ -39,7 +39,7 @@ Los recursos de esta página están diseñados para ayudarle a empezar a aprende
 
 </br>
 
-## <a name="get-started"></a>Introducción
+## <a name="get-started"></a>Comenzar
 
 Los recursos de esta sección le ayudarán a obtener más información sobre los tres métodos de clasificación y extracción de datos usados por SharePoint Syntex: comprensión de documentos, procesamiento de formularios y reconstrucción previa.
 
@@ -66,6 +66,8 @@ Obtenga más información sobre cómo usar e implementar SharePoint Syntex en su
 |Vea escenarios de ejemplo para tener ideas sobre cómo puede usar SharePoint Syntex en su organización |[Escenarios y casos de uso de SharePoint Syntex](./adoption-scenarios.md) | 
 |Creación y ejecución de un programa piloto de prueba para SharePoint Syntex |[Ejecutar una prueba ](./trial-syntex.md)|
 |Obtener información sobre cómo usar SharePoint Syntex para automatizar procesos de documentos |[Administrar contratos con una solución de Microsoft 365](./solution-manage-contracts-in-microsoft-365.md)| 
+|Pruebe una plantilla de sitio SharePoint personalizable para ayudar a administrar contratos |[Usar la plantilla de sitio Administración de contratos](./use-contracts-management-site.md)| 
+|Pruebe una plantilla de sitio del Centro de contenido instructivo para obtener más información sobre los modelos |[Usar la plantilla de sitio del Centro de contenido](./use-content-center-site.md)| 
 
 ## <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
 
@@ -76,6 +78,7 @@ Los recursos de esta sección ayudan al administrador de su organización a inst
 |Instalar y configurar SharePoint Syntex|[Configurar SharePoint Syntex](./set-up-content-understanding.md)|
 |Más información sobre las licencias para SharePoint Syntex|[Licencias para SharePoint Syntex](./syntex-licensing.md)|
 |Obtenga información sobre el etiquetado de imágenes y cómo deshabilitar|[Etiquetado de imágenes en SharePoint Syntex](./image-tagging.md)|
+|Use PowerShell para administrar SharePoint Syntex|[Administración de SharePoint Syntex con PowerShell](./powershell-syntex-intro.md)|
 
 ## <a name="models"></a>Modelos
 
@@ -96,7 +99,7 @@ Los recursos de esta sección ayudan a los usuarios a aprender a crear y configu
 
 ## <a name="premium-services"></a>Servicios Premium
 
-Una licencia de SharePoint Syntex ofrece a los usuarios servicios de contenido premium que proporcionan funciones adicionales en el entorno de Microsoft 365. En los recursos de esta sección, se proporciona información adicional sobre estas características y cómo usarlas.
+Una licencia de SharePoint Syntex ofrece a los usuarios servicios de contenido premium que proporcionan funciones adicionales en el entorno de Microsoft 365. Los recursos de esta sección le dan más detalles sobre estas características y cómo usarlas.
 
 | Si busca esta información: | Vea este recurso: |
 |:-----|:-----|

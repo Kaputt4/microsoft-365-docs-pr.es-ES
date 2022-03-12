@@ -17,17 +17,17 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: 6d31f7ea4dcec4cc17eb182843b6aa4e9013542f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c7b7848eb9bd02c75304ffea4347beb19b873b3a
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329829"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449840"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparar Microsoft Defender para empresas con Microsoft 365 Empresa Premium
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
+> Microsoft Defender para empresas se está implementando [para Microsoft 365 Empresa Premium](../../business-premium/index.md) clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
@@ -65,7 +65,7 @@ En la tabla siguiente se comparan las funciones y características de seguridad 
 | Protección antimalware | Sí<br/>- Para dispositivos | Sí <br/>- Para dispositivos<br/>- Para Microsoft 365 de correo electrónico, como mensajes y datos adjuntos |
 | [Protección de última generación](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (protección antivirus y antimalware) | Sí<br/>- Antivirus de Microsoft Defender se incluye en Windows 10 y versiones posteriores  | Sí <br/>- Antivirus de Microsoft Defender se incluye en Windows 10 y versiones posteriores<br/>- Directivas de protección de última generación para dispositivos incorporados |
 | [Reducción de la superficie expuesta a ataques](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(Reglas ASR en Windows 10 o posterior y protección de firewall) | Sí  | Sí  |
-| [Detección y respuesta de puntos de conexión](../defender-endpoint/overview-endpoint-detection-response.md) <br/>(detección basada en comportamiento y acciones de respuesta manual) | Sí | Sí |
+| [EDR](../defender-endpoint/overview-endpoint-detection-response.md) <br/>(detección basada en comportamiento y acciones de respuesta manual) | Sí | Sí |
 | [Investigación y respuesta automatizadas](../defender-endpoint/automated-investigations.md) | Sí | Sí |
 | [Administración de vulnerabilidades y amenazas](../defender-endpoint/tvm-dashboard-insights.md) | Sí | Sí |
 | Administración centralizada e informes  | Sí  | Sí  |
@@ -85,7 +85,7 @@ En la tabla siguiente se comparan las características y capacidades de segurida
 | [Administración de vulnerabilidades y amenazas](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) | Sí | No | Sí |
 | [Capacidades de reducción de superficie de ataque](../defender-endpoint/overview-attack-surface-reduction.md) | Sí | Sí | Sí |
 | [Protección de última generación](../defender-endpoint/next-generation-protection.md) | Sí | Sí | Sí |
-| [Detección y respuesta de puntos de conexión](../defender-endpoint/overview-endpoint-detection-response.md) | Sí <sup>[[2](#fn2)]</sup> | No | Sí |
+| [EDR](../defender-endpoint/overview-endpoint-detection-response.md) | Sí <sup>[[2](#fn2)]</sup> | No | Sí |
 | [Investigación y respuesta automatizadas](../defender-endpoint/automated-investigations.md) | Sí <sup>[[2](#fn2)]</sup> | No | Sí |
 | [Búsqueda de amenazas](../defender-endpoint/advanced-hunting-overview.md) y seis meses de retención de datos | No | No | Sí |
 | [Análisis de amenazas](../defender-endpoint/threat-analytics.md) | Sí <sup>[[2](#fn2)]</sup> | No | Sí |
@@ -100,7 +100,7 @@ En la tabla siguiente se comparan las características y capacidades de segurida
 
 (<a id="fn3">3</a>) Durante el programa de vista previa, Windows dispositivos cliente se admiten en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Consulta los requisitos de Microsoft Defender para empresas](mdb-requirements.md)
 

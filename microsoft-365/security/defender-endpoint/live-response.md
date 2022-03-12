@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e0e2490fb9026ff23e55990930ddedeb48144b92
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 882454e00517624c3bc43e87308007b00ece9507
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315979"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449748"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigar entidades en dispositivos con respuesta en directo
 
@@ -87,6 +87,8 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
 
   > [!NOTE]
   > Solo los usuarios con roles de administración global o de seguridad pueden editar esta configuración.
+  > 
+  > La investigación automatizada debe habilitarse en la [configuración de características avanzadas](advanced-features.md) antes de habilitar la respuesta en directo.
 
 - **Habilitar la respuesta en directo para los servidores desde la página de configuración avanzada** (recomendado).
 
@@ -277,7 +279,7 @@ En cualquier momento durante una sesión, puede cancelar un comando presionando 
 
 ## <a name="run-a-script"></a>Ejecutar un script
 
-Antes de poder ejecutar scripts de PowerShell/Bash, primero debe cargarlo en la biblioteca.
+Para poder ejecutar un script de PowerShell/Bash, primero debe cargarlo en la biblioteca.
 
 Después de cargar el script en la biblioteca, use el `run` comando para ejecutar el script.
 
@@ -342,7 +344,7 @@ processes > output.txt
 
 Selecciona la **pestaña Registro de** comandos para ver los comandos usados en el dispositivo durante una sesión. Cada comando se realiza un seguimiento con detalles completos como:
 
-- Id.
+- ID
 - Línea de comandos
 - Duración
 - Estado y barra lateral de entrada o salida

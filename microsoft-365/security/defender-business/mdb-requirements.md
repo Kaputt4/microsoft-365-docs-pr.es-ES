@@ -7,27 +7,27 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/10/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 1f8364cc46800f5631ac9919a8f59415b35005a3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3259b08bcbf62ce0547363f6020399ce444f7f79
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313067"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450596"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>Requisitos de Microsoft Defender para empresas
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
+> Microsoft Defender para empresas se está implementando [para Microsoft 365 Empresa Premium](../../business-premium/index.md) clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
@@ -48,7 +48,7 @@ En este artículo se describen los requisitos para Microsoft Defender para empre
 
 En la tabla siguiente se enumeran los requisitos básicos para configurar y usar Microsoft Defender para empresas. <br/><br/>
 
-| Requisito | Description |
+| Requisito | Descripción |
 |:---|:---|
 | Suscripción  | Microsoft 365 Empresa Premium <br/>--- o ---<br/>Microsoft Defender para empresas (independiente; actualmente en versión preliminar). <br/><br/> Consulta [Cómo obtener Microsoft Defender para empresas](get-defender-business.md).<br/><br/>Ten en cuenta que si tienes varias suscripciones, la suscripción más alta tiene prioridad. Por ejemplo, si tienes Microsoft Defender para endpoint plan 2 (suscripción comprada o de prueba) y obtienes Microsoft Defender para empresas, Defender for Endpoint Plan 2 tiene prioridad. En este caso, no verá la experiencia de Defender para empresas.  |
 | Datacenter | Una de las siguientes ubicaciones de centro de datos: <br/>- Unión Europea <br/>- Reino Unido <br/>- Estados Unidos |

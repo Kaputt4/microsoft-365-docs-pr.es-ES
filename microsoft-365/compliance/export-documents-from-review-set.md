@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo seleccionar y exportar contenido de un conjunto de Advanced eDiscovery para presentaciones o revisiones externas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6384d45121fc39d120d6906e46594b8b04124471
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 61de8fed9c5bcb00daf3a8273f3ebfc86fe75a35
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401068"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449462"
 ---
 # <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Exportar documentos de un conjunto de revisión en Advanced eDiscovery
 
@@ -93,11 +93,14 @@ Si selecciona esta opción de exportación, el contenido exportado se organiza e
   
   - Advertencias y errores x de z.csv: este archivo incluye información sobre los errores detectados al intentar exportar desde el conjunto de revisión.
   
-  - Exchange: esta carpeta contiene todo el contenido de Exchange almacenado en archivos PST. Los archivos PDF redactados no se pueden incluir con esta opción. Si se selecciona un archivo adjunto en el conjunto de revisión, el mensaje de correo electrónico primario se exportará con los datos adjuntos adjuntos. Esta carpeta también puede contener los siguientes elementos: 
+  - Exchange: esta carpeta contiene todo el contenido de Exchange almacenado en archivos PST. Los archivos PDF redactados no se pueden incluir con esta opción. Si se selecciona un archivo adjunto en el conjunto de revisión, el mensaje de correo electrónico primario se exportará con los datos adjuntos adjuntos.
+  
+    La Exchange carpeta también puede contener una subcarpeta denominada mailboxname_loosefiles.zip, que contiene los siguientes elementos:
 
-    - Mensajes protegidos de Information Rights Management (IRM) que se han descodificado. 
-    - Mensajes corregidos por error. 
-    - Datos adjuntos modernos o vínculos a los que se hace referencia en los mensajes. 
+    - Mensajes protegidos de Information Rights Management (IRM) que se han descodificado.
+    - Mensajes corregidos por error.
+    - Datos adjuntos modernos o vínculos a los que se hace referencia en los mensajes.
+    - Elementos cifrados (que no se incluyen en los archivos PST de la carpeta Exchange datos).
   
   - SharePoint: esta carpeta contiene todo el contenido nativo de SharePoint en un formato de archivo nativo. Los archivos PDF redactados no se pueden incluir con esta opción.
 

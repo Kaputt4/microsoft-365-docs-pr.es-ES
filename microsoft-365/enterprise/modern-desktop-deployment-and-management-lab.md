@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Obtenga información sobre dónde obtener acceso al kit Windows y Office deployment lab.
-ms.openlocfilehash: 7f91fdbd72a496d06377259387f53fbe923f1981
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f5b2bad3828ef30da822be102010124ccb26091e
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314453"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450722"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Kit de laboratorio de implementación de Windows y Office 365
 
@@ -101,7 +101,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 [Descargar el Windows 11 y Office 365 de laboratorio de implementación](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 > [!NOTE]
-> Use una conexión a Internet de banda ancha para descargar este contenido y permita aproximadamente 30 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El Windows 10 expira el 16 de mayo de 2022. El Windows 11 expira el 11 de abril de 2022. Las nuevas versiones se publicarán antes de la expiración.
+> Use una conexión a Internet de banda ancha para descargar este contenido y permita aproximadamente 30 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El Windows 10 expira el 16 de mayo de 2022. El Windows 11 expira el 6 de mayo de 2022. Las nuevas versiones se publicarán antes de la expiración.
 
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 

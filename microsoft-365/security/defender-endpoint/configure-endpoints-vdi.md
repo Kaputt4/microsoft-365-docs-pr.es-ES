@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 02/14/2022
 ms.technology: mde
-ms.openlocfilehash: 3e430d44789a1f3c43ec55a20ee7e06521f2dcaf
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 7342f368063c2c9024c4942c33a2e41f28eebd36
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807637"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449826"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistentes en Microsoft 365 Defender
 
@@ -63,7 +63,10 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
 > [!WARNING]
 > En los entornos en los que hay configuraciones de recursos bajos, el procedimiento de arranque de VDI puede ralentizar la incorporación del sensor Defender for Endpoint.
 
-### <a name="for-windows-10-or-windows-11-or-windows-server-2019-or-windows-server-2022"></a>Para Windows 10 o Windows 11 o Windows Server 2019 o Windows Server 2022
+### <a name="for-windows-10-or-windows-11-or-windows-server-2012-r2-and-later"></a>Para Windows 10, o Windows 11, o Windows Server 2012 R2 y versiones posteriores
+
+> [!NOTE]
+> Windows Server 2016 y Windows Server 2012 R2 tendrán que prepararse aplicando primero el paquete de instalación con las instrucciones de [Onboard Windows servers](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione.
 
 1.  Abra el archivo de configuración .zip VDI (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del Asistente para incorporación de servicios. También puede obtener el paquete desde el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender:</a>
 
@@ -82,7 +85,7 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
     > [!NOTE]
     > Si no ve la carpeta `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` , podría estar oculta. Tendrás que elegir la opción Mostrar **archivos y carpetas** ocultos en el Explorador de archivos.
 
-3. Abra una ventana Editor de directivas de grupo local y vaya a **Configuración** \> del **equipo** \> Windows Configuración **inicio de scripts**\>.
+3. Abra una ventana Editor de directivas de grupo local y vaya a **Configuración** \> del **equipo Windows Configuración** \> **inicio de scripts**\>.
 
    > [!NOTE]
    > La directiva de grupo de dominio también se puede usar para incorporar dispositivos VDI no persistentes.
@@ -109,7 +112,10 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
 
 7. Para usar la función de búsqueda, escriba el nombre del dispositivo y seleccione **Dispositivo** como tipo de búsqueda.
 
-## <a name="for-downlevel-skus-windows-server-2008-r22012-r22016"></a>Para SKU de nivel inferior (Windows Server 2008 R2/2012 R2/2016)
+## <a name="for-downlevel-skus-windows-server-2008-r2"></a>Para SKU de nivel inferior (Windows Server 2008 R2)
+
+> [!NOTE]
+> Estas instrucciones para otras versiones de servidor Windows también se aplican si está ejecutando el anterior Microsoft Defender para endpoint para Windows Server 2016 y Windows Server 2012 R2 que requiere la MMA. Las instrucciones para migrar a la nueva solución unificada se encuentran en Escenarios de migración de [servidor en Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 > [!NOTE]
 > El registro siguiente es relevante solo cuando el objetivo es lograr una "entrada única para cada dispositivo".
@@ -143,7 +149,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 Para obtener más información sobre los comandos DISM y el mantenimiento sin conexión, consulte los artículos siguientes:
 
-- [Modificar una imagen Windows con DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [Modificar una Windows con DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 - [Opciones de administración de imágenes Command-Line DISM](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
 - [Reducir el tamaño del almacén de componentes en una imagen Windows sin conexión](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
@@ -159,7 +165,7 @@ Si el mantenimiento sin conexión no es una opción viable para el entorno VDI n
 
 3. Servicio de la imagen según sea necesario.
 
-4. Ejecute los siguientes comandos mediante PsExec.exe ( https://download.sysinternals.com/files/PSTools.zip) que se pueden descargar para limpiar el contenido de la carpeta cibernética que el sensor puede haber acumulado desde el arranque:
+4. Ejecute los siguientes comandos con PsExec.exe ( https://download.sysinternals.com/files/PSTools.zip) que se pueden descargar para limpiar el contenido de la carpeta cibernética que el sensor puede haber acumulado desde el arranque:
 
     ```console
     PsExec.exe -s cmd.exe

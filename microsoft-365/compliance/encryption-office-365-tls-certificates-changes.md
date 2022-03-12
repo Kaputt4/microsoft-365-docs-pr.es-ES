@@ -6,14 +6,19 @@ ms.author: pshelton
 manager: toddbeckett
 ms.topic: article
 audience: Developer
-ms.date: 2/4/2022
+ms.date: 3/7/2022
 ms.service: O365-seccomp
 ms.localizationpriority: medium
+ms.openlocfilehash: 075fb8f4c27401a4622f4ce639c897f2e98bb3e9
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450381"
 ---
-
 # <a name="office-tls-certificate-changes"></a>Cambios en el certificado TLS de Office
 
-Microsoft 365 actualiza servicios que powering messaging, meetings, telephony, voice y video para usar certificados TLS de un conjunto diferente de autoridades de certificación raíz (CA). Este cambio se realiza porque la ca raíz actual expirará en mayo de 2025.
+Microsoft 365 actualiza servicios que powering messaging, meetings, telephony, voice, and video para usar certificados TLS de un conjunto diferente de autoridades de certificación raíz (CA). Este cambio se realiza porque la ca raíz actual expirará en mayo de 2025.
 
 Entre los productos afectados se incluyen:
 - Microsoft Teams
@@ -32,19 +37,22 @@ Los puntos de conexión afectados incluyen (pero no están limitados a):
 - *.communication.azure.com
 - *.operatorconnect.microsoft.com
 
-Además, los Skype Empresarial online en las instancias de nube nacionales del Gobierno de estados unidos de Microsoft 365 realizarán el mismo cambio, lo que afectará a puntos de conexión como:
+Además, Teams y Skype Empresarial en línea en las instancias de nube nacionales del Gobierno de ESTADOS UNIDOS de Microsoft 365 realizarán el mismo cambio, lo que afectará a puntos de conexión como:
+- *.gcc.teams.microsoft.com
+- *.dod.teams.microsoft.us
+- *.gov.teams.microsoft.us
 - *.online.dod.skypeforbusiness.us
 - *.online.gov.skypeforbusiness.us
 - *.um-dod.office365.us
 - *.um.office365.us
 
-Este cambio no afectará a otros certificados, dominios o servicios usados en las instancias de nube nacionales de Estados Unidos, China o Alemania de Microsoft 365.
+Este cambio no afectará a los certificados, dominios o servicios usados en las instancias de nube nacionales de China o Alemania de Microsoft 365.
 
-Toda la información de certificado de este artículo se proporcionó anteriormente en [Microsoft 365 cadenas](./encryption-office-365-certificate-chains.md) de cifrado a más tardar en octubre de 2020.
+Toda la información de certificado de este artículo se proporcionó anteriormente Microsoft 365 [cadenas de](./encryption-office-365-certificate-chains.md) cifrado a más tardar en octubre de 2020.
 
 ## <a name="when-will-this-change-happen"></a>¿Cuándo se realizará este cambio?
 
-Los servicios comenzarán la transición a las nuevas CA raíz a partir de enero de 2022, continuando hasta octubre de 2022.
+Los servicios empezaron la transición a las nuevas CA raíz en enero de 2022 y continuarán hasta octubre de 2022.
 
 ## <a name="what-is-changing"></a>¿Qué está cambiando?
 
@@ -74,9 +82,13 @@ con una de las siguientes CA intermedias:
 | Nombre común de la CA | Huella digital (SHA1) |
 |--|--|
 | [Microsoft Azure TLS Emisor CA 01](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2001%20-%20xsign.crt) | 2f2877c5d778c31e0f29c7e371df5471bd673173 |
-| [Microsoft Azure TLS Emisor ca 02](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2002%20-%20xsign.crt) | e7eea674ca718e3befd90858e09f8372ad0ae2aa |
+| [Microsoft Azure TLS Emisor CA 02](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2002%20-%20xsign.crt) | e7eea674ca718e3befd90858e09f8372ad0ae2aa |
 | [Microsoft Azure TLS Emisor CA 05](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt) | 6c3af02e7f269aa73afd0eff2a88a4a1f04ed1e5 |
-| [Microsoft Azure TLS Issuing CA 06](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2006%20-%20xsign.crt) | 30e01761ab97e59a06b41ef20af6f2de7ef4f7b0 |
+| [Microsoft Azure TLS Emisor CA 06](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2006%20-%20xsign.crt) | 30e01761ab97e59a06b41ef20af6f2de7ef4f7b0 |
+
+Por ejemplo, se trata de un certificado válido con una de las nuevas cadenas de certificados:
+
+![Teams de certificados TLS](../media/teams-tls-certificate-chain.png)
 
 ## <a name="will-this-change-affect-me"></a>¿Me afectará este cambio?
 
@@ -88,7 +100,7 @@ Estas son algunas maneras de detectar si la aplicación puede estar afectada:
 
 - Busque en el código fuente la huella digital, el nombre común u otras propiedades de cualquiera de las CA intermedias que se encuentran [aquí](https://www.microsoft.com/pki/mscorp/cps/default.htm). Si hay una coincidencia, la aplicación se verá afectada. Para resolver este problema, actualice el código fuente para agregar las propiedades de las nuevas CA. Como práctica recomendada, asegúrese de que las CA se pueden agregar o editar con un breve aviso. Las normativas del sector requieren que los certificados de ca se reemplacen en un plazo de siete días en algunas circunstancias, por lo que las aplicaciones que implementan la fijación de certificados deben reaccionar rápidamente a estos cambios.
 
-- .NET expone las `System.Net.ServicePointManager.ServerCertificateValidationCallback` `System.Net.HttpWebRequest.ServerCertificateValidationCallback` funciones y las funciones de devolución de llamada, que permiten a los desarrolladores usar lógica personalizada para determinar si los certificados son válidos en lugar de confiar en el almacén de certificados Windows estándar. Un desarrollador puede agregar lógica que busca un nombre común específico o huella digital o solo permite una CA raíz específica como "Raíz de CyberTrust de Baltimore". Si la aplicación usa estas funciones de devolución de llamada, debe asegurarse de que acepta tanto las CA raíz y intermedias antiguas como las nuevas.
+- .NET expone las `System.Net.ServicePointManager.ServerCertificateValidationCallback` `System.Net.HttpWebRequest.ServerCertificateValidationCallback` funciones y las funciones de devolución de llamada, que permiten a los programadores usar lógica personalizada para determinar si los certificados son válidos en lugar de depender del almacén de certificados Windows estándar. Un desarrollador puede agregar lógica que busca un nombre común específico o huella digital o solo permite una CA raíz específica como "Raíz de CyberTrust de Baltimore". Si la aplicación usa estas funciones de devolución de llamada, debe asegurarse de que acepta tanto las CA raíz y intermedias antiguas como las nuevas.
 
 - Las aplicaciones nativas pueden usar `WINHTTP_CALLBACK_STATUS_SENDING_REQUEST`, lo que permite a las aplicaciones nativas implementar lógica de validación de certificados personalizada. El uso de esta notificación es poco común y requiere una cantidad significativa de código personalizado para implementar. De forma similar a lo anterior, asegúrese de que la aplicación acepta tanto las ca raíz antiguas como las nuevas y las intermedias. 
 
@@ -96,7 +108,7 @@ Estas son algunas maneras de detectar si la aplicación puede estar afectada:
 
 - Los diferentes sistemas operativos y tiempos de ejecución de idioma que se comunican con los servicios de Azure pueden requerir otros pasos para crear y validar correctamente las nuevas cadenas de certificados:
    - **Linux**: muchas distribuciones requieren que agregue CA a `/etc/ssl/certs`. Para obtener instrucciones específicas, consulte la documentación de la distribución.
-   - **Java**: asegúrese de que el Java de claves contiene las CA enumeradas anteriormente.
+   - **Java**: asegúrese de que el almacén Java de claves contiene las CA enumeradas anteriormente.
    - **Windows en entornos desconectados**: los sistemas que se ejecutan en entornos desconectados tendrán que agregar las nuevas CA raíz a su almacén y las nuevas CA intermedias `Trusted Root Certification Authorities` `Intermediate Certification Authorities` a su almacén.
    - **Android**: comprueba la documentación del dispositivo y la versión de Android.
    - **IoT o dispositivos** incrustados: los dispositivos incrustados, como los cuadros superiores de los televisores, suelen enviarse con un conjunto limitado de certificados de entidad raíz y no tienen una forma fácil de actualizar el almacén de certificados. Si escribe código para o administra implementaciones de dispositivos personalizados incrustados o ioT, asegúrese de que los dispositivos confían en las nuevas CA raíz. Es posible que deba ponerse en contacto con el fabricante del dispositivo.

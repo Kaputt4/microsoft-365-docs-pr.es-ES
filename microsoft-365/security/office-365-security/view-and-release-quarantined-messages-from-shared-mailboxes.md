@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Los usuarios pueden aprender a ver y actuar en mensajes en cuarentena que se enviaron a buzones compartidos a los que tienen permisos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8d9f83f176675be26fadf3d720dcc78e5146bde3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3f136f373fa63be7dab6cfbd63e44b33b4eca2ff
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324527"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450540"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Ver y liberar mensajes en cuarentena de buzones compartidos
 
@@ -48,7 +48,7 @@ Ahora, la automapping ya no es necesaria para que los usuarios administren los m
 - Para administrar mensajes en cuarentena para el buzón compartido en [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), el usuario final tendrá que usar el cmdlet [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) con dirección de correo electrónico de buzón compartido para el valor del parámetro _RecipientAddress_ para identificar los mensajes. Por ejemplo:
 
   ```powershell
-  Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com
+  Get-QuarantineMessage -RecipientAddress officeparty@contoso.com
   ```
 
   A continuación, el usuario final puede seleccionar un mensaje en cuarentena de la lista en el que ver o realizar acciones.
@@ -56,9 +56,9 @@ Ahora, la automapping ya no es necesaria para que los usuarios administren los m
   En este ejemplo se muestran todos los mensajes en cuarentena que se enviaron al buzón compartido y, a continuación, se libera el primer mensaje de la lista desde la cuarentena (el primer mensaje de la lista es 0, el segundo es 1, y así sucesivamente).
 
   ```powershell
-  $SharedMessages = Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com | select -ExpandProperty Identity
+  $SharedMessages = Get-QuarantineMessage -RecipientAddress officeparty@contoso.com | select -ExpandProperty Identity
   $SharedMessages
-  Release-QuarantinedMessage -Identity $SharedMessages[0]
+  Release-QuarantineMessage -Identity $SharedMessages[0]
   ```
 
   Para obtener información detallada acerca de la sintaxis y los parámetros, consulte los siguientes temas:

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/02/2022
+ms.date: 03/10/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 8c7100774057d399667a3176670a55d5b4479c73
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 2cc157e363c42b94cac750b19a6122ed0a22c3de
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419035"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450764"
 ---
 # <a name="use-the-wizard-to-set-up-microsoft-defender-for-business"></a>Usar el asistente para configurar Microsoft Defender para empresas
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
+> Microsoft Defender para empresas se está implementando [para Microsoft 365 Empresa Premium](../../business-premium/index.md) clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
@@ -55,7 +55,7 @@ El asistente está diseñado para ayudarle a configurar Defender for Business de
 
    - Si ya usa Microsoft Intune (parte de Microsoft Endpoint Manager) y su organización tiene dispositivos inscritos en Endpoint Manager, se le preguntará si desea usar la incorporación automática para algunos o todos los dispositivos Windows inscritos.[](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager) La incorporación automática configura una conexión entre Endpoint Manager y Defender para empresas y, a continuación, incorpora Windows dispositivos a Defender para empresas sin problemas.
 
-   - Si aún no estás usando Endpoint Manager, o si tienes dispositivos que no son de Windows inscritos en Endpoint Manager, puedes incorporar dispositivos a Defender para empresas manualmente. 
+   - Si aún no estás usando Endpoint Manager, o si tienes dispositivos que no son de Windows inscritos en Endpoint Manager, puedes incorporar dispositivos a [Defender para empresas manualmente](mdb-onboard-devices.md#local-script-in-defender-for-business). 
    
 3. **Configure las directivas de seguridad**. Defender para empresas incluye directivas de seguridad predeterminadas para protección de última generación y protección de firewall que se pueden aplicar a los dispositivos de su organización. Estas directivas predeterminadas usan la configuración recomendada y están diseñadas para proporcionar una protección segura para los dispositivos. 
 

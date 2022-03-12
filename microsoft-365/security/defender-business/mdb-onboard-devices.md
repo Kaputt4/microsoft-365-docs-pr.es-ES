@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/09/2022
+ms.date: 03/10/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,28 +17,21 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: a078b2a88fdde3af840cff64414fec0a712ae92e
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 545e0e3a12fda1c45bac27f9c71d4e465ca05b7e
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419310"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450610"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Incorporación de dispositivos a Microsoft Defender para empresas
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
+> Microsoft Defender para empresas se está implementando [para Microsoft 365 Empresa Premium](../../business-premium/index.md) clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
-La experiencia de incorporación de dispositivos en Defender para empresas se basa en procesos similares a los que usamos en Microsoft Defender para endpoint. Vea el siguiente vídeo para ver cómo funciona:<br/><br/>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
-
 Con Microsoft Defender para empresas, tienes varias opciones entre las que elegir para incorporar los dispositivos de tu organización. En este artículo se le guía por las opciones e incluye información general sobre cómo funciona la incorporación.
-
-> [!TIP]
-> Para ver información más detallada sobre la incorporación de dispositivos en Defender para endpoint, consulta Incorporación de dispositivos y [configuración de Microsoft Defender para las capacidades de endpoint](../defender-endpoint/onboard-configure.md).
 
 ## <a name="what-to-do"></a>Qué hacer
 
@@ -68,7 +61,7 @@ En la tabla siguiente se describen los métodos más usados para incorporar disp
 |---------|---------|---------|
 | **Incorporación automática**<br/>(*disponible para clientes que ya usan Microsoft Endpoint Manager*) | *Microsoft 365 Empresa Premium clientes ya tienen Microsoft Intune y pueden usar esta opción*. La incorporación automática configura una conexión entre Defender para empresas y Microsoft Endpoint Manager y, a continuación, se incorpora Windows dispositivos a Defender para empresas. Para poder usar esta opción, los dispositivos ya deben estar inscritos en Endpoint Manager.<br/><br/>Para obtener más información, consulte [Incorporación automática](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager). | Windows |
 | **Script local** <br/> | Esta opción te permite incorporar dispositivos individuales a Defender para empresas manualmente. Puedes incorporar hasta 10 dispositivos a la vez mediante el script local.<br/><br/>Para obtener más información, [vea Script local en Defender for Business](#local-script-in-defender-for-business). | Windows <br/>macOS |
-| **Microsoft Intune** o **Microsoft Endpoint Manager**<br/>(*disponible para clientes que usan Microsoft Intune o Endpoint Manager*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) [y administración de](/mem/intune/enrollment/device-enrollment) dispositivos móviles forman parte de Endpoint Manager. Microsoft 365 Empresa Premium clientes ya tienen Microsoft Intune y pueden usar esta opción.<br/><br/>Si ya usaste Endpoint Manager antes de obtener Defender para empresas, puedes optar por seguir usando Endpoint Manager para incorporar y administrar dispositivos<br/><br/>Para usar este método, vea [Microsoft Endpoint Manager](#microsoft-endpoint-manager). | Windows <br/>macOS<br/>iOS<br/>Sistema operativo Android | 
+| **Microsoft Intune** o **Microsoft Endpoint Manager**<br/>(*disponible para clientes que usan Microsoft Intune o Endpoint Manager*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) [y administración de](/mem/intune/enrollment/device-enrollment) dispositivos móviles forman parte de Endpoint Manager. (Microsoft 365 Empresa Premium clientes ya tienen Microsoft Intune).<br/><br/>Si ya usaste Endpoint Manager antes de obtener Defender para empresas, puedes optar por seguir usando Endpoint Manager para incorporar y administrar dispositivos<br/><br/>Para usar este método, vea [Microsoft Endpoint Manager](#microsoft-endpoint-manager). | Windows <br/>macOS<br/>iOS<br/>Sistema operativo Android | 
 | **Configuración de seguridad de Microsoft Defender para empresas** <br/>(*usa el Microsoft 365 Defender web*) | Para usar esta opción, debe configurar determinadas opciones para facilitar la comunicación entre Defender para empresas y Endpoint Manager. A continuación, incorporas dispositivos en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) mediante el uso de un paquete que descargues y ejecutes en cada dispositivo. Se establece una confianza entre dispositivos y Azure Active Directory (Azure AD) y las directivas de seguridad de Defender para empresas se insertan en dispositivos.<br/><br/>Para obtener más información, consulta [Configuración de seguridad de Microsoft Defender para empresas](#microsoft-defender-for-business-security-configuration). | Windows <br/>macOS |
 
 > [!IMPORTANT]
@@ -76,9 +69,15 @@ En la tabla siguiente se describen los métodos más usados para incorporar disp
 
 ## <a name="automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager"></a>Incorporación automática para Windows dispositivos inscritos en Microsoft Endpoint Manager
 
-La opción de incorporación automática solo se aplica Windows dispositivos. La incorporación automática está disponible si tu organización ya usaba Microsoft Endpoint Manager, Microsoft Intune o Administración de dispositivos móviles (MDM) en Microsoft Intune antes de obtener Defender para empresas y ya tienes dispositivos Windows inscritos Endpoint Manager. 
+La opción de incorporación automática solo se aplica Windows dispositivos. La incorporación automática está disponible si se cumplen las siguientes condiciones:
+
+- Su organización ya usaba Microsoft Endpoint Manager, Microsoft Intune o administración de dispositivos móviles (MDM) en Microsoft Intune antes de obtener Defender for Business
+- Ya tienes Windows dispositivos inscritos en Endpoint Manager
 
 Si Windows dispositivos ya están inscritos en Endpoint Manager, Defender para empresas detectará esos dispositivos mientras se está configurando y configurando Defender para empresas. Se te preguntará si quieres usar la incorporación automática para todos o algunos de tus Windows dispositivos. Puedes incorporar todos los Windows a la vez, o seleccionar dispositivos específicos para empezar y, a continuación, agregar más dispositivos más adelante.
+
+> [!TIP]
+> Se recomienda seleccionar la opción "todos los dispositivos inscritos". De este modo, Windows los dispositivos se inscriben en Endpoint Manager más adelante, se incorporarán automáticamente a Defender for Business.
 
 Para obtener más información sobre la incorporación automática, consulta el paso 2 de [Usar el asistente para configurar Microsoft Defender para empresas](mdb-use-wizard.md).
 
@@ -90,14 +89,16 @@ Puedes usar un script local para incorporar dispositivos Windows y Mac. Al ejecu
 
 2. En el panel de navegación, **elija Configuración** >  **Endpoints** y, a continuación, en **Administración** de dispositivos, elija **Incorporación**.
 
-3. Seleccione un sistema operativo, como **Windows 10 y 11** y, a continuación, en Incorporación **de** un dispositivo, en la sección Método  de implementación, elija **Script local**. 
+3. Seleccione un sistema operativo, como **Windows 10 y 11** o **macOS** y, a continuación, en la sección Método de  implementación, elija **Script local**. 
 
-4. Seleccione **Descargar paquete de incorporación**. Se recomienda guardar el paquete de incorporación en una unidad extraíble.
+4. Seleccione **Descargar paquete de incorporación**. Se recomienda guardar el paquete de incorporación en una unidad extraíble. (Si seleccionó **macOS**, también seleccione **Descargar paquete de instalación** y guárdelo en el dispositivo extraíble).
 
-5. Siga las instrucciones de los artículos siguientes:
+5. Siga las instrucciones de la tabla siguiente:
 
-   - Windows: [incorporar Windows dispositivos con un script local](../defender-endpoint/configure-endpoints-script.md#onboard-devices)
-   - dispositivos macOS: [implementación manual para Microsoft Defender para Endpoint en macOS](../defender-endpoint/mac-install-manually.md#client-configuration)
+   | Sistema operativo | Procedure |
+   |---|---|
+   | Windows | 1. En un dispositivo Windows, extraiga el contenido del paquete de configuración en una ubicación, como la carpeta Escritorio. Debe tener un archivo denominado `WindowsDefenderATPLocalOnboardingScript.cmd`. <br/><br/>2. Abra el símbolo del sistema como administrador.<br/><br/>3. Escriba la ubicación del archivo de script. Por ejemplo, si copió el archivo en la carpeta Escritorio, escribiría: `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`y, a continuación, presionaría la tecla Entrar (o bien, **seleccionarÍa Aceptar**).<br/><br/>4. Después de que se ejecute el script, continúe con [Ejecutar una prueba de detección](#run-a-detection-test). |
+   | macOS | 1. En un equipo Mac, guarde el paquete de instalación en `wdav.pkg` un directorio local. <br/><br/>2. Guarde el paquete de incorporación en `WindowsDefenderATPOnboardingPackage.zip` el mismo directorio que usó para el paquete de instalación. <br/><br/>3. Use Finder para navegar `wdav.pkg` hasta que guardó y, a continuación, ábralo.<br/><br/>4. Seleccione **Continuar**, acepte los términos de licencia y, a continuación, escriba la contraseña cuando se le solicite.<br/><br/>5. Se le pedirá que permita la instalación de un controlador de Microsoft (ya sea "System Extension Blocked" o "Installation is on hold", o ambos. Se debe permitir la instalación del controlador. Para permitir la instalación, seleccione **Abrir** preferencias de seguridad o **Abrir Preferencias** >  del **sistemaSecurity & Privacidad** y, a continuación, **seleccione Permitir**.<br/><br/>6. Use el siguiente comando python en Bash para ejecutar el paquete de incorporación: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`. <br/><br/>7. Para confirmar que el dispositivo está asociado a su organización, use el siguiente comando python en Bash: `mdatp health --field org_id`.<br/><br/>8. Si usa macOS 10.15 (Catalina) o posterior, conceda a Defender for Business su consentimiento para proteger el dispositivo. Vaya a **System PreferencesSecurity** >  **&** **PrivacyPrivacyFull** >  >  **Disk Access**.  Seleccione el icono de bloqueo para realizar cambios (parte inferior del cuadro de diálogo) y, a continuación, seleccione Microsoft Defender para empresas (o Defender para endpoint, si eso es lo que ve). <br/><br/>9. Para comprobar que el dispositivo está incorporado, use el siguiente comando en Bash: `mdatp health --field real_time_protection_enabled`.    |
 
 ## <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
@@ -159,24 +160,12 @@ Puedes incorporar los dispositivos de la organización en fases. *Llamamos a est
 
 ## <a name="offboarding-a-device"></a>Offboarding a device
 
-Si quieres salir de un dispositivo, sigue estos pasos:
+Si quieres salir de un dispositivo, usa uno de los siguientes procedimientos:
 
-1. Vaya al portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
-
-2. En el panel de navegación, **elija Configuración** y, a continuación, elija **Extremos**.
-
-3. En **Administración de dispositivos**, elija **Offboarding**.
-
-4. Seleccione un sistema operativo, como **Windows 10 y 11** y, a continuación, en **Offboard a device**, en la sección **Método** de implementación, elija **Script local**. 
-
-5. En la pantalla de confirmación, revise la información y, a continuación, elija **Descargar** para continuar.
-
-6. Seleccione **Descargar paquete de offboarding**. Se recomienda guardar el paquete de offboarding en una unidad extraíble.
-
-7. Ejecuta el script en cada dispositivo que quieras desactivar. ¿Necesita ayuda con esta tarea? Vea los siguientes recursos:   
-
-   - Windows: [offboard Windows dispositivos con un script local](../defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script)
-   - dispositivos macOS: [desinstalación en macOS](../defender-endpoint/mac-resources.md#uninstalling)
+| Sistema operativo | Procedure |
+|---|---|
+| Windows | 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.<br/><br/>2. En el panel de navegación, **elija Configuración** y, a continuación, elija **Extremos**.<br/><br/>3. En **Administración de dispositivos**, elija **Offboarding**.<br/><br/>4. Seleccione un sistema operativo, como Windows 10 y **11**, y, a continuación, en **Offboard a device**, en la sección **Método** de implementación, elija **Script local**. <br/><br/>5. En la pantalla de confirmación, revise la información y, a continuación, elija **Descargar** para continuar.<br/><br/>6. Seleccione **Descargar paquete de offboarding**. Se recomienda guardar el paquete de offboarding en una unidad extraíble.<br/><br/>7. Ejecute el script en cada dispositivo que desee desactivar.| 
+| macOS | 1. Vaya a **FinderApplications** > . <br/><br/>2. Haga clic con el botón secundario en Microsoft Defender para empresas y, a continuación, elija **Mover a la papelera**. <br/><br/>--- o --- <br/><br/> Use el siguiente comando: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.|
 
 > [!IMPORTANT]
 > La salida de un dispositivo hace que los dispositivos dejen de enviar datos a Defender para empresas. Sin embargo, los datos recibidos antes del offboarding se conservan durante un máximo de seis (6) meses.

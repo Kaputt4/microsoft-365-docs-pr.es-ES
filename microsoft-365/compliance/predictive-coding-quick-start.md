@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo empezar a usar el módulo de codificación predictiva en Advanced eDiscovery. Este artículo le guiará por el proceso completo de usar la codificación predictiva para identificar el contenido de un conjunto de revisión que sea más relevante para la investigación.
-ms.openlocfilehash: 38607459057ff06a2ce74364b752130467deaddd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2266f44e7b95c118314d76fe019a97b2db24f07c
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197598"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449476"
 ---
 # <a name="quick-start-predictive-coding-in-advanced-ediscovery-preview"></a>Inicio rápido: codificación predictiva en Advanced eDiscovery (versión preliminar)
 
-En este artículo se presenta un inicio rápido para usar la codificación predictiva en Advanced eDiscovery. El módulo de codificación predictiva de Advanced eDiscovery usa las capacidades inteligentes de aprendizaje automático en Advanced eDiscovery para ayudarle a reducir la cantidad de contenido que se va a revisar. La codificación predictiva le ayuda a reducir y asignar grandes volúmenes de contenido de caso a un conjunto relevante de elementos que puede priorizar para su revisión. Para ello, cree y entrena sus propios modelos de codificación predictiva que le ayudarán a priorizar la revisión de los elementos más relevantes de un conjunto de revisión.
+En este artículo se presenta un inicio rápido para usar la codificación predictiva en Advanced eDiscovery. El módulo de codificación predictiva usa capacidades inteligentes de aprendizaje automático para ayudarle a obtener grandes volúmenes de contenido de casos que no son relevantes para la investigación. Esto se logra creando y entrenando sus propios modelos de codificación predictiva que le ayudarán a priorizar los elementos más relevantes para su revisión.
 
 Este es un resumen rápido del proceso de codificación predictiva:
 
@@ -39,11 +39,11 @@ El primer paso es crear un nuevo modelo de codificación predictiva en el conjun
 
 1. En el Centro de cumplimiento de Microsoft 365, abra un Advanced eDiscovery y, a continuación, seleccione la **pestaña Conjuntos de** revisión.
 
-2. Abra un conjunto de opiniones y, a continuación, haga clic **en Analytics Administrar**  >  **codificación predictiva (versión preliminar).**
+2. Abra un conjunto de opiniones y, a continuación, haga clic en **AnalyticsManage** >  **predictive coding (preview)**.
 
    ![Haga clic en el menú desplegable Analizar del conjunto de revisión para ir a la página Codificación predictiva.](..\media\ManagePredictiveCoding.png)
 
-3. En la **página Modelos de codificación predictiva (versión preliminar),** haga clic **en Nuevo modelo**.
+3. En la **página Modelos de codificación predictiva (versión preliminar** ), haga clic **en Nuevo modelo**.
 
 4. En la página desplegable, escriba un nombre para el modelo y una descripción opcional.
 
@@ -51,21 +51,21 @@ El primer paso es crear un nuevo modelo de codificación predictiva en el conjun
 
    El sistema tardaría un par de minutos en preparar el modelo. Después de que esté listo, puedes realizar la primera ronda de aprendizaje.
 
-Para obtener instrucciones más detalladas, vea [Create a predictive coding model](predictive-coding-create-model.md).
+Para obtener instrucciones más detalladas, vea [Crear un modelo de codificación predictiva](predictive-coding-create-model.md).
 
 ## <a name="step-2-perform-the-first-training-round"></a>Paso 2: Realizar la primera ronda de entrenamiento
 
 Después de crear el modelo, el siguiente paso es completar la primera ronda de aprendizaje etiquetando los elementos como relevantes o no relevantes.
 
-1. Abra el conjunto de opiniones y, a continuación, haga clic **en Analytics**  >  **Administrar codificación predictiva (versión preliminar).**
+1. Abra el conjunto de opiniones y, a continuación, haga clic en **AnalyticsManage** >  **predictive coding (preview)**.
 
-2. En la **página Modelos de codificación predictiva (versión** preliminar), seleccione el modelo que desea entrenar.
+2. En la **página Modelos de codificación predictiva (** versión preliminar), seleccione el modelo que desea entrenar.
 
-3. En la **pestaña Información** general, en **Ronda 1,** haga clic **en Iniciar siguiente ronda de aprendizaje.**
+3. En la **pestaña Información** general, en **Ronda 1**, haga clic **en Iniciar siguiente ronda de aprendizaje**.
 
    Se **muestra la** pestaña Aprendizaje y contiene 50 elementos para etiquetar.
 
-4. Revise cada documento y, a continuación, **seleccione** el botón Relevante o No **relevante** en la parte inferior del panel de lectura para etiquetar.
+4. Revise cada documento y, a continuación **, seleccione el** botón Relevante o **No relevante en** la parte inferior del panel de lectura para etiquetar.
 
    ![Etiquete cada documento como relevante o no relevante.](..\media\TrainModel1.png)
 
@@ -83,19 +83,19 @@ Después de realizar la concesión de una ronda de aprendizaje, puede aplicar el
 
    ![Haga clic en Filtros para mostrar la página desplegable Filtros.](..\media\PredictionScoreFilter0.png)
 
-   Los filtros predeterminados precargados se muestran en la parte superior de la página del conjunto de revisión. Puede dejar estos establecidos en **Any**.
+   Los filtros predeterminados precargados se muestran en la parte superior de la página del conjunto de revisión. Puede dejar estos establecidos en **Cualquiera**.
 
 2. Haga **clic en** Filtros para mostrar la **página** desplegable Filtros.
 
-3. Expanda la **sección & de codificación predictiva** de Analytics para mostrar un conjunto de filtros.
+3. Expanda la **sección & de codificación predictiva de Analytics** para mostrar un conjunto de filtros.
 
       ![Filtro de puntuación de predicción en la & de codificación predictiva de Analytics.](..\media\PredictionScoreFilter1.png)
 
-   La convención de nomenclatura para los filtros de puntuación de predicción es **Puntuación de predicción (nombre del modelo).** Por ejemplo, el nombre del filtro de puntuación de predicción de un modelo denominado **Modelo A** es **Puntuación de predicción (modelo A).**
+   La convención de nomenclatura para los filtros de puntuación de predicción es **Puntuación de predicción (nombre del modelo)**. Por ejemplo, el nombre del filtro de puntuación de predicción de un modelo denominado **Modelo A** es **Puntuación de predicción (modelo A).**.
 
-4. Seleccione el filtro de puntuación de predicción que desea usar y, a continuación, haga clic **en Listo**.
+4. Seleccione el filtro de puntuación de predicción que desea usar y, a continuación, haga clic en **Listo**.
 
-5. En la página conjunto de revisión, haga clic en el desplegable del filtro de puntuación de predicción y escriba los valores mínimos y máximos para el intervalo de puntuación de predicción. Por ejemplo, la siguiente captura de pantalla muestra un intervalo de puntuación de predicción entre **.5** y **1,0**.
+5. En la página conjunto de revisión, haga clic en el desplegable del filtro de puntuación de predicción y escriba los valores mínimos y máximos para el intervalo de puntuación de predicción. Por ejemplo, la siguiente captura de pantalla muestra un intervalo de puntuación de predicción entre **.5** y **1.0**.
 
    ![Valores mínimos y máximos para el filtro de puntuación de predicción.](..\media\PredictionScoreFilter2.png)
 
@@ -103,7 +103,7 @@ Después de realizar la concesión de una ronda de aprendizaje, puede aplicar el
 
   Se muestra una lista de documentos con una puntuación de predicción dentro del intervalo especificado en la página del conjunto de revisión.
 
-Para obtener instrucciones más detalladas, vea [Apply a prediction filter to a review set](predictive-coding-apply-prediction-filter.md).
+Para obtener instrucciones más detalladas, vea [Aplicar un filtro de predicción a un conjunto de revisión](predictive-coding-apply-prediction-filter.md).
 
 ## <a name="step-4-perform-more-training-rounds"></a>Paso 4: Realizar más rondas de aprendizaje
 

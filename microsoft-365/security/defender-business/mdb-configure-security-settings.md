@@ -17,17 +17,17 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 4fbc4dc4b5b8628b075d5e6d5a91f760e322a6cf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c943841a89acb7052f63ba76898e9b23e5dc3b4c
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329815"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449504"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Ver y editar las directivas de seguridad y la configuración en Microsoft Defender para empresas
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
+> Microsoft Defender para empresas se está implementando [para Microsoft 365 Empresa Premium](../../business-premium/index.md) clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
@@ -147,7 +147,7 @@ En la tabla siguiente se describe la configuración para ver (y, si es necesario
 | **Centro de seguridad** | **Zona horaria** | Seleccione la zona horaria que se usará para las fechas y horas mostradas en incidentes, amenazas detectadas e investigación automatizada & corrección. Puede usar UTC o la zona horaria local (*recomendado*).  |
 | **Microsoft 365 Defender** | **Account** | Ver detalles, como dónde se almacenan los datos, el identificador de inquilino y el identificador de la organización (organización). |
 | **Microsoft 365 Defender**  | **Versión preliminar de las características**  | Activa las características de vista previa para probar las próximas características y nuevas funcionalidades. Puede ser uno de los primeros en obtener una vista previa de las nuevas características y proporcionar comentarios. |
-| **Puntos de conexión**  | **Notificaciones de correo electrónico** | Configurar o editar las reglas de notificación de correo electrónico. Cuando se detectan vulnerabilidades o se crea una alerta, los destinatarios especificados en las reglas de notificación de correo electrónico recibirán un correo electrónico. [Obtenga más información sobre las notificaciones por correo electrónico](mdb-email-notifications.md). |
+| **Puntos de conexión**  | **Notificaciones por correo electrónico** | Configurar o editar las reglas de notificación de correo electrónico. Cuando se detectan vulnerabilidades o se crea una alerta, los destinatarios especificados en las reglas de notificación de correo electrónico recibirán un correo electrónico. [Obtenga más información sobre las notificaciones por correo electrónico](mdb-email-notifications.md). |
 | **Puntos de conexión**   | **Administración de dispositivos** >  **Incorporación** | Incorporar dispositivos a Defender para empresas mediante un script descargable. Para obtener más información, consulta [Incorporación de dispositivos a Microsoft Defender para empresas](mdb-onboard-devices.md).   |  
 | **Puntos de conexión**  |  **Administración de dispositivos** >  **Offboarding** | Dispositivos offboard (quitar) de Defender para empresas. Al salir de un dispositivo, ya no envía datos a Defender para empresas, pero los datos recibidos antes de la salida se conservan. Para obtener más información, consulta [Offboarding a device](mdb-onboard-devices.md#offboarding-a-device).  |
 
@@ -160,7 +160,7 @@ En la tabla siguiente se describe la configuración para ver (y, si es necesario
 3. En la lista de opciones, seleccione un elemento para ver o editar.
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Continúe con una o varias de las siguientes tareas:
 

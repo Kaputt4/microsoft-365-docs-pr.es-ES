@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 24158e4a9da9ce48382f08b6dbe701c5640972d4
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: b9a083404da3ad4edc3ccf2f88e1c459dc6f08e2
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321320"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450568"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
@@ -77,11 +77,11 @@ Las siguientes son las direcciones URL del portal de Microsoft Defender para pun
 |Tipo de cliente|Portal URL|
 |---|---|
 |GCC|<https://security.microsoft.com>|
-|GCC High|<https://securitycenter.microsoft.us>|
-|DoD|<https://securitycenter.microsoft.us>|
+|GCC High|<https://security.microsoft.us>|
+|DoD|<https://security.microsoft.us>|
 |
 > [!NOTE]
-> Si es un cliente GCC y en el proceso de pasar de Microsoft Defender para endpoint comercial a GCC, https://transition.security.microsoft.com use para obtener acceso a los datos comerciales de Microsoft Defender para endpoint.
+> Si es un cliente GCC y en el proceso de pasar de Microsoft Defender para endpoint comercial a GCC, https://transition.security.microsoft.com use para obtener acceso a los datos comerciales de Microsoft Defender para Endpoint.
 
 ## <a name="endpoint-versions"></a>Versiones de extremo
 
@@ -127,7 +127,7 @@ iOS|![No.](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg)
 >
 > <sup>2</sup> Obtenga información sobre la [solución moderna unificada para Windows 2016 y 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview). Si ya ha incorporado los servidores con MMA, siga las instrucciones que se proporcionan en [Migración](server-migration.md) de servidores para migrar a la nueva solución.
 >
-> <sup>3</sup> Cuando use [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) deberá elegir "Azure US Government" en "Azure Cloud" si usa el asistente para la [instalación, o](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) si usa una línea de comandos o un [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation): establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1. <br /> La versión mínima compatible con MMA es 10.20.18029 (marzo de 2020).
+> <sup>3</sup> Cuando use [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) deberá elegir "Azure US Government" en "Azure Cloud" si usa el asistente para la [instalación, o](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) si usa una línea de comandos o un [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation): establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1.[](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) <br /> La versión mínima compatible con MMA es 10.20.18029 (marzo de 2020).
 
 ### <a name="os-versions-when-using-microsoft-defender-for-servers"></a>Versiones del sistema operativo al usar Microsoft Defender para servidores
 
@@ -142,7 +142,7 @@ Versión del sistema operativo|GCC|GCC High|DoD
 Windows Server 2022|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2019|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2016|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows Server 2012 R2|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 |
 
@@ -154,7 +154,7 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 
 |Hoja de cálculo de la lista de dominios| Descripción|
 |---|---|
-| Lista de direcciones URL de punto de conexión de Microsoft Defender para clientes de Gov/GCC/DoD | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sos para clientes gov/GCC/DoD. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+| Lista de direcciones URL de Punto de conexión de Microsoft Defender para clientes de Gov/GCC/DoD | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sos para clientes gov/GCC/DoD. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 Para obtener más información, consulte [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
@@ -191,6 +191,6 @@ Estas son las diferencias conocidas:
 |Nombre de la característica|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
 |Evaluaciones de red|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
-|Detección de redes|![Sí](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
-|Informes: Reducción de superficie de ataque, Control de dispositivos, Estado del dispositivo, Firewall|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
+|Detección de redes|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|
+|Informes: Control de dispositivos, Estado del dispositivo, Firewall|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|
 |Filtrado de contenido web|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|![No](images/svg/check-no.svg) En desarrollo|

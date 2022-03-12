@@ -15,51 +15,53 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: b4606eb25f2cea9c18db8c13beba0e107d0e7950
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 63107c50c081eef65e0a56417845b470cc0a294a
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167027"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449740"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Ver y organizar la cola de alertas de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-alertsq-abovefoldlink)
 
-La **cola De alertas** muestra una lista de alertas marcadas desde dispositivos de la red. De forma predeterminada, la cola muestra alertas vistas en los últimos 30 días en una vista agrupada. Las alertas más recientes se muestran en la parte superior de la lista, lo que le ayudará a ver primero las alertas más recientes.
+Las **alertas** muestran una lista de alertas que se marcaron desde dispositivos de la red. Las alertas más recientes se muestran en la parte superior de la lista, lo que le ayudará a ver primero las alertas más recientes.
 
 > [!NOTE]
-> La cola de alertas se reduce considerablemente con la investigación automatizada y la corrección, lo que permite a los expertos en operaciones de seguridad centrarse en amenazas más sofisticadas y otras iniciativas de alto valor. Cuando una alerta contiene una entidad compatible para la investigación automatizada (por ejemplo, un archivo) en un dispositivo que tiene un sistema operativo compatible, se puede iniciar una investigación y corrección automatizadas. Para obtener más información sobre las investigaciones automatizadas, vea [Overview of Automated investigations](automated-investigations.md).
+> Las alertas se reducen considerablemente con la investigación automatizada y la corrección, lo que permite a los expertos en operaciones de seguridad centrarse en amenazas más sofisticadas y otras iniciativas de alto valor. Cuando una alerta contiene una entidad compatible para la investigación automatizada (por ejemplo, un archivo) en un dispositivo que tiene un sistema operativo compatible, se puede iniciar una investigación y corrección automatizadas. Para obtener más información sobre las investigaciones automatizadas, vea [Overview of Automated investigations](automated-investigations.md).
 
-Hay varias opciones entre las que puede elegir para personalizar la vista de cola de alertas.
+Hay varias opciones entre las que puede elegir para personalizar la vista de alertas.
 
 En la navegación superior puede:
 
-- Seleccionar vista agrupada o vista de lista
 - Personalizar columnas para agregar o quitar columnas
-- Seleccionar los elementos que se mostrarán por página
-- Navegar entre páginas
 - Aplicar filtros
+- Mostrar las alertas para una duración determinada como 1 día, 3 días, 1 semana, 30 días y 6 meses
+- Exportar la lista de alertas a Excel
+- Administrar alertas
 
-![Imagen de la cola de alertas.](images/alerts-queue-list.png)
+:::image type="content" source="images/alerts-filters.png" alt-text="Imagen de lista de alertas" lightbox="images/alerts-filters.png":::
 
-## <a name="sort-filter-and-group-the-alerts-queue"></a>Ordenar, filtrar y agrupar la cola de alertas
+## <a name="sort-and-filter-alerts"></a>Ordenar y filtrar alertas 
 
 Puede aplicar los siguientes filtros para limitar la lista de alertas y obtener una vista más centrada de las alertas.
 
 ### <a name="severity"></a>Severity
 
-Gravedad de alerta|Description
----|---
-Alto <br> (Rojo)|Alertas que se ven comúnmente asociadas con amenazas persistentes avanzadas (APT). Estas alertas indican un alto riesgo debido a la gravedad del daño que pueden causar en los dispositivos. Algunos ejemplos son: actividades de herramientas de robo de credenciales, actividades de ransomware no asociadas con ningún grupo, manipulación de sensores de seguridad o cualquier actividad malintencionada indicativa de un adversario humano.
-Medio <br> (Naranja)|Alertas de detección y respuesta de puntos de conexión comportamientos posteriores a la infracción que pueden formar parte de una amenaza persistente avanzada (APT). Esto incluye comportamientos observados típicos de fases de ataque, cambios anómalos en el Registro, ejecución de archivos sospechosos, etc. Aunque algunos podrían formar parte de las pruebas de seguridad interna, requiere investigación, ya que también puede ser parte de un ataque avanzado.
-Bajo <br> (Amarillo)|Alertas sobre amenazas asociadas con malware frecuente. Por ejemplo, herramientas de piratería, herramientas de piratería no malware, como ejecutar comandos de exploración, borrar registros, etc., que a menudo no indican una amenaza avanzada dirigida a la organización. También podría venir de una prueba de herramienta de seguridad aislada por un usuario de la organización.
-Informativo <br> (Gris)|Alertas que podrían no considerarse nocivas para la red, pero que pueden aumentar el conocimiento de la seguridad de la organización en posibles problemas de seguridad.
+Puede filtrar las alertas en función de su gravedad.  
+
+|Gravedad de alerta|Descripción|
+|---|---|
+|Alto <br> (Rojo)|Alertas que se ven comúnmente asociadas con amenazas persistentes avanzadas (APT). Estas alertas indican un alto riesgo debido a la gravedad del daño que pueden causar en los dispositivos. Algunos ejemplos son: actividades de herramientas de robo de credenciales, actividades de ransomware no asociadas con ningún grupo, manipulación de sensores de seguridad o cualquier actividad malintencionada indicativa de un adversario humano.|
+|Medio <br> (Naranja)|Alertas de detección y respuesta de puntos de conexión comportamientos posteriores a la infracción que podrían formar parte de una amenaza persistente avanzada (APT). Esto incluye comportamientos observados típicos de fases de ataque, cambios anómalos en el Registro, ejecución de archivos sospechosos, etc. Aunque algunos podrían formar parte de las pruebas de seguridad interna, requiere investigación, ya que también puede ser parte de un ataque avanzado.|
+|Bajo <br> (Amarillo)|Alertas sobre amenazas asociadas con malware frecuente. Por ejemplo, herramientas de piratería, herramientas de piratería no malware, como ejecutar comandos de exploración, borrar registros, etc., que a menudo no indican una amenaza avanzada dirigida a la organización. También podría venir de una prueba de herramienta de seguridad aislada por un usuario de la organización.|
+|Informativo <br> (Gris)|Alertas que podrían no considerarse nocivas para la red, pero que pueden aumentar el conocimiento de la seguridad de la organización en posibles problemas de seguridad.|
 
 #### <a name="understanding-alert-severity"></a>Descripción de la gravedad de la alerta
 
@@ -71,83 +73,68 @@ La gravedad de la alerta defender para el extremo representa la gravedad del com
 
 Por ejemplo:
 
-- La gravedad de una alerta de Defender for Endpoint sobre una amenaza Antivirus de Microsoft Defender detectada que se evitó por completo y no infectó el dispositivo se clasifica como "Informativo" porque no hubo ningún daño real.
+- La gravedad de una alerta de Defender for Endpoint sobre una amenaza Antivirus de Microsoft Defender detectada que se impidió por completo y no infectó el dispositivo se clasifica como "Informativo" porque no hubo ningún daño real.
 - Una alerta sobre un malware comercial que se detectó durante la ejecución, pero bloqueada y subsanada por Microsoft Defender AV, se clasifica como "Baja" porque puede haber causado algún daño en el dispositivo individual, pero no representa ninguna amenaza organizativa.
 - Una alerta sobre malware detectado durante la ejecución que puede suponer una amenaza no solo para el dispositivo individual, sino para la organización, independientemente de si finalmente se bloqueó, puede clasificarse como "Mediana" o "Alta".
 - Las alertas de comportamiento sospechosas, que no se han bloqueado o corregido, se clasificarán como "Baja", "Media" o "Alta" siguiendo las mismas consideraciones de amenazas organizativas.
 
-#### <a name="understanding-alert-categories"></a>Descripción de las categorías de alertas
-
-Hemos redefinido las categorías de alertas para alinearlas con las [tácticas](https://attack.mitre.org/tactics/enterprise/) de ataque empresarial en la matriz DE [ATT de MITRE&CK](https://attack.mitre.org/). Los nuevos nombres de categoría se aplican a todas las alertas nuevas. Las alertas existentes conservarán los nombres de categoría anteriores.
-
-En la tabla siguiente se enumeran las categorías actuales y cómo se asignan generalmente a categorías anteriores.
-
-|Nueva categoría|Nombre de categoría api|Componente o actividad de amenazas detectadas|
-|---|---|---|
-|Colección|Colección|Localización y recopilación de datos para la exfiltración.|
-|Comando y control|CommandAndControl|Conectarse a una infraestructura de red controlada por el atacante para retransmitir datos o recibir comandos.|
-|Acceso a credenciales|CredentialAccess|Obtener credenciales válidas para extender el control sobre los dispositivos y otros recursos de la red.|
-|Evasión de defensa|DefenseEvasion|Evitando controles de seguridad, por ejemplo, desactivando aplicaciones de seguridad, eliminando implantes y ejecutando rootkits.|
-|Descubrimiento|Descubrimiento|Recopilación de información sobre dispositivos y recursos importantes, como equipos de administrador, controladores de dominio y servidores de archivos.|
-|Ejecución|Ejecución|Iniciar herramientas de atacante y código malintencionado, incluidos LOS RAT y puertas traseras.|
-|Filtración|Filtración|Extraer datos de la red a una ubicación externa controlada por atacantes.|
-|Exploit|Exploit|Código de vulnerabilidad y posible actividad de explotación.|
-|Acceso inicial|InitialAccess|Obtener una entrada inicial a la red de destino, normalmente implicando la suposición de contraseñas, vulnerabilidades de seguridad o correos electrónicos de suplantación de identidad.|
-|Movimiento lateral|LateralMovement|Mover entre dispositivos de la red de destino para alcanzar recursos críticos o obtener persistencia de red.|
-|Malware|Malware|Puertas traseras, troyanos y otros tipos de código malintencionado.|
-|Persistencia|Persistencia|Creación de puntos de extensibilidad de inicio automático (ASEP) para permanecer activo y sobrevivir a los reinicios del sistema.|
-|Escalamiento de privilegios|PrivilegeEscalation|Obtener niveles de permisos más altos para el código ejecutándose en el contexto de un proceso o cuenta con privilegios.|
-|Ransomware|Ransomware|Malware que cifra archivos y extorsiona el pago para restaurar el acceso.|
-|Actividad sospechosa|SuspiciousActivity|Actividad atípica que podría ser actividad de malware o parte de un ataque.|
-|Software no deseado|UnwantedSoftware|Aplicaciones y aplicaciones de baja reputación que afectan a la productividad y a la experiencia del usuario; detectados como aplicaciones potencialmente no deseadas (PUA).|
-
 ### <a name="status"></a>Estado
 
-Puede elegir limitar la lista de alertas en función de su estado.
+Puede elegir filtrar la lista de alertas en función de su estado.
 
-### <a name="investigation-state"></a>Estado de investigación
+### <a name="categories"></a>Categorías
 
-Corresponde al estado de investigación automatizada.
+Hemos redefinido las categorías de alertas para alinearlas con las [tácticas](https://attack.mitre.org/tactics/enterprise/) de ataque empresarial en la [matriz DE ATT&MITRE](https://attack.mitre.org/). Los nuevos nombres de categoría se aplican a todas las alertas nuevas. Las alertas existentes conservarán los nombres de categoría anteriores.
 
-### <a name="category"></a>Categoría
+### <a name="service-sources"></a>Orígenes del servicio
 
-Puede elegir filtrar la cola para mostrar tipos específicos de actividad malintencionada.
+Expertos en amenazas de Microsoft los participantes de vista previa ahora pueden filtrar y ver las detecciones del nuevo servicio de búsqueda administrado por expertos en amenazas.
 
-### <a name="assigned-to"></a>Asignado a
+Filtre las alertas en función de los siguientes orígenes de servicio:
 
-Puede elegir entre mostrar las alertas que se le han asignado o la automatización.
-
-### <a name="detection-source"></a>Origen de detección
-
-Seleccione el origen que desencadenó la detección de alertas. Expertos en amenazas de Microsoft los participantes de vista previa ahora pueden filtrar y ver detecciones desde el nuevo servicio de búsqueda administrado por expertos en amenazas.
+- Microsoft Defender for Identity
+- Microsoft Defender for Cloud Apps
+- Microsoft Defender para punto de conexión
+- Microsoft 365 Defender
+- Microsoft Defender para Office 365
+- Gobierno de aplicaciones
+- AAD identity protection
 
 > [!NOTE]
 > El filtro Antivirus solo aparecerá si los dispositivos usan Antivirus de Microsoft Defender como el producto antimalware de protección en tiempo real predeterminado.
 
-|Origen de detección|Valor de API|
-|---|---|
-|Sensores de terceros|ThirdPartySensors|
-|Antivirus|WindowsDefenderAv|
-|Investigación automatizada|AutomatedInvestigation|
-|Detección personalizada|CustomDetection|
-|TI personalizada|CustomerTI|
-|EDR|WindowsDefenderAtp|
-|Microsoft 365 Defender|MTP|
-|Microsoft Defender para Office 365|OfficeATP|
-|Expertos en amenazas de Microsoft|ThreatExperts|
-|SmartScreen|WindowsDefenderSmartScreen|
+### <a name="tags"></a>Etiquetas
 
-### <a name="os-platform"></a>Plataforma del sistema operativo
+Puede filtrar las alertas en función de las etiquetas asignadas a las alertas.
 
-Limite la vista de cola de alertas seleccionando la plataforma del sistema operativo que le interesa investigar.
+### <a name="policy"></a>Directiva 
 
-### <a name="device-group"></a>Grupo de dispositivos
+Puede filtrar las alertas en función de las siguientes directivas:
 
-Si tienes grupos de dispositivos específicos que te interesan comprobar, puedes seleccionar los grupos para limitar la vista de cola de alertas.
+- Actividad desde países o regiones poco frecuentes
+- Resultado del envío de administrador completado
+- Investigación manual de correo electrónico desencadenada por el administrador
+- Investigación de compromiso de usuario desencadenada por el administrador
+- Token anómalo 
+- Viajes atípicos
+- Creación de una regla de reenvío o redirección
+- Mensajes de correo electrónico que contienen direcciones URL malintencionadas quitados después de la entrega
+- Mensajes de correo electrónico que contienen archivos malintencionados quitados después de la entrega
+- Correo electrónico notificado por el usuario como malware o cebo
+- Password Spray
+- Acción de corrección realizada por el administrador en correos electrónicos, dirección URL o remitente
+- Creación de servicios sospechosos 
+- Propiedades de inicio de sesión desconocidas
 
-### <a name="associated-threat"></a>Amenaza asociada
+### <a name="entities"></a>Entidades
 
-Use este filtro para centrarse en las alertas relacionadas con amenazas de perfil alto. Puede ver la lista completa de amenazas de alto perfil en [Análisis de amenazas.](threat-analytics.md)
+Puede filtrar las alertas según el nombre de la entidad o el identificador. 
+
+### <a name="automated-investigation-state"></a>Estado de investigación automatizada
+
+Puede elegir filtrar las alertas en función de su estado de investigación automatizada.
+
+
 
 ## <a name="related-topics"></a>Temas relacionados
 

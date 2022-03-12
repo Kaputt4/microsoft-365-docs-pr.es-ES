@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f78f5e78067b3d8273d0ca9a3c7474eef66ed4fb
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 6fb3141b33948c5c452096c83a2f02657c199575
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301095"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450554"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Programar una actualización de Microsoft Defender para punto de conexión (Linux)
 
@@ -92,7 +92,7 @@ CRON_TZ=America/Los_Angeles
 > #<a name="rhel-and-variants-centos-and-oracle-linux"></a>! RHEL y variantes (CentOS y Oracle Linux)
 >
 > ```bash
-> 0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp >> ~/mdatp_cron_job.log
+> 0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp -y >> ~/mdatp_cron_job.log
 > ```
 
 > #<a name="sles-and-variants"></a>! SLES y variantes
@@ -108,11 +108,11 @@ CRON_TZ=America/Los_Angeles
 > ```
 
 > [!NOTE]
-> En los ejemplos anteriores, lo establecemos en 00 minutos, 6 a.m. (hora en formato de 24 horas), cualquier día del mes, cualquier mes, los domingos. [$(date + d) -le 15] == No se ejecutará a menos que sea igual o menor que el \% día 15 (3ª semana). Lo que significa que se ejecutará cada tres domingos (7) del mes a las 6:00 a.m. Pacífico (UTC -8).
+> En los ejemplos anteriores, lo establecemos en 00 minutos, 6 a.m. (hora en formato de 24 horas), cualquier día del mes, cualquier mes, los domingos. [$(date +\%d) -le 15] == No se ejecutará a menos que sea igual o menor que el día 15 (3ª semana). Lo que significa que se ejecutará cada tres domingos (7) del mes a las 6:00 a.m. Pacífico (UTC -8).
 
 Presione "Esc"
 
-Escriba " `:wq` " con las comillas dobles.
+Escriba "`:wq`" con las comillas dobles.
 
 > [!NOTE]
 > w == write, q == quit
@@ -127,7 +127,7 @@ Para inspeccionar las ejecuciones del trabajo cron:
 sudo grep mdatp /var/log/cron
 ```
 
-Para inspeccionar el archivo mdatp_cron_job.log
+Para inspeccionar el mdatp_cron_job.log
 
 ```bash
 sudo nano mdatp_cron_job.log

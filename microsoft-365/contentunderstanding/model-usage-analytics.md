@@ -1,5 +1,5 @@
 ---
-title: Documentación sobre el análisis de modelos en Microsoft SharePoint Syntex.
+title: Analizar cómo se usan los modelos en Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo buscar y usar el análisis de uso para un modelo de comprensión de documentos.
-ms.openlocfilehash: 3dd77f760f70812045841ab56afbb13b02044d91
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga más información sobre cómo funcionan los modelos de procesamiento de formularios y descripción de documentos.
+ms.openlocfilehash: ddd4d602deae0fb871989e4739470a19b97b0238
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201762"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450526"
 ---
-# <a name="document-understanding-model-usage-analytics-in-microsoft-sharepoint-syntex"></a>Documentación sobre el análisis de modelos en Microsoft SharePoint Syntex.
+# <a name="analyze-how-your-models-are-used-in-microsoft-sharepoint-syntex"></a>Analizar cómo se usan los modelos en Microsoft SharePoint Syntex
 
 </br>
 
