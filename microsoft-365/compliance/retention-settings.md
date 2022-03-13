@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: decf8f53f30c7f29636e50900fe994aae25e6552
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2fd9f2655b13d8c9ac829108d3563a6a4322f3bc
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326991"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449251"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -127,7 +127,7 @@ Específicamente para los sitios de SharePoint, es posible que se necesite una c
     
     - Para ámbitos de **sitios de SharePoint**, use Lenguaje de consulta de palabras clave (KQL). Es posible que ya esté familiarizado con el uso de KQL para búsquedas en SharePoint mediante propiedades de sitio indexadas. Para ayudarle a especificar estas consultas KQL, vea [Referencia de sintaxis del lenguaje de consulta de palabras clave (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
         
-        Por ejemplo, dado que los ámbitos de los sitios de SharePoint incluyen automáticamente todos los tipos de sitio de SharePoint, que incluyen sitios de OneDrive y conectados a grupos de Microsoft 365, puede usar la propiedad de sitio indexado **SiteTemplate** para incluir o excluir tipos de sitio específicos. Las plantillas que puede especificar:
+        Por ejemplo, dado que los ámbitos de los sitios de SharePoint incluyen todos los tipos de sitio de SharePoint de manera automática, que incluyen sitios de OneDrive y sitios conectados a grupos de Microsoft 365, puede usar la propiedad de sitio indexado **SiteTemplate** para incluir o excluir tipos de sitio específicos. Las plantillas que puede especificar:
         - SITEPAGEPUBLISHING para sitios de comunicación modernos
         - GROUP para sitios conectados a grupos de Microsoft 365
         - TEAMCHANNEL para sitios de canal privado de Microsoft Teams
@@ -367,6 +367,14 @@ Ejemplos:
 Al final del período de retención, usted elige si desea que el contenido se elimine de forma permanente:
 
 ![Página de configuración de retenciones.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+
+Antes de configurar la retención, familiarícese primero con los límites de capacidad y almacenamiento de las cargas de trabajo correspondientes:
+
+- Para SharePoint y OneDrive, los elementos retenidos se almacenan en la biblioteca de conservación de documentos del sitio, que se incluye en la cuota de almacenamiento del sitio. Para obtener más información, consulte [Administrar los límites de almacenamiento del sitio](/sharepoint/manage-site-collection-storage-limits) de la documentación de SharePoint.
+
+- Para Exchange, Teams y Yammer, donde los mensajes retenidos se almacenan en buzones, consulte [límites de Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) y habilite [archivo de expansión automática](autoexpanding-archiving.md).
+    
+    En casos extremos en los que un gran volumen de correo electrónico se elimina en un breve período, ya sea por parte de los usuarios o desde la configuración de directiva de manera automática, es posible que también necesite configurar Exchange para mover con más frecuencia elementos de la carpeta Elementos recuperables del buzón principal del usuario a la carpeta Elementos recuperables en su buzón de archivo. Para obtener instrucciones paso a paso, consulte [Aumentar la cuota de elementos recuperables para buzones de correo en suspensión](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
 
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>Eliminar el contenido que supera una antigüedad determinada
 
