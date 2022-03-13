@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: ab47315fe56124f54b1404ceebc015a715eb74ee
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 166905abb1dc08bcf9fe34e80c3ff3f44813501b
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419324"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63449812"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -311,15 +311,17 @@ En todos los casos, los archivos coincidentes se etiquetan hasta que la cuenta d
 
 5. En la página **Cambiar el nombre de la directiva de etiquetado automático**: proporcione un nombre único y, opcionalmente, una descripción que ayude a identificar la etiqueta aplicada automáticamente, las ubicaciones y las condiciones que identifican el contenido que se va a etiquetar.
 
-6. En la página **Elegir ubicaciones en las que quiere aplicar la etiqueta**: seleccione y especifique las ubicaciones de Exchange, SharePoint y OneDrive. Si no desea mantener el valor predeterminado de **Todo** para las ubicaciones elegidas, seleccione el vínculo para elegir las instancias específicas que desea incluir o seleccione el vínculo para elegir las instancias específicas que desea excluir. Después, seleccione **Siguiente**.
+6. En la página **Elegir ubicaciones en las que quiere aplicar la etiqueta**: seleccione y especifique las ubicaciones de Exchange, SharePoint y OneDrive. Si no desea mantener el valor predeterminado de **Todo** incluido para las ubicaciones elegidas, seleccione el enlace para elegir instancias específicas para incluir o seleccione el enlace para elegir las instancias específicas para excluir. Después, seleccione **Siguiente**.
 
     ![Página Elegir ubicaciones para la configuración de etiquetado automático.](../media/locations-auto-labeling-wizard.png)
     
-    Obtener más información sobre las ubicaciones:
+    Si cambia la configuración predeterminada mediante **Incluido** o **Excluido**:
     
-    - Si elige **Exchange** y desea etiquetar el correo electrónico entrante desde fuera de su organización, debe mantener el valor predeterminado de **Todos** incluido. Para que esta configuración esté en el ámbito de usuarios específicos de la organización, elija **Reglas avanzadas** en el paso siguiente. A continuación, configure las condiciones para incluir destinatarios específicos en su organización para lograr el requisito de ámbito para un subconjunto de usuarios.
+    - Para la ubicación de **Exchange**, la directiva se aplica según la dirección del remitente de los destinatarios especificados. La mayoría de las veces, querrá mantener el valor predeterminado de **Todo** incluido con **Ninguno** excluido. Esta configuración es adecuada incluso si está probando un subconjunto de usuarios. En lugar de especificar aquí el subconjunto de usuarios, use las reglas avanzadas del paso siguiente para configurar las condiciones para incluir o excluir destinatarios en su organización. De lo contrario, al cambiar la configuración predeterminada aquí:
+        -  Si cambia el valor predeterminado de **Todo** incluido y, en su lugar, elige usuarios o grupos específicos, el correo electrónico enviado desde fuera de la organización estará exento de la directiva. 
+        -  Si mantiene el valor predeterminado de **Todo** incluido, pero especifica usuarios o grupos que excluir, el correo electrónico que envíen estos usuarios excluidos estará exento de la directiva, pero no del correo electrónico que reciban.
     
-    - Para especificar cuentas individuales de OneDrive, vea [Obtener una lista de las direcciones URL de OneDrive de todos los usuarios de su organización](/onedrive/list-onedrive-urls).
+    - Para las cuentas de OneDrive, consulte [Obtener una lista de todas las direcciones URL de OneDrive de usuarios de su organización](/onedrive/list-onedrive-urls) para ayudarle a especificar cuentas individuales de OneDrive que se incluirán o excluirán.
 
 7. Para la página **Configurar reglas comunes o avanzadas**: mantenga el valor predeterminado de las **Reglas comunes** para definir reglas que identifiquen el contenido que se va a etiquetar en todas las ubicaciones seleccionadas. Si necesita reglas diferentes por ubicación, incluidas más opciones para Exchange, seleccione **Reglas avanzadas**. Luego, seleccione **Siguiente**.
 

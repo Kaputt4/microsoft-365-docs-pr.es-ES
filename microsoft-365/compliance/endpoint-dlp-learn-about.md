@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'La Prevención de pérdida de datos en punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y de las acciones de protección de estos archivos en los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento '
-ms.openlocfilehash: 7d8bc4dcb9d2852894ca838d88ae8ff2f5226298
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+description: 'La prevención de pérdida de datos de punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y las acciones de protección de esos archivos a los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento '
+ms.openlocfilehash: 83608f005b9024583142515094b2d958b8f5d915
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271567"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63450350"
 ---
-# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión
+# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la Prevención de pérdida de datos de Microsoft 365 de punto de conexión
 
-Puede usar la prevención de pérdida de datos (DLP) de Microsoft 365 para supervisar las acciones que se realizan en elementos que ha determinado que son confidenciales y para ayudar a evitar el uso compartido accidental de estos elementos. Para más información sobre DLP en punto de conexión de Microsoft, consulte [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md).
+Puede usar la prevención de pérdida de datos (DLP) de Microsoft 365 para supervisar las acciones que se realizan en los elementos que ha determinado que son confidenciales y para ayudar a evitar el uso compartido involuntario de esos elementos. Para obtener más información sobre la DLP, vea [Obtener información sobre la prevención de pérdida de datos](dlp-learn-about-dlp.md).
 
 **La Prevención de pérdida de datos en puntos finales** (DLP para punto de conexión) amplía las capacidades de supervisión y protección de la actividad de DLP a los elementos sensibles almacenados físicamente en dispositivos Windows 10, Windows 11 y macOS (Catalina 10.15 y superior). Una vez que los dispositivos están incorporados en las soluciones del Centro de cumplimiento de Microsoft 365, la información sobre las acciones de los usuarios relacionadas con los elementos confidenciales se hace visible en el[explorador de actividades](data-classification-activity-explorer.md), y se pueden aplicar acciones de protección a estos elementos mediante [directivas DLP](create-test-tune-dlp-policy.md).
 
@@ -81,8 +81,33 @@ Si solo quiere supervisar los datos de las coincidencias de directivas, puede de
 > [!TIP]
 > Para asegurarse de que las actividades se auditan para todos los tipos de archivo admitidos, cree una [ directiva DLP personalizada](create-test-tune-dlp-policy.md).
 
-
 DLP en punto de conexión supervisa la actividad basada en un tipo de extensiones multipropósito de correo Internet (MIME), por lo que las actividades se capturan incluso si se cambia la extensión de archivo.
+
+### <a name="file-types-preview"></a>Tipos de archivo (versión preliminar)
+
+Los tipos de archivo son una agrupación de formatos de archivo que se usan para proteger flujos de trabajo o áreas de negocio específicos. Puede usar uno o varios tipos de archivo como condiciones en las directivas DLP.
+
+|Tipo de archivo |Aplicación  |extensiones de archivo supervisadas  |
+|---------|---------|---------|
+|procesamiento de texto |Word, PDF | .doc, .docx, .docm, .dot, .dotx, .dotm, .docb, .pdf |
+|hoja de cálculo    |Excel, CSV, TSV |.xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .csv, .tsv         |
+|presentación |PowerPoint|.ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx|
+|archivar  |herramientas de compresión y archivo de archivos | .zip, .zipx, .rar, .7z, .tar, .gz        |
+|correo electrónico    |Outlook |.pst, .ost, .msg         |
+
+### <a name="file-extensions-preview"></a>Extensiones de archivo (versión preliminar)
+
+Si los tipos de archivo no cubren las extensiones de archivo que necesita enumerar como una condición en una directiva, puede usar extensiones de archivo separadas por comas en su lugar.
+
+> [!IMPORTANT]
+> Las opciones de extensiones de archivo y tipos de archivo no se pueden usar como condiciones en la misma regla. Si desea usarlas como condiciones en la misma directiva, deben estar en reglas independientes. 
+
+> [!IMPORTANT]
+> Estas versiones de Windows admiten tipos de archivo y características de extensión de archivo:
+>- Windows 10 versiones 20H1/20H2/21H1 (KB 5006738)
+>- Windows 10 versiones 19H1/19H2 (KB 5007189)
+>- Windows 10 RS5 (KB 5006744)
+
 
 ## <a name="whats-different-in-endpoint-dlp"></a>¿Qué es diferente en DLP en punto de conexión?
 
