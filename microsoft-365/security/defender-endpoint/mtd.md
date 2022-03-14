@@ -17,18 +17,19 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ce5d8fcf693b6586c134b8fe2381d3881e68d9d3
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 07cd42d1ab1c6b945525b1e9ed4b463ee76376e1
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767617"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468940"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender para endpoint- Mobile Threat Defense
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -58,7 +59,7 @@ Todas estas funcionalidades están disponibles para microsoft defender para los 
 
 ## <a name="overview-and-deploy"></a>Introducción e implementación
 
-La implementación de Microsoft Defender para endpoint en dispositivos móviles se puede realizar mediante Microsoft Endpoint Manager (MEM). Vea este vídeo para obtener una introducción rápida a las funciones e implementación de MTD:
+La implementación de Microsoft Defender para endpoint en dispositivos móviles se puede realizar Microsoft Endpoint Manager (MEM). Vea este vídeo para obtener una introducción rápida a las funciones e implementación de MTD:
 
 <br/>
 
@@ -83,7 +84,7 @@ En la tabla siguiente se resume cómo implementar Microsoft Defender para endpoi
 |Tipo de inscripción     |Detalles      |
 |--------------------|-------------|
 |Dispositivos supervisados con Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|1. [Implementar como aplicación de la tienda iOS](ios-install.md)<br/>2. [Configurar Web Protection sin VPN para dispositivos iOS supervisados](ios-install.md#complete-deployment-for-supervised-devices)|
-|Dispositivos no supervisados (BYOD) inscritos con Intune UEM (Microsoft Endpoint Manager)|[Implementar como aplicación de la tienda iOS](ios-install.md)|
+|Dispositivos sin supervisión (BYOD) inscritos en Intune UEM (Microsoft Endpoint Manager)|[Implementar como aplicación de la tienda iOS](ios-install.md)|
 |Dispositivos BYOD O no administrados por otros UEMs / Directiva de protección de aplicaciones de instalación (MAM)|[Configurar señales de riesgo de Defender en la directiva de protección de aplicaciones (MAM)](ios-install-unmanaged.md)|
 
 ### <a name="end-user-onboarding"></a>Incorporación de usuarios finales
@@ -110,9 +111,9 @@ Esto ayuda a reducir los posibles problemas que podrían surgir al implementar e
 
 - Los dispositivos aparecen en la lista de inventario de dispositivos: después de la incorporación correcta de Defender for Endpoint en el dispositivo móvil, compruebe que el dispositivo aparece en el Inventario de dispositivos en la [consola de seguridad](https://security.microsoft.com).
 
-- Ejecuta una prueba de detección de malware en un dispositivo Android: instala cualquier aplicación de virus de prueba desde la Tienda Google Play y comprueba que Microsoft Defender la detecte para Endpoint. Esta es una aplicación de ejemplo que se puede usar para esta prueba: [Probar virus](https://play.google.com/store/apps/details?id=com.androidantivirus.testvirus). Tenga en cuenta que Enterprise Android con un perfil de trabajo, solo se admite el perfil de trabajo.
+- Ejecuta una prueba de detección de malware en un dispositivo Android: instala cualquier aplicación de virus de prueba desde la Tienda Google Play y comprueba que Microsoft Defender la detecte para Endpoint. Esta es una aplicación de ejemplo que se puede usar para esta prueba: [Probar virus](https://play.google.com/store/apps/details?id=com.androidantivirus.testvirus). Ten en cuenta que Enterprise Android con un perfil de trabajo, solo se admite el perfil de trabajo.
 
-- Ejecutar una prueba de suplantación de identidad: busque https://smartscreentestratings2.net y compruebe que Microsoft Defender lo bloquea para endpoint. Tenga en cuenta que Enterprise Android con un perfil de trabajo, solo se admite el perfil de trabajo.
+- Ejecutar una prueba de suplantación de identidad: busque https://smartscreentestratings2.net y compruebe que Microsoft Defender lo bloquea para endpoint. Ten en cuenta que Enterprise Android con un perfil de trabajo, solo se admite el perfil de trabajo.
 
 - Las alertas aparecen en el panel: compruebe que las alertas de pruebas de detección anteriores aparecen en la [consola de seguridad](https://security.microsoft.com).
 

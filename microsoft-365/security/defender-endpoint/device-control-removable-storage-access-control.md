@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 03/09/2022
-ms.openlocfilehash: 9f323d902f0e421ea73303706e0785f9bd76f3ff
-ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
+ms.openlocfilehash: f696cd3631573bdb2206c665340f35601e4624ac
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63406069"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468990"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage Control de acceso
 
@@ -37,7 +37,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 
 |Privilegio|Permiso|
 |---|---|
-|Acceso|Lectura, Escritura, Ejecución|
+|Access|Lectura, Escritura, Ejecución|
 |Modo de acción|Auditoría, Permitir, Impedir|
 |Compatibilidad con CSP|Sí|
 |Compatibilidad con GPO|Sí|
@@ -253,7 +253,7 @@ Microsoft Endpoint Manager centro  de administración (<https://endpoint.microso
       `DefaultEnforcementDeny = 2`
 
     - Una vez que implemente esta configuración, verá **Default Allow** o **Default Deny**
-    - Tenga en cuenta tanto el nivel de disco como el nivel del sistema de archivos AccessMask al configurar esta configuración, por ejemplo, si desea denegar de forma predeterminada pero permitir un almacenamiento específico, debe permitir el acceso a nivel de disco y a nivel del sistema Fiel, debe establecer AccessMask en 63.
+    - Tenga en cuenta tanto el nivel de disco como el nivel del sistema de archivos AccessMask al configurar esta configuración, por ejemplo, si desea denegar de forma predeterminada pero permitir un almacenamiento específico, debe permitir el acceso a nivel de disco y a nivel del sistema de archivos, debe establecer AccessMask en 63.
 
     :::image type="content" source="images/148609590-c67cfab8-8e2c-49f8-be2b-96444e9dfc2c.png" alt-text="Código de PowerShell de la aplicación predeterminada":::
 
@@ -291,7 +291,7 @@ El [Microsoft 365 Defender muestra](https://security.microsoft.com/advanced-hunt
 - Microsoft 365 para informes E5
 
 ```kusto
-//events triggered by RemovableStoragePolicyTriggered
+//RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
 DeviceEvents
 | where ActionType == "RemovableStoragePolicyTriggered"
 | extend parsed=parse_json(AdditionalFields)
@@ -311,9 +311,32 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
+```kusto
+//RemovableStorageFileEvent: event triggered by File level enforcement, information of files written to removable storage 
+DeviceEvents
+| where ActionType contains "RemovableStorageFileEvent"
+| extend parsed=parse_json(AdditionalFields)
+| extend Policy = tostring(parsed.Policy) 
+| extend PolicyRuleId = tostring(parsed.PolicyRuleId) 
+| extend MediaClassName = tostring(parsed.ClassName)
+| extend MediaInstanceId = tostring(parsed.InstanceId)
+| extend MediaName = tostring(parsed.MediaName)
+| extend MediaProductId = tostring(parsed.ProductId) 
+| extend MediaVendorId = tostring(parsed.VendorId) 
+| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
+| extend DuplicatedOperation = tostring(parsed.DuplicatedOperation)
+| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
+| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, 
+    ActionType, Policy, PolicyRuleId, DuplicatedOperation, 
+    MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber,
+    FileName, FolderPath, FileSize, FileEvidenceLocation,
+    AdditionalFields
+| order by Timestamp desc
+```
+    
 :::image type="content" source="images/block-removable-storage.png" alt-text="Pantalla que muestra el bloqueo del almacenamiento extraíble.":::
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="what-is-the-removable-storage-media-limitation-for-the-maximum-number-of-usbs"></a>¿Cuál es la limitación de medios de almacenamiento extraíbles para el número máximo de USB?
 

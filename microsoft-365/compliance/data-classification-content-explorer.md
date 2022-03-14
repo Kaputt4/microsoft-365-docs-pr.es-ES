@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: fb7448ffd4ed56deb41bbb1d128608b88e9617ea
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 61d262c04d4a304506bc521d155be71f81d219ca
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871832"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468766"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
@@ -70,7 +70,7 @@ El acceso al explorador de contenidos está altamente restringido porque permite
 
 Hay dos roles que conceden acceso al explorador de contenido y se conceden mediante el <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Centro de cumplimiento de Microsoft 365</a>:
 
-- **Visor de listas del explorador de contenido**: la pertenencia a este grupo de roles permite ver cada elemento y su ubicación en la vista de lista. El rol `data classification list viewer` se ha asignado previamente a este grupo de roles.
+- **Visor de listas del explorador de contenido**: la pertenencia a este grupo de roles permite ver cada elemento y su ubicación en la vista de lista. El rol `data classification list viewer` se ha preasignado a este grupo de roles.
 
 - **Visor de contenido del Explorador de contenido**: la pertenencia a este grupo de roles le permite ver el contenido de cada elemento de la lista. El rol `data classification content viewer` se ha asignado previamente a este grupo de roles.
 
@@ -96,7 +96,7 @@ Aquí tiene una lista de grupos de roles de MIP que están en la versión prelim
 - Protección de la información
 - Administradores de Information Protection
 - Analistas de Information Protection
-- Investigadores de protección de la información
+- Investigadores de Information Protection
 - Lectores de Information Protection
 
 ## <a name="content-explorer"></a>Explorador de contenido
@@ -106,9 +106,6 @@ El explorador de contenido muestra una instantánea actual de los elementos que 
 ### <a name="sensitive-information-types"></a>Tipos de información confidencial
 
 Una [directiva DLP](dlp-learn-about-dlp.md) puede ayudar a proteger la información confidencial, que se define como un **tipo de información confidencial**. Microsoft 365 incluye definiciones de [para muchos tipos comunes de información confidencial](sensitive-information-type-entity-definitions.md) de muchas regiones diferentes que están listas para su uso. Por ejemplo, un número de tarjeta de crédito, números de cuenta bancaria, números de identificación nacional y números de servicio de Windows Live ID.
-
-> [!NOTE]
-> Actualmente, el explorador de contenido no busca ningún tipo de información confidencial en Exchange Online.
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 
@@ -134,29 +131,26 @@ El control de **Exportación** creará un archivo .csv que contiene una lista de
 ![control de exportación de clasificación de datos.](../media/data_classification_export_control.png)
 
 
+> [!NOTE]
+> Los recuentos pueden tardar hasta *siete días* en actualizarse en el explorador de contenido.
+
 ### <a name="search"></a>Búsqueda
 
-Cuando profundiza en una ubicación, como una carpeta de Exchange o un sitio de SharePoint o de OneDrive, aparece la herramienta de **búsqueda**.
+Cuando profundiza en una ubicación, como una carpeta de Exchange o Teams, o un sitio de SharePoint o de OneDrive, aparece la herramienta de **búsqueda**.
 
 ![herramienta de búsqueda del explorador de contenido.](../media/data_classification_search_tool.png)
 
-
 El ámbito de la herramienta de búsqueda es lo que se muestra en el panel **Todas las ubicaciones** y lo que puede buscar varía en función de la ubicación seleccionada. 
 
-Cuando **Exchange** es la ubicación seleccionada, puede buscar en la dirección de correo completa del buzón, por ejemplo `user@domainname.com`.
+Cuando **Exchange** o **Teams** son la ubicación seleccionada, puede buscar en la dirección de correo electrónico completa del buzón, por ejemplo, `user@domainname.com`.
 
 Cuando **SharePoint** o **OneDrive** están seleccionados, la herramienta de búsqueda aparecerá cuando profundice en nombres de sitio, carpetas y archivos. 
 
-> [!NOTE]
-> **OneDrive** Hemos escuchado sus valiosos comentarios sobre la integración de OneDrive durante nuestro programa de versión preliminar. En base a los comentarios, la funcionalidad de OneDrive permanecerá en la versión preliminar hasta que todas las correcciones estén instaladas. Según el espacio empresarial, es posible que algunos clientes no vean OneDrive como una ubicación. Agradecemos su continuo apoyo en esto.
-
 Puede buscar en:
-
 
 |valor|ejemplo  |
 |---------|---------|
 |nombre completo del sitio    |`https://contoso.onmicrosoft.com/sites/sitename`    |
-|nombre de carpeta raíz (obtiene todas las subcarpetas)    | `/sites`        |
 |nombre de archivo    |    `RES_Resume_1234.txt`     |
 |texto al principio del nombre de archivo| `RES`|
 |texto después de un carácter de subrayado (_) en el nombre de archivo|`Resume` o `1234`| 

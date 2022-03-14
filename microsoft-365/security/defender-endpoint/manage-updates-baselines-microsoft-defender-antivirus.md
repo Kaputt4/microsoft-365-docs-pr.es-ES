@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/07/2022
+ms.date: 03/14/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: e19b6400643b29005a6c92323f58f7dc996db49e
-ms.sourcegitcommit: ad6d9fd5ad050c72622a32a191997fe6d7b2deee
+ms.openlocfilehash: 2f6f2135e81bf99f6391b75067ad89d1af3a712c
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63353907"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468714"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -42,7 +42,7 @@ Mantener Antivirus de Microsoft Defender actualizado es fundamental para garanti
 
 ## <a name="security-intelligence-updates"></a>Actualizaciones de inteligencia de seguridad
 
-Antivirus de Microsoft Defender la [protección](cloud-protection-microsoft-defender-antivirus.md) entregada en la nube (también denominada Servicio de protección avanzada de Microsoft o MAPS) y descarga periódicamente actualizaciones de inteligencia de seguridad para proporcionar protección.
+Antivirus de Microsoft Defender la [protección](cloud-protection-microsoft-defender-antivirus.md) entregada en la nube (también denominada Servicio de protección avanzada de Microsoft o MAPS) y descarga periódicamente actualizaciones dinámicas de inteligencia de seguridad para proporcionar protección adicional. Estas actualizaciones dinámicas no toman el lugar de las actualizaciones regulares de inteligencia de seguridad a través de la actualización de inteligencia de seguridad KB2267602.
 
 > [!NOTE]
 > Las actualizaciones se liberan en los siguientes KB:
