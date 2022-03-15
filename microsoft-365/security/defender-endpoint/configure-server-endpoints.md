@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5f0b846fdbfaa76250ae64ae281afc9592a24eb4
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 6f6ada6604190ccba270b287201d94ba2acbf6d2
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450358"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504843"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -298,6 +298,8 @@ Puede usar el [script del instalador para](server-migration.md#installer-script)
     ```  
 
      >[!NOTE]
+    >Si necesita solucionar problemas de instalación del agente, agregue '-etl -log' a los parámetros install.ps1 script.
+    >
     >La configuración de directiva de ejecución recomendada es `Allsigned`. Esto requiere importar el certificado de firma del script en el almacén de editores de confianza del equipo local si el script se ejecuta como SYSTEM en el extremo.
 
     Reemplace \\servername-or-dfs-space\share-name por la ruta de acceso UNC, con el nombre de dominio completo (FQDN) del servidor de archivos, del archivo *install.ps1compartido.* El paquete del md4ws.msi debe colocarse en el mismo directorio.  Asegúrese también de que los permisos de la ruta UNC permiten el acceso de lectura a la cuenta del equipo que está instalando la plataforma.
@@ -392,7 +394,7 @@ Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de dete
 
 Siga los pasos descritos en Ejecutar una prueba de detección en un dispositivo recién incorporado para comprobar que el servidor está informando [a](run-detection-test.md) Defender para el servicio de extremo.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de incorporar dispositivos correctamente al servicio, deberá configurar los componentes individuales de Microsoft Defender para endpoint. Siga el [orden de adopción](prepare-deployment.md#adoption-order) para guiarse en la habilitación de los distintos componentes.
 

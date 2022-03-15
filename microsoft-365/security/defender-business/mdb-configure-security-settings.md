@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: c943841a89acb7052f63ba76898e9b23e5dc3b4c
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 5673ac38577dbd87019a954eb388d6ab8f050328
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449504"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504757"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Ver y editar las directivas de seguridad y la configuración en Microsoft Defender para empresas
 
@@ -36,7 +36,9 @@ ms.locfileid: "63449504"
 Después de incorporar los dispositivos de la organización a Microsoft Defender para empresas, el siguiente paso es ver y, si es necesario, editar las directivas de seguridad y la configuración. Las directivas de seguridad incluyen:
 
 - **[Directivas de protección de última](#view-or-edit-your-next-generation-protection-policies)** generación, que determinan la protección antivirus y antimalware para los dispositivos de la organización
+
 - **[Reglas y protección de firewall](#view-or-edit-your-firewall-policies-and-custom-rules)**, que determinan qué tráfico de red puede fluir hacia o desde los dispositivos de la organización
+
 - **[Filtrado de contenido web](#set-up-web-content-filtering)**, que impide que las personas visiten determinados sitios web (URL) en función de categorías, como contenido para adultos o responsabilidad legal.
 
 En Defender para empresas, las directivas de seguridad se aplican a dispositivos a través [de grupos de dispositivos](mdb-create-edit-device-groups.md#what-is-a-device-group). 
@@ -72,11 +74,11 @@ La siguiente tabla puede ayudarle a elegir dónde administrar sus dispositivos y
 
 | Opción | Descripción |
 |:---|:---|
-| **Usar el Microsoft 365 Defender web** (*recomendado*) | El Microsoft 365 Defender web ([https://security.microsoft.com/](https://security.microsoft.com/)) puede ser su tienda única para administrar los dispositivos de la organización, las directivas de seguridad y la configuración de seguridad. Puede acceder a sus directivas y configuraciones de seguridad, usar el panel de administración de vulnerabilidades [&](mdb-view-tvm-dashboard.md) amenazas [](mdb-view-manage-incidents.md) y ver y administrar incidentes en un solo lugar.  |
-| **Use Microsoft Endpoint Manager** | Si su organización ya usa Endpoint Manager (que incluye Microsoft Intune) para administrar directivas de seguridad, puede seguir usando Endpoint Manager para administrar dispositivos y directivas de seguridad. Para obtener más información, consulta [Administrar la seguridad de dispositivos con directivas de seguridad de puntos de conexión en Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Si decide cambiar al proceso de configuración simplificado en [Defender para](mdb-simplified-configuration.md) empresas para usar el portal de Microsoft 365 Defender en su lugar, se le pedirá que elimine las directivas de seguridad existentes en Endpoint Manager para evitar [conflictos](mdb-troubleshooting.yml) de directivas más adelante. |
+| **Usar el Microsoft 365 Defender web** (*recomendado*) | El Microsoft 365 Defender web ([https://security.microsoft.com/](https://security.microsoft.com/)) puede ser su tienda única para administrar los dispositivos de la organización, las directivas de seguridad y la configuración de seguridad. Puede acceder a sus directivas y configuraciones de seguridad, usar el panel de administración de vulnerabilidades [&](mdb-view-tvm-dashboard.md) amenazas [](mdb-view-manage-incidents.md) y ver y administrar incidentes en un solo lugar. <br/><br/>Si usas Microsoft Endpoint Manager, los dispositivos que incorpores a Defender for Business y tus directivas de seguridad son visibles en Endpoint Manager. Para obtener más información, consulte los artículos siguientes:<br/><br/>- [Configuración y configuración predeterminadas de Defender para empresas Microsoft Endpoint Manager](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/><br/>- [Firewall en Microsoft Defender para empresas](mdb-firewall.md)   |
+| **Use Microsoft Endpoint Manager** | Si su organización ya usa Endpoint Manager (que incluye Microsoft Intune) para administrar directivas de seguridad, puede seguir usando Endpoint Manager para administrar dispositivos y directivas de seguridad. Para obtener más información, consulta [Administrar la seguridad de dispositivos con directivas de seguridad de puntos de conexión en Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Si decide cambiar al proceso de configuración simplificado en [Defender para](mdb-simplified-configuration.md) empresas, se le pedirá que elimine las directivas de seguridad existentes en Endpoint Manager para evitar [conflictos](mdb-troubleshooting.yml) de directivas más adelante. |
 
-> [!NOTE]
-> Si está administrando nuestras directivas de seguridad en el portal de Microsoft 365 Defender, puede ver  dichas directivas en Endpoint Manager, enumeradas como directivas de antivirus o firewall. Cuando vea las directivas de firewall en Endpoint Manager, verá dos directivas enumeradas: una directiva para la protección de firewall y otra para reglas personalizadas.
+> [!IMPORTANT]
+> Si va a administrar directivas de seguridad en el portal de Microsoft 365 Defender, puede ver  dichas directivas en Endpoint Manager, enumeradas como directivas de antivirus o firewall. Cuando vea las directivas de firewall en Endpoint Manager, verá dos directivas enumeradas: una directiva para la protección de firewall y otra para reglas personalizadas.
 
 ## <a name="view-or-edit-your-next-generation-protection-policies"></a>Ver o editar las directivas de protección de próxima generación
 
@@ -101,9 +103,13 @@ En función de si usa el portal de Microsoft 365 Defender o Microsoft Endpoint M
 El filtrado de contenido web permite al equipo de seguridad realizar un seguimiento y regular el acceso a los sitios web en función de sus categorías de contenido, como:
 
 - Contenido para adultos: sitios relacionados con sectas, juegos de azar, desnudez, pornografía, material sexualmente explícito o violencia
+
 - Ancho de banda alto: descargar sitios, sitios de uso compartido de imágenes o hosts punto a punto
+
 - Responsabilidad legal: sitios que incluyen imágenes de maltrato infantil, promueven actividades ilegales, fomentan el plagio o el engaño escolar, o que promueven actividades dañinas
+
 - Ocio: sitios que proporcionan salas de chat basadas en web, juegos en línea, correo electrónico basado en web o redes sociales
+
 - Sin categorizar: sitios que no tienen contenido o que están recién registrados
 
 No todos los sitios web de estas categorías son malintencionados, pero podrían ser problemáticos para su organización debido a las normativas de cumplimiento, el uso del ancho de banda u otras preocupaciones. Además, puede crear una directiva de solo auditoría para comprender mejor si su equipo de seguridad debe bloquear las categorías de sitios web.
@@ -147,7 +153,7 @@ En la tabla siguiente se describe la configuración para ver (y, si es necesario
 | **Centro de seguridad** | **Zona horaria** | Seleccione la zona horaria que se usará para las fechas y horas mostradas en incidentes, amenazas detectadas e investigación automatizada & corrección. Puede usar UTC o la zona horaria local (*recomendado*).  |
 | **Microsoft 365 Defender** | **Account** | Ver detalles, como dónde se almacenan los datos, el identificador de inquilino y el identificador de la organización (organización). |
 | **Microsoft 365 Defender**  | **Versión preliminar de las características**  | Activa las características de vista previa para probar las próximas características y nuevas funcionalidades. Puede ser uno de los primeros en obtener una vista previa de las nuevas características y proporcionar comentarios. |
-| **Puntos de conexión**  | **Notificaciones por correo electrónico** | Configurar o editar las reglas de notificación de correo electrónico. Cuando se detectan vulnerabilidades o se crea una alerta, los destinatarios especificados en las reglas de notificación de correo electrónico recibirán un correo electrónico. [Obtenga más información sobre las notificaciones por correo electrónico](mdb-email-notifications.md). |
+| **Puntos de conexión**  | **Notificaciones de correo electrónico** | Configurar o editar las reglas de notificación de correo electrónico. Cuando se detectan vulnerabilidades o se crea una alerta, los destinatarios especificados en las reglas de notificación de correo electrónico recibirán un correo electrónico. [Obtenga más información sobre las notificaciones por correo electrónico](mdb-email-notifications.md). |
 | **Puntos de conexión**   | **Administración de dispositivos** >  **Incorporación** | Incorporar dispositivos a Defender para empresas mediante un script descargable. Para obtener más información, consulta [Incorporación de dispositivos a Microsoft Defender para empresas](mdb-onboard-devices.md).   |  
 | **Puntos de conexión**  |  **Administración de dispositivos** >  **Offboarding** | Dispositivos offboard (quitar) de Defender para empresas. Al salir de un dispositivo, ya no envía datos a Defender para empresas, pero los datos recibidos antes de la salida se conservan. Para obtener más información, consulta [Offboarding a device](mdb-onboard-devices.md#offboarding-a-device).  |
 
@@ -160,7 +166,7 @@ En la tabla siguiente se describe la configuración para ver (y, si es necesario
 3. En la lista de opciones, seleccione un elemento para ver o editar.
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Continúe con una o varias de las siguientes tareas:
 

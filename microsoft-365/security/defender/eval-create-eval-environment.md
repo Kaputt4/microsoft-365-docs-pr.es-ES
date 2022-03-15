@@ -1,6 +1,6 @@
 ---
-title: Paso 1. Crear el entorno Microsoft 365 Defender evaluación
-description: Configure el entorno piloto Microsoft 365 Defender prueba mediante la activación de licencias de prueba. A continuación, configure Microsoft Defender for Identity (MDI) y todas las demás evaluaciones M365D.
+title: Crear el entorno Microsoft 365 Defender evaluación para mayor seguridad cibernética y XDR
+description: Obtenga información sobre lo que se incluye en el Microsoft 365 Defender XDR que evaluará y cree su entorno piloto o laboratorio de prueba Microsoft 365 Defender activando licencias de prueba. Inicia tu viaje de seguridad cibernética de XDR aquí y aprende a llevar esa prueba a la producción.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,20 +21,34 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 17751cf5f71d9754ad8d5c0c913ee3438b49b399
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: d81d33a01802ebdf8ef0ea67a9ee74fc69b79384
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311625"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504740"
 ---
-# <a name="step-1-create-the-microsoft-365-defender-evaluation-environment"></a>Paso 1. Crear el entorno Microsoft 365 Defender evaluación
+# <a name="step-1-create-the-microsoft-365-defender-evaluation-environment-for-greater-cyber-security"></a>Paso 1. Crear el entorno Microsoft 365 Defender evaluación para una mayor seguridad cibernética
 
-Hay dos maneras comunes de realizar este siguiente paso en la evaluación. Este documento supone que ya tiene un inquilino de Microsoft 365 producción y activará las licencias de prueba de E5 para evaluar Microsoft 365 Defender en *el entorno actual*. Una evaluación local le permitirá mantener los métodos de seguridad con la compra de licencias después del período de evaluación.
+LPuedes aprender y también crear esta Microsoft Defender XDR en los pasos que se distribuyen a través del resto de esta serie:
 
-El segundo es [configurar el entorno de Microsoft 365 Defender de prueba](setup-m365deval.md) para la evaluación. Tenga en cuenta que puede que no tenga muchas señales reales de la empresa.
+- [Cómo crear el entorno](eval-create-eval-environment.md)
+- Configurar o aprender sobre cada tecnología de este XDR de Microsoft
+    - [Microsoft Defender for Identity](eval-defender-identity-overview.md)
+    - [Microsoft Defender para Office](eval-defender-office-365-overview.md)
+    - [Microsoft Defender para punto de conexión](eval-defender-endpoint-overview.md)
+    - [Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
+- [Cómo investigar y responder con este XDR](eval-defender-investigate-respond.md)
+- [Promover el entorno de prueba a la producción](eval-defender-promote-to-production.md)
+- [Volver a la información general](eval-overview.md)
 
-## <a name="to-activate-e5-trial-licenses-to-evaluate-microsoft-365-defender"></a>Para activar las licencias de prueba de E5 para evaluar Microsoft 365 Defender 
+Los pasos de esta serie se ejecutan de un extremo a otro, desde el aprendizaje de los conceptos detrás de la XDR de Microsoft 365 Defender hasta la creación y la producción del entorno de evaluación.
+
+Hay dos maneras comunes de realizar este siguiente paso en la evaluación. Esta serie supone que ya tiene un inquilino de Microsoft 365 producción y activará las licencias de prueba de E5 para evaluar Microsoft 365 Defender en *el entorno actual*. Una evaluación local le permitirá mantener los métodos de seguridad con la compra de licencias después del período de evaluación.
+
+El segundo es [configurar el entorno de Microsoft 365 Defender de prueba](setup-m365deval.md) para la evaluación. Tenga en cuenta que puede que no tenga muchas señales reales de la empresa mientras está en pruebas.
+
+## <a name="you-will-need-to-activate-e5-trial-licenses-to-evaluate-microsoft-365-defender"></a>Deberá activar las licencias de prueba de E5 para evaluar Microsoft 365 Defender
 
 1. Inicie sesión en el portal de administración Microsoft 365 inquilino existente.
 2. Seleccione **Servicios de compra** en el menú de navegación.
@@ -50,8 +64,8 @@ El segundo es [configurar el entorno de Microsoft 365 Defender de prueba](setup-
 
    :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="Hay un botón &quot;Probar ahora&quot; en el panel &quot;Comprobar, confirmar el pedido&quot; (para una prueba Office 365 E5 de un mes para 25 usuarios).":::
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="go-to-the-next-step"></a>Vaya al paso siguiente
 
-[Habilitar Microsoft 365 identidad](eval-defender-identity-overview.md)
+[Obtenga información sobre cómo habilitar Microsoft 365 para Identity](eval-defender-identity-overview.md)
 
-Vuelva a la introducción a [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+O bien, vuelva a la información general sobre [evaluación y prueba Microsoft 365 Defender](eval-overview.md)

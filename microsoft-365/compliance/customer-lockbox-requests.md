@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 ms.custom: admindeeplinkMAC
 description: Obtenga información sobre las solicitudes de caja de seguridad del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede acceder a sus datos cuando se encuentra con un problema.
-ms.openlocfilehash: 4788a17df4a4d11245fa65342002cab1dc5716fa
-ms.sourcegitcommit: cafca45069819a44c7cf8c67f6c1e105de1b3393
+ms.openlocfilehash: 532b1b78c40725fa3558768a6b65beda9b8e05b2
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62520480"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504832"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Caja de seguridad del cliente en Office 365
 
-En este artículo se proporcionan instrucciones de implementación y configuración para la caja de seguridad del cliente. La Caja de seguridad del cliente admite solicitudes para acceder a datos en Exchange Online, SharePoint Online y OneDrive para la Empresa. Para recomendar la compatibilidad con otros servicios, envíe una solicitud en [Office 365 UserVoice](https://feedbackportal.microsoft.com/feedback/).
+En este artículo se proporcionan instrucciones de implementación y configuración para la caja de seguridad del cliente. La Caja de seguridad del cliente admite solicitudes para acceder a datos en Exchange Online, SharePoint Online y OneDrive para la Empresa. Para recomendar la compatibilidad con otros servicios, envíe una solicitud en el [Portal de comentarios](https://feedbackportal.microsoft.com).
 
-Para ver las opciones para otorgar licencias a los usuarios para que se beneficien de Microsoft 365 de cumplimiento normativo, consulte la guía Microsoft 365 de licencias para el cumplimiento & [seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Para ver las opciones para otorgar licencias a los usuarios para que se beneficien de las ofertas de cumplimiento de Microsoft 365, consulte la guía Microsoft 365 de licencias para el cumplimiento & [seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 Caja de seguridad del cliente garantiza que Microsoft no puede acceder al contenido para realizar operaciones de servicio sin su aprobación explícita. Caja de seguridad del cliente le incluye en el proceso de flujo de trabajo de aprobación que Microsoft usa para garantizar que solo las solicitudes autorizadas permitan el acceso al contenido. Para obtener más información sobre el proceso de flujo de trabajo de Microsoft, consulte [Privileged access management in Microsoft 365](privileged-access-management-solution-overview.md).
 
@@ -55,7 +55,7 @@ Estos pasos describen el flujo de trabajo típico cuando un ingeniero de Microso
 
     ![Ejemplo de una notificación de correo electrónico de caja de seguridad del cliente.](../media/CustomerLockbox1.png)
 
-   Cualquier persona a la que se le haya asignado el rol de administrador del [aprobador](/office365/admin/add-users/about-admin-roles) de acceso de la caja de seguridad del cliente Centro de administración de Microsoft 365 puede aprobar solicitudes de caja de seguridad del cliente.
+   Cualquier persona a la que se le haya asignado el rol de administrador de [aprobador](/office365/admin/add-users/about-admin-roles) de acceso de la caja de seguridad del cliente Centro de administración de Microsoft 365 puede aprobar solicitudes de caja de seguridad del cliente.
 
 6. El aprobador inicia sesión en el Centro de administración de Microsoft 365 y aprueba la solicitud. Este paso desencadena la creación de un registro de auditoría disponible al buscar en el registro de auditoría. Para obtener más información, vea [Auditing Customer Lockbox requests](#auditing-customer-lockbox-requests).
 
@@ -106,11 +106,11 @@ Puede activar los controles de Caja de seguridad del cliente en el Centro de adm
 
 ## <a name="auditing-customer-lockbox-requests"></a>Solicitudes de auditoría de caja de seguridad del cliente
 
-Los registros de auditoría que corresponden a solicitudes de caja de seguridad del cliente se registran en el Microsoft 365 de auditoría. Puede obtener acceso a estos registros mediante la herramienta de búsqueda de [registro de auditoría](search-the-audit-log-in-security-and-compliance.md) en el Centro de cumplimiento de Microsoft 365. Las acciones relacionadas con aceptar o denegar una solicitud de caja de seguridad del cliente y las acciones realizadas por los ingenieros de Microsoft (cuando se aprueban las solicitudes de acceso) también se registran en el registro de auditoría. Puede buscar y revisar estos registros de auditoría.
+Los registros de auditoría que corresponden a solicitudes de caja de seguridad del cliente se registran en el Microsoft 365 de auditoría. Puede obtener acceso a estos registros mediante la herramienta de búsqueda de [registro](search-the-audit-log-in-security-and-compliance.md) de auditoría en el Centro de cumplimiento de Microsoft 365. Las acciones relacionadas con aceptar o denegar una solicitud de caja de seguridad del cliente y las acciones realizadas por los ingenieros de Microsoft (cuando se aprueban las solicitudes de acceso) también se registran en el registro de auditoría. Puede buscar y revisar estos registros de auditoría.
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Buscar en el registro de auditoría la actividad relacionada con las solicitudes de caja de seguridad del cliente
 
-Antes de usar el registro de auditoría para realizar un seguimiento de las solicitudes de caja de seguridad del cliente, hay algunos pasos que debe seguir para configurar el registro de auditoría, incluida la asignación de permisos para buscar en el registro de auditoría. Para obtener más información, vea [Configurar auditoría básica en Microsoft 365](set-up-basic-audit.md). Una vez completada la instalación, siga estos pasos para crear una consulta de búsqueda de registro de auditoría para devolver registros de auditoría relacionados con la caja de seguridad del cliente:
+Antes de usar el registro de auditoría para realizar un seguimiento de las solicitudes de caja de seguridad del cliente, hay algunos pasos que debe seguir para configurar el registro de auditoría, incluida la asignación de permisos para buscar en el registro de auditoría. Para obtener más información, vea [Set up Basic Audit in Microsoft 365](set-up-basic-audit.md). Una vez completada la instalación, siga estos pasos para crear una consulta de búsqueda de registro de auditoría para devolver registros de auditoría relacionados con la caja de seguridad del cliente:
 
 1. Ve a <https://compliance.microsoft.com>.
   
@@ -148,7 +148,7 @@ Antes de usar el registro de auditoría para realizar un seguimiento de las soli
 
 ### <a name="export-the-audit-log-search-results"></a>Exportar los resultados de búsqueda del registro de auditoría
 
-También puede exportar los resultados de la búsqueda del registro de auditoría a un archivo CSV y, a continuación, abrir el archivo en Excel para usar las funciones de filtrado y ordenación para facilitar la búsqueda y visualización de registros de auditoría relacionados con una solicitud de acceso a la caja de seguridad del cliente.
+También puede exportar los resultados de la búsqueda del registro de auditoría a un archivo CSV y, a continuación, abrir el archivo en Excel para usar las funciones de filtrado y ordenación para facilitar la búsqueda y visualización de registros de auditoría relacionados con una solicitud de acceso de caja de seguridad de cliente.
 
 Para exportar registros de auditoría, siga los pasos anteriores para buscar en el registro de auditoría. Una vez completada la búsqueda, seleccione **Exportar > Descargar** todos los resultados en la parte superior de la página de resultados de búsqueda. Cuando se complete el proceso de exportación, puede descargar el archivo CSV en el equipo local. Para obtener instrucciones más detalladas, vea [Exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md).
 
@@ -189,7 +189,7 @@ Cuando una persona de la organización aprueba o deniega una solicitud de caja d
 | Dirección IP | La dirección IP del equipo en el que el aprobador ha aprobado o denegado una solicitud. |
 | Usuario       | La cuenta de servicio BOXServiceAccount@\[customerforest.prod.outlook.com\].            |
 | Actividad   | Set-AccessToCustomerDataRequest; esta es la actividad de auditoría que se registra cuando usted aprueba o deniega una solicitud de Caja de seguridad del cliente.                                |
-| Item       | Guid de la solicitud de caja de seguridad del cliente                             |
+| Elemento       | Guid de la solicitud de caja de seguridad del cliente                             |
 
 En la siguiente captura de pantalla se muestra un ejemplo de un registro de auditoría que corresponde a una solicitud de caja de seguridad de cliente aprobada. Si se denegó una solicitud de caja de seguridad del cliente, el valor del parámetro **ApprovalDecision** sería **Deny**.
 
@@ -207,7 +207,7 @@ Las acciones que ha realizado un ingeniero de Microsoft después de aprobar una 
 | Actividad   | Nombre de la actividad realizada por el ingeniero de Microsoft.|
 | Item       | \<empty\>                                             |
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 #### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>¿Microsoft 365 a qué servicios se aplica la caja de seguridad del cliente?
 
@@ -227,7 +227,7 @@ El contenido del cliente son los datos creados por los usuarios de Microsoft 365
 
 - Información del cuerpo de un archivo de SharePoint
 
-- Skype Empresarial del archivo de presentación
+- Skype Empresarial cuerpo del archivo de presentación
 
 - Mensajes instantáneos (MI) o conversaciones de voz
 
@@ -237,19 +237,19 @@ El contenido del cliente son los datos creados por los usuarios de Microsoft 365
 
 - Inferencias y todas las inferencias posteriores, si el contenido del cliente permanece
 
-Para obtener más información acerca del contenido del Office 365, consulte [el Centro de Office 365 confianza](https://products.office.com/business/office-365-trust-center-privacy/).
+Para obtener más información sobre el contenido del cliente en Office 365, vea [el Centro de Office 365 confianza](https://products.office.com/business/office-365-trust-center-privacy/).
 
 #### <a name="who-is-notified-when-there-is-a-request-to-access-my-content"></a>Quién se notifica cuando hay una solicitud para obtener acceso a mi contenido.
 
 Se notifica a los administradores globales y a cualquier persona que haya asignado el rol de administrador aprobador de acceso de caja de seguridad del cliente. También son los mismos usuarios que pueden aprobar las solicitudes de caja de seguridad del cliente.
 
-#### <a name="who-can-approve-or-reject-these-requests-in-my-organization"></a>Quién puede aprobar o rechazar estas solicitudes en mi organización?
+#### <a name="who-can-approve-or-reject-these-requests-in-my-organization"></a>Quién Puede aprobar o rechazar estas solicitudes en mi organización?
 
 Los administradores globales y cualquier persona que haya asignado el rol de administrador aprobador de acceso a la caja de seguridad del cliente pueden aprobar solicitudes de caja de seguridad del cliente. Los clientes controlan estas asignaciones de roles en sus organizaciones.
 
 #### <a name="how-do-i-opt-in-to-customer-lockbox"></a>¿Cómo puedo participar en la caja de seguridad del cliente?
 
-Un administrador global puede habilitar y configurar la caja de seguridad del cliente en el Microsoft 365 o <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
+Un administrador global puede habilitar y configurar la caja de seguridad del cliente en Microsoft 365 o <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
 
 #### <a name="if-i-approve-a-customer-lockbox-request-what-can-the-engineer-do-and-how-will-i-know-what-the-microsoft-engineer-did"></a>Si apruebo una solicitud de caja de seguridad de cliente, ¿qué puede hacer el ingeniero y cómo voy a saber lo que hizo el ingeniero de Microsoft?
 
@@ -267,7 +267,7 @@ Solo un administrador global de la organización puede especificar quién puede 
 
 #### <a name="what-if-i-need-more-information-about-a-content-access-request-to-approve-it"></a>¿Qué ocurre si necesito más información sobre una solicitud de acceso al contenido para aprobarla?
 
-Cada solicitud de caja de seguridad del cliente contiene Microsoft 365 número de solicitud de servicio. Puede ponerse en contacto con el Soporte técnico de Microsoft y hacer referencia a este número de servicio para obtener más información sobre la solicitud.
+Cada solicitud de caja de seguridad del cliente contiene un Microsoft 365 de solicitud de servicio. Puede ponerse en contacto con el Soporte técnico de Microsoft y hacer referencia a este número de servicio para obtener más información sobre la solicitud.
 
 #### <a name="when-a-customer-lockbox-request-is-approved-how-long-are-the-permissions-valid"></a>Cuando se aprueba una solicitud de caja de seguridad del cliente, ¿cuánto tiempo son válidos los permisos?
 
@@ -283,7 +283,7 @@ La fuente de actividad del Centro de cumplimiento contiene actividades de regist
 
 #### <a name="what-happens-when-a-customer-doesnt-respond-to-a-customer-lockbox-request"></a>¿Qué sucede cuando un cliente no responde a una solicitud de caja de seguridad del cliente?
 
-Las solicitudes de caja de seguridad del cliente tienen una duración predeterminada de 12 horas. Si no responde a una solicitud en un plazo de 12 horas, la solicitud expira.
+Las solicitudes de Caja de seguridad del cliente tienen una duración predeterminada de 12 horas. Si no responde a una solicitud en un plazo de 12 horas, la solicitud expira.
 
 #### <a name="what-does-microsoft-do-when-a-customer-rejects-a-customer-lockbox-request"></a>¿Qué hace Microsoft cuando un cliente rechaza una solicitud de caja de seguridad del cliente?
 
@@ -301,7 +301,7 @@ Consulte el [Centro de confianza de Microsoft](https://www.microsoft.com/trustce
 
 #### <a name="how-does-microsoft-ensure-that-a-member-of-its-staff-doesnt-have-standing-access-to-customer-content-in-office-365-applications"></a>¿Cómo garantiza Microsoft que un miembro de su personal no tenga acceso permanente al contenido del cliente en Office 365 aplicaciones?
 
-Microsoft implementa amplias medidas de prevención a través de sistemas de control de acceso y medidas de detective para identificar y solucionar los intentos de eludir estos sistemas de control de acceso. Microsoft 365 funciona con los principios de privilegios mínimos y acceso justo a tiempo. Por lo tanto, ningún personal de Microsoft tiene permiso para acceder al contenido del cliente de forma continua. Si se concede permiso, es de una duración limitada. 
+Microsoft implementa amplias medidas de prevención a través de sistemas de control de acceso y medidas de detective para identificar y solucionar los intentos de eludir estos sistemas de control de acceso. Microsoft 365 funciona con los principios de privilegios mínimos y acceso just-in-time. Por lo tanto, ningún personal de Microsoft tiene permiso para acceder al contenido del cliente de forma continua. Si se concede permiso, es de una duración limitada. 
 
 Microsoft 365 un sistema de control de acceso denominado *Caja* de seguridad para procesar solicitudes de permisos que conceden la capacidad de realizar funciones operativas y administrativas dentro del servicio. Un operador debe solicitar acceso al contenido del cliente mediante Lockbox, que luego requiere que una segunda persona tome medidas en la solicitud (por ejemplo, aprobarlo) antes de conceder el acceso. Esa segunda persona no puede ser el solicitante y debe estar designada para aprobar el acceso al contenido del cliente. Solo si la solicitud se aprueba, el operador obtiene acceso temporal al contenido del cliente. Una vez expirado el período de elevación, Lockbox revoca el acceso.
 

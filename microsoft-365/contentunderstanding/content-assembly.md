@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear automáticamente documentos y otro contenido mediante el ensamblado de contenido en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 240b67ea2ca8c1119654096c365e958995e9c946
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 9da2aa91443ffe1dd3bbd632b5284ce8f7622069
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494560"
+ms.locfileid: "63504570"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Crear documentos mediante el ensamblado de contenido en Microsoft SharePoint Syntex
 
@@ -64,7 +64,7 @@ Siga estos pasos para crear una plantilla moderna.
    - [Seleccionar entre opciones de una columna de una lista o biblioteca](#associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library)
 
    > [!NOTE]
-   > Actualmente, no puede agregar marcadores de posición a una celda de tabla o dentro de una tabla.   
+   > Solo puede crear marcadores de posición para texto. Actualmente, no se admiten imágenes, arte inteligente, tablas y listas de viñetas.   
 
 ### <a name="associate-a-placeholder-by-entering-text-or-selecting-a-date"></a>Asociar un marcador de posición especificando texto o seleccionando una fecha 
 

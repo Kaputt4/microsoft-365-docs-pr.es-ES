@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Aprenda a establecer claves del Registro para habilitar la autenticación moderna para dispositivos que Microsoft Office 2013 instalados.
-ms.openlocfilehash: 9ab3bb8e352a90cd4cef0c3c56496b3431e8b746
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 010dce00762e4e73d21a9da668a7ac9606d731f9
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494462"
+ms.locfileid: "63504743"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Habilitar autenticación moderna para Office 2013 en dispositivos Windows
 
@@ -48,9 +48,8 @@ Para habilitar la autenticación moderna para cualquier dispositivo con Windows 
 |Clave del Registro|Tipo|Valor|
 |:---|:---:|---:|
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|1|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|1|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version|REG_DWORD|1|
-|
+|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|1|
+|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\Version|REG_DWORD|1|
 
 Cree o modifique las siguientes claves del Registro para forzar Outlook usar un método de autenticación más reciente para servicios web, como EWS y Detección automática. Se recomienda que los usuarios fuerzan Outlook usar la autenticación moderna.
 
@@ -67,7 +66,7 @@ Cree o modifique las siguientes claves del Registro para forzar Outlook usar un 
    HKEY_CURRENT_USER\Software\Microsoft\Exchange\
    ```
 
-4. Si falta *la clave AlwaysUseMSOAuthForAutoDiscover* , escriba *AlwaysUseMSOAuthForAutoDiscover* y presione **ENTRAR.**
+4. Si falta *la clave AlwaysUseMSOAuthForAutoDiscover*, en el menú Editar, elija Nuevo y, a continuación, seleccione **Valor DWORD**. Escriba *AlwaysUseMSOAuthForAutoDiscover y*, a continuación, presione **ENTRAR.**
 
 5. Haga clic con el *botón secundario en AlwaysUseMSOAuthForAutoDiscover* y, a continuación, haga clic **en Modificar.**
 
@@ -76,10 +75,10 @@ Cree o modifique las siguientes claves del Registro para forzar Outlook usar un 
 7. En el Editor del Registro, busque y haga clic en la siguiente subclave del Registro:
 
    ```console
-   HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\
+   HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\
    ```
 
-8. Si los valores de la tabla anterior ya existen, modifiquelos si es necesario, salga del Editor del Registro. Si no lo hacen, en el menú Editar, elija **Nuevo** y, a continuación, haga clic en **Valor DWORD** para las claves que faltan. 
+8. Si las claves de la tabla anterior ya existen, modifique los valores si es necesario, salga del Editor del Registro. Si no lo hacen, en el menú Editar, elija **Nuevo** y, a continuación, seleccione **Valor DWORD** para crear las teclas que faltan. 
 
 9. Por ejemplo, si falta *la tecla EnableADAL* , escriba *EnableADAL* y presione **ENTRAR.**
 
@@ -105,9 +104,8 @@ Para deshabilitar la autenticación moderna en un dispositivo, establezca las si
 
 |Clave del Registro|Tipo|Valor|
 |:---|:---:|---:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
+|HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|0|
-|
    
 ## <a name="related-content"></a>Contenido relacionado
 

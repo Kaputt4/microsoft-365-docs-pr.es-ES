@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de prueba de conectividad de red
-ms.openlocfilehash: 8704da93d8f7ec95460ae5a275289176bccb0c22
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: e464b4e651276f8b36f54e91ea0bfc7b7b52d69b
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494504"
+ms.locfileid: "63504553"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365 de prueba de conectividad de red
 
@@ -255,7 +255,7 @@ Esto muestra cualquier problema de mantenimiento significativo con la red global
 
 Proporcionamos un archivo ejecutable de línea de comandos que pueden usar las herramientas de implementación y ejecución remotas y ejecutamos las mismas pruebas que están disponibles en el sitio web de la herramienta de prueba de conectividad Microsoft 365 red.
 
-La herramienta de prueba de línea de comandos se puede descargar aquí: ![Herramienta de línea de comandos](https://connectivity.office.com/api/AnonymousConnectivityTest/DownloadStandAloneRichClient)
+La herramienta de prueba de línea de comandos se puede descargar aquí: [Herramienta de línea de comandos](https://connectivity.office.com/api/AnonymousConnectivityTest/DownloadStandAloneRichClient)
 
 Puede ejecutarlo haciendo doble clic en el archivo ejecutable en el Explorador de archivos de Windows, o bien puede iniciarlo desde un símbolo del sistema o puede programarlo con el programador de tareas.
 

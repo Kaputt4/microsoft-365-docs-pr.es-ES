@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fdab6896edf704c4daa83ec993c0716c54d0f43
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 0703e1f23d9d54a907b39382438f85f544a5b6de
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494574"
+ms.locfileid: "63504856"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico
 
@@ -485,6 +485,9 @@ Cuando haya terminado de configurar los filtros, haga clic **en Aplicar**, **Can
 
 ![Vista de tecnología de detección para correo electrónico de suplantación de identidad (phishing) en el informe de estado de protección contra amenazas.](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
+> [!NOTE]
+> A partir de mayo de 2021, las detecciones de phishing en el correo electrónico se actualizaron para incluir datos adjuntos de **mensajes que contienen** direcciones URL de suplantación de identidad. Este cambio puede desplazar parte **\>** del volumen de detección de la vista Ver datos por correo electrónico malware **\>** y a la vista Ver datos por correo electrónico phish. En otras palabras, los datos adjuntos de mensajes con direcciones URL de suplantación de identidad (phishing) que tradicionalmente se identificaban como malware ahora podrían identificarse como phishing.
+
 En la **vista Ver datos por phishing \>** de correo electrónico y desglose de gráficos por tecnología de detección, se muestra la siguiente información en el gráfico:
 
 - **Reputación malintencionada**<sup>\*</sup> de la dirección URL: reputación de url malintencionada generada desde Defender para Office 365 detonaciones en otros Microsoft 365 cliente.
@@ -599,6 +602,9 @@ En la **página Estado de protección contra** amenazas, el icono ![Crear progra
 ### <a name="view-data-by-email--malware-and-chart-breakdown-by-detection-technology"></a>Ver datos por malware de \> correo electrónico y desglose de gráficos por tecnología de detección
 
 ![Vista de tecnología de detección de malware en el informe de estado de protección contra amenazas.](../../media/threat-protection-status-report-malware-detection-tech-view.png)
+
+> [!NOTE]
+> A partir de mayo de 2021, las detecciones de malware en el correo electrónico se actualizaron para incluir **direcciones URL nocivas en** los datos adjuntos de los mensajes. Este cambio puede desplazar parte **\>** del volumen de detección de la vista Ver datos por correo electrónico y **\>** a la vista Ver datos por malware de correo electrónico. En otras palabras, las direcciones URL nocivas de los datos adjuntos de mensajes que tradicionalmente se identificaban como suplantación de identidad ahora podrían identificarse como malware.
 
 En la **vista Ver datos por malware de \> correo** electrónico y desglose de gráficos por tecnología de detección, se muestra la siguiente información en el gráfico:
 

@@ -16,26 +16,26 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo usar líneas base para implementar configuraciones de inquilino estándar.
-ms.openlocfilehash: f59ca686892e0b20ce5e9ffb6d62859ce8079896
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 643bb962277d30caf8ea067b9276a5986af8914f
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323155"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504513"
 ---
 # <a name="overview-of-using-baselines-to-deploy-standard-tenant-configurations"></a>Introducción al uso de líneas base para implementar configuraciones de inquilino estándar 
 
-Microsoft 365 Lighthouse línea base proporcionan una forma repetible y escalable de administrar la configuración de seguridad Microsoft 365 en varios inquilinos de clientes. Las líneas base también ayudan a supervisar las directivas de seguridad principales y los estándares de cumplimiento de inquilinos con configuraciones que protegen usuarios, dispositivos y datos.
+Microsoft 365 Lighthouse línea base proporcionan una forma repetible y escalable de administrar la configuración de seguridad Microsoft 365 en varios inquilinos de clientes. Las líneas base proporcionan configuraciones de inquilino estándar que implementan directivas de seguridad principales y estándares de cumplimiento que mantienen seguros a los usuarios, dispositivos y datos de los inquilinos.
 
-Diseñado para ayudar a los proveedores de servicios administrados (MSP) a permitir la adopción de seguridad por parte de los clientes, Lighthouse proporciona un conjunto estándar de parámetros de línea base y configuraciones predefinidas para Microsoft 365 servicios. Estas configuraciones de seguridad ayudan a medir el progreso Microsoft 365 seguridad y cumplimiento de los inquilinos.
+Puede ver la línea base predeterminada y sus pasos de implementación desde Lighthouse. Para aplicar una línea base a un inquilino, seleccione **Inquilinos** en el panel de navegación izquierdo y, a continuación, seleccione un espacio empresarial. A continuación, vaya a la **pestaña Planes de** implementación para iniciar la implementación.
 
-Puede ver la línea base predeterminada y sus pasos de implementación desde Lighthouse. Para aplicar una línea base a un inquilino, seleccione **Inquilinos** en el panel de navegación izquierdo y, a continuación, seleccione un espacio empresarial. A continuación, vaya a la **pestaña Planes de** implementación e implemente la línea base.
+## <a name="lighthouse-baseline"></a>Línea base de Faro
 
-## <a name="default-baseline-security-templates"></a>Plantillas de seguridad de línea base predeterminadas
+Las configuraciones de línea base de Faro están diseñadas para asegurarse de que todos los inquilinos administrados son seguros y compatibles. Seleccione **Líneas base en** el panel de navegación izquierdo para ver la línea base predeterminada que se aplica a todos los inquilinos.  Para ver los pasos de implementación incluidos en la línea base predeterminada, seleccione **Ver línea base** para abrir la página de línea base predeterminada. Seleccione cualquiera de los pasos de implementación para ver los detalles de implementación y el impacto del usuario.
 
-Las configuraciones de línea base predeterminadas de Faro para cargas de trabajo de seguridad están diseñadas para asegurarse de que todos los inquilinos administrados son seguros y compatibles.
+:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Captura de pantalla de la página de línea base predeterminada.":::
 
-Las configuraciones de línea base de la tabla siguiente vienen estándar con la línea base predeterminada de Lighthouse.<br><br>
+### <a name="default-lighthouse-configurations"></a>Configuraciones predeterminadas de Faro
 
 | Configuración de línea base | Descripción |
 |--|--|
@@ -47,6 +47,41 @@ Las configuraciones de línea base de la tabla siguiente vienen estándar con la
 | Configurar firewall de Microsoft Defender para Windows 10 y versiones posteriores | Una directiva de firewall para ayudar a proteger los dispositivos evitando el tráfico de red no deseado y no autorizado. Para obtener más información acerca de esta línea base, consulte [Procedimientos recomendados para configurar el firewall Windows Defender cliente](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
 | Configurar una directiva de cumplimiento de dispositivos para Windows 10 y versiones posteriores | Una Windows de dispositivos con configuraciones preconfiguradas para cumplir los requisitos básicos de cumplimiento. Para obtener más información acerca de esta línea base, consulta [Acceso condicional: Requerir dispositivos Azure AD compatibles o híbridos](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
 
+## <a name="deployment-plans"></a>Planes de implementación
+
+Cada inquilino activo tiene un plan de implementación que incluye los pasos de implementación de la línea Microsoft 365 Lighthouse línea base. Para obtener acceso al plan de implementación de un inquilino, seleccione un inquilino activo en la lista de la página **Inquilinos** y, a continuación, seleccione la **pestaña Plan de** implementación.
+
+:::image type="content" source="../media/m365-lighthouse-deploy-baselines/deployment-plan-tab.png" alt-text="Captura de pantalla de la pestaña Plan de implementación.":::
+
+La pestaña Plan de implementación incluye la siguiente información:
+
+
+|Columna  |Descripción  |
+|---------|---------|
+|Paso de implementación     |  Descripción del paso de implementación.       |
+|Estado     |El estado del paso de implementación.         |
+|Línea base     |Línea base desde la que se deriva el paso de implementación.         |
+|Categoría     | Si el paso de implementación está asociado con la administración de dispositivos, identidad o datos.        |
+|Actualizado por última vez    | La fecha en la que se actualizó por última vez el paso de implementación.        |
+
+
+La pestaña Plan de implementación también incluye las siguientes opciones:
+
+- **Exportar:** Seleccione esta opción para exportar los datos del paso de implementación Excel un archivo de valores separados por comas (.csv).
+- **Actualizar:** Seleccione esta opción para recuperar los datos del paso de implementación más actuales.
+- **Buscar:** Escriba palabras clave para localizar rápidamente un paso de implementación específico en la lista.
+
+## <a name="deployment-steps-and-processes"></a>Pasos y procesos de implementación
+
+El plan de implementación de cada inquilino incluye los pasos de implementación de la línea Microsoft 365 Lighthouse línea base. Cada paso de implementación se compone de uno o varios procesos que deben completarse para cumplir los requisitos del paso de implementación. Cuando un nuevo inquilino se activa, debe completar las actividades de implementación asociadas con los pasos y procesos de implementación.
+
+Para cada paso de implementación, puede realizar las siguientes acciones:
+
+|Acción  |Descripción  |
+|---------|---------|
+| Compartir    |  Permite que el contenido del paso de implementación se comparta a través de un vínculo o por correo electrónico.    |
+| Revisar e implementar    |  Permite al usuario: <ul><li>Cuando se admite, compare las opciones de configuración del paso de implementación con las de las directivas existentes sin implementar la configuración en el espacio empresarial.<br>Los siguientes pasos de implementación admiten la comparación:</br><ul><li>Configurar una directiva de cumplimiento de dispositivos para Windows 10 y versiones posteriores</li><li>Requerir MFA para usuarios finales</li><li>Requerir MFA para administradores</li><li>Bloquear la autenticación heredada</li></ul></li> <li>Implemente las opciones de configuración en el espacio empresarial.</li></ul>**Nota:** Los pasos que no admiten la capacidad de comparar sin implementar la configuración en el espacio empresarial le permitirán revisar las opciones de configuración e implementarlas.|
+| Actualizar el estado del plan de acción    |  Permite al usuario notificar el estado de su plan de acción para el paso de implementación.      |
 
 ## <a name="related-content"></a>Contenido relacionado
 
