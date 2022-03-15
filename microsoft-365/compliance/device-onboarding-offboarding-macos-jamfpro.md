@@ -13,17 +13,17 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo incorporar y incorporar dispositivos macOS en soluciones de cumplimiento Microsoft 365 con JAMF Pro (versión preliminar)
-ms.openlocfilehash: 2399dd901b9c31c3cd824e35bd4db844610125c5
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+description: Obtenga información sobre cómo incorporar y quitar dispositivos macOS en las soluciones de cumplimiento Microsoft 365 con JAMF Pro (versión preliminar)
+ms.openlocfilehash: 3f67acd7f6d6f62b8231a3c92e99551d7b90690d
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159497"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494996"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante JAMF Pro (versión preliminar)
 
-Puede usar jamf Pro para incorporar dispositivos macOS en Microsoft 365 de cumplimiento como la prevención de pérdida de datos de punto de conexión.
+Puede usar jamf Pro para incorporar dispositivos macOS en soluciones de cumplimiento Microsoft 365 como la prevención de pérdida de datos de punto de conexión.
 
 > [!IMPORTANT]
 > Use este procedimiento si ***no tiene*** Microsoft Defender para endpoint (MDE) implementado en sus dispositivos macOS
@@ -35,8 +35,7 @@ Puede usar jamf Pro para incorporar dispositivos macOS en Microsoft 365 de cumpl
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Asegúrese de que los [dispositivos macOS están Azure AD unidos](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
-- Asegúrese de que los [dispositivos macOS se administran a través de JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
+- Asegúrese de que los [dispositivos macOS](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) se administran a través de JAMF pro y que están asociados con una identidad (Azure AD UPN unida) a través de JAMF Conectar o Intune.
 - Instalar el explorador perimetral v95+ en los dispositivos macOS 
 
 ## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>Incorporar dispositivos a Microsoft 365 de cumplimiento con jamf Pro
@@ -45,14 +44,14 @@ Puede usar jamf Pro para incorporar dispositivos macOS en Microsoft 365 de cumpl
 
 |Archivo necesario para |Origen |
 |---------|---------|
-|Paquete de incorporación    |Descargado del paquete de incorporación **del** portal de cumplimiento , nombre de archivo *DeviceComplianceOnboarding.plist* |
+|Paquete de incorporación    |Descargado del paquete de **incorporación del portal** de cumplimiento, nombre de archivo *DeviceComplianceOnboarding.plist* |
 |accesibilidad |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |Filtro de red| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)
 |Extensiones del sistema |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)
 |Preferencia de MDE     |[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)|
 |Preferencia MAU|[com.microsoft.autoupdate2.plist](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.plist)|
-|Paquete de instalación     |descargado del paquete de instalación del portal **de cumplimiento**, nombre de *\* archivo wdav.pkg*\* |
+|Paquete de instalación     |descargado del paquete de instalación del portal **de cumplimiento**, nombre de *\*archivo wdav.pkg*\* |
 
 > [!TIP]
 > Puede descargar los archivos *.mobileconfig* individualmente o [en un único archivo combinado](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) que contenga:
@@ -67,31 +66,31 @@ La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un
 
 ### <a name="get-the-device-onboarding-package"></a>Obtener el paquete de incorporación de dispositivos
 
-1. En **el Centro de** **cumplimiento, Configuración** Incorporación de  >  **dispositivos y** elija **Incorporación.**
+1. En **el Centro de** cumplimiento **, Configuración** >  **Incorporación de dispositivos y** elija **Incorporación**.
  
-1. Para **Seleccionar sistema operativo para iniciar el proceso de incorporación,** elija **macOS**
+1. Para **Seleccionar sistema operativo para iniciar el proceso de incorporación** , elija **macOS**
  
-1. Para **el método Deployment,** **elija Administración de dispositivos móviles/Microsoft Intune**
+1. Para **el método Deployment**, **elija Administración de dispositivos móviles/Microsoft Intune**
  
 1. Elija **Descargar paquete de incorporación**
  
-1. Extrae el contenido del paquete de incorporación de dispositivos. En la carpeta JAMF, debería ver el archivo *DeviceComplainceOnboarding.plist.*
+1. Extrae el contenido del paquete de incorporación de dispositivos. En la carpeta JAMF, debería ver el archivo *DeviceComplainceOnboarding.plist* .
 
 ### <a name="create-a-jamf-pro-configuration-profile-for-the-onboarding-package"></a>Crear un perfil de configuración Pro JAMF para el paquete de incorporación
 
-1. Cree un nuevo perfil de configuración en JAMF Pro. Consulte la guía [de administradores Pro jamf](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use estos valores:
+1. Cree un nuevo perfil de configuración en JAMF Pro. Consulte la guía [de administradores Pro JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use estos valores:
     - Nombre: `MDATP onboarding for macOS`
     - Descripción: `MDATP EDR onboarding for macOS`
     - Categoría: `none`
     - Método de distribución: `install automatically`
     - Nivel: `computer level`
 
-2. En la consola Pro JAMF > **Configuración & personalizada,** elija **cargar** y, a **continuación, agregar**. Use este valor:
+2. En la consola Pro JAMF > **Configuración & personalizada**, elija **Cargar** y, a **continuación, agregar**. Use este valor:
     - Dominio de preferencia: `com.microsoft.wdav.atp`
 
 3. Elija **cargar** y seleccionar el archivo de incorporación **DeviceComplianceOnboarding.plist**.
 
-4. Elija la **pestaña ámbito.**
+4. Elija la **pestaña ámbito** .
 
 5. Elija los equipos de destino.
 
@@ -104,25 +103,25 @@ La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un
 > [!IMPORTANT]
 > Debe usar ***com.microsoft.wdav** _ como el valor dominio de preferencia. Microsoft Defender para endpoint usa este nombre y _ *_com.microsoft.wdav.ext_** para cargar su configuración administrada.
 
-1. Cree un nuevo perfil de configuración en JAMF Pro. Consulte la guía [de administradores Pro jamf](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use estos valores:
+1. Cree un nuevo perfil de configuración en JAMF Pro. Consulte la guía [de administradores Pro JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use estos valores:
     - Nombre: `MDATP MDAV configuration settings`
     - Descripción: deje esto en blanco
     - Categoría: `none`
     - Método de distribución: `install automatically`
     - Nivel: `computer level`
 
-1. En la **pestaña & de Configuración,** elija **Aplicaciones** externas, elija **Agregar** y elija **Esquema** personalizado para el dominio de preferencia. Use este valor:
+1. En la **pestaña & personalizado Configuración**, elija **Aplicaciones** externas, elija **Agregar** y elija **Esquema** personalizado para el dominio de preferencia. Use este valor:
     - Dominio de preferencia: `com.microsoft.wdav`
 
-1. Elija **Agregar esquema** y **Upload** para cargar el *archivo schema.json.*
+1. Elija **Agregar esquema** **y Upload** para cargar el *archivo schema.json*.
 
 1. Seleccione **Guardar**.
 
-1. En **Propiedades de dominio de preferencia,** elija esta configuración
+1. En **Propiedades de dominio de preferencia** , elija esta configuración
     - Características 
         - Use System Extensions: `enabled` - required for network extensions on Catalina
         - Usar prevención de pérdida de datos: `enabled`
-    - El motor antivirus > modo pasivo: `true|false` . Se `true` usa si solo se implementa DLP. Use o no asigne un valor si implementa DLP y `false` Microsoft Defender para endpoint (MDE).
+    - El motor antivirus > modo pasivo: `true|false`. Se `true`usa si solo se implementa DLP. Use `false` o no asigne un valor si implementa DLP y Microsoft Defender para endpoint (MDE).
 
 1. Elija la **pestaña** Ámbito.
 
@@ -133,7 +132,7 @@ La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un
 
 ### <a name="create-and-deploy-a-configuration-profile-for-microsoft-autoupdate-mau"></a>Crear e implementar un perfil de configuración para Microsoft AutoUpdate (MAU)
 
-1. Cree un archivo de configuración Pro JAMF con el archivo de configuración **com.microsoft.autoupdate2.plist**. Consulte la guía [de administradores Pro jamf](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use estos valores:
+1. Cree un archivo de configuración Pro JAMF con **com.microsoft.autoupdate2.plist**. Consulte la guía [de administradores Pro JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use estos valores:
     - Nombre: `MDATP MDAV MAU settings`
     - Descripción: `Microsoft AutoUPdate settings for MDATP for macOS`
     - Categoría: `none`
@@ -142,9 +141,9 @@ La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un
 
 1. En **Application & Custom Configuración** elija **Upload** y **Agregar**.
 
-1. En **Preferencias Dominio** escriba y, a `com.microsoft.autoupdate2` **continuación, elija Upload**.
+1. En **Preferencias,** escriba `com.microsoft.autoupdate2` Dominio y, **a continuación, elija Upload**.
 
-1. Elija el **archivo com.microsoft.autoupdate2.plist.**
+1. Elija el **archivo com.microsoft.autoupdate2.plist** .
 
 1. Seleccione **Guardar**.
 
@@ -159,24 +158,24 @@ La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un
 
 ### <a name="create-and-deploy-a-configuration-profile-for-grant-full-disk-access"></a>Crear e implementar un perfil de configuración para conceder acceso a disco completo
 
-1. Use el **archivo fulldisk.mobileconfig.**
+1. Use el **archivo fulldisk.mobileconfig** .
 
 1. Upload el **archivo fulldisk.mobileconfig** a JAMF. Consulte [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
 ### <a name="create-and-deploy-a-configuration-profile-for-system-extensions"></a>Crear e implementar un perfil de configuración para extensiones del sistema
 
-1. Cree un archivo de configuración de Pro JAMF mediante los procedimientos de la guía de administradores de [jamf Pro jamf](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use estos valores:
+1. Cree un archivo de configuración Pro JAMF mediante los procedimientos de la guía de [administradores Pro JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use estos valores:
     - Nombre: `MDATP MDAV System Extensions`
     - Descripción: `MDATP system extensions`
     - Categoría: `none`
     - Método de distribución: `install automatically`
     - Nivel: `computer level`
 
-1. En **Perfil de extensiones del sistema,** escriba estos valores:
+1. En **Perfil de extensiones del sistema** , escriba estos valores:
     - Nombre para mostrar: `Microsoft Corp. System Extensions`
     - Tipos de extensión del sistema: `Allowed System Extensions`
     - Identificador de equipo: `UBF8T346G9`
-    - Extensiones de sistema permitidas: `com.microsoft.wdav.epsext` , y `com.microsoft.wdav.netext`
+    - Extensiones de sistema permitidas: `com.microsoft.wdav.epsext`, y `com.microsoft.wdav.netext`
 
 1. Elija la **pestaña** Ámbito.
 
@@ -190,23 +189,23 @@ La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un
 
 1.  Use el **archivo netfilter.mobileconfig** que descargó de GitHub.
 
-2.  Upload a JAMF como se describe en Implementar perfiles de configuración [personalizados con Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+2.  Upload a JAMF como se describe en [Implementar perfiles de configuración personalizados con Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ### <a name="grant-accessibility-access-to-dlp"></a>Conceder acceso de accesibilidad a DLP
 
 1. Use el **archivo accessibility.mobileconfig** que descargó de GitHub.
 
-2.  Upload a JAMF como se describe en Implementar perfiles de configuración [personalizados con Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+2.  Upload a JAMF como se describe en [Implementar perfiles de configuración personalizados con Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ### <a name="get-the-installation-package"></a>Obtener el paquete de instalación
 
-1. En **el Centro de** **cumplimiento, Configuración** Incorporación de  >  **dispositivos y** elija **Incorporación.**
+1. En **el Centro de** cumplimiento **, Configuración** >  **Incorporación de dispositivos y** elija **Incorporación**.
  
-1. Para **Seleccionar sistema operativo para iniciar el proceso de incorporación,** elija **macOS**
+1. Para **Seleccionar sistema operativo para iniciar el proceso de incorporación** , elija **macOS**
  
-1. Para **el método Deployment,** **elija Administración de dispositivos móviles/Microsoft Intune**
+1. Para **el método Deployment**, **elija Administración de dispositivos móviles/Microsoft Intune**
  
-1. Elija **Descargar paquete de instalación**. Esto le dará el *archivo wdav.pkg.*
+1. Elija **Descargar paquete de instalación**. Esto le dará el *archivo wdav.pkg* .
 
 
 ### <a name="deploy-the-installation-package"></a>Implementar el paquete de instalación
@@ -217,31 +216,31 @@ La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un
 
 1. Seleccione el equipo y haga clic en el engranaje de la parte superior y, a continuación, elija **Administración del equipo**.
 
-1. En **Paquetes,** **elija +Nuevo**. Escriba estos detalles:
+1. En **Paquetes** , **elija +Nuevo**. Escriba estos detalles:
     - Nombre para mostrar: deje en blanco porque se restablecerá cuando elija el archivo .pkg.
     - Categoría: Ninguno (predeterminado)
-    - Filname: elija archivo, en este caso el `wdav.pkg` archivo.
+    - Nombre de archivo: elija archivo, en este caso el `wdav.pkg` archivo.
 
 1. Elija **Abrir**. Establecer:
-    - **Nombre para mostrar:**`Microsoft Endpoint Technology`
-    - **Archivo de manifiesto:** no obligatorio
-    - **Ficha Opciones:** dejar los valores predeterminados
-    - **Pestaña Limitaciones:** dejar los valores predeterminados
+    - **Nombre para mostrar**: `Microsoft Endpoint Technology`
+    - **Archivo de manifiesto**: no obligatorio
+    - **Ficha Opciones**: dejar los valores predeterminados
+    - **Pestaña Limitaciones**: dejar los valores predeterminados
 
 1. Seleccione **Guardar**. Esto carga el paquete en JAMF Pro.
 
-1. Abra la **página Directivas.**
+1. Abra la **página Directivas** .
 
 1. Elija **+Nuevo** para crear una nueva directiva.
 
 1. Escriba estos valores
-    - **Nombre para mostrar:**`MDATP Onboarding200329 v100.86.92 or later`
+    - **Nombre para mostrar**: `MDATP Onboarding200329 v100.86.92 or later`
 
 1. Elija **Check-in periódico**.
 
 1. Seleccione **Guardar**.
 
-1. Elija   >  **Paquetes Configurar**.
+1. Elija **PackagesConfigure** > .
 
 1. Seleccione **Agregar**.
 
@@ -261,7 +260,7 @@ La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un
 
 1. Reinicie el dispositivo macOS.
 
-1. Abra **Perfiles de**  >  **preferencias del sistema**.
+1. Abra **Preferencias** >  **del sistemaProfiles**.
 
 1. Debería ver:
     - Accessiblity
@@ -276,7 +275,7 @@ La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un
 ## <a name="offboard-macos-devices-using-jamf-pro"></a>Dispositivos macOS fuera de la pantalla con JAMF Pro
 
 1. Desinstalar la aplicación (si no usa MDE)
-    1. Consulte JAMF Pro Docs - Package Deployment - [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)Jamf Pro Administrator's Guide
+    1. Consulte JAMF Pro Docs - Package Deployment - [JAMF Pro administrators guideJamf](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) Pro Administrator's Guide
 
 1. Reiniciar el dispositivo macOS: algunas aplicaciones pueden perder la funcionalidad de impresión hasta que se reinician
 

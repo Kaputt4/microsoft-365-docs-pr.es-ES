@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear simulaciones automatizadas que contienen técnicas y cargas específicas que se inician cuando se cumplen las condiciones especificadas en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 47732960ad5fac9884f388836ea23a2b9283c93c
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 029dce5b7f0b5c6e62b064aa9155d7b07c6a80d7
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419352"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63495030"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatización de la simulación para el aprendizaje de simulación de ataques
 
@@ -247,7 +247,7 @@ En la **página Página de** aterrizaje, se configura la página web a la que se
     Debe configurar las siguientes opciones adicionales en la página **Página de** aterrizaje:
 
     - **Seleccionar diseño de página de aterrizaje**: seleccione una de las 5 plantillas de página de aterrizaje disponibles.
-    - **Agregar logotipo****: haga clic** en Examinar para buscar y seleccionar un archivo .png, .jpeg o .gif para agregar a todas las cargas seleccionadas por Microsoft. Para quitar el logotipo, haga clic en **Quitar**.
+    - **Agregar logotipo****: haga clic** en Examinar para buscar y seleccionar un archivo .png, .jpeg o .gif para agregar a todas las cargas seleccionadas por Microsoft. El tamaño del logotipo debe ser un máximo de 210 x 70 para evitar la distorsión. Para quitar el logotipo, haga clic en **Quitar**.
     - **Indicadores de carga**: esta configuración no está disponible si seleccionó previamente Datos adjuntos de **malware** o **Vincular a malware** en la página [Seleccionar técnicas de ingeniería](#select-one-or-more-social-engineering-techniques) social.
 
       Seleccione **Agregar indicadores de carga al correo electrónico** para ayudar a los usuarios a aprender a identificar mensajes de suplantación de identidad.

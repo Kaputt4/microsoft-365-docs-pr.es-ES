@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Información general sobre la conectividad de red en el Centro Administración de Microsoft 365 red
-ms.openlocfilehash: 3a0f2b8d54c90884a79e79288d173aa5e17c0ef2
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: c2f44ba97cb3d70dbe065df4a5b631f569460bff
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450320"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494546"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Conectividad de red en el Centro Administración de Microsoft 365 red
 
@@ -39,13 +39,11 @@ El Centro Administración de Microsoft 365 ahora incluye métricas de conectivid
 
 Cuando navegue por primera vez a la página de rendimiento de la red, tendrá que configurar las ubicaciones para ver el mapa del rendimiento global de la red, una evaluación de red en el ámbito de todo el inquilino, un porcentaje de los usuarios que trabajan de forma remota frente a in situ y una lista de problemas actuales en los que tomar medidas y/o investigar más. En el panel de información general, puede explorar en profundidad para ver métricas y problemas específicos de rendimiento de red por ubicación. Para obtener más información, consulte [Network performance overview in the Administración de Microsoft 365 Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
-Es posible que se le pida que se una a la versión preliminar pública de esta característica en nombre de su organización. La aceptación suele ocurrir inmediatamente, después de lo cual vería la página de conectividad de red.
-
 Para obtener acceso a la página de conectividad de red, debe ser administrador de la organización en Microsoft 365. El rol administrativo Lector de informes tendrá acceso de lectura a esta información. Para configurar ubicaciones y otros elementos de conectividad de red, un administrador debe tener el rol Administrador de soporte técnico de servicio.
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>Requisitos previos para que aparezcan las evaluaciones de conectividad de red
 
-Para empezar, active la configuración de participación en la ubicación para recopilar automáticamente datos de dispositivos con servicios de ubicación de Windows, vaya a la lista Ubicaciones para agregar o cargar datos de ubicación o ejecute la prueba de conectividad de red Microsoft 365 desde las ubicaciones de la oficina. Aunque la conectividad de red se puede evaluar en toda la organización, las mejoras de diseño de red tendrán que realizarse para ubicaciones de oficina específicas. La información de conectividad de red se proporciona para cada ubicación de oficina una vez que se puedan determinar esas ubicaciones. Existen tres opciones para obtener evaluaciones de red desde las ubicaciones de la oficina:
+Para empezar, active la configuración de participación en la ubicación para recopilar automáticamente datos de dispositivos con servicios de ubicación de Windows, vaya a la lista Ubicaciones para agregar o cargar datos de ubicación o ejecute la prueba de conectividad de red Microsoft 365 desde las ubicaciones de la oficina. Estas tres opciones para la información de ubicación de la oficina se detallan a continuación. Aunque la conectividad de red se puede evaluar en toda la organización, las mejoras de diseño de red tendrán que realizarse para ubicaciones de oficina específicas. La información de conectividad de red se proporciona para cada ubicación de oficina una vez que se puedan determinar esas ubicaciones. Existen tres opciones para obtener evaluaciones de red desde las ubicaciones de la oficina:
 
 ### <a name="1-enable-windows-location-services"></a>1. Habilitar Windows de ubicación
 
@@ -91,9 +89,6 @@ Las muestras de medida y las ubicaciones de oficina deben empezar a aparecer ent
 **Las evaluaciones de** red destilan un agregado de muchas métricas de rendimiento de red en una instantánea del estado de la red empresarial, representada por un valor de puntos de 0 a 100. Las evaluaciones de red están en el ámbito de todo el inquilino y de cada ubicación geográfica desde la que los usuarios se conectan a su inquilino, lo que proporciona a los administradores de Microsoft 365 una forma fácil de comprender instantáneamente el estado de la red de la empresa y profundizar rápidamente en un informe detallado para cualquier ubicación de oficina global.
 
 Las empresas complejas con varias ubicaciones de oficina y arquitecturas perimetrales de red no triviales pueden beneficiarse de esta información durante su incorporación inicial a Microsoft 365 o para corregir los problemas de rendimiento de red detectados con el crecimiento del uso. Esto normalmente no es necesario para pequeñas empresas que usan Microsoft 365, o cualquier empresa que ya tenga conectividad de red sencilla y directa. Se espera que las empresas con más de 500 usuarios y varias ubicaciones de oficina sean las que más se beneficien.
-
->[!IMPORTANT]
->Los conocimientos de red, las recomendaciones de rendimiento y las evaluaciones del Centro de Administración de Microsoft 365 se encuentran actualmente en estado de vista previa y solo están disponibles para los inquilinos Microsoft 365 que se han inscrito en el programa de vista previa de características.
 
 ## <a name="enterprise-network-connectivity-challenges"></a>Enterprise de conectividad de red
 
@@ -218,7 +213,7 @@ La Microsoft 365 principal del servicio es un punto de entrada en la red global 
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>¿Cuál es una puerta Microsoft 365 servicio óptimo?
 
-Una puerta Microsoft 365 servicio óptimo es la más cercana a la salida de la red, generalmente en su ciudad o área metropolitana. Use la [Microsoft 365](office-365-network-mac-perf-onboarding-tool.md) de prueba de conectividad (versión preliminar) para determinar la ubicación de la puerta Microsoft 365 servicio en uso y la puerta principal de servicio óptima. Si la herramienta determina que la puerta principal en uso es óptima, se está conectando de forma óptima a la red global de Microsoft.
+Una puerta Microsoft 365 servicio óptimo es la más cercana a la salida de la red, generalmente en su ciudad o área metropolitana. Use la [herramienta Microsoft 365 prueba](office-365-network-mac-perf-onboarding-tool.md) de conectividad para determinar la ubicación de la puerta Microsoft 365 de servicio en uso y la puerta principal de servicio óptima. Si la herramienta determina que la puerta principal en uso es óptima, se está conectando de forma óptima a la red global de Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>¿Qué es una ubicación de salida de Internet?
 

@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en la prevención de suplantación de identidad mediante el aprendizaje de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 17e4bb55ee2c571c2e66b648d277f0a896551f39
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 5ce7b58410ea53e4f11d746ebc4583b125f1ade6
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419366"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494434"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simular un ataque de suplantación de identidad con entrenamiento de simulación de ataque en Defender para Office 365
 
@@ -249,7 +249,7 @@ Las páginas de aterrizaje seleccionadas por Microsoft están disponibles en 12 
 - **Seleccionar preferencia de página de aterrizaje**: Los valores disponibles son:
   - **Usar la página de aterrizaje predeterminada de Microsoft**: este es el valor predeterminado que tiene las siguientes opciones asociadas para configurar:
     - **Seleccionar diseño de página de aterrizaje**: seleccione una de las plantillas disponibles.
-    - **Agregar logotipo**: haga clic **en Examinar** para buscar y seleccionar un .png, .jpeg o .gif archivo. Para quitar el logotipo, haga clic en **Quitar**.
+    - **Agregar logotipo**: haga clic **en Examinar** para buscar y seleccionar un .png, .jpeg o .gif archivo. El tamaño del logotipo debe ser un máximo de 210 x 70 para evitar la distorsión. Para quitar el logotipo, haga clic en **Quitar**.
     - **Agregar indicadores de carga al** correo electrónico: esta configuración no está disponible si seleccionó previamente Datos adjuntos de **malware** o **Vincular a malware** en la [página Seleccionar](#select-a-social-engineering-technique) técnica.
 
     Para obtener una vista previa de los resultados, haga clic en el **botón Abrir panel de vista previa** en la parte inferior de la página.

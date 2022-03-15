@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 de red
-ms.openlocfilehash: d7fea3d4f2dfbe846a873b6ce0ea34d8373bcc12
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: 5ff858ef652c7fc536310c9d27887863d156fb5d
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327561"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63495016"
 ---
 # <a name="microsoft-365-network-assessment"></a>Microsoft 365 de red
 
@@ -30,7 +30,7 @@ El valor de puntos de evaluación de red va de 0 a 100 y es un promedio de métr
 > [!div class="mx-imgBorder"]
 > ![Valor de evaluación de red.](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
-Un valor de evaluación de red muy bajo sugiere que Microsoft 365 clientes tendrán problemas importantes para conectarse al inquilino o mantener una experiencia de usuario con capacidad de respuesta. Un valor alto indica una red configurada correctamente con pocos problemas de rendimiento continuos. Un valor del 80 % representa una línea base en buen estado, por encima de la cual no debería esperar recibir quejas de usuarios regulares sobre la conectividad Microsoft 365 capacidad de respuesta debido al rendimiento de la red. A medida que se realizan mejoras de conectividad de red iterativa, este valor aumentará junto con la experiencia del usuario.
+Un valor de evaluación de red muy bajo sugiere que Microsoft 365 clientes tendrán problemas importantes para conectarse al inquilino o mantener una experiencia de usuario con capacidad de respuesta. Un valor alto indica una red configurada correctamente con pocos problemas de rendimiento continuos. Un valor del 80 % representa una línea base en buen estado, por encima de la cual no debe esperar recibir quejas regulares de los usuarios sobre Microsoft 365 conectividad o capacidad de respuesta debido al rendimiento de la red. A medida que se realizan mejoras de conectividad de red iterativa, este valor aumentará junto con la experiencia del usuario.
 
 | Evaluación de la red | Experiencia de usuario esperada |
 | :----------------- | :----------------------- |
@@ -40,9 +40,6 @@ Un valor de evaluación de red muy bajo sugiere que Microsoft 365 clientes tendr
 | 40                 | Los usuarios pueden experimentar problemas |
 | 20                 | Los usuarios pueden quejarse       |
 | 0                  | Problemas de red un tema común de discusión |
-
->[!IMPORTANT]
->Los conocimientos de red, las recomendaciones de rendimiento y las evaluaciones del Centro de Administración de Microsoft 365 se encuentran actualmente en estado de vista previa y solo están disponibles para los inquilinos Microsoft 365 que se han inscrito en el programa de vista previa de características.
 
 ## <a name="network-assessment-panel"></a>Panel de evaluación de red
 
@@ -59,13 +56,13 @@ El **historial de evaluaciones** muestra los últimos 30 días de la evaluación
 
 Una evaluación de red mide el diseño del perímetro de red de una ubicación de oficina en la red de Microsoft. Las mejoras en el perímetro de red se realizan mejor en cada ubicación de oficina.
 
-Mostramos un valor de evaluación de red para todo Microsoft 365 inquilino en la página introducción al rendimiento de la red. Este valor es un promedio ponderado de las evaluaciones de red para todas las ubicaciones de oficina. También hay un valor de evaluación de red específico para cada ubicación de oficina detectada en la página de resumen de esa ubicación.
+Se muestra un valor de evaluación de red para todo Microsoft 365 inquilino en la página de información general sobre el rendimiento de la red. Este valor es un promedio ponderado de las evaluaciones de red para todas las ubicaciones de oficina. También hay un valor de evaluación de red específico para cada ubicación de oficina detectada en la página de resumen de esa ubicación.
 
 ## <a name="exchange-online"></a>Exchange Online
 
 Por Exchange Online, se mide la latencia TCP desde el equipo cliente hasta Exchange puerta principal del servicio. Esta latencia se puede ver afectada por la distancia que recorre la red a través de la LAN y wan de los clientes. También puede verse afectado por los servicios o dispositivos intermediarios de red, que retrasan la conectividad o hacen que los paquetes se resienten. Y se impacta por lo lejos que se encuentra la puerta Exchange de servicio más cercana. La mediana (también conocida como percentil 50 o medida P50) se toma para todas las medidas de los tres días anteriores.
 
-La Exchange Online se realiza con la siguiente tabla. Cualquier número de latencia TCP entre los umbrales se asignan puntos linealmente dentro de la banda.
+La Exchange Online evaluación se realiza con la siguiente tabla. Cualquier número de latencia TCP entre los umbrales se asignan puntos linealmente dentro de la banda.
 
 | Latencia TCP   | Points |
 | :------------ | :----- |
@@ -78,9 +75,9 @@ La Exchange Online se realiza con la siguiente tabla. Cualquier número de laten
 
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-Para SharePoint Online, se mide la velocidad de descarga disponible para que un usuario obtenga acceso a un documento SharePoint o OneDrive. Esto se puede ver afectado por el ancho de banda disponible en los circuitos de red entre el equipo cliente y la red de Microsoft. También se ve afectada a menudo por la congestión de la red que existe en cuellos de botella en dispositivos de red complejos o en áreas de Wi-Fi deficiente. La velocidad de descarga se mide en megabytes por segundo, que es aproximadamente una décima parte de un megabits clasificados por circuitos por segundo. La unidad MegaByte por segundo es útil porque puede ver directamente qué archivo de tamaño se puede descargar en 1 segundo. El percentil 25 (también conocido como medida P25) se toma para todas las medidas de los tres días anteriores. Este percentil 25 ayuda a reducir el impacto de la congestión variable con el tiempo.
+Para SharePoint Online, se mide la velocidad de descarga disponible para que un usuario acceda a un documento SharePoint o OneDrive. Esto se puede ver afectado por el ancho de banda disponible en los circuitos de red entre el equipo cliente y la red de Microsoft. A menudo también se ve afectado por la congestión de la red que existe en cuellos de botella en dispositivos de red complejos o en áreas de Wi-Fi deficientes. La velocidad de descarga se mide en megabytes por segundo, que es aproximadamente una décima parte de un megabits clasificados por circuitos por segundo. La unidad MegaByte por segundo es útil porque puede ver directamente qué archivo de tamaño se puede descargar en 1 segundo. El percentil 25 (también conocido como medida P25) se toma para todas las medidas de los tres días anteriores. Este percentil 25 ayuda a reducir el impacto de la congestión variable con el tiempo.
 
-La SharePoint online se realiza con la siguiente tabla. Cualquier número de velocidad de descarga entre los umbrales se asignan puntos linealmente dentro de la banda.
+La SharePoint online se realiza con la tabla siguiente. Cualquier número de velocidad de descarga entre los umbrales se asignan puntos linealmente dentro de la banda.
 
 | Velocidad de descarga | Points |
 | :------------- | :----- |

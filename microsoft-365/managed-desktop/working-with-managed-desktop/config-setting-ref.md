@@ -9,16 +9,19 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 07220c7a1b5e44eecdae247387a95ea6dfd445f1
-ms.sourcegitcommit: 2c3b737e71038f843ef9e9ff4d5b99d6110b8ec5
+ms.openlocfilehash: 2005ead772399f26c3537ac8bf36f6b0810b07fb
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62265420"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63495044"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Referencia de configuración configurable: Escritorio administrado de Microsoft
 
 En este artículo se enumeran las categorías de configuración que los clientes pueden configurar con Microsoft Managed Desktop. Cada categoría de configuración incluye información sobre requisitos, procedimientos recomendados y cómo personalizar la categoría de configuración.
+
+> [!NOTE]
+> Esta página contiene información sobre la configuración solicitada habitualmente. Se aplica al explorador perimetral heredado.
 
 ## <a name="desktop-background-picture"></a>Imagen de fondo de escritorio
 
@@ -36,9 +39,9 @@ Estos requisitos deben cumplirse para una imagen en segundo plano de escritorio:
 
 **Para agregar una imagen de fondo de escritorio personalizada:**
 
-1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos.**
+1. Inicie sesión para [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos**.
 2. En la sección Escritorio administrado de Microsoft, **seleccione Configuración**.
-3. En el **área Configuración** de trabajo, seleccione Imagen de fondo **de escritorio.**
+3. En el área **Configuración**, seleccione **Imagen de fondo de escritorio**.
 4. Escriba la ubicación de la imagen que desea usar.
 5. Seleccione **Implementación de** fase para guardar los cambios e implementarlos en el grupo Prueba.
 
@@ -54,29 +57,29 @@ Debe proporcionar el nombre de dominio completo (FQDN) para los sitios de Intern
 
 **Para agregar una página de inicio del explorador:**
 
-1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos.**
+1. Inicie sesión para [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos**.
 2. En la sección Escritorio administrado de Microsoft, **seleccione Configuración**.
 3. En el área **Configuración** de trabajo, seleccione **Páginas de inicio del explorador**.
 4. Seleccione **Agregar página de inicio**.
-5. En **Agregar página de inicio del explorador,** escriba la dirección URL del sitio que desea usar y, a continuación, seleccione Agregar página de **inicio**.
+5. En **Agregar página de inicio del explorador**, escriba la dirección URL del sitio que desea usar y, a continuación, seleccione **Agregar página de inicio**.
 6. Repita los pasos del 1 al 5 para agregar más páginas de inicio del explorador.
 7. Seleccione **Implementación de** fase para guardar los cambios e implementarlos en el grupo Prueba.
 
-## <a name="enterprise-mode-site-list-location"></a>Enterprise lista de sitios en modo de configuración
+## <a name="enterprise-mode-site-list-location"></a>Enterprise lista de sitios en modo de acceso
 
-Si tienes aplicaciones y sitios web específicos que tienen problemas de compatibilidad con Microsoft Edge, puedes usar la lista de sitios del modo Enterprise para abrir automáticamente los sitios web en Internet Explorer 11. Además, si sabe que los sitios de intranet no funcionan correctamente con Microsoft Edge, puede establecer que todos los sitios de intranet se abran automáticamente en Internet Explorer 11.
+Si tienes sitios web y aplicaciones específicos que tienen problemas de compatibilidad con Microsoft Edge, puedes usar la lista de sitios del modo Enterprise para abrir automáticamente los sitios web en Internet Explorer 11. Además, si sabe que los sitios de intranet no funcionan correctamente con Microsoft Edge, puede establecer que todos los sitios de intranet se abran automáticamente en Internet Explorer 11.
 
-Usar Enterprise significa que puedes seguir usando Microsoft Edge como explorador predeterminado, al tiempo que garantizas que tus aplicaciones sigan funcionando en Internet Explorer 11. Para obtener más información sobre las listas de sitios del modo de empresa, vea [Enterprise Mode y Enterprise Mode Site Lists](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode).
+Usar Enterprise significa que puedes seguir usando Microsoft Edge como explorador predeterminado, al tiempo que garantizas que tus aplicaciones sigan funcionando en Internet Explorer 11. Para obtener más información sobre las listas de sitios del modo de empresa, vea [Enterprise Mode and Enterprise Mode Site Lists](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode).
 
-Puede especificar una ubicación o la ubicación de un recurso compartido interno donde ha hospedado la lista de sitios del `https://` modo de empresa.
+Puede especificar una ubicación `https://` o la ubicación de un recurso compartido interno donde ha hospedado la lista de sitios del modo de empresa.
 
 ### <a name="requirements"></a>Requisitos
 
 Estos requisitos deben cumplirse para el archivo de lista de sitios del modo de empresa:
 
-- Formato de archivo: archivo XML que cumple los [requisitos de archivo](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file).
+- Formato de archivo: archivo XML que cumple los [requisitos del archivo](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file).
 - Ubicación del archivo: archivo host en una ubicación https interna.
-- No permitido: el hospedaje en un recurso compartido de archivos interno, como `//sharename` , no está permitido.
+- No permitido: el hospedaje en un recurso compartido de archivos interno, como `//sharename`, no está permitido.
 
 ### <a name="best-practices"></a>Procedimientos recomendados
 
@@ -84,16 +87,16 @@ Estos procedimientos recomendados se ofrecen para ayudar a los clientes a tomar 
 
 | Práctica | Descripción |
 | ------ | ------ |
-| Elegir un número limitado de sitios | Microsoft Managed Desktop usa Microsoft Edge como explorador preferido para mejorar la seguridad general de la organización y la facilidad de uso para los usuarios. La mayoría de los sitios de esta lista son para aplicaciones web heredadas que necesitan una versión anterior de un explorador que no incluirá tantas características de seguridad. |
+| Elegir un número limitado de sitios | Microsoft Managed Desktop usa Microsoft Edge como explorador preferido para mejorar la seguridad general de la organización y la facilidad de uso para los usuarios. La mayoría de los sitios de esta lista son para aplicaciones web heredadas que necesitan una versión anterior de un explorador. No incluirá tantas características de seguridad. |
 | Considere la posibilidad de una alternativa | Considera otro sitio o aplicación web que no requiera un explorador antiguo. O bien, considere la posibilidad de actualizar el sitio para que pueda usar exploradores más recientes. Los exploradores más recientes usan la tecnología más reciente y ayudan a mejorar la seguridad. |
 
 ### <a name="customize-and-deploy-enterprise-site-mode-list-location"></a>Personalizar e implementar una Enterprise de lista de modo de sitio
 
 **Para agregar una ubicación de lista del modo de sitio de empresa:**
 
-1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos.**
+1. Inicie sesión para [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos**.
 2. En la sección Escritorio administrado de Microsoft, **seleccione Configuración**.
-3. En el área **Configuración** de trabajo, **seleccione Enterprise ubicación de lista de sitios de modo automático**.
+3. En el área **Configuración** de trabajo, **seleccione Enterprise de lista de sitios de modo automático**.
 4. Escriba la ubicación https de la lista de sitios.
 5. Seleccione **Implementación de** fase para guardar los cambios e implementarlos en el grupo Prueba.
 
@@ -114,16 +117,16 @@ Proporcione el nombre de dominio completo (FQDN) para los sitios de Intranet o I
 
 **Para agregar un sitio de confianza:**
 
-1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos.**
+1. Inicie sesión para [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos**.
 2. En la sección Escritorio administrado de Microsoft, **seleccione Configuración**.
-3. En el **área Configuración** de trabajo, seleccione **Sitios de** confianza y, a continuación, seleccione Agregar sitio **de confianza.**
-4. En **Agregar sitio de confianza,** escriba la dirección URL, elija una zona de seguridad y, a continuación, seleccione Agregar sitio de **confianza.**
+3. En el **área Configuración** de trabajo, seleccione **Sitios de** confianza y, a continuación, **seleccione Agregar sitio de confianza**.
+4. En **Agregar sitio de confianza**, escriba la dirección URL, elija una zona de seguridad y, a continuación, **seleccione Agregar sitio de confianza**.
 5. Repita los pasos del 1 al 4 para cada sitio de confianza que desee agregar.
 6. Seleccione **Implementación de** fase para guardar los cambios e implementarlos en el grupo Prueba.
 
 **Para quitar un sitio de confianza:**
 
-1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos.**
+1. Inicie sesión para [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos**.
 2. En la sección Escritorio administrado de Microsoft, **seleccione Configuración**.
 3. En **Configuración** área de trabajo, seleccione **Sitios de confianza**.
 4. Seleccione el sitio que desea eliminar y, a continuación, **seleccione Eliminar**.
@@ -134,7 +137,7 @@ Proporcione el nombre de dominio completo (FQDN) para los sitios de Intranet o I
 
 Puede administrar la configuración de proxy de red para su organización. Agregue el servidor proxy y el número de puerto y, a continuación, agregue las excepciones del sitio proxy.
 
-Microsoft Managed Desktop incluye un conjunto de excepciones de proxy predeterminadas necesarias para que el servicio funcione. El servicio de Escritorio administrado de Microsoft solo puede modificar la lista de exclusión predeterminada. Para obtener más información, vea [Configuración de red para Microsoft Managed Desktop](../get-ready/network.md).
+Microsoft Managed Desktop incluye un conjunto de excepciones de proxy predeterminadas necesarias para que el servicio funcione. El servicio de Escritorio administrado de Microsoft solo puede modificar la lista de exclusión predeterminada. Para obtener más información, consulte [Configuración de red para Escritorio administrado de Microsoft](../get-ready/network.md).
 
 Las excepciones de sitio proxy agregadas en el portal de Escritorio administrado de Microsoft se agregan a las excepciones de proxy predeterminadas incluidas con el servicio de Escritorio administrado de Microsoft.
 
@@ -152,10 +155,10 @@ Estos requisitos deben cumplirse para las excepciones de servidor proxy y sitio 
 
 **Para agregar una excepción de sitio proxy individual:**
 
-1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos.**
+1. Inicie sesión para [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al **menú Dispositivos**.
 2. En la sección Escritorio administrado de Microsoft, **seleccione Configuración**.
 3. En el **área Configuración** de trabajo, seleccione **Proxy**.
-4. Escriba el **número de** dirección **y puerto** del servidor proxy y, a continuación, seleccione **Agregar excepción de proxy.**
+4. Escriba el **número de** dirección **y puerto** del servidor proxy y, a continuación, seleccione **Agregar excepción de proxy**.
 5. Escriba la dirección URL de un sitio http válido y, a continuación, **seleccione Agregar excepción de proxy**.
 6. Repita los pasos del 1 al 5 para cada sitio de confianza que desee agregar.
 7. Seleccione **Implementación de** fase para guardar los cambios e implementarlos en el grupo Prueba.
