@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Aprenda a usar la dirección IP de Office 365 y el servicio web URL para identificar y diferenciar mejor el tráfico de red de Office 365.
-ms.openlocfilehash: 5af1ca60a6e7b7f28ad1d5c3268c85fb399fb926
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: e4976bafbedc8f5289e2992569bbd5de28e9de75
+ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806557"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63494490"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>El servicio web de URL y dirección IP de Office 365
 
@@ -78,7 +78,7 @@ Los parámetros del método web de versión son:
 
 - **AllVersions=\<true \| false\>**: de forma predeterminada, la versión devuelta es la más reciente. Incluya este parámetro opcional para solicitar todas las versiones publicadas desde la primera publicación del servicio web.
 - **Format=\<JSON \| CSV \| RSS\>**: además de los formatos JSON y CSV, el método web de versión también admite RSS. Puede usar este parámetro opcional con el parámetro _AllVersions=true_ para solicitar una fuente RSS que pueda usarse con Outlook u otros lectores de RSS.
-- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>**: este parámetro opcional especifica la instancia para la que se devolverá la versión. Si se omite, se devuelven todas las instancias. Instancias válidas son: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
+- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>**: este parámetro opcional especifica la instancia para la que se devolverá la versión. Si se omite, se devuelven todas las instancias. Las instancias válidas son: Worldwide, China, USGovDoD, USGovGCCHigh.
 
 El método web de versión no tiene una tasa limitada y no devuelve nunca códigos de respuesta HTTP 429. La respuesta al método web de versión incluye un encabezado de control de caché que recomienda el almacenamiento en caché de los datos durante una hora. El resultado del método web de versión puede ser un registro único o una matriz de registros. Los elementos de cada registro son:
 
@@ -108,10 +108,6 @@ Este URI devuelve la versión más reciente de cada instancia de servicio de Off
  },
  {
   "instance": "China",
-  "latest": "2018063000"
- },
- {
-  "instance": "Germany",
   "latest": "2018063000"
  }
 ]
@@ -183,7 +179,7 @@ Los parámetros del método web de puntos de conexión son:
 - **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>**: una lista de áreas de servicio separada por comas. Los elementos válidos son _Common_, _Exchange_, _SharePoint_ y _Skype_. Como los elementos del área de servicio _Common_ son un requisito previo de todas las demás áreas de servicio, el servicio web siempre los incluye. Si no incluye este parámetro, se devolverán todas las áreas de servicio.
 - **TenantName=\<tenant_name\>**: el nombre de espacio empresarial de Office 365. El servicio web toma el nombre que usted proporciona y lo inserta en las partes de URL que incluyen el nombre de inquilino. Si no proporciona un nombre de inquilino, los elementos de las direcciones URL tendrán el carácter comodín (\*).
 - **NoIPv6=\<true \| false\>**: establezca el valor en _true_ para excluir direcciones IPv6 del resultado si no usa IPv6 en la red.
-- **Instance=\<Worldwide \| China \| Germany \| USGovDoD \| USGovGCCHigh\>**: este parámetro obligatorio especifica la instancia desde la que se devuelven los puntos de conexión. Instancias válidas son: _Worldwide_, _China_, _Germany_, _USGovDoD_ y _USGovGCCHigh_.
+- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>**: este parámetro obligatorio especifica la instancia desde la que se devuelven los puntos de conexión. Las instancias válidas son: _Worldwide_, _China_, _USGovDoD_ y _USGovGCCHigh_.
 
 Si llama al método web de puntos de conexión demasiadas veces desde la misma dirección IP de cliente, es posible que reciba el código de respuesta HTTP _429 (Demasiadas solicitudes)_. Si recibe este código de respuesta, espere 1 hora antes de repetir la solicitud o genere un nuevo GUID. Como recomendación general, solo debe llamar al método web de puntos de conexión cuando el método web de versión indica que hay una nueva versión disponible.
 
@@ -191,11 +187,11 @@ El resultado del método web de extremos es una matriz de registros en la que ca
 
 - id: el número de identificador inmutable del conjunto de puntos de conexión.
 - serviceArea: el área de servicio que forma parte de: _Common_, _Exchange_, _SharePoint_ o _Skype_.
-- urls: las direcciones URL del conjunto de puntos de conexión. Una matriz JSON de registros DNS. Se omite si está en blanco.
-- tcpPorts: los puertos TCP para el conjunto de puntos de conexión. El formato de todos los elementos de los puertos es una lista separada por coma de puertos o intervalos de puertos separados por un carácter de guión (-). Los puertos se aplican a todas las direcciones IP y URL en el conjunto de puntos de conexión de una categoría determinada. Se omite si está en blanco.
-- udpPorts: los puertos UDP para los intervalos de direcciones IP en el conjunto de puntos de conexión. Se omite si está en blanco.
-- ips: los intervalos de direcciones IP asociados al punto de conexión, a su vez, asociado a los puertos TCP o UDP enumerados. Una matriz JSON de intervalos de direcciones IP. Se omite si está en blanco.
-- category: la categoría de conectividad para el conjunto de puntos de conexión. Los valores válidos son _Optimize_, _Allow_ y _Default_. Si busca el resultado del método web de puntos de conexión para la categoría de una dirección IP o dirección URL específica, es posible que la consulta devuelva varias categorías. En ese caso, siga la recomendación de la categoría de prioridad más alta. Por ejemplo, si el punto de conexión se muestra tanto en _Optimize_ como en _Allow_, debe seguir los requisitos de _Optimize_. Obligatorio.
+- urls: las direcciones URL del conjunto de puntos de conexión. Una matriz de JSON de registros DNS. Se omite si está en blanco.
+- tcpPorts: los puertos TCP del conjunto de puntos de conexión. Todos los elementos de los puertos tienen formato de lista de valores separados por comas de puertos o intervalos de puertos separados por un carácter de guión (-). Los puertos se aplican a todas las direcciones IP y todas las direcciones URL en ese conjunto de puntos de conexión para esa categoría. Se omite si está en blanco.
+- udpPorts: los puertos UDP para los intervalos de direcciones IP en este conjunto de puntos de conexión. Se omite si está en blanco.
+- ips: los intervalos de direcciones IP asociados a este conjunto de puntos de conexión que se establece como asociado a los puertos TCP o UDP mencionados. Una matriz de JSON de intervalos de direcciones IP. Se omite si está en blanco.
+- category: la categoría de conectividad para el conjunto de puntos de conexión. Los valores válidos son _Optimizar_, _Permitir_ y _Predeterminado_. Si realiza una búsqueda del resultado del método web de puntos de conexión para la categoría de una dirección IP o URL específica, es posible que la consulta muestre varias categorías. En ese caso, siga la recomendación para la categoría de prioridad más alta. Por ejemplo, si el punto de conexión aparece tanto en _Optimizar_ como en _Permitir_, debe seguir los requisitos para _Optimizar_. Obligatorio.
 - expressRoute: _True_ si este conjunto de puntos de conexión se enruta a través de ExpressRoute; _False_ en caso contrario.
 - required: _verdadero_ si se requiere que el conjunto de extremos tenga conectividad para Office 365 para ser compatible. _Falso_ si el conjunto de extremos es opcional.
 - notes: para puntos de conexión opcionales, este texto describe la funcionalidad de Office 365 que no estará disponible si no se puede tener acceso a las direcciones IP o a las direcciones URL en el conjunto de puntos de conexión en el nivel de red. Se omite si está en blanco.
@@ -267,7 +263,7 @@ El resultado del método web de cambios es una matriz de registros en la que cad
   MovedIpOrUrl: se ha pasado una dirección IP o una dirección URL entre este conjunto de puntos de conexión y otro. Por lo general, no es necesario realizar ninguna acción.
   RemovedDuplicateIpOrUrl: se ha eliminado una dirección IP o URL duplicada, pero aún está publicada para Office 365. Por lo general, no es necesario realizar ninguna acción.
   OtherNonPriorityChanges: se ha cambiado algo menos importante que todas las demás opciones, como el contenido de un campo de nota.
-- version: la versión del conjunto de puntos de conexión publicado en la que se ha hecho el cambio. Los números de versión tienen el formato _YYYYMMDDNN_, donde _NN_ es un número natural incrementado si hay varias versiones que deben publicarse en un solo día.
+- version: la versión del conjunto de puntos de conexión publicado en la cual se introdujo el cambio. Los números de versión están en el formato _AAAAMMDDNN_, donde _NN_ es un número natural que se incrementa si hay varias versiones que deben publicarse en un solo día.
 - previous: una subestructura en la que se detallan los valores anteriores de los elementos que se modificaron en el conjunto de puntos de conexión. Esto no se incluye para los conjuntos de extremos recién añadidos.  Incluye _ExpressRoute_, _serviceArea_, _category,_, _required_, _tcpPorts_, _udpPorts_ y _notes_.
 - current: una subestructura en la que se detallan los valores actualizados de los elementos de los cambios en el conjunto de puntos de conexión. Incluye _ExpressRoute_, _serviceArea_, _category,_, _required_, _tcpPorts_, _udpPorts_ y _notes_.
 - add: una subestructura en la que se detallan los elementos que se agregarán a colecciones de conjuntos de puntos de conexión. Se omite si no hay adiciones.
@@ -528,7 +524,7 @@ else {
 
 ## <a name="example-python-script"></a>Ejemplo de script de Python
 
-Este es un script de Python probado con Python 3.6.3 en Windows 10, que se puede ejecutar para ver si hay acciones que se necesitan realizar para los datos actualizados. Este script comprueba el número de versión de los puntos de conexión de instancia Worldwide de Office 365. Cuando se produzca un cambio, descarga los puntos de conexión y los filtros de los puntos de conexión para las categorías de _Permitir_ y _Optimizar_. También usa un único ClientRequestId en múltiples llamadas y guarda la versión más reciente que se encuentra en un archivo temporal. Llama a este script una vez por hora para comprobar si hay una actualización de versión.
+Este es un script de Python, probado con Python 3.6.3 en Windows 10, que puede ejecutar para ver si debe realizar alguna acción para los datos actualizados. Este script comprueba el número de versión de los puntos de conexión de la instancia Worldwide de Office 365. Cuando se produce un cambio, se descargan los puntos de conexión y filtros de los puntos de conexión de categoría _Permitir_ y _Optimizar_. También se usa un único ClientRequestId en varias llamadas y se guarda la versión más reciente que se encuentra en un archivo temporal. Debe llamar a este script una vez por hora para comprobar si hay una actualización de versión.
 
 ```python
 import json
