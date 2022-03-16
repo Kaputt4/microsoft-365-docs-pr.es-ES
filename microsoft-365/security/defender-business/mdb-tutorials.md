@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: c955b85001a141933227873a1f74e681f74b004b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e1ef67f3f3011a660793858900f41f50c0e503b0
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322945"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512996"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Tutoriales y simulaciones en Microsoft Defender para empresas
 
@@ -30,7 +30,7 @@ ms.locfileid: "63322945"
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
-Si acaba de configurar Microsoft Defender para empresas, puede que se pregunte dónde empezar a aprender sobre cómo funciona Defender for Business. En este artículo se describen los escenarios de vista previa que se van a probar y varios tutoriales y simulaciones disponibles para Defender para empresas. Estos recursos están diseñados para ayudarle a ver cómo Defender para empresas puede funcionar para su organización.
+Si acaba de configurar Microsoft Defender para empresas, puede que se pregunte dónde empezar a aprender sobre cómo funciona Defender for Business. En este artículo se describen los escenarios de vista previa que se van a probar y varios tutoriales y simulaciones disponibles para Defender para empresas. Estos recursos están diseñados para ayudarle a ver cómo Defender for Business puede funcionar para su empresa.
 
 >
 > **¿Tiene un minuto?**
@@ -48,7 +48,7 @@ En la tabla siguiente se resumen varios escenarios para probar con Defender para
 | Incorporar dispositivos con un script local <br/>(*no para la implementación de producción*)     | En Defender para empresas, puedes incorporar hasta diez Windows 10 y 11 dispositivos con un script que descargues y ejecutes en cada dispositivo. Adecuado para evaluar cómo defender para empresas funcionará en su entorno, el script crea una confianza con Azure Active Directory (Azure AD) e inscribe el dispositivo con Microsoft Intune. Para obtener más información, [vea Script local en Defender for Business](mdb-onboard-devices.md#local-script-in-defender-for-business).         |
 | Incorporar dispositivos con Microsoft Intune     | Si ya usaste Microsoft Intune para obtener Defender for Endpoint, puedes seguir usando Microsoft Intune para incorporar dispositivos. Prueba a incorporar dispositivos macOS, iOS y Android con Microsoft Intune. Para obtener más información, consulta [Inscripción de dispositivos en Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
 | Editar directivas de seguridad     | Si estás administrando las directivas de seguridad en Defender para empresas, usa la página **Configuración del** dispositivo para ver y editar las directivas. Para obtener más información, consulta [Ver o editar directivas en Microsoft Defender para empresas](mdb-view-edit-policies.md).        |
-| Ejecutar un ataque simulado   | Hay varios tutoriales y simulaciones disponibles en Defender para empresas. Estos tutoriales y simulaciones están diseñados para mostrar de primera mano cómo las características de protección contra amenazas de Defender para empresas pueden funcionar para su organización. Para probar uno o varios de los tutoriales, consulta [Tutoriales recomendados para Microsoft Defender para empresas](#recommended-tutorials-for-defender-for-business).         |
+| Ejecutar un ataque simulado   | Hay varios tutoriales y simulaciones disponibles en Defender para empresas. Estos tutoriales y simulaciones están diseñados para mostrar de primera mano cómo las características de protección contra amenazas de Defender for Business pueden funcionar para su empresa. Para probar uno o varios de los tutoriales, consulta [Tutoriales recomendados para Microsoft Defender para empresas](#recommended-tutorials-for-defender-for-business).         |
 | Ver incidentes en Microsoft 365 Lighthouse     | Si es [un Proveedor de soluciones en la nube de Microsoft con](/partner-center/enrolling-in-the-csp-program) Microsoft 365 Lighthouse, podrá ver los incidentes en los inquilinos de sus clientes en el portal de Microsoft 365 Lighthouse próximamente. Para obtener más información, [vea Microsoft 365 Lighthouse y Microsoft Defender para empresas](mdb-lighthouse-integration.md).       |
 
 
@@ -62,7 +62,7 @@ En la tabla siguiente se describen los tutoriales recomendados para los clientes
 |---------|---------|
 | **El documento deja atrás la puerta trasera**     | Simular un ataque que introduce malware basado en archivos en un dispositivo de prueba. En el tutorial se describe cómo obtener y usar el archivo de simulación y qué se debe ver en el portal Microsoft 365 Defender simulación. <br/><br/>Este tutorial requiere Microsoft Word instalarse en el dispositivo de prueba.   |
 | **Tutorial de respuesta en directo**     | Aprende a usar comandos básicos y avanzados con Live Response. Obtén información sobre cómo localizar un archivo sospechoso, corregir el archivo y recopilar información en un dispositivo.   |
-| **Administración & vulnerabilidad de amenazas (escenarios principales)**     | Obtenga información sobre Administración de amenazas y vulnerabilidades tres escenarios: <br/><br/>1. Reduzca la exposición a amenazas y vulnerabilidades de su organización. <br/>2. Solicitar una corrección. <br/>3. Cree una excepción para las recomendaciones de seguridad. <br/><br/> Threat and administración de vulnerabilidades uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.      |
+| **Administración & vulnerabilidad de amenazas (escenarios principales)**     | Obtenga información sobre Administración de amenazas y vulnerabilidades tres escenarios: <br/><br/>1. Reduzca la exposición a amenazas y vulnerabilidades de su empresa. <br/>2. Solicitar una corrección. <br/>3. Cree una excepción para las recomendaciones de seguridad. <br/><br/> Threat and administración de vulnerabilidades uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.      |
 
 Cada tutorial incluye un documento de tutorial que explica el escenario, cómo funciona y qué hacer.
 
@@ -81,7 +81,7 @@ Cada tutorial incluye un documento de tutorial que explica el escenario, cómo f
    - **Tutorial de respuesta en directo**
    - **Administración & vulnerabilidad de amenazas (escenarios principales)**
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Administrar dispositivos en Microsoft Defender para empresas](mdb-manage-devices.md)
 

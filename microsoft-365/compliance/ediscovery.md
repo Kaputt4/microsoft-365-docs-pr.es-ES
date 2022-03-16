@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 ofrece tres herramientas de exhibición de documentos electrónicos que puede usar para buscar y exportar contenido encontrado en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la Empresa, grupos de Microsoft 365, Microsoft Teams , y Skype Empresarial conversaciones. La exhibición de documentos electrónicos Advanced eDiscovery proporciona muchas características adicionales que le ayudarán a administrar las investigaciones.
-ms.openlocfilehash: e92619ff0ecbfcdbdf1a7f41eb4cd35282a6f2d9
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: cccc30dd649dc5abe74c551434e904236ecf9d35
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494518"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512494"
 ---
 # <a name="ediscovery-solutions-in-microsoft-365"></a>Soluciones de eDiscovery en Microsoft 365
 
@@ -132,8 +132,8 @@ En las secciones siguientes se muestran los requisitos mínimos de suscripción 
 - Microsoft 365 de G1
 - Microsoft 365 F1 de F3 o F3, o el complemento de seguridad F5
 - Microsoft 365 Empresa Premium suscripción
-- Microsoft 365 Empresa Estándar
-- Microsoft 365 Empresa Básico
+- Microsoft 365 Empresa Estándar suscripción
+- Suscripción a Microsoft 365 Empresa Básico
 - Suscripción a Office 365 Educación A1
 - Office 365 E1 suscripción
 
@@ -184,6 +184,6 @@ Consulte los siguientes artículos para obtener más información y empezar a us
 
 Para ver qué características de exhibición de documentos electrónicos se han iniciado, están implementando o en desarrollo, consulte el [Microsoft 365 guía](https://aka.ms/eDiscoRoadMap) básica.
 
-## <a name="training"></a>Aprendizaje
+## <a name="training"></a>Formación
 
 La formación de los administradores de TI, los administradores de exhibición de documentos electrónicos y los equipos de investigación de cumplimiento en los conceptos básicos de búsqueda de contenido, exhibición de documentos electrónicos principales y Advanced eDiscovery puede ayudar a su organización a empezar a usar más rápidamente Microsoft 365 herramientas de exhibición de documentos electrónicos. Microsoft 365 proporciona el siguiente recurso para ayudar a estos usuarios de la organización a empezar con la exhibición de documentos electrónicos: describir las capacidades de [eDiscovery y auditoría de Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).

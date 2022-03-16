@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 4e87b8b2bbf926e231e5d610e212f7b73005d1ce
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 02ecd2d84684e4b388c11ff71d79992330172091
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449139"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512660"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>Asignar roles y permisos en Microsoft Defender para empresas
 
@@ -52,7 +52,7 @@ En la tabla siguiente se describen los tres roles que se pueden asignar en Defen
 
 | Nivel de permisos | Descripción |
 |:---|:---|
-| **Administradores globales** (también denominados administradores globales) <br/><br/> *Como práctica recomendada, limite el número de administradores globales.* | Los administradores globales pueden realizar todo tipo de tareas. La persona que se ha registrado en la organización para Microsoft 365 o para Microsoft Defender para empresas es un administrador global de forma predeterminada. <br/><br/> Los administradores globales pueden acceder o cambiar la configuración en todos Microsoft 365 portales, como: <br/>- El Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) |
+| **Administradores globales** (también denominados administradores globales) <br/><br/> *Como práctica recomendada, limite el número de administradores globales.* | Los administradores globales pueden realizar todo tipo de tareas. La persona que se ha registrado en su empresa para Microsoft 365 o para Microsoft Defender para empresas es un administrador global de forma predeterminada. <br/><br/> Los administradores globales pueden acceder o cambiar la configuración en todos Microsoft 365 portales, como: <br/>- El Centro de administración de Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) |
 | **Administradores de seguridad** (también denominados administradores de seguridad) | Los administradores de seguridad pueden realizar las siguientes tareas: <br/>- Ver y administrar directivas de seguridad <br/>- Ver y administrar alertas y amenazas de seguridad (estas actividades incluyen realizar acciones de respuesta en puntos de conexión) <br/>- Ver información e informes de seguridad |
 | **Lector de seguridad** | Los lectores de seguridad pueden realizar las siguientes tareas: <br/>- Ver directivas de seguridad <br/>- Ver alertas y amenazas de seguridad <br/>- Ver información e informes de seguridad  |
 
@@ -79,7 +79,7 @@ En la tabla siguiente se describen los tres roles que se pueden asignar en Defen
    - Para agregar un rol, elija **+ Agregar asignaciones**.
    - Para quitar un rol, elija **X Quitar asignaciones**. 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Continúe con:
 

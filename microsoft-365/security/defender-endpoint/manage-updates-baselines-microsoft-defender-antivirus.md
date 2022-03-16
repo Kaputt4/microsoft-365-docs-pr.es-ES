@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 2f6f2135e81bf99f6391b75067ad89d1af3a712c
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: be3dcfd23c0fb77604cec140a4b1d3606f6ee345
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468714"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63513050"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -85,6 +85,27 @@ Todas nuestras actualizaciones contienen
 - Mejoras de integración (nube, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>Febrero-2022 (Plataforma: 4.18.xxxx.xx | Motor: 1.1.19000.8)</summary>
+
+&ensp;Versión de actualización de inteligencia de seguridad: **1.357.x.x**<br/>
+&ensp;Publicado: **14 de marzo de 2022**<br/>
+&ensp;Plataforma: **4.18.xxxx.xx**<br/>
+&ensp;Motor: **1.1.19000.8**<br/>
+&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**<br/>
+
+Versión del motor: 1.1.19000.8 <br/>
+Versión de actualización de inteligencia de seguridad: 1.357.x.x <br/>
+
+### <a name="whats-new"></a>Novedades
+
+- Próximamente
+
+### <a name="known-issues"></a>Problemas conocidos
+
+Sin problemas conocidos
+
+<br/><br/>
+</details><details>
 <summary>Enero-2022 (Plataforma: 4.18.2201.10 | Motor: 1.1.18900.2)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.357.8.0**<br/>
@@ -138,14 +159,21 @@ Versión del motor: 1.1.18800.4 Versión de actualización de inteligencia de se
 ### <a name="known-issues"></a>Problemas conocidos
 Sin problemas conocidos
 <br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Actualizaciones de versiones anteriores: solo compatibilidad con actualizaciones técnicas
+
+Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico. Las versiones anteriores a las que se enumeran en esta sección y solo se proporcionan para soporte técnico de actualización.<br/><br/>
+
+<details>
 <summary> Octubre-2021 (Plataforma: 4.18.2110.6 | Motor: 1.1.18700.4)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.353.3.0**<br/>
 &ensp;Publicado: **28 de octubre de 2021**<br/>
 &ensp;Plataforma: **4.18.2110.6**<br/>
 &ensp;Motor: **1.1.18700.4**<br/>
-&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**<br/>
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**<br/>
 
 Versión del motor: 1.1.18700.4 Versión de actualización de inteligencia de seguridad: 1.353.3.0
 
@@ -160,14 +188,7 @@ Versión del motor: 1.1.18700.4 Versión de actualización de inteligencia de se
 ### <a name="known-issues"></a>Problemas conocidos
 Sin problemas conocidos
 <br/>
-</details>
-
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Actualizaciones de versiones anteriores: solo compatibilidad con actualizaciones técnicas
-
-Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico. Las versiones anteriores a las que se enumeran en esta sección y solo se proporcionan para soporte técnico de actualización.<br/><br/>
-
-<details>
+</details><details>
 <summary> Septiembre-2021 (Plataforma: 4.18.2109.6 | Motor: 1.1.18600.4)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.351.7.0**<br/>

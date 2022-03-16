@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: En este artículo, obtendrá información sobre los procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados.
-ms.openlocfilehash: ffe1219c468deef8c78e51e410e862ec52532483
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4541f1b6021c5d58f27366bb508ccdaa216010d9
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323841"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512340"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados.
 
@@ -117,7 +117,7 @@ Crear una regla DLP
    ![Recorte de pantalla de las opciones de condiciones, tipos de información confidencial, etiquetas de confidencialidad y etiquetas de retención.](../media/limit-accidental-exposure-dlp-conditions.png)
 
 10. En **Acciones** haga clic en **Agregar una acción** y elija **Restringir el acceso o cifrar el contenido en la ubicaciones de Microsoft 365**.
-11. Active la casilla **Restringir el acceso o cifrar el contenido de las ubicaciones de Microsoft 365** y, después, elija la opción **Solo personas a las que se les ha concedido el acceso al contenido mediante las opciones "Cualquiera con el vínculo"**.
+11. Active la casilla **Restringir el acceso o cifrar el contenido de las ubicaciones de Microsoft 365** y, después, elija la opción **Solo personas a las que se les ha concedido el acceso al contenido mediante las opciones “Cualquiera con el vínculo”**.
 
       ![Recorte de pantalla de las opciones de acción de reglas DLP.](../media/limit-accidental-exposure-dlp-anyone-links.png)
 

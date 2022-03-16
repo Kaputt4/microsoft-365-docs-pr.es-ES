@@ -7,18 +7,18 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: e8fc4782d106e46061bf0c75cb3d5ed5400e9980
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 336a0d053f2fe3a14626ffe4aa2c7df56eecebda
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449377"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512886"
 ---
 # <a name="set-up-email-notifications"></a>Configurar notificaciones por correo electrónico
 
@@ -61,7 +61,7 @@ Al configurar las notificaciones por correo electrónico, puede elegir entre dos
 
 ## <a name="view-and-edit-email-notifications"></a>Ver y editar notificaciones de correo electrónico
 
-Para ver o editar la configuración de notificaciones por correo electrónico de su organización, siga estos pasos:
+Para ver o editar la configuración de notificaciones por correo electrónico de su empresa, siga estos pasos:
 
 1. Vaya al portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
@@ -75,7 +75,7 @@ Para ver o editar la configuración de notificaciones por correo electrónico de
 
    - Si tiene reglas creadas, seleccione una regla para editarla. También puede eliminar una regla. 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Continúe con:
 

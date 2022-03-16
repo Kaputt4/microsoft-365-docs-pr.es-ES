@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga ayuda para solucionar problemas y mensajes de error.
-ms.openlocfilehash: da1a247c789754f75642caff78418a0b405ec5b0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e39eea66222852d8f331aa6bc68b386bea3da763
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331204"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63513037"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>Solucionar problemas y resolver mensajes de error en Microsoft 365 Lighthouse
 
@@ -128,16 +128,10 @@ Para los clientes con relaciones DAP, el administrador del partner tendrá que a
 
 **Resolución:** Cuando se agrega un dispositivo de inquilino, espere 4 horas para que los datos del dispositivo aparezcan en Lighthouse.
 
-Si los datos siguen sin aparecer en las páginas de administración de amenazas y cumplimiento de dispositivos después de seguir las instrucciones de resolución, póngase en contacto con el soporte técnico. Para obtener más información, vea [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
-
-### <a name="there-are-no-windows-365-business-cloud-pcs-in-lighthouse"></a>No hay equipos en la nube de Windows 365 Empresa en Lighthouse  
-
-**Causa**: Actualmente, Lighthouse no admite la visualización y administración de equipos con Windows 365 Business Cloud.
-
-**Resolución:** Puedes ver y administrar los equipos de Windows 365 Business Cloud en el Centro de administración de [Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) o en [https://windows365.microsoft.com](https://windows365.microsoft.com).
+Si los datos siguen sin aparecer en las páginas de administración de amenazas y cumplimiento de dispositivos después de seguir las instrucciones de resolución, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Problemas conocidos con El faro de Microsoft 365](m365-lighthouse-known-issues.md) (artículo)\
-[Preguntas más frecuentes sobre El faro de Microsoft 365](m365-lighthouse-faq.yml) (artículo)\
+[Problemas conocidos con Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (artículo)\
+[Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)\
 [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (artículo)

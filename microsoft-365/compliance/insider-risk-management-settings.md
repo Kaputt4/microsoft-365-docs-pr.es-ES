@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 62616ed20513ee023986525b4f097c96ae3107ba
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f80ab9fcb0a3e057a20c22ff05c3a960cdf7eab4
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330613"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512940"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
@@ -37,6 +37,7 @@ La configuración de administración de riesgos de Insider se aplica a todas las
 - Power Automate flujos (versión preliminar)
 - Microsoft Teams (versión preliminar)
 - Análisis
+- Notificaciones de administrador
 
 Antes de empezar y crear directivas de administración de riesgos internas, es importante comprender esta configuración y elegir los niveles que mejor se adapten a las necesidades de cumplimiento de la organización.
 
@@ -530,7 +531,7 @@ El análisis busca eventos de actividad de riesgo de varios orígenes para ayuda
 - **Azure Active Directory**: incluido en todos los exámenes, el historial Azure Active Directory ayuda a identificar actividades de riesgo asociadas con usuarios con cuentas de usuario eliminadas.
 - **Microsoft 365 de datos de** recursos humanos: si están configurados, los eventos del conector de RECURSOS humanos ayudan a identificar actividades de riesgo asociadas con usuarios que tienen dimisión o próximas fechas de terminación.
 
-La información de análisis de los exámenes se basa en las mismas señales de actividad de riesgo que usan las directivas de administración de riesgos internas y los resultados de informes basados en actividades de usuario de secuencia y únicas. Sin embargo, la puntuación de riesgos para el análisis se basa en hasta 30 días de actividad, mientras que las directivas de riesgo de insider usan la actividad diaria para obtener información. Cuando habilite y ejecute análisis por primera vez en su organización, verá los resultados del examen durante un día. Si dejas el análisis habilitado, verás los resultados de cada examen diario agregados a los informes de información para un intervalo máximo de los 30 días anteriores de actividad.
+La información de análisis de los exámenes se basa en las mismas señales de actividad de riesgo que usan las directivas de administración de riesgos internas y los resultados de informes basados en actividades de usuario de secuencia y únicas. Sin embargo, la puntuación de riesgos para el análisis se basa en hasta 10 días de actividad, mientras que las directivas de riesgo internas usan la actividad diaria para obtener información. Cuando habilite y ejecute análisis por primera vez en su organización, verá los resultados del examen durante un día. Si dejas el análisis habilitado, verás los resultados de cada examen diario agregados a los informes de información para un intervalo máximo de los 10 días anteriores de actividad.
 
 ### <a name="enable-analytics-and-start-your-scan"></a>Habilitar análisis e iniciar el examen
 
@@ -545,7 +546,9 @@ Siga estos pasos para habilitar el análisis de riesgos de insider:
 
 ### <a name="viewing-analytics-insights-and-creating-new-policies"></a>Visualización de información de análisis y creación de nuevas directivas
 
-Una vez completado el primer examen de análisis para su organización, puede ver los conocimientos y recomendaciones de las actividades potencialmente arriesgadas por los usuarios. Los exámenes diarios continuarán a menos que desactives los análisis de tu organización. Para ver posibles riesgos para su organización, vaya a la  pestaña Información general y seleccione **Ver** resultados en la tarjeta de análisis de riesgos **de Insider**. Si el examen de la organización no se ha completado, verá un mensaje que indica que el examen sigue activo.
+Una vez completado el primer examen de análisis para su organización, los miembros del grupo de roles Administrador de administración de riesgos de *Insider* recibirán automáticamente una notificación por correo electrónico y podrán ver los conocimientos y recomendaciones iniciales de las actividades potencialmente arriesgadas por los usuarios. Los exámenes diarios continúan a menos que desactives los análisis de la organización. Las notificaciones por correo electrónico a los administradores se proporcionan para cada una de las tres categorías del ámbito para análisis (pérdidas de datos, robo y exfiltración) después de la primera instancia de actividad de la organización. Las notificaciones de correo electrónico no se envían a los administradores para la detección de actividad de seguimiento resultante de los exámenes diarios. Si los análisis en la administración de riesgos de **Insider** >  **Configuración** >  **Analytics están deshabilitados** y, a continuación, se vuelve a habilitar en la organización, las notificaciones automáticas de correo electrónico se restablecen y se envían correos electrónicos a los miembros del grupo de roles Administración de riesgos de *Insider* para obtener información sobre nuevos análisis.
+
+Para ver posibles riesgos para su organización, vaya a la  pestaña Información general y seleccione **Ver** resultados en la tarjeta de análisis de riesgos **de Insider**. Si el examen de la organización no se ha completado, verá un mensaje que indica que el examen sigue activo.
 
 ![Tarjeta lista para informes de análisis de administración de riesgos de Insider.](../media/insider-risk-analytics-ready-card.png)
 
@@ -575,11 +578,17 @@ Complete los siguientes pasos para desactivar el análisis de riesgos de insider
 
 Las notificaciones de administrador envían automáticamente una notificación por correo electrónico a los usuarios incluidos en los grupos de roles *Insider Risk Management*, *Insider Risk Management Analysts* e *Insider Risk Management Investigators* cuando se genera la primera alerta para una nueva directiva. Esto está habilitado de forma predeterminada para todas las organizaciones y las directivas se comprueban cada 24 horas para las alertas de primera vez. Las notificaciones no se envían para las alertas que se producen en las directivas después de la primera alerta.
 
+Si ha habilitado *insider risk* management Analytics para su organización, los miembros del grupo de roles Administración de riesgos de Insider reciben automáticamente una notificación por correo electrónico para obtener información de análisis inicial para las actividades de filtración, robo y pérdida de datos.
+
 Si prefiere deshabilitar las notificaciones de administrador, siga estos pasos:
 
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), ve a **Insider risk managementInsider** >  **risk settings**.
 2. Seleccione la **página Notificaciones de administrador** .
-3. Desactive la **casilla Enviar un correo electrónico de** notificación cuando se genere la primera alerta para una nueva directiva.
+3. Desactive la casilla de las siguientes opciones según corresponda:
+    - **Enviar un correo electrónico de notificación cuando se genere la primera alerta para una nueva directiva**
+    - **Enviar una notificación por correo electrónico cuando haya una nueva información disponible en Analytics**
+    - **Enviar una notificación por correo electrónico cuando analytics esté desactivado**
+
 4. Seleccione **Guardar** para configurar y salir.
 
 ![Configuración de notificaciones de administración de riesgos de Insider.](../media/insider-risk-admin-notifications.png)

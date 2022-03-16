@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo configurar roles para administrar inquilinos de clientes.
-ms.openlocfilehash: 82203c7faa361bf512c3184616b47760655083d4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 948e6909f0fc8d743c84662de6c8a2d9c0bc88e3
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331332"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512245"
 ---
 # <a name="set-up-roles-to-manage-customer-tenants"></a>Configurar roles para administrar inquilinos de clientes
 
@@ -30,6 +30,9 @@ Los proveedores de servicios administrados (MSP) pueden habilitar el acceso gran
 Si los técnicos msp todavía tienen acceso a entornos de clientes con los roles de agente de soporte técnico o agente de administración concedidos a través de privilegios de administrador delegados (DAP), consulte [DAP en Lighthouse](#dap-in-lighthouse) en este artículo. Si ambos GDAP y DAP coexisten, los roles concedidos a los usuarios a través de GDAP tienen prioridad para los clientes donde se ha establecido una relación GDAP.
 
 ## <a name="set-up-gdap-in-lighthouse"></a>Configurar GDAP en Lighthouse
+
+> [!NOTE]
+> GDAP se encuentra actualmente en [versión preliminar](/partner-center/announcements/2022-february#6) técnica (versión preliminar pública) para permitir a los partners asignar permisos pormenorizados antes de que GDAP esté disponible en general.
 
 Los pasos de alto nivel siguientes son necesarios para crear una relación GDAP con un cliente. Para obtener más información sobre GDAP, vea [Introduction to granular delegated admin privileges (GDAP).](/partner-center/gdap-introduction)
 
@@ -49,7 +52,7 @@ Se recomienda asignar nombres a los grupos de seguridad en función de las tarea
 
 ||Técnicos del departamento de soporte técnico |Administradores del sistema |Ingenieros de escalación|
 |--------------------|-------------|-------------|------------|
-|**Roles GDAP recomendados** |<ul><li>Administrador del departamento de soporte técnico</li><li>Lector de seguridad</li></ul>   |<ul><li>Administrador de usuarios</li><li>Administrador de autenticación</li><li>Lector global</li><li>Administrador de Intune</li><li>Administrador de seguridad</li></ul>   |Administrador global  |
+|**Roles GDAP recomendados** |<ul><li>Administrador del servicio de asistencia</li><li>Lector de seguridad</li></ul>   |<ul><li>Administrador de usuarios</li><li>Administrador de autenticación</li><li>Lector global</li><li>Administrador de Intune</li><li>Administrador de seguridad</li></ul>   |Administrador global  |
 |**Tareas** |Lea la información del cliente en Lighthouse y lleve a cabo acciones limitadas (por ejemplo, restablecer contraseñas de usuario o actualizar información de contacto)   |Mantener la seguridad del cliente mediante acciones correctivas en Lighthouse (por ejemplo, reiniciar dispositivos).   |Lleve a cabo acciones con privilegios cuando sea necesario para proteger el inquilino del cliente (por ejemplo, bloquear el inicio de sesión de un administrador en peligro).  |
 
 Para obtener descripciones de permisos específicos, [vea Azure AD roles integrados](/azure/active-directory/roles/permissions-reference). Para las tareas y roles específicos del asociado, vea [Roles con privilegios mínimos](/partner-center/gdap-least-privileged-roles-by-task).

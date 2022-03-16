@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c241438e2cd9a0a5bd9bb018d671340c22ef7d0d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 00685ee4540949028b8bb438dd8a4965e2e9a5e7
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163547"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63513064"
 ---
 # <a name="create-indicators"></a>Crear indicadores
 
@@ -28,7 +28,7 @@ ms.locfileid: "61163547"
 
 **Se aplica a:**
 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -59,12 +59,12 @@ Al crear un nuevo indicador (IoC), hay disponibles una o varias de las siguiente
 
 - Permitir: se permitirá que el IoC se ejecute en los dispositivos.
 - Auditoría: se activará una alerta cuando se ejecute ioC.
-- Advertencia: IoC le pedirá una advertencia de que el usuario puede omitir (solo Defender para aplicaciones en la nube)
+- Warn: IoC le pedirá una advertencia de que el usuario puede omitir 
 - Bloquear la ejecución: no se permitirá la ejecución de IoC.
 - Bloquear y corregir: el IoC no podrá ejecutarse y se aplicará una acción de corrección al IoC.
 
 >[!NOTE]
-> El uso del modo de advertencia le pedirá a los usuarios una advertencia si abren una aplicación de riesgo. El mensaje no les impedirá usar la aplicación, pero puedes proporcionar un mensaje personalizado y vínculos a una página de empresa que describe el uso adecuado de la aplicación. Los usuarios aún pueden omitir la advertencia y seguir usando la aplicación si lo necesitan. Para obtener más información, vea [Govern apps discovered by Microsoft Defender for Endpoint](/cloud-app-security/mde-govern).
+> El uso del modo de advertencia le pedirá a los usuarios una advertencia si abren una aplicación de riesgo. El mensaje no les impedirá usar la aplicación, pero puedes proporcionar un mensaje personalizado y vínculos a una página de empresa que describe el uso adecuado de la aplicación. Los usuarios aún pueden omitir la advertencia y seguir usando la aplicación si lo necesitan. Para obtener más información, consulta [Govern apps discovered by Microsoft Defender for Endpoint](/cloud-app-security/mde-govern).
 
 Puede crear un indicador para:
 
@@ -77,8 +77,8 @@ La tabla siguiente muestra exactamente qué acciones están disponibles por tipo
 | Tipo de IoC | Acciones disponibles |
 |:---|:---|
 | [Files](indicator-file.md) | Permitir <br> Auditoría <br> Bloquear y corregir |
-| [Direcciones IP](indicator-ip-domain.md) | Permitir <br> Auditoría <br> Ejecución de bloques |
-| [Direcciones URL y dominios](indicator-ip-domain.md) | Permitir <br> Auditoría <br> Ejecución de bloques |
+| [Direcciones IP](indicator-ip-domain.md) | Permitir <br> Auditoría <br> Ejecución de bloques <br> Advertir |
+| [Direcciones URL y dominios](indicator-ip-domain.md) | Permitir <br> Auditoría <br> Ejecución de bloques<br> Advertir |
 | [Certificados](indicator-certificates.md) | Permitir <br> Bloquear y corregir |
 
 La funcionalidad de los IoCs preexisteos no cambiará. Sin embargo, se cambió el nombre de los indicadores para que coincidan con las acciones de respuesta admitidas actuales:
@@ -89,7 +89,7 @@ La funcionalidad de los IoCs preexisteos no cambiará. Sin embargo, se cambió e
 El esquema de la API de IoC y los identificadores de amenazas en búsqueda anticipada se han actualizado para alinearse con el cambio de nombre de las acciones de respuesta de IoC. Los cambios del esquema de API se aplican a todos los tipos de IoC.
 
 > [!Note]
-> Hay un límite de 15.000 indicadores por inquilino. Los indicadores de archivo y certificado no [bloquean las exclusiones definidas para Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Los indicadores no se admiten Antivirus de Microsoft Defender cuando está en modo pasivo.
+> Hay un límite de 15.000 indicadores por inquilino. Los indicadores de archivo y certificado no [bloquean las exclusiones definidas para Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Los indicadores no se admiten en Antivirus de Microsoft Defender cuando está en modo pasivo.
 >
 > El formato para importar nuevos indicadores (IoCs) ha cambiado según la nueva configuración de alertas y acciones actualizadas. Se recomienda descargar el nuevo formato CSV que se encuentra en la parte inferior del panel de importación.
 

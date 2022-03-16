@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 4f92c50ad971de439541a7b8ea2e8f9fb5312c48
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: deae4e7449f142cbdbb9ef4d41953824499bedca
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449405"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512690"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtener Microsoft Defender para empresas
 
@@ -80,7 +80,7 @@ Este es el modo de registrarse:
 
 4. Rellene el formulario con su información de contacto. 
 
-   - Si es un cliente que trabaja con un partner de Microsoft, en el cuadro Otro, rellene el nombre de la organización del partner. A continuación, elija **Enviar**.
+   - Si es un cliente que trabaja con un partner de Microsoft, en el cuadro Otro, rellene el nombre de la compañía del partner. A continuación, elija **Enviar**.
    - Si eres un partner de Microsoft, asegúrate de indicar el tipo de asociación y la información sobre los clientes con los que planeas trabajar.
 
 5. Cuando haya terminado de rellenar el formulario, elija **Enviar**.
@@ -103,7 +103,7 @@ Cuando esté listo para iniciar la prueba, trabajará con dos portales principal
 | El Centro de administración de Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Use el Centro de administración de Microsoft 365 para activar la prueba e iniciar sesión por primera vez.<br/><br/> También usará la Centro de administración de Microsoft 365 para: <br/>- Agregar o quitar usuarios<br/>- Asignar licencias de usuario<br/>- Ver sus productos y servicios<br/>- Completar tareas de configuración para su Microsoft 365 suscripción <br/><br/> Para obtener más información, vea [Overview of the Centro de administración de Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
 | El portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | Use el portal Microsoft 365 Defender para configurar y configurar Defender para empresas. <br/><br/>Usará el portal de Microsoft 365 Defender para: <br/>- Ver tus dispositivos y directivas de protección de dispositivos<br/>- Ver las amenazas detectadas y tomar medidas<br/>- Ver recomendaciones de seguridad y administrar la configuración de seguridad <br/><br/>Para obtener más información, vea [Get started using the Microsoft 365 Defender portal](mdb-get-started.md).        |
 
-Si su organización usa Microsoft 365 Empresa Premium, tiene Microsoft Intune (parte de Microsoft Endpoint Manager) y puede que esté usando el centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)). Endpoint Manager permite administrar dispositivos y configurar también la configuración de seguridad. Para obtener más información, [consulta Microsoft Intune es un proveedor de MDM y MAM para tus dispositivos](/mem/intune/fundamentals/what-is-intune).
+Si su empresa usa Microsoft 365 Empresa Premium, tiene Microsoft Intune (parte de Microsoft Endpoint Manager) y puede que esté usando el centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)). Endpoint Manager permite administrar dispositivos y configurar también la configuración de seguridad. Para obtener más información, [consulta Microsoft Intune es un proveedor de MDM y MAM para tus dispositivos](/mem/intune/fundamentals/what-is-intune).
 
 ## <a name="activate-your-trial"></a>Activar la prueba
 
@@ -134,7 +134,7 @@ Cuando recibas el correo electrónico de aceptación, aquí te explicamos cómo 
       c. Para asignar licencias, siga las instrucciones de [Asignar licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md).
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Configurar y configurar Microsoft Defender para empresas](mdb-setup-configuration.md).
 

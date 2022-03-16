@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Obtenga información sobre cómo obtener acceso y usar el Portal de confianza de servicio de Microsoft para ayudar con las prácticas de seguridad, privacidad y cumplimiento.
-ms.openlocfilehash: 2efa7389da9d53d14b833dc31bd84b446ee48f63
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: 5894fb57d4633c0dbc3c9d925be72910bdfc3f56
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785923"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512914"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introducción al Portal de confianza de servicio de Microsoft
 
@@ -30,11 +30,11 @@ El Portal de confianza de servicio de Microsoft proporciona una variedad de cont
 
 ## <a name="accessing-the-service-trust-portal"></a>Acceso al Portal de confianza de servicio
 
-El Portal de confianza de servicios contiene detalles sobre la implementación de controles y procesos de Microsoft que protegen nuestros servicios en la nube y los datos de los clientes en esta. Para obtener acceso a algunos de los recursos del Portal de confianza de servicios, debe iniciar sesión como usuario autenticado con su cuenta de servicios en la nube de Microsoft (ya sea una cuenta de organización de Azure Active Directory o una cuenta de Microsoft) y revisar y aceptar el Contrato de no divulgación de Microsoft para materiales de cumplimiento.
+El Portal de confianza de servicios contiene detalles sobre la implementación de controles y procesos de Microsoft que protegen nuestros servicios en la nube y los datos de los clientes en esta. Para obtener acceso a algunos de los recursos del Portal de confianza de servicio, debe iniciar sesión como usuario autenticado con su cuenta de servicios en la nube de Microsoft (ya sea una cuenta de organización de Azure Active Directory o una cuenta de Microsoft) y revisar y aceptar el Contrato de no divulgación de Microsoft para materiales de cumplimiento.
 
 ### <a name="existing-customers"></a>Clientes existentes
 
-Los clientes existentes pueden acceder al Portal de confianza de servicio en una de las siguientes suscripciones en línea <https://aka.ms/STP> (de prueba o de pago):
+Los clientes existentes pueden acceder al Portal de confianza de servicio <https://aka.ms/STP> en una de las siguientes suscripciones en línea (de prueba o de pago):
 
 - Microsoft 365
 - Dynamics 365
@@ -47,11 +47,11 @@ Los clientes existentes pueden acceder al Portal de confianza de servicio en una
 
 Para crear una cuenta nueva o crear una cuenta de prueba, use uno de los siguientes formularios de registro (también usados para cuentas de prueba) para obtener acceso al STP.
 
-- Registrarse para obtener una nueva [cuenta Aplicaciones Microsoft 365 para negocios de prueba o](https://go.microsoft.com/fwlink/p/?LinkID=507653) una nueva cuenta Office 365 Enterprise de [prueba](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+- Registrarse para obtener una nueva [cuenta Aplicaciones Microsoft 365 para negocios de prueba o](https://go.microsoft.com/fwlink/p/?LinkID=507653) una nueva [cuenta Office 365 Enterprise de prueba](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
-- Registrarse para obtener una nueva cuenta de prueba de [Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=252780)
+- Registrarse para obtener una nueva [cuenta de prueba de Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=252780)
 
-- Registrarse para obtener una nueva [cuenta de prueba de Azure](https://go.microsoft.com/fwlink/?LinkId=722737).
+- Regístrate para obtener una nueva [cuenta de prueba de Azure](https://go.microsoft.com/fwlink/?LinkId=722737).
 
 Cuando se registra para una versión de prueba gratuita o una suscripción, debe habilitar Azure Active Directory para admitir su acceso al STP.
 
@@ -70,7 +70,7 @@ El **vínculo Portal de confianza** de servicio muestra la página principal. Pr
 ### <a name="compliance-manager"></a>Administrador de cumplimiento
 
 > [!IMPORTANT]
-> El Administrador de cumplimiento se ha movido del Portal de confianza de servicio a su nueva ubicación en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">el Centro de cumplimiento de Microsoft 365</a>. Todos los datos de clientes se han movido a la nueva ubicación, de modo que pueda seguir usando el Administrador de cumplimiento sin interrupciones. Consulte la documentación [del Administrador de cumplimiento para](compliance-manager.md) obtener información sobre la configuración y para obtener información sobre las nuevas características. Aunque la versión clásica del Administrador de cumplimiento permanece en el Portal de confianza de servicio, se recomienda a todos los usuarios que usen el Administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365.
+> El Administrador de cumplimiento se ha movido del Portal de confianza de servicio al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>. Todos los datos de clientes se han movido a la nueva ubicación, de modo que pueda seguir usando el Administrador de cumplimiento sin interrupciones. Consulte la documentación [del Administrador de cumplimiento para](compliance-manager.md) obtener información sobre la configuración y para obtener información sobre las nuevas características.
 
 ### <a name="trust-documents"></a>Documentos de confianza
 
@@ -106,30 +106,24 @@ Esta nueva característica le permite guardar *(o* anclar) documentos para que p
 
 ### <a name="more"></a>Más
 
-Vaya a **Más > administrador para** obtener acceso a funciones administrativas que solo están disponibles para la cuenta de administrador global. Esta opción solo es visible cuando ha iniciado sesión como administrador global. Hay dos opciones en **el** menú desplegable Administrador:
+Vaya a **Más > administrador para** obtener acceso a funciones administrativas que solo están disponibles para la cuenta de administrador global. Esta opción solo es visible cuando ha iniciado sesión como administrador global. Hay dos opciones **en el menú** desplegable Administrador:
 
-- **Configuración:** Esta página le permite asignar roles de usuario para el Administrador de cumplimiento (clásico).
+- **Configuración: esta** página le permite asignar roles de usuario para el Administrador de cumplimiento (clásico).
 
-- **Privacidad del usuario Configuración:** Esta página le permite exportar un informe que contiene asignaciones de elementos de acción en el Administrador de cumplimiento (clásico) para un usuario específico. También puede reasignar todos los elementos de acción a un usuario diferente y quitar cualquier elemento de acción asignado del usuario especificado.
+- **Privacidad del Configuración:** esta página le permite exportar un informe que contiene asignaciones de elementos de acción en el Administrador de cumplimiento (clásico) para un usuario específico. También puede reasignar todos los elementos de acción a un usuario diferente y quitar cualquier elemento de acción asignado del usuario especificado.
 
 ### <a name="search"></a>Búsqueda
 
-Haga clic en la lupa de la esquina superior derecha de la página Portal de confianza de servicio para expandir el cuadro, escriba los términos de búsqueda y presione **Entrar**. Se **muestra** la página Búsqueda, con el término de búsqueda que se muestra en el cuadro de búsqueda y los resultados de búsqueda enumerados a continuación.
-
-![Portal de confianza de servicios: Buscar en documentos con filtro aplicado.](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+Haga clic en la lupa de la esquina superior derecha de la página Portal de confianza de servicio para expandir el cuadro, escriba los términos de búsqueda y presione **ENTRAR**. Se **muestra** la página Búsqueda, con el término de búsqueda que se muestra en el cuadro de búsqueda y los resultados de búsqueda enumerados a continuación.
 
 De forma predeterminada, la búsqueda devuelve los resultados del documento. Puede filtrar los resultados mediante las listas desplegables para refinar la lista de documentos que se muestran. Puede usar varios filtros para restringir la lista de documentos. Los filtros incluyen los servicios en la nube específicos, categorías de prácticas de cumplimiento o seguridad, regiones e industrias. Haga clic en el vínculo nombre del documento para descargar el documento.
-
-Para enumerar los controles de evaluaciones en el Administrador de cumplimiento (clásico) relacionados con los términos de búsqueda, haga clic en **Administrador de cumplimiento**. Los resultados de la búsqueda muestran la fecha en que se creó la evaluación, el nombre de la agrupación de evaluación, el servicio en la nube de Microsoft aplicable y si el control es Administrado por el cliente o Microsoft. Haga clic en el nombre del control para ver el control en el Administrador de evaluación en cumplimiento (clásico).
-
-![Portal de confianza de servicios: Búsqueda en controles del Administrador de cumplimiento.](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 
 > [!NOTE]
 > Los informes y documentos del Portal de confianza de servicio están disponibles para su descarga durante al menos 12 meses después de la publicación o hasta que una nueva versión del documento esté disponible.
 
 ## <a name="my-library"></a>Mi biblioteca
 
-Use la característica Mi biblioteca para agregar documentos y recursos en el Portal de confianza de servicio a la página Mi biblioteca. Esto le permite tener acceso a documentos relevantes para usted en un solo lugar.  Para agregar un documento a mi biblioteca, haga clic en el **menú ...** a la derecha de un documento y, a continuación, seleccione Guardar **en biblioteca**. Para agregar varios documentos a Mi biblioteca, haga clic en la casilla situada junto a uno o varios documentos y, a continuación, haga clic en **Guardar** en biblioteca en la parte superior de la página.
+Use la característica Mi biblioteca para agregar documentos y recursos en el Portal de confianza de servicio a la página Mi biblioteca. Esto le permite tener acceso a documentos relevantes para usted en un solo lugar.  Para agregar un documento a Mi biblioteca, haga clic en el **menú ...** a la derecha de un documento y, a continuación, **seleccione Guardar en biblioteca**. Para agregar varios documentos a Mi biblioteca, haga clic en la casilla situada junto a uno o varios documentos y, a continuación, haga clic en **Guardar** en biblioteca en la parte superior de la página.
 
 Además, la característica de notificaciones le permite configurar Mi biblioteca para que se le envíe un mensaje de correo electrónico cada vez que Microsoft actualice un documento que haya agregado a mi biblioteca. Para configurar las notificaciones, vaya a Mi biblioteca y haga clic **en Notificación Configuración**. Puede elegir la frecuencia de las notificaciones y especificar una dirección de correo electrónico en su organización a la que enviar notificaciones. Las notificaciones por correo electrónico incluyen vínculos a los documentos que se han actualizado y una breve descripción de la actualización.
 
@@ -145,13 +139,11 @@ Los paquetes de inicio son un conjunto de documentación de Microsoft sobre los 
 
 - **Paquete de inicio de auditoría:** Use este paquete de inicio para obtener instrucciones sobre el uso de controles de auditoría y otra herramienta para ayudar a guiar la implementación de los servicios de Microsoft Cloud de una manera que ayude a reducir la exposición de su organización al riesgo.
 
-Para obtener acceso a estos paquetes de inicio, vaya a **Service Trust Portal > Industries & Regiones**> Industry Solutions > Financial Services . Puede abrir o descargar documentos de un paquete de inicio o guardarlos en mi biblioteca.
+Para obtener acceso a estos paquetes de inicio, vaya a **Service Trust Portal > Industries & Regiones > Industry Solutions > Financial Services**. Puede abrir o descargar documentos de un paquete de inicio o guardarlos en mi biblioteca.
 
 ## <a name="localization-support"></a>Soporte de localización
 
 El Portal de confianza de servicios le permite ver el contenido de la página en diferentes idiomas. Para cambiar el idioma de la página, solo tiene que hacer clic en el icono de globo terráqueo de la esquina inferior izquierda de la página y seleccionar el idioma que quiera.
-
-![Portal de confianza de servicios: Opciones de contenido localizado.](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 ## <a name="give-feedback"></a>Enviar comentarios
 

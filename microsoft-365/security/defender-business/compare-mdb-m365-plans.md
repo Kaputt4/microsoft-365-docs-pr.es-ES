@@ -1,13 +1,13 @@
 ---
 title: Comparar características de seguridad en Microsoft 365 planes para pequeñas y medianas empresas
-description: Comprenda las diferencias entre Defender para empresas y Defender para endpoint. Saber lo que se incluye en cada plan puede ayudarle a tomar una decisión fundamentada para su organización.
+description: Comprenda las diferencias entre Defender para empresas y Defender para endpoint. Saber lo que se incluye en cada plan puede ayudarle a tomar una decisión fundamentada para su empresa.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 02/27/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: c7b7848eb9bd02c75304ffea4347beb19b873b3a
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: edad91bde18b4bf9a86e0ab02ffc28df675f4c10
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449840"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512508"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparar Microsoft Defender para empresas con Microsoft 365 Empresa Premium
 
@@ -100,7 +100,7 @@ En la tabla siguiente se comparan las características y capacidades de segurida
 
 (<a id="fn3">3</a>) Durante el programa de vista previa, Windows dispositivos cliente se admiten en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Consulta los requisitos de Microsoft Defender para empresas](mdb-requirements.md)
 

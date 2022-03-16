@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 2cc157e363c42b94cac750b19a6122ed0a22c3de
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: b55af496881489279a7a6f96ed386ab2a26c2fa5
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450764"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512606"
 ---
 # <a name="use-the-wizard-to-set-up-microsoft-defender-for-business"></a>Usar el asistente para configurar Microsoft Defender para empresas
 
@@ -51,13 +51,13 @@ El asistente está diseñado para ayudarle a configurar Defender for Business de
    - Un administrador de seguridad puede ver y editar la configuración de seguridad. 
    - Un lector de seguridad solo puede ver información en los informes. 
 
-2. **Incorpore y configure Windows dispositivos.** En este paso, puede incorporar rápidamente los dispositivos de Windows de la organización a Defender para empresas. La incorporación de dispositivos de inmediato ayuda a proteger esos dispositivos desde el primer día. Consulta [Incorporar dispositivos a Microsoft Defender para empresas](mdb-onboard-devices.md) para obtener más información.
+2. **Incorpore y configure Windows dispositivos.** En este paso, puedes incorporar rápidamente los dispositivos de Windows de tu empresa a Defender para empresas. La incorporación de dispositivos de inmediato ayuda a proteger esos dispositivos desde el primer día. Consulta [Incorporar dispositivos a Microsoft Defender para empresas](mdb-onboard-devices.md) para obtener más información.
 
-   - Si ya usa Microsoft Intune (parte de Microsoft Endpoint Manager) y su organización tiene dispositivos inscritos en Endpoint Manager, se le preguntará si desea usar la incorporación automática para algunos o todos los dispositivos Windows inscritos.[](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager) La incorporación automática configura una conexión entre Endpoint Manager y Defender para empresas y, a continuación, incorpora Windows dispositivos a Defender para empresas sin problemas.
+   - Si ya estás usando Microsoft Intune (parte de Microsoft Endpoint Manager) y tu empresa tiene dispositivos inscritos en Endpoint Manager, se te preguntará si quieres usar la incorporación automática para algunos o todos los dispositivos Windows inscritos.[](mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager) La incorporación automática configura una conexión entre Endpoint Manager y Defender para empresas y, a continuación, incorpora Windows dispositivos a Defender para empresas sin problemas.
 
    - Si aún no estás usando Endpoint Manager, o si tienes dispositivos que no son de Windows inscritos en Endpoint Manager, puedes incorporar dispositivos a [Defender para empresas manualmente](mdb-onboard-devices.md#local-script-in-defender-for-business). 
    
-3. **Configure las directivas de seguridad**. Defender para empresas incluye directivas de seguridad predeterminadas para protección de última generación y protección de firewall que se pueden aplicar a los dispositivos de su organización. Estas directivas predeterminadas usan la configuración recomendada y están diseñadas para proporcionar una protección segura para los dispositivos. 
+3. **Configure las directivas de seguridad**. Defender para empresas incluye directivas de seguridad predeterminadas para protección de última generación y protección de firewall que se pueden aplicar a los dispositivos de su empresa. Estas directivas predeterminadas usan la configuración recomendada y están diseñadas para proporcionar una protección segura para los dispositivos. 
 
    También puede crear sus propias directivas de seguridad si lo desea. Y, si ya está usando Endpoint Manager, puede seguir usándolo para administrar las directivas de seguridad. 
 
@@ -77,7 +77,7 @@ Consulta [Configurar y configurar Microsoft Defender para empresas](mdb-setup-co
 
 4. [Administre las directivas de seguridad](mdb-configure-security-settings.md), que incluyen protección de última generación, protección de firewall y filtrado de contenido web.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Configurar notificaciones de correo electrónico para el equipo de seguridad](mdb-email-notifications.md)
 

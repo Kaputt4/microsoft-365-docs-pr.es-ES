@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, vea una lista de problemas conocidos para Lighthouse por área de características.
-ms.openlocfilehash: c91ef6a05bf335ed503615cbd058d12a5a43fd5a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4d19051de1b4466dabc535446182c7f630ee948b
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319271"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512271"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Problemas conocidos con Microsoft 365 Lighthouse
 
@@ -74,7 +74,7 @@ En este artículo se enumeran los problemas conocidos Microsoft 365 Lighthouse p
 ## <a name="granular-delegated-admin-permissionsgdap"></a>Permisos de administrador delegados pormenorizados (GDAP)
 
 > [!NOTE]
-> GDAP se encuentra actualmente en [Technical Preview](/partner-center/announcements/2022-february#6) (Public Preview) para permitir a los partners asignar permisos pormenorizados antes de que GDAP esté disponible en general.
+> GDAP se encuentra actualmente en [versión preliminar](/partner-center/announcements/2022-february#6) técnica (versión preliminar pública) para permitir a los partners asignar permisos pormenorizados antes de que GDAP esté disponible en general.
 
 | Problema | Descripción | Solución |
 | ---------------- | ---------------- | ---------------- |

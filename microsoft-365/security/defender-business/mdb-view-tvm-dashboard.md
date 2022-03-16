@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 807ed67a789364928b00431f9d7a5abb98eba137
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 7d529ffac45484f585cf654d30cb5522bbdffcd5
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449910"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512298"
 ---
 # <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Usar el panel de administración & vulnerabilidades en Microsoft Defender para empresas
 
@@ -33,7 +33,7 @@ ms.locfileid: "63449910"
 
 Microsoft Defender para empresas incluye un panel de administración & vulnerabilidades que está diseñado para ahorrar tiempo y esfuerzo al equipo de seguridad. Además de proporcionar una puntuación de exposición, también puedes ver información sobre dispositivos expuestos y recomendaciones de seguridad. Puede usar el panel de administración de & de vulnerabilidades para:
 
-- Ver la puntuación de exposición, que está asociada a dispositivos de la organización
+- Ver la puntuación de exposición, que está asociada a dispositivos de su empresa
 
 - Vea las recomendaciones de seguridad más destacadas, como solucionar las comunicaciones con dispositivos con problemas, activar la protección de firewall o actualizar Antivirus de Microsoft Defender de seguridad
 
@@ -50,7 +50,7 @@ Para obtener más información sobre la administración & vulnerabilidad de amen
 > Por favor, haga <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
 >
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Tutoriales y simulaciones en Microsoft Defender para empresas](mdb-tutorials.md)
 

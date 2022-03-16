@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 03/10/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 3131d4f8742d8fe794c71a62f93e10433aada33c
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: ab6a5eb9f4a36677df467ae5f773e29d240ffff8
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450582"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512326"
 ---
 # <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>Responder y mitigar amenazas en Microsoft Defender para empresas
 
@@ -50,7 +50,7 @@ El portal Microsoft 365 Defender permite al equipo de seguridad responder y miti
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Captura de pantalla del inventario de dispositivos":::
 
-   La **página Inventario de dispositivos** enumera los dispositivos de la organización, junto con su nivel de riesgo y su nivel de exposición.
+   La **página Inventario de dispositivos** enumera los dispositivos de la empresa, junto con su nivel de riesgo y nivel de exposición.
 
 4. Selecciona un elemento, como un dispositivo. Se abre un panel desplegable y muestra más información sobre las alertas e incidentes generados para ese elemento, como se muestra en la siguiente imagen:  
 
@@ -62,7 +62,7 @@ El portal Microsoft 365 Defender permite al equipo de seguridad responder y miti
 
 6. Seleccione una acción disponible. Por ejemplo, puedes elegir **Ejecutar examen antivirus**, lo que hará Antivirus de Microsoft Defender iniciar un examen rápido en el dispositivo. O bien, puedes seleccionar **Iniciar investigación automatizada** para desencadenar una investigación automatizada en el dispositivo.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Revisar acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)
 

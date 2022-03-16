@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: c5de66418b242beb975cce0d6ece299753360c99
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: 3db4d1b3cd4e4299c892a352b4f701abf05055ae
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504790"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512774"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Incorporación de dispositivos a Microsoft Defender para empresas
 
@@ -31,7 +31,7 @@ ms.locfileid: "63504790"
 > 
 > Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
 
-Con Microsoft Defender para empresas, tienes varias opciones entre las que elegir para incorporar los dispositivos de tu organización. En este artículo se le guía por las opciones e incluye información general sobre cómo funciona la incorporación.
+Con Microsoft Defender para empresas, tienes varias opciones entre las que elegir para incorporar los dispositivos de tu empresa. En este artículo se le guía por las opciones e incluye información general sobre cómo funciona la incorporación.
 
 >
 > **¿Tiene un minuto?**
@@ -40,7 +40,7 @@ Con Microsoft Defender para empresas, tienes varias opciones entre las que elegi
 
 ## <a name="get-the-device-onboarding-guide"></a>Obtener la guía de incorporación de dispositivos
 
-Use la siguiente guía e información para elegir la mejor opción para su organización.
+Use la siguiente guía e información para elegir la mejor opción para su empresa.
 
 [:::image type="content" source="media/mdb-device-onboarding.png" alt-text="Captura de pantalla del diagrama de incorporación de dispositivos":::](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) <br/>
 [PDF](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) | [Visio](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.vsdx)
@@ -79,7 +79,7 @@ Defender para empresas te ofrece varios métodos diferentes para la incorporaci�
 
 La opción de incorporación automática solo se aplica Windows dispositivos. La incorporación automática está disponible si se cumplen las siguientes condiciones:
 
-- Su organización ya usaba Microsoft Endpoint Manager, Microsoft Intune o administración de dispositivos móviles (MDM) en Microsoft Intune antes de obtener Defender for Business
+- Tu empresa ya usaba Microsoft Endpoint Manager, Microsoft Intune o Administración de dispositivos móviles (MDM) en Microsoft Intune antes de obtener Defender for Business
 
 - Ya tienes Windows dispositivos inscritos en Endpoint Manager
 
@@ -107,11 +107,11 @@ Puedes usar un script local para incorporar dispositivos Windows y Mac. Al ejecu
    | Sistema operativo | Procedure |
    |---|---|
    | Windows | 1. En un dispositivo Windows, extraiga el contenido del paquete de configuración en una ubicación, como la carpeta Escritorio. Debe tener un archivo denominado `WindowsDefenderATPLocalOnboardingScript.cmd`. <br/><br/>2. Abra el símbolo del sistema como administrador.<br/><br/>3. Escriba la ubicación del archivo de script. Por ejemplo, si copió el archivo en la carpeta Escritorio, escribiría: `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`y, a continuación, presionaría la tecla Entrar (o bien, **seleccionarÍa Aceptar**).<br/><br/>4. Después de que se ejecute el script, continúe con [Ejecutar una prueba de detección](#run-a-detection-test). |
-   | macOS | 1. En un equipo Mac, guarde el paquete de instalación en `wdav.pkg` un directorio local. <br/><br/>2. Guarde el paquete de incorporación en `WindowsDefenderATPOnboardingPackage.zip` el mismo directorio que usó para el paquete de instalación. <br/><br/>3. Use Finder para navegar `wdav.pkg` hasta que guardó y, a continuación, ábralo.<br/><br/>4. Seleccione **Continuar**, acepte los términos de licencia y, a continuación, escriba la contraseña cuando se le solicite.<br/><br/>5. Se le pedirá que permita la instalación de un controlador de Microsoft (ya sea "System Extension Blocked" o "Installation is on hold", o ambos. Se debe permitir la instalación del controlador. Para permitir la instalación, seleccione **Abrir** preferencias de seguridad o **Abrir Preferencias** >  del **sistemaSecurity & Privacidad** y, a continuación, **seleccione Permitir**.<br/><br/>6. Use el siguiente comando python en Bash para ejecutar el paquete de incorporación: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`. <br/><br/>7. Para confirmar que el dispositivo está asociado a su organización, use el siguiente comando python en Bash: `mdatp health --field org_id`.<br/><br/>8. Si usa macOS 10.15 (Catalina) o posterior, conceda a Defender for Business su consentimiento para proteger el dispositivo. Vaya a **System PreferencesSecurity** >  **&** **PrivacyPrivacyFull** >  >  **Disk Access**.  Seleccione el icono de bloqueo para realizar cambios (parte inferior del cuadro de diálogo) y, a continuación, seleccione Microsoft Defender para empresas (o Defender para endpoint, si eso es lo que ve). <br/><br/>9. Para comprobar que el dispositivo está incorporado, use el siguiente comando en Bash: `mdatp health --field real_time_protection_enabled`.    |
+   | macOS | 1. En un equipo Mac, guarde el paquete de instalación en `wdav.pkg` un directorio local. <br/><br/>2. Guarde el paquete de incorporación en `WindowsDefenderATPOnboardingPackage.zip` el mismo directorio que usó para el paquete de instalación. <br/><br/>3. Use Finder para navegar `wdav.pkg` hasta que guardó y, a continuación, ábralo.<br/><br/>4. Seleccione **Continuar**, acepte los términos de licencia y, a continuación, escriba la contraseña cuando se le solicite.<br/><br/>5. Se le pedirá que permita la instalación de un controlador de Microsoft (ya sea "System Extension Blocked" o "Installation is on hold", o ambos. Se debe permitir la instalación del controlador. Para permitir la instalación, seleccione **Abrir** preferencias de seguridad o **Abrir Preferencias** >  del **sistemaSecurity & Privacidad** y, a continuación, **seleccione Permitir**.<br/><br/>6. Use el siguiente comando python en Bash para ejecutar el paquete de incorporación: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`. <br/><br/>7. Para confirmar que el dispositivo está asociado a su empresa, use el siguiente comando python en Bash: `mdatp health --field org_id`.<br/><br/>8. Si usa macOS 10.15 (Catalina) o posterior, conceda a Defender for Business su consentimiento para proteger el dispositivo. Vaya a **System PreferencesSecurity** >  **&** **PrivacyPrivacyFull** >  >  **Disk Access**.  Seleccione el icono de bloqueo para realizar cambios (parte inferior del cuadro de diálogo) y, a continuación, seleccione Microsoft Defender para empresas (o Defender para endpoint, si eso es lo que ve). <br/><br/>9. Para comprobar que el dispositivo está incorporado, use el siguiente comando en Bash: `mdatp health --field real_time_protection_enabled`.    |
 
 ## <a name="microsoft-endpoint-manager"></a>Microsoft Endpoint Manager
 
-Si ya usaste Endpoint Manager (que incluye Microsoft Intune y Administración de dispositivos móviles), antes de obtener Defender para empresas, puedes seguir usando Endpoint Manager para incorporar los dispositivos de la organización. Con Endpoint Manager, puedes incorporar equipos, tabletas y teléfonos, incluidos dispositivos iOS y Android.
+Si ya usaste Endpoint Manager (que incluye Microsoft Intune y Administración de dispositivos móviles), antes de obtener Defender para empresas, puedes seguir usando Endpoint Manager para incorporar los dispositivos de tu empresa. Con Endpoint Manager, puedes incorporar equipos, tabletas y teléfonos, incluidos dispositivos iOS y Android.
 
 Consulta [Inscripción de dispositivos en Microsoft Intune](/mem/intune/enrollment/device-enrollment).
 
@@ -152,7 +152,7 @@ Una vez ejecutado el comando, la ventana del símbolo del sistema se cerrará au
 
 ## <a name="gradual-device-onboarding"></a>Incorporación gradual de dispositivos
 
-Puedes incorporar los dispositivos de la organización en fases. *Llamamos a esta incorporación gradual de dispositivos*. 
+Puedes incorporar los dispositivos de tu empresa en fases. *Llamamos a esta incorporación gradual de dispositivos*. 
 
 1. Identificar un conjunto de dispositivos que se incorporarán.
 
