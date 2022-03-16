@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e337ef74975bd761de89b4aaae03379344efeed
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ac50568f9ce995f658e6b06c3a2b13b666211810
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311905"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63512354"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -252,7 +252,7 @@ Para obtener más información, vea [Emisor de administración de derechos y pro
 > [!NOTE]
 > Esta característica solo es compatible actualmente con el cliente de etiquetado unificado de Azure Information Protection.
 
-Seleccione esta opción solo después de configurar el servicio Cifrado de doble clave. Necesitará usar el cifrado de doble clave para los archivos que tengan aplicada esta etiqueta.
+Seleccione esta opción solo después de configurar el servicio Cifrado de doble clave. Necesitará usar el cifrado de doble clave para los archivos que tengan aplicada esta etiqueta. Una vez configurada y guardada, no podrás editar la etiqueta.
 
 Para obtener más información, ver los requisitos previos y las instrucciones de configuración, consulte el [Cifrado de doble clave (DKE)](double-key-encryption.md).
 
@@ -431,7 +431,7 @@ Cifrar los documentos y mensajes de correo electrónico más confidenciales le a
 
 - Cuando los usuarios autorizados abren documentos cifrados en sus aplicaciones de Office, ven el nombre y descripción de la etiqueta en una barra de mensajes amarilla en la parte superior de la aplicación. Cuando los permisos de cifrado se extienden a personas fuera de la organización, revise detenidamente los nombres y descripciones de las etiquetas que estarán visibles en esta barra de mensajes cuando se abra el documento.
 
-- Para que varios usuarios editen un archivo cifrado al mismo tiempo, todos deben usar Office en la Web o debe haber [habilitado la co-autoría de archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md) y todos los usuarios deben tener [aplicaciones de Office compatibles con esta característica](sensitivity-labels-coauthoring.md#prerequisites). Si este no es el caso, y el archivo ya está abierto:
+- Para que varios usuarios editen un archivo cifrado al mismo tiempo, todos deben usar Office en la Web o se debe haber [habilitado la coautoría de archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md) y todos los usuarios deben tener [aplicaciones de Office compatibles con esta característica](sensitivity-labels-coauthoring.md#prerequisites). Si este no es el caso y el archivo ya está abierto:
 
   - En las aplicaciones de Office (Windows, Mac, Android y iOS), los usuarios verán un mensaje de **archivo en uso** con el nombre de la persona que ha desprotegido el archivo. Podrán ver una copia de solo lectura, guardar y editar una copia del archivo, y recibir una notificación cuando el archivo esté disponible.
   - En Office para la Web, los usuarios ven un mensaje de error que indica que no pueden editar el documento con otras personas. A continuación, pueden seleccionar **Abrir en Vista de lectura**.
