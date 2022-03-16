@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Antes de llamar al soporte técnico, consulte el estado de mantenimiento de los servicios de Microsoft 365 para comprobar si existe alguna interrupción del servicio.
-ms.openlocfilehash: d5af62bd31bc5fe6c3a3f04657d6cf0ea6083eaa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4a72132872c890f755cb537e06c42412aa17fb9f
+ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166795"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "63468780"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Cómo comprobar el estado del servicio de Microsoft 365
 
@@ -48,7 +48,7 @@ Si no puede iniciar sesión en el centro de administración, puede usar la [pág
     > [!NOTE]
     > Los usuarios que tienen asignado el rol de administrador de servicios o administrador global pueden ver el estado del servicio. Para que los administradores de Exchange, SharePoint y Skype Empresarial puedan ver el estado del servicio, también se les debe asignar el rol Administrador de servicios. Para más información sobre los roles que pueden acceder al estado del servicio, consulte [Acerca de los roles de administrador](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
 
-2. Para ver el estado del servicio vaya al centro de administración y, desde allí a **Estado** > **Estado del servicio** o seleccione la tarjeta **Estado del servicio** en el **Panel principal**. La tarjeta del panel indica si existe algún problema de servicio activo y le ofrece el vínculo a la página del **Estado de servicio** con información más detallada.
+2. Para ver el estado del servicio, en el panel de navegación izquierdo del centro de administración, vaya a **Estado** > **Estado del servicio** o seleccione la tarjeta **Estado del servicio** en el **Panel principal**. En la tarjeta del panel, se indica si existe algún problema de servicio activo y se muestran vínculos a la página **Estado detallado** del servicio.
 
 3. En la página de **Estado del servicio**, podrá ver el estado de mantenimiento de los servicios en la nube en formato de tabla.
 
@@ -110,7 +110,7 @@ Usamos la traducción automática para mostrar los mensajes en su idioma de pref
 La mayoría de las veces, los servicios aparecerán como correctos sin especificar más información. Cuando un servicio experimenta un problema, éste se identifica como aviso o incidente y se muestra el estado actual.
 
 > [!TIP]
-> Los eventos de mantenimiento planeados se muestran en el estado del servicio. Puede realizar un seguimiento de los eventos de mantenimiento planeados manteniéndose al día con el **Centro de mensajes**. Filtre por los mensajes de la categoría Planear el cambio para descubrir cuándo sucederá el cambio, el efecto que tendrá y cómo debe prepararse para afrontarlo. Vaya al [Centro de mensajes en Microsoft 365](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093) para más detalles.
+> Los eventos de mantenimiento planeados se muestran en el estado del servicio. Puede realizar un seguimiento de los eventos de mantenimiento planeados manteniéndose al día con el **Centro de mensajes**. Filtre por los mensajes de la categoría Planear el cambio para descubrir cuándo sucederá el cambio, el efecto que tendrá y cómo debe prepararse para afrontarlo. Vea [Centro de mensajes de Microsoft 365](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093) para obtener más detalles.
 
 ### <a name="incidents-and-advisories"></a>Incidentes y avisos
 
