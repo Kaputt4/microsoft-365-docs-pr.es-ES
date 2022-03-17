@@ -8,18 +8,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar dispositivos macOS en soluciones de cumplimiento
-ms.openlocfilehash: fbf29e0d66bf31d058cede69aba9fe0c7814a3a7
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: 93a930f13a17c19c3ff7209295ddada648b9575a
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963256"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526574"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>Incorporar dispositivos macOS en la información general de Microsoft 365 (versión preliminar)
 
@@ -51,7 +51,7 @@ Si no está familiarizado con Insider Risk, debe familiarizarse con estos artíc
 Los dispositivos macOS ya deben administrarse a través de Intune o JAMF Pro.
  
 - Para incorporarse a Intune, consulta Guía de implementación: Administrar dispositivos [macOS](/mem/intune/fundamentals/deployment-guide-platform-macos) en Microsoft Intune [e Inscribir tu Mac con Portal de empresa de Intune](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
-- Para incorporarse a JAMF Pro, [jamf Pro administradores](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) y [jamf](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) Pro instalación y configuración para Mac
+- Para incorporarse a JAMF Pro consulta, [jamf Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) administradores y guía de instalación y configuración de [JAMF Pro para Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
 - Instalar el explorador perimetral v95+ en los dispositivos macOS 
 
 ## <a name="licensing-guidance"></a>Instrucciones sobre licencias
@@ -62,11 +62,11 @@ Vea, Microsoft 365 [de licencias para la protección de la información](/office
 
 Una vez que un dispositivo macOS se incorpore a Microsoft 365 de cumplimiento normativo, puedes supervisar y restringir estas acciones con directivas de prevención de pérdida de datos (DLP).
 
-Copiar en un medio **extraíble USB:** cuando se aplica, esta acción bloquea, advierte o audita la copia o el movimiento de archivos protegidos desde un dispositivo de extremo a un medio extraíble USB 
+**Copiar en un medio extraíble USB** : cuando se aplica, esta acción bloquea, advierte o audita la copia o el movimiento de archivos protegidos desde un dispositivo de extremo a un medio extraíble USB 
 
 **Copiar en recursos** compartidos de red: cuando se aplica, esta acción bloquea, advierte o audita la copia o el movimiento de archivos protegidos desde un dispositivo de extremo a cualquier recurso compartido de red 
 
-**Imprimir:** cuando se aplica, esta acción bloquea, advierte o audita cuando se imprimen archivos protegidos desde un dispositivo de extremo 
+**Imprimir** : cuando se aplica, esta acción bloquea, advierte o audita cuando se imprimen archivos protegidos desde un dispositivo de extremo 
 
 **Copiar en el** Portapapeles: cuando se aplica, esta acción bloquea, advierte o audita los datos del archivo protegido que se copia en un portapapeles en un dispositivo de extremo 
 
@@ -82,7 +82,7 @@ Cuando quiera incorporar dispositivos que todavía no hayan sido incorporados, d
 
 <!--If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will already appear in the managed devices list.-->
 
-1. Abra la [página del centro de](https://compliance.microsoft.com) **Configuración** de cumplimiento de Microsoft y elija Habilitar la supervisión **de dispositivos.**
+1. Abra la [página del centro](https://compliance.microsoft.com) **de Configuración** de cumplimiento de Microsoft y elija **Habilitar la supervisión de dispositivos**.
 
    > [!NOTE]
    > Aunque, por lo general, habilitar la incorporación de dispositivos tarda aproximadamente 60 segundos, espere 30 minutos antes de ponerse en contacto con el soporte técnico de Microsoft.
@@ -92,7 +92,7 @@ Cuando quiera incorporar dispositivos que todavía no hayan sido incorporados, d
    > [!div class="mx-imgBorder"]
    > ![habilitar la administración de dispositivos.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Es necesario incorporar dispositivos Microsoft 365 soluciones de cumplimiento normativo para recibir telemetría del sensor DLP y aplicar directivas de prevención de pérdida de datos. 
 

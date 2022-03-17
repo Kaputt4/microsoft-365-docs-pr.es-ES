@@ -10,19 +10,19 @@ ms.topic: overview
 ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: d7336e06aa970ac9fc08cafcb50f8bbed040c8a8
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 17954ec9c01a053f847a7d8a74188edf2f4e4091
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512312"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525548"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>Requisitos de Microsoft Defender para empresas
 
@@ -64,7 +64,7 @@ En la tabla siguiente se enumeran los requisitos básicos para configurar y usar
 > - Si tiene otra suscripción Microsoft 365 al iniciar la versión de prueba de Defender para empresas, puede usar el servicio de Azure AD existente. 
 > - Si estás [usando Microsoft 365 Empresa Premium al](../../business/index.yml) iniciar la versión de prueba de Defender para empresas, tienes la opción de administrar dispositivos en Microsoft Intune. 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Continúe con:
 

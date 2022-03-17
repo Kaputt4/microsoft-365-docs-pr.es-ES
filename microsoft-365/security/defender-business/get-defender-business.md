@@ -10,18 +10,18 @@ ms.topic: overview
 ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: deae4e7449f142cbdbb9ef4d41953824499bedca
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: c136c873fbe34f3fe227b508aedae168c15f69e1
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512690"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63524857"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtener Microsoft Defender para empresas
 
@@ -134,7 +134,7 @@ Cuando recibas el correo electrónico de aceptación, aquí te explicamos cómo 
       c. Para asignar licencias, siga las instrucciones de [Asignar licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md).
 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Configurar y configurar Microsoft Defender para empresas](mdb-setup-configuration.md).
 

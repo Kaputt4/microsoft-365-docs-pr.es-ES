@@ -11,14 +11,14 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 description: Obtenga información sobre cómo exportar e importar modelos de comprensión de documentos con PowerShell en SharePoint Syntex.
-ms.openlocfilehash: 6751a66d713ada8c06445d8bfd0efdb5c3ac2fad
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: dc35d298ebd79752684c91ce944333277fcef621
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159510"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63527010"
 ---
 # <a name="export-and-import-document-understanding-models-with-powershell"></a>Exportar e importar modelos de comprensión de documentos con PowerShell
 
@@ -29,7 +29,7 @@ SharePoint Syntex pueden exportarse como plantillas PnP, lo que permite la reuti
 
 ## <a name="export-all-models-in-a-content-center"></a>Exportar todos los modelos en un centro de contenido
 
-Para exportar todos los modelos de un centro de contenido a una sola plantilla PnP, use los siguientes cmdlets [de PowerShell pnP:](https://pnp.github.io/powershell/)
+Para exportar todos los modelos de un centro de contenido a una sola plantilla PnP, use los siguientes cmdlets [de PowerShell pnP](https://pnp.github.io/powershell/) :
 
 ```powershell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -39,7 +39,7 @@ Get-PnPSiteTemplate -Out MyModels.pnp -Handlers SyntexModels
 
 ## <a name="export-specific-models"></a>Exportar modelos específicos
 
-Para exportar modelos específicos de un centro de contenido a una plantilla PnP, use los siguientes cmdlets [de PowerShell pnP:](https://pnp.github.io/powershell/)
+Para exportar modelos específicos de un centro de contenido a una plantilla PnP, use los siguientes cmdlets [de PowerShell pnP](https://pnp.github.io/powershell/) :
 
 ```powershell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"

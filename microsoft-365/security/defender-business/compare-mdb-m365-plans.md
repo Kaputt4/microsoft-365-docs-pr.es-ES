@@ -10,19 +10,19 @@ ms.topic: reference
 ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: edad91bde18b4bf9a86e0ab02ffc28df675f4c10
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 793c078621424bca89ccc4c6d88c79054ab059cd
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512508"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526032"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparar Microsoft Defender para empresas con Microsoft 365 Empresa Premium
 
@@ -100,7 +100,7 @@ En la tabla siguiente se comparan las características y capacidades de segurida
 
 (<a id="fn3">3</a>) Durante el programa de vista previa, Windows dispositivos cliente se admiten en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Consulta los requisitos de Microsoft Defender para empresas](mdb-requirements.md)
 

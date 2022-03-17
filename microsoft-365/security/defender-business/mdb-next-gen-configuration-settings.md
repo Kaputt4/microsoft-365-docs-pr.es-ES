@@ -10,18 +10,18 @@ ms.topic: overview
 ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a71ca8294660a98d13e72a3316b5512f1647f4f7
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 263d6457c8e913bdd3d8224af71f201156e24b5a
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450652"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525562"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>Comprender las opciones de configuración de próxima generación en Microsoft Defender para empresas
 
@@ -104,7 +104,7 @@ En la tabla siguiente se describen las opciones preconfiguradas para Defender pa
 - [Revisar acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Visite el portal Microsoft 365 Defender web](mdb-get-started.md)
 

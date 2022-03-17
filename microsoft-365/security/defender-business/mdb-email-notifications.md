@@ -10,15 +10,15 @@ ms.topic: overview
 ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: 336a0d053f2fe3a14626ffe4aa2c7df56eecebda
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 2e2c12a84e23290592c5b53156b747d39f6a3131
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512886"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63524981"
 ---
 # <a name="set-up-email-notifications"></a>Configurar notificaciones por correo electrónico
 
@@ -75,7 +75,7 @@ Para ver o editar la configuración de notificaciones por correo electrónico de
 
    - Si tiene reglas creadas, seleccione una regla para editarla. También puede eliminar una regla. 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Continúe con:
 

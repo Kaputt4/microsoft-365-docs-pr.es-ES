@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 43e90c152f3eae42c9d24673bbc00bc282b963f3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f500b830a2a12674c53fdf1611c41ae7d59b6916
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326403"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526954"
 ---
 # <a name="train-your-security-staff-for-microsoft-365-defender"></a>Entrena al personal de seguridad para Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Con la urgencia de proteger su organización y sus datos de atacantes, debe incorporar rápidamente su personal de seguridad para Microsoft 365 Defender. Microsoft proporciona varios tipos de recursos de aprendizaje y autoejecución para Microsoft 365 Defender y los servicios asociados.
 

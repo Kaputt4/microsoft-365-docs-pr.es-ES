@@ -10,18 +10,18 @@ ms.topic: overview
 ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 9644df7d4681a3f425c82f2f47bdb2ad50c75483
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 92db1711fa5aefb8920c35a8665cf322b3f0f5ef
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512760"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525866"
 ---
 # <a name="firewall-in-microsoft-defender-for-business"></a>Firewall en Microsoft Defender para empresas
 
@@ -66,7 +66,7 @@ Microsoft Defender para empresas incluye protección de firewall a través Windo
 | **Red privada** | El perfil de red privada se aplica a una red en una ubicación privada, como su hogar. La configuración del firewall para redes privadas se aplica a las conexiones entrantes que se inician en otros dispositivos que están en la misma red. En general, en una red privada, se supone que todos los demás dispositivos de la misma red son dispositivos de confianza. Sin embargo, de forma predeterminada, las conexiones entrantes se establecen **en Bloquear todo**. |
 | **Reglas personalizadas** | [Las reglas personalizadas](mdb-custom-rules-firewall.md) permiten bloquear o permitir conexiones específicas. Por ejemplo, supongamos que desea bloquear todas las conexiones entrantes en dispositivos que están conectados a una red privada, excepto las conexiones a través de una aplicación específica en un dispositivo. En este caso, establecería la **red privada** para bloquear todas las conexiones entrantes y, a continuación, agregaría una regla personalizada para definir la excepción. <br/><br/>Puede usar reglas personalizadas para definir excepciones para archivos o aplicaciones específicos, una dirección IP o un rango de direcciones IP. <br/><br/>En función del tipo de regla personalizada que está creando, estos son algunos valores de ejemplo que puede usar: <br/><br/>Ruta de acceso del archivo de aplicación: `C:\Windows\System\Notepad.exe or %WINDIR%\Notepad.exe` <br/><br/>IP: una dirección IPv4/IPv6 válida, como `192.168.1.0` o `192.168.1.0/24` <br/><br/>IP: un intervalo de direcciones IPv4/IPv6 válido, con formato like `192.168.1.0-192.168.1.9` (sin espacios incluidos) |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Administrar la configuración del firewall en Microsoft Defender para empresas](mdb-custom-rules-firewall.md)
 

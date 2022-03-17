@@ -10,12 +10,12 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 96bd667cf5d3661476111f7593632f0e5362cf45
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 8d949b13203aaeab51d2518f16650ba6df832195
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766061"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525644"
 ---
 # <a name="readiness-assessment-tools"></a>Herramientas de evaluación de preparación
 
@@ -29,11 +29,11 @@ Para obtener más información sobre cómo usar el control de evaluación de pre
 
 ## <a name="online-readiness-assessment-tool-for-management-settings"></a>Herramienta de evaluación de preparación en línea para la configuración de administración
 
-La herramienta [en](https://aka.ms/mmdart) línea comprueba la configuración de Microsoft Endpoint Manager (específicamente, Microsoft Intune), Azure Active Directory (Azure AD) y Microsoft 365 para asegurarse de que funcionarán con El escritorio administrado de Microsoft.
+[La herramienta](https://aka.ms/mmdart) en línea comprueba la configuración de Microsoft Endpoint Manager (específicamente, Microsoft Intune), Azure Active Directory (Azure AD) y Microsoft 365 para asegurarse de que funcionarán con Microsoft Managed Desktop.
 
-Microsoft Managed Desktop conserva los datos asociados a estas comprobaciones durante 12 meses después de la última vez que ejecute una comprobación en su Azure AD (inquilino). Después de 12 meses, lo conservamos en forma no identificada. Puede elegir eliminar los datos que recopilamos.
+Microsoft Managed Desktop conserva los datos asociados con estas comprobaciones durante 12 meses después de la última vez que ejecute una comprobación en su Azure AD (inquilino). Después de 12 meses, lo conservamos en forma no identificada. Puede elegir eliminar los datos que recopilamos.
 
-Cualquier persona con al menos el rol Lector global o Administrador de Intune podrá ejecutar esta herramienta, pero dos de las comprobaciones [(directivas](readiness-assessment-fix.md#conditional-access-policies) de acceso condicional y autenticación [multifactor](readiness-assessment-fix.md#multi-factor-authentication) requieren permisos adicionales).
+Cualquier persona con al menos el rol Lector global o Administrador de Intune podrá ejecutar esta herramienta, pero dos de las comprobaciones [(directivas](readiness-assessment-fix.md#conditional-access-policies) de acceso condicional y autenticación [multifactor](readiness-assessment-fix.md#multi-factor-authentication)) requieren permisos adicionales.
 
 > [!IMPORTANT]  
 > La herramienta de evaluación de preparación en línea le ayuda a comprobar su preparación para inscribirse en Microsoft Managed Desktop por primera vez. Si su organización ya está registrada en Microsoft Managed Desktop, no use esta herramienta.
@@ -53,14 +53,14 @@ A continuación se muestra la Microsoft Intune configuración:
 | Perfiles de configuración de dispositivos | Confirma que los perfiles de configuración no están asignados a todos los usuarios ni a todos los dispositivos. <br><br> Los perfiles de configuración **no deben** asignarse a ningún dispositivo de Escritorio administrado de Microsoft. |
 | Restricciones de tipo de dispositivo | Comprueba que Windows 10 dispositivos de la organización pueden inscribirse en Intune. |
 | Página de estado de inscripción | Confirma que la página de estado de inscripción no está habilitada. |
-| Con una inscripción de Intune | Comprueba que Windows 10 dispositivos de la Azure AD se inscribieron automáticamente en Intune. |
+| Con una inscripción de Intune | Comprueba que los Windows 10 de la Azure AD se inscribieron automáticamente en Intune. |
 | Microsoft Store para Empresas | Confirma que Microsoft Store para Empresas está habilitado y sincronizado con Intune. |
 | Autenticación multifactor | Comprueba que la autenticación multifactor no se aplica a las cuentas de servicio de Escritorio administrado de Microsoft. |
 | Scripts de PowerShell | Comprueba que Windows PowerShell scripts no **están** asignados de una manera que se dirigiría a dispositivos de Escritorio administrado de Microsoft. |
 | Región | Comprueba que su región es compatible con Microsoft Managed Desktop. |
 | Líneas base de seguridad | Comprueba que el perfil de línea base de seguridad no está dirigido a todos los usuarios ni a todos los dispositivos. <br><br> Las directivas de línea base de **seguridad no deben** dirigirse a ningún dispositivo de Escritorio administrado de Microsoft. |
 | Windows aplicaciones | Revisa qué aplicaciones quieres asignar a dispositivos de Escritorio administrado de Microsoft. |
-| Windows Hello para empresas | Comprueba que Windows Hello para empresas está habilitado. |
+| Windows Hello para empresas | Comprueba que Windows Hello para empresas está habilitada. |
 | Windows 10 de actualización | Comprueba que la directiva de "Windows 10 de actualización" de Intune no está dirigida a todos los usuarios ni a todos los dispositivos. <br><br> La directiva no **debe dirigirse** a ningún dispositivo de Escritorio administrado de Microsoft. |
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory configuración
@@ -69,7 +69,7 @@ A continuación se muestra la Azure Active Directory configuración:
 
 | Cheque | Descripción |
 | ----- | ----- |
-| Suscripciones "ad hoc" para Enterprise itinerancia de estado | Indica cómo comprobar una configuración que, si se establece en "false", puede impedir que Enterprise estado móvil funcione correctamente. |
+| Suscripciones "ad hoc" para Enterprise itinerancia de estado | Aconseja comprobar una configuración que, si se establece en "false", podría impedir que Enterprise estado móvil funcione correctamente. |
 | Enterprise State Roaming | Aconseja cómo comprobar si Enterprise itinerancia de estado está habilitada. |
 | Licencias | Comprueba que ha obtenido las [licencias necesarias](prerequisites.md#more-about-licenses). |
 | Autenticación multifactor | Comprueba que la autenticación multifactor no se aplica a todos los usuarios. <br><br> La autenticación multifactor no **debe** aplicarse accidentalmente a las cuentas de servicio de Escritorio administrado de Microsoft. |

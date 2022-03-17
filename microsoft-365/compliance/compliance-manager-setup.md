@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los permisos y roles de usuario del Administrador de cumplimiento de Microsoft y configure las pruebas automatizadas de las acciones. Administrar el historial de usuarios y filtrar la vista de panel.
-ms.openlocfilehash: 070c8fea309ea7c01b82be068acc40a7dcb830ff
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a6a0d7c12b0f798b88d460517866c55862c56740
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330487"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525021"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -124,8 +124,6 @@ La configuración del Administrador de cumplimiento en el Centro de cumplimiento
 El Administrador de cumplimiento detecta señales de otras soluciones de cumplimiento de Microsoft 365 a las que su organización se suscribe, incluidos el gobierno de la información, la protección de la información, la prevención de pérdida de datos, el cumplimiento de las comunicaciones y la administración de riesgos de información confidencial. En la página de detalles de cada acción de mejora, el campo Lógica de  prueba de la ficha Prueba mostrará lo que se necesita en la otra solución para que la acción pase y gane puntos hacia la puntuación de cumplimiento.
 
 El Administrador de cumplimiento también detecta señales de acciones de mejora complementarias que también son supervisadas por [La puntuación segura de Microsoft](../security/defender/microsoft-secure-score.md). Con estas señales, el Administrador de cumplimiento puede probar automáticamente determinadas acciones de mejora para usted, lo que ayuda a maximizar la eficiencia en sus actividades de cumplimiento. Cuando una acción de mejora se prueba e implementa correctamente, recibes la cantidad completa de puntos, que se acredita en la puntuación general de cumplimiento.
-
-En la página de detalles de cada acción de mejora
 
 Las pruebas automáticas están activadas de forma predeterminada para organizaciones nuevas en el Administrador de cumplimiento. Al implementar por primera vez Microsoft 365 o Office 365, se tarda aproximadamente siete días en recopilar completamente los datos y tener en cuenta la puntuación de cumplimiento. Cuando las pruebas automatizadas están activadas, la fecha de prueba de la acción no se actualizará, pero su estado de prueba se actualizará. Cuando se crean nuevas evaluaciones, las puntuaciones incluyen automáticamente las puntuaciones de control de Microsoft y la integración de puntuación segura.
 

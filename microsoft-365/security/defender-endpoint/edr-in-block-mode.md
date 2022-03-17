@@ -15,15 +15,15 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.date: 11/29/2021
+ms.date: 03/16/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 6b6e9f9c379d4d0a659b49b9b9ce9b22b6e5ee04
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6c3df0efe5c565497803ecdd84716ec70e590afd
+ms.sourcegitcommit: b67385243fb56ad20f2a6f1c40be46f5691c1c2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322665"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63527832"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de Endpoint (EDR) en el modo bloqueo
 
@@ -63,15 +63,24 @@ La siguiente imagen muestra una instancia de software no deseado que se detectó
 
 ## <a name="enable-edr-in-block-mode"></a>Habilitar EDR en modo de bloque
 
+> [!IMPORTANT]
+> A partir de la versión 4.18.2202.X de la plataforma, ahora puedes establecer EDR en modo de bloqueo para que se alope a grupos de dispositivos específicos mediante LOSP de Intune. Puede seguir configurando los EDR en modo de bloque en todo el espacio empresarial en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Tenga en cuenta que EDR en modo de bloqueo se recomienda principalmente para dispositivos que ejecutan MDAV en modo pasivo (un ANTIVIRUS de terceros está activo). 
+
 > [!TIP]
 > Asegúrese de que se [cumplen](#requirements-for-edr-in-block-mode) los requisitos antes de activar EDR en modo de bloque.
+
+### <a name="security-portal"></a>Portal de seguridad 
 
 1. Vaya al portal Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) e inicie sesión.
 2. Elija **Configuración** \> **de extremos generales** \>  \> **avanzados**.
 3. Desplácese hacia abajo y, a continuación, active **Habilitar EDR en modo de bloque**.
 
-> [!IMPORTANT]
-> EDR en modo de bloque solo se puede desactivar en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">el portal</a> de Microsoft 365 Defender y se aplica en todo el espacio empresarial. No puedes establecer EDR en modo de bloque para que se den como destino usuarios o grupos de dispositivos específicos. No puede usar claves del Registro, Microsoft Intune o directiva de grupo para habilitar o deshabilitar EDR en modo de bloque.
+### <a name="intune"></a>Intune
+
+Para crear una directiva personalizada en Intune, [consulte Deploy OMA-URIs to target a CSP through Intune y a comparison to on-premises](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune).
+
+Para obtener más información sobre el CSP de Defender que se EDR en modo de bloque, consulta "Configuración/PassiveRemediation" en [CSP de Defender](/windows/client-management/mdm/defender-csp).
+
 
 ## <a name="requirements-for-edr-in-block-mode"></a>Requisitos para EDR en modo de bloque
 

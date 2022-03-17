@@ -11,14 +11,14 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 description: Obtenga información sobre cómo usar PowerShell para solicitar el procesamiento por un SharePoint Syntex de comprensión de documentos.
-ms.openlocfilehash: f6e013bddbec3c0f12bb8665de538967adfff116
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 8f66a0cc5e59ad2ccb6b92d98cfaee8ce84470f2
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159678"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526448"
 ---
 # <a name="use-powershell-to-request-processing-by-a-document-understanding-model"></a>Usar PowerShell para solicitar el procesamiento por un modelo de comprensión de documentos
 

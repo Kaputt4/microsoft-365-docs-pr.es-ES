@@ -1,5 +1,5 @@
 ---
-title: Hash y cargar la tabla de origen de información confidencial para tipos de información confidencial de coincidencia de datos exactos
+title: Aplicar hash y cargar la tabla de origen de información confidencial para los datos exactos que coincidan con los tipos de información confidencial
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 description: Aplica hash y carga la tabla de origen de información confidencial para obtener datos exactos que coincidan con los tipos de información confidencial.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 85a65bc0d9d68a4a148fbc820985b6f40b6f6792
-ms.sourcegitcommit: 8410a49995a084e4cc9b3f7286c8d506b7a85d79
+ms.openlocfilehash: 8d3effe3d46375ffcaec268e4b3fc6d53fc5044e
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60914895"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526504"
 ---
-# <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>Hash y cargar la tabla de origen de información confidencial para tipos de información confidencial de coincidencia de datos exactos
+# <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>Aplicar hash y cargar la tabla de origen de información confidencial para los datos exactos que coincidan con los tipos de información confidencial
 
 En este artículo se muestra cómo hash y cargar la tabla de origen de información confidencial.
 
@@ -43,10 +43,10 @@ Si desea aplicar un algoritmo hash y cargar desde un equipo, tendrá que hacerlo
 Si no desea exponer el archivo de tabla de origen de información confidencial de texto sin formato en el equipo de acceso directo, puede realizar un hash en un equipo que se encuentra en una ubicación segura y, a continuación, copiar el archivo hash y el archivo de sal en un equipo que pueda conectarse directamente al inquilino de Microsoft 365 para cargarlo. En el escenario de hash y carga separados, necesitará el EDMUploadAgent en ambos equipos.
 
 > [!IMPORTANT]
-> Si usó el esquema coincidencia exacta de datos y el  asistente para tipos de información confidencial para crear el archivo de esquema, debe descargar el esquema para este procedimiento si aún no lo ha hecho. Vea Export [of the EDM schema file in XML format](sit-get-started-exact-data-match-create-schema.md#export-of-the-edm-schema-file-in-xml-format).
+> Si usó el esquema coincidencia exacta de datos y el asistente para tipos de información confidencial para crear el  archivo de esquema, debe descargar el esquema para este procedimiento si aún no lo ha hecho. Vea Export [of the EDM schema file in XML format](sit-get-started-exact-data-match-create-schema.md#export-of-the-edm-schema-file-in-xml-format).
 
 > [!NOTE]
-> Si su organización ha configurado la clave de cliente [para Microsoft 365](customer-key-overview.md)en el nivel de inquilino, la coincidencia exacta de datos hará uso de su funcionalidad de cifrado automáticamente. Esto solo está disponible para los inquilinos con licencia E5 en la nube comercial.
+> Si su organización ha configurado la clave de cliente [para Microsoft 365](customer-key-overview.md) en el nivel de inquilino, la coincidencia exacta de datos hará uso de su funcionalidad de cifrado automáticamente. Esto solo está disponible para los inquilinos con licencia E5 en la nube comercial.
 
 ### <a name="best-practices"></a>Procedimientos recomendados
 
@@ -64,11 +64,11 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 
 Si la herramienta indica un error de coincidencia en el número de columnas, puede deberse a la presencia de comas o caracteres de comillas dentro de los valores de la tabla que se confunden con delimitadores de columna. A menos que estén rodeando un valor completo, las comillas simples y dobles pueden hacer que la herramienta se desidentifique erróneamente dónde comienza o termina una columna individual. 
 
-**Si encuentra caracteres de comillas sencillas o** dobles que rodean valores completos: puede dejarlos tal como están.
+**Si encuentra caracteres de comillas sencillas o dobles que rodean valores completos**: puede dejarlos tal como están.
 
-Si encuentras caracteres de comilla única o **comas** dentro de un valor: por ejemplo, el nombre de la persona Tom O'Neil o la ciudad 's-Gravenhage que comienza con un carácter apóstrofe, deberás modificar el proceso de exportación de datos usado para generar la tabla de información confidencial para rodear dichas columnas con comillas dobles.
+Si encuentras caracteres de comilla única **o comas** dentro de un valor: por ejemplo, el nombre de la persona Tom O'Neil o la ciudad 's-Gravenhage que comienza con un carácter apóstrofe, deberás modificar el proceso de exportación de datos usado para generar la tabla de información confidencial para rodear dichas columnas con comillas dobles.
 
-**Si los caracteres de** comilla doble se encuentran dentro de los valores , puede ser preferible usar el formato delimitado por tabulación para la tabla que sea menos susceptible a estos problemas.
+**Si se encuentran** caracteres de comilla doble dentro de los valores, puede ser preferible usar el formato delimitado por tabulación para la tabla que sea menos susceptible a estos problemas.
 
 ### <a name="prerequisites"></a>Requisitos previos
 
@@ -76,7 +76,7 @@ Si encuentras caracteres de comilla única o **comas** dentro de un valor: por e
 - un Windows 10 o Windows Server 2016 con .NET versión 4.6.2 <!--4.7.2 un comment this around 9/29-->para ejecutar EDMUploadAgent
 - un directorio en el equipo de carga para lo siguiente:
   - [Agente de Upload EDM](#links-to-edm-upload-agent-by-subscription-type)
-  - el archivo de elemento confidencial en .csv, .tsv o pipe (|),PatientRecords.csv **en** nuestros ejemplos
+  - el archivo de elemento confidencial en .csv, .tsv o pipe (|), **PatientRecords.csven nuestros** ejemplos
   - los archivos hash y sal de salida creados en este procedimiento
   - el nombre del almacén de datos del archivo **edm.xml** que para este ejemplo es `PatientRecords`
 
@@ -126,7 +126,7 @@ Este equipo debe tener acceso directo a su espacio empresarial de Microsoft 365.
 
 4. Inicie sesión con su cuenta profesional o educativa de Microsoft 365 que se ha agregado al grupo de seguridad de EDM_DataUploaders. La información de inquilino se extrae de la cuenta de usuario para establecer una conexión.
 
-   OPCIONAL: si usó el esquema coincidencia exacta de datos y  el asistente para tipos de información confidencial para crear el esquema, debe descargarlo para usarlo en estos procedimientos si aún no lo ha hecho. Ejecute este comando en una ventana del símbolo del sistema:
+   OPCIONAL: si usó el esquema coincidencia exacta de datos y el asistente para tipos de información confidencial para crear  el esquema, debe descargarlo para usarlo en estos procedimientos si aún no lo ha hecho. Ejecute este comando en una ventana del símbolo del sistema:
 
    ```dos
    EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
@@ -157,7 +157,7 @@ Este comando agregará automáticamente un valor de sal generado aleatoriamente 
    Verifique que el estado se encuentre en **ProcesamientoEnCurso**. Verifique nuevamente cada pocos minutos hasta que el estado cambie a **Completado**. Una vez que el estado se muestre como completado, los datos de EDM ya están listos para su uso. Según el tamaño del archivo de tabla de origen de información confidencial, esto puede tardar de unos minutos a varias horas. 
 
 > [!TIP]
-> Si desea recibir una notificación una vez que los datos confidenciales cargados estén listos para usarse, siga los procedimientos descritos en Crear notificaciones para las actividades [exactas de](sit-edm-notifications-activities.md#create-notifications-for-exact-data-match-activities)coincidencia de datos .
+> Si desea recibir una notificación una vez que los datos confidenciales cargados estén listos para usarse, siga los procedimientos descritos en Crear notificaciones para las actividades [exactas de coincidencia de datos](sit-edm-notifications-activities.md#create-notifications-for-exact-data-match-activities).
 
 ### <a name="separate-hash-and-upload"></a>Separe el hash y cargue
 
@@ -229,5 +229,5 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
      
 ## <a name="next-step"></a>Paso siguiente
 
-- [Crear un paquete de regla o tipo de información confidencial de coincidencia de datos exactos](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package)
+- [Crear un paquete de reglas o tipo de información confidencial de coincidencia exacta de datos](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package)
 

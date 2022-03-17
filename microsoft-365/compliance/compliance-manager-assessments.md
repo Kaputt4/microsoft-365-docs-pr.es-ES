@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree evaluaciones en El Administrador de cumplimiento de Microsoft para ayudarle a cumplir los requisitos de normativas y certificaciones que son importantes para su organización.
-ms.openlocfilehash: 59f2bd89a798567d51c3e28fda574e7b9f0ba326
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fb30fd8f55172890507b82910630e7202de0d996
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319537"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526614"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Crear y administrar evaluaciones en el Administrador de cumplimiento
 
@@ -73,7 +73,7 @@ Puede crear un grupo al crear una nueva evaluación. Los grupos no se pueden cre
 - Los controles de evaluación relacionados en distintas evaluaciones dentro del mismo grupo se actualizan automáticamente cuando se completan.
 - Los grupos pueden contener evaluaciones para la misma certificación o reglamento, pero cada grupo solo puede contener una evaluación para un par específico de certificación de productos. Por ejemplo, un grupo no puede contener dos evaluaciones para Office 365 NIST CSF. Un grupo puede contener varias evaluaciones para el mismo producto solo si la certificación o regulación correspondientes para cada uno es diferente.
 - Al eliminar una evaluación, se rompe la relación entre esa evaluación y el grupo.
-- Los grupos no se pueden eliminar manualmente.
+- Los grupos no se pueden eliminar.
 
 ## <a name="understand-templates-before-creating-assessments"></a>Comprender plantillas antes de crear evaluaciones
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b125689f6eaf2bad5ebfef9977417abdea051f3b
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: ebcfea808e64c89772f36fb22f5dfd75e6e8e27f
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401138"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525812"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -85,6 +85,7 @@ Si experimenta algún error de instalación, consulte [Troubleshooting installat
   - Debian 9 o posterior
   - SUSE Linux Enterprise Server 12 o posterior
   - Oracle Linux 7.2 o posterior
+  - Oracle Linux 8.x
   - Amazon Linux 2
   - Fedora 33 o posterior
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo usar El analizador de configuración de cumplimiento de Microsoft para  rápida ejecución con El Administrador de cumplimiento de Microsoft.
-ms.openlocfilehash: 3c5230a8a9998c4b924e5a9d4a9565ae1c97db89
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a679f0483431313672ac0dfa1101eb9909b6c060
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325115"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525159"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analizador de configuración de cumplimiento de Microsoft para el Administrador de cumplimiento (versión preliminar)
 
@@ -77,9 +77,7 @@ Después de instalar MCCA, puede ejecutar MCCA y generar un informe. Para ejecut
 
 3. Una vez que se ejecuta MCCA, realiza una comprobación de versión inicial y pide credenciales. En el símbolo del sistema Introducir el nombre de usuario, inicie sesión con la dirección de correo Microsoft 365 de la cuenta de usuario (vea los roles aptos [para crear informes](#role-based-reporting)). A continuación, escriba la contraseña en el símbolo del sistema de contraseña.
 
-A continuación, el informe tarda aproximadamente entre 2 y 5 minutos en generarse. Cuando haya terminado, se abrirá una ventana del explorador y se mostrará el informe HTML. Cada vez que ejecute la herramienta, pedirá sus credenciales y generará un nuevo informe. Este informe se almacena localmente en el directorio siguiente:
-
-C:\Users\<username>\AppData\Local\Microsoft\MCCA. 
+A continuación, el informe tarda aproximadamente entre 2 y 5 minutos en generarse. Cuando haya terminado, se abrirá una ventana del explorador y se mostrará el informe HTML. Cada vez que ejecute la herramienta, pedirá sus credenciales y generará un nuevo informe. Este informe se almacena localmente en el directorio C: \ Users \ *username* \ AppData \ Local \ Microsoft \ MCCA.
 
 Puede obtener acceso a los informes generados anteriormente desde este directorio.
 

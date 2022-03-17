@@ -12,16 +12,16 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo las entidades con nombre le ayudan a detectar elementos confidenciales que contienen nombres de personas, direcciones físicas y términos médicos a través de directivas de prevención de pérdida de datos
-ms.openlocfilehash: 002905264d789e7ebe0b163a80fe033c028a6b4b
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 79f375fecf09a6f7ffe4c1a97b8d6864fbfb3e13
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110852"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63524871"
 ---
 # <a name="learn-about-named-entities-preview"></a>Más información sobre las entidades con nombre (versión preliminar)
 
@@ -35,7 +35,7 @@ ms.locfileid: "61110852"
 - [Administración de riesgos internos](insider-risk-management-solution-overview.md)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
 
-DLP hace un uso especial de las entidades con nombre en plantillas de directiva mejoradas, que son directivas DLP preconfiguradas que puede personalizar para las necesidades de las organizaciones. También puede crear [sus propias directivas DLP](create-test-tune-dlp-policy.md) a partir de una plantilla en blanco y usar una entidad con nombre SIT como condición. [](create-a-dlp-policy-from-a-template.md)
+DLP hace un uso especial de las entidades con nombre en plantillas de directiva mejoradas *, que* son directivas DLP preconfiguradas que puede personalizar para las necesidades de las organizaciones. También puede crear [sus propias directivas DLP](create-test-tune-dlp-policy.md) [a partir](create-a-dlp-policy-from-a-template.md) de una plantilla en blanco y usar una entidad con nombre SIT como condición.
 
 <!-- There are many other SITs that detect strings like social security, credit card, or bank account numbers to identify sensitive items. For more information, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md).-->
 
@@ -43,13 +43,13 @@ DLP hace un uso especial de las entidades con nombre en plantillas de directiva 
 
 ## <a name="examples-of-named-entity-sits"></a>Ejemplos de SITs de entidad con nombre
 
-Los SIT de entidad con  nombre vienen en dos sabores, agrupados *y desagrupados*
+Los SIT de entidad con nombre vienen en dos *sabores,* agrupados *y desagrupados*
 
 Los SIT de entidad con nombre agrupados detectan todas las coincidencias posibles. Úsenlos como criterios generales en las directivas DLP para detectar elementos confidenciales.
 
 Los SIT de entidad con nombre desagregados tienen un enfoque más estrecho, como un solo país. Úselos cuando necesite una directiva DLP con un ámbito de detección más estrecho.
  
-Estos son algunos ejemplos de SIT de entidad con nombre. Puede encontrar los 52 en el Centro de cumplimiento > clasificación de datos > **tipos de información confidencial.**
+Estos son algunos ejemplos de SIT de entidad con nombre. Puedes encontrar los 52 en el Centro de cumplimiento > **clasificación de datos > tipos de información confidencial**.
 
 |Entidad con nombre |Descripción  |Bundled/Unbundled  |
 |---------|---------|---------|

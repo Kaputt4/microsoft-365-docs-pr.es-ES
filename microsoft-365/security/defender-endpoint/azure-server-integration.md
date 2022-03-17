@@ -10,18 +10,18 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8bf51b744e294e4bb2740b3e437305629eb23c2a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2ed9d25336cd7e8162849aa5d1d1a3e3382063fc
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934254"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526682"
 ---
 # <a name="integration-with-microsoft-defender-for-cloud"></a>Integración con Microsoft Defender for Cloud
 
@@ -35,12 +35,12 @@ Microsoft Defender para endpoint se puede integrar con Microsoft Defender para l
 
 En esta integración se incluyen las siguientes funcionalidades:
 
-- Incorporación automatizada: el sensor defender para endpoints se habilita automáticamente en servidores Windows que se incorpore a Microsoft Defender para la nube. Para obtener más información sobre la incorporación de Microsoft Defender para la nube, vea [Use the integrated Microsoft Defender for Endpoint license](/azure/security-center/security-center-wdatp).
+- Incorporación automatizada: el sensor Defender para endpoints se habilita automáticamente en servidores Windows que están incorporados a Microsoft Defender para la nube. Para obtener más información sobre la incorporación de Microsoft Defender para la nube, consulte [Use the integrated Microsoft Defender for Endpoint license](/azure/security-center/security-center-wdatp).
 
     > [!NOTE]
-    > La integración entre Microsoft Defender para servidores y Microsoft Defender para endpoint se ha ampliado para admitir [Windows Server 2019 y Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
+    > La integración entre Microsoft Defender para servidores y Microsoft Defender para endpoint se ha expandido para admitir [Windows Server 2019 y Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
 
-- Windows servidores supervisados por Microsoft Defender para la nube también estarán disponibles en Defender para endpoint: Microsoft Defender para la nube se conecta sin problemas al inquilino de Defender para endpoint, lo que proporciona una vista única entre clientes y servidores.  Además, las alertas de Defender para puntos de conexión estarán disponibles en la consola de Microsoft Defender para la nube.
+- Windows servidores supervisados por Microsoft Defender para la nube también estarán disponibles en Defender para endpoint: Microsoft Defender para la nube se conecta perfectamente al inquilino de Defender para endpoint, lo que proporciona una vista única entre clientes y servidores.  Además, las alertas de Defender para puntos de conexión estarán disponibles en la consola de Microsoft Defender para la nube.
 - Investigación del servidor: los clientes de Microsoft Defender para la nube pueden acceder al portal de Microsoft 365 Defender para realizar una investigación detallada para descubrir el ámbito de una posible infracción.
 
 > [!IMPORTANT]

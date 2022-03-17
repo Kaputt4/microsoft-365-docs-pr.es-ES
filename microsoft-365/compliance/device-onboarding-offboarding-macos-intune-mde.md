@@ -8,18 +8,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo incorporar y quitar dispositivos macOS en soluciones de cumplimiento Microsoft 365 con Microsoft Intune para clientes de MDE (versión preliminar)
-ms.openlocfilehash: 0486c08734e049a82550c1fb596b0e3d789126b8
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+description: Obtenga información sobre cómo incorporar y incorporar dispositivos macOS en soluciones de cumplimiento Microsoft 365 con Microsoft Intune para clientes de MDE (versión preliminar)
+ms.openlocfilehash: 6cc4362e924f291c6a8396bff342c6f628e33be3
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159534"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526560"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview"></a>Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante Intune para clientes de Microsoft Defender para punto de conexión (versión preliminar)
 
@@ -40,7 +40,7 @@ ms.locfileid: "62159534"
 - Esto admite macOS versión Catalina 10.15 y versiones posteriores
 - Instalar el explorador perimetral v95+ en los dispositivos macOS 
 
-## <a name="onboard-macos-devices-into-microsoft-365-compliance-solutions-using-microsoft-intune"></a>Incorporar dispositivos macOS en Microsoft 365 de cumplimiento con Microsoft Intune
+## <a name="onboard-macos-devices-into-microsoft-365-compliance-solutions-using-microsoft-intune"></a>Incorporar dispositivos macOS en Microsoft 365 de cumplimiento normativo mediante Microsoft Intune
 
 Usa estos pasos para incorporar un dispositivo macOS en las soluciones de cumplimiento si ya tiene MDE implementado en él.
 
@@ -61,7 +61,7 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
 
 ### <a name="create-system-configuration-profiles"></a>Crear perfiles de configuración del sistema
 
-1. Abra el **centro Microsoft Endpoint Manager**  >  **perfiles**  >  **de configuración de dispositivos**.
+1. Abra los **Microsoft Endpoint Manager** **centerDevicesConfiguration** >  > .
 
 1. Elija: **Crear perfil**. 
 
@@ -78,17 +78,17 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
 
 1. Elija **Siguiente**
 
-1. En la **pestaña Asignaciones,** agregue el grupo en el que desea implementar estas configuraciones y elija **Siguiente**.
+1. En la **pestaña Asignaciones** , agregue el grupo en el que desea implementar estas configuraciones y elija **Siguiente**.
 
 1. Revise la configuración y elija **Crear** para implementar la configuración.
 
-1. Abra   >  **perfiles de configuración de dispositivos,** debe ver los perfiles creados allí.
+1. Abra **los perfiles devicesConfiguration** > , debe ver los perfiles creados allí.
 
-1. En la página Perfiles de configuración, elija el perfil que acaba de  crear, en este ejemplo *AccessibilityformacOS* y elija Estado del dispositivo para ver una lista de **dispositivos** y el estado de implementación del perfil de configuración.
+1. En la página Perfiles de configuración, elija el perfil que acaba de crear, en este ejemplo *AccessibilityformacOS* y  elija Estado del dispositivo para ver una lista de **dispositivos** y el estado de implementación del perfil de configuración.
 
 ### <a name="update-configuration-profiles"></a>Actualizar perfiles de configuración
 
-1. Actualice el perfil de acceso a disco completo existente con el **archivo fulldisk.mobileconfig.**
+1. Actualice el perfil de acceso a disco completo existente con el **archivo fulldisk.mobileconfig** .
 
 1. Actualizar el perfil de preferencias de MDE existing con estos valores
    
@@ -107,9 +107,9 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
 > [!IMPORTANT]
 > Offboarding hace que el dispositivo deje de enviar datos del sensor al portal, pero los datos del dispositivo, incluida la referencia a las alertas que ha tenido, se conservarán durante un máximo de 6 meses.
 
-1. En **Microsoft Endpoint Manager,** abra **Perfiles** de configuración  >  **de dispositivos,** debe ver los perfiles creados allí.
+1. En **Microsoft Endpoint Manager,** abra **los perfiles DevicesConfiguration** > , debería ver los perfiles creados allí.
 
-2. En la **página Perfiles de configuración,** elija el perfil de preferencias MDE.
+2. En la **página Perfiles de configuración** , elija el perfil de preferencias MDE.
 
 1. Quite esta configuración:
    

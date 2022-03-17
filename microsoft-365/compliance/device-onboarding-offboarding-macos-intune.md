@@ -1,5 +1,5 @@
 ---
-title: Incorporar y incorporar dispositivos macOS en Microsoft 365 de cumplimiento con Microsoft Intune (versión preliminar)
+title: Incorporación y offboard de dispositivos macOS en Microsoft 365 compliance con Microsoft Intune (versión preliminar)
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -8,18 +8,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar y incorporar dispositivos macOS en Microsoft 365 de cumplimiento con Microsoft Intune (versión preliminar)
-ms.openlocfilehash: bab39cf101cb4fcae15f93ecc74bc52d81cadd91
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 5f8dd27490992e15d53dfc10311ce7b23b99683a
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327394"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526518"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview"></a>Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante Intune (versión preliminar)
 
@@ -42,7 +42,7 @@ Puedes usar Intune para incorporar dispositivos macOS en Microsoft 365 de cumpli
 - Instalar el explorador perimetral v95+ en los dispositivos macOS 
 
 
-## <a name="onboard-macos-devices-into-microsoft-365-compliance-solutions-using-microsoft-intune"></a>Incorporar dispositivos macOS en Microsoft 365 de cumplimiento con Microsoft Intune
+## <a name="onboard-macos-devices-into-microsoft-365-compliance-solutions-using-microsoft-intune"></a>Incorporar dispositivos macOS en Microsoft 365 de cumplimiento normativo mediante Microsoft Intune
 
 La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un proceso de seis fases.
 
@@ -164,7 +164,7 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
 1. Repita los pasos del 3 al 11 para crear perfiles para:
     1. **archivo fulldisk.mobileconfig**
     1. **com.microsoft.autoupdate2.xml** archivo
-    1. Archivo de **preferenciascom.microsoft.wdav.xml** MDE
+    1. Preferencias MDE **com.microsoft.wdav.xml** archivo
         1. establecer el motor antivirus `passive mode` = `true` o .`false` Se `true`usa si solo se implementa DLP. Use `false` o no asigne un valor si implementa DLP y Microsoft Defender para endpoint (MDE).
     1. **netfilter.mobileconfig**
  
@@ -178,7 +178,7 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
  
 1. Para **Seleccionar sistema operativo para iniciar el proceso de incorporación** , elija **macOS**.
  
-1. Para **el método Deployment**, **elija Administración de dispositivos móviles/Microsoft Intune**.
+1. Para **el método Deployment**, elija **Administración de dispositivos móviles/Microsoft Intune**.
  
 1. Elija **Descargar paquete de incorporación**. Contiene el código de incorporación en el *DeviceComplianceOnboarding.xml* archivo.
 
@@ -255,7 +255,7 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
 > [!NOTE]
 > Offboarding hace que el dispositivo deje de enviar datos del sensor al portal, pero los datos del dispositivo, incluida la referencia a las alertas que ha tenido, se conservarán hasta seis meses.
 
-2. En **Microsoft Endpoint Manager,** abra **los perfiles DevicesConfiguration** > , debe ver los perfiles creados allí.
+2. En **Microsoft Endpoint Manager,** abra **los perfiles DevicesConfiguration** > , debería ver los perfiles creados allí.
 
 1. En la **página Perfiles de configuración** , elija el *perfil wdav.pkg.intunemac* .
 

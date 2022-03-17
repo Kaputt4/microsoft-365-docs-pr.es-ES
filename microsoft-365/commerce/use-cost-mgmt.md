@@ -7,7 +7,7 @@ ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo usar la característica de administración de costos en el Centro de administración de Microsoft 365 para ver, analizar y administrar los costos de su organización.
 ms.date: 03/09/2022
-ms.openlocfilehash: 64531e7b7422c3267f053e1ef098a92bfe6bed28
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: c0cfcd47e20d34b12af1276995b0c0cfe1dc1ee7
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468753"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63524926"
 ---
 # <a name="use-cost-management-in-the-microsoft-365-admin-center"></a>Use la administración de costos en el Centro de administración de Microsoft 365
 

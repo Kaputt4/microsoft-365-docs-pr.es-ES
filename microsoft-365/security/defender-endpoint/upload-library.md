@@ -1,5 +1,5 @@
 ---
-title: Cargar archivos en la biblioteca de respuestas en directo
+title: Upload archivos a la biblioteca de respuestas en directo
 description: Obtenga información sobre cómo cargar un archivo en la biblioteca de respuestas en directo.
 keywords: apis, api de gráficos, api admitidas, carga en biblioteca
 search.product: eADQiWindows 10XVcnh
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,14 +20,14 @@ ms.collection:
 ms.topic: reference
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b2c50999b7aab3588239f3965e41543680c9aad6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 84ec7e361cccdc886650b0710f738a4315c4db8d
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331242"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63527063"
 ---
-#  <a name="upload-files-to-the-live-response-library"></a>Cargar archivos en la biblioteca de respuestas en directo  
+#  <a name="upload-files-to-the-live-response-library"></a>Upload archivos a la biblioteca de respuestas en directo  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -44,7 +44,7 @@ ms.locfileid: "63331242"
 
 ## <a name="api-description"></a>Descripción de la API
 
-Cargue el archivo en la biblioteca de respuestas en directo.
+Upload archivo a la biblioteca de respuestas en directo.
 
 ## <a name="limitations"></a>Limitaciones
 
@@ -75,7 +75,7 @@ POST https://api.securitycenter.microsoft.com/api/libraryfiles
 |  Nombre   |    Tipo    |       Descripción                         |
 |-----------------|--------|--------------------------------|
 | Authorization   | String | Portador.\<token> Obligatorio.      |
-| Content-Type    | string | multipart/form-data. Obligatorio. |
+| Content-Type    | cadena | multipart/form-data. Obligatorio. |
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
@@ -84,9 +84,9 @@ En el cuerpo de la solicitud, proporcione un objeto form-data con los siguientes
 | Parámetro         |     Tipo         |       Descripción                                        |
 |-----------------------|--------------|------------------------------------------------------------|
 | Archivo                  | Contenido del archivo | El archivo que se cargará en la biblioteca de respuestas en directo. Obligatorio |
-| Descripción           | Cadena       | Descripción del archivo.                                  |
+| Descripción           | String       | Descripción del archivo.                                  |
 | ParametersDescription | String       | (Opcional) Parámetros necesarios para que se ejecute el script. El valor predeterminado es una cadena vacía.                |
-| OverrideIfExists      | Boolean      | (Opcional) Si se va a invalidar el archivo si ya existe. El valor predeterminado es una cadena vacía.          |
+| OverrideIfExists      | Booleano      | (Opcional) Si se va a invalidar el archivo si ya existe. El valor predeterminado es una cadena vacía.          |
 
 
 

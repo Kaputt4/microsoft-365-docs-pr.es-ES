@@ -12,16 +12,16 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Use estos procedimientos para aprovechar las entidades con nombre en las directivas de prevención de pérdida de datos
-ms.openlocfilehash: f3dac4efa1b0cf84971ac4d07f78144b438d1161
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 5adb410689e597395f1b13152ed62af75fa111d6
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271519"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525227"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>Uso de entidades con nombre en las directivas de prevención de pérdida de datos (versión preliminar)
 
@@ -81,13 +81,13 @@ Para crear o editar una directiva DLP, use los procedimientos de [Crear, probar 
 |Carga de trabajo/servicios  |Compatibilidad con vista previa pública para entidades con nombre  |
 |---------|---------|
 |Office de directiva de clientes de Win32    |no compatible  |
-|Office directiva de clientes WAC    |compatible         |
+|Office de directiva de clientes WAC    |compatible         |
 |Sugerencia de directiva de OWA     |no compatible         |
 |Outlook de directiva     |no compatible |
 |Puntos de conexión (Windows 10 dispositivos)     |compatible  |
 |Exchange de transporte     |no compatible |
 |OneDrive para la Empresa datos en reposo     |compatible         |
-|SharePoint Online data-at-rest     |compatible         |
+|SharePoint datos en línea en reposo     |compatible         |
 |Teams datos en reposo     |compatible         |
 |Mensajes de correo electrónico datos en reposo     |no compatible         |
 |Microsoft Defender for Cloud Apps     |compatible         |
@@ -103,12 +103,12 @@ Para crear o editar una directiva DLP, use los procedimientos de [Crear, probar 
 |OWA     |compatible |
 |Exchange transporte     |no compatible |
 |OneDrive para la Empresa datos en reposo     |compatible |
-|SharePoint Online data-at-rest|compatible|
+|SharePoint datos en línea en reposo|compatible|
 |Escáner de Azure Information Protection (AIP)|no compatible|
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-|Incidencia  |Impacto  |
+|Problema  |Impacto  |
 |---------|---------|
 |Sugerencias de directiva DLP (OWA, Outlook, Office clientes win32)     |   Las sugerencias de directiva con condición de entidad darán como resultado "no coincidir"      |
 | Compatibilidad con el idioma asiático para el nombre de la persona (chino, japonés, coreano)    | Entidades con nombre admitidas solo para el conjunto de caracteres basado en latinos (es decir, kanji no es compatible) para el nombre de la persona        |

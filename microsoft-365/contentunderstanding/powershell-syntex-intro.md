@@ -11,14 +11,14 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 search.appverid: MET150
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 description: Obtenga información sobre cómo administrar SharePoint Syntex con PowerShell.
-ms.openlocfilehash: 5ac6defc92e986a7593936cccb9470489ee86227
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+ms.openlocfilehash: 2c8383a3708d83738d201a4e638deb65462da47d
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159546"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525686"
 ---
 # <a name="manage-sharepoint-syntex-with-powershell"></a>Administración de SharePoint Syntex con PowerShell
 

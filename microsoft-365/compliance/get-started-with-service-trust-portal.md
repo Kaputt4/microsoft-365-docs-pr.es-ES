@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Obtenga información sobre cómo obtener acceso y usar el Portal de confianza de servicio de Microsoft para ayudar con las prácticas de seguridad, privacidad y cumplimiento.
-ms.openlocfilehash: 5894fb57d4633c0dbc3c9d925be72910bdfc3f56
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: f23cf5be7f05462e505c4d3a46407255e460420b
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512914"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526156"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introducción al Portal de confianza de servicio de Microsoft
 
@@ -30,7 +30,7 @@ El Portal de confianza de servicio de Microsoft proporciona una variedad de cont
 
 ## <a name="accessing-the-service-trust-portal"></a>Acceso al Portal de confianza de servicio
 
-El Portal de confianza de servicios contiene detalles sobre la implementación de controles y procesos de Microsoft que protegen nuestros servicios en la nube y los datos de los clientes en esta. Para obtener acceso a algunos de los recursos del Portal de confianza de servicio, debe iniciar sesión como usuario autenticado con su cuenta de servicios en la nube de Microsoft (ya sea una cuenta de organización de Azure Active Directory o una cuenta de Microsoft) y revisar y aceptar el Contrato de no divulgación de Microsoft para materiales de cumplimiento.
+El Portal de confianza de servicios contiene detalles sobre la implementación de controles y procesos de Microsoft que protegen nuestros servicios en la nube y los datos de los clientes en esta. Para obtener acceso a algunos de los recursos del Portal de confianza de servicio, debe iniciar sesión como usuario autenticado con su cuenta de servicios en la nube de Microsoft (cuenta de organización Azure Active Directory) y revisar y aceptar el Contrato de no divulgación de Microsoft para materiales de cumplimiento.
 
 ### <a name="existing-customers"></a>Clientes existentes
 
@@ -41,7 +41,7 @@ Los clientes existentes pueden acceder al Portal de confianza de servicio <https
 - Azure
 
  > [!NOTE]
- > Azure Active Directory cuentas asociadas con organizaciones tienen acceso a toda la gama de documentos y características, como el Administrador de cumplimiento. Las cuentas de Microsoft creadas para uso personal tienen acceso limitado al contenido del Portal de confianza de servicio.
+ > Azure Active Directory cuentas asociadas con organizaciones tienen acceso a toda la gama de documentos y características, como el Administrador de cumplimiento.
 
 ### <a name="new-customers-and-customers-evaluating-microsoft-online-services"></a>Nuevos clientes y clientes que evalúan los servicios en línea de Microsoft
 

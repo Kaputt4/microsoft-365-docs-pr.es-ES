@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7045ff8931def0f7aef2c1ac40ea76ec839c7ad0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 003c7cee09499fdec46f7d588e792878e0d3be66
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312678"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525366"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Implementar Microsoft Defender para endpoint en iOS
 
@@ -117,7 +117,7 @@ A continuación, configura el modo supervisado para la aplicación Defender for 
 
 1. Cuando haya terminado, elija **Crear** en la página **Revisar y crear**. El nuevo perfil se muestra en la lista de perfiles de configuración.
 
-1. A continuación, para obtener funcionalidades mejoradas contra la suplantación de identidad, puede implementar un perfil personalizado en los dispositivos iOS supervisados. Siga los pasos siguientes:
+1. A continuación, debes implementar un perfil personalizado en dispositivos iOS supervisados. Esto es para funcionalidades mejoradas contra la suplantación de identidad. Siga los pasos siguientes:
 
     - Descargar el perfil de configuración desde [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
     - Vaya a **DevicesiOS** -> **/iPadOSConfiguration** ->  **profilesCreate** ->  **Profile**

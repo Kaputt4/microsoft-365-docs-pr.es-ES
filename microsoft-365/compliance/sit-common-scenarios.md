@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Cómo implementar tipos comunes de información confidencial usan escenarios de casos
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cd11c4843d91923f1ca5e171cc8bfc8e1c64c73d
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 39afa17fc7bf258848de9d5554b3dd56a1ce21b5
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272307"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525742"
 ---
 # <a name="common-usage-scenarios-for-sensitive-information-types"></a>Escenarios de uso comunes para tipos de información confidencial
 
@@ -37,7 +37,7 @@ Contoso Bank debe clasificar los números de tarjeta de crédito que emiten como
 1. Cree una copia de la tarjeta de crédito SIT. Siga los pasos para [copiar y modificar un tipo de información confidencial](create-a-custom-sensitive-information-type.md#copy-and-modify-a-sensitive-information-type) para copiar la tarjeta de crédito SIT.
 1. Edite el patrón de confianza alta. Siga los pasos de [edición o eliminación del patrón de tipo de información confidencial](sit-get-started-exact-data-match-create-rule-package.md#edit-or-delete-the-sensitive-information-type-pattern).
 1. Agregue la comprobación "empieza por" y agregue la lista de dígitos bin (con & sin formato). Por ejemplo, para asegurarse de que solo las tarjetas de crédito a partir de 411111 & 433512 deben considerarse válidas, agregue lo siguiente a la lista 4111 11, 4111-11, 411111, 4335 12, 4335-12, 433512.
-1. Repita el paso 2 & 3 para el patrón de confianza baja.
+1. Repita el paso 2 & 3 para el patrón de baja confianza.
 
 ## <a name="test-numbers-similar-to-social-security-numbers"></a>Números de prueba similares a los números del Seguro Social
 
@@ -56,7 +56,7 @@ Contoso basado en Australia encuentra que los números de teléfono de las firma
 
 **Solución sugerida**
 
-Agregue un grupo "no" en elementos de soporte técnico con una lista de palabras clave que contenga palabras clave usadas con frecuencia en la firma del correo electrónico como "Teléfono", "Móvil", "correo electrónico", "Gracias y saludos", etc. Mantenga la proximidad de esta lista de palabras clave a un valor más pequeño como 50 caracteres para una mayor precisión. Para obtener más información, vea [Introducción a los tipos de información confidencial personalizados](create-a-custom-sensitive-information-type.md).
+Agregue un grupo "no" en elementos de soporte técnico con una lista de palabras clave que contenga palabras clave de uso común en la firma del correo electrónico como "Teléfono", "Móvil", "correo electrónico", "Gracias y saludos", etc. Mantenga la proximidad de esta lista de palabras clave a un valor más pequeño como 50 caracteres para una mayor precisión. Para obtener más información, vea [Introducción a los tipos de información confidencial personalizados](create-a-custom-sensitive-information-type.md).
 
 ## <a name="unable-to-trigger-aba-routing-policy"></a>No se puede desencadenar la directiva de enrutamiento de ABA
 

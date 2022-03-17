@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 description: Actualice el archivo de tabla de origen de información confidencial.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14ef2997da92e0f902fd757a3cbff2735fdeada5
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 347ff88391a19cb3d8688b1142e524a163159b6f
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "62909728"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525492"
 ---
 # <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Actualizar el archivo de tabla de origen de información confidencial de coincidencia de datos exactos 
 
 Puede actualizar la base de datos de información confidencial hasta 5 veces en cada período de 24 horas. Tendrás que volver ahajar y cargar la tabla de origen de información confidencial.
 
-1. Vuelva a exportar los datos confidenciales a una aplicación, como Microsoft Excel, y guarde el archivo en .csv, formato .tsv o canal (|) delimitado. Mantenga el mismo nombre de archivo y la misma ubicación que usó cuando ha hashado y cargado previamente el archivo. Vea Export [source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) para obtener información detallada sobre cómo exportar los datos confidenciales y obtenerlos en el formato correcto.
+1. Vuelva a exportar los datos confidenciales a una aplicación, como Microsoft Excel, y guarde el archivo en un formato delimitado .csv, formato .tsv o canalización (|). Mantenga el mismo nombre de archivo y la misma ubicación que usó cuando ha hashado y cargado previamente el archivo. Vea Export [source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) para obtener información detallada sobre cómo exportar los datos confidenciales y obtenerlos en el formato correcto.
 
       > [!NOTE]
       > Si no hay cambios en la estructura (nombres de campo) del archivo de tabla de origen de información confidencial, no tendrá que realizar cambios en el archivo de esquema de base de datos al actualizar los datos. Pero si necesita realizar cambios, asegúrese de editar el esquema de la base de datos y su paquete de reglas consecuentemente. Consulta Administrar [el esquema exacto de coincidencia de datos](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) para ver los pasos para editar o quitar un esquema. Consulta Crear datos [exactos que coincidan con](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) el tipo de información confidencial/paquete de regla para los pasos para editar o quitar el paquete de reglas/SIT de EDM.

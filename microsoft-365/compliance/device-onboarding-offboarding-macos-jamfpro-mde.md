@@ -8,18 +8,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo incorporar y incorporar dispositivos macOS en soluciones de cumplimiento Microsoft 365 con JAMF Pro para clientes de Microsoft Defender para endpoints (versión preliminar)
-ms.openlocfilehash: cfe008e7d1334be58e9aabf45d441b2553cb0fe2
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+description: Obtenga información sobre cómo incorporar y quitar dispositivos macOS en soluciones de cumplimiento Microsoft 365 con JAMF Pro para clientes de Microsoft Defender para endpoints (versión preliminar)
+ms.openlocfilehash: 7e2109f52590cc4d9ad23700fa4b51a09ae4b5db
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963316"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526476"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión (versión preliminar)
 
@@ -37,7 +37,7 @@ Puede usar jamf Pro para incorporar dispositivos macOS en Microsoft 365 de cumpl
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Asegúrese de que los [dispositivos macOS están Azure AD unidos](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
+- Asegúrese de que los [dispositivos macOS Azure AD unidos](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
 - Asegúrese de que los [dispositivos macOS se administran a través de JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
 - Instalar el explorador perimetral v95+ en los dispositivos macOS 
 
@@ -66,7 +66,7 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
 
 1. Actualice el schema.xml con el **archivo schema.json** que acaba de descargar.
 
-1. En **Propiedades de dominio de preferencia MDE,** elija esta configuración
+1. En **Propiedades de dominio de preferencia MDE** , elija esta configuración
     - Características 
         - Use System Extensions: `enabled` - required for network extensions on Catalina
         - Usar prevención de pérdida de datos: `enabled`
@@ -79,7 +79,7 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
 
 ### <a name="update-the-configuration-profile-for-grant-full-disk-access"></a>Actualizar el perfil de configuración para conceder acceso a disco completo
 
-1. Actualice el perfil de acceso a disco completo existente con el **archivo fulldisk.mobileconfig.**
+1. Actualice el perfil de acceso a disco completo existente con el **archivo fulldisk.mobileconfig** .
 
 1. Upload el **archivo fulldisk.mobileconfig** a JAMF. Consulte [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
@@ -87,13 +87,13 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
 
 1. Use el archivo accessibility.mobileconfig que descargó anteriormente.
 
-1. Upload a JAMF como se describe en Implementar perfiles de configuración [personalizados con Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+1. Upload a JAMF como se describe en [Implementar perfiles de configuración personalizados con Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ### <a name="check-the-macos-device"></a>Comprobar el dispositivo macOS 
 
 1. Reinicie el dispositivo macOS.
 
-1. Abra **Perfiles de**  >  **preferencias del sistema**.
+1. Abra **Preferencias** >  **del sistemaProfiles**.
 
 1. Debería ver:
     - Accessiblity
@@ -114,7 +114,7 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
 
 Para salir de un dispositivo macOS, siga estos pasos
 
- 1. En **Propiedades de dominio de preferencia MDE,** quita los valores de esta configuración
+ 1. En **Propiedades de dominio de preferencia MDE** , quita los valores de esta configuración
     - Características 
         - Usar extensiones del sistema
         - Usar prevención de pérdida de datos

@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo exportar datos de origen para el tipo de información confidencial basada en coincidencias exactas de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8253ff73d53100c986a2bd8580830703c9f4b363
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: 9a1ee56708018ddfddf141499bf4cf5f9ee02449
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818533"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526268"
 ---
 # <a name="export-source-data-for-exact-data-match-based-sensitive-information-type"></a>Exportar datos de origen para el tipo de información confidencial basada en la coincidencia exacta de datos
 
@@ -45,7 +45,7 @@ Por ejemplo, `full name`si tiene las columnas , , `date of birth``account number
 
 ## <a name="save-sensitive-data-in-csv-tsv-or-pipe-separated-format"></a>Guardar datos confidenciales en .csv, .tsv o formato separado por canalización
 
-1. Identifique la información confidencial que quiera usar. Exporte los datos a una aplicación, como Microsoft Excel, y guarde el archivo en un archivo de texto. El archivo se puede guardar en .csv (valores separados por comas), .tsv (valores separados por tabulaciones) o en formato separado por |). El formato .tsv se recomienda en casos en los que los valores de datos pueden incluir comas, como direcciones de calle.
+1. Identifique la información confidencial que quiera usar. Exporte los datos a una aplicación, como Microsoft Excel, y guarde el archivo en un archivo de texto. El archivo se puede guardar en .csv (valores separados por comas), .tsv (valores separados por tabulaciones) o en formato separado por canal (|). El formato .tsv se recomienda en casos en los que los valores de datos pueden incluir comas, como direcciones de calle.
 El archivo de datos puede incluir un máximo de:
    - Hasta 100 millones de filas de datos confidenciales
    - Hasta 32 columnas (campos) por origen de datos
@@ -59,7 +59,7 @@ El archivo de datos puede incluir un máximo de:
 
 - [Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 - [Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)

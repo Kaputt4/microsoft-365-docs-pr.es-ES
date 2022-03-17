@@ -10,19 +10,19 @@ ms.topic: how-to
 ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 2e6edf09c781302c61e44a82e9f2d21c5ab2bc15
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: a814aa4ad002672fa3451ef1bcc524d9b03d4eb5
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63513024"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63527076"
 ---
 # <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>Ver y administrar incidentes en Microsoft Defender para empresas
 
@@ -73,7 +73,7 @@ Microsoft Defender para empresas asigna una gravedad de alerta en función de la
 | Microsoft Defender para empresas detecta el malware que se está ejecutando. El malware se bloquea casi inmediatamente. | Medio o alto | El malware representa una amenaza para puntos de conexión individuales y para su empresa. |
 | Se detecta un comportamiento sospechoso, pero aún no se han realizado acciones de corrección. | Bajo, Medio o Alto | La gravedad depende del grado en que el comportamiento representa una amenaza para su empresa. |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Responder y mitigar amenazas en Microsoft Defender para empresas](mdb-respond-mitigate-threats.md)
 

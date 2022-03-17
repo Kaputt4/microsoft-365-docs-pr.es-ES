@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Aprenda a establecer claves del Registro para habilitar la autenticación moderna para dispositivos que Microsoft Office 2013 instalados.
-ms.openlocfilehash: 010dce00762e4e73d21a9da668a7ac9606d731f9
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: c390e3b9858a4d7d8fc37ea5c5e6f1901d5e20fb
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504743"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525117"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Habilitar autenticación moderna para Office 2013 en dispositivos Windows
 
@@ -78,7 +78,7 @@ Cree o modifique las siguientes claves del Registro para forzar Outlook usar un 
    HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\
    ```
 
-8. Si las claves de la tabla anterior ya existen, modifique los valores si es necesario, salga del Editor del Registro. Si no lo hacen, en el menú Editar, elija **Nuevo** y, a continuación, seleccione **Valor DWORD** para crear las teclas que faltan. 
+8. Si las *claves EnableADAL* *y Version* ya existen, modifique los valores si es necesario, salga del Editor del Registro. Si no lo hacen, en el menú Editar, elija **Nuevo** y, a continuación, seleccione **Valor DWORD** para crear las teclas que faltan. 
 
 9. Por ejemplo, si falta *la tecla EnableADAL* , escriba *EnableADAL* y presione **ENTRAR.**
 

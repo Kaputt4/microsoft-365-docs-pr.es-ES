@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d10d399d0e1d9930a6132f802fb1482ad2f18c6
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 6bd411411c3075259bd3b9fc74ec3f558171fce7
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62272047"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526296"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>Crear el esquema para tipos de información confidencial basados en las coincidencias exactas de datos
 
@@ -85,7 +85,7 @@ Puede usar este asistente para simplificar el proceso de creación de archivos d
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Usar el Esquema de coincidencia exacta de datos y el asistente para información de tipo confidencial
 
-1. En el centro Microsoft 365 cumplimiento del inquilino, vaya a **Clasificación** >  de **datosExact data matchesEDM** >  **schemas**.
+1. En el Microsoft 365 de cumplimiento del espacio empresarial vaya a **Clasificación de** >  **datosExact datos coincide** >  **con los esquemas DEEDM**.
 
 2. Elija **Crear esquema EDM** para abrir el flotante de configuración del asistente de esquemas.
 

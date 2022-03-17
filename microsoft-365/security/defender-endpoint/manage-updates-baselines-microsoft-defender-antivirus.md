@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/15/2022
+ms.date: 03/16/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: be3dcfd23c0fb77604cec140a4b1d3606f6ee345
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: c6454704c6cabfd5136eeec565c3c57dca044250
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63513050"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526900"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base
 
@@ -85,20 +85,28 @@ Todas nuestras actualizaciones contienen
 - Mejoras de integración (nube, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>Febrero-2022 (Plataforma: 4.18.xxxx.xx | Motor: 1.1.19000.8)</summary>
+<summary>Febrero-2022 (Plataforma: 4.18.2202.4 | Motor: 1.1.19000.8)</summary>
 
-&ensp;Versión de actualización de inteligencia de seguridad: **1.357.x.x**<br/>
+&ensp;Versión de actualización de inteligencia de seguridad: **1.361.14.0**<br/>
 &ensp;Publicado: **14 de marzo de 2022**<br/>
-&ensp;Plataforma: **4.18.xxxx.xx**<br/>
+&ensp;Plataforma: **4.18.2202.4**<br/>
 &ensp;Motor: **1.1.19000.8**<br/>
 &ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**<br/>
 
 Versión del motor: 1.1.19000.8 <br/>
-Versión de actualización de inteligencia de seguridad: 1.357.x.x <br/>
+Versión de actualización de inteligencia de seguridad: 1.361.14.0 <br/>
 
 ### <a name="whats-new"></a>Novedades
 
-- Próximamente
+- Mejoras en la lógica de detección y supervisión del comportamiento
+- Corregido falso positivo que desencadenaba detecciones de reducción de superficie de ataque
+- Se agregó una corrección que da como resultado una mayor fidelidad de las EDR alertas de detección de búsqueda avanzada y de búsqueda avanzada
+- Defender ya no admite notificaciones personalizadas en las ventanas emergentes del sistema. GPO/Intune/SCCM modificado y documentos para reflejar este cambio.
+- Mejoras para capturar tanto la información como la copia de los archivos escritos en el almacenamiento extraíble. Para obtener más información, consulta [Microsoft Defender para Endpoint Device Control Removable Storage Access Control, medios de almacenamiento extraíbles](device-control-removable-storage-access-control.md).
+- Salida de tráfico mejorada cuando el servicio SmartScreen es inaccesible 
+- Mejoras de conectividad para clientes que usan servidores proxy con requisitos de autenticación
+- Corregido error de actualización de dispositivoSVDI para FileShares de red 
+- EDR en modo de bloque ahora admite la segmentación de dispositivos pormenorizados con nuevos CSP. Consulte [Detección y respuesta de puntos de conexión (EDR) en modo de bloqueo](edr-in-block-mode.md).
 
 ### <a name="known-issues"></a>Problemas conocidos
 
