@@ -147,9 +147,9 @@
               href: add-users/remove-former-employee-step-2.md
             - name: Paso 3. Borrar y bloquear el dispositivo móvil de un antiguo empleado
               href: add-users/remove-former-employee-step-3.md
-            - name: Paso 4. Reenviar el correo electrónico de un antiguo empleado a otro empleado o convertir en un buzón compartido
+            - name: Paso 4. Reenviar el correo electrónico de un antiguo empleado a otro empleado o convertirlo en un buzón compartido
               href: add-users/remove-former-employee-step-4.md
-            - name: Paso 5. Proporcionar acceso a otro empleado a OneDrive y a los datos de Outlook
+            - name: Paso 5. Dar a otro empleado acceso a los datos de OneDrive y Outlook
               href: add-users/remove-former-employee-step-5.md
             - name: Paso 6. Quitar la licencia de Microsoft 365 a un exempleado
               href: add-users/remove-former-employee-step-6.md
@@ -344,12 +344,12 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Administrar y supervisar cuentas de prioridad
           href: setup/priority-accounts.md
+        - name: Activar el tiempo de espera de la sesión inactiva
+          href: manage/idle-session-timeout-web-apps.md
         - name: Habilitar la autenticación moderna para Office 2013
           href: security-and-compliance/enable-modern-authentication.md
         - name: Requisitos previos para la protección de datos
           href: security-and-compliance/pre-requisites-for-data-protection.md
-        - name: Características de seguridad
-          href: security-and-compliance/secure-your-business-data.md
         - name: Aumentar la protección contra amenazas
           href: security-and-compliance/increase-threat-protection.md
         - name: Amenazas detectadas por Antivirus de Microsoft Defender

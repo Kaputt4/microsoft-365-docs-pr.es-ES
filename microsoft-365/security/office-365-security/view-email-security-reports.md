@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0703e1f23d9d54a907b39382438f85f544a5b6de
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: b1d7d3dab26d4f9034294b2780875d33cb2fbef3
+ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504856"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63557956"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico
 
@@ -89,11 +89,13 @@ La tabla de detalles debajo del gráfico muestra la siguiente información:
 - **Tiempo de creación**
 - **Nombre de usuario**
 - **Action**
+- **Etiquetas**: para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
 
 Puede filtrar tanto el gráfico como la tabla de detalles haciendo clic  en Filtrar y seleccionando uno o varios de los siguientes valores en el menú desplegable que aparece:
 
 - **Fecha (UTC):** Fecha **de inicio** y **fecha de finalización**.
 - **Actividad**: **restringida o** **sospechosa**
+- **Etiqueta**: **todas** o la etiqueta de usuario especificada (incluidas las cuentas de prioridad).
 
 Cuando haya terminado de configurar los filtros, haga clic **en Aplicar**, **Cancelar** o **Borrar filtros**.
 
@@ -520,7 +522,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 - **Tecnología de detección**
 - **Estado de entrega**
 - **IP del remitente**
-- **Tags**
+- **Etiquetas**: para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
 
 Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
 
@@ -531,7 +533,7 @@ Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
   - **Todo**
   - **Entrante**
   - **Salida**
-- **Etiqueta**: **todas** o la etiqueta de usuario especificada (incluidas las cuentas de prioridad). Para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
+- **Etiqueta**: **todas** o la etiqueta de usuario especificada (incluidas las cuentas de prioridad).
 - **Dominio**: **todo** o [un dominio aceptado](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Tipo de directiva**:
   - **Todo**
@@ -572,7 +574,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 - **Tecnología de detección**
 - **Estado de entrega**
 - **IP del remitente**
-- **Tags**
+- **Etiquetas**: para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
 
 Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
 
@@ -582,7 +584,7 @@ Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
   - **Todo**
   - **Entrante**
   - **Salida**
-- **Etiqueta**: **todas** o la etiqueta de usuario especificada (incluidas las cuentas de prioridad). Para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
+- **Etiqueta**: **todas** o la etiqueta de usuario especificada (incluidas las cuentas de prioridad).
 - **Dominio**: **todo** o [un dominio aceptado](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Tipo de directiva**:
   - **Todo**
@@ -627,7 +629,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 - **Tecnología de detección**
 - **Estado de entrega**
 - **IP del remitente**
-- **Tags**
+- **Etiquetas**: para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
 
 Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
 
@@ -638,7 +640,7 @@ Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
   - **Todo**
   - **Entrante**
   - **Salida**
-- **Etiqueta**: **todas** o la etiqueta de usuario especificada (incluidas las cuentas de prioridad). Para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
+- **Etiqueta**: **todas** o la etiqueta de usuario especificada (incluidas las cuentas de prioridad).
 - **Dominio**: **todo** o [un dominio aceptado](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Tipo de directiva**:
   - **Todo**
@@ -677,7 +679,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 - **Tecnología de detección**
 - **Estado de entrega**
 - **IP del remitente**
-- **Tags**
+- **Etiquetas**: para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
 
 Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
 
@@ -706,7 +708,7 @@ Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
   - **Todo**
   - **Entrante**
   - **Salida**
-- **Etiqueta**: **todas** o la etiqueta de usuario especificada (incluidas las cuentas de prioridad). Para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
+- **Etiqueta**: **todas** o la etiqueta de usuario especificada (incluidas las cuentas de prioridad).
 - **Dominio**: **todo** o [un dominio aceptado](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Tipo de directiva**:
   - **Todo**
@@ -750,7 +752,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 - **Tecnología de detección**
 - **Estado de entrega**
 - **IP del remitente**
-- **Tags**
+- **Etiquetas**: para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
 
 Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
 
@@ -779,7 +781,7 @@ Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
   - **Todo**
   - **Entrante**
   - **Salida**
-- **Etiqueta**: **todas** o la etiqueta de usuario especificada (incluidas las cuentas de prioridad). Para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
+- **Etiqueta**: **todas** o la etiqueta de usuario especificada (incluidas las cuentas de prioridad).
 - **Dominio**: **todo** o [un dominio aceptado](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Tipo de directiva**:
   - **Todo**
@@ -852,7 +854,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 - **Destinatarios**
 - **Invalidación del sistema**
 - **IP del remitente**
-- **Tags**
+- **Etiquetas**: para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
 
 Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
 
@@ -863,7 +865,7 @@ Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
   - **Todo**
   - **Entrante**
   - **Salida**
-- **Etiqueta**: **todas** o la etiqueta de usuario especificada (incluidas las cuentas de prioridad). Para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
+- **Etiqueta**: **todas** o la etiqueta de usuario especificada (incluidas las cuentas de prioridad).
 - **Dominio**: **todo** o [un dominio aceptado](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Tipo de directiva**: **Todos**
 - **Nombre de directiva (solo vista de tabla de detalles):****Todo**
@@ -890,7 +892,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 - **Destinatarios**
 - **Invalidación del sistema**
 - **IP del remitente**
-- **Tags**
+- **Etiquetas**: para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
 
 Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
 
@@ -1040,7 +1042,7 @@ La tabla de detalles debajo del gráfico muestra la siguiente información:
 - **Sender**
 - **Motivo notificado**
 - **Volver a examinar el resultado**
-- **Tags**
+- **Etiquetas**: para obtener más información acerca de las etiquetas de usuario, vea [Etiquetas de usuario](user-tags.md).
 
 Para enviar un mensaje a Microsoft para su análisis, seleccione la entrada de mensaje de la tabla, haga clic en Enviar a **Microsoft** para su análisis y, a continuación, seleccione uno de los siguientes valores de la lista desplegable:
 

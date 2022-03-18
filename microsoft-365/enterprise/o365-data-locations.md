@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: 4240521579331c0d4aed329b952d0a560291df45
-ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
+ms.openlocfilehash: c88eceadf6c00d165b0ac032fab19596abec49e1
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62487256"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525478"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 
@@ -47,7 +47,7 @@ Si la dirección de facturación del cliente está fuera de Europa y el cliente 
 
 ### <a name="how-does-microsoft-define-data"></a>¿Cómo define Microsoft los datos?
 
-Revise las [definiciones de los distintos tipos de datos](https://go.microsoft.com/fwlink/p/?linkid=864390) en el centro de confianza de Microsoft. En los [Términos de servicios en línea de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=862403), Microsoft realiza compromisos contractuales respecto a los datos de los clientes y sus datos. Nos referimos a los datos de clientes centrales como los datos de los clientes que se han comprometido a almacenarse solo en su región de acuerdo con los [términos de servicios en línea de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=862403).
+Revise las [definiciones de los distintos tipos de datos](https://go.microsoft.com/fwlink/p/?linkid=864390) en el centro de confianza de Microsoft. En los [Términos de privacidad y seguridad](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all), Microsoft asume compromisos contractuales en relación con sus datos o los del cliente. Nos referimos a los datos principales de los clientes, como los datos de los clientes que se comprometen a ser almacenados en reposo sólo dentro de su región de acuerdo con los [Términos de privacidad y seguridad](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).
 
 ### <a name="where-are-the-exact-addresses-of-the-data-centers"></a>¿Dónde están las direcciones exactas de los centros de datos?
 
@@ -95,14 +95,14 @@ En ocasiones, los servidores de una región diferente a la ubicación donde se a
 
 ### <a name="what-are-the-exceptions-for-intune-data-locations"></a>¿Cuáles son las excepciones para las ubicaciones de datos de Intune?
 
-Microsoft no almacenará los datos en reposo de los clientes de Intune que se encuentren fuera de la geoárea indicada, excepto si:
+Microsoft no almacenará los datos del cliente de Intune en reposo fuera de la zona geográfica indicada. Excepto si:
 
 - Es necesario que Microsoft proporcione asistencia al cliente, solucione problemas del servicio o cumpla los requisitos legales.
 - El cliente configura una cuenta para permitir dicho almacenamiento de datos de clientes, incluido el uso de los siguientes:
 
   - Características diseñadas para funcionar de forma global, como Content Delivery Network (CDN), que proporciona un servicio de almacenamiento en caché global y almacena datos de clientes en ubicaciones periféricas en todo el mundo.
 
-  - Azure Active Directory (Azure AD), que puede almacenar datos de directorio de forma global. Esto no es válido en las implementaciones de Azure AD en Estados Unidos (donde los datos de Azure AD se almacenan únicamente en Estados Unidos) o en Europa (donde los datos de Azure AD se almacenan en Europa o Estados Unidos).
+  - Azure Active Directory (Azure AD), que puede almacenar datos de directorios a nivel mundial. Esto no aplica a las implementaciones de Azure AD en Estados Unidos (donde los datos de Azure AD se almacenan únicamente en los Estados Unidos) o en Europa (donde los datos de Azure AD se almacenan en Europa o en Estados Unidos).
    
   - Versión preliminar, beta u otros servicios preliminares, que, por lo general, almacenan datos de clientes en Estados Unidos, pero pueden almacenarlos de forma global.
 

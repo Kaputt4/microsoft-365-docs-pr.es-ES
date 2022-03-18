@@ -1,26 +1,31 @@
 ---
 title: Introducción a la incorporación de dispositivos Windows 10 o Windows 11 a Microsoft 365
 f1.keywords:
-  - CSH
+- CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: null
+ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
-  - ms.o365.cc.DLPLandingPage
+- ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
-  - m365solution-mip
-  - m365initiative-compliance
+- M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 search.appverid:
-  - MET150
+- MET150
 description: Incorporación de dispositivos Windows 10 y Windows 11 a Microsoft 365
+ms.openlocfilehash: dc2324f9ab8105d51730071f84397c8648c9a9de
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63525063"
 ---
-
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Introducción a la incorporación de dispositivos Windows 10 y Windows 11 a Microsoft 365 
 
 **Se aplica a:**
@@ -123,7 +128,7 @@ En este escenario de implementación, incorporarás dispositivos Windows 10 o Wi
 3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos**. 
 
 > [!NOTE]
-> Si ya has implementado Microsoft Defender para punto de conexión, todos los dispositivos que se incorporaron durante ese proceso aparecerán en la **lista Dispositivos**. No es necesario incorporarlos de nuevo.
+> Si ya ha implementado Microsoft Defender para punto de conexión, todos los dispositivos que se incorporaron durante ese proceso aparecerán en la lista **Dispositivos**. No es necesario incorporarlos de nuevo.
 
 4. Elija **Incorporación** para iniciar el proceso de incorporación.
 

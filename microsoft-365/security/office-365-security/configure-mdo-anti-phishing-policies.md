@@ -16,12 +16,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas avanzadas contra la suplantación de identidad que están disponibles en organizaciones con Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7f72d2a8f7b881216a283d920bce9b4903407cf6
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 5faf4533110fe5abad8606c9c859f82549dc2fce
+ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61932588"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63557927"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365
 
@@ -31,44 +31,44 @@ ms.locfileid: "61932588"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Las directivas contra suplantación de identidad en [Microsoft Defender](defender-for-office-365.md) para Office 365 pueden ayudar a proteger su organización de ataques de suplantación de identidad malintencionados y otros tipos de ataques de suplantación de identidad. Para obtener más información acerca de las diferencias entre las directivas contra suplantación de identidad en Exchange Online Protection (EOP) y las directivas contra suplantación de identidad en Microsoft Defender para Office 365, vea [Protección](anti-phishing-protection.md)contra la suplantación de identidad .
+Las directivas contra suplantación de [identidad en Microsoft Defender para Office 365](defender-for-office-365.md) pueden ayudar a proteger su organización de ataques de suplantación de identidad malintencionados y otros tipos de ataques de suplantación de identidad. Para obtener más información acerca de las diferencias entre las directivas contra suplantación de identidad en Exchange Online Protection (EOP) y las directivas contra suplantación de identidad en Microsoft Defender para Office 365, consulte [Protección](anti-phishing-protection.md) contra la suplantación de identidad.
 
 Los administradores pueden ver, editar y configurar (pero no eliminar) la directiva contra suplantación de identidad predeterminada. Para mayor granularidad, también puede crear directivas personalizadas contra la suplantación de identidad que se aplican a usuarios, grupos o dominios específicos de la organización. Las directivas personalizadas siempre tienen prioridad sobre las directivas predeterminadas, pero su prioridad (el orden de ejecución) se puede cambiar.
 
 Puede configurar directivas contra la suplantación de identidad en Defender para Office 365 en el portal de Microsoft 365 Defender o en PowerShell Exchange Online.
 
-Para obtener información sobre cómo configurar las directivas contra suplantación de identidad más limitadas que están disponibles en Exchange Online Protection (es decir, organizaciones sin Defender para Office 365), vea [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+Para obtener información sobre cómo configurar las directivas contra suplantación de identidad más limitadas que están disponibles en Exchange Online Protection (es decir, organizaciones sin Defender para Office 365), consulte [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
 Los elementos básicos de una directiva contra la suplantación de identidad son:
 
-- **La directiva contra suplantación de** identidad : especifica las protecciones de suplantación de identidad (phishing) que se habilitarán o deshabilitarán y las acciones que se aplicarán a las opciones.
-- **La regla contra suplantación de** identidad : especifica la prioridad y los filtros de destinatarios (a quién se aplica la directiva) para una directiva contra suplantación de identidad.
+- **La directiva contra phishing**: especifica las protecciones de suplantación de identidad que se habilitarán o deshabilitarán y las acciones que se aplicarán a las opciones.
+- **La regla contra suplantación de** identidad: especifica la prioridad y los filtros de destinatarios (a quién se aplica la directiva) para una directiva contra suplantación de identidad.
 
-La diferencia entre estos dos elementos no es obvia cuando se administran directivas contra suplantación de identidad en el portal de Microsoft 365 Defender identidad:
+La diferencia entre estos dos elementos no es obvia al administrar directivas contra suplantación de identidad en el portal de Microsoft 365 Defender web:
 
 - Al crear una directiva, está creando una regla contra suplantación de identidad (phish) y la directiva contra suplantación de identidad asociada al mismo tiempo con el mismo nombre para ambos.
 - Al modificar una directiva, la configuración relacionada con el nombre, la prioridad, la habilitada o deshabilitada y los filtros de destinatarios modifican la regla contra suplantación de identidad. Todas las demás opciones modifican la directiva contra suplantación de identidad asociada.
 - Al quitar una directiva, se quitan la regla contra phishing y la directiva contra suplantación de identidad asociada.
 
-En Exchange Online PowerShell, administra la directiva y la regla por separado. Para obtener más información, vea la sección [Use Exchange Online PowerShell to configure anti-phishing policies](#use-exchange-online-powershell-to-configure-anti-phishing-policies) más adelante en este artículo.
+En Exchange Online PowerShell, administra la directiva y la regla por separado. Para obtener más información, vea la [sección Use Exchange Online PowerShell to configure anti-phishing policies](#use-exchange-online-powershell-to-configure-anti-phishing-policies) más adelante en este artículo.
 
-Cada organización defender para Office 365 tiene una directiva contra la suplantación de identidad integrada denominada Office 365 antiphish default que tiene estas propiedades:
+Cada organización de Defender para Office 365 tiene una directiva contra la suplantación de identidad integrada denominada Office 365 AntiPhish Default que tiene estas propiedades:
 
 - La directiva se aplica a todos los destinatarios de la organización, aunque no haya ninguna regla contra la suplantación de identidad (filtros de destinatarios) asociada a la directiva.
 - La directiva tiene un valor de prioridad personalizado **Mínimo** que no se puede modificar (la directiva siempre se aplica en último lugar). Las directivas personalizadas que cree siempre tendrán una prioridad mayor.
 - La directiva es la directiva predeterminada (la propiedad **IsDefault** tiene el valor `True`), y no puede eliminar esta directiva predeterminada.
 
-Para aumentar la eficacia de la protección contra suplantación de identidad en Defender para Office 365, puede crear directivas contra suplantación de identidad personalizadas con una configuración más estricta que se aplique a usuarios o grupos de usuarios específicos.
+Para aumentar la eficacia de la protección contra suplantación de identidad (phishing) en Defender para Office 365, puede crear directivas anti phishing personalizadas con una configuración más estricta que se aplique a usuarios o grupos de usuarios específicos.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
+- Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com>. Para ir directamente a la **página Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Debe tener permisos asignados en la **Exchange Online** antes de poder realizar los procedimientos de este artículo:
   - Para agregar, modificar y eliminar directivas contra suplantación de identidad, debe ser miembro de los grupos de roles **Administración** de la organización o Administrador **de** seguridad.
-  - Para obtener acceso de solo lectura a directivas contra suplantación de identidad, debe ser miembro de los grupos de roles Lector **global** o Lector **de** <sup>\*</sup> seguridad.
+  - Para obtener acceso de solo lectura a directivas contra suplantación de identidad, debe ser miembro de los grupos de roles Lector **global** o Lector **de** seguridad <sup>\*</sup>.
 
   Para obtener más información, consulte los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
@@ -77,21 +77,21 @@ Para aumentar la eficacia de la protección contra suplantación de identidad en
   - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
-- Para obtener información sobre la configuración recomendada para las directivas contra suplantación de identidad en Defender para Office 365, consulte [Anti-phishing policy in Defender for Office 365 settings](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
+- Para obtener información sobre la configuración recomendada para las directivas contra suplantación de identidad en Defender para Office 365, consulta [Anti-phishing policy in Defender for Office 365 settings](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
 - Permitir hasta 30 minutos para que se aplique una directiva nueva o actualizada.
 
-- Para obtener información sobre dónde se aplican las directivas contra suplantación de identidad en la canalización de filtrado, vea [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+- Para obtener información sobre dónde se aplican las directivas contra suplantación de identidad (phishing) en la canalización de filtrado, vea [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies"></a>Usar el portal Microsoft 365 Defender para crear directivas contra suplantación de identidad
+## <a name="use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies"></a>Usar el portal Microsoft 365 Defender web para crear directivas contra suplantación de identidad
 
 La creación de una directiva contra suplantación de identidad personalizada en el portal de Microsoft 365 Defender crea la regla contra suplantación de identidad (phishing) y la directiva contra suplantación de identidad asociada al mismo tiempo con el mismo nombre para ambos.
 
-1. En el portal de Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & reglas directivas contra la suplantación de identidad en <https://security.microsoft.com> la  \>  \>  \>  **sección** Directivas. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
+1. En el portal Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Directivas de colaboración de correo **electrónico &** \> directivas de **colaboración & Reglas** \> **de** \> protección Contra la **suplantación** de identidad en la **sección** Directivas. Para ir directamente a la **página Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
 
-2. En la **página Anti-phishing,** haga clic ![ en Crear icono.](../../media/m365-cc-sc-create-icon.png) **Create**.
+2. En la **página Anti-phishing** , haga clic en ![Crear icono.](../../media/m365-cc-sc-create-icon.png) **Create**.
 
-3. Se abrirá el asistente para directivas. En la **página Nombre de directiva,** configure estas opciones:
+3. Se abrirá el asistente para directivas. En la **página Nombre de directiva** , configure estas opciones:
    - **Nombre**: escriba un nombre único y descriptivo para la directiva.
    - **Descripción**: escriba una descripción opcional para la directiva.
 
@@ -112,84 +112,87 @@ La creación de una directiva contra suplantación de identidad personalizada en
 
    Cuando termine, haga clic en **Siguiente**.
 
-5. En la **página de protección de & de** suplantación de identidad que aparece, configure las siguientes opciones:
+5. En la **página De protección contra &** phishing que aparece, configure las siguientes opciones:
 
-   - **Umbral de correo electrónico de** suplantación de identidad : use el control deslizante para seleccionar uno de los siguientes valores:
+   - **Umbral de correo electrónico de** suplantación de identidad: use el control deslizante para seleccionar uno de los siguientes valores:
      - **1- Estándar** (este es el valor predeterminado).
      - **2 : agresivo**
      - **3: más agresivo**
      - **4: más agresivo**
 
-     Para obtener más información, consulte [Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+     Para obtener más información, consulte [Umbrales de suplantación de identidad avanzados en directivas contra suplantación de identidad en Microsoft Defender para Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-   - **Suplantación:** esta configuración es una condición para la directiva que identifica remitentes específicos para buscar (individualmente o por dominio) en la dirección De de los mensajes entrantes. Para obtener más información, vea Configuración de suplantación en directivas contra suplantación de identidad en [Microsoft Defender para Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+   - **Suplantación**: esta configuración es una condición para la directiva que identifica remitentes específicos para buscar (individualmente o por dominio) en la dirección De de los mensajes entrantes. Para obtener más información, consulta [Configuración de suplantación en directivas contra suplantación de identidad en Microsoft Defender para Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
      > [!NOTE]
      >
      > - En cada directiva contra phishing, puede especificar un máximo de 350 usuarios protegidos (direcciones de correo electrónico del remitente). No puede especificar el mismo usuario protegido en varias directivas.
      > - La protección de suplantación de usuario no funciona si el remitente y el destinatario se han comunicado previamente por correo electrónico. Si el remitente y el destinatario nunca se han comunicado por correo electrónico, el mensaje se identificará como un intento de suplantación.
 
-     - **Permitir a los usuarios proteger:** el valor predeterminado está desactivado (no seleccionado). Para activarla, active la casilla y, a continuación, haga clic en el vínculo Administrar **(nn) remitentes** que aparece.
+     - **Permitir que los usuarios protejan**: el valor predeterminado está desactivado (no seleccionado). Para activarla, active la casilla y, a continuación, haga clic en el vínculo Administrar **(nn) remitentes** que aparece.
 
-       En el control desplegable Administrar **remitentes** para protección de suplantación que aparece, siga estos pasos:
+       En el **control desplegable Administrar remitentes** para protección de suplantación que aparece, siga estos pasos:
 
-       - **Remitentes internos:** haga clic ![ en Agregar icono interno.](../../media/m365-cc-sc-add-internal-icon.png) **Seleccione interno**. En el **control desplegable Agregar remitentes** internos que aparece, haga clic en el cuadro y seleccione un usuario interno de la lista. Puede filtrar la lista escribiendo el usuario y, a continuación, seleccionando el usuario en los resultados. Puede usar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados.
-
-         Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
-
-         Cuando haya terminado, haga clic en **Agregar**
-
-       - **Remitentes externos:** haga clic ![ en Agregar icono externo.](../../media/m365-cc-sc-create-icon.png) **Seleccione externo**. En el control desplegable Agregar **remitentes externos** que  aparece, escriba un nombre para mostrar en el cuadro Agregar un nombre y una dirección de correo electrónico en el cuadro Agregar un correo electrónico vacío y, **a** continuación, haga clic en **Agregar**.
+       - **Remitentes internos**: haga clic en ![Agregar icono interno.](../../media/m365-cc-sc-add-internal-icon.png) **Seleccione interno**. En el **control desplegable Agregar remitentes** internos que aparece, haga clic en el cuadro y seleccione un usuario interno de la lista. Puede filtrar la lista escribiendo el usuario y, a continuación, seleccionando el usuario en los resultados. Puede usar la mayoría de los identificadores (nombre, nombre para mostrar, alias, dirección de correo electrónico, nombre de cuenta, etc.), pero el nombre para mostrar correspondiente se muestra en los resultados.
 
          Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
          Cuando haya terminado, haga clic en **Agregar**
 
-       En el control desplegable Administrar **remitentes** para suplantación, puede quitar entradas seleccionando una o más entradas de la lista. Puede buscar entradas mediante el ![ icono Buscar.](../../media/m365-cc-sc-create-icon.png) **Cuadro** de búsqueda.
+       - **Remitentes externos**: haga clic en ![Agregar icono externo.](../../media/m365-cc-sc-create-icon.png) **Seleccione externo**. En el control desplegable Agregar **remitentes externos** que aparece, escriba un nombre para mostrar  en el cuadro Agregar un nombre y una dirección de correo electrónico en el cuadro Agregar un correo electrónico vacío y, **a** continuación, haga clic en **Agregar**.
 
-       Después de seleccionar al menos una entrada, el ![ icono Quitar usuarios seleccionados.](../../media/m365-cc-sc-remove-selected-users-icon.png) **Aparece el icono Quitar** usuarios seleccionados, que puede usar para quitar las entradas seleccionadas.
+         Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+
+         Cuando haya terminado, haga clic en **Agregar**
+
+       En el control desplegable Administrar **remitentes** para suplantación, puede quitar entradas seleccionando una o más entradas de la lista. Puede buscar entradas mediante el icono ![Buscar.](../../media/m365-cc-sc-create-icon.png) **Cuadro** de búsqueda.
+
+       Después de seleccionar al menos una entrada, el ![icono Quitar usuarios seleccionados.](../../media/m365-cc-sc-remove-selected-users-icon.png) **Aparece el icono Quitar** usuarios seleccionados, que puede usar para quitar las entradas seleccionadas.
 
        Cuando haya terminado, haga clic en **Listo**.
 
-     - **Habilitar dominios para proteger:** el valor predeterminado está desactivado (no seleccionado). Para activarla, active la casilla y, a continuación, configure una o ambas opciones de configuración que aparecen:
-       - **Incluir los dominios que tengo:** para activar esta configuración, active la casilla. Para ver los dominios que posee, haga clic **en Ver mis dominios**.
-       - **Incluir dominios personalizados:** para activar esta configuración, active la casilla y, a continuación, haga clic en el vínculo Administrar **(nn)** dominios personalizados que aparece. En el control desplegable Administrar dominios **personalizados** para protección de suplantación que aparece, haga clic ![ en Agregar dominios.](../../media/m365-cc-sc-create-icon.png) **Agregar dominios**.
+     - **Habilitar dominios para proteger**: el valor predeterminado está desactivado (no seleccionado). Para activarla, active la casilla y, a continuación, configure una o ambas opciones de configuración que aparecen:
+       - **Incluir los dominios que tengo**: para activar esta configuración, active la casilla. Para ver los dominios que posee, haga clic **en Ver mis dominios**.
+       - **Incluir dominios personalizados**: para activar esta configuración, active la casilla y, a continuación, haga clic en el vínculo Administrar **(nn)** dominios personalizados que aparece. En el **control desplegable Administrar dominios personalizados** para protección de suplantación que aparece, haga clic en ![Agregar dominios.](../../media/m365-cc-sc-create-icon.png) **Agregar dominios**.
 
-         En **el** control desplegable Agregar dominios personalizados que aparece, haga clic en el cuadro Dominio, escriba un valor y, a continuación, presione Entrar o seleccione el valor que se muestra debajo del cuadro.  Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+         En **el control** desplegable Agregar dominios personalizados que aparece, haga clic  en el cuadro Dominio, escriba un valor y, a continuación, presione Entrar o seleccione el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
 
          Cuando haya terminado, haga clic en **Agregar dominios**
 
          > [!NOTE]
          > Puede tener un máximo de 50 dominios en todas las directivas contra suplantación de identidad.
 
-       En el **control** desplegable Administrar dominios personalizados para suplantación, puede quitar entradas seleccionando una o más entradas de la lista. Puede buscar entradas mediante el ![ icono Buscar.](../../media/m365-cc-sc-create-icon.png) **Cuadro** de búsqueda.
+       En **el control desplegable** Administrar dominios personalizados para suplantación, puede quitar entradas seleccionando una o más entradas de la lista. Puede buscar entradas mediante el icono ![Buscar.](../../media/m365-cc-sc-create-icon.png) **Cuadro** de búsqueda.
 
-       Después de seleccionar al menos una entrada, el ![ icono Eliminar dominios.](../../media/m365-cc-sc-delete-icon.png) **Aparece** el icono Eliminar, que puede usar para quitar las entradas seleccionadas.
+       Después de seleccionar al menos una entrada, el icono ![Eliminar dominios.](../../media/m365-cc-sc-delete-icon.png) **Aparece** el icono Eliminar, que puede usar para quitar las entradas seleccionadas.
 
-   - **Agregar remitentes y** dominios de confianza: : especifique excepciones de protección de suplantación para la directiva haciendo clic en Administrar **(nn) remitentes** de confianza y dominios . En el control desplegable Administrar dominios **personalizados** para protección de suplantación que aparece, configure las siguientes opciones:
-      - **Remitentes:** compruebe que la **pestaña Remitente** está seleccionada y haga clic en ![ Agregar remitentes icono. ](../../media/m365-cc-sc-create-icon.png) . En el control desplegable Agregar **remitentes de** confianza que aparece, escriba una dirección de correo electrónico en el cuadro y, a continuación, haga clic en **Agregar**. Repita este paso tantas veces como sea necesario. Para quitar una entrada existente, haga clic ![ en Eliminar icono para la ](../../media/m365-cc-sc-close-icon.png) entrada.
-
-        Cuando haya terminado, haga clic en **Agregar**.
-
-      - **Dominios:** seleccione la **pestaña Dominio** y haga clic en ![ Agregar dominios. ](../../media/m365-cc-sc-create-icon.png) .
-
-        En **el** control desplegable Agregar dominios de  confianza que aparece, haga clic en el cuadro Dominio, escriba un valor y, a continuación, presione Entrar o seleccione el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+   - **Agregar remitentes y** dominios de confianza: : especifique excepciones de protección de suplantación para la directiva haciendo clic en Administrar **(nn) remitentes** de confianza y dominios. En el **control desplegable Administrar dominios personalizados** para protección de suplantación que aparece, configure las siguientes opciones:
+      - **Remitentes**: compruebe que la **pestaña Remitente** está seleccionada y haga clic ![en Agregar remitentes icono.](../../media/m365-cc-sc-create-icon.png) En el **control desplegable Agregar remitentes** de confianza que aparece, escriba una dirección de correo electrónico en el cuadro y, a continuación, haga clic en **Agregar**. Repita este paso tantas veces como sea necesario. Para quitar una entrada existente, haga clic en ![Eliminar icono](../../media/m365-cc-sc-close-icon.png) para la entrada.
 
         Cuando haya terminado, haga clic en **Agregar**.
 
-     En el  control desplegable Administrar dominios personalizados para suplantación,  puede quitar entradas de las pestañas Remitente y Dominio seleccionando una o más entradas de la lista.  Puede buscar entradas mediante el ![ icono Buscar.](../../media/m365-cc-sc-create-icon.png) **Cuadro** de búsqueda.
+      - **Dominios**: seleccione la **pestaña Dominio** y haga clic ![en Agregar dominios](../../media/m365-cc-sc-create-icon.png) icono.
 
-     Después de seleccionar al menos  una entrada, aparece el icono Eliminar, que puede usar para quitar las entradas seleccionadas.
+        En **el control** desplegable Agregar dominios de confianza que aparece, haga clic  en el cuadro Dominio, escriba un valor y, a continuación, presione Entrar o seleccione el valor que se muestra debajo del cuadro. Repita este paso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
+
+        Cuando haya terminado, haga clic en **Agregar**.
+
+     En el control desplegable Administrar dominios personalizados para suplantación, puede quitar entradas de las pestañas  Remitente y  Dominio seleccionando una o más entradas de la lista. Puede buscar entradas mediante el icono ![Buscar.](../../media/m365-cc-sc-create-icon.png) **Cuadro** de búsqueda.
+
+     Después de seleccionar al menos una entrada, aparece  el icono Eliminar, que puede usar para quitar las entradas seleccionadas.
 
      Cuando haya terminado, haga clic en **Listo**.
 
+     > [!NOTE]
+     > El número máximo de entradas de remitente y dominio es 1024.
+
    - **Habilitar inteligencia de** buzones: el valor predeterminado está en (seleccionado) y se recomienda dejarla activada. Para desactivarla, desactive la casilla.
 
-     - **Habilitar la protección de suplantación** basada en inteligencia: esta configuración solo está disponible si **Habilitar** inteligencia de buzones está activada (seleccionada). Esta configuración permite que la inteligencia de buzones de correo tome medidas en los mensajes que se identifican como intentos de suplantación. Especifique la acción que debe realizar en la configuración Si la inteligencia **de buzones detecta** un usuario suplantado en la página siguiente.
+     - **Habilitar la protección de suplantación basada en inteligencia**: esta configuración solo está disponible si **Habilitar** inteligencia de buzones está activada (seleccionada). Esta configuración permite que la inteligencia de buzones de correo tome medidas en los mensajes que se identifican como intentos de suplantación. Especifique la acción que debe realizar en la configuración Si la inteligencia **de buzones detecta** un usuario suplantado en la página siguiente.
 
        Se recomienda activar esta configuración activando la casilla. Para desactivar esta configuración, desactive la casilla.
 
-   - **Suplantación:** en esta sección, use la casilla Habilitar la inteligencia suplantación para activar o desactivar la inteligencia suplantación.  El valor predeterminado está en (seleccionado) y se recomienda dejarlo en. Especifique la acción que se debe realizar en los mensajes de remitentes suplantados bloqueados en la configuración **If message is detected as spoof** en la página siguiente.
+   - **Suplantación** de dominio: en esta sección,  use la casilla Habilitar la inteligencia suplantación de seguridad para activar o desactivar la inteligencia de suplantación. El valor predeterminado está en (seleccionado) y se recomienda dejarlo en. Especifique la acción que se debe realizar en los mensajes de remitentes suplantados bloqueados en la configuración **If message is detected as spoof** en la página siguiente.
 
      Para desactivar la inteligencia de suplantación, desactive la casilla.
 
@@ -200,53 +203,53 @@ La creación de una directiva contra suplantación de identidad personalizada en
 
 6. En la página **Acciones** que aparece, configure las opciones siguientes:
 
-   - **Acciones de mensaje:** configure las siguientes acciones en esta sección:
+   - **Acciones de mensaje**: configure las siguientes acciones en esta sección:
      - **Si el mensaje se detecta como** un usuario suplantado: esta configuración solo está disponible si seleccionó Habilitar usuarios **para** proteger en la página anterior. Seleccione una de las siguientes acciones en la lista desplegable para los mensajes donde el remitente es uno de los usuarios protegidos que especificó en la página anterior:
        - **No aplicar ninguna acción**
        - **Redirigir el mensaje a otras direcciones de correo electrónico**
        - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
-       - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de suplantación de usuario. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena y si los usuarios reciben notificaciones de cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
+       - **Poner en** cuarentena el mensaje: si selecciona esta acción,  aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que la protección de suplantación de usuario pone en cuarentena. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena y si los usuarios reciben notificaciones de cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
          Un valor **de directiva de cuarentena Apply** en blanco significa que se usa la directiva de cuarentena predeterminada (DefaultFullAccessPolicy para detecciones de suplantación de usuario). Cuando más adelante edite la directiva contra suplantación de identidad o vea la configuración, se muestra el nombre predeterminado de la directiva de cuarentena.
   
        - **Entregar el mensaje y agregar otras direcciones a la línea CCO**
        - **Eliminar el mensaje antes de entregarlo**
 
-     - **Si el mensaje se detecta como** un dominio suplantado: esta configuración solo está disponible si seleccionó Habilitar dominios para proteger **en** la página anterior. Seleccione una de las siguientes acciones en la lista desplegable para los mensajes en los que la dirección de correo electrónico del remitente se encuentra en uno de los dominios protegidos que especificó en la página anterior:
+     - **Si el mensaje se detecta como** un dominio suplantado: esta configuración solo está disponible si seleccionó Habilitar dominios para **proteger en la** página anterior. Seleccione una de las siguientes acciones en la lista desplegable para los mensajes en los que la dirección de correo electrónico del remitente se encuentra en uno de los dominios protegidos que especificó en la página anterior:
        - **No aplicar ninguna acción**
        - **Redirigir el mensaje a otras direcciones de correo electrónico**
        - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
-       - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de suplantación de dominio.
+       - **Poner en** cuarentena el mensaje: si selecciona esta acción,  aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de suplantación de dominio.
 
          Un valor **de directiva de cuarentena Apply** en blanco significa que se usa la directiva de cuarentena predeterminada (DefaultFullAccessPolicy para detecciones de suplantación de dominio). Cuando más adelante edite la directiva contra suplantación de identidad o vea la configuración, se muestra el nombre predeterminado de la directiva de cuarentena.
 
        - **Entregar el mensaje y agregar otras direcciones a la línea CCO**
        - **Eliminar el mensaje antes de entregarlo**
 
-     - **Si la inteligencia de buzones** detecta un usuario suplantado: esta configuración solo está disponible si seleccionó Habilitar inteligencia para la protección de suplantación **en** la página anterior. Seleccione una de las siguientes acciones en la lista desplegable para los mensajes que se identificaron como intentos de suplantación por inteligencia de buzones:
+     - **Si la inteligencia de buzones detecta un** usuario suplantado: esta configuración solo está disponible si seleccionó Habilitar inteligencia para la protección de suplantación **en la** página anterior. Seleccione una de las siguientes acciones en la lista desplegable para los mensajes que se identificaron como intentos de suplantación por inteligencia de buzones:
        - **No aplicar ninguna acción**
        - **Redirigir el mensaje a otras direcciones de correo electrónico**
        - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
-       - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que la protección de inteligencia de buzones de correo pone en cuarentena. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena y si los usuarios reciben notificaciones de cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
+       - **Poner en cuarentena el** mensaje: si selecciona esta acción,  aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que la protección de inteligencia de buzones de correo pone en cuarentena. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena y si los usuarios reciben notificaciones de cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
          Un valor **de directiva de cuarentena Apply** en blanco significa que se usa la directiva de cuarentena predeterminada (DefaultFullAccessPolicy para detecciones de inteligencia de buzones). Cuando más adelante edite la directiva contra suplantación de identidad o vea la configuración, se muestra el nombre predeterminado de la directiva de cuarentena.
 
        - **Entregar el mensaje y agregar otras direcciones a la línea CCO**
        - **Eliminar el mensaje antes de entregarlo**
 
-     - **Si el mensaje se detecta como** suplantación: esta configuración solo está disponible si seleccionó Habilitar la inteligencia de suplantación en la página anterior.  Seleccione una de las siguientes acciones en la lista desplegable para los mensajes de remitentes suplantados bloqueados:
+     - **Si el mensaje se detecta** como suplantación: esta configuración solo está disponible si seleccionó Habilitar la inteligencia de suplantación **en la** página anterior. Seleccione una de las siguientes acciones en la lista desplegable para los mensajes de remitentes suplantados bloqueados:
        - **Mover el mensaje a las carpetas de correo no deseado de los destinatarios**
-       - **Poner en** cuarentena el mensaje:  si selecciona esta acción, aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de inteligencia suplantada. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena y si los usuarios reciben notificaciones de cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
+       - **Poner en** cuarentena el mensaje: si selecciona esta acción,  aparecerá un cuadro Aplicar directiva de cuarentena donde seleccione la directiva de cuarentena que se aplica a los mensajes que están en cuarentena por la protección de inteligencia suplantada. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena y si los usuarios reciben notificaciones de cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
 
          Un valor **de directiva de cuarentena Apply** en blanco significa que se usa la directiva de cuarentena predeterminada (DefaultFullAccessPolicy para detecciones de inteligencia suplantación). Cuando más adelante edite la directiva contra suplantación de identidad o vea la configuración, se muestra el nombre predeterminado de la directiva de cuarentena.
 
-   - **Sugerencias de & indicadores** de seguridad: Configure las siguientes opciones:
-     - **Mostrar el primer contacto consejo de seguridad**: Para obtener más información, vea First contact [consejo de seguridad](set-up-anti-phishing-policies.md#first-contact-safety-tip).
-     - **Mostrar la suplantación de consejo de seguridad:** esta configuración solo está disponible si seleccionó Habilitar usuarios **para** proteger en la página anterior.
-     - **Mostrar la suplantación de dominio consejo de seguridad:** esta configuración solo está disponible si seleccionó Habilitar dominios **para** proteger en la página anterior.
-     - **Mostrar caracteres inusuales de** suplantación de usuario consejo de seguridad  Esta configuración solo  está disponible si seleccionó Habilitar usuarios para proteger o Habilitar dominios para proteger en la página anterior.
-     - **Mostrar (?)** para remitentes no autenticados para suplantación de identidad: esta configuración solo está disponible si seleccionó Habilitar la inteligencia de suplantación de identidad en la página anterior.  Agrega un signo de interrogación (?) a la foto del remitente en el cuadro De de  Outlook si el mensaje no pasa comprobaciones SPF o DKIM y el mensaje no pasa dmarc o autenticación compuesta [.](email-validation-and-authentication.md#composite-authentication)
-     - **Mostrar etiqueta "via":** esta configuración solo está disponible si seleccionó Habilitar la inteligencia **de** suplantación en la página anterior. Agrega una etiqueta via (chris@contoso.com a través de fabrikam.com) a la dirección De si es diferente del dominio en la firma DKIM o la **dirección MAIL FROM.** El valor predeterminado está en (seleccionado). Para desactivarla, desactive la casilla.
+   - **Sugerencias de seguridad & indicadores**: Configure las siguientes opciones:
+     - **Mostrar el primer contacto consejo de seguridad**: para obtener más información, vea [First contact consejo de seguridad](set-up-anti-phishing-policies.md#first-contact-safety-tip).
+     - **Mostrar la suplantación de consejo de seguridad**: esta configuración solo está disponible si seleccionó Habilitar usuarios **para** proteger en la página anterior.
+     - **Mostrar la suplantación de dominio consejo de seguridad**: esta configuración solo está disponible si seleccionó Habilitar dominios **para** proteger en la página anterior.
+     - **Mostrar caracteres inusuales de** suplantación de usuario consejo de seguridad Esta configuración solo está disponible si seleccionó  Habilitar usuarios para proteger o  Habilitar dominios para proteger en la página anterior.
+     - **Mostrar (?) para remitentes** no autenticados para suplantación de identidad: esta configuración solo está disponible si seleccionó  Habilitar la inteligencia de suplantación de identidad en la página anterior. Agrega un signo de interrogación (?) a la foto del remitente en el cuadro De de Outlook si el mensaje no pasa comprobaciones SPF o DKIM y el mensaje  no pasa dmarc o autenticación [compuesta.](email-validation-and-authentication.md#composite-authentication)
+     - **Mostrar etiqueta "via"**: esta configuración solo está disponible si seleccionó **Habilitar** la inteligencia de suplantación en la página anterior. Agrega una etiqueta via (chris@contoso.com a través de fabrikam.com) a la dirección De si es diferente del dominio en la firma DKIM o la dirección **MAIL FROM** . El valor predeterminado está en (seleccionado). Para desactivarla, desactive la casilla.
 
      Para activar una configuración, active la casilla. Para desactivarla, desactive la casilla.
 
@@ -260,9 +263,9 @@ La creación de una directiva contra suplantación de identidad personalizada en
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-phishing-policies"></a>Usar el portal Microsoft 365 Defender para ver directivas contra suplantación de identidad
 
-1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** directivas de colaboración & Reglas de protección Contra la suplantación de identidad en \>  \>  \>  la **sección** Directivas.
+1. En el portal de Microsoft 365 Defender, vaya a Correo electrónico **&** \> directivas de colaboración & **Reglas** \> **de** \> protección Contra la **suplantación** de identidad en la **sección** Directivas.
 
-2. En la **página Anti-phishing,** las siguientes propiedades se muestran en la lista de directivas contra suplantación de identidad:
+2. En la **página Anti-phishing** , las siguientes propiedades se muestran en la lista de directivas contra suplantación de identidad:
 
    - **Nombre**
    - **Estado**
@@ -271,15 +274,15 @@ La creación de una directiva contra suplantación de identidad personalizada en
 
 3. Al seleccionar una directiva haciendo clic en el nombre, la configuración de la directiva se muestra en un menú desplegable.
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies"></a>Usar el portal Microsoft 365 Defender para modificar directivas contra suplantación de identidad
+## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies"></a>Usar el portal Microsoft 365 Defender web para modificar directivas contra suplantación de identidad
 
-1. En el portal de Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & reglas directivas contra la suplantación de identidad en <https://security.microsoft.com> la  \>  \>  \>  **sección** Directivas. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
+1. En el portal Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Directivas de colaboración de correo **electrónico &** \> directivas de **colaboración & Reglas** \> **de** \> protección Contra la **suplantación** de identidad en la **sección** Directivas. Para ir directamente a la **página Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
 
-2. En la **página Anti-phishing,** seleccione una directiva de la lista haciendo clic en el nombre.
+2. En la **página Anti-phishing** , seleccione una directiva de la lista haciendo clic en el nombre.
 
-3. En el control flotante de detalles de la directiva que aparece, seleccione **Editar** en cada sección para modificar la configuración dentro de la sección. Para obtener más información acerca de la configuración, vea la sección Usar el [portal de Microsoft 365 Defender para crear](#use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies) directivas contra la suplantación de identidad anteriores en este artículo.
+3. En el control flotante de detalles de la directiva que aparece, seleccione **Editar** en cada sección para modificar la configuración dentro de la sección. Para obtener más información acerca de la configuración, vea la sección Usar el [portal de Microsoft 365 Defender para crear directivas contra](#use-the-microsoft-365-defender-portal-to-create-anti-phishing-policies) la suplantación de identidad anteriores en este artículo.
 
-   Para la directiva contra suplantación de identidad predeterminada, la sección **Usuarios,** grupos y dominios no está disponible (la directiva se aplica a todos) y no puede cambiar el nombre de la directiva.
+   Para la directiva contra suplantación de identidad predeterminada, la sección Usuarios **,** grupos y dominios no está disponible (la directiva se aplica a todos) y no puede cambiar el nombre de la directiva.
 
 Para habilitar o deshabilitar una directiva o establecer el orden de prioridad de la directiva, consulte las secciones siguientes.
 
@@ -287,9 +290,9 @@ Para habilitar o deshabilitar una directiva o establecer el orden de prioridad d
 
 No puede deshabilitar la directiva contra suplantación de identidad predeterminada.
 
-1. En el portal de Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & reglas directivas contra la suplantación de identidad en <https://security.microsoft.com> la  \>  \>  \>  **sección** Directivas. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
+1. En el portal Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Directivas de colaboración de correo **electrónico &** \> directivas de **colaboración & Reglas** \> **de** \> protección Contra la **suplantación** de identidad en la **sección** Directivas. Para ir directamente a la **página Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
 
-2. En la **página Anti-phishing,** seleccione una directiva personalizada de la lista haciendo clic en el nombre.
+2. En la **página Anti-phishing** , seleccione una directiva personalizada de la lista haciendo clic en el nombre.
 
 3. En la parte superior del control flotante de detalles de la directiva que aparece, verá uno de los siguientes valores:
    - **Directiva desactivada**: para activar la directiva, haga clic en ![icono Activar.](../../media/m365-cc-sc-turn-on-off-icon.png) **Activar** .
@@ -312,9 +315,9 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** 
 - En el portal Microsoft 365 Defender, solo puede cambiar la prioridad de la directiva contra suplantación de identidad después de crearla. En PowerShell, puede invalidar la prioridad predeterminada al crear la regla contra suplantación de identidad (lo que puede afectar a la prioridad de las reglas existentes).
 - Las directivas contra suplantación de identidad se procesan en el orden en que se muestran (la primera directiva tiene el **valor de prioridad** 0). La directiva contra suplantación de identidad predeterminada tiene el valor de prioridad **Lowest** y no puede cambiarla.
 
-1. En el portal de Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & reglas directivas contra la suplantación de identidad en <https://security.microsoft.com> la  \>  \>  \>  **sección** Directivas. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
+1. En el portal Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Directivas de colaboración de correo **electrónico &** \> directivas de **colaboración & Reglas** \> **de** \> protección Contra la **suplantación** de identidad en la **sección** Directivas. Para ir directamente a la **página Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
 
-2. En la **página Anti-phishing,** seleccione una directiva personalizada de la lista haciendo clic en el nombre.
+2. En la **página Anti-phishing** , seleccione una directiva personalizada de la lista haciendo clic en el nombre.
 
 3. En la parte superior del control flotante de detalles de la directiva que aparece, verá **Aumentar la prioridad** o **Disminuir la prioridad** en función del valor de prioridad actual y del número de directivas personalizadas:
    - La directiva con el **valor de prioridad** **0** solo tiene disponible la **opción Disminuir** prioridad.
@@ -327,11 +330,11 @@ Para cambiar la prioridad de una directiva, haga clic en **Aumentar prioridad** 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-anti-phishing-policies"></a>Usar el portal Microsoft 365 Defender para quitar directivas personalizadas contra suplantación de identidad
 
-Cuando se usa el portal de Microsoft 365 Defender para quitar una directiva de anti phishing personalizada, se eliminan tanto la regla contra suplantación de identidad (phishing) como la directiva antiphishing correspondiente. No puede quitar la directiva contra suplantación de identidad predeterminada.
+Cuando usa el portal de Microsoft 365 Defender para quitar una directiva de anti phishing personalizada, se eliminan tanto la regla contra suplantación de identidad como la directiva anti phishing correspondiente. No puede quitar la directiva contra suplantación de identidad predeterminada.
 
-1. En el portal de Microsoft 365 Defender en , vaya a Correo electrónico & directivas de colaboración & reglas directivas contra la suplantación de identidad en <https://security.microsoft.com> la  \>  \>  \>  **sección** Directivas. Para ir directamente a la **página Anti-phishing,** use <https://security.microsoft.com/antiphishing> .
+1. En el portal Microsoft 365 Defender en <https://security.microsoft.com>, vaya a Directivas de colaboración de correo **electrónico &** \> directivas de **colaboración & Reglas** \> **de** \> protección Contra la **suplantación** de identidad en la **sección** Directivas. Para ir directamente a la **página Anti-phishing** , use <https://security.microsoft.com/antiphishing>.
 
-2. En la **página Anti-phishing,** seleccione una directiva personalizada de la lista haciendo clic en el nombre de la directiva.
+2. En la **página Anti-phishing** , seleccione una directiva personalizada de la lista haciendo clic en el nombre de la directiva.
 
 3. En la parte superior del control flotante de detalles de la directiva que aparece, haga clic en ![icono Más acciones.](../../media/m365-cc-sc-more-actions-icon.png) **Más acciones** \> ![Icono Eliminar directiva](../../media/m365-cc-sc-delete-icon.png)**Eliminar directiva**.
 
@@ -341,7 +344,7 @@ Cuando se usa el portal de Microsoft 365 Defender para quitar una directiva de a
 
 Como se describió anteriormente, una directiva contra correo no deseado consta de una directiva contra suplantación de identidad (phish) y una regla contra suplantación de identidad (phish).
 
-En Exchange Online PowerShell, la diferencia entre las directivas contra suplantación de identidad y las reglas contra suplantación de identidad es aparente. Las directivas contra suplantación de identidad se administran mediante los cmdlets **\* -AntiPhishPolicy** y se administran reglas contra suplantación de identidad mediante los cmdlets **\* -AntiPhishRule.**
+En Exchange Online PowerShell, la diferencia entre las directivas contra phishing y las reglas contra suplantación de identidad es aparente. Las directivas contra suplantación de identidad se administran mediante los cmdlets -AntiPhishPolicy y se administran reglas contra suplantación **de identidad mediante los cmdlets -AntiPhishRule.\*** **\***
 
 - En PowerShell, primero se crea la directiva contra suplantación de identidad y, a continuación, se crea la regla contra suplantación de identidad que identifica la directiva a la que se aplica la regla.
 - En PowerShell, se modifica la configuración de la directiva contra suplantación de identidad y la regla contra suplantación de identidad por separado.
@@ -358,9 +361,9 @@ Crear una directiva contra la suplantación de identidad en PowerShell es un pro
 
 - Puede crear una nueva regla contra suplantación de identidad (phish) y asignarle una directiva anti-phish existente y no asociada. Una regla contra la suplantación de identidad no se puede asociar a más de una directiva contra suplantación de identidad.
 - Puede configurar las siguientes opciones en las nuevas directivas contra suplantación de identidad en PowerShell que no están disponibles en el portal de Microsoft 365 Defender hasta después de crear la directiva:
-  - Cree la nueva directiva como deshabilitada (_Habilitada_ `$false` en el cmdlet **New-AntiPhishRule).**
-  - Establezca la prioridad de la directiva durante la creación (_Prioridad_ _\<Number\>_ ) en el cmdlet **New-AntiPhishRule).**
-- Una nueva directiva contra suplantación de identidad que cree en PowerShell no será visible en el portal de Microsoft 365 Defender hasta que asigne la directiva a una regla contra suplantación de identidad.
+  - Cree la nueva directiva como deshabilitada (_habilitada_ `$false` en el cmdlet **New-AntiPhishRule** ).
+  - Establezca la prioridad de la directiva durante la creación (_prioridad__\<Number\>_) en el cmdlet **New-AntiPhishRule**).
+- Una nueva directiva contra suplantación de identidad que cree en PowerShell no será visible en el portal de Microsoft 365 Defender hasta que asigne la directiva a una regla contra phishing.
 
 #### <a name="step-1-use-powershell-to-create-an-anti-phish-policy"></a>Paso 1: Usar PowerShell para crear una directiva contra suplantación de identidad
 
@@ -372,24 +375,24 @@ New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Addit
 
 En este ejemplo se crea una directiva contra phishing denominada Cuarentena de investigación con la siguiente configuración:
 
-- La directiva está habilitada (no estamos usando el parámetro _Enabled_ y el valor predeterminado es `$true` ).
+- La directiva está habilitada (no estamos usando el parámetro _Enabled_ y el valor predeterminado es `$true`).
 - La descripción es: Directiva del departamento de investigación.
-- Cambia la acción predeterminada para las detecciones de [](quarantine-policies.md) suplantación a Cuarentena y usa la directiva de cuarentena predeterminada para los mensajes en cuarentena (no estamos usando el parámetro _SpoofQuarantineTag)._
+- Cambia la acción predeterminada para las detecciones de suplantación a Cuarentena y usa la [](quarantine-policies.md) directiva de cuarentena predeterminada para los mensajes en cuarentena (no estamos usando el parámetro _SpoofQuarantineTag_).
 - Habilita la protección de dominios de la organización para todos los dominios aceptados y la protección de dominios de destino para fabrikam.com.
-- Especifica Cuarentena como acción para las detecciones de [](quarantine-policies.md) suplantación de dominio y usa la directiva de cuarentena predeterminada para los mensajes en cuarentena (no estamos usando el parámetro _TargetedDomainQuarantineTag)._
+- Especifica Cuarentena como acción para las detecciones de suplantación de dominio y usa la [](quarantine-policies.md) directiva de cuarentena predeterminada para los mensajes en cuarentena (no estamos usando el parámetro _TargetedDomainQuarantineTag_).
 - Especifica Mai Fujito (mfujito@fabrikam.com) como el usuario que se debe proteger de la suplantación.
-- Especifica Cuarentena como acción para las detecciones de [](quarantine-policies.md) suplantación de usuario y usa la directiva de cuarentena predeterminada para los mensajes en cuarentena (no estamos usando el parámetro _TargetedUserQuarantineTag)._
-- Habilita la inteligencia de buzones (_EnableMailboxIntelligence_), permite que la protección de inteligencia de buzones de correo tome [](quarantine-policies.md) medidas en los mensajes (_EnableMailboxIntelligenceProtection_), especifica Cuarentena como acción para los mensajes detectados y usa la directiva de cuarentena predeterminada para los mensajes en cuarentena (no estamos usando el parámetro _MailboxIntelligenceQuarantineTag)._
+- Especifica Cuarentena como acción para las detecciones de suplantación de usuario y usa la [](quarantine-policies.md) directiva de cuarentena predeterminada para los mensajes en cuarentena (no estamos usando el parámetro _TargetedUserQuarantineTag_).
+- Habilita la inteligencia de buzones (_EnableMailboxIntelligence_), permite que la protección de inteligencia de buzones de correo tome medidas en los mensajes (_EnableMailboxIntelligenceProtection_), especifica Cuarentena como [](quarantine-policies.md) acción para los mensajes detectados y usa la directiva de cuarentena predeterminada para los mensajes en cuarentena (no estamos usando el parámetro _MailboxIntelligenceQuarantineTag_).
 - Habilita todas las sugerencias de seguridad.
 
 ```powershell
 New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -AuthenticationFailAction Quarantine -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
 ```
 
-Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-AntiPhishPolicy](/powershell/module/exchange/New-AntiPhishPolicy).
+Para obtener información detallada sobre la sintaxis y los parámetros, [consulte New-AntiPhishPolicy](/powershell/module/exchange/New-AntiPhishPolicy).
 
 > [!NOTE]
-> Para obtener instrucciones detalladas para especificar las directivas de cuarentena que se usarán en una directiva contra [phishing, vea Use PowerShell to specify the quarantine policy in anti-phishing policies](quarantine-policies.md#anti-phishing-policies). [](quarantine-policies.md)
+> Para obtener instrucciones detalladas para especificar [las directivas de](quarantine-policies.md) cuarentena que se deben usar en una directiva contra [phishing, vea Use PowerShell to specify the quarantine policy in anti-phishing policies](quarantine-policies.md#anti-phishing-policies).
 
 #### <a name="step-2-use-powershell-to-create-an-anti-phish-rule"></a>Paso 2: Usar PowerShell para crear una regla contra suplantación de identidad
 
@@ -403,7 +406,7 @@ En este ejemplo se crea una regla contra suplantación de identidad (phish) deno
 
 - La regla está asociada con la directiva contra phishing denominada Cuarentena de investigación.
 - La regla se aplica a los miembros del grupo denominado Research Department.
-- Dado que no estamos usando el parámetro _Priority,_ se usa la prioridad predeterminada.
+- Dado que no estamos usando el parámetro _Priority_ , se usa la prioridad predeterminada.
 
 ```powershell
 New-AntiPhishRule -Name "Research Department" -AntiPhishPolicy "Research Quarantine" -SentToMemberOf "Research Department"
@@ -431,7 +434,7 @@ En este ejemplo se devuelven todos los valores de propiedad de la directiva cont
 Get-AntiPhishPolicy -Identity "Executives"
 ```
 
-Para obtener información detallada sobre la sintaxis y los parámetros, [vea Get-AntiPhishPolicy](/powershell/module/exchange/Get-AntiPhishPolicy).
+Para obtener información detallada sobre la sintaxis y los parámetros, [consulte Get-AntiPhishPolicy](/powershell/module/exchange/Get-AntiPhishPolicy).
 
 ### <a name="use-powershell-to-view-anti-phish-rules"></a>Usar PowerShell para ver reglas contra suplantación de identidad
 
@@ -467,11 +470,11 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Ge
 
 ### <a name="use-powershell-to-modify-anti-phish-policies"></a>Usar PowerShell para modificar directivas contra suplantación de identidad
 
-Aparte de los siguientes elementos, la misma configuración está disponible al modificar una directiva contra suplantación de identidad en PowerShell que al crear la directiva, tal como se describe en el Paso 1: Usar PowerShell para crear una sección de directiva contra suplantación de identidad [(phish policy)](#step-1-use-powershell-to-create-an-anti-phish-policy) anterior en este artículo.
+Aparte de los siguientes elementos, la misma configuración está disponible al modificar una directiva contra suplantación de identidad en PowerShell que al crear la directiva, tal como se describe en el Paso [1: Usar PowerShell](#step-1-use-powershell-to-create-an-anti-phish-policy) para crear una sección de directiva contra suplantación de identidad (phish policy) anterior en este artículo.
 
 - El _modificador MakeDefault_ que convierte la directiva especificada en la directiva predeterminada (aplicada a todos, siempre **con** prioridad más baja y no puede eliminarla) solo está disponible cuando modifica una directiva contra suplantación de identidad en PowerShell.
 
-- No puede cambiar el nombre de una directiva contra suplantación de identidad (el cmdlet **Set-AntiPhishPolicy** no tiene ningún _parámetro Name)._ Al cambiar el nombre de una directiva contra suplantación de identidad en el portal de Microsoft 365 Defender, solo se cambia el nombre de la regla contra _suplantación de identidad_.
+- No puede cambiar el nombre de una directiva contra suplantación de identidad (el cmdlet **Set-AntiPhishPolicy** no tiene ningún _parámetro Name_ ). Al cambiar el nombre de una directiva contra suplantación de identidad en el portal de Microsoft 365 Defender, solo se cambia el nombre de la regla contra _suplantación de identidad_.
 
 Para modificar una directiva contra phishing, use esta sintaxis:
 
@@ -479,10 +482,10 @@ Para modificar una directiva contra phishing, use esta sintaxis:
 Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, [vea Set-AntiPhishPolicy](/powershell/module/exchange/Set-AntiPhishPolicy).
+Para obtener información detallada sobre la sintaxis y los parámetros, [consulte Set-AntiPhishPolicy](/powershell/module/exchange/Set-AntiPhishPolicy).
 
 > [!NOTE]
-> Para obtener instrucciones detalladas para especificar las directivas de cuarentena que se usarán en una directiva contra [phishing, vea Use PowerShell to specify the quarantine policy in anti-phishing policies](quarantine-policies.md#anti-phishing-policies). [](quarantine-policies.md)
+> Para obtener instrucciones detalladas para especificar [las directivas de](quarantine-policies.md) cuarentena que se deben usar en una directiva contra [phishing, vea Use PowerShell to specify the quarantine policy in anti-phishing policies](quarantine-policies.md#anti-phishing-policies).
 
 ### <a name="use-powershell-to-modify-anti-phish-rules"></a>Usar PowerShell para modificar reglas contra suplantación de identidad
 
@@ -520,7 +523,7 @@ Este ejemplo habilita la misma regla.
 Enable-AntiPhishRule -Identity "Marketing Department"
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, vea [Enable-AntiPhishRule](/powershell/module/exchange/enable-antiphishrule) y [Disable-AntiPhishRule](/powershell/module/exchange/disable-antiphishrule).
+Para obtener información detallada sobre la sintaxis y los parámetros, vea [Enable-AntiPhishRule](/powershell/module/exchange/enable-antiphishrule) y [Disable-AntiPhishRule](/powershell/module/exchange/disable-antiphishrule).
 
 ### <a name="use-powershell-to-set-the-priority-of-anti-phish-rules"></a>Usar PowerShell para establecer la prioridad de las reglas contra suplantación de identidad
 
@@ -542,7 +545,7 @@ Set-AntiPhishRule -Identity "Marketing Department" -Priority 2
 
 - Para establecer la prioridad de una nueva regla al crearla, use el parámetro _Priority_ en el cmdlet **New-AntiPhishRule** en su lugar.
 
-- La directiva contra suplantación de identidad predeterminada no tiene una regla anti phish correspondiente y siempre tiene el valor de prioridad no modificable **Lowest**.
+- La directiva contra suplantación de identidad predeterminada no tiene una regla contra suplantación de identidad (phish) correspondiente y siempre tiene el valor de prioridad no modificable **Lowest**.
 
 ### <a name="use-powershell-to-remove-anti-phish-policies"></a>Usar PowerShell para quitar directivas contra suplantación de identidad
 
@@ -560,7 +563,7 @@ En este ejemplo se quita la directiva contra suplantación de identidad denomina
 Remove-AntiPhishPolicy -Identity "Marketing Department"
 ```
 
-Para obtener información detallada sobre la sintaxis y los parámetros, [vea Remove-AntiPhishPolicy](/powershell/module/exchange/Remove-AntiPhishPolicy).
+Para obtener información detallada sobre la sintaxis y los parámetros, [consulte Remove-AntiPhishPolicy](/powershell/module/exchange/Remove-AntiPhishPolicy).
 
 ### <a name="use-powershell-to-remove-anti-phish-rules"></a>Usar PowerShell para quitar reglas contra suplantación de identidad
 
@@ -584,9 +587,9 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Re
 
 Para comprobar que ha configurado correctamente directivas contra suplantación de identidad en Defender para Office 365, siga estos pasos:
 
-- En la **página Anti-phishing** del portal de Microsoft 365 Defender en , compruebe la lista de directivas, sus valores de estado <https://security.microsoft.com/antiphishing> y sus valores **de** prioridad.  Para ver más detalles, seleccione la directiva de la lista haciendo clic en el nombre y viendo los detalles en el menú desplegable que aparece.
+- En la **página Anti-phishing** del portal de Microsoft 365 Defender en <https://security.microsoft.com/antiphishing>, compruebe la lista de directivas, sus valores de estado  y sus **valores de** prioridad. Para ver más detalles, seleccione la directiva de la lista haciendo clic en el nombre y viendo los detalles en el menú desplegable que aparece.
 
-- En Exchange Online PowerShell, reemplace por el nombre de la directiva o regla y ejecute el \<Name\> siguiente comando y compruebe la configuración:
+- En Exchange Online PowerShell, reemplace \<Name\> por el nombre de la directiva o regla y ejecute el siguiente comando y compruebe la configuración:
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

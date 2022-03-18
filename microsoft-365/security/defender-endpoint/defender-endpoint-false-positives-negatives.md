@@ -23,12 +23,12 @@ ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: e7d401d4501f046455382039593d304494de5295
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 0352fde9756efce3011db24c915f287c358f313b
+ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62463427"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63557913"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 
@@ -74,8 +74,6 @@ Antes de clasificar o suprimir una alerta, determine si la alerta es precisa, un
 3. Seleccione una alerta para obtener más información sobre la alerta. (Vea [Revisar alertas en Microsoft Defender para endpoint](review-alerts.md)).
 
 4. Según el estado de alerta, siga los pasos descritos en la tabla siguiente:
-
-<br/><br/>
 
    |Estado de alerta|Qué hacer|
    |---|---|
@@ -308,7 +306,7 @@ Si tiene un archivo que se detectó incorrectamente como malintencionado o que s
 
 1. Revise las directrices aquí: [Enviar archivos para su análisis](/windows/security/threat-protection/intelligence/submission-guide).
 
-2. Visite el Inteligencia de seguridad de Microsoft de envío (<https://www.microsoft.com/wdsi/filesubmission>) y envíe los archivos.
+2. Visite el [Inteligencia de seguridad de Microsoft de envío (](https://www.microsoft.com/wdsi/filesubmission)https://www.microsoft.com/wdsi/filesubmission)y envíe los archivos).
 
 ### <a name="submit-a-fileless-detection-for-analysis"></a>Enviar una detección sin archivos para su análisis
 
@@ -322,7 +320,7 @@ Si se detectó algo como malware en función del comportamiento y no tiene un ar
 
 3. Revise las directrices aquí: [Enviar archivos para su análisis](/windows/security/threat-protection/intelligence/submission-guide).
 
-4. Visite el Inteligencia de seguridad de Microsoft de envío (<https://www.microsoft.com/wdsi/filesubmission>) y envíe los .cab de correo.
+4. Visite el [Inteligencia de seguridad de Microsoft de envío (](https://www.microsoft.com/wdsi/filesubmission)https://www.microsoft.com/wdsi/filesubmission)y envíe los archivos .cab envío.
 
 ### <a name="what-happens-after-a-file-is-submitted"></a>¿Qué sucede después de enviar un archivo?
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 37e94d43f2cfeab0e1135c42de34726ee5895714
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ddd0553405aa92a1eb7a7978398392b780a0a2ea
+ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320597"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63557815"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -103,8 +103,6 @@ Para obtener detalles técnicos sobre el funcionamiento de la retención de Team
 #### <a name="known-configuration-issues"></a>Problemas de configuración conocidos
 
 - Aunque puede seleccionar la opción para iniciar el período de retención en el que se modificaron los elementos por última vez, siempre se usa el valor **Cuando se crearon los elementos**. Para los mensajes que se editan, se guarda una copia del mensaje original con la marca de tiempo original para identificar cuándo se creó este mensaje antes de editar, y el mensaje después de editar tiene una marca de tiempo más reciente.
-
-- Al seleccionar **Editar** para la ubicación de los **mensajes del canal Teams** es posible que vea grupos de Microsoft 365 que tampoco son equipos. No seleccione estos grupos.
 
 - Al seleccionar **Editar** para la ubicación de los chats de Teams puede que vea invitados y no usuarios del buzón. Las directivas de retención no están diseñadas para estos usuarios, así que no los seleccione.
 

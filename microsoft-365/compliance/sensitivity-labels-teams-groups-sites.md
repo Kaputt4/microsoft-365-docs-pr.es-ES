@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 39caee37f8bf8b2f885824bbdd12ca7b5b372e69
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 46daf3ecd4c918196fa7a50f8e8869bdd54c945e
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320513"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504820"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -327,7 +327,7 @@ También puede cambiar y aplicar una etiqueta desde esta página:
 
 ## <a name="support-for-sensitivity-labels"></a>Compatibilidad con etiquetas de confidencialidad.
 
-Cuando use centros de administración que admitan etiquetas de confidencialidad, verá todas las etiquetas de confidencialidad del espacio empresarial. En comparación, las aplicaciones y servicios de usuario que filtran etiquetas de confidencialidad según las directivas de publicación pueden provocar que veas un subconjunto de esas etiquetas.
+Cuando usa centros de administración que admiten etiquetas de confidencialidad, a excepción del portal de Azure Active Directory, verá todas las etiquetas de confidencialidad para el inquilino. En comparación, las aplicaciones y servicios de usuario que filtran etiquetas de confidencialidad según las directivas de publicación pueden provocar que veas un subconjunto de esas etiquetas. El portal de Azure Active Directory también filtra las etiquetas según las directivas de publicación.
 
 Las siguientes aplicaciones y servicios son compatibles con etiquetas de confidencialidad establecidas para la configuración de sitio y grupo:
 
@@ -335,9 +335,9 @@ Las siguientes aplicaciones y servicios son compatibles con etiquetas de confide
 
   - Centro de administración de SharePoint
   - Centro de administración de Teams
-  - Portal de Azure Active Directory
   - Centro de administración de Microsoft 365
   - Centro de cumplimiento de Microsoft 365
+  - Portal de Azure Active Directory
 
 - Servicios y aplicaciones de usuario:
 

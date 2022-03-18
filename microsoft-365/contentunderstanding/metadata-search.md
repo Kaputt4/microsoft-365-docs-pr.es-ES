@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: Obtenga información sobre cómo usar la búsqueda avanzada de metadatos para buscar elementos en bibliotecas de documentos de SharePoint con SharePoint Syntex.
-ms.openlocfilehash: b5dffe0cd0bf481c1243d87450110d545578a06b
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 87edac08dd057c0e9dea2ce36f4339f9c0bb5344
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806911"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63526532"
 ---
 # <a name="search-for-metadata-in-document-libraries-in-microsoft-sharepoint-syntex"></a>Buscar metadatos en bibliotecas de documentos en Microsoft SharePoint Syntex
 
@@ -50,4 +50,4 @@ La búsqueda avanzada de metadatos le permite usar los metadatos asociados a un 
    |Tipo de archivo     |Buscar por tipo de archivo seleccionado (por ejemplo, documento de Word o PDF).        |
    |Tipo de contenido  |Buscar por tipo de contenido seleccionado. Esta opción solo aparecerá si hay un tipo de contenido no predeterminado aplicado a la biblioteca. Los tipos de contenido predeterminado son *documento* y *carpeta*.        |
 
-3. Seleccione **Buscar**. Los documentos que coinciden con la búsqueda de metadatos se muestran en la página de resultados. 
+3. Seleccione **Buscar**. Los documentos que coinciden con su búsqueda de metadatos se muestran en la página de resultados. 
