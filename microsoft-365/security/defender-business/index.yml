@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft Defender para Empresas
-summary: A partir del 1 de marzo de 2022, Microsoft Defender para empresas se incluye en Microsoft 365 Empresa Premium. Defender para empresas como suscripción independiente está actualmente en versión preliminar y se implantará gradualmente para los clientes y socios de TI que se inscribirán en https://aka.ms/mdb-preview.
+summary: A partir del 1 de marzo de 2022, Microsoft Defender para Empresas se incluye en Microsoft 365 Empresa Premium. Defender para Empresas como suscripción independiente está actualmente en versión preliminar, y se implantará gradualmente para los clientes y socios de TI que se inscriban en https://aka.ms/mdb-preview.
 metadata:
-  title: Documentación de Microsoft Defender para empresas
-  description: Obtener información general y de configuración para Microsoft Defender para empresas
+  title: Documentación de Microsoft Defender para Empresas
+  description: Obtener información general y de configuración de Microsoft Defender para Empresas
   ms.prod: 365-security
   ms.technology: mdb
   ms.topic: landing-page
@@ -17,7 +17,7 @@ metadata:
   ms.date: 03/10/2022
   ms.openlocfilehash: eb00a4fc76315360c789afacad4b77da3d28c323
   ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: es-ES
   ms.lasthandoff: 03/12/2022
   ms.locfileid: "63450750"
@@ -26,51 +26,51 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: ¿Qué es Defender para empresas?
+    - text: ¿Qué es Defender para Empresas?
       url: mdb-overview.md
-    - text: Proceso de configuración simplificado
+    - text: El proceso de configuración simplificado
       url: mdb-simplified-configuration.md
     - text: Comparar planes para pequeñas y medianas empresas
       url: compare-mdb-m365-plans.md
     - text: Integración con Microsoft 365 Lighthouse
       url: mdb-lighthouse-integration.md
-- title: Comenzar
+- title: Introducción
   linkLists:
   - linkListType: get-started
     links:
-    - text: Obtener Defender para empresas
+    - text: Obtener Defender para Empresas
       url: get-defender-business.md
     - text: Ejecutar el asistente para la instalación
       url: mdb-use-wizard.md
     - text: Navegar por el portal
       url: mdb-get-started.md
-    - text: Ver el panel de administración & vulnerabilidades
+    - text: Ver el panel de administración de amenazas y vulnerabilidades
       url: mdb-view-tvm-dashboard.md
     - text: Probar tutoriales y simulaciones
       url: mdb-tutorials.md
-- title: Configurar y configurar
+- title: Configurar
   linkLists:
   - linkListType: deploy
     links:
     - text: Información general sobre la configuración
       url: mdb-setup-configuration.md
-    - text: 'Paso 1: Revisar los requisitos'
+    - text: 'Paso 1: revisar los requisitos'
       url: mdb-requirements.md
-    - text: 'Paso 2: Asignar roles y permisos'
+    - text: 'Paso 2: asignación de funciones y permisos'
       url: mdb-roles-permissions.md
-    - text: 'Paso 3: Configurar notificaciones por correo electrónico'
+    - text: 'Paso 3: configurar notificaciones por correo electrónico'
       url: mdb-email-notifications.md
-    - text: 'Paso 4: Incorporar dispositivos'
+    - text: 'Paso 4: incorporar dispositivos'
       url: mdb-onboard-devices.md
-    - text: 'Paso 5: Configurar directivas de seguridad'
+    - text: 'Paso 5: configurar directivas de seguridad'
       url: mdb-view-edit-policies.md
-- title: Ver y responder a amenazas
+- title: Ver y responder a las amenazas
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Ver y administrar incidentes
       url: mdb-view-manage-incidents.md
-    - text: Responder y mitigar amenazas
+    - text: Responder a las amenazas y mitigarlas
       url: mdb-respond-mitigate-threats.md
     - text: Revisar las acciones de corrección
       url: mdb-review-remediation-actions.md
@@ -88,9 +88,9 @@ landingContent:
     links:
     - text: Orden de directiva
       url: mdb-policy-order.md
-    - text: Configuración de protección de última generación
+    - text: Configuración de la de protección de última generación
       url: mdb-next-gen-configuration-settings.md
-    - text: Configuración del firewall
+    - text: Configuración de firewall
       url: mdb-firewall.md
 - title: Administrar dispositivos
   linkLists:
