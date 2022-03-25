@@ -3,7 +3,7 @@ title: Documentación de Microsoft Defender para punto de conexión
 summary: Microsoft Defender para punto de conexión es una plataforma unificada para la protección preventiva, la detección posterior a la vulneración, la investigación automatizada y la respuesta.
 metadata:
   title: Documentación de Microsoft Defender para punto de conexión
-  description: Obtenga información sobre Microsoft Defender para punto de conexión y maximice sus funciones de seguridad integradas para proteger dispositivos, detectar actividad malintencionada y solucionar amenazas# Obligatorio; descripción del artículo que se muestra en los resultados de la búsqueda. < 160 caracteres.
+  description: Obtenga información sobre Microsoft Defender para punto de conexión y maximice las funcionalidades de seguridad integradas para proteger los dispositivos, detectar actividades malintencionadas y corregir las amenazas# que se requieren; descripción del artículo que se muestra en los resultados de la búsqueda. < 160 caracteres.
   services: office-365-security-compliance
   ms.prod: m365-security
   ms.technology: mde
@@ -16,7 +16,7 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: d141c9f8b6109bd55bd64e5839db552fc13588de
   ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: es-ES
   ms.lasthandoff: 12/30/2021
   ms.locfileid: "61643035"
@@ -27,7 +27,7 @@ landingContent:
     links:
     - text: ¿Qué es Microsoft Defender para punto de conexión?
       url: microsoft-defender-endpoint.md
-    - text: ¿Qué es Defender for Endpoint Plan 1?
+    - text: ¿Qué es Defender para punto de conexión plan 1?
       url: defender-endpoint-plan-1.md
     - text: Comparar los planes 1 y 2 de Defender para punto de conexión
       url: defender-endpoint-plan-1-2.md
@@ -35,7 +35,7 @@ landingContent:
     links:
     - text: Novedades de Microsoft Defender para punto de conexión
       url: whats-new-in-microsoft-defender-endpoint.md
-    - text: Anuncio de Microsoft Defender para el plan de extremo 1
+    - text: Anuncio de Microsoft Defender para punto de conexión plan 1
       url: defender-endpoint-plan-1.md
   - linkListType: video
     links:
@@ -55,7 +55,7 @@ landingContent:
       url: deployment-phases.md
     - text: Incorporar dispositivos admitidos
       url: onboard-configure.md
-    - text: Configurar y configurar Defender for Endpoint Plan 1
+    - text: Configurar Defender para punto de conexión plan 1
       url: mde-p1-setup-configuration.md
   - linkListType: how-to-guide
     links:
@@ -85,7 +85,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft Defender para endpoint en Mac
+    - text: Microsoft Defender para punto de conexión en Mac
       url: microsoft-defender-endpoint-mac.md
     - text: Microsoft Defender para punto de conexión en iOS
       url: microsoft-defender-endpoint-ios.md

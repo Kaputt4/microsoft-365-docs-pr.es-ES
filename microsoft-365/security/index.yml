@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Documentación de Seguridad de Microsoft 365
-summary: Microsoft 365 Defender portal une varias tecnologías de seguridad en una consola de administración completa, con mejoras para proteger su empresa.
+summary: Microsoft 365 Defender Portal une varias tecnologías de seguridad en una consola de administración completa, con mejoras para proteger su empresa.
 metadata:
   title: Documentación de Seguridad de Microsoft 365
   description: 'Obtenga más información sobre Microsoft Defender para punto de conexión: cómo protege los puntos de conexión de ciberamenazas y proporciona a los equipos de operaciones de seguridad con capacidades para corregir amenazas.'
@@ -15,7 +15,7 @@ metadata:
   ms.localizationpriority: high
   ms.openlocfilehash: 199f3005de41d8b97b6ae110740d687d5d4692e9
   ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: es-ES
   ms.lasthandoff: 11/19/2021
   ms.locfileid: "61106431"
@@ -64,7 +64,7 @@ landingContent:
       url: defender-endpoint/microsoft-defender-endpoint.md
     - text: Información general del portal del Centro de seguridad de Microsoft Defender
       url: defender-endpoint/portal-overview.md
-- title: Microsoft Defender para la nube
+- title: Microsoft Defender for Cloud
   linkLists:
   - linkListType: overview
     links:
@@ -76,9 +76,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: ¿Qué es Microsoft Defender para aplicaciones en la nube?
+    - text: ¿Qué es Microsoft Defender for Cloud Apps?
       url: /cloud-app-security/what-is-cloud-app-security
-    - text: Introducción a Microsoft Defender para aplicaciones en la nube
+    - text: Introducción a Microsoft Defender for Cloud Apps
       url: /cloud-app-security/getting-started-with-cloud-app-security
 - title: Administración de seguridad
   linkLists:

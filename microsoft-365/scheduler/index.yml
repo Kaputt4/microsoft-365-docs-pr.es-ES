@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Planificador para Microsoft 365
-summary: Obtenga información sobre cómo configurar scheduler para Microsoft 365 programar reuniones con Cortana.
+summary: Obtenga información sobre cómo configurar Scheduler para Microsoft 365 para programar reuniones con Cortana.
 brand: m365
 metadata:
   title: Planificador para Microsoft 365
-  description: Obtenga información sobre cómo configurar scheduler para Microsoft 365 programar reuniones con Cortana.
+  description: Obtenga información sobre cómo configurar Scheduler para Microsoft 365 para programar reuniones con Cortana.
   ms.service: exchange-online
   ms.topic: hub-page
   author: AshaIyengar21
@@ -16,20 +16,20 @@ additionalContent:
   sections:
     - items:
         - title: ¿Qué es Scheduler para Microsoft 365?
-          summary: 'Obtenga información sobre scheduler para Microsoft 365 y sus características, quién y cómo se beneficiará.'
+          summary: 'Obtenga información sobre Scheduler para Microsoft 365 y sus características, y quién y cómo se beneficiará.'
           url: scheduler-overview.md
         - title: Confianza y privacidad
-          summary: Obtenga información sobre cómo Scheduler for Microsoft 365 se asegura de que su confianza y privacidad estén protegidos.
+          summary: Obtenga información sobre cómo Scheduler for Microsoft 365 garantiza que su confianza y privacidad están protegidas.
           url: scheduler-trust-privacy.md
         - title: Configuración del Planificador para Microsoft 365
-          summary: Obtenga información sobre lo que se necesita para configurar scheduler para Microsoft 365.
+          summary: Obtenga información sobre lo que se necesita para configurar Scheduler para Microsoft 365.
           url: scheduler-setup.md
-        - title: Use Scheduler para Microsoft 365
+        - title: Usar Scheduler para Microsoft 365
           summary: Obtenga información sobre cómo usar Scheduler para Microsoft 365.
           url: scheduler-using.md
         - title: Programar reuniones periódicas dinámicas
-          summary: Obtenga más información sobre la programación de reuniones periódicas dinámicas.
+          summary: Obtenga más información sobre programación de reuniones periódicas dinámicas.
           url: scheduler-recurring-meetings.md
-        - title: Preguntas más frecuentes del programador
-          summary: Preguntas y respuestas más frecuentes en Programador para Microsoft 365.
+        - title: Preguntas más frecuentes sobre Scheduler
+          summary: Preguntas y respuestas más frecuentes en Scheduler para Microsoft 365.
           url: scheduler-faqs.md
