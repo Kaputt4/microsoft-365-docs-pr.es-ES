@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e534211008ea560642ba306844b9223170ac0140
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: de49205fe20cd5685279c0a5f9d138147f24bb8d
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323225"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754167"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Revisar los requisitos de arquitectura y los conceptos clave para Microsoft Defender for Identity
 
@@ -46,13 +46,13 @@ Defender for Identity protege los usuarios locales de Active Directory o los usu
 
 En el siguiente diagrama se muestra la arquitectura de línea base de Defender for Identity. 
 
-![Arquitectura de Microsoft Defender para Identity.](../../media/defender/m365-defender-identity-architecture.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-architecture.png" alt-text="La arquitectura de identidad de Microsoft Defender para Identity" lightbox="../../media/defender/m365-defender-identity-architecture.png":::
 
 En esta ilustración:
+
 - Los sensores instalados en los controladores de dominio de AD analizan los registros y el tráfico de red y los envían a Microsoft Defender for Identity para su análisis e informes.
 -  Los sensores también pueden analizar los Servicios de federación de Active Directory (AD FS) cuando Azure AD está configurado para usar la autenticación federada (línea punteada en la ilustración). 
 - Microsoft Defender for Identity comparte las señales Microsoft 365 Defender para la detección y respuesta extendidas (XDR).
-
 
 Los sensores de Defender for Identity se pueden instalar directamente en los siguientes servidores:
 
@@ -66,7 +66,6 @@ Para obtener una visión más profunda de la arquitectura de Defender for Identi
 
 En la siguiente tabla se identificaron conceptos clave que son importantes para comprender al evaluar, configurar e implementar Microsoft Defender para Identity.
 
-
 |Concepto  |Descripción |Más información  |
 |---------|---------|---------|
 | Actividades supervisadas | Defender for Identity supervisa las señales generadas desde dentro de la organización para detectar actividad sospechosa o malintencionada y le ayuda a determinar la validez de cada amenaza potencial para que pueda realizar una triaje y responder de forma eficaz.  |  [Actividades supervisadas por Microsoft Defender para identidad](/defender-for-identity/monitored-activities)       |
@@ -78,8 +77,6 @@ En la siguiente tabla se identificaron conceptos clave que son importantes para 
 | Grupos de funciones    | Defender for Identity ofrece grupos basados en roles y acceso delegado para proteger los datos según las necesidades específicas de seguridad y cumplimiento de su organización, que incluye administradores, usuarios y visores.        |  [Grupos de roles de Microsoft Defender for Identity](/defender-for-identity/role-groups)       |
 | Portal administrativo    |  Además del portal Microsoft 365 Defender, el portal defender para la identidad se puede usar para supervisar y responder a actividades sospechosas.      | [Trabajo con el portal de Microsoft Defender for Identity](/defender-for-identity/workspace-portal)        |
 | Integración de Microsoft Defender para Aplicaciones en la nube   | Microsoft Defender para aplicaciones en la nube se integra con Microsoft Defender for Identity para proporcionar análisis de comportamiento de entidades de usuario (UEBA) en un entorno híbrido, tanto en la aplicación en la nube como local.   | Integración de Microsoft Defender para identidades  |
-| | | |
-
 
 ## <a name="review-prerequisites"></a>Revisar requisitos previos
 

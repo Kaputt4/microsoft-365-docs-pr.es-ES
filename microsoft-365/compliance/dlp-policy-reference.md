@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Referencia de configuración y componente de directiva DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: d94277ac4ee3bd78feecf660e03d60a5720d1b43
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4888569318fd24d25368dc1c923a1efced9f4126
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319425"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675446"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -397,17 +397,54 @@ Las acciones que están disponibles en una regla dependen de las ubicaciones que
 
 - Auditar o restringir actividades en Windows dispositivos
 
-> [!NOTE]
-> Los dispositivos dan la opción **de Auditar** una actividad, **Bloquear** una actividad o **Bloquear con invalidar** una actividad.
+Para usar esta configuración, debe configurar opciones en la configuración **de DLP** y en la directiva en la que desea usarlos. Consulta Aplicaciones [restringidas y grupos de aplicaciones](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) para obtener más información.
 
-La ubicación de los dispositivos proporciona muchas subactividades (condiciones) y acciones. Para obtener más información, consulta [Actividades de extremo en las que puedes supervisar y realizar acciones](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on). 
+La ubicación de los dispositivos proporciona muchas subactividades (condiciones) y acciones. Para obtener más información, consulta [Actividades de extremo en las que puedes supervisar y realizar acciones](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
 
-#### <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
+Al seleccionar **Auditar** o restringir actividades en Windows dispositivos, puede restringir las actividades del usuario por dominio de servicio o explorador, y establecer el ámbito de las acciones que REALIZA DLP:
+
+- Todas las aplicaciones
+- Por una lista de aplicaciones restringidas que definas
+- Ay un grupo de aplicaciones restringido (versión preliminar) que definas.
+
+##### <a name="service-domain-and-browser-activities"></a>Actividades de explorador y dominio de servicio
+
+Al configurar los dominios de servicio en la nube Permitir **o** bloquear  y la lista Exploradores no [permitidos (consulte Restricciones](dlp-configure-endpoint-settings.md#browser-and-domain-restrictions-to-sensitive-data) de explorador y dominio a datos confidenciales) y un usuario intenta cargar un archivo protegido en un dominio de servicio en la nube o acceder a él desde un explorador no permitido, `Audit only`puede configurar la acción de directiva en , o `Block with override``Block` en la actividad.
+
+##### <a name="file-activities-for-all-apps"></a>Actividades de archivo para todas las aplicaciones
+
+Con la **opción Actividades de archivo para todas** las aplicaciones, seleccionas No restringir las actividades de **archivos** o **Aplicar restricciones a actividades específicas**. Cuando selecciona aplicar restricciones a actividades específicas, las acciones que seleccione aquí se aplican cuando un usuario tiene acceso a un elemento protegido por DLP. Puede decir a DLP que `Audit only`, `Block with override`, `Block` (las acciones) en estas actividades de usuario:
+
+- **Copiar en el portapapeles**
+- **Copiar en una unidad extraíble USB** 
+- **Copiar en un recurso compartido de red**
+- **Print**
+- **Copiar o mover con una aplicación de Bluetooth sin alambrar**
+- **Servicios de Escritorio remoto**
+
+
+##### <a name="restricted-app-activities"></a>Actividades de aplicaciones restringidas  
+
+Anteriormente denominadas aplicaciones sin alambrar, defines una lista de aplicaciones en la configuración de DLP de extremo en la que quieras aplicar restricciones. Cuando un usuario intenta obtener acceso a un archivo protegido de DLP con una aplicación que está en la lista, puede `Audit only`, `Block with override`o la `Block` actividad. Las acciones DLP definidas en **actividades de aplicaciones** restringidas se invalidan si la aplicación es miembro del grupo de aplicaciones restringido. A continuación, se aplican las acciones definidas en el grupo de aplicaciones restringido.
+
+##### <a name="file-activities-for-apps-in-restricted-app-groups-preview"></a>Actividades de archivo para aplicaciones en grupos de aplicaciones restringidos (versión preliminar)
+
+Defines los grupos de aplicaciones restringidos en la configuración de DLP de punto de conexión y agregas grupos de aplicaciones restringidos a tus directivas. Al agregar un grupo de aplicaciones restringido a una directiva, debes seleccionar una de estas opciones:
+
+- No restringir la actividad de archivos
+- Aplicar restricciones a toda la actividad
+- Aplicar restricciones a una actividad específica
+
+Cuando selecciona cualquiera de las opciones Aplicar *restricciones* y un usuario intenta obtener acceso a un archivo protegido dlp mediante una aplicación que se encuentra en el grupo de aplicaciones restringidas, `Audit only`puede , `Block with override`o `Block` por actividad. Las acciones DLP que definas aquí invalidan las acciones definidas en **Actividades** de aplicaciones restringidas y **Actividades de archivo para todas las aplicaciones** de la aplicación.
+
+Consulta Aplicaciones [restringidas y grupos de aplicaciones](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) para obtener más información. 
+
+#### <a name="microsoft-defender-for-cloud-apps-actions"></a>Acciones de Microsoft Defender para Aplicaciones en la nube
 
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicación
 - Restringir aplicaciones de terceros
 
-#### <a name="on-premises-repositories"></a>Repositorios locales
+#### <a name="on-premises-repositories-actions"></a>Acciones de repositorios locales
 
 - Restringir el acceso o quitar archivos locales
 
@@ -609,7 +646,7 @@ DLP examina el correo electrónico de forma diferente que SharePoint online o On
 
 Si tiene varias reglas en una directiva, puede usar las opciones adicionales  para controlar el procesamiento de reglas adicionales si hay una coincidencia con la regla que está editando, así como establecer la prioridad para la evaluación de la regla.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planear la prevención de pérdida de datos (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)

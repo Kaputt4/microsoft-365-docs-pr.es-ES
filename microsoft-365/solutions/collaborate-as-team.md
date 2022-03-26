@@ -21,18 +21,21 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los pasos de configuración necesarios para Microsoft 365 para configurar un equipo para la colaboración en tareas, conversaciones y documentación con invitados en Teams.
-ms.openlocfilehash: bb6ccf4f3e17192d86675d99072eca8b836973e2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0fd723a86f79f97703eca96c0693882fbc05f13a
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324555"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712914"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
 Si necesita colaborar con invitados en documentos, tareas y conversaciones, le recomendamos que use Microsoft Teams. Teams proporciona todas las características de colaboración disponibles en Office y SharePoint con chat persistente y un conjunto extensible y personalizable de herramientas de colaboración en una experiencia de usuario unificada.
 
 En este artículo, le mostraremos los pasos de configuración necesarios de Microsoft 365 para configurar un equipo de colaboración con invitados. Después de configurar el acceso de invitado, puede añadir invitados a equipos siguiendo los pasos de [Agregar invitados a un equipo en Teams](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f).
+
+> [!NOTE]
+> Los [canales compartidos](collaborate-teams-direct-connect.md) ofrecen una experiencia más fluida que las cuentas de invitado al colaborar con otras organizaciones de Microsoft 365. Los canales compartidos le permiten colaborar con usuarios ajenos a la organización mediante canales de Teams sin necesidad de que los participantes externos inicien sesión en la organización. Le recomendamos que lea [Planear la colaboración externa](plan-external-collaboration.md) para comprobar si los canales compartidos representan una mejor opción antes que colaborar con invitados para un escenario específico.
 
 ## <a name="video-demonstration"></a>Demostración de vídeo
 
@@ -44,7 +47,7 @@ En este vídeo se muestran los pasos de configuración descritos en este documen
 
 El uso compartido en Microsoft 365 se rige en su nivel más alto por la [configuración de colaboración externa B2B en Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). Si el uso compartido con invitados está deshabilitado o restringido en Azure AD, esta configuración invalida cualquier configuración de uso compartido que configure en Microsoft 365.
 
-Compruebe la configuración de colaboración externa B2B para asegurarse de que no se bloquea el uso compartido con invitados.
+Compruebe la configuración de colaboración externa B2B para asegurarse de que no se ha bloqueado el uso compartido con invitados.
 
 ![Captura de pantalla de la página de configuración de relaciones de organización de Azure Active Directory.](../media/azure-ad-organizational-relationships-settings.png)
 
@@ -195,5 +198,3 @@ Para añadir invitados a un equipo
 [Crear una extranet B2B con invitados administrados](b2b-extranet.md)
 
 [Integración de SharePoint y OneDrive con Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
-
-[Las opciones de uso compartido están atenuadas al compartir desde SharePoint o OneDrive](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

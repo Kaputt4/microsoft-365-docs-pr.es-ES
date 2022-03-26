@@ -19,12 +19,12 @@ ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: 034e577b4040e72f32a8e30b3f902c0d0bc2b8f8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a842f9161aa823203354917326653b583e5fddb9
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315391"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754297"
 ---
 # <a name="configure-your-event-hub"></a>Configurar el centro de eventos
 
@@ -37,11 +37,11 @@ Obtén información sobre cómo configurar el Centro de eventos para que pueda i
 
 ## <a name="set-up-the-required-resource-provider-in-the-event-hub-subscription"></a>Configurar el proveedor de recursos necesario en la suscripción al Centro de eventos
 
-1. Inicie sesión en el [portal de Azure](https://portal.azure.com).
-1. Seleccione **Suscripciones** > **{ Seleccione la suscripción que el centro de eventos se implementará en }** > **Proveedores de recursos**.
+1. Inicie sesión en el [Azure Portal](https://portal.azure.com).
+1. Seleccione **Suscripciones** > **{ Seleccione la suscripción que los centros de eventos se implementarán en }** > **Proveedores de recursos**.
 1. Compruebe que **microsoft.Ideas** El proveedor está registrado. De lo contrario, regístrelo.
 
-![Imagen de los proveedores de recursos en Microsoft Azure.](../../media/f893db7a7b1f7aa520e8b9257cc72562.png)
+:::image type="content" source="../../media/f893db7a7b1f7aa520e8b9257cc72562.png" alt-text="La página lista de proveedores de servicios en el portal Microsoft Azure servicio" lightbox="../../media/f893db7a7b1f7aa520e8b9257cc72562.png":::
 
 ## <a name="set-up-azure-active-directory-app-registration"></a>Configurar el registro Azure Active Directory aplicación
 
@@ -51,13 +51,15 @@ Obtén información sobre cómo configurar el Centro de eventos para que pueda i
 
 1. Rellene el formulario con solo el nombre (no se requiere URI de redireccionamiento).
 
-    ![Imagen de registrar una aplicación.](../../media/336bc84e6be23900c43232b4ef0c253c.png)
+    :::image type="content" source="../../media/336bc84e6be23900c43232b4ef0c253c.png" alt-text="Sección para mostrar el nombre de la aplicación en el portal Microsoft Azure aplicación" lightbox="../../media/336bc84e6be23900c43232b4ef0c253c.png":::
 
-    ![Imagen de información general.](../../media/06ac04c4ff713c2065cec2ef2f99a294.png)
+
+    :::image type="content" source="../../media/06ac04c4ff713c2065cec2ef2f99a294.png" alt-text="La sección Información general del portal de Microsoft Azure información general" lightbox="../../media/06ac04c4ff713c2065cec2ef2f99a294.png":::
 
 1. Crear un secreto haciendo clic en **Certificados & secretos nuevo** \> **secreto de cliente**:
 
-    ![Imagen de certificados y secretos.](../../media/d2ef88d3d2310d2c60c294b569cdf02e.png)
+    :::image type="content" source="../../media/d2ef88d3d2310d2c60c294b569cdf02e.png" alt-text="Sección Secreto de cliente en el portal Microsoft Azure cliente" lightbox="../../media/d2ef88d3d2310d2c60c294b569cdf02e.png":::
+    
 
 > [!WARNING]
 > **No podrá volver a tener acceso al secreto de cliente, así que asegúrese de guardarlo**.
@@ -66,22 +68,23 @@ Obtén información sobre cómo configurar el Centro de eventos para que pueda i
 
 1. Crear un espacio de nombres de centro de eventos:
 
-    Vaya **a Event Hubs \> Add** and select the pricing tier, throughput units and Auto-Inflate (requires standard pricing and under features) appropriate for the load you are expecting. Para obtener más información, vea [Pricing - Event Hubs \| Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
+    Vaya **a Agregar centro \>** de eventos y seleccione el nivel de precios, las unidades de rendimiento y la opción Autoinflate (requiere precios estándar y características) adecuadas para la carga que espera. Para obtener más información, vea [Pricing - Event Hub \| Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
 
     > [!NOTE]
-    > Puede usar un centro de eventos existente, pero el rendimiento y el escalado se establecen en el nivel de espacio de nombres, por lo que se recomienda colocar un centro de eventos en su espacio de nombres.
+    > Puede usar un centro de eventos existente, pero el rendimiento y el escalado se establecen en el nivel de espacio de nombres, por lo que se recomienda colocar un centro de eventos en su propio espacio de nombres.
 
-   ![Imagen del espacio de nombres del centro de eventos.](../../media/ebc4ca37c342ad1da75c4aee4018e51a.png)
+   :::image type="content" source="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png" alt-text="Sección de concentradores de eventos en el portal de Microsoft Azure eventos" lightbox="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png":::
 
-1. También necesitará el identificador de recurso de este espacio de nombres de centro de eventos. Vaya a la página de espacio de nombres de Azure Event Hubs Propiedades \> . Copie el texto en Id. de recurso y grabe para usarlo durante la Microsoft 365 configuración siguiente.
+1. También necesitará el identificador de recurso de este espacio de nombres de centro de eventos. Vaya a la página de espacio de nombres del Centro de eventos de Azure Propiedades \> . Copie el texto en Id. de recurso y grabe para usarlo durante la Microsoft 365 configuración siguiente.
 
-    ![Imagen de propiedades.](../../media/759498162a4e93cbf17c4130d704d164.png)
+    :::image type="content" source="../../media/759498162a4e93cbf17c4130d704d164.png" alt-text="La sección de propiedades del centro de eventos en el portal Microsoft Azure eventos" lightbox="../../media/759498162a4e93cbf17c4130d704d164.png":::
 
-1. Una vez creado el espacio de nombres del centro de eventos, deberá agregar la entidad de seguridad del servicio de registro de aplicaciones como Reader, el receptor de datos de Azure Event Hubs y el usuario que inicia sesión en Microsoft 365 Defender como colaborador (también puede hacerlo en el nivel de grupo de recursos o suscripción).
 
-    Realice este paso en **Event Hubs Namespace** \> **Access Control (IAM)** \> **Add** and verify under **Role assignments**:
+1. Una vez creado el espacio de nombres del centro de eventos, deberá agregar la entidad de seguridad del servicio de registro de aplicaciones como Lector, receptor de datos del centro de eventos de Azure y el usuario que inicia sesión en Microsoft 365 Defender como colaborador (también puede hacerlo en el nivel de grupo de recursos o suscripción).
 
-    ![Imagen del control de acceso.](../../media/9c9c29137b90d5858920202d87680d16.png)
+    Realice este paso en **Event Hub Namespace** \> **Access Control (IAM)** \> **Add** and verify under **Role assignments**:
+
+    :::image type="content" source="../../media/9c9c29137b90d5858920202d87680d16.png" alt-text="Sección de entidad de seguridad de servicio de registro de aplicaciones en el portal Microsoft Azure aplicación" lightbox="../../media/9c9c29137b90d5858920202d87680d16.png":::
 
 ## <a name="set-up-event-hub"></a>Configurar el centro de eventos
 
@@ -93,26 +96,27 @@ Puede crear un centro de eventos en el espacio de  nombres y todos los tipos de 
 
 En lugar de exportar todos los tipos de evento (tablas) a un centro de eventos, puede exportar cada tabla a un centro de eventos diferente dentro del espacio de nombres del centro de eventos (un centro de eventos por tipo de evento).
 
-En esta opción, Microsoft 365 Defender creará centros de eventos para usted.
+En esta opción, Microsoft 365 Defender creará el Centro de eventos.
 
 > [!NOTE]
 > Si usa un espacio de nombres de centro de eventos  que no forma parte de un clúster de concentradores de eventos, solo podrá elegir hasta 10 tipos de eventos (tablas) para exportar en cada Configuración de exportación que defina, debido a una limitación de Azure de 10 centros de eventos por espacio de nombres de centro de eventos.
 
 Por ejemplo:
 
-![Imagen del centro de eventos de ejemplo.](../../media/005c1f6c10c34420d387f594987f9ffe.png)
+:::image type="content" source="../../media/005c1f6c10c34420d387f594987f9ffe.png" alt-text="Una sección de centros de eventos en el portal Microsoft Azure eventos" lightbox="../../media/005c1f6c10c34420d387f594987f9ffe.png":::
 
 Si elige esta opción, puede ir a la sección Configurar [Microsoft 365 Defender para enviar tablas de correo](#configure-microsoft-365-defender-to-send-email-tables) electrónico.
 
-Para crear un centro de eventos en el espacio de nombres, seleccione **Event Hubs** \> **+ Event Hub**.
+Para crear el centro de eventos en el espacio de nombres, seleccione **Centro de eventos** \> **+ Centro de eventos**.
 
 El recuento de particiones permite más rendimiento a través del paralelismo, por lo que se recomienda aumentar este número en función de la carga que se espera. Se recomiendan los valores predeterminados de retención y captura de mensajes de 1 y Off.
 
-![Imagen de create Event Hub.](../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png)
+:::image type="content" source="../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png" alt-text="Sección de creación de centros de eventos en el portal Microsoft Azure eventos" lightbox="../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png":::
+ 
 
-Para este Centro de eventos (no espacio de nombres) deberá configurar una directiva de acceso compartido con Enviar, Escuchar notificaciones. Haz clic en las **directivas de acceso** \>  \> compartido del Centro de eventos **+** Agregar y, a continuación, dale un nombre de directiva (no se usa en ningún otro lugar) y comprueba **Enviar** y **escuchar**.
+Para estos Event Hub (no espacio de nombres), deberá configurar una directiva de acceso compartido con Send, Listen Claims. Haz clic en las **directivas de acceso** \>  \> compartido del Centro de eventos **+** Agregar y, a continuación, dale un nombre de directiva (no se usa en ningún otro lugar) y comprueba **Enviar** y **escuchar**.
 
-![Imagen de directivas de acceso compartido.](../../media/1867d13f46dc6a0f4cdae6cf00df24db.png)
+:::image type="content" source="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png" alt-text="La página Directivas de acceso compartido en el portal de Microsoft Azure compartido" lightbox="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png":::
 
 ## <a name="configure-microsoft-365-defender-to-send-email-tables"></a>Configurar Microsoft 365 Defender para enviar tablas de correo electrónico
 
@@ -124,7 +128,7 @@ Para este Centro de eventos (no espacio de nombres) deberá configurar una direc
 
     - Rol de administrador global o de administración de seguridad en el inquilino vinculado a Microsoft 365 Defender y Azure.
 
-    ![Imagen del portal de seguridad.](../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png)
+      :::image type="content" source="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png" alt-text="La Configuración del portal de Microsoft 365 Defender web" lightbox="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png":::
 
 1. Haga clic **en Exportación de datos sin procesar \> +Agregar**.
 
@@ -138,11 +142,11 @@ Para este Centro de eventos (no espacio de nombres) deberá configurar una direc
 
     **Nombre del centro de** eventos: si creó un centro de eventos dentro del espacio de nombres del centro de eventos, pegue el nombre del centro de eventos que registró anteriormente.
 
-    Si decide dejar que Microsoft 365 Defender para crear centros de eventos por tipos de evento (tablas), deje este campo vacío.
+    Si decide dejar que Microsoft 365 Defender centro de eventos por tipos de evento (tablas), deje este campo vacío.
 
     **Tipos de eventos**: selecciona las tablas de búsqueda avanzada que quieres reenviar al Centro de eventos y, a continuación, a la aplicación personalizada. Las tablas de alertas son de Microsoft 365 Defender, las tablas de dispositivos son de Microsoft Defender para endpoint (EDR) y las tablas de correo electrónico son de Microsoft Defender para Office 365. Eventos de correo electrónico registra todas las transacciones de correo electrónico. La dirección URL (vínculos Caja fuerte), datos adjuntos (datos adjuntos de Caja fuerte) y eventos posteriores a la entrega (ZAP) también se registran y se pueden unir a los eventos de correo electrónico en el campo NetworkMessageId.
 
-    ![Imagen de la configuración de la API de streaming.](../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png)
+    :::image type="content" source="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png" alt-text="La página Configuración de la API de streaming en el portal Microsoft Azure web" lightbox="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png":::
 
 1. Asegúrese de hacer clic en **Enviar**.
 
@@ -159,13 +163,13 @@ EmailEvents
 |count
 ```
 
-Esto le mostrará cuántos correos electrónicos se recibieron en la última hora unidos en todas las demás tablas. También le mostrará si está viendo eventos que podrían exportarse al centro de eventos. Si este recuento muestra 0, no verá ningún dato que vaya al Centro de eventos.
+Esto le mostrará cuántos correos electrónicos se recibieron en la última hora unidos en todas las demás tablas. También le mostrará si está viendo eventos que podrían exportarse a los centros de eventos. Si este recuento muestra 0, no verá ningún dato que vaya al Centro de eventos.
 
-![Imagen de la búsqueda avanzada.](../../media/c305e57dc6f72fa9eb035943f244738e.png)
+:::image type="content" source="../../media/c305e57dc6f72fa9eb035943f244738e.png" alt-text="La página de búsqueda avanzada en el portal Microsoft Azure búsqueda" lightbox="../../media/c305e57dc6f72fa9eb035943f244738e.png":::
 
-Una vez que haya comprobado que hay datos que exportar, puede ver el Centro de eventos para comprobar que los mensajes están entrantes. Esto puede tardar hasta una hora.
+Una vez que haya comprobado que hay datos que exportar, puede ver la página centro de eventos para comprobar que los mensajes están entrantes. Esto puede tardar hasta una hora.
 
-1. En Azure, ve a **Event Hubs** \> Click on the **Namespace** \> **Event Hubs** \> Click on the **Event Hub**.
+1. En Azure, vaya a **Centro de eventos Haga** \> clic **en el Centro** \> \> de eventos de espacio de **nombres Haga clic** en el **centro de eventos**.
 1. En **Información** general, desplácese hacia abajo y en el gráfico Mensajes debería ver Mensajes entrantes. Si no ves ningún resultado, no habrá mensajes para que la aplicación personalizada ingieren.
 
-    ![Imagen de la pestaña información general con mensajes.](../../media/e88060e315d76e74269a3fc866df047f.png)
+:::image type="content" source="../../media/e88060e315d76e74269a3fc866df047f.png" alt-text="La página Información general en el Microsoft 365 Azure Portal" lightbox="../../media/e88060e315d76e74269a3fc866df047f.png":::

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 46daf3ecd4c918196fa7a50f8e8869bdd54c945e
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: b5eb295e83e2a87a538201fe58c221f3f9400f97
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504820"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63714925"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -57,6 +57,9 @@ Antes de habilitar etiquetas de confidencialidad para contenedores y establecerl
 Después de habilitar y configurar las etiquetas de confidencialidad para los contenedores, los usuarios también pueden ver y aplicar etiquetas de confidencialidad a los sitios de grupo de Microsoft, los grupos de Microsoft 365 y los sitios de SharePoint. Por ejemplo, cuando crea un nuevo sitio de grupo desde SharePoint:
 
 ![Una etiqueta de sensibilidad al crear un sitio de equipo desde SharePoint.](../media/sensitivity-labels-new-team-site.png)
+
+> [!NOTE]
+> Las etiquetas de confidencialidad para contenedores admiten [canales compartidos de Teams](/MicrosoftTeams/shared-channels), actualmente en versión preliminar. Si un equipo tiene canales compartidos, hereda automáticamente la configuración de etiqueta de confidencialidad de su equipo primario y esa etiqueta no se puede quitar ni reemplazar con una etiqueta diferente.
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>Cómo habilitar etiquetas de confidencialidad para contenedores y sincronizarlas
 

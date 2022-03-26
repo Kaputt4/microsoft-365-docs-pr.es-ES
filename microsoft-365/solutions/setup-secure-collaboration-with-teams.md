@@ -16,13 +16,13 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 recommendations: false
-description: Obtenga información sobre procedimientos recomendados para configurar la colaboración y el uso compartido de archivos Teams proteger los datos en función de su confidencialidad.
-ms.openlocfilehash: 4bf18635b0c345e18c1ed5db8c7072ca6225e33c
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+description: Obtenga información sobre procedimientos recomendados para configurar la colaboración y el uso compartido de archivos seguros en Teams para proteger los datos en función de su confidencialidad.
+ms.openlocfilehash: db1ad7d6d5c62775c696da89c3d771114d48e67e
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064288"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63714961"
 ---
 # <a name="set-up-secure-file-sharing-and-collaboration-with-microsoft-teams"></a>Configurar el uso compartido seguro de archivos y la colaboración con Microsoft Teams
 
@@ -54,7 +54,7 @@ La mayoría de las organizaciones tienen una variedad de información, con disti
 
 La información, como los folletos de marketing, están pensadas para compartirse ampliamente fuera de la organización. La información, como los menús de cafetería, no está pensada para el uso compartido externo, pero no tendría ningún impacto empresarial si se compartiese externamente. Estos tipos de información necesitan poca o ninguna protección.
 
-Esos mismos folletos de marketing, mientras están en desarrollo, solo se pueden compartir dentro de la organización. En este caso, la configuración de uso compartido predeterminada Teams puede ser suficiente.
+Esos mismos folletos de marketing, mientras están en desarrollo, solo se pueden compartir dentro de la organización. En este caso, la configuración de uso compartido predeterminada en Teams puede ser suficiente.
 
 La información sobre un nuevo producto que está en desarrollo puede considerarse confidencial, incluso dentro de la organización. Un mayor grado de protección podría ser apropiado en este caso. Puede restringir el acceso a esta información a los miembros de un equipo específico, por ejemplo. Según el proyecto, es posible que deba colaborar con personas ajenas a la organización, como un proveedor o una organización asociada.
 
@@ -64,13 +64,13 @@ La información que es fundamental para el éxito de su organización o que tien
 
 Para todos los escenarios mencionados anteriormente, puede usar teams en Microsoft Teams almacenar, compartir y colaborar en la información.
 
-Para configurar la colaboración segura, use estas Microsoft 365 y características.
+Para configurar la colaboración segura, use estas Microsoft 365 funcionalidades y características.
 
 |Producto o componente|Funcionalidad o característica|Licencias|
 |---|---|---|
-|Microsoft Defender para Office 365|Caja fuerte datos adjuntos para SPO, OneDrive y Teams; Caja fuerte documentos; Caja fuerte vínculos de Teams|Microsoft 365 E1, E3 y E5|
+|Microsoft Defender para Office 365|Caja fuerte datos adjuntos para SPO, OneDrive y Teams; Caja fuerte documentos; Caja fuerte vínculos para Teams|Microsoft 365 E1, E3 y E5|
 |SharePoint|Directivas de uso compartido de sitios y archivos, permisos de uso compartido de sitios, vínculos de uso compartido, solicitudes de Access, configuración de uso compartido de invitados del sitio|Microsoft 365 E1, E3 y E5|
-|Microsoft Teams|Acceso de invitado, equipos privados, canales privados|Microsoft 365 E1, E3 y E5|
+|Microsoft Teams|Acceso de invitado, equipos privados, canales privados, canales compartidos|Microsoft 365 E1, E3 y E5|
 |Cumplimiento de Microsoft 365|Etiquetas de confidencialidad|Microsoft 365 E3 y E5|
 
 ## <a name="collaboration-governance-framework-for-teams-and-microsoft-365"></a>Marco de gobierno de colaboración para Teams y Microsoft 365
@@ -79,11 +79,11 @@ Microsoft 365 ofrece muchas opciones para gobernar la solución de colaboración
 
 ### <a name="securing-teams-for-sensitive-and-highly-sensitive-data"></a>Protección de Teams datos confidenciales y altamente confidenciales
 
-Para administrar el acceso a la información con diferentes sensibilidades, hemos desarrollado tres niveles de protección diferentes para [Teams](configure-teams-three-tiers-protection.md). Puede personalizar cualquiera de estos niveles para satisfacer mejor las necesidades o su empresa.
+Para administrar el acceso a la información con diferentes sensibilidades, hemos desarrollado tres niveles de protección diferentes [para Teams](configure-teams-three-tiers-protection.md). Puede personalizar cualquiera de estos niveles para satisfacer mejor las necesidades o su empresa.
 
 ![Gráfico de tres niveles de protección para Teams.](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
-Estos niveles *(línea* base, *confidencial* y altamente *confidencial)* aumentan gradualmente las protecciones que ayudan a evitar la sobresharing y la posible pérdida de información, como se muestra en la tabla siguiente.
+Estos *niveles (línea* base, *confidencial* y altamente *confidencial) aumentan* gradualmente las protecciones que ayudan a evitar la sobresharing y la posible pérdida de información, como se muestra en la tabla siguiente.
 
 |-|Nivel de línea base|Nivel confidencial|Nivel altamente confidencial|
 |---|---|---|---|
@@ -99,10 +99,10 @@ La configuración de estos niveles implica:
 
 - Configuración de opciones en Teams acceso de invitado y canales privados
 - Configuración de la configuración en el sitio de SharePoint asociado de un equipo para el uso compartido interno y de invitado, las solicitudes de acceso y los vínculos de uso compartido
-- Para los  *niveles confidenciales* y altamente confidenciales, configurar etiquetas de confidencialidad para clasificar los equipos y controlar el uso compartido de invitados y el acceso desde dispositivos no administrados
+- Para los *niveles confidenciales* y altamente confidenciales, configurar etiquetas de confidencialidad para clasificar los equipos y controlar el uso compartido de invitados y el acceso desde dispositivos no administrados 
 - Para el *nivel altamente* confidencial, configurar una etiqueta de confidencialidad para cifrar los documentos a los que se aplica
 
-Comience con el nivel de línea base  y, a continuación, agregue equipos que usen los niveles confidenciales y altamente *confidenciales* según sea necesario para ayudar a proteger la información de su organización. Vea estos recursos para empezar:
+Comience con el nivel de línea base y, a continuación,  agregue equipos que usen los niveles confidenciales y altamente *confidenciales* según sea necesario para ayudar a proteger la información de su organización. Vea estos recursos para empezar:
 
 - [Configure equipos con la protección de base de referencia](configure-teams-baseline-protection.md)
 - [Configure equipos con protección de datos confidenciales](configure-teams-sensitive-protection.md)
@@ -112,13 +112,14 @@ Si tiene un proyecto altamente confidencial que requiere protección adicional p
 
 ### <a name="sharing-with-people-outside-your-organization"></a>Compartir con personas de fuera de la organización
 
-Es posible que deba [compartir información de cualquier confidencialidad con personas ajenas a su organización.](collaborate-with-people-outside-your-organization.md) Esto puede variar desde compartir un solo documento con una sola persona hasta colaborar en un proyecto importante con una organización de partners grande o independientes de todo el mundo. En Microsoft 365, esta gama de uso compartido externo se puede realizar fácilmente y con las medidas de seguridad adecuadas para ayudar a proteger su información confidencial.
+Es posible que deba [compartir información de cualquier confidencialidad con personas ajenas a su organización](collaborate-with-people-outside-your-organization.md). Esto puede variar desde compartir un solo documento con una sola persona hasta colaborar en un proyecto importante con una organización de partners grande o independientes de todo el mundo. En Microsoft 365, esta gama de uso compartido externo se puede realizar fácilmente y con las medidas de seguridad adecuadas para ayudar a proteger su información confidencial.
 
 Estos recursos le ayudarán a empezar a configurar el entorno para colaborar con personas ajenas a su organización:
 
 - [Colaborar en documentos para](collaborate-on-documents.md) compartir archivos individuales de carpetas.
 - [Colabore en un sitio](collaborate-in-site.md) para colaborar con invitados en un SharePoint web.
 - [Colaborar como equipo para](collaborate-as-team.md) colaborar con invitados en un equipo.
+- [Colaborar con participantes externos en un canal para](/microsoft-365/solutions/collaborate-teams-direct-connect) colaborar con personas fuera de la organización en un canal compartido.
 
 Dependiendo de la confidencialidad de la información que se comparta, puede agregar medidas de seguridad para ayudar a evitar el exceso de compartición. Estos recursos le ayudarán a configurar las protecciones que necesita para su organización:
 
@@ -126,7 +127,7 @@ Dependiendo de la confidencialidad de la información que se comparta, puede agr
 - [Limitar la exposición accidental de archivos al compartirlos con usuarios externos a la organización](share-limit-accidental-exposure.md)
 - [Crear un entorno seguro de uso compartido para invitados](create-secure-guest-sharing-environment.md)
 
-Si tiene un proyecto principal con una organización asociada, puede usar Azure Entitlement Management para administrar los invitados de esa organización en un equipo que haya configurado para el proyecto. Consulte [Crear una extranet B2B con invitados administrados para](b2b-extranet.md) obtener más información.
+Si tiene un proyecto importante con una organización asociada, puede usar canales compartidos o [Azure Entitlement Management](b2b-extranet.md) para administrar las personas fuera de la organización con las que necesita colaborar.[](/microsoft-365/solutions/collaborate-teams-direct-connect)
 
 ## <a name="training-for-administrators"></a>Formación para administradores
 
@@ -136,7 +137,7 @@ Estos módulos de aprendizaje de Microsoft Learn pueden ayudarle a aprender las 
 
 |Aprendizaje:|Administración de la colaboración en grupo con Microsoft Teams|
 |---|---|
-|![Teams de aprendizaje de colaboración.](../media/manage-team-collaboration-with-microsoft-teams.svg)|Administración de la colaboración en grupo con Microsoft Teams le presenta las características y funciones de Microsoft Teams, el núcleo central para la colaboración en grupo de Microsoft 365. Aprenderá cómo puede usar Teams para facilitar el trabajo en equipo y la comunicación dentro de la organización, tanto en un entorno local como externo, en dispositivos muy diversos, desde equipos de escritorio a tabletas y teléfonos, a la vez que aprovecha toda la funcionalidad enriquecida de las aplicaciones de Office 365. Comprenderá cómo Teams ofrece un entorno completo y flexible para la colaboración en aplicaciones y dispositivos. Esta ruta de aprendizaje puede ayudarle a preparar el certificado Microsoft 365 Certified: Teams Administrator Associate.<p>2 h 17 min - Learning path - 5 módulos|
+|![Teams de aprendizaje de colaboración.](../media/manage-team-collaboration-with-microsoft-teams.svg)|Administración de la colaboración en grupo con Microsoft Teams le presenta las características y funciones de Microsoft Teams, el núcleo central para la colaboración en grupo de Microsoft 365. Aprenderá cómo puede usar Teams para facilitar el trabajo en equipo y la comunicación dentro de la organización, tanto en un entorno local como externo, en dispositivos muy diversos, desde equipos de escritorio a tabletas y teléfonos, a la vez que aprovecha toda la funcionalidad enriquecida de las aplicaciones de Office 365. Comprenderá cómo Teams ofrece un entorno completo y flexible para la colaboración en aplicaciones y dispositivos. Esta ruta de aprendizaje puede ayudarle a preparar el certificado Microsoft 365 Certified: Teams Administrator Associate.<p>2 horas 17 min - Learning ruta de acceso - 5 módulos|
 
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
@@ -145,7 +146,7 @@ Estos módulos de aprendizaje de Microsoft Learn pueden ayudarle a aprender las 
 
 |Aprendizaje:|Colaborar con SharePoint en Microsoft 365|
 |---|---|
-|![SharePoint de aprendizaje.](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Administrar el contenido compartido con Microsoft SharePoint le ofrece una introducción a las características y funciones de SharePoint y cómo funciona con Microsoft 365. Obtendrá información sobre los distintos tipos de sitios de SharePoint, incluidos los sitios concentradores, así como la protección de la información, la creación de informes y la supervisión. También obtendrá información sobre cómo emplear el uso compartido de archivos y carpetas de SharePoint para optimizar la colaboración, cómo compartir archivos externamente y cómo administrar sitios de SharePoint en el centro de administración de SharePoint. Esta ruta de aprendizaje puede ayudarle a preparar el certificado Microsoft 365 Certified: Teamwork Administrator Associate.<p>1 h 14 min - Learning path - 4 módulos|
+|![SharePoint de aprendizaje.](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Administrar el contenido compartido con Microsoft SharePoint le ofrece una introducción a las características y funciones de SharePoint y cómo funciona con Microsoft 365. Obtendrá información sobre los distintos tipos de sitios de SharePoint, incluidos los sitios concentradores, así como la protección de la información, la creación de informes y la supervisión. También obtendrá información sobre cómo emplear el uso compartido de archivos y carpetas de SharePoint para optimizar la colaboración, cómo compartir archivos externamente y cómo administrar sitios de SharePoint en el centro de administración de SharePoint. Esta ruta de aprendizaje puede ayudarle a preparar el certificado Microsoft 365 Certified: Teamwork Administrator Associate.<p>1 hora 14 min - Learning de acceso - 4 módulos|
 
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
@@ -154,7 +155,7 @@ Estos módulos de aprendizaje de Microsoft Learn pueden ayudarle a aprender las 
 
 |Aprendizaje:|Proteger la información de la empresa con Microsoft 365|
 |---|---|
-|![Teams de aprendizaje de protección de información.](../media/protect-enterprise-information-microsoft-365.svg)|Proteger y asegurar la información de su organización es más difícil que nunca. La ruta de aprendizaje Proteger la información de la empresa con Microsoft 365 analiza cómo proteger su información confidencial de un uso excesivo o indebido accidental, cómo descubrir y clasificar los datos, cómo protegerlos con etiquetas de sensibilidad y cómo supervisar y analizar su información confidencial para protegerla contra su pérdida. Esta ruta de aprendizaje puede ayudarle a prepararse para las certificaciones Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert.<p>1 hora - Learning de acceso : 5 módulos|
+|![Teams de aprendizaje de protección de información.](../media/protect-enterprise-information-microsoft-365.svg)|Proteger y asegurar la información de su organización es más difícil que nunca. La ruta de aprendizaje Proteger la información de la empresa con Microsoft 365 analiza cómo proteger su información confidencial de un uso excesivo o indebido accidental, cómo descubrir y clasificar los datos, cómo protegerlos con etiquetas de confidencialidad y cómo supervisar y analizar su información confidencial para protegerla contra su pérdida. Esta ruta de aprendizaje puede ayudarle a prepararse para las certificaciones Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<p>1 hora - Learning de acceso - 5 módulos|
 
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/modules/m365-security-info-overview/introduction/)
@@ -163,7 +164,7 @@ Estos módulos de aprendizaje de Microsoft Learn pueden ayudarle a aprender las 
 
 |Aprendizaje:|Proteger la identidad y el acceso con Azure Active Directory|
 |---|---|
-|![Icono de aprendizaje de identidad y acceso.](../media/protect-identity-and-access-with-microsoft-365.svg)|La Ruta de aprendizaje de identidad y acceso cubre las últimas tecnologías de identidad y acceso, herramientas para reforzar la autenticación y orientación sobre la protección de la identidad dentro de su organización. Las tecnologías de acceso e identidad de Microsoft le permiten asegurar la identidad de su organización, ya sea en sus instalaciones o en la nube, y permiten a sus usuarios trabajar de forma segura desde cualquier lugar. Esta ruta de aprendizaje puede ayudarle a preparar los certificados Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<p>2 horas 52 min - Learning de acceso - 6 módulos|
+|![Icono de aprendizaje de identidad y acceso.](../media/protect-identity-and-access-with-microsoft-365.svg)|La Ruta de aprendizaje de identidad y acceso cubre las últimas tecnologías de identidad y acceso, herramientas para reforzar la autenticación y orientación sobre la protección de la identidad dentro de su organización. Las tecnologías de acceso e identidad de Microsoft le permiten asegurar la identidad de su organización, ya sea en sus instalaciones o en la nube, y permiten a sus usuarios trabajar de forma segura desde cualquier lugar. Esta ruta de aprendizaje puede ayudarle a preparar los certificados Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<p>2 h 52 min - Learning ruta de acceso - 6 módulos|
 
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/modules/m365-identity-overview/introduction/)
@@ -203,9 +204,9 @@ La arquitectura lógica de los servicios de productividad en Microsoft 365, una 
 Cuando esté listo para implementar esta solución, siga estos pasos:
 
 1. Configure los [tres niveles de protección diferentes para Teams](configure-teams-three-tiers-protection.md).
-2. Configurar las opciones [para compartir información de cualquier confidencialidad con personas fuera de la organización.](collaborate-with-people-outside-your-organization.md)
+2. Configure las opciones para [compartir información de cualquier confidencialidad con personas ajenas a su organización](collaborate-with-people-outside-your-organization.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Documentación de Seguridad de Microsoft 365](../security/index.yml)
 

@@ -35,7 +35,7 @@
           href: manage-devices-with-intune-overview.md
         - name: Paso 1. Implementar directivas de protección de aplicaciones
           href: manage-devices-with-intune-app-protection.md
-        - name: Paso 2. Inscripción de dispositivos en la administración
+        - name: Paso 2. Inscribir dispositivos en la administración
           href: manage-devices-with-intune-enroll.md
         - name: Paso 3. Configurar directivas de cumplimiento
           href: manage-devices-with-intune-compliance-policies.md
@@ -45,7 +45,7 @@
           href: manage-devices-with-intune-configuration-profiles.md
         - name: Paso 6. Supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad
           href: manage-devices-with-intune-monitor-risk.md
-        - name: Paso 7. Implementación de la prevención de pérdida de datos (DLP) con funcionalidades de protección de la información
+        - name: Paso 7. Implementar la prevención de pérdida de datos (DLP) con funcionalidades de protección de la información
           href: manage-devices-with-intune-dlp-mip.md
     - name: Configurar la colaboración moderna con Microsoft 365
       items:
@@ -67,7 +67,9 @@
           items:
             - name: Información general sobre el uso compartido externo
               href: collaborate-with-people-outside-your-organization.md
-            - name: Escenarios de configuración
+            - name: Planear la colaboración externa
+              href: plan-external-collaboration.md
+            - name: Configuración
               items:
                 - name: Colaborar en documentos
                   href: collaborate-on-documents.md
@@ -75,18 +77,32 @@
                   href: collaborate-in-site.md
                 - name: Colaborar en equipo
                   href: collaborate-as-team.md
+                - name: Colaborar en un canal
+                  href: collaborate-teams-direct-connect.md
+                - name: Habilitar canales compartidos con todas las organizaciones
+                  href: allow-direct-connect-with-all-organizations.md
                 - name: Crear una extranet B2B
                   href: b2b-extranet.md
-                - name: Limitar el uso compartido
-                  href: microsoft-365-limit-sharing.md
-            - name: Escenarios de seguridad
+                - name: Confiar en el acceso condicional de otras organizaciones
+                  href: trust-conditional-access-from-other-organizations.md
+            - name: Limitar el uso compartido
               items:
-                - name: Uso compartido no autenticado
-                  href: best-practices-anonymous-sharing.md
+                - name: Limitar quién puede invitar a invitados
+                  href: limit-who-can-invite-guests.md
+                - name: Limitar a quién puede invitar una organización
+                  href: limit-invitations-from-specific-organization.md
+                - name: Limitar el uso compartido de invitados a organizaciones específicas
+                  href: limit-guest-sharing-to-specific-organization.md
+                - name: Limitar las organizaciones donde se pueden invitar a usuarios
+                  href: limit-organizations-where-users-have-guest-accounts.md
                 - name: Limitar la exposición accidental
                   href: share-limit-accidental-exposure.md
-                - name: Crear un entorno seguro de uso compartido para invitados
-                  href: create-secure-guest-sharing-environment.md
+                - name: Limitar el uso compartido
+                  href: microsoft-365-limit-sharing.md
+            - name: Crear un entorno seguro de uso compartido para invitados
+              href: create-secure-guest-sharing-environment.md
+            - name: Uso compartido no autenticado
+              href: best-practices-anonymous-sharing.md
             - name: Referencia de uso compartido externo
               href: microsoft-365-guest-settings.md
     - name: "Implementar la protección contra ransomware para el inquilino de Microsoft\_365"
@@ -149,9 +165,9 @@
                   href: ../admin/add-users/remove-former-employee-step-2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: Paso 3. Borrar y bloquear el dispositivo móvil de un antiguo empleado
                   href: ../admin/add-users/remove-former-employee-step-3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-                - name: Paso 4. Reenviar el correo electrónico de un antiguo empleado a otro empleado o convertir en un buzón compartido
+                - name: Paso 4. Reenviar el correo electrónico de un antiguo empleado a otro empleado o convertirlo en un buzón compartido
                   href: ../admin/add-users/remove-former-employee-step-4.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-                - name: Paso 5. Proporcionar acceso a otro empleado a OneDrive y a los datos de Outlook
+                - name: Paso 5. Dar a otro empleado acceso a los datos de OneDrive y Outlook
                   href: ../admin/add-users/remove-former-employee-step-5.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: Paso 6. Quitar la licencia de Microsoft 365 a un exempleado
                   href: ../admin/add-users/remove-former-employee-step-6.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json

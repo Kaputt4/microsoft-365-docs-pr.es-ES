@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: ac57859d7f27b22060b88189e79d386791535c9e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a7498685709dfc24feae61453057d51025ee9168
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319397"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716307"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -117,6 +117,9 @@ Las directivas de retención se pueden aplicar a las siguientes ubicaciones:
 - Mensajes del canal privado de Teams
 - Mensajes de la comunidad de Yammer
 - Mensajes del usuario de Yammer
+
+> [!NOTE]
+> Los mensajes de canal de Teams ahora incluyen tanto [canales compartidos](/MicrosoftTeams/shared-channels) (actualmente en versión preliminar), como canales estándar.
 
 Puede aplicar una sola directiva en varias ubicaciones, o bien en determinadas ubicaciones o usuarios.
 

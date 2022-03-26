@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el SharePoint de uso del sitio para saber cuántos archivos almacenan los usuarios en SharePoint sitios, cuántos se usan activamente y el almacenamiento total consumido.
-ms.openlocfilehash: da857d1814bf0aa27532d3f730d352c6edeb66e9
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: ae25562924f569431b3a6d7eda3099f69cd912b1
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400689"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754221"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365 informes en el Centro de administración: SharePoint uso del sitio
 
@@ -80,7 +80,7 @@ El **SharePoint de** uso del sitio web se puede ver para ver las tendencias de l
 |Directiva de dispositivos no administrados  | La directiva de acceso al sitio para dispositivos no administrados.  |
 |Ubicación geográfica  | Ubicación geográfica del sitio.  |
 |Archivos  |El número de archivos del sitio. |
-|Archivos activos  | Número de archivos activos en el sitio.<br/> NOTA: Si los archivos se quitaron durante el período de tiempo especificado para el informe, el número de archivos activos que se muestran en el informe puede ser mayor que el número actual de archivos en el sitio.  |
+|Archivos activos  | Número de archivos activos en el sitio. Un archivo se considera activo si se guardó, sincronizó, modificó o compartió dentro del período de tiempo especificado.<br/> NOTA: Si los archivos se quitaron durante el período de tiempo especificado para el informe, el número de archivos activos que se muestran en el informe puede ser mayor que el número actual de archivos en el sitio.  |
 |Storage usado (MB)  |La cantidad de almacenamiento que se usa actualmente en el sitio.  |
 |Storage asignado (MB)  |La cantidad máxima de almacenamiento asignada al sitio.  |
 |Vistas de página  |El número de veces que se han visto las páginas en el sitio.  |

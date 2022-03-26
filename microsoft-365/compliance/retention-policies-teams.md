@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: d3562126a678e486fd97f3c760841f9ba4de7193
-ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
+ms.openlocfilehash: fc870050b8ef69a908553617d755412d95efa288
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62859294"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63714882"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -43,6 +43,9 @@ Para otras cargas de trabajo, vea:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Qué se incluye para la retención y eliminación
 
+> [!NOTE]
+> Las directivas de retención ahora admiten [canales compartidos](/MicrosoftTeams/shared-channels), actualmente en versión preliminar. Los canales compartidos heredan la configuración de retención del canal primario.
+
 Los mensajes de los chats de Teams, los mensajes de canal y los mensajes de canal privado se pueden eliminar mediante directivas de retención para Teams y, además del texto de los mensajes, se pueden conservar los elementos siguientes por motivos de cumplimiento: imágenes incrustadas, tablas, vínculos de hipertexto, vínculos a otros mensajes y archivos de Teams y [contenido de tarjetas](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Los mensajes de chat y los mensajes de canal privado incluyen todos los nombres de las personas de la conversación, y los mensajes de canal incluyen el nombre del equipo y el título del mensaje (si se proporciona). 
 
 Los fragmentos de código, notas de voz grabadas del cliente móvil de Teams, las miniaturas, las imágenes de anuncios y las reacciones de otros usuarios en forma de emoticonos no se conservan cuando usa las directivas de retención para Teams.
@@ -60,6 +63,7 @@ Estos buzones se muestran según su atributo RecipientTypeDetails:
 - **UserMailbox**: estos buzones almacenan datos de mensajes para los usuarios de Teams basados en la nube.
 - **MailUser**: estos buzones almacenan datos de mensajes para los [usuarios locales de Teams](search-cloud-based-mailboxes-for-on-premises-users.md).
 - **GroupMailbox**: Estos buzones almacenan los datos de los mensajes de los canales estándar de los equipos.
+- **SubstrateGroup**: estos buzones almacenan datos de mensajes para los canales de Teams compartidos.
 
 Otros tipos de buzones, como RoomMailbox —que se usa en las salas de conferencias de Teams— no son compatibles con las directivas de retención de Teams.
 

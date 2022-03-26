@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9cc2b77c9983fecc6e58be515fe316c6c5239fef
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 35bd11ac88859c3e587771552a02097a2f090a44
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317785"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712892"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>Detección de señales de canal con cumplimiento de comunicaciones
 
@@ -33,7 +33,14 @@ Con las directivas de cumplimiento de comunicaciones, puede elegir examinar mens
 
 Se pueden examinar las comunicaciones de chat en canales Microsoft Teams públicos y privados y chats individuales. Cuando los usuarios se asignan a una directiva de cumplimiento de comunicaciones con una cobertura Microsoft Teams seleccionada, las comunicaciones de chat para los usuarios se supervisan automáticamente en todos los Microsoft Teams donde los usuarios son miembros. Microsoft Teams cobertura se incluye automáticamente para plantillas de directiva predefinidas y se selecciona de forma predeterminada en la plantilla de directiva personalizada. Teams chats que coincidan con las condiciones de la directiva de cumplimiento de comunicaciones pueden tardar hasta 48 horas en procesarse.
 
-Para los canales privados y de chat privado, las directivas de cumplimiento de comunicación admiten el examen de datos adjuntos modernos. Los datos adjuntos modernos son archivos [procedentes OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) o [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) que se incluyen en Teams mensajes. El texto se extrae automáticamente de estos datos adjuntos para el procesamiento automatizado y posibles coincidencias con las condiciones y clasificadores de directivas de cumplimiento de comunicaciones activas. No hay ninguna configuración adicional necesaria para la detección y procesamiento de datos adjuntos modernos. El texto solo se extrae para datos adjuntos que coincidan con las condiciones de la directiva. El texto no se extrae para datos adjuntos de mensajes con coincidencias de directiva, incluso si los datos adjuntos también tienen una coincidencia de directiva.
+Para chat privado y canales privados, las directivas de cumplimiento de comunicación admiten [canales compartidos](/MicrosoftTeams/shared-channels) y análisis de datos adjuntos modernos. La compatibilidad con canales compartidos Teams se controla automáticamente y no requiere cambios adicionales en la configuración de cumplimiento de comunicaciones. En la tabla siguiente se resume el comportamiento de cumplimiento de la comunicación al compartir Teams canales con grupos y usuarios:
+
+|**Escenario**|**Comportamiento de cumplimiento de comunicaciones**|
+|:-----------|:------------------------------------|
+| **Compartir un canal con un equipo interno** | Las directivas de cumplimiento de comunicación se aplican a los usuarios del ámbito y a todos los mensajes del canal compartido |
+| **Compartir un canal con un equipo externo** | Las directivas de cumplimiento de comunicación se aplican a los usuarios internos del ámbito y a los mensajes en el canal compartido de la organización interna |
+
+Los datos adjuntos modernos son archivos [procedentes OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) o [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) que se incluyen en Teams mensajes. El texto se extrae automáticamente de estos datos adjuntos para el procesamiento automatizado y posibles coincidencias con las condiciones y clasificadores de directivas de cumplimiento de comunicaciones activas. No hay ninguna configuración adicional necesaria para la detección y procesamiento de datos adjuntos modernos. El texto solo se extrae para datos adjuntos que coincidan con las condiciones de la directiva. El texto no se extrae para datos adjuntos de mensajes con coincidencias de directiva, incluso si los datos adjuntos también tienen una coincidencia de directiva.
 
 El examen de datos adjuntos modernos es compatible con los siguientes tipos de archivo:
 

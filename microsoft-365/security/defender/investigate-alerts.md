@@ -1,5 +1,5 @@
 ---
-title: Investigar alertas en Microsoft 365 Defender
+title: Investigar alertas con Microsoft 365 Defender
 description: Investigar las alertas que se ven en dispositivos, usuarios y buzones.
 keywords: incidentes, alertas, investigar, analizar, responder, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365
 ms.prod: m365-security
@@ -21,25 +21,29 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: ce75fff753acfa9d5e183154e09805b04d7523da
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 41583a89abc3418799263dc46643fbe06a07e818
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321461"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712848"
 ---
-# <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
+# <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas con Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+
+- Microsoft 365 Defender
+
+>[!Note]
+>En este artículo se describen las alertas de seguridad Microsoft 365 Defender. Sin embargo, puedes usar alertas de actividad para enviar notificaciones por correo electrónico a ti mismo u otros administradores cuando los usuarios realizan actividades específicas en Microsoft 365. Para obtener más información, vea [Create activity alerts - Microsoft 365 Compliance | Microsoft Docs](../../compliance/create-activity-alerts.md).
 
 Las alertas son la base de todos los incidentes e indican la aparición de eventos malintencionados o sospechosos en su entorno. Las alertas suelen formar parte de un ataque más amplio y proporcionan pistas sobre un incidente.
 
-En Microsoft 365 Defender, las alertas relacionadas se agregan juntas para formar [incidentes](incidents-overview.md). Los incidentes siempre proporcionarán el contexto más amplio de un ataque, sin embargo, el análisis de alertas puede ser útil cuando se requiere un análisis más profundo. 
+En Microsoft 365 Defender, las alertas relacionadas se agregan juntas para formar [incidentes](incidents-overview.md). Los incidentes siempre proporcionarán el contexto más amplio de un ataque, sin embargo, el análisis de alertas puede ser útil cuando se requiere un análisis más profundo.
 
-La **cola De alertas** muestra el conjunto actual de alertas. Puede acceder a la cola de **alertas desde Incidentes & alertas > alertas en** el inicio rápido del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender web</a>.
+La **cola De alertas** muestra el conjunto actual de alertas. Puede acceder a la cola de **alertas desde Incidentes & alertas > alertas en** el inicio rápido del [portal de Microsoft 365 Defender web](https://go.microsoft.com/fwlink/p/?linkid=2077139).
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Ejemplo de la cola de alertas en el Microsoft 365 Defender web":::
 
@@ -204,11 +208,11 @@ Para ver el proceso detallado paso a paso, vea el vídeo [aquí](https://www.mic
 
 En este vídeo también se describe cómo conectar power automate a Defender for Cloud Apps.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)

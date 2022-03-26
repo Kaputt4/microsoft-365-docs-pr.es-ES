@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga más información sobre las opciones disponibles para crear un entorno seguro de uso compartido para invitados en Microsoft 365, al proporcionar accesos de invitado para mejorar la colaboración.
-ms.openlocfilehash: 97b9c3c26fce137ad4471bbf080d4b7340c8b622
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 13190f2dba0f2cb1f4817a1a831b8d78359e1b81
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323799"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715149"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Crear un entorno seguro de uso compartido para invitados
 
@@ -143,7 +143,7 @@ Crear una revisión de acceso de invitados
 13. Escriba un **Nombre de revisión** y revise la configuración.
 14. Haga clic en **Crear**.
 
-Es importante tener en cuenta que, para las ubicaciones de SharePoint y OneDrive, los documentos se bloquearán de forma proactiva en cuanto se detecte información confidencial (independientemente de si el documento se comparte o no), para todos los usuarios externos, mientras que los usuarios internos seguirán teniendo acceso al documento.
+Es importante tener en cuenta que, para las ubicaciones de SharePoint y OneDrive, los documentos se bloquearán de forma proactiva en cuanto se detecte información confidencial (independientemente de si el documento se comparte o no), para todos los invitados, mientras que los usuarios internos seguirán teniendo acceso al documento.
 
 ### <a name="more-information"></a>Más información
 
@@ -283,7 +283,10 @@ Crear una regla DLP
 13. Elija las opciones de prueba y haga clic en **Siguiente**.
 14. Haga clic en **Enviar** y después en **Listo**.
 
-Es importante tener en cuenta que esta directiva no retira el acceso si el invitado es miembro del sitio o del equipo en general. Si prevé disponer de documentos altamente confidenciales en un sitio o equipo con miembros invitados, considere usar [Canales privados en Teams](https://support.microsoft.com/office/de3e20b0-7494-439c-b7e5-75899ebe6a0e) y solo permitir que los miembros de su organización los usen.
+Es importante tener en cuenta que esta directiva no retira el acceso si el invitado es miembro del sitio o del equipo en general. Si cree que tendrá documentos altamente confidenciales en un sitio o equipo con miembros invitados, considere estas opciones:
+
+- Use [canales privados](/MicrosoftTeams/private-channels) y solo permita a los miembros de su organización en los canales privados.
+- Use [canales compartidos](/MicrosoftTeams/shared-channels) para colaborar con personas ajenas a su organización mientras solo tiene personas de su organización en el propio equipo.
 
 ## <a name="additional-options"></a>Opciones adicionales
 

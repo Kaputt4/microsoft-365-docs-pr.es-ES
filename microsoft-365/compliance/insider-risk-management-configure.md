@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: e21d2904ec2afdcd57b69267f99af6a0726dca56
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cdd368e7e78458067b9f363d41f7931ac5a2c0cd
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314635"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754198"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -50,7 +50,7 @@ Si no tienes un plan de Microsoft 365 Enterprise E5 existente y quieres probar l
 
 ## <a name="recommended-actions-preview"></a>Acciones recomendadas (versión preliminar)
 
-Las acciones recomendadas pueden ayudar a su organización a empezar rápidamente y a sacar el máximo partido de las capacidades de administración de riesgos de insider. Incluidas **en la página** Información general, las acciones recomendadas ayudan a guiarle a través de los pasos para configurar e implementar directivas y para realizar acciones de investigación para acciones de usuario que generen alertas a partir de coincidencias de directivas.
+Las acciones recomendadas pueden ayudar a su organización a obtener rápidamente la administración de riesgos de insider. Incluidas en la **página Información** general, las acciones recomendadas le guiarán a través de los pasos para configurar e implementar directivas.
 
 ![Acciones recomendadas para la administración de riesgos internos.](../media/insider-risk-recommended-actions.png)
 
@@ -62,9 +62,6 @@ Las siguientes recomendaciones están disponibles para ayudarle a empezar a usar
 - **Buscar posibles riesgos de insider**: ejecute un examen de análisis para detectar posibles riesgos de insider que se produzcan en su organización. Después de evaluar los resultados, revise las directivas recomendadas para configurar.
 - **Asignar permisos a** otros usuarios: si hay miembros del equipo adicionales que serán responsables de administrar las características de riesgo de insider, deberá asignarlos a los grupos de roles adecuados.
 - **Cree la primera** directiva: para recibir alertas sobre actividades potencialmente arriesgadas, debe configurar directivas basadas en plantillas predefinidas que definan las actividades de usuario que desea detectar e investigar.
-- **Revisar el usuario cuya** actividad se está puntuando:  el panel Usuarios permite ver los usuarios cuya actividad está asignada actualmente a puntuaciones de riesgo, independientemente de si esa actividad ha cumplido el umbral para generar una alerta.
-- **Revisar alertas**: después de que se produzca un evento desencadenante para un usuario, las directivas comienzan a asignar puntuaciones de riesgo a la actividad detectada. Si una puntuación de riesgo cumple los umbrales de una directiva, verá una alerta que contiene un desglose detallado de toda la actividad que se va a puntuar para ese usuario.
-- **Investigar un caso**: los casos se crean manualmente a partir de alertas cuando se necesita más investigación para identificar posibles riesgos de información interna. Cada caso está en el ámbito de un único usuario y se pueden agregar varias alertas para el usuario a un caso existente o a un nuevo caso.
 
 Cada acción recomendada incluida en esta experiencia tiene cuatro atributos:
 

@@ -1,0 +1,115 @@
+---
+title: Colaborar con participantes externos en un canal
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
+audience: ITPro
+ms.topic: article
+ms.prod: microsoft-365-enterprise
+ms.collection:
+- SPO_Content
+- M365-collaboration
+- m365solution-3tiersprotection
+- m365solution-securecollab
+- m365initiative-externalcollab
+ms.custom: ''
+localization_priority: Priority
+f1.keywords: NOCSH
+recommendations: false
+description: Obtenga información sobre cómo usar canales compartidos con personas ajenas a su organización.
+ms.openlocfilehash: 1e14e83f82574f0ef944db56929fda8aded90d16
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716088"
+---
+# <a name="collaborate-with-external-participants-in-a-channel"></a>Colaborar con participantes externos en un canal
+
+Si desea permitir que los usuarios colaboren con personas ajenas a su organización en [canales compartidos](/MicrosoftTeams/shared-channels), debe configurar la conexión directa B2B para cada organización con la que quiera colaborar. (Como alternativa, puede [Habilitar canales compartidos con todas las organizaciones externas](/microsoft-365/solutions/allow-direct-connect-with-all-organizations)).
+
+Al habilitar canales compartidos con otra organización:
+
+- Los propietarios de equipos de su organización podrán invitar a personas de otras organizaciones a participar en canales compartidos.
+- Las aplicaciones personalizadas (línea de negocio) de su organización estarán disponibles en los canales compartidos y los participantes externos podrán acceder a ellas.
+- La lista de aplicaciones de su organización estará disponible en los canales compartidos y los participantes externos podrán acceder a ellas.
+
+> [!NOTE]
+> Los canales compartidos están en versión preliminar y requieren que haya configurado [Versión preliminar pública de Microsoft Teams](/MicrosoftTeams/public-preview-doc-updates). Si planea compartir canales con otras organizaciones, también deben haber configurado la versión preliminar pública de Teams.
+
+## <a name="enable-shared-channels-in-teams"></a>Habilitar canales compartidos en Teams
+
+Los canales compartidos están habilitados de forma predeterminada en Teams. Siga este procedimiento para confirmar la configuración.
+
+Para configurar canales compartidos
+1. En el [Center de administración de Teams](https://admin.teams.microsoft.com/), expanda **Equipos** y, a continuación, seleccione **Administrador de Teams**.
+1. Seleccione la directiva para la que desea habilitar los canales compartidos y, a continuación, seleccione **Editar**.
+1. Seleccione las opciones que desea habilitar:
+    - Para permitir que los propietarios del equipo creen canales compartidos, active **Crear canales compartidos**.
+    - Para permitir que los propietarios del equipo compartan canales compartidos con personas ajenas a la organización, active **Compartir canales compartidos externamente**.
+    - Para permitir que se invite a usuarios a canales compartidos de otras organizaciones, active **Permitido invitar a canales compartidos externos**.
+1. Seleccione **Aplicar**.
+
+## <a name="configure-cross-tenant-access-settings-in-azure-ad"></a>Configurar el acceso entre inquilinos en Azure AD
+
+La conexión directa B2B de Azure AD está deshabilitada de forma predeterminada. Para habilitar la colaboración en canales compartidos con personas de otras organizaciones, debe:
+
+1. [Agregar una organización](#add-an-organization).
+1. [Configurar la configuración de entrada](#configure-inbound-settings) para que la organización permita invitar a los usuarios de la organización a los canales compartidos.
+1. [Configurar la configuración de salida](#configure-outbound-settings) para que la organización permita invitar a los usuarios a los canales compartidos de otra organización.
+
+Como parte de esta configuración, habilitamos la aplicación **Office 365**, que incluye Teams y servicios integrados en Teams, como SharePoint.
+
+> [!NOTE]
+> Los cambios en la configuración de acceso entre inquilinos pueden tardar dos horas en surtir efecto.
+
+### <a name="add-an-organization"></a>Agregar una organización
+
+Agregue cada organización con la que quiera participar en canales compartidos.
+
+Para agregar una organización
+1. Inicie sesión en [Azure Active Directory](https://aad.portal.azure.com) con una cuenta de administrador global o administrador de seguridad.
+1. Seleccione **Identidades externas** y, a continuación, seleccione **Configuración de acceso entre inquilinos (versión preliminar)**.
+1. Seleccione **Configuración de la organización**.
+1. Seleccione **Agregar organización**.
+1. En el panel **Agregar organización**, escriba el nombre de dominio completo (o id. de inquilino) de la organización.
+1. Seleccione la organización en los resultados de la búsqueda y, a continuación, seleccione **Agregar**.
+1. La organización aparece en la lista **Configuración de la organización**. En este momento, toda la configuración de acceso de esta organización se hereda de la configuración predeterminada.
+
+### <a name="configure-inbound-settings"></a>Configurar opciones de entrada
+
+Siga este procedimiento para cada organización en la que quiera invitar a participantes externos.
+
+Para configurar las opciones de entrada de una organización
+1. En [Azure Active Directory](https://aad.portal.azure.com), seleccione **Identidades externas** y, a continuación, seleccione **Configuración de acceso entre inquilinos (versión preliminar)**.
+1. Seleccione el vínculo de acceso de entrada para la organización que desea modificar.
+1. En la pestaña **Conexión directa B2B**, elija **Personalizar configuración**.
+1. En la pestaña **Usuarios y grupos externos**, elija **Permitir acceso** y **Todos los usuarios y grupos**.
+1. En la pestaña **Aplicaciones**, elija **Permitir acceso** y **Seleccionar aplicaciones**.
+1. Seleccione **Agregar aplicaciones de Microsoft**.
+1. Seleccione la aplicación **Office 365** y, a continuación, elija **Seleccionar**.
+1. Seleccione **Guardar** y cierre la hoja **Configuración de acceso de salida**.
+
+### <a name="configure-outbound-settings"></a>Configurar opciones de salida
+
+Siga este procedimiento para cada organización en la que quiera que los usuarios puedan participar en canales compartidos externos.
+
+Para configurar las opciones de salida de una organización
+1. En [Azure Active Directory](https://aad.portal.azure.com), seleccione **Identidades externas** y, a continuación, seleccione **Configuración de acceso entre inquilinos (versión preliminar)**.
+1. Seleccione el vínculo de acceso de salida de la organización que desea modificar.
+1. En la pestaña **Conexión directa B2B**, elija **Personalizar configuración**.
+1. En la pestaña **Usuarios y grupos externos**, elija **Permitir acceso** y establezca un **Destino** de todos los usuarios.
+1. En la pestaña **Aplicaciones externas**, elija **Permitir acceso** y **Seleccionar aplicaciones externas**.
+1. Seleccione **Agregar aplicaciones de Microsoft**.
+1. Seleccione la aplicación **Office 365** y, a continuación, elija **Seleccionar**.
+1. Seleccione **Guardar** y cierre la hoja **Configuración de acceso de salida**.
+
+## <a name="see-also"></a>Vea también
+
+[Información general sobre la conexión directa B2B](/azure/active-directory/external-identities/b2b-direct-connect-overview)
+
+[Configurar la configuración de acceso entre inquilinos para la conexión directa B2B](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-direct-connect)
+
+[Limitar a quién puede invitar una organización](limit-invitations-from-specific-organization.md)
+
+[Límites de canales compartidos](/MicrosoftTeams/shared-channels#shared-channel-limits)

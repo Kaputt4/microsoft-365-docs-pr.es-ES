@@ -1,25 +1,30 @@
 ---
 title: Cuaderno de estrategias de prueba para soluciones de Cumplimiento de Microsoft 365
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
-ROBOTS: 'NOINDEX, NOFOLLOW'
+ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
-  - MOE150
-  - MET150
+- MOE150
+- MET150
 description: Cuaderno de estrategias de prueba para soluciones de Cumplimiento de Microsoft 365.
+ms.openlocfilehash: 896e3fe81c74cc2a594ab88807e0b9505fed1a18
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754247"
 ---
-
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Cumplimiento de Microsoft 365
 
-Le damos la bienvenida al cuaderno de estrategias de prueba para soluciones de cumplimiento de Microsoft 365. Este cuaderno de estrategias le ayudará a sacar el máximo partido de su evaluación gratuita de 90 días, ya que le permitirá a descubrir funcionalidades sólidas y completas de los productos de cumplimiento y seguridad de Microsoft 365.
+Le damos la bienvenida al cuaderno de estrategias de la prueba de soluciones de cumplimiento de Microsoft 365. Este cuaderno le ayudará a sacar el máximo partido de su evaluación gratuita de 90 días, ya que le permitirá descubrir funcionalidades sólidas y completas de los productos de cumplimiento y seguridad de Microsoft 365.
 
 Probar cada solución le ayudará a tomar decisiones informadas para satisfacer las necesidades de cumplimiento de su organización.
 
@@ -73,7 +78,7 @@ Las directivas de retención de registros de auditoría forman parte de las nuev
 
 1. Antes de crear una directiva de retención de registros de auditoría: [aspectos clave que debe conocer](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) antes de crear la directiva.
 1. [Crear una directiva de retención de registros de auditoría](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
-1. [Administrar directivas de retención de registros de auditoría en el Centro de cumplimiento de Microsoft 365](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center): las directivas de retención de registros de Auditoría se muestran en la pestaña Directivas de retención de Auditoría (también denominada panel). Puede usar el panel para ver, editar y eliminar directivas de retención de auditoría.
+1. [Administrar directivas de retención de registros de auditoría en el Centro de cumplimiento de Microsoft 365](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center): las directivas de retención de registros de Auditoría se muestran en la pestaña Directivas de retención de Auditoría (también denominada panel). Puede usar el panel para ver, editar y eliminar directivas de retención de auditoría.
 1. Creación y administración de directivas de retención de registros de auditoría en PowerShell: también puede usar el Centro de seguridad y cumplimiento de PowerShell para [crear y administrar directivas de retención de registros de auditoría](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell). Uno de los motivos para usar PowerShell es crear una directiva para un tipo de registro o actividad que no esté disponible en la interfaz de usuario.
 
 ## <a name="communication-compliance"></a>Cumplimiento de la comunicación
@@ -93,7 +98,7 @@ El Cumplimiento de comunicaciones le ayuda a identificar de forma inteligente la
 > [!TIP]
 > Procedimiento recomendado de prueba: configuración en los primeros 30 días
 
-Para utilizar esta característica, active la auditoría para que su organización pueda empezar a registrar la actividad de administrador y usuario en su organización. Al activarla, la actividad se anotará en el registro de auditoría y estará disponible para su visualización en un informe. Para obtener más información, consulte [Activar o desactivar la búsqueda en el registro de auditoría](turn-audit-log-search-on-or-off.md).
+Para utilizar esta característica, active la auditoría para que su organización pueda empezar a registrar las actividades tanto de administrador como de usuario. Al activarse, las actividades se anotarán en el registro de auditoría y estarán disponibles para su visualización en un informe. Para obtener más información, consulte [Activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
 
 ### <a name="step-3-create-a-communication-compliance-policy"></a>Paso 3: [Crear una directiva de cumplimiento de comunicaciones](communication-compliance-policies.md)
 
@@ -231,7 +236,7 @@ Más organizaciones usan la solución eDiscovery avanzado en Microsoft 365 para 
 
 1. Administrar eDiscovery avanzado: [aprender a configurar eDiscovery avanzado, administrar casos mediante el Centro de seguridad y cumplimiento, administrar un flujo de trabajo en eDiscovery avanzado y analizar los resultados de búsqueda de eDiscovery avanzado](/learn/modules/manage-advanced-ediscovery).
 1. [Crear un caso de eDiscovery con el nuevo formato de caso de eDiscovery avanzado](advanced-ediscovery-new-case-format.md)
-1. [Cerrar o eliminar un caso](close-or-delete-case.md): cuando se complete el caso legal o la investigación, puede cerrarlos o eliminarlos. También puede volver a abrir un caso cerrado.
+1. [Cerrar o eliminar un caso](close-or-delete-case.md): cuando el caso o la investigación hayan terminado, puede cerrarlos o eliminarlos. También puede volver a abrir un caso cerrado.
 
 ### <a name="step-3-optional-settings"></a>Paso 3 (opcional): configuración
 
@@ -271,7 +276,7 @@ Implemente Microsoft Information Protection y etiquetas de confidencialidad para
 > [!TIP]
 > Procedimiento recomendado de prueba: día 1
 
-Los clientes elegibles pueden activar las etiquetas y directivas predeterminadas para Microsoft Information Protection. Al habilitar la configuración predeterminada en la versión de prueba, tardará unos 2 minutos en configurar todas las directivas del inquilino y hasta 24 horas en ver los resultados de estas directivas predeterminadas.
+Los clientes aptos pueden activar etiquetas y directivas predeterminadas para Microsoft Information Protection. Al habilitar la configuración predeterminada en la versión de prueba, tardará unos 2 minutos en configurar todas las directivas del espacio empresarial y hasta 24 horas en ver los resultados de estas directivas predeterminadas.
 
 Al elegir la configuración predeterminada, con 1 clic, se configura automáticamente lo siguiente:
 
@@ -311,7 +316,7 @@ Cuando esté listo para ejecutar la directiva sin simulación, seleccione la opc
 
 **Detectar y corregir los riesgos internos**
 
-Aproveche la inteligencia artificial para ayudarle a identificar, evaluar y corregir rápidamente los riesgos internos. Con los registros de Microsoft 365 y los servicios de Azure, puede definir directivas que supervisen las señales de riesgo interno y luego realizar acciones de corrección, como promover la formación de los usuarios o iniciar una investigación.
+Aproveche la inteligencia artificial para identificar, evaluar y corregir rápidamente los riesgos internos. Con los registros de Microsoft 365 y los servicios de Azure, puede definir directivas que supervisen las señales de riesgo interno y luego realizar acciones de corrección, como promover la formación de los usuarios o iniciar una investigación.
 
 ### <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>Paso 1 (obligatorio): [Habilitar permisos para la administración de riesgos internos](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
 
@@ -429,6 +434,6 @@ Identifique y proteja de forma proactiva los riesgos para la privacidad, como el
 
 **¿Qué se incluye?**: para obtener una lista completa de las características y soluciones de cumplimiento de Microsoft 365 enumeradas por nivel de producto, vea la [Feature Matrix](https://go.microsoft.com/fwlink/?linkid=2139145).
 
-**Biblioteca de contenido técnico de Seguridad de Microsoft**: explore esta biblioteca para buscar guías interactivas y otro contenido de aprendizaje relevante para sus necesidades. [Visitar la biblioteca](/security/content-library).
+**Biblioteca de contenido técnico de Seguridad de Microsoft**: explore esta biblioteca para buscar guías interactivas y otro contenido de aprendizaje que se adecue a sus necesidades. [Visitar la biblioteca](/security).
 
-**Recursos de Seguridad de Microsoft**: desde antimalware hasta Confianza cero, obtenga todos los recursos pertinentes para las necesidades de seguridad de su organización. [Visitar recursos](/security/business/resources).
+**Recursos de Seguridad de Microsoft**: desde antimalware hasta Confianza cero, obtenga todos los recursos que se adecuan a las necesidades de seguridad de su organización. [Visitar Recursos](/security/business/resources).

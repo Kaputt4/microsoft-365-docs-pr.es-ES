@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: 2fd9f2655b13d8c9ac829108d3563a6a4322f3bc
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 3b2833b2b6293845379f9f5aeffd3bd46610e2a8
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449251"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63713083"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -59,7 +59,7 @@ Si elige usar ámbitos adaptables, se le pedirá que seleccione qué tipo de ám
 |:-----|:-----|
 |**Usuarios**. Se aplica a:  <br/> - Correo electrónico de Exchange <br/> - Cuentas de OneDrive <br/> - Chats de Teams <br/> - Mensajes de canales privados de Teams <br/> - Mensajes de usuarios de Yammer| Nombre <br/> Apellidos <br/>Nombre para mostrar <br/> Puesto en la organización <br/> Departamento <br/> Oficina <br/>Dirección <br/> Ciudad <br/>Estado o provincia <br/>Código postal <br/> País o región <br/> Direcciones de correo <br/> Alias <br/> Atributos personalizados de Exchange: CustomAttribute1 - CustomAttribute15|
 |**Sitios de SharePoint**. Se aplica a:  <br/> - Sitios de SharePoint <br/> - Cuentas de OneDrive |Dirección URL del sitio <br/>Nombre del sitio <br/> Propiedades personalizadas de SharePoint: RefinableString00 - RefinableString99 |
-|**Grupos de Microsoft 365**. Se aplica a:  <br/> - Grupos de Microsoft 365 <br/> - Mensajes del canal de Teams <br/> - Mensajes de la comunidad de Yammer |Nombre <br/> Nombre para mostrar <br/> Descripción <br/> Direcciones de correo <br/> Alias <br/> Atributos personalizados de Exchange: CustomAttribute1 - CustomAttribute15 |
+|**Grupos de Microsoft 365**. Se aplica a:  <br/> - Grupos de Microsoft 365 <br/> - Mensajes de canal de Teams (estándar y compartidos) <br/> - Mensajes de la comunidad de Yammer |Nombre <br/> Nombre para mostrar <br/> Descripción <br/> Direcciones de correo <br/> Alias <br/> Atributos personalizados de Exchange: CustomAttribute1 - CustomAttribute15 |
 
 Los nombres de propiedad de los sitios se basan en las propiedades administradas del sitio de SharePoint. Para obtener información sobre los atributos personalizados, vea [Usar propiedades personalizadas del sitio de SharePoint para aplicar la retención de Microsoft 365 con ámbitos de directiva adaptables](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
@@ -374,7 +374,7 @@ Antes de configurar la retención, familiarícese primero con los límites de ca
 
 - Para Exchange, Teams y Yammer, donde los mensajes retenidos se almacenan en buzones, consulte [límites de Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) y habilite [archivo de expansión automática](autoexpanding-archiving.md).
     
-    En casos extremos en los que un gran volumen de correo electrónico se elimina en un breve período, ya sea por parte de los usuarios o desde la configuración de directiva de manera automática, es posible que también necesite configurar Exchange para mover con más frecuencia elementos de la carpeta Elementos recuperables del buzón principal del usuario a la carpeta Elementos recuperables en su buzón de archivo. Para obtener instrucciones paso a paso, consulte [Aumentar la cuota de elementos recuperables para buzones de correo en suspensión](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
+    En casos extremos en los que un gran volumen de correo electrónico se elimina en un breve período de tiempo, ya sea por parte de los usuarios o desde la configuración de directiva de manera automática, es posible que también necesite configurar Exchange para mover con más frecuencia elementos de la carpeta Elementos recuperables del buzón principal del usuario a la carpeta Elementos recuperables en el buzón de archivo. Para obtener instrucciones paso a paso, vea [Aumentar la cuota de elementos recuperables para buzones de correo en suspensión](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
 
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>Eliminar el contenido que supera una antigüedad determinada
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: ddd0553405aa92a1eb7a7978398392b780a0a2ea
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: 94388a375c3c50d97e696637ef6ef4ebefc96aab
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557815"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715501"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -73,6 +73,9 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
 
 ### <a name="retention-policy-for-teams-locations"></a>Directiva de retención para ubicaciones de Teams
 
+> [!NOTE]
+> Las directivas de retención ahora admiten [canales compartidos](/MicrosoftTeams/shared-channels), actualmente en versión preliminar. Cuando se configuran las opciones de retención para la ubicación de los **mensajes del canal de Teams**, si un equipo tiene canales compartidos, éstos heredan las opciones de retención de su equipo primario.
+
 1. Desde el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Información de gobernanza** > **Directivas de retención**.
 
 2. Seleccione **Nueva directiva de retención** para iniciar la configuración de **Crear directiva de retención** y asigne un nombre a la nueva directiva de retención.
@@ -84,7 +87,7 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
     - Si ha elegido **Adaptable**: en la página **Elegir ámbitos y ubicaciones de directivas adaptables**, seleccione **Agregar ámbitos** y seleccione uno o varios ámbitos adaptables que se hayan creado. A continuación, seleccione una o más ubicaciones. Las ubicaciones que podrá seleccionar dependen de los [tipos de ámbito](retention-settings.md#configuration-information-for-adaptive-scopes) que se hayan agregado. Por ejemplo, si solo ha agregado un tipo de ámbito de **Usuario**, podrá seleccionar **chats de Teams** pero no **mensajes de canal de Teams**. 
     
     - Si ha elegido **Estática**: en la página **Elegir ubicaciones para aplicar la directiva**, seleccione una o más ubicaciones para Teams:
-        - **Mensaje del canal de Teams**: mensajes de los chats del canal estándar y de las reuniones del canal estándar, pero no de los [canales privados](/microsoftteams/private-channels) que tienen su propia directiva de localización.
+        - **mensajes de canal de Teams**: mensajes de chats de canales estándar y compartidos, y reuniones de canales estándar y compartidos, pero no de [canales privados](/microsoftteams/private-channels) que tienen su propia ubicación de directiva.
         - **Chats de Teams**: mensajes de chats privados 1:1, chats grupales y chats de reunión.
         - **Mensajes del canal privado de Teams**: Mensajes de chats de canales privados y reuniones de canales privados.
         
@@ -224,7 +227,7 @@ En primer lugar, la directiva de retención debe distribuirse a las ubicaciones 
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
         ```
     
-    - Para todas las demás ubicaciones de directiva, como el **correo electrónico Exchange**, **sitios de SharePoint**, **mensajes del canal Teams**, etc.:
+    - Para todas las demás ubicaciones de directiva, como **correo electrónico de Exchange**, **sitios de SharePoint**, y **mensajes de canal de Teams**:
     
         ```PowerShell
         Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution

@@ -16,16 +16,16 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Opciones de fin de ciclo de vida para grupos, equipos y Yammer.
-ms.openlocfilehash: 883af3878bd0bc68aa539fc1cc36b66c4f1cfe9e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d48b1950d65c91c5869cd65e47790f4c65d69f0f
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190130"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715880"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Opciones de fin de ciclo de vida para grupos, equipos y Yammer
 
-Microsoft 365 Los grupos Microsoft Teams funcionan con varios servicios conectados. Cuando se elimina un grupo o equipo, la mayor parte de la información de los servicios conectados también se elimina. En este artículo se describen las opciones para conservar la información al moverla fuera del grupo o equipo antes de eliminarla.
+Microsoft 365 grupos y Microsoft Teams funcionan con varios servicios conectados. Cuando se elimina un grupo o equipo, la mayor parte de la información de los servicios conectados también se elimina. En este artículo se describen las opciones para conservar la información al moverla fuera del grupo o equipo antes de eliminarla.
 
 Una práctica común para grupos o equipos que ya no son necesarios es mover los archivos fuera del equipo y archivarlos en otra ubicación, como una biblioteca SharePoint documentos. Esta práctica se basa en un estilo heredado de trabajo donde la información se almacena en archivos y carpetas, y las comunicaciones se realizan por correo electrónico.
 
@@ -43,7 +43,7 @@ En la tabla siguiente se describen los servicios asociados con grupos y equipos 
 |Project en la web|Project planes|
 |Guía básica|Guías básicas|
 |SharePoint|Archivos, listas, Teams wiki de canal|
-|Stream|Vídeos|
+|Secuencia|Vídeos|
 |Yammer|Conversaciones|
 
 Al eliminar un grupo o equipo, la mayoría de los recursos asociados también se eliminan. Entre las excepciones se incluyen:
@@ -52,7 +52,7 @@ Al eliminar un grupo o equipo, la mayoría de los recursos asociados también se
 - Los flujos Power Automate permanecen y son propiedad de la persona que los creó.
 - Project y los datos del mapa de ruta Project en la web permanecen en el CDS y se pueden restaurar por separado.
 
-Los grupos y los equipos permanecen en estado de eliminación suave durante 30 días y se pueden restaurar en cualquier momento. Sin embargo, después de los 30 días, ellos y los recursos asociados, como servicios y contenido, se purgan del Microsoft 365 usuario. Cualquier contenido protegido por una directiva de retención permanece disponible a través de búsquedas de exhibición de documentos electrónicos.
+Los grupos y los equipos permanecen en estado de eliminación suave durante 30 días y se pueden restaurar en cualquier momento. Sin embargo, después de los 30 días, y los recursos asociados, como servicios y contenido, se purgan del Microsoft 365 usuario. Cualquier contenido protegido por una directiva de retención permanece disponible a través de búsquedas de exhibición de documentos electrónicos.
 
 ## <a name="end-of-life-cycle-considerations-for-group-connected-services"></a>Consideraciones sobre el fin del ciclo de vida de los servicios conectados a grupos
 
@@ -72,11 +72,11 @@ Estas preguntas deben realizarse antes de eliminar el grupo subyacente, ya que e
 
 **Invitados**
 
-Cuando se invita a los invitados a un equipo, se crea una cuenta de invitado en el Azure Active Directory de la organización host antes de agregarlos al equipo. Cuando se elimina un equipo, los invitados no se quitan de Azure Active Directory. Aunque los invitados no pueden tener acceso a grupos, sitios, equipos o contenido que no se haya compartido con ellos, pueden usar potencialmente características dentro de Microsoft Teams como iniciar chats, llamadas de voz y vídeo y usar aplicaciones.
+Cuando se invita a los invitados a un equipo, se crea una cuenta de invitado en el Azure Active Directory de la organización host antes de agregarlos al equipo. Cuando se elimina un equipo, los invitados no se quitan de Azure Active Directory. Aunque los invitados no pueden tener acceso a grupos, sitios, equipos o contenido que no se haya compartido con ellos, aún pueden usar características dentro de Microsoft Teams como iniciar chats, llamadas de voz y vídeo y usar aplicaciones.
 
-Un propietario de grupo o equipo puede invitar a alguien de fuera de la organización a convertirse en invitado en Azure Active Directory agregarlos a un equipo. Sin embargo, el propietario de un equipo no puede quitar al invitado de Azure Active Directory. La eliminación de cuentas solo la puede realizar un administrador global o un administrador de usuario.
+Un propietario de grupo o equipo puede invitar a alguien de fuera de la organización para que se convierta en invitado en Azure Active Directory agregarlos a un equipo. Sin embargo, el propietario de un equipo no puede quitar al invitado de Azure Active Directory. La eliminación de cuentas solo la puede realizar un administrador global o un administrador de usuario.
 
-Es importante realizar revisiones de invitados y comprender si los invitados deben eliminarse de Azure Active Directory eliminación del equipo. Puede haber un caso válido para que los invitados permanezcan en el directorio, como ser miembro de otros equipos o usar otros Microsoft 365 servicios de Azure.
+Es importante realizar revisiones de invitados y saber si los invitados deben quitarse de Azure Active Directory eliminación del equipo. Puede haber un caso válido para que los invitados permanezcan en el directorio, como ser miembro de otros equipos o usar otros servicios Microsoft 365 o Azure.
 
 ## <a name="teams"></a>Teams
 
@@ -84,7 +84,7 @@ Teams contenido específico está principalmente en forma de conversaciones.
 
 Las conversaciones en canales no se pueden copiar ni mover con la funcionalidad Microsoft Teams nativa. Sin embargo, se pueden exportar mediante la API Graph datos.
 
-Además, si se aplica una directiva de retención a Teams, las conversaciones se conservan y están disponibles a través de búsquedas de exhibición de documentos electrónicos. Con eDiscovery avanzado puede [reconstruir una conversación Teams chat](/microsoft-365/compliance/conversation-review-sets).
+Además, si se aplica una directiva de retención a Teams, las conversaciones se conservan y están disponibles a través de búsquedas de exhibición de documentos electrónicos. Con eDiscovery avanzado puede [reconstruir una conversación de Teams chat](/microsoft-365/compliance/conversation-review-sets).
 
 
 ### <a name="archiving-a-team"></a>Archivado de un equipo
@@ -113,15 +113,15 @@ Aunque un formulario se puede mover de una cuenta individual a un grupo, no se p
 
 **Duplicar el formulario**
 
-Los formularios [se pueden compartir como plantillas,](https://support.microsoft.com/office/82ea9d8a-260a-47a0-afdb-497f3d746e3f)lo que permite a otros usuarios copiarlos en su propia cuenta o en un grupo. Esto no conserva los datos de los envíos de resultados; solo estructura del formulario, como preguntas y configuración.
+Los formularios [se pueden compartir como plantillas](https://support.microsoft.com/office/82ea9d8a-260a-47a0-afdb-497f3d746e3f), lo que permite a otros usuarios copiarlos en su propia cuenta o en un grupo. Esto no conserva los datos de los envíos de resultados; solo estructura del formulario, como preguntas y configuración.
 
 **Exportar resultados a una hoja de cálculo**
 
-Si es necesario conservar los datos de las respuestas del formulario, esto se puede lograr exportando los resultados a una [Excel hoja de cálculo](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af). Esto solo exportará las preguntas y sus respuestas como datos; no incluye gráficos creados por Formularios.
+Si es necesario conservar los datos de las respuestas del formulario, puede hacerlo exportando los resultados [a una Excel formulario](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af). Esto solo exportará las preguntas y sus respuestas como datos; no incluye gráficos creados por Formularios.
 
 **Eliminar el formulario**
 
-Aunque la eliminación del grupo también dará como resultado la eliminación de los formularios asociados, los miembros del grupo pueden eliminarlos directamente [sin](https://support.microsoft.com/office/2207e468-ce1b-4c4a-a256-caf631d87af0) ser propietarios del grupo. Sin embargo, este es un paso manual que no proporciona ninguna ventaja adicional.
+Aunque la eliminación del grupo también dará como resultado la eliminación de los formularios asociados, los miembros del grupo pueden eliminarlos [directamente sin ser](https://support.microsoft.com/office/2207e468-ce1b-4c4a-a256-caf631d87af0) propietarios del grupo. Sin embargo, este es un paso manual que no proporciona ninguna ventaja adicional.
 
 ## <a name="onenote"></a>OneNote
 
@@ -137,7 +137,7 @@ Si todo el bloc de notas necesita conservarse con su estructura existente, se pu
 
 **Impresión en PDF**
 
-En escenarios en los que solo es necesario conservar parte del contenido del bloc de notas como referencia o como registros, las páginas individuales se pueden imprimir en PDF y almacenarse en [otro lugar.](https://support.office.com/article/13d173b5-7f4c-45a8-94eb-9354d63af5cd)
+En escenarios en los que algunos de los contenidos del bloc de notas solo necesitan conservarse como referencia o como registros, las páginas individuales se pueden imprimir en [PDF y almacenarse en otro lugar](https://support.office.com/article/13d173b5-7f4c-45a8-94eb-9354d63af5cd).
 
 ## <a name="mailbox-and-calendar"></a>Buzón y calendario
 
@@ -149,7 +149,7 @@ Si se aplica una directiva de retención en Exchange, los correos electrónicos 
 
 **Exportar correo y calendario**
 
-Los miembros del equipo o del grupo pueden exportar el contenido del buzón y el calendario a un archivo [Outlook Data /Personal Storage (PST).](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91) A continuación, este archivo se puede almacenar en otro lugar o el contenido se puede importar a un buzón diferente. El primero no se recomienda, ya que el contenido del archivo PST no se puede buscar sin abrirlo en Outlook y el propio archivo puede dañarse con el tiempo.
+Los miembros del equipo o del grupo pueden exportar el contenido del buzón y el calendario a un archivo [Outlook datos o Storage personal (PST](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)). A continuación, este archivo se puede almacenar en otro lugar o el contenido se puede importar a un buzón diferente. El primero no se recomienda, ya que el contenido del archivo PST no se puede buscar sin abrirlo en Outlook y el propio archivo puede dañarse con el tiempo.
 
 **Migración de contenido realizada por IT**
 
@@ -161,10 +161,10 @@ Cada grupo o equipo puede tener varios planes. Es importante durante el proceso 
 
 **Exportar el plan a una hoja de cálculo**
 
-Si solo es necesario conservar una copia del plan con fines de mantenimiento de registros, el enfoque más sencillo es exportar el plan a una hoja [de cálculo Excel archivo](https://support.microsoft.com/office/4d850c6e-e548-4aab-83b4-b62b68662d2a). Se trata de una acción unitiva: no hay ninguna opción para importar planes de una hoja de cálculo.
+Si solo es necesario conservar una copia del plan con fines de mantenimiento de registros, el enfoque más sencillo es exportar el plan a una hoja [de cálculo Excel registro](https://support.microsoft.com/office/4d850c6e-e548-4aab-83b4-b62b68662d2a). Se trata de una acción unitiva: no hay ninguna opción para importar planes de una hoja de cálculo.
 
 > [!IMPORTANT]
-> La exportación de un plan Excel la mayor parte de la información del plan, pero no incluirá comentarios, vínculos ni archivos.
+> Exportar un plan a Excel tomará la mayoría de la información dentro del plan, pero no incluirá comentarios, vínculos o archivos.
 
 **Copiar y mover tareas a otro plan**
 
@@ -176,15 +176,15 @@ También es posible copiar [todo el plan](https://support.microsoft.com/office/5
 
 ## <a name="power-automate"></a>Power Automate
 
-Los flujos creados Power Automate y asociados a un grupo o equipo no pertenecen al grupo. Son propiedad del creador y simplemente se comparten con otros usuarios y grupos. Por lo tanto, no se ven afectados si se elimina un grupo o equipo.
+Los flujos creados Power Automate y asociados con un grupo o equipo no pertenecen al grupo. Son propiedad del creador y simplemente se comparten con otros usuarios y grupos. Por lo tanto, no se ven afectados si se elimina un grupo o equipo.
 
 **Cambiar la propiedad del flujo**
 
-Si el flujo necesita seguir funcionando, los propietarios pueden agregar otros usuarios o grupos Microsoft 365 como propietarios.
+Si el flujo necesita seguir funcionando, los propietarios pueden agregar otros usuarios o Microsoft 365 grupos como propietarios.
 
 **Exportar el flujo**
 
-Si el flujo no necesita seguir funcionando pero necesita conservarse para su [](https://flow.microsoft.com/blog/import-export-bap-packages/) posible uso futuro, se puede exportar como archivo e importarlo de nuevo más adelante.
+Si el flujo no necesita seguir funcionando pero necesita conservarse para su posible uso futuro, se puede exportar como archivo e importarlo de nuevo más adelante.[](https://flow.microsoft.com/blog/import-export-bap-packages/)
 
 ## <a name="power-bi"></a>Power BI
 
@@ -192,19 +192,19 @@ Power BI datos y áreas de trabajo pueden funcionar independientemente de grupos
 
 **Copiar informes en otro área de trabajo**
 
-Si necesita el informe una vez eliminado el grupo o el equipo, se puede copiar desde el área de trabajo existente a otro área de trabajo dentro [de Power BI](/power-bi/connect-data/service-datasets-copy-reports).
+Si necesita el informe una vez eliminado el grupo o el equipo, se puede copiar desde el área de trabajo existente a otro área de trabajo [dentro de Power BI](/power-bi/connect-data/service-datasets-copy-reports).
 
 **Exportar datos desde un panel o informe**
 
-En su lugar, si el informe ya no necesita estar activo pero los datos deben conservarse, se puede exportar [a Excel](/power-bi/visuals/power-bi-visualization-export-data).
+En su lugar, si el informe ya no necesita estar activo pero los datos deben conservarse, se puede exportar a [Excel](/power-bi/visuals/power-bi-visualization-export-data).
 
 ## <a name="project"></a>Project
 
-Los proyectos y los planes de ruta creados en Project web están asociados con grupos Microsoft 365 y tienen enfoques de salida similares a Power BI.
+Los proyectos y los planes de ruta creados en Project web están asociados con grupos de Microsoft 365 y tienen enfoques de salida similares a Power BI.
 
 **Asignar el proyecto a otro grupo**
 
-Si el proyecto necesita conservarse en su estado funcional más allá de la vida del grupo o equipo, se puede asignar a un grupo de Microsoft 365 [diferente.](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project) Esto se puede hacer con el Centro de administración de Dynamics 365.
+Si el proyecto necesita conservarse en su estado funcional más allá de la vida del grupo o equipo, se puede asignar [a un grupo Microsoft 365 grupo](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project). Esto se puede hacer con el Centro de administración de Dynamics 365.
 
 **Exportar datos desde el proyecto o plan de desarrollo**
 
@@ -212,30 +212,30 @@ Con el Centro de administración de Dynamics 365, es posible exportar datos de u
 
 ## <a name="sharepoint"></a>SharePoint
 
-Todos los archivos de los canales de grupo se almacenan en el SharePoint del grupo asociado. En algunos casos, puede haber contenido que no sea documentos SharePoint, como listas o páginas.
+Todos los archivos de los canales de grupo se almacenan en el SharePoint del grupo asociado. En algunos casos, el contenido distinto de los documentos puede existir en SharePoint, como listas o páginas.
 
-Por lo general, los archivos se almacenan en tres ubicaciones principales dentro de un SharePoint web:
+Por lo general, los archivos se almacenan en tres ubicaciones principales dentro de SharePoint sitio:
 
 - Páginas: biblioteca de páginas de sitio
 - Imágenes usadas en páginas: biblioteca de activos del sitio
 - Archivos en canales: biblioteca de documentos
 - Páginas wiki: Teams de datos wiki
 
-Si el sitio tiene uno o varios subsitios, el proceso de baja tendrá que repetirse para cada subsitio. Si el equipo contiene canales privados, hay un sitio SharePoint para cada canal.
+Si el sitio tiene uno o varios subsitios, el proceso de baja tendrá que repetirse para cada subsitio. Si el equipo contiene canales privados o compartidos, hay un sitio SharePoint para cada canal.
 
 Es importante al quitar archivos de un grupo o equipo para considerar que pueden compartirse con usuarios que no son miembros del grupo o equipo. Es posible que desee comunicarles el cambio inminente.
 
 **Descargar archivos**
 
-Los archivos almacenados SharePoint en una de las bibliotecas mencionadas anteriormente se pueden [descargar en un equipo local.](https://support.office.com/article/5c7397b7-19c7-4893-84fe-d02e8fa5df05)
+Los archivos almacenados SharePoint en una de las bibliotecas mencionadas anteriormente se pueden [descargar en un equipo local](https://support.office.com/article/5c7397b7-19c7-4893-84fe-d02e8fa5df05).
 
 **Mover archivos**
 
-Además, los archivos se pueden mover a otra ubicación dentro [de SharePoint como una biblioteca en un sitio diferente.](https://support.office.com/article/00e2f483-4df3-46be-a861-1f5f0c1a87bc)
+Además, los archivos se [pueden mover a otra ubicación dentro de SharePoint como una biblioteca en un sitio diferente](https://support.office.com/article/00e2f483-4df3-46be-a861-1f5f0c1a87bc).
 
 **Exportar lista**
 
-Los datos almacenados en SharePoint pueden exportarse a una hoja Excel [de](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9)cálculo y volver a importarse a una lista de otro sitio.
+Los datos almacenados en SharePoint pueden exportarse a una hoja de [cálculo](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9) Excel e importarse de nuevo a una lista de otro sitio.
 
 Como alternativa, se puede usar una herramienta de terceros para migrar la lista entre sitios con el fin de conservar funciones, vistas de lista, formato y otros atributos.
 
@@ -249,15 +249,15 @@ Al Power Automate, los vídeos de Stream asociados a un grupo o equipo no son re
 
 **Agregar otros propietarios**
 
-Dado que el vídeo se conserva en Stream cuando se elimina el grupo, el propietario original puede compartir el vídeo con otros usuarios y grupos, incluso agregarlos [como propietarios.](/stream/portal-edit-video)
+Dado que el vídeo se conserva en Stream cuando se elimina el grupo, el propietario original puede compartir el vídeo con otros usuarios y grupos, incluso agregarlos [como propietarios](/stream/portal-edit-video).
 
 **Descargar el vídeo**
 
-En escenarios en los que el vídeo no necesita conservarse en Stream o necesita almacenarse en una ubicación alternativa, como un sistema de administración de registros, un propietario puede descargarlo [localmente.](/stream/portal-download-video)
+En escenarios en los que el vídeo no necesita conservarse en Stream o necesita almacenarse en una ubicación alternativa, como un sistema de administración de registros, un propietario puede descargarlo [localmente](/stream/portal-download-video).
 
 ## <a name="yammer"></a>Yammer
 
-A diferencia de las Microsoft Teams, Yammer ofrece opciones de usuarios y administradores para mover o exportar conversaciones.
+A diferencia de las conversaciones Microsoft Teams, Yammer ofrece opciones de usuarios y administradores para mover o exportar conversaciones.
 
 **Mover conversaciones a otro grupo o comunidad**
 
@@ -269,4 +269,4 @@ Yammer administradores de red [exportan datos de red](/yammer/manage-security-an
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Quitar un antiguo empleado y proteger datos](/microsoft-365/admin/add-users/remove-former-employee)
+[Quitar un antiguo empleado y proteger los datos](/microsoft-365/admin/add-users/remove-former-employee)

@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los límites de casos, los límites de indización y los límites de búsqueda en vigor para la solución Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: fc658f4502bf510cf34297435db75bd7cdd7c136
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 04b0f98286693ef14019b30ab9c8d3a592484d92
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316204"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712804"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Límites de eDiscovery avanzado
 
@@ -42,7 +42,6 @@ En la tabla siguiente se enumeran los límites de los casos y los conjuntos de r
 |Número máximo de etiquetas únicas por caso. <br/> |1.0001<sup></sup> |
 |Trabajos simultáneos máximos en la organización para agregar contenido a un conjunto de revisión. Estos trabajos se **denominan Agregar datos a un conjunto** de revisión y se muestran en la **pestaña** Trabajos en un caso.| <sup>102</sup> |
 |Trabajos simultáneos máximos para agregar contenido a un conjunto de opiniones por usuario. Estos trabajos se **denominan Agregar datos a un conjunto** de revisión y se muestran en la **pestaña** Trabajos en un caso. | 3 |
-|||
 
 ## <a name="hold-limits"></a>Límites de retención
 
@@ -64,7 +63,6 @@ En la tabla siguiente se enumeran los límites de indización en Advanced eDisco
 |Tamaño máximo de un solo archivo.   <br/> |150 <sup>MB4</sup> <br/> |
 |Profundidad máxima de los elementos incrustados en un documento.  <br/> |<sup>254</sup> <br/> |
 |Tamaño máximo de los archivos procesados por reconocimiento óptico de caracteres (OCR).  <br/> |24 <sup>MB4</sup> <br/>  
-|||
 
 ## <a name="search-limits"></a>Límites de búsqueda
 
@@ -87,28 +85,26 @@ Los límites descritos en esta sección están relacionados con el uso de la her
 |Número máximo de elementos por buzón de carpetas públicas que se muestran en la página de vista previa para las búsquedas. |100|
 |Número máximo de elementos encontrados en todos los elementos de buzón de carpetas públicas que se muestran en la página de vista previa para las búsquedas. |200|
 |Número máximo de buzones de carpetas públicas que se pueden obtener una vista previa de los resultados de búsqueda. Si hay más de 500 buzones de carpetas públicas que contienen elementos que coinciden con la consulta de búsqueda, solo los 500 buzones principales con más resultados están disponibles para la vista previa.|500|
-|||
+|Tamaño máximo de un elemento que se puede ver en la página de ejemplo de una colección de borradores.|10 000 000 bytes (aproximadamente 9,5 MB)|
 
 ## <a name="search-times"></a>Tiempos de búsqueda
 
 Microsoft recopila información de rendimiento para las búsquedas ejecutadas por todas las organizaciones. Aunque la complejidad de una consulta de búsqueda puede afectar al tiempo que lleva ejecutarla, en realidad, el factor más determinante es el número de buzones incluidos en la búsqueda. Aunque Microsoft no proporciona un contrato de nivel de servicio para los tiempos de búsqueda, en la tabla siguiente se enumeran los tiempos promedios de búsqueda para las búsquedas de colección en función del número de buzones incluidos en la búsqueda.
   
-  | Número de buzones | Promedio de tiempo de búsqueda |
-  |:-----|:-----|
-  |100  <br/> |30 segundos  <br/> |
-  |1,000  <br/> |45 segundos  <br/> |
-  |10 000  <br/> |4 minutos  <br/> |
-  |25 000  <br/> |10 minutos  <br/> |
-  |50 000  <br/> |20 minutos  <br/> |
-  |100 000  <br/> |25 minutos  <br/> |
-  |||
+| Número de buzones | Promedio de tiempo de búsqueda |
+|:-----|:-----|
+|100  <br/> |30 segundos  <br/> |
+|1,000  <br/> |45 segundos  <br/> |
+|10 000  <br/> |4 minutos  <br/> |
+|25 000  <br/> |10 minutos  <br/> |
+|50 000  <br/> |20 minutos  <br/> |
+|100 000  <br/> |25 minutos  <br/> |
 
 ## <a name="viewer-limits"></a>Límites del visor
 
 | Descripción del límite | Límite |
 |:-----|:-----|
 |Tamaño máximo de Excel archivo que se puede ver en el visor nativo.  <br/> |4 MB  <br/> |
-|||
 
 ## <a name="export-limits---final-export-out-of-review-set"></a>Límites de exportación: exportación final fuera del conjunto de revisión
 
@@ -118,14 +114,12 @@ Los límites descritos en esta sección están relacionados con la exportación 
 |:-----|:-----|
 |Tamaño máximo de una sola exportación.|5 millones de documentos o 500 GB, lo que sea menor|
 |Máximo de exportaciones simultáneas por conjunto de revisión. | 1 |
-|||
 
 ## <a name="review-set-download-limits"></a>Revisar establecer límites de descarga
 
 | Descripción del límite | Límite |
 |:-----|:-----|
 |Tamaño total del archivo o número máximo de documentos descargados de un conjunto de revisión.  <br/> |3 MB o 50 <sup>documentos7</sup>|
-|||
 
 ## <a name="notes"></a>Notas
 

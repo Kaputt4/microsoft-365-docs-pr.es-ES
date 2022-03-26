@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Documentación de Microsoft 365
-summary: 'Encuentre las soluciones, los escenarios y los recursos que necesita para empezar a trabajar con Microsoft 365 para su empresa u organización.'
+summary: 'Encuentre las soluciones, los escenarios y los recursos que necesita para empezar a trabajar con Microsoft 365 para su empresa u organización. Microsoft 365 incluye servicios como Teams y SharePoint, y Aplicaciones de Microsoft 365 como Outlook, Word, Excel y PowerPoint.'
 brand: m365
 metadata:
   title: Documentación de Microsoft 365
-  description: 'Encuentre las soluciones, los escenarios y los recursos que necesita para empezar a trabajar con Microsoft 365 para su empresa u organización.'
+  description: 'Encuentre las soluciones, los escenarios y los recursos que necesita para empezar a trabajar con Microsoft 365, incluido Office, para su empresa u organización.'
   ms.service: o365-solutions
   ms.topic: hub-page
   ms.collection: m365-security-compliance
@@ -185,8 +185,8 @@ additionalContent:
               url: /DeployOffice/plan-microsoft-365-apps
             - text: Office para Mac
               url: /DeployOffice/mac
-            - text: Office 2019
-              url: /DeployOffice/office2019
+            - text: Office LTSC 2021
+              url: /DeployOffice/ltsc2021/overview
             - text: Más >
               url: /DeployOffice
         - title: SharePoint

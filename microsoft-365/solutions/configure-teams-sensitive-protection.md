@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Obtenga información sobre cómo implementar equipos con la protección de datos confidenciales.
-ms.openlocfilehash: 42124881ac795c54288dee46e70dc1d5eccef3e3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 51e4c3b13d1a54e4edcfd9926ae246dde7d7e3e4
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314075"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712707"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configure equipos con protección de datos confidenciales
 
@@ -57,7 +57,7 @@ Para permitir o bloquear el uso compartido de invitados, utilizamos una combinac
 
 Para el nivel de protección confidencial, usaremos una etiqueta de confidencialidad para clasificar el equipo. Esta etiqueta también se puede usar para clasificar archivos individuales en este o en otros equipos, o en otras ubicaciones de archivo como SharePoint o OneDrive. 
 
-Como primer paso, debe habilitar las etiquetas de confidencialidad para Teams. Consulte [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, los grupos de Microsoft 365 y los sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md) para más información.
+Como primer paso, debe habilitar las etiquetas de confidencialidad para Teams. Consulte [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Office 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md) para más información.
 
 Si ya tiene las etiquetas de confidencialidad implementadas en la organización, tenga en cuenta que se adapta a la estrategia general de etiquetas. Si es necesario, puede cambiar el nombre o la configuración para satisfacer las necesidades de su organización.
 
@@ -109,6 +109,10 @@ Para restringir la creación de un canal privado
 
 También puede usar [Directivas de equipos](/MicrosoftTeams/teams-policies) para controlar quién puede crear canales privados.
 
+## <a name="shared-channel-settings"></a>Configuración del canal compartido
+
+Los [canales compartidos](/MicrosoftTeams/shared-channels) no tienen configuración a nivel de equipo. Las opciones de configuración del canal compartido que establezca en el Centro de administración de Teams y en Azure AD se aplicará a todos los equipos independientemente de la confidencialidad.
+
 ## <a name="sharepoint-settings"></a>Configuración de SharePoint
 
 Cada vez que cree un nuevo equipo con la etiqueta confidencial, debe realizar dos pasos en SharePoint:
@@ -128,13 +132,11 @@ Para actualizar el tipo de vínculo para compartir predeterminado del sitio
 
 Si quiere utilizar un script para esto como parte del proceso de creación del equipo, puede usar [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) con el parámetro `-DefaultSharingLinkType Direct` para cambiar el vínculo de uso compartido predeterminado a *Usuarios específicos*.
 
-#### <a name="private-channels"></a>Canales privados
-
-Si agrega canales privados al equipo, cada canal privado crea un sitio de SharePoint nuevo con la configuración de uso compartido predeterminada. Estos sitios no están visibles en el Centro de administración de SharePoint, por lo que debe usar el cmdlet Set-SPOSite de PowerShell para actualizar la configuración de uso compartido de invitado.
+Tenga en cuenta que si agrega canales privados o compartidos al equipo, cada uno de ellos crea un nuevo sitio de SharePoint con la configuración de uso compartido predeterminada. Puede actualizarlos en el Centro de administración de SharePoint seleccionando los sitios asociados con el equipo.
 
 ### <a name="site-sharing-settings"></a>Configuración de uso compartido del sitio 
 
-Para ayudar a garantizar que el sitio de SharePoint no se comparta con personas que no son miembros del equipo, limitamos dicho uso compartido a los propietarios.
+Para ayudar a garantizar que el sitio de SharePoint no se comparta con personas que no son miembros del equipo, limitamos dicho uso compartido a los propietarios. Esto solo es necesario para el sitio de SharePoint que se creó con el equipo. Los sitios adicionales creados como parte de canales privados o compartidos no se pueden compartir fuera del equipo o canal.
 
 Para configurar el uso compartido del sitio solo para propietarios
 1. En Teams, vaya a la pestaña **General** del equipo que quiere actualizar.
@@ -145,6 +147,6 @@ Para configurar el uso compartido del sitio solo para propietarios
 6. En **Permisos de uso compartido**, elija **Los propietarios y miembros del sitio y las personas con permisos de edición pueden compartir archivos y carpetas, pero solo los propietarios de sitios pueden compartir el sitio** y haga clic en **Guardar**.
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="related-topics"></a>Temas relacionados
 
 [Crear y configurar etiquetas de confidencialidad y sus directivas](../compliance/create-sensitivity-labels.md)

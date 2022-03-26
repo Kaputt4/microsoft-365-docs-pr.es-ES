@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Obtenga información acerca de cómo configurar Teams para mejorar la seguridad del uso compartido de sus archivos al usar tres niveles de protección y equilibrar la seguridad con la simplicidad en la colaboración.
-ms.openlocfilehash: 279e338af6db4d82291209deb66e1ea1eef74630
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 116675ac6736e1761286226a8bf724915627574f
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202338"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712729"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurar Teams con tres niveles de protección
 
@@ -55,6 +55,7 @@ En la tabla siguiente se resumen las configuraciones para cada nivel. Use estas 
 |Equipo privado o público|Público|Private|Private|Private|
 |¿Quién tiene acceso?|Todos los usuarios de la organización, incluidos los usuarios B2B.|Solo los miembros del equipo. Otros usuarios pueden solicitar acceso al sitio asociado.|Solo los miembros del equipo.|Solo los miembros del equipo.|
 |Canales privados|Los propietarios y miembros pueden crear canales privados|Los propietarios y miembros pueden crear canales privados|Solo los propietarios pueden crear canales privados|Solo los propietarios pueden crear canales privados|
+|Canales compartidos|Los propietarios y miembros pueden crear canales privados|Los propietarios y miembros pueden crear canales privados|Solo los propietarios pueden crear canales privados|Solo los propietarios pueden crear canales privados|
 |Acceso de invitado en el nivel de sitio|**Invitados nuevos y existentes** (predeterminado).|**Invitados nuevos y existentes** (predeterminado).|**Invitados nuevos y existentes** o **Solo las personas de su organización** en función de las necesidades del equipo.|**Invitados nuevos y existentes** o **Solo las personas de su organización** en función de las necesidades del equipo.|
 |Configuración de uso compartido del sitio |**Los propietarios y los miembros del sitio, y las personas con permisos de edición pueden compartir archivos y carpetas, pero solo los propietarios del sitio pueden compartir el sitio.**|**Los propietarios y los miembros del sitio, y las personas con permisos de edición pueden compartir archivos y carpetas, pero solo los propietarios del sitio pueden compartir el sitio.**|**Los propietarios y los miembros del sitio, y las personas con permisos de edición pueden compartir archivos y carpetas, pero solo los propietarios del sitio pueden compartir el sitio.**|**Solo los propietarios del sitio pueden compartir archivos, carpetas y el sitio.**<br>Solicitudes de acceso **desactivadas**.|
 |Acceso de un dispositivo no administrado a nivel de sitio|**Acceso total desde aplicaciones de escritorio, aplicaciones móviles y la web** (predeterminado).|**Acceso total desde aplicaciones de escritorio, aplicaciones móviles y la web** (predeterminado).|**Permitir el acceso limitado, solo a través de la web**.|**Bloquear acceso**.|
@@ -69,7 +70,7 @@ Los equipos para la protección confidencial y altamente confidencial son equipo
 
 ## <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 
-Los niveles confidenciales y muy confidenciales usan etiquetas de confidencialidad para ayudar a proteger el equipo y sus archivos. Para implementar estos niveles, debe habilitar [etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Office 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
+Los niveles confidenciales y muy confidenciales usan etiquetas de confidencialidad para ayudar a proteger el equipo y sus archivos. Para implementar estos niveles, debe habilitar [etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Office 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 Aunque el nivel de línea base no requiere etiquetas de confidencialidad, considere la posibilidad de crear una etiqueta "general" y requerir que todos los equipos tengan la etiqueta. Esto ayudará a garantizar que los usuarios hagan una elección consciente sobre la confidencialidad cuando creen un equipo. Si tiene previsto implementar niveles confidenciales o altamente confidenciales, le recomendamos que cree una etiqueta "general" que pueda usar para los equipos de línea base y para los archivos que no son confidenciales.
 
@@ -94,15 +95,24 @@ Aunque los equipos no tienen una opción de permisos de solo lectura, el sitio d
 
 De forma predeterminada, los propietarios y miembros del equipo pueden compartir archivos y carpetas con personas ajenas al equipo. Esto puede incluir personas de fuera de su organización, si ha permitido el uso compartido de invitados. En los tres niveles, actualizamos el tipo de vínculo compartido predeterminado para ayudar a evitar el uso compartido accidental. En el nivel altamente confidencial, restringimos este uso compartido únicamente a los propietarios de equipo.
 
-## <a name="guest-sharing"></a>Uso compartido de invitado
+## <a name="sharing-with-people-outside-your-organization"></a>Compartir con usuarios ajenos a la organización
 
-Si necesita colaborar con personas de fuera de su organización, le recomendamos que configure la [integración de SharePoint y OneDrive con Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) para obtener la mejor experiencia de uso compartido y administración.
+Si necesita compartir contenido de Teams con usuarios ajenos a la organización, tiene dos opciones:
 
-El uso compartido de invitados de Teams está activado de forma predeterminada, pero puede desactivarlo si es necesario en los niveles confidencial y altamente confidencial con una etiqueta de confidencialidad.
+- **Uso compartido de invitados**: el uso compartido de invitados usa la colaboración de Azure AD B2B, lo que permite a los usuarios compartir archivos, carpetas, sitios, grupos y equipos con usuarios de fuera de la organización. Estos usuarios tienen acceso a recursos compartidos mediante cuentas de invitado en el directorio.
+- **Canales compartidos**: los canales compartidos usan Azure AD conexión directa B2B, que permite a los usuarios compartir recursos de la organización con usuarios de otras organizaciones que usan Azure AD. Estos usuarios pueden acceder a los canales compartidos en Teams con su propia cuenta profesional o educativa. No se crea ninguna cuenta de invitado en la organización.
 
-En la capa altamente confidencial, configuramos la etiqueta de confidencialidad para cifrar los archivos a los que se aplica. Si necesita que los invitados tengan acceso a estos archivos, deberá concederles permisos cuando cree la etiqueta.
+Tanto el uso compartido de invitados como los canales compartidos son útiles dependiendo de la situación. Consulte [Planear la colaboración externa](plan-external-collaboration.md) para obtener más información sobre cada uno de ellos y cómo decidir qué usar en cada escenario específico.
+
+Si tiene previsto usar el uso compartido para invitados, se recomienda configurar la [integración de SharePoint y OneDrive con Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) para obtener la mejor experiencia de uso compartido y administración.
+
+El uso compartido de invitados de Teams está activado de forma predeterminada, pero puede desactivarlo si es necesario en los niveles confidencial y altamente confidencial con una etiqueta de confidencialidad. Los canales compartidos están activados de forma predeterminada, pero requieren la configuración de relaciones entre organizaciones para cada organización con la que se desea colaborar. Consulte [Colaborar con participantes externos en un canal](collaborate-teams-direct-connect.md) para obtener más detalles.
+
+En la capa altamente confidencial, configuramos la etiqueta de confidencialidad para cifrar los archivos a los que se aplica. Si necesita que los invitados tengan acceso a estos archivos, deberá concederles permisos cuando cree la etiqueta. A los participantes externos de los canales compartidos no se les puede conceder permisos para las etiquetas de confidencialidad y no pueden acceder al contenido cifrado con etiquetas de confidencialidad.
 
 Le recomendamos encarecidamente que deje el uso compartido de invitado activado para el nivel de línea base y para los niveles de confidencialidad o altamente confidenciales si necesita colaborar con personas ajenas a su organización. Las características de uso compartido de invitado de Microsoft 365 proporcionan una experiencia de uso compartido mucho más segura y controlada que al enviar archivos como datos adjuntos en mensajes de correo electrónico. También reduce el riesgo de TI en la sombra donde los usuarios usan productos de consumo no controlados para compartir con colaboradores externos legítimos.
+
+Si colabora regularmente con otras organizaciones que usan Azure AD, los canales compartidos pueden ser una buena opción. Los canales compartidos aparecen uniformemente en el cliente de Teams de la otra organización y permiten a los participantes externos usar su cuenta de usuario habitual para su organización en lugar de tener que iniciar sesión por separado con una cuenta de invitado.
 
 Vea las siguientes referencias para crear un entorno de uso compartido de invitado seguro y productivo para su organización:
 

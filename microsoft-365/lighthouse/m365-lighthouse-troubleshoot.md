@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga ayuda para solucionar problemas y mensajes de error.
-ms.openlocfilehash: e39eea66222852d8f331aa6bc68b386bea3da763
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 49e6657815ed71476a3dc79d778f7e1fbacfa1f4
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63513037"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775464"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>Solucionar problemas y resolver mensajes de error en Microsoft 365 Lighthouse
 
@@ -53,11 +53,14 @@ En este artículo se describen los mensajes de error y los problemas que puede e
 
 **Causa:** Los inquilinos de los clientes no cumplen los siguientes criterios:
 
-  - Debe haber establecido privilegios de administrador delegados (DAP) o granulares delegados (GDAP) para el proveedor de servicios administrados (MSP)
-  - Debe tener al menos una Microsoft 365 Empresa Premium o Microsoft 365 E3 licencia
+  - Debe haber delegado (DAP) configurado para que el proveedor de servicios administrados (MSP) pueda administrar el tenaant del cliente*
+  - Debe tener al menos una Microsoft 365 Empresa Premium, una Microsoft 365 E3 o una licencia Windows 365 Empresa
   - No debe tener más de 1000 usuarios con licencia 
 
-**Resolución:** En la tabla siguiente se describen los distintos estados de inquilino que requieren acción y se explica cómo resolverlos.<br><br>
+**Resolución:** En la tabla siguiente se describen los distintos estados de inquilino que requieren acción y se explica cómo resolverlos.
+
+*Se requieren privilegios de administrador delegados (DAP) para incorporar clientes a Lighthouse. También se recomienda establecer privilegios de administrador delegados pormenorizados (GDAP) con los clientes para habilitar un acceso delegado más seguro. Mientras QUE DAP y GDAP coexisten, GDAP tendrá prioridad para los clientes en los que ambos modelos estén en su lugar. Pronto, los clientes con solo GDAP (y sin DAP) podrán incorporarse a Lighthouse.<br><br>
+
 
 | Estado | Descripción | Solución |
 |--|--|--|

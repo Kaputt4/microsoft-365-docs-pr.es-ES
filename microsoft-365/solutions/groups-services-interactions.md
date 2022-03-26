@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Interacciones de servicios de grupos
-ms.openlocfilehash: 226c1588c0275c3349d0fd996dd68f5748f11cd6
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 3f5433671e4407e25669498824817db0b43ff329
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064372"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712826"
 ---
 # <a name="groups-services-interactions"></a>Interacciones de servicios de grupos
 
@@ -55,7 +55,7 @@ Microsoft 365 los grupos pueden crearse y administrarse desde varias interfaces,
 
 ### <a name="administrative-experiences"></a>Experiencias administrativas
 
-Los administradores pueden crear y administrar grupos de Microsoft 365 desde varios de los centros de administración de cargas de trabajo, interfaces de línea de comandos que admiten scripting, así como aplicaciones personalizadas que interactúan con la API de Graph carga de trabajo. La única excepción a esto es Yammer grupos, que deben crearse desde la interfaz Yammer web.
+Los administradores pueden crear y administrar grupos Microsoft 365 desde varios de los centros de administración de cargas de trabajo, interfaces de línea de comandos que admiten scripting, así como aplicaciones personalizadas que interactúan con la API de Graph. La única excepción a esto es Yammer grupos, que deben crearse desde la interfaz Yammer web.
 
 **Configuración relacionada**
 
@@ -67,17 +67,17 @@ En el Centro de administración de Microsoft 365, el acceso de invitado a grupos
 
 **Centro de administración de Azure AD**
 
-El Centro Azure AD administración ofrece controles sobre si los usuarios pueden crear grupos o asignar propietarios en Azure Portals, así como la configuración de la directiva de expiración y nomenclatura.
+El Azure AD de administración ofrece controles sobre si los usuarios pueden crear grupos o asignar propietarios en Azure Portals, así como la configuración de la directiva de expiración y nomenclatura.
 
-El Centro de administración también proporciona varias medidas de control de invitación de invitado que van más allá de la del Centro de administración de Microsoft 365, como la capacidad de limitar si los no propietarios también pueden invitar invitados
+El Centro de administración también proporciona varias medidas de control de invitación de invitado que van más allá de la del Centro de administración de Microsoft 365, como la capacidad de limitar si los no propietarios también pueden invitar a invitados
 
 **SharePoint**
 
-SharePoint los sitios se crean con los grupos de seguridad Propietario, Miembro y Visitante, y los dos primeros coinciden con sus equivalentes Microsoft 365 grupo. Aunque la pertenencia SharePoint los sitios en línea generalmente se administra mediante el grupo Microsoft 365 asociado, no es una relación bidireccional. Cualquier cambio en la pertenencia en el nivel de grupo de Microsoft 365 se refleja en SharePoint, pero si se cambia la pertenencia en el grupo SharePoint, esto no se refleja en el grupo Microsoft 365.
+SharePoint los sitios se crean con los grupos de seguridad Propietario, Miembro y Visitante, y los dos primeros coinciden con sus equivalentes Microsoft 365 grupo. Aunque la pertenencia SharePoint los sitios en línea generalmente se administra mediante el grupo Microsoft 365 asociado, no es una relación bidireccional. Cualquier cambio en la pertenencia en el nivel de grupo Microsoft 365 se refleja en SharePoint, pero si se cambia la pertenencia en el grupo SharePoint, esto no se refleja en el grupo Microsoft 365.
 
 ### <a name="user-experiences"></a>Experiencias de usuario
 
-Los usuarios finales pueden crear grupos a partir de varios de los servicios de Microsoft 365 y, en otros, solo pueden compartir con un grupo.
+Los usuarios finales pueden crear grupos de varios de los servicios de Microsoft 365 y, en otros, solo pueden compartir con un grupo.
 
 Los siguientes servicios permiten la creación de grupos por usuarios finales:
 
@@ -85,7 +85,7 @@ Los siguientes servicios permiten la creación de grupos por usuarios finales:
 - Planner
 - Project para la web
 - SharePoint
-- Stream
+- Secuencia
 - Microsoft Teams
 - Yammer
 
@@ -101,8 +101,8 @@ La experiencia de restricción de creación de grupos varía entre aplicaciones 
 |Planner|**El nuevo plan** explica que la creación de grupos se ha desactivado y ofrece agregar el plan a un grupo existente|
 |Project web y guía básica|**El menú** Crear grupo explica que la creación de grupos está restringida y sugiere el uso de un grupo existente.|
 |SharePoint|Sigue siendo capaz de crear un sitio de grupo que no esté conectado a un grupo.|
-|Stream|**La** opción Grupo no aparece en el **menú Crear**.|
-|Teams|El usuario no puede crear un equipo con un grupo nuevo, pero puede crear un equipo que use un grupo existente.<br><br>**Crear un botón** de equipo se reemplaza por **Crear equipo desde un grupo.**|
+|Secuencia|**La** opción Grupo no aparece en el **menú Crear**.|
+|Teams|El usuario no puede crear un equipo con un grupo nuevo, pero puede crear un equipo que use un grupo existente.<br><br>**Crear un botón** de equipo se reemplaza por **Crear equipo desde un grupo**.|
 |Yammer|**Crear una opción de** grupo se quita de la navegación grupos/comunidades principales.|
 
 ## <a name="services-interactions-with-groups"></a>Interacciones de servicios con grupos
@@ -119,17 +119,17 @@ En la tabla siguiente se proporciona información general sobre Microsoft 365 de
 |---|---|---|---|---|
 |Azure AD|Pertenencia, Controles de grupo, Invitados|Sí|Sí|Sí|
 |Exchange|Calendario, buzón|Sí|Sí|Sí|
-|Formularios|Form|Sí|No|No|
+|Forms|Formulario|Sí|No|No|
 |OneNote|Bloc de notas|Sí|No|No|
 |Planner|Panel de tareas|No|Sí|Sí|
-|Power Apps app|Aplicación|Sí|No|No|
+|Power Apps aplicación|Aplicación|Sí|No|No|
 |Power Automate|Flujo de trabajo|Sí|No|No|
 |Power BI (clásico)|Área de trabajo|No|Sí|Sí|
 |Power BI (nuevo)|Área de trabajo|Sí|No|Sí|
 |Project para la web|Project plan|Sí|Sí|No|
 |Guía básica|Guía básica|Sí|Sí|No|
 |SharePoint|Site|Sí|Sí|Sí|
-|Stream|Canal, vídeo|Sí|Sí|Sí|
+|Secuencia|Canal, vídeo|Sí|Sí|Sí|
 |Teams|Equipo|No|Sí|Sí|
 |Yammer|Group|Sí|Sí|Sí|
 
@@ -159,7 +159,7 @@ Sí, Azure AD un gran número de servicios que no tienen relación con Microsoft
 
 No, solo hay una instancia de Azure AD.
 
-**¿Azure AD asociarse con varios grupos?**
+**¿Azure AD asociarse a varios grupos?**
 
 Sí, porque Azure AD es la plataforma subyacente que proporciona el servicio de pertenencia a grupos.
 
@@ -219,11 +219,11 @@ Exchange Online proporciona mensajería, calendario, contacto y funcionalidad as
 
 **¿Exchange crear un grupo?**
 
-Sí, es posible crear un grupo desde el Exchange Online de administración, así como desde Outlook. También puede convertir listas Exchange distribución a Microsoft 365 grupos.
+Sí, es posible crear un grupo desde el centro Exchange Online administración, así como desde Outlook. También puede convertir listas Exchange distribución a Microsoft 365 grupos.
 
 **¿Exchange existe sin un grupo?**
 
-Sí, Exchange Online proporciona varios servicios, incluidos los buzones y calendarios compartidos, sin ninguna asociación de grupo.
+Sí, Exchange Online varios servicios, incluidos los buzones y calendarios compartidos, sin ninguna asociación de grupo.
 
 **¿Puede haber varias instancias de buzones Exchange o calendarios por grupo?**
 
@@ -233,15 +233,15 @@ No, solo puede haber un único buzón Exchange Online y un calendario para un gr
 
 No, el buzón y el calendario tienen una relación 1:1 con el grupo. Es posible compartir el buzón con otros usuarios o grupos, pero esto no establece ninguna forma de asociación de servicio.
 
-**¿Puede Exchange la asociación del buzón o calendario con un grupo?**
+**¿Puede Exchange la asociación del buzón de correo o calendario con un grupo?**
 
 No, el buzón y el calendario no se pueden cambiar a un grupo diferente. Sin embargo, el contenido se puede mover de un buzón a otro dentro de Outlook o mediante una herramienta de terceros.
 
 **¿Elimina el buzón de correo el grupo?**
 
-Sí, al eliminar el buzón de Exchange se eliminará el grupo, así como los servicios y el contenido asociados al grupo.
+Sí, al eliminar el buzón de Exchange se eliminará el grupo, así como el contenido y los servicios asociados al grupo.
 
-## <a name="forms"></a>Formularios
+## <a name="forms"></a>Forms
 
 Forms proporciona encuestas y cuestionarios basados en web.
 
@@ -291,7 +291,7 @@ Sí, los blocs de notas se pueden crear directamente en OneDrive o en otras ubic
 
 **¿Puede haber varios blocs OneNote por grupo?**
 
-Sí, se crea un bloc de notas de forma predeterminada y se pueden agregar otros, pero cualquier vínculo a OneNote de los servicios asociados al grupo siempre irá al bloc de notas predeterminado.
+Sí, un bloc de notas se crea de forma predeterminada y se pueden agregar otros, pero cualquier vínculo a OneNote de servicios asociados a grupos siempre irá al bloc de notas predeterminado.
 
 **¿Se puede asociar OneNote bloc de notas a varios grupos?**
 
@@ -303,7 +303,7 @@ No, el bloc de notas en sí está asociado al grupo y se puede acceder directame
 
 **¿Elimina el bloc de notas el grupo?**
 
-No, sin embargo, si OneNote bloc de notas se elimina, puede haber vínculos rotos en algunos de los servicios asociados al grupo.
+No, sin embargo, si se elimina OneNote bloc de notas puede haber vínculos rotos en algunos de los servicios asociados al grupo.
 
 ## <a name="planner"></a>Planner
 
@@ -369,7 +369,7 @@ Sí, una aplicación se puede compartir con varios grupos.
 Sí, como la asociación entre Power Apps y un grupo de Microsoft 365 está compartiendo solo: la aplicación sigue residiendo con el creador.
 
 > [!IMPORTANT]
-> [Los grupos deben estar habilitados para que las aplicaciones puedan compartirse con ellos.](/powerapps/maker/canvas-apps/share-app#share-an-app-with-office-365-groups)
+> [Los grupos deben estar habilitados para que las aplicaciones puedan compartirse con ellos](/powerapps/maker/canvas-apps/share-app#share-an-app-with-office-365-groups).
 
 **¿Elimina la aplicación el grupo?**
 
@@ -461,7 +461,7 @@ Sí, es posible crear informes y áreas de trabajo en Power BI que no estén aso
 
 **¿Puede haber varias áreas de trabajo por grupo?**
 
-Sí, [varias áreas de trabajo creadas por Power BI pueden compartirse con un único grupo](/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace).
+Sí, [varias áreas de trabajo creadas por Power BI pueden compartirse con un solo grupo](/power-bi/collaborate-share/service-create-the-new-workspaces#give-access-to-your-workspace).
 
 **¿Se puede asociar un área de trabajo a varios grupos?**
 
@@ -473,7 +473,7 @@ Sí y no. Un área de trabajo creada por Power BI solo se puede asociar a un sol
 
 **¿Elimina el área de trabajo el grupo?**
 
-Sí, al eliminar el área de trabajo en Power BI se eliminará el contenido y los servicios asociados al grupo.
+Sí, al eliminar el área de trabajo Power BI se eliminará el contenido y los servicios asociados al grupo.
 
 ## <a name="project-for-the-web"></a>Project para la web
 
@@ -488,7 +488,7 @@ Sí, es posible crear un nuevo grupo de Microsoft 365 directamente desde Project
 
 **¿Existen proyectos sin un grupo?**
 
-Sí, los proyectos pueden existir sin estar asociados a un grupo Microsoft 365, pero la asignación de tareas requiere asociación de grupo.
+Sí, los proyectos pueden existir sin estar asociados a Microsoft 365 grupo, pero la asignación de tareas requiere una asociación de grupo.
 
 **¿Puede haber varios proyectos por grupo?**
 
@@ -504,7 +504,7 @@ No, una vez establecida la asociación con un grupo, no puede cambiar.
 
 **¿Elimina el proyecto el grupo?**
 
-No, la eliminación del proyecto en Project para la web no eliminará el grupo.
+No, al eliminar el proyecto en Project para la web no se eliminará el grupo.
 
 ## <a name="roadmap"></a>Guía básica
 
@@ -520,7 +520,7 @@ Sí, es posible crear un nuevo grupo de Microsoft 365 directamente desde el mapa
 
 **¿Existe roadmap sin un grupo?**
 
-Sí, pueden existir hojas de ruta sin estar asociadas con un grupo Microsoft 365, pero para compartir la hoja de ruta es necesario asociarse a un grupo.
+Sí, las hojas de ruta pueden existir sin estar asociadas con un grupo Microsoft 365, pero para compartir la guía básica es necesario asociarse a un grupo.
 
 **¿Puede haber varias hojas de ruta por grupo?**
 
@@ -558,7 +558,7 @@ Sí, SharePoint ofrece varios sitios y servicios no asociados a grupos, como sit
 
 **¿Puede haber varios sitios por grupo?**
 
-No, solo puede haber un solo sitio por grupo. Los canales privados Teams usar sitios adicionales que no están conectados al grupo.
+No, solo puede haber un solo sitio por grupo. Los canales privados y compartidos Teams usar sitios adicionales que no están conectados al grupo.
 
 **¿Los sitios se pueden asociar a varios grupos?**
 
@@ -572,7 +572,7 @@ No, el propio sitio está asociado con el grupo, pero el contenido se puede move
 
 Sí, al eliminar el sitio en SharePoint se eliminará el contenido y los servicios asociados a grupos y grupos.
 
-## <a name="stream"></a>Stream
+## <a name="stream"></a>Secuencia
 
 Microsoft Stream es una plataforma de hospedaje y uso compartido de vídeo.
 
@@ -624,17 +624,17 @@ Sí, la creación de un nuevo grupo en Yammer creará un nuevo grupo de Microsof
 
 Un Yammer con un grupo Microsoft 365 asociado no se puede crear en ninguna interfaz o servicio que no sea Yammer propio.
 
-**¿Existe Yammer grupo sin Microsoft 365 grupo?**
+**¿Existe un Yammer sin un Microsoft 365 grupo?**
 
 Sí, es posible crear un grupo de Yammer sin un Microsoft 365 grupo.
 
-Si la plataforma Yammer no está conectada a grupos de Microsoft 365 o los usuarios no tienen la capacidad de crear un grupo de Microsoft 365, Yammer se crean grupos sin una asociación Microsoft 365 grupo.
+Si la plataforma Yammer no está conectada a grupos de Microsoft 365 o los usuarios no tienen la capacidad de crear un grupo de Microsoft 365, Yammer se crean grupos sin una asociación de grupo Microsoft 365.
 
 **¿Puede haber varios Yammer por Microsoft 365 grupo?**
 
 No, la relación entre un grupo Yammer y un grupo Microsoft 365 es 1:1.
 
-**¿Se puede asociar Yammer grupo a varios Microsoft 365 grupo?**
+**¿Se puede Yammer un grupo de servidores con varios Microsoft 365 grupo?**
 
 No, el Yammer solo se puede asociar a un único Microsoft 365 grupo. Es posible que las publicaciones se compartan con otros grupos de Yammer se puedan mover a ellos.
 

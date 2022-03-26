@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 5ffbe15fe9fa06e7c06546f9452d6c4f2bddfc39
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 77edaa3d71911bd0594e707996c320285dddabc5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329619"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754112"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Referencia de reglas de reducción de superficie de ataque
 
@@ -47,62 +47,62 @@ En este artículo se proporciona información sobre las reglas de reducción de 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-En la tabla siguiente se enumeran los sistemas operativos compatibles para las reglas de reducción de superficie de ataque que actualmente son productos de versión preliminar. Las reglas se enumeran en orden alfabético. A menos que se indique lo contrario, la compilación mínima de Windows10&nbsp; es la versión 1709 (RS3, compilación 16299) o posterior; la compilación mínima de WindowsServer&nbsp; es la versión 1809 o posterior.
+En la tabla siguiente se enumeran los sistemas operativos compatibles para las reglas de reducción de superficie de ataque que actualmente son productos de versión preliminar. Las reglas se enumeran en orden alfabético. A&nbsp; menos que se indique lo contrario, la compilación mínima de Windows&nbsp; 10 es la versión 1709 (RS3, compilación 16299) o posterior; la compilación mínima de Windows Server es la versión 1809 o posterior.
 
 > [!NOTE]
-> Las reglas de reducción de superficie de ataque en WindowsServer2012R2&nbsp;&nbsp;&nbsp; y WindowsServer2016&nbsp;&nbsp; están disponibles para dispositivos incorporados con el paquete de soluciones unificado moderno. Para obtener más información, consulta [Nueva funcionalidad en la solución unificada moderna para Windows Server 2012 R2 y 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
+> Las reglas de reducción de superficie de ataque de Windows&nbsp; Server2012R2&nbsp;&nbsp; y Windows&nbsp; Server2016&nbsp; están disponibles para dispositivos incorporados mediante el paquete de soluciones unificado moderno. Para obtener más información, vea [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 >
 
-| Nombre de regla | WindowsServer&nbsp; 2016 <sup>[[1](#fn1)]<sup></sup> | WindowsServer&nbsp; 2012 R2 <sup>[[1](#fn1)]<sup></sup> |
+| Nombre de regla | &nbsp;Windows Server 2016 <sup>[[1](#fn1)]<sup></sup> | &nbsp;Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup> |
 |---|:---:|:---:|
 |[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v |
 |[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | v | v |
-|[Impedir que todas las aplicaciones de Office creen procesos secundarios](#block-all-office-applications-from-creating-child-processes) | v | v |
-|[Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v | v |
+|[Bloquear todas Office aplicaciones de creación de procesos secundarios](#block-all-office-applications-from-creating-child-processes) | v | v |
+|[Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v | v |
 |[Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](#block-executable-content-from-email-client-and-webmail) | v | v |
 |[Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | v | v |
 |[Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts) | v | v |
 |[Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | N | N |
-|[Impedir que las aplicaciones de Office creen contenido ejecutable](#block-office-applications-from-creating-executable-content) | v | v |
-|[Impedir que las aplicaciones de Office inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)  | v | v |
-|[Impedir que la aplicación de comunicación de Office cree procesos secundarios](#block-office-communication-application-from-creating-child-processes) | v | v |
+|[Bloquear Office aplicaciones de creación de contenido ejecutable](#block-office-applications-from-creating-executable-content) | v | v |
+|[Bloquear Office aplicaciones para que no inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)  | v | v |
+|[Bloquear Office de comunicación para que no cree procesos secundarios](#block-office-communication-application-from-creating-child-processes) | v | v |
 |[Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription) \* _No se admiten exclusiones de archivos y carpetas._ | N | N |
 |[Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | v | v |
 |[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v |
-|[Bloquear llamadas a la API de Win32 desde macros de Office](#block-win32-api-calls-from-office-macros) | N | N |
+|[Bloquear llamadas a la API de Win32 desde Office macros](#block-win32-api-calls-from-office-macros) | N | N |
 |[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | v | v |
 |  |  |  |
 
-(<a id="fn1">1</a>) Hace referencia a la solución moderna y unificada para Windows Server 2012 y 2016. Para obtener más información, [consulta Incorporación de servidores de Windows al servicio defender para puntos de conexión](configure-server-endpoints.md).
+(<a id="fn1">1</a>) Hace referencia a la solución moderna y unificada para Windows Server 2012 y 2016. Para obtener más información, [vea Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
 _End Public Preview: Sistemas operativos compatibles_
 
-## <a name="supported-operating-systems"></a>Sistemas operativos admitidos
+## <a name="supported-operating-systems"></a>Sistemas operativos compatibles 
 
 En la tabla siguiente se enumeran los sistemas operativos compatibles para las reglas que actualmente se liberan a disponibilidad general. Las reglas se enumeran en orden alfabético.
 
 > [!Note]
 >
-> A menos que se indique lo contrario, la compilación mínima de Windows10&nbsp; es la versión 1709 (RS3, compilación 16299) o posterior; la compilación mínima de WindowsServer&nbsp; es la versión 1809 o posterior.
+> A&nbsp; menos que se indique lo contrario, la compilación mínima de Windows&nbsp; 10 es la versión 1709 (RS3, compilación 16299) o posterior; la compilación mínima de Windows Server es la versión 1809 o posterior.
 >
 
-|Nombre de regla|Windows10&nbsp;|WindowsServer&nbsp; 2019|WindowsServer&nbsp;|
+|Nombre de regla|&nbsp;Windows 10|&nbsp;Windows Server 2019|&nbsp;Windows Server|
 |---|:---:|:---:|:---:|
 |[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | v <br><br> versión 1803 (canal semianual) o posterior |
 |[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | Versión Y 1809 o posterior | v | v  <br><br> |
-|[Impedir que todas las aplicaciones de Office creen procesos secundarios](#block-all-office-applications-from-creating-child-processes) | v | v | v <br><br> |
-|[Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Versión Y 1803 o posterior | v <br><br> | v <br><br> |
+|[Bloquear todas Office aplicaciones de creación de procesos secundarios](#block-all-office-applications-from-creating-child-processes) | v | v | v <br><br> |
+|[Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Versión Y 1803 o posterior | v <br><br> | v <br><br> |
 |[Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](#block-executable-content-from-email-client-and-webmail) | v | v <br><br> | v <br><br> |
 |[Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Versión Y 1803 o posterior | v <br><br> | v <br><br> |
 |[Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts) | v | v <br><br> | v <br><br> |
 |[Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | v | v <br><br> | v <br><br> |
-|[Impedir que las aplicaciones de Office creen contenido ejecutable](#block-office-applications-from-creating-executable-content) | v | v <br><br> | v <br><br> |
-|[Impedir que las aplicaciones de Office inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)  | v | v <br><br> | v <br><br> |
-|[Impedir que la aplicación de comunicación de Office cree procesos secundarios](#block-office-communication-application-from-creating-child-processes) | v | v <br><br> | v <br><br> |
+|[Bloquear Office aplicaciones de creación de contenido ejecutable](#block-office-applications-from-creating-executable-content) | v | v <br><br> | v <br><br> |
+|[Bloquear Office aplicaciones para que no inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)  | v | v <br><br> | v <br><br> |
+|[Bloquear Office de comunicación para que no cree procesos secundarios](#block-office-communication-application-from-creating-child-processes) | v | v <br><br> | v <br><br> |
 |[Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription) <br><br> \*_No se admiten exclusiones de archivos y carpetas._ | Versión Y 1903 (compilación 18362) o posterior| v | v <br><br> versión 1903 (compilación 18362) o posterior |
 |[Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | Versión Y 1803 o posterior | v <br><br> | v <br><br>  |
 |[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v <br><br> | v <br><br> |
-|[Bloquear llamadas a la API de Win32 desde macros de Office](#block-win32-api-calls-from-office-macros) | v | v <br><br> | v <br><br> |
+|[Bloquear llamadas a la API de Win32 desde Office macros](#block-win32-api-calls-from-office-macros) | v | v <br><br> | v <br><br> |
 |[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | Versión Y 1803 o posterior | v <br><br> | v <br><br> |
 |  |  |  |  |
 
@@ -112,10 +112,10 @@ Los vínculos a información sobre las versiones del sistema de administración 
 
 |Nombre de regla | Intune | Microsoft Endpoint Manager |Microsoft Endpoint Configuration Manager |Directiva de grupo<sup>[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v  | Y MEM OMA-URI |   | v  |  v |
+|[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v  | Y MEM OMA-URI |   | v  |  v  |
 |[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | v |   | v | v  | v  |
-|[Impedir que todas las aplicaciones de Office creen procesos secundarios](#block-all-office-applications-from-creating-child-processes) | v |   |v <br><br> CB 1710 | v  | v  |
-|[Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v  |   | v <br><br>CB 1802 | v  | v  |
+|[Bloquear todas Office aplicaciones de creación de procesos secundarios](#block-all-office-applications-from-creating-child-processes) | v |   |v <br><br> CB 1710 | v  | v  |
+|[Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v  |   | v <br><br>CB 1802 | v  | v  |
 |[Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](#block-executable-content-from-email-client-and-webmail) | v |  |v <br><br> CB 1710 | v | v  |
 |[Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | v |   | v <br><br> CB 1802 |  v |  v |
 |[Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts) | v |   |  v  <br><br> CB 1710 | v  | v  |
@@ -157,13 +157,13 @@ Para las reglas con el "Estado de regla" especificado:
 |[Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) |   | N | v |
 |[Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Requiere dispositivo en el nivel de bloque de nube alta  | N \| Y <br> Requiere dispositivo en el nivel de bloque de nube alta |
 |[Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Bloquear | v <br> Requiere dispositivo en el nivel de bloque de nube alta  | v <br> Requiere dispositivo en el nivel de bloque de nube alta |
-|[Impedir que las aplicaciones de Office creen contenido ejecutable](#block-office-applications-from-creating-executable-content) |   | N | v |
-|[Impedir que las aplicaciones de Office inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)  |   | N | v |
-|[Impedir que la aplicación de comunicación de Office cree procesos secundarios](#block-office-communication-application-from-creating-child-processes) |  |  N | v |
+|[Bloquear Office aplicaciones de creación de contenido ejecutable](#block-office-applications-from-creating-executable-content) |   | N | v |
+|[Bloquear Office aplicaciones para que no inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)  |   | N | v |
+|[Bloquear Office de comunicación para que no cree procesos secundarios](#block-office-communication-application-from-creating-child-processes) |  |  N | v |
 |[Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Requiere dispositivo en el nivel de bloque de nube alta  | N \| Y <br> Requiere dispositivo en el nivel de bloque de nube alta |
 |[Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | v |
 |[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Requiere dispositivo en el nivel de bloque de nube alta  | N \| Y <br> Requiere dispositivo en el nivel de bloque de nube alta |
-|[Bloquear llamadas a la API de Win32 desde macros de Office](#block-win32-api-calls-from-office-macros) |   | N | v |
+|[Bloquear llamadas a la API de Win32 desde Office macros](#block-win32-api-calls-from-office-macros) |   | N | v |
 |[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Requiere dispositivo en el nivel de bloque de nube alta  | N \| Y <br> Requiere dispositivo en el nivel de bloque de nube alta |
 |   |   |   |   |
   
@@ -236,11 +236,11 @@ Tipo de acción de búsqueda avanzada:
 
 Dependencias: MDAV
 
-### <a name="block-all-office-applications-from-creating-child-processes"></a>Impedir que todas las aplicaciones de Office creen procesos secundarios
+### <a name="block-all-office-applications-from-creating-child-processes"></a>Bloquear todas Office aplicaciones de creación de procesos secundarios
 
-Esta regla impide que las aplicaciones de Office creen procesos secundarios. Las aplicaciones de Office incluyen Word, Excel, PowerPoint, OneNote y Access.
+Esta regla impide que Office aplicaciones creen procesos secundarios. Office aplicaciones incluyen Word, Excel, PowerPoint, OneNote y Access.
 
-Crear procesos secundarios malintencionados es una estrategia de malware común. El malware que abusa de Office como vector a menudo ejecuta macros de VBA y aprovecha el código para descargar e intentar ejecutar más cargas. Sin embargo, algunas aplicaciones legítimas de línea de negocio también pueden generar procesos secundarios con fines benignos; como generar un símbolo del sistema o usar PowerShell para configurar la configuración del Registro.
+Crear procesos secundarios malintencionados es una estrategia de malware común. El malware que abusa Office como vector a menudo ejecuta macros de VBA y aprovecha el código para descargar e intentar ejecutar más cargas. Sin embargo, algunas aplicaciones legítimas de línea de negocio también pueden generar procesos secundarios con fines benignos; como generar un símbolo del sistema o usar PowerShell para configurar la configuración del Registro.
 
 Nombre de Intune: `Office apps launching child processes`
 
@@ -255,11 +255,11 @@ Tipo de acción de búsqueda avanzada:
 
 Dependencias: MDAV
 
-### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows
+### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local
 
 Esta regla ayuda a evitar el robo de credenciales bloqueando el Servicio de subsistema de autoridad de seguridad local (LSASS).
 
-LSASS autentica a los usuarios que inician sesión en un equipo con Windows. Credential Guard de Microsoft Defender en Windows normalmente impide los intentos de extraer credenciales de LSASS. Sin embargo, algunas organizaciones no pueden habilitar Credential Guard en todos sus equipos debido a problemas de compatibilidad con controladores de tarjeta inteligente personalizados u otros programas que se cargan en la Autoridad de seguridad local (LSA). En estos casos, los atacantes pueden usar herramientas de pirateo como Mimikatz para raspar contraseñas de texto no cifrado y hash NTLM de LSASS.
+LSASS autentica a los usuarios que inician sesión en un Windows equipo. Credential Guard de Microsoft Defender en Windows normalmente impide los intentos de extraer credenciales de LSASS. Sin embargo, algunas organizaciones no pueden habilitar Credential Guard en todos sus equipos debido a problemas de compatibilidad con controladores de tarjeta inteligente personalizados u otros programas que se cargan en la Autoridad de seguridad local (LSA). En estos casos, los atacantes pueden usar herramientas de pirateo como Mimikatz para raspar contraseñas de texto no cifrado y hash NTLM de LSASS.
 
 > [!NOTE]
 > En algunas aplicaciones, el código enumera todos los procesos en ejecución e intenta abrirlos con permisos exhaustivos. Esta regla deniega la acción de apertura del proceso de la aplicación y registra los detalles en el registro de eventos de seguridad. Esta regla puede generar mucho ruido. Si tienes una aplicación que simplemente enumera LSASS, pero no tiene ningún impacto real en la funcionalidad, no es necesario agregarla a la lista de exclusión. Por sí mismo, esta entrada de registro de eventos no indica necesariamente una amenaza malintencionada.
@@ -418,7 +418,7 @@ Esta regla impide que Outlook procesos secundarios, a la vez que permite funcion
 Esta regla protege contra los ataques de ingeniería social e impide que el código de explotación abuse de vulnerabilidades en Outlook. También protege contra las Outlook y las vulnerabilidades de formulario [que los atacantes](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) pueden usar cuando las credenciales de un usuario están en peligro.
 
 > [!NOTE]
-> Esta regla bloquea las sugerencias de directiva DLP y las sugerencias de herramientas en Outlook. Esta regla se aplica a Outlook y Outlook.com solo.
+> Esta regla bloquea las sugerencias de directiva DLP y las sugerencias de herramientas en Outlook. Esta regla solo se aplica Outlook y Outlook.com.
 
 Nombre de Intune: `Process creation from Office communication products (beta)`
 
@@ -460,7 +460,7 @@ Dependencias: MDAV, RPC
 Esta regla bloquea la ejecución de los procesos [creados a través de PsExec](/sysinternals/downloads/psexec) [y WMI](/windows/win32/wmisdk/about-wmi) . Tanto PsExec como WMI pueden ejecutar código de forma remota, por lo que existe el riesgo de que el malware abuse de esta funcionalidad con fines de comando y control, o de propagar una infección a través de la red de una organización.
 
 > [!WARNING]
-> Solo usa esta regla si estás administrando tus dispositivos con [Intune](/intune) u otra solución MDM. Esta regla es incompatible con la administración a través de [Microsoft Endpoint Configuration Manager](/configmgr) porque esta regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente.
+> Solo usa esta regla si estás administrando tus dispositivos con [Intune](/intune) u otra solución MDM. Esta regla es incompatible con la administración a [Microsoft Endpoint Configuration Manager](/configmgr) porque esta regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente.
 
 Nombre de Intune: `Process creation from PSExec and WMI commands`
 
@@ -492,11 +492,11 @@ Tipo de acción de búsqueda avanzada:
 
 Dependencias: MDAV
 
-### <a name="block-win32-api-calls-from-office-macros"></a>Bloquear llamadas a la API de Win32 desde macros de Office
+### <a name="block-win32-api-calls-from-office-macros"></a>Bloquear llamadas a la API de Win32 desde Office macros
 
 Esta regla impide que las macros de VBA llamen a las API de Win32.
 
-VBA de Office habilita las llamadas a la API de Win32. El malware puede abusar de esta funcionalidad, como llamar a las [API de Win32 para iniciar el código de shell malintencionado](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) sin escribir nada directamente en el disco. La mayoría de las organizaciones no dependen de la capacidad de llamar a las API de Win32 en su funcionamiento diario, incluso si usan macros de otras maneras.
+Office VBA habilita las llamadas a la API de Win32. El malware puede abusar de esta funcionalidad, como llamar a las [API de Win32 para iniciar el código de shell malintencionado](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) sin escribir nada directamente en el disco. La mayoría de las organizaciones no dependen de la capacidad de llamar a las API de Win32 en su funcionamiento diario, incluso si usan macros de otras maneras.
 
 Sistemas operativos compatibles:
 

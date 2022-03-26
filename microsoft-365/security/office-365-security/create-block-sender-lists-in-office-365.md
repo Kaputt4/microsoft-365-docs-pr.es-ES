@@ -8,18 +8,19 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 search.appverid:
 - MET150s
 description: Los administradores pueden obtener información sobre las opciones disponibles y preferidas para bloquear los mensajes entrantes en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 71f6312f160a445c184a52f96493360af8b9a360
-ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
+ms.openlocfilehash: bf47fd7723bc1fe9cdef1b57cf16e1948112e749
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62896092"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675656"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Crear listas de remitentes bloqueados en EOP
 
@@ -30,7 +31,7 @@ ms.locfileid: "62896092"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En Microsoft 365 Exchange Online organizaciones con buzones de correo en organizaciones de Exchange Online Protection o independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, EOP ofrece varias formas de bloquear el correo electrónico de remitentes no deseados. Estas opciones incluyen Outlook remitentes bloqueados, listas de remitentes bloqueados o listas de dominios bloqueados en directivas contra correo no deseado, reglas de flujo de correo Exchange (también conocidas como reglas de transporte) y la lista de direcciones IP bloqueadas (filtrado de conexiones). Colectivamente, puede pensar en estas opciones como listas _de remitentes bloqueadas_.
+En Microsoft 365 con buzones en organizaciones de Exchange Online o independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, EOP ofrece varias formas de bloquear el correo electrónico de remitentes no deseados. Estas opciones incluyen Outlook remitentes bloqueados, listas de remitentes bloqueados o listas de dominios bloqueados en directivas contra correo no deseado, reglas de flujo de correo Exchange (también conocidas como reglas de transporte) y la lista de direcciones IP bloqueadas (filtrado de conexiones). Colectivamente, puede pensar en estas opciones como listas _de remitentes bloqueadas_.
 
 El mejor método para bloquear remitentes varía en función del ámbito de impacto. Para un único usuario, la solución correcta podría ser Outlook remitentes bloqueados. Para muchos usuarios, una de las otras opciones sería más apropiada. Las siguientes opciones se clasifican por ámbito de impacto y amplitud. La lista va de estrecha a amplia, pero _lee los detalles para_ obtener recomendaciones completa.
 
