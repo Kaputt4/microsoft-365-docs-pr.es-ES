@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 846fd6854b8e2dcb408aaa55348380bb91c6b907
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: a12c81635f712dd0fac70101348d30bc1dc4f154
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172072"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754635"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Habilitar el entorno de evaluación de Microsoft Defender para puntos de conexión
 
@@ -39,7 +39,7 @@ Este artículo le guiará a través de los pasos para configurar el entorno de e
 
 Siga estos pasos para habilitar la evaluación de Microsoft Defender para endpoint.
 
-![Pasos para habilitar Microsoft Defender para endpoint en el entorno de evaluación de Microsoft Defender.](../../media/defender/m365-defender-endpoint-eval-enable-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-enable-steps.png" alt-text="Pasos para habilitar Microsoft Defender para endpoint en el entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-eval-enable-steps.png":::
 
 - [Paso 1. Comprobar el estado de la licencia](#step-1-check-license-state)
 - [Paso 2. Puntos de conexión integrados](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
@@ -47,24 +47,25 @@ Siga estos pasos para habilitar la evaluación de Microsoft Defender para endpoi
 
 ## <a name="step-1-check-license-state"></a>Paso 1. Comprobar el estado de la licencia
 
-Primero tendrá que comprobar el estado de la licencia para comprobar que se aprovisionó correctamente. Puede hacerlo a través del Centro de administración o a través **del portal Microsoft Azure .**
+Primero tendrá que comprobar el estado de la licencia para comprobar que se aprovisionó correctamente. Puede hacerlo a través del Centro de administración o a través **del portal Microsoft Azure administración**.
 
 
-1. Para ver las licencias, vaya al **portal de** Microsoft Azure y vaya a la sección Microsoft Azure licencia [del portal.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
+1. Para ver las licencias, vaya al portal de Microsoft Azure **y** vaya a la [sección Microsoft Azure licencia del portal.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
 
-   ![Imagen de la página Licencias de Azure.](../../media/defender/atp-licensing-azure-portal.png)
+   :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="La página Licencias de Azure en el portal Microsoft 365 Defender web" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
 
-1. Como alternativa, en el Centro de administración, vaya a **Suscripciones de**  >  **facturación.**
+1. Como alternativa, en el Centro de administración, vaya a **BillingSubscriptions** > .
 
-    En la pantalla, verá todas las licencias aprovisionadas y su estado **actual.**
+    En la pantalla, verá todas las licencias aprovisionadas y su estado **actual**.
 
-    ![Imagen de las licencias de facturación.](../../media/defender/atp-billing-subscriptions.png)
+    :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="La página Licencias de facturación del portal Microsoft Azure facturación" lightbox="../../media/defender/atp-billing-subscriptions.png":::
+    
 
 ## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>Paso 2. Incorporación de puntos de conexión con cualquiera de las herramientas de administración admitidas
 
 Después de comprobar que el estado de la licencia se ha aprovisionado correctamente, puede iniciar la incorporación de dispositivos al servicio. 
 
-Con el fin de evaluar Microsoft Defender para Endpoint, recomendamos elegir un par de dispositivos Windows para realizar la evaluación.
+Con el fin de evaluar Microsoft Defender para Endpoint, se recomienda elegir un par de dispositivos Windows para realizar la evaluación.
 
 Puedes elegir usar cualquiera de las herramientas de administración admitidas, pero Intune proporciona una integración óptima. Para obtener más información, vea [Configure Microsoft Defender for Endpoint in Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune).
 
@@ -80,8 +81,8 @@ En la tabla siguiente se enumeran las herramientas disponibles en función del e
 
 Punto de conexión | Opciones de herramientas
 :---|:---
-**Windows** | [Script local (hasta 10 dispositivos),](../defender-endpoint/configure-endpoints-script.md)Directiva de grupo [,](../defender-endpoint/configure-endpoints-gp.md) [Microsoft Endpoint Manager/ Administrador](../defender-endpoint/configure-endpoints-mdm.md)de dispositivos móviles , [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md), [scripts VDI](../defender-endpoint/configure-endpoints-vdi.md), [Integración](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender) con Microsoft Defender para la nube
-**macOS** | [Scripts locales](../defender-endpoint/mac-install-manually.md), [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md), [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md), Administración [de dispositivos móviles](../defender-endpoint/mac-install-with-other-mdm.md)
+**Windows** | [Script local (hasta 10](../defender-endpoint/configure-endpoints-script.md) dispositivos), directiva de [grupo,](../defender-endpoint/configure-endpoints-gp.md) administrador de dispositivos Microsoft Endpoint Manager[/](../defender-endpoint/configure-endpoints-mdm.md) móvil, [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md), [scripts VDI](../defender-endpoint/configure-endpoints-vdi.md), [integración con Microsoft Defender para la nube](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)
+**macOS** | [Scripts locales](../defender-endpoint/mac-install-manually.md), [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md), [jamf Pro](../defender-endpoint/mac-install-with-jamf.md), [administración de dispositivos móviles](../defender-endpoint/mac-install-with-other-mdm.md)
 **Servidor Linux** | [Script local](../defender-endpoint/linux-install-manually.md),  [Puppet](../defender-endpoint/linux-install-with-puppet.md),  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
 **iOS** | [Basado en aplicaciones](../defender-endpoint/ios-install.md)
 **Android** | [Microsoft Endpoint Manager](../defender-endpoint/android-intune.md)

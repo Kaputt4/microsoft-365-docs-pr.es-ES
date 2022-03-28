@@ -7,6 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
@@ -14,12 +15,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar la información sobre el estado del flujo de correo de dominio superior en el panel flujo de correo del Centro de seguridad & cumplimiento para solucionar problemas de flujo de correo relacionados con sus registros MX.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e4ed59e31cd21826eebf306e566610d54635f0c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3994859c1d5a4e0026f61dcc24a9735c6122ad15
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174212"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465429"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Información de estado del flujo de correo de dominio superior en el Centro de seguridad & cumplimiento
 
@@ -30,13 +31,13 @@ ms.locfileid: "60174212"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-La **información sobre el** estado [](mail-flow-insights-v2.md) del flujo de correo de dominio superior en el panel Flujo de correo del Centro de seguridad [& cumplimiento](https://protection.office.com) le proporciona el estado del flujo de correo actual de su organización.
+La **información sobre el estado del flujo** de correo [](mail-flow-insights-v2.md) de dominio superior en el panel Flujo de correo del Centro de seguridad [& cumplimiento](https://protection.office.com) le proporciona el estado del flujo de correo actual de su organización.
 
 Esta información le ayuda a identificar y solucionar problemas de dominios que están experimentando problemas ***de flujo de*** correo. Por ejemplo, el dominio no puede recibir correo electrónico externo porque el dominio ha expirado o el dominio tiene un registro MX incorrecto.
 
-![Widget de estado de flujo de dominio superior en el panel Flujo de correo del Centro de seguridad & cumplimiento.](../../media/mfi-top-domain-mail-flow-status-widget.png)
+:::image type="content" source="../../media/mfi-top-domain-mail-flow-status-widget.png" alt-text="El widget Estado del flujo de dominio superior en el panel Flujo de correo en el Centro de seguridad & cumplimiento" lightbox="../../media/mfi-top-domain-mail-flow-status-widget.png":::
 
-Al hacer clic **en Ver detalles** en el widget, aparece un control flotante Estado del dominio que muestra más detalles sobre el estado de cada dominio: 
+Al hacer clic **en Ver detalles** en el widget, aparece **un control flotante** Estado del dominio que muestra más detalles sobre el estado de cada dominio:
 
 - **Dominio**
 - **Registro MX anterior**
@@ -48,8 +49,8 @@ Al hacer clic **en Ver detalles** en el widget, aparece un control flotante Esta
 
 Puede hacer clic **en Ver más** para ver la misma información para más dominios.
 
-![Los detalles se desván de la información de estado del flujo de correo de dominio superior.](../../media/mfi-top-domain-mail-flow-status-view-details.png)
+:::image type="content" source="../../media/mfi-top-domain-mail-flow-status-view-details.png" alt-text="El control desplegable Detalles de la información de estado del flujo de correo de dominio superior" lightbox="../../media/mfi-top-domain-mail-flow-status-view-details.png":::
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Para obtener información sobre otras perspectivas en el panel flujo de correo, vea Información sobre el flujo de correo en el [Centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

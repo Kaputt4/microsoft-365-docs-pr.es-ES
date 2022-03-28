@@ -1,5 +1,5 @@
 ---
-title: Tome medidas en los resultados de la consulta de búsqueda avanzada en Microsoft 365 Defender
+title: Tomar medidas en los resultados de la consulta de búsqueda avanzada en Microsoft 365 Defender
 description: Abordar rápidamente las amenazas y los activos afectados en los resultados avanzados de la consulta de búsqueda
 keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, tomar medidas
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cd4423ab63019b554157de3a05da3c6c7e7d3d4c
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: eb881611ad4b983eb80d028dfe3dee20c3ed6216
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60787061"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754678"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Realizar acciones en los resultados avanzados de la consulta de búsqueda
 
@@ -38,7 +38,7 @@ ms.locfileid: "60787061"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Puede contener rápidamente amenazas o solucionar activos en peligro que encuentre en la búsqueda avanzada [mediante](advanced-hunting-overview.md) opciones de acción eficaces y completas. Con estas opciones, puede:
+Puede contener rápidamente amenazas o solucionar activos en peligro que encuentre en la búsqueda [avanzada mediante opciones](advanced-hunting-overview.md) de acción eficaces y completas. Con estas opciones, puede:
 
 - Realizar varias acciones en dispositivos
 - Archivos en cuarentena
@@ -57,28 +57,28 @@ Puede realizar las siguientes acciones en dispositivos identificados por la `Dev
 - Iniciar una investigación automatizada para comprobar y corregir las amenazas en el dispositivo y posiblemente otros dispositivos afectados
 - Restringir la ejecución de aplicaciones solo a archivos ejecutables firmados por Microsoft, lo que impide la actividad de amenaza posterior a través de malware u otros ejecutables que no son de confianza
 
-Para obtener más información sobre cómo se realizan estas acciones de respuesta a través de Microsoft Defender para endpoint, lea acerca de las [acciones de respuesta en dispositivos](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
+Para obtener más información sobre cómo se realizan estas acciones de respuesta a través de Microsoft Defender para endpoint, lea sobre las [acciones de respuesta en dispositivos](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).
    
 ## <a name="quarantine-files"></a>Archivos en cuarentena
 Puede implementar la acción *de cuarentena* en los archivos para que se pongan automáticamente en cuarentena cuando se encuentren. Al seleccionar esta acción, puede elegir entre las siguientes columnas para identificar qué archivos de los resultados de la consulta se ponen en cuarentena:
 
-- `SHA1` — En la mayoría de las tablas de búsqueda avanzadas, este es el SHA-1 del archivo que se vio afectado por la acción grabada. Por ejemplo, si se copia un archivo, este sería el archivo copiado.
-- `InitiatingProcessSHA1` — En la mayoría de las tablas de búsqueda avanzadas, este es el archivo responsable de iniciar la acción grabada. Por ejemplo, si se inicia un proceso secundario, este sería el proceso primario. 
-- `SHA256` — Este es el equivalente SHA-256 del archivo identificado por la `SHA1` columna.
-- `InitiatingProcessSHA256` — Este es el equivalente SHA-256 del archivo identificado por la `InitiatingProcessSHA1` columna.
+- `SHA1`: En la mayoría de las tablas de búsqueda avanzadas, esta columna hace referencia al SHA-1 del archivo que se vio afectado por la acción grabada. Por ejemplo, si se copia un archivo, este archivo afectado sería el archivo copiado.
+- `InitiatingProcessSHA1`: en la mayoría de las tablas de búsqueda avanzadas, esta columna hace referencia al archivo responsable de iniciar la acción grabada. Por ejemplo, si se inicia un proceso secundario, este archivo de iniciador formaría parte del proceso primario. 
+- `SHA256`: Esta columna es el equivalente SHA-256 del archivo identificado por la `SHA1` columna.
+- `InitiatingProcessSHA256`: Esta columna es el equivalente SHA-256 del archivo identificado por la `InitiatingProcessSHA1` columna.
 
-Para obtener más información sobre cómo se toman las acciones de cuarentena y cómo se pueden restaurar los archivos, lea acerca de las [acciones de respuesta en los archivos](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
+Para obtener más información sobre cómo se toman las acciones de cuarentena y cómo se pueden restaurar los archivos, [lea acerca de las acciones de respuesta en los archivos](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
 
 >[!NOTE]
 >Para buscar archivos y ponerlos en cuarentena, los resultados de la consulta también deben incluir `DeviceId` valores como identificadores de dispositivo.  
 
 ## <a name="take-action"></a>Tomar medidas
-Para realizar cualquiera de las acciones descritas, seleccione uno o más registros en los resultados de la consulta y, a continuación, **seleccione Realizar acciones**. Un asistente le guiará a través del proceso de selección y envío de las acciones preferidas.
+Para realizar cualquiera de las acciones descritas, seleccione uno o varios registros en los resultados de la consulta y, a continuación, seleccione **Realizar acciones**. Un asistente le guiará a través del proceso de selección y envío de las acciones preferidas.
 
-![Imagen del registro seleccionado con panel para inspeccionar el registro.](../../media/take-action-multiple.png)
+:::image type="content" source="../../media/take-action-multiple.png" alt-text="La opción Realizar acciones en el portal Microsoft 365 Defender acción" lightbox="../../media/take-action-multiple.png":::
 
 ## <a name="review-actions-taken"></a>Revisar acciones realizadas
-Cada acción se registra individualmente en el centro [de acciones](m365d-action-center.md) en Historial **del centro** de acciones (  >   [security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Vaya al centro de acciones para comprobar el estado de cada acción.
+Cada acción se registra individualmente en el centro [de acciones](m365d-action-center.md) **en** >  Centro de **accionesHistory** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Vaya al centro de acciones para comprobar el estado de cada acción.
  
 >[!NOTE]
 >Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa la Microsoft 365 Defender](m365d-enable.md) para buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).

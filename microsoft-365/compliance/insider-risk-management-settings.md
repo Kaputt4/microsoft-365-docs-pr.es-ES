@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: f80ab9fcb0a3e057a20c22ff05c3a960cdf7eab4
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 4b14f2def771294bdfa05109d6060242736f26d5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512940"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754720"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
@@ -576,11 +576,15 @@ Complete los siguientes pasos para desactivar el análisis de riesgos de insider
 
 ## <a name="admin-notifications"></a>Notificaciones de administrador
 
-Las notificaciones de administrador envían automáticamente una notificación por correo electrónico a los usuarios incluidos en los grupos de roles *Insider Risk Management*, *Insider Risk Management Analysts* e *Insider Risk Management Investigators* cuando se genera la primera alerta para una nueva directiva. Esto está habilitado de forma predeterminada para todas las organizaciones y las directivas se comprueban cada 24 horas para las alertas de primera vez. Las notificaciones no se envían para las alertas que se producen en las directivas después de la primera alerta.
+Las notificaciones de administrador envían automáticamente una notificación por correo electrónico a grupos de roles de administración de riesgos de insider seleccionables. Puede habilitar las notificaciones y asignar los grupos de roles que recibirán las notificaciones para los siguientes escenarios:
 
-Si ha habilitado *insider risk* management Analytics para su organización, los miembros del grupo de roles Administración de riesgos de Insider reciben automáticamente una notificación por correo electrónico para obtener información de análisis inicial para las actividades de filtración, robo y pérdida de datos.
+- Envíe un correo electrónico de notificación cuando se genere la primera alerta para una nueva directiva. Las directivas se comprueban cada 24 horas para las alertas por primera vez y las notificaciones no se envían en alertas posteriores para la directiva.
+- Envíe un correo electrónico diario cuando se generen nuevas alertas de alta gravedad. Las directivas se comprueban cada 24 horas en busca de alertas de alta gravedad.
+- Enviar un correo electrónico semanal que resuma las directivas que tienen advertencias sin resolver
 
-Si prefiere deshabilitar las notificaciones de administrador, siga estos pasos:
+Si ha habilitado el análisis de administración de riesgos de insider para su organización, los miembros del grupo de roles Administración de riesgos de *Insider* reciben automáticamente una notificación por correo electrónico para obtener información de análisis inicial sobre pérdidas de datos, robos y actividades de exfiltración.
+
+Si prefiere deshabilitar las notificaciones de administración y análisis, siga estos pasos:
 
 1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), ve a **Insider risk managementInsider** >  **risk settings**.
 2. Seleccione la **página Notificaciones de administrador** .
@@ -590,5 +594,3 @@ Si prefiere deshabilitar las notificaciones de administrador, siga estos pasos:
     - **Enviar una notificación por correo electrónico cuando analytics esté desactivado**
 
 4. Seleccione **Guardar** para configurar y salir.
-
-![Configuración de notificaciones de administración de riesgos de Insider.](../media/insider-risk-admin-notifications.png)

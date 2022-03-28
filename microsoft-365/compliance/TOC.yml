@@ -342,7 +342,7 @@
               href: customize-a-built-in-sensitive-information-type.md
             - name: Modificar el esquema de coincidencia de datos exacto para usar una coincidencia configurable
               href: sit-modify-edm-schema-configurable-match.md
-            - name: Crear notificaciones para actividades de coincidencia exacta de datos (vista previa)
+            - name: Crear notificaciones para actividades de coincidencia exacta de datos
               href: sit-edm-notifications-activities.md
             - name: Administrar tipos personalizados de información confidencial en el Centro de cumplimiento
               href: sit-manage-custom-sits-compliance-center.md
@@ -517,6 +517,8 @@
               href: dlp-policy-reference.md
         - name: Introducción a DLP
           items:
+            - name: Configuración de la prevención de pérdida de datos de punto de conexión
+              href: dlp-configure-endpoint-settings.md
             - name: Introducción a la directiva predeterminada de DLP
               href: get-started-with-the-default-dlp-policy.md
             - name: Crear una directiva DLP a partir de una plantilla
@@ -533,6 +535,8 @@
               href: dlp-chrome-get-started.md
             - name: Introducción al panel de alertas de prevención de pérdida de datos
               href: dlp-alerts-dashboard-get-started.md
+            - name: Introducción a las directivas de prevención de pérdida de datos para Power BI (versión preliminar)
+              href: dlp-powerbi-get-started.md
         - name: Usar DLP
           items:
             - name: DLP y Microsoft Teams

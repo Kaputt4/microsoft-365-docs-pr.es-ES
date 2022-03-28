@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 65df8553f5ee3b7dd7876557398e0d4aa22c7bd5
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b0b94e4905a780be9a608c8e91967b47a4db7160
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323533"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465759"
 ---
 # <a name="create-and-manage-device-tags"></a>Crear y administrar etiquetas de dispositivos
 
@@ -56,11 +56,12 @@ Para agregar etiquetas de dispositivo con la API, consulte [API para agregar o q
 
 2. Seleccione **Administrar etiquetas** en la fila de Acciones de respuesta.
 
-    :::image type="content" alt-text="Imagen del botón administrar etiquetas." source="images/manage-tags-option.png":::
+    :::image type="content" source="images/manage-tags-option.png" alt-text="Imagen del botón administrar etiquetas" lightbox="images/manage-tags-option.png":::
+    
 
 3. Tipo para buscar o crear etiquetas
 
-    :::image type="content" alt-text="Imagen de agregar etiquetas en un dispositivo1." source="images/create-new-tag.png":::
+    :::image type="content" source="images/create-new-tag.png" alt-text="Agregar etiquetas en device1" lightbox="images/create-new-tag.png":::
 
 Las etiquetas se agregan a la vista de dispositivo y también se reflejarán en la **vista Inventario de** dispositivos. A continuación, puede usar el **filtro Etiquetas** para ver la lista relevante de dispositivos.
 
@@ -71,7 +72,7 @@ Las etiquetas se agregan a la vista de dispositivo y también se reflejarán en 
 
 También puede eliminar etiquetas de esta vista.
 
-:::image type="content" alt-text="Imagen de agregar etiquetas en un dispositivo2." source="images/new-tag-label-display.png":::
+:::image type="content" source="images/new-tag-label-display.png" alt-text="Agregar etiquetas en device2" lightbox="images/new-tag-label-display.png":::
 
 ## <a name="add-device-tags-by-setting-a-registry-key-value"></a>Agregar etiquetas de dispositivo estableciendo un valor de clave del Registro
 

@@ -14,15 +14,17 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 9f5d721148bdbd70347868d8e237a8454b33c346
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 14dfd8bd911be9eb3932f7664225532e493e8a80
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312101"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465385"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -156,7 +158,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
 1. Abra el centro Microsoft Endpoint Manager administración de Microsoft Endpoint Manager (MEM). En el **menú Inicio** , haga clic en  **Dispositivos**, seleccione **Perfiles de configuración** y, a continuación, haga clic **en Crear perfil**.
 
    > [!div class="mx-imgBorder"]
-   > ![MEM Crear perfil.](images/mem01-create-profile.png)
+   >  :::image type="content" source="images/mem01-create-profile.png" alt-text="La página Crear perfil en el portal Microsoft Endpoint Manager centro de administración" lightbox="images/mem01-create-profile.png":::
 
 2. En **Crear un perfil**, en las dos listas desplegables siguientes, seleccione lo siguiente:
 
@@ -167,17 +169,17 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
    Seleccione **Personalizado** y, a continuación, **seleccione Crear**.
 
    > [!div class="mx-imgBorder"]
-   > ![Atributos de perfil de regla de MEM.](images/mem02-profile-attributes.png)
+   > :::image type="content" source="images/mem02-profile-attributes.png" alt-text="Los atributos de perfil de regla en el portal Microsoft Endpoint Manager centro de administración" lightbox="images/mem02-profile-attributes.png":::
 
 3. La herramienta Plantilla personalizada se abre en el paso **1 Conceptos básicos**. En **1 Conceptos básicos**, en **Nombre**, escriba un nombre para la plantilla y, en **Descripción** , puede escribir una descripción (opcional).
 
    > [!div class="mx-imgBorder"]
-   > ![Atributos básicos de MEM.](images/mem03-1-basics.png)
+   > :::image type="content" source="images/mem03-1-basics.png" alt-text="Los atributos básicos del portal Microsoft Endpoint Manager centro de administración" lightbox="images/mem03-1-basics.png":::
 
 4. Haga clic en **Siguiente**. Paso **2 Se abren las opciones de** configuración. Para OMA-URI Configuración, haga clic en **Agregar**. Ahora aparecen dos opciones: **Agregar** y **Exportar**.
 
    > [!div class="mx-imgBorder"]
-   > ![Configuración de MEM.](images/mem04-2-configuration-settings.png)
+   > :::image type="content" source="images/mem04-2-configuration-settings.png" alt-text="Las opciones de configuración del portal Microsoft Endpoint Manager centro de administración" lightbox="images/mem04-2-configuration-settings.png":::
 
 5. Haga clic **en Agregar** de nuevo. Se **abre el Configuración agregar fila OMA-URI**. En **Agregar fila**, haga lo siguiente:
 
@@ -193,9 +195,9 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
      - 6 : Advertir (habilitar la regla ASR pero permitir que el usuario final omita el bloque)
 
    > [!div class="mx-imgBorder"]
-   > ![Configuración de URI de OMA de MEM.](images/mem05-add-row-oma-uri.png)
+   > :::image type="content" source="images/mem05-add-row-oma-uri.png" alt-text="Configuración de URI de OMA en el portal Microsoft Endpoint Manager centro de administración" lightbox="images/mem05-add-row-oma-uri.png":::
 
-6. Seleccione **Guardar**. **Agregar cierres** de fila. En **Personalizado**, seleccione **Siguiente**. En las **etiquetas de ámbito del paso 3**, las etiquetas de ámbito son opcionales. Realiza una de las siguientes acciones:
+6. Haga clic en **Guardar**. **Agregar cierres** de fila. En **Personalizado**, seleccione **Siguiente**. En las **etiquetas de ámbito del paso 3**, las etiquetas de ámbito son opcionales. Realiza una de las siguientes acciones:
 
    - Seleccione **Seleccionar etiquetas de ámbito**, seleccione la etiqueta de ámbito (opcional) y, a continuación, **seleccione Siguiente**.
    - O seleccione **Siguiente**
@@ -207,7 +209,7 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
    - **Agregar todos los dispositivos**
 
    > [!div class="mx-imgBorder"]
-   > ![Asignaciones de MEM.](images/mem06-4-assignments.png)
+   > :::image type="content" source="images/mem06-4-assignments.png" alt-text="Las asignaciones en el portal Microsoft Endpoint Manager centro de administración" lightbox="images/mem06-4-assignments.png":::
 
 8. En **Grupos excluidos**, seleccione los grupos que desee excluir de esta regla y, a continuación, **seleccione Siguiente**.
 
@@ -218,12 +220,12 @@ Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR p
    - En **Valor**, escriba el valor o intervalo de valores aplicable
 
    > [!div class="mx-imgBorder"]
-   > ![Reglas de aplicabilidad de MEM.](images/mem07-5-applicability-rules.png)
+   > :::image type="content" source="images/mem07-5-applicability-rules.png" alt-text="Las reglas de aplicabilidad en el portal Microsoft Endpoint Manager centro de administración" lightbox="images/mem07-5-applicability-rules.png":::
 
 10. Seleccione **Siguiente**. En el paso **6 Revisar + crear**, revise la configuración y la información que ha seleccionado y especificado y, a continuación, **seleccione Crear**.
 
     > [!div class="mx-imgBorder"]
-    > ![MEM Revisar y crear.](images/mem08-6-review-create.png)
+    > :::image type="content" source="images/mem08-6-review-create.png" alt-text="La opción Revisar y crear en el portal Microsoft Endpoint Manager centro de administración" lightbox="images/mem08-6-review-create.png":::
 
     > [!NOTE]
     > Las reglas están activas y están activas en cuestión de minutos.
@@ -295,7 +297,7 @@ Ejemplo:
    - 2: Auditoría (Evaluar cómo afectaría la regla ASR a su organización si está habilitada)
    - 6 : Advertir (habilitar la regla ASR pero permitir que el usuario final omita el bloque)
 
-   :::image type="content" source="images/asr-rules-gp.png" alt-text="Reglas ASR en la directiva de grupo.":::
+   :::image type="content" source="images/asr-rules-gp.png" alt-text="Reglas de ASR en la directiva de grupo" lightbox="images/asr-rules-gp.png":::
 
 5. Para excluir archivos y carpetas de las reglas ASR,  selecciona la opción Excluir archivos y rutas de acceso de las reglas de reducción de superficie de ataque y establece la opción en **Habilitado**. Seleccione **Mostrar** e introduzca cada archivo o carpeta en la **columna Nombre de** valor. Escriba **0 en** la **columna Valor** de cada elemento.
 
@@ -310,7 +312,7 @@ Ejemplo:
 > La opción Definida por el usuario se muestra en la siguiente figura.
 
 > [!div class="mx-imgBorder"]
-> ![ASR habilita "Definido por el usuario"](images/asr-user-defined.png)
+> :::image type="content" source="images/asr-user-defined.png" alt-text="La opción Habilitar para la seguridad de credenciales" lightbox="images/asr-user-defined.png":::
 
 1. Escriba **powershell** en el menú Inicio, haga clic con el botón **secundario en Windows PowerShell** y seleccione **Ejecutar como administrador**.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bbd4100466fbfef75363848bc5b89bbb9a769265
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: f6767b1a788129266bff713a6608277a2450598c
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401082"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775904"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Ejecutar el analizador de clientes en macOS o Linux
 
@@ -34,7 +34,7 @@ ms.locfileid: "63401082"
 1. Descargue la [herramienta analizador de cliente XMDE](https://aka.ms/XMDEClientAnalyzer) en la máquina macOS o Linux que necesita investigar.
 
    > [!NOTE]
-   > El hash SHA256 actual de "XMDEClientAnalyzer.zip" que se descarga del vínculo anterior es: "B95E2E21D5A93E0AC88BA401ACB20E5F721727B409D4186147C8D1746818583".
+   > El hash SHA256 actual de "XMDEClientAnalyzer.zip" que se descarga del vínculo anterior es: "A9BF065DE3F2608A309BC4F529548BB9931F107BF2F01DC42A789C5527C1308".
 
 2. Extraiga el contenido de XMDEClientAnalyzer.zip en el equipo.
 

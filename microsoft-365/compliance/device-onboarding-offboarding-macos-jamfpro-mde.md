@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar y quitar dispositivos macOS en soluciones de cumplimiento Microsoft 365 con JAMF Pro para clientes de Microsoft Defender para endpoints (versión preliminar)
-ms.openlocfilehash: 7e2109f52590cc4d9ad23700fa4b51a09ae4b5db
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: f260d901f8f02c2c02007b2cc0d49ab9ee57dafd
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526476"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716329"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión (versión preliminar)
 
@@ -37,9 +37,8 @@ Puede usar jamf Pro para incorporar dispositivos macOS en Microsoft 365 de cumpl
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Asegúrese de que los [dispositivos macOS Azure AD unidos](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
-- Asegúrese de que los [dispositivos macOS se administran a través de JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
-- Instalar el explorador perimetral v95+ en los dispositivos macOS 
+- Asegúrese de que los [dispositivos macOS](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) se administran a través de JAMF pro y que están asociados con una identidad (Azure AD UPN unida) a través de JAMF Conectar o Intune.
+- Instalar el explorador perimetral v95+ en los dispositivos macOS
 
 ## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>Incorporar dispositivos a Microsoft 365 de cumplimiento con jamf Pro
 

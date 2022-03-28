@@ -20,12 +20,12 @@ ms.custom:
 description: En este artículo, aprenderá a usar el portal de deslist para quitarse de la lista Microsoft 365 remitentes bloqueados. Esta es la mejor respuesta para solucionar los errores denegados de Acceso 5.7.511.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 36187288b2a7acf1a852e6c203cbb84035ba5d7a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 58ddb2913ce7ecd047b1d5acb360c8f4c9ff5074
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320247"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775794"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>Usar el portal de deslist para quitarse de la lista de remitentes bloqueados y solucionar los errores de Acceso denegado 5.7.511
 
@@ -55,7 +55,6 @@ Hay buenas razones para que los remitentes se desenrosque en la lista de remiten
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvD]
 
-
 ## <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list-after-errors-like-57511-access-denied"></a>Para usar el portal de deslist para quitarse de la lista de remitentes bloqueados (después de errores como 5.7.511 Acceso denegado)
 
 1. En un explorador web, vaya a <https://sender.office.com>.
@@ -82,13 +81,13 @@ Hay buenas razones para que los remitentes se desenrosque en la lista de remiten
 Consulta [Crear listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md) y [Protección contra correo no](outbound-spam-controls.md) deseado saliente en EOP para evitar que se bloquee una IP.
 
 ### <a name="how-do-fix-error-code-57511"></a>Cómo corregir el código de error 5.7.511
- 
+
 Si se produce un problema al entregar un mensaje de correo electrónico que envió, Office 365 o Microsoft 365 le enviará un correo electrónico para informarle. El correo electrónico que reciba es una notificación de estado de entrega, que también se conoce como DSN o mensaje de devolución. Un informe de no entrega (NDR) es el tipo de notificación de estado más común e indica que un mensaje no se entregó. En determinadas situaciones, Microsoft debe llevar a cabo investigaciones adicionales contra el tráfico de su IP y, si recibe el código NDR 5.7.511, no podrá usar el  portal de deslist.
- 
->   550 5.7.511 Acceso denegado, remitente prohibido[xxx.xxx.xxx.xxx]. Para solicitar la eliminación de esta lista, reenvía este mensaje a delist@messaging.microsoft.com. Para obtener más información, vaya a https://go.microsoft.com/fwlink/?LinkId=526653. 
- 
-En el correo electrónico para solicitar la eliminación de esta lista, proporcione el código NDR completo y la dirección IP. Microsoft se pondrá en contacto con usted en un plazo de 48 horas con los siguientes pasos. 
+
+> 550 5.7.511 Acceso denegado, remitente prohibido[xxx.xxx.xxx.xxx]. Para solicitar la eliminación de esta lista, reenvía este mensaje a delist@messaging.microsoft.com. Para obtener más información, vaya a <https://go.microsoft.com/fwlink/?LinkId=526653>.
+
+En el correo electrónico para solicitar la eliminación de esta lista, proporcione el código NDR completo y la dirección IP. Microsoft se pondrá en contacto con usted en un plazo de 48 horas con los siguientes pasos.
 
 ## <a name="more-information"></a>Más información
-  
-El formulario de deslisting **para Outlook.com, el servicio** de consumidor se puede encontrar [aquí](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75). Asegúrese de leer primero las [preguntas más frecuentes](https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx) para obtener la *dirección del* envío.
+
+El formulario de deslisting **para Outlook.com, el servicio** de consumidor se puede encontrar [aquí](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75). Asegúrese de leer primero las [preguntas más frecuentes](https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx) para obtener la _dirección del_ envío.

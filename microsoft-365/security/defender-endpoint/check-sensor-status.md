@@ -1,5 +1,5 @@
 ---
-title: Comprobar el estado de mantenimiento del sensor en Microsoft Defender para endpoint
+title: Comprobar el estado del sensor en Microsoft Defender para endpoint
 description: Compruebe el estado del sensor en los dispositivos para identificar cuáles están mal configurados, inactivos o no están informando datos del sensor.
 keywords: sensor, estado del sensor, mal configurado, inactivo, sin datos de sensor, datos de sensor, comunicaciones deficientes, comunicación
 ms.prod: m365-security
@@ -15,20 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 926e23da7e439aa6035574a13bab2752004dd189
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: bba5fde870b2916501f4154c6ff628a0d2e3ff1f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171670"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465480"
 ---
-# <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Comprobar el estado del sensor en Microsoft Defender para endpoint
+# <a name="check-sensor-health-state-at-microsoft-defender-for-endpoint"></a>Comprobar el estado del sensor en Microsoft Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-checksensor-abovefoldlink)
@@ -37,31 +37,31 @@ El **icono Dispositivos con problemas de sensor** se encuentra en el panel Opera
 
 Hay dos indicadores de estado en el icono que proporcionan información sobre el número de dispositivos que no están informando correctamente al servicio:
 
-- **Mal configurados:** estos dispositivos podrían estar informando parcialmente los datos del sensor al servicio Defender for Endpoint y podrían tener errores de configuración que deben corregirse.
+- **Mal configurados** : estos dispositivos podrían estar informando parcialmente los datos del sensor al servicio Defender for Endpoint y podrían tener errores de configuración que deben corregirse.
 - **Inactivo:** dispositivos que han dejado de informar al servicio Defender for Endpoint durante más de siete días en el último mes.
 
-Hacer clic en cualquiera de los grupos te dirige a **la lista Dispositivos,** filtrada según tu elección.
+Hacer clic en cualquiera de los grupos te dirige a **la lista dispositivos**, filtrada según tu elección.
 
-![Captura de pantalla de dispositivos con problemas de sensor.](images/atp-devices-with-sensor-issues-tile.png)
+:::image type="content" source="images/atp-devices-with-sensor-issues-tile.png" alt-text="Icono dispositivos con problemas de sensor" lightbox="images/atp-devices-with-sensor-issues-tile.png":::
 
-En **la lista dispositivos,** puede filtrar la lista de estado de mantenimiento por el siguiente estado:
+En **la lista dispositivos**, puede filtrar la lista de estado de mantenimiento por el siguiente estado:
 
-- **Activo:** dispositivos que están informando activamente al servicio Defender for Endpoint.
+- **Activo** : dispositivos que están informando activamente al servicio Defender for Endpoint.
 - **Mal configurado: estos** dispositivos pueden estar informando parcialmente los datos del sensor al servicio defender para endpoints, pero tienen errores de configuración que deben corregirse. Los dispositivos mal configurados pueden tener uno o varios de los siguientes problemas:
-  - **Sin datos de sensor:** los dispositivos han dejado de enviar datos del sensor. Se pueden activar alertas limitadas desde el dispositivo.
-  - **Comunicaciones deficientes:** la capacidad de comunicarse con el dispositivo se ve afectada. Puede que el envío de archivos para un análisis profundo, el bloqueo de archivos, el aislamiento de dispositivo de la red y otras acciones que requieran comunicación con el dispositivo no funcionen.
+  - **Sin datos de sensor** : los dispositivos han dejado de enviar datos del sensor. Se pueden activar alertas limitadas desde el dispositivo.
+  - **Comunicaciones deficientes** : la capacidad de comunicarse con el dispositivo se ve afectada. Puede que el envío de archivos para un análisis profundo, el bloqueo de archivos, el aislamiento de dispositivo de la red y otras acciones que requieran comunicación con el dispositivo no funcionen.
 - **Inactivo:** dispositivos que han dejado de informar al servicio Defender for Endpoint.
 
-También puede descargar toda la lista en formato CSV mediante la **característica** Exportar. Para obtener más información sobre los filtros, [vea Ver y organizar la lista Dispositivos](machines-view-overview.md).
+También puede descargar toda la lista en formato CSV mediante la **característica** Exportar. Para obtener más información sobre los filtros, consulta [Ver y organizar la lista dispositivos](machines-view-overview.md).
 
 > [!NOTE]
 > Exporte la lista en formato CSV para mostrar los datos sin filtrar. El archivo CSV incluirá todos los dispositivos de la organización, independientemente de cualquier filtrado aplicado en la vista en sí y puede tardar una cantidad significativa de tiempo en descargarse, según el tamaño de la organización.
 
-![Captura de pantalla de la página de lista Dispositivos.](images/atp-devices-list-page.png)
+:::image type="content" source="images/atp-devices-list-page.png" alt-text="La pestaña Exportar de la página de lista Dispositivo" lightbox="images/atp-devices-list-page.png":::
 
 Puedes ver los detalles del dispositivo al hacer clic en un dispositivo mal configurado o inactivo.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Corregir sensores incorrectos en Defender for Endpoint](fix-unhealthy-sensors.md)
 - [Información general del Analizador de clientes](overview-client-analyzer.md)

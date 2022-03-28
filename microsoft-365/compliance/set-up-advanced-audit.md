@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo configurar la auditoría avanzada para que pueda realizar investigaciones forenses cuando las cuentas de usuario estén en peligro o investigar otros incidentes relacionados con la seguridad.
-ms.openlocfilehash: 34ae98eaafcc3eeb3d6a25a457f017999b8c6078
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dafe53161e04f28f2f5e4ff8dcfa71bab6c1a1f1
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192072"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754583"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>Configurar auditoría avanzada en Microsoft 365
 
@@ -37,19 +37,17 @@ Si su organización tiene una suscripción y una licencia de usuario final compa
 
 Las características de Auditoría avanzada, como la capacidad para registrar eventos fundamentales, como MailItemsAccessed y Send, requieren una licencia adecuada de E5 asignada a los usuarios. Además, se debe habilitar la aplicación o el plan de servicio de Auditoría avanzada para estos usuarios. Para comprobar que la aplicación de Auditoría avanzada está asignada a los usuarios, realice estos pasos para cada usuario:
 
-1. En el Centro de administración de Microsoft 365, vaya a **Usuarios**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**usuarios activos**</a>y seleccione un usuario.
+1. En el Centro de administración de Microsoft 365, vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**UsuariosActivos**</a> >  y seleccione un usuario.
 
 2. En la página flotante de propiedades de usuario, haga clic en **Licencias y aplicaciones**.
 
-3. En la **sección Licencias,** compruebe que al usuario se le asignó una licencia E5 o que se le asignó una licencia de complemento adecuada. Para obtener una lista de licencias compatibles con la auditoría avanzada, vea [Advanced Audit licensing requirements](auditing-solutions-overview.md#advanced-audit-1).
+3. En la **sección Licencias** , compruebe que al usuario se le asignó una licencia E5 o que se le asignó una licencia de complemento adecuada. Para obtener una lista de licencias compatibles con la auditoría avanzada, consulte [Advanced Audit licensing requirements](auditing-solutions-overview.md#advanced-audit-1).
 
 4. Expanda la sección **Aplicaciones** y compruebe que está seleccionada la casilla de verificación de **Auditoría avanzada de Microsoft 365**.
 
 5. Si la casilla no está seleccionada, selecciónelo y, a continuación, haga clic **en Guardar cambios.**
 
    El registro de registros de auditoría de MailItemsAccessed y Send empezará en 24 horas. Debe realizar el paso 3 para iniciar el registro de otros dos eventos de auditoría avanzada: SearchQueryInitiatedExchange y SearchQueryInitiatedSharePoint.
-
-En el caso de las organizaciones que asignan licencias a grupos de usuarios mediante licencias basadas en grupos, tiene que desactivar la asignación de licencias para la Auditoría avanzada de Microsoft 365 para el grupo. Una vez que haya guardado los cambios, compruebe que está desactivada la Auditoría avanzada de Microsoft 365 para el grupo. Después, vuelva a activar la asignación de licencias para el grupo. Para obtener instrucciones sobre las licencias basadas en grupos, vea [Asignar licencias a usuarios por la pertenencia a grupos en Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
 Además, si ha personalizado las acciones de buzón que han iniciado sesión en buzones de usuario o buzones compartidos, los nuevos eventos de auditoría avanzada publicados por Microsoft no se auditarán automáticamente en esos buzones. Para información sobre cómo cambiar las acciones de buzón de correo que se auditan para cada tipo de inicio de sesión, consulte la sección "Cambiar o restaurar acciones de buzón registradas de forma predeterminada" en [Administrar la auditoría de buzón](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
 
@@ -67,7 +65,7 @@ En un entorno multige geográfico, debe ejecutar el comando **Set-Mailbox** ante
 Get-Mailbox <user identity> | FL MailboxLocations
 ```
 
-Si el comando para habilitar la auditoría de las consultas de búsqueda se ejecutó anteriormente en un bosque que es diferente al que se encuentra en el buzón del usuario, debe quitar el valor SearchQueryInitiated del buzón del usuario ejecutándose y, a continuación, agregarlo al buzón del usuario en el bosque donde se encuentra el buzón del `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}` usuario.
+Si el comando para habilitar la auditoría de las consultas de búsqueda se ejecutó anteriormente en un bosque que es diferente al que se encuentra en el buzón del usuario, debe quitar el valor SearchQueryInitiated `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}` del buzón del usuario ejecutándose y, a continuación, agregarlo al buzón del usuario en el bosque donde se encuentra el buzón del usuario.
 
 ## <a name="step-3-set-up-audit-retention-policies"></a>Paso 3: Configurar directivas de retención de auditoría
 
@@ -75,4 +73,4 @@ Además de la directiva predeterminada que conserva los registros de auditoría 
 
 ## <a name="step-4-search-for-advanced-audit-events"></a>Paso 4: Buscar eventos de auditoría avanzada
 
-Ahora que ya tiene la auditoría avanzada configurada para su organización, puede buscar eventos cruciales de auditoría avanzada y otras actividades al llevar a cabo investigaciones forenses. Después de completar los pasos 1 y 2, puede buscar en el registro de auditoría eventos de auditoría avanzada y otras actividades durante las investigaciones forenses de cuentas comprometidas y otros tipos de investigaciones de seguridad o cumplimiento. Para obtener más información acerca de cómo llevar a cabo una investigación forense de cuentas de usuario comprometidas mediante el evento Auditoría avanzada MailItemsAccessed, vea Usar auditoría avanzada para investigar cuentas [comprometidas.](mailitemsaccessed-forensics-investigations.md)
+Ahora que ya tiene la auditoría avanzada configurada para su organización, puede buscar eventos cruciales de auditoría avanzada y otras actividades al llevar a cabo investigaciones forenses. Después de completar los pasos 1 y 2, puede buscar en el registro de auditoría eventos de auditoría avanzada y otras actividades durante las investigaciones forenses de cuentas comprometidas y otros tipos de investigaciones de seguridad o cumplimiento. Para obtener más información acerca de cómo llevar a cabo una investigación forense de cuentas de usuario comprometidas mediante el evento Auditoría avanzada MailItemsAccessed, vea Usar auditoría avanzada para investigar cuentas [comprometidas](mailitemsaccessed-forensics-investigations.md).

@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo incorporar dispositivos macOS en soluciones de cumplimiento
-ms.openlocfilehash: 93a930f13a17c19c3ff7209295ddada648b9575a
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 783179ae749ac7cd6de671435927ba5bbdbdacad
+ms.sourcegitcommit: 9d563faeaa50b59b0b468dbb373d886e5270f58e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526574"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64387023"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>Incorporar dispositivos macOS en la información general de Microsoft 365 (versión preliminar)
 
@@ -27,14 +27,14 @@ Los dispositivos MacOS se pueden incorporar a Microsoft 365 de cumplimiento medi
 
 **Se aplica a:**
 
-- [Prevención de pérdida de datos en punto de conexión en Microsoft 365 (DLP)](./endpoint-dlp-learn-about.md)
+- [Prevención de pérdida de datos de extremo (DLP)](./endpoint-dlp-learn-about.md)
 - [Administración de riesgos internos](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
 Antes de empezar a usar Dlp de extremo en dispositivos macOS (Catalina 10.15 o posterior), debe familiarizarse con estos artículos:
 
-- [Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
+- [Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
 - [Introducción a la prevención de pérdida de datos en punto de conexión](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
 
 Si no está familiarizado con DLP en absoluto, también debe familiarizarse con estos artículos:
@@ -87,10 +87,7 @@ Cuando quiera incorporar dispositivos que todavía no hayan sido incorporados, d
    > [!NOTE]
    > Aunque, por lo general, habilitar la incorporación de dispositivos tarda aproximadamente 60 segundos, espere 30 minutos antes de ponerse en contacto con el soporte técnico de Microsoft.
 
-2. Abra la página de configuración del Centro de cumplimiento y elija **Incorporar dispositivos**.
-
-   > [!div class="mx-imgBorder"]
-   > ![habilitar la administración de dispositivos.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. Abra la página Configuración del Centro de cumplimiento y **elija Activar la supervisión de dispositivos macOS**.
 
 ## <a name="next-steps"></a>Siguientes pasos
 

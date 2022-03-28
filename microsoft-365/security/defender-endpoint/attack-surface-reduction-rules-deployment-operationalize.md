@@ -16,14 +16,16 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 3229cd0a98714819009e7d50baab0872f3a67c43
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 9a3e8ab38c807b8cf3ea54bb5a18a5405d0b3c49
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766589"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465363"
 ---
 # <a name="step-4-operationalize-asr-rules"></a>Paso 4: Operacionalización de reglas de ASR
 
@@ -42,9 +44,9 @@ La revisión periódica y coherente de los informes es un aspecto esencial para 
 Una de las características más eficaces de [Microsoft 365 Defender](https://security.microsoft.com) es la búsqueda avanzada. Si no estás familiarizado con la búsqueda avanzada, consulta: [Búsqueda proactiva de amenazas con búsqueda avanzada](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender búsqueda avanzada](images/asr-defender365-advanced-hunting2.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="La página Búsqueda avanzada en el portal Microsoft 365 Defender búsqueda avanzada" lightbox="images/asr-defender365-advanced-hunting2.png":::
 
-La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas (Kusto Query Language) que le permite explorar hasta 30 días de los datos capturados (sin procesar) que Microsoft Defender ATP Endpoint Detection and Response (EDR) recopila de todas las máquinas. A través de la búsqueda avanzada, puede inspeccionar de forma proactiva los eventos con el fin de localizar indicadores y entidades interesantes. El acceso flexible a los datos facilita la búsqueda sin restricciones de las amenazas conocidas y potenciales.
+La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consultas (Kusto Query Language) que te permite explorar hasta 30 días de los datos capturados (sin procesar) que Microsoft Defender ATP Endpoint Detection and Response (EDR) recopila de todas las máquinas. A través de la búsqueda avanzada, puede inspeccionar de forma proactiva los eventos con el fin de localizar indicadores y entidades interesantes. El acceso flexible a los datos facilita la búsqueda sin restricciones de las amenazas conocidas y potenciales.
 
 Mediante la búsqueda avanzada, es posible extraer información de reglas ASR, crear informes y obtener información detallada sobre el contexto de un evento de bloqueo o auditoría de regla ASR determinado.
 
@@ -53,10 +55,10 @@ Mediante la búsqueda avanzada, es posible extraer información de reglas ASR, c
 Los eventos ASR que se muestran en el portal de búsqueda avanzada se limitan a procesos únicos que se ven cada hora. La hora del evento ASR es la primera vez que se ve el evento en esa hora.
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender línea de comandos consulta de búsqueda avanzada](images/asr-defender365-advanced-hunting3.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting3.png" alt-text="La línea de comandos Consulta de búsqueda avanzada en el portal Microsoft 365 Defender búsqueda" lightbox="images/asr-defender365-advanced-hunting3.png":::
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender de consulta de búsqueda avanzada](images/asr-defender365-advanced-hunting4.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting4.png" alt-text="La consulta búsqueda avanzada da como resultado el portal Microsoft 365 Defender búsqueda" lightbox="images/asr-defender365-advanced-hunting4.png":::
 
 Lo anterior muestra que se registraron 187 eventos para AsrLsassCredentialTheft:
 
@@ -68,10 +70,10 @@ Lo anterior muestra que se registraron 187 eventos para AsrLsassCredentialTheft:
 Si desea centrarse en la regla AsrOfficeChildProcess y obtener detalles sobre los archivos y procesos reales implicados, cambie el filtro de ActionType y reemplace la línea de resumen por una proyección de los campos deseados (en este caso son DeviceName, FileName, FolderPath, etc.).
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender consulta de búsqueda avanzada centrada](images/asr-defender365-advanced-hunting4b.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting4b.png" alt-text="Ejemplo centrado en la consulta de búsqueda avanzada en el portal Microsoft 365 Defender búsqueda avanzada" lightbox="images/asr-defender365-advanced-hunting4b.png":::
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender de búsqueda avanzada](images/asr-defender365-advanced-hunting5b.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting5b.png" alt-text="La consulta de búsqueda avanzada se centra en los resultados del portal Microsoft 365 Defender búsqueda" lightbox="images/asr-defender365-advanced-hunting5b.png":::
 
 La verdadera ventaja de la búsqueda avanzada es que puedes dar forma a las consultas a tu gusto. Al dar forma a la consulta, puede ver la historia exacta de lo que estaba sucediendo, independientemente de si desea identificar algo en una máquina individual o si desea extraer información de todo el entorno.
 

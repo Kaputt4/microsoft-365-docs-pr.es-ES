@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Este artículo contiene información de referencia sobre la herramienta de eDiscovery de búsqueda de contenido del Centro de cumplimiento de Microsoft 365 para ayudarle a obtener una gran cantidad de detalles sobre la búsqueda de contenido.
-ms.openlocfilehash: 0688f3119b500f8e11675aa101d92942a3063e8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3f2918c378d94fd65d4a89afed50957a2da40a7d
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175412"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716384"
 ---
 # <a name="feature-reference-for-content-search"></a>Referencia de características para la búsqueda de contenido
 
@@ -80,7 +80,7 @@ Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y grupos de 
 
 - Para buscar contenido ubicado en Teams y grupos de Microsoft 365, debe especificar el buzón y el sitio de SharePoint asociados a un equipo o grupo.
 
-- El contenido de canales privados se almacena en el buzón de cada usuario y no en el buzón de equipo. Para buscar contenido en canales privados, consulte [eDiscovery de canales privados](/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
+- El contenido de canales privados se almacena en el buzón de cada usuario y no en el buzón de equipo. Para buscar contenido en canales privados, consulte [eDiscovery de canales privados y compartidos](/microsoftteams/ediscovery-investigation#ediscovery-of-private-and-shared-channels).
 
 - Ejecute el cmdlet **Get-UnifiedGroup** de Exchange Online para ver las propiedades de un equipo o grupo de Microsoft 365. Este es un buen método para obtener la dirección URL del sitio asociado a un equipo o un grupo. Por ejemplo, el comando siguiente muestra las propiedades seleccionadas de un grupo de Microsoft 365 denominado Senior Leadership Team:
 

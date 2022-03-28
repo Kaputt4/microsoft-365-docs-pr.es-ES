@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender
-description: Microsoft 365 Defender es una solución coordinada de protección contra amenazas diseñada para proteger dispositivos, identidades, datos y aplicaciones
+description: Microsoft 365 Defender es una solución coordinada de protección contra amenazas diseñada para proteger dispositivos, identidad, datos y aplicaciones
 keywords: introducción a MMicrosoft 365 Defender, ciberseguridad, amenazas persistentes avanzadas, seguridad empresarial, dispositivos, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -26,20 +26,20 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 691db83111ba14e9fed7eed36a819479bda15ff5
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 28f50cbd362104ba910ed5560e184036fc7f8703
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245320"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754655"
 ---
-# <a name="microsoft-365-defender"></a>Microsoft 365 Defender
+# <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 > ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
 >
@@ -59,7 +59,7 @@ Con la solución Microsoft 365 Defender integrada, los profesionales de segurida
 
 ## <a name="microsoft-365-defender-interactive-guide"></a>Microsoft 365 Defender guía interactiva
 
-En esta guía interactiva, aprenderá a proteger su organización con Microsoft 365 Defender. Verá cómo los Microsoft 365 Defender pueden ayudarle a detectar riesgos de seguridad, investigar ataques a su organización y evitar actividades nocivas automáticamente.
+En esta guía interactiva, aprenderá a proteger su organización con Microsoft 365 Defender. Verá cómo Microsoft 365 Defender puede ayudarle a detectar riesgos de seguridad, investigar ataques a su organización y evitar actividades nocivas automáticamente.
 
 [Eche un vistazo a la guía interactiva](https://aka.ms/M365Defender-InteractiveGuide)
 
@@ -67,9 +67,9 @@ En esta guía interactiva, aprenderá a proteger su organización con Microsoft 
 
 Microsoft 365 Defender protegen:
 
-- **Endpoints with Defender for Endpoint:** Defender for Endpoint es una plataforma de extremo unificada para la protección preventiva, la detección posterior a la infracción, la investigación automatizada y la respuesta.
-- Correo electrónico y colaboración con **Defender para Office 365:** Defender para Office 365 protege su organización contra las amenazas malintencionadas que suponen los mensajes de correo electrónico, los vínculos (URL) y las herramientas de colaboración.
-- Identidades con Defender para la identidad y la protección de identidad de **Azure Active Directory (Azure AD):** Defender for Identity usa las señales locales de Servicios de dominio de Active Directory (AD DS) para identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones internas malintencionadas dirigidas a su organización. Azure AD Identity Protection automatiza la detección y corrección de riesgos basados en identidades en el entorno basado en la nube Azure AD.
+- **Endpoints with Defender for Endpoint** : Defender for Endpoint es una plataforma de extremo unificada para la protección preventiva, la detección posterior a la infracción, la investigación automatizada y la respuesta.
+- **Correo electrónico y colaboración con Defender para Office 365**: Defender para Office 365 protege su organización contra las amenazas malintencionadas que suponen los mensajes de correo electrónico, los vínculos (URL) y las herramientas de colaboración.
+- **Identities with Defender for Identity and Azure Active Directory (Azure AD) Identity Protection**: Defender for Identity usa las señales locales de Servicios de dominio de Active Directory (AD DS) para identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones internas malintencionadas dirigidas a su organización. Azure AD Identity Protection automatiza la detección y corrección de riesgos basados en identidades en el entorno basado en la nube Azure AD.
 - **Aplicaciones con Microsoft Defender** para aplicaciones en la nube: Microsoft Defender para aplicaciones en la nube es una solución completa entre SaaS que ofrece una visibilidad profunda, controles de datos sólidos y una protección contra amenazas mejorada para las aplicaciones en la nube.
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww]
@@ -79,7 +79,7 @@ Microsoft 365 Defender la capa entre productos única de Microsoft 365 Defender 
 - Ayuda a proteger contra ataques y coordinar respuestas defensivas en todos los servicios a través del uso compartido de señales y acciones automatizadas.
 - Narra la historia completa del ataque en alertas de productos, comportamientos y contexto para los equipos de seguridad uniendo datos de alertas, eventos sospechosos y activos afectados a "incidentes".
 - Automatice la respuesta al riesgo desencadenando la recuperación automática de activos afectados a través de la corrección automatizada.
-- Permitir que los equipos de seguridad realicen búsquedas de amenazas detalladas y eficaces en todos los puntos de conexión y Office datos.
+- Permitir que los equipos de seguridad realicen búsquedas de amenazas detalladas y eficaces en los puntos de conexión y Office datos.
 
 Este es un ejemplo de cómo el portal de Microsoft 365 Defender correlaciona todas las alertas relacionadas entre productos en un solo incidente.
 
@@ -95,34 +95,34 @@ Este es un ejemplo de búsqueda basada en consultas en la parte superior de los 
 
 Microsoft 365 Defender características entre productos incluyen:
 
-- Panel único de vidrio entre productos en el portal de **Microsoft 365 Defender:** una vista central para toda la información sobre detecciones, activos afectados, acciones automatizadas realizadas y pruebas relacionadas en una sola cola y un único panel en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">el portal de Microsoft 365 Defender</a>. 
-- Cola de incidentes **combinados:** para ayudar a los profesionales de seguridad a centrarse en lo que es fundamental al garantizar que el ámbito de ataque completo, los activos afectados y las acciones de corrección automatizadas se agrupan y se ponen a la superficie de forma oportuna. 
-- **Respuesta automática a las amenazas:** la información crítica sobre amenazas se comparte en tiempo real entre los Microsoft 365 Defender para ayudar a detener la progresión de un ataque. 
+- Panel único de vidrio entre productos en el **portal de Microsoft 365 Defender**: una vista central para toda la información sobre detecciones, activos afectados, acciones automatizadas realizadas y pruebas relacionadas en una sola cola y un único panel en Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal</a>. 
+- Cola de incidentes **combinados**: para ayudar a los profesionales de seguridad a centrarse en lo que es fundamental al garantizar que el ámbito de ataque completo, los activos afectados y las acciones de corrección automatizadas se agrupan y se ponen a la superficie de forma oportuna. 
+- **Respuesta automática a las amenazas**: la información crítica de amenazas se comparte en tiempo real entre los productos Microsoft 365 Defender para ayudar a detener la progresión de un ataque. 
 
-   Por ejemplo, si se detecta un archivo malintencionado en un extremo protegido por Defender for Endpoint, le indicará a Defender que Office 365 analice y quite el archivo de todos los mensajes de correo electrónico. Todo el conjunto de seguridad del conjunto de Microsoft 365 bloqueará el archivo a la vista.
+   Por ejemplo, si se detecta un archivo malintencionado en un extremo protegido por Defender para endpoint, le indicará a Defender que Office 365 analice y quite el archivo de todos los mensajes de correo electrónico. Todo el conjunto de seguridad del conjunto de Microsoft 365 bloqueará el archivo a la vista.
 
-- **Recuperación** automática para dispositivos, identidades de usuario y buzones en peligro: Microsoft 365 Defender usa acciones automáticas con tecnología de IA y libros de reproducción para corregir los activos afectados de nuevo a un estado seguro. Microsoft 365 Defender aprovecha las capacidades de corrección automática de los productos del conjunto de programas para garantizar que todos los activos afectados relacionados con un incidente se remedian automáticamente siempre que sea posible.
+- Recuperación automática para dispositivos **, identidades** de usuario y buzones en peligro: Microsoft 365 Defender usa acciones automáticas con tecnología de IA y libros de reproducción para corregir los activos afectados de nuevo a un estado seguro. Microsoft 365 Defender aprovecha las capacidades de corrección automática de los productos del conjunto de programas para garantizar que todos los activos afectados relacionados con un incidente se remedian automáticamente siempre que sea posible.
 - **Búsqueda de amenazas** entre productos: los equipos de seguridad pueden aprovechar sus conocimientos organizativos únicos para buscar signos de peligro mediante la creación de sus propias consultas personalizadas sobre los datos sin procesar recopilados por los distintos productos de protección. Microsoft 365 Defender acceso basado en consultas a 30 días de señales sin procesar históricas y datos de alerta en el punto de conexión y Defender para obtener Office 365 datos.
 
 ## <a name="get-started"></a>Introducción
 
-Microsoft 365 Defender requisitos de licencia deben cumplirse para poder habilitar el servicio en el portal de Microsoft 365 Defender en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> Para obtener más información, vea:
+Microsoft 365 Defender requisitos de licencia deben cumplirse antes de habilitar el servicio en el portal <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> de Microsoft 365 Defender en Para obtener más información, vea:
 
 - [Requisitos de licencia](prerequisites.md#licensing-requirements)
 - [Activar Microsoft 365 Defender](m365d-enable.md)
 
-## <a name="the-microsoft-365-defender-portal"></a>El portal de Microsoft 365 Defender
+## <a name="the-microsoft-365-defender-portal"></a>El portal de Microsoft 365 Defender incluye:
 
-El portal Microsoft 365 Defender combina protección, <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">detección,</a> investigación y respuesta a las amenazas  de correo electrónico, colaboración,  *identidad,* dispositivo y aplicación, en un lugar central. 
+El <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender combina</a> protección, detección, investigación y respuesta a las amenazas  de correo *electrónico,* colaboración *, identidad**, dispositivo* y aplicación, en un lugar central.
 
-Este único panel de cristal reúne las funciones de los portales de seguridad de Microsoft existentes, como el portal de Microsoft 365 Defender y el centro de Office 365 seguridad & cumplimiento. El portal Microsoft 365 Defender hace hincapié en el acceso rápido a la información, diseños más sencillos y reunir información relacionada para un uso más fácil. Incluye:
+Este único panel de cristal reúne las funciones de los portales de seguridad de Microsoft existentes, como el portal de Microsoft 365 Defender y el centro de Office 365 seguridad & cumplimiento. El Microsoft 365 Defender hace hincapié en el acceso rápido a la información, diseños más sencillos y reunir información relacionada para un uso más fácil. Incluye:
 
 - **[Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender para Office 365 ayuda a las organizaciones a proteger su empresa con un conjunto de características de prevención, detección, investigación y búsqueda para proteger el correo electrónico y Office 365 recursos.
 - **[Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** proporciona protección preventiva, detección posterior a la infracción, investigación automatizada y respuesta para dispositivos de su organización.
-- **[Microsoft 365 Defender](microsoft-365-defender.md)** forma parte de la  solución de detección y respuesta extendida (XDR) de Microsoft que aprovecha la cartera de seguridad de Microsoft 365 para analizar automáticamente los datos de amenazas entre dominios y crear una imagen de un ataque en un único panel.
+- **[Microsoft 365 Defender](microsoft-365-defender.md)** forma parte de la solución de detección y *respuesta extendida (* XDR) de Microsoft que aprovecha la cartera de seguridad de Microsoft 365 para analizar automáticamente los datos de amenazas entre dominios y crear una imagen de un ataque en un único panel.
 - **[Microsoft Defender para aplicaciones en](/cloud-app-security/)** la nube es una solución completa entre SaaS y PaaS que ofrece una visibilidad profunda, controles de datos sólidos y protección contra amenazas mejorada para las aplicaciones en la nube.
 
-Si necesita información Office 365 sobre lo que ha cambiado desde el Centro de seguridad & seguridad o el portal de Microsoft 365 Defender, vea:
+Si necesita información Office 365 sobre lo que ha cambiado desde el Centro de seguridad & cumplimiento o el portal de Microsoft 365 Defender, vea:
 
 - [Defender para Office 365 en Microsoft 365 Defender](microsoft-365-security-center-mdo.md)
 - [Microsoft Defender para punto de conexión en Microsoft 365 Defender](microsoft-365-security-center-mde.md)
@@ -132,7 +132,7 @@ Si necesita información Office 365 sobre lo que ha cambiado desde el Centro de 
 
 ### <a name="what-to-expect"></a>Qué esperar
 
-Todo el contenido de seguridad que use en el Centro de seguridad de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 & y</a> el centro de seguridad de Microsoft 365 ahora se puede encontrar en el portal de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender.</a>
+Todo el contenido de seguridad que use en el Centro de seguridad de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 & y</a> el centro de seguridad de Microsoft 365 ahora se puede encontrar en el portal de Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">seguridad</a>.
 
 El portal Microsoft 365 Defender ayuda a los equipos de seguridad a investigar y responder a los ataques al incorporar señales de diferentes cargas de trabajo en un conjunto de experiencias unificadas para:
 
@@ -141,7 +141,7 @@ El portal Microsoft 365 Defender ayuda a los equipos de seguridad a investigar y
 - Centro de actividades
 - Análisis de amenazas
 
-Microsoft 365 Defender enfatiza la *unidad,* la claridad y los objetivos comunes, ya que combina Microsoft Defender para Office 365 y Microsoft Defender para endpoint. La combinación se basó en las prioridades enumeradas a continuación y se realizó sin sacrificar las capacidades que cada conjunto de seguridad trajo a la combinación de:
+Microsoft 365 Defender enfatiza la *unidad, la claridad* y los objetivos comunes, ya que combina Microsoft Defender para Office 365 y Microsoft Defender para endpoint. La combinación se basó en las prioridades enumeradas a continuación y se realizó sin sacrificar las capacidades que cada conjunto de seguridad trajo a la combinación de:
 
 - Bloques de creación comunes
 - Terminología común
@@ -149,19 +149,19 @@ Microsoft 365 Defender enfatiza la *unidad,* la claridad y los objetivos comunes
 - Paridad de características con otras cargas de trabajo
 
 > [!NOTE]
-> El portal Microsoft 365 Defender es accesible sin necesidad de que los clientes den pasos de migración o compren una nueva licencia. Por ejemplo, este nuevo portal es accesible para los administradores con una suscripción E3, al igual que para aquellos con Microsoft Defender para el Plan 1 y el Plan 2 de Office 365; sin embargo, Exchange Online Protection o Office 365 Defender para clientes del Plan 1 solo ven las características de seguridad que admiten sus licencias de suscripción. El objetivo del portal es centralizar la seguridad.
+> El Microsoft 365 Defender es accesible sin necesidad de que los clientes tomen pasos de migración o compren una nueva licencia. Por ejemplo, este nuevo portal es accesible para los administradores con una suscripción E3, al igual que para aquellos con Microsoft Defender para el Plan 1 y el Plan 2 de Office 365; sin embargo, Exchange Online Protection o Defender para los clientes del Plan 1 de Office 365 solo ven las características de seguridad que admiten sus licencias de suscripción. El objetivo del portal es centralizar la seguridad.
 
 ### <a name="unified-investigations"></a>Investigaciones unificadas
 
-La centralización de la información de seguridad crea un único lugar para investigar incidentes de seguridad en Microsoft 365. Un ejemplo principal son **los incidentes en** incidentes & **alertas** en el inicio rápido de Microsoft 365 Defender.
+La centralización de la información de seguridad crea un único lugar para investigar incidentes de seguridad en Microsoft 365. Un ejemplo principal son **los incidentes en** **incidentes & alertas** en el inicio rápido de Microsoft 365 Defender.
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="La página Incidentes de Microsoft 365 Defender" lightbox="../../media/converged-incidents-2.png.png":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Ejemplo de la página Incidentes en Microsoft 365 Defender" lightbox="../../media/converged-incidents-2.png.png":::
 
 Al seleccionar un nombre de incidente se muestra una página que muestra el valor de centralizar la información de seguridad.
 
 :::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Ejemplo de la página Resumen de un incidente en Microsoft 365 Defender" lightbox="../../media/converged-incident-info-3.png":::
 
-En la parte superior de una página de incidentes, verá las pestañas **Resumen** **,** Alertas **,** Dispositivos , **Usuarios,** **Buzones** de **correo,** **Investigaciones,** Evidencia y respuesta, y Graph **datos.** Seleccione estas pestañas para obtener información más detallada. Por ejemplo,  la pestaña Usuarios muestra información para los usuarios de cargas de trabajo convergentes (Microsoft Defender para endpoint, Microsoft Defender para identidades y Microsoft Defender para aplicaciones en la nube) y una amplia variedad de orígenes, como los servicios de dominio de Active Directory (AD DS), Azure AD y proveedores de identidades de terceros. Para obtener más información, vea [investigar usuarios](investigate-users.md).
+En la parte superior de una página de incidentes, verá las pestañas **Resumen****,** Alertas **,** Dispositivos, **Usuarios****,** **Buzones**, **Investigaciones, Evidencia** y respuesta, y **Graph datos.** Seleccione estas pestañas para obtener información más detallada. Por ejemplo, la  pestaña Usuarios muestra información para usuarios de cargas de trabajo convergentes (Microsoft Defender para endpoint, Microsoft Defender para identidades y Microsoft Defender para aplicaciones en la nube) y una variedad de orígenes, como servicios de dominio de Active Directory (AD DS), proveedores de identidades de terceros y Azure AD locales. Para obtener más información, vea [Investigar usuarios](investigate-users.md).
 
 Tómese el tiempo para revisar los incidentes de su entorno, profundizar en estas pestañas y practicar la creación de una comprensión de cómo obtener acceso a la información proporcionada para incidentes para distintos tipos de amenazas.
 
@@ -173,19 +173,19 @@ Los controles y el contenido comunes aparecen en el mismo lugar o se condensan e
 
 #### <a name="unified-settings"></a>Configuración unificada
 
-:::image type="content" source="../../media/converged-add-role-9.png" alt-text="La página Configuración del portal Microsoft 365 Defender web" lightbox="../../media/converged-add-role-9.png":::
+:::image type="content" source="../../media/converged-add-role-9.png" alt-text="La página Configuración del portal de Microsoft 365 Defender web" lightbox="../../media/converged-add-role-9.png":::
 
 #### <a name="permissions--roles"></a>Permisos & roles
 
 :::image type="content" source="../../media/converged-roles-5.png" alt-text="Página Permisos & roles que muestra roles de extremos & grupos, roles y grupos de dispositivos" lightbox="../../media/converged-roles-5.png":::
 
-El acceso Microsoft 365 Defender se configura con Azure AD global o mediante roles personalizados. For Defender for Endpoint, see [Assign user access to the Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/assign-portal-access). For Defender for Office 365, see [Permissions in the Centro de cumplimiento de Microsoft 365 and Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
+El acceso a Microsoft 365 Defender se configura con Azure AD globales o mediante roles personalizados. For Defender for Endpoint, see [Assign user access to the Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/assign-portal-access). For Defender for Office 365, see [Permissions in the Centro de cumplimiento de Microsoft 365 and Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
 
 - Obtenga más información sobre cómo [administrar el acceso a Microsoft 365 Defender](m365d-permissions.md)
 - Obtenga más información sobre cómo [crear roles personalizados](custom-roles.md) en Microsoft 365 Defender
 
 > [!NOTE]
-> Microsoft Defender para endpoint en Microsoft 365 Defender admite la concesión de acceso a proveedores de servicios de seguridad administrados [(MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) del mismo modo que se concede acceso en el [portal de Microsoft 365 Defender .](./mssp-access.md)
+> Microsoft Defender para endpoint en Microsoft 365 Defender admite la concesión de acceso a proveedores de servicios de seguridad [administrados (MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) del mismo modo que se concede acceso en el [portal de Microsoft 365 Defender administración](./mssp-access.md).
 
 #### <a name="integrated-reports"></a>Informes integrados
 
@@ -199,10 +199,10 @@ Esta información de un vistazo le ayuda a mantenerse al día con las actividade
 
 Las tarjetas entran en estas categorías:
 
-- **Identidades:** supervise las identidades de su organización y realice un seguimiento de comportamientos sospechosos o arriesgados. [Obtenga más información sobre la protección de identidades.](/azure/active-directory/identity-protection/overview-identity-protection)
-- **Datos:** ayuda a realizar un seguimiento de la actividad del usuario que podría provocar la divulgación de datos no autorizados.
-- **Dispositivos:** obtenga información actualizada sobre alertas, actividad de infracción y otras amenazas en sus dispositivos.
-- **Aplicaciones:** obtenga información sobre cómo se usan las aplicaciones en la nube en su organización. [Obtenga más información sobre las aplicaciones detectadas en Defender para aplicaciones en la nube.](/cloud-app-security/discovered-apps)
+- **Identidades**: supervise las identidades de su organización y realice un seguimiento de comportamientos sospechosos o arriesgados. [Obtenga más información sobre la protección de identidades](/azure/active-directory/identity-protection/overview-identity-protection).
+- **Datos** : ayuda a realizar un seguimiento de la actividad del usuario que podría provocar la divulgación de datos no autorizados.
+- **Dispositivos** : obtenga información actualizada sobre alertas, actividad de infracción y otras amenazas en sus dispositivos.
+- **Aplicaciones** : obtenga información sobre cómo se usan las aplicaciones en la nube en su organización. [Obtén más información sobre las aplicaciones detectadas en Defender para aplicaciones en la nube](/cloud-app-security/discovered-apps).
 
 
 #### <a name="search-across-entities-preview"></a>Búsqueda entre entidades (versión preliminar)
@@ -213,14 +213,14 @@ La barra de búsqueda se encuentra en la parte superior de la página. A medida 
 
 Puede buscar en las siguientes entidades en Defender for Endpoint y Defender for Identity: 
 
-- **Dispositivos:** compatibles con Defender para Endpoint y Defender para Identity. Admite el uso de operadores de búsqueda. 
-- **Usuarios:** compatible con Defender for Endpoint, Defender for Identity y Defender for Cloud Apps. 
-- **Archivos, DIRECCIONES IP y direcciones URL:** las mismas capacidades que en Defender para endpoint.
+- **Dispositivos** : compatibles con Defender para Endpoint y Defender para Identity. Admite el uso de operadores de búsqueda. 
+- **Usuarios** : compatible con Defender for Endpoint, Defender for Identity y Defender for Cloud Apps. 
+- **Archivos, DIRECCIONES IP y direcciones URL** : las mismas capacidades que en Defender para endpoint.
 
     >[!NOTE]
     >Las búsquedas de DIRECCIONES IP y URL coinciden exactamente y no aparecen en la página de resultados de búsqueda: llevan directamente a la página de entidad. 
 
-- **TVM:** las mismas capacidades que en Defender for Endpoint (vulnerabilidades, software y recomendaciones). 
+- **TVM** : las mismas capacidades que en Defender for Endpoint (vulnerabilidades, software y recomendaciones). 
 
  
 
@@ -232,7 +232,7 @@ Puede buscar en las siguientes entidades en Defender for Endpoint y Defender for
 
 Realice un seguimiento y responda a las amenazas emergentes con la Microsoft 365 Defender de análisis de amenazas integrada:
 
-- Mejor cobertura de datos entre Microsoft Defender para Endpoint y Microsoft Defender para Office 365, lo que permite la administración combinada de incidentes, la investigación automática, la corrección y la búsqueda proactiva o reactiva de amenazas en todo el dominio.
+- Mejor cobertura de datos entre Microsoft Defender para Endpoint y Microsoft Defender para Office 365, haciendo posible la administración combinada de incidentes, la investigación automática, la corrección y la búsqueda proactiva o reactiva de amenazas en todo el dominio.
 - Detecciones y mitigaciones relacionadas con el correo electrónico de Microsoft Defender para Office 365, además de los datos de punto de conexión que ya están disponibles en Microsoft Defender para Endpoint.
 - Una vista de incidentes relacionados con amenazas que agregan alertas en casos de ataques de extremo a extremo en Microsoft Defender para Endpoint y Microsoft Defender para Office 365 para reducir la cola de trabajo, así como simplificar y acelerar la investigación.
 - Los intentos de ataque detectados y bloqueados por Microsoft 365 Defender soluciones. También hay datos que puede usar para impulsar acciones de prevención que mitiguen el riesgo de una mayor exposición y aumenten la resistencia.
@@ -240,13 +240,13 @@ Realice un seguimiento y responda a las amenazas emergentes con la Microsoft 365
 
 ### <a name="a-centralized-learning-hub"></a>Un concentrador de Learning centralizado
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal de aprendizaje</a> incluye un centro de aprendizaje que proporciona instrucciones oficiales de recursos como el blog de seguridad de Microsoft, la comunidad de seguridad de Microsoft en YouTube y la documentación oficial en docs.microsoft.com.
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal de aprendizaje</a> incluye un centro de aprendizaje que proporciona instrucciones oficiales de recursos como el blog de seguridad de Microsoft, la comunidad de seguridad de Microsoft en YouTube y la documentación oficial de docs.microsoft.com.
 
-Dentro del centro de aprendizaje, las instrucciones de colaboración de correo electrónico & (Microsoft Defender para Office 365) están en paralelo con Endpoint (Microsoft Defender para endpoint) y Microsoft 365 Defender de aprendizaje.
+Dentro del centro de aprendizaje, las instrucciones de colaboración de correo electrónico & (Microsoft Defender para Office 365) están en paralelo con Endpoint (Microsoft Defender para endpoint) y Microsoft 365 Defender aprendizaje.
 
-El centro de aprendizaje se abre con Learning rutas de acceso organizadas en torno a temas como "¿Cómo investigar con Microsoft 365 Defender?" y "Microsoft Defender para Office 365 procedimientos recomendados". Esta sección está actualmente curada por el Grupo de productos de seguridad dentro de Microsoft. Cada Learning de acceso refleja un tiempo proyectado que se tarda en pasar por los conceptos. Por ejemplo, 'Pasos que debe seguir cuando se pone en peligro una cuenta de usuario de Microsoft Defender para Office 365' se prevé que tarde 8 minutos y es un aprendizaje valioso sobre la marcha.
+El centro de aprendizaje se abre con Learning rutas de acceso organizadas en torno a temas como "¿Cómo investigar con Microsoft 365 Defender?" y "Microsoft Defender para Office 365 procedimientos recomendados". Esta sección está actualmente curada por el Grupo de productos de seguridad dentro de Microsoft. Cada Learning de acceso refleja un tiempo proyectado que se tarda en superar los conceptos. Por ejemplo, "Pasos a seguir cuando una cuenta de usuario de Microsoft Defender para Office 365 está en peligro" se prevé que tarde 8 minutos y es un aprendizaje valioso sobre la marcha.
 
-Después de hacer clic en el contenido, puede ser útil marcar este sitio y organizar los marcadores en una carpeta "Seguridad" o "Crítica". Para ver todas las Learning rutas de acceso, haga clic en el vínculo Mostrar todo en el panel principal.
+Después de hacer clic en el contenido, puede ser útil marcar este sitio y organizar los marcadores en una carpeta "Seguridad" o "Crítica". Para ver todas Learning rutas de acceso, haga clic en el vínculo Mostrar todo en el panel principal.
 
 > [!NOTE]
 > Hay filtros **útiles** en la parte superior del centro de aprendizaje de Microsoft 365 Defender que te permitirán elegir entre productos (actualmente Microsoft 365 Defender, Microsoft Defender para endpoint y Microsoft Defender para Office 365). Observe que se muestra el número de recursos de aprendizaje para cada sección, lo que puede ayudar a los alumnos a realizar un seguimiento de cuántos recursos tienen disponibles para la formación y el aprendizaje.
@@ -254,13 +254,13 @@ Después de hacer clic en el contenido, puede ser útil marcar este sitio y orga
 > Junto con el filtro Producto, se enumeran los temas actuales, los tipos de recursos (desde vídeos hasta seminarios web), los niveles de familiaridad o experiencia con las áreas de seguridad, los roles de seguridad y las características del producto.
 
 > [!TIP]
-> Hay muchas otras oportunidades de aprendizaje en [Microsoft Learn](/learn/). Encontrará formación en certificación, como el curso [MS-500T02-A: Implementar](/learn/certifications/courses/ms-500t02)Microsoft 365 protección contra amenazas .
+> Hay muchas otras oportunidades de aprendizaje en [Microsoft Learn](/learn/). Encontrará formación en certificación, como el curso [MS-500T02-A: Implementar Microsoft 365 protección contra amenazas](/learn/certifications/courses/ms-500t02).
 
 ### <a name="send-us-your-feedback"></a>Envíenos sus comentarios
 
 Necesitamos sus comentarios. We're always looking to improve, so if there's something you'd like to see, [watch this video to find out how you can trust us to read your feedback](https://www.microsoft.com/videoplayer/embed/RE4K5Ci).
 
-También puede dejar comentarios de este artículo. En la sección "Comentarios" al final de "Enviar y ver comentarios para", las opciones son *Este producto* o *Esta página*.
+También puede dejar comentarios de este artículo. En la sección "Comentarios" al final de "Enviar y ver comentarios para", las *opciones son Este* producto o *Esta página*.
 
 Use el **botón Este producto** para obtener comentarios *sobre* el producto:
 
@@ -268,8 +268,8 @@ Use el **botón Este producto** para obtener comentarios *sobre* el producto:
     1. Haz clic con el botón derecho en el botón y "Abrir en una pestaña nueva" si quieres seguir leyendo estas instrucciones.
 2. Esto navegará al foro **UserVoice**.
 3. Tiene 2 opciones:
-    1. Desplácese hacia abajo hasta el cuadro de texto ¿Cómo podemos mejorar el cumplimiento o proteger mejor a los usuarios en *Office 365?* y pegue en *Microsoft 365 Defender*. Puedes buscar en los resultados una idea como la tuya y votarla por arriba, o usar el botón **para Publicar una nueva idea**.
-    1. Si estás seguro de que este problema ya está notificado y quieres aumentar  su perfil con un voto (o votos), usa el cuadro Enviar comentarios a la derecha de UserVoice. Busque *Microsoft 365 Defender*, **busque el problema y use el botón de voto** para aumentar su estado.
+    1. Desplácese hacia abajo hasta el cuadro de texto ¿Cómo podemos mejorar el cumplimiento o proteger mejor a los usuarios en Office 365 *?* y pegue en *Microsoft 365 Defender*. Puedes buscar en los resultados una idea como la tuya y votarla por arriba, o usar el botón para **Publicar una nueva idea**.
+    1. Si estás seguro de que este problema ya está notificado y quieres aumentar su perfil con un voto (o votos), usa el cuadro  Enviar comentarios a la derecha de UserVoice. Busque *Microsoft 365 Defender,* **busque el problema y use el botón de voto** para aumentar su estado.
 
 Use *esta página para* obtener comentarios sobre el propio artículo. Gracias por sus comentarios. Su voz nos ayuda a mejorar los productos.
 
@@ -297,7 +297,7 @@ Con esta ruta de aprendizaje de Microsoft Learn, puede comprender Microsoft 365 
 > [Iniciar >](/learn/paths/defender-detect-respond/)
 
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Novedades de Microsoft 365 Defender](whats-new.md)
 - [Microsoft Defender para Office 365 en Microsoft 365 Defender](microsoft-365-security-center-mdo.md)

@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: bab766fd69b9227f10ba897040faff79e65b1722
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f919a93768699c573c87b938cea37a05955ab9f2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325787"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465341"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Bloqueo y contención de comportamientos
 
@@ -38,7 +38,7 @@ El panorama de amenazas actual está saturado por [malware](/windows/security/th
 
 Las capacidades de bloqueo y contención del comportamiento pueden ayudar a identificar y detener las amenazas, en función de sus comportamientos y de los árboles de proceso incluso cuando la amenaza ha comenzado a ejecutarse. Las características y los componentes de protección de última generación, EDR y Defender para endpoint funcionan juntos en las capacidades de contención y bloqueo de comportamiento.
 
-:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Bloqueo y contención de comportamiento.":::
+:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Bloqueo y contención de comportamiento en el portal de ATP de Microsoft Defender" lightbox="images/mdatp-next-gen-EDR-behavblockcontain.png":::
 
 Las capacidades de bloqueo de comportamiento y contención funcionan con varios componentes y características de Defender para endpoint para detener los ataques inmediatamente e impedir que los ataques progresen.
 
@@ -52,7 +52,7 @@ Con estas capacidades, se pueden evitar o bloquear más amenazas, incluso si com
 
 En la siguiente imagen se muestra un ejemplo de una alerta que se desencadenó mediante funciones de bloqueo de comportamiento y contención:
 
-:::image type="content" alt-text="Ejemplo de alerta a través del bloqueo y la contención del comportamiento." source="images/blocked-behav-alert.png" lightbox="images/blocked-behav-alert.png":::
+:::image type="content" source="images/blocked-behav-alert.png" alt-text="La página Alertas con una alerta mediante bloqueo de comportamiento y contención" lightbox="images/blocked-behav-alert.png":::
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>Componentes del bloqueo y la contención del comportamiento
 
@@ -62,7 +62,7 @@ En la siguiente imagen se muestra un ejemplo de una alerta que se desencadenó m
 
 - **[Bloqueo de bucle de comentarios](feedback-loop-blocking.md)** (también denominado protección rápida) Las detecciones de amenazas se observan a través de la inteligencia de comportamiento. Las amenazas se detienen e impiden que se ejecuten en otros puntos de conexión. (El bloqueo de bucle de comentarios está habilitado de forma predeterminada).
 
-- **[Detección y respuesta de puntos de conexión (EDR)](edr-in-block-mode.md)** en modo de bloqueo Los artefactos o comportamientos malintencionados que se observan a través de la protección posterior a la infracción se bloquean y contienen. EDR en modo de bloqueo funciona incluso si Antivirus de Microsoft Defender no es la solución antivirus principal. (EDR en modo de bloque no está habilitado de forma predeterminada; se activa en Microsoft 365 Defender).
+- **[Detección y respuesta de puntos de conexión (EDR)](edr-in-block-mode.md)** en modo de bloqueo Los artefactos o comportamientos malintencionados que se observan a través de la protección posterior a la infracción se bloquean y contienen. EDR en modo de bloqueo funciona incluso si Antivirus de Microsoft Defender no es la solución antivirus principal. (EDR en modo de bloqueo no está habilitado de forma predeterminada; se activa en Microsoft 365 Defender).
 
 Espere más en el área del bloqueo y la contención del comportamiento, ya que Microsoft sigue mejorando las características y capacidades de protección contra amenazas. Para ver lo que se planea y se está implementando ahora, visite el [mapa de ruta Microsoft 365 desarrollo](https://www.microsoft.com/microsoft-365/roadmap).
 
@@ -88,34 +88,34 @@ A continuación se muestran dos ejemplos reales de bloqueo y contención del com
 
 Como se describe en In [hot pursuit of elusive threats: AI-driven behavior-based blocking stops attacks in their tracks](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks), a credential theft attack against 100 organizations around the world was stopped by behavioral blocking and containment capabilities. Los mensajes de correo electrónico de suplantación de identidad (phishing) que contenían un documento de señuelo se enviaron a las organizaciones de destino. Si un destinatario abrió los datos adjuntos, un documento remoto relacionado pudo ejecutar código en el dispositivo del usuario y cargar malware Lokibot, que robaba credenciales, exfiltró datos robados y esperaba instrucciones adicionales de un servidor de comandos y control.
 
-Los modelos de aprendizaje de dispositivos basados en comportamiento en Defender for Endpoint capturaron y detuvieron las técnicas del atacante en dos puntos de la cadena de ataques:
+Los modelos de aprendizaje de dispositivos basados en comportamiento en Defender for Endpoint capturaron y detuvieron las técnicas del atacante en dos puntos de la cadena de ataque:
 
 - La primera capa de protección detectó el comportamiento de vulnerabilidad. Los clasificadores de aprendizaje de dispositivos en la nube identificaron correctamente la amenaza e indicaron inmediatamente al dispositivo cliente que bloqueara el ataque.
 - La segunda capa de protección, que ayudó a detener los casos en los que el ataque se atravó más allá de la primera capa, detectó el vacío del proceso, detuvo ese proceso y quitó los archivos correspondientes (como Lokibot).
 
 Mientras se detectó y detuvo el ataque, las alertas, como una "alerta de acceso inicial", se desencadenaron y aparecieron [en el portal Microsoft 365 Defender web](/microsoft-365/security/defender/microsoft-365-defender).
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Alerta de acceso inicial en Microsoft 365 Defender portal.":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Alerta de acceso inicial en el Microsoft 365 Defender portal" lightbox="images/behavblockcontain-initialaccessalert.png":::
 
-En este ejemplo se muestra cómo los modelos de aprendizaje de dispositivos basados en comportamientos en la nube agregan nuevas capas de protección contra ataques, incluso después de que se han empezado a ejecutar.
+En este ejemplo se muestra cómo los modelos de aprendizaje de dispositivos basados en comportamiento en la nube agregan nuevas capas de protección contra ataques, incluso después de haber comenzado a ejecutarse.
 
 ### <a name="example-2-ntlm-relay---juicy-potato-malware-variant"></a>Ejemplo 2: retransmisión NTLM: variante de malware de la camote jugosa
 
 Tal como se describe en la reciente entrada de blog, Bloqueo y contención del comportamiento: Transformar la óptica en protección, en enero de 2020, Defender for Endpoint detectó una actividad de escalamiento de [privilegios](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection) en un dispositivo de una organización. Se desencadenó una alerta denominada "Posible escalada de privilegios mediante retransmisión NTLM".
 
-:::image type="content" alt-text="Alerta NTLM para malware Despúes juicy." source="images/NTLMalertjuicypotato.png" lightbox="images/NTLMalertjuicypotato.png":::
+:::image type="content" source="images/NTLMalertjuicypotato.png" alt-text="Una alerta NTLM para malware Desajuezado" lightbox="images/NTLMalertjuicypotato.png":::
 
 La amenaza resultó ser malware; era una nueva variante no vista antes de una herramienta de piratería notoria llamada Juicy Potato, que los atacantes usan para obtener la escalación de privilegios en un dispositivo.
 
 Minutos después de que se desencadenó la alerta, se analizó el archivo y se confirmó que era malintencionado. Su proceso se detuvo y bloqueó, como se muestra en la siguiente imagen:
 
-:::image type="content" alt-text="Artefacto bloqueado." source="images/Artifactblockedjuicypotato.png" lightbox="images/Artifactblockedjuicypotato.png":::
+:::image type="content" source="images/Artifactblockedjuicypotato.png" alt-text="Artefacto bloqueado"  lightbox="images/Artifactblockedjuicypotato.png":::
 
 Unos minutos después de bloquear el artefacto, se bloquearon varias instancias del mismo archivo en el mismo dispositivo, lo que impidió que se implementara más atacantes u otro malware en el dispositivo.
 
 En este ejemplo se muestra que, con las capacidades de contención y bloqueo de comportamiento, las amenazas se detectan, contienen y bloquean automáticamente.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Más información sobre Defender for Endpoint](overview-endpoint-detection-response.md)
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56a836e14051e3f621fb42fd518fb2cf5efe8bed
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 94e5b18ab1090f6fb76cb7734e90411b93b444e7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327705"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465463"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
@@ -69,11 +69,11 @@ Habilitar esta característica permite ejecutar scripts sin signo en una sesión
 
 Las aplicaciones potencialmente no deseadas (PUA) son una categoría de software que puede hacer que el equipo se ejecute lentamente, mostrar anuncios inesperados o, en el peor de los casos, instalar otro software, que puede ser inesperado o no deseado.
 
-Active esta característica para que las aplicaciones potencialmente no deseadas (PUA) se corrija en todos los dispositivos del espacio empresarial, incluso si la protección pua no está configurada en los dispositivos. Esto ayudará a proteger a los usuarios de la instalación involuntaria de aplicaciones no deseadas en su dispositivo. Cuando está desactivada, la corrección depende de la configuración del dispositivo.
+Active esta característica para que las aplicaciones potencialmente no deseadas (PUA) se corrija en todos los dispositivos del espacio empresarial, incluso si la protección pua no está configurada en los dispositivos. Esta activación de la característica ayuda a proteger a los usuarios de la instalación involuntaria de aplicaciones no deseadas en su dispositivo. Cuando está desactivada, la corrección depende de la configuración del dispositivo.
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>Restringir la correlación a grupos de dispositivos con ámbito
 
-Esta configuración se puede usar para escenarios en los que las operaciones SOC locales quisieran limitar las correlaciones de alertas solo a los grupos de dispositivos a los que pueden tener acceso. Al activar esta configuración, un incidente compuesto por alertas que se cruzan entre grupos de dispositivos ya no se considerará un solo incidente. A continuación, el SOC local puede tomar medidas sobre el incidente porque tienen acceso a uno de los grupos de dispositivos implicados. Sin embargo, soc global verá varios incidentes diferentes por grupo de dispositivos en lugar de un incidente. No recomendamos activar esta configuración a menos que esto supere las ventajas de la correlación de incidentes en toda la organización.
+Esta configuración se puede usar para escenarios en los que las operaciones SOC locales quisieran limitar las correlaciones de alertas solo a los grupos de dispositivos a los que pueden tener acceso. Al activar esta configuración, un incidente compuesto de alertas que los grupos entre dispositivos ya no se considerarán un solo incidente. A continuación, el SOC local puede tomar medidas sobre el incidente porque tienen acceso a uno de los grupos de dispositivos implicados. Sin embargo, soc global verá varios incidentes diferentes por grupo de dispositivos en lugar de un incidente. No recomendamos activar esta configuración a menos que esto supere las ventajas de la correlación de incidentes en toda la organización.
 
 > [!NOTE]
 > Cambiar esta configuración afecta solo a las correlaciones futuras de alertas.
@@ -109,7 +109,7 @@ Para activar **Permitir o bloquear** archivos:
 
 1. Alterna la configuración entre **Activar** y **Desactivar**.
  
-    :::image type="content" source="../../media/alloworblockfile.png" alt-text="Imagen de la configuración avanzada de la característica de archivo de bloqueo.":::
+    :::image type="content" source="../../media/alloworblockfile.png" alt-text="Pantalla Puntos de conexión" lightbox="../../media/alloworblockfile.png":::
 
 1. Seleccione **Guardar preferencias** en la parte inferior de la página.
 
@@ -147,7 +147,7 @@ Para obtener más información, vea [Investigar una cuenta de usuario](investiga
 
 ## <a name="skype-for-business-integration"></a>Skype Empresarial integración
 
-La habilitación Skype Empresarial integración le ofrece la capacidad de comunicarse con los usuarios mediante Skype Empresarial, correo electrónico o teléfono. Esto puede ser útil cuando necesita comunicarse con el usuario y mitigar los riesgos.
+La habilitación Skype Empresarial integración le ofrece la capacidad de comunicarse con los usuarios mediante Skype Empresarial, correo electrónico o teléfono. Esta activación puede ser útil cuando necesita comunicarse con el usuario y mitigar los riesgos.
 
 > [!NOTE]
 > Cuando un dispositivo se aísla de la red, hay una ventana emergente en la que puedes habilitar las comunicaciones de Outlook y Skype que permiten las comunicaciones al usuario mientras están desconectados de la red. Esta configuración se aplica a Skype y Outlook comunicación cuando los dispositivos están en modo aislado.
@@ -213,7 +213,7 @@ Defender for Endpoint se puede integrar con [Microsoft Intune](/intune/what-is-i
 > [!IMPORTANT]
 > Tendrás que habilitar la integración en Intune y Defender for Endpoint para usar esta característica. Para obtener más información sobre pasos específicos, vea [Configure Conditional Access in Defender for Endpoint](configure-conditional-access.md).
 
-Esta característica solo está disponible si tiene lo siguiente:
+Esta característica solo está disponible si tiene los siguientes requisitos previos:
 
 - Un inquilino con licencia para Enterprise Mobility + Security E3 y Windows E5 (o Microsoft 365 Enterprise E5)
 - Un entorno Microsoft Intune activo, con dispositivos Windows administrados por Intune [Azure AD unidos](/azure/active-directory/devices/concept-azure-ad-join/).

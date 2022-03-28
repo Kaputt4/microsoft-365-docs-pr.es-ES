@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga ayuda para solucionar problemas y mensajes de error.
-ms.openlocfilehash: 49e6657815ed71476a3dc79d778f7e1fbacfa1f4
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 957177dd20817f9b3d5fbc378f22b19eeaef1f7f
+ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775464"
+ms.locfileid: "64403685"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>Solucionar problemas y resolver mensajes de error en Microsoft 365 Lighthouse
 
@@ -53,7 +53,7 @@ En este artículo se describen los mensajes de error y los problemas que puede e
 
 **Causa:** Los inquilinos de los clientes no cumplen los siguientes criterios:
 
-  - Debe haber delegado (DAP) configurado para que el proveedor de servicios administrados (MSP) pueda administrar el tenaant del cliente*
+  - Debe haber delegado (DAP) configurado para que el proveedor de servicios administrados (MSP) pueda administrar el inquilino del cliente*
   - Debe tener al menos una Microsoft 365 Empresa Premium, una Microsoft 365 E3 o una licencia Windows 365 Empresa
   - No debe tener más de 1000 usuarios con licencia 
 

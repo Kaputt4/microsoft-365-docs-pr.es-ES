@@ -20,18 +20,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: ce3ce3c0b6ec948e68bda87d8d70d256b7e3fd3a
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: ec4aa28c25982ea81662ff26fa19f615d13cd314
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121138"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465407"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recomendaciones de directiva para proteger Teams chats, grupos y archivos
 
-En este artículo se describe cómo implementar las directivas recomendadas de acceso a dispositivos y identidad de confianza cero para proteger Microsoft Teams chats, grupos y contenido, como archivos y calendarios. Esta guía se basa en [las](identity-access-policies.md)directivas comunes de acceso a dispositivos y identidades, con información adicional Teams específica. Dado que Teams se integra con nuestros [](sharepoint-file-access-policies.md) otros productos, consulte Recomendaciones de directiva para proteger SharePoint sitios y archivos y Recomendaciones de directiva para proteger [el correo electrónico.](secure-email-recommended-policies.md)
+En este artículo se describe cómo implementar las directivas recomendadas de acceso a dispositivos y identidad de confianza cero para proteger Microsoft Teams chats, grupos y contenido, como archivos y calendarios. Esta guía se basa [en las directivas](identity-access-policies.md) comunes de acceso a dispositivos y identidades, con información adicional Teams específica. Dado que Teams se integra con nuestros otros productos, consulte Recomendaciones de directiva [](sharepoint-file-access-policies.md) para proteger SharePoint sitios y archivos y Recomendaciones de directiva para proteger [el correo electrónico](secure-email-recommended-policies.md).
 
-Estas recomendaciones se basan en tres niveles diferentes de seguridad y protección para Teams que se pueden aplicar en función de la granularidad de sus necesidades: punto de partida, empresa y seguridad especializada. Puedes obtener más información sobre estos niveles de seguridad y las directivas recomendadas a las que hacen referencia estas recomendaciones en las configuraciones de acceso a [dispositivos](microsoft-365-policies-configurations.md)y identidades.
+Estas recomendaciones se basan en tres niveles diferentes de seguridad y protección para Teams que se pueden aplicar en función de la granularidad de sus necesidades: punto de partida, empresa y seguridad especializada. Puedes obtener más información sobre estos niveles de seguridad y las directivas recomendadas a las que hacen referencia estas recomendaciones en las configuraciones de identidad y acceso [a dispositivos](microsoft-365-policies-configurations.md).
 
 En este artículo se incluyen más recomendaciones específicas Teams implementación para cubrir circunstancias de autenticación específicas, incluidos los usuarios de fuera de la organización. Deberá seguir estas instrucciones para obtener una experiencia de seguridad completa.
 
@@ -47,9 +47,9 @@ No es necesario habilitar los servicios dependientes para empezar a trabajar con
 
 ## <a name="updating-common-policies-to-include-teams"></a>Actualizar directivas comunes para incluir Teams
 
-Para proteger el chat, los grupos y el contenido de Teams, en el siguiente diagrama se muestran las directivas que se actualizarán a partir de las directivas comunes de acceso a dispositivos y identidades. Para que cada directiva se actualice, asegúrese de que los servicios Teams y dependientes se incluyan en la asignación de aplicaciones en la nube.
+Para proteger el chat, los grupos y el contenido en Teams, el siguiente diagrama ilustra qué directivas actualizar desde las directivas comunes de acceso a dispositivos y identidades. Para que cada directiva se actualice, asegúrese de que Teams y los servicios dependientes se incluyan en la asignación de aplicaciones en la nube.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="Resumen de las actualizaciones de directivas para proteger el acceso a Teams y sus servicios dependientes." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="Resumen de las actualizaciones de directivas para la protección del acceso a Teams y sus servicios dependientes" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
 
 Estos servicios son los servicios dependientes que se deben incluir en la asignación de aplicaciones en la nube para Teams:
 
@@ -60,25 +60,24 @@ Estos servicios son los servicios dependientes que se deben incluir en la asigna
 - Microsoft Stream (grabaciones de reuniones)
 - Microsoft Planner (tareas de Planner y datos del plan)
 
-En esta tabla se enumeran las directivas que deben [](identity-access-policies.md)revisarse y los vínculos a cada directiva de las directivas comunes de identidad y acceso a dispositivos, que tiene el conjunto de directivas más amplio para todas las Office aplicaciones.
+En esta tabla se enumeran las directivas que deben revisarse y los vínculos a cada directiva en las directivas comunes de identidad y acceso a [dispositivos,](identity-access-policies.md) que tiene el conjunto de directivas más amplio para todas las Office aplicaciones.
 
 |Nivel de protección|Directivas|Más información para la Teams implementación|
 |---|---|---|
-|**Punto de inicio**|[Requerir MFA cuando el riesgo de inicio de sesión *es medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Asegúrese de que Teams servicios dependientes y dependientes se incluyen en la lista de aplicaciones. Teams también tiene reglas de acceso de invitado y de acceso externo, encontrará más información sobre estas reglas más adelante en este artículo.|
+|**Punto de inicio**|[Requerir MFA cuando el riesgo de inicio de sesión *es medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Asegúrese de Teams servicios dependientes y de seguridad se incluyen en la lista de aplicaciones. Teams reglas de acceso de invitado y de acceso externo para tener en cuenta también, encontrará más información sobre estas reglas más adelante en este artículo.|
 ||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Incluya Teams y servicios dependientes en la asignación de aplicaciones en la nube.|
-||[Los usuarios de riesgo alto tienen que cambiar la contraseña](identity-access-policies.md#high-risk-users-must-change-password)|Fuerza Teams usuarios a cambiar su contraseña al iniciar sesión si se detecta actividad de alto riesgo para su cuenta. Asegúrese de que Teams servicios dependientes y dependientes se incluyen en la lista de aplicaciones.|
-||[Aplicar directivas de protección de datos de APP](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de que Teams servicios dependientes y dependientes se incluyen en la lista de aplicaciones. Actualice la directiva para cada plataforma (iOS, Android, Windows).|
-|**Empresarial**|[Requerir MFA cuando el riesgo de inicio de sesión *es bajo,* *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams también tiene reglas de acceso de invitado y de acceso externo, encontrará más información sobre estas reglas más adelante en este artículo. Incluya Teams y servicios dependientes en esta directiva.|
+||[Los usuarios de riesgo alto tienen que cambiar la contraseña](identity-access-policies.md#high-risk-users-must-change-password)|Fuerza Teams usuarios a cambiar su contraseña al iniciar sesión si se detecta actividad de alto riesgo para su cuenta. Asegúrese de Teams servicios dependientes y de seguridad se incluyen en la lista de aplicaciones.|
+||[Aplicar directivas de protección de datos de APP](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de Teams servicios dependientes y de seguridad se incluyen en la lista de aplicaciones. Actualice la directiva para cada plataforma (iOS, Android, Windows).|
+|**Empresarial**|[Requerir MFA cuando el riesgo de inicio de sesión *es bajo*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams reglas de acceso de invitado y de acceso externo para tener en cuenta también, encontrará más información sobre estas reglas más adelante en este artículo. Incluya Teams y servicios dependientes en esta directiva.|
 ||[Definir directivas de cumplimiento de dispositivos](identity-access-policies.md#define-device-compliance-policies)|Incluya Teams y servicios dependientes en esta directiva.|
-||[Requerir equipos y *dispositivos* móviles compatibles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Incluya Teams y servicios dependientes en esta directiva.|
+||[Requerir equipos y *dispositivos móviles* compatibles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Incluya Teams y servicios dependientes en esta directiva.|
 |**Seguridad especializada**|[*Requerir* siempre MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Independientemente de la identidad de usuario, su organización usará MFA. Incluya Teams y servicios dependientes en esta directiva. |
-|
 
 ## <a name="teams-dependent-services-architecture"></a>Teams de servicios dependientes
 
-Como referencia, el siguiente diagrama ilustra los servicios en los que Teams se basa. Para obtener más información e ilustraciones, vea Microsoft Teams servicios de productividad relacionados [en Microsoft 365 para arquitectos de TI.](../../solutions/productivity-illustrations.md)
+Como referencia, el siguiente diagrama ilustra los servicios en los que Teams se basa. Para obtener más información e ilustraciones, vea Microsoft Teams servicios de productividad relacionados [en Microsoft 365 para arquitectos de TI](../../solutions/productivity-illustrations.md).
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="Diagrama que muestra Teams dependencias SharePoint, OneDrive para la Empresa y Exchange." lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="El diagrama que muestra Teams dependencias de SharePoint, OneDrive para la Empresa y Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
 
 ## <a name="guest-and-external-access-for-teams"></a>Acceso externo y de invitado para Teams
 
@@ -95,13 +94,13 @@ In Azure AD, guest and external users are the same. The user type for both of th
 
 -->
 
-Para ver las directivas recomendadas para permitir el acceso a usuarios invitados y externos con una cuenta B2B de Azure AD, vea Directivas para permitir el acceso a cuentas [B2B](identity-access-policies-guest-access.md)externas y de invitado.
+Para ver las directivas recomendadas para permitir el acceso a usuarios invitados y externos con una cuenta B2B Azure AD, vea Directivas para permitir el acceso a cuentas [B2B externas y de invitado](identity-access-policies-guest-access.md).
 
 ### <a name="guest-access-in-teams"></a>Acceso de invitado a Teams
 
 Además de las directivas para los usuarios internos de su empresa u organización, los administradores pueden habilitar el acceso de invitado para permitir que, de forma individual, las personas externas a su empresa u organización puedan acceder Teams recursos e interactuar con personas internas para cosas como conversaciones de grupo, chat y reuniones.
 
-Para obtener más información sobre el acceso de invitado y cómo implementarlo, vea [Teams de invitado.](/microsoftteams/guest-access)
+Para obtener más información sobre el acceso de invitado y cómo implementarlo, [consulte Teams de invitado](/microsoftteams/guest-access).
 
 ### <a name="external-access-in-teams"></a>Acceso externo en Teams
 
@@ -115,11 +114,11 @@ El acceso externo no usa Azure AD cuentas de usuario B2B y, por lo tanto, no usa
 
 ## <a name="teams-policies"></a>Teams directivas
 
-Fuera de las directivas comunes enumeradas anteriormente, Teams directivas específicas que pueden y deben configurarse para administrar varias Teams funcionalidades.
+Fuera de las directivas comunes enumeradas anteriormente, hay directivas Teams específicas que pueden y deben configurarse para administrar varias Teams funcionalidades.
 
 ### <a name="teams-and-channels-policies"></a>Teams y canales
 
-Teams y los canales son dos elementos que se usan con frecuencia en Microsoft Teams y hay directivas que puede establecer para controlar lo que los usuarios pueden y no pueden hacer al usar equipos y canales. Aunque puede crear un equipo global, si su organización tiene 5000 usuarios o menos, es probable que le sea útil tener equipos y canales más pequeños para fines específicos, en línea con las necesidades de la organización.
+Teams y canales son dos elementos que se usan con frecuencia en Microsoft Teams y hay directivas que puede establecer para controlar lo que los usuarios pueden y no pueden hacer al usar equipos y canales. Aunque puede crear un equipo global, si su organización tiene 5000 usuarios o menos, es probable que le sea útil tener equipos y canales más pequeños para fines específicos, en línea con las necesidades de la organización.
 
 Se recomienda cambiar la directiva predeterminada o crear directivas personalizadas y puede obtener más información sobre cómo administrar las directivas en este vínculo: Administrar directivas de [equipos en Microsoft Teams](/microsoftteams/teams-policies).
 
@@ -137,11 +136,11 @@ Para obtener más información, consulte [Manage meeting policies in Teams](/mic
 
 Teams también te permite usar aplicaciones en varios lugares, como canales o chats personales. Tener directivas en torno a qué aplicaciones se pueden agregar y usar, y dónde, es esencial para mantener un entorno rico en contenido que también sea seguro.
 
-Para obtener más información sobre las directivas de permisos de aplicación, consulte Administrar directivas de [permisos de aplicaciones en Microsoft Teams](/microsoftteams/teams-app-permission-policies).
+Para obtener más información acerca de las directivas de permisos de aplicaciones, consulta [Administrar directivas de permisos de aplicaciones en Microsoft Teams](/microsoftteams/teams-app-permission-policies).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
-![Paso 4: Directivas para Microsoft 365 aplicaciones en la nube.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Paso 4: Directivas para aplicaciones Microsoft 365 nube" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 Configurar directivas de acceso condicional para:
 

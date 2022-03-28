@@ -23,17 +23,17 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cc57c2b39466e84d5652ef60c56d6951fbe86714
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0ad2fc9a1566e7816b3ff806b7d07ac29347cc89
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324093"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754768"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>Pruebe Microsoft 365 Defender capacidades de respuesta a incidentes en un entorno piloto
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Este artículo es [el paso 2 de 2](eval-defender-investigate-respond.md) en el proceso de realizar una investigación y respuesta de un incidente en Microsoft 365 Defender un entorno piloto. Para obtener más información acerca de este proceso, vea el [artículo de introducción](eval-defender-investigate-respond.md) .
 
@@ -51,7 +51,8 @@ Una vez que haya realizado una respuesta [a incidentes para un ataque simulado](
 
 Puede acceder a la cola de incidentes desde **Incidentes & alertas > incidentes** en el inicio rápido del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender incidentes</a>. Por ejemplo:
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Ejemplo de la cola de incidentes.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="La sección Alertas de & incidentes en el portal Microsoft 365 Defender web" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+
 
 La **sección Incidentes y alertas** más recientes muestra un gráfico del número de alertas recibidas e incidentes creados en las últimas 24 horas.
 
@@ -63,7 +64,7 @@ Para examinar la lista de incidentes y priorizar su importancia para la asignaci
 
 En la cola de incidentes predeterminada, seleccione **Filtros** para ver un panel **Filtros** , desde el que puede especificar un conjunto específico de incidentes. Por ejemplo:
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Ejemplo del panel de filtros de la cola de incidentes.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Panel Filtros de la sección Alertas de & incidentes en el portal Microsoft 365 Defender web" lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
 Para obtener más información, consulte [Priorizar incidentes](incident-queue.md).
 
@@ -71,7 +72,7 @@ Para obtener más información, consulte [Priorizar incidentes](incident-queue.m
 
 Puede administrar incidentes desde el panel **Administrar incidentes** para un incidente. Por ejemplo:
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Ejemplo del panel Administrar incidentes de un incidente.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="El panel Administrar incidentes de la sección Incidentes & alertas en el portal de Microsoft 365 Defender incidentes" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
 
 Puede mostrar este panel desde el vínculo **Administrar incidentes** en:
 
@@ -112,11 +113,12 @@ En función de cómo se configuren las capacidades automatizadas de investigaci�
 
 Por ejemplo:
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro de acciones unificado en Microsoft 365 Defender.":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="El Centro de acciones unificadas en el portal de Microsoft 365 Defender web" lightbox="../../media/m3d-action-center-unified.png":::
 
 En el Centro de acciones, puede seleccionar acciones pendientes y, a continuación, aprobarlas o rechazarlas en el panel desplegable. Por ejemplo:
 
-:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Aprobar o rechazar una acción.":::
+:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Panel que muestra las opciones para aprobar o rechazar una acción en el portal de Microsoft 365 Defender web" lightbox="../../media/air-actioncenter-itemselected.png":::
+
 
 Aprobar (o rechazar) acciones pendientes tan pronto como sea posible para que las investigaciones automatizadas puedan continuar y completarse de forma oportuna.
 
@@ -187,7 +189,7 @@ Hay un único buzón interno y un dispositivo necesarios para esta simulación. 
       > [!NOTE]
       > Consulta el siguiente paso para filtrar opciones para limitar la devolución de datos.
 
-      ![Ejemplo de los resultados avanzados de la consulta de búsqueda.](../../media/advanced-hunting-incident-response-try-1.png)
+      :::image type="content" source="../../media/advanced-hunting-incident-response-try-1.png" alt-text="La página Búsqueda avanzada en el portal Microsoft 365 Defender búsqueda avanzada" lightbox="../../media/advanced-hunting-incident-response-try-1.png":::
 
         > [!NOTE]
         > La búsqueda avanzada muestra los resultados de la consulta como datos tabulares. También puede optar por ver los datos en otros tipos de formato, como gráficos.
@@ -201,7 +203,7 @@ Hay un único buzón interno y un dispositivo necesarios para esta simulación. 
 
    1. Haga clic en las filas resultantes de la consulta para poder inspeccionar el registro.
 
-      ![Ejemplo del panel lateral inspeccionar registro que se abre cuando se selecciona un resultado de búsqueda avanzado.](../../media/advanced-hunting-incident-response-try-2.png)
+      :::image type="content" source="../../media/advanced-hunting-incident-response-try-2.png" alt-text="Sección Inspeccionar registro de la página Búsqueda avanzada en el portal Microsoft 365 Defender búsqueda" lightbox="../../media/advanced-hunting-incident-response-try-2.png":::
 
 4. Ahora que ha comprobado que puede ver el correo electrónico, agregue un filtro para los datos adjuntos. Céntrate en todos los correos electrónicos con datos adjuntos en el entorno. Para esta simulación, céntrate en los correos electrónicos entrantes, no en los que se envían desde el entorno. Quite los filtros que haya agregado para buscar el mensaje y agregar "| donde **AttachmentCount > 0** y **EmailDirection** == **"Inbound""**
 
@@ -259,40 +261,41 @@ Las detecciones personalizadas ejecutarán la consulta según la frecuencia que 
 
 1. En la página de consulta, quite las líneas 7 y 8 que se agregaron en el paso 7 de las instrucciones Ir a buscar y haga clic en **Crear regla de detección**.
 
-   ![Ejemplo de dónde puede hacer clic en Crear regla de detección en la página de búsqueda avanzada.](../../media/advanced-hunting-incident-response-try-3.png)
+   :::image type="content" source="../../media/advanced-hunting-incident-response-try-3.png" alt-text="La sección Edición de consultas de la página Búsqueda avanzada en el portal Microsoft 365 Defender búsqueda" lightbox="../../media/advanced-hunting-incident-response-try-3.png":::
 
    > [!NOTE]
    > Si hace clic en **Crear regla de detección** y tiene errores de sintaxis en la consulta, la regla de detección no se guardará. Compruebe doblemente la consulta para asegurarse de que no hay errores.
 
 2. Rellene los campos requeridos con la información que permitirá al equipo de seguridad comprender la alerta, por qué se generó y qué acciones espera que lleve a cabo.
 
-   ![Ejemplo de la página crear regla de detección donde puede definir los detalles de la alerta.](../../media/mtp/fig23.png)
+   :::image type="content" source="../../media/mtp/fig23.png" alt-text="La página Detalles de la alerta en el portal Microsoft 365 Defender alerta" lightbox="../../media/mtp/fig23.png":::
 
    Asegúrese de rellenar los campos con claridad para ayudar a dar al siguiente usuario una decisión fundamentada sobre esta alerta de regla de detección
 
 3. Seleccione las entidades que se verán afectadas en esta alerta. En este caso, seleccione **Dispositivo** y **buzón**.
 
-   ![Ejemplo de la página crear regla de detección donde puede elegir los parámetros de las entidades afectadas.](../../media/mtp/fig24.png)
+   :::image type="content" source="../../media/mtp/fig24.png" alt-text="Página de detalles de entidades afectadas en el portal de Microsoft 365 Defender web" lightbox="../../media/mtp/fig24.png":::
 
 4. Determine qué acciones deben tener lugar si se desencadena la alerta. En este caso, ejecute un examen antivirus, aunque se podrían realizar otras acciones.
 
-   ![Ejemplo de la página Crear regla de detección en la que puede ejecutar un examen antivirus cuando se desencadena una alerta para ayudar a solucionar las amenazas.](../../media/mtp/fig25.png)
+   :::image type="content" source="../../media/mtp/fig25.png" alt-text="La página Acciones del portal de Microsoft 365 Defender web" lightbox="../../media/mtp/fig25.png":::
 
 5. Seleccione el ámbito de la regla de alerta. Dado que esta consulta implica dispositivos, los grupos de dispositivos son relevantes en esta detección personalizada según el contexto de Microsoft Defender para endpoint. Al crear una detección personalizada que no incluya dispositivos como entidades afectadas, el ámbito no se aplica.
 
-   ![Ejemplo de la página crear regla de detección donde puede establecer el ámbito de la regla de alerta administra las expectativas de los resultados que verá.](../../media/mtp/fig26.png)
+   :::image type="content" source="../../media/mtp/fig26.png" alt-text="La página Ámbito del portal Microsoft 365 Defender web" lightbox="../../media/mtp/fig26.png":::
+
 
    Para este piloto, es posible que quieras limitar esta regla a un subconjunto de dispositivos de prueba en el entorno de producción.
 
 6. Seleccione **Crear**. A continuación, **seleccione Reglas de detección personalizadas** en el panel de navegación.
 
-   ![Ejemplo de la opción Reglas de detección personalizadas en el menú.](../../media/mtp/fig27a.png)
+   :::image type="content" source="../../media/mtp/fig27a.png" alt-text="La opción Reglas de detección personalizadas en el portal Microsoft 365 Defender de detección" lightbox="../../media/mtp/fig27a.png":::
 
-   ![Ejemplo de la página de reglas de detección que muestra los detalles de regla y ejecución.](../../media/mtp/fig27b.png)
+   :::image type="content" source="../../media/mtp/fig27b.png" alt-text="La página que muestra las reglas de detección y los detalles de ejecución en el portal Microsoft 365 Defender búsqueda" lightbox="../../media/mtp/fig27b.png":::
 
    En esta página, puede seleccionar la regla de detección, que abrirá una página de detalles.
 
-   ![Ejemplo de la página de datos adjuntos de correo electrónico donde puede ver el estado de la ejecución de la regla, alertas y acciones desencadenadas, editar la detección, y así sucesivamente.](../../media/mtp/fig28.png)
+   :::image type="content" source="../../media/mtp/fig28.png" alt-text="La página que muestra los detalles de las alertas desencadenadas en el portal Microsoft 365 Defender datos" lightbox="../../media/mtp/fig28.png":::
 
 
 ### <a name="expert-training-on-advanced-hunting"></a>Formación de expertos sobre la búsqueda avanzada

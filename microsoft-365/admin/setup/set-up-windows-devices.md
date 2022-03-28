@@ -2,8 +2,8 @@
 title: Configurar dispositivos Windows para Microsoft 365 Empresa Premium usuarios
 f1.keywords:
 - CSH
-ms.author: sharik
-author: skjerland
+ms.author: deniseb
+author: denisebmsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -30,102 +30,51 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Configure dispositivos Windows que ejecuten Windows 10 Pro para Microsoft 365 Empresa Premium usuarios, lo que habilita controles de seguridad y administración centralizados.
-ms.openlocfilehash: 0a6fa4178e3aeb2e77d744283bfcf671d0df1f3d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f64114ac6a117ac3eacc9b6aa9de31366e847f33
+ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322623"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64403597"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configurar dispositivos Windows para Microsoft 365 Empresa Premium usuarios
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Antes de configurar Windows dispositivos para Microsoft 365 Empresa Premium usuarios, asegúrese de que todos los dispositivos Windows están ejecutando Windows 10 Pro, versión 1703 (Creators Update). Windows 10 Pro es un requisito previo para implementar Windows 10 Business, que es un conjunto de servicios en la nube y capacidades de administración de dispositivos que complementan Windows 10 Pro y permiten la administración centralizada y los controles de seguridad de Microsoft 365 Empresa Premium .
-  
-Si tienes dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, la suscripción Microsoft 365 Empresa Premium te da derecho a una actualización Windows 10.
-  
-Para obtener más información sobre cómo actualizar los dispositivos Windows a Windows 10 Pro Creators Update, siga los pasos indicados en este tema: [Actualizar dispositivos Windows a Windows Pro Creators Update](../../business-video/upgrade.md)
-  
-Consulta [Comprobar que el dispositivo está conectado Azure AD](#verify-the-device-is-connected-to-azure-ad) para comprobar que tienes la actualización o para asegurarte de que la actualización ha funcionado.
+Antes de configurar dispositivos Windows para usuarios de Microsoft 365 Empresa Premium, asegúrese de que todos los dispositivos de Windows ejecutan Windows 10 Pro, versión 1703 (Actualización de creadores) o Windows 11 Pro. 
 
-## <a name="watch-connect-your-pc-to-microsoft-365-business"></a>Vea: Conectar equipo a Microsoft 365 Empresa
+Windows 10 Pro (o Windows 11 Pro) es un requisito previo para implementar Windows 10 Business, que es un conjunto de servicios en la nube y capacidades de administración de dispositivos que complementan Windows 10 Pro y Windows 11 Pro , y habilitar los controles de seguridad y administración centralizados de Microsoft 365 Empresa Premium.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
+[Obtenga más información sobre los requisitos Microsoft 365 Empresa Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:techspecstab).
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
-  
-## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Unir dispositivos Windows 10 en la cuenta de Azure AD de una organización
+## <a name="windows-10-pro-and-windows-11-pro"></a>Windows 10 Pro y Windows 11 Pro
 
-Cuando todos los dispositivos Windows de la organización se hayan actualizado a Windows 10 Pro Creators Update o ya estén ejecutando Windows 10 Pro Creators Update, puedes unir estos dispositivos a los Azure Active Directory. Una vez que se unen los dispositivos, se actualizarán automáticamente a Windows 10 Business, que forma parte de la Microsoft 365 Empresa Premium suscripción.
+Si tienes dispositivos Windows que ejecutan versiones anteriores de Windows, como Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, la suscripción Microsoft 365 Empresa Premium te da derecho a actualizar esos dispositivos a Windows 10 Pro o Windows 11 Pro.
   
-### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a>Dispositivos Windows 10 Pro nuevos o actualizados recientemente
+Para obtener más información sobre cómo actualizar Windows dispositivos, consulte los siguientes artículos:
 
-En el caso de los dispositivos nuevos que ejecuten Windows 10 Pro Creators Update, o en el de los dispositivos que se hayan actualizado a dicho producto pero no hayan pasado por el proceso de configuración de dispositivos Windows 10, siga estos pasos.
+- [Actualizar Windows inicio a Windows Pro](https://support.microsoft.com/windows/upgrade-windows-home-to-windows-pro-ef34d520-e73f-3198-c525-d1a218cc2818)
+- [Actualizar a Windows 10 Pro](https://support.microsoft.com/windows/upgrade-to-windows-10-pro-71ecc746-0f81-a4c0-bd4b-0db8559e0796)
   
-1. Siga el proceso de configuración de dispositivos Windows 10 hasta que llegue a la página **¿Cómo quiere realizar la configuración?**. 
-    
-    ![En la página Cómo desea configurar, elija Configurar para una organización.](../../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
-  
-2. Aquí, elija **Configurar para una organización** y, a continuación, escriba su nombre de usuario y contraseña para Microsoft 365 Empresa Premium. 
-    
-3. Finalice la configuración del dispositivo Windows 10.
-    
-   Una vez que haya terminado, el usuario se conectará a la cuenta de Azure AD de su organización. Para asegurarse de que la configuración es correcta, consulte [Comprobar que un dispositivo está conectado a Azure AD](#verify-the-device-is-connected-to-azure-ad). 
-  
-### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a>Dispositivos ya configurados con Windows 10 Pro
+Después de actualizar, consulta Comprobar que el dispositivo está conectado a [Azure AD](#verify-the-device-is-connected-to-azure-ad) para comprobar que tienes la actualización o para asegurarte de que la actualización ha funcionado.
 
- **Conectar usuarios a Azure AD:**
+## <a name="join-windows-devices-to-your-organizations-azure-ad"></a>Unirse Windows dispositivos a la organización Azure AD
+
+Cuando todos los dispositivos de Windows de tu empresa ejecutan Windows 10 Pro o Windows 11 Pro, puedes unir estos dispositivos al Azure Active Directory de la organización (Azure AD). 
+
+1. En un Windows, seleccione el logotipo Windows y, a continuación, el Configuración.
   
-1. En el equipo Windows del usuario, que ejecuta Windows 10 Pro, versión 1703 (Creators Update) (consulte [requisitos previos](../security-and-compliance/pre-requisites-for-data-protection.md), haga clic en el logotipo de Windows y, a continuación, en el icono Configuración.
+2. En **Configuración**, vaya a **AccountsAccess** >  **work or school** \> **Conectar**.
   
-   ![En el menú Inicio, haga clic Windows Configuración icono.](../../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
-  
-2. En **Configuración**, vaya a **Cuentas**.
-  
-   ![En Windows Configuración, vaya a Cuentas.](../../media/472fd688-d111-4788-9fbb-56a00fbdc24d.png)
-  
-3. En la página **Tu información**, haga clic en **Obtener acceso a trabajo o escuela** \> **Conectar**.
-  
-   ![Elija Conectar en Access work or school.](../../media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
-  
-4. En el cuadro de diálogo **Configurar una cuenta de trabajo o escuela**, en **Acciones alternativas**, elija **Unir este dispositivo a Azure Active Directory**.
-  
-   ![Haz clic en Unirse a este dispositivo para Azure Active Directory.](../../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
-  
-5. En la página **Vamos a iniciar sesión**, escriba su cuenta profesional o educativa \> **Siguiente**.
-  
-   En la página **Escribir contraseña**, escriba la contraseña \> **Iniciar sesión**.
-  
-   ![Escriba su correo electrónico de trabajo o escuela en la página Vamos a empezar a trabajar.](../../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
-  
-6. En la **página Asegúrese de que esta es su organización** , compruebe que la información es correcta y elija **Unirse**.
-  
-   En el **conjunto You're all!** página, elija **Listo**.
-  
-   ![On the Make sure this is your organization screen, choose Join.](../../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
-  
-Si ha cargado archivos a OneDrive para la Empresa, vuelva a sincronizarlos. Si usó una herramienta de terceros para migrar perfiles y archivos, sincronice también los con el nuevo perfil.
-  
+3. Escriba su dirección de correo electrónico y, a continuación, **elija Siguiente**.
+
+4. Siga las indicaciones para completar el proceso.
+
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>Comprobar que un dispositivo está conectado a Azure AD
 
 Para comprobar el estado de sincronización, en  la página Acceso al trabajo o escuela de **Configuración, seleccione** el área Conectado **a _** \<organization name\> _ para exponer los botones **Información** y **Desconectar**. Elige **Información** para obtener el estado de sincronización. 
   
-En la **página Estado de sincronización** , elija **Sincronizar** para obtener las directivas de administración de dispositivos móviles más recientes en el equipo.
-  
-Para empezar a usar la cuenta Microsoft 365 Empresa Premium, vaya al botón Windows **Inicio**, haga clic con el botón secundario en la imagen de la cuenta actual y, a continuación, **Cambie de cuenta**. Inicie sesión con el correo electrónico y la contraseña de la organización.
-  
-![Haga clic en el botón Información para ver el estado de sincronización.](../../media/818f7043-adbf-402a-844a-59d50034911d.png)
-  
-## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>Compruebe que el equipo se ha actualizado a Windows 10 Business
-
-Compruebe que los dispositivos Azure AD unidos Windows 10 se actualicen a Windows 10 Business como parte de su Microsoft 365 Empresa Premium suscripción.
-  
-1. Vaya a **Configuración** \> **Sistema** \> **Acerca de**.
-    
-2. Confirme que la **Edición** es **Windows 10 Business**.
-    
-    ![Verify that Windows edition is Windows 10 Business.](../../media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
+En la **página Estado de sincronización** , elija **Sincronizar** para obtener las directivas de administración de dispositivos móviles más recientes en el equipo.  
   
 ## <a name="next-steps"></a>Siguientes pasos
 

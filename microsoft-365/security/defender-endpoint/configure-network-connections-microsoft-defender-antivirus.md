@@ -1,7 +1,7 @@
 ---
 title: Configurar y validar las conexiones de red del Antivirus de Windows Defender
-description: Configure y pruebe la conexión con el servicio Antivirus de Microsoft Defender de protección en la nube.
-keywords: antivirus, Antivirus de Microsoft Defender, antimalware, seguridad, defender, nube, agresividad, nivel de protección
+description: Configure y pruebe la conexión con el servicio de Antivirus de Microsoft Defender de protección en la nube.
+keywords: antivirus, Antivirus de Microsoft Defender, antimalware, seguridad, defensa, nube, agresividad, nivel de protección
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ ms.date: 02/03/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f29cf5f77acd52a4ff3ccc8384f3c64861e48b64
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 1029549339d5c54334690bf5577a46f2d2be6bf6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806041"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465319"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Configurar y validar las conexiones de red del Antivirus de Windows Defender
 
@@ -37,11 +37,11 @@ Para garantizar Antivirus de Microsoft Defender protección entregada en la nube
 
 
 > [!NOTE]
-> El sitio de demostración defender para el punto de conexión en demo.wd.microsoft.com está en desuso y se quitará en el futuro.
+> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está obsoleto y se eliminará en el futuro.
 
 ## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>Permitir conexiones al servicio Antivirus de Microsoft Defender nube
 
-El Antivirus de Microsoft Defender en la nube proporciona una protección rápida y segura para los puntos de conexión. Es opcional habilitar el servicio de protección entregado en la nube. Antivirus de Microsoft Defender se recomienda el servicio en la nube, ya que proporciona una protección importante contra malware en los puntos de conexión y la red. Para obtener más información, vea [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) for enabling service with Intune, Microsoft Endpoint Configuration Manager, Group Policy, PowerShell cmdlets, or individual clients in the Seguridad de Windows app.
+El Antivirus de Microsoft Defender nube proporciona una protección rápida y segura para los puntos de conexión. Es opcional habilitar el servicio de protección entregado en la nube. Antivirus de Microsoft Defender se recomienda el servicio en la nube, ya que proporciona una protección importante contra malware en los puntos de conexión y la red. Para obtener más información, vea [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) for enabling service with Intune, Microsoft Endpoint Configuration Manager, Group Policy, PowerShell cmdlets, or individual clients in the Seguridad de Windows app.
 
 Después de habilitar el servicio, debe configurar la red o firewall para permitir conexiones entre la red y los puntos de conexión. Dado que la protección es un servicio en la nube, los equipos deben tener acceso a Internet y llegar a los servicios en la nube de Microsoft. No excluya la dirección URL `*.blob.core.windows.net` de ningún tipo de inspección de red.
 
@@ -82,11 +82,11 @@ Use el siguiente argumento con la Antivirus de Microsoft Defender de línea de c
 > [!NOTE]
 > Abra el símbolo del sistema como administrador. Haga clic con el botón secundario en el elemento del **menú** Inicio, haga clic **en Ejecutar como administrador** y haga clic en **Sí en** el símbolo del sistema de permisos. Este comando solo funcionará en Windows 10, versión 1703 o posterior, o Windows 11.
 
-Para obtener más información, [vea Manage Antivirus de Microsoft Defender with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md).
+Para obtener más información, vea [Manage Antivirus de Microsoft Defender with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md).
 
 ### <a name="attempt-to-download-a-fake-malware-file-from-microsoft"></a>Intentar descargar un archivo de malware falso de Microsoft
 
-Puede descargar un archivo de ejemplo que Antivirus de Microsoft Defender detectará y bloqueará si está conectado correctamente a la nube. Visita [https://aka.ms/ioavtest](https://aka.ms/ioavtest) para descargar el archivo.
+Puede descargar un archivo de ejemplo que Antivirus de Microsoft Defender detectará y bloqueará si está correctamente conectado a la nube. Visita [https://aka.ms/ioavtest](https://aka.ms/ioavtest) para descargar el archivo.
 
 > [!NOTE]
 > El archivo descargado no es exactamente malware. Es un archivo falso diseñado para probar si estás conectado correctamente a la nube.
@@ -95,13 +95,13 @@ Si está conectado correctamente, verá una notificación de Antivirus de Micros
 
 Si usas Microsoft Edge, también verás un mensaje de notificación:
 
-:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Captura de pantalla de notificación de que se encontró malware en Azure IoT Edge.":::
+:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="La notificación de que se encontró malware en Edge" lightbox="../../media/wdav-bafs-edge.png":::
 
 Si usa Internet Explorer, se produce un mensaje similar:
 
-:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="Notificación antivirus de Microsoft Defender de que se encontró malware.":::
+:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="La notificación antivirus de Microsoft Defender de que se encontró malware" lightbox="../../media/wdav-bafs-ie.png":::
 
-#### <a name="view-the-fake-malware-detection-in-your-windows-security-app"></a>Ver la detección de malware falso en la Seguridad de Windows de correo
+#### <a name="view-the-fake-malware-detection-in-your-windows-security-app"></a>Ver la detección de malware falso en la Seguridad de Windows aplicación
 
 1. En la barra de tareas, selecciona el icono Escudo y abre la **Seguridad de Windows** aplicación. O bien, busque **en Inicio** para *seguridad*.
 

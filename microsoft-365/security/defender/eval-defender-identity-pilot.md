@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3801fdb4a7aeda5e75c4e36f622f7e76604d96a6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: bba910b46c4b4769e67ae00af0381e129139dfe5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318737"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754552"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>Piloto de Microsoft Defender para identidad
 
@@ -38,7 +38,7 @@ Este artículo es [el paso 3 de 3](eval-defender-identity-overview.md) en el pro
 
 Siga estos pasos para configurar y configurar el piloto de Microsoft Defender para la identidad. Tenga en cuenta que las recomendaciones no incluyen la configuración de un grupo piloto. El procedimiento recomendado es continuar e instalar el sensor en todos los servidores que ejecutan Servicios de dominio de Active Directory (AD DS) y Servicios federados de Active Directory (AD FS).
 
-![Pasos para agregar Microsoft Defender for Identity al entorno de evaluación de Defender.](../../media/defender/m365-defender-identity-pilot-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-pilot-steps.png" alt-text="Los pasos para pilotar Microsoft Defender for Identity en el entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-identity-pilot-steps.png":::
 
 En la tabla siguiente se describen los pasos de la ilustración.
 
@@ -66,10 +66,10 @@ Pruebe los tutoriales de Defender for Identity:
 - [Investigar rutas de movimiento lateral](/defender-for-identity/investigate-lateral-movement-path)
 - [Investigar entidades](/defender-for-identity/investigate-entity)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 [Evaluar Microsoft Defender para Office 365](eval-defender-office-365-overview.md)
 
 Vuelva a la introducción a [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
-Volver a la introducción a [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+Vuelva a la introducción a [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
