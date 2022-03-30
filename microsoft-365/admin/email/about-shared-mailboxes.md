@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Los buzones compartidos se usan cuando varias personas necesitan acceder al mismo buzón. Obtenga información sobre lo que debe saber antes de crear un buzón compartido.
-ms.openlocfilehash: 2fbf07fbe71ccb42411f5808aa923d7179d2f13d
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 7b2632d8fde1b898fb9f2f425ef26a2eec28abb0
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241316"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675358"
 ---
 # <a name="about-shared-mailboxes"></a>Acerca de los buzones compartidos
 
@@ -60,7 +60,7 @@ Antes de [crear un buzón compartido](create-a-shared-mailbox.md), estas son alg
 
 - **Demasiados usuarios:** Cuando hay demasiados usuarios designados que acceden simultáneamente a un buzón compartido (no se recomienda más de 25), pueden no conectarse intermitentemente a este buzón o tener incoherencias como que los mensajes se dupliquen en la bandeja de salida. En este caso, puede considerar reducir el número de usuarios o usar una carga de trabajo diferente, como un grupo Microsoft 365 o una carpeta pública.
 
-- **Eliminación de mensajes:** Lamentablemente, no es posible impedir que los miembros eliminen los mensajes en un buzón compartido. La única manera de evitar este problema es crear un grupo de Microsoft 365 en lugar de un buzón compartido. Los grupos de Outlook son similares al buzón compartido. Para ver una comparación, consulte [Comparar grupos](../create-groups/compare-groups.md). Para obtener más información sobre los grupos, vea [Obtener más información sobre los grupos](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+- **Eliminación de mensajes:** Lamentablemente, no es posible impedir que los miembros eliminen los mensajes en un buzón compartido. La única forma de evitar esto es [crear un grupo Microsoft 365](/microsoft-365/admin/create-groups/create-groups) en lugar de un buzón compartido. Los grupos de Outlook son similares al buzón compartido. Para ver una comparación, consulte [Comparar grupos](../create-groups/compare-groups.md). Para obtener más información acerca de los grupos, vea [Learn about Microsoft 365 groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 - **Multi-Geo** En un entorno multige geográfico, los buzones compartidos deben tener una licencia del mismo modo que se concede una licencia a un buzón de usuario. Tenga en cuenta que no se admite la auditoría entre buzones de correo. Por ejemplo, si se asignan permisos a un usuario para tener acceso a un buzón compartido en una ubicación geográfica diferente, las acciones de buzón que realiza el usuario no se registran en el registro de auditoría del buzón de correo compartido. 
 

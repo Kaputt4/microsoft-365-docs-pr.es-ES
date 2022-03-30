@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre los valores de nivel de queja masiva (BCL) que se usan en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 93eed15773acc505b0106510d3774d862c50e67a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8c50ca25a355ca142e36c67d03fad42c3aa461a2
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60149783"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679882"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>Nivel de queja masiva (BCL) en EOP
 
@@ -37,11 +37,9 @@ En Microsoft 365 organizaciones con buzones en organizaciones de Exchange Online
 
 Los remitentes masivos varían en sus patrones de envío, creación de contenido y prácticas de adquisición de destinatarios. Los buenos carteros masivos envían mensajes deseados con contenido relevante a sus suscriptores. Estos mensajes generan pocas quejas por parte de los destinatarios. Otros troyanos de envío masivo de correo electrónico envían mensajes no solicitados muy similares al correo no deseado y generan muchas quejas por parte de los destinatarios. Los mensajes de un correo masivo se conocen como correo masivo o correo gris.
 
- El filtrado de  correo no deseado marca los mensajes como correo electrónico masivo en función del umbral BCL (el valor predeterminado o un valor que especifique) y realiza la acción especificada en el mensaje (la acción predeterminada es entregar el mensaje a la carpeta correo no deseado del destinatario). Para obtener más información, vea [Configure anti-spam policies](configure-your-spam-filter-policies.md) y [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md)
+ El filtrado de correo no  deseado marca los mensajes como correo electrónico masivo en función del umbral BCL (el valor predeterminado o un valor que especifique) y realiza la acción especificada en el mensaje (la acción predeterminada es entregar el mensaje a la carpeta correo no deseado del destinatario). Para obtener más información, vea [Configure anti-spam policies](configure-your-spam-filter-policies.md) y [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
 Los umbrales BCL se describen en la tabla siguiente.
-
-****
 
 |BCL|Descripción|
 |:---:|---|
@@ -49,6 +47,5 @@ Los umbrales BCL se describen en la tabla siguiente.
 |1, 2, 3|El mensaje proviene de un remitente de correo masivo que genera pocas quejas.|
 |4, 5, 6, 7<sup>\*</sup>|El mensaje proviene de un remitente de correo masivo que genera un número mixto de quejas.|
 |8, 9|El mensaje es de un remitente masivo que genera un gran número de quejas.|
-|
 
 <sup>\*</sup> Este es el valor de umbral predeterminado que se usa en las directivas contra correo no deseado.

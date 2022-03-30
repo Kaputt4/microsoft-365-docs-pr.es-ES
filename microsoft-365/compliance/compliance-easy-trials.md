@@ -6,7 +6,7 @@ ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Acerca de las pruebas de soluciones de cumplimiento.
-ms.openlocfilehash: 8cfa95b5998d78a2128e2e99ac6b23babf11f3ff
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 247080c374cd99c93e538e46ed0894ad24e501cd
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271795"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679838"
 ---
 # <a name="about-the-compliance-solutions-trial"></a>Acerca de la prueba de soluciones de cumplimiento
 
@@ -69,7 +69,7 @@ La prueba gratuita del Centro de cumplimiento de Microsoft 365 se está impleme
 
 - **Cumplimiento de comunicaciones**
 
-  El cumplimiento de comunicaciones le ayuda a superar los desafíos de cumplimiento modernos asociados a las comunicaciones internas y externas, ya que le ayuda a capturar automáticamente mensajes inadecuados, investigar posibles infracciones de directivas y tomar medidas para corregirlos. Más información sobre el [Cumplimiento de comunicaciones](communication-compliance.md)
+  El cumplimiento de comunicaciones le ayuda a superar los desafíos de cumplimiento modernos asociados a las comunicaciones internas y externas, ya que le ayuda a capturar automáticamente mensajes inadecuados, investigar posibles infracciones de directivas y tomar medidas para corregirlos. Más información sobre el [Cumplimiento de comunicaciones](communication-compliance.md).
 
 - **Administrador de cumplimiento**
 

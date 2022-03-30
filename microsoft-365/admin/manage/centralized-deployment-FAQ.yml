@@ -7,7 +7,7 @@ metadata:
   author: kwekua
   manager: scotv
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: o365-administration
   ms.localizationpriority: medium
   ms.collection:
@@ -21,12 +21,12 @@ metadata:
   - MET150
   - MOE150
   description: Revise las respuestas a preguntas frecuentes acerca de la implementación centralizada desde el Centro de administración de Microsoft 365.
-  ms.openlocfilehash: 72e57729d13a1d78c2589f942b09bc4779e21db7
-  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.openlocfilehash: 6ac70b49a563dad62b824df8933843adb9daeaeb
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 10/06/2021
-  ms.locfileid: "60164493"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63680058"
 title: Preguntas frecuentes sobre la implementación centralizada
 summary: La implementación centralizada es la forma recomendada para que un administrador de Office 365 implemente complementos de Office (Word, Excel, PowerPoint y Outlook) en usuarios y grupos de una organización, siempre que la organización cumpla todos los requisitos para usar la implementación centralizada, tal como se describe en este artículo.
 sections:
@@ -34,10 +34,10 @@ sections:
   questions:
   - question: >
       ¿Cómo sé si mi organización está configurada para la implementación centralizada?
-    answer: "La implementación centralizada de complementos requiere que los usuarios estén usando Aplicaciones Microsoft 365 para empresas (y que inicien sesión en Office con sus credenciales de inicio de sesión de la organización) y tengan Exchange Online buzones de correo. El directorio de suscripción debe estar en, o federado para, Azure Active Directory. \n \nLa implementación centralizada solo es compatible con buzones en línea. No admite la implementación en buzones de correo Exchange local.\n\nPuede usar el Control de compatibilidad [de](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)implementación centralizada   para determinar si la suscripción es apta. \n  \n"
+    answer: "La implementación centralizada de complementos requiere que los usuarios estén usando Aplicaciones Microsoft 365 para empresas (y que inicien sesión en Office con sus credenciales de inicio de sesión de la organización) y tengan buzones de correo Exchange Online organización. El directorio de suscripción debe estar en, o federado, en, Azure Active Directory. \n \nLa implementación centralizada solo es compatible con buzones en línea. No admite la implementación en buzones de correo Exchange locales.\n\nPuede usar el control de compatibilidad [de implementación centralizada](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)  para determinar si la suscripción es apta. \n  \n"
   - question: >
       ¿Cómo se apuntan las asignaciones de usuario de complementos con implementación centralizada?
-    answer: "La implementación centralizada admite asignaciones a usuarios individuales, grupos y todos los usuarios del espacio empresarial. La implementación centralizada se puede usar para usuarios de grupos de nivel superior o grupos sin grupos primarios, pero no para usuarios de grupos anidados o grupos que tienen grupos primarios. La implementación centralizada también forma parte de la mayoría de Azure Active Directory, incluidos Office 365, listas de distribución y grupos de seguridad. \n\nEs mejor usar asignaciones de grupos en lugar de asignaciones de usuario individuales para facilitar la administración.\n \nPara obtener más información, vea [Asignaciones de usuario y grupo.](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments)\n \n"
+    answer: "La implementación centralizada admite asignaciones a usuarios individuales, grupos y todos los usuarios del espacio empresarial. La implementación centralizada se puede usar para usuarios de grupos de nivel superior o grupos sin grupos primarios, pero no para usuarios de grupos anidados o grupos que tienen grupos primarios. La implementación centralizada también forma parte de la mayoría de Azure Active Directory, incluidos Office 365, listas de distribución y grupos de seguridad. \n\nEs mejor usar asignaciones de grupos en lugar de asignaciones de usuario individuales para facilitar la administración.\n \nPara obtener más información, vea [Asignaciones de usuario y grupo](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments).\n \n"
   - question: "¿Cuánto tiempo se necesita para que los complementos se muestren para todos los usuarios? \n"
     answer: "Un complemento puede tardar hasta 24 horas en aparecer para todos los usuarios. Puede tardar la misma cantidad de tiempo en actualizaciones de complementos, cambios desde activar o desactivar, o eliminaciones de complementos. \n"
   - question: >
@@ -49,10 +49,10 @@ sections:
       Para obtener más información acerca de cómo administrar el acceso de usuarios, vea:
        - [Impedir descargas de complementos desactivando la Tienda Office en todos los clientes (excepto Outlook)](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
        - [Especifique qué administradores y usuarios pueden instalar y administrar complementos para Outlook](/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
-  - question: "¿La implementación centralizada proporcionará a los administradores la flexibilidad para elegir el método de implementación para Outlook complementos? \n"
-    answer: "Sí. La implementación centralizada proporciona a los administradores la flexibilidad de elegir uno de los dos métodos de implementación para Outlook complementos durante la implementación del complemento:\n         \n**Disponible** Los usuarios pueden instalar el complemento en Outlook seleccionando Inicio > Obtener más complementos > **administrados por el administrador.**\n \n**Opcional** El complemento se implementa automáticamente en los usuarios asignados, pero pueden elegir quitarlo.\n    \n"
+  - question: "¿La implementación centralizada proporcionará a los administradores la flexibilidad para elegir el método de implementación Outlook complementos? \n"
+    answer: "Sí. La implementación centralizada proporciona a los administradores la flexibilidad de elegir uno de los dos métodos de implementación para Outlook complementos durante la implementación del complemento:\n         \n**Disponible** Los usuarios pueden instalar el complemento en Outlook elegir **Inicio > Obtener más complementos > administrados por administrador.**\n \n**Opcional** El complemento se implementa automáticamente en los usuarios asignados, pero pueden elegir quitarlo.\n    \n"
   - question: "¿Pueden los administradores actualizar los complementos de línea de negocio (LOB) \n"
-    answer: "Sí. Los administradores pueden cargar un nuevo archivo de manifiesto para admitir los cambios de metadatos de los complementos de LOB implementados por el administrador. El complemento se actualiza la próxima vez que se inicien Office aplicaciones. La aplicación web puede cambiar en cualquier momento.\n \nPara obtener más información, [vea line-of-business add-in](./manage-addins-in-the-admin-center.md).  \n"
+    answer: "Sí. Los administradores pueden cargar un nuevo archivo de manifiesto para admitir los cambios de metadatos de los complementos de LOB implementados por el administrador. El complemento se actualiza la próxima vez que se inicien Office aplicaciones. La aplicación web puede cambiar en cualquier momento.\n \nPara obtener más información, [vea complemento de línea de negocio](./manage-addins-in-the-admin-center.md).  \n"
   - question: "¿Pueden los administradores desactivar los complementos? \n"
     answer: >
       Sí. Los administradores pueden activar o desactivar los complementos que implementan para todos los usuarios desde el Centro de administración de Microsoft.
@@ -61,7 +61,7 @@ sections:
       Para obtener más información, vea [Estados del complemento](./manage-addins-in-the-admin-center.md#add-in-states).
   - question: >
       ¿Pueden los administradores eliminar o quitar complementos?
-    answer: "Sí. Los administradores pueden eliminar los complementos que implementaron para todos los usuarios del Centro de administración de Microsoft.\n\nPara obtener más información, [vea Delete an add-in](./manage-addins-in-the-admin-center.md#delete-an-add-in). \n  \n"
+    answer: "Sí. Los administradores pueden eliminar los complementos que implementaron para todos los usuarios del Centro de administración de Microsoft.\n\nPara obtener más información, [vea Eliminar un complemento](./manage-addins-in-the-admin-center.md#delete-an-add-in). \n  \n"
   - question: "¿Pueden los administradores implementar complementos de pago desde Office store mediante la implementación centralizada? \n"
     answer: "No. No puedes implementar complementos de pago desde la Tienda Office con la implementación centralizada en este momento. \n \nTe recomendamos que te llegues al desarrollador de ISV para que el complemento de pago solicite un archivo de manifiesto o una dirección URL. A continuación, el administrador del espacio empresarial puede implementar el complemento como complemento de LOB mediante la implementación centralizada.\n   \n"
   - question: "¿Qué rol de administrador necesito para administrar complementos para mi organización? \n"

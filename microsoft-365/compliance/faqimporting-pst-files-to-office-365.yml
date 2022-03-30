@@ -7,7 +7,7 @@ metadata:
   author: markjjo
   manager: laurawi
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: O365-seccomp
   ms.localizationpriority: medium
   ms.collection: M365-security-compliance
@@ -18,18 +18,18 @@ metadata:
   ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
   ms.custom: seo-marvel-apr2020
   description: Este artículo contiene respuestas a algunas preguntas más frecuentes para los administradores acerca de la importación de archivos PST a Microsoft 365 el servicio de Office 365 importación.
-  ms.openlocfilehash: 8b108bf92b0c61c4fef79a3de6264055a6b6e81d
-  ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+  ms.openlocfilehash: dafa5b5e0b95fe2ff1aac345093f2ebb84106d26
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 01/27/2022
-  ms.locfileid: "62241968"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63680440"
 title: Preguntas frecuentes sobre la importación de archivos PST
 summary: >
   **Este artículo está para administradores. ¿Desea importar archivos PST a su propio buzón? Consulta [Importar correo electrónico, contactos y calendario desde un Outlook archivo .pst](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
 
 
-  Estas son algunas de las preguntas más frecuentes sobre cómo usar el servicio de importación Office 365 importar archivos PST de forma masiva a Microsoft 365 buzones de correo. Para obtener más información acerca de cómo importar archivos PST, vea [Learn about importing PST files to Office 365](./importing-pst-files-to-office-365.md).
+  Estas son algunas de las preguntas más frecuentes sobre el uso del servicio de importación de Office 365 para importar masivamente archivos PST a Microsoft 365 buzones de correo. Para obtener más información acerca de cómo importar archivos PST, vea [Learn about importing PST files to Office 365](./importing-pst-files-to-office-365.md).
 
 
   ## <a name="using-network-upload-to-import-pst-files"></a>Uso de la carga en la red para importar archivos PST
@@ -65,7 +65,7 @@ sections:
   - question: >
       What version of the PST file format is supported for importing to Office 365?
     answer: >
-      There are two versions of the PST file format: ANSI and Unicode. Recomendamos la importación de archivos que usen el formato Unicode de archivo PST. En cambio, los archivos que usan el formato ANSI de archivo PST, como pueden ser los de los idiomas que usan un conjunto de caracteres de doble byte (DBCS), también pueden importarse a Office 365. Para obtener más información acerca de la importación de archivos PST ANSI, vea el paso 4 en Usar la carga de red para importar los archivos PST de [la organización a Office 365](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file).
+      There are two versions of the PST file format: ANSI and Unicode. Recomendamos la importación de archivos que usen el formato Unicode de archivo PST. En cambio, los archivos que usan el formato ANSI de archivo PST, como pueden ser los de los idiomas que usan un conjunto de caracteres de doble byte (DBCS), también pueden importarse a Office 365. Para obtener más información acerca de la importación de archivos PST ANSI, vea el paso 4 en Usar la carga de red para importar los archivos PST de la [organización a Office 365](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file).
 
 
       Además, los archivos PST de Outlook 2007 y versiones posteriores se pueden importar a Office 365.
@@ -175,7 +175,7 @@ sections:
   - question: >
       How long does it take to import a PST file to a mailbox?
     answer: >
-      Una vez que los archivos PST se han cargado al área de Azure Storage, Microsoft 365 analiza los datos de los archivos PST (de forma segura) para identificar la antigüedad de los elementos y los diferentes tipos de mensajes incluidos en los archivos PST. Cuando se haya completado este análisis, podrá importar todos los datos de los archivos PST o establecer filtros para determinar qué datos importa. Después de iniciar el trabajo de importación, se importa un archivo PST a un buzón Microsoft 365 a una velocidad de aproximadamente 24 GB al día. <sup>\*</sup> Si esta tasa no satisface sus necesidades, puede considerar otros métodos para importar datos de correo electrónico a Office 365. Para obtener más información, vea [Formas de migrar varias cuentas de correo electrónico a Office 365](/Exchange/mailbox-migration/mailbox-migration).
+      Una vez que los archivos PST se han cargado al área de Azure Storage, Microsoft 365 analiza los datos de los archivos PST (de forma segura) para identificar la antigüedad de los elementos y los diferentes tipos de mensajes incluidos en los archivos PST. Cuando se haya completado este análisis, podrá importar todos los datos de los archivos PST o establecer filtros para determinar qué datos importa. Después de iniciar el trabajo de importación, se importa un archivo PST a un buzón Microsoft 365 a una velocidad de aproximadamente 24 GB al día.<sup>\*</sup> Si esta tasa no satisface sus necesidades, puede considerar otros métodos para importar datos de correo electrónico a Office 365. Para obtener más información, vea [Formas de migrar varias cuentas de correo electrónico a Office 365](/Exchange/mailbox-migration/mailbox-migration).
 
 
       <sup>\*</sup> Esta tasa no está garantizada. La carga de trabajo del servidor y los problemas de rendimiento transitorios pueden reducir esta tasa.

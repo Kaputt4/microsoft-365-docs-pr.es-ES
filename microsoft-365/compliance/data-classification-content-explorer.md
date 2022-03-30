@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: 61d262c04d4a304506bc521d155be71f81d219ca
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: f402df53c19da78435e22717577b351fc302d0f4
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468766"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679970"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
@@ -34,15 +34,7 @@ El explorador de contenido de la clasificación de datos le permite ver de forma
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Todas las cuentas que tengan acceso a la clasificación de datos y la usen deben tener una licencia asignada de una de estas suscripciones:
-
-- Microsoft 365 (E5)
-- Office 365 (E5)
-- Complemento de cumplimiento avanzado (E5)
-- Complemento de inteligencia de amenazas avanzado (E5)
-- Gobernanza y protección de la información de Microsoft 365 E5/A5
-- Cumplimiento de Microsoft 365 E5/A5 
-
+Para conocer los requisitos de licencia, consulte [Information Protection: Análisis de clasificación de datos: sobre el explorador de contenido y actividades](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)
 
 ### <a name="permissions"></a>Permisos
 

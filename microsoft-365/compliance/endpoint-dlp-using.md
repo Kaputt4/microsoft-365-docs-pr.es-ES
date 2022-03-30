@@ -1,5 +1,5 @@
 ---
-title: Uso de la prevención de perdida de datos en punto de conexión
+title: Uso de la prevención de pérdida de datos en punto de conexión
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,238 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: cecd489aa5ceb5f0d5d233a4bf09caa24dee6f8b
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: aeb85b883738e94f2d7161cb2bc3434edbb16428
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419161"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680036"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
-
-Este artículo le guiará a través de cuatro escenarios en los que puede crear y modificar una directiva DLP que use dispositivos como una ubicación.
-
-## <a name="dlp-settings"></a>Configuración DLP
-
-Antes de empezar, debe configurar la configuración de DLP. La configuración se aplica a todas las directivas DLP para dispositivos. Debe configurarlas si tiene previsto crear directivas que cumplan con lo siguiente:
-
-- restricciones de salida de la nube
-- restricciones de aplicaciones no permitidas
-
-O bien
-
-- Si desea excluir de la supervisión las rutas de archivo ruidosas
-
-  > [!div class="mx-imgBorder"]
-  > ![Configuración DLP](../media/endpoint-dlp-1-using-dlp-settings.png).
-
-### <a name="endpoint-dlp-windows-1011-and-macos-settings"></a>Configuración de Windows 10/11 DLP de punto de conexión y macOS
-
-|Setting |Windows 10, 1809 y versiones posteriores, Windows 11  |macOS Catalina 10.15 o posterior (versión preliminar)  |Notas  |
-|---------|---------|---------|---------|
-|Exclusiones de ruta de archivo     |Compatible         |Compatible         |macOS incluye una lista recomendada de exclusiones que está predeterminada          |
-|Aplicaciones no permitidas     |Compatible         |Compatible         |         |
-|Aplicaciones de Bluetooth no permitidas    |Compatible         |No se admite         |         |
-|Restricciones de explorador y dominio a los elementos confidenciales      |Compatible         |Compatible         |         |
-|Configuración adicional para DLP de punto de conexión     |Compatible         |Compatible         |Solo se admiten las justificaciones empresariales predeterminadas para dispositivos macOS         |
-|Auditar siempre la actividad de archivos para dispositivos     |Compatible         |Compatible         |         |
-|Archivo de cuarentena automática de aplicaciones no permitidas | Compatible | No se admite| |
-|Clasificación avanzada | Compatible | No se admite| |
-|Justificaciones empresariales en sugerencias de directivas | Compatible | Compatible| |
-
-### <a name="advanced-classification-scanning-and-protection"></a>Escaneo y protección de clasificación avanzada
-
-La protección y el examen de clasificación avanzada permiten que el servicio de clasificación de datos basado en la nube Microsoft 365 más avanzado examine los elementos, los clasifique y devuelva los resultados al equipo local. Esto significa que puede aprovechar la clasificación [exacta de coincidencia de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md), técnicas de clasificación de entidades [con nombre (versión preliminar)](named-entities-learn.md#learn-about-named-entities-preview) en las directivas DLP.
-
-En la clasificación avanzada, el contenido se envía desde el dispositivo local a los servicios en la nube para su examen y clasificación. Si el uso del ancho de banda es una preocupación, puede establecer un límite en esta configuración global que se aplica por dispositivo en cuanto se puede usar en un período de 24 horas. Si estableces un límite de uso de ancho de banda y se supera, DLP deja de enviar el contenido del usuario a la nube y la clasificación de datos continuará localmente en el dispositivo. Cuando el uso del ancho de banda acumulado se encuentra por debajo del límite de 24 horas, se reanudará la comunicación con los servicios en la nube.
-
-Si el uso del ancho de banda no es un problema, no puede establecer un límite y permitir el uso ilimitado.
-
-Estas versiones de Windows admiten la protección y el escaneo de clasificación avanzada:
-
-- Windows 10 versiones 20H1/20H2/21H1 (KB 5006738)
-- Windows 10 versiones 19H1/19H2 (KB 5007189)
-- Windows 10 RS5 (KB 5006744)
-
-> [!NOTE]
-> La compatibilidad con la clasificación avanzada está disponible para archivos de Office (Word, Excel, PowerPoint) y de PDF.
-
-> [!NOTE]
-> La evaluación de directivas DLP siempre se produce en la nube, incluso si el contenido del usuario no se envía.
-
-### <a name="file-path-exclusions"></a>Exclusiones de ruta de archivo
-
-Abra [Centro de cumplimiento](https://compliance.microsoft.com) > **Prevención de pérdida de datos** > **Configuración de DLP de punto de conexión** > **Exclusiones de ruta de acceso del archivo**.
-
-Es posible que quiera excluir determinadas rutas de supervisión DLP, alertas DLP y aplicación de directivas DLP en sus dispositivos, ya sea porque tienen demasiado ruido o no contienen archivos que le interesan. Los archivos en esas ubicaciones no se auditarán y los archivos que se creen o modifiquen en esas ubicaciones no se someterán a la aplicación de directivas DLP. Puede configurar exclusiones de ruta en configuración DLP.
-
-#### <a name="windows-10-devices"></a>Dispositivos con Windows 10
-
-Puede usar esta lógica para crear sus rutas de exclusión para dispositivos Windows 10:
-
-- Ruta de acceso de archivo válida que termina con `\`, lo que significa solo archivos que están directamente en la carpeta. <br/>Por ejemplo: `C:\Temp\`
-
-- Ruta de acceso de archivo válida que termina con `\*`, lo que significa solo archivos en subcarpetas, además de los archivos directamente debajo de la carpeta. <br/>Por ejemplo: `C:\Temp\*`
-
-- Ruta de acceso de archivo válida que termina sin `\` o `\*`, lo que significa todos los archivos que se encuentran directamente en la carpeta y en todas las subcarpetas. <br/>Por ejemplo: `C:\Temp`
-
-- Ruta de acceso con comodín entre `\` de cada lado. <br/>Por ejemplo: `C:\Users\*\Desktop\`
-
-- Ruta de acceso con comodín entre `\` de cada lado y con `(number)` para proporcionar el número exacto de subcarpetas. <br/>Por ejemplo: `C:\Users\*(1)\Downloads\`
-
-- Una ruta con variables de entorno del SISTEMA. <br/>Por ejemplo: `%SystemDrive%\Test\*`
-
-- Una combinación de todas las anteriores. <br/>Por ejemplo: `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
-
-#### <a name="macos-devices-preview"></a>macOS devices (preview)
-
-Al igual que los dispositivos Windows 10, puede agregar sus propias exclusiones para dispositivos macOS.
-
-- Las definiciones de ruta de acceso del archivo no distinguen mayúsculas de minúsculas, por lo que `User` es igual que `user`.
-
-- Se admiten valores de carácter comodín. Por lo tanto, una definición de ruta de acceso puede contener un `*` a la mitad o al final de la ruta de acceso. Por ejemplo: `/Users/*/Library/Application Support/Microsoft/Teams/*`
-
-#####  <a name="recommended-file-path-exclusions-preview"></a>Exclusiones recomendadas de ruta de acceso del archivo (versión preliminar)
-
-Por motivos de rendimiento, DLP de punto de conexión incluye una lista de exclusiones recomendadas de ruta de acceso del archivo para dispositivos macOS. Estas exclusiones están activadas de manera predeterminada. Puede deshabilitarlas si quiere al alternar la alternancia **Incluir exclusiones recomendadas de ruta de acceso de archivo para Mac**. La lista incluye:
-
-- /Applications/*
-- /System/*
-- /usr/*
-- /Library/*
-- /private/*
-- /opt/*
-- /Users/*/Library/Application Support/Microsoft/Teams/*
-
-### <a name="unallowed-apps"></a>Aplicaciones no permitidas
-
-Las aplicaciones no permitidas son una serie de aplicaciones que crea que no tienen acceso a un archivo protegido por la prevención de pérdida de datos (DLP). Está disponible para dispositivos Windows 10 y macOS (versión preliminar).
-
-Cuando la configuración **Acceso por parte de aplicaciones no permitidas** de una directiva está activada y una aplicación que está en la lista de no permitidas intenta acceder a un archivo protegido, la actividad podrá ser permitida o bloqueada, aunque los usuarios podrán anular la restricción. Toda la actividad es auditada y está disponible para su revisión en el explorador de actividades.
-
-> [!IMPORTANT]
-> No incluya la ruta de acceso al archivo ejecutable, solo el nombre del archivo ejecutable (por ejemplo, browser.exe).
-
-#### <a name="macos-devices-preview"></a>macOS devices (preview)
-
-Al igual que los dispositivos Windows, ahora podrá impedir que las aplicaciones de macOS tengan acceso a datos confidenciales definiéndolos en la lista **Aplicaciones no permitidas**. 
-
-> [!NOTE]
-> Tenga en cuenta que las aplicaciones entre plataformas deben especificarse con sus rutas de acceso únicas respectivas al sistema operativo en el que se ejecutan.
-
-Para encontrar la ruta de acceso completa de las aplicaciones de Mac:
-
-1. En el dispositivo macOS, abra **Monitor de actividad**. Buscar y hacer doble clic en el proceso que desea restringir
-
-2. Elija la pestaña **Abrir Archivos y Puertos**.
-  
-3. Para las aplicaciones de macOS, se necesita el nombre completo de la ruta de acceso, incluido el nombre de la aplicación.
-
-#### <a name="protect-sensitive-data-from-cloud-synchronization-apps"></a>Protección de datos confidenciales de aplicaciones con sincronización en la nube
-
-Para evitar que las aplicaciones con sincronización en la nube sincronicen elementos confidenciales en la nube, como *onedrive.exe*, agregue la aplicación de sincronización en la nube a la lista **Aplicaciones no permitidas**. Cuando una aplicación con sincronización en la nube no permitida intenta acceder a un elemento protegido por una directiva DLP de bloqueo, la DLP puede generar notificaciones repetidas. Puede evitar estas notificaciones repetidas habilitando la opción **Cuarentena automática** en **Aplicaciones no permitidas**.  
-
-##### <a name="auto-quarantine-preview"></a>Cuarentena automática (vista previa)
-
-> [!NOTE]
-> La cuarentena automática solo se admite Windows 10
-
-Cuando está habilitada, la cuarentena automática se inicia en el momento en el que una aplicación no permitida intenta acceder a un elemento confidencial protegido por una DLP. La cuarentena automática mueve el elemento confidencial a una carpeta configurada por el administrador y puede dejar un archivo **.txt** como marcador de posición en el lugar del original. Puede configurar el texto del archivo del marcador de posición para indicar a los usuarios a dónde se movió el elemento y cualquier otra información pertinente.  
-
-Puede usar la cuarentena automática para evitar una cadena infinita de notificaciones DLP para el usuario y los administradores, vea [Escenario 4: evitar el bucle de notificaciones de la DLP en las aplicaciones con sincronización en la nube con cuarentena automática (vista previa)](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview).
-
-### <a name="unallowed-bluetooth-apps"></a>Aplicaciones de Bluetooth no permitidas
-
-Evite que los usuarios transfieran archivos protegidos por las directivas a través de aplicaciones Bluetooth específicas.
-
-### <a name="browser-and-domain-restrictions-to-sensitive-data"></a>Restricciones de explorador y dominio a los datos confidenciales
-
-Restrinja el uso compartido de los archivos confidenciales que coincidan con las directivas con dominios de servicio en la nube sin restricciones.
-
-#### <a name="unallowed-browsers"></a>Exploradores no permitidos
-
-Para los dispositivos de Windows, agregue exploradores, identificados por sus nombres ejecutables, que no tendrán acceso a los archivos que cumplan las condiciones de una directiva DLP aplicada cuya restricción de carga a servicios en la nube esté configurada para bloquearse o bloquear una invalidación. Cuando se bloquea el acceso de estos exploradores a un archivo, los usuarios finales verán una notificación del sistema en la que se les pide que abran el archivo a través de Microsoft Edge o que muestren un mensaje personalizado si se ha configurado uno.
-
-Para dispositivos macOS, debe agregar la ruta de acceso de archivo completa. Para encontrar la ruta de acceso completa de las aplicaciones de Mac:
-
-1. En el dispositivo macOS, abra **Monitor de actividad**. Buscar y hacer doble clic en el proceso que desea restringir
-
-2. Elija la pestaña **Abrir Archivos y Puertos**.
-  
-3. Para las aplicaciones de macOS, se necesita el nombre completo de la ruta de acceso, incluido el nombre de la aplicación.
-
-#### <a name="service-domains"></a>Dominios de servicio
-
-> [!NOTE]
-> La configuración **Dominios de servicio** solo se aplica a los archivos cargados mediante Microsoft Edge o Google Chrome con la [Extensión de cumplimiento de Microsoft](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension) instalada.
-
-Puede controlar si los archivos confidenciales protegidos por sus directivas se pueden cargar en dominios de servicio específicos de Microsoft Edge.
-
-Si el modo de lista está configurado en **Bloquear**, el usuario no podrá cargar elementos confidenciales a esos dominios. Cuando se bloquea una acción de carga porque un elemento coincide con una directiva DLP, la DLP genera una advertencia o bloquea la carga del elemento confidencial.
-
-Si el modo de lista está configurado en **Permitir**, los usuarios podrán cargar elementos confidenciales **_solo_** a dichos dominios y no se permitirá el acceso de carga a los demás dominios.
-
-> [!IMPORTANT]
-> Cuando el modo de restricción del servicio esté establecido en "Permitir", debe tener al menos un dominio de servicio configurado antes de que las restricciones se apliquen.
-
-Usar el formato FQDN del dominio de servicio sin el final `.` 
-
-Por ejemplo:
-
- `www.contoso.com` 
-
-No se admiten los caracteres comodín.
-
-### <a name="additional-settings-for-endpoint-dlp"></a>Configuración adicional para DLP de punto de conexión
-
-#### <a name="business-justification-in-policy-tips"></a>Justificaciones empresariales en sugerencias de directivas
-
-Puede controlar cómo interactúan los usuarios con la opción de justificación empresarial en las notificaciones de sugerencias de directiva DLP. Esta opción aparece cuando los usuarios realizan una actividad que está protegida por la configuración **Bloquear con anulación** en una directiva DLP. Esta es una configuración global. Puede elegir entre una de las siguientes opciones:
-
-- **Mostrar opciones predeterminadas y cuadro de texto personalizado**: los usuarios pueden, de forma predeterminada, seleccionar una justificación integrada o escribir su propio texto.
-- **Mostrar solo las opciones predeterminadas**: los usuarios solo pueden seleccionar una justificación integrada.
-- **Mostrar solo el cuadro de texto personalizado**: los usuarios solo pueden escribir su propia justificación. Solo el cuadro de texto aparecerá en la notificación de sugerencia de directiva del usuario final. 
-
-##### <a name="customizing-the-options-in-the-drop-down-menu"></a>Personalización de las opciones en el menú desplegable
-
-Puede crear hasta cinco opciones personalizadas que aparecerán cuando los usuarios interactúen con la sugerencia de notificación de la directiva seleccionando **Personalizar el menú desplegable de opciones**. 
-
-
-|Opción |Texto predeterminado  |
-|---------|---------|
-|opción 1    | **Esto forma parte de un flujo de trabajo empresarial establecido**  o puede escribir texto personalizado        |
-|opción 2  |**Mi administrador ha aprobado esta acción** o puede escribir texto personalizado         |
-|opción 3   |**Se requiere acceso urgente; notificaré a mi administrador por separado** o puede escribir texto personalizado          |
-|Mostrar opción de falsos positivos     |**La información de estos archivos no es confidencial** o puede escribir texto personalizado          |
-|opción 5    |**Otro** o puede escribir texto personalizado         |
-
-<!--See [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
-
-### <a name="always-audit-file-activity-for-devices"></a>Auditar siempre la actividad de archivos para dispositivos
-
-De forma predeterminada cuando los dispositivos están integrados, la actividad de los archivos Office, PDF y CSV se audita automáticamente y está disponible para su revisión en el Explorador de actividades. Desactive esta característica si quiere que esta actividad se audite solo cuando los dispositivos integrados estén incluidos en una directiva activa.
-
-La actividad de archivo se auditará siempre en los dispositivos integrados, independientemente de si están o no incluidos en una directiva activa.
-
-## <a name="tying-dlp-settings-together"></a>Vincular las opciones de configuración DLP
-
-Con la DLP de los puntos de conexión y el Explorador web Edge Chromium, puede restringir el uso compartido no intencionado de elementos confidenciales a las aplicaciones y servicios en la nube no permitidos. Edge Chromium comprende cuándo un elemento está restringido por una directiva DLP de los puntos de conexión y aplica las restricciones de acceso.
-
-Cuando usa la DLP de los puntos de conexión como una ubicación en una directiva DLP configurada correctamente y en el explorador Microsoft Edge, los exploradores no permitidos que haya definido en esta configuración no tendrán acceso a los elementos confidenciales que coincidan con los controles de la directiva DLP. En su lugar, se redirigirá a los usuarios para que usen Microsoft Edge que, con su comprensión de las restricciones impuestas por DLP, puede bloquear o restringir las actividades cuando se cumplan las condiciones de la directiva DLP.
-
-Para usar esta restricción, tendrá que configurar tres partes importantes:
-
-1. Especifique los sitios (servicios, dominios y direcciones IP) con los que no quiere que se compartan elementos confidenciales.
-
-2. Agregue los exploradores que no tienen permitido acceder a ciertos elementos confidenciales cuando se produzca una coincidencia de directiva DLP.
-
-3. Configure directivas DLP para definir los tipos de elementos confidenciales que deberían tener carga restringida a estos lugares activando **Cargar a los servicios en la nube** y **Acceso desde un explorador no permitido**.
-
-Puede continuar agregando nuevos servicios, aplicaciones y directivas para ampliar y aumentar las restricciones para satisfacer las necesidades de su empresa y proteger los datos confidenciales. 
-
-Esta configuración garantizará que sus datos estén seguros, evitando así las restricciones innecesarias que impiden o restringen a los usuarios el acceso y el uso compartido de elementos no confidenciales.
-
-## <a name="endpoint-dlp-policy-scenarios"></a>Escenarios de directiva DLP de los puntos de conexión
 
 Para ayudarle a familiarizarse con las características de DLP de los puntos de conexión y cómo se muestran en las directivas DLP, hemos recopilado algunos escenarios para que los siga.
 
@@ -261,7 +37,7 @@ Para ayudarle a familiarizarse con las características de DLP de los puntos de 
 >- [Crear una directiva DLP a partir de una plantilla](create-a-dlp-policy-from-a-template.md)
 >- [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 
-### <a name="scenario-1-create-a-policy-from-a-template-audit-only"></a>Escenario 1: crear una directiva a partir de una plantilla, solo auditoría
+## <a name="scenario-1-create-a-policy-from-a-template-audit-only"></a>Escenario 1: crear una directiva a partir de una plantilla, solo auditoría
 
 Estos escenarios requieren que ya tenga dispositivos incorporados y que presenten informes al Explorador de actividades. Si todavía no ha incorporado sus dispositivos, consulte [Introducción a la prevención de pérdida de datos de los puntos de conexión](endpoint-dlp-getting-started.md).
 
@@ -287,11 +63,11 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 
 11. Compruebe el Explorador de actividades para obtener los datos de los puntos de conexión supervisados. Configure el filtro por ubicación para los dispositivos, agregue la directiva y, después, filtre por nombre de directiva para ver su impacto. Consulte [Introducción al Explorador de actividades](data-classification-activity-explorer.md), de ser necesario.
 
-12. Intente compartir una prueba que incluya contenido que activará la condición de datos de información de identificación personal (DCP) de Estados Unidos con alguien ajeno a su organización. Esto debería activar la directiva.
+12. Intente compartir una prueba que incluya contenido que desencadene la condición de datos de información de identificación personal (DCP) de EE. UU. con alguien ajeno a su organización. Esto debería desencadenar la directiva.
 
 13. Compruebe que el evento se encuentre en el Explorador de actividades.
 
-### <a name="scenario-2-modify-the-existing-policy-set-an-alert"></a>Escenario 2: modificar la directiva existente, configurar una alerta
+## <a name="scenario-2-modify-the-existing-policy-set-an-alert"></a>Escenario 2: modificar la directiva existente, configurar una alerta
 
 1. Abra la [Página de prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
@@ -303,8 +79,7 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 
 5. Desplácese hacia abajo hasta la sección **Informes de incidentes** y configure **Enviar una alerta a los administradores cuando se produzca una coincidencia de regla** en **Activado**. Las alertas por correo electrónico se enviarán automáticamente al administrador y a cualquier persona que agregue a la lista de destinatarios. 
 
-   > [!div class="mx-imgBorder"]
-   > ![activar-informes-de-incidentes](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+![activar-informes-de-incidentes](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
    
 6. Para este escenario, elija **Enviar una alerta cada vez que una actividad coincida con la regla**.
 
@@ -312,11 +87,11 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 
 8. Conserve todas las opciones de configuración anteriores eligiendo **Siguiente** y, después, **Enviar** los cambios de directiva.
 
-9. Intente compartir una prueba que incluya contenido que activará la condición de datos de información de identificación personal (PII) de Estados Unidos con alguien ajeno a su organización. Esto debería activar la directiva.
+9. Intente compartir una prueba que incluya contenido que desencadene la condición de datos de información de identificación personal (DCP) de EE. UU. con alguien ajeno a su organización. Esto debería desencadenar la directiva.
 
 10. Compruebe que el evento se encuentre en el Explorador de actividades.
 
-### <a name="scenario-3-modify-the-existing-policy-block-the-action-with-allow-override"></a>Caso 3: modificar la directiva existente, bloquear la acción con permitir invalidación
+## <a name="scenario-3-modify-the-existing-policy-block-the-action-with-allow-override"></a>Caso 3: modificar la directiva existente, bloquear la acción con permitir invalidación
 
 1. Abra la [Página de prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
@@ -337,7 +112,7 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 
 8. Conserve todas las opciones de configuración anteriores eligiendo **Siguiente** y, después, **Enviar** los cambios de directiva.
 
-9. Intente compartir una prueba que incluya contenido que activará la condición de datos de información de identificación personal (PII) de Estados Unidos con alguien ajeno a su organización. Esto debería activar la directiva.
+9. Intente compartir una prueba que incluya contenido que desencadene la condición de datos de información de identificación personal (DCP) de EE. UU. con alguien ajeno a su organización. Esto debería desencadenar la directiva.
 
    Verá un elemento emergente como el siguiente en el dispositivo cliente:
 
@@ -346,9 +121,9 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 
 10. Compruebe que el evento se encuentre en el Explorador de actividades.
 
-### <a name="scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview"></a>Escenario 4: evitar el bucle de notificaciones de la DLP en las aplicaciones con sincronización en la nube con cuarentena automática (vista previa)
+## <a name="scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview"></a>Escenario 4: evitar el bucle de notificaciones de la DLP en las aplicaciones con sincronización en la nube con cuarentena automática (vista previa)
 
-#### <a name="before-you-begin"></a>Antes de empezar
+### <a name="before-you-begin"></a>Antes de empezar
 
 En este escenario, se bloquea la sincronización de archivos con la etiqueta de confidencialidad **Extremadamente confidencial** para OneDrive. Se trata de un escenario complejo con varios componentes y procedimientos. Necesitará:
 
@@ -362,7 +137,7 @@ Hay tres pasos:
 2. Cree una directiva que bloquee los elementos confidenciales que tengan la etiqueta de confidencialidad **Extremadamente confidencial**.
 3. Cree un documento de Word en el dispositivo Windows 10 al que se destina la directiva, aplique la etiqueta y cópiela en la carpeta local de OneDrive de las cuentas de usuario que se está sincronizando.  
 
-#### <a name="configure-endpoint-dlp-unallowed-app-and-auto-quarantine-settings"></a>Configure las aplicaciones no permitidas y la configuración de cuarentena automática de la DLP.
+### <a name="configure-endpoint-dlp-unallowed-app-and-auto-quarantine-settings"></a>Configure las aplicaciones no permitidas y la configuración de cuarentena automática de la DLP.
 
 1. Abra la [configuración del punto de conexión de la DLP](https://compliance.microsoft.com/datalossprevention?viewid=globalsettings)
 
@@ -397,7 +172,7 @@ Hay tres pasos:
 
 9. Elija **Guardar**
 
-#### <a name="configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential"></a>Configurar una directiva para bloquear la sincronización de archivos de OneDrive con la etiqueta de confidencialidad Extremadamente confidencial
+### <a name="configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential"></a>Configurar una directiva para bloquear la sincronización de archivos de OneDrive con la etiqueta de confidencialidad Extremadamente confidencial
 
 1. Abra la [página de prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
@@ -429,7 +204,7 @@ Hay tres pasos:
 
 11. La nueva directiva DLP se mostrará en la lista de directivas.
 
-#### <a name="test-auto-quarantine-on-the-windows-10-device"></a>Probar la cuarentena automática en el dispositivo Windows 10
+### <a name="test-auto-quarantine-on-the-windows-10-device"></a>Probar la cuarentena automática en el dispositivo Windows 10
 
 1. Inicie sesión en el equipo Windows 10 con la cuenta de usuario que especificó en [Configure una directiva para bloquear la sincronización de archivos de OneDrive con la etiqueta de confidencialidad Extremadamente confidencial](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) paso 5.
 
@@ -457,6 +232,23 @@ Hay tres pasos:
 
 9. Compruebe que el evento se encuentre en el Explorador de actividades.
 
+## <a name="scenario-5-restrict-unintentional-sharing-to-unallowed-cloud-apps-and-services"></a>Escenario 5: Restringir el uso compartido accidental a servicios y aplicaciones en la nube no permitidos
+
+Con DLP de puntos de conexión y el Explorador web Edge, puede restringir el uso compartido accidental de elementos confidenciales a las aplicaciones y servicios en la nube no permitidos. Edge sabe si un elemento está restringido por una directiva DLP de puntos de conexión y aplica las restricciones de acceso.
+
+Al seleccionar **Dispositivos** como ubicación en una directiva DLP configurada correctamente y usar el explorador Microsoft Edge, los exploradores no permitidos que haya definido en esta configuración no podrán acceder a los elementos confidenciales que coincidan con los controles de directiva DLP. En su lugar, se redirigirá a los usuarios para que usen Microsoft Edge que, con su comprensión de las restricciones impuestas por DLP, puede bloquear o restringir las actividades cuando se cumplan las condiciones de la directiva DLP.
+
+Para usar esta restricción, tendrá que configurar tres partes importantes:
+
+1. Especifique los sitios (servicios, dominios y direcciones IP) con los que no quiere que se compartan elementos confidenciales.
+
+2. Agregue los exploradores que no tienen permitido acceder a ciertos elementos confidenciales cuando se produzca una coincidencia de directiva DLP.
+
+3. Configure directivas DLP para definir los tipos de elementos confidenciales que deberían tener carga restringida a estos lugares activando **Cargar a los servicios en la nube** y **Acceso desde un explorador no permitido**.
+
+Puede continuar agregando nuevos servicios, aplicaciones y directivas para ampliar y aumentar las restricciones para satisfacer las necesidades de su empresa y proteger los datos confidenciales. 
+
+Esta configuración garantizará que sus datos estén seguros, evitando así las restricciones innecesarias que impiden o restringen a los usuarios el acceso y el uso compartido de elementos no confidenciales.
 ## <a name="see-also"></a>Consulte también
 
 - [Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)

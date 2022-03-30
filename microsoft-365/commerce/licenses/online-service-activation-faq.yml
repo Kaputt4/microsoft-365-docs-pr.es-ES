@@ -7,17 +7,17 @@ metadata:
   ms.reviewer: racheg, armanv
   ms.date: 07/22/2021
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: o365-administration
   ms.custom: commerce_vl
   ms.localizationpriority: medium
   description: Activación del servicio en línea para preguntas más frecuentes del programa Abrir
-  ms.openlocfilehash: e6175dddb97d1a752e64c6264d5d8cdd66f35bf6
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.openlocfilehash: d123714434896c559473769af30106833db83eb0
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63317240"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63679992"
 title: Activación del servicio en línea para preguntas más frecuentes del programa Abrir
 summary: ''
 sections:
@@ -42,15 +42,15 @@ sections:
 
       La activación correcta se completa en un plazo de 48 horas en el sitio web de activación del servicio en línea de licencias por volumen.
 
-      Para obtener información sobre cómo activar Microsoft Azure, consulte [Introducción a Azure en Licencias abiertas](https://azure.microsoft.com/offers/ms-azr-0111p/).
+      Para obtener información sobre cómo activar Microsoft Azure, consulte [Introducción con Azure en Licencias abiertas](https://azure.microsoft.com/offers/ms-azr-0111p/).
   - question: >
       No veo mi pedido de Azure. ¿Qué debo hacer?
     answer: >
-      Los pedidos de Azure se activan mediante claves. Obtenga las claves a través de la pestaña Descargas y claves del VLSC y escriba la clave en la página Introducción a [Azure en Licencias abiertas](https://azure.microsoft.com/offers/azure-open/).
+      Los pedidos de Azure se activan mediante claves. Obtenga las claves a través de la pestaña Descargas y claves del VLSC y escriba la clave en la Introducción con [Azure en la página Licencias abiertas](https://azure.microsoft.com/offers/azure-open/).
   - question: >
       ¿Qué es una cuenta laboral o educativa y por qué necesito una para activar los servicios en línea?
     answer: >
-      Una cuenta laboral o educativa está diseñada para que los usuarios inicien sesión en los servicios de Microsoft de la organización. El inicio de sesión suele usar el formulario username@orgname.com o username@orgname.onmicrosoft.com, donde *orgname* es su nombre de dominio de correo electrónico de la organización.
+      Una cuenta laboral o educativa está diseñada para que los usuarios inicien sesión en la organización servicios Microsoft. El inicio de sesión suele usar el formulario username@orgname.com o username@orgname.onmicrosoft.com, donde *orgname* es su nombre de dominio de correo electrónico de la organización.
   - question: >
       ¿Cómo sé si mi organización ya tiene una cuenta?
     answer: "El nombre de la organización asociado con su cuenta profesional o educativa se toma del id. de licencia del servicio que está activando. Si existe una cuenta, el nombre de la organización se rellena previamente en la configuración de la cuenta organizativa y ya está vinculado a la organización desde el pedido de servicio en línea original. El proceso de registro valida si su organización tiene una cuenta. \n\nSi el campo de **Empresa** está disponible, finaliza el proceso de registro para iniciar sesión y activar el servicio. Si este campo no está disponible, debe registrar la organización. Debe ser un administrador global para registrar una organización para una cuenta.\n\nCuando solicita una cuenta laboral o educativa, la solicitud se envía a su organización Administrador de inquilinos que concede o deniega la solicitud de registro. Use esta cuenta profesional o educativa al iniciar sesión en La activación del servicio en línea de Microsoft VLSC.\n"

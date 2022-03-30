@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuaderno de estrategias de prueba para soluciones de Cumplimiento de Microsoft 365.
-ms.openlocfilehash: 896e3fe81c74cc2a594ab88807e0b9505fed1a18
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: e0d48ba9c4a5ca50869b64d6312fe845ef9bf50c
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754247"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679904"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Cumplimiento de Microsoft 365
 
@@ -434,6 +434,6 @@ Identifique y proteja de forma proactiva los riesgos para la privacidad, como el
 
 **¿Qué se incluye?**: para obtener una lista completa de las características y soluciones de cumplimiento de Microsoft 365 enumeradas por nivel de producto, vea la [Feature Matrix](https://go.microsoft.com/fwlink/?linkid=2139145).
 
-**Biblioteca de contenido técnico de Seguridad de Microsoft**: explore esta biblioteca para buscar guías interactivas y otro contenido de aprendizaje que se adecue a sus necesidades. [Visitar la biblioteca](/security).
+**Biblioteca de contenido técnico de Seguridad de Microsoft**: explore esta biblioteca para buscar guías interactivas y otro contenido de aprendizaje que se adecue a sus necesidades. [Visitar la biblioteca](/security/content-library).
 
 **Recursos de Seguridad de Microsoft**: desde antimalware hasta Confianza cero, obtenga todos los recursos que se adecuan a las necesidades de seguridad de su organización. [Visitar Recursos](/security/business/resources).

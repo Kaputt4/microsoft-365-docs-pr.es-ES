@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 search.appverid:
@@ -16,15 +16,15 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
-description: Cómo los partners de distribución y Proveedor de soluciones en la nube (CSP) pueden usar Windows PowerShell para administrar Microsoft 365 inquilinos de clientes.
-ms.openlocfilehash: 2678489d1e281a60d230c65e29b358dff5f1a8ad
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Cómo los partners de distribución Proveedor de soluciones en la nube (CSP) pueden usar Windows PowerShell para administrar Microsoft 365 inquilinos de clientes.
+ms.openlocfilehash: db991416c88c88541bd5e9ec77bbca538e4e376c
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150563"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675314"
 ---
-# <a name="how-to-manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-partners"></a>Cómo administrar Microsoft 365 con Windows PowerShell para asociados de permisos de acceso delegado
+# <a name="how-to-manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-partners"></a>Cómo administrar Microsoft 365 con Windows PowerShell para partners de permisos de acceso delegado
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
