@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d9f1b4619670c1998dbac584bf7ef4e1d1f940b6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b969efd9d83fa34ded01f8be7db7aaf4db971128
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314229"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498649"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Evaluar la posición de seguridad con Puntuación segura de Microsoft
 
@@ -46,7 +46,7 @@ Para ayudarle a encontrar la información que necesita más rápidamente, las ac
 
 En la página Introducción a la puntuación segura de Microsoft, vea cómo se dividen los puntos entre estos grupos y qué puntos están disponibles. También puedes obtener una vista general de la puntuación total, la tendencia histórica de tu puntuación segura con comparaciones comparativas comparativas y las acciones de mejora prioritarias que se pueden realizar para mejorar la puntuación.
 
-![Página principal de puntuación segura.](../../media/secure-score/secure-score-home-page.png)
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="La página principal puntuación segura en el portal Microsoft 365 Defender web" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
 ## <a name="check-your-current-score"></a>Comprobar la puntuación actual
 
@@ -62,7 +62,7 @@ Las siguientes son las puntuaciones que puedes agregar a tu vista de la puntuaci
 
 Esta vista es la que tendrá si has incluido todas las vistas de puntuación posibles:
 
-![Su puntuación segura, incluida la puntuación planeada, la puntuación de licencia actual y la puntuación alcanzable.](../../media/secure-score/secure-score-achievable.png)
+:::image type="content" source="../../media/secure-score/secure-score-achievable.png" alt-text="Su puntuación segura, incluida la puntuación planeada, la puntuación de licencia actual y la puntuación alcanzable en el portal de Microsoft 365 Defender web" lightbox="../../media/secure-score/secure-score-achievable.png":::
 
 ## <a name="take-action-to-improve-your-score"></a>Tomar medidas para mejorar la puntuación
 
@@ -76,7 +76,7 @@ La clasificación se basa en el número de puntos que queda por lograr, la dific
 
 Al seleccionar una acción de mejora específica, aparece un control desplegable de página completa.  
 
-![Ejemplo de acción de mejora.](../../media/secure-score/secure-score-improvement-action-details.png)
+:::image type="content" source="../../media/secure-score/secure-score-improvement-action-details.png" alt-text="El menú desplegable de una acción de mejora en el portal de Microsoft 365 Defender web" lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
 
 Para completar la acción, tienes algunas opciones:
 

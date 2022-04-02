@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: d81d33a01802ebdf8ef0ea67a9ee74fc69b79384
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: 98d2ee2394e4384fbf8d7b2b3832d11a847b8521
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504740"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755143"
 ---
 # <a name="step-1-create-the-microsoft-365-defender-evaluation-environment-for-greater-cyber-security"></a>Paso 1. Crear el entorno Microsoft 365 Defender evaluación para una mayor seguridad cibernética
 
@@ -54,15 +54,15 @@ El segundo es [configurar el entorno de Microsoft 365 Defender de prueba](setup-
 2. Seleccione **Servicios de compra** en el menú de navegación.
 3. Desplácese hacia abajo hasta la Office 365 y seleccione el botón **Detalles** en Office 365 E5 licencia.
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="La Office 365 tiene un botón Detalles para hacer clic.":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="El botón Detalles del portal de Microsoft 365 Defender web" lightbox="../../media/mdo-eval/2_mdo-eval-license-details.png":::
 
 4. Seleccione **Iniciar vínculo de prueba** gratuita.
 
-   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="Haga clic en &quot;Iniciar prueba gratuita&quot; (hay una tarifa de 35 $).":::
+   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="El botón Iniciar prueba gratuita en el portal Microsoft 365 Defender prueba" lightbox="../../media/mdo-eval/3-m365-purchase-button.png":::
 
 5. Confirme la solicitud y haga clic **en El botón Probar** ahora.
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="Hay un botón &quot;Probar ahora&quot; en el panel &quot;Comprobar, confirmar el pedido&quot; (para una prueba Office 365 E5 de un mes para 25 usuarios).":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="El botón Probar ahora en el portal de Microsoft 365 Defender web" lightbox="../../media/mdo-eval/4_mdo-trial-order.png":::
 
 ## <a name="go-to-the-next-step"></a>Vaya al paso siguiente
 

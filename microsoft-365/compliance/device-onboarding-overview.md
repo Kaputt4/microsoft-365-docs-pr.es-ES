@@ -19,23 +19,23 @@ ms.collection:
 search.appverid:
 - MET150
 description: Incorporación de dispositivos Windows 10 y Windows 11 a Microsoft 365
-ms.openlocfilehash: dc2324f9ab8105d51730071f84397c8648c9a9de
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: ea1038554349b6c035c52bd3d3429d71d7d866bc
+ms.sourcegitcommit: 9d563faeaa50b59b0b468dbb373d886e5270f58e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525063"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64387141"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Introducción a la incorporación de dispositivos Windows 10 y Windows 11 a Microsoft 365 
 
 **Se aplica a:**
 
-- [Prevención de pérdida de datos en punto de conexión en Microsoft 365 (DLP)](./endpoint-dlp-learn-about.md)
+- [Prevención de perdida de datos en el punto de conexión (DLP)](./endpoint-dlp-learn-about.md)
 - [Administración de riesgos internos](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-Prevención de pérdida de datos en punto de conexión en Microsoft 365 (punto de conexión DLP) y administración de riesgos internos requieren que los dispositivos Windows 10 y Windows 11 se incorporen al servicio para que puedan enviar datos de supervisión a los servicios.
+Prevención de pérdida de datos en punto de conexión (punto de conexión DLP) y administración de riesgos internos requieren que los dispositivos Windows 11 y Windows 10 se incorporen al servicio para que puedan enviar datos de supervisión a los servicios.
  
-El punto de conexión DLP de Microsoft 365 permite supervisar dispositivos Windows 10 o Windows 11 y detectar cuándo se usan y comparten elementos confidenciales. Esto le proporciona la visibilidad y el control que necesita para asegurarse de que se usan y protegen correctamente, así como para ayudar a evitar algún comportamiento peligroso que podría comprometerlos. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md). Para obtener más información sobre el punto de conexión DLP, consulte [Obtener información sobre la prevención de pérdida de datos del punto de conexión](endpoint-dlp-learn-about.md).
+La DLP de punto de conexión permite supervisar dispositivos Windows 10 o Windows 11 y detectar cuándo se usan y comparten elementos confidenciales. Esto le proporciona la visibilidad y el control que necesita para asegurarse de que se usan y protegen correctamente, así como para ayudar a evitar algún comportamiento peligroso que podría comprometerlos. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md). Para obtener más información sobre el punto de conexión DLP, consulte [Obtener información sobre la prevención de pérdida de datos del punto de conexión](endpoint-dlp-learn-about.md).
 
 La administración de riesgos internos usa toda la amplitud del servicio y los indicadores de terceros para ayudarle a identificar, evaluar prioridades y actuar rápidamente en la actividad de usuario de riesgo. Al usar registros de Microsoft 365 y Microsoft Graph, la administración de riesgos internos le permite definir directivas específicas para identificar indicadores de riesgo y tomar medidas para mitigar estos riesgos. Para obtener más información, consulte [Obtenga información sobre la administración de riesgos internos en Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365).
 
@@ -120,10 +120,7 @@ En este escenario de implementación, incorporarás dispositivos Windows 10 o Wi
    > [!NOTE]
    > Aunque, por lo general, habilitar la incorporación de dispositivos tarda aproximadamente 60 segundos, espere 30 minutos antes de ponerse en contacto con el soporte técnico de Microsoft.
 
-2. Abra la página de configuración del Centro de cumplimiento y elija **Incorporar dispositivos**.
-
-   > [!div class="mx-imgBorder"]
-   > ![habilitar la administración de dispositivos.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. Abra la página de configuración del Centro de cumplimiento y elija **Activar la supervisión de dispositivos Windows**.
 
 3. Elija **Administración de dispositivos** para abrir la lista de **Dispositivos**. 
 

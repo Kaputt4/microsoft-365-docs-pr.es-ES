@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 16654281adf5ca6f31ea2d29aab3387d39424cb1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3034c6020c3d7d04164e37beb1c1186e9aa30958
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325941"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499119"
 ---
 # <a name="responding-to-your-first-incident"></a>Responder al primer incidente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 La estrategia de respuesta a incidentes de una organización determina su capacidad para hacer frente a incidentes de seguridad y ciberdelincuencia cada vez más disruptivos. Aunque es importante tomar medidas de prevención, la capacidad de actuar rápidamente para contener, eliminar y recuperarse de incidentes detectados puede minimizar los daños y las pérdidas empresariales.
 
@@ -52,7 +52,7 @@ Los incidentes en Microsoft 365 Defender son los puntos de partida lógicos para
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Prepare su organización y Microsoft 365 inquilino.](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
+:::image type="content" source="../../media/first-incident-overview/first-incident-path.png" alt-text="La opción Corregir de la página Responder a su primer incidente" lightbox="../../media/first-incident-overview/first-incident-path.png":::
 
 Asegúrese de que su organización y Microsoft 365 inquilino esté [preparado para el tratamiento de incidentes](first-incident-prepare.md).
 
@@ -64,7 +64,7 @@ Instrucciones de respuesta a incidentes para Microsoft 365 Defender:
 - [Investigar incidentes](investigate-incidents.md)
 - [Administrar incidentes](manage-incidents.md)
 
-Ejemplos adicionales de las primeras respuestas a incidentes:
+Más ejemplos de las primeras respuestas a incidentes:
 
 - [Correo de suplantación de identidad](first-incident-path-phishing.md)
 - [Ataque de base de identidad](first-incident-path-identity.md)

@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6f6ada6604190ccba270b287201d94ba2acbf6d2
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: 14c759cd243b8da9f338b777e430d4de9f735fc1
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504843"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498921"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -53,7 +53,7 @@ Para obtener instrucciones sobre cómo descargar y usar Seguridad de Windows lí
 
 Deberá completar los siguientes pasos generales para incorporar correctamente los servidores.
 
-![Ilustración del flujo de incorporación para Windows servidores y Windows 10 dispositivos](images/server-onboarding-tools-methods.png)
+:::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="Ilustración del flujo de incorporación para Windows servidores y Windows 10 dispositivos" lightbox="images/server-onboarding-tools-methods.png":::
 
 **Windows Server 2012 R2 y Windows Server 2016 (versión preliminar)**
 
@@ -324,16 +324,7 @@ Los pasos siguientes solo son aplicables si usa una solución antimalware de ter
     - Tipo: `REG_DWORD`
     - Valor: `1`
 
-2. Ejecute el siguiente comando de PowerShell para comprobar que se configuró el modo pasivo:
-
-    ```powershell
-    Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
-    ```
-
-3. Confirme que se encuentra un evento reciente que contiene el evento de modo pasivo:
-
-    ![Imagen del resultado de comprobación del modo pasivo](images/atp-verify-passive-mode.png)
-
+       :::image type="content" source="images/atp-verify-passive-mode.png" alt-text="El resultado de comprobación del modo pasivo" lightbox="images/atp-verify-passive-mode.png":::
 > [!IMPORTANT]
 >
 > - Cuando usa Microsoft Defender para la nube para supervisar los servidores, se crea automáticamente un inquilino de Defender for Endpoint (en Estados Unidos para usuarios estadounidenses, en la UE para usuarios europeos y en el Reino Unido para usuarios del Reino Unido).
@@ -412,8 +403,8 @@ Para otras Windows de servidor, tiene dos opciones para Windows del servicio:
 - Desinstalar el agente mma
 - Quitar la configuración del área de trabajo de Defender for Endpoint
 
->[!NOTE]
-> Estas instrucciones de offboarding para otras versiones de servidor Windows también se aplican si ejecuta el anterior Microsoft Defender para endpoint para Windows Server 2016 y Windows Server 2012 R2 que requiere la MMA. Las instrucciones para migrar a la nueva solución no fiada se encuentran en Escenarios de migración de [servidor en Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/server-migration).
+> [!NOTE]
+> Estas instrucciones de offboarding para otras versiones de servidor Windows también se aplican si ejecuta el anterior Microsoft Defender para endpoint para Windows Server 2016 y Windows Server 2012 R2 que requiere la MMA. Las instrucciones para migrar a la nueva solución unificada se encuentran en Escenarios de migración de [servidor en Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 ## <a name="related-topics"></a>Temas relacionados
 

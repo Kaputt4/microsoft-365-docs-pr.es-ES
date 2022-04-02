@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ac5c1a1bb541dee61155a55f23a78533c2b5360c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 1be194035348bb8d414b37f16399fdcffe406063
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311611"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755046"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Habilitar el entorno de evaluación para Microsoft Defender for Identity
 
@@ -37,7 +37,7 @@ Este artículo es [el paso 2 de 2](eval-defender-identity-overview.md) en el pro
 
 Siga estos pasos para configurar el entorno de Microsoft Defender para Identity. 
 
-![Pasos para habilitar Microsoft Defender for Identity en el entorno de evaluación de Microsoft Defender.](../../media/defender/m365-defender-identity-eval-enable-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-eval-enable-steps.png" alt-text="Pasos para habilitar Microsoft Defender for Identity en el entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-identity-eval-enable-steps.png":::
 
 - [Paso 1. Configurar la instancia de Defender for Identity](#step-1-set-up-the-defender-for-identity-instance)
 - [Paso 2. Instalar y configurar el sensor](#step-2-install-and-configure-the-sensor)
@@ -48,33 +48,30 @@ Siga estos pasos para configurar el entorno de Microsoft Defender para Identity.
 
 Inicie sesión en el portal de Defender for Identity para crear la instancia y, a continuación, conecte esta instancia al entorno de Active Directory. 
 
-|  |Paso     |Más información  |
+|  Paso | Descripción     |Más información  |
 |---------|---------|---------|
 |1     | Crear la instancia de Defender for Identity        | [Inicio rápido: crear la instancia de Microsoft Defender for Identity](/defender-for-identity/install-step1)        |
 |2     | Conectar la instancia de Defender for Identity al bosque de Active Directory   | [Inicio rápido: Conectar al bosque de Active Directory](/defender-for-identity/install-step2)  |
-| | |
 
 ## <a name="step-2-install-and-configure-the-sensor"></a>Paso 2. Instalar y configurar el sensor
 
 A continuación, descargue, instale y configure el sensor Defender for Identity en los controladores de dominio y los servidores de AD FS en el entorno local.
 
-|  |Paso     |Más información  |
+|  Paso | Descripción     |Más información  |
 |---------|---------|---------|
 |1     | Determine cuántos sensores de Microsoft Defender para Identidad necesita.        | [Capacidad del plan para Microsoft Defender for Identity](/defender-for-identity/capacity-planning)   |
 |2     | Descargar el paquete de instalación del sensor  |  [Inicio rápido: descargar el paquete de instalación del sensor de Microsoft Defender para identidad](/defender-for-identity/install-step3)   |
 |3     | Instalar el sensor Defender for Identity    |  [Inicio rápido: instalar el sensor de Microsoft Defender para identidad](/defender-for-identity/install-step4)       |
 |4     | Configurar el sensor       |  [Configuración de Microsoft Defender para la configuración del sensor de identidad ](/defender-for-identity/install-step5)   |
-|   |         |         |
 
 ## <a name="step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor"></a>Paso 3. Configurar la configuración de proxy y registro de eventos en máquinas con el sensor
 
 En las máquinas en las que instaló el sensor, configure la colección Windows de registros de eventos y la configuración de proxy de Internet para habilitar y mejorar las capacidades de detección.
 
-|  |Paso     |Más información  |
+|  Paso | Descripción     |Más información  |
 |---------|---------|---------|
 |1     | Configurar Windows de registro de eventos         | [Configurar Windows Event](/defender-for-identity/configure-windows-event-collection)        |
 |2     | Configurar la configuración de proxy de Internet        | [Configurar el proxy de punto de conexión y las opciones de conectividad a Internet para el Sensor de Microsoft Defender for Identity](/defender-for-identity/configure-proxy)        |
-|   |         |         |
 
 ## <a name="step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers"></a>Paso 4. Permitir que Defender for Identity identifique administradores locales en otros equipos
 

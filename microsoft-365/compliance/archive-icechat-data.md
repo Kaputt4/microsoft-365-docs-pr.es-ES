@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de la herramienta de chat ice en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: c340cbb65d7efaa5cbc14ca977879c09b585031a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c29a39c8c398a0d8721931cbcb770aa18d0f3c4b
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324891"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568102"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Configurar un conector para archivar datos de chat ice
 
@@ -121,14 +121,20 @@ El último paso es crear un conector de chat ICE en el Centro de cumplimiento de
 
 7. Después de validar correctamente la conexión, haga clic en **Siguiente**.
 
-8. En la **página Asignar usuarios externos Microsoft 365 usuarios**, habilite la asignación automática de usuarios y proporcione la asignación de usuarios personalizada según sea necesario. Puede descargar una copia del archivo CSV de asignación de usuario en esta página. Puede agregar las asignaciones de usuario al archivo y, a continuación, cargarlo.
+8. En la **página Definir usuario** , especifique los usuarios para los que se importarán los datos.
+
+     - **Todos los usuarios de la organización**. Seleccione esta opción para importar datos para todos los usuarios.
+
+     - **Solo los usuarios en retención por juicio**. Seleccione esta opción para importar datos solo para los usuarios cuyos buzones se colocan en retención por juicio. Esta opción importa datos a buzones de usuario que tienen la propiedad LitigationHoldEnabled establecida en True. Para obtener más información, vea [Create a Litigation hold](create-a-litigation-hold.md).
+
+9. En la **página Asignar usuarios externos Microsoft 365 usuarios**, habilite la asignación automática de usuarios y proporcione la asignación de usuarios personalizada según sea necesario. Puede descargar una copia del archivo CSV de asignación de usuario en esta página. Puede agregar las asignaciones de usuario al archivo y, a continuación, cargarlo.
 
    > [!NOTE]
    > Como se explicó anteriormente, el archivo CSV del archivo de asignación personalizado contiene el imid de chat ice y la dirección de buzón de correo Microsoft 365 correspondiente para cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de chat, el conector primero verá el archivo de asignación personalizado. Si no encuentra un usuario de Microsoft 365 válido que corresponda al imid de chat ICE de un usuario, el conector importará el elemento a los buzones de los usuarios especificados en las propiedades *SenderEmail* y *RecipientEmail* del elemento de chat. Si el conector no encuentra un usuario Microsoft 365 mediante una asignación de usuario automática o personalizada, el elemento no se importará.
 
-9. Haga **clic en Siguiente**, revise la configuración y, a continuación, haga clic **en Finalizar** para crear el conector.
+10. Haga **clic en Siguiente**, revise la configuración y, a continuación, haga clic **en Finalizar** para crear el conector.
 
-10. Vaya a la **página Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
+11. Vaya a la **página Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 
 ## <a name="set-up-a-connector-using-private-keys"></a>Configurar un conector con claves privadas
 
@@ -196,11 +202,17 @@ Una vez configurado el sitio SFTP de chat ice, el siguiente paso es crear un con
 
 7. Después de validar correctamente la conexión, haga clic en **Siguiente**.
 
-8. En la **página Asignar usuarios de chat ICE Microsoft 365 usuarios**, habilite la asignación automática de usuarios y proporcione una asignación de usuario personalizada según sea necesario.
+8. En la **página Definir usuario** , especifique los usuarios para los que se importarán los datos.
+
+     - **Todos los usuarios de la organización**. Seleccione esta opción para importar datos para todos los usuarios.
+
+     - **Solo los usuarios en retención por juicio**. Seleccione esta opción para importar datos solo para los usuarios cuyos buzones se colocan en retención por juicio. Esta opción importa datos a buzones de usuario que tienen la propiedad LitigationHoldEnabled establecida en True. Para obtener más información, vea [Create a Litigation hold](create-a-litigation-hold.md).
+
+9. En la **página Asignar usuarios de chat ICE Microsoft 365 usuarios**, habilite la asignación automática de usuarios y proporcione una asignación de usuario personalizada según sea necesario.
 
    > [!NOTE]
    > Como se explicó anteriormente, el archivo CSV del archivo de asignación personalizado contiene el imid de chat ice y la dirección de buzón de correo Microsoft 365 correspondiente para cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de chat, el conector primero verá el archivo de asignación personalizado. Si no encuentra un usuario de Microsoft 365 válido que corresponda al imid de chat ICE de un usuario, el conector importará el elemento a los buzones de los usuarios especificados en las propiedades *SenderEmail* y *RecipientEmail* del elemento de chat. Si el conector no encuentra un usuario Microsoft 365 mediante una asignación de usuario automática o personalizada, el elemento no se importará.
 
-9. Haga **clic en Siguiente**, revise la configuración y, a continuación, haga clic **en Finalizar** para crear el conector.
+10. Haga **clic en Siguiente**, revise la configuración y, a continuación, haga clic **en Finalizar** para crear el conector.
 
-10. Vaya a la **página Conectores de datos** para ver el progreso del proceso de importación del nuevo conector. Haga clic en el conector para mostrar la página desplegable, que contiene información sobre el conector.
+11. Vaya a la **página Conectores de datos** para ver el progreso del proceso de importación del nuevo conector. Haga clic en el conector para mostrar la página desplegable, que contiene información sobre el conector.

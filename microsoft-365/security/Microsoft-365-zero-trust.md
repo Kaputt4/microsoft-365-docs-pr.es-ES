@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: 9b37e353af74b7a01c0647f99b149f5fac0ae8a3
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 59ebfb9ffb925cc5937802a31902e7c2342fc740
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524182"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755663"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de implementación de Confianza cero de Microsoft 365
 
@@ -36,13 +36,7 @@ Un enfoque de confianza cero se extiende por toda la propiedad digital y sirve c
 
 En esta ilustración se proporciona una representación de los elementos principales que contribuyen a la confianza cero.
 
-<!---
-[![Zero Trust security architecture](../media/zero-trust/zero-trust-architecture.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/zero-trust/zero-trust-architecture.png)
--->
-
-:::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="Arquitectura de seguridad de confianza cero" lightbox="../media/zero-trust/zero-trust-architecture.png":::
-
-
+:::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="La arquitectura de seguridad de confianza cero" lightbox="../media/zero-trust/zero-trust-architecture.png":::
 
 En la ilustración:
 - La aplicación de directivas de seguridad está en el centro de una arquitectura de confianza cero. Esto incluye la autenticación multifactor con acceso condicional que tiene en cuenta el riesgo de la cuenta de usuario, el estado del dispositivo y otros criterios y directivas que establezcas.
@@ -55,7 +49,7 @@ For more information about this architecture, including deployment objectives fo
 
 Para obtener más información acerca de La confianza cero, consulte Centro de orientación [_**de confianza cero de**_](/security/zero-trust) Microsoft.
 
-## <a name="deploying-zero-trust-for-microsoft-365"></a>Implementación de cero confianza para Microsoft 365
+## <a name="deploying-zero-trust-for-microsoft-365"></a>Implementación de la confianza cero para Microsoft 365
 
 Microsoft 365 se crea de forma intencionada con muchas capacidades de seguridad y protección de la información para ayudarle a crear confianza cero en su entorno. Muchas de las funcionalidades se pueden ampliar para proteger el acceso a otras aplicaciones SaaS que usa su organización y los datos de estas aplicaciones.
 
@@ -78,7 +72,7 @@ El primer paso es crear la base de confianza cero mediante la configuración de 
 
 
 
-Ve a [**_Identidad de confianza cero y protección de acceso a dispositivos_**](office-365-security/microsoft-365-policies-configurations.md) para obtener instrucciones prescriptivas para lograrlo. En esta serie de artículos se describe un conjunto de configuraciones de requisitos previos de acceso a dispositivos y identidades y un conjunto de directivas de acceso condicional de Azure Active Directory (Azure AD), Microsoft Intune y otras directivas para proteger el acceso a Microsoft 365  para servicios y aplicaciones de nube empresariales, otros servicios SaaS y aplicaciones locales publicadas con Azure AD proxy de aplicación.
+Ve a [**_Identidad de confianza cero y protección de acceso a dispositivos_**](office-365-security/microsoft-365-policies-configurations.md) para obtener instrucciones prescriptivas para lograrlo. Esta serie de artículos describe un conjunto de configuraciones de requisitos previos de acceso a dispositivos y identidades y un conjunto de Azure Active Directory (Azure AD), acceso condicional, Microsoft Intune y otras directivas para proteger el acceso a Microsoft 365  para servicios y aplicaciones de nube empresariales, otros servicios SaaS y aplicaciones locales publicadas con Azure AD proxy de aplicación.
 
 
 
@@ -114,7 +108,7 @@ Con los dispositivos inscritos en la administración, ahora puedes implementar e
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="Directivas de acceso y identidad de confianza cero con administración de dispositivos" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
 
-Vuelva a [**_Directivas comunes de identidad y acceso a_**](office-365-security/identity-access-policies.md) dispositivos y agregue las directivas en el Enterprise dispositivo.  
+Vuelva a [**_Identidad común y directivas de acceso a_**](office-365-security/identity-access-policies.md) dispositivos y agregue las directivas en el Enterprise dispositivo.  
 
 :::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="Directivas de acceso y identidad de confianza cero: Enterprise nivel (recomendado)" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
 
@@ -124,7 +118,7 @@ Microsoft 365 Defender es una solución de detección y respuesta extendida (XDR
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="Agregar Microsoft 365 Defender a la arquitectura de confianza cero" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
 
-Vaya a [**_Evaluate and pilot Microsoft 365 Defender_**](defender/eval-overview.md) para obtener una guía metónica para pilotar e implementar Microsoft 365 Defender componentes. 
+Vaya a [**_Evaluar y prueba piloto Microsoft 365 Defender_**](defender/eval-overview.md) una guía metódico para pilotar e implementar Microsoft 365 Defender componentes. 
 
 |Incluye  |Requisitos previos  |No incluye  |
 |---------|---------|---------|
@@ -144,7 +138,8 @@ Aunque este trabajo se representa en la parte superior de la pila de implementac
 
 Microsoft Information Protection proporciona un marco, un proceso y capacidades que puede usar para lograr sus objetivos empresariales específicos.
 
-![Microsoft Information Protection (MIP)](../media/zero-trust/mip-solution-overview.png)
+:::image type="content" source="../media/zero-trust/mip-solution-overview.png" alt-text="El Microsoft Information Protection de trabajo" lightbox="../media/zero-trust/mip-solution-overview.png":::
+
 
 Para obtener más información sobre cómo planear e implementar la protección de la información, vea [**_Deploy a Microsoft Information Protection solution_**](../compliance/information-protection-solution.md). 
 

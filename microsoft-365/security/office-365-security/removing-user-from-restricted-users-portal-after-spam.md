@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 66b810f7bb6381d405ee7ffc0d6b1cf7a10f2bf2
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c375d77c3aa64d996a8d8d2f8dce538829eaa3b2
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941437"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568322"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Quitar usuarios bloqueados del portal de Usuarios restringidos en Microsoft 365
 
@@ -39,11 +39,11 @@ ms.locfileid: "61941437"
 
 Si un usuario supera uno de los límites de envío saliente, como se especifica en [límites del servicio](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) o en [directivas de correo no deseado saliente](configure-the-outbound-spam-policy.md), el usuario no puede enviar correos electrónicos, pero aún podrá recibirlos.
 
-El usuario se agrega a la página **usuarios restringidos** en el portal de Microsoft 365 Defender. Cuando intentan enviar correo electrónico, el mensaje se devuelve en un informe de no entrega (también conocido como NDR o mensajes de devolución) con el código de error [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) y el texto siguiente:
+El usuario se agrega a la página **Usuarios restringidos** en el portal de Microsoft 365 Defender. Cuando intentan enviar correo electrónico, el mensaje se devuelve en un informe de no entrega (también conocido como NDR o mensaje de devolución) con el código de error [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) y el siguiente texto:
 
 > "No se pudo entregar el mensaje porque el remitente no es válido. La razón más común para este caso es que la dirección de correo electrónico sea sospechosa de que está enviando correo no deseado y ya no se le permite enviar correo.  Póngase en contacto con su administrador, para obtener ayuda. El servidor remoto devolvió "550 5.1.8 acceso denegado, remitente incorrecto de correo saliente".
 
-Los administradores pueden quitar usuarios de la página Usuarios restringidos en Microsoft 365 Defender o en PowerShell de Exchange Online.
+Los administradores pueden quitar usuarios de la página **Usuarios restringidos** en Microsoft 365 Defender o en PowerShell de Exchange Online.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -93,7 +93,7 @@ La directiva de alerta predeterminada denominada **Usuario con restricción de e
 > [!IMPORTANT]
 > Para que las alertas funcionen, debe activarse la búsqueda de registros de auditoría. Para obtener más información, consulte [ Desactivar o activar la búsqueda de registros de auditoría](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. En el portal de Microsoft 365 Defender, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **directiva de alertas**.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico y colaboración** \> **Directivas y reglas** \> **Directiva de alertas**. Para ir directamente a la página de **Directiva de alertas**, use <https://security.microsoft.com/alertpolicies>.
 
 2. En la página **Directiva de alertas**, busque y seleccione la alerta denominada **Usuario no puede enviar correo electrónico**. Puede ordenar las directivas por nombre o usar el **Cuadro de búsqueda** para buscar la directiva.
 

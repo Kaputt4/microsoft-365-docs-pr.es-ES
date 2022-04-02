@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuando use el cliente de etiquetado unificado de Azure Information Protection (AIP), comprenda las ventajas de usar el etiquetado integrado para aplicaciones Office en lugar del complemento AIP.
-ms.openlocfilehash: 88849422d295cc7caf2eb39837f7f1bb82b7a378
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 38aee57720f38793f4f61cc871a9bee556e28690
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319301"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498613"
 ---
 # <a name="why-choose-mip-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Por qué elegir el etiquetado integrado de MIP en lugar del complemento de AIP para aplicaciones de Office
 
@@ -58,7 +58,7 @@ Ahora que el cliente de AIP está en [modo de mantenimiento](https://techcommuni
 - Los complementos son menos estables porque pueden entrar en conflicto con otros complementos que pueden provocar que las aplicaciones de Office se cuelguen, se bloqueen o deshabiliten automáticamente el complemento.
 - Como complemento, se ejecuta más lentamente y los usuarios pueden deshabilitarlo para omitir los requisitos de etiquetado.
 - Cualquier corrección de errores requerirá volver a instalar el cliente de Azure Information Protection.
-- La experiencia de etiquetado para los usuarios es ligeramente diferente de las etiquetas integradas que los usuarios tienen en sus otros dispositivos (macOS, iOS y Android) y cuando usan Office para la Web. Esta diferencia puede aumentar los costes de aprendizaje y soporte técnico.
+- La experiencia de etiquetado para los usuarios es ligeramente diferente de las etiquetas integradas que los usuarios tienen en sus otros dispositivos (macOS, iOS y Android) y cuando usan Office para la Web. Esta diferencia podría aumentar los costos de aprendizaje y soporte técnico.
 - Ya hay nuevas características de etiquetado de Office publicadas que [solo son compatibles con el etiquetado integrado](#features-supported-only-by-built-in-labeling-for-office-apps), y la lista crece constantemente.
 
 Use el complemento de AIP para las aplicaciones de Windows Office solo si ya lo ha implementado para los usuarios y necesita tiempo para la migración al etiquetado integrado. O bien, si los usuarios necesitan una característica que no es compatible con el etiquetado integrado. Use la [información de paridad de características](#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps) de esta página para ayudarle a identificar estas características.
@@ -68,7 +68,7 @@ Use el complemento de AIP para las aplicaciones de Windows Office solo si ya lo 
 > [!NOTE]
 > Muchas características de etiquetado nuevas se encuentran en fase de planificación o desarrollo, por lo que se espera que la lista de esta sección crezca con el paso del tiempo.
 
-Algunas características solo son compatibles con el etiquetado integrado para las aplicaciones de Office y no serán compatibles con el complemento de AIP. Incluyen:
+Algunas características solo son compatibles con el etiquetado integrado para las aplicaciones de Office y no serán compatibles con el complemento de AIP. Estas incluyen: 
 
 - Para el etiquetado automático y recomendado:
     - Acceso a servicios de clasificación inteligentes que incluyen [clasificadores capacitados](classifier-learn-about.md), [coincidencia exacta de datos (EDM)](sit-learn-about-exact-data-match-based-sits.md) y [entidades con nombre](named-entities-learn.md)
@@ -110,7 +110,7 @@ Como alternativa, puede deshabilitar o quitar de forma interactiva el complement
 Independientemente del método que elija, los cambios surtirán efecto cuando se reinicien las aplicaciones de Office.
 
 > [!NOTE]
-> Las etiquetas integradas requieren una edición de suscripción de aplicaciones de Office. Si tiene ediciones independientes de Office, a veces denominadas "Office Perpetua", le recomendamos que actualice a Aplicaciones de Microsoft 365 para empresas para beneficiarse de las [capacidades de etiquetado más recientes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+> Las etiquetas integradas requieren una edición de suscripción a las aplicaciones de Office. Si tiene ediciones independientes de Office, a veces denominadas "Office Perpetua", le recomendamos que actualice a Aplicaciones de Microsoft 365 para empresas para beneficiarse de las [capacidades de etiquetado más recientes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
 Recuerde que, cuando use este método para deshabilitar el complemento de AIP, podrá seguir usando el cliente de AIP para ampliar el etiquetado más allá de las aplicaciones de Office.
 
@@ -118,7 +118,7 @@ Recuerde que, cuando use este método para deshabilitar el complemento de AIP, p
 
 Muchas de las características de etiquetado compatibles con el complemento de AIP ahora son compatibles con el etiquetado integrado. Para obtener una lista más detallada de las funcionalidades, las versiones mínimas que podrían ser necesarias e información de configuración, vea [Administrar etiquetas de confidencialidad en aplicaciones de Office](sensitivity-labels-office-apps.md).
 
-Hay más características en fase de planificación y desarrollo. Si hay una característica específica que le interese, consulte el [plan de desarrollo de Microsoft 365](https://aka.ms/MIPC/Roadmap) y considere la posibilidad de unirse a [Microsoft Information Protection en la versión preliminar privada de Office](https://aka.ms/MIP/PreviewRing).
+Hay más características planeadas y en desarrollo. Si hay una característica específica que le interese, consulte el [plan de desarrollo de Microsoft 365](https://aka.ms/MIPC/Roadmap) y considere la posibilidad de unirse a la [protección de la información de Microsoft en la versión preliminar privada de Office](https://aka.ms/MIP/PreviewRing).
 
 Use la siguiente información para identificar si usa una característica del complemento de AIP que aún no es compatible con el etiquetado integrado:
 

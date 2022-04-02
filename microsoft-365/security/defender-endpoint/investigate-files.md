@@ -15,12 +15,12 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 6f93a5ec90404ca28fd47d4115a8ebf8d488216e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0cb7523036d6660d4b5556fdfd07e443a359b208
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322049"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466243"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Investigar un archivo asociado a una alerta de Microsoft Defender para punto de conexión
 
@@ -74,13 +74,13 @@ La tarjeta de prevalencia de archivos muestra dónde se ha visto el archivo en d
 > [!NOTE]
 > Los diferentes usuarios pueden ver valores distintos en los dispositivos *de la sección de* organización de la tarjeta de prevalencia de archivos. Esto se debe a que la tarjeta muestra información basada en el ámbito RBAC que tiene un usuario. Es decir, si a un usuario se le ha concedido visibilidad en un conjunto específico de dispositivos, solo verá la prevalencia organizativa de archivos en esos dispositivos.
 
-![Imagen de la información del archivo.](images/atp-file-information.png)
+:::image type="content" source="images/atp-file-information.png" alt-text="La información del archivo" lightbox="images/atp-file-information.png":::
 
 ## <a name="alerts"></a>Alertas
 
 La **pestaña** Alertas proporciona una lista de alertas asociadas con el archivo. Esta lista cubre gran parte de la misma información que la cola de alertas, excepto para el grupo de dispositivos, si existe, al que pertenece el dispositivo afectado. Puede elegir qué tipo de información se muestra seleccionando Personalizar **columnas de la** barra de herramientas encima de los encabezados de columna.
 
-![Imagen de alertas relacionadas con la sección de archivos.](images/atp-alerts-related-to-file.png)
+:::image type="content" source="images/atp-alerts-related-to-file.png" alt-text="Las alertas relacionadas con la sección de archivos" lightbox="images/atp-alerts-related-to-file.png":::
 
 ## <a name="observed-in-organization"></a>Observado en la organización
 
@@ -89,7 +89,7 @@ La **pestaña Observed in organization** le permite especificar un intervalo de 
 > [!NOTE]
 > Esta pestaña mostrará un número máximo de 100 dispositivos. Para ver _todos los_ dispositivos con el archivo, exporte la pestaña a un archivo CSV **seleccionando Exportar** en el menú de acciones encima de los encabezados de columna de la pestaña.
 
-![Imagen del dispositivo observado más reciente con el archivo.](images/atp-observed-machines.png)
+:::image type="content" source="images/atp-observed-machines.png" alt-text="Los dispositivos observados más recientes con el archivo" lightbox="images/atp-observed-machines.png":::
 
 Use el control deslizante o el selector de intervalos para especificar rápidamente un período de tiempo que desea comprobar si hay eventos relacionados con el archivo. Puede especificar una ventana de tiempo tan pequeña como un solo día. Esto le permitirá ver solo los archivos que se comunicaron con esa dirección IP en ese momento, lo que reduce drásticamente el desplazamiento y la búsqueda innecesarios.
 
@@ -97,13 +97,13 @@ Use el control deslizante o el selector de intervalos para especificar rápidame
 
 La **pestaña Análisis** profundo permite enviar el archivo para un análisis [profundo, para](respond-file-alerts.md#deep-analysis) descubrir más detalles sobre el comportamiento del archivo, así como el efecto que está teniendo en sus organizaciones. Después de enviar el archivo, el informe de análisis profundo aparecerá en esta pestaña una vez que estén disponibles los resultados. Si el análisis profundo no encontró nada, el informe estará vacío y el espacio de resultados permanecerá en blanco.
 
-![Imagen de la pestaña análisis profundo.](images/submit-file.png)
+:::image type="content" source="images/submit-file.png" alt-text="Ficha Análisis profundo" lightbox="images/submit-file.png":::
 
 ## <a name="file-names"></a>Nombres de archivo
 
 La **pestaña Nombres de** archivo enumera todos los nombres que se ha observado que el archivo debe usar en las organizaciones.
 
-![Imagen de la pestaña nombres de archivo.](images/atp-file-names.png)
+:::image type="content" source="images/atp-file-names.png" alt-text="Ficha Nombres de archivo" lightbox="images/atp-file-names.png":::
 
 ## <a name="related-topics"></a>Temas relacionados
 

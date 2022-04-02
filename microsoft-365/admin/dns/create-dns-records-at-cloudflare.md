@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: Obtenga información sobre cómo comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en Cloudflare para Microsoft.
-ms.openlocfilehash: 5cf6483c7f560f5ab3ed2074dbaebf6c893dca3e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a7f1307530d5dc874120db0f40b631ada4b833e8
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314929"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568058"
 ---
 # <a name="connect-your-dns-records-at-cloudflare-to-microsoft-365"></a>Conectar los registros DNS de Cloudflare a Microsoft 365
 
- **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
+ **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca.
 
 Si Cloudflare es su proveedor de hospedaje DNS, siga los pasos de este artículo para comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online, y así sucesivamente.
 
@@ -39,19 +39,19 @@ Si Cloudflare es su proveedor de hospedaje DNS, siga los pasos de este artículo
 
 Tiene dos opciones para configurar registros DNS para su dominio:
 
-- [**Usar dominio Conectar**](#use-domain-connect-to-verify-and-set-up-your-domain) Si no ha configurado el dominio con otro proveedor de servicios de correo electrónico, siga los pasos de dominio Conectar para comprobar y configurar automáticamente el nuevo dominio para usarlo con Microsoft 365. 
+- [**Usar dominio Conectar**](#use-domain-connect-to-verify-and-set-up-your-domain) Si no ha configurado el dominio con otro proveedor de servicios de correo electrónico, siga los pasos de dominio Conectar para comprobar y configurar automáticamente el nuevo dominio para usarlo con Microsoft 365.
 
     OR
 
-- [**Siga los pasos manuales**](#create-dns-records-with-manual-setup) Compruebe el dominio con los pasos manuales siguientes y elija cuándo y qué registros agregar al registrador de dominio. Esto le permite configurar nuevos registros MX (correo), por ejemplo, a su conveniencia. 
+- [**Siga los pasos manuales**](#create-dns-records-with-manual-setup) Compruebe el dominio con los pasos manuales siguientes y elija cuándo y qué registros agregar al registrador de dominio. Esto le permite configurar nuevos registros MX (correo), por ejemplo, a su conveniencia.
 
 ## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>Usar dominio Conectar para comprobar y configurar el dominio
 
 Siga estos pasos para comprobar y configurar automáticamente el dominio de Cloudflare con Microsoft 365:
 
-1. En el Centro de administración de Microsoft 365, **seleccione Configuración** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a> y seleccione el dominio que desea configurar.
+1. En el Centro de administración de Microsoft 365, seleccione **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**dominios**</a> y seleccione el dominio que desea configurar.
 
-1. Seleccione los tres puntos (más acciones) > elija **Iniciar configuración**.
+1. Seleccione los tres puntos (más acciones) \> elija **Iniciar configuración**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
 
@@ -61,98 +61,98 @@ Siga estos pasos para comprobar y configurar automáticamente el dominio de Clou
 
 1. En la página de inicio de sesión de Cloudflare, inicie sesión en su cuenta y seleccione **Autorizar**.
 
-    Esto completa la configuración de dominio para Microsoft 365. 
+    Esto completa la configuración de dominio para Microsoft 365.
 
 ## <a name="create-dns-records-with-manual-setup"></a>Crear registros DNS con configuración manual
 
 Después de agregar estos registros en Cloudflare, el dominio se configurará para que funcione con Microsoft 365 servicios.
 
 > [!NOTE]
->  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  
+> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
+
 ### <a name="change-your-domains-nameserver-ns-records"></a>Cambiar los registros del servidor de nombres (o NS) de su dominio
 
 > [!IMPORTANT]
-> Debe realizar este procedimiento en el registrador de dominios en el que compró y registró su dominio. 
-  
-Cuando te has registrado en Cloudflare, agregaste un dominio mediante el proceso de configuración de Cloudflare. 
-  
+> Debe realizar este procedimiento en el registrador de dominios en el que compró y registró su dominio.
+
+Cuando te has registrado en Cloudflare, agregaste un dominio mediante el proceso de configuración de Cloudflare.
+
 El dominio que agregó se compró a Cloudflare o a un registrador de dominio independiente. Para comprobar y crear registros DNS para su dominio en Microsoft 365, primero debe cambiar los servidores de nombres en el registrador de dominios para que usen los servidores de nombres de Cloudflare.
-  
+
 Para cambiar los servidores DNS del dominio en el sitio web del registrador de dominios usted mismo, haga lo siguiente:
-  
+
 1. En el sitio web del registrador de dominios, busque el área donde poder modificar los servidores DNS del dominio.
 
 2. Cree dos registros de servidor de nombres mediante los valores de la tabla siguiente o edite los registros existentes del servidor de nombres para que coincidan con estos valores.
 
-    ||
-    |:-----|:-----|
-    |Primer servidor de nombres  <br/> |Use el valor de servidor de nombres proporcionado por Cloudflare.  <br/> |
-    |Segundo servidor de nombres  <br/> |Use el valor de servidor de nombres proporcionado por Cloudflare.  <br/> |
+    |Tipo|Valor|
+    |---|---|
+    |Primer servidor de nombres|Use el valor de servidor de nombres proporcionado por Cloudflare.|
+    |Segundo servidor de nombres|Use el valor de servidor de nombres proporcionado por Cloudflare.|
 
     > [!TIP]
-    > You should use at least two name server records. Si hay otros servidores de nombres enumerados, debe eliminarlos. 
-  
+    > You should use at least two name server records. Si hay otros servidores de nombres enumerados, debe eliminarlos.
+
 3. Guarde los cambios.
 
 > [!NOTE]
-> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. A continuación, el correo electrónico de Microsoft y otros servicios estarán configurados para funcionar con su dominio. 
-  
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. A continuación, el correo electrónico de Microsoft y otros servicios estarán configurados para funcionar con su dominio.
+
 ### <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
 
 Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea el propietario. Si puede iniciar sesión en la cuenta en el registrador de dominio y crear el registro DNS, Microsoft sabrá que es el propietario del dominio.
-  
+
 > [!NOTE]
-> Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea. 
-  
+> Este registro se usa exclusivamente para verificar si se es el propietario de un dominio; no afecta a nada más. Puede eliminarlo más adelante, si lo desea.
+
 1. Para empezar, vaya a la página dominios de Cloudflare mediante [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .
-  
-1. En la página principal, seleccione el dominio que desea actualizar. 
+
+1. En la página principal, seleccione el dominio que desea actualizar.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Seleccione el dominio que desea actualizar.":::
 
 1. En la página Información general del dominio, seleccione **DNS**.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Seleccione DNS.":::
-  
+
 1. En la página Administración de DNS, seleccione **+Agregar registro**.
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Seleccione Agregar registro.":::
 
-1. Seleccione el tipo TXT de la lista desplegable y escriba o copie y pegue los valores de esta tabla. 
+1. Seleccione el tipo TXT de la lista desplegable y escriba o copie y pegue los valores de esta tabla.
 
-    | **Tipo** | **Nombre** | **TTL** | **Contenido** |
-    |:-----|:-----|:-----|:----|
-    |TXT  <br/> |@  <br/> |30 minutos  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)    |
+    |Tipo|Nombre|TTL|Contenido|
+    |---|---|---|:----|
+    |TXT|@|30 minutos|MS=*msXXXXXXXX* <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|
 
-1. Seleccione **Guardar**.
+1. Haga clic en **Guardar**.
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-TXT-save.png" alt-text="Seleccione Agregar registro.":::
 
    Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
 
 Ahora que ha agregado el registro en el sitio del registrador de dominios, volverá a Microsoft y buscará el registro. Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
-  
+
 Para comprobar el registro en Microsoft 365:
-  
+
 1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**dominios**</a>.
 
-1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar configuración**. 
+1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar configuración**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
 
 1. Seleccione **Continuar**.
-  
+
 1. En la página **verificar dominio**, seleccione **verificar**.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
+> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
 
 ### <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Agregar un registro MX para que el correo electrónico del dominio vaya a Microsoft
 
 1. Para empezar, vaya a la página dominios de Cloudflare mediante [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .
-  
-1. En la página principal, seleccione el dominio que desea actualizar. 
+
+1. En la página principal, seleccione el dominio que desea actualizar.
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Seleccione el dominio que desea actualizar.":::
 
@@ -164,27 +164,27 @@ Para comprobar el registro en Microsoft 365:
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Seleccione Agregar registro.":::
 
-1. Seleccione el tipo MX de la lista desplegable y escriba o copie y pegue los valores de esta tabla. 
+1. Seleccione el tipo MX de la lista desplegable y escriba o copie y pegue los valores de esta tabla.
 
-   | **Tipo** | **Nombre** | **Servidor de correo** |  **TTL** | **Prioridad** |
-   |:-----|:-----|:-----|:-----|:-----|
-   |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtenga el de *\<domain-key\>* su cuenta Microsoft 365 usuario.   [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md) |30 minutos  <br/> | 1  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/>|
+   |Tipo|Nombre|Servidor de correo|TTL|Prioridad|
+   |---|---|---|---|---|
+   |MX|@|*\<domain-key\>*.mail.protection.outlook.com <br/> **Nota:** Obtenga el de *\<domain-key\>* su cuenta Microsoft 365 usuario. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|30 minutos|1 <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/>|
 
-1. Seleccione **Guardar**.
+1. Haga clic en **Guardar**.
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-mx-save.png" alt-text="Seleccione Agregar registro."::: 
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-mx-save.png" alt-text="Seleccione Agregar registro.":::
 
-1. Si hay otros registros MX enumerados en la sección **Registros MX** , elimínelos **seleccionando Editar** y, a continuación, **seleccione Eliminar**. 
+1. Si hay otros registros MX enumerados en la sección **Registros MX** , elimínelos **seleccionando Editar** y, a continuación, **seleccione Eliminar**.
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-mx-delete.png" alt-text="Seleccione Eliminar.":::  
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-mx-delete.png" alt-text="Seleccione Eliminar.":::
 
-1. En el cuadro de diálogo de confirmación, **seleccione Eliminar** para confirmar los cambios. 
+1. En el cuadro de diálogo de confirmación, **seleccione Eliminar** para confirmar los cambios.
 
 ### <a name="add-the-cname-record-required-for-microsoft"></a>Agregar el registro CNAME necesario para Microsoft
 
 1. Para empezar, vaya a la página dominios de Cloudflare mediante [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .
 
-1. En la página principal, seleccione el dominio que desea actualizar. 
+1. En la página principal, seleccione el dominio que desea actualizar.
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Seleccione el dominio que desea actualizar.":::
 
@@ -196,24 +196,24 @@ Para comprobar el registro en Microsoft 365:
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Seleccione Agregar registro.":::
 
-1. Seleccione el tipo CNAME de la lista desplegable y escriba o copie y pegue los valores de esta tabla. 
+1. Seleccione el tipo CNAME de la lista desplegable y escriba o copie y pegue los valores de esta tabla.
 
-    | Tipo | Nombre | Target | TTL |
-    |:-----|:-----|:-----|:-----|
-    | CNAME  <br/> | autodescubrir  <br/> | autodiscover.outlook.com  <br/> | Automático <br/> |
-  
-1. Seleccione **Guardar**.
+    |Tipo|Nombre|Target|TTL|
+    |---|---|---|---|
+    |CNAME|autodescubrir|autodiscover.outlook.com|Automático|
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Seleccione Guardar."::: 
+1. Haga clic en **Guardar**.
+
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Seleccione Guardar.":::
 
 ### <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft 365. En vez de eso, agregue los valores necesarios de Microsoft 365 para el registro actual, de modo que solo tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores. 
-  
-1. Para empezar, vaya a la página dominios de Cloudflare mediante [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .  
-  
-1. En la página principal, seleccione el dominio que desea actualizar. 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft 365. En su lugar, agregue los Microsoft 365 requeridos al registro actual para que tenga un único registro  SPF que incluya ambos conjuntos de valores.
+
+1. Para empezar, vaya a la página dominios de Cloudflare mediante [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .
+
+1. En la página principal, seleccione el dominio que desea actualizar.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Seleccione el dominio que desea actualizar.":::
 
@@ -225,15 +225,15 @@ Para comprobar el registro en Microsoft 365:
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Seleccione Agregar registro.":::
 
-1. Seleccione el tipo TXT de la lista desplegable y escriba o copie y pegue los valores de esta tabla. 
+1. Seleccione el tipo TXT de la lista desplegable y escriba o copie y pegue los valores de esta tabla.
 
-    | Tipo | Nombre | TTL | Contenido |
-    |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |@  <br/> |30 minutos  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.   |
+    |Tipo|Nombre|TTL|Contenido|
+    |---|---|---|---|
+    |TXT|@|30 minutos|v=spf1 include:spf.protection.outlook.com -all <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.|
 
-1. Seleccione **Guardar**.
+1. Haga clic en **Guardar**.
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-TXT-save.png" alt-text="Seleccione Guardar."::: 
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-TXT-save.png" alt-text="Seleccione Guardar.":::
 
 ## <a name="advanced-option-skype-for-business"></a>Opción avanzada: Skype Empresarial
 
@@ -242,16 +242,16 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 ### <a name="add-the-two-required-srv-records"></a>Agregar los dos registros SRV necesarios
 
 > [!IMPORTANT]
-> Ten en cuenta que Cloudflare es responsable de hacer que esta funcionalidad esté disponible. En caso de que vea discrepancias entre los pasos siguientes y la GUI de Cloudflare actual (interfaz gráfica de usuario), aproveche la [configuración de Cloudflare Community](https://community.cloudflare.com/). 
+> Ten en cuenta que Cloudflare es responsable de hacer que esta funcionalidad esté disponible. En caso de que vea discrepancias entre los pasos siguientes y la GUI de Cloudflare actual (interfaz gráfica de usuario), aproveche la [configuración de Cloudflare Community](https://community.cloudflare.com/).
 
 1. Para empezar, vaya a la página dominios de Cloudflare mediante [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .
 
-1. En la página principal, seleccione el dominio que desea actualizar. 
+1. En la página principal, seleccione el dominio que desea actualizar.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Seleccione el dominio que desea actualizar.":::
-  
+
 1. En la página Información general del dominio, seleccione **DNS**.
-  
+
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Seleccione DNS.":::
 
 1. En la página Administración de DNS, seleccione **+Agregar registro**
@@ -260,25 +260,25 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
 1. Seleccione el tipo SRV de la lista desplegable y escriba o copie y pegue los valores de esta tabla.
 
-    | **Tipo** | **Nombre** | **Servicio** | **Protocolo** |  **TTL** | **Prioridad** | **Grosor** | **Puerto** | **Destino** |
-    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV| Use su *domain_name*; por ejemplo, contoso.com | _sip |TLS |30 minutos | 100|1 |443 |sipfed.online.lync.com  |
-    |SRV|_sipfederationtls | TCP|Use su *domain_name*; por ejemplo, contoso.com   |30 minutos |100 |1 |5061 | sipfed.online.lync.com |
-  
-1. Seleccione **Guardar**.
+    |Tipo|Nombre|Servicio|Protocolo|TTL|Prioridad|Peso|Puerto|Target|
+    |---|---|---|---|---|---|---|---|---|
+    |SRV|Use su *domain_name*; por ejemplo, contoso.com|_sip|TLS|30 minutos|100|1|443|sipfed.online.lync.com|
+    |SRV|_sipfederationtls|TCP|Use su *domain_name*; por ejemplo, contoso.com|30 minutos|100|1|5061|sipfed.online.lync.com|
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-srv-save.png" alt-text="Seleccione Guardar."::: 
+1. Haga clic en **Guardar**.
 
-1. Agregue el otro registro SRV copiando los valores de la segunda fila de la tabla. 
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-srv-save.png" alt-text="Seleccione Guardar.":::
+
+1. Agregue el otro registro SRV copiando los valores de la segunda fila de la tabla.
 
 > [!NOTE]
->  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
+> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
 
 ### <a name="add-the-two-required-cname-records"></a>Agregar los dos registros CNAME necesarios
-  
+
 1. Para empezar, vaya a la página dominios de Cloudflare mediante [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .
 
-1. En la página principal, seleccione el dominio que desea actualizar. 
+1. En la página principal, seleccione el dominio que desea actualizar.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Seleccione el dominio que desea actualizar.":::
 
@@ -292,29 +292,29 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
 1. Seleccione el tipo CNAME de la lista desplegable y escriba o copie y pegue los valores de esta tabla.
 
-    |**Tipo**|**Nombre**|**Destino**|**TTL**|
-    |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> |1 hora  <br/> |
-    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> |1 Hour  <br/> |
-  
-1. Seleccione **guardar.** 
+    |Tipo|Nombre|Target|TTL|
+    |---|---|---|---|
+    |CNAME|sip|sipdir.online.lync.com. <br/> **Este valor DEBE terminar en punto (.)**|1 hora|
+    |CNAME|lyncdiscover|webdir.online.lync.com. <br/> **Este valor DEBE terminar en punto (.)**|1 Hour|
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Seleccione Guardar.":::  
+1. Seleccione **guardar.**
+
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Seleccione Guardar.":::
 
 1. Agregue el otro registro CNAME copiando los valores de la segunda fila de la tabla.
 
 > [!NOTE]
-> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opción avanzada: Intune y Administración de dispositivos móviles para Microsoft 365
+> Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-Este servicio le ayuda a proteger y administrar de forma remota dispositivos móviles que se conectan a su dominio. Mobile Device Management necesita 2 registros CNAME para que los usuarios puedan inscribir dispositivos en el servicio.
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opción avanzada: Intune y Mobile Administración de dispositivos para Microsoft 365
 
-### <a name="add-the-two-required-cname-records"></a>Agregar los dos registros CNAME necesarios
+Este servicio le ayuda a proteger y administrar de forma remota dispositivos móviles que se conectan a su dominio. El Administración de dispositivos móvil necesita 2 registros CNAME para que los usuarios puedan inscribir dispositivos en el servicio.
+
+### <a name="add-the-two-required-cname-records-for-mobile-device-management"></a>Agregue los dos registros CNAME necesarios para mobile Administración de dispositivos
 
 1. Para empezar, vaya a la página dominios de Cloudflare mediante [este vínculo](https://www.cloudflare.com/a/login). Se le pedirá que inicie sesión primero .
 
-1. En la página principal, seleccione el dominio que desea actualizar. 
+1. En la página principal, seleccione el dominio que desea actualizar.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Seleccione el dominio que desea actualizar.":::
 
@@ -328,14 +328,14 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
 
 1. Seleccione el tipo CNAME de la lista desplegable y escriba o copie y pegue los valores de esta tabla.
 
-    |**Tipo**|**Nombre**|**Destino**|**TTL**|
-    |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **Este valor DEBE terminar en punto (.)** <br/> |1 hora  <br/> |
-    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Este valor DEBE terminar en punto (.).** <br/> |1 Hour  <br/> |
-  
-1. Seleccione **Guardar**.
+    |Tipo|Nombre|Target|TTL|
+    |---|---|---|---|
+    |CNAME|enterpriseregistration|enterpriseregistration.windows.net. <br/> **Este valor DEBE terminar en punto (.)**|1 hora|
+    |CNAME|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com. <br/> **Este valor DEBE terminar en punto (.).**|1 Hour|
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Seleccione Guardar."::: 
+1. Haga clic en **Guardar**.
+
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Seleccione Guardar.":::
 
 1. Agregue el otro registro CNAME copiando los valores de la segunda fila de la tabla.
 

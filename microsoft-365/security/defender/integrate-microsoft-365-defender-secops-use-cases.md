@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9b4640872f4e4fbdba65b1e29ceee5575e583bac
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6621ca47356f87edd47a905e4edeb592d9b556ff
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330221"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499097"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>Paso 5. Desarrollar y probar casos de uso
 
@@ -46,7 +46,7 @@ El SOC debe definir un estándar de alto nivel y un proceso para desarrollar cas
 
 Las actividades de supervisión de SOC relacionadas con el desarrollo de casos de uso incluyen: 
 
-- Requisitos
+- Requirements
 - Necesidades de personal o formación
 - Licencias de software
 - Contratación de proveedores
@@ -56,7 +56,7 @@ Las actividades de supervisión de SOC relacionadas con el desarrollo de casos d
 
 Para facilitar los procesos de creación del runbook y del libro de juegos, cree un árbol de decisión de casos de uso. En esta figura se muestra un ejemplo.
 
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="Proceso de decisión de caso de uso." lightbox="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="Proceso de decisión de caso de uso" lightbox="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png":::
 
 Una vez definido y aprobado un estándar de caso de uso de alto nivel, el siguiente paso es crear y probar un caso de uso real. En las secciones siguientes se usan escenarios de análisis de vulnerabilidades y amenazas y contra suplantación de identidad como ejemplos.
 
@@ -64,13 +64,13 @@ Una vez definido y aprobado un estándar de caso de uso de alto nivel, el siguie
 
 El primer paso para crear un caso de uso es describir el flujo de trabajo mediante un story board. Este es un ejemplo de un panel de artículos de alto nivel para una nueva notificación de vulnerabilidad de suplantación de identidad (phishing) a un equipo de inteligencia de amenazas.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="Un ejemplo de flujo de trabajo de casos de uso para una campaña contra la suplantación de identidad." lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="Flujo de trabajo de un caso de uso para una campaña contra la suplantación de identidad" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-1"></a>Invocar el flujo de trabajo de casos de uso por ejemplo 1
 
 Una vez aprobado el story board, el siguiente paso es invocar el flujo de trabajo de casos de uso. Este es un proceso de ejemplo para una campaña contra el phishing. 
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="Un ejemplo de flujo de trabajo de casos de uso detallado para una campaña contra la suplantación de identidad." lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="Flujo de trabajo de casos de uso detallado para una campaña contra la suplantación de identidad" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png":::
 
 ## <a name="use-case-example-2-threat-and-vulnerability-scanning"></a>Ejemplo de caso de uso 2: Análisis de amenazas y vulnerabilidades
 
@@ -78,13 +78,13 @@ Otro escenario en el que se podría usar un caso de uso es para el examen de ame
 
 Este es un guión gráfico de alto nivel de ejemplo para el Administración de amenazas y vulnerabilidades de activos.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="Un ejemplo de flujo de trabajo de casos de Administración de amenazas y vulnerabilidades." lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="Un flujo de trabajo de caso de uso para Administración de amenazas y vulnerabilidades" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-2"></a>Invocar el flujo de trabajo de casos de uso por ejemplo 2
 
 Este es un proceso de ejemplo para el examen de amenazas y vulnerabilidades.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="Un ejemplo de flujo de trabajo de casos de uso detallado para Administración de amenazas y vulnerabilidades." lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="Un flujo de trabajo de casos de uso detallado para Administración de amenazas y vulnerabilidades" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png":::
  
 ### <a name="analyze-the-use-case-output-and-lessons-learned"></a>Analizar el resultado del caso de uso y las lecciones aprendidas
 

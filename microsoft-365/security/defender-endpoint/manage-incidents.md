@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45c08c5a3c304a23b5761d96a4d9aceb1b4f1562
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: a84f7ba72acb4caf3e229f0bed4d997e123cc7ae
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766834"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466221"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>Administrar Microsoft Defender para incidentes de punto de conexión
 
@@ -42,8 +42,7 @@ La administración de incidentes es una parte importante de todas las operacione
 
 Al seleccionar un incidente de la cola **Incidentes** , se abre el panel **Administración** de incidentes, donde puede abrir la página de incidentes para obtener más información.
 
-
-![Imagen del panel de administración de incidentes.](images/atp-incidents-mgt-pane-updated.png)
+:::image type="content" source="images/atp-incidents-mgt-pane-updated.png" alt-text="Panel de administración de incidentes" lightbox="images/atp-incidents-mgt-pane-updated.png":::
 
 Puedes asignar incidentes a ti mismo, cambiar el estado y la clasificación, cambiar el nombre o comentarlos para realizar un seguimiento de su progreso.
 
@@ -55,8 +54,7 @@ Puedes asignar incidentes a ti mismo, cambiar el estado y la clasificación, cam
 > Los incidentes que existían antes de la implementación de la nomenclatura automática de incidentes conservarán sus nombres.
 >
 
-
-![Imagen de la página de detalles del incidente.](images/atp-incident-details-updated.png)
+:::image type="content" source="images/atp-incident-details-updated.png" alt-text="Página de detalles del incidente" lightbox="images/atp-incident-details-updated.png":::
 
 ## <a name="assign-incidents"></a>Asignar incidentes
 Si aún no se ha asignado un incidente, puedes seleccionar **Asignarme** para asignarte el incidente. Esta asignación no incluye solo el incidente, sino también todas las alertas asociadas a él.

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ccd5164839244250c5e2d908f41c35a706e0f49d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 97ce614a77b85ae6e22e771a413ae5bce51abce7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165563"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465803"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>Puntuación de seguridad de Microsoft para dispositivos
 
@@ -29,16 +29,16 @@ ms.locfileid: "61165563"
 
 **Se aplica a:**
 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 > [!NOTE]
-> La puntuación de configuración ahora forma Administración de amenazas y vulnerabilidades como puntuación segura de Microsoft para dispositivos.
+> La puntuación de configuración ahora forma parte Administración de amenazas y vulnerabilidades como puntuación segura de Microsoft para dispositivos.
 
-La puntuación de los dispositivos está visible [en Administración de amenazas y vulnerabilidades panel](tvm-dashboard-insights.md) del portal Microsoft 365 Defender usuario. Una puntuación segura de Microsoft más alta para dispositivos significa que los puntos de conexión son más resistentes frente a los ataques de amenazas de ciberseguridad. Refleja el estado de configuración de seguridad colectiva de los dispositivos en las siguientes categorías:
+La puntuación de los dispositivos está visible [en Administración de amenazas y vulnerabilidades panel](tvm-dashboard-insights.md) del portal Microsoft 365 Defender dispositivo. Una puntuación segura de Microsoft más alta para dispositivos significa que los puntos de conexión son más resistentes frente a los ataques de amenazas de ciberseguridad. Refleja el estado de configuración de seguridad colectiva de los dispositivos en las siguientes categorías:
 
 - Aplicación
 - Sistema operativo
@@ -54,9 +54,9 @@ Reenvía Microsoft Defender para las señales de punto de conexión, lo que ofre
 
 Los cambios pueden tardar hasta unas horas en reflejarse en el panel.
 
-1. En el panel de navegación, vaya **a Configuración** características avanzadas generales de puntos de \>  \>  \> **conexión**
+1. En el panel de navegación, vaya **a Configuración** \> **características avanzadas generales**  \> **de puntos de conexión** \>
 
-2. Desplácese hacia abajo **hasta Puntuación segura de Microsoft** y cambie la configuración a **On**.
+2. Desplácese hacia abajo **hasta Puntuación segura de Microsoft** y cambie la configuración a **Activar**.
 
 3. Seleccione **Guardar preferencias**.
 
@@ -76,25 +76,25 @@ Los datos de la tarjeta Puntuación segura de Microsoft para dispositivos son el
 
 Mejore la configuración de seguridad mediante la corrección de problemas de la lista de recomendaciones de seguridad. Al hacerlo, la puntuación segura de Microsoft para dispositivos mejora y la organización se vuelve más resistente frente a las amenazas y vulnerabilidades de ciberseguridad.
 
-1. En la tarjeta Puntuación segura de Microsoft para dispositivos del panel de Administración de amenazas y vulnerabilidades, seleccione una de las categorías. Verá la lista de recomendaciones relacionadas con esa categoría. Le llevará a la página Recomendaciones [**de**](tvm-security-recommendation.md) seguridad. Si desea ver todas las recomendaciones de seguridad, una vez que llegue a la página Recomendaciones de seguridad, desactive el campo de búsqueda.
+1. En la tarjeta Puntuación segura de Microsoft para dispositivos del panel Administración de amenazas y vulnerabilidades, seleccione una de las categorías. Verá la lista de recomendaciones relacionadas con esa categoría. Le llevará a la página Recomendaciones [**de**](tvm-security-recommendation.md) seguridad. Si desea ver todas las recomendaciones de seguridad, una vez que llegue a la página Recomendaciones de seguridad, desactive el campo de búsqueda.
 
 2. Seleccione un elemento en la lista. El panel desplegable se abrirá con detalles relacionados con la recomendación. Seleccione **Opciones de corrección**.
 
-   :::image type="content" alt-text="Recomendaciones de seguridad relacionadas con controles de seguridad." source="images/security-controls.png":::
+   :::image type="content" source="images/security-controls.png" alt-text="Recomendaciones de seguridad relacionadas con controles de seguridad" lightbox="images/security-controls.png":::
 
 3. Lea la descripción para comprender el contexto del problema y qué hacer a continuación. Seleccione una fecha de vencimiento, agregue notas y **seleccione Exportar** todos los datos de actividad de corrección a CSV para poder adjuntarlos a un correo electrónico para su seguimiento.
 
 4. **Enviar solicitud**. Verá un mensaje de confirmación de que se ha creado la tarea de corrección.
 
-   :::image type="content" alt-text="Confirmación de creación de tareas de corrección." source="images/remediation-task-created.png":::
+   :::image type="content" source="images/remediation-task-created.png" alt-text="Confirmación de creación de tareas de corrección" lightbox="images/remediation-task-created.png":::
 
 5. Guarde el archivo CSV.
 
-   :::image type="content" alt-text="Guardar archivo csv." source="images/tvm_save_csv_file.png":::
+   :::image type="content" source="images/tvm_save_csv_file.png" alt-text="La página que contiene la opción para guardar el archivo CSV" lightbox="images/tvm_save_csv_file.png":::
 
 6. Envíe un correo electrónico de seguimiento a su administrador de TI y permita el tiempo que haya asignado para que la corrección se propague en el sistema.
 
-7. Revisa la **tarjeta Puntuación segura de Microsoft para** dispositivos de nuevo en el panel. El número de recomendaciones de controles de seguridad disminuirá. Cuando selecciona **Controles de seguridad**  para volver a la página Recomendaciones de seguridad, el elemento que ha abordado ya no aparecerá en la lista. La puntuación segura de Microsoft para dispositivos debe aumentar.
+7. Revisa la **tarjeta Puntuación segura de Microsoft para** dispositivos de nuevo en el panel. El número de recomendaciones de controles de seguridad disminuirá. Cuando selecciona **Controles de seguridad** para volver a la página  Recomendaciones de seguridad, el elemento que ha abordado ya no aparecerá en la lista. La puntuación segura de Microsoft para dispositivos debe aumentar.
 
 > [!IMPORTANT]
 >Para aumentar las tasas de detección de evaluación de vulnerabilidades, descargue las siguientes actualizaciones de seguridad obligatorias e impleméntelas en la red:

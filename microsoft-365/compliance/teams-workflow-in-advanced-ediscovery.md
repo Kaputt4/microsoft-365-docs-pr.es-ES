@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo conservar, recopilar, revisar y exportar contenido de Microsoft Teams en Advanced eDiscovery.
-ms.openlocfilehash: 68a255dda7aa9b879c9e608eb99c9575ba691c16
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 9565beea342fe9587195d632fdc94cdc746faf5e
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63716232"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568124"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>Advanced eDiscovery flujo de trabajo de contenido en Microsoft Teams
 
@@ -41,14 +41,13 @@ Hay cinco categorías de contenido Teams que puede recopilar y procesar mediante
 
 Un requisito previo para administrar el contenido Teams en Advanced eDiscovery es comprender el tipo de contenido de Teams que puede recopilar, procesar y revisar en Advanced eDiscovery y dónde se almacena ese contenido en Microsoft 365. En la tabla siguiente se Teams tipo de contenido y dónde se almacena cada uno.
 
-||Ubicación de mensajes y publicaciones de chat  |Ubicación de archivos y datos adjuntos |
-|:---------|:---------|:---------|
-|Teams chats 1:1     |Los mensajes en chats 1:1 se almacenan en el Exchange Online de todos los participantes de chat. |Los archivos compartidos en un chat 1:1 se almacenan en la OneDrive para la Empresa de la persona que compartió el archivo. |
-|Teams chats de grupo     |Los mensajes de los chats de grupo se almacenan en el Exchange Online de todos los participantes de chat. |Los archivos compartidos en chats de grupo se almacenan OneDrive para la Empresa cuenta de la persona que compartió el archivo. |
-|Canales de Teams     |Todos los mensajes y publicaciones de canal se almacenan en el Exchange Online de correo asociado con el equipo.|Los archivos compartidos en un canal se almacenan en el sitio SharePoint online asociado con el equipo.           |
-|Canales privados     |Los mensajes enviados en un canal privado se almacenan en Exchange Online buzones de todos los miembros del canal privado.|Los archivos compartidos en un canal privado se almacenan en un sitio SharePoint online asociado con el canal privado.|
-|Canales compartidos     |Los mensajes enviados en un canal compartido se almacenan en un buzón del sistema asociado al canal compartido. <sup>1</sup>|Los archivos compartidos en un canal compartido se almacenan en un sitio SharePoint online asociado con el canal compartido.|
-||||
+|&nbsp;|Ubicación de mensajes y publicaciones de chat|Ubicación de archivos y datos adjuntos|
+|---|---|---|
+|Teams chats 1:1|Los mensajes en chats 1:1 se almacenan en el Exchange Online de todos los participantes de chat.|Los archivos compartidos en un chat 1:1 se almacenan en la OneDrive para la Empresa de la persona que compartió el archivo.|
+|Teams chats de grupo|Los mensajes de los chats de grupo se almacenan en el Exchange Online de todos los participantes de chat.|Los archivos compartidos en chats de grupo se almacenan OneDrive para la Empresa cuenta de la persona que compartió el archivo.|
+|Canales de Teams|Todos los mensajes y publicaciones de canal se almacenan en el Exchange Online de correo asociado con el equipo.|Los archivos compartidos en un canal se almacenan en el sitio SharePoint online asociado con el equipo.|
+|Canales privados|Los mensajes enviados en un canal privado se almacenan en Exchange Online buzones de todos los miembros del canal privado.|Los archivos compartidos en un canal privado se almacenan en un sitio SharePoint online asociado con el canal privado.|
+|Canales compartidos|Los mensajes enviados en un canal compartido se almacenan en un buzón del sistema asociado al canal compartido. <sup>1</sup>|Los archivos compartidos en un canal compartido se almacenan en un sitio SharePoint online asociado con el canal compartido.|
 
 > [!NOTE]
 > <sup>1</sup> Para buscar (y conservar) mensajes enviados en un canal compartido, debe buscar o especificar el buzón Exchange Online para el equipo primario.
@@ -196,11 +195,10 @@ Cuando el contenido Teams conversaciones de chat se agrega a un conjunto de revi
 
 En la tabla siguiente se describe cómo los diferentes tipos de contenido Teams de chat se agrupan por familia y conversación.
 
-| Teams de contenido|Grupo por familia  |Agrupar por conversación  |
-|:---------|:---------|:---------|
-|Teams 1:1 y chats en grupo   | Una transcripción y todos sus datos adjuntos y elementos extraídos comparten el mismo **FamilyId**. Cada transcripción tiene un **FamilyId único**. |Todos los archivos de transcripción y sus elementos de familia dentro de la misma conversación comparten el mismo **ConversationId**. Esto incluye los siguientes elementos:<br/><br/>  - Todos los elementos y datos adjuntos extraídos de todas las transcripciones que comparten el mismo **ConversationId**. <br/> - Todas las transcripciones de la misma conversación de chat<br/> - Todas las copias de custodia de cada transcripción<br/> - Transcripciones de colecciones posteriores de la misma conversación de chat <br/><br/>  Para Teams 1:1 y conversaciones de chat en grupo, es posible que tenga varios archivos de transcripción, cada uno correspondiente a un período de tiempo diferente dentro de la conversación. Dado que estos archivos de transcripción son de la misma conversación con los mismos participantes, comparten el mismo **ConversationId**.|
-|Chats de canal estándar, privado y compartido    | Cada publicación y todas las respuestas y datos adjuntos se guardan en su propia transcripción. Esta transcripción y todos sus datos adjuntos y elementos extraídos comparten el mismo **FamilyId**.         |Cada publicación y sus datos adjuntos y elementos extraídos tienen un **ConversationId único**. Si hay colecciones posteriores o nuevas respuestas de la misma publicación, las transcripciones delta resultantes de dichas colecciones también tendrán el mismo **ConversationId**.|
-||||
+|Teams de contenido|Grupo por familia|Agrupar por conversación|
+|---|---|---|
+|Teams 1:1 y chats en grupo|Una transcripción y todos sus datos adjuntos y elementos extraídos comparten el mismo **FamilyId**. Cada transcripción tiene un **FamilyId único**.|Todos los archivos de transcripción y sus elementos de familia dentro de la misma conversación comparten el mismo **ConversationId**. Esto incluye los siguientes elementos: <ul><li>Todos los elementos extraídos y los datos adjuntos de todas las transcripciones que comparten el mismo **ConversationId**.</li><li>Todas las transcripciones de la misma conversación de chat</li><li>Todas las copias de custodia de cada transcripción</li><li>Transcripciones de colecciones posteriores de la misma conversación de chat</li></ul> <br/> Para Teams 1:1 y conversaciones de chat en grupo, es posible que tenga varios archivos de transcripción, cada uno correspondiente a un período de tiempo diferente dentro de la conversación. Dado que estos archivos de transcripción son de la misma conversación con los mismos participantes, comparten el mismo **ConversationId**.|
+|Chats de canal estándar, privado y compartido|Cada publicación y todas las respuestas y datos adjuntos se guardan en su propia transcripción. Esta transcripción y todos sus datos adjuntos y elementos extraídos comparten el mismo **FamilyId**.|Cada publicación y sus datos adjuntos y elementos extraídos tienen un **ConversationId único**. Si hay colecciones posteriores o nuevas respuestas de la misma publicación, las transcripciones delta resultantes de dichas colecciones también tendrán el mismo **ConversationId**.|
 
 Use el control **Grupo** en la barra de comandos de un conjunto de revisión para ver Teams contenido agrupado por familia o conversación.
 
@@ -237,11 +235,10 @@ Esta es la lógica usada por Advanced eDiscovery para incluir mensajes adicional
 
 - Consultas que solo usan intervalos de fechas
 
-| Teams de contenido|Consultas con parámetros de búsqueda  |Consultas con intervalos de fechas  |
-|:---------|:---------|:---------|
-|Teams 1:1 y chats en grupo   |Los mensajes que se publicaron 12 horas antes y 12 horas después de que los elementos con capacidad de respuesta se agrupan con el elemento dinámico en un único archivo de transcripción.   |Los mensajes de una ventana de 24 horas se agrupan en un único archivo de transcripción.|
-|Chats de canal estándar, privado Teams compartidos    |Cada publicación que contiene elementos dinámicos y todas las respuestas correspondientes se agrupan en un único archivo de transcripción. |Cada publicación que contiene elementos dinámicos y todas las respuestas correspondientes se agrupan en un único archivo de transcripción.|
-||||
+|Teams de contenido|Consultas con parámetros de búsqueda|Consultas con intervalos de fechas|
+|---|---|---|
+|Teams 1:1 y chats en grupo|Los mensajes que se publicaron 12 horas antes y 12 horas después de que los elementos con capacidad de respuesta se agrupan con el elemento dinámico en un único archivo de transcripción.|Los mensajes de una ventana de 24 horas se agrupan en un único archivo de transcripción.|
+|Chats de canal estándar, privado Teams compartidos|Cada publicación que contiene elementos dinámicos y todas las respuestas correspondientes se agrupan en un único archivo de transcripción.|Cada publicación que contiene elementos dinámicos y todas las respuestas correspondientes se agrupan en un único archivo de transcripción.|
 
 ### <a name="deduplication-of-teams-content"></a>Desduplicación de Teams contenido
 
@@ -267,19 +264,18 @@ En conjuntos de revisión grandes con miles o millones de elementos, puede ser d
 
 En la tabla siguiente se describen las propiedades de metadatos Teams contenido.
 
-|Metadata (propiedad)  |Descripción  |
-|:---------|:---------|
-|ContainsEditedMessage      | Indica si un archivo de transcripción contiene un mensaje editado. Los mensajes editados se identifican al ver el archivo de transcripción.|
+|Metadata (propiedad)|Descripción|
+|---|---|
+|ContainsEditedMessage|Indica si un archivo de transcripción contiene un mensaje editado. Los mensajes editados se identifican al ver el archivo de transcripción.|
 |ConversationId|GUID que identifica la conversación a la que está asociado el elemento. Los archivos de transcripción y los datos adjuntos de la misma conversación tienen el mismo valor para esta propiedad.|
-|Nombre de conversación     | El nombre de la conversación a la que está asociado el archivo de transcripción o los datos adjuntos. Para Teams 1:1 y los chats de grupo, el valor de esta propiedad es el UPN de todos los participantes de la conversación se concatenan. Por ejemplo, `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams chats de canal (estándar, privado y compartido) usan el siguiente formato para el nombre de conversación: `<Team name>,<Channel name>`.Por ejemplo, `eDiscovery vNext, General`.          |
-|ConversationType     | Indica el tipo de chat de equipo. Para Teams 1:1 y chats de grupo, el valor de esta propiedad es `Group`. Para chats de canales estándar, privados y compartidos, el valor es `Channel`.|
-|Fecha | Marca de tiempo del primer mensaje del archivo de transcripción.|
+|Nombre de conversación|El nombre de la conversación a la que está asociado el archivo de transcripción o los datos adjuntos. Para Teams 1:1 y los chats de grupo, el valor de esta propiedad es el UPN de todos los participantes de la conversación se concatenan. Por ejemplo, `User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`. Teams chats de canal (estándar, privado y compartido) usan el siguiente formato para el nombre de conversación: `<Team name>,<Channel name>`.Por ejemplo, `eDiscovery vNext, General`.|
+|ConversationType|Indica el tipo de chat de equipo. Para Teams 1:1 y chats de grupo, el valor de esta propiedad es `Group`. Para chats de canales estándar, privados y compartidos, el valor es `Channel`.|
+|Fecha|Marca de tiempo del primer mensaje del archivo de transcripción.|
 |FamilyId|GUID que identifica el archivo de transcripción de una conversación de chat. Los datos adjuntos tendrán el mismo valor para esta propiedad que el archivo de transcripción que contiene el mensaje al que se adjunta el archivo.|
-|FileClass     |Indica ese tipo de contenido. Los elementos Teams chats tienen el valor `Conversation`. En cambio, Exchange mensajes de correo electrónico tienen el valor `Email`.|          |
-|MessageKind     | La propiedad de tipo de mensaje. Teams contenido tiene el valor `microsoftteams , im`. |
-|Recipientes     | Una lista de todos los usuarios que recibieron un mensaje dentro de la conversación de transcripción.|
-|TeamsChannelName     | El Teams de canal de la transcripción.|
-|||
+|FileClass|Indica ese tipo de contenido. Los elementos Teams chats tienen el valor `Conversation`. En cambio, Exchange mensajes de correo electrónico tienen el valor `Email`.|
+|MessageKind|La propiedad de tipo de mensaje. Teams contenido tiene el valor `microsoftteams , im`.|
+|Recipientes|Una lista de todos los usuarios que recibieron un mensaje dentro de la conversación de transcripción.|
+|TeamsChannelName|El Teams de canal de la transcripción.|
 
 Para obtener descripciones de otras Advanced eDiscovery de metadatos, vea [Campos de metadatos de documento en Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
 

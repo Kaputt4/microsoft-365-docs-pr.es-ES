@@ -1,7 +1,7 @@
 ---
 title: Alertas de servicio MRS
-ms.author: markjjo
-author: markjjo
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: ''
 audience: Admin
@@ -16,18 +16,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Use alertas de servicio de migración de buzones de correo para supervisar retrasos en las solicitudes de migración de buzones de correo en su organización.
-ms.openlocfilehash: 25c569030bd5da914dc6eb7ec0e58ebadfe4d766
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 6b4b618bae602c7c06b2d6371e39cc865d0a3407
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937891"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64567992"
 ---
-# <a name="service-alerts-for-mrs-source-delays-in-exchange-online-monitoring"></a>Alertas de servicio para retrasos de origen MRS en Exchange Online supervisión
+# <a name="service-alerts-for-mrs-source-delays-in-exchange-online-monitoring"></a>Alertas de servicio para retrasos de origen MRS en la supervisión de Exchange Online
 
 Las alertas de servicio de retraso de origen del Servicio de replicación de buzones de correo (MRS) le informan sobre limitaciones de almacenamiento o problemas de uso del procesador alto en el lado del inquilino (origen de migración) que podrían retrasar las migraciones de buzones de correo en su Microsoft 365 organización. Estas alertas de servicio también incluyen vínculos a recursos de Microsoft para ayudarle a resolver estos problemas.
 
-Estas alertas de servicio se muestran en el Centro de administración de Microsoft 365. Para ver estas alertas de servicio, vaya a **Health** Service health Exchange Online y, a  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a>  >  **continuación,** haga clic en la pestaña Problemas **activos.**
+Estas alertas de servicio se muestran en el Centro de administración de Microsoft 365. Para ver estas alertas de servicio, vaya a **Health** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Estado del servicio**</a> >  **Exchange Online y, a continuación**, haga clic en la **pestaña Problemas activos**.
 
 ## <a name="what-do-these-service-alerts-indicate"></a>¿Qué indican estas alertas de servicio?
 
@@ -40,21 +40,21 @@ Esta alerta de servicio le informa de posibles retrasos en las migraciones de bu
 
 En la siguiente lista se describe cada columna del ejemplo anterior.
 
-- **BatchName:** nombre único para el trabajo de migración.
+- **BatchName**: nombre único para el trabajo de migración.
 
-- **ExchangeGuid:** el identificador único global (GUID) del buzón de usuario que se está migrando.
+- **ExchangeGuid**: el identificador único global (GUID) del buzón de usuario que se está migrando.
 
-- **RequestGuid:** GUID de la solicitud de migración.
+- **RequestGuid**: GUID de la solicitud de migración.
 
-- **DelayReason:** el motivo de la migración retrasada.
+- **DelayReason**: el motivo de la migración retrasada.
 
-- **QueueHours:** la duración de la migración se ha puesto en cola y en espera.
+- **QueueHours**: la duración de la migración se ha puesto en cola y en espera.
 
-- **DelayInHours:** la duración de la migración se ha retrasado.
+- **DelayInHours**: la duración de la migración se ha retrasado.
 
-- **SourceServer:** el servidor local desde el que se origina la migración.
+- **SourceServer**: el servidor local desde el que se origina la migración.
 
-- **RemoteDatabaseName:** el nombre de la base de datos desde el que se origina la migración.
+- **RemoteDatabaseName**: el nombre de la base de datos del que se origina la migración.
 
 ## <a name="more-information"></a>Más información
 

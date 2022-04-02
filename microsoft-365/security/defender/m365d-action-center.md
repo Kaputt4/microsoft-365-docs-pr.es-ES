@@ -22,12 +22,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: b64cbc55a975ee02bd1bd5d41d30330e8729d4be
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0bd86f7ba05ce04743f547292105875f3b8234b1
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329577"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499075"
 ---
 # <a name="the-action-center"></a>El Centro de actividades
 
@@ -35,7 +35,7 @@ ms.locfileid: "63329577"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 El Centro de acciones proporciona una experiencia de "panel único de cristal" para las tareas de incidentes y alertas, como:
 
@@ -49,7 +49,7 @@ Dado que el Centro de acciones proporciona una vista completa de Microsoft 365 D
 
 El Centro de acción unificado ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) enumera las acciones de corrección pendientes y completadas para los dispositivos, el correo & de colaboración y las identidades en una ubicación.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="El Centro de acciones unificado en Microsoft 365 Defender portal." lightbox="../../media/m3d-action-center-unified.png":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="El Centro de acciones unificado en el portal Microsoft 365 Defender web." lightbox="../../media/m3d-action-center-unified.png":::
 
 Por ejemplo: 
 

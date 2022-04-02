@@ -22,18 +22,18 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2438e7690230af88eae72e0864184e771bdd4135
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: d77bb5f61127475c8c7c00e58af6c19013aaffe2
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504810"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755422"
 ---
 # <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>Paso 2. Evaluación de Información general sobre identidades de Microsoft Defender
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 > [!NOTE]
 > Este artículo también forma parte de la Microsoft 365 Defender XDR de la que hablamos en esta [introducción](eval-overview.md).
@@ -43,14 +43,12 @@ ms.locfileid: "63504810"
 
 Siga los pasos siguientes para habilitar y pilotar Microsoft Defender para Identity.
 
-![Pasos para agregar Microsoft Defender for Identity al entorno de evaluación de Defender.](../../media/defender/m365-defender-identity-eval-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-eval-steps.png" alt-text="Los pasos para agregar Microsoft Defender for Identity al entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-identity-eval-steps.png":::
 
 En esta tabla se describen los pasos de la ilustración.
 
-| |Paso  |Descripción  |
+| Número de serie|Paso  |Descripción  |
 |---------|---------|---------|
 |1|[Revisar los requisitos de arquitectura y los conceptos clave](eval-defender-identity-architecture.md)    | Comprenda la arquitectura de Defender for Identity y asegúrese de que su entorno cumple los requisitos previos de la arquitectura.       |
 |2|[Habilitar el entorno de evaluación](eval-defender-identity-enable-eval.md)     |   Siga los pasos para configurar el entorno de evaluación.      |
 |3|[Configurar el piloto](eval-defender-identity-pilot.md)     |   Obtenga información sobre la configuración comparativa de su entorno de identidad y pruebe los tutoriales de Defender for Identity.     |
-||||
-

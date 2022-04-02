@@ -18,45 +18,48 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cd087ef92a261904ce43951f2a29bb64639405ac
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: a496e0e293e72821016d6efa5fbd9622f669ab0b
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786041"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755529"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Descripción del esquema de búsqueda avanzada
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Se aplica a:**
-- Microsoft 365 Defender
+
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 El [esquema de búsqueda](advanced-hunting-overview.md) avanzada está hecho de varias tablas que proporcionan información sobre eventos o información sobre dispositivos, alertas, identidades y otros tipos de entidad. Para crear consultas eficaces que abarquen varias tablas, debe comprender las tablas y las columnas del esquema de búsqueda avanzada.
 
-## <a name="get-schema-information-in-the-security-center"></a>Obtener información de esquema en el centro de seguridad
+<a name="get-schema-information-in-the-security-center"></a>
+
+## <a name="get-schema-information"></a>Obtener información de esquema
+
 Al crear consultas, use la referencia de esquema integrado para obtener rápidamente la siguiente información sobre cada tabla del esquema:
 
-- **Descripción de tablas:** tipo de datos contenidos en la tabla y el origen de los datos.
+- **Descripción de tablas**: tipo de datos contenidos en la tabla y el origen de los datos.
 - **Columnas**: todas las columnas de la tabla.
-- **Tipos de acción:** valores posibles en la `ActionType` columna que representan los tipos de evento admitidos por la tabla. Esta información solo se proporciona para las tablas que contienen información de eventos.
+- **Tipos de acción**: valores posibles en la `ActionType` columna que representan los tipos de evento admitidos por la tabla. Esta información solo se proporciona para las tablas que contienen información de eventos.
 - **Consulta de** ejemplo: consultas de ejemplo que ofrecen cómo se puede usar la tabla.
 
 ### <a name="access-the-schema-reference"></a>Obtener acceso a la referencia de esquema
 Para obtener acceso rápidamente a la referencia de esquema, seleccione la acción **Ver** referencia junto al nombre de tabla en la representación del esquema. También puede seleccionar Referencia **de esquema para** buscar una tabla.
 
-![Imagen que muestra cómo obtener acceso a la referencia de esquema en el portal.](../../media/understand-schema-1.png)
+:::image type="content" source="../../media/understand-schema-1.png" alt-text="La página Referencia de esquema de la página Búsqueda avanzada del portal Microsoft 365 Defender búsqueda" lightbox="../../media/understand-schema-1.png":::
 
 ## <a name="learn-the-schema-tables"></a>Obtenga información sobre las tablas de esquema
-A continuación se enumeran todas las tablas del esquema. Cada nombre de tabla está vinculado a una página donde se describen los nombres de las columnas de esa tabla. Los nombres de tabla y columna también se enumeran en el centro de seguridad como parte de la representación del esquema en la pantalla de búsqueda avanzada.
+A continuación se enumeran todas las tablas del esquema. Cada nombre de tabla está vinculado a una página donde se describen los nombres de las columnas de esa tabla. Los nombres de tabla y columna también se enumeran en defender para la nube como parte de la representación del esquema en la pantalla de búsqueda avanzada.
 
 | Nombre de tabla | Descripción |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Archivos, direcciones IP, direcciones URL, usuarios o dispositivos asociados con alertas |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alertas de Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Cloud App Security y Microsoft Defender para Identidad, incluida la información de gravedad y la categorización de amenazas  |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alertas de Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Defender para aplicaciones en la nube y Microsoft Defender para Identidad, incluida información de gravedad y categorización de amenazas  |
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Eventos relacionados con cuentas y objetos en Office 365 y otras aplicaciones y servicios en la nube |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Varios tipos de eventos, incluidos los eventos desencadenados por controles de seguridad como el Antivirus de Windows Defender y la protección contra vulnerabilidades |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | Información de certificados de archivos firmados obtenidos de los eventos de comprobación de certificados en puntos de conexión |

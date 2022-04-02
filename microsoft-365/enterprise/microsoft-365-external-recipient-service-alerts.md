@@ -1,7 +1,7 @@
 ---
 title: Alertas de servicio de destinatarios externos
-ms.author: markjjo
-author: markjjo
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: ''
 audience: Admin
@@ -19,18 +19,18 @@ ms.custom:
 f1.keywords:
 - NOCSH
 description: Use alertas de servicio de destinatarios externos para supervisar los buzones en espera que alcanzan su cuota de buzón.
-ms.openlocfilehash: 931be51ee51bd5557633415004eed9a1c7e77888
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8db8e090ec5430f13153bc3edf5b3315c041d9cf
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331344"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568014"
 ---
 # <a name="service-alerts-for-messages-pending-delivery-to-external-recipients-in-exchange-online-monitoring"></a>Alertas de servicio para mensajes pendientes de entrega a destinatarios externos en Exchange Online supervisión
 
 Las alertas de servicio informan a los administradores de la cola de correo a destinatarios externos fuera de Exchange Online. Estas alertas pueden requerir acciones de corrección que están fuera de Microsoft, pero pueden proporcionarle la información necesaria para corregir.
 
-Estas alertas de servicio se muestran en el Centro de administración de Microsoft 365. Para ver estas alertas de servicio, vaya a **HealthService** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**health**</a> >  Exchange Online y, a **continuación**, haga clic en la **pestaña Problemas activos**. El nombre de estas alertas de servicio es "Message Queueing to External Recipients Above Thresholds".
+Estas alertas de servicio se muestran en el Centro de administración de Microsoft 365. Para ver estas alertas de servicio, vaya a **Health** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Estado del servicio**</a> >  **Exchange Online y, a continuación**, haga clic en la **pestaña Problemas activos**. El nombre de estas alertas de servicio es "Message Queueing to External Recipients Above Thresholds".
 
 ![Alerta de servicio para mensajes pendientes de entrega a destinatarios externos que se muestran en el panel Exchange Online supervisión.](../media/microsoft-365-exchange-monitoring/ExternalRecipientsServiceAlerts1.png)
 

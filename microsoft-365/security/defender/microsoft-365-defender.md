@@ -26,20 +26,20 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 28f50cbd362104ba910ed5560e184036fc7f8703
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 15f4d179d3bc5590e014a15622e462932e8dea7c
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754655"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498723"
 ---
-# <a name="microsoft-365-defender"></a>Microsoft 365 Defender
+# <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 > ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
 >
@@ -83,15 +83,15 @@ Microsoft 365 Defender la capa entre productos única de Microsoft 365 Defender 
 
 Este es un ejemplo de cómo el portal de Microsoft 365 Defender correlaciona todas las alertas relacionadas entre productos en un solo incidente.
 
-:::image type="content" source="../../media/overview-incident.png" alt-text="Ejemplo de una página de información general sobre incidentes" lightbox="../../media/overview-incident.png":::
+:::image type="content" source="../../media/overview-incident.png" alt-text="Página de información general sobre incidentes" lightbox="../../media/overview-incident.png":::
 
 Este es un ejemplo de la lista de alertas relacionadas para un incidente.
 
-:::image type="content" source="../../media/incident-list.png" alt-text="Ejemplo de la lista de alertas de un incidente" lightbox="../../media/incident-list.png":::
+:::image type="content" source="../../media/incident-list.png" alt-text="La lista de alertas de un incidente" lightbox="../../media/incident-list.png":::
 
 Este es un ejemplo de búsqueda basada en consultas en la parte superior de los datos sin procesar de correo electrónico y punto de conexión.
 
-:::image type="content" source="../../media/advanced-hunting.png" alt-text="Ejemplo de búsqueda avanzada y una consulta" lightbox="../../media/advanced-hunting.png":::
+:::image type="content" source="../../media/advanced-hunting.png" alt-text=" La página Búsqueda avanzada con detalles de consulta" lightbox="../../media/advanced-hunting.png":::
 
 Microsoft 365 Defender características entre productos incluyen:
 
@@ -155,11 +155,11 @@ Microsoft 365 Defender enfatiza la *unidad, la claridad* y los objetivos comunes
 
 La centralización de la información de seguridad crea un único lugar para investigar incidentes de seguridad en Microsoft 365. Un ejemplo principal son **los incidentes en** **incidentes & alertas** en el inicio rápido de Microsoft 365 Defender.
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Ejemplo de la página Incidentes en Microsoft 365 Defender" lightbox="../../media/converged-incidents-2.png.png":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="La página Incidentes del portal de Microsoft 365 Defender web" lightbox="../../media/converged-incidents-2.png.png":::
 
 Al seleccionar un nombre de incidente se muestra una página que muestra el valor de centralizar la información de seguridad.
 
-:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Ejemplo de la página Resumen de un incidente en Microsoft 365 Defender" lightbox="../../media/converged-incident-info-3.png":::
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="La página Resumen de un incidente en el portal de Microsoft 365 Defender web" lightbox="../../media/converged-incident-info-3.png":::
 
 En la parte superior de una página de incidentes, verá las pestañas **Resumen****,** Alertas **,** Dispositivos, **Usuarios****,** **Buzones**, **Investigaciones, Evidencia** y respuesta, y **Graph datos.** Seleccione estas pestañas para obtener información más detallada. Por ejemplo, la  pestaña Usuarios muestra información para usuarios de cargas de trabajo convergentes (Microsoft Defender para endpoint, Microsoft Defender para identidades y Microsoft Defender para aplicaciones en la nube) y una variedad de orígenes, como servicios de dominio de Active Directory (AD DS), proveedores de identidades de terceros y Azure AD locales. Para obtener más información, vea [Investigar usuarios](investigate-users.md).
 
@@ -173,11 +173,11 @@ Los controles y el contenido comunes aparecen en el mismo lugar o se condensan e
 
 #### <a name="unified-settings"></a>Configuración unificada
 
-:::image type="content" source="../../media/converged-add-role-9.png" alt-text="La página Configuración del portal de Microsoft 365 Defender web" lightbox="../../media/converged-add-role-9.png":::
+:::image type="content" source="../../media/converged-add-role-9.png" alt-text="La Configuración en el portal de Microsoft 365 Defender web" lightbox="../../media/converged-add-role-9.png":::
 
 #### <a name="permissions--roles"></a>Permisos & roles
 
-:::image type="content" source="../../media/converged-roles-5.png" alt-text="Página Permisos & roles que muestra roles de extremos & grupos, roles y grupos de dispositivos" lightbox="../../media/converged-roles-5.png":::
+:::image type="content" source="../../media/converged-roles-5.png" alt-text="Los roles de extremos & grupos que se muestran en la página Permisos & roles" lightbox="../../media/converged-roles-5.png":::
 
 El acceso a Microsoft 365 Defender se configura con Azure AD globales o mediante roles personalizados. For Defender for Endpoint, see [Assign user access to the Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/assign-portal-access). For Defender for Office 365, see [Permissions in the Centro de cumplimiento de Microsoft 365 and Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
 
@@ -297,7 +297,7 @@ Con esta ruta de aprendizaje de Microsoft Learn, puede comprender Microsoft 365 
 > [Iniciar >](/learn/paths/defender-detect-respond/)
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Novedades de Microsoft 365 Defender](whats-new.md)
 - [Microsoft Defender para Office 365 en Microsoft 365 Defender](microsoft-365-security-center-mdo.md)

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: adaf1a7798c9e2e7b016a85577c1f62995a7a78e
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 4fff094b06dfa265f9fc44c568216582083ce1d9
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172060"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755476"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>Piloto de Microsoft Defender para punto de conexión
 
@@ -34,7 +34,7 @@ Este artículo le guiará en el proceso de ejecución de un piloto para Microsof
 
 Siga estos pasos para configurar y configurar el piloto de Microsoft Defender para endpoint. 
 
-![Pasos para agregar Microsoft Defender for Identity al entorno de evaluación de Defender.](../../media/defender/m365-defender-endpoint-pilot-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-pilot-steps.png" alt-text="Los pasos para agregar Microsoft Defender for Identity al entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-pilot-steps.png":::
 
 - Paso 1. Comprobar grupo piloto
 - Paso 2. Probar funcionalidades
@@ -44,7 +44,7 @@ Cuando pilote Microsoft Defender para Endpoint, puede optar por incorporar algun
 A continuación, puedes probar las funcionalidades disponibles, como ejecutar simulaciones de ataques y ver cómo Defender for Endpoint muestra actividades malintencionadas y te permite llevar a cabo una respuesta eficaz. 
 
 ## <a name="step-1-verify-pilot-group"></a>Paso 1. Comprobar grupo piloto
-Después de completar los pasos de [](eval-defender-endpoint-enable-eval.md) incorporación descritos en la sección Habilitar evaluación, debes ver los dispositivos en la lista inventario de dispositivos aproximadamente después de una hora. 
+Después de completar los pasos de incorporación descritos en la sección [](eval-defender-endpoint-enable-eval.md) Habilitar evaluación, debes ver los dispositivos en la lista inventario de dispositivos aproximadamente después de una hora. 
 
 Cuando veas los dispositivos incorporados, puedes continuar con las funciones de probar. 
 
@@ -62,28 +62,28 @@ El inventario de dispositivos es donde verá la lista de puntos de conexión, di
 La amenaza administración de vulnerabilidades ayuda a centrarse en las debilidades que representan el riesgo más urgente y más alto para la organización. Desde el panel, obtenga una vista de alto nivel de la puntuación de exposición de la organización, puntuación segura de Microsoft para dispositivos, distribución de exposición de dispositivos, recomendaciones de seguridad superiores, software vulnerable superior, actividades de corrección superior y datos de dispositivos expuestos superiores. 
 
 ### <a name="run-a-simulation"></a>Ejecutar una simulación
-Microsoft Defender para endpoint viene con escenarios de ataque ["Do It Yourself"](https://securitycenter.windows.com/tutorials) que puedes ejecutar en tus dispositivos piloto.  Cada documento incluye requisitos de sistema operativo y aplicación, así como instrucciones detalladas específicas para un escenario de ataque. Estos scripts son seguros, documentados y fáciles de usar. Estos escenarios reflejarán las capacidades de Defender for Endpoint y le ayudarán a través de la experiencia de investigación.
+Microsoft Defender para endpoint viene con [escenarios de ataque "Do It Yourself"](https://securitycenter.windows.com/tutorials) que puedes ejecutar en tus dispositivos piloto.  Cada documento incluye requisitos de sistema operativo y aplicación, así como instrucciones detalladas específicas para un escenario de ataque. Estos scripts son seguros, documentados y fáciles de usar. Estos escenarios reflejarán las capacidades de Defender for Endpoint y le ayudarán a través de la experiencia de investigación.
 
-Para ejecutar cualquiera de las simulaciones proporcionadas, necesita al menos [un dispositivo incorporado](../defender-endpoint/onboard-configure.md).
+Para ejecutar cualquiera de las simulaciones proporcionadas, necesitas al menos [un dispositivo incorporado](../defender-endpoint/onboard-configure.md).
 
-1. En **help**  >  **simulations & tutoriales**, seleccione cuál de los escenarios de ataque disponibles desea simular:
+1. En **HelpSimulations** >  & tutoriales, seleccione cuál de los escenarios de ataque disponibles desea simular:
 
-   - **Escenario 1: El documento deja la puerta trasera:** simula la entrega de un documento de señuelo de ingeniería social. El documento inicia una puerta trasera especialmente diseñada que proporciona control a los atacantes.
+   - **Escenario 1: El documento deja la puerta trasera** : simula la entrega de un documento de señuelo de ingeniería social. El documento inicia una puerta trasera especialmente diseñada que proporciona control a los atacantes.
 
-   - **Escenario 2: Script** de PowerShell en ataque sin archivos: simula un ataque sin archivos que se basa en PowerShell, que muestra la reducción de superficie de ataque y la detección de aprendizaje de dispositivos de actividad de memoria malintencionada.
+   - **Escenario 2: Script de PowerShell** en ataque sin archivos: simula un ataque sin archivos que se basa en PowerShell, que muestra la reducción de superficie de ataque y la detección de aprendizaje de dispositivos de actividad de memoria malintencionada.
 
-   - **Escenario 3: Respuesta** automatizada a incidentes: desencadena la investigación automatizada, que busca y corrige automáticamente artefactos de infracción para escalar la capacidad de respuesta a incidentes.
+   - **Escenario 3: Respuesta automatizada a incidentes:** desencadena la investigación automatizada, que busca y corrige automáticamente artefactos de infracción para escalar la capacidad de respuesta a incidentes.
 
 2. Descargue y lea el documento de tutorial correspondiente proporcionado con el escenario seleccionado.
 
-3. Descargue el archivo de simulación o copie el script de simulación navegando a **Help**  >  **Simulations & tutoriales**. Puedes elegir descargar el archivo o script en el dispositivo de prueba, pero no es obligatorio.
+3. Descargue el archivo de simulación o copie el script de simulación navegando a **HelpSimulations** >  & tutoriales. Puedes elegir descargar el archivo o script en el dispositivo de prueba, pero no es obligatorio.
 
 4. Ejecute el archivo de simulación o el script en el dispositivo de prueba como se indica en el documento del tutorial.
 
 > [!NOTE]
 > Los archivos de simulación o scripts imitan la actividad de ataque, pero en realidad son benignos y no dañan ni comprometen el dispositivo de prueba.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 [Evaluar Microsoft Defender para aplicaciones en la nube](eval-defender-mcas-overview.md)
 
 Vuelva a la introducción a [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)

@@ -22,18 +22,18 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 24600644e08bdc2b0a208d68d6da1078543bd2bd
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 05dbf222762837f2916a76cc5b183a99cd981101
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325955"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755113"
 ---
 # <a name="step-4-evaluate-microsoft-defender-for-endpoint-overview"></a>Paso 4. Evaluación de Información general sobre puntos de conexión de Microsoft Defender
 
 **Se aplica a:**
 
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 
 En este artículo se describe el proceso para habilitar y pilotar Microsoft Defender para endpoint. Antes de iniciar este proceso, asegúrese de haber revisado el proceso general para evaluar Microsoft 365 Defender [](eval-overview.md) y de haber creado el entorno [Microsoft 365 Defender evaluación.](eval-create-eval-environment.md) 
@@ -41,7 +41,7 @@ En este artículo se describe el proceso para habilitar y pilotar Microsoft Defe
 
 Siga estos pasos para habilitar y pilotar Microsoft Defender para endpoint.
 
-![Pasos para agregar Microsoft Defender para endpoint al entorno de evaluación de Defender.](../../media/defender/m365-defender-endpoint-eval-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-steps.png" alt-text="Pasos para agregar Microsoft Defender para endpoint al entorno de evaluación de Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-eval-steps.png":::
 
 
 En la tabla siguiente se describen los pasos de la ilustración.
@@ -50,6 +50,4 @@ En la tabla siguiente se describen los pasos de la ilustración.
 |---------|---------|
 | [Paso 1. Revisar los requisitos de arquitectura y los conceptos clave](eval-defender-endpoint-architecture.md)    | Comprenda la arquitectura de Defender for Endpoint y las capacidades disponibles para usted.       |
 |[Paso 2. Habilitar el entorno de evaluación](eval-defender-endpoint-enable-eval.md)     |   Siga los pasos para configurar el entorno de evaluación.      |
-|[Paso 3. Configurar el piloto ](eval-defender-endpoint-pilot.md)    |    Compruebe el grupo piloto, ejecute simulaciones y familiarícese con las características y paneles clave.     |
-
-
+|[Paso 3. Configurar el piloto ](eval-defender-endpoint-pilot.md)    |    Compruebe el grupo piloto, ejecute simulaciones y familiarícese con las características y paneles clave. |

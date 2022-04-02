@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c3b86a133b5126029378018fdac821d5423b2761
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c31a6e43e66b6e1ffeace75ac2d8419cc764174f
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321869"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499141"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Preparar la posición de seguridad para el primer incidente
 
@@ -59,7 +59,7 @@ La automatización es una parte fundamental de la implementación y el mantenimi
 
 A continuación, las organizaciones pueden usar la puntuación segura de [Microsoft](microsoft-secure-score.md) en Microsoft 365 Defender para determinar la posición de seguridad actual y considerar recomendaciones sobre cómo mejorarla. Cuanto mayor sea la puntuación, más recomendaciones de seguridad y acciones de mejora han sido tomadas por la organización. Las recomendaciones de puntuación segura se pueden tomar en diferentes productos y permitir que las organizaciones eleven sus puntuaciones incluso más alto. 
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Ejemplo de Puntuación segura de Microsoft en el Centro de seguridad de Microsoft.":::
+:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Página Puntuación segura de Microsoft en el portal de Microsoft 365 Defender seguridad" lightbox="../../media/first-incident-prepare/first-incident-secure-score.png":::
  
 ## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>Paso 3. Evaluar la exposición a vulnerabilidades de su organización
 
@@ -67,7 +67,7 @@ La prevención de incidentes puede ayudar a simplificar los esfuerzos de las ope
 
 Para comprobar el progreso de la revisión de software [](../defender-endpoint/next-gen-threat-and-vuln-mgt.md), visita la página Administración de amenazas y vulnerabilidades de Defender for Endpoint, a la que puedes acceder desde Microsoft 365 Defender a través de la pestaña **Más recursos.**
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Ejemplo de la página Amenaza y vulnerabilidad en el Centro de seguridad de Microsoft."::: 
+:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="La página Amenaza y vulnerabilidad del portal de Microsoft 365 Defender web" lightbox="../../media/first-incident-prepare/first-incident-vulnerability.png"::: 
  
 ## <a name="4-understand-emerging-threats"></a>4. Comprender las amenazas emergentes
 
@@ -91,7 +91,7 @@ Haga tiempo en su programación para comprobar periódicamente la sección [Aná
 
 Obtenga información sobre [cómo triage and analyze incidents](first-incident-analyze.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

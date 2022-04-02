@@ -22,12 +22,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5e1b841c5638bf9228efc844daa58d1d1e170726
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: bf7592055e58f10a3680e6ee712c597780591a47
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754761"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498591"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Ejecutar una simulación de ataque en un Microsoft 365 Defender piloto
 
@@ -195,7 +195,7 @@ Al cambiar al punto de vista del analista soc, ahora puede empezar a investigar 
 
 3. El nuevo incidente del ataque simulado aparecerá en la cola de incidentes.
 
-   :::image type="content" source="../../media/mtp/fig2.png" alt-text="La cola incidentes en el portal de Microsoft 365 Defender incidentes" lightbox="../../media/mtp/fig2.png":::
+   :::image type="content" source="../../media/mtp/fig2.png" alt-text="Un ejemplo de la cola Incidentes" lightbox="../../media/mtp/fig2.png":::
 
 #### <a name="investigate-the-attack-as-a-single-incident"></a>Investigar el ataque como un solo incidente
 
@@ -226,7 +226,7 @@ Veamos algunas de las alertas generadas durante el ataque simulado.
 > [!NOTE]
 > Solo recorreremos algunas de las alertas generadas durante el ataque simulado. Según la versión de Windows y los productos Microsoft 365 Defender que se ejecutan en el dispositivo de prueba, es posible que veas más alertas que aparecen en un orden ligeramente diferente.
 
-:::image type="content" source="../../media/mtp/fig6.png" alt-text="Alerta generada en el portal de Microsoft 365 Defender datos" lightbox="../../media/mtp/fig6.png":::
+:::image type="content" source="../../media/mtp/fig6.png" alt-text="Un ejemplo de una alerta generada" lightbox="../../media/mtp/fig6.png":::
 
 ##### <a name="alert-suspicious-process-injection-observed-source-microsoft-defender-for-endpoint"></a>Alerta: Se observó una inyección de proceso sospechosa (Origen: Microsoft Defender para endpoint)
 
@@ -234,7 +234,7 @@ Los atacantes avanzados usan métodos sofisticados y furtivos para conservar la 
 
 Para permitir que los analistas de SOC puedan detectar estos ataques avanzados, los sensores de memoria profunda de Microsoft Defender para endpoint proporcionan a nuestro servicio en la nube una visibilidad sin precedentes de una variedad de técnicas de inyección de código entre procesos. En la siguiente figura se muestra cómo Defender for Endpoint detectó y alertó sobre el intento de insertar código en <i>notepad.exe</i>.
 
-:::image type="content" source="../../media/mtp/fig7.png" alt-text="Una alerta para la inyección de código potencialmente malintencionado en el portal Microsoft 365 Defender web" lightbox="../../media/mtp/fig7.png":::
+:::image type="content" source="../../media/mtp/fig7.png" alt-text="Un ejemplo de la alerta para la inyección de un código potencialmente malintencionado" lightbox="../../media/mtp/fig7.png":::
 
 ##### <a name="alert-unexpected-behavior-observed-by-a-process-run-with-no-command-line-arguments-source-microsoft-defender-for-endpoint"></a>Alerta: comportamiento inesperado observado por un proceso ejecutado sin argumentos de línea de comandos (Source: Microsoft Defender for Endpoint)
 
@@ -251,12 +251,11 @@ Tenga en cuenta que los detalles de la alerta incluyen la dirección IP externa,
 
 Seleccione la dirección IP en el árbol del proceso de alerta para ver la página de detalles de la dirección IP.
 
-:::image type="content" source="../../media/mtp/fig8.png" alt-text="Una alerta de comportamiento inesperado por un proceso ejecutado sin argumentos de línea de comandos en el portal Microsoft 365 Defender comandos" lightbox="../../media/mtp/fig8.png":::
+:::image type="content" source="../../media/mtp/fig8.png" alt-text="Un ejemplo de comportamiento inesperado de un proceso ejecutado sin argumentos de línea de comandos" lightbox="../../media/mtp/fig8.png":::
 
 En la siguiente figura se muestra la página de detalles de dirección IP seleccionada (haciendo clic en dirección IP en el árbol de proceso alerta).
 
-:::image type="content" source="../../media/mtp/fig9.png" alt-text="La página de detalles de la dirección IP en el portal Microsoft 365 Defender direcciones IP" lightbox="../../media/mtp/fig9.png":::
-
+:::image type="content" source="../../media/mtp/fig9.png" alt-text="Un ejemplo de la página de detalles de la dirección IP" lightbox="../../media/mtp/fig9.png":::
 
 ##### <a name="alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity"></a>Alerta: Reconocimiento de direcciones IP y de usuario (SMB) (Origen: Microsoft Defender para la identidad)
 
@@ -264,7 +263,7 @@ La enumeración mediante el protocolo bloque de mensajes de servidor (SMB) permi
 
 En esta detección, se desencadena una alerta cuando la enumeración de sesión SMB se ejecuta en un controlador de dominio.
 
-:::image type="content" source="../../media/mtp/fig10.png" alt-text="Alerta de Identidad de Microsoft Defender para reconocimiento de direcciones IP y de usuario en el portal Microsoft 365 Defender web" lightbox="../../media/mtp/fig10.png":::
+:::image type="content" source="../../media/mtp/fig10.png" alt-text="Un ejemplo de alerta de Identidad de Microsoft Defender para reconocimiento de direcciones IP y de usuario" lightbox="../../media/mtp/fig10.png":::
 
 #### <a name="review-the-device-timeline-with-microsoft-defender-for-endpoint"></a>Revisar la escala de tiempo del dispositivo con Microsoft Defender para endpoint
 
@@ -274,13 +273,13 @@ Selecciona el nombre del dispositivo donde se realizó el ataque para abrir la p
 
 Selecciona la **pestaña** Escala de tiempo para abrir la escala de tiempo del dispositivo y ver todos los eventos y comportamientos observados en el dispositivo en orden cronológico, intercalados con las alertas generadas.
 
-:::image type="content" source="../../media/mtp/fig11.png" alt-text="La sección Escala de tiempo del dispositivo en el portal Microsoft 365 Defender dispositivo" lightbox="../../media/mtp/fig11.png":::
+:::image type="content" source="../../media/mtp/fig11.png" alt-text="Un ejemplo de la escala de tiempo del dispositivo con comportamientos" lightbox="../../media/mtp/fig11.png":::
 
 La expansión de algunos de los comportamientos más interesantes proporciona detalles útiles, como árboles de proceso.
 
 Por ejemplo, desplácese hacia abajo hasta que encuentre el evento de alerta **Se observó la inyección de proceso sospechoso**. Seleccione el **powershell.exe para** notepad.exe de proceso debajo de él, para mostrar el árbol de proceso completo para este comportamiento en el gráfico Entidades **de** eventos en el panel lateral. Use la barra de búsqueda para filtrar si es necesario.
 
-:::image type="content" source="../../media/mtp/fig12.png" alt-text="Árbol de proceso de un comportamiento de creación de archivos de PowerShell seleccionado en el portal de Microsoft 365 Defender archivos" lightbox="../../media/mtp/fig12.png":::
+:::image type="content" source="../../media/mtp/fig12.png" alt-text="Un ejemplo del árbol de proceso para el comportamiento de creación de archivos de PowerShell seleccionado" lightbox="../../media/mtp/fig12.png":::
 
 #### <a name="review-the-user-information-with-microsoft-defender-for-cloud-apps"></a>Revisar la información del usuario con Microsoft Defender para aplicaciones en la nube
 
@@ -288,7 +287,7 @@ En la página incidente, seleccione la **pestaña Usuarios** para mostrar la lis
 
 Seleccione el nombre de usuario para abrir la página de perfil del usuario donde se puede llevar a cabo una investigación adicional. [Obtenga más información sobre cómo investigar usuarios riesgosos](/cloud-app-security/tutorial-ueba#identify).
 
-:::image type="content" source="../../media/mtp/fig13.png" alt-text="La página de usuario defender para aplicaciones en la nube en el portal de Microsoft 365 Defender web" lightbox="../../media/mtp/fig13.png":::
+:::image type="content" source="../../media/mtp/fig13.png" alt-text="Página de usuario de Defender para Aplicaciones en la nube" lightbox="../../media/mtp/fig13.png":::
 
 #### <a name="automated-investigation-and-remediation"></a>Investigación y corrección automatizadas
 
@@ -299,7 +298,7 @@ Seleccione el nombre de usuario para abrir la página de perfil del usuario dond
 
 Vuelva al incidente en el portal de Microsoft 365 Defender web. La **pestaña Investigaciones** **de la página** Incidentes muestra las investigaciones automatizadas desencadenadas por Microsoft Defender para Identity y Microsoft Defender para endpoint. La captura de pantalla siguiente muestra solo la investigación automatizada desencadenada por Defender for Endpoint. De forma predeterminada, Defender para endpoint corrige automáticamente los artefactos encontrados en la cola, lo que requiere corrección.
 
-:::image type="content" source="../../media/mtp/fig14.png" alt-text="Sección de investigaciones automatizadas relacionadas con el incidente en el portal Microsoft 365 Defender web" lightbox="../../media/mtp/fig14.png":::
+:::image type="content" source="../../media/mtp/fig14.png" alt-text="Un ejemplo de las investigaciones automatizadas relacionadas con el incidente" lightbox="../../media/mtp/fig14.png":::
 
 Seleccione la alerta que desencadenó una investigación para abrir la **página Detalles de la** investigación. Verá los siguientes detalles:
 
@@ -311,7 +310,7 @@ Seleccione la alerta que desencadenó una investigación para abrir la **página
 > [!NOTE]
 > Según el tiempo, es posible que la investigación automatizada aún se esté ejecutando. Espere unos minutos a que se complete el proceso antes de recopilar y analizar la evidencia y revisar los resultados. Actualice la **página Detalles de investigación** para obtener los resultados más recientes.
 
-:::image type="content" source="../../media/mtp/fig15.png" alt-text="La página Detalles de la investigación en el portal Microsoft 365 Defender investigación" lightbox="../../media/mtp/fig15.png":::
+:::image type="content" source="../../media/mtp/fig15.png" alt-text="Un ejemplo de la página de detalles de investigación" lightbox="../../media/mtp/fig15.png":::
 
 Durante la investigación automatizada, Microsoft Defender para Endpoint identificó el proceso notepad.exe, que se inyectó como uno de los artefactos que requerían corrección. Defender for Endpoint detiene automáticamente la inyección de procesos sospechosos como parte de la corrección automatizada.
 
@@ -323,7 +322,7 @@ Una vez completada la investigación y confirmada su corrección, resolverá el 
 
 En la **página** Incidente, seleccione **Administrar incidente**. Establezca el estado en **Resolver incidente** y seleccione **Alerta verdadera** para la clasificación y **pruebas de seguridad** para la determinación.
 
-:::image type="content" source="../../media/mtp/fig16.png" alt-text="El panel Administrar incidentes con capacidad para resolver incidentes en el portal Microsoft 365 Defender incidentes" lightbox="../../media/mtp/fig16.png":::
+:::image type="content" source="../../media/mtp/fig16.png" alt-text="Un ejemplo de la página incidentes con el panel administrar incidentes abierto donde puede hacer clic en el modificador para resolver incidentes" lightbox="../../media/mtp/fig16.png":::
 
 Cuando se resuelve el incidente, resuelve todas las alertas asociadas en el portal Microsoft 365 Defender y los portales relacionados.
 

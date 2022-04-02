@@ -22,17 +22,17 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ca2c69ac244ee70ce5342f56182499430b05e821
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: febf0b1a23d8b9f9e18e1c08ba3af50914fbd2ba
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327957"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498547"
 ---
 # <a name="step-5-evaluate-microsoft-defender-for-cloud-apps"></a>Paso 5. Evaluar Microsoft Defender para aplicaciones en la nube
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 
 En este artículo se describe el proceso para habilitar y piloto Microsoft Defender para aplicaciones en la nube junto con Microsoft 365 Defender. Antes de iniciar este proceso, asegúrese de haber revisado el proceso general para evaluar Microsoft 365 Defender [](eval-overview.md) y de haber creado el entorno [Microsoft 365 Defender evaluación.](eval-create-eval-environment.md) 
@@ -40,9 +40,7 @@ En este artículo se describe el proceso para habilitar y piloto Microsoft Defen
 
 Siga estos pasos para habilitar y pilotar Microsoft Defender para aplicaciones en la nube.
 
-![Pasos para agregar Microsoft Defender para Office al entorno de evaluación de Defender.](../../media/defender/m365-defender-office-eval-steps.png)
-
-
+:::image type="content" source="../../media/defender/m365-defender-office-eval-steps.png" alt-text="Los pasos para agregar Microsoft Defender para Office al entorno de evaluación de Defender" lightbox="../../media/defender/m365-defender-office-eval-steps.png":::
 
 |Paso  |Descripción  |
 |---------|---------|

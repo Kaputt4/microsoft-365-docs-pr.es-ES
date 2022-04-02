@@ -23,19 +23,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 38bfde92a2988cd8bdbca770402af96a4b9c5134
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 40178e42737bdfea756db55658aaeb988ad4f19f
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321843"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498745"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorizar incidentes en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Microsoft 365 Defender aplica análisis de correlación y agrega alertas relacionadas e investigaciones automatizadas de diferentes productos en un incidente. Microsoft 365 Defender activa alertas únicas en actividades que solo se pueden identificar como malintencionadas dada la visibilidad de un extremo a otro que Microsoft 365 Defender en todo el conjunto de productos. Esta vista proporciona a los analistas de seguridad la historia de ataques más amplia, lo que les ayuda a comprender mejor y tratar las amenazas complejas en toda la organización.
 
@@ -43,7 +43,7 @@ La **cola Incidentes muestra** una colección de incidentes que se crearon en di
 
 Puede acceder a la cola de incidentes desde **Incidentes & alertas > incidentes** en el inicio rápido del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender incidentes</a>. Por ejemplo:
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Ejemplo de la cola de incidentes." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="La sección Incidentes que muestra la cola de incidentes en el portal de Microsoft 365 Defender incidentes." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 La **sección Incidentes y alertas** más recientes muestra un gráfico del número de alertas recibidas e incidentes creados en las últimas 24 horas.
 
@@ -66,7 +66,7 @@ La **lista Filtros** que se encuentra encima de la lista de incidentes muestra l
 
 En la cola de incidentes predeterminada, puede seleccionar **Filtrar** para ver un  panel Filtro, desde el que se especifica un conjunto filtrado de incidentes. Por ejemplo:
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Ejemplo del panel de filtros de la cola de incidentes." lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Panel Filtros para la cola de incidentes en el portal Microsoft 365 Defender incidentes." lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
 También puede ver el panel **Filtro** seleccionando cualquiera de los filtros de la lista **Filtros encima de** la lista de incidentes.
 
@@ -133,14 +133,14 @@ La lista predeterminada de incidentes es para los que se produjeron en los últi
  - 6 meses
  - Un intervalo personalizado en el que puede especificar fechas y horas
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de determinar qué incidente requiere la prioridad más alta, selecciónelo y:
 
 - [Administrar](manage-incidents.md) las propiedades del incidente para etiquetas, asignación, resolución inmediata de incidentes falsos positivos y comentarios.
 - Comience las [investigaciones](investigate-incidents.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)
 - [Investigar incidentes](investigate-incidents.md)

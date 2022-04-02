@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e0cde3a8a852fab426c1e0bf0290f9785aa0b40
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 83e7bd2cc46469cb6a5a6bc8c29a8d21dba20b7f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61896410"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466199"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Administrar alertas de Microsoft Defender para puntos de conexión
 
@@ -33,13 +33,13 @@ ms.locfileid: "61896410"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
 
-Defender for Endpoint le notifica posibles eventos malintencionados, atributos e información contextual a través de alertas. En el panel de operaciones de seguridad se muestra un resumen de las alertas nuevas y se puede obtener acceso a todas las alertas de la cola **De alertas.**
+Defender for Endpoint le notifica posibles eventos malintencionados, atributos e información contextual a través de alertas. En el panel de operaciones de seguridad se muestra un resumen de las alertas **nuevas y se** puede obtener acceso a todas las alertas de la **cola de alertas**.
 
-Puedes administrar alertas seleccionando una alerta en  la cola de alertas **o** en la pestaña Alertas de la página Dispositivo de un dispositivo individual.
+Puedes administrar alertas seleccionando una alerta en la cola de alertas **o en** la pestaña Alertas de la página Dispositivo de un dispositivo individual.
 
-Al seleccionar una alerta en cualquiera de esos lugares, se muestra el panel **de administración de alertas**.
+Al seleccionar una alerta en cualquiera de esos lugares, se abre el **panel administración de alertas**.
 
-![Imagen del panel de administración de alertas y la cola de alertas.](images/atp-alerts-selected.png)
+:::image type="content" source="images/atp-alerts-selected.png" alt-text="El panel administración de alertas y la cola Alertas" lightbox="images/atp-alerts-selected.png":::
 
 ## <a name="link-to-another-incident"></a>Vincular a otro incidente
 
@@ -75,7 +75,7 @@ Puede usar los ejemplos de la tabla siguiente para ayudarle a elegir el contexto
 
 Cree reglas personalizadas para controlar cuándo se suprimen o resuelven las alertas. Puede controlar el contexto para cuando se suprime una alerta especificando el título de la alerta, el indicador de compromiso y las condiciones. Después de especificar el contexto, podrá configurar la acción y el ámbito en la alerta.
 
-1. Seleccione la alerta que desea suprimir. Esto muestra el panel **administración de alertas.**
+1. Seleccione la alerta que desea suprimir. Esto muestra el panel **administración de alertas** .
 
 2. Seleccione **Crear una regla de supresión**.
 
@@ -102,7 +102,7 @@ Cree reglas personalizadas para controlar cuándo se suprimen o resuelven las al
 
 #### <a name="view-the-list-of-suppression-rules"></a>Ver la lista de reglas de supresión
 
-1. En el panel de navegación, **seleccione Configuración** \> **supresión de alertas**.
+1. En el panel de navegación, seleccione **Configuración** \> **supresión de alertas**.
 
 2. La lista de reglas de supresión muestra todas las reglas que los usuarios de la organización han creado.
 
@@ -110,11 +110,11 @@ Para obtener más información sobre la administración de reglas de supresión,
 
 ## <a name="change-the-status-of-an-alert"></a>Cambiar el estado de una alerta
 
-Puede clasificar las alertas (como **Nuevo**, **En curso** o **Resuelto)** cambiando su estado a medida que avanza la investigación. Esto te ayuda a organizar y administrar cómo tu equipo puede responder a las alertas.
+Puede clasificar las alertas (como **Nuevo**, **En curso** o **Resuelto**) cambiando su estado a medida que avanza la investigación. Esto te ayuda a organizar y administrar cómo tu equipo puede responder a las alertas.
 
 Por ejemplo, un jefe de equipo puede revisar todas las **alertas** Nuevas y decidir asignarlas a la cola **En** curso para un análisis posterior.
 
-Como alternativa, el jefe de equipo  puede asignar la alerta a la cola Resuelto si sabe que la alerta es benigna, procedente de un dispositivo que es irrelevante (por ejemplo, uno que pertenece a un administrador de seguridad) o que se trata a través de una alerta anterior.
+Como alternativa, el jefe de equipo puede asignar la alerta a  la cola Resuelto si sabe que la alerta es benigna, procedente de un dispositivo que es irrelevante (por ejemplo, uno que pertenece a un administrador de seguridad) o que se trata a través de una alerta anterior.
 
 ## <a name="alert-classification"></a>Clasificación de alerta
 
