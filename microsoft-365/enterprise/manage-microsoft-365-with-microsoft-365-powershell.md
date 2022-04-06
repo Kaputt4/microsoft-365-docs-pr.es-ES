@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 search.appverid:
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: Obtenga información sobre cómo administrar Microsoft 365 usuarios, licencias y 365 aplicaciones con PowerShell.
-ms.openlocfilehash: 298955f37e3f29843a7efeaf1bdf8ce6f40862fc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2fedef0edc9effc73ffbfbd678905e0b8276df8f
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150587"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681246"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>Administrar Microsoft 365 con PowerShell
 
@@ -34,9 +34,9 @@ PowerShell para Microsoft 365 es una herramienta de administración eficaz que c
 
 Seleccione entre los siguientes temas para obtener información sobre cómo usar PowerShell para administrar Microsoft 365:
   
-- [**Introducción**](getting-started-with-microsoft-365-powershell.md)
+- [**Comenzar**](getting-started-with-microsoft-365-powershell.md)
 
-    Comience aquí si no está familiarizado con PowerShell para Microsoft 365 y desea instalar los módulos Microsoft 365 y conectarse a la suscripción.
+    Comience aquí si no está familiarizado con PowerShell para Microsoft 365 y desea instalar los módulos de Microsoft 365 y conectarse a la suscripción.
 
 - [**Cuentas de usuario, licencias y grupos**](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
 
@@ -48,7 +48,7 @@ Seleccione entre los siguientes temas para obtener información sobre cómo usar
 
 - [**Exchange Online**](/powershell/exchange/exchange-online-powershell)
 
-    Comience aquí si desea administrar el Exchange Online.
+    Comience aquí si desea administrar Exchange Online.
 
 - [**Migración de correo**](use-powershell-for-email-migration-to-microsoft-365.md)
 

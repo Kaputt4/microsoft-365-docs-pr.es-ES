@@ -13,12 +13,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3ff727f95dd62c205cee7e9606cb024a5ea88bda
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: ccef3ec748983db89b6ceca9b8092eafbef0d899
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074659"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472625"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Instalación de dispositivos de control de dispositivos de Microsoft Defender para endpoint
 
@@ -32,7 +32,7 @@ La instalación de dispositivos de control de dispositivos de Endpoint Defender 
 - Permitir que las personas instalen dispositivos específicos pero evitar que otros dispositivos.
 
 > [!NOTE]
-> Para encontrar la diferencia entre la instalación de dispositivos y el control de acceso de almacenamiento extraíble, consulta Microsoft Defender para Endpoint [Device Control Removable Storage Protection](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true).
+> Para encontrar la diferencia entre la instalación del dispositivo y el control de acceso de almacenamiento extraíble, consulta [Microsoft Defender para Endpoint Device Control Removable Storage Protection](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true).
 
 |Privilegio|Permiso|
 |---|---|
@@ -56,45 +56,45 @@ Las siguientes propiedades del dispositivo son compatibles con la instalación d
 - Id. compatible
 - Clase device
 - Tipo de dispositivo "Dispositivo extraíble": algunos dispositivos pueden clasificarse como dispositivo extraíble. Un dispositivo se considera extraíble cuando el controlador del dispositivo al que está conectado indica que el dispositivo es extraíble. Por ejemplo, los controladores del concentrador USB al que está conectado el dispositivo informan de que un dispositivo USB es extraíble.
-Para obtener más información, consulta [Instalación del dispositivo en Windows](/windows/client-management/manage-device-installation-with-group-policy).
+Para obtener más información, consulta [Instalación de dispositivos en Windows](/windows/client-management/manage-device-installation-with-group-policy).
 
 ## <a name="policies"></a>Directivas
 
 ### <a name="allow-installation-of-devices-that-match-any-of-these-device-ids"></a>Permitir la instalación de dispositivos que coincidan con cualquiera de estos IDs de dispositivo
 
-Esta configuración de directiva le permite especificar una lista de los IDs de hardware plug and play y los IDs compatibles para dispositivos que Windows pueden instalar. Esta configuración de directiva está diseñada para usarse solo cuando la configuración de directiva Aplicar orden de evaluación por capas para **Permitir** e impedir la instalación de dispositivos en todas las directivas de criterios de coincidencia de dispositivos está habilitada.
+Esta configuración de directiva le permite especificar una lista de los IDs de hardware plug and play e IDs compatibles para dispositivos que Windows pueden instalar. Esta configuración de directiva está diseñada para usarse solo cuando la configuración de directiva Aplicar orden de evaluación por capas para **Permitir** e impedir la instalación de dispositivos en todas las directivas de criterios de coincidencia de dispositivos está habilitada.
 
-Cuando esta configuración de directiva  está habilitada junto con la opción Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos, Windows puede instalar o actualizar cualquier dispositivo cuyo identificador de hardware plug and play o id. compatible aparezca en la lista que cree, a menos que otra configuración de directiva en la misma capa o superior de la jerarquía impida específicamente esa instalación,  como la siguiente configuración de directiva:
+Cuando esta configuración de directiva está habilitada junto con  el orden de evaluación Aplicar orden de evaluación en capas para permitir y evitar directivas de instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos, Windows puede instalar o actualizar cualquier dispositivo cuyo identificador de hardware plug and play o id. compatible aparezca en la lista que cree, a menos que otra configuración de directiva en la misma capa o superior de la jerarquía impida específicamente esa instalación,  como la siguiente configuración de directiva:
 
 - Impedir la instalación de dispositivos que coincidan con estos IDs de dispositivo.
 - Impedir la instalación de dispositivos que coincidan con cualquiera de estos IDs de instancia de dispositivo.
 
-Si  la configuración de directiva Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las directivas de criterios de coincidencia de dispositivos no está habilitada con esta configuración de directiva, tendrá prioridad cualquier otra configuración de directiva que impida específicamente la instalación.
+Si la  configuración de directiva Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las directivas de criterios de coincidencia de dispositivos no está habilitada con esta configuración de directiva, tendrá prioridad cualquier otra configuración de directiva que impida específicamente la instalación.
 
 > [!NOTE]
-> La  configuración de directiva Impedir la instalación de dispositivos  no descrita por otras configuraciones de directiva se ha reemplazado por el orden de evaluación Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos para las versiones de Windows 10 de destino admitidas y Windows 11. Se recomienda usar la configuración de directiva Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las directivas de criterios de coincidencia **de** dispositivos cuando sea posible.
+> La  configuración de directiva Impedir la instalación de dispositivos no descrita por otras configuraciones de  directiva se ha reemplazado por la opción Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos para las versiones de Windows 10 de destino admitidas y Windows 11. Se recomienda usar la configuración de directiva Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las directivas de criterios de **coincidencia de** dispositivos cuando sea posible.
 
 ### <a name="allow-installation-of-devices-that-match-any-of-these-device-instance-ids"></a>Permitir la instalación de dispositivos que coincidan con cualquiera de estos IDs de instancia de dispositivo
 
 Esta configuración de directiva te permite especificar una lista de los IDs de instancia de dispositivo Plug and Play para dispositivos que Windows pueden instalar. Esta configuración de directiva está diseñada para usarse solo cuando la configuración de directiva Aplicar orden de evaluación por capas para **Permitir** e impedir la instalación de dispositivos en todas las directivas de criterios de coincidencia de dispositivos está habilitada.
 
-Cuando esta configuración de directiva  está habilitada junto con la opción Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las opciones de directiva de criterios de coincidencia de dispositivos, Windows puede instalar o actualizar cualquier dispositivo cuyo identificador de instancia de dispositivo Plug and Play aparezca en la lista que cree, a menos que otra configuración de directiva en la misma capa o superior de la jerarquía impida específicamente esa instalación,  como la siguiente configuración de directiva:
+Cuando esta configuración de directiva está habilitada junto con  el orden de evaluación Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las opciones de directiva de criterios de coincidencia de dispositivos, Windows puede instalar o actualizar cualquier dispositivo cuyo identificador de instancia de dispositivo Plug and Play aparezca en la lista que cree, a menos que otra configuración de directiva en la misma capa o superior de la jerarquía impida específicamente esa instalación,  como la siguiente configuración de directiva:
 
 - Impedir la instalación de dispositivos que coincidan con cualquiera de estos IDs de instancia de dispositivo
 
-Si  la configuración de directiva Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las directivas de criterios de coincidencia de dispositivos no está habilitada con esta configuración de directiva, tendrá prioridad cualquier otra configuración de directiva que impida específicamente la instalación.
+Si la  configuración de directiva Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las directivas de criterios de coincidencia de dispositivos no está habilitada con esta configuración de directiva, tendrá prioridad cualquier otra configuración de directiva que impida específicamente la instalación.
 
 ### <a name="allow-installation-of-devices-using-drivers-that-match-these-device-setup-classes"></a>Permitir la instalación de dispositivos con controladores que coincidan con estas clases de configuración de dispositivos
 
 Esta configuración de directiva te permite especificar una lista de identificadores únicos globales (GUID) de la clase de configuración de dispositivo para los paquetes de controladores que Windows pueden instalarse. Esta configuración de directiva está diseñada para usarse solo cuando la configuración de directiva Aplicar orden de evaluación por capas para **Permitir** e impedir la instalación de dispositivos en todas las directivas de criterios de coincidencia de dispositivos está habilitada.
 
-Cuando esta configuración de directiva  está habilitada junto con el orden de evaluación Aplicar orden de evaluación en capas para permitir y evitar directivas de instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos, Windows puede instalar o actualizar paquetes de controladores cuyos GUID de clase de configuración de dispositivo aparecen en la lista que cree, a menos que otra configuración de directiva en la misma capa o superior de la jerarquía impida específicamente esa instalación,  como la siguiente configuración de directiva:
+Cuando esta configuración de directiva está habilitada junto con  el orden de evaluación Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos, Windows puede instalar o actualizar paquetes de controladores cuyos GUID de clase de configuración de dispositivo aparecen en la lista que cree, a menos que otra configuración de directiva en la misma capa o superior de la jerarquía impida específicamente esa instalación,  como la siguiente configuración de directiva:
 
 - Impedir la instalación de dispositivos para estas clases de dispositivo
 - Impedir la instalación de dispositivos que coincidan con estos IDs de dispositivo
 - Impedir la instalación de dispositivos que coincidan con cualquiera de estos IDs de instancia de dispositivo
 
-Si  la configuración de directiva Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las directivas de criterios de coincidencia de dispositivos no está habilitada con esta configuración de directiva, tendrá prioridad cualquier otra configuración de directiva que impida específicamente la instalación.
+Si la  configuración de directiva Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las directivas de criterios de coincidencia de dispositivos no está habilitada con esta configuración de directiva, tendrá prioridad cualquier otra configuración de directiva que impida específicamente la instalación.
 
 ### <a name="apply-layered-order-of-evaluation-for-allow-and-prevent-device-installation-policies-across-all-device-match-criteria"></a>Aplicar el orden de evaluación por capas para las directivas de instalación de dispositivos permitir e impedir en todos los criterios de coincidencia de dispositivos
 
@@ -122,22 +122,22 @@ Esta configuración de directiva cambiará el orden de evaluación en el que se 
 Impedir la instalación de dispositivos extraíbles
 
 > [!NOTE]
-> Esta configuración de directiva proporciona un control más detallado que la configuración impedir la instalación de dispositivos no **descrita por otras** configuraciones de directiva. Si estas configuraciones de directiva en conflicto  están habilitadas al mismo tiempo, se habilitará la configuración de directiva Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos y se omitirá la otra configuración de directiva.
+> Esta configuración de directiva proporciona un control más detallado que la configuración impedir la instalación de dispositivos no **descrita por otras** configuraciones de directiva. Si estas configuraciones de directiva en conflicto están habilitadas al mismo tiempo, se habilitará la configuración de directiva Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos y se omitirá la otra configuración de directiva.
 
 ### <a name="prevent-installation-of-devices-that-match-any-of-these-device-ids"></a>Impedir la instalación de dispositivos que coincidan con cualquiera de estos IDs de dispositivo
 
-Esta configuración de directiva te permite especificar una lista de los IDs de hardware plug and play e IDs compatibles para dispositivos que Windows se impide la instalación. De forma predeterminada, esta configuración de directiva tiene prioridad sobre cualquier otra configuración de directiva que Windows instalar un dispositivo.
+Esta configuración de directiva le permite especificar una lista de los IDs de hardware plug and play e IDs compatibles para dispositivos que Windows se impide la instalación. De forma predeterminada, esta configuración de directiva tiene prioridad sobre cualquier otra configuración de directiva que Windows instalar un dispositivo.
 
 > [!NOTE]
-> Para habilitar la configuración de directiva Permitir la instalación de dispositivos que coincidan con  cualquiera de estos **IDs** de instancia de dispositivo para reemplazar esta configuración de directiva para los dispositivos aplicables, habilite la opción Aplicar orden de evaluación por capas para permitir y evitar directivas de instalación de dispositivos en todas las directivas de criterios de coincidencia de dispositivos.
+> Para habilitar la configuración de directiva Permitir la instalación de dispositivos que coincidan con cualquiera de estos **IDs** de instancia de dispositivo para reemplazar esta configuración  de directiva para los dispositivos aplicables, habilite la opción Aplicar orden de evaluación por capas para permitir y evitar directivas de instalación de dispositivos en todas las directivas de criterios de coincidencia de dispositivos.
 
-Si habilitas esta configuración de directiva, Windows no podrá instalar un dispositivo cuyo identificador de hardware o id. compatible aparezca en la lista que crees. Si habilita esta configuración de directiva en un servidor de escritorio remoto, la configuración de directiva afecta al redireccionamiento de los dispositivos especificados desde un cliente de escritorio remoto al servidor de escritorio remoto.
+Si habilitas esta configuración de directiva, Windows se impide instalar un dispositivo cuyo id. de hardware o id. compatible aparezca en la lista que crees. Si habilita esta configuración de directiva en un servidor de escritorio remoto, la configuración de directiva afecta al redireccionamiento de los dispositivos especificados desde un cliente de escritorio remoto al servidor de escritorio remoto.
 
 Si deshabilitas o no configuras esta configuración de directiva, los dispositivos se pueden instalar y actualizar según lo permitido o impedido por otras configuraciones de directiva.
 
 ### <a name="prevent-installation-of-devices-that-match-any-of-these-device-instance-ids"></a>Impedir la instalación de dispositivos que coincidan con cualquiera de estos IDs de instancia de dispositivo
 
-Esta configuración de directiva te permite especificar una lista de los IDs de instancia de dispositivo Plug and Play para dispositivos que Windows no se puedan instalar. Esta configuración de directiva tiene prioridad sobre cualquier otra configuración de directiva que Windows para instalar un dispositivo.
+Esta configuración de directiva te permite especificar una lista de los IDs de instancia de dispositivo Plug and Play para dispositivos que Windows se impide la instalación. Esta configuración de directiva tiene prioridad sobre cualquier otra configuración de directiva que Windows instalar un dispositivo.
 
 Si habilitas esta configuración de directiva, Windows se impide instalar un dispositivo cuyo identificador de instancia de dispositivo aparece en la lista que crees. Si habilita esta configuración de directiva en un servidor de escritorio remoto, la configuración de directiva afecta al redireccionamiento de los dispositivos especificados desde un cliente de escritorio remoto al servidor de escritorio remoto.
 
@@ -148,7 +148,7 @@ Si deshabilitas o no configuras esta configuración de directiva, los dispositiv
 Esta configuración de directiva te permite especificar una lista de identificadores únicos globales (GUID) de la clase de configuración de dispositivo para paquetes de controladores que Windows no se puedan instalar. De forma predeterminada, esta configuración de directiva tiene prioridad sobre cualquier otra configuración de directiva que Windows instalar un dispositivo.
 
 > [!NOTE]
-> Para habilitar la opción Permitir la instalación de dispositivos que coincidan con cualquiera de estos **IDs** de dispositivo y Permitir  la instalación de dispositivos que coincidan con cualquiera de estas configuraciones de directiva de IDs de instancia de dispositivo para reemplazar esta configuración de directiva para los **dispositivos aplicables,** habilita la configuración de directiva Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos.
+> Para habilitar la opción Permitir la instalación de dispositivos que coincidan con cualquiera de estos **IDs** de dispositivo y Permitir la instalación de dispositivos que coincidan con cualquiera de estas configuraciones de directiva de IDs  de instancia de dispositivo para reemplazar esta configuración de directiva para los **dispositivos aplicables**, habilita la configuración de directiva Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos.
 
 Si habilitas esta configuración de directiva, Windows se impide instalar o actualizar paquetes de controladores cuyos GUID de clase de configuración del dispositivo aparecen en la lista que crees. Si habilita esta configuración de directiva en un servidor de escritorio remoto, la configuración de directiva afecta al redireccionamiento de los dispositivos especificados desde un cliente de escritorio remoto al servidor de escritorio remoto.
 
@@ -159,9 +159,9 @@ Si deshabilitas o no configuras esta configuración de directiva, Windows instal
 Esta configuración de directiva le permite evitar que Windows instalar dispositivos extraíbles. Un dispositivo se considera extraíble cuando el controlador del dispositivo al que está conectado indica que el dispositivo es extraíble. Por ejemplo, los controladores del concentrador USB al que está conectado el dispositivo notifican que un dispositivo de bus serie universal (USB) es extraíble. De forma predeterminada, esta configuración de directiva tiene prioridad sobre cualquier otra configuración de directiva que Windows instalar un dispositivo.
 
 > [!NOTE]
-> Para habilitar la instalación de dispositivos con controladores que coincidan con estas clases de configuración de **dispositivos**, Permitir la instalación de dispositivos que coincidan con cualquiera  de estos **IDs** de dispositivo y Permitir la instalación de dispositivos que coincidan con cualquiera de estas configuraciones de directiva de IDs de instancia de dispositivo para reemplazar esta configuración de directiva para **dispositivos aplicables,** habilite el orden de evaluación Aplicar en capas para permitir e impedir la instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos.
+> Para habilitar la instalación de dispositivos con controladores que coincidan con estas clases de configuración de **dispositivos,** Permitir la instalación de dispositivos que coincidan con cualquiera de estos **IDs** de dispositivo y Permitir la instalación de dispositivos que coincidan con cualquiera de estas configuraciones de directiva de  IDs de instancia de dispositivo para reemplazar esta configuración de directiva para los **dispositivos aplicables**, habilite la opción Aplicar orden de evaluación por capas para permitir e impedir la instalación de dispositivos en todas las configuraciones de directiva de criterios de coincidencia de dispositivos.
 
-Si habilitas esta configuración de directiva, Windows se impide instalar dispositivos extraíbles y los dispositivos extraíbles existentes no pueden tener actualizados sus controladores. Si habilita esta configuración de directiva en un servidor de escritorio remoto, la configuración de directiva afecta a la redirección de dispositivos extraíbles desde un cliente de escritorio remoto al servidor de escritorio remoto.
+Si habilitas esta configuración de directiva, Windows se impide instalar dispositivos extraíbles y los dispositivos extraíbles existentes no podrán actualizar sus controladores. Si habilita esta configuración de directiva en un servidor de escritorio remoto, la configuración de directiva afecta a la redirección de dispositivos extraíbles desde un cliente de escritorio remoto al servidor de escritorio remoto.
 
 Si deshabilitas o no configuras esta configuración de directiva, Windows instalar y actualizar paquetes de controladores para dispositivos extraíbles según lo permitido o impedido por otras configuraciones de directiva.
 
@@ -183,7 +183,7 @@ La característica de instalación de dispositivos te permite aplicar directivas
 
 #### <a name="licensing"></a>Licencias
 
-Antes de empezar con la instalación del dispositivo, debes confirmar tu [Microsoft 365 suscripción](https://www.microsoft.com/en-in/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para acceder y usar la instalación del dispositivo, debes tener Microsoft 365 E3.
+Antes de empezar con la instalación del dispositivo, debes confirmar la [Microsoft 365 suscripción](https://www.microsoft.com/en-in/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). Para acceder y usar la instalación del dispositivo, debes tener Microsoft 365 E3.
 
 #### <a name="permission"></a>Permiso
 
@@ -197,35 +197,37 @@ Para la implementación de directivas en Intune, la cuenta debe tener permisos p
 
 En Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)
 
-1. Configurar **Impedir la instalación de dispositivos con controladores que coincidan con estas clases de configuración del dispositivo**.
+1. Configurar **Impedir la instalación de dispositivos con controladores que coincidan con estas clases de configuración de dispositivos**.
 
-    - Abra Endpoint security > Attack surface reduction > Create Policy > Platform: Windows 10 (y posterior) & Profile: Device control.
-
-      :::image type="content" source="../../media/devicepolicy-editprofile.png" alt-text="editar perfil":::
-
+    - Abra Endpoint security > Attack surface reduction > Create Policy > Platform: Windows 10 (y posterior) & profile: Device control.
+    
+      :::image type="content" source="../../media/devicepolicy-editprofile.png" alt-text="Página Editar perfil" lightbox="../../media/devicepolicy-editprofile.png":::
+    
 2. Conecta un dispositivo USB y verás el siguiente mensaje de error:
 
-      :::image type="content" source="../../media/devicepolicy-errormsg.png" alt-text="mensaje de error":::
+      :::image type="content" source="../../media/devicepolicy-errormsg.png" alt-text="Mensaje de error" lightbox="../../media/devicepolicy-errormsg.png":::
 
-3. Habilitar Aplicar orden de evaluación por capas para permitir y evitar directivas de instalación **de dispositivos en todos los criterios de coincidencia de dispositivos.**
+3. Habilitar **Aplicar orden de evaluación por capas para Permitir e impedir directivas de instalación de dispositivos en todos los criterios de coincidencia de dispositivos**.
 
-    - **solo admiten OMA-URI** por ahora: Dispositivos > Perfiles de configuración > Crear perfiles > Plataforma: Windows 10 (y posterior) &: Personalizado
+    - **solo admiten OMA-URI** por ahora: Dispositivos > Perfiles de configuración > Crear perfil > Plataforma: Windows 10 (y posterior) &: Personalizado
+    
+      :::image type="content" source="../../media/devicepolicy-editrow.png" alt-text="Página Editar fila" lightbox="../../media/devicepolicy-editrow.png":::
 
-      :::image type="content" source="../../media/devicepolicy-editrow.png" alt-text="editar fila":::
-
-4. Habilitar y agregar el identificador de instancia USB permitido: permitir la instalación de **dispositivos que coincidan** con cualquiera de estos identificadores de dispositivo .
+4. Habilitar y agregar el id. de instancia USB permitido: permitir la instalación de **dispositivos que coincidan con cualquiera de estos identificadores de dispositivo**.
 
     - Actualizar el perfil de control de dispositivo del paso 1
+    
+      :::image type="content" source="../../media/devicepolicy-devicecontrol.png" alt-text="Un identificador en la página Control de dispositivos" lightbox="../../media/devicepolicy-devicecontrol.png":::
+       
+    Agregar PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB en la captura de pantalla superior es porque no es suficiente para habilitar solo un solo identificador de hardware para habilitar una única unidad usb. Debes asegurarte de que todos los dispositivos USB que preceden al destino no están bloqueados (permitidos). Puedes abrir el Administrador de dispositivos y cambiar la vista a "Dispositivos por conexiones" para ver cómo se instalan los dispositivos en el árbol PnP. En nuestro caso, se deben permitir los siguientes dispositivos para que también se pueda permitir la unidad usb de destino: 
 
-      :::image type="content" source="../../media/devicepolicy-devicecontrol.png" alt-text="devicecontrol":::
-
-    Agregar PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1 &HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB en la captura de pantalla superior se debe a que no basta con habilitar un solo identificador de hardware para habilitar una única unidad usb. Debes asegurarte de que todos los dispositivos USB que preceden al destino no están bloqueados (permitidos). Puedes abrir el Administrador de dispositivos y cambiar la vista a "Dispositivos por conexiones" para ver cómo se instalan los dispositivos en el árbol PnP. En nuestro caso, se deben permitir los siguientes dispositivos para que también se pueda permitir la unidad usb de destino:
+    Agregar PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB en la captura de pantalla superior es porque no es suficiente para habilitar solo un solo identificador de hardware para habilitar una única unidad usb. Debes asegurarte de que todos los dispositivos USB que preceden al destino no están bloqueados (permitidos). Puedes abrir el Administrador de dispositivos y cambiar la vista a "Dispositivos por conexiones" para ver cómo se instalan los dispositivos en el árbol PnP. En nuestro caso, se deben permitir los siguientes dispositivos para que también se pueda permitir la unidad usb de destino:
 
     - "Controlador de host intel(R) USB 3.0 eXtensible – 1.0 (Microsoft)" -> PCI\CC_0C03
     - "Concentrador raíz USB (USB 3.0)" -> USB\ROOT_HUB30
     - "Concentrador USB genérico" -> USB\USB20_HUB
 
-    :::image type="content" source="../../media/devicepolicy-devicemgr.png" alt-text="control de dispositivo":::
+    :::image type="content" source="../../media/devicepolicy-devicemgr.png" alt-text="El elemento de menú Ver en la página Administrador de dispositivos" lightbox="../../media/devicepolicy-devicemgr.png":::
 
     > [!NOTE]
     > Algunos dispositivos del sistema tienen varias capas de conectividad para definir su instalación en el sistema. Las unidades usb son estos dispositivos. Por lo tanto, cuando se busca bloquearlos o permitirlos en un sistema, es importante comprender la ruta de conectividad para cada dispositivo. Hay varios IDs de dispositivo genéricos que se usan habitualmente en sistemas y podrían proporcionar un buen comienzo para crear una "lista de permitidos" en estos casos. El siguiente es un ejemplo (no siempre es lo mismo para todos los USB; debes comprender el árbol PnP del dispositivo que quieres administrar a través del Administrador de dispositivos):
@@ -238,7 +240,7 @@ En Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint
 
 5. Vuelva a conectar el USB permitido. Verá que ahora está permitido y disponible.
 
-    :::image type="content" source="../../media/devicepolicy-removedrive.png" alt-text="quitar unidad":::
+    :::image type="content" source="../../media/devicepolicy-removedrive.png" alt-text="La página Quitar detalles de la unidad" lightbox="../../media/devicepolicy-removedrive.png":::
 
 #### <a name="deploying-and-managing-policy-via-group-policy"></a>Implementación y administración de directivas mediante directiva de grupo
 
@@ -250,9 +252,9 @@ Para acceder y usar la instalación del dispositivo, debes tener Windows E3.
 
 #### <a name="deploying-policy"></a>Implementación de directivas
 
-Encontrará los detalles de implementación aquí: Administrar la instalación de dispositivos con directiva de grupo [(Windows 10) - Windows cliente](/windows/client-management/manage-device-installation-with-group-policy).
+Puedes encontrar los detalles de implementación aquí: Administrar la instalación de dispositivos con directiva de grupo [(Windows 10): Windows cliente](/windows/client-management/manage-device-installation-with-group-policy).
 
-## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Ver datos extraíbles Storage control de acceso en Microsoft Defender para endpoint
+## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Ver datos extraíbles de control Storage control de acceso en Microsoft Defender para endpoint
 
 El [Microsoft 365 de seguridad muestra](https://sip.security.microsoft.com/homepage) el almacenamiento extraíble bloqueado por la instalación del dispositivo de control de dispositivos. Para obtener acceso a Microsoft 365 seguridad, debe tener la siguiente suscripción:
 
@@ -270,7 +272,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
-:::image type="content" source="../../media/block-removable-storage2.png" alt-text="almacenamiento en bloques":::
+:::image type="content" source="../../media/block-removable-storage2.png" alt-text="El almacenamiento en bloques" lightbox="../../media/block-removable-storage2.png":::
 
 ## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
@@ -289,4 +291,5 @@ DeviceRegistryEvents
 
 No basta con habilitar un solo identificador de hardware para habilitar una única unidad usb. Asegúrate de que todos los dispositivos USB que preceden al destino no están bloqueados (permitidos).
 
-:::image type="content" source="../../media/devicemgrscrnshot.png" alt-text="Preguntas frecuentes sobre instalación de dispositivos":::
+:::image type="content" source="../../media/devicemgrscrnshot.png" alt-text="Preguntas frecuentes sobre instalación de dispositivos" lightbox="../../media/devicemgrscrnshot.png":::
+

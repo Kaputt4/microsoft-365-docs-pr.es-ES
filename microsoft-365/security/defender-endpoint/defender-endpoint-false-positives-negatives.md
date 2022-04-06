@@ -23,12 +23,12 @@ ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: 0352fde9756efce3011db24c915f287c358f313b
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: 160108e123f5ba38a7c7af8c36ebb17431e860ad
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557913"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472977"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 
@@ -40,7 +40,7 @@ ms.locfileid: "63557913"
 
 En las soluciones de protección de puntos de conexión, un falso positivo es una entidad, como un archivo o un proceso, que se detectó e identificó como malintencionada, aunque la entidad no sea realmente una amenaza. Un falso negativo es una entidad que no se detectó como una amenaza, aunque en realidad sea malintencionada. Los falsos positivos o negativos pueden producirse con cualquier solución de protección contra amenazas, incluido [Microsoft Defender para endpoint](microsoft-defender-endpoint.md).
 
-![Definición de falsos positivos y negativos en Defender para endpoint.](images/false-positives-overview.png)
+:::image type="content" source="images/false-positives-overview.png" alt-text="La definición de falsos positivos y negativos en el portal de Microsoft Defender para endpoint" lightbox="images/false-positives-overview.png":::
 
 Afortunadamente, se pueden realizar pasos para solucionar y reducir este tipo de problemas. Si ve falsos positivos o negativos en [Microsoft 365 Defender, las](/microsoft-365/security/defender/microsoft-365-defender) operaciones de seguridad pueden tomar medidas para solucionarlos mediante el siguiente proceso:
 
@@ -52,7 +52,7 @@ Afortunadamente, se pueden realizar pasos para solucionar y reducir este tipo de
 
 Puede obtener ayuda si sigue teniendo problemas con falsos positivos o negativos después de realizar las tareas descritas en este artículo. ¿ [Sigue necesitando ayuda?](#still-need-help)
 
-![Pasos para abordar falsos positivos y negativos.](images/false-positives-step-diagram.png)
+:::image type="content" source="images/false-positives-step-diagram.png" alt-text="Los pasos para abordar falsos positivos y negativos" lightbox="images/false-positives-step-diagram.png":::
 
 > [!NOTE]
 > Este artículo está pensado como guía para los operadores de seguridad y los administradores de seguridad que usan [Microsoft Defender para endpoint](microsoft-defender-endpoint.md).
@@ -162,7 +162,7 @@ Cuando haya terminado de revisar y deshacer acciones que se realizaron como resu
 ### <a name="remove-a-file-from-quarantine-across-multiple-devices"></a>Quitar un archivo de la cuarentena en varios dispositivos
 
 > [!div class="mx-imgBorder"]
-> ![Archivo en cuarentena.](images/autoir-quarantine-file-1.png)
+> :::image type="content" source="images/autoir-quarantine-file-1.png" alt-text="El archivo en cuarentena" lightbox="images/autoir-quarantine-file-1.png":::
 
 1. En el panel de navegación izquierdo del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, haga clic en **Centro de acciones**.
 
@@ -182,7 +182,7 @@ Puede revertir y quitar un archivo de la cuarentena si ha determinado que está 
 2. Escriba el siguiente comando y presione **ENTRAR**:
 
     ```console
-    "ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
+    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
     ```
 
     > [!IMPORTANT]
@@ -257,7 +257,7 @@ Los indicadores "Permitir" se pueden crear para:
 - [Direcciones IP, direcciones URL y dominios](#indicators-for-ip-addresses-urls-or-domains)
 - [Certificados de aplicación](#indicators-for-application-certificates)
 
-![Diagrama de tipos de indicador.](images/false-positives-indicators.png)
+:::image type="content" source="images/false-positives-indicators.png" alt-text="Tipos de indicador" lightbox="images/false-positives-indicators.png":::
 
 #### <a name="indicators-for-files"></a>Indicadores de archivos
 
@@ -454,7 +454,7 @@ Si ha trabajado en todos los pasos de este artículo y todavía necesita ayuda, 
 
 3. En la **ventana Asistente de** soporte técnico, describa el problema y, a continuación, envíe el mensaje. Desde allí, puede abrir una solicitud de servicio.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar Microsoft Defender para el punto de conexión](manage-mde-post-migration.md)
 

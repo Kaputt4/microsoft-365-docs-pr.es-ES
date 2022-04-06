@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/19/2019
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Busque vínculos a artículos con información que le ayuden a configurar la red para Microsoft 365, incluida una introducción a la conectividad de red y una lista de puntos de conexión.
-ms.openlocfilehash: c21a7a09e43957c806bca9dd64d425fcef2415fc
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: c6dbc4362648b3695c23f363c0e6925ead97bacb
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61566632"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680850"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Configurar la red para Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Una parte importante de la incorporación Microsoft 365 es garantizar que las conexiones de red e Internet estén configuradas para un acceso optimizado. La configuración de la red local para tener acceso a una nube de Software como servicio (SaaS) distribuida globalmente es diferente de una red tradicional optimizada para el tráfico a centros de datos locales y una conexión central a Internet. 
 
@@ -43,7 +43,7 @@ Vea estos artículos para obtener información general sobre la conectividad par
 - [Principios de conectividad de red de Microsoft 365](microsoft-365-network-connectivity-principles.md)
 - [Evaluar la conectividad de red de Microsoft 365](assessing-network-connectivity.md)
 
-Para obtener consejos sobre cómo mejorar el rendimiento, vea [Network planning and performance tuning for Microsoft 365](network-planning-and-performance.md).
+Para obtener consejos sobre cómo mejorar el rendimiento, consulte [Network planning and performance tuning for Microsoft 365](network-planning-and-performance.md).
 
 ## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Compatibilidad Microsoft 365 redes como proveedor de equipos de red
 

@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
@@ -18,16 +18,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: Proporciona una lista de vínculos a información útil para implementar Office de servidor en Microsoft Azure.
-ms.openlocfilehash: a7891e05da6af23f5847d91c21c25f8c9d73cee5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e4f4ddf41174a9bd1a3b4cef9e43087825ee4bbc
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197394"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681598"
 ---
 # <a name="hybrid-solutions"></a>Soluciones híbridas
 
-Con Microsoft Azure, puede implementar algunas cargas de Office de servidor que normalmente se implementaban localmente en los servicios de infraestructura de Azure.
+Con Microsoft Azure, puede implementar algunas cargas de trabajo Office server que normalmente se implementaban localmente en los servicios de infraestructura de Azure.
   
 Para Microsoft 365 de identidad en Azure:
 

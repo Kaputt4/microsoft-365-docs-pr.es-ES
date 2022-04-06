@@ -15,12 +15,12 @@ ms.date: 10/22/2021
 manager: dansimp
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 245aad5498793d951de68e5bf4c3e91510c7d774
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 9af87907c476b637ddc484bbb3357b143219107e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806857"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473219"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Habilitar y configurar la protección siempre activa del Antivirus de Windows Defender en la directiva de grupo
 
@@ -42,21 +42,21 @@ Para habilitar y configurar la protección siempre activa:
 
 1. Abra **el Editor de directivas de grupo local**, como se muestra a continuación:
 
-    1. En el Windows 10 o Windows 11 cuadro de búsqueda de la barra de tareas, escriba **gpedit**.
+    1. En el Windows 10 o Windows de búsqueda de la barra de tareas 11, escriba **gpedit**.
 
     2. En **Coincidencia recomendada**, seleccione **Editar directiva de grupo** para iniciar **el Editor de directivas de grupo local**.
     
-       ![Resultado de búsqueda de la barra de tareas GPEdit.](images/gpedit-search.png)
+       :::image type="content" source="images/gpedit-search.png" alt-text="El resultado de la búsqueda de la barra de tareas gpedit en el panel de control" lightbox="images/gpedit-search.png":::
 
-2. En el panel izquierdo del **Editor de** directivas de grupo local, expanda el  \>  \> árbol a Configuración del equipo Plantillas administrativas **Windows componentes Antivirus de Microsoft Defender**\>.
+2. En el panel izquierdo del **Editor de directivas de grupo local**, expanda el  \>  \> árbol a Configuración del equipo Plantillas administrativas **Windows componentes Antivirus de Microsoft Defender**\>.
 
 3. Configure la configuración Antivirus de Microsoft Defender directiva de servicio antimalware.
 
-   En el **panel Antivirus de Microsoft Defender** detalles de la derecha, haga doble clic en Permitir que el servicio **antimalware** se inicie con prioridad normal y estabilitó **el valor habilitado**.
+   En el **panel Antivirus de Microsoft Defender** detalles de la derecha, haga doble clic en Permitir que el servicio **antimalware** se inicie con prioridad normal y estabilize **en Habilitado**.
 
    A continuación, seleccione **Aceptar**.
 
-4. Configure la Antivirus de Microsoft Defender directiva de protección en tiempo real, como se muestra a continuación:
+4. Configure la Antivirus de Microsoft Defender de protección en tiempo real, como se muestra a continuación:
 
     1. En el **panel Antivirus de Microsoft Defender** detalles, haga doble clic en **Protección en tiempo real**. O bien, en el **Antivirus de Microsoft Defender** en el panel izquierdo, seleccione **Protección en tiempo real**.
 
@@ -66,9 +66,9 @@ Para habilitar y configurar la protección siempre activa:
 
     4. Repita los pasos anteriores para cada configuración de la tabla.
 
-5. Configure la configuración Antivirus de Microsoft Defender directiva de análisis, de la siguiente manera:
+5. Configure la configuración Antivirus de Microsoft Defender directiva de examen, de la siguiente manera:
 
-    1. En el **Antivirus de Microsoft Defender** en el panel izquierdo, seleccione **Examinar**.
+    1. En el **Antivirus de Microsoft Defender** del panel izquierdo, seleccione **Examinar**.
     
    2. En el **panel Detección** de detalles de la derecha, haga doble clic en **Activar heurística** y estadóla en **Habilitado**. 
 
@@ -78,7 +78,7 @@ Para habilitar y configurar la protección siempre activa:
 
 ### <a name="real-time-protection-policy-settings"></a>Configuración de directiva de protección en tiempo real
 
-|Setting|Configuración predeterminada|
+|Valor|Configuración predeterminada|
 |---|---|
 |Activar la supervisión del comportamiento <p> El motor antivirus supervisará los procesos de archivos, los cambios de archivos y del Registro y otros eventos en los puntos de conexión en busca de actividad malintencionada sospechosa y conocida.|Habilitado|
 |Examinar todos los archivos y datos adjuntos descargados <p> Los archivos descargados y los datos adjuntos se examinan automáticamente. Este examen funciona además del filtro Windows Defender SmartScreen, que examina los archivos antes y durante la descarga.|Habilitado|
@@ -104,7 +104,7 @@ La principal funcionalidad de protección en tiempo real está habilitada de for
 
 1. Abra **el Editor de directivas de grupo local**.
 
-   1. En el Windows 10 o Windows 11 cuadro de búsqueda de la barra de tareas, escriba **gpedit**.
+   1. En el Windows 10 o Windows de búsqueda de la barra de tareas 11, escriba **gpedit**.
    2. En **Coincidencia recomendada**, seleccione **Editar directiva de grupo** para iniciar **el Editor de directivas de grupo local**.
 
 2. En el panel izquierdo del **Editor** de directivas de grupo local, expanda   \>  \> el árbol a Configuración del equipo Plantillas administrativas Windows **componentes** \> \> Antivirus de Microsoft Defender **protección en tiempo real**.

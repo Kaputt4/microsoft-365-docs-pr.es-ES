@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-ms.openlocfilehash: 59b74fdc13cc21f0266e0f110935f76656827f65
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 67943bc533c55961a2ceabbe89a0fe41c231ff71
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755164"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473197"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business Decision Makers (BDMs)
 
@@ -32,7 +32,7 @@ Este artículo se organiza por prioridad de trabajo, empezando por proteger las 
 
 Microsoft le proporciona la herramienta Puntuación segura dentro del espacio empresarial para analizar automáticamente su posición de seguridad en función de sus actividades regulares, asignar una puntuación y proporcionar recomendaciones de mejora de seguridad. Antes de realizar las acciones recomendadas en este artículo, tome nota de la puntuación y recomendaciones actuales. Las acciones recomendadas en este artículo aumentarán la puntuación. El objetivo no es lograr la puntuación máxima, sino tener en cuenta las oportunidades para proteger el entorno de forma que no afecte negativamente a la productividad de los usuarios. Consulta [Puntuación segura de Microsoft](defender/microsoft-secure-score.md).
 
-:::image type="content" source="../media/security/security-for-bdms-overview.png" alt-text="Un ejemplo de la herramienta Puntuación segura que proporciona medidas de protección del entorno empresarial en el portal Microsoft 365 Defender negocio" lightbox="../media/security/security-for-bdms-overview.png":::
+:::image type="content" source="../media/security/security-for-bdms-overview.png" alt-text="Los pasos para mitigar los riesgos para su empresa" lightbox="../media/security/security-for-bdms-overview.png":::
 
 Una cosa más antes de empezar . . . asegúrese de activar [el registro de auditoría](../compliance/search-the-audit-log-in-security-and-compliance.md). Necesitarás estos datos más adelante, en caso de que necesites investigar un incidente o una infracción.
 
@@ -48,7 +48,7 @@ Como primer paso, se recomienda garantizar que las cuentas críticas del entorno
 |Configurar y usar estaciones de trabajo de acceso con privilegios (PAW) para administrar servicios. No use las mismas estaciones de trabajo para navegar por Internet y comprobar el correo electrónico no relacionado con su cuenta administrativa.|  !![marca de verificación verde.](../media/green-check-mark.png)|![marca de verificación verde.](../media/green-check-mark.png)::: |
 
 En el siguiente diagrama se ilustran estas funcionalidades.
-:::image type="content" source="../media/m365-security-bdm-illustrations-privileged-accounts.png" alt-text="Un ejemplo de las capacidades que ofrecen las herramientas para proteger cuentas con privilegios" lightbox="../media/m365-security-bdm-illustrations-privileged-accounts.png":::
+:::image type="content" source="../media/m365-security-bdm-illustrations-privileged-accounts.png" alt-text="Las funcionalidades recomendadas para proteger cuentas con privilegios" lightbox="../media/m365-security-bdm-illustrations-privileged-accounts.png":::
 
 Recomendaciones adicionales:
 
@@ -81,7 +81,8 @@ Entre las amenazas conocidas se incluyen malware, cuentas comprometidas y suplan
 |**Bloquear conexiones de países con los que no haga negocios**. Cree una Azure AD de acceso condicional para bloquear las conexiones procedentes de estos países, creando de forma eficaz un firewall geográfico alrededor del inquilino.| |![marca de verificación verde.](../media/green-check-mark.png)|
 
 En el siguiente diagrama se ilustran estas funcionalidades.
-:::image type="content" source="../media/m365-security-bdm-illustrations-known-threats.png" alt-text="Un ejemplo de las distintas capacidades que ofrecen las herramientas para proteger contra amenazas de distintos tipos" lightbox="../media/m365-security-bdm-illustrations-known-threats.png":::
+:::image type="content" source="../media/m365-security-bdm-illustrations-known-threats.png" alt-text="Las funcionalidades recomendadas para proteger contra amenazas conocidas" lightbox="../media/m365-security-bdm-illustrations-known-threats.png":::
+
 
 ## <a name="protect-against-unknown-threats"></a>Proteger contra amenazas desconocidas
 
@@ -95,6 +96,7 @@ Después de agregar protecciones adicionales a sus cuentas con privilegios y pro
 
 En el siguiente diagrama se ilustran estas funcionalidades.
 :::image type="content" source="../media/m365-security-bdm-illustrations-unknown-threats.png" alt-text="Un ejemplo de las capacidades que ofrecen las herramientas para proteger contra amenazas desconocidas" lightbox="../media/m365-security-bdm-illustrations-unknown-threats.png":::
+
 
 Recomendaciones adicionales:
 
@@ -122,8 +124,8 @@ Aunque Microsoft toma todas las medidas posibles para evitar amenazas y ataques,
 |**Use [AIP Scanner para](/azure/information-protection/deploy-aip-scanner) identificar y clasificar información entre servidores y recursos compartidos de archivos**. Use la herramienta de informes AIP para ver los resultados y realizar las acciones adecuadas.|         |![marca de verificación verde.](../media/green-check-mark.png)|
 
 En el siguiente diagrama se ilustran estas funcionalidades.
-![Funcionalidades recomendadas para proteger contra infracciones.](../media/m365-security-bdm-illustrations-assume-breach.png)
- :::image type="content" source="../media/m365-security-bdm-illustrations-assume-breach.png" alt-text="Un ejemplo de las capacidades que ofrece la herramienta para la protección contra infracciones" lightbox="../media/m365-security-bdm-illustrations-assume-breach.png":::
+:::image type="content" source="../media/m365-security-bdm-illustrations-assume-breach.png" alt-text="Las funcionalidades recomendadas para proteger contra amenazas desconocidas" lightbox="../media/m365-security-bdm-illustrations-assume-breach.png":::
+
 
 ## <a name="continuous-monitoring-and-auditing"></a>Supervisión y auditoría continuas
 
@@ -141,7 +143,9 @@ Por último, pero no menos importante, la supervisión continua y la auditoría 
 |Use **Microsoft Defender para la nube para** supervisar las amenazas en cargas de trabajo híbridas y en la nube. Microsoft Defender para la nube incluye un nivel gratuito de capacidades y un nivel estándar de funcionalidades que se pagan en función de las horas de recursos o las transacciones.|         |         |
 
 En el siguiente diagrama se ilustran estas funcionalidades.
-:::image type="content" source="../media/m365-security-bdm-illustrations-monitoring-auditing.png" alt-text="Un ejemplo de las capacidades que ofrecen las herramientas para habilitar la protección y detección de amenazas" lightbox="../media/m365-security-bdm-illustrations-monitoring-auditing.png":::
+
+:::image type="content" source="../media/m365-security-bdm-illustrations-monitoring-auditing.png" alt-text="Las funcionalidades recomendadas para la supervisión y auditoría continuas" lightbox="../media/m365-security-bdm-illustrations-monitoring-auditing.png":::
+
 
 Principales acciones de supervisión recomendadas:
 

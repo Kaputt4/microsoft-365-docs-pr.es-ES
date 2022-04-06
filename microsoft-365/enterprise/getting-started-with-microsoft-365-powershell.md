@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Ent_O365
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: 'Summary: Understand the value of PowerShell for Microsoft 365, how to get connected to your Microsoft 365 tenant, and where to get help.'
-ms.openlocfilehash: 8c0d2020235c1f00797a28bab3e30dca7c8a2198
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f75e93d503a2cdb002178be16e6fb4c246fe7ae8
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198474"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681158"
 ---
 # <a name="get-started-with-powershell-for-microsoft-365"></a>Introducción a PowerShell para Microsoft 365
 
@@ -38,7 +38,7 @@ Seleccione entre estos temas:
     
 - [**Conectarse a Microsoft 365 con PowerShell**](connect-to-microsoft-365-powershell.md)
     
-    Comience aquí para conectarse a su suscripción Microsoft 365 mediante PowerShell para Microsoft 365 realizar tareas administrativas desde la línea de comandos.
+    Empiece aquí para conectarse a su suscripción Microsoft 365 mediante PowerShell para Microsoft 365 realizar tareas administrativas desde la línea de comandos.
     
 - [**Conectarse a todos los servicios de Microsoft 365 en una sola ventana de Windows PowerShell**](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md)
     
@@ -54,7 +54,7 @@ Seleccione entre estos temas:
     
 - [**Recursos de la comunidad de Microsoft 365 para PowerShell**](microsoft-365-powershell-community-resources.md)
     
-    Comience aquí para conectarse a la comunidad de PowerShell y obtener más información sobre cómo usar PowerShell para Microsoft 365.
+    Empiece aquí para conectarse a la comunidad de PowerShell y obtener más información sobre cómo usar PowerShell para Microsoft 365.
     
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3179ab18ab27bb41f5c0b1577d73ff48b3470b98
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 85ddada93e20e36648fccdb0fe9b2b34ab473212
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326081"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681488"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurar Microsoft Defender para endpoint en características de iOS
 
@@ -143,6 +143,24 @@ Defender para endpoint en iOS permite a los administradores configurar indicador
 
 > [!NOTE]
 > Defender para endpoint en iOS admite la creación de indicadores personalizados solo para direcciones IP y direcciones URL/dominios.
+
+## <a name="configure-option-to-send-in-app-feedback"></a>Opción Configurar para enviar comentarios desde la aplicación 
+
+Los clientes ahora tienen la opción de configurar la capacidad de enviar datos de comentarios a Microsoft dentro de la aplicación Defender para endpoint. Los datos de comentarios ayudan a Microsoft a mejorar los productos y solucionar problemas.
+
+> [!NOTE]
+> Para los clientes en la nube de Us Government, la recopilación de datos de comentarios **está deshabilitada de** forma predeterminada. 
+
+Siga estos pasos para configurar la opción de enviar datos de comentarios a Microsoft:
+
+1. En [Microsoft Endpoint Manager de administración y](https://go.microsoft.com/fwlink/?linkid=2109431) vaya a Directivas de configuración **de** >  **AppsAppAddManaged** >  >  devices.
+1. Asigne a la directiva un nombre, **Platform > iOS/iPadOS**, seleccione el tipo de perfil.
+1. Selecciona **Microsoft Defender para Endpoint** como la aplicación de destino.
+1. En Configuración, seleccione **Usar diseñador de configuraciones** y agregar **DefenderSendFeedback** como clave y tipo de valor como **booleano**
+   - Para quitar la capacidad de los usuarios finales para proporcionar comentarios, establezca el valor como `false` y asigne esta directiva a los usuarios. De forma predeterminada, este valor se establece en `true`. Para los clientes de Us Government, el valor predeterminado se establece en "false".
+   - Para los usuarios con un conjunto `true`de teclas como , habrá una opción para enviar datos de comentarios a Microsoft dentro de la aplicación (Ayuda de menú > & enviar comentarios > enviar comentarios a Microsoft)
+1. Haz **clic en Siguiente** y asigna este perfil a dispositivos o usuarios dirigidos.
+
 
 ## <a name="report-unsafe-site"></a>Informe de sitio no seguro
 

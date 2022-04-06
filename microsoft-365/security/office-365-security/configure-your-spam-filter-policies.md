@@ -18,12 +18,12 @@ ms.custom: ''
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ac240f402d230362cb33ea818e62c1e0629eb39
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 8550d55553b1c406fa21ce362e201a8bbe3d5aea
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "62909752"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681312"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -148,10 +148,6 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
      - Una marca de verificación ( ![Marca de verificación.](../../media/checkmark.png)) indica que la acción está disponible (no todas las acciones están disponibles para todos los veredictos).
      - Un asterisco (<sup>\*</sup>) después de la marca de verificación indica la acción predeterminada para el veredicto de filtrado de correo no deseado.
 
-     <br>
-
-     ****
-
      |Acción|Correo no deseado|Alto<br>confianza<br>correo no deseado|Suplantación de identidad (phishing)|Alto<br>confianza<br>suplantación de identidad (phishing)|Masivo|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**Mover el mensaje a la carpeta Correo no deseado**: el mensaje se entrega al buzón y se mueve a la carpeta Correo no deseado.<sup>1</sup>|![Marca de verificación.](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|
@@ -161,7 +157,6 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
      |**Eliminar mensaje**: elimina el mensaje completo, incluidos todos los datos adjuntos.|![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)||![Marca de verificación](../../media/checkmark.png)|
      |**Colocar el mensaje en cuarentena**: envía el mensaje a la cuarentena en lugar de a los destinatarios. <p> Especifique cuánto tiempo se debe conservar el mensaje en cuarentena más adelante en el cuadro **Cuarentena**. <p> Se especifica la [directiva de cuarentena](quarantine-policies.md) que se aplica a los mensajes en cuarentena para el veredicto del filtro de spam en el cuadro **Seleccionar una directiva** que aparece. Para obtener más información, consulte [Directivas de cuarentena](quarantine-policies.md). <sup>3</sup> |![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../../media/checkmark.png)|
      |**Ninguna acción**|||||![Marca de verificación](../../media/checkmark.png)|
-     |
 
      > <sup>1</sup> EOP ahora usa su propio agente de entrega de flujo de correo para enrutar mensajes a la carpeta de correo no deseado en lugar de usar la regla de correo no deseado. El parámetro _Enabled_ en el cmdlet **Set-MailboxJunkEmailConfiguration** ya no tiene ningún efecto en el flujo de correo. Para más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
      >
@@ -200,7 +195,7 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
      - **Habilitar ZAP para los mensajes de correo no deseado**: de forma predeterminada, ZAP está habilitada para la detección de correo no deseado, pero puede deshabilitarla si desactiva la casilla.
 
    > [!NOTE]
-   > Las notificaciones de correo no deseado del usuario final se han reemplazado por _notificaciones de cuarentena_ en directivas de cuarentena. Las notificaciones de cuarentena contienen información sobre los mensajes en cuarentena para todas las características de protección admitidas (no solo directivas contra correo no deseado y veredictos de directivas contra suplantación de identidad). Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
+   > Las notificaciones de correo no deseado del usuario final se han reemplazado por _notificaciones de cuarentena_ en directivas de cuarentena. Las notificaciones de cuarentena contienen información sobre los mensajes en cuarentena para todas las características de protección admitidas (no solo directivas contra correo no deseado y veredictos de directivas contra suplantación de identidad). Para más información, vea [directivas de cuarentena](quarantine-policies.md).
 
    Cuando termine, haga clic en **Siguiente**.
 

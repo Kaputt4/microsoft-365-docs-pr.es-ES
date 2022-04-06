@@ -8,6 +8,7 @@ manager: dansimp
 ms.date: 11/17/2021
 audience: ITPro
 ms.topic: overview
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
@@ -15,12 +16,12 @@ ms.custom:
 description: En este artículo se tratan temas como reenvío de correo electrónico externo, reenvío automático, 5.7.520 Acceso denegado, deshabilitación del reenvío externo, mensajes "El administrador ha deshabilitado el reenvío externo", así como la directiva de correo no deseado saliente.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 228bb4402fd67ba8e56dd84b270c64977667ff2d
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 14b41f21efe3608096636444afd4b36de3742a85
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401026"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681422"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Controlar el reenvío automático de correo electrónico externo en Microsoft 365
 
@@ -65,16 +66,11 @@ Como administrador, es posible que ya haya configurado otros controles para perm
 
 Cuando una configuración permite el reenvío externo, pero otra bloquea el reenvío externo, el bloque suele ganar. En la tabla siguiente se describen ejemplos:
 
-<br>
-
-****
-
 |Escenario|Resultado|
 |---|---|
 |<ul><li>Configure las opciones de dominio remoto para permitir el reenvío automático.</li><li>El reenvío automático en la directiva de filtro de correo no deseado saliente se establece en **Desactivado**.</li></ul>|Se bloquean los mensajes reenviados automáticamente a los destinatarios de los dominios afectados.|
 |<ul><li>Configure las opciones de dominio remoto para permitir el reenvío automático.</li><li>El reenvío automático en la directiva de filtro de correo no deseado saliente se establece en **Automático: controlado por el sistema**.</li></ul>|Se bloquean los mensajes reenviados automáticamente a los destinatarios de los dominios afectados. <p> Como se describió anteriormente, **Automático: controlado** por el sistema se usa para **significar On**, pero la configuración ha cambiado con el tiempo para **significar Desactivado** en todas las organizaciones. <p> Para mayor claridad, debe configurar la directiva de filtro de correo no deseado saliente en **On** o **Off**.|
 |<ul><li>El reenvío automático en la directiva de filtro de correo no deseado saliente se establece en **On**</li><li>Se usan reglas de flujo de correo o dominios remotos para bloquear el correo electrónico reenviado automáticamente.</li></ul>|Los mensajes reenviados automáticamente a los destinatarios afectados se bloquean mediante reglas de flujo de correo o dominios remotos.|
-|
 
 Puede usar este comportamiento (por ejemplo) para permitir el reenvío automático en directivas de filtro de correo no deseado saliente, pero usar dominios remotos para controlar los dominios externos a los que los usuarios pueden reenviar mensajes.
 

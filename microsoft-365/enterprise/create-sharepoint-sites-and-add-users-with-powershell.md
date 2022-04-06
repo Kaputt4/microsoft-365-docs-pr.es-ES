@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 search.appverid:
@@ -18,13 +18,13 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Summary: Use PowerShell to create new SharePoint Online sites and then add users and groups to those sites.'
-ms.openlocfilehash: 76411621c0c313a31e4c92417b4472d6fd34ddac
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 'Resumen: use PowerShell para crear nuevos sitios SharePoint Online y, a continuación, agregar usuarios y grupos a esos sitios.'
+ms.openlocfilehash: 95bd3fb5647a5c6680fd9a07ebdf45e106acb095
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152687"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681378"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Crear sitios de SharePoint Online y agregar usuarios con PowerShell
 
@@ -86,7 +86,7 @@ El cmdlet de PowerShell importa el archivo .csv y lo canaliza a un bucle dentro 
 
 4. Observe que las nuevas colecciones de sitios figuran en la lista. Con nuestro archivo CSV de ejemplo, vería las siguientes colecciones de sitios: **TeamSite01**, **Blog01**, **Project01** y **Community01**
 
-Eso es todo. Ha creado varias colecciones de sitios mediante el archivo .csv que creó y un único Windows PowerShell sitio. Ya está listo para crear y asignar usuarios a estos sitios.
+Eso es todo. Ha creado varias colecciones de sitios con el .csv que creó y un único Windows PowerShell sitio. Ya está listo para crear y asignar usuarios a estos sitios.
 
 ## <a name="step-2-add-users-and-groups"></a>Paso 2: agregar usuarios y grupos
 
@@ -167,7 +167,7 @@ Ya puede ejecutar el script UsersAndGroup.ps1 para agregar usuarios y grupos a v
 
 5. Antes de continuar, espere a que el símbolo del sistema vuelva. Primero verá que los grupos aparecen según se han creado y, luego, verá la lista de grupos repetida a medida que se vayan agregando usuarios.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Conectarse a SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 

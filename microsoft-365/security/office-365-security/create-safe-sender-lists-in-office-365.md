@@ -18,12 +18,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las opciones disponibles y preferidas para permitir mensajes entrantes en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1edcbba31075e9880b8ea2034f4ffde50bb71e9
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 0370b72ccf29469bd88679d589d715d8897c921f
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465737"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681686"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Crear listas de remitentes seguros en EOP
 
@@ -101,8 +101,7 @@ En el siguiente ejemplo se supone que necesita correo electrónico de contoso.co
 
       Cuando un mensaje omite el filtrado de correo no deseado debido a una regla de flujo de correo, `SFV:SKN` el valor se marca en el encabezado **X-Forefront-Antispam-Report** . Si el mensaje es de un origen que está en la lista de direcciones IP permitidos, también `IPV:CAL` se agrega el valor. Estos valores pueden ayudarle con la solución de problemas.
 
-      :::image type="content" source="../../media/1-AllowList-SkipFilteringFromContoso.png" alt-text="La configuración de la regla de flujo de correo en el EAC para omitir el filtrado de correo no deseado" lightbox="../../media/1-AllowList-SkipFilteringFromContoso.png":::
-
+![Configuración de regla de flujo de correo en el EAC para omitir el filtrado de correo no deseado.](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
 ## <a name="use-outlook-safe-senders"></a>Usar Outlook Caja fuerte remitentes
 

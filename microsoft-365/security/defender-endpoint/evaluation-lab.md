@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 11927ccd5b132a0ecb3e1a42ddc4622bd5b0d9af
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 2b4c1cd9c37921fbb54633c0fc1bf2e42d308081
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327268"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472889"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratorio de evaluación de Microsoft Defender para puntos de conexión
 
@@ -82,22 +82,22 @@ Puede acceder al laboratorio desde el menú. En el menú de navegación, selecci
 
 1. En el panel de navegación, seleccione **Evaluación & tutoriales** \> **Laboratorio de evaluación** y, a continuación, seleccione **Laboratorio de instalación**.
 
-    :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="Imagen de la página de bienvenida del laboratorio de evaluación.":::
+   :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="Página de bienvenida del laboratorio de evaluación" lightbox="../../media/evaluationtutormenu.png":::
 
 2. Según tus necesidades de evaluación, puedes elegir configurar un entorno con menos dispositivos durante un período más largo o más dispositivos durante un período más corto. Seleccione la configuración de laboratorio preferida y, a continuación, **seleccione Siguiente**.
 
-    ![Imagen de las opciones de configuración de laboratorio.](images/lab-creation-page.png)
+    :::image type="content" source="images/lab-creation-page.png" alt-text="Opciones de configuración de laboratorio" lightbox="images/lab-creation-page.png":::
 
 3. (Opcional) Puede elegir instalar simuladores de amenazas en el laboratorio.
 
-    ![Imagen del agente de simuladores de instalación.](images/install-agent.png)
+    :::image type="content" source="images/install-agent.png" alt-text="Página del agente de simuladores de instalación" lightbox="images/install-agent.png":::
 
    > [!IMPORTANT]
    > Primero deberá aceptar y dar su consentimiento a los términos y las instrucciones de uso compartido de información.
 
 4. Selecciona el agente de simulación de amenazas que quieras usar y escribe los detalles. También puedes elegir instalar simuladores de amenazas más adelante. Si elige instalar agentes de simulación de amenazas durante la configuración del laboratorio, podrá disfrutar de la ventaja de que se instalen cómodamente en los dispositivos que agregue.
 
-    ![Imagen de la página de resumen.](images/lab-setup-summary.png)
+   :::image type="content" source="images/lab-setup-summary.png" alt-text="La página de resumen" lightbox="images/lab-setup-summary.png":::
 
 5. Revise el resumen y seleccione **Laboratorio de instalación**.
 
@@ -134,7 +134,9 @@ La configuración de investigación automatizada dependerá de la configuración
 
 1. En el panel, selecciona **Agregar dispositivo**.
 
-2. Elige el tipo de dispositivo que quieres agregar. Puede elegir agregar Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 y Linux (Ubuntu). 
+2. Elige el tipo de dispositivo que quieres agregar. Puede elegir agregar Windows 10, Windows 11, Windows Server 2019, Windows Server 2016 y Linux (Ubuntu).
+
+   :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="Configuración del laboratorio con opciones de dispositivo" lightbox="../../media/add-machine-optionsnew.png":::
 
    > [!NOTE]
    > Si algo sale mal con el proceso de creación del dispositivo, se te notificará y tendrás que enviar una nueva solicitud. Si se produce un error en la creación del dispositivo, no se contará con la cuota total permitida.
@@ -144,13 +146,14 @@ La configuración de investigación automatizada dependerá de la configuración
    > [!NOTE]
    > La contraseña solo se muestra una vez. Asegúrese de guardarlo para su uso posterior.
 
-    :::image type="content" source="../../media/add-machine-eval-lab-new.png" alt-text="Imagen del dispositivo agregado con detalles de conexión.":::
+    :::image type="content" source="../../media/add-machine-eval-lab-new.png" alt-text="El dispositivo agregado con detalles de conexión" lightbox="../../media/add-machine-eval-lab-new.png":::
 
 4. Se inicia la configuración del dispositivo. Esto puede tardar aproximadamente 30 minutos.
 
 5. Consulta el estado de los dispositivos de prueba, los niveles de riesgo y exposición y el estado de las instalaciones de simulador seleccionando la **pestaña Dispositivos** .
 
-    ![Imagen de la pestaña dispositivos.](images/machines-tab.png)
+   :::image type="content" source="images/machines-tab.png" alt-text="Ficha Dispositivos" lightbox="images/machines-tab.png":::
+    
 
    > [!TIP]
    > En la **columna Estado del** simulador, puede pasar el mouse sobre el icono de información para conocer el estado de instalación de un agente.
@@ -162,7 +165,7 @@ Cuando se usan y eliminan todos los dispositivos existentes, puedes solicitar m�
 
 1. En el panel del laboratorio de evaluación, seleccione **Solicitar más dispositivos**.
 
-   ![Imagen de solicitud para más dispositivos.](images/request-more-devices.png)
+   :::image type="content" source="images/request-more-devices.png" alt-text="La opción solicitar más dispositivos" lightbox="images/request-more-devices.png":::
 
 2. Elija la configuración.
 3. Envíe la solicitud.
@@ -196,11 +199,10 @@ Si está buscando una simulación pre-realizada, puede usar nuestros [escenarios
 
 1. Conectar a tu dispositivo y ejecuta una simulación de ataque seleccionando **Conectar**.
 
-    ![Imagen del botón conectar para dispositivos de prueba.](images/test-machine-table.png)
+    :::image type="content" source="images/test-machine-table.png" alt-text="El Conectar para los dispositivos de prueba" lightbox="images/test-machine-table.png":::
 
 
-2. Para **Windows dispositivos**: guarde el archivo RDP e inicielo seleccionando **Conectar**.<br> 
-    ![Imagen de conexión de escritorio remoto.](images/remote-connection.png)
+   :::image type="content" source="images/remote-connection.png" alt-text="Pantalla de conexión de escritorio remoto" lightbox="images/remote-connection.png":::
 
     Para **dispositivos Linux**: deberá usar un cliente SSH local y el comando proporcionado. 
 
@@ -208,13 +210,13 @@ Si está buscando una simulación pre-realizada, puede usar nuestros [escenarios
     > [!NOTE]
     > Si no tiene una copia de la contraseña guardada durante la configuración inicial, puede restablecer la contraseña seleccionando **Restablecer** contraseña en el menú:
     >
-    > ![Imagen de la contraseña de restablecimiento.](images/reset-password-test-machine.png)
+    > :::image type="content" source="images/reset-password-test-machine.png" alt-text="La opción Restablecer contraseña" lightbox="images/reset-password-test-machine.png":::
     >
     > El dispositivo cambiará su estado a "Ejecutar el restablecimiento de contraseña" y, a continuación, se te presentará la nueva contraseña en unos minutos.
 
 3. Escribe la contraseña que se ha mostrado durante el paso de creación del dispositivo.
 
-   ![Imagen de ventana para escribir credenciales.](images/enter-password.png)
+   :::image type="content" source="images/enter-password.png" alt-text="La pantalla en la que se escriben las credenciales" lightbox="images/enter-password.png":::
 
 4. Ejecuta simulaciones de ataques do-it-yourself en el dispositivo.
 
@@ -235,13 +237,13 @@ Ejecutar simulaciones de amenazas con plataformas de terceros es una buena maner
 
 2. Seleccione un simulador de amenazas.
 
-    ![Imagen de selección del simulador de amenazas.](images/select-simulator.png)
+   :::image type="content" source="images/select-simulator.png" alt-text="Selección del simulador de amenazas" lightbox="images/select-simulator.png":::
 
 3. Elija una simulación o busque en la galería de simulación para examinar las simulaciones disponibles.
 
     Puede acceder a la galería de simulación desde:
     - El panel de evaluación principal en el icono **de información general de Simulaciones** o
-    - Al navegar desde el panel de navegación Evaluación y **tutoriales De simulación** \> **& tutoriales** y, a continuación, seleccione **Catálogo de simulaciones**.
+    - Al navegar desde el panel de navegación Evaluación **y tutoriales De simulación** \> **& tutoriales** y, a continuación, seleccione **Catálogo de simulaciones**.
 
 4. Selecciona los dispositivos en los que quieres ejecutar la simulación.
 
@@ -249,7 +251,7 @@ Ejecutar simulaciones de amenazas con plataformas de terceros es una buena maner
 
 6. Para ver el progreso de una simulación, seleccione la **pestaña Simulaciones** . Vea el estado de simulación, las alertas activas y otros detalles.
 
-    ![Imagen de la pestaña simulaciones.](images/simulations-tab.png)
+   :::image type="content" source="images/simulations-tab.png" alt-text="Pestaña Simulaciones" lightbox="images/simulations-tab.png":::
 
 Después de ejecutar las simulaciones, te animamos a recorrer la barra de progreso del laboratorio y explorar **Microsoft Defender for Endpoint desencadenando una investigación y corrección automatizadas**. Consulte las pruebas recopiladas y analizadas por la característica.
 
@@ -265,21 +267,21 @@ Se muestra una lista de agentes de simulación de amenazas de terceros compatibl
 
 Puede ejecutar cómodamente cualquier simulación disponible directamente desde el catálogo.
 
-![Imagen del catálogo de simulaciones.](images/simulations-catalog.png)
+:::image type="content" source="images/simulations-catalog.png" alt-text="Catálogo de simulaciones" lightbox="images/simulations-catalog.png":::
 
 Cada simulación incluye una descripción detallada del escenario de ataque y referencias como las técnicas de ataque MITRE usadas y las consultas avanzadas de búsqueda de ejemplo que se ejecutan.
 
 **Ejemplos:**
 
-![Imagen de los detalles de la descripción de la simulación1.](images/simulation-details-aiq.png)
+:::image type="content" source="images/simulation-details-aiq.png" alt-text="Ejemplo del panel de detalles de descripción de la simulación para métodos de persistencia" lightbox="images/simulation-details-aiq.png":::
 
-![Imagen de detalles de descripción de simulación2.](images/simulation-details-sb.png)
+:::image type="content" source="images/simulation-details-sb.png" alt-text="Detalles de la descripción de la simulación para APT29" lightbox="images/simulation-details-sb.png":::
 
 ## <a name="evaluation-report"></a>Informe de evaluación
 
 Los informes de laboratorio resumen los resultados de las simulaciones realizadas en los dispositivos.
 
-![Imagen del informe de evaluación.](images/eval-report.png)
+:::image type="content" source="images/eval-report.png" alt-text="Informe de evaluación" lightbox="images/eval-report.png":::
 
 De un vistazo, podrás ver rápidamente:
 
@@ -296,4 +298,4 @@ Sus comentarios nos ayudan a mejorar la protección del entorno frente a ataques
 
 Háganos saber lo que piensa, seleccionando **Proporcionar comentarios**.
 
-![Imagen de proporcionar comentarios.](images/send-us-feedback-eval-lab.png)
+:::image type="content" source="images/send-us-feedback-eval-lab.png" alt-text="La página de comentarios" lightbox="images/send-us-feedback-eval-lab.png":::

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 91dd3dc8563e7bd443362c47190139101a5ede61
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: b5d9346746dba3b7b4c75909cb8e36e47c3c9d99
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464327"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472515"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analizador de rendimiento para Antivirus de Microsoft Defender
 
@@ -42,7 +42,7 @@ Algunas opciones para analizar incluyen:
 
 El proceso de alto nivel para ejecutar el analizador de rendimiento implica los siguientes pasos:
 
-1. Ejecute el analizador de rendimiento para recopilar una grabación de rendimiento de Antivirus de Microsoft Defender eventos en el punto de conexión.
+1. Ejecute el analizador de rendimiento para recopilar una grabación de rendimiento de Antivirus de Microsoft Defender eventos en el extremo.
 
    > [!NOTE]
    > El rendimiento de Antivirus de Microsoft Defender eventos del tipo **Microsoft-Antimalware-Engine** se registran a través del analizador de rendimiento.
@@ -57,7 +57,7 @@ Para iniciar la grabación de eventos del sistema, abra PowerShell en modo admin
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
-    donde `-RecordTo` parámetro especifica la ubicación de ruta de acceso completa en la que se guarda el archivo de seguimiento. Para obtener más información sobre los cmdlets, [consulte Antivirus de Microsoft Defender cmdlets](/powershell/module/defender).
+    donde `-RecordTo` parámetro especifica la ubicación de ruta de acceso completa en la que se guarda el archivo de seguimiento. Para obtener más información sobre los [cmdlets, consulte Antivirus de Microsoft Defender cmdlets](/powershell/module/defender).
 
 2. Si se cree que hay procesos o servicios que afectan al rendimiento, reproduzca la situación llevando a cabo las tareas pertinentes.
 
@@ -74,7 +74,7 @@ Para obtener más información sobre los parámetros y las opciones de la línea
 
 En función de la consulta, el usuario podrá ver datos para los recuentos de examen, la duración (total/min/average/max/median), la ruta de acceso, el proceso y el motivo del examen. La imagen siguiente muestra el resultado de ejemplo de una consulta sencilla de los 10 archivos principales para el impacto del examen. 
 
-:::image type="content" source="images/example-output.png" alt-text="Resultado de ejemplo para una consulta básica de TopFiles":::
+:::image type="content" source="images/example-output.png" alt-text="Resultado de ejemplo para una consulta básica de TopFiles" lightbox="images/example-output.png":::
 
 ### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>Funcionalidad adicional: exportar y convertir a CSV y JSON
 
@@ -99,7 +99,7 @@ Antivirus de Microsoft Defender analizador de rendimiento tiene los siguientes r
 - Versión de PowerShell: PowerShell versión 5.1, PowerShell ISE, PowerShell remoto (4.18.2201.10+), PowerShell 7.x (4.18.2201.10+)
 
 ## <a name="powershell-reference"></a>Referencia de PowerShell
-Hay dos cmdlets de PowerShell nuevos que se usan para ajustar el rendimiento de Antivirus de Microsoft Defender: 
+Hay dos nuevos cmdlets de PowerShell que se usan para ajustar el rendimiento de Antivirus de Microsoft Defender: 
 
 - [New-MpPerformanceRecording](#new-mpperformancerecording)
 - [Get-MpPerformanceReport](#get-mpperformancereport)

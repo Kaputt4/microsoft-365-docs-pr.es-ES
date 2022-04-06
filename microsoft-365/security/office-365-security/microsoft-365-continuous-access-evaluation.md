@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 255618508559e989a356ab404429bc4d87bfe2c6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e265fd09fa7442b24868ad7f001701ef567e32bd
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324541"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681576"
 ---
 # <a name="continuous-access-evaluation-for-microsoft-365"></a>Evaluación de acceso continua para Microsoft 365
 
@@ -76,10 +76,6 @@ La evaluación de directivas de acceso condicional se produce cuando la cuenta d
 
 Los siguientes servicios Microsoft 365 actualmente admiten la evaluación continua de acceso escuchando eventos de Azure AD.
 
-<br>
-
-****
-
 |Tipo de aplicación|Exchange|SharePoint|Teams|
 |---|---|---|---|
 |**Eventos críticos:**||||
@@ -87,7 +83,6 @@ Los siguientes servicios Microsoft 365 actualmente admiten la evaluación contin
 |Riesgo de usuario|Compatible|No se admite|No se admite|
 |**Evaluación de directivas de acceso condicional:**||||
 |Directiva de ubicación de direcciones IP|Compatible|Compatible\*|Compatible|
-|
 
 \*SharePoint Office de explorador web admite la aplicación instantánea de directivas IP habilitando el modo estricto. Sin el modo estricto, la duración del token de acceso es de una hora.
 
@@ -101,7 +96,7 @@ Los siguientes clientes admiten la evaluación continua de acceso en web, Win32,
 
 - Outlook
 - Teams
-- Office\*
+- Oficina\*
 - SharePoint
 - OneDrive
 
@@ -109,7 +104,7 @@ Los siguientes clientes admiten la evaluación continua de acceso en web, Win32,
 
 Para los clientes que no admiten la evaluación continua del acceso, la duración del token de acceso Microsoft 365 permanece como una hora de forma predeterminada.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Evaluación continua del acceso](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
 - [Documentación de acceso condicional](/azure/active-directory/conditional-access/overview)

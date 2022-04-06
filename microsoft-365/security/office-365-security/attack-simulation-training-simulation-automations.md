@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a crear simulaciones automatizadas que contienen técnicas y cargas específicas que se inician cuando se cumplen las condiciones especificadas en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 327091706ed7c8c2a6f1f1180af7888ed67c1a57
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 3ad24a8b6d2be18fb7ef5fd49be7f2197b3be3a7
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526184"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680960"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>Automatización de la simulación para el aprendizaje de simulación de ataques
 
@@ -230,15 +230,10 @@ En la **página Página de** aterrizaje, se configura la página web a la que se
 
 - **Seleccionar preferencia de página de aterrizaje**: Los valores disponibles dependen de las selecciones anteriores en la página [Seleccionar cargas](#select-payloads) , como se describe en la tabla siguiente:
 
-  <br>
-
-  ****
-
   |Selección en la página Seleccionar cargas|Valores disponibles para Seleccionar preferencia de página de aterrizaje|
   |---|---|
   |Selección manual|Usar la página de aterrizaje predeterminada de Microsoft <p> Crear su propia página de aterrizaje <p> Usar una dirección URL personalizada <p> **Nota**: El **valor Usar una dirección URL** personalizada no está disponible si seleccionó previamente Datos [adjuntos](#select-one-or-more-social-engineering-techniques) de **malware** o Vincular a **malware** en la página Seleccionar técnicas de ingeniería social.|
   |Randomize|Usar la página de aterrizaje predeterminada de Microsoft|
-  |
 
   En la siguiente lista **se** describen los valores de preferencia seleccionar página de aterrizaje disponibles y su configuración asociada:
 

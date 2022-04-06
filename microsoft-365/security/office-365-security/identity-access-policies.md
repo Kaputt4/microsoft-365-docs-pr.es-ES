@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 08d15cacdd6b391759aeb1a22abd91c98376cd17
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 36df54090e80de180ffa16f41641daa6b6966eb9
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321759"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681334"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos y identidad de confianza cero
 
@@ -58,16 +58,15 @@ Para darle tiempo para llevar a cabo estas tareas, se recomienda implementar las
 
 |Nivel de protección|Directivas|Más información|Licencias|
 |---|---|---|---|
-|**Punto de partida**|[Requerir MFA cuando el riesgo de inicio de sesión *es medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con el complemento seguridad E5|
-||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](#block-clients-that-dont-support-multi-factor)|Los clientes que no usan la autenticación moderna pueden omitir las directivas de acceso condicional, por lo que es importante bloquear estas directivas.|Microsoft 365 E3 o E5|
+|**Punto de inicio**|[Requerir MFA cuando el riesgo de inicio de sesión *es medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con el complemento seguridad E5|
+||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](#block-clients-that-dont-support-multi-factor)|Los clientes que no usan la autenticación moderna pueden omitir las directivas de acceso condicional, por lo que es importante bloquear estas directivas.|Microsoft 365 E3 o E5|
 ||[Los usuarios de riesgo alto tienen que cambiar la contraseña](#high-risk-users-must-change-password)|Fuerza a los usuarios a cambiar su contraseña al iniciar sesión si se detecta actividad de alto riesgo para su cuenta.|Microsoft 365 E5 o Microsoft 365 E3 con el complemento seguridad E5|
 ||[Aplicar protección de datos de directivas de protección de aplicaciones (APP)](#apply-app-data-protection-policies)|Una directiva de Protección de aplicaciones de Intune por plataforma (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 o E5|
 ||[Requerir aplicaciones aprobadas y protección de aplicaciones](#require-approved-apps-and-app-protection)|Aplica la protección de aplicaciones móviles para teléfonos y tabletas con iOS, iPadOS o Android.|Microsoft 365 E3 o E5|
 |**Empresarial**|[Requerir MFA cuando el riesgo de inicio de sesión *es bajo*, *medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con el complemento seguridad E5|
-||[Definir directivas de cumplimiento de dispositivos](#define-device-compliance-policies)|Una directiva para cada plataforma.|Microsoft 365 E3 o E5|
-||[Requerir equipos y dispositivos móviles compatibles](#require-compliant-pcs-and-mobile-devices)|Aplica la administración de Intune para equipos (Windows o macOS) y teléfonos o tabletas (iOS, iPadOS o Android).|Microsoft 365 E3 o E5|
-|**Seguridad especializada**|[*Requerir* siempre MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 o E5|
-|
+||[Definir directivas de cumplimiento de dispositivos](#define-device-compliance-policies)|Una directiva para cada plataforma.|Microsoft 365 E3 o E5|
+||[Requerir equipos y dispositivos móviles compatibles](#require-compliant-pcs-and-mobile-devices)|Aplica la administración de Intune para equipos (Windows o macOS) y teléfonos o tabletas (iOS, iPadOS o Android).|Microsoft 365 E3 o E5|
+|**Seguridad especializada**|[*Requerir* siempre MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 o E5|
 
 ## <a name="assigning-policies-to-groups-and-users"></a>Asignar directivas a grupos y usuarios
 
@@ -112,14 +111,13 @@ En las tablas siguientes se describe la configuración de la directiva de acceso
 
 En la **sección Asignaciones** :
 
-|Setting|Propiedades|Valores|Notas|
+|Configuración|Propiedades|Valores|Notas|
 |---|---|---|---|
 |Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos**: seleccione grupos específicos que contengan cuentas de usuario dirigidas.|Comience con el grupo que incluye cuentas de usuario piloto.|
 ||Excluir|**Usuarios y grupos**: seleccione el grupo de excepciones acceso condicional; cuentas de servicio (identidades de aplicación).|La pertenencia debe modificarse según sea necesario y temporalmente.|
 |Acciones o aplicaciones en la nube|**Aplicaciones en la nube > incluir**|**Seleccionar aplicaciones**: selecciona las aplicaciones a las que quieres que se aplique esta directiva. Por ejemplo, seleccione Exchange Online.||
 |Condiciones|||Configure condiciones específicas de su entorno y necesidades.|
 ||Riesgo de inicio de sesión||Vea las instrucciones de la tabla siguiente.|
-|
 
 ### <a name="sign-in-risk-condition-settings"></a>Configuración de condición de riesgo de inicio de sesión
 
@@ -130,16 +128,14 @@ Aplica la configuración del nivel de riesgo en función del nivel de protecció
 |Punto de inicio|Alto, medio|Compruebe ambos.|
 |Empresa|Alto, medio, bajo|Compruebe los tres.|
 |Seguridad especializada||Deje todas las opciones desactivadas para aplicar siempre MFA.|
-|
 
 En la **sección Controles de** Access:
 
-|Setting|Propiedades|Valores|Acción|
+|Configuración|Propiedades|Valores|Acción|
 |---|---|---|---|
 |Conceder|**Conceder acceso**||Seleccionar|
 |||**Requerir autenticación multifactor**|Cheque|
 ||**Exigir todos los controles seleccionados**||Seleccionar|
-|
 
 Elija **Seleccionar** para guardar la **configuración de** concesión.
 
@@ -155,21 +151,19 @@ Vea [este artículo](../../enterprise/microsoft-365-client-support-multi-factor-
 
 En la **sección Asignaciones** :
 
-|Setting|Propiedades|Valores|Notas|
+|Configuración|Propiedades|Valores|Notas|
 |---|---|---|---|
 |Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos**: seleccione grupos específicos que contengan cuentas de usuario dirigidas.|Comience con el grupo que incluye cuentas de usuario piloto.|
 ||Excluir|**Usuarios y grupos**: seleccione el grupo de excepciones acceso condicional; cuentas de servicio (identidades de aplicación).|La pertenencia debe modificarse según sea necesario y temporalmente.|
 |Acciones o aplicaciones en la nube|**Aplicaciones en la nube > incluir**|**Seleccionar aplicaciones**: seleccione las aplicaciones correspondientes a los clientes que no admiten la autenticación moderna.||
 |Condiciones|**Aplicaciones cliente**|Elija **Sí** para **Configurar** <p> Desactive las marcas de verificación para **aplicaciones de** explorador **y móviles y clientes de escritorio**||
-|
 
 En la **sección Controles de** Access:
 
-|Setting|Propiedades|Valores|Acción|
+|Configuración|Propiedades|Valores|Acción|
 |---|---|---|---|
 |Conceder|**Bloquear acceso**||Seleccionar|
 ||**Exigir todos los controles seleccionados**||Seleccionar|
-|
 
 Elija **Seleccionar** para guardar la **configuración de** concesión.
 
@@ -191,15 +185,13 @@ En la **sección Asignaciones** :
 |---|---|---|---|
 |Usuarios|Incluir|**Todos los usuarios**|Seleccionar|
 |Riesgo de usuario|**Alto**||Seleccionar|
-|
 
 En la segunda **sección Asignaciones** :
 
 |Tipo|Propiedades|Valores|Acción|
 |---|---|---|---|
-|Access|**Permitir acceso**||Seleccionar|
+|Acceso|**Permitir acceso**||Seleccionar|
 |||**Exigir cambio de contraseña**|Cheque|
-|
 
 Elija **Listo** para guardar la **configuración de Access** .
 
@@ -228,7 +220,6 @@ Con los principios descritos en Las configuraciones de identidad de confianza ce
 |Punto de inicio|[Protección de datos mejorada de nivel 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|La configuración de directiva aplicada en el nivel 2 incluye todas las configuraciones de directiva recomendadas para el nivel 1 y solo agrega o actualiza la siguiente configuración de directiva para implementar más controles y una configuración más sofisticada que el nivel 1.|
 |Empresa|[Protección de datos mejorada de nivel 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|La configuración de directiva aplicada en el nivel 2 incluye todas las configuraciones de directiva recomendadas para el nivel 1 y solo agrega o actualiza la siguiente configuración de directiva para implementar más controles y una configuración más sofisticada que el nivel 1.|
 |Seguridad especializada|[Protección de datos de nivel 3 de empresa alta](/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|La configuración de directiva aplicada en el nivel 3 incluye toda la configuración de directiva recomendada para los niveles 1 y 2 y solo agrega o actualiza la siguiente configuración de directiva para implementar más controles y una configuración más sofisticada que el nivel 2.|
-|
 
 Para crear una nueva directiva de protección de aplicaciones para cada plataforma (iOS y Android) en Microsoft Endpoint Manager la configuración del marco de protección de datos, puede:
 
@@ -362,7 +353,6 @@ Para **obtener información sobre > Windows de evaluación del servicio de atest
 |Requerir BitLocker|Obligatoria|Seleccionar|
 |Requerir que el arranque seguro esté habilitado en el dispositivo|Obligatoria|Seleccionar|
 |Requerir integridad de código|Obligatoria|Seleccionar|
-|
 
 Para **las propiedades del dispositivo**, especifique los valores adecuados para las versiones del sistema operativo en función de las directivas de TI y seguridad.
 
@@ -388,14 +378,12 @@ Para **Seguridad del sistema**, consulte esta tabla.
 ||Versión mínima de Antimalware de Microsoft Defender||Tipo <p> Solo se admite para Windows 10 escritorio. Microsoft recomienda versiones no más de cinco detrás de la versión más reciente.|
 ||Firma antimalware de Microsoft Defender actualizada|Obligatoria|Seleccionar|
 ||Protección en tiempo real|Obligatoria|Seleccionar <p> Solo se admite para Windows 10 escritorio posterior|
-|
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
 |Tipo|Propiedades|Valor|Acción|
 |---|---|---|---|
-|Reglas de Microsoft Defender para endpoint en el Centro Microsoft Endpoint Manager administración|[Requerir que el dispositivo esté en o bajo la puntuación de riesgo de la máquina](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Mediano|Seleccionar|
-|
+|Reglas de Microsoft Defender para endpoint en el Centro Microsoft Endpoint Manager administración|[Requerir que el dispositivo esté en o bajo la puntuación de riesgo de la máquina](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medio|Seleccionar|
 
 <!--
 ## Require compliant PCs (but not compliant phones and tablets)

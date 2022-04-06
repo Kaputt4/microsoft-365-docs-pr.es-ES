@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
@@ -19,20 +19,20 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Para direcciones IP de destino y direcciones URL para Microsoft 365 tráfico, use esta lista de artículos para los puntos de conexión de Internet de las distintas Microsoft 365 nubes.
-ms.openlocfilehash: ba2cb102bfee3ab49a563b0816b754788dec1015
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: 29b9d720209eee66103ceca9384fc8d18c1621ae
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61566656"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681554"
 ---
 # <a name="microsoft-365-endpoints"></a>Puntos de conexión de Microsoft 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Los puntos de conexión son el conjunto de direcciones IP de destino, nombres de dominio DNS y direcciones URL para Microsoft 365 tráfico en Internet. 
 
-Para optimizar el rendimiento Microsoft 365 servicios basados en la nube, estos puntos de conexión necesitan un tratamiento especial por parte de los exploradores cliente y los dispositivos de la red perimetral. Estos dispositivos incluyen firewalls, dispositivos de inspección e interrupción SSL y dispositivos de inspección de paquetes y sistemas de prevención de pérdida de datos.
+Para optimizar el rendimiento Microsoft 365 servicios basados en la nube, estos puntos de conexión necesitan un control especial por parte de los exploradores cliente y los dispositivos de la red perimetral. Estos dispositivos incluyen firewalls, dispositivos de inspección e interrupción SSL y dispositivos de inspección de paquetes y sistemas de prevención de pérdida de datos.
 
 Consulte [Managing Microsoft 365 endpoints](managing-office-365-endpoints.md) para obtener más información.
 
@@ -40,13 +40,13 @@ Actualmente hay cinco nubes Microsoft 365 diferentes. Esta tabla le lleva a la l
 
 | Nube | Descripción |
 |:-------|:-----|
-| [Puntos de conexión mundiales](urls-and-ip-address-ranges.md) | Los puntos de conexión para las suscripciones de Microsoft 365, que incluyen la Government Community Cloud Estados Unidos (GCC). |
+| [Puntos de conexión mundiales](urls-and-ip-address-ranges.md) | Los puntos de conexión para las suscripciones de Microsoft 365 mundial, que incluyen la Government Community Cloud Estados Unidos (GCC). |
 | [Puntos de conexión de DoD de Estados Unidos](microsoft-365-u-s-government-dod-endpoints.md) | Puntos de conexión para las suscripciones del Department of Defense (DoD) de Estados Unidos. |
 | [Puntos de conexión de GCC High de Estados Unidos](microsoft-365-u-s-government-gcc-high-endpoints.md) | Puntos de conexión para suscripciones a Government Community Cloud High (GCC High) de Estados Unidos. |
-| [Microsoft 365 operado por 21 puntos de conexión deVianet](urls-and-ip-address-ranges-21vianet.md) | Los puntos de conexión para Microsoft 365 operados por 21Vianet, que está diseñado para satisfacer las necesidades de Microsoft 365 en China. |
+| [Microsoft 365 operado por 21 puntos de conexión deVianet](urls-and-ip-address-ranges-21vianet.md) | Los puntos de conexión Microsoft 365 operados por 21Vianet, que está diseñado para satisfacer las necesidades de Microsoft 365 en China. |
 |||
 
-Para automatizar la obtención de la lista más reciente de puntos de conexión para la nube Microsoft 365, consulte el Office 365 [dirección IP y el servicio web url](microsoft-365-ip-web-service.md).
+Para automatizar la obtención de la lista más reciente de puntos de conexión para la nube Microsoft 365, consulte el Office 365 dirección [IP y el servicio web url](microsoft-365-ip-web-service.md).
 
 Para consultar puntos de conexión adicionales, vea estos artículos:
 

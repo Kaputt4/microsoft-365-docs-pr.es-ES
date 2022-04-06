@@ -1,7 +1,7 @@
 ---
 title: Configurar Microsoft Defender para la implementación de puntos de conexión
 description: Obtenga información sobre cómo configurar la implementación de Microsoft Defender para endpoint
-keywords: 'implementación, configuración, validación de licencias, configuración de inquilino, configuración de red'
+keywords: implementación, configuración, validación de licencias, configuración de inquilino, configuración de red
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,14 +12,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365solution-endpointprotect
-  - m365solution-scenario
+- M365-security-compliance
+- m365solution-endpointprotect
+- m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
+ms.openlocfilehash: 8e905db8ba5e868a9913c785bd7f9bc0cc67b39a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472691"
 ---
-
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurar Microsoft Defender para la implementación de puntos de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -33,7 +38,7 @@ ms.technology: mde
 
 La implementación de Defender for Endpoint es un proceso de tres fases:
 
-|[![fase de implementación: preparar.](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Fase 1: Preparación](prepare-deployment.md) | ![fase de implementación: configuración](images/phase-diagrams/setup.png)<br>Fase 2: Configuración | [![fase de implementación: incorporación](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Fase 3: Incorporación](onboarding.md)|
+|[![fase de implementación: preparar.](images/phase-diagrams/prepare.png#lightbox)](prepare-deployment.md)<br>[Fase 1: Preparación](prepare-deployment.md) | ![fase de implementación: configuración](images/phase-diagrams/setup.png#lightbox)<br>Fase 2: Configuración | [![fase de implementación: incorporación](images/phase-diagrams/onboard.png#lightbox)](onboarding.md)<br>[Fase 3: Incorporación](onboarding.md)|
 |---|---|---|
 ||*¡Estás aquí!*||
 
@@ -54,13 +59,13 @@ La comprobación del estado de la licencia y si se aprovisionó correctamente, s
 
 1. Para ver las licencias, vaya al portal de Microsoft Azure **y** vaya a la [sección Microsoft Azure licencia del portal.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
 
-   ![Imagen de la página Licencias de Azure.](images/atp-licensing-azure-portal.png)
+   :::image type="content" source="images/atp-licensing-azure-portal.png" alt-text="La página Licencias de Azure" lightbox="images/atp-licensing-azure-portal.png":::
 
 1. Como alternativa, en el Centro de administración, vaya a **Suscripciones de** \> **facturación**.
 
     En la pantalla, verá todas las licencias aprovisionadas y su estado **actual**.
 
-    ![Imagen de las licencias de facturación.](images/atp-billing-subscriptions.png)
+    :::image type="content" source="images/atp-billing-subscriptions.png" alt-text="La página de licencias de facturación" lightbox="images/atp-billing-subscriptions.png":::
 
 ## <a name="cloud-service-provider-validation"></a>Validación del proveedor de servicios en la nube
 
@@ -70,11 +75,11 @@ Para obtener acceso a las licencias que se aprovisionan a su empresa y comprobar
 
 2. Al hacer clic en **el vínculo Portal** de partners, se abrirá la opción **Administrador** en nombre del usuario y se le dará acceso al Centro de administración de clientes.
 
-   ![Imagen del portal de administración de O365.](images/atp-O365-admin-portal-customer.png)
+   :::image type="content" source="images/atp-O365-admin-portal-customer.png" alt-text="El Office 365 de administración" lightbox="images/atp-O365-admin-portal-customer.png":::
 
 ## <a name="tenant-configuration"></a>Configuración del espacio empresarial
 
-La incorporación a Microsoft Defender para Endpoint es fácil. En el menú de navegación, seleccione cualquier elemento en la sección Puntos de conexión o cualquier característica de Microsoft 365 Defender como Incidentes, Búsqueda, Centro de acción o Análisis de amenazas para iniciar el proceso de incorporación.
+La incorporación a Microsoft Defender para Endpoint es fácil. En el menú de navegación, seleccione cualquier elemento de la sección Puntos de conexión o cualquier característica de Microsoft 365 Defender como Incidentes, Búsqueda, Centro de acción o Análisis de amenazas para iniciar el proceso de incorporación.
 
 Desde un explorador web, vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender web</a>.
 
@@ -110,13 +115,13 @@ Configure un proxy estático basado en el Registro para permitir que solo el sen
 2. Cree una directiva o edite una directiva existente basada en las prácticas organizativas.
 3. Edite la directiva de grupo y vaya a **Plantillas \> administrativas Windows Componentes \> \> de recopilación de datos y versiones preliminares Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**.
 
-   ![Imagen de configuración de directiva de grupo.](images/atp-gpo-proxy1.png)
+   :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="Las opciones relacionadas con la configuración de la directiva de uso" lightbox="images/atp-gpo-proxy1.png":::
 
 4. Seleccione **Habilitado**.
 5. Seleccione **Deshabilitar el uso de proxy autenticado**.
 6. Vaya a **Plantillas administrativas Windows \> de datos componentes \> y versiones preliminares Configure la telemetría y las experiencias \> de usuario conectadas**.
 
-    ![Imagen de la configuración de directiva de grupo.](images/atp-gpo-proxy2.png)
+   :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="Las opciones relacionadas con la configuración de la telemetría y la experiencia del usuario conectado" lightbox="images/atp-gpo-proxy2.png":::
 
 7. Seleccione **Habilitado**.
 8. Escriba el **nombre del servidor proxy**.
@@ -156,7 +161,7 @@ Use netsh para configurar un proxy estático en todo el sistema.
 
 ### <a name="proxy-configuration-for-down-level-devices"></a>Configuración de proxy para dispositivos de nivel inferior
 
-Down-Level incluyen Windows estaciones de trabajo de Windows 8.1 y 7 SP1, así como Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 y versiones de Windows Server 2016 anteriores a Windows  Servidor CB 1803. Estos sistemas operativos tendrán el proxy configurado como parte del Agente de administración de Microsoft para controlar la comunicación desde el punto de conexión a Azure. Consulte la Guía de implementación rápida de Microsoft Management Agent para obtener información sobre cómo se configura un proxy en estos dispositivos.
+Down-Level incluyen Windows estaciones de trabajo 7 SP1 y Windows 8.1, así como Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 y versiones de Windows Server 2016 antes de Windows  Servidor CB 1803. Estos sistemas operativos tendrán el proxy configurado como parte del Agente de administración de Microsoft para controlar la comunicación desde el punto de conexión a Azure. Consulte la Guía de implementación rápida de Microsoft Management Agent para obtener información sobre cómo se configura un proxy en estos dispositivos.
 
 ### <a name="proxy-service-urls"></a>Direcciones URL del servicio proxy
 
@@ -173,10 +178,9 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 
 |Hoja de cálculo de la lista de dominios| Descripción|
 |---|---|
-|Lista de direcciones URL de Microsoft Defender para puntos de conexión para clientes comerciales | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo para clientes comerciales. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Lista de direcciones URL de punto de conexión de Microsoft Defender para clientes de Gov/GCC/DoD| Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sos para clientes gov/GCC/DoD. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|:::image type="content" source="images/mdatp-urls.png" alt-text="Hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión" lightbox="images/mdatp-urls.png":::|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
 
 ## <a name="next-step"></a>Paso siguiente
 
-![**Fase 3: Incorporación**.](images/onboard.png) <br> [Fase 3: Incorporación](onboarding.md) de dispositivos al servicio para que el servicio de Microsoft Defender para endpoints pueda obtener datos de sensores de ellos.
+[![**Fase 3: Incorporación**.](images/onboard.png#lightbox)] <br> [Fase 3: Incorporación](onboarding.md) de dispositivos al servicio para que el servicio de Microsoft Defender para endpoints pueda obtener datos de sensores de ellos.

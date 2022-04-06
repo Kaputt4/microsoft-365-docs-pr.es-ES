@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 1dbcfbff2a45cd3dfbc453f84eaa73e178174aee
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 445cb497abfaa0e7e4322268a761aafbaa0e31d6
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312017"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680916"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Trabajo previo para implementar directivas de identidad de confianza cero y acceso a dispositivos
 
@@ -43,18 +43,17 @@ En la tabla siguiente se detallan las características de requisitos previos y s
 
 |Configuración|Excepciones|Licencias|
 |---|:---:|---|
-|[Configurar PHS](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Esto debe habilitarse para detectar credenciales filtradas y actuar sobre ellas para el acceso condicional basado en riesgos. **Nota:** Esto es necesario independientemente de si su organización usa la autenticación federada.|Solo de nube|Microsoft 365 E3 o E5|
-|[Habilite el inicio de sesión único sin](/azure/active-directory/connect/active-directory-aadconnect-sso) problemas para iniciar sesión automáticamente a los usuarios cuando estén en sus dispositivos de la organización conectados a la red de la organización.|Solo en la nube y federada|Microsoft 365 E3 o E5|
-|[Configurar ubicaciones con nombre](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations). Azure AD Identity Protection recopila y analiza todos los datos de sesión disponibles para generar una puntuación de riesgo. Se recomienda especificar los intervalos IP públicos de la organización para la red en la Azure AD de ubicaciones con nombre. El tráfico procedente de estos intervalos tiene una puntuación de riesgo reducida y el tráfico de fuera del entorno de la organización tiene una mayor puntuación de riesgo.||Microsoft 365 E3 o E5|
-|[Registrar todos los usuarios para el restablecimiento de contraseñas de autoservicio (SSPR) y la autenticación multifactor (MFA).](/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). Se recomienda registrar usuarios para la Azure AD multifactor con antelación. Azure AD Identity Protection usa la Azure AD multifactor para realizar una comprobación de seguridad adicional. Además, para obtener la mejor experiencia de inicio de sesión, se recomienda que los usuarios instalen la [aplicación Microsoft Authenticator](/azure/active-directory/user-help/microsoft-authenticator-app-how-to) y la aplicación Portal de empresa Microsoft en sus dispositivos. Se pueden instalar desde la tienda de aplicaciones para cada plataforma.||Microsoft 365 E3 o E5|
-|[Habilitar el registro automático de dispositivos de equipos unidos Windows dominio](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup). El acceso condicional garantizará que los dispositivos que se conecten a aplicaciones estén unidos a un dominio o sean compatibles. Para permitir esto en equipos Windows, el dispositivo debe estar registrado con Azure AD.  En este artículo se explica cómo configurar el registro automático de dispositivos.|Solo de nube|Microsoft 365 E3 o E5|
-|**Preparar el equipo de soporte técnico**. Tenga preparado un plan para los usuarios que no puedan completar MFA. Esto podría ser agregarlos a un grupo de exclusión de directivas o registrar nueva información de MFA para ellos. Antes de realizar cualquiera de estos cambios confidenciales de seguridad, debe asegurarse de que el usuario real realiza la solicitud. Un paso eficaz es exigir a los administradores de los usuarios que ayuden con la aprobación.||Microsoft 365 E3 o E5|
-|[Configurar la escritura diferida de contraseñas en AD local](/azure/active-directory/active-directory-passwords-getting-started). La reescribición de contraseñas Azure AD requerir que los usuarios cambien sus contraseñas locales cuando se detecte un riesgo de cuenta de alto riesgo. Puede habilitar esta característica mediante Azure AD Conectar de dos maneras: habilitar la escritura de contraseña en la  pantalla de características opcionales de Azure AD Conectar configuración o habilitarla a través de Windows PowerShell.|Solo de nube|Microsoft 365 E3 o E5|
-|[Configure Azure AD de contraseña.](/azure/active-directory/authentication/concept-password-ban-bad) La protección de contraseñas de Azure AD detecta y bloquea las contraseñas que son conocidas por ser vulnerables y sus variantes. Además, también puede bloquear los términos vulnerables adicionales que sean específicos de su organización. Las listas de contraseñas desvetadas global predeterminada se aplican automáticamente a todos los usuarios de un inquilino de Azure AD. Se puede definir entradas adicionales en una lista personalizada de contraseñas prohibidas. Cuando los usuarios cambien o restablezcan sus contraseñas, estas listas de contraseñas prohibidas se comprueban para exigir el uso de contraseñas seguras.||Microsoft 365 E3 o E5|
+|[Configurar PHS](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Esto debe habilitarse para detectar credenciales filtradas y actuar sobre ellas para el acceso condicional basado en riesgos. **Nota:** Esto es necesario independientemente de si su organización usa la autenticación federada.|Solo de nube|Microsoft 365 E3 o E5|
+|[Habilite el inicio de sesión único sin](/azure/active-directory/connect/active-directory-aadconnect-sso) problemas para iniciar sesión automáticamente a los usuarios cuando estén en sus dispositivos de la organización conectados a la red de la organización.|Solo en la nube y federada|Microsoft 365 E3 o E5|
+|[Configurar ubicaciones con nombre](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations). Azure AD Identity Protection recopila y analiza todos los datos de sesión disponibles para generar una puntuación de riesgo. Se recomienda especificar los intervalos IP públicos de la organización para la red en la Azure AD de ubicaciones con nombre. El tráfico procedente de estos intervalos tiene una puntuación de riesgo reducida y el tráfico de fuera del entorno de la organización tiene una mayor puntuación de riesgo.||Microsoft 365 E3 o E5|
+|[Registrar todos los usuarios para el restablecimiento de contraseñas de autoservicio (SSPR) y la autenticación multifactor (MFA).](/azure/active-directory/authentication/concept-registration-mfa-sspr-converged). Se recomienda registrar usuarios para la Azure AD multifactor con antelación. Azure AD Identity Protection usa la Azure AD multifactor para realizar una comprobación de seguridad adicional. Además, para obtener la mejor experiencia de inicio de sesión, se recomienda que los usuarios instalen la [aplicación Microsoft Authenticator](/azure/active-directory/user-help/microsoft-authenticator-app-how-to) y la aplicación Portal de empresa Microsoft en sus dispositivos. Se pueden instalar desde la tienda de aplicaciones para cada plataforma.||Microsoft 365 E3 o E5|
+|[Habilitar el registro automático de dispositivos de equipos unidos Windows dominio](/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup). El acceso condicional garantizará que los dispositivos que se conecten a aplicaciones estén unidos a un dominio o sean compatibles. Para permitir esto en equipos Windows, el dispositivo debe estar registrado con Azure AD.  En este artículo se explica cómo configurar el registro automático de dispositivos.|Solo de nube|Microsoft 365 E3 o E5|
+|**Preparar el equipo de soporte técnico**. Tenga preparado un plan para los usuarios que no puedan completar MFA. Esto podría ser agregarlos a un grupo de exclusión de directivas o registrar nueva información de MFA para ellos. Antes de realizar cualquiera de estos cambios confidenciales de seguridad, debe asegurarse de que el usuario real realiza la solicitud. Un paso eficaz es exigir a los administradores de los usuarios que ayuden con la aprobación.||Microsoft 365 E3 o E5|
+|[Configurar la escritura diferida de contraseñas en AD local](/azure/active-directory/active-directory-passwords-getting-started). La reescribición de contraseñas Azure AD requerir que los usuarios cambien sus contraseñas locales cuando se detecte un riesgo de cuenta de alto riesgo. Puede habilitar esta característica mediante Azure AD Conectar de dos maneras: habilitar la escritura de contraseña en la  pantalla de características opcionales de Azure AD Conectar configuración o habilitarla a través de Windows PowerShell.|Solo de nube|Microsoft 365 E3 o E5|
+|[Configure Azure AD de contraseña.](/azure/active-directory/authentication/concept-password-ban-bad) La protección de contraseñas de Azure AD detecta y bloquea las contraseñas que son conocidas por ser vulnerables y sus variantes. Además, también puede bloquear los términos vulnerables adicionales que sean específicos de su organización. Las listas de contraseñas desvetadas global predeterminada se aplican automáticamente a todos los usuarios de un inquilino de Azure AD. Se puede definir entradas adicionales en una lista personalizada de contraseñas prohibidas. Cuando los usuarios cambien o restablezcan sus contraseñas, estas listas de contraseñas prohibidas se comprueban para exigir el uso de contraseñas seguras.||Microsoft 365 E3 o E5|
 |[Habilite Azure Active Directory de identidad.](/azure/active-directory/identity-protection/overview-identity-protection) Azure AD Identity Protection le permite detectar posibles vulnerabilidades que afectan a las identidades de su organización y configurar una directiva de corrección automatizada en riesgo de inicio de sesión bajo, medio y alto y riesgo de usuario.||Microsoft 365 E5 o Microsoft 365 E3 con el complemento seguridad E5|
-|**Habilite la autenticación** moderna [para Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) y [para Skype Empresarial Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). La autenticación moderna es un requisito previo para usar MFA. La autenticación moderna está habilitada de forma predeterminada Office clientes de 2016 y 2019, SharePoint y OneDrive para la Empresa.||Microsoft 365 E3 o E5|
-|[Habilite la evaluación de acceso continua](microsoft-365-continuous-access-evaluation.md) para Azure AD. La evaluación continua de acceso termina proactivamente las sesiones de usuario activas y aplica los cambios de directiva de inquilino en casi tiempo real.||Microsoft 365 E3 o E5|
-|
+|**Habilite la autenticación** moderna [para Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) y [para Skype Empresarial Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). La autenticación moderna es un requisito previo para usar MFA. La autenticación moderna está habilitada de forma predeterminada Office clientes de 2016 y 2019, SharePoint y OneDrive para la Empresa.||Microsoft 365 E3 o E5|
+|[Habilite la evaluación de acceso continua](microsoft-365-continuous-access-evaluation.md) para Azure AD. La evaluación continua de acceso termina proactivamente las sesiones de usuario activas y aplica los cambios de directiva de inquilino en casi tiempo real.||Microsoft 365 E3 o E5|
 
 ## <a name="recommended-client-configurations"></a>Configuraciones de cliente recomendadas
 
@@ -87,7 +86,6 @@ Los siguientes clientes de correo electrónico admiten la autenticación moderna
 |**Android**|Outlook para Android|[Más reciente](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2019 y 2016|
 |**Linux**|No compatible||
-|
 
 ### <a name="recommended-client-platforms-when-securing-documents"></a>Plataformas de cliente recomendadas para proteger documentos
 
@@ -96,12 +94,11 @@ Se recomiendan los siguientes clientes cuando se ha aplicado una directiva de do
 |Plataforma|Word/Excel/PowerPoint|OneNote|Aplicación OneDrive|Aplicación SharePoint|[Cliente de sincronización de OneDrive](/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
 |Windows 11 o Windows 10|Compatible|Compatible|N/D|N/D|Compatible|
-|Windows 8.1|Compatible|Compatible|No aplicable|N/D|Compatible|
+|Windows 8.1|Compatible|Compatible|N/D|N/D|Compatible|
 |Android|Compatible|Compatible|Compatible|Compatible|No aplicable|
 |iOS|Compatible|Compatible|Compatible|Compatible|No aplicable|
 |macOS|Compatible|Compatible|N/D|N/D|No compatible|
-|Linux|No se admite|No compatible|No compatible|No compatible|No se admite|
-|
+|Linux|No se admite|No compatible|No se admite|No compatible|No se admite|
 
 ### <a name="microsoft-365-client-support"></a>Soporte técnico para el cliente de Microsoft 365
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo aplicar una etiqueta de confidencialidad a un modelo en SharePoint Syntex.
-ms.openlocfilehash: 624b441084b418d2bcfc3ab6b623da0f5a969fe8
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 189db9314e01a52618890daf6b0e5d4e81317de9
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521119"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681708"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Aplicar una etiqueta de confidencialidad a un modelo en Microsoft SharePoint Syntex
 
@@ -26,7 +26,7 @@ Puede aplicar fácilmente una [etiqueta de confidencialidad](../compliance/sensi
 
 Las etiquetas de confidencialidad permiten aplicar cifrado a los documentos que identifican los modelos. Por ejemplo, desea que el modelo no solo identifique los documentos financieros que contengan números de cuenta bancaria o números de tarjeta de crédito que se carguen en la biblioteca de documentos, sino que también aplique una etiqueta de confidencialidad que esté configurada con opciones de cifrado para restringir quién puede acceder a ese contenido y cómo se puede usar. Los modelos SharePoint Syntex respetan las reglas del [orden de las etiquetas](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) y tampoco sobrescriben una etiqueta existente aplicada manualmente por un usuario al archivo. 
 
-Puede aplicar una etiqueta de confidencialidad preexistente al modelo en la página principal del modelo. Para que esté disponible en la selección desde la configuración del modelo, la etiqueta ya debe haberse publicado.
+Puede aplicar una etiqueta de confidencialidad preexistente al modelo en la página principal del modelo. Para que esté disponible en la selección desde la configuración del modelo, la etiqueta ya debe haberse publicado. Las etiquetas se aplican Office archivos de Word (.docx), PowerPoint (.pptx) y Excel (.xlsx). 
 
 > [!Important]
 > Para que las etiquetas de confidencialidad estén disponibles para aplicarlas a su modelo de comprensión mediante documentos, deben [crearse y publicarse en el Centro de cumplimiento de Microsoft 365](../admin/security-and-compliance/set-up-compliance.md).

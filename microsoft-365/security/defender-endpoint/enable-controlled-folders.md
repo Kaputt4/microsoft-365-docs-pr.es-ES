@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: d8ff1b5946ccdcbc35a219bc0e656c2e23d6f3ea
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b62ff851cbee58cf3b29a2b4dde6fb1b6107dd85
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327663"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472823"
 ---
 # <a name="enable-controlled-folder-access"></a>Habilitar el acceso controlado a carpetas
 
@@ -130,7 +130,7 @@ Use [el proveedor de servicios de configuración ./Vendor/MSFT/Policy/Config/Con
    - **Bloquear solo modificación de disco**: los intentos de las aplicaciones que no son de confianza de escribir en los sectores de disco se iniciarán Windows registro de eventos. Estos registros se pueden encontrar en **Registros de aplicaciones** \> y servicios de Microsoft \> Windows \> Windows Defender \> Operational \> ID 1123.
    - **Solo modificación** de disco de auditoría: solo se registrarán los intentos de escritura en los sectores de disco protegido en el registro de eventos de Windows ( \> en Registros de aplicaciones y servicios **Microsoft** \> **Windows** \> **Windows Defender** \> **Identificador** \> operativo **1124**). No se registrarán los intentos de modificar o eliminar archivos en carpetas protegidas.
 
-      ![Captura de pantalla de la opción de directiva de grupo Habilitada y modo auditoría seleccionada en la lista desplegable.](../../media/cfa-gp-enable.png)
+    :::image type="content" source="../../media/cfa-gp-enable.png" alt-text="La opción de directiva de grupo Habilitada y modo auditoría seleccionada" lightbox="../../media/cfa-gp-enable.png":::
 
 > [!IMPORTANT]
 > Para habilitar completamente el acceso controlado a carpetas, debe establecer la opción Directiva de grupo en **Habilitado** y seleccionar **Bloquear** en el menú desplegable opciones.
@@ -149,7 +149,7 @@ Puede habilitar la característica en modo auditoría especificando en `AuditMod
 
 Se `Disabled` usa para desactivar la característica.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 - [Personalizar el acceso controlado a carpetas](customize-controlled-folders.md)

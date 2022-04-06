@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: a0d0f470a2af18dab298ba3a1af642362590da4c
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 138b532e7786a3d142c3cbbe68f668a4b0e05591
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401166"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472581"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Recopilar registros de soporte técnico en Microsoft Defender para endpoint mediante respuesta en directo
 
@@ -43,15 +43,15 @@ Si también necesita registros de soporte técnico de Antivirus de Defender (MpS
 
 3. Seleccione **Upload archivo a la biblioteca**.
 
-    ![Imagen del archivo de carga.](images/upload-file.png)
+   :::image type="content" source="images/upload-file.png" alt-text="El archivo de carga" lightbox="images/upload-file.png":::
 
 4. Seleccione **Elegir archivo**.
 
-    ![Imagen del botón elegir archivo1.](images/choose-file.png)
+   :::image type="content" source="images/choose-file.png" alt-text="Botón elegir archivo-1" lightbox="images/choose-file.png":::
 
 5. Seleccione el archivo descargado denominado MDELiveAnalyzer.ps1 y, a continuación, haga clic en **Confirmar**
 
-   ![Imagen del botón elegir archivo2.](images/analyzer-file.png)
+   :::image type="content" source="images/analyzer-file.png" alt-text="Botón elegir archivo-2" lightbox="images/analyzer-file.png":::
 
 6. Mientras sigue en la sesión de LiveResponse, use los comandos siguientes para ejecutar el analizador y recopilar el archivo de resultados:
 
@@ -84,7 +84,7 @@ Si también necesita registros de soporte técnico de Antivirus de Defender (MpS
 >   ```
 
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 - [Información general del Analizador de clientes](overview-client-analyzer.md)
 - [Descargar y ejecutar el Analizador de clientes](download-client-analyzer.md)
 - [Ejecutar el Analizador de clientes en Windows](run-analyzer-windows.md)
