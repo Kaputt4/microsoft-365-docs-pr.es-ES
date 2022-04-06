@@ -1,7 +1,7 @@
 ---
-title: Usar consultas compartidas en Microsoft 365 Defender búsqueda avanzada
+title: Uso de consultas compartidas en Microsoft 365 Defender búsqueda avanzada
 description: Inicie inmediatamente la protección contra amenazas a través de las consultas predefinidas y compartidas. Comparta sus consultas con el público o con su organización.
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, detecciones personalizadas, esquema, kusto, repositorio de github, mis consultas, consultas compartidas
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, detecciones personalizadas, esquema, kusto, repositorio de github, mis consultas, consultas compartidas
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 96db917808094487039a13740cba80ad751f062f
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 21dbcdebbb640e15ef4023c0bf0cfdaf4739fdb7
+ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755519"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64686997"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Utilice las consultas compartidas en la búsqueda avanzada
 
@@ -34,11 +34,14 @@ ms.locfileid: "63755519"
 - Microsoft 365 Defender
 - Microsoft Defender para punto de conexión
 
+Las consultas en la [búsqueda avanzada](advanced-hunting-overview.md) pueden ser compartidas entre usuarios de la misma organización. También puede guardar consultas que solo sean accesibles para usted. También puede encontrar consultas de la comunidad que se comparten públicamente en GitHub. Estas consultas guardadas permiten buscar rápidamente escenarios específicos de búsqueda de amenazas sin tener que escribir consultas desde cero.
+
+En la pestaña Consultas de la búsqueda avanzada, puede encontrar los menús desplegables para **consultas compartidas**, **Mis consultas** y **Community consultas**. Puede seleccionar una flecha hacia abajo para expandir un menú.
 
 
-Las consultas en la [búsqueda avanzada](advanced-hunting-overview.md) pueden ser compartidas entre usuarios de la misma organización. También puede buscar las consultas compartidas de forma pública en GitHub. Estas consultas le permitirán seguir rápidamente los escenarios específicos de búsqueda contra amenazas sin tener que escribir las consultas desde cero.
+:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="La información de consultas compartidas en el portal de Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
 
-:::image type="content" source="../../media/shared-query-1.png" alt-text="La información de consultas compartidas en el portal de Microsoft 365 Defender compartido" lightbox="../../media/shared-query-1.png":::
+
 
 ## <a name="save-modify-and-share-a-query"></a>Guardar, modificar y compartir la consulta
 Puede guardar una consulta nueva o existente para que sólo sea accesible para usted o compartida con otros usuarios en su organización. 
@@ -49,7 +52,7 @@ Puede guardar una consulta nueva o existente para que sólo sea accesible para u
     
 3. Escriba un nombre para la consulta. 
 
-   :::image type="content" source="../../media/shared-query-2.png" alt-text="La nueva consulta que está a punto de guardarse en el portal Microsoft 365 Defender web" lightbox="../../media/shared-query-2.png":::
+   :::image type="content" source="../../media/shared-query-2.png" alt-text="La nueva consulta que está a punto de guardarse en el portal de Microsoft 365 Defender" lightbox="../../media/shared-query-2.png":::
 
 4. Seleccione la carpeta en la que desea guardar la consulta.
     - **Consultas compartidas** — compartidas con todos los usuarios de su organización
@@ -58,20 +61,25 @@ Puede guardar una consulta nueva o existente para que sólo sea accesible para u
 5. Seleccione **Guardar**. 
 
 ## <a name="delete-or-rename-a-query"></a>Eliminar o cambiar el nombre de la consulta
-1. Seleccione los tres puntos a la derecha de una consulta que desea cambiar o eliminar.
+1. Seleccione los tres puntos situados a la derecha de una consulta que desea cambiar de nombre o eliminar.
 
-    :::image type="content" source="../../media/shared-query-3.png" alt-text="Las opciones de una consulta compartida en la página Búsqueda avanzada en el portal Microsoft 365 Defender búsqueda" lightbox="../../media/shared-query-3.png":::
+    :::image type="content" source="../../media/shared-query-3.png" alt-text="Opciones de una consulta compartida en la página Búsqueda avanzada del portal de Microsoft 365 Defender" lightbox="../../media/shared-query-3.png":::
 
 2. Seleccione **Eliminar** y confirme su eliminación. O seleccione **Cambiar el nombre** y proporcione un nombre nuevo para la consulta.
 
-## <a name="create-a-direct-link-to-a-query"></a>Crear un vínculo directo a una consulta
-Para generar un vínculo que abra la consulta directamente en el editor de consultas de búsqueda avanzada, finalizar la consulta y seleccionar **Compartir vínculo**.
+## <a name="create-a-direct-link-to-a-query"></a>Creación de un vínculo directo a una consulta
+Para generar un vínculo que abra la consulta directamente en el editor de consultas de búsqueda avanzada, finalice la consulta y seleccione **Compartir vínculo**.
 
-## <a name="access-queries-in-the-github-repository"></a>Acceder a las consultas en el repositorio de GitHub  
-Los investigadores de la seguridad de Microsoft comparten regularmente las consultas de búsquedas avanzadas en un [repositorio público designado en GitHub](https://aka.ms/hunting-queries). Este repositorio está abierto a contribuciones. Para contribuir, [únete a GitHub gratis](https://github.com/).
+## <a name="access-community-queries-in-the-github-repo"></a>Acceso a consultas de la comunidad en el repositorio de GitHub  
+Los investigadores de la seguridad de Microsoft comparten regularmente las consultas de búsquedas avanzadas en un [repositorio público designado en GitHub](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/Microsoft%20365%20Defender). Las contribuciones a este repositorio se revisan antes de publicarse. Para contribuir, [únete a GitHub gratis](https://github.com/).
+
+Puede encontrar fácilmente estas consultas en la lista desplegable **de consultas de Community** también.
+
+:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="La nueva consulta que está a punto de guardarse en el portal de Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
+
 
 >[!tip]
->Los investigadores de la seguridad de Microsoft también proporcionan búsquedas avanzadas que puede ser utilizadas para buscar actividades e indicadores asociados a las amenazas emergentes. Estas consultas se proporcionan como parte [de los informes](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) de análisis de amenazas de Microsoft 365 Defender.
+>Los investigadores de la seguridad de Microsoft también proporcionan búsquedas avanzadas que puede ser utilizadas para buscar actividades e indicadores asociados a las amenazas emergentes. Estas consultas se proporcionan como parte de los informes de [análisis de amenazas](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) en Microsoft 365 Defender.
 
 
 ## <a name="related-topics"></a>Temas relacionados

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: 252d32e0f301bf332bf8143082ec86be2f1072ea
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: baa2236915d37917e4ed69e5356db31262795d57
+ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320051"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64687215"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
@@ -67,11 +67,6 @@ Consulte en la siguiente sección una lista de aplicaciones y servicios compatib
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-> [!IMPORTANT]
-> Esta característica requiere que todos los usuarios tengan Aplicaciones de Microsoft 365 para empresas. El soporte técnico para esta característica de coautoría aún no está disponible con el Canal semestral para empresas para las actualizaciones de Office. Si usa este canal de actualización para las aplicaciones de Office, cámbielo a Canal actual o Canal mensual para empresas.
-> 
-> Para obtener más información, vea [Cómo configurar y administrar los canales de actualización](/deployoffice/overview-update-channels#how-to-configure-and-manage-update-channels).
-
 Asegúrese de entender los siguientes requisitos previos antes de activar esta característica.
 
 - Debe ser un administrador global para activar esta característica.
@@ -79,7 +74,7 @@ Asegúrese de entender los siguientes requisitos previos antes de activar esta c
 - Las etiquetas de confidencialidad deben estar [habilitadas para archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) para el espacio empresarial. Si esta característica no está ya habilitada, se habilitará automáticamente al seleccionar la configuración para activar la coautoría para los archivos con etiquetas de confidencialidad.
 
 - Aplicaciones de Microsoft 365 para empresas:
-    - **Windows**: versión mínima 2107 del Canal actual o del Canal empresarial mensual
+    - **Windows**: versión mínima 2107 del canal actual o del canal de Enterprise mensual, o la versión mínima 2202 del canal de Semi-Annual Enterprise
     - **macOS**: versión mínima 16.51
     - **iOS**: ahora en versión preliminar cuando [opta por participar](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) con una versión mínima 2.58
     - **Android**: ahora en versión preliminar cuando [opta por participar](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) con una versión mínima 16.0.14931
