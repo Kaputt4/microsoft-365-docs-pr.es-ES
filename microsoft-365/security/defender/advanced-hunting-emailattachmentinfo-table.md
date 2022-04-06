@@ -1,7 +1,7 @@
 ---
 title: Tabla EmailAttachmentInfo del esquema de búsqueda avanzada
 description: Obtenga más información sobre los datos adjuntos en la tabla de EmailAttachmentInfo del esquema de búsqueda avanzada.
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, EmailAttachmentInfo, id. de mensaje de red, remitente, destinatario, id. de datos adjuntos, nombre de datos adjuntos, veredicto de malware
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernética, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, EmailAttachmentInfo, id. de mensaje de red, remitente, destinatario, identificador de datos adjuntos, nombre de datos adjuntos, veredicto de malware
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ac3e7aeff6778709f68aa1da74446cf55a1a6c06
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: e787f79b5af90f45dd2823f53402830c7fc287db
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531308"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664048"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -33,14 +33,14 @@ ms.locfileid: "61531308"
 
 - Microsoft 365 Defender
 
-La tabla del esquema de búsqueda avanzada contiene información acerca de los datos adjuntos de los correos electrónicos procesados por `EmailAttachmentInfo` Microsoft Defender para Office 365. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
+La `EmailAttachmentInfo` tabla del esquema [de búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre los datos adjuntos de los correos electrónicos procesados por Microsoft Defender para Office 365. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-| Nombre de columna | Tipo de datos | Description |
+| Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | `datetime` | Fecha y hora en que se registró el evento. |
 | `NetworkMessageId` | `string` | Identificador único del correo electrónico, generado por Microsoft 365 |
@@ -48,13 +48,13 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `SenderDisplayName` | `string` | Nombre del remitente que se muestra en la libreta de direcciones, normalmente una combinación de un nombre o nombre determinado, una inicial intermedia y un apellido o apellido |
 | `SenderObjectId` | `string` | Identificador único de la cuenta del remitente en Azure AD |
 | `RecipientEmailAddress` | `string` | Dirección de correo electrónico del destinatario, después de la expansión de la lista de distribución. |
-| `RecipientObjectId` | `string` | Identificador único para el destinatario de correo electrónico en Azure AD |
+| `RecipientObjectId` | `string` | Identificador único del destinatario del correo electrónico en Azure AD |
 | `FileName` | `string` | Nombre del archivo donde se aplicó la acción registrada |
 | `FileType` | `string` | Tipo de extensión de archivo |
 | `SHA256` | `string` | SHA-256 del archivo donde se aplicó la acción registrada. Este campo no suele estar rellenado; use la columna SHA1 cuando se encuentre disponible. |
-| `ThreatTypes` | `string` | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
+| `ThreatTypes` | `string` | Veredicto de la pila de filtrado de correo electrónico sobre si el correo electrónico contiene malware, suplantación de identidad (phishing) u otras amenazas |
 | `ThreatNames` | `string` | Nombre de detección de malware u otras amenazas encontradas |
-| `DetectionMethods` | `string` | Métodos usados para detectar malware, phishing u otras amenazas encontradas en el correo electrónico |
+| `DetectionMethods` | `string` | Métodos usados para detectar malware, suplantación de identidad (phishing) u otras amenazas que se encuentran en el correo electrónico |
 | `ReportId` | `long` | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
 | `FileSize` | `string` | Tamaño del archivo en bytes |
 

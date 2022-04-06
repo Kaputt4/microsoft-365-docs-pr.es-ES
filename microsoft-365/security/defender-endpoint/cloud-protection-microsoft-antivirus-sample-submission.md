@@ -15,14 +15,14 @@ ms.technology: mde
 ms.topic: article
 ms.date: 02/24/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9df9c387f24671d6790d9219590eeac490f2f1aa
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a647617de3706481c2e12f4e1772f5bc609db6fc
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328139"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470689"
 ---
-# <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>Protección en la nube y envío de ejemplo en Antivirus de Microsoft Defender
+# <a name="cloud-protection-and-sample-submission-at-microsoft-defender-antivirus"></a>Protección en la nube y envío de ejemplo en Antivirus de Microsoft Defender
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -40,11 +40,11 @@ Para comprender cómo funciona la protección en la nube junto con el envío de 
 
 En la siguiente imagen se muestra el flujo de protección en la nube y el envío de ejemplo con Antivirus de Microsoft Defender:
 
-:::image type="content" source="images/cloud-protection-flow.png" alt-text="Flujo de protección entregado en la nube":::
+:::image type="content" source="images/cloud-protection-flow.png" alt-text="Flujo de protección entregado en la nube" lightbox="images/cloud-protection-flow.png":::
 
 Antivirus de Microsoft Defender y la protección en la nube bloquean automáticamente la mayoría de las amenazas nuevas nunca vistas a primera vista mediante los métodos siguientes:
 
-1. Modelos de aprendizaje automático ligeros basados en cliente, que bloquean malware nuevo y desconocido.
+1. Modelos ligeros de aprendizaje automático basados en cliente, que bloquean malware nuevo y desconocido.
 
 2. Análisis de comportamiento local, detención de ataques basados en archivos y sin archivos.
 
@@ -97,11 +97,11 @@ Además de configurar el nivel de protección en la nube, puede configurar las o
 - **Enviar todas las muestras automáticamente**  
 - **No enviar muestras**  
 
-Para obtener información acerca de las opciones de configuración mediante Intune, Configuration Manager, GPO o PowerShell, consulte Activar la protección [en la nube en Antivirus de Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
+Para obtener información acerca de las opciones de configuración mediante Intune, Configuration Manager, GPO o PowerShell, vea Activar la protección [en la nube en Antivirus de Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
 
 ## <a name="examples-of-metadata-sent-to-the-cloud-protection-service"></a>Ejemplos de metadatos enviados al servicio de protección en la nube
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="imagen que muestra ejemplos de metadatos enviados a la protección en la nube en Antivirus de Microsoft Defender":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Ejemplos de metadatos enviados a la protección en la nube en el portal Antivirus de Microsoft Defender web" lightbox="images/cloud-protection-metadata-sample.png":::
 
 En la tabla siguiente se enumeran ejemplos de metadatos enviados para su análisis por la protección en la nube:
 
@@ -120,7 +120,7 @@ Además, Defender for Endpoint ha recibido varias certificaciones de cumplimient
 - ISO 27001
 - ISO 27018
 - SOC I, II, III
-- y PCI
+- PCI
 
 Para más información, consulte los siguientes recursos:
 

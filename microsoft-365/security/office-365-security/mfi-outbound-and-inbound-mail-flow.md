@@ -1,11 +1,11 @@
 ---
 title: Información sobre el flujo de correo entrante y saliente en el panel flujo de correo
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: null
+ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,8 +14,13 @@ ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Los administradores pueden obtener información sobre el flujo de correo saliente y entrante en el panel flujo de correo en el Centro de seguridad & cumplimiento.
 ms.technology: mdo
 ms.prod: m365-security
+ms.openlocfilehash: 3bc9d6c08dfc1c232018d79e988d741505079604
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475727"
 ---
-
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>Información sobre el flujo de correo entrante y saliente en el Centro de & seguridad
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -29,7 +34,7 @@ La **información de flujo** de correo saliente y entrante [](mail-flow-insights
 
 El widget muestra el cifrado TLS que se usa para la conexión cuando se entregan mensajes desde y hacia su organización. Las conexiones establecidas con otros servicios de correo electrónico se cifran mediante TLS cuando TLS se ofrece por ambas partes. El widget ofrece una instantánea de la última semana de flujo de correo.
 
-![Widget Flujo de correo saliente y entrante en el panel Flujo de correo en el Centro de seguridad & cumplimiento.](../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png)
+:::image type="content" source="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png" alt-text="El widget Flujo de correo saliente y entrante en el panel Flujo de correo del Centro de seguridad & cumplimiento" lightbox="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png":::
 
 La información del widget está relacionada con conectores y protección de mensajes TLS en Microsoft 365. Para obtener más información, vea estos temas:
 
@@ -41,7 +46,7 @@ La información del widget está relacionada con conectores y protección de men
 
 Al hacer clic en **Ver** detalles en el widget, el control flotante Mensaje protegido en tránsito **(por TLS)** muestra la protección TLS para los mensajes que entran y salen de la organización.
 
-![Mensajes protegidos en tránsito (por TLS) flotante que aparecen después de hacer clic en Ver detalles en el widget de correo electrónico saliente y entrante.](../../media/mfi-outbound-and-inbound-mail-flow-report-details.png)
+:::image type="content" source="../../media/mfi-outbound-and-inbound-mail-flow-report-details.png" alt-text="El control flotante Mensajes protegidos en tránsito (por TLS) que aparece después de hacer clic en Ver detalles en el widget de correo electrónico saliente y entrante" lightbox="../../media/mfi-outbound-and-inbound-mail-flow-report-details.png":::
 
 Actualmente, TLS 1.2 es la versión más segura de TLS que ofrece Microsoft 365. A menudo, necesitará conocer el cifrado TLS que se usa para las auditorías de cumplimiento. Probablemente no tenga una relación directa con la mayoría de los servidores de correo electrónico de origen y destino (no los posee ni Microsoft), por lo que no tiene muchas opciones para mejorar el cifrado TLS que usan esos servidores.
 
@@ -56,6 +61,6 @@ Puede hacer clic en el **vínculo Informe de conector** para ir al [informe de c
 
 Para las conexiones TLS 1.0, realmente necesita actualizar o solucionar el servidor de correo electrónico o el servidor de su asociado para evitar cualquier problema cuando la compatibilidad con TLS 1.0 esté en desuso en Microsoft 365.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Para obtener información sobre otras perspectivas en el panel flujo de correo, vea Información sobre el flujo de correo en el [Centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

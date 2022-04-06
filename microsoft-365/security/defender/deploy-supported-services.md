@@ -1,7 +1,7 @@
 ---
-title: Implementar servicios admitidos por Microsoft 365 Defender
-description: Obtenga información sobre los servicios de seguridad de Microsoft que se pueden integrar mediante Microsoft 365 Defender, sus requisitos de licencia y procedimientos de implementación
-keywords: deploy, licenses, supported services, provisioning, configuration Microsoft 365 Defender, M365, license eligibility, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Cloud App Security, MCAS, E5, A5, EMS
+title: Implementación de servicios compatibles con Microsoft 365 Defender
+description: Obtenga información sobre los servicios de seguridad de Microsoft que se pueden integrar mediante Microsoft 365 Defender, sus requisitos de licencia y los procedimientos de implementación.
+keywords: deploy, licenses, supported services, provisioning, configuration Microsoft 365 Defender, M365, license eligibility, Microsoft Defender para punto de conexión, Microsoft Defender para Office 365, Microsoft Defender for Identity, Microsoft Cloud App Security, MCAS, E5, A5, EMS
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 816225e8054b268906c94df01d121455ecd0cdfa
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: 4ac6186f3ec8ca7d4888a995b2352ec50529e4f1
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60705324"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664906"
 ---
 # <a name="deploy-supported-services"></a>Implementación de servicios compatibles
 
@@ -35,60 +35,66 @@ ms.locfileid: "60705324"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-[Microsoft 365 Defender](microsoft-365-defender.md) integra varios servicios de seguridad de Microsoft para proporcionar capacidades centralizadas de detección, prevención e investigación contra ataques sofisticados. En este artículo se describen los servicios admitidos, sus requisitos de licencia, las ventajas y limitaciones asociadas con la implementación de uno o varios servicios y vínculos a cómo puede implementarlos completamente individualmente.
+[Microsoft 365 Defender](microsoft-365-defender.md) integra varios servicios de seguridad de Microsoft para proporcionar funcionalidades centralizadas de detección, prevención e investigación frente a ataques sofisticados. En este artículo se describen los servicios admitidos, sus requisitos de licencia, las ventajas y limitaciones asociadas a la implementación de uno o varios servicios y vínculos a cómo puede implementarlos por completo individualmente.
 
-## <a name="supported-services"></a>Servicios compatibles
-Una Microsoft 365 E5, una licencia de seguridad E5, A5 o A5 o una combinación válida de licencias proporciona acceso a los siguientes servicios compatibles y le da derecho a usar Microsoft 365 Defender. [Ver requisitos de licencias](prerequisites.md#licensing-requirements)
+## <a name="supported-services"></a>Servicios admitidos
+
+Una licencia de seguridad Microsoft 365 E5, E5, A5 o A5 o una combinación válida de licencias proporciona acceso a los siguientes servicios admitidos y le da derecho a usar Microsoft 365 Defender. [Consulte requisitos de licencia](prerequisites.md#licensing-requirements)
 
 | Servicio compatible | Descripción |
 | ------ | ------ |
-| Microsoft Defender para punto de conexión | Conjunto de aplicaciones de protección de puntos de conexión que se basa en sensores de comportamiento eficaces, análisis en la nube e inteligencia de amenazas |
-|Microsoft Defender para Office 365 | Protección avanzada para tus aplicaciones y datos en Office 365, incluido el correo electrónico y otras herramientas de colaboración |
-| Microsoft Defender for Identity | Defenderse de amenazas avanzadas, identidades comprometidas e información interna malintencionada mediante señales correlacionadas de Active Directory |
-| Microsoft Cloud App Security | Identificar y combatir ciberamenazas en los servicios en la nube de Microsoft y de terceros |
+| Microsoft Defender para punto de conexión | Conjunto de aplicaciones de Endpoint Protection basado en potentes sensores de comportamiento, análisis en la nube e inteligencia sobre amenazas |
+|Microsoft Defender para Office 365 | Protección avanzada para las aplicaciones y los datos en Office 365, incluidos el correo electrónico y otras herramientas de colaboración |
+| Microsoft Defender for Identity | Defenderse de amenazas avanzadas, identidades en peligro y usuarios internos malintencionados mediante señales correlacionadas de Active Directory |
+| Microsoft Defender for Cloud Apps | Identificar y combatir las ciberamenazas en los servicios en la nube de Microsoft y de terceros |
 
-## <a name="deployed-services-and-functionality"></a>Funcionalidad y servicios implementados
-Microsoft 365 Defender proporciona una mejor visibilidad, correlación y corrección a medida que implementa servicios más compatibles.
+## <a name="deployed-services-and-functionality"></a>Servicios y funcionalidad implementados
+
+Microsoft 365 Defender proporciona una mejor visibilidad, correlación y corrección a medida que implementa servicios más admitidos.
 
 ### <a name="benefits-of-full-deployment"></a>Ventajas de la implementación completa
-Para obtener las ventajas completas de Microsoft 365 Defender, se recomienda implementar todos los servicios compatibles. Estas son algunas de las principales ventajas de la implementación completa:
-- Los incidentes se identifican y correlacionan en función de las alertas y las señales de eventos de todos los sensores disponibles y las capacidades de análisis específicas del servicio
-- Los playbooks de investigación y corrección automatizadas (AIR) se aplican en varios tipos de entidad, incluidos dispositivos, buzones y cuentas de usuario
-- Se puede consultar un esquema de búsqueda avanzada más completo para los datos de eventos y entidades de dispositivos, buzones y otras entidades
+
+Para obtener las ventajas completas de Microsoft 365 Defender, se recomienda implementar todos los servicios admitidos. Estas son algunas de las principales ventajas de la implementación completa:
+
+- Los incidentes se identifican y correlacionan en función de las alertas y señales de evento de todos los sensores disponibles y las funcionalidades de análisis específicas del servicio.
+- Los cuadernos de estrategias de investigación y corrección automatizadas (AIR) se aplican a varios tipos de entidad, incluidos dispositivos, buzones y cuentas de usuario.
+- Se puede consultar un esquema de búsqueda avanzado más completo para los datos de eventos y entidades de dispositivos, buzones y otras entidades.
 
 ### <a name="limited-deployment-scenarios"></a>Escenarios de implementación limitados
-Cada servicio compatible que implemente proporciona un conjunto muy enriquecido de señales sin procesar, así como información correlacionada. Aunque la implementación limitada no hace que Microsoft 365 Defender funcionalidad se desactive, su capacidad para proporcionar visibilidad completa en los puntos de conexión, aplicaciones, datos e identidades se ve afectada. Al mismo tiempo, las capacidades de corrección solo se aplican a las entidades que los servicios que ha implementado pueden administrar.
 
-En la tabla siguiente se muestra cómo cada servicio admitido proporciona datos adicionales, oportunidades para obtener información adicional mediante la correlación de los datos y mejores capacidades de corrección y respuesta.
+Cada servicio compatible que implemente proporciona un conjunto extremadamente completo de señales sin procesar, así como información correlacionada. Aunque la implementación limitada no hace que Microsoft 365 Defender funcionalidad se desactive, su capacidad para proporcionar una visibilidad completa de los puntos de conexión, las aplicaciones, los datos y las identidades se ve afectada. Al mismo tiempo, las funcionalidades de corrección solo se aplican a las entidades que se pueden administrar mediante los servicios que ha implementado.
 
-| Servicio | Datos (señales & información correlacionada) | Ámbito de respuesta & corrección |
+En la tabla siguiente se muestra cómo cada servicio compatible proporciona datos adicionales, oportunidades de obtener información adicional mediante la correlación de los datos y mejores funcionalidades de corrección y respuesta.
+
+| Servicio | Datos (señales & información correlacionada) | Corrección & ámbito de respuesta |
 | ------ | ------ | ------ |
-| Microsoft Defender para punto de conexión | - Estados de extremo y eventos sin procesar<br />- Detecciones y alertas de puntos de conexión, incluidos antivirus, EDR, reducción de superficie de ataque<br />- Información sobre archivos y otras entidades observadas en puntos de conexión | Puntos de conexión |
-|Microsoft Defender para Office 365 | - Estados de correo y buzón de correo y eventos sin procesar<br />- Detecciones de correo electrónico, datos adjuntos y vínculos | - Buzones<br />- Microsoft 365 cuentas |
-| Microsoft Defender for Identity | - Señales de Active Directory, incluidos los eventos de autenticación<br />- Detecciones de comportamiento relacionadas con la identidad | Identidades |
-| Microsoft Cloud App Security | - Detección de servicios y aplicaciones en la nube no cedida (TECNOLOGÍA de la sombra)<br />- Exposición de datos a aplicaciones en la nube<br />- Actividad de amenazas asociada a aplicaciones en la nube | Aplicaciones en la nube |
+| Microsoft Defender para punto de conexión |<ul><li>Estados de punto de conexión y eventos sin procesar</li><li>Detecciones y alertas de puntos de conexión, incluidos antivirus, EDR, reducción de la superficie expuesta a ataques</li><li>Información sobre archivos y otras entidades observadas en puntos de conexión</li></ul> | Puntos de conexión |
+|Microsoft Defender para Office 365 |<ul><li>Estados de correo y buzón y eventos sin procesar</li><li>Detecciones de correo electrónico, datos adjuntos y vínculos</li></ul> | <ul><li>Buzones</li><li>cuentas de Microsoft 365</li></ul> |
+| Microsoft Defender for Identity |<ul><li>Señales de Active Directory, incluidos los eventos de autenticación</li><li>Detecciones de comportamiento relacionadas con la identidad</li></ul> | Identidades |
+| Microsoft Defender for Cloud Apps |<ul><li>Detección de servicios y aplicaciones en la nube no autorizadas (shadow IT)</li><li>Exposición de datos a aplicaciones en la nube</li><li>Actividad de amenazas asociada a aplicaciones en la nube</li></ul> | Aplicaciones en la nube |
 
 ## <a name="deploy-the-services"></a>Implementar los servicios
+
 La implementación de cada servicio normalmente requiere el aprovisionamiento del espacio empresarial y alguna configuración inicial. Consulte la tabla siguiente para comprender cómo se implementan cada uno de estos servicios.
 
 | Servicio | Instrucciones de aprovisionamiento | Configuración inicial |
 | ------ | ------ | ------ |
 | Microsoft Defender para punto de conexión | [Guía de implementación de Microsoft Defender para puntos de conexión](../defender-endpoint/deployment-phases.md) | *Ver instrucciones de aprovisionamiento* |
-|Microsoft Defender para Office 365 | *Ninguno, aprovisionado con Office 365* | [Configurar las directivas de Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
+|Microsoft Defender para Office 365 | *Ninguno, aprovisionado con Office 365* | [Configurar las directivas de Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
 | Microsoft Defender for Identity | [Inicio rápido: crear la instancia de Microsoft Defender for Identity](/azure-advanced-threat-protection/install-atp-step1) | *Ver instrucciones de aprovisionamiento* |
-| Microsoft Cloud App Security | *Ninguna* | [Inicio rápido: Introducción a Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security) |
+| Microsoft Defender for Cloud Apps | *Ninguna* | [Inicio rápido: Introducción a Microsof Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security) |
 
-Una vez que haya implementado los servicios compatibles, [active Microsoft 365 Defender](m365d-enable.md).
+Una vez que haya implementado los servicios admitidos, [active Microsoft 365 Defender](m365d-enable.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Microsoft 365 Defender introducción](microsoft-365-defender.md)
+- [introducción a Microsoft 365 Defender](microsoft-365-defender.md)
 - [Activar Microsoft 365 Defender](m365d-enable.md)
-- [Introducción a Microsoft Defender para puntos de conexión](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Introducción a Microsoft Defender para Office 365 web](../office-365-security/defender-for-office-365.md)
-- [Información general sobre Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
-- [Introducción a Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)
+- [introducción a Microsoft Defender para punto de conexión](../defender-endpoint/microsoft-defender-endpoint.md)
+- [introducción a Microsoft Defender para Office 365](../office-365-security/defender-for-office-365.md)
+- [Introducción a Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
+- [introducción a Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)

@@ -19,12 +19,12 @@ search.appverid:
 description: Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ba164fde38be1e8eed53b71ab568124140deaac5
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 4024640173d6cbbf6817d3fa2b1c24cb7264833c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682711"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470865"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Supervisar pérdidas de datos personales
 
@@ -33,7 +33,7 @@ ms.locfileid: "63682711"
 
 Existen muchas herramientas que pueden usarse para supervisar el uso y transporte de datos personales. En este tema se describen tres herramientas que funcionan bien.
 
-![Herramientas para supervisar el uso y transporte de datos personales.](../../media/Monitor-for-leaks-of-personal-data-image1.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image1.png" alt-text="Las herramientas para supervisar el uso y el transporte de datos personales" lightbox="../../media/Monitor-for-leaks-of-personal-data-image1.png":::
 
 En la ilustración:
 
@@ -41,7 +41,7 @@ En la ilustración:
 
 - Después, use directivas de alerta y el registro de auditoría para supervisar la actividad de los servicios. Configure la supervisión continua o busque el registro de auditoría para investigar un incidente. El registro de auditoría funciona en todos los servicios: Sway, Power BI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, actividad administrativa, OneDrive para la Empresa, SharePoint Online, correo electrónico en tránsito, y buzones de correo en reposo. Las conversaciones de Skype se incluyen en los buzones en reposo.
 
-- Por último, use Microsoft Defender for Cloud Apps para supervisar archivos con datos confidenciales en otros proveedores SaaS. Próximamente, se podrán usar las etiquetas unificadas y los tipos de información confidencial en Azure Information Protection y en Ofﬁce. Puede configurar directivas que se apliquen a todas sus aplicaciones SaaS o a aplicaciones específicas (como Box). Defender for Cloud Apps no detecta archivos en Exchange Online, incluidos los archivos adjuntos al correo electrónico.
+- Por último, use Microsoft Defender for Cloud Apps para supervisar los archivos con datos confidenciales de otros proveedores SaaS. Próximamente, se podrán usar los tipos de información confidencial y las etiquetas unificadas en Azure Information Protection y Office con Defender for Cloud Apps. Puede configurar directivas que se apliquen a todas las aplicaciones específicas (como Box) o a aplicaciones SaaS. Defender for Cloud Apps no busca archivos en Exchange Online, incluidos los archivos adjuntos de correo electrónico.
 
 ## <a name="data-loss-prevention-reports"></a>Informes de prevención de pérdida de datos
 
@@ -62,7 +62,7 @@ Los informes DLP están en el Centro de cumplimiento de Microsoft 365. Vaya a **
 
 Para obtener más información, consulte [Ver los informes de prevención de pérdida de datos](../../compliance/view-the-dlp-reports.md).
 
-![Informe que muestra coincidencias de directivas DLP.](../../media/Monitor-for-leaks-of-personal-data-image2.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image2.png" alt-text="Informe que muestra las coincidencias de directivas DLP" lightbox="../../media/Monitor-for-leaks-of-personal-data-image2.png":::
 
 ## <a name="audit-log-and-alert-policies"></a>Directivas de alerta y registro de auditoría
 
@@ -92,13 +92,13 @@ Más información sobre las directivas de alerta y buscar en el registro de audi
 
 Microsoft Defender for Cloud Apps le ayuda a descubrir otras aplicaciones SaaS en uso en las redes y los datos confidenciales que se envían a estas aplicaciones y desde las mismas.
 
-Microsoft Defender for Cloud Apps es un servicio integral que proporciona una gran visibilidad, controles granulares y una mayor protección contra las amenazas para sus aplicaciones en la nube. Identifica más de 15 000 aplicaciones en la nube en la red de todos los dispositivos y proporciona una puntuación de riesgo y una evaluación y análisis de riesgo continuos. No se necesitan agentes: la información se recoge de sus firewalls y proxies para ofrecerle una visibilidad completa y un contexto para el uso de la nube y shadow IT.
+Microsoft Defender for Cloud Apps es un servicio completo que proporciona mayor visibilidad, controles pormenorizados y protección contra amenazas mejorada para las aplicaciones en la nube. Identifica más de 15 000 aplicaciones en la nube en la red de todos los dispositivos, y le proporciona puntuación de riesgo y análisis y evaluación continuos de riesgos. No se requieren agentes: la información se recopila de los firewalls y servidores proxy para proporcionarle visibilidad completa y un contexto de uso en la nube y shadow IT.
 
-Para comprender mejor su entorno en la nube, la característica de investigación de Defender for Cloud Apps proporciona una profunda visibilidad de todas las actividades, archivos y cuentas de las aplicaciones sancionadas y administradas. Puede obtener información detallada a nivel de archivos y descubrir por dónde viajan los datos en las aplicaciones en la nube.
+Para entender mejor su entorno de nube, la característica de investigación de Defender for Cloud Apps proporciona visibilidad detallada de todas las actividades, archivos y cuentas para las aplicaciones administradas y autorizadas. Puede obtener información detallada a nivel del archivo y descubrir a dónde se transfieren los datos en las aplicaciones en la nube.
 
 Para obtener ejemplos, la siguiente ilustración muestra dos directivas de Defender for Cloud Apps que pueden ayudarle con el RGPD.
 
-![Ejemplo de directivas de Defender for Cloud Apps.](../../media/Monitor-for-leaks-of-personal-data-image3.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image3.png" alt-text="Directivas de Defender for Cloud Apps" lightbox="../../media/Monitor-for-leaks-of-personal-data-image3.png":::
 
 Las primera directiva envía una alerta cuando se comparten archivos con un atributo DCP predefinido o una expresión personalizada que elija fuera de la organización desde las aplicaciones SaaS que elija.
 
@@ -114,9 +114,9 @@ Estos tipos de atributos estarán disponibles próximamente en Defender for Clou
 Si todavía no ha empezado a utilizar Defender for Cloud Apps, empiece por iniciarlo. Para acceder a Defender for Cloud Apps: <https://portal.cloudappsecurity.com>.
 
 > [!NOTE]
-> No olvide habilitar "Analizar automáticamente archivos de etiquetas de clasificación de Azure Information Protection" (en la configuración General) al comenzar a usar Defender for Cloud Apps o antes de asignar etiquetas. Después de la configuración, Defender for Cloud Apps no vuelve a examinar los archivos existentes hasta que se modifican.
+> No olvide habilitar "Analizar automáticamente archivos de etiquetas de clasificación de Azure Information Protection" (en la configuración General) al comenzar a usar Defender for Cloud Apps o antes de asignar etiquetas. Tras la configuración, Defender for Cloud Apps no vuelve a examinar los archivos existentes hasta que se modifican.
 
-![Panel en el que se muestra información de alertas.](../../media/Monitor-for-leaks-of-personal-data-image4.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image4.png" alt-text="Panel que muestra información sobre las alertas" lightbox="../../media/Monitor-for-leaks-of-personal-data-image4.png":::
 
 Más información:
 

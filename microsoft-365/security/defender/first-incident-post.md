@@ -1,6 +1,6 @@
 ---
-title: Paso 3. Realizar una revisión posterior al incidente de su primer incidente
-description: Cómo realizar una revisión de su primer incidente en Microsoft 365 Defender.
+title: Paso 3. Realizar una revisión posterior al incidente del primer incidente
+description: Cómo realizar una revisión del primer incidente en Microsoft 365 Defender.
 keywords: incidentes, alertas, investigar, correlación, ataque, equipos, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, Microsoft, M365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,37 +22,37 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3139cab64a967ed65a16867b53ad57a6913afd2c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: d2d137ea2a97bb183187ca83eb12a34ab336bc53
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325899"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64666006"
 ---
-# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Paso 3. Realizar una revisión posterior al incidente de su primer incidente
+# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Paso 3. Realizar una revisión posterior al incidente del primer incidente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-El Instituto Nacional de Estándares y Tecnología (NIST) recomienda que una vez que se hayan tomado todos los pasos para recuperarse del ataque, las organizaciones deben revisar el incidente para aprender de él y mejorar la postura o los procesos de seguridad. La evaluación de los distintos aspectos del tratamiento de incidentes es importante para prepararse para el siguiente incidente.
+El Instituto Nacional de Estándares y Tecnología (NIST) recomienda que, una vez que se hayan tomado todos los pasos necesarios para recuperarse del ataque, las organizaciones deben revisar el incidente para aprender de él y mejorar la posición o los procesos de seguridad. La evaluación de los distintos aspectos del control de incidentes es importante para prepararse para el siguiente incidente.
 
-Microsoft 365 Defender puede ayudar en la realización de actividades posteriores al incidente proporcionando a una organización alertas que se alinean con [MITRE ATT&CK Framework](https://attack.mitre.org/). Todas las soluciones de Microsoft Defender etiquetan los ataques de acuerdo con una técnica o una táctica&CK de ATT.
+Microsoft 365 Defender puede ayudar a realizar actividades posteriores al incidente proporcionando a una organización alertas que se alineen con [MITRE ATT&CK Framework](https://attack.mitre.org/). Todas las soluciones de Microsoft Defender etiquetan los ataques de acuerdo con una técnica o táctica de ATT&CK.
 
-Al asignar alertas a este marco del sector, puede:
+Al asignar alertas a este marco del sector, puede hacer lo siguiente:
 
-- Realice un análisis de las diferencias en la cobertura de seguridad.
-- Determinar la atribución de adversaria y de campaña.
+- Realice un análisis de las brechas en la cobertura de seguridad.
+- Determina la atribución de adversarios y campañas.
 - Realizar análisis de tendencias.
-- Identificar las diferencias de habilidades en el reconocimiento del método de ataque.
-- Crea un Power Automate playbook para una corrección más rápida.
+- Identificar brechas de aptitudes en el reconocimiento del método de ataque.
+- Cree un cuaderno de estrategias de Power Automate para una corrección más rápida.
 
-La actividad de revisión posterior a los incidentes también puede dar como resultado ajustar la configuración de seguridad y los procesos del equipo de seguridad para simplificar las capacidades de respuesta de la organización.
+La actividad de revisión posterior al incidente también puede dar lugar a un ajuste preciso de la configuración de seguridad y los procesos del equipo de seguridad para simplificar las capacidades de respuesta de la organización.
 
 ## <a name="next-step"></a>Paso siguiente
 
-Vea estas rutas de investigación adicionales:
+Consulte estas rutas de investigación adicionales:
 
 - [Correo de suplantación de identidad](first-incident-path-phishing.md)
 - [Ataque basado en identidad](first-incident-path-identity.md)

@@ -15,103 +15,103 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-description: Use estos procedimientos para aprovechar las entidades con nombre en las directivas de prevención de pérdida de datos
-ms.openlocfilehash: 5adb410689e597395f1b13152ed62af75fa111d6
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+description: Use estos procedimientos para aprovechar las entidades con nombre en las directivas de prevención de pérdida de datos.
+ms.openlocfilehash: 9b3a8899ef4b64c682289e29df19648a00d4f048
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525227"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64665170"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>Uso de entidades con nombre en las directivas de prevención de pérdida de datos (versión preliminar)
 
 > [!IMPORTANT]
-> La característica de entidades con nombre se está implementando y aparecerá en el espacio empresarial cuando esté disponible. Compruebe si están en el explorador de contenido y en el flujo de creación de directivas de prevención de pérdida de datos (DLP). 
+> La característica de entidades con nombre se está implementando y aparecerá en el inquilino cuando esté disponible para usted. Compruébalos en el explorador de contenido y en el flujo de creación de directivas de prevención de pérdida de datos (DLP). 
 
-Lea más [información sobre las entidades con nombre (versión preliminar)](named-entities-learn.md) antes de empezar a usarlas.
+Lea [Más información sobre las entidades con nombre (versión preliminar)](named-entities-learn.md) antes de empezar a usarlas.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
 ### <a name="skusubscriptions-licensing"></a>Licencias de SKU/suscripciones
 
-Debe tener una de estas suscripciones
+Tiene que tener una de estas suscripciones.
 
-- Protección de la información y gobierno
+- Information Protection y gobernanza
 - Cumplimiento de Microsoft 365 E5
 - Office 365 E5
 - Microsoft 365 E5
 
-Para obtener información completa sobre las licencias, consulte [la descripción del servicio](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
+Para obtener detalles completos sobre las licencias, consulte [la descripción del servicio](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
 
-### <a name="permissions"></a>Permisos
+### <a name="permissions"></a>Permissions
 
-La cuenta que use para crear y editar directivas de prevención de pérdida de datos (DLP), debe tener los permisos del rol Administración de cumplimiento **dlp** . Para obtener más información, vea [Dar a los usuarios acceso al Centro de Office 365 cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+La cuenta que usa para crear y editar directivas de prevención de pérdida de datos (DLP) debe tener los permisos del rol **Administración de cumplimiento de DLP** . Para obtener más información, vea [Proporcionar a los usuarios acceso al Centro de cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 
 ## <a name="supported-locations"></a>Ubicaciones admitidas
 
-Puede usar SITs de entidad con nombre y directivas mejoradas para detectar y proteger elementos confidenciales en estas ubicaciones:
+Puede usar SIT de entidad con nombre y directivas mejoradas para detectar y proteger elementos confidenciales en estas ubicaciones:
 
 - Sitios de SharePoint
 - Cuentas de OneDrive
 - Mensajes de canales y chats de Teams
 - Dispositivos (Windows 10 dispositivos de punto de conexión)
 
-No se admiten los SIT de entidad con nombre ni las directivas mejoradas para:
+Los SIT de entidad con nombre y las directivas mejoradas no se admiten para:
 
 
 - Repositorios locales
 - Power BI
 
-## <a name="create-and-edit-enhanced-policies"></a>Crear y editar directivas mejoradas
+## <a name="create-and-edit-enhanced-policies"></a>Creación y edición de directivas mejoradas
 
-Para crear o editar una directiva DLP, use los procedimientos de [Crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md).
+Para crear o editar una directiva DLP, use los procedimientos de [Creación, prueba y ajuste de una directiva DLP](create-test-tune-dlp-policy.md).
 
 ## <a name="workloads-and-services-that-support-named-entities"></a>Cargas de trabajo y servicios que admiten entidades con nombre
 
 
-- **La exhibición de documentos electrónicos de Microsoft 3655** admite el uso de entidades con nombre en los servicios de substrate.
-- **Microsoft Defender para Aplicaciones en la nube admite** el uso de entidades con nombre en las directivas de Defender para Aplicaciones en la nube.
+- **Microsoft 3655 eDiscovery** admite el uso de entidades con nombre en los servicios de Substrate.
+- **Microsoft Defender for Cloud Apps** admite el uso de entidades con nombre en directivas de Defender for Cloud Apps.
 - **Insider Risk Management** admite el uso de entidades con nombre en los servicios de Substrate.
-- **El cumplimiento** de la comunicación no admite el uso de entidades con nombre en Exchange de transporte y datos en reposo.
-- **Microsoft Information Governance** (MIG) no admite el uso de entidades con nombre en Exchange de transporte y datos en reposo.
+<!--- **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.
+- **Microsoft Information Governance** (MIG) doesn't support the use of named entities in Exchange transport rules and data-at-rest.-->
  
 ### <a name="unified-dlp"></a>DLP unificado
 
-|Carga de trabajo/servicios  |Compatibilidad con vista previa pública para entidades con nombre  |
+|Carga de trabajo o servicios  |Compatibilidad con la versión preliminar pública para entidades con nombre  |
 |---------|---------|
-|Office de directiva de clientes de Win32    |no compatible  |
-|Office de directiva de clientes WAC    |compatible         |
+|Office sugerencia de directiva de clientes Win32    |no compatible  |
+|Office sugerencia de directiva de clientes WAC    |compatible         |
 |Sugerencia de directiva de OWA     |no compatible         |
-|Outlook de directiva     |no compatible |
-|Puntos de conexión (Windows 10 dispositivos)     |compatible  |
-|Exchange de transporte     |no compatible |
+|sugerencia de directiva de Outlook     |no compatible |
+|Puntos de conexión (dispositivos Windows 10)     |compatible  |
+|reglas de transporte de Exchange     |no compatible |
 |OneDrive para la Empresa datos en reposo     |compatible         |
-|SharePoint datos en línea en reposo     |compatible         |
+|SharePoint datos en reposo en línea     |compatible         |
 |Teams datos en reposo     |compatible         |
-|Mensajes de correo electrónico datos en reposo     |no compatible         |
+|Datos en reposo de mensajes de correo electrónico     |no compatible         |
 |Microsoft Defender for Cloud Apps     |compatible         |
 
-### <a name="autolabeling"></a>Autolabeling
+### <a name="autolabeling"></a>Etiquetado automático
 
-|Carga de trabajo/servicios |Compatibilidad con vista previa pública para entidades con nombre  |
+|Carga de trabajo o servicios |Compatibilidad con la versión preliminar pública para entidades con nombre  |
 |---------|---------|
-|Office clientes de Win32 sin conexión   |compatible, el usuario debe seleccionar etiqueta y aplicar manualmente |
-|Online Office clientes de Win32 en línea|compatible con un esquema de confianza antiguo |
-|Outlook en línea   |compatible con un esquema de confianza antiguo  |
+|Office clientes Win32 sin conexión   |compatible, el usuario debe seleccionar la etiqueta y aplicar manualmente |
+|Clientes de Win32 en línea Office en línea|compatible con el esquema de confianza antiguo |
+|Outlook en línea   |compatible con el esquema de confianza antiguo  |
 |Office cliente WAC     |compatible |
 |OWA     |compatible |
-|Exchange transporte     |no compatible |
+|transporte Exchange     |no compatible |
 |OneDrive para la Empresa datos en reposo     |compatible |
-|SharePoint datos en línea en reposo|compatible|
-|Escáner de Azure Information Protection (AIP)|no compatible|
+|SharePoint datos en reposo en línea|compatible|
+|Analizador de Azure Information Protection (AIP)|no compatible|
 
 ## <a name="known-issues"></a>Problemas conocidos
 
 |Problema  |Impacto  |
 |---------|---------|
-|Sugerencias de directiva DLP (OWA, Outlook, Office clientes win32)     |   Las sugerencias de directiva con condición de entidad darán como resultado "no coincidir"      |
-| Compatibilidad con el idioma asiático para el nombre de la persona (chino, japonés, coreano)    | Entidades con nombre admitidas solo para el conjunto de caracteres basado en latinos (es decir, kanji no es compatible) para el nombre de la persona        |
+|Sugerencias de directiva DLP (OWA, Outlook, Office clientes Win32)     |   Las sugerencias de directiva con la condición de entidad provocarán que "no coincida"      |
+| Compatibilidad con idiomas asiáticos para el nombre de persona (chino, japonés, coreano)    | Entidades con nombre admitidas solo para el conjunto de caracteres basado en latín (es decir, no se admite kanji) para el nombre de persona.        |
 |Repositorios locales    | No se admite como carga de trabajo|
 
 <!--|Devices workload (Endpoint)     | Not supported as a workload – authoring policy with named entities will not be allowed        |-->

@@ -17,16 +17,16 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP), obtenga información sobre cómo registrarse para Microsoft 365 Lighthouse.
-ms.openlocfilehash: 2607a131908a06ec4b7072cbf718739e1db00ad7
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 25ad88edc63d53e3c9110062a64285bbb759a775
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326963"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645188"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Regístrate para Microsoft 365 Lighthouse
 
-En este artículo se proporcionan instrucciones sobre cómo registrarse para Microsoft 365 Lighthouse. Microsoft 365 Lighthouse es un portal de administración que ayuda a los proveedores de servicios administrados (MSP) a proteger y administrar dispositivos, datos y usuarios a escala para clientes de pequeñas y medianas empresas (SMB) que usan Microsoft 365 Empresa Premium o Microsoft 365 E3. 
+En este artículo se proporcionan instrucciones sobre cómo registrarse para Microsoft 365 Lighthouse. Microsoft 365 Lighthouse es un portal de administración que ayuda a los proveedores de servicios administrados (MSP) a proteger y administrar dispositivos, datos y usuarios a escala para clientes de pequeñas y medianas empresas (SMB) que usan Microsoft 365 Empresa Premium, Microsoft 365 E3 o Windows 365 Business. 
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -60,7 +60,7 @@ En este artículo se proporcionan instrucciones sobre cómo registrarse para Mic
     > [!NOTE]
     > Después de completar el registro, los datos del cliente pueden tardar hasta 48 horas en aparecer en Lighthouse.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 [Configurar Microsoft 365 Lighthouse seguridad del portal](m365-lighthouse-configure-portal-security.md) 
 
@@ -68,4 +68,4 @@ En este artículo se proporcionan instrucciones sobre cómo registrarse para Mic
 
 [Introducción a Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (artículo)   
 [Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)   
-[Microsoft 365 Lighthouse y Microsoft Defender para empresas](../security/defender-business/mdb-lighthouse-integration.md) (artículo)
+[Microsoft 365 Lighthouse y Microsoft Defender para Empresas](../security/defender-business/mdb-lighthouse-integration.md) (artículo)

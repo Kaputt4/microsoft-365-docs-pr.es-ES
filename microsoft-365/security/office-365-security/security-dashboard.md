@@ -1,7 +1,7 @@
 ---
 title: Introducción al panel de seguridad
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,18 +9,23 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 search.appverid:
-  - MET150
-  - MOE150
+- MET150
+- MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
-  - M365-security-compliance
+- M365-security-compliance
 ms.custom:
-  - seo-marvel-apr2020
+- seo-marvel-apr2020
 description: Use el nuevo Panel de seguridad para revisar Office 365 estado de protección contra amenazas y ver y actuar en alertas de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
+ms.openlocfilehash: 4bc9d813732c4c67531aeb47a673111d62bbf417
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475749"
 ---
-
 # <a name="security-dashboard-in-the-security--compliance-center"></a>Panel de seguridad en el Centro de seguridad & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -45,7 +50,7 @@ Para ver el Panel de seguridad en el Centro de seguridad & cumplimiento, vaya a 
 
 El widget Resumen de administración de amenazas le indica de un vistazo cómo su organización se protegió de las amenazas en los últimos siete (7) días.
 
-![Panel de seguridad: widget resumen de administración de amenazas.](../../media/SecDash-ThreatMgmtSummary.png)
+:::image type="content" source="../../media/SecDash-ThreatMgmtSummary.png" alt-text="El panel de seguridad: widget Resumen de administración de amenazas" lightbox="../../media/SecDash-ThreatMgmtSummary.png":::
 
 La información que verá en el Resumen de administración de amenazas depende de lo que incluya la suscripción. En la tabla siguiente se describe qué información se incluye Office 365 E3 y Office 365 E5.
 
@@ -59,7 +64,7 @@ Para ver o obtener acceso al widget Resumen de administración de amenazas, debe
 
 El widget Estado de protección contra amenazas muestra la eficacia de la protección contra amenazas con una vista detallada y actual de la suplantación de identidad (phish) y malware.
 
-![Widget de estado de protección contra amenazas.](../../media/tpswidget.png)
+:::image type="content" source="../../media/tpswidget.png" alt-text="El widget Estado de protección contra amenazas" lightbox="../../media/tpswidget.png":::
 
 Los detalles dependen de si su suscripción Microsoft 365 incluye [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) con [o sin Microsoft Defender para Office 365](defender-for-office-365.md).
 
@@ -74,7 +79,7 @@ Para ver o tener acceso al widget Estado de protección contra amenazas, debe te
 
 El widget Detecciones semanales globales de amenazas muestra cuántas amenazas se detectaron en los mensajes de correo electrónico en los últimos siete (7) días.
 
-![Widget Global Weekly Threat Detections.](../../media/globalweeklythreatdetections.png)
+:::image type="content" source="../../media/globalweeklythreatdetections.png" alt-text="El widget Detecciones semanales globales de amenazas" lightbox="../../media/globalweeklythreatdetections.png":::
 
 Las métricas se calculan como se describe en la tabla siguiente:
 
@@ -89,13 +94,13 @@ Las métricas se calculan como se describe en la tabla siguiente:
 
 Los widgets de malware muestran detalles sobre tendencias de malware y tipos de familia de malware en los últimos siete (7) días.
 
-![Tendencias de malware y tipos de familia.](../../media/malwarewidgetatpe5.png)
+:::image type="content" source="../../media/malwarewidgetatpe5.png" alt-text="Tendencias de malware y tipos de familia" lightbox="../../media/malwarewidgetatpe5.png":::
 
 ## <a name="insights"></a>Insights
 
 Ideas los problemas principales de superficie que debes revisar, también incluyen recomendaciones y acciones que debes tener en cuenta.
 
-![Información inteligente.](../../media/smartinsights.png)
+:::image type="content" source="../../media/smartinsights.png" alt-text="The Smart insights" lightbox="../../media/smartinsights.png":::
 
 Por ejemplo, es posible que vea que los mensajes de correo electrónico de suplantación de identidad se están entregando porque algunos usuarios han deshabilitado sus opciones de correo no deseado. Para obtener más información sobre cómo funcionan las [perspectivas, vea Informes y perspectivas en el Centro de seguridad & cumplimiento](reports-and-insights-in-security-and-compliance.md).
 
@@ -109,7 +114,7 @@ Para obtener más información, vea [Introducción al uso de la investigación y
 
 Cerca de la parte inferior del Panel de seguridad hay **una sección Tendencias** , que resume las tendencias de flujo de correo electrónico de su organización. Los informes proporcionan información sobre el correo electrónico categorizado como correo no deseado, malware, intentos de suplantación de identidad y correo electrónico bueno. Haga clic en un icono para ver información más detallada en el informe.
 
-![En la sección Tendencias se resumen las tendencias de flujo de correo electrónico de la organización.](../../media/trends.png)
+:::image type="content" source="../../media/trends.png" alt-text="La sección Tendencias que resume las tendencias de flujo de correo electrónico de la organización" lightbox="../../media/trends.png":::
 
 Y, si la suscripción de su organización incluye el [Plan 2 de Defender para Office 365](office-365-ti.md), también tendrá un informe de alertas  de administración de amenazas recientes en esta sección que permite al equipo de seguridad ver y tomar medidas en alertas de seguridad de alta prioridad.
 

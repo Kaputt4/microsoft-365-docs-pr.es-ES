@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 445cb497abfaa0e7e4322268a761aafbaa0e31d6
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8123b3602569ec1effcbf79cb12d242ab19d960e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680916"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472361"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>Trabajo previo para implementar directivas de identidad de confianza cero y acceso a dispositivos
 
@@ -98,7 +98,7 @@ Se recomiendan los siguientes clientes cuando se ha aplicado una directiva de do
 |Android|Compatible|Compatible|Compatible|Compatible|No aplicable|
 |iOS|Compatible|Compatible|Compatible|Compatible|No aplicable|
 |macOS|Compatible|Compatible|N/D|N/D|No compatible|
-|Linux|No se admite|No compatible|No se admite|No compatible|No se admite|
+|Linux|No compatible|No compatible|No compatible|No compatible|No compatible|
 
 ### <a name="microsoft-365-client-support"></a>Soporte técnico para el cliente de Microsoft 365
 
@@ -122,6 +122,6 @@ Estas son algunas recomendaciones adicionales:
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Paso 2: Configurar la identidad de confianza cero común y acceder a directivas de acceso condicional.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
+[![Paso 2: Configurar la identidad de confianza cero común y acceder a directivas de acceso condicional.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png#lightbox)](identity-access-policies.md)
 
 [Configurar las directivas comunes de acceso a dispositivos y identidad de confianza cero](identity-access-policies.md)

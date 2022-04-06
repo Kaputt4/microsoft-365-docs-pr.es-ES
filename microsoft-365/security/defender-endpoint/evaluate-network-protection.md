@@ -1,7 +1,7 @@
 ---
 title: Evaluar protección de red
 description: Vea cómo funciona la protección de red probando escenarios comunes contra los que protege.
-keywords: 'Protección de red, vulnerabilidades, sitio web malintencionado, ip, dominio, dominios, evaluación, prueba, demostración'
+keywords: Protección de red, vulnerabilidades, sitio web malintencionado, ip, dominio, dominios, evaluación, prueba, demostración
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,15 +10,20 @@ audience: ITPro
 ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
-ms.reviewer: null
+ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection:
-  - m365solution-scenario
-  - M365-security-compliance
-ms.date: null
+- m365solution-scenario
+- M365-security-compliance
+ms.date: ''
+ms.openlocfilehash: df79062d1dafcd8d82dfa4ff9b9847ff4fad1775
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476145"
 ---
-
 # <a name="evaluate-network-protection"></a>Evaluar protección de red
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -57,7 +62,7 @@ Habilite la protección de red en modo auditoría para ver qué direcciones IP y
 
     Se permitirá la conexión de red y se mostrará un mensaje de prueba.
     
-    ![Notificación de ejemplo que indica Conexión bloqueada: el administrador de TI Seguridad de Windows bloquear esta conexión de red. Póngase en contacto con el servicio de soporte de IT.](images/np-notif.png)
+    :::image type="content" source="images/np-notif.png" alt-text="Notificación de bloqueo de conexión" lightbox="images/np-notif.png":::
 
 > [!NOTE]
 > Las conexiones de red pueden ser correctas aunque la protección de red bloquee un sitio. Para obtener más información, consulte [Protección de red y el](network-protection.md#network-protection-and-the-tcp-three-way-handshake) protocolo de enlace triple TCP.
@@ -72,7 +77,7 @@ Para revisar las aplicaciones que se habrían bloqueado, abra el Visor de evento
 | 1125 | Windows Defender (operativo) | Evento cuando se audita una conexión de red |
 | 1126 | Windows Defender (operativo) | Evento cuando se bloquea una conexión de red |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Protección de red](network-protection.md)
 

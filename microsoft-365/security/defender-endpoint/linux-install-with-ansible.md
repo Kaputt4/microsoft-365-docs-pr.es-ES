@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6a2c29d27814b4ed8c199b7a4db1ee10ce37b86c
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 57f0687fce422f26b76fc8b98a06ce0566f90f60
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156232"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476079"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Implementar Microsoft Defender para endpoint en Linux con Ansible
 
@@ -43,7 +43,7 @@ En este artículo se describe cómo implementar Defender for Endpoint en Linux m
 
 ## <a name="prerequisites-and-system-requirements"></a>Requisitos previos y requisitos del sistema
 
-Antes de empezar, consulte la página principal defender para endpoint [en Linux](microsoft-defender-endpoint-linux.md) para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión de software actual.
+Antes de empezar, consulte la página principal [defender para endpoint en Linux](microsoft-defender-endpoint-linux.md) para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión de software actual.
 
 Además, para la implementación de Ansible, debes familiarizarte con las tareas de administración de Ansible, configurar Ansible y saber cómo implementar libros de juegos y tareas. Ansible tiene muchas formas de completar la misma tarea. Estas instrucciones suponen la disponibilidad de módulos Ansible compatibles, como *aptos* y *norchivos* para ayudar a implementar el paquete. Su organización puede usar un flujo de trabajo diferente. Consulte la [documentación de Ansible](https://docs.ansible.com/) para obtener más información.
 
@@ -71,11 +71,11 @@ Además, para la implementación de Ansible, debes familiarizarte con las tareas
 
 Descargue el paquete de incorporación desde Microsoft 365 Defender portal:
 
-1. En Microsoft 365 Defender portal, vaya **a Configuración > Endpoints > Administración de dispositivos > Incorporación**.
-2. En el primer menú desplegable, seleccione **Linux Server** como sistema operativo. En el segundo menú desplegable, seleccione **La herramienta de** administración de configuración de Linux preferida como método de implementación.
+1. En Microsoft 365 Defender portal, vaya **a Configuración > Endpoints > Administración de dispositivos > incorporación**.
+2. En el primer menú desplegable, seleccione **Linux Server** como sistema operativo. En el segundo menú desplegable, seleccione **La herramienta de administración de configuración de Linux preferida** como método de implementación.
 3. Seleccione **Descargar paquete de incorporación**. Guarde el archivo como WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender captura de pantalla del portal.](images/portal-onboarding-linux-2.png)
+   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="La opción Descargar paquete de incorporación" lightbox="images/portal-onboarding-linux-2.png":::
 
 4. Desde un símbolo del sistema, compruebe que tiene el archivo. Extraiga el contenido del archivo:
 
@@ -98,7 +98,7 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal:
 
 Crea una subtarea o archivos de roles que contribuyan a un libro de juegos o una tarea.
 
-- Cree la tarea de `onboarding_setup.yml` incorporación:
+- Cree la tarea de incorporación: `onboarding_setup.yml`
 
     ```bash
     - name: Create MDATP directories
@@ -125,9 +125,9 @@ Crea una subtarea o archivos de roles que contribuyan a un libro de juegos o una
       when: not mdatp_onboard.stat.exists
     ```
 
-- Agregue el repositorio y la clave defender para el `add_apt_repo.yml` extremo:
+- Agregue el repositorio y la clave defender para el extremo: `add_apt_repo.yml`
 
-    Defender para Endpoint en Linux se puede implementar desde uno de los siguientes canales (que se indican a continuación como *[canal]):* *insiders-fast*, *insiders-slow* o *prod*. Cada uno de estos canales corresponde a un repositorio de software de Linux.
+    Defender para Endpoint en Linux se puede implementar desde uno de los siguientes canales (que se indican a continuación como *[canal]*): *insiders-fast*, *insiders-slow* o *prod*. Cada uno de estos canales corresponde a un repositorio de software de Linux.
 
     La elección del canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen al dispositivo. Los dispositivos *de insiders-fast* son los primeros en recibir actualizaciones y nuevas características, seguidos más adelante por *insiders-slow* y, por último, por *prod*.
 
@@ -136,7 +136,7 @@ Crea una subtarea o archivos de roles que contribuyan a un libro de juegos o una
     > [!WARNING]
     > Cambiar el canal después de la instalación inicial requiere que se vuelva a instalar el producto. Para cambiar el canal de producto: desinstale el paquete existente, vuelva a configurar el dispositivo para que use el nuevo canal y siga los pasos descritos en este documento para instalar el paquete desde la nueva ubicación.
 
-    Tenga en cuenta la distribución y la versión e identifique la entrada más cercana para ella en `https://packages.microsoft.com/config/[distro]/` .
+    Tenga en cuenta la distribución y la versión e identifique la entrada más cercana para ella en `https://packages.microsoft.com/config/[distro]/`.
 
     En los siguientes comandos, reemplace *[distro]* y *[version]* por la información que haya identificado.
 
@@ -237,7 +237,7 @@ Crea una subtarea o archivos de roles que contribuyan a un libro de juegos o una
 
 ## <a name="deployment"></a>Implementación
 
-Ahora ejecute los archivos de tareas en `/etc/ansible/playbooks/` el directorio correspondiente o en el directorio correspondiente.
+Ahora ejecute los archivos de tareas en el `/etc/ansible/playbooks/` directorio correspondiente o en el directorio correspondiente.
 
 - Instalación:
 

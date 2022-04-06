@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 73f07a7346edbaebe7e53cd4e17e29a5e6764073
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 099bd5c458a863576c8030a86d6923065228e307
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170593"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470755"
 ---
 # <a name="collect-microsoft-defender-antivirus-diagnostic-data"></a>Recopilar Antivirus de Microsoft Defender de diagnóstico
 
@@ -31,13 +31,13 @@ ms.locfileid: "61170593"
 
 **Se aplica a:**
 
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 En este artículo se describe cómo recopilar datos de diagnóstico que pueden usar los equipos de soporte técnico e ingeniería de Microsoft para ayudar a solucionar problemas que puedan surgir al usar el Antivirus de Microsoft Defender.
 
 > [!NOTE]
-> Como parte del proceso de investigación o respuesta, puedes recopilar un paquete de investigación desde un dispositivo. Este es el modo: [Recopilar paquete de investigación de dispositivos](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
+> Como parte del proceso de investigación o respuesta, puedes recopilar un paquete de investigación desde un dispositivo. Este es el modo: [Recopilar paquetes de investigación de dispositivos](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
 
 En al menos dos dispositivos que están experimentando el mismo problema, obtenga el .cab de diagnóstico siguiendo los pasos siguientes:
 
@@ -45,14 +45,14 @@ En al menos dos dispositivos que están experimentando el mismo problema, obteng
 
     a. Abra el **menú** Inicio.
 
-    b. Escriba **cmd**. Haga clic con el botón secundario en **el símbolo del sistema** y, a continuación, seleccione Ejecutar como **administrador**.
+    b. Escriba **cmd**. Haga clic con el botón secundario **en el símbolo del sistema** y, a continuación, **seleccione Ejecutar como administrador**.
 
     c. Especifique las credenciales de administrador o apruebe el símbolo del sistema.
 
 2. Vaya al directorio de Antivirus de Microsoft Defender. El valor predeterminado es `C:\Program Files\Windows Defender`
 
    > [!NOTE]
-   > Si está ejecutando una versión actualizada de la plataforma antimalware de [Microsoft Defender,](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)ejecute `MpCmdRun` desde la siguiente ubicación: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>` .
+   > Si está ejecutando una versión actualizada de la plataforma [antimalware de Microsoft Defender](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform), ejecute desde `MpCmdRun` la siguiente ubicación: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
 
 3. Escriba el siguiente comando y, a continuación, presione **ENTRAR**
 
@@ -60,7 +60,7 @@ En al menos dos dispositivos que están experimentando el mismo problema, obteng
     mpcmdrun.exe -GetFiles
     ```
 
-4. Se generará .cab archivo de diagnóstico que contenga varios registros de diagnóstico. La ubicación del archivo se especificará en la salida del símbolo del sistema. De forma predeterminada, la ubicación es `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
+4. Se generará .cab archivo de diagnóstico que contenga varios registros de diagnóstico. La ubicación del archivo se especificará en la salida del símbolo del sistema. De forma predeterminada, la ubicación es `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab`.
 
    > [!NOTE]
    > Para redirigir el archivo cab a una ruta de acceso diferente o a un recurso compartido UNC, use el siguiente comando:
@@ -72,7 +72,7 @@ En al menos dos dispositivos que están experimentando el mismo problema, obteng
 5. Copie estos .cab en una ubicación a la que pueda tener acceso el soporte técnico de Microsoft. Un ejemplo podría ser una carpeta OneDrive contraseña que puede compartir con nosotros.
 
 > [!NOTE]
-> Si tiene un problema con el cumplimiento <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a"></a>de la actualización, envíe un correo electrónico con la plantilla de correo electrónico de soporte técnico actualizar cumplimiento y rellene la plantilla con la siguiente información:
+> Si tiene un problema con el cumplimiento de actualizaciones, envíe un correo electrónico <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a"></a>con la plantilla de correo electrónico de soporte técnico actualizar cumplimiento y rellene la plantilla con la siguiente información:
 >
 > Me encuentro con el siguiente problema al usar Antivirus de Microsoft Defender update compliance:
 >
@@ -104,9 +104,9 @@ Cuando se usa el parámetro SupportLogLocation, se creará una estructura de car
 
 ****
 
-|campo|Description|
+|campo|Descripción|
 |---|---|
-|path|Ruta de acceso especificada en la línea de comandos o recuperada de la configuración|
+|ruta de acceso|Ruta de acceso especificada en la línea de comandos o recuperada de la configuración|
 |MMDD|Mes y día en que se recopilaron los datos de diagnóstico (por ejemplo, 0530)|
 |nombre de host|Nombre de host del dispositivo en el que se recopilaron los datos de diagnóstico|
 |HHMM|Horas y minutos cuando se recopilaron los datos de diagnóstico (por ejemplo, 1422)|
@@ -119,23 +119,24 @@ Cuando se usa el parámetro SupportLogLocation, se creará una estructura de car
 
 También puede especificar dónde se creará el .cab de diagnóstico mediante un objeto de directiva de grupo (GPO).
 
-1. Abra el Editor de directivas de grupo local y busque el GPO SupportLogLocation en: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation` .
+1. Abra el Editor de directivas de grupo local y busque el GPO SupportLogLocation en: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation`.
 
-2. Seleccione **Definir la ruta de acceso del directorio para copiar los archivos de registro de soporte técnico.**
+2. Seleccione **Definir la ruta de acceso del directorio para copiar los archivos de registro de soporte técnico**.
 
-   ![Captura de pantalla del editor de directivas de grupo local](images/GPO1-SupportLogLocationDefender.png)
+   :::image type="content" source="images/GPO1-SupportLogLocationDefender.png" alt-text="Editor de directivas de grupo local" lightbox="images/GPO1-SupportLogLocationDefender.png":::
 
-   ![Captura de pantalla de definición de ruta de acceso para la configuración de archivos de registro](images/GPO2-SupportLogLocationGPPage.png)
+   :::image type="content" source="images/GPO2-SupportLogLocationGPPage.png" alt-text="Configuración de la ruta de acceso para los archivos de registro" lightbox="images/GPO2-SupportLogLocationGPPage.png":::
 
-    ![Captura de pantalla del editor de directivas de grupo local.](images/GPO1-SupportLogLocationDefender.png)  
+   :::image type="content" source="images/GPO1-SupportLogLocationDefender.png" alt-text="Editor de directivas de grupo local" lightbox="images/GPO1-SupportLogLocationDefender.png"::: 
         
-     ![Captura de pantalla de definir la ruta de acceso para la configuración de los archivos de registro.](images/GPO2-SupportLogLocationGPPage.png)  
+   :::image type="content" source="images/GPO2-SupportLogLocationGPPage.png" alt-text="La ruta de acceso de definición para configurar la configuración de archivos de registro" lightbox="images/GPO2-SupportLogLocationGPPage.png":::
+ 
 3. Dentro del editor de directivas, seleccione **Habilitado**.
 
 4. Especifique la ruta de acceso del directorio en la que desea copiar los archivos de registro de soporte técnico en el **campo** Opciones.
-     ![Captura de pantalla de configuración personalizada de ruta de acceso de directorio habilitada.](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
+   :::image type="content" source="images/GPO3-SupportLogLocationGPPageEnabledExample.png" alt-text="La configuración personalizada Ruta de acceso de directorio habilitada" lightbox="images/GPO3-SupportLogLocationGPPageEnabledExample.png":::
 5. Seleccione **Aceptar** o **Aplicar**.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Solucionar problemas Antivirus de Microsoft Defender informes](troubleshoot-reporting.md)

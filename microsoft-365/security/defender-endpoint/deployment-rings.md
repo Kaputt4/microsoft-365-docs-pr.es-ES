@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-endpointprotect
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a7a9673591f4d77197390541a58169a58b04fe91
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 116960ed6e7d4a765479f0c76715e48ec8312e3b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872434"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472097"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Implementar Microsoft Defender para endpoint en anillos
 
@@ -42,7 +42,7 @@ Los anillos de implementación se pueden aplicar en los siguientes escenarios:
 
 ## <a name="new-deployments"></a>Nuevas implementaciones
 
-![Imagen de los anillos de implementación.](images/deployment-rings.png)
+:::image type="content" source="images/deployment-rings.png" alt-text="Anillos de implementación" lightbox="images/deployment-rings.png":::
 
 Un enfoque basado en anillos es un método para identificar un conjunto de puntos de conexión a incorporar y comprobar que se cumplen ciertos criterios antes de continuar con la implementación del servicio en un conjunto de dispositivos más grande. Puede definir los criterios de salida de cada anillo y asegurarse de que se cumplen antes de pasar al siguiente anillo.
 
@@ -98,7 +98,7 @@ Use el siguiente material para seleccionar la arquitectura de Microsoft Defender
 
 |**Item**|**Descripción**|
 |:-----|:-----|
-|[![Imagen digital de la estrategia de implementación de Microsoft Defender para endpoints.](images/mde-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li></ul>
+|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="La estrategia para la implementación de Microsoft Defender para endpoints" lightbox="images/mde-deployment-strategy.png":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li></ul>
 
 ## <a name="existing-deployments"></a>Implementaciones existentes
 
@@ -120,7 +120,8 @@ Con macOS y Linux, puede usar un par de sistemas y ejecutarse en el canal Beta.
 
 La elección del canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen al dispositivo. Los dispositivos en Beta son los primeros en recibir actualizaciones y nuevas características, seguidos más adelante por Preview y, por último, por Current.
 
-![Imagen de los anillos insider.](images/insider-rings.png)
+:::image type="content" source="images/insider-rings.png" alt-text="Los anillos de insider" lightbox="images/insider-rings.png":::
+
 
 Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa para que usen Beta o Preview.
 

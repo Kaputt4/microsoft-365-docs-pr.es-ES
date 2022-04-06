@@ -1,24 +1,29 @@
 ---
 title: Directivas de protección contra phishing
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.date: null
+ms.date: ''
 ms.localizationpriority: medium
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
-  - M365-security-compliance
+- M365-security-compliance
 ms.custom:
-  - seo-marvel-apr2020
+- seo-marvel-apr2020
 description: Los administradores pueden obtener información sobre las directivas contra la suplantación de identidad que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
+ms.openlocfilehash: 5389e83634bc92dd01908b16e8ca0a76dd76c765
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475705"
 ---
-
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra la suplantación de identidad en Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -75,7 +80,7 @@ La siguiente configuración de directiva está disponible en las directivas cont
   - **Dominios**: uno o varios de los dominios [aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) configurados en Microsoft 365.
 
   - **Excluir estos usuarios, grupos y dominios**: excepciones para la directiva. La configuración y el comportamiento son exactamente iguales a las condiciones:
-    - **Users**
+    - **Usuarios**
     - **Grupos**
     - **Dominios**
 
@@ -135,9 +140,9 @@ La **configuración** de mostrar el primer contacto consejo de seguridad está d
 - La primera vez que obtienen un mensaje de un remitente
 - A menudo no obtienen mensajes del remitente.
 
-![Primer contacto consejo de seguridad para los mensajes con un destinatario.](../../media/safety-tip-first-contact-one-recipient.png)
+:::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="El primer contacto consejo de seguridad mensajes con un destinatario" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
 
-![Primer contacto consejo de seguridad mensajes con varios destinatarios.](../../media/safety-tip-first-contact-multiple-recipients.png)
+:::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="El primer contacto consejo de seguridad mensajes con varios destinatarios" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
 
 Esta funcionalidad agrega una capa adicional de protección de seguridad contra posibles ataques de suplantación, por lo que se recomienda activarla.
 

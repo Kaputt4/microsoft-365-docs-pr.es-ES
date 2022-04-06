@@ -1,7 +1,7 @@
 ---
-title: 'Cambiar a Microsoft Defender para el punto de conexión: Preparar'
-description: Prepárese para cambiar a Microsoft Defender para Endpoint. Actualice los dispositivos y configure las conexiones de red.
-keywords: migración, Microsoft Defender para endpoint, procedimiento recomendado
+title: Cambiar a Pertahanan Microsoft untuk Titik Akhir- Preparar
+description: Prepárese para cambiar a Pertahanan Microsoft untuk Titik Akhir. Actualice los dispositivos y configure las conexiones de red.
+keywords: migración, Pertahanan Microsoft untuk Titik Akhir, procedimiento recomendado
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -21,16 +21,16 @@ ms.topic: article
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
-ms.date: 11/30/2021
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: aa0bd45c1765e2aa794e00e437bf08a63d1d742f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 33ad09cb87c80aecbaa72ebe9fb2b6523962498f
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64476739"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634435"
 ---
-# <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Cambiar a Microsoft Defender para endpoint- Fase 1: Preparar
+# <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Cambiar a Pertahanan Microsoft untuk Titik Akhir - Fase 1: Preparar
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -64,9 +64,7 @@ Mantenga actualizada la solución de protección de puntos de conexión existent
 
 ¿Necesita ayuda para actualizar los dispositivos de su organización? Vea los siguientes recursos:
 
-<br/><br/>
-
-|SO|Resource|
+|SO|Recurso|
 |---|---|
 |Windows|[Microsoft Update](https://www.update.microsoft.com)|
 |macOS|[Cómo actualizar el software en tu Mac](https://support.apple.com/HT201541)|
@@ -74,7 +72,7 @@ Mantenga actualizada la solución de protección de puntos de conexión existent
 |Android|[Comprobar & actualizar la versión de Android](https://support.google.com/android/answer/7680439)|
 |Linux|[Linux 101: actualizar el sistema](https://www.linux.com/training-tutorials/linux-101-updating-your-system)|
 
-## <a name="get-microsoft-defender-for-endpoint"></a>Obtener Microsoft Defender para endpoint
+## <a name="get-microsoft-defender-for-endpoint"></a>Obtener Pertahanan Microsoft untuk Titik Akhir
 
 Ahora que ha actualizado los dispositivos de su organización, el siguiente paso es obtener Defender for Endpoint, asignar licencias y asegurarse de que el servicio está aprovisionado.
 
@@ -99,12 +97,14 @@ Los permisos del portal Microsoft 365 Defender pueden concederse mediante permis
 
 1. Planee los roles y permisos para los administradores de seguridad y los operadores de seguridad. Consulte [Control de acceso basado en roles](prepare-deployment.md#role-based-access-control).
 
-2. Configurar y configurar RBAC. Se recomienda usar [Intune para](/mem/intune/fundamentals/what-is-intune) configurar RBAC, especialmente si su organización usa una combinación de dispositivos Windows 10, macOS, iOS y Android. Consulta [Configurar RBAC con Intune](/mem/intune/fundamentals/role-based-access-control).
+2. Configurar y configurar RBAC. Se recomienda usar [Intune](/mem/intune/fundamentals/what-is-intune) para configurar RBAC, especialmente si su organización usa una combinación de dispositivos Windows 10, macOS, iOS y Android. Consulte [configurar RBAC mediante Intune](/mem/intune/fundamentals/role-based-access-control).
 
     Si su organización requiere un método distinto de Intune, elija una de las siguientes opciones:
 
     - [Configuration Manager](/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
+
     - [Administración de directivas de grupo avanzadas](/microsoft-desktop-optimization-pack/agpm)
+    
     - [Windows Admin Center](/windows-server/manage/windows-admin-center/overview)
 
 3. Conceda acceso al portal Microsoft 365 Defender web. (¿Necesita ayuda? Consulte [Manage portal access using RBAC](rbac.md).
@@ -113,17 +113,14 @@ Los permisos del portal Microsoft 365 Defender pueden concederse mediante permis
 
 Para habilitar la comunicación entre los dispositivos y Defender para endpoint, configure la configuración de proxy e Internet. En la tabla siguiente se incluyen vínculos a los recursos que puede usar para configurar el proxy y la configuración de Internet para varios sistemas operativos y capacidades:
 
-<br/><br/>
-
 |Capacidades|Sistema operativo|Recursos|
 |---|---|---|
 |[Detección y respuesta de extremos](overview-endpoint-detection-response.md) (EDR)|[Windows 10](/windows/release-health/release-information) o posterior<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803)|[Configurar el proxy de máquina y la configuración de conectividad a Internet](configure-proxy-internet.md)|
 |EDR|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configuración de proxy y conectividad a Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
 |EDR|macOS (consulte [Requisitos del sistema](microsoft-defender-endpoint-mac.md)|[Defender para endpoint en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections)|
-|[Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md)|
+|[Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) o posterior <br/><br/>Windows Server 2022 <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> [Windows Server 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Configurar y validar las conexiones de red del Antivirus de Windows Defender](configure-network-connections-microsoft-defender-antivirus.md)|
 |Antivirus|macOS (consulte [Requisitos del sistema](microsoft-defender-endpoint-mac.md)|[Defender para endpoint en macOS: conexiones de red](microsoft-defender-endpoint-mac.md#network-connections)|
 |Antivirus|Linux (consulte [Requisitos del sistema](microsoft-defender-endpoint-linux.md#system-requirements))|[Defender para endpoint en Linux: conexiones de red](microsoft-defender-endpoint-linux.md#network-connections)|
-
 
 ## <a name="next-step"></a>Paso siguiente
 

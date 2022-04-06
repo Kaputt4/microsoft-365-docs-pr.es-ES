@@ -1,6 +1,6 @@
 ---
 title: Información general sobre Microsoft Defender para empresas
-description: Obtenga información sobre Microsoft Defender para empresas, incluida la configuración, la introducción y cómo usar los servicios
+description: Obtenga información sobre Microsoft Defender para Empresas, incluida la configuración, la introducción y el uso de los servicios.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -18,21 +18,21 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 2cb63e579dee59b3407ed893cf9f9306e83af386
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 0d291f4da7c44a57d12516be364fc36bbb771356
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63527118"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664950"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>Información general sobre Microsoft Defender para empresas
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas se está implementando [para Microsoft 365 Empresa Premium](../../business-premium/index.md) clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
+> Microsoft Defender para Empresas se está implementando para [Microsoft 365 Empresa Premium](../../business-premium/index.md) clientes, a partir del 1 de marzo de 2022. Defender for Business como una suscripción independiente está en versión preliminar y se implementará gradualmente para los clientes y asociados de TI que [se registren aquí](https://aka.ms/mdb-preview) para solicitarla. La versión preliminar incluye un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
 > 
-> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
+> Parte de la información de este artículo se refiere a los productos o servicios preliminares que se pueden modificar sustancialmente antes de que se publiquen comercialmente. Microsoft no ofrece ninguna garantía, expresa o implícita, de la información que se proporciona aquí. 
 
-Microsoft Defender para empresas es una nueva solución de seguridad de puntos de conexión diseñada especialmente para la pequeña y mediana empresa (hasta 300 empleados). Con esta solución de seguridad de puntos de conexión, los dispositivos de la empresa están mejor protegidos contra ransomware, malware, phishing y otras amenazas. 
+Microsoft Defender para Empresas es una nueva solución de seguridad de puntos de conexión diseñada especialmente para la pequeña y mediana empresa (hasta 300 empleados). Con esta solución de seguridad de punto de conexión, los dispositivos de su empresa están mejor protegidos contra ransomware, malware, suplantación de identidad (phishing) y otras amenazas. 
 
 Vea el siguiente vídeo para obtener más información sobre Defender para empresas: <br/><br/>
 
@@ -40,46 +40,46 @@ Vea el siguiente vídeo para obtener más información sobre Defender para empre
 
 En este artículo se describe lo que se incluye en Defender para empresas, con vínculos para obtener más información sobre estas características y funcionalidades.
 
-:::image type="content" source="media/mdb-offering-overview.png" alt-text="Características y funcionalidades de Microsoft Defender para empresas.":::
+:::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender para Empresas características y funcionalidades.":::
 
 >
 > **¿Tiene un minuto?**
-> Por favor, haga <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre Microsoft Defender para Empresas</a>. Nos encantaría conocer su opinión.
 >
 
-Con Defender para empresas, puedes ayudar a proteger los dispositivos y los datos con los que tu empresa usa:
+Con Defender para empresas, puede ayudar a proteger los dispositivos y los datos que usa su empresa con:
 
-- **Enterprise de nivel de seguridad**. Defender para empresas ofrece potentes capacidades de seguridad de puntos de conexión de nuestra solución de [Microsoft Defender para](../defender-endpoint/microsoft-defender-endpoint.md) endpoint líder en el sector y optimiza esas capacidades para que los administradores de TI admitan pequeñas y medianas empresas.
+- **Enterprise nivel de seguridad**. Defender for Business ofrece eficaces funcionalidades de seguridad de puntos de conexión de nuestra solución [de Microsoft Defender para punto de conexión](../defender-endpoint/microsoft-defender-endpoint.md) líder del sector y optimiza esas funcionalidades para que los administradores de TI admitan pequeñas y medianas empresas.
 
-- **Una solución de seguridad fácil de usar**. Defender para empresas ofrece experiencias optimizadas que le guiarán a la acción con recomendaciones e información sobre la seguridad de los puntos de conexión. No se requiere ningún conocimiento especializado, ya que Defender para empresas ofrece directivas de configuración basadas en asistentes y seguridad predeterminadas diseñadas para ayudar a proteger los dispositivos de su empresa desde el primer día.
+- **Una solución de seguridad fácil de usar**. Defender for Business ofrece experiencias simplificadas que le guían a la acción con recomendaciones e información sobre la seguridad de los puntos de conexión. No se requiere ningún conocimiento especializado, ya que Defender for Business ofrece directivas de seguridad predeterminadas y de configuración basadas en asistentes diseñadas para ayudar a proteger los dispositivos de su empresa desde el primer día.
 
-- **Flexibilidad para su entorno**. Defender para empresas puede trabajar con su entorno empresarial, ya sea que use Microsoft Intune o que sea completamente nuevo en Microsoft Cloud. Defender para empresas funciona con componentes integrados en Windows y con aplicaciones para dispositivos macOS, iOS y Android.
+- **Flexibilidad para su entorno**. Defender for Business puede trabajar con su entorno empresarial, tanto si usa Microsoft Intune como si es nuevo en Microsoft Cloud. Defender para empresas funciona con componentes integrados en Windows y con aplicaciones para dispositivos macOS, iOS y Android.
 
-- **Integración con Microsoft 365 Lighthouse**. Si es un proveedor de servicios administrados (MSP) que [usa Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), hay más funcionalidades disponibles. Si sus clientes usan Microsoft 365 Empresa Premium junto con Defender para empresas, puede ver incidentes de seguridad y alertas en los inquilinos de clientes que están incorporados a Microsoft 365 Lighthouse.
+- **Integración con Microsoft 365 Lighthouse**. Si es un proveedor de servicios administrados (MSP) que usa [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), hay más funcionalidades disponibles. Si los clientes usan Microsoft 365 Empresa Premium junto con Defender para empresas, puede ver incidentes de seguridad y alertas entre los inquilinos de clientes que se incorporan a Microsoft 365 Lighthouse.
 
 ## <a name="how-to-use-this-guide"></a>Cómo usar esta guía
 
-**Esta guía está diseñada para**:
+**Esta guía está pensada para**:
 
-- **Proporcionarte información general sobre Defender para empresas** para que sepas lo que se incluye y cómo funciona
+- **Proporcione información general de Defender para empresas para** que sepa lo que se incluye y cómo funciona.
    - Use este artículo como punto de partida
-   - [Comparar las características de seguridad de Microsoft Defender para empresas con otros planes](compare-mdb-m365-plans.md) 
-   - [Obtenga información sobre cómo obtener Microsoft Defender para empresas](get-defender-business.md)
+   - [Comparación de las características de seguridad de Microsoft Defender para Empresas con otros planes](compare-mdb-m365-plans.md) 
+   - [Obtenga información sobre cómo obtener Microsoft Defender para Empresas](get-defender-business.md)
 
-- **Vea cómo configurar y configurar las capacidades de protección contra amenazas** 
-   - [Vea cómo configurar y configurar Defender para empresas](mdb-setup-configuration.md)
+- **Tutorial sobre la configuración y configuración de las funcionalidades de protección contra amenazas** 
+   - [Vea cómo configurar Defender para empresas](mdb-setup-configuration.md)
 
-- **Ayuda para empezar a usar Defender para empresas**, empezando por el portal Microsoft 365 Defender web 
-   - [Navegar por el Microsoft 365 Defender web](mdb-get-started.md)
-   - [Probar escenarios de vista previa, tutoriales y simulaciones](mdb-tutorials.md)
+- **Ayuda para empezar a usar Defender para empresas**, empezando por el portal de Microsoft 365 Defender 
+   - [Navegar por el portal de Microsoft 365 Defender](mdb-get-started.md)
+   - [Prueba de escenarios, tutoriales y simulaciones en versión preliminar](mdb-tutorials.md)
 
 - **Proporcionar instrucciones sobre la administración de dispositivos y directivas de seguridad**
    - [Administrar dispositivos](mdb-manage-devices.md)
-   - [Ver o editar directivas de seguridad](mdb-view-edit-policies.md)
-   - [Administrar reglas personalizadas para directivas de firewall](mdb-custom-rules-firewall.md)  
+   - [Visualización o edición de directivas de seguridad](mdb-view-edit-policies.md)
+   - [Administración de reglas personalizadas para directivas de firewall](mdb-custom-rules-firewall.md)  
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Obtenga más información sobre el proceso de configuración simplificado en Microsoft Defender para empresas](mdb-simplified-configuration.md)
+- [Obtenga más información sobre el proceso de configuración simplificado en Microsoft Defender para Empresas](mdb-simplified-configuration.md)
 
-- [Obtenga información sobre cómo obtener Microsoft Defender para empresas](get-defender-business.md)
+- [Obtenga información sobre cómo obtener Microsoft Defender para Empresas](get-defender-business.md)

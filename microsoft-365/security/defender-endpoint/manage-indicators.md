@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00685ee4540949028b8bb438dd8a4965e2e9a5e7
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 55f9529d511435eb66f2791fe8a177a9fa35a8a5
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63513064"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64666336"
 ---
 # <a name="create-indicators"></a>Crear indicadores
 
@@ -35,44 +35,44 @@ ms.locfileid: "63513064"
 >
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-El indicador de coincidencia de puntos de conexión (IoCs) es una característica esencial en cada solución de protección de puntos de conexión. Esta funcionalidad ofrece a SecOps la capacidad de establecer una lista de indicadores para la detección y para el bloqueo (prevención y respuesta).
+El indicador de coincidencia de peligro (IoC) es una característica esencial en todas las soluciones de Endpoint Protection. Esta funcionalidad ofrece a SecOps la capacidad de establecer una lista de indicadores para la detección y el bloqueo (prevención y respuesta).
 
-Cree indicadores que definan la detección, prevención y exclusión de entidades. Puedes definir la acción que se va a realizar, así como la duración de cuándo aplicar la acción, así como el ámbito del grupo de dispositivos al que aplicarla.
+Cree indicadores que definan la detección, prevención y exclusión de entidades. Puede definir la acción que se va a realizar, así como la duración de la aplicación de la acción, así como el ámbito del grupo de dispositivos al que se va a aplicar.
 
-Los orígenes compatibles actualmente son el motor de detección en la nube de Defender for Endpoint, el motor automatizado de investigación y corrección y el motor de prevención de puntos de conexión (Antivirus de Microsoft Defender).
+Los orígenes admitidos actualmente son el motor de detección en la nube de Defender para punto de conexión, el motor de investigación y corrección automatizado y el motor de prevención de puntos de conexión (Antivirus de Microsoft Defender).
 
 ## <a name="cloud-detection-engine"></a>Motor de detección de nube
 
-El motor de detección en la nube de Defender for Endpoint examina periódicamente los datos recopilados e intenta coincidir con los indicadores que estableces. Cuando haya una coincidencia, se realizará una acción de acuerdo con la configuración especificada para IoC.
+El motor de detección en la nube de Defender para punto de conexión examina periódicamente los datos recopilados e intenta coincidir con los indicadores establecidos. Cuando haya una coincidencia, se realizará una acción según la configuración especificada para IoC.
 
-## <a name="endpoint-prevention-engine"></a>Motor de prevención de extremos
+## <a name="endpoint-prevention-engine"></a>Motor de prevención de puntos de conexión
 
-El agente de prevención respeta la misma lista de indicadores. Es decir, si Microsoft Defender AV es el antivirus principal configurado, los indicadores coincidentes se tratarán de acuerdo con la configuración. Por ejemplo, si la acción es "Alerta y bloqueo", AV de Microsoft Defender impedirá las ejecuciones de archivos (bloquear y corregir) y se genera una alerta correspondiente. Por otra parte, si la acción está establecida en "Permitir", AV de Microsoft Defender no detectará ni bloqueará la ejecución del archivo.
+El agente de prevención respeta la misma lista de indicadores. Es decir, si El antivirus de Microsoft Defender es el antivirus principal configurado, los indicadores coincidentes se tratarán según la configuración. Por ejemplo, si la acción es "Alerta y bloqueo", Av. de Microsoft Defender impedirá las ejecuciones de archivos (bloquear y corregir) y se generará una alerta correspondiente. Por otro lado, si la acción está establecida en "Permitir", EL ANTIVIRUS de Microsoft Defender no detectará ni bloqueará la ejecución del archivo.
 
-## <a name="automated-investigation-and-remediation-engine"></a>Motor automatizado de investigación y corrección
+## <a name="automated-investigation-and-remediation-engine"></a>Motor de investigación y corrección automatizado
 
-La investigación automatizada y la corrección se comportan igual. Si un indicador está establecido en "Permitir", la investigación automatizada y la corrección omitirán un veredicto "malo" para él. Si se establece en "Bloquear", la investigación automatizada y la corrección la tratarán como "mala".
+La investigación y corrección automatizadas se comportan igual. Si un indicador se establece en "Permitir", la investigación y corrección automatizadas omitirán un veredicto "incorrecto" para él. Si se establece en "Bloquear", la investigación y la corrección automatizadas lo tratarán como "incorrecto".
 
-La configuración EnableFileHashComputation calcula el hash de archivo para el certificado y el archivo IoC durante los exámenes de archivos. Admite la aplicación de IoC de hashes y certificados que pertenecen a aplicaciones de confianza. Se habilitará y deshabilitará simultáneamente con la opción permitir o bloquear el archivo. EnableFileHashComputation está habilitado manualmente a través de la directiva de grupo y está deshabilitado de forma predeterminada.
+La configuración EnableFileHashComputation calcula el hash de archivo para el certificado y el archivo IoC durante los exámenes de archivos. Admite la aplicación de IoC de hashes y certificados que pertenecen a aplicaciones de confianza. Se habilitará y deshabilitará simultáneamente con la configuración de permitir o bloquear archivos. EnableFileHashComputation se habilita manualmente mediante directiva de grupo y está deshabilitado de forma predeterminada.
 
-Al crear un nuevo indicador (IoC), hay disponibles una o varias de las siguientes acciones:
+Al crear un nuevo indicador (IoC), están disponibles una o varias de las siguientes acciones:
 
-- Permitir: se permitirá que el IoC se ejecute en los dispositivos.
-- Auditoría: se activará una alerta cuando se ejecute ioC.
-- Warn: IoC le pedirá una advertencia de que el usuario puede omitir 
-- Bloquear la ejecución: no se permitirá la ejecución de IoC.
-- Bloquear y corregir: el IoC no podrá ejecutarse y se aplicará una acción de corrección al IoC.
+- Permitir: se permitirá que IoC se ejecute en los dispositivos.
+- Auditoría: se desencadenará una alerta cuando se ejecute IoC.
+- Advertir: IoC le pedirá una advertencia que el usuario puede omitir. 
+- Ejecución de bloques: no se permitirá la ejecución de IoC.
+- Bloquear y corregir: no se permitirá la ejecución de IoC y se aplicará una acción de corrección a IoC.
 
 >[!NOTE]
-> El uso del modo de advertencia le pedirá a los usuarios una advertencia si abren una aplicación de riesgo. El mensaje no les impedirá usar la aplicación, pero puedes proporcionar un mensaje personalizado y vínculos a una página de empresa que describe el uso adecuado de la aplicación. Los usuarios aún pueden omitir la advertencia y seguir usando la aplicación si lo necesitan. Para obtener más información, consulta [Govern apps discovered by Microsoft Defender for Endpoint](/cloud-app-security/mde-govern).
+> El uso del modo Advertir indicará a los usuarios una advertencia si abren una aplicación de riesgo. El símbolo del sistema no les impedirá usar la aplicación, pero puede proporcionar un mensaje personalizado y vínculos a una página de empresa que describa el uso adecuado de la aplicación. Los usuarios pueden omitir la advertencia y seguir usando la aplicación si lo necesitan. Para obtener más información, consulte [Control de las aplicaciones detectadas por Microsoft Defender para punto de conexión](/cloud-app-security/mde-govern).
 
 Puede crear un indicador para:
 
 - [Files](indicator-file.md)
-- [Direcciones IP, direcciones URL/dominios](indicator-ip-domain.md)
+- [Direcciones IP, direcciones URL o dominios](indicator-ip-domain.md)
 - [Certificados](indicator-certificates.md)
 
-La tabla siguiente muestra exactamente qué acciones están disponibles por tipo de indicador (IoC):
+En la tabla siguiente se muestra exactamente qué acciones están disponibles por tipo de indicador (IoC):
 
 | Tipo de IoC | Acciones disponibles |
 |:---|:---|
@@ -81,20 +81,20 @@ La tabla siguiente muestra exactamente qué acciones están disponibles por tipo
 | [Direcciones URL y dominios](indicator-ip-domain.md) | Permitir <br> Auditoría <br> Ejecución de bloques<br> Advertir |
 | [Certificados](indicator-certificates.md) | Permitir <br> Bloquear y corregir |
 
-La funcionalidad de los IoCs preexisteos no cambiará. Sin embargo, se cambió el nombre de los indicadores para que coincidan con las acciones de respuesta admitidas actuales:
+La funcionalidad de los ioC preexistebles no cambiará. Sin embargo, se cambió el nombre de los indicadores para que coincidan con las acciones de respuesta admitidas actuales:
 
-- La acción de respuesta "solo alerta" se cambió a "auditoría" con la configuración de generar alerta habilitada.
-- La respuesta "alerta y bloqueo" se cambió a "bloquear y corregir" con la configuración de alerta de generación opcional.
+- Se cambió el nombre de la acción de respuesta "solo alerta" a "audit" con la opción generar alerta habilitada.
+- Se cambió el nombre de la respuesta "alerta y bloque" a "bloquear y corregir" con la configuración de generación de alertas opcional.
 
-El esquema de la API de IoC y los identificadores de amenazas en búsqueda anticipada se han actualizado para alinearse con el cambio de nombre de las acciones de respuesta de IoC. Los cambios del esquema de API se aplican a todos los tipos de IoC.
+El esquema de la API de IoC y los identificadores de amenazas en la búsqueda anticipada se han actualizado para alinearse con el cambio de nombre de las acciones de respuesta de IoC. Los cambios del esquema de API se aplican a todos los tipos de IoC.
 
 > [!Note]
-> Hay un límite de 15.000 indicadores por inquilino. Los indicadores de archivo y certificado no [bloquean las exclusiones definidas para Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Los indicadores no se admiten en Antivirus de Microsoft Defender cuando está en modo pasivo.
+> Hay un límite de 15 000 indicadores por inquilino. Los indicadores de archivo y certificado no [bloquean las exclusiones definidas para Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Los indicadores no se admiten en Antivirus de Microsoft Defender cuando está en modo pasivo.
 >
-> El formato para importar nuevos indicadores (IoCs) ha cambiado según la nueva configuración de alertas y acciones actualizadas. Se recomienda descargar el nuevo formato CSV que se encuentra en la parte inferior del panel de importación.
+> El formato para importar nuevos indicadores (IoC) ha cambiado según la nueva configuración de alertas y acciones actualizadas. Se recomienda descargar el nuevo formato CSV que se encuentra en la parte inferior del panel de importación.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Crear IoC contextual](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
-- [Usar la API de indicadores de Microsoft Defender para puntos de conexión](ti-indicator.md)
-- [Usar soluciones integradas de partners](partner-applications.md)
+- [Creación de IoC contextual](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
+- [Uso de la API de indicadores de Microsoft Defender para punto de conexión](ti-indicator.md)
+- [Uso de soluciones integradas de asociados](partner-applications.md)

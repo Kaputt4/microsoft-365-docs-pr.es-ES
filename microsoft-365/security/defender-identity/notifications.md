@@ -9,12 +9,12 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fa740b483cd1a9591f7d4f7ef1961c5e96d4d44b
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 89ed7ae50bf89c28bde81ea02e8905d0056ede53
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682248"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470931"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Notificaciones de Defender for Identity en Microsoft 365 Defender
 
@@ -34,17 +34,18 @@ En Microsoft 365 Defender, puedes agregar destinatarios para notificaciones por 
 
 1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya a Configuración y, a **continuación**, **Identities**.
 
-    ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
+  :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="La opción Identidades de la columna Nombre" lightbox="../../media/defender-identity/settings-identities.png":::
+
 
 1. Seleccione **Notificaciones de problemas de estado**.
 
 1. Escriba la dirección de correo electrónico del destinatario. Seleccione **Agregar**.
 
-    ![Escriba la dirección de correo electrónico para problemas de estado.](../../media/defender-identity/health-email-recipient.png)
+   :::image type="content" source="../../media/defender-identity/health-email-recipient.png" alt-text="El elemento de submenú Problemas de mantenimiento emite notificaciones" lightbox="../../media/defender-identity/health-email-recipient.png":::
 
 1. Cuando Defender for Identity detecte un problema de estado, los destinatarios recibirán una notificación por correo electrónico con los detalles.
 
-    ![Ejemplo de correo electrónico de problema de estado.](../../media/defender-identity/health-email.png)
+   :::image type="content" source="../../media/defender-identity/health-email.png" alt-text="El correo electrónico del problema de estado" lightbox="../../media/defender-identity/health-email.png":::
 
     > [!NOTE]
     > El correo electrónico proporciona dos vínculos para obtener más detalles sobre el problema. Puede ir al Centro de salud **MDI** o al nuevo centro de **mantenimiento de M365D**.
@@ -55,13 +56,13 @@ En Microsoft 365 Defender, puede agregar destinatarios para notificaciones por c
 
 1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya a Configuración y, a **continuación**, **Identities**.
 
-    ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="La opción Identidades" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. Seleccione **Notificaciones de alerta.**
 
 1. Escriba la dirección de correo electrónico del destinatario. Seleccione **Agregar**.
 
-    ![Escriba la dirección de correo electrónico para las alertas detectadas.](../../media/defender-identity/alert-email-recipient.png)
+   :::image type="content" source="../../media/defender-identity/alert-email-recipient.png" alt-text="El elemento de submenú Notificaciones de alerta" lightbox="../../media/defender-identity/alert-email-recipient.png":::
 
 ## <a name="syslog-notifications"></a>Notificaciones de Syslog
 
@@ -72,17 +73,17 @@ Defender for Identity puede notificarte cuando detecta actividades sospechosas e
 
 1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya a Configuración y, a **continuación**, **Identities**.
 
-    ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="La opción de Identidades en la columna Nombre" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. Seleccione **Notificaciones de Syslog**.
 
 1. Para habilitar la notificación de syslog, establece la alternancia **del servicio de Syslog** en **la posición** activa.
 
-    ![Activar el servicio de syslog.](../../media/defender-identity/syslog-service.png)
+   :::image type="content" source="../../media/defender-identity/syslog-service.png" alt-text="La opción de servicio de Syslog que se puede desactivar" lightbox="../../media/defender-identity/syslog-service.png":::
 
 1. Seleccione **Configurar servicio**. Se abrirá un panel donde puede especificar los detalles del servicio de syslog.
 
-    ![Escriba los detalles del servicio de syslog.](../../media/defender-identity/syslog-sensor.png)
+   :::image type="content" source="../../media/defender-identity/syslog-sensor.png" alt-text="La página en la que se escriben los detalles del servicio de Syslog" lightbox="../../media/defender-identity/syslog-sensor.png":::
 
 1. Escriba los siguientes detalles:
 
@@ -93,12 +94,12 @@ Defender for Identity puede notificarte cuando detecta actividades sospechosas e
 
 1. Seleccione **Enviar notificación SIEM de prueba** y compruebe que el mensaje se recibe en la solución de infraestructura de Syslog.
 
-1. Seleccione **Guardar**.
+1. Haga clic en **Guardar**.
 
 1. Una vez configurado el servicio **de Syslog**, puede elegir qué tipos de notificaciones (alertas o problemas de estado) enviar a su servidor de Syslog.
 
-    ![Servicio de Syslog configurado.](../../media/defender-identity/syslog-configured.png)
+   :::image type="content" source="../../media/defender-identity/syslog-configured.png" alt-text="La opción de servicio de Syslog está activada" lightbox="../../media/defender-identity/syslog-configured.png":::
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Administrar alertas de seguridad de Defender for Identity](manage-security-alerts.md)

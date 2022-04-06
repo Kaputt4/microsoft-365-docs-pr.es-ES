@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 36713496b5885866dd21a3402dcfe66b4af5b76e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0208e21394e350c2b5ffffdca6f8e14ebba227c8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166775"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476057"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>Crear una regla de notificación cuando se usa un script local de incorporación o offboarding
 
@@ -28,8 +28,8 @@ ms.locfileid: "61166775"
 
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -46,51 +46,52 @@ Cree una regla de notificación para que cuando se utilice un script local de in
 Tendrás que tener acceso a:
 
 - Power Automate (plan por usuario como mínimo). Para obtener más información, [vea Power Automate de precios](https://flow.microsoft.com/pricing/).
-- Azure Table o SharePoint list or Library /SQL DB.
+- Azure Table o SharePoint List or Library /SQL DB.
 
 ## <a name="create-the-notification-flow"></a>Crear el flujo de notificaciones
 
 1. En [flow.microsoft.com](https://flow.microsoft.com/).
 
-2. Vaya a **Mis flujos > Nuevo > Programado - desde en blanco**.
+2. Vaya a **Mis flujos > Nuevo > Programado: desde en blanco**.
 
-    ![Imagen del flujo.](images/new-flow.png)
+   :::image type="content" source="images/new-flow.png" alt-text="El flujo" lightbox="images/new-flow.png":::
+
 
 3. Cree un flujo programado.
    1. Escriba un nombre de flujo.
    2. Especifique el inicio y la hora.
    3. Especifique la frecuencia. Por ejemplo, cada 5 minutos.
 
-    ![Imagen del flujo de notificación.](images/build-flow.png)
+   :::image type="content" source="images/build-flow.png" alt-text="Flujo de notificaciones" lightbox="images/build-flow.png":::
 
 4. Seleccione el botón + para agregar una nueva acción. La nueva acción será una solicitud HTTP a la API del Centro de seguridad de Defender para puntos de conexión. También puede reemplazarlo por el "Conector WDATP" (acción: "Máquinas- Obtener lista de máquinas").
 
-    ![Imagen de periodicidad y acción de agregar.](images/recurrence-add.png)
+   :::image type="content" source="images/recurrence-add.png" alt-text="La periodicidad y la acción agregar" lightbox="images/recurrence-add.png":::
 
 5. Escriba los siguientes campos HTTP:
 
    - Método: "GET" como valor para obtener la lista de dispositivos.
-   - URI: escriba `https://api.securitycenter.microsoft.com/api/machines` .
+   - URI: escriba `https://api.securitycenter.microsoft.com/api/machines`.
    - Autenticación: seleccione "OAuth de Active Directory".
-   - Inquilino: inicie sesión y vaya a https://portal.azure.com Azure Active Directory > registros de **aplicaciones** y obtenga el valor de Identificador de inquilino.
+   - Inquilino: inicie sesión y https://portal.azure.com vaya a **Azure Active Directory > registros de aplicaciones** y obtenga el valor de Identificador de inquilino.
    - Audiencia: `https://securitycenter.onmicrosoft.com/windowsatpservice\`
-   - Id. de cliente: inicie sesión y https://portal.azure.com vaya a Azure Active Directory > registros de **aplicaciones** y obtenga el valor id. de cliente.
+   - Id. de cliente: inicie sesión y https://portal.azure.com vaya **a Azure Active Directory > registros de aplicaciones** y obtenga el valor id. de cliente.
    - Tipo de credencial: seleccione "Secreto".
-   - Secreto: inicie sesión y navegue hasta Azure Active Directory > https://portal.azure.com **registros de aplicaciones** y obtenga el valor de Identificador de inquilino.
+   - Secreto: inicie sesión y https://portal.azure.com vaya a **Azure Active Directory > registros de aplicaciones** y obtenga el valor de Identificador de inquilino.
 
-    ![Imagen de las condiciones HTTP.](images/http-conditions.png)
+    :::image type="content" source="images/http-conditions.png" alt-text="Las condiciones HTTP" lightbox="images/http-conditions.png":::
 
-6. Para agregar un paso nuevo, seleccione **Agregar nueva** acción y, a continuación, busque Operaciones de **datos** y seleccione **Analizar JSON**.
+6. Agrega un paso nuevo seleccionando Agregar **nueva** acción, luego busca **Operaciones de datos** y selecciona **Analizar JSON**.
 
-    ![Imagen de operaciones de datos.](images/data-operations.png)
+   :::image type="content" source="images/data-operations.png" alt-text="Entrada de operaciones de datos" lightbox="images/data-operations.png":::
 
-7. Agregue Body en el **campo Contenido.**
+7. Agregue Body en el **campo Contenido** .
 
-    ![Imagen de JSON de análisis.](images/parse-json.png)
+   :::image type="content" source="images/parse-json.png" alt-text="Sección JSON de análisis" lightbox="images/parse-json.png":::
 
 8. Seleccione el **vínculo Usar carga de ejemplo para generar el** esquema.
 
-    ![Imagen de analizar json con carga.](images/parse-json-schema.png)
+   :::image type="content" source="images/parse-json-schema.png" alt-text="Json de análisis con carga" lightbox="images/parse-json-schema.png":::
 
 9. Copie y pegue el siguiente fragmento de código JSON:
 
@@ -174,27 +175,27 @@ Tendrás que tener acceso a:
 
     ```
 
-10. Extraiga los valores de la llamada JSON y compruebe si los dispositivos incorporados ya están registrados en la lista de SharePoint como ejemplo:
+10. Extraiga los valores de la llamada JSON y compruebe si los dispositivos incorporados ya están registrados en la lista SharePoint como ejemplo:
 
     - Si es así, no se activará ninguna notificación
-    - Si no, registrará los nuevos dispositivos incorporados en la lista SharePoint y se enviará una notificación al administrador de Defender for Endpoint
+    - Si no, registrará los nuevos dispositivos incorporados en la lista de SharePoint y se enviará una notificación al administrador de Defender for Endpoint
 
-    ![Imagen de aplicar a cada uno.](images/flow-apply.png)
+    :::image type="content" source="images/flow-apply.png" alt-text="La aplicación del flujo a cada elemento" lightbox="images/flow-apply.png":::
 
-    ![Imagen de aplicar a cada uno con obtener elementos.](images/apply-to-each.png)
+    :::image type="content" source="images/apply-to-each.png" alt-text="La aplicación del flujo al elemento Get items" lightbox="images/apply-to-each.png":::
 
 11. En **Condición**, agregue la siguiente expresión: "length(body('Get_items')?[' value'])" y establece la condición en igual a 0.
 
-    ![Imagen de aplicar a cada condición. ](images/apply-to-each-value.png)
-     ![ Imagen de condition1. ](images/conditions-2.png)
-     ![ Imagen de condition2. ](images/condition3.png)
-     ![ Imagen de enviar correo electrónico.](images/send-email.png)
+    :::image type="content" source="images/apply-to-each-value.png" alt-text="La aplicación del flujo a cada condición" lightbox="images/apply-to-each-value.png":::
+    :::image type="content" source="images/conditions-2.png" alt-text="La condición-1" lightbox="images/conditions-2.png":::
+    :::image type="content" source="images/condition3.png" alt-text="La condición-2" lightbox="images/condition3.png":::
+    :::image type="content" source="images/send-email.png" alt-text="Sección Enviar un correo electrónico" lightbox="images/send-email.png":::
 
 ## <a name="alert-notification"></a>Notificación de alerta
 
 La siguiente imagen es un ejemplo de una notificación por correo electrónico.
 
-![Imagen de notificación de correo electrónico.](images/alert-notification.png)
+:::image type="content" source="images/alert-notification.png" alt-text="Pantalla de notificación de correo electrónico" lightbox="images/alert-notification.png":::
 
 ## <a name="tips"></a>Sugerencias
 
@@ -204,7 +205,7 @@ La siguiente imagen es un ejemplo de una notificación por correo electrónico.
 
 - Para cada dispositivo:
   - Si la propiedad vista por última vez se encuentra en el intervalo de una hora de [-7 días, -7 días + 60 minutos ] -> alerta para la posibilidad de fuera deborde.
-  - Si se ve por primera vez en la última hora, > alerta de incorporación.
+  - Si se ve por primera vez en la última hora, > alerta para la incorporación.
 
 En esta solución no tendrá alertas duplicadas: hay inquilinos que tienen numerosos dispositivos. Obtener todos esos dispositivos puede ser muy caro y puede requerir paginación.
 

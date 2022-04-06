@@ -16,12 +16,12 @@ ms.collection:
 description: Seguridad en Office 365, desde EOP hasta Defender para Office 365 Planes 1 y 2, configuraciones de seguridad Estándar vs. Estricta, y mucho más. Comprenda qué tiene y cómo proteger sus propiedades.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 31eaa1c2ae44799c15a782d121ad2068eaa40c25
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8ddf81e038b4c055134498ee0a26751b735d786a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681114"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472185"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Información general de seguridad de Microsoft Defender para Office 365
 
@@ -55,7 +55,7 @@ Puede que esté acostumbrado a ver estos tres componentes de esta manera:
 
 En cuanto a la arquitectura, podemos imaginar las piezas como capas acumulativas de seguridad, cada una con un énfasis de seguridad. Más ejemplos como este:
 
-:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP y Microsoft Defender para Office 365 y sus relaciones entre sí con énfasis de servicio, incluida una nota para la autenticación de correo electrónico.":::
+:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP y Microsoft Defender para Office 365 y sus relaciones entre sí con énfasis en el servicio, incluida una nota para la autenticación de correo electrónico" lightbox="../../media/tp_GraphicEOPATPP1P2_2.png":::
 
 Aunque cada uno de estos servicios destaca un objetivo entre Proteger, Detectar, Investigar y Responder, ***todos** _ los servicios pueden llevar a cabo_ *_cualquiera_** de los objetivos de proteger, detectar, investigar y responder.
 

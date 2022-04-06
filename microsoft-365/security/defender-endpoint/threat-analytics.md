@@ -19,19 +19,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1c86dad2f303df149921efab87d3ffd026e0f93d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0ca4aea3281d6bb375e7b5ff5223cb40e9a980ac
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165779"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471085"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Seguimiento y respuesta a amenazas emergentes a través del análisis de amenazas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -60,59 +60,60 @@ Vea este breve vídeo para obtener más información sobre cómo los análisis d
 
 El panel de análisis de amenazas es un gran punto de partida para llegar a los informes que son más relevantes para su organización. Resume las amenazas en las secciones siguientes:
 
-- **Últimas amenazas:** enumera los informes de amenazas publicados más recientemente, junto con el número de dispositivos con alertas activas y resueltas.
+- **Últimas amenazas**: enumera los informes de amenazas publicados más recientemente, junto con el número de dispositivos con alertas activas y resueltas.
 - **Amenazas de alto** impacto: enumera las amenazas que han tenido mayor impacto en la organización. En esta sección se clasifican las amenazas por el número de dispositivos que tienen alertas activas.
-- **Resumen de amenazas:** muestra el impacto general de las amenazas rastreadas mostrando el número de amenazas con alertas activas y resueltas.
+- **Resumen de amenazas**: muestra el impacto general de las amenazas rastreadas mostrando el número de amenazas con alertas activas y resueltas.
 
 Seleccione una amenaza en el panel para ver el informe de esa amenaza.
 
-![Imagen de un panel de análisis de amenazas.](images/ta_dashboard.png)
+:::image type="content" source="images/ta_dashboard.png" alt-text="Panel de análisis de amenazas" lightbox="images/ta_dashboard.png":::
 
 ## <a name="view-a-threat-analytics-report"></a>Ver un informe de análisis de amenazas
 
-Cada informe de análisis de amenazas proporciona información en tres secciones: **Overview**, **Analyst report** y **Mitigations**.
+Cada informe de análisis de amenazas proporciona información en tres secciones: **Información** general, **Informe de analista** y **Mitigaciones**.
 
 ### <a name="overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses"></a>Información general: comprender rápidamente la amenaza, evaluar su impacto y revisar las defensas
 
 La **sección** Información general proporciona una vista previa del informe detallado del analista. También proporciona gráficos que resaltan el impacto de la amenaza para su organización y su exposición a través de dispositivos mal configurados y sin aparear.
 
-![Imagen de la sección de información general de un informe de análisis de amenazas. ](images/ta-overview.png)
- _Sección información general de un informe de análisis de amenazas_
+:::image type="content" source="images/ta-overview.png" alt-text="Sección Información general de un informe de análisis de amenazas" lightbox="images/ta-overview.png":::
+_Sección información general de un informe de análisis de amenazas_
 
 #### <a name="assess-the-impact-to-your-organization"></a>Evaluar el impacto en la organización
 
 Cada informe incluye gráficos diseñados para proporcionar información sobre el impacto organizativo de una amenaza:
 
-- **Dispositivos con alertas:** muestra el número actual de dispositivos distintos que se han visto afectados por la amenaza. Un dispositivo se clasifica como **Activo** si hay al menos una  alerta asociada a esa amenaza y **Resuelto** si se han resuelto todas las alertas asociadas con la amenaza en el dispositivo.
-- **Dispositivos con alertas con el tiempo:** muestra el número de dispositivos distintos con **alertas activas** y **resueltas** con el tiempo. El número de alertas resueltas indica la rapidez con la que la organización responde a las alertas asociadas con una amenaza. Lo ideal es que el gráfico muestre las alertas resueltas en unos días.
+- **Dispositivos con alertas**: muestra el número actual de dispositivos distintos que se han visto afectados por la amenaza. Un dispositivo se clasifica como **Activo** si hay al menos una alerta asociada a esa amenaza y **Resuelto** si se han  resuelto todas las alertas asociadas con la amenaza en el dispositivo.
+- **Dispositivos con alertas con el tiempo**: muestra el número de dispositivos distintos con **alertas activas** **y resueltas** con el tiempo. El número de alertas resueltas indica la rapidez con la que la organización responde a las alertas asociadas con una amenaza. Lo ideal es que el gráfico muestre las alertas resueltas en unos días.
 
 #### <a name="review-security-resilience-and-posture"></a>Revisar la resistencia y la postura de seguridad
 
 Cada informe incluye gráficos que proporcionan información general sobre la resistencia de la organización frente a una amenaza determinada:
 
 - **Estado de configuración de** seguridad: muestra el número de dispositivos que han aplicado la configuración de seguridad recomendada que puede ayudar a mitigar la amenaza. Los dispositivos se consideran **seguros** si han aplicado _toda_ la configuración de seguimiento.
-- **Estado de revisión de vulnerabilidad:** muestra el número de dispositivos que han aplicado actualizaciones de seguridad o revisiones que abordan las vulnerabilidades explotadas por la amenaza.
+- **Estado de revisión de vulnerabilidad**: muestra el número de dispositivos que han aplicado actualizaciones de seguridad o revisiones que abordan las vulnerabilidades explotadas por la amenaza.
 
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Informe de analistas: obtener información de expertos de los investigadores de seguridad de Microsoft
 
-Vaya a la **sección Informe de** analistas para leer la escritura detallada del experto. La mayoría de los informes proporcionan descripciones detalladas de las cadenas de ataque, incluidas las tácticas y técnicas [](advanced-hunting-overview.md) asignadas al marco de CK de MITRE ATT&, listas exhaustivas de recomendaciones y instrucciones de búsqueda de amenazas eficaces.
+Vaya a la **sección Informe de** analistas para leer la escritura detallada del experto. La mayoría de los informes proporcionan descripciones detalladas de cadenas de ataque, incluidas tácticas y técnicas asignadas al marco de CK de MITRE ATT&, listas exhaustivas de recomendaciones y [](advanced-hunting-overview.md) instrucciones de búsqueda de amenazas eficaces.
 
 [Más información sobre el informe de analistas](threat-analytics-analyst-reports.md)
 
 ### <a name="mitigations-review-list-of-mitigations-and-the-status-of-your-devices"></a>Mitigaciones: revisar la lista de mitigaciones y el estado de los dispositivos
 
-En la **sección Mitigaciones,** revise la lista de recomendaciones específicas que se pueden usar y que pueden ayudarle a aumentar la resistencia de la organización frente a la amenaza. La lista de mitigaciones rastreadas incluye:
+En la **sección Mitigaciones** , revise la lista de recomendaciones específicas que se pueden usar y que pueden ayudarle a aumentar la resistencia de la organización frente a la amenaza. La lista de mitigaciones rastreadas incluye:
 
-- **Actualizaciones de seguridad:** implementación de actualizaciones de seguridad o revisiones para vulnerabilidades
+- **Actualizaciones de seguridad**: implementación de actualizaciones de seguridad o revisiones para vulnerabilidades
 - **Antivirus de Microsoft Defender configuración**
   - Versión de inteligencia de seguridad
   - Protección entregada en la nube
   - Protección de aplicaciones potencialmente no deseadas (PUA)
   - Protección en tiempo real
 
-La información de mitigación de esta sección incorpora datos de [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md), que también proporciona información detallada de detalles de varios vínculos del informe.
+La información de mitigación de esta sección incorpora datos de [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md), que también proporciona información detallada de los distintos vínculos del informe.
 
-![Imagen de la sección mitigaciones de un informe de análisis de amenazas.](images/ta-mitigations.png)
+:::image type="content" source="images/ta-mitigations.png" alt-text="Sección Mitigaciones de un informe de análisis de amenazas" lightbox="images/ta-mitigations.png":::
+
 
 _Sección Mitigaciones de un informe de análisis de amenazas_
 
@@ -120,7 +121,7 @@ _Sección Mitigaciones de un informe de análisis de amenazas_
 
 Al usar los informes, tenga en cuenta lo siguiente:
 
-- Los datos se tienen en cuenta en el ámbito del control de acceso basado en roles (RBAC). Verá el estado de los dispositivos en grupos a los [que puede tener acceso](machine-groups.md).
+- Los datos se tienen en cuenta en el ámbito del control de acceso basado en roles (RBAC). Verás el estado de los dispositivos en [los grupos a los que puedes acceder](machine-groups.md).
 - Los gráficos reflejan solo las mitigaciones a las que se realiza un seguimiento. Compruebe en el informe información general para ver mitigaciones adicionales que no se muestran en los gráficos.
 - Las mitigaciones no garantizan una resistencia completa. Las mitigaciones proporcionadas reflejan las mejores acciones posibles necesarias para mejorar la resistencia.
 - Los dispositivos se cuentan como "no disponibles" si no han transmitido datos al servicio.

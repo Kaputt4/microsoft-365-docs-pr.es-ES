@@ -1,7 +1,7 @@
 ---
-title: Integrar las herramientas SIEM con Pertahanan Microsoft untuk Titik Akhir
+title: Integración de las herramientas siem con Microsoft Defender para punto de conexión
 description: Obtenga información sobre cómo ingerir incidentes y alertas e integrar herramientas SIEM.
-keywords: configure siem, security information and events management tools, splunk, arcsight, custom indicators, rest api, alert definitions, indicators of compromise
+keywords: configurar siem, herramientas de administración de eventos e información de seguridad, splunk, arcsight, indicadores personalizados, API rest, definiciones de alertas, indicadores de riesgo
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ed88048b506ecfcddb8394667e7d800927fc1d83
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: d679ac0d01a7e922e49b72b574a43e6f684179f9
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634919"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664510"
 ---
-# <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>Integrar las herramientas SIEM con Pertahanan Microsoft untuk Titik Akhir
+# <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>Integración de las herramientas siem con Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,65 +32,65 @@ ms.locfileid: "64634919"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-## <a name="ingest-alerts-using-security-information-and-events-management-siem-tools"></a>Ingerir alertas con herramientas de administración de eventos y información de seguridad (SIEM)
+## <a name="ingest-alerts-using-security-information-and-events-management-siem-tools"></a>Ingesta de alertas mediante herramientas de administración de eventos e información de seguridad (SIEM)
 
 > [!NOTE]
 >
-> [Pertahanan Microsoft untuk Titik Akhir Alert se](alerts.md) compone de uno o más eventos sospechosos o malintencionados que se produjeron en el dispositivo y sus detalles relacionados. La API Pertahanan Microsoft untuk Titik Akhir alerta es la API más reciente para el consumo de alertas y contiene una lista detallada de evidencia relacionada para cada alerta. Para obtener más información, vea [Alert methods and properties y](alerts.md) [List alerts](get-alerts.md).
+> [Microsoft Defender para punto de conexión Alerta](alerts.md) se compone de uno o varios eventos sospechosos o malintencionados que se produjeron en el dispositivo y sus detalles relacionados. La API de alertas de Microsoft Defender para punto de conexión es la API más reciente para el consumo de alertas y contiene una lista detallada de pruebas relacionadas para cada alerta. Para obtener más información, vea [Métodos y propiedades de alerta](alerts.md) y [Lista de alertas](get-alerts.md).
 
-Pertahanan Microsoft untuk Titik Akhir admite la información de seguridad y las herramientas de administración de eventos (SIEM) que ingieren información del inquilino de la empresa en Azure Active Directory (AAD) mediante el protocolo de autenticación OAuth 2.0 para un servidor AAD  aplicación que representa la solución o conector SIEM específico instalado en el entorno.
+Microsoft Defender para punto de conexión admite herramientas de administración de eventos e información de seguridad (SIEM) que ingieren información del inquilino empresarial en Azure Active Directory (AAD) mediante el protocolo de autenticación de OAuth 2.0 para un AAD registrado  aplicación que representa la solución siem específica o el conector instalado en el entorno.
 
 Para más información, vea:
 
-- [Pertahanan Microsoft untuk Titik Akhir licencia de API y términos de uso](api-terms-of-use.md) 
+- [Microsoft Defender para punto de conexión licencia y términos de uso de las API](api-terms-of-use.md) 
 - [Acceder a las API de Microsoft Defender para punto de conexión](apis-intro.md)
 - [Hola mundo ejemplo (describe cómo registrar una aplicación en Azure Active Directory)](api-hello-world.md)
 - [Obtener acceso con el contexto de la aplicación](exposed-apis-create-app-webapp.md)
 
 
-Pertahanan Microsoft untuk Titik Akhir admite actualmente las siguientes integraciones de soluciones SIEM: 
+Microsoft Defender para punto de conexión admite actualmente las siguientes integraciones de soluciones SIEM: 
 
-- [Ingerir incidentes y alertas de las API de REST Microsoft 365 Defender y Pertahanan Microsoft untuk Titik Akhir y alertas](#ingesting-incidents-and-alerts-from-the-microsoft-365-defender-and-microsoft-defender-for-endpoint-incidents-and-alerts-rest-apis)
-- [Ingerir Pertahanan Microsoft untuk Titik Akhir eventos de la API Microsoft 365 Defender streaming de eventos](#ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api)
+- [Ingesta de incidentes y alertas desde las API REST de Microsoft 365 Defender y Microsoft Defender para punto de conexión incidentes y alertas](#ingesting-incidents-and-alerts-from-the-microsoft-365-defender-and-microsoft-defender-for-endpoint-incidents-and-alerts-rest-apis)
+- [Ingesta de eventos Microsoft Defender para punto de conexión desde la API de streaming de eventos de Microsoft 365 Defender](#ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api)
 
-## <a name="ingesting-incidents-and-alerts-from-the-microsoft-365-defender-and-microsoft-defender-for-endpoint-incidents-and-alerts-rest-apis"></a>Ingerir incidentes y alertas de las API de REST Microsoft 365 Defender y Pertahanan Microsoft untuk Titik Akhir y alertas
+## <a name="ingesting-incidents-and-alerts-from-the-microsoft-365-defender-and-microsoft-defender-for-endpoint-incidents-and-alerts-rest-apis"></a>Ingesta de incidentes y alertas desde las API REST de Microsoft 365 Defender y Microsoft Defender para punto de conexión incidentes y alertas
 
-### <a name="ingesting-incidents-from-the-microsoft-365-defender-incidents-rest-api"></a>Ingerir incidentes desde la API de REST Microsoft 365 Defender incidentes
+### <a name="ingesting-incidents-from-the-microsoft-365-defender-incidents-rest-api"></a>Ingesta de incidentes desde la API REST de incidentes de Microsoft 365 Defender
 
-Para obtener más información sobre la API Microsoft 365 Defender incidentes, vea [incidents methods and properties](../defender/api-incident.md).
+Para obtener más información sobre la API de incidentes de Microsoft 365 Defender, consulte [métodos y propiedades de incidentes](../defender/api-incident.md).
 
-### <a name="ingesting-alerts-from-the-microsoft-defender-for-endpoint-alerts-rest-api"></a>Ingerir alertas desde la API de REST Pertahanan Microsoft untuk Titik Akhir alertas
+### <a name="ingesting-alerts-from-the-microsoft-defender-for-endpoint-alerts-rest-api"></a>Ingesta de alertas desde la API REST de alertas de Microsoft Defender para punto de conexión
 
-Para obtener más información sobre la API Pertahanan Microsoft untuk Titik Akhir alertas, vea [alerts methods and properties](alerts.md).
+Para obtener más información sobre la API de alertas de Microsoft Defender para punto de conexión, consulte [métodos y propiedades de alertas](alerts.md).
 
-## <a name="siem-tool-integration-with-microsoft-defender-for-endpoint"></a>Integración de herramientas SIEM con Pertahanan Microsoft untuk Titik Akhir
+## <a name="siem-tool-integration-with-microsoft-defender-for-endpoint"></a>Integración de herramientas SIEM con Microsoft Defender para punto de conexión
 
 ### <a name="splunk"></a>Splunk
 
-Usar el Microsoft 365 Defender complemento para Splunk que admite:
+Uso del complemento Microsoft 365 Defender para Splunk que admite:
 
-- Ingesta de Pertahanan Microsoft untuk Titik Akhir alertas
-- Actualizar alertas en Pertahanan Microsoft untuk Titik Akhir desde Splunk
+- Ingesta de alertas de Microsoft Defender para punto de conexión
+- Actualización de alertas en Microsoft Defender para punto de conexión desde Splunk
 
-Para obtener más información sobre Microsoft 365 Defender complemento para Splunk, vea [splunkbase](https://splunkbase.splunk.com/app/4959/).
+Para obtener más información sobre el complemento de Microsoft 365 Defender para Splunk, consulte [splunkbase](https://splunkbase.splunk.com/app/4959/).
 
 ### <a name="micro-focus-arcsight"></a>Micro Focus ArcSight
 
-El nuevo SmartConnector para Microsoft 365 Defender ingiere incidentes que contienen alertas de todos los productos de Microsoft 365 Defender (incluidos los de Pertahanan Microsoft untuk Titik Akhir) en ArcSight y los asigna a su Marco de eventos comunes (CEF).
+El nuevo SmartConnector para Microsoft 365 Defender ingiere incidentes que contienen alertas de todos los productos Microsoft 365 Defender ,incluidos los Microsoft Defender para punto de conexión, en ArcSight y los asigna a su Common Event Framework (CEF).
 
-Para obtener más información sobre el nuevo ArcSight SmartConnector para Microsoft 365 Defender, consulte [La documentación del producto de ArcSight](https://www.microfocus.com/documentation/arcsight/arcsight-smartconnectors/microsoft-365-defender/index.html).
+Para obtener más información sobre el nuevo ArcSight SmartConnector para Microsoft 365 Defender, consulte la [documentación del producto ArcSight](https://www.microfocus.com/documentation/arcsight/arcsight-smartconnectors/microsoft-365-defender/index.html).
 
 SmartConnector reemplaza al FlexConnector anterior para Microsoft 365 Defender.
 
 ### <a name="ibm-qradar"></a>IBM QRadar
 
 >[!NOTE]
->La integración de IBM QRadar con Microsoft 365 Defender, que incluye Pertahanan Microsoft untuk Titik Akhir, ahora es compatible con el nuevo módulo de soporte de dispositivos (DSM) de Microsoft 365 Defender que llama al [Microsoft 365 Defender  API de streaming](../defender/streaming-api.md) que permite ingerir datos de eventos de streaming Microsoft 365 Defender productos, incluidos Pertahanan Microsoft untuk Titik Akhir. Para obtener más información sobre el nuevo Microsoft 365 Defender DSM de QRadar, consulte [Ibm QRadar Product Documentation](https://www.ibm.com/docs/en/dsm?topic=microsoft-365-defender) y, para obtener más información sobre los tipos de eventos compatibles con la API de streaming, consulte [Supported event types](../defender/supported-event-types.md).
+>La integración de IBM QRadar con Microsoft 365 Defender, que incluyen Microsoft Defender para punto de conexión, ahora es compatible con el nuevo módulo de compatibilidad de dispositivos de Microsoft 365 Defender (DSM) que llama al [Microsoft 365 Defender  API de streaming](../defender/streaming-api.md) que permite ingerir datos de eventos de streaming de productos de Microsoft 365 Defender, incluidos Microsoft Defender para punto de conexión. Para obtener más información sobre el nuevo QRadar Microsoft 365 Defender DSM, consulte [la documentación del producto IBM QRadar](https://www.ibm.com/docs/en/dsm?topic=microsoft-365-defender) y para obtener más información sobre los tipos de eventos compatibles con Streaming API, consulte [Tipos de eventos admitidos](../defender/supported-event-types.md).
 
-Los nuevos clientes ya no se incorporarán con el anterior módulo de soporte de dispositivos de ATP (DSM) de Microsoft Defender de QRadar y se anima a los clientes existentes a adoptar el nuevo DSM de Microsoft 365 Defender como su único punto de integración con todos los productos Microsoft 365 Defender.
+Los nuevos clientes ya no se incorporan con el módulo de soporte técnico de dispositivos de ATP (DSM) de Microsoft Defender de QRadar anterior, y se recomienda a los clientes existentes que adopten el nuevo Microsoft 365 Defender DSM como su único punto de integración con todos los productos Microsoft 365 Defender.
 
-## <a name="ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api"></a>Ingerir Pertahanan Microsoft untuk Titik Akhir eventos de la API Microsoft 365 Defender streaming de eventos
+## <a name="ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api"></a>Ingesta de eventos Microsoft Defender para punto de conexión desde la API de streaming de eventos de Microsoft 365 Defender
 
-Microsoft 365 Defender datos de eventos de streaming incluyen alertas y otros eventos de Pertahanan Microsoft untuk Titik Akhir y otros productos de Microsoft Defender. Estos eventos pueden transmitirse a una cuenta Azure Storage o a Azure Event Hubs. Splunk e IBM QRadar admiten actualmente el modelo de integración a través de centros de eventos.
+Microsoft 365 Defender datos de eventos de streaming incluye alertas y otros eventos de Microsoft Defender para punto de conexión y otros productos de Microsoft Defender. Estos eventos se pueden transmitir a una cuenta de Azure Storage o a Azure Event Hubs. Splunk e IBM QRadar admiten actualmente el modelo de integración a través de event Hubs.
 
-Para obtener más información, [vea Microsoft 365 Defender integración de SIEM](../defender/configure-siem-defender.md).
+Para obtener más información, consulte [Microsoft 365 Defender integración de SIEM](../defender/configure-siem-defender.md).

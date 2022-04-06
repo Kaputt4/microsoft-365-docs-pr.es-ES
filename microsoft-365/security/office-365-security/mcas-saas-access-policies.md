@@ -15,12 +15,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.prod: m365-security
-ms.openlocfilehash: 95b46e1c92354015ce6f8d9c5b1fa4b6e9642785
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 7cda1669b4f8441d13f92b09d7390e31f4add529
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683327"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472295"
 ---
 # <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>Directivas recomendadas de Microsoft Defender for Cloud Apps para aplicaciones SaaS
 
@@ -47,18 +47,18 @@ Los permisos para aplicaciones SaaS suelen basarse en la necesidad empresarial d
 
 Para proteger los datos en toda la colección de aplicaciones SaaS, en el siguiente diagrama se muestra la directiva de acceso condicional Azure AD y las directivas sugeridas que puede crear en Defender for Cloud Apps. En este ejemplo, las directivas creadas en Defender para aplicaciones en la nube se aplican a todas las aplicaciones SaaS que se administran. Están diseñados para aplicar controles adecuados en función de si los dispositivos se administran, así como de las etiquetas de confidencialidad que ya se aplican a los archivos.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="Directivas para administrar aplicaciones SaaS en Defender para aplicaciones en la nube." lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="Las directivas para administrar aplicaciones SaaS en Defender para aplicaciones en la nube" lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
 
 En la tabla siguiente se muestra la nueva directiva de acceso condicional que debe crear en Azure AD.
 
-|Nivel de protección|Directiva|Más información|
+|Nivel de protección|Policy|Más información|
 |---|---|---|
 |Todos los niveles de protección|[Usar el control de aplicaciones de acceso condicional en Defender para aplicaciones en la nube](/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad)|Esto configura el IdP (Azure AD) para que funcione con Defender para aplicaciones en la nube.|
 ||||
 
 En esta tabla siguiente se enumeran las directivas de ejemplo ilustradas anteriormente que puede crear para proteger todas las aplicaciones SaaS. Asegúrese de evaluar sus propios objetivos de negocio, seguridad y cumplimiento y, a continuación, cree directivas que proporcionen la protección más adecuada para su entorno.
 
-|Nivel de protección|Directiva|
+|Nivel de protección|Policy|
 |---|---|
 |Punto de inicio|Supervisar el tráfico desde dispositivos no administrados <p> Agregar protección a descargas de archivos desde dispositivos no administrados|
 |Empresa|Bloquear la descarga de archivos etiquetados con dispositivos confidenciales o clasificados desde dispositivos no administrados (esto solo proporciona acceso al explorador)|
@@ -96,7 +96,7 @@ Defender for Cloud Apps puede ser una herramienta valiosa para configurar la pro
 
 En la siguiente ilustración y tabla se proporcionan varios ejemplos de directivas que se pueden configurar para ayudar a cumplir con el Reglamento general de protección de datos (RGPD). En estos ejemplos, las directivas buscan datos específicos. En función de la confidencialidad de los datos, cada directiva está configurada para realizar las acciones adecuadas.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="Ejemplo de directivas de Defender para Aplicaciones en la nube para la prevención de pérdida de datos." lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="La página Defender for Cloud Apps policies for data loss prevention" lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
 
 |Nivel de protección|Directivas de ejemplo|
 |---|---|

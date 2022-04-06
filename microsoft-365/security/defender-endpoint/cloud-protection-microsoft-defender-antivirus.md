@@ -15,25 +15,25 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 013b189dca95fc63dc8d189d020fcf3f7727cf82
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 881ae2de7a6c752c2be9bfc5ccdbe350050f340b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61171694"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472009"
 ---
 # <a name="cloud-protection-and-microsoft-defender-antivirus"></a>Antivirus de Microsoft Defender y protección en la nube
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus de Microsoft Defender
 
 Las tecnologías de última Antivirus de Microsoft Defender proporcionan protección automatizada casi instantánea contra amenazas nuevas y emergentes. Para identificar las nuevas amenazas de forma dinámica, las tecnologías de próxima generación funcionan con grandes conjuntos de datos interconectados en los sistemas de inteligencia artificial (IA) de Microsoft Intelligent Security Graph y potentes basados en modelos avanzados de aprendizaje automático. La protección en la nube funciona Antivirus de Microsoft Defender para ofrecer una protección precisa, en tiempo real e inteligente. 
 
-[:::image type="content" source="images/mde-cloud-protection.png" alt-text="Diagrama que muestra cómo funciona la protección en la nube junto con Antivirus de Microsoft Defender":::](enable-cloud-protection-microsoft-defender-antivirus.md)
+[:::image type="content" source="images/mde-cloud-protection.png" alt-text="Diagrama que muestra cómo funciona la protección en la nube junto con Antivirus de Microsoft Defender" lightbox="images/mde-cloud-protection.png":::](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 > [!TIP]
-> Se recomienda mantener activada la protección en la nube. Para obtener más información, vea [Why cloud protection should be enabled for Antivirus de Microsoft Defender](why-cloud-protection-should-be-on-mdav.md). 
+> Se recomienda mantener activada la protección en la nube. Para obtener más información, consulte [Why cloud protection should be enabled for Antivirus de Microsoft Defender](why-cloud-protection-should-be-on-mdav.md). 
 
 ## <a name="how-cloud-protection-works"></a>Cómo funciona la protección en la nube
 
@@ -49,7 +49,7 @@ En las siguientes entradas de blog se muestra cómo funciona la protección en l
 
 - [Cómo la inteligencia artificial detuvo un brote de "Emotet"](https://www.microsoft.com/security/blog/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak)
 
-- [Detonar un conejito malo: defensas Antivirus de Microsoft Defender aprendizaje automático en capas](https://www.microsoft.com/security/blog/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses)
+- [Detonar un mal conejito: defensas Antivirus de Microsoft Defender de aprendizaje automático en capas](https://www.microsoft.com/security/blog/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses)
 
 - [Antivirus de Microsoft Defender de protección en la nube: defensa avanzada en tiempo real contra malware nunca visto](https://www.microsoft.com/security/blog/2017/07/18/windows-defender-antivirus-cloud-protection-service-advanced-real-time-defense-against-never-before-seen-malware) 
 
@@ -61,11 +61,11 @@ En las siguientes entradas de blog se muestra cómo funciona la protección en l
 
 La protección en la nube está habilitada de forma predeterminada. Sin embargo, es posible que deba volver a habilitarlo si se ha deshabilitado como parte de directivas organizativas anteriores. Para obtener más información, consulte [Activar la protección en la nube](enable-cloud-protection-microsoft-defender-antivirus.md).
 
-Si su suscripción incluye Windows 10 E5, puede aprovechar las actualizaciones de inteligencia dinámica de emergencia, que proporcionan protección casi en tiempo real frente a amenazas emergentes. Al activar la protección en la nube, las correcciones para problemas de malware se pueden entregar a través de la nube en cuestión de minutos, en lugar de esperar a la siguiente actualización. Consulte Configure Antivirus de Microsoft Defender para recibir automáticamente nuevas actualizaciones de protección [basadas en informes de nuestro servicio en la nube.](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates)
+Si su suscripción incluye Windows 10 E5, puede aprovechar las actualizaciones de inteligencia dinámica de emergencia, que proporcionan protección casi en tiempo real frente a amenazas emergentes. Al activar la protección en la nube, las correcciones para problemas de malware se pueden entregar a través de la nube en cuestión de minutos, en lugar de esperar a la siguiente actualización. Consulta [Configurar Antivirus de Microsoft Defender para recibir automáticamente nuevas actualizaciones de protección basadas en informes de nuestro servicio en la nube](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates).
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-Ahora que tiene una introducción a la protección en la nube Antivirus de Microsoft Defender, estos son algunos pasos siguientes:
+Ahora que tiene una introducción a la protección en la nube en Antivirus de Microsoft Defender, estos son algunos pasos siguientes:
 
 1. Consulte [Why cloud protection should be enabled for Antivirus de Microsoft Defender](why-cloud-protection-should-be-on-mdav.md).
 

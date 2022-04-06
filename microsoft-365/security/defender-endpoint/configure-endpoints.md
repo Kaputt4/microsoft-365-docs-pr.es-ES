@@ -1,7 +1,7 @@
 ---
 title: Herramientas y métodos de incorporación para Windows dispositivos
 description: Incorporar Windows dispositivos para que puedan enviar datos del sensor al sensor de Microsoft Defender para endpoint
-keywords: Incorporación Windows, directiva de grupo, administrador de configuración de extremo, administración de dispositivos móviles, script local, gp, sccm, mdm, intune
+keywords: Incorporación Windows, directiva de grupo, administrador de configuración de puntos de conexión, administración de dispositivos móviles, script local, gp, sccm, mdm, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c4b70bfa9875d1e8c09d21e9435d8b4200555b5c
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 035a47f904029e839e3fe19393e4b152515aa808
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765605"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471906"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-devices-in-defender-for-endpoint"></a>Herramientas y métodos de incorporación para Windows dispositivos en Defender para endpoint
 
@@ -40,13 +40,13 @@ ms.locfileid: "62765605"
 
 Los dispositivos de la organización deben configurarse para que el servicio Defender for Endpoint pueda obtener datos de sensores de ellos. Existen varios métodos y herramientas de implementación que puede usar para configurar los dispositivos de la organización.
 
-En general, identificarás el dispositivo Windows que estás incorporando y, a continuación, sigue la herramienta correspondiente adecuada para el dispositivo o el entorno.
+En general, identificarás el dispositivo Windows que estás incorporando y, a continuación, seguirás la herramienta correspondiente adecuada para el dispositivo o el entorno.
 
-![Imagen de herramientas y métodos de incorporación](images/onboarding-config-tools.png)
+:::image type="content" source="images/onboarding-config-tools.png" alt-text="Herramientas y métodos de incorporación" lightbox="images/onboarding-config-tools.png":::
 
 ## <a name="endpoint-onboarding-tools"></a>Herramientas de incorporación de puntos de conexión
 
-En función del Windows de conexión que desee incorporar, use la herramienta o el método correspondiente que se describe en la tabla siguiente.
+Según el punto de conexión Windows que desee incorporar, use la herramienta o método correspondiente descrito en la tabla siguiente.
 
 Windows dispositivo | Herramienta o método de incorporación
 :---|:---
@@ -57,7 +57,7 @@ Windows dispositivo | Herramienta o método de incorporación
 (<a id="fn1">1</a>) Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
 >[!IMPORTANT]
->Para poder comprar Microsoft Defender para SKU de Endpoint Server, debe haber adquirido ya un mínimo combinado de cualquiera de las siguientes licencias de suscripción, Windows E5/A5, Microsoft 365 E5/A5 o Seguridad de Microsoft 365 E5.  Para obtener más información sobre las licencias, consulte [los Términos del producto](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).  
+>Para poder comprar Microsoft Defender para SKU de Endpoint Server, ya debe haber adquirido un mínimo combinado de cualquiera de las siguientes licencias de suscripción, Windows E5/A5, Microsoft 365 E5/A5 o Seguridad de Microsoft 365 E5.  Para obtener más información sobre las licencias, consulte [los Términos del producto](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).  
 
 Tema|Descripción
 :---|:---

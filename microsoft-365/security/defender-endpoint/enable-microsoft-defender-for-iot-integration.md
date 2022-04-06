@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 70d8586cb8f8babcdc709a67632f32103e9420ce
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: 00b7a7abbf6c9fcb9395723e5e62ef0e89b2114a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327693"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470535"
 ---
 # <a name="enable-microsoft-defender-for-iot-integration"></a>Habilitar Microsoft Defender para la integración de IoT
 
@@ -51,17 +51,17 @@ Para habilitar Microsoft Defender para IoT, el usuario debe tener los siguientes
 
 ## <a name="enabling-the-microsoft-defender-for-iot-integration"></a>Habilitar la integración de Microsoft Defender para IoT
 
-1. En el panel de navegación del portal, seleccione [https://security.microsoft.com](https://security.microsoft.com/) **Configuración** \> **Detección de** \> **dispositivos de Microsoft Defender para IoT**.
+1. En el panel de navegación del [https://security.microsoft.com](https://security.microsoft.com/) portal, seleccione **Configuración** \> **Detección de** \> **dispositivos de Microsoft Defender para IoT**.
 
-    ![Imagen de la instalación de integración de IoT.](images/enable-defender-for-iot.png)
+   :::image type="content" source="images/enable-defender-for-iot.png" alt-text="Configuración de integración de IoT" lightbox="images/enable-defender-for-iot.png":::
 
-2. **Seleccione una suscripción de Azure** en la lista desplegable de suscripciones disponibles en su Azure Active Directory inquilino y seleccione **Guardar**.
+2. **Seleccione una suscripción de Azure** en la lista desplegable de suscripciones disponibles en Azure Active Directory inquilino y **seleccione Guardar**.
 
 ## <a name="set-up-a-network-sensor"></a>Configurar un sensor de red
 
 Con una suscripción de Azure seleccionada, puede agregar un sensor de red.
 
-Para agregar un sensor de red, en **Configurar sensores de red,** elija el vínculo **Microsoft Defender para IoT.** Esto le lleva al proceso de configuración del sensor incorporado en Azure Portal. Para obtener más información, vea [Manage sensors with Defender for IoT in the Azure Portal](/azure/defender-for-iot/organizations/how-to-manage-sensors-on-the-cloud).
+Para agregar un sensor de red, en **Configurar sensores de red** , elija el vínculo **Microsoft Defender para IoT** . Esto le lleva al proceso de configuración del sensor incorporado en Azure Portal. Para obtener más información, consulte [Manage sensors with Defender for IoT in the Azure Portal](/azure/defender-for-iot/organizations/how-to-manage-sensors-on-the-cloud).
 
 ## <a name="turn-off-subscription-integration"></a>Desactivar la integración de suscripción
 

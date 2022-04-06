@@ -16,19 +16,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 765af5e4a2e880aa9b6c1208495537ad8cf5f26b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4cad6fd5188745773ce561d1db697989598a1dc5
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165119"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472163"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Crear informes personalizados mediante Power BI
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -44,15 +44,15 @@ El primer ejemplo muestra cómo conectar Power BI a la API de búsqueda avanzada
 
 ## <a name="connect-power-bi-to-advanced-hunting-api"></a>Conectar Power BI a la API de búsqueda avanzada
 
-- Abra Microsoft Power BI
+- Abra Microsoft Power BI.
 
-- Haga **clic en Obtener consulta en** blanco de \> **datos**
+- Haga **clic en Obtener consulta en** \> **blanco de datos**.
 
-  ![Imagen de crear consulta en blanco.](images/power-bi-create-blank-query.png)
+  :::image type="content" source="images/power-bi-create-blank-query.png" alt-text="La opción Consulta en blanco en el elemento de menú Obtener datos" lightbox="images/power-bi-create-blank-query.png":::
 
-- Haga **clic en Editor avanzado**
+- Haga **clic en Editor avanzado**.
 
-  ![Imagen del editor avanzado abierto.](images/power-bi-open-advanced-editor.png)
+  :::image type="content" source="images/power-bi-open-advanced-editor.png" alt-text="El elemento de menú Editor avanzado" lightbox="images/power-bi-open-advanced-editor.png":::
 
 - Copie lo siguiente y péguelo en el editor:
 
@@ -94,23 +94,24 @@ El primer ejemplo muestra cómo conectar Power BI a la API de búsqueda avanzada
     in Table
 ```
 
-- Haga clic **en Listo**
+- Haga clic en **Listo**.
 
-- Haga clic **en Editar credenciales**
+- Haga clic **en Editar credenciales**.
 
-    ![Imagen de las credenciales de edición0.](images/power-bi-edit-credentials.png)
+    :::image type="content" source="images/power-bi-edit-credentials.png" alt-text="El elemento de menú Editar credenciales" lightbox="images/power-bi-edit-credentials.png":::
+    
 
-- Seleccionar **Inicio de sesión de cuenta** \> **organizativa**
+- Seleccione **Cuenta organizativa** \> **Iniciar sesión**.
 
-    ![Imagen de set credentials1.](images/power-bi-set-credentials-organizational.png)
+    :::image type="content" source="images/power-bi-set-credentials-organizational.png" alt-text="La opción Iniciar sesión en el elemento de menú Cuenta organizativa" lightbox="images/power-bi-set-credentials-organizational.png":::
 
-- Escriba sus credenciales y espere a que se haya iniciado sesión
+- Escriba sus credenciales y espere a que haya iniciado sesión.
 
-- Haga **clic en Conectar**
+- Haga clic en **Conectar**.
 
-    ![Imagen de set credentials2.](images/power-bi-set-credentials-organizational-cont.png)
+    :::image type="content" source="images/power-bi-set-credentials-organizational-cont.png" alt-text="El mensaje de confirmación de inicio de sesión en el elemento de menú Cuenta organizativa" lightbox="images/power-bi-set-credentials-organizational-cont.png":::
 
-- Ahora los resultados de la consulta aparecerán como tabla y puedes empezar a crear visualizaciones encima de ella.
+- Ahora los resultados de la consulta aparecerán como una tabla y puedes empezar a crear visualizaciones encima de ella.
 
 - Puedes duplicar esta tabla, cambiar el nombre y editar la consulta de búsqueda avanzada dentro para obtener los datos que quieras.
 
@@ -130,12 +131,12 @@ El primer ejemplo muestra cómo conectar Power BI a la API de búsqueda avanzada
         Source
 ```
 
-- Puede hacer lo mismo para **Alerts** and **Machines**.
-- También puede usar consultas OData para filtros de consultas, vea [Using OData Queries](exposed-apis-odata-samples.md)
+- Puede hacer lo mismo con **alertas** y **máquinas**.
+- También puede usar consultas OData para filtros de consultas, vea [Using OData Queries](exposed-apis-odata-samples.md).
 
 ## <a name="power-bi-dashboard-samples-in-github"></a>Power BI ejemplos de panel en GitHub
 
-Para obtener más información, [vea el Power BI de informes](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
+Para obtener más información, [vea el Power BI de informes.](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)
 
 ## <a name="sample-reports"></a>Informes de ejemplo
 

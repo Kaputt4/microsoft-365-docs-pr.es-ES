@@ -1,7 +1,7 @@
 ---
 title: Usar reglas de reducción de la superficie expuesta a ataques para evitar la infección de malware
 description: Las reglas de reducción de superficie de ataque pueden ayudar a evitar que las vulnerabilidades utilicen aplicaciones y scripts para infectar dispositivos con malware.
-keywords: 'Reglas de reducción de superficie de ataque, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint'
+keywords: Reglas de reducción de superficie de ataque, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,19 +10,24 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar'
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom:
-  - asr
-  - admindeeplinkDEFENDER
+- asr
+- admindeeplinkDEFENDER
 ms.technology: mde
 ms.topic: article
 ms.collection:
-  - m365initiative-m365-defender
-  - M365-security-compliance
+- m365initiative-m365-defender
+- M365-security-compliance
 ms.date: 1/18/2022
+ms.openlocfilehash: c09405043caeea57fdad1c241dfcd70e47ccd6f1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470740"
 ---
-
 # <a name="attack-surface-reduction-rules-overview"></a>Introducción a las reglas de reducción de superficie de ataque
 
 **Se aplica a:**
@@ -48,7 +53,7 @@ Para obtener más información sobre cómo configurar reglas de reducción de su
 
 Puedes evaluar cómo una regla de reducción de superficie de ataque puede afectar a la red abriendo la recomendación de seguridad para esa regla en [Administración de amenazas y vulnerabilidades](/windows/security/threat-protection/#tvm).
 
-:::image type="content" source="images/asrrecommendation.png" alt-text="Reco de seguridad para la regla de reducción de superficie de ataque.":::
+:::image type="content" source="images/asrrecommendation.png" alt-text="La recomendación de ASR" lightbox="images/asrrecommendation.png":::
 
 En el panel de detalles de recomendación, comprueba el impacto del usuario para determinar qué porcentaje de dispositivos pueden aceptar una nueva directiva que habilite la regla en modo de bloqueo sin afectar negativamente a la productividad.
 

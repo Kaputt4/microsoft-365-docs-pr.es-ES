@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cb92b67b3f19c578d12eb9673d2f80d5fadd131f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c8a96f3dba51de09a7237279b4053b9f4ed9b4a7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937849"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470491"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>Conceder acceso al proveedor de servicios de seguridad administrado (MSSP) (versión preliminar)
 
@@ -55,9 +55,9 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
 2. Cree roles de Defender para endpoint para niveles de acceso adecuados en Customer Defender for Endpoint.
 
-    Para habilitar RBAC en el portal de Microsoft 365 Defender del cliente, acceda a **Configuración > Permissions > Roles** y "Activar roles", desde una cuenta de usuario con derechos de administrador global o administrador de seguridad.
+    Para habilitar RBAC en el portal de Microsoft 365 Defender cliente, acceda a **Configuración > Permissions > Roles** y "Activar roles", desde una cuenta de usuario con derechos de administrador global o administrador de seguridad.
 
-    ![Imagen del acceso de MSSP.](images/mssp-access.png)
+    :::image type="content" source="images/mssp-access.png" alt-text="Acceso de MSSP" lightbox="images/mssp-access.png":::
 
     A continuación, cree roles RBAC para satisfacer las necesidades de nivel SOC de MSSP. Vincule estos roles a los grupos de usuarios creados mediante "Grupos de usuarios asignados".
 
@@ -71,7 +71,7 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
       Capacidades de nivel 1 con la adición a [la respuesta en directo](live-response.md)
 
-    Para obtener más información, vea [Use role-based access control](rbac.md).
+    Para obtener más información, vea [Usar control de acceso basado en roles](rbac.md).
 
 ## <a name="configure-governance-access-packages"></a>Configurar paquetes de acceso de gobierno
 
@@ -87,9 +87,9 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
     Para ello, en el inquilino de AD del cliente, acceda a Identity Governance: Catalogs y agregue **New Catalog**. En nuestro ejemplo, lo llamaremos **MSSP Accesses**.
 
-    ![Imagen del nuevo catálogo.](images/goverance-catalog.png)
+    :::image type="content" source="images/goverance-catalog.png" alt-text="La nueva página de catálogo" lightbox="images/goverance-catalog.png":::
 
-    Para obtener más información, vea [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
+    Para obtener más información, vea [Crear un catálogo de recursos](/azure/active-directory/governance/entitlement-management-catalog-create).
 
 3. **Crear paquetes de acceso para recursos MSSP Customer AAD: Identity Governance**
 
@@ -103,16 +103,16 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
     - Access auto expira después de 365 días
 
     > [!div class="mx-imgBorder"]
-    > ![Imagen del nuevo paquete de acceso.](images/new-access-package.png)
+    > :::image type="content" source="images/new-access-package.png" alt-text="La página Nuevo paquete de acceso" lightbox="images/new-access-package.png":::
 
     Para obtener más información, vea [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 
 4. **Proporcionar vínculo de solicitud de acceso a recursos MSSP desde customer AAD: Identity Governance**
 
-    Los analistas de SOC de MSSP usan el vínculo Portal de My Access para solicitar acceso a través de los paquetes de acceso creados. El vínculo es duradero, lo que significa que el mismo vínculo puede usarse con el tiempo para los nuevos analistas. La solicitud de analista entra en una cola para su aprobación por parte de los aprobadores de analistas de **MSSP**.
+    Los analistas de SOC de MSSP usan el vínculo Portal de My Access para solicitar acceso a través de los paquetes de acceso creados. El vínculo es duradero, lo que significa que el mismo vínculo puede usarse con el tiempo para los nuevos analistas. La solicitud de analista entra en una cola para su aprobación por parte de los aprobadores **de analistas de MSSP**.
 
     > [!div class="mx-imgBorder"]
-    > ![Imagen de las propiedades de acceso.](images/access-properties.png)
+    > :::image type="content" source="images/access-properties.png" alt-text="La página Propiedades" lightbox="images/access-properties.png":::
 
     El vínculo se encuentra en la página de información general de cada paquete de acceso.
 
@@ -122,7 +122,7 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
     Las solicitudes de acceso se administran en el cliente My Access, por miembros del grupo Aprobadores de analistas de MSSP.
 
-    Para ello, acceda a myaccess del cliente mediante: `https://myaccess.microsoft.com/@<Customer Domain>` .
+    Para ello, acceda a myaccess del cliente mediante: `https://myaccess.microsoft.com/@<Customer Domain>`.
 
     Ejemplo: `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
 

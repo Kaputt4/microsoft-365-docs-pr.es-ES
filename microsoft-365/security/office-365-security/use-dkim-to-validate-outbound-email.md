@@ -20,12 +20,12 @@ ms.custom:
 description: Más información sobre cómo usar DomainKeys Identified Mail (DKIM) con Microsoft 365 para asegurarse de que los mensajes que se envían desde su dominio personalizado sean de confianza para los sistemas de correo electrónico de destino.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 25333a1616bb1f4e4e529c17813bdd58f4c768b4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fd236ff616ab585909b210c9c1b9a8f12b2e9fe2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312955"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472273"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado
 
@@ -89,13 +89,15 @@ Una vez agregado el dominio, siga los pasos que se muestran a continuación para
 
 Paso 1: Haga clic en el dominio en el que quiere configurar DKIM en la página de DKIM (https://security.microsoft.com/dkimv2 o https://protection.office.com/dkimv2).
 
-![Página DKIM en el portal de Microsoft 365 Defender con un dominio seleccionado.](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
+:::image type="content" source="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png" alt-text="Página DKIM en el portal de Microsoft 365 Defender con un dominio seleccionado" lightbox="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png":::
 
 Paso 2: Deslice el botón de alternancia a **Habilitar**. Verá una ventana emergente que indica que necesita agregar registros CNAME.
 
-![Deslice el botón de alternancia a Habilitado para habilitar DKIM.](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+:::image type="content" source="../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png" alt-text="Control flotante de detalles del dominio con el botón Crear claves DKIM" lightbox="../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png":::
 
 Paso 3: Copiar los CNAMES que se muestran en la ventana emergente.
+
+:::image type="content" source="../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png" alt-text="Ventana emergente Publicar CNAME que contiene los dos registros CNAME que se van a copiar" lightbox="../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png":::
 
 Paso 4: Publicar los registros CNAME copiados en el proveedor de servicios DNS.
 
@@ -110,7 +112,7 @@ TTL: 3600 (or your provider default)
 
 Paso 5: volver a la página DKIM para habilitar DKIM
 
-![Deslice el botón de alternancia a Habilitado para habilitar DKIM.](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+:::image type="content" source="../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png" alt-text="Botón de alternancia para habilitar DKIM" lightbox="../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png":::
 
 Si ve el error El registro CNAME no existe, es posible que se deba a:
 
@@ -248,7 +250,7 @@ Una vez que haya publicado los registros CNAME en DNS, está preparado para habi
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>Para habilitar la firma DKIM para su dominio personalizado mediante PowerShell
 
 > [!IMPORTANT]
-> :::image type="content" source="../../media/dkim.png" alt-text="El error &quot;No hay claves DKIM guardadas para este dominio&quot;.":::
+> :::image type="content" source="../../media/dkim.png" alt-text="Error &quot;No hay claves DKIM guardadas para este dominio&quot;" lightbox="../../media/dkim.png":::
 > Si va a configurar DKIM por primera vez y ve el error "No hay claves DKIM guardadas para este dominio", complete el comando del paso 2 siguiente (por ejemplo, `Set-DkimSigningConfig -Identity contoso.com -Enabled $true`) para ver la clave.
 
 1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
@@ -408,4 +410,5 @@ A continuación, consulte [**Usar DMARC para validar el correo electrónico**](u
 
 Rotación de clave mediante PowerShell: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[Usar DMARC para validar el correo electrónico](use-dmarc-to-validate-email.md)
+[Usar DMARC para validar el correo electrónico](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide&preserve-view=true)
+

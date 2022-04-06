@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 28533f2ad3fcf547cab95812048b3de8af3bcb9a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 152c0c54138841d9159c7230fc043307979e4546
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324275"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471833"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Configurar y administrar las funcionalidades de Expertos en amenazas de Microsoft
 
@@ -52,15 +52,15 @@ Si ya eres cliente de Defender for Endpoint, puedes aplicar a través del portal
 
 2. Haga clic en **Aplicar**.
 
-    ![Imagen de Expertos en amenazas de Microsoft configuración.](images/mte-collaboratewithmte.png)
+   :::image type="content" source="images/mte-collaboratewithmte.png" alt-text="La Expertos en amenazas de Microsoft configuración" lightbox="images/mte-collaboratewithmte.png":::
 
 3. Escriba su nombre y dirección de correo electrónico para que Microsoft pueda volver a usted en la aplicación.
 
-    ![Imagen de Expertos en amenazas de Microsoft aplicación.](images/mte-apply.png)
+   :::image type="content" source="images/mte-apply.png" alt-text="El campo Nombre de la página Expertos en amenazas de Microsoft aplicación" lightbox="images/mte-apply.png":::
 
 4. Lea la [declaración de privacidad](https://privacy.microsoft.com/privacystatement) y, a continuación, haga clic en **Enviar** cuando haya terminado. Recibirá un correo electrónico de bienvenida una vez que se apruebe la aplicación.
 
-    ![Imagen de la Expertos en amenazas de Microsoft de la aplicación.](images/mte-applicationconfirmation.png)
+   :::image type="content" source="images/mte-applicationconfirmation.png" alt-text="Mensaje Expertos en amenazas de Microsoft confirmación de la aplicación" lightbox="images/mte-applicationconfirmation.png":::
 
 Cuando se acepte, recibirá un correo electrónico de bienvenida y verá el cambio  del botón Aplicar a una alternancia que está "activa". En caso de que quieras salir del servicio de notificaciones de ataques dirigidos, desliza el botón de alternancia "desactivado" y haz clic en Guardar preferencias en la parte inferior de la página.
 
@@ -105,15 +105,15 @@ Puede asociarse con Expertos en amenazas de Microsoft que pueden participar dire
 
 2. En el menú superior derecho, haga clic en **?** . A continuación, **seleccione Consultar a un experto en amenazas**.
 
-    ![Imagen de Expertos en amenazas de Microsoft expertos a petición del menú.](images/mte-eod-menu.png)
+    :::image type="content" source="images/mte-eod-menu.png" alt-text="El Expertos en amenazas de Microsoft menú Expertos a petición" lightbox="images/mte-eod-menu.png":::
 
     Se abre una pantalla desplegable. En la siguiente pantalla se muestra cuándo está en una suscripción de prueba.
 
-    ![Imagen de la Expertos en amenazas de Microsoft expertos a petición.](images/mte-eod.png)
+    :::image type="content" source="images/mte-eod.png" alt-text="Página Expertos en amenazas de Microsoft expertos a petición" lightbox="images/mte-eod.png":::
 
     En la siguiente pantalla se muestra cuándo está en una suscripción Expertos en amenazas de Microsoft- Expertos a petición.
 
-    ![Imagen de la Expertos en amenazas de Microsoft de suscripción completa de expertos a petición.](images/mte-eod-fullsubscription.png)
+    :::image type="content" source="images/mte-eod-fullsubscription.png" alt-text="La Expertos en amenazas de Microsoft de suscripción completa de expertos a petición" lightbox="images/mte-eod-fullsubscription.png":::
 
     El **campo Tema de** consulta se rellena previamente con el vínculo a la página correspondiente para la solicitud de investigación. Por ejemplo, un vínculo a la página de detalles del incidente, alerta o dispositivo en la que estaba cuando realizó la solicitud.
 

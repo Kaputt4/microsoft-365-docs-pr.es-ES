@@ -1,6 +1,6 @@
 ---
-title: Introducción al uso del portal Microsoft 365 Defender web
-description: Vea cómo empezar a usar el portal Microsoft 365 Defender web. Obtenga información sobre cómo navegar por el portal y ver el estado y las recomendaciones de seguridad actuales
+title: Comenzar mediante el portal de Microsoft 365 Defender
+description: Consulte cómo empezar a usar el portal de Microsoft 365 Defender. Obtenga información sobre cómo navegar por el portal y ver el estado de seguridad y las recomendaciones actuales.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -18,83 +18,83 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 3e46ee70c1c745c336d049f039de04282c5848d8
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: c5a940676eab6ae3a07c526ecb1bd910ed8751fe
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525394"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64667150"
 ---
-# <a name="get-started-using-the-microsoft-365-defender-portal"></a>Introducción al uso del portal Microsoft 365 Defender web
+# <a name="get-started-using-the-microsoft-365-defender-portal"></a>Comenzar mediante el portal de Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Microsoft Defender para empresas se está implementando [para Microsoft 365 Empresa Premium](../../business-premium/index.md) clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
+> Microsoft Defender para Empresas se está implementando para [Microsoft 365 Empresa Premium](../../business-premium/index.md) clientes, a partir del 1 de marzo de 2022. Defender for Business como una suscripción independiente está en versión preliminar y se implementará gradualmente para los clientes y asociados de TI que [se registren aquí](https://aka.ms/mdb-preview) para solicitarla. La versión preliminar incluye un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
 > 
-> Parte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. 
+> Parte de la información de este artículo se refiere a los productos o servicios preliminares que se pueden modificar sustancialmente antes de que se publiquen comercialmente. Microsoft no ofrece ninguna garantía, expresa o implícita, de la información que se proporciona aquí. 
 
-Después de que te hayas registrado en Microsoft Defender para empresas, querrás familiarizarte con el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). En este artículo se incluyen las siguientes secciones:
+Una vez que se haya registrado para Microsoft Defender para Empresas, querrá familiarizarse con el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). En este artículo se incluyen las siguientes secciones:
 
-- [Cómo navegar por el portal Microsoft 365 Defender web](#navigate-the-microsoft-365-defender-portal)
+- [Cómo navegar por el portal de Microsoft 365 Defender](#navigate-the-microsoft-365-defender-portal)
 
-- [Learning sobre incidentes y acciones de respuesta](#complete-a-learning-module-about-incidents-and-response-actions) 
+- [Learning módulos sobre incidentes y acciones de respuesta](#complete-a-learning-module-about-incidents-and-response-actions) 
 
 - [Pasos siguientes](#next-steps)
 
 >
 > **¿Tiene un minuto?**
-> Por favor, haga <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">nuestra breve encuesta sobre Microsoft Defender para empresas</a>. Nos encantaría conocer su opinión.
+> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre Microsoft Defender para Empresas</a>. Nos encantaría conocer su opinión.
 >
 
-## <a name="navigate-the-microsoft-365-defender-portal"></a>Navegar por el Microsoft 365 Defender web
+## <a name="navigate-the-microsoft-365-defender-portal"></a>Navegar por el portal de Microsoft 365 Defender
 
-El Microsoft 365 Defender web ([https://security.microsoft.com](https://security.microsoft.com)) es su tienda única para usar y administrar Microsoft Defender para empresas. Incluye un banner de bienvenida y llamadas para ayudarte a empezar, tarjetas que incluyen información relevante y una barra de navegación para facilitar el acceso a las distintas características y funcionalidades.
+El portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) es tu tienda integral para usar y administrar Microsoft Defender para Empresas. Incluye un banner de bienvenida y llamadas que te ayudarán a empezar, tarjetas que exponen información relevante y una barra de navegación para que puedas acceder fácilmente a las distintas características y funcionalidades.
  
-Tómese un momento para familiarizarse con su Microsoft 365 Defender portal.
+Tómese un momento para familiarizarse con su portal de Microsoft 365 Defender.
 
 :::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Portal de Microsoft 365 Defender":::
 
 ### <a name="use-the-navigation-bar"></a>Usar la barra de navegación
 
-Use la barra de navegación de la parte izquierda de la pantalla para obtener acceso a los incidentes, ver informes y administrar las directivas de seguridad. En la tabla siguiente se describen los elementos que verá en la barra de navegación.
+Use la barra de navegación del lado izquierdo de la pantalla para acceder a los incidentes, ver informes y administrar las directivas de seguridad. En la tabla siguiente se describen los elementos que verá en la barra de navegación.
 
-| Elemento | Descripción |
+| Item | Descripción |
 |:---|:---|
-| **Inicio** | Te lleva a la página principal en Microsoft 365 Defender. La página principal incluye tarjetas que resaltan las amenazas activas que se detectaron, junto con recomendaciones para ayudar a proteger los datos y dispositivos de la empresa. <br/><br/>Recomendaciones se incluyen en Defender para empresas puede ahorrarle tiempo y esfuerzo al equipo de seguridad. Recomendaciones se basan en los procedimientos recomendados del sector. Para obtener más información acerca de las recomendaciones, consulte [Security recommendations - Administración de amenazas y vulnerabilidades](../defender-endpoint/tvm-security-recommendation.md). |
-| **Incidentes** | Le lleva a la lista de incidentes recientes. A medida que se desencadenan las alertas, se crean incidentes. Un incidente puede incluir varias alertas. Asegúrese de revisar los incidentes con regularidad. <br/><br/>Para obtener más información acerca de los incidentes, vea [Ver y administrar incidentes en Microsoft Defender para empresas](mdb-view-manage-incidents.md).|
-| **Centro de actividades** | Le lleva a la lista de acciones de respuesta, incluidas las acciones completadas o pendientes. <br/>- Seleccione la **pestaña** Historial para ver las acciones realizadas. Algunas acciones se toman automáticamente; otros se toman manualmente o se completan después de su aprobación. <br/>- Seleccione la **pestaña** Pendiente para ver las acciones que requieren aprobación para continuar. <br/><br/>Para obtener más información sobre el Centro de acciones, vea [Revisar acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md). |
-| **Análisis de amenazas** | Le lleva a una vista de las amenazas actuales y le proporciona una vista de un vistazo del panorama de amenazas. El análisis de amenazas también incluye informes e información de investigadores de seguridad de Microsoft. <br/><br/>Para obtener más información sobre el análisis de amenazas, consulte [Seguimiento y respuesta a amenazas emergentes a través del análisis de amenazas](../defender-endpoint/threat-analytics.md). |
-| **Puntuación de seguridad** | Le proporciona una representación de la posición de seguridad de su empresa y ofrece sugerencias para mejorarla.<br/><br/>Para obtener más información sobre puntuación segura, consulta [Puntuación segura de Microsoft para dispositivos](../defender-endpoint/tvm-microsoft-secure-score-devices.md). |
-| **Learning hub** | Proporciona acceso a la formación de seguridad y otros recursos a través de rutas de aprendizaje que se incluyen con la suscripción. Puedes filtrar por producto, nivel de habilidad, rol y mucho más. El centro de Learning puede ayudar a su equipo de seguridad a mejorar las características de seguridad & en Defender para empresas y más ofertas de Microsoft, como [Microsoft Defender para](../defender-endpoint/microsoft-defender-endpoint.md) endpoint y [Microsoft Defender para Office 365](../office-365-security/defender-for-office-365.md).  |
-| **Puntos de conexión** >  **Búsqueda** | Permite buscar uno o varios dispositivos que se incorporaron a Microsoft Defender para empresas. |
-| **Puntos de conexión** >  **Inventario de dispositivos** | Permite buscar uno o varios dispositivos que se incorporaron a Microsoft Defender para empresas. |
-| **Puntos de conexión** >  **Administración de vulnerabilidades** | Le proporciona un panel, recomendaciones, actividades de corrección, un inventario de software y una lista de posibles debilidades dentro de su empresa. |
-| **Puntos de conexión** >  **Tutoriales** | Proporciona acceso a tutoriales y simulaciones para ayudarle a obtener más información sobre cómo funcionan las características de protección contra amenazas. <br/><br/>Seleccione el **vínculo Leer el tutorial** antes de intentar obtener el archivo de simulación para cada tutorial. Algunas simulaciones requieren Office aplicaciones, como Microsoft Word, para leer el tutorial. |
-| **Puntos de conexión** >  **Configuración del dispositivo** | Enumera las directivas de seguridad por sistema operativo y por tipo. <br/><br/>Para obtener más información sobre las directivas de seguridad, consulta [Ver o editar directivas en Microsoft Defender para empresas](mdb-view-edit-policies.md). |
-| **Informes** | Enumera los informes de seguridad disponibles. Estos informes le permiten ver las tendencias de seguridad, ver detalles sobre detecciones y alertas de amenazas y obtener más información sobre los dispositivos vulnerables de su empresa. |
-| **Estado** | Permite ver el estado del servicio y planear los próximos cambios. <br/>- Seleccione **Estado del servicio** para ver el estado de mantenimiento de los servicios Microsoft 365 que se incluyen en la suscripción de su empresa. <br/>- Seleccione **Centro de mensajes** para obtener información sobre los cambios planeados y qué esperar.  |
-| **Permisos & roles** | Le permite asignar permisos a las personas de su empresa que administrarán su seguridad y verán incidentes e informes en el portal de Microsoft 365 Defender web. También te permite configurar y administrar grupos de dispositivos para incorporar los dispositivos de tu empresa y asignar tus directivas de protección contra amenazas.  |
-| **Configuración** | Permite editar la configuración del portal de Microsoft 365 Defender y Microsoft Defender para empresas. Por ejemplo, puede incorporar (o fuera de la pantalla) y los dispositivos de su empresa (también denominados puntos de conexión). También puede definir reglas, como las reglas de supresión de alertas, y configurar indicadores para bloquear o permitir determinados archivos o procesos.  |
-| **Más recursos** | Navegue a otros portales, como Azure Active Directory. Tenga en cuenta que el portal Microsoft 365 Defender debe satisfacer sus necesidades sin necesidad de navegar a otros portales. |
+| **Inicio** | Le lleva a la página principal en Microsoft 365 Defender. La página principal incluye tarjetas que resaltan las amenazas activas que se detectaron, junto con recomendaciones para ayudar a proteger los datos y los dispositivos de su empresa. <br/><br/>Recomendaciones se incluyen en Defender for Business puede ahorrar tiempo y esfuerzo al equipo de seguridad. Recomendaciones se basan en los procedimientos recomendados del sector. Para obtener más información sobre las recomendaciones, consulte [Recomendaciones de seguridad: Administración de amenazas y vulnerabilidades](../defender-endpoint/tvm-security-recommendation.md). |
+| **Incidentes** | Le lleva a la lista de incidentes recientes. A medida que se desencadenan alertas, se crean incidentes. Un incidente puede incluir varias alertas. Asegúrese de revisar los incidentes con regularidad. <br/><br/>Para más información sobre los incidentes, consulte [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md).|
+| **Centro de actividades** | Le lleva a la lista de acciones de respuesta, incluidas las acciones completadas o pendientes. <br/>- Seleccione la pestaña **Historial** para ver las acciones realizadas. Algunas acciones se realizan automáticamente; otros se toman manualmente o se completan después de que se aprueben. <br/>- Seleccione la pestaña **Pendiente** para ver las acciones que requieren aprobación para continuar. <br/><br/>Para obtener más información sobre el Centro de acciones, consulte [Revisar las acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md). |
+| **Análisis de amenazas** | Le lleva a una vista de las amenazas actuales y le proporciona una vista general del panorama de las amenazas. El análisis de amenazas también incluye informes e información de investigadores de seguridad de Microsoft. <br/><br/>Para más información sobre el análisis de amenazas, consulte [Seguimiento y respuesta a amenazas emergentes a través del análisis de amenazas](../defender-endpoint/threat-analytics.md). |
+| **Puntuación de seguridad** | Proporciona una representación de la posición de seguridad de su empresa y ofrece sugerencias para mejorarla.<br/><br/>Para obtener más información sobre la puntuación de seguridad, consulte [Puntuación de seguridad de Microsoft para dispositivos](../defender-endpoint/tvm-microsoft-secure-score-devices.md). |
+| **centro de Learning** | Proporciona acceso al entrenamiento de seguridad y a otros recursos a través de rutas de aprendizaje que se incluyen con la suscripción. Puede filtrar por producto, nivel de aptitud, rol y mucho más. El centro de Learning puede ayudar al equipo de seguridad a aumentar las características de seguridad & funcionalidades de Defender para empresas y más ofertas de Microsoft, como [Microsoft Defender para punto de conexión](../defender-endpoint/microsoft-defender-endpoint.md) y [Microsoft Defender para Office 365](../office-365-security/defender-for-office-365.md).  |
+| **Extremos** >  **Búsqueda** | Permite buscar uno o varios dispositivos que se incorporaron a Microsoft Defender para Empresas. |
+| **Extremos** >  **Inventario de dispositivos** | Permite buscar uno o varios dispositivos que se incorporaron a Microsoft Defender para Empresas. |
+| **Extremos** >  **Administración de vulnerabilidades** | Proporciona un panel, recomendaciones, actividades de corrección, un inventario de software y una lista de posibles debilidades dentro de la empresa. |
+| **Extremos** >  **Tutoriales** | Proporciona acceso a tutoriales y simulaciones para ayudarle a obtener más información sobre cómo funcionan las características de protección contra amenazas. <br/><br/>Seleccione el vínculo **Leer el tutorial** antes de intentar obtener el archivo de simulación para cada tutorial. Algunas simulaciones requieren Office aplicaciones, como Microsoft Word, para leer el tutorial. |
+| **Extremos** >  **Configuración del dispositivo** | Enumera las directivas de seguridad por sistema operativo y por tipo. <br/><br/>Para obtener más información sobre las directivas de seguridad, consulte [Ver o editar directivas en Microsoft Defender para Empresas](mdb-view-edit-policies.md). |
+| **Informes** | Enumera los informes de seguridad disponibles. Estos informes le permiten ver las tendencias de seguridad, ver detalles sobre las detecciones y alertas de amenazas y obtener más información sobre los dispositivos vulnerables de su empresa. |
+| **Estado** | Permite ver el estado de mantenimiento del servicio y planear los próximos cambios. <br/>- Seleccione **Estado del servicio** para ver el estado de mantenimiento de los servicios de Microsoft 365 que se incluyen en la suscripción de su empresa. <br/>- Seleccione **Centro de** mensajes para obtener información sobre los cambios planeados y lo que se espera.  |
+| **Permisos & roles** | Permite asignar permisos a las personas de la empresa que administrarán la seguridad y verán los incidentes e informes en el portal de Microsoft 365 Defender. También le permite configurar y administrar grupos de dispositivos para incorporar los dispositivos de su empresa y asignar las directivas de protección contra amenazas.  |
+| **Configuración** | Permite editar la configuración del portal de Microsoft 365 Defender y Microsoft Defender para Empresas. Por ejemplo, puede incorporar (o offboard) y los dispositivos de su empresa (también conocidos como puntos de conexión). También puede definir reglas, como las reglas de supresión de alertas, y configurar indicadores para bloquear o permitir determinados archivos o procesos.  |
+| **Más recursos** | Vaya a otros portales, como Azure Active Directory. Tenga en cuenta que el portal de Microsoft 365 Defender debe satisfacer sus necesidades sin necesidad de navegar a otros portales. |
 
 ## <a name="complete-a-learning-module-about-incidents-and-response-actions"></a>Completar un módulo de aprendizaje sobre incidentes y acciones de respuesta
 
-Consulte el módulo de aprendizaje, [Detectar y responder a problemas de seguridad](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/) para obtener información general sobre incidentes y acciones de respuesta. Aprenderá sobre la cola de incidentes, las alertas y las acciones de respuesta que puede realizar. Este curso te ayudará a empezar a trabajar con incidentes en Defender para empresas.
+Consulte el módulo de aprendizaje [Detectar y responder a problemas de seguridad](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/) para obtener información general sobre incidentes y acciones de respuesta. Obtendrá información sobre la cola de incidentes, las alertas y las acciones de respuesta que puede realizar. Este curso le ayudará a empezar a trabajar con incidentes en Defender for Business.
 
 > [!NOTE]
-> Aunque el módulo de [aprendizaje (Detectar](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/) y responder a problemas de seguridad) es realmente para Microsoft Defender para Endpoint, los conceptos básicos y el flujo general son similares a lo que verá en Defender para empresas.
+> Aunque el módulo de aprendizaje ([Detectar y responder a problemas de seguridad](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/)) es realmente para Microsoft Defender para punto de conexión, los conceptos básicos y el flujo general son similares a los que verá en Defender para empresas.
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-Ahora que tienes una introducción a Defender para empresas, prueba una o varias de las siguientes tareas:
+Ahora que tiene información general sobre Defender para empresas, pruebe una o varias de las siguientes tareas:
 
-- [Pruebe tutoriales y simulaciones en Microsoft Defender para empresas](mdb-tutorials.md)
+- [Pruebe tutoriales y simulaciones en Microsoft Defender para Empresas](mdb-tutorials.md)
 
-- [Administrar dispositivos en Microsoft Defender para empresas](mdb-manage-devices.md)
+- [Administración de dispositivos en Microsoft Defender para Empresas](mdb-manage-devices.md)
 
-- [Ver y administrar incidentes en Microsoft Defender para empresas](mdb-view-manage-incidents.md)
+- [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md)
 
-- [Responder y mitigar amenazas en Microsoft Defender para empresas](mdb-respond-mitigate-threats.md)
+- [Respuesta y mitigación de amenazas en Microsoft Defender para Empresas](mdb-respond-mitigate-threats.md)
 
-- [Revisar acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)
+- [Revisión de las acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)
 
-- [Ver o editar directivas en Microsoft Defender para empresas](mdb-view-edit-policies.md)
+- [Ver o editar directivas en Microsoft Defender para Empresas](mdb-view-edit-policies.md)

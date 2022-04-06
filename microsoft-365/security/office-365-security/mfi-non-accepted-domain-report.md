@@ -1,7 +1,7 @@
 ---
 title: Informe de dominio no aceptado en el panel flujo de correo
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,14 +9,19 @@ audience: ITPro
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.localizationpriority: medium
-ms.assetid: null
+ms.assetid: ''
 ms.custom:
-  - seo-marvel-apr2020
+- seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el informe de dominio no aceptado en el panel flujo de correo del Centro de seguridad y cumplimiento de & para supervisar los mensajes de la organización local donde el dominio del remitente no está configurado en Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
+ms.openlocfilehash: 8f16dfbafa12080058cd1784120e4bc2157e0cff
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470843"
 ---
-
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Informe de dominio no aceptado en el Centro de seguridad & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -30,7 +35,7 @@ El  informe de dominio no aceptado en el [](mail-flow-insights-v2.md) panel Fluj
 
 Microsoft 365 limitar estos mensajes si tenemos datos para demostrar que la intención de estos mensajes es malintencionada. Por lo tanto, es importante que comprenda lo que está sucediendo y solucione el problema.
 
-![Widget de dominio no aceptado en el panel flujo de correo del Centro de seguridad & cumplimiento.](../../media/mfi-non-accepted-domain-report-widget.png)
+:::image type="content" source="../../media/mfi-non-accepted-domain-report-widget.png" alt-text="El widget dominio no aceptado en el panel Flujo de correo del Centro de seguridad y & cumplimiento" lightbox="../../media/mfi-non-accepted-domain-report-widget.png":::
 
 ## <a name="report-view-for-the-non-accepted-domain-report"></a>Vista Informe para el informe de dominio no aceptado
 
@@ -40,7 +45,7 @@ De forma predeterminada, se muestra la actividad de todos los conectores afectad
 
 Si mantiene el mouse sobre un punto de datos (día) en el gráfico, verá el número total de mensajes para el conector.
 
-![Vista Informe en el informe de dominio no aceptado.](../../media/mfi-non-accepted-domain-report-overview-view.png)
+:::image type="content" source="../../media/mfi-non-accepted-domain-report-overview-view.png" alt-text="La vista Informe del informe de dominio no aceptado" lightbox="../../media/mfi-non-accepted-domain-report-overview-view.png":::
 
 ## <a name="details-table-view-for-the-non-accepted-domain-report"></a>Vista de tabla De detalles para el informe de dominio no aceptado
 
@@ -64,7 +69,7 @@ Al seleccionar una fila de la tabla, aparece un menú desplegable con la siguien
 - **Recuento de mensajes**
 - **Mensajes de** ejemplo: puede hacer clic **en Ver mensajes de** ejemplo para [ver los](message-trace-scc.md) resultados del seguimiento de mensajes de una muestra de los mensajes afectados.
 
-![Los detalles se desvía después de seleccionar una fila en la vista Tabla de detalles en el informe de dominio no aceptado.](../../media/mfi-non-accepted-domain-report-details-flyout.png)
+:::image type="content" source="../../media/mfi-non-accepted-domain-report-details-flyout.png" alt-text="El menú desplegable Detalles después de seleccionar una fila en la vista tabla Detalles del informe de dominio no aceptado" lightbox="../../media/mfi-non-accepted-domain-report-details-flyout.png":::
 
 Para volver a la vista informes, haga clic **en Ver informe**.
 

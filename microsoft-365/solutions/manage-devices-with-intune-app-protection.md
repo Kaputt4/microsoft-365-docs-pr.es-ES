@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 4535e4a05ac8408e57c767999de66c39a4bf0274
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
-ms.translationtype: HT
+ms.openlocfilehash: e421a62d3b1fa60df7a64a5b9a94e6e46b0a139f
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049244"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651519"
 ---
 # <a name="step-1-implement-app-protection-policies"></a>Paso 1. Implementar directivas de protección de aplicaciones
 
@@ -61,4 +61,4 @@ Para configurar estas directivas, use las instrucciones recomendadas y las opcio
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Vaya al [Paso 2. Inscribir dispositivos en la administración con Intune](manage-devices-with-intune-enroll.md). 
+Vaya al [paso 2. Inscriba dispositivos en Intune](manage-devices-with-intune-enroll.md). 

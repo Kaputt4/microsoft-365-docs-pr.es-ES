@@ -1,6 +1,6 @@
 ---
 title: Filtrado de contenido web
-description: Use el filtrado de contenido web Pertahanan Microsoft untuk Titik Akhir para realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido.
+description: Use el filtrado de contenido web en Microsoft Defender para endpoint para realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido.
 keywords: protección web, protección contra amenazas web, exploración web, supervisión, informes, tarjetas, lista de dominios, seguridad, phishing, malware, exploit, sitios web, protección de red, Edge, Internet Explorer, Chrome, Firefox, explorador web
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: be2352ef44d8e9f7430cde39a71c7b7b1167a874
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 2535845c52285b1ce28fbe142709089778503c09
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634105"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469589"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -34,7 +34,7 @@ ms.locfileid: "64634105"
 > [!TIP]
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-El filtrado de contenido web forma parte de las [funciones de](web-protection-overview.md) protección web de Pertahanan Microsoft untuk Titik Akhir. Permite a la organización realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido. Muchos de estos sitios web, aunque no son malintencionados, pueden ser problemáticos debido a las normativas de cumplimiento, el uso del ancho de banda u otras preocupaciones.
+El filtrado de contenido web forma parte de las [funciones de protección web](web-protection-overview.md) en Microsoft Defender para endpoint. Permite a la organización realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido. Muchos de estos sitios web, aunque no son malintencionados, pueden ser problemáticos debido a las normativas de cumplimiento, el uso del ancho de banda u otras preocupaciones.
 
 Configure directivas en los grupos de dispositivos para bloquear determinadas categorías. El bloqueo de una categoría impide que los usuarios de grupos de dispositivos especificados tengan acceso a direcciones URL asociadas a la categoría. Para cualquier categoría que no está bloqueada, las direcciones URL se auditan automáticamente. Los usuarios pueden acceder a las direcciones URL sin interrupciones y recopilará estadísticas de acceso para ayudar a crear una decisión de directiva más personalizada. Los usuarios verán una notificación de bloqueo si un elemento de la página que están viendo está realizando llamadas a un recurso bloqueado.
 
@@ -44,7 +44,7 @@ El filtrado de contenido web está disponible en los principales exploradores we
 
 - Se impide que los usuarios accedan a sitios web en categorías bloqueadas, ya sea que estén explorando localmente o lejos.
 
-- El equipo de seguridad puede implementar cómodamente directivas para grupos de usuarios que usan grupos de dispositivos definidos [en Pertahanan Microsoft untuk Titik Akhir de control de acceso basado en roles](/microsoft-365/security/defender-endpoint/rbac).
+- El equipo de seguridad puede implementar directivas cómodamente en grupos de usuarios que usan grupos de dispositivos definidos en Microsoft Defender para la configuración de control de acceso basado en roles de [punto de conexión](/microsoft-365/security/defender-endpoint/rbac).
 
 - El equipo de seguridad puede acceder a los informes web en la misma ubicación central, con visibilidad sobre los bloques reales y el uso web.
 
@@ -52,17 +52,17 @@ El filtrado de contenido web está disponible en los principales exploradores we
 
 Antes de probar esta característica, asegúrese de cumplir los siguientes requisitos:
 
-- La suscripción incluye una de las siguientes opciones: Windows 10 Enterprise E5, Microsoft 365 E5, Seguridad de Microsoft 365 E5, Microsoft 365 E3 o el Pertahanan Microsoft untuk Titik Akhir licencia independiente. 
+- La suscripción incluye una de las siguientes opciones: Windows 10 Enterprise E5, Microsoft 365 E5, Seguridad de Microsoft 365 E5, Microsoft 365 E3 + Seguridad de Microsoft 365 E5  complemento o la licencia independiente de Microsoft Defender para Endpoint. 
 
 - Tiene acceso a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
-- Los dispositivos de la organización están ejecutando Windows 10 actualización de aniversario (versión 1607) o posterior, o Windows 11 con las actualizaciones [antivirus/antimalware más recientes](manage-updates-baselines-microsoft-defender-antivirus.md).
+- Los dispositivos de la organización ejecutan Windows 10 Anniversary Update (versión 1607) o posterior, o Windows 11 con las actualizaciones [antivirus/antimalware más recientes](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 - Windows Defender SmartScreen y Network Protection están habilitados en los dispositivos de la organización.
 
 ## <a name="data-handling"></a>Control de datos
 
-Los datos se almacenan en la región seleccionada como parte de la configuración Pertahanan Microsoft untuk Titik Akhir [control de datos](data-storage-privacy.md). Los datos no abandonarán el centro de datos en esa región. Además, sus datos no se compartirán con terceros, incluidos nuestros proveedores de datos.
+Los datos se almacenan en la región que se seleccionó como parte de la configuración de administración de datos de [Microsoft Defender para puntos de conexión](data-storage-privacy.md). Los datos no abandonarán el centro de datos en esa región. Además, sus datos no se compartirán con terceros, incluidos nuestros proveedores de datos.
 
 ## <a name="turn-on-web-content-filtering"></a>Activar el filtrado de contenido web
 
@@ -134,7 +134,7 @@ Insígible: sitios orientados a contenido inadecuado para que los escolares pued
 
 **Chat**: sitios que son principalmente salas de chat basadas en web.
 
-**Juegos**: sitios relacionados con juegos de vídeo o de equipo, incluidos los sitios que promueven los juegos a través del hospedaje servicios en línea información relacionada con los juegos.
+**Juegos**: sitios relacionados con juegos de vídeo o de equipo, incluidos los sitios que promueven los juegos a través del hospedaje de servicios en línea o información relacionada con los juegos.
 
 **Mensajería instantánea**: sitios que se pueden usar para descargar software de mensajería instantánea o mensajería instantánea basada en cliente.
 
@@ -203,9 +203,9 @@ Se abrirá un panel donde puede seleccionar la prioridad y agregar más detalles
 
 ### <a name="url-category-lookup"></a>Búsqueda de categorías de dirección URL
 
-Para determinar la categoría de un sitio web, puede usar la función de búsqueda de dirección URL disponible en el portal<https://security.microsoft.com> de Microsoft 365 Defender () en **Búsqueda de puntos de conexión**\>. En los resultados de la búsqueda de dirección URL, la categoría de filtrado de contenido web aparece en **Dirección URL/Detalles del dominio**. Si no se muestra el resultado de la categoría, la dirección URL no está asignada actualmente a una categoría de filtrado de contenido web existente.
+Para determinar la categoría de un sitio web, puede usar la función de búsqueda de dirección URL disponible en el portal<https://security.microsoft.com> de Microsoft 365 Defender () en **Búsqueda de puntos de conexión**\>. En los resultados de la búsqueda de dirección URL, la categoría de filtrado de contenido web aparece en **Dirección URL/Detalles del dominio**. Los administradores también pueden disputar la categoría del dominio directamente desde esta página, como se muestra en la imagen siguiente. Si no se muestra el resultado de la categoría, la dirección URL no está asignada actualmente a una categoría de filtrado de contenido web existente.
 
-<!---:::image type="content" source="../../media/web-content-filtering-category-lookup.png" alt-text="The web content filtering category lookup results" lightbox="../../media/web-content-filtering-category-lookup.png":::--->
+:::image type="content" source="../../media/web-content-filtering-category-lookup.png" alt-text="Resultados de búsqueda de categorías de filtrado de contenido web" lightbox="../../media/web-content-filtering-category-lookup.png":::
 
 ## <a name="web-content-filtering-cards-and-details"></a>Detalles y tarjetas de filtrado de contenido web
 
