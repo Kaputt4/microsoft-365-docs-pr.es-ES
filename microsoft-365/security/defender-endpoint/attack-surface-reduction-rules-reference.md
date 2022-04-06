@@ -1,7 +1,7 @@
 ---
 title: Referencia de reglas de reducción de superficie de ataque
 description: Enumera detalles sobre las reglas de reducción de superficie de ataque por regla.
-keywords: Reglas de reducción de superficie de ataque, ASR, reglas asr, hips, sistema de prevención de intrusiones de host, reglas de protección, reglas antiexploit, antiexploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR, descripción de regla ASR
+keywords: Reglas de reducción de superficie de ataque, ASR, reglas asr, hips, sistema de prevención de intrusiones de host, reglas de protección, reglas antiexploit, antiexploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para punto de conexión, configurar reglas ASR, descripción de regla ASR
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 77edaa3d71911bd0594e707996c320285dddabc5
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: b9655189759707e9c4463d3c53a3b0b9fd20e730
+ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754112"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64520588"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Referencia de reglas de reducción de superficie de ataque
 
@@ -37,9 +37,10 @@ En este artículo se proporciona información sobre las reglas de reducción de 
 - [Versiones de sistema operativo compatibles](#supported-operating-systems)
 - [Sistemas de administración de configuración compatibles](#supported-configuration-management-systems)
 - [Detalles de alertas y notificaciones por regla](#per-rule-alert-and-notification-details)
+- [Reglas ASR y matriz de GUID](#asr-rules-and-guids-matrix)
+- [Modos de regla ASR](#asr-rule-modes)
 - [Descripciones por regla](#per-rule-descriptions)
   - Descripciones de reglas
-  - GUID
   - Nombres de reglas del sistema de administración de configuración
 
 ## <a name="public-preview-supported-operating-systems"></a>Versión preliminar pública: sistemas operativos compatibles
@@ -110,7 +111,7 @@ En la tabla siguiente se enumeran los sistemas operativos compatibles para las r
 
 Los vínculos a información sobre las versiones del sistema de administración de configuración a las que se hace referencia en esta tabla se enumeran debajo de esta tabla.
 
-|Nombre de regla | Intune | Microsoft Endpoint Manager |Microsoft Endpoint Configuration Manager |Directiva de grupo<sup>[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
+|Nombre de regla | Intune | Microsoft Endpoint Manager |Microsoft Endpoint Configuration Manager |<sup>directiva de grupo[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
 |[Bloquear el uso indebido de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v  | Y MEM OMA-URI |   | v  |  v  |
 |[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | v |   | v | v  | v  |
@@ -143,7 +144,7 @@ Las notificaciones del sistema se generan para todas las reglas en modo de bloqu
 
 Para las reglas con el "Estado de regla" especificado:
 
-- Las reglas ASR con \<ASR Rule, Rule State\> combinaciones se usan para alertas de superficie (notificaciones del sistema) en Microsoft Defender para endpoint solo para dispositivos en el nivel de bloque de nube alta. Los dispositivos que no están en el nivel de bloque de nube alta no generarán alertas para ninguna regla <ASR, las combinaciones de> reglas
+- Las reglas ASR con \<ASR Rule, Rule State\> combinaciones se usan para las alertas de superficie (notificaciones del sistema) en Microsoft Defender para punto de conexión solo para dispositivos en el nivel de bloque de nube alta. Los dispositivos que no están en el nivel de bloque de nube alta no generarán alertas para ninguna regla <ASR, las combinaciones de> reglas
 - EDR alertas se generan para las reglas ASR en los estados especificados, pero solo para dispositivos en el nivel de bloque de nube alta.
 
 | Nombre de regla: | Estado de regla: | Genera alertas en EDR? <br> (Sí&nbsp;\|&nbsp;No) | ¿Genera notificaciones del sistema? <br> (Sí&nbsp;\|&nbsp;No) |
@@ -167,6 +168,27 @@ Para las reglas con el "Estado de regla" especificado:
 |[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Requiere dispositivo en el nivel de bloque de nube alta  | N \| Y <br> Requiere dispositivo en el nivel de bloque de nube alta |
 |   |   |   |   |
   
+## <a name="asr-rules-and-guids-matrix"></a>Reglas ASR y matriz de GUID
+
+| Nombre de la regla | GUID de regla |
+|:-----|:-----|
+| Bloquear el uso indebido de controladores firmados vulnerables explotados | 56a863a9-875e-4185-98a7-b882c64b5ce5 |
+| Impedir que Adobe Reader cree procesos secundarios | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c |
+| Bloquear todas Office aplicaciones de creación de procesos secundarios | d4f940ab-401b-4efc-aadc-ad5f3c50688a |
+| Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 |
+| Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web | be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 |
+| Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza | 01443614-cd74-433a-b99e-2ecdc07bfc25 |
+| Bloquear la ejecución de scripts potencialmente ofuscados | 5beb7efe-fd9a-4556-801d-275e5ffc04cc |
+| Impedir que JavaScript o VBScript inicien contenido ejecutable descargado | d3e037e1-3eb8-44c8-a917-57927947596d |
+| Bloquear Office aplicaciones de creación de contenido ejecutable | 3b576869-a4ec-4529-8536-b80a7769e899 |
+| Bloquear Office aplicaciones para que no inyecten código en otros procesos | 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 |
+| Bloquear Office de comunicación para que no cree procesos secundarios | 26190899-1602-49e8-8b27-eb1d0a1ce869 |
+| Bloquear la persistencia a través de la suscripción de eventos WMI <br>* No se admiten exclusiones de archivos y carpetas. | e6db77e5-3df2-4cf1-b95a-636979351e5b |
+| Bloquear creaciones de proceso que se originen en comandos PSExec y WMI | d1e49aac-8f56-4280-b9ba-993a6d77406c |
+| Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 |
+| Bloquear llamadas a la API de Win32 desde Office macros | 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b |
+| Usar protección avanzada contra ransomware | c1db55ab-c21a-4637-bb3f-a12568109d35 |
+
 ## <a name="asr-rule-modes"></a>Modos de regla ASR
 
 - **No configurado** o **Deshabilitado**: este es el estado en el que la regla ASR no se ha habilitado o se ha deshabilitado. El código de este estado = 0.
@@ -203,9 +225,9 @@ La **regla Bloquear el uso indebido de controladores firmados vulnerables** no b
 <!--The above link is the 'only link' that exists for having drivers examined. The 'en-us' component is required to make the link work. Any alterations to this link will result in a 404.
 -->
 
-Nombre de Intune: `Block abuse of exploited vulnerable signed drivers` (aún no disponible)
+Intune nombre: `Block abuse of exploited vulnerable signed drivers` (aún no disponible)
 
-Nombre de Configuration Manager: Aún no disponible
+Configuration Manager: Aún no disponible
   
 GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
@@ -214,7 +236,7 @@ Advanced hunting action type:
 -->
 
 <!-- 
-Dependencies:
+Dependencies: none provided by engineering
 -->
 
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>Impedir que Adobe Reader cree procesos secundarios
@@ -223,9 +245,9 @@ Esta regla evita los ataques al bloquear Adobe Reader para crear procesos.
 
 A través de la ingeniería social o vulnerabilidades, el malware puede descargar e iniciar cargas y salir de Adobe Reader. Al impedir que Adobe Reader genere procesos secundarios, se impide que el malware que intenta usarlo como vector se propague.
 
-Nombre de Intune: `Process creation from Adobe Reader (beta)`
+Intune nombre:`Process creation from Adobe Reader (beta)`
 
-Nombre de Configuration Manager: Aún no disponible
+Configuration Manager: Aún no disponible
 
 GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
@@ -242,9 +264,9 @@ Esta regla impide que Office aplicaciones creen procesos secundarios. Office apl
 
 Crear procesos secundarios malintencionados es una estrategia de malware común. El malware que abusa Office como vector a menudo ejecuta macros de VBA y aprovecha el código para descargar e intentar ejecutar más cargas. Sin embargo, algunas aplicaciones legítimas de línea de negocio también pueden generar procesos secundarios con fines benignos; como generar un símbolo del sistema o usar PowerShell para configurar la configuración del Registro.
 
-Nombre de Intune: `Office apps launching child processes`
+Intune nombre:`Office apps launching child processes`
 
-Nombre de Configuration Manager: `Block Office application from creating child processes`
+Configuration Manager nombre:`Block Office application from creating child processes`
 
 GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
@@ -267,9 +289,9 @@ LSASS autentica a los usuarios que inician sesión en un Windows equipo. Credent
 > [!IMPORTANT]
 > El estado predeterminado de la regla de reducción de superficie de ataque (ASR) Windows "Bloquear el robo de credenciales del subsistema de autoridad de seguridad local (lsass.exe)" cambiará de No  configurado a Configurado  y el modo predeterminado establecido en **Bloquear**. Todas las demás reglas ASR permanecerán en su estado predeterminado: **No configurado**. La lógica de filtrado adicional ya se ha incorporado en la regla para reducir las notificaciones del usuario final. Los clientes pueden configurar la regla en **los modos Auditoría**, **Advertencia** o Deshabilitado, lo que invalidará el modo predeterminado. La funcionalidad de esta regla es la misma, tanto si la regla está configurada en el modo predeterminado, como si habilita manualmente el modo de bloqueo.  
 
-Nombre de Intune: `Flag credential stealing from the Windows local security authority subsystem`
+Intune nombre:`Flag credential stealing from the Windows local security authority subsystem`
 
-Nombre de Configuration Manager: `Block credential stealing from the Windows local security authority subsystem`
+Configuration Manager nombre:`Block credential stealing from the Windows local security authority subsystem`
 
 GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
@@ -287,7 +309,7 @@ Esta regla bloquea el inicio de los siguientes tipos de archivo desde el correo 
 - Archivos ejecutables (como .exe, .dll o .scr)
 - Archivos de script (como un archivo .ps de PowerShell, Visual Basic .vbs o un archivo .js JavaScript)
 
-Nombre de Intune: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
+Intune nombre:`Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
 Microsoft Endpoint Manager nombre:`Block executable content from email client and webmail`
 
@@ -305,7 +327,7 @@ Dependencias: MDAV
 >
 > - Intune (perfiles de configuración): la ejecución de contenido ejecutable (exe, dll, ps, js, vbs, etc.) se ha eliminado del correo electrónico (cliente de correo web o correo) (sin excepciones).
 > - Endpoint Manager: bloquear la descarga de contenido ejecutable de clientes de correo electrónico y correo web.
-> - Directiva de grupo: bloquear el contenido ejecutable del cliente de correo electrónico y el correo web.
+> - directiva de grupo: bloquear el contenido ejecutable del cliente de correo electrónico y el correo web.
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza
 
@@ -318,9 +340,9 @@ Esta regla bloquea el inicio de archivos ejecutables, como .exe, .dll o .scr. Po
 >
 > Puede especificar archivos o carpetas individuales (con rutas de carpeta o nombres de recursos completos), pero no puede especificar a qué reglas o exclusiones se aplican.
 
-Nombre de Intune: `Executables that don't meet a prevalence, age, or trusted list criteria`
+Intune nombre:`Executables that don't meet a prevalence, age, or trusted list criteria`
 
-Nombre de Configuration Manager: `Block executable files from running unless they meet a prevalence, age, or trusted list criteria`
+Configuration Manager nombre:`Block executable files from running unless they meet a prevalence, age, or trusted list criteria`
 
 GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
@@ -337,9 +359,9 @@ Esta regla detecta propiedades sospechosas dentro de un script ofuscado.
 
 La ofuscación de scripts es una técnica común que usan tanto los autores de malware como las aplicaciones legítimas para ocultar la propiedad intelectual o disminuir los tiempos de carga de scripts. Los autores de malware también usan la ofuscación para hacer que el código malintencionado sea más difícil de leer, lo que evita el escrutinio cercano por parte de los humanos y el software de seguridad.
 
-Nombre de Intune: `Obfuscated js/vbs/ps/macro code`
+Intune nombre:`Obfuscated js/vbs/ps/macro code`
 
-Nombre de Configuration Manager: `Block execution of potentially obfuscated scripts`
+Configuration Manager nombre:`Block execution of potentially obfuscated scripts`
 
 GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
@@ -356,9 +378,9 @@ Esta regla impide que los scripts inicien contenido descargado potencialmente ma
 
 Aunque no son comunes, las aplicaciones de línea de negocio a veces usan scripts para descargar e iniciar instaladores.
 
-Nombre de Intune: `js/vbs executing payload downloaded from Internet (no exceptions)`
+Intune nombre:`js/vbs executing payload downloaded from Internet (no exceptions)`
 
-Nombre de Configuration Manager: `Block JavaScript or VBScript from launching downloaded executable content`
+Configuration Manager nombre:`Block JavaScript or VBScript from launching downloaded executable content`
 
 GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 
@@ -375,7 +397,7 @@ Esta regla impide que Office aplicaciones, incluidas Word, Excel y PowerPoint, c
 
 El malware que abusa Office como vector puede intentar salir de Office y guardar componentes malintencionados en el disco. Estos componentes malintencionados sobrevivirían a un reinicio del equipo y persistiría en el sistema. Por lo tanto, esta regla se defiende contra una técnica de persistencia común.
 
-Nombre de Intune: `Office apps/macros creating executable content`
+Intune nombre:`Office apps/macros creating executable content`
 
 Nombre SCCM: `Block Office applications from creating executable content`
 
@@ -398,9 +420,9 @@ No hay propósitos empresariales legítimos conocidos para usar la inyección de
 
 Esta regla se aplica a Word, Excel y PowerPoint.
 
-Nombre de Intune: `Office apps injecting code into other processes (no exceptions)`
+Intune nombre:`Office apps injecting code into other processes (no exceptions)`
 
-Nombre de Configuration Manager: `Block Office applications from injecting code into other processes`
+Configuration Manager nombre:`Block Office applications from injecting code into other processes`
 
 GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
@@ -420,9 +442,9 @@ Esta regla protege contra los ataques de ingeniería social e impide que el cód
 > [!NOTE]
 > Esta regla bloquea las sugerencias de directiva DLP y las sugerencias de herramientas en Outlook. Esta regla solo se aplica Outlook y Outlook.com.
 
-Nombre de Intune: `Process creation from Office communication products (beta)`
+Intune nombre:`Process creation from Office communication products (beta)`
 
-Nombre de Configuration Manager: No disponible
+Configuration Manager: No disponible
 
 GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
@@ -442,9 +464,9 @@ Esta regla impide que el malware abuse de WMI para lograr persistencia en un dis
 
 Las amenazas sin archivo emplean varias tácticas para permanecer ocultas, evitar ser detectadas en el sistema de archivos y obtener el control de la ejecución periódica. Algunas amenazas pueden abusar del repositorio WMI y el modelo de eventos para permanecer ocultas.
 
-Nombre de Intune: no disponible
+Intune: No disponible
 
-Nombre de Configuration Manager: No disponible
+Configuration Manager: No disponible
 
 GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
@@ -460,11 +482,11 @@ Dependencias: MDAV, RPC
 Esta regla bloquea la ejecución de los procesos [creados a través de PsExec](/sysinternals/downloads/psexec) [y WMI](/windows/win32/wmisdk/about-wmi) . Tanto PsExec como WMI pueden ejecutar código de forma remota, por lo que existe el riesgo de que el malware abuse de esta funcionalidad con fines de comando y control, o de propagar una infección a través de la red de una organización.
 
 > [!WARNING]
-> Solo usa esta regla si estás administrando tus dispositivos con [Intune](/intune) u otra solución MDM. Esta regla es incompatible con la administración a [Microsoft Endpoint Configuration Manager](/configmgr) porque esta regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente.
+> Solo usa esta regla si estás administrando tus dispositivos [con](/intune) Intune u otra solución MDM. Esta regla es incompatible con la administración [a través de Microsoft Endpoint Configuration Manager](/configmgr) porque esta regla bloquea los comandos WMI que el Configuration Manager usa para funcionar correctamente.
 
-Nombre de Intune: `Process creation from PSExec and WMI commands`
+Intune nombre:`Process creation from PSExec and WMI commands`
 
-Nombre de Configuration Manager: no aplicable
+Configuration Manager: No aplicable
 
 GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
@@ -479,9 +501,9 @@ Dependencias: MDAV
 
 Con esta regla, los administradores pueden impedir que los archivos ejecutables sin signo o que no son de confianza se ejecuten desde unidades extraíbles USB, incluidas las tarjetas SD. Los tipos de archivo bloqueados incluyen archivos ejecutables (como .exe, .dll o .scr)
 
-Nombre de Intune: `Untrusted and unsigned processes that run from USB`
+Intune nombre:`Untrusted and unsigned processes that run from USB`
 
-Nombre de Configuration Manager: `Block untrusted and unsigned processes that run from USB`
+Configuration Manager nombre:`Block untrusted and unsigned processes that run from USB`
 
 GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
@@ -505,9 +527,9 @@ Sistemas operativos compatibles:
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
-Nombre de Intune: `Win32 imports from Office macro code`
+Intune nombre:`Win32 imports from Office macro code`
 
-Nombre de Configuration Manager: `Block Win32 API calls from Office macros`
+Configuration Manager nombre:`Block Win32 API calls from Office macros`
 
 GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
@@ -531,9 +553,9 @@ La regla tiende a errar en el lado de la precaución para evitar ransomware.
 > [!NOTE]
 > Debe habilitar [la protección entregada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md) para usar esta regla.
 
-Nombre de Intune: `Advanced ransomware protection`
+Intune nombre:`Advanced ransomware protection`
 
-Nombre de Configuration Manager: `Use advanced protection against ransomware`
+Configuration Manager nombre:`Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 

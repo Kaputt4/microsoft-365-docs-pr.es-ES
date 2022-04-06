@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Una lista de referencia de registros externos del sistema de nombres de dominio que se usan al planear una implementación de Office 365.
-ms.openlocfilehash: 39b6f093c196d8b696a8d36458d2ebc18be2a5f2
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
-ms.translationtype: HT
+ms.openlocfilehash: 3ba8345c17446f7f6d2d6b034415288eb994ee79
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401431"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568442"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Registros externos del Sistema de nombres de dominio para Office 365
 
@@ -48,12 +48,17 @@ Las secciones siguientes están organizadas por servicio en Office 365. Para ver
 ## <a name="external-dns-records-required-for-office-365-core-services"></a>Registros DNS externos necesarios para Office 365 (servicios principales)
 <a name="BKMK_ReqdCore"> </a>
 
-Todos los clientes de Office 365 deben agregar dos registros a su DNS externo. El primer registro CNAME garantiza que Office 365 pueda dirigir las estaciones de trabajo para autenticarlas con la plataforma de identidad adecuada. El segundo registro que se necesita verifica que el usuario es el propietario del nombre de dominio.
+El registro TXT es necesario para demostrar que es el propietario del dominio y es necesario para todos los clientes.
+
+El registro CNAME solo es necesario para los clientes que usan [Office 365 operado por 21Vianet](/microsoft-365/admin/services-in-china/services-in-china). Garantiza que Office 365 pueda dirigir las estaciones de trabajo para autenticarse con la plataforma de identidad adecuada. 
+
+
   
-|**Registro DNS** <br/> |**Finalidad** <br/> |**Valor para usar** <br/> |
-|----------|-----------|------------|
-|**CNAME** <br/> **(Conjunto de aplicaciones)** <br/> |Utilizado por Office 365 para dirigir la autenticación hacia la plataforma de identidad correcta. [Más información](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **Nota:** Este CNAME solo se aplica a Office 365 operado por 21Vianet. Si está presente y su Office 365 no está operado por 21Vianet, los usuarios de su dominio personalizado recibirán un error "*dominio personalizado* no está en nuestro sistema" y no podrán activar su licencia de Office 365. [Más información](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet) |**Alias:** msoid  <br/> **Objetivo:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
-|**TXT** <br/> **(Verificación de dominio)** <br/> |Utilizado por Office 365 para verificar que el usuario es el propietario del dominio. No afecta a nada más.  <br/> |**Host:** @ (o, para algunos proveedores de hospedaje DNS, su nombre de dominio)  <br/> **Valor de TXT:** _Una cadena de texto proporcionada por_ Office 365  <br/> El asistente de configuración de dominio de **Office 365** proporciona los valores que utiliza para crear este registro.  <br/> |
+|**Registro DNS** <br/> |**Finalidad** <br/> |**Valor para usar** <br/> |**Se aplica a**|
+|----------|-----------|------------|------------|
+|**TXT** <br/> **(Verificación de dominio)** <br/> |Utilizado por Office 365 para verificar que el usuario es el propietario del dominio. No afecta a nada más.  <br/> |**Host:** @ (o, para algunos proveedores de hospedaje DNS, su nombre de dominio)  <br/> **Valor de TXT:** _Una cadena de texto proporcionada por_ Office 365  <br/> El asistente de configuración de dominio de **Office 365** proporciona los valores que utiliza para crear este registro.  <br/> |Todos los clientes|
+|**CNAME** <br/> **(Conjunto de aplicaciones)** <br/> |Utilizado por Office 365 para dirigir la autenticación hacia la plataforma de identidad correcta. [Más información](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **Nota**:Este CNAME solo se aplica a Office 365 operado por 21Vianet. Si está presente y su Office 365 no está operado por 21Vianet, los usuarios de su dominio personalizado recibirán un error "*dominio personalizado* no está en nuestro sistema" y no podrán activar su licencia de Office 365. [Más información](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet) |**Alias:** msoid  <br/> **Objetivo:** clientconfig.partner.microsoftonline-p.net.cn  <br/> | Solo clientes de 21Vianet|
+
 
 
 ## <a name="external-dns-records-required-for-email-in-office-365-exchange-online"></a>Registros DNS externos necesarios para el correo electrónico en Office 365 (Exchange Online)

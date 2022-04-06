@@ -15,14 +15,16 @@ audience: ITPro
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.collection:
+- m365initiative-m365-defender
+- M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 78fdd5c6c02990943874807c285f8e5eb60ad6ad
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 9c489d28467582e0f95f3fde7440ff43022c44e1
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807589"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682050"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Comprender y usar las capacidades de reducción de superficie de ataque
 
@@ -63,9 +65,9 @@ Para configurar la reducción de superficie de ataque en el entorno, siga estos 
 
 7. Configurar el firewall de red.
 
-   1. Obtenga una introducción a [Windows Defender Firewall con seguridad avanzada](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
-   2. Use la [Windows Defender de diseño de firewall para](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) decidir cómo desea diseñar las directivas de firewall.
-   3. Use la [Windows Defender de implementación de firewall para](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) configurar el firewall de su organización con seguridad avanzada.
+   1. Obtenga información general sobre Windows Defender [firewall con seguridad avanzada](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+   2. Use la [Windows Defender de diseño del firewall para](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) decidir cómo desea diseñar las directivas de firewall.
+   3. Use la [Windows Defender de implementación de Firewall para](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) configurar el firewall de su organización con seguridad avanzada.
 
 > [!TIP]
 > En la mayoría de los casos, al configurar las capacidades de reducción de superficie de ataque, puedes elegir entre varios métodos:
@@ -89,7 +91,7 @@ Puedes habilitar el modo de auditoría al probar cómo funcionarán las caracter
 
 Las características no bloquearán ni impedirán que se modifiquen aplicaciones, scripts o archivos. Sin embargo, el Windows de eventos registrará eventos como si las características estuvieran totalmente habilitadas. Con el modo de auditoría, puedes revisar el registro de eventos para ver qué efecto habría tenido la característica si se hubiera habilitado.
 
-Para buscar las entradas auditadas, vaya a **Aplicaciones y servicios** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operativo**.
+Para buscar las entradas auditadas, vaya a **Aplicaciones y servicios** \> **microsoft** \> **Windows** \> **Windows Defender** \> **operativo**.
 
 Usa Defender para endpoint para obtener más detalles para cada evento. Estos detalles son especialmente útiles para investigar reglas de reducción de superficie de ataque. El uso de la consola defender para endpoint te permite investigar problemas como parte de la escala de tiempo de alerta y los [escenarios de investigación](investigate-alerts.md).
 
@@ -99,7 +101,7 @@ Puede habilitar el modo de auditoría mediante la directiva de grupo, PowerShell
 > También puedes visitar el sitio web Windows Defender Testground en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para confirmar que las características funcionan y ver cómo funcionan.
 
 > [!NOTE]
-> El sitio de demostración defender para el punto de conexión en demo.wd.microsoft.com está en desuso y se quitará en el futuro.
+> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está obsoleto y se eliminará en el futuro.
 
 | Opciones de auditoría | Cómo habilitar el modo de auditoría | Cómo ver eventos |
 |---|---|---|
@@ -127,9 +129,9 @@ También puede navegar manualmente hasta el área de eventos que corresponde a l
 #### <a name="import-an-existing-xml-custom-view"></a>Importar una vista personalizada XML existente
 
 1. Cree un archivo .txt y copie el XML de la vista personalizada que desea usar en el .txt archivo. Haga esto para cada una de las vistas personalizadas que desee usar. Cambie el nombre de los archivos de la siguiente manera (asegúrese de cambiar el tipo de .txt a .xml):
-    - Vista personalizada de eventos de acceso a carpetas *controladas:cfa-events.xml*
+    - Vista personalizada de eventos de acceso controlado a *carpetas:cfa-events.xml*
     - Vista personalizada de eventos de protección contra *vulnerabilidades:ep-events.xml*
-    - Vista personalizada de eventos de reducción de superficie *de ataque:asr-events.xml*
+    - Vista personalizada de eventos de reducción de *superficie de ataque:asr-events.xml*
     - Vista personalizada de eventos de red/ *protección:np-events.xml*
 
 2. Escriba **visor de** eventos en el menú Inicio y abra **el Visor de eventos**.
@@ -147,7 +149,7 @@ También puede navegar manualmente hasta el área de eventos que corresponde a l
 
 #### <a name="copy-the-xml-directly"></a>Copiar el XML directamente
 
-1. Escriba **el visor** de eventos en el menú Inicio y abra el visor Windows **eventos**.
+1. Escriba **el visor de** eventos en el menú Inicio y abra el visor Windows **eventos**.
 
 2. En el panel izquierdo, en **Acciones**, seleccione **Crear vista personalizada...**
 
@@ -215,7 +217,7 @@ También puede navegar manualmente hasta el área de eventos que corresponde a l
 
 ### <a name="list-of-attack-surface-reduction-events"></a>Lista de eventos de reducción de superficie de ataque
 
-Todos los eventos de reducción de superficie de ataque se encuentran en **Registros de aplicaciones y servicios > Microsoft > Windows** y, a continuación, la carpeta o el proveedor, como se muestra en la tabla siguiente.
+Todos los eventos de reducción de superficie de ataque se encuentran en **Registros de aplicaciones y servicios > Microsoft > Windows** y, a continuación, la carpeta o el proveedor como se muestra en la tabla siguiente.
 
 Puede tener acceso a estos eventos en Windows visor de eventos:
 
@@ -270,7 +272,7 @@ Puede tener acceso a estos eventos en Windows visor de eventos:
 |Reducción de la superficie expuesta a ataques|Windows Defender (operativo)|1121|Evento cuando la regla se dispara en modo bloque|
 
 >[!NOTE]
-> Desde el punto de vista del usuario, las notificaciones del modo de advertencia ASR se realizan como una notificación Windows notificación del sistema para las reglas de reducción de superficie de ataque.
+> Desde la perspectiva del usuario, las notificaciones del modo de advertencia de ASR se realizan como una notificación del sistema Windows para las reglas de reducción de superficie de ataque.
 >
 > En ASR, Network Protection solo proporciona los modos Audit y Block.
 
@@ -280,7 +282,7 @@ Como se mencionó en el vídeo, Defender for Endpoint incluye varias funcionalid
 
 | Artículo | Descripción |
 |:---|:---|
-| [Aislamiento basado en hardware](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Proteger y mantener la integridad de un sistema cuando se inicia y mientras se ejecuta. Validar la integridad del sistema mediante la atestación local y remota. Use el aislamiento de contenedores Microsoft Edge para ayudar a proteger contra sitios web malintencionados. |
+| [Aislamiento basado en hardware](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Proteger y mantener la integridad de un sistema cuando se inicia y mientras se ejecuta. Validar la integridad del sistema mediante la atestación local y remota. Use el aislamiento de contenedores Microsoft Edge para protegerse de sitios web malintencionados. |
 | [Control de la aplicación](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Use el control de aplicaciones para que las aplicaciones deben ganar confianza para poder ejecutarse. |
 | [Acceso controlado a carpetas](controlled-folders.md) | Ayudar a evitar que las aplicaciones malintencionadas o sospechosas (incluido el malware ransomware cifrado de archivos) realicen cambios en los archivos de las carpetas clave del sistema (requiere Antivirus de Microsoft Defender) |
 | [Protección de red](network-protection.md) | Amplíe la protección al tráfico de red y la conectividad en los dispositivos de su organización. (Requiere Antivirus de Microsoft Defender) |

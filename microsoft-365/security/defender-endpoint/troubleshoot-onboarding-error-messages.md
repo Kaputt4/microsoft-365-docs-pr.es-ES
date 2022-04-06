@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas de incorporación y mensajes de error
 description: Solucionar problemas de incorporación y mensaje de error al completar la configuración de Microsoft Defender para endpoint.
-keywords: solución de problemas, solución de problemas, Azure Active Directory, incorporación, mensaje de error, mensajes de error, microsoft defender para el punto de conexión
+keywords: solución de problemas, solución de problemas, Azure Active Directory, incorporación, mensaje de error, mensajes de error, Microsoft Defender para punto de conexión
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: cbf2049841f2987eb71e9c716de133872c1e6a81
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: cfbd91743ed2e61809d9e2b6f0243b5c327bdae4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156549"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467563"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>Solucionar problemas de acceso a la suscripción y al portal
 
@@ -46,37 +46,37 @@ Posibles razones:
 - Las licencias de Windows E5 y Office E5 son licencias separadas.
 - La licencia se compró pero no se aprovisionó en esta Azure AD instancia.
   - Podría ser un problema de aprovisionamiento de licencias.
-  - Podría ser que aprovisionó la licencia de forma involuntaria a un Microsoft Azure AD diferente al que se usa para la autenticación en el servicio.
+  - Podría ser que aprovisionó accidentalmente la licencia a una configuración Microsoft Azure AD la que se usa para la autenticación en el servicio.
 
-En ambos casos, debes ponerse en contacto con el soporte técnico de Microsoft en [General Microsoft Defender para](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) soporte técnico de endpoints o compatibilidad con licencias por [volumen.](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)
+En ambos casos, debes ponerse en contacto con el soporte técnico de Microsoft en [General Microsoft Defender para](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) soporte técnico de puntos de conexión o compatibilidad [con licencias por volumen](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx).
 
-![Imagen de no se encontró ninguna suscripción.](images/atp-no-subscriptions-found.png)
+:::image type="content" source="images/atp-no-subscriptions-found.png" alt-text="La página Sin suscripciones encontradas" lightbox="images/atp-no-subscriptions-found.png":::
 
 ## <a name="your-subscription-has-expired"></a>Su suscripción ha expirado
 
-Si al acceder a Microsoft 365 Defender recibe un mensaje Su suscripción ha **expirado,** la suscripción de servicio en línea ha expirado. La suscripción de Microsoft Defender para endpoint, como cualquier otra suscripción de servicio en línea, tiene una fecha de expiración.
+Si al acceder a Microsoft 365 Defender recibe un **mensaje Su suscripción ha expirado**, la suscripción de servicio en línea ha expirado. La suscripción de Microsoft Defender para endpoint, como cualquier otra suscripción de servicio en línea, tiene una fecha de expiración.
 
-Puede elegir renovar o ampliar la licencia en cualquier momento. Al acceder al portal después  de la fecha de expiración, se mostrará una opción para descargar el paquete de descarga del dispositivo después de la fecha de expiración, en caso de que decidas no renovar la licencia.
+Puede elegir renovar o ampliar la licencia en cualquier momento. Al acceder al portal después de la fecha de  expiración, se mostrará una opción para descargar el paquete de descarga del dispositivo después de la fecha de expiración, en caso de que decidas no renovar la licencia.
 
 > [!NOTE]
 > Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 30 días después de la fecha en que se descargó. Se rechazarán los paquetes de offboarding expirados enviados a un dispositivo. Al descargar un paquete de offboarding, se le notificará la fecha de expiración de los paquetes y también se incluirá en el nombre del paquete.
 
-![Imagen de la suscripción expirada.](images/atp-subscription-expired.png)
+:::image type="content" source="images/atp-subscription-expired.png" alt-text="Mensaje de notificación expirado de la suscripción" lightbox="images/atp-subscription-expired.png":::
 
 ## <a name="you-are-not-authorized-to-access-the-portal"></a>No está autorizado a acceder al portal
 
-Si recibe un You **are not authorized to access the portal**, tenga en cuenta que Microsoft Defender for Endpoint es un producto de supervisión de seguridad, investigación de incidentes y respuesta y, como tal, el acceso a él está restringido y controlado por el usuario.
+Si recibe un you **are not authorized to access the portal**, be aware that Microsoft Defender for Endpoint is a security monitoring, incident investigation and response product, and as such, access to it is restricted and controlled by the user.
 Para obtener más información, vea [**Asignar acceso de usuario al portal**](/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection).
 
-![Imagen de no autorizado para acceder al portal.](images/atp-not-authorized-to-access-portal.png)
+:::image type="content" source="images/atp-not-authorized-to-access-portal.png" alt-text="El mensaje de notificación de acceso no permitido" lightbox="images/atp-not-authorized-to-access-portal.png":::
 
 ## <a name="data-currently-isnt-available-on-some-sections-of-the-portal"></a>Actualmente, los datos no están disponibles en algunas secciones del portal
 
 Si el panel del portal y otras secciones muestran un mensaje de error como "Los datos actualmente no están disponibles":
 
-![La imagen de los datos actualmente no está disponible.](images/atp-data-not-available.png)
+:::image type="content" source="images/atp-data-not-available.png" alt-text="El mensaje de notificación de no disponibilidad de datos" lightbox="images/atp-data-not-available.png":::
 
-Tendrás que permitir los subdominios y todos los subdominios que hay en `security.windows.com` él en el explorador web. Por ejemplo, `*.security.windows.com`.
+Tendrás que permitir los `security.windows.com` subdominios y todos los subdominios que hay en él en el explorador web. Por ejemplo, `*.security.windows.com`.
 
 ## <a name="portal-communication-issues"></a>Problemas de comunicación del portal
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 572794880015f53f6db0a3d449dd3d19987cae21
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 6b29bb45820c0fc74443f14fd2c6866bc026e969
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214038"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467299"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>Activar la experiencia de vista previa en Microsoft Defender para endpoint
 
@@ -37,12 +37,12 @@ ms.locfileid: "62214038"
 
 Active la configuración de la experiencia de la versión preliminar para estar entre los primeros en probar las próximas características.
 
-1. En el panel de navegación, **seleccione Configuración** Características avanzadas \> **de** \> **endpoints**.
+1. En el panel de navegación, **seleccione Configuración** \> **características avanzadas de** \> **extremos**.
 
-    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="configuración y vista previa de la imagen de la experiencia.":::
+    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="Configuración y experiencia de vista previa" lightbox="../../media/atp-preview-features-new.png":::
 
 
-2. Alterna la configuración entre **Activar** y **Desactivar** y selecciona **Guardar preferencias**.
+2. Alterna la configuración entre **Activar** y **Desactivar y** selecciona **Guardar preferencias**.
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Actualizar la configuración general en Microsoft Defender para endpoint](data-retention-settings.md)

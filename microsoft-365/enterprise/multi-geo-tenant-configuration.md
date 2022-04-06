@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: En este artículo, aprenderá a agregar ubicaciones de satélite y a configurar su espacio empresarial de Microsoft 365 Multi-Geo
-ms.openlocfilehash: 9842ff2295a64f544940f579d732c688735ae341
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2bd0db24b364c642255ef2e902abad0495d24337
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312087"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568886"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Configuración de inquilino de Microsoft 365 Multi-Geo
 
@@ -54,13 +54,13 @@ Para agregar una ubicación de satélite
 
 1. Seleccione **Cerrar**.
 
-El aprovisionamiento puede tardar desde unas horas hasta 72 horas, dependiendo del tamaño del espacio empresarial. Una vez completado el aprovisionamiento de una ubicación por satélite, recibirá un correo electrónico de confirmación. Cuando la nueva ubicación geográfica aparezca en azul en el mapa de la pestaña **Ubicaciones geográficas** del Centro de administración de OneDrive, podrá proceder a establecer la ubicación de datos preferida de los usuarios a esa ubicación geográfica. 
+El aprovisionamiento puede tardar desde unas horas hasta 72 horas, dependiendo del tamaño del espacio empresarial. Una vez completado el aprovisionamiento de una ubicación por satélite, recibirá un correo electrónico de confirmación. Cuando la nueva ubicación geográfica aparezca en azul en el mapa de la pestaña **Ubicaciones geográficas** del Centro de administración de OneDrive, podrá proceder a establecer la ubicación de datos preferida de los usuarios a esa ubicación geográfica.
 
 > [!IMPORTANT]
 > La nueva ubicación por satélite se configurará con la configuración predeterminada. Esto le permitirá configurar esa ubicación por satélite según sus necesidades de cumplimiento local.
 
 ## <a name="setting-users-preferred-data-location"></a>Establecimiento de la ubicación de datos preferida de los usuarios
-<span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span> 
+<span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span>
 
 Cuando haya habilitado las ubicaciones de satélite necesarias, puede actualizar su cuenta de usuario para que use la ubicación de datos adecuada. Se recomienda establecer una ubicación de datos preferida para cada uno de los usuarios, aunque el usuario permanezca en la ubicación central.
 
@@ -72,7 +72,7 @@ Cuando haya habilitado las ubicaciones de satélite necesarias, puede actualizar
 
 En Azure Active Directory (Azure AD) hay dos tipos de objetos de usuario: usuarios solo de nube y usuarios sincronizados. Siga las instrucciones adecuadas para el tipo de usuario.
 
-### <a name="synchronize-users-preferred-data-location-using-azure-ad-connect"></a>Sincronizar la ubicación de datos preferida del usuario con Azure AD Connect 
+### <a name="synchronize-users-preferred-data-location-using-azure-ad-connect"></a>Sincronizar la ubicación de datos preferida del usuario con Azure AD Connect
 
 Si los usuarios de su compañía se sincronizan con Azure AD desde un sistema local de Active Directory, sus PreferredDataLocation deben rellenarse en AD y sincronizarse en Azure AD.
 
@@ -83,21 +83,25 @@ Se recomienda incluir el establecimiento de la ubicación de datos preferida del
 > [!IMPORTANT]
 > Para los nuevos usuarios sin OneDrive aprovisionado, licencia la cuenta y espera al menos 48 horas después de que la PDL de un usuario se sincronice con Azure AD para que los cambios se propaguen antes de que el usuario inicie sesión en OneDrive para la Empresa. (El establecimiento de la PDL antes de que el usuario inicie sesión para aprovisionar OneDrive para la Empresa garantiza que la nueva instancia de OneDrive del usuario se aprovisionará en la ubicación correcta).
 
-### <a name="setting-preferred-data-location-for-cloud-only-users"></a>Establecimiento de la ubicación de datos preferida de usuarios solo de nube 
+### <a name="setting-preferred-data-location-for-cloud-only-users"></a>Establecimiento de la ubicación de datos preferida de usuarios solo de nube
 
 Si los usuarios de la compañía no se sincronizan con Azure AD en un sistema de Active Directory local, lo que indica que se crearon en Microsoft 365 o Azure AD, la PDL debe establecerse con el módulo de Microsoft Azure Active Directory para Windows PowerShell.
 
 Los procedimientos de esta sección requieren el [Módulo de Microsoft Azure Active Directory para Windows PowerShell](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0). Si ya tiene instalado este módulo, asegúrese de actualizarlo a la versión más reciente.
 
-1.  [Conéctese e inicie sesión](/powershell/connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) con las credenciales de administrador global para su espacio empresarial.
+1. [Conéctese e inicie sesión](/powershell/connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) con las credenciales de administrador global para su espacio empresarial.
 
-2.  Use el cmdlet [Set-MsolUser](/powershell/msonline/v1/set-msoluser) para establecer la ubicación de datos preferida de cada uno de los usuarios. Por ejemplo:
+2. Use el cmdlet [Set-MsolUser](/powershell/msonline/v1/set-msoluser) para establecer la ubicación de datos preferida de cada uno de los usuarios. Por ejemplo:
 
-    `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
+   ```powershell
+   Set-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR
+   ```
 
     Puede comprobar que la ubicación de datos preferida se actualizó correctamente mediante el cmdlet Get-MsolUser. Por ejemplo:
 
-    `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
+   ```powershell
+   (Get-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation
+   ```
 
 ![Captura de pantalla de la ventana de PowerShell que muestra set-msoluser.](../media/multi-geo-tenant-configuration-image3.png)
 
@@ -122,11 +126,8 @@ El espacio empresarial multigeográfico tendrá funcionalidades de búsqueda agr
 De forma predeterminada, las búsquedas en estos puntos de entrada devolverán resultados agregados, aunque cada índice de búsqueda se encuentre en la ubicación geográfica correspondiente:
 
 - OneDrive para la Empresa
-
 - Delve
-
 - Página principal de SharePoint
-
 - Centro de búsqueda
 
 Además, pueden configurarse funcionalidades de búsqueda multigeográficas para las aplicaciones de búsqueda personalizada que usan la API de SharePoint Search.
@@ -137,22 +138,22 @@ Revise [Configurar la búsqueda en OneDrive para la Empresa multigeográfico](co
 
 A continuación se muestran algunos casos de uso básicos que tal vez quiera incluir en el plan de validación antes implementar Microsoft 365 Multi-Geo de manera general en la compañía. Después de completar estas pruebas y los casos de uso adicionales que sean relevantes para su compañía, puede continuar y agregar los usuarios al grupo piloto inicial.
 
-**OneDrive para la Empresa**
+**OneDrive para la Empresa**:
 
 Seleccione OneDrive desde el iniciador de aplicaciones de Microsoft 365 y confirme que le dirige automáticamente a la ubicación geográfica apropiada del usuario, en función de la PDL del usuario. OneDrive para la Empresa debería ahora comenzar el aprovisionamiento en esa ubicación. Una vez aprovisionado, pruebe a cargar y descargar algunos documentos.
 
-**Aplicación móvil de OneDrive**
+**OneDrive móvil**:
 
 Inicie sesión en la aplicación móvil de OneDrive con sus credenciales de cuenta de evaluación. Confirme que puede ver sus archivos de OneDrive para la Empresa y puede interactuar con ellos desde su dispositivo móvil.
 
-**Cliente de sincronización de OneDrive**
+**Sincronización de OneDrive cliente**:
 
 Confirme que el cliente de sincronización de OneDrive detecta automáticamente la ubicación geográfica de OneDrive para la Empresa al iniciar sesión. Si quiere descargar el cliente de sincronización, puede hacer clic en **Sincronización** en la biblioteca de OneDrive.
 
-**Aplicaciones de Office**
+**Office aplicaciones:**
 
-Para confirmar que tiene acceso a OneDrive para la Empresa, inicie sesión desde una aplicación de Office como Word. Abra la aplicación de Office y seleccione "OneDrive – <TenantName>". Office detectará la ubicación de OneDrive y mostrará los archivos que se pueden abrir.
+Para confirmar que tiene acceso a OneDrive para la Empresa, inicie sesión desde una aplicación de Office como Word. Abra la aplicación de Office y seleccione "OneDrive – \<TenantName\>". Office detectará la ubicación de OneDrive y mostrará los archivos que se pueden abrir.
 
-**Uso compartido**
+**Uso compartido**:
 
 Pruebe el uso compartido de archivos de OneDrive. Confirme que el selector de personas muestra todos los usuarios de SharePoint Online independientemente de su ubicación geográfica.

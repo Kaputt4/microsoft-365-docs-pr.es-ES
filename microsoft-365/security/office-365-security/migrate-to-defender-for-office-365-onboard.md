@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: Complete los pasos para migrar desde un dispositivo o servicio de protección de terceros a Microsoft Defender para Office 365 protección.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3798bdb28bb44b5148574b4c09a372ff564e47e5
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 9160a6fc79ba94e4cb86fb0f96f46e565c0f613c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321440"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467519"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Migrar a Microsoft Defender para Office 365- Fase 3: Incorporación
 
@@ -33,7 +33,7 @@ ms.locfileid: "62321440"
 
 <br>
 
-|[![Fase 1: Preparar.](../../media/phase-diagrams/prepare.png)](migrate-to-defender-for-office-365-prepare.md) <br> [Fase 1: Preparación](migrate-to-defender-for-office-365-prepare.md)|[![Fase 2: Configurar.](../../media/phase-diagrams/setup.png)](migrate-to-defender-for-office-365-setup.md) <br> [Fase 2: Configuración](migrate-to-defender-for-office-365-setup.md)|![Fase 3: Incorporación.](../../media/phase-diagrams/onboard.png) <br> Fase 3: Incorporación|
+|[![Fase 1: Preparar.](../../media/phase-diagrams/prepare.png#lightbox)](migrate-to-defender-for-office-365-prepare.md) <br> [Fase 1: Preparación](migrate-to-defender-for-office-365-prepare.md)|[![Fase 2: Configurar.](../../media/phase-diagrams/setup.png#lightbox)](migrate-to-defender-for-office-365-setup.md) <br> [Fase 2: Configuración](migrate-to-defender-for-office-365-setup.md)|![Fase 3: Incorporación.](../../media/phase-diagrams/onboard.png) <br> Fase 3: Incorporación|
 |---|---|---|
 |||*¡Estás aquí!*|
 
@@ -78,16 +78,16 @@ Si su organización no tiene un equipo de respuesta de seguridad o flujos de pro
 
 Los permisos de Defender para Office 365 se basan en el control de acceso basado en roles (RBAC) y se explican en Permisos en el [portal de Microsoft 365 Defender funciones](permissions-microsoft-365-security-center.md). Estos son los puntos importantes a tener en cuenta:
 
-- Azure AD roles dan permisos a **todas las** cargas de trabajo de Microsoft 365. Por ejemplo, si agrega un usuario al administrador de seguridad en Azure Portal, tienen permisos de administrador de seguridad en todas partes.
-- Los & de colaboración de correo electrónico en el portal de Microsoft 365 Defender conceden permisos al portal de Microsoft 365 Defender, al Centro de cumplimiento de Microsoft 365 y al centro de cumplimiento de & seguridad anterior. Por ejemplo, si agrega un usuario al administrador de seguridad en el portal de Microsoft 365 Defender, solo tendrán acceso de administrador de seguridad  en el Portal de Microsoft 365 Defender, el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad & cumplimiento.
-- Muchas características del portal de Microsoft 365 Defender se basan en cmdlets de PowerShell de Exchange Online y, por lo tanto, requieren la pertenencia a grupos de roles en los roles correspondientes (técnicamente, grupos de roles) en Exchange Online (en particular, para obtener acceso Exchange Online  Cmdlets de PowerShell).
-- Hay roles de colaboración de correo electrónico & en el portal de Microsoft 365 Defender que no tienen equivalente Azure AD roles y son importantes para las operaciones de seguridad (por ejemplo, el rol Vista previa y el rol Buscar y purgar).
+- Azure AD roles conceden permisos a **todas las** cargas de trabajo de Microsoft 365. Por ejemplo, si agrega un usuario al administrador de seguridad en Azure Portal, tienen permisos de administrador de seguridad en todas partes.
+- Los & de colaboración en el portal de Microsoft 365 Defender conceden permisos al Portal de Microsoft 365 Defender, al Centro de cumplimiento de Microsoft 365 y al Centro de cumplimiento de & seguridad anterior. Por ejemplo, si agrega un usuario al administrador de seguridad en el portal de Microsoft 365 Defender, solo tienen acceso de administrador de seguridad  en el Portal de Microsoft 365 Defender, el Centro de cumplimiento de Microsoft 365 y el Centro de cumplimiento de & seguridad.
+- Muchas características del portal de Microsoft 365 Defender se basan en cmdlets de PowerShell de Exchange Online y, por lo tanto, requieren pertenencia a grupos de roles en los roles correspondientes (técnicamente, grupos de roles) en Exchange Online (en particular, para obtener acceso Exchange Online  Cmdlets de PowerShell).
+- Hay roles de colaboración de correo electrónico & en el portal de Microsoft 365 Defender que no tienen equivalentes Azure AD roles y son importantes para las operaciones de seguridad (por ejemplo, el rol Vista previa y el rol Buscar y purgar).
 
 Normalmente, solo un subconjunto de personal de seguridad necesitará derechos adicionales para descargar mensajes directamente desde los buzones de usuario. Esto requiere un permiso adicional que el Lector de seguridad no tiene de forma predeterminada.
 
 ## <a name="step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service"></a>Paso 2: (opcional) Eximir a los usuarios piloto del filtrado por el servicio de protección existente
 
-Aunque este paso no es necesario, debe considerar la posibilidad de configurar los usuarios piloto para omitir el filtrado por parte del servicio de protección existente. Esta acción permite a Defender **Office 365 controlar todas** las tareas de filtrado y protección para los usuarios piloto. Si no exime a los usuarios piloto del servicio de protección existente, Defender for Office 365 funciona de forma eficaz solo en las pérdidas del otro servicio (filtrando mensajes que ya se han filtrado).
+Aunque este paso no es necesario, debe considerar la posibilidad de configurar los usuarios piloto para omitir el filtrado por parte del servicio de protección existente. Esta acción permite a Defender para **Office 365 controlar todas** las tareas de filtrado y protección para los usuarios piloto. Si no exime a los usuarios piloto del servicio de protección existente, Defender for Office 365 funciona de forma eficaz solo en las pérdidas del otro servicio (filtrando mensajes que ya se han filtrado).
 
 > [!NOTE]
 > Este paso es explícitamente necesario si el servicio de protección actual proporciona ajuste de vínculos, pero desea realizar pruebas piloto Caja fuerte vínculos. No se admite el ajuste doble de vínculos.
@@ -153,7 +153,7 @@ Observe los resultados y realice los ajustes necesarios.
 
 ## <a name="step-5-use-data-from-user-submissions-to-measure-and-adjust"></a>Paso 5: Usar datos de envíos de usuarios para medir y ajustar
 
-A medida que los usuarios piloto informen de falsos positivos y falsos negativos, los mensajes aparecerán en la página [Envíos del portal de Microsoft 365 Defender web](admin-submission.md). Puede notificar los mensajes mal identificados a Microsoft para su análisis y usar la información para ajustar la configuración y las excepciones en las policías piloto según sea necesario.
+A medida que los usuarios piloto informen de falsos [positivos y falsos negativos](admin-submission.md), los mensajes aparecerán en la página Envíos del portal Microsoft 365 Defender web. Puede notificar los mensajes mal identificados a Microsoft para su análisis y usar la información para ajustar la configuración y las excepciones en las policías piloto según sea necesario.
 
 Use las siguientes características para supervisar e iterar la configuración de protección en Defender para Office 365:
 
@@ -177,9 +177,9 @@ A medida que encuentre y solucione problemas, puede agregar más usuarios a los 
 
   Notificar cualquier falso positivo a Microsoft lo antes posible a través de envíos de administrador, use la característica [Permitir espacio empresarial/](tenant-allow-block-list.md) Lista de bloqueo para configurar invalidaciones seguras para esos falsos positivos.
 
-- También es buena idea examinar invalidaciones innecesarias. En otras palabras, mira los veredictos que Microsoft 365 hubiera proporcionado en los mensajes. Si Microsoft365 representó el veredicto correcto, la necesidad de invalidación se reduce o elimina en gran parte.
+- También es buena idea examinar invalidaciones innecesarias. En otras palabras, mira los veredictos que Microsoft 365 habría proporcionado en los mensajes. Si Microsoft365 representó el veredicto correcto, la necesidad de invalidación se reduce o elimina en gran parte.
 
-## <a name="step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule"></a>Paso 7: Ampliar la Microsoft 365 a todos los usuarios y desactivar la regla de flujo de correo SCL=-1
+## <a name="step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule"></a>Paso 7: Extender la Microsoft 365 a todos los usuarios y desactivar la regla de flujo de correo SCL=-1
 
 Siga los pasos de esta sección cuando esté listo para cambiar los registros MX para que apunten a Microsoft 365.
 
@@ -192,7 +192,7 @@ Siga los pasos de esta sección cuando esté listo para cambiar los registros MX
 
 2. Desactive la regla de flujo de correo SCL=-1 (puede desactivarla sin eliminarla).
 
-3. Compruebe que los cambios anteriores han tenido efecto y que Defender para Office 365 está habilitado correctamente para todos los usuarios. En este momento, todas las características de protección de Defender para Office 365 ahora pueden actuar en correo para todos los destinatarios, pero ese correo ya ha sido examinado por el servicio de protección existente.
+3. Compruebe que los cambios anteriores han tenido efecto y que Defender para Office 365 está habilitado correctamente para todos los usuarios. En este momento, todas las características de protección de Defender para Office 365 ahora pueden actuar en el correo para todos los destinatarios, pero ese correo ya ha sido examinado por el servicio de protección existente.
 
 Puede pausar en esta fase para obtener más optimización y registro de datos a gran escala.
 
@@ -208,9 +208,9 @@ Puede pausar en esta fase para obtener más optimización y registro de datos a 
 >   
 > - Varios registros MX para un único dominio funcionarán técnicamente, lo que le permitirá tener enrutamiento dividido, siempre que haya seguido todas las instrucciones de este artículo. En concreto, debe asegurarse de que las directivas se aplican a todos los usuarios, que la regla de flujo de correo SCL=-1 se aplica solo al correo que pasa a través del servicio de protección existente, tal como se describe en Setup [Step 3: Maintain or create the SCL=-1 mail flow rule](migrate-to-defender-for-office-365-setup.md#step-3-maintain-or-create-the-scl-1-mail-flow-rule). Sin embargo, esta configuración introduce un comportamiento que hace que la solución de problemas sea mucho más difícil y, por lo tanto, no lo recomendamos normalmente, especialmente durante períodos prolongados de tiempo.
 >
-> - Antes de cambiar los registros MX, compruebe que la siguiente configuración no está habilitada en el conector entrante desde el servicio de protección a Microsoft 365. Normalmente, el conector tendrá una o varias de las siguientes opciones configuradas:
+> - Antes de cambiar los registros MX, compruebe que la siguiente configuración no está habilitada en el conector de entrada desde el servicio de protección a Microsoft 365. Normalmente, el conector tendrá una o varias de las siguientes opciones configuradas:
 >
->   - **y requerir que el nombre de sujeto en** el certificado que el asociado usa para autenticar con Office 365 coincide con este nombre de dominio (*RestrictDomainsToCertificate*)
+>   - **y requerir que el nombre de sujeto en el** certificado que el asociado usa para autenticar con Office 365 coincide con este nombre de dominio (*RestrictDomainsToCertificate*)
 >   - **Rechazar mensajes de correo electrónico si no se envían desde este intervalo** de direcciones IP (*RestrictDomainsToIPAddresses*)
 >
 >   Si el tipo de conector es **Partner** y cualquiera de estas opciones de configuración está activada, se producirá un error en toda la entrega de correo a los dominios después de cambiar los registros MX. Debe deshabilitar esta configuración antes de continuar. Si el conector es un conector local que se usa para híbrido, no es necesario modificar el conector local. Sin embargo, aún puede comprobar la presencia de un **conector de** partner.
@@ -223,10 +223,10 @@ No dude en pausar y evaluar aquí en cualquier momento. Pero, recuerde: una vez 
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-¡Enhorabuena! Has completado la migración [a Microsoft Defender para Office 365](migrate-to-defender-for-office-365.md#the-migration-process)! Dado que ha seguido los pasos de esta guía de migración, los primeros días en los que el correo se entrega directamente en Microsoft 365 debe ser mucho más suave.
+¡Enhorabuena! Has completado la migración [a Microsoft Defender para Office 365](migrate-to-defender-for-office-365.md#the-migration-process)! Dado que ha seguido los pasos de esta guía de migración, los primeros días en los que el correo se entrega directamente en Microsoft 365 deben ser mucho más suaves.
 
 Ahora comienza el funcionamiento normal y el mantenimiento de Defender para Office 365. Supervise y observe problemas similares a los que experimentó durante el piloto, pero a mayor escala. La [información de inteligencia](learn-about-spoof-intelligence.md) suplantación y [](impersonation-insight.md) la información de suplantación serán más útiles, pero considere la posibilidad de convertir las siguientes actividades en una repetición regular:
 
-- Revisar los envíos de usuarios, especialmente [los mensajes de suplantación de identidad notificados por el usuario](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)
+- Revisar los envíos de usuarios, especialmente [los mensajes de suplantación de identidad notificados por el usuario](automated-investigation-response-office.md)
 - Revise los reemplazos en el informe [de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).
 - Usa [consultas de](/microsoft-365/security/defender/advanced-hunting-example) búsqueda avanzada para buscar oportunidades de ajuste y mensajes arriesgados.

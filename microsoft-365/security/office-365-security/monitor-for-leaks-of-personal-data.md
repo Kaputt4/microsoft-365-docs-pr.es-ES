@@ -19,12 +19,12 @@ search.appverid:
 description: Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 778bfbd1f9e2353a7cf9c7099dcfe4740571e676
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ba164fde38be1e8eed53b71ab568124140deaac5
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206522"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682711"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Supervisar pérdidas de datos personales
 
@@ -41,7 +41,7 @@ En la ilustración:
 
 - Después, use directivas de alerta y el registro de auditoría para supervisar la actividad de los servicios. Configure la supervisión continua o busque el registro de auditoría para investigar un incidente. El registro de auditoría funciona en todos los servicios: Sway, Power BI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, actividad administrativa, OneDrive para la Empresa, SharePoint Online, correo electrónico en tránsito, y buzones de correo en reposo. Las conversaciones de Skype se incluyen en los buzones en reposo.
 
-- Por último, use Microsoft Cloud App Security para supervisar los archivos con datos confidenciales de otros proveedores SaaS. Próximamente, se podrán usar los tipos de información confidencial y las etiquetas unificadas en Azure Information Protection y Office con Cloud App Security. Puede configurar directivas que se apliquen a todas las aplicaciones específicas (como Box) o a aplicaciones SaaS. Cloud App Security no busca archivos en Exchange Online, incluidos los archivos adjuntos de correo electrónico.
+- Por último, use Microsoft Defender for Cloud Apps para supervisar archivos con datos confidenciales en otros proveedores SaaS. Próximamente, se podrán usar las etiquetas unificadas y los tipos de información confidencial en Azure Information Protection y en Ofﬁce. Puede configurar directivas que se apliquen a todas sus aplicaciones SaaS o a aplicaciones específicas (como Box). Defender for Cloud Apps no detecta archivos en Exchange Online, incluidos los archivos adjuntos al correo electrónico.
 
 ## <a name="data-loss-prevention-reports"></a>Informes de prevención de pérdida de datos
 
@@ -88,51 +88,47 @@ Más información sobre las directivas de alerta y buscar en el registro de audi
 - [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
 - [Propiedades detalladas del registro de auditoría](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
-Microsoft Cloud App Security le ayuda a descubrir otras aplicaciones SaaS en uso en las redes y los datos confidenciales que se envían a estas aplicaciones y desde las mismas.
+Microsoft Defender for Cloud Apps le ayuda a descubrir otras aplicaciones SaaS en uso en las redes y los datos confidenciales que se envían a estas aplicaciones y desde las mismas.
 
-Microsoft Cloud App Security es un servicio completo que proporciona mayor visibilidad, controles pormenorizados y protección contra amenazas mejorada para las aplicaciones en la nube. Identifica más de 15 000 aplicaciones en la nube en la red de todos los dispositivos, y le proporciona puntuación de riesgo y análisis y evaluación continuos de riesgos. No se requieren agentes: la información se recopila de los firewalls y servidores proxy para proporcionarle visibilidad completa y un contexto de uso en la nube y shadow IT.
+Microsoft Defender for Cloud Apps es un servicio integral que proporciona una gran visibilidad, controles granulares y una mayor protección contra las amenazas para sus aplicaciones en la nube. Identifica más de 15 000 aplicaciones en la nube en la red de todos los dispositivos y proporciona una puntuación de riesgo y una evaluación y análisis de riesgo continuos. No se necesitan agentes: la información se recoge de sus firewalls y proxies para ofrecerle una visibilidad completa y un contexto para el uso de la nube y shadow IT.
 
-Para entender mejor su entorno de nube, la característica de investigación de Cloud App Security proporciona visibilidad detallada de todas las actividades, archivos y cuentas para las aplicaciones administradas y autorizadas. Puede obtener información detallada a nivel del archivo y descubrir a dónde se transfieren los datos en las aplicaciones en la nube.
+Para comprender mejor su entorno en la nube, la característica de investigación de Defender for Cloud Apps proporciona una profunda visibilidad de todas las actividades, archivos y cuentas de las aplicaciones sancionadas y administradas. Puede obtener información detallada a nivel de archivos y descubrir por dónde viajan los datos en las aplicaciones en la nube.
 
-Para obtener ejemplos, la siguiente ilustración muestra dos directivas Cloud App Security que pueden ayudarle con el RGPD.
+Para obtener ejemplos, la siguiente ilustración muestra dos directivas de Defender for Cloud Apps que pueden ayudarle con el RGPD.
 
-![Directivas de Cloud App Security de ejemplo.](../../media/Monitor-for-leaks-of-personal-data-image3.png)
+![Ejemplo de directivas de Defender for Cloud Apps.](../../media/Monitor-for-leaks-of-personal-data-image3.png)
 
 Las primera directiva envía una alerta cuando se comparten archivos con un atributo DCP predefinido o una expresión personalizada que elija fuera de la organización desde las aplicaciones SaaS que elija.
 
 La segunda directiva bloquea las descargas de archivos en cualquier dispositivo no administrado. Usted elige los atributos de los archivos que se buscarán y las aplicaciones SaaS a las que desee que se aplique la directiva.
 
-Estos tipos de atributo estarán pronto disponibles en Cloud App Security:
+Estos tipos de atributos estarán disponibles próximamente en Defender for Cloud Apps:
 
 - Tipos de información confidencial
 - Etiquetas unificadas en Microsoft 365 y Azure Information Protection
 
-### <a name="cloud-app-security-dashboard"></a>Panel de Cloud App Security
+### <a name="defender-for-cloud-apps-dashboard"></a>Panel de Microsoft Defender for Cloud Apps
 
-Si aún no empezó a usar Cloud App Security, inícielo. Para obtener acceso a Cloud App Security: <https://portal.cloudappsecurity.com>.
+Si todavía no ha empezado a utilizar Defender for Cloud Apps, empiece por iniciarlo. Para acceder a Defender for Cloud Apps: <https://portal.cloudappsecurity.com>.
 
 > [!NOTE]
-> No olvide habilitar "Analizar automáticamente archivos de etiquetas de clasificación de Azure Information Protection" (en la configuración General) al comenzar a usar Cloud App Security o antes de asignar etiquetas. Tras la configuración, Cloud App Security no vuelve a examinar los archivos existentes hasta que se modifican.
+> No olvide habilitar "Analizar automáticamente archivos de etiquetas de clasificación de Azure Information Protection" (en la configuración General) al comenzar a usar Defender for Cloud Apps o antes de asignar etiquetas. Después de la configuración, Defender for Cloud Apps no vuelve a examinar los archivos existentes hasta que se modifican.
 
 ![Panel en el que se muestra información de alertas.](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 Más información:
 
-- [Implementar Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
-- [Más información sobre Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
-- [Bloqueo de descargas de información confidencial con el proxy de Microsoft Cloud App Security](/cloud-app-security/use-case-proxy-block-session-aad)
+- [Implementar Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security)
+- [Más información sobre Microsoft Defender for Cloud Apps](https://www.microsoft.com/cloud-platform/cloud-app-security)
+- [Bloqueo de descargas de información confidencial con el proxy de Microsoft Defender for Cloud Apps](/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>Directivas de archivo y actividad de ejemplo para detectar el uso compartido de datos personales
 
 ### <a name="detect-sharing-of-files-containing-pii--credit-card-number"></a>Detectar el uso compartido de archivos que contengan DCP: número de tarjeta de crédito
 
 Envíe una alerta cuando se comparte un archivo que contiene un número de tarjeta de crédito desde una aplicación de nube autorizada.
-
-<br>
-
-****
 
 |Control|Configuración|
 |---|---|
@@ -145,7 +141,6 @@ Envíe una alerta cuando se comparte un archivo que contiene un número de tarje
 |Control de contenido|Incluye los archivos que coinciden con una expresión actual: Todos los países: Finanzas: Número de tarjeta de crédito <p> No requerir contexto relevante: desactivado (esto coincidirá con palabras clave, así como regex) <p> Incluir archivos con al menos 1 coincidencia <p> Quitar máscara de los últimos 4 caracteres de la infracción: activada|
 |Alertas|Crear una alerta para cada archivo coincidente: activada <p> Límite de alertas diario: 1000 <p> Seleccionar una alerta como correo electrónico: activada <p> Para: infosec@contoso.com|
 |Gobierno|Microsoft OneDrive para la Empresa <p> Hacer privado: comprobar Quitar usuarios externos <p> Resto de opciones: desactivadas <p> Microsoft SharePoint Online <p> Hacer privado: comprobar Quitar usuarios externos <p> Resto de opciones: desactivadas|
-|
 
 Directivas similares:
 
@@ -161,10 +156,6 @@ Notas:
 - La supervisión de Box requiere un conector configurado con el SDK API Connector.
 - Esta directiva requiere funcionalidades que actualmente están en versión preliminar privada.
 
-<br>
-
-****
-
 |Control|Configuración|
 |---|---|
 |Tipo de directiva|Directiva de actividad|
@@ -175,7 +166,6 @@ Notas:
 |Configuración del filtro|Tipo de actividad = cargar archivo <p> Aplicación = Microsoft OneDrive para la Empresa y Box <p> Etiqueta de clasificación (actualmente en versión preliminar privada): Azure Information Protection = datos del cliente, recursos humanos (datos de salario, recursos humanos), datos de empleado|
 |Alertas|Crear una alerta: activada <p> Límite de alertas diario: 1000 <p> Seleccionar una alerta como correo electrónico: activada <p> Para: infosec@contoso.com|
 |Gobierno|Todas las aplicaciones <p> Poner el usuario en cuarentena: comprobar <p> Resto de opciones: desactivadas <p> Office 365 <p> Poner el usuario en cuarentena: comprobar <p> Resto de opciones: desactivadas|
-|
 
 Directivas similares:
 

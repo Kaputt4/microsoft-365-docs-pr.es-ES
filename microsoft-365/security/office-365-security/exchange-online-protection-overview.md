@@ -8,6 +8,7 @@ manager: dansimp
 ms.date: 09/18/2020
 audience: ITPro
 ms.topic: overview
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
@@ -15,12 +16,12 @@ ms.custom:
 description: Obtenga información sobre Exchange Online Protection (EOP) puede ayudar a proteger su organización de correo electrónico local en entornos independientes e híbridos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef4443c0ee9b029133bb2abfabdd9a2f00a52203
-ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
+ms.openlocfilehash: 3fb49a24ae378be990efd727450a06889cc50679
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62896080"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473373"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
@@ -34,7 +35,7 @@ ms.locfileid: "62896080"
 Exchange Online Protection (EOP) es el servicio de filtrado basado en la nube que protege su organización contra correo no deseado, malware y otras amenazas de correo electrónico. EOP se incluye en todas las Microsoft 365 con Exchange Online buzones de correo.
 
 > [!NOTE]
-> EOP también está disponible por sí mismo para proteger los buzones locales y en entornos híbridos para proteger los buzones de correo Exchange locales. Para obtener más información, vea [Standalone Exchange Online Protection](/exchange/standalone-eop/standalone-eop).
+> EOP también está disponible por sí mismo para proteger los buzones locales y en entornos híbridos para proteger los buzones Exchange locales. Para obtener más información, vea [Standalone Exchange Online Protection](/exchange/standalone-eop/standalone-eop).
 
 Los pasos para configurar las características de seguridad de EOP y una comparación con la seguridad agregada que obtiene en Microsoft Defender para Office 365, consulte [Protect against threats](protect-against-threats.md). La configuración recomendada para las características de EOP está disponible en [Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad](recommended-settings-for-eop-and-office365.md).
 
@@ -44,7 +45,7 @@ El resto de este artículo explica cómo funciona EOP y las características dis
 
 Para comprender el funcionamiento de EOP, es muy útil ver cómo se procesa el correo entrante:
 
-:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Gráfico del correo electrónico de Internet o los comentarios del cliente que pasan a EOP y a través de la conexión, antimalware, el filtrado de reglas de barras diagonales de flujo de correo y el filtrado de contenido, antes del veredicto de correo no deseado o cuarentena, o la entrega de correo del usuario final.":::
+:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Gráfico del correo electrónico de Internet o los comentarios del cliente que pasan a EOP y a través de la conexión, antimalware, filtrado de reglas de barra diagonal de flujo de correo y filtrado de contenido, antes del veredicto de correo no deseado o cuarentena, o la entrega de correo del usuario final" lightbox="../../media/tp_emailprocessingineopt3.png":::
 
 1. Cuando un mensaje entrante entra en EOP, pasa inicialmente a través del filtrado de conexiones, lo que comprueba la reputación del remitente. La mayoría del correo no deseado se detiene en este momento y EOP lo rechaza. Para obtener más información, consulte [Configurar filtrado de la conexión](configure-the-connection-filter-policy.md).
 
@@ -70,7 +71,7 @@ EOP realiza el equilibrio de carga entre los centros de datos, pero solo dentro 
 
 En esta sección se proporciona una descripción general de alto nivel de las características principales que están disponibles en EOP.
 
-Para obtener información sobre los requisitos, los límites importantes y la disponibilidad de características en todos los planes de suscripción de EOP, [consulte la descripción Exchange Online Protection servicio.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
+Para obtener información sobre los requisitos, los límites importantes y la disponibilidad de características en todos los planes de suscripción de EOP, consulte [la descripción Exchange Online Protection servicio.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
 
 **Notas**:
 
@@ -81,9 +82,6 @@ Para obtener información sobre los requisitos, los límites importantes y la di
 - Para obtener los valores recomendados para las directivas de protección, consulte [Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad](recommended-settings-for-eop-and-office365.md).
 - Para obtener instrucciones rápidas para configurar directivas de protección, consulte [Protect against threats](protect-against-threats.md).
 
-<br>
-
-****
 |Característica|Comentarios|
 |---|---|
 |**Protection**||
@@ -94,7 +92,7 @@ Para obtener información sobre los requisitos, los límites importantes y la di
 |Protección contra la suplantación de identidad (anti-phishing)|[Directivas contra la suplantación de identidad en Microsoft 365](set-up-anti-phishing-policies.md) <p> [Configuración de directivas contra phishing en EOP](configure-anti-phishing-policies-eop.md)|
 |Protección contra la suplantación de identidad|[Suplantación de información de inteligencia en EOP](learn-about-spoof-intelligence.md) <p> [Administrar la lista de bloqueados y permitidos del espacio empresarial](tenant-allow-block-list.md)|
 |Purga automática de hora cero (ZAP) para mensajes de malware, correo no deseado y phishing entregados|[ZAP en Exchange Online](zero-hour-auto-purge.md)|
-|Directivas de seguridad preestablecidas|[Directivas de seguridad predefinidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md) <p> [Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365](configuration-analyzer-for-security-policies.md)|
+|Directivas de seguridad predefinidas|[Directivas de seguridad preestablecidas en Exchange Online Protection y Microsoft Defender para Office 365](preset-security-policies.md) <p> [Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365](configuration-analyzer-for-security-policies.md)|
 |Lista de bloqueados y permitidos del espacio empresarial|[Administrar la lista de bloqueados y permitidos del espacio empresarial](tenant-allow-block-list.md)|
 |Bloquear listas para remitentes de mensajes|[Crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md)|
 |Permitir listas para remitentes de mensajes|[Crear listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md)|
@@ -110,10 +108,10 @@ Para obtener información sobre los requisitos, los límites importantes y la di
 |Conectores|[Configurar el flujo de correo mediante conectores en Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)|
 |Filtrado avanzado para conectores|[Filtrado mejorado para conectores en Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)|
 |**Supervisión**||
-|Seguimiento de mensajes|[Seguimiento de mensajes](message-trace-scc.md) <p> [Seguimiento de mensajes en el Centro Exchange administración](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
+|Seguimiento de mensajes|[Seguimiento de mensajes](message-trace-scc.md) <p> [Seguimiento de mensajes en el centro Exchange administración](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
 |Informes de colaboración & correo electrónico|[Ver informes de seguridad de correo electrónico](view-email-security-reports.md)|
 |Informes de flujo de correo|[Ver informes de flujo de correo](view-mail-flow-reports.md) <p> [Informes de flujo de correo en el centro Exchange administración](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|Información sobre el flujo de correo|[Información sobre el flujo de correo](mail-flow-insights-v2.md) <p> [Información sobre el flujo de correo en el centro Exchange administración](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
+|Información sobre el flujo de correo|[Información sobre el flujo de correo](mail-flow-insights-v2.md) <p> [Información sobre el flujo de correo en el Centro Exchange administración](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
 |Informes de auditoría|[Informes de auditoría en el Centro Exchange administración](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)|
 |Directivas de alerta|[Directivas de alerta](../../compliance/alert-policies.md)|
 |**Acuerdos de nivel de servicio (SLA) y soporte técnico**||

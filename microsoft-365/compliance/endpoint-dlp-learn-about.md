@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prevención de pérdida de datos de punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y las acciones de protección de esos archivos a los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento '
-ms.openlocfilehash: 83608f005b9024583142515094b2d958b8f5d915
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 031d1d80dd6700939c9d73cc82350b7abc30c132
+ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450350"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64520791"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la Prevención de pérdida de datos de Microsoft 365 de punto de conexión
 
@@ -192,7 +192,8 @@ Por ejemplo, si se copia un archivo a un medio USB extraíble, vería estos atri
 Ahora que ya conoce DLP en punto de conexión, estos son los pasos siguientes:
 
 1. [Incorporar dispositivos Windows 10 o Windows 11 en la información general de Microsoft 365](device-onboarding-overview.md)
-1. [Incorporar dispositivos macOS en la información general de Microsoft 365 (versión preliminar)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+1. [Incorporar dispositivos macOS en la información general de Microsoft 365 (versión preliminar)](device-onboarding-macos-overview.md)
+1. [Configuración de la prevención de pérdida de datos de punto de conexión](dlp-configure-endpoint-settings.md)
 1. [Uso de la prevención de pérdida de datos en punto de conexión de Microsoft](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Consulte también

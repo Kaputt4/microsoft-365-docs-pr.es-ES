@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 79c435618f03a8bdbd69638c66b728597cd63cab
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8727baa9bb1935a1186907ca5f3d9d4f82dad6d4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165995"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473659"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>Revisar Antivirus de Microsoft Defender de examen
 
@@ -29,10 +29,10 @@ ms.locfileid: "61165995"
 
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Una vez Antivirus de Microsoft Defender examen completo, tanto si [](run-scan-microsoft-defender-antivirus.md) se trata de un examen a petición como [programado,](scheduled-catch-up-scans-microsoft-defender-antivirus.md)los resultados se registran y se pueden ver los resultados. 
+Después de Antivirus de Microsoft Defender examen completo, tanto si se trata de un examen [](run-scan-microsoft-defender-antivirus.md) a petición como [programado, los](scheduled-catch-up-scans-microsoft-defender-antivirus.md) resultados se registran y puede ver los resultados. 
 
 
 ## <a name="use-configuration-manager-to-review-scan-results"></a>Usar Configuration Manager para revisar los resultados del examen
@@ -47,7 +47,7 @@ El siguiente cmdlet devolverá cada detección en el extremo. Si hay varias dete
 Get-MpThreatDetection
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="captura de pantalla de cmdlets y salidas de PowerShell.":::
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="Los cmdlets y salidas de PowerShell" lightbox="../../media/wdav-get-mpthreatdetection.png":::
 
 Puede especificar limitar `-ThreatID` el resultado para mostrar solo las detecciones de una amenaza específica.
 
@@ -57,13 +57,13 @@ Si desea enumerar las detecciones de amenazas, pero combinar las detecciones de 
 Get-MpThreat
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="Código de PowerShell.":::
+:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="El código de PowerShell" lightbox="../../media/wdav-get-mpthreat.png":::
 
-Consulte [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender Antivirus [cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Antivirus de Microsoft Defender.
+Consulte [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender Antivirus cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Antivirus de Microsoft Defender.
 
 ## <a name="use-windows-management-instruction-wmi-to-review-scan-results"></a>Usar Windows de administración de documentos (WMI) para revisar los resultados del examen
 
-Use el [ **método Get** de las **MSFT_MpThreat** y **MSFT_MpThreatDetection**](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) clases.
+Use el [**método Get** de las **MSFT_MpThreat** y **MSFT_MpThreatDetection**](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) clases.
 
 
 ## <a name="related-articles"></a>Artículos relacionados

@@ -1,5 +1,5 @@
 ---
-title: Estado y configuración del sensor de Identidad de Microsoft Defender en Microsoft 365 Defender
+title: Configuración y estado del sensor de Identidad de Microsoft Defender en Microsoft 365 Defender
 description: Obtenga información sobre cómo configurar sensores de Microsoft Defender para identidades y supervisar su estado en Microsoft 365 Defender
 ms.date: 06/07/2021
 ms.topic: how-to
@@ -8,39 +8,40 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 936b14ceaa5f80e9371e776727bbb5304c60590d
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.collection: M365-security-compliance
+ms.openlocfilehash: f55cb36d9960fef2da977a2c50ebab5a9e0e9122
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963184"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682028"
 ---
-# <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Estado y configuración del sensor de Identidad de Microsoft Defender en Microsoft 365 Defender
+# <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Configuración y estado del sensor de Identidad de Microsoft Defender en Microsoft 365 Defender
 
 **Se aplica a:**
 
 - Microsoft 365 Defender
 - Defender for Identity
 
-En este artículo se explica cómo configurar y supervisar [sensores](/defender-for-identity) de Identidad de Microsoft Defender en [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
+En este artículo se explica cómo configurar y supervisar [sensores de identidad de Microsoft Defender](/defender-for-identity) [en Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 >[!IMPORTANT]
 >Como parte de la convergencia con Microsoft 365 Defender, algunas opciones y detalles han cambiado desde su ubicación en el portal de Defender for Identity. Lea los detalles siguientes para descubrir dónde encontrar las características conocidas y las nuevas.
 
 ## <a name="view-defender-for-identity-sensor-settings-and-status"></a>Ver configuración y estado del sensor de Defender para identidad
 
-1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya **a Configuración** y, a continuación, **Identities**.
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya a Configuración y, a **continuación**, **Identities**.
 
     ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
 
-1. Selecciona la **página Sensores,** que muestra todos los sensores de Defender for Identity. Para cada sensor, verá su nombre, su pertenencia a un dominio, el número de versión, si las actualizaciones deben retrasarse, el estado del servicio, el estado de actualización, el estado de mantenimiento, el número de problemas de mantenimiento y cuándo se creó el sensor.
+1. Selecciona la **página Sensores** , que muestra todos los sensores de Defender for Identity. Para cada sensor, verá su nombre, su pertenencia a un dominio, el número de versión, si las actualizaciones deben retrasarse, el estado del servicio, el estado de actualización, el estado de mantenimiento, el número de problemas de mantenimiento y cuándo se creó el sensor.
 
     [![Página del sensor.](../../media/defender-identity/sensor-page.png)](../../media/defender-identity/sensor-page.png#lightbox)
 
     >[!NOTE]
     >En el portal de Defender for Identity, la configuración del sensor y la información de estado estaban en ubicaciones independientes. Ten en cuenta Microsoft 365 Defender que ahora están en la misma página.
 
-1. Si selecciona **Filtros,** puede elegir qué filtros estarán disponibles. A continuación, con cada filtro, puede elegir qué sensores mostrar.
+1. Si **selecciona Filtros,** puede elegir qué filtros estarán disponibles. A continuación, con cada filtro, puede elegir qué sensores mostrar.
 
     [![Filtros de sensor.](../../media/defender-identity/sensor-filters.png)](../../media/defender-identity/sensor-filters.png#lightbox)
 
@@ -54,13 +55,13 @@ En este artículo se explica cómo configurar y supervisar [sensores](/defender-
 
     ![Detalles del problema.](../../media/defender-identity/issue-details.png)
 
-1. Si selecciona Administrar **sensor,** se abrirá un panel donde puede configurar los detalles del sensor.
+1. Si selecciona Administrar **sensor**, se abrirá un panel donde podrá configurar los detalles del sensor.
 
     ![Administrar sensor.](../../media/defender-identity/manage-sensor.png)
 
     ![Configure los detalles del sensor.](../../media/defender-identity/configure-sensor-details.png)
 
-1. En la **página** Sensores, puede exportar la lista de sensores a un archivo .csv **seleccionando Exportar**.
+1. En la **página** Sensores, puede exportar la lista de sensores a un archivo .csv **seleccionaNdo Exportar**.
 
     ![Exportar lista de sensores.](../../media/defender-identity/export-sensors.png)
 

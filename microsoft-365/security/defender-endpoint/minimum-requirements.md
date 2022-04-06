@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 03ac5ed0d63fb88639e9b7e1b55987bf328476e1
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 754537d11a4c183cd1057b94d583a31543d9e4a5
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419077"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467365"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para endpoint
 
@@ -153,7 +153,7 @@ De forma predeterminada, este servicio está habilitado. Es una buena práctica 
 
    Si el servicio está habilitado, el resultado debería ser parecido a la siguiente captura de pantalla:
 
-   ![Resultado del comando de consulta sc para diagtrack.](images/windefatp-sc-qc-diagtrack.png)
+   :::image type="content" source="images/windefatp-sc-qc-diagtrack.png" alt-text="Resultado del comando de consulta sc para diagtrack" lightbox="images/windefatp-sc-qc-diagtrack.png":::
 
 Deberá establecer el servicio para que se inicie automáticamente si el **START_TYPE no está** establecido en **AUTO_START**.
 

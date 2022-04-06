@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 40178e42737bdfea756db55658aaeb988ad4f19f
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 2d5477122a29c672a947a2022f49da3abeb7003b
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498745"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568552"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorizar incidentes en Microsoft 365 Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "64498745"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender aplica análisis de correlación y agrega alertas relacionadas e investigaciones automatizadas de diferentes productos en un incidente. Microsoft 365 Defender activa alertas únicas en actividades que solo se pueden identificar como malintencionadas dada la visibilidad de un extremo a otro que Microsoft 365 Defender en todo el conjunto de productos. Esta vista proporciona a los analistas de seguridad la historia de ataques más amplia, lo que les ayuda a comprender mejor y tratar las amenazas complejas en toda la organización.
+Microsoft 365 Defender aplica análisis de correlación y agrega alertas relacionadas e investigaciones automatizadas de diferentes productos en un incidente. Microsoft 365 Defender activa alertas únicas en actividades que solo se pueden identificar como malintencionadas dada la visibilidad de un extremo a otro en Microsoft 365 Defender tiene en todo el conjunto de productos. Esta vista proporciona a los analistas de seguridad la historia de ataques más amplia, lo que les ayuda a comprender mejor y tratar las amenazas complejas en toda la organización.
 
 La **cola Incidentes muestra** una colección de incidentes que se crearon en dispositivos, usuarios y buzones. Le ayuda a ordenar los incidentes para priorizar y crear una decisión de respuesta a la ciberseguridad informada, un proceso conocido como evaluación de incidentes.
 
@@ -78,7 +78,7 @@ En esta tabla se enumeran los nombres de filtro disponibles.
 | Severity | La gravedad de un incidente indica el impacto que puede tener en los activos. Cuanto mayor sea la gravedad, mayor será el impacto y, por lo general, se requiere la atención más inmediata. Seleccione **High**, **Medium**, **Low** o **Informational**. |
 | Asignación de incidentes | Seleccione el usuario o los usuarios asignados. |
 | Múltiples orígenes del servicio  | Especifique si el filtro es para más de un origen de servicio. |
-| Orígenes del servicio  | Especifique incidentes que contengan alertas de: Gobierno de aplicaciones, Microsoft 365 Defender, Microsoft Defender para Office 365, Microsoft Defender para endpoint, Microsoft Defender para identidad, Microsoft Defender para aplicaciones en la nube. |
+| Orígenes del servicio  | Especificar incidentes que contienen alertas de: Gobierno de aplicaciones, Microsoft 365 Defender, Microsoft Defender para Office 365, Microsoft Defender para punto de conexión, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps. |
 | Etiquetas | Seleccione uno o varios nombres de etiqueta de la lista. |
 | Varias categorías  | Especifique si el filtro es para más de una categoría. |
 | Categorías | Elija categorías para centrarse en tácticas, técnicas o componentes de ataque específicos vistos. |
@@ -105,7 +105,7 @@ Una vez que haya configurado un filtro útil en la cola de incidentes, puede mar
 - Incidentes sin firma
 - Incidentes de gravedad alta y sin firma
 - Incidentes asignados a mí
-- Incidentes asignados a mí y a Microsoft Defender para endpoint
+- Incidentes asignados a mí y para Microsoft Defender para punto de conexión
 - Incidentes con una etiqueta o etiquetas específicas
 - Incidentes con una categoría de amenaza específica
 - Incidentes con una amenaza asociada específica
@@ -133,14 +133,14 @@ La lista predeterminada de incidentes es para los que se produjeron en los últi
  - 6 meses
  - Un intervalo personalizado en el que puede especificar fechas y horas
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de determinar qué incidente requiere la prioridad más alta, selecciónelo y:
 
 - [Administrar](manage-incidents.md) las propiedades del incidente para etiquetas, asignación, resolución inmediata de incidentes falsos positivos y comentarios.
 - Comience las [investigaciones](investigate-incidents.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)
 - [Investigar incidentes](investigate-incidents.md)

@@ -20,12 +20,12 @@ ms.custom:
 description: Aprenda a integrar Azure PIM para conceder acceso Just-In-Time limitado a los usuarios para que realicen tareas con privilegios elevados en Microsoft Defender para Office 365 y reducir así el riesgo para los datos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3be90ff1113e25ea418aaf1a25b12574b3bbbe1f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c45edc7ab7f90c98baecd15565508bc9a49f39a8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939482"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473417"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) y por qué usarlo con Microsoft Defender para Office 365
@@ -58,7 +58,7 @@ El nombre de su usuario (aquí "Alex") aparecerá en Asignaciones Aptas en la p�
 > [!NOTE]
 > Para una revisión rápida de Privileged Identity Management vea [este vídeo](https://www.youtube.com/watch?v=VQMAg0sa_lE).
 
-:::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png" alt-text="Asegúrese de examinar la configuración del rol Lector de seguridad en Privileged Access Management. Aquí verá que la duración máxima de la activación de PIM es de 8 horas.":::
+:::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png" alt-text="Detalles de la configuración de roles: página de Lector de seguridad" lightbox="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png":::
 
 ***Paso 2***. Cree el segundo grupo de permisos necesario (con privilegios elevados) para tareas adicionales y asigne elegibilidad.
 
@@ -99,7 +99,7 @@ En el portal Microsoft 365 Defender, cree un grupo de roles personalizado que co
 3. Si intenta purgar un correo electrónico mediante el Explorador de amenazas, recibirá un error que indica que necesita permisos adicionales.
 4. Utilice PIM una segunda vez en el rol más elevado. Tras un breve retraso, ahora debería poder purgar los correos electrónicos sin problemas.
 
-   :::image type="content" source="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG" alt-text="Si el usuario que agregamos (Alex) a través del rol PIM lector de seguridad intenta eliminar un correo electrónico sospechoso, recibirá un mensaje que dice &quot;Necesita el rol de Búsqueda y purga para realizar acciones en este correo electrónico. Póngase en contacto con el administrador para obtener la asignación de roles o agregue el correo electrónico a un incidente.":::
+   :::image type="content" source="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG" alt-text="El panel Acciones de la pestaña Correo electrónico" lightbox="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG":::
 
 La asignación permanente de roles administrativos y permisos, como el rol de búsqueda y purga, no se mantiene con la iniciativa de seguridad Confianza cero, pero, como puede ver, PIM se puede usar para conceder acceso, solo cuando sea necesario, al conjunto de herramientas necesario.
 

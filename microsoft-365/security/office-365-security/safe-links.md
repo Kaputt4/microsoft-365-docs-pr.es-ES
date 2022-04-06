@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Obtenga información sobre Caja fuerte protección de vínculos en Defender for Office 365 para proteger una organización contra la suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra Teams Caja fuerte y vea los gráficos de los Caja fuerte links.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 736efeb805e45170ec6471b57fc35005d0a12311
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8bd4773d3f712adf13ac2a006f5d8450c58fc89a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320331"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682094"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Caja fuerte vínculos en Microsoft Defender para Office 365
 
@@ -84,10 +84,6 @@ En este artículo se incluyen descripciones detalladas de los siguientes tipos d
 
 En la tabla siguiente se describen escenarios para vínculos de Caja fuerte en organizaciones de Microsoft 365 y Office 365 que incluyen Defender para Office 365 (tenga en cuenta que la falta de licencias nunca es un problema en los ejemplos).
 
-<br>
-
-****
-
 |Escenario|Resultado|
 |---|---|
 |Juan es miembro del departamento de marketing. Caja fuerte la protección de vínculos de Office 365 está activada en la configuración global de vínculos de Caja fuerte y existe una directiva de vínculos de Caja fuerte que se aplica a los miembros del departamento de marketing. Juan abre una PowerPoint en un mensaje de correo electrónico y, a continuación, hace clic en una dirección URL de la presentación.|Jean está protegido por Caja fuerte links. <p> Juan se incluye en una directiva Caja fuerte links y Caja fuerte protección de vínculos para Office 365 aplicaciones está activada. <p> Para obtener más información acerca de los requisitos para la protección de Caja fuerte vínculos en aplicaciones de Office 365, consulta la sección configuración de vínculos de [Caja fuerte](#safe-links-settings-for-office-365-apps) para aplicaciones Office 365 más adelante en este artículo.|
@@ -95,7 +91,6 @@ En la tabla siguiente se describen escenarios para vínculos de Caja fuerte en o
 |En la organización de Pat, ningún administrador ha creado directivas de vínculos Caja fuerte, pero Caja fuerte protección de vínculos para Office 365 aplicaciones está activada. Pat abre un documento de Word y hace clic en una dirección URL del archivo.|Pat no está protegido por Caja fuerte links. <p> Aunque Caja fuerte la protección de vínculos de Office 365 para aplicaciones de Office 365 está activada globalmente, Pat no se incluye en ninguna de las directivas de vínculos de Caja fuerte activas, por lo que no se puede aplicar la protección.|
 |En la organización de Lee, `https://tailspintoys.com` se configura en la lista Bloquear las siguientes **direcciones URL** en la configuración global de Caja fuerte vínculos. Ya existe Caja fuerte de vínculos que incluye Lee. Lee recibe un mensaje de correo electrónico que contiene la dirección URL `https://tailspintoys.com/aboutus/trythispage`. Lee hace clic en la dirección URL.|Es posible que la dirección URL se bloquee automáticamente para Lee; depende de la entrada url de la lista y del cliente de correo electrónico que Lee usó. Para obtener más información, vea la [sección "Bloquear las siguientes direcciones URL" para Caja fuerte vínculos más](#block-the-following-urls-list-for-safe-links) adelante en este artículo.|
 |Tanto Jamie como Julia trabajan para contoso.com. Hace mucho tiempo, los administradores configuraron Caja fuerte de vínculos que se aplican tanto a Jamie como a Julia. Jamie envía un correo electrónico a Julia, sin saber que el correo electrónico contiene una dirección URL malintencionada.|Julia está protegida por **Caja fuerte links si** la directiva de vínculos de Caja fuerte que se aplica a ella está configurada para aplicarse a los mensajes entre destinatarios internos. Para obtener más información, vea la sección [Caja fuerte configuración de vínculos para](#safe-links-settings-for-email-messages) mensajes de correo electrónico más adelante en este artículo.|
-|
 
 ## <a name="safe-links-settings-for-email-messages"></a>Caja fuerte configuración de vínculos para mensajes de correo electrónico
 
@@ -281,17 +276,12 @@ La lista de direcciones URL se configura en la configuración global de Caja fue
 
 En la tabla siguiente se describen ejemplos de los valores que puede especificar y sus resultados:
 
-<br>
-
-****
-
 |Valor|Resultado|
 |---|---|
 |`contoso.com` <p> o <p> `*contoso.com*`|Bloquea el dominio, los subdominios y las rutas de acceso. Por ejemplo, `https://www.contoso.com`, `https://sub.contoso.com`y se `https://contoso.com/abc` bloquean.|
 |`https://contoso.com/a`|Bloques `https://contoso.com/a` pero no subpaths adicionales como `https://contoso.com/a/b`.|
 |`https://contoso.com/a*`|Bloques `https://contoso.com/a` y subpaths adicionales como `https://contoso.com/a/b`.|
 |`https://toys.contoso.com*`|Bloquea un subdominio (`toys` en este ejemplo), pero permite hacer clic en otras direcciones URL de dominio (como `https://contoso.com` o `https://home.contoso.com`).|
-|
 
 ## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>"No reescribir las siguientes direcciones URL" en las directivas Caja fuerte vínculos
 
@@ -323,17 +313,12 @@ Para agregar entradas a la lista en directivas de vínculos de Caja fuerte nueva
 
 En la tabla siguiente se describen ejemplos de los valores que puede especificar y sus resultados:
 
-<br>
-
-****
-
 |Valor|Resultado|
 |---|---|
 |`contoso.com`|Permite el acceso a `https://contoso.com` subdominios o rutas de acceso, pero no a ella.|
 |`*.contoso.com/*`|Permite el acceso a un dominio, subdominios y rutas de acceso (por ejemplo, `https://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`o `https://www.contoso.com/a`). <p> Esta entrada es intrínsecamente mejor que `*contoso.com*`, porque no permite sitios potencialmente fraudulentos, como `https://www.falsecontoso.com` o `https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|Permite el acceso a `https://contoso.com/a`, pero no a subpaths como `https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|Permite el acceso a `https://contoso.com/a` y subpaths como `https://contoso.com/a/b`|
-|
 
 ## <a name="warning-pages-from-safe-links"></a>Páginas de advertencia de Caja fuerte vínculos
 

@@ -1,8 +1,8 @@
 ---
-title: Implementar Microsoft Defender para endpoint en Linux con Puppet
+title: Implementar Microsoft Defender para punto de conexión en Linux con Puppet
 ms.reviewer: ''
-description: Describe cómo implementar Microsoft Defender para Endpoint en Linux con Puppet.
-keywords: microsoft, defender, Microsoft Defender para Endpoint, linux, instalación, implementación, desinstalación, títer, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
+description: Describe cómo implementar Microsoft Defender para punto de conexión linux con Puppet.
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,14 +16,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 305dd74d31f3cbbf07db23f8de89b2b57fe52326
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: a8d92e67e45074fb4084e7fbbc1fa7359b34db36
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62073705"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568388"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Implementar Microsoft Defender para endpoint en Linux con Puppet
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Implementar Microsoft Defender para punto de conexión en Linux con Puppet
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,7 +43,7 @@ En este artículo se describe cómo implementar Defender for Endpoint en Linux c
 
 ## <a name="prerequisites-and-system-requirements"></a>Requisitos previos y requisitos del sistema
 
- Para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión de software actual, vea la página principal [defender para endpoint en Linux](microsoft-defender-endpoint-linux.md).
+ Para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión de software actual, consulte la [página principal defender para endpoint en Linux](microsoft-defender-endpoint-linux.md).
 
 Además, para la implementación de Puppet, debes familiarizarte con las tareas de administración de Puppet, configurar Puppet y saber cómo implementar paquetes. Puppet tiene muchas maneras de completar la misma tarea. Estas instrucciones suponen la disponibilidad de módulos de Puppet compatibles, como *aptos* para ayudar a implementar el paquete. Su organización puede usar un flujo de trabajo diferente. Consulte la documentación [de Puppet](https://puppet.com/docs) para obtener más información.
 
@@ -51,11 +51,11 @@ Además, para la implementación de Puppet, debes familiarizarte con las tareas 
 
 Descargue el paquete de incorporación desde Microsoft 365 Defender portal:
 
-1. En Microsoft 365 Defender portal, vaya **a Configuración > Endpoints > Administración de dispositivos > Incorporación**.
-2. En el primer menú desplegable, seleccione **Linux Server** como sistema operativo. En el segundo menú desplegable, seleccione **La herramienta de** administración de configuración de Linux preferida como método de implementación.
+1. En Microsoft 365 Defender portal, vaya **a Configuración > Endpoints > Administración de dispositivos > incorporación**.
+2. En el primer menú desplegable, seleccione **Linux Server** como sistema operativo. En el segundo menú desplegable, seleccione **La herramienta de administración de configuración de Linux preferida** como método de implementación.
 3. Seleccione **Descargar paquete de incorporación**. Guarde el archivo como WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender captura de pantalla del portal.](images/portal-onboarding-linux-2.png)
+   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="La opción para descargar el paquete incorporado" lightbox="images/portal-onboarding-linux-2.png":::
 
 4. Desde un símbolo del sistema, compruebe que tiene el archivo. 
 
@@ -79,7 +79,7 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal:
 
 Debes crear un manifiesto de Puppet para implementar Defender for Endpoint en Linux en dispositivos administrados por un servidor de Puppet. En este ejemplo se usa los módulos *apt* y *yumrepo* disponibles en los puppetlabs y se supone que los módulos se han instalado en el servidor de Puppet.
 
-Crea las *carpetas install_mdatp/archivos* *y install_mdatp/manifiestos* en la carpeta módulos de la instalación de Puppet. Esta carpeta normalmente se encuentra *en /etc/puppetlabs/code/environments/production/modules* en el servidor de Puppet. Copie el archivo mdatp_onboard.json creado anteriormente en la *carpeta install_mdatp/files.* Crear un *init.pp* que contiene las instrucciones de implementación:
+Crea las *carpetas install_mdatp/archivos* *y install_mdatp/manifiestos* en la carpeta módulos de la instalación de Puppet. Esta carpeta normalmente se encuentra *en /etc/puppetlabs/code/environments/production/modules* en el servidor de Puppet. Copie el archivo mdatp_onboard.json creado anteriormente en la *carpeta install_mdatp/* files. Crear un *init.pp* que contiene las instrucciones de implementación:
 
 ```bash
 pwd
@@ -101,7 +101,7 @@ install_mdatp
 
 ### <a name="contents-of-install_mdatpmanifestsinitpp"></a>Contenido de `install_mdatp/manifests/init.pp`
 
-Defender para Endpoint en Linux se puede implementar desde uno de los siguientes canales (que se indican a continuación como *[canal]):* *insiders-fast*, *insiders-slow* o *prod*. Cada uno de estos canales corresponde a un repositorio de software de Linux.
+Defender para Endpoint en Linux se puede implementar desde uno de los siguientes canales (que se indican a continuación como *[canal]*): *insiders-fast*, *insiders-slow* o *prod*. Cada uno de estos canales corresponde a un repositorio de software de Linux.
 
 La elección del canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen al dispositivo. Los dispositivos *de insiders-fast* son los primeros en recibir actualizaciones y nuevas características, seguidos más adelante por *insiders-slow* y, por último, por *prod*.
 
@@ -110,7 +110,7 @@ Para obtener una vista previa de las nuevas características y proporcionar come
 > [!WARNING]
 > Cambiar el canal después de la instalación inicial requiere que se vuelva a instalar el producto. Para cambiar el canal de producto: desinstale el paquete existente, vuelva a configurar el dispositivo para que use el nuevo canal y siga los pasos descritos en este documento para instalar el paquete desde la nueva ubicación.
 
-Tenga en cuenta la distribución y la versión e identifique la entrada más cercana para ella en `https://packages.microsoft.com/config/[distro]/` .
+Tenga en cuenta la distribución y la versión e identifique la entrada más cercana para ella en `https://packages.microsoft.com/config/[distro]/`.
 
 En los comandos siguientes, reemplace *[distro]* y *[version]* por la información que haya identificado:
 
@@ -131,7 +131,7 @@ $version = undef
     case $::osfamily {
         'Debian' : {
             apt::source { 'microsoftpackages' :
-                location => "https://packages.microsoft.com/config/${distro}/${version}/prod",
+                location => "https://packages.microsoft.com/${distro}/${version}/prod",
                 release  => $channel,
                 repos    => 'main',
                 key      => {
@@ -142,7 +142,7 @@ $version = undef
         }
         'RedHat' : {
             yumrepo { 'microsoftpackages' :
-                baseurl  => "https://packages.microsoft.com/config/${distro}/${version}/${channel}",
+                baseurl  => "https://packages.microsoft.com/${distro}/${version}/${channel}",
                 descr    => "packages-microsoft-com-prod-${channel}",
                 enabled  => 1,
                 gpgcheck => 1,
@@ -208,9 +208,9 @@ org_id                                  : "[your organization identifier]"
 ...
 ```
 
-- **licencia:** esto confirma que el dispositivo está vinculado a su organización.
+- **licencia**: esto confirma que el dispositivo está vinculado a su organización.
 
-- **orgId:** este es el identificador de la organización Defender for Endpoint.
+- **orgId**: este es el identificador de la organización defender para endpoint.
 
 ## <a name="check-onboarding-status"></a>Comprobar el estado de incorporación
 
@@ -220,19 +220,19 @@ Puedes comprobar que los dispositivos se han incorporado correctamente mediante 
 mdatp health --field healthy
 ```
 
-El comando anterior imprime si el producto está incorporado y `1` funciona según lo esperado.
+El comando anterior imprime si `1` el producto está incorporado y funciona según lo esperado.
 
 > [!IMPORTANT]
-> Cuando el producto se inicia por primera vez, descarga las definiciones de antimalware más recientes. Según la conexión a Internet, esto puede tardar unos minutos. Durante este tiempo, el comando anterior devuelve un valor de `0` .
+> Cuando el producto se inicia por primera vez, descarga las definiciones de antimalware más recientes. Según la conexión a Internet, esto puede tardar unos minutos. Durante este tiempo, el comando anterior devuelve un valor de `0`.
 
-Si el producto no está en buen estado, el código de salida (que se puede `echo $?` comprobar) indica el problema:
+Si el producto no está en buen estado, el código de salida (que se puede comprobar `echo $?`) indica el problema:
 
 - 1 si el dispositivo aún no está incorporado.
 - 3 si no se puede establecer la conexión con el demonio.
 
 ## <a name="log-installation-issues"></a>Problemas de instalación del registro
 
- Para obtener más información sobre cómo buscar el registro generado automáticamente por el instalador cuando se produce un error, vea [Log installation issues](linux-resources.md#log-installation-issues).
+ Para obtener más información sobre cómo buscar el registro generado automáticamente que crea el instalador cuando se produce un error, vea [Log installation issues](linux-resources.md#log-installation-issues).
 
 ## <a name="operating-system-upgrades"></a>Actualizaciones del sistema operativo
 

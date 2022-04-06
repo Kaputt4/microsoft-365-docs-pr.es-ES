@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal de envíos en el portal de Microsoft 365 Defender para enviar correos electrónicos sospechosos, correos de suplantación de identidad sospechosos, correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y datos adjuntos de correo electrónico a Microsoft para volver a examinarlos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6a897ba6973dfba86e3d0628088bad419c61c04c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 34d608a6ea114fff8005069f3dc2ddc79c4be45e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324050"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682645"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el portal de envíos para enviar correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft
 
@@ -51,10 +51,10 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 - Abra el portal de Microsoft 365 Defender en <https://security.microsoft.com/>. Para ir directamente a la **página Envíos** , use <https://security.microsoft.com/reportsubmission>.
 
-- Para enviar mensajes y archivos a Microsoft, debe ser miembro de uno de los siguientes grupos de roles:
+- Para enviar mensajes y archivos a Microsoft, debe tener uno de los siguientes roles:
   - **Administrador de** seguridad **o lector de seguridad** [en el portal Microsoft 365 Defender seguridad](permissions-microsoft-365-security-center.md).
   
-    Tenga en cuenta que la pertenencia a este grupo de roles es necesaria para [ver los envíos](#view-user-submissions-to-microsoft) de usuarios al buzón personalizado, tal como se describe más adelante en este artículo.
+    Tenga en cuenta que uno de estos roles es necesario para [ver los envíos](#view-user-submissions-to-microsoft) de usuarios al buzón personalizado, tal como se describe más adelante en este artículo.
 
 - Los administradores pueden enviar mensajes tan antiguos como 30 días si aún están disponibles en el buzón y no purgados por el usuario u otro administrador.
 
@@ -186,7 +186,7 @@ El mensaje notificado se marcará como un falso positivo o un falso negativo. Un
      - **Id. de mensaje de red**
      - **Sender**
      - **Destinatario**
-     - **Nombre**
+     - **Name**
      - **Enviado por**
      - **Motivo para enviar**
      - **Estado**
@@ -199,7 +199,7 @@ El mensaje notificado se marcará como un falso positivo o un falso negativo. Un
 
    - Para agrupar las entradas, haga clic **en Agrupar** y seleccione uno de los siguientes valores de la lista desplegable:
      - **Ninguna**
-     - **Tipo**
+     - **Type**
      - **Motivo**
      - **Estado**
      - **Resultado**

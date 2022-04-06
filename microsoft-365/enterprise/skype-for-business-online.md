@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 f1.keywords:
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
 description: Como administrador, busque ayuda para configurar partes de Skype Empresarial Online, incluida la red, las reuniones y la mensajería instantánea, y el acceso externo para los usuarios.
-ms.openlocfilehash: 00ddd9072fccf07d7d0d5d2c148950112d40e075
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3be6eaaf5d39ebb62dcc4a7cc090633147681301
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60197226"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682138"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Skype Empresarial Online en Office 365 ayuda de administración
 
@@ -69,7 +69,7 @@ Vea también:
     
 - [¿Necesita ayuda para iniciar sesión Skype Empresarial?](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
     
-- [Vídeo: Iniciar y cerrar sesión Skype Empresarial](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
+- [Vídeo: iniciar y cerrar sesión Skype Empresarial](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
     
 - [Establecer opciones de dispositivo de audio en Skype Empresarial](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
     
@@ -89,6 +89,6 @@ Vea también:
     
 - [Iniciar una llamada de conferencia de Skype Empresarial](https://support.office.com/article/8dc8ac52-91ac-4db9-8672-11551fdaf997)
     
- **Para obtener más artículos para los usuarios, [vea Skype Empresarial ayuda](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410).**
+ **Para obtener más artículos para los usuarios, [consulte Skype Empresarial ayuda](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410).**
   
 

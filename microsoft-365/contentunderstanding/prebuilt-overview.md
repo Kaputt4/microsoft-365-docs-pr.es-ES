@@ -8,17 +8,22 @@ audience: admin
 ms.topic: article
 ms.customer: intro-overview
 ms.prod: microsoft-365-enterprise
-search.appverid: null
+search.appverid: ''
 ms.collection:
-  - enabler-strategic
-  - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre los modelos precompilados en Microsoft SharePoint Syntex.
+ms.openlocfilehash: 1146e4947392ce0e0848632e55f22e5b8b8d2d91
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569056"
 ---
-
 # <a name="prebuilt-models-overview-in-microsoft-sharepoint-syntex"></a>Introducción a los modelos precompilado en Microsoft SharePoint Syntex
 
-Además de comprender [los modelos de](document-understanding-overview.md) documentos y los modelos de procesamiento de [formularios,](form-processing-overview.md) SharePoint Syntex proporciona modelos precompilado para automatizar la extracción de información.
+Además de comprender [los modelos de](document-understanding-overview.md) documentos y los modelos de procesamiento de [formularios,](form-processing-overview.md) SharePoint Syntex modelos precompilado para automatizar la extracción de información.
 
 Los modelos precompilados están previamente entrenados para reconocer documentos y la información estructurada de los documentos. En lugar de tener que crear un nuevo modelo personalizado desde cero, puede iterar en un modelo preentrenado existente para agregar campos específicos que se ajusten a las necesidades de su organización. 
 
@@ -28,9 +33,11 @@ Al igual que los modelos de descripción de documentos, los modelos precompilado
 
 Después de publicar el modelo, utilice el centro de contenido para aplicarlo a cualquier biblioteca de documentos de SharePoint a la que tenga acceso.  
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 - Formatos de archivo compatibles: JPEG, PNG, BMP, TIFF y PDF (incrustados en texto o escaneados).
+
+- Idiomas admitidos: actualmente solo se admiten las facturas en inglés Estados Unidos de la cuenta. Se admiten los recibos de ventas en inglés de Australia, Canadá, Estados Unidos, Gran Bretaña e India.
 
 - Los ARCHIVOS PDF incrustados en texto son los mejores para eliminar la posibilidad de error en la extracción y ubicación de caracteres.
 
@@ -46,7 +53,7 @@ Después de publicar el modelo, utilice el centro de contenido para aplicarlo a 
 
 ### <a name="file-limitations"></a>Limitaciones de archivos
 
-Tenga en cuenta las siguientes diferencias Microsoft Office archivos basados en texto y archivos escaneados por OCR (PDF, imagen o TIFF):
+Tenga en cuenta las siguientes diferencias Microsoft Office archivos basados en texto y archivos examinados por OCR (PDF, imagen o TIFF):
 
 - Office: truncados a 64.000 caracteres (cuando se ejecutan en archivos de una biblioteca de documentos).
 
@@ -63,7 +70,7 @@ Tenga en cuenta las siguientes diferencias Microsoft Office archivos basados en 
 - No se admite la aplicación de más de un modelo de procesamiento de formularios personalizado a una biblioteca.
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Usar un modelo precompilado para extraer información de facturas o recibos](prebuilt-overview.md)
  

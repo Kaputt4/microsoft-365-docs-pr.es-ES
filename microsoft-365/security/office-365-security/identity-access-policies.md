@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 36df54090e80de180ffa16f41641daa6b6966eb9
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 2a12a4198b91ab6ec91e0b49b9de3647e25d0be0
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681334"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473857"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos y identidad de confianza cero
 
@@ -37,7 +37,7 @@ En esta guía se describe cómo implementar las directivas recomendadas en un en
 
 En el siguiente diagrama se muestra el conjunto de directivas recomendado. Muestra a qué nivel de protección se aplica cada directiva y si las directivas se aplican a equipos, teléfonos y tabletas, o ambas categorías de dispositivos. También indica dónde se configuran estas directivas.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png" alt-text="Directivas comunes para configurar la identidad de confianza cero y el acceso a dispositivos." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png" alt-text="Las directivas comunes para configurar la identidad de confianza cero y el acceso a dispositivos." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png":::
 
 
 <!--
@@ -76,7 +76,7 @@ Una práctica recomendada es crear un grupo Azure AD de exclusión de acceso con
 
 Este es un ejemplo de asignación de grupo y exclusiones para requerir MFA.
 
-![Ejemplo de asignación de grupos y exclusiones para directivas de MFA.](../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png" alt-text="Ejemplo de asignación de grupo y exclusiones para directivas de MFA" lightbox="../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png":::
 
 Estos son los resultados:
 
@@ -94,7 +94,7 @@ Tenga cuidado al aplicar niveles más altos de protección a grupos y usuarios. 
 
 Todos Azure AD creados como parte de estas recomendaciones deben crearse como Microsoft 365 grupos. Esto es importante para la implementación de etiquetas de confidencialidad al proteger documentos en Microsoft Teams y SharePoint.
 
-![Ejemplo de creación de un Microsoft 365 grupo.](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png" alt-text="Creación de un Microsoft 365 grupo" lightbox="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png":::
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Requerir MFA en función del riesgo de inicio de sesión
 
@@ -111,7 +111,7 @@ En las tablas siguientes se describe la configuración de la directiva de acceso
 
 En la **sección Asignaciones** :
 
-|Configuración|Propiedades|Valores|Notas|
+|Valor|Propiedades|Valores|Notas|
 |---|---|---|---|
 |Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos**: seleccione grupos específicos que contengan cuentas de usuario dirigidas.|Comience con el grupo que incluye cuentas de usuario piloto.|
 ||Excluir|**Usuarios y grupos**: seleccione el grupo de excepciones acceso condicional; cuentas de servicio (identidades de aplicación).|La pertenencia debe modificarse según sea necesario y temporalmente.|
@@ -131,7 +131,7 @@ Aplica la configuración del nivel de riesgo en función del nivel de protecció
 
 En la **sección Controles de** Access:
 
-|Configuración|Propiedades|Valores|Acción|
+|Valor|Propiedades|Valores|Acción|
 |---|---|---|---|
 |Conceder|**Conceder acceso**||Seleccionar|
 |||**Requerir autenticación multifactor**|Cheque|
@@ -151,7 +151,7 @@ Vea [este artículo](../../enterprise/microsoft-365-client-support-multi-factor-
 
 En la **sección Asignaciones** :
 
-|Configuración|Propiedades|Valores|Notas|
+|Valor|Propiedades|Valores|Notas|
 |---|---|---|---|
 |Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos**: seleccione grupos específicos que contengan cuentas de usuario dirigidas.|Comience con el grupo que incluye cuentas de usuario piloto.|
 ||Excluir|**Usuarios y grupos**: seleccione el grupo de excepciones acceso condicional; cuentas de servicio (identidades de aplicación).|La pertenencia debe modificarse según sea necesario y temporalmente.|
@@ -160,7 +160,7 @@ En la **sección Asignaciones** :
 
 En la **sección Controles de** Access:
 
-|Configuración|Propiedades|Valores|Acción|
+|Valor|Propiedades|Valores|Acción|
 |---|---|---|---|
 |Conceder|**Bloquear acceso**||Seleccionar|
 ||**Exigir todos los controles seleccionados**||Seleccionar|
@@ -190,7 +190,7 @@ En la segunda **sección Asignaciones** :
 
 |Tipo|Propiedades|Valores|Acción|
 |---|---|---|---|
-|Acceso|**Permitir acceso**||Seleccionar|
+|Access|**Permitir acceso**||Seleccionar|
 |||**Exigir cambio de contraseña**|Cheque|
 
 Elija **Listo** para guardar la **configuración de Access** .
@@ -383,7 +383,7 @@ Para **Seguridad del sistema**, consulte esta tabla.
 
 |Tipo|Propiedades|Valor|Acción|
 |---|---|---|---|
-|Reglas de Microsoft Defender para endpoint en el Centro Microsoft Endpoint Manager administración|[Requerir que el dispositivo esté en o bajo la puntuación de riesgo de la máquina](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medio|Seleccionar|
+|Reglas de Microsoft Defender para endpoint en el Centro Microsoft Endpoint Manager administración|[Requerir que el dispositivo esté en o bajo la puntuación de riesgo de la máquina](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Mediano|Seleccionar|
 
 <!--
 ## Require compliant PCs (but not compliant phones and tablets)
@@ -442,6 +442,6 @@ Para requerir el cumplimiento de todos los dispositivos:
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Paso 3: Directivas para usuarios invitados y externos.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
+[![Paso 3: Directivas para usuarios invitados y externos.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png#lightbox)](identity-access-policies-guest-access.md)
 
 [Más información sobre las recomendaciones de directiva para usuarios invitados y externos](identity-access-policies-guest-access.md)

@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 70a5eba3eb78878cc1f15bdd711a3331e9af870a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e9cd2388d3551ccc0c180d20a92ec0c513472797
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680894"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473681"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Investigación y respuesta automatizadas (AIR) en Microsoft Defender para Office 365
 
@@ -122,7 +122,7 @@ Los permisos se conceden a través de determinados roles, como los que se descri
 
 Si ya estás usando las funcionalidades de AIR en Microsoft Defender para Office 365, estás a punto de ver algunos cambios en el [portal de Microsoft 365 Defender mejorado](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro de acciones unificadas.":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro de acciones unificadas" lightbox="../../media/m3d-action-center-unified.png":::
 
 El nuevo y mejorado portal de Microsoft 365 Defender reúne <https://security.microsoft.com> las capacidades de AIR en [Microsoft Defender para Office 365](defender-for-office-365.md) y en [Microsoft Defender para endpoint](../defender-endpoint/automated-investigations.md). Con estas actualizaciones y mejoras, su equipo de operaciones de seguridad podrá ver detalles sobre investigaciones automatizadas y acciones de corrección en todos sus correos electrónicos, contenido de colaboración, cuentas de usuario y dispositivos, todo en un mismo sitio.
 

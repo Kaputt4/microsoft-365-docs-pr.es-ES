@@ -1,7 +1,7 @@
 ---
 title: Informe de no entrega en el panel flujo de correo
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,14 +9,19 @@ audience: ITPro
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.localizationpriority: medium
-ms.assetid: null
+ms.assetid: ''
 ms.custom:
-  - seo-marvel-apr2020
+- seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el informe de detalles de no entrega en el panel flujo de correo del Centro de seguridad y cumplimiento de & para supervisar los códigos de error encontrados con más frecuencia en los informes de no entrega (también conocidos como NDR o mensajes de rebote) de los remitentes de su organización.
 ms.technology: mdo
 ms.prod: m365-security
+ms.openlocfilehash: bc408f6bb28b11e77c49755b888c44e0ea4d9f57
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473747"
 ---
-
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>Informe de no entrega en el Centro de seguridad & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -28,7 +33,7 @@ ms.prod: m365-security
 
 El  informe de no entrega en el [](mail-flow-insights-v2.md) panel flujo de correo del Centro de seguridad y cumplimiento de [&](https://protection.office.com) muestra los códigos de error más encontrados en los informes de no entrega (también conocidos como NDR o mensajes de rebote) para los usuarios de la organización. Este informe muestra los detalles de las NDR para que pueda solucionar problemas de entrega de correo electrónico.
 
-![Widget de informe de no entrega en el panel Flujo de correo del Centro de & cumplimiento.](../../media/mfi-non-delivery-report-widget.png)
+:::image type="content" source="../../media/mfi-non-delivery-report-widget.png" alt-text="El widget Informe de no entrega en el panel Flujo de correo del Centro de & cumplimiento" lightbox="../../media/mfi-non-delivery-report-widget.png":::
 
 ## <a name="report-view-for-the-non-delivery-report"></a>Vista Informe para el informe de no entrega
 
@@ -38,7 +43,7 @@ De forma predeterminada, se muestra la actividad de todos los códigos de error.
 
 Si mantiene el mouse sobre un color específico (código de error) en un día específico del gráfico, verá el número total de mensajes del error.
 
-![Vista Informe en el informe de dominio no aceptado.](../../media/mfi-non-delivery-report-overview-view.png)
+:::image type="content" source="../../media/mfi-non-delivery-report-overview-view.png" alt-text="La vista Informe del informe de dominio no aceptado" lightbox="../../media/mfi-non-delivery-report-overview-view.png":::
 
 ## <a name="details-table-view-for-the-non-delivery-report"></a>Vista de tabla Detalles del informe de no entrega
 
@@ -60,7 +65,8 @@ Al seleccionar una fila de la tabla, aparece un menú desplegable con la siguien
 - **Count**
 - **Mensajes de** ejemplo: puede hacer clic **en Ver mensajes de** ejemplo para [ver los](message-trace-scc.md) resultados del seguimiento de mensajes de una muestra de los mensajes afectados.
 
-![Los detalles se desvía después de seleccionar una fila en la vista Tabla de detalles en el informe de no entrega.](../../media/mfi-non-delivery-report-details-flyout.png)
+
+:::image type="content" source="../../media/mfi-non-delivery-report-details-flyout.png" alt-text="El menú desplegable Detalles después de seleccionar una fila en la vista Tabla de detalles en el informe de no entrega" lightbox="../../media/mfi-non-delivery-report-details-flyout.png":::
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -16,13 +16,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: ''
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo planear y ejecutar un programa piloto de prueba para SharePoint Syntex en su organización.
-ms.openlocfilehash: 74b44c14140f26e0744aac73fd948e58d9d33e24
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre cómo planear, registrarse y ejecutar un programa piloto de prueba para SharePoint Syntex en su organización.
+ms.openlocfilehash: c3f081654e7661e5c298bab15da90d8337dfc418
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60156383"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473637"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Ejecutar una prueba de Microsoft SharePoint Syntex
 
@@ -30,18 +30,18 @@ En este artículo se describe cómo configurar y ejecutar un programa piloto de 
 
 ## <a name="sign-up-for-a-trial"></a>Registrarse para una versión de prueba
 
-La versión de SharePoint Syntex ofrece acceso a 300 usuarios durante 30 días.
+La prueba de SharePoint Syntex ofrece acceso a 300 usuarios durante 30 días.
 
 > [!NOTE]
 > Hasta 300 usuarios se incluyen en la versión de prueba para garantizar la adición automática de 1 millón de créditos de AI Builder. No es necesario incluir 300 usuarios para que una prueba se realice correctamente.
 
 Puede obtener la versión de prueba de uno de los siguientes orígenes:
 
-- Página [SharePoint Syntex producto](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:overviewtab)
+- La [SharePoint Syntex del producto](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:overviewtab)
 
 - El [Centro de administración de Microsoft 365](https://admin.microsoft.com)
     1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com).
-    2. Vaya a **Servicios de compra** de  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**facturación**</a>.
+    2. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**BillingPurchase**</a> >  Services.
     3. Desplácese hacia abajo hasta la sección **Complementos**.
     4. En el icono SharePoint Syntex, seleccione **Detalles**.
     5. Seleccione **Obtener prueba gratuita**.
@@ -54,7 +54,7 @@ Debe ser un administrador Microsoft 365 global o administrador de facturación p
 |Rol|Actividad|
 |---|---|
 |Microsoft 365 administrador global o de facturación|Activar la versión de prueba y asignar licencias|
-|Microsoft 365 administrador global o administrador SharePoint administrador|Configurar SharePoint Syntex y crear centros de contenido|
+|Administrador global de Microsoft 365 o administrador de SharePoint|Configurar SharePoint Syntex y crear centros de contenido|
 |Usuarios empresariales|Creación y pruebas de modelos|
 
 ### <a name="before-you-activate-a-trial"></a>Antes de activar una versión de prueba
@@ -66,7 +66,7 @@ Para planear correctamente una SharePoint Syntex prueba, tenga en cuenta los sig
 
 Un inquilino de prueba o demostración puede usarse como una "ejecución en seco" para recorrer los pasos de activación y los controles administrativos. Pero probablemente sea mejor evaluar la creación de modelos en un inquilino de producción.
 
-Para maximizar el valor de una prueba en un inquilino de producción, la planeación y la participación empresarial son esenciales. Debe participar en una o más áreas de negocio para identificar de tres a seis casos de uso que podrían ser posiblemente abordados por SharePoint Syntex. Estos casos de uso deben:
+Para maximizar el valor de una prueba en un inquilino de producción, la planeación y la participación empresarial son esenciales. Debe participar en una o más áreas de negocio para identificar de tres a seis casos de uso que podrían ser abordados por SharePoint Syntex. Estos casos de uso deben:
 
 - Incluya escenarios que podrían resolverse mediante el modelo de procesamiento de formularios o de comprensión de documentos.
 - Tener una comprensión clara del propósito de los metadatos extraídos; por ejemplo, ver el formato o la automatización mediante Power Automate. Aunque SharePoint Syntex está centrado en clasificar documentos y extraer metadatos, el valor que se va a cuantificar es lo que habilitan estos metadatos.
@@ -84,7 +84,7 @@ Al iniciar una prueba, debe:
 - Realice [una configuración adicional de SharePoint Syntex](set-up-content-understanding.md).
   - Es posible que desee crear [centros de contenido adicionales](create-a-content-center.md).
 
-Después de activar la prueba, puede crear modelos y procesar archivos. Vea [las instrucciones para la creación de modelos](create-a-content-center.md).
+Después de activar la prueba, puede crear modelos y procesar archivos. Consulte [las instrucciones para la creación de modelos](create-a-content-center.md).
 
 ## <a name="during-a-trial"></a>Durante una prueba
 
@@ -98,7 +98,7 @@ En función del resultado de la prueba, puede decidir si procede al uso de produ
 
 Para garantizar la continuidad del servicio, debe comprar el número necesario de licencias y asignar esas licencias a los usuarios. Los usuarios de prueba que no tienen una licencia completa al final del período de prueba no podrán usar completamente SharePoint Syntex.
 
-Es posible que tenga que calcular el uso previsto del procesamiento de formularios y planear la cantidad esperada de créditos de AI Builder. Para obtener ayuda, [vea Estimate the AI Builder capacity that's right for you](https://powerapps.microsoft.com/ai-builder-calculator/).
+Es posible que tenga que calcular el uso previsto del procesamiento de formularios y planear la cantidad esperada de créditos de AI Builder. Para obtener ayuda, [consulte Estimate the AI Builder capacity that's right for you](https://powerapps.microsoft.com/ai-builder-calculator/).
 
 ### <a name="dont-proceed-to-production-use"></a>No continuar con el uso de producción
 
@@ -108,7 +108,7 @@ Si no compra licencias después de la versión de prueba:
 - Las bibliotecas que estaban ejecutando modelos ya no clasificarán automáticamente archivos ni extraerán modelos.
 - Los archivos clasificados previamente o los metadatos extraídos no se verán afectados.
 - Los centros de contenido y los modelos de comprensión de documentos no se eliminarán automáticamente. Estos permanecerán disponibles para su uso si decide comprar licencias en el futuro.
-- Los modelos de procesamiento de formularios se almacenarán en la instancia dataverse (anteriormente denominada Common Data Service [CDS]) del entorno predeterminado de Power Platform. Se podrían usar con licencias futuras para SharePoint Syntex o con funcionalidades de AI Builder en power platform.
+- Los modelos de procesamiento de formularios se almacenarán en la instancia dataverse (anteriormente denominada Common Data Service [CDS]) del entorno predeterminado de Power Platform. Estas se podrían usar con futuras licencias para SharePoint Syntex o con funcionalidades de AI Builder en power platform.
 
 ## <a name="see-also"></a>Vea también
 

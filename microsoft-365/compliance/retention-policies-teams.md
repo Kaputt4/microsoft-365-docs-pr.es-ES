@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: fc870050b8ef69a908553617d755412d95efa288
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: f2b3b5a61eabbffc50da34b14baa20e025b8da0f
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63714882"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568530"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -100,7 +100,7 @@ Para las dos rutas en el diagrama:
 > [!NOTE]
 > Los mensajes almacenados en los buzones de correo, incluidas las carpetas ocultas, se pueden buscar mediante herramientas de eDiscovery. Hasta que los mensajes se eliminen permanentemente de la carpeta SubstrateHolds, las herramientas de eDiscovery pueden buscarlos.
 
-Cuando los mensajes se eliminan permanentemente de la carpeta SubstrateHolds, se comunica una operación de eliminación al servicio de chat de backend de Azure, que luego transmite la misma operación a la aplicación cliente de Teams. Los retrasos en esta comunicación o almacenamiento en caché pueden explicar por qué, durante un período corto de tiempo, los usuarios a los que se les asigna la directiva pueden seguir viendo estos mensajes en su aplicación de Teams, pero los datos de estos mensajes no se devuelven en las búsquedas de eDiscovery.
+Cuando el periodo de retención expira y mueve un mensaje a la carpeta SubstrateHolds, se comunica una operación de borrado al servicio de chat Azure backend, que a su vez retransmite la misma operación a la app cliente de Teams. Los retrasos en esta comunicación o almacenamiento en caché pueden explicar por qué, durante un breve período de tiempo, los usuarios siguen viendo estos mensajes en su aplicación de Teams.
 
 En este escenario, en el que el servicio de chat de Azure recibe un comando de eliminación debido a una directiva de retención, el mensaje correspondiente en la aplicación cliente de Teams se elimina para todos los usuarios de la conversación. Algunos de estos usuarios pueden ser de otra organización, tener una directiva de retención con un período de retención más largo o ninguna directiva de retención asignada a ellos. Para estos usuarios, las copias de los mensajes aún se almacenan en sus buzones y permanecen disponibles para la búsqueda en eDiscovery hasta que otra directiva de retención elimine permanentemente los mensajes.
 

@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Referencia de configuración y componente de directiva DLP
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 4888569318fd24d25368dc1c923a1efced9f4126
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 9b9658db71ea9945cedb746ec688eff5018a4ba4
+ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63675446"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64520624"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -104,12 +104,12 @@ Una directiva DLP puede buscar y proteger elementos que contienen información c
 |Ubicación  |Ámbito incluir/excluir  |Estado de datos  |Requisitos previos adicionales |
 |---------|---------|---------|---------|
 |Exchange correo electrónico en línea |grupo de distribución | datos en movimiento| No |
-|SharePoint en línea   |sites       | data-at-rest </br> datos en uso | No|
+|SharePoint en línea   |sitios       | data-at-rest </br> datos en uso | No|
 |Cuentas de OneDrive para la Empresa| cuenta o grupo de distribución |data-at-rest </br> datos en uso|No|
 |Mensajes de canales y chats de Teams     | cuenta o grupo de distribución |datos en movimiento </br> datos en uso |  No       |
 |Microsoft Defender for Cloud Apps   | Instancia de aplicación en la nube       |data-at-rest         | - [Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no son de Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Dispositivos  |usuario o grupo         |data-at-rest </br>  datos en uso </br>  datos en movimiento         |- [Obtenga información sobre Microsoft 365 prevención de pérdida de datos de punto de conexión](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Introducción a la prevención de pérdida de datos de punto de conexión](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configurar la configuración de proxy de dispositivo y conexión a Internet para Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|Repositorios locales (recursos compartidos de archivos y SharePoint)    |repositorio         | data-at-rest         | - [Obtenga información sobre el Microsoft 365 de prevención de pérdida de datos local](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Introducción al escáner local de prevención de pérdida de datos](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|Dispositivos  |usuario o grupo         |data-at-rest </br>  datos en uso </br>  datos en movimiento         |- [Obtenga información sobre Microsoft 365 prevención de pérdida de datos de punto de conexión](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Comenzar con prevención de pérdida de datos de extremo](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configurar el proxy de dispositivo y la configuración de conexión a Internet para Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|Repositorios locales (recursos compartidos de archivos y SharePoint)    |repositorio         | data-at-rest         | - [Obtenga información sobre el Microsoft 365 de prevención de pérdida de datos local](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Comenzar con el escáner local de prevención de pérdida de datos](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 |PowerBI| áreas de trabajo | datos en uso | No|
 
 Si elige incluir grupos de distribución que son específicos en Exchange, la directiva de DLP se aplicará solo a los miembros de ese grupo. Igualmente, la exclusión de un grupo de distribución excluirá a todos los miembros de dicho grupo de distribución de la evaluación de la directiva. Puede escoger entre definir una directiva para los miembros de las listas de distribución, los grupos de distribución dinámicos y los grupos de seguridad. Una directiva DLP no puede contener más de 50 de estas inclusiones y exclusiones.
@@ -297,7 +297,7 @@ Las opciones de contexto disponibles cambian según la ubicación que elija. Si 
 - El contenido contiene
 - Vea, [Actividades de extremo en las que puede supervisar y realizar acciones](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
-##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Condiciones compatibles con Microsoft Defender para Aplicaciones en la nube
+##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Condiciones Microsoft Defender for Cloud Apps admite
 
 - El contenido contiene
 - El contenido se comparte desde Microsoft 365
@@ -405,7 +405,7 @@ Al seleccionar **Auditar** o restringir actividades en Windows dispositivos, pue
 
 - Todas las aplicaciones
 - Por una lista de aplicaciones restringidas que definas
-- Ay un grupo de aplicaciones restringido (versión preliminar) que definas.
+- Un grupo de aplicaciones restringido (versión preliminar) que definas.
 
 ##### <a name="service-domain-and-browser-activities"></a>Actividades de explorador y dominio de servicio
 
@@ -423,7 +423,7 @@ Con la **opción Actividades de archivo para todas** las aplicaciones, seleccion
 - **Servicios de Escritorio remoto**
 
 
-##### <a name="restricted-app-activities"></a>Actividades de aplicaciones restringidas  
+##### <a name="restricted-app-activities"></a>Actividades de aplicación restringidas  
 
 Anteriormente denominadas aplicaciones sin alambrar, defines una lista de aplicaciones en la configuración de DLP de extremo en la que quieras aplicar restricciones. Cuando un usuario intenta obtener acceso a un archivo protegido de DLP con una aplicación que está en la lista, puede `Audit only`, `Block with override`o la `Block` actividad. Las acciones DLP definidas en **actividades de aplicaciones** restringidas se invalidan si la aplicación es miembro del grupo de aplicaciones restringido. A continuación, se aplican las acciones definidas en el grupo de aplicaciones restringido.
 
@@ -439,7 +439,7 @@ Cuando selecciona cualquiera de las opciones Aplicar *restricciones* y un usuari
 
 Consulta Aplicaciones [restringidas y grupos de aplicaciones](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) para obtener más información. 
 
-#### <a name="microsoft-defender-for-cloud-apps-actions"></a>Acciones de Microsoft Defender para Aplicaciones en la nube
+#### <a name="microsoft-defender-for-cloud-apps-actions"></a>Microsoft Defender for Cloud Apps acciones
 
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicación
 - Restringir aplicaciones de terceros
@@ -480,7 +480,7 @@ Por ejemplo, si seleccionas Exchange dispositivos como ubicaciones, estas accion
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicación
 - Auditar o restringir actividades en Windows dispositivos
 
-Si selecciona Dispositivos y Microsoft Defender para aplicaciones en la nube, estas acciones estarán disponibles:
+Si selecciona Dispositivos y Microsoft Defender for Cloud Apps, estas acciones estarán disponibles:
 
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicación
 - Auditar o restringir actividades en Windows dispositivos
@@ -531,9 +531,9 @@ Puedes habilitar o deshabilitar las notificaciones de usuario para varias aplica
 
 y personalizar el texto del correo electrónico, el asunto y el texto de la sugerencia de directiva.
 
-![Opciones de configuración de notificación de usuario y sugerencia de directiva que están disponibles para Exchange, SharePoint, OneDrive, chat y canal de Teams y Defender para aplicaciones en la nube](../media/dlp-user-notification-non-devices.png)
+![Opciones de configuración de notificaciones de usuario y sugerencias de directiva que están disponibles para Exchange, SharePoint, OneDrive, chat y canal de Teams y aplicaciones Defender for Cloud web](../media/dlp-user-notification-non-devices.png)
 
-Si seleccionaste Solo dispositivos, recibirás todas las mismas opciones que están disponibles para Exchange, SharePoint, OneDrive, chat de Teams y Canal y Defender para aplicaciones en la nube, además de la opción de personalizar el título de notificación y el contenido que aparece en el dispositivo Windows 10.
+Si seleccionaste Solo dispositivos, recibirás todas las mismas opciones que están disponibles para Exchange, SharePoint, OneDrive, chat y canal de Teams y aplicaciones de Defender for Cloud, además de la opción de personalizar el título de notificación y el contenido que aparece en el dispositivo Windows 10 .
 
 ![Opciones de configuración de notificación de usuario y sugerencia de directiva que están disponibles para dispositivos](../media/dlp-user-notification-devices.png)  
 
@@ -646,7 +646,7 @@ DLP examina el correo electrónico de forma diferente que SharePoint online o On
 
 Si tiene varias reglas en una directiva, puede usar las opciones adicionales  para controlar el procesamiento de reglas adicionales si hay una coincidencia con la regla que está editando, así como establecer la prioridad para la evaluación de la regla.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planear la prevención de pérdida de datos (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)

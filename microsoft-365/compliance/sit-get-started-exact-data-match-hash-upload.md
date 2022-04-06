@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Aplica hash y carga la tabla de origen de información confidencial para obtener datos exactos que coincidan con los tipos de información confidencial.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8d3effe3d46375ffcaec268e4b3fc6d53fc5044e
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: e8726b17a3f87d61c8d63be7137ec8e465a5cd9a
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526504"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568486"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>Aplicar hash y cargar la tabla de origen de información confidencial para los datos exactos que coincidan con los tipos de información confidencial
 
@@ -51,18 +51,19 @@ Si no desea exponer el archivo de tabla de origen de información confidencial d
 ### <a name="best-practices"></a>Procedimientos recomendados
 
 Separe los procesos de hashing y carga de los datos confidenciales para que pueda aislar más fácilmente cualquier problema en el proceso.
- 
+
 Una vez en producción, mantenga los dos pasos separados en la mayoría de los casos. Al realizar el proceso de hash en un equipo aislado y, a continuación, transferir el archivo para cargarlo en un equipo con conexión a Internet, se asegura de que los datos reales nunca estén disponibles en forma de texto sin formato en un equipo que podría haber estado en peligro debido a su conexión a Internet.
 
-### <a name="ensure-your-sensitive-data-table-doesnt-have-formatting-issues"></a>Asegúrese de que la tabla de datos confidenciales no tiene problemas de formato. 
+### <a name="ensure-your-sensitive-data-table-doesnt-have-formatting-issues"></a>Asegúrese de que la tabla de datos confidenciales no tiene problemas de formato.
 
-Antes de hash y cargar los datos confidenciales, realice una búsqueda para validar la presencia de caracteres especiales que pueden causar problemas al analizar el contenido. Puede validar que la tabla está en un formato adecuado para usar con EDM mediante el agente de carga de EDM con la sintaxis siguiente:
+Antes de hash y cargar los datos confidenciales, realice una búsqueda para validar la presencia de caracteres especiales que pueden causar problemas al analizar el contenido.
+Puede validar que la tabla está en un formato adecuado para usar con EDM mediante el agente de carga de EDM con la sintaxis siguiente:
 
 ```powershell
-EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file] 
+EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 ```
 
-Si la herramienta indica un error de coincidencia en el número de columnas, puede deberse a la presencia de comas o caracteres de comillas dentro de los valores de la tabla que se confunden con delimitadores de columna. A menos que estén rodeando un valor completo, las comillas simples y dobles pueden hacer que la herramienta se desidentifique erróneamente dónde comienza o termina una columna individual. 
+Si la herramienta indica un error de coincidencia en el número de columnas, puede deberse a la presencia de comas o caracteres de comillas dentro de los valores de la tabla que se confunden con delimitadores de columna. A menos que estén rodeando un valor completo, las comillas simples y dobles pueden hacer que la herramienta se desidentifique erróneamente dónde comienza o termina una columna individual.
 
 **Si encuentra caracteres de comillas sencillas o dobles que rodean valores completos**: puede dejarlos tal como están.
 
@@ -93,7 +94,7 @@ Este equipo debe tener acceso directo a su espacio empresarial de Microsoft 365.
 > [!NOTE]
 > Antes de comenzar este procedimiento, asegúrese de que es miembro del grupo de seguridad **EDM\_DataUploaders**.
 
-> [!TIP] 
+> [!TIP]
 >Opcionalmente, puede ejecutar una validación en el archivo de tabla de origen de información confidencial para comprobar si hay errores antes de cargarlo ejecutando:
 >
 > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
@@ -121,8 +122,8 @@ Este equipo debe tener acceso directo a su espacio empresarial de Microsoft 365.
 
    `EdmUploadAgent.exe /Authorize`
 
-> [!IMPORTANT]
-> Debe ejecutar el **EdmUploadAgent** desde la carpeta donde está instalado e indicar la ruta de acceso completa a los archivos de datos. 
+   > [!IMPORTANT]
+   > Debe ejecutar el **EdmUploadAgent** desde la carpeta donde está instalado e indicar la ruta de acceso completa a los archivos de datos.
 
 4. Inicie sesión con su cuenta profesional o educativa de Microsoft 365 que se ha agregado al grupo de seguridad de EDM_DataUploaders. La información de inquilino se extrae de la cuenta de usuario para establecer una conexión.
 
@@ -137,14 +138,15 @@ Este equipo debe tener acceso directo a su espacio empresarial de Microsoft 365.
    ```dos
    EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"] /AllowedBadLinesPercentage [value]
    ```
+
    > [!NOTE]
-> El formato predeterminado del archivo de datos confidenciales son valores separados por comas. Puede especificar un archivo separado por tabulaciones indicando la opción "{Tab}" con el parámetro /ColumnSeparator, o bien puede especificar un archivo separado por canalización indicando la opción "|".
+   > El formato predeterminado del archivo de datos confidenciales son valores separados por comas. Puede especificar un archivo separado por tabulaciones indicando la opción "{Tab}" con el parámetro /ColumnSeparator, o bien puede especificar un archivo separado por canalización indicando la opción "|".
+   >
+   > Ejemplo: `EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5`
 
-   Ejemplo: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5**
+   Si la tabla de información confidencial tiene algunos valores con formato incorrecto, pero desea importar los datos restantes ignorando filas no válidas de todos modos, puede usar el parámetro */AllowedBadLinesPercentage* en el comando. En el ejemplo anterior se especifica un umbral del cinco por ciento. Esto significa que la herramienta hash y cargará la tabla de información confidencial incluso si hasta el cinco por ciento de las filas no son válidas.
 
-Si la tabla de información confidencial tiene algunos valores con formato incorrecto, pero desea importar los datos restantes ignorando filas no válidas de todos modos, puede usar el parámetro */AllowedBadLinesPercentage* en el comando. En el ejemplo anterior se especifica un umbral del cinco por ciento. Esto significa que la herramienta hash y cargará la tabla de información confidencial incluso si hasta el cinco por ciento de las filas no son válidas. 
-
-Este comando agregará automáticamente un valor de sal generado aleatoriamente al hash para mayor seguridad. De forma opcional, si quiere usar su propio valor de sal, agregue **/Salt <saltvalue>** al comando. Este valor debe tener 64 caracteres de longitud y solo puede contener los caracteres a-z y 0-9.
+   Este comando agregará automáticamente un valor de sal generado aleatoriamente al hash para mayor seguridad. De forma opcional, si quiere usar su propio valor de sal, agregue **/Salt \<saltvalue\>** al comando. Este valor debe tener 64 caracteres de longitud y solo puede contener los caracteres a-z y 0-9.
 
 6. Compruebe el estado de la carga al ejecutar este comando:
 
@@ -152,9 +154,9 @@ Este comando agregará automáticamente un valor de sal generado aleatoriamente 
    EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>
    ```
 
-   Ejemplo: **EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords**
+   Ejemplo: `EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords`
 
-   Verifique que el estado se encuentre en **ProcesamientoEnCurso**. Verifique nuevamente cada pocos minutos hasta que el estado cambie a **Completado**. Una vez que el estado se muestre como completado, los datos de EDM ya están listos para su uso. Según el tamaño del archivo de tabla de origen de información confidencial, esto puede tardar de unos minutos a varias horas. 
+   Verifique que el estado se encuentre en **ProcesamientoEnCurso**. Verifique nuevamente cada pocos minutos hasta que el estado cambie a **Completado**. Una vez que el estado se muestre como completado, los datos de EDM ya están listos para su uso. Según el tamaño del archivo de tabla de origen de información confidencial, esto puede tardar de unos minutos a varias horas.
 
 > [!TIP]
 > Si desea recibir una notificación una vez que los datos confidenciales cargados estén listos para usarse, siga los procedimientos descritos en Crear notificaciones para las actividades [exactas de coincidencia de datos](sit-edm-notifications-activities.md#create-notifications-for-exact-data-match-activities).
@@ -181,24 +183,24 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5
    ```
 
-> [!NOTE]
-> El formato predeterminado del archivo de datos confidenciales son valores separados por comas. Puede especificar un archivo separado por tabulaciones indicando la opción "{Tab}" con el parámetro /ColumnSeparator, o bien puede especificar un archivo separado por canalización indicando la opción "|".
+   > [!NOTE]
+   > El formato predeterminado del archivo de datos confidenciales son valores separados por comas. Puede especificar un archivo separado por tabulaciones indicando la opción "{Tab}" con el parámetro /ColumnSeparator, o bien puede especificar un archivo separado por canalización indicando la opción "|".
 
-
-   De este forma, se obtendrá un archivo con hash y un archivo de sal con estas extensiones si no ha especificado la opción **/Salt <saltvalue>**:
+   De este forma, se obtendrá un archivo con hash y un archivo de sal con estas extensiones si no ha especificado la opción **/Salt \<saltvalue\>**:
 
    - .EdmHash
    - .EdmSalt
-
 
 2. Copie estos archivos de forma segura en el equipo que usará para cargar el archivo de tabla de origen de información confidencial (PatientRecords) en su inquilino.
 
 3. Autorizar el agente de Upload EDM, abrir la ventana del símbolo del sistema como administrador, cambiar al directorio **C:\EDM\Data** y, a continuación, ejecutar el siguiente comando:
 
-   `EdmUploadAgent.exe /Authorize`
+   ```dos
+   EdmUploadAgent.exe /Authorize
+   ```
 
-> [!IMPORTANT]
-> Debe ejecutar el **EdmUploadAgent** desde la carpeta donde está instalado e indicar la ruta de acceso completa a los archivos de datos. 
+   > [!IMPORTANT]
+   > Debe ejecutar el **EdmUploadAgent** desde la carpeta donde está instalado e indicar la ruta de acceso completa a los archivos de datos.
 
 4. Inicie sesión con su cuenta profesional o educativa de Microsoft 365 que se ha agregado al grupo de seguridad de EDM_DataUploaders. La información de inquilino se extrae de la cuenta de usuario para establecer una conexión.
 
@@ -219,6 +221,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    ```dos
    EdmUploadAgent.exe /GetDataStore
    ```
+
    Verá una lista de almacenes de datos y la última vez que se actualizaron.
 
 7. Si desea ver todas las cargas de datos en un almacén determinado, ejecute el siguiente comando en un símbolo del sistema de Windows para ver una lista de todos los almacenes de datos y cuándo se actualizaron:
@@ -226,8 +229,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    ```dos
    EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>
    ```
-     
+
 ## <a name="next-step"></a>Paso siguiente
 
 - [Crear un paquete de reglas o tipo de información confidencial de coincidencia exacta de datos](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package)
-

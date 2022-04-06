@@ -324,7 +324,6 @@
 ##### [Programar exámenes mediante PowerShell](schedule-antivirus-scans-powershell.md)
 ##### [Programar exámenes mediante WMI](schedule-antivirus-scans-wmi.md)
 #### [Usar el análisis rápido limitado en el Antivirus de Windows Defender](limited-periodic-scanning-microsoft-defender-antivirus.md)
-#### [Optimizar el rendimiento de Antivirus de Microsoft Defender](tune-performance-defender-antivirus.md)
 #### [Compatibilidad con otros productos para la seguridad](microsoft-defender-antivirus-compatibility.md)
 #### [Buscar nombres de detección de malware para Microsoft Defender para punto de conexión](find-defender-malware-name.md)
 
@@ -364,9 +363,13 @@
 ##### [Exclusiones para Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [Errores comunes que debe evitar](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
-#### Solución de problemas del Antivirus de Microsoft Defender
+#### Diagnóstico y rendimiento de Antivirus de Microsoft Defender
+##### [Informes de cumplimiento y mantenimiento del dispositivo](machine-reports.md)
+##### [Solucionar problemas de rendimiento relacionados con la protección en tiempo real](troubleshoot-performance-issues.md) 
 ##### [Solucionar problemas de informes del Antivirus de Windows Defender en la comprobación de actualizaciones](troubleshoot-reporting.md)
-##### [Solucionar problemas de rendimiento](troubleshoot-performance-issues.md)
+##### [Optimizar el rendimiento de Antivirus de Microsoft Defender](tune-performance-defender-antivirus.md)
+
+#### Solución de problemas del Antivirus de Microsoft Defender
 ##### [Revisar registros de sucesos y códigos de error para solucionar problemas del Antivirus de Windows Defender](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Solucionar problemas del Antivirus de Windows Defender al migrar desde una solución de terceros](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
@@ -456,7 +459,6 @@
 #### [Informes]()
 ##### [Power BI: Cómo usar la API: ejemplos](api-power-bi.md)
 ##### [Informes de protección contra amenazas](threat-protection-reports.md)
-#### [Informes de cumplimiento y mantenimiento del dispositivo](machine-reports.md)
 
 ### [Búsqueda avanzada de amenazas]()
 #### [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Obtenga lo último en aislamiento basado en hardware. Evite que ataques actuales y emergentes como vulnerabilidades o vínculos malintencionados interrumpan la productividad de los empleados y la seguridad empresarial.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8a483c6430721e0540a7012dabfcbd4480fd7ad8
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: da61ee2f5e29501e033ad44bc3fdb04ee2c042f0
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63675380"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473329"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Protección de aplicaciones para Office para administradores
 
@@ -61,7 +61,7 @@ Para obtener más información sobre Office de actualización, vea [Overview of 
 
 2. Seleccione **Protección de aplicaciones de Microsoft Defender** en Windows características y seleccione **Aceptar**. Al habilitar la característica de Protección de aplicaciones, se pedirá un reinicio del sistema. Puede elegir reiniciar ahora o después del paso 3.
 
-   ![Windows cuadro de diálogo Características que muestra AG.](../../media/ag03-deploy.png)
+   :::image type="content" source="../../media/ag03-deploy.png" alt-text="Cuadro de Windows de diálogo Características de Windows que muestra AG" lightbox="../../media/ag03-deploy.png":::
 
    La característica también se puede habilitar ejecutando el siguiente comando de PowerShell como administrador:
 
@@ -71,7 +71,7 @@ Para obtener más información sobre Office de actualización, vea [Overview of 
 
 3. Búsqueda de **Protección de aplicaciones de Microsoft Defender en modo administrado**, una directiva de grupo en **Configuración\\\\ del equipo Plantillas administrativas Windows Componentes\\ Protección de aplicaciones de Microsoft Defender**. Active esta directiva estableciendo el valor en Opciones como **2** o **3** y, a continuación, **seleccione Aceptar** o **Aplicar**.
 
-   ![Active AG en modo administrado.](../../media/ag04-deploy.png)
+   :::image type="content" source="../../media/ag04-deploy.png" alt-text="Opción para activar AG en modo administrado" lightbox="../../media/ag04-deploy.png":::
 
    En su lugar, puede establecer la directiva CSP correspondiente:
 
@@ -88,15 +88,15 @@ Este paso garantiza que los datos necesarios para identificar y corregir problem
 
 1. Abra **Configuración** desde el menú Inicio.
 
-   ![menú Inicio.](../../media/ag05-diagnostic.png)
+   :::image type="content" source="../../media/ag05-diagnostic.png" alt-text="El menú Inicio" lightbox="../../media/ag05-diagnostic.png":::
 
 2. En **Windows Configuración**, seleccione **Privacidad**.
 
-   ![Windows Configuración menú.](../../media/ag06-diagnostic.png)
+   :::image type="content" source="../../media/ag06-diagnostic.png" alt-text="Menú Windows Configuración menú" lightbox="../../media/ag06-diagnostic.png":::
 
 3. En Privacidad, selecciona **Diagnósticos & comentarios y** selecciona **Datos de diagnóstico opcionales**.
 
-   ![Menú diagnóstico y comentarios.](../../media/ag07a-diagnostic.png)
+   :::image type="content" source="../../media/ag07a-diagnostic.png" alt-text="El menú Diagnósticos y comentarios" lightbox="../../media/ag07a-diagnostic.png":::
 
 Para obtener más información sobre cómo Windows de diagnóstico, consulte [Configuring Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enterprise-management).
 
@@ -108,13 +108,13 @@ Para confirmar que Application Guard for Office está habilitado, inicie Word, E
 
 Al abrir por primera vez un archivo que no es de confianza, es posible que vea una Office de presentación como en el ejemplo siguiente. Es posible que se muestre durante algún tiempo mientras se activa la Protección de aplicaciones Office y se abre el archivo. Las aperturas posteriores de archivos que no son de confianza deben ser más rápidas.
 
-![Aplicación de Office pantalla de presentación.](../../media/ag08-confirm.png)
+:::image type="content" source="../../media/ag08-confirm.png" alt-text="Página Aplicación de Office presentación" lightbox="../../media/ag08-confirm.png":::
 
 Al abrirse, el archivo debe mostrar algunos indicadores visuales de que el archivo se abrió dentro de Application Guard para Office:
 
 * Una llamada en la cinta de opciones
 
-  ![Archivo doc que muestra una pequeña nota de App Guard.](../../media/ag09-confirm.png)
+  :::image type="content" source="../../media/ag09-confirm.png" alt-text="El archivo Doc que muestra una pequeña nota de App Guard" lightbox="../../media/ag09-confirm.png":::
 
 * Icono de aplicación con un escudo en la barra de tareas
 
@@ -128,7 +128,7 @@ Office las siguientes directivas para permitirle configurar las capacidades de A
 > [!NOTE]
 > La configuración de estas directivas puede deshabilitar algunas funcionalidades de los archivos abiertos en Application Guard para Office.
 
-|Directiva|Descripción|
+|Policy|Descripción|
 |---|---|
 |No use Application Guard para Office|Habilitar esta directiva forzará a Word, Excel y PowerPoint usar el contenedor de aislamiento vista protegida en lugar de Application Guard para Office. Esta directiva se puede usar para deshabilitar temporalmente la Protección de aplicaciones Office cuando haya problemas al dejarla habilitada para Microsoft Edge.|
 |Configurar Application Guard para la Office anterior a la creación del contenedor|Esta directiva determina si el contenedor de protección de aplicaciones Office, para aislar archivos que no son de confianza, está creado previamente para mejorar el rendimiento en tiempo de ejecución. Si habilita esta configuración, puede especificar el número de días para continuar creando previamente un contenedor o permitir que el Office heurístico integrado cree previamente el contenedor.
@@ -200,7 +200,7 @@ También puedes configurar Microsoft Defender para Office 365 para que funcione 
 
 * Application Guard for Office es un modo protegido que aísla documentos que no son de confianza para que no puedan tener acceso a recursos corporativos de confianza, una intranet, la identidad del usuario y archivos arbitrarios en el equipo. Como resultado, si un usuario intenta obtener acceso a una característica que depende de dicho acceso, como insertar una imagen de un archivo local en el disco, el acceso produce un error y genera un mensaje similar al ejemplo siguiente. Para habilitar un documento que no es de confianza para obtener acceso a recursos de confianza, los usuarios deben quitar la protección de Protección de aplicaciones del documento. 
 
-  ![Cuadro de diálogo que dice Para ayudarle a mantener la seguridad, esta característica no está disponible.](../../media/ag10-limitations.png)
+  :::image type="content" source="../../media/ag09-confirm.png" alt-text="Cuadro de diálogo que indica el mensaje de seguridad y el estado de la característica" lightbox="../../media/ag09-confirm.png":::
 
   > [!NOTE]
   > Aconseje a los usuarios que solo quiten la protección si confían en el archivo y su origen o de dónde provenía.

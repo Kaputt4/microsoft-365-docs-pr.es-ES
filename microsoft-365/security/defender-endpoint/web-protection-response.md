@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cefeb36b43b0c59663935b0dd3a0155e80e44f33
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3a7202c6e522441ecbbfd738d3533a242c966f8c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168864"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467541"
 ---
 # <a name="respond-to-web-threats"></a>Responder a amenazas web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
@@ -38,8 +38,8 @@ La protección web en Microsoft Defender para endpoint le permite investigar y r
 
 Microsoft Defender para endpoint genera las siguientes [alertas para](manage-alerts.md) actividades web malintencionadas o sospechosas:
 
-- **Conexión sospechosa bloqueada** por la protección de red: esta alerta se genera cuando un  intento de acceso a un sitio web malintencionado o a un sitio web de la lista de indicadores personalizados se detiene mediante la protección de red en *modo de* bloqueo
-- **Conexión sospechosa detectada** por la protección de red: esta alerta se genera cuando se detecta un intento de acceso a un sitio web malintencionado o a un sitio web en la lista de indicadores personalizados mediante protección de red en modo de solo *auditoría*
+- **Conexión sospechosa bloqueada por** la protección de red: esta alerta se genera cuando un intento de acceder a un sitio web malintencionado o a un sitio web  de la lista de indicadores personalizados se detiene mediante la protección de red en *modo de* bloqueo
+- **Conexión sospechosa detectada por** la protección de red: esta alerta se genera cuando la protección de red detecta un intento de obtener acceso a un sitio web malintencionado o a un sitio web de la lista de indicadores personalizados en modo de *solo auditoría*
 
 Cada alerta proporciona la siguiente información:
 
@@ -48,10 +48,10 @@ Cada alerta proporciona la siguiente información:
 - Dirección URL malintencionada en la lista de indicadores personalizados
 - Acciones recomendadas para respondedores
 
-![Imagen de una alerta relacionada con la protección contra amenazas web.](images/wtp-alert.png)
+:::image type="content" source="images/wtp-alert.png" alt-text="La alerta relacionada con la protección contra amenazas web" lightbox="images/wtp-alert.png":::
 
 > [!NOTE]
-> Para reducir el volumen de alertas, Microsoft Defender para endpoint consolida las detecciones de amenazas web para el mismo dominio en el mismo dispositivo cada día en una sola alerta. Solo se genera una alerta y se cuenta en el informe [de protección web](web-protection-monitoring.md).
+> Para reducir el volumen de alertas, Microsoft Defender para endpoint consolida las detecciones de amenazas web para el mismo dominio en el mismo dispositivo cada día en una sola alerta. Solo se genera una alerta y se cuenta en el [informe de protección web](web-protection-monitoring.md).
 
 ## <a name="inspect-website-details"></a>Inspeccionar detalles del sitio web
 
@@ -61,7 +61,7 @@ Puedes profundizar seleccionando la dirección URL o el dominio del sitio web en
 - Incidentes y alertas relacionados con el sitio web
 - Con qué frecuencia se ha visto el sitio web en eventos de su organización
 
-    ![Imagen de la página de detalles de la entidad de dirección URL o dominio.](images/wtp-website-details.png)
+  :::image type="content" source="images/wtp-website-details.png" alt-text="Página de detalles de la entidad de dominio o dirección URL" lightbox="images/wtp-website-details.png":::
 
 [Más información sobre las páginas de entidad de dominio o URL](investigate-domain.md)
 
@@ -73,13 +73,14 @@ También puedes comprobar el dispositivo que intentó obtener acceso a una direc
 
 ## <a name="web-browser-and-windows-notifications-for-end-users"></a>Explorador web y notificaciones Windows para usuarios finales
 
-Con la protección web en Microsoft Defender para endpoint, los usuarios finales no podrán visitar sitios web malintencionados o no deseados Microsoft Edge otros exploradores. Dado que el bloqueo se realiza [mediante la protección de red,](network-protection.md)verán un error genérico desde el explorador web. También verán una notificación de Windows.
+Con la protección web en Microsoft Defender para endpoint, los usuarios finales no podrán visitar sitios web malintencionados o no deseados Microsoft Edge otros exploradores. Dado que el bloqueo se realiza [mediante la protección de](network-protection.md) red, verán un error genérico desde el explorador web. También verán una notificación de Windows.
 
-![Imagen de Microsoft Edge muestra un error 403 y la Windows notificación. ](images/wtp-browser-blocking-page.png)
- *Amenaza web bloqueada en Microsoft Edge*
+:::image type="content" source="images/wtp-browser-blocking-page.png" alt-text="El Microsoft Edge muestra un error 403 y la notificación de Windows 403" lightbox="images/wtp-browser-blocking-page.png":::
 
-![Imagen del explorador web chrome que muestra una advertencia de conexión segura y la notificación Windows usuario. ](images/wtp-chrome-browser-blocking-page.png)
- *Amenaza web bloqueada en Chrome*
+*Amenaza web bloqueada en Microsoft Edge*
+
+:::image type="content" source="images/wtp-chrome-browser-blocking-page.png" alt-text="El explorador web de Chrome que muestra una advertencia de conexión segura y la notificación Windows búsqueda" lightbox="images/wtp-chrome-browser-blocking-page.png":::
+*Amenaza web bloqueada en Chrome*
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -16,12 +16,12 @@ ms.custom:
 description: En este artículo se tratan temas como reenvío de correo electrónico externo, reenvío automático, 5.7.520 Acceso denegado, deshabilitación del reenvío externo, mensajes "El administrador ha deshabilitado el reenvío externo", así como la directiva de correo no deseado saliente.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14b41f21efe3608096636444afd4b36de3742a85
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8df0ff9902fe22fd44a0d15f7f01e13e791c7b12
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681422"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473615"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Controlar el reenvío automático de correo electrónico externo en Microsoft 365
 
@@ -91,7 +91,8 @@ La siguiente información es necesaria para crear la regla de flujo de correo en
 - (Opcional) **Haga lo siguiente** (acción): puede configurar una acción opcional. Por ejemplo, puede usar la  \> acción Modificar las propiedades del mensaje establecer un encabezado de **mensaje, con** el nombre de encabezado **X-Forwarded** y el valor **True**. Sin embargo, no es necesario configurar una acción.
 - Establezca **Auditar esta calle con el nivel de gravedad** en el valor **Low**, **Medium** o **High**. Esta configuración le permite usar el informe Exchange [regla de transporte para](view-email-security-reports.md#exchange-transport-rule-report) obtener detalles de los usuarios que están reenviando.
 
-![Propiedades de regla de flujo de correo en el EAC para que una regla identifique los mensajes reenviados.](../../media/mail-flow-rule-for-forwarded-messages.png)
+:::image type="content" source="../../media/mail-flow-rule-for-forwarded-messages.png" alt-text="Las propiedades de la regla de flujo de correo en el EAC para que una regla identifique los mensajes reenviados" lightbox="../../media/mail-flow-rule-for-forwarded-messages.png":::
+
 
 ## <a name="blocked-email-forwarding-messages"></a>Mensajes de reenvío de correo electrónico bloqueados
 
