@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender para punto de conexión en Microsoft 365 Defender
+title: Microsoft Defender para endpoint en Microsoft 365 Defender
 description: Obtenga información sobre los cambios de la Centro de seguridad de Microsoft Defender a Microsoft 365 Defender
-keywords: Introducción a Microsoft 365 Defender, Microsoft Defender para Office 365, Microsoft Defender para punto de conexión, MDO, MDE, portal de seguridad, portal de seguridad de defender
+keywords: Introducción a Microsoft 365 Defender, Microsoft Defender para Office 365, Microsoft Defender para endpoint, MDO, MDE, portal de seguridad, portal de seguridad de defender
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -19,14 +19,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: f50a6750c3f5cd39e68a39cf000ff60e4fec8ef2
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: fa9833572a57e0ea81978f25a7d8d34db068109a
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568702"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501121"
 ---
-# <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender para punto de conexión en Microsoft 365 Defender
+# <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender para endpoint en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -61,12 +61,12 @@ La [mejora Microsoft 365 Defender](microsoft-365-defender.md#the-microsoft-365-d
 
 Si está familiarizado con el Centro de seguridad de Microsoft Defender, este artículo ayuda a describir algunos de los cambios y mejoras de Microsoft 365 Defender. Sin embargo, hay algunos elementos nuevos y actualizados que debe tener en cuenta.
 
-Históricamente, el [Centro de seguridad de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/portal-overview) ha sido el hogar de Microsoft Defender para punto de conexión. Enterprise de seguridad lo han usado para supervisar y ayudar a responder a alertas de posibles infracciones de datos o actividad de amenazas persistentes avanzada. Para ayudar a reducir el número de portales, Microsoft 365 Defender será el hogar para supervisar y administrar la seguridad en todas las identidades, datos, dispositivos, aplicaciones e infraestructura de Microsoft.
+Históricamente, el [Centro de seguridad de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/portal-overview) ha sido el hogar de Microsoft Defender para Endpoint. Enterprise de seguridad lo han usado para supervisar y ayudar a responder a alertas de posibles infracciones de datos o actividad de amenazas persistentes avanzada. Para ayudar a reducir el número de portales, Microsoft 365 Defender será el hogar para supervisar y administrar la seguridad en todas las identidades, datos, dispositivos, aplicaciones e infraestructura de Microsoft.
 
-Microsoft Defender para punto de conexión en Microsoft 365 Defender admite la concesión de acceso a proveedores de servicios de seguridad administrados [(MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) del mismo modo que se concede [acceso en el Centro de seguridad de Microsoft Defender](mssp-access.md).
+Microsoft Defender para endpoint en Microsoft 365 Defender admite la concesión de acceso a proveedores de servicios de seguridad [administrados (MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) del mismo modo que se concede acceso en el [Centro de seguridad de Microsoft Defender](mssp-access.md).
 
 > [!IMPORTANT]
-> Lo que ves en Microsoft 365 Defender depende de las suscripciones actuales. Por ejemplo, si no tiene una licencia para Microsoft Defender para Office 365, no se mostrará la sección Colaboración & correo electrónico.
+> Lo que ves en Microsoft 365 Defender depende de las suscripciones actuales. Por ejemplo, si no tiene una licencia para Microsoft Defender para Office 365, no se mostrará la sección Colaboración de correo & correo electrónico.
 
 > [!Note]
 > Microsoft 365 Defender no está disponible para:
@@ -88,7 +88,7 @@ Esta tabla es una referencia rápida de los cambios entre el Centro de seguridad
 | Área | Descripción de cambio |
 |---------|---------|
 | [Alertas de & incidentes](incidents-overview.md)  | En Microsoft 365 Defender, puede administrar incidentes y alertas en todos los puntos de conexión, correo electrónico e identidades. Hemos convergedo la experiencia para ayudarle a encontrar eventos relacionados con más facilidad. Para obtener más información, consulte [Incidents Overview](incidents-overview.md).   |
-| [Búsqueda](advanced-hunting-overview.md)  |  La modificación de reglas de detección personalizadas creadas en Microsoft Defender para punto de conexión para incluir tablas de identidad y correo electrónico las mueve automáticamente a Microsoft 365 Defender. Sus alertas correspondientes también aparecerán en Microsoft 365 Defender. Para obtener más información acerca de estos cambios, lea [Migrar reglas de detección personalizadas](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules). <br><br>La `DeviceAlertEvents` tabla de búsqueda avanzada no está disponible en Microsoft 365 Defender. Para consultar información de alerta específica del dispositivo en Microsoft 365 Defender, `AlertInfo` puede usar las tablas y `AlertEvidence` para dar cabida a aún más información de un conjunto diverso de orígenes. Crea la siguiente consulta relacionada con el dispositivo siguiendo [Las consultas de escritura sin DeviceAlertEvents](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents).|
+| [Búsqueda](advanced-hunting-overview.md)  |  La modificación de reglas de detección personalizadas creadas en Microsoft Defender para endpoint para incluir tablas de identidad y correo electrónico las mueve automáticamente a Microsoft 365 Defender. Sus alertas correspondientes también aparecerán en Microsoft 365 Defender. Para obtener más información acerca de estos cambios, lea [Migrar reglas de detección personalizadas](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules). <br><br>La `DeviceAlertEvents` tabla de búsqueda avanzada no está disponible en Microsoft 365 Defender. Para consultar información de alerta específica del dispositivo en Microsoft 365 Defender, `AlertInfo` puede usar las tablas y `AlertEvidence` para dar cabida a aún más información de un conjunto diverso de orígenes. Crea la siguiente consulta relacionada con el dispositivo siguiendo [Las consultas de escritura sin DeviceAlertEvents](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents).|
 |[Centro de actividades](m365d-action-center.md)    | Enumera las acciones pendientes y completadas que se llevaron a cabo después de las investigaciones automatizadas y las acciones de corrección. Anteriormente, el Centro de acción de la Centro de seguridad de Microsoft Defender enumeraba las acciones pendientes y completadas para las acciones de corrección realizadas solo en dispositivos, mientras que las investigaciones automatizadas enumeraban alertas y estado. En la Microsoft 365 Defender, el Centro de acciones reúne acciones de corrección e investigaciones en el correo electrónico, los dispositivos y los usuarios, todo en una ubicación.  |
 | [Análisis de amenazas](threat-analytics.md) |  Se ha movido a la parte superior de la barra de navegación para facilitar la detección y el uso. Ahora incluye información sobre amenazas para puntos de conexión y correo electrónico y colaboración.    |
 
@@ -170,18 +170,18 @@ Ver informes, cambiar la configuración y modificar roles de usuario.
 
 ### <a name="siem-api-connections"></a>Conexiones de LA API siem
 
-Si usa la [API DE SIEM de Defender para](../defender-endpoint/enable-siem-integration.md) endpoint, puede seguir haciendo esto. Hemos agregado nuevos vínculos a la carga de la API que apuntan a la página de alerta o a la página de incidentes en el portal de Microsoft 365 seguridad. Los nuevos campos de API incluyen LinkToMTP e IncidentLinkToMTP. Para obtener más información, vea [Redirecting accounts from Microsoft Defender para punto de conexión to Microsoft 365 Defender](./microsoft-365-security-mde-redirection.md).
+Si usa la [API DE SIEM de Defender para](../defender-endpoint/enable-siem-integration.md) endpoint, puede seguir haciendo esto. Hemos agregado nuevos vínculos a la carga de la API que apuntan a la página de alerta o a la página de incidentes en el portal de Microsoft 365 seguridad. Los nuevos campos de API incluyen LinkToMTP e IncidentLinkToMTP. Para obtener más información, vea [Redirecting accounts from Microsoft Defender for Endpoint to Microsoft 365 Defender](./microsoft-365-security-mde-redirection.md).
 
 ### <a name="email-alerts"></a>Alertas de correo electrónico
 
-Puedes seguir usando alertas de correo electrónico para Defender para Endpoint. Hemos agregado nuevos vínculos en los correos electrónicos que apuntan a la página de alerta o a la página de incidentes en Microsoft 365 Defender. Para obtener más información, vea [Redirecting accounts from Microsoft Defender para punto de conexión to Microsoft 365 Defender](./microsoft-365-security-mde-redirection.md).
+Puedes seguir usando alertas de correo electrónico para Defender para Endpoint. Hemos agregado nuevos vínculos en los correos electrónicos que apuntan a la página de alerta o a la página de incidentes en Microsoft 365 Defender. Para obtener más información, vea [Redirecting accounts from Microsoft Defender for Endpoint to Microsoft 365 Defender](./microsoft-365-security-mde-redirection.md).
 
 ### <a name="managed-security-service-providers-mssp"></a>Proveedores de servicios de seguridad administrados (MSSP)
 
-Actualmente, no se admite el inicio de sesión en varios inquilinos simultáneamente en la misma sesión de exploración en el portal unificado. Puede optar por no participar en el redireccionamiento automático volviendo [al antiguo portal de Microsoft Defender para punto de conexión](microsoft-365-security-mde-redirection.md#can-i-go-back-to-using-the-former-portal), para mantener esta funcionalidad hasta que se resuelva el problema.
+Actualmente, no se admite el inicio de sesión en varios inquilinos simultáneamente en la misma sesión de exploración en el portal unificado. Puede optar por no participar en el redireccionamiento automático volviendo al [antiguo portal de Microsoft Defender para](microsoft-365-security-mde-redirection.md#can-i-go-back-to-using-the-former-portal) endpoints, para mantener esta funcionalidad hasta que se resuelva el problema.
 
 ## <a name="related-information"></a>Información relacionada
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
-- [Microsoft Defender para punto de conexión en Microsoft 365 Defender](microsoft-365-security-center-mde.md)
-- [Redirigir cuentas de Microsoft Defender para punto de conexión a Microsoft 365 Defender](microsoft-365-security-mde-redirection.md)
+- [Microsoft Defender para endpoint en Microsoft 365 Defender](microsoft-365-security-center-mde.md)
+- [Redirigir cuentas de Microsoft Defender para endpoint a Microsoft 365 Defender](microsoft-365-security-mde-redirection.md)

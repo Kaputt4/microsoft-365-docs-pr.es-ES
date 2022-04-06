@@ -1,5 +1,5 @@
 ---
-title: Proteger contra amenazas en Microsoft Defender para Office 365, antimalware, anti phishing, antispam, vínculos de Caja fuerte, datos adjuntos de Caja fuerte, purga automática de hora cero (ZAP), configuración de seguridad de MDO
+title: Proteger contra amenazas en Microsoft Defender para Office 365, antimalware, anti phishing, correo no deseado, vínculos Caja fuerte, datos adjuntos de Caja fuerte, purga automática de hora cero (ZAP), configuración de seguridad de MDO
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,12 +20,12 @@ description: Los administradores pueden obtener información sobre la protecció
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5a0be5171a2de07792cd259dc6547046d7c1630
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 280cbd310742ecfe31ac8b565d285f7b464d3e24
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507195"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683853"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -41,16 +41,16 @@ Esta es una guía de inicio rápido que divide la configuración de Defender par
 > [!IMPORTANT]
 > **La configuración recomendada inicial se incluye para** cada tipo de directiva; sin embargo, hay muchas opciones disponibles y puede ajustar la configuración para satisfacer las necesidades de su organización específica. Espere aproximadamente 30 minutos para que las directivas o los cambios funcionen a través del centro de datos.
 >
-> Para omitir la configuración manual de la mayoría de las directivas Defender para Office 365, puede usar directivas de seguridad preestablecidas en el nivel Estándar o Estricto. Para obtener más información, vea [Preset security policies in EOP and Microsoft Defender para Office 365](preset-security-policies.md).
+> Para omitir la configuración manual de la mayoría de las directivas de Defender para Office 365, puedes usar directivas de seguridad preestablecidas en el nivel Estándar o Estricto. Para obtener más información, vea [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 ### <a name="subscriptions"></a>Suscripciones
 
 Las características de protección contra amenazas se incluyen en todas las suscripciones *de Microsoft o* Office 365; sin embargo, algunas suscripciones tienen características avanzadas. En la tabla siguiente se enumeran las características de protección incluidas en este artículo junto con los requisitos mínimos de suscripción.
 
 > [!TIP]
-> Observe que más allá de las instrucciones para activar la *auditoría, los* pasos inician antimalware, anti phishing y antispam, que se marcan como parte de Office 365 Exchange Online Protection (**EOP**). Esto puede parecer extraño en un artículo Defender para Office 365, hasta que recuerde (**Defender para Office 365**) contiene e incluye EOP.
+> Observe que más allá de las instrucciones para activar la *auditoría, los* pasos inician antimalware, anti phishing y antispam, que se marcan como parte de Office 365 Exchange Online Protection (**EOP**). Esto puede parecer extraño en un artículo defender para Office 365, hasta que recuerdes que (**Defender para Office 365**) contiene EOP y se basa en.
 
 |Tipo de protección|Requisitos de suscripción|
 |---|---|
@@ -88,7 +88,7 @@ Para obtener más información acerca de la configuración recomendada para anti
    - **Sección Configuración de** protección:
      - **Habilitar el filtro de datos adjuntos** común: Seleccione (activar). Haga **clic en Personalizar tipos de archivo** para agregar más tipos de archivo.
      - **Habilitar la purga automática de hora cero para malware**: compruebe que esta configuración está seleccionada. Para obtener más información acerca de ZAP para malware, vea [Zero-hour auto purge (ZAP) for malware](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware).
-   - **Directiva de cuarentena**: deje seleccionado el valor predeterminado AdminOnlyAccessPolicy. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena y si los usuarios reciben notificaciones de cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
+   - **Directiva de cuarentena**: deje seleccionado el valor predeterminado AdminOnlyAccessPolicy. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena y si los usuarios reciben notificaciones de cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
    - **Sección notificación** : compruebe que no se haya seleccionado ninguna de las opciones de configuración de notificación.
 
    Cuando haya terminado, haga clic en **Guardar**.
@@ -99,9 +99,9 @@ Para obtener instrucciones detalladas para configurar directivas antimalware, ve
 
 ## <a name="part-2---anti-phishing-protection-in-eop-and-defender-for-office-365"></a>Parte 2: Protección contra la suplantación de identidad en EOP y Defender para Office 365
 
-[La protección contra la suplantación](anti-phishing-protection.md) de identidad está disponible en suscripciones que incluyen [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). La protección contra suplantación de identidad avanzada está disponible en [Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+[La protección contra la suplantación](anti-phishing-protection.md) de identidad está disponible en suscripciones que incluyen [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). La protección contra suplantación de identidad avanzada está disponible [en Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-Para obtener más información acerca de la configuración recomendada para las directivas contra suplantación de identidad([phishing), consulte EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) and [Anti-phishing policy settings in Microsoft Defender para Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
+Para obtener más información acerca de la configuración recomendada para las directivas contra suplantación de identidad([phishing), consulte EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) and [Anti-phishing policy settings in Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
 En el siguiente procedimiento se describe cómo configurar la directiva contra suplantación de identidad predeterminada. Configuración que solo están disponibles en Defender para Office 365 están claramente marcados.
 
@@ -143,7 +143,7 @@ En el siguiente procedimiento se describe cómo configurar la directiva contra s
 
 4. Haga **clic en Guardar** y, a continuación **, en Cerrar**
 
-Para obtener instrucciones detalladas para configurar directivas contra suplantación de identidad, vea [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) y [Configure anti-phishing policies in Microsoft Defender para Office 365](configure-mdo-anti-phishing-policies.md).
+Para obtener instrucciones detalladas para configurar directivas contra suplantación de identidad, vea [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) y [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 ## <a name="part-3---anti-spam-protection-in-eop"></a>Parte 3: Protección contra correo no deseado en EOP
 
@@ -186,9 +186,9 @@ Para obtener más información acerca de la configuración recomendada para el c
 
 Para obtener instrucciones detalladas para configurar directivas contra correo no deseado, consulte [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
-## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Parte 4: Protección contra direcciones URL y archivos malintencionados (Caja fuerte vínculos y Caja fuerte adjuntos en Defender para Office 365)
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Parte 4: protección contra archivos y direcciones URL malintencionadas (Caja fuerte vínculos y Caja fuerte datos adjuntos en Defender para Office 365)
 
-La protección con tiempo de clic frente a direcciones URL y archivos malintencionados está disponible en suscripciones que incluyen [Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Se configura a través de Caja fuerte [datos adjuntos](safe-attachments.md) y [Caja fuerte de vínculos](safe-links.md).
+La protección con tiempo de clic frente a direcciones URL malintencionadas y archivos está disponible en suscripciones que incluyen [Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Se configura a través de Caja fuerte [datos adjuntos](safe-attachments.md) y [Caja fuerte de vínculos](safe-links.md).
 
 ### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Caja fuerte de datos adjuntos en Microsoft Defender para Office 365
 
@@ -197,7 +197,7 @@ Para obtener más información acerca de la configuración recomendada para Caja
 1. Abra la **página Caja fuerte datos adjuntos** en el portal Microsoft 365 Defender en <https://security.microsoft.com/safeattachmentv2>.
 
 2. En la **página Caja fuerte datos adjuntos**, haga clic en **Configuración global** y, a continuación, configure las siguientes opciones en el menú desplegable que aparece:
-   - **Activa la Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams**: Activa esta configuración (![Activar).](../../media/scc-toggle-on.png)
+   - **Activa Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams**: Activa esta opción (![Activar).](../../media/scc-toggle-on.png)
 
      > [!IMPORTANT]
      > **Antes de activar Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams,** compruebe que el registro de auditoría está activado en la organización. Normalmente, esta acción la realiza alguien que tiene el rol Registros de auditoría asignado en Exchange Online. Para obtener más información, vea [Activar o desactivar la búsqueda del registro de auditoría](../../compliance/turn-audit-log-search-on-or-off.md).
@@ -216,7 +216,7 @@ Para obtener más información acerca de la configuración recomendada para Caja
    - **Página Usuarios y dominios** : dado que esta es la primera directiva y es probable que quiera maximizar la cobertura, considere la posibilidad de escribir los dominios aceptados [en el](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) **cuadro** Dominios. De lo contrario, puede usar los **cuadros Usuarios** **y Grupos** para un control más detallado. Puede especificar excepciones seleccionando Excluir estos **usuarios, grupos y dominios** y especificando valores.
    - **Configuración**:
      - **Caja fuerte datos adjuntos respuesta de malware desconocido**: Seleccione **Bloquear**.
-     - **Directiva de cuarentena**: el valor predeterminado está en blanco, lo que significa que se usa la directiva AdminOnlyAccessPolicy. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena y si los usuarios reciben notificaciones de cuarentena. Para más información, vea [Directivas de cuarentena](quarantine-policies.md).
+     - **Directiva de cuarentena**: el valor predeterminado está en blanco, lo que significa que se usa la directiva AdminOnlyAccessPolicy. Las directivas de cuarentena definen lo que los usuarios pueden hacer con los mensajes en cuarentena y si los usuarios reciben notificaciones de cuarentena. Para más información, consulte [Políticas de cuarentena](quarantine-policies.md).
      - **Redirigir datos adjuntos con datos** adjuntos **detectados**: habilitar el redireccionamiento: active esta opción (seleccionar) y escriba una dirección de correo electrónico para recibir los mensajes detectados.
      - **Aplicar la Caja fuerte de** detección de datos adjuntos si el examen no se puede completar (tiempo de espera o errores):Compruebe que esta configuración está seleccionada.
 
@@ -255,20 +255,16 @@ Para obtener más información acerca de la configuración recomendada para Caja
      - **Nombre**: escriba algo único y descriptivo.
      - **Descripción**: escriba una descripción opcional.
    - **Página Usuarios y dominios** : dado que esta es la primera directiva y es probable que quiera maximizar la cobertura, considere la posibilidad de escribir los dominios aceptados [en el](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) **cuadro** Dominios. De lo contrario, puede usar los **cuadros Usuarios** **y Grupos** para un control más detallado. Puede especificar excepciones seleccionando Excluir estos **usuarios, grupos y dominios** y especificando valores.
-   - **Url & configuración de protección de clic** :
-     - **Acción en direcciones URL potencialmente malintencionadas en la sección Correos** electrónicos:
-       - **On: Caja fuerte Links comprueba** una lista de vínculos conocidos y malintencionados cuando los usuarios hacen clic en vínculos en el correo electrónico: Seleccione su configuración (activar).
-       - **Aplicar Caja fuerte vínculos a los mensajes de correo electrónico** enviados dentro de la organización: seleccione esta configuración (activar).
-       - **Aplicar análisis de url en tiempo real en busca** de vínculos sospechosos y vínculos que apunten a archivos: seleccione esta configuración (activar).
+   - **Página Configuración de** protección:
+     - **Seleccione la acción para las direcciones URL potencialmente malintencionadas desconocidas en los mensajes**: Active esta **configuración**.
+     - **Seleccione la acción para direcciones URL desconocidas o potencialmente malintencionadas en Microsoft Teams**: Active esta **configuración**. A partir de marzo de 2020, esta configuración está en Versión preliminar y solo está disponible o funcional para los miembros de la Microsoft Teams Programa de adopción de tecnología (TAP).
+     - **Aplicar análisis de url en tiempo real en busca** de vínculos sospechosos y vínculos que apunten a archivos: seleccione esta configuración (activar).
        - **Espere a que se complete el examen de direcciones URL antes de entregar el mensaje**: Seleccione esta configuración (activar).
-       - **No reescriba direcciones URL,** realice comprobaciones solo a través de la API de vínculos Caja fuerte: compruebe que esta configuración no está seleccionada (desactivar).
-     - **No reescriba las siguientes direcciones URL en el correo** electrónico: no tenemos ninguna recomendación específica para esta configuración. Para obtener más información, vea ["Do not rewrite the following URLs" lists in Caja fuerte Links policies](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
-     - **Acción para direcciones URL potencialmente malintencionadas en Microsoft Teams** sección:
-       - ***On: Caja fuerte Links comprueba** una lista de vínculos conocidos y malintencionados cuando los usuarios hacen clic en vínculos en Microsoft Teams: Seleccione esta configuración (activar).
-     - **Sección Configuración de protección de** clics:
-       - **Realizar un seguimiento de los clics del** usuario: compruebe que esta configuración está seleccionada (activada).
-       - **Permitir que los usuarios haga clic en la dirección URL original**: desactive esta opción (no seleccionada).
-       - **Mostrar** la personalización de marca de la organización en las páginas de notificación y advertencia: seleccionar esta configuración (activarla) es significativa solo después de haber seguido las instrucciones de Personalizar el tema [Microsoft 365](../../admin/setup/customize-your-organization-theme.md) para que la organización cargue el logotipo de la empresa.
+     - **Aplicar Caja fuerte vínculos a los mensajes de correo electrónico** enviados dentro de la organización: seleccione esta configuración (activar).
+     - **No realizar un seguimiento de los clics del usuario**: compruebe que esta configuración no está seleccionada (desactivada).
+     - **No permitir que los usuarios hagan clic en la dirección URL original**: compruebe que esta configuración está activada (seleccionada).
+     - **Mostrar** la personalización de marca de la organización en las páginas de notificación y advertencia: seleccionar esta configuración (activarla) es significativa solo después de haber seguido las instrucciones de Personalizar el tema [Microsoft 365](../../admin/setup/customize-your-organization-theme.md) para que la organización cargue el logotipo de la empresa.
+     - **No reescriba las siguientes direcciones URL**: no tenemos ninguna recomendación específica para esta configuración. Para obtener más información, vea ["Do not rewrite the following URLs" lists in Caja fuerte Links policies](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
    - **Página de** notificación:
      - **¿Cómo le gustaría notificar a los usuarios?** sección: Opcionalmente, puede seleccionar Usar **texto de notificación personalizado** para escribir el texto de notificación personalizado que se va a usar. También puede seleccionar **Usar Traductor de Microsoft** la localización automática para traducir el texto de notificación personalizado al idioma del usuario. De lo contrario, **deje seleccionado Usar el texto de notificación predeterminado** .
 
@@ -276,8 +272,8 @@ Para obtener más información acerca de la configuración recomendada para Caja
 
 Para obtener instrucciones detalladas para configurar Caja fuerte de vínculos y la configuración global para Caja fuerte vínculos, consulte los siguientes temas:
 
-- [Configurar directivas de vínculos seguros en Microsoft Defender para Office 365](set-up-safe-links-policies.md)
-- [Configurar la configuración global para Caja fuerte vínculos en Microsoft Defender para Office 365](configure-global-settings-for-safe-links.md)
+- [Configurar directivas Caja fuerte vínculos en Microsoft Defender para Office 365](set-up-safe-links-policies.md)
+- [Configurar la configuración global para Caja fuerte vínculos de Microsoft Defender para Office 365](configure-global-settings-for-safe-links.md)
 
 ### <a name="now-set-up-alerts-for-detected-files-in-sharepoint-online-or-onedrive-for-business"></a>Ahora configura alertas para los archivos detectados en SharePoint Online o OneDrive para la Empresa
 

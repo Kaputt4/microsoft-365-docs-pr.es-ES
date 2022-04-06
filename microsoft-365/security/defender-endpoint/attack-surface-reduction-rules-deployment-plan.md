@@ -1,7 +1,7 @@
 ---
-title: Planeación de reglas ASR que ataquen la implementación de reglas de implementación de reducción de superficie
-description: Proporciona instrucciones para planear la implementación de las reglas de reducción de superficie de ataque (ASR).
-keywords: Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR
+title: Planeación de la implementación de reglas de ASR de reducción de superficie expuesta a ataques
+description: Proporciona instrucciones para planear la implementación de reglas de reducción de la superficie expuesta a ataques (ASR).
+keywords: Implementación de reglas de reducción de superficie expuesta a ataques, implementación de ASR, habilitación de reglas de asr, configuración de ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades de seguridad, protección contra vulnerabilidades de seguridad, reglas de vulnerabilidad de seguridad, reglas de prevención de infecciones, Microsoft Defender para punto de conexión, configurar reglas asr
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -20,65 +20,65 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: e76ca3c1efd3ceb1cbb0f80cba4867988da51e1e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 94c66591a99a92ebd9d710de573d32e440386573
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683085"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64663146"
 ---
 # <a name="step-1-plan-asr-rules-deployment"></a>Paso 1: Planear la implementación de reglas de ASR
 
-Cuando se prueban las reglas de reducción de superficie de ataque (ASR), es importante empezar con la unidad de negocio adecuada. Querrá empezar con un pequeño grupo de personas en una unidad de negocio específica. Puede identificar algunos campeones de ASR dentro de una unidad de negocio determinada que puedan proporcionar un impacto real sobre las reglas de ASR y ayudarle a ajustar su implementación.
+Al probar las reglas de reducción de la superficie expuesta a ataques (ASR), es importante empezar con la unidad de negocio adecuada. Querrá empezar con un pequeño grupo de personas en una unidad de negocio específica. Puede identificar a algunos campeones de ASR dentro de una unidad de negocio determinada que pueden proporcionar un impacto real sobre las reglas de ASR y ayudarle a ajustar la implementación.
 
 > [!div class="mx-imgBorder"]
-> ![Pasos de planeación de reglas de ASR](images/asr-rules-planning-steps.png)
+> :::image type="content" source="images/asr-rules-planning-steps.png" alt-text="Pasos de planeamiento de reglas de ASR" lightbox="images/asr-rules-planning-steps.png":::
 
-## <a name="start-with-the-right-business-unit"></a>Comience con la unidad de negocio adecuada
+## <a name="start-with-the-right-business-unit"></a>Empezar con la unidad de negocio adecuada
 
-La forma de seleccionar la unidad de negocio para implementar la implementación de reglas ASR dependerá de factores como:
+La forma en que seleccione la unidad de negocio para implementar la implementación de reglas de ASR dependerá de factores como:
 
 - Tamaño de la unidad de negocio
-- Disponibilidad de campeones de reglas ASR  
+- Disponibilidad de los campeones de reglas de ASR  
 - Distribución y uso de:
   - Software
   - Carpetas compartidas
   - Uso de scripts
-  - Office macros
-  - Otras entidades afectadas por reglas ASR
+  - macros de Office
+  - Otras entidades afectadas por las reglas de ASR
 
-Según las necesidades de su empresa, puede decidir incluir varias unidades de negocio para obtener un amplio muestreo de software, carpetas compartidas, scripts, macros, etc. Por el contrario, puede decidir limitar el ámbito de la primera implementación de reglas ASR a una sola unidad de negocio y, a continuación, repetir todo el proceso de implementación de reglas ASR a las demás unidades de negocio, de una en una.
+En función de sus necesidades empresariales, puede decidir incluir varias unidades de negocio para obtener un amplio muestreo de software, carpetas compartidas, scripts, macros, etc. Por el contrario, puede decidir limitar el ámbito de la primera implementación de reglas de ASR a una sola unidad de negocio y, a continuación, repetir todo el proceso de implementación de reglas de ASR a las otras unidades de negocio, de una en una.
 
-## <a name="identify-asr--rules-champions"></a>Identificar campeones de reglas ASR
+## <a name="identify-asr--rules-champions"></a>Identificación de los campeones de reglas de ASR
 
-Los campeones de reglas ASR son miembros de la organización que ayudarán con el lanzamiento de las reglas ASR iniciales durante las fases preliminares de prueba e implementación. Los campeones suelen ser empleados que son más expertos técnicamente y que no se descarrila por interrupciones intermitentes del flujo de trabajo. La participación de los campeones continuará a lo largo de la expansión más amplia de la implementación de reglas ASR en su organización. Los campeones de reglas ASR serán los primeros en experimentar cada nivel del lanzamiento de reglas ASR.
+Los campeones de reglas de ASR son miembros de su organización que le ayudarán con el lanzamiento inicial de reglas de ASR durante las fases preliminares de implementación y pruebas. Los campeones suelen ser empleados más expertos técnicamente y que no se ven afectados por interrupciones intermitentes del flujo de trabajo. La participación de los campeones continuará a lo largo de la expansión más amplia de la implementación de reglas de ASR en su organización. Los campeones de reglas de ASR serán los primeros en experimentar cada nivel del lanzamiento de reglas de ASR.
 
-Es importante proporcionar un canal de comentarios y respuesta para que los campeones de reglas ASR le alerte sobre las interrupciones de trabajo relacionadas con las reglas asr y reciba comunicaciones relacionadas con la implementación de reglas asr.
+Es importante proporcionar un canal de comentarios y respuesta para que los expertos en reglas de ASR le alerten sobre las interrupciones del trabajo relacionadas con las reglas de ASR y reciban comunicaciones relacionadas con el lanzamiento de reglas de ASR.
 
-## <a name="get-inventory-of-line-of-business-apps-and-understand-the-business-unit-processes"></a>Obtener inventario de aplicaciones de línea de negocio y comprender los procesos de la unidad de negocio
+## <a name="get-inventory-of-line-of-business-apps-and-understand-the-business-unit-processes"></a>Obtención del inventario de aplicaciones de línea de negocio y comprensión de los procesos de la unidad de negocio
 
-Tener una comprensión completa de las aplicaciones y los procesos por unidad empresarial que se usan en toda la organización es fundamental para una implementación correcta de reglas ASR. Además, es imperativo que comprenda cómo se usan esas aplicaciones en las distintas unidades de negocio de su organización.
-Para empezar, debes obtener un inventario de las aplicaciones aprobadas para su uso en toda la organización. Puede usar herramientas como el Centro de administración Aplicaciones Microsoft 365 para ayudarle a realizar el inventario de aplicaciones de software. Vea: [Información general sobre el inventario en el centro Aplicaciones Microsoft 365 administración](/deployoffice/admincenter/inventory).
+Tener un conocimiento completo de las aplicaciones y los procesos por unidad de negocio que se usan en toda la organización es fundamental para una implementación correcta de reglas de ASR. Además, es imperativo que comprenda cómo se usan esas aplicaciones dentro de las distintas unidades de negocio de su organización.
+Para empezar, debe obtener un inventario de las aplicaciones aprobadas para su uso en toda la organización. Puede usar herramientas como el centro de administración de Aplicaciones Microsoft 365 para ayudarle a realizar un inventario de aplicaciones de software. Consulte: [Introducción al inventario en el centro de administración de Aplicaciones Microsoft 365](/deployoffice/admincenter/inventory).
 
-## <a name="define-reporting-and-response-team-roles-and-responsibilities"></a>Definir responsabilidades y roles de equipo de informes y respuesta
+## <a name="define-reporting-and-response-team-roles-and-responsibilities"></a>Definición de roles y responsabilidades del equipo de informes y respuesta
 
-La función y responsabilidades claramente articuladas de las personas responsables de supervisar y comunicar el estado y la actividad de las reglas ASR es una actividad principal del mantenimiento de ASR. Por lo tanto, es importante determinar:
+La articulación clara de roles y responsabilidades de las personas responsables de supervisar y comunicar el estado y la actividad de las reglas de ASR es una actividad fundamental del mantenimiento de ASR. Por lo tanto, es importante determinar:
 
 - La persona o el equipo responsable de recopilar informes
 - Cómo y con quién se comparten los informes
-- Cómo se aborda la escalación para amenazas recién identificadas o bloqueos no deseados causados por reglas ASR
+- Cómo se aborda la escalación de amenazas recién identificadas o bloqueos no deseados causados por reglas de ASR
 
-Los roles y responsabilidades típicos incluyen:
+Entre los roles y responsabilidades típicos se incluyen:
 
-- Administradores de TI: implementar reglas ASR y administrar exclusiones. Trabajar con diferentes unidades de negocio en aplicaciones y procesos. Ensamblar y compartir informes a las partes interesadas
-- Analista del Centro de operaciones de seguridad certificado (CSOC): responsable de invertir procesos bloqueados y de alta prioridad, para determinar si la amenaza es válida o no.
-- Director de seguridad de la información (CISO): responsable de la posición general de seguridad y el estado de la organización
+- Administradores de TI: implemente reglas ASR y administre exclusiones. Trabaje con diferentes unidades de negocio en aplicaciones y procesos. Ensamblar y compartir informes con las partes interesadas
+- Analista certificado del Centro de operaciones de seguridad (CSOC): responsable de invertir procesos bloqueados y de alta prioridad, para determinar que la amenaza es válida o no
+- Director de seguridad de la información (CISO): responsable de la posición de seguridad general y el estado de la organización
 
 ## <a name="ring-deployment"></a>Implantación de anillos
 
-Para las grandes empresas, Microsoft recomienda implementar reglas ASR en "anillos". Los anillos son grupos de dispositivos que se representan visualmente como círculos concéntricos que se radian hacia fuera como anillos de árbol no superpuestos. Cuando el anillo más interno se implementa correctamente, puede pasar el siguiente anillo a la fase de prueba. Una evaluación exhaustiva de las unidades de negocio, los campeones de reglas de ASR, las aplicaciones y los procesos es imprescindible para definir los anillos.
+Para grandes empresas, Microsoft recomienda implementar reglas ASR en "anillos". Los anillos son grupos de dispositivos que se representan visualmente como círculos concéntricos que irradian hacia afuera, como anillos de árbol no superpuestos. Cuando el anillo más interno se implementa correctamente, puede realizar la transición del siguiente anillo a la fase de prueba. La evaluación exhaustiva de las unidades de negocio, los campeones de reglas de ASR, las aplicaciones y los procesos es imprescindible para definir los anillos.
 En la mayoría de los casos, la organización habrá diseñado anillos de implementación para implementaciones por fases de Windows actualizaciones. Puede usar el diseño de anillo existente para implementar reglas ASR.
-Vea: [Crear un plan de implementación para Windows](/windows/deployment/update/create-deployment-plan)
+Consulte: [Creación de un plan de implementación para Windows](/windows/deployment/update/create-deployment-plan)
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Temas adicionales de esta colección de implementación
 

@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d49ef6b31e6446f3452d0efdce2e918813eabcc6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 51bb4f451329a74417c21db0a64aadae6dccbce6
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327551"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500879"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>Investigar usuarios en Microsoft 365 Defender
 
@@ -32,15 +32,15 @@ ms.locfileid: "63327551"
 
 **Se aplica a:**
 
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Parte de la investigación de incidentes puede incluir cuentas de usuario. You can see the details of user accounts identified in the alerts of an incident in the Microsoft 365 Defender portal from **Incidents & alerts** \> **_incident_*_ \> _* Users**. Por ejemplo:
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Ejemplo de una página Usuarios para un incidente." lightbox="../../media/investigate-incidents/incident-users.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Página Usuarios para un incidente en el portal Microsoft 365 Defender web." lightbox="../../media/investigate-incidents/incident-users.png":::
 
 Para obtener un resumen rápido de una cuenta de usuario para el incidente, seleccione la marca de verificación junto al nombre de la cuenta de usuario. Por ejemplo:
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Ejemplo del panel de resumen de la cuenta de usuario para un incidente." lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Ficha Usuarios para un incidente en el portal de Microsoft 365 Defender web" lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
 
 > [!NOTE]
 > La página de usuario muestra Azure Active Directory organización (Azure AD) así como grupos, lo que le ayuda a comprender los grupos y permisos asociados con un usuario.
@@ -51,13 +51,13 @@ Además, puede realizar acciones directamente en el portal de Microsoft 365 Defe
 
 Desde aquí, puede seleccionar **Ir a la página de usuario** para ver los detalles de una cuenta de usuario. Por ejemplo:
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Ejemplo de la página de cuenta de usuario de un incidente." lightbox="../../media/investigate-users/incidents-ss-user-details.png":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Los detalles de la cuenta de usuario en el portal Microsoft 365 Defender usuario" lightbox="../../media/investigate-users/incidents-ss-user-details.png":::
 
 También puede ver esta página seleccionando el nombre de la cuenta de usuario de la lista de la **página** Usuarios.
 
 Puede ver la pertenencia a grupos para el usuario seleccionando el número en **Grupos**.
 
-:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="Ejemplo de pertenencia a un grupo para un usuario." lightbox="../../media/investigate-users/user-group-membership.png":::
+:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="La información sobre la pertenencia a grupos de un usuario en el portal Microsoft 365 Defender grupo" lightbox="../../media/investigate-users/user-group-membership.png":::
 
 Al seleccionar el icono en **Administrador**, puede ver dónde está el usuario en el árbol de la organización.
 
@@ -76,7 +76,7 @@ Desde esta página, puede realizar estas acciones adicionales:
 
 Por ejemplo:
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Ejemplo de las acciones de una cuenta de usuario para un incidente." lightbox="../../media/investigate-users/incidents-ss-user-details-actions.png":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Sección que describe las acciones de una cuenta de usuario para un incidente en el portal Microsoft 365 Defender usuario" lightbox="../../media/investigate-users/incidents-ss-user-details-actions.png":::
 
 ## <a name="view-lateral-movement-paths"></a>Ver rutas de movimiento lateral
 
@@ -86,15 +86,15 @@ El mapa le proporciona una lista de la cantidad de saltos entre equipos o usuari
 
 Si no se detectó una ruta de movimiento lateral potencial para la entidad durante los últimos dos días, el gráfico no se muestra. Seleccione una fecha diferente mediante Ver una fecha diferente para ver los gráficos de rutas de movimiento lateral anteriores detectados para esta entidad. El informe de ruta de movimiento lateral siempre está disponible para proporcionar información sobre las rutas de movimiento lateral potenciales detectadas y se puede personalizar por tiempo.
 
-:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="Ejemplo de la ruta de movimiento lateral de un usuario." lightbox="../../media/investigate-users/lateral-movement-path.png":::
+:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="Ruta de acceso de movimiento lateral para un usuario en el portal Microsoft 365 Defender usuario" lightbox="../../media/investigate-users/lateral-movement-path.png":::
 
 Para obtener más información, vea [Rutas de movimiento lateral](/defender-for-identity/use-case-lateral-movement-path).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)

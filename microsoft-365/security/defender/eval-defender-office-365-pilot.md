@@ -21,27 +21,27 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 58d7a8acd752eda36fe8ee73989105b54e746ddf
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: d8cd0132c8b02ae29cf49c9a700a868fa3a93554
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755569"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501363"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>Piloto de Microsoft Defender para Office 365
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Este artículo es [el paso 3 de 3](eval-defender-office-365-overview.md) en el proceso de configuración del entorno de evaluación para Microsoft Defender para Office 365. Para obtener más información acerca de este proceso, vea el [artículo de introducción](eval-defender-office-365-overview.md).
 
 Siga estos pasos para configurar y configurar el piloto de Microsoft Defender para Office 365.
 
-![Pasos para crear el piloto de Microsoft Defender para Office 365.](../../media/defender/m365-defender-office-pilot.png)
+:::image type="content" source="../../media/defender/m365-defender-office-pilot.png" alt-text="Los pasos para crear el piloto en el portal de Microsoft Defender para Office 365 web" lightbox="../../media/defender/m365-defender-office-pilot.png":::
 
 - [Paso 1: Crear grupos piloto](#step-1-create-pilot-groups)
 - [Paso 2: Configurar la protección](#step-2-configure-protection)
-- [Paso 3: Probar capacidades: familiarizarse con la simulación, la supervisión y las métricas](#step-3-try-out-capabilities--get-familiar-with-simulation-monitoring-and-metrics)
+- [Paso 3: Probar capacidades: familiarizarse con la simulación, la supervisión y las métricas](#step-3-try-out-capabilities-and-get-familiar-with-simulation-monitoring-and-metrics)
 
 Al evaluar Microsoft Defender para Office 365, puede elegir piloto de usuarios específicos antes de habilitar y aplicar directivas para toda la organización. La creación de grupos de distribución puede ayudar a administrar los procesos de implementación. Por ejemplo, cree grupos como Defender para usuarios de *Office 365 - Protección* estándar, Defender para usuarios de *Office 365 - Protección* estricta, Defender para usuarios *de Office 365 -* Protección personalizada o Defender para usuarios de *Office 365 - Excepciones*.
 
@@ -54,19 +54,19 @@ Los grupos de distribución se pueden crear y definir directamente en Exchange O
 1. Inicie sesión en el Centro Exchange administración (EAC) con una cuenta a la que se le haya concedido el rol De administrador de destinatarios o se le hayan delegado permisos de administración de grupos.
 2. En el menú de navegación, expanda *Destinatarios y* seleccione *Grupos*.
 
-   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-pilot.png" alt-text="Menú de navegación del centro Exchange administración (inicio rápido) con una flecha que apunta a Grupos. Hacer clic en Grupos" lightbox="../../media/mdo-eval/1_mdo-eval-pilot.png":::
+   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-pilot.png" alt-text=" Elemento de menú Grupos en el que se va a hacer clic" lightbox="../../media/mdo-eval/1_mdo-eval-pilot.png":::
 
 3. En el panel Grupos, seleccione "Agregar un grupo".
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png" alt-text="La opción Agregar grupos en el panel Grupos del portal Microsoft 365 Defender grupo" lightbox="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png" alt-text="La opción Agregar un grupo para hacer clic en" lightbox="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png":::
 
 4. Para el tipo de grupo, seleccione *Distribución* y haga clic en Siguiente.
 
-   :::image type="content" source="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png" alt-text="La página Elegir un tipo de grupo en el portal Microsoft 365 Defender grupo" lightbox="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png":::
+   :::image type="content" source="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png" alt-text=" Sección Elegir un tipo de grupo" lightbox="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png":::
 
 5. Asigne al grupo un nombre y una descripción y, a continuación, haga clic en Siguiente.
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png" alt-text="La página Configurar los conceptos básicos en el portal Microsoft 365 Defender web" lightbox="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png" alt-text="La sección Configurar los conceptos básicos" lightbox="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png":::
 
 ## <a name="step-2-configure-protection"></a>Paso 2: Configurar la protección
 
@@ -74,10 +74,9 @@ Algunas funcionalidades de Defender para Office 365 están configuradas y activa
 
 Algunas funcionalidades *aún no están configuradas* . Tiene tres opciones para configurar la protección:
 
-- **Asignar directivas de seguridad** preestablecidas [automáticamente: las](../office-365-security/preset-security-policies.md) directivas de seguridad predefinidas se proporcionan como método para asignar rápidamente un nivel uniforme de protección en todas las funcionalidades. Puede elegir entre **_standard_*_ o _*_strict_**. Un buen enfoque es empezar con directivas de seguridad preestablecidas y, a continuación, ajustar las directivas a medida que obtenga más información sobre las capacidades y su propio entorno de amenazas único. La ventaja aquí es que proteges grupos de usuarios lo antes posible, con la capacidad de ajustar la protección después. (Se recomienda este método).
-- **Configurar la protección de** línea base manualmente: si prefiere configurar el entorno usted mismo, puede alcanzar rápidamente una línea  base de protección siguiendo las instrucciones de [Proteger contra amenazas](../office-365-security/protect-against-threats.md). Con este enfoque, podrá obtener más información sobre la configuración que se puede configurar. Y, por supuesto, puede ajustar las directivas más adelante.
-- **Configurar *directivas* de protección personalizadas** : también puede crear y asignar directivas de protección personalizadas como parte de la evaluación. Antes de empezar a personalizar directivas, es importante comprender la prioridad en la que se aplican y aplican estas directivas de protección. Las operaciones de seguridad tendrán que crear algunas directivas incluso si se aplica el valor preestablecido, en concreto para definir directivas de seguridad para Caja fuerte vínculos y Caja fuerte datos adjuntos.
-
+- **Asignar directivas de seguridad** preestablecidas [automáticamente: las](../office-365-security/preset-security-policies.md) directivas de seguridad preestablecidas se proporcionan como método para asignar rápidamente un nivel uniforme de protección en todas las funcionalidades. Puede elegir entre **_standard_*_ o _*_strict_**. Un buen enfoque es empezar con directivas de seguridad preestablecidas y, a continuación, ajustar las directivas a medida que obtenga más información sobre las capacidades y su propio entorno de amenazas único. La ventaja aquí es que proteges grupos de usuarios lo antes posible, con la capacidad de ajustar la protección después. (Se recomienda este método).
+- **Configurar la protección de** línea base manualmente: si prefiere configurar el entorno usted mismo, puede alcanzar rápidamente una línea  base de protección siguiendo las instrucciones de [Proteger contra amenazas](../office-365-security/protect-against-threats.md). Con este enfoque, podrá obtener más información sobre la configuración que se puede configurar. Además, puede ajustar las directivas más adelante.
+- **Configurar *directivas* de protección personalizadas**: también puede crear y asignar directivas de protección personalizadas como parte de la evaluación. Antes de empezar a personalizar directivas, es importante comprender la prioridad en la que se aplican y aplican estas directivas de protección. Las operaciones de seguridad tendrán que crear algunas directivas incluso si se aplica el valor preestablecido, en concreto para definir directivas de seguridad para Caja fuerte vínculos y Caja fuerte datos adjuntos.
 > [!IMPORTANT]
 > **Si necesita configurar directivas** de protección personalizadas, debe examinar los valores que configuran las definiciones  de seguridad  estándar y estricta aquí: Configuración recomendada para *[EOP y Microsoft Defender](../office-365-security/recommended-settings-for-eop-and-office365.md)* para la seguridad Office 365 seguridad. También se enumeran los valores predeterminados, como se ve antes de que se lleve a cabo cualquier configuración. Mantenga una hoja de cálculo de dónde se desvía la compilación personalizada.
 
@@ -85,42 +84,42 @@ Algunas funcionalidades *aún no están configuradas* . Tiene tres opciones para
 
 Se recomienda comenzar con las directivas de línea  base recomendadas al evaluar MDO y luego refinarlas según sea necesario durante el período de evaluación.
 
-Puede habilitar EOP y Defender recomendados para Office 365 de protección rápida y asignarlas a usuarios piloto específicos o grupos definidos como parte de la evaluación. Las directivas preestablecidas ofrecen una **plantilla de protección** estándar de línea base o una plantilla de protección **estricta** más agresiva que se puede asignar de forma independiente o combinada.
+Puede habilitar EOP y Defender recomendados para Office 365 de protección rápida y asignarlas a usuarios piloto específicos o grupos definidos como parte de la evaluación. Las directivas preestablecidas ofrecen una **plantilla de protección** estándar de línea base o una plantilla de protección **estricta** más agresiva, que se puede asignar de forma independiente o combinada.
 
 Este es el [artículo Preestablecidas directivas de seguridad en EOP y Microsoft Defender para Office 365](../office-365-security/preset-security-policies.md) que describe los pasos.
 
 1. Inicie sesión en su Microsoft 365 inquilino. Use una cuenta con acceso al portal de Microsoft 365 Defender, agregado al rol Administración de la organización en Office 365 o al rol Administrador de seguridad en Microsoft 365.
 2. En el menú de navegación, seleccione *Policías & reglas en* Correo & colaboración.
 
-   :::image type="content" source="../../media/mdo-eval/5_mdo-eval-pilot-policies.png" alt-text="En Colaboración & correo electrónico en el panel de navegación, haga clic en Directivas & reglas.":::
+   :::image type="content" source="../../media/mdo-eval/5_mdo-eval-pilot-policies.png" alt-text=" El elemento de menú & reglas que se va a hacer clic en" lightbox="../../media/mdo-eval/5_mdo-eval-pilot-policies.png":::
 
 3. En el panel Reglas de &, haga clic en *Directivas de amenazas*.
 
-   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png" alt-text="El elemento de menú Directivas de amenazas en el portal Microsoft 365 Defender amenazas" lightbox="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png":::
+   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png" alt-text=" El elemento de menú Directivas de amenazas que se va a hacer clic en" lightbox="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png":::
 
 4. En el portal Microsoft 365 Defender, expanda Administración de amenazas desde el menú de navegación y, a continuación, seleccione Directiva en el submenú.
 5. En el panel Directiva, haga clic en *Preestablecidas directivas de seguridad*.
 
-   :::image type="content" source="../../media/mdo-eval/7-mdo-eval-pilot-template-policies.png" alt-text="La página Directivas de amenazas del portal de Microsoft 365 Defender amenazas" lightbox="../../media/mdo-eval/7-mdo-eval-pilot-template-policies.png":::
+   :::image type="content" source="../../media/mdo-eval/7-mdo-eval-pilot-template-policies.png" alt-text="Los tipos de directivas de amenazas" lightbox="../../media/mdo-eval/7-mdo-eval-pilot-template-policies.png":::
 
 6. Haga *clic en* Editar para configurar y asignar la directiva estándar o la directiva Estricta.
 
-   :::image type="content" source="../../media/mdo-eval/8-mdo-eval-pilot-preset.png" alt-text="La página Directivas de seguridad preestablecidas en el portal Microsoft 365 Defender configuración" lightbox="../../media/mdo-eval/8-mdo-eval-pilot-preset.png":::
+   :::image type="content" source="../../media/mdo-eval/8-mdo-eval-pilot-preset.png" alt-text="Las distintas configuraciones aplicadas a varias directivas en la página Directivas de seguridad preestablecidas" lightbox="../../media/mdo-eval/8-mdo-eval-pilot-preset.png":::
 
 7. Agregue condiciones para aplicar protecciones ***EOP** _ de línea base a usuarios piloto específicos o grupos de usuarios, según sea necesario, y seleccione _Next* para continuar.
 
-   Por ejemplo, una condición defender para Office 365 para evaluaciones piloto podría aplicarse si los destinatarios son miembros de un grupo  definido de Defender para protección estándar y *, Office 365* continuación, se administra simplemente agregando cuentas al grupo o quitando una cuenta del grupo.
+   Por ejemplo, se podría aplicar una condición defender para Office 365 para evaluaciones piloto si los destinatarios son miembros de un  grupo definido defender para protección estándar y, *Office 365 a* continuación, se administra agregando cuentas al grupo o quitando una cuenta del grupo.
 
-   :::image type="content" source="../../media/mdo-eval/9-mdo-eval-pilot-eop-protections.png" alt-text="Las protecciones de EOP se aplican a la página en el portal de Microsoft 365 Defender web" lightbox="../../media/mdo-eval/9-mdo-eval-pilot-eop-protections.png":::
+   :::image type="content" source="../../media/mdo-eval/9-mdo-eval-pilot-eop-protections.png" alt-text="Las directivas que se consideran protecciones de EOP" lightbox="../../media/mdo-eval/9-mdo-eval-pilot-eop-protections.png":::
 
 8. Agregue condiciones para aplicar protecciones ***MDO** _ de línea base a usuarios piloto específicos o grupos de usuarios, según sea necesario. Haga clic _Next* para continuar.
 
-   Por ejemplo, se podría aplicar una condición defender para Office 365 para evaluaciones piloto si los destinatarios son miembros de un  grupo de Protección estándar definido de *Defender para Office 365* y, Office 365 continuación, se administra simplemente agregando o quitando cuentas a través del grupo.
+   Por ejemplo, se podría aplicar una condición defender para Office 365 para evaluaciones piloto si los destinatarios son miembros de un  grupo de Defender para protección estándar definido y *, Office 365* continuación, se administra agregando o quitando cuentas a través del grupo.
 
-   :::image type="content" source="../../media/mdo-eval/10-mdo-eval-pilot-mdo-protections.png" alt-text="Las protecciones de defender Office 365 se aplican a la página en el portal Microsoft 365 Defender web" lightbox="../../media/mdo-eval/10-mdo-eval-pilot-mdo-protections.png":::
+   :::image type="content" source="../../media/mdo-eval/10-mdo-eval-pilot-mdo-protections.png" alt-text="Las directivas consideradas defensivos de Office 365 protección" lightbox="../../media/mdo-eval/10-mdo-eval-pilot-mdo-protections.png":::
 
 9. Revise y confirme los cambios para asignar directivas de seguridad preestablecidas.
-10. Las directivas de protección predefinidas se pueden administrar (volver a configurar, volver a aplicar, deshabilitar, etc.) volviendo al portal de Microsoft 365 Defender > Directivas & reglas > Directivas de amenazas > y haciendo clic en el icono Directivas de seguridad predefinidas.
+10. Las directivas de protección predefinidas se pueden administrar (reconfigurar, volver a aplicar, deshabilitar, etc.) volviendo al portal de Microsoft 365 Defender > Directivas & reglas > Directivas de amenazas > y haciendo clic en el icono Directivas de seguridad preestablecidas *.*
 
 ### <a name="configure-custom-protection-policies"></a>Configurar directivas de protección personalizadas
 
@@ -128,13 +127,13 @@ Las plantillas de directiva *Standard* o *Strict* Defender predefinidas para Off
 
 Es importante tener *en cuenta la* prioridad que estas directivas de protección tienen cuando se aplican y se aplican, como orden y prioridad de la protección de correo electrónico [- Office 365](../office-365-security/how-policies-and-protections-are-combined.md) explica.
 
-En la tabla siguiente se proporcionan referencias y instrucciones adicionales para configurar y asignar directivas de protección personalizadas:
+En la tabla siguiente se proporcionan referencias y más instrucciones para configurar y asignar directivas de protección personalizadas:
 
 <br>
 
 ****
 
-|Directiva|Descripción|Referencia|
+|Policy|Descripción|Referencia|
 |:---:|---|---|
 |Filtrado de la conexión|Identifique los servidores de correo electrónico de origen buenos o malos por sus direcciones IP.|[Configurar la directiva de filtro de conexión predeterminada en EOP](../office-365-security/configure-the-connection-filter-policy.md)|
 |Antimalware|Proteger a los usuarios de malware de correo electrónico, incluidas las acciones que se deben realizar y a quién notificar si se detecta malware.|[Configurar directivas antimalware en EOP](../office-365-security/configure-anti-malware-policies.md)|
@@ -145,7 +144,7 @@ En la tabla siguiente se proporcionan referencias y instrucciones adicionales pa
 |Vínculos seguros|Proteja a los usuarios de abrir y compartir vínculos malintencionados en mensajes de correo electrónico o Office aplicaciones de escritorio.|[Configurar directivas de vínculos seguros en Defender para Office 365](../office-365-security/set-up-safe-links-policies.md)|
 |
 
-## <a name="step-3-try-out-capabilities--get-familiar-with-simulation-monitoring-and-metrics"></a>Paso 3: Probar capacidades: familiarizarse con la simulación, la supervisión y las métricas
+## <a name="step-3-try-out-capabilities-and-get-familiar-with-simulation-monitoring-and-metrics"></a>Paso 3: Probar las capacidades y familiarizarse con la simulación, la supervisión y las métricas
 
 Ahora que el piloto está configurado y configurado, resulta útil familiarizarse con las herramientas de simulación de informes, supervisión y ataques que son exclusivas de Microsoft Defender para Microsoft 365.
 
@@ -156,11 +155,11 @@ Ahora que el piloto está configurado y configurado, resulta útil familiarizars
 |Funcionalidad|Descripción|Más información|
 |---|---|---|
 |Explorador de amenazas|El Explorador de amenazas es una eficaz herramienta casi en tiempo real que ayuda a los equipos de operaciones de seguridad a investigar y responder a las amenazas y muestra información sobre el malware y la suplantación de identidad (phish) sospechosos en el correo electrónico y los archivos de Office 365, así como otras amenazas y riesgos de seguridad para su organización.|[Vistas en el explorador de amenazas y detecciones en tiempo real](../office-365-security/threat-explorer-views.md)|
-|Simulador de ataque|Puedes usar el Aprendizaje de simulación de ataques en el portal de Microsoft 365 Defender para ejecutar escenarios de ataque realistas en tu organización que te ayuden a identificar y encontrar usuarios vulnerables antes de que un ataque real impacte en tu entorno.|[Introducción al uso de aprendizaje de simulación de ataques](../office-365-security/attack-simulation-training-get-started.md)|
-|Panel de informes|En el menú de navegación izquierdo, haga clic en Informes y expanda el encabezado De & de colaboración. Los informes de colaboración de Email & se trata de detectar tendencias de seguridad, algunas de las cuales le permitirán tomar medidas (a través de botones como "Ir a envíos"), y otras que mostrarán tendencias, como el resumen de estado de flujo de correo, top malware, detecciones de suplantación, usuarios comprometidos, latencia de correo, vínculos de Caja fuerte e informes de datos adjuntos de Caja fuerte. Estas métricas se generan automáticamente.|[Ver informes](../office-365-security/view-email-security-reports.md)|
+|Simulador de ataque|Puedes usar el aprendizaje de simulación de ataques en el portal de Microsoft 365 Defender para ejecutar escenarios de ataque realistas en tu organización, lo que te ayudará a identificar y encontrar usuarios vulnerables antes de que un ataque real impacte en tu entorno.|[Introducción al uso de aprendizaje de simulación de ataques](../office-365-security/attack-simulation-training-get-started.md)|
+|Panel de informes|En el menú de navegación izquierdo, haga clic en Informes y expanda el encabezado De & de colaboración. Los informes de colaboración de email & se trata de detectar tendencias de seguridad, algunas de las cuales le permitirán tomar medidas (a través de botones como "Ir a envíos"), y otras que mostrarán tendencias, como el resumen de estado de flujo de correo, top malware, detecciones de suplantación de dominio, usuarios comprometidos, latencia de correo, vínculos de Caja fuerte e informes de datos adjuntos de Caja fuerte. Estas métricas se generan automáticamente.|[Ver informes](../office-365-security/view-email-security-reports.md)|
 |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 [Microsoft Defender para punto de conexión](eval-defender-endpoint-overview.md)
 

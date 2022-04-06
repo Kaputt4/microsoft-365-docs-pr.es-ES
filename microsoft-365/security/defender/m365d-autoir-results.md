@@ -23,12 +23,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 05e16a32fb21f682a756c32201a69c192d398184
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5a95980147c66fa8655f5c1b2ebe8adfff9e87c0
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321813"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501275"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Detalles y resultados de una investigación automatizada
 
@@ -89,13 +89,13 @@ Use una página de detalles de un incidente para ver información detallada sobr
 
 Por ejemplo:
 
-:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="Un ejemplo de una página de investigación." lightbox="../../media/mtp-incidentdetails-tabs.png":::
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="Página de investigación en el portal Microsoft 365 Defender investigación" lightbox="../../media/mtp-incidentdetails-tabs.png":::
 
 ## <a name="investigation-details"></a>Detalles de la investigación
 
 Use la vista detalles de la investigación para ver la actividad pasada, actual y pendiente relacionada con una investigación. Por ejemplo:
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Un ejemplo de detalles de investigación." lightbox="../../media/mtp-air-investdetails.png":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Página de detalles de la investigación en el portal Microsoft 365 Defender investigación" lightbox="../../media/mtp-air-investdetails.png":::
 
 En la vista de detalles de la investigación, puede ver información en las pestañas **gráfico de investigación**, **alertas**, **dispositivos**, **identidades**, **resultados clave**, **entidades**, **registro**, y **acciones pendientes**, que se describen en la siguiente tabla.
 
@@ -108,13 +108,13 @@ En la vista de detalles de la investigación, puede ver información en las pest
 | **Alertas** | Muestra las alertas relacionadas con la investigación. Las alertas pueden venir de características de protección contra amenazas en el dispositivo de un usuario, en aplicaciones Office, Microsoft Defender para aplicaciones en la nube y otras Microsoft 365 Defender aplicaciones.|
 | **Devices** | Enumera los dispositivos incluidos en la investigación junto con su nivel de corrección. (Los niveles de corrección corresponden [al nivel de automatización de los grupos de dispositivos](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)). |
 | **Buzones** |Enumera los buzones que se verán afectados por las amenazas detectadas.  |
-| **Users**  | Enumera las cuentas de usuario afectadas por las amenazas detectadas. |
+| **Usuarios**  | Enumera las cuentas de usuario afectadas por las amenazas detectadas. |
 | **Evidencia** | Enumera partes de pruebas generadas por alertas o investigaciones. Incluye veredictos (malintencionados *,* *sospechosos*, desconocidos o *sin* amenazas encontradas) y estado de corrección. |
 | **Entities** | Proporciona detalles sobre cada entidad analizada, incluido un veredicto para cada tipo de entidad (malintencionada, sospechosa o *sin amenazas encontradas*).|
 |**Log** | Proporciona una vista cronológica y detallada de todas las acciones de investigación realizadas después de desencadenar una alerta.|
 | **Historial de acciones pendientes** | Muestra los elementos que necesitan aprobación para continuar. Vaya al Centro de acciones ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) para aprobar acciones pendientes. |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver y aprobar acciones de corrección](m365d-autoir-actions.md)
 - [Más información sobre las acciones de corrección](m365d-remediation-actions.md)

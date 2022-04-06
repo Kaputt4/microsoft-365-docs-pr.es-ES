@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector de datos de exhibición de documentos electrónicos de Slack proporcionado por Microsoft para importar y archivar datos de mensajería instantánea.
-ms.openlocfilehash: 2bd4df859d5bb3a4ccd048c83a864d44f81f33bc
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 7882524bb01a1d28c0f4f7c564472961d04baa07
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525077"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501209"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Configurar un conector para archivar datos de exhibición de documentos electrónicos de Slack (versión preliminar)
 
@@ -77,7 +77,15 @@ En la siguiente introducción se explica el proceso de uso de un conector de dat
 
    Después de hacer clic **en Permitir**, se cierra la página Slack y se muestra la página Asignar usuarios de exhibición de documentos electrónicos de **Slack Microsoft 365** usuarios en el asistente para conector.
 
-## <a name="step-3-map-users-and-select-data-types-to-import"></a>Paso 3: Asignar usuarios y seleccionar tipos de datos para importar
+## <a name="step-3-specify-the-users-to-import-data-for"></a>Paso 3: Especificar los usuarios para los que se importarán datos
+
+Seleccione una de las siguientes opciones para especificar qué usuarios cuyos datos de exhibición de documentos electrónicos de Slack desea importar.
+
+- **Todos los usuarios de la organización**. Seleccione esta opción para importar datos para todos los usuarios.
+
+- **Solo los usuarios en retención por juicio**. Seleccione esta opción para importar datos solo para los usuarios cuyos buzones se colocan en retención por juicio. Esta opción importa datos a buzones de usuario que tienen la propiedad LitigationHoldEnabled establecida en True. Para obtener más información, vea [Create a Litigation hold](create-a-litigation-hold.md).
+
+## <a name="step-4-map-users-and-select-data-types-to-import"></a>Paso 4: Asignar usuarios y seleccionar tipos de datos para importar
 
 1. Configure una o ambas de las siguientes opciones para asignar usuarios de Slack a sus Microsoft 365 de correo.
 
@@ -103,7 +111,7 @@ En la siguiente introducción se explica el proceso de uso de un conector de dat
 
 3. Después de configurar los tipos de datos que se importarán, haga clic en **Siguiente**, revise la configuración del conector y, a continuación, haga clic en **Finalizar para crear** el conector.
 
-## <a name="step-4-monitor-the-slack-ediscovery-connector"></a>Paso 4: Supervisar el conector de exhibición de documentos electrónicos de Slack
+## <a name="step-5-monitor-the-slack-ediscovery-connector"></a>Paso 5: Supervisar el conector de exhibición de documentos electrónicos de Slack
 
 Después de crear el conector de exhibición de documentos electrónicos de Slack, puede ver el estado del conector en el Centro de cumplimiento de Microsoft 365.
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 94ce63f30b0016a920fdca60dd10b486922ffa32
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 05957fcf7cf2b3b03fbc757fc8b21e67156b285a
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172287"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500835"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender API de búsqueda avanzada
 
@@ -39,7 +39,7 @@ ms.locfileid: "62172287"
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-[La búsqueda avanzada](advanced-hunting-overview.md) es una [](advanced-hunting-query-language.md) herramienta de búsqueda de amenazas que usa consultas especialmente construidas para examinar los últimos 30 días de datos de eventos en Microsoft 365 Defender. Puedes usar consultas avanzadas de búsqueda para inspeccionar actividad inusual, detectar posibles amenazas e incluso responder a ataques. La API de búsqueda avanzada le permite consultar programáticamente los datos de eventos.
+[La búsqueda avanzada](advanced-hunting-overview.md) es una herramienta de búsqueda de amenazas [](advanced-hunting-query-language.md) que usa consultas especialmente construidas para examinar los últimos 30 días de datos de eventos en Microsoft 365 Defender. Puedes usar consultas avanzadas de búsqueda para inspeccionar actividad inusual, detectar posibles amenazas e incluso responder a ataques. La API de búsqueda avanzada le permite consultar programáticamente los datos de eventos.
 
 ## <a name="quotas-and-resource-allocation"></a>Cuotas y asignación de recursos
 
@@ -50,7 +50,7 @@ Las siguientes condiciones se relacionan con todas las consultas.
 3. Puede realizar hasta 45 llamadas por minuto por inquilino.
 4. Las consultas se bloquean si el inquilino ha alcanzado el 100 % hasta después del siguiente ciclo de 15 minutos.
 5. Si una sola solicitud se ejecuta durante más de 10 minutos, agotará el tiempo de espera y devolverá un error.
-6. Un código de respuesta HTTP indica que ha alcanzado una cuota, ya sea por número de solicitudes enviadas o por tiempo `429` de ejecución asignado. Lea el cuerpo de la respuesta para comprender el límite que ha alcanzado. 
+6. Un `429` código de respuesta HTTP indica que ha alcanzado una cuota, ya sea por número de solicitudes enviadas o por tiempo de ejecución asignado. Lea el cuerpo de la respuesta para comprender el límite que ha alcanzado. 
 
 > [!NOTE]
 > Todas las cuotas enumeradas anteriormente (por ejemplo, 15 llamadas por minuto) son por tamaño de espacio empresarial. Estas cuotas son las mínimas.
@@ -61,8 +61,8 @@ Uno de los siguientes permisos es necesario para llamar a la API de búsqueda av
 
 Tipo de permiso | Permiso | Nombre para mostrar de permisos
 -|-|-
-Aplicación | AdvancedHunting.Read.All | Ejecutar consultas avanzadas
-Delegado (cuenta profesional o educativa) | AdvancedHunting.Read | Ejecutar consultas avanzadas
+Aplicación | AdvancedQuery.Read.All| Ejecutar consultas avanzadas
+Delegado (cuenta profesional o educativa) | AdvancedQuery.Read | Ejecutar consultas avanzadas
 
 >[!Note]
 > Al obtener un token con credenciales de usuario:
@@ -83,17 +83,17 @@ Encabezado | Valor
 Authorization | Portador {token} **Nota: obligatorio**
 Content-Type | application/json
 
-## <a name="request-body"></a>Cuerpo de solicitud
+## <a name="request-body"></a>Cuerpo de la solicitud
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
 Parámetro | Tipo | Descripción
 -|-|-
-Query | Text | Consulta que se debe ejecutar. **Nota: obligatorio**
+Query | Texto | Consulta que se debe ejecutar. **Nota: obligatorio**
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devolverá `200 OK` y un _objeto QueryResponse_ en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devolverá `200 OK`y un _objeto QueryResponse_ en el cuerpo de la respuesta.
 
 El objeto response contiene tres propiedades de nivel superior:
 
@@ -103,7 +103,7 @@ El objeto response contiene tres propiedades de nivel superior:
 
 ## <a name="example"></a>Ejemplo
 
-En el siguiente ejemplo, un usuario envía la consulta siguiente y recibe un objeto de respuesta api que contiene `Stats` , `Schema` y `Results` .
+En el siguiente ejemplo, un usuario envía la consulta siguiente y recibe un objeto de respuesta api que `Stats`contiene , `Schema`y `Results`.
 
 ### <a name="query"></a>Query
 

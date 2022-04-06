@@ -11,7 +11,7 @@ f1_keywords:
 - O365E_understand_devices
 - BCS365_understand_devices
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom:
 - Core_O365Admin_Migration
@@ -22,22 +22,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén información sobre las diferencias entre la administración de dispositivos móviles y la administración de aplicaciones móviles, o MDM y MAM.
-ms.openlocfilehash: e070f3aa253bf7881f0fb4efd97d84394c3d263ec57cac2643e08c668b8e4257
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: 0e47dd56ac49f859f57315f8a7f1d96193963d06
+ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "53809148"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "63684286"
 ---
 # <a name="difference-between-mdm-and-mam"></a>Diferencia entre MDM y MAM
 
-Microsoft 365 Empresa Premium ofrece varias formas de proteger los datos empresariales. Vea [Overview of Microsoft 365 Empresa Premium](../microsoft-365-business-overview.md) para obtener más información sobre las distintas protecciones que se establecen automáticamente y lo que puede configurar para proteger aún más su negocio. También puedes configurar directivas que protejan los Windows 10 dispositivos y los datos de los dispositivos móviles.
+Microsoft 365 Empresa Premium ofrece varias formas de proteger los datos empresariales. Consulte [Overview of Microsoft 365 Empresa Premium](../../admin/admin-overview/what-is-microsoft-365.md) para obtener más información sobre las distintas protecciones que se establecen automáticamente y lo que puede configurar para proteger aún más su negocio. También puedes configurar directivas que protejan los Windows 10 dispositivos y los datos de los dispositivos móviles.
 [Establecer la configuración de protección de aplicaciones para Windows 10 dispositivos](../protection-settings-for-windows-10-devices.md).
 
 ## <a name="mobile-device-management-or-mdm"></a>Administración de dispositivos móviles o MDM
 
-Microsoft 365 Empresa Premium te permite configurar directivas que protejan los datos de tus Windows 10 dispositivos. Cuando un dispositivo está bajo administración de dispositivos móviles, controlas todo el dispositivo y puedes borrar los datos de él, y también restablecerlo a la configuración de fábrica. Para obtener más información, consulte [Set device protection settings for Windows 10 PCs](../protection-settings-for-windows-10-pcs.md).
+Microsoft 365 Empresa Premium te permite configurar directivas que protejan los datos de tus Windows 10 dispositivos. Cuando un dispositivo está bajo administración de dispositivos móviles, controlas todo el dispositivo y puedes borrar los datos de él, y también restablecerlo a la configuración de fábrica. Para obtener más información, consulta [Establecer la configuración de protección de dispositivos Windows 10 equipos](../protection-settings-for-windows-10-pcs.md).
 
 ## <a name="mobile-application-management-or-mam"></a>Administración de aplicaciones móviles o MAM
 
-La administración de aplicaciones móviles te permite controlar los datos profesionales en los dispositivos personales de los usuarios, como iPhones y Android, y sus equipos personales win 10. Puedes usar directivas de administración de aplicaciones para impedir que los usuarios copien datos empresariales Office aplicaciones a sus aplicaciones personales. También puedes quitar todos los datos de las Office en sus dispositivos personales. Para obtener más información, vea [Set app protection settings for Android or iOS devices](../app-protection-settings-for-android-and-ios.md) y Set application protection settings for Windows 10 [devices](../protection-settings-for-windows-10-devices.md).
+La administración de aplicaciones móviles te permite controlar los datos profesionales en los dispositivos personales de los usuarios, como iPhones y Android, y sus equipos personales win 10. Puedes usar directivas de administración de aplicaciones para impedir que los usuarios copien datos empresariales Office aplicaciones a sus aplicaciones personales. También puedes quitar todos los datos de las aplicaciones Office en sus dispositivos personales. Para obtener más información, consulta [Establecer la configuración](../app-protection-settings-for-android-and-ios.md) de protección de aplicaciones para dispositivos Android o iOS y Establecer la configuración de protección de aplicaciones [para Windows 10 dispositivos](../protection-settings-for-windows-10-devices.md).
