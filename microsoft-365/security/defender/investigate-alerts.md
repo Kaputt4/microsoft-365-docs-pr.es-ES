@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 41583a89abc3418799263dc46643fbe06a07e818
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: c09a3880a9f117d0ce5ce6e5edf3736192fc9c95
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63712848"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499867"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas con Microsoft 365 Defender
 
@@ -45,7 +45,7 @@ En Microsoft 365 Defender, las alertas relacionadas se agregan juntas para forma
 
 La **cola De alertas** muestra el conjunto actual de alertas. Puede acceder a la cola de **alertas desde Incidentes & alertas > alertas en** el inicio rápido del [portal de Microsoft 365 Defender web](https://go.microsoft.com/fwlink/p/?linkid=2077139).
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Ejemplo de la cola de alertas en el Microsoft 365 Defender web":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="La sección Alertas del portal de Microsoft 365 Defender web" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png":::
 
 Las alertas de diferentes soluciones de seguridad de Microsoft como Microsoft Defender para endpoint, Microsoft Defender para Office 365 y Microsoft 365 Defender aparecen aquí.
 
@@ -53,7 +53,7 @@ De forma predeterminada, la cola de alertas del portal de Microsoft 365 Defender
 
 En la cola de alertas predeterminada, puede seleccionar **Filtrar** para ver un panel **Filtro** , desde el que puede especificar un subconjunto de las alertas. Por ejemplo:
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Ejemplo del panel de filtros de la cola de alertas en el portal Microsoft 365 Defender web":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="La sección Filtros del Microsoft 365 Defender portal." lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png":::
 
 Puede filtrar alertas según estos criterios:
 
@@ -91,7 +91,9 @@ Tendrás que tener cualquiera de los siguientes roles para tener acceso a Micros
 
 Para ver la página de alerta principal, seleccione el nombre de la alerta. Por ejemplo:
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Ejemplo de la página de detalles de una alerta en el portal de Microsoft 365 Defender datos":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Los detalles de una alerta en el portal de Microsoft 365 Defender datos" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png":::
+
+También puede seleccionar la acción **Abrir la página de alerta** principal en el **panel Administrar** alerta.
 
 Una página de alerta se compone de estas secciones: 
 
@@ -138,7 +140,7 @@ Una vez que haya seleccionado una entidad de interés, la página de detalles ca
 
 Para administrar una alerta, seleccione **Administrar alerta en** la sección detalles de resumen de la página de alerta. Para una sola alerta, este es un ejemplo del panel **Administrar alerta** .
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Ejemplo del panel Administrar alertas en el portal de Microsoft 365 Defender web":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="La sección Administrar alerta en el portal de Microsoft 365 Defender datos" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png":::
 
 El **panel Administrar alerta** le permite ver o especificar:
 

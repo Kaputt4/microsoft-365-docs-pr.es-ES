@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: b5eb295e83e2a87a538201fe58c221f3f9400f97
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 759f7a6403eb41a6a853ed1f9b844ebd1ef679cc
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63714925"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500021"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -59,7 +59,7 @@ Después de habilitar y configurar las etiquetas de confidencialidad para los co
 ![Una etiqueta de sensibilidad al crear un sitio de equipo desde SharePoint.](../media/sensitivity-labels-new-team-site.png)
 
 > [!NOTE]
-> Las etiquetas de confidencialidad para contenedores admiten [canales compartidos de Teams](/MicrosoftTeams/shared-channels), actualmente en versión preliminar. Si un equipo tiene canales compartidos, hereda automáticamente la configuración de etiqueta de confidencialidad de su equipo primario y esa etiqueta no se puede quitar ni reemplazar con una etiqueta diferente.
+> Actualmente, las etiquetas de confidencialidad para contenedores admiten [canales compartidos de Teams](/MicrosoftTeams/shared-channels) en versión preliminar. Si un equipo tiene canales compartidos, heredará automáticamente la configuración de etiqueta de confidencialidad de su equipo primario y esa etiqueta no se podrá quitar ni reemplazar con una etiqueta diferente.
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>Cómo habilitar etiquetas de confidencialidad para contenedores y sincronizarlas
 
@@ -190,14 +190,16 @@ Use las siguientes instrucciones para crear, modificar o eliminar las etiquetas 
 
 ### <a name="creating-and-publishing-labels-that-are-configured-for-sites-and-groups"></a>Crear y publicar etiquetas configuradas para sitios y grupos
 
-Cuando se crea y se publica una nueva etiqueta de confidencialidad, los usuarios en los equipos, grupos y sitios pueden verla en un plazo de una hora. Sin embargo, si modifica una etiqueta existente, permita que pasen hasta 24 horas. Use las siguientes instrucciones para publicar una etiqueta para los usuarios establecida para la configuración de sitio y grupo:
+Use las siguientes instrucciones para publicar una etiqueta para los usuarios establecida para la configuración de sitio y grupo:
 
 1. Después de crear y configurar la etiqueta de confidencialidad, agréguela a una directiva de etiqueta que solo se aplique a algunos usuarios de prueba.
 
 2. Espere a que se replique el cambio:
-
-   - Nueva etiqueta: espere una hora.
-   - Etiqueta existente: espere 24 horas.
+    
+   - Nueva etiqueta: espere al menos una hora.
+   - Etiqueta existente: espere al menos 24 horas.
+    
+    Para obtener más información sobre el plazo de las etiquetas, consulte [Cuándo esperar que las nuevas etiquetas y los cambios entren en vigor](create-sensitivity-labels.md#when-to-expect-new-labels-and-changes-to-take-effect).
 
 3. Después de este período, utilice una de las cuentas de usuario de prueba para crear un equipo, un grupo de Microsoft 365 o un sitio de SharePoint con la etiqueta creada en el paso 1.
 
@@ -205,7 +207,7 @@ Cuando se crea y se publica una nueva etiqueta de confidencialidad, los usuarios
 
 ### <a name="modifying-published-labels-that-are-configured-for-sites-and-groups"></a>Modificar las etiquetas publicadas que están configuradas para sitios y grupos
 
-Como práctica recomendada, no cambie la configuración de sitio y grupo para una etiqueta de confidencialidad cuando se haya aplicado a equipos, grupos o sitios. Si lo hace, espere hasta 24 horas para que los cambios se repliquen en todos los contenedores que tienen la etiqueta aplicada.
+Como práctica recomendada, no cambie la configuración de sitio y grupo para una etiqueta de confidencialidad cuando se haya aplicado a equipos, grupos o sitios. Si lo hace, espere hasta al menos 24 horas para que los cambios se repliquen en todos los contenedores que tienen la etiqueta aplicada.
 
 Además, si los cambios incluyen la configuración **Acceso de usuarios externos**:
 
@@ -219,7 +221,7 @@ Si elimina una etiqueta de confidencialidad que tiene habilitada la configuraci�
 
 1. Elimine la etiqueta de confidencialidad de todas las directivas de etiqueta que la incluyan.
 
-2. Espere una hora.
+2. Espere al menos una hora.
 
 3. Después de este período, pruebe a crear un equipo, grupo o sitio y compruebe que la etiqueta ya no es visible.
 

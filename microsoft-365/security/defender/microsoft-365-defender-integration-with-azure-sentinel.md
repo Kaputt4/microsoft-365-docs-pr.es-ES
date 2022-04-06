@@ -21,19 +21,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d0add9fe000966cdeb2ffc5ce23e4ba0690bbadb
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 75aea706cdcb65752b673d32ccff968209ba74b7
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320289"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499471"
 ---
 # <a name="microsoft-365-defender-integration-with-microsoft-sentinel"></a>integración de Microsoft 365 Defender con Microsoft Sentinel
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 El Microsoft 365 Defender para Microsoft Sentinel (versión preliminar) envía toda la información Microsoft 365 Defender incidentes y alertas a Microsoft Sentinel y mantiene los incidentes sincronizados. 
 
@@ -50,7 +50,7 @@ Vea esta breve introducción a la integración de Microsoft Sentinel Microsoft 3
 
 Así es como funciona.
 
-:::image type="content" source="../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png" alt-text="Flujo y uso compartido de datos de incidentes entre Microsoft 365 Defender y Microsoft Sentinel.":::
+:::image type="content" source="../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png" alt-text="Flujo y uso compartido de datos de incidentes para los portales Microsoft 365 Defender y Microsoft Sentinel" lightbox="../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png":::
 
 ## <a name="next-steps"></a>Pasos siguientes
 

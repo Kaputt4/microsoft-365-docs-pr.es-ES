@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 97ce614a77b85ae6e22e771a413ae5bce51abce7
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 1d63e240c0698273807421a4121061630b8f3951
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465803"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499537"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>Puntuación de seguridad de Microsoft para dispositivos
 
@@ -48,19 +48,7 @@ La puntuación de los dispositivos está visible [en Administración de amenazas
 
 Seleccione una categoría para ir a la [**página Recomendaciones de seguridad**](tvm-security-recommendation.md) y ver las recomendaciones pertinentes.
 
-## <a name="turn-on-the-microsoft-secure-score-connector"></a>Activar el conector de puntuación segura de Microsoft
-
-Reenvía Microsoft Defender para las señales de punto de conexión, lo que ofrece a Microsoft Secure Score visibilidad en la posición de seguridad del dispositivo. Los datos reenviados se almacenan y procesan en la misma ubicación que los datos de puntuación segura de Microsoft.
-
-Los cambios pueden tardar hasta unas horas en reflejarse en el panel.
-
-1. En el panel de navegación, vaya **a Configuración** \> **características avanzadas generales**  \> **de puntos de conexión** \>
-
-2. Desplácese hacia abajo **hasta Puntuación segura de Microsoft** y cambie la configuración a **Activar**.
-
-3. Seleccione **Guardar preferencias**.
-
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 > [!NOTE]
 > La puntuación segura de Microsoft para dispositivos actualmente admite configuraciones establecidas a través de la directiva de grupo. Debido a la compatibilidad parcial actual de Intune, las configuraciones que podrían haber sido configuradas a través de Intune podrían aparecer como mal configuradas. Póngase en contacto con el administrador de TI para comprobar el estado de configuración real en caso de que su organización use Intune para la administración de configuración segura.

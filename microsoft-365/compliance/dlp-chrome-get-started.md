@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Prepárese para implementar la extensión de cumplimiento de Microsoft.
-ms.openlocfilehash: 5ffd04ee0b89c2e920f55c3e6fbefbab4c82983e
-ms.sourcegitcommit: db2ed146b46ade9ea62eed9cb8efff5fea7a35e6
+ms.openlocfilehash: 1c4c0a79f65f8a58ed30a9170256ef93b2bb4cef
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "64481394"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681818"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Introducción a la extensión de cumplimiento de Microsoft
 
@@ -60,7 +60,7 @@ Para una guía detallada sobre las licencias, vea: [Guía de licencias de Micros
 
 - Su organización debe tener la licencia de DLP para punto de conexión
 - Sus dispositivos deben ejecutar Windows 10 x64 compilación 1809 o posterior.
-- El dispositivo debe tener la versión de cliente antimalware 4.18.2202.x o posterior. Para comprobar la versión actual, abra la aplicación de **Seguridad de Windows**, seleccione el icono **Configuración** y, a continuación, **Acerca de**.
+- El dispositivo debe tener la versión del cliente antimalware 4.18.2101.9 o posterior. Para comprobar la versión actual, abra la aplicación de **Seguridad de Windows**, seleccione el icono **Configuración** y, a continuación, **Acerca de**.
 
 
 ### <a name="permissions"></a>Permisos
@@ -121,13 +121,40 @@ Si va a implementar la extensión de cumplimiento de Microsoft en todos sus disp
 
 Esta método es el recomendado.
 
-1. Vaya a [Extensión de cumplimiento de Microsoft - Almacén web de Chrome (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
+1. Inicie sesión en el equipo de Windows 10 en el que quiera instalar la extensión de cumplimiento de Microsoft y ejecute este script de PowerShell como administrador.
 
-2. Instale la extensión mediante las instrucciones de la página del almacén web de Chrome.
+   ```powershell
+   Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+   ```
+
+2. Vaya a [Extensión de cumplimiento de Microsoft - Almacén web de Chrome (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
+
+3. Instale la extensión mediante las instrucciones de la página del almacén web de Chrome.
 
 ### <a name="deploy-using-microsoft-endpoint-manager"></a>Implementación con Microsoft Endpoint Manager
 
 Use este método de configuración para implementaciones a nivel de la organización.
+
+##### <a name="enabling-required-registry-value-via-microsoft-endpoint-manager"></a>Habilitar el valor necesario del Registro a través de Microsoft Endpoint Manager
+
+1. Cree un script de PowerShell con el contenido siguiente:
+
+    ```powershell
+    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+    ```
+
+2. Inicie sesión en el [Centro de administración de Microsoft Endpoint Manager](https://endpoint.microsoft.com).
+
+3. Vaya a **Dispositivos** > **Scripts** y seleccione **Agregar**.
+
+4. Cuando se le solicite, vaya a la ubicación del script creado.
+
+5. Seleccione la siguiente configuración:
+    1. Ejecutar este script con las credenciales de inicio de sesión: NO
+    1. Aplicar comprobación de firma de script: NO
+    1. Ejecutar script en host de PowerShell de 64 bits: SÍ
+
+6. Seleccione los grupos adecuados de dispositivos y aplique la directiva.
 
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>Pasos para la instalación forzada de Microsoft Endpoint Manager
 
@@ -159,7 +186,39 @@ Antes de agregar la extensión de cumplimiento de Microsoft a la lista de extens
 
 ### <a name="deploy-using-group-policy"></a>Implementar mediante la directiva de grupo
 
-Si no quiere usar Microsoft Endpoint Manager, puede usar directivas de grupo para implementar la extensión de cumplimiento de Microsoft en toda la organización.
+Si no quiere usar Microsoft Endpoint Manager, puede usar directivas de grupo para implementar la extensión de cumplimiento de Microsoft en toda la organización
+
+1. Sus dispositivos deben poder ser administrados mediante la directiva de grupo, y debe importar todos los ADMX de Chrome en el almacén central de la directiva de grupo. Para más información, consulte [Cómo crear y administrar el almacén central de plantillas administrativas de directiva de grupo en Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
+
+2. Crear un script de PowerShell mediante este comando de PowerShell:
+
+    ```powershell
+    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+    ```
+
+3. Abra la **Consola de administración de la directiva de grupo** y vaya a la unidad organizativa (OU).
+
+4. Haga clic y seleccione **Crear un GPO en este dominio y vincularlo aquí**. Cuando se solicite, asigne un nombre descriptivo a este objeto de directiva de grupo (GPO) y finalice la creación.
+
+5. Haga clic en el GPO y seleccione **Editar**.
+
+6. Vaya a **Configuración del equipo** > **Preferencias** > **Configuración del panel de control** > **Tareas programadas**.
+
+7. Cree una nueva tarea inmediata. Para ello, haga clic y seleccione **Nuevo** > **Tarea inmediata (al menos Windows 7)**.
+
+8. Asigne un nombre y una descripción a la tarea.
+
+9. Elija la cuenta correspondiente para ejecutar la tarea inmediata, por ejemplo NT Authority.
+
+10. Seleccione **Ejecutar con los privilegios más altos**.
+
+11. Configure la directiva para Windows 10.
+
+12. En la pestaña **Acciones**, seleccione la acción **Iniciar un programa**.
+
+13. Escriba la ruta de acceso al Programa/Script creado en el paso 1.
+
+14. Seleccione **Aplicar**.
 
 #### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>Agregar la extensión de Chrome a la lista ForceInstall
 

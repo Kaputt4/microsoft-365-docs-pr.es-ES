@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 ms.technology: mdo
-ms.openlocfilehash: c8bf111acd41ede8a493672234de4e4a33ccd105
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 7e8fbeab380ceac3531e2a288fb5e8fb5f43e166
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775860"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682381"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>Configuraciones de identidad y acceso a dispositivos de Confianza cero
 
@@ -39,7 +39,7 @@ Para abordar este nuevo mundo de la informática, Microsoft recomienda encarecid
 
 - Usar acceso con privilegios mínimos
 
-  Limite el acceso de los usuarios con Just-In-Time y Just-Enough-Access (JIT/JEA), directivas adaptables basadas en riesgos y protección de datos.
+  Limite el acceso de los usuarios con Just-In-Time y Just-Enough-Access (JIT/JEA), directivas adaptables basadas en riesgos y protección de datos.  
 
 - Asumir infracción
 

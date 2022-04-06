@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2837b6009c143ea724d8c13d2548eeeca80e431d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 827b22ea2fb5e0864157dfae6748aa97ee4baf29
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321325"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499955"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Paso 2. Corregir el primer incidente
 
@@ -68,7 +68,7 @@ Siguiendo el ejemplo de [Detectar, analizar](first-incident-analyze.md#analyze-y
 7. Crear un indicador personalizado en Microsoft Defender para endpoint para bloquear una dirección IP de Tor
 8. Cree una acción de gobierno en Microsoft Defender para aplicaciones en la nube para este tipo de alerta, como las que se muestran en la siguiente imagen:
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Ejemplo de acciones de gobierno en el portal de Microsoft Defender para Aplicaciones en la nube.":::
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Acciones de gobierno en el portal de Microsoft Defender para Aplicaciones en la nube" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
 
 La mayoría de las acciones de corrección se pueden aplicar y realizar un seguimiento en Microsoft 365 Defender.
 
@@ -85,7 +85,7 @@ Los libros de reproducción Power Automate para crear flujos de automatización 
 
 Por ejemplo:
  
-:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Ejemplo de un flujo Power Automate automatización de procesos robotizados personalizados."::: 
+:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Un Power Automate de automatización de procesos robotizados personalizado" lightbox="../../media/first-incident-remediate/first-incident-power-automate.png"::: 
  
 Los libros de reproducción también se pueden crear durante [la revisión posterior al](first-incident-post.md) incidente para crear acciones de corrección a partir de incidentes resueltos. 
 
@@ -95,7 +95,7 @@ Los libros de reproducción también se pueden crear durante [la revisión poste
 
 Obtenga información sobre cómo [realizar una revisión posterior al incidente de un incidente](first-incident-post.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

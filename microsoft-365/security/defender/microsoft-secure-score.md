@@ -23,18 +23,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d31fa35ddf84b63a115cf3128673794617fcc730
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: ed80d57d25fea2f3c19b6fe6363f993569c68a92
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62886897"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499456"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-La Puntuación de seguridad de Microsoft es una medida de la actitud de seguridad de una organización, donde un número más alto indica que se han tomado más acciones de mejora. Se puede encontrar en el https://security.microsoft.com/securescore portal [Microsoft 365 Defender web](microsoft-365-defender.md#the-microsoft-365-defender-portal).
+La Puntuación de seguridad de Microsoft es una medida de la actitud de seguridad de una organización, donde un número más alto indica que se han tomado más acciones de mejora. Se puede encontrar en el https://security.microsoft.com/securescore portal [de Microsoft 365 Defender web](microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
 Seguir las recomendaciones de la puntuación de seguridad puede proteger a su organización de amenazas. Desde un panel centralizado en el portal de Microsoft 365 Defender, las organizaciones pueden supervisar y trabajar en la seguridad de sus Microsoft 365 identidades, aplicaciones y dispositivos.
 
@@ -49,7 +49,7 @@ Vea este vídeo para obtener una introducción rápida a la puntuación segura.
 
 Las organizaciones obtienen acceso a visualizaciones sólidas de métricas y tendencias, integración con otros productos de Microsoft, comparación de puntuaciones con organizaciones similares y mucho más. La puntuación también puede reflejar cuándo las soluciones de terceros han abordado las acciones recomendadas.
 
-![Página principal de puntuación segura.](../../media/secure-score/secure-score-home-page.png)
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="Página principal de Puntuación segura de Microsoft en el portal de Microsoft 365 Defender seguridad" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
 ## <a name="how-it-works"></a>Cómo funciona
 
@@ -106,7 +106,7 @@ Si activas los valores predeterminados de seguridad, se te concederán puntos co
 
 ## <a name="required-permissions"></a>Permisos necesarios
 
-Para tener permiso para obtener acceso a Puntuación segura de Microsoft, debe tener asignado uno de los siguientes roles en Azure Active Directory.
+Para tener permiso para obtener acceso a La puntuación segura de Microsoft, debe tener asignado uno de los siguientes roles en Azure Active Directory.
 
 ### <a name="read-and-write-roles"></a>Roles de lectura y escritura
 

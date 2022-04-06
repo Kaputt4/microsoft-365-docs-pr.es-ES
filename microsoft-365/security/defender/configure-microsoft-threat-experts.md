@@ -1,7 +1,7 @@
 ---
 title: Configurar y administrar las Expertos en amenazas de Microsoft a través de Microsoft 365 Defender
-description: 'Suscríbete a Microsoft Threats Experts Microsoft 365 Defender para configurarlo, administrarlo y usarlo en el trabajo diario de administración de seguridad y operaciones de seguridad.'
-keywords: 'Expertos en amenazas de Microsoft, servicio de búsqueda de amenazas administradas, MTE, servicio de búsqueda administrada de Microsoft'
+description: Suscríbete a Microsoft Threats Experts Microsoft 365 Defender para configurarlo, administrarlo y usarlo en el trabajo diario de administración de seguridad y operaciones de seguridad.
+keywords: Expertos en amenazas de Microsoft, servicio de búsqueda de amenazas administradas, MTE, servicio de búsqueda administrada de Microsoft
 search.product: Windows 10
 search.appverid: met150
 ms.prod: m365-security
@@ -15,10 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+- M365-security-compliance
+- m365initiative-m365-defender
+ms.openlocfilehash: 0bf6a6ecf48889228391688e41fb79070c3194a1
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682226"
 ---
-
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configurar y administrar las Expertos en amenazas de Microsoft a través de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -47,15 +52,15 @@ Si ya tienes Microsoft Defender para endpoint y Microsoft 365 Defender, puedes s
 
 2. Seleccione **Aplicar**.
 
-    :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="La Expertos en amenazas de Microsoft de configuración del portal de Microsoft 365 Defender web" lightbox="../../media/mte/mte-collaboratewithmte.png":::
+    ![Imagen de Expertos en amenazas de Microsoft configuración.](../../media/mte/mte-collaboratewithmte.png)
 
 3. Escriba su nombre y dirección de correo electrónico para que Microsoft pueda ponerse en contacto con usted sobre su aplicación.
 
-    :::image type="content" source="../../media/mte/mte-apply.png" alt-text="Página Expertos en amenazas de Microsoft aplicación en el portal de Microsoft 365 Defender web" lightbox="../../media/mte/mte-apply.png":::
-  
+    ![Imagen de Expertos en amenazas de Microsoft aplicación.](../../media/mte/mte-apply.png)
+
 4. Lea la [declaración de privacidad](https://privacy.microsoft.com/en-us/privacystatement) y, a continuación, **seleccione Enviar** cuando haya terminado. Recibirá un correo electrónico de bienvenida una vez que se apruebe la aplicación.
 
-    :::image type="content" source="../../media/mte/mte-applicationconfirmation.png" alt-text="La Expertos en amenazas de Microsoft de la aplicación en el portal Microsoft 365 Defender web" lightbox="../../media/mte/mte-applicationconfirmation.png":::
+    ![Imagen de la Expertos en amenazas de Microsoft de la aplicación.](../../media/mte/mte-applicationconfirmation.png)
 
 5. Después de recibir el correo electrónico de bienvenida, empezarás a recibir automáticamente notificaciones de ataques dirigidos.
 
@@ -100,13 +105,13 @@ Puede ponerse en contacto Expertos en amenazas de Microsoft desde dentro del por
 
 2. En el menú superior, seleccione **? Consulte a un experto en amenazas**.
 
-    :::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="The Expertos en amenazas de Microsoft Experts on Demand from the menu in the Microsoft 365 Defender portal" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
+    ![Imagen de Expertos en amenazas de Microsoft expertos a petición del menú.](../../media/mte/incidents-action-mte-highlighted.png)
 
     Se abrirá una pantalla desplegable.
 
     El encabezado indicará si está en una suscripción de prueba o una suscripción completa Expertos en amenazas de Microsoft: suscripción a petición de expertos.
 
-    :::image type="content" source="../../media/mte/mte-trial.png" alt-text="La Expertos en amenazas de Microsoft de suscripción de prueba de expertos a petición en el portal Microsoft 365 Defender prueba" lightbox="../../media/mte/mte-trial.png":::
+    ![Imagen de la Expertos en amenazas de Microsoft de suscripción de prueba de expertos a petición.](../../media/mte/mte-trial.png)
 
     El **campo Tema** investigación ya se rellenará con el vínculo a la página correspondiente para la solicitud.
 

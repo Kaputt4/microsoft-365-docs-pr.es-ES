@@ -18,12 +18,12 @@ ms.custom:
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 4ec06a96e345345560a2714fa7e23d91a6f5832f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0e38dc36ca85425c033d2b8fd4828043b4043f1a
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314224"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499427"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurar las funcionalidades automatizadas de investigación y respuesta en Microsoft 365 Defender
 
@@ -92,7 +92,7 @@ La configuración de seguridad Office 365 ayuda a proteger el correo electrónic
 
 ## <a name="make-sure-microsoft-365-defender-is-turned-on"></a>Asegúrese de Microsoft 365 Defender está activado
 
-:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="Cómo asegurarse de que Microsoft 365 Defender está habilitado." lightbox="../../media/mtp-enable/mtp-on.png":::
+:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="El panel de navegación izquierdo del portal Microsoft 365 Defender cuando Microsoft 365 Defender está activado" lightbox="../../media/mtp-enable/mtp-on.png":::
 
 1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender web</a>
 
@@ -103,7 +103,7 @@ La configuración de seguridad Office 365 ayuda a proteger el correo electrónic
 > [!TIP]
 > ¿Necesita ayuda? Consulte [Activar Microsoft 365 Defender](m365d-enable.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Acciones de corrección en Microsoft 365 Defender](m365d-remediation-actions.md)
 - [Visite el Centro de actividades](m365d-action-center.md)

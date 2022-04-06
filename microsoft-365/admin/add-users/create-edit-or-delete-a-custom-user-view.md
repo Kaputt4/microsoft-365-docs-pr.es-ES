@@ -19,28 +19,28 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: Aprenda a usar filtros para crear, editar o eliminar la vista de usuario personalizada en Microsoft 365.
-ms.openlocfilehash: 479f6c566cea407e75c6fb14f76db418c127aeb4
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: cf3e286a7d8f0e9b5f9741541974b2125df505ad
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530192"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499603"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>Crear, editar o eliminar una vista de usuario personalizada
 
-Si es administrador global o de administración de usuarios de una suscripción Microsoft 365 para empresas, puede crear vistas de usuario personalizadas para ver un subconjunto específico de usuarios. Estas vistas son además del conjunto estándar de vistas. Puede crear, editar o eliminar vistas de usuario personalizadas y las vistas personalizadas que cree estarán disponibles para todos los administradores.
+Si es administrador global o de administración de usuarios de una suscripción de Microsoft 365 para empresas, puede crear vistas de usuario personalizadas para ver un subconjunto específico de usuarios. Estas vistas son además del conjunto estándar de vistas. Puede crear, editar o eliminar vistas de usuario personalizadas y las vistas personalizadas que cree estarán disponibles para todos los administradores.
   
 ## <a name="custom-user-views-in-the-admin-center"></a>Vistas de usuario personalizadas en el Centro de administración
 
-Al crear, editar o eliminar una vista de usuario personalizada, los cambios se mostrarán en la lista de filtros que verán todos los administradores de su **empresa** cuando vayan a la página Usuarios.  Puede crear hasta 50 vistas personalizadas. 
+Al crear, editar o eliminar una vista de usuario personalizada, los cambios se mostrarán en la lista  de filtros que verán todos los administradores de **su empresa cuando** vayan a la página Usuarios. Puede crear hasta 50 vistas personalizadas. 
 
 > [!TIP]
->  Las vistas de usuario estándar se muestran de forma predeterminada en la **lista** desplegable Filtros. Los filtros estándar incluyen **Todos** los usuarios **,** Usuarios con **licencia,** Usuarios **invitados,** Inicio de sesión **permitido,** Inicio de sesión bloqueado **,** **Usuarios** sin **licencia,** Usuarios con **errores,** Administradores de facturación **,** Administradores globales, Administradores del departamento de soporte técnico, Administradores de **servicio** y Administradores de administración de **usuarios.** No puede editar ni eliminar vistas estándar. 
+>  Las vistas de usuario estándar se muestran de forma predeterminada en la **lista** desplegable Filtros. Los filtros estándar incluyen **Todos** los **usuarios, Usuarios** con **licencia, Usuarios** **invitados****, Inicio** de sesión **permitido, Inicio** de sesión **bloqueado, Usuarios** sin **licencia, Usuarios** con **errores,** Administradores de facturación **,** Administradores globales, Administradores del departamento de **soporte técnico,** Administradores de servicio y Administradores de administración de **usuarios**. No puede editar ni eliminar vistas estándar. 
 
 Algunas cosas que debe tener en cuenta acerca de las vistas estándar: 
 
 - Algunas vistas estándar muestran una lista sin selección si hay más de 2.000 usuarios en la lista. Para buscar usuarios específicos en esta lista, use el cuadro de búsqueda. 
-- Si no compraste Microsoft 365 **microsoft,** los administradores de facturación no aparecerán en la lista de vistas estándar. Para más información, vea [Asignar roles de administrador](assign-admin-roles.md). 
+- Si no compraste Microsoft 365 **microsoft, los** administradores de facturación no aparecerán en la lista de vistas estándar. Para más información, vea [Asignar roles de administrador](assign-admin-roles.md). 
   
 ## <a name="choose-the-filters-for-your-custom-user-view"></a>Elegir los filtros para la vista de usuario personalizada
 
@@ -63,12 +63,12 @@ También puede filtrar por detalles de perfil de usuario adicionales usados en s
     
 - **Usuarios con errores** Seleccione este cuadro para mostrar a los usuarios que pueden tener errores de aprovisionamiento. 
     
-- **Usuarios sin licencia** Seleccione este cuadro para buscar todos los usuarios a los que no se les ha asignado una licencia. Los resultados de esta vista también pueden incluir usuarios que tienen un buzón Exchange pero no tienen una licencia. Para realizar un seguimiento específico de esos usuarios, use el filtro Usuarios sin licencia con Exchange **buzones o archivos**. Los resultados de esta vista también pueden incluir usuarios que tienen un archivo Exchange, pero que no tienen una licencia.
+- **Usuarios sin licencia** Seleccione este cuadro para buscar todos los usuarios a los que no se les ha asignado una licencia. Los resultados de esta vista también pueden incluir usuarios que tienen un buzón de correo Exchange pero no tienen una licencia. Para realizar un seguimiento específico de esos usuarios, use el filtro Usuarios sin licencia **con Exchange buzones o archivos**. Los resultados de esta vista también pueden incluir usuarios que tienen un archivo Exchange, pero que no tienen una licencia.
     
-- Usuarios sin licencia con **buzones** o archivos Exchange Seleccione este cuadro para mostrar cuentas de usuario que se crearon en Exchange Online y tienen un buzón de Exchange, pero no se les asignó una licencia Microsoft 365. Los resultados de este filtro incluyen usuarios que tienen o a los que se les asignó un Exchange archivo. 
+- Usuarios sin licencia con Exchange **buzones** o archivos Seleccione este cuadro para mostrar cuentas de usuario que se crearon en Exchange Online y tienen un buzón de Exchange, pero no se les asignó una licencia Microsoft 365. Los resultados de este filtro incluyen usuarios que tienen o a los que se les asignó un Exchange archivo. 
 
 > [!NOTE]
-> Los **usuarios sin licencia con Exchange de buzones** de correo funciona cuando:
+> El **filtro Usuarios sin licencia con Exchange de buzones** funciona cuando:
 1. El buzón se ha convertido recientemente de **compartido** a **usuario** y no tiene licencia.
 2. El buzón se ha migrado recientemente a Microsoft 365 pero no se ha asignado una licencia.
 3. El buzón se ha creado con PowerShell y no se ha asignado una licencia.
@@ -81,44 +81,44 @@ También puede filtrar por detalles de perfil de usuario adicionales usados en s
 
 ::: moniker range="o365-worldwide"
 
-1. En el Centro de administración, vaya a **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">usuarios activos.</a>
+1. En el Centro de administración, vaya a **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">usuarios activos</a>.
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el Centro de administración, vaya a **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">usuarios activos.</a>  
+1. En el Centro de administración, vaya a **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">usuarios activos</a>.  
 
 ::: moniker-end
     
-2. En la **página Usuarios activos,** seleccione **Filtros** y **nuevo filtro.**
+2. En la **página Usuarios activos** , seleccione **Filtros** y **nuevo filtro**.
   
-3. En la **página Filtro** personalizado, escriba el nombre del filtro, elija las condiciones del filtro personalizado y, a continuación, **seleccione Agregar**. La vista personalizada ahora se incluye en la lista desplegable de filtros.
+3. En la **página Filtro personalizado** , escriba el nombre del filtro, elija las condiciones del filtro personalizado y, a continuación, **seleccione Agregar**. La vista personalizada ahora se incluye en la lista desplegable de filtros.
 
 ## <a name="edit-or-delete-a-custom-user-view"></a>Editar o eliminar una vista de usuario personalizada
 
 ::: moniker range="o365-worldwide"
 
-1. En el Centro de administración, vaya a **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">usuarios activos.</a>
+1. En el Centro de administración, vaya a **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">usuarios activos</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el Centro de administración, vaya a **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">usuarios activos.</a> 
+1. En el Centro de administración, vaya a **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">usuarios activos</a>. 
 
 ::: moniker-end 
     
-2. En la **página Usuarios activos,** seleccione **Filtrar**, seleccione el filtro que desea cambiar y, a continuación, seleccione **Editar filtro**. 
+2. En la **página Usuarios activos** , seleccione **Filtrar**, seleccione el filtro que desea cambiar y, a continuación, **seleccione Editar filtro**. 
     
     > [!TIP]
     > Solo puede editar vistas personalizadas. 
   
-3. En la **página Filtro** personalizado, edite la información según sea necesario y, a continuación, **seleccione Guardar**. O bien, para eliminar el filtro, en la parte inferior de la página seleccione **Eliminar**. 
+3. En la **página Filtro personalizado** , edite la información según sea necesario y, a continuación, **seleccione Guardar**. O bien, para eliminar el filtro, en la parte inferior de la página seleccione **Eliminar**. 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Overview of the Centro de administración de Microsoft 365](Overview of the Centro de administración de Microsoft 365](.. /admin-overview/admin-center-overview.md) (vídeo)\
+[Introducción a la Centro de administración de Microsoft 365](../admin-overview/admin-center-overview.md) (vídeo)\
 [Acerca de los roles de administrador](../add-users/about-admin-roles.md) (vídeo)\
 [Personalizar el tema Microsoft 365 para la sua organización (artículo)](../setup/customize-your-organization-theme.md)
 

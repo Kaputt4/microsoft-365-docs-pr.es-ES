@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fb48e432d20067f3c6ca1913349152154c57e81
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: de0dd5b7c0466a722a788ee3fe4e6c843d70f5eb
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557881"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680982"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Ver defender para Office 365 informes en el portal Microsoft 365 Defender web
 
@@ -211,22 +211,13 @@ En la página de informe principal, el icono ![Crear programación.](../../media
 
 Además de los informes descritos en este artículo, hay otros informes disponibles, como se describe en la tabla siguiente:
 
-<br>
-
-****
-
 |Informe|Tema|
 |---|---|
 |**Explorer** (Microsoft Defender para Office 365 plan 2) o detecciones en tiempo **real** (Microsoft Defender para Office 365 Plan 1)|[Explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md)|
 |Informes de seguridad de correo electrónico que no requieren Defender para Office 365|[Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico](view-email-security-reports.md)|
 |Informes de flujo de correo en el centro Exchange administración (EAC)|[Informes de flujo de correo en el nuevo centro Exchange administración](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|
 
 Cmdlets de informes de PowerShell:
-
-<br>
-
-****
 
 |Informe|Tema|
 |---|---|
@@ -237,7 +228,6 @@ Cmdlets de informes de PowerShell:
 |Usuarios comprometidos|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
 |Estado del flujo de correo|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |Usuarios suplantados|[Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)|
-|
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>¿Qué permisos se necesitan para ver el Defender para Office 365 informes?
 

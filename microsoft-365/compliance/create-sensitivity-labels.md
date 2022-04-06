@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un requisito para todas las soluciones de Microsoft Information Protection: crear, configurar y publicar etiquetas de confidencialidad para clasificar y proteger los datos de su organización.'
-ms.openlocfilehash: b5bc61de14f54d65e4ce5eb6f7ae78303626c123
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 5c80147c18cff8c27f8c205ab1ed600e892f7335
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938954"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499581"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 
@@ -150,7 +150,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 5. Siga las indicaciones para configurar las configuraciones de la directiva.
 
-    Las opciones de configuración de directiva que se muestran coinciden con el ámbito de las etiquetas que seleccionó. Por ejemplo, si seleccionó etiquetas que solo contienen el ámbito **Archivos y mensajes de correo electrónico**, no verá las opciones de configuración de directiva **Aplicar esta etiqueta de forma predeterminada a los grupos y sitios** y **Requerir que los usuarios apliquen una etiqueta a sus grupos y sitios**.
+    La configuración de directiva que ve coincide con el ámbito de las etiquetas seleccionadas. Por ejemplo, si seleccionó etiquetas que solo contienen el ámbito **Archivos y mensajes de correo electrónico**, no verá las opciones de configuración de directiva **Aplicar esta etiqueta de forma predeterminada a los grupos y sitios** y **Requerir que los usuarios apliquen una etiqueta a sus grupos y sitios**.
 
     Para obtener más información acerca de esta configuración, consulte [Qué pueden hacer las directivas de etiqueta](sensitivity-labels.md#what-label-policies-can-do) en la parte de información general. Use la ayuda en la interfaz de usuario para la configuración individual.
 
@@ -168,20 +168,17 @@ Para editar una directiva de etiquetas existente, selecciónela y, a continuaci�
 
 Este botón inicia la configuración para **Crear directivas**, que le permite editar las etiquetas que se incluirán y su configuración. Cuando finalice la configuración todos los cambios se aplicarán automáticamente a los usuarios y servicios seleccionados.
 
-Al usar etiquetas integradas para aplicaciones de Office en Windows, macOS, iOS y Android, los usuarios verán las nuevas etiquetas en un plazo de cuatro horas, y en una hora para Word, Excel y PowerPoint en la Web al actualizar el explorador. Sin embargo, permita hasta 24 horas para que los cambios se repliquen en todas las aplicaciones y servicios.
-
-Otras aplicaciones y servicios que admiten etiquetas de confidencialidad pueden actualizarse con una frecuencia superior a las 24 horas con sus propios programas de actualización y desencadenadores de actualizaciones de directivas. Consulte la documentación para obtener más información. Por ejemplo, para el cliente de etiquetas unificado de Azure Information Protection, vea la fila **Actualización de la directiva** en la tabla [Comparaciones detalladas de los clientes de Azure Information Protection](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients).
-
-> [!TIP]
-> Recuerde tener en cuenta las dependencias de tiempo que a veces pueden retrasar que las etiquetas de confidencialidad y las directivas de etiquetas funcionen según lo esperado. Por ejemplo, rellenar un nuevo grupo y cambios de pertenencia a grupos, restricciones de ancho de banda y latencia de replicación de red, y [almacenamiento en caché de pertenencia a grupos por parte del servicio Azure Information Protection](/azure/information-protection/prepare#group-membership-caching-by-azure-information-protection) para las etiquetas que aplican cifrado.
-> 
-> Con muchas dependencias externas en las que cada una tiene sus propios ciclos de tiempo, es buena idea esperar 24 horas antes de dedicar tiempo a solucionar problemas de etiquetas y directivas de etiquetas para los cambios recientes.
-
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Configuración adicional de las directivas de etiquetas con PowerShell del Centro de seguridad y cumplimiento
 
 La configuración adicional de las directivas de etiquetas está disponible con el cmdlet [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) desde [Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/scc-powershell).
 
 El cliente de etiquetado unificado de Azure Information Protection admite muchos [valores de configuración avanzada](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) que incluyen la migración desde otras soluciones de etiquetado y mensajes emergentes en Outlook para advertir, justificar o bloquear el envío de correos electrónicos. Para obtener la lista completa, consulte [Configuración avanzada disponible para las directivas de etiquetas](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) de la guía de administrador de este cliente.
+
+## <a name="when-to-expect-new-labels-and-changes-to-take-effect"></a>Cuándo esperar que las nuevas etiquetas y cambios entren en vigor
+
+Para las etiquetas y la configuración de directiva de etiquetas, permita que los cambios se propaguen durante 24 horas a través de los servicios. Hay muchas dependencias externas en las que cada una tiene sus propios ciclos de tiempo, por lo que es buena idea esperar este período de tiempo de 24 horas antes de dedicar tiempo a solucionar problemas de etiquetas y directivas de etiquetas para los cambios recientes.
+
+Sin embargo, hay algunos escenarios en los que las etiquetas y los cambios de directiva de etiquetas pueden tener efecto mucho más rápido o pueden tardar más de 24 horas. Por ejemplo, para las etiquetas de confidencialidad nuevas y eliminadas para Word, Excel y PowerPoint en la web, es posible que vea que las actualizaciones se replican en una hora. Sin embargo, para las configuraciones que dependan de rellenar grupos y nuevos cambios de pertenencia a grupos, o bien de restricciones de latencia y ancho de banda de replicación de red, estos cambios podrían tardar entre 24 y 48 horas.
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>Usar PowerShell para etiquetas de confidencialidad y sus directivas
 

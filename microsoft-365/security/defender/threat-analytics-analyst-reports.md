@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e29ccfc963c0bfc2e730744a131a5c9485c72e42
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 364e83d03da53f5e6ffa8cecda4847e13c38f60e
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449420"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499493"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>Comprender el informe de analista en análisis de amenazas en Microsoft 365 Defender
 
@@ -42,7 +42,7 @@ ms.locfileid: "63449420"
 
 Cada [informe de análisis de](threat-analytics.md) amenazas incluye secciones dinámicas y una sección escrita completa denominada _informe de analista_. Para obtener acceso a esta sección, abra el informe sobre la amenaza rastreada y seleccione la **pestaña Informe de** analista.
 
-![Imagen de la sección de informe de analista de un informe de análisis de amenazas.](../../media/threat-analytics/ta_analystreport_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_analystreport_mtp.png" alt-text="Sección de informe de analista de un informe de análisis de amenazas" lightbox="../../media/threat-analytics/ta_analystreport_mtp.png":::
 
 _Sección de informe de analista de un informe de análisis de amenazas_
 

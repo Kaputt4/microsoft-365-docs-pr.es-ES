@@ -18,12 +18,12 @@ ms.custom:
 ms.date: 03/18/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 151fb8de088531b9a9f053fc2b5d3c433055e21f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 6e6bf499ab348d05cba237fa69b205cb495dccb0
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473131"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681070"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de Endpoint (EDR) en el modo bloqueo
 
@@ -48,7 +48,7 @@ ms.locfileid: "64473131"
 
 EDR en modo de bloqueo se integra con [la amenaza & administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md). El equipo de seguridad de la organización recibirá una [](tvm-security-recommendation.md) recomendación de seguridad para activar EDR en modo de bloqueo si aún no está habilitada.
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="La recomendación de activar el EDR en modo de bloqueo" lightbox="images/edrblockmode-TVMrecommendation.png":::
+:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="recomendación de activar el EDR en modo de bloque.":::
 
 > [!TIP]
 > Para obtener la mejor protección, asegúrese de implementar **[Las líneas base de Microsoft Defender para puntos de conexión](configure-machines-security-baseline.md)**.
@@ -59,7 +59,7 @@ Cuando EDR en modo de bloque está activado y se detecta un artefacto malintenci
 
 La siguiente imagen muestra una instancia de software no deseado que se detectó y bloqueó a través EDR en modo de bloqueo:
 
-:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="La detección por EDR en modo de bloque" lightbox="images/edr-in-block-mode-detection.png":::
+:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="EDR en modo de bloque detectó algo.":::
 
 
 ## <a name="enable-edr-in-block-mode"></a>Habilitar EDR en modo de bloque
@@ -183,7 +183,7 @@ Con la [nueva solución](configure-server-endpoints.md#new-windows-server-2012-r
 
 Si decide deshabilitar EDR en modo de bloqueo, el sistema puede tardar hasta 30 minutos en deshabilitar esta funcionalidad.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Blog Community tech: Introducción a EDR en modo de bloque: Detener ataques en sus pistas](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 

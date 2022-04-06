@@ -1,7 +1,7 @@
 ---
 title: Novedades de Microsoft 365 Defender
 description: Enumera las nuevas características y funcionalidades de Microsoft 365 Defender
-keywords: 'novedades de Microsoft 365 Defender, ga, generalmente disponible, capacidades, disponible, nuevo'
+keywords: novedades de Microsoft 365 Defender, ga, generalmente disponible, capacidades, disponible, nuevo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -14,11 +14,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+- M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
+ms.openlocfilehash: aebf7a82a886540374176c06535e9f0097e73a03
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499823"
 ---
-
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -42,6 +47,12 @@ Para obtener más información sobre las novedades de otros productos de segurid
 
 También puede obtener actualizaciones de productos y notificaciones importantes a través del centro [de mensajes](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
+
+
+## <a name="march-2022"></a>Marzo de 2022
+
+- (Versión preliminar) La cola de incidentes se ha mejorado con varias características diseñadas para ayudar a las investigaciones. Entre las mejoras se incluyen funcionalidades como la capacidad de buscar incidentes por identificador o nombre, especificar un intervalo de tiempo personalizado y otros.
+
 ## <a name="december-2021"></a>Diciembre de 2021
 
 - (GA) La `DeviceTvmSoftwareEvidenceBeta` tabla se agregó a corto plazo en la búsqueda avanzada para que pueda ver evidencias de dónde se detectó un software específico en un dispositivo.
@@ -58,7 +69,7 @@ También puede obtener actualizaciones de productos y notificaciones importantes
 
 ## <a name="september-2021"></a>Septiembre de 2021
 
-- (GA) Microsoft Defender para Office 365 datos de eventos está disponible en la API Microsoft 365 Defender streaming de eventos. Puede ver la disponibilidad y el estado de los tipos de eventos en la API Microsoft 365 Defender [eventos admitidos en la API de streaming](supported-event-types.md).
+- (GA) Microsoft Defender para Office 365 datos de eventos está disponible en la API Microsoft 365 Defender streaming de eventos. Puede ver la disponibilidad y el estado de los tipos de eventos en la API de streaming Microsoft 365 Defender [tipos de eventos admitidos](supported-event-types.md).
 - (GA) Microsoft Defender para los Office 365 disponibles en la búsqueda avanzada ya está disponible en general.
 - (GA) Asignar incidentes y alertas a cuentas de usuario
 
@@ -108,7 +119,7 @@ También puede obtener actualizaciones de productos y notificaciones importantes
 
   Proporciona información mejorada para el contexto en un ataque. Puede ver qué otra alerta desencadenada causó la alerta actual y todas las entidades y actividades afectadas implicadas en el ataque, incluidos los archivos, los usuarios y los buzones. Consulte [Investigar alertas](/microsoft-365/security/defender/investigate-alerts) para obtener más información.
 
-- [Gráfico de tendencias para incidentes y alertas en el portal Microsoft 365 Defender web](https://techcommunity.microsoft.com/t5/microsoft-365-defender/new-alert-page-for-microsoft-365-defender-incident-detections/ba-p/2350425)
+- [Gráfico de tendencias para incidentes y alertas en el portal de Microsoft 365 Defender web](https://techcommunity.microsoft.com/t5/microsoft-365-defender/new-alert-page-for-microsoft-365-defender-incident-detections/ba-p/2350425)
 
   Determine si hay varias alertas para un solo incidente o si su organización está siendo atacada con varios incidentes diferentes. Consulte [Priorizar incidentes](/microsoft-365/security/defender/incident-queue) para obtener más información.
 
@@ -120,16 +131,11 @@ También puede obtener actualizaciones de productos y notificaciones importantes
 
 - [Microsoft 365 Defender análisis de amenazas](threat-analytics.md)
 
-  El análisis de amenazas te ayuda a responder y minimizar el impacto de los ataques activos. También puedes obtener información sobre los intentos de ataque bloqueados por Microsoft 365 Defender soluciones y realizar acciones preventivas que mitiguen el riesgo de exposición adicional y aumenten la resistencia. Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible para Microsoft Defender para Endpoint y Microsoft Defender para los Office de licencias de E5.
+  El análisis de amenazas te ayuda a responder y minimizar el impacto de los ataques activos. También puede obtener información sobre los intentos de ataque bloqueados por Microsoft 365 Defender soluciones y realizar acciones de prevención que mitiguen el riesgo de exposición adicional y aumenten la resistencia. Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible para Microsoft Defender para Endpoint y Microsoft Defender para los Office de licencias de E5.
 
-## <a name="march-2021"></a>Marzo de 2021
+## <a name="march-2021"></a>Marzo 2021
 
 - [Tabla CloudAppEvents](advanced-hunting-cloudappevents-table.md)
 
   Encuentre información sobre eventos en varias aplicaciones y servicios en la nube cubiertos por Microsoft Cloud App Security. Esta tabla también incluye información disponible anteriormente en la `AppFileEvents` tabla.
 
-## <a name="february-2021"></a>Febrero de 2021
-
-- (Versión preliminar) El portal [de Microsoft 365 Defender mejorado (https://security.microsoft.com)](https://security.microsoft.com) ahora está disponible en versión preliminar pública. Esta nueva experiencia lleva a Defender for Endpoint and Defender para Office 365 al centro. [Más información sobre los cambios](microsoft-365-defender.md#the-microsoft-365-defender-portal).
-
-- **[(Versión preliminar) Microsoft 365 Defender](api-overview.md)** API: las API de Microsoft 365 Defender de nivel superior le permitirán automatizar flujos de trabajo basados en el incidente compartido y las tablas avanzadas de búsqueda.

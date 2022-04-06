@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0e7253993a1c05bd25e6dd13865826c42dd7603a
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 5c5a457d960f7dd7906c7d26a099d242507fbe86
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400256"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499207"
 ---
 # <a name="take-response-actions-on-a-file"></a>Realizar acciones de respuesta en un archivo
 
@@ -27,6 +27,8 @@ ms.locfileid: "63400256"
 
 
 **Se aplica a:**
+
+- [Microsoft Defender para punto de conexión Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -49,17 +51,12 @@ También puede enviar archivos para un análisis profundo, para ejecutar el arch
 
 Algunas acciones requieren ciertos permisos. En la tabla siguiente se describe qué acción pueden realizar ciertos permisos en archivos ejecutables portátiles (PE) y que no son PE:
 
-<br>
-
-****
-
 |Permiso|Archivos PE|Archivos que no son PE|
 |---|:---:|:---:|
 |Ver datos|X|X|
 |Investigación de alertas|&#x2611;|X|
 |Respuesta en directo básica|X|X|
 |Respuesta en directo avanzada|&#x2611;|&#x2611;|
-|
 
 Para obtener más información sobre los roles, vea [Create and manage roles for role-based access control](user-roles.md).
 
@@ -93,15 +90,15 @@ Esta acción tiene efecto en dispositivos con Windows 10, versión 1703 o poster
 
 2. Vaya a la barra superior y seleccione **Detener y Poner en cuarentena archivo**.
 
-   ![Imagen de la acción detener y poner en cuarentena el archivo.](images/atp-stop-quarantine-file.png)
+   :::image type="content" source="images/atp-stop-quarantine-file.png" alt-text="La acción de detener y poner en cuarentena el archivo" lightbox="images/atp-stop-quarantine-file.png":::
 
 3. Especifique un motivo y, a continuación, **seleccione Confirmar**.
 
-   ![Imagen de la ventana modal del archivo de detenerse y poner en cuarentena.](images/atp-stop-quarantine.png)
+   :::image type="content" source="images/atp-stop-quarantine.png" alt-text="La página de archivos de detenerse y poner en cuarentena" lightbox="images/atp-stop-quarantine.png":::
 
    El Centro de acciones muestra la información de envío:
 
-   ![Imagen del centro de acciones de archivos de detenerse y poner en cuarentena.](images/atp-stopnquarantine-file.png)
+   :::image type="content" source="images/atp-stopnquarantine-file.png" alt-text="Centro de acciones de archivos de detenerse y poner en cuarentena" lightbox="images/atp-stopnquarantine-file.png":::
 
    - **Tiempo de envío** : muestra cuándo se envió la acción.
    - **Correcto** : muestra el número de dispositivos en los que se ha detenido y puesto en cuarentena el archivo.
@@ -114,7 +111,7 @@ Esta acción tiene efecto en dispositivos con Windows 10, versión 1703 o poster
 
 Cuando se quita el archivo de un dispositivo, se muestra la siguiente notificación:
 
-![Imagen de notificación en el usuario del dispositivo.](images/atp-notification-file.png)
+:::image type="content" source="images/atp-notification-file.png" alt-text="La notificación a en el usuario del dispositivo" lightbox="images/atp-notification-file.png":::
 
 En la escala de tiempo del dispositivo, se agrega un nuevo evento para cada dispositivo en el que se detuvo y se pone en cuarentena un archivo.
 
@@ -150,7 +147,7 @@ Al seleccionar **Descargar archivo de** las acciones de respuesta, puede descarg
 
 De forma predeterminada, debería poder descargar archivos que se encuentran en cuarentena.
 
-![Imagen de la acción de archivo de descarga.](images/atp-download-file-action.png)
+:::image type="content" source="images/atp-download-file-action.png" alt-text="La acción de archivo de descarga" lightbox="images/atp-download-file-action.png":::
 
 ### <a name="download-quarantined-files"></a>Descargar archivos en cuarentena
 
@@ -232,7 +229,7 @@ El **Centro de acciones** proporciona información sobre las acciones realizadas
 
 También se muestran todos los demás detalles relacionados, como la fecha y hora del envío, el envío de usuario y si la acción se ha hecho correctamente o se ha fallado.
 
-![Imagen del centro de acción con información.](images/action-center-details.png)
+:::image type="content" source="images/action-center-details.png" alt-text="El centro de acciones con información" lightbox="images/action-center-details.png":::
 
 ## <a name="deep-analysis"></a>Análisis detallado
 
@@ -256,10 +253,10 @@ Use la característica de análisis profundo para investigar los detalles de cua
 > [!NOTE]
 > Solo los archivos Windows 10 y Windows 11 se pueden recopilar automáticamente.
 
-También puedes enviar un ejemplo a través del [Portal del Centro](https://www.microsoft.com/security/portal/submission/submit.aspx) de seguridad de Microsoft si el archivo no se observó en un dispositivo Windows 10 (o Windows 11) y esperar a que el botón Enviar para  análisis profundo esté disponible.
+También puedes enviar un ejemplo a través del [portal de Microsoft 365 Defender](https://www.microsoft.com/security/portal/submission/submit.aspx) si el archivo no se observó en un dispositivo Windows 10 (o Windows 11) y esperar a que el botón Enviar para análisis profundo esté disponible.
 
 > [!NOTE]
-> Debido a los flujos de procesamiento back-end en el Portal del Centro de seguridad de Microsoft, podría haber hasta 10 minutos de latencia entre el envío de archivos y la disponibilidad de la característica de análisis profundo en Defender para endpoint.
+> Debido a los flujos de procesamiento back-end en el portal de Microsoft 365 Defender, podría haber hasta 10 minutos de latencia entre el envío de archivos y la disponibilidad de la característica de análisis profundo en Defender for Endpoint.
 
 ### <a name="submit-files-for-deep-analysis"></a>Enviar archivos para análisis profundo
 
@@ -271,7 +268,7 @@ También puedes enviar un ejemplo a través del [Portal del Centro](https://www.
 
 2. En la **pestaña Análisis profundo** de la vista archivo, seleccione **Enviar**.
 
-   ![Solo puede enviar archivos PE en la sección de detalles del archivo.](images/submit-file.png)
+   :::image type="content" source="images/submit-file.png" alt-text="Botón Enviar archivos PE" lightbox="images/submit-file.png":::
 
    > [!NOTE]
    > Solo se admiten archivos PE, _incluidos.exe_ y _.dll_ archivos.
@@ -295,7 +292,7 @@ Los detalles proporcionados pueden ayudarle a investigar si hay indicaciones de 
 1. Seleccione el archivo que envió para un análisis profundo.
 2. Seleccione la **pestaña Análisis profundo** . Si hay informes anteriores, el resumen del informe aparecerá en esta pestaña.
 
-    ![El informe de análisis profundo muestra información detallada en varias categorías.](images/analysis-results-nothing500.png)
+   :::image type="content" source="images/analysis-results-nothing500.png" alt-text="El informe de análisis profundo que muestra información detallada en varias categorías" lightbox="images/analysis-results-nothing500.png":::
 
 #### <a name="troubleshoot-deep-analysis"></a>Solucionar problemas de análisis profundo
 

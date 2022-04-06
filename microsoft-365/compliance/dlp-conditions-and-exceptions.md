@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: obtenga información sobre las condiciones y excepciones de la directiva dlp
-ms.openlocfilehash: 771674b82e50987397fc1ae754f0b96719a04ae5
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 9b735d139950399fb80e9063e7d9fdd1176c2d2b
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401124"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500065"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Condiciones de directiva DLP, excepciones y acciones
 
@@ -80,7 +80,7 @@ Para configurar la ubicación de la dirección del remitente en un nivel de regl
 |Las propiedades especificadas del remitente coinciden con estos patrones de texto|condición: *SenderADAttributeMatchesPatterns* <br/> excepción: *ExceptIfSenderADAttributeMatchesPatterns*|Primera propiedad:  `ADAttribute` <p> Segunda propiedad: `Patterns`|Mensajes en los que el atributo Active Directory especificado del remitente contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
 |
 
-### <a name="recipients"></a>Recipients
+### <a name="recipients"></a>Recipientes
 
 <br>
 
@@ -154,7 +154,7 @@ Para configurar la ubicación de la dirección del remitente en un nivel de regl
 |Con importancia|condición: *WithImportance* <br/> excepción: *ExceptIfWithImportance*|Importancia|Mensajes marcados con el nivel de importancia especificado.|
 |El juego de caracteres de contenido contiene palabras|condición: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*|CharacterSets|Mensajes que contienen alguno de los nombres de juego de caracteres especificados.|
 |Tiene invalidación de remitente|condición: *HasSenderOverride* <br/> excepción: *ExceptIfHasSenderOverride*|N/D|Mensajes en los que el remitente ha elegido invalidar una directiva de prevención de pérdida de datos (DLP). Para obtener más información acerca de las directivas DLP, [vea Learn about data loss prevention](./dlp-learn-about-dlp.md)|
-|Coincidencias de tipo de mensaje|condición: *MessageTypeMatches* <br/> excepción: *ExceptIfMessageTypeMatches*|MessageType|Mensajes del tipo especificado.|
+|Coincidencias de tipo de mensaje|condición: *MessageTypeMatches* <br/> excepción: *ExceptIfMessageTypeMatches*|MessageType|Mensajes del tipo especificado. **Nota**: Los tipos de mensajes disponibles son Respuesta automática, Reenvío automático, Cifrado (S/MIME), Calendario, Control de permisos (administración de derechos), Correo de voz, Firmado, Recibo de lectura y Solicitud de aprobación. |
 |El tamaño del mensaje es mayor o igual que|condición: *MessageSizeOver* <br/> excepción: *ExceptIfMessageSizeOver*|`Size`|Mensajes en los que el tamaño total (mensaje más archivos adjuntos) es mayor o igual al valor especificado. **Nota**: Los límites de tamaño de los mensajes en los buzones se evalúan antes de las reglas de flujo de correo. Un mensaje que es demasiado grande para un buzón se rechazará antes de que una regla con esta condición sea capaz de actuar en el mensaje.|
 |
 

@@ -16,14 +16,16 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 7a05d2712adb37121b1e625ab5c4774a60af3e81
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 37eb6edb32c78df7ae23fe7cb52b249f81ca18b3
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767213"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682182"
 ---
 # <a name="asr-rules-deployment-prerequisites"></a>Requisitos previos de implementación de reglas de ASR
 
@@ -57,7 +59,7 @@ Como se describe en [Usar](attack-surface-reduction.md) reglas de reducción de 
 | Amenazas polimórficas | Movimiento lateral & robo de credenciales | Reglas de aplicaciones de productividad |  Reglas de correo electrónico | Reglas de script | Reglas misc |
 |:---|:---|:---|:---|:---|:---|
 | Bloquear la ejecución de archivos ejecutables a menos que cumplan con una prevalencia (1000 máquinas), la antigüedad (24 horas) o los criterios de lista de confianza | Bloquear creaciones de proceso que se originen en comandos PSExec y WMI | Bloquear Office aplicaciones de creación de contenido ejecutable | Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web | Bloquear código de JS/VBS/PS/macro ofuscado | Bloquear el uso indebido de controladores firmados vulnerables explotados <sup>[[1](#fn1)]<sup></sup>  |
-| Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB | Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Bloquear Office aplicaciones para crear procesos secundarios |  Bloquear solo Office aplicaciones de comunicación para que no creen procesos secundarios | Bloquear JS/VBS para que no inicie contenido ejecutable descargado | |
+| Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB | Bloquear el robo de credenciales del subsistema Windows autoridad de seguridad local (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Bloquear Office aplicaciones para crear procesos secundarios |  Bloquear solo Office aplicaciones de comunicación para crear procesos secundarios | Bloquear JS/VBS para que no inicie contenido ejecutable descargado | |
 | Usar protección avanzada contra ransomware | Bloquear la persistencia a través de la suscripción de eventos WMI | Bloquear Office aplicaciones para que no inyecten código en otros procesos | Bloquear Office aplicaciones de comunicación para que no creen procesos secundarios | | |
 | | | Impedir que Adobe Reader cree procesos secundarios | | | |
 
@@ -72,9 +74,9 @@ Aunque son posibles varios métodos de implementación de reglas ASR, esta guía
 - Azure Active Directory
 - Microsoft Endpoint Management (MEM)
 - Windows 10 y Windows 11 dispositivos
-- Microsoft Defender para endpoint E5 o Windows licencias de E5
+- Microsoft Defender para endpoint E5 o Windows licencias E5
 
-Para aprovechar al máximo las reglas e informes de ASR, se recomienda usar una Microsoft 365 Defender E5 o Windows de E5 y A5. Más información: [Requisitos mínimos para Microsoft Defender para endpoint](minimum-requirements.md).
+Para aprovechar al máximo las reglas de ASR y los informes, se recomienda usar una Microsoft 365 Defender E5 o Windows de E5 y A5. Más información: [Requisitos mínimos para Microsoft Defender para endpoint](minimum-requirements.md).
 
 >[!Note]
 >Existen varios métodos para configurar reglas ASR. Las reglas ASR se pueden configurar mediante: Microsoft Endpoint Manager (MEM), PowerShell, directiva de grupo, Microsoft System Center Configuration Manager (SCCM), MEM OMA-URI.
@@ -94,7 +96,7 @@ Antivirus de Microsoft Defender no debe estar en ninguno de los siguientes modos
 - Examen periódico limitado (LPS)
 - Desactivado
 
-Vea: [Protección entregada en la nube y Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
+Vea: [Protección de entrega en la nube y Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
 
 ### <a name="cloud-protection-maps-must-be-enabled"></a>La protección en la nube (MAPS) debe estar habilitada
 
@@ -103,11 +105,11 @@ Antivirus de Microsoft Defender funciona sin problemas con los servicios en la n
 
 ### <a name="microsoft-defender-antivirus-components-must-be-current-versions"></a>Antivirus de Microsoft Defender componentes deben ser versiones actuales
 
-Las siguientes Antivirus de Microsoft Defender componentes no deben tener más de dos versiones anteriores a la versión más disponible actualmente:
+Las siguientes Antivirus de Microsoft Defender de componentes no deben tener más de dos versiones anteriores a la versión más disponible actualmente:
 
-- **Antivirus de Microsoft Defender actualización de la plataforma:** Antivirus de Microsoft Defender se actualiza mensualmente.
+- **Antivirus de Microsoft Defender versión de actualización de** la plataforma: Antivirus de Microsoft Defender se actualiza mensualmente.
 - **Antivirus de Microsoft Defender versión del motor**: Antivirus de Microsoft Defender motor se actualiza mensualmente.
-- **Antivirus de Microsoft Defender de seguridad**: Microsoft actualiza continuamente la inteligencia de seguridad de Microsoft Defender (también conocida como, definición y firma) para abordar las amenazas más recientes y para refinar la lógica de detección.
+- **Antivirus de Microsoft Defender inteligencia de** seguridad: Microsoft actualiza continuamente la inteligencia de seguridad de Microsoft Defender (también conocida como, definición y firma) para abordar las amenazas más recientes y para refinar la lógica de detección.
 
 Mantener Antivirus de Microsoft Defender versiones actuales ayuda a reducir las reglas ASR falsos resultados positivos y mejora las Antivirus de Microsoft Defender de detección. Para obtener más información sobre las versiones actuales y cómo actualizar los distintos componentes de Antivirus de Microsoft Defender, [visite Antivirus de Microsoft Defender soporte técnico de la plataforma](manage-updates-baselines-microsoft-defender-antivirus.md).
 

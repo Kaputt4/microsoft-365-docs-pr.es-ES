@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 98164fd42a0ed2e2d79e2319823363057d15e7d3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4b1de0e19cbf241936aa02f957cdd0920f2a580a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318611"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682491"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Cómo notificar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
@@ -68,15 +68,10 @@ En la mayoría de los casos, si se ha realizado una acción de corrección en un
 
 Con el Explorador de amenazas, el equipo de operaciones de seguridad puede encontrar un correo electrónico afectado por una acción y potencialmente deshacer la acción.
 
-<br>
-
-****
-
 |Escenario|Opciones de deshacer|Más información|
 |---|---|---|
 |Un mensaje de correo electrónico se enrutó a la carpeta correo no deseado de un usuario|<ul><li>Mover el mensaje a la carpeta Elementos eliminados del usuario</li><li>Mover el mensaje a la Bandeja de entrada del usuario</li><li>Eliminar el mensaje.</li></ul>|[Busque e investigue el correo electrónico malintencionado que se entregó en Office 365](investigate-malicious-email-that-was-delivered.md)|
 |Se ha puesto en cuarentena un mensaje de correo electrónico o un archivo|<ul><li>Liberar el correo electrónico o el archivo</li><li> Eliminar el correo electrónico o el archivo</li></ul>|[Administrar mensajes en cuarentena como administrador](manage-quarantined-messages-and-files.md)|
-|
 
 ### <a name="undo-an-action-in-the-action-center"></a>Deshacer una acción en el Centro de acciones
 
@@ -87,7 +82,7 @@ En el Centro de acciones, puede ver las acciones de corrección que se realizaro
 3. Seleccione un elemento. Se abre el panel desplegable.
 4. En el panel desplegable, seleccione **Deshacer**. (Solo las acciones que se pueden deshacer tendrán **un botón Deshacer** ).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Investigaciones automatizadas en Microsoft Defender para Office 365](office-365-air.md)

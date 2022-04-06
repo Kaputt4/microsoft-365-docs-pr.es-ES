@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 25cdc0610f11d1bcd7e8c27faa1cdc9453677d51
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 233c9993c8cd5978bcdfcbb54db8b9688c3ac056
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320893"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500043"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Respuesta a incidentes con Microsoft 365 Defender
 
@@ -73,7 +73,7 @@ Puede administrar incidentes de incidentes **& alertas > incidentes en** el inic
 
 Al seleccionar un nombre de incidente, se muestra un resumen del incidente y se proporciona acceso a las pestañas con información adicional. He aquí un ejemplo.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Ejemplo de la página Resumen de un incidente en el portal Microsoft 365 Defender web" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="La página Resumen de un incidente en el portal de Microsoft 365 Defender web" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 Las pestañas adicionales para un incidente son:
 
@@ -113,7 +113,7 @@ Esta es la relación entre un incidente y sus datos y las pestañas de un incide
 
 Este es un flujo de trabajo de ejemplo para responder a incidentes en Microsoft 365 con el portal Microsoft 365 Defender web.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Ejemplo de flujo de trabajo de respuesta a incidentes para Microsoft 365." lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Un ejemplo de flujo de trabajo de respuesta a incidentes para el portal Microsoft 365 Defender incidentes." lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
 
 De forma continua, identifique los incidentes más prioritarios para su análisis y resolución en la cola de incidentes y prepárelos para su respuesta. Esta es una combinación de:
 
@@ -153,7 +153,7 @@ Para obtener más información acerca de la respuesta a incidentes en todos los 
 
 Este es un ejemplo de operaciones de seguridad (SecOps) para Microsoft 365 Defender.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Un ejemplo de operaciones de seguridad para Microsoft 365 Defender." lightbox="../../media/incidents-overview/incidents-example-operations.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Un ejemplo de operaciones de seguridad para Microsoft 365 Defender" lightbox="../../media/incidents-overview/incidents-example-operations.png":::
 
 Las tareas diarias pueden incluir:
 
@@ -215,7 +215,7 @@ Siga estos pasos para crear una nueva regla y personalizar la configuración de 
     - **Incluir el nombre de la organización en el correo electrónico**: seleccione si desea que el nombre de la organización aparezca en la notificación por correo electrónico.
     - **Incluir vínculo del portal específico del inquilino**: seleccione si desea agregar un vínculo con el identificador de inquilino en la notificación de correo electrónico para acceder a un inquilino de Microsoft 365 específico.
 
-    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Configuración de notificaciones para notificaciones de correo electrónico de incidentes." lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
+    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="La página Configuración de notificaciones para notificaciones de correo electrónico de incidentes en el portal Microsoft 365 Defender correo electrónico." lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
 
 5. Seleccione **Siguiente**. En la **página Destinatarios** , agregue las direcciones de correo electrónico que recibirán las notificaciones de incidentes. Seleccione **Agregar después** de escribir cada nueva dirección de correo electrónico. Para probar las notificaciones y asegurarse de que los destinatarios las reciben en las bandejas de entrada, seleccione **Enviar correo electrónico de prueba**. 
 6. Seleccione **Siguiente**. En la **página Revisar regla** , revise la configuración de la regla y, a continuación, seleccione **Crear regla**. Los destinatarios empezarán a recibir notificaciones de incidentes a través del correo electrónico en función de la configuración.
@@ -236,7 +236,7 @@ Use este módulo de aprendizaje de Microsoft Learn para comprender cómo usar Mi
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/modules/defender-investigate-incidents/)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Use los pasos enumerados en función del nivel de experiencia o el rol del equipo de seguridad.
 
@@ -254,7 +254,7 @@ Siga esta tabla para obtener su nivel de experiencia con el análisis de segurid
 
 Siga esta tabla en función del rol de equipo de seguridad.
 
-| Rol | Pasos |
+| Función | Pasos |
 |:-------|:-----|
 | Respondedor de incidentes (nivel 1) | Introducción a la cola de incidentes desde **la página Incidentes** del portal Microsoft 365 Defender incidentes. Desde allí, puedes hacer lo siguiente: <ul><li> Vea qué incidentes deben [priorizarse en](incident-queue.md) función de la gravedad y otros factores. </li><li> [Administrar incidentes, que](manage-incidents.md) incluye cambiar el nombre, asignar, clasificar y agregar etiquetas y comentarios en función del flujo de trabajo de administración de incidentes. </li></ul> |
 | Investigador o analista de seguridad (nivel 2) | <ol><li> Realice [investigaciones de](investigate-incidents.md) incidentes desde la **página Incidentes** del portal Microsoft 365 Defender web. </li><li> Consulta estos [libros de reproducción de respuesta a](/security/compass/incident-response-playbooks) incidentes para obtener instrucciones detalladas sobre los ataques de suplantación de identidad (phishing), el uso de contraseñas y la concesión de consentimiento de la aplicación. </li></ol> |

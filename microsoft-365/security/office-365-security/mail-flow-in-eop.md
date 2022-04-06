@@ -15,12 +15,13 @@ ms.custom:
 description: El administrador puede obtener información sobre las opciones para configurar el flujo de correo y el enrutamiento en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d7bca416a6144e2745a2c5d631c3e634e935ff4
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 296cd8aaa92005f094de2ee7d1c9f8bb9427df16
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60554065"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681026"
 ---
 # <a name="mail-flow-in-eop"></a>Flujo de correo en EOP
 
@@ -31,7 +32,7 @@ ms.locfileid: "60554065"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En Microsoft 365 organizaciones con buzones Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, todos los mensajes enviados a su organización pasan a través de EOP antes de que los trabajadores los vean. Tiene opciones sobre cómo enrutar los mensajes que pasan a través de EOP para su procesamiento antes de que se enrute a las bandejas de entrada de los trabajadores.
+En Microsoft 365 organizaciones con buzones de Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, todos los mensajes enviados a su organización pasan a través de EOP antes de que los trabajadores los vean. Tiene opciones sobre cómo enrutar los mensajes que pasan a través de EOP para su procesamiento antes de que se enrute a las bandejas de entrada de los trabajadores.
 
 ## <a name="working-with-messages-and-message-access-options"></a>Trabajar con mensajes y opciones de acceso de mensajes
 
@@ -53,4 +54,4 @@ En entornos híbridos en los que EOP protege los buzones de correo Exchange loca
 
 Para comprobar que la configuración de EOP, incluida la configuración de conectores, esté funcionando correctamente, consulte la sección "¿Cómo sabe si esta tarea se ha completado correctamente?" en [Configurar un servicio de EOP](/exchange/standalone-eop/set-up-your-eop-service).
 
-[Probar el flujo de correo validando los conectores Microsoft 365 proporciona](/exchange/mail-flow-best-practices/test-mail-flow) instrucciones para probar que el flujo de correo está configurado correctamente.
+[Probar el flujo de correo validando los conectores de Microsoft 365 proporciona](/exchange/mail-flow-best-practices/test-mail-flow) instrucciones para probar que el flujo de correo está configurado correctamente.

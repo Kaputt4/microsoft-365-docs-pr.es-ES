@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 3418eac69930819fdb0e3fd8d1bae80312f89a9f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 14332b2787b59e2ef192741dc97e59a7c7cb5418
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326417"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499515"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Administrar incidentes en Microsoft 365 Defender
 
@@ -34,13 +34,13 @@ ms.locfileid: "63326417"
 
 
 **Se aplica a:**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 La administración de incidentes es fundamental para garantizar que los incidentes se nombren, asignen y etiqueten para optimizar el tiempo en el flujo de trabajo de incidentes y contener y solucionar más rápidamente las amenazas.
 
 Puede administrar incidentes desde incidentes & **alertas > incidentes** en el inicio rápido del portal de Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). Por ejemplo:
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Ejemplo de la cola de incidentes." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="La página Incidentes del portal de Microsoft 365 Defender web" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 Estas son las formas en que puede administrar sus incidentes:
 
@@ -53,7 +53,7 @@ Estas son las formas en que puede administrar sus incidentes:
 
 Puede administrar incidentes desde el panel **Administrar incidentes** para un incidente. Por ejemplo:
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Ejemplo del panel Administrar incidentes de un incidente." lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="El panel Administrar incidentes en el Microsoft 365 Defender web" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
 
 Puede mostrar este panel desde el vínculo **Administrar incidentes** en:
 

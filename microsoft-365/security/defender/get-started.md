@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: intro-get-started
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 747f8e389b90e20aad7162277b3e62b0a80ae3c7
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 4429226eaebc254676fac5589a2a25ca51acdeb6
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61645757"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499933"
 ---
 # <a name="get-started-with-microsoft-365-defender"></a>Introducción a Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ Microsoft 365 Defender es una experiencia unificada donde puede supervisar y adm
 
 Tanto si es nuevo en el conjunto de productos de seguridad de Microsoft como si está familiarizado con flujos de trabajo individuales, este tema le guiará en los sencillos pasos que debe seguir para empezar a trabajar con Microsoft 365 Defender.
 
-![Imagen de introducción a los Microsoft 365 Defender pasos.](../../media/mtp/get-started-m365d.png)
+:::image type="content" source="../../media/mtp/get-started-m365d.png" alt-text="Los pasos para empezar con el portal Microsoft 365 Defender web" lightbox="../../media/mtp/get-started-m365d.png":::
 
 En general, deberá seguir los siguientes pasos para empezar:
 
@@ -58,6 +58,6 @@ Al activar Microsoft 365 Defender e implementar servicios, tendrá acceso a las 
 | Funcionalidad | Descripción |
 | ------ | ------ |
 | Microsoft Defender para punto de conexión | Conjunto de aplicaciones de protección de puntos de conexión que se basa en sensores de comportamiento eficaces, análisis en la nube e inteligencia de amenazas |
-|Microsoft Defender para Office 365 | Protección avanzada para tus aplicaciones y datos en Office 365, incluido el correo electrónico y otras herramientas de colaboración |
+|Microsoft Defender para Office 365 | Protección avanzada para sus aplicaciones y datos en Office 365, incluido el correo electrónico y otras herramientas de colaboración |
 | Microsoft Defender for Identity | Defenderse de amenazas avanzadas, identidades comprometidas e información interna malintencionada mediante señales correlacionadas de Active Directory |
 | Microsoft Defender for Cloud Apps | Identificar y combatir ciberamenazas en los servicios en la nube de Microsoft y de terceros |

@@ -1,6 +1,6 @@
 ---
 title: Evaluar Microsoft Defender para Office 365
-description: Defender para Office 365 en modo de evaluación crea Defender para Office 365 directivas de correo electrónico que registra veredictos, como malware, pero no actúan en mensajes.
+description: Defender para Office 365 en modo de evaluación crea Defender para Office 365 directivas de correo electrónico que registren veredictos, como malware, pero no actúen en mensajes.
 keywords: evaluar Office 365, Microsoft Defender para Office 365, evaluación de office 365, probar office 365, Microsoft Defender, Microsoft Defender para endpoint
 f1.keywords:
 - NOCSH
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b7ea947623ec14d14f0be60c867f2c647d8ff811
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 0f5d82e9baaca7209f8a91a7f1984aa38e3102e6
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61932494"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681752"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Evaluar Microsoft Defender para Office 365
 
@@ -36,24 +36,24 @@ ms.locfileid: "61932494"
 
 Llevar a cabo una evaluación exhaustiva del producto de seguridad puede ayudarle a tomar decisiones fundamentadas sobre las actualizaciones y las compras. Ayuda a probar las capacidades del producto de seguridad para evaluar cómo puede ayudar al equipo de operaciones de seguridad en sus tareas diarias.
 
-La experiencia de evaluación de [Microsoft Defender](defender-for-office-365.md) para Office 365 está diseñada para eliminar las complejidades de la configuración de dispositivos y entornos para que puedas centrarte en evaluar las capacidades de Microsoft Defender para Office 365. Con el modo de evaluación, todos los mensajes enviados Exchange Online buzones de correo pueden evaluarse sin apuntar registros MX a Microsoft. La característica solo se aplica a la protección de correo electrónico y no a Office clientes como Word, SharePoint o Teams.
+La experiencia de evaluación de [Microsoft Defender para Office 365](defender-for-office-365.md) está diseñada para eliminar las complejidades de la configuración de dispositivos y entornos para que puedas centrarte en evaluar las capacidades de Microsoft Defender para Office 365. Con el modo de evaluación, todos los mensajes enviados Exchange Online buzones de correo se pueden evaluar sin apuntar registros MX a Microsoft. La característica solo se aplica a la protección de correo electrónico y no a Office clientes como Word, SharePoint o Teams.
 
-Si aún no tiene una licencia que admita Microsoft Defender para Office 365, puede iniciar una evaluación gratuita de [30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) días y probar las capacidades en el portal de Microsoft 365 Defender en <https://security.microsoft.com> . Podrás disfrutar de la configuración rápida y puedes desactivarla fácilmente si es necesario.
+Si aún no tiene una licencia que admita Microsoft Defender para Office 365, puede iniciar una evaluación gratuita de [30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) días y probar las capacidades en el portal <https://security.microsoft.com>de Microsoft 365 Defender en . Podrás disfrutar de la configuración rápida y puedes desactivarla fácilmente si es necesario.
 
 > [!NOTE]
-> Si está en el portal de Microsoft 365 Defender en , puede iniciar una evaluación de Defender para Office 365 aquí: Enviar un correo electrónico & Directivas de colaboración & Reglas de evaluación de directivas de amenazas en la sección <https://security.microsoft.com>  \>  \>  \>  Otros.  O bien, para ir directamente a la **página Modo de** evaluación, use <https://security.microsoft.com/atpEvaluation> .
+> Si está en el portal    <https://security.microsoft.com>de Microsoft 365 Defender en , puede iniciar una evaluación de Defender para Office 365 aquí: Correo electrónico **& Directivas** \> de colaboración **& Reglas** \> \> de evaluación de directivas de amenazas en la sección Otros. O bien, para ir directamente a la **página Modo de** evaluación, use <https://security.microsoft.com/atpEvaluation>.
 
 ## <a name="how-the-evaluation-works"></a>Cómo funciona la evaluación
 
-Defender para Office 365 en modo de evaluación crea Defender para Office 365 directivas de correo electrónico que registra veredictos, como malware, pero no actúan en mensajes. No es necesario cambiar la configuración del registro MX.
+Defender para Office 365 en modo de evaluación crea Defender para Office 365 directivas de correo electrónico que registren veredictos, como malware, pero no actúen en mensajes. No es necesario cambiar la configuración del registro MX.
 
-Con el modo de evaluación, [Caja fuerte adjuntos,](safe-attachments.md) [Caja fuerte vínculos](safe-links.md)e inteligencia de buzones de correo en directivas contra el [pishing](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) se establecen en su nombre. Todas las directivas de Defender Office 365 se crean en modo no de aplicación en segundo plano y no son visibles para usted.
+Con el modo de evaluación, [Caja fuerte datos](safe-attachments.md) adjuntos, [Caja fuerte y](safe-links.md) la inteligencia de buzones de correo en directivas [contra el pishing](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) se establecen en su nombre. Todas las directivas de Defender Office 365 se crean en modo no de aplicación en segundo plano y no son visibles para usted.
 
-Como parte de la configuración, el modo de evaluación también configura [el](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) filtrado mejorado para conectores (también conocido como lista _de omitir_). Mejora la precisión de filtrado al conservar la dirección IP y la información del remitente, que de lo contrario se pierden cuando el correo pasa a través de una puerta de enlace de seguridad de correo electrónico (ESG) delante de Defender para Office 365. El filtrado mejorado para conectores también mejora la precisión de filtrado de las directivas de Exchange Online Protection (EOP) contra correo no deseado y contra suplantación de identidad existentes.
+Como parte de la configuración, el modo de evaluación también [configura el filtrado](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) mejorado para conectores (también conocido como _lista de omitir_). Esta configuración mejora la precisión de filtrado al conservar la dirección IP y la información del remitente, que de lo contrario se pierden cuando el correo pasa a través de una puerta de enlace de seguridad de correo electrónico (ESG) delante de Defender para Office 365. El filtrado mejorado para conectores también mejora la precisión de filtrado de las directivas de Exchange Online Protection (EOP) contra correo no deseado y anti phishing existentes.
 
-El filtrado mejorado para conectores mejora la precisión del filtrado, pero puede alterar la entrega de determinados mensajes si tiene un ESG delante de Defender para Office 365 y actualmente no omite el filtrado de EOP. El impacto se limita a las directivas de EOP; Defender para Office 365 las directivas configuradas como parte de la evaluación se crean en modo no de aplicación. Para minimizar el posible impacto en la producción, puede omitir la mayoría del filtrado de EOP mediante la creación de una regla de flujo de correo (también conocida como regla de transporte) para establecer el nivel de confianza de correo no deseado (SCL) de los mensajes en -1. Consulta Usar reglas de flujo de correo para establecer el nivel de confianza de correo no deseado [(SCL)](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) en los mensajes de Exchange Online para obtener más información.
+El filtrado mejorado para conectores mejora la precisión del filtrado, pero puede alterar la entrega de determinados mensajes si tienes un ESG delante de Defender para Office 365 y actualmente no omites el filtrado de EOP. El impacto se limita a las directivas de EOP; Defender para Office 365 las directivas configuradas como parte de la evaluación se crean en modo no de aplicación. Para minimizar el posible impacto en la producción, puede omitir la mayoría del filtrado de EOP mediante la creación de una regla de flujo de correo (también conocida como regla de transporte) para establecer el nivel de confianza de correo no deseado (SCL) de los mensajes en -1. Consulta [Usar reglas de flujo de correo para establecer el](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) nivel de confianza de correo no deseado (SCL) en los mensajes de Exchange Online para obtener más información.
 
-Cuando se configura el modo de evaluación, tendrá un informe actualizado diariamente con hasta 90 días de datos que cuantifican los mensajes que se habrían bloqueado si se hubieran implementado las directivas (por ejemplo, eliminar, enviar a correo no deseado, cuarentena). Se generan informes para todas las detecciones de Defender Office 365 y EOP. Se agregan por tecnología de detección (por ejemplo, suplantación) y se pueden filtrar por intervalo de tiempo. Además, los informes de mensajes se pueden crear a petición para crear pivotes personalizados o para profundizar en los mensajes mediante el Explorador.
+Cuando se configura el modo de evaluación, tendrás un informe diario con hasta 90 días de datos que cuantifican los mensajes que se habrían bloqueado si se hubieran implementado las directivas (por ejemplo, eliminar, enviar a correo no deseado, cuarentena). Se generan informes para todas las detecciones Office 365 y EOP de Defender. Los informes se agregan por tecnología de detección (por ejemplo, suplantación) y se pueden filtrar por intervalo de tiempo. Además, los informes de mensajes se pueden crear a petición para crear pivotes personalizados o para profundizar en los mensajes mediante el Explorador.
 
 Con la experiencia de configuración simplificada, puede centrarse en:
 
@@ -77,24 +77,20 @@ Si no tiene una de esas licencias, tendrá que obtener una licencia de prueba.
 
 #### <a name="trial"></a>Prueba
 
-Para obtener una licencia de prueba para Microsoft Defender para Office 365, debe tener el rol de administrador de facturación **o** el rol de **administrador global**. Solicitar permiso a alguien que tenga el rol de administrador global. [Información sobre suscripciones y licencias](../../commerce/licenses/subscriptions-and-licenses.md)
+Para obtener una licencia de prueba para Microsoft Defender Office 365, debes tener el rol de administrador de facturación **o el** rol **de administrador global**. Solicitar permiso a alguien que tenga el rol de administrador global. [Información sobre suscripciones y licencias](../../commerce/licenses/subscriptions-and-licenses.md)
 
-Una vez que tenga el rol adecuado, la ruta recomendada es obtener una licencia de prueba para Microsoft Defender para Office 365 (Plan 2) en el Centro de administración de Microsoft 365 yendo a Facturación > Servicios de compra. La prueba incluye una prueba gratuita de 30 días para 25 licencias. [Obtener una prueba para Microsoft Defender para Office 365 (Plan 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
+Una vez que tenga el rol adecuado, la ruta recomendada es obtener una licencia de prueba para Microsoft Defender para Office 365 (Plan 2) en el Centro de administración de Microsoft 365 y, a continuación, vaya a <https://admin.microsoft.com> **Servicios** \> de compra de facturación y, a continuación, busque y seleccione la versión de prueba de Microsoft Defender para Office 365 (Plan 2). O bien, para ir directamente a la página de prueba, use <https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)> La prueba incluye una prueba gratuita de 30 días para 25 licencias.
 
 Tendrás una ventana de 30 días con la evaluación para supervisar e informar sobre amenazas avanzadas. También tendrás la opción de comprar una suscripción de pago si quieres que el Defender completo Office 365 funcionalidades.
 
 ### <a name="roles"></a>Funciones
 
-**Exchange Online roles necesarios para** configurar Defender para Office 365 en modo de evaluación. La asignación de Microsoft 365 de cumplimiento o seguridad no funcionará.
+**Exchange Online roles necesarios** para configurar Defender para Office 365 en modo de evaluación. La asignación de Microsoft 365 de cumplimiento o seguridad no funcionará.
 
 - [Obtenga información sobre los permisos en Exchange Online](/exchange/permissions-exo/permissions-exo)
 - [Obtenga información sobre cómo asignar roles de administrador](../../admin/add-users/assign-admin-roles.md)
 
 Se necesitan los siguientes roles:
-
-<br>
-
-****
 
 |Task|Rol (en Exchange Online)|
 |---|---|
@@ -103,11 +99,10 @@ Se necesitan los siguientes roles:
 |Editar directiva de evaluación|Rol Dominios remotos y aceptados; Rol de administrador de seguridad|
 |Eliminar directiva de evaluación|Rol Dominios remotos y aceptados; Rol de administrador de seguridad |
 |Ver informe de evaluación|Rol de administrador de seguridad O Rol de lector de seguridad|
-|
 
 ### <a name="enhanced-filtering-for-connectors"></a>Filtrado avanzado para conectores
 
-Las Exchange Online Protection, como la protección masiva y contra correo no deseado, seguirán siendo las mismas. Sin embargo, la evaluación activa el filtrado mejorado para conectores, lo que puede afectar al flujo de correo y a Exchange Online Protection directivas a menos que se omita.
+Las Exchange Online Protection, como la protección masiva y contra correo no deseado, seguirán siendo las mismas. Sin embargo, la evaluación activa el filtrado mejorado para conectores, lo que puede afectar al flujo de correo y a las Exchange Online Protection a menos que se omita.
 
 El filtrado mejorado para conectores permite a los inquilinos usar protección contra la suplantación. No se admite la suplantación si usa una puerta de enlace de seguridad de correo electrónico (ESG) sin haber activado el filtrado mejorado para conectores.
 
@@ -119,16 +114,16 @@ Los vínculos url de los cuerpos de mensajes de correo electrónico no se ajusta
 
 ### <a name="email-routing"></a>Enrutamiento de correo electrónico
 
-Prepare los detalles correspondientes que necesitará para configurar cómo se enruta actualmente el correo electrónico, incluido el nombre del conector de entrada que enruta el correo. Si solo usa Exchange Online Protection, no tendrá un conector. [Información sobre el flujo de correo y el enrutamiento de correo electrónico](/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+Prepare los detalles correspondientes que necesitará para configurar cómo se enruta actualmente el correo electrónico, incluido el nombre del conector de entrada que enruta el correo. Si solo usas Exchange Online Protection, no tendrás un conector. [Información sobre el flujo de correo y el enrutamiento de correo electrónico](/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 Entre los escenarios de enrutamiento de correo electrónico admitidos se incluyen:
 
-- **Partner** de terceros o proveedor de servicios local: el conector de entrada que desea evaluar usa un proveedor de terceros o está usando una solución para la seguridad del correo electrónico local.
-- **Microsoft Exchange Online solo** protección: el inquilino que desea evaluar usa Office 365 para la seguridad del correo electrónico y el registro de correo Exchange (MX) apunta a Microsoft.
+- **Partner de terceros** o proveedor de servicios local: el conector de entrada que desea evaluar usa un proveedor de terceros o está usando una solución para la seguridad del correo electrónico local.
+- **Microsoft Exchange Online protección de** correo electrónico: el espacio empresarial que desea evaluar usa Office 365 para la seguridad del correo electrónico y el registro de correo Exchange (MX) apunta a Microsoft.
 
 ### <a name="email-security-gateway"></a>Puerta de enlace de seguridad de correo electrónico
 
-Si usa una puerta de enlace de seguridad de correo electrónico (ESG) de terceros, deberá conocer el nombre del proveedor. Si usas un ESG local o proveedores no compatibles, tendrás que conocer las direcciones IP públicas de los dispositivos.
+Si usa una puerta de enlace de seguridad de correo electrónico (ESG) de terceros, deberá conocer el nombre del proveedor. Si usa un ESG local o proveedores no compatibles, deberá conocer las direcciones IP públicas de los dispositivos.
 
 Entre los asociados de terceros compatibles se incluyen:
 
@@ -142,15 +137,15 @@ Entre los asociados de terceros compatibles se incluyen:
 
 ### <a name="scoping"></a>Ámbito
 
-Podrá tener el ámbito de la evaluación en un conector de entrada. Si no hay ningún conector configurado, el ámbito de evaluación permitirá a los administradores recopilar datos de cualquier usuario de su inquilino para evaluar Defender para Office 365.
+Podrá tener el ámbito de la evaluación en un conector de entrada. Si no hay ningún conector configurado, el ámbito de evaluación permitirá a los administradores recopilar datos de cualquier usuario del espacio empresarial para evaluar Defender para Office 365.
 
 ## <a name="get-started-with-the-evaluation"></a>Introducción a la evaluación
 
 Busque la tarjeta de configuración Office 365 evaluación de Microsoft Defender en el portal de Microsoft 365 Defender desde los siguientes puntos de acceso:
 
-- **Puntos de conexión** \> **Administración de vulnerabilidades** \> **Panel** ( <https://security.microsoft.com/tvm_dashboard> )
-- **Colaboración & correo electrónico** \> **Directivas & reglas** \> **Directivas de amenazas** ( <https://security.microsoft.com/threatpolicy> )
-- **Informes** \> **Colaboración & correo electrónico** \> **Informes de & de colaboración de correo** electrónico ( <https://security.microsoft.com/emailandcollabreport> )
+- **Puntos de conexión** \> **Administración de vulnerabilidades** \> **Panel** (<https://security.microsoft.com/tvm_dashboard>)
+- **Colaboración & correo electrónico** \> **Directivas & reglas** \> **Directivas de amenazas** (<https://security.microsoft.com/threatpolicy>)
+- **Informes** \> **Colaboración & correo electrónico** \> **Informes & colaboración de correo electrónico** (<https://security.microsoft.com/emailandcollabreport>)
 
 ## <a name="setting-up-the-evaluation"></a>Configuración de la evaluación
 
@@ -158,7 +153,7 @@ Una vez que inicie el flujo de configuración de la evaluación, se le darán do
 
 - Si usa un partner de terceros o un proveedor de servicios local, deberá seleccionar el nombre del proveedor en el menú desplegable. Proporcione los otros detalles relacionados con el conector.
 
-- Seleccione Microsoft Exchange Online si el registro MX apunta a Microsoft y tiene un buzón Exchange Online correo.
+- Seleccione **Microsoft Exchange Online** si el registro MX apunta a Microsoft y tiene un buzón Exchange Online correo.
 
 Revisa la configuración y edála si es necesario. A continuación, **seleccione Crear evaluación**. Debe obtener un mensaje de confirmación para indicar que la configuración se ha completado.
 
@@ -166,15 +161,15 @@ El informe de evaluación de Microsoft Defender Office 365 se genera una vez al 
 
 ### <a name="exchange-mail-flow-rules-optional"></a>Exchange de flujo de correo (opcional)
 
-Si tiene una puerta de enlace existente, al habilitar el modo de evaluación se activará el filtrado mejorado para conectores. Esta característica mejora la precisión de filtrado al modificar la dirección IP del remitente entrante. Esta característica puede cambiar los veredictos de filtro y, si no se omite Exchange Online Protection, esto puede alterar la entrega de determinados mensajes. En este caso, es posible que desee omitir temporalmente el filtrado para analizar el impacto. Para omitir el filtrado, cree una regla de flujo de correo (también conocida como regla de transporte) en el Centro de administración de Exchange (EAC) en el que se establece el SCL de mensajes en -1 (si aún no tiene <https://admin.exchange.microsoft.com/#/transportrules> uno). Para obtener instrucciones, vea [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+Si tiene una puerta de enlace existente, al habilitar el modo de evaluación se activará el filtrado mejorado para conectores. Esta característica mejora la precisión de filtrado al modificar la dirección IP del remitente entrante. Esta característica puede cambiar los veredictos de filtro y, si no se omite el Exchange Online Protection, esto puede alterar la entrega de determinados mensajes. En este caso, es posible que desee omitir temporalmente el filtrado para analizar el impacto. Para omitir el filtrado, cree una regla de flujo de correo (también conocida como regla de transporte) en el Centro de administración de Exchange (EAC) <https://admin.exchange.microsoft.com/#/transportrules> en el que se establece el SCL de mensajes en -1 (si aún no tiene uno). Para obtener instrucciones, consulte [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 ## <a name="evaluate-capabilities"></a>Funcionalidades de evaluación
 
 Una vez generado el informe de evaluación, vea cuántos vínculos de amenazas avanzados, datos adjuntos avanzados de amenazas y posibles suplantaciones se identificaron en los correos electrónicos y áreas de trabajo de colaboración de su organización.
 
-Una vez expirada la prueba, puede seguir teniendo acceso al informe durante 90 días. Sin embargo, no recopilará más información. Si quieres seguir usando Microsoft Defender para Office 365 una vez que haya expirado la prueba, asegúrate de comprar una suscripción de pago para Microsoft Defender para [Office 365 (Plan 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
+Una vez expirada la prueba, puede seguir teniendo acceso al informe durante 90 días. Sin embargo, no recopilará más información. Si quieres seguir usando Microsoft Defender para Office 365 una vez expirada la prueba, asegúrate de comprar una suscripción de pago para [Microsoft Defender para Office 365 (Plan 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
 
-Puede ir a **Configuración** actualizar el enrutamiento o desactivar la evaluación en cualquier momento. Sin embargo, debe volver a realizar el mismo proceso de configuración si decide continuar la evaluación después de desactivarla.
+Puede ir **a Configuración actualizar** el enrutamiento o desactivar la evaluación en cualquier momento. Sin embargo, debe volver a realizar el mismo proceso de configuración si decide continuar la evaluación después de desactivarla.
 
 ## <a name="provide-feedback"></a>Enviar comentarios
 

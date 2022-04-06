@@ -1,7 +1,7 @@
 ---
 title: Reglas de reducción de superficie de ataque de prueba (ASR)
 description: Proporciona instrucciones para probar la implementación de las reglas de reducción de superficie de ataque (ASR).
-keywords: 'Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR'
+keywords: Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,16 +11,23 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar'
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
+ms.openlocfilehash: 85d1400f390d9666c39ef13ffb484d17cad4a4c8
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682204"
 ---
-
-# <a name="step-2-test-asr-rules"></a>Paso 2: Probar reglas ASR
+# <a name="step-2-test-asr-rules"></a>Paso 2: Probar reglas de ASR
 
 Probar las reglas de reducción de superficie de ataque (ASR) te ayuda a determinar si las reglas impedirán las operaciones de línea de negocio antes de habilitar cualquier regla. Al comenzar con un grupo pequeño y controlado, puede limitar las posibles interrupciones de trabajo a medida que expande la implementación en toda la organización.
 
@@ -40,7 +47,7 @@ Puede usar Microsoft Endpoint Manager (MEM) Endpoint Security para configurar re
 1. Abrir [Microsoft Endpoint Manager de administración](https://endpoint.microsoft.com/#home)
 2. Vaya a **Endpoint SecurityAttack** >  **surface reduction**.
 3. Seleccione **Crear directiva**.
-4. En **Plataforma**, selecciona **Windows 10 y posteriores**, y en **Perfil**, selecciona **Reglas de reducción de superficie de ataque**.
+4. En **Plataforma**, selecciona **Windows 10 y** posterior, y en **Perfil**, selecciona **Reglas de reducción de superficie de ataque**.
   
     > [!div class="mx-imgBorder"]
     > ![Configurar perfil de reglas ASR](images/asr-mem-create-profile.png)
@@ -69,7 +76,7 @@ La nueva directiva de reducción de superficie de ataque para reglas ASR se mues
 
 ## <a name="step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>Paso 2: Comprender la página de informes de reglas de reducción de superficie de ataque en el portal de Microsoft 365 Defender ataque
 
-La página de informes de reglas ASR se encuentra **en Microsoft 365 Defender de reducción** de superficie **portalReportsAttack** >  > . Esta página tiene tres pestañas:
+La página de informes de reglas ASR se encuentra en **Microsoft 365 Defender de reducción de superficie** **portalReportsAttack** >  > . Esta página tiene tres pestañas:
 
 - Detections
 - Configuración
@@ -154,7 +161,7 @@ El | Se abre el panel de reducción de superficie de ataque:
 Esta pestaña proporciona un método para seleccionar entidades detectadas (por ejemplo, falsos positivos) para la exclusión. Cuando se agregan exclusiones, el informe proporciona un resumen del impacto esperado.
 
 >[!Note]
-> Antivirus de Microsoft Defender las exclusiones de ANTIVIRUS se respetan con las reglas de ASR.  Consulte [Configurar y validar exclusiones en función de la extensión, el nombre o la ubicación](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
+> Antivirus de Microsoft Defender las exclusiones av se respetan mediante reglas ASR.  Consulte [Configurar y validar exclusiones en función de la extensión, el nombre o la ubicación](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
 > [!div class="mx-imgBorder"]
 > ![Herramienta Asr de seguridad de extremo](Images/asr-defender365-06d.png)
@@ -197,10 +204,10 @@ Id. de evento | Descripción
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Temas adicionales de esta colección de implementación
 
-[Requisitos previos de implementación de reglas ASR](attack-surface-reduction-rules-deployment.md)
+[Requisitos previos de implementación de reglas de ASR](attack-surface-reduction-rules-deployment.md)
 
-[Paso 1: Planear la implementación de reglas ASR](attack-surface-reduction-rules-deployment-plan.md)
+[Paso 1: Planear la implementación de reglas de ASR](attack-surface-reduction-rules-deployment-plan.md)
 
-[Paso 3: Implementar reglas ASR](attack-surface-reduction-rules-deployment-implement.md)
+[Paso 3: Implementar reglas de ASR](attack-surface-reduction-rules-deployment-implement.md)
 
-[Paso 4: Operacionalizar reglas ASR](attack-surface-reduction-rules-deployment-operationalize.md)
+[Paso 4: Operacionalización de reglas de ASR](attack-surface-reduction-rules-deployment-operationalize.md)
