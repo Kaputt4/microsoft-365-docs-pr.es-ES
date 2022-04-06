@@ -1,6 +1,6 @@
 ---
-title: Trabajar con grupos de dispositivos en Microsoft 365 Empresa Premium
-description: Obtenga información sobre los grupos de dispositivos en Microsoft 365 Empresa Premium
+title: Trabajar con grupos de dispositivos en Microsoft 365 Business Premium
+description: Obtenga información sobre los grupos de dispositivos en Microsoft 365 Business Premium
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,16 +17,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: a5a0b932e88fb4c4232e4afca8f2307e40088e6b
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 2cc874580dad24e1b3d5349d6075956a9e518704
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526129"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634655"
 ---
-# <a name="device-groups-in-microsoft-365-business-premium"></a>Grupos de dispositivos en Microsoft 365 Empresa Premium
+# <a name="device-groups-in-microsoft-365-business-premium"></a>Grupos de dispositivos en Microsoft 365 Business Premium
 
-Microsoft 365 Empresa Premium la protección de puntos de conexión a través de Microsoft Defender para empresas. Las directivas de protección de dispositivos se aplican a dispositivos a través de determinadas colecciones que se denominan grupos de dispositivos. 
+Microsoft 365 Business Premium incluye la protección de puntos de conexión a través Microsoft Defender für Unternehmen. Las directivas de protección de dispositivos se aplican a dispositivos a través de determinadas colecciones que se denominan grupos de dispositivos. 
 
 **En este artículo se describe lo siguiente**:  
 
@@ -41,7 +41,7 @@ Con la suscripción, tienes grupos de dispositivos predeterminados que puedes us
 
 Todos los grupos de dispositivos, incluidos los grupos de dispositivos predeterminados y los grupos de dispositivos personalizados que definas, se almacenan en [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
 
-## <a name="how-do-i-create-a-new-device-group"></a>¿Cómo puedo crear un nuevo grupo de dispositivos?
+## <a name="how-do-i-create-a-new-device-group"></a>Cómo Crear un nuevo grupo de dispositivos
 
 Puedes crear un nuevo grupo de dispositivos mientras estás en el proceso de crear o editar una directiva de protección de dispositivos. 
 
@@ -52,10 +52,11 @@ Puedes crear un nuevo grupo de dispositivos mientras estás en el proceso de cre
 3. Lleve a cabo una de las siguientes acciones:
 
     1. Seleccione una directiva existente y, a continuación, **elija Editar**.
+    
     2. Elija **+ Agregar** para crear una nueva directiva.
 
     > [!TIP]
-    > Para obtener ayuda para crear o editar una directiva, consulta [Ver o editar directivas en Microsoft Defender para empresas](m365bp-view-edit-create-mdb-policies.md).
+    > Para obtener ayuda para crear o editar una directiva, vea [Ver o editar directivas en Microsoft Defender für Unternehmen](m365bp-view-edit-create-mdb-policies.md).
 
 4. En el **paso Información general** , revise la información, edite si es necesario y, a continuación, elija **Siguiente**.
 
@@ -67,7 +68,7 @@ Puedes crear un nuevo grupo de dispositivos mientras estás en el proceso de cre
 
 8. En el **paso Grupos de dispositivos** , revisa la lista de grupos de dispositivos para la directiva. Si es necesario, quite un grupo de la lista. A continuación, elija **Siguiente**.
 
-9. En la **página Configuración** , revise y edite la configuración según sea necesario y, a continuación, elija **Siguiente**. Para obtener más información acerca de estas opciones de configuración, consulte [Understand next-generation configuration settings in Microsoft Defender for Business](../security/defender-business/mdb-next-gen-configuration-settings.md).
+9. En la **página Configuración** , revise y edite la configuración según sea necesario y, a continuación, elija **Siguiente**. Para obtener más información acerca de estas opciones, vea [Understand next-generation configuration settings settings in Microsoft Defender für Unternehmen](../security/defender-business/mdb-next-gen-configuration-settings.md).
 
 10. En el **paso Revisar la directiva** , revise toda la configuración, realice las modificaciones necesarias y, a continuación, elija **Crear directiva** o **Actualizar directiva**.
 

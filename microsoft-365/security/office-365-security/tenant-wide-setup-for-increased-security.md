@@ -21,12 +21,12 @@ ms.custom:
 description: En este tema se le guía por la configuración recomendada para la configuración de todo el espacio empresarial que afecta a la seguridad del entorno Microsoft 365 inquilino.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94da7316c5e749cf6dcc5e038c185bea4790765f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 96f31d0fb9eb3ef9d6eaec396fdac8fe96b96c3d
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682887"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476365"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurar el inquilino de Microsoft 365 para aumentar la seguridad
 
@@ -125,10 +125,10 @@ Dado que esta solución recomienda el plan EMS E5, te recomendamos que empieces 
 Más información:
 
 - [Implementar Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security)
-- [Más información sobre Microsoft Defender para aplicaciones en la nube](https://www.microsoft.com/cloud-platform/cloud-app-security)
+- [Más información sobre Microsoft Defender for Cloud Apps](https://www.microsoft.com/cloud-platform/cloud-app-security)
 - [¿Qué es Defender for Cloud Apps?](/cloud-app-security/what-is-cloud-app-security)
 
-![Panel defender para aplicaciones en la nube.](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
+:::image type="content" source="../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png" alt-text="Panel defender para aplicaciones en la nube" lightbox="../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png":::
 
 ## <a name="additional-resources"></a>Recursos adicionales
 

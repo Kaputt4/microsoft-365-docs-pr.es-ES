@@ -1,6 +1,6 @@
 ---
 title: Filtrado de contenido web
-description: Use el filtrado de contenido web en Microsoft Defender para punto de conexión para realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido.
+description: Use el filtrado de contenido web Pertahanan Microsoft untuk Titik Akhir para realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido.
 keywords: protección web, protección contra amenazas web, exploración web, supervisión, informes, tarjetas, lista de dominios, seguridad, phishing, malware, exploit, sitios web, protección de red, Edge, Internet Explorer, Chrome, Firefox, explorador web
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 24cdf18ad510902a533834da2f3595acaa9b33d7
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: be2352ef44d8e9f7430cde39a71c7b7b1167a874
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595266"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634105"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -34,7 +34,7 @@ ms.locfileid: "64595266"
 > [!TIP]
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-El filtrado de contenido web forma parte de las [funciones de protección](web-protection-overview.md) web de Microsoft Defender para punto de conexión. Permite a la organización realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido. Muchos de estos sitios web, aunque no son malintencionados, pueden ser problemáticos debido a las normativas de cumplimiento, el uso del ancho de banda u otras preocupaciones.
+El filtrado de contenido web forma parte de las [funciones de](web-protection-overview.md) protección web de Pertahanan Microsoft untuk Titik Akhir. Permite a la organización realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido. Muchos de estos sitios web, aunque no son malintencionados, pueden ser problemáticos debido a las normativas de cumplimiento, el uso del ancho de banda u otras preocupaciones.
 
 Configure directivas en los grupos de dispositivos para bloquear determinadas categorías. El bloqueo de una categoría impide que los usuarios de grupos de dispositivos especificados tengan acceso a direcciones URL asociadas a la categoría. Para cualquier categoría que no está bloqueada, las direcciones URL se auditan automáticamente. Los usuarios pueden acceder a las direcciones URL sin interrupciones y recopilará estadísticas de acceso para ayudar a crear una decisión de directiva más personalizada. Los usuarios verán una notificación de bloqueo si un elemento de la página que están viendo está realizando llamadas a un recurso bloqueado.
 
@@ -44,7 +44,7 @@ El filtrado de contenido web está disponible en los principales exploradores we
 
 - Se impide que los usuarios accedan a sitios web en categorías bloqueadas, ya sea que estén explorando localmente o lejos.
 
-- El equipo de seguridad puede implementar directivas cómodamente en grupos de usuarios mediante grupos de dispositivos definidos [en Microsoft Defender para punto de conexión de control de acceso basado en roles](/microsoft-365/security/defender-endpoint/rbac).
+- El equipo de seguridad puede implementar cómodamente directivas para grupos de usuarios que usan grupos de dispositivos definidos [en Pertahanan Microsoft untuk Titik Akhir de control de acceso basado en roles](/microsoft-365/security/defender-endpoint/rbac).
 
 - El equipo de seguridad puede acceder a los informes web en la misma ubicación central, con visibilidad sobre los bloques reales y el uso web.
 
@@ -52,7 +52,7 @@ El filtrado de contenido web está disponible en los principales exploradores we
 
 Antes de probar esta característica, asegúrese de cumplir los siguientes requisitos:
 
-- La suscripción incluye una de las siguientes opciones: Windows 10 Enterprise E5, Microsoft 365 E5, Seguridad de Microsoft 365 E5, Microsoft 365 E3 + Seguridad de Microsoft 365 E5 complemento o la Microsoft Defender para punto de conexión independiente. 
+- La suscripción incluye una de las siguientes opciones: Windows 10 Enterprise E5, Microsoft 365 E5, Seguridad de Microsoft 365 E5, Microsoft 365 E3 o el Pertahanan Microsoft untuk Titik Akhir licencia independiente. 
 
 - Tiene acceso a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
@@ -62,7 +62,7 @@ Antes de probar esta característica, asegúrese de cumplir los siguientes requi
 
 ## <a name="data-handling"></a>Control de datos
 
-Los datos se almacenan en la región seleccionada como parte de la configuración Microsoft Defender para punto de conexión [control de datos](data-storage-privacy.md). Los datos no abandonarán el centro de datos en esa región. Además, sus datos no se compartirán con terceros, incluidos nuestros proveedores de datos.
+Los datos se almacenan en la región seleccionada como parte de la configuración Pertahanan Microsoft untuk Titik Akhir [control de datos](data-storage-privacy.md). Los datos no abandonarán el centro de datos en esa región. Además, sus datos no se compartirán con terceros, incluidos nuestros proveedores de datos.
 
 ## <a name="turn-on-web-content-filtering"></a>Activar el filtrado de contenido web
 
@@ -253,7 +253,7 @@ Solo Microsoft Edge se admite y La protección de red no se admite en Windows 10
 
 La protección de red actualmente no admite la inspección SSL, lo que puede provocar que algunos sitios puedan ser permitidos por el filtrado de contenido web que normalmente se bloquearía. Los sitios se permitirían debido a la falta de visibilidad del tráfico cifrado después de que se haya realizado el protocolo de enlace TLS y a la imposibilidad de analizar determinados redireccionamientos.  Esto incluye redirecciones desde algunas páginas de inicio de sesión de correo basadas en web a la página del buzón. Como solución alternativa aceptada, puede crear un indicador de bloqueo personalizado para la página de inicio de sesión para garantizar que ningún usuario pueda acceder al sitio. Tenga en cuenta que esto puede bloquear su acceso a otros servicios asociados con el mismo sitio web. 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Introducción a protección web](web-protection-overview.md)
 - [Protección contra amenazas web](web-threat-protection.md)

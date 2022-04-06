@@ -1,6 +1,6 @@
 ---
 title: 'Vulnerabilidades en mi organización: Administración de amenazas y vulnerabilidades'
-description: Enumera el identificador de vulnerabilidades y exposiciones (CVE) común de las debilidades encontradas en el software que se ejecuta en la organización. Detectada por la funcionalidad de Microsoft Defender para Administración de amenazas y vulnerabilidades punto de conexión.
+description: Enumera el identificador de vulnerabilidades y exposiciones (CVE) común de las debilidades encontradas en el software que se ejecuta en la organización. Detectada por microsoft defender para la funcionalidad Administración de amenazas y vulnerabilidades punto de conexión.
 keywords: Microsoft Defender para endpoint threat & administración de vulnerabilidades, Administración de amenazas y vulnerabilidades, Microsoft Defender for Endpoint tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 23b0235382e748071f0d8e060e15624b5332326d
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: a2f3db3a28755c5e2bce46f7134eb1c977d1aa0a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62887311"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476651"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnerabilidades en mi organización: Administración de amenazas y vulnerabilidades
 
@@ -42,7 +42,7 @@ Threat y administración de vulnerabilidades usa las mismas señales en Defender
 En **la página Puntos débiles** se enumeran las vulnerabilidades de software a las que se exponen los dispositivos al enumerar el identificador vulnerabilidades y exposiciones comunes (CVE). También puede ver la gravedad, la clasificación del Sistema de puntuación de vulnerabilidad común (CVSS), la prevalencia en su organización, la vulneración correspondiente, las perspectivas de amenazas y mucho más.
 
 > [!NOTE]
-> Si no hay ningún identificador CVE oficial asignado a una vulnerabilidad, el nombre de vulnerabilidad se asigna mediante Administración de amenazas y vulnerabilidades.
+> Si no hay ningún identificador CVE oficial asignado a una vulnerabilidad, el nombre de vulnerabilidad lo asignará Administración de amenazas y vulnerabilidades.
 
 > [!TIP]
 > Para obtener correos electrónicos sobre nuevos eventos de vulnerabilidad, consulte [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
@@ -51,7 +51,7 @@ En **la página Puntos débiles** se enumeran las vulnerabilidades de software a
 
 Acceder a la página Puntos débiles de varias maneras diferentes:
 
-- Selección de **puntos débiles** en el **menú de navegación Administración** de vulnerabilidades en [el portal de Microsoft 365 Defender vulnerabilidades](portal-overview.md)
+- Selección de **puntos débiles** en el **menú de navegación Administración** de vulnerabilidades en [el portal de Microsoft 365 Defender vulnerabilidad](portal-overview.md)
 - Búsqueda global
 
 ### <a name="navigation-menu"></a>Menú de navegación
@@ -62,7 +62,9 @@ Vaya al menú **de navegación Administración** de **vulnerabilidades y selecci
 
 1. Vaya al menú desplegable búsqueda global.
 2. Seleccione **Vulnerabilidad y** clave en el identificador de vulnerabilidades y exposiciones comunes (CVE) que está buscando y, a continuación, seleccione el icono de búsqueda. La **página Puntos débiles** se abre con la información CVE que está buscando.
-![Cuadro de búsqueda global con la opción desplegable "vulnerabilidad" seleccionada y un cve de ejemplo.](images/tvm-vuln-globalsearch.png)
+
+:::image type="content" source="images/tvm-vuln-globalsearch.png" alt-text="Cuadro de búsqueda global con la vulnerabilidad de la opción desplegable seleccionada" lightbox="images/tvm-vuln-globalsearch.png":::
+
 3. Selecciona CVE para abrir un panel desplegable con más información, incluida la descripción de vulnerabilidad, los detalles, las perspectivas de amenazas y los dispositivos expuestos.
 
 Para ver el resto de las vulnerabilidades en la página Puntos **débiles** , escriba CVE y, a continuación, seleccione buscar.
@@ -71,7 +73,7 @@ Para ver el resto de las vulnerabilidades en la página Puntos **débiles** , es
 
 Corrija las vulnerabilidades de los dispositivos expuestos para reducir el riesgo para los activos y la organización. Si la **columna Dispositivos expuestos** muestra 0, significa que no estás en riesgo.
 
-![Página de aterrizaje Debilidades.](images/tvm-weaknesses-overview.png)
+:::image type="content" source="images/tvm-weaknesses-overview.png" alt-text="Página de aterrizaje Debilidades" lightbox="images/tvm-weaknesses-overview.png":::
 
 ### <a name="breach-and-threat-insights"></a>Información sobre infracciones y amenazas
 
@@ -94,7 +96,7 @@ Si seleccionas una CVE, se abrirá un panel desplegable con más información, c
 - La categoría "Característica del sistema operativo" se muestra en escenarios relevantes
 - Puedes ir a la recomendación de seguridad relacionada para cada CVE con dispositivo expuesto
 
- ![Ejemplo de flyout de debilidad.](images/tvm-weakness-flyout400.png)
+ :::image type="content" source="images/tvm-weakness-flyout400.png" alt-text="La página Descripción de vulnerabilidad" lightbox="images/tvm-weakness-flyout400.png":::
 
 ### <a name="software-that-isnt-supported"></a>Software que no es compatible
 
@@ -108,9 +110,9 @@ La información de dispositivo expuesta no estará disponible para las CVE con s
 
 ### <a name="top-vulnerable-software-in-the-dashboard"></a>Software vulnerable superior en el panel
 
-1. Ve al panel [de Administración de amenazas y vulnerabilidades y](tvm-dashboard-insights.md) desplázate hacia abajo hasta el **widget de software vulnerable** superior. Verás el número de vulnerabilidades encontradas en cada software, junto con la información sobre amenazas y una vista de alto nivel de la exposición del dispositivo con el tiempo.
+1. Ve al panel [Administración de amenazas y vulnerabilidades y](tvm-dashboard-insights.md) desplázate hacia abajo hasta el **widget de software vulnerable** superior. Verás el número de vulnerabilidades encontradas en cada software, junto con la información sobre amenazas y una vista de alto nivel de la exposición del dispositivo con el tiempo.
 
-    ![Tarjeta de software vulnerable superior con cuatro columnas: software, debilidades, amenazas, dispositivos expuestos.](images/tvm-top-vulnerable-software500.png)
+   :::image type="content" source="images/tvm-top-vulnerable-software500.png" alt-text="La columna Puntos débiles de la página Software vulnerable superior" lightbox="images/tvm-top-vulnerable-software500.png":::
 
 2. Seleccione el software que desea investigar para ir a una página de investigación.
 
@@ -118,7 +120,7 @@ La información de dispositivo expuesta no estará disponible para las CVE con s
 
 4. Seleccione la vulnerabilidad que desea investigar para obtener más información sobre los detalles de vulnerabilidad
 
-    ![Windows server 2019 información general sobre detalles.](images/windows-server-drilldown.png)
+   :::image type="content" source="images/windows-server-drilldown.png" alt-text="Información general Windows server 2019" lightbox="images/windows-server-drilldown.png":::
 
 ### <a name="discover-vulnerabilities-in-the-device-page"></a>Detectar vulnerabilidades en la página del dispositivo
 
@@ -128,13 +130,13 @@ Ver información de puntos débiles relacionados en la página del dispositivo.
 
 2. En la **página Inventario de** dispositivos, selecciona el nombre del dispositivo que quieras investigar.
 
-    ![Lista de dispositivos con el dispositivo seleccionado para investigar.](images/tvm_machinetoinvestigate.png)
+   :::image type="content" source="images/tvm_machinetoinvestigate.png" alt-text="Lista de dispositivos con un dispositivo seleccionado para investigar" lightbox="images/tvm_machinetoinvestigate.png":::
 
 3. La página del dispositivo se abrirá con detalles y opciones de respuesta para el dispositivo que quieras investigar.
 
 4. Seleccione **Vulnerabilidades detectadas**.
 
-   :::image type="content" alt-text="Página del dispositivo con detalles y opciones de respuesta." source="images/tvm-discovered-vulnerabilities.png" lightbox="images/tvm-discovered-vulnerabilities.png":::
+   :::image type="content" source="images/tvm-discovered-vulnerabilities.png" alt-text="La página Dispositivo con detalles y opciones de respuesta." lightbox="images/tvm-discovered-vulnerabilities.png":::
 
 5. Seleccione la vulnerabilidad que desea investigar para abrir un panel desplegable con los detalles de CVE, como: descripción de vulnerabilidad, información sobre amenazas y lógica de detección.
 
@@ -144,7 +146,7 @@ De forma similar a la evidencia de software, ahora mostramos la lógica de detec
 
 La categoría "Característica del sistema operativo" también se muestra en escenarios relevantes. Una CVE afectaría a los dispositivos que ejecutan un sistema operativo vulnerable solo si se habilita un componente del sistema operativo específico. Supongamos que Windows Server 2019 o Windows Server 2022 tiene vulnerabilidad en su componente DNS. Con esta nueva funcionalidad, solo adjuntaremos esta CVE a los dispositivos de Windows Server 2019 y Windows Server 2022 con la funcionalidad DNS habilitada en su sistema operativo.
 
-:::image type="content" alt-text="Ejemplo de lógica de detección que enumera el software detectado en el dispositivo y los KB." source="images/tvm-cve-detection-logic.png":::
+:::image type="content" source="images/tvm-cve-detection-logic.png" alt-text="Ejemplo de lógica de detección que enumera el software detectado en el dispositivo y los KB" lightbox="images/tvm-cve-detection-logic.png":::
 
 ## <a name="report-inaccuracy"></a>Imprecisión de informe
 

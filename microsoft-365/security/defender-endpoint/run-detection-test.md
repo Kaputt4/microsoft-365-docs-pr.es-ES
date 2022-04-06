@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 41ba14fd2e4a9e3726e4ef4287812cf8d3ffb2d1
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 1d8459633d00d759fda1584e0084cd8ed4e12633
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767247"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477267"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado
 
@@ -56,8 +56,8 @@ Ejecute el siguiente script de PowerShell en un dispositivo recién incorporado 
 
    1. Haga clic con el **botón secundario en Símbolo del sistema** y **seleccione Ejecutar como administrador**.
 
-      ![Window menú Inicio que apunta a Ejecutar como administrador.](images/run-as-admin.png)
-
+      :::image type="content" source="images/run-as-admin.png" alt-text="El menú Inicio que apunta a Ejecutar como administrador" lightbox="images/run-as-admin.png":::
+    
 3. En el símbolo del sistema, copie y ejecute el siguiente comando:
 
    ```powershell

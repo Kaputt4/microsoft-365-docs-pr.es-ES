@@ -1,7 +1,7 @@
 ---
 title: Corrección de posible información de bucle de correo
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -11,12 +11,17 @@ ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
-  - seo-marvel-apr2020
+- seo-marvel-apr2020
 description: Los administradores pueden aprender a usar la información sobre corregir posibles bucles de correo en el panel flujo de correo del Centro de seguridad y cumplimiento de & para identificar y corregir bucles de correo en su organización.
 ms.technology: mdo
 ms.prod: m365-security
+ms.openlocfilehash: 5a74e7cc623dffd6bae6451f7488d8f630b607b2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469149"
 ---
-
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Corregir la posible información del bucle de correo en el Centro de seguridad & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -36,7 +41,7 @@ Fix **possible mail loop** insight in the **Recommended for you** area of the [M
 
 Esta información aparece solo después de que se detecte la condición (si no tiene bucles de correo, no verá la información).
 
-![Corregir la información de reglas de flujo de correo lento en el área Recomendado para usted del panel flujo de correo.](../../media/mfi-fix-possible-mail-loop.png)
+:::image type="content" source="../../media/mfi-fix-possible-mail-loop.png" alt-text="Información sobre las reglas de flujo de correo lento fix en el área Recomendado para usted del panel flujo de correo" lightbox="../../media/mfi-fix-possible-mail-loop.png":::
 
 Al hacer clic **en Ver detalles** en el widget, aparece un control flotante con más información:
 
@@ -46,8 +51,8 @@ Al hacer clic **en Ver detalles** en el widget, aparece un control flotante con 
 - **Registro MX**: el host (**servidor de correo**) y los valores **de** prioridad del registro MX para el dominio.
 - **Motivo del** bucle **y Cómo corregir**: identificaremos los escenarios de bucle de correo más comunes y proporcionaremos acciones recomendadas para corregir el bucle.
 
-![Control desplegable de detalles que aparece después de hacer clic en Ver detalles en la información corregir posibles bucles de correo.](../../media/mfi-fix-possible-mail-loop-details.png)
+:::image type="content" source="../../media/mfi-fix-possible-mail-loop-details.png" alt-text="El control desplegable Detalles que aparece después de hacer clic en Ver detalles en la información de corregir posibles bucles de correo" lightbox="../../media/mfi-fix-possible-mail-loop-details.png":::
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Para obtener información sobre otras perspectivas en el panel flujo de correo, vea Información sobre el flujo de correo en el [Centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

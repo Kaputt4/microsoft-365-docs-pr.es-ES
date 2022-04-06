@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden obtener información sobre el modo de prueba de Microsoft Defender para Office 365
-ms.openlocfilehash: 40ad151dfa4ee26bf1e6177dda170cc2998c7c7e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: f1bb280502908143171cbc7b08df7080d0040df2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683875"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477113"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de la versión de prueba de Microsoft Defender Office 365 prueba
 
@@ -74,7 +74,7 @@ Como parte de la configuración de prueba, defender para Office 365 licencias se
 
 La tarjeta de licencia para la prueba muestra la siguiente información:
 
-![La tarjeta de licencia de Microsoft Defender para Office 365 prueba.](../../media/mdo-trial-licensing-card.png)
+:::image type="content" source="../../media/mdo-trial-licensing-card.png" alt-text="La tarjeta de licencia de Microsoft Defender para Office 365 prueba" lightbox="../../media/mdo-trial-licensing-card.png":::
 
 - **Sección Tipo de** uso:
   - **Prueba**: número de licencias de prueba de Defender Office 365 que están disponibles para su uso.
@@ -126,7 +126,7 @@ Defender for Office 365 ayuda a las organizaciones a proteger su empresa al ofre
 
 También puedes obtener más información sobre Defender para Office 365 en esta [guía interactiva](https://aka.ms/MS365D.InteractiveGuide).
 
-![Microsoft Defender para Office 365 diagrama conceptual.](../../media/microsoft-defender-for-office-365.png)
+:::image type="content" source="../../media/microsoft-defender-for-office-365.png" alt-text="Diagrama conceptual de Microsoft Defender para Office 365 conceptual" lightbox="../../media/microsoft-defender-for-office-365.png":::
 
 ### <a name="prevention"></a>Prevención
 
@@ -167,7 +167,7 @@ Las completas capacidades de simulación y aprendizaje junto con las experiencia
 
 Las plantillas recomendadas y los conocimientos de configuración ayudan a los clientes a obtener y mantener la seguridad.
 
-- [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md)
+- [Directivas de seguridad preestablecidas en Exchange Online Protection y Microsoft Defender para Office 365](preset-security-policies.md)
 - [Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365](configuration-analyzer-for-security-policies.md).
 
 ## <a name="give-feedback"></a>Enviar comentarios

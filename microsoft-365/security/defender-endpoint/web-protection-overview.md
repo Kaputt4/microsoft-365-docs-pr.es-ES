@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d21fdd481ade59ca869d5cfe086e537c0c431228
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 7883ef4c7bc06c08e199af871902b26d8e46ac5e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074647"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476585"
 ---
 # <a name="web-protection"></a>Protección web
 
@@ -38,13 +38,13 @@ ms.locfileid: "62074647"
 
 ## <a name="about-web-protection"></a>Acerca de la protección web
 
-La protección web en Microsoft Defender para endpoint es una funcionalidad de protección contra amenazas [web,](web-threat-protection.md)filtrado de contenido [web](web-content-filtering.md)e [indicadores personalizados.](manage-indicators.md) La protección web te permite proteger los dispositivos contra amenazas web y te ayuda a regular el contenido no deseado. Para encontrar informes de protección web en el portal de Microsoft 365 Defender, vaya a **Informes > protección web**.
+La protección web en Microsoft Defender para endpoint es una funcionalidad que se completa con la protección contra amenazas [web](web-threat-protection.md), el filtrado de contenido [web](web-content-filtering.md) y los [indicadores personalizados](manage-indicators.md). La protección web te permite proteger los dispositivos contra amenazas web y te ayuda a regular el contenido no deseado. Puede encontrar informes de protección web en el portal de Microsoft 365 Defender web yendo **a Informes > protección web**.
 
-:::image type="content" alt-text="Imagen de todas las tarjetas de protección web." source="images/web-protection.png" lightbox="images/web-protection.png":::
+:::image type="content" source="images/web-protection.png" alt-text="Las tarjetas de protección web" lightbox="images/web-protection.png":::
 
 ### <a name="web-threat-protection"></a>Protección contra amenazas web
 
-Las tarjetas que hacen de la protección contra amenazas web son **las detecciones** de amenazas web a lo largo del tiempo y **el resumen de amenazas web.**
+Las tarjetas que hacen parte de la protección contra amenazas web son las detecciones de amenazas web **con el tiempo** y **el resumen de amenazas web**.
 
 La protección contra amenazas web incluye:
 
@@ -56,7 +56,7 @@ Para obtener más información, vea [Protección contra amenazas web](web-threat
 
 ### <a name="custom-indicators"></a>Indicadores personalizados
 
-Las detecciones de indicadores personalizados también se resumen en los informes de amenazas web de las organizaciones en **Detecciones** de amenazas web con el tiempo y **resumen de amenazas web.**
+Las detecciones de indicadores personalizados también se resumen en los informes  de amenazas web de las organizaciones en detecciones de amenazas web con el tiempo y resumen **de amenazas web**.
 
 El indicador personalizado incluye:
 
@@ -68,19 +68,19 @@ Para obtener más información, vea [Create indicators for IPs and URLs/domains]
 
 ### <a name="web-content-filtering"></a>Filtrado de contenido web
 
-El filtrado de contenido web incluye **actividad web por categoría,** resumen de filtrado de contenido web y resumen de **actividad web.**
+El filtrado de contenido **web incluye actividad web por categoría**, resumen de filtrado **de contenido web** y resumen **de actividad web**.
 
 El filtrado de contenido web incluye:
 
 - Se impide que los usuarios accedan a sitios web en categorías bloqueadas, ya sea que estén explorando localmente o lejos.
-- Puedes implementar cómodamente directivas variadas en varios conjuntos de usuarios mediante los grupos de dispositivos definidos en la configuración del control de acceso basado en roles de Microsoft Defender para [endpoint.](/microsoft-365/security/defender-endpoint/rbac)
+- Puedes implementar cómodamente directivas variadas en varios conjuntos de usuarios mediante los grupos de dispositivos definidos en la configuración del control de acceso basado en roles de [Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/rbac).
 - Puede tener acceso a los informes web en la misma ubicación central, con visibilidad sobre los bloques reales y el uso web.
 
 Para obtener más información, vea [Filtrado de contenido web](web-content-filtering.md).
 
 ## <a name="order-of-precedence"></a>Orden de prioridad
 
-La protección web está hecha de los siguientes componentes, enumerados en orden de prioridad. Cada uno de estos componentes es aplicado por el cliente smartscreen en Microsoft Edge y por el cliente de protección de red en todos los demás exploradores y procesos.
+La protección web está hecha de los siguientes componentes, enumerados en orden de prioridad. Cada uno de estos componentes es aplicado por el cliente SmartScreen en Microsoft Edge y por el cliente de protección de red en todos los demás exploradores y procesos.
 
 - Indicadores personalizados (IP/URL, directivas de Microsoft Defender para Aplicaciones en la nube)
   - Permitir
@@ -113,19 +113,19 @@ En la tabla siguiente se resumen algunas configuraciones comunes que presentarí
 |Advertir|Bloquear|Bloquear|Bloquear|Advertencia (invalidación)|
 |
 
-Los indicadores personalizados no admiten las direcciones IP internas. Para una directiva de advertencia cuando el usuario final omite, el sitio se desbloqueará durante 24 horas para ese usuario de forma predeterminada. El administrador puede modificar este período de tiempo y el servicio en la nube de SmartScreen lo pasa. La capacidad de omitir una advertencia también se puede deshabilitar Microsoft Edge usar CSP para bloques de amenazas web (malware/phishing). Para obtener más información, [vea Microsoft Edge SmartScreen Configuración](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies).
+Los indicadores personalizados no admiten las direcciones IP internas. Para una directiva de advertencia cuando el usuario final omite, el sitio se desbloqueará durante 24 horas para ese usuario de forma predeterminada. El administrador puede modificar este período de tiempo y el servicio en la nube de SmartScreen lo pasa. La capacidad de omitir una advertencia también se puede deshabilitar en Microsoft Edge usar CSP para bloques de amenazas web (malware/phishing). Para obtener más información, [consulta Microsoft Edge SmartScreen Configuración](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies).
 
 ## <a name="protect-browsers"></a>Proteger exploradores
 
 En todos los escenarios de protección web, SmartScreen y Network Protection se pueden usar conjuntamente para garantizar la protección en exploradores y procesos de terceros y de primera. SmartScreen se basa directamente en Microsoft Edge, mientras que Network Protection supervisa el tráfico en procesos y exploradores de terceros. El siguiente diagrama ilustra este concepto. Este diagrama de los dos clientes que trabajan juntos para proporcionar varias coberturas de explorador/aplicación es preciso para todas las características de Protección web (indicadores, amenazas web, filtrado de contenido).
 
-:::image type="content" alt-text="Usar SmartScreen y Network Protection juntos." source="../../media/web-protection-protect-browsers.png" lightbox="../../media/web-protection-protect-browsers.png":::
+:::image type="content" source="../../media/web-protection-protect-browsers.png" alt-text="El uso de smartScreen y Network Protection juntos" lightbox="../../media/web-protection-protect-browsers.png":::
 
 ## <a name="troubleshoot-endpoint-blocks"></a>Solucionar problemas de bloques de extremo
 
 Las respuestas de la nube de SmartScreen están estandarizadas. Herramientas como Fiddler se pueden usar para inspeccionar la respuesta desde el servicio en la nube, lo que ayudará a determinar el origen del bloque.
 
-Cuando el servicio en la nube smartScreen responde con una respuesta de permitir, bloquear o advertir, una categoría de respuesta y un contexto de servidor se retransmiten de nuevo al cliente. En Microsoft Edge, la categoría de respuesta es la que se usa para determinar la página de bloqueo adecuada para mostrar (malintencionada, suplantación de identidad, directiva organizativa).
+Cuando el servicio en la nube smartScreen responde con una respuesta de permitir, bloquear o advertir, una categoría de respuesta y un contexto de servidor se retransmiten de nuevo al cliente. En Microsoft Edge, la categoría de respuesta es la que se usa para determinar la página de bloqueo adecuada que se va a mostrar (malintencionada, suplantación de identidad, directiva organizativa).
 
 En la tabla siguiente se muestran las respuestas y sus características correlacionadas.
 
@@ -171,23 +171,23 @@ Para enumerar los bloques que se deben a otras características (como indicadore
 Si un usuario visita una página web que supone un riesgo de malware, suplantación de identidad u otras amenazas web, Microsoft Edge desencadenará una página de bloqueo que lea "Este sitio se ha notificado como no seguro" junto con la información relacionada con la amenaza.
 
 > [!div class="mx-imgBorder"]
-> ![Página bloqueada por Microsoft Edge.](../../media/web-protection-malicious-block.png)
+> :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="La página bloqueada por Microsoft Edge" lightbox="../../media/web-protection-malicious-block.png":::
 
 Si está bloqueado por WCF o un indicador personalizado, se muestra una página de bloque en Microsoft Edge que indica al usuario que su organización bloquea este sitio.
 
 > [!div class="mx-imgBorder"]
-> ![Página bloqueada por la organización.](../../media/web-protection-indicator-blockpage.png)
+> :::image type="content" source="../../media/web-protection-indicator-blockpage.png" alt-text="La página bloqueada por la organización" lightbox="../../media/web-protection-indicator-blockpage.png":::
 
 En cualquier caso, no se muestran páginas de bloqueo en exploradores de terceros y el usuario ve una página "Error de conexión segura" junto con una notificación del sistema. Según la directiva responsable del bloque, un usuario verá un mensaje diferente en la notificación del sistema. Por ejemplo, el filtrado de contenido web mostrará el mensaje "Este contenido está bloqueado".
 
 > [!div class="mx-imgBorder"]
-> ![Página bloqueada por WCF.](../../media/web-protection-np-block.png)
+> :::image type="content" source="../../media/web-protection-np-block.png" alt-text="La página bloqueada por WCF" lightbox="../../media/web-protection-np-block.png":::
 
 ## <a name="report-false-positives"></a>Notificar falsos positivos
 
 Para informar de un falso positivo para los sitios que SmartScreen ha considerado peligrosos, usa el vínculo que aparece en la página de bloque en Microsoft Edge (como se muestra anteriormente).
 
-Para WCF, puede disputar la categoría de un dominio. Vaya a la **pestaña Dominios** de los informes WCF y, a continuación, haga clic en Error **de informe**. Se abrirá un flyout. Establezca la prioridad del incidente y proporcione algunos detalles adicionales, como la categoría sugerida. Para obtener más información sobre cómo activar WCF y cómo disputar categorías, vea [Filtrado de contenido web](web-content-filtering.md).
+Para WCF, puede disputar la categoría de un dominio. Vaya a la **pestaña Dominios** de los informes WCF y, a continuación, haga clic **en Error de informe**. Se abrirá un flyout. Establezca la prioridad del incidente y proporcione algunos detalles adicionales, como la categoría sugerida. Para obtener más información sobre cómo activar WCF y cómo disputar categorías, vea [Filtrado de contenido web](web-content-filtering.md).
 
 Para obtener más información sobre cómo enviar falsos positivos/negativos, vea [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
 

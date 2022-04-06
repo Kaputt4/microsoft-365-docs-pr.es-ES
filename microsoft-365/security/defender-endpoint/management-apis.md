@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 36975b55d8f26ae7788495543ae42922ea404c66
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: cc73531540222791eb39eeca74570f34ff78a1b7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214002"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469787"
 ---
 # <a name="overview-of-management-and-apis"></a>Introducción a la administración y las API
 
@@ -55,7 +55,7 @@ La solución de Microsoft Defender para endpoint se basa en una plataforma lista
 
 Defender for Endpoint expone gran parte de sus datos y acciones a través de un conjunto de API programáticas. Estas API le permitirán automatizar flujos de trabajo e innovar en función de las capacidades de Defender para endpoints.
 
-![Imagen de la API e integración disponibles en Microsoft Defender para endpoint.](images/mdatp-apis.png)
+:::image type="content" source="images/mdatp-apis.png" alt-text="Api e integración disponibles en Microsoft Defender para endpoint" lightbox="images/mdatp-apis.png":::
 
 Las API de Defender for Endpoint se pueden agrupar en tres:
 
@@ -71,7 +71,7 @@ Vea este vídeo para obtener una introducción rápida a las API de Defender par
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
 
-La **API** de investigación expone la riqueza de Defender para endpoint: expone entidades calculadas o "perfiladas" (por ejemplo, dispositivo, usuario y archivo) y eventos discretos (por ejemplo, creación de procesos y creación de archivos) que normalmente describen un comportamiento relacionado con una entidad, lo que habilita el acceso a los datos a través de interfaces de investigación que permiten un acceso basado en consultas a los datos. Para obtener más información, vea [Supported API](exposed-apis-list.md).
+La **API** de investigación expone la riqueza de Defender para endpoint: expone entidades calculadas o "perfiladas" (por ejemplo, dispositivo, usuario y archivo) y eventos discretos (por ejemplo, creación de procesos y creación de archivos) que normalmente describen un comportamiento relacionado con una entidad, lo que habilita el acceso a los datos a través de interfaces de investigación que permiten un acceso basado en consultas a los datos. Para obtener más información, vea [SUPPORTED API](exposed-apis-list.md).
 
 La **API** de respuesta expone la capacidad de realizar acciones en el servicio y en los dispositivos, lo que permite a los clientes ingerir indicadores, administrar la configuración, el estado de alerta, así como realizar acciones de respuesta en dispositivos mediante programación, como aislar dispositivos de la red, archivos de cuarentena y otros.
 
@@ -81,7 +81,7 @@ La API de streaming de datos sin procesar de Defender for Endpoint ofrece a los 
 
 La información del evento Defender for Endpoint se inserta directamente en Azure Storage para la retención de datos a largo plazo, o en Azure Event Hubs para su consumo por parte de servicios de visualización o motores de procesamiento de datos adicionales.
 
-Para obtener más información, vea [Raw data streaming API](raw-data-export.md).
+Para obtener más información, vea [RAW data streaming API](raw-data-export.md).
 
 La nueva API Microsoft 365 Defender streaming incluye eventos de alerta y correo electrónico, además de eventos de dispositivo.
 Para obtener más información, [vea Microsoft 365 Defender API de streaming](../defender/streaming-api.md).

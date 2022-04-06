@@ -16,20 +16,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cb8c0bd0870ea240e64c33dfac2fd6c00156def8
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ff6d61e02ff923cc9406412c81e9a67799e6880a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166643"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477228"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>Asignar valor de dispositivo: Administración de amenazas y vulnerabilidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -38,7 +38,7 @@ ms.locfileid: "61166643"
 
 La definición del valor de un dispositivo te ayuda a diferenciar entre las prioridades de los activos. El valor del dispositivo se usa para incorporar el apetito de riesgo de un activo individual en el Administración de amenazas y vulnerabilidades de puntuación de exposición. Los dispositivos asignados como "valor alto" recibirán más peso.
 
-También puedes usar la [API de valor de dispositivo establecida.](set-device-value.md)
+También puedes usar la [API de valor de dispositivo establecida](set-device-value.md).
 
 Opciones de valor del dispositivo:
 
@@ -59,10 +59,11 @@ Ejemplos de dispositivos a los que se debe asignar un valor alto:
 
 2. Selecciona **Valor de dispositivo** entre tres puntos junto a la barra de acciones en la parte superior de la página.
 
-    ![Ejemplo del desplegable de valores del dispositivo.](images/tvm-device-value-dropdown.png)
+   :::image type="content" source="images/tvm-device-value-dropdown.png" alt-text="La opción Valor de dispositivo" lightbox="images/tvm-device-value-dropdown.png":::
 
 3. Aparecerá un flyout con el valor del dispositivo actual y lo que significa. Revisa el valor del dispositivo y elige el que mejor se adapte a tu dispositivo.
-![Ejemplo del menú desplegable del valor del dispositivo.](images/tvm-device-value-flyout.png)
+
+:::image type="content" source="images/tvm-device-value-flyout.png" alt-text="La página Valor del dispositivo" lightbox="images/tvm-device-value-flyout.png":::
 
 ## <a name="how-device-value-impacts-your-exposure-score"></a>Cómo afecta el valor del dispositivo a la puntuación de exposición
 

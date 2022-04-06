@@ -23,28 +23,31 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Protéjase contra el phishing y otros ataques con Microsoft 365.
-ms.openlocfilehash: b1a6b5a80b00df010d4733c1b7cb8ce1d16a95d9
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Proteger contra la suplantación de identidad (phishing) y otros ataques con Microsoft 365.
+ms.openlocfilehash: 09e72221e23f4f0d1e2f4a5e7dcb81abff46dcf2
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62768050"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634259"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Protegerse contra la suplantación de identidad (phishing) y otros ataques
 
-Microsoft 365 Empresa Premium incluye muchas protecciones para protegerse de los ataques, pero hay cosas que puede hacer usted mismo para limitar y minimizar el riesgo de ataques en línea.
+Microsoft 365 Business Premium incluye muchas protecciones para protegerse contra ataques, pero hay cosas que puede hacer usted mismo para limitar y minimizar el riesgo de ataques en línea.
 
 - **Correo no deseado o correo no deseado** Hay muchas razones por las que puede recibir correo electrónico no deseado y no todo el correo no deseado es el mismo. Sin embargo, puedes reducir lo que te pasa y, por lo tanto, reducir los riesgos de ataques, filtrando correo no deseado.
+
 - **Phishing** Una estafa de suplantación de identidad (phishing) es un correo electrónico que parece legítimo, pero es un intento de obtener su información personal o robar su dinero.
+
 - **Suplantación** Los estafadores también pueden usar una técnica denominada suplantación de dominio para que parezca como si hubiera recibido un correo electrónico de usted mismo. 
+
 - **El** malware es un software malintencionado que se puede instalar en el equipo, normalmente instalado después de hacer clic en un vínculo o abrir un documento desde un correo electrónico. Hay varios tipos de malware (por ejemplo, ransomware, cuando el equipo se hace cargo), pero no desea tener ninguno de ellos. 
 
 ## <a name="best-practices"></a>Procedimientos recomendados
 
 ### <a name="reduce-spam-mail"></a>Reducir el correo no deseado
 
-Sigue estas [10 sugerencias sobre cómo ayudar a reducir el correo no deseado](https://support.microsoft.com/en-us/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6).
+Sigue estas [10 sugerencias sobre cómo ayudar a reducir el correo no deseado](https://support.microsoft.com/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6).
 
 ### <a name="report-it"></a>¡Informe!
 
@@ -78,5 +81,6 @@ Descargue esta infografía con sugerencias para usted y los miembros de su equip
 Obtenga más información sobre cómo:
 
 - [Mantenga sus archivos y comunicaciones seguros con Office](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
+
 - [Manténgase seguro y privado en el trabajo](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   

@@ -17,16 +17,16 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo usar canales compartidos con personas ajenas a su organización.
-ms.openlocfilehash: 1e14e83f82574f0ef944db56929fda8aded90d16
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 9fa58be15eab0844fa92d408320902c23f36de93
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63716088"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468886"
 ---
 # <a name="collaborate-with-external-participants-in-a-channel"></a>Colaborar con participantes externos en un canal
 
-Si desea permitir que los usuarios colaboren con personas ajenas a su organización en [canales compartidos](/MicrosoftTeams/shared-channels), debe configurar la conexión directa B2B para cada organización con la que quiera colaborar. (Como alternativa, puede [Habilitar canales compartidos con todas las organizaciones externas](/microsoft-365/solutions/allow-direct-connect-with-all-organizations)).
+Si desea permitir que los usuarios colaboren con personas ajenas a la organización en [canales compartidos](/MicrosoftTeams/shared-channels), debe configurar la conexión directa B2B para cada organización con la que quiera colaborar. (Como alternativa, puede [Habilitar canales compartidos con todas las organizaciones externas](/microsoft-365/solutions/allow-direct-connect-with-all-organizations)).
 
 Al habilitar canales compartidos con otra organización:
 
@@ -84,7 +84,7 @@ Para configurar las opciones de entrada de una organización
 1. En [Azure Active Directory](https://aad.portal.azure.com), seleccione **Identidades externas** y, a continuación, seleccione **Configuración de acceso entre inquilinos (versión preliminar)**.
 1. Seleccione el vínculo de acceso de entrada para la organización que desea modificar.
 1. En la pestaña **Conexión directa B2B**, elija **Personalizar configuración**.
-1. En la pestaña **Usuarios y grupos externos**, elija **Permitir acceso** y **Todos los usuarios y grupos**.
+1. En la pestaña **Usuarios y grupos externos**, elija **Permitir acceso** y **Todos los usuarios y grupos**. (Puede elegir **Seleccionar usuarios y grupos externos** si desea limitar el acceso a usuarios y grupos específicos, por ejemplo, los que hayan firmado un acuerdo de confidencialidad).
 1. En la pestaña **Aplicaciones**, elija **Permitir acceso** y **Seleccionar aplicaciones**.
 1. Seleccione **Agregar aplicaciones de Microsoft**.
 1. Seleccione la aplicación **Office 365** y, a continuación, elija **Seleccionar**.

@@ -13,12 +13,12 @@ description: Los administradores pueden aprender a usar la información sobre nu
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 35ec1573096ecce392979cba11c6e55b1a1adcce
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 7e7f97f2f246be609db813f1d42ef6aed6a152a9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681774"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470271"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nuevos usuarios que reenviarán información de correo electrónico en el Centro de seguridad & cumplimiento
 
@@ -35,11 +35,11 @@ La **información sobre nuevos** dominios que se reenvía de correo electrónico
 
 Esta información solo aparece cuando se detecta el problema y aparece en la página [Informe de reenvío](view-mail-flow-reports.md#forwarding-report) .
 
-![Nuevos usuarios que reenván información de correo electrónico.](../../media/mfi-new-users-forwarding-email.png)
+:::image type="content" source="../../media/mfi-new-users-forwarding-email.png" alt-text="La información sobre el reenvío de correo electrónico de nuevos usuarios" lightbox="../../media/mfi-new-users-forwarding-email.png":::
 
 Al hacer clic en el widget, aparece un control flotante donde puede encontrar más detalles sobre los mensajes reenviados, incluido un vínculo al [](#forwarding-modifications-report) informe de modificaciones de reenvío, tal como se describe más adelante en este artículo.
 
-![El menú desplegable de detalles que aparece después de hacer clic en la información sobre el reenvío de correo electrónico de nuevos usuarios.](../../media/mfi-new-users-forwarding-email-details.png)
+:::image type="content" source="../../media/mfi-new-users-forwarding-email-details.png" alt-text="El menú desplegable Detalles que aparece después de hacer clic en la información sobre el reenvío de correo electrónico de nuevos usuarios" lightbox="../../media/mfi-new-users-forwarding-email-details.png":::
 
 También puede acceder a esta página de detalles al seleccionar la información después de hacer clic  en Ver todo en  el área Principales & **recomendaciones en (** \> Panel de **informes o ).** <https://protection.office.com/insightdashboard>
 
@@ -67,11 +67,11 @@ Los gráficos siguientes están disponibles en la vista informe:
 
 - **Mostrar datos para: Nuevos usuarios de reenvío**:
 
-  ![Nueva vista de usuarios de reenvío en el informe de modificaciones de reenvío.](../../media/forwarding-modifications-report-new-forwarding-users.png)
+    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarding-users.png" alt-text="La vista Nuevos usuarios de reenvío en el informe De modificaciones de reenvío" lightbox="../../media/forwarding-modifications-report-new-forwarding-users.png":::
 
 - **Mostrar datos para: Nuevos dominios de reenvío**:
 
-  ![Vista Nuevos dominios reenviados en el informe de modificaciones de reenvío.](../../media/forwarding-modifications-report-new-forwarded-domains.png)
+    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarded-domains.png" alt-text="Vista Nuevos dominios reenviados en el informe Modificaciones de reenvío" lightbox="../../media/forwarding-modifications-report-new-forwarded-domains.png":::
 
 Si hace clic **en Filtros en** una vista de informe, puede especificar un intervalo de fechas con **Fecha de inicio** y **Fecha de finalización**.
 
@@ -109,7 +109,7 @@ Si selecciona una fila de la tabla **, aparecerá un** menú desplegable Detalle
 - **Fecha de comienzo**
 - **Recomendación**: Desde aquí, puede hacer clic en el vínculo para administrar el usuario en el Centro de administración de Microsoft 365.
 
-![Los detalles se desván de la tabla de detalles de la vista Nuevos usuarios de reenvío en el informe Modificaciones de reenvío.](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
+  :::image type="content" source="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png" alt-text="El menú desplegable Detalles de la tabla de detalles de la vista Nuevos usuarios de reenvío en el informe Modificaciones de reenvío" lightbox="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png":::
 
 Para volver a la vista informes, haga clic **en Ver informe**.
 

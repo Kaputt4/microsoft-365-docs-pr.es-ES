@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 882454e00517624c3bc43e87308007b00ece9507
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 8987c5642ea48e4c7887735cc0fce0e5bfccc119
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449748"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470403"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigar entidades en dispositivos con respuesta en directo
 
@@ -101,7 +101,7 @@ Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguie
 
   Recibirá el siguiente error:
 
-  ![Imagen del mensaje de error.](images/live-response-error.png)
+  :::image type="content" source="images/live-response-error.png" alt-text="Mensaje de error" lightbox="images/live-response-error.png":::
 
 - **Habilitar la ejecución de script sin signo de respuesta en directo** (opcional).
 
@@ -344,7 +344,7 @@ processes > output.txt
 
 Selecciona la **pestaña Registro de** comandos para ver los comandos usados en el dispositivo durante una sesión. Cada comando se realiza un seguimiento con detalles completos como:
 
-- ID
+- Id.
 - Línea de comandos
 - Duración
 - Estado y barra lateral de entrada o salida

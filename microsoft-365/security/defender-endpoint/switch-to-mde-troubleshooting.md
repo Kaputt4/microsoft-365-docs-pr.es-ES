@@ -1,6 +1,6 @@
 ---
-title: Solución de problemas al cambiar a Microsoft Defender para punto de conexión
-description: Obtenga información sobre cómo solucionar problemas al cambiar a Microsoft Defender para punto de conexión.
+title: Solución de problemas al cambiar a Pertahanan Microsoft untuk Titik Akhir
+description: Obtenga información sobre cómo solucionar problemas al cambiar a Pertahanan Microsoft untuk Titik Akhir.
 keywords: migración, Windows Defender, protección avanzada de puntos de conexión, antivirus, antimalware, modo pasivo, modo activo, solución de problemas
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,24 +16,24 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 03/28/2022
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 30218ea9b3b5ecbec20fdbc3364546d25c80bcab
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 8334ce03bac5b7d4518433f83ab34d5f86e71339
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507522"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634171"
 ---
-# <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Solución de problemas al cambiar a Microsoft Defender para punto de conexión
+# <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Solución de problemas al cambiar a Pertahanan Microsoft untuk Titik Akhir
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-En este artículo se proporciona información de solución de problemas para los administradores de seguridad que tienen problemas al cambiar de una solución de protección de puntos de conexión que no es de Microsoft a Microsoft Defender para punto de conexión.
+En este artículo se proporciona información de solución de problemas para los administradores de seguridad que tienen problemas al cambiar de una solución de protección de puntos de conexión que no es de Microsoft a Pertahanan Microsoft untuk Titik Akhir.
 
 ## <a name="microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server"></a>Antivirus de Microsoft Defender se desinstala en Windows Server
 
@@ -41,30 +41,10 @@ Al cambiar a Defender for Endpoint, comienza con la protección contra antivirus
 
 Para resolver este problema, siga estos pasos:
 
-1. [Establezca la clave del Registro DisableAntiSpyware en false](#set-the-disableantispyware-registry-key-to-false).
-2. [Agregue Microsoft Defender para punto de conexión a la lista de exclusión](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
-3. [Establece Antivirus de Microsoft Defender en modo pasivo manualmente](#set-microsoft-defender-antivirus-to-passive-mode-manually).
+1. [Agregue Pertahanan Microsoft untuk Titik Akhir a la lista de exclusión](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
+2. [Establece Antivirus de Microsoft Defender en modo pasivo manualmente](#set-microsoft-defender-antivirus-to-passive-mode-manually).
 
-### <a name="set-the-disableantispyware-registry-key-to-false"></a>Establecer la clave del Registro DisableAntiSpyware en false
-
-La [clave del Registro DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) se usó en el pasado para deshabilitar Antivirus de Microsoft Defender e implementar otro producto antivirus, como McAfee, Symantec u otros. **En general,** no debe tener esta clave del Registro en los dispositivos y puntos de conexión de Windows; sin embargo,  `DisableAntiSpyware` si lo ha configurado, este es el modo de establecer su valor en false:
-
-1. En el Windows servidor, abra el Editor del Registro.
-
-2. Vaya a `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
-
-3. En esa carpeta, busque una entrada DWORD denominada **DisableAntiSpyware**.
-   - Si no ve esa entrada, está todo establecido.
-   - Si ve **DisableAntiSpyware**, vaya al paso 4.
-
-4. Haga clic con el botón secundario en el DWORD DisableAntiSpyware y, a continuación, elija **Modificar**.
-
-5. Establezca el valor en `0`. (Esta acción establece el valor de la clave del Registro en *false*).
-
-> [!TIP]
-> Para obtener más información sobre esta clave del Registro, [vea DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
-
-### <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list"></a>Agregar Microsoft Defender para punto de conexión a la lista de exclusión
+### <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list"></a>Agregar Pertahanan Microsoft untuk Titik Akhir a la lista de exclusión
 
 Determinadas exclusiones para Defender for Endpoint deben definirse en la solución de protección de puntos de conexión existente que no sea de Microsoft. Asegúrese de agregar las siguientes exclusiones:
 

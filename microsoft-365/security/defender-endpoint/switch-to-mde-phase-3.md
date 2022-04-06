@@ -1,7 +1,7 @@
 ---
-title: Cambiar a Microsoft Defender para punto de conexión- Onboard
-description: Realice el cambio a Microsoft Defender para punto de conexión. Incorpore dispositivos y, a continuación, desinstale la solución que no es de Microsoft.
-keywords: migración, Microsoft Defender para punto de conexión, edr
+title: Cambiar a Pertahanan Microsoft untuk Titik Akhir - Onboard
+description: Realice el cambio a Pertahanan Microsoft untuk Titik Akhir. Incorpore dispositivos y, a continuación, desinstale la solución que no es de Microsoft.
+keywords: migración, Pertahanan Microsoft untuk Titik Akhir, edr
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -21,16 +21,16 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 03/28/2022
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 1397c34e8e4a7f1fcb20df192409bd57bc50f40b
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 4f387ae01af51292667f810176970f3607b489b3
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507129"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634413"
 ---
-# <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Microsoft Defender para punto de conexión - Fase 3: Incorporación
+# <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Pertahanan Microsoft untuk Titik Akhir - Fase 3: Incorporación
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -61,7 +61,7 @@ ms.locfileid: "64507129"
 4. En **Método de implementación**, seleccione una opción. Siga los vínculos y avisos para incorporar los dispositivos de la organización. ¿Necesita ayuda? Vea [Métodos de incorporación](#onboarding-methods) (en este artículo).
 
 > [!NOTE]
-> Si algo sale mal durante la incorporación, consulte [Solucionar problemas Microsoft Defender para punto de conexión incorporación](troubleshoot-onboarding.md). En ese artículo se describe cómo resolver problemas de incorporación y errores comunes en los puntos de conexión.
+> Si algo sale mal durante la incorporación, consulta [Solucionar problemas Pertahanan Microsoft untuk Titik Akhir incorporación](troubleshoot-onboarding.md). En ese artículo se describe cómo resolver problemas de incorporación y errores comunes en los puntos de conexión.
 
 ### <a name="onboarding-methods"></a>Métodos de incorporación
 
@@ -80,19 +80,15 @@ Los métodos de implementación varían según el sistema operativo y los métod
 | iOS | [Microsoft Endpoint Manager](ios-install.md)     |
 |Android  | [Microsoft Endpoint Manager](android-intune.md)  | 
 
-
 (<a id="fn1">1</a>) Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
-
 
 ## <a name="run-a-detection-test"></a>Ejecutar una prueba de detección
 
 Para comprobar que los dispositivos incorporados están correctamente conectados a Defender for Endpoint, puedes ejecutar una prueba de detección.
 
-<br/><br/>
-
 |Sistema operativo|Instrucciones|
 |---|---|
-|Windows 10 o posterior<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows server, versión 1803 o posterior<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|Consulte [Ejecutar una prueba de detección](run-detection-test.md).<br/><br/>Visita el sitio defender para escenarios de demostración de extremo (<https://demo.wd.microsoft.com>) y prueba uno o varios de los escenarios. Por ejemplo, pruebe el escenario **de demostración de protección entregado en** la nube.|
+|Windows 10 o posterior<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows server, versión 1803 o posterior<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|Consulte [Ejecutar una prueba de detección](run-detection-test.md).<br/><br/>Visita el sitio defender para escenarios de demostración de extremo (<https://demo.wd.microsoft.com>) y prueba uno o varios de los escenarios. Por ejemplo, pruebe el escenario **de demostración de protección entregado en** la nube.|
 |macOS (consulte [Requisitos del sistema](microsoft-defender-endpoint-mac.md)|Descargue y use la aplicación DE BRICOLAJE en <https://aka.ms/mdatpmacosdiy>. <br/><br/> Para obtener más información, [vea Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).|
 |Linux (consulte [Requisitos del sistema](microsoft-defender-endpoint-linux.md#system-requirements))|1. Ejecute el siguiente comando y busque un resultado de **1**: `mdatp health --field real_time_protection_enabled`.<br/><br/>2. Abra una ventana terminal y ejecute el siguiente comando: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`.<br/><br/>3. Ejecute el siguiente comando para enumerar las amenazas detectadas: `mdatp threat list`.<br/><br/>Para obtener más información, [vea Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).|
 
@@ -103,8 +99,6 @@ Para comprobar que los dispositivos incorporados están correctamente conectados
 
 Ahora que los puntos de conexión se han incorporado a Defender for Endpoint, el siguiente paso es asegurarse de que Antivirus de Microsoft Defender se ejecuta en modo pasivo. Puede usar uno de varios métodos, como se describe en la tabla siguiente:
 
-<br/><br/>
-
 |Método|Qué hacer|
 |---|---|
 |Símbolo del sistema|1. En un dispositivo Windows, abra el símbolo del sistema.<br/><br/>2. Escriba `sc query windefend`y, a continuación, presione ENTRAR.<br/><br/>3. Revise los resultados para confirmar que Antivirus de Microsoft Defender se está ejecutando en modo pasivo.|
@@ -113,19 +107,19 @@ Ahora que los puntos de conexión se han incorporado a Defender for Endpoint, el
 |Administrador de tareas|1. En un dispositivo Windows, abra la aplicación Administrador de tareas.<br/><br/>2. Seleccione la **pestaña** Detalles. Busque **MsMpEng.exeen** la lista.|
 
 > [!NOTE]
-> Es posible que *Antivirus de Windows Defender* en lugar *de Antivirus de Microsoft Defender* en algunas versiones de Windows.
+> Es posible que *Windows Defenderin virustentorjunta* en lugar *de Antivirus de Microsoft Defender* en algunas versiones de Windows.
 > Para obtener más información sobre el modo pasivo y el modo activo, consulta [Más detalles sobre Antivirus de Microsoft Defender estados](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states).
 
 ### <a name="set-microsoft-defender-antivirus-on-windows-server-to-passive-mode-manually"></a>Establecer Antivirus de Microsoft Defender en Windows server en modo pasivo manualmente
 
 Para establecer Antivirus de Microsoft Defender en modo pasivo en Windows Server, versión 1803 o posterior, o Windows Server 2019 o Windows Server 2022, siga estos pasos:
 
-1. Abra el Editor del Registro y, a continuación, vaya a:
-
-   `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
+1. Abra el Editor del Registro y, a continuación, vaya a `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
 2. Edite (o cree) una entrada DWORD denominada **ForceDefenderPassiveMode** y especifique la siguiente configuración:
+
    - Establezca el valor de DWORD en **1**.
+
    - En **Base**, seleccione **Hexadecimal**.
 
 > [!NOTE]
@@ -146,6 +140,7 @@ Mantener Antivirus de Microsoft Defender actualizado es fundamental para garanti
 Hay dos tipos de actualizaciones relacionadas con mantener Antivirus de Microsoft Defender actualizado:
 
 - Actualizaciones de inteligencia de seguridad
+
 - Actualizaciones de productos
 
 Para obtener las actualizaciones, siga las instrucciones de [Manage Antivirus de Microsoft Defender updates y apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
@@ -155,6 +150,7 @@ Para obtener las actualizaciones, siga las instrucciones de [Manage Antivirus de
 Si en este momento tiene:
 
 - Incorporó los dispositivos de la organización a Defender for Endpoint y
+
 - Antivirus de Microsoft Defender está instalado y habilitado,
 
 A continuación, el siguiente paso es desinstalar la solución de antivirus, antimalware y endpoint protection que no sea de Microsoft. Al desinstalar la solución que no es de Microsoft, Antivirus de Microsoft Defender pasa del modo pasivo al modo activo. En la mayoría de los casos, esto ocurre automáticamente. 
@@ -169,15 +165,18 @@ Para obtener ayuda con la desinstalación de la solución que no es de Microsoft
 Ahora que has incorporado a Defender for Endpoint y has desinstalado la solución anterior que no es de Microsoft, el siguiente paso es asegurarte de que Defender for Endpoint funciona correctamente. Una buena forma de realizar esta tarea es visitando el sitio de escenarios de demostración de Defender para endpoint ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)). Pruebe uno o varios de los escenarios de demostración de esa página, incluidos al menos los siguientes:
 
 - Protección entregada en la nube
+
 - Aplicaciones potencialmente no deseadas (PUA)
+
 - Protección de red (NP)
 
 > [!NOTE]
 > El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está obsoleto y se eliminará en el futuro.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 **¡Enhorabuena**! Ha completado la migración [a Defender for Endpoint](switch-to-mde-overview.md#the-migration-process).
 
 - [Visite el panel de operaciones de seguridad](security-operations-dashboard.md) en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)).
+
 - [Administrar Defender para endpoint, después de la migración](manage-mde-post-migration.md).

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5cb41b0bd3f185237055daa2d282f0a1d6975a49
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: fbe693272a2f2893dff5f8614f3f9eff301069fd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765545"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477311"
 ---
 # <a name="device-control-for-macos"></a>Control de dispositivos para macOS
 
@@ -72,7 +72,7 @@ La directiva de control de dispositivos se puede usar para:
 
 Cuando se aplica la directiva de control de dispositivos que has puesto en marcha en un dispositivo (por ejemplo, el acceso a un dispositivo multimedia extraíble está restringido), se muestra una notificación al usuario.
 
-![Notificación de control de dispositivos.](images/mac-device-control-notification.png)
+:::image type="content" source="images/mac-device-control-notification.png" alt-text="La notificación de control de dispositivo" lightbox="images/mac-device-control-notification.png":::
 
 Cuando los usuarios finales hacen clic en esta notificación, se abre una página web en el explorador predeterminado. Puede configurar la dirección URL que se abre cuando los usuarios finales hacen clic en la notificación.
 
@@ -84,7 +84,7 @@ Cuando los usuarios finales hacen clic en esta notificación, se abre una págin
 |---|---|
 |**Dominio**|`com.microsoft.wdav`|
 |**Clave**|navigationTarget|
-|**Tipo de datos**|String|
+|**Tipo de datos**|Cadena|
 |**Comments**|Si no se define, el producto usa una dirección URL predeterminada que apunta a una página genérica que explica la acción realizada por el producto.|
 |
 
@@ -340,19 +340,20 @@ Para buscar el identificador de proveedor, el id. de producto y el número de se
 1. Conecta el dispositivo USB para el que quieres buscar los identificadores.
 1. En el menú de nivel superior de macOS, selecciona **Acerca de este Mac**.
 
-    ![Acerca de este Mac.](images/mac-device-control-lookup-1.png)
+   :::image type="content" source="images/mac-device-control-lookup-1.png" alt-text="La página Acerca de este Mac" lightbox="images/mac-device-control-lookup-1.png":::
 
 1. Seleccione **Informe del sistema**.
 
-    ![Informe del sistema.](images/mac-device-control-lookup-2.png)
+   :::image type="content" source="images/mac-device-control-lookup-2.png" alt-text="Informe del sistema" lightbox="images/mac-device-control-lookup-2.png":::
 
 1. En la columna izquierda, seleccione **USB**.
 
-    ![Vista de todos los dispositivos USB.](images/mac-device-control-lookup-3.png)
+   :::image type="content" source="images/mac-device-control-lookup-3.png" alt-text="La vista de todos los dispositivos USB" lightbox="images/mac-device-control-lookup-3.png":::
+    
 
 1. En **Árbol de dispositivos USB**, navega hasta el dispositivo USB que conectaste.
 
-    ![Detalles de un dispositivo USB.](images/mac-device-control-lookup-4.png)
+   :::image type="content" source="images/mac-device-control-lookup-4.png" alt-text="Los detalles de un dispositivo USB" lightbox="images/mac-device-control-lookup-4.png":::
 
 1. Se muestran el id. de proveedor, el id. de producto y el número de serie. Al agregar el identificador de proveedor y el id. de producto a la directiva de medios extraíbles, solo debe agregar la parte después de `0x`. Por ejemplo, en la imagen siguiente, el id. de proveedor es `1000` y el id. de producto es `090c`.
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams
 description: Cómo Teams se instala en dispositivos y se actualiza después
-keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación, aplicaciones, aplicaciones de línea de negocio, aplicaciones de línea de negocio, aplicaciones de LOB
+keywords: Microsoft Managed Desktop, Microsoft 365, servicio, documentación, aplicaciones, aplicaciones de línea de negocio, aplicaciones de línea de negocio, aplicaciones de LOB
 ms.service: m365-md
 author: tiaraquan
 ms.localizationpriority: medium
@@ -10,12 +10,12 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 audience: ITPro
-ms.openlocfilehash: 3dfdd9f5187fba9a1e19e56a4df24cf1f7eff44b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 469edf3e8ae856ea6e94bada8ffb9d6c97ba8b66
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322441"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634479"
 ---
 # <a name="microsoft-teams"></a>Microsoft Teams
 
@@ -27,20 +27,17 @@ La mayoría de los proveedores de hardware aún no incluyen Teams como parte de 
 
 ### <a name="microsoft-intune-changes"></a>Microsoft Intune cambios
 
-Microsoft Managed Desktop agrega dos aplicaciones a su Azure AD organización para Microsoft Teams. Se implementan en clientes de 64 o 32 bits según corresponda para el dispositivo:  
-
-- Modern Workplace: Teams Machine Wide Installer x64  
-- Modern Workplace: Teams Machine Wide Installer x32
+Microsoft Managed Desktop agrega Microsoft Teams a su inquilino: Modern Workplace - Teams Machine Wide Installer x64  
 
 ## <a name="updates"></a>Actualizaciones
 
 Teams sigue una ruta de actualización independiente de Aplicaciones Microsoft 365 para empresas. El cliente de escritorio se actualiza automáticamente. Teams busca actualizaciones cada pocas horas, las descarga y, a continuación, espera a que el equipo esté inactivo antes de instalar la actualización de forma silenciosa.  
 
-El Teams producto no permite a los administradores controlar las actualizaciones, por lo que Microsoft Managed Desktop usa el [canal de actualización automática estándar](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating).
+El Teams producto no permite a los administradores controlar las actualizaciones, por lo que Microsoft Managed Desktop el [canal de actualización automática estándar](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating).
 
 ### <a name="manually-updating-teams"></a>Actualización manual de Teams
 
-Los usuarios individuales también pueden descargar actualizaciones. En la parte superior derecha de la aplicación, en la lista desplegable Perfil, selecciona **Buscar actualizaciones**. Si hay una actualización disponible, se descargará y se instalará silenciosamente cuando el equipo esté inactivo.
+Los usuarios individuales también pueden descargar actualizaciones. En la parte superior derecha de la aplicación, en la lista desplegable Perfil, selecciona **Buscar actualizaciones**. Si hay una actualización disponible, se descargará y se instalará de forma silenciosa cuando el equipo esté inactivo.
 
 ## <a name="delivery-optimization-of-updates"></a>Optimización de entrega de actualizaciones
 

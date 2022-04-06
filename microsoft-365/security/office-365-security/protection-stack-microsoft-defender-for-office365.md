@@ -14,12 +14,12 @@ description: Siga la ruta de un mensaje entrante a través de la pila de filtrad
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 62d7ac9f13f59fce3b635f6d1dace2f22ee7f503
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e7be5c66e0ca3841a8bc4fd76555feaeafb1bd17
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683831"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469039"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protección contra amenazas paso a paso en Microsoft Defender para Office 365
 
@@ -34,7 +34,7 @@ Desafortunadamente, los bloques perimetrales que antes eran *críticos* ahora so
 
 Los bloques perimetrales están diseñados para ser automáticos. En el caso de falso positivo, se notificará a los remitentes y se les indica cómo solucionar su problema. Los conectores de socios de confianza con reputación limitada pueden garantizar la entrega, o se pueden establecer invalidaciones temporales, al incorporar nuevos puntos de conexión.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="La fase 1 del filtrado en Defender for Office 365 es Protección perimetral.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="El filtrado de fase 1 en Defender para Office 365" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png":::
 
 1. **La limitación de** red protege Office 365 infraestructura y clientes de ataques por denegación de servicio (DOS) limitando el número de mensajes que puede enviar un conjunto específico de infraestructura.
 
@@ -52,7 +52,7 @@ Los bloques perimetrales están diseñados para ser automáticos. En el caso de 
 
 Las características de la inteligencia del remitente son fundamentales para capturar mensajes de correo no deseado, masivos, suplantación y suplantación no autorizados, y también tienen en cuenta la detección de phish. La mayoría de estas características se pueden configurar individualmente.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="La fase 2 del filtrado en Defender para Office 365 es la inteligencia del remitente.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="La fase 2 del filtrado en Defender para Office 365 es la inteligencia del remitente" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png":::
 
 1. **Los desencadenadores y** alertas de detección de riesgo de cuentas se desencadenan cuando una cuenta tiene un comportamiento anómalo, coherente con el riesgo. En algunos casos, la cuenta de usuario se bloquea e impide enviar más mensajes de correo electrónico hasta que el equipo de operaciones de seguridad de una organización resuelva el problema.
 
@@ -82,7 +82,7 @@ Las características de la inteligencia del remitente son fundamentales para cap
 
 En esta fase, la pila de filtrado comienza a controlar el contenido específico del correo, incluidos sus hipervínculos y datos adjuntos.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="La fase 3 del filtrado en MDO es el filtrado de contenido.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="El filtrado de fase 3 en MDO es filtrado de contenido" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png":::
 
 1. **Las reglas** de transporte (también conocidas como reglas de flujo de correo o reglas de transporte de Exchange) permiten a un administrador realizar una amplia variedad de acciones cuando se cumple una amplia gama de condiciones para un mensaje. Todos los mensajes que fluyen a través de la organización se evalúan con las reglas de flujo de correo /reglas de transporte habilitadas.
 
@@ -110,7 +110,7 @@ En esta fase, la pila de filtrado comienza a controlar el contenido específico 
 
 La última fase tiene lugar después de la entrega de correo o archivo, actuando en correo que se encuentra en varios buzones y archivos y vínculos que aparecen en clientes como Microsoft Teams.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="La fase 4 del filtrado en Defender for Office 365 es la protección posterior a la entrega.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="El filtrado de fase 4 en Defender para Office 365 es la protección posterior a la entrega" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png":::
 
 1. **Vínculos seguros** es la protección de tiempo de clic de Defender para Office 365. Cada dirección URL de cada mensaje se ajusta para que apunte a los servidores de vínculos Caja fuerte Microsoft. Cuando se hace clic en una dirección URL, se comprueba con la reputación más reciente, antes de redirigir al usuario al sitio de destino. La dirección URL está asincrónicamente en espacio aislado para actualizar su reputación.
 
@@ -134,7 +134,7 @@ La última fase tiene lugar después de la entrega de correo o archivo, actuando
 
 El diagrama final (como con todas las partes del diagrama que lo componen) está sujeto a cambios a medida que *el producto crece y se desarrolla*. Marca esta página y **usa la opción** de comentarios que encontrarás en la parte inferior si necesitas preguntar después de las actualizaciones. Para los registros, esta es la pila con todas las fases en orden:
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Todas las fases de filtrado en Defender para Office 365 en orden, de 1 a 4.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Todas las fases de filtrado en Defender para Office 365 en orden, de 1 a 4" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png":::
 
 ## <a name="more-information"></a>Más información
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ba52d9587a2ac530eabeacf8c72336751a1a17d7
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 72d1aab8be071b5f4ec66988b35655571625b409
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767573"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477289"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de extensión de kernel en Microsoft Defender para endpoint en macOS
 
@@ -42,7 +42,7 @@ A partir de macOS High Sierra (10.13), macOS requiere que todas las extensiones 
 
 Si no aprobaba la extensión del kernel durante la implementación o instalación de Microsoft Defender para Endpoint en macOS, la aplicación muestra un banner que le pide que lo habilite:
 
-   ![Captura de pantalla deshabilitada de RTP.](images/mdatp-32-main-app-fix.png)
+:::image type="content" source="images/mdatp-32-main-app-fix.png" alt-text="RTP deshabilitado" lightbox="images/mdatp-32-main-app-fix.png":::
 
 También puede ejecutar ```mdatp health```. Informa si la protección en tiempo real está habilitada pero no está disponible. Esto indica que la extensión del kernel no está aprobada para ejecutarse en el dispositivo.
 
@@ -71,7 +71,7 @@ Si han transcurrido menos de 30 minutos desde que se instaló el producto,  \> v
 
 Si no ves este mensaje, significa que han transcurrido 30 o más minutos y la extensión del kernel aún no se ha aprobado para ejecutarse en el dispositivo:
 
-![Ventana de seguridad y privacidad después de que la captura de pantalla del mensaje haya expirado.](images/mdatp-33-securityprivacysettings-noprompt.png)
+:::image type="content" source="images/mdatp-33-securityprivacysettings-noprompt.png" alt-text="Ventana seguridad y privacidad después de expirar el mensaje" lightbox="images/mdatp-33-securityprivacysettings-noprompt.png":::
 
 En este caso, debe realizar los siguientes pasos para desencadenar de nuevo el flujo de aprobación.
 

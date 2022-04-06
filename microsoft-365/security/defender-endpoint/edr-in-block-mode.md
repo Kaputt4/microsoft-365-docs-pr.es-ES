@@ -15,15 +15,15 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.date: 04/04/2022
+ms.date: 04/01/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: eb40eaee9043e81331eca98c85f1467111cc37e4
-ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
+ms.openlocfilehash: 898d6de45830068ad300a64a3312cff3d5914323
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/04/2022
-ms.locfileid: "64638364"
+ms.locfileid: "64634303"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de Endpoint (EDR) en el modo bloqueo
 
@@ -115,6 +115,10 @@ También puede definir una exclusión para Antivirus de Microsoft Defender. Cons
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>¿Necesito activar el EDR en modo de bloqueo si tengo Antivirus de Microsoft Defender en dispositivos?
 
 El objetivo principal de EDR en modo de bloqueo es corregir las detecciones posteriores a la infracción que no se han detectado en un producto antivirus que no es de Microsoft. Hay una ventaja mínima en la habilitación de EDR en modo de bloque cuando Antivirus de Microsoft Defender está en modo activo, ya que se espera que la protección en tiempo real captura y corrige las detecciones primero. Se recomienda habilitar EDR en modo de bloqueo en puntos de conexión en los que Microsoft Defender para Antivirus se ejecuta en modo pasivo. EDR las detecciones pueden corregirse automáticamente mediante la protección [pua](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) o mediante la investigación automatizada & [de](automated-investigations.md) corrección en modo de bloque.
+
+- Cuando Antivirus de Microsoft Defender está en modo pasivo, EDR en modo de bloque proporciona otra capa de defensa junto con Pertahanan Microsoft untuk Titik Akhir.
+
+- Cuando Antivirus de Microsoft Defender está en modo activo, EDR en modo de bloqueo no proporciona análisis adicional, pero permite a Antivirus de Microsoft Defender realizar acciones automáticas en detecciones posteriores a la infracción y de EDR comportamiento.
 
 ### <a name="will-edr-in-block-mode-affect-a-users-antivirus-protection"></a>¿EDR en modo de bloqueo afectará a la protección antivirus de un usuario?
 

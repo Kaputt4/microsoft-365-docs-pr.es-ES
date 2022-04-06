@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 75179fc3daf8e375ace6cc4c1566abf1e18cdfaa
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: ccb65b865afdf2a0ec0210c3593daee1cb5c09b6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560226"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476849"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Ejecutar y revisar los resultados de un análisis de Microsoft Defender sin Conexión
 
@@ -31,33 +31,33 @@ ms.locfileid: "61560226"
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender sin Conexión es una herramienta de análisis de antimalware que le permite arrancar y ejecutar un examen desde un entorno de confianza. El examen se ejecuta desde fuera del kernel de Windows normal para que pueda dirigirse a malware que intente omitir el shell de Windows, como virus y rootkits que infectan o sobrescriben el registro de arranque maestro (MBR).
+Microsoft Defender sin Conexión es una herramienta de detección de antimalware que permite arrancar y ejecutar un examen desde un entorno de confianza. El examen se ejecuta desde fuera del kernel de Windows normal para que pueda dirigirse a malware que intente omitir el shell de Windows, como virus y rootkits que infectan o sobrescriben el registro de arranque maestro (MBR).
 
-Puede usar Microsoft Defender sin Conexión si sospecha que hay una infección de malware o si desea confirmar una limpieza exhaustiva del extremo después de un brote de malware.
+Puede usar Microsoft Defender sin Conexión si sospecha una infección de malware o si desea confirmar una limpieza exhaustiva del extremo después de un brote de malware.
 
-En Windows 10 y Windows 11, Microsoft Defender sin Conexión puede ejecutarse con un solo clic directamente desde la [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md). En versiones anteriores de Windows, un usuario tenía que instalar Microsoft Defender sin Conexión en medios de arranque, reiniciar el extremo y cargar los medios de arranque.
+En Windows 10 y Windows 11, Microsoft Defender sin Conexión se puede ejecutar con un solo clic directamente desde la [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md). En versiones anteriores de Windows, un usuario tenía que instalar Microsoft Defender sin Conexión en medios de arranque, reiniciar el extremo y cargar los medios de arranque.
 
 ## <a name="prerequisites-and-requirements"></a>requisitos previos y requisitos
 
 Microsoft Defender sin Conexión en Windows 10 y Windows 11 tiene los mismos requisitos de hardware que Windows 10.
 
-Para obtener más información sobre Windows 10 y Windows 11 requisitos, consulte los siguientes temas:
+Para obtener más información Windows 10 y Windows 11 requisitos, vea los siguientes temas:
 
 - [Requisitos mínimos de hardware](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
 
 - [Directrices de componentes de hardware](/windows-hardware/design/component-guidelines/components)
 
 > [!NOTE]
-> Microsoft Defender sin Conexión no se admite en máquinas con procesadores ARM o en Windows unidades de mantenimiento de stock del servidor.
+> Microsoft Defender sin Conexión no se admite en máquinas con procesadores ARM o en Windows unidades de mantenimiento de stock de servidor.
 
 Para ejecutar Microsoft Defender sin Conexión desde el punto de conexión, el usuario debe haber iniciado sesión con privilegios de administrador.
 
 ## <a name="microsoft-defender-offline-updates"></a>Microsoft Defender sin Conexión actualizaciones
 
-Microsoft Defender sin Conexión las actualizaciones de protección más recientes disponibles en el punto de conexión; se actualiza siempre que Antivirus de Windows Defender se actualiza.
+Microsoft Defender sin Conexión las actualizaciones de protección más recientes disponibles en el punto de conexión; se actualiza siempre Antivirus de Windows Defender se actualiza.
 
 > [!NOTE]
-> Antes de ejecutar un examen sin conexión, debes intentar actualizar la protección antivirus de Microsoft Defender. Puede forzar una actualización con la directiva de grupo o, como es habitual, implementar actualizaciones en los puntos de conexión, o puede descargar e instalar manualmente las actualizaciones de protección más recientes de [la Centro de protección contra malware de Microsoft](https://www.microsoft.com/security/portal/definitions/adl.aspx).
+> Antes de ejecutar un examen sin conexión, debes intentar actualizar la protección antivirus de Microsoft Defender. Puede forzar una actualización con la directiva de grupo o bien implementar actualizaciones normalmente en los puntos de conexión, o puede descargar e instalar manualmente las actualizaciones de protección más recientes de la [Centro de protección contra malware de Microsoft](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
 Consulte el [tema Manage Antivirus de Microsoft Defender Security intelligence updates](manage-protection-updates-microsoft-defender-antivirus.md) para obtener más información.
 
@@ -69,21 +69,21 @@ La necesidad de realizar un examen sin conexión también se mostrará en Micros
 
 El mensaje puede producirse a través de una notificación, de forma similar a la siguiente:
 
-:::image type="content" source="../../media/notification.png" alt-text="Notificación para ejecutar Microsoft Defender sin Conexión.":::
+:::image type="content" source="../../media/notification.png" alt-text="Notificación para ejecutar Microsoft Defender sin Conexión" lightbox="../../media/notification.png":::
 
 También se notificará al usuario en el Windows Defender cliente.
 
-En Configuration Manager, puede identificar el estado de los puntos de conexión navegando a Monitoring **> Overview > Security > Endpoint Protection Status > System Center Endpoint Protection Status**.
+En Configuration Manager, puede identificar el estado de los puntos de conexión navegando a **Monitoring > Overview > Security > Endpoint Protection Status > System Center Endpoint Protection Status**.
 
-Microsoft Defender sin Conexión los exámenes se indican en Estado de corrección **de malware** como examen sin **conexión requerido.**
+Microsoft Defender sin Conexión los exámenes se indican en Estado de corrección **de malware** como **se requiere el examen sin conexión**.
 
-:::image type="content" source="../../media/sccm-wdo.png" alt-text="Microsoft Defender sin Conexión se requiere el examen.":::
+:::image type="content" source="../../media/sccm-wdo.png" alt-text="El indicador de un examen para Microsoft Defender sin Conexión" lightbox="../../media/sccm-wdo.png":::
 
 ## <a name="configure-notifications"></a>Configurar notificaciones
 
 Microsoft Defender sin Conexión las notificaciones se configuran en la misma configuración de directiva que otras notificaciones AV de Microsoft Defender.
 
-Para obtener más información acerca de las notificaciones en Windows Defender, vea el tema Configurar las notificaciones que [aparecen en los puntos de conexión.](configure-notifications-microsoft-defender-antivirus.md)
+Para obtener más información acerca de las notificaciones en Windows Defender, vea el tema Configurar las notificaciones que [aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md).
 
 ## <a name="run-a-scan"></a>Ejecutar un examen
 
@@ -106,11 +106,11 @@ Use los cmdlets siguientes:
 Start-MpWDOScan
 ```
 
-Consulte [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender Antivirus [cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Antivirus de Microsoft Defender.
+Consulte [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender Antivirus cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Antivirus de Microsoft Defender.
 
-### <a name="use-windows-management-instruction-wmi-to-run-an-offline-scan"></a>Usar Windows instrucción de administración de archivos (WMI) para ejecutar un examen sin conexión
+### <a name="use-windows-management-instruction-wmi-to-run-an-offline-scan"></a>Usar Windows de administración de datos (WMI) para ejecutar un examen sin conexión
 
-Use la [**MSFT_MpWDOScan**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para ejecutar un examen sin conexión.
+Use la [**clase MSFT_MpWDOScan**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para ejecutar un examen sin conexión.
 
 El siguiente fragmento de código de script WMI ejecutará inmediatamente un examen de Microsoft Defender sin Conexión, lo que hará que el extremo se reinicie, ejecute el examen sin conexión y, a continuación, reinicie y arranque en Windows.
 
@@ -124,18 +124,18 @@ Vea lo siguiente para obtener más información:
 
 ### <a name="use-the-windows-defender-security-app-to-run-an-offline-scan"></a>Usar la aplicación Windows Defender seguridad para ejecutar un examen sin conexión
 
-1. Abra la aplicación Seguridad de Windows haciendo clic en el icono de escudo de la barra de tareas o buscando en el menú inicio **de Defender for Cloud**.
+1. Abre la Seguridad de Windows haciendo clic en el icono de escudo de la barra de tareas o buscando en el menú inicio **de Defender para la nube**.
 
-2. Haga clic **en el icono protección contra &** virus (o en el icono de escudo de la barra de menús izquierda) y, a continuación, en la etiqueta **Examen** avanzado:
+2. Haga clic **en el icono protección contra &** virus (o en el icono de escudo de la barra de menús izquierda) y, a continuación, en la **etiqueta Examen** avanzado:
 
-3. Seleccione **Microsoft Defender sin Conexión y haga** clic en Examinar **ahora**.
+3. Seleccione **Microsoft Defender sin Conexión y haga** clic **en Examinar ahora**.
 
     > [!NOTE]
-    > En Windows 10, versión 1607, el examen sin conexión  podría ejecutarse desde Windows Configuración Actualizar & seguridad Windows Defender o desde el \>  \>  cliente Windows Defender.
+    > En Windows 10, versión 1607,  \> el examen sin conexión podría ejecutarse desde Windows Configuración **Actualizar** \> & seguridad Windows Defender o desde el cliente Windows Defender.
 
 ## <a name="review-scan-results"></a>Revisar los resultados del examen
 
-Microsoft Defender sin Conexión resultados del examen se mostrarán en la sección Historial [de análisis de la Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
+Microsoft Defender sin Conexión resultados del examen se mostrarán en la [sección Historial de análisis de la Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
 
 ## <a name="related-articles"></a>Artículos relacionados
 

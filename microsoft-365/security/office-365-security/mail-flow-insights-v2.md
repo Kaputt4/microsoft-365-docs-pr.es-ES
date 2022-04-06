@@ -14,12 +14,12 @@ description: Los administradores pueden obtener información sobre los conocimie
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 176681b5fe780f0aeb4a0c8502b3e919e7ebcadc
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: b5cc3eba5807838b0a797f606d8a6aa3c152f60c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682535"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476475"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 
@@ -32,7 +32,7 @@ ms.locfileid: "63682535"
 
 Los administradores pueden usar el panel flujo de correo en el Centro de seguridad & cumplimiento para detectar tendencias, información y realizar acciones para solucionar problemas relacionados con el flujo de correo en su organización.
 
-![Panel flujo de correo en el Centro de seguridad & cumplimiento.](../../media/mail-flow-dashboard-v2.png)
+:::image type="content" source="../../media/mail-flow-dashboard-v2.png" alt-text="Panel flujo de correo en el Centro de seguridad & cumplimiento" lightbox="../../media/mail-flow-dashboard-v2.png":::
 
 Las perspectivas disponibles son:
 

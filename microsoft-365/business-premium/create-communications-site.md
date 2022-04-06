@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre por qué y cómo crear un SharePoint de comunicaciones para su campaña o negocio con Microsoft 365.
-ms.openlocfilehash: d2634f8793c142cc34d6c1708481aa8e4df3184b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ba0f8f559bc8843a61baca1bbb6615c596ffdc65
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326333"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634391"
 ---
 # <a name="create-a-communications-site-in-sharepoint"></a>Crear un sitio de comunicaciones en SharePoint
 
@@ -40,9 +40,13 @@ Una forma excelente de comunicar prioridades, compartir documentos de estrategia
 Incluya los siguientes elementos en el sitio de comunicaciones:
 
 1. Agrega el logotipo y los colores como una imagen de encabezado y un tema.
+
 2. Lidera con tu estrategia, mensaje, documentos importantes, un directorio y preguntas frecuentes en un **elemento web de hero**.
+
 3. Incluya una instrucción CEO o candidate para el equipo en un **elemento web Text**.
+
 4. Agregue eventos a un **elemento web Eventos para** que todos puedan ver lo que se está acercando.
+
 5. Agregar fotos que los usuarios pueden usar o compartir en un **elemento web galería de imágenes**.
 
 ![Diagrama de una página SharePoint comunicaciones con espacio para elementos comunes que una campaña necesita.](../media/m365-democracy-comms-site.png)
@@ -58,7 +62,9 @@ Los siguientes vínculos para PowerPoint y PDF se pueden descargar e imprimir en
 ## <a name="set-it-up"></a>Configúrelo
 
 1. Inicie sesión en https://Office.com.
+
 2. En la esquina superior izquierda de la página, selecciona el icono del iniciador de aplicaciones y, a continuación **, selecciona el icono SharePoint** aplicación. Si no ve el icono SharePoint, haga clic en el icono Sitios o  en Todos si  SharePoint no está visible.
+
 3. En la parte superior de la SharePoint principal, haga clic **en + Crear sitio** y elija la **opción Sitio de** comunicación.
 
 Obtenga información [sobre los sitios de comunicaciones](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) y [cómo crear un sitio de comunicación en SharePoint Online](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb).

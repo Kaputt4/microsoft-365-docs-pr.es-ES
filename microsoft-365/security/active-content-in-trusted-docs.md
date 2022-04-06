@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX,NOFOLOW
 description: Los administradores pueden aprender a crear directivas para bloquear el contenido activo en Office documentos
-ms.openlocfilehash: 89f2e51253d3c2fda0140dd7be8bc86b1fda2cf5
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 33d53ab14fec1b6cd16b8de95befe8bc8a898e16
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682821"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468929"
 ---
 # <a name="manage-active-content-in-office-documents"></a>Administrar contenido activo en documentos de Office
 
@@ -35,17 +35,17 @@ Anteriormente, cuando los usuarios identificaban documentos como documentos de c
 
 La lógica actualizada del Centro de confianza se describe en el siguiente diagrama:
 
-:::image type="content" source="../media/office-trust-center-flow.png" alt-text="Un ejemplo de un diagrama de flujo que describe la lógica del centro de confianza en Microsoft 365 Defender portal" lightbox="../media/office-trust-center-flow.png":::
+:::image type="content" source="../media/office-trust-center-flow.png" alt-text="Gráfico de flujo que describe la lógica del centro de confianza en el portal Microsoft 365 Defender confianza" lightbox="../media/office-trust-center-flow.png":::
 
 1. Un usuario abre un Office que contiene contenido activo.
 
 2. Si el documento es de una ubicación de confianza, el documento se abre con el contenido activo habilitado. Si el documento no es de una ubicación de confianza, la evaluación continúa.
 
-3. Aquí es donde el comportamiento actualizado tiene efecto:
+3. Es aquí donde el comportamiento actualizado tiene efecto:
    - Anteriormente, la siguiente configuración evaluada habría sido si el usuario hubiera identificado este documento como un documento de confianza. Si lo hicieran, el documento se abriría con el contenido activo habilitado.
    - Ahora, si el usuario identificó el documento como un documento de confianza no se considera aquí (ahora en el paso 8).
 
-     Este es el cambio fundamental en el comportamiento: las directivas en la nube (paso 4), las directivas de grupo (paso 6) y la configuración local (paso  7) se comprueban antes de que se considere la designación de usuario de un documento de confianza. Si alguno de estos pasos bloquea el acceso al contenido activo  y ninguno de los pasos permite invalidaciones de usuario, la identificación del documento como documento de confianza es básicamente irrelevante.
+     El cambio fundamental en el comportamiento se describe de la siguiente manera: las directivas en la nube (paso 4), las directivas de grupo (paso 6) y la configuración local (paso 7) se comprueban antes de que se considere incluso la designación de usuario de un documento de confianza. Si alguno de estos pasos bloquea el acceso al contenido activo **y ninguno de** los pasos permite invalidaciones de usuario, la identificación del documento como documento de confianza es irrelevante.
 
 4. Las directivas en la nube se comprueban para ver si este tipo de contenido activo está permitido o bloqueado. Si el contenido activo no está bloqueado, la evaluación continúa en el paso 6.
 
@@ -143,7 +143,7 @@ Las tablas de las secciones siguientes describen la configuración que controla 
 |Macros|Excel|Examinar macros cifradas en Excel libros de Open XML|**Examinar macros cifradas (valor predeterminado)**|No|
 |Macros|Oficina|Permitir que VBA cargue referencias de tipolib por ruta de acceso desde ubicaciones de intranet que no son de confianza|**Disabled**|No|
 |Macros|Oficina|Seguridad de automatización|**Usar nivel de seguridad de macro de aplicación**|No|
-|Macros|Oficina|Deshabilitar comprobaciones de seguridad adicionales en las referencias de biblioteca VBA que pueden hacer referencia a ubicaciones no seguras en el equipo local|**Disabled**|No|
+|Macros|Oficina|Deshabilitar otras comprobaciones de seguridad en las referencias a bibliotecas VBA que pueden hacer referencia a ubicaciones no seguras en el equipo local|**Disabled**|No|
 |Macros|Oficina|Ámbito de examen de tiempo de ejecución de macros|**Habilitar para todos los documentos**|No|
 |Macros|Oficina|Solo confía en macros de VBA que usan firmas V3|No es una configuración de línea base de seguridad.|No|
 |Macros|Outlook|Outlook de seguridad|**Usar Outlook de grupo de seguridad**|Necesario para habilitar todas las Outlook GPO. <p> Se menciona como dependencia (esta directiva no bloquea el contenido activo en sí).|

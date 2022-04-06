@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 6effe1ffefaf7faeb90258163c539cdddcec2679
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 4425ee0a4ee9abb7c87be7ed45d9f5c94b84cdc6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64570005"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477025"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>Recomendaciones de directiva para proteger SharePoint sitios y archivos
 
-En este artículo se describe cómo implementar las directivas recomendadas Confianza cero identidad y acceso a dispositivos para proteger SharePoint y OneDrive para la Empresa. Esta guía se basa en las directivas [comunes de acceso a dispositivos y identidades](identity-access-policies.md).
+En este artículo se describe cómo implementar las directivas recomendadas de acceso a dispositivos y identidad de confianza cero para proteger SharePoint y OneDrive para la Empresa. Esta guía se basa en las directivas [comunes de acceso a dispositivos y identidades](identity-access-policies.md).
 
 Estas recomendaciones se basan en tres niveles diferentes de seguridad y protección para archivos SharePoint que se pueden aplicar en función de la granularidad de sus **necesidades: punto** de **partida, seguridad** empresarial y **especializada**. Puede obtener más información sobre estos niveles de seguridad y los sistemas operativos de cliente recomendados, a los que se hace referencia en estas recomendaciones [en la introducción](microsoft-365-policies-configurations.md).
 
@@ -60,7 +60,7 @@ En la tabla siguiente se enumeran las directivas que necesita revisar y actualiz
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>Usar restricciones aplicadas por la aplicación en SharePoint
 
-Si implementa controles de acceso en SharePoint, las directivas de acceso condicional se crean en Azure AD para decirle a Azure AD que aplique las directivas que configure en SharePoint. De forma predeterminada, esta directiva se aplica a todos los usuarios, pero solo afecta al acceso a los sitios que especifique mediante PowerShell al crear los controles de acceso en SharePoint. La directiva también se puede establecer en el ámbito de usuarios, grupos o sitios específicos.
+Si implementa controles de acceso en SharePoint, debe crear esta directiva de acceso condicional en Azure AD para que Azure AD aplique las directivas que configure en SharePoint. Esta directiva se aplica a todos los usuarios, pero solo afecta al acceso a los sitios que especifique con PowerShell al crear los controles de acceso en SharePoint.
 
 Para configurar esta directiva, vea "Bloquear o limitar el acceso a colecciones de sitios SharePoint o cuentas de OneDrive" en Controlar el acceso desde [dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices).
 

@@ -23,13 +23,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo estas recomendaciones de seguridad Microsoft 365 Empresa Premium afectan a los usuarios y protege sus datos.
-ms.openlocfilehash: cf0af6aab22c4a025a0c6b907fc3cade397d0dcc
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Obtenga información sobre cómo estas recomendaciones de seguridad Microsoft 365 Business Premium afectan a los usuarios y protege los datos.
+ms.openlocfilehash: f1c327badefcd7f5d7f1728489a8388e7e7925e8
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328475"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64635161"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>Cómo afectan estas recomendaciones de seguridad a los usuarios
 
@@ -42,7 +42,9 @@ Las recomendaciones de seguridad para Microsoft 365 en esta solución hacen que 
 Todos los usuarios deben tener en cuenta y usar estas prácticas de correo electrónico para ayudar a mantener su correo electrónico seguro:
 
 - Configura el correo electrónico para usar la autenticación multifactor con la aplicación de autenticación.
-- Compruebe los correos electrónicos legítimos y busque sugerencias de seguridad de La suplantación de identidad avanzada en Defender para Office 365 protección.
+
+- Compruebe los correos electrónicos legítimos y busque sugerencias de seguridad de la protección contra suplantación de identidad avanzada (Defender pre Office 365).
+
 - Abra solo vínculos y datos adjuntos seguros, tal como lo comprueban Caja fuerte vínculos y Caja fuerte datos adjuntos.
 
 Obtenga más información [sobre la autenticación multifactor](m365bp-multifactor-authentication.md) y [la suplantación de identidad (phishing) y otros ataques](m365-campaigns-phishing-and-attacks.md).
@@ -54,7 +56,9 @@ Descargue una [infografía con](m365-campaigns-protect-campaign-infographic.md) 
 Todos los usuarios que agregues a tu entorno tendrán que tardar unos minutos en configurar [iPhones y dispositivos Android](../business/set-up-mobile-devices.md) para que funcionen de forma segura:
 
 - Configura dispositivos para usar la autenticación multifactor con la aplicación de autenticación.
+
 - Usa aplicaciones móviles de Microsoft, incluidas Outlook Mobile, Word, OneDrive y otras aplicaciones de Microsoft de la tienda de aplicaciones. No se admiten las aplicaciones de correo nativas que se incluyen en dispositivos iPhone y Android. 
+
 - Requiere un PIN para que los usuarios desbloqueen su dispositivo.
 
 Después de configurar estos, se pedirá a los usuarios que usen la aplicación de autenticación al acceder a los datos de la organización en estos dispositivos, incluido el correo.
@@ -64,6 +68,7 @@ Después de configurar estos, se pedirá a los usuarios que usen la aplicación 
 También es importante que los usuarios mantengan actualizado su dispositivo de trabajo principal:
 
 - Instala las versiones más recientes de Office de escritorio y mantén esto actualizado con actualizaciones cuando se le solicite.
+
 - Manténgase al tanto de las actualizaciones del sistema operativo, como las Windows actualizaciones.
 
 Para [dispositivos Windows 10 y Mac](m365bp-protect-pcs-macs.md) no administrados, los usuarios tienen la responsabilidad de asegurarse de que las características de seguridad básicas están habilitadas.

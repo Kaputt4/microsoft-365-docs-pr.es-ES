@@ -1,7 +1,7 @@
 ---
 title: Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente
-description: Implemente el paquete de configuración en el dispositivo de infraestructura de escritorio virtual (VDI) para que se incorpore a Microsoft Defender para el servicio de extremo.
-keywords: configurar dispositivos de infraestructura de escritorio virtual (VDI), vdi, administración de dispositivos, configurar Microsoft Defender para endpoint, puntos de conexión
+description: Implemente el paquete de configuración en el dispositivo de infraestructura de escritorio virtual (VDI) para que se incorpore a Pertahanan Microsoft untuk Titik Akhir servicio.
+keywords: configurar dispositivos de infraestructura de escritorio virtual (VDI), vdi, administración de dispositivos, configurar Pertahanan Microsoft untuk Titik Akhir, puntos de conexión
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,14 +18,19 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 02/14/2022
 ms.technology: mde
-ms.openlocfilehash: 7342f368063c2c9024c4942c33a2e41f28eebd36
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: e292c2f1e0d01e51e3962b71a940927078ab95ad
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449826"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634721"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistentes en Microsoft 365 Defender
+
+La infraestructura de escritorio virtual (VDI) es un concepto de infraestructura de TI que permite a los usuarios finales acceder a instancias de escritorios virtuales empresariales desde casi cualquier dispositivo (como su equipo personal, smartphone o tableta), lo que elimina la necesidad de que la organización proporcione a los usuarios máquinas físicas. El uso de dispositivos VDI reduce los costos, ya que los departamentos de TI ya no son responsables de administrar, reparar y reemplazar puntos de conexión físicos. Los usuarios autorizados pueden acceder a los mismos servidores, archivos, aplicaciones y servicios de la empresa desde cualquier dispositivo aprobado a través de un explorador o cliente de escritorio seguro.
+
+Al igual que cualquier otro sistema en un entorno de TI, estos también deben tener una solución de detección y respuesta de puntos de conexión (EDR) y antivirus para protegerse contra amenazas y ataques avanzados.
+
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,32 +43,34 @@ ms.locfileid: "63449826"
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
  > [!NOTE]
-  > **VDI persistente** -  [La incorporación de una máquina VDI](configure-endpoints.md) persistente en Microsoft Defender para endpoint se controla de la misma forma que se incorporaría a una máquina física, como un equipo de escritorio o portátil. La directiva de grupo, Microsoft Endpoint Manager y otros métodos se pueden usar para incorporar una máquina persistente. En el portal Microsoft 365 Defender, (https://security.microsoft.com) en incorporación, seleccione el método de incorporación preferido y siga las instrucciones para ese tipo. 
+  > **VDI persistente** -  [La incorporación de una máquina VDI](configure-endpoints.md) persistente en Pertahanan Microsoft untuk Titik Akhir se controla de la misma manera que se incorporaría a una máquina física, como un equipo de escritorio o portátil. La directiva de grupo, Microsoft Endpoint Manager y otros métodos se pueden usar para incorporar una máquina persistente. En el portal Microsoft 365 Defender, (https://security.microsoft.com) en incorporación, seleccione el método de incorporación preferido y siga las instrucciones para ese tipo. 
 
 ## <a name="onboarding-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Incorporación de dispositivos de infraestructura de escritorio virtual (VDI) no persistentes
 
 Defender for Endpoint admite la incorporación de sesiones VDI no persistentes.
 
-Puede haber desafíos asociados al incorporar LOS VDIs. Los siguientes son los desafíos típicos de este escenario:
+Puede haber desafíos asociados al incorporar instancias de VDI. Los siguientes son los desafíos típicos de este escenario:
 
 - Incorporación anticipada instantánea de una sesión de corta duración, que debe incorporarse a Defender for Endpoint antes del aprovisionamiento real.
 - El nombre del dispositivo normalmente se reutiliza para nuevas sesiones.
 
-Los dispositivos VDI pueden aparecer en el portal de Defender for Endpoint como:
+En un entorno VDI, las instancias de VDI pueden tener una duración corta. Los dispositivos VDI pueden aparecer en el portal de Defender for Endpoint como:
 
-- Entrada única para cada dispositivo.
+
+- Entrada de portal único para cada instancia de VDI. Si la instancia VDI ya se incorporó a Pertahanan Microsoft untuk Titik Akhir y, en algún momento, se eliminó y, a continuación, se vuelve a crear con el mismo nombre de host, no se creará un nuevo objeto que represente esta instancia de VDI en el portal. 
+
 
   > [!NOTE]
   > En este caso, se debe *configurar el mismo* nombre de dispositivo cuando se crea la sesión, por ejemplo, mediante un archivo de respuesta desatendido.
 
-- Varias entradas para cada dispositivo: una para cada sesión.
+- Varias entradas para cada dispositivo: una para cada instancia de VDI.
 
 Los siguientes pasos le guiarán a través de la incorporación de dispositivos VDI y resaltarán los pasos para entradas únicas y múltiples.
 
 > [!WARNING]
 > En los entornos en los que hay configuraciones de recursos bajos, el procedimiento de arranque de VDI puede ralentizar la incorporación del sensor Defender for Endpoint.
 
-### <a name="for-windows-10-or-windows-11-or-windows-server-2012-r2-and-later"></a>Para Windows 10, o Windows 11, o Windows Server 2012 R2 y versiones posteriores
+### <a name="for-windows-10-or-windows-11-or-windows-server-2012-r2-and-later"></a>Para Windows 10, o Windows 11 o Windows Server 2012 R2 y versiones posteriores
 
 > [!NOTE]
 > Windows Server 2016 y Windows Server 2012 R2 tendrán que prepararse aplicando primero el paquete de instalación con las instrucciones de [Onboard Windows servers](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione.
@@ -83,12 +90,12 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
     2. Si estás implementando una sola entrada para cada dispositivo, copia tanto Onboard-NonPersistentMachine.ps1 como WindowsDefenderATPOnboardingScript.cmd.
 
     > [!NOTE]
-    > Si no ve la carpeta `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` , podría estar oculta. Tendrás que elegir la opción Mostrar **archivos y carpetas** ocultos en el Explorador de archivos.
+    > Si no ve la carpeta `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` , podría estar oculta. Tendrás que elegir la opción Mostrar **carpetas y archivos** ocultos de Explorador de archivos.
 
-3. Abra una ventana Editor de directivas de grupo local y vaya a **Configuración** \> del **equipo Windows Configuración** \> **inicio de scripts**\>.
+3. Abra una ventana Editor de directiva de grupo local y vaya a **Configuración** \> del **equipo Windows Configuración** \> **inicio de scripts**\>.
 
    > [!NOTE]
-   > La directiva de grupo de dominio también se puede usar para incorporar dispositivos VDI no persistentes.
+   > Los directiva de grupo dominio también se pueden usar para la incorporación de dispositivos VDI no persistentes.
 
 4. Según el método que quiera implementar, siga los pasos correspondientes:
     - Para una sola entrada para cada dispositivo:
@@ -115,7 +122,7 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
 ## <a name="for-downlevel-skus-windows-server-2008-r2"></a>Para SKU de nivel inferior (Windows Server 2008 R2)
 
 > [!NOTE]
-> Estas instrucciones para otras versiones de servidor Windows también se aplican si está ejecutando el anterior Microsoft Defender para endpoint para Windows Server 2016 y Windows Server 2012 R2 que requiere la MMA. Las instrucciones para migrar a la nueva solución unificada se encuentran en Escenarios de migración de [servidor en Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/server-migration).
+> Estas instrucciones para otras versiones Windows servidor también se aplican si está ejecutando el Pertahanan Microsoft untuk Titik Akhir anterior para Windows Server 2016 y Windows Server 2012 R2 que requiere la MMA. Las instrucciones para migrar a la nueva solución unificada se encuentran en escenarios de migración de [servidor en Pertahanan Microsoft untuk Titik Akhir](/microsoft-365/security/defender-endpoint/server-migration).
 
 > [!NOTE]
 > El registro siguiente es relevante solo cuando el objetivo es lograr una "entrada única para cada dispositivo".
@@ -182,4 +189,4 @@ Si el mantenimiento sin conexión no es una opción viable para el entorno VDI n
 - [Incorporar dispositivos Windows mediante Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Incorporar dispositivos Windows mediante herramientas de Administración de dispositivos móviles](configure-endpoints-mdm.md)
 - [Incorporar dispositivos Windows mediante un script local](configure-endpoints-script.md)
-- [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](troubleshoot-onboarding.md)
+- [Solucionar Pertahanan Microsoft untuk Titik Akhir problemas de incorporación](troubleshoot-onboarding.md)

@@ -19,12 +19,12 @@ ms.custom: ''
 description: Obtenga información sobre la forma correcta de migrar desde dispositivos o servicios de protección de terceros como Google Postini, el Firewall de virus y correo no deseado de Barracuda o Cisco IronPort a Microsoft Defender para Office 365 protección.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: af24829f8d3e4186de6e1c537d545515667627b8
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: ba82621e76665ee94d2a182e777ad1d222ef8e56
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682359"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477047"
 ---
 # <a name="migrate-from-a-third-party-protection-service-or-device-to-microsoft-defender-for-office-365"></a>Migrar desde un dispositivo o servicio de protección de terceros a Microsoft Defender para Office 365
 
@@ -37,7 +37,7 @@ En esta guía se proporcionan pasos específicos y que pueden realizarse para la
 
 - Ya tienes Microsoft 365 buzones de correo, pero actualmente estás usando un servicio o dispositivo de terceros para la protección de correo electrónico. El correo de Internet fluye por el servicio de protección antes de la entrega a la organización de Microsoft 365 y la protección de Microsoft 365 es lo más baja posible (nunca está completamente desactivada; por ejemplo, la protección contra malware siempre se aplica).
 
-  ![El correo fluye desde Internet a través del dispositivo o servicio de protección de terceros antes de la entrega Microsoft 365.](../../media/mdo-migration-before.png)
+  :::image type="content" source="../../media/mdo-migration-before.png" alt-text="El correo fluye desde Internet a través del dispositivo o servicio de protección de terceros antes de la entrega en Microsoft 365" lightbox="../../media/mdo-migration-before.png":::
 
 - Está fuera de la fase de investigación y consideración para la protección de Defender para Office 365. Si necesita evaluar Defender para Office 365 decidir si es adecuado para su organización, le recomendamos que considere el [modo de evaluación](office-365-evaluation.md).
 
@@ -45,13 +45,13 @@ En esta guía se proporcionan pasos específicos y que pueden realizarse para la
 
 - Debe retirar el servicio de protección de terceros existente, lo que significa que, en última instancia, tendrá que apuntar los registros MX de los dominios de correo electrónico a Microsoft 365. Cuando haya terminado, el correo de Internet fluirá directamente a Microsoft 365 y estará protegido exclusivamente por Exchange Online Protection (EOP) y Defender para Office 365.
 
-  ![Se eliminan los dispositivos o el servicio de protección existentes, por lo que el correo fluye de Internet a Microsoft 365, con protección completa de Microsoft Defender para Office 365.](../../media/mdo-migration-after.png)
+  :::image type="content" source="../../media/mdo-migration-after.png" alt-text="El correo fluye de Internet a Microsoft 365" lightbox="../../media/mdo-migration-after.png":::
 
 Eliminar el servicio de protección existente a favor de Defender para Office 365 es un gran paso que no debe tomar a la ligera ni debe apresurarse a realizar el cambio. Las instrucciones de esta guía de migración le ayudarán a realizar una transición ordenada de la protección con una interrupción mínima para los usuarios.
 
 Los pasos de migración de muy alto nivel se ilustran en el siguiente diagrama. Los pasos reales se enumeran en la sección Denominada [Proceso de migración](#the-migration-process) más adelante en este artículo.
 
-![Migre desde una solución o dispositivo de protección de terceros a Defender para Office 365.](../../media/mdo-migration-overview.png)
+:::image type="content" source="../../media/mdo-migration-overview.png" alt-text="El proceso de migración desde una solución de protección de terceros o un dispositivo a Defender para Office 365" lightbox="../../media/mdo-migration-overview.png":::
 
 ## <a name="why-use-the-steps-in-this-guide"></a>¿Por qué usar los pasos de esta guía?
 
@@ -74,7 +74,7 @@ Esta guía de migración le ofrece un plan para "girar gradualmente el marcado" 
 
 El proceso de migración de un servicio de protección de terceros a Defender para Office 365 puede dividirse en tres fases, tal como se describe en la tabla siguiente:
 
-![Proceso de migración a Defender para Office 365.](../../media/phase-diagrams/migration-phases.png)
+:::image type="content" source="../../media/phase-diagrams/migration-phases.png" alt-text="Proceso de migración a Defender para Office 365" lightbox="../../media/phase-diagrams/migration-phases.png":::
 
 |Fase|Descripción|
 |---|---|

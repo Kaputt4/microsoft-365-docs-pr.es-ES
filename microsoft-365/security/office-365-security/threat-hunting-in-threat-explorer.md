@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: de9121320e339ecff2b665737a6b4ccebe5e0fd0
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 5b6662a3268fa6ab83c103eb84cd1d77ab06d37d
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933784"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476409"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Búsqueda de amenazas en el Explorador de amenazas para Microsoft Defender para Office 365
 
@@ -34,16 +34,16 @@ En este artículo:
 - [Mejoras en la experiencia de búsqueda de amenazas](#improvements-to-threat-hunting-experience)
 
 > [!NOTE]
-> Esto forma parte de una serie de **3** artículos sobre explorador de amenazas **(Explorer),** seguridad de correo electrónico y detecciones de Explorador y tiempo real (como **diferencias** entre las herramientas y los permisos necesarios para operarlas). Los otros dos artículos de esta serie son Seguridad de correo [electrónico con](email-security-in-microsoft-defender.md) el Explorador de amenazas y el Explorador de amenazas y [detecciones en tiempo real.](real-time-detections.md)
+> Esto forma parte de una serie de **3** artículos sobre el Explorador de amenazas **,** la seguridad del correo electrónico y las detecciones de Explorador y tiempo real (como las **diferencias** entre las herramientas y los permisos necesarios para operarlas). Los otros dos artículos de esta serie son Seguridad de correo [electrónico con el](email-security-in-microsoft-defender.md) Explorador de amenazas y el Explorador de amenazas [y detecciones en tiempo real](real-time-detections.md).
 
 
 **Se aplica a**
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Si su organización tiene [Microsoft Defender](defender-for-office-365.md)para Office 365 y tiene los [permisos,](#required-licenses-and-permissions)puede usar detecciones en tiempo **real** o **explorador** para detectar y corregir amenazas.
+Si su organización tiene [Microsoft Defender](defender-for-office-365.md) para Office 365 y tiene los [permisos, puede](#required-licenses-and-permissions) usar detecciones en tiempo **real** o **explorador** para detectar y corregir amenazas.
 
-En el portal Microsoft 365 Defender en , vaya a Correo electrónico & colaboración y, a continuación, elija Explorador o <https://security.microsoft.com> **Detecciones en tiempo real**.   Para ir directamente a la página, use <https://security.microsoft.com/threatexplorer> o <https://security.microsoft.com/realtimereports> .
+En el portal Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico & colaboración** y, a continuación, elija **Explorador** o **Detecciones en tiempo real**. Para ir directamente a la página, use <https://security.microsoft.com/threatexplorer> o <https://security.microsoft.com/realtimereports>.
 
 Con estas herramientas, puede:
 
@@ -52,97 +52,98 @@ Con estas herramientas, puede:
 - Iniciar un proceso automatizado de investigación y respuesta desde una vista en el Explorador
 - Investigar correo electrónico malintencionado y mucho más
 
-Para obtener más información, vea [Email security with Threat Explorer](email-security-in-microsoft-defender.md).
+Para obtener más información, consulta [Seguridad de correo electrónico con el Explorador de amenazas](email-security-in-microsoft-defender.md).
 
 ## <a name="threat-explorer-walk-through"></a>Paso a paso del Explorador de amenazas
 
 En Microsoft Defender para Office 365, hay dos planes de suscripción: plan 1 y plan 2. Las herramientas de búsqueda de amenazas operadas manualmente existen en ambos planes, con nombres diferentes y con capacidades diferentes.
 
-Defender for Office 365 Plan 1 usa detecciones en tiempo *real,* que es un subconjunto de la herramienta de búsqueda Explorador de amenazas *(también* denominada *Explorador)* del Plan 2. En esta serie de artículos, la mayoría de los ejemplos se crearon con el Explorador de amenazas completo. Los administradores deben probar los pasos de las detecciones en tiempo real para ver dónde se aplican.
+Defender for Office 365 Plan 1 usa detecciones en tiempo *real*, que es un subconjunto de la herramienta de búsqueda explorador de *amenazas (también* denominada *Explorador*) del Plan 2. En esta serie de artículos, la mayoría de los ejemplos se crearon con el Explorador de amenazas completo. Los administradores deben probar los pasos de las detecciones en tiempo real para ver dónde se aplican.
 
-Después de ir al **Explorador**, de forma predeterminada, llegarás  a la página **Malware,** pero usa la lista desplegable Ver para familiarizarte con tus opciones. Si estás buscando phishing o buscando en una campaña de amenazas, elige esas vistas.
-
-> [!div class="mx-imgBorder"]
-> ![Vista desplegable en el Explorador de amenazas.](../../media/view-drop-down.png)
-
-Una vez que una persona de operaciones de seguridad (Operaciones de sec) selecciona los datos que desea ver, si el  ámbito es una vista estrecha como **envíos** de usuario o una vista más amplia, como Todo el correo **electrónico,** puede usar el botón Remitente para filtrar aún más. Recuerde seleccionar Actualizar para completar las acciones de filtrado.
+Después de ir al **Explorador**, de forma predeterminada, llegarás a la página **Malware**, pero usa la lista  desplegable Ver para familiarizarte con tus opciones. Si estás buscando phishing o buscando en una campaña de amenazas, elige esas vistas.
 
 > [!div class="mx-imgBorder"]
-> ![Botón Remitente en el Explorador de amenazas.](../../media/sender-drop-down.png)
+> :::image type="content" source="../../media/view-drop-down.png" alt-text="La lista desplegable Ver en el Explorador de amenazas" lightbox="../../media/view-drop-down.png":::
 
-El enfoque de refinamiento en el Explorador o la detección en tiempo real se puede pensar en capas. El primero es **View**. El segundo se puede pensar como un *foco filtrado.* Por ejemplo, puede volver a seguir los pasos que realizó para encontrar una amenaza registrando sus decisiones como esta: Para encontrar el problema en el Explorador, elegí la vista malware con un foco de filtro **de destinatarios**. Esto facilita el retraso de los pasos.
+Una vez que una persona de operaciones de seguridad (Operaciones de sec) selecciona los datos que desea ver, si el ámbito es una vista estrecha como **envíos** de usuario o una vista más amplia, como Todo el  correo **electrónico, puede** usar el botón Remitente para filtrar aún más. Recuerde seleccionar Actualizar para completar las acciones de filtrado.
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/sender-drop-down.png" alt-text="El botón Remitente en el Explorador de amenazas" lightbox="../../media/sender-drop-down.png":::
+
+
+El enfoque de refinamiento en el Explorador o la detección en tiempo real se puede pensar en capas. El primero es **View**. El segundo se puede pensar como un *foco filtrado*. Por ejemplo, puede volver a seguir los pasos que realizó para encontrar una amenaza registrando sus decisiones como esta: Para encontrar el problema en el Explorador, elegí la Vista de malware con un foco de filtro **de destinatarios**. Esto facilita el retraso de los pasos.
 
 > [!TIP]
-> Si Sec Ops usa **etiquetas** para marcar cuentas que consideren destinos de alto valor, pueden realizar selecciones como La vista de suplantación de identidad con un foco de filtro *etiquetas (incluir* un intervalo de fechas si se usa). Esto les mostrará los intentos de suplantación de identidad dirigidos a sus objetivos de usuario de alto valor durante un intervalo de tiempo (como las fechas en las que ciertos ataques de suplantación de identidad están sucediendo mucho para su sector).
+> Si Sec Ops **usa etiquetas** para marcar cuentas que consideren destinos de alto valor, pueden realizar selecciones como La vista de suplantación de identidad con un foco de filtro *etiquetas (* incluir un intervalo de fechas si se usa).. Esto les mostrará los intentos de suplantación de identidad dirigidos a sus objetivos de usuario de alto valor durante un intervalo de tiempo (como las fechas en las que ciertos ataques de suplantación de identidad están sucediendo mucho para su sector).
 
-Los refinamientos se pueden realizar en intervalos de fechas mediante los controles de intervalo de fechas. Aquí puede ver explorador en la vista **Malware,** con un foco de filtro **de tecnología** de detección. Pero es el botón **Filtro** avanzado el que permite a los equipos de Sec Ops profundizar.
+Los refinamientos se pueden realizar en intervalos de fechas mediante los controles de intervalo de fechas. Aquí puede ver explorador en la vista **Malware** , con un foco **de filtro de tecnología** de detección. Pero es el botón **Filtro** avanzado el que permite a los equipos de Sec Ops profundizar.
 
 > [!div class="mx-imgBorder"]
-> ![Filtro avanzado en el Explorador de amenazas.](../../media/advanced-filter.png)
+> :::image type="content" source="../../media/advanced-filter.png" alt-text="Filtro avanzado en el Explorador de amenazas" lightbox="../../media/advanced-filter.png":::
 
 Al hacer **clic en** el filtro Avanzado, aparece un panel que permitirá a los cazacarros de Sec Ops crear consultas por sí mismos, lo que les permite incluir o excluir la información que necesitan ver. Tanto el gráfico como la tabla de la página Explorador reflejarán sus resultados.
 
 > [!div class="mx-imgBorder"]
-> ![Resultados de una consulta.](../../media/threat-explorer-chart-table.png)
+> :::image type="content" source="../../media/threat-explorer-chart-table.png" alt-text="Los resultados de una consulta" lightbox="../../media/threat-explorer-chart-table.png":::
 
 Use el **botón Opciones de** columna para obtener el tipo de información de la tabla que sería más útil:
 
 > [!div class="mx-imgBorder"]
-> ![Botón De opciones de columna resaltado.](../../media/threat-explorer-column-options.png)
+> :::image type="content" source="../../media/threat-explorer-column-options.png" alt-text="El botón Opciones de columna resaltado" lightbox="../../media/threat-explorer-column-options.png":::
 
 > [!div class="mx-imgBorder"]
-> ![Opciones disponibles en Columnas.](../../media/column-options.png)
+> :::image type="content" source="../../media/column-options.png" alt-text="Las opciones disponibles en Columnas" lightbox="../../media/column-options.png":::
 
-En el mismo mien, asegúrate de probar las opciones de visualización. Diferentes audiencias reaccionarán bien a diferentes presentaciones de los mismos datos. Para algunos visores, el mapa **Orígenes** de correo electrónico puede mostrar que una amenaza es generalizada o discreta más rápidamente que la opción Mostrar **campaña** justo al lado. Sec Ops puede hacer uso de estas pantallas para hacer puntos que subrayan la necesidad de seguridad y protección, o para la comparación posterior, para demostrar la eficacia de sus acciones.
-
-> [!div class="mx-imgBorder"]
-> ![Mapa orígenes de correo electrónico.](../../media/threat-explorer-email-origin-map.png)
+En el mismo mien, asegúrate de probar las opciones de visualización. Diferentes audiencias reaccionarán bien a diferentes presentaciones de los mismos datos. Para algunos visores, el mapa **Orígenes** de correo electrónico puede mostrar que una amenaza es generalizada o discreta más rápidamente que la opción **Mostrar campaña justo** al lado. Sec Ops puede hacer uso de estas pantallas para hacer puntos que subrayan la necesidad de seguridad y protección, o para la comparación posterior, para demostrar la eficacia de sus acciones.
 
 > [!div class="mx-imgBorder"]
-> ![Opciones de presentación de campaña.](../../media/threat-explorer-campaign-display.png)
+> :::image type="content" source="../../media/threat-explorer-email-origin-map.png" alt-text="El mapa Orígenes de correo electrónico" lightbox="../../media/threat-explorer-email-origin-map.png":::
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/threat-explorer-campaign-display.png" alt-text="Opciones de presentación de campaña" lightbox="../../media/threat-explorer-campaign-display.png":::
 
 ### <a name="email-investigation"></a>Investigación de correo electrónico
 
 Cuando vea un correo electrónico sospechoso, haga clic en el nombre para expandir el menú desplegable a la derecha. Aquí, está disponible el banner que permite a las Operaciones de Sec ver la página [de entidad de correo](mdo-email-entity-page.md) electrónico.
 
-La página de entidad de correo electrónico reúne contenidos que se pueden encontrar en **Detalles**, **Datos adjuntos** **,** Dispositivos, pero incluye datos más organizados. Esto incluye aspectos como los resultados de DMARC, la presentación de texto sin formato del encabezado de correo electrónico con una opción de copia, la información de veredicto sobre los datos adjuntos que se detonaron de forma segura y los archivos que se eliminaron (pueden incluir direcciones IP que se han contactado y capturas de pantalla de páginas o archivos). Las direcciones URL y sus veredictos también se enumeran con detalles similares notificados.
+La página de entidad de correo electrónico reúne contenidos que se pueden encontrar en **Detalles**, **Datos** **adjuntos**, Dispositivos, pero incluye datos más organizados. Esto incluye aspectos como los resultados de DMARC, la presentación de texto sin formato del encabezado de correo electrónico con una opción de copia, la información de veredicto sobre los datos adjuntos que se detonaron de forma segura y los archivos que se eliminaron (pueden incluir direcciones IP que se han contactado y capturas de pantalla de páginas o archivos). Las direcciones URL y sus veredictos también se enumeran con detalles similares notificados.
 
-Cuando llegue a esta fase, la página de entidad de correo electrónico será fundamental para el paso final:*corrección*.
+Cuando llegue a esta fase, la página de entidad de correo electrónico será fundamental para el paso final: *la corrección*.
 
 > [!div class="mx-imgBorder"]
-> ![Página de entidad de correo electrónico.](../../media/threat-explorer-email-entity-page.png)
+> :::image type="content" source="../../media/threat-explorer-email-entity-page.png" alt-text="La página de entidad de correo electrónico" lightbox="../../media/threat-explorer-email-entity-page.png":::
 
 > [!TIP]
-> Para obtener más información sobre la página  de entidad de correo electrónico enriquecido (que se ve a continuación en la pestaña Análisis), incluidos los resultados de los datos adjuntos detonados, los resultados de las direcciones URL incluidas y la vista previa de correo electrónico seguro, haga clic [aquí](mdo-email-entity-page.md).
+> Para obtener más información sobre la página de entidad de correo electrónico enriquecido (que se muestra a continuación en la pestaña Análisis), incluidos los resultados de los datos adjuntos detonados, los resultados de las direcciones URL incluidas y la vista previa de correo electrónico seguro, haga clic [aquí](mdo-email-entity-page.md).
 
 > [!div class="mx-imgBorder"]
-> ![Ficha Análisis de la página de entidad de correo electrónico.](../../media/threat-explorer-analysis-tab.png)
+> :::image type="content" source="../../media/threat-explorer-analysis-tab.png" alt-text="La pestaña Análisis de la página de entidad de correo electrónico" lightbox="../../media/threat-explorer-analysis-tab.png":::
 
 ### <a name="email-remediation"></a>Corrección de correo electrónico
 
 Una vez que una persona de Operaciones de Sec determina que un correo electrónico es una amenaza, el siguiente paso de detección en tiempo real o explorador se ocupa de la amenaza y la corrige. Esto se puede hacer volviendo al Explorador de amenazas, seleccionando la casilla del correo electrónico del problema y usando el **botón** Acciones.
 
 > [!div class="mx-imgBorder"]
-> ![Botón Acciones en el Explorador de amenazas.](../../media/threat-explorer-email-actions-button.png)
+> :::image type="content" source="../../media/threat-explorer-email-actions-button.png" alt-text="El botón Acciones del Explorador de amenazas" lightbox="../../media/threat-explorer-email-actions-button.png":::
 
 Aquí, el analista puede realizar acciones como notificar el correo como correo no deseado, suplantación de identidad o malware, ponerse en contacto con destinatarios o realizar investigaciones adicionales que pueden incluir activar libros de juegos de investigación y respuesta automatizadas (o AIR) (si tienes plan 2). O bien, el correo también puede ser notificado como limpio.
 
 > [!div class="mx-imgBorder"]
-> ![La lista desplegable Acciones.](../../media/threat-explorer-email-actions-drop-down.png)
+> :::image type="content" source="../../media/threat-explorer-email-actions-drop-down.png" alt-text="La lista desplegable Acciones" lightbox="../../media/threat-explorer-email-actions-drop-down.png":::
 
 ## <a name="improvements-to-threat-hunting-experience"></a>Mejoras en la experiencia de búsqueda de amenazas
 
 ### <a name="alert-id"></a>Id. de alerta
 
-Al navegar desde una alerta al Explorador de amenazas, **la vista** se filtrará mediante el identificador **de alerta**. Esto también se aplica en la detección en tiempo real. Se muestran los mensajes relevantes para la alerta específica y un total de correo electrónico (un recuento). Podrás ver si un mensaje formaba parte de una alerta, así como navegar de ese mensaje a la alerta relacionada.
+Al navegar desde una alerta al Explorador de amenazas, **el identificador** de alerta filtrará la **vista.** Esto también se aplica en la detección en tiempo real. Se muestran los mensajes relevantes para la alerta específica y un total de correo electrónico (un recuento). Podrás ver si un mensaje formaba parte de una alerta, así como navegar de ese mensaje a la alerta relacionada.
 
 Por último, el identificador de alerta se incluye en la dirección URL, por ejemplo: `https://https://security.microsoft.com/viewalerts`
 
 > [!div class="mx-imgBorder"]
-> ![Filtrado del identificador de alerta.](../../media/AlertID-Filter.png)
+> :::image type="content" source="../../media/AlertID-Filter.png" alt-text="El filtro para el identificador de alerta" lightbox="../../media/AlertID-Filter.png":::
 
 > [!div class="mx-imgBorder"]
-> ![Identificador de alerta en el menú desplegable de detalles.](../../media/AlertID-DetailsFlyout.png)
+> :::image type="content" source="../../media/AlertID-DetailsFlyout.png" alt-text="El identificador de alerta en el menú desplegable de detalles" lightbox="../../media/AlertID-DetailsFlyout.png":::
 
 ### <a name="extending-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants"></a>Ampliar el límite de búsqueda y retención de datos del Explorador (y detecciones en tiempo real) para inquilinos de prueba
 
@@ -157,7 +158,7 @@ El número de registros de correos electrónicos que se pueden exportar desde el
 > [!NOTE]
 > La característica de etiquetas de usuario está en Versión preliminar y puede que no esté disponible para todos. Además, las vistas previas están sujetas a cambios. Para obtener información acerca de la programación de lanzamiento, consulte el mapa de ruta Microsoft 365 versión.
 
-Las etiquetas de usuario identifican grupos específicos de usuarios en Microsoft Defender para Office 365. Para obtener más información acerca de las etiquetas, incluidas las licencias y la configuración, vea [Etiquetas de usuario](user-tags.md).
+Las etiquetas de usuario identifican grupos específicos de usuarios en Microsoft Defender para Office 365. Para obtener más información acerca de las etiquetas, incluidas las licencias y la configuración, consulte [Etiquetas de usuario](user-tags.md).
 
 En el Explorador de amenazas, puede ver información sobre las etiquetas de usuario en las siguientes experiencias.
 
@@ -166,7 +167,7 @@ En el Explorador de amenazas, puede ver información sobre las etiquetas de usua
 Cuando los analistas miran la columna **Etiquetas** de la cuadrícula de correo electrónico, están viendo todas las etiquetas que se han aplicado a buzones de remitente o destinatario. De forma predeterminada, las etiquetas del sistema como *las cuentas* de prioridad se muestran primero.
 
 > [!div class="mx-imgBorder"]
-> ![Filtrar etiquetas en la vista cuadrícula de correo electrónico.](../../media/tags-grid.png)
+> :::image type="content" source="../../media/tags-grid.png" alt-text="La vista Filtrar etiquetas en la cuadrícula de correo electrónico" lightbox="../../media/tags-grid.png":::
 
 #### <a name="filtering"></a>Filtrado
 
@@ -175,21 +176,21 @@ Las etiquetas se pueden usar como filtros. Buscar solo entre cuentas de priorida
 [![Etiquetas de filtro.](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![No filtrar etiquetas.](../../media/tags-filter-not.png)
+> :::image type="content" source="../../media/tags-filter-not.png" alt-text="Las etiquetas que no se han filtrado" lightbox="../../media/tags-filter-not.png":::
 
 #### <a name="email-detail-flyout"></a>Flyout de detalles de correo electrónico
 
-Para ver las etiquetas individuales del remitente y el destinatario, seleccione un correo electrónico para abrir el control desplegable de detalles del mensaje. En la **pestaña Resumen,** las etiquetas de remitente y destinatario se muestran por separado. La información sobre las etiquetas individuales del remitente y el destinatario se puede exportar como datos CSV.
+Para ver las etiquetas individuales del remitente y el destinatario, seleccione un correo electrónico para abrir el control desplegable de detalles del mensaje. En la **pestaña Resumen** , las etiquetas de remitente y destinatario se muestran por separado. La información sobre las etiquetas individuales del remitente y el destinatario se puede exportar como datos CSV.
 
 > [!div class="mx-imgBorder"]
-> ![Etiquetas de detalles de correo electrónico.](../../media/tags-flyout.png)
+> :::image type="content" source="../../media/tags-flyout.png" alt-text="Las etiquetas Detalles del correo electrónico" lightbox="../../media/tags-flyout.png":::
 
-La información de etiquetas también se muestra en el control desplegable de clics de dirección URL. Para verlo, vaya a la vista Phish o All Email > **url url** **clicks** tab. Seleccione un control desplegable de dirección URL individual para ver detalles adicionales acerca de los clics de esa dirección URL, incluidas las etiquetas asociadas con ese clic.
+La información de etiquetas también se muestra en el control desplegable de clics de dirección URL. Para verlo, vaya a la vista Phish o All Email > **url url clicks** tab. Seleccione un control desplegable de dirección URL individual para ver detalles adicionales acerca de los clics de esa dirección URL, incluidas las etiquetas asociadas con ese clic.
 
 ### <a name="updated-timeline-view"></a>Vista de escala de tiempo actualizada
 
 > [!div class="mx-imgBorder"]
-> ![Etiquetas URL.](../../media/tags-urls.png)
+> :::image type="content" source="../../media/tags-urls.png" alt-text="Etiquetas url" lightbox="../../media/tags-urls.png":::
 >
 Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4).
 
@@ -197,33 +198,33 @@ Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=UoVz
 
 ### <a name="top-targeted-users"></a>Principales usuarios dirigidos
 
-Las principales familias de malware muestran los principales usuarios **dirigidos** en la sección Malware. Los principales usuarios dirigidos también se extenderán a través de las vistas Phish y All Email. Los analistas podrán ver los cinco primeros usuarios dirigidos, junto con el número de intentos de cada usuario en cada vista.
+Las principales familias de malware muestran **los principales usuarios dirigidos** en la sección Malware. Los principales usuarios dirigidos también se extenderán a través de las vistas Phish y All Email. Los analistas podrán ver los cinco primeros usuarios dirigidos, junto con el número de intentos de cada usuario en cada vista.
 
 Las personas de operaciones de seguridad pueden exportar la lista de usuarios dirigidos, hasta un límite de 3.000, junto con el número de intentos realizados, para el análisis sin conexión para cada vista de correo electrónico. Además, al seleccionar el número de intentos (por ejemplo, 13 intentos en la imagen siguiente) se abrirá una vista filtrada en el Explorador de amenazas, para que pueda ver más detalles entre correos electrónicos y amenazas para ese usuario.
 
 > [!div class="mx-imgBorder"]
-> ![Principales usuarios dirigidos.](../../media/Top_Targeted_Users.png)
+> :::image type="content" source="../../media/Top_Targeted_Users.png" alt-text="Los usuarios más dirigidos" lightbox="../../media/Top_Targeted_Users.png":::
 
 ### <a name="exchange-transport-rules"></a>Exchange de transporte
 
-El equipo de operaciones de seguridad podrá ver todas las reglas de transporte Exchange (o reglas de flujo de correo) aplicadas a un mensaje, en la vista Cuadrícula de correo electrónico. Seleccione **Opciones de columna** en la cuadrícula **y, a continuación, Exchange regla de transporte en** las opciones de columna. La Exchange reglas de transporte también está visible en el **menú** desplegable Detalles del correo electrónico.
+El equipo de operaciones de seguridad podrá ver todas las reglas de transporte Exchange (o reglas de flujo de correo) aplicadas a un mensaje, en la vista Cuadrícula de correo electrónico. Seleccione **Opciones de columna** en la cuadrícula y **, a continuación, Exchange regla de transporte en** las opciones de columna. La Exchange reglas de transporte también está visible en **el menú desplegable** Detalles del correo electrónico.
 
 Aparecen nombres y GUID de las reglas de transporte aplicadas al mensaje. Los analistas podrán buscar mensajes mediante el nombre de la regla de transporte. Se trata de una búsqueda CONTAINS, lo que significa que también puede realizar búsquedas parciales.
 
 > [!IMPORTANT]
-> Exchange búsqueda de reglas de transporte y disponibilidad de nombres dependen del rol específico que se le asigne. Debe tener uno de los siguientes roles o permisos para ver los nombres de regla de transporte y la búsqueda. Sin embargo, incluso sin los roles o permisos siguientes, un analista puede ver la etiqueta de regla de transporte y la información GUID en los detalles del correo electrónico. No se ven afectadas otras experiencias de visualización de registros en cuadrículas de correo electrónico, control de envío de correo electrónico, filtros y exportación.
+> Exchange búsqueda de reglas de transporte y la disponibilidad de nombres dependen del rol específico que se le haya asignado. Debe tener uno de los siguientes roles o permisos para ver los nombres de regla de transporte y la búsqueda. Sin embargo, incluso sin los roles o permisos siguientes, un analista puede ver la etiqueta de regla de transporte y la información GUID en los detalles del correo electrónico. No se ven afectadas otras experiencias de visualización de registros en cuadrículas de correo electrónico, control de envío de correo electrónico, filtros y exportación.
 >
 > - Exchange Online solo : prevención de pérdida de datos: todo
 > - Exchange Online solo - O365SupportViewConfig: Todos
 > - Microsoft Azure Active Directory o Exchange Online: Administrador de seguridad: Todo
 > - Azure Active Directory o Exchange Online: Lector de seguridad: Todos
 > - Exchange Online solo : reglas de transporte: todas
-> - Exchange Online solo - View-Only configuración: todo
+> - Exchange Online solo : View-Only configuración: Todo
 >
 > Dentro de la cuadrícula de correo electrónico, el control desplegable Detalles y csv exportado, los ETR se presentan con un Nombre/GUID como se muestra a continuación.
 >
 > > [!div class="mx-imgBorder"]
-> > ![Exchange de transporte.](../../media/ETR_Details.png)
+> > :::image type="content" source="../../media/ETR_Details.png" alt-text="Las reglas de Exchange Transporte" lightbox="../../media/ETR_Details.png":::
 
 ### <a name="inbound-connectors"></a>Conectores de entrada
 
@@ -232,13 +233,13 @@ Los conectores son una colección de instrucciones que personalizan cómo fluye 
 La búsqueda de conectores es una consulta CONTAINS, lo que significa que las búsquedas de palabras clave parciales pueden funcionar:
 
 > [!div class="mx-imgBorder"]
-> ![Detalles del conector.](../../media/Connector_Details.png)
+> :::image type="content" source="../../media/Connector_Details.png" alt-text="Detalles del conector" lightbox="../../media/Connector_Details.png":::
 
 ## <a name="required-licenses-and-permissions"></a>Permisos y licencias necesarios
 
 Debe tener [Microsoft Defender para Office 365](defender-for-office-365.md) usar detecciones en tiempo real o explorador.
 
-- El Explorador se incluye en Defender for Office 365 Plan 2.
+- El Explorador se incluye en Defender para Office 365 Plan 2.
 - El informe de detecciones en tiempo real se incluye en Defender for Office 365 Plan 1.
 - Planee asignar licencias para todos los usuarios que deberán estar protegidos por Defender para Office 365. Las detecciones de explorador y en tiempo real muestran datos de detección para usuarios con licencia.
 
@@ -246,7 +247,7 @@ Para ver y usar detecciones en tiempo real o explorador, debe tener los siguient
 
 - En el portal Microsoft 365 Defender:
   - Administración de la organización
-  - Administrador de seguridad (se puede asignar en el centro Azure Active Directory de administración ( <https://aad.portal.azure.com> )
+  - Administrador de seguridad (se puede asignar en el centro Azure Active Directory administración (<https://aad.portal.azure.com>)
   - Lector de seguridad
 - En Exchange Online:
   - Administración de la organización

@@ -16,12 +16,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
 ms.technology: mde
-ms.openlocfilehash: 3b20242247e33f8550ce4d153c2f2618c64d7007
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e05927829ec680a303972090dc050514c31cdbc6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324345"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468973"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>Incorporar dispositivos Windows mediante directiva de grupo 
 
@@ -125,7 +125,7 @@ Todas las directivas se encuentran en `Computer Configuration\Policies\Administr
 
 **Ubicación de la directiva:** \Windows Components\Windows Defender ATP
 
-Directiva|Setting
+Policy|Valor
 ---|---
 Enable\Disable Sample (colección)|Habilitado: "Habilitar la colección de muestras en máquinas" activada
 
@@ -133,7 +133,7 @@ Enable\Disable Sample (colección)|Habilitado: "Habilitar la colección de muest
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender
 
-Directiva|Setting
+Policy|Valor
 ---|---
 Configurar la detección para aplicaciones potencialmente no deseadas|Enabled, Block
 
@@ -141,7 +141,7 @@ Configurar la detección para aplicaciones potencialmente no deseadas|Enabled, B
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\MAPS
 
-Directiva|Setting
+Policy|Valor
 ---|---
 Unirse a Microsoft MAPS|Mapas avanzados habilitados
 Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales | Habilitado, Enviar muestras seguras
@@ -150,9 +150,9 @@ Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales 
 
 **Ubicación de la directiva:** \Windows Components\Antivirus de Microsoft Defender\Protección en tiempo real
 
-Directiva|Setting
+Policy|Valor
 ---|---
-Desactivar la protección en tiempo real|Deshabilitada
+Desactivar la protección en tiempo real|Deshabilitado
 Activar la supervisión del comportamiento|Habilitado
 Examinar todos los archivos y datos adjuntos descargados|Habilitado
 Supervisar la actividad de archivos y programas en el equipo|Habilitado
@@ -163,7 +163,7 @@ Supervisar la actividad de archivos y programas en el equipo|Habilitado
 
 Estas opciones configuran exámenes periódicos del extremo. Se recomienda realizar un examen rápido semanal, lo que permite el rendimiento.
 
-Directiva|Setting
+Policy|Valor
 ---|---
 Compruebe la inteligencia de seguridad de virus y spyware más reciente antes de ejecutar un examen programado |Habilitado
 
@@ -183,9 +183,9 @@ Obtén la lista actual de GUID de reglas de reducción de superficie de ataque d
 
    Esto configurará cada uno solo para auditoría.
 
-   ![Imagen de configuración de reducción de superficie de ataque.](images/asr-guid.png)
+   :::image type="content" source="images/asr-guid.png" alt-text="Configuración de reducción de superficie de ataque" lightbox="images/asr-guid.png":::
 
-Directiva|Ubicación|Setting
+Policy|Ubicación|Valor
 ---|---|---
 Configurar acceso controlado a carpetas| \Windows Components\Antivirus de Microsoft Defender\Protección contra vulnerabilidades de seguridad de Microsoft Defender\Controlled Folder Access| Habilitado, modo auditoría
 
@@ -252,55 +252,53 @@ Crea una nueva directiva de grupo o agrupa esta configuración con las otras dir
 
 2. Vaya a **Configuración del** >  **equipoPoliciesAdministrative** >  **Templates** >  **Windows Components** >  **Antivirus de Microsoft Defender** >  **Protección en tiempo real**.
 
-    :::image type="content" source="images/realtime-protect.png" alt-text="protección en tiempo real.":::
+    :::image type="content" source="images/realtime-protect.png" alt-text="Protección en tiempo real" lightbox="images/realtime-protect.png":::
 
 1. En la carpeta Cuarentena, configure la eliminación de elementos de la carpeta Cuarentena.
 
-    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="carpeta de cuarentena de elementos de eliminación.":::
+    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="Carpeta de cuarentena de elementos de eliminación" lightbox="images/removal-items-quarantine1.png":::
 
-    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="cuarentena de eliminación de config.":::
+    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="cuarentena de eliminación de config" lightbox="images/config-removal-items-quarantine2.png":::
 
 4. En la carpeta Examinar, configure las opciones de examen.
 
-    :::image type="content" source="images/gpo-scans.png" alt-text="análisis de gpo.":::
+    :::image type="content" source="images/gpo-scans.png" alt-text="exámenes de gpo" lightbox="images/gpo-scans.png":::
 
 ### <a name="monitor-all-files-in-real-time-protection"></a>Supervisar todos los archivos en protección en tiempo real
 
 Vaya a **Directivas de configuración del** \>  \> equipo **Plantillas** \> **administrativas Windows componentes Antivirus de Microsoft Defender** \>  \> **protección en tiempo real**.
 
- Dado que el valor de "Examinar archivos entrantes y salientes" (predeterminado) es 0, la directiva de grupo de "Configurar la supervisión de la actividad de programa y archivo entrante y saliente" para la configuración "bidireccional (acceso completo)" cambia a deshabilitada.
-
-:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configurar la supervisión de la actividad de archivos salientes entrantes.":::
+:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="Configurar la supervisión para la actividad de archivos salientes entrantes" lightbox="images/config-monitor-incoming-outgoing-file-act.png":::
 
 ### <a name="configure-windows-defender-smartscreen-settings"></a>Configurar Windows Defender smartscreen
 
 1. Vaya a **Directivas de configuración del** \>  \> equipo **Plantillas** \> **administrativas Windows componentes Windows Defender** \> **SmartScreen** \> **Explorer**.
 
-    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config explorador de pantalla inteligente de Windows Defender.":::
+   :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="Configurar el explorador de pantalla inteligente de Windows Defender" lightbox="images/config-windows-def-smartscr-explorer.png":::
  
 2. Vaya a **Configuración del** >  **equipoPoliciesAdministrative** >  **Templates** >  **Windows Components** >  **Windows Defender SmartScreen** >  **Microsoft Edge**.
 
-    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="config Windows Defender smart screen Edge.":::
+    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="Configurar windows defender smart screen Edge" lightbox="images/config-windows-def-smartscr-explorer.png":::
 
 ### <a name="configure-potentially-unwanted-applications"></a>Configurar aplicaciones potencialmente no deseadas
 
 Vaya a **Directivas de configuración del** \>  \> equipo **Plantillas** \> **administrativas Windows componentes Antivirus de Microsoft Defender**\>.
 
-:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="config posible aplicación no deseada.":::
+:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="Configuración de posibles aplicaciones no deseadas" lightbox="images/config-potential-unwanted-apps.png":::
 
-:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="potencial de configuración.":::
+:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="potencial de configuración" lightbox="images/config-potential-unwanted-apps2.png":::
 
 ### <a name="configure-cloud-deliver-protection-and-send-samples-automatically"></a>Configurar la protección de entrega en la nube y enviar muestras automáticamente
 
 Vaya a **Directivas de configuración del** \>  \> equipo **Plantillas** \> **administrativas Windows componentes Antivirus de Microsoft Defender** \>  \> **MAPS**.
 
-:::image type="content" source="images/gpo-maps1.png" alt-text="mapas.":::
+:::image type="content" source="images/gpo-maps1.png" alt-text="mapas" lightbox="images/gpo-maps1.png":::
 
-:::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="bloque a primera vista.":::
+:::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="Bloqueo a primera vista" lightbox="images/gpo-maps-block-atfirst-sight.png":::
 
-:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="unirse a mapas de Microsoft.":::
+:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="Unirse a mapas de Microsoft" lightbox="images/gpo-maps-join-ms-maps.png":::
 
-:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="enviar ejemplo de archivo cuando sea necesario realizar un análisis adicional.":::
+:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="Enviar ejemplo de archivo cuando sea necesario realizar un análisis adicional" lightbox="images/send-file-sample-further-analysis-require.png":::
 
 > [!NOTE]
 > La **opción Enviar todas las** muestras proporcionará el mayor análisis de archivos binarios/scripts/docs, lo que aumenta la posición de seguridad.
@@ -312,18 +310,18 @@ Para obtener más información, consulte [Activar la protección en la nube en A
 
 Vaya a **Directivas de configuración del** \>  \> equipo **Plantillas** \> **administrativas Windows componentes Antivirus de Microsoft Defender** \> actualizaciones **de** \> **inteligencia de seguridad**.
 
-:::image type="content" source="images/signature-update-1.png" alt-text="actualización de firma.":::
+:::image type="content" source="images/signature-update-1.png" alt-text="Actualización de firmas" lightbox="images/signature-update-1.png":::
 
-:::image type="content" source="images/signature-update-2.png" alt-text="actualización de definición de firma.":::
+:::image type="content" source="images/signature-update-2.png" alt-text="Actualización de definición de firma" lightbox="images/signature-update-2.png":::
 
 ### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>Configurar el tiempo de espera de entrega en la nube y el nivel de protección
 
 Vaya a **Directivas de configuración del** \>  \> equipo **Plantillas** \> **administrativas Windows componentes Antivirus de Microsoft Defender** \>  \> **MpEngine**.
 Al configurar la directiva de nivel de protección en la nube en **Predeterminada Antivirus de Microsoft Defender de bloqueo,** se deshabilitará la directiva. Esto es lo que se necesita para establecer el nivel de protección en el valor predeterminado de Windows.
 
-:::image type="content" source="images/config-extended-cloud-check.png" alt-text="comprobación de nube extendida de config.":::
+:::image type="content" source="images/config-extended-cloud-check.png" alt-text="comprobación de nube extendida de config" lightbox="images/config-extended-cloud-check.png":::
 
-:::image type="content" source="images/cloud-protection-level.png" alt-text="nivel de protección de la nube config.":::
+:::image type="content" source="images/cloud-protection-level.png" alt-text="nivel de protección de la nube config" lightbox="images/cloud-protection-level.png":::
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Incorporar dispositivos Windows mediante Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)

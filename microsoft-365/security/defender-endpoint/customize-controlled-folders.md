@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: b9af738d4b1f59705132a84239d06dc762447417
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 04e7617825a3e14eac541b296cbed9f4dd95e206
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683765"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469325"
 ---
 # <a name="customize-controlled-folder-access"></a>Personalizar el acceso controlado a carpetas
 
@@ -90,7 +90,7 @@ Puede usar la aplicación Seguridad de Windows, la directiva de grupo, los cmdle
     ```
 3. Repita el paso 2 para cada carpeta que desee proteger. Las carpetas que están protegidas están visibles en la Seguridad de Windows aplicación.
 
-   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="Ventana de PowerShell con cmdlet mostrado.":::
+   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="Se muestra la ventana de PowerShell con cmdlet" lightbox="images/cfa-allow-folder-ps.png":::
 
 > [!IMPORTANT]
 > Se `Add-MpPreference` usa para anexar o agregar aplicaciones a la lista y no `Set-MpPreference`para . El uso del `Set-MpPreference` cmdlet sobrescribirá la lista existente.
@@ -120,7 +120,7 @@ Una aplicación o servicio permitido solo tiene acceso de escritura a una carpet
 
 4. Selecciona **Agregar una aplicación permitida** y sigue las indicaciones para agregar aplicaciones.
 
-   :::image type="content" source="images/cfa-allow-app.png" alt-text="Agregar un botón de aplicación permitido.":::
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="Botón Agregar una aplicación permitida" lightbox="images/cfa-allow-app.png":::
 
 ### <a name="use-group-policy-to-allow-specific-apps"></a>Usar la directiva de grupo para permitir aplicaciones específicas
 
@@ -149,7 +149,7 @@ Una aplicación o servicio permitido solo tiene acceso de escritura a una carpet
 
    Sigue usando para `Add-MpPreference -ControlledFolderAccessAllowedApplications` agregar más aplicaciones a la lista. Las aplicaciones agregadas con este cmdlet aparecerán en la Seguridad de Windows aplicación.
 
-   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="Cmdlet de PowerShell para permitir una aplicación.":::
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="El cmdlet de PowerShell para permitir una aplicación" lightbox="images/cfa-allow-app-ps.png":::
 
 > [!IMPORTANT]
 > Se `Add-MpPreference` usa para anexar o agregar aplicaciones a la lista. El uso del `Set-MpPreference` cmdlet sobrescribirá la lista existente.
@@ -169,7 +169,7 @@ Los indicadores de archivo y certificado de Microsoft Defender para endpoint pue
 
 Para obtener más información sobre cómo personalizar la notificación cuando se desencadena una regla y bloquea una aplicación o un archivo, consulta Configurar notificaciones de [alertas en Microsoft Defender para endpoint](configure-email-notifications.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 - [Habilitar el acceso controlado a carpetas](enable-controlled-folders.md)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f6767b1a788129266bff713a6608277a2450598c
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: d56cbb48697c4804aa493d945ff81c52e12f86c5
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775904"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470095"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>Ejecutar el analizador de clientes en macOS o Linux
 
@@ -74,7 +74,7 @@ Abra un terminal o SSH en la máquina correspondiente y ejecute los siguientes c
 
 Ejemplo:
 
-![Imagen del ejemplo de línea de comandos.](images/4ca188f6c457e335abe3c9ad3eddda26.png)
+:::image type="content" source="images/4ca188f6c457e335abe3c9ad3eddda26.png" alt-text="Ejemplo de línea de comandos" lightbox="images/4ca188f6c457e335abe3c9ad3eddda26.png":::
 
 Ayuda de sintaxis adicional:
 

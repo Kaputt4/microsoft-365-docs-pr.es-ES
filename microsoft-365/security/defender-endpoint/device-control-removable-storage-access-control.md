@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 03/18/2022
-ms.openlocfilehash: def22b83dc5c84a3b222d4e50f2d2dce8d5d36ef
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8b17fc31e4a25ad66fdb51114d7931f7d934a226
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682755"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470315"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Control de dispositivo extraíble de Microsoft Defender para endpoint Storage Control de acceso
 
@@ -62,11 +62,7 @@ Implemente el control Storage de acceso extraíble en Windows 10 y Windows 11 di
 
 - **4.18.2107** o posterior: Agregar compatibilidad con dispositivos portátiles (WPD) Windows (para dispositivos móviles, como tabletas); agregar AccountName a la búsqueda [avanzada](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
-- **4.18.2111** o posterior: Agregar "Habilitar o deshabilitar el control de acceso Storage extraíble", "Aplicación predeterminada", tiempo de actualización de directivas de máquina cliente a través de PowerShell, información de archivos
-
-- **4.18.2201 o posterior**: admite una copia del archivo escrito en el almacenamiento permitido a través de OMA-URI
-
-:::image type="content" source="images/powershell.png" alt-text="La interfaz de PowerShell.":::
+:::image type="content" source="images/powershell.png" alt-text="La interfaz de PowerShell" lightbox="images/powershell.png":::
 
 > [!NOTE]
 > Ninguno de Seguridad de Windows componentes debe estar activo, ya que puede ejecutar Removable Storage Access Control independientemente Seguridad de Windows estado.
@@ -94,7 +90,7 @@ Puede usar las siguientes propiedades para crear un grupo de almacenamiento extr
 | **IncludedIdList** | Los grupos a los que se aplicará la directiva. Si se agregan varios grupos, la directiva se aplicará a cualquier medio de todos esos grupos.|El IDENTIFICADOR de grupo/GUID debe usarse en esta instancia. <p> En el ejemplo siguiente se muestra el uso de GroupID: <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
 | **ExcludedIDList** | Los grupos a los que no se aplicará la directiva. | El IDENTIFICADOR de grupo/GUID debe usarse en esta instancia. |
 | **Id. de entrada** | Un PolicyRule puede tener varias entradas; cada entrada con un GUID único indica al Control de dispositivos una restricción.| |
-| **Type** | Define la acción de los grupos de almacenamiento extraíbles en IncludedIDList. <p>Aplicación: Permitir o denegar <p>Auditoría: AuditAllowed o AuditDenied<p> | Permitir<p>Denegar <p>AuditAllowed: define la notificación y el evento cuando se permite el acceso <p>AuditDenied: define la notificación y el evento cuando se deniega el acceso; tiene que trabajar junto con **la entrada Denegar** .<p> Cuando haya tipos de conflicto para el mismo medio, el sistema aplicará el primero de la directiva. Un ejemplo de tipo de conflicto es **Allow** y **Deny**. |
+| **Tipo** | Define la acción de los grupos de almacenamiento extraíbles en IncludedIDList. <p>Aplicación: Permitir o denegar <p>Auditoría: AuditAllowed o AuditDenied<p> | Permitir<p>Denegar <p>AuditAllowed: define la notificación y el evento cuando se permite el acceso <p>AuditDenied: define la notificación y el evento cuando se deniega el acceso; tiene que trabajar junto con **la entrada Denegar** .<p> Cuando haya tipos de conflicto para el mismo medio, el sistema aplicará el primero de la directiva. Un ejemplo de tipo de conflicto es **Allow** y **Deny**. |
 | **Sid** | El sid de usuario local o el grupo sid de usuario o el Sid del objeto AD, define si se va a aplicar esta directiva sobre un usuario o grupo de usuarios específicos; una entrada puede tener un máximo de un Sid y una entrada sin que ningún Sid signifique aplicar la directiva sobre la máquina. |  |
 | **ComputerSid** | El equipo local Sid o el grupo Sid del equipo o el Sid del objeto AD, define si se va a aplicar esta directiva sobre un equipo o grupo de máquinas específico; una entrada puede tener un máximo de un ComputerSid y una entrada sin que ComputerSid signifique aplicar la directiva sobre el equipo. Si desea aplicar una entrada a un usuario específico y a un equipo específico, agregue Sid y ComputerSid a la misma entrada. |  |
 | **Opciones** | Define si se va a mostrar la notificación o no |**Cuando se selecciona Permitir tipo**: <p>0: nada<p>4: deshabilitar **AuditAllowed** y **AuditDenied** para esta entrada. Incluso si **allow** sucede y la configuración AuditAllowed está configurada, el sistema no enviará el evento. <p>8: capturar la información del archivo y tener una copia del archivo como evidencia para el acceso de escritura. <p>16: capturar información de archivo para el acceso de escritura. <p>**Cuando se selecciona Denegar tipo**: <p>0: nada<p>4: deshabilitar **AuditDenied** para esta entrada. Incluso si **se produce** block y la configuración auditDenied está configurada, el sistema no mostrará la notificación. <p>**Cuando se **selecciona Tipo AuditAllowed****: <p>0: nada <p>1: nada <p>2: evento send<p>3: evento send <p> **Cuando se **selecciona Tipo AuditDenied****: <p>0: nada <p>1: mostrar notificación <p>2: evento send<p>3: mostrar notificación y enviar evento |
@@ -152,7 +148,7 @@ Antes de empezar con Removable Storage Access Control, debes confirmar tu [Micro
 
     En la siguiente imagen se muestra el ejemplo del escenario 1: Impedir el acceso de escritura y ejecución a todos, pero permitir [usbs aprobados específicos](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
-    :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="Pantalla que muestra las opciones de configuración que permiten USB aprobados específicos en dispositivos.":::
+    :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="Las opciones de configuración que permiten usbs aprobados específicos en dispositivos" lightbox="images/prevent-write-access-allow-usb.png":::
 
 2. Combine todas las reglas dentro `<PolicyRules>` `</PolicyRules>` de un archivo xml.
 
@@ -162,7 +158,7 @@ Antes de empezar con Removable Storage Access Control, debes confirmar tu [Micro
 
     En la siguiente imagen se muestra el uso de la propiedad SID y un ejemplo de Escenario 1: Impedir el acceso de escritura y ejecución a todos los [USB aprobados, pero permitir determinados USB aprobados](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
-    :::image type="content" source="images/usage-sid-property.png" alt-text="Pantalla que muestra un código que indica el uso del atributo de la propiedad SID.":::
+    :::image type="content" source="images/usage-sid-property.png" alt-text="El código que indica el uso del atributo de propiedad SID" lightbox="images/usage-sid-property.png":::
 
 3. Guarde los archivos XML de regla y grupo en la carpeta de recurso compartido de red y coloque la ruta de acceso de la carpeta de recurso compartido de red en la configuración de directiva de **grupo:** \>  \> Configuración del equipo Plantillas administrativas **Windows Componentes** \> **Antivirus de Microsoft Defender** \> **Control** de dispositivos: 'Definir grupos de directivas de **control de dispositivos'** **y 'Definir reglas de directiva de control de dispositivos'**.
 
@@ -170,7 +166,7 @@ Antes de empezar con Removable Storage Access Control, debes confirmar tu [Micro
 
    - El equipo de destino debe poder tener acceso al recurso compartido de red para tener la directiva. Sin embargo, una vez que se lee la directiva, la conexión de recurso compartido de red ya no es necesaria, incluso después del reinicio de la máquina.
 
-    :::image type="content" source="images/device-control.png" alt-text="Pantalla Control de dispositivos.":::
+    :::image type="content" source="images/device-control.png" alt-text="Pantalla Control de dispositivos" lightbox="images/device-control.png":::
 
 4. Aplicación predeterminada: le permite establecer el acceso predeterminado (Denegar o Permitir) en medios extraíbles si no hay ninguna directiva. Por ejemplo, solo tienes una directiva (denegar o permitir) para RemovableMediaDevices, pero no tienes ninguna directiva para CdRomDevices o WpdDevices, y estableces denegar de forma predeterminada a través de esta directiva, se bloqueará el acceso de lectura y escritura/ejecución a CdRomDevices o WpdDevices.
 
@@ -227,7 +223,7 @@ Microsoft Endpoint Manager centro  de administración (<https://endpoint.microso
 
     - Tipo de datos: String (archivo XML)
 
-      :::image type="content" source="images/xml-data-type-string.png" alt-text="Archivo xml para el tipo de datos STRING.":::
+      :::image type="content" source="images/xml-data-type-string.png" alt-text="El campo Tipo de datos de la página Agregar fila" lightbox="images/xml-data-type-string.png":::
 
 2. Para cada directiva, también cree un OMA-URI:
 
@@ -311,30 +307,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
-```kusto
-//RemovableStorageFileEvent: event triggered by File level enforcement, information of files written to removable storage 
-DeviceEvents
-| where ActionType contains "RemovableStorageFileEvent"
-| extend parsed=parse_json(AdditionalFields)
-| extend Policy = tostring(parsed.Policy) 
-| extend PolicyRuleId = tostring(parsed.PolicyRuleId) 
-| extend MediaClassName = tostring(parsed.ClassName)
-| extend MediaInstanceId = tostring(parsed.InstanceId)
-| extend MediaName = tostring(parsed.MediaName)
-| extend MediaProductId = tostring(parsed.ProductId) 
-| extend MediaVendorId = tostring(parsed.VendorId) 
-| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
-| extend DuplicatedOperation = tostring(parsed.DuplicatedOperation)
-| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
-| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, 
-    ActionType, Policy, PolicyRuleId, DuplicatedOperation, 
-    MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber,
-    FileName, FolderPath, FileSize, FileEvidenceLocation,
-    AdditionalFields
-| order by Timestamp desc
-```
-    
-:::image type="content" source="images/block-removable-storage.png" alt-text="Pantalla que muestra el bloqueo del almacenamiento extraíble.":::
+:::image type="content" source="images/block-removable-storage.png" alt-text="Bloqueo del almacenamiento extraíble" lightbox="images/block-removable-storage.png":::
 
 ## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 

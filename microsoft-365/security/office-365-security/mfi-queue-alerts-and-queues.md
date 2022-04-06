@@ -14,12 +14,12 @@ description: Los administradores pueden aprender a usar el widget Colas en el pa
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 54bff65b29555fe0c94c86141cd7a10a77c36219
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 62da2d9654174bc2572a6d7cbb3acbd638757a6c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680014"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469479"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Información sobre colas en el Centro de seguridad & cumplimiento
 
@@ -43,7 +43,8 @@ Si el volumen de correo electrónico en cola supera el umbral predefinido (el va
 
 - Una alerta se muestra en **Alertas** recientes en el panel Alertas del [Centro de seguridad & cumplimiento](https://protection.office.com) (**Panel de** \> **alertas** o <https://protection.office.com/alertsdashboard>).
 
-  ![Alertas recientes en el panel de alertas del Centro de seguridad & cumplimiento.](../../media/mfi-queued-messages-alert.png)
+  :::image type="content" source="../../media/mfi-queued-messages-alert.png" alt-text="Las alertas recientes en el panel De alertas del Centro de seguridad y & cumplimiento" lightbox="../../media/mfi-queued-messages-alert.png":::
+
 
 - Los administradores recibirán una notificación por correo electrónico en función de la configuración de la directiva de alerta predeterminada denominada **Mensajes que se han retrasado**. Para configurar las opciones de notificación de esta alerta, consulte la siguiente sección.
 
@@ -57,7 +58,7 @@ Si el volumen de correo electrónico en cola supera el umbral predefinido (el va
 
 3. En el **menú desplegable Mensaje se ha** retrasado que se abre, puede activar o desactivar la alerta y configurar las opciones de notificación.
 
-   ![Los mensajes se han retrasado detalles de la directiva de alertas en el Centro de & cumplimiento.](../../media/mfi-queued-messages-alert-policy.png)
+   :::image type="content" source="../../media/mfi-queued-messages-alert-policy.png" alt-text="Los detalles de la alerta mensajes se han retrasado" lightbox="../../media/mfi-queued-messages-alert-policy.png":::
 
    - **Estado**: puede activar o desactivar la alerta.
 
@@ -70,7 +71,7 @@ Si el volumen de correo electrónico en cola supera el umbral predefinido (el va
    - **Límite de notificación diario**: el valor predeterminado **es No limit**.
    - **Umbral**: el valor predeterminado es 200.
 
-   ![La configuración de notificaciones en la directiva de alerta Mensajes se ha retrasado, detalla el Centro de seguridad & cumplimiento.](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
+     :::image type="content" source="../../media/mfi-queued-messages-alert-policy-notification-settings.png" alt-text="La configuración de notificación de la alerta Mensajes se ha retrasado" lightbox="../../media/mfi-queued-messages-alert-policy-notification-settings.png":::
 
 5. Cuando haya terminado, haga clic en **Guardar** y **cerrar**.
 
@@ -78,7 +79,7 @@ Si el volumen de correo electrónico en cola supera el umbral predefinido (el va
 
 Incluso si el volumen de mensajes en cola no ha superado el umbral y ha generado una alerta, puede usar la información de  colas en el panel flujo [](mail-flow-insights-v2.md) de correo para ver los mensajes que se han puesto en cola durante más de una hora y realizar acciones antes de que el número de mensajes en cola sea demasiado grande.
 
-![Widget Colas en el panel Flujo de correo del Centro de seguridad & cumplimiento.](../../media/mfi-queues-widget.png)
+:::image type="content" source="../../media/mfi-queues-widget.png" alt-text="El widget Colas en el panel Flujo de correo del Centro de seguridad & cumplimiento" lightbox="../../media/mfi-queues-widget.png":::
 
 Si hace clic en el número de mensajes del widget, aparecerá **un control flotante** Mensajes en cola con la siguiente información:
 
@@ -91,12 +92,12 @@ Si hace clic en el número de mensajes del widget, aparecerá **un control flota
 - **Último error**
 - **Cómo corregir**: hay problemas y soluciones comunes disponibles. Si un **vínculo Corregir ahora** está disponible, haga clic en él para solucionar el problema. De lo contrario, haga clic en los vínculos disponibles para obtener más información sobre el error y las posibles soluciones.
 
-![Detalles después de hacer clic en la información de colas en el panel flujo de correo.](../../media/mfi-queues-details.png)
+:::image type="content" source="../../media/mfi-queues-details.png" alt-text="Detalles después de hacer clic en la información de colas en el panel flujo de correo" lightbox="../../media/mfi-queues-details.png":::
 
 Se muestra el mismo menú desplegable después de hacer clic en **Ver cola** en los detalles de una alerta de retraso de **mensajes** .
 
-![Los mensajes se han retrasado en los detalles de alerta en el Centro de seguridad & cumplimiento.](../../media/mfi-queued-messages-alert-details.png)
+:::image type="content" source="../../media/mfi-queued-messages-alert-details.png" alt-text="Los detalles de los mensajes se han retrasado en el Centro de seguridad & cumplimiento" lightbox="../../media/mfi-queued-messages-alert-details.png":::
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Para obtener información sobre otras perspectivas en el panel flujo de correo, vea Información sobre el flujo de correo en el [Centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

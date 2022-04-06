@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fe3139f12b863b54d336e52939ffbb3057df6b4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 81c3a3a6d1d35551eec34d0fe12aba2f1fc6ec5e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316007"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469699"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>Escala de tiempo del evento: Administración de amenazas y vulnerabilidades
 
@@ -53,18 +53,18 @@ En el panel Administración de amenazas y vulnerabilidades, mantenga el mouse so
 
 Si no hay eventos que afecten a los dispositivos o a la puntuación de los dispositivos, no se mostrará ninguno.
 
-![Puntero de puntuación de exposición.](images/tvm-event-timeline-exposure-score350.png) 
-![ Puntuación segura de Microsoft para dispositivos activa.](images/tvm-event-timeline-device-hover360.png)
+:::image type="content" source="images/tvm-event-timeline-exposure-score350.png" alt-text="El puntero de puntuación de exposición" lightbox="images/tvm-event-timeline-exposure-score350.png":::
+:::image type="content" source="images/tvm-event-timeline-device-hover360.png" alt-text="El puntero puntuación segura de Microsoft para dispositivos" lightbox="images/tvm-event-timeline-device-hover360.png":::
 
 ### <a name="drill-down-to-events-from-that-day"></a>Profundizar en los eventos de ese día
 
 Si selecciona **Mostrar todos los eventos de este día,** podrá ir a la página Escala de tiempo de eventos con un intervalo de fechas personalizado para ese día.
 
-![Intervalo de fechas personalizado seleccionado por la escala de tiempo del evento.](images/tvm-event-timeline-drilldown.png)
+:::image type="content" source="images/tvm-event-timeline-drilldown.png" alt-text="Página Escala de tiempo de eventos" lightbox="images/tvm-event-timeline-drilldown.png":::
 
 Seleccione **Intervalo personalizado** para cambiar el intervalo de fechas a otro personalizado o a un intervalo de tiempo predefinido.
 
-![Opciones de intervalo de fechas de escala de tiempo de eventos.](images/tvm-event-timeline-dates.png)
+:::image type="content" source="images/tvm-event-timeline-dates.png" alt-text="Opciones del intervalo de fechas de escala de tiempo de eventos" lightbox="images/tvm-event-timeline-dates.png":::
 
 ## <a name="event-timeline-overview"></a>Introducción a la escala de tiempo de eventos
 
@@ -78,7 +78,7 @@ Características:
 
 Los dos números grandes en la parte superior de la página muestran el número de nuevas vulnerabilidades y vulnerabilidades aprovechables, no eventos. Algunos eventos pueden tener varias vulnerabilidades y algunas vulnerabilidades pueden tener varios eventos.
 
-![Página escala de tiempo de eventos.](images/tvm-event-timeline-overview-mixed-type.png)
+:::image type="content" source="images/tvm-event-timeline-overview-mixed-type.png" alt-text="Escala de tiempo del evento" lightbox="images/tvm-event-timeline-overview-mixed-type.png":::
 
 ### <a name="columns"></a>Columnas
 
@@ -110,7 +110,7 @@ Una vez que selecciones un evento, aparecerá un flyout con una lista de los det
 
 La flecha debajo de "tendencia de puntuación" te ayuda a determinar si este evento potencialmente ha elevado o reducido la puntuación de exposición de la organización. Una mayor puntuación de exposición significa que los dispositivos son más vulnerables a la explotación.
 
-![Control de escala de tiempo de eventos.](images/tvm-event-timeline-flyout500.png)
+:::image type="content" source="images/tvm-event-timeline-flyout500.png" alt-text="El control desplegable de escala de tiempo de eventos" lightbox="images/tvm-event-timeline-flyout500.png":::
 
 Desde allí, seleccione **Ir a la vista de** recomendación de seguridad relacionada la recomendación que aborda la nueva vulnerabilidad de software en la página [recomendaciones de seguridad](tvm-security-recommendation.md). Después de leer la descripción y los detalles de vulnerabilidad en la recomendación de seguridad, puede enviar una solicitud de corrección y realizar un seguimiento de la solicitud en la [página de corrección](tvm-remediation.md).
 
@@ -120,11 +120,11 @@ Para abrir una página de software, seleccione un evento > el nombre de software
 
 Aparecerá una página completa con todos los detalles de un software específico. Pase el mouse sobre el gráfico para ver la escala de tiempo de los eventos de ese software específico.
 
-![Página de software con un gráfico de escala de tiempo de eventos.](images/tvm-event-timeline-software2.png)
+:::image type="content" source="images/tvm-event-timeline-software2.png" alt-text="La página de software con un gráfico de escala de tiempo de eventos" lightbox="images/tvm-event-timeline-software2.png":::
 
 Vaya a la pestaña escala de tiempo del evento para ver todos los eventos relacionados con ese software. También puede ver recomendaciones de seguridad, vulnerabilidades detectadas, dispositivos instalados y distribución de versiones.
 
-![Página de software con una pestaña Escala de tiempo de eventos.](images/tvm-event-timeline-software-pages.png)
+:::image type="content" source="images/tvm-event-timeline-software-pages.png" alt-text="La página de software con una pestaña Escala de tiempo de eventos" lightbox="images/tvm-event-timeline-software-pages.png":::
 
 ## <a name="related-topics"></a>Temas relacionados
 

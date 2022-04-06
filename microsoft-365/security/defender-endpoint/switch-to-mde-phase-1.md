@@ -23,12 +23,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.date: 11/30/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: d9d122c9d114aa135eb2a82e1168eabec2aeec7b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: aa0bd45c1765e2aa794e00e437bf08a63d1d742f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374405"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476739"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Cambiar a Microsoft Defender para endpoint- Fase 1: Preparar
 
@@ -37,18 +37,18 @@ ms.locfileid: "61374405"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| ![Fase 1: Preparar.](images/phase-diagrams/prepare.png)<br/>Fase 1: Preparación | [![Fase 2: Configuración](images/phase-diagrams/setup.png)](switch-to-mde-phase-2.md)<br/>[Fase 2: Configuración](switch-to-mde-phase-2.md) | [![Fase 3: Incorporación](images/phase-diagrams/onboard.png)](switch-to-mde-phase-3.md)<br/>[Fase 3: Incorporación](switch-to-mde-phase-3.md) |
+| ![Fase 1: Preparar.](images/phase-diagrams/prepare.png#lightbox)<br/>Fase 1: Preparación | [![Fase 2: Configuración](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[Fase 2: Configuración](switch-to-mde-phase-2.md) | [![Fase 3: Incorporación](images/phase-diagrams/onboard.png#lightbox)](switch-to-mde-phase-3.md)<br/>[Fase 3: Incorporación](switch-to-mde-phase-3.md) |
 |--|--|--|
 |*¡Estás aquí!*| | |
 
-**Bienvenido a la fase Preparar de [cambiar a Defender para endpoint](switch-to-mde-overview.md#the-migration-process)**.
+**Bienvenido a la fase de preparación de [cambiar a Defender para endpoint](switch-to-mde-overview.md#the-migration-process)**.
 
 Esta fase de migración incluye los siguientes pasos:
 
 1. [Obtener e implementar actualizaciones en los dispositivos de la organización](#get-and-deploy-updates-across-your-organizations-devices)
 2. [Obtener Defender para endpoint](#get-microsoft-defender-for-endpoint).
-3. [Conceder acceso al portal de Microsoft 365 Defender](#grant-access-to-the-microsoft-365-defender-portal).
-4. [Configurar el proxy de dispositivo y la configuración de conectividad a Internet.](#configure-device-proxy-and-internet-connectivity-settings)
+3. [Conceda acceso al portal Microsoft 365 Defender web](#grant-access-to-the-microsoft-365-defender-portal).
+4. [Configurar el proxy de dispositivo y la configuración de conectividad a Internet](#configure-device-proxy-and-internet-connectivity-settings).
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>Obtener e implementar actualizaciones en los dispositivos de la organización
 
@@ -66,7 +66,7 @@ Mantenga actualizada la solución de protección de puntos de conexión existent
 
 <br/><br/>
 
-|SO|Recurso|
+|SO|Resource|
 |---|---|
 |Windows|[Microsoft Update](https://www.update.microsoft.com)|
 |macOS|[Cómo actualizar el software en tu Mac](https://support.apple.com/HT201541)|
@@ -82,24 +82,24 @@ Ahora que ha actualizado los dispositivos de su organización, el siguiente paso
 
 2. Compruebe que las licencias están aprovisionadas correctamente. [Compruebe el estado de la licencia](production-deployment.md#check-license-state).
 
-3. Configura la instancia de nube dedicada de Defender para Endpoint. Vea [Defender for Endpoint setup: Tenant configuration](production-deployment.md#tenant-configuration).
+3. Configura la instancia de nube dedicada de Defender para Endpoint. Consulte [Defender for Endpoint setup: Tenant configuration](production-deployment.md#tenant-configuration).
 
-4. Si los puntos de conexión (como dispositivos) de su organización usan un proxy para tener acceso a Internet, vea Configuración de defender para puntos de [conexión: Configuración de red](production-deployment.md#network-configuration).
+4. Si los puntos de conexión (como dispositivos) de la organización usan un proxy para tener acceso a Internet, consulte [Configuración de Defender for Endpoint: Configuración de red](production-deployment.md#network-configuration).
 
-En este punto, está listo para conceder acceso a los administradores de seguridad y operadores de seguridad que usarán el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender seguridad.</a>
+En este punto, está listo para conceder acceso a los administradores de seguridad y operadores de seguridad que usarán <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">el portal Microsoft 365 Defender seguridad</a>.
 
 > [!NOTE]
-> El Microsoft 365 Defender se conoce a veces como el portal de Defender para endpoint y se puede obtener acceso a este en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> . The former Centro de seguridad de Microsoft Defender ( https://securitycenter.windows.com) will soon redirect to the Microsoft 365 Defender portal. Para obtener más información, [vea Microsoft 365 Defender información general del portal](portal-overview.md).
+> El Microsoft 365 Defender se conoce a veces como el portal de Defender para endpoint y se puede obtener acceso a este en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. The former Centro de seguridad de Microsoft Defender (https://securitycenter.windows.com) will soon redirect to the Microsoft 365 Defender portal. Para obtener más información, vea [Microsoft 365 Defender información general del portal](portal-overview.md).
 
 ## <a name="grant-access-to-the-microsoft-365-defender-portal"></a>Conceder acceso al portal de Microsoft 365 Defender web
 
-El <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender es</a> donde tiene acceso y configura las características y capacidades de Defender para endpoint. Para obtener más información, vea [Overview of the Microsoft 365 Defender portal](use.md).
+El <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender es</a> donde tiene acceso y configura las características y capacidades de Defender for Endpoint. Para obtener más información, vea [Overview of the Microsoft 365 Defender portal](use.md).
 
 Los permisos del portal Microsoft 365 Defender pueden concederse mediante permisos básicos o control de acceso basado en roles (RBAC). Se recomienda usar RBAC para que tenga un control más detallado sobre los permisos.
 
-1. Planee los roles y permisos para los administradores de seguridad y los operadores de seguridad. Vea [Control de acceso basado en roles](prepare-deployment.md#role-based-access-control).
+1. Planee los roles y permisos para los administradores de seguridad y los operadores de seguridad. Consulte [Control de acceso basado en roles](prepare-deployment.md#role-based-access-control).
 
-2. Configurar y configurar RBAC. Se recomienda usar [Intune para](/mem/intune/fundamentals/what-is-intune) configurar RBAC, especialmente si su organización usa una combinación de dispositivos Windows 10, macOS, iOS y Android. Consulta [configurar RBAC con Intune](/mem/intune/fundamentals/role-based-access-control).
+2. Configurar y configurar RBAC. Se recomienda usar [Intune para](/mem/intune/fundamentals/what-is-intune) configurar RBAC, especialmente si su organización usa una combinación de dispositivos Windows 10, macOS, iOS y Android. Consulta [Configurar RBAC con Intune](/mem/intune/fundamentals/role-based-access-control).
 
     Si su organización requiere un método distinto de Intune, elija una de las siguientes opciones:
 
@@ -107,7 +107,7 @@ Los permisos del portal Microsoft 365 Defender pueden concederse mediante permis
     - [Administración de directivas de grupo avanzadas](/microsoft-desktop-optimization-pack/agpm)
     - [Windows Admin Center](/windows-server/manage/windows-admin-center/overview)
 
-3. Conceda acceso al portal de Microsoft 365 Defender web. (¿Necesita ayuda? Consulte [Manage portal access using RBAC](rbac.md).
+3. Conceda acceso al portal Microsoft 365 Defender web. (¿Necesita ayuda? Consulte [Manage portal access using RBAC](rbac.md).
 
 ## <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar el proxy de dispositivo y la configuración de conectividad a Internet
 
@@ -115,7 +115,7 @@ Para habilitar la comunicación entre los dispositivos y Defender para endpoint,
 
 <br/><br/>
 
-|Capacidades|Sistema operativo|Resources|
+|Capacidades|Sistema operativo|Recursos|
 |---|---|---|
 |[Detección y respuesta de extremos](overview-endpoint-detection-response.md) (EDR)|[Windows 10](/windows/release-health/release-information) o posterior<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803 o posterior](/windows-server/get-started/whats-new-in-windows-server-1803)|[Configurar el proxy de máquina y la configuración de conectividad a Internet](configure-proxy-internet.md)|
 |EDR|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configuración de proxy y conectividad a Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
@@ -127,6 +127,6 @@ Para habilitar la comunicación entre los dispositivos y Defender para endpoint,
 
 ## <a name="next-step"></a>Paso siguiente
 
-**¡Enhorabuena!** Ha completado la fase **de preparación** de cambiar a Defender [para endpoint](switch-to-mde-overview.md#the-migration-process)!
+**¡Enhorabuena**! Has completado la fase **de preparación** de [cambiar a Defender para endpoint](switch-to-mde-overview.md#the-migration-process).
 
-- [Continúe con la configuración de Defender para Endpoint](switch-to-mde-phase-2.md).
+- [Continúe con la configuración de Defender para endpoint](switch-to-mde-phase-2.md).

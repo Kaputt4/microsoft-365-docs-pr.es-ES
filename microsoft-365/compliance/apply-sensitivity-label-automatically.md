@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 80f3b5c69e482301dd8c4e926959087c7149a529
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 21ee443ba9bab0ac7071377befee5d6e6143a398
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499669"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634633"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -275,18 +275,6 @@ La implementación simulada se ejecuta como el parámetro WhatIf para PowerShell
 El modo de simulación también le permite aumentar gradualmente el ámbito de la directiva de etiquetado automático antes de la implementación. Por ejemplo, puede empezar con una única ubicación, como un sitio de SharePoint, con una única biblioteca de documentos. Después, con cambios iterativos, aumente el ámbito a varios sitios y a otra ubicación, como OneDrive.
 
 Por último, puede usar el modo de simulación para ofrecer una aproximación del tiempo necesario para ejecutar la directiva de etiquetado automático, para ayudarle a planear y programar cuándo ejecutarla sin el modo de simulación.
-
-#### <a name="deleted-onedrive-accounts-and-simulation-results"></a>Cuentas de OneDrive eliminadas y resultados de la simulación
-
-Espere posibles discrepancias de visualización en los resultados de la simulación cuando las cuentas de OneDrive eliminadas aún estén en la [fase de retención del proceso de eliminación](/onedrive/retention-and-deletion#the-onedrive-deletion-process). Por ejemplo, un empleado abandona la organización y su administrador tiene acceso temporal a los archivos de OneDrive de ese usuario.
-
-En este escenario, si se especificó la cuenta de OneDrive mediante una dirección URL en la directiva de etiquetado automático, los archivos coincidentes de la cuenta de OneDrive eliminada se incluirán en los resultados de la simulación.
-
-Sin embargo, si no se especificó la cuenta de OneDrive mediante una dirección URL, pero se incluyó con la configuración predeterminada **Todos**:
-- Cuando la ubicación de SharePoint se incluye en la directiva, los archivos coincidentes de la cuenta de OneDrive eliminada se muestran como elementos de SharePoint en los resultados de la simulación.
-- Cuando la ubicación de SharePoint no se incluye en la directiva, los archivos coincidentes de la cuenta de OneDrive eliminada no se incluyen en los resultados de la simulación.
-
-En todos los casos, los archivos coincidentes se etiquetan hasta que la cuenta de OneDrive se elimine permanentemente. Las discrepancias de visualización enumeradas solo se aplican a los resultados de la simulación.
 
 ### <a name="creating-an-auto-labeling-policy"></a>Creación de una directiva de etiquetado automático
 

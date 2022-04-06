@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c0a2bdab641f0289975f1d8475627d3066ecf1f8
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 580f41c24d6d78fb9e5ac7e20eb80e6ae78a505b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934206"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469809"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Investigar eventos de conexión que ocurren tras los servidores proxy de reenvío
 
@@ -44,27 +44,27 @@ La supervisión de la conexión de red detrás de un proxy de reenvío es posibl
 
 La protección de red se puede controlar con los siguientes modos:
 
-- **Bloquear:** se bloqueará la conexión de usuarios o aplicaciones a dominios peligrosos. Podrás ver esta actividad en Microsoft 365 Defender.
-- **Auditoría:** los usuarios o aplicaciones no se bloquearán para que no se conecten a dominios peligrosos. Sin embargo, seguirás teniendo esta actividad en Microsoft 365 Defender.
+- **Bloquear**: se bloqueará la conexión de usuarios o aplicaciones a dominios peligrosos. Podrás ver esta actividad en Microsoft 365 Defender.
+- **Auditoría**: los usuarios o aplicaciones no se bloquearán para que no se conecten a dominios peligrosos. Sin embargo, seguirás teniendo esta actividad en Microsoft 365 Defender.
 
 
 Si desactivas la protección de red, los usuarios o las aplicaciones no se bloquearán para que no se conecten a dominios peligrosos. No verá ninguna actividad de red en Microsoft 365 Defender.
 
 Si no lo configura, el bloqueo de red se desactivará de forma predeterminada.
 
-Para obtener más información, vea [Enable network protection](enable-network-protection.md).
+Para obtener más información, vea [Habilitar la protección de red](enable-network-protection.md).
 
 ## <a name="investigation-impact"></a>Impacto de la investigación
 
 Cuando la protección de red esté activada, verás que en la escala de tiempo de un dispositivo la dirección IP seguirá representando el proxy, mientras que la dirección de destino real aparece.
 
-![Imagen de eventos de red en la escala de tiempo del dispositivo.](images/atp-proxy-investigation.png)
+:::image type="content" source="images/atp-proxy-investigation.png" alt-text="Los eventos de red en la escala de tiempo del dispositivo" lightbox="images/atp-proxy-investigation.png":::
 
 Otros eventos desencadenados por la capa de protección de red ahora están disponibles para que los nombres de dominio reales se desencadene incluso detrás de un proxy.
 
 Información del evento:
 
-![Imagen de un solo evento de red.](images/atp-proxy-investigation-event.png)
+:::image type="content" source="images/atp-proxy-investigation-event.png" alt-text="Las direcciones URL de un solo evento de red" lightbox="images/atp-proxy-investigation-event.png":::
 
 ## <a name="hunt-for-connection-events-using-advanced-hunting"></a>Buscar eventos de conexión mediante la búsqueda avanzada
 
@@ -78,7 +78,7 @@ DeviceNetworkEvents
 | take 10
 ```
 
-![Imagen de consulta de búsqueda avanzada.](images/atp-proxy-investigation-ah.png)
+:::image type="content" source="images/atp-proxy-investigation-ah.png" alt-text="Consulta de búsqueda avanzada" lightbox="images/atp-proxy-investigation-ah.png":::
 
 También puede filtrar los eventos relacionados con la conexión con el propio proxy.
 

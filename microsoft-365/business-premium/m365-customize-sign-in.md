@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Personalice la página de inicio de sesión con un aviso de privacidad y consentimiento para Microsoft 365.
-ms.openlocfilehash: 003853e0577b2c23fc8240d2b19918c3235eade8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 8beff76721ce622d5e1943aea1c16fda90b052f1
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767978"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634699"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Personalizar la página de inicio de sesión con un aviso de privacidad y consentimiento
 
@@ -42,8 +42,11 @@ Para actualizar los elementos personalizables en la página de inicio de sesión
 Los elementos que puede actualizar son:
 
 - **Texto de página de inicio de sesión** Un lugar fácil para agregar la declaración de privacidad y consentimiento.
+
 - Imagen de fondo de página de inicio de sesión
+
 - Logotipo de banner
+
 - Sugerencia de nombre de usuario
 
 Para obtener ejemplos de avisos de privacidad y consentimiento, vea el Apéndice A en [Searching and Seizing Computers y Obtaining Electronic Evidence in Criminal Investigations](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).

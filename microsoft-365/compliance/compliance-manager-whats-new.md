@@ -17,22 +17,43 @@ search.appverid:
 - MOE150
 - MET150
 description: Descubra las novedades del Pesebre de cumplimiento y lo que está por venir. Obtenga información sobre evaluaciones actualizadas, nuevas plantillas de evaluación, nuevas acciones y mucho más.
-ms.openlocfilehash: 48aed2e173231e3945bcdd3de73052de9f970a5b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0f368be06b33f485ff687c998615fb8578845daf
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317659"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634215"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Novedades del Administrador de cumplimiento de Microsoft
 
 **En este artículo:** Obtenga información sobre las actualizaciones recientes en el Administrador de cumplimiento.
 
-## <a name="february-2022"></a>Febrero de 2022
+## <a name="march-2022"></a>Marzo de 2022
+
+### <a name="new-templates-available"></a>Nuevas plantillas disponibles
+
+El Administrador de cumplimiento ha publicado las siguientes nuevas plantillas de evaluación:
+
+**Global**
+- ISO 37301
+- NIST 800-207: Confianza cero arquitectura
+- SIG 2022
+
+**Gobierno de Estados Unidos**
+- CMMC v2 Nivel 1
+- CMMC v2 Nivel 2
+
+**Norteamérica**
+- Ley de administración de seguridad de la información: Provincia de Columbia Británica, CA
+
+Ver nuestra [lista completa de plantillas de evaluación](compliance-manager-templates-list.md).
 
 ### <a name="continuous-compliance-assessment-of-improvement-actions"></a>Evaluación continua del cumplimiento de las acciones de mejora
 
 Estamos agregando pruebas automatizadas y generación de pruebas para más de 35 acciones de mejora en el Administrador de cumplimiento que no estaban cubiertas anteriormente por puntuación segura. Con la evaluación continua del cumplimiento, puede recibir actualizaciones sobre cuáles de estas acciones de mejora ha completado si son relevantes para sus evaluaciones de cumplimiento y tiene licencia para acceder a las soluciones relevantes. La evaluación continua de cumplimiento también proporciona a los usuarios visibilidad de la lógica de puntuación de las acciones de mejora y proporciona información y pruebas sobre por qué recibió una puntuación determinada. Esta característica funciona junto con las integraciones existentes con Microsoft 365 puntuación segura y las acciones automatizadas que haya configurado anteriormente seguirán funcionando tal y como están. Obtenga más información sobre [la configuración de pruebas automatizadas](compliance-manager-setup.md#set-up-automated-testing).
+
+## <a name="february-2022"></a>Febrero de 2022
+
 ### <a name="alerts-and-alert-policies"></a>Directivas de alertas y alertas
 
 Los usuarios ahora pueden establecer alertas para los cambios en el Administrador de cumplimiento que una organización quiere realizar un seguimiento. Con un asistente de configuración fácil, puede crear directivas de alerta para crear notificaciones cuando se suceden los siguientes tipos de eventos: un cambio de puntuación de acción de mejora, un cambio de asignación de acción de mejora, un cambio de estado de prueba o implementación en una acción de mejora y una carga o eliminación de archivos en la pestaña Documentos de una acción de mejora. Para obtener más información, visite [Alertas y directivas de alertas del Administrador de cumplimiento](compliance-manager-alert-policies.md).
@@ -43,18 +64,18 @@ Su organización ahora puede recibir recomendaciones del Administrador de cumpli
 
 ## <a name="november-2021"></a>Noviembre de 2021
 
-### <a name="zero-trust-integration-for-the-data-protection-baseline-template"></a>Integración de confianza cero para la plantilla Base de protección de datos
+### <a name="zero-trust-integration-for-the-data-protection-baseline-template"></a>Confianza cero integración de la plantilla Línea base de protección de datos
 
-Zero Trust es un enfoque proactivo e integrado de la seguridad en todas las capas del estado digital que comprueba de forma explícita y continua todas las transacciones, establece privilegios mínimos y se basa en la inteligencia, la detección avanzada y la respuesta en tiempo real a las amenazas. La plantilla Línea base de protección de datos del Administrador de cumplimiento, incluida para todos los usuarios, ahora integra 57 nuevos controles y 36 nuevas acciones para la confianza cero alineadas en las siguientes familias de controles:
+Confianza cero es un enfoque proactivo e integrado de la seguridad en todas las capas de la propiedad digital que comprueba explícita y continuamente todas las transacciones, afirma menos privilegios y se basa en la inteligencia, la detección avanzada y la respuesta en tiempo real a las amenazas. La plantilla Línea base de protección de datos del Administrador de cumplimiento, incluida para todos los usuarios, ahora integra 57 nuevos controles y 36 nuevas acciones para Confianza cero alineadas en las siguientes familias de controles:
 
-- Aplicación de confianza cero
-- Guía de desarrollo de aplicaciones de confianza cero
-- Extremo de confianza cero
-- Datos de confianza cero
-- Identidad de confianza cero
-- Infraestructura de confianza cero
-- Red de confianza cero
-- Visibilidad de confianza cero, automatización y orquestación
+- Confianza cero aplicación
+- Confianza cero de desarrollo de aplicaciones
+- Confianza cero de conexión
+- Confianza cero datos
+- Confianza cero identity
+- Confianza cero infraestructura
+- Confianza cero red
+- Confianza cero visibilidad, automatización y orquestación
 
 ### <a name="new-preview-templates"></a>Nuevas plantillas de vista previa
 
@@ -111,7 +132,7 @@ Consulte la lista completa de plantillas [de evaluación](compliance-manager-tem
 
 El Administrador de cumplimiento ya está disponible para los clientes del DoD del gobierno de Estados Unidos, además de los clientes Community (GCC) moderados y GCC high.
 
-## <a name="march-2021"></a>Marzo de 2021
+## <a name="march-2021"></a>Marzo 2021
 
 ### <a name="active-and-inactive-templates"></a>Plantillas activas e inactivas
 

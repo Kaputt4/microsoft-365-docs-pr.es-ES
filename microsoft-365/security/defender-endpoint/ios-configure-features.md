@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 85ddada93e20e36648fccdb0fe9b2b34ab473212
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c52fac7c5680d8e5f814098410dc2e1993328d2f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681488"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476915"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurar Microsoft Defender para endpoint en características de iOS
 
@@ -58,7 +58,7 @@ Aunque está habilitado de forma predeterminada, puede haber algunos casos que r
 1. Desactiva la **Conectar a petición** para deshabilitar VPN.
 
     > [!div class="mx-imgBorder"]
-    > ![Los config de VPN se conectan a petición.](images/ios-vpn-config.png)
+    > :::image type="content" source="images/ios-vpn-config.png" alt-text="Botón de alternancia para la configuración de VPN Conectar a petición" lightbox="images/ios-vpn-config.png":::
 
 > [!NOTE]
 > La protección web no estará disponible cuando la VPN esté deshabilitada. Para volver a habilitar Protección web, abre la aplicación Microsoft Defender para endpoint en el dispositivo y haz clic o pulsa **en Iniciar VPN**.
@@ -121,18 +121,18 @@ Siga los pasos siguientes para crear una directiva de cumplimiento contra dispos
 1. En [Microsoft Endpoint Manager de administración](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **DevicesCompliance** ->  **policiesCreate** ->  Policy. Seleccione "iOS/iPadOS" como plataforma y haga clic en **Crear**.
 
     > [!div class="mx-imgBorder"]
-    > ![Crear directiva.](images/ios-jb-policy.png)
+    > :::image type="content" source="images/ios-jb-policy.png" alt-text="La pestaña Crear directiva" lightbox="images/ios-jb-policy.png":::
 
 2. Especifique un nombre de la directiva, por ejemplo, "Compliance Policy for Jailbreak".
 3. En la página Configuración de cumplimiento, haga clic para expandir **la sección Estado del** dispositivo y haga clic **en Bloquear** para **el campo Dispositivos con jailbreak** .
 
     > [!div class="mx-imgBorder"]
-    > ![Directiva Configuración.](images/ios-jb-settings.png)
+    > :::image type="content" source="images/ios-jb-settings.png" alt-text="Pestaña Configuración de cumplimiento" lightbox="images/ios-jb-settings.png":::
 
-4. En la **sección Acción por** incumplimiento, seleccione las acciones según sus requisitos y **seleccione Siguiente**.
+4. En la **sección Acciones por** incumplimiento, seleccione las acciones según sus requisitos y seleccione **Siguiente**.
 
     > [!div class="mx-imgBorder"]
-    > ![Acciones de directiva.](images/ios-jb-actions.png)
+    > :::image type="content" source="images/ios-jb-actions.png" alt-text="La pestaña Acciones de no incumplimiento" lightbox="images/ios-jb-actions.png":::
 
 5. En la **sección Asignaciones** , seleccione los grupos de usuarios que desea incluir para esta directiva y, a continuación, **seleccione Siguiente**.
 6. En la **sección Review+Create** , compruebe que toda la información especificada es correcta y, a continuación, seleccione **Crear**.

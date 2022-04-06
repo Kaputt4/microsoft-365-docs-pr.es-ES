@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 7b9443cac6543ac14f6d94bd2809b5263be0a860
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 4c922ef443dbe6e4a1b55159f2c27b35926ff886
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681840"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634457"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -43,7 +43,7 @@ La protección de red ayuda a proteger los dispositivos de eventos basados en In
 La protección de red amplía la protección de [la protección web](web-protection-overview.md) al nivel del sistema operativo. Proporciona funcionalidad de protección web en Edge a otros exploradores compatibles y aplicaciones que no son exploradores. Además, la protección de red proporciona visibilidad y bloqueo de indicadores de peligro (IIC) cuando se usan con detección [y respuesta de puntos de conexión](overview-endpoint-detection-response.md). Por ejemplo, la protección de red funciona con los indicadores [personalizados](manage-indicators.md) que puede usar para bloquear dominios o nombres de host específicos.
 
 > [!TIP]
-> Consulta el sitio de prueba de Microsoft Defender para endpoint en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para ver cómo funciona la protección de red.
+> Consulta el Pertahanan Microsoft untuk Titik Akhir de pruebas en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para ver cómo funciona la protección de red.
 
 > [!NOTE]
 > El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está obsoleto y se eliminará en el futuro.
@@ -68,11 +68,11 @@ Después de habilitar los servicios, es posible que deba configurar la red o fir
 
 ## <a name="configuring-network-protection"></a>Configuración de la protección de red
 
-Para obtener más información acerca de cómo habilitar la protección de red, vea **[Habilitar la protección de red](enable-network-protection.md)**. Use directivas de grupo, PowerShell o CSP mdm para habilitar y administrar la protección de red en la red.
+Para obtener más información acerca de cómo habilitar la protección de red, vea **[Habilitar la protección de red](enable-network-protection.md)**. Usa directiva de grupo, PowerShell o CSP MDM para habilitar y administrar la protección de red en la red.
 
 ## <a name="viewing-network-protection-events"></a>Visualización de eventos de protección de red
 
-La protección de red funciona mejor con [Microsoft Defender para](microsoft-defender-endpoint.md) endpoint, lo que le ofrece informes detallados sobre los eventos y bloques de protección contra vulnerabilidades como parte de los [escenarios de investigación de alertas](investigate-alerts.md).
+La protección de red funciona mejor [Pertahanan Microsoft untuk Titik Akhir, lo](microsoft-defender-endpoint.md) que proporciona informes detallados sobre los eventos y bloques de protección contra vulnerabilidades como parte de los [escenarios de investigación de alertas](investigate-alerts.md).
 
 Cuando la protección de red bloquea una conexión, se muestra una notificación desde el Centro de acciones. El equipo de operaciones de seguridad [puede personalizar la notificación](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) con los detalles de la organización y la información de contacto. Además, las reglas de reducción de superficie de ataque individuales se pueden habilitar y personalizar para adaptarse a determinadas técnicas que se deben supervisar.
 
@@ -80,7 +80,7 @@ También puede usar el modo [de auditoría para](audit-windows-defender.md) eval
 
 ## <a name="review-network-protection-events-in-the-microsoft-365-defender-portal"></a>Revisar los eventos de protección de red en el portal de Microsoft 365 Defender web
 
-Microsoft Defender para endpoint proporciona informes detallados sobre eventos y bloques como parte de sus [escenarios de investigación de alertas](investigate-alerts.md). Puede ver estos detalles en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) en la cola [de](review-alerts.md) alertas o mediante la [búsqueda avanzada](advanced-hunting-overview.md). Si usa el modo [de auditoría](audit-windows-defender.md), puede usar la búsqueda avanzada para ver cómo la configuración de protección de red afectaría al entorno si estuvieran habilitadas.
+Pertahanan Microsoft untuk Titik Akhir proporciona informes detallados sobre eventos y bloques como parte de sus [escenarios de investigación de alertas](investigate-alerts.md). Puede ver estos detalles en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) en la cola [de](review-alerts.md) alertas o mediante la [búsqueda avanzada](advanced-hunting-overview.md). Si usa el modo [de auditoría](audit-windows-defender.md), puede usar la búsqueda avanzada para ver cómo la configuración de protección de red afectaría al entorno si estuvieran habilitadas.
 
 Esta es una consulta de ejemplo para la búsqueda avanzada:
 
@@ -89,7 +89,7 @@ DeviceNetworkEvents
 |where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked', 'ConnectionSuccess')
 ```
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>Revisar eventos de protección de red en Windows visor de eventos
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>Revisar los eventos de protección de red en Windows Visor de eventos
 
 Puede revisar el registro Windows eventos para ver los eventos que se crean cuando la protección de red bloquea (o audita) el acceso a una IP o dominio malintencionado:
 
@@ -142,7 +142,11 @@ Para Windows 10 Enterprise Multi-Session 1909 y versiones 2009, que se usan en W
 
 1. Use [Activar la protección de red](enable-network-protection.md) y siga las instrucciones para aplicar la directiva.
 
-2. Ejecute el siguiente comando de PowerShell: `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
+2. Ejecute los siguientes comandos de PowerShell:
+  - `Set-MpPreference -EnableNetworkProtection Enabled`
+  - `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
+  - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
+  - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
 
 ## <a name="network-protection-troubleshooting"></a>Solución de problemas de protección de red
 
@@ -154,8 +158,8 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Evaluar la protección de](evaluate-network-protection.md) red | Realice un escenario rápido que demuestre cómo funciona la característica y qué eventos se crearían normalmente.
-- [Habilitar la protección de](enable-network-protection.md) red | Use directivas de grupo, PowerShell o CSP mdm para habilitar y administrar la protección de red en la red.
+- [Habilitar la protección de](enable-network-protection.md) red | Usa directiva de grupo, PowerShell o CSP MDM para habilitar y administrar la protección de red en la red.
 - [Configuración de capacidades de reducción de superficie de ataque en Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)

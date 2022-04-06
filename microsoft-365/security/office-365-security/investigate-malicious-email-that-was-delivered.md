@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f3c992ad94d63b44d2f89acff6bb295728a0804
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 48deec7763981b10daf1d0c16cbef95d0e2dbaeb
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681444"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476541"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Investigar el correo electrónico malintencionado que se entregó en Microsoft 365
 
@@ -84,7 +84,7 @@ El Explorador de amenazas es un informe eficaz que puede servir para varios prop
 
 2. En el **menú Ver** , elija **Correo electrónico** \> **todo el correo** electrónico de la lista desplegable.
 
-    ![Menú Vista del explorador de amenazas y Correo electrónico: malware, phish, envíos y todas las opciones de correo electrónico, también contenido : malware.](../../media/tp-InvestigateMalEmail-viewmenu.png)
+    :::image type="content" source="../../media/tp-InvestigateMalEmail-viewmenu.png" alt-text="La lista desplegable Malware" lightbox="../../media/tp-InvestigateMalEmail-viewmenu.png":::
 
     La *vista Malware* es actualmente el valor predeterminado y captura correos electrónicos donde se detecta una amenaza de malware. La *vista Phish* funciona de la misma manera, para phishing.
 
@@ -104,11 +104,11 @@ El Explorador de amenazas es un informe eficaz que puede servir para varios prop
 
    El filtrado avanzado es una gran adición a las capacidades de búsqueda. Un valor BOOLEAN NO en los filtros de dominio  **Destinatario**, **Remitente** y Remitente permite a los administradores investigar excluyendo valores. Esta opción es **igual a ninguna de la** selección. Esta opción permite a los administradores excluir buzones no deseados de las investigaciones (por ejemplo, buzones de alerta y buzones de respuesta predeterminados) y resulta útil para los casos en los que los administradores buscan un asunto específico (por ejemplo, Atención) donde el destinatario puede establecerse en Igual a ninguno de *: defaultMail@contoso.com*. Se trata de una búsqueda de valor exacto.
 
-   ![El filtro Destinatarios: "No contiene ninguno de" Avanzado.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
+   :::image type="content" source="../../media/tp-InvestigateMalEmail-AdvancedFilter.png" alt-text="Panel Destinatarios" lightbox="../../media/tp-InvestigateMalEmail-AdvancedFilter.png":::
 
    Agregar un filtro de hora a la fecha de inicio y la fecha de finalización ayuda al equipo de seguridad a profundizar rápidamente. La duración de tiempo permitida más corta es de 30 minutos. Si puede restringir la acción sospechosa por período de tiempo (por ejemplo, ocurrió hace 3 horas), esto limitará el contexto y ayudará a identificar el problema.
 
-   ![La opción de filtrado por horas para restringir la cantidad de equipos de seguridad de datos tiene que procesarse y cuya duración más corta es de 30 minutos.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
+   :::image type="content" source="../../media/tp-InvestigateMalEmail-FilterbyHours.png" alt-text="La opción filtrar por horas" lightbox="../../media/tp-InvestigateMalEmail-FilterbyHours.png":::
 
 6. **Campos en el** Explorador de amenazas: el Explorador de amenazas expone mucha más información de correo relacionada con la seguridad, como acción de *entrega, ubicación* de *entrega,* *acción* especial, *direccionalidad**,* invalidaciones y amenaza *de dirección URL*. También permite que el equipo de seguridad de la organización investigue con mayor certeza.
 

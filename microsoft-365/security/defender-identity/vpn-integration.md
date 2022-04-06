@@ -9,12 +9,12 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 59ab309b4d5cbab971c161ee1b8a4abefe93be69
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: a5c45ecda43b32e37f7309b9a2de33810d60bd15
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683041"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469171"
 ---
 # <a name="defender-for-identity-vpn-integration-in-microsoft-365-defender"></a>Defender para la integración de VPN de identidad en Microsoft 365 Defender
 
@@ -60,11 +60,11 @@ Realice los pasos siguientes en el servidor RRAS.
 1. Haga clic con el botón secundario en el nombre del servidor y seleccione **Propiedades**.
 1. En la **pestaña Seguridad** , en **Proveedor de contabilidad**, seleccione **Contabilidad RADIUS** y **seleccione Configurar**.
 
-    ![Configuración de RADIUS.](../../media/defender-identity/radius-setup.png)
+   :::image type="content" source="../../media/defender-identity/radius-setup.png" alt-text="Configuración de RADIUS" lightbox="../../media/defender-identity/radius-setup.png":::
 
 1. En la **ventana Agregar servidor RADIUS** , escriba el nombre **del** servidor del [!INCLUDE [Product short](includes/product-short.md)] sensor más cercano (que tiene conectividad de red). Para una alta disponibilidad, puede agregar sensores [!INCLUDE [Product short](includes/product-short.md)] adicionales como servidores RADIUS. En **Puerto**, asegúrese de que el valor predeterminado de 1813 está configurado. Seleccione **Cambiar** y escriba una nueva cadena secreta compartida de caracteres alfanuméricos. Tome nota de la nueva cadena secreta compartida, ya que tendrá que rellenarla más adelante durante la [!INCLUDE [Product short](includes/product-short.md)] configuración. Active el **cuadro Enviar mensajes de cuenta RADIUS y Desasoyéndolo** y seleccione **Aceptar en** todos los cuadros de diálogo abiertos.
 
-    ![Configuración de VPN.](../../media/defender-identity/vpn-set-accounting.png)
+   :::image type="content" source="../../media/defender-identity/vpn-set-accounting.png" alt-text="Configuración de VPN" lightbox="../../media/defender-identity/vpn-set-accounting.png":::
 
 ## <a name="configure-vpn-in-defender-for-identity"></a>Configurar VPN en Defender for Identity
 
@@ -74,17 +74,17 @@ Para configurar los datos de VPN en [!INCLUDE [Product short](includes/product-s
 
 1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya a Configuración y, a **continuación**, **Identities**.
 
-    ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="La opción Identidades en el elemento de menú configuración" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. Seleccione **VPN**.
 1. Seleccione **Habilitar la contabilidad de** radio y escriba el secreto **compartido** que configuró anteriormente en el servidor VPN de RRAS. Después, seleccione **Guardar**.
 
-    ![Integración de VPN.](../../media/defender-identity/vpn-integration.png)
+   :::image type="content" source="../../media/defender-identity/vpn-integration.png" alt-text="Integración de VPN" lightbox="../../media/defender-identity/vpn-integration.png":::
 
 Una vez habilitado, todos los sensores de Defender for Identity escucharán en el puerto 1813 eventos de contabilidad RADIUS y la configuración de VPN se completará.
 
 Después de que el sensor Defender for Identity reciba los eventos VPN y los envíe al servicio en la nube de Defender for Identity para su procesamiento, el perfil de entidad indicará las distintas ubicaciones y actividades de VPN a las que se accede en el perfil indicará las ubicaciones.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Investigar alertas con Microsoft 365 Defender](../defender/investigate-alerts.md)

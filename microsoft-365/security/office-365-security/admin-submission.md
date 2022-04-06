@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal de envíos en el portal de Microsoft 365 Defender para enviar correos electrónicos sospechosos, correos de suplantación de identidad sospechosos, correo no deseado y otros mensajes potencialmente dañinos, direcciones URL y datos adjuntos de correo electrónico a Microsoft para volver a examinarlos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 34d608a6ea114fff8005069f3dc2ddc79c4be45e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: d0d699c3344cc16f3e15996139f1d2d8b608ba50
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682645"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477157"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el portal de envíos para enviar correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft
 
@@ -84,7 +84,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 3. Seleccione la **lista desplegable Marcar como y** notificar y, a continuación, **seleccione No se** \> encontraron amenazas **de suplantación de identidad** o **correo no deseado**.
 
-   :::image type="content" alt-text="Enviar mensajes desde el portal." source="../../media/unified-submission-user-reported-message.png" lightbox="../../media/unified-submission-user-reported-message.png":::
+   :::image type="content" source="../../media/unified-submission-user-reported-message.png" alt-text="La página Envíos" lightbox="../../media/unified-submission-user-reported-message.png":::
 
 El mensaje notificado se marcará como un falso positivo o un falso negativo. Una notificación de correo electrónico se envía automáticamente desde el portal al usuario que informó del mensaje.
 
@@ -108,7 +108,7 @@ El mensaje notificado se marcará como un falso positivo o un falso negativo. Un
 5. Cuando haya terminado, haga clic en **Enviar**.
 
     > [!div class="mx-imgBorder"]
-    > ![Ejemplo de envío de nueva dirección URL.](../../media/submission-flyout-email.png)
+    > :::image type="content" source="../../media/submission-flyout-email.png" alt-text="Proceso de envío de nueva dirección URL" lightbox="../../media/submission-flyout-email.png":::
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Enviar una dirección URL sospechosa a Microsoft
 
@@ -125,7 +125,7 @@ El mensaje notificado se marcará como un falso positivo o un falso negativo. Un
 4. Cuando haya terminado, haga clic en **Enviar**.
 
     > [!div class="mx-imgBorder"]
-    > ![Nuevo ejemplo de envío de correo electrónico.](../../media/submission-url-flyout.png)
+    > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="Proceso de envío de nuevo correo electrónico" lightbox="../../media/submission-url-flyout.png":::
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>Enviar datos adjuntos de correo electrónico sospechosos a Microsoft
 
@@ -142,7 +142,7 @@ El mensaje notificado se marcará como un falso positivo o un falso negativo. Un
 4. Cuando haya terminado, haga clic en **Enviar**.
 
     > [!div class="mx-imgBorder"]
-    > ![Ejemplo de envío de nuevos datos adjuntos.](../../media/submit-email-attachment-for-analysis.png)
+    > :::image type="content" source="../../media/submission-file-flyout.png" alt-text="Proceso de envío de nuevos datos adjuntos" lightbox="../../media/submission-file-flyout.png":::
 
 > [!NOTE]
 > Si el filtrado de malware ha reemplazado los datos adjuntos del mensaje por el archivo Text.txt de alerta de malware, debe enviar el mensaje original desde la cuarentena que contiene los datos adjuntos originales. Para obtener más información sobre la cuarentena y cómo liberar mensajes con falsos positivos de malware, vea [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
@@ -178,7 +178,7 @@ El mensaje notificado se marcará como un falso positivo o un falso negativo. Un
      Cuando haya terminado, haga clic en **Aplicar**.
 
      > [!div class="mx-imgBorder"]
-     > ![Nueva personalización de las opciones de columna para envíos de administrador.](../../media/submit-admin-submissios-customize-columns.png)
+     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="Opciones de la columna Nueva personalización para envíos de administrador" lightbox="../../media/admin-submission-customize-columns.png":::
 
    - Para filtrar las entradas, haga clic **en Filtrar**. Los filtros disponibles son:
      - **Fecha enviada**: **Fecha de inicio y** **Fecha de finalización**.
@@ -186,7 +186,7 @@ El mensaje notificado se marcará como un falso positivo o un falso negativo. Un
      - **Id. de mensaje de red**
      - **Sender**
      - **Destinatario**
-     - **Name**
+     - **Nombre**
      - **Enviado por**
      - **Motivo para enviar**
      - **Estado**
@@ -195,11 +195,11 @@ El mensaje notificado se marcará como un falso positivo o un falso negativo. Un
      Cuando haya terminado, haga clic en **Aplicar**.
 
      > [!div class="mx-imgBorder"]
-     > ![Nuevas opciones de filtro para envíos de administrador.](../../media/submit-admin-submissions-view-filters.png)
+     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="Nuevas opciones de filtro para envíos de administrador" lightbox="../../media/admin-submission-filters.png":::
 
    - Para agrupar las entradas, haga clic **en Agrupar** y seleccione uno de los siguientes valores de la lista desplegable:
      - **Ninguna**
-     - **Type**
+     - **Tipo**
      - **Motivo**
      - **Estado**
      - **Resultado**
@@ -263,7 +263,7 @@ Si ha implementado el complemento Report [Message](enable-the-report-message-add
      Cuando haya terminado, haga clic en **Aplicar**.
 
      > [!div class="mx-imgBorder"]
-     > ![Nuevas opciones de filtro para envíos de usuarios.](../../media/submit-user-submissions-view-filters.png)
+     > :::image type="content" source="../../media/admin-submission-reported-messages.png" alt-text="Nuevas opciones de filtro para envíos de usuarios" lightbox="../../media/admin-submission-reported-messages.png":::
 
    - Para agrupar las entradas, haga clic **en Agrupar** y seleccione uno de los siguientes valores de la lista desplegable:
      - **Ninguna**
@@ -298,4 +298,4 @@ En la **pestaña Mensajes** notificados por el usuario, seleccione un mensaje en
 - **Investigación de desencadenadores**
 
 > [!div class="mx-imgBorder"]
-> ![Nuevas opciones en el botón Acción.](../../media/admin-submission-main-action-button.png)
+> :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="Las nuevas opciones del botón Acción" lightbox="../../media/admin-submission-main-action-button.png":::

@@ -1,11 +1,11 @@
 ---
-title: La página de entidad de correo Office 365 Microsoft Defender para correo electrónico
+title: Página Pertahanan Microsoft untuk Office 365 entidad de correo electrónico
 f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 01/21/2021
+ms.date: 04/01/2022
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Los clientes de Microsoft Defender Office 365 E5 y P1 y P2 ahora pueden obtener una vista de 360 grados de cada correo electrónico con página de entidad de correo electrónico.
-ms.openlocfilehash: d75ebd9b54fc5e7919154a4f65e0d5fc0e77e117
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+description: Pertahanan Microsoft untuk Office 365 clientes de E5 y P1 y P2 ahora pueden obtener una vista de 360 grados de cada correo electrónico con página de entidad de correo electrónico.
+ms.openlocfilehash: 1b74c4c79d05a4a52434810527c92de801b329f0
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475463"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634831"
 ---
 # <a name="the-email-entity-page"></a>Página de la entidad de correo electrónico
 
@@ -32,7 +32,7 @@ ms.locfileid: "64475463"
 - [Usar pestañas de página de entidad de correo electrónico](#use-email-entity-page-tabs)
 - [Nuevo en la página de entidad de correo electrónico](#new-to-the-email-entity-page)
 
-Los administradores de Microsoft Defender para Office 365 E5 y Defender para Office P1 y P2 tienen una vista de 360 grados del correo electrónico mediante la página entidad **Correo electrónico**. Esta página de correo electrónico de acceso se creó para mejorar la información que se entrega en el desplegable "Detalles de correo electrónico [" del](threat-explorer-views.md) Explorador de amenazas.
+Los administradores de Pertahanan Microsoft untuk Office 365 E5 y Defender para Office P1 y P2 tienen una vista de 360 grados del correo electrónico mediante la página entidad **Correo electrónico**. Esta página de correo electrónico de acceso se creó para mejorar la información que se entrega en el desplegable "Detalles de correo electrónico [" del](threat-explorer-views.md) Explorador de amenazas.
 
 ## <a name="reach-the-email-entity-page"></a>Llegar a la página de entidad de correo electrónico
 
@@ -88,7 +88,7 @@ Los administradores pueden obtener una vista previa de los correos electrónicos
 
 Estos detalles son específicos de los datos adjuntos y las direcciones URL de correo electrónico. Los usuarios pueden ver estos detalles yendo al Explorador y aplicando el filtro  de tecnología de detección establecido en detonación de archivos o detonación de dirección URL. Los correos electrónicos filtrados para la detonación de archivos contendrán un archivo malintencionado con detalles de detonación, y los filtrados para direcciones URL contienen una dirección URL malintencionada y sus detalles de detonación.
 
-Los usuarios verán detalles enriquecidos de detonación para datos adjuntos malintencionados conocidos o direcciones URL encontradas en sus correos electrónicos, que se detonaron para su inquilino específico. Constará de la cadena de detonación, el resumen de detonación, la captura de pantalla y los detalles del comportamiento observado para ayudar a los clientes a comprender por qué los datos adjuntos o la dirección URL se consideraron malintencionados y detonados.
+Los usuarios verán detalles enriquecidos de detonación para datos adjuntos malintencionados conocidos o direcciones URL encontradas en sus correos electrónicos, que se detonaron para su inquilino específico. Incluirá la cadena de detonación, el resumen de detonación, la captura de pantalla y los detalles del comportamiento observado para ayudar a los clientes a comprender por qué los datos adjuntos o la dirección URL se consideraron malintencionados y detonados.
 
 1. *Cadena de detonación*. Un único archivo o detonación de dirección URL puede desencadenar varias detonaciones. La cadena Detonación realiza un seguimiento de la ruta de las detonaciones, incluido el archivo malintencionado original o la dirección URL que causó el veredicto, y todos los demás archivos o direcciones URL afectados por la detonación. Es posible que estas direcciones URL o archivos adjuntos no se presenten directamente en el correo electrónico, pero incluir ese análisis es importante para determinar por qué se encontró que el archivo o la dirección URL son malintencionados.  
 
@@ -119,6 +119,14 @@ Los usuarios verán detalles enriquecidos de detonación para datos adjuntos mal
 - *Nivel de queja masiva (BCL):* el nivel de queja masiva (BCL) del mensaje. Un BCL más alto indica que es más probable que un mensaje de correo masivo genere quejas (el resultado natural si es probable que el correo electrónico sea correo no deseado).
 
 - *Nivel de confianza de correo no deseado (SCL):* el nivel de confianza de correo no deseado (SCL) del mensaje. Un valor superior indica que el mensaje tiene más posibilidades de ser correo no deseado.
+
+- *Tipo de cliente*: indica el tipo de cliente desde el que se envió el correo electrónico como REST.
+
+- *Reenvío*: para escenarios con autoforwaridng, indica el usuario de reenvío, así como el tipo de reenvío como ETR o reenvío SMTP. 
+
+- *Lista de distribución*: muestra la lista de distribución, si el destinatario ha recibido el correo electrónico como miembro de la lista. Muestra la lista de distribución de nivel superior si hay listas de distribución anidadas implicadas.  
+
+- *To, Cc*: indica las direcciones que se enumeran en los campos Para y Cc de un correo electrónico. La información de estos campos está restringida a 5000 caracteres. 
 
 - *Nombre de dominio*: es el nombre de dominio del remitente.
 

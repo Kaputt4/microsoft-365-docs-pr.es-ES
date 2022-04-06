@@ -17,30 +17,30 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-get-started
-ms.openlocfilehash: d4e585a7714bddc8c89de75ae49464da7bfe0305
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: c3e7f55a0dd8ad26f2b00b7e2d5840945e777a2a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245332"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470337"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Introducción al Plan 1 de Microsoft Defender para endpoints
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-El portal de Microsoft 365 Defender ( ) le permite ver información sobre las amenazas detectadas, administrar las alertas e incidentes, tomar las medidas necesarias en las amenazas detectadas y administrar [https://security.microsoft.com](https://security.microsoft.com) dispositivos. El Microsoft 365 Defender es donde puede empezar a interactuar con las capacidades de protección contra amenazas que obtiene con Defender for Endpoint Plan 1. En las secciones siguientes se describe cómo empezar:
+El portal[https://security.microsoft.com](https://security.microsoft.com) Microsoft 365 Defender () le permite ver información sobre las amenazas detectadas, administrar las alertas e incidentes, tomar las medidas necesarias en las amenazas detectadas y administrar dispositivos. El Microsoft 365 Defender es donde puede empezar a interactuar con las capacidades de protección contra amenazas que obtiene con Defender for Endpoint Plan 1. En las secciones siguientes se describe cómo empezar:
 
-- [El portal de Microsoft 365 Defender](#the-microsoft-365-defender-portal)
+- [El portal de Microsoft 365 Defender incluye:](#the-microsoft-365-defender-portal)
 - [Visualización y administración de incidentes & alertas](#view-and-manage-incidents--alerts)
 - [Administración de dispositivos](#manage-devices)
 - [Visualización de informes](#view-reports)
 
 ## <a name="the-microsoft-365-defender-portal"></a>El portal de Microsoft 365 Defender
 
-El Microsoft 365 Defender web ( ) es donde verá alertas, administrará dispositivos [https://security.microsoft.com](https://security.microsoft.com) y verá informes. Cuando inicie sesión en el portal de Microsoft 365 Defender, empezará por la página principal, como se muestra en la siguiente imagen:
+El Microsoft 365 Defender web ([https://security.microsoft.com](https://security.microsoft.com)) es donde verá alertas, administrará dispositivos y verá informes. Al iniciar sesión en el portal de Microsoft 365 Defender, empezará por la página principal, como se muestra en la siguiente imagen:
 
-:::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="Portal de Microsoft 365 Defender":::
+:::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="El portal de Microsoft 365 Defender" lightbox="../../media/mde-p1/m365-defender-portal.png":::
 
 La página principal proporciona al equipo de seguridad una vista de agregado de instantáneas de alertas, estado del dispositivo y amenazas detectadas. Defender para la nube está configurado para que el equipo de operaciones de seguridad pueda encontrar la información que está buscando de forma rápida y sencilla.
 
@@ -51,11 +51,11 @@ La página principal proporciona al equipo de seguridad una vista de agregado de
 
 La página principal incluye tarjetas, como la tarjeta Incidentes activos que se muestra en la siguiente imagen:
 
-:::image type="content" source="../../media/mde-p1/active-incidents-card.png" alt-text="Tarjeta de incidentes activos":::
+:::image type="content" source="../../media/mde-p1/active-incidents-card.png" alt-text="La tarjeta Incidentes activos" lightbox="../../media/mde-p1/active-incidents-card.png":::
 
 La tarjeta le proporciona información de un vistazo, junto con un vínculo o botón que puede seleccionar para ver información más detallada. En referencia a nuestra tarjeta de ejemplo Incidentes activos, podemos seleccionar **Ver** todos los incidentes para navegar a nuestra lista de incidentes.
 
-:::image type="content" source="../../media/mde-p1/incidents.png" alt-text="Lista de incidentes":::
+:::image type="content" source="../../media/mde-p1/incidents.png" alt-text="La lista de incidentes" lightbox="../../media/mde-p1/incidents.png":::
 
 ### <a name="navigation-bar-makes-it-easy-to-find-alerts-the-action-center-and-more"></a>La barra de navegación facilita la búsqueda de alertas, el Centro de acciones y mucho más
 
@@ -65,55 +65,55 @@ La barra de navegación de la parte izquierda de la pantalla le permite moverse 
 |:---|:---|
 | **Inicio** | Navega a la página principal del [Microsoft 365 Defender portal](../defender/microsoft-365-security-center-mde.md). |
 | **Alertas de & incidentes** | Se expande para mostrar **incidentes** y **alertas**. |
-| **Alertas de & incidentes**  >  **Incidentes** | Navega a la **lista Incidentes.** Los incidentes se crean cuando se desencadenan alertas o se detectan amenazas. De forma predeterminada, la lista Incidentes muestra los datos de los **últimos** 30 días, con el incidente más reciente enumerado primero. <br/><br/> Para obtener más información, vea [Incidents](view-incidents-queue.md). |
-| **Alertas de & incidentes**  >  **Alertas** | Navega a la lista **alertas** (también denominada cola **de alertas**). Las alertas se desencadenan cuando se detecta un archivo, proceso o comportamiento sospechoso o malintencionado. De forma predeterminada, la **lista de** alertas muestra los datos de los últimos 30 días, con la alerta más reciente en primer lugar. <br/><br/> Para obtener más información, vea [Alerts](alerts-queue.md). |
-| **Centro de actividades** | Navega al Centro de acciones, que realiza un seguimiento de las acciones de corrección y respuesta manual. El Centro de acciones realiza un seguimiento de actividades como estas: <br/>- Antivirus de Microsoft Defender encuentra un archivo malintencionado y, a continuación, bloquea o quita ese archivo. <br/>- El equipo de seguridad aísla un dispositivo.<br/>- Defender for Endpoint detecta y pone en cuarentena un archivo. <br/><br/> Para obtener más información, vea [Centro de acciones](auto-investigation-action-center.md). |
-| **Puntuación de seguridad** | Muestra una representación de la posición de seguridad de la organización junto con una lista de acciones de mejora y métricas. <br/><br/> Para obtener más información, consulte [Puntuación segura de Microsoft](../defender/microsoft-secure-score.md). |
-| **Learning central** | Navega a una lista de rutas de aprendizaje a las que puede acceder para obtener más información sobre Microsoft 365 de seguridad.  |
-| **Puntos de conexión**  >  **Búsqueda** | Navega a una página donde puedes buscar dispositivos específicos por nombre de dispositivo. En la lista de resultados, puede ver detalles, como el nivel de riesgo y el estado de mantenimiento, de un vistazo. |
-|  **Puntos de conexión**  >  **Inventario de dispositivos** | Navega a la lista de dispositivos que están incorporados a Defender para endpoint. Proporciona información sobre dispositivos, como sus niveles de exposición y riesgo. <br/><br/> Para obtener más información, consulta [Inventario de dispositivos](machines-view-overview.md). |
-|  **Puntos de conexión**  >  **Líneas & de configuración** | Se expande para mostrar **líneas base de seguridad** y administración de **configuración.** |
-|  **Puntos de conexión**  >  **Líneas & base de configuración**  >  **Líneas base de seguridad** | Las líneas base de seguridad son directivas preconfiguradas y grupos de opciones de configuración que pueden ayudarle a aplicar la configuración de seguridad recomendada de forma eficaz y eficaz. Las líneas base incluyen opciones basadas en los procedimientos recomendados del sector. Puede mantener la configuración predeterminada o personalizar las líneas base para que se adapten a las necesidades de su organización. <br/><br/> Para obtener más información, consulte [Use security baselines to configure Windows 10 devices in Intune](/mem/intune/protect/security-baselines). |
-|  **Puntos de conexión**  >  **Líneas & base de configuración**  >  **Administración de configuración** | Navega a la página **Administración de configuración** de dispositivos, donde puedes ver información sobre dispositivos incorporados y tomar medidas para incorporar más dispositivos. |
-| **Informes** | Navega a los informes, como el informe de protección contra [amenazas,](threat-protection-reports.md)el informe [de estado](machine-reports.md)y cumplimiento del dispositivo y el informe de [protección web](web-protection-overview.md). |
-| **Estado** | Incluye vínculos al **Centro de mensajes y estado** del **servicio.**  |
-| **Estado**  >  **Estado del servicio** | Navega a la página Estado del servicio en el Centro de administración de Microsoft 365. Esta página le permite ver el estado de mantenimiento en todos los servicios disponibles con las suscripciones de su organización.   |
-| **Estado**  >  **Centro de mensajes** | Navega al Centro de mensajes en el Centro de administración de Microsoft 365. El Centro de mensajes proporciona información sobre los cambios planeados. Cada mensaje describe lo que viene, cómo puede afectar a los usuarios y cómo administrar los cambios. |  
-| **Permisos & roles** | Permite conceder permisos para usar el portal Microsoft 365 Defender web. Los permisos se conceden a través de roles Azure Active Directory (Azure AD). Seleccione un rol y aparecerá un panel desplegable. El menú desplegable contiene un vínculo a Azure AD donde puede agregar o quitar miembros de un grupo de roles. <br/><br/> Para obtener más información, vea [Manage portal access using role-based access control](rbac.md).  |
-| **Configuración** | Navega a la configuración general de su portal de Microsoft 365 Defender (enumerado como Centro de **seguridad)** y Defender para endpoint (enumerado **como Extremos**). <br/><br/> Para obtener más información, [vea Configuración](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal). |
-| **Más recursos** | Muestra una lista de más portales y centros, como Azure Active Directory y el Centro de cumplimiento de Microsoft 365. <br/><br/> Para obtener más información, vea [Portales de seguridad de Microsoft y centros de administración](../defender/portals.md). |
+| **Alertas de & incidentes** >  **Incidentes** | Navega a la **lista Incidentes** . Los incidentes se crean cuando se desencadenan alertas o se detectan amenazas. De forma predeterminada, la lista Incidentes muestra los datos de los **últimos** 30 días, con el incidente más reciente enumerado primero. <br/><br/> Para obtener más información, consulte [Incidentes](view-incidents-queue.md). |
+| **Alertas de & incidentes** >  **Alertas** | Navega a la lista **de** alertas (también denominada cola **de alertas**). Las alertas se desencadenan cuando se detecta un archivo, proceso o comportamiento sospechoso o malintencionado. De forma predeterminada, la **lista de** alertas muestra los datos de los últimos 30 días, con la alerta más reciente en primer lugar. <br/><br/> Para obtener más información, consulta [Alertas](alerts-queue.md). |
+| **Centro de actividades** | Navega al Centro de acciones, que realiza un seguimiento de las acciones de corrección y respuesta manual. El Centro de acciones realiza un seguimiento de actividades como estas: <br/>- Antivirus de Microsoft Defender encuentra un archivo malintencionado y, a continuación, bloquea o quita ese archivo. <br/>- El equipo de seguridad aísla un dispositivo.<br/>- Defender for Endpoint detecta y pone en cuarentena un archivo. <br/><br/> Para obtener más información, consulte [Centro de acciones](auto-investigation-action-center.md). |
+| **Puntuación de seguridad** | Muestra una representación de la posición de seguridad de la organización junto con una lista de acciones de mejora y métricas. <br/><br/> Para obtener más información, consulta [Puntuación segura de Microsoft](../defender/microsoft-secure-score.md). |
+| **Learning hub** | Navega a una lista de rutas de aprendizaje a las que puede obtener acceso para obtener más información sobre Microsoft 365 de seguridad.  |
+| **Puntos de conexión** >  **Búsqueda** | Navega a una página donde puedes buscar dispositivos específicos por nombre de dispositivo. En la lista de resultados, puede ver detalles, como el nivel de riesgo y el estado de mantenimiento, de un vistazo. |
+|  **Puntos de conexión** >  **Inventario de dispositivos** | Navega a la lista de dispositivos que están incorporados a Defender para endpoint. Proporciona información sobre dispositivos, como sus niveles de exposición y riesgo. <br/><br/> Para obtener más información, consulta [Inventario de dispositivos](machines-view-overview.md). |
+|  **Puntos de conexión** >  **Líneas & base de configuración** | Se expande para mostrar **líneas base de seguridad y** **administración de configuración**. |
+|  **Puntos de conexión** >  **Líneas & base de configuración** >  **Líneas base de seguridad** | Las líneas base de seguridad son directivas preconfiguradas y grupos de opciones de configuración que pueden ayudarle a aplicar la configuración de seguridad recomendada de forma eficaz y eficaz. Las líneas base incluyen opciones basadas en los procedimientos recomendados del sector. Puede mantener la configuración predeterminada o personalizar las líneas base para que se adapten a las necesidades de su organización. <br/><br/> Para obtener más información, consulta [Usar líneas base de seguridad para configurar Windows 10 dispositivos en Intune](/mem/intune/protect/security-baselines). |
+|  **Puntos de conexión** >  **Líneas & base de configuración** >  **Administración de configuración** | Navega a la página **Administración de configuración** de dispositivos, donde puedes ver información sobre dispositivos incorporados y tomar medidas para incorporar más dispositivos. |
+| **Informes** | Navega a los informes, como el informe de protección contra [amenazas, el](threat-protection-reports.md) informe de [cumplimiento y estado](machine-reports.md) del dispositivo y el informe [de protección web](web-protection-overview.md). |
+| **Estado** | Incluye vínculos al **Centro de mensajes y estado** **del servicio**.  |
+| **Estado** >  **Estado del servicio** | Navega a la página Estado del servicio en el Centro de administración de Microsoft 365. Esta página le permite ver el estado de mantenimiento en todos los servicios disponibles con las suscripciones de su organización.   |
+| **Estado** >  **Centro de mensajes** | Navega al Centro de mensajes en el Centro de administración de Microsoft 365. El Centro de mensajes proporciona información sobre los cambios planeados. Cada mensaje describe lo que viene, cómo puede afectar a los usuarios y cómo administrar los cambios. |  
+| **Permisos & roles** | Permite conceder permisos para usar el portal Microsoft 365 Defender web. Los permisos se conceden mediante roles en Azure Active Directory (Azure AD). Seleccione un rol y aparecerá un panel desplegable. El menú desplegable contiene un vínculo a Azure AD donde puede agregar o quitar miembros de un grupo de roles. <br/><br/> Para obtener más información, vea [Manage portal access using role-based access control](rbac.md).  |
+| **Configuración** | Navega a la configuración general de su portal de Microsoft 365 Defender (enumerado como Centro de **seguridad) y** Defender para endpoint (enumerado **como Extremos**). <br/><br/> Para obtener más información, [consulte Configuración](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal). |
+| **Más recursos** | Muestra una lista de más portales y centros, como Azure Active Directory y el Centro de cumplimiento de Microsoft 365. <br/><br/> Para obtener más información, consulte [Portales de seguridad de Microsoft y centros de administración](../defender/portals.md). |
 
 > [!TIP]
-> Para obtener más información, vea [la información general Microsoft 365 Defender portal .](../defender/microsoft-365-security-center-mde.md)
+> Para obtener más información, vea la [información general Microsoft 365 Defender portal.](../defender/microsoft-365-security-center-mde.md)
 
 ## <a name="view-and-manage-incidents--alerts"></a>Ver y administrar incidentes & alertas
 
-Cuando inicie sesión en el portal de Microsoft 365 Defender, asegúrese de ver y administrar sus incidentes y alertas. Comience con la **lista incidentes.** En la siguiente imagen se muestra una lista de incidentes, incluidos uno con gravedad alta y otro con gravedad media.
+Cuando inicie sesión en el portal de Microsoft 365 Defender, asegúrese de ver y administrar sus incidentes y alertas. Comience con la **lista incidentes** . En la siguiente imagen se muestra una lista de incidentes, incluidos uno con gravedad alta y otro con gravedad media.
 
 :::image type="content" source="../../media/mde-p1/incidents.png" alt-text="Lista de incidentes":::
 
 Seleccione un incidente para ver detalles sobre el incidente. Los detalles incluyen qué alertas se desencadenaron, cuántos dispositivos y usuarios se vieron afectados y otros detalles. En la siguiente imagen se muestra un ejemplo de detalles de incidentes.
 
-:::image type="content" source="../../media/mde-p1/single-incident.png" alt-text="Detalles del incidente":::
+:::image type="content" source="../../media/mde-p1/single-incident.png" alt-text="Los detalles de un incidente" lightbox="../../media/mde-p1/single-incident.png":::
 
-Usa las **pestañas**  Alertas, **Dispositivos** y Usuarios para ver más información, como las alertas que se desencadenaron, los dispositivos que se vieron afectados y las cuentas de usuario que se vieron afectadas. Desde allí, puedes realizar acciones de respuesta manuales, como aislar un dispositivo, detener y anular un archivo, y así sucesivamente.
+Usa las **pestañas** Alertas **,** Dispositivos y Usuarios para ver más información, como las alertas que se desencadenaron, los dispositivos que se vieron afectados y las cuentas de usuario que se vieron afectadas. Desde allí, puedes realizar acciones de respuesta manuales, como aislar un dispositivo, detener y anular un archivo, y así sucesivamente.
 
 > [!TIP]
-> Para obtener más información sobre el uso de **la vista** Incidentes, vea [Administrar incidentes](manage-incidents.md).
+> Para obtener más información sobre el uso de **la vista** Incidentes, consulte [Administrar incidentes](manage-incidents.md).
 
 ## <a name="manage-devices"></a>Administrar dispositivos
 
 Para ver y administrar los dispositivos de la organización, en la barra de navegación, en **Extremos**, seleccione **Inventario de dispositivos**. Verás una lista de dispositivos como se muestra en la siguiente imagen:
 
-:::image type="content" source="../../media/mde-p1/device-inventory.png" alt-text="Inventario de dispositivos":::
+:::image type="content" source="../../media/mde-p1/device-inventory.png" alt-text="Inventario de dispositivos" lightbox="../../media/mde-p1/device-inventory.png":::
 
 La lista incluye dispositivos para los que se generaron alertas. De forma predeterminada, los datos mostrados son de los últimos 30 días, con los elementos más recientes enumerados primero. Selecciona un dispositivo para ver más información sobre él. Se abre un panel desplegable, como se muestra en la siguiente imagen:
 
-:::image type="content" source="../../media/mde-p1/device-inventory-selecteddevice.png" alt-text="Detalles del dispositivo seleccionado":::
+:::image type="content" source="../../media/mde-p1/device-inventory-selecteddevice.png" alt-text="Detalles del dispositivo seleccionado" lightbox="../../media/mde-p1/device-inventory-selecteddevice.png":::
 
 El panel desplegable muestra detalles, como las alertas activas del dispositivo, e incluye vínculos para realizar acciones, como aislar un dispositivo.
 
-Si hay alertas activas en el dispositivo, puedes verlos en el panel desplegable. Seleccione una alerta individual para ver más detalles sobre ella. También puedes realizar una acción, como Aislar **dispositivo,** para que puedas investigar el dispositivo aún más mientras minimizas el riesgo de infectar otros dispositivos.
+Si hay alertas activas en el dispositivo, puedes verlos en el panel desplegable. Seleccione una alerta individual para ver más detalles sobre ella. También puedes realizar una acción, como Aislar **dispositivo, para** que puedas investigar el dispositivo aún más mientras minimizas el riesgo de infectar otros dispositivos.
 
 > [!TIP]
 > Para obtener más información, consulta [Investigar dispositivos en la lista Defender para dispositivos de punto de conexión](investigate-machines.md).
@@ -122,7 +122,7 @@ Si hay alertas activas en el dispositivo, puedes verlos en el panel desplegable.
 
 En Defender for Endpoint Plan 1, hay varios informes disponibles en Microsoft 365 Defender portal. Para obtener acceso a los informes, siga estos pasos:
 
-1. Vaya al portal de Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
+1. Vaya al portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
 2. En la barra de navegación, elija **Informes**.
 
@@ -137,25 +137,25 @@ En Defender for Endpoint Plan 1, hay varios informes disponibles en Microsoft 36
 
 ### <a name="threat-protection-report"></a>Informe de protección contra amenazas
 
-Para obtener acceso al informe de protección contra amenazas, en el portal de Microsoft 365 Defender, elija **Informes** y, a continuación, elija **Protección contra amenazas**. El informe de protección contra amenazas muestra tendencias de alerta, estado, categorías y mucho más. Las vistas se organizan en dos columnas: **Tendencias de alerta** y Estado de **alerta,** como se muestra en la siguiente imagen:
+Para obtener acceso al informe de protección contra amenazas, en el portal de Microsoft 365 Defender, elija Informes **y, a** continuación, elija **Protección contra amenazas**. El informe de protección contra amenazas muestra tendencias de alerta, estado, categorías y mucho más. Las vistas se organizan en dos columnas: **Tendencias de alerta** y **Estado de alerta**, como se muestra en la siguiente imagen:
 
-:::image type="content" source="../../media/mde-p1/threat-protection-report.png" alt-text="Informe de protección contra amenazas":::
+:::image type="content" source="../../media/mde-p1/threat-protection-report.png" alt-text="Informe de protección contra amenazas" lightbox="../../media/mde-p1/threat-protection-report.png":::
 
 Desplácese hacia abajo para ver todas las vistas de cada lista.
 
-- De forma predeterminada,  las vistas de la columna Tendencias de alerta muestran datos de los últimos 30 días, pero puede establecer una vista para mostrar datos de los últimos tres meses, los últimos seis meses o un intervalo de tiempo personalizado (hasta 180 días).
+- De forma predeterminada, las vistas de  la columna Tendencias de alerta muestran datos de los últimos 30 días, pero puede establecer una vista para mostrar datos de los últimos tres meses, los últimos seis meses o un intervalo de tiempo personalizado (hasta 180 días).
 - Las vistas de la **columna Estado de** alerta son una instantánea del día laborable anterior.
 
 > [!TIP]
-> Para obtener más información, vea [Informe de protección contra amenazas en Defender for Endpoint](threat-protection-reports.md).
+> Para obtener más información, consulte [Informe de protección contra amenazas en Defender para endpoint](threat-protection-reports.md).
 
 ### <a name="device-health-report"></a>Informe de estado del dispositivo
 
-Para obtener acceso al informe de estado del dispositivo, en el portal de Microsoft 365 Defender, elija **Informes** y, a continuación, elija **Estado del dispositivo**. El informe de estado del dispositivo muestra el estado de mantenimiento y el antivirus en todos los dispositivos de la organización. De forma similar al [informe de protección](#threat-protection-report)contra amenazas, las vistas se organizan en dos columnas: Tendencias de dispositivo y **Resumen** de dispositivos, como se muestra en la imagen siguiente: 
+Para obtener acceso al informe de estado del dispositivo, en el portal de Microsoft 365 Defender, elija Informes **y, a** continuación, elija **Estado del dispositivo**. El informe de estado del dispositivo muestra el estado de mantenimiento y el antivirus en todos los dispositivos de la organización. Al igual que el [informe de](#threat-protection-report) protección contra amenazas, las vistas se organizan en dos **columnas: Tendencias** de dispositivo y **Resumen** del dispositivo, como se muestra en la siguiente imagen:
 
-:::image type="content" source="../../media/mde-p1/device-health-report.png" alt-text="Informe de estado del dispositivo":::
+:::image type="content" source="../../media/mde-p1/device-health-report.png" alt-text="Informe de estado del dispositivo" lightbox="../../media/mde-p1/device-health-report.png":::
 
-Desplácese hacia abajo para ver todas las vistas de cada lista. De forma predeterminada,  las vistas de la columna Tendencias de dispositivo muestran datos de los últimos 30 días, pero puede cambiar una vista para mostrar los datos de los últimos tres meses, los últimos seis meses o un intervalo de tiempo personalizado (hasta 180 días). Las **vistas de resumen del** dispositivo son instantáneas del día laborable anterior.
+Desplácese hacia abajo para ver todas las vistas de cada lista. De forma predeterminada, las vistas de  la columna Tendencias de dispositivo muestran datos de los últimos 30 días, pero puede cambiar una vista para mostrar los datos de los últimos tres meses, los últimos seis meses o un intervalo de tiempo personalizado (hasta 180 días). Las **vistas de resumen del** dispositivo son instantáneas del día laborable anterior.
 
 > [!TIP]
 > Para obtener más información, consulta [Estado del dispositivo](machine-reports.md).
@@ -164,12 +164,12 @@ Desplácese hacia abajo para ver todas las vistas de cada lista. De forma predet
 
 Para obtener acceso al informe de estado del dispositivo, en el portal de Microsoft 365 Defender, elija **Informes** y, a continuación, **elija Protección web**. El informe de protección web muestra detecciones con el tiempo, como direcciones URL malintencionadas e intentos de obtener acceso a direcciones URL bloqueadas, como se muestra en la siguiente imagen:
 
-:::image type="content" source="../../media/mde-p1/web-protection-report.png" alt-text="Informe de protección web":::
+:::image type="content" source="../../media/mde-p1/web-protection-report.png" alt-text="Informe de protección web" lightbox="../../media/mde-p1/web-protection-report.png":::
 
 Desplácese hacia abajo para ver todas las vistas del informe de protección web. Algunas vistas incluyen vínculos que permiten ver más detalles, configurar las características de protección contra amenazas e incluso administrar indicadores que sirven como excepciones en Defender para endpoint.
 
 > [!TIP]
-> Para obtener más información, vea [Protección web](web-protection-overview.md).
+> Para obtener más información, consulte [Protección web](web-protection-overview.md).
 
 ## <a name="next-steps"></a>Siguientes pasos
 

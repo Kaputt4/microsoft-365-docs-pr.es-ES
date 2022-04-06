@@ -1,5 +1,5 @@
 ---
-title: Activar los valores predeterminados de seguridad para Microsoft 365 Empresa Premium
+title: Activar los valores predeterminados de seguridad para Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -23,15 +23,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo los valores predeterminados de seguridad pueden ayudar a proteger su organización de ataques relacionados con la identidad proporcionando una configuración de seguridad preconfigurada para Microsoft 365 Empresa Premium.
-ms.openlocfilehash: dfd0d3edff541d828b70d383641aaf66c93826b6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Obtenga información sobre cómo los valores predeterminados de seguridad pueden ayudar a proteger su organización de ataques relacionados con la identidad proporcionando una configuración de seguridad preconfigurada para Microsoft 365 Business Premium.
+ms.openlocfilehash: 9684dc2be113d6f511f1a84e8865ac04a6881ecc
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331314"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634677"
 ---
-# <a name="turn-on-security-defaults-for-microsoft-365-business-premium"></a>Activar los valores predeterminados de seguridad para Microsoft 365 Empresa Premium
+# <a name="turn-on-security-defaults-for-microsoft-365-business-premium"></a>Activar los valores predeterminados de seguridad para Microsoft 365 Business Premium
 
 Los valores predeterminados de seguridad ayudan a proteger su organización de ataques relacionados con la identidad proporcionando una configuración de seguridad preconfigurada que Microsoft administra en nombre de su organización. Estas opciones incluyen habilitar la autenticación multifactor (MFA) para todos los administradores y cuentas de usuario. Para la mayoría de las organizaciones, los valores predeterminados de seguridad ofrecen un buen nivel de seguridad de inicio de sesión adicional.
 
@@ -43,13 +43,13 @@ Para habilitar los valores predeterminados de seguridad en Azure Active Director
 
 1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> con credenciales de administrador de seguridad, administrador de acceso condicional o administrador global.
 
-2. En el panel izquierdo, seleccione **Mostrar todo y, a continuación,** en **Centros de administración**, **seleccione Azure Active Directory**.
+2. En el panel izquierdo, seleccione **Mostrar todo y, a continuación,** en Centros de **administración**, **seleccione Azure Active Directory**.
 
-3. En el panel izquierdo del Centro de **administración de Azure Active Directory,** seleccione **Azure Active Directory**.
+3. En el panel izquierdo del centro **Azure Active Directory administración, seleccione** **Azure Active Directory**.
 
 4. En el menú izquierdo del Panel, en la **sección Administrar** , seleccione **Propiedades**.
 
-    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Captura de pantalla del Centro de administración de Azure Active Directory que muestra la ubicación del elemento de menú Propiedades.":::
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Captura de pantalla del Azure Active Directory de administración que muestra la ubicación del elemento de menú Propiedades.":::
 
 5. En la parte inferior de la **página Propiedades** , seleccione **Administrar valores predeterminados de seguridad**.
 
@@ -70,16 +70,20 @@ Los valores predeterminados de seguridad están disponibles para todos los clien
 
 - Azure Active Directory Premium P1 o P2
 - Microsoft 365 Empresa Premium
-- Microsoft 365 E3 o E5
+- Microsoft 365 E3 o E5
 - Enterprise Mobility & Security E3 o E5
 
 Si desea usar el acceso condicional para configurar directivas equivalentes a las habilitadas por los valores predeterminados de seguridad, consulte las siguientes guías paso a paso:
 
 - [Requerir MFA para los administradores](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+
 - [Requerir MFA para la administración de Azure](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
+
 - [Bloquear la autenticación heredada](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+
 - [Requerir MFA para todos los usuarios](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [Requerir el registro de MFA de Azure AD](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) : requiere Azure AD Identity Protection, que forma parte de Azure Active Directory Premium P2
+
+- [Requerir Azure AD de MFA](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy): requiere Azure AD de identidad, que forma parte de Azure Active Directory Premium P2
 
 Para obtener más información sobre el acceso condicional, vea [¿Qué es el acceso condicional?](/azure/active-directory/conditional-access/overview) Para obtener más información acerca de cómo crear directivas de acceso condicional, vea [Create a Conditional Access policy](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy).
 

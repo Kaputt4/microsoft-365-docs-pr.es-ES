@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: c88eceadf6c00d165b0ac032fab19596abec49e1
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 17675917a737717c352125d23a32b432e681a77f
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525478"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634567"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 
@@ -132,7 +132,7 @@ Las siguientes ubicaciones geográficas globales pueden almacenar datos en repos
 
 | Ubicaciones geográficas globales | Ubicaciones en las que se almacenan los datos de los clientes |
 | --- | --- |
-| Geografía global 1: EMEA (Europa, Oriente Medio y África) | Austria, Finlandia, Francia, Irlanda, Países Bajos |
+| Geografía global 1: EMEA (Europa, Oriente Medio y África) | Austria, Finlandia, Francia, Irlanda, Países Bajos, Suecia |
 | Geografía global 2: Asia Pacífico | RAE de Hong Kong, Japón, Malasia, Singapur, Corea del Sur |
 | Geografía global 3: América | Brasil, Chile, Estados Unidos |
 
@@ -145,7 +145,7 @@ Para los centros de datos específicos de su país o región, a continuación se
 | Australia | Sídney, Melbourne |
 | Brasil | Rio, Campinas |
 | Canadá | Quebec City, Toronto |
-| Unión Europea | Austria (Viena), Finlandia (Helsinki), Francia (París, Marsella), Irlanda (Dublín), Países Bajos (Ámsterdam) |
+| Unión Europea | Austria (Viena), Finlandia (Helsinki), Francia (París, Marsella), Irlanda (Dublín), Países Bajos (Ámsterdam), Suecia (Gvleä, Sandviken, Staffanstorp) |
 | Francia | Paris, Marsella |
 | Alemania | Frankfurt, Berlín |
 | India | Chennai, Mumbai, Pune |

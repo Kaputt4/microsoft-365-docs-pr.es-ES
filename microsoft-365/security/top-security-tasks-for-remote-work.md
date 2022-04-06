@@ -17,18 +17,19 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: Proteja el correo electrónico y los datos de su empresa frente a amenazas cibernéticas, como ransomware, phishing y datos adjuntos malintencionados.
-ms.openlocfilehash: 1277d001118dda764aa9b2a968f1024d5befcac1
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 7f5c52eb0768adc4c64251ed7c3f34cccdf9cd57
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755064"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469457"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Las 12 tareas principales para que los equipos de seguridad admitan el trabajo desde casa
 
 Si es como [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) y de pronto se encuentra con una plantilla basada principalmente en el hogar, queremos ayudarle a asegurarse de que su organización funciona de la forma más segura posible. En este artículo se priorizan las tareas para ayudar a los equipos de seguridad a implementar las funcionalidades de seguridad más importantes lo antes posible.
 
-:::image type="content" source="../media/security/security-support-remote-work.png" alt-text="Las 12 tareas principales para que los equipos de seguridad admitan el trabajo desde casa" lightbox="../media/security/security-support-remote-work.png":::
+:::image type="content" source="../media/security/security-support-remote-work.png" alt-text="Las tareas principales que se realizarán para admitir el trabajo desde casa" lightbox="../media/security/security-support-remote-work.png":::
+
 
 Si es una organización pequeña o mediana que usa uno de los planes de negocio de Microsoft, vea estos recursos en su lugar:
 
@@ -54,7 +55,7 @@ Para los clientes que usan nuestros planes de empresa, Microsoft recomienda comp
 |8 |[Inscribir equipos en la administración de dispositivos y requerir equipos compatibles](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[Optimizar la red para la conectividad en la nube](#9-optimize-your-network-for-cloud-connectivity)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10|[Entrenar a los usuarios](#10-train-users)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|11|[Introducción a Microsoft Defender para aplicaciones en la nube](#11-get-started-with-microsoft-defender-for-cloud-apps)|||![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|11|[Introducción a Microsoft Defender for Cloud Apps](#11-get-started-with-microsoft-defender-for-cloud-apps)|||![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12 |[Supervisar amenazas y tomar medidas](#12-monitor-for-threats-and-take-action)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluido.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 Antes de empezar, compruebe su Microsoft 365 [puntuación segura](./defender/microsoft-secure-score.md) en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal Microsoft 365 Defender usuario</a>. Desde un panel centralizado, puede supervisar y mejorar la seguridad de su Microsoft 365 identidades, datos, aplicaciones, dispositivos e infraestructura. Se le dan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o abordar recomendaciones con una aplicación o software de terceros. Las tareas recomendadas en este artículo elevarán la puntuación.
@@ -122,9 +123,7 @@ Deberá trabajar con el administrador de Exchange Online y el administrador de S
 
 Ahora que ha configurado Microsoft Defender para Office 365 y Microsoft Defender para identidad, puede ver las señales combinadas de estas funciones en un panel. [Microsoft 365 Defender](./defender/microsoft-365-defender.md) reúne alertas, incidentes, investigación y respuesta automatizadas y búsqueda avanzada entre cargas de trabajo (Microsoft Defender para la identidad, Defender para Office 365, Microsoft Defender para endpoint y Microsoft Defender para aplicaciones en la nube) en un único panel de <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">la Microsoft 365 Defender portal</a>.
 
-<!--
-:::image type="content" source="../media/top-ten-security-remote-work-mtp-dashboard.png" alt-text="The MTP dashboard in the Microsoft 365 Defender portal" lightbox="../media/top-ten-security-remote-work-mtp-dashboard.png":::
---> 
+:::image type="content" source="../media/top-ten-security-remote-work-mtp-dashboard.png" alt-text="El Microsoft 365 Defender panel" lightbox="../media/top-ten-security-remote-work-mtp-dashboard.png":::
 
 Después de configurar uno o varios de los servicios de Defender Office 365, active MTP. Las nuevas características se agregan continuamente a MTP; considere la posibilidad de participar para recibir características de vista previa.
 
@@ -213,7 +212,7 @@ Microsoft 365 proporciona los siguientes recursos para ayudar a informar a los u
 |Concepto|Recursos|
 |---|---|
 |Microsoft 365|[Caminos de aprendizaje personalizables](/office365/customlearning/) <p>Estos recursos pueden ayudarle a crear formación para los usuarios finales de su organización|
-|Centro de seguridad de Microsoft 365|[Learning: proteja su organización con seguridad inteligente integrada desde Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Este módulo le permite describir cómo funcionan Microsoft 365 de seguridad conjuntas y para expresar las ventajas de estas características de seguridad.|
+|Seguridad de Microsoft 365|[Learning: proteja su organización con seguridad inteligente integrada desde Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Este módulo le permite describir cómo funcionan Microsoft 365 de seguridad conjuntas y para expresar las ventajas de estas características de seguridad.|
 |Autenticación multifactor|[Comprobación en dos pasos: ¿Cuál es la página de verificación adicional?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Este artículo ayuda a los usuarios finales a comprender qué es la autenticación multifactor y por qué se usa en su organización.|
 
 Además de esta guía, Microsoft recomienda que los usuarios tomen las acciones descritas en este artículo: Proteger su cuenta y dispositivos de [los hackers y malware](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). Entre estas acciones se incluyen:

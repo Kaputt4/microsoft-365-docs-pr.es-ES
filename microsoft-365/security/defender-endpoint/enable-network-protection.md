@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: b21b2f2a69ab9a85f1f5003104969364ae9c6e78
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 4c3b74179294d0b028dd07c3a6f4f28e844237d3
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401152"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469941"
 ---
 # <a name="turn-on-network-protection"></a>Habilitar protección de red
 
@@ -56,9 +56,8 @@ Si falta la clave, vaya a **SOFTWARE** \> **Microsoft** \> **Windows Defender** 
    - 1 o **On**
    - 2, o modo **auditoría**
 
-    :::image type="content" alt-text="Clave del Registro de Protección de red." source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
-    
-    
+    :::image type="content" source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" alt-text="Clave del Registro de Protección de red" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
+
 ## <a name="enable-network-protection"></a>Habilitar la protección de red
 
 Habilite la protección de red mediante cualquiera de estos métodos:
@@ -98,7 +97,7 @@ Use [el proveedor ./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](
 
 1. Inicie sesión en el Microsoft Endpoint Manager de administración (https://endpoint.microsoft.com).
 
-2. Vaya a **DevicesConfiguration** >  **profilesCreate** >  **profile**.
+2. Vaya a **Dispositivos** > **Perfiles de configuración** > **Crear perfil**.
 
 3. En el **control desplegable Crear un perfil** , seleccione **Plataforma** y elija El tipo **de perfil** como **plantillas**.
 
@@ -188,7 +187,7 @@ Confirme que la protección de red está habilitada en un equipo local mediante 
 > $exploitGuardObject.Put()
 >```  
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Protección de red](network-protection.md)
 

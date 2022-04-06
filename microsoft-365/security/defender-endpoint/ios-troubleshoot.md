@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1119d13998510927f249288cc40a47eda45dc9ac
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: bc8cda3fb61ec9338b95eed58f5f0a70e1deb3e1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61218411"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469369"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas más frecuentes sobre Microsoft Defender para punto de conexión en iOS
 
@@ -47,12 +47,12 @@ De forma predeterminada, Defender para endpoint en iOS incluye y habilita la car
 
 Aunque está habilitado de forma predeterminada, puede haber algunos casos que requieran deshabilitar VPN. Por ejemplo, quieres ejecutar algunas aplicaciones que no funcionan cuando se configura una VPN. En tales casos, puedes optar por deshabilitar la VPN directamente desde la aplicación Defender for Endpoint o mediante los siguientes pasos:
 
-1. En el dispositivo iOS, abre la **aplicación Configuración,** haz clic o pulsa **General** y, a continuación, **VPN.**
+1. En el dispositivo iOS, abre la aplicación **Configuración**, haz clic o pulsa **General** y, a continuación, **VPN**.
 1. Haga clic o pulse en el botón "i" de Microsoft Defender para endpoint.
 1. Desactiva la **Conectar a petición** para deshabilitar VPN.
 
     > [!div class="mx-imgBorder"]
-    > ![Los config de VPN se conectan a petición.](images/ios-vpn-config.png)
+    > :::image type="content" source="images/ios-vpn-config.png" alt-text="La Conectar a petición" lightbox="images/ios-vpn-config.png":::
 
 > [!NOTE]
 > La protección web no estará disponible cuando la VPN esté deshabilitada. Para volver a habilitar Web Protection, abra la aplicación Microsoft Defender para Endpoint en el dispositivo y Habilite La protección web.
@@ -88,24 +88,24 @@ Microsoft Defender para endpoint le protege contra la suplantación de identidad
 Además, se muestra una notificación en el dispositivo iOS. Al pulsar en la notificación se abre la siguiente pantalla para que el usuario revise los detalles.
 
 > [!div class="mx-imgBorder"]
-> ![Imagen del sitio notificado como notificación no segura.](images/ios-phish-alert.png)
+> :::image type="content" source="images/ios-phish-alert.png" alt-text="El sitio notificado como notificación no segura" lightbox="images/ios-phish-alert.png":::
 
 ## <a name="device-not-seen-on-the-defender-for-endpoint-console-after-onboarding"></a>El dispositivo no se ve en la consola de Defender for Endpoint después de la incorporación.
 
 Después de la incorporación, el dispositivo tarda unas horas en aparecer en el inventario de dispositivos en la consola de seguridad de Defender para endpoints. Además, asegúrate de que el dispositivo esté registrado correctamente con Azure Active Directory dispositivo tenga conectividad a Internet. Para una incorporación correcta, el dispositivo debe registrarse a través de Microsoft Authenticator o Portal de empresa de Intune y el usuario debe iniciar sesión con la misma cuenta con la que el dispositivo está registrado con Azure AD.
 
 > [!NOTE]
-> A veces, el nombre del dispositivo no es coherente con el de Microsoft Endpoint Manager (Intune). El nombre del dispositivo en la consola defender para endpoint tiene el formato <username_iPhone/iPad modelo>. También puedes usar el Azure AD de dispositivo para identificar el dispositivo en la consola de Defender para endpoint.
+> A veces, el nombre del dispositivo no es coherente con el de Microsoft Endpoint Manager (Intune). El nombre del dispositivo en la consola defender para endpoint tiene el formato <username_iPhone/iPad modelo>. También puedes usar Azure AD de dispositivo para identificar el dispositivo en la consola defender para endpoint.
 
 ## <a name="data-and-privacy"></a>Datos y privacidad
 
-Para obtener más información acerca de los datos recopilados y la privacidad, consulte [Privacy Information - Microsoft Defender for Endpoint on iOS](ios-privacy.md).
+Para obtener más información sobre los datos recopilados y la privacidad, consulta [Información de privacidad: Microsoft Defender para endpoint en iOS](ios-privacy.md).
 
 ## <a name="connectivity-issue-on-cellular-network"></a>Problema de conectividad en la red móvil
 
 Si tiene problemas de conectividad a Internet en la red de telefonía móvil, compruebe si Microsoft Defender para Endpoint tiene los datos móviles habilitados: abra la aplicación Configuración > MS Defender > asegúrese de que "Datos móviles" está habilitado para MS Defender.
 
-Si aún tiene problemas de conectividad, compruebe si activar o desactivar el modo avión ayuda a resolver el problema. Si el problema persiste, envíenos [los registros](ios-troubleshoot.md#send-in-app-feedback).
+Si aún tiene problemas de conectividad, compruebe si activar o desactivar el modo avión ayuda a resolver el problema. Si el problema persiste, envíenos [registros](ios-troubleshoot.md#send-in-app-feedback).
 
 ## <a name="issues-on-supervised-devices-with-content-filter-profile-installed"></a>Problemas en dispositivos supervisados con el perfil de filtro de contenido instalado
 
@@ -122,6 +122,6 @@ Si un usuario se enfrenta a un problema que aún no se ha tratado en las seccion
   - Abre la aplicación MSDefender en el dispositivo iOS/iPadOS.
   - Pulsa en Menú (icono de perfil) en la esquina superior izquierda.
   - Pulsa **Enviar comentarios**.
-  - Elija entre las opciones dadas. Para informar de un problema, seleccione **No me gusta nada**.
+  - Elija entre las opciones dadas. Para informar de un problema, selecciona **No me gusta nada**.
   - Proporcione detalles del problema al que se enfrenta y compruebe **Enviar datos de diagnóstico**. Le recomendamos que incluya su dirección de correo electrónico para que el equipo pueda ponerse en contacto con usted para obtener una solución o un seguimiento.
   - Pulsa **Enviar** para enviar correctamente los comentarios.
