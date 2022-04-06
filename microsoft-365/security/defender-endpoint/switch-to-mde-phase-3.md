@@ -1,7 +1,7 @@
 ---
-title: Cambiar a Microsoft Defender para endpoint - Onboard
-description: Realice el cambio a Microsoft Defender para endpoint. Incorpore dispositivos y, a continuación, desinstale la solución que no es de Microsoft.
-keywords: migración, Microsoft Defender para Endpoint, edr
+title: Cambiar a Microsoft Defender para punto de conexión- Onboard
+description: Realice el cambio a Microsoft Defender para punto de conexión. Incorpore dispositivos y, a continuación, desinstale la solución que no es de Microsoft.
+keywords: migración, Microsoft Defender para punto de conexión, edr
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -21,23 +21,23 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 12/02/2021
+ms.date: 03/28/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 3e92a0525dd70c0f420f581f86f4d6ceb7fd6326
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 1397c34e8e4a7f1fcb20df192409bd57bc50f40b
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807433"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507129"
 ---
-# <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Microsoft Defender para endpoint - Fase 3: Incorporación
+# <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Microsoft Defender para punto de conexión - Fase 3: Incorporación
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| [![Fase 1: Prepare3.](images/phase-diagrams/prepare.png)](switch-to-mde-phase-1.md)<br/>[Fase 1: Preparación](switch-to-mde-phase-1.md) | [![Fase 2: Configuración](images/phase-diagrams/setup.png)](switch-to-mde-phase-2.md)<br/>[Fase 2: Configuración](switch-to-mde-phase-2.md) | ![Fase 3: Incorporación](images/phase-diagrams/onboard.png)<br/>Fase 3: Incorporación |
+| [![Fase 1: Prepare3.](images/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[Fase 1: Preparación](switch-to-mde-phase-1.md) | [![Fase 2: Configuración](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[Fase 2: Configuración](switch-to-mde-phase-2.md) | ![Fase 3: Incorporación](images/phase-diagrams/onboard.png#lightbox)<br/>Fase 3: Incorporación |
 |--|--|--|
 || |*¡Estás aquí!* |
 
@@ -52,7 +52,7 @@ ms.locfileid: "62807433"
 
 ## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Incorporar dispositivos a Microsoft Defender para punto de conexión
 
-1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
+1. Vaya al portal Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
 2. Elija **Configuración** \> **incorporación de puntos de** \> **conexión** (en **Administración de dispositivos**).
 
@@ -61,21 +61,21 @@ ms.locfileid: "62807433"
 4. En **Método de implementación**, seleccione una opción. Siga los vínculos y avisos para incorporar los dispositivos de la organización. ¿Necesita ayuda? Vea [Métodos de incorporación](#onboarding-methods) (en este artículo).
 
 > [!NOTE]
-> Si algo sale mal durante la incorporación, consulta [Solucionar problemas de incorporación de Puntos de conexión de Microsoft Defender](troubleshoot-onboarding.md). En ese artículo se describe cómo resolver problemas de incorporación y errores comunes en los puntos de conexión.
+> Si algo sale mal durante la incorporación, consulte [Solucionar problemas Microsoft Defender para punto de conexión incorporación](troubleshoot-onboarding.md). En ese artículo se describe cómo resolver problemas de incorporación y errores comunes en los puntos de conexión.
 
 ### <a name="onboarding-methods"></a>Métodos de incorporación
 
 > [!IMPORTANT]
-> Si usa Microsoft Defender para la nube, consulte [Integración con Microsoft Defender para la nube](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud).
+> Si usa Microsoft Defender for Cloud, consulte [Integración con Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud).
 
 Los métodos de implementación varían según el sistema operativo y los métodos preferidos. En la tabla siguiente se enumeran los recursos que le ayudarán a incorporarse a Defender for Endpoint:
 
-|Sistemas operativos  |Métodos  |
+|Sistemas operativos  |Methods  |
 |---------|---------|
-|Windows 10 o posterior<br/><br/>Windows Server 2019 o posterior<br/><br/>Windows server, versión 1803 o posterior<br/><br/>Windows Server 2012 R2 y 2016<sup>[[1](#fn1)]<sup>  |   [Script local (hasta 10 dispositivos)](configure-endpoints-script.md)<br><br/>   [Directiva de grupo](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/ Administración de dispositivos móviles (Intune)](configure-endpoints-mdm.md)<br>    [Scripts VDI](configure-endpoints-vdi.md) <br><br> **NOTA**: Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo, Microsoft Endpoint Configuration Manager o Intune. |
-|Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA) o](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) [Microsoft Defender para la nube](/azure/security-center/security-center-wdatp) <br><br> **NOTA**: Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulta [Introducción al agente de Log Analytics](/azure/azure-monitor/platform/log-analytics-agent).  |
+|Windows 10 o posterior<br/><br/>Windows Server 2019 o posterior<br/><br/>Windows Server, versión 1803 o posterior<br/><br/>Windows Server 2012 R2 y 2016<sup>[[1](#fn1)]<sup>  |   [Script local (hasta 10 dispositivos)](configure-endpoints-script.md)<br><br/>   [Directiva de grupo](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/ Mobile Administración de dispositivos (Intune)](configure-endpoints-mdm.md)<br>    [Scripts VDI](configure-endpoints-vdi.md) <br><br> **NOTA**: Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar directiva de grupo, Microsoft Endpoint Configuration Manager o Intune. |
+|Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) o [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br><br> **NOTA**: Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulta [Introducción al agente de Log Analytics](/azure/azure-monitor/platform/log-analytics-agent).  |
 |Windows 8,1 Enterprise<br/><br/>Windows 8.1 Pro<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **NOTA**: Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulta [Introducción al agente de Log Analytics](/azure/azure-monitor/platform/log-analytics-agent).  
-| macOS (consulte [Requisitos del sistema](microsoft-defender-endpoint-mac.md) | [Script local](mac-install-manually.md)<br/><br/>[Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[Administración de dispositivos móviles](mac-install-with-other-mdm.md)   |
+| macOS (consulte [Requisitos del sistema](microsoft-defender-endpoint-mac.md) | [Script local](mac-install-manually.md)<br/><br/>[Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[Mobile Administración de dispositivos](mac-install-with-other-mdm.md)   |
 | Linux (consulte [Requisitos del sistema](microsoft-defender-endpoint-linux.md#system-requirements)) |  [Script local](linux-install-manually.md) <br><br/> [Puppet](linux-install-with-puppet.md) <br><br/> [Ansible](linux-install-with-ansible.md)|  
 | iOS | [Microsoft Endpoint Manager](ios-install.md)     |
 |Android  | [Microsoft Endpoint Manager](android-intune.md)  | 
@@ -97,11 +97,11 @@ Para comprobar que los dispositivos incorporados están correctamente conectados
 |Linux (consulte [Requisitos del sistema](microsoft-defender-endpoint-linux.md#system-requirements))|1. Ejecute el siguiente comando y busque un resultado de **1**: `mdatp health --field real_time_protection_enabled`.<br/><br/>2. Abra una ventana terminal y ejecute el siguiente comando: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`.<br/><br/>3. Ejecute el siguiente comando para enumerar las amenazas detectadas: `mdatp threat list`.<br/><br/>Para obtener más información, [vea Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).|
 
 > [!NOTE]
-> El sitio de demostración defender para el punto de conexión en demo.wd.microsoft.com está en desuso y se quitará en el futuro.
+> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está obsoleto y se eliminará en el futuro.
 
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>Confirme que Antivirus de Microsoft Defender está en modo pasivo en los puntos de conexión
 
-Ahora que los puntos de conexión se han incorporado a Defender for Endpoint, el siguiente paso es asegurarse de que Antivirus de Microsoft Defender se está ejecutando en modo pasivo. Puede usar uno de varios métodos, como se describe en la tabla siguiente:
+Ahora que los puntos de conexión se han incorporado a Defender for Endpoint, el siguiente paso es asegurarse de que Antivirus de Microsoft Defender se ejecuta en modo pasivo. Puede usar uno de varios métodos, como se describe en la tabla siguiente:
 
 <br/><br/>
 
@@ -109,7 +109,7 @@ Ahora que los puntos de conexión se han incorporado a Defender for Endpoint, el
 |---|---|
 |Símbolo del sistema|1. En un dispositivo Windows, abra el símbolo del sistema.<br/><br/>2. Escriba `sc query windefend`y, a continuación, presione ENTRAR.<br/><br/>3. Revise los resultados para confirmar que Antivirus de Microsoft Defender se está ejecutando en modo pasivo.|
 |PowerShell|1. En un dispositivo Windows, abra Windows PowerShell como administrador.<br/><br/>2. Ejecute el siguiente cmdlet de PowerShell: `Get-MpComputerStatus|select AMRunningMode`. <br/><br/>3. Revise los resultados. Debería ver el **modo pasivo**.|
-|Seguridad de Windows app|1. En un Windows, abra la aplicación Seguridad de Windows usuario.<br/><br/>2. Seleccione **Protección contra & virus**.<br/><br/>3. ¿**Quién está protegiendo?** seleccione **Administrar proveedores**.<br/><br/>4. En la página **Proveedores de** seguridad, en **Antivirus**, busque Antivirus de Microsoft Defender **está activado**.|
+|Seguridad de Windows app|1. En un dispositivo Windows, abra la aplicación Seguridad de Windows usuario.<br/><br/>2. Seleccione **Virus & protección contra amenazas**.<br/><br/>3. ¿**Quién está protegiendo?** seleccione **Administrar proveedores**.<br/><br/>4. En la página **Proveedores de** seguridad, en **Antivirus**, busque Antivirus de Microsoft Defender **está activado**.|
 |Administrador de tareas|1. En un dispositivo Windows, abra la aplicación Administrador de tareas.<br/><br/>2. Seleccione la **pestaña** Detalles. Busque **MsMpEng.exeen** la lista.|
 
 > [!NOTE]
@@ -131,8 +131,8 @@ Para establecer Antivirus de Microsoft Defender en modo pasivo en Windows Server
 > [!NOTE]
 > Puede usar otros métodos para establecer la clave del Registro, como los siguientes:
 >
-> - [Preferencia de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
-> - [Herramienta Objeto de directiva de grupo local](/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
+> - [directiva de grupo preferencia](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
+> - [Herramienta directiva de grupo objeto local](/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
 > - [Un paquete en Configuration Manager](/mem/configmgr/apps/deploy-use/packages-and-programs)
 
 ### <a name="start-microsoft-defender-antivirus-on-windows-server-2016"></a>Inicie Antivirus de Microsoft Defender en Windows Server 2016
@@ -157,7 +157,10 @@ Si en este momento tiene:
 - Incorporó los dispositivos de la organización a Defender for Endpoint y
 - Antivirus de Microsoft Defender está instalado y habilitado,
 
-A continuación, el siguiente paso es desinstalar la solución de antivirus, antimalware y endpoint protection que no sea de Microsoft. Al desinstalar la solución que no es de Microsoft, Antivirus de Microsoft Defender pasa del modo pasivo al modo activo. En la mayoría de los casos, esto ocurre automáticamente.
+A continuación, el siguiente paso es desinstalar la solución de antivirus, antimalware y endpoint protection que no sea de Microsoft. Al desinstalar la solución que no es de Microsoft, Antivirus de Microsoft Defender pasa del modo pasivo al modo activo. En la mayoría de los casos, esto ocurre automáticamente. 
+
+> [!IMPORTANT]
+> Si, por algún motivo, Antivirus de Microsoft Defender no entra en modo activo después de desinstalar la solución antivirus o antimalware que no es de Microsoft, vea Antivirus de Microsoft Defender parece que está atascado en modo [pasivo](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode).
 
 Para obtener ayuda con la desinstalación de la solución que no es de Microsoft, póngase en contacto con su equipo de soporte técnico.
 
@@ -170,9 +173,9 @@ Ahora que has incorporado a Defender for Endpoint y has desinstalado la solució
 - Protección de red (NP)
 
 > [!NOTE]
-> El sitio de demostración defender para el punto de conexión en demo.wd.microsoft.com está en desuso y se quitará en el futuro.
+> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está obsoleto y se eliminará en el futuro.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 **¡Enhorabuena**! Ha completado la migración [a Defender for Endpoint](switch-to-mde-overview.md#the-migration-process).
 

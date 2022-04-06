@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5ad0d64ff2f296d0e8282afb02cbe7fc2bb21470
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1c5177946ff3d54ab64c78e9013a8e0c07b0fd11
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938377"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468135"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus de Microsoft Defender en la aplicación Seguridad de Windows aplicación
 
@@ -36,21 +36,21 @@ Configuración que anteriormente formaban parte del cliente de Windows Defender 
 > [!IMPORTANT]
 > Deshabilitar el servicio Seguridad de Windows de aplicaciones no deshabilita Antivirus de Microsoft Defender o [Windows Defender firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Estos se deshabilitan automáticamente cuando se instala un antivirus de terceros o un producto de firewall y se mantienen actualizados.
 >
-> Si deshabilita el servicio de aplicaciones de Seguridad de Windows o configura su configuración de directiva de grupo asociada para evitar que se inicie o ejecute, la aplicación Seguridad de Windows puede mostrar información obsoleta o inexacta sobre los productos antivirus o firewall que haya instalado en el dispositivo.
+> Si deshabilitas el servicio de aplicaciones de Seguridad de Windows o configuras sus opciones de directiva de grupo asociadas para evitar que se inicie o ejecute, la aplicación Seguridad de Windows podría mostrar información obsoleta o inexacta sobre los productos de antivirus o firewall que haya instalado en el dispositivo.
 > También puede impedir Antivirus de Microsoft Defender habilitarse si tiene un antivirus de terceros antiguo o obsoleto, o si desinstala productos antivirus de terceros que haya instalado anteriormente.
 > Esto disminuirá significativamente la protección del dispositivo y podría provocar una infección de malware.
 
-Consulta el [Seguridad de Windows para obtener](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) más información sobre otras Windows de seguridad que se pueden supervisar en la aplicación.
+Consulta el [Seguridad de Windows para](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) obtener más información sobre otras Windows de seguridad que se pueden supervisar en la aplicación.
 
-La Seguridad de Windows es una interfaz de cliente en Windows 10 versión 1703 y posteriores. No es el portal Microsoft 365 Defender web que se usa para revisar y administrar [Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
+La Seguridad de Windows es una interfaz de cliente en Windows 10 versión 1703 y versiones posteriores. No es el portal Microsoft 365 Defender web que se usa para revisar y administrar [Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Revisar la configuración de protección contra virus y amenazas en la Seguridad de Windows aplicación
 
-:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Configuración de protección contra virus y amenazas en Seguridad de Windows aplicación.":::
+:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Configuración de protección contra virus y amenazas en Seguridad de Windows aplicación" lightbox="../../media/wdav-protection-settings-wdsc.png":::
 
-1. Abra la aplicación Seguridad de Windows haciendo clic en el icono de escudo de la barra de tareas o buscando en el menú inicio para **Seguridad de Windows**.
+1. Abre la Seguridad de Windows haciendo clic en el icono de escudo de la barra de tareas o buscando en el menú inicio para **Seguridad de Windows**.
 
-2. Selecciona el **icono protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
+2. Seleccione el **icono Protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
 
 En las secciones siguientes se describe cómo realizar algunas de las tareas más comunes al revisar o interactuar con la protección contra amenazas proporcionada por Antivirus de Microsoft Defender en la Seguridad de Windows aplicación.
 
@@ -59,49 +59,49 @@ En las secciones siguientes se describe cómo realizar algunas de las tareas má
 
 ## <a name="run-a-scan-with-the-windows-security-app"></a>Ejecutar un examen con la Seguridad de Windows aplicación
 
-1. Abra la aplicación Seguridad de Windows búsqueda en el menú inicio de Seguridad y, a continuación, seleccione **Seguridad de Windows**.
+1. Abra la aplicación Seguridad de Windows búsqueda en el menú inicio de Seguridad **y, a** continuación, seleccione **Seguridad de Windows**.
 
-2. Selecciona el **icono protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
+2. Seleccione el **icono Protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
 
-3. Seleccione **Examen rápido**. O bien, para ejecutar un examen completo, seleccione **Opciones de** examen y, a continuación, seleccione una opción, como **Examen completo**.
+3. Seleccione **Examen rápido**. O bien, para ejecutar un examen completo, seleccione **Opciones** de examen y, a continuación, seleccione una opción, como **Examen completo**.
 
 ## <a name="review-the-security-intelligence-update-version-and-download-the-latest-updates-in-the-windows-security-app"></a>Revisa la versión de actualización de inteligencia de seguridad y descarga las actualizaciones más recientes en la aplicación Seguridad de Windows seguridad
 
-:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="Número de versión de inteligencia de seguridad.":::
+:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="Número de versión de inteligencia de seguridad" lightbox="../../media/wdav-wdsc-defs.png":::
 
-1. Abra la aplicación Seguridad de Windows búsqueda en el menú inicio de Seguridad y, a continuación, seleccione **Seguridad de Windows**.
+1. Abra la aplicación Seguridad de Windows búsqueda en el menú inicio de Seguridad *y, a* continuación, seleccione **Seguridad de Windows**.
 
-2. Selecciona el **icono protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
+2. Seleccione el **icono Protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
 
-3. Seleccione **Actualizaciones de protección contra & virus**. La versión instalada actualmente se muestra junto con información sobre cuándo se descargó. Puede comprobar la versión actual con la versión más reciente disponible para la descarga manual o revisar el registro de cambios de esa versión. Vea [Security intelligence updates for Antivirus de Microsoft Defender and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates).
+3. Seleccione **Actualizaciones de protección contra & virus**. La versión instalada actualmente se muestra junto con información sobre cuándo se descargó. Puede comprobar la versión actual con la versión más reciente disponible para la descarga manual o revisar el registro de cambios de esa versión. Vea [Actualizaciones de inteligencia de seguridad para Antivirus de Microsoft Defender y otros antimalware de Microsoft](https://www.microsoft.com/wdsi/defenderupdates).
 
 4. Seleccione **Buscar actualizaciones para** descargar nuevas actualizaciones de protección (si las hay).
 
-## <a name="ensure-microsoft-defender-antivirus-is-enabled-in-the-windows-security-app"></a>Asegúrate Antivirus de Microsoft Defender está habilitado en la Seguridad de Windows aplicación
+## <a name="ensure-microsoft-defender-antivirus-is-enabled-in-the-windows-security-app"></a>Asegúrate de Antivirus de Microsoft Defender está habilitado en la Seguridad de Windows aplicación
 
-1. Abra la aplicación Seguridad de Windows búsqueda en el menú inicio de Seguridad y, a continuación, seleccione **Seguridad de Windows**.
+1. Abra la aplicación Seguridad de Windows búsqueda en el menú inicio de Seguridad *y, a* continuación, seleccione **Seguridad de Windows**.
 
-2. Selecciona el **icono protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
+2. Seleccione el **icono Protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
 
-3. Seleccione **Configuración de protección contra & virus**.
+3. Selecciona **Configuración de protección contra & virus**.
 
 4. Alterna el **conmutador de protección en tiempo** real a **On**.
 
     > [!NOTE]
     > Si desactiva la **protección en tiempo** real, se volverá a activar automáticamente después de un breve retraso. Esto es para asegurarse de que está protegido contra malware y amenazas.
-    > Si instalas otro producto antivirus, Antivirus de Microsoft Defender se deshabilita automáticamente y se indica como tal en la Seguridad de Windows aplicación. Aparecerá una configuración que le permitirá habilitar el [examen periódico limitado.](limited-periodic-scanning-microsoft-defender-antivirus.md)
+    > Si instalas otro producto antivirus, Antivirus de Microsoft Defender se deshabilita automáticamente y se indica como tal en la Seguridad de Windows aplicación. Aparecerá una configuración que le permitirá habilitar el [examen periódico limitado](limited-periodic-scanning-microsoft-defender-antivirus.md).
 
 ## <a name="add-exclusions-for-microsoft-defender-antivirus-in-the-windows-security-app"></a>Agregar exclusiones para Antivirus de Microsoft Defender en la Seguridad de Windows aplicación
 
-1. Abra la aplicación Seguridad de Windows búsqueda en el menú inicio de Seguridad y, a continuación, seleccione **Seguridad de Windows**.
+1. Abra la aplicación Seguridad de Windows búsqueda en el menú inicio de Seguridad *y, a* continuación, seleccione **Seguridad de Windows**.
 
-2. Selecciona el **icono protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
+2. Seleccione el **icono Protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
 
 3. En **Configuración de antivirus y protección contra amenazas**, seleccione **Administrar la configuración**.
 
-4. En **Exclusiones,** seleccione **Agregar o quitar exclusiones**.
+4. En **Exclusiones**, seleccione **Agregar o quitar exclusiones**.
 
-5. Seleccione el icono más ( **+** ) para elegir el tipo y establecer las opciones para cada exclusión.
+5. Seleccione el icono más (**+**) para elegir el tipo y establecer las opciones para cada exclusión.
 
 En la tabla siguiente se resumen los tipos de exclusión y lo que sucede:
 
@@ -112,7 +112,7 @@ En la tabla siguiente se resumen los tipos de exclusión y lo que sucede:
 |---|---|---|
 |**Archivo**|Ubicación <br/>Ejemplo: `c:\sample\sample.test`|El archivo específico se omite Antivirus de Microsoft Defender.|
 |**Folder**|Ubicación <br/>Ejemplo: `c:\test\sample`|Todos los elementos de la carpeta especificada se omiten Antivirus de Microsoft Defender.|
-|**Tipo de archivo**|Extensión de archivo <br/>Ejemplo: `.test`|Todos los archivos con la extensión en cualquier lugar del dispositivo `.test` se omiten Antivirus de Microsoft Defender.|
+|**Tipo de archivo**|Extensión de archivo <br/>Ejemplo: `.test`|Todos los archivos con la `.test` extensión en cualquier lugar del dispositivo se omiten Antivirus de Microsoft Defender.|
 |**Proceso**|Ruta de acceso de archivo ejecutable <br>Ejemplo: `c:\test\process.exe`|El proceso específico y los archivos abiertos por ese proceso se omiten Antivirus de Microsoft Defender.|
 |
 
@@ -123,23 +123,23 @@ Para obtener más información, consulte los siguientes recursos:
 
 ## <a name="review-threat-detection-history-in-the-windows-defender-for-cloud-app"></a>Revisar el historial de detección de amenazas en la aplicación Windows Defender para la nube
 
-1. Abra la aplicación Seguridad de Windows búsqueda en el menú inicio de Seguridad y, a continuación, seleccione **Seguridad de Windows**.
+1. Abra la aplicación Seguridad de Windows búsqueda en el menú inicio de Seguridad *y, a* continuación, seleccione **Seguridad de Windows**.
 
-2. Selecciona el **icono protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
+2. Seleccione el **icono Protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
 
 3. Seleccione **Historial de protección**. Se enumeran los elementos recientes.
 
 ## <a name="set-ransomware-protection-and-recovery-options"></a>Establecer opciones de protección y recuperación de ransomware
 
-1. Abra la aplicación Seguridad de Windows búsqueda en el menú inicio de Seguridad y, a continuación, seleccione **Seguridad de Windows**.
+1. Abra la aplicación Seguridad de Windows búsqueda en el menú inicio de Seguridad *y, a* continuación, seleccione **Seguridad de Windows**.
 
-2. Selecciona el **icono protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
+2. Seleccione el **icono Protección contra & virus** (o el icono de escudo de la barra de menús izquierda).
 
-3. En **Protección contra ransomware,** seleccione **Administrar protección contra ransomware**.
+3. En **Protección contra ransomware**, selecciona **Administrar protección contra ransomware**.
 
-4. Para cambiar **la configuración de acceso controlado a** carpetas, vea Proteger [carpetas importantes con acceso controlado a carpetas.](/microsoft-365/security/defender-endpoint/controlled-folders)
+4. Para cambiar **la configuración de acceso controlado a** carpetas, consulte [Proteger carpetas importantes con acceso controlado a carpetas](/microsoft-365/security/defender-endpoint/controlled-folders).
 
-5. Para configurar las opciones  de recuperación de ransomware, selecciona Configurar en Recuperación de datos ransomware y sigue las instrucciones para vincular o configurar tu cuenta de OneDrive para que puedas recuperarte fácilmente de un ataque de ransomware. 
+5. Para configurar las opciones de recuperación de  ransomware, selecciona  Configurar en Recuperación de datos ransomware y sigue las instrucciones para vincular o configurar tu cuenta de OneDrive para que puedas recuperarte fácilmente de un ataque de ransomware.
 
 ## <a name="see-also"></a>Vea también
 

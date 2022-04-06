@@ -1,5 +1,5 @@
 ---
-title: Configurar directivas Caja fuerte vínculos en Microsoft Defender para Office 365
+title: Configurar directivas de vínculos seguros en Microsoft Defender para Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,17 +16,17 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
-description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de vínculos de Caja fuerte y configuración global de vínculos de Caja fuerte en Microsoft Defender para Office 365.
+description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de vínculos de Caja fuerte y configuración global de vínculos Caja fuerte en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7d4cbaccab3eca371114eec92fe1bf89b2c0e353
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 7a352391a0acc595463a8363da315e8dda2758c1
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312983"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507239"
 ---
-# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas Caja fuerte vínculos en Microsoft Defender para Office 365
+# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas de vínculos seguros en Microsoft Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,19 +37,19 @@ ms.locfileid: "63312983"
 > [!IMPORTANT]
 > Este artículo está destinado a los clientes empresariales que tienen [Microsoft Defender para Office 365](defender-for-office-365.md). Si es un usuario principal que busca información sobre safelinks en Outlook, consulte [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Caja fuerte Links in [Microsoft Defender for Office 365](defender-for-office-365.md) proporciona el examen de direcciones URL de los mensajes de correo electrónico entrantes en el flujo de correo y el tiempo de comprobación de clics de direcciones URL y vínculos en mensajes de correo electrónico y en otras ubicaciones. Para obtener más información, [consulte Caja fuerte Links in Microsoft Defender for Office 365](safe-links.md).
+Caja fuerte links in [Microsoft Defender para Office 365](defender-for-office-365.md) proporciona el examen de direcciones URL de los mensajes de correo electrónico entrantes en el flujo de correo y el tiempo de comprobación de clics de las direcciones URL y vínculos en mensajes de correo electrónico y en otras ubicaciones. Para obtener más información, [vea Caja fuerte links in Microsoft Defender para Office 365](safe-links.md).
 
-Aunque no hay ninguna directiva predeterminada de vínculos de Caja fuerte, la directiva  de seguridad predefinida de protección integrada proporciona protección de vínculos Caja fuerte a todos los destinatarios (usuarios que no están definidos en directivas de vínculos de Caja fuerte personalizadas). Para obtener más información, vea [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
+Aunque no hay ninguna directiva predeterminada de vínculos de Caja fuerte, la directiva  de seguridad predefinida de protección integrada proporciona protección de vínculos Caja fuerte a todos los destinatarios (usuarios que no están definidos en directivas de vínculos de Caja fuerte personalizadas). Para obtener más información, vea [Preset security policies in EOP and Microsoft Defender para Office 365](preset-security-policies.md).
 
 También puede usar los procedimientos de este artículo para crear directivas Caja fuerte vínculos que se aplican a usuarios, grupos o dominios específicos.
 
 > [!NOTE]
 >
-> Puede configurar la configuración global para la protección de Caja fuerte de vínculos **fuera** de Caja fuerte directivas de vínculos. Para obtener instrucciones, consulte [Configure global settings for Caja fuerte Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
+> Puede configurar la configuración global para la protección de Caja fuerte de vínculos **fuera** de Caja fuerte directivas de vínculos. Para obtener instrucciones, consulte [Configure global settings for Caja fuerte Links in Microsoft Defender para Office 365](configure-global-settings-for-safe-links.md).
 >
-> Los administradores deben tener en cuenta las diferentes opciones de configuración para Caja fuerte vínculos. Una de las opciones disponibles es incluir información de identificación del usuario en Caja fuerte vínculos. Esta característica permite a los *equipos de Operaciones* de seguridad investigar posibles riesgos de usuario, tomar medidas correctivas y limitar infracciones costosas.
+> Los administradores deben tener en cuenta las diferentes opciones de configuración para Caja fuerte vínculos. Una de las opciones disponibles es incluir información de identificación del usuario en Caja fuerte vínculos. Esta característica permite a los equipos de operaciones de seguridad (SecOps) investigar posibles riesgos de usuario, tomar medidas correctivas y limitar infracciones costosas.
 
-Puede configurar directivas de vínculos de Caja fuerte en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 elegibles con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin Exchange Online buzones de correo, pero con Microsoft Defender para Office 365 suscripciones de complemento).
+Puede configurar directivas de vínculos seguros contra correo no deseado en el portal de Microsoft 365 Defender o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; EOP PowerShell independiente para organizaciones sin buzones de Exchange Online, pero con suscripciones a completos de Microsoft Defender for Office 365).
 
 Los elementos básicos de una directiva Caja fuerte links son:
 
@@ -123,8 +123,8 @@ La creación de una directiva Caja fuerte links personalizada en el portal de Mi
        - **Espere a que se complete el examen** de direcciones URL antes de entregar el mensaje: seleccione esta opción para esperar a que se complete el examen de direcciones URL en tiempo real antes de entregar el mensaje.
      - **Aplicar Caja fuerte vínculos** a mensajes de correo electrónico enviados dentro de la organización: seleccione esta opción para aplicar la directiva de vínculos de Caja fuerte a los mensajes entre remitentes internos y destinatarios internos.
    - **Seleccione la acción para direcciones** URL desconocidas o potencialmente malintencionadas dentro de  Microsoft Teams: Seleccione Activar para habilitar la protección de vínculos de Caja fuerte para vínculos de Teams. Tenga en cuenta que esta configuración puede tardar hasta 24 horas en tener efecto.
-   - **No realizar un seguimiento de los clics del** usuario: deje esta configuración sin elegir para habilitar los clics del usuario de seguimiento en las direcciones URL de los mensajes de correo electrónico.
-   - **No permitir que los usuarios hagan clic en la dirección URL original**: seleccione esta opción para impedir que los usuarios hagan clic en la dirección URL original en las páginas [de advertencia](safe-links.md#warning-pages-from-safe-links).
+   - **Realizar un seguimiento de los clics del** usuario: deje esta opción seleccionada para habilitar los clics del usuario de seguimiento en las direcciones URL de los mensajes de correo electrónico.
+   - **Permitir a los usuarios hacer clic en la dirección URL original**: desactive esta opción para impedir que los usuarios puedan hacer clic en la dirección URL original en las páginas [de advertencia](safe-links.md#warning-pages-from-safe-links).
    - **No vuelva a escribir las siguientes direcciones URL**: permite el acceso a las direcciones URL especificadas que, de lo contrario, se bloquearían mediante Caja fuerte vínculos.
 
      En el cuadro, escriba la dirección URL o el valor que desee y, a continuación, haga clic en **Agregar**. Repita este paso tantas veces como sea necesario.
@@ -254,7 +254,7 @@ Crear una directiva Caja fuerte vínculos en PowerShell es un proceso de dos pas
 Para crear una directiva de vínculos seguros, use esta sintaxis:
 
 ```PowerShell
-New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
+New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSafeLinksForEmail <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-AllowClickThrough <$true | $false>] [-TrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
 
 > [!NOTE]
@@ -270,11 +270,11 @@ En este ejemplo se crea una directiva de vínculos seguros denominada Contoso Al
 - Activa el examen en tiempo real de las direcciones URL en las que se hace clic, incluidos los vínculos en los que se hace clic que apuntan a archivos.
 - Espere a que se complete el examen de direcciones URL antes de entregar el mensaje.
 - Activa la detección y reescritura de direcciones URL para los mensajes internos.
-- Realizar un seguimiento de los clics de usuario relacionados con la protección de vínculos de Caja fuerte (no estamos usando el parámetro _DoNotTrackUserClicks_ y el valor predeterminado es $false, lo que significa que se realiza un seguimiento de los clics de usuario).
+- Realizar un seguimiento de los clics del usuario relacionados con Caja fuerte de vínculos (no estamos usando el parámetro _TrackUserClicks_ y el valor predeterminado es $true).
 - No permitir que los usuarios hagan clic en la dirección URL original.
 
 ```PowerShell
-New-SafeLinksPolicy -Name "Contoso All" -IsEnabled $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -DoNotAllowClickThrough $true
+New-SafeLinksPolicy -Name "Contoso All" -EnableSafeLinksForEmail $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -AllowClickThrough $false
 ```
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [consulte New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy).
@@ -468,7 +468,7 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule).
 
-Para comprobar que los Caja fuerte están analizando mensajes, compruebe los informes de Microsoft Defender disponibles Office 365 datos. Para obtener más información, vea [Ver informes de Defender para Office 365](view-reports-for-mdo.md) [y Usar el Explorador en el portal Microsoft 365 Defender web](threat-explorer.md).
+Para comprobar que Caja fuerte está analizando mensajes, compruebe los informes de Microsoft Defender para Office 365 disponibles. Para obtener más información, vea [View reports for Defender para Office 365](view-reports-for-mdo.md) and [Use Explorer in the Microsoft 365 Defender portal](threat-explorer.md).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>¿Cómo saber si estos procedimientos han funcionado?
 

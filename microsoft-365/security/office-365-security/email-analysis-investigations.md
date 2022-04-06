@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5c4d1be31742d21f6e7919a8db4a3d2aff75f66e
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 49a244e948da14e328ab3db64dc495ab6e5d6dd4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775398"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468025"
 ---
 # <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>Análisis de correo electrónico en investigaciones para Microsoft Defender para Office 365
 
@@ -74,7 +74,7 @@ Para garantizar que las acciones de investigación estén actualizadas, cualquie
 
 Las pruebas basadas en correo electrónico en **la pestaña Evidencia y respuesta** de un incidente ahora muestran la siguiente información.
 
-:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="Ejemplo de información de análisis de correo electrónico en Evidencia y respuesta." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="La información de análisis de correo electrónico en Evidencia y respuesta" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
 
 De las llamadas numeradas de la figura:
 
@@ -91,7 +91,7 @@ De las llamadas numeradas de la figura:
 
 Para los clústeres de correo electrónico o  correo electrónico de la pestaña Entidades de un **incidente,** Prevenido significa que no había correos electrónicos malintencionados en el buzón para este elemento (correo o clúster). Aquí le mostramos un ejemplo.
 
-:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="Ejemplo de un correo electrónico impedido." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="Un correo electrónico impedido." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
 
 En este ejemplo, el correo electrónico es malintencionado, pero no en un buzón.
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: da05d702a2cb074ece2fec74371e7b5f560cb1ed
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 4d66dad57fa7b045062a0300327b76030c33dfab
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346099"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468179"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -300,11 +300,11 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal.
 > [!IMPORTANT]
 > Si se pierde este paso, cualquier comando ejecutado mostrará un mensaje de advertencia que indica que el producto no tiene licencia. También el `mdatp health` comando devuelve un valor de `false`.
 
-1. En el portal Microsoft 365 Defender, vaya **a Configuración > Endpoints > Administración de dispositivos > incorporación**.
+1. En el portal Microsoft 365 Defender, vaya **a Configuración > endpoints > Administración de dispositivos > incorporación**.
 2. En el primer menú desplegable, seleccione **Linux Server** como sistema operativo. En el segundo menú desplegable, seleccione **Script local** como método de implementación.
 3. Seleccione **Descargar paquete de incorporación**. Guarde el archivo como WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender captura de pantalla del portal.](images/portal-onboarding-linux.png)
+   :::image type="content" source="images/portal-onboarding-linux.png" alt-text="Descargar un paquete de incorporación en el portal de Microsoft 365 Defender incorporación" lightbox="images/portal-onboarding-linux.png":::
 
 4. Desde un símbolo del sistema, compruebe que tiene el archivo y extraiga el contenido del archivo:
 
@@ -413,7 +413,7 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal.
 
 ## <a name="installer-script"></a>Script del instalador
 
-Como alternativa, puede usar un script de [bash del instalador](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) automatizado que se proporciona en nuestro [repositorio GitHub público](https://github.com/microsoft/mdatp-xplat/).
+Como alternativa, puede usar un script de bash del [instalador](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) automatizado que se proporciona en nuestro [repositorio GitHub público](https://github.com/microsoft/mdatp-xplat/).
 El script identifica la distribución y la versión, simplifica la selección del repositorio correcto, configura el dispositivo para extraer el paquete más reciente y combina los pasos de instalación e incorporación del producto.
 
 ```bash

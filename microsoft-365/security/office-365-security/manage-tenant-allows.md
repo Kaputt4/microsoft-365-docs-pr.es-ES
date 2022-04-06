@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar los permisos en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3823290e9f239b14e4bf97fe1ae8ef7020561697
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 755a23d7cddbeb2943809681fc90556a2adac25b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314118"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475551"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Agregar permisos a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -55,9 +55,7 @@ Permitir remitentes (o dominios) en la **página Envíos** en Microsoft 365 Defe
 
 7. Cuando haya terminado, haga clic en el **botón Enviar** .
 
-> [!div class="mx-imgBorder"]
 > ![Enviar malware a Microsoft para el ejemplo de análisis.](../../media/admin-submission-allow-messages.png)
-
 ## <a name="add-url-allows-using-the-submissions-portal"></a>Agregar dirección URL permite usar el portal de envíos
 
 Permitir direcciones URL en la **página Envíos** en Microsoft 365 Defender.
@@ -78,7 +76,6 @@ Permitir direcciones URL en la **página Envíos** en Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
 > ![Enviar dirección URL para el análisis.](../../media/submit-url-for-analysis.png)
-
 ## <a name="add-file-allows-using-the-submissions-portal"></a>Agregar archivo permite usar el portal de envíos
 
 Permitir archivos en la **página Envíos** en Microsoft 365 Defender.

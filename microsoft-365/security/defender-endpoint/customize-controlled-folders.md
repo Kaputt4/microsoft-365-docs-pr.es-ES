@@ -13,14 +13,14 @@ ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.collection: m365initiative-m365-defender
+ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: c290ad42702ddcb815880fedfe72d9de73065b8d
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: b9af738d4b1f59705132a84239d06dc762447417
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322486"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683765"
 ---
 # <a name="customize-controlled-folder-access"></a>Personalizar el acceso controlado a carpetas
 
@@ -45,7 +45,7 @@ El acceso controlado a carpetas te ayuda a proteger los datos valiosos de las am
 
 El acceso controlado a carpetas se aplica a muchas carpetas del sistema y ubicaciones predeterminadas, incluidas carpetas **como** **Documentos**, Imágenes y **Películas**. Puede agregar otras carpetas para protegerse, pero no puede quitar las carpetas predeterminadas de la lista predeterminada.
 
-Agregar otras carpetas al acceso controlado a carpetas puede ser útil para los casos en que no almacena archivos en las bibliotecas de Windows predeterminadas o si ha cambiado la ubicación predeterminada de las bibliotecas.
+Agregar otras carpetas al acceso controlado a carpetas puede ser útil para los casos en los que no almacena archivos en las bibliotecas de Windows predeterminadas o si ha cambiado la ubicación predeterminada de las bibliotecas.
 
 También puede especificar recursos compartidos de red y unidades asignadas. Se admiten variables de entorno y caracteres comodín. Para obtener información acerca del uso de caracteres comodín, vea Usar caracteres comodín en las listas de exclusión de extensión o ruta de [acceso de carpeta y nombre de archivo](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
@@ -73,7 +73,7 @@ Puede usar la aplicación Seguridad de Windows, la directiva de grupo, los cmdle
 
 3. En el **Editor de administración de directivas de grupo**, vaya a **Directivas de configuración** \> del equipo **Plantillas** \> **administrativas**.
 
-4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** \>  \> **Windows Defender acceso** controlado **a carpetas de** Protección \> contra vulnerabilidades de seguridad. <br/>**NOTA**: En versiones anteriores de Windows, es posible que vea **Antivirus de Windows Defender en lugar** de **Antivirus de Microsoft Defender**.
+4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** \>  \> **Windows Defender acceso** a **carpetas controladas de** Protección \> contra vulnerabilidades de seguridad. <br/>**NOTA**: En versiones anteriores de Windows, es posible que vea **Antivirus de Windows Defender en lugar** de **Antivirus de Microsoft Defender**.
 
 5. Haga doble clic en **Carpetas protegidas configuradas** y, a continuación, establezca la opción en **Habilitado**. Seleccione **Mostrar** y especifique cada carpeta que desee proteger.
 
@@ -128,7 +128,7 @@ Una aplicación o servicio permitido solo tiene acceso de escritura a una carpet
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
-3. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** \>  \> **Windows Defender acceso** controlado **a carpetas de** Protección \> contra vulnerabilidades de seguridad.
+3. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** \>  \> **Windows Defender acceso** a **carpetas controladas de** Protección \> contra vulnerabilidades de seguridad.
 
 4. Haga doble clic en **la configuración Configurar aplicaciones permitidas** y establezca la opción en **Habilitado**. Selecciona **Mostrar** y escribe cada aplicación.
 
@@ -169,7 +169,7 @@ Los indicadores de archivo y certificado de Microsoft Defender para endpoint pue
 
 Para obtener más información sobre cómo personalizar la notificación cuando se desencadena una regla y bloquea una aplicación o un archivo, consulta Configurar notificaciones de [alertas en Microsoft Defender para endpoint](configure-email-notifications.md).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Consulte también
 
 - [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 - [Habilitar el acceso controlado a carpetas](enable-controlled-folders.md)

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga ayuda para solucionar problemas y mensajes de error.
-ms.openlocfilehash: 957177dd20817f9b3d5fbc378f22b19eeaef1f7f
-ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
+ms.openlocfilehash: 1bd98a90af19d60aba2e0891c3f993e77523a12c
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64403685"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632369"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>Solucionar problemas y resolver mensajes de error en Microsoft 365 Lighthouse
 
@@ -53,20 +53,20 @@ En este artículo se describen los mensajes de error y los problemas que puede e
 
 **Causa:** Los inquilinos de los clientes no cumplen los siguientes criterios:
 
-  - Debe haber delegado (DAP) configurado para que el proveedor de servicios administrados (MSP) pueda administrar el inquilino del cliente*
-  - Debe tener al menos una Microsoft 365 Empresa Premium, una Microsoft 365 E3 o una licencia Windows 365 Empresa
+  - Debe haber configurado el acceso delegado para que el proveedor de servicios administrados (MSP) pueda administrar el inquilino del cliente*
+  - Debe tener al menos una Microsoft 365 Business Premium, Microsoft 365 E3 licencia o Windows 365 Business licencia
   - No debe tener más de 1000 usuarios con licencia 
 
 **Resolución:** En la tabla siguiente se describen los distintos estados de inquilino que requieren acción y se explica cómo resolverlos.
 
-*Se requieren privilegios de administrador delegados (DAP) para incorporar clientes a Lighthouse. También se recomienda establecer privilegios de administrador delegados pormenorizados (GDAP) con los clientes para habilitar un acceso delegado más seguro. Mientras QUE DAP y GDAP coexisten, GDAP tendrá prioridad para los clientes en los que ambos modelos estén en su lugar. Pronto, los clientes con solo GDAP (y sin DAP) podrán incorporarse a Lighthouse.<br><br>
+*Se requieren privilegios de administrador delegados (DAP) para incorporar clientes a Lighthouse. También se recomienda establecer privilegios de administrador delegados pormenorizados (GDAP) con los clientes para habilitar un acceso delegado más seguro. Mientras QUE DAP y GDAP coexisten, GDAP tendrá prioridad para los clientes en los que ambos modelos estén en su lugar. Pronto, los clientes con solo GDAP (y sin DAP) podrán incorporarse a Lighthouse.
 
 
 | Estado | Descripción | Solución |
 |--|--|--|
 | Inactivo | El inquilino se desinbordó a petición del MSP y ya no se está administrando en Lighthouse. | Debe reactivar el espacio empresarial. En la **página Inquilinos** , seleccione los tres puntos (más acciones) junto al espacio empresarial que desea reactivar y, a continuación, **seleccione Activar inquilino**. Los datos iniciales del cliente pueden tardar entre 24 y 48 horas en aparecer en Lighthouse. |
 | Ineligible: DAP o GDAP no están configurados | No tiene privilegios de administrador de DAP o GDAP configurados con el inquilino, lo que necesita Lighthouse. | Configurar privilegios de administrador de DAP o GDAP en el Centro de partners de Microsoft. |
-| Ineligible: falta la licencia necesaria | Al inquilino le falta una licencia necesaria. Necesitan al menos una Microsoft 365 Empresa Premium o Microsoft 365 E3 licencia. | Asegúrese de que el inquilino tenga asignada al menos Microsoft 365 Empresa Premium o Microsoft 365 E3 licencia. |
+| Ineligible: falta la licencia necesaria | Al inquilino le falta una licencia necesaria. Necesitan al menos una licencia Microsoft 365 Business Premium, Microsoft 365 E3 o Windows 365 Business licencia. | Asegúrese de que el espacio empresarial tenga al menos Microsoft 365 Business Premium, Microsoft 365 E3 o Windows 365 Business licencia asignada. |
 | Ineligible: se ha superado el número de usuarios | El inquilino tiene más del máximo de 1000 usuarios con licencia permitidos por Lighthouse. | Compruebe que el inquilino no tiene más de 1000 usuarios con licencia. |
 | Ineligible: error en la comprobación geográfica | Usted y su cliente no residen en la misma región geográfica, que es requerida por Lighthouse. | Compruebe que el cliente reside en su región geográfica. Si no es así, no puede administrar el espacio empresarial en Lighthouse. |
 | En proceso | Lighthouse descubrió el inquilino, pero aún está en proceso de incorporación. | Permitir a Lighthouse 48 horas completar la incorporación del inquilino. |
@@ -79,7 +79,7 @@ Si confirmaste que el inquilino del cliente cumple los criterios de incorporaci�
 
 **Causa:** No pertenece al grupo de seguridad correcto en Azure AD o no se le ha asignado el rol correcto en el Centro de partners para poder acceder a Lighthouse.
 
-**Resolución:** Asegúrese de que un administrador de su inquilino asociado con los permisos adecuados le haya asignado el grupo de seguridad GDAP correcto en Azure AD y le haya asignado el rol correcto en el Centro de partners. Además, ten en cuenta que algunas acciones de Lighthouse requieren que seas un administrador global. Para obtener más información sobre los roles de GDAP y lo que cada rol puede hacer, consulte [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md). Para obtener una descripción detallada de todos Azure AD roles y permisos integrados para GDAP, vea [Azure AD roles integrados](/azure/active-directory/roles/permissions-reference).
+**Resolución:** Asegúrese de que un administrador de su inquilino asociado con los permisos adecuados le haya asignado el grupo de seguridad GDAP correcto en Azure AD y le haya asignado el rol correcto en el Centro de partners. Además, ten en cuenta que algunas acciones de Lighthouse requieren que seas un administrador global. Para obtener más información sobre los roles GDAP y lo que cada función puede hacer, vea [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). Para obtener una descripción detallada de todos Azure AD roles y permisos integrados para GDAP, vea [Azure AD roles integrados](/azure/active-directory/roles/permissions-reference).
 
 Para los clientes con relaciones DAP, el administrador del partner tendrá que asignarle el rol Agente de administración o Agente de soporte técnico en el Centro de partners. Para obtener una descripción detallada de todos los roles y permisos del Centro de partners, vea [Asignar roles y permisos a los usuarios](/partner-center/permissions-overview).
 
@@ -87,7 +87,7 @@ Para los clientes con relaciones DAP, el administrador del partner tendrá que a
 
 **Causa:** Tiene acceso de GDAP limitado en función de los roles asignados al grupo Azure AD seguridad en el que se encuentra.
 
-**Resolución:** Asegúrese de que un administrador de su inquilino asociado con los permisos adecuados le haya asignado el grupo de seguridad GDAP correcto en Azure AD. Además, ten en cuenta que algunas acciones de Lighthouse requieren que seas un administrador global. Para obtener más información sobre los roles de GDAP y lo que cada rol puede hacer, consulte [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md). Para obtener una descripción detallada de todos Azure AD roles y permisos integrados para GDAP, vea [Azure AD roles integrados](/azure/active-directory/roles/permissions-reference).
+**Resolución:** Asegúrese de que un administrador de su inquilino asociado con los permisos adecuados le haya asignado el grupo de seguridad GDAP correcto en Azure AD. Además, ten en cuenta que algunas acciones de Lighthouse requieren que seas un administrador global. Para obtener más información sobre los roles GDAP y lo que cada función puede hacer, vea [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). Para obtener una descripción detallada de todos Azure AD roles y permisos integrados para GDAP, vea [Azure AD roles integrados](/azure/active-directory/roles/permissions-reference).
 
 ## <a name="customer-tenant-management"></a>Administración de inquilinos de clientes  
 
@@ -107,7 +107,7 @@ Para los clientes con relaciones DAP, el administrador del partner tendrá que a
 
 **Causa:** No ha completado correctamente la configuración de Microsoft Intune dentro del inquilino del cliente.
 
-**Resolución:** Compruebe que ha completado los pasos básicos de configuración de Intune en el inquilino del cliente. Si el problema persiste después de comprobar que la configuración de Intune se ha completado para el inquilino del cliente, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+**Resolución:** Compruebe que ha completado los pasos básicos de configuración para Intune dentro del inquilino del cliente. Si el problema persiste después de comprobar que Intune configuración completa para el inquilino del cliente, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
 ### <a name="cant-access-partner-tenant-data-in-lighthouse"></a>No se puede acceder a los datos de inquilinos de partners en Lighthouse
 
@@ -119,7 +119,7 @@ Para los clientes con relaciones DAP, el administrador del partner tendrá que a
 
 ### <a name="i-dont-see-any-customer-tenant-data-on-the-device-compliance-and-threat-management-pages-of-lighthouse"></a>No veo datos de inquilinos de clientes en las páginas de administración de amenazas y cumplimiento de dispositivos de Lighthouse
 
-**Causa 1:** El inquilino del cliente no ha completado la incorporación a Intune. Los datos del inquilino del cliente no estarán disponibles en las páginas Cumplimiento del dispositivo o Administración de amenazas de Lighthouse hasta que el inquilino del cliente haya completado la incorporación a Intune.
+**Causa 1:** El inquilino del cliente no ha completado la incorporación a Intune. Los datos del inquilino del cliente no estarán disponibles en las páginas Cumplimiento de dispositivos o Administración de amenazas de Lighthouse hasta que el inquilino del cliente haya completado la incorporación a Intune.
 
 **Resolución:** Compruebe que el inquilino del cliente para el que está intentando ver los datos haya completado la incorporación a Intune. Una vez completada la incorporación en Intune, espere 4 horas para que los datos del dispositivo aparezcan en Lighthouse.
 

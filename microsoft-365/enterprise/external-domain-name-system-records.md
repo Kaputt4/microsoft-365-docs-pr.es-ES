@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Una lista de referencia de registros externos del sistema de nombres de dominio que se usan al planear una implementación de Office 365.
-ms.openlocfilehash: 3ba8345c17446f7f6d2d6b034415288eb994ee79
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: d2c73094da0547fbc02a4520d4361941b829619c
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568442"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651353"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Registros externos del Sistema de nombres de dominio para Office 365
 
@@ -78,7 +78,7 @@ Los clientes de correo electrónico que utilizan federación de Exchange tambié
 |**Registro DNS** <br/> |**Finalidad** <br/> |**Valor para usar** <br/> |
 |----------|-----------|------------|
 |**CNAME** <br/> **(Exchange Online)** <br/> |Ayuda a los clientes de Outlook a conectarse fácilmente al servicio Exchange Online con el servicio de detección automática. La detección automática encuentra automáticamente el host de Exchange Server correcto y configura Outlook para los usuarios.  <br/> |**Alias:** Autodiscover  <br/> **Destino:** autodiscover.outlook.com  <br/> |
-|**MX** <br/> **(Exchange Online)** <br/> |Envía el correo entrante para su dominio al servicio de Exchange Online de Office 365.  <br/> **Nota:** Una vez que el correo fluye a Exchange Online, debe eliminar los registros MX que hacen referencia a su antiguo sistema.   |**Dominio:** por ejemplo, contoso.com  <br/> **Servidor de correo electrónico de destino:**\<MX token\>.mail.protection.outlook.com  <br/> **Preferencia/Prioridad:** Inferior a todos los registros MX (garantiza el envío de correo a Exchange Online) - por ejemplo, 1 o “baja”  <br/>  Siga estos pasos para buscar el \<MX token\>:  <br/>  Inicie sesión en Office 365, vaya a la Administración de Office 365 \> Dominios.  <br/>  En la columna Acción para su dominio, elija Corregir problemas.  <br/>  En la sección de registros MX, elija ¿Qué puedo corregir?  <br/>  Siga las instrucciones de esta página para actualizar el registro MX.  <br/> [¿Qué es una prioridad de MX?](../admin/setup/domains-faq.yml) <br/> |
+|**MX** <br/> **(Exchange Online)** <br/> |Envía el correo entrante para su dominio al servicio de Exchange Online de Office 365.  <br/> **Nota:** Una vez que el correo fluye a Exchange Online, debe eliminar los registros MX que hacen referencia a su antiguo sistema.   |**Dominio:** por ejemplo, contoso.com  <br/> **Servidor de correo electrónico de destino:**\<MX token\>.mail.protection.outlook.com  <br/> **Valor de tiempo de vida (TTL):** 3600 <br/> **Preferencia/Prioridad:** Inferior a todos los registros MX (garantiza el envío de correo a Exchange Online) - por ejemplo, 1 o “baja”  <br/>  Siga estos pasos para buscar el \<MX token\>:  <br/>  Inicie sesión en Office 365, vaya a la Administración de Office 365 \> Dominios.  <br/>  En la columna Acción para su dominio, elija Corregir problemas.  <br/>  En la sección de registros MX, elija ¿Qué puedo corregir?  <br/>  Siga las instrucciones de esta página para actualizar el registro MX.  <br/> [¿Qué es una prioridad de MX?](../admin/setup/domains-faq.yml) <br/> |
 |**SPF (TXT)** <br/> **(Exchange Online)**  <br/> |Ayuda a evitar que otros usen su dominio para enviar correo no deseado u otros correos electrónicos malintencionados. Los registros de la estructura de directivas de remitente (SPF) trabajan para identificar los servidores que estén autorizados para enviar correo electrónico desde su dominio.  <br/> |[Registros DNS externos necesarios para SPF](external-domain-name-system-records.md#BKMK_SPFrecords) <br/> |
 |**TXT** <br/> **(Federación de Exchange)** <br/> |Utilizado para la federación de Exchange para la implementación híbrida.  <br/> |**Registro 1 TXT:** por ejemplo, contoso.com y texto hash asociado, generado de forma personalizada y de prueba de dominio (por ejemplo, Y96nu89138789315669824)  <br/> **Registro 2 TXT:** por ejemplo, exchangedelegation.contoso.com y texto hash asociado, generado de forma personalizada y de prueba del dominio (por ejemplo Y3259071352452626169)  <br/> |
 |**CNAME** <br/> **(Federación de Exchange)** <br/> |Ayuda a los clientes de Outlook a conectarse fácilmente al servicio de Exchange Online con el servicio de detección automática cuando su empresa utilice la federación de Exchange. La detección automática encuentra automáticamente el host de Exchange Server correcto y configura para los usuarios.  <br/> |**Alias:** por ejemplo, Autodiscover.service.contoso.com  <br/> **Destino:** autodiscover.outlook.com  <br/> |

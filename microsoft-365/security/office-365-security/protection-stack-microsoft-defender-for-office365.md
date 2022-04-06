@@ -13,19 +13,20 @@ ms.localizationpriority: medium
 description: Siga la ruta de un mensaje entrante a través de la pila de filtrado de amenazas en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9f778cba51cb9317dc5f371e12629941b23c96ae
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 62d7ac9f13f59fce3b635f6d1dace2f22ee7f503
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935058"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683831"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protección contra amenazas paso a paso en Microsoft Defender para Office 365
 
-La pila de protección Office 365 o filtrado de Microsoft Defender se puede dividir en 4 fases, como en este artículo. En general, el correo entrante pasa a través de todas estas fases antes de la entrega, pero la ruta de acceso real que toma el correo electrónico está sujeta a defender de una organización para Office 365 configuración.
+La pila de protección Office 365 o filtrado de Microsoft Defender se puede dividir en 4 fases, como en este artículo. En términos generales, el correo entrante pasa por todas estas fases antes de la entrega, pero la ruta de acceso real que toma el correo electrónico está sujeta al Defender de una organización para Office 365 configuración.
 
 > [!TIP]
-> Permanece atento hasta el final de este artículo para obtener un *gráfico* unificado de las 4 fases de Defender para Office 365 protección.
+> Permanece atento hasta el final de este artículo para obtener  un gráfico unificado de las 4 fases de Defender para Office 365 protección.
 
 ## <a name="phase-1---edge-protection"></a>Fase 1: protección perimetral
 
@@ -33,11 +34,11 @@ Desafortunadamente, los bloques perimetrales que antes eran *críticos* ahora so
 
 Los bloques perimetrales están diseñados para ser automáticos. En el caso de falso positivo, se notificará a los remitentes y se les indica cómo solucionar su problema. Los conectores de socios de confianza con reputación limitada pueden garantizar la entrega, o se pueden establecer invalidaciones temporales, al incorporar nuevos puntos de conexión.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="La fase 1 del filtrado en Defender para Office 365 es protección perimetral.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="La fase 1 del filtrado en Defender for Office 365 es Protección perimetral.":::
 
 1. **La limitación de** red protege Office 365 infraestructura y clientes de ataques por denegación de servicio (DOS) limitando el número de mensajes que puede enviar un conjunto específico de infraestructura.
 
-2. **La reputación y la limitación** de IP bloquearán los mensajes que se envían desde direcciones IP de conexión no válidas conocidas. Si una DIRECCIÓN IP específica envía muchos mensajes en un breve período de tiempo, se limitarán.
+2. **La reputación y la limitación de IP** bloquearán los mensajes que se envían desde direcciones IP de conexión no válidas conocidas. Si una DIRECCIÓN IP específica envía muchos mensajes en un breve período de tiempo, se limitarán.
 
 3. **La reputación** del dominio bloqueará los mensajes que se envíen desde un dominio no conocido.
 
@@ -51,7 +52,7 @@ Los bloques perimetrales están diseñados para ser automáticos. En el caso de 
 
 Las características de la inteligencia del remitente son fundamentales para capturar mensajes de correo no deseado, masivos, suplantación y suplantación no autorizados, y también tienen en cuenta la detección de phish. La mayoría de estas características se pueden configurar individualmente.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="La fase 2 del filtrado en Defender for Office 365 es la inteligencia del remitente.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="La fase 2 del filtrado en Defender para Office 365 es la inteligencia del remitente.":::
 
 1. **Los desencadenadores y** alertas de detección de riesgo de cuentas se desencadenan cuando una cuenta tiene un comportamiento anómalo, coherente con el riesgo. En algunos casos, la cuenta de usuario se bloquea e impide enviar más mensajes de correo electrónico hasta que el equipo de operaciones de seguridad de una organización resuelva el problema.
 
@@ -83,11 +84,11 @@ En esta fase, la pila de filtrado comienza a controlar el contenido específico 
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="La fase 3 del filtrado en MDO es el filtrado de contenido.":::
 
-1. **Las reglas** de transporte (también conocidas como reglas de flujo de correo o reglas de transporte Exchange) permiten que un administrador lleve a cabo una amplia variedad de acciones cuando se cumple una amplia gama de condiciones para un mensaje. Todos los mensajes que fluyen a través de la organización se evalúan con las reglas de flujo de correo /reglas de transporte habilitadas.
+1. **Las reglas** de transporte (también conocidas como reglas de flujo de correo o reglas de transporte de Exchange) permiten a un administrador realizar una amplia variedad de acciones cuando se cumple una amplia gama de condiciones para un mensaje. Todos los mensajes que fluyen a través de la organización se evalúan con las reglas de flujo de correo /reglas de transporte habilitadas.
 
 2. **Antivirus de Microsoft Defender** y dos *motores antivirus de terceros* se usan para detectar todo el malware conocido en los datos adjuntos.
 
-3. Los motores antivirus (AV) también se usan para escribir en  true todos los datos adjuntos, de modo que el bloqueo de tipos puede bloquear todos los datos adjuntos de los tipos especificados por el administrador.
+3. Los motores antivirus (AV) también se usan para escribir en true todos los datos adjuntos, de modo  que el bloqueo de tipos puede bloquear todos los datos adjuntos de los tipos especificados por el administrador.
 
 4. Siempre que Microsoft Defender para Office 365 detecta datos adjuntos malintencionados, el hash del archivo y un hash de su contenido activo se agregan a la reputación de Exchange Online Protection (EOP). **El bloqueo de reputación** de datos adjuntos bloqueará ese archivo en todos los Office 365, y en los puntos de conexión, a través de llamadas en la nube de MSAV.
 
@@ -95,11 +96,11 @@ En esta fase, la pila de filtrado comienza a controlar el contenido específico 
 
 6. **Modelo de aprendizaje automático** actúa sobre el encabezado, el contenido del cuerpo y las direcciones URL de un mensaje para detectar intentos de suplantación de identidad.
 
-7. Microsoft usa la determinación de la reputación del espacio aislado de direcciones URL, así como la reputación de direcciones URL de fuentes de terceros en el bloqueo de reputación de direcciones **URL,** para bloquear cualquier mensaje con una dirección URL malintencionada conocida.
+7. Microsoft usa una determinación de reputación del espacio aislado de direcciones URL, así como la reputación de direcciones URL de fuentes de terceros en el bloqueo de reputación de direcciones **URL**, para bloquear cualquier mensaje con una dirección URL malintencionada conocida.
 
 8. **Los heurísticos de contenido** pueden detectar mensajes sospechosos en función de la estructura y la frecuencia de palabras dentro del cuerpo del mensaje, mediante modelos de aprendizaje automático.
 
-9. **Caja fuerte attachments** sandboxes todos los datos adjuntos de Defender para Office 365 clientes, mediante análisis dinámico para detectar amenazas nunca antes vistas.
+9. **Caja fuerte attachments** sandboxes every attachment for Defender for Office 365 customers, using dynamic analysis to detect never-before seen threats.
 
 10. **Detonación de contenido vinculado** trata todas las direcciones URL que se vinculan a un archivo de un correo electrónico como datos adjuntos, creando de forma asincrónica un espacio aislado en el archivo en el momento de la entrega.
 
@@ -111,9 +112,9 @@ La última fase tiene lugar después de la entrega de correo o archivo, actuando
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="La fase 4 del filtrado en Defender for Office 365 es la protección posterior a la entrega.":::
 
-1. **Vínculos seguros** es la protección de tiempo de clic de Defender para Office 365. Cada dirección URL de cada mensaje se ajusta para apuntar a servidores de vínculos de Microsoft Caja fuerte. Cuando se hace clic en una dirección URL, se comprueba con la reputación más reciente, antes de redirigir al usuario al sitio de destino. La dirección URL está asincrónicamente en espacio aislado para actualizar su reputación.
+1. **Vínculos seguros** es la protección de tiempo de clic de Defender para Office 365. Cada dirección URL de cada mensaje se ajusta para que apunte a los servidores de vínculos Caja fuerte Microsoft. Cuando se hace clic en una dirección URL, se comprueba con la reputación más reciente, antes de redirigir al usuario al sitio de destino. La dirección URL está asincrónicamente en espacio aislado para actualizar su reputación.
 
-2. La purga automática de hora cero (ZAP) para la suplantación de identidad **(phishing)** detecta y neutraliza de forma retroactiva los mensajes de suplantación de identidad malintencionados que ya se han entregado Exchange Online buzones de correo.
+2. **La purga automática de hora cero (ZAP) para la suplantación de identidad (phishing)** detecta y neutraliza de forma retroactiva los mensajes de suplantación de identidad malintencionados que ya se han entregado Exchange Online buzones de correo.
 
 3. **ZAP para malware** detecta y neutraliza de forma retroactiva los mensajes malintencionados malware que ya se han entregado a buzones de Exchange Online.
 
@@ -121,22 +122,22 @@ La última fase tiene lugar después de la entrega de correo o archivo, actuando
 
 5. **Las vistas de** campaña permiten a los administradores ver la imagen general de un ataque, más rápido y completamente, de lo que cualquier equipo podría sin automatización. Microsoft aprovecha las grandes cantidades de datos contra suplantación de identidad (phishing), antispam y antimalware en todo el servicio para ayudar a identificar las campañas y, a continuación, permite a los administradores investigarlas de principio a fin, incluidos los destinos, los impactos y los flujos, que también están disponibles en una escritura de campaña descargable.
 
-6. **Los** complementos de mensaje de informe permiten a los usuarios notificar fácilmente falsos positivos (correo electrónico bueno, marcados erróneamente como *negativos)* o falsos negativos (correo electrónico erróneo marcado como *bueno)* a Microsoft para su análisis posterior.
+6. **Los complementos de** mensaje de informe permiten a los usuarios notificar fácilmente falsos positivos (correo electrónico bueno, marcados erróneamente como *negativos)* o falsos negativos (correo electrónico erróneo marcado como *bueno) a* Microsoft para su análisis posterior.
 
 7. **Caja fuerte Links for Office clients** ofrece la misma protección de tiempo de clic de Caja fuerte Links, de forma nativa, dentro de clientes de Office como Word, PowerPoint y Excel.
 
-8. La protección **para OneDrive, SharePoint** y Teams ofrece la misma protección de datos adjuntos de Caja fuerte contra archivos malintencionados, de forma nativa, dentro de OneDrive, SharePoint y Microsoft Teams.
+8. **La protección para OneDrive, SharePoint y Teams** ofrece la misma protección de datos adjuntos de Caja fuerte contra archivos malintencionados, de forma nativa, dentro de OneDrive, SharePoint y Microsoft Teams.
 
 9. Cuando se selecciona una dirección URL que apunta a un archivo después de la entrega, la **detonación de** contenido vinculado muestra una página de advertencia hasta que se completa el espacio aislado del archivo y se encuentra que la dirección URL es segura.
 
 ## <a name="the-filtering-stack-diagram"></a>Diagrama de pila de filtrado
 
-El diagrama final (como con todas las partes del diagrama que lo componen) está sujeto a cambios a medida que el producto *crece y se desarrolla*. Marca esta página y usa **la** opción de comentarios que encontrarás en la parte inferior si necesitas preguntar después de las actualizaciones. Para los registros, esta es la pila con todas las fases en orden:
+El diagrama final (como con todas las partes del diagrama que lo componen) está sujeto a cambios a medida que *el producto crece y se desarrolla*. Marca esta página y **usa la opción** de comentarios que encontrarás en la parte inferior si necesitas preguntar después de las actualizaciones. Para los registros, esta es la pila con todas las fases en orden:
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Todas las fases de filtrado en Defender para Office 365 orden, de 1 a 4.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Todas las fases de filtrado en Defender para Office 365 en orden, de 1 a 4.":::
 
 ## <a name="more-information"></a>Más información
 
-¿Necesita configurar Microsoft Defender para Office 365 ***en este momento** _? Use esta pila, _now*, con [este paso a paso](protect-against-threats.md) para empezar a proteger su organización.
+¿Necesita configurar Microsoft Defender para Office 365 ***right now** _? Use esta pila, _now*, con [este paso a paso](protect-against-threats.md) para empezar a proteger su organización.
 
-*Gracias especial de MSFTTracyP y* del equipo de redacción de documentos a Giulian Garruba por este contenido .
+*Especial agradecimiento de MSFTTracyP y del equipo de redacción de documentos a Giulian Garruba por este contenido*.

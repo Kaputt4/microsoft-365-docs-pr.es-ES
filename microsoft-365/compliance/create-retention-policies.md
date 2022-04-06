@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 94388a375c3c50d97e696637ef6ef4ebefc96aab
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 5a57093ed4ecd5b87a62701e3c055888ed16a5ca
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63715501"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595332"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -74,7 +74,7 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
 ### <a name="retention-policy-for-teams-locations"></a>Directiva de retención para ubicaciones de Teams
 
 > [!NOTE]
-> Las directivas de retención ahora admiten [canales compartidos](/MicrosoftTeams/shared-channels), actualmente en versión preliminar. Cuando se configuran las opciones de retención para la ubicación de los **mensajes del canal de Teams**, si un equipo tiene canales compartidos, éstos heredan las opciones de retención de su equipo primario.
+> Las directivas de retención ahora admiten [canales compartidos](/MicrosoftTeams/shared-channels), actualmente en versión preliminar. Al configurar las opciones de retención para la ubicación de **mensajes del canal de** Teams, si un equipo tiene canales compartidos, heredan la configuración de retención de su equipo primario.
 
 1. Desde el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Información de gobernanza** > **Directivas de retención**.
 
@@ -143,11 +143,6 @@ Es posible que una directiva de retención que se aplique a los grupos de Micros
     - Si ha elegido **Adaptable**: en la página **Elegir ámbitos y ubicaciones de directivas adaptables**, seleccione **Agregar ámbitos** y seleccione uno o varios ámbitos adaptables que se hayan creado. A continuación, seleccione una o más ubicaciones. Las ubicaciones que podrá seleccionar dependen de los [tipos de ámbito](retention-settings.md#configuration-information-for-adaptive-scopes) que se hayan agregado. Por ejemplo, si solo ha agregado un tipo de ámbito de **Usuario**, podrá seleccionar **mensajes de usuario de Yammer** pero no **mensajes de la comunidad de Yammer**. 
     
     - Si ha elegido **Estática**: en la página **Elegir ubicaciones para aplicar la directiva**, alterne entre una o ambas ubicaciones para Yammer: **mensajes de la comunidad de Yammer** y **mensajes de usuario de Yammer**.
-        
-        > [!IMPORTANT]
-        > Aunque puede crear una directiva de retención solo para los mensajes de usuario de Yammer, una directiva de retención para esta ubicación puede eliminar los mensajes de la comunidad de la aplicación Yammer para todos los miembros de la comunidad.
-        > 
-        > Si elige esta opción y la directiva de retención se configurará para eliminar mensajes de usuario, asegúrese de comprender esta implicación. Para más información, consulte [Cómo funciona la retención con Yammer](retention-policies-yammer.md#how-retention-works-with-yammer).
         
         De forma predeterminada se seleccionan todas las comunidades y los usuarios, pero también puede restringir los resultados al especificar qué comunidades y usuarios desea incluir o excluir.
         

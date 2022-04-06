@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ddb02d67866e675febda59fac15e8e494188a47f
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 05e8fccc200b39a606fa67a857631e215c8d4b1c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302546"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467629"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Programar exámenes con Microsoft Defender para endpoint (Linux)
 
@@ -27,7 +27,7 @@ ms.locfileid: "61302546"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-Para ejecutar un examen para Linux, vea [Comandos admitidos](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
+Para ejecutar un examen para Linux, consulte [Comandos admitidos](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
 
 Linux (y Unix) tienen una herramienta denominada **crontab** (similar al Programador de tareas) para poder ejecutar tareas programadas.
 
@@ -53,7 +53,7 @@ sudo crontab -l > /var/tmp/cron_backup_200919.dat
 ```
 
 > [!NOTE]
-> Donde 200919 == YRMMDD
+> Where 200919 == YRMMDD
 
 > [!TIP]
 > Haga esto antes de editar o quitar.
@@ -88,14 +88,14 @@ CRON_TZ=America/Los_Angeles
 
 Presione "Esc"
 
-Escriba " `:wq` " sin las comillas dobles.
+Escriba "`:wq`" sin las comillas dobles.
 
 > [!NOTE]
 > w == write, q == quit
 
 Para ver los trabajos de cron, escriba `sudo crontab -l`
 
-:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp.":::
+:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="La página mdatp de linux" lightbox="../../media/linux-mdatp-1.png":::
 
 #### <a name="to-inspect-cron-job-runs"></a>Para inspeccionar las ejecuciones de trabajos cron
 

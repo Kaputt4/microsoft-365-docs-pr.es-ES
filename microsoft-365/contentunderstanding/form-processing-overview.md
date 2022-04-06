@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo usar la compilación de AI para crear modelos de procesamiento de formularios en Microsoft SharePoint Syntex.
-ms.openlocfilehash: d04de2fc71b0b393e560e354253be42053725416
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: a3a3d1fa0e160b96d487a5eeb03c69f9e4fe7fb3
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450778"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507397"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Resumen del procesamiento de formularios en Microsoft SharePoint Syntex
 
@@ -46,6 +46,10 @@ Un Office 365 debe habilitar el procesamiento de formularios para la biblioteca 
 ### <a name="file-limitations"></a>Limitaciones de archivos
 
 Al usar modelos de procesamiento de formularios, asegúrese de tener en cuenta las [limitaciones específicas para el uso de archivos](/ai-builder/form-processing-model-requirements).
+
+### <a name="supported-languages"></a>Idiomas admitidos
+
+El procesamiento de formularios admite documentos en más de 73 idiomas. Para obtener la lista de idiomas, consulte [Compatibilidad con el lenguaje de procesamiento de formularios](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support).
 
 ### <a name="multi-geo-environments"></a>Entornos de Multi-Geo
 

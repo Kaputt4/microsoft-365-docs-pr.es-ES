@@ -20,23 +20,25 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: f58611f555b022b69211e39f149effef925dde17
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
-ms.translationtype: HT
+ms.openlocfilehash: e64006873c3419b9c6d93d3b367a5753f5478738
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049136"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651419"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Paso 6. Supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad
 
 Después de que su organización haya implementado Microsoft Defender para punto de conexión, puede obtener más información y protección de los dispositivos mediante la integración de Microsoft Intune con Defender para punto de conexión. En el caso de los dispositivos móviles, esto incluye la capacidad de supervisar el riesgo del dispositivo como una condición de acceso. En el caso de los dispositivos Windows, puede supervisar el cumplimiento de estos dispositivos con las líneas base de seguridad. 
+
+Nota: La implementación de Microsoft Defender para punto de conexión incluye puntos de conexión de incorporación. Para obtener más información sobre la incorporación de dispositivos para Microsoft 365 funcionalidades, consulte [Inscripción de dispositivos frente a dispositivos de incorporación](manage-devices-with-intune-overview.md#enrolling-devices-vs-onboarding-devices).  
 
 ![Ilustración de integración de Defender para punto de conexión y Microsoft Intune](../media/devices/devices-defender-for-endpoint-steps.png#lightbox)
 
 En esta ilustración:
 - Microsoft Defender para punto de conexión aumenta en gran medida la sofisticación de la protección contra amenazas para dispositivos. 
 - Aunque Microsoft Intune permite establecer directivas de protección de aplicaciones y administrar dispositivos (incluidos los cambios de configuración), Defender para punto de conexión supervisa continuamente los dispositivos en busca de amenazas y puede tomar medidas automatizadas para corregir los ataques. 
-- Puede usar Intune para incorporar dispositivos a Defender para punto de conexión. Al hacerlo, también habilita estos dispositivos para que funcionen con la Prevención de pérdida de datos en punto de conexión de Microsoft 365 (DLP de punto de conexión).
+- Puede usar Intune para incorporar dispositivos a Defender para punto de conexión. Al hacerlo, también permite que estos dispositivos funcionen con las funcionalidades de cumplimiento de Microsoft 365, incluida la prevención de pérdida de datos de punto de conexión (DLP).
 
 En este artículo se incluyen estos pasos:
 - Conectar Microsoft Intune a Defender para punto de conexión

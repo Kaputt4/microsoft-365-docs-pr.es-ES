@@ -20,13 +20,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Descubra cómo cancelar sus suscripciones de prueba o de pago de Dynamics 365, Intune, Power Platform y Microsoft 365 para empresas en el Centro de administración de Microsoft 365.
-ms.date: 01/20/2022
-ms.openlocfilehash: 82d579cab43b2c1edd7cc3bd898f2397bbd7a435
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 03/31/2022
+ms.openlocfilehash: d6b6c078c5f0d1b44143f3a9cc2d336a0a80fe03
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320093"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595288"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
@@ -49,11 +49,11 @@ Si quiere cancelar la suscripción, la manera más fácil de hacerlo es [desacti
 
 ### <a name="if-you-have-a-billing-profile"></a>Si tiene un perfil de facturación
 
-Solo puede cancelar y recibir un crédito prorrateado o un reembolso si lo cancela en un plazo de 72 horas después del inicio o la renovación de tu suscripción. Si cancela durante este período de tiempo limitado, el importe prorrateado se acredita en la próxima factura o se le devuelve en el siguiente ciclo de facturación.
+Solo puede cancelar y recibir un crédito o reembolso prorrateado si lo cancela en un plazo de siete días después del inicio o la renovación de la suscripción. Si cancela durante este período de tiempo limitado, el importe prorrateado se acredita en la próxima factura o se le devuelve en el siguiente ciclo de facturación.
 
-Si necesita cancelar en un plazo de 72 horas después del inicio o renovación de la suscripción, vaya a [Pasos para cancelar la suscripción](#steps-to-cancel-your-subscription) más adelante en este artículo.
+Si necesita cancelar en un plazo de siete días después del inicio o la renovación de la suscripción, vaya a [Pasos para cancelar la suscripción](#steps-to-cancel-your-subscription), más adelante en este artículo.
 
-Si han pasado más de 72 horas, [desactive la facturación periódica](renew-your-subscription.md). Esto impide que se le vuelva a cobrar por la suscripción y le permite mantener el acceso a sus productos y servicios durante el resto de la suscripción.
+Si han transcurrido más de siete días, [desactive la facturación periódica](renew-your-subscription.md). Esto evita que se le vuelva a cobrar por la suscripción y le permite mantener el acceso a sus productos y servicios durante el resto de la suscripción.
 
 ### <a name="if-you-dont-have-a-billing-profile"></a>Si no tiene un perfil de facturación
 
@@ -109,7 +109,7 @@ Cuando la cancelación se haga efectiva, los usuarios perderán el acceso a sus 
 
 ### <a name="uninstall-office-optional"></a>Desinstalar Office (opcional)
 
-Si canceló su suscripción y no [movió los usuarios a una suscripción diferente](move-users-different-subscription.md) que incluya Microsoft 365, este se ejecutará en el modo de funcionalidad reducida. Cuando esto sucede, los usuarios solo pueden leer e imprimir documentos y las aplicaciones de Microsoft 365 mostrarán [Notificaciones de producto sin licencia](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380). Para evitar confusiones, solicite a sus usuarios que [desinstalen Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8) de sus equipos.
+Si ha cancelado la suscripción y no ha [movido los usuarios a otra suscripción](move-users-different-subscription.md) que incluya Microsoft 365, Microsoft 365 se ejecutará en modo de funcionalidad reducida. Cuando esto sucede, los usuarios solo pueden leer e imprimir documentos y las aplicaciones de MIcrosoft 365 mostrarán [notificaciones de producto sin licencia](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380). Para evitar confusiones, solicite a los usuarios que [desinstalen Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8) de sus equipos.
 
 ### <a name="close-your-account-optional"></a>Cerrar la cuenta (opcional)
 

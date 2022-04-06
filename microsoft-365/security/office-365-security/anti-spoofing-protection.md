@@ -22,12 +22,12 @@ ms.localizationpriority: high
 description: Los administradores pueden obtener más información sobre las características contra la suplantación de identidad disponibles en Exchange Online Protection (EOP), que pueden ayudar a reducir los ataques de suplantación de identidad de los remitentes y dominios falsos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b93f2e1543a70ca7b5dde8ab5e83d48fba5f5a5e
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 140ed15b793b5d6b74b39a35b854b7432a658bc3
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401335"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475177"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protección contra la suplantación de identidad en EOP
 
@@ -48,7 +48,7 @@ Las siguientes tecnologías contra la suplantación de identidad están disponib
 
   EOP analiza y bloquea los mensajes que no se pueden autenticar con la combinación de métodos de autenticación de correo electrónico estándar y técnicas de reputación del remitente.
 
-  ![Pruebas contra la suplantación de identidad de EOP.](../../media/eop-anti-spoofing-protection.png)
+  :::image type="content" source="../../media/eop-anti-spoofing-protection.png" alt-text="Comprobaciones contra la suplantación de identidad de EOP" lightbox="../../media/eop-anti-spoofing-protection.png":::
 
 - **Información de la inteligencia contra la suplantación de identidad**: revisa mensajes falsificados de remitentes en dominios internos y externos durante los últimos 7 días, y permite o bloquea el acceso de los remitentes. Para obtener más información, consulte [Información de la inteligencia contra la suplantación de identidad en EOP](learn-about-spoof-intelligence.md).
 

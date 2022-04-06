@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 ms.technology: mdo
-ms.openlocfilehash: 7e8fbeab380ceac3531e2a288fb5e8fb5f43e166
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 058eaded0e46a4dfe86bd2cdc5624ea0963f34ea
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682381"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474649"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>Configuraciones de identidad y acceso a dispositivos de Confianza cero
 
@@ -39,7 +39,7 @@ Para abordar este nuevo mundo de la informática, Microsoft recomienda encarecid
 
 - Usar acceso con privilegios mínimos
 
-  Limite el acceso de los usuarios con Just-In-Time y Just-Enough-Access (JIT/JEA), directivas adaptables basadas en riesgos y protección de datos.  
+  Limite el acceso de los usuarios con Just-In-Time y Just-Enough-Access (JIT/JEA), directivas adaptables basadas en riesgos y protección de datos.
 
 - Asumir infracción
 
@@ -112,7 +112,7 @@ Cada sector además tiene su propio conjunto de normas especializadas. En lugar 
 - **Enterprise**: algunos clientes tienen un subconjunto de datos que deben protegerse en niveles superiores o pueden requerir que todos los datos estén protegidos en un nivel superior. Puede aplicar una mayor protección a todos o conjuntos de datos específicos de su Microsoft 365 entorno. Se recomienda proteger las identidades y los dispositivos que acceden a información confidencial con niveles de seguridad comparables.
 - **Seguridad especializada**: según sea necesario, algunos clientes tienen una pequeña cantidad de datos altamente clasificados, constituyen secretos comerciales o están regulados. Microsoft proporciona funcionalidades para ayudar a estos clientes a cumplir estos requisitos, incluida la protección adicional para identidades y dispositivos.
 
-![Cono de seguridad: todos los > algunos clientes > Algunos clientes](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png" alt-text="Cono de seguridad" lightbox="../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png":::
 
 En esta guía se muestra cómo implementar la protección de confianza cero para identidades y dispositivos para cada uno de estos niveles de protección. Use esta guía como mínimo para su organización y ajuste las directivas para satisfacer los requisitos específicos de su organización.
 
@@ -131,7 +131,7 @@ Además, vea la solución [Deploy information protection for data privacy regula
 
 La implementación de cualquier estrategia de seguridad requiere equilibrios entre la seguridad y la productividad. Es útil evaluar cómo afecta cada decisión al equilibrio de seguridad, funcionalidad y facilidad de uso.
 
-![Equilibrio de la tríada de seguridad, la funcionalidad y la facilidad de uso.](../../media/microsoft-365-policies-configurations/security-triad.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/security-triad.png" alt-text="El equilibrio de la tríada de seguridad, la funcionalidad y la facilidad de uso" lightbox="../../media/microsoft-365-policies-configurations/security-triad.png":::
 
 Las recomendaciones proporcionadas se basan en los siguientes principios:
 
@@ -160,7 +160,7 @@ Azure AD proporciona un conjunto completo de funcionalidades de administración 
 
 Estos son los componentes de la identidad de confianza cero y el acceso a dispositivos, incluidos intune y Azure AD objetos, configuración y subservicios.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="Componentes de identidad de confianza cero y acceso a dispositivos." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="Los componentes de la identidad de confianza cero y el acceso a dispositivos" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -226,7 +226,7 @@ Microsoft recomienda no crear conjuntos de directivas que se apliquen a todas la
 
 ## <a name="steps-to-configure-zero-trust-identity-and-device-access"></a>Pasos para configurar la identidad de confianza cero y el acceso a dispositivos
 
-![Pasos para configurar la identidad de confianza cero y el acceso a dispositivos.](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png" alt-text="Los pasos para configurar la identidad de confianza cero y el acceso a dispositivos" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png":::
 
 1. Configure las características de identidad de requisitos previos y su configuración.
 2. Configure las directivas comunes de acceso y identidad de acceso.

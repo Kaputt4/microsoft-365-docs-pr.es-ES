@@ -16,19 +16,19 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Los administradores pueden aprender a buscar y usar defender para Office 365 informes que están disponibles en el portal Microsoft 365 Defender web.
+description: Los administradores pueden aprender a buscar y usar los Defender para Office 365 que están disponibles en el portal Microsoft 365 Defender web.
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: de0dd5b7c0466a722a788ee3fe4e6c843d70f5eb
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: bcc77aaac71c8f8b4c3d3635b596a56ac12a3d7d
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680982"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507499"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Ver defender para Office 365 informes en el portal Microsoft 365 Defender web
+# <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Ver Defender para Office 365 informes en el portal de Microsoft 365 Defender web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "63680982"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender para organizaciones de Office 365 (por ejemplo, suscripciones Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 1 o Microsoft Defender para complementos del Plan 2 de Office 365) contienen una variedad de informes relacionados con la seguridad. Si tiene los permisos [necesarios](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), puede ver y descargar estos informes en el portal Microsoft 365 Defender web.
+Microsoft Defender para Office 365 (por ejemplo, Microsoft 365 E5 suscripciones o Microsoft Defender para Office 365 plan 1 o Microsoft Defender para Office 365 los complementos del Plan 2) contienen una variedad de informes relacionados con la seguridad. Si tiene los permisos [necesarios](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), puede ver y descargar estos informes en el portal Microsoft 365 Defender web.
 
 ## <a name="view-and-download-reports"></a>Ver o descargar informes
 
@@ -50,7 +50,7 @@ Microsoft Defender para organizaciones de Office 365 (por ejemplo, suscripciones
 
 1. En el Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **InformesEmail** >  **& informes** \> **de colaboración para su descarga**. Para ir directamente a la **página Informes para descarga** , use <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
 
-![Página & informes de colaboración en el portal de Microsoft 365 Defender correo electrónico.](../../media/email-collaboration-download-reports.png)
+:::image type="content" source="../../media/email-collaboration-download-reports.png" alt-text="La página Informes & colaboración de correo electrónico en el portal de Microsoft 365 Defender web" lightbox="../../media/email-collaboration-download-reports.png":::
 
 > [!NOTE]
 >
@@ -78,7 +78,8 @@ Para ver el informe, abra el portal de Microsoft 365 Defender en <https://securi
 
 En la página **Informes de colaboración &** correo electrónico, busque **Informe de latencia de correo** y, a continuación, haga clic **en Ver detalles**. Para ir directamente al informe, use <https://security.microsoft.com/mailLatencyReport>.
 
-![Widget informe de latencia de correo en la página Informes de colaboración & correo electrónico.](../../media/mail-latency-report-widget.png)
+
+:::image type="content" source="../../media/mail-latency-report-widget.png" alt-text="El widget Informe de latencia de correo en la página Informes de colaboración & correo electrónico" lightbox="../../media/mail-latency-report-widget.png":::
 
 En la **página Informe de latencia de** correo, las pestañas siguientes están disponibles en la **página Informe de latencia de** correo:
 
@@ -88,47 +89,50 @@ En la **página Informe de latencia de** correo, las pestañas siguientes están
 
 Independientemente de la pestaña que seleccione, el gráfico muestra los mensajes organizados en las siguientes categorías:
 
-- **Latencia de entrega de correo**
-- **Detonaciones**
+- **General**
+- **Detonación**
 
 Al pasar el mouse sobre una categoría del gráfico, puede ver un desglose de la latencia en cada categoría.
 
-![Vista percentil 50 del informe de latencia de correo.](../../media/mail-latency-report-50th-percentile-view.png)
+:::image type="content" source="../../media/mail-latency-report-50th-percentile-view.png" alt-text="Vista percentiles 50 del informe de latencia de correo" lightbox="../../media/mail-latency-report-50th-percentile-view.png":::
 
 Si hace clic **en Filtrar**, puede filtrar el gráfico y la tabla de detalles por los siguientes valores:
 
 - **Fecha (UTC):** Fecha **de inicio y** **fecha de finalización**
 - **Vista de** mensaje: uno de los siguientes valores:
   - **Todos los mensajes**
-  - **Mensajes que contienen datos adjuntos o direcciones URL**
-  - **Mensajes detonados**
+  - **Mensajes detonados**: uno de los siguientes valores:
+    - **Detonación en línea**: incluye mensajes que se prueban completamente antes de la entrega.
+    - **Detonación asincrónica**
 
 Cuando haya terminado de configurar los filtros, haga clic **en Aplicar**, **Cancelar** o **Borrar filtros**.
 
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Fecha (UTC)**
-- **Percentiles**: **50**, **90** o **99**
+- **Latencia**
 - **Recuento de mensajes**
-- **Latencia general**
+- **Percentil 50**
+- **Percentil 90**
+- **Percentil 99**
 
 En la página de informe principal, el icono ![Exportar.](../../media/m365-cc-sc-download-icon.png) **[El](view-email-security-reports.md#export-report)** botón Exportar está disponible.
 
 ## <a name="threat-protection-status-report"></a>Informe de estado de protección contra amenazas
 
-El **informe de estado** de protección contra amenazas es una vista única que reúne información sobre contenido malintencionado y correo electrónico malintencionado detectado y bloqueado por [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) y Microsoft Defender para Office 365. Para obtener más información, vea [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).
+El **informe de estado de** protección contra amenazas es una vista única que reúne información sobre contenido malintencionado y correo electrónico malintencionado detectado y bloqueado por [Exchange Online Protection (](exchange-online-protection-overview.md)EOP) y Microsoft Defender para Office 365. Para obtener más información, vea [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report).
 
 ## <a name="top-senders-and-recipients-report"></a>Informe de remitentes y destinatarios principales
 
-El **informe Top senders and recipients** muestra los destinatarios principales de EOP y Defender para las características de Office 365 protección. Para obtener más información, vea [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report).
+El **informe Principales remitentes y destinatarios** muestra los destinatarios principales de EOP y Defender para Office 365 de protección. Para obtener más información, vea [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report).
 
 ## <a name="url-protection-report"></a>Informe de protección de direcciones URL
 
-El **informe de protección de direcciones URL** proporciona vistas de resumen y tendencias para las amenazas detectadas y las acciones realizadas en los clics de dirección URL como [parte de Caja fuerte vínculos](safe-links.md). Este informe no tendrá los datos de clic de los usuarios en los que la directiva de vínculos de Caja fuerte tiene seleccionada la opción No realizar seguimiento **de los clics del** usuario.
+El **informe de protección de direcciones URL** proporciona vistas de resumen y tendencias para las amenazas detectadas y las acciones realizadas en los clics de dirección URL como [parte de Caja fuerte vínculos](safe-links.md). Este informe no tendrá datos de clic de usuarios donde se aplicó la directiva de vínculos de Caja fuerte cuando la opción Seguimiento de **clics** del usuario no está seleccionada.
 
 Para ver el informe, abra el [portal de](https://security.microsoft.com) Microsoft 365 Defender,  \> vaya a Informes **de correo electrónico** \> & colaboración **Correo & informes de colaboración**. En la página **Informes de colaboración de &** correo electrónico, busque la página **Protección de direcciones URL** y, a continuación, haga clic **en Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/URLProtectionActionReport>.
 
-![Widget de informe de protección de direcciones URL en la página & informes de colaboración de correo electrónico.](../../media/url-protection-report-widget.png)
+:::image type="content" source="../../media/url-protection-report-widget.png" alt-text="El widget de informe de protección de direcciones URL en la página Informes de colaboración & correo electrónico" lightbox="../../media/url-protection-report-widget.png":::
 
 Las vistas disponibles en la página **de informe de protección** de direcciones URL se describen en las secciones siguientes.
 
@@ -137,7 +141,7 @@ Las vistas disponibles en la página **de informe de protección** de direccione
 
 ### <a name="view-data-by-url-click-protection-action"></a>Ver datos por acción de protección de clics de dirección URL
 
-![Url click protection action view in the URL protection report.](../../media/url-threat-protection-report-url-click-protection-action-view.png)
+:::image type="content" source="../../media/url-threat-protection-report-url-click-protection-action-view.png" alt-text="La vista es la acción de protección de clics de dirección URL en el informe de protección de direcciones URL" lightbox="../../media/url-threat-protection-report-url-click-protection-action-view.png":::
 
 La **vista Ver datos por acción** de protección de clics de dirección URL muestra el número de clics de dirección URL de los usuarios de la organización y los resultados del clic:
 
@@ -180,7 +184,7 @@ En la página de informe principal, el icono ![Crear programación.](../../media
 
 ### <a name="view-data-by-url-click-by-application"></a>Ver datos por dirección URL hacer clic por aplicación
 
-![Url click by application view in the URL protection report.](../../media/url-threat-protection-report-url-click-by-application-view.png)
+:::image type="content" source="../../media/url-threat-protection-report-url-click-by-application-view.png" alt-text="La vista de acción de protección de clics de dirección URL en el informe de protección de direcciones URL" lightbox="../../media/url-threat-protection-report-url-click-by-application-view.png":::
 
 La **vista Ver datos por dirección URL por** clic en la aplicación muestra el número de clics de dirección URL de las aplicaciones que admiten Caja fuerte vínculos:
 
@@ -213,7 +217,7 @@ Además de los informes descritos en este artículo, hay otros informes disponib
 
 |Informe|Tema|
 |---|---|
-|**Explorer** (Microsoft Defender para Office 365 plan 2) o detecciones en tiempo **real** (Microsoft Defender para Office 365 Plan 1)|[Explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md)|
+|**Explorer** (Microsoft Defender para Office 365 Plan 2) o **detecciones** en tiempo real (Microsoft Defender para Office 365 Plan 1)|[Explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md)|
 |Informes de seguridad de correo electrónico que no requieren Defender para Office 365|[Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico](view-email-security-reports.md)|
 |Informes de flujo de correo en el centro Exchange administración (EAC)|[Informes de flujo de correo en el nuevo centro Exchange administración](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 
@@ -229,7 +233,7 @@ Cmdlets de informes de PowerShell:
 |Estado del flujo de correo|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |Usuarios suplantados|[Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)|
 
-## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>¿Qué permisos se necesitan para ver el Defender para Office 365 informes?
+## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>¿Qué permisos se necesitan para ver los Defender para Office 365 informes?
 
 Para ver y usar los informes descritos en este artículo, debe ser miembro de uno de los siguientes grupos de roles en el portal de Microsoft 365 Defender web:
 
@@ -244,7 +248,7 @@ Para obtener más información, consulte [Permisos en el portal de Microsoft 365
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 
-Si no ve datos en defender para los informes Office 365, compruebe que las directivas están configuradas correctamente. Su organización debe tener [definidas Caja fuerte de](set-up-safe-links-policies.md) vínculos Caja fuerte [directivas](set-up-safe-attachments-policies.md) de datos adjuntos para que Defender Office 365 protección esté en su lugar. Vea también [Protección contra correo no deseado y antimalware](anti-spam-and-anti-malware-protection.md).
+Si no ve datos en los informes de Defender para Office 365, compruebe que las directivas están configuradas correctamente. Su organización debe tener definidas [Caja fuerte de vínculos](set-up-safe-links-policies.md) Caja fuerte [directivas](set-up-safe-attachments-policies.md) de datos adjuntos para que Defender para Office 365 protección. Vea también [Protección contra correo no deseado y antimalware](anti-spam-and-anti-malware-protection.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

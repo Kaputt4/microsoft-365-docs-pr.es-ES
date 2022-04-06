@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0cdf60708e84b0972099330d48f19b22d26766ba
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 53194aac16091b9afd9559b4f372c2d436c198bf
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766841"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474715"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nuevos perfiles de configuración para macOS Catalina y versiones más recientes de macOS
 
@@ -54,7 +54,7 @@ Para aprobar las extensiones del sistema, cree la siguiente carga:
     - **com.microsoft.wdav.epsext**
     - **com.microsoft.wdav.netext**
 
-    ![Captura de pantalla de extensiones del sistema aprobadas.](images/mac-approved-system-extensions.png)
+    :::image type="content" source="images/mac-approved-system-extensions.png" alt-text=" Página Extensiones del sistema aprobadas" lightbox="images/mac-approved-system-extensions.png":::
 
 ### <a name="privacy-preferences-policy-control"></a>Control de directiva de preferencias de privacidad
 
@@ -65,11 +65,11 @@ Agregue la siguiente carga de JAMF para conceder acceso en disco completo a Micr
 3. Establecer el requisito de código en `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 4. Establece **La aplicación o el servicio** en **SystemPolicyAllFiles** y el acceso a **Allow**.
 
-    ![Control de directiva de preferencias de privacidad.](images/mac-system-extension-privacy.png)
+   :::image type="content" source="images/mac-system-extension-privacy.png" alt-text=" El elemento de menú Control de directiva de preferencias de privacidad" lightbox="images/mac-system-extension-privacy.png":::
 
 ### <a name="network-extension-policy"></a>Directiva de extensión de red
 
-Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal de Microsoft 365 Defender web. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
+Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal de Microsoft 365 Defender. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
 
 > [!NOTE]
 > JAMF no tiene compatibilidad integrada con directivas de filtrado de contenido, que son un requisito previo para habilitar las extensiones de red que Microsoft Defender para Endpoint en macOS instala en el dispositivo. Además, JAMF a veces cambia el contenido de las directivas que se implementan.
@@ -170,7 +170,7 @@ Como parte de las capacidades de detección y respuesta de puntos de conexión, 
     $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
 
-5. En el portal jamf, vaya a **Perfiles de configuración** y haga clic en **el botón Upload** configuración. Seleccione `com.microsoft.network-extension.signed.mobileconfig` cuando se le pida el archivo.
+5. En el portal jamf, vaya a **Perfiles de configuración** y haga clic en **el Upload** configuración. Seleccione `com.microsoft.network-extension.signed.mobileconfig` cuando se le pida el archivo.
 
 ## <a name="intune"></a>Intune
 
@@ -193,7 +193,7 @@ Para aprobar las extensiones del sistema:
    |com.microsoft.wdav.netext|UBF8T346G9|
    |||
 
-   ![Captura de pantalla de perfiles de configuración del sistema.](images/mac-system-extension-intune2.png)
+   :::image type="content" source="images/mac-system-extension-intune2.png" alt-text=" La página Perfiles de configuración del sistema" lightbox="images/mac-system-extension-intune2.png":::
 
 5. En la `Assignments` pestaña, asigne este perfil a **Todos los usuarios & todos los dispositivos**.
 6. Revise y cree este perfil de configuración.
@@ -315,7 +315,7 @@ Para implementar este perfil de configuración personalizado:
 3. Abra el perfil de configuración y cargue **sysext.xml**. Este archivo se creó en el paso anterior.
 4. Seleccione **Aceptar**.
 
-    ![Extensión del sistema en la captura de pantalla de Intune.](images/mac-system-extension-intune.png)
+   :::image type="content" source="images/mac-system-extension-intune.png" alt-text=" La página Extensión del sistema en Intune" lightbox="images/mac-system-extension-intune.png":::
 
 5. En la `Assignments` pestaña, asigne este perfil a **Todos los usuarios & todos los dispositivos**.
 6. Revise y cree este perfil de configuración.

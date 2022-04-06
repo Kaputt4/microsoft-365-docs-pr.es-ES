@@ -1,5 +1,5 @@
 ---
-title: Acerca de microsoft defender para Office 365 prueba
+title: Acerca de la versión de prueba de Microsoft Defender Office 365 prueba
 f1.keywords: ''
 ms.author: chrisda
 author: chrisda
@@ -19,14 +19,14 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden obtener información sobre el modo de prueba de Microsoft Defender para Office 365
-ms.openlocfilehash: 3d8d873a3e89b0ae3302eca0ab7d7c471fd94449
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+ms.openlocfilehash: 40ad151dfa4ee26bf1e6177dda170cc2998c7c7e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62187322"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683875"
 ---
-# <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de microsoft defender para Office 365 prueba
+# <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de la versión de prueba de Microsoft Defender Office 365 prueba
 
 > [!IMPORTANT]
 > Empieza rápidamente con nuestro libro de juegos de prueba fácil de usar [para Microsoft Defender para Office 365](trial-playbook-defender-for-office-365.md). Este libro de juegos te ayudará a obtener el máximo partido de la prueba gratuita mostrándole cómo proteger su organización con Microsoft Defender para Office 365.
@@ -38,40 +38,35 @@ Microsoft Defender para Office 365 protege su organización contra las amenazas 
 - **Investigación de amenazas y capacidades de respuesta**: use las herramientas más avanzadas para investigar, entender, simular y evitar las amenazas.
 - **Investigación y respuestas automáticas**: ahorre tiempo y esfuerzo al investigar y mitigar amenazas.
 
-Una prueba de Microsoft Defender para Office 365 es una forma sencilla de probar las capacidades de Defender para Office 365 Plan 2 de forma gratuita, después de solo unos pocos clics. Estas capacidades de alto nivel se describen en la tabla siguiente:
-
-<br>
-
-****
+Una prueba de Microsoft Defender para Office 365 es una forma sencilla de probar las capacidades de Defender para Office 365 Plan 2 de forma gratuita, después de solo unos clics. Estas capacidades de alto nivel se describen en la tabla siguiente:
 
 |Característica|Descripción|
 |---|---|
 |[Configuración exclusiva en directivas contra suplantación de identidad](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|Obtenga protección de suplantación de usuario, protección de suplantación de dominio, inteligencia de buzones de correo y umbrales avanzados de suplantación de identidad.|
-|[Datos adjuntos seguros](safe-attachments.md)|Inspeccione los datos adjuntos de correo electrónico y otros archivos en un entorno de detonación controlada para detectar malware nuevo y evasivo.|
+|[Archivos adjuntos seguros](safe-attachments.md)|Inspeccione los datos adjuntos de correo electrónico y otros archivos en un entorno de detonación controlada para detectar malware nuevo y evasivo.|
 |[Vínculos seguros](safe-links.md)|Realice comprobaciones de tiempo de clic para asegurarse de que las direcciones URL que podrían haber pasado la inspección inicial no se hayan armado.|
 |[Rastreadores de amenazas](threat-trackers.md)<sup>\*</sup>|Use widgets informativos y vistas para identificar problemas de ciberseguridad que puedan afectar a su organización.|
-|[Explorador de amenazas](threat-explorer.md)<sup>\*</sup>|Busca con información casi en tiempo real sobre amenazas en tu correo Office 365 correo electrónico.|
+|[Explorador de amenazas](threat-explorer.md)<sup>\*</sup>|Busca con información casi en tiempo real sobre las amenazas en tu correo Office 365 correo electrónico.|
 |[Investigación y respuesta automatizadas (AIR)](office-365-air.md)<sup>\*</sup>|Localice y corrija automáticamente los objetos de amenaza a medida que se desencadenan las alertas.|
 |[Aprendizaje de simulación de ataques](attack-simulation-training.md)<sup>\*</sup>|Entrena a los usuarios para que identifiquen los ataques de suplantación de identidad (phishing) y respondan correctamente.|
 |[Vistas de campaña](campaigns.md)<sup>\*</sup>|Investigar y responder a la actividad de correo electrónico malintencionado a gran escala.|
 |[Informes que usan Defender para Office 365 funcionalidades](view-reports-for-mdo.md)|Vea informes como el estado de protección contra amenazas, la protección contra amenazas de url, la latencia de correo y mucho más.|
 |[Protección de cuentas de prioridad](/microsoft-365/admin/setup/priority-accounts)<sup>\*</sup>|Los usuarios que identifiques como cuentas de prioridad se etiquetan en alertas, informes e investigaciones para que se destacan. También puede usar la etiqueta Prioridad en los filtros.|
-|
 
 <sup>\*</sup>Esta característica es exclusiva de Defender para Office 365 Plan 2.
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>Configurar un defender para la Office 365 prueba
 
-Una prueba permite a las organizaciones configurar y configurar fácilmente defender para Office 365 funcionalidades. Durante la instalación, las directivas que son exclusivas de Defender para Office 365 (específicamente, datos adjuntos de [Caja fuerte](safe-attachments.md)para mensajes de correo electrónico, vínculos [de Caja fuerte](safe-links.md)para mensajes de correo electrónico y Microsoft Teams y protección de suplantación en directivas [contra suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)de identidad ) se aplican con la plantilla Estándar para la seguridad preestablecida [ directivas](preset-security-policies.md).
+Una versión de prueba permite a las organizaciones configurar y configurar fácilmente defender para Office 365 funcionalidades. Durante la instalación, las directivas que son exclusivas de Defender para Office 365 (específicamente, datos adjuntos de [Caja fuerte](safe-attachments.md) para mensajes de correo electrónico, vínculos [de Caja fuerte](safe-links.md) para mensajes de correo electrónico y Microsoft Teams y protección de suplantación en directivas [contra suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) de identidad) se aplican con la plantilla Estándar para la seguridad preestablecida [ directivas](preset-security-policies.md).
 
 De forma predeterminada, estas directivas están en el ámbito de todos los usuarios de la organización, pero durante o después de la configuración de la prueba, puede cambiar la asignación de directiva a usuarios específicos.
 
 > [!NOTE]
-> Es probable que las directivas contra  correo no deseado existentes estén configuradas con la acción Mover mensaje a la carpeta correo no deseado para el veredicto de correo no deseado de elevada confianza en las directivas contra correo no deseado. La plantilla Estándar para directivas  de seguridad preestablecidas usa el mensaje de cuarentena de acción para correo no deseado de elevada confianza y las directivas de seguridad predefinidas siempre se aplican antes de las directivas contra correo no deseado personalizadas o la directiva contra correo no deseado predeterminada. Para obtener más información acerca de la configuración predeterminada, estándar y estricta, vea Configuración recomendada para EOP y [Microsoft Defender para Office 365 seguridad.](recommended-settings-for-eop-and-office365.md)
+> Es probable que las directivas contra correo no deseado existentes estén  configuradas con la acción Mover mensaje a la carpeta correo no deseado para el veredicto de correo no deseado de elevada confianza en las directivas contra correo no deseado. La plantilla Estándar para directivas de seguridad preestablecidas usa el mensaje de cuarentena de acción para correo no deseado de elevada confianza y las directivas de seguridad predefinidas siempre se aplican antes de las directivas contra correo no deseado personalizadas o la directiva contra correo no deseado predeterminada. Para obtener más información acerca de la configuración predeterminada, estándar y estricta, consulte Configuración recomendada para [EOP y Microsoft Defender para Office 365 seguridad](recommended-settings-for-eop-and-office365.md).
 
-Otras cargas de trabajo también están disponibles para la protección (por ejemplo, datos adjuntos de Caja fuerte para [SharePoint, OneDrive y](mdo-for-spo-odb-and-teams.md) vínculos Microsoft Teams y [Caja fuerte para](safe-links.md#safe-links-settings-for-office-365-apps)aplicaciones Office 365 compatibles.
+Otras cargas de trabajo también están disponibles para la protección (por ejemplo, datos adjuntos de [Caja fuerte para SharePoint, OneDrive y](mdo-for-spo-odb-and-teams.md) vínculos Microsoft Teams y [Caja fuerte para](safe-links.md#safe-links-settings-for-office-365-apps) aplicaciones Office 365 compatibles.
 
-Durante la configuración de la versión de prueba, la funcionalidad de respuesta exclusiva de Defender for Office 365 Plan 2 (por ejemplo, [AIR](office-365-air.md) y [el](threat-explorer.md) Explorador de amenazas también están configurados para toda la organización. No se requiere ningún ámbito de directiva.
+Durante la configuración de la prueba, la funcionalidad de respuesta que es exclusiva de Defender for Office 365 Plan 2 (por ejemplo, [AIR](office-365-air.md) y [el](threat-explorer.md) Explorador de amenazas también se configura para toda la organización. No se requiere ningún ámbito de directiva.
 
 ## <a name="licensing"></a>Licencias
 
@@ -82,22 +77,22 @@ La tarjeta de licencia para la prueba muestra la siguiente información:
 ![La tarjeta de licencia de Microsoft Defender para Office 365 prueba.](../../media/mdo-trial-licensing-card.png)
 
 - **Sección Tipo de** uso:
-  - **Prueba:** número de licencias de prueba de Defender Office 365 que están disponibles para su uso.
+  - **Prueba**: número de licencias de prueba de Defender Office 365 que están disponibles para su uso.
 
     > [!NOTE]
     > En otras ubicaciones, es posible que vea el valor 300 para el número de licencias de prueba disponibles. Este valor es incorrecto (a menos que la organización tenga exactamente 300 usuarios). El número de licencias de prueba disponibles corresponde al tamaño de la organización, no al valor arbitrario 300.
 
-  - **Pagado:** el número de defender pagados para Office 365 licencias (si las hubiera).
+  - **Pagado**: el número de defender pagados para Office 365 licencias (si las hubiera).
 
 - **Sección** Uso: Cuántos de los usuarios están cubiertos por Defender para Office 365 directivas.
-  - **Solo & de detección:** el número total de usuarios que se incluyen en los siguientes escenarios:
+  - **Solo & de detección**: el número total de usuarios que se incluyen en los siguientes escenarios:
     - Durante la prueba, las directivas se han limitado a usuarios específicos.
     - Tiene policías personalizadas que están en el ámbito de usuarios específicos.
-  - **Protección completa:** el número total de usuarios protegidos por Defender para las características del Plan 2 de Office 365 (AIR, Explorador de amenazas, aprendizaje de simulación de ataques, etc.).
+  - **Protección completa**: el número total de usuarios protegidos por Defender para las características del Plan 2 de Office 365 (AIR, Explorador de amenazas, aprendizaje de simulación de ataques, etc.).
 
 ## <a name="permissions"></a>Permisos
 
-Para iniciar o finalizar la prueba, debe ser miembro  de los roles Administrador **global** o Administrador de seguridad en Azure Active Directory. Para más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
+Para iniciar o finalizar la prueba, debe ser miembro de los roles Administrador **global** o Administrador de  seguridad en Azure Active Directory. Para más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="additional-information"></a>Información adicional
 
@@ -109,27 +104,27 @@ La versión de prueba de Defender para Office 365 se está implementando gradual
 
 ## <a name="terms-and-conditions"></a>Términos y condiciones
 
-Para obtener más información, vea [Microsoft Defender for Office 365 Trial Terms & Conditions](defender-for-office-365-trial-terms-and-conditions.md).
+Para obtener más información, consulte [Microsoft Defender for Office 365 Trial Terms & Conditions](defender-for-office-365-trial-terms-and-conditions.md).
 
 ## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 ### <a name="q-how-do-i-extend-the-trial"></a>P: ¿Cómo se amplía la versión de prueba?
 
-A: Vea [Extender la versión de prueba](/microsoft-365/commerce/try-or-buy-microsoft-365#extend-your-trial).
+A: Vea [Extender la prueba](/microsoft-365/commerce/try-or-buy-microsoft-365#extend-your-trial).
 
 ### <a name="q-what-happens-to-my-data-after-the-trial-expires"></a>P: ¿Qué sucede con mis datos después de que expire la prueba?
 
 A: Después de que expire la prueba, tendrás acceso a los datos de prueba (datos de características de Defender para Office 365 que no tenías anteriormente) durante 30 días. Después de este período de 30 días, se eliminarán todas las directivas y datos asociados con defender para Office 365 prueba.
 
-### <a name="q-how-many-times-can-i-use-the-defender-for-office-365-trial-in-my-organization"></a>P: ¿Cuántas veces puedo usar Defender para Office 365 prueba en mi organización?
+### <a name="q-how-many-times-can-i-use-the-defender-for-office-365-trial-in-my-organization"></a>P: ¿Cuántas veces puedo usar defender para Office 365 prueba en mi organización?
 
-A: Un máximo de 2 veces. Si la primera versión de prueba expira, debes esperar al menos 30 días después de la fecha de expiración antes de poder inscribirte en defender para volver Office 365 prueba. Después de la segunda prueba, no puedes inscribirte en otra prueba.
+A: Un máximo de 2 veces. Si expira la primera prueba, debes esperar al menos 30 días después de la fecha de expiración antes de poder inscribirte en defender para volver Office 365 prueba. Después de la segunda prueba, no puedes inscribirte en otra prueba.
 
 ## <a name="learn-more-about-defender-for-office-365"></a>Obtenga más información sobre Defender para Office 365
 
-Defender para Office 365 ayuda a las organizaciones a proteger su empresa ofreciendo una lista completa de capacidades.
+Defender for Office 365 ayuda a las organizaciones a proteger su empresa al ofrecer una lista completa de funcionalidades.
 
-También puede obtener más información sobre Defender para Office 365 en esta [guía interactiva](https://aka.ms/MS365D.InteractiveGuide).
+También puedes obtener más información sobre Defender para Office 365 en esta [guía interactiva](https://aka.ms/MS365D.InteractiveGuide).
 
 ![Microsoft Defender para Office 365 diagrama conceptual.](../../media/microsoft-defender-for-office-365.png)
 
@@ -172,7 +167,7 @@ Las completas capacidades de simulación y aprendizaje junto con las experiencia
 
 Las plantillas recomendadas y los conocimientos de configuración ayudan a los clientes a obtener y mantener la seguridad.
 
-- [Directivas de seguridad predefinidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md)
+- [Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md)
 - [Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365](configuration-analyzer-for-security-policies.md).
 
 ## <a name="give-feedback"></a>Enviar comentarios

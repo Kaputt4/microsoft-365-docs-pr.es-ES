@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 03d4d22bdce9f18b4883437215ea5cba50b3868e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 77160c44a3f0eda44e68c43c91aeddc169de24e1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681356"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475309"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
@@ -152,9 +152,9 @@ Si un servidor proxy o firewall bloquea todo el tráfico de forma predeterminada
 
 En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Compruebe que no hay reglas de firewall o filtrado de red que denieguen el *acceso a estas* direcciones URL o creen una regla de permitido específicamente para ellas.
 
-|Hoja de cálculo de la lista de dominios| Descripción|
-|---|---|
-| Lista de direcciones URL de Punto de conexión de Microsoft Defender para clientes de Gov/GCC/DoD | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sos para clientes gov/GCC/DoD. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+Hoja de cálculo de la lista de dominios|Descripción
+:-----|:-----
+:::image type="content" source="images/mdatp-urls.png" alt-text="Hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión" lightbox="images/mdatp-urls.png":::|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
 Para obtener más información, consulte [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b707a6f684df6b9888fb8f2d50c4bba9a6dd3195
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 71755add523b3426d144f748ab3582e3a3975dc6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324177"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475243"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Investigar dispositivos en la lista Microsoft Defender para dispositivos de punto de conexión
 
@@ -53,7 +53,7 @@ Cuando investigues un dispositivo específico, verás lo siguiente:
 - Pestañas (información general, alertas, escala de tiempo, recomendaciones de seguridad, inventario de software, vulnerabilidades detectadas, KB ausentes)
 - Tarjetas (alertas activas, usuarios que han iniciado sesión, evaluación de seguridad)
 
-![Imagen de la vista de dispositivo.](images/specific-device.png)
+:::image type="content" source="images/specific-device.png" alt-text="La vista de dispositivo" lightbox="images/specific-device.png":::
 
 > [!NOTE]
 > Debido a las restricciones del producto, el perfil del dispositivo no tiene en cuenta todas las pruebas cibernéticas al determinar el período de tiempo "Last Seen" (como también se ve en la página del dispositivo).
@@ -91,13 +91,13 @@ Las pestañas proporcionan información de seguridad y prevención de amenazas r
 
 La **pestaña Información** general muestra las [tarjetas para](#cards) las alertas activas, los usuarios que han iniciado sesión y la evaluación de seguridad.
 
-![Imagen de la pestaña información general de la página del dispositivo.](images/overview-device.png)
+:::image type="content" source="images/overview-device.png" alt-text="La pestaña Información general de la página del dispositivo" lightbox="images/overview-device.png":::
 
 ### <a name="alerts"></a>Alertas
 
 La **pestaña** Alertas proporciona una lista de alertas asociadas con el dispositivo. Esta lista es una versión filtrada de la cola de alertas [y muestra](alerts-queue.md) una breve descripción de la alerta, gravedad (alta, mediana, baja, informativo), estado de la cola (nuevo, en curso, resuelto), clasificación (no establecida, alerta falsa, alerta verdadera), estado de investigación, categoría de alerta, quién está abordando la alerta y última actividad. También puede filtrar las alertas.
 
-![Imagen de alertas relacionadas con el dispositivo.](images/alerts-device.png)
+:::image type="content" source="images/alerts-device.png" alt-text="La pestaña de las alertas relacionadas con el dispositivo" lightbox="images/alerts-device.png":::
 
 Cuando se selecciona el icono de círculo situado a la izquierda de una alerta, aparece un desplegable. Desde este panel puede administrar la alerta y ver más detalles, como el número de incidente y los dispositivos relacionados. Se pueden seleccionar varias alertas a la vez.
 
@@ -118,7 +118,7 @@ La escala de tiempo también permite profundizar selectivamente en los eventos q
 > - [5031](/windows/security/threat-protection/auditing/event-5031) : aplicación bloqueada para no aceptar conexiones entrantes en la red
 > - [5157](/windows/security/threat-protection/auditing/event-5157) : conexión bloqueada
 
-![Imagen de la escala de tiempo del dispositivo con eventos.](images/timeline-device.png)
+:::image type="content" source="images/timeline-device.png" alt-text="Escala de tiempo del dispositivo con eventos" lightbox="images/timeline-device.png":::
 
 Algunas de las funciones incluyen:
 
@@ -146,30 +146,30 @@ Seleccione un evento para ver los detalles relevantes sobre ese evento. Se muest
 
 Para inspeccionar aún más el evento y los eventos relacionados, puede ejecutar rápidamente una [](advanced-hunting-overview.md) consulta de búsqueda **avanzada seleccionando Hunt para eventos relacionados**. La consulta devolverá el evento seleccionado y la lista de otros eventos que se produjeron aproximadamente al mismo tiempo en el mismo extremo.
 
-![Imagen del panel de detalles del evento.](images/event-details.png)
+:::image type="content" source="images/event-details.png" alt-text="Panel de detalles del evento" lightbox="images/event-details.png":::
 
 ### <a name="security-recommendations"></a>Recomendaciones de seguridad
 
 **Las recomendaciones de** seguridad se generan desde Microsoft Defender para la funcionalidad de administración de [& de vulnerabilidades de](tvm-dashboard-insights.md) Endpoint. Si selecciona una recomendación, se mostrará un panel en el que podrá ver detalles relevantes, como la descripción de la recomendación y los posibles riesgos asociados a no aprobarla. Consulte [Recomendación de seguridad](tvm-security-recommendation.md) para obtener más información.
 
-![Imagen de la pestaña recomendaciones de seguridad.](images/security-recommendations-device.png)
+:::image type="content" source="images/security-recommendations-device.png" alt-text="Pestaña Recomendaciones de seguridad" lightbox="images/security-recommendations-device.png":::
 
 ### <a name="software-inventory"></a>Inventario de software
 
 La **pestaña Inventario de** software te permite ver software en el dispositivo, junto con cualquier debilidad o amenaza. Seleccionar el nombre del software le llevará a la página de detalles del software donde puede ver recomendaciones de seguridad, vulnerabilidades detectadas, dispositivos instalados y distribución de versiones. Consulta [Inventario de software](tvm-software-inventory.md) para obtener más información
 
-![Imagen de la pestaña inventario de software.](images/software-inventory-device.png)
+:::image type="content" source="images/software-inventory-device.png" alt-text="Pestaña Inventario de software" lightbox="images/software-inventory-device.png":::
 
 ### <a name="discovered-vulnerabilities"></a>Vulnerabilidades detectadas
 
 La **pestaña Vulnerabilidades detectadas** muestra el nombre, la gravedad y las perspectivas de amenazas de las vulnerabilidades detectadas en el dispositivo. Al seleccionar vulnerabilidades específicas, se mostrará una descripción y detalles.
 
-![Imagen de la pestaña vulnerabilidades detectadas.](images/discovered-vulnerabilities-device.png)
+:::image type="content" source="images/discovered-vulnerabilities-device.png" alt-text="Pestaña Vulnerabilidades detectadas" lightbox="images/discovered-vulnerabilities-device.png":::
 
 ### <a name="missing-kbs"></a>Faltan KBs
 En **la pestaña KBs que** faltan se enumeran las actualizaciones de seguridad que faltan para el dispositivo.
 
-![Imagen de la pestaña kbs que falta.](images/missing-kbs-device.png)
+:::image type="content" source="images/missing-kbs-device.png" alt-text="Pestaña KBs que faltan" lightbox="images/missing-kbs-device.png":::
 
 ## <a name="cards"></a>Tarjetas
 
@@ -177,7 +177,7 @@ En **la pestaña KBs que** faltan se enumeran las actualizaciones de seguridad q
 
 La **tarjeta protección contra** amenazas avanzada de Azure mostrará una descripción general de alto nivel de las alertas relacionadas con el dispositivo y su nivel de riesgo, si ha habilitado la característica Microsoft Defender para la identidad y hay alertas activas. Encontrará más información en el desglose de "Alertas".
 
-![Imagen de la tarjeta de alertas activas.](images/risk-level-small.png)
+:::image type="content" source="images/risk-level-small.png" alt-text="La tarjeta de alertas activas" lightbox="images/risk-level-small.png":::
 
 > [!NOTE]
 > Tendrás que habilitar la integración en Microsoft Defender para Identidad y Defender para endpoint para usar esta característica. En Defender para endpoint, puedes habilitar esta característica en características avanzadas. Para obtener más información sobre cómo habilitar características avanzadas, vea [Activar características avanzadas](advanced-features.md).
@@ -186,7 +186,7 @@ La **tarjeta protección contra** amenazas avanzada de Azure mostrará una descr
 
 La **tarjeta Usuarios que han iniciado** sesión muestra cuántos usuarios han iniciado sesión en los últimos 30 días, junto con los usuarios más y menos frecuentes. Al seleccionar el vínculo "Ver todos los usuarios", se abre el panel de detalles, que muestra información como el tipo de usuario, el tipo de inicio de sesión y el momento en que el usuario se vio por primera y última vez. Para obtener más información, vea [Investigar entidades de usuario](investigate-user.md).
 
-![Imagen del panel de detalles del usuario.](images/logged-on-users.png)
+:::image type="content" source="images/logged-on-users.png" alt-text="Panel de detalles del usuario" lightbox="images/logged-on-users.png":::
 
 > [!NOTE]
 > El valor de usuario "Más frecuente" se calcula solo en función de la evidencia de usuarios que iniciaron sesión correctamente de forma interactiva.
@@ -196,7 +196,7 @@ La **tarjeta Usuarios que han iniciado** sesión muestra cuántos usuarios han i
 
 La **tarjeta Evaluaciones de seguridad** muestra el nivel de exposición general, las recomendaciones de seguridad, el software instalado y las vulnerabilidades detectadas. El nivel de exposición de un dispositivo viene determinado por el impacto acumulado de sus recomendaciones de seguridad pendientes.
 
-![Imagen de la tarjeta de evaluación de seguridad.](images/security-assessments.png)
+:::image type="content" source="images/security-assessments.png" alt-text="La tarjeta de evaluaciones de seguridad" lightbox="images/security-assessments.png":::
 
 ## <a name="related-topics"></a>Temas relacionados
 

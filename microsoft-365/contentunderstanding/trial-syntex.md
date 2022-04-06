@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: ''
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo planear, registrarse y ejecutar un programa piloto de prueba para SharePoint Syntex en su organización.
-ms.openlocfilehash: c3f081654e7661e5c298bab15da90d8337dfc418
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: fc4221b0022aca8a0564c78e64d94028f6483104
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473637"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507107"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Ejecutar una prueba de Microsoft SharePoint Syntex
 
@@ -44,7 +44,7 @@ Puede obtener la versión de prueba de uno de los siguientes orígenes:
     2. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**BillingPurchase**</a> >  Services.
     3. Desplácese hacia abajo hasta la sección **Complementos**.
     4. En el icono SharePoint Syntex, seleccione **Detalles**.
-    5. Seleccione **Obtener prueba gratuita**.
+    5. Selecciona **Iniciar prueba gratuita**.
     6. Para confirmar la prueba, siga los pasos del asistente restantes.
 
 Debe ser un administrador Microsoft 365 global o administrador de facturación para activar una versión de prueba.
@@ -112,4 +112,4 @@ Si no compra licencias después de la versión de prueba:
 
 ## <a name="see-also"></a>Vea también
 
-[Adopción SharePoint Syntex Microsoft: Introducción](adoption-getstarted.md)
+[Adopción SharePoint Syntex Microsoft: Comenzar](adoption-getstarted.md)

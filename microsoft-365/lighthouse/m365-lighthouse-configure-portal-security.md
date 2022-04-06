@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo configurar la seguridad del portal.
-ms.openlocfilehash: 4d12755ca1b02988dff3f5ba6be6dd0d8da172ad
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 532ce9d6e90ea4d502c6898a105702d525f05a1b
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64594760"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632697"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Configurar Microsoft 365 Lighthouse seguridad del portal
 
@@ -39,11 +39,11 @@ Cuando los usuarios tienen acceso a Lighthouse por primera vez, se les pedirá q
 
 El control de acceso basado en roles (RBAC) concede acceso a recursos o información basado en roles de usuario. El acceso a los datos y la configuración del inquilino del cliente en Lighthouse está restringido a roles específicos del programa Proveedor de soluciones en la nube (CSP). Para configurar roles RBAC en Lighthouse, se recomienda usar privilegios de administrador delegados pormenorizados (GDAP) para implementar asignaciones pormenorizados para los usuarios. Los privilegios de administrador delegados (DAP) siguen siendo necesarios para que el inquilino se incorpore correctamente, pero los clientes solo de GDAP pronto podrán incorporarse sin dependencia de DAP. Los permisos GDAP tienen prioridad cuando DAP y GDAP coexisten para un cliente. 
 
-Para empezar con GDAP, vea [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
+Para configurar una relación GDAP, consulte [Obtener permisos de administrador granulares para administrar el servicio de un cliente](/partner-center/gdap-obtain-admin-permissions-to-manage-customer). Para obtener más información sobre los roles que recomendamos usar Lighthouse, vea [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
 Los técnicos msp también pueden tener acceso a Lighthouse mediante roles de agente de administración o agente de soporte técnico mediante privilegios de administrador delegados (DAP).
 
-Para las acciones no relacionadas con el inquilino del cliente en Lighthouse (por ejemplo, incorporación, desactivación/reactivación del cliente, administración de etiquetas, revisión de registros), los técnicos msp deben tener un rol asignado en el inquilino asociado. En el vínculo del artículo anterior se detallan dichos roles y sus permisos en Lighthouse.
+Para las acciones no relacionadas con el inquilino del cliente en Lighthouse (por ejemplo, incorporación, desactivación/reactivación del cliente, administración de etiquetas, revisión de registros), los técnicos msp deben tener un rol asignado en el inquilino asociado. Vea [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) para obtener más información sobre los roles de inquilino de partners.
 
 ## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>Configurar Azure AD Privileged Identity Management (PIM)
 

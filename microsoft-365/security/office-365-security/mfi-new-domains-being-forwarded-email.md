@@ -1,20 +1,25 @@
 ---
 title: Información de nuevos dominios a los que se reenvía correo electrónico
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.assetid: null
+ms.assetid: ''
 description: Los administradores pueden aprender a usar la información de correo electrónico nuevos dominios que se reenvía en el panel flujo de correo del Centro de seguridad y cumplimiento de & para investigar cuándo sus usuarios reenvía mensajes a dominios externos a los que nunca se ha reenviado.
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
+ms.openlocfilehash: e23d63a519bf69f94ce4990d8851d673826dcb5c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475089"
 ---
-
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Nuevos dominios que se reenvía información de correo electrónico en el Centro de seguridad & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -32,11 +37,12 @@ La **información de correo** electrónico nuevos dominios que se reenvía en el
 
 Esta información solo aparece cuando se detecta el problema y aparece en la página [Informe de reenvío](view-mail-flow-reports.md#forwarding-report) .
 
-![Nuevos dominios que se reenvía información de correo electrónico.](../../media/mfi-new-domains-being-forwarded.png)
+:::image type="content" source="../../media/mfi-new-domains-being-forwarded.png" alt-text="La información de correo electrónico de nuevos dominios que se reenvía" lightbox="../../media/mfi-new-domains-being-forwarded.png":::
+
 
 Al hacer clic en el widget, aparece un control flotante donde puede encontrar más detalles sobre los mensajes reenviados, incluido un vínculo al informe [de reenvío](view-mail-flow-reports.md#forwarding-report).
 
-![El menú desplegable de detalles que aparece después de hacer clic en la información de correo electrónico nuevos dominios que se reenvía.](../../media/mfi-new-domains-being-forwarded-details.png)
+:::image type="content" source="../../media/mfi-new-domains-being-forwarded-details.png" alt-text="El menú desplegable Detalles que aparece después de hacer clic en los nuevos dominios que se reenvía la información de correo electrónico" lightbox="../../media/mfi-new-domains-being-forwarded-details.png":::
 
 También puede acceder a esta página de detalles al seleccionar la información después de hacer clic  en Ver todo en  el área Principales & **recomendaciones en (** \> Panel de **informes o ).** <https://protection.office.com/insightdashboard>
 

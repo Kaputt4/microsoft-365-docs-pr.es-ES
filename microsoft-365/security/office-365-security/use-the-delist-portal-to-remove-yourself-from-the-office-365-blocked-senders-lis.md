@@ -20,12 +20,12 @@ ms.custom:
 description: En este artículo, aprenderá a usar el portal de deslist para quitarse de la lista Microsoft 365 remitentes bloqueados. Esta es la mejor respuesta para solucionar los errores denegados de Acceso 5.7.511.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 58ddb2913ce7ecd047b1d5acb360c8f4c9ff5074
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 627e8f91c9d4730fed6a7fca275e9d53e1dfd7fd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775794"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474803"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>Usar el portal de deslist para quitarse de la lista de remitentes bloqueados y solucionar los errores de Acceso denegado 5.7.511
 
@@ -65,7 +65,8 @@ Hay buenas razones para que los remitentes se desenrosque en la lista de remiten
 
     El portal enviará un correo electrónico a la dirección que indique. El mensaje será similar al siguiente:
 
-    ![Captura de pantalla del correo electrónico recibido al enviar una solicitud a través del portal de deslist.](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    :::image type="content" source="../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png" alt-text="El correo electrónico recibido al enviar una solicitud a través del portal de deslist" lightbox="../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png":::
+
 
 4. Haga clic en el vínculo de confirmación que aparece en el correo electrónico que le ha enviado el portal de eliminación de la lista.
 

@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: ad8ae319be7515282dc51e9dd9a519660b5d91f6
-ms.sourcegitcommit: 007822d16e332522546e948f5c216327254a4d49
+ms.openlocfilehash: 7f13c11f73d9ddbb9d074782a03fa408ef2c3ec6
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62879125"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595244"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Soporte técnico de administrador para Escritorio administrado de Microsoft
 
-Puede enviar vales de soporte técnico o solicitudes de comentarios a Microsoft mediante el portal de administración de escritorio administrado de Microsoft. Las solicitudes de soporte técnico siempre se priorizan sobre los envíos de comentarios.
+Puedes enviar vales de soporte técnico o solicitudes de comentarios a Microsoft mediante el portal Microsoft Managed Desktop administración. Las solicitudes de soporte técnico siempre se priorizan sobre los envíos de comentarios.
 
 ## <a name="open-a-new-support-request"></a>Abrir una nueva solicitud de soporte técnico
 
@@ -27,7 +27,7 @@ Las solicitudes de soporte técnico se administran de acuerdo con la gravedad de
 **Para abrir una nueva solicitud de soporte técnico:**
 
 1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al menú **Administración de inquilinos**.
-2. En la **sección Escritorio administrado de Microsoft** , seleccione **Solicitudes de servicio**.
+2. En la **Microsoft Managed Desktop**, seleccione **Solicitudes de servicio**.
 3. En la **sección Solicitudes de servicio** , seleccione **+ Nueva solicitud de soporte técnico**.
 4. Seleccione el **tipo de solicitud** que coincida con la ayuda que necesita. En la tabla siguiente se describen las opciones.
 5. Seleccione el **nivel de gravedad** . Para obtener más información, vea [tabla de definición de gravedad](#support-request-severity-definitions).
@@ -39,9 +39,9 @@ Las solicitudes de soporte técnico se administran de acuerdo con la gravedad de
 
 | Tipo de solicitud de soporte técnico | Cuándo usarlo |
 | ----- | ----- |
-Incidente | Necesita que el equipo de Operaciones de Escritorio administrado de Microsoft investigue un problema de usuario. Por ejemplo, un impacto generalizado de un cambio o interrupción del servicio.
-Solicitud de información | Está planeando un cambio en las redes, la configuración de proxy, los sistemas VPN, la expiración del certificado o simplemente necesita información sobre el servicio. Se recomienda una respuesta del equipo de Operaciones de escritorio administrado de Microsoft al comunicar un cambio dentro de la organización.
-Solicitud de cambio | Es necesario que el equipo de Operaciones de escritorio administrado de Microsoft realice un cambio, como mover dispositivos entre grupos de actualización. Todas las solicitudes de cambio se tratan como gravedad C.
+Incidente | Necesita que el equipo Microsoft Managed Desktop Operations investigue un problema de usuario. Por ejemplo, un impacto generalizado de un cambio o interrupción del servicio.
+Solicitud de información | Está planeando un cambio en las redes, la configuración de proxy, los sistemas VPN, la expiración del certificado o simplemente necesita información sobre el servicio. Se recomienda una respuesta del equipo Microsoft Managed Desktop operaciones al comunicar un cambio dentro de la organización.
+Solicitud de cambio | Es necesario que el Microsoft Managed Desktop operations realice un cambio, como mover dispositivos entre grupos de actualización. Todas las solicitudes de cambio se tratan como gravedad C.
 
 > [!IMPORTANT]
 > Al crear una solicitud de soporte técnico, deberá proporcionar un contacto principal. Esta persona es responsable de trabajar con nuestros ingenieros de servicio para resolver el problema o responder a cualquier pregunta sobre un cambio solicitado. También es necesario que haya configurado previamente [](../get-started/add-admin-contacts.md) un contacto de administrador que se copiará en todas las notificaciones de caso para su área de enfoque relevante. Se pedirá a esta persona que tome el control de un caso si el contacto principal de un caso es inaccesible.
@@ -57,7 +57,7 @@ El correo electrónico es el enfoque recomendado para interactuar con nuestro eq
 **Para ver todos los casos activos:**
 
 1. Inicie sesión en [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya al menú **Administración de inquilinos**.
-2. En la **sección Escritorio administrado de Microsoft** , seleccione **Solicitud de servicio**.
+2. En la **Microsoft Managed Desktop**, seleccione **Solicitud de servicio**.
 3. Desde esta vista, puede exportar la vista de resumen o seleccionar cualquier caso para ver los detalles.
 
 ### <a name="edit-case-details"></a>Editar detalles del caso
@@ -75,6 +75,9 @@ Puede editar los detalles del caso, por ejemplo, actualizar el contacto principa
 
 Una vez resuelto un caso, ya no se puede editar. Si una solicitud se ha resuelto durante menos de 24 horas, verá la opción de **reactivarse** en lugar de **Editar**. Una vez reactivada, puede volver a editar la solicitud.  
 
+> [!NOTE]
+> El nivel de gravedad solo se puede establecer para determinados tipos de solicitud de soporte técnico. Si seleccionar un nivel de gravedad no era una opción al crear la solicitud de soporte técnico, no podrá editar la solicitud de soporte técnico.
+
 ### <a name="provide-feedback"></a>Enviar comentarios
 
 Agradecemos sus comentarios y los usamos para mejorar la experiencia de soporte técnico del administrador.
@@ -83,10 +86,10 @@ Cuando sea el contacto principal de una solicitud de soporte técnico, recibirá
 
 ## <a name="support-request-severity-definitions"></a>Definiciones de gravedad de solicitud de soporte técnico
 
-El tiempo de respuesta inicial es el período desde el que envía la solicitud de soporte técnico hasta que un ingeniero de Escritorio administrado de Microsoft se pone en contacto con usted y comienza a trabajar en la solicitud de soporte técnico. El tiempo de respuesta inicial varía según el impacto empresarial de la solicitud. Se basa en la gravedad de la solicitud.
+El tiempo de respuesta inicial es el período desde el que envía la solicitud de soporte técnico hasta que un ingeniero Microsoft Managed Desktop se pone en contacto con usted y comienza a trabajar en la solicitud de soporte técnico. El tiempo de respuesta inicial varía según el impacto empresarial de la solicitud. Se basa en la gravedad de la solicitud.
 
 > [!NOTE]
-> En esta tabla, "horas de soporte técnico para administradores" significa que la compatibilidad de Escritorio administrado de Microsoft para administradores está disponible, para la mayoría de los países, las 24 horas del día de lunes a **viernes**. Gravedad Los problemas A se pueden trabajar las 24 horas del día los siete días de la semana.
+> En esta tabla, "horas de soporte técnico para administradores" significa que Microsoft Managed Desktop soporte técnico para administradores está disponible, para la mayoría de los países, las 24 horas del día de lunes a **viernes**. Gravedad Los problemas A se pueden trabajar las 24 horas del día los siete días de la semana.
 
 | Nivel de gravedad | Situación | Tiempo de respuesta inicial | Respuesta esperada de usted |
 | ----- | ----- |----- | ----- |
@@ -102,11 +105,11 @@ A continuación se muestra una lista de condiciones adicionales que debe tener e
 | ------ | ------ |
 | Idiomas de soporte técnico | Toda la compatibilidad se proporciona en inglés. |
 | Cambios en el nivel de gravedad | Microsoft puede reducir el nivel de gravedad si no puede proporcionar recursos o respuestas adecuados para que sigamos resolviendo el problema. |
-| Compatibilidad de aplicaciones | Para que se tenga en cuenta un problema de compatibilidad de aplicaciones, debe haber un error reproducible. El error debe usar la misma versión de la aplicación, entre la versión anterior y la actual de Windows, o Aplicaciones Microsoft 365 para empresas. <br><br> Para resolver problemas de compatibilidad de aplicaciones, necesitamos un punto de contacto en su organización con el que trabajar. El contacto debe trabajar directamente con nuestro equipo de Fast Track para investigar y resolver el problema. |
+| Compatibilidad de aplicaciones | Para que se tenga en cuenta un problema de compatibilidad de aplicaciones, debe haber un error reproducible. El error debe usar la misma versión de la aplicación, entre la versión anterior y la actual de Windows o Aplicaciones Microsoft 365 para empresas. <br><br> Para resolver problemas de compatibilidad de aplicaciones, necesitamos un punto de contacto en su organización con el que trabajar. El contacto debe trabajar directamente con nuestro equipo de Fast Track para investigar y resolver el problema. |
 | Tiempo de respuesta del cliente | Si no puede cumplir los requisitos de respuesta esperados, reduciremos la solicitud en un nivel de gravedad al nivel de gravedad mínimo (gravedad C). <br><br> Si no responde a las solicitudes de acción, mitigaremos y cerraremos la solicitud de soporte técnico dentro de las 48 horas siguientes a la última solicitud. |
 
 ## <a name="more-resources"></a>Más recursos
 
-- [Soporte de usuario para Escritorio administrado de Microsoft](end-user-support.md).
-- [Compatibilidad con Escritorio administrado de Microsoft](../service-description/support.md).
-- Si ya estás suscrito a Microsoft Managed Desktop, puedes encontrar procedimientos detallados, flujos de proceso, instrucciones de trabajo y preguntas frecuentes en la Guía de administración de Escritorio administrado de Microsoft. En [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), vaya a la sección Administración de inquilinos, en Microsoft Managed Desktop, seleccione Recursos en línea y, a continuación, seleccione Otros recursos. Encontrarás la Guía de administración aquí.
+- [Compatibilidad con usuarios para Microsoft Managed Desktop](end-user-support.md).
+- [Compatibilidad con Microsoft Managed Desktop](../service-description/support.md).
+- Si ya estás suscrito a Microsoft Managed Desktop, puedes encontrar procedimientos detallados, flujos de proceso, instrucciones de trabajo y preguntas frecuentes en la Guía de administración Microsoft Managed Desktop administración. En [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), vaya a la sección Administración de inquilinos, en Microsoft Managed Desktop, seleccione Recursos en línea y, a continuación, seleccione Otros recursos. Encontrarás la Guía de administración aquí.

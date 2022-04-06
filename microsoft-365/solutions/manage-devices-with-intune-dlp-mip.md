@@ -21,12 +21,12 @@ ms.collection:
 ms.custom: ''
 keywords: ''
 description: Implemente DLP para punto de conexión trabajando con el equipo de gobernanza y protección de la información para crear directivas DLP para su organización.
-ms.openlocfilehash: c38171d790ffd376c7886da0547345cf7e74e36c
-ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
-ms.translationtype: HT
+ms.openlocfilehash: 605923c377aca77f84861116b38b6ef07f95ca4f
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62202082"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651309"
 ---
 # <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>Paso 7. Implementar la prevención de pérdida de datos (DLP) con funcionalidades de protección de la información
 
@@ -47,7 +47,7 @@ Si el equipo de gobierno y protección de la información está listo para exten
 
 ![Pasos de DLP de punto de conexión para el administrador de dispositivos](../media/devices/endpoint-dlp-steps.png#lightbox)
 
-Si completó el [Paso 2. Inscribir dispositivos en administración](manage-devices-with-intune-enroll.md) y el [Paso 6. Inscribir dispositivos en Defender para punto de conexión para supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad](manage-devices-with-intune-monitor-risk.md), tus dispositivos ya están habilitados para DLP de punto de conexión. 
+Si ha completado [el paso 2. Inscriba dispositivos en Intune](manage-devices-with-intune-enroll.md) y [paso 6. Inscriba dispositivos en Defender para punto de conexión para supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad](manage-devices-with-intune-monitor-risk.md); los dispositivos ya están habilitados para DLP de punto de conexión. 
 
 
 Siga estos pasos para trabajar con el equipo de protección de la información.

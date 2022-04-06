@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 55d01dfe6d0b6fd69bf32016b1b5dd585827e168
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: bd8f48e8396225fc03441cfc7c8ed69fa3f378bb
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282998"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475617"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender para la API de punto de conexión: Hello World
 
@@ -51,38 +51,38 @@ Solo se tardan 5 minutos en dos pasos:
 
 ### <a name="do-i-need-a-permission-to-connect"></a>¿Necesito un permiso para conectarme?
 
-Para la fase de registro  de aplicaciones, debe tener un rol de administrador global en el espacio empresarial Azure Active Directory (Azure AD).
+Para la fase de registro de aplicaciones, debe tener un rol de administrador **global** en el Azure Active Directory (Azure AD).
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>Paso 1: Crear una aplicación en Azure Active Directory
 
 1. Inicie sesión en [Azure](https://portal.azure.com) con el **usuario administrador** global.
 
-2. Vaya a **Azure Active Directory** \> **registros de aplicaciones** Nuevo \> **registro**.
+2. Vaya a **Azure Active Directory** \> **registros de aplicaciones** \> **Nuevo registro**.
 
-   :::image type="content" alt-text="Imagen de Microsoft Azure navegación al registro de aplicaciones." source="images/atp-azure-new-app2.png" lightbox="images/atp-azure-new-app2.png":::
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="La opción Registros de aplicaciones en el panel Administrar del portal Azure Active Directory aplicación"  lightbox="images/atp-azure-new-app2.png":::
 
 3. En el formulario de registro, elija un nombre para la aplicación y, a continuación, haga clic **en Registrar**.
 
-4. Permitir que la aplicación tenga acceso a Defender for Endpoint y asignarle el permiso **"Leer todas las** alertas":
+4. Permitir que la aplicación tenga acceso a Defender for Endpoint y asignarle el permiso **"Leer todas las alertas** ":
 
-   - En la página de la aplicación, haga clic en Permisos de **API** Agregar API de permisos que mi organización usa > tipo \>  \>  **WindowsDefenderATP** y haga clic en **WindowsDefenderATP**.
+   - En la página de la aplicación, haga clic en Permisos de **API** \>  \> Agregar API de permisos que mi organización **usa > tipo** **WindowsDefenderATP** y haga clic en **WindowsDefenderATP**.
 
      > [!NOTE]
      > WindowsDefenderATP no aparece en la lista original. Debe empezar a escribir su nombre en el cuadro de texto para verlo aparecer.
 
-     :::image type="content" alt-text="Imagen de acceso a la API y selección de API1." source="images/add-permission.png" lightbox="images/add-permission.png":::
+     :::image type="content" source="images/add-permission.png" alt-text="La opción permisos de API en el panel Administrar del portal Azure Active Directory api" lightbox="images/add-permission.png":::
 
-   - Elija **Permisos de aplicación** \> **Alert.Read.All** > Haga clic en Agregar **permisos**.
+   - Elija **Permisos de aplicación** \> **Alert.Read.All** > Haga clic en **Agregar permisos**.
 
-     :::image type="content" alt-text="Imagen de acceso a la API y selección de API2." source="images/application-permissions.png" lightbox="images/application-permissions.png":::
+     :::image type="content" source="images/application-permissions.png" alt-text="El tipo de permiso y los paneles de configuración de la página Solicitar permisos de la API" lightbox="images/application-permissions.png":::
 
      > [!IMPORTANT]
      > Debe seleccionar los permisos pertinentes. "Leer todas las alertas" es solo un ejemplo.
 
      Por ejemplo:
 
-     - Para [ejecutar consultas avanzadas,](run-advanced-query-api.md)seleccione el permiso "Ejecutar consultas avanzadas".
-     - Para [aislar una máquina,](isolate-machine.md)seleccione el permiso "Aislar máquina".
+     - Para [ejecutar consultas avanzadas](run-advanced-query-api.md), seleccione el permiso "Ejecutar consultas avanzadas".
+     - Para [aislar una máquina](isolate-machine.md), seleccione el permiso "Aislar máquina".
      - Para determinar qué permiso necesita, consulte la sección **Permisos** de la API a la que está interesado llamar.
 
 5. Haga clic **en Conceder consentimiento**.
@@ -90,29 +90,29 @@ Para la fase de registro  de aplicaciones, debe tener un rol de administrador gl
    > [!NOTE]
    > Cada vez que agregue permisos, debe hacer clic en **Conceder consentimiento** para que el nuevo permiso suba a efecto.
 
-   ![Imagen de Conceder permisos.](images/grant-consent.png)
+   :::image type="content" source="images/grant-consent.png" alt-text="La opción conceder permiso de consentimiento en el portal de Azure Active Directory permisos" lightbox="images/grant-consent.png":::
 
 6. Agregue un secreto a la aplicación.
 
-    Haga **clic en Certificados & secretos,** agregue una descripción al secreto y haga clic en **Agregar**.
+    Haga **clic en Certificados & secretos**, agregue una descripción al secreto y haga clic en **Agregar**.
 
     > [!IMPORTANT]
     > Después de hacer clic en Agregar, **copie el valor secreto generado**. No podrás recuperarlo después de salir.
 
-    ![Imagen de crear clave de aplicación.](images/webapp-create-key2.png)
+    :::image type="content" source="images/webapp-create-key2.png" alt-text="El elemento de menú & secretos del panel Administrar del portal Azure Active Directory datos" lightbox="images/webapp-create-key2.png":::
 
 7. Anote el identificador de aplicación y el identificador de inquilino.
 
    En la página de la aplicación, vaya a **Información general** y copie lo siguiente:
 
-   ![Imagen del identificador de aplicación creado.](images/app-and-tenant-ids.png)
+   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="Panel de detalles de la aplicación en el elemento de menú Información general del portal Azure Active Directory aplicación" lightbox="images/app-and-tenant-ids.png":::
 
 ¡Listo! Ha registrado correctamente una aplicación.
 
 ### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>Paso 2: obtener un token con la aplicación y usar este token para obtener acceso a la API.
 
 - Copie el script siguiente en PowerShell ISE o en un editor de texto y guárdelo como **Get-Token.ps1**.
-- Si se ejecuta este script, se generará un token y se guardará en la carpeta de trabajo con el nombre **Latest-token.txt**.
+- La ejecución de este script generará un token y lo guardará en la carpeta de trabajo con el nombre **Latest-token.txt**.
 
    ```powershell
    # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
@@ -138,17 +138,17 @@ Para la fase de registro  de aplicaciones, debe tener un rol de administrador gl
 
 - Comprobación de la cordura:
   - Ejecute el script.
-  - En el explorador, vaya a: <https://jwt.ms/> .
+  - En el explorador, vaya a: <https://jwt.ms/>.
   - Copie el token (el contenido del Latest-token.txt archivo).
   - Pegue en el cuadro superior.
-  - Busque la sección "roles". Busque el _rol Alert.Read.All._
+  - Busque la sección "roles". Busque el _rol Alert.Read.All_ .
 
-  :::image type="content" alt-text="Imagen jwt.ms." source="images/api-jwt-ms.png" lightbox="images/api-jwt-ms.png":::
+  :::image type="content" source="images/api-jwt-ms.png" alt-text="El panel Token descodificado para jwt.ms" lightbox="images/api-jwt-ms.png":::
 
 ### <a name="lets-get-the-alerts"></a>Vamos a obtener las alertas.
 
-- El script siguiente **usará** Get-Token.ps1acceso a la API y recibirá las últimas 48 horas de alertas.
-- Guarde este script en la misma carpeta en la que guardó el script **anteriorGet-Token.ps1**.
+- El script **siguiente usaráGet-Token.ps1** acceder a la API y recibirá las últimas 48 horas de alertas.
+- Guarde este script en la misma carpeta en la que guardó el script **Get-Token.ps1**.
 - El script crea dos archivos (json y csv) con los datos de la misma carpeta que los scripts.
 
   ```powershell

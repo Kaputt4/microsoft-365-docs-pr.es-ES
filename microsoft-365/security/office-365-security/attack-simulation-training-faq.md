@@ -18,18 +18,18 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las consideraciones de implementación y las preguntas más frecuentes sobre la simulación de ataques y el aprendizaje en Microsoft 365 E5 o Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 380241d44f667a845c47f85062d877192e1a7802
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 57b4d684e52fd51a2ece279cc7322389a953a17c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907998"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467805"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Implementación y preguntas más frecuentes del aprendizaje de simulación de ataques  
 
-El aprendizaje de simulación de ataques permite a Microsoft 365 E5 o Microsoft Defender para las organizaciones del Plan 2 de Office 365 medir y administrar los riesgos de ingeniería social al permitir la creación y administración de simulaciones de suplantación de identidad (phishing) con tecnología de cargas de suplantación de identidad sin armas del mundo real. El aprendizaje hiperespacio, impartido en asociación con la seguridad de Terranova, ayuda a mejorar el conocimiento y cambiar el comportamiento de los empleados.
+La formación en simulación de ataques permite a Microsoft 365 E5 o Microsoft Defender para organizaciones del Plan 2 de Office 365 medir y administrar los riesgos de ingeniería social al permitir la creación y administración de simulaciones de suplantación de identidad (phishing) con tecnología de cargas de suplantación de identidad sin armas reales. El aprendizaje hiperespacio, impartido en asociación con la seguridad de Terranova, ayuda a mejorar el conocimiento y cambiar el comportamiento de los empleados.
 
-Para obtener más información sobre cómo empezar con el aprendizaje de simulación de ataques, consulta [Introducción al entrenamiento de simulación de ataques.](attack-simulation-training-get-started.md)
+Para obtener más información sobre cómo empezar con el entrenamiento de simulación de ataques, consulta [Introducción al entrenamiento de simulación de ataques](attack-simulation-training-get-started.md).
 
 Aunque toda la experiencia de creación y programación de simulación se ha diseñado para que fluya libremente y sin fricción, la ejecución de simulaciones a escala empresarial a menudo requiere planeación. Este artículo ayuda a abordar desafíos específicos que vemos cuando nuestros clientes ejecutan simulaciones en sus propios entornos.
 
@@ -37,13 +37,13 @@ Aunque toda la experiencia de creación y programación de simulación se ha dis
 
 ### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Direcciones URL de simulación de suplantación de identidad bloqueadas por Google Caja fuerte exploración
 
-Un servicio de reputación de direcciones URL puede identificar una o varias de las direcciones URL que usa el entrenamiento de simulación de ataques como no seguras. Google Caja fuerte Exploración en Google Chrome bloquea algunas de las direcciones URL de suplantación de identidad simuladas con un **mensaje de** sitio engañoso. Aunque trabajamos con muchos proveedores de reputación de direcciones URL para permitir siempre nuestras direcciones URL de simulación, no siempre tenemos cobertura completa.
+Un servicio de reputación de direcciones URL puede identificar una o varias de las direcciones URL que usa el entrenamiento de simulación de ataques como no seguras. Google Caja fuerte Exploración en Google Chrome bloquea algunas de las direcciones URL de suplantación de identidad simuladas con un **mensaje de** un sitio engañoso. Aunque trabajamos con muchos proveedores de reputación de direcciones URL para permitir siempre nuestras direcciones URL de simulación, no siempre tenemos cobertura completa.
 
-![Advertencia de sitio engañoso en Google Chrome.](../../media/attack-sim-training-faq-chrome-deceptive-site-message.png)
+:::image type="content" source="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png" alt-text="Advertencia del sitio engañoso en Google Chrome" lightbox="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png":::
 
 Tenga en cuenta que este problema no afecta Microsoft Edge.
 
-Como parte de la fase de planeación, asegúrese de comprobar la disponibilidad de la dirección URL en los exploradores web compatibles antes de usar la dirección URL en una campaña de suplantación de identidad. Si Google bloquea las direcciones URL Caja fuerte [exploración,](https://support.google.com/chrome/a/answer/7532419) sigue estas instrucciones de Google para permitir el acceso a las direcciones URL.
+Como parte de la fase de planeación, asegúrese de comprobar la disponibilidad de la dirección URL en los exploradores web compatibles antes de usar la dirección URL en una campaña de suplantación de identidad. Si Google bloquea las direcciones URL Caja fuerte [navegación, sigue](https://support.google.com/chrome/a/answer/7532419) estas instrucciones de Google para permitir el acceso a las direcciones URL.
 
 Consulta Introducción [al aprendizaje de simulación de ataque](attack-simulation-training-get-started.md) para obtener la lista de direcciones URL que usa actualmente el entrenamiento de simulación de ataques.
 
@@ -57,7 +57,7 @@ Las direcciones URL de simulación de suplantación de identidad (phishing) y la
 
 Aunque hemos visto pocos clientes bloqueados en esta capa, esto sucede. Si tiene problemas, considere la posibilidad de configurar las siguientes direcciones URL para omitir el examen de los dispositivos de seguridad o filtros según sea necesario:
 
-- Las direcciones URL de suplantación de identidad simuladas, como se describe en [Introducción al aprendizaje de simulación de ataques.](attack-simulation-training-get-started.md)
+- Las direcciones URL de suplantación de identidad simuladas, como se describe en [Introducción al aprendizaje de simulación de ataques](attack-simulation-training-get-started.md).
 - <https://security.microsoft.com/attacksimulator>
 - <https://security.microsoft.com/attacksimulationreport>
 - <https://security.microsoft.com/trainingassignments>
@@ -83,7 +83,7 @@ El entrenamiento de simulación de ataque requiere la búsqueda del registro de 
 - Los datos de informes no están disponibles en todos los informes. Los informes aparecerán vacíos.
 - Las asignaciones de aprendizaje se bloquean, ya que los datos no están disponibles.
 
-Para activar o desactivar la búsqueda del registro de auditoría, vea Activar o desactivar la búsqueda del registro [de auditoría.](../../compliance/turn-audit-log-search-on-or-off.md)
+Para activar o desactivar la búsqueda del registro de auditoría, vea [Activar o desactivar la búsqueda del registro de auditoría](../../compliance/turn-audit-log-search-on-or-off.md).
 
 > [!NOTE]
 > Los detalles de actividad vacíos también pueden deberse a que no se asignan licencias E5 a los usuarios. Compruebe que al menos una licencia de E5 está asignada a un usuario activo para asegurarse de que los eventos de informes se capturan y se registran.
@@ -92,17 +92,17 @@ Para activar o desactivar la búsqueda del registro de auditoría, vea Activar o
 
 Los informes de simulación detallados no se actualizan inmediatamente después de iniciar una campaña. No se preocupe; se espera este comportamiento.
 
-Cada campaña de simulación tiene un ciclo de vida. Cuando se crea por primera vez, la simulación se encuentra en **el estado Programado.** Cuando se inicia la simulación, se pasa al **estado En** curso. Cuando se completa, la simulación pasa al **estado Completado.**
+Cada campaña de simulación tiene un ciclo de vida. Cuando se crea por primera vez, la simulación se encuentra en **el estado Programado** . Cuando se inicia la simulación, se pasa al **estado En** curso. Cuando se completa, la simulación pasa al **estado Completado** .
 
-Mientras una simulación está en **estado programado,** los informes de simulación estarán en su mayoría vacíos. Durante esta fase, el motor de simulación está resolviendo las direcciones de correo electrónico del usuario de destino, expandiendo grupos de distribución, quitando usuarios invitados de la lista, etc.:
+Mientras una simulación está en **estado programado** , los informes de simulación estarán en su mayoría vacíos. Durante esta fase, el motor de simulación está resolviendo las direcciones de correo electrónico del usuario de destino, expandiendo grupos de distribución, quitando usuarios invitados de la lista, etc.:
 
-![Detalles de simulación que muestran la simulación en el estado Programado.](../../media/attack-sim-training-faq-scheduled-state.png)
+:::image type="content" source="../../media/attack-sim-training-faq-scheduled-state.png" alt-text="Detalles de simulación que muestran la simulación en estado programado" lightbox="../../media/attack-sim-training-faq-scheduled-state.png":::
 
 Una vez que la simulación entra en la **fase en** curso, observará que la información empieza a engañarse en los informes:
 
-![Detalles de simulación que muestran la simulación en el estado En curso.](../../media/attack-sim-training-faq-in-progress-state.png)
+:::image type="content" source="../../media/attack-sim-training-faq-in-progress-state.png" alt-text="Detalles de simulación que muestran la simulación en el estado En curso" lightbox="../../media/attack-sim-training-faq-in-progress-state.png":::
 
-Los informes de simulación individuales pueden tardar hasta 30 minutos en actualizarse después de la transición al **estado En** curso. Los datos del informe siguen compilando hasta que la simulación alcanza el **estado Completado.** Las actualizaciones de informes se producen en los siguientes intervalos:
+Los informes de simulación individuales pueden tardar hasta 30 minutos en actualizarse después de la transición al **estado En** curso. Los datos del informe siguen compilando hasta que la simulación alcanza el **estado Completado** . Las actualizaciones de informes se producen en los siguientes intervalos:
 
 - Cada 10 minutos durante los primeros 60 minutos.
 - Cada 15 minutos después de 60 minutos hasta 2 días.
@@ -122,12 +122,12 @@ Los informes de simulación en el entrenamiento del simulador de ataque proporci
 - Usuarios que entregaron sus credenciales.
 - Usuarios que informaron del mensaje como suplantación de identidad.
 
-Si los mensajes que los usuarios han notificado como suplantación de identidad no se capturan en los informes de simulación de simulación de ataque, puede haber una regla de flujo de correo de Exchange (también conocida como regla de transporte) que bloquee la entrega de los mensajes notificados a Microsoft. Compruebe que las reglas de flujo de correo no bloquean la entrega a las siguientes direcciones de correo electrónico:
+Si los mensajes que los usuarios han notificado como suplantación de identidad no se capturan en los informes de simulación de simulación de ataques, es posible que haya una regla de flujo de correo de Exchange (también conocida como regla de transporte) que bloquee la entrega de los mensajes notificados a Microsoft. Compruebe que las reglas de flujo de correo no bloquean la entrega a las siguientes direcciones de correo electrónico:
 
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com
 - phish@office365.microsoft.com
-- no \_ junk@office365.microsoft.com
+- no\_ junk@office365.microsoft.com
 
 ## <a name="other-frequently-asked-questions"></a>Otras preguntas más frecuentes
 
@@ -140,7 +140,7 @@ A: Hay varias opciones disponibles para los usuarios de destino:
 - Seleccione usuarios de un archivo CSV (una dirección de correo electrónico por línea).
 - Azure AD de destino basada en grupos.
 
-Hemos encontrado que las campañas en las que los usuarios de destino están identificados por grupos Azure AD suelen ser más fáciles de administrar.
+Hemos encontrado que las campañas en las que los usuarios de destino están identificados por Azure AD por lo general son más fáciles de administrar.
 
 ### <a name="q-are-there-any-limits-in-targeting-users-while-importing-from-a-csv-or-adding-users"></a>P: ¿Hay límites en la segmentación de usuarios al importar desde un CSV o agregar usuarios?
 
@@ -158,15 +158,15 @@ Dicho esto, puede crear su propia carga en el idioma que prefiera con la experie
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>P: ¿Cómo puedo cambiar a otros idiomas para mi experiencia de aprendizaje y portal de administración?
 
-A: En Microsoft 365 o Office 365, la configuración de idioma es específica y centralizada para cada cuenta de usuario. Para obtener instrucciones sobre cómo cambiar la configuración de idioma, vea Cambiar el idioma de presentación y la zona horaria [en Microsoft 365 para empresas](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b).
+A: En Microsoft 365 o Office 365, la configuración de idioma es específica y centralizada para cada cuenta de usuario. Para obtener instrucciones sobre cómo cambiar la configuración de idioma, consulta Cambiar el idioma para mostrar y la zona horaria [en Microsoft 365 para empresas](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b).
 
 Tenga en cuenta que el cambio de configuración puede tardar hasta 30 minutos en sincronizarse en todos los servicios.
 
 ### <a name="q-can-i-trigger-a-test-simulation-to-understand-what-it-looks-like-prior-to-launching-a-full-fledged-campaign"></a>P: ¿Puedo desencadenar una simulación de prueba para comprender cómo es antes de iniciar una campaña completa?
 
-A: ¡Sí se puede! En la última página **Revisar simulación** del asistente para crear una nueva simulación, hay una opción para **Enviar una prueba**. Esta opción enviará un mensaje de simulación de suplantación de identidad (phishing) de ejemplo al usuario que ha iniciado sesión actualmente. Después de validar el mensaje de suplantación de identidad en la Bandeja de entrada, puede enviar la simulación.
+A: ¡Sí se puede! En la última página **Revisar simulación** del asistente para crear una nueva simulación, hay una opción para **enviar una prueba**. Esta opción enviará un mensaje de simulación de suplantación de identidad (phishing) de ejemplo al usuario que ha iniciado sesión actualmente. Después de validar el mensaje de suplantación de identidad en la Bandeja de entrada, puede enviar la simulación.
 
-![Enviar un botón de prueba en la página Revisar simulación.](../../media/attack-sim-training-simulations-review-simulation.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="El botón Enviar una prueba en la página Revisar simulación" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::
 
 ### <a name="q-can-i-target-users-that-belong-to-a-different-tenant-as-part-of-the-same-simulation-campaign"></a>P: ¿Puedo dirigirme a usuarios que pertenecen a un inquilino diferente como parte de la misma campaña de simulación?
 

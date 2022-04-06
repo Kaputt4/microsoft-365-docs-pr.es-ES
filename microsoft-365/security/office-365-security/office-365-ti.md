@@ -1,7 +1,7 @@
 ---
 title: 'Capacidades de respuesta & investigación de amenazas: Microsoft Defender para Office 365 plan 2'
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -10,19 +10,24 @@ audience: Admin
 ms.topic: overview
 ms.localizationpriority: medium
 search.appverid:
-  - MET150
-  - MOE150
+- MET150
+- MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-defender-office365
+- M365-security-compliance
+- m365initiative-defender-office365
 ms.custom:
-  - seo-marvel-apr2020
+- seo-marvel-apr2020
 description: Obtenga información sobre las capacidades de investigación y respuesta de amenazas en Microsoft Defender para Office 365 Plan.
 ms.technology: mdo
 ms.prod: m365-security
+ms.openlocfilehash: 53f1077d4ef32c6dc5698aae74de51dd5a421510
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474913"
 ---
-
 # <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -53,7 +58,7 @@ Las capacidades de investigación y respuesta de amenazas en Microsoft 365 Defen
 
 Usa [el Explorador (y](threat-explorer.md) detecciones en tiempo real) para analizar amenazas, ver el volumen de ataques a lo largo del tiempo y analizar datos por familias de amenazas, infraestructura de atacantes y mucho más. Explorer (también conocido como Explorador de amenazas) es el punto de partida del flujo de trabajo de investigación de cualquier analista de seguridad.
 
-![Explorador de amenazas.](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
+:::image type="content" source="../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png" alt-text="La página Explorador de amenazas" lightbox="../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png":::
 
 Para ver y usar este informe en el portal de Microsoft 365 Defender, <https://security.microsoft.com>vaya a **Correo electrónico & explorador de colaboración**\>. O bien, para ir directamente a la **página Explorador** , use <https://security.microsoft.com/threatexplorer>.
 
@@ -72,11 +77,11 @@ Para recibir la integración contextual de dispositivos en Office 365 inteligenc
 
 Use la lista Incidentes (esto también se denomina Investigaciones) para ver una lista de incidentes de seguridad piloto. Los incidentes se usan para realizar un seguimiento de amenazas, como mensajes de correo electrónico sospechosos, y para llevar a cabo una investigación y corrección adicionales.
 
-![Lista de incidentes de amenazas actuales en Office 365.](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
+:::image type="content" source="../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png" alt-text="La lista de incidentes de amenazas actuales en Office 365" lightbox="../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png":::
 
 Para ver la lista de incidentes actuales de su organización en el portal <https://security.microsoft.com>de Microsoft 365 Defender en , vaya a **Incidentes & alertas incidentes**\>. O bien, para ir directamente a la **página Incidentes** , use <https://security.microsoft.com/incidents>.
 
-![En el Centro de seguridad & cumplimiento, elija Revisión de administración de \> amenazas.](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
+:::image type="content" source="../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png" alt-text="La página Revisar del Centro de seguridad & cumplimiento" lightbox="../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png":::
 
 ### <a name="attack-simulation-training"></a>Aprendizaje de simulación de ataque
 
@@ -92,7 +97,7 @@ Use las capacidades de investigación y respuesta automatizadas (AIR) para ahorr
 
 Como parte de la oferta del Plan 2 de Microsoft Defender para Office 365, los analistas de seguridad pueden revisar detalles sobre una amenaza conocida. Esto es útil para determinar si hay medidas o pasos preventivos adicionales que se pueden tomar para mantener a los usuarios seguros.
 
-![Tendencias de seguridad que muestran información sobre amenazas recientes.](../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png)
+:::image type="content" source="../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png" alt-text="El panel Tendencias de seguridad que muestra información sobre las amenazas recientes" lightbox="../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png":::
 
 ## <a name="how-do-we-get-these-capabilities"></a>¿Cómo se obtienen estas capacidades?
 

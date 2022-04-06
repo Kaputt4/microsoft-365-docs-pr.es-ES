@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Obtenga información sobre Caja fuerte protección de vínculos en Defender for Office 365 para proteger una organización contra la suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas. Descubra Teams Caja fuerte y vea los gráficos de los Caja fuerte links.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8bd4773d3f712adf13ac2a006f5d8450c58fc89a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 28215843f8c8edab4125ba46b483c2d596c78532
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682094"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474561"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Caja fuerte vínculos en Microsoft Defender para Office 365
 
@@ -74,7 +74,7 @@ En este artículo se incluyen descripciones detalladas de los siguientes tipos d
 - **Configuración en Caja fuerte de** vínculos: esta configuración se aplica solo a los usuarios que se incluyen en las directivas específicas y la configuración puede ser diferente entre directivas. Entre estas opciones se incluyen:
 
   - [Caja fuerte configuración de vínculos para mensajes de correo electrónico](#safe-links-settings-for-email-messages)
-  - [Caja fuerte configuración de vínculos para Microsoft Teams](#safe-links-settings-for-microsoft-teams)
+  - [Configuración de vínculos seguros para Microsoft Teams](#safe-links-settings-for-microsoft-teams)
   - ["No reescribir las siguientes direcciones URL" en las directivas Caja fuerte vínculos](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
 - **Configuración Caja fuerte vínculos** globales: esta configuración se configura globalmente, no en Caja fuerte de vínculos. Entre estas opciones se incluyen:
@@ -107,18 +107,18 @@ La configuración de las Caja fuerte de vínculos que se aplican a los mensajes 
   - Cuando se hace clic, las direcciones URL se comprueban en una lista de direcciones URL malintencionadas conocidas y en la lista ["Bloquear las siguientes direcciones URL"](#block-the-following-urls-list-for-safe-links).
   - Las direcciones URL que no tienen una reputación válida se detonan de forma asincrónica en segundo plano.
 
-- **Aplicar el examen de direcciones URL** en tiempo real en busca de vínculos sospechosos y vínculos que apunten a archivos: habilita el examen en tiempo real de vínculos, incluidos los vínculos en mensajes de correo electrónico que apuntan a contenido descargable. El valor recomendado está habilitado.
+- **Aplicar el examen de direcciones URL en tiempo real en busca de vínculos sospechosos y vínculos que apunten a archivos**: habilita el examen en tiempo real de vínculos, incluidos los vínculos en mensajes de correo electrónico que apuntan a contenido descargable. El valor recomendado es habilitado.
   - **Espere a que se complete el examen de direcciones URL antes de entregar el mensaje**:
     - Habilitado: los mensajes que contienen direcciones URL se mantienen hasta que finaliza el examen. Los mensajes se entregan solo después de confirmar que las direcciones URL son seguras. Este es el valor recomendado.
     - Deshabilitado: si el examen de direcciones URL no se puede completar, entregue el mensaje de todos modos.
 
-- **Aplicar Caja fuerte vínculos** a mensajes de correo electrónico enviados dentro de la organización: habilita o deshabilita el examen de vínculos de Caja fuerte en mensajes enviados entre remitentes internos y destinatarios internos dentro de la misma Exchange Online organización. El valor recomendado está habilitado.
+- **Aplicar Caja fuerte vínculos** a mensajes de correo electrónico enviados dentro de la organización: habilita o deshabilita el examen de vínculos de Caja fuerte en mensajes enviados entre remitentes internos y destinatarios internos dentro de la misma Exchange Online organización. El valor recomendado es habilitado.
 
-- **No realizar un seguimiento de los clics del** usuario: habilita o deshabilita el almacenamiento de datos de clics Caja fuerte vínculos para las direcciones URL en las que se hace clic en los mensajes de correo electrónico. El valor recomendado es dejar esta configuración sin elegir (para realizar un seguimiento de los clics del usuario).
+- **No realizar un seguimiento de los clics del usuario**: habilita o deshabilita el almacenamiento de datos de clics en vínculos seguros para las direcciones URL en las que se hace clic en los mensajes de correo electrónico. El valor recomendado es dejar esta configuración sin elegir (para realizar un seguimiento de los clics del usuario).
 
-  Actualmente no se admite el seguimiento de clics en url para vínculos en mensajes de correo electrónico enviados entre remitentes internos y destinatarios internos.
+  Actualmente no se admite el seguimiento de clics en direcciones URL para vínculos en mensajes de correo electrónico enviados entre remitentes internos y destinatarios internos.
 
-- **No permitir que los usuarios hagan clic en la dirección URL original**: permite o bloquea que los usuarios hagan clic en la página [de advertencia](#warning-pages-from-safe-links) a la dirección URL original. El valor recomendado está habilitado.
+- **No permitir que los usuarios hagan clic en la dirección URL original**: permite o bloquea que los usuarios hagan clic en la página [de advertencia](#warning-pages-from-safe-links) a la dirección URL original. El valor recomendado es habilitado.
 
 - **Mostrar la personal de marca de la organización en las páginas de notificación** y advertencia: esta opción muestra la personalizado de marca de la organización en las páginas de advertencia. La personalidad de marca ayuda a los usuarios a identificar advertencias legítimas, ya que los atacantes suelen usar las páginas de advertencia predeterminadas de Microsoft. Para obtener más información acerca de la personalización de marca personalizada, vea [Personalizar el Microsoft 365 de la organización](../../admin/setup/customize-your-organization-theme.md).
 
@@ -157,9 +157,9 @@ En un nivel alto, aquí se muestra cómo funciona la protección Caja fuerte ví
 
    - Si se determina que la dirección URL es segura, se abrirá el sitio web.
 
-## <a name="safe-links-settings-for-microsoft-teams"></a>Caja fuerte configuración de vínculos para Microsoft Teams
+## <a name="safe-links-settings-for-microsoft-teams"></a>Configuración de vínculos seguros para Microsoft Teams
 
-Puede habilitar o deshabilitar la protección Caja fuerte vínculos para Microsoft Teams en las directivas Caja fuerte vínculos. En concreto, se usa la opción **Seleccionar la acción para direcciones URL** desconocidas o potencialmente malintencionadas dentro Microsoft Teams configuración. El valor recomendado es **On**.
+Puede habilitar o deshabilitar la protección de vínculos seguros para Microsoft Teams en las directivas de vínculos seguros. En concreto, se usa la opción **Seleccionar la acción para direcciones URL** desconocidas o potencialmente malintencionadas dentro Microsoft Teams configuración. El valor recomendado es **On**.
 
 > [!NOTE]
 > Al activar o desactivar la protección de vínculos de Caja fuerte para Teams, el cambio puede tardar hasta 24 horas en tener efecto.
@@ -167,30 +167,30 @@ Puede habilitar o deshabilitar la protección Caja fuerte vínculos para Microso
 La siguiente configuración de las Caja fuerte de vínculos que se aplican a los vínculos de los mensajes de correo electrónico también se aplican a los vínculos de Teams:
 
 - **Aplicar análisis de url en tiempo real en busca de vínculos sospechosos y vínculos que apunten a archivos**
-- **No realizar un seguimiento de los clics del usuario**
+- **No hacer seguimiento de los clics de los usuarios**
 - **No permitir que los usuarios hagan clic en la dirección URL original**
 
 Esta configuración se explica anteriormente en la configuración [Caja fuerte vínculos para los mensajes de correo electrónico](#safe-links-settings-for-email-messages).
 
-Después de activar la protección de vínculos de Caja fuerte para Microsoft Teams, las direcciones URL de Teams se comprueban en una lista de vínculos malintencionados conocidos cuando el usuario protegido hace clic en el vínculo (protección con tiempo de clic). Las direcciones URL no se reescritan. Si se encuentra que un vínculo es malintencionado, los usuarios tendrán las siguientes experiencias:
+Después de activar la protección de vínculos seguros para Microsoft Teams, las direcciones URL de Teams se comprueban en una lista de vínculos malintencionados conocidos cuando el usuario protegido hace clic en el vínculo (protección al hacer clic). Las direcciones URL no se reescriben. Si se detecta que un vínculo es malintencionado, los usuarios tendrán las siguientes experiencias:
 
 - Si se hizo clic en el vínculo en una conversación de Teams, chat en grupo o desde canales, la página de advertencia como se muestra en la captura de pantalla siguiente aparecerá en el explorador web predeterminado.
-- Si se hizo clic en el vínculo desde una pestaña anclada, la página de advertencia aparecerá en la Teams de la pestaña. La opción para abrir el vínculo en un explorador web está deshabilitada por motivos de seguridad.
-- Dependiendo de cómo se configure la configuración No permitir que los usuarios hagan clic en la dirección **URL original** de la directiva, el usuario podrá o no podrá hacer clic en la dirección URL original (Continuar de todos modos (no recomendado **)** en la captura de pantalla). Se recomienda habilitar la configuración No permitir que los usuarios hagan clic en la **dirección URL original** para que los usuarios no puedan hacer clic en la dirección URL original.
+- Si se hizo clic en el vínculo desde una pestaña anclada, la página de advertencia aparecerá en la interfaz de Teams de la pestaña. La opción para abrir el vínculo en un explorador web está deshabilitada por motivos de seguridad.
+- Dependiendo de cómo se establezca la configuración **No permitir que los usuarios hagan clic en la dirección URL original** de la directiva, el usuario podrá o no podrá hacer clic en la dirección URL original (**Continuar de todos modos (no recomendado)** en la captura de pantalla). Se recomienda habilitar la configuración No permitir que los usuarios hagan clic en la **dirección URL original** para que los usuarios no puedan hacer clic en la dirección URL original.
 
-Si el usuario que envió el vínculo no está incluido en una directiva de vínculos de Caja fuerte donde está habilitada la protección Teams, el usuario puede hacer clic en la dirección URL original en su equipo o dispositivo.
+Si el usuario que envió el vínculo no está incluido en una directiva de vínculos seguros donde está habilitada la protección de Teams, el usuario puede hacer clic en la dirección URL original en su equipo o dispositivo.
 
-![Una Caja fuerte vínculos para Teams página que informa de un vínculo malintencionado.](../../media/tp-safe-links-for-teams-malicious.png)
+:::image type="content" source="../../media/tp-safe-links-for-teams-malicious.png" alt-text="Una páginas de vínculos seguros para Teams que informa de un vínculo malintencionado" lightbox="../../media/tp-safe-links-for-teams-malicious.png":::
 
-Al hacer **clic en el botón** Volver de la página de advertencia, el usuario volverá a su contexto o ubicación URL original. Sin embargo, al volver a hacer clic en el vínculo original, Caja fuerte vínculos volverán a examinar la dirección URL, por lo que la página de advertencia volverá a aparecer.
+Al hacer clic en el botón **Volver** de la página de advertencia, el usuario volverá a su contexto o ubicación URL original. Sin embargo, al volver a hacer clic en el vínculo original, los vínculos seguros volverán a examinar la dirección URL, por lo que la página de advertencia volverá a aparecer.
 
-### <a name="how-safe-links-works-in-teams"></a>Cómo Caja fuerte links en Teams
+### <a name="how-safe-links-works-in-teams"></a>Cómo funcionan los vínculos seguros en Teams
 
-En un nivel alto, aquí se muestra cómo funciona la protección Caja fuerte vínculos para direcciones URL en Microsoft Teams:
+En un nivel alto, aquí se muestra cómo funciona la protección de vínculos seguros para direcciones URL en Microsoft Teams:
 
-1. Un usuario inicia la Teams aplicación.
+1. Un usuario inicia la aplicación Teams.
 
-2. Microsoft 365 comprueba que la organización del usuario incluye Microsoft Defender para Office 365 y que el usuario se incluye en una directiva de vínculos de Caja fuerte activa en la que la protección de Microsoft Teams está habilitada.
+2. Microsoft 365 comprueba que la organización del usuario incluye Microsoft Defender para Office 365 y que el usuario se incluye en una directiva de vínculos seguros activa en la que la protección de Microsoft Teams está habilitada.
 
 3. Las direcciones URL se validan al hacer clic para el usuario en chats, chats de grupo, canales y pestañas.
 
@@ -330,33 +330,33 @@ Tenga en cuenta que se han actualizado varias páginas de advertencia. Si aún n
 
 La dirección URL en la que se ha hecho clic está siendo examinada Caja fuerte vínculos. Es posible que deba esperar unos instantes antes de volver a intentar el vínculo.
 
-![Notificación "Se está analizando el vínculo"](../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
+:::image type="content" source="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png" alt-text="La notificación de que se está analizando el vínculo" lightbox="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png":::
 
 La página de notificación original tenía este aspecto:
 
-![Notificación original de "El vínculo se está explorando"](../../media/04368763-763f-43d6-94a4-a48291d36893.png)
+:::image type="content" source="../../media/04368763-763f-43d6-94a4-a48291d36893.png" alt-text="Se está analizando la notificación del vínculo" lightbox="../../media/04368763-763f-43d6-94a4-a48291d36893.png":::
 
 ### <a name="suspicious-message-warning"></a>Advertencia de mensaje sospechoso
 
 La dirección URL en la que se hizo clic estaba en un mensaje de correo electrónico que es similar a otros mensajes sospechosos. Se recomienda comprobar dos veces el mensaje de correo electrónico antes de continuar con el sitio.
 
-![Advertencia de "Se hizo clic en un vínculo desde un mensaje sospechoso"](../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
+:::image type="content" source="../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png" alt-text="Se hizo clic en un vínculo desde una advertencia de mensaje sospechoso" lightbox="../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png":::
 
 ### <a name="phishing-attempt-warning"></a>Advertencia de intento de suplantación de identidad
 
 La dirección URL en la que se hizo clic estaba en un mensaje de correo electrónico que se ha identificado como un ataque de suplantación de identidad. Como resultado, se bloquean todas las direcciones URL del mensaje de correo electrónico. Se recomienda no continuar con el sitio.
 
-![Advertencia de "Se hizo clic en el vínculo desde un mensaje de suplantación de identidad"](../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
+:::image type="content" source="../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png" alt-text="La advertencia que indica que se hizo clic en un vínculo desde un mensaje de suplantación de identidad" lightbox="../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png":::
 
 ### <a name="malicious-website-warning"></a>Advertencia de sitio web malintencionado
 
 La dirección URL en la que se ha hecho clic apunta a un sitio que se ha identificado como malintencionado. Se recomienda no continuar con el sitio.
 
-![Advertencia de "Este sitio web está clasificado como malintencionado"](../../media/058883c8-23f0-4672-9c1c-66b084796177.png)
+:::image type="content" source="../../media/058883c8-23f0-4672-9c1c-66b084796177.png" alt-text="La advertencia que indica que el sitio web está clasificado como malintencionado" lightbox="../../media/058883c8-23f0-4672-9c1c-66b084796177.png":::
 
 La página de advertencia original tenía este aspecto:
 
-![Advertencia original de "Este sitio web se ha clasificado como malintencionado"](../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
+:::image type="content" source="../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png" alt-text="La advertencia original que indica que el sitio web está clasificado como malintencionado" lightbox="../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png":::
 
 ### <a name="blocked-url-warning"></a>Advertencia de dirección URL bloqueada
 
@@ -364,18 +364,18 @@ La dirección URL en la que se ha hecho clic ha sido bloqueada manualmente por u
 
 Hay varias razones por las que un administrador bloquearía manualmente direcciones URL específicas. Si cree que el sitio no debe bloquearse, póngase en contacto con el administrador.
 
-![Advertencia de "El administrador bloqueó este sitio web"](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+:::image type="content" source="../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png" alt-text="La advertencia que indica que el administrador bloqueó el sitio web" lightbox="../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png":::
 
 La página de advertencia original tenía este aspecto:
 
-![Advertencia original de "Este sitio web se ha bloqueado según la directiva url de la organización"](../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
+:::image type="content" source="../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png" alt-text="La advertencia original que indica que el sitio web se ha bloqueado según la directiva de dirección URL de su organización" lightbox="../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png":::
 
 ### <a name="error-warning"></a>Advertencia de error
 
 Se ha producido algún tipo de error y no se puede abrir la dirección URL.
 
-![Advertencia de "No se puede cargar la página a la que está intentando acceder"](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
+:::image type="content" source="../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png" alt-text="La advertencia que indica que la página a la que está intentando acceder no se puede cargar" lightbox="../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png":::
 
 La página de advertencia original tenía este aspecto:
 
-![Advertencia original de "Esta página web no se pudo cargar"](../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)
+:::image type="content" source="../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png" alt-text="La advertencia que indica que no se pudo cargar la página web" lightbox="../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png":::

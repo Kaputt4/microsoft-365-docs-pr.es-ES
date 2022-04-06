@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 33961088105e838add3634024bb85807a6550eb7
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: d8524715ad0e450671faeaeb0714992e297a02df
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450736"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595194"
 ---
 # <a name="communication-compliance-policies"></a>Directivas de Cumplimiento de comunicaciones
 
@@ -81,6 +81,32 @@ Para copiar una directiva y crear una nueva directiva, siga estos pasos:
 2. Seleccione **Copiar botón de** barra de comandos de directiva en la barra de comandos o seleccione **Copiar directiva** en el menú de acciones de la directiva.
 3. En el **panel Copiar directiva** , puede aceptar el nombre predeterminado de la directiva en el **campo Nombre** de directiva o cambiar el nombre de la directiva. El nombre de la directiva para la nueva directiva no puede ser el mismo que una directiva activa o desactivada existente. Complete el **campo Descripción** según sea necesario.
 4. Si no necesita más personalización de la directiva, seleccione **Copiar directiva** para completar el proceso. Si necesita actualizar la configuración de la nueva directiva, seleccione **Personalizar directiva**. Esto inicia el asistente para directivas para ayudarle a actualizar y personalizar la nueva directiva.
+
+## <a name="user-reported-messages-policy"></a>Directiva de mensajes notificados por el usuario
+
+Como parte de una defensa por capas para detectar y corregir mensajes inapropiados en su organización, puede complementar las directivas de cumplimiento de comunicaciones con mensajes notificados por el usuario en Microsoft Teams. Esta característica permite a los usuarios de la organización informar por sí mismo de mensajes inapropiados, como el lenguaje acosado o amenazante, el uso compartido de contenido para adultos y el uso compartido de información confidencial o confidencial, para ayudar a fomentar un entorno de trabajo seguro y compatible.
+
+Habilitada de forma predeterminada en el Centro de administración de Teams, la  opción Informar de una preocupación en los mensajes de Teams permite [a](/microsoftteams/manage-teams-in-modern-portal) los usuarios de la organización enviar mensajes inapropiados para que los revisores de cumplimiento de comunicación revisen la directiva. Estos mensajes son compatibles con una directiva de sistema predeterminada que admite la notificación de mensajes en Teams canales, grupos y chats privados.
+
+![Cumplimiento de la comunicación Informe de una preocupación.](../media/communication-compliance-report-a-concern-full-menu.png)
+
+Cuando un usuario envía un Teams de chat para su revisión, el mensaje se copia en la directiva de mensaje notificada por el usuario. Los mensajes notificados inicialmente permanecen visibles para todos los miembros del chat y no hay ninguna notificación a los miembros de chat o al enviador de que se ha notificado un mensaje en chats de canal, privado o grupo. Un usuario no puede informar del mismo mensaje más de una vez y el mensaje permanece visible para todos los usuarios incluidos en la sesión de chat durante el proceso de revisión de directivas. 
+
+Durante el proceso de revisión, los revisores de cumplimiento de comunicaciones pueden realizar todas las acciones de corrección estándar del mensaje, incluida la eliminación del mensaje del Teams chat.[](/microsoft-365/compliance/communication-compliance-investigate-remediate#step-3-decide-on-a-remediation-action) En función de cómo se corrigen los mensajes, el remitente y los destinatarios del mensaje verán diferentes mensajes de notificación en Teams chats después de la revisión.[](/microsoftteams/communication-compliance#act-on-inappropriate-messages-in-microsoft-teams)
+
+![Directiva de mensajes notificados por el usuario de cumplimiento de comunicación.](../media/communication-compliance-user-reported-messages-policy.png)
+
+Los mensajes notificados por el usuario Teams chats son los únicos mensajes procesados por la directiva de mensajes notificados por el usuario y solo se pueden modificar los revisores asignados para la directiva. Todas las demás propiedades de directiva no son editables. Cuando se crea la directiva, los revisores iniciales asignados a la directiva son todos los  miembros del grupo de roles Administradores de cumplimiento de comunicaciones (si se rellenan con al menos un usuario) o todos los miembros del grupo de roles Administrador *global* de la organización. El creador de directivas es un usuario seleccionado aleatoriamente del  grupo de roles Administradores de cumplimiento de comunicaciones (si se rellena con al menos un usuario) o un usuario seleccionado aleatoriamente del grupo de roles Administración *global* de la organización.  
+
+Los administradores deben asignar inmediatamente revisores personalizados a esta directiva según corresponda para su organización. Esto puede incluir revisores como el oficial de cumplimiento, el responsable de riesgos o los miembros de su departamento de recursos humanos. Para personalizar los revisores de los mensajes de chat enviados como mensajes notificados por el usuario, siga estos pasos:
+
+1. Inicie sesión [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/) las credenciales de una cuenta de administrador de su Microsoft 365 organización.
+2. En el Centro de cumplimiento de Microsoft 365, vaya a **Cumplimiento de comunicaciones**.
+3. En la **pestaña Directiva** , seleccione la *directiva mensajes notificados por* el usuario y **seleccione Editar**.
+4. En el **panel Supervisar mensajes notificados por el** usuario, asigne revisores para la directiva. Los revisores deben tener buzones hospedados en Exchange Online. Cuando se agregan revisores a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la directiva y proporciona vínculos a información sobre el proceso de revisión.
+5. Seleccione **Guardar**.
+
+Para deshabilitar que los usuarios Teams mensajes con la opción Informar de una  *preocupación,* deshabilite la opción Informes de usuarios finales en el [Centro de administración de Teams.](/microsoftteams/manage-teams-in-modern-portal)
 
 ## <a name="storage-limit-notification-preview"></a>Storage de límite (versión preliminar)
 

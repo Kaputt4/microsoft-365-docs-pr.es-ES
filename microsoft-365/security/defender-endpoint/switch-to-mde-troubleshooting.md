@@ -1,7 +1,7 @@
 ---
-title: Solución de problemas al cambiar a Microsoft Defender para endpoint
-description: Obtenga información sobre cómo solucionar problemas al cambiar a Microsoft Defender para endpoint.
-keywords: 'migración, Windows Defender, protección avanzada de puntos de conexión, antivirus, antimalware, modo pasivo, modo activo, solución de problemas'
+title: Solución de problemas al cambiar a Microsoft Defender para punto de conexión
+description: Obtenga información sobre cómo solucionar problemas al cambiar a Microsoft Defender para punto de conexión.
+keywords: migración, Windows Defender, protección avanzada de puntos de conexión, antivirus, antimalware, modo pasivo, modo activo, solución de problemas
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,23 +12,28 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365solution-scenario
-  - M365-security-compliance
+- m365solution-scenario
+- M365-security-compliance
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 01/11/2022
-ms.reviewer: 'jesquive, chventou, jonix, chriggs, owtho'
+ms.date: 03/28/2022
+ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
+ms.openlocfilehash: 30218ea9b3b5ecbec20fdbc3364546d25c80bcab
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507522"
 ---
-
-# <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Solución de problemas al cambiar a Microsoft Defender para endpoint
+# <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Solución de problemas al cambiar a Microsoft Defender para punto de conexión
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-En este artículo se proporciona información de solución de problemas para los administradores de seguridad que tienen problemas al cambiar de una solución de protección de extremo que no es de Microsoft a Microsoft Defender para endpoint.
+En este artículo se proporciona información de solución de problemas para los administradores de seguridad que tienen problemas al cambiar de una solución de protección de puntos de conexión que no es de Microsoft a Microsoft Defender para punto de conexión.
 
 ## <a name="microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server"></a>Antivirus de Microsoft Defender se desinstala en Windows Server
 
@@ -37,7 +42,7 @@ Al cambiar a Defender for Endpoint, comienza con la protección contra antivirus
 Para resolver este problema, siga estos pasos:
 
 1. [Establezca la clave del Registro DisableAntiSpyware en false](#set-the-disableantispyware-registry-key-to-false).
-2. [Agregue Microsoft Defender para endpoint a la lista de exclusión](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
+2. [Agregue Microsoft Defender para punto de conexión a la lista de exclusión](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
 3. [Establece Antivirus de Microsoft Defender en modo pasivo manualmente](#set-microsoft-defender-antivirus-to-passive-mode-manually).
 
 ### <a name="set-the-disableantispyware-registry-key-to-false"></a>Establecer la clave del Registro DisableAntiSpyware en false
@@ -59,7 +64,7 @@ La [clave del Registro DisableAntiSpyware](/windows-hardware/customize/desktop/u
 > [!TIP]
 > Para obtener más información sobre esta clave del Registro, [vea DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
 
-### <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list"></a>Agregar Microsoft Defender para endpoint a la lista de exclusión
+### <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list"></a>Agregar Microsoft Defender para punto de conexión a la lista de exclusión
 
 Determinadas exclusiones para Defender for Endpoint deben definirse en la solución de protección de puntos de conexión existente que no sea de Microsoft. Asegúrese de agregar las siguientes exclusiones:
 
@@ -92,6 +97,21 @@ Valor: `1`
 
 Para obtener más información, [vea Antivirus de Microsoft Defender en Windows Server](microsoft-defender-antivirus-on-windows-server.md).
 
+## <a name="microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode"></a>Antivirus de Microsoft Defender parece estar atascado en modo pasivo
+
+Si Antivirus de Microsoft Defender está atascado en modo pasivo, estadóla en modo activo manualmente siguiendo estos pasos:
+
+1. En el Windows, abra el Editor del Registro como administrador.
+
+2. Ve a `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
+
+3. Establezca o defina una **REG_DWORD** llamada `ForceDefenderPassiveMode`, y establezca su valor en `0`.
+
+4. Reinicie el dispositivo.
+
+> [!IMPORTANT]
+> Si sigues teniendo problemas para configurar Antivirus de Microsoft Defender en modo activo después de seguir este procedimiento, ponte en contacto [con el soporte técnico](../../admin/get-help-support.md).
+
 ## <a name="i-am-having-trouble-re-enabling-microsoft-defender-antivirus-on-windows-server-2016"></a>Tengo problemas para volver a habilitar Antivirus de Microsoft Defender en Windows Server 2016
 
 Si usa una solución antivirus o antimalware que no sea de Microsoft en Windows Server 2016, es posible que la solución existente Antivirus de Microsoft Defender se deshabilite o desinstale. Puede usar la Utilidad de[ protección contra Command-Line malware](command-line-arguments-microsoft-defender-antivirus.md) para volver a habilitar Antivirus de Microsoft Defender en Windows Server 2016.
@@ -102,7 +122,7 @@ Si usa una solución antivirus o antimalware que no sea de Microsoft en Windows 
 
 3. Reinicie el dispositivo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Antivirus de Microsoft Defender compatibilidad con otros productos de seguridad](microsoft-defender-antivirus-compatibility.md)
 

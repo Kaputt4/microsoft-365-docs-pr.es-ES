@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b9275eba3e9131de7262155710a1b5d5e6493b20
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a9753cdc818aefdf33411bd237327310dfc512ab
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326693"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474759"
 ---
 # <a name="device-inventory"></a>Inventario de dispositivos
 
@@ -34,7 +34,29 @@ ms.locfileid: "63326693"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
-El inventario de dispositivos le ayuda a descubrir, explorar e investigar dispositivos de su organización, incluidos equipos, servidores, dispositivos móviles, dispositivos de red y dispositivos ioT. Puede ayudarte a descubrir dispositivos desconocidos e identificar las diferencias de administración de dispositivos en la red.
+La **lista Dispositivos** muestra una lista de los dispositivos de la red donde se generaron alertas. De forma predeterminada, la cola muestra los dispositivos vistos en los últimos 30 días.
+
+De un vistazo verá información como dominio, nivel de riesgo, plataforma del sistema operativo y otros detalles para facilitar la identificación de los dispositivos más en riesgo.
+
+Hay varias opciones entre las que puedes elegir para personalizar la vista de lista de dispositivos. En la navegación superior puede:
+
+- Agregar o quitar columnas
+- Exportar toda la lista en formato CSV
+- Seleccionar el número de elementos que se mostrarán por página
+- Aplicar filtros
+
+Durante el proceso de incorporación, la lista **de** dispositivos se rellena gradualmente con dispositivos a medida que comienzan a informar de los datos del sensor. Use esta vista para realizar un seguimiento de los puntos de conexión incorporados a medida que se en línea o descargue la lista completa de puntos de conexión como un archivo CSV para el análisis sin conexión.
+
+> [!NOTE]
+> Si exportas la lista de dispositivos, contendrá todos los dispositivos de tu organización. Puede tardar mucho tiempo en descargarse, según el tamaño de la organización. Al exportar la lista en formato CSV, se muestran los datos sin filtrar. El archivo CSV incluirá todos los dispositivos de la organización, independientemente de cualquier filtrado aplicado en la vista en sí.
+
+:::image type="content" source="images/device-inventory.png" alt-text="La lista de dispositivos" lightbox="images/device-inventory.png":::
+
+## <a name="sort-and-filter-the-device-list"></a>Ordenar y filtrar la lista de dispositivos
+
+Puede aplicar los siguientes filtros para limitar la lista de alertas y obtener una vista más centrada.
+
+### <a name="device-name"></a>Nombre del dispositivo
 
 Durante el proceso de incorporación de Microsoft Defender para endpoints, los dispositivos incorporados a MDE se rellenan gradualmente en el inventario de dispositivos a medida que comienzan a informar de los datos del sensor. A continuación, el inventario de dispositivos se rellena con dispositivos que se detectan en la red a través del proceso de detección de dispositivos. El inventario de dispositivos tiene tres pestañas que enumeran los dispositivos mediante:
 

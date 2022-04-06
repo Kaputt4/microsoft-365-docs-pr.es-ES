@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c31a6e43e66b6e1ffeace75ac2d8419cc764174f
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 92b7efdad61a4738310d5fb469400033f78363a8
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499141"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64570159"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Preparar la posición de seguridad para el primer incidente
 
@@ -40,20 +40,20 @@ Prepararse para el tratamiento de incidentes implica configurar la protección s
 
 Microsoft 365 Defender puede ayudar a abordar varios aspectos de la prevención de incidentes: 
 
-- Implementación de un [marco de confianza](/security/zero-trust/) cero
+- Implementar un [marco Confianza cero](/security/zero-trust/) de trabajo
 - Determinación de la posición de seguridad mediante la asignación de una puntuación con [puntuación segura de Microsoft](microsoft-secure-score.md)
 - Prevención de amenazas mediante evaluaciones de vulnerabilidad en [Administración de amenazas y vulnerabilidades](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - Descripción de las amenazas de seguridad más recientes para que pueda prepararse para ellas con análisis [de amenazas](threat-analytics.md)
 
-## <a name="step-1-implement-zero-trust"></a>Paso 1. Implementar la confianza cero
+## <a name="step-1-implement-zero-trust"></a>Paso 1. Implementar Confianza cero
 
-[Zero Trust](/security/zero-trust/) es una filosofía de seguridad integrada y una estrategia integral que tiene en cuenta la naturaleza compleja de cualquier entorno moderno, incluidos los trabajadores móviles y los usuarios, dispositivos, aplicaciones y datos, dondequiera que estén ubicados. Al proporcionar un único panel de cristal para administrar todas las detecciones de forma coherente, Microsoft 365 Defender puede facilitar a su equipo de operaciones de seguridad implementar los [principios](/security/zero-trust/#guiding-principles-of-zero-trust) de guía de la confianza cero. 
+[Confianza cero](/security/zero-trust/) es una filosofía de seguridad integrada y una estrategia integral que tiene en cuenta la naturaleza compleja de cualquier entorno moderno, incluidos los trabajadores móviles y los usuarios, dispositivos, aplicaciones y datos, dondequiera que estén ubicados. Al proporcionar un único panel de cristal para administrar todas las detecciones de forma coherente, Microsoft 365 Defender puede facilitar a su equipo de operaciones de seguridad implementar los [principios](/security/zero-trust/#guiding-principles-of-zero-trust) de guía de Confianza cero. 
 
-Los componentes de Microsoft 365 Defender pueden mostrar infracciones de reglas que se han implementado para establecer directivas de acceso condicional para la confianza cero mediante la integración de datos de Microsoft Defender para endpoint u otros proveedores de seguridad móvil como origen de información para las directivas de cumplimiento de dispositivos y la implementación de directivas de acceso condicional basado en dispositivos. 
+Los componentes de Microsoft 365 Defender pueden mostrar infracciones de reglas que se han implementado para establecer directivas de acceso condicional para Confianza cero integrando datos de Microsoft Defender para punto de conexión  u otros proveedores de seguridad móvil como origen de información para las directivas de cumplimiento de dispositivos y la implementación de directivas de acceso condicional basadas en dispositivos. 
 
-El riesgo del dispositivo influye directamente en los recursos a los que podrá acceder el usuario de ese dispositivo. La denegación de acceso a los recursos según determinados criterios es el tema principal de La confianza cero y Microsoft 365 Defender proporciona la información necesaria para determinar los criterios de nivel de confianza. Por ejemplo, Microsoft 365 Defender proporcionar el nivel de versión de software de un dispositivo a través de la página Administración de amenazas y vulnerabilidades, mientras que las directivas de acceso condicional restringen los dispositivos que tienen versiones obsoletas o vulnerables.
+El riesgo del dispositivo influye directamente en los recursos a los que podrá acceder el usuario de ese dispositivo. La denegación de acceso a los recursos según determinados criterios es el tema principal de Confianza cero y Microsoft 365 Defender proporciona la información necesaria para determinar los criterios de nivel de confianza. Por ejemplo, Microsoft 365 Defender proporcionar el nivel de versión de software de un dispositivo a través de la página Administración de amenazas y vulnerabilidades, mientras que las directivas de acceso condicional restringen los dispositivos que tienen versiones obsoletas o vulnerables.
 
-La automatización es una parte fundamental de la implementación y el mantenimiento de un entorno de confianza cero, al tiempo que se reduce el número de alertas que podrían dar lugar a eventos de respuesta a incidentes (IR). Los componentes de Microsoft 365 Defender pueden automatizarse, como acciones de [corrección (](m365d-autoir.md)conocidas como investigaciones de un incidente en el portal de Microsoft 365 Defender), acciones de notificación e incluso la creación de vales de soporte técnico, como [en ServiceNow](https://microsoft.service-now.com/sp/).
+La automatización es una parte fundamental de la implementación y el mantenimiento de un entorno Confianza cero, a la vez que reduce el número de alertas que potencialmente llevarían a eventos de respuesta a incidentes (IR). Los componentes de Microsoft 365 Defender pueden automatizarse, como acciones de [corrección (](m365d-autoir.md)conocidas como investigaciones de un incidente en el portal de Microsoft 365 Defender), acciones de notificación e incluso la creación de vales de soporte técnico, como [en ServiceNow](https://microsoft.service-now.com/sp/).
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>Paso 2. Determinar la posición de seguridad de la organización
 
@@ -87,11 +87,9 @@ Haga tiempo en su programación para comprobar periódicamente la sección [Aná
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Paso 1: Obtenga información sobre cómo triage and analyze incidents.](../../media/first-incident-overview/first-incident-path-step1.png)](first-incident-analyze.md)
-
 Obtenga información sobre [cómo triage and analyze incidents](first-incident-analyze.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

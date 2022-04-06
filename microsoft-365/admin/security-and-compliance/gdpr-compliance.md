@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Obtenga información sobre cómo Microsoft 365 para empresas puede ayudarle con el proceso de reglamento general de protección de datos (RGPD).
-ms.openlocfilehash: 7c8a2c402e362ede4eb9b2f4ec221dd8556052db
-ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
+ms.openlocfilehash: d5c24fe2f2295e99798fcc5382dc284cec01d385
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64403656"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632413"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplificado: Una guía para su pequeña empresa
 
@@ -134,7 +134,7 @@ Si decide almacenar datos personales en la nube, como a través de Microsoft 365
 
 #### <a name="microsoft-365-features-that-can-help"></a>Características de Microsoft 365 que pueden ayudar
 
-Puede usar [Configurar características de cumplimiento](set-up-compliance.md) para proteger la información confidencial de la empresa. El Administrador de cumplimiento puede ayudarle para que empiece de inmediato. Por ejemplo, puede [configurar una directiva DLP](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) que use la [plantilla de RGPD](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
+Puede usar [Configurar características de cumplimiento](../../business-premium/m365bp-set-up-compliance.md) para proteger la información confidencial de la empresa. El Administrador de cumplimiento puede ayudarle para que empiece de inmediato. Por ejemplo, puede [configurar una directiva DLP](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) que use la [plantilla de RGPD](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
 
 ### <a name="step-5-keep-documentation-on-your-data-processing-activities"></a>Paso 5: Mantener documentación sobre sus actividades de procesamiento de datos
 

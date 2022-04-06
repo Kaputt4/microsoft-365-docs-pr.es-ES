@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5715a796e0c7b78ae369f074b5edcb6ccfc8ae90
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c39ef92448317e625f3f2e6948f69a38093b1504
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330571"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467717"
 ---
 # <a name="deployment-phases"></a>Fases de implementación
 
@@ -40,10 +40,10 @@ Esta guía le ayuda a trabajar entre partes interesadas para preparar su entorno
 
 Cada sección corresponde a un artículo independiente de esta solución.
 
-![Imagen de fases de implementación con detalles de la tabla.](images/deployment-guide-phases.png)
+:::image type="content" source="images/deployment-guide-phases.png" alt-text="Fases de implementación con detalles de la tabla" lightbox="images/deployment-guide-phases.png":::
 
 
-![Resumen de las fases de implementación: preparar, configurar, incorporar.](images/phase-diagrams/deployment-phases.png)
+:::image type="content" source="images/phase-diagrams/deployment-phases.png" alt-text="Resumen de las fases de implementación: preparar, configurar, incorporar" lightbox="images/phase-diagrams/deployment-phases.png":::
 
 <br>
 
@@ -70,7 +70,7 @@ Aunque Microsoft Defender para endpoint proporciona muchas funcionalidades, el o
 
 |Funcionalidad|Descripción|
 |---|---|
-|Detección y respuesta de puntos de conexión|Las capacidades de detección y respuesta de puntos de conexión se ponen en marcha para detectar, investigar y responder a intentos de intrusión e infracciones activas.|
+|EDR|Las capacidades de detección y respuesta de puntos de conexión se ponen en marcha para detectar, investigar y responder a intentos de intrusión e infracciones activas.|
 |Protección de última generación|Para reforzar aún más el perímetro de seguridad de la red, Microsoft Defender para punto de conexión usa la protección de próxima generación diseñada para detectar todos los tipos de amenazas emergentes.|
 |Reducción de la superficie expuesta a ataques|Proporcione la primera línea de defensa en la pila. Al garantizar que las opciones de configuración se establecen correctamente y se aplican las técnicas de mitigación de vulnerabilidades, estas capacidades resisten los ataques y la explotación.|
 |

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 60a389d2422a2d3b2f50f77bc978f9f9bbc4a087
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: bbf7be489f969007badb4d00fb25ce22eb991f55
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62463446"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475353"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Ponerse en contacto con el soporte técnico de Microsoft Defender para punto de conexión
 
@@ -56,11 +56,11 @@ El acceso al nuevo widget de soporte técnico se puede realizar de dos maneras:
 
 1. Haga clic en el signo de interrogación de la parte superior derecha del portal y, a continuación, haga clic en "Soporte técnico de Microsoft":
 
-    :::image type="content" source="../../media/contactsupport.png" alt-text="Soporte técnico de Microsoft.":::
+   :::image type="content" source="../../media/contactsupport.png" alt-text="El icono de soporte técnico de Microsoft en el portal de Microsoft 365 Defender web" lightbox="../../media/contactsupport.png":::
 
-2. Hacer clic en **el botón ¿Necesita ayuda?**  en la parte inferior derecha del Microsoft 365 Defender portal:
+2. Hacer clic en **el botón ¿Necesita ayuda?**  en la parte inferior derecha del portal de Microsoft 365 Defender:
 
-    ![Imagen del botón de ayuda de necesidad.](images/need-help-option.png)
+   :::image type="content" source="images/need-help-option.png" alt-text="El botón Necesita ayuda" lightbox="images/need-help-option.png":::
 
 En el widget se te ofrecerán dos opciones:
 
@@ -71,7 +71,7 @@ En el widget se te ofrecerán dos opciones:
 
 Esta opción incluye artículos que podrían estar relacionados con la pregunta que puede hacer. Solo tienes que empezar a escribir la pregunta en el cuadro de búsqueda y aparecerán los artículos relacionados con la búsqueda.
 
-:::image type="content" source="../../media/contactsupport1.png" alt-text="¿Cómo podemos ayudar?":::
+:::image type="content" source="../../media/contactsupport1.png" alt-text="¿Cómo podemos ayudar?" lightbox="../../media/contactsupport1.png":::
 
 En caso de que los artículos sugeridos no sean suficientes, puede abrir una solicitud de servicio.
 
@@ -82,11 +82,9 @@ Para obtener información sobre cómo abrir vales de soporte técnico, póngase 
 > [!NOTE]
 > Si tienes un contrato de soporte técnico premier con Microsoft, verás la etiqueta premier en el widget. Si no es así, póngase en contacto con el administrador de cuentas de Microsoft.
 
-### <a name="contact-support"></a>Contactar soporte
+### <a name="contact-support"></a>Ponerse en contacto con soporte técnico
 
-:::image type="content" source="../../media/contactsupport2.png" alt-text="póngase en contacto con el soporte técnico 2."::: </br>
-
-:::image type="content" source="../../media/contactsupport2.png" alt-text="soporte técnico de contacto 2":::
+:::image type="content" source="../../media/contactsupport2.png" alt-text="El soporte técnico de contacto 2" lightbox="../../media/contactsupport2.png"::: </br>
 
 1. Rellene un título y una descripción para el problema al que se enfrenta, el número de teléfono y la dirección de correo electrónico en los que podamos llegar a usted.
 2. (Opcional) Incluya hasta cinco datos adjuntos que sean relevantes para el problema para proporcionar contexto adicional para el caso de soporte técnico.

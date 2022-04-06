@@ -23,18 +23,18 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
-description: Obtén información sobre cómo validar la Microsoft 365 Empresa Premium de protección de aplicaciones en tus dispositivos Android o iOS.
-ms.openlocfilehash: 85d98a4741299327c0e88735cb9593e129fdc929
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Obtén información sobre cómo validar la Microsoft 365 Business Premium de protección de aplicaciones en tus dispositivos Android o iOS.
+ms.openlocfilehash: b760b49c59d8033e4587cedd67f024f983547179
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313753"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632457"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Validar la configuración de protección de aplicaciones en dispositivos Android o iOS
 
 > [!NOTE]
-> Microsoft Defender para empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para dispositivos. [Obtenga más información sobre Defender para empresas](../../security/defender-business/mdb-overview.md).
+> Microsoft Defender für Unternehmen se está implementando para Microsoft 365 Business Premium clientes, a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para dispositivos. [Obtenga más información sobre Defender para empresas](../../security/defender-business/mdb-overview.md).
 
 Siga las instrucciones de las secciones siguientes para validar la configuración de protección de aplicaciones en dispositivos Android o iOS.
   
@@ -42,11 +42,11 @@ Siga las instrucciones de las secciones siguientes para validar la configuració
   
 ### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>Comprobar que la configuración de protección de aplicaciones funciona en dispositivos de usuario
 
-Después de [establecer las configuraciones de la aplicación para dispositivos Android](app-protection-settings-for-android-and-ios.md) para proteger las aplicaciones, puede seguir estos pasos para validar que la configuración que ha elegido funciona. 
+Después de [establecer la configuración de](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) protección de aplicaciones para dispositivos Android o iOS para proteger las aplicaciones, puedes seguir estos pasos para validar que la configuración que elijas funcione. 
   
 En primer lugar, asegúrate de que la directiva se aplica a la aplicación en la que vas a validarla.
   
-1. En el Centro Microsoft 365 Empresa Premium [administración](https://admin.microsoft.com), vaya a **Directiva de** \> **edición de directivas**.
+1. En el Centro Microsoft 365 Business Premium [administración](https://admin.microsoft.com), vaya a **Directiva de edición** \> **de directivas**.
     
 2. Elija **Directiva de aplicación para Android** para la configuración que creó en el programa de instalación u otra directiva que haya creado y compruebe que se aplica para Outlook, por ejemplo. 
     
@@ -58,7 +58,7 @@ En el panel **Editar directiva**, elija **Editar** junto a **Control de acceso a
   
 ![Asegúrate de que requerir un PIN o huella digital para tener acceso a Office aplicaciones está establecida en On.](../../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
-1. En el dispositivo Android del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium usuario.
+1. En el dispositivo Android del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Business Premium usuario.
     
 2. También se le pedirá que escriba un PIN o use una huella digital.
     
@@ -68,13 +68,13 @@ En el panel **Editar directiva**, elija **Editar** junto a **Control de acceso a
 
 En el  panel Editar directiva, elija  Editar junto **al control** de acceso Office documentos, expanda Administrar cómo los usuarios tienen acceso **Office los archivos en** dispositivos móviles y asegúrese de que restablecer el **PIN** después de que el número de intentos fallidos esté establecido en algún número. Esto es 5 de forma predeterminada. 
   
-1. En el dispositivo Android del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium usuario.
+1. En el dispositivo Android del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Business Premium usuario.
     
 2. Escriba un PIN incorrecto tantas veces como haya especificado en la directiva. Verá un mensaje que indica el límite **de intento de PIN alcanzado** para restablecer el PIN. 
     
     ![Captura de pantalla que indica después de demasiados intentos incorrectos de PIN, debes restablecer el PIN.](../../media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
   
-3. Pulse **Restablecer PIN**. Se le pedirá que inicie sesión con las credenciales de Microsoft 365 Empresa Premium del usuario y, a continuación, se le pedirá que establezca un NUEVO PIN.
+3. Pulse **Restablecer PIN**. Se le pedirá que inicie sesión con las credenciales de Microsoft 365 Business Premium del usuario y, a continuación, se le pedirá que establezca un NUEVO PIN.
     
 ### <a name="validate-force-users-to-save-all-work-files-to-onedrive-for-business"></a>Validar la opción Forzar el almacenamiento por parte de los usuarios de todos los archivos de trabajo en OneDrive para la Empresa
 
@@ -82,7 +82,7 @@ En el panel **Editar directiva**, elija **Editar** junto a **Protección ante la
   
 ![Verify that Force users to save all work files to OneDrive for Business is set to On.](../../media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
   
-1. En el dispositivo Android del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium del usuario y escriba un PIN si se solicita.
+1. En el dispositivo Android del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Business Premium del usuario y escriba un PIN si se solicita.
     
 2. Abra un correo electrónico que contenga un archivo adjunto y pulse el icono de flecha abajo situado junto a la información del archivo adjunto.
     
@@ -99,7 +99,7 @@ En el panel **Editar directiva**, elija **Editar** junto a **Protección ante la
 
 En el  panel Editar directiva, elija  Editar junto **al control** de acceso Office documentos, expanda Administrar cómo los usuarios acceden **Office** archivos en dispositivos móviles y asegúrese de que Requerir que los usuarios inicien sesión de nuevo después de **que** Office las aplicaciones hayan estado inactivas esté establecida en un número de minutos. Esto es 30 minutos de forma predeterminada. 
   
-1. En el dispositivo Android del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium del usuario y escriba un PIN si se solicita.
+1. En el dispositivo Android del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Business Premium del usuario y escriba un PIN si se solicita.
     
 2. Ahora debería ver la Bandeja de entrada de Outlook. No toque el dispositivo Android durante al menos 30 minutos (o algún otro período de tiempo, más de lo que ha especificado en la directiva). Es probable que se atenúe el dispositivo.
     
@@ -111,7 +111,7 @@ En el  panel Editar directiva, elija  Editar junto **al control** de acceso Offi
 
 En el panel **Editar directiva**, elija **Editar** junto a **Protección ante la pérdida o el robo del dispositivo**, expanda **Proteger los archivos de trabajo cuando los dispositivos se extravían por pérdida o robo** y asegúrese de que **Proteger los archivos de trabajo mediante cifrado** esté establecido en **Activado** y **Forzar el almacenamiento por parte de los usuarios de todos los archivos de trabajo en OneDrive para la Empresa** esté establecido en **Desactivado**.
   
-1. En el dispositivo Android del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium del usuario y escriba un PIN si se solicita.
+1. En el dispositivo Android del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Business Premium del usuario y escriba un PIN si se solicita.
     
 2. Abra un correo electrónico que contenga algunos datos adjuntos de archivo de imagen.
     
@@ -131,11 +131,11 @@ En el panel **Editar directiva**, elija **Editar** junto a **Protección ante la
   
 ### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>Comprobar que la configuración de protección de aplicaciones funciona en dispositivos de usuario
 
-Después de [establecer las configuraciones de la aplicación para dispositivos iOS](app-protection-settings-for-android-and-ios.md) para proteger aplicaciones, puede seguir estos pasos para validar que la configuración que ha elegido funciona. 
+Después de [establecer las configuraciones de la aplicación para dispositivos iOS](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md) para proteger aplicaciones, puede seguir estos pasos para validar que la configuración que ha elegido funciona. 
   
 En primer lugar, asegúrate de que la directiva se aplica a la aplicación en la que vas a validarla.
   
-1. En el Centro Microsoft 365 Empresa Premium [administración](https://admin.microsoft.com), vaya a **Directiva de** \> **edición de directivas**.
+1. En el Centro Microsoft 365 Business Premium [administración](https://admin.microsoft.com), vaya a **Directiva de edición** \> **de directivas**.
     
 2. Elija **Directiva de aplicación para iOS** para la configuración que creó en el programa de instalación u otra directiva que haya creado y compruebe que se aplica para Outlook por ejemplo. 
     
@@ -147,7 +147,7 @@ En el panel **Editar directiva**, elija **Editar** junto a **Control de acceso a
   
 ![Asegúrate de que requerir un PIN o huella digital para tener acceso a Office aplicaciones está establecida en On.](../../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
-1. En el dispositivo iOS del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium usuario.
+1. En el dispositivo iOS del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Business Premium usuario.
     
 2. También se le pedirá que escriba un PIN o use una huella digital.
     
@@ -157,13 +157,13 @@ En el panel **Editar directiva**, elija **Editar** junto a **Control de acceso a
 
 En el  panel Editar directiva, elija  Editar junto **al control** de acceso Office documentos, expanda Administrar cómo los usuarios tienen acceso **Office los archivos en** dispositivos móviles y asegúrese de que restablecer el **PIN** después de que el número de intentos fallidos esté establecido en algún número. Esto es 5 de forma predeterminada. 
   
-1. En el dispositivo iOS del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium usuario.
+1. En el dispositivo iOS del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Business Premium usuario.
     
 2. Escriba un PIN incorrecto tantas veces como haya especificado en la directiva. Verá un mensaje que indica el límite **de intento de PIN alcanzado** para restablecer el PIN. 
     
     ![Restablecimiento del PIN de advertencia de captura de pantalla después de demasiados intentos incorrectos.](../../media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
   
-3. Pulse **Aceptar**. Se le pedirá que inicie sesión con las credenciales de Microsoft 365 Empresa Premium del usuario y, a continuación, se le pedirá que establezca un NUEVO PIN.
+3. Pulse **Aceptar**. Se le pedirá que inicie sesión con las credenciales de Microsoft 365 Business Premium del usuario y, a continuación, se le pedirá que establezca un NUEVO PIN.
     
 ### <a name="validate-force-users-to-save-all-work-files-to-onedrive-for-business"></a>Validar la opción Forzar el almacenamiento por parte de los usuarios de todos los archivos de trabajo en OneDrive para la Empresa
 
@@ -171,13 +171,13 @@ En el panel **Editar directiva**, elija **Editar** junto a **Protección ante la
   
 ![Verify that Force users to save all work files to OneDrive for Business is set to On.](../../media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
   
-1. En el dispositivo iOS del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium del usuario y escriba un PIN si se solicita.
+1. En el dispositivo iOS del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Business Premium del usuario y escriba un PIN si se solicita.
     
 2. Abra un correo electrónico que contenga un archivo adjunto, abra ese archivo adjunto y elija **Guardar** en la parte inferior de la pantalla. 
     
     ![Tap the Save option after you open an attachment to try to save it.](../../media/b419b070-1530-4f14-86a8-8d89933a2b25.png)
   
-3. Solo debería ver una opción para OneDrive para la Empresa. Si no es así, pulsa **Agregar cuenta** **y selecciona OneDrive para la Empresa** en la **pantalla Agregar Storage** cuenta. Proporcione la información del usuario Microsoft 365 Empresa Premium iniciar sesión cuando se le solicite. 
+3. Solo debería ver una opción para OneDrive para la Empresa. Si no es así, **pulsa Agregar cuenta** **y OneDrive Entreprise** en la **pantalla Agregar Storage** cuenta. Proporcione la información del usuario Microsoft 365 Business Premium iniciar sesión cuando se le solicite. 
     
     Pulse **Guardar** y seleccione **OneDrive para la Empresa**.
     
@@ -185,7 +185,7 @@ En el panel **Editar directiva**, elija **Editar** junto a **Protección ante la
 
 En el  panel Editar directiva, elija  Editar junto **al control** de acceso Office documentos, expanda Administrar cómo los usuarios acceden **Office** archivos en dispositivos móviles y asegúrese de que Requerir que los usuarios inicien sesión de nuevo después de **que** Office las aplicaciones hayan estado inactivas esté establecida en un número de minutos. Esto es 30 minutos de forma predeterminada. 
   
-1. En el dispositivo iOS del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium del usuario y escriba un PIN si se solicita.
+1. En el dispositivo iOS del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Business Premium del usuario y escriba un PIN si se solicita.
     
 2. Ahora debería ver la Bandeja de entrada de Outlook. No toque el dispositivo iOS durante al menos 30 minutos (o algún otro período de tiempo, más de lo que ha especificado en la directiva). Es probable que se atenúe el dispositivo.
     
@@ -197,7 +197,7 @@ En el  panel Editar directiva, elija  Editar junto **al control** de acceso Offi
 
 En el panel **Editar directiva**, elija **Editar** junto a **Protección ante la pérdida o el robo del dispositivo**, expanda **Proteger los archivos de trabajo cuando los dispositivos se extravían por pérdida o robo** y asegúrese de que **Proteger los archivos de trabajo mediante cifrado** esté establecido en **Activado** y **Forzar el almacenamiento por parte de los usuarios de todos los archivos de trabajo en OneDrive para la Empresa** esté establecido en **Desactivado**.
   
-1. En el dispositivo iOS del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Empresa Premium del usuario y escriba un PIN si se solicita.
+1. En el dispositivo iOS del usuario, abra Outlook e inicie sesión con las credenciales de Microsoft 365 Business Premium del usuario y escriba un PIN si se solicita.
     
 2. Abra un correo electrónico que contenga algunos datos adjuntos de archivo de imagen.
     
@@ -206,6 +206,6 @@ En el panel **Editar directiva**, elija **Editar** junto a **Protección ante la
 4. Abra la aplicación **Fotos** desde la pantalla principal. Debería ver una foto cifrada (o más, si guardó varias imágenes adjuntas) guardada, pero cifrada. 
     
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Principales 10 formas de proteger Microsoft 365 para planes empresariales](../security-and-compliance/secure-your-business-data.md)
