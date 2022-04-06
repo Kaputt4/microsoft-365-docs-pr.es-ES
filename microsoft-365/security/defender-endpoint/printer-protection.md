@@ -15,13 +15,8 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 496d9bf729eaaff6cf12e9734ae80eedacf98a63
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806125"
 ---
+
 # <a name="device-control-printer-protection"></a>Protección de la impresora de control de dispositivo
 
 **Se aplica a**
@@ -53,7 +48,7 @@ Para ver los informes de configuración del dispositivo, la cuenta debe tener pe
 
 ## <a name="prepare-your-endpoints"></a>Preparar los puntos de conexión
 
-Asegúrese de que los Windows 10 o Windows 11 dispositivos que planee implementar Printer Protection para cumplir estos requisitos.
+Asegúrese de que el Windows 10 o Windows 11 dispositivos que planee implementar Printer Protection para cumplir estos requisitos.
 
 1. Se instalan las siguientes actualizaciones de Windows.
     - For Windows 1809: install Windows Update [KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46)
@@ -70,7 +65,7 @@ Puedes implementar la directiva a través de la directiva de grupo o Intune.
 
 ****
 
-|Título|Description|Compatibilidad con CSP | Compatibilidad con GPO | Soporte técnico basado en usuarios | Compatibilidad basada en máquina |
+|Título|Descripción|Compatibilidad con CSP | Compatibilidad con GPO | Soporte técnico basado en usuarios | Compatibilidad basada en máquina |
 |---|---|:---:|:---:|:---:|:---:|
 |**Habilitar restricciones de impresión del control de dispositivos**|Bloquear la impresión de personas a través de impresoras no corporativas|Sí|Sí|Sí|Sí|
 |**Lista de dispositivos de impresión conectados a USB aprobados**\*|Permitir una impresora USB específica|Sí|Sí|Sí|Sí|
@@ -94,7 +89,7 @@ En Intune, actualmente Device Control Printer Protection solo admite OMA-URI.
 
 La cadena de compatibilidad de CSP con `<enabled/>`:
 
-:::image type="content" source="../../media/customeditrow.png" alt-text="fila de edición personalizada.":::
+:::image type="content" source="../../media/customeditrow.png" alt-text="La página Personalizada" lightbox="../../media/customeditrow.png":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-intune"></a>Escenario 2: Permitir impresoras USB aprobadas específicas con Intune
 
@@ -108,7 +103,7 @@ La cadena de compatibilidad de CSP con `<enabled/>`:
 
 La cadena de compatibilidad de CSP con impresoras USB aprobadas a través de la propiedad "ApprovedUsbPrintDevices", por ejemplo `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`:
 
-:::image type="content" source="../../media/editrow.png" alt-text="editar fila.":::
+:::image type="content" source="../../media/editrow.png" alt-text="Panel Editar fila" lightbox="../../media/editrow.png":::
 
 ## <a name="deploy-policy-via-group-policy"></a>Implementar la directiva a través de la directiva de grupo
 
@@ -124,7 +119,7 @@ Si el dispositivo no está unido a Intune, también puedes implementar la direct
 
   Configuración de usuario \> Plantillas administrativas \> Impresoras del panel de control \> : Habilitar restricciones de impresión del control de dispositivos
 
-:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="habilitar las restricciones de impresión de dispositivos.":::
+:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="Panel Habilitar restricciones de impresión de control de dispositivos" lightbox="../../media/enable-device-ctrl-printing-restrictions.png":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-group-policy"></a>Escenario 2: Permitir impresoras USB aprobadas específicas con la directiva de grupo
 
@@ -136,7 +131,7 @@ Si el dispositivo no está unido a Intune, también puedes implementar la direct
 
   Impresoras de \> panel de \> control de plantillas administrativas \> de configuración de usuario: lista de dispositivos de impresión conectados a USB aprobados
 
-:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="lista de dispositivos de impresión conectados usb aprobados.":::
+:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="La lista de dispositivos de impresión conectados a USB aprobados" lightbox="../../media/list-of-approved-connected-print-devices.png":::
 
 ## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>Ver datos de protección de impresoras de control de dispositivos en Microsoft Defender para el portal de puntos de conexión
 
@@ -154,7 +149,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="búsqueda avanzada.":::
+ :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="búsqueda avanzada" lightbox="../../media/device-control-advanced-hunting.png":::
 
  Puede usar el evento PnP para buscar la impresora USB usada en la organización:
 
@@ -175,4 +170,4 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="búsqueda avanzada":::
+ :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="La página Búsqueda avanzada" lightbox="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png":::

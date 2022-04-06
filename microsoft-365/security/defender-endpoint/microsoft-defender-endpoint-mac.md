@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender para endpoint en Mac
-ms.reviewer: ''
-description: Obtén información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint en Mac.
-keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, instalación, implementación, desinstalación, intune, jamf, macos, monterey, big sur, catalina, mojave, mde para mac
+title: Microsoft Defender para punto de conexión en Mac
+ms.reviewer: null
+description: 'Obtén información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint en Mac.'
+keywords: 'microsoft, defender, Microsoft Defender para Endpoint, mac, instalación, implementación, desinstalación, intune, jamf, macos, monterey, big sur, catalina, mojave, mde para mac'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,18 +13,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+  - m365-security-compliance
+  - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 504bed69cb8380d685abfc78abe9c579313c3963
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767561"
 ---
-# <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender para endpoint en Mac
+
+# <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender para punto de conexión en Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +33,7 @@ ms.locfileid: "62767561"
 En este tema se describe cómo instalar, configurar, actualizar y usar Defender para Endpoint en Mac.
 
 > [!CAUTION]
-> Es probable que la ejecución de otros productos de protección de puntos de conexión de terceros junto con Microsoft Defender para Endpoint en Mac lleve a problemas de rendimiento y efectos secundarios impredecibles. Si la protección de extremo que no es de Microsoft es un requisito absoluto en su entorno, puede aprovechar de forma segura la funcionalidad defender para endpoint en Mac EDR después de configurar la funcionalidad antivirus para que se ejecute en modo [pasivo](mac-preferences.md#enforcement-level-for-antivirus-engine).
+> Es probable que la ejecución de otros productos de protección de puntos de conexión de terceros junto con Microsoft Defender para Endpoint en Mac lleve a problemas de rendimiento y efectos secundarios impredecibles. Si la protección de extremo que no es de Microsoft es un requisito absoluto en su entorno, puede aprovechar de forma segura la funcionalidad de Defender para Endpoint en Mac EDR después de configurar la funcionalidad antivirus para que se ejecute en modo [pasivo](mac-preferences.md#enforcement-level-for-antivirus-engine).
 
 ## <a name="whats-new-in-the-latest-release"></a>Novedades de la versión más reciente
 
@@ -49,13 +44,13 @@ En este tema se describe cómo instalar, configurar, actualizar y usar Defender 
 > [!TIP]
 > Si tienes algún comentario que quieras compartir, envíalo abriendo Microsoft Defender para Endpoint en Mac en tu dispositivo y navegando a **Ayuda** \> **para enviar comentarios**.
 
-Para obtener las características más recientes, incluidas las funcionalidades de vista previa (como detección y respuesta de puntos de conexión para los dispositivos Mac), configura el dispositivo macOS que ejecuta Microsoft Defender para Endpoint para que sea un dispositivo "Insider".
+Para obtener las características más recientes, incluidas las funciones de vista previa (como detección y respuesta de puntos de conexión para los dispositivos Mac), configura el dispositivo macOS que ejecuta Microsoft Defender para Endpoint para que sea un dispositivo "Insider".
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Cómo instalar Microsoft Defender para Endpoint en Mac
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-- Una suscripción a Defender for Endpoint y acceso al portal de Microsoft 365 Defender web
+- Una suscripción de Defender for Endpoint y acceso al portal de Microsoft 365 Defender web
 - Experiencia de nivel principiante en scripting de macOS y BASH
 - Privilegios administrativos en el dispositivo (en caso de implementación manual)
 
@@ -114,12 +109,7 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 
 |Hoja de cálculo de la lista de dominios| Descripción|
 |---|---|
-|Lista de direcciones URL de Microsoft Defender para puntos de conexión para clientes comerciales | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo para clientes comerciales. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Lista de direcciones URL de punto de conexión de Microsoft Defender para clientes de Gov/GCC/DoD| Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sos para clientes gov/GCC/DoD. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
-|
-
-
-
+|:::image type="content" source="images/mdatp-urls.png" alt-text="La hoja de cálculo de las direcciones URL del portal de Microsoft Defender para endpoint" lightbox="images/mdatp-urls.png":::|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> Descargue la hoja de cálculo aquí: [mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
 
 Microsoft Defender para endpoint puede detectar un servidor proxy mediante los siguientes métodos de detección:
 

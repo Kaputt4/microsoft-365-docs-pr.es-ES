@@ -1,7 +1,7 @@
 ---
 title: Información de estado del flujo de correo de dominio superior en el panel Flujo de correo
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,19 +9,14 @@ audience: ITPro
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.localizationpriority: medium
-ms.assetid: ''
+ms.assetid: null
 ms.custom:
-- seo-marvel-apr2020
+  - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar la información sobre el estado del flujo de correo de dominio superior en el panel flujo de correo del Centro de seguridad & cumplimiento para solucionar problemas de flujo de correo relacionados con sus registros MX.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3994859c1d5a4e0026f61dcc24a9735c6122ad15
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465429"
 ---
+
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Información de estado del flujo de correo de dominio superior en el Centro de seguridad & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -35,7 +30,7 @@ La **información sobre el estado del flujo** de correo [](mail-flow-insights-v2
 
 Esta información le ayuda a identificar y solucionar problemas de dominios que están experimentando problemas ***de flujo de*** correo. Por ejemplo, el dominio no puede recibir correo electrónico externo porque el dominio ha expirado o el dominio tiene un registro MX incorrecto.
 
-:::image type="content" source="../../media/mfi-top-domain-mail-flow-status-widget.png" alt-text="El widget Estado del flujo de dominio superior en el panel Flujo de correo en el Centro de seguridad & cumplimiento" lightbox="../../media/mfi-top-domain-mail-flow-status-widget.png":::
+![Widget de estado de flujo de dominio superior en el panel Flujo de correo del Centro de & cumplimiento.](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
 Al hacer clic **en Ver detalles** en el widget, aparece **un control flotante** Estado del dominio que muestra más detalles sobre el estado de cada dominio:
 
@@ -49,8 +44,8 @@ Al hacer clic **en Ver detalles** en el widget, aparece **un control flotante** 
 
 Puede hacer clic **en Ver más** para ver la misma información para más dominios.
 
-:::image type="content" source="../../media/mfi-top-domain-mail-flow-status-view-details.png" alt-text="El control desplegable Detalles de la información de estado del flujo de correo de dominio superior" lightbox="../../media/mfi-top-domain-mail-flow-status-view-details.png":::
+![Los detalles se desván de la información de estado del flujo de correo de dominio superior.](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 Para obtener información sobre otras perspectivas en el panel flujo de correo, vea Información sobre el flujo de correo en el [Centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

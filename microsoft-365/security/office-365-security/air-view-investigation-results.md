@@ -1,8 +1,8 @@
 ---
 title: Ver los resultados de una investigación automatizada en Microsoft 365
-keywords: AIR, autoIR, Microsoft Defender para endpoint, automatizado, investigación, corrección, acciones
+keywords: 'AIR, autoIR, Microsoft Defender para endpoint, automatizado, investigación, corrección, acciones'
 f1.keywords:
-- NOCSH
+  - NOCSH
 author: dansimp
 ms.author: dansimp
 manager: dansimp
@@ -10,22 +10,17 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 search.appverid:
-- MET150
-- MOE150
+  - MET150
+  - MOE150
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-office365
-description: Durante y después de una investigación automatizada en Microsoft 365, puede ver los resultados y los resultados clave.
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: 'Durante y después de una investigación automatizada en Microsoft 365, puede ver los resultados y los resultados clave.'
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 54b9389d323c1e775b50bf63beaa33b0c4b0cae6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314089"
 ---
+
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Detalles y resultados de una investigación automatizada en Microsoft 365
 
 **Se aplica a**
@@ -41,10 +36,6 @@ Cuando se [produce una investigación](office-365-air.md) automatizada en [Micro
 
 El estado de la investigación indica el progreso del análisis y las acciones. A medida que se ejecuta la investigación, el estado cambia para indicar si se encontraron amenazas y si se han aprobado acciones.
 
-<br>
-
-****
-
 |Estado|Descripción|
 |---|---|
 |**Iniciando**|La investigación se ha desencadenado y está a la espera de empezar a ejecutarse.|
@@ -58,7 +49,6 @@ El estado de la investigación indica el progreso del análisis y las acciones. 
 |**Failed**|Al menos un analizador de investigación encontró un problema en el que no se pudo completar correctamente. <p> **NOTA** Si se produce un error en una investigación después de que se aprobaron las acciones de corrección, es posible que las acciones de corrección se hubieran hecho correctamente. Ver los detalles de la investigación.|
 |**En cola por limitación**|Se está celebrando una investigación en una cola. Cuando se completen otras investigaciones, comienzan las investigaciones en cola. La limitación ayuda a evitar un rendimiento de servicio deficiente.  <p> **SUGERENCIA**: Las acciones pendientes pueden limitar el número de investigaciones nuevas que se pueden ejecutar. Asegúrese de aprobar [(o rechazar) acciones pendientes](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions).|
 |**Terminado por limitación**|Si una investigación se mantiene en la cola demasiado tiempo, se detiene. <p> **SUGERENCIA**: Puede iniciar [una investigación desde el Explorador de amenazas](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
-|
 
 ## <a name="view-details-of-an-investigation"></a>Ver detalles de una investigación
 

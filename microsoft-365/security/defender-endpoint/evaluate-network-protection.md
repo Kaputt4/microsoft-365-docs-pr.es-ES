@@ -1,7 +1,7 @@
 ---
 title: Evaluar protección de red
 description: Vea cómo funciona la protección de red probando escenarios comunes contra los que protege.
-keywords: Protección de red, vulnerabilidades, sitio web malintencionado, ip, dominio, dominios, evaluación, prueba, demostración
+keywords: 'Protección de red, vulnerabilidades, sitio web malintencionado, ip, dominio, dominios, evaluación, prueba, demostración'
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,18 +10,15 @@ audience: ITPro
 ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
-ms.reviewer: ''
+ms.reviewer: null
 manager: dansimp
 ms.technology: mde
-ms.collection: m365solution-scenario
-ms.date: ''
-ms.openlocfilehash: fb46d0c03aaaaad016ca13be5bfa26a19887794c
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807457"
+ms.collection:
+  - m365solution-scenario
+  - M365-security-compliance
+ms.date: null
 ---
+
 # <a name="evaluate-network-protection"></a>Evaluar protección de red
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -39,7 +36,7 @@ Este artículo le ayuda a evaluar la protección de red habilitando la caracter�
 > También puede visitar el sitio web escenarios de demostración de Microsoft Defender [en demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para ver cómo funcionan otras características de protección.
 
 > [!NOTE]
-> El sitio de demostración defender para el punto de conexión en demo.wd.microsoft.com está en desuso y se quitará en el futuro.
+> El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está obsoleto y se eliminará en el futuro.
 
 ## <a name="enable-network-protection-in-audit-mode"></a>Habilitar la protección de red en modo auditoría
 
@@ -69,13 +66,13 @@ Habilite la protección de red en modo auditoría para ver qué direcciones IP y
 
 Para revisar las aplicaciones que se habrían bloqueado, abra el Visor de eventos y filtre el identificador de evento 1125 en el registro de Microsoft-Windows-Windows Defender/Operativo. En la tabla siguiente se enumeran todos los eventos de protección de red.
 
-| Id. de evento | Provide/Source | Description |
+| Id. de evento | Provide/Source | Descripción |
 |---|---|---|
 | 5007 | Windows Defender (operativo) | Evento cuando se cambia la configuración |
 | 1125 | Windows Defender (operativo) | Evento cuando se audita una conexión de red |
 | 1126 | Windows Defender (operativo) | Evento cuando se bloquea una conexión de red |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Protección de red](network-protection.md)
 

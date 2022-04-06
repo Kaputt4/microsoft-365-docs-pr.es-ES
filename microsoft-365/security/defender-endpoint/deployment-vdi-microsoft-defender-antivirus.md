@@ -1,7 +1,7 @@
 ---
 title: Antivirus de Microsoft Defender Infraestructura de escritorio virtual de implementación
 description: Obtenga información sobre cómo implementar Antivirus de Microsoft Defender en un entorno de escritorio virtual para obtener el mejor equilibrio entre la protección y el rendimiento.
-keywords: vdi, hyper-v, vm, máquina virtual, Windows Defender, antivirus, av, escritorio virtual, rds, escritorio remoto
+keywords: 'vdi, hyper-v, vm, máquina virtual, Windows Defender, antivirus, av, escritorio virtual, rds, escritorio remoto'
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,18 +10,13 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 02/11/2022
+ms.date: 03/18/2022
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9ff523e55efa872002e53f74a631def4c65b9929
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818245"
 ---
+
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual
 
 **Se aplica a:**
@@ -32,7 +27,7 @@ Además de las configuraciones de hardware o locales estándar, también puede u
 
 Para obtener más información sobre Escritorio remoto de Microsoft servicios y compatibilidad con VDI, consulte [Documentación de Azure Virtual Desktop](/azure/virtual-desktop).
 
-Para las máquinas virtuales basadas en Azure, consulte [Install Endpoint Protection in Microsoft Defender for Cloud](/azure/security-center/security-center-install-endpoint-protection).
+Para las máquinas virtuales basadas en Azure, [consulte Install Endpoint Protection in Microsoft Defender for Cloud](/azure/security-center/security-center-install-endpoint-protection).
 
 Con la capacidad de implementar fácilmente actualizaciones en máquinas virtuales que se ejecutan en VDI, hemos acortado esta guía para centrarse en cómo puede obtener actualizaciones en sus máquinas de forma rápida y sencilla. Ya no es necesario crear y sellar imágenes doradas periódicamente, ya que las actualizaciones se expanden en sus bits de componente en el servidor host y, a continuación, se descargan directamente en la máquina virtual cuando está activada.
 
@@ -52,7 +47,7 @@ También puede descargar el documento técnico Antivirus de Microsoft Defender e
 > El sitio de demostración de Defender para punto de conexión en demo.wd.microsoft.com está obsoleto y se eliminará en el futuro.
 
 > [!IMPORTANT]
-> Aunque la VDI se puede hospedar en Windows Server 2012 o Windows Server 2016, las máquinas virtuales (VM) deben ejecutar Windows 10, 1607 como mínimo, debido al aumento de las tecnologías y características de protección que no están disponibles en versiones anteriores de Windows.
+> Aunque la VDI se puede hospedar en Windows Server 2012 o Windows Server 2016, las máquinas virtuales (VM) deben ejecutar Windows 10, 1607 como mínimo, debido al aumento de las tecnologías de protección y las características que no están disponibles en versiones anteriores de Windows.
 >
 > Hay mejoras de rendimiento y características en la forma en que Microsoft Defender AV funciona en máquinas virtuales en Windows 10 Insider Preview, compilación 18323 (y versiones posteriores). Identificaremos en esta guía si necesita usar una compilación de Insider Preview; si no se especifica, la versión mínima necesaria para la mejor protección y rendimiento es Windows 10 1607.
 
@@ -102,7 +97,7 @@ New-Item -ItemType Directory -Force -Path $vdmpath | Out-Null
 
 Invoke-WebRequest -Uri 'https://go.microsoft.com/fwlink/?LinkID=121721&arch=x64' -OutFile $vdmpackage
 
-cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
+cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 ```
 
 Puede establecer una tarea programada para que se ejecute una vez al día de modo que siempre que se descargue y desempaquete el paquete, las máquinas virtuales recibirán la nueva actualización.
@@ -201,7 +196,7 @@ A veces, Antivirus de Microsoft Defender notificaciones se pueden enviar o conse
 
 4. Implemente el objeto de directiva de grupo como lo haría normalmente.
 
-La supresión de notificaciones impide que las notificaciones Antivirus de Microsoft Defender se muestren en el Centro de acciones en Windows 10 cuando se realizan exámenes o se realizan acciones de corrección. Sin embargo, el equipo de operaciones de seguridad verá los resultados del examen en el mientras se detectó y detuvo el ataque, las alertas, como una "alerta inicial de acceso", se desencadenaron y aparecieron en el [portal de Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender).
+La supresión de notificaciones impide que las notificaciones Antivirus de Microsoft Defender se muestren en el Centro de acciones Windows 10 cuando se realizan exámenes o se realizan acciones de corrección. Sin embargo, el equipo de operaciones de seguridad verá los resultados del examen en el mientras se detectó y detuvo el ataque, las alertas, como una "alerta de acceso inicial", se desencadenaron y aparecieron en el [portal de Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender).
 
 > [!TIP]
 > Para abrir el Centro de acciones Windows 10 o Windows 11, siga uno de los pasos siguientes:
@@ -217,7 +212,7 @@ Deshabilitar un examen después de una actualización impedirá que se produzca 
 > [!IMPORTANT]
 > La ejecución de exámenes después de una actualización ayudará a garantizar que las máquinas virtuales estén protegidas con las últimas actualizaciones de inteligencia de seguridad. Deshabilitar esta opción reducirá el nivel de protección de las máquinas virtuales y solo se debe usar al crear o implementar la imagen base por primera vez.
 
-1. En el Editor de directivas de grupo, ve **a Windows componentes Antivirus de Microsoft Defender** \> actualizaciones **de** \> **inteligencia de seguridad**.
+1. En el Editor de directivas de grupo, vaya **a Windows componentes Antivirus de Microsoft Defender** \> actualizaciones **de** \> **inteligencia de seguridad**.
 
 2. Seleccione **Activar el examen después de la actualización de inteligencia de seguridad** y, a continuación, edite la configuración de directiva.
 
@@ -231,7 +226,7 @@ Esta directiva impide que un examen se ejecute inmediatamente después de una ac
 
 ## <a name="scan-vms-that-have-been-offline"></a>Examinar máquinas virtuales sin conexión
 
-1. En el Editor de directivas de grupo, vaya **a Windows componentes Antivirus de Microsoft Defender** \>  \> **Scan**.
+1. En el Editor de directivas de grupo, vaya **a Windows componentes Antivirus de Microsoft Defender** \>  \> **Examen**.
 
 2. Seleccione **Activar el examen rápido de puesta al día** y, a continuación, edite la configuración de directiva.
 

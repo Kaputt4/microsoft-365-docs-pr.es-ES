@@ -1,31 +1,26 @@
 ---
 title: Proteger el acceso de usuario y dispositivo
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 4/17/2018
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: Aprende a proteger el acceso de usuarios y dispositivos a Microsoft 365 y servicios y a defenderte de la pérdida de datos.
+description: Aprende a proteger el acceso de usuarios y dispositivos a Microsoft 365 datos y servicios y a defenderte de la pérdida de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 121c5b8f1168e9986693fea128aa66626b3e31fe
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818545"
 ---
+
 # <a name="protect-user-and-device-access"></a>Proteger el acceso de usuario y dispositivo
 
-Proteger el acceso a sus Microsoft 365 y servicios es fundamental para defenderse de los ciberataques y protegerse contra la pérdida de datos. Las mismas protecciones se pueden aplicar a otras aplicaciones SaaS del entorno e incluso a las aplicaciones locales publicadas Azure Active Directory proxy de aplicación.
+Proteger el acceso a sus Microsoft 365 y servicios es fundamental para defenderse de los ataques cibernéticos y protegerse contra la pérdida de datos. Las mismas protecciones se pueden aplicar a otras aplicaciones SaaS del entorno e incluso a las aplicaciones locales publicadas Azure Active Directory proxy de aplicación.
   
 ## <a name="step-1-review-recommendations"></a>Paso 1: Revisar recomendaciones
 
@@ -40,7 +35,7 @@ Empiece por usar cuentas de administrador solo para la administración. Los admi
 
 Proteja las cuentas de administrador con autenticación multifactor y acceso condicional. Para obtener más información, vea [Protecting administrator accounts](../security/office-365-security/identity-access-prerequisites.md#protecting-administrator-accounts). 
 
-Después, configure la administración de acceso con privilegios en Office 365. La administración de acceso con privilegios permite un control de acceso granular sobre las tareas de administración con privilegios en Office 365. Puede ayudar a proteger su organización de infracciones que pueden usar cuentas de administrador con privilegios existentes con acceso permanente a datos confidenciales o acceso a opciones de configuración críticas.
+A continuación, configure la administración de acceso con privilegios en Office 365. La administración de acceso con privilegios permite un control de acceso granular sobre las tareas de administración con privilegios en Office 365. Puede ayudar a proteger su organización de infracciones que pueden usar cuentas de administrador con privilegios existentes con acceso permanente a datos confidenciales o acceso a opciones de configuración críticas.
 
 - [Información general sobre la administración de acceso con privilegios](privileged-access-management-overview.md)
 - [Configurar la administración del acceso con privilegios](privileged-access-management-configuration.md)

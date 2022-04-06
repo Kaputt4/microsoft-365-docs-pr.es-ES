@@ -1,7 +1,7 @@
 ---
 title: Crear y administrar reglas de detección personalizadas en Microsoft 365 Defender
 description: Obtenga información sobre cómo crear y administrar reglas de detecciones personalizadas basadas en consultas avanzadas de búsqueda
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, detecciones personalizadas, reglas, esquema, kusto, RBAC, permisos, Microsoft Defender para endpoint
+keywords: 'búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, detecciones personalizadas, reglas, esquema, kusto, RBAC, permisos, Microsoft Defender para endpoint'
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -9,24 +9,19 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 473d58cde13f1f776c31184b2b50e74e23810b22
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807037"
 ---
+
 # <a name="create-and-manage-custom-detections-rules"></a>Crear y administrar reglas de detecciones personalizadas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -44,13 +39,13 @@ Para administrar detecciones personalizadas, debe tener asignado uno de estos ro
 
 - **Administrador de** seguridad: los usuarios [con este Azure Active Directory pueden](/azure/active-directory/roles/permissions-reference#security-administrator) administrar la configuración de seguridad en el portal de Microsoft 365 Defender y otros portales y servicios.
 
-- **Operador de** seguridad: los usuarios con este rol [Azure Active Directory](/azure/active-directory/roles/permissions-reference#security-operator) pueden administrar alertas y tener acceso global de solo lectura a características relacionadas con la seguridad, incluida toda la información del portal Microsoft 365 Defender seguridad. Este rol es suficiente para administrar detecciones personalizadas solo si el control de acceso basado en roles (RBAC) está desactivado en Microsoft Defender para endpoint. Si tiene RBAC configurado, también necesita el permiso administrar la configuración **de seguridad** para Defender para endpoint.
+- **Operador de** seguridad: los usuarios con este [rol Azure Active Directory](/azure/active-directory/roles/permissions-reference#security-operator) pueden administrar alertas y tener acceso global de solo lectura a características relacionadas con la seguridad, incluida toda la información del portal de Microsoft 365 Defender seguridad. Este rol es suficiente para administrar detecciones personalizadas solo si el control de acceso basado en roles (RBAC) está desactivado en Microsoft Defender para endpoint. Si tiene RBAC configurado, también necesita el permiso administrar la configuración **de seguridad** para Defender para endpoint.
 
-También puede administrar detecciones personalizadas que se aplican a los datos de soluciones Microsoft 365 Defender específicas si tiene permisos para ellas. Si solo tiene permisos para administrar Microsoft 365 Defender para Office, por ejemplo, puede crear detecciones personalizadas `Email` con tablas, pero no tablas`Identity`.  
+También puede administrar detecciones personalizadas que se aplican a los datos de soluciones Microsoft 365 Defender específicas si tiene permisos para ellas. Si solo tiene permisos para administrar Microsoft 365 Defender para Office, por ejemplo, puede crear detecciones personalizadas `Email` con tablas, pero no `Identity` tablas.  
 
 Para administrar los permisos necesarios, un **administrador global** puede:
 
-- Asigne el **rol de administrador de seguridad** o operador **de** seguridad [en Centro de administración de Microsoft 365](https://admin.microsoft.com/) **en RolesSecurity** >  **admin**.
+- Asigne el **rol de administrador de seguridad** o **operador de** [seguridad en Centro de administración de Microsoft 365](https://admin.microsoft.com/) en **RolesSecurity** >  **admin**.
 - Compruebe la configuración de RBAC para Microsoft Defender para Endpoint [en Microsoft 365 Defender](https://security.microsoft.com/) en **Configuración** >  **PermissionsRoles** > . Seleccione el rol correspondiente para asignar el **permiso administrar la configuración de** seguridad.
 
 > [!NOTE]
@@ -119,7 +114,7 @@ Con la consulta en el editor de consultas, seleccione **Crear regla de detecció
 - **Título de alerta**: título que se muestra con alertas desencadenadas por la regla; debe ser único
 - **Gravedad:** riesgo potencial del componente o actividad identificado por la regla
 - **Categoría**: componente de amenaza o actividad identificada por la regla
-- **MITRE ATT&técnicas de CK**: una o más técnicas de ataque identificadas por la regla como se documentan en el marco&[CK de MITRE ATT](https://attack.mitre.org/). Esta sección está oculta para determinadas categorías de alertas, como malware, ransomware, actividad sospechosa y software no deseado
+- **MITRE ATT&técnicas de CK**: una o más técnicas de ataque identificadas por la regla tal como se documentan en el marco&[CK de MITRE ATT](https://attack.mitre.org/). Esta sección está oculta para determinadas categorías de alertas, como malware, ransomware, actividad sospechosa y software no deseado
 - **Descripción**: más información sobre el componente o la actividad identificada por la regla 
 - **Acciones recomendadas**: acciones adicionales que los respondedores pueden realizar en respuesta a una alerta
 
@@ -203,7 +198,7 @@ Para ver todas las reglas de detección personalizadas existentes, vaya a **Regl
 
 Para ver información completa acerca de una regla de detección personalizada, vaya a **Reglas** de detección **HuntingCustom** >  y, a continuación, seleccione el nombre de la regla. A continuación, puede ver información general sobre la regla, incluida la información sobre su estado de ejecución y ámbito. La página también proporciona la lista de alertas y acciones desencadenadas.
 
-![Página de detalles de regla de detección personalizada.](../../media/custom-detect-rules-view.png)<br>
+:::image type="content" source="../../media/custom-detect-rules-view.png" alt-text="La página Detalles de la regla de detección personalizada en el portal Microsoft 365 Defender datos" lightbox="../../media/custom-detect-rules-view.png":::<br>
 *Detalles de la regla de detección personalizada*
 
 También puede realizar las siguientes acciones en la regla desde esta página:
@@ -231,7 +226,7 @@ En la pantalla detalles de la regla (**detecciones HuntingCustom** > **[Nombre**
 >[!NOTE]
 >Es posible que algunas columnas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa la Microsoft 365 Defender](m365d-enable.md) para buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 - [Introducción a las detecciones personalizadas](custom-detections-overview.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Conozca el lenguaje de consulta de búsqueda avanzada](advanced-hunting-query-language.md)

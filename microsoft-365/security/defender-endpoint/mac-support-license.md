@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas de licencia para Microsoft Defender para Endpoint en Mac
 description: Solucionar problemas de licencia en Microsoft Defender para Endpoint en Mac.
-keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, performance
+keywords: 'microsoft, defender, Microsoft Defender para Endpoint, mac, performance'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,16 +12,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
+  - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b0a328ffeee6ee5796cb92f00b8491b257e88a65
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765737"
 ---
+
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de licencia para Microsoft Defender para Endpoint en macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "62765737"
 
 Mientras estás pasando por [Microsoft Defender para endpoint en macOS](microsoft-defender-endpoint-mac.md) [y](mac-install-manually.md) pruebas de implementación manual o una prueba de concepto (PoC), es posible que recibas el siguiente error:
 
-![Imagen de error de licencia.](images/no-license-found.png)
+:::image type="content" source="images/no-license-found.png" alt-text="Error de licencia" lightbox="images/no-license-found.png":::
 
 **Mensaje:** 
 
@@ -57,6 +52,6 @@ También puede encontrar este error cuando el agente de Microsoft Defender para 
 
 **Solución:**
 
-Siga las MicrosoftDefenderATPOnboardingMacOs.py instrucciones documentadas aquí: [Configuración de cliente](mac-install-manually.md#client-configuration)
+Siga las instrucciones MicrosoftDefenderATPOnboardingMacOs.py documentadas aquí: [Configuración de cliente](mac-install-manually.md#client-configuration)
 
 Para escenarios en los que Microsoft Defender para Endpoint en macOS no está actualizado, tendrás que actualizar el agente. 

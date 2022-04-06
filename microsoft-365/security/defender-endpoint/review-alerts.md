@@ -1,29 +1,24 @@
 ---
 title: Revisar alertas en Microsoft Defender para endpoint
-description: Revise la información de alerta, incluido un artículo de alerta visualizado y detalles para cada paso de la cadena.
-keywords: incidente, incidentes, máquinas, dispositivos, usuarios, alertas, alertas, investigación, gráfico, evidencia
+description: 'Revise la información de alerta, incluido un artículo de alerta visualizado y detalles para cada paso de la cadena.'
+keywords: 'incidente, incidentes, máquinas, dispositivos, usuarios, alertas, alertas, investigación, gráfico, evidencia'
 ms.prod: m365-security
 ms.pagetype: security
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+  - m365-security-compliance
+  - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: a156b2a4514c3dfa090bcf43285abfbcfaa1f46e
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766973"
 ---
+
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Revisar alertas en Microsoft Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -53,19 +48,19 @@ Tenga en cuenta el estado de detección de la alerta.
 
 - Prevenido: se evitó el intento de acción sospechosa. Por ejemplo, un archivo no se escribió en el disco o se ejecutó.
 
-  ![Se ha evitado una página de alerta que muestra la amenaza.](images/detstat-prevented.png)
+  :::image type="content" source="images/detstat-prevented.png" alt-text="La página que muestra la prevención de una amenaza" lightbox="images/detstat-prevented.png":::
 
 - Bloqueado: se ejecutó un comportamiento sospechoso y, a continuación, se bloqueó. Por ejemplo, se ejecutó un proceso, pero como posteriormente mostró comportamientos sospechosos, se finalizó el proceso.
 
-  ![Se bloqueó una página de alerta que muestra la amenaza.](images/detstat-blocked.png)
+  :::image type="content" source="images/detstat-blocked.png" alt-text="La página que muestra el bloqueo de una amenaza" lightbox="images/detstat-blocked.png":::
 
 - Detectado: se detectó un ataque y posiblemente aún esté activo.
 
-  ![Se detectó una página de alerta que muestra la amenaza.](images/detstat-detected.png)
+  :::image type="content" source="images/detstat-detected.png" alt-text="La página que muestra la detección de una amenaza" lightbox="images/detstat-detected.png":::
 
 A continuación, también puede  revisar los detalles de la investigación automatizada en el panel de detalles de la alerta, para ver qué acciones ya se han realizado, así como leer la descripción de la alerta para las acciones recomendadas.
 
-![Fragmento de código del panel de detalles con la descripción de la alerta y las secciones de investigación automática resaltadas.](images/alert-air-and-alert-description.png)
+:::image type="content" source="images/alert-air-and-alert-description.png" alt-text="Panel de detalles con la descripción de alerta y las secciones de investigación automática resaltadas" lightbox="images/alert-air-and-alert-description.png":::
 
 Otra información disponible en el panel de detalles cuando se abre la alerta incluye técnicas MITRE, origen y detalles contextuales adicionales.
 
@@ -75,11 +70,11 @@ Al seleccionar un dispositivo o una tarjeta de usuario en las secciones activos 
 
 - **En el caso** de los dispositivos, el panel de detalles mostrará información sobre el propio dispositivo, como Dominio, Sistema operativo e IP. Las alertas activas y los usuarios que han iniciado sesión en ese dispositivo también están disponibles. Puedes tomar medidas inmediatas al aislar el dispositivo, restringir la ejecución de la aplicación o ejecutar un examen antivirus. Como alternativa, puedes recopilar un paquete de investigación, iniciar una investigación automatizada o ir a la página del dispositivo para investigar desde el punto de vista del dispositivo.
 
-   ![Fragmento de código del panel de detalles cuando se selecciona un dispositivo.](images/device-page-details.png)
+   :::image type="content" source="images/device-page-details.png" alt-text="Panel de detalles cuando se selecciona un dispositivo" lightbox="images/device-page-details.png":::
 
 - **Para** los usuarios, el panel de detalles mostrará información detallada del usuario, como el nombre SAM y SID del usuario, así como los tipos de inicio de sesión realizados por este usuario y las alertas e incidentes relacionados con él. Puede seleccionar Abrir *página de usuario para* continuar la investigación desde el punto de vista de ese usuario.
 
-   ![Fragmento de código del panel de detalles cuando se selecciona un usuario.](images/user-page-details.png)
+   :::image type="content" source="images/user-page-details.png" alt-text="Panel de detalles cuando se selecciona un usuario" lightbox="images/user-page-details.png":::
 
 ## <a name="related-topics"></a>Temas relacionados
 

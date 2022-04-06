@@ -1,7 +1,7 @@
 ---
-title: Informes de actividad del Centro de administración de Microsoft 365
+title: "Informes de actividad del Centro de administración de Microsoft\_365"
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -10,25 +10,20 @@ ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-- M365-subscription-management
-- Adm_O365
-- Adm_TOC
+  - M365-subscription-management
+  - Adm_O365
+  - Adm_TOC
 ms.custom:
-- AdminSurgePortfolio
-- AdminTemplateSet
+  - AdminSurgePortfolio
+  - AdminTemplateSet
 search.appverid:
-- MET150
-- MOE150
-- GEA150
+  - MET150
+  - MOE150
+  - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 8dd72f1f153bb9052317afca1d0370645d8ad85b
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400984"
 ---
+
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
 Puede ver fácilmente el uso que hacen de los servicios de Microsoft 365 los usuarios de su empresa. Por ejemplo, puede identificar quién los usa con más frecuencia y ha alcanzado el límite o aquellos que no necesiten una licencia de Microsoft 365 en absoluto. El modelo de licencia perpetua no se incluirá en los informes. 
@@ -94,7 +89,7 @@ Dependiendo de su suscripción, aquí están los informes disponibles en todos l
 |[Activaciones de Office](microsoft-office-activations-ww.md)|Sí|Sí|Sí|Sí|Sí|
 |[Usuarios activos](active-users-ww.md)|Sí|Sí|Sí|Sí|Sí|
 |[Grupos de Microsoft 365](office-365-groups-ww.md)|Sí|Sí|Sí|Sí|Sí|
-|[Uso de las aplicaciones de Microsoft 365](microsoft365-apps-usage-ww.md)|Sí|Sí|No[^1]|No[^1]|No[^1]|
+|[Uso de las aplicaciones de Microsoft 365](microsoft365-apps-usage-ww.md)|Sí|Sí|No[^1]|No[^1]|Sí
 |[Actividad de los usuarios de OneDrive para la Empresa](onedrive-for-business-activity-ww.md)|Sí|Sí|Sí|Sí|Sí|
 |[Uso de OneDrive para la Empresa](onedrive-for-business-usage-ww.md)|Sí|Sí|Sí|Sí|Sí|
 |[Uso del sitio de SharePoint](sharepoint-site-usage-ww.md)|Sí|Sí|Sí|Sí|Sí|
@@ -110,7 +105,7 @@ Dependiendo de su suscripción, aquí están los informes disponibles en todos l
 |[Actividad de conferencias organizada de Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Sí|Sí|No[^1]|No[^1]|Sí|
 |[Actividad de participantes de conferencias de Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Sí|Sí|No[^1]|No[^1]|Sí|
 |[Actividad punto a punto de Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Sí|Sí|No[^1]|No[^1]|Sí|
-|[Actividades de aprendizaje Viva](viva-learning-activity.md)|Sí|N/D|N/D|No aplicable|N/D|
+|[Actividades de aprendizaje Viva](viva-learning-activity.md)|Sí|N/D|N/D|N/D|N/D|
 |[Actividad de Viva Insights](viva-insights-activity.md)|Sí|Sí|N/D|N/D|N/D|
 
 [^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.

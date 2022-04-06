@@ -1,7 +1,7 @@
 ---
 title: Encabezados de mensajes de correo no deseado
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,22 +9,17 @@ audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: high
 search.appverid:
-- MET150
+  - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-office365
+  - M365-security-compliance
+  - m365initiative-defender-office365
 description: Los administradores pueden obtener información sobre los campos de encabezado que se agregan a los mensajes mediante Exchange Online Protection (EOP). Estos campos de encabezado proporcionan información sobre el mensaje y cómo se procesó.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8eaf567e4cbceae66a5acd1fa1a45565f15a4804
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60884006"
 ---
+
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Encabezados de mensajes de correo no deseado en Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -60,8 +55,6 @@ Los campos y valores individuales se describen en la siguiente tabla.
 > [!NOTE]
 > El encabezado **X-Forefront-Antispam-Report** contiene muchos campos y valores de encabezado distintos. Los campos que no se describen en la tabla los usa exclusivamente el equipo de protección contra correo no deseado de Microsoft con fines de diagnóstico.
 
-****
-
 |Campo|Description|
 |---|---|
 |`ARC`|El protocolo `ARC` tiene los campos siguientes: <ul><li>`AAR`: registra el contenido del encabezado **Authentication-results** de DMARC.</li><li>`AMS`: incluye las firmas criptográficas del mensaje.</li><li>`AS`: incluye las firmas criptográficas de los encabezados del mensaje. Este campo contiene una etiqueta de una validación de cadena denominada `"cv="`, que incluye el resultado de la validación de la cadena como **none**, **pass**, o **fail**.</li></ul>|
@@ -87,18 +80,14 @@ Los campos y valores individuales se describen en la siguiente tabla.
 |`SFV:SPM`|El mensaje se marcó como correo no deseado por el filtro de correo no deseado.|
 |`SRV:BULK`|El mensaje se identificó como correo electrónico masivo por el filtrado de correo no deseado y el umbral de nivel de queja de correo masivo (BCL). Cuando el parámetro _MarkAsSpamBulkMail_ está `On` (está activado de forma predeterminada), un mensaje de correo masivo se marca como correo no deseado (SCL 6). Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado](configure-your-spam-filter-policies.md).|
 |`X-CustomSpam: [ASFOption]`|El mensaje coincide con una opción de Filtro de correo no deseado avanzado (ASF). Para ver el valor del encabezado X para cada opción de ASF, consulte [Configuración del Filtro de correo no deseado avanzado (ASF)](advanced-spam-filtering-asf-options.md).|
-|
 
 ## <a name="x-microsoft-antispam-message-header-fields"></a>Campos de encabezado de mensaje de X-Microsoft-Antispam
 
 En la tabla siguiente se describen los campos más útiles del encabezado de mensaje **X-Microsoft-Antispam**. El resto de los campos de este encabezado los usa exclusivamente el equipo de Microsoft contra el correo no deseado con fines de diagnóstico.
 
-****
-
 |Campo|Description|
 |---|---|
 |`BCL`|Nivel de queja de correo masivo (BCL) del mensaje. Un BCL superior indica que es más probable que un mensaje de correo masivo generen quejas (y, por lo tanto, es más probable que sea correo no deseado). Para obtener más información, consulte [Nivel de queja de correo masivo (BCL)](bulk-complaint-level-values.md).|
-|
 
 ## <a name="authentication-results-message-header"></a>Encabezado de mensaje Authentication-results
 
@@ -151,8 +140,6 @@ La siguiente lista describe el texto que se agrega al encabezado **Authenticatio
 
 En la siguiente tabla se describen los campos y los valores posibles para todas las comprobaciones de autenticación de correo electrónico.
 
-****
-
 |Campo|Descripción|
 |---|---|
 |`action`|Indica la acción efectuada por el filtro de correo no deseado en función de los resultados de la comprobación de DMARC. Por ejemplo: <ul><li>**oreject** u **o.reject**: significa invalidar el rechazo. En este caso, Microsoft 365 usa esta acción cuando recibe un mensaje que no supera la comprobación de DMARC desde un dominio cuyo registro TXT de DMARC tiene una directiva de p=reject. En lugar de eliminar o rechazar el mensaje, Microsoft 365 marca el mensaje como correo no deseado. Para obtener más información sobre por qué Microsoft 365 está configurado de esta forma, vea [Cómo controla Microsoft 365 el correo electrónico entrante que no supera las comprobaciones de DMARC](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc).</li><li>**pct.quarantine** Indica que se entregará un porcentaje inferior al 100 % de los mensajes que no superen la comprobación de DMARC. Esto significa que el mensaje no superó la comprobación de DMARC y la directiva se estableció en cuarentena, pero el campo pct no se estableció en el 100 % y el sistema decidió, de forma aleatoria, no aplicar la acción de DMARC, de acuerdo con la directiva del dominio especificado.  </li><li>**pct.reject** Indica que se entregará un porcentaje inferior al 100 % de los mensajes que no superen la comprobación de DMARC. Esto significa que el mensaje no superó la comprobación de DMARC y se estableció el rechazo de la directiva, pero el campo pct no se estableció en el 100 % y el sistema decidió, de forma aleatoria, no aplicar la acción de DMARC, de acuerdo con la directiva del dominio especificado.  </li><li>**permerror** Se produjo un error permanente durante la evaluación de DMARC (por ejemplo, la detección de un registro TXT de DMARC con un formato incorrecto en DNS). Es probable que volver a enviar este mensaje no produzca un resultado diferente. Puede que deba ponerse en contacto con el propietario del dominio para intentar resolver el problema.  </li><li>**temperror** Se produjo un error temporal durante la evaluación de DMARC. Puede solicitar al remitente que vuelva a enviar el mensaje un poco más tarde para procesar correctamente el correo electrónico.  </li></ul>|
@@ -163,5 +150,4 @@ En la siguiente tabla se describen los campos y los valores posibles para todas 
 |`header.from`|El dominio de la dirección `5322.From` del encabezado del mensaje de correo electrónico (también denominada dirección De o remitente P2). El destinatario ve la dirección De en los clientes de correo electrónico.|
 |`reason`|El motivo por el que se ha producido un error en la autenticación compuesta. El valor es un código de 3 dígitos. Por ejemplo: <ul><li>**000**: el mensaje no ha logrado la autenticación explícita (`compauth=fail`). Por ejemplo, el mensaje ha recibido un error de DMARC con una acción de cuarentena o rechazo.</li><li>**001**: el mensaje no ha logrado la autenticación implícita (`compauth=fail`). Esto significa que el dominio remitente no ha publicado registros de autenticación de correo electrónico o, si los ha publicado, tenían una directiva de error más débil (errores recuperables o neutrales de SPF, directiva DMARC de `p=none`).</li><li>**002**: la organización tiene una directiva para el par de remitente y dominio que prohíbe explícitamente el envío de correos electrónicos falsificados. Esta configuración la establece manualmente un administrador.</li><li>**010**: el mensaje ha producido un error de DMARC con una acción de rechazo o cuarentena y el dominio es uno de los dominios aceptados de su organización (esto es parte de la suplantación de identidad interna o dentro de la organización).</li><li>**1xx** o **7xx**: el mensaje pasó la autenticación (`compauth=pass`). Los dos últimos dígitos son códigos internos utilizados por Microsoft 365.</li><li>**2xx**: el mensaje superó la autenticación implícita (`compauth=softpass`). Los dos últimos dígitos son códigos internos utilizados por Microsoft 365.</li><li>**3xx**: no se validó la autenticación compuesta del mensaje (`compauth=none`).</li><li>**4xx** o **9XX**: el mensaje ignoró la autenticación compuesta (`compauth=none`). Los dos últimos dígitos son códigos internos utilizados por Microsoft 365.</li><li>**6xx**: el mensaje ha producido un error de autenticación de correo electrónico implícita y el dominio es uno de los dominios aceptados de su organización (esto es parte de la suplantación de identidad interna o dentro de la organización).</li></ul>|
 |`smtp.mailfrom`|El dominio de la dirección `5321.MailFrom` (también conocida como dirección MAIL FROM, remitente P1 o remitente del sobre). Esta es la dirección de correo electrónico que se usa para los informes de no entrega (también conocidos como NDR o mensajes de devolución).|
-|`spf`|Describe los resultados de la comprobación de SPF del mensaje. Los valores posibles son: <ul><li>`pass (IP address)`: se superó la verificación de SPF del mensaje e incluye la dirección IP del remitente. El cliente tiene autorización para enviar o retransmitir un correo electrónico en nombre del dominio del remitente.</li><li>`fail (IP address)`: no se superó la verificación de SPF del mensaje e incluye la dirección IP del remitente. A veces, recibe la denominación _"error no recuperable"_.</li><li>`softfail (reason)`: el registro SPF determinó que el servidor no puede efectuar envíos, pero se encuentra en transición.</li><li>`neutral`: el registro SPF indica explícitamente que no garantiza que la dirección IP esté autorizada para el envío.</li><li>`none`: el dominio no tiene un registro SPF o el registro SPF no se evalúa como resultado.</li><li>`temperror`: se ha producido un error temporal. Por ejemplo, un error de DNS. Es posible la misma comprobación sea correcta más tarde.</li><li>`permerror`: se ha producido un error permanente. Por ejemplo, el dominio tiene un registro SPF con un formato incorrecto.</li></ul>|
-|
+|`spf`|Describe los resultados de la comprobación de SPF del mensaje. Los valores posibles son: <ul><li>`pass (IP address)`: se superó la verificación de SPF del mensaje e incluye la dirección IP del remitente. El cliente tiene autorización para enviar o retransmitir un correo electrónico en nombre del dominio del remitente.</li><li>`fail (IP address)`: no se ha podido realizar la comprobación SPF del mensaje y se incluye la dirección IP del remitente. Esto a veces se denomina _error no recuperable_.</li><li>`softfail (reason)`: el registro SPF determinó que el servidor no puede efectuar envíos, pero se encuentra en transición.</li><li>`neutral`: el registro SPF indica explícitamente que no garantiza que la dirección IP esté autorizada para el envío.</li><li>`none`: el dominio no tiene un registro SPF o el registro SPF no se evalúa como resultado.</li><li>`temperror`: se ha producido un error temporal. Por ejemplo, un error de DNS. Es posible la misma comprobación sea correcta más tarde.</li><li>`permerror`: se ha producido un error permanente. Por ejemplo, el dominio tiene un registro SPF con un formato incorrecto.</li></ul>|

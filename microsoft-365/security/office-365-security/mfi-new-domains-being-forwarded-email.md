@@ -1,24 +1,20 @@
 ---
 title: Información de nuevos dominios a los que se reenvía correo electrónico
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.assetid: ''
+ms.assetid: null
 description: Los administradores pueden aprender a usar la información de correo electrónico nuevos dominios que se reenvía en el panel flujo de correo del Centro de seguridad y cumplimiento de & para investigar cuándo sus usuarios reenvía mensajes a dominios externos a los que nunca se ha reenviado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ecc3c00f40d702f74681e9cbc194e83bd27f5df2
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61933844"
+ms.collection: M365-security-compliance
 ---
+
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>Nuevos dominios que se reenvía información de correo electrónico en el Centro de seguridad & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -30,11 +26,11 @@ ms.locfileid: "61933844"
 
 Existen motivos empresariales válidos para reenviar mensajes de correo electrónico a destinatarios externos en dominios específicos. Sin embargo, es sospechoso cuando los usuarios de la organización comienzan de repente a reenviar mensajes a un dominio al que nadie de la organización haya reenviado mensajes (un nuevo dominio).
 
-Esta condición puede indicar que las cuentas de usuario están en peligro. Si sospecha que las cuentas se han visto comprometidas, consulte [Responder a una cuenta de correo electrónico comprometida.](responding-to-a-compromised-email-account.md)
+Esta condición puede indicar que las cuentas de usuario están en peligro. Si sospecha que las cuentas se han visto comprometidas, consulte [Responder a una cuenta de correo electrónico comprometida](responding-to-a-compromised-email-account.md).
 
-La **información de correo electrónico** nuevos dominios que se reenvía en el Centro de seguridad y [cumplimiento](https://protection.office.com) & le notifica cuándo los usuarios de su organización reenvía mensajes a nuevos dominios.
+La **información de correo** electrónico nuevos dominios que se reenvía en el [Centro de seguridad & cumplimiento](https://protection.office.com) le notifica cuándo los usuarios de su organización reenvía mensajes a nuevos dominios.
 
-Esta información solo aparece cuando se detecta el problema y aparece en la página [Informe de reenvío.](view-mail-flow-reports.md#forwarding-report)
+Esta información solo aparece cuando se detecta el problema y aparece en la página [Informe de reenvío](view-mail-flow-reports.md#forwarding-report) .
 
 ![Nuevos dominios que se reenvía información de correo electrónico.](../../media/mfi-new-domains-being-forwarded.png)
 
@@ -42,10 +38,10 @@ Al hacer clic en el widget, aparece un control flotante donde puede encontrar m�
 
 ![El menú desplegable de detalles que aparece después de hacer clic en la información de correo electrónico nuevos dominios que se reenvía.](../../media/mfi-new-domains-being-forwarded-details.png)
 
-También puede acceder a esta página de detalles  al seleccionar la información después de hacer clic en Ver todo en el área Información **principal & recomendaciones** en (**Panel** de informes \>  o <https://protection.office.com/insightdashboard> ).
+También puede acceder a esta página de detalles al seleccionar la información después de hacer clic  en Ver todo en  el área Principales & **recomendaciones en (** \> Panel de **informes o ).** <https://protection.office.com/insightdashboard>
 
 Para evitar el reenvío automático de mensajes a dominios externos, configure un dominio remoto para algunos o todos los dominios externos. Para obtener más información, vea [Manage remote domains in Exchange Online](/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains).
 
 ## <a name="related-topics"></a>Temas relacionados
 
-Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Para obtener información sobre otras perspectivas en el panel flujo de correo, vea Información sobre el flujo de correo en el [Centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

@@ -1,30 +1,25 @@
 ---
 title: Ejecutar el analizador de cliente en Windows
 description: Obtenga información sobre cómo ejecutar microsoft defender para endpoint client analyzer en Windows.
-keywords: analizador de cliente, sensor de solución de problemas, analizador, mdeanalyzer, windows
+keywords: 'analizador de cliente, sensor de solución de problemas, analizador, mdeanalyzer, windows'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+  - M365-security-compliance
+  - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 092a89e41efebafae36e81f5faa7cd3b52fde8d9
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281536"
 ---
+
 # <a name="run-the-client-analyzer-on-windows"></a>Ejecutar el analizador de cliente en Windows
 
 **Se aplica a:**
@@ -53,7 +48,7 @@ ms.locfileid: "62281536"
 Además de lo anterior, también hay una opción para recopilar los registros de soporte [técnico del analizador mediante la respuesta en directo](troubleshoot-collect-support-log.md).
 
 > [!NOTE]
-> En Windows 10/11, Windows Server 2019/2022 o Windows Server 2012R2/2016 con la solución unificada moderna instalada, el script [](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) `MDEClientAnalyzer.exe` del analizador de cliente llama a un archivo ejecutable llamado para ejecutar las pruebas de conectividad a direcciones URL de servicio en la nube.
+> En Windows 10/11, Windows Server 2019/2022 o Windows Server 2012R2/2016 con la solución unificada moderna instalada, el script [](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) `MDEClientAnalyzer.exe` del analizador de cliente llama a un archivo ejecutable llamado para ejecutar las pruebas de conectividad a direcciones URL del servicio en la nube.
 >
 > En Windows 8.1, Windows Server 2016 o cualquier edición anterior del sistema operativo en la que se usa Microsoft Monitoring Agent (MMA) para la incorporación, el script `MDEClientAnalyzerPreviousVersion.exe` del analizador de cliente llama a un archivo ejecutable llamado para ejecutar pruebas de conectividad para direcciones URL de comando y control (CnC) mientras también llama a Microsoft Monitoring Agent de conectividad para `TestCloudConnection.exe` las direcciones URL del canal de datos cibernéticos.
 
@@ -61,17 +56,17 @@ Además de lo anterior, también hay una opción para recopilar los registros de
 Todos los scripts y módulos de PowerShell incluidos en el analizador están firmados por Microsoft.
 Si los archivos se han modificado de alguna manera, se espera que el analizador salga con el siguiente error:
 
-![Imagen del error del analizador de cliente](images/sigerror.png)
+:::image type="content" source="images/sigerror.png" alt-text="Error del analizador de cliente" lightbox="images/sigerror.png":::
 
 
-Si se muestra este error, el issuerInfo.txt de datos contendrá información detallada sobre por qué ocurrió y qué archivo se afectó:
+Si se muestra este error, el issuerInfo.txt de datos contendrá información detallada sobre el motivo y el archivo afectado:
 
-![Imagen de la información del emisor](images/issuerinfo.png)
+:::image type="content" source="images/issuerinfo.png" alt-text="Información del emisor" lightbox="images/issuerinfo.png":::
 
 
 Contenido de ejemplo después MDEClientAnalyzer.ps1 se modifica:
 
-![Imagen del archivo ps1 modificado](images/modified-ps1.png)
+:::image type="content" source="images/modified-ps1.png" alt-text="El archivo ps1 modificado" lightbox="images/modified-ps1.png":::
 
 
 

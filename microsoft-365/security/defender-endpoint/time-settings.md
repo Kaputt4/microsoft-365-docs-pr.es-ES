@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender de zona horaria
 description: Usa la información que se incluye aquí para configurar la configuración Microsoft 365 Defender zona horaria y ver la información de licencia.
-keywords: configuración, Microsoft Defender, inteligencia de amenazas de ciberseguridad, Microsoft Defender para endpoint, zona horaria, utc, hora local, licencia
+keywords: 'configuración, Microsoft Defender, inteligencia de amenazas de ciberseguridad, Microsoft Defender para endpoint, zona horaria, utc, hora local, licencia'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,13 +14,8 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4353bbfc0ce11c4a767ca599ecb23a1ab4f77a56
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62214032"
 ---
+
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender de zona horaria
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -32,7 +27,8 @@ ms.locfileid: "62214032"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-settings-abovefoldlink)
 
-Use el **icono Configuración de zona** horaria del menú Zona ![ horaria1.](images/atp-time-zone.png) para configurar la zona horaria y ver la información de licencia.
+Use el **menú Zona horaria** para configurar la zona horaria y ver la información de licencia.
+:::image type="content" source="images/atp-time-zone.png" alt-text="Configuración de zona horaria-1" lightbox="images/atp-time-zone.png":::
 
 ## <a name="time-zone-settings"></a>Configuración de zona horaria
 
@@ -42,7 +38,9 @@ Las investigaciones ciberforensicas suelen basarse en marcas de tiempo para unir
 
 Microsoft Defender para endpoint puede mostrar la hora universal coordinada (UTC) o la hora local.
 
-La configuración actual de zona horaria se muestra en la configuración de Microsoft Defender. Puede cambiar la zona horaria mostrada en el menú **Zona** horaria en **Configuración > Centro de seguridad**.
+La configuración actual de la zona horaria se muestra en el menú Microsoft Defender para endpoint. Puede cambiar la zona horaria mostrada en el **menú Zona** horaria.
+
+:::image type="content" source="images/atp-time-zone-menu.png" alt-text="Configuración de zona horaria-2" lightbox="images/atp-time-zone-menu.png":::
 
 ### <a name="utc-time-zone"></a>Zona horaria UTC
 
@@ -64,17 +62,18 @@ La zona horaria de Microsoft Defender para extremo se establece de forma predete
 
 Para establecer la zona horaria:
 
-1. Haga clic **en Configuración** menú en el icono Microsoft 365 Defender configuración de zona horaria del [Portal](https://security.microsoft.com/) ![ de contenido3. ](images/atp-time-zone.png) .
-2. Seleccione **Centro de seguridad**.
-3. Seleccione **Zona horaria** y establezca la zona horaria en UTC o en la zona horaria local.
+1. Haga clic en **el menú Zona** horaria.
+   :::image type="content" source="images/atp-time-zone.png" alt-text="Configuración de zona horaria-3" lightbox="images/atp-time-zone.png":::
+1. Seleccione el **indicador UTC de zona** horaria.
+1. Seleccione **Zona horaria UTC** o la zona horaria local, por ejemplo -7:00.
 
 ### <a name="regional-settings"></a>Configuración regional
 
-Para aplicar diferentes formatos de fecha para Microsoft Defender para Endpoint, usa la configuración regional para Internet Explorer (IE) y Microsoft Edge (Edge). Si usas otro explorador como Google Chrome, sigue los pasos necesarios para cambiar la configuración de hora y fecha de ese explorador. 
+Para aplicar diferentes formatos de fecha para Microsoft Defender para endpoint, usa la configuración regional para Internet Explorer (IE) y Microsoft Edge (Edge). Si usas otro explorador como Google Chrome, sigue los pasos necesarios para cambiar la configuración de hora y fecha de ese explorador. 
 
 #### <a name="internet-explorer-ie-and-microsoft-edge"></a>Internet Explorer (IE) y Microsoft Edge
 
-IE y Microsoft Edge la configuración **de** región configurada en la opción **Relojes, Idioma** y Región del panel de control. 
+IE y Microsoft Edge la configuración **de** región configurada en la opción Relojes **, Idioma y Región** del panel de control. 
 
 #### <a name="known-issues-with-regional-formats"></a>Problemas conocidos con formatos regionales
 
@@ -99,4 +98,4 @@ Actualmente no se admiten los siguientes formatos de fecha y hora:
 
 ##### <a name="decimal-symbol-used-in-numbers"></a>Símbolo decimal usado en números
 
-El símbolo decimal usado siempre es un punto, incluso si se selecciona una coma en la **configuración de** formato Números de la **configuración de** región. Por ejemplo, 15,5K se muestra como 15,5K.
+El símbolo decimal usado siempre es un punto, incluso si se selecciona una coma en la **configuración de formato Números** de **la configuración de** región. Por ejemplo, 15,5K se muestra como 15,5K.

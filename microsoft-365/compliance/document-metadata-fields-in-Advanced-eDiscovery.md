@@ -1,28 +1,23 @@
 ---
 title: Campos de metadatos de documento en eDiscovery avanzado
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
+ms.date: null
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
-- MOE150
-- MET150
-ms.assetid: ''
+  - MOE150
+  - MET150
+ms.assetid: null
 description: En este artículo se definen los campos de metadatos de los documentos de un conjunto de revisión en un caso Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: a1ce1cf43cb2b5d741731948288ab60f48cf5352
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62901087"
 ---
+
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos de documento en eDiscovery avanzado
 
 En la tabla siguiente se enumeran los campos de metadatos de los documentos de un conjunto de revisión en un caso Advanced eDiscovery. La tabla proporciona la siguiente información:
@@ -53,20 +48,20 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Ruta compuesta|CompoundPath|Compound_path|Ruta de acceso legible humana que describe el origen del elemento.|
 |Contenido*|Contenido||Texto extraído del elemento.|
 |Cuerpo de la conversación|ConversationBody||Cuerpo de conversación del elemento.|
-|Id. de conversación|ConversationId|Conversation_ID|Identificador de conversación del mensaje. Para Teams 1:1 y chats de grupo, todos los archivos de transcripción y sus elementos de familia dentro de la misma conversación comparten el mismo identificador de conversación. Para obtener más información, [vea Advanced eDiscovery flujo de trabajo para el contenido de Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
+|Id. de conversación|ConversationId|Conversation_ID|Identificador de conversación del mensaje. Para Teams 1:1 y chats de grupo, todos los archivos de transcripción y sus elementos de familia dentro de la misma conversación comparten el mismo identificador de conversación. Para obtener más información, [vea Advanced eDiscovery flujo de trabajo de contenido en Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
 |Id. de familia de conversación|ConversationFamilyID|ConversationFamilyID|Identificador que identifica los elementos individuales de una conversación, así como los elementos relacionados de la conversación.|
 |Índice de conversación||Conversation_index|Índice de conversación del mensaje.|
 |Nombre de conversación||ConversationName|Este campo depende del tipo de contenido.<br>**Teams chat 1:1:** primeros 40 caracteres del primer mensaje.<br>**Teams chat 1:N:** Nombre del chat de grupo; si no está disponible, los primeros 40 caracteres del primer mensaje.<br>**Teams channel post:** Subpartida publicar título o anuncio; si no está disponible, los primeros 40 caracteres del primer mensaje.|
 |Hora de pdf de conversación|ConversationPdfTime||Fecha en la que se creó la versión PDF de la conversación.|
 |Tiempo de grabación de redacción de conversación|ConversationRedactionBurnTime||Fecha en la que se creó la versión PDF de la conversación para Chat.|
 |Tema de conversación|ConversationTopic||Tema de conversación del elemento.|
-|Tipo de conversación|ConversationType|ConversationType|Tipo de conversación de chat. Los valores son: <br>**Teams 1:1 y chats de grupo y todas las conversaciones Yammer: Grupo**<br>**Teams canales y canales privados:** Canal|
+|Tipo de conversación|ConversationType|ConversationType|Tipo de conversación de chat. Los valores son: <br>**Teams 1:1 y chats de grupo y todas las Yammer: Grupo**<br>**Teams canales y canales privados:** Canal|
 |Contiene mensaje eliminado|ContainsDeletedMessage|ContainsDeletedMessage|Indica si la transcripción del chat incluye un mensaje eliminado|
 |Contiene mensaje editado|ContainsEditedMessage|ContainsEditedMessage|Indica si la transcripción del chat incluye un mensaje editado|
 |Teams de anuncio|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Título de un [anuncio de teams](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
 |||Converted_file_path|Ruta de acceso del archivo de exportación convertido. Solo para uso interno de Microsoft.|
 |Custodio|Custodio|Custodio|Nombre del custodio al que se asoció el elemento.|
-|Fecha|Fecha|Fecha|Date es un campo calculado que depende del tipo de archivo.<p>Correo electrónico: fecha de envío<br>Datos adjuntos de correo electrónico: fecha de última modificación del documento; si no está disponible, la fecha de envío del elemento primario<br>Documentos incrustados: fecha de última modificación del documento; si no está disponible, la última fecha de modificación del elemento primario<br>Documentos SPO (incluye datos adjuntos modernos): SharePoint fecha de última modificación; si no está disponible, la fecha de última modificación de los documentos<br>Documentos no Office 365: Fecha de última modificación<br>Reuniones: fecha de inicio de la reunión<br>VoiceMail: fecha de envío<br>MI: Fecha de envío<br>Teams: Fecha de envío|
+|Fecha|Fecha|Fecha|Date es un campo calculado que depende del tipo de archivo.<p>**Correo** electrónico: fecha de envío<br>**Datos adjuntos de** correo electrónico: fecha de última modificación del documento; si no está disponible, la fecha de envío del elemento primario<br>**Documentos incrustados**: fecha de última modificación del documento; si no está disponible, la última fecha de modificación del elemento primario<br>**Documentos SPO (incluye datos adjuntos modernos):** Fecha de última modificación del documento; si no está disponible, SharePoint última fecha de modificación<br>**Documentos no Office 365**: fecha de última modificación<br>**Reuniones**: fecha de inicio de la reunión<br>**VoiceMail**: fecha de envío<br>**MI**: Fecha de envío<br>**Teams**: Fecha de envío|
 |Comentarios del documento|DocComments|Doc_comments|Comentarios de los metadatos del documento.|
 |Empresa de documentos||Doc_company|Empresa de los metadatos del documento.|
 |Fecha de documento creada|CreatedTime|Doc_date_created|Crear fecha a partir de metadatos del documento.|
@@ -120,13 +115,13 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Clase Item|ItemClass|Item_class|Clase de elemento suministrada por el servidor exchange; por ejemplo, **IPM. Nota**|
 |Última modificación|LastModifiedDate|Doc_date_modified|Fecha de última modificación de los metadatos del documento.|
 |Id. de carga|LoadId|Load_ID|Identificador del conjunto de carga en el que se agregó el elemento a un conjunto de revisión.|
-|Ubicación|Ubicación|Ubicación|Cadena que indica el tipo de ubicación de la que se han origen los documentos.<p>**Datos importados**: datos no Office 365 datos<br>**Teams**- Microsoft Teams<br>**Exchange**: Exchange buzones de correo<br>**SharePoint**: SharePoint sitios<br>**OneDrive**: OneDrive cuentas|
+|Ubicación|Ubicación|Ubicación|Cadena que indica el tipo de ubicación de la que se han origen los documentos.<p>**Datos importados**: datos no Office 365 datos<br>**Teams**: Microsoft Teams<br>**Exchange**: Exchange buzones de correo<br>**SharePoint**: SharePoint web<br>**OneDrive**: OneDrive cuentas|
 |Nombre de ubicación|LocationName|Location_name|Cadena que identifica el origen del elemento. Para Exchange, esta será la dirección SMTP del buzón; para SharePoint y OneDrive, la dirección URL de la colección de sitios.|
 |||Marked_as_pivot|Este archivo es el elemento dinámico de un conjunto casi duplicado.|
 |Marcado como representante|MarkAsRepresentative||Un documento de cada conjunto de duplicados exactos se marca como representantes.|
 |Fecha de finalización de la reunión|MeetingEndDate|Meeting_end_date|Fecha de finalización de la reunión para reuniones.|
 |Fecha de inicio de la reunión|MeetingStartDate|Meeting_start_date|Fecha de inicio de la reunión para reuniones.|
-|Tipo de mensaje|MessageKind|Message_kind|Tipo de mensaje que se debe buscar. Valores posibles: **<p><br><br><br><br>los documentos de contactos envía faxes <br><br>externos de datos externos <br><br>a reuniones de microsoftteams** (devuelve elementos de chats, reuniones y llamadas en Microsoft Teams) **<br><br><br>notas que publica correo de voz de tareas rssfeeds <br><br>**|
+|Tipo de mensaje|MessageKind|Message_kind|Tipo de mensaje que se debe buscar. Valores posibles: **<p><br>contacts docs <br>email <br>externaldata <br>faxes im <br>journals meetings <br><br>microsoftteams (devuelve elementos de chats, reuniones y llamadas en Microsoft Teams) notas publicaciones <br>** **rssfeeds <br>tasks <br>voicemail<br><br><br>**|
 |Identificador principal de datos adjuntos modernos||ModernAttachment_ParentId|El identificador inmutable del elemento primario del documento.|
 |Extensión nativa|NativeExtension|Native_extension|Extensión nativa del elemento.|
 |Nombre de archivo nativo|NativeFileName|Native_file_name|Nombre de archivo nativo del elemento.|

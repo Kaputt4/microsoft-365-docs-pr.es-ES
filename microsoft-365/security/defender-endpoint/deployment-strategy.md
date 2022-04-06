@@ -1,7 +1,7 @@
 ---
 title: Planee su cuenta de Microsoft Defender para punto de conexión
 description: Seleccionar la mejor estrategia de implementación de Microsoft Defender para endpoint para su entorno
-keywords: deploy, plan, deployment strategy, cloud native, management, on prem, evaluation, onboarding, local, group policy, gp, endpoint manager, mem
+keywords: 'deploy, plan, deployment strategy, cloud native, management, on prem, evaluation, onboarding, local, group policy, gp, endpoint manager, mem'
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -13,17 +13,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365-initiative-defender-endpoint
+  - M365-security-compliance
+  - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cfdbb84cfcc2cda08572709adb3b13db83e319fa
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766469"
 ---
+
 # <a name="plan-your-microsoft-defender-for-endpoint-deployment"></a>Planee su cuenta de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -38,7 +33,7 @@ Planee la implementación de Microsoft Defender para puntos de conexión para qu
 
 Esta solución proporciona instrucciones sobre cómo identificar la arquitectura del entorno, seleccionar el tipo de herramienta de implementación que mejor se adapte a sus necesidades y instrucciones sobre cómo configurar las capacidades.
 
-![Imagen del flujo de implementación.](images/deployment-guide-plan.png)
+:::image type="content" source="images/deployment-guide-plan.png" alt-text="Flujo de implementación" lightbox="images/deployment-guide-plan.png":::
 
 ## <a name="step-1-identify-architecture"></a>Paso 1: Identificar arquitectura
 
@@ -50,7 +45,7 @@ Use el siguiente material para seleccionar la arquitectura de Defender for Endpo
 
 | Item | Descripción |
 |:-----|:-----|
-|[![Imagen digital de la estrategia de implementación de Defender for Endpoint.](images/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li>
+|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="La estrategia para la implementación de Defender for Endpoint" lightbox="images/mde-deployment-strategy.png":::](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li>
 
 ## <a name="step-2-select-deployment-method"></a>Paso 2: Seleccionar método de implementación
 
@@ -76,7 +71,7 @@ En la tabla siguiente se enumeran los puntos de conexión admitidos y la herrami
 
 Después de incorporar puntos de conexión, configure las capacidades de seguridad en Defender para endpoint para que pueda maximizar la sólida protección de seguridad disponible en el conjunto de servidores. Funcionalidades que incluye:
 
-- Detección y respuesta de puntos de conexión
+- EDR
 - Protección de última generación
 - Reducción de la superficie expuesta a ataques
 

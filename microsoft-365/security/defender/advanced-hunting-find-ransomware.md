@@ -1,7 +1,7 @@
 ---
 title: Buscar ransomware con la búsqueda avanzada de amenazas
 description: Usa la búsqueda avanzada para localizar dispositivos potencialmente afectados por ransomware.
-keywords: búsqueda avanzada, ransomware, búsqueda de amenazas, búsqueda de amenazas cibernéticas, búsqueda, consulta, telemetría, Microsoft 365, Microsoft 365 Defender
+keywords: 'búsqueda avanzada, ransomware, búsqueda de amenazas, búsqueda de amenazas cibernéticas, búsqueda, consulta, telemetría, Microsoft 365, Microsoft 365 Defender'
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -9,25 +9,20 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
-- m365solution-ransomware
+  - M365-security-compliance
+  - m365initiative-m365-defender
+  - m365solution-ransomware
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 79dee9b6750e21d9b2482d4a0482d87d7fc7434b
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61220937"
 ---
+
 # <a name="hunt-for-ransomware"></a>Buscar ransomware
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "61220937"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Ransomware has rapidly evolved from being simple commodity malware affecting individual computer users to an enterprise threat that is severely impacting industries and government institutions. Aunque [Microsoft 365 Defender](microsoft-365-defender.md) proporciona muchas funcionalidades que detectan y bloquean las actividades de intrusión asociadas y ransomware, realizar comprobaciones proactivas de signos de peligro puede ayudar a mantener la red protegida.
+Ransomware has rapidly evolved from being simple commodity malware affecting individual computer users to an enterprise threat that is severely impacting industries and government institutions. Aunque [Microsoft 365 Defender](microsoft-365-defender.md) proporciona muchas funcionalidades que detectan y bloquean las actividades de intrusión asociadas y ransomware, la realización de comprobaciones proactivas de signos de peligro puede ayudar a proteger la red.
 
 > [Leer sobre ransomware operado por humanos](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
@@ -57,7 +52,7 @@ Los investigadores de seguridad de Microsoft han observado varios artefactos com
 ## <a name="check-for-individual-signs-of-ransomware-activity"></a>Comprobar si hay signos individuales de actividad ransomware
 Muchas actividades que constituyen el comportamiento ransomware, incluidas las actividades descritas en la sección anterior, pueden ser benignas. Al usar las siguientes consultas para localizar ransomware, ejecute más de una consulta para comprobar si los mismos dispositivos muestran diversos signos de posible actividad ransomware.
 
-### <a name="stopping-multiple-processes-using-_taskkillexe_"></a>Detener varios procesos mediante _taskkill.exe_
+### <a name="stopping-multiple-processes-using-_taskkillexe_"></a>Detención de varios procesos _mediantetaskkill.exe_
 Esta consulta busca intentos de detener al menos 10 procesos independientes mediante la _utilidadtaskkill.exe_ datos. [Ejecutar consulta](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
@@ -70,7 +65,7 @@ DeviceProcessEvents
 ```
   
 ### <a name="stopping-processes-using-_net-stop_"></a>Detención de procesos mediante _la detención neta_
-Esta consulta busca intentos de detener al menos 10 procesos independientes mediante el _comando net stop._ [Ejecutar consulta](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RQUvDUBCE5yz0P4ScUijWereXVkGQIti7aA1pqakhL7VVxN_ebzc1NBChPLJv2Z2ZN5sdaqhId1ppozeyF1WcVLkK7kCl0gcx-F2QFSrJFmACJ3XMlmgKGfmGWnXC6OlCU2qfIIz12OLfUk_h2FuG_IG505JayRdpDit3bIW33B2M3WeGSqIRrvudTJvpnWzmPKvc6JcYHx1eEvd8savV07e9TchzTt198AlNZ0kluNLfjHHjIPAvak4J_tvx9XtPR6ypbn1icxShvGgqyVkO-hrAm7VUrRcaTWOs6T_7hs7XjfSqL-Lpvu5BDLxjqKRjI9a9Juvew__T2x5HutIB3T1qt4QCAAA&runQuery=true&timeRangeId=week)
+Esta consulta busca intentos de detener al menos 10 procesos independientes mediante el _comando net stop_ . [Ejecutar consulta](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RQUvDUBCE5yz0P4ScUijWereXVkGQIti7aA1pqakhL7VVxN_ebzc1NBChPLJv2Z2ZN5sdaqhId1ppozeyF1WcVLkK7kCl0gcx-F2QFSrJFmACJ3XMlmgKGfmGWnXC6OlCU2qfIIz12OLfUk_h2FuG_IG505JayRdpDit3bIW33B2M3WeGSqIRrvudTJvpnWzmPKvc6JcYHx1eEvd8savV07e9TchzTt198AlNZ0kluNLfjHHjIPAvak4J_tvx9XtPR6ypbn1icxShvGgqyVkO-hrAm7VUrRcaTWOs6T_7hs7XjfSqL-Lpvu5BDLxjqKRjI9a9Juvew__T2x5HutIB3T1qt4QCAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Find attempts to stop processes using net stop
@@ -81,7 +76,7 @@ DeviceProcessEvents
 | where netStopCount > 10
 ```
 ### <a name="deletion-of-data-on-multiple-drives-using-_cipherexe_"></a>Eliminación de datos en varias unidades _mediantecipher.exe_
-Esta consulta busca intentos de eliminar datos en varias unidades mediante _cipher.exe_. Esta actividad suele realizarse mediante ransomware para evitar la recuperación de datos después del cifrado. [Ejecutar consulta](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI1SXUvDQBCcZ8H_cOQpgWLoD7AvVUEo4oPvElO1pblUcmn9QPztzk6TEuEsIdzdZndndm73cuRwWGDLb0PrhWfDs8Qab1jhmX8X3D-4HJbcK66W0Rqv8hT8K4RsiPW0PHbMasVQdbiGf3vaAec4wxWtPT0lz3vhSsUCrpVVE33I_Cb6vdNhTA9EeeVaVc8KDjOugmq2SDFlrSyKvCHS1NwJZ55L_HBPondNGDGWXP2JdyMnv927UnXHWwf6l4MunupXTOPfXszVT8_smriFOCxrRU-QclOQDLgCNRwQ1u8vZc8H2o1xp-7a7U1NefSko6pnmKjakNVi4chpiA39j-rGeF6HJ3xyH76NW2ZMFLGsNDJ9i05pZSPmVdDfq-jncfqtOuU5zSuQz6Zq92w7Hfbm-9cUm-d_vZ9J9S81O2KIfAMAAA&runQuery=true&timeRangeId=week)
+Esta consulta busca intentos de eliminar datos en varias unidades _mediantecipher.exe_. Esta actividad suele realizarse mediante ransomware para evitar la recuperación de datos después del cifrado. [Ejecutar consulta](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI1SXUvDQBCcZ8H_cOQpgWLoD7AvVUEo4oPvElO1pblUcmn9QPztzk6TEuEsIdzdZndndm73cuRwWGDLb0PrhWfDs8Qab1jhmX8X3D-4HJbcK66W0Rqv8hT8K4RsiPW0PHbMasVQdbiGf3vaAec4wxWtPT0lz3vhSsUCrpVVE33I_Cb6vdNhTA9EeeVaVc8KDjOugmq2SDFlrSyKvCHS1NwJZ55L_HBPondNGDGWXP2JdyMnv927UnXHWwf6l4MunupXTOPfXszVT8_smriFOCxrRU-QclOQDLgCNRwQ1u8vZc8H2o1xp-7a7U1NefSko6pnmKjakNVi4chpiA39j-rGeF6HJ3xyH76NW2ZMFLGsNDJ9i05pZSPmVdDfq-jncfqtOuU5zSuQz6Zq92w7Hfbm-9cUm-d_vZ9J9S81O2KIfAMAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for cipher.exe deleting data from multiple drives
@@ -109,7 +104,7 @@ DeviceProcessEvents
 ```
 
 ### <a name="turning-off-services-using-_scexe_"></a>Desactivar servicios mediante _sc.exe_
-Esta consulta busca intentos de desactivar al menos 10 servicios existentes mediante _sc.exe_. [Ejecutar consulta](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAKWST2vCQBDF31nodwg5RZCqhx7bi3ooeCjovaQxraIxxfU_fvj-ZoiiEIqlhM3Ozrz3ZnZm22or0lAl3xzrk33FHpTpUbn2rEgTzfCk-tACa6kvR-Qgt5wzrKAHNdTHOnveiJZVLGiAP4e5rpAnFHaauoZlGMMqHLsmT6FvfC-slFylEnWpoVnLvM3Twy74UnJNuJdVa6gpnsAe-81iVzbE3_kZiCV9mlHZf3Sue5pzii-3C9pU3BWYo_NGKPdvGJZh4x2N9Owzyi6e5K5qmmrVKg_9dNY11hzvu0_8fu0ItQP_6zfxCqLlEUMlNVO36BNW_ax_74K9l646-gFts39I1AIAAA&runQuery=true&timeRangeId=week)
+Esta consulta busca intentos de desactivar al menos 10 servicios existentes _mediantesc.exe_. [Ejecutar consulta](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAKWST2vCQBDF31nodwg5RZCqhx7bi3ooeCjovaQxraIxxfU_fvj-ZoiiEIqlhM3Ozrz3ZnZm22or0lAl3xzrk33FHpTpUbn2rEgTzfCk-tACa6kvR-Qgt5wzrKAHNdTHOnveiJZVLGiAP4e5rpAnFHaauoZlGMMqHLsmT6FvfC-slFylEnWpoVnLvM3Twy74UnJNuJdVa6gpnsAe-81iVzbE3_kZiCV9mlHZf3Sue5pzii-3C9pU3BWYo_NGKPdvGJZh4x2N9Owzyi6e5K5qmmrVKg_9dNY11hzvu0_8fu0ItQP_6zfxCqLlEUMlNVO36BNW_ax_74K9l646-gFts39I1AIAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for sc.exe disabling services
@@ -137,7 +132,7 @@ and ProcessCommandLine has 'disable'
 ```
 
 ### <a name="backup-deletion"></a>Eliminación de copia de seguridad
-Esta consulta identifica el uso de _wmic.exe_ para eliminar instantáneas de instantáneas antes del cifrado. [Ejecutar consulta](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
+Esta consulta identifica el _uso dewmic.exe_ para eliminar instantáneas de instantáneas antes del cifrado. [Ejecutar consulta](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 DeviceProcessEvents
@@ -230,17 +225,17 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 ### <a name="understand-and-tweak-the-query-results"></a>Comprender y ajustar los resultados de la consulta
 La consulta consolidada devuelve los siguientes resultados:
 
-- **DeviceId:** identifica el dispositivo afectado 
-- **TimeStamp:** primera vez que se observó cualquier signo de actividad ransomware en el dispositivo
-- **Signos específicos de actividad:** el recuento de cada signo que se muestra en varias columnas, como _BcdEdit_ o _FsUtil_
-- **TotalEvidenceCount:** número de signos observados
-- **UniqueEvidenceCount:** número de tipos de signos observados
+- **DeviceId**: identifica el dispositivo afectado 
+- **TimeStamp**: primera vez que se observó cualquier signo de actividad ransomware en el dispositivo
+- **Signos específicos de actividad**: el recuento de cada signo que se muestra en varias columnas, como _BcdEdit_ o _FsUtil_
+- **TotalEvidenceCount**: número de signos observados
+- **UniqueEvidenceCount**: número de tipos de signos observados
 
-:::image type="content" source="../../media/advanced-hunting-ransomware-query.png" alt-text="Un ejemplo de una consulta consolidada para una actividad ransomware en el portal Microsoft 365 Defender web":::
+:::image type="content" source="../../media/advanced-hunting-ransomware-query.png" alt-text="Un ejemplo de una consulta consolidada para una actividad ransomware en el portal Microsoft 365 Defender web" lightbox="../../media/advanced-hunting-ransomware-query.png":::
 
 *Resultados de consulta que muestran dispositivos afectados y recuentos de diversos signos de actividad ransomware*
 
-De forma predeterminada, el resultado de la consulta enumera solo los dispositivos que tienen más de dos tipos de actividad ransomware. Para ver todos los dispositivos con cualquier signo de actividad ransomware, modifique el siguiente operador y `where` establezca el número en cero (0). Para ver menos dispositivos, establece un número más alto. 
+De forma predeterminada, el resultado de la consulta enumera solo los dispositivos que tienen más de dos tipos de actividad ransomware. Para ver todos los dispositivos con cualquier signo de actividad ransomware, modifique el siguiente `where` operador y establezca el número en cero (0). Para ver menos dispositivos, establece un número más alto. 
 
 ```kusto
 | where UniqueEvidenceCount > 2
@@ -254,7 +249,7 @@ De forma predeterminada, el resultado de la consulta enumera solo los dispositiv
 - [Entender el esquema](advanced-hunting-schema-tables.md)
 - [Aplicar procedimientos recomendados de consulta](advanced-hunting-best-practices.md)
 
-## <a name="additional-ransomware-resources"></a>Recursos adicionales de ransomware
+## <a name="more-ransomware-resources"></a>Más recursos ransomware
 
 Información clave de Microsoft:
 
@@ -279,7 +274,7 @@ Microsoft Azure:
 - [Defensas de Azure para los ataques de ransomware](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Maximizar la resistencia de ransomware con Azure y Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Plan de restauración y copia de seguridad para la protección contra ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
-- [Ayudar a proteger contra ransomware con Microsoft Azure copia de seguridad](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vídeo de 26 minutos)
+- [Ayuda para la protección contra ransomware con Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (vídeo de 26 minutos)
 - [Recuperación de una identidad en peligro](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Detección avanzada de ataques de varias fases en Microsoft Sentinel](/azure/sentinel/fusion#ransomware)
 - [Detección de difusión para ransomware en Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
@@ -290,7 +285,7 @@ Microsoft Defender for Cloud Apps:
 
 Entradas de blog del equipo de Seguridad de Microsoft:
 
-- [3 pasos para evitar y recuperarse del ransomware (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [Tres pasos para evitar y recuperarse de ransomware (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
 - [Una guía para combatir el ransomware operado por personas: Parte 1 (septiembre de 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
 
   Pasos clave sobre cómo el equipo de detección y respuesta de Microsoft (DART) lleva a cabo investigaciones de incidentes de ransomware.

@@ -1,7 +1,7 @@
 ---
 title: 'Informe de dispositivos vulnerables: Administración de amenazas y vulnerabilidades'
 description: Un informe que muestra tendencias de dispositivos vulnerables y estadísticas actuales. El objetivo es que comprendas la respiración y el alcance de la exposición del dispositivo.
-keywords: Microsoft Defender para dispositivos vulnerables de Endpoint-tvm, Microsoft Defender para endpoint, tvm, reducir la exposición a la vulnerabilidad & amenazas, reducir la amenaza y la vulnerabilidad, supervisar la configuración de seguridad
+keywords: 'Microsoft Defender para dispositivos vulnerables de Endpoint-tvm, Microsoft Defender para endpoint, tvm, reducir la exposición a la vulnerabilidad & amenazas, reducir la amenaza y la vulnerabilidad, supervisar la configuración de seguridad'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,17 +12,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 50b30d38a42aab37c295a9f65bd070dd9613927c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312682"
 ---
+
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>Informe de dispositivos vulnerables: Administración de amenazas y vulnerabilidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -52,31 +47,31 @@ Hay dos columnas:
 
 Cada dispositivo se cuenta solo una vez de acuerdo con la vulnerabilidad más grave encontrada en ese dispositivo.
 
-:::image type="content" alt-text="Un gráfico de los niveles actuales de gravedad de vulnerabilidad del dispositivo y un gráfico que muestra los niveles con el tiempo." source="images/tvm-report-severity.png" lightbox="images/tvm-report-severity.png":::
+:::image type="content" source="images/tvm-report-severity.png" alt-text=" Los gráficos que muestran los niveles de gravedad de vulnerabilidad del dispositivo actuales y los niveles con el tiempo." lightbox="images/tvm-report-severity.png":::
 
 ## <a name="exploit-availability-graphs"></a>Gráficos de disponibilidad de vulnerabilidades
 
 Cada dispositivo se cuenta solo una vez en función del nivel más alto de vulnerabilidad conocida.
 
-:::image type="content" alt-text="Un gráfico de disponibilidad actual de vulnerabilidades de seguridad del dispositivo y un gráfico que muestra la disponibilidad con el tiempo." source="images/tvm-report-exploit-availability.png" lightbox="images/tvm-report-exploit-availability.png":::
+:::image type="content" source="images/tvm-report-exploit-availability.png" alt-text="Los gráficos que muestran la disponibilidad actual de vulnerabilidades de seguridad del dispositivo y la disponibilidad con el tiempo" lightbox="images/tvm-report-exploit-availability.png":::
 
 ## <a name="vulnerability-age-graphs"></a>Gráficos de antigüedad de vulnerabilidad
 
 Cada dispositivo se cuenta solo una vez en la fecha de publicación de vulnerabilidad más antigua. Las vulnerabilidades más antiguas tienen una mayor probabilidad de ser aprovechadas.
 
-:::image type="content" alt-text="Un gráfico de la antigüedad de vulnerabilidad del dispositivo actual y un gráfico que muestra la antigüedad con el tiempo." source="images/tvm-report-age.png" lightbox="images/tvm-report-age.png":::
+:::image type="content" source="images/tvm-report-age.png" alt-text="Los gráficos que muestran la antigüedad de vulnerabilidad del dispositivo actual y la antigüedad con el tiempo" lightbox="images/tvm-report-age.png":::
 
 ## <a name="vulnerable-devices-by-operating-system-platform-graphs"></a>Dispositivos vulnerables por gráficos de plataforma de sistema operativo
 
 El número de dispositivos en cada sistema operativo que se exponen debido a vulnerabilidades de software.
 
-:::image type="content" alt-text="Un gráfico de dispositivos vulnerables actuales por plataforma del sistema operativo y un gráfico que muestra los dispositivos vulnerables de las plataformas del sistema operativo a lo largo del tiempo." source="images/tvm-report-os.png" lightbox="images/tvm-report-os.png":::
+:::image type="content" source="images/tvm-report-os.png" alt-text="Gráficos que muestran los dispositivos vulnerables actuales de la plataforma del sistema operativo y los dispositivos vulnerables de las plataformas del sistema operativo con el tiempo" lightbox="images/tvm-report-os.png":::
 
 ## <a name="vulnerable-devices-by-windows-version-graphs"></a>Dispositivos vulnerables Windows gráficos de versión
 
 Número de dispositivos en cada Windows 10 o Windows 11 que se exponen debido a aplicaciones vulnerables u sistema operativo.
 
-:::image type="content" alt-text="Un gráfico de dispositivos vulnerables actuales por Windows 10 versión y un gráfico que muestra los dispositivos vulnerables Windows 10 versión con el tiempo." source="images/tvm-report-version.png" lightbox="images/tvm-report-version.png":::
+:::image type="content" source="images/tvm-report-version.png" alt-text="Los gráficos que muestran los dispositivos vulnerables actuales Windows 10 versión y los dispositivos vulnerables Windows 10 versión con el tiempo" lightbox="images/tvm-report-version.png":::
 
 ## <a name="related-topics"></a>Temas relacionados
 

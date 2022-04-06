@@ -1,7 +1,7 @@
 ---
 title: Información sobre el archivado de expansión automática
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: cabailey
 author: cabailey
 manager: laurawi
@@ -10,20 +10,15 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+  - Strat_O365_IP
+  - M365-security-compliance
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
-description: Obtenga información sobre el archivado de expansión automática, que proporciona almacenamiento de archivo adicional para buzones de Exchange Online.
-ms.openlocfilehash: 1b4b8d81868cc97fc8e8faf5b0dc449e4c07a868
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328867"
+description: 'Obtenga información sobre el archivado de expansión automática, que proporciona almacenamiento de archivo adicional para buzones de Exchange Online.'
 ---
+
 # <a name="learn-about-auto-expanding-archiving"></a>Información sobre el archivado de expansión automática
 
 En Office 365, los buzones de archivo proporcionan a los usuarios espacio de almacenamiento de buzones de correo adicional. Una vez habilitado el buzón de archivo de un usuario, hay disponible hasta 100 GB de almacenamiento adicional. En el pasado, cuando se alcanzó la cuota de almacenamiento de 100 GB, las organizaciones tuvieron que ponerse en contacto con Microsoft para solicitar espacio de almacenamiento adicional para un buzón de archivo. Ya no es así.
@@ -79,6 +74,10 @@ Las capturas de pantalla siguientes muestran una lista de carpetas antes y despu
 ## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Requisitos de Outlook para acceder a los elementos de un archivo expandido automáticamente
 
 Para acceder a los mensajes que se almacenan en un archivo expandido automáticamente, los usuarios tienen que usar uno de los siguientes clientes de Outlook:
+
+- Outlook como parte de Aplicaciones de Microsoft 365 para empresas (anteriormente denominado Office 365 ProPlus)
+
+- Outlook como parte de Aplicaciones de Microsoft 365 para negocios (anteriormente denominado Office 365 Empresa)
 
 - Outlook 2016 o Outlook 2019 para Windows
 

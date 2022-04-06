@@ -1,7 +1,7 @@
 ---
 title: Puntuación de exposición en Administración de amenazas y vulnerabilidades
 description: La Administración de amenazas y vulnerabilidades de exposición refleja lo vulnerable que es su organización a las amenazas de ciberseguridad.
-keywords: puntuación de exposición, puntuación de exposición de Microsoft Defender para endpoint, puntuación de exposición de Microsoft Defender para endpoint tvm, puntuación de exposición de la organización, puntuación de exposición de la organización tvm, Administración de amenazas y vulnerabilidades, Microsoft Defender para endpoint
+keywords: 'puntuación de exposición, puntuación de exposición de Microsoft Defender para endpoint, puntuación de exposición de Microsoft Defender para endpoint tvm, puntuación de exposición de la organización, puntuación de exposición de la organización tvm, Administración de amenazas y vulnerabilidades, Microsoft Defender para endpoint'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,16 +12,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+  - m365-security-compliance
+  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a82d49e7ac6f87847e7ac61cc4451ad63c2bdeef
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168395"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>Puntuación de exposición: Administración de amenazas y vulnerabilidades
 
@@ -29,8 +23,8 @@ ms.locfileid: "61168395"
 
 **Se aplica a:**
 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -43,7 +37,7 @@ La puntuación de exposición está visible en el panel [de amenazas y administr
 
 La tarjeta te ofrece una vista de alto nivel de la tendencia de puntuación de exposición con el tiempo. Los picos del gráfico le dan una indicación visual de una alta exposición a amenazas de ciberseguridad que puede investigar más a fondo.
 
-![Tarjeta de puntuación de exposición.](images/tvm_exp_score.png)
+:::image type="content" source="images/tvm_exp_score.png" alt-text="Cuadro de mandos exposición" lightbox="images/tvm_exp_score.png":::
 
 ## <a name="how-it-works"></a>Funcionamiento
 
@@ -53,11 +47,11 @@ La puntuación de exposición se divide en los siguientes niveles:
 - 30-69: puntuación de exposición media
 - 70-100: puntuación de exposición alta
 
-Puede corregir los problemas en función de las recomendaciones de seguridad prioritarias [para](tvm-security-recommendation.md) reducir la puntuación de exposición. Cada software tiene debilidades que se transforman en recomendaciones y se priorizan en función del riesgo para la organización.
+Puede corregir los problemas en función de las recomendaciones de [seguridad](tvm-security-recommendation.md) prioritarias para reducir la puntuación de exposición. Cada software tiene debilidades que se transforman en recomendaciones y se priorizan en función del riesgo para la organización.
 
 ## <a name="reduce-your-threat-and-vulnerability-exposure"></a>Reducir la exposición a amenazas y vulnerabilidades
 
-Reduzca la exposición a amenazas y vulnerabilidades mediante la corrección de [recomendaciones de seguridad](tvm-security-recommendation.md). Para obtener el mayor impacto en la puntuación de exposición, corrija las recomendaciones de seguridad principales, que se pueden ver en el panel de Administración de amenazas y vulnerabilidades [exposición.](tvm-dashboard-insights.md)
+Reduzca la exposición a amenazas y vulnerabilidades mediante la corrección de [recomendaciones de seguridad](tvm-security-recommendation.md). Para obtener el mayor impacto en la puntuación de exposición, corrija las recomendaciones de seguridad principales, que se pueden ver en el [panel Administración de amenazas y vulnerabilidades exposición](tvm-dashboard-insights.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

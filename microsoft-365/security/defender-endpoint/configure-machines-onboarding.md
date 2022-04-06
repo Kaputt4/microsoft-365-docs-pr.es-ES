@@ -1,7 +1,7 @@
 ---
 title: Obtener dispositivos incorporados a Microsoft Defender para endpoint
 description: Realice un seguimiento de la incorporación de dispositivos administrados por Intune a Microsoft Defender para Endpoint y aumente la velocidad de incorporación.
-keywords: onboard, administración de Intune, Microsoft Defender para endpoint, Microsoft Defender, Windows Defender, administración de configuración
+keywords: 'onboard, administración de Intune, Microsoft Defender para Endpoint, Microsoft Defender, Windows Defender, administración de configuración'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,20 +14,15 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ef0f461bef452336052018a26970bad94400fa71
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168275"
 ---
+
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Obtener dispositivos incorporados a Microsoft Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
@@ -41,9 +36,9 @@ Antes de poder realizar un seguimiento y administrar la incorporación de dispos
 
 ## <a name="discover-and-track-unprotected-devices"></a>Detectar y realizar un seguimiento de dispositivos sin protección
 
-La  tarjeta de incorporación proporciona una descripción general de alto nivel de la tasa de incorporación comparando el número de dispositivos Windows que realmente se han incorporado a Defender for Endpoint con el número total de dispositivos Windows administrados por Intune.
+La **tarjeta** de incorporación proporciona una descripción general de alto nivel de la tasa de incorporación comparando el número de dispositivos de Windows que realmente se han incorporado a Defender for Endpoint con el número total de dispositivos Windows administrados por Intune.
 
-![Tarjeta de incorporación de administración de configuración de dispositivos.](images/secconmgmt_onboarding_card.png)
+:::image type="content" source="images/secconmgmt_onboarding_card.png" alt-text="La tarjeta de incorporación de administración de configuración de dispositivos" lightbox="images/secconmgmt_onboarding_card.png":::
 
 *Tarjeta que muestra dispositivos incorporados en comparación con el número total de dispositivos administrados Windows Intune*
 
@@ -54,24 +49,24 @@ La  tarjeta de incorporación proporciona una descripción general de alto nivel
 
 Defender for Endpoint proporciona varias opciones convenientes para [la incorporación Windows dispositivos](onboard-configure.md). Sin embargo, en el caso de los dispositivos administrados por Intune, puede aprovechar los perfiles de Intune para implementar cómodamente el sensor Defender for Endpoint para seleccionar dispositivos, incorporando estos dispositivos de forma eficaz al servicio.
 
-En la **tarjeta incorporación,** selecciona **Incorporar más dispositivos** para crear y asignar un perfil en Intune. El vínculo te lleva a la página de cumplimiento del dispositivo en Intune, que proporciona una introducción similar al estado de incorporación.
+En la **tarjeta incorporación** , selecciona **Incorporar más dispositivos** para crear y asignar un perfil en Intune. El vínculo te lleva a la página de cumplimiento del dispositivo en Intune, que proporciona una introducción similar al estado de incorporación.
 
-![Página de cumplimiento de dispositivos de Microsoft Defender para endpoint en la administración de dispositivos de Intune.](images/secconmgmt_onboarding_1deviceconfprofile.png)
+:::image type="content" source="images/secconmgmt_onboarding_1deviceconfprofile.png" alt-text="Página de cumplimiento de dispositivos de Microsoft Defender para Endpoint en la administración de dispositivos de Intune" lightbox="images/secconmgmt_onboarding_1deviceconfprofile.png":::
 
 *Página de cumplimiento de dispositivos de Microsoft Defender para endpoint en la administración de dispositivos de Intune*
 
 > [!TIP]
-> Como alternativa, puede navegar a la página De defender para el cumplimiento de la incorporación de puntos de conexión en el portal de [Microsoft Azure](https://portal.azure.com/) desde Todos los servicios > Intune > Cumplimiento de dispositivos > ATP de **Microsoft Defender.**
+> Como alternativa, puede navegar a la página De defender para el cumplimiento de la incorporación de puntos de conexión en el [portal de Microsoft Azure](https://portal.azure.com/) desde Todos los servicios **> Intune > Cumplimiento de dispositivos > ATP de Microsoft Defender**.
 
 > [!NOTE]
-> Si quieres ver los datos de dispositivo más actualizados, haz clic en Lista de **dispositivos sin sensor ATP**.
+> Si quieres ver los datos de dispositivo más actualizados, haz clic en **Lista de dispositivos sin sensor ATP**.
 
 Desde la página de cumplimiento del dispositivo, crea un perfil de configuración específicamente para la implementación del sensor Defender for Endpoint y asigna ese perfil a los dispositivos que quieras incorporar. Para ello, puede:
 
 - Selecciona **Crear un perfil de configuración de dispositivo para configurar el sensor DE ATP** para empezar con un perfil de configuración de dispositivo predefinido.
 - Crea el perfil de configuración del dispositivo desde cero.
 
-Para obtener más información, [lea acerca del uso de perfiles](/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)de configuración de dispositivos de Intune para incorporar dispositivos a Defender para endpoint .
+Para obtener más información, [lea acerca del uso de perfiles de configuración de dispositivos de Intune para incorporar dispositivos a Defender for Endpoint](/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile).
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 

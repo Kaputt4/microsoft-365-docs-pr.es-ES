@@ -1,7 +1,7 @@
 ---
 title: Marcas de eventos de escala de tiempo de dispositivo de Microsoft Defender para punto de conexión
 description: Usar Microsoft Defender para las marcas de eventos de escala de tiempo del dispositivo de punto de conexión para
-keywords: Defender para la escala de tiempo del dispositivo de punto de conexión, marcas de evento
+keywords: 'Defender para la escala de tiempo del dispositivo de punto de conexión, marcas de evento'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,13 +14,8 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e6661a03043095ed2ae1ece194179d26476a703f
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074779"
 ---
+
 # <a name="microsoft-defender-for-endpoint-device-timeline-event-flags"></a>Marcas de eventos de escala de tiempo de dispositivo de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -47,23 +42,16 @@ Al navegar por la escala de tiempo del dispositivo, puedes buscar y filtrar even
 ## <a name="flag-an-event"></a>Marcar un evento
 
 1. Buscar el evento que desea marcar
-2. Haga clic en el icono de marca de la columna Marca.
 
-   ![Imagen de la marca de escala de tiempo del dispositivo.](images/device-flags.png)
+2. Haga clic en el icono de marca de la columna Marca. 
 
-3. Haga clic en el icono de marca de la columna Marca.
-
-   ![Imagen de la marca de escala de tiempo del dispositivo](images/device-flags.png)
+:::image type="content" source="images/device-flags.png" alt-text="La marca de escala de tiempo del dispositivo" lightbox="images/device-flags.png":::
 
 ## <a name="view-flagged-events"></a>Ver eventos marcados
 
 1. En la sección **Filtros de** escala de tiempo, habilite **Eventos marcados**.
 2. Haga clic en **Aplicar**. Solo se muestran los eventos marcados.
 
-   Puede aplicar filtros adicionales haciendo clic en la barra de horas. Solo se mostrarán los eventos anteriores al evento marcado.  
+Puede aplicar filtros adicionales haciendo clic en la barra de horas. Solo se mostrarán los eventos anteriores al evento marcado.  
 
-   ![Imagen de la marca de escala de tiempo del dispositivo con el filtro en.](images/device-flag-filter.png)
-
-3. Haga clic en **Aplicar**. Solo se muestran los eventos marcados. Puede aplicar filtros adicionales haciendo clic en la barra de horas. Solo se mostrarán los eventos anteriores al evento marcado.
-
-   ![Imagen de la marca de escala de tiempo del dispositivo con el filtro en](images/device-flag-filter.png)
+:::image type="content" source="images/device-flag-filter.png" alt-text="La marca de escala de tiempo del dispositivo con el filtro encendido" lightbox="images/device-flag-filter.png":::

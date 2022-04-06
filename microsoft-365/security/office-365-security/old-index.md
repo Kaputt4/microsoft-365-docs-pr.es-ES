@@ -1,5 +1,5 @@
 ---
-title: Office 365 de seguridad, Microsoft Defender para Office 365, EOP, MSDO
+title: 'Office 365 de seguridad, Microsoft Defender para Office 365, EOP, MSDO'
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -8,21 +8,16 @@ audience: Admin
 ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
-- MET150
-- MOE150
+  - MET150
+  - MOE150
 ms.collection:
-- M365-security-compliance
-- m365initiative-defender-office365
-description: Seguridad en Office 365, desde EOP a Defender para Office 365 Planes 1 y 2, Configuraciones de seguridad estándar vs. estrictas y mucho más. Comprenda lo que tiene y aprenda a proteger sus propiedades.
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: 'Seguridad en Office 365, desde EOP a Defender para Office 365 Planes 1 y 2, Configuraciones de seguridad estándar vs. estrictas y mucho más. Comprenda lo que tiene y aprenda a proteger sus propiedades.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cbcdf83423b8a6d4e40f34a96282059b44c9df3e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110360"
 ---
+
 # <a name="office-365-security"></a>Seguridad de Office 365
 
 
@@ -54,7 +49,6 @@ Puede que esté acostumbrado a ver estos tres componentes de esta manera:
 |EOP|Microsoft Defender para Office 365 P1|Microsoft Defender para Office 365 P2|
 |---|---|---|
 |Evita ataques generales conocidos basados en el volumen.|Protege al correo electrónico y a la colaboración de la vulnerabilidad de día cero contra los ataques de malware y suplantación de identidad (phish) que ponen en peligro al correo electrónico empresarial |Agrega investigación, búsqueda y respuesta después de la vulneración, así como automatización y simulación (para el aprendizaje).|
-|
 
 En cuanto a la arquitectura, podemos imaginar las piezas como capas acumulativas de seguridad, cada una con un énfasis de seguridad. Más resultados similares:
 
@@ -92,7 +86,6 @@ comenzando por **Exchange Online Protection**:
 |Prevención/detección|Investigación|Respuesta|
 |---|---|---|
 |Entre las tecnologías se incluyen:<ul><li>correo no deseado</li><li>suplantación de identidad</li><li>malware</li><li>correo masivo</li><li>inteligencia contra la suplantación de identidad</li><li>detección de suplantación</li><li>Cuarentena del administrador</li><li>Entregas de usuarios y administradores de Falsos positivos y Falsos negativos</li><li>Permitir/bloquear direcciones URL y archivos</li><li>Informes</li></ul>|<li>Búsqueda en el registro de auditoría</li><li>Seguimiento de mensajes</li>|<li>Purga automática de hora cero (ZAP)</li><li>Refinamiento y pruebas de las listas de permitidos y bloqueados</li>|
-|
 
 Si desea profundizar en EOP, **[vaya a este artículo](exchange-online-protection-overview.md)**.
 
@@ -132,7 +125,6 @@ Esta referencia rápida le ayudará a comprender qué funcionalidades se incluye
 |Defender para Office 365 Plan 1|Defender para Office 365 Plan 2|
 |---|---|
 |Funcionalidades de configuración, protección y detección: <ul><li>[Archivos adjuntos seguros](safe-attachments.md)</li><li>[Vínculos seguros](safe-links.md)</li><li>[Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Protección contra phishing en Microsoft Defender para Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Detecciones en tiempo real](threat-explorer.md)</li></ul>|Capacidades del Plan 1 de Defender para Office 365 <p> --- además --- <p> Funcionalidades de automatización, investigación, corrección y educación: <ul><li>[Rastreadores de amenazas](threat-trackers.md)</li><li>[Explorador de amenazas](threat-explorer.md)</li><li>[Investigación y respuesta automatizadas](office-365-air.md)</li><li>[Simulador de ataque](attack-simulator.md)</li></ul>|
-|
 
 - El Plan 2 de Microsoft Defender para Office 365 está incluido en Office 365 E5, Office 365 A5 y Microsoft 365 E5.
 

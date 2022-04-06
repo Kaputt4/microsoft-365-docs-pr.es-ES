@@ -9,20 +9,30 @@ ms.topic: article
 audience: ITPro
 manager: dougeby
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: tiaraquan
 ms.article: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 57b4119c1c96132b2f9a5c715cb498f228802fcc
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329857"
 ---
+
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cambiar el historial de la documentación de Escritorio administrado de Microsoft
 
 En este artículo se enumeran los artículos nuevos y actualizados de la [documentación de Escritorio administrado de Microsoft](index.yml). Los artículos "actualizados" han tenido adiciones o correcciones de material; no se enumeran correcciones secundarias como la corrección de errores tipográficos, de estilo o de formato. Siempre puede ver el historial de confirmaciones específicas (incluidos los detalles de los cambios) visitando el [repositorio en GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+## <a name="march-2022"></a>Marzo de 2022
+
+Artículo nuevo o modificado | Descripción
+--- | ---
+| [Referencia de parámetros configurables](working-with-managed-desktop/config-setting-ref.md) | Requisitos de proxy adicionales agregados |
+| [Localizar la experiencia del usuario](get-started/localization.md) | Nota agregada a la sección Instalar más idiomas |
+| [Referencia de parámetros configurables](working-with-managed-desktop/config-setting-ref.md) | Nota agregada sobre el perímetro heredado |
+
+## <a name="february-2022"></a>Febrero de 2022
+
+Artículo nuevo o modificado | Descripción
+--- | ---
+| [Informe de métricas de servicio](working-with-managed-desktop/service-metrics-report.md) | Se agregó el informe de métricas de servicio |
+| [Microsoft Edge](get-started/edge-browser-app.md) | Artículo actualizado |
 
 ## <a name="october-2021"></a>Octubre de 2021
 
@@ -144,7 +154,7 @@ Artículo nuevo o modificado | Descripción
 [Solucionar los problemas detectados por la herramienta de evaluación de la preparación](get-ready/readiness-assessment-fix.md) | Artículo actualizado
 [Ajustar la configuración después de la inscripción](get-started/conditional-access.md) | Artículo actualizado
 [Trabajar con informes](working-with-managed-desktop/reports.md) | Artículo actualizado
-[Instalar Intune Company Portal en dispositivos](get-started/company-portal.md) | Artículo actualizado
+[Instalar Portal de empresa de Intune dispositivos](get-started/company-portal.md) | Artículo actualizado
 [Requisitos del dispositivo](service-description/device-requirements.md) | Artículo nuevo
 [Cumplimiento](intro/compliance.md) | Artículo actualizado
 [Cómo se controlan las actualizaciones en Microsoft Managed Desktop](service-description/updates.md) | Artículo actualizado

@@ -1,7 +1,7 @@
 ---
 title: Incorporar al servicio Microsoft Defender para punto de conexión
 description: Obtenga información sobre cómo incorporar puntos de conexión a Microsoft Defender para el servicio de punto de conexión
-keywords: microsoft Defender para el punto de conexión, la incorporación, la implementación
+keywords: 'microsoft Defender para el punto de conexión, la incorporación, la implementación'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,19 +12,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-- m365solution-endpointprotect
-- m365solution-scenario
-- m365-initiative-defender-endpoint
+  - M365-security-compliance
+  - m365solution-endpointprotect
+  - m365solution-scenario
+  - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 78f78208798635fb38381deaba3fa2f20e373bea
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807565"
 ---
+
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Incorporar al servicio Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -43,7 +38,8 @@ Estos son los pasos que debe seguir para implementar Defender for Endpoint:
 - Paso 1: Incorporar puntos de conexión al servicio
 - Paso 2: configurar las capacidades
 
-![Ilustración de los pasos de implementación](images/deployment-steps.png)
+:::image type="content" source="images/deployment-steps.png" alt-text="Pasos de implementación" lightbox="images/deployment-steps.png":::
+
 
 
 
@@ -76,8 +72,8 @@ Después de incorporar los puntos de conexión, configurará las capacidades. En
 
 | Funcionalidad | Descripción |
 |-|-|
-| [Respuesta de & de detección de puntos de conexión (EDR)](overview-endpoint-detection-response.md) | Las capacidades de defender para detección y respuesta de puntos de conexión endpoint proporcionan detecciones avanzadas de ataques que son casi en tiempo real y que pueden actuar. Los analistas de seguridad pueden asignar prioridades a las alertas de forma eficaz, obtener visibilidad para todo el ámbito de la vulneración y llevar a cabo acciones de respuesta para corregir las amenazas. |
-| [Administración & vulnerabilidad de amenazas (TVM)](next-gen-threat-and-vuln-mgt.md) | Threat & Vulnerability Management es un componente de Microsoft Defender para endpoint y proporciona a los administradores de seguridad y a los equipos de operaciones de seguridad un valor único, como: - Real-time detección y respuesta de puntos de conexión (EDR ) insights correlated with endpoint vulnerabilities - Invaluable device vulnerability context during incident investigations - Built-in remediation processes through Microsoft Intune and Microsoft System Center Configuration Manager.  |
+| [Respuesta de detección & punto de conexión (EDR)](overview-endpoint-detection-response.md) | Las capacidades de defender para detección y respuesta de puntos de conexión endpoint proporcionan detecciones avanzadas de ataques que son casi en tiempo real y que se pueden actuar. Los analistas de seguridad pueden asignar prioridades a las alertas de forma eficaz, obtener visibilidad para todo el ámbito de la vulneración y llevar a cabo acciones de respuesta para corregir las amenazas. |
+| [Administración & vulnerabilidad de amenazas (TVM)](next-gen-threat-and-vuln-mgt.md) | Threat & Vulnerability Management es un componente de Microsoft Defender para endpoint y proporciona a los administradores de seguridad y a los equipos de operaciones de seguridad un valor único, incluidos: - Real-time detección y respuesta de puntos de conexión (EDR ) insights correlated with endpoint vulnerabilities - Invaluable device vulnerability context during incident investigations - Built-in remediation processes through Microsoft Intune and Microsoft System Center Configuration Manager.  |
 | [Protección de última generación (NGP)](microsoft-defender-antivirus-windows.md) | Antivirus de Microsoft Defender es una solución antimalware integrada que proporciona protección de última generación para escritorios, equipos portátiles y servidores. El Antivirus de Microsoft Defender incluye:<br> <br>-Protección entregada en la nube para la detección casi instantánea y el bloqueo de amenazas nuevas y emergentes. Junto con Intelligent Security Graph y el aprendizaje automático, la protección en la nube forma parte de las tecnologías de última generación utilizadas por el Antivirus de Microsoft Defender.<br> <br> - Análisis siempre continuo mediante la supervisión avanzada del comportamiento de procesos y archivos y otras heurísticas (también conocida como "protección en tiempo real").<br><br> - Actualizaciones de protección dedicadas basadas en aprendizaje automático, análisis de big-data humanos y automatizados e investigación detallada de resistencia a amenazas. |
 | [Reducción de superficie de ataque (ASR)](overview-attack-surface-reduction.md) | Las capacidades de reducción de superficie de ataque en Microsoft Defender para endpoint ayudan a proteger los dispositivos y aplicaciones de la organización frente a amenazas nuevas y emergentes. |
 | [Auto Investigation & Remediation (AIR)](automated-investigations.md) | Microsoft Defender para endpoint usa investigaciones automatizadas para reducir significativamente el volumen de alertas que deben investigarse individualmente. La característica de investigación automatizada aprovecha varios algoritmos de inspección y procesos usados por analistas (como playbooks) para examinar alertas y tomar medidas de corrección inmediatas para resolver infracciones. Esto reduce considerablemente el volumen de alertas, lo que facilita que los expertos de operaciones de seguridad puedan centrarse en amenazas más complejas y otras iniciativas de alto valor. |

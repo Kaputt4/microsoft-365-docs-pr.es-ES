@@ -1,6 +1,6 @@
 ---
 title: 'Modelos de arquitectura en la nube de Microsoft: planeación de recursos empresariales'
-description: Obtenga información sobre los servicios en la nube de Microsoft, como Azure y Office 365 con estos diagramas e ilustraciones de arquitectura.
+description: 'Obtenga información sobre los servicios en la nube de Microsoft, como Azure y Office 365 con estos diagramas e ilustraciones de arquitectura.'
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -9,22 +9,27 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management
-- M365solutions
+  - M365-subscription-management
+  - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b0a89bc8a79f3ea2c5c0b3c1f01039944565a75c
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62900763"
 ---
-# <a name="microsoft-cloud-for-it-architects-illustrations"></a>Ilustraciones de la nube de Microsoft para arquitectos de TI
+
+# <a name="microsoft-cloud-for-it-architects-illustrations"></a>Nube de Microsoft para ilustraciones de los arquitectos de TI
 
 Estos pósteres de arquitectura en la nube le ofrecen información sobre los servicios en la nube de Microsoft, como Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365 y soluciones híbridas locales y en la nube. 
 
 Los responsables de la toma de decisiones de TI y los arquitectos pueden usar estos recursos para determinar las soluciones ideales para sus cargas de trabajo y tomar decisiones sobre los componentes principales de la infraestructura, como las redes, la identidad y la seguridad.
+
+<a name="zero trust"></a>
+### <a name="microsoft-365-zero-trust-deployment-plan"></a>Plan de implementación de Confianza cero de Microsoft 365
+
+
+En esta ilustración se proporciona un plan de implementación para crear la seguridad de confianza cero con Microsoft 365. Confianza cero es un nuevo modelo de seguridad que supone una infracción y comprueba cada solicitud como si se originase desde una red sin control. Independientemente de dónde se origine la solicitud o a qué recurso tiene acceso, el modelo de confianza cero nos enseña a "nunca confiar, comprobar siempre".
+
+| Item | Descripción |
+|:-----|:-----|
+|[![Ilustración del plan de Microsoft 365 de implementación de confianza cero.](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png) ](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Actualizado en marzo de 2022 | Use esta ilustración junto con este artículo: Microsoft 365 [plan de implementación de confianza cero](../security/Microsoft-365-zero-trust.md) <br/><br/>**Guías de soluciones relacionadas** <br/> <ul><li>[Implementar la infraestructura de identidad para Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Configuraciones recomendadas de acceso a dispositivos y identidades](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[Administrar dispositivos con Intune](manage-devices-with-intune-overview.md)</li><li>[Evaluar Microsoft 365 Defender y realizar una prueba piloto](../security/defender/eval-overview.md)</li><li>[Implementar una solución de Microsoft Information Protection](../compliance/information-protection-solution.md)</li><li>[Implementar la protección de la información para las normativas de privacidad de datos con Microsoft 365](information-protection-deploy.md)</li></ul>
 
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Ataques comunes y funcionalidades de Microsoft que protegen su organización

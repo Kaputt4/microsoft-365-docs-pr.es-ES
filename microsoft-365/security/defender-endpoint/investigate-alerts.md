@@ -1,7 +1,7 @@
 ---
 title: Investigar alertas de punto de conexión de Microsoft Defender
-description: Use las opciones de investigación para obtener detalles sobre las alertas que afectan a su red, lo que significan y cómo resolverlas.
-keywords: investigar, investigar, dispositivos, dispositivos, cola de alertas, panel, dirección IP, archivo, enviar, envíos, análisis profundo, escala de tiempo, búsqueda, dominio, dirección URL, IP
+description: 'Use las opciones de investigación para obtener detalles sobre las alertas que afectan a su red, lo que significan y cómo resolverlas.'
+keywords: 'investigar, investigar, dispositivos, dispositivos, cola de alertas, panel, dirección IP, archivo, enviar, envíos, análisis profundo, escala de tiempo, búsqueda, dominio, dirección URL, IP'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,18 +12,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+  - m365-security-compliance
+  - m365-initiative-defender-endpoint
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: f228d0ca44589b9c140226c2b39984c717c7d9f8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766073"
 ---
+
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Investigar alertas en Microsoft Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -52,7 +47,7 @@ Expanda entidades para ver los detalles de un vistazo. Al seleccionar una entida
 > [!NOTE]
 > La sección de artículo de alerta puede contener más de una alerta, con alertas adicionales relacionadas con el mismo árbol de ejecución que aparecen antes o después de la alerta seleccionada.
 
-![Un ejemplo de un artículo de alerta con una alerta en el foco y algunas tarjetas expandida.](images/alert-story-tree.png)
+:::image type="content" source="images/alert-story-tree.png" alt-text="un artículo de alerta con una alerta en el foco y algunas tarjetas expandida" lightbox="images/alert-story-tree.png":::
 
 ## <a name="take-action-from-the-details-pane"></a>Realizar acciones desde el panel de detalles
 
@@ -62,11 +57,11 @@ Una vez que haya terminado de investigar, vuelva a la alerta con la que inició,
 
 Si la clasifica como una alerta verdadera, también puede seleccionar una determinación, como se muestra en la imagen siguiente.
 
-![Fragmento de código del panel de detalles con una alerta resuelta y la lista desplegable de determinación expandida.](images/alert-details-resolved-true.png)
+:::image type="content" source="images/alert-details-resolved-true.png" alt-text="El panel de detalles con una alerta resuelta y la lista desplegable de determinación expandida" lightbox="images/alert-details-resolved-true.png":::
 
 Si experimenta una alerta falsa con una aplicación de línea de negocio, cree una regla de supresión para evitar este tipo de alerta en el futuro.
 
-![acciones y clasificación en el panel de detalles con la regla de supresión resaltada.](images/alert-false-suppression-rule.png)
+:::image type="content" source="images/alert-false-suppression-rule.png" alt-text="Acciones y clasificación en el panel de detalles con la regla de supresión resaltada" lightbox="images/alert-false-suppression-rule.png":::
 
 > [!TIP]
 > Si tienes algún problema que no se describe anteriormente, usa el 🙂 botón para proporcionar comentarios o abrir un vale de soporte técnico.

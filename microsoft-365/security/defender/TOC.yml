@@ -422,6 +422,61 @@
                   href: ../defender-endpoint/troubleshoot-siem.md
             - name: Comprender conceptos de inteligencia sobre amenazas
               href: ../defender-endpoint/threat-indicator-concepts.md
+        - name: Inteligencia de seguridad
+          items:
+            - name: Descargar el Examen de seguridad
+              href: ../intelligence/safety-scanner-download.md
+            - name: Descripción del malware y otras amenazas
+              href: ../intelligence/understanding-malware.md
+              items:
+                - name: Evitar infecciones por malware
+                  href: ../intelligence/prevent-malware-infection.md
+                - name: Nombre del malware
+                  href: ../intelligence/malware-naming.md
+                - name: Minería de monedas
+                  href: ../intelligence/coinminer-malware.md
+                - name: Vulnerabilidades y kits de vulnerabilidades
+                  href: ../intelligence/exploits-malware.md
+                - name: Amenazas sin archivos
+                  href: ../intelligence/fileless-threats.md
+                - name: Malware de macro
+                  href: ../intelligence/macro-malware.md
+                - name: Suplantación de identidad (phishing)
+                  href: ../intelligence/phishing.md
+                - name: Ransomware
+                  href: /security/compass/human-operated-ransomware
+                - name: Rootkits
+                  href: ../intelligence/rootkits-malware.md
+                - name: Ataques de cadena de suministro
+                  href: ../intelligence/supply-chain-malware.md
+                - name: Estafas de soporte técnico
+                  href: ../intelligence/support-scams.md
+                - name: Troyanos
+                  href: ../intelligence/trojans-malware.md
+                - name: Software no deseado
+                  href: ../intelligence/unwanted-software.md
+                - name: Gusanos
+                  href: ../intelligence/worms-malware.md
+            - name: Cómo identifica Microsoft el malware y las aplicaciones potencialmente indeseables
+              href: ../intelligence/criteria.md
+            - name: Enviar archivos para su análisis
+              href: ../intelligence/submission-guide.md
+            - name: Programas de colaboración del sector
+              href: ../intelligence/cybersecurity-industry-partners.md
+            - name: Alianza de información sobre virus
+              href: ../intelligence/virus-information-alliance-criteria.md
+            - name: Iniciativa antivirus de Microsoft
+              href: ../intelligence/virus-initiative-criteria.md
+            - name: Erradicación coordinada de malware
+              href: ../intelligence/coordinated-malware-eradication.md
+            - name: Programa de recompensas de Microsoft por la detección de errores
+              href: ../intelligence/microsoft-bug-bounty-program.md
+            - name: Información para desarrolladores
+              items:
+                - name: Preguntas más frecuentes para desarrolladores de software
+                  href: ../intelligence/developer-faq.yml
+                - name: Recursos para desarrolladores de software
+                  href: ../intelligence/developer-resources.md
     - name: Documentos de Microsoft 365 Defender
       items:
         - name: Defender para Office 365

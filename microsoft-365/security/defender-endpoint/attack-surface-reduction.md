@@ -1,7 +1,7 @@
 ---
 title: Usar reglas de reducción de la superficie expuesta a ataques para evitar la infección de malware
 description: Las reglas de reducción de superficie de ataque pueden ayudar a evitar que las vulnerabilidades utilicen aplicaciones y scripts para infectar dispositivos con malware.
-keywords: Reglas de reducción de superficie de ataque, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint
+keywords: 'Reglas de reducción de superficie de ataque, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint'
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,22 +10,19 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar
+ms.reviewer: 'oogunrinde, sugamar'
 manager: dansimp
 ms.custom:
-- asr
-- admindeeplinkDEFENDER
+  - asr
+  - admindeeplinkDEFENDER
 ms.technology: mde
 ms.topic: article
-ms.collection: m365initiative-m365-defender
+ms.collection:
+  - m365initiative-m365-defender
+  - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 3f3daaa068f067c8d4ffbbf40a4d8ba1d32d04b9
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766446"
 ---
+
 # <a name="attack-surface-reduction-rules-overview"></a>Introducción a las reglas de reducción de superficie de ataque
 
 **Se aplica a:**
@@ -77,7 +74,7 @@ El modo de advertencia se admite en dispositivos que ejecutan las siguientes ver
 
 Antivirus de Microsoft Defender debe ejecutarse con protección en tiempo real en [modo activo](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state).
 
-Además, asegúrese de [que Antivirus de Microsoft Defender y las actualizaciones de antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) están instaladas.
+Además, asegúrese de [que Antivirus de Microsoft Defender actualizaciones y antimalware estén](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) instaladas.
 
 - Requisito mínimo de versión de plataforma: `4.18.2008.9`
 - Requisito mínimo de versión del motor: `1.1.17400.5`
@@ -86,7 +83,7 @@ Para obtener más información y obtener las actualizaciones, vea [Update for Mi
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>Casos en los que no se admite el modo de advertencia
 
-El modo de advertencia no se admite para tres reglas de reducción de superficie de ataque al configurarlas en Microsoft Endpoint Manager. (Si usas la directiva de grupo para configurar las reglas de reducción de superficie de ataque, se admite el modo de advertencia). Las tres reglas que no admiten el modo de advertencia al configurarlas en Microsoft Endpoint Manager son las siguientes:
+El modo de advertencia no es compatible con tres reglas de reducción de superficie de ataque cuando las configuras en Microsoft Endpoint Manager. (Si usas la directiva de grupo para configurar las reglas de reducción de superficie de ataque, se admite el modo de advertencia). Las tres reglas que no admiten el modo de advertencia al configurarlas en Microsoft Endpoint Manager son las siguientes:
 
 - [Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content) (GUID `d3e037e1-3eb8-44c8-a917-57927947596d`)
 - [Bloquear la persistencia a través de la suscripción de eventos WMI](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription) (GUID `e6db77e5-3df2-4cf1-b95a-636979351e5b`)
@@ -116,7 +113,7 @@ Para obtener más información acerca de la búsqueda avanzada, vea [Proactively
 
 Puedes establecer reglas de reducción de superficie de ataque para dispositivos que ejecutan cualquiera de las siguientes ediciones y versiones de Windows:
 
-- Windows 10 Pro versión [1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
+- Windows 10 Pro, [versión 1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
 - Windows 10 Enterprise versión [1709](/windows/whats-new/whats-new-windows-10-version-1709) o posterior
 - Windows server, [versión 1803 (canal semianual)](/windows-server/get-started/whats-new-in-windows-server-1803) o posterior
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
@@ -126,7 +123,7 @@ Puedes establecer reglas de reducción de superficie de ataque para dispositivos
   >[!NOTE]
   >Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) para que esta característica funcione.
 
-Aunque las reglas de reducción de superficie de ataque no requieren una [licencia Windows E5](/windows/deployment/deploy-enterprise-licenses), si Windows E5, obtienes capacidades de administración avanzadas. Las funcionalidades avanzadas, disponibles solo en Windows E5, incluyen:
+Aunque las reglas de reducción de superficie de ataque no requieren una [licencia Windows E5](/windows/deployment/deploy-enterprise-licenses), si tienes Windows E5, obtienes capacidades de administración avanzadas. Las funcionalidades avanzadas, disponibles solo en Windows E5, incluyen:
 
 - La supervisión, el análisis y los flujos de trabajo disponibles [en Defender for Endpoint](microsoft-defender-endpoint.md)
 - Las capacidades de informes y configuración de [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).

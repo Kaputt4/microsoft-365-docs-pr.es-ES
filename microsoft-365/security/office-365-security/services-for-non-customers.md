@@ -1,29 +1,24 @@
 ---
 title: Servicios para no clientes que envían correo a Microsoft 365
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
+ms.date: null
 audience: ITPro
 ms.topic: overview
 ms.localizationpriority: medium
 search.appverid:
-- MET150
+  - MET150
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
-- M365-security-compliance
-description: Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha puesto en marcha distintas políticas y tecnologías para ayudar a proteger a nuestros usuarios.
+  - M365-security-compliance
+description: 'Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha puesto en marcha distintas políticas y tecnologías para ayudar a proteger a nuestros usuarios.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2894d565a08cf500199b123a0acd738de129faf0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174188"
 ---
+
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Servicios para no clientes que envían correo a Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -35,15 +30,12 @@ Esta introducción proporciona información sobre las ventajas que proporcionamo
 
 ## <a name="sender-solutions"></a>Soluciones de remitente
 
-****
-
 |Servicio|Ventajas|
 |---|---|
 |En este contenido de la Ayuda en línea|se ofrece: <ul><li>Un punto de partida para cualquier pregunta relacionada con la entrega de comunicaciones a los usuarios de EOP.</li><li>Incluye una guía en línea sencilla con nuestras directivas y requisitos.</li><li>Información general sobre los filtros de correo no deseado y las tecnologías de autenticación empleadas por Microsoft.</li><ul>|
 |[Soporte técnico de Microsoft](#microsoft-support)|Proporciona soporte de autoayuda y escalamiento para problemas de entrega.|
 |[Portal de lista ip contra correo no deseado](#anti-spam-ip-delist-portal)|Una herramienta para enviar solicitudes de eliminación de IP de la lista. Antes de enviar esta solicitud, es responsabilidad del remitente asegurarse de que cualquier otro mensaje procedente de la dirección IP en cuestión no es abusivo ni malintencionado.|
-|[Notificación de abusos y spam relativos a correos electrónicos no deseados procedentes de Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Evita que el correo no deseado y otros correos no deseados se envíen Exchange Online y abarrote Internet y su sistema de correo.|
-|
+|[Notificación de abusos y spam relativos a correos electrónicos no deseados procedentes de Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Evita que el correo no deseado y otros correos no deseados se envíen Exchange Online y abarrote Internet y el sistema de correo.|
 
 ## <a name="microsoft-support"></a>Soporte técnico de Microsoft
 
@@ -63,8 +55,8 @@ Microsoft ofrece varias opciones de soporte técnico para las personas que tiene
 
 ## <a name="anti-spam-ip-delist-portal"></a>Portal de lista ip contra correo no deseado
 
-Este es un portal de autoservicio que puede usar para quitarse de la lista Microsoft 365 remitentes bloqueados. Use este portal si recibe un mensaje de error al intentar enviar un correo electrónico a un destinatario cuya dirección de correo electrónico está en Microsoft 365 y no cree que debería estarlo. Para más información, consulte [Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Este es un portal de autoservicio que puede usar para quitarse de la Microsoft 365 de remitentes bloqueados. Use este portal si recibe un mensaje de error cuando intente enviar un correo electrónico a un destinatario cuya dirección de correo electrónico se encuentra en Microsoft 365 y no cree que deba estarlo. Para más información, consulte [Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Notificación de abusos y spam relativos a correos electrónicos no deseados procedentes de Exchange Online
 
-A veces Microsoft 365 terceros los usa para enviar correo no deseado, en violación de nuestros términos de uso y directiva. Si recibe algún correo electrónico no deseado de Office 365, puede notificar estos mensajes a Microsoft. Para obtener instrucciones, vea [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+A Microsoft 365 terceros los usan para enviar correo no deseado, en violación de nuestros términos de uso y directiva. Si recibe algún correo no deseado de Office 365, puede notificar estos mensajes a Microsoft. Para obtener instrucciones, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).

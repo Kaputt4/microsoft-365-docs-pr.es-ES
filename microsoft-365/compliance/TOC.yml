@@ -535,8 +535,6 @@
               href: dlp-chrome-get-started.md
             - name: Introducción al panel de alertas de prevención de pérdida de datos
               href: dlp-alerts-dashboard-get-started.md
-            - name: Introducción a las directivas de prevención de pérdida de datos para Power BI (versión preliminar)
-              href: dlp-powerbi-get-started.md
         - name: Usar DLP
           items:
             - name: DLP y Microsoft Teams

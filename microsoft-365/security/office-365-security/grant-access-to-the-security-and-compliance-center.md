@@ -1,32 +1,27 @@
 ---
 title: Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
+ms.date: null
 audience: Admin
 ms.topic: how-to
 f1_keywords:
-- ms.o365.cc.PermissionsHelp
+  - ms.o365.cc.PermissionsHelp
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
-ms.collection: Strat_O365_IP
 search.appverid:
-- MOE150
-- MET150
+  - MOE150
+  - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Los usuarios deben tener asignados permisos en el Centro de Microsoft 365 seguridad & cumplimiento para poder administrar cualquiera de sus características de seguridad o cumplimiento.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2dcab8a14df6266bea87b3ae876ed9bac8eea1d7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60213474"
 ---
+
 # <a name="give-users-access-to-the-security--compliance-center"></a>Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -38,31 +33,31 @@ ms.locfileid: "60213474"
 
 Los usuarios deben tener asignados permisos en el Centro de seguridad & cumplimiento para poder administrar cualquiera de sus características de seguridad o cumplimiento. Como administrador global o miembro del grupo de roles OrganizationManagement en el Centro de seguridad & cumplimiento, puede conceder estos permisos a los usuarios. Los usuarios solo podrán administrar las características de seguridad o cumplimiento a las que les proporcione acceso.
 
-Para obtener más información acerca de los diferentes permisos que puede conceder a los usuarios en el Centro de seguridad & y cumplimiento, consulte Permisos en el Centro de [seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
+Para obtener más información acerca de los distintos permisos que puede conceder a los usuarios en el Centro de seguridad & cumplimiento, consulte Permisos en el Centro de [seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-- Debe ser administrador global o miembro del grupo de roles OrganizationManagement en el Centro de seguridad & cumplimiento, para completar los pasos de este artículo.
+- Debe ser un administrador global o un miembro del grupo de roles OrganizationManagement en el Centro de seguridad & cumplimiento, para completar los pasos de este artículo.
 
-- Los grupos de roles del Centro de seguridad & cumplimiento pueden tener nombres similares a los grupos de roles de Exchange Online, pero no son los mismos.
+- Los grupos de roles del Centro de & seguridad pueden tener nombres similares a los grupos de roles de Exchange Online, pero no son los mismos.
 
 - Las pertenencias a grupos de roles no se comparten entre Exchange Online y el Centro de seguridad & cumplimiento.
 
-- Los asociados de permisos de acceso delegados (DAP) con permisos Administrar en nombre de (AOBO) no pueden acceder al Centro de seguridad & cumplimiento.
+- Los asociados de permiso de acceso delegado (DAP) con permisos Administrar en nombre de (AOBO) no pueden acceder al Centro de seguridad & cumplimiento.
 
 ## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>Usar el Centro de seguridad & cumplimiento para dar a otro usuario acceso al Centro de seguridad & cumplimiento
 
-1. Abra el Centro de seguridad & cumplimiento en y, a <https://protection.office.com> continuación, vaya a **Permisos**. Para ir directamente a la **pestaña Permisos,** abra <https://protection.office.com/permissions> .
+1. Abra el Centro de & cumplimiento en <https://protection.office.com> y, a continuación, vaya a **Permisos**. Para ir directamente a la **pestaña Permisos** , abra <https://protection.office.com/permissions>.
 
-2. En la lista de grupos de roles, elija el grupo de funciones y, a continuación, haga clic **en Editar** ![ icono Editar. ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) .
+2. En la lista de grupos de roles, elija el grupo de roles y, a continuación, haga clic **en Editar** ![icono Editar](../../media/O365-MDM-CreatePolicy-EditIcon.gif).
 
-3. En la página propiedades del grupo de roles, en **Miembros,** haga clic **en Agregar** ![ icono.](../../media/ITPro-EAC-AddIcon.gif) y seleccione el nombre del usuario (o usuarios) que desea agregar.
+3. En la página propiedades del grupo de roles en **Miembros**, haga clic **en AgregarAgregue**![ icono.](../../media/ITPro-EAC-AddIcon.gif) y seleccione el nombre del usuario (o usuarios) que desea agregar.
 
-4. Cuando haya seleccionado todos los usuarios que desea agregar al grupo de roles, haga clic en **agregar \> y,** a continuación, **en Aceptar**.
+4. Cuando haya seleccionado todos los usuarios que desea agregar al grupo de roles, haga clic en **agregar y\>** , a continuación, **en Aceptar**.
 
 5. Cuando haya terminado, haga clic en **Guardar**.
 
-## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Usar PowerShell & centro de seguridad y cumplimiento para dar a otro usuario acceso al Centro de seguridad & cumplimiento
+## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Usar PowerShell & Centro de seguridad y cumplimiento para dar a otro usuario acceso al Centro de & cumplimiento
 
 1. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
@@ -88,10 +83,10 @@ Para comprobar que ha concedido acceso correctamente al Centro de seguridad y & 
 
 - En el Centro de & cumplimiento, vaya a **Permisos** y seleccione el grupo de roles. En el menú desplegable de detalles que se abre, compruebe los miembros del grupo de roles.
 
-- En PowerShell & Centro de seguridad y cumplimiento, reemplace por el nombre del grupo de roles \<RoleGroupName\> y ejecute el siguiente comando:
+- En PowerShell & Centro de seguridad y cumplimiento, \<RoleGroupName\> reemplace por el nombre del grupo de roles y ejecute el siguiente comando:
 
   ```powershell
   Get-RoleGroupMember -Identity "<RoleGroupName>"
   ```
 
-  Para obtener información detallada acerca de la sintaxis y los parámetros, [vea Get-RoleGroupMember](/powershell/module/exchange/Get-RoleGroupMember).
+  Para obtener información detallada sobre la sintaxis y los parámetros, [vea Get-RoleGroupMember](/powershell/module/exchange/Get-RoleGroupMember).

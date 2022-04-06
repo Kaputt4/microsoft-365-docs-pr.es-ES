@@ -3,27 +3,22 @@ title: Directivas de cuarentena
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.reviewer: ''
-ms.date: ''
+ms.reviewer: null
+ms.date: null
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
 search.appverid:
-- MET150
-ms.assetid: ''
+  - MET150
+ms.assetid: null
 ms.collection:
-- M365-security-compliance
-ms.custom: ''
+  - M365-security-compliance
+ms.custom: null
 description: Los administradores pueden aprender a usar directivas de cuarentena para controlar lo que los usuarios pueden hacer con los mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8f015951fec4ea8fb9d433c8b48ccb26cd9e1222
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321297"
 ---
+
 # <a name="quarantine-policies"></a>Directivas de cuarentena
 
 Las directivas de cuarentena (anteriormente conocidas como etiquetas de _cuarentena) en_ Exchange Online Protection (EOP) y Microsoft Defender para Office 365 permiten a los administradores controlar lo que los usuarios pueden hacer con los mensajes en cuarentena en función del motivo por el que el mensaje se ha puesto en cuarentena.
@@ -42,10 +37,6 @@ Los permisos de directiva de cuarentena individuales se combinan en los siguient
 
 Los permisos de directiva de cuarentena individuales contenidos en los grupos de permisos preestablecidos se describen en la tabla siguiente:
 
-<br>
-
-****
-
 |Permiso|Sin acceso|Acceso limitado|Acceso completo|
 |---|:---:|:---:|:---:|
 |**Bloquear remitente** (_PermissionToBlockSender_)||![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
@@ -53,11 +44,8 @@ Los permisos de directiva de cuarentena individuales contenidos en los grupos de
 |**Vista** previa (_PermissionToPreview_)||![Marca de verificación.](../../media/checkmark.png)|![Marca de verificación.](../../media/checkmark.png)|
 |**Permitir que los destinatarios liberen un mensaje de cuarentena** (_PermissionToRelease_)|||![Marca de verificación.](../../media/checkmark.png)|
 |**Permitir que los destinatarios soliciten que un mensaje se ponga en cuarentena** (_PermissionToRequestRelease_)||![Marca de verificación](../../media/checkmark.png)||
-|
 
 Las directivas de cuarentena predeterminadas, sus grupos de permisos asociados y si las notificaciones de cuarentena están habilitadas se describen en la tabla siguiente:
-
-<br>
 
 |Directiva de cuarentena predeterminada|Grupo de permisos usado|¿Notificaciones en cuarentena habilitadas?|
 |---|---|---|
@@ -151,10 +139,6 @@ El _parámetro EndUserQuarantinePermissionsValue_ usa un valor decimal que se co
 
 El orden y los valores necesarios para cada permiso individual se describen en la tabla siguiente:
 
-<br>
-
-****
-
 |Permiso|Valor decimal|Valor binario|
 |---|:---:|:---:|
 |PermissionToViewHeader<sup>\*</sup>|128|10000000|
@@ -165,7 +149,6 @@ El orden y los valores necesarios para cada permiso individual se describen en l
 |PermissionToRelease<sup>\*\*\*</sup>|4|00000100|
 |PermissionToPreview|2|00000010|
 |PermissionToDelete|1|00000001|
-|
 
 <sup>\*</sup>El valor 0 no oculta el botón Ver encabezado  del mensaje en los detalles del mensaje en cuarentena (el botón siempre está disponible).
 
@@ -174,10 +157,6 @@ El orden y los valores necesarios para cada permiso individual se describen en l
 <sup>\*\*\*</sup> No establezca ambos valores en 1. Establezca uno en 1 y el otro en 0, o establezca ambos en 0.
 
 Para los permisos de acceso limitado, los valores requeridos son:
-
-<br>
-
-****
 
 |Permiso|Acceso limitado|
 |---|:--:|
@@ -191,7 +170,6 @@ Para los permisos de acceso limitado, los valores requeridos son:
 |PermissionToDelete|1|
 |Valor binario|00011011|
 |Valor decimal que se usará|27|
-|
 
 En este ejemplo se crea una nueva directiva de cuarentena denominada LimitedAccess con notificaciones de cuarentena activadas que asigna los permisos de acceso limitado, tal como se describe en la tabla anterior.
 
@@ -207,10 +185,6 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [consul
 
 En _las características de_ protección admitidas que ponen en cuarentena los mensajes de correo electrónico, puede asignar una directiva de cuarentena a las acciones de cuarentena disponibles. En la tabla siguiente se describen las características que ponen en cuarentena los mensajes y la disponibilidad de las directivas de cuarentena:
 
-<br>
-
-****
-
 |Característica|¿Se admiten directivas de cuarentena?|Directivas de cuarentena predeterminadas usadas|
 |---|:---:|---|
 |[Directivas contra correo no deseado](configure-your-spam-filter-policies.md): <ul><li>**Correo no** deseado (_SpamAction_)</li><li>**Correo no deseado de elevada** confianza (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**Phishing de elevada confianza** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Sí|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li><li>AdminOnlyAccessPolicy (sin acceso)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (acceso completo)</li></ul>|
@@ -218,7 +192,6 @@ En _las características de_ protección admitidas que ponen en cuarentena los m
 |[Directivas antimalware](configure-anti-malware-policies.md): todos los mensajes detectados siempre se ponen en cuarentena.|Sí|AdminOnlyAccessPolicy (sin acceso)|
 |[Caja fuerte de datos adjuntos](safe-attachments.md): <ul><li>Mensajes de correo electrónico con datos adjuntos que se ponen en cuarentena como malware Caja fuerte directivas de datos adjuntos (_Habilitar_ y _acción_)</li><li>Archivos en cuarentena como malware [por Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Sí</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (sin acceso)</li><li>N/D</li></ul>|
 |[Reglas de flujo de](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: **Entregar el mensaje a la cuarentena** hospedada (_cuarentena_).|No|N/D|
-|
 
 <sup>\*</sup> Como [se describió anteriormente en este artículo](#full-access-permissions-and-quarantine-notifications), su organización podría usar NotificationEnabledPolicy en lugar de DefaultFullAccessPolicy. La única diferencia entre estas dos directivas de cuarentena es que las notificaciones de cuarentena se activarán en NotificationEnabledPolicy y se desactivarán en DefaultFullAccessPolicy.
 
@@ -247,7 +220,7 @@ Las directivas de cuarentena predeterminadas, los grupos de permisos preestablec
 
    **Nota**: Al crear una nueva directiva, se usa un valor de directiva de cuarentena **Select** en blanco que indica la directiva de cuarentena predeterminada para ese veredicto. Cuando más adelante edite la directiva, los valores en blanco se reemplazan por los nombres de directiva de cuarentena predeterminados reales, como se describe en la tabla anterior.
 
-   ![Selecciones de directiva de cuarentena en una directiva contra correo no deseado.](../../media/quarantine-tags-in-anti-spam-policies.png)
+   :::image type="content" source="../../media/quarantine-tags-in-anti-spam-policies.png" alt-text="Selecciones de directiva de cuarentena en una directiva contra correo no deseado" lightbox="../../media/quarantine-tags-in-anti-spam-policies.png":::
 
 Las instrucciones completas para crear y modificar directivas contra correo no deseado se describen en [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
@@ -327,7 +300,7 @@ La inteligencia de suplantación está disponible en EOP y Defender para Office 
 
    **Nota**: Al crear una nueva directiva, se usa un valor de directiva de cuarentena **Apply** en blanco que indica la directiva de cuarentena predeterminada para esa acción. Cuando más adelante edite la directiva, los valores en blanco se reemplazan por los nombres de directiva de cuarentena predeterminados reales, como se describe en la tabla anterior.
 
-   ![Selecciones de directivas de cuarentena en una directiva contra suplantación de identidad.](../../media/quarantine-tags-in-anti-phishing-policies.png)
+   :::image type="content" source="../../media/quarantine-tags-in-anti-phishing-policies.png" alt-text="Selecciones de directiva de cuarentena en una directiva contra suplantación de identidad" lightbox="../../media/quarantine-tags-in-anti-phishing-policies.png":::
 
 Las instrucciones completas para crear y modificar directivas contra suplantación de identidad están disponibles en los siguientes temas:
 
@@ -515,7 +488,7 @@ La configuración global de las directivas de cuarentena le permite personalizar
 
      La siguiente captura de pantalla muestra el nombre para mostrar personalizado en una notificación de cuarentena:
 
-     ![Un nombre para mostrar del remitente personalizado en una notificación de cuarentena.](../../media/quarantine-tags-esn-customization-display-name.png)
+     :::image type="content" source="../../media/quarantine-tags-esn-customization-display-name.png" alt-text="Un nombre para mostrar del remitente personalizado en una notificación de cuarentena" lightbox="../../media/quarantine-tags-esn-customization-display-name.png":::
 
    - **Aviso** de declinación de responsabilidades: agregue un aviso de declinación de responsabilidades personalizado a la parte inferior de las notificaciones de cuarentena. El texto localizado, **Un aviso de declinación de responsabilidades de su organización:** siempre se incluye primero, seguido del texto que especifique.
 
@@ -523,19 +496,19 @@ La configuración global de las directivas de cuarentena le permite personalizar
 
      La siguiente captura de pantalla muestra el aviso de declinación de responsabilidades personalizado en una notificación de cuarentena:
 
-     ![Un aviso de declinación de responsabilidades personalizado en la parte inferior de una notificación de cuarentena.](../../media/quarantine-tags-esn-customization-disclaimer.png)
+     :::image type="content" source="../../media/quarantine-tags-esn-customization-disclaimer.png" alt-text="Un aviso de declinación de responsabilidades personalizado en la parte inferior de una notificación de cuarentena" lightbox="../../media/quarantine-tags-esn-customization-disclaimer.png":::
 
    - **Elegir idioma**: las notificaciones de cuarentena ya están localizadas en función de la configuración de idioma del destinatario. Puede especificar texto personalizado en diferentes idiomas para los valores **Nombre para mostrar** y **Declinación de** responsabilidades.
 
      Seleccione al menos un idioma en el primer cuadro de idioma y, a continuación, haga clic en **Agregar**. Puede seleccionar varios idiomas haciendo clic **en Agregar** después de cada uno. Un cuadro de idioma de sección muestra todos los idiomas que ha seleccionado:
 
-     ![Idiomas seleccionados en el segundo cuadro de idioma de la configuración de notificación de cuarentena global de las directivas de cuarentena.](../../media/quarantine-tags-esn-customization-selected-languages.png)
+     :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="Los idiomas seleccionados en el segundo cuadro de idioma de la configuración de notificación de cuarentena global de las directivas de cuarentena" lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
 
    - **Usar el logotipo de mi** empresa: seleccione esta opción para reemplazar el logotipo predeterminado de Microsoft que se usa en la parte superior de las notificaciones de cuarentena. Antes de hacerlo, debes seguir las instrucciones de [Personalizar el tema Microsoft 365 de](../../admin/setup/customize-your-organization-theme.md) la organización para cargar el logotipo personalizado.
 
      La siguiente captura de pantalla muestra un logotipo personalizado en una notificación de cuarentena:
 
-     ![Logotipo personalizado en una notificación de cuarentena.](../../media/quarantine-tags-esn-customization-logo.png)
+     :::image type="content" source="../../media/quarantine-tags-esn-customization-logo.png" alt-text="Un logotipo personalizado en una notificación de cuarentena" lightbox="../../media/quarantine-tags-esn-customization-logo.png":::
 
    - **Enviar notificación de correo no deseado del usuario final cada (días):** Seleccione la frecuencia de las notificaciones en cuarentena.
 
@@ -670,14 +643,14 @@ Si la directiva de cuarentena asigna los **permisos de** acceso limitado, los us
   - **Quitar de cuarentena**
   - **Bloquear remitente**
 
-  ![Botones disponibles en los detalles del mensaje en cuarentena si la directiva de cuarentena concede al usuario permisos de acceso limitado.](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
+  :::image type="content" source="../../media/quarantine-tags-quarantined-message-details-limited-access.png" alt-text="Los botones disponibles en los detalles del mensaje en cuarentena si la directiva de cuarentena concede al usuario permisos de acceso limitados" lightbox="../../media/quarantine-tags-quarantined-message-details-limited-access.png":::
 
 - **Notificaciones de cuarentena: los botones** siguientes están disponibles:
   - **Bloquear remitente**
   - **Versión de solicitud**
   - **Revisar**
 
-  ![Botones disponibles en la notificación de cuarentena si la directiva de cuarentena concede al usuario permisos de acceso limitado.](../../media/quarantine-tags-esn-limited-access.png)
+  :::image type="content" source="../../media/quarantine-tags-esn-limited-access.png" alt-text="Los botones disponibles en la notificación de cuarentena si la directiva de cuarentena concede al usuario permisos de acceso limitados" lightbox="../../media/quarantine-tags-esn-limited-access.png":::
 
 #### <a name="full-access"></a>Acceso completo
 
@@ -690,14 +663,14 @@ Si la directiva de cuarentena asigna los **permisos de** acceso completo (todos 
   - **Quitar de cuarentena**
   - **Bloquear remitente**
 
-  ![Botones disponibles en los detalles del mensaje en cuarentena si la directiva de cuarentena concede al usuario permisos de acceso total.](../../media/quarantine-tags-quarantined-message-details-full-access.png)
+  :::image type="content" source="../../media/quarantine-tags-quarantined-message-details-full-access.png" alt-text="Los botones disponibles en los detalles del mensaje en cuarentena si la directiva de cuarentena concede al usuario permisos de acceso completos" lightbox="../../media/quarantine-tags-quarantined-message-details-full-access.png":::
 
 - **Notificaciones de cuarentena: los botones** siguientes están disponibles:
   - **Bloquear remitente**
-  - **Versión**
+  - **Release**
   - **Revisar**
 
-  ![Botones disponibles en la notificación de cuarentena si la directiva de cuarentena concede al usuario permisos de acceso total.](../../media/quarantine-tags-esn-full-access.png)
+  :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="Los botones disponibles en la notificación de cuarentena si la directiva de cuarentena concede al usuario permisos de acceso completos" lightbox="../../media/quarantine-tags-esn-full-access.png":::
 
 ### <a name="individual-permissions"></a>Permisos individuales
 

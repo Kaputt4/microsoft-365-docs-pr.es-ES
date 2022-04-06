@@ -1,7 +1,7 @@
 ---
 title: Solución de problemas al cambiar a Microsoft Defender para endpoint
 description: Obtenga información sobre cómo solucionar problemas al cambiar a Microsoft Defender para endpoint.
-keywords: migración, Windows Defender, protección avanzada de puntos de conexión, antivirus, antimalware, modo pasivo, modo activo, solución de problemas
+keywords: 'migración, Windows Defender, protección avanzada de puntos de conexión, antivirus, antimalware, modo pasivo, modo activo, solución de problemas'
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,19 +12,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- m365solution-scenario
+  - m365solution-scenario
+  - M365-security-compliance
 ms.topic: conceptual
 ms.custom: migrationguides
 ms.date: 01/11/2022
-ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
+ms.reviewer: 'jesquive, chventou, jonix, chriggs, owtho'
 ms.technology: mde
-ms.openlocfilehash: 6729d136da90c674c0d726f2bfe7321a75bdb79a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937177"
 ---
+
 # <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Solución de problemas al cambiar a Microsoft Defender para endpoint
 
 **Se aplica a:**
@@ -36,32 +32,32 @@ En este artículo se proporciona información de solución de problemas para los
 
 ## <a name="microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server"></a>Antivirus de Microsoft Defender se desinstala en Windows Server
 
-Al cambiar a Defender for Endpoint, comienza con la protección contra antivirus o antimalware que no es de Microsoft en modo activo. Como parte del proceso de configuración, puede configurar Antivirus de Microsoft Defender en modo pasivo. En ocasiones, la solución antivirus o antimalware que no es de Microsoft puede impedir que Antivirus de Microsoft Defender se ejecute en Windows Server. De hecho, puede parecer que Antivirus de Microsoft Defender se ha quitado de Windows server.
+Al cambiar a Defender for Endpoint, comienza con la protección contra antivirus o antimalware que no es de Microsoft en modo activo. Como parte del proceso de configuración, puede configurar Antivirus de Microsoft Defender en modo pasivo. En ocasiones, la solución antivirus o antimalware que no es de Microsoft puede impedir que Antivirus de Microsoft Defender se ejecute en Windows Server. De hecho, puede parecer que Antivirus de Microsoft Defender se ha quitado de Windows Server.
 
 Para resolver este problema, siga estos pasos:
 
 1. [Establezca la clave del Registro DisableAntiSpyware en false](#set-the-disableantispyware-registry-key-to-false).
-2. [Agregar Microsoft Defender para endpoint a la lista de exclusión](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
-3. [Establezca Antivirus de Microsoft Defender en modo pasivo manualmente](#set-microsoft-defender-antivirus-to-passive-mode-manually).
+2. [Agregue Microsoft Defender para endpoint a la lista de exclusión](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
+3. [Establece Antivirus de Microsoft Defender en modo pasivo manualmente](#set-microsoft-defender-antivirus-to-passive-mode-manually).
 
 ### <a name="set-the-disableantispyware-registry-key-to-false"></a>Establecer la clave del Registro DisableAntiSpyware en false
 
-La clave del Registro [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) se usó en el pasado para deshabilitar Antivirus de Microsoft Defender e implementar otro producto antivirus, como McAfee, Symantec u otros. **En general,** no debe tener esta clave del Registro en los dispositivos  y puntos de conexión de Windows; sin embargo, si lo ha configurado, este es el modo de establecer su valor en `DisableAntiSpyware` false:
+La [clave del Registro DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) se usó en el pasado para deshabilitar Antivirus de Microsoft Defender e implementar otro producto antivirus, como McAfee, Symantec u otros. **En general,** no debe tener esta clave del Registro en los dispositivos y puntos de conexión de Windows; sin embargo,  `DisableAntiSpyware` si lo ha configurado, este es el modo de establecer su valor en false:
 
-1. En el dispositivo Windows server, abra el Editor del Registro.
+1. En el Windows servidor, abra el Editor del Registro.
 
 2. Vaya a `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
 
 3. En esa carpeta, busque una entrada DWORD denominada **DisableAntiSpyware**.
    - Si no ve esa entrada, está todo establecido.
-   - Si ves **DisableAntiSpyware,** continúa con el paso 4.
+   - Si ve **DisableAntiSpyware**, vaya al paso 4.
 
 4. Haga clic con el botón secundario en el DWORD DisableAntiSpyware y, a continuación, elija **Modificar**.
 
-5. Establezca el valor en `0` . (Esta acción establece el valor de la clave del Registro en *false*.)
+5. Establezca el valor en `0`. (Esta acción establece el valor de la clave del Registro en *false*).
 
 > [!TIP]
-> Para obtener más información acerca de esta clave del Registro, [vea DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
+> Para obtener más información sobre esta clave del Registro, [vea DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
 
 ### <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list"></a>Agregar Microsoft Defender para endpoint a la lista de exclusión
 
@@ -92,7 +88,7 @@ Tipo: `REG_DWORD`
 Valor: `1`
 
 > [!NOTE]
-> Para que el modo pasivo funcione en puntos de conexión que ejecutan Windows Server 2016 y Windows Server 2012 R2, estos extremos deben incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
+> Para que el modo pasivo funcione en puntos de conexión que ejecuten Windows Server 2016 y Windows Server 2012 R2, estos extremos deben incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
 Para obtener más información, [vea Antivirus de Microsoft Defender en Windows Server](microsoft-defender-antivirus-on-windows-server.md).
 
@@ -106,7 +102,7 @@ Si usa una solución antivirus o antimalware que no sea de Microsoft en Windows 
 
 3. Reinicie el dispositivo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Antivirus de Microsoft Defender compatibilidad con otros productos de seguridad](microsoft-defender-antivirus-compatibility.md)
 

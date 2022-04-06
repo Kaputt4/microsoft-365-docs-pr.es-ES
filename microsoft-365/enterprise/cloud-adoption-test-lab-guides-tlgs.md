@@ -1,33 +1,28 @@
 ---
-title: Pruebas Microsoft 365 con guías de laboratorio de prueba (TLG)
+title: Pruebas Microsoft 365 guías de laboratorio de pruebas (TLG)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/14/2019
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
-- MET150
+  - MET150
 ms.collection:
-- Ent_O365
-- Strat_O365_Enterprise
+  - Ent_O365
+  - Strat_O365_Enterprise
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- Ent_TLGs
-- seo-marvel-apr2020
+  - Ent_TLGs
+  - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: use estas guías del laboratorio de pruebas (TLG) para configurar entornos de demostración, prueba de concepto o desarrollo y pruebas para Microsoft 365.'
-ms.openlocfilehash: 802c606375ff6bfd4f2a7d7e1a36301c94bf3b37
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174920"
 ---
-# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Pruebas Microsoft 365 con guías de laboratorio de prueba (TLG)
+
+# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Pruebas Microsoft 365 guías de laboratorio de pruebas (TLG)
 
 Las TLG le permiten conocer los productos Microsoft de manera rápida. Son ideales para situaciones en las que necesita evaluar una tecnología o configuración antes de decidir si es adecuada y comenzar el diseño, planeación y lanzamiento para los usuarios. Esta experiencia práctica, que consiste en desarrollar la herramienta por sus propios medios y lograr que funcione, le permitirá entender los requisitos de implementación de un nuevo producto o solución, de modo que pueda planear mejor el hospedaje en la producción.
   
