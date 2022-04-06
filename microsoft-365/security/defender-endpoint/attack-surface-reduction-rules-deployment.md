@@ -1,7 +1,7 @@
 ---
 title: Requisitos previos de implementación de reglas de ASR
 description: Proporciona información general y instrucciones de requisitos previos sobre la implementación de reglas de reducción de superficie de ataque (ASR).
-keywords: Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para punto de conexión, configurar reglas ASR
+keywords: Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -20,18 +20,18 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 4703867449877a35d6621b76072b9420a0cdbdec
-ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
+ms.openlocfilehash: 50b22bc5d1cf81754cc690808d67b6026991e296
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64520559"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468851"
 ---
 # <a name="asr-rules-deployment-prerequisites"></a>Requisitos previos de implementación de reglas de ASR
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Las superficies de ataque son todos los lugares donde su organización es vulnerable a ciberamenazas y ataques. Las superficies de ataque de la organización incluyen todos los lugares donde un atacante podría poner en peligro los dispositivos o redes de la organización. Reducir la superficie de ataque significa proteger los dispositivos y la red de la organización, lo que deja a los atacantes con menos formas de atacar. La configuración de reglas de reducción de superficie de ataque (ASR), una de las muchas características de seguridad que se encuentran en Microsoft Defender para punto de conexión, puede ayudar.
+Las superficies de ataque son todos los lugares donde su organización es vulnerable a ciberamenazas y ataques. Las superficies de ataque de la organización incluyen todos los lugares donde un atacante podría poner en peligro los dispositivos o redes de la organización. Reducir la superficie de ataque significa proteger los dispositivos y la red de la organización, lo que deja a los atacantes con menos formas de atacar. La configuración de reglas de reducción de superficie de ataque (ASR), una de las muchas características de seguridad que se encuentran en Microsoft Defender para endpoint, puede ser útil.
 
 Las reglas ASR se aplican a determinados comportamientos de software, como:
 
@@ -46,9 +46,9 @@ Durante la preparación inicial, es fundamental que comprenda las capacidades de
 >[!IMPORTANT]
 >En esta guía se proporcionan imágenes y ejemplos que le ayudarán a decidir cómo configurar reglas ASR; es posible que estas imágenes y ejemplos no reflejen las mejores opciones de configuración para el entorno.
 
-Antes de empezar, revisa [Información](overview-attack-surface-reduction.md) general sobre la reducción de superficie de ataque y [Desmitificando](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) las reglas de reducción de superficie de ataque: parte 1 para obtener información básica. Para comprender las áreas de cobertura y posible impacto, familiarícese con el conjunto actual de reglas ASR; consulta [Referencia de reglas de reducción de superficie de ataque](attack-surface-reduction-rules-reference.md).  Mientras se está familiarizando con el conjunto de reglas ASR, tome nota de las asignaciones GUID por regla; vea: [Reglas ASR y matriz de GUID](attack-surface-reduction-rules-reference.md#asr-rules-and-guids-matrix).
+Antes de empezar, revisa [Información](overview-attack-surface-reduction.md) general sobre la reducción de superficie de ataque y [Desmitificando](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) las reglas de reducción de superficie de ataque: parte 1 para obtener información básica. Para comprender las áreas de cobertura y posible impacto, familiarícese con el conjunto actual de reglas ASR; consulta [Referencia de reglas de reducción de superficie de ataque](attack-surface-reduction-rules-reference.md).
 
-Las reglas ASR son solo una funcionalidad de las capacidades de reducción de superficie de ataque dentro de Microsoft Defender para punto de conexión. En este documento se detallarán más detalles sobre cómo implementar las reglas ASR de forma eficaz para detener amenazas avanzadas como ransomware operado por humanos y otras amenazas.  
+Las reglas ASR son solo una funcionalidad de las capacidades de reducción de superficie de ataque dentro de Microsoft Defender para endpoint. En este documento se detallarán más detalles sobre cómo implementar las reglas ASR de forma eficaz para detener amenazas avanzadas como ransomware operado por humanos y otras amenazas.  
 
 ### <a name="rules-by-category"></a>Reglas por categoría
 
@@ -74,12 +74,12 @@ Aunque son posibles varios métodos de implementación de reglas ASR, esta guía
 - Azure Active Directory
 - Microsoft Endpoint Management (MEM)
 - Windows 10 y Windows 11 dispositivos
-- Microsoft Defender para punto de conexión licencias E5 o Windows E5
+- Microsoft Defender para endpoint E5 o Windows licencias E5
 
-Para aprovechar al máximo las reglas de ASR y los informes, se recomienda usar una Microsoft 365 Defender E5 o Windows de E5 y A5. Más información: [Requisitos mínimos para Microsoft Defender para punto de conexión](minimum-requirements.md).
+Para aprovechar al máximo las reglas de ASR y los informes, se recomienda usar una Microsoft 365 Defender E5 o Windows de E5 y A5. Más información: [Requisitos mínimos para Microsoft Defender para endpoint](minimum-requirements.md).
 
 >[!Note]
->Existen varios métodos para configurar reglas ASR. Las reglas ASR se pueden configurar con: Microsoft Endpoint Manager (MEM), PowerShell, directiva de grupo, Microsoft System Center Configuration Manager (SCCM), MEM OMA-URI.
+>Existen varios métodos para configurar reglas ASR. Las reglas ASR se pueden configurar mediante: Microsoft Endpoint Manager (MEM), PowerShell, directiva de grupo, Microsoft System Center Configuration Manager (SCCM), MEM OMA-URI.
 >Si usas una configuración de infraestructura diferente a la que se muestra para los requisitos de _infraestructura (arriba_ ), puedes obtener más información sobre cómo implementar reglas de reducción de superficie de ataque con otras configuraciones aquí: Habilitar reglas de reducción de superficie de [ataque](enable-attack-surface-reduction.md).  
 
 ### <a name="asr-rules-dependencies"></a>Dependencias de reglas ASR
@@ -125,7 +125,7 @@ Al igual que con cualquier implementación nueva a gran escala que podría afect
 > :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="Fases de implementación de reglas de ASR" lightbox="images/asr-rules-deployment-phases.png":::
 
 >[!Note]
->Para los clientes que usan un HIPS que no es de Microsoft y están cambiando Microsoft Defender para punto de conexión reglas de reducción de superficie de ataque: Microsoft recomienda a los clientes que ejecuten su solución DE HIPS en paralelo con su implementación de reglas ASR hasta el momento en que cambie del modo auditoría al modo de bloqueo. Ten en cuenta que debes contactar con el proveedor de antivirus de terceros para obtener recomendaciones de exclusión.  
+>Para los clientes que usan un HIPS que no es de Microsoft y están haciendo la transición a Microsoft Defender para las reglas de reducción de superficie de ataque de extremo: Microsoft aconseja a los clientes que ejecuten su solución DE HIPS en paralelo con la implementación de reglas ASR hasta el momento en que cambies del modo Auditoría al modo de bloqueo. Ten en cuenta que debes contactar con el proveedor de antivirus de terceros para obtener recomendaciones de exclusión.  
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Temas adicionales de esta colección de implementación
 
@@ -177,7 +177,7 @@ Al igual que con cualquier implementación nueva a gran escala que podría afect
 
 [Crear un plan de implementación para Windows](/windows/deployment/update/create-deployment-plan)
 
-[Use el control de acceso basado en roles (RBAC) y las etiquetas de ámbito para la TI distribuida en Intune](/mem/intune/fundamentals/scope-tags)
+[Usar el control de acceso basado en roles (RBAC) y las etiquetas de ámbito para la TI distribuida en Intune](/mem/intune/fundamentals/scope-tags)
 
 [Asignación de perfiles para dispositivos en Microsoft Intune](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
 

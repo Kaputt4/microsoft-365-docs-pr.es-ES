@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6abd2c26f8557277b4c1b13e5189a42fea9a60f1
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1ea1661a89585d46aa5fc234f6f88be66512c1be
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943393"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468707"
 ---
 # <a name="onboard-windows-devices-using-a-local-script"></a>Incorporar dispositivos Windows mediante un script local
 
@@ -41,23 +41,23 @@ También puedes incorporar manualmente dispositivos individuales a Defender para
 > El scripting local es un método de incorporación especial para evaluar Microsoft Defender para endpoint.
 > La frecuencia de informes de datos se establece más alta que con otros métodos de incorporación al incorporar mediante un script local.
 > Esta configuración se usa con fines de evaluación y normalmente no se usa en implementaciones de producción. Por este motivo, hay preocupaciones sobre el impacto ambiental, por lo que se recomienda limitar el número de implementaciones mediante scripts locales a diez.
-> Si va a implementar en un entorno de producción como se describió anteriormente, [use](configure-endpoints.md) otras opciones de implementación como directiva de grupo o Microsoft Endpoint Configuration Manager.
+> Si va a implementar en un entorno de producción como se describió anteriormente[, use](configure-endpoints.md) otras opciones de implementación como directiva de grupo o Microsoft Endpoint Configuration Manager.
 
-Consulte el [ARCHIVO PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint. 
+Consulte el [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) o [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint. 
 
 ## <a name="onboard-devices"></a>Incorporar dispositivos 
 
-1.  Abra el archivo de configuración .zip GP (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del asistente para incorporación de servicios. También puede obtener el paquete desde <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal:</a>
+1.  Abra el paquete de configuración de GP .zip archivo (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del Asistente para incorporación de servicios. También puede obtener el paquete desde <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
 
-    1. En el panel de navegación, **seleccione Configuración**  >  **Endpoints**  >  **Device management**  >  **Onboarding**.
+    1. En el panel de navegación, **seleccione Configuración** >  **EndpointsDevice** >  **managementOnboarding** > .
 
 
-Consulte el [ARCHIVO PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint.
+Consulte el [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) o [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) para ver las distintas rutas de acceso en la implementación de Defender para endpoint.
 
-1. Abra el archivo de configuración .zip GP (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del asistente para incorporación de servicios. También puede obtener el paquete desde <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal:</a>
-    1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** \> **Device management** \> **Onboarding**.
+1. Abra el paquete de configuración de GP .zip archivo (*WindowsDefenderATPOnboardingPackage.zip*) que descargó del Asistente para incorporación de servicios. También puede obtener el paquete desde <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
+    1. En el panel de navegación, seleccione **Configuración** \> **Incorporación de** la administración **de dispositivos** \> de puntos de **conexión**\>.
     2. Seleccione Windows 10 o Windows 11 como sistema operativo.
-    3. En el **campo Método de** implementación, seleccione Script **local**.
+    3. En el **campo Método de** implementación, seleccione **Script local**.
     4. Haga **clic en Descargar paquete** y guarde el .zip archivo.
 
 2. Extrae el contenido del paquete de configuración en una ubicación en el dispositivo que quieras incorporar (por ejemplo, el escritorio). Debe tener un archivo denominado *WindowsDefenderATPLocalOnboardingScript.cmd*.
@@ -66,7 +66,7 @@ Consulte el [ARCHIVO PDF](https://download.microsoft.com/download/5/6/0/5609001f
    1. Vaya a **Inicio** y escriba **cmd**.
    2. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
 
-    ![Window menú Inicio que apunta a Ejecutar como administrador.](images/run-as-admin.png)
+    :::image type="content" source="images/run-as-admin.png" alt-text="La ventana menú Inicio que apunta a Ejecutar como administrador" lightbox="images/run-as-admin.png":::
 
 4.  Escriba la ubicación del archivo de script. Si copió el archivo en el escritorio, escriba: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
@@ -75,13 +75,13 @@ Consulte el [ARCHIVO PDF](https://download.microsoft.com/download/5/6/0/5609001f
 Para obtener información sobre cómo validar manualmente que el dispositivo es compatible e informa correctamente de los datos del sensor, consulte [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).
 
 > [!TIP]
-> Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, vea [Ejecutar una prueba de detección en un](run-detection-test.md)punto de conexión de Microsoft Defender para endpoint recién incorporado.
+> Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un punto de conexión de Microsoft Defender para endpoint recién incorporado](run-detection-test.md).
 
 ## <a name="configure-sample-collection-settings"></a>Configuración de la colección de ejemplo
 
-Para cada dispositivo, puedes establecer un valor de configuración para especificar si se pueden recopilar muestras del dispositivo cuando se realiza una solicitud a través de Microsoft 365 Defender enviar un archivo para un análisis profundo.
+Para cada dispositivo, puedes establecer un valor de configuración para especificar si se pueden recopilar muestras del dispositivo cuando se realiza una solicitud a través de Microsoft 365 Defender para enviar un archivo para un análisis profundo.
 
-Puedes configurar manualmente la configuración de uso compartido de ejemplo en el dispositivo mediante *regedit* o creando y ejecutando un *archivo .reg.*
+Puedes configurar manualmente la configuración de uso compartido de ejemplo en el dispositivo mediante *regedit* o creando y ejecutando un *archivo .reg* .
 
 La configuración se establece mediante la siguiente entrada de clave del Registro:
 
@@ -100,7 +100,7 @@ El valor predeterminado en caso de que la clave del Registro no exista es 1.
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>Ejecutar una prueba de detección para comprobar la incorporación
 
-Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint](run-detection-test.md)recién incorporado.
+Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado](run-detection-test.md).
 
 ## <a name="offboard-devices-using-a-local-script"></a>Dispositivos offboard con un script local
 
@@ -110,9 +110,9 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 > Las directivas de incorporación y de incorporación no deben implementarse en el mismo dispositivo al mismo tiempo, de lo contrario esto provocará colisiones impredecibles.
 
 1. Obtener el paquete de offboarding desde <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
-    1. En el panel de navegación, **seleccione Configuración** \> **Endpoints** Administración \> **de dispositivos** \> **Offboarding**.
+    1. En el panel de navegación, seleccione **Configuración** \> Desaborde de administración de **dispositivos** \> **de puntos de** \> **conexión**.
     2. Seleccione Windows 10 o Windows 11 como sistema operativo.
-    3. En el **campo Método de** implementación, seleccione Script **local**.
+    3. En el **campo Método de** implementación, seleccione **Script local**.
     4. Haga **clic en Descargar paquete** y guarde el .zip archivo.
 
 2. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que puedan tener acceso los dispositivos. Debe tener un archivo denominado *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
@@ -121,7 +121,7 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
    1. Vaya a **Inicio** y escriba **cmd**.
    2. Haga clic derecho en **Símbolo del sistema** y seleccione **Ejecutar como administrador**.
 
-        ![Window menú Inicio que apunta a Ejecutar como administrador.](images/run-as-admin.png)
+      :::image type="content" source="images/run-as-admin.png" alt-text="El Windows menú Inicio que apunta a la opción Ejecutar como administrador" lightbox="images/run-as-admin.png":::
 
 4. Escriba la ubicación del archivo de script. Si copió el archivo en el escritorio, escriba: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 

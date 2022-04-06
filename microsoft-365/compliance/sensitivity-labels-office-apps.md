@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2bfd7dfd0cf56c8546cd21e5127bc8ef432e1cc5
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 0ca67ecb87b48d551ec4fb740e8732b8196c872c
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64594782"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64637926"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -98,7 +98,7 @@ Los números indicados son las versiones mínimas de la aplicación Office reque
 |[Permitir a los usuarios asignar permisos: <br /> - No reenviar](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Canal actual: 1910+ <br /><br> Canal mensual para empresas: 1910+ <br /><br> Canal semestral para empresas: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
 |[Permitir a los usuarios asignar permisos: <br /> - Solo cifrar](encryption-sensitivity-labels.md#let-users-assign-permissions)  | Canal actual: 2011+ <br /><br> Canal mensual para empresas: 2011+ <br /><br> Canal semestral para empresas: 2108+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | Sí |
 |[Requerir a los usuarios que apliquen una etiqueta a sus correos electrónicos y documentos ](#require-users-to-apply-a-label-to-their-email-and-documents)   | Canal actual: 2101+ <br /><br> Canal mensual para empresas: 2101+ <br /><br> Canal semestral para empresas: 2108+ | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Sí                |
-|[Auditoría de la actividad de los usuarios relacionada con las etiquetas](#auditing-labeling-activities) | Canal actual: 2011+ <br /><br> Canal mensual para empresas: 2011+ <br /><br> Canal semestral para empresas: 2022+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Sí |
+|[Auditoría de la actividad de los usuarios relacionada con las etiquetas](#auditing-labeling-activities) | Canal actual: 2011+ <br /><br> Canal mensual para empresas: 2011+ <br /><br> Canal semestral para empresas: 2108+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Sí |
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de tipos de información confidencial                    | Canal actual: 2009+ <br /><br> Canal mensual para empresas: 2009+ <br /><br> Canal semestral para empresas: 2102+ | 16.44+ <sup>\*</sup>                    | En revisión           | En revisión               | Sí |
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /> - Uso de clasificadores capacitados                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.49+ | En revisión           | En revisión               | Sí |
 |[Diferentes opciones de configuración para etiquetas predeterminadas y etiquetas obligatorias](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Canal actual: 2105+ <br /><br> Canal mensual para empresas: 2105+ <br /><br> Canal semestral para empresas: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Sí |

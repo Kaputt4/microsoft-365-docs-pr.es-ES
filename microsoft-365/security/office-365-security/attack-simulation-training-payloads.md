@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Los administradores pueden aprender a crear cargas personalizadas para el aprendizaje de simulación de ataques en Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
-ms.openlocfilehash: d670236aa81f4b5086263a75bbeceb8ca7e1e25f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8aa81a1940e564e9877af6a1848ff439aea58d8e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679772"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468509"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Crear cargas personalizadas para el entrenamiento de simulación de ataques en Defender para Office 365
 
@@ -147,7 +147,7 @@ En la **página Configurar carga** útil, es el momento de compilar la carga. Mu
       - **Nombre de** inserción: el valor que se agrega en el cuerpo del mensaje es `${userName}`.
       - **Insertar correo** electrónico: el valor que se agrega en el cuerpo del mensaje es `${emailAddress}`.
 
-      ![La sección Mensaje de correo electrónico de la página Configurar carga útil en el Asistente para la creación de carga en Aprendizaje de simulación de ataques en Microsoft Defender para Office 365.](../../media/attack-sim-training-payloads-configure-payload-email-message.png)
+      :::image type="content" source="../../media/attack-sim-training-payloads-configure-payload-email-message.png" alt-text="La sección Mensaje de correo electrónico de la página Configurar carga útil en el asistente para creación de carga en Aprendizaje de simulación de ataques en Microsoft Defender para Office 365" lightbox="../../media/attack-sim-training-payloads-configure-payload-email-message.png":::
 
       **Control de vínculo de** suplantación de identidad: este control solo está disponible si seleccionó **Credential harvest**, **Link in attachment** o **Drive-by URL** en la **página Seleccionar técnica** . Use este control para insertar la dirección URL que seleccionó anteriormente en la sección vínculo **Phishing** .
 
@@ -204,7 +204,7 @@ En la **página Agregar indicadores** , haga clic **en Agregar indicador**. En e
 
   Si selecciona el asunto del mensaje de correo electrónico o el cuerpo del mensaje como la ubicación del indicador, hay disponible **un botón Seleccionar** texto. Haga clic en este botón para seleccionar el texto en el asunto del mensaje o el cuerpo del mensaje donde desea que aparezca el indicador. Cuando haya terminado, haga clic en **Seleccionar**.
 
-  ![Ubicación de texto seleccionada en el cuerpo del mensaje para agregar a un indicador en el asistente para la creación de carga útil en el entrenamiento de simulación de ataques.](../../media/attack-sim-training-payloads-add-indicators-select-location.png)
+  :::image type="content" source="../../media/attack-sim-training-payloads-add-indicators-select-location.png" alt-text="La ubicación de texto seleccionada en el cuerpo del mensaje para agregar a un indicador en el asistente para creación de carga útil en el entrenamiento de simulación de ataques" lightbox="../../media/attack-sim-training-payloads-add-indicators-select-location.png":::
 
   - **Descripción del** indicador: puede aceptar la descripción predeterminada del indicador o personalizarla.
 
@@ -232,7 +232,7 @@ En la página **Principal de carga de revisión** , puede seleccionar **Editar**
 
 Cuando haya terminado, haga clic en **Enviar**. En la página de confirmación que aparece, haga clic en **Listo**.
 
-![Revise la página de carga útil del aprendizaje de simulación de ataque en el portal Microsoft 365 Defender ataque.](../../media/attack-sim-training-payloads-review-payload.png)
+:::image type="content" source="../../media/attack-sim-training-payloads-review-payload.png" alt-text="La página Revisar carga útil del aprendizaje de simulación de ataque en el portal de Microsoft 365 Defender ataques" lightbox="../../media/attack-sim-training-payloads-review-payload.png":::
 
 > [!IMPORTANT]
 > Las cargas que haya creado tendrán el valor **Tenant** para la **propiedad Source** . Al crear simulaciones y seleccionar cargas, asegúrese de que no filtra el valor **de** origen **Inquilino**.

@@ -16,16 +16,16 @@ ms.collection: M365-security-compliance
 description: Obtenga lo último en aislamiento basado en hardware. Evite que ataques actuales y emergentes como vulnerabilidades o vínculos malintencionados interrumpan la productividad de los empleados y la seguridad empresarial.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: da61ee2f5e29501e033ad44bc3fdb04ee2c042f0
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 1a8f752fd05499c9fec0d0c337c9ffee430f154f
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473329"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64638079"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Protección de aplicaciones para Office para administradores
 
-**Se aplica a:** Word, Excel y PowerPoint para Microsoft 365, Windows 10 Enterprise, Windows 11 Enterprise
+**Se aplica a:** Word, Excel y PowerPoint cho Microsoft 365, Windows 10 Enterprise, Windows 11 Enterprise
 
 Protección de aplicaciones de Microsoft Defender para Office (Application Guard for Office) ayuda a evitar que los archivos que no son de confianza tengan acceso a recursos de confianza, lo que mantiene a su empresa a salvo de ataques nuevos y emergentes. En este artículo se guía a los administradores a través de la configuración de dispositivos para una vista previa de Application Guard para Office. Proporciona información sobre los requisitos del sistema y los pasos de instalación para habilitar Application Guard para Office en un dispositivo.
 
@@ -39,7 +39,7 @@ Protección de aplicaciones de Microsoft Defender para Office (Application Guard
 
 ### <a name="minimum-software-requirements"></a>Requisitos mínimos de software
 
-* **Windows**: Windows 10 Enterprise, versión de compilación de cliente 2004 (20H1) compilación 19041 o posterior. Todas las versiones de Windows 11 son compatibles. 
+* **Windows**: Windows 10 Enterprise, versión de compilación de cliente 2004 (20H1) compilación 19041 o posterior. Todas las versiones Windows 11 son compatibles. 
 * **Office**: Office canal actual y canal de Enterprise mensual, versión de compilación 2011 16.0.13530.10000 o posterior. Office Semi-Annual Enterprise, versión de compilación 2108 o posterior. Se admiten versiones de 32 bits y 64 bits de Office.
 * **Paquete de actualización**: Windows 10 actualización de seguridad mensual [acumulativa KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
@@ -51,7 +51,7 @@ Para obtener más información sobre Office de actualización, vea [Overview of 
 * Microsoft 365 E5 o Seguridad de Microsoft 365 E5
 
 > [!NOTE]
-> Aplicaciones Microsoft 365 para empresas con la licencia basada en dispositivos no tienen acceso a Application Guard para Office.
+> Aplicaciones Microsoft 365 para empresas con la activación de equipos compartidos o las licencias basadas en dispositivos no tienen acceso a Application Guard para Office.
 
 ## <a name="deploy-application-guard-for-office"></a>Implementar Application Guard para Office
 
@@ -186,15 +186,15 @@ Si encuentra algún problema al iniciar Application Guard para Office, se le rec
 
 También puede enviar comentarios desde dentro de Office si el problema se produce cuando Office documentos se abren en Application Guard. Consulte el manual [Office Insider para](https://insider.office.com/handbook) enviar comentarios.
 
-## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>Integración con Microsoft Defender para Endpoint y Microsoft Defender para Office 365
+## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>Integración con Pertahanan Microsoft untuk Titik Akhir y Pertahanan Microsoft untuk Office 365
 
-Application Guard for Office se integra con Microsoft Defender for Endpoint para proporcionar supervisión y alertas sobre actividad malintencionada que se produce en el entorno aislado.
+Application Guard for Office se integra con Pertahanan Microsoft untuk Titik Akhir para proporcionar supervisión y alertas sobre actividad malintencionada que se produce en el entorno aislado.
 
-[Caja fuerte Documentos de Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) es una característica que usa Microsoft Defender para endpoint para examinar documentos abiertos en Application Guard para Office. Para obtener una capa adicional de protección, los usuarios no pueden dejar Application Guard Office hasta que se hayan determinado los resultados del examen.
+[Caja fuerte Documents in Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) es una característica que usa Pertahanan Microsoft untuk Titik Akhir para examinar documentos abiertos en Application Guard para Office. Para obtener una capa adicional de protección, los usuarios no pueden dejar Application Guard Office hasta que se hayan determinado los resultados del examen.
 
-Microsoft Defender para endpoint es una plataforma de seguridad diseñada para ayudar a las redes empresariales a prevenir, detectar, investigar y responder a amenazas avanzadas. Para obtener más información acerca de esta plataforma, consulte [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp). Para obtener más información sobre la incorporación de dispositivos a esta plataforma, consulta Incorporación de dispositivos [al servicio Microsoft Defender para endpoints](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
+Pertahanan Microsoft untuk Titik Akhir es una plataforma de seguridad diseñada para ayudar a las redes empresariales a prevenir, detectar, investigar y responder a amenazas avanzadas. Para obtener más información acerca de esta plataforma, [consulte Pertahanan Microsoft untuk Titik Akhir](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp). Para obtener más información acerca de la incorporación de dispositivos a esta plataforma, consulta Incorporación de dispositivos [al servicio Pertahanan Microsoft untuk Titik Akhir usuario](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
 
-También puedes configurar Microsoft Defender para Office 365 para que funcione con Defender para endpoint. Para obtener más información, consulta [Integrar Defender para Office 365 con Microsoft Defender para endpoint](integrate-office-365-ti-with-mde.md).
+También puedes configurar los Pertahanan Microsoft untuk Office 365 para que funcionen con Defender for Endpoint. Para obtener más información, consulta [Integrar Defender pre Office 365 con Pertahanan Microsoft untuk Titik Akhir](integrate-office-365-ti-with-mde.md).
 
 ## <a name="limitations-and-considerations"></a>Limitaciones y consideraciones
 
@@ -209,7 +209,7 @@ También puedes configurar Microsoft Defender para Office 365 para que funcione 
   
 * El contenido activo en documentos como macros y controles ActiveX están deshabilitados en Application Guard para Office. Los usuarios deben quitar la protección de Protección de aplicaciones para habilitar el contenido activo.
 
-* Los archivos que no son de confianza de recursos compartidos de red o archivos compartidos de OneDrive, OneDrive para la Empresa o SharePoint Online de una organización diferente se abren como de solo lectura en Application Guard. Los usuarios pueden guardar una copia local de estos archivos para continuar trabajando en el contenedor o quitar la protección para trabajar directamente con el archivo original.
+* Los archivos que no son de confianza de recursos compartidos de red o archivos compartidos de OneDrive, OneDrive Entreprise o SharePoint Online de una organización diferente se abren como de solo lectura en Application Guard. Los usuarios pueden guardar una copia local de estos archivos para continuar trabajando en el contenedor o quitar la protección para trabajar directamente con el archivo original.
 
 * Los archivos protegidos por Information Rights Management (IRM) se bloquean de forma predeterminada. Si los usuarios desean abrir estos archivos en la vista protegida, un administrador debe configurar la configuración de directiva para los tipos de archivo no admitidos para la organización.
 
@@ -241,5 +241,5 @@ Cuando se cumple esta heurística, Office creará previamente un contenedor de A
 * La configuración predeterminada para la directiva de protección de tipos de archivo no admitidos es bloquear la apertura de tipos de archivo no admitidos que están cifrados o tienen establecido Information Rights Management (IRM). Esto incluye archivos que tienen etiquetas Microsoft Information Protection de confidencialidad mediante cifrado (confidencial o extremadamente confidencial).
 * Los archivos CSV y HTML no se admiten en este momento.
 * Application Guard for Office actualmente no funciona con volúmenes comprimidos NTFS. Si ve un error "ERROR_VIRTUAL_DISK_LIMITATION" intente descomprimir el volumen.
-* Las actualizaciones de .NET pueden provocar que los archivos no se abran en Application Guard. Como solución alternativa, los usuarios pueden reiniciar su dispositivo cuando se tomen este error. Obtenga más información sobre el problema en [Recibir un mensaje de error al intentar abrir Protección de aplicaciones de Windows Defender o Windows espacio aislado](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
+* Las actualizaciones de .NET pueden provocar que los archivos no se abran en Application Guard. Como solución alternativa, los usuarios pueden reiniciar su dispositivo cuando se tomen este error. Obtenga más información sobre el problema en [Recibir un mensaje de error al intentar abrir Windows Defenderin sovellussuoja o Windows-eristys](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
 * Consulte [Preguntas más frecuentes: Protección de aplicaciones de Microsoft Defender para obtener información adicional.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 

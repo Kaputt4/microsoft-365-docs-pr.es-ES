@@ -1,7 +1,7 @@
 ---
-title: Implementar Microsoft Defender para punto de conexión en Linux con Puppet
+title: Implementación de Microsoft Defender para punto de conexión en Linux con Puppet
 ms.reviewer: ''
-description: Describe cómo implementar Microsoft Defender para punto de conexión linux con Puppet.
+description: Describe cómo implementar Microsoft Defender para punto de conexión en Linux mediante Puppet.
 keywords: microsoft, defender, Microsoft Defender para punto de conexión, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,14 +16,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a8d92e67e45074fb4084e7fbbc1fa7359b34db36
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 5ec3eb5d12933b33f4af7d5af96b4ab54fda4604
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568388"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64663806"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Implementar Microsoft Defender para punto de conexión en Linux con Puppet
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Implementación de Microsoft Defender para punto de conexión en Linux con Puppet
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,27 +32,27 @@ ms.locfileid: "64568388"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-En este artículo se describe cómo implementar Defender for Endpoint en Linux con Puppet. Una implementación correcta requiere la finalización de todas las tareas siguientes:
+En este artículo se describe cómo implementar Defender para punto de conexión en Linux mediante Puppet. Una implementación correcta requiere la finalización de todas las tareas siguientes:
 
-- [Descargar el paquete de incorporación](#download-the-onboarding-package)
+- [Descarga del paquete de incorporación](#download-the-onboarding-package)
 - [Crear manifiesto de Puppet](#create-a-puppet-manifest)
 - [Implementación](#deployment)
-- [Comprobar el estado de incorporación](#check-onboarding-status)
+- [Comprobación del estado de incorporación](#check-onboarding-status)
 
 ## <a name="prerequisites-and-system-requirements"></a>Requisitos previos y requisitos del sistema
 
- Para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión de software actual, consulte la [página principal defender para endpoint en Linux](microsoft-defender-endpoint-linux.md).
+ Para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión de software actual, consulte [la página principal de Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md).
 
-Además, para la implementación de Puppet, debes familiarizarte con las tareas de administración de Puppet, configurar Puppet y saber cómo implementar paquetes. Puppet tiene muchas maneras de completar la misma tarea. Estas instrucciones suponen la disponibilidad de módulos de Puppet compatibles, como *aptos* para ayudar a implementar el paquete. Su organización puede usar un flujo de trabajo diferente. Consulte la documentación [de Puppet](https://puppet.com/docs) para obtener más información.
+Además, para la implementación de Puppet, debe estar familiarizado con las tareas de administración de Puppet, tener Puppet configurado y saber cómo implementar paquetes. Puppet tiene muchas maneras de completar la misma tarea. Estas instrucciones asumen la disponibilidad de los módulos de Puppet compatibles, como *apt* para ayudar a implementar el paquete. Su organización podría usar un flujo de trabajo diferente. Consulte la [documentación de Puppet](https://puppet.com/docs) para obtener más información.
 
-## <a name="download-the-onboarding-package"></a>Descargar el paquete de incorporación
+## <a name="download-the-onboarding-package"></a>Descarga del paquete de incorporación
 
 Descargue el paquete de incorporación desde Microsoft 365 Defender portal:
 
-1. En Microsoft 365 Defender portal, vaya **a Configuración > Endpoints > Administración de dispositivos > incorporación**.
-2. En el primer menú desplegable, seleccione **Linux Server** como sistema operativo. En el segundo menú desplegable, seleccione **La herramienta de administración de configuración de Linux preferida** como método de implementación.
+1. En Microsoft 365 Defender portal, vaya a **Configuración > Puntos de conexión > Administración de dispositivos > Incorporación**.
+2. En el primer menú desplegable, seleccione **Servidor Linux** como sistema operativo. En el segundo menú desplegable, seleccione **La herramienta de administración de configuración de Linux preferida** como método de implementación.
 3. Seleccione **Descargar paquete de incorporación**. Guarde el archivo como WindowsDefenderATPOnboardingPackage.zip.
 
    :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="La opción para descargar el paquete incorporado" lightbox="images/portal-onboarding-linux-2.png":::
@@ -62,28 +62,33 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal:
     ```bash
     ls -l
     ```
+
     ```Output
     total 8
     -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
     ```
+
 5. Extraiga el contenido del archivo.
+
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
     ```
+
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: mdatp_onboard.json
     ```
 
-## <a name="create-a-puppet-manifest"></a>Crear un manifiesto de Puppet
+## <a name="create-a-puppet-manifest"></a>Creación de un manifiesto de Puppet
 
-Debes crear un manifiesto de Puppet para implementar Defender for Endpoint en Linux en dispositivos administrados por un servidor de Puppet. En este ejemplo se usa los módulos *apt* y *yumrepo* disponibles en los puppetlabs y se supone que los módulos se han instalado en el servidor de Puppet.
+Debe crear un manifiesto de Puppet para implementar Defender para punto de conexión en Linux en dispositivos administrados por un servidor de Puppet. En este ejemplo se hace uso de los módulos *apt* y *yumrepo* disponibles en puppetlabs y se supone que los módulos se han instalado en el servidor de Puppet.
 
-Crea las *carpetas install_mdatp/archivos* *y install_mdatp/manifiestos* en la carpeta módulos de la instalación de Puppet. Esta carpeta normalmente se encuentra *en /etc/puppetlabs/code/environments/production/modules* en el servidor de Puppet. Copie el archivo mdatp_onboard.json creado anteriormente en la *carpeta install_mdatp/* files. Crear un *init.pp* que contiene las instrucciones de implementación:
+Cree las carpetas *install_mdatp/files* y *install_mdatp/manifests* en la carpeta modules de la instalación de Puppet. Esta carpeta se encuentra normalmente en */etc/puppetlabs/code/environments/production/modules* en el servidor de Puppet. Copie el archivo mdatp_onboard.json creado anteriormente en la carpeta *install_mdatp/files* . Creación de un *archivo init.pp* archivo que contiene las instrucciones de implementación:
 
 ```bash
 pwd
 ```
+
 ```Output
 /etc/puppetlabs/code/environments/production/modules
 ```
@@ -91,6 +96,7 @@ pwd
 ```bash
 tree install_mdatp
 ```
+
 ```Output
 install_mdatp
 ├── files
@@ -101,18 +107,18 @@ install_mdatp
 
 ### <a name="contents-of-install_mdatpmanifestsinitpp"></a>Contenido de `install_mdatp/manifests/init.pp`
 
-Defender para Endpoint en Linux se puede implementar desde uno de los siguientes canales (que se indican a continuación como *[canal]*): *insiders-fast*, *insiders-slow* o *prod*. Cada uno de estos canales corresponde a un repositorio de software de Linux.
+Defender para punto de conexión en Linux se puede implementar desde uno de los siguientes canales (que se indica a continuación como *[canal]*): *insiders-fast*, *insiders-slow* o *prod*. Cada uno de estos canales corresponde a un repositorio de software linux.
 
-La elección del canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen al dispositivo. Los dispositivos *de insiders-fast* son los primeros en recibir actualizaciones y nuevas características, seguidos más adelante por *insiders-slow* y, por último, por *prod*.
+La elección del canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen al dispositivo. Los dispositivos de *insiders-fast* son los primeros en recibir actualizaciones y nuevas características, seguidos más adelante por *los usuarios internos lentos* y, por último, por *producción*.
 
-Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa para que usen *insiders-fast* o *insiders-slow*.
+Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa para usar *insiders-fast* o *insiders-slow*.
 
 > [!WARNING]
-> Cambiar el canal después de la instalación inicial requiere que se vuelva a instalar el producto. Para cambiar el canal de producto: desinstale el paquete existente, vuelva a configurar el dispositivo para que use el nuevo canal y siga los pasos descritos en este documento para instalar el paquete desde la nueva ubicación.
+> Cambiar el canal después de la instalación inicial requiere que se vuelva a instalar el producto. Para cambiar el canal del producto: desinstale el paquete existente, vuelva a configurar el dispositivo para que use el nuevo canal y siga los pasos de este documento para instalar el paquete desde la nueva ubicación.
 
-Tenga en cuenta la distribución y la versión e identifique la entrada más cercana para ella en `https://packages.microsoft.com/config/[distro]/`.
+Anote la distribución y la versión e identifique la entrada más cercana en `https://packages.microsoft.com/config/[distro]/`.
 
-En los comandos siguientes, reemplace *[distro]* y *[version]* por la información que haya identificado:
+En los comandos siguientes, reemplace *[distro]* y *[version]* por la información que ha identificado:
 
 > [!NOTE]
 > En el caso de RedHat, Oracle Linux, Amazon Linux 2 y CentOS 8, reemplace *[distro]* por 'rhel'.
@@ -181,26 +187,28 @@ $version = undef
 
 ## <a name="deployment"></a>Implementación
 
-Incluir el manifiesto anterior en su site.pp archivo:
+Incluir el manifiesto anterior en el sitio.pp Archivo:
 
 ```bash
 cat /etc/puppetlabs/code/environments/production/manifests/site.pp
 ```
+
 ```Output
 node "default" {
     include install_mdatp
 }
 ```
 
-Los dispositivos de agente inscritos sondean periódicamente el servidor de Puppet e instalan nuevos perfiles y directivas de configuración tan pronto como se detectan.
+Los dispositivos de agente inscritos sondean periódicamente Puppet Server e instalan nuevos perfiles de configuración y directivas en cuanto se detectan.
 
-## <a name="monitor-puppet-deployment"></a>Supervisar la implementación de Puppet
+## <a name="monitor-puppet-deployment"></a>Supervisión de la implementación de Puppet
 
-En el dispositivo de agente, también puedes comprobar el estado de incorporación ejecutando:
+En el dispositivo del agente, también puede comprobar el estado de incorporación ejecutando:
 
 ```bash
 mdatp health
 ```
+
 ```Output
 ...
 licensed                                : true
@@ -208,39 +216,39 @@ org_id                                  : "[your organization identifier]"
 ...
 ```
 
-- **licencia**: esto confirma que el dispositivo está vinculado a su organización.
+- **con licencia**: esto confirma que el dispositivo está asociado a su organización.
 
-- **orgId**: este es el identificador de la organización defender para endpoint.
+- **orgId**: este es el identificador de la organización de Defender para punto de conexión.
 
-## <a name="check-onboarding-status"></a>Comprobar el estado de incorporación
+## <a name="check-onboarding-status"></a>Comprobación del estado de incorporación
 
-Puedes comprobar que los dispositivos se han incorporado correctamente mediante la creación de un script. Por ejemplo, el siguiente script comprueba el estado de incorporación de los dispositivos inscritos:
+Puede comprobar que los dispositivos se han incorporado correctamente mediante la creación de un script. Por ejemplo, el siguiente script comprueba el estado de incorporación de los dispositivos inscritos:
 
 ```bash
 mdatp health --field healthy
 ```
 
-El comando anterior imprime si `1` el producto está incorporado y funciona según lo esperado.
+El comando anterior imprime `1` si el producto está incorporado y funciona según lo esperado.
 
 > [!IMPORTANT]
-> Cuando el producto se inicia por primera vez, descarga las definiciones de antimalware más recientes. Según la conexión a Internet, esto puede tardar unos minutos. Durante este tiempo, el comando anterior devuelve un valor de `0`.
+> Cuando el producto se inicia por primera vez, descarga las definiciones de antimalware más recientes. Dependiendo de la conexión a Internet, esto puede tardar hasta unos minutos. Durante este tiempo, el comando anterior devuelve un valor de `0`.
 
-Si el producto no está en buen estado, el código de salida (que se puede comprobar `echo $?`) indica el problema:
+Si el producto no es correcto, el código de salida (que se puede comprobar a través `echo $?`de ) indica el problema:
 
 - 1 si el dispositivo aún no está incorporado.
 - 3 si no se puede establecer la conexión con el demonio.
 
-## <a name="log-installation-issues"></a>Problemas de instalación del registro
+## <a name="log-installation-issues"></a>Problemas de instalación de registros
 
- Para obtener más información sobre cómo buscar el registro generado automáticamente que crea el instalador cuando se produce un error, vea [Log installation issues](linux-resources.md#log-installation-issues).
+ Para obtener más información sobre cómo buscar el registro generado automáticamente que crea el instalador cuando se produce un error, consulte [Problemas de instalación de registros](linux-resources.md#log-installation-issues).
 
 ## <a name="operating-system-upgrades"></a>Actualizaciones del sistema operativo
 
-Al actualizar el sistema operativo a una nueva versión principal, primero debes desinstalar Defender para Endpoint en Linux, instalar la actualización y, por último, volver a configurar Defender para Endpoint en Linux en el dispositivo.
+Al actualizar el sistema operativo a una nueva versión principal, primero debe desinstalar Defender para punto de conexión en Linux, instalar la actualización y, por último, volver a configurar Defender para punto de conexión en Linux en el dispositivo.
 
 ## <a name="uninstallation"></a>Desinstalación
 
-Crear un módulo *remove_mdatp* similar a *install_mdatp* con el siguiente contenido en *init.pp* archivo:
+Cree un módulo *remove_mdatp* similar a *install_mdatp* con el siguiente contenido en *init.pp.* Archivo:
 
 ```bash
 class remove_mdatp {

@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 2ca980a3f4f66b1b2d0a838f16c6ac7f138bc979
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: a9872e707bbbb6546d6801ac88ebd28f23fb9806
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64570093"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651331"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Información general para administrar dispositivos con Intune
 
@@ -33,7 +33,7 @@ Aunque Microsoft 365 incluye varias herramientas y metodologías para administra
 
 - Tienes pensado inscribir dispositivos en Intune a través de Azure AD Join (que incluye Unión a Azure AD híbrido).
 - Tienes pensado inscribir manualmente dispositivos en Intune.
-- Permites dispositivos BYOD con planes para implementar la protección de aplicaciones y datos o inscribes estos dispositivos en la administración.
+- Permitir que los dispositivos BYOD con planes implementen la protección de aplicaciones y datos o inscriban estos dispositivos en Intune.
 
 Por otro lado, si tu entorno incluye planes para la administración conjunta, incluidos Microsoft Endpoint Configuration Manager, consulta la [Documentación de administración conjunta](/mem/configmgr/comanage/) para desarrollar la mejor ruta de acceso para su organización. Si tu entorno incluye planes para PC en la nube Windows 365, consulta la [Documentación de Windows 365 Enterprise](/windows-365/enterprise/) para desarrollar la mejor ruta de acceso para tu organización.
 
@@ -49,7 +49,7 @@ Esta serie de artículos te guían a través de un proceso recomendado para admi
 
 ## <a name="implementing-the-layers-of-protection-on-and-for-devices"></a>Implementación de las capas de protección en los dispositivos y para ellos
 
-La protección de los datos y las aplicaciones en los dispositivos y para los propios dispositivos es un proceso de varias capas. Hay algunas protecciones que puedes obtener en dispositivos no administrados. Después de inscribir dispositivos en la administración, puedes implementar controles más sofisticados. Cuando se implementa la protección contra amenazas en los puntos de conexión, obtienes aún más información y la capacidad de corregir automáticamente algunos ataques. Por último, si tu organización ha puesto el trabajo en identificar datos confidenciales, aplicar etiquetas y clasificación, y configurar directivas de prevención de pérdida de datos, puedes obtener una protección aún más pormenorizada de los datos en los puntos de conexión.
+La protección de los datos y las aplicaciones en los dispositivos y para los propios dispositivos es un proceso de varias capas. Hay algunas protecciones que puedes obtener en dispositivos no administrados. Después de inscribir dispositivos en Intune, puede implementar controles más sofisticados. Cuando se implementa la protección contra amenazas en los puntos de conexión, obtienes aún más información y la capacidad de corregir automáticamente algunos ataques. Por último, si tu organización ha puesto el trabajo en identificar datos confidenciales, aplicar etiquetas y clasificación, y configurar directivas de prevención de pérdida de datos, puedes obtener una protección aún más pormenorizada de los datos en los puntos de conexión.
 
 En el diagrama siguiente se muestran los bloques de creación para lograr una posición de seguridad de Confianza cero para Microsoft 365 y otras aplicaciones SaaS que se introducen en este entorno. Los elementos relacionados con los dispositivos se numeran del 1 al 7. Estos son los niveles de protección que los administradores de dispositivos coordinarán con otros administradores para lograr.
 
@@ -60,7 +60,7 @@ En esta ilustración:
 |&nbsp;|Paso|Descripción|Requisitos de licencias|
 |---|---|---|---|
 |1|Configurar el punto de partida de directivas de acceso de dispositivos e identidad de Confianza cero|Trabaja con el administrador de identidades para [Implementar la protección de datos de directivas de protección de aplicaciones (APP) de nivel 2](manage-devices-with-intune-app-protection.md). Estas directivas no requieren que administres dispositivos. Las directivas de APP se configuran en Intune. El administrador de identidades configura una directiva de acceso condicional para requerir las aplicaciones aprobadas.|E3, E5, F1, F3, F5|
-|2|Inscribir dispositivos en la administración|Esta tarea requiere más planeamiento y tiempo para implementar. Microsoft recomienda usar Intune para inscribir dispositivos, ya que esta herramienta proporciona una integración óptima. Hay varias opciones para inscribir dispositivos, en función de la plataforma. Por ejemplo, los dispositivos Windows se pueden inscribir mediante Azure AD Join o Autopilot. Debe revisar las opciones de cada plataforma y decidir qué opción de inscripción es la mejor para su entorno. Consulta [Paso 3: Inscribir dispositivos en la administración para](manage-devices-with-intune-enroll.md) obtener más información.|E3, E5, F1, F3, F5|
+|2|Inscribir dispositivos en Intune|Esta tarea requiere más planeamiento y tiempo para implementar. Microsoft recomienda usar Intune para inscribir dispositivos, ya que esta herramienta proporciona una integración óptima. Hay varias opciones para inscribir dispositivos, en función de la plataforma. Por ejemplo, los dispositivos Windows se pueden inscribir mediante Azure AD Join o Autopilot. Debe revisar las opciones de cada plataforma y decidir qué opción de inscripción es la mejor para su entorno. Consulte [Paso 3: Inscribir dispositivos para Intune](manage-devices-with-intune-enroll.md) para obtener más información.|E3, E5, F1, F3, F5|
 |3|Configurar directivas de cumplimiento|Quieres asegurarte de que los dispositivos que tienen acceso a tus aplicaciones y datos cumplen los requisitos mínimos, por ejemplo, los dispositivos están protegidos con contraseña o patillas y el sistema operativo está actualizado. Las directivas de cumplimiento son la manera de definir los requisitos que los dispositivos deben cumplir. [Paso 3. Configurar directivas de cumplimiento](manage-devices-with-intune-compliance-policies.md) ayuda a configurar estas directivas.|E3, E5, F3, F5|
 |4|Configurar directivas de acceso a dispositivos e identidades de Enterprise (recomendado) de Confianza cero|Ahora que los dispositivos están inscritos, puedes trabajar con el administrador de identidades para [ajustar las directivas de acceso condicional para requerir dispositivos correctos y compatibles](manage-devices-with-intune-require-compliance.md).|E3, E5, F3, F5|
 |5|Implementar perfiles de configuración|En lugar de las directivas de cumplimiento de dispositivos que simplemente marcan un dispositivo como compatible o no en función de los criterios que configures, los perfiles de configuración cambian realmente la configuración de los valores de un dispositivo. Puede usar directivas de configuración para proteger los dispositivos frente a ciberamenazas. Vea el [Paso 5. Implementar perfiles de configuración](manage-devices-with-intune-configuration-profiles.md).|E3, E5, F3, F5|
@@ -78,7 +78,7 @@ Esta es una ilustración del conjunto de directivas recomendado con llamadas a l
 En esta ilustración:
 
 - En el paso 1, [Implementar directivas de protección de aplicaciones de nivel 2](manage-devices-with-intune-app-protection.md), configuras el nivel recomendado de protección de datos con directivas de APP. A continuación, trabajas con el equipo de identidad para configurar la regla de acceso condicional relacionada para requerir el uso de esta protección.
-- En los pasos 2, 3 y 4, inscribes los dispositivos en la administración con Intune/MEM, defines directivas de cumplimiento de dispositivos y, a continuación, coordinas con el equipo de identidades para configurar la regla de acceso condicional relacionada para permitir solo el acceso a los dispositivos compatibles.
+- En los pasos 2, 3 y 4, inscribe dispositivos en la administración con Intune, define directivas de cumplimiento de dispositivos y, a continuación, coordina con el equipo de identidades para configurar la regla de acceso condicional relacionada para permitir solo el acceso a dispositivos compatibles.
 
 <!---
 ## Managing change with users
@@ -86,10 +86,10 @@ En esta ilustración:
 
 ## <a name="enrolling-devices-vs-onboarding-devices"></a>Inscripción de dispositivos frente a dispositivos de incorporación
 
-Si sigue esta guía, inscribirá dispositivos en la administración mediante Intune (u otra herramienta) e incorporará dispositivos para dos servicios:
+Si sigue esta guía, inscribirá los dispositivos en la administración mediante Intune y incorporará los dispositivos para las siguientes funcionalidades de Microsoft 365:
 
-- Defender para punto de conexión
-- DLP de punto de conexión
+- Microsoft Defender para punto de conexión
+- Cumplimiento de Microsoft 365 (para la prevención de pérdida de datos de punto de conexión (DLP)) 
 
 En la siguiente ilustración se detalla cómo funciona esto con Intune.
 
@@ -98,15 +98,15 @@ En la siguiente ilustración se detalla cómo funciona esto con Intune.
 En la ilustración:
 
 1. Inscripción de dispositivos para la administración con Intune.
-2. Use Intune para incorporar dispositivos a Defender para punto de conexión.
-3. Los dispositivos que están incorporados a Defender para Endpoint también se incluyen para Microsoft 365 de cumplimiento normativo, incluida DLP de punto de conexión.
+2. Use Intune para incorporar dispositivos a Microsoft Defender para punto de conexión.
+3. Los dispositivos que se incorporan a Defender para punto de conexión también se incorporan para las características de cumplimiento de Microsoft 365, incluida DLP de punto de conexión.
 
-Tenga en cuenta que solo Intune administra dispositivos. La incorporación hace referencia a la capacidad de un dispositivo de compartir información con un servicio específico. En la tabla siguiente se resumen las diferencias entre la inscripción de dispositivos en la administración y la incorporación de dispositivos para un servicio específico.
+Tenga en cuenta que solo Intune administra dispositivos. La incorporación hace referencia a la capacidad de un dispositivo para compartir información con una funcionalidad de servicio específica. En la tabla siguiente se resumen las diferencias entre la inscripción de dispositivos en la administración y la incorporación de dispositivos para una funcionalidad específica.
 
 |&nbsp;|Inscribir|Incorporación|
 |---|---|---|
 |Descripción|La inscripción se aplica a la administración de dispositivos. Los dispositivos se inscriben para su administración con Intune o el Administrador de configuración.|La incorporación configura un dispositivo para que funcione con un conjunto específico de funcionalidades en Microsoft 365. Actualmente, la incorporación se aplica a Microsoft Defender para las capacidades de cumplimiento de Microsoft y Punto de conexión. <br/><br/> En dispositivos Windows, la incorporación implica alternar una configuración en Windows Defender que permite a Defender conectarse al servicio en línea y aceptar las directivas que se aplican al dispositivo.|
-|Ámbito|Estas herramientas de administración de dispositivos administran todo el dispositivo, incluida la configuración del dispositivo para cumplir objetivos específicos, como la seguridad.|La incorporación solo afecta a los servicios que se aplican.|
+|Ámbito|Estas herramientas de administración de dispositivos administran todo el dispositivo, incluida la configuración del dispositivo para cumplir objetivos específicos, como la seguridad.|La incorporación solo afecta a las funcionalidades que se aplican.|
 |Método recomendado|Unirse a Azure Active Directory inscribe automáticamente los dispositivos en Intune.|Intune es el método preferido para incorporar dispositivos a Windows Defender para Endpoint y, en consecuencia, las capacidades de cumplimiento de Microsoft 365. <br/><br/> Tenga en cuenta que los dispositivos que están incorporados a las capacidades de cumplimiento de Microsoft 365 mediante otros métodos no se inscriben automáticamente en Defender para Endpoint.|
 |Otros métodos|Otros métodos de inscripción dependen de la plataforma del dispositivo y de si es BYOD o administrado por la organización.|Otros métodos para la incorporación de dispositivos incluyen, en el orden recomendado: <ul><li>Configuration Manager</li><li>Otra herramienta de administración de dispositivos móviles (si el dispositivo está administrado por uno)</li><li>Script local</li><li>Paquete de configuración de VDI para incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente</li><li>Directiva de grupo</li></ul>|
 

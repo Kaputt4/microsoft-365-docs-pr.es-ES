@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 57c1909ff54fea6b9151e212f465abb75bab48f8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e7ff7a98e8550996068686b5b0805ea3a72cd6ae
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325325"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468575"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Recomendaciones de seguridad: Administración de amenazas y vulnerabilidades
 
@@ -42,7 +42,7 @@ Cada recomendación de seguridad incluye pasos de corrección que se pueden toma
 > [!TIP]
 > Para obtener correos electrónicos sobre nuevos eventos de vulnerabilidad, consulte [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 Cada dispositivo de la organización se puntua en función de tres factores importantes para ayudar a los clientes a centrarse en las cosas correctas en el momento adecuado.
 
@@ -70,7 +70,8 @@ Vaya al menú **de navegación Administración de** vulnerabilidades y **selecci
 
 En un día determinado como administrador de seguridad, puedes echar un vistazo al panel de [Administración de amenazas y vulnerabilidades](tvm-dashboard-insights.md) para ver la puntuación de exposición [](tvm-exposure-score.md) en paralelo con la puntuación segura de [Microsoft para dispositivos](tvm-microsoft-secure-score-devices.md). El objetivo es reducir **la** exposición de la organización frente a vulnerabilidades y aumentar  la seguridad del dispositivo de la organización para que sea más resistente frente a los ataques de amenazas de ciberseguridad. La lista de recomendaciones de seguridad superior puede ayudarle a lograr ese objetivo.
 
-![Ejemplo de tarjeta de recomendaciones de seguridad superior, con cuatro recomendaciones de seguridad.](images/top-security-recommendations350.png)
+:::image type="content" source="images/top-security-recommendations350.png" alt-text="La tarjeta de recomendaciones de seguridad superior" lightbox="images/top-security-recommendations350.png":::
+
 
 Las recomendaciones de seguridad principales incluyen las oportunidades de mejora priorizadas en función de los factores importantes mencionados en la sección anterior: amenaza, probabilidad de vulneración y valor. La selección de una recomendación le llevará a la página de recomendaciones de seguridad con más detalles.
 
@@ -83,7 +84,7 @@ El color del gráfico de **dispositivos expuestos** cambia a medida que cambia l
 > [!NOTE]
 > Amenazas y administración de vulnerabilidades muestra dispositivos que estaban en uso hasta **hace 30** días. Esto es diferente del resto de Microsoft Defender para Endpoint, donde si un dispositivo no ha estado en uso durante más de 7 días tiene un estado "Inactivo".
 
-![Ejemplo de la página de aterrizaje para recomendaciones de seguridad.](images/tvmsecrec-updated.png)
+:::image type="content" source="images/tvmsecrec-updated.png" alt-text="La página de aterrizaje para recomendaciones de seguridad" lightbox="images/tvmsecrec-updated.png":::
 
 ### <a name="icons"></a>Iconos
 
@@ -97,7 +98,7 @@ Los iconos útiles también llaman rápidamente la atención sobre:
 
 Seleccione la recomendación de seguridad que desea investigar o procesar.
 
-:::image type="content" alt-text="Ejemplo de una página desplegable de recomendación de seguridad." source="images/secrec-flyouteolsw.png" lightbox="images/secrec-flyouteolsw.png":::
+:::image type="content" source="images/secrec-flyouteolsw.png" alt-text="La página desplegable de recomendación de seguridad" lightbox="images/secrec-flyouteolsw.png":::
 
 En el menú desplegable, puede elegir cualquiera de las siguientes opciones:
 
@@ -140,7 +141,7 @@ Cuando se crea una excepción para una recomendación, la recomendación ya no e
 
 Seleccione una recomendación de seguridad para la que quiera crear una excepción y, a continuación, seleccione **Opciones de excepción**.
 
-![Mostrar dónde se encuentra el botón de "opciones de excepción" en un control de control de recomendación de seguridad.](images/tvm-exception-options.png)
+:::image type="content" source="images/tvm-exception-options.png" alt-text="Botón de opciones de excepción en el control desplegable de recomendación de seguridad" lightbox="images/tvm-exception-options.png":::
 
 Rellene el formulario y envíelo. Para ver todas las excepciones (actuales y pasadas), vaya [](tvm-remediation.md) a la página Corrección en el menú Administración de vulnerabilidades de **Threat &** y seleccione la **pestaña Excepciones**[. Obtenga](tvm-exception.md#create-an-exception) más información sobre cómo crear una excepción.
 
@@ -152,7 +153,7 @@ Puede informar de un falso positivo cuando vea información imprecisa, inexacta,
 
 2. Seleccione los tres puntos junto a la recomendación de seguridad que desea notificar y, a continuación, seleccione **Informar de imprecisión**.
 
-    ![Muestra dónde se encuentra el botón "Informar de imprecisión" en un control desplegable de recomendación de seguridad.](images/report-inaccuracy500.png)
+   :::image type="content" source="images/report-inaccuracy500.png" alt-text="Botón Informar de imprecisión" lightbox="images/report-inaccuracy500.png":::
 
 3. En el panel desplegable, seleccione la categoría de imprecisión en el menú desplegable, rellene su dirección de correo electrónico y detalles sobre la imprecisión.
 

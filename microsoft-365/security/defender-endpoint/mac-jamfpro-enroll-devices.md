@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ab3db2e2b64261ae00008aef448a214cd235bda9
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 6189b61826cd56e2a8652032998c3b2df8f980ce
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765557"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468685"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>Inscribir Microsoft Defender para endpoint en dispositivos macOS en Jamf Pro
 
@@ -49,37 +49,37 @@ Para obtener una lista completa, consulte [Acerca de la inscripción de equipos]
 
 1. En el panel de Pro Jamf, vaya a **Invitaciones de inscripción**.
 
-    ![Imagen de las opciones de configuración1.](images/a347307458d6a9bbfa88df7dbe15398f.png)
+   :::image type="content" source="images/a347307458d6a9bbfa88df7dbe15398f.png" alt-text="Las opciones de configuración1" lightbox="images/a347307458d6a9bbfa88df7dbe15398f.png":::
 
 2. Seleccione **+ Nuevo**.
 
-    ![Un cierre de un logotipo Description generado automáticamente.](images/b6c7ad56d50f497c38fc14c1e315456c.png)
+   :::image type="content" source="images/b6c7ad56d50f497c38fc14c1e315456c.png" alt-text="El cierre de una descripción del logotipo generado automáticamente" lightbox="images/b6c7ad56d50f497c38fc14c1e315456c.png":::
 
-3. En **Especificar destinatarios para la lista** de **> en Direcciones** de correo electrónico, escriba las direcciones de correo electrónico de los destinatarios.
+3. En **Especificar destinatarios para la lista** de > en **Direcciones** de correo electrónico, escriba las direcciones de correo electrónico de los destinatarios.
 
-    ![Imagen de las opciones de configuración2.](images/718b9d609f9f77c8b13ba88c4c0abe5d.png)
+    :::image type="content" source="images/718b9d609f9f77c8b13ba88c4c0abe5d.png" alt-text="Las opciones de configuración2" lightbox="images/718b9d609f9f77c8b13ba88c4c0abe5d.png":::
 
-    ![Imagen de las opciones de configuración3.](images/ae3597247b6bc7c5347cf56ab1e820c0.png)
+    :::image type="content" source="images/ae3597247b6bc7c5347cf56ab1e820c0.png" alt-text="Las opciones de configuración3" lightbox="images/ae3597247b6bc7c5347cf56ab1e820c0.png":::
 
     Por ejemplo: janedoe@contoso.com
 
-    ![Imagen de configuración4.](images/4922c0fcdde4c7f73242b13bf5e35c19.png)
+    :::image type="content" source="images/4922c0fcdde4c7f73242b13bf5e35c19.png" alt-text="Las opciones de configuración4" lightbox="images/4922c0fcdde4c7f73242b13bf5e35c19.png":::
 
 4. Configure el mensaje de la invitación.
 
-    ![Imagen de configuración5.](images/ce580aec080512d44a37ff8e82e5c2ac.png)
+   :::image type="content" source="images/ce580aec080512d44a37ff8e82e5c2ac.png" alt-text="Configuración5" lightbox="images/ce580aec080512d44a37ff8e82e5c2ac.png":::
 
-    ![Imagen de las opciones de configuración6.](images/5856b765a6ce677caacb130ca36b1a62.png)
+   :::image type="content" source="images/5856b765a6ce677caacb130ca36b1a62.png" alt-text="Las opciones de configuración6" lightbox="images/5856b765a6ce677caacb130ca36b1a62.png":::
 
-    ![Imagen de configuración7.](images/3ced5383a6be788486d89d407d042f28.png)
+   :::image type="content" source="images/3ced5383a6be788486d89d407d042f28.png" alt-text="Las opciones de configuración7" lightbox="images/3ced5383a6be788486d89d407d042f28.png":::
 
-    ![Imagen de configuración8.](images/54be9c6ed5b24cebe628dc3cd9ca4089.png)
+   :::image type="content" source="images/54be9c6ed5b24cebe628dc3cd9ca4089.png" alt-text="Las opciones de configuración8" lightbox="images/54be9c6ed5b24cebe628dc3cd9ca4089.png":::
 
 ## <a name="enrollment-method-2-prestage-enrollments"></a>Método enrollment 2: Prestage Enrollments
 
 1. En el panel de Pro Jamf, vaya a **Inscripción de prestage**.
 
-    ![Imagen de configuración9.](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
+   :::image type="content" source="images/6fd0cb2bbb0e60a623829c91fd0826ab.png" alt-text="Las opciones de configuración9" lightbox="images/6fd0cb2bbb0e60a623829c91fd0826ab.png":::
 
 2. Siga las instrucciones de [Computer PreStage Enrollments](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html).
 
@@ -87,24 +87,24 @@ Para obtener una lista completa, consulte [Acerca de la inscripción de equipos]
 
 1. Seleccione **Continuar** e instale el certificado de ca desde una **ventana preferencias del** sistema.
 
-    ![Imagen de Jamf Pro inscripción1.](images/jamfpro-ca-certificate.png)
+   :::image type="content" source="images/jamfpro-ca-certificate.png" alt-text="El jamf Pro inscripción1" lightbox="images/jamfpro-ca-certificate.png":::
 
 2. Una vez instalado el certificado de entidad de certificación, vuelva a la ventana del explorador y seleccione **Continuar** e instale el perfil mdm.
 
-    ![Imagen de Jamf Pro enrollment2.](images/jamfpro-install-mdm-profile.png)
+   :::image type="content" source="images/jamfpro-install-mdm-profile.png" alt-text="El Jamf Pro enrollment2" lightbox="images/jamfpro-install-mdm-profile.png":::
 
 3. Selecciona **Permitir** descargas desde JAMF.
 
-    ![Imagen de Jamf Pro enrollment3.](images/jamfpro-download.png)
+   :::image type="content" source="images/jamfpro-download.png" alt-text="El Jamf Pro enrollment3" lightbox="images/jamfpro-download.png":::
 
 4. Selecciona **Continuar** para continuar con la instalación del perfil MDM.
 
-    ![Imagen de Jamf Pro enrollment4.](images/jamfpro-install-mdm.png)
+   :::image type="content" source="images/jamfpro-install-mdm.png" alt-text="El Jamf Pro enrollment4" lightbox="images/jamfpro-install-mdm.png":::
 
 5. Selecciona **Continuar** para instalar el perfil mdm.
 
-    ![Imagen de Jamf Pro enrollment5.](images/jamfpro-mdm-unverified.png)
+   :::image type="content" source="images/jamfpro-mdm-unverified.png" alt-text="El Jamf Pro enrollment5" lightbox="images/jamfpro-mdm-unverified.png":::
 
 6. Seleccione **Continuar**  para completar la configuración.
 
-    ![Imagen de Jamf Pro enrollment6.](images/jamfpro-mdm-profile.png)
+   :::image type="content" source="images/jamfpro-mdm-profile.png" alt-text="El jamf Pro inscripción6" lightbox="images/jamfpro-mdm-profile.png":::

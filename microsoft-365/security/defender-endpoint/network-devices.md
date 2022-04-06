@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2affbe19484348a511487930d034da6799ca348c
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: f6092800de89ebfdeed35230b1ade296e0396a85
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560235"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468785"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Detección de dispositivos de red y administración de vulnerabilidades
 
@@ -30,15 +30,15 @@ ms.locfileid: "61560235"
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
+- [Amenaza y administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 > [!NOTE]
-> El Blog sobre detección de [dispositivos](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) de red y evaluaciones de vulnerabilidad publicado \( el 04-13-2021 proporciona información sobre las nuevas capacidades de detección de dispositivos de red en \) Defender para endpoint.  En este artículo se proporciona  información general sobre el desafío que la detección de dispositivos de red está diseñada para abordar e información detallada sobre cómo empezar a usar estas nuevas funcionalidades.
+> El Blog \(sobre detección de dispositivos de red y evaluaciones de vulnerabilidad publicado el 04-13-2021 \) proporciona información sobre las nuevas capacidades de detección de [dispositivos](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) de red en Defender para endpoint. En este artículo se proporciona información general sobre el  desafío que la detección de dispositivos de red está diseñada para abordar e información detallada sobre cómo empezar a usar estas nuevas funcionalidades.
 
-Las funcionalidades de detección de red están disponibles en la sección **Inventario** de dispositivos del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de</a> Microsoft 365 Defender y Microsoft 365 Defender consolas.
+Las funcionalidades de detección de red están disponibles en la sección **Inventario** de dispositivos del <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender y</a> Microsoft 365 Defender consolas.
 
 Se usará un dispositivo designado de Microsoft Defender para endpoint en cada segmento de red para realizar exámenes periódicos autenticados de dispositivos de red preconfigurados. Una vez descubierto, las capacidades de Defender for Endpoint Administración de amenazas y vulnerabilidades proporcionan flujos de trabajo integrados para proteger conmutadores detectados, enrutadores, controladores WLAN, firewalls y puertas de enlace VPN.
 
@@ -50,8 +50,8 @@ Los dispositivos de red no se administran como puntos de conexión estándar, ya
 
 Habrá dos tipos de dispositivos a tener en cuenta:
 
-- **Dispositivo de evaluación:** un dispositivo que ya está incorporado y que usarás para examinar los dispositivos de red.
-- **Dispositivos de** red: los dispositivos de red que tiene previsto examinar e incorporar.
+- **Dispositivo de evaluación**: un dispositivo que ya está incorporado y que usarás para examinar los dispositivos de red.
+- **Dispositivos de** red: los dispositivos de red que planea examinar e incorporar.
 
 ### <a name="vulnerability-management-for-network-devices"></a>Administración de vulnerabilidades para dispositivos de red
 
@@ -96,19 +96,19 @@ El primer paso es seleccionar un dispositivo que realizará los exámenes de red
     > [!NOTE]
     > No todas las direcciones URL se especifican en la lista documentada Defender for Endpoint de la colección de datos permitida.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
-Para configurar trabajos de evaluación, se requiere la siguiente opción de permiso de usuario: **Administrar la configuración de seguridad en Defender**. Para encontrar el permiso, vaya a **Configuración** \> **Roles**. Para obtener más información, vea [Create and manage roles for role-based access control](user-roles.md).
+Para configurar los trabajos de evaluación, se requiere la siguiente opción de permiso de usuario: **Administrar la configuración de seguridad en Defender**. Para encontrar el permiso, vaya a **Configuración** \> **Roles**. Para obtener más información, vea [Create and manage roles for role-based access control](user-roles.md).
 
 ## <a name="install-the-network-scanner"></a>Instalar el escáner de red
 
-1. Vaya a Microsoft 365 **de Configuración** de evaluación de puntos de conexión \>  \>  \>  (en **Evaluaciones de red).**
+1. Vaya a Microsoft 365 **de Configuración** \>  \> **de evaluación** \> de puntos de **conexión (en** **Evaluaciones de red**).
     1. En el portal Microsoft 365 Defender, vaya a la página Configuración > trabajos de evaluación.
 
 2. Descargue el escáner de red e instállo en el dispositivo de evaluación de Defender para endpoint designado.
 
     > [!div class="mx-imgBorder"]
-    > ![Botón Descargar escáner.](images/assessment-jobs-download-scanner.png)
+    > :::image type="content" source="images/assessment-jobs-download-scanner.png" alt-text="Botón Descargar escáner" lightbox="images/assessment-jobs-download-scanner.png":::
 
 ## <a name="network-scanner-installation--registration"></a>Instalación del escáner de red & registro
 
@@ -127,12 +127,12 @@ Para completar el proceso de registro del escáner de red:
 
 ## <a name="configure-a-new-assessment-job"></a>Configurar un nuevo trabajo de evaluación
 
-En la página Trabajos de evaluación **de Configuración**, seleccione Agregar trabajo de evaluación **de red**. Siga el proceso de configuración para elegir los dispositivos de red que se examinarán periódicamente y se agregarán al inventario de dispositivos.
+En la página Trabajos de evaluación **de Configuración**, seleccione **Agregar trabajo de evaluación de red**. Siga el proceso de configuración para elegir los dispositivos de red que se examinarán periódicamente y se agregarán al inventario de dispositivos.
 
 Para evitar la duplicación de dispositivos en el inventario de dispositivos de red, asegúrese de que cada dirección IP esté configurada solo una vez en varios dispositivos de evaluación.
 
 > [!div class="mx-imgBorder"]
-> ![Botón Agregar trabajo de evaluación de red.](images/assessment-jobs-add.png)
+> :::image type="content" source="images/assessment-jobs-add.png" alt-text="Botón Agregar trabajo de evaluación de red" lightbox="images/assessment-jobs-add.png":::
 
 Adición de pasos de trabajo de evaluación de red:
 
@@ -162,7 +162,7 @@ Una vez que se muestren los resultados, puedes elegir qué dispositivos se inclu
 Los dispositivos recién detectados se mostrarán en la nueva **pestaña Dispositivos de** red en la **página Inventario de** dispositivos. Puede tardar hasta dos horas después de agregar un trabajo de evaluación hasta que los dispositivos se actualicen.
 
 > [!div class="mx-imgBorder"]
-> ![Sección Dispositivos de red en el inventario de dispositivos.](images/assessment-jobs-device-inventory.png)
+> :::image type="content" source="images/assessment-jobs-device-inventory.png" alt-text="Sección Dispositivos de red en el inventario de dispositivos" lightbox="images/assessment-jobs-device-inventory.png":::
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
@@ -170,7 +170,7 @@ Los dispositivos recién detectados se mostrarán en la nueva **pestaña Disposi
 
 Compruebe que las direcciones URL necesarias se agregan a los dominios permitidos en la configuración del firewall. Además, asegúrate de que las opciones de proxy estén configuradas como se describe en [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
-### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>La Microsoft.com/devicelogin web no se hizo
+### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>La Microsoft.com/devicelogin web no se ha
 
 Compruebe que las direcciones URL necesarias se agregan a los dominios permitidos en el firewall. Además, asegúrate de que las opciones de proxy estén configuradas como se describe en [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 

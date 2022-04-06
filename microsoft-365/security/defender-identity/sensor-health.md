@@ -9,12 +9,12 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f55cb36d9960fef2da977a2c50ebab5a9e0e9122
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 246fd5ca880ca2d7e187283d06f19d071f5d7e0e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682028"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468531"
 ---
 # <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Configuración y estado del sensor de Identidad de Microsoft Defender en Microsoft 365 Defender
 
@@ -32,7 +32,7 @@ En este artículo se explica cómo configurar y supervisar [sensores de identida
 
 1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya a Configuración y, a **continuación**, **Identities**.
 
-    ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="La opción de Identidades en la Configuración página" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. Selecciona la **página Sensores** , que muestra todos los sensores de Defender for Identity. Para cada sensor, verá su nombre, su pertenencia a un dominio, el número de versión, si las actualizaciones deben retrasarse, el estado del servicio, el estado de actualización, el estado de mantenimiento, el número de problemas de mantenimiento y cuándo se creó el sensor.
 
@@ -45,7 +45,7 @@ En este artículo se explica cómo configurar y supervisar [sensores de identida
 
     [![Filtros de sensor.](../../media/defender-identity/sensor-filters.png)](../../media/defender-identity/sensor-filters.png#lightbox)
 
-    ![Sensor filtrado.](../../media/defender-identity/filtered-sensor.png)
+    :::image type="content" source="../../media/defender-identity/filtered-sensor.png" alt-text="Sensor filtrado" lightbox="../../media/defender-identity/filtered-sensor.png":::
 
 1. Si selecciona uno de los sensores, se mostrará un panel con información sobre el sensor y su estado de mantenimiento.
 
@@ -53,17 +53,18 @@ En este artículo se explica cómo configurar y supervisar [sensores de identida
 
 1. Si selecciona alguno de los problemas de mantenimiento, se obtiene un panel con más detalles sobre ellos. Si elige un problema cerrado, puede volver a abrirlo desde aquí.
 
-    ![Detalles del problema.](../../media/defender-identity/issue-details.png)
+   :::image type="content" source="../../media/defender-identity/issue-details.png" alt-text="Detalles del problema" lightbox="../../media/defender-identity/issue-details.png":::
+    
 
 1. Si selecciona Administrar **sensor**, se abrirá un panel donde podrá configurar los detalles del sensor.
 
-    ![Administrar sensor.](../../media/defender-identity/manage-sensor.png)
+   :::image type="content" source="../../media/defender-identity/manage-sensor.png" alt-text="La opción Administrar sensor" lightbox="../../media/defender-identity/manage-sensor.png":::
 
-    ![Configure los detalles del sensor.](../../media/defender-identity/configure-sensor-details.png)
+   :::image type="content" source="../../media/defender-identity/configure-sensor-details.png" alt-text="La página en la que se configuran las opciones para el sensor" lightbox="../../media/defender-identity/configure-sensor-details.png":::
 
 1. En la **página** Sensores, puede exportar la lista de sensores a un archivo .csv **seleccionaNdo Exportar**.
 
-    ![Exportar lista de sensores.](../../media/defender-identity/export-sensors.png)
+   :::image type="content" source="../../media/defender-identity/export-sensors.png" alt-text="La lista Exportar de sensores" lightbox="../../media/defender-identity/export-sensors.png":::
 
 ## <a name="add-a-sensor"></a>Agregar un sensor
 
@@ -71,11 +72,11 @@ En la **página** Sensores, puede agregar un nuevo sensor.
 
 1. Seleccione **Agregar sensor**.
 
-    ![Agregar sensor.](../../media/defender-identity/add-sensor.png)
+   :::image type="content" source="../../media/defender-identity/add-sensor.png" alt-text="La opción Agregar sensor" lightbox="../../media/defender-identity/add-sensor.png":::
 
 1. Se abrirá un panel que le proporciona un botón para descargar el instalador del sensor y una clave de acceso generada.
 
-    ![Descargue el instalador y la clave de acceso.](../../media/defender-identity/installer-access-key.png)
+   :::image type="content" source="../../media/defender-identity/installer-access-key.png" alt-text="Las opciones para descargar el instalador y regenerar la clave" lightbox="../../media/defender-identity/installer-access-key.png":::
 
 1. Seleccione **Descargar instalador** para guardar el paquete localmente. El archivo zip incluye los siguientes archivos:
 
@@ -87,6 +88,6 @@ En la **página** Sensores, puede agregar un nuevo sensor.
 
 1. Copie el paquete en el servidor o controlador de dominio dedicado en el que va a instalar el sensor Defender for Identity.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Administrar alertas de seguridad de Defender for Identity](manage-security-alerts.md)

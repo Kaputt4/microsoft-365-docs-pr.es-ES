@@ -1,24 +1,24 @@
 ### YamlMime:Landing
 title: Biblioteca de vídeos de aprendizaje de administración
-summary: Obtenga información sobre cómo configurar y administrar Microsoft 365 para su empresa con vídeos cortos.
+summary: Obtenga información sobre cómo configurar y administrar Microsoft 365 para su empresa con vídeos breves.
 metadata:
   title: Biblioteca de vídeos de aprendizaje de administración
-  description: Obtenga información sobre cómo configurar y administrar Microsoft 365 para su empresa con vídeos cortos.
+  description: Obtenga información sobre cómo configurar y administrar Microsoft 365 para su empresa con vídeos breves.
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: landing-page
   author: efrene
   ms.author: efrene
-  ms.date: 02/25/2022
+  ms.date: 03/31/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: daa4b3f2892a27229404dd61a836792a4b35eef5
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.openlocfilehash: 9d9a9515cf9bda34d49cd927e0b59e90fa0c79ed
+  ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63315867"
+  ms.lasthandoff: 04/04/2022
+  ms.locfileid: "64633203"
 landingContent:
-- title: Comenzar
+- title: Introducción
   linkLists:
   - linkListType: video
     links:
@@ -119,16 +119,16 @@ landingContent:
   - linkListType: video
     links:
     - text: Proteger dispositivos con Windows 10 Pro
-      url: devices/protection-settings-for-windows-10-pcs.md
+      url: /microsoft-365/business-premium/m365bp-secure-windows-devices.md
     - text: Proteger aplicaciones de Office en iOS
-      url: devices/app-protection-settings-for-android-and-ios.md
+      url: /business-premium/m365bp-app-protection-settings-for-android-and-ios.md
 - title: Seguridad y cumplimiento
   linkLists:
   - linkListType: video
     links:
     - text: Información general sobre la seguridad en Microsoft 365 Empresa Premium
       url: security-and-compliance/secure-your-business-data.md
-    - text: (¡NUEVO!) Microsoft Defender para empresas
+    - text: (¡NUEVO!) Microsoft Defender für Unternehmen
       url: /microsoft-365/security/defender-business/index.yml
     - text: Proteger las cuentas de los empleados con autenticación multifactor
       url: security-and-compliance/set-up-multi-factor-authentication.md
@@ -143,9 +143,9 @@ landingContent:
     - text: Administrar vínculos seguros
       url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links
     - text: Prevenir la pérdida de datos
-      url: security-and-compliance/set-up-compliance.md
+      url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
     - text: Cree etiquetas de confidencialidad
-      url: security-and-compliance/set-up-compliance.md
+      url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
 - title: Soporte técnico
   linkLists:
   - linkListType: video

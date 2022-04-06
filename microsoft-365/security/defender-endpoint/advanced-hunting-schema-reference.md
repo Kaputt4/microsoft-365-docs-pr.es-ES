@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: 290d302f815de38c4cd84f417118205ed6504fe2
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2e45a4ae78d0beb9bc57b72a59b9cf1376ac7da7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934266"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468355"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Comprender el esquema de búsqueda avanzada en Microsoft Defender para endpoint
 
@@ -39,16 +39,16 @@ El [esquema de búsqueda](advanced-hunting-overview.md) avanzada está hecho de 
 
 Al crear consultas, use la referencia de esquema integrado para obtener rápidamente la siguiente información sobre cada tabla del esquema:
 
-- **Descripción de tablas:** tipo de datos contenidos en la tabla y el origen de los datos.
-- **Columnas:** todas las columnas de la tabla.
-- **Tipos de acción:** valores posibles en la `ActionType` columna que representan los tipos de eventos admitidos por la tabla. Esto solo se proporciona para tablas que contienen información de eventos.
+- **Descripción de las** tablas: tipo de datos contenidos en la tabla y el origen de los datos.
+- **Columnas**: todas las columnas de la tabla.
+- **Tipos de acción**: valores posibles en la columna `ActionType` que representan los tipos de evento admitidos por la tabla. Estos valores solo se proporcionan para tablas que contienen información de eventos.
 - **Consulta de** ejemplo: consultas de ejemplo que ofrecen cómo se puede usar la tabla.
 
 ### <a name="access-the-schema-reference"></a>Obtener acceso a la referencia de esquema
 
 Para obtener acceso rápidamente a la referencia de esquema, seleccione la acción **Ver** referencia junto al nombre de tabla en la representación del esquema. También puede seleccionar Referencia **de esquema para** buscar una tabla.
 
-![Imagen que muestra cómo obtener acceso a la referencia de esquema en el portal.](images/ah-reference.png)
+:::image type="content" source="images/ah-reference.png" alt-text="La página Búsqueda avanzada" lightbox="images/ah-reference.png":::
 
 ## <a name="learn-the-schema-tables"></a>Obtenga información sobre las tablas de esquema
 
@@ -81,9 +81,9 @@ Los nombres de tabla y columna también se enumeran en el portal de Microsoft 36
 |
 
 > [!TIP]
-> Usa la búsqueda avanzada [en Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) para buscar amenazas con datos de Defender para endpoint, Microsoft Defender para Office 365, Microsoft Defender para aplicaciones en la nube y Microsoft Defender para Identity. [Active la Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
+> Usa [la](/microsoft-365/security/defender/advanced-hunting-overview) búsqueda avanzada en Microsoft 365 Defender para buscar amenazas con datos de Defender para endpoint, Microsoft Defender para Office 365, Microsoft Defender para aplicaciones en la nube y Microsoft Defender para Identity. [Active la Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
 
-Obtenga más información sobre cómo mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender en Migrar consultas avanzadas de búsqueda de [Microsoft Defender para endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
+Obtenga más información sobre cómo mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 14c759cd243b8da9f338b777e430d4de9f735fc1
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 24840353f14024817d61fee31841b257ada206f8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498921"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468619"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación Windows servidores al servicio de Microsoft Defender para puntos de conexión
 
@@ -385,7 +385,7 @@ Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de dete
 
 Siga los pasos descritos en Ejecutar una prueba de detección en un dispositivo recién incorporado para comprobar que el servidor está informando [a](run-detection-test.md) Defender para el servicio de extremo.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de incorporar dispositivos correctamente al servicio, deberá configurar los componentes individuales de Microsoft Defender para endpoint. Siga el [orden de adopción](prepare-deployment.md#adoption-order) para guiarse en la habilitación de los distintos componentes.
 
@@ -403,8 +403,8 @@ Para otras Windows de servidor, tiene dos opciones para Windows del servicio:
 - Desinstalar el agente mma
 - Quitar la configuración del área de trabajo de Defender for Endpoint
 
-> [!NOTE]
-> Estas instrucciones de offboarding para otras versiones de servidor Windows también se aplican si ejecuta el anterior Microsoft Defender para endpoint para Windows Server 2016 y Windows Server 2012 R2 que requiere la MMA. Las instrucciones para migrar a la nueva solución unificada se encuentran en Escenarios de migración de [servidor en Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/server-migration).
+>[!NOTE]
+> Estas instrucciones de offboarding para otras versiones de servidor Windows también se aplican si ejecuta el anterior Microsoft Defender para endpoint para Windows Server 2016 y Windows Server 2012 R2 que requiere la MMA. Las instrucciones para migrar a la nueva solución no fiada se encuentran en Escenarios de migración de [servidor en Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -18,12 +18,12 @@ ms.date: 03/16/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: e8a1e08242ab3f884115c414f8a1ba80f5f2aa17
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: be29874a087936c7131492bde1a3f541e7d00f43
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507085"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645086"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Antivirus de Microsoft Defender compatibilidad con otros productos de seguridad
 
@@ -96,10 +96,10 @@ En la tabla siguiente se resume el estado de Antivirus de Microsoft Defender en 
 | Windows Server 2022 <br/> Windows Server 2019 <br/> Windows server, versión 1803 o posterior   | Antivirus de Microsoft Defender | No  | Modo activo |
 | Windows Server 2022 <br/> Windows Server 2019 <p> Windows server, versión 1803 o posterior  | Una solución antivirus o antimalware que no es de Microsoft | Sí  | Antivirus de Microsoft Defender debe establecerse en modo pasivo (manualmente) <sup>[[2](#fn2)]<sup>  | 
 | Windows Server 2022 <br/> Windows Server 2019 <p> Windows server, versión 1803 o posterior  | Una solución antivirus o antimalware que no es de Microsoft | No  | Antivirus de Microsoft Defender debe deshabilitarse (manualmente) <sup>[[3](#fn3)]<sup></sup>  |
-| Windows Server 2016 <br/> Windows Server 2012 R2   | Antivirus de Microsoft Defender | Sí | Modo activo |
-|Windows Server 2016 <br/> Windows Server 2012 R2  | Antivirus de Microsoft Defender | No | Modo activo |
-| Windows Server 2016 <br/> Windows Server 2012 R2  | Una solución antivirus o antimalware que no es de Microsoft | Sí | Antivirus de Microsoft Defender debe establecerse en modo pasivo (manualmente) <sup>[[2](#fn2)]<sup> |
-|Windows Server 2016 <br/> Windows Server 2012 R2  | Una solución antivirus o antimalware que no es de Microsoft | No | Antivirus de Microsoft Defender debe deshabilitarse (manualmente) <sup>[[3](#fn3)]<sup> |
+| Windows Server 2016 <br/> Windows Server 2012 R2   | Antivirus de Microsoft Defender | Sí | Modo activo |
+|Windows Server 2016 <br/> Windows Server 2012 R2  | Antivirus de Microsoft Defender | No | Modo activo |
+| Windows Server 2016 <br/> Windows Server 2012 R2  | Una solución antivirus o antimalware que no es de Microsoft | Sí | Antivirus de Microsoft Defender debe establecerse en modo pasivo (manualmente) <sup>[[2](#fn2)]<sup> |
+|Windows Server 2016 <br/> Windows Server 2012 R2  | Una solución antivirus o antimalware que no es de Microsoft | No | Antivirus de Microsoft Defender debe deshabilitarse (manualmente) <sup>[[3](#fn3)]<sup> |
 
 (<a id="fn2">2</a>) En Windows Server 2019, Windows Server, versión 1803 o posterior, Windows Server 2016 o Windows Server 2012 R2, Antivirus de Microsoft Defender no entra en modo pasivo automáticamente al instalar un producto antivirus que no es de Microsoft. En esos casos, establezca Antivirus de Microsoft Defender en modo pasivo para evitar problemas causados por tener varios productos antivirus instalados en un servidor. Puede establecer el Antivirus de Microsoft Defender en modo pasivo mediante PowerShell, directiva de grupo o una clave del Registro. 
 
@@ -161,7 +161,7 @@ En la tabla de esta sección se resumen las características y capacidades que f
 
 (<a id="fn5">5</a>) Cuando Antivirus de Microsoft Defender está en modo pasivo, los exámenes no están programados.
 
-(<a id="fn6">6</a>) Cuando Antivirus de Microsoft Defender está en modo pasivo, no corrige las amenazas. Sin embargo, las amenazas se pueden corregir mediante la detección y respuesta de puntos de conexión [(EDR) en modo de bloqueo](edr-in-block-mode.md). En este caso, es posible que vea alertas que Antivirus de Microsoft Defender como origen, incluso cuando Antivirus de Microsoft Defender está en modo pasivo.
+(<a id="fn6">6</a>) Cuando Antivirus de Microsoft Defender está en modo pasivo, no corrige las amenazas. Sin embargo, las amenazas pueden corregirse mediante la detección y respuesta de puntos de conexión [(EDR) en modo de bloqueo](edr-in-block-mode.md). En este caso, es posible que vea alertas que Antivirus de Microsoft Defender como origen, incluso cuando Antivirus de Microsoft Defender está en modo pasivo.
 
 > [!NOTE]
 > [Microsoft 365 protección de prevención de pérdida de](/microsoft-365/compliance/endpoint-dlp-learn-about) datos de punto de conexión sigue funcionando con normalidad cuando Antivirus de Microsoft Defender está en modo activo o pasivo.

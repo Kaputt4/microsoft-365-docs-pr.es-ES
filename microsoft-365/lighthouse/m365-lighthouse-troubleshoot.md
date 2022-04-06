@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga ayuda para solucionar problemas y mensajes de error.
-ms.openlocfilehash: 1bd98a90af19d60aba2e0891c3f993e77523a12c
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 24f282420bb69188106178cefc6fb89968f4fcf6
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64632369"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645042"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>Solucionar problemas y resolver mensajes de error en Microsoft 365 Lighthouse
 
@@ -54,7 +54,7 @@ En este artículo se describen los mensajes de error y los problemas que puede e
 **Causa:** Los inquilinos de los clientes no cumplen los siguientes criterios:
 
   - Debe haber configurado el acceso delegado para que el proveedor de servicios administrados (MSP) pueda administrar el inquilino del cliente*
-  - Debe tener al menos una Microsoft 365 Business Premium, Microsoft 365 E3 licencia o Windows 365 Business licencia
+  - Debe tener al menos una licencia Microsoft 365 Empresa Premium, Microsoft 365 E3 o Windows 365 Business licencia
   - No debe tener más de 1000 usuarios con licencia 
 
 **Resolución:** En la tabla siguiente se describen los distintos estados de inquilino que requieren acción y se explica cómo resolverlos.
@@ -66,7 +66,7 @@ En este artículo se describen los mensajes de error y los problemas que puede e
 |--|--|--|
 | Inactivo | El inquilino se desinbordó a petición del MSP y ya no se está administrando en Lighthouse. | Debe reactivar el espacio empresarial. En la **página Inquilinos** , seleccione los tres puntos (más acciones) junto al espacio empresarial que desea reactivar y, a continuación, **seleccione Activar inquilino**. Los datos iniciales del cliente pueden tardar entre 24 y 48 horas en aparecer en Lighthouse. |
 | Ineligible: DAP o GDAP no están configurados | No tiene privilegios de administrador de DAP o GDAP configurados con el inquilino, lo que necesita Lighthouse. | Configurar privilegios de administrador de DAP o GDAP en el Centro de partners de Microsoft. |
-| Ineligible: falta la licencia necesaria | Al inquilino le falta una licencia necesaria. Necesitan al menos una licencia Microsoft 365 Business Premium, Microsoft 365 E3 o Windows 365 Business licencia. | Asegúrese de que el espacio empresarial tenga al menos Microsoft 365 Business Premium, Microsoft 365 E3 o Windows 365 Business licencia asignada. |
+| Ineligible: falta la licencia necesaria | Al inquilino le falta una licencia necesaria. Necesitan al menos una licencia Microsoft 365 Empresa Premium, Microsoft 365 E3 o Windows 365 Business licencia. | Asegúrese de que el espacio empresarial tenga al menos una Microsoft 365 Empresa Premium, Microsoft 365 E3 o Windows 365 Business licencia asignada. |
 | Ineligible: se ha superado el número de usuarios | El inquilino tiene más del máximo de 1000 usuarios con licencia permitidos por Lighthouse. | Compruebe que el inquilino no tiene más de 1000 usuarios con licencia. |
 | Ineligible: error en la comprobación geográfica | Usted y su cliente no residen en la misma región geográfica, que es requerida por Lighthouse. | Compruebe que el cliente reside en su región geográfica. Si no es así, no puede administrar el espacio empresarial en Lighthouse. |
 | En proceso | Lighthouse descubrió el inquilino, pero aún está en proceso de incorporación. | Permitir a Lighthouse 48 horas completar la incorporación del inquilino. |
@@ -137,4 +137,4 @@ Si los datos siguen sin aparecer en las páginas de administración de amenazas 
 
 [Problemas conocidos con Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (artículo)\
 [Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)\
-[Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (artículo)
+[Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (article)

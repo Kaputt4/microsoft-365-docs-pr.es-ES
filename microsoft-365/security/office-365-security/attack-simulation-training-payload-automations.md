@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender a usar las automatizacións de carga (recolección de carga) para recopilar e iniciar simulaciones automatizadas para el aprendizaje de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 13215b76646c5358bc9a043b91d3dbd403818684
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: aa223ab1abda110e32a9b9dc55e9dc76a1983321
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526310"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468443"
 ---
 # <a name="payload-automations-for-attack-simulation-training"></a>Automatización de carga útil para el aprendizaje de simulación de ataques
 
@@ -33,7 +33,7 @@ Para crear una automatización de carga, siga estos pasos:
 
 2. En la **pestaña Automatización de carga** , seleccione ![Crear icono de automatización.](../../media/m365-cc-sc-create-icon.png) **Crear automatización**.
 
-   ![Cree el botón de automatización en la pestaña Automatización de carga en el aprendizaje de simulación de ataques en el portal de Microsoft 365 Defender carga.](../../media/attack-sim-training-payload-automations-create.png)
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="El botón Crear simulación en la pestaña Automatización de carga en aprendizaje de simulación de ataque en el portal de Microsoft 365 Defender carga" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
 3. Se abrirá el Asistente para creación. El resto de este artículo describe las páginas y la configuración que contienen.
 

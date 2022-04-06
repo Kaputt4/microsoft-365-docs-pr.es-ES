@@ -16,12 +16,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar la información corregir reglas de flujo de correo lento en el Centro de seguridad y cumplimiento de & para identificar y corregir reglas de flujo de correo ineficaces o rotas (también conocidas como reglas de transporte) en su organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: af6d727f84cdaaed1b7f7558313ac7d080a13c93
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 30dda2b890df9f33fbc9af04b5821fb24593a335
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681532"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468399"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Corregir la información de reglas de flujo de correo lento en el Centro de seguridad & cumplimiento
 
@@ -44,7 +44,7 @@ Esta información aparece solo después de que se detecte la condición (si no t
 
 Puede usar esta notificación para ayudarle a identificar y ajustar las reglas de flujo de correo para ayudar a reducir los retrasos en el flujo de correo.
 
-![Corregir la información de reglas de flujo de correo lento en el área Recomendado para usted del panel flujo de correo.](../../media/mfi-fix-slow-mail-flow-rules.png)
+:::image type="content" source="../../media/mfi-fix-slow-mail-flow-rules.png" alt-text="Información sobre las reglas de flujo de correo lento fix en el área Recomendado para usted del panel flujo de correo" lightbox="../../media/mfi-fix-slow-mail-flow-rules.png":::
 
 Al hacer clic **en Ver detalles** en el widget, aparece un control flotante con más información:
 
@@ -53,10 +53,10 @@ Al hacer clic **en Ver detalles** en el widget, aparece un control flotante con 
 - **Tiempo promedio invertido en cada mensaje**
 - **Mediana de tiempo invertido en un mensaje**: el valor intermedio que separa la mitad superior de los datos de la mitad inferior del tiempo.
 
-![Control desplegable de detalles que aparece después de hacer clic en Ver detalles en la información sobre las reglas de flujo de correo lento fix.](../../media/mfi-fix-slow-mail-flow-rules-details.png)
+:::image type="content" source="../../media/mfi-fix-slow-mail-flow-rules-details.png" alt-text="El control desplegable Detalles que aparece después de hacer clic en Ver detalles en la información de reglas de flujo de correo lento fix" lightbox="../../media/mfi-fix-slow-mail-flow-rules-details.png":::
 
 Para obtener más información acerca de las condiciones y excepciones en las reglas de flujo de correo, vea Condiciones de regla de flujo de correo y excepciones [(predicados) en Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 Para obtener información sobre otras perspectivas en el panel flujo de correo, vea Información sobre el flujo de correo en el [Centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

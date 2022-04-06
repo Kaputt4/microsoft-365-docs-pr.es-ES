@@ -1,6 +1,6 @@
 ---
-title: Información general sobre Microsoft Defender para el plan 1 de punto de conexión
-description: Obtenga información general sobre Defender for Endpoint Plan 1. Obtenga información sobre las características y capacidades incluidas en esta suscripción de protección de extremo.
+title: Introducción al plan 1 de Microsoft Defender para punto de conexión
+description: Obtenga información general sobre el plan 1 de Defender para punto de conexión. Obtenga información sobre las características y funcionalidades incluidas en esta suscripción de Endpoint Protection.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -14,78 +14,83 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-defender-endpoint
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ms.custom: intro-overview
+ms.openlocfilehash: 774d54aee080fbe3d6f5576fb29c85d887717b70
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64663520"
 ---
-
-# <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Información general sobre Microsoft Defender para el plan 1 de punto de conexión
+# <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Introducción al plan 1 de Microsoft Defender para punto de conexión
 
 **Se aplica a**
 
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender para endpoint es una plataforma de seguridad de extremo empresarial diseñada para ayudar a organizaciones como la de usted a prevenir, detectar, investigar y responder a amenazas avanzadas. Nos complace anunciar que Defender for Endpoint ya está disponible en dos planes: 
+Microsoft Defender para punto de conexión es una plataforma de seguridad de punto de conexión empresarial diseñada para ayudar a organizaciones como la suya a prevenir, detectar, investigar y responder a amenazas avanzadas. Nos complace anunciar que Defender para punto de conexión ya está disponible en dos planes: 
 
-- **Defender for Endpoint Plan 1**, descrito en este artículo; y 
-- **[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)**, generalmente disponible y anteriormente conocido como [Defender para Endpoint](microsoft-defender-endpoint.md).
+- **Plan 1 de Defender para punto de conexión**, descrito en este artículo; Y 
+- **[Plan 2 de Defender para punto de conexión](microsoft-defender-endpoint.md)**, disponible con carácter general y conocido anteriormente como [Defender para punto de conexión](microsoft-defender-endpoint.md).
 
-Los cuadros verdes de la siguiente imagen muestran lo que se incluye en Defender for Endpoint Plan 1:
+Los cuadros verdes de la imagen siguiente muestran lo que se incluye en el plan 1 de Defender para punto de conexión:
 
-:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="What's inculded with Defender for Endpoint Plan 1" lightbox="../../media/mde-p1/mde-p1-overview-diagram.png":::
+:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Qué se inculca con el plan 1 de Defender para punto de conexión" lightbox="../../media/mde-p1/mde-p1-overview-diagram.png":::
 
 Use esta guía para:
 
-- [Obtenga información general sobre lo que se incluye en defender para el plan de extremo 1](#defender-for-endpoint-plan-1-capabilities)
+- [Obtenga información general sobre lo que se incluye en el plan 1 de Defender para punto de conexión](#defender-for-endpoint-plan-1-capabilities)
 - [Comparar los planes 1 y 2 de Defender para punto de conexión](defender-endpoint-plan-1-2.md)
-- [Obtenga información sobre cómo configurar y configurar Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)
-- [Introducción al portal de Microsoft 365 Defender, donde puede ver incidentes y alertas, administrar dispositivos y usar informes sobre amenazas detectadas](mde-plan1-getting-started.md)
-- [Obtener información general sobre el mantenimiento y las operaciones](mde-p1-maintenance-operations.md)
+- [Obtenga información sobre cómo configurar y configurar El plan 1 de Defender para punto de conexión](mde-p1-setup-configuration.md)
+- [Comenzar mediante el portal de Microsoft 365 Defender, donde puede ver incidentes y alertas, administrar dispositivos y usar informes sobre amenazas detectadas.](mde-plan1-getting-started.md)
+- [Obtenga información general sobre el mantenimiento y las operaciones.](mde-p1-maintenance-operations.md)
 
 > [!TIP]
-> [Obtenga más información sobre las diferencias entre Defender for Endpoint Plan 1 y Plan 2](defender-endpoint-plan-1-2.md).
+> [Obtenga más información sobre las diferencias entre defender para el plan 1 y el plan 2](defender-endpoint-plan-1-2.md).
 
-## <a name="defender-for-endpoint-plan-1-capabilities"></a>Capacidades de Defender for Endpoint Plan 1
+## <a name="defender-for-endpoint-plan-1-capabilities"></a>Funcionalidades del plan 1 de Defender para punto de conexión
 
-Defender for Endpoint Plan 1 incluye las siguientes funcionalidades:
+El plan 1 de Defender para punto de conexión incluye las siguientes funcionalidades:
 
-- **[Protección de última generación](#next-generation-protection)** que incluye protección antivirus y antimalware sólida y líder del sector
-- **[Acciones de respuesta manuales](#manual-response-actions)**, como enviar un archivo a la cuarentena, que el equipo de seguridad puede realizar en dispositivos o archivos cuando se detectan amenazas
-- **[Capacidades de reducción de superficie de](#attack-surface-reduction)** ataque que endurecen los dispositivos, evitan ataques de día cero y ofrecen control granular sobre el acceso y los comportamientos de los puntos de conexión
-- **[Configuración y administración centralizadas con](#centralized-management)** el portal Microsoft 365 Defender e integración con Microsoft Endpoint Manager
-- **[Protección para una variedad de plataformas](#cross-platform-support)**, incluidos dispositivos Windows, macOS, iOS y Android
+- **[Protección de última generación](#next-generation-protection)** que incluye protección antivirus y antimalware sólida líder en el sector
+- **[Acciones de respuesta manuales](#manual-response-actions)**, como enviar un archivo a cuarentena, que el equipo de seguridad puede tomar en dispositivos o archivos cuando se detectan amenazas.
+- **[Funcionalidades de reducción de la superficie expuesta a ataques](#attack-surface-reduction)** que protegen los dispositivos, evitan ataques de día cero y ofrecen un control pormenorizado sobre el acceso y los comportamientos de los puntos de conexión.
+- **[Configuración y administración centralizadas](#centralized-management)** con el portal de Microsoft 365 Defender e integración con Microsoft Endpoint Manager
+- **[Protección para una variedad de plataformas](#cross-platform-support)**, como dispositivos Windows, macOS, iOS y Android
 
 En las secciones siguientes se proporcionan más detalles sobre estas funcionalidades. 
 
 ## <a name="next-generation-protection"></a>Protección de última generación
 
-La protección de última generación incluye protección antivirus sólida y antimalware. Con la protección de última generación, obtiene: 
+La protección de última generación incluye protección antivirus y antimalware sólida. Con la protección de próxima generación, obtendrá lo siguiente: 
 
-- Protección antivirus basada en comportamiento, heurística y en tiempo real 
-- Protección entregada en la nube, que incluye detección casi instantánea y bloqueo de amenazas nuevas y emergentes 
-- Protección dedicada y actualizaciones de productos, incluidas las actualizaciones relacionadas con Antivirus de Microsoft Defender 
+- Protección antivirus basada en comportamientos, heurística y en tiempo real 
+- Protección proporcionada por la nube, que incluye detección casi instantánea y bloqueo de amenazas nuevas y emergentes 
+- Actualizaciones de productos y protección dedicadas, incluidas las relacionadas con Antivirus de Microsoft Defender 
 
-Para obtener más información, vea [Información general sobre la protección de próxima generación](next-generation-protection.md).
+Para más información, consulte [Introducción a la protección de próxima generación](next-generation-protection.md).
 
-## <a name="manual-response-actions"></a>Acciones de respuesta manuales
+## <a name="manual-response-actions"></a>Acciones de respuesta manual
 
-Las acciones de respuesta manual son acciones que el equipo de seguridad puede realizar cuando se detectan amenazas en puntos de conexión o en archivos. Defender for Endpoint incluye determinadas [acciones de respuesta manuales](respond-machine-alerts.md) que se pueden realizar en un dispositivo que se detecta como potencialmente en peligro o que tiene contenido sospechoso. También puede ejecutar acciones [de respuesta en archivos](respond-file-alerts.md) detectados como amenazas. En la tabla siguiente se resumen las acciones de respuesta manuales que están disponibles en Defender para el plan de extremo 1. <br/><br/>
+Las acciones de respuesta manual son acciones que el equipo de seguridad puede realizar cuando se detectan amenazas en puntos de conexión o en archivos. Defender para punto de conexión incluye ciertas [acciones de respuesta manual que se pueden realizar en un dispositivo](respond-machine-alerts.md) que se detecta como potencialmente comprometido o que tiene contenido sospechoso. También puede ejecutar [acciones de respuesta en los archivos](respond-file-alerts.md) que se detectan como amenazas. En la tabla siguiente se resumen las acciones de respuesta manual que están disponibles en El plan 1 de Defender para punto de conexión. <br/><br/>
 
-| Archivo/dispositivo | Acción | Descripción |
+| Archivo o dispositivo | Acción | Descripción |
 |:---|:---|:---|
-| Device | Ejecutar examen de antivirus | Inicia un examen antivirus. Si se detecta alguna amenaza en el dispositivo, estas amenazas suelen tratarse durante un examen antivirus. |
-| Device | Aislar el dispositivo | Desconecta un dispositivo de la red de su organización mientras conserva la conectividad con Defender para endpoint. Esta acción te permite supervisar el dispositivo y realizar más acciones si es necesario. |
-| Archivo | Detener y poner en cuarentena un archivo |Impide que los procesos se ejecuten y ponga en cuarentena los archivos asociados. |
-| Archivo | Agregar un indicador para bloquear o permitir un archivo | Los indicadores de bloqueo impiden que los archivos ejecutables portátiles se lean, escriban o ejecuten en dispositivos. <p>Los indicadores allow impiden que los archivos se bloqueen o corrijan. |
+| Device | Ejecutar examen de antivirus | Inicia un examen antivirus. Si se detecta alguna amenaza en el dispositivo, esas amenazas a menudo se abordan durante un examen antivirus. |
+| Device | Aislar el dispositivo | Desconecta un dispositivo de la red de la organización mientras conserva la conectividad con Defender para punto de conexión. Esta acción le permite supervisar el dispositivo y realizar más acciones si es necesario. |
+| Archivo | Detener y poner en cuarentena un archivo |Detiene la ejecución de procesos y pone en cuarentena los archivos asociados. |
+| Archivo | Adición de un indicador para bloquear o permitir un archivo | Los indicadores de bloque impiden que los archivos ejecutables portátiles se lean, escriban o ejecuten en los dispositivos. <p>Permitir indicadores impide que los archivos se bloqueen o corrijan. |
 
-Para obtener más información, consulte los artículos siguientes:
+Para más información, consulte los artículos siguientes:
 
-- [Realizar acciones de respuesta en dispositivos](respond-machine-alerts.md) 
+- [Realizar acciones de respuesta en los dispositivos](respond-machine-alerts.md) 
 - [Realizar acciones de respuesta en archivos](respond-file-alerts.md)
 
 ## <a name="attack-surface-reduction"></a>Reducción de la superficie expuesta a ataques
 
-Las superficies de ataque de la organización son todos los lugares donde eres vulnerable a los ataques cibernéticos. Con Defender for Endpoint Plan 1, puedes reducir las superficies de ataque protegiendo los dispositivos y aplicaciones que usa tu organización. Las capacidades de reducción de superficie de ataque que se incluyen en Defender para el plan de extremo 1 se describen en las secciones siguientes.
+Las superficies de ataque de su organización son todos los lugares donde es vulnerable a los ciberataques. Con el plan 1 de Defender para punto de conexión, puede reducir las superficies expuestas a ataques mediante la protección de los dispositivos y aplicaciones que usa su organización. Las funcionalidades de reducción de la superficie expuesta a ataques que se incluyen en El plan 1 de Defender para punto de conexión se describen en las secciones siguientes.
 
 - [Reglas de la reducción de la superficie expuesta a ataques](#attack-surface-reduction-rules)
 - [Mitigación de ransomware](#ransomware-mitigation)
@@ -95,97 +100,97 @@ Las superficies de ataque de la organización son todos los lugares donde eres v
 - [Firewall de red](#network-firewall)
 - [Control de la aplicación](#application-control)
 
-Para obtener más información sobre las capacidades de reducción de superficie de ataque en Defender para endpoint, consulta [Información general sobre la reducción de superficie de ataque](overview-attack-surface-reduction.md).
+Para obtener más información sobre las funcionalidades de reducción de superficie expuesta a ataques en Defender para punto de conexión, consulte [Introducción a la reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md).
 
 ### <a name="attack-surface-reduction-rules"></a>Reglas de reducción de la superficie expuesta a ataques
 
-Las reglas de reducción de superficie de ataque se aplican a determinados comportamientos de software que se consideran riesgosos. Estos comportamientos incluyen:
+Las reglas de reducción de superficie expuesta a ataques se dirigen a determinados comportamientos de software que se consideran de riesgo. Estos comportamientos incluyen:
 
-- Iniciar archivos ejecutables y scripts que intenten descargar o ejecutar otros archivos
+- Iniciar archivos ejecutables y scripts que intentan descargar o ejecutar otros archivos
 - Ejecución de scripts ofuscados o sospechosos
-- Iniciar comportamientos que las aplicaciones normalmente no inician durante el trabajo normal
+- Iniciar comportamientos que las aplicaciones no suelen iniciar durante el trabajo normal
 
-Las aplicaciones empresariales legítimas pueden exhibir este tipo de comportamientos de software; sin embargo, estos comportamientos a menudo se consideran riesgosos porque los atacantes suelen abusar de ellos a través del malware. Las reglas de reducción de superficie de ataque pueden restringir comportamientos riesgosos y ayudar a mantener la seguridad de la organización.
+Las aplicaciones empresariales legítimas pueden presentar tales comportamientos de software; sin embargo, estos comportamientos a menudo se consideran de riesgo porque suelen ser objeto de abuso por parte de los atacantes a través de malware. Las reglas de reducción de la superficie expuesta a ataques pueden restringir los comportamientos de riesgo y ayudar a proteger su organización.
 
-Para obtener más información, consulta [Usar reglas de reducción de superficie de ataque para evitar infecciones de malware](attack-surface-reduction.md).
+Para obtener más información, consulta [Usar reglas de reducción de superficie expuesta a ataques para evitar la infección por malware](attack-surface-reduction.md).
 
 ### <a name="ransomware-mitigation"></a>Mitigación de ransomware
 
-Con acceso controlado a carpetas, obtiene mitigación de ransomware. El acceso controlado a carpetas solo permite que las aplicaciones de confianza obtengan acceso a carpetas protegidas en los puntos de conexión. Las aplicaciones se agregan a la lista de aplicaciones de confianza en función de su prevalencia y reputación. El equipo de operaciones de seguridad también puede agregar o quitar aplicaciones de la lista de aplicaciones de confianza.
+Con el acceso controlado a carpetas, se obtiene la mitigación de ransomware. El acceso controlado a carpetas solo permite que las aplicaciones de confianza accedan a carpetas protegidas en los puntos de conexión. Las aplicaciones se agregan a la lista de aplicaciones de confianza en función de su prevalencia y reputación. El equipo de operaciones de seguridad también puede agregar o quitar aplicaciones de la lista de aplicaciones de confianza.
 
-Para obtener más información, vea [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md).
+Para más información, consulte [Protección de carpetas importantes con acceso controlado a carpetas](controlled-folders.md).
 
-### <a name="device-control"></a>Control de dispositivos
+### <a name="device-control"></a>Control de dispositivo
 
-En ocasiones, las amenazas a los dispositivos de la organización se incluyen en forma de archivos en unidades extraíbles, como unidades USB. Defender for Endpoint incluye funcionalidades que ayudan a evitar que las amenazas de periféricos no autorizados puedan poner en peligro los dispositivos. Puede configurar Defender for Endpoint para bloquear o permitir dispositivos y archivos extraíbles en dispositivos extraíbles. 
+A veces, las amenazas a los dispositivos de la organización se presentan en forma de archivos en unidades extraíbles, como unidades USB. Defender for Endpoint incluye funcionalidades para ayudar a evitar que las amenazas de periféricos no autorizados pongan en peligro los dispositivos. Puede configurar Defender para punto de conexión para bloquear o permitir dispositivos y archivos extraíbles en dispositivos extraíbles. 
 
-Para obtener más información, consulta [Controlar dispositivos USB y medios extraíbles](control-usb-devices-using-intune.md).
+Para más información, consulte [Control de dispositivos USB y medios extraíbles](control-usb-devices-using-intune.md).
 
 ### <a name="web-protection"></a>Protección web
 
 Con la protección web, puede proteger los dispositivos de su organización frente a amenazas web y contenido no deseado. La protección web incluye protección contra amenazas web y filtrado de contenido web.
 
-- [La protección contra amenazas](web-threat-protection.md) web impide el acceso a sitios de phishing, vectores de malware, sitios de vulnerabilidad, sitios que no son de confianza o de baja reputación y sitios que bloquea explícitamente.
-- [El filtrado de contenido web](web-content-filtering.md) impide el acceso a determinados sitios en función de su categoría. Las categorías pueden incluir contenido para adultos, sitios de ocio, sitios de responsabilidad legal y mucho más.
+- [La protección contra amenazas web](web-threat-protection.md) impide el acceso a sitios de phishing, vectores de malware, sitios de vulnerabilidades de seguridad, sitios que no son de confianza o de baja reputación y sitios que se bloquean explícitamente.
+- [El filtrado de contenido web](web-content-filtering.md) impide el acceso a determinados sitios en función de su categoría. Las categorías pueden incluir contenido para adultos, sitios de ocio, sitios de responsabilidad legal, etc.
 
-Para obtener más información, consulte [Protección web](web-protection-overview.md).
+Para obtener más información, consulte [protección web](web-protection-overview.md).
 
 ### <a name="network-protection"></a>Protección de red
 
 Con la protección de red, puede impedir que su organización acceda a dominios peligrosos que puedan hospedar estafas de suplantación de identidad (phishing), vulnerabilidades de seguridad y otro contenido malintencionado en Internet. 
 
-Para obtener más información, consulte [Proteger la red](network-protection.md).
+Para más información, consulte [Protección de la red](network-protection.md).
 
 ### <a name="network-firewall"></a>Firewall de red
 
-Con la protección de firewall de red, puede establecer reglas que determinen qué tráfico de red puede fluir hacia o desde los dispositivos de la organización. Con el firewall de red y la seguridad avanzada que obtiene con Defender for Endpoint, puede:
+Con la protección del firewall de red, puede establecer reglas que determinen qué tráfico de red puede fluir hacia o desde los dispositivos de la organización. Con el firewall de red y la seguridad avanzada que obtiene con Defender para punto de conexión, puede hacer lo siguiente:
 
 - Reducir el riesgo de amenazas de seguridad de red
-- Proteger los datos confidenciales y la propiedad intelectual
-- Ampliar la inversión en seguridad
+- Protección de datos confidenciales y propiedad intelectual
+- Ampliación de la inversión en seguridad
 
-Para obtener más información, [consulte Windows Defender Firewall con seguridad avanzada](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+Para más información, consulte [Windows Defender Firewall con seguridad avanzada](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 ### <a name="application-control"></a>Control de la aplicación
 
-El control de aplicaciones protege los Windows de usuario mediante la ejecución de solo aplicaciones de confianza y código en el núcleo del sistema (kernel). El equipo de seguridad puede definir reglas de control de aplicaciones que consideren los atributos de una aplicación, como sus certificados de firma de código, su reputación, el proceso de inicio y mucho más. El control de aplicación está disponible Windows 10 o posterior.
+El control de aplicaciones protege los puntos de conexión de Windows ejecutando solo aplicaciones y código de confianza en el núcleo del sistema (kernel). El equipo de seguridad puede definir reglas de control de aplicaciones que consideren los atributos de una aplicación, como sus certificados de firma de código, reputación, proceso de inicio, etc. El control de aplicación está disponible en Windows 10 o posterior.
 
-Para obtener más información, vea [Control de aplicaciones para Windows](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control).
+Para más información, consulte [Control de aplicaciones para Windows](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control).
 
 ## <a name="centralized-management"></a>Administración centralizada
 
-Defender for Endpoint Plan 1 incluye el portal de Microsoft 365 Defender, que permite al equipo de seguridad ver la información actual sobre las amenazas detectadas, realizar las acciones adecuadas para mitigar las amenazas y administrar de forma centralizada la configuración de protección contra amenazas de la organización.
+El plan 1 de Defender para punto de conexión incluye el portal de Microsoft 365 Defender, que permite al equipo de seguridad ver la información actual sobre las amenazas detectadas, realizar las acciones adecuadas para mitigar las amenazas y administrar de forma centralizada la configuración de protección contra amenazas de su organización.
 
-Para obtener más información, vea [Microsoft 365 Defender información general del portal](portal-overview.md).
+Para obtener más información, consulte [Microsoft 365 Defender introducción al portal](portal-overview.md).
 
-### <a name="role-based-access-control"></a>Control de acceso basado en roles
+### <a name="role-based-access-control"></a>Control de acceso basado en funciones
 
-Con el control de acceso basado en roles (RBAC), el administrador de seguridad puede crear roles y grupos para conceder acceso adecuado al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Con RBAC, tienes un control preciso sobre quién puede acceder a Defender for Cloud y qué pueden ver y hacer. 
+Mediante el control de acceso basado en rol (RBAC), el administrador de seguridad puede crear roles y grupos para conceder el acceso adecuado al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Con RBAC, tiene un control específico sobre quién puede acceder a la Defender for Cloud y qué pueden ver y hacer. 
 
-Para obtener más información, vea [Manage portal access using role-based access control](rbac.md).
+Para más información, consulte [Administración del acceso al portal mediante el control de acceso basado en rol](rbac.md).
 
 ### <a name="reporting"></a>Reporting
 
-El Microsoft 365 Defender web ([https://security.microsoft.com](https://security.microsoft.com)) proporciona un acceso fácil a la información sobre las amenazas detectadas y las acciones para hacer frente a dichas amenazas. 
+El portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) proporciona fácil acceso a la información sobre las amenazas y acciones detectadas para abordar esas amenazas. 
 
-- La **página** principal incluye tarjetas para mostrar de un vistazo qué usuarios o dispositivos están en riesgo, cuántas amenazas se detectaron y qué alertas o incidentes se crearon.
-- En **la sección & de alertas de** incidentes se enumeran los incidentes que se crearon como resultado de alertas desencadenadas. Las alertas e incidentes se generan a medida que se detectan amenazas en todos los dispositivos.
-- El **Centro de acciones** enumera las acciones de corrección que se han realizado. Por ejemplo, si se envía un archivo a cuarentena o se bloquea una dirección URL, cada acción se muestra en el Centro de acciones de la **pestaña** Historial.
-- La **sección Informes** incluye informes que muestran las amenazas detectadas y su estado. 
+- La página **Inicio** incluye tarjetas para mostrar de un vistazo qué usuarios o dispositivos están en riesgo, cuántas amenazas se detectaron y qué alertas o incidentes se crearon.
+- En **la sección Incidentes & alertas** se enumeran los incidentes que se crearon como resultado de las alertas desencadenadas. Las alertas y los incidentes se generan a medida que se detectan amenazas en todos los dispositivos.
+- El **Centro de** acciones enumera las acciones de corrección que se han realizado. Por ejemplo, si un archivo se envía a cuarentena o se bloquea una dirección URL, cada acción se muestra en el Centro de acciones de la pestaña **Historial** .
+- La sección **Informes** incluye informes que muestran las amenazas detectadas y su estado. 
 
-Para obtener más información, consulte [Introducción a Microsoft Defender para el plan de extremo 1](mde-plan1-getting-started.md).
+Para obtener más información, consulte [Comenzar con Microsoft Defender para punto de conexión Plan 1](mde-plan1-getting-started.md).
 
 ### <a name="apis"></a>API
 
-Con las API de Defender para endpoints, puede automatizar flujos de trabajo e integrarse con las soluciones personalizadas de su organización. 
+Con las API de Defender para punto de conexión, puede automatizar los flujos de trabajo e integrarlos con las soluciones personalizadas de su organización. 
 
-Para obtener más información, consulte [Defender for Endpoint API](management-apis.md). 
+Para más información, consulte [Api de Defender para punto de conexión](management-apis.md). 
 
-## <a name="cross-platform-support"></a>Compatibilidad entre plataformas
+## <a name="cross-platform-support"></a>Compatibilidad multiplataforma
 
-La mayoría de las organizaciones usan varios dispositivos y sistemas operativos. Actualmente, Defender for Endpoint Plan 1 admite los siguientes sistemas operativos:
+La mayoría de las organizaciones usan varios dispositivos y sistemas operativos. Actualmente, El plan 1 de Defender para punto de conexión admite los siguientes sistemas operativos:
 
-- Windows 7 (ESU obligatorio)
+- Windows 7 (ESU requerida)
 - Windows 8.1
 - Windows 10, versión 1709 o posterior
 - macOS: 11.5 (Big Sur), 10.15.7 (Catalina) o 10.14.6 (Mojave)
@@ -194,7 +199,7 @@ La mayoría de las organizaciones usan varios dispositivos y sistemas operativos
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Comparar Microsoft Defender para el plan de extremo 1 con el plan 2](defender-endpoint-plan-1-2.md)
+- [Comparar Microsoft Defender para punto de conexión plan 1 con plan 2](defender-endpoint-plan-1-2.md)
 - [Configurar Defender para punto de conexión plan 1](mde-p1-setup-configuration.md)
-- [Introducción a Defender for Endpoint Plan 1](mde-plan1-getting-started.md)
-- [Administrar Defender para el plan de extremo 1](mde-p1-maintenance-operations.md)
+- [Comenzar con el plan 1 de Defender para punto de conexión](mde-plan1-getting-started.md)
+- [Administración del plan 1 de Defender para punto de conexión](mde-p1-maintenance-operations.md)

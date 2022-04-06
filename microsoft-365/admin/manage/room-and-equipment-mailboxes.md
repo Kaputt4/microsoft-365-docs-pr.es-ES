@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Cree un buzón de sala o equipamiento para que todos los usuarios de su organización puedan reservarlo para reuniones o eventos con Outlook. '
-ms.openlocfilehash: 38df6be558c3f590e851460f8065712d73dbf4b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: afd24a2780478718cb74fdd6681d53a905f96b57
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173084"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64633269"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Buzones de sala y equipamiento
 
@@ -63,7 +63,7 @@ Para usar buzones de equipamiento o de sala, abra Outlook desde su equipo o inic
   
 7. Escriba un mensaje describiendo la finalidad y adjunte algún archivo si es necesario.
     
-8. Para permitir que otras personas se unan en línea o llamen a la reunión, seleccione **Reunión de Skype**.
+8. Para permitir que otras personas se unan en línea o llamen a la reunión, seleccione **Reunión de Teams**.
     
 9. Para garantizar que tanto la sala como el equipamiento y las personas que haya invitado estén disponibles, seleccione **Asistente para programación** en la parte superior. A continuación, seleccione una hora que esté disponible en el calendario.
 
@@ -96,7 +96,7 @@ Para configurar un buzón de sala o equipamiento, vaya al <a href="https://go.mi
     
    - **Ubicación**: el número de la sala o la ubicación de esta en un edificio o región.
     
-   - **Número de teléfono**: el número de la sala. Esto es diferente del número de teléfono de la reunión que se ha generado al usar Skype Empresarial.
+   - **Número de teléfono**: el número de la sala. Esto es diferente del número de teléfono de la reunión que se ha generado al usar Microsoft Teams.
     
 4. Seleccione **Agregar**.
     

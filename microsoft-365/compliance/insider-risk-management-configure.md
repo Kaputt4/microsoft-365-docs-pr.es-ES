@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: cdd368e7e78458067b9f363d41f7931ac5a2c0cd
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 05375332df6542cd87e986bba68ef7c6753f8e36
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754198"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64637970"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
 
@@ -36,9 +36,9 @@ Para obtener más información acerca de cómo las directivas de riesgo de insid
 
 Antes de empezar con la administración de riesgos de insider, debes confirmar la [Microsoft 365 suscripción y](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) los complementos. Para obtener acceso y usar la administración de riesgos de insider, la organización debe tener una de las siguientes suscripciones o complementos:
 
-- Microsoft 365 E5/A5/G5 (versión de pago o de prueba)
-- Microsoft 365 E3/A3/G3 + el complemento de cumplimiento Microsoft 365 E5/A5/G5
-- Microsoft 365 E3/A3/G3 + el complemento Microsoft 365 E5/A5/G5 Insider Risk Management
+- Microsoft 365 E5/A5/F5/G5 (versión de pago o de prueba)
+- Microsoft 365 E3/A3/F3/G3 subscription + the Microsoft 365 E5/A5/F5/G5 Compliance add-on
+- Microsoft 365 E3/A3/F3/G3 subscription + the Microsoft 365 E5/A5/F5/G5 Insider Risk Management add-on
 - Suscripción a Office 365 E3 + Enterprise Mobility + Security E3 + el complemento Cumplimiento de Microsoft 365 E5
 
 Los usuarios incluidos en las directivas de administración de riesgos de insider deben tener asignada una de las licencias anteriores.
@@ -221,13 +221,13 @@ La administración de riesgos de Insider admite la importación de datos de usua
 
 Consulte el [artículo Configurar](import-physical-badging-data.md) un conector para importar datos de mal estado físicos para obtener instrucciones paso a paso para configurar el conector de badging físico para su organización. Después de configurar el conector, vuelva a estos pasos de configuración.
 
-### <a name="configure-microsoft-defender-for-endpoint-optional"></a>Configurar Microsoft Defender para el extremo (opcional)
+### <a name="configure-microsoft-defender-for-endpoint-optional"></a>Configurar Pertahanan Microsoft untuk Titik Akhir (opcional)
 
-[Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) es una plataforma de seguridad de extremo de empresa diseñada para ayudar a las redes empresariales a prevenir, detectar, investigar y responder a amenazas avanzadas. Para tener una mejor visibilidad de las infracciones de seguridad en su organización, puede importar y filtrar alertas de Defender para puntos de conexión para las actividades que se usan en las directivas creadas a partir de plantillas de directiva de infracción de seguridad de la administración de riesgos insider.
+[Pertahanan Microsoft untuk Titik Akhir](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) es una plataforma de seguridad de extremo de empresa diseñada para ayudar a las redes empresariales a prevenir, detectar, investigar y responder a amenazas avanzadas. Para tener una mejor visibilidad de las infracciones de seguridad en su organización, puede importar y filtrar alertas de Defender para puntos de conexión para las actividades que se usan en las directivas creadas a partir de plantillas de directiva de infracción de seguridad de la administración de riesgos insider.
 
-Si crea directivas de infracción de seguridad, tendrá que configurar Microsoft Defender para endpoint en su organización y habilitar Defender for Endpoint para la integración de la administración de riesgos internas en el Centro de seguridad de Defender para importar alertas de infracción de seguridad. Para obtener más información acerca de los requisitos, consulte [el artículo Requisitos mínimos para Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) .
+Si crea directivas de infracción de seguridad, deberá tener Pertahanan Microsoft untuk Titik Akhir configurado en su organización y habilitar Defender for Endpoint para la integración de la administración de riesgos internas en el Centro de seguridad de Defender para importar alertas de infracción de seguridad. Para obtener más información acerca de los requisitos, consulte [el artículo Requisitos mínimos para Pertahanan Microsoft untuk Titik Akhir](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements).
 
-Consulte el [artículo Configurar características avanzadas en Defender para](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) endpoint para obtener instrucciones paso a paso para configurar Defender for Endpoint para la integración de la administración de riesgos de insider. Después de configurar Microsoft Defender para endpoint, vuelve a estos pasos de configuración.
+Consulte el [artículo Configurar características avanzadas en Defender para](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) endpoint para obtener instrucciones paso a paso para configurar Defender for Endpoint para la integración de la administración de riesgos de insider. Después de configurar el Pertahanan Microsoft untuk Titik Akhir, vuelva a estos pasos de configuración.
 
 ## <a name="step-5-required-configure-insider-risk-settings"></a>Paso 5 (obligatorio): Configurar las opciones de riesgo de insider
 
@@ -247,7 +247,7 @@ Antes de configurar una directiva, defina las siguientes opciones de configuraci
     - [Exclusiones de tipos de archivo](insider-risk-management-settings.md#file-type-exclusions)
     - [Número mínimo de eventos diarios para aumentar la puntuación de actividad inusual](insider-risk-management-settings.md#minimum-number-of-daily-events-to-boost-score-for-unusual-activity)
     - [Nivel de volumen de alerta](insider-risk-management-settings.md#alert-volume)
-    - [Estado de alerta de Microsoft Defender para endpoint](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
+    - [Pertahanan Microsoft untuk Titik Akhir de alerta](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [Configuración de dominio](insider-risk-management-settings.md#domains)
 6. En la **página Exportar alertas**, habilite la exportación de información de alertas de riesgo de información interna mediante las API de administración Office 365 si es necesario.
 7. En la **página Grupos de usuarios prioritarios** , cree un grupo de usuarios de prioridad y agregue usuarios si no se crea en el **paso 3**.

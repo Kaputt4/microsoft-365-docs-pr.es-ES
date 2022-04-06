@@ -413,8 +413,6 @@
           href: /Exchange/exchange-online
         - name: SharePoint
           href: /sharepoint/sharepoint-online
-        - name: Skype Empresarial
-          href: /SkypeForBusiness/skype-for-business-online
         - name: Microsoft Teams
           href: /MicrosoftTeams/Teams-overview
         - name: Yammer
@@ -434,9 +432,7 @@
         - name: Exchange Online
           href: /Exchange/exchange-online
         - name: SharePoint
-          href: 'https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a'
-        - name: Skype Empresarial
-          href: /SkypeForBusiness/skype-for-business-online
+          href: /sharepoint/introduction
         - name: Microsoft Teams
           href: /microsoftteams/upgrade-monitor-quality
         - name: Yammer
@@ -456,8 +452,6 @@
                   href: introduction-to-performance-tuning-for-sharepoint-online.md
                 - name: Diagnosticar problemas de rendimiento con SharePoint
                   href: diagnosing-performance-issues-with-sharepoint-online.md
-            - name: Optimización del rendimiento de Skype Empresarial Online
-              href: tune-skype-for-business-online-performance.md
             - name: Ajustar el rendimiento de Project Online
               href: /ProjectOnline/tune-project-online-performance
             - name: Plan de solución de problemas de rendimiento
@@ -581,13 +575,6 @@
           href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
     - name: Administrar Microsoft Teams
       href: /microsoftteams/teams-powershell-install
-    - name: Administrar Skype Empresarial Online
-      href: manage-skype-for-business-online-with-microsoft-365-powershell.md
-      items:
-        - name: Administrar directivas de Skype Empresarial Online
-          href: manage-skype-for-business-online-policies-with-microsoft-365-powershell.md
-        - name: Asignar directivas por usuario de Skype Empresarial Online
-          href: assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md
     - name: Administrar complementos con la Implementación centralizada de PowerShell
       href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
 - name: Kit de laboratorio de implementación de Windows y Office 365

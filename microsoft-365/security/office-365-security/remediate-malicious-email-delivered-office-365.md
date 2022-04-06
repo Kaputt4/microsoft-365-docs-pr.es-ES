@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Corrección de amenazas
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 49cd5f532f41fd05090592136e28ca2462a9efd6
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 3ba8564ef5ecbd261dc47b2f0a48d6d4d77d620a
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681180"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64638323"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corregir el correo electrónico malintencionado entregado en Office 365
 
@@ -28,7 +28,7 @@ ms.locfileid: "63681180"
 **Se aplica a**
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
-Remediation means taking a prescribed action against a threat. El sistema puede limpiar el correo electrónico malintencionado enviado a su organización, mediante la purga automática (ZAP) de hora cero, o por los equipos de seguridad a través de acciones de corrección como mover a la bandeja de *entrada, pasar* a correo no *deseado, mover* a elementos eliminados *, eliminar* temporalmente o eliminar de forma *permanente.* Microsoft Defender para Office 365 Plan 2/E5 permite a los equipos de seguridad corregir las amenazas en la funcionalidad de correo electrónico y colaboración mediante una investigación manual y automatizada.
+Remediation means taking a prescribed action against a threat. El sistema puede limpiar el correo electrónico malintencionado enviado a su organización, mediante la purga automática (ZAP) de hora cero, o por los equipos de seguridad a través de acciones de corrección como mover a la bandeja de *entrada, pasar* a correo no *deseado, mover* a elementos eliminados *, eliminar* temporalmente o eliminar de forma *permanente.* Pertahanan Microsoft untuk Office 365 Plan 2/E5 permite a los equipos de seguridad corregir las amenazas en la funcionalidad de correo electrónico y colaboración mediante una investigación manual y automatizada.
 
 > [!NOTE]
 > Para corregir el correo electrónico malintencionado, los equipos de seguridad necesitan el rol *Buscar* y purgar asignados. La asignación de roles se [realiza mediante permisos en el portal de Microsoft 365 Defender funciones](permissions-microsoft-365-security-center.md).
@@ -42,19 +42,21 @@ Los administradores pueden realizar las acciones necesarias en los correos elect
 *La búsqueda manual* se produce cuando los equipos de seguridad identifican las amenazas manualmente mediante las funciones de búsqueda y filtrado del Explorador. La corrección manual del correo electrónico se puede desencadenar a través de cualquier vista de correo electrónico (*malware*, *phish* o *todo* el correo electrónico) después de identificar un conjunto de correos electrónicos que deben corregirse.
 
 > [!div class="mx-imgBorder"]
-> [![Búsqueda manual en el Office 365 amenazas por fecha.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
+> [![Captura de pantalla de la búsqueda manual Office 365 explorador de amenazas por fecha.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
 Los equipos de seguridad pueden usar el Explorador para seleccionar correos electrónicos de varias maneras:
 
 - Elegir correos electrónicos a mano: use filtros en varias vistas. Seleccione hasta 100 correos electrónicos para corregir.
 
-- Selección de consulta: seleccione una consulta completa mediante el botón **seleccionar todo en la** parte superior. La misma consulta también se muestra en detalles de envío de correo del centro de acciones.
+- Selección de consulta: seleccione una consulta completa mediante el botón **seleccionar todo en la** parte superior. La misma consulta también se muestra en detalles de envío de correo del centro de acciones. Los clientes pueden enviar un máximo de 200 000 correos electrónicos desde el explorador de amenazas.  
 
 - Selección de consultas con exclusión: en ocasiones, los equipos de operaciones de seguridad pueden querer corregir los correos electrónicos seleccionando una consulta completa y excluyendo algunos correos electrónicos de la consulta manualmente. Para ello, un administrador puede usar la casilla **Seleccionar** todo y desplazarse hacia abajo para excluir los correos electrónicos manualmente. La consulta puede contener un máximo de 1.000 correos electrónicos. El número máximo de exclusiones es 100.
 
 Una vez que los correos electrónicos se seleccionan a través del Explorador, puede comenzar la corrección mediante la acción directa o mediante la cola de correos electrónicos para una acción:
 
-- Aprobación directa: cuando las acciones como mover a la  bandeja de *entrada, pasar* a correo no *deseado, mover* a elementos eliminados *, eliminar* temporalmente o eliminar de forma permanente son seleccionadas por el personal de seguridad que tiene los permisos adecuados y se siguen los pasos siguientes en la corrección, el proceso de corrección comienza a ejecutar la acción seleccionada. Un flyout temporal muestra la corrección en curso.
+- Aprobación directa: cuando las acciones como mover a la  bandeja de *entrada, pasar* a correo no *deseado, mover* a elementos eliminados *, eliminar* temporalmente o eliminar de forma permanente son seleccionadas por el personal de seguridad que tiene los permisos adecuados y se siguen los pasos siguientes en la corrección, el proceso de corrección comienza a ejecutar la acción seleccionada.
+> [!NOTE]
+>A medida que se pone en marcha la corrección, genera una alerta y una investigación en paralelo. La alerta aparece en la cola de alertas con el nombre "Acción administrativa enviada por un administrador", lo que sugiere que el personal de seguridad realizó la acción de corregir una entidad. Presenta detalles como el nombre de la persona que realizó la acción, el vínculo de investigación de soporte, el tiempo, etc. Funciona muy bien para saber cada vez que se realiza una acción dura como la corrección en las entidades. Todas estas acciones se pueden realizar en la ficha Centro de **acciones & envíosHistoria** \>   ->  (versión preliminar pública).
 
 - Aprobación en dos pasos: los administradores que no tienen permisos adecuados o que necesitan esperar para ejecutar la acción pueden realizar una acción de "agregar a la corrección". En este caso, los correos electrónicos dirigidos se agregan a un contenedor de corrección. La aprobación es necesaria antes de que se ejecute la corrección.
 
@@ -63,19 +65,27 @@ Una vez que los correos electrónicos se seleccionan a través del Explorador, p
 > [!div class="mx-imgBorder"]
 > [![Correo con malware en la página "Zapped" que muestra el tiempo de ejecución de Zap.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-Todas las correcciones (aprobación directa o aprobación en dos pasos) que se crearon en el Explorador, así como las acciones aprobadas procedentes de investigaciones automatizadas, se muestran en el Centro de acciones. Accede a ellos a través del panel de navegación izquierdo en **Centro de** \> **acciones de revisión**.
+Todas las correcciones (aprobaciones directas) creadas en el Explorador, búsqueda avanzada o a través de la investigación automatizada se muestran en el Centro de acciones. Accede a ellos a través del panel de navegación izquierdo en **Acciones & de acciones** **del**  ->  centro de **envíosHistoria**\>.
 
-> [!div class="mx-imgBorder"]
-> [![El centro de acción con una lista de amenazas por fecha y gravedad.](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
+Todas las correcciones (aprobaciones directas) que se crearon en explorer o búsqueda avanzada o a través de la investigación automatizada se muestran en el Centro de acciones. Accede a ellos a través del panel de navegación izquierdo en **Acciones & de acciones** **del**  ->  centro de **envíosHistoria**\>. 
 
-El Centro de acciones muestra todas las acciones de corrección de los últimos 30 días. Las acciones realizadas a través del Explorador se enumeran con el nombre que el equipo de operaciones de seguridad proporcionó cuando se creó la corrección. Las acciones realizadas a través de investigaciones automatizadas tienen títulos que comienzan con la alerta relacionada que desencadenó la investigación, como "Clúster de correo electrónico zap... ."
+Acciones manuales pendientes de aprobación mediante el proceso de aprobación en dos pasos (1. agregar a la corrección por un miembro del equipo de operación de seguridad, 2. revisado y aprobado por otro miembro del equipo de operaciones de seguridad) solo están visibles en el centro de acción de Defender pre Office 365  heredado y no \> en incidentes/investigaciones ni en el Centro de acción unificada.
 
-Abra cualquier elemento de corrección para ver detalles sobre él, incluido su nombre, fecha de creación, descripción, gravedad de la amenaza y estado. También muestra las dos pestañas siguientes.
+> [!NOTE]
+> Aprobación en dos pasos: acciones solo disponibles en el Centro de acciones de office  **Review** \> **Action Center**
 
-- **Pestaña Envío de** correo: muestra el número de correos electrónicos enviados a través del Explorador de amenazas o las investigaciones automatizadas que se deben corregir. Estos correos electrónicos pueden ser acciónbles o no se pueden realizar acciones.
+:::image type="content" source="../../media/microsoft-365-defender-action-center-history.png" alt-text="El Centro de acciones unificado muestra 30 días de acciones de corrección.":::
+
+El Centro de acciones unificado muestra las acciones de corrección de los últimos 30 días. Las acciones realizadas a través del Explorador se enumeran por el nombre que el equipo de operaciones de seguridad proporcionó cuando se creó la corrección, así como el identificador de aprobación, el identificador de investigación. Las acciones realizadas a través de investigaciones automatizadas tienen títulos que comienzan con la alerta relacionada que desencadenó la investigación, como el clúster de correo electrónico *Zap*.
+
+Abra cualquier elemento de corrección para ver detalles sobre él, incluido su nombre de corrección, id. de aprobación, identificador de investigación, fecha de creación, descripción, estado, origen de acción, tipo de acción, decidido por, estado. También abre un panel lateral con detalles de acción, detalles del clúster de correo electrónico, alertas e detalles del incidente.
+
+- *Esta página abre* una investigación de administrador que contiene menos detalles y pestañas. Muestra detalles como: alerta relacionada, entidad seleccionada para corrección, acción realizada, estado de corrección, recuento de entidades, registros, aprobador de acción. Esta investigación realiza un seguimiento de la investigación realizada por el administrador manualmente y contiene detalles de las selecciones realizadas por el administrador, por lo que se denomina investigación de acción de administrador. No es necesario actuar sobre la investigación y alertar de que ya está en estado aprobado.   
+- *Recuento de correo electrónico* Muestra el número de correos electrónicos enviados a través del Explorador de amenazas. Estos correos electrónicos pueden ser acciónbles o no se pueden realizar acciones. 
+- *Registros de acciones* Muestra los detalles del estado de corrección como correcto/ con error/ ya en el destino
 
   > [!div class="mx-imgBorder"]
-  > [![El centro de acción con amenazas que pueden actuar y que no pueden actuar.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
+  > [![Captura de pantalla del centro de acciones con amenazas que pueden actuar y que no pueden actuar.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
 
   - **Actionable**: los correos electrónicos en las siguientes ubicaciones de buzones de correo en la nube se pueden actuar y mover:
     - Bandeja de entrada
@@ -87,7 +97,7 @@ Abra cualquier elemento de corrección para ver detalles sobre él, incluido su 
       > Actualmente, solo un usuario con acceso al buzón puede recuperar elementos de una carpeta eliminada temporalmente.
 
   - **No se pueden realizar** acciones: los correos electrónicos de las siguientes ubicaciones no se pueden actuar ni mover en acciones de corrección:
-    - Cuarentena
+    - Quarantine
     - Carpeta eliminada de forma permanente
     - Local/externo
     - Error o caída
@@ -107,14 +117,8 @@ Abra cualquier elemento de corrección para ver detalles sobre él, incluido su 
 
   Los administradores pueden realizar acciones en los correos electrónicos en cuarentena si es necesario, pero esos correos electrónicos expirarán fuera de cuarentena si no se purgan manualmente. De forma predeterminada, los usuarios no pueden acceder a los correos electrónicos en cuarentena debido a contenido malintencionado, por lo que el personal de seguridad no tiene que realizar ninguna acción para deshacerse de las amenazas en cuarentena. Si los correos electrónicos son locales o externos, se puede ponerse en contacto con el usuario para dirigirse al correo electrónico sospechoso. O bien, los administradores pueden usar herramientas de seguridad/servidor de correo electrónico independientes para la eliminación. Estos correos electrónicos se pueden identificar aplicando la ubicación *de entrega =* filtro externo local en el Explorador. Para correo electrónico con errores o eliminados, o correo electrónico no accesible por los usuarios, no habrá ningún correo electrónico para mitigar, ya que estos correos no llegan al buzón.
 
-  La siguiente imagen muestra cómo se ve un envío en el Centro de acciones. Una corrección puede contener varios envíos. Si se aprueban varias acciones a través de una investigación automatizada, cada acción del clúster de correo electrónico o correo electrónico aparece en la misma corrección que un envío diferente.
-
-  > [!div class="mx-imgBorder"]
-  > [![Panel desplegable del clúster de correo electrónico ZAP.](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
-
-  Seleccione un elemento de envío de correo para mostrar los detalles de esa corrección, como la consulta (cuando se desencadena la corrección a través de investigaciones automatizadas o explorer mediante la selección de una consulta) y los tiempos de inicio y finalización de la corrección. También muestra una lista de mensajes enviados para su corrección. A medida que los mensajes se mueven fuera del período de retención del Explorador, los mensajes desaparecen de esta lista. La lista también muestra mensajes individuales que se pueden corregir.
-
-- **Registros de acciones**: esta pestaña muestra los mensajes corregidos, incluida la fecha de aprobación, el administrador que aprobó la acción, la acción, el estado y los recuentos.
+ 
+- **Registros de acciones**: muestra los mensajes corregidos, correctos, con errores, ya en el destino.
 
   El estado puede ser:
 
@@ -139,5 +143,9 @@ Las acciones solo se pueden realizar en los mensajes de las carpetas Bandeja de 
 Seleccione cualquier elemento del registro de acciones para mostrar los detalles de corrección. Si los detalles dicen "correcto" o "no se encontró en el buzón", ese elemento ya se quitó del buzón. A veces hay un error del sistema durante la corrección. En esos casos, es una buena idea volver a intentar la acción de corrección.
 
 En caso de corregir grandes lotes de correo electrónico, exporte los mensajes enviados para su corrección a través del envío de correo y los mensajes que se han corregido a través de registros de acciones. El límite de exportación se aumenta a 100 000 registros.
+
+ Los administradores pueden realizar acciones de corrección como mover mensajes de correo electrónico a la carpeta Elementos eliminados, Bandeja de entrada o correo no deseado y eliminar acciones como eliminación temporal o eliminación permanente de páginas de búsqueda avanzada.
+
+:::image type="content" source="../../media/microsoft-365-defender-advanced-hunting-actions-pane.png" alt-text="El panel Búsqueda avanzada, Tomar acciones con tu elección de acciones.":::
 
 La corrección mitiga las amenazas, aborda correos electrónicos sospechosos y ayuda a mantener una organización segura.

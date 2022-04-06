@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a9753cdc818aefdf33411bd237327310dfc512ab
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: d254eee546187311a25a0e6cc433005a26ff57e6
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474759"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632435"
 ---
 # <a name="device-inventory"></a>Inventario de dispositivos
 
@@ -58,7 +58,7 @@ Puede aplicar los siguientes filtros para limitar la lista de alertas y obtener 
 
 ### <a name="device-name"></a>Nombre del dispositivo
 
-Durante el proceso de incorporación de Microsoft Defender para endpoints, los dispositivos incorporados a MDE se rellenan gradualmente en el inventario de dispositivos a medida que comienzan a informar de los datos del sensor. A continuación, el inventario de dispositivos se rellena con dispositivos que se detectan en la red a través del proceso de detección de dispositivos. El inventario de dispositivos tiene tres pestañas que enumeran los dispositivos mediante:
+Durante el Pertahanan Microsoft untuk Titik Akhir de incorporación, los dispositivos incorporados a MDE se rellenan gradualmente en el inventario de dispositivos a medida que comienzan a informar de los datos del sensor. A continuación, el inventario de dispositivos se rellena con dispositivos que se detectan en la red a través del proceso de detección de dispositivos. El inventario de dispositivos tiene tres pestañas que enumeran los dispositivos mediante:
 
 - **Equipos y dispositivos** móviles: Enterprise de conexión (estaciones de trabajo, servidores y dispositivos móviles)
 - **Dispositivos de red**: dispositivos como enrutadores y conmutadores
@@ -72,7 +72,7 @@ Para obtener acceso a la página de inventario de dispositivos, seleccione **Inv
 
 El inventario de dispositivos se abre en la **pestaña Equipos y** móviles. De un vistazo, verá información como el nombre del dispositivo, el dominio, el nivel de riesgo, el nivel de exposición, la plataforma del sistema operativo, el estado de incorporación, el estado de mantenimiento del sensor y otros detalles para identificar fácilmente los dispositivos más en riesgo.
 
-Usa la **columna Estado de incorporación** para ordenar y filtrar por dispositivos detectados y aquellos que ya están incorporados a Microsoft Defender para endpoint.
+Use la **columna Estado de incorporación** para ordenar y filtrar por dispositivos detectados y los que ya están incorporados a Pertahanan Microsoft untuk Titik Akhir.
 
 ![Imagen de la lista de dispositivos con lista de dispositivos.](images/device-inventory.png)
 
@@ -109,18 +109,18 @@ Los recuentos de la parte superior de cada pestaña se actualizarán en función
 Filtro | Descripción
 :---|:---
 **Nivel de riesgo** </br> | El nivel de riesgo refleja la evaluación general del riesgo del dispositivo en función de una combinación de factores, incluidos los tipos y la gravedad de las alertas activas en el dispositivo. Resolver alertas activas, aprobar actividades de corrección y suprimir alertas posteriores puede reducir el nivel de riesgo.
-**Nivel de exposición** </br> | El nivel de exposición refleja la exposición actual del dispositivo en función del impacto acumulado de sus recomendaciones de seguridad pendientes. Los niveles posibles son bajos, medianos y altos. Una exposición baja significa que los dispositivos son menos vulnerables a la explotación. </br> </br> Si el nivel de exposición indica "No hay datos disponibles", hay algunas razones por las que esto puede ser así:</br>- El dispositivo dejó de informar durante más de 30 días. En ese caso, se considera inactivo y no se calcula la exposición.</br>- El sistema operativo del dispositivo no es compatible: consulta [requisitos mínimos para Microsoft Defender para endpoint](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/minimum-requirements.md).</br>- Dispositivo con agente obsoleto (poco probable).
+**Nivel de exposición** </br> | El nivel de exposición refleja la exposición actual del dispositivo en función del impacto acumulado de sus recomendaciones de seguridad pendientes. Los niveles posibles son bajos, medianos y altos. Una exposición baja significa que los dispositivos son menos vulnerables a la explotación. </br> </br> Si el nivel de exposición indica "No hay datos disponibles", hay algunas razones por las que esto puede ser así:</br>- El dispositivo dejó de informar durante más de 30 días. En ese caso, se considera inactivo y no se calcula la exposición.</br>- El sistema operativo del dispositivo no es compatible: consulta [los requisitos mínimos para Pertahanan Microsoft untuk Titik Akhir](/microsoft-365/security/defender-endpoint/minimum-requirements).</br>- Dispositivo con agente obsoleto (poco probable).
 **Tags** </br> | Filtre la lista en función de la agrupación y el etiquetado que haya agregado a dispositivos individuales. Consulta [Crear y administrar etiquetas de dispositivo](machine-tags.md).
 **Valor de dispositivo**</br> | Filtra la lista en función de si el dispositivo se ha marcado como valor alto o bajo.
 **Estado de exclusión** </br> | Filtra la lista en función de si el dispositivo se ha excluido o no. Para obtener más información, consulta [Excluir dispositivos](exclude-devices.md).
 **Plataforma del sistema operativo** </br>| Filtrar por las plataformas del sistema operativo que le interesa investigar </br></br>(_Solo equipos y dispositivos móviles e IoT_)
-**Primera vista** </br> | Filtra la vista en función del momento en que el dispositivo se vio por primera vez en la red o cuando el sensor de Microsoft Defender para endpoints lo informó por primera vez.</br></br>(_Solo equipos y dispositivos móviles e IoT_)
+**Primera vista** </br> | Filtra la vista en función del momento en que el dispositivo se vio por primera vez en la red o cuando el sensor de Pertahanan Microsoft untuk Titik Akhir reportó por primera vez.</br></br>(_Solo equipos y dispositivos móviles e IoT_)
 **Versión de Windows** </br> | Filtra por las Windows que estás interesado en investigar.</br></br> (_Solo equipos y dispositivos móviles_)
-**Estado del sensor** </br> | Filtra por los siguientes estados de mantenimiento del sensor, para dispositivos incorporados a Microsoft Defender para endpoint:</br> - **Activo**: dispositivos que informan activamente de los datos del sensor al servicio.</br> - **Inactivo**: dispositivos que han dejado de enviar señales durante más de 7 días. </br> - **Configuración errónea: dispositivos** que tienen comunicaciones deficientes con el servicio o que no pueden enviar datos del sensor. </br> Los dispositivos mal configurados se pueden clasificar en: </br>  - Sin datos de sensor </br>  - Comunicaciones deficientes </br>  Para obtener más información sobre cómo solucionar problemas en dispositivos mal configurados, consulte [Fix unhealthy sensors](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/fix-unhealthy-sensors.md).</br></br> (_Solo equipos y dispositivos móviles_)
-**Estado de incorporación** </br> | El estado de incorporación indica si el dispositivo está incorporado actualmente a Microsoft Defender para Endpoint o no. Puede filtrar por los siguientes estados: </br> - **Incorporado**: el punto de conexión se incorpora a Microsoft Defender para endpoint.  </br> - **Se puede incorporar**: el punto de conexión se descubrió en la red como un dispositivo compatible, pero no está incorporado actualmente. Microsoft recomienda encarecidamente la incorporación de estos dispositivos. </br> - **No compatible**: el punto de conexión se ha detectado en la red, pero Microsoft Defender no admite endpoint. </br> - **Información insuficiente**: el sistema no pudo determinar la compatibilidad del dispositivo.</br></br> (_Solo equipos y dispositivos móviles_)
+**Estado del sensor** </br> | Filtre por los siguientes estados de mantenimiento del sensor, para los dispositivos incorporados a Pertahanan Microsoft untuk Titik Akhir:</br> - **Activo**: dispositivos que informan activamente de los datos del sensor al servicio.</br> - **Inactivo**: dispositivos que han dejado de enviar señales durante más de 7 días. </br> - **Configuración errónea: dispositivos** que tienen comunicaciones deficientes con el servicio o que no pueden enviar datos del sensor. </br> Los dispositivos mal configurados se pueden clasificar en: </br>  - Sin datos de sensor </br>  - Comunicaciones deficientes </br>  Para obtener más información sobre cómo solucionar problemas en dispositivos mal configurados, consulte [Fix unhealthy sensors](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors).</br></br> (_Solo equipos y dispositivos móviles_)
+**Estado de incorporación** </br> | El estado de incorporación indica si el dispositivo está incorporado actualmente Pertahanan Microsoft untuk Titik Akhir o no. Puede filtrar por los siguientes estados: </br> - **Incorporado**: el extremo se incorpora a Pertahanan Microsoft untuk Titik Akhir.  </br> - **Se puede incorporar**: el punto de conexión se descubrió en la red como un dispositivo compatible, pero no está incorporado actualmente. Microsoft recomienda encarecidamente la incorporación de estos dispositivos. </br> - **No compatible**: el extremo se ha detectado en la red, pero no es compatible con Pertahanan Microsoft untuk Titik Akhir. </br> - **Información insuficiente**: el sistema no pudo determinar la compatibilidad del dispositivo.</br></br> (_Solo equipos y dispositivos móviles_)
 **Estado del antivirus** </br> | Filtre la vista en función de si el estado del antivirus está deshabilitado, no actualizado o desconocido.</br></br> (_Solo equipos y dispositivos móviles_)
-**Grupo** </br> | Filtra la lista en función del grupo que estés interesado en investigar. </br></br> (_Solo equipos y dispositivos móviles_)
-**Administrado por** </br> | Managed by indica cómo se está administrando el dispositivo. Se puede filtrar por:</br>- Microsoft Defender para endpoint </br> - Administración de dispositivos móviles (MDM) </br>- Desconocido: esto podría deberse a la ejecución de una versión de Windows obsoleta, sccm en su lugar u otro MDM de terceros.</br></br> (_Solo equipos y dispositivos móviles_)
+**Group** </br> | Filtra la lista en función del grupo que estés interesado en investigar. </br></br> (_Solo equipos y dispositivos móviles_)
+**Administrado por** </br> | Managed by indica cómo se está administrando el dispositivo. Se puede filtrar por:</br>- Pertahanan Microsoft untuk Titik Akhir </br> - Administración de dispositivos móviles (MDM) </br>- Desconocido: esto podría deberse a la ejecución de una versión de Windows obsoleta, sccm en su lugar u otro MDM de terceros.</br></br> (_Solo equipos y dispositivos móviles_)
 **Tipo de dispositivo** </br> | Filtra por el tipo de dispositivo que te interesa investigar.</br></br> (_Solo dispositivos IoT_)
 
 ## <a name="use-columns-to-customize-the-device-inventory-views"></a>Usar columnas para personalizar las vistas de inventario de dispositivos
@@ -141,4 +141,4 @@ En la **pestaña Dispositivos ioT** , seleccione **Personalizar columnas** para 
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Investigar dispositivos en la lista Microsoft Defender para dispositivos de punto de conexión](investigate-machines.md)
+[Investigar dispositivos en la lista Pertahanan Microsoft untuk Titik Akhir dispositivos](investigate-machines.md)

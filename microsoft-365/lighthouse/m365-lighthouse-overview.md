@@ -17,22 +17,22 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: Para proveedores de servicios administrados (MSP), obtenga información sobre Microsoft 365 Lighthouse puede ayudarle a proteger y administrar los inquilinos de clientes en una ubicación.
-ms.openlocfilehash: 88b6a3b1afff0905458f5ade7e4e91136b2c9d38
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: fde2ee27692b1d8fb53d46077cf58deb6d9a0550
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494476"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645064"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Información general sobre Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse es un portal de administración que ayuda a los proveedores de servicios administrados (MSP) a proteger y administrar dispositivos, datos y usuarios a escala para clientes de pequeñas y medianas empresas (SMB) que usan Microsoft 365 Empresa Premium o Microsoft 365 E3. 
+Microsoft 365 Lighthouse es un portal de administración que ayuda a los proveedores de servicios administrados (MSP) a proteger y administrar dispositivos, datos y usuarios a escala para clientes de pequeñas y medianas empresas (SMB) que usan Microsoft 365 Empresa Premium, Microsoft 365 E3 o Windows 365 Business. 
 
-Lighthouse simplifica la incorporación de inquilinos Microsoft 365 Empresa Premium y Microsoft 365 E3 al recomendar líneas base de configuración de seguridad adaptadas a los clientes SMB y proporcionar vistas multiinquilino en todos los entornos de clientes. Con Lighthouse, los MSP pueden escalar la administración de sus clientes, centrarse en lo más importante, encontrar e investigar rápidamente los riesgos y tomar medidas para que sus clientes lleguen a un estado correcto y seguro.
+Lighthouse simplifica la incorporación de inquilinos de Microsoft 365 Empresa Premium, Microsoft 365 E3 y Windows 365 Business al recomendar líneas base de configuración de seguridad adaptadas a los clientes SMB y proporcionar vistas multiinquilino en todos los entornos de clientes. Con Lighthouse, los MSP pueden escalar la administración de sus clientes, centrarse en lo más importante, encontrar e investigar rápidamente los riesgos y tomar medidas para que sus clientes lleguen a un estado correcto y seguro.
 
-No hay costos adicionales asociados con el uso de Lighthouse para administrar Microsoft 365 servicios y dispositivos conectados. Lighthouse está disponible para los MSP inscritos en el programa Proveedor de soluciones en la nube (CSP) y a los clientes SMB con una Microsoft 365 Empresa Premium o Microsoft 365 E3 suscripción.
+No hay costos adicionales asociados con el uso de Lighthouse para administrar Microsoft 365 servicios y dispositivos conectados. Lighthouse está disponible para los MSP inscritos en el programa Proveedor de soluciones en la nube (CSP) y sirve a clientes SMB con una Microsoft 365 Empresa Premium, Microsoft 365 E3 o Windows 365 Business suscripción .
 
-Se admite el uso de Lighthouse por parte de socios de canal csp de Microsoft que tienen clientes que usan Microsoft 365 Empresa Premium o Microsoft 365 E3. Esto incluye socios CSP que realizan transacciones directamente con Microsoft y aquellos que realizan transacciones a través de un proveedor indirecto (distribuidor). 
+Se admite el uso de Lighthouse por parte de socios de canal csp de Microsoft que tienen clientes que usan Microsoft 365 Empresa Premium, Microsoft 365 E3 o Windows 365 Business. Esto incluye socios CSP que realizan transacciones directamente con Microsoft y aquellos que realizan transacciones a través de un proveedor indirecto (distribuidor). 
 
 > [!IMPORTANT] 
 > Para usar Lighthouse, los MSP y sus inquilinos de clientes deben cumplir los requisitos enumerados [en Microsoft 365 Lighthouse requisitos](m365-lighthouse-requirements.md).     
@@ -68,4 +68,4 @@ Lighthouse ayuda a los MSP a proteger y administrar Microsoft 365 servicios y pu
 [Microsoft 365 Lighthouse de la página Inquilinos (](m365-lighthouse-tenants-page-overview.md)artículo)   
 [Microsoft 365 Lighthouse de la página de cumplimiento de dispositivos](m365-lighthouse-device-compliance-page-overview.md) (artículo)   
 [Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)   
-[Microsoft Defender para empresas](../security/defender-business/index.yml) (página de vínculos)
+[Microsoft Defender para Empresas](../security/defender-business/index.yml) (página de vínculos)

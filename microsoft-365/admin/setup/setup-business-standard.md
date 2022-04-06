@@ -27,18 +27,22 @@ search.appverid:
 - MOE150
 - BEA160
 description: Cuando compre una suscripción a Microsoft 365 Empresa Estándar, tendrá la opción de usar un dominio de su propiedad o comprar uno durante el registro.
-ms.openlocfilehash: 51f88847a1e0ca04e216044172dbacf572fb82e3
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 791f719f50809f2aa178ca2ab72471aea534e111
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421407"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64638035"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>Configurar Microsoft 365 Empresa Estándar con un dominio nuevo o existente
 
 Cuando compre una suscripción a Microsoft 365 Empresa Estándar, tendrá la opción de añadir un dominio de su propiedad o comprar. Consulte [Registrarse para obtener una suscripción de Microsoft 365 Empresa Estándar](../simplified-signup/signup-business-standard.md).
 
 En este artículo, le guiaremos por los pasos necesarios para agregar un dominio existente que ya posee o comprar uno nuevo. Si compró uno nuevo cuando se registró, el dominio estará configurado y podrá proceder a [Agregar usuarios y asignar licencias](#add-users-and-assign-licenses).
+
+## <a name="set-up-microsoft-365-for-business"></a>Configurar Microsoft 365 para empresas
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
