@@ -12,8 +12,8 @@
   items:
     - name: Configurar la seguridad del portal
       href: m365-lighthouse-configure-portal-security.md
-    - name: Configurar roles
-      href: m365-lighthouse-set-up-roles.md
+    - name: Introducción a los permisos
+      href: m365-lighthouse-overview-of-permissions.md
     - name: Revisar registros de auditoría
       href: m365-lighthouse-review-audit-logs.md
 - name: Proteger clientes con líneas base
@@ -52,7 +52,7 @@
       href: m365-lighthouse-device-compliance-page-overview.md
     - name: Comparar la configuración de directiva de cumplimiento de dispositivos
       href: m365-lighthouse-compare-compliance-policies.md
-    - name: Windows de la página 365 (equipos en la nube)
+    - name: Windows 365 de página (equipos en la nube)
       href: m365-lighthouse-win365-page-overview.md
 - name: Administrar amenazas
   items:

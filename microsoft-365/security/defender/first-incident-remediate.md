@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 827b22ea2fb5e0864157dfae6748aa97ee4baf29
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: b6872fb13ba1a32f081b5fcc82fd590f2c196a6c
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499955"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569565"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Paso 2. Corregir el primer incidente
 
@@ -42,7 +42,7 @@ Microsoft 365 Defender ofrece varias acciones de corrección que los analistas p
 
 ## <a name="actions-on-devices"></a>Acciones en dispositivos
 
-- **Aislar el** dispositivo: esta actividad bloquea inmediatamente todo el tráfico de red (internet e interno) para minimizar la propagación de malware y permitir a los analistas continuar el análisis sin que un actor malintencionado pueda continuar con un ataque. La única conexión permitida es a la nube del servicio de Identidad de Microsoft Defender para que Microsoft Defender for Identity pueda seguir supervisando el dispositivo. 
+- **Aislar el** dispositivo: esta actividad bloquea inmediatamente todo el tráfico de red (internet e interno) para minimizar la propagación de malware y permitir a los analistas continuar el análisis sin que un actor malintencionado pueda continuar con un ataque. La única conexión permitida es a la nube Microsoft Defender for Identity servicio para que Microsoft Defender for Identity pueda seguir supervisando el dispositivo. 
 - **Restringir la ejecución de** la aplicación: para restringir la ejecución de una aplicación, se aplica una directiva de integridad de código que solo permite que los archivos se ejecuten si están firmados por un certificado emitido por Microsoft. Este método de restricción puede ayudar a evitar que un atacante controle los dispositivos en peligro y realice más actividades malintencionadas.
 - **Ejecutar examen antivirus**: un examen Antivirus de Microsoft Defender puede ejecutarse junto con otras soluciones antivirus, independientemente de si Defender Antivirus es la solución antivirus activa o no. Si otro producto de proveedor de antivirus es la solución principal de protección de puntos de conexión, puede ejecutar Defender Antivirus en modo pasivo.
 - **Iniciar una investigación automatizada** : puedes iniciar una nueva investigación automatizada de propósito general en el dispositivo. Mientras se ejecuta una investigación, cualquier otra alerta generada desde el dispositivo se agregará a una investigación automatizada en curso hasta que se complete esa investigación. Además, si se ve la misma amenaza en otros dispositivos, estos dispositivos se agregan a la investigación.
@@ -64,11 +64,11 @@ Siguiendo el ejemplo de [Detectar, analizar](first-incident-analyze.md#analyze-y
 3. Asegúrese de que el archivo malintencionado se ha puesto en cuarentena SharePoint
 4. Comprobar qué puntos de conexión se vieron afectados por malware
 5. Recompilar sistemas
-6. Buscar alertas similares de Microsoft Defender para aplicaciones en la nube para otros usuarios
-7. Crear un indicador personalizado en Microsoft Defender para endpoint para bloquear una dirección IP de Tor
-8. Cree una acción de gobierno en Microsoft Defender para aplicaciones en la nube para este tipo de alerta, como las que se muestran en la siguiente imagen:
+6. Buscar alertas de Microsoft Defender for Cloud Apps similares para otros usuarios
+7. Crear un indicador personalizado en Microsoft Defender para punto de conexión bloquear una dirección IP de Tor
+8. Cree una acción de gobierno en Microsoft Defender for Cloud Apps para este tipo de alerta, como las que se muestran en la siguiente imagen:
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Acciones de gobierno en el portal de Microsoft Defender para Aplicaciones en la nube" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Acciones de gobierno en el portal Microsoft Defender for Cloud Apps administración" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
 
 La mayoría de las acciones de corrección se pueden aplicar y realizar un seguimiento en Microsoft 365 Defender.
 
@@ -91,11 +91,9 @@ Los libros de reproducción también se pueden crear durante [la revisión poste
 
 ## <a name="next-step"></a>Paso siguiente
 
-[![Paso 3: Aprenda a realizar una revisión posterior al incidente de un incidente.](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
-
 Obtenga información sobre cómo [realizar una revisión posterior al incidente de un incidente](first-incident-post.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

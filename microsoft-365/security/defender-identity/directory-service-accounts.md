@@ -8,21 +8,22 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 8928441e27215e75dc4456116c9a0e7890073852
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 0b7e9045ecc479c2da382979211caaa46e8a01d1
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962620"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683305"
 ---
-# <a name="microsoft-defender-for-identity-directory-services-account-in-microsoft-365-defender"></a>Cuenta de Microsoft Defender para Servicios de directorio de identidad en Microsoft 365 Defender
+# <a name="microsoft-defender-for-identity-directory-services-account-in-microsoft-365-defender"></a>Cuenta de Microsoft Defender para Identity Directory Services en Microsoft 365 Defender
 
 **Se aplica a:**
 
 - Microsoft 365 Defender
 - Defender for Identity
 
-En este artículo se explica cómo configurar la cuenta de Servicios de directorio de Identidad de [Microsoft Defender](/defender-for-identity) en [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
+En este artículo se explica cómo configurar la cuenta de Servicios de directorio de [identidad de Microsoft Defender](/defender-for-identity) [en Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 >[!IMPORTANT]
 >Como parte de la convergencia con Microsoft 365 Defender, algunas opciones y detalles han cambiado desde su ubicación en el portal de Defender for Identity. Lea los detalles siguientes para descubrir dónde encontrar las características conocidas y las nuevas.
@@ -31,11 +32,11 @@ En este artículo se explica cómo configurar la cuenta de Servicios de director
 
 Para conectar el [sensor con](sensor-health.md#add-a-sensor) los dominios de Active Directory, deberá configurar cuentas de Servicios de directorio.
 
-1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya **a Configuración** y, a continuación, **Identities**.
+1. En <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, vaya a Configuración y, a **continuación**, **Identities**.
 
     ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
 
-1. Seleccione **Cuentas del servicio de directorio**. Verá qué cuentas están asociadas con qué dominios.
+1. Seleccione **Cuentas de servicio de directorio**. Verá qué cuentas están asociadas con qué dominios.
 
     ![Cuentas del servicio de directorio.](../../media/defender-identity/directory-service-accounts.png)
 
@@ -43,7 +44,7 @@ Para conectar el [sensor con](sensor-health.md#add-a-sensor) los dominios de Act
 
     ![Configuración de la cuenta.](../../media/defender-identity/account-settings.png)
 
-1. Para agregar una nueva cuenta de Servicios de directorio, seleccione **Crear** nueva cuenta y rellene el nombre de cuenta **,** **Dominio** y **Contraseña**. También puede elegir si es  una cuenta de servicio administrado de grupo (gMSA) y si pertenece a un **dominio de etiqueta única**.
+1. Para agregar una nueva cuenta de Servicios de directorio, seleccione **Crear** nueva cuenta y rellene el nombre de la **cuenta,** **el** dominio y la **contraseña**. También puede elegir si es una cuenta de servicio administrado de **grupo (** gMSA) y si pertenece a un **dominio de etiqueta única**.
 
     ![Nueva cuenta del servicio de directorio.](../../media/defender-identity/new-directory-service-account.png)
 

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo configurar la seguridad del portal.
-ms.openlocfilehash: dd99330d520b409a93cfd5d1ca777c17b9ef4373
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 4d12755ca1b02988dff3f5ba6be6dd0d8da172ad
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775948"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594760"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Configurar Microsoft 365 Lighthouse seguridad del portal
 
@@ -39,7 +39,7 @@ Cuando los usuarios tienen acceso a Lighthouse por primera vez, se les pedirá q
 
 El control de acceso basado en roles (RBAC) concede acceso a recursos o información basado en roles de usuario. El acceso a los datos y la configuración del inquilino del cliente en Lighthouse está restringido a roles específicos del programa Proveedor de soluciones en la nube (CSP). Para configurar roles RBAC en Lighthouse, se recomienda usar privilegios de administrador delegados pormenorizados (GDAP) para implementar asignaciones pormenorizados para los usuarios. Los privilegios de administrador delegados (DAP) siguen siendo necesarios para que el inquilino se incorpore correctamente, pero los clientes solo de GDAP pronto podrán incorporarse sin dependencia de DAP. Los permisos GDAP tienen prioridad cuando DAP y GDAP coexisten para un cliente. 
 
-Para empezar con GDAP, consulte [Configurar roles para administrar inquilinos de clientes](m365-lighthouse-set-up-roles.md).
+Para empezar con GDAP, vea [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
 Los técnicos msp también pueden tener acceso a Lighthouse mediante roles de agente de administración o agente de soporte técnico mediante privilegios de administrador delegados (DAP).
 

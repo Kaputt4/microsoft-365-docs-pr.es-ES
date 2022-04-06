@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar y archivar datos de la herramienta de correo electrónico mensaje de Bloomberg en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 3897909c185aabad48483db9b42fcf6b552a68a3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5b1f32760542bf9ace2adaa8640571f665ba3ffb
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317841"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569873"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Configurar un conector para archivar datos de mensajes de Bloomberg
 
@@ -145,14 +145,20 @@ El último paso es crear un conector de mensajes de Bloomberg en el Centro de cu
 
 7. Después de validar correctamente la conexión, haga clic en **Siguiente**.
 
-8. En la **página Asignar mensajes de Bloomberg Microsoft 365** usuarios, habilite la asignación automática de usuarios y proporcione una asignación de usuario personalizada según sea necesario.
+8. En la **página Definir usuario** , especifique los usuarios para los que se importarán los datos.
+
+     - **Todos los usuarios de la organización**. Seleccione esta opción para importar datos para todos los usuarios.
+
+     - **Solo los usuarios en retención por juicio**. Seleccione esta opción para importar datos solo para los usuarios cuyos buzones se colocan en retención por juicio. Esta opción importa datos a buzones de usuario que tienen la propiedad LitigationHoldEnabled establecida en True. Para obtener más información, vea [Create a Litigation hold](create-a-litigation-hold.md).
+
+9. En la **página Asignar mensajes de Bloomberg Microsoft 365** usuarios, habilite la asignación automática de usuarios y proporcione una asignación de usuario personalizada según sea necesario.
 
    > [!NOTE]
    > El conector importa elementos de mensaje al buzón de un usuario específico. Se crea una nueva carpeta denominada **BloombergMessage** en el buzón del usuario específico y los elementos se importarán a él. El conector lo hace mediante el valor de la *propiedad CorporateEmailAddress* . Cada mensaje de chat contiene esta propiedad y la propiedad se rellena con la dirección de correo electrónico de cada participante del mensaje de chat. Además de la asignación automática de usuarios mediante el valor de la *propiedad CorporateEmailAddress* , también puede definir la asignación personalizada cargando un archivo de asignación CSV. El archivo de asignación debe contener el UUID de Bloomberg y la dirección Microsoft 365 buzón correspondiente para cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, por cada elemento de mensaje, el conector primero verá el archivo de asignación personalizado. Si no encuentra un usuario Microsoft 365 válido que corresponda al UUID de Bloomberg de un usuario, el conector usará la propiedad *CorporateEmailAddress* del elemento de chat. Si el conector no encuentra un usuario Microsoft 365 válido en el archivo de asignación personalizado o en la propiedad *CorporateEmailAddress* del elemento de mensaje, el elemento no se importará.
 
-9. Haga **clic en Siguiente**, revise la configuración y, a continuación, haga clic **en Finalizar** para crear el conector.
+10. Haga **clic en Siguiente**, revise la configuración y, a continuación, haga clic **en Finalizar** para crear el conector.
 
-10. Vaya a la **página Conectores de datos** para ver el progreso del proceso de importación del nuevo conector. Haga clic en el conector para mostrar la página desplegable, que contiene información sobre el conector.
+11. Vaya a la **página Conectores de datos** para ver el progreso del proceso de importación del nuevo conector. Haga clic en el conector para mostrar la página desplegable, que contiene información sobre el conector.
 
 ## <a name="set-up-a-connector-using-private-keys"></a>Configurar un conector con claves privadas
 
@@ -223,14 +229,20 @@ Una vez configurado el sitio SFTP de Bloomberg, el siguiente paso es crear un co
 
 7. Después de validar correctamente la conexión, haga clic en **Siguiente**.
 
-8. En la **página Asignar mensajes de Bloomberg Microsoft 365** usuarios, habilite la asignación automática de usuarios y proporcione una asignación de usuario personalizada según sea necesario.
+8. En la **página Definir usuario** , especifique los usuarios para los que se importarán los datos
+
+     - **Todos los usuarios de la organización**. Seleccione esta opción para importar datos para todos los usuarios.
+
+     - **Solo los usuarios en retención por juicio**. Seleccione esta opción para importar datos solo para los usuarios cuyos buzones se colocan en retención por juicio. Esta opción importa datos a buzones de usuario que tienen la propiedad LitigationHoldEnabled establecida en True. Para obtener más información, vea [Create a Litigation hold](create-a-litigation-hold.md).
+
+9. En la **página Asignar mensajes de Bloomberg Microsoft 365** usuarios, habilite la asignación automática de usuarios y proporcione una asignación de usuario personalizada según sea necesario.
 
    > [!NOTE]
    > El conector importa elementos de mensaje al buzón de un usuario específico. Se crea una nueva carpeta denominada **BloombergMessage** en el buzón del usuario específico y los elementos se importarán a él. El conector lo hace mediante el valor de la *propiedad CorporateEmailAddress* . Cada mensaje de chat contiene esta propiedad y la propiedad se rellena con la dirección de correo electrónico de cada participante del mensaje de chat. Además de la asignación automática de usuarios mediante el valor de la *propiedad CorporateEmailAddress* , también puede definir la asignación personalizada cargando un archivo de asignación CSV. El archivo de asignación debe contener el UUID de Bloomberg y la dirección Microsoft 365 buzón correspondiente para cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, por cada elemento de mensaje, el conector primero verá el archivo de asignación personalizado. Si no encuentra un usuario Microsoft 365 válido que corresponda al UUID de Bloomberg de un usuario, el conector usará la propiedad *CorporateEmailAddress* del elemento de chat. Si el conector no encuentra un usuario Microsoft 365 válido en el archivo de asignación personalizado o en la propiedad *CorporateEmailAddress* del elemento de mensaje, el elemento no se importará.
 
-9. Haga **clic en Siguiente**, revise la configuración y, a continuación, haga clic **en Finalizar** para crear el conector.
+10. Haga **clic en Siguiente**, revise la configuración y, a continuación, haga clic **en Finalizar** para crear el conector.
 
-10. Vaya a la **página Conectores de datos** para ver el progreso del proceso de importación del nuevo conector. Haga clic en el conector para mostrar la página desplegable, que contiene información sobre el conector.
+11. Vaya a la **página Conectores de datos** para ver el progreso del proceso de importación del nuevo conector. Haga clic en el conector para mostrar la página desplegable, que contiene información sobre el conector.
 
 ## <a name="known-issues"></a>Problemas conocidos
 

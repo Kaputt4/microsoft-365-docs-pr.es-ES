@@ -16,12 +16,12 @@ ms.date: 06/10/2021
 description: Obtenga información sobre cómo acelerar el proceso de detección y tratamiento de cuentas de usuario comprometidas con capacidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cbc3c6c8a81d59bebbd5272e13e0f96de2257623
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c1488598eb3a198a70997e755fe77a8a0c97e1c0
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937693"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474370"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Solucionar cuentas de usuario comprometidas con investigación y respuesta automatizadas
 
@@ -31,7 +31,7 @@ ms.locfileid: "61937693"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-[Microsoft Defender para Office 365 Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) incluye potentes capacidades de investigación y respuesta [automatizadas](office-365-air.md) (AIR). Estas capacidades pueden ahorrarle mucho tiempo y esfuerzo al equipo de operaciones de seguridad que se ocupa de las amenazas. Microsoft sigue mejorando las capacidades de seguridad. Recientemente, las capacidades de AIR se han mejorado para incluir un libro de juegos de seguridad de usuario en peligro (actualmente en versión preliminar). Lea este artículo para obtener más información sobre el libro de juegos de seguridad del usuario en peligro. Y consulta la entrada de blog Acelerar el tiempo para detectar y responder a los compromisos del usuario y limitar el ámbito de infracción con [Microsoft Defender](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) para obtener Office 365 detalles adicionales.
+[Microsoft Defender para Office 365 Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) incluye potentes [capacidades](office-365-air.md) automatizadas de investigación y respuesta (AIR). Estas capacidades pueden ahorrarle mucho tiempo y esfuerzo al equipo de operaciones de seguridad que se ocupa de las amenazas. Microsoft sigue mejorando las capacidades de seguridad. Recientemente, las capacidades de AIR se han mejorado para incluir un libro de juegos de seguridad de usuario en peligro (actualmente en versión preliminar). Lea este artículo para obtener más información sobre el libro de juegos de seguridad del usuario en peligro. Y consulta la entrada de blog Acelerar el tiempo para detectar y responder a los compromisos del usuario y limitar el ámbito de infracción con [Microsoft Defender para](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) obtener Office 365 detalles adicionales.
 
 ![Investigación automatizada para un usuario en peligro.](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -62,35 +62,35 @@ Cuando una cuenta de usuario está en peligro, se desencadenan alertas. Y en alg
 - [Ver detalles sobre las investigaciones automatizadas](#view-details-about-automated-investigations)
 
 > [!IMPORTANT]
-> Debe tener los permisos adecuados para realizar las siguientes tareas. Consulte [Permisos necesarios para usar las funcionalidades de AIR.](office-365-air.md#required-permissions-to-use-air-capabilities)
+> Debe tener los permisos adecuados para realizar las siguientes tareas. Consulte [Permisos necesarios para usar las funcionalidades de AIR](office-365-air.md#required-permissions-to-use-air-capabilities).
 
 ### <a name="view-and-investigate-restricted-users"></a>Ver e investigar usuarios restringidos
 
-Tiene algunas opciones para navegar a una lista de usuarios restringidos. Por ejemplo, en el portal Microsoft 365 Defender, puede ir a Correo electrónico **&** \> **colaboración Revisar** \> **usuarios restringidos**. En el siguiente procedimiento se describe la navegación mediante el panel **de** alertas, que es una buena manera de ver varios tipos de alertas que podrían haber sido desencadenadas.
+Tiene algunas opciones para navegar a una lista de usuarios restringidos. Por ejemplo, en el portal Microsoft 365 Defender, puede ir a **Correo electrónico & colaboración** \> **Revisar** \> **usuarios restringidos**. En el siguiente procedimiento se describe la navegación mediante el panel **de** alertas, que es una buena manera de ver varios tipos de alertas que podrían haber sido desencadenadas.
 
-1. Abra el portal Microsoft 365 Defender y <https://security.microsoft.com> vaya a Incidentes &  \> **alertas**. O bien, para ir directamente a la **página Alertas,** use <https://security.microsoft.com/alerts> .
+1. Abra el portal de Microsoft 365 Defender y <https://security.microsoft.com> vaya **a Incidentes & alertas**\>. O bien, para ir directamente a la **página Alertas** , use <https://security.microsoft.com/alerts>.
 
-2. En la **página Alertas,** filtre los resultados por período de tiempo y la directiva denominada Usuario restringido **para enviar correo electrónico**.
+2. En la **página Alertas** , filtre los resultados por período de tiempo y la directiva denominada Usuario no puede **enviar correo electrónico**.
 
-   ![La página Alertas del portal Microsoft 365 Defender filtrado para usuarios restringidos.](../../media/m365-sc-alerts-page-with-restricted-user.png)
+   :::image type="content" source="../../media/m365-sc-alerts-page-with-restricted-user.png" alt-text="La página Alertas del portal de Microsoft 365 Defender filtrado para usuarios restringidos" lightbox="../../media/m365-sc-alerts-page-with-restricted-user.png":::
 
-3. Si selecciona la entrada haciendo clic  en el nombre, se abrirá una página de usuario con restricciones para enviar correo electrónico con detalles adicionales para que lo revise. Junto al botón **Administrar alerta,** puedes hacer clic en ![ El icono Más opciones.](../../media/m365-cc-sc-more-actions-icon.png) **Más opciones** y, a continuación, seleccione  **Ver** detalles de usuario restringido para ir a la página Usuarios restringidos, donde puede liberar el [usuario restringido.](removing-user-from-restricted-users-portal-after-spam.md)
+3. Si selecciona la entrada haciendo clic en el nombre, se abrirá  una página de usuario con restricciones para enviar correo electrónico con detalles adicionales para que lo revise. Junto al botón **Administrar alerta** , puedes hacer clic en El icono ![Más opciones.](../../media/m365-cc-sc-more-actions-icon.png) **Más opciones** y, a continuación, seleccione **Ver** detalles de usuario restringido  para ir a la página Usuarios restringidos, donde puede [liberar al usuario restringido](removing-user-from-restricted-users-portal-after-spam.md).
 
-   ![El usuario ha restringido el envío de la página de correo electrónico desde el Centro de alertas.](../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png)
+  :::image type="content" source="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png" alt-text="La página Usuario restringido para enviar correo electrónico" lightbox="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png":::
 
 ### <a name="view-details-about-automated-investigations"></a>Ver detalles sobre las investigaciones automatizadas
 
-Cuando se inicia una investigación automatizada, puede ver sus detalles y resultados en el Centro de seguridad & cumplimiento. Vaya  a \> **Investigaciones de administración de** amenazas y, a continuación, seleccione una investigación para ver sus detalles.
+Cuando haya comenzado una investigación automatizada, puede ver sus detalles y resultados en el Centro de seguridad & cumplimiento. Vaya a Investigaciones **de administración** \> **de amenazas** y, a continuación, seleccione una investigación para ver sus detalles.
 
-Para obtener más información, [vea Ver detalles de una investigación](air-view-investigation-results.md).
+Para obtener más información, vea [Ver detalles de una investigación](air-view-investigation-results.md).
 
 ## <a name="keep-the-following-points-in-mind"></a>Tenga en cuenta los siguientes puntos
 
-- **Mantenerse al tanto de las alertas**. Como sabe, cuanto más tiempo no se detecte un compromiso, mayor será el potencial de impacto y costo generalizado para su organización, clientes y socios. La detección temprana y la respuesta oportuna son fundamentales para mitigar las amenazas, especialmente cuando la cuenta de un usuario está en peligro.
+- **Mantente al tanto de las alertas**. Como sabe, cuanto más tiempo no se detecte un compromiso, mayor será el potencial de impacto y costo generalizado para su organización, clientes y socios. La detección temprana y la respuesta oportuna son fundamentales para mitigar las amenazas, especialmente cuando la cuenta de un usuario está en peligro.
 
-- **La automatización ayuda, pero no reemplaza, al equipo de operaciones de seguridad**. Las capacidades automatizadas de investigación y respuesta pueden detectar un usuario en peligro desde el principio, pero es probable que el equipo de operaciones de seguridad necesite participar y realizar alguna investigación y corrección. ¿Necesita ayuda con esto? Vea [Revisar y aprobar acciones](air-review-approve-pending-completed-actions.md).
+- **La automatización ayuda, pero no reemplaza, al equipo de operaciones de seguridad**. Las capacidades automatizadas de investigación y respuesta pueden detectar un usuario en peligro desde el principio, pero es probable que el equipo de operaciones de seguridad necesite participar y realizar alguna investigación y corrección. ¿Necesita ayuda con esto? Consulta [Revisar y aprobar acciones](air-review-approve-pending-completed-actions.md).
 
-- **No confíe en una alerta de inicio de sesión sospechosa como su único indicador**. Cuando una cuenta de usuario está en peligro, es posible que desencadene o no una alerta de inicio de sesión sospechosa. A veces es la serie de actividades que se producen después de que se pone en peligro una cuenta que desencadena una alerta. ¿Desea obtener más información sobre las alertas? Vea [Directivas de alerta](../../compliance/alert-policies.md).
+- **No confíe en una alerta de inicio de sesión sospechosa como su único indicador**. Cuando una cuenta de usuario está en peligro, es posible que desencadene o no una alerta de inicio de sesión sospechosa. A veces es la serie de actividades que se producen después de que se pone en peligro una cuenta que desencadena una alerta. ¿Desea obtener más información sobre las alertas? Consulte [Directivas de alerta](../../compliance/alert-policies.md).
 
 ## <a name="next-steps"></a>Siguientes pasos
 
@@ -100,4 +100,4 @@ Para obtener más información, [vea Ver detalles de una investigación](air-vie
 
 - [Obtenga información sobre AIR en Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Visite el Microsoft 365 guía de desarrollo para ver lo que se está implementando próximamente](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Visite el Microsoft 365 de desarrollo para ver lo que se está implementando próximamente](https://www.microsoft.com/microsoft-365/roadmap?filters=)

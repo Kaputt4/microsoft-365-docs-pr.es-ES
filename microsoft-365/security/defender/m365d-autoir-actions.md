@@ -23,12 +23,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 775781a5df9149ae99f1a051303f5d55c23f1bab
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a77a64e2323cc836df9b19694deb5c32ee877fb8
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323239"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500813"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Ver y administrar acciones en el Centro de acciones
 
@@ -57,7 +57,7 @@ Es importante aprobar (o rechazar) las acciones pendientes tan pronto como sea p
 
 3. En el Centro de acciones, en la **pestaña** Pendiente, seleccione un elemento de la lista. Se abre el panel desplegable. Por ejemplo:
 
-   :::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Ejemplo de aprobación o rechazo de una acción." lightbox="../../media/air-actioncenter-itemselected.png":::
+   :::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="Opciones para aprobar o rechazar una acción" lightbox="../../media/air-actioncenter-itemselected.png":::
 
 4. Revise la información del panel desplegable y, a continuación, siga uno de los pasos siguientes:
    - Seleccione **Abrir página de investigación** para ver más detalles sobre la investigación.
@@ -97,7 +97,7 @@ Si has determinado que un dispositivo o un archivo no es una amenaza, puedes des
 
 3. En el panel de la parte derecha de la pantalla, seleccione **Aplicar a X más instancias de este** archivo y, a continuación, seleccione **Deshacer**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver los detalles y los resultados de una investigación automatizada](m365d-autoir-results.md)
 - [Dirección de falsos positivos o falsos negativos](m365d-autoir-report-false-positives-negatives.md)

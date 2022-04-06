@@ -10,8 +10,8 @@ audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.AdminRoleGroups
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
-ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47ee051ab30669241a3283f1fb3f8fe86cf67f65
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: c451266d8cc11fc877f1c6c9f1c214959fe41938
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557849"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683173"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>Permisos en el Centro de seguridad y cumplimiento
 
@@ -62,10 +62,6 @@ Para ver cómo conceder acceso al Centro de seguridad y & cumplimiento, consulte
 
 > [!NOTE]
 > Para ver la **pestaña Permisos** en el Centro de seguridad & cumplimiento, debe ser administrador. En concreto, debe tener asignado el rol Administración  de roles y ese rol se asigna solo al grupo de roles  Administración de la organización en el Centro de seguridad & cumplimiento de forma predeterminada. Además, el rol **Administración de** roles permite a los usuarios ver, crear y modificar grupos de roles.
-
-<br>
-
-****
 
 |Grupo de funciones|Descripción|Roles predeterminados asignados|
 |---|---|---|
@@ -117,7 +113,6 @@ Para ver cómo conceder acceso al Centro de seguridad y & cumplimiento, consulte
 |**Usuario de garantía de servicio**|Los miembros pueden acceder a la sección Garantía de servicio en el Centro de seguridad & cumplimiento. La garantía de servicio proporciona informes y documentos que describen las prácticas de seguridad de Microsoft para los datos de clientes que se almacenan en Microsoft 365. También proporciona informes de auditoría de terceros independientes en Microsoft 365. Para obtener más información, vea [Service assurance in the Security & Compliance Center](../../compliance/service-assurance.md).|Vista Service Assurance|
 |**Administradores de solicitudes de derechos de sujeto**|Crear solicitudes de derechos de sujeto.|Administración de casos <p> Administrador de solicitudes de derechos de sujeto <p> View-Only case|
 |**Revisión de supervisión**|Los miembros pueden crear y administrar las directivas que definen qué comunicaciones están vinculadas a revisión en una organización. Para obtener más información, vea [Configure communication compliance policies for your organization](../../compliance/communication-compliance-configure.md).|Administrador de revisión de supervisión|
-|
 
 > [!NOTE]
 > <sup>1</sup> Este grupo de roles no asigna a los miembros los permisos necesarios para buscar en el registro de auditoría ni para usar informes que puedan incluir datos Exchange, como DLP o Defender para informes Office 365 usuario. Para buscar en el registro de auditoría o para ver todos los informes, un usuario debe tener asignados permisos en Exchange Online. Esto se debe a que el cmdlet subyacente que se usa para buscar en el registro de auditoría es un cmdlet Exchange en línea. Los administradores globales pueden buscar en el registro de auditoría y ver todos los informes porque se agregan automáticamente como miembros del grupo de roles Administración de la organización en Exchange Online. Para obtener más información, vea [Search the audit log in the Security & Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md).
@@ -169,10 +164,6 @@ Tenga en cuenta que los siguientes roles no están asignados al grupo de roles a
 - Administrador de solicitudes de derechos de sujeto
 - Administrador de revisión de supervisión
 - Tenant AllowBlockList Manager
-
-<br>
-
-****
 
 |Role|Descripción|Asignaciones predeterminadas de grupos de roles|
 |---|---|---|
@@ -252,4 +243,3 @@ Tenga en cuenta que los siguientes roles no están asignados al grupo de roles a
 |**Destinatarios con permiso de vista**|Ver información sobre usuarios y grupos.|Administrador de cumplimiento <p> Administrador de datos de cumplimiento <p> Lector global <p> Administrador de MailFlow <p> Administración de la organización|
 |**Administración de registros de solo vista**|Vea la configuración de la característica de administración de registros.|Administrador de cumplimiento <p> Administrador de datos de cumplimiento <p> <p> Lector global <p> Administración de la organización|
 |**Administración de retención de solo vista**|Vea la configuración de directivas de retención, etiquetas de retención y directivas de etiquetas de retención.|Administrador de cumplimiento <p> Administrador de datos de cumplimiento <p> Administrador global <p> Administración de organizaciones|
-|

@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 02/27/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: da5add0e1f37a813e6962accbc391be6efba1cb1
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 9a67b05f089fd25e26f22508cbedb8f4b3ce086a
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472999"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595090"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta
 
@@ -36,10 +36,10 @@ Puede definir exclusiones para Antivirus de Microsoft Defender que se aplican a 
 - [Exclusiones de archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Antivirus de Microsoft Defender exclusiones no se aplican a otras funcionalidades de Microsoft Defender para endpoints, como [detección y respuesta de puntos de conexión (EDR),](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)reglas de reducción de superficie de ataque [(ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) y acceso controlado a [carpetas](/microsoft-365/security/defender-endpoint/controlled-folders). Los archivos que se excluyen mediante los métodos descritos en este artículo aún pueden desencadenar EDR alertas y otras detecciones.
-> Para excluir archivos de forma general, agrégálos a los indicadores [personalizados](/microsoft-365/security/defender-endpoint/manage-indicators) de Microsoft Defender para endpoint.
+> Antivirus de Microsoft Defender exclusiones no se aplican a otras funcionalidades de Microsoft Defender para punto de conexión, incluidas [detección y respuesta de puntos de conexión ( EDR),](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)reglas [de reducción de superficie de ataque (ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) y [acceso controlado a carpetas](/microsoft-365/security/defender-endpoint/controlled-folders). Los archivos que se excluyen mediante los métodos descritos en este artículo aún pueden desencadenar EDR alertas y otras detecciones.
+> Para excluir archivos de forma general, agrégálos al Microsoft Defender para punto de conexión [indicadores personalizados](/microsoft-365/security/defender-endpoint/manage-indicators).
 
-## <a name="before-you-begin"></a>Antes de empezar...
+## <a name="before-you-begin"></a>Antes de empezar
 
 Consulte [Recomendaciones para definir exclusiones antes](configure-exclusions-microsoft-defender-antivirus.md) de definir las listas de exclusión.
 
@@ -52,8 +52,7 @@ Para excluir determinados archivos de Antivirus de Microsoft Defender exámenes,
 >
 > Las exclusiones automáticas solo se aplican Windows Server 2016 y posteriores. Estas exclusiones no son visibles en la aplicación Seguridad de Windows y en PowerShell.
 
-En la tabla siguiente se enumeran algunos ejemplos de exclusiones basadas en la extensión de archivo y la ubicación de la carpeta. 
-<br/><br/>
+En la tabla siguiente se enumeran algunos ejemplos de exclusiones basadas en la extensión de archivo y la ubicación de la carpeta.
 
 |Exclusión|Ejemplos|Lista de exclusión|
 |---|---|---|
@@ -77,7 +76,7 @@ En la tabla siguiente se enumeran algunos ejemplos de exclusiones basadas en la 
 
 - Las exclusiones se aplican [a los exámenes programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md), los exámenes [a](run-scan-microsoft-defender-antivirus.md) petición y la protección [en tiempo real](configure-real-time-protection-microsoft-defender-antivirus.md), pero no en Defender para endpoint. Para definir exclusiones en Defender para endpoint, usa [indicadores personalizados](manage-indicators.md).
 
-- De forma predeterminada, los cambios locales realizados en las listas (por usuarios con privilegios de administrador, incluidos los cambios realizados con PowerShell y WMI) se combinarán con las listas definidas (e implementadas) por la directiva de grupo, Configuration Manager o Intune. Las listas de directivas de grupo tienen prioridad cuando hay conflictos. Además, los cambios en la lista de exclusión realizados con la directiva de grupo están visibles en [la Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
+- De forma predeterminada, los cambios locales realizados en las listas (por usuarios con privilegios de administrador, incluidos los cambios realizados con PowerShell y WMI) se combinarán con las listas definidas (e implementadas) por directiva de grupo, Configuration Manager o Intune. Las directiva de grupo tienen prioridad cuando hay conflictos. Además, los cambios de lista de exclusión realizados con directiva de grupo son visibles en la [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
 
 - Para permitir que los cambios locales invaliden la configuración de implementación administrada, configure cómo se combinan las listas de [exclusiones definidas local y globalmente](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists).
 
@@ -85,25 +84,25 @@ En la tabla siguiente se enumeran algunos ejemplos de exclusiones basadas en la 
 
 Puede elegir entre varios métodos para definir exclusiones para Antivirus de Microsoft Defender.
 
-### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>Usar Intune para configurar exclusiones de nombre de archivo, carpeta o extensión de archivo
+### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>Use Intune para configurar exclusiones de nombre de archivo, carpeta o extensión de archivo
 
 Consulte los siguientes artículos:
 
 - [Configurar restricciones de dispositivos en Microsoft Intune](/intune/device-restrictions-configure)
 - [Antivirus de Microsoft Defender de restricción de dispositivos para Windows 10 en Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
-### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Usar Configuration Manager para configurar exclusiones de nombre de archivo, carpeta o extensión de archivo
+### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Use Configuration Manager para configurar exclusiones de nombre de archivo, carpeta o extensión de archivo
 
 Vea [How to create and deploy antimalware policies: Exclusion settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) para obtener más información sobre cómo Microsoft Endpoint Manager (rama actual).
 
-### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>Usar la directiva de grupo para configurar exclusiones de extensiones de archivo o carpetas
+### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>Usar directiva de grupo para configurar exclusiones de extensiones de archivos o carpetas
 
 > [!NOTE]
 > Si especifica una ruta de acceso completa a un archivo, solo se excluye ese archivo. Si se define una carpeta en la exclusión, se excluyen todos los archivos y subdirectorios de esa carpeta.
 
 1. En el equipo de administración de directivas de grupo, abra la [Consola de administración de directivas de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón secundario en el objeto de directiva de grupo que quiera configurar y seleccione **Editar**.
 
-2. En el **Editor de administración de directivas de grupo** , vaya **a Configuración del equipo y** seleccione **Plantillas administrativas**.
+2. En el **Editor directiva de grupo administración vaya** a **Configuración del equipo y** seleccione **Plantillas administrativas**.
 
 3. Expanda el árbol para **Windows componentes Antivirus de Microsoft Defender** \>  \> **exclusiones**.
 
@@ -111,7 +110,7 @@ Vea [How to create and deploy antimalware policies: Exclusion settings](/configm
     1. Establezca la opción en **Habilitado**.
     2. En la **sección Opciones** , seleccione **Mostrar**.
     3. Especifique cada carpeta en su propia línea en la **columna Nombre de** valor.
-    4. Si va a especificar un archivo, asegúrese de escribir una ruta de acceso completa al archivo, incluida la letra de unidad, la ruta de acceso de carpeta, el nombre del archivo y la extensión. 
+    4. Si va a especificar un archivo, asegúrese de escribir una ruta de acceso completa al archivo, incluida la letra de unidad, la ruta de acceso de carpeta, el nombre del archivo y la extensión.
     5. Escriba **0** en la **columna** Valor.
 
 5. Elija **Aceptar**.
@@ -138,8 +137,6 @@ El formato de los cmdlets es el siguiente:
 
 En la tabla siguiente se enumeran los cmdlets que puede usar en la `<cmdlet>` parte del cmdlet de PowerShell:
 
-<br/><br/>
-
 |Acción de configuración|Cmdlet de PowerShell|
 |:---|:---|
 |Crear o sobrescribir la lista|`Set-MpPreference`|
@@ -147,8 +144,6 @@ En la tabla siguiente se enumeran los cmdlets que puede usar en la `<cmdlet>` pa
 |Quitar elemento de la lista|`Remove-MpPreference`|
 
 En la tabla siguiente se enumeran los valores que puede usar en la `<exclusion list>` parte del cmdlet de PowerShell:
-
-<br/><br/>
 
 |Tipo de exclusión|Parámetro de PowerShell|
 |---|---|
@@ -225,8 +220,6 @@ En la tabla siguiente se describe cómo se pueden usar los caracteres comodín y
 
 En la tabla siguiente se enumeran y describen las variables de entorno de cuentas del sistema.
 
-<br/><br/>
-
 |Esta variable de entorno del sistema...|Redirige a esto|
 |---|---|
 |`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
@@ -296,14 +289,14 @@ Puede recuperar los elementos de la lista de exclusión mediante uno de los sigu
 
 - [Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
-- MpCmdRun
-- PowerShell
+- [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
+- [PowerShell](/powershell/module/defender)
 - [Seguridad de Windows app](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
-> Los cambios en la lista de exclusión realizados con la directiva de **grupo se** mostrarán en las listas de la [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
+> Los cambios en la lista de exclusión directiva de grupo **se mostrarán** en las listas de la [Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md).
 >
-> Los cambios realizados en la Seguridad de Windows no **se mostrarán** en las listas de directivas de grupo.
+> Los cambios realizados en la Seguridad de Windows **no se mostrarán** en las listas directiva de grupo usuarios.
 
 Si usa PowerShell, puede recuperar la lista de dos maneras:
 
@@ -383,7 +376,7 @@ Si no tiene acceso a Internet, puede crear su propio archivo de prueba EICAR esc
 
 También puede copiar la cadena en un archivo de texto en blanco e intentar guardarla con el nombre de archivo o en la carpeta que está intentando excluir.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Configurar y validar exclusiones en Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)

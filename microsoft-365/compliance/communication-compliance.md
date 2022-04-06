@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: c82514fda095d91ea4daa798450954fb9f5dac61
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 7690b93646c9b60467ca898c6167d72a7e819bb4
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450484"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594804"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Obtenga información sobre el cumplimiento de la comunicación en Microsoft 365
 
@@ -117,7 +117,7 @@ Los nuevos paneles interactivos de alertas, coincidencias de directivas, accione
 
 Las directivas de cumplimiento de comunicación examinan y capturan mensajes en varios canales de comunicación para ayudarle a revisar y corregir rápidamente los problemas de cumplimiento:
 
-- **Microsoft Teams**: las comunicaciones de chat para canales de [Microsoft Teams](/MicrosoftTeams/Teams-overview) públicos y privados y chats individuales son compatibles con el cumplimiento de la comunicación como origen de canal independiente o con otros Microsoft 365 servicios. Deberá agregar manualmente usuarios individuales, grupos de distribución o canales de Microsoft Teams específicos al seleccionar usuarios y grupos para supervisar en una directiva de cumplimiento de comunicaciones.
+- **Microsoft Teams**: las comunicaciones de chat para canales de [Microsoft Teams](/MicrosoftTeams/Teams-overview) públicos y privados y chats individuales son compatibles con el cumplimiento de la comunicación como origen de canal independiente o con otros Microsoft 365 servicios. Deberá agregar manualmente usuarios individuales, grupos de distribución o canales de Microsoft Teams específicos al seleccionar usuarios y grupos para supervisar en una directiva de cumplimiento de comunicaciones. Teams usuarios también pueden auto-notificar mensajes inapropiados en canales privados y de grupo y chats para revisión y corrección.
 - **Exchange Online**: Todos los buzones hospedados en [Exchange Online de su](/Exchange/exchange-online) Microsoft 365 organización son aptos para el examen. Los correos electrónicos y los datos adjuntos que coinciden con las condiciones de la directiva de cumplimiento de comunicaciones están disponibles al instante para la supervisión y en los informes de cumplimiento. Exchange Online es ahora un canal de origen opcional y ya no es necesario en las directivas de cumplimiento de comunicaciones.
 - **Yammer**: Los mensajes privados y las conversaciones de la comunidad pública en [Yammer](/yammer/yammer-landing-page) se admiten en las directivas de cumplimiento de comunicaciones. Yammer es un canal opcional y debe estar en [modo nativo](/yammer/configure-your-yammer-network/overview-native-mode) para examinar mensajes y datos adjuntos.
 - **Skype Empresarial Online**: las directivas de cumplimiento de comunicación admiten el examen de comunicaciones de chat y datos adjuntos [asociados en Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online).
@@ -129,7 +129,7 @@ Para obtener más información sobre la compatibilidad de canales de mensajería
 
 El cumplimiento de las comunicaciones le ayuda a solucionar problemas comunes asociados con el cumplimiento de las directivas internas y los requisitos de cumplimiento normativo. Con plantillas de directiva centradas y un flujo de trabajo flexible, puede usar información útil para resolver rápidamente los problemas de cumplimiento detectados.
 
-La identificación y resolución de problemas de cumplimiento con el cumplimiento de la comunicación en Microsoft 365 usa el siguiente flujo de trabajo:
+La identificación y resolución de problemas de cumplimiento con el cumplimiento de comunicaciones en Microsoft 365 usa el siguiente flujo de trabajo:
 
 ![Flujo de trabajo de cumplimiento de comunicaciones.](../media/communication-compliance-workflow.png)
 
@@ -148,6 +148,7 @@ Puede elegir entre las siguientes plantillas de directiva del Centro de cumplimi
 - **Supervisar el cumplimiento normativo** financiero: use esta plantilla para crear rápidamente una directiva para examinar las comunicaciones en busca de referencias a términos financieros estándar asociados con estándares normativos.
 - **Supervisar conflictos de interés**: use esta plantilla para crear rápidamente una directiva para supervisar las comunicaciones entre dos grupos o dos usuarios para ayudar a evitar conflictos de interés.
 - **Directiva personalizada**: use esta plantilla para configurar canales de comunicación específicos, condiciones de detección individuales y la cantidad de contenido que se va a supervisar y revisar en la organización.
+- **Directiva de mensajes notificados por** el usuario: esta directiva del sistema admite mensajes notificados por el usuario de mensajes de chat privados, de grupo y de canal. Habilitado de forma predeterminada en el centro Teams administración.
 
 >[!TIP]
 >Use [las acciones recomendadas](communication-compliance-configure.md#recommended-actions-preview) para determinar si necesita una directiva de tipo de información confidencial o si necesita actualizar las directivas de contenido inapropiadas existentes.
@@ -156,29 +157,29 @@ Puede elegir entre las siguientes plantillas de directiva del Centro de cumplimi
 
 En este paso, se profundiza en los problemas detectados como coincidencias con las directivas de cumplimiento de la comunicación. Este paso incluye las siguientes acciones disponibles en el Centro de cumplimiento de Microsoft 365:
 
-- **Alertas**: cuando un mensaje coincide con una condición de directiva, se genera automáticamente una alerta. Para cada alerta, puede ver el estado, la gravedad, el tiempo detectado y si se asigna Advanced eDiscovery caso y su estado. Las alertas nuevas se muestran en la página principal de cumplimiento de  comunicaciones y en la página Alertas y se enumeran en orden de gravedad.
+- **Alertas**: cuando un mensaje coincide con una directiva, se genera una alerta automáticamente. Para cada alerta, puede ver el estado, la gravedad, la hora detectada y si se asigna un caso eDiscovery avanzado, así como su estado. Las alertas se muestran según la gravedad y aparecen en la página principal de cumplimiento de comunicaciones y en la página **Alertas**.
 - **Administración de problemas**: para cada alerta, puede tomar medidas de investigación para ayudar a corregir el problema detectado en el mensaje.
-- **Revisión de** documentos: durante la investigación de un problema, puede usar varias vistas del mensaje para ayudar a evaluar correctamente el problema detectado. Las vistas incluyen un resumen de conversación, vistas de solo texto y detalles de la conversación de comunicación.
-- **Revisión del historial de actividades de** usuario: vea el historial de actividades de mensajes de usuario y acciones de corrección, como notificaciones anteriores y escalaciones, para ver las coincidencias de directivas.
-- **Filtros**: use filtros como el remitente, el destinatario, la fecha y el sujeto para limitar rápidamente las alertas de mensajes que desea revisar.
+- **Revisión del documento**: durante la investigación de un problema, puede usar varios tipos de vistas para ayudar a evaluar correctamente el problema detectado. Las vistas incluyen un resumen de conversación, vistas de solo texto y detalles de la conversación de comunicación.
+- **Revisión del historial de actividades del usuario**: vea el historial de actividades de mensajes de usuario y las acciones de corrección para ver si hay coincidencias de directivas, como notificaciones anteriores y escalaciones.
+- **Filtros**: use filtros como remitente, destinatario, fecha y asunto para restringir rápidamente las alertas de mensaje que desea revisar.
 
-### <a name="remediate"></a>Corrección
+### <a name="remediate"></a>Corregir
 
 El siguiente paso es corregir los problemas de cumplimiento de comunicaciones que ha investigado con las siguientes opciones:
 
-- **Resolver**: después de revisar un problema, puede corregirlo resolviendo la alerta. La resolución de una alerta la quita de la cola de alertas pendiente y la acción se conserva como una entrada en la  cola resuelto para la directiva de coincidencia. Las alertas se resuelven automáticamente después de marcar la alerta como mal clasificado, enviar un aviso a un usuario sobre la alerta o abrir un nuevo caso para la alerta.
+- **Resolver**: después de revisar un problema, puede corregirlo resolviendo la alerta. La resolución de una alerta la quita de la cola de alertas pendiente y la acción se conserva como una entrada en la  cola resuelto para la directiva de coincidencia. Las alertas se resuelven automáticamente después de marcar la alerta como un falso positivo, enviar un aviso a un empleado sobre la alerta o abrir un nuevo caso para la alerta.
 - **Etiquetar un mensaje**: como parte de la resolución de un problema, puede etiquetar el mensaje detectado como conforme, no conforme o cuestionable en relación a las directivas y estándares de su organización. El etiquetado puede ayudarle a microfiltrar alertas de directiva para su escalado o como parte de otros procesos de revisión internos.
-- **Notificar al usuario**: a menudo, los usuarios infringen accidentalmente o inadvertidamente una directiva de cumplimiento de comunicaciones. Puede usar la característica de notificación para proporcionar un aviso de advertencia al usuario y para resolver el problema.
+- **Notifique al usuario**: a menudo, los usuarios infringen accidental o involuntariamente una directiva de cumplimiento de comunicaciones. Puede usar la característica de notificación para proporcionar un aviso de advertencia al usuario y para resolver el problema.
 - **Escalar a otro revisor**: a veces, el revisor inicial de un problema necesita información de otros revisores para poder resolver el incidente. Puede escalar fácilmente los problemas relativos a mensajes a los revisores de otras áreas de su organización como parte del proceso de resolución.
-- **Informe como clasificado erróneamente**: los mensajes detectados incorrectamente como coincidencias de directivas de cumplimiento ocasionalmente pasarán al proceso de revisión. Puede marcar estos tipos de alertas como clasificados erróneamente, enviar comentarios a Microsoft sobre la clasificación errónea para ayudar a mejorar los clasificadores globales y resolver automáticamente el problema.
-- **Quitar mensaje en Teams (** versión preliminar):los mensajes inapropiados pueden quitarse de mostrarse en Microsoft Teams canales o mensajes de chat personales y de grupo. Los mensajes inapropiados que se quitan se reemplazan por una notificación de que el mensaje se ha quitado por una infracción de directiva.
-- **Escala para la investigación**: en las situaciones más graves, es posible que deba compartir información de cumplimiento de comunicaciones con otros revisores de su organización. El cumplimiento de comunicaciones está estrechamente integrado con otras características de cumplimiento de Microsoft 365 para ayudarle a mejorar la resolución de riesgos de un extremo a otro. Priorizar un caso para su investigación le permite transferir datos y administración del caso a eDiscovery avanzado en Microsoft 365. eDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. Permite que los equipos legales administren todo el flujo de trabajo de notificaciones de suspensión legal. Para obtener más información sobre los casos de eDiscovery avanzado, consulte [Información general sobre la exhibición avanzada de documentos electrónicos en Microsoft 365](overview-ediscovery-20.md).
+- **Marcar como mal clasificado**: los mensajes detectados incorrectamente como coincidencias de directivas de cumplimiento ocasionalmente se pasarán al proceso de revisión. Puede marcar estos tipos de alertas como clasificados incorrectamente, enviar comentarios a Microsoft sobre la clasificación incorrecta para ayudar a mejorar los clasificadores globales y resolver automáticamente el problema.
+- **Retirar mensaje in Teams (vista previa)**: es posible que los mensajes inadecuados se quiten de mostrarse en canales de Microsoft Teams o mensajes de chat personales y grupales. Los mensajes inadecuados que se quitan se reemplazan por una notificación de que el mensaje se ha quitado por una infracción de directiva.
+- **Escalar para investigación**: en las situaciones más graves, es posible que necesite compartir información de cumplimiento de comunicaciones con otros revisores de la organización. El cumplimiento de comunicaciones está estrechamente integrado con otras características de cumplimiento de Microsoft 365 para ayudarle a mejorar la resolución de riesgos de un extremo a otro. Priorizar un caso para su investigación le permite transferir datos y administración del caso a eDiscovery avanzado en Microsoft 365. eDiscovery avanzado proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. Permite que los equipos legales administren todo el flujo de trabajo de notificaciones de suspensión legal. Para obtener más información sobre los casos de eDiscovery avanzado, consulte [Información general sobre la exhibición avanzada de documentos electrónicos en Microsoft 365](overview-ediscovery-20.md).
 
-### <a name="monitor"></a>Supervisión
+### <a name="monitor"></a>Monitorear
 
-El seguimiento y la administración de problemas de cumplimiento identificados por las directivas de cumplimiento de comunicaciones abarca todo el proceso de flujo de trabajo. A medida que se generan alertas y se implementan acciones de investigación y corrección, es posible que las directivas existentes necesiten revisión y actualizaciones, y es posible que sea necesario crear nuevas directivas.
+El seguimiento y la administración de los problemas de cumplimiento identificados por las directivas de cumplimiento de comunicaciones abarca todo el proceso de flujo de trabajo. A medida que se generan alertas y se implementan acciones de investigación y corrección, es posible que las directivas existentes necesiten revisión y actualizaciones, y es posible que sea necesario crear nuevas directivas.
 
-- **Supervisar e informar**: use los widgets del panel de cumplimiento de comunicaciones, los registros de exportación y los eventos registrados en los registros de auditoría unificados para evaluar y mejorar continuamente su posición de cumplimiento.
+- **Monitorear e informar**: Use los paneles de cumplimiento de comunicaciones, los informes, los registros de exportación y los eventos registrados en los registros de auditoría unificados para evaluar y mejorar continuamente la seguridad de cumplimiento.
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 

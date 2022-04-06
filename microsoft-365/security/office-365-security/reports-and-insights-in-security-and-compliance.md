@@ -1,26 +1,31 @@
 ---
 title: 'Informes inteligentes, insights: Microsoft 365 Security & Compliance Center'
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: null
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 search.appverid:
-  - MET150
-  - MOE150
+- MET150
+- MOE150
 ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
-  - M365-security-compliance
+- M365-security-compliance
 description: Obtenga información sobre los informes e información inteligentes disponibles en el Centro de seguridad & cumplimiento y cómo usarlos para ver y explorar datos y realizar acciones rápidas.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
+ms.openlocfilehash: 7f7171a7f064b9b5ad83dc21e2369cf2700553c8
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683261"
 ---
-
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Informes inteligentes y reportes en el Centro de seguridad y cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -36,7 +41,7 @@ Si forma parte del equipo de seguridad de Microsoft para 365 para empresas de su
 
 Las funcionalidades de supervisión disponibles en el Centro de seguridad y cumplimiento de & incluyen informes e información inteligentes que permiten a los administradores de cumplimiento y seguridad centrarse en problemas de alta prioridad, como ataques de seguridad o mayor actividad sospechosa. En un panel, los informes e información inteligentes se asemejan a la siguiente imagen:
 
-:::image type="content" source="../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png" alt-text="El panel Informes del Centro de seguridad y & cumplimiento" lightbox="../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png":::
+![El panel Informes del Centro de seguridad & cumplimiento.](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
 
 Además de destacar las áreas problemáticas, los informes inteligentes y los conocimientos incluyen recomendaciones y vínculos para ver y explorar datos y también realizar acciones rápidas. Por ejemplo, si su organización repentinamente tiene un gran número de mensajes de correo electrónico marcados como correo no deseado por los usuarios finales, es posible que se le aconseje que vuelva a visitar las directivas contra correo no deseado para asegurarse de que el nivel de protección correcto está en su lugar.
 

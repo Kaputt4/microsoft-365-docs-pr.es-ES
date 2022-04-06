@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: Los administradores pueden aprender a simular ataques de suplantación de identidad (phishing) y entrenar a sus usuarios en la prevención de suplantación de identidad mediante el aprendizaje de simulación de ataques en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
-ms.openlocfilehash: 5ce7b58410ea53e4f11d746ebc4583b125f1ade6
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 924fef8e5aba8a797cf6754b6c507624e51a64c2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494434"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474319"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Simular un ataque de suplantación de identidad con entrenamiento de simulación de ataque en Defender para Office 365
 
@@ -36,7 +36,7 @@ Para iniciar un ataque de suplantación de identidad simulada, siga estos pasos:
 
 2. En la **pestaña Simulaciones** , seleccione ![Iniciar un icono de simulación.](../../media/m365-cc-sc-create-icon.png) **Inicie una simulación**.
 
-   ![Inicie un botón de simulación en la pestaña Simulaciones del aprendizaje de simulación de ataque en el portal Microsoft 365 Defender búsqueda.](../../media/attack-sim-training-simulations-launch.png)
+   :::image type="content" source="../../media/attack-sim-training-simulations-launch.png" alt-text="El botón Iniciar una simulación en la pestaña Simulaciones del aprendizaje de simulación de ataque en el portal de Microsoft 365 Defender simulación" lightbox="../../media/attack-sim-training-simulations-launch.png":::
 
 3. Se abrirá el Asistente para creación de simulación. El resto de este artículo describe las páginas y la configuración que contienen.
 
@@ -55,7 +55,7 @@ En la **página Seleccionar técnica** , seleccione una técnica de ingeniería 
 
 Si hace **clic en el** vínculo Ver detalles de la descripción, se abrirá un desplegable de detalles que describe la técnica y los pasos de simulación que resultan de la técnica.
 
-![Muestra los detalles de la técnica de recolección de credenciales en la página Seleccionar técnica.](../../media/attack-sim-training-simulations-select-technique-sim-steps.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-technique-sim-steps.png" alt-text="El menú desplegable Detalles de la técnica de recolección de credenciales en la página Seleccionar técnica" lightbox="../../media/attack-sim-training-simulations-select-technique-sim-steps.png":::
 
 Cuando termine, haga clic en **Siguiente**.
 
@@ -88,7 +88,7 @@ Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
   - **Baja**
   - **Media**
   - **Alta**
-- **Source**: indica si la carga se creó en la organización o si forma parte del catálogo de carga preexistnte de Microsoft. Los valores admitidos son:
+- **Source**: indica si la carga se creó en la organización o si forma parte del catálogo de carga preexistnte de Microsoft. Los valores válidos son:
   - **Global** (integrado)
   - **Inquilino** (personalizado)
   - **Todo**
@@ -102,14 +102,14 @@ Si hace clic **en Filtrar**, estarán disponibles los siguientes filtros:
 
 Cuando haya terminado de configurar los filtros, haga clic **en Aplicar**, **Cancelar** o **Borrar filtros**.
 
-![Seleccione la página de carga útil en El aprendizaje de simulación de ataques en el portal de Microsoft 365 Defender ataque.](../../media/attack-sim-training-simulations-select-payload.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="La página Seleccionar carga útil del aprendizaje de simulación de ataque en el portal de Microsoft 365 Defender ataque" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
 
 Si selecciona una carga de la lista, los detalles sobre la carga se muestran en un menú desplegable:
 
 - La **pestaña Información** general contiene un ejemplo y otros detalles sobre la carga.
 - La **pestaña Simulaciones iniciadas** contiene el nombre **de la simulación**, la tasa de **clics**, **la velocidad comprometida** y la **acción**.
 
-![Detalles de carga en el aprendizaje de simulación de ataque en el portal Microsoft 365 Defender carga.](../../media/attack-sim-training-simulations-select-payload-details.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="El menú desplegable Detalles de carga en el aprendizaje de simulación de ataque en el portal de Microsoft 365 Defender carga" lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
 
 Si selecciona una carga de la lista haciendo clic en el nombre, un ![icono Enviar una carga de prueba.](../../media/m365-cc-sc-create-icon.png) **Enviar un botón de** prueba aparece en la página principal, donde puede enviar una copia del correo electrónico de carga a usted mismo (el usuario que ha iniciado sesión actualmente) para su inspección.
 
@@ -156,7 +156,7 @@ En la **página Usuarios de** destino, seleccione quién recibirá la simulació
         - Seleccionar **todo el título**
         - Seleccione los valores de Título existentes.
 
-      ![Filtrado de usuarios en la página Usuarios de destino en Aprendizaje de simulación de ataques en el portal Microsoft 365 Defender web.](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
+      :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="El filtrado de usuarios en la página Usuarios de destino del aprendizaje de simulación de ataques en el portal Microsoft 365 Defender web" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
 
       Después de identificar los criterios, los usuarios afectados se muestran en la  sección Lista de usuarios que aparece, donde puede seleccionar algunos o todos los destinatarios detectados.
 
@@ -194,7 +194,7 @@ En la **página Asignar aprendizaje** , puede asignar cursos para la simulación
       - **7 días después de que finalice la simulación**
   - **Sin formación**: si selecciona este valor, la única opción de la página es el botón  Siguiente que le llevará a la página [**De aterrizaje**](#landing-page).
 
-![Agregue el aprendizaje recomendado en la página Asignación de aprendizaje en El aprendizaje de simulación de ataques en el portal Microsoft 365 Defender búsqueda.](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="La opción para agregar el aprendizaje recomendado en la página Asignación de aprendizaje del aprendizaje de simulación de ataques en el portal de Microsoft 365 Defender aprendizaje" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
 
 ### <a name="training-assignment"></a>Asignación de aprendizaje
 
@@ -236,7 +236,7 @@ Para cada aprendizaje de la lista, debe seleccionar quién obtiene el aprendizaj
 
 Si no quieres usar un entrenamiento que se muestra, haz clic en ![Eliminar icono de aprendizaje.](../../media/m365-cc-sc-delete-icon.png) **Eliminar**.
 
-![Página de asignación de aprendizaje en aprendizaje de simulación de ataque en el portal Microsoft 365 Defender de aprendizaje.](../../media/attack-sim-training-training-assignment.png)
+:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="La página Asignación de aprendizaje del aprendizaje de simulación de ataques en el portal Microsoft 365 Defender formación" lightbox="../../media/attack-sim-training-training-assignment.png":::
 
 Cuando termine, haga clic en **Siguiente**.
 
@@ -374,4 +374,4 @@ Puede seleccionar **Editar** en cada sección para modificar la configuración d
 
 Cuando haya terminado, haga clic en **Enviar**.
 
-![Revise la página de simulación en El aprendizaje de simulación de ataques en el portal de Microsoft 365 Defender ataque.](../../media/attack-sim-training-simulations-review-simulation.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="La página Revisar simulación del aprendizaje de simulación de ataques en el portal de Microsoft 365 Defender web" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de retención de etiquetado automático para que se puedan aplicar etiquetas automáticamente y, así, conservar lo que se necesite y eliminar lo que no
-ms.openlocfilehash: d1060bb4330c2dbb23c241cb3095f3b30869b58a
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 2d141ef349c456b9e8397ea1c96a4e450eaa73fc
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354929"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500446"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -81,7 +81,7 @@ Cuando se crea una directiva de aplicación automática, se selecciona una etiqu
     - Si usa el gobierno de la información:
         - **Soluciones** > **Gobierno de información** > pestaña de **Directivas de etiquetas** > **Aplicar etiqueta automáticamente**
     
-    ¿No encuentra inmediatamente la solución en el panel de navegación? Primero seleccione **Mostrar todo**.
+    ¿No encuentra inmediatamente la solución en el panel de navegación? Primero, seleccione **Mostrar todo**.
 
 2. Escriba un nombre y una descripción para esta directiva de etiquetado automático y, a continuación, seleccione **Siguiente**.
 
@@ -151,7 +151,7 @@ Al crear directivas de etiquetas de retención de aplicación automática para i
 
 ![Plantillas de directiva con tipos de información confidencial.](../media/sensitive-info-configuration.png)
 
-Para obtener más información sobre los tipos de información de confidencialidad, consulte [Obtener información sobre los tipos de información confidencial](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Actualmente, los [tipos de información confidencial basada en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) y la [toma de huellas digitales de documentos](document-fingerprinting.md) no son compatibles con este escenario.
+Para obtener más información sobre los tipos de información de confidencialidad, consulte [Obtener información sobre los tipos de información confidencial](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Actualmente, los [tipos de información confidencial basados en coincidencias de datos exactas](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) y la [creación de huella digital de documento](document-fingerprinting.md) no están admitidos en este escenario.
 
 Después de seleccionar una plantilla de política, puede añadir o eliminar cualquier tipo de información sensible, y puede cambiar el nivel de confianza y el recuento de instancias. En la captura de pantalla del ejemplo anterior, estas opciones se han cambiado para que se aplique automáticamente una etiqueta de retención sólo cuando:
   

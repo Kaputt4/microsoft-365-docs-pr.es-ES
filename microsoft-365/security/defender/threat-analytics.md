@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5cb9f0db07ad29618e0dc9d053f4904a70ca52f6
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 40e14f0bb6e38a6923e5e1d454981d49932f7ea1
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450172"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500703"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Análisis de amenazas en Microsoft 365 Defender
 
@@ -53,7 +53,7 @@ Vea este breve vídeo para obtener más información sobre cómo los análisis d
 
 Puede acceder al análisis de amenazas desde la parte superior izquierda de la barra de navegación del portal de seguridad de Microsoft 365, o desde una tarjeta de panel dedicada que muestra las principales amenazas para su organización, tanto en términos de impacto como en términos de exposición.
 
-![Imagen del panel de análisis de amenazas.](../../media/threat-analytics/ta_inlandingpage_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_inlandingpage_mtp.png" alt-text="Página de aterrizaje de análisis de amenazas" lightbox="../../media/threat-analytics/ta_inlandingpage_mtp.png":::
 
 Las amenazas de alto impacto tienen el mayor potencial de causar daños, mientras que las amenazas de exposición alta son las a las que los activos son más vulnerables. Obtener visibilidad de las campañas activas o en curso y saber qué hacer a través del análisis de amenazas puede ayudar a dotar a su equipo de operaciones de seguridad de decisiones fundamentadas.
 
@@ -79,7 +79,7 @@ El panel de análisis de [amenazas (security.microsoft.com/threatanalytics3](htt
 
 Seleccione una amenaza en el panel para ver el informe de esa amenaza.
 
-![Captura de pantalla del panel de análisis de amenazas.](../../media/threat-analytics/ta_dashboard_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_dashboard_mtp.png" alt-text="Panel de análisis de amenazas" lightbox="../../media/threat-analytics/ta_dashboard_mtp.png":::
 
 _Panel de análisis de amenazas. También puedes seleccionar el campo Búsqueda para claver una palabra clave relacionada con el informe de análisis de amenazas que quieras leer._
 
@@ -98,7 +98,7 @@ Cada informe de análisis de amenazas proporciona información en varias seccion
 
 La **sección** Información general proporciona una vista previa del informe detallado del analista. También proporciona gráficos que resaltan el impacto de la amenaza para la organización y la exposición a través de dispositivos mal configurados y sin aparear.
 
-![Imagen de la sección de información general de un informe de análisis de amenazas.](../../media/threat-analytics/ta_overview_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_overview_mtp.png" alt-text="Sección de información general de un informe de análisis de amenazas" lightbox="../../media/threat-analytics/../../media/threat-analytics/ta_overview_mtp.png":::
 
 _Sección información general de un informe de análisis de amenazas_
 
@@ -139,15 +139,15 @@ El equipo de Inteligencia de amenazas de Microsoft ha agregado etiquetas de amen
   - Grupo de actividades
 - Las etiquetas de amenazas se presentan en la parte superior de la página análisis de amenazas. Hay contadores para el número de informes disponibles en cada etiqueta.
 
-  ![etiquetas de amenazas.](../../media/threat-analytics/ta-threattags-mtp.png)
+  :::image type="content" source="../../media/threat-analytics/ta-threattags-mtp.png" alt-text="Las etiquetas de amenaza" lightbox="../../media/threat-analytics/ta-threattags-mtp.png":::
 
 - La lista también se puede ordenar por etiquetas de amenaza:
 
-  ![listas.](../../media/threat-analytics//ta-taglist-mtp.png)
+  :::image type="content" source="../../media/threat-analytics//ta-taglist-mtp.png" alt-text="Sección Etiquetas de amenazas" lightbox="../../media/threat-analytics//ta-taglist-mtp.png":::
 
 - Los filtros están disponibles por etiqueta de amenaza y tipo de informe:
 
-  ![filtros.](../../media/threat-analytics/ta-threattag-filters-mtp.png)
+  :::image type="content" source="../../media/threat-analytics/ta-threattag-filters-mtp.png" alt-text="La página Filtros" lightbox="../../media/threat-analytics/ta-threattag-filters-mtp.png":::
 
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Informe de analistas: obtener información de expertos de los investigadores de seguridad de Microsoft
 
@@ -157,9 +157,9 @@ En la **sección Informe de** analistas, lea la escritura detallada del experto.
 
 ### <a name="related-incidents-view-and-manage-related-incidents"></a>Incidentes relacionados: ver y administrar incidentes relacionados
 
-La **pestaña Incidentes relacionados** proporciona la lista de todos los incidentes relacionados con la amenaza rastreada. Puede asignar incidentes o administrar alertas vinculadas a cada incidente.
+La **pestaña Incidentes relacionados** proporciona la lista de todos los incidentes relacionados con la amenaza rastreada. Puede asignar incidentes o administrar alertas vinculadas a cada incidente. 
 
-![Imagen de la sección incidentes relacionados de un informe de análisis de amenazas.](../../media/threat-analytics/ta_related_incidents_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_related_incidents_mtp.png" alt-text="Sección incidentes relacionados de un informe de análisis de amenazas" lightbox="../../media/threat-analytics/ta_related_incidents_mtp.png":::
 
 _Sección incidentes relacionados de un informe de análisis de amenazas_
 
@@ -170,7 +170,7 @@ Un activo se considera afectado si se ve afectado por una alerta activa y sin re
 - **Dispositivos afectados:** puntos de conexión que tienen alertas de Microsoft Defender para puntos de conexión sin resolver. Estas alertas suelen dispararse en avistamientos de indicadores y actividades de amenazas conocidos.
 - **Buzones afectados:** buzones que han recibido mensajes de correo electrónico que han desencadenado Microsoft Defender para Office 365 alertas. Aunque la mayoría de los mensajes que desencadenan alertas suelen estar bloqueados, las directivas de nivel de usuario o de organización pueden invalidar los filtros.
 
-![Imagen de la sección activos afectados de un informe de análisis de amenazas.](../../media/threat-analytics/ta_impacted_assets_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_impacted_assets_mtp.png" alt-text="Sección activos afectados de un informe de análisis de amenazas" lightbox="../../media/threat-analytics/ta_impacted_assets_mtp.png":::
 
 _Sección activos afectados de un informe de análisis de amenazas_
 
@@ -180,7 +180,7 @@ Microsoft Defender para Office 365 normalmente bloquea los correos electrónicos
 
 La **pestaña Intentos** de correo electrónico impedido enumera todos los correos electrónicos que Microsoft Defender ha bloqueado antes de la entrega o que Microsoft Defender ha enviado a la carpeta de correo no deseado Office 365.
 
-![Imagen de la sección intentos de correo electrónico impedidos de un informe de análisis de amenazas.](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png" alt-text="La sección intentos de correo electrónico impedidos de un informe de análisis de amenazas" lightbox="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png":::
 
 _Sección Intentos de correo electrónico impedidos de un informe de análisis de amenazas_
 
@@ -196,9 +196,9 @@ En la **sección Mitigaciones &** exposición, revise la lista de recomendacione
 
 La información de mitigación de esta sección incorpora datos de [Administración de amenazas y vulnerabilidades](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), que también proporciona información detallada de los distintos vínculos del informe.
 
-![Imagen de la sección mitigaciones de un informe de análisis de amenazas que muestra detalles de configuración segura.](../../media/threat-analytics/ta_mitigations_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp.png" alt-text="Sección mitigaciones de un informe de análisis de amenazas que muestra detalles de configuración segura" lightbox="../../media/threat-analytics/ta_mitigations_mtp.png":::
 
-![Imagen de la sección mitigaciones de un informe de análisis de amenazas que muestra detalles de vulnerabilidad.](../../media/threat-analytics/ta_mitigations_mtp2.png)
+:::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp2.png" alt-text="Sección mitigaciones de un informe de análisis de amenazas que muestra detalles de vulnerabilidad" lightbox="../../media/threat-analytics/ta_mitigations_mtp2.png":::
 
 _Sección & mitigaciones de exposición de un informe de análisis de amenazas_
 

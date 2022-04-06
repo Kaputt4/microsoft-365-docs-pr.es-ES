@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a069e3dd3ef99f094f96318277e077c56b7cb974
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: bc16b601181775b3b12f1db0fcceecaa2bca33a8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766673"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474099"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Configurar y validar exclusiones para Microsoft Defender para endpoint en macOS
 
@@ -77,7 +77,7 @@ Para obtener más información sobre cómo configurar exclusiones de JAMF, Intun
 
 Abra la aplicación Defender para endpoint y vaya a **Administrar la** \> configuración **Agregar o quitar exclusión...**, como se muestra en la siguiente captura de pantalla:
 
-![Administrar capturas de pantalla de exclusiones.](images/mdatp-37-exclusions.png)
+:::image type="content" source="images/mdatp-37-exclusions.png" alt-text="Página Administrar exclusiones" lightbox="images/mdatp-37-exclusions.png":::
 
 Seleccione el tipo de exclusión que desea agregar y siga las indicaciones.
 

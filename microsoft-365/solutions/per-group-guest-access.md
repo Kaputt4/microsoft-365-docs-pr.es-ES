@@ -16,24 +16,24 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo evitar que los invitados se agregó a un grupo específico
-ms.openlocfilehash: 8a8a62b2a320fe000580651a2577f625a9ce1b90
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 4b9ebc6366934db52c30d51091ac9991ff82d8c3
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064492"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64570071"
 ---
-# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Impedir que los invitados se agregó a un grupo Microsoft 365 grupo o Microsoft Teams grupo
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Impedir que los invitados se agregó a un grupo Microsoft 365 grupo o Microsoft Teams grupo específico
 
 Si desea permitir el acceso de invitado a la mayoría de grupos y equipos, pero tiene algunos en los que desea impedir el acceso de invitado, puede bloquear el acceso de invitado para grupos y equipos individuales. (Bloquear el acceso de invitado a un equipo se realiza bloqueando el acceso de invitado al grupo asociado). Esto evita que se agregó invitados nuevos, pero no quita los invitados que ya están en el grupo o el equipo.
 
-Si usa etiquetas de confidencialidad en su organización, se recomienda usarlas para controlar el acceso de invitados por grupo. Para obtener información sobre cómo hacerlo, use etiquetas de confidencialidad para proteger el contenido de [Microsoft Teams, Microsoft 365 grupos](../compliance/sensitivity-labels-teams-groups-sites.md)y SharePoint web . Este es el método recomendado.
+Si usa etiquetas de confidencialidad en su organización, se recomienda usarlas para controlar el acceso de invitados por grupo. Para obtener información sobre cómo hacerlo, use etiquetas de confidencialidad para proteger el contenido Microsoft Teams[, Microsoft 365 grupos y SharePoint web](../compliance/sensitivity-labels-teams-groups-sites.md). Este es el método recomendado.
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>Cambiar la configuración de grupo con Microsoft PowerShell
 
-También puede evitar la adición de nuevos invitados a grupos individuales mediante PowerShell. (Recuerde que el sitio asociado del equipo SharePoint cuenta con controles de uso [compartido de invitados independientes).)](/sharepoint/change-external-sharing-site)
+También puede evitar la adición de nuevos invitados a grupos individuales mediante PowerShell. (Recuerde que el sitio asociado del equipo SharePoint cuenta con [controles de uso compartido de invitados independientes](/sharepoint/change-external-sharing-site)).
 
-Debe usar la versión preliminar de [Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2) para Graph (nombre de módulo **AzureADPreview**) para cambiar la configuración de acceso de invitado de nivel de grupo:
+Debe usar la versión preliminar de [Azure Active Directory PowerShell para Graph](/powershell/azure/active-directory/install-adv2) (nombre de módulo **AzureADPreview**) para cambiar la configuración de acceso de invitado de nivel de grupo:
 
 - Si todavía no ha instalado ninguna de las versiones de los módulos de PowerShell de Azure AD, consulte [Instalar el módulo de Azure AD](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) y siga las instrucciones para instalar la versión preliminar pública.
 
@@ -44,7 +44,7 @@ Debe usar la versión preliminar de [Azure Active Directory PowerShell](/powersh
 > [!NOTE]
 > Debe tener derechos de administrador global para ejecutar estos comandos. 
 
-Ejecute el siguiente script, cambiando por el nombre del grupo en el */<GroupName/>* que desea bloquear el acceso de invitado.
+Ejecute el siguiente script, cambiando *\<GroupName\>* por el nombre del grupo en el que desea bloquear el acceso de invitado.
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -68,7 +68,7 @@ La comprobación tiene este aspecto:
     
 ![Captura de pantalla de la ventana de PowerShell que muestra que el acceso de grupo invitado se ha establecido en false.](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
 
-Si desea alternar la configuración de nuevo para permitir el acceso de invitado a un grupo determinado, ejecute el siguiente script, cambiando al nombre del grupo en el que desea permitir el acceso ```<GroupName>``` de invitado.
+Si desea alternar la configuración de nuevo para permitir el acceso de invitado a un grupo determinado, ejecute el siguiente script, ```<GroupName>``` cambiando al nombre del grupo en el que desea permitir el acceso de invitado.
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -87,7 +87,7 @@ Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectoryS
 
 Puede permitir o bloquear invitados que usan un dominio específico. Por ejemplo, si su empresa (Contoso) tiene una asociación con otra empresa (Fabrikam), puede agregar Fabrikam a la lista de permitidos para que los usuarios puedan agregar esos invitados a sus grupos.
 
-Para obtener más información, vea [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/b2b/allow-deny-list).
+Para obtener más información, vea [Permitir o bloquear invitaciones a usuarios B2B de organizaciones específicas](/azure/active-directory/b2b/allow-deny-list).
 
 ## <a name="add-guests-to-the-global-address-list"></a>Agregar invitados a la lista global de direcciones
 

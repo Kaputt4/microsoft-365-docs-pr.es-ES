@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cc9f0f4410e3f62a6f787efd01d899250cd67a93
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 82fbe21e4d18a741da4a098b8e24a303f4d47008
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765677"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473967"
 ---
 # <a name="microsoft-threat-experts"></a>Expertos en amenazas de Microsoft
 
@@ -48,7 +48,7 @@ Si eres cliente de Microsoft Defender para endpoints, debes solicitar Expertos e
 
 Para inscribirse en Expertos en amenazas de Microsoft: ventajas de notificaciones de ataque dirigidas, vaya **a Configuración** \> **Endpoints** \> **General** \> **Advanced features** \> **Expertos en amenazas de Microsoft- Targeted Attack Notifications** to apply. Una vez aceptado, recibirás las ventajas de las notificaciones de ataque dirigido.
 
-Póngase en contacto con su equipo de cuenta o representante de Microsoft para suscribirse **a Expertos en amenazas de Microsoft:** expertos a petición para consultar con nuestros expertos en amenazas sobre las detecciones y los conflictos relevantes a los que se enfrenta su organización.
+Póngase en contacto con el equipo de su cuenta o con el representante de Microsoft para suscribirse a **Expertos en amenazas de Microsoft:** expertos a petición para consultar con nuestros expertos en amenazas sobre las detecciones y los conflictos relevantes a los que se enfrenta su organización.
 
 Consulte [Configure Expertos en amenazas de Microsoft capabilities para](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin) obtener más información.
 
@@ -73,19 +73,19 @@ La opción consultar **a un experto en** amenazas está disponible en varios lug
 
 - ***Menú ayuda y soporte técnico***
 
-  ![Captura de pantalla de la opción de menú MTE-EOD.](images/mte-eod-menu.png)
+  :::image type="content" source="images/mte-eod-menu.png" alt-text="El elemento de menú MTE-EOD" lightbox="images/mte-eod-menu.png":::
 
 - ***Menú acciones de página de dispositivo***
 
-  ![Captura de pantalla de la opción de menú de acción de página de dispositivo MTE-EOD.](images/mte-eod-machines.png)
+  :::image type="content" source="images/mte-eod-machines.png" alt-text="La opción de menú de acción de página de dispositivo MTE-EOD" lightbox="images/mte-eod-machines.png":::
 
 - ***Menú acciones de página alertas***
 
-  ![Captura de pantalla de la opción de menú de acción de página de alerta MTE-EOD.](images/mte-eod-alerts.png)
+  :::image type="content" source="images/mte-eod-alerts.png" alt-text="La opción de menú acción de página de alerta MTE-EOD" lightbox="images/mte-eod-alerts.png":::
 
 - ***Menú Acciones de página de archivos***
 
-  ![Captura de pantalla de la opción de menú de acción de página de archivo MTE-EOD.](images/mte-eod-file.png)
+  :::image type="content" source="images/mte-eod-file.png" alt-text="La opción de menú de acción de página de archivo MTE-EOD" lightbox="images/mte-eod-file.png":::
 
 > [!NOTE]
 > Si desea realizar un seguimiento del estado de los casos de Expertos a petición a través del Centro de servicios de Microsoft, llegue a su Administrador de cuentas de éxito del cliente.

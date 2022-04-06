@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8a1cafe4cd54b7313e0555127221173e23a41bbf
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 465c149e3ad82384b574b43c66da917a46e4a2ce
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217716"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474165"
 ---
 # <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>Usar etiquetas de confidencialidad para dar prioridad a una respuesta a incidentes
 
@@ -43,29 +43,29 @@ Aprenda a usar etiquetas de confidencialidad de datos para priorizar la investig
 > [!NOTE]
 > Las etiquetas se detectan Windows 10, versión 1809 o posterior y Windows 11.
 
-1. En Microsoft 365 Defender portal, seleccione **Incidentes &** \> **alertas incidentes**.
+1. En Microsoft 365 Defender portal, seleccione **Incidentes & alertas incidentes**\>.
 
 2. Desplácese a la derecha para ver la **columna Confidencialidad de** datos. Esta columna refleja las etiquetas de confidencialidad que se han observado en dispositivos relacionados con los incidentes, lo que indica si el incidente puede afectar a los archivos confidenciales.
 
-    ![Imagen de la columna de confidencialidad de datos.](images/data-sensitivity-column.png)
+   :::image type="content" source="images/data-sensitivity-column.png" alt-text="La opción Extremadamente confidencial de la columna de confidencialidad de datos" lightbox="images/data-sensitivity-column.png":::
 
     También puede filtrar en función de la **confidencialidad de datos**
 
-    ![Imagen del filtro de confidencialidad de datos.](images/data-sensitivity-filter.png)
+    :::image type="content" source="images/data-sensitivity-filter.png" alt-text="Filtro de confidencialidad de datos" lightbox="images/data-sensitivity-filter.png":::
 
 3. Abra la página de incidentes para investigar más a fondo.
 
-    ![Imagen de los detalles de la página de incidentes.](images/incident-page.png)
+   :::image type="content" source="images/incident-page.png" alt-text="Detalles de la página de incidentes" lightbox="images/incident-page.png":::
 
 4. Selecciona la **pestaña Dispositivos** para identificar los dispositivos que almacenan archivos con etiquetas de confidencialidad.
 
-    ![Imagen de la pestaña del dispositivo.](images/investigate-devices-tab.png)
+   :::image type="content" source="images/investigate-devices-tab.png" alt-text="La pestaña Dispositivo" lightbox="images/investigate-devices-tab.png":::
 
 5. Seleccione los dispositivos que almacenan datos confidenciales y busque en la escala de tiempo para identificar los archivos que se pueden ver afectados y, a continuación, tome las medidas adecuadas para asegurarse de que los datos están protegidos.
 
    Puedes restringir los eventos que se muestran en la escala de tiempo del dispositivo buscando etiquetas de confidencialidad de datos. Al hacerlo, solo se mostrarán los eventos asociados con archivos que tengan dicho nombre de etiqueta.
 
-    ![Imagen de la escala de tiempo del dispositivo con resultados de búsqueda limitados en función de la etiqueta.](images/machine-timeline-labels.png)
+   :::image type="content" source="images/machine-timeline-labels.png" alt-text="Escala de tiempo del dispositivo con resultados de búsqueda reducidos según la etiqueta" lightbox="images/machine-timeline-labels.png":::
 
 > [!TIP]
 > Estos puntos de datos también se exponen a través de "DeviceFileEvents" en búsqueda avanzada, lo que permite que las consultas avanzadas y la detección de programación tomen en cuenta las etiquetas de confidencialidad y el estado de protección de archivos.

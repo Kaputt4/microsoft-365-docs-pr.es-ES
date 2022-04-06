@@ -8,12 +8,13 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: e53c14405d3d190715b49e58061aee8ba771180a
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 1d589f2eb34a66dda47532394b987bd4b00b86bf
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60962848"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683283"
 ---
 # <a name="defender-for-identity-entity-tags-in-microsoft-365-defender"></a>Etiquetas de entidad Defender for Identity en Microsoft 365 Defender
 
@@ -22,20 +23,20 @@ ms.locfileid: "60962848"
 - Microsoft 365 Defender
 - Defender for Identity
 
-En este artículo se explica cómo aplicar [etiquetas de](/defender-for-identity) entidad de Microsoft Defender para identidad en [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
+En este artículo se explica cómo aplicar [etiquetas de entidad de Microsoft Defender para identidad](/defender-for-identity) en [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 >[!IMPORTANT]
 >Como parte de la convergencia con Microsoft 365 Defender, algunas opciones y detalles han cambiado desde su ubicación en el portal de Defender for Identity. Lea los detalles siguientes para descubrir dónde encontrar las características conocidas y las nuevas.
 
 ## <a name="entity-tags"></a>Etiquetas de entidad
 
-En Microsoft 365 Defender, puede establecer tres tipos de etiquetas de entidad defender para **identidad:** etiquetas confidenciales, etiquetas Desalono y **etiquetas de servidor** Exchange servidor . 
+En Microsoft 365 Defender, puede establecer tres tipos de etiquetas de entidad defender para **identidad:** etiquetas confidenciales, etiquetas Desalonada y **etiquetas Exchange de servidor**. 
 
 Para establecer estas etiquetas, <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">en Microsoft 365 Defender</a>, vaya **a Configuración** y, a continuación, **Identities**.
 
 ![Vaya a Configuración y, a continuación, Identities.](../../media/defender-identity/settings-identities.png)
 
-La configuración de etiquetas aparecerá en **Etiquetas de entidad**.
+La configuración de la etiqueta aparecerá en **Etiquetas de entidad**.
 
 ![Tipos de configuración de etiquetas.](../../media/defender-identity/tag-settings.png)
 
@@ -47,7 +48,7 @@ La **etiqueta Confidencial** se usa para identificar activos de alto valor. La r
 
 También puede etiquetar manualmente usuarios, dispositivos o grupos como confidenciales.
 
-1. Seleccione **Confidencial**. A continuación, verá los **usuarios,** **dispositivos** y grupos confidenciales **existentes.**
+1. Seleccione **Confidencial**. A continuación, verá los **usuarios, dispositivos** y grupos confidenciales **existentes**. 
 
     ![Entidades confidenciales.](../../media/defender-identity/sensitive-entities.png)
 
@@ -65,7 +66,7 @@ Las entidades de Honeytoken se usan como capturas para actores malintencionados.
 
 Puede etiquetar usuarios o dispositivos con **la etiqueta Honeytoken** de la misma manera que etiqueta las cuentas confidenciales.
 
-1. Seleccione **Honeytoken**. A continuación, verá los dispositivos y usuarios de **honeytoken** **existentes.**
+1. Seleccione **Honeytoken**. A continuación, verá los dispositivos y usuarios de **honeytoken** **existentes**.
 
     ![Entidades de Honeytoken.](../../media/defender-identity/honeytoken-entities.png)
 
@@ -79,9 +80,9 @@ Puede etiquetar usuarios o dispositivos con **la etiqueta Honeytoken** de la mis
 
 ## <a name="exchange-server-tags"></a>Exchange de servidor
 
-Defender for Identity considera que Exchange servidores como activos de alto valor y los etiqueta automáticamente como **confidenciales.** También puede etiquetar manualmente los dispositivos como servidores Exchange dispositivos.
+Defender for Identity considera que Exchange servidores como activos de alto valor y los etiqueta automáticamente como **confidenciales**. También puede etiquetar manualmente los dispositivos como servidores Exchange dispositivos.
 
-1. Seleccione **Exchange servidor**. A continuación, verá los dispositivos existentes etiquetados con la **etiqueta Exchange de servidor.**
+1. Seleccione **Exchange servidor**. A continuación, verá los dispositivos existentes etiquetados con la **Exchange de servidor**.
 
     ![Exchange servidores.](../../media/defender-identity/exchange-servers.png)
 

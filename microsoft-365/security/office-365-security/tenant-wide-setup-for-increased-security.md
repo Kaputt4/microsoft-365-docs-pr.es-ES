@@ -21,12 +21,12 @@ ms.custom:
 description: En este tema se le guía por la configuración recomendada para la configuración de todo el espacio empresarial que afecta a la seguridad del entorno Microsoft 365 inquilino.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 82e96b4b35d5095a6844618125ee49f1dba6ffd6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 94da7316c5e749cf6dcc5e038c185bea4790765f
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318528"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682887"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurar el inquilino de Microsoft 365 para aumentar la seguridad
 
@@ -47,10 +47,6 @@ Office 365 puntuación segura analiza la seguridad de la organización en funci�
 
 El Microsoft 365 Defender incluye funcionalidades que protegen el entorno. También incluye informes y paneles que puede usar para supervisar y realizar acciones. Algunas áreas vienen con configuraciones de directiva predeterminadas. Algunas áreas no incluyen directivas o reglas predeterminadas. Visite estas directivas en **Email & collaboration** \> **Policies & rules** \> **Threat policies** to tune threat management settings for a more secure environment.
 
-<br>
-
-****
-
 |Área|¿Directiva predeterminada?|Recomendación|
 |---|---|---|
 |**Anti-phishing**|Sí|Configure la directiva contra suplantación de identidad predeterminada como se describe aquí: Configure las opciones de protección contra suplantación de identidad en [EOP y Defender para Office 365](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365). <p> Más información: <ul><li>[Directivas contra la suplantación de identidad en Microsoft 365](set-up-anti-phishing-policies.md)</li><li>[Configuración de directiva contra suplantación de identidad recomendada en Microsoft Defender para Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [Información sobre la suplantación](impersonation-insight.md)</li><li>[Suplantación de información de inteligencia en EOP](learn-about-spoof-intelligence.md)</li><li>[Administrar la lista de inquilinos permitidos o bloqueados](tenant-allow-block-list.md).</li></ul>|
@@ -59,7 +55,6 @@ El Microsoft 365 Defender incluye funcionalidades que protegen el entorno. Tambi
 |**Caja fuerte vínculos en Microsoft Defender para Office 365**|No|Configure la configuración global de Caja fuerte Links y cree una directiva de vínculos de Caja fuerte como se describe aquí: [Configure Caja fuerte Links settings in Microsoft Defender for Office 365](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365). <p> Más información: <ul><li>[Configuración Caja fuerte vínculos recomendados](recommended-settings-for-eop-and-office365.md#safe-links-settings)</li><li>[Configurar directivas de vínculos seguros](set-up-safe-links-policies.md)</li><li>[Caja fuerte vínculos en Microsoft Defender para Office 365](safe-links.md)</li><li>[Configurar la configuración global para Caja fuerte vínculos de Microsoft Defender para Office 365](configure-global-settings-for-safe-links.md)</li></ul>|
 |**Correo no deseado (filtrado de correo)**|Sí|Configure la directiva contra correo no deseado predeterminada como se describe aquí: [Configurar la configuración de protección contra correo no deseado en EOP](protect-against-threats.md#part-3---anti-spam-protection-in-eop) <p> Más información: <ul><li>[Configuración de directiva contra correo no deseado recomendada](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)</li><li>[Protección contra correo no deseado en EOP](anti-spam-protection.md)</li><li>[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)</li></ul>|
 |***Autenticación de correo electrónico***|Sí|La autenticación de correo electrónico usa registros DNS para agregar información verificable a los mensajes de correo electrónico sobre el origen y el remitente del mensaje. Microsoft 365 configura automáticamente la autenticación de correo electrónico para su dominio predeterminado (onmicrosoft.com), pero Microsoft 365 administradores también pueden configurar la autenticación de correo electrónico para dominios personalizados. Se usan tres métodos de autenticación: <ul><li>Marco de directivas de remitente (o SPF).</li><ul><li>Para la configuración, consulte [Configurar SPF en Microsoft 365 ayudar a evitar la suplantación](set-up-spf-in-office-365-to-help-prevent-spoofing.md).</li></ul> <li>DomainKeys Identified Mail (DKIM).</li><ul><li>Consulta [Usar DKIM para validar el correo electrónico saliente enviado desde el dominio personalizado](use-dkim-to-validate-outbound-email.md).</li><li>Después de configurar DKIM, esta opción se habilita en el portal Microsoft 365 Defender web.</li></ul><li>Autenticación de mensajes basada en dominio, informes y conformidad (DMARC).</li><ul><li>Para la configuración de DMARC[, use DMARC para validar el correo electrónico en Microsoft 365](use-dmarc-to-validate-email.md).</li></ul></ul>|
-|
 
 > [!NOTE]
 > Para implementaciones no estándar de SPF, implementaciones híbridas y solución de problemas: cómo [Microsoft 365 usa Sender Policy Framework (SPF) para evitar la suplantación de identidad](how-office-365-uses-spf-to-prevent-spoofing.md).
@@ -68,31 +63,21 @@ El Microsoft 365 Defender incluye funcionalidades que protegen el entorno. Tambi
 
 Visite estos informes y paneles para obtener más información sobre el estado de su entorno. Los datos de estos informes se enriquecerán a medida que su organización use Office 365 servicios. Por ahora, familiarícese con lo que puede supervisar y realizar acciones.
 
-<br>
-
-****
-
 |Panel|Descripción|
 |---|---|
 |Informes de seguridad de correo electrónico|Estos informes están disponibles en Exchange Online Protection. Para obtener más información, vea [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md).|
 |Defender para Office 365 informes|Los informes solo están disponibles en Defender para Office 365. Para obtener más información, vea [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).|
 |Informes e información sobre el flujo de correo|Estos informes e información están disponibles en el Centro Exchange administración (EAC). Para obtener más información, vea [Informes de flujo de correo](/exchange/monitoring/mail-flow-reports/mail-flow-reports) e [Información del flujo de correo](/exchange/monitoring/mail-flow-insights/mail-flow-insights).|
 |[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md)|Si está investigando o experimentando un ataque contra su inquilino, use explorer (o detecciones en tiempo real) para analizar las amenazas. El Explorador (y el informe de detecciones en tiempo real) muestra el volumen de ataques con el tiempo y puede analizar estos datos por familias de amenazas, infraestructura de atacantes y mucho más. También puede marcar cualquier correo electrónico sospechoso para la lista incidentes.|
-|
 
 ## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>Configurar opciones Exchange Online configuración para todo el espacio empresarial
 
 Estos son un par de opciones de configuración adicionales que se recomiendan.
 
-<br>
-
-****
-
 |Área|Recomendación|
 |---|---|
 |**Reglas de flujo de** correo (también conocidas como reglas de transporte)|Agregue una regla de flujo de correo para ayudar a proteger contra ransomware bloqueando tipos de archivos ejecutables y Office tipos de archivo que contienen macros. Para obtener más información, vea [Use mail flow rules to inspect message attachments in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments). <p> Vea estos temas adicionales: <ul><li>[Protección contra ransomware](../../admin/security-and-compliance/secure-your-business-data.md#5-protect-against-ransomware)</li><li>[Protección contra malware y ransomware en Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection)</li><li>[Recuperarse de un ataque de ransomware en Office 365](recover-from-ransomware.md)</li></ul> <p> Cree una regla de flujo de correo para evitar el reenvío automático de correo electrónico a dominios externos. Para obtener más información, vea [Mitigating Client External Forwarding Rules with Secure Score](/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score). <p> Más información: [Reglas de flujo de correo (reglas de transporte) en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
 |**Autenticación moderna**|La autenticación moderna es un requisito previo para usar la autenticación multifactor (MFA). Mfa se recomienda para proteger el acceso a recursos en la nube, incluido el correo electrónico. <p> Vea estos temas: <ul><li>[Habilitar o deshabilitar la autenticación moderna en Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)</li><li>[Skype Empresarial online: habilitar el espacio empresarial para la autenticación moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)</li></ul> <p> La autenticación moderna está habilitada de forma predeterminada Office clientes de 2016, SharePoint Online y OneDrive para la Empresa. <p> Más información: [Cómo funciona la autenticación moderna para Office 2013 y Office aplicaciones cliente de 2016](../../enterprise/modern-auth-for-office-2013-and-2016.md)|
-|
 
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>Configurar directivas de uso compartido para todo el espacio empresarial SharePoint centro de administración
 
@@ -102,14 +87,9 @@ SharePoint de grupo configurados en el nivel de línea base permiten compartir a
 
 Para admitir los objetivos de protección de línea base, configure directivas de uso compartido en todo el espacio empresarial como se recomienda aquí. La configuración de uso compartido de sitios individuales puede ser más restrictiva que esta directiva para todo el espacio empresarial, pero no más permisiva.
 
-<br>
-
-****
-
 |Área|Incluye una directiva predeterminada|Recomendación|
 |---|---|---|
 |**Uso** compartido (SharePoint Online y OneDrive para la Empresa)|Sí|El uso compartido externo está habilitado de forma predeterminada. Se recomienda esta configuración: <ul><li>Permitir el uso compartido a usuarios externos autenticados y el uso de vínculos de acceso anónimo (configuración predeterminada).</li><li>Los vínculos de acceso anónimo expiran en estos días. Escriba un número, si lo desea, como 30 días.</li><li>Tipo de vínculo predeterminado: seleccione Interno (solo personas de la organización). Los usuarios que deseen compartir mediante vínculos anónimos deben elegir esta opción en el menú para compartir.</li></ul> <p> Más información: [Introducción al uso compartido externo](/sharepoint/external-sharing-overview)|
-|
 
 SharePoint centro de administración y OneDrive para la Empresa de administración incluyen la misma configuración. La configuración de cualquier centro de administración se aplica a ambos.
 

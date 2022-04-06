@@ -1,6 +1,6 @@
 ---
 title: Proporcionar acceso al proveedor de servicios de seguridad administrado (MSSP)
-description: Obtenga información sobre los cambios de la Centro de seguridad de Microsoft Defender al portal Microsoft 365 Defender web
+description: Obtenga información sobre los cambios de la Centro de seguridad de Microsoft Defender al portal de Microsoft 365 Defender web
 keywords: Introducción al portal de Microsoft 365 Defender, Microsoft Defender para Office 365, Microsoft Defender para endpoint, MDO, MDE, panel único de cristal, portal convergente, portal de seguridad, portal de seguridad, portal de seguridad de defender
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 641636528d35c148ceaa41827721e841dfafd4ec
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: f0148a8bfe18c7636e95ceae7b268cc70b2e58ed
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171052"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500424"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Proporcionar acceso al proveedor de servicios de seguridad administrado (MSSP) 
 
@@ -37,7 +37,7 @@ ms.locfileid: "62171052"
 
 Para implementar una solución de acceso delegado multiinquilino, siga estos pasos:
 
-1. Habilite [el control de](/windows/security/threat-protection/microsoft-defender-atp/rbac) acceso basado en roles para Defender for Endpoint a través del portal de Microsoft 365 Defender y conéctese con Azure Active Directory (Azure AD).
+1. Habilite [el control de acceso basado en roles](/windows/security/threat-protection/microsoft-defender-atp/rbac) para Defender for Endpoint a través del portal de Microsoft 365 Defender y conéctese con Azure Active Directory (Azure AD).
 
 2. Configurar [paquetes de acceso de gobierno](/azure/active-directory/governance/identity-governance-overview) para la solicitud de acceso y el aprovisionamiento.
 
@@ -57,7 +57,7 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
     Para habilitar RBAC en el portal de Microsoft 365 Defender del cliente, acceda a permisos > roles de puntos de conexión & grupos > **Roles** con una cuenta de usuario con derechos de administrador global o administrador de seguridad.
 
-    ![Imagen del acceso de MSSP.](../../media/mssp-access.png)
+    :::image type="content" source="../../media/mssp-access.png" alt-text="Detalles del acceso MSSP en el portal de Microsoft 365 Defender web" lightbox="../../media/mssp-access.png":::
 
     A continuación, cree roles RBAC para satisfacer las necesidades de nivel SOC de MSSP. Vincule estos roles a los grupos de usuarios creados mediante "Grupos de usuarios asignados".
 
@@ -69,7 +69,7 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
     - **Analistas de nivel 2** <br>
       Capacidades de nivel 1 con la adición a [la respuesta en directo](/windows/security/threat-protection/microsoft-defender-atp/live-response)
 
-    Para obtener más información, vea [Use role-based access control](/windows/security/threat-protection/microsoft-defender-atp/rbac).
+    Para obtener más información, vea [Usar control de acceso basado en roles](/windows/security/threat-protection/microsoft-defender-atp/rbac).
 
 ## <a name="configure-governance-access-packages"></a>Configurar paquetes de acceso de gobierno
 
@@ -85,9 +85,10 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
     Para ello, en el inquilino de AD del cliente, acceda a Identity Governance: Catalogs y agregue **New Catalog**. En nuestro ejemplo, lo llamaremos **MSSP Accesses**.
 
-    ![Imagen del nuevo catálogo.](../../media/goverance-catalog.png)
+    :::image type="content" source="../../media/goverance-catalog.png" alt-text="Un nuevo catálogo en el portal de Microsoft 365 Defender web" lightbox="../../media/goverance-catalog.png":::
 
-    Para obtener más información, vea [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
+
+    Para obtener más información, vea [Crear un catálogo de recursos](/azure/active-directory/governance/entitlement-management-catalog-create).
 
 3. **Crear paquetes de acceso para recursos MSSP Customer AAD: Identity Governance**
 
@@ -100,15 +101,15 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
     - Los usuarios solo pueden solicitarlo en el inquilino soc de MSSP
     - Access auto expira después de 365 días
 
-    ![Imagen del nuevo paquete de acceso.](../../media/new-access-package.png)
+    :::image type="content" source="../../media/new-access-package.png" alt-text="Los detalles de un nuevo paquete de acceso en el portal Microsoft 365 Defender acceso" lightbox="../../media/new-access-package.png":::
 
     Para obtener más información, vea [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 
 4. **Proporcionar vínculo de solicitud de acceso a recursos MSSP desde customer AAD: Identity Governance**
 
-    Los analistas de SOC de MSSP usan el vínculo Portal de My Access para solicitar acceso a través de los paquetes de acceso creados. El vínculo es duradero, lo que significa que el mismo vínculo puede usarse con el tiempo para los nuevos analistas. La solicitud de analista entra en una cola para su aprobación por parte de los aprobadores de analistas de **MSSP**.
+    Los analistas de SOC de MSSP usan el vínculo Portal de My Access para solicitar acceso a través de los paquetes de acceso creados. El vínculo es duradero, lo que significa que el mismo vínculo puede usarse con el tiempo para los nuevos analistas. La solicitud de analista entra en una cola para su aprobación por parte de los aprobadores **de analistas de MSSP**.
 
-    ![Imagen de las propiedades de acceso.](../../media/access-properties.png)
+    :::image type="content" source="../../media/access-properties.png" alt-text="Las propiedades de acceso del portal Microsoft 365 Defender acceso" lightbox="../../media/access-properties.png":::
 
     El vínculo se encuentra en la página de información general de cada paquete de acceso.
 
@@ -118,7 +119,7 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
 
     Las solicitudes de acceso se administran en el cliente My Access, por miembros del grupo Aprobadores de analistas de MSSP.
 
-    Para ello, acceda a myaccess del cliente mediante: `https://myaccess.microsoft.com/@<Customer Domain>` .
+    Para ello, acceda a myaccess del cliente mediante: `https://myaccess.microsoft.com/@<Customer Domain>`.
 
     Ejemplo: `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
 

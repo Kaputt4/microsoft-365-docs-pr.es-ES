@@ -20,12 +20,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: Más información sobre las opciones de configuración de uso compartido de invitados disponibles en Microsoft 365 que pueden afectar al uso compartido con personas de fuera de su organización.
-ms.openlocfilehash: 2b6aac7a02c6c7c5feda041a2b06147c67dfa285
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 9cb6eb52c523bba624af5f830c3c34c4edaf86b8
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316539"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594848"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referencia de la configuración de uso compartido de invitados de Microsoft 365
 
@@ -149,7 +149,7 @@ Esta configuración afecta a todos los sitios de la organización. No afecta dir
 
 Como OneDrive es una jerarquía de sitios dentro de SharePoint, la configuración de uso compartido en el nivel de la organización afecta directamente a OneDrive al igual que otros sitios de SharePoint.
 
-**Navigación:** Centro de administración de SharePoint > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a>
+**Navegación:** Centro de administración de SharePoint > **Directivas** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Compartir**</a>
 
 ![Captura de pantalla de la configuración de uso compartido en el nivel de organización de SharePoint.](../media/external-sharing.png)
 
@@ -160,7 +160,7 @@ Como OneDrive es una jerarquía de sitios dentro de SharePoint, la configuració
 
 ### <a name="sharepoint-and-onedrive-advanced-sharing-settings"></a>Configuración de uso compartido avanzado de SharePoint y OneDrive
 
-**Navigación:** Centro de administración de SharePoint > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a>
+**Navegación:** Centro de administración de SharePoint > **Directivas** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Compartir**</a>
 
 ![Captura de pantalla de la configuración de uso compartido adicional en el nivel de organización de SharePoint.](../media/external-sharing.png)
 
@@ -177,7 +177,7 @@ Como OneDrive es una jerarquía de sitios dentro de SharePoint, la configuració
 
 Cuando se comparten archivos y carpetas en SharePoint y OneDrive, los destinatarios con los que se comparte reciben un vínculo con los permisos para el archivo o la carpeta en lugar de obtener acceso directo a ellos. Existen varios tipos de vínculos disponibles y puede elegir el tipo de vínculo predeterminado que se muestra a los usuarios cuando comparten un archivo o una carpeta. También puede establecer permisos y opciones de expiración para vínculos de *Cualquiera*.
 
-**Navigación:** Centro de administración de SharePoint > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Uso compartido**</a>
+**Navegación:** Centro de administración de SharePoint > **Directivas** > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Compartir**</a>
 
 ![Captura de pantalla de la configuración de uso compartido de los archivos y carpetas de nivel de organización de SharePoint.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 

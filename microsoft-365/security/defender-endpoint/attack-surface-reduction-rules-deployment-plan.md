@@ -1,7 +1,7 @@
 ---
 title: Planeación de reglas ASR que ataquen la implementación de reglas de implementación de reducción de superficie
 description: Proporciona instrucciones para planear la implementación de las reglas de reducción de superficie de ataque (ASR).
-keywords: 'Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR'
+keywords: Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,16 +11,23 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar'
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
+ms.openlocfilehash: e76ca3c1efd3ceb1cbb0f80cba4867988da51e1e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683085"
 ---
-
-# <a name="step-1-plan-asr-rules-deployment"></a>Paso 1: Planear la implementación de reglas ASR
+# <a name="step-1-plan-asr-rules-deployment"></a>Paso 1: Planear la implementación de reglas de ASR
 
 Cuando se prueban las reglas de reducción de superficie de ataque (ASR), es importante empezar con la unidad de negocio adecuada. Querrá empezar con un pequeño grupo de personas en una unidad de negocio específica. Puede identificar algunos campeones de ASR dentro de una unidad de negocio determinada que puedan proporcionar un impacto real sobre las reglas de ASR y ayudarle a ajustar su implementación.
 
@@ -75,10 +82,10 @@ Vea: [Crear un plan de implementación para Windows](/windows/deployment/update/
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Temas adicionales de esta colección de implementación
 
-[Requisitos previos de implementación de reglas ASR](attack-surface-reduction-rules-deployment.md)
+[Requisitos previos de implementación de reglas de ASR](attack-surface-reduction-rules-deployment.md)
 
-[Paso 2: Probar reglas ASR](attack-surface-reduction-rules-deployment-test.md)
+[Paso 2: Probar reglas de ASR](attack-surface-reduction-rules-deployment-test.md)
 
-[Paso 3: Implementar reglas ASR](attack-surface-reduction-rules-deployment-implement.md)
+[Paso 3: Implementar reglas de ASR](attack-surface-reduction-rules-deployment-implement.md)
 
-[Paso 4: Operacionalizar reglas ASR](attack-surface-reduction-rules-deployment-operationalize.md)
+[Paso 4: Operacionalización de reglas de ASR](attack-surface-reduction-rules-deployment-operationalize.md)

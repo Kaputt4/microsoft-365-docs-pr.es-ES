@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Obtener información sobre el número máximo de directivas y elementos por directiva para directivas de retención y directivas de etiquetas de retención
-ms.openlocfilehash: 4cd8fc5f141f9e039a271e8534e156e4df0582e9
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 4c175a9e43440c58f74da334a38bc73dae5b76e4
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419133"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595024"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Límites de directivas de retención y directivas de etiqueta de retención.
 
@@ -116,8 +116,16 @@ Ejemplo de SharePoint:
 
 Para la [eliminación del contenido](disposition.md), hay algunos límites que deben tenerse en cuenta:
 
-- 1 000 000 elementos pendientes de eliminación por fase para cada etiqueta de retención
-
-- Prueba de eliminación hasta siete años después de eliminar el elemento, con un límite de 1 000 000 de elementos por etiqueta de retención para ese período. 
+- Número máximo por inquilino:
     
-Si necesita una prueba de eliminación superior a ese límite de 1 000 000 para los elementos que se marcan como registros, póngase en contacto con el [Soporte técnico de Microsoft](../admin/get-help-support.md).
+    - 16 000 000 elementos en cualquiera de los siguientes estados de revisión para eliminación: disposición pendiente o disposición aprobada
+        
+    - 16 000 000 elementos marcados como registros eliminados automáticamente (sin revisión para eliminación)
+
+- Números máximos para cada etiqueta de retención:
+    
+    - 1 000 000 elementos pendientes de eliminación por fase para cada etiqueta de retención
+    
+    - Prueba de eliminación hasta siete años después de eliminar el elemento, con un límite de 1 000 000 de elementos por etiqueta de retención para ese período. 
+        
+        Si necesita una prueba de eliminación superior a ese límite de 1 000 000 para los elementos que se marcan como registros, póngase en contacto con el [Soporte técnico de Microsoft](../admin/get-help-support.md).

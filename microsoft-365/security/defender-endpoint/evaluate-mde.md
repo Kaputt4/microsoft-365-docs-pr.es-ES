@@ -17,20 +17,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 49d6ee473f84b86f17482c00e254e96b64ec0bf7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 727a35b5d5b34fa567b399fcc81ccb0c05ded106
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166403"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500461"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -45,7 +45,6 @@ También puede evaluar las distintas capacidades de seguridad en Microsoft Defen
 
 Estas funcionalidades ayudan a evitar que ataques y explotaciones infecten a su organización.
 
-- [Evaluar la reducción de superficie de ataque](./evaluate-attack-surface-reduction.md)
 - [Evaluar protección contra vulnerabilidades](./evaluate-exploit-protection.md)
 - [Evaluar protección de red](./evaluate-exploit-protection.md)
 - [Evaluar acceso controlado a carpetas](./evaluate-controlled-folder-access.md)
@@ -58,6 +57,6 @@ Las protecciones de próxima generación ayudan a detectar y bloquear las amenaz
 
 - [Evaluar antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Consulta también
 
 [Introducción a Microsoft Defender para puntos de conexión](microsoft-defender-endpoint.md)

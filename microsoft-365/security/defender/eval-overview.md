@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2502a4781e9844fca8de3113d64ee1836efddabd
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: f7830bb25f2572c43d665d059e0a36bc1fdaa172
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557899"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500791"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>Evaluar Microsoft 365 Defender y realizar una prueba piloto
 
@@ -65,7 +65,7 @@ Microsoft 365 Defender es un conjunto de defensa empresarial basado en la nube, 
 
 En esta ilustración se está en curso un ataque. El correo electrónico de suplantación de identidad (phishing) llega a la Bandeja de entrada de un empleado de la organización, que abre sin conocimiento los datos adjuntos del correo electrónico. Esto instala malware, lo que lleva a una cadena de eventos que podrían terminar con el robo de datos confidenciales. Pero en este caso, Defender para Office 365 está en funcionamiento.
 
-![Cómo Microsoft 365 Defender detiene una cadena de amenazas.](../../media/defender/m365-defender-eval-threat-chain.png)
+:::image type="content" source="../../media/defender/m365-defender-eval-threat-chain.png" alt-text="Los distintos intentos de ataque" lightbox="../../media/defender/m365-defender-eval-threat-chain.png":::
 
 En la ilustración:
 
@@ -93,7 +93,7 @@ Microsoft 365 Defender está hecho de estas tecnologías de seguridad, que funci
 
 En el siguiente diagrama se muestra la arquitectura de alto nivel para las Microsoft 365 Defender componentes e integraciones clave. *La arquitectura* detallada de cada componente de Defender y los escenarios de caso de uso se dan a lo largo de esta serie de artículos.
 
-![Microsoft 365 Defender arquitectura de alto nivel.](../../media/defender/m365-defender-eval-architecture.png)
+:::image type="content" source="../../media/defender/m365-defender-eval-architecture.png" alt-text="Una arquitectura de alto nivel del portal Microsoft 365 Defender web" lightbox="../../media/defender/m365-defender-eval-architecture.png":::
 
 En esta ilustración:
 
@@ -116,20 +116,19 @@ Otros componentes de arquitectura opcionales no incluidos en esta ilustración:
 
 Microsoft recomienda habilitar los componentes de Microsoft 365 en el orden ilustrado:
 
-![Microsoft 365 Defender proceso de evaluación de alto nivel.](../../media/defender/m365-defender-eval-process.png)
+:::image type="content" source="../../media/defender/m365-defender-eval-process.png" alt-text="Un proceso de evaluación de alto nivel en el portal Microsoft 365 Defender web" lightbox="../../media/defender/m365-defender-eval-process.png":::
 
 En la tabla siguiente se describe esta ilustración.
 
-|Paso|Vínculo|Descripción|
-|---|---|---|
-|1|[Crear el entorno de evaluación](eval-create-eval-environment.md)|Este paso garantiza que tiene la licencia de prueba para Microsoft 365 Defender.|
-|2|[Habilitar Defender para la identidad](eval-defender-identity-overview.md)|Revise los requisitos de arquitectura, habilite la evaluación y consulte tutoriales para identificar y corregir diferentes tipos de ataques.|
-|3|[Habilitar Defender para Office 365](eval-defender-office-365-overview.md)|Asegúrese de que cumple los requisitos de arquitectura, habilite la evaluación y, a continuación, cree el entorno piloto. Este componente incluye Exchange Online Protection por lo que realmente evaluará *ambos* aquí.|
-|4|[Habilitar Defender para el extremo](eval-defender-endpoint-overview.md)|Asegúrese de que cumple los requisitos de arquitectura, habilite la evaluación y, a continuación, cree el entorno piloto.|
-|5|[Habilitar Microsoft Defender para aplicaciones en la nube](eval-defender-mcas-overview.md)|Asegúrese de que cumple los requisitos de arquitectura, habilite la evaluación y, a continuación, cree el entorno piloto.|
-|6 |[Investigar y responder a amenazas](eval-defender-investigate-respond.md)|Simular un ataque y empezar a usar las capacidades de respuesta a incidentes.|
-|7 |[Promover la versión de prueba a producción](eval-defender-promote-to-production.md)|Promover los Microsoft 365 componentes de producción uno a uno.|
-||||
+|  Número de serie   |Paso  |Descripción  |
+|------|---------|---------|
+|1     | [Crear el entorno de evaluación](eval-create-eval-environment.md)       |Este paso garantiza que tiene la licencia de prueba para Microsoft 365 Defender.         |
+|2     | [Habilitar Defender para la identidad](eval-defender-identity-overview.md)        | Revise los requisitos de arquitectura, habilite la evaluación y consulte tutoriales para identificar y corregir diferentes tipos de ataques.   |
+|3     | [Habilitar Defender para Office 365 ](eval-defender-office-365-overview.md)       | Asegúrese de que cumple los requisitos de arquitectura, habilite la evaluación y, a continuación, cree el entorno piloto. Este componente incluye Exchange Online Protection por lo que realmente evaluará *ambos* aquí.      |
+|4     | [Habilitar Defender para el extremo ](eval-defender-endpoint-overview.md)       | Asegúrese de que cumple los requisitos de arquitectura, habilite la evaluación y, a continuación, cree el entorno piloto.         |
+|5     | [Habilitar Microsoft Defender para aplicaciones en la nube](eval-defender-mcas-overview.md)        |  Asegúrese de que cumple los requisitos de arquitectura, habilite la evaluación y, a continuación, cree el entorno piloto.        |
+|6      | [Investigar y responder a amenazas](eval-defender-investigate-respond.md)        |   Simular un ataque y empezar a usar las capacidades de respuesta a incidentes.      |
+|7      | [Promover la versión de prueba a producción](eval-defender-promote-to-production.md)        | Promover los Microsoft 365 componentes de producción uno a uno.        |
 
 Este es un orden comúnmente recomendado diseñado para aprovechar el valor de las capacidades rápidamente en función del esfuerzo que normalmente se requiere para implementar y configurar las capacidades. Por ejemplo, Defender para Office 365 puede configurarse en menos tiempo del necesario para inscribir dispositivos en Defender para endpoint. Por supuesto, debe priorizar los componentes para satisfacer sus necesidades empresariales y habilitar estos en un orden diferente.
 

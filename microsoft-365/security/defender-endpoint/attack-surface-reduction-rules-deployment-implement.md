@@ -1,7 +1,7 @@
 ---
 title: Implementar la implementación de reglas de reducción de superficie de ataque (ASR)
 description: Proporciona instrucciones para implementar la implementación de reglas de reducción de superficie de ataque.
-keywords: 'Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR'
+keywords: Implementación de reglas de reducción de superficie de ataque, implementación de ASR, habilitar reglas asr, configurar ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades, anti exploit, reglas de vulnerabilidad, reglas de prevención de infecciones, Microsoft Defender para endpoint, configurar reglas ASR
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,16 +11,23 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar'
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
+ms.openlocfilehash: 2ca83735eab465e3a5ec6b25156143fde1719c0a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683129"
 ---
-
-# <a name="step-3-implement-asr-rules"></a>Paso 3: Implementar reglas ASR
+# <a name="step-3-implement-asr-rules"></a>Paso 3: Implementar reglas de ASR
 
 La implementación de reglas de reducción de superficie de ataque (ASR) mueve el primer anillo de prueba a un estado funcional y habilitado.
 
@@ -30,7 +37,7 @@ La implementación de reglas de reducción de superficie de ataque (ASR) mueve e
 ## <a name="step-1-transition-asr-rules-from-audit-to-block"></a>Paso 1: Transición de reglas ASR de auditoría a bloqueo
 
 1. Una vez determinadas todas las exclusiones durante el modo de auditoría, empieza a establecer algunas reglas ASR en modo "bloquear", empezando por la regla que tiene el menor número de eventos desencadenados. Consulta" [Habilitar reglas de reducción de superficie de ataque](enable-attack-surface-reduction.md).
-2. Revise la página de informes en el portal de Microsoft 365 Defender web; vea [Informe de protección contra amenazas en Microsoft Defender para endpoint](threat-protection-reports.md). Revisa también los comentarios de tus campeones de ASR.
+2. Revise la página de informes en el portal de Microsoft 365 Defender y vea Informe de protección [contra amenazas en Microsoft Defender para endpoint](threat-protection-reports.md). Revisa también los comentarios de tus campeones de ASR.
 3. Refine las exclusiones o cree nuevas exclusiones según se determine necesario.
 4. Vuelva a cambiar las reglas problemáticas a Auditoría.
 
@@ -91,7 +98,7 @@ Consulta el tema [de referencia de reglas de reducción de](attack-surface-reduc
 
 2. En el **Editor de administración de directivas de** grupo, vaya a **Configuración del equipo y** haga clic **en Plantillas administrativas**.
 
-3. Expande el árbol para **Windows componentes Antivirus de Microsoft Defender** \>  \> Protección contra vulnerabilidades de seguridad de Microsoft Defender **reducción de superficie** \> de ataque.
+3. Expande el árbol para **Windows componentes Antivirus de Microsoft Defender** \>  \> **Protección contra vulnerabilidades de seguridad de Microsoft Defender** \> **superficie de ataque**.
 
 4. Haz doble clic en la opción **Excluir archivos y rutas de acceso de las** reglas de reducción de superficie de ataque y establece la opción en **Habilitado**. Seleccione **Mostrar** e introduzca cada archivo o carpeta en la **columna Nombre de** valor. Escriba **0 en** la **columna Valor** de cada elemento.
 
@@ -123,10 +130,10 @@ Puedes personalizar la notificación para cuando se desencadena una regla y bloq
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Temas adicionales de esta colección de implementación
 
-[Requisitos previos de implementación de reglas ASR](attack-surface-reduction-rules-deployment.md)
+[Requisitos previos de implementación de reglas de ASR](attack-surface-reduction-rules-deployment.md)
 
-[Paso 1: Planear la implementación de reglas ASR](attack-surface-reduction-rules-deployment-plan.md)
+[Paso 1: Planear la implementación de reglas de ASR](attack-surface-reduction-rules-deployment-plan.md)
 
-[Paso 2: Probar reglas ASR](attack-surface-reduction-rules-deployment-test.md)
+[Paso 2: Probar reglas de ASR](attack-surface-reduction-rules-deployment-test.md)
 
-[Paso 4: Operacionalizar reglas ASR](attack-surface-reduction-rules-deployment-operationalize.md)
+[Paso 4: Operacionalización de reglas de ASR](attack-surface-reduction-rules-deployment-operationalize.md)

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1d39bd46afae270fc7ac2a9fab8b5f4a2b4aaeb2
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: e83400e444d4c8c733bea5552a31954bb019e358
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765989"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474055"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de rendimiento de Microsoft Defender para Endpoint en macOS
 
@@ -50,7 +50,8 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
 
     - Desde la interfaz de usuario. Abra Microsoft Defender para Endpoint en macOS y vaya a **Administrar la configuración**.
 
-      ![Administrar la captura de pantalla de protección en tiempo real.](images/mdatp-36-rtp.png)
+      :::image type="content" source="images/mdatp-36-rtp.png" alt-text=" La página Administrar protección en tiempo real" lightbox="images/mdatp-36-rtp.png":::
+      
 
     - Desde el terminal. Por motivos de seguridad, esta operación requiere elevación.
 

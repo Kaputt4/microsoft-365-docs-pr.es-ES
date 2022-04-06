@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: b969efd9d83fa34ded01f8be7db7aaf4db971128
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 8991c2aca277d2a08e5f8924a5e5cb354df6dc1f
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498649"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569450"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Evaluar la posición de seguridad con Puntuación segura de Microsoft
 
@@ -38,11 +38,11 @@ La Puntuación de seguridad de Microsoft es una medida de la actitud de segurida
 Para ayudarle a encontrar la información que necesita más rápidamente, las acciones de mejora de Microsoft se organizan en grupos:
 
 - Identidad (Azure Active Directory cuentas & roles)
-- Dispositivo (Microsoft Defender para endpoint, conocido como [Puntuación segura de Microsoft para dispositivos](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-- Aplicaciones (correo electrónico y aplicaciones en la nube, incluidas Office 365 y Microsoft Defender para aplicaciones en la nube)
+- Dispositivo (Microsoft Defender para punto de conexión, conocido como [Puntuación segura de Microsoft para dispositivos](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
+- Aplicaciones (correo electrónico y aplicaciones en la nube, incluidas Office 365 y Microsoft Defender for Cloud Apps)
 
 >[!NOTE]
->En la versión reciente de Puntuación segura de Microsoft, se ha publicado un modelo de puntuación mejorado que hizo que Puntuación segura de Microsoft sea temporalmente incompatible con la puntuación segura de identidad y la API Graph puntuación. [Ver detalles](microsoft-secure-score-whats-new.md)
+>En la versión reciente de Puntuación segura de Microsoft, se ha publicado un modelo de puntuación mejorado que hizo que La puntuación segura de Microsoft sea temporalmente incompatible con la puntuación segura de identidad y la puntuación Graph API. [Ver detalles](microsoft-secure-score-whats-new.md)
 
 En la página Introducción a la puntuación segura de Microsoft, vea cómo se dividen los puntos entre estos grupos y qué puntos están disponibles. También puedes obtener una vista general de la puntuación total, la tendencia histórica de tu puntuación segura con comparaciones comparativas comparativas y las acciones de mejora prioritarias que se pueden realizar para mejorar la puntuación.
 
@@ -80,7 +80,7 @@ Al seleccionar una acción de mejora específica, aparece un control desplegable
 
 Para completar la acción, tienes algunas opciones:
 
-- Seleccione **Administrar** para ir a la pantalla de configuración y realizar el cambio. A continuación, obtendrás los puntos que vale la acción, visibles en el vuelo hacia fuera. Los puntos suelen tardar unas 24 horas en actualizarse.
+- Seleccione **Administrar en Microsoft 365 Defender** para ir a la pantalla de configuración y realizar el cambio. A continuación, obtendrás los puntos que vale la acción, visibles en el control desplegable. Los puntos suelen tardar unas 24 horas en actualizarse.
 
 - Seleccione **Compartir** para copiar el vínculo directo a la acción de mejora. También puede elegir la plataforma para compartir el vínculo, como correo electrónico, Microsoft Teams o Microsoft Planner.
 

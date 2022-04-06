@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 805f857a95fab03f8356c5162db1509122e7250a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 21296ec7993b0d65e509d51f62ddae8f3415945c
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680828"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500725"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -77,7 +77,7 @@ Si experimenta algún error de instalación, consulte [Troubleshooting installat
 
 ### <a name="system-requirements"></a>Requisitos del sistema
 
-- Distribuciones de servidor Linux compatibles y versiones x64 (AMD64/EM64T):
+- Distribuciones de servidores Linux compatibles y x64 (AMD64/EM64T) y x86_64 versiones:
 
   - Red Hat Enterprise Linux 6.7 o posterior
   - Red Hat Enterprise Linux 7.2 o posterior
@@ -129,19 +129,50 @@ Si experimenta algún error de instalación, consulte [Troubleshooting installat
        - 2.6.32-754.6.3.el6.x86_64
        - 2.6.32-754.9.1.el6.x86_64
 
+    Para Red Hat Enterprise Linux 6 y CentOS 6, la lista de versiones de kernel compatibles son:
+       - Para 6.7: 2.6.32-573.* 
+       - Para 6.8: 2.6.32-642.* 
+       - Para 6.9: 2.6.32-696.* 
+       - Para la 6.10: 2.6.32.754.2.1.el6.x86_64 a 2.6.32-754.41.2:
 
-    > [!NOTE]
-    > Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico. Las versiones anteriores a las que se enumeran en esta sección solo se proporcionan para soporte técnico de actualización.
+ > [!NOTE]
+ > Después de publicar una nueva versión del paquete, la compatibilidad con las dos versiones anteriores se reduce únicamente al soporte técnico. Las versiones anteriores a las que se enumeran en esta sección solo se proporcionan para soporte técnico de actualización.
 
-  - Para el resto de las distribuciones admitidas, la versión mínima del kernel necesaria es 3.10.0-327
+  Lista de versiones:
 
-- Mecanismo del proveedor de eventos
-  - Red Hat Enterprise Linux 6 y CentOS 6: solución `Talpa` basada en módulos kernel
-  - Para el resto de las distribuciones admitidas: `Fanotify`
-    - La `fanotify` opción kernel debe estar habilitada
+  - 2.6.32-754.2.1.el6.x86_64 
+  - 2.6.32-754.17.1.el6.x86_64
+  - 2.6.32-754.29.1.el6.x86_64
+  - 2.6.32-754.3.5.el6.x86_64 
+  - 2.6.32-754.18.2.el6.x86_64
+  - 2.6.32-754.29.2.el6.x86_64
+  - 2.6.32-754.6.3.el6.x86_64 
+  - 2.6.32-754.22.1.el6.x86_64
+  - 2.6.32-754.30.2.el6.x86_64
+  - 2.6.32-754.9.1.el6.x86_64 
+  - 2.6.32-754.23.1.el6.x86_64
+  - 2.6.32-754.33.1.el6.x86_64
+  - 2.6.32-754.10.1.el6.x86_64
+  - 2.6.32-754.24.2.el6.x86_64
+  - 2.6.32-754.35.1.el6.x86_64
+  - 2.6.32-754.11.1.el6.x86_64
+  - 2.6.32-754.24.3.el6.x86_64
+  - 2.6.32-754.39.1.el6.x86_64
+  - 2.6.32-754.12.1.el6.x86_64
+  - 2.6.32-754.25.1.el6.x86_64
+  - 2.6.32-754.41.2.el6.x86_64
+  - 2.6.32-754.14.2.el6.x86_64
+  - 2.6.32-754.27.1.el6.x86_64
+  - 2.6.32-754.15.3.el6.x86_64
+  - 2.6.32-754.28.1.el6.x86_64       
 
-      > [!CAUTION]
-      > No se admite la ejecución de Defender para Endpoint en Linux en paralelo `fanotify`con otras soluciones de seguridad basadas en. Puede dar lugar a resultados impredecibles, incluida la suspensión del sistema operativo.
+
+- Versión mínima del kernel 3.10.0-327
+
+- La `fanotify` opción kernel debe estar habilitada
+
+  > [!CAUTION]
+  > No se admite la ejecución de Defender para Endpoint en Linux en paralelo `fanotify`con otras soluciones de seguridad basadas en. Puede dar lugar a resultados impredecibles, incluida la suspensión del sistema operativo.
 
 - Espacio en disco: 1 GB
 
@@ -195,10 +226,8 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 
 |Hoja de cálculo de la lista de dominios| Descripción|
 |---|---|
-|Lista de direcciones URL de Microsoft Defender para puntos de conexión para clientes comerciales | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo para clientes comerciales. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Lista de direcciones URL de Punto de conexión de Microsoft Defender para clientes de Gov/GCC/DoD| Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sos para clientes gov/GCC/DoD. <p> [Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
-|
-
+|:::image type="content" source="images/mdatp-urls.png" alt-text="Hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión" lightbox="images/mdatp-urls.png":::|Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <p> Descargue la hoja de [cálculo aquí](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).|
+|||
 
 > [!NOTE]
 > Para obtener una lista de direcciones URL más específica, vea [Configure proxy and Internet connectivity settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).

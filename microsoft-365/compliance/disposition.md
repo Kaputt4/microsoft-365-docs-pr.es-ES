@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, cuando usa una revisión para eliminación o los elementos marcados como registros se eliminan automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: 2d078eb00ffa6d2dd8279c7e5eb65a8fcfb6fa53
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: dbc713c665367bb973fb8faded24015ad6c2d5c3
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419189"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594826"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -187,14 +187,16 @@ Como puede ver en el ejemplo que se muestra, las acciones admitidas son las sigu
   
 - **Aprobar eliminación**:
     - Cuando se selecciona esta acción para una fase provisional de revisión para eliminación (ha configurado varias fases): el elemento se mueve a la siguiente fase de eliminación.
-    - Cuando se selecciona esta acción para la última fase de revisión de eliminación, o solo hay una fase de eliminación: el elemento se marca como apto para la eliminación permanente, lo cual sucede en el plazo de 7 días.
+    - Cuando esta acción se selecciona para la última fase de revisión de eliminación, o solo hay una fase de eliminación: el elemento se marca como apto para la eliminación permanente, que luego se activa en un trabajo del temporizador dentro de los 7 días. El tiempo exacto para que el elemento se elimine de forma permanente depende de la carga de trabajo. Para obtener más información, vea [Cómo funciona la retención para SharePoint y OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) y [Cómo funciona la retención para Exchange](retention-policies-exchange.md#how-retention-works-for-exchange).
+
 - **Volver a etiquetar**:
     - Cuando se selecciona esta acción, el elemento sale del proceso de revisión para eliminación de la etiqueta original. Después, el elemento está sujeto a la configuración de retención de la nueva etiqueta de retención seleccionada.
+
 - **Extender**:
     - Cuando se selecciona esta acción, la revisión para eliminación se suspende de forma efectiva hasta el final del período extendido y, después, la revisión para eliminación se vuelve a activar desde la primera fase.
+
 - **Agregar revisores**:
     - Cuando se selecciona esta acción, se pide al usuario que especifique y agregue otros usuarios para su revisión.
-    
     > [!NOTE]
     > Esta acción no concede automáticamente los [permisos necesarios](#permissions-for-disposition) a los usuarios agregados. Si no tienen estos permisos, no pueden participar en la revisión para eliminación.
 

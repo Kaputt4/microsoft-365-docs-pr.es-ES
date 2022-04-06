@@ -8,20 +8,20 @@ metadata:
   manager: dansimp
   ms.date: 
   audience: ITPro
-  ms.topic: troubleshooting
+  ms.topic: faq
   ms.localizationpriority: medium
   ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
   ms.custom:
   - seo-marvel-apr2020
-  description: Obtenga respuestas a las preguntas generales más comunes sobre el servicio de filtrado de correo electrónico Exchange Online Protection (EOP) hospedado en la nube.
+  description: Obtenga respuestas a las preguntas generales más comunes sobre el servicio de filtrado de correo electrónico hospedado en la nube Exchange Online Protection (EOP).
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: d768d523a875be6b4db159e4b91f559cc4050ba4
-  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.openlocfilehash: 29e1e99b5ff8b7f55f7b6c8fa74b8fcc4be5e53d
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 10/06/2021
-  ms.locfileid: "60208402"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63682799"
 title: Preguntas más frecuentes sobre EOP
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -77,14 +77,14 @@ sections:
   - question: >
       ¿Por qué necesito un inquilino Microsoft 365 al registrarse para el filtrado de correo electrónico a través de EOP?
     answer: >
-      Microsoft 365 es el nombre que se da a una colección de productos y servicios a los que se puede tener acceso a través de un Microsoft 365 inquilino. Piense en el Microsoft 365 empresarial como el punto de partida al que puede agregar licencias para el filtrado de correo electrónico.
+      Microsoft 365 es el nombre que se da a una colección de productos y servicios a los que se puede tener acceso a través de un Microsoft 365 empresarial. Piense en el Microsoft 365 inquilino como el punto de partida al que puede agregar licencias para el filtrado de correo electrónico.
   - question: >
       ¿Dispone EOP de un portal de comunicación donde pueda obtener información sobre problemas conocidos y soluciones previstas? ¿Qué pasa con las nuevas características?
     answer: >
       El Centro de administración de Microsoft 365 tendrá parte de esta información. Si se ve afectado por un evento de nivel de servicio, debería ver una alerta de comunicación (normalmente acompañada de un icono de campana) después de iniciar sesión en el Centro de administración de Microsoft 365. Le recomendamos que la lea y tome las medidas necesarias en los elementos que procedan.
 
 
-      En lo que respecta [](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) a las nuevas características de EOP, Microsoft 365 guía básica para empresas es un buen recurso para obtener información sobre las próximas nuevas características. También publicaremos artículos de blog sobre nuevas características en el sitio [web Microsoft 365 blogs.](https://www.microsoft.com/microsoft-365/blog/)
+      En lo que respecta a las nuevas [](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) características de EOP, Microsoft 365 plan de desarrollo para empresas es un buen recurso para obtener información sobre las próximas nuevas características. También publicaremos artículos de blog sobre nuevas características en el sitio [web Microsoft 365 blogs](https://www.microsoft.com/microsoft-365/blog/).
   - question: >
       ¿El servicio funciona con versiones anteriores de Exchange (como Exchange Server 2010) y entornos que no son Exchange?
     answer: >
@@ -107,4 +107,4 @@ sections:
       Sí. Para más información sobre los límites de EOP, vea [Límites de Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
   - question: >
       ¿EOP admite PowerShell?
-    answer: 'Sí, la funcionalidad completa de EOP está disponible a través de PowerShell: Exchange Online PowerShell para organizaciones con Exchange Online buzones de correo; PowerShell de EOP independiente para organizaciones EOP independientes. Para obtener más información, [vea Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell) y [Exchange Online Protection PowerShell](/powershell/exchange/exchange-online-protection-powershell).'
+    answer: 'Sí, la funcionalidad completa de EOP está disponible a través de PowerShell: Exchange Online PowerShell para organizaciones con buzones de correo de Exchange Online; PowerShell de EOP independiente para organizaciones EOP independientes. Para obtener más información, [vea Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell) y [Exchange Online Protection PowerShell](/powershell/exchange/exchange-online-protection-powershell).'

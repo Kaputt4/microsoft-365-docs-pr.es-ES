@@ -6,21 +6,21 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: hub-page
-ms.service: O365-seccomp
+ms.topic: conceptual
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
+ms.prod: m365-security
 search.appverid:
 - MOE150
 - MET150
 description: Soluciones para la versión de prueba del cuaderno de estrategias de Microsoft Defender para Office 365
-ms.openlocfilehash: 6b149f7b3fa218050c37f99f5567fd2658f26bc7
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b8a0fedd01a3769f2ccf8952bd9e7bce0974a2f0
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375767"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683217"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Versión de prueba del cuaderno de estrategias: Microsoft Defender para Office 365
 
@@ -142,6 +142,6 @@ Proporciona los conocimientos adecuados a los usuarios para que identifiquen ame
 ## <a name="additional-resources"></a>Recursos adicionales
 
 - **Guía interactiva:**¿No estás familiarizado con Defender para Office 365? Revisa la [guía interactiva](https://mslearn.cloudguides.com/guides/Safeguard%20your%20organization%20with%20Microsoft%20Defender%20for%20Office%20365) para saber cómo empezar.
-- **Documentos de Microsoft**: Obtén información detallada sobre cómo funciona Defender para Office 365 y la mejor manera de implementarlo para su organización. Visita [Documentos](overview.md).
+- **Documentos de Microsoft**: Obtén información detallada sobre cómo funciona Defender para Office 365 y la mejor manera de implementarlo para su organización. Visite [Docs](overview.md).
 - **Qué incluye**: Para ver todas las características de seguridad del correo electrónico de Office 365 ordenadas por nivel de producto, consulta la [Matriz de características](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability).
 - **Por qué elegir Defender para Office 365**: La [hoja de datos de Defender para Office 365](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy) muestra las 10 razones principales por las que los clientes eligen Microsoft.

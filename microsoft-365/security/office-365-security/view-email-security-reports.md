@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1d7d3dab26d4f9034294b2780875d33cb2fbef3
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: b6d085d2e3c1e9c1e032f468f56d67a393269fe1
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557956"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683063"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Ver informes de seguridad de correo electrónico en el portal Microsoft 365 Defender correo electrónico
 
@@ -48,10 +48,6 @@ Hay varios informes disponibles en el portal <https://security.microsoft.com> de
 
 En la tabla siguiente se describen los informes Exchange Online Protection (EOP) y Microsoft Defender para Office 365 en el portal de Microsoft 365 Defender que se han reemplazado, movido o desusado.
 
-<br>
-
-****
-
 |Cmdlets y informes en desuso|Nuevos informes y cmdlets|Id. del Centro de mensajes|Fecha|
 |---|---|:---:|:---:|
 |**Seguimiento de URL** <p> Get-URLTrace|[Informe de protección de direcciones URL](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|Junio de 2021|
@@ -62,9 +58,8 @@ En la tabla siguiente se describen los informes Exchange Online Protection (EOP)
 |**Malware detectado en el informe de correo electrónico** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Informe de estado de protección contra amenazas: Ver datos por malware de \> correo electrónico](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|Junio de 2021|
 |**Informe de detección de correo no deseado** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Informe de estado de protección contra amenazas: Ver datos por correo electrónico no \> deseado](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|Octubre de 2021|
 |Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|TBA|Mayo de 2022|
-|**Exchange de regla de transporte** <p> Get-MailTrafficPolicyReport <br> Get-MailDetailTransportRuleReport|[Exchange de regla de transporte en el EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> sin cmdlets|MC316157|Abril de 2022|
+|**Exchange de regla de transporte** <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange de regla de transporte en el EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|Abril de 2022|
 |Get-MailTrafficTopReport|[Informe de estado de protección contra amenazas: Ver datos por malware de \> correo electrónico](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **Nota**: No hay reemplazo para las capacidades de informes de cifrado en Get-MailTrafficTopReport.|MC315742|Abril de 2022|
-|
 
 ## <a name="compromised-users-report"></a>Informe de usuarios comprometidos
 
@@ -199,7 +194,7 @@ En la **página Informe de estado de flujo de** correo, la **pestaña** Tipo est
 La tabla de detalles debajo del gráfico muestra la siguiente información:
 
 - **Dirección**
-- **Tipo**
+- **Type**
 - **24 horas**
 - **3 días**
 - **7 días**
@@ -341,7 +336,7 @@ El **informe Detecciones** de suplantación muestra información sobre los mensa
 
 La vista agregada del informe permite 90 días de filtrado, mientras que la vista de detalles solo permite diez días de filtrado.
 
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** \> **de correo electrónico** \> & colaboración **Correo & informes de colaboración**. En la **página Informes de colaboración &** correo electrónico, busque **Detecciones** de suplantación y, a continuación, haga clic **en Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/SpoofMailReportV2>.
+Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** \> **de correo electrónico** \> & colaboración **Correo & informes de colaboración**. En la **página Informes de colaboración &** correo electrónico, busque **Detecciones** de suplantación y, a continuación, haga clic **en Ver detalles**. Para ir directamente al informe, abra <https://security.microsoft.com/reports/SpoofMailReport>.
 
 ![Widget Detecciones de suplantación en la página Informes de colaboración & correo electrónico.](../../media/spoof-detections-widget.png)
 
@@ -408,7 +403,7 @@ Puede filtrar tanto el gráfico como la tabla de detalles haciendo clic  en Filt
 - **Identificador de envío**
 - **Id. de mensaje de red**
 - **Sender**
-- **Nombre**
+- **Name**
 - **Enviado por**
 - **Motivo para enviar**:
   - **No es correo no deseado**
@@ -1153,7 +1148,7 @@ Para administrar los informes programados que ya ha creado, siga estos pasos:
 
 2. En la **página Informes para descarga** , se muestra la siguiente información para cada informe disponible:
    - **Fecha de comienzo**
-   - **Nombre**
+   - **Name**
    - **Tipo de informe**
    - **Last sent**
    - **Dirección**

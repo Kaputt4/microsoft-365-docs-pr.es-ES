@@ -15,20 +15,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d57097d255b9f64782320dbd380f90b7a98573cb
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: df5cbf5297a17dafb80a93ed49c7f7d81bc49d68
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61160534"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474385"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Ver y organizar la cola de incidentes de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
@@ -47,17 +47,17 @@ En la navegación superior puede:
 - Navegar entre páginas
 - Aplicar filtros
 
-![Imagen de la cola de incidentes.](images/atp-incident-queue.png)
+:::image type="content" source="images/atp-incident-queue.png" alt-text="La cola incidentes" lightbox="images/atp-incident-queue.png":::
 
 ## <a name="sort-and-filter-the-incidents-queue"></a>Ordenar y filtrar la cola de incidentes
 Puede aplicar los siguientes filtros para limitar la lista de incidentes y obtener una vista más centrada.
 
 ### <a name="severity"></a>Severity
 
-Gravedad del incidente | Description
+Gravedad del incidente | Descripción
 :---|:---
 Alto </br>(Rojo) | Amenazas asociadas a menudo con amenazas persistentes avanzadas (APT). Estos incidentes indican un alto riesgo debido a la gravedad de los daños que pueden causar en los dispositivos.
-Medio </br>(Naranja) | Las amenazas rara vez se observan en la organización, como cambios anómalos en el Registro, ejecución de archivos sospechosos y comportamientos observados típicos de fases de ataque.
+Mediano </br>(Naranja) | Las amenazas rara vez se observan en la organización, como cambios anómalos en el Registro, ejecución de archivos sospechosos y comportamientos observados típicos de fases de ataque.
 Bajo </br>(Amarillo) | Amenazas asociadas con malware y herramientas de piratería que no indican necesariamente una amenaza avanzada dirigida a la organización.
 Informativo </br>(Gris) | Es posible que los incidentes informativos no se consideren perjudiciales para la red, pero podrían ser buenos para realizar un seguimiento.
 
@@ -83,7 +83,7 @@ Por ejemplo: *Incidente de varias fases en varios puntos de conexión notificado
 > Los incidentes que existían antes de la implementación de la nomenclatura automática de incidentes conservarán su nombre.
 
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 - [Cola de incidentes](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [Administrar incidentes](manage-incidents.md)
 - [Investigar incidentes](investigate-incidents.md)

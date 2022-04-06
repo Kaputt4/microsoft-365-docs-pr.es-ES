@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 4bba9797572193199dba0bd4c928693d94bf00de
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 776680db7b2666cc964f82e88cd6af9e6bab7558
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569166"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500263"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Investigar incidentes con Microsoft 365 Defender
 
@@ -52,7 +52,7 @@ Para empezar, seleccione el incidente en la columna de marcas de verificación. 
 
 Cuando lo haga, se abrirá un panel de resumen con información clave sobre el incidente, como la gravedad, a quién está asignado, y el [ATT de MITRE&categorías de CK&trade;](https://attack.mitre.org/) para el incidente. Por ejemplo:
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Panel que muestra los detalles de resumen de un incidente en el portal Microsoft 365 Defender web." lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Panel que muestra los detalles de resumen de un incidente en Microsoft 365 Defender portal." lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
 
 Desde aquí, puede seleccionar Abrir **página de incidentes**. Esto abre la página principal del incidente donde encontrará más información de resumen y pestañas para alertas, dispositivos, usuarios, investigaciones y pruebas.
 
@@ -82,7 +82,7 @@ En la **pestaña** Alertas, puede ver la cola de alertas de alertas relacionadas
 
 - Gravedad.
 - Las entidades que participaron en la alerta.
-- El origen de las alertas (Microsoft Defender for Identity, Microsoft Defender para punto de conexión, Microsoft Defender para Office 365, Defender for Cloud aplicaciones y el complemento de gobierno de aplicaciones).
+- El origen de las alertas (Microsoft Defender para identidad, Microsoft Defender para endpoint, Microsoft Defender para Office 365, Defender para aplicaciones en la nube y el complemento de gobierno de aplicaciones).
 - La razón por la que se vincularon.
 
 Por ejemplo:
@@ -121,7 +121,7 @@ La **pestaña Dispositivos** enumera todos los dispositivos relacionados con el 
 
 Puedes seleccionar la marca de verificación de un dispositivo para ver los detalles del dispositivo, los datos de directorio, las alertas activas y los usuarios que han iniciado sesión. Selecciona el nombre del dispositivo para ver los detalles del dispositivo en el inventario de dispositivos defender para puntos de conexión. Por ejemplo:
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="La página relacionada con la opción Inventario de dispositivos en el Microsoft Defender para punto de conexión." lightbox="../../media/investigate-incidents/incident-devices-details.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Página relacionada con la opción Inventario de dispositivos en Microsoft Defender para endpoint." lightbox="../../media/investigate-incidents/incident-devices-details.png":::
 
 Desde la página del dispositivo, puedes recopilar información adicional sobre el dispositivo, como todas sus alertas, una escala de tiempo y recomendaciones de seguridad. Por ejemplo, desde la  pestaña Escala de tiempo, puede desplazarse por la escala de tiempo de la máquina y ver todos los eventos y comportamientos observados en la máquina en orden cronológico, intercalados con las alertas generadas.
 
@@ -145,11 +145,11 @@ La **pestaña Buzones** enumera todos los buzones que se han identificado para f
 
 :::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="Página Buzones de correo para un incidente en el portal de Microsoft 365 Defender correo." lightbox="../../media/investigate-incidents/incident-mailboxes.png":::
 
-Puede seleccionar la marca de verificación de un buzón para ver una lista de alertas activas. Seleccione el nombre del buzón para ver detalles adicionales del buzón en la página Explorador para Defender para Office 365.
+Puede seleccionar la marca de verificación de un buzón para ver una lista de alertas activas. Seleccione el nombre del buzón para ver detalles adicionales del buzón en la página Explorador de Defender para Office 365.
 
 ## <a name="investigations"></a>Investigaciones
 
-La **pestaña Investigaciones** enumera todas las [investigaciones automatizadas desencadenadas por alertas](m365d-autoir.md) en este incidente. Las investigaciones automatizadas realizarán acciones de corrección o esperarán a que los analistas aprueben las acciones, en función de cómo haya configurado las investigaciones automatizadas para que se ejecuten en Defender for Endpoint y Defender para Office 365.
+La **pestaña Investigaciones** enumera todas las [investigaciones automatizadas desencadenadas por alertas](m365d-autoir.md) en este incidente. Las investigaciones automatizadas realizarán acciones de corrección o esperarán a que los analistas aprueben las acciones, según cómo haya configurado las investigaciones automatizadas para que se ejecuten en Defender for Endpoint and Defender para Office 365.
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="La página Investigaciones de un incidente en el Microsoft 365 Defender web" lightbox="../../media/investigate-incidents/incident-investigations.png":::
 
@@ -195,14 +195,14 @@ Desde la **Graph**, puede:
  
    :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Un resaltado de alerta en la Graph página" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Según sea necesario:
 
 - [Investigar las alertas de un incidente](investigate-alerts.md)
 - [Investigar los usuarios de un incidente](investigate-users.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)

@@ -1,6 +1,6 @@
 ---
 title: Informe de estado y cumplimiento del dispositivo en Microsoft Defender para punto de conexión
-description: Realizar un seguimiento de las detecciones de estado de estado del dispositivo, el estado del antivirus, la plataforma del sistema operativo y las Windows 10 con el informe de estado y cumplimiento del dispositivo
+description: Realizar un seguimiento de las detecciones de estado de estado del dispositivo, el estado del antivirus, la plataforma del sistema operativo y Windows 10 versiones con el informe de estado y cumplimiento del dispositivo
 keywords: estado de mantenimiento, antivirus, plataforma del sistema operativo, versión de Windows 10, versión, estado, estado
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: eaa9d05fd62127949e6a0b40de8d42a79c446d4d
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: bf89c0e57cbe14980b15ecf6f5a88f6db2b83e84
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170581"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474033"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Informe de estado y cumplimiento del dispositivo en Microsoft Defender para punto de conexión
 
@@ -27,7 +27,7 @@ ms.locfileid: "61170581"
 
 
 **Se aplica a:**
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -36,7 +36,7 @@ El informe de estado de dispositivos proporciona información de alto nivel sobr
 
 El panel está estructurado en dos secciones:
 
-:::image type="content" alt-text="Imagen del informe del dispositivo." source="images/device-reports.png" lightbox="images/device-reports.png":::
+:::image type="content" source="images/device-reports.png" alt-text="El informe del dispositivo" lightbox="images/device-reports.png":::
 
 
 <br>
@@ -92,7 +92,7 @@ Puedes seleccionar varios filtros para aplicar desde los atributos del dispositi
 
 Por ejemplo, para mostrar datos sobre Windows 10 dispositivos con estado de mantenimiento del sensor activo:
 
-1. En **Filtros > Estado de mantenimiento del sensor > Active**.
+1. En **Filtros > Estado de mantenimiento del sensor > Activo**.
 2. A continuación, seleccione **Plataformas del sistema operativo > Windows 10**.
 3. Seleccione **Aplicar**.
 

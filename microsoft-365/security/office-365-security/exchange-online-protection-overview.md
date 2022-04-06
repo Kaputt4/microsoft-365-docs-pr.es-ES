@@ -16,12 +16,12 @@ ms.custom:
 description: Obtenga información sobre Exchange Online Protection (EOP) puede ayudar a proteger su organización de correo electrónico local en entornos independientes e híbridos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fb49a24ae378be990efd727450a06889cc50679
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 319b20d548ad83cbf57043909a8dc2ce840db5cd
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473373"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682667"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
@@ -45,7 +45,7 @@ El resto de este artículo explica cómo funciona EOP y las características dis
 
 Para comprender el funcionamiento de EOP, es muy útil ver cómo se procesa el correo entrante:
 
-:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Gráfico del correo electrónico de Internet o los comentarios del cliente que pasan a EOP y a través de la conexión, antimalware, filtrado de reglas de barra diagonal de flujo de correo y filtrado de contenido, antes del veredicto de correo no deseado o cuarentena, o la entrega de correo del usuario final" lightbox="../../media/tp_emailprocessingineopt3.png":::
+:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Gráfico del correo electrónico de Internet o los comentarios del cliente que pasan a EOP y a través de la conexión, antimalware, el filtrado de reglas de barras diagonales de flujo de correo y el filtrado de contenido, antes del veredicto de correo no deseado o cuarentena, o la entrega de correo del usuario final.":::
 
 1. Cuando un mensaje entrante entra en EOP, pasa inicialmente a través del filtrado de conexiones, lo que comprueba la reputación del remitente. La mayoría del correo no deseado se detiene en este momento y EOP lo rechaza. Para obtener más información, consulte [Configurar filtrado de la conexión](configure-the-connection-filter-policy.md).
 
@@ -92,7 +92,7 @@ Para obtener información sobre los requisitos, los límites importantes y la di
 |Protección contra la suplantación de identidad (anti-phishing)|[Directivas contra la suplantación de identidad en Microsoft 365](set-up-anti-phishing-policies.md) <p> [Configuración de directivas contra phishing en EOP](configure-anti-phishing-policies-eop.md)|
 |Protección contra la suplantación de identidad|[Suplantación de información de inteligencia en EOP](learn-about-spoof-intelligence.md) <p> [Administrar la lista de bloqueados y permitidos del espacio empresarial](tenant-allow-block-list.md)|
 |Purga automática de hora cero (ZAP) para mensajes de malware, correo no deseado y phishing entregados|[ZAP en Exchange Online](zero-hour-auto-purge.md)|
-|Directivas de seguridad predefinidas|[Directivas de seguridad preestablecidas en Exchange Online Protection y Microsoft Defender para Office 365](preset-security-policies.md) <p> [Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365](configuration-analyzer-for-security-policies.md)|
+|Directivas de seguridad predefinidas|[Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md) <p> [Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365](configuration-analyzer-for-security-policies.md)|
 |Lista de bloqueados y permitidos del espacio empresarial|[Administrar la lista de bloqueados y permitidos del espacio empresarial](tenant-allow-block-list.md)|
 |Bloquear listas para remitentes de mensajes|[Crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md)|
 |Permitir listas para remitentes de mensajes|[Crear listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md)|
