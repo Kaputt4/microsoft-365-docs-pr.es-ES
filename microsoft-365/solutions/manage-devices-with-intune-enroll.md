@@ -1,10 +1,10 @@
 ---
-title: Paso 2. Inscripción de dispositivos para la administración con Intune
+title: Paso 2. Inscribir dispositivos en la administración con Intune
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
 - enroll devices into management
-- enroll devices with Intune
+- enroll devices to Intune
 - Intune mobile device platforms
 manager: dougeby
 audience: ITPro
@@ -18,22 +18,22 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 177c21b46357ca890994751b9f4d7597a57c6b64
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
-ms.translationtype: MT
+ms.openlocfilehash: 98c98298b5bb6728a0f8526e0406fb1fe02654f0
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651287"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704722"
 ---
 # <a name="step-2-enroll-devices-to-intune"></a>Paso 2. Inscribir dispositivos en Intune
 
-Existen varias maneras de proteger el punto de conexión, un término que se usa a menudo para hacer referencia a la entidad combinada, incluidos los dispositivos, las aplicaciones y la identidad del usuario. Las directivas de seguridad deben aplicarse de forma coherente y confiable no solo en las aplicaciones, sino también en el propio dispositivo. Inscribir el dispositivo para Intune y registrarse con un proveedor de identidades en la nube, como Azure Active Directory, es un buen comienzo.
+Existen varias maneras de proteger el punto de conexión, un término que se usa a menudo para hacer referencia a la entidad combinada, incluidos los dispositivos, las aplicaciones y la identidad del usuario. Las directivas de seguridad deben aplicarse de forma coherente y confiable no solo en las aplicaciones, sino también en el propio dispositivo. Inscribir el dispositivo en Intune y registrarse con un proveedor de identidades en la nube, como Azure Active Directory, es un buen comienzo.
 
 Tanto si un dispositivo es un dispositivo BYOD de propiedad personal como un dispositivo de propiedad corporativa y totalmente administrado, es conveniente tener visibilidad sobre los puntos de conexión que acceden a los recursos de la organización para asegurarse de que solo permite dispositivos en buen estado y compatibles. Esto incluye el estado y la confiabilidad de las aplicaciones móviles y de escritorio que se ejecutan en los puntos de conexión. Es necesario asegurarse de que esas aplicaciones estén en buen estado y sean compatibles, y que evitan que los datos corporativos se filtren a aplicaciones o servicios de consumidor a través de intenciones malintencionadas o medios accidentales.
 
 El proceso de inscripción de dispositivos establece una relación entre el usuario, el dispositivo y el servicio Microsoft Intune. El uso de Microsoft Intune como un servicio independiente le permite usar una única consola de administración basada en la Web para administrar equipos Windows, macOS y las plataformas de dispositivos móviles más populares.
 
-En este artículo se recomiendan métodos para inscribir dispositivos para Intune. Para obtener más información sobre estos métodos y cómo implementar cada uno de ellos, consulte [Guía de implementación: Inscribir dispositivos en Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
+En este artículo se recomiendan métodos para inscribir dispositivos en Intune. Para obtener más información sobre estos métodos y cómo implementar cada uno de ellos, consulte [Guía de implementación: Inscribir dispositivos en Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
 
 ![Pasos para administrar dispositivos](../media/devices/intune-mdm-steps-1.png#lightbox)
 
@@ -47,7 +47,7 @@ Para obtener más opciones, incluida la inscripción de dispositivos Windows BYO
 
 ## <a name="ios-and-ipados-enrollment"></a>Inscripción de iOS y iPadOS
 
-En el caso de los dispositivos de propiedad del usuario (BYOD), puede permitir que los usuarios inscriban sus dispositivos personales para la administración de Intune mediante uno de los métodos siguientes.
+En el caso de los dispositivos de propiedad del usuario (BYOD), puede permitir que los usuarios inscriban sus dispositivos personales con Intune mediante uno de los métodos siguientes.
 - La inscripción de dispositivos es lo que puede considerar como una inscripción BYOD típica. Proporciona a los administradores una amplia gama de opciones de administración.
 - La inscripción de usuarios es un proceso de inscripción más simplificado que proporciona a los administradores un subconjunto de opciones de administración de dispositivos. Esta característica está actualmente en versión preliminar.
 
@@ -61,7 +61,7 @@ Para obtener más información, consulte [Inscribir dispositivos iOS y iPadOS en
 
 ## <a name="android-enrollment"></a>Inscripción de Android 
 
-Existen varias opciones para la inscripción de Android en función del tipo de dispositivo, el tipo de inscripción que le gustaría admitir, así como aspectos como la versión de Android que usa o incluso el fabricante (en particular, Samsung). La mayoría de las organizaciones usan perfiles de Android Work para sus usuarios finales, en particular, en escenarios BYOD. 
+Existen varias opciones para la inscripción de Android en función del tipo de dispositivo, el tipo de inscripción que le gustaría admitir, así como aspectos como la versión de Android que usa o incluso el fabricante (en particular, Samsung). La mayoría de las organizaciones usan perfiles de Android Work para sus usuarios finales, especialmente en escenarios BYOD. 
 
 Con un perfil de trabajo Android, la información del usuario final se separa de forma distinta con contenedores de datos y aplicaciones independientes para uso personal y profesional. Esta es una manera ideal para que los usuarios inscriban su dispositivo a la vez que mantienen la privacidad de sus propios datos y la seguridad de los datos corporativos. 
 

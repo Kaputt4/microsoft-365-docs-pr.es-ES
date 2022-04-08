@@ -8,37 +8,37 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Use esta página para crear la lista de personal y administrar los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico.
-ms.openlocfilehash: 03ebf5c21e40d53e87067866e05fc37c2c255331
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: 2df48efe321a91c1eb2df712e954033eb28357aa
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049365"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713941"
 ---
 # <a name="add-staff-to-bookings"></a>Agregar personal a Bookings
 
-La página Personal de Bookings es donde se crea la lista de personal y se administran los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico. También puede establecer el horario laboral de cada miembro del personal desde aquí.
+> [!NOTE]
+> Este artículo le ayuda a interactuar con la versión más reciente de Microsoft Bookings. Las versiones anteriores se retirarán en los próximos meses.
+
+En la página Personal de Bookings se crea la lista de personal y se administran los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico. También puede establecer horas de trabajo para cada miembro del personal desde aquí.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Aunque Bookings es una característica de Microsoft 365, no todos los miembros del personal deben tener una Microsoft 365 cuenta. Todos los miembros del personal deben tener una dirección de correo electrónico válida para que puedan recibir reservas y programar cambios.
+Aunque Bookings es una característica de Microsoft 365, no todos los miembros del personal deben tener una cuenta de Microsoft 365. Todos los miembros del personal deben tener una dirección de correo electrónico válida para que puedan recibir reservas y cambios en la programación.
 
-## <a name="watch-add-your-staff-to-bookings"></a>Watch: Add your staff to Bookings
+## <a name="watch-add-your-staff-to-bookings"></a>Inspección: Agregar el personal a Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
 ## <a name="steps"></a>Pasos
 
-> [!NOTE]
-> Estos pasos aún no están disponibles en la nueva experiencia de Bookings.
+1. Elija su calendario en la página principal. 
 
-1. Vaya a la [página Administrar personal](https://outlook.office.com/bookings/staff) y seleccione Agregar **personal**
+2. Vaya a la opción personal en el panel izquierdo y seleccione **Agregar nuevo personal**.
 
-2. Seleccione el **botón Agregar personal.**
+3. Al agregar personal desde dentro de la organización, escriba su nombre en el campo **Agregar personas** y selecciónelos cuando aparezcan en el menú desplegable. Los demás campos se rellenarán automáticamente.
 
-3. Al agregar personal desde dentro de la organización, escriba su nombre en el campo **Agregar** personas y selecciónelos cuando aparezcan en el menú desplegable. Los demás campos se rellenarán automáticamente.
-
-    Una vez agregado un miembro del personal, puede editar el nombre que aparece en todas las comunicaciones de Bookings seleccionando la **x** junto a su nombre y editando el **campo** Agregar personas. Esto puede ser útil si desea que los miembros del personal muestren un título o un nombre específicos para los clientes, como la descripción de Adele Vance como "Dr. Vance, MD".
+    Una vez agregado un miembro del personal, puede editar el nombre que aparece en todas las comunicaciones Bookings seleccionando la **x** junto a su nombre y editando el campo **Agregar personas**. Esto puede ser útil si desea que los miembros del personal muestren un título o nombre específico para los clientes, como la descripción de Adele Vance como "Dr. Vance, MD".
 
 4. Para agregar personal de fuera de la organización, rellene manualmente su correo electrónico y otra información.
 
@@ -47,35 +47,35 @@ Aunque Bookings es una característica de Microsoft 365, no todos los miembros d
 
 5. Para cada miembro del personal, seleccione un rol: Administrador, Visor o Invitado.
     - **Los administradores** pueden editar toda la configuración, agregar y quitar personal, y crear, editar o eliminar reservas.
-    - **Los visores** pueden ver todas las reservas en el calendario, pero no pueden modificarlas ni eliminarlas. Tienen acceso de solo lectura a la configuración.
-    - **Los** invitados se pueden asignar a las reservas, pero no pueden abrir el buzón de reserva.
+    - **Los espectadores** pueden ver todas las reservas en el calendario, pero no pueden modificarlas ni eliminarlas. Tienen acceso de solo lectura a la configuración.
+    - **Los huéspedes** pueden ser asignados a reservas, pero no pueden abrir el buzón de reserva.
 
-6. Seleccione **Notificar a todo el personal por correo electrónico** cuando se cree o cambie una reserva asignada para habilitar los correos electrónicos del personal. A continuación se muestra un ejemplo de correo electrónico:
+6. Seleccione **Notificar a todo el personal por correo electrónico cuando se cree o cambie una reserva asignada a ellos** para habilitar los correos electrónicos del personal. A continuación se muestra un correo electrónico de ejemplo:
 
     :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="Un correo electrónico de notificación de Bookings.":::
 
-7. Seleccione **Eventos en Office 365 que afecten a** la disponibilidad si desea que la información de disponibilidad de los calendarios de los miembros del personal afecte a la disponibilidad de los servicios de reservas a través de Bookings.
+7. Seleccione **Eventos en Office 365 calendario afecta a la disponibilidad** si desea que la información de disponibilidad de los calendarios de los miembros del personal afecte a la disponibilidad de los servicios de reservas a través de Bookings.
 
-    Por ejemplo, si un miembro del personal tiene una reunión de equipo o una cita personal programada para las 15:00 un miércoles, Bookings mostrará a ese miembro del personal como no disponible para ser reservado en esa franja horaria. Esa hora aparecerá como ocupada o provisional en la vista de calendario Bookings, como se muestra en el ejemplo siguiente.
+    Por ejemplo, si un miembro del personal tiene una reunión de equipo o una cita personal programada para las 3 p. m. de un miércoles, Bookings mostrará que el miembro del personal no está disponible para reservarse en esa franja horaria. Ese tiempo aparecerá como ocupado o provisional en la vista de calendario de Bookings, como se muestra en el ejemplo siguiente.
 
     :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="Vista de un calendario de Bookings.":::
 
 > [!IMPORTANT]
-> Se recomienda encarecidamente dejar esta configuración activada (está activada de forma predeterminada) para evitar reservas dobles y optimizar la disponibilidad de los miembros del personal.
+> Se recomienda encarecidamente dejar esta opción activada (está activada de forma predeterminada) para evitar las reservas dobles y optimizar la disponibilidad de los miembros del personal.
 
-8. Seleccione **Usar horario comercial** para establecer todos los tiempos de reserva para que  los miembros del personal solo se ajusten al horario comercial establecido en la sección Horario comercial de la página Información empresarial.
+8. Seleccione **Usar horas laborables** para establecer todos los tiempos que se pueden reservar para que los miembros del personal solo estén dentro del horario comercial que establezca en la sección **Horario comercial** de la página Información empresarial.
 
-    Al anular la selección de este cuadro, el personal puede tener horas personalizadas que limiten aún más el momento en que se pueden reservar. Esto es útil para escenarios en los que un miembro del personal solo puede estar en el sitio martes y miércoles, o dedican sus mañanas para un tipo de citas y sus tardes para otros tipos.
+    Al anular la selección de este cuadro, el personal puede recibir horas personalizadas que limiten aún más cuando se puedan reservar. Esto es útil para escenarios en los que un miembro del personal solo puede estar en el sitio los martes y miércoles, o dedica sus mañanas para un tipo de citas, y sus tardes para otros tipos.
 
     > [!NOTE]
-    > Bookings admite hasta 100 miembros del personal en un calendario de bookings.
+    > Bookings admite hasta 100 miembros del personal en un calendario de Bookings.
 
-## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>Convertir a un usuario de Bookings en superusual sin agregarlos como personal en Bookings
+## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>Convertir a un usuario Bookings en superusuario sin agregarlo como Staff en Bookings
 
-Es posible que desee agregar una persona a su lista de personal en Bookings sin que esté disponible para clientes o clientes. Una vez que los conviertas en superusu usuarios, se convertirán en administradores del buzón de reserva. Ser administrador de un buzón de reserva se define como tener acceso completo y permisos de envío al buzón de reserva.
+Es posible que desee agregar una persona a la lista de personal en Bookings sin ponerla a disposición de clientes o clientes. Una vez que los convierta en superusuario, se convertirán en administrador del buzón de reserva. Ser administrador de un buzón de reserva se define como tener permisos de acceso completo y envío como al buzón de reserva.
 
 > [!NOTE]
-> Estos pasos solo funcionan si el usuario que se va a agregar aún no tiene asignado un rol **de visor** en Bookings.
+> Estos pasos solo funcionan si el usuario que se va a agregar aún no tiene asignado un rol de **visor** en Bookings.
 
 1. [Conectar para Microsoft 365 con PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
@@ -85,13 +85,13 @@ Es posible que desee agregar una persona a su lista de personal en Bookings sin 
     Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false
     ```
 
-3. Y, a continuación, ejecute este comando para asignar permisos de envío como.
+3. A continuación, ejecute este comando para asignar permisos de envío como.
 
     ```powershell
     Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
     ```
 
-Este es un comando de PowerShell de ejemplo para agregar Allie Bellew al buzón de reserva de la guardería contoso.
+Este es un comando de PowerShell de ejemplo para agregar Allie Bellew al buzón de reserva de guardería de Contoso.
 
 1. Ejecute primero este comando:
 

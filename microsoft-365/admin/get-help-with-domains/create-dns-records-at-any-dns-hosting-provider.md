@@ -23,12 +23,12 @@ ms.custom:
 - AdminTemplateSet
 - business_assist
 - admindeeplinkMAC
-ms.openlocfilehash: 17a3a63dfb3faedb5ff213b24dd14abd57f55bb3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 08d28a5586c92d0e439170807f750150d9fbe17c
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316931"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704787"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Agregar registros DNS para conectarse a su dominio
 
@@ -97,14 +97,16 @@ Agregará varios tipos de registros DNS en función de los servicios que quiera 
 
 Obtendrá la información del registro MX del asistente de configuración del dominio del centro de administración.
 
-En el sitio web del proveedor de host, agregue un nuevo registro MX.
-Asegúrese de configurar los campos con los siguientes valores:
+En el sitio web del proveedor de host, agregue un nuevo registro MX. Asegúrese de configurar los campos con los siguientes valores:
 
 - Tipo de registro: `MX`
 - Prioridad: defina la prioridad con el valor más alto posible, que suele ser `0`.
 - Nombre de host: `@`
 - Dirección de destino: copie el valor del centro de administración y péguelo aquí.
-- TTL: `3600` (o el proveedor predeterminado)
+- TTL: `3600`
+
+> [!NOTE]
+> Exchange Online solo admite valores TTL de menos de 6 horas (21 600 segundos).
 
 Guarde el registro y, a continuación, quite cualquier otro registro MX.
 

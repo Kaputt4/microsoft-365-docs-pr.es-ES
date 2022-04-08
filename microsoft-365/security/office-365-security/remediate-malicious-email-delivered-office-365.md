@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Corrección de amenazas
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dbb86061ddd7d94cf37a38d21d99d75eaaa44fae
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 98b425c39cd12aea55714e9ade192e2e770b26cd
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704910"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714859"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corregir el correo electrónico malintencionado entregado en Office 365
 
@@ -42,10 +42,6 @@ Los administradores pueden realizar las acciones necesarias en los correos elect
 *La búsqueda manual* se produce cuando los equipos de seguridad identifican las amenazas manualmente mediante las funcionalidades de búsqueda y filtrado en el Explorador. La corrección manual del correo electrónico se puede desencadenar a través de cualquier vista de correo electrónico (*malware*, *phish* o *todo el correo electrónico*) después de identificar un conjunto de correos electrónicos que deben corregirse.
 
 :::image type="content" source="../../media/microsoft-365-defender-threat-explorer-manual-remediation.png" alt-text="Captura de pantalla de la búsqueda manual en Office 365 Explorer por fecha.":::
-
-*Registros de acciones* Muestra los detalles del estado de corrección, como correcto, erróneo y ya en destino.
-
-:::image type="content" source="../../media/microsoft-365-defender-action-center-history.png" alt-text="El Centro de acciones muestra los detalles del estado de corrección, como correcto, erróneo y ya en destino.":::
 
 Los equipos de seguridad pueden usar el Explorador para seleccionar correos electrónicos de varias maneras:
 
@@ -83,12 +79,11 @@ El Centro de acciones unificadas muestra las acciones de corrección de los últ
 
 Abra cualquier elemento de corrección para ver los detalles sobre él, incluidos su nombre de corrección, el identificador de aprobación, el identificador de investigación, la fecha de creación, la descripción, el estado, el origen de la acción, el tipo de acción, decidido por, el estado. También se abre un panel lateral con detalles de acción, detalles del clúster de correo electrónico, alertas y detalles de incidentes.
 
-- *Abra la página Investigación* , lo que abre una investigación de administrador que contiene menos detalles y pestañas. Muestra detalles como: alerta relacionada, entidad seleccionada para la corrección, acción realizada, estado de corrección, recuento de entidades, registros, aprobador de la acción. Esta investigación realiza un seguimiento de la investigación realizada por el administrador manualmente y contiene detalles de las selecciones realizadas por el administrador, por lo que se denomina investigación de acción de administrador. No es necesario actuar sobre la investigación y alertar a su ya en estado aprobado.   
-- *Recuento de correo electrónico* Muestra el número de correos electrónicos enviados a través del Explorador de amenazas. Estos correos electrónicos pueden ser accionables o no accionables. 
-- *Registros de acciones* Muestra los detalles del estado de corrección, como correcto, erróneo o que ya está en el destino.
+- *Abra la página Investigación* , lo que abre una investigación de administrador que contiene menos detalles y pestañas. Muestra detalles como: alerta relacionada, entidad seleccionada para la corrección, acción realizada, estado de corrección, recuento de entidades, registros, aprobador de la acción. Esta investigación realiza un seguimiento de la investigación realizada por el administrador manualmente y contiene detalles de las selecciones realizadas por el administrador, por lo que se denomina investigación de acción de administrador. No es necesario actuar sobre la investigación y alertar a su ya en estado aprobado.
+- *Recuento de correo electrónico* Muestra el número de correos electrónicos enviados a través del Explorador de amenazas. Estos correos electrónicos pueden ser accionables o no accionables.
+- *Registros de acciones* Muestra los detalles de los estados de corrección, como correcto, erróneo y ya en destino.
 
-  > [!div class="mx-imgBorder"]
-  > [![Captura de pantalla del centro de acciones con amenazas accionables y no accionables.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
+:::image type="content" source="../../media/microsoft-365-defender-action-center-history-panel.png" alt-text="Se abre el Centro de acciones con la opción Mover a bandeja de entrada.":::
 
   - **Accionable**: los correos electrónicos de las siguientes ubicaciones de buzón en la nube se pueden actuar y mover:
     - Bandeja de entrada

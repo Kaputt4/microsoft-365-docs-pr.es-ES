@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac50568f9ce995f658e6b06c3a2b13b666211810
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 0ec60e573d5c05c4a30e74f235ffae5983de03dc
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512354"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705416"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -194,7 +194,7 @@ Al asignar permisos, puede elegir:
 
 - Cualquier usuario específico o grupo de seguridad habilitado para correo electrónico, grupo de distribución o grupo de Microsoft 365 ([anteriormente denominado grupo de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) en Azure AD. El grupo de Microsoft 365 puede tener [pertenencia estática o dinámica](/azure/active-directory/users-groups-roles/groups-create-rule). Tenga en cuenta que no puede usar un grupo de [distribución dinámico de Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) porque este tipo de grupo no está sincronizado con Azure AD, y no puede usar un grupo de seguridad que no esté habilitado para correo electrónico.
     
-    Dentro de un grupo especificado que es compatible con esta opción, el servicio de Azure Information Protection [autenticará individualmente a cada usuario](/azure/information-protection/prepare#azure-information-protection-requirements-for-user-accounts) antes de poder abrir el contenido cifrado.
+    Aunque puede especificar grupos que incluyan contactos de correo como método conveniente para conceder acceso a varias personas fuera de la organización, actualmente hay un problema conocido con esta configuración. Para obtener más información, consulte [Contactos de correo en grupos que tienen acceso intermitente a contenido cifrado](/office365/troubleshoot/sensitivity-labels/mail-contacts-lose-access-encrypted-content).
 
 - Cualquier dirección de correo electrónico o dominio. Use esta opción para especificar todos los usuarios de otra organización que usan Azure AD, escribiendo un nombre de dominio de dicha organización. También puede usar esta opción para proveedores de redes sociales si escribe su nombre de dominio, como **gmail.com**, **hotmail.com** o **outlook.com**.
 

@@ -21,64 +21,64 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo usar el conmutador de inquilinos y las vistas multiinquilino que le ofrecen la capacidad de administrar los inquilinos desde una única ubicación.
-ms.openlocfilehash: d30d352376bb10e142d478e21ddd550577f536ca
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre cómo usar el conmutador de inquilinos y las vistas multiinquilino que le ofrecen la capacidad de administrar inquilinos desde una sola ubicación.
+ms.openlocfilehash: 0058bdb45b42e2c67b96ff3e30ce1cd04e5658b2
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60195178"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713963"
 ---
 # <a name="multi-tenant-management"></a>Administración multiinquilino
 
-La administración multiinquilino ofrece una forma unificada de administración que permite Microsoft 365 administradores de partners la capacidad de administrar todos los inquilinos que administran desde una única ubicación. Si es un socio que administra varios inquilinos, puede:
+La administración multiinquilino ofrece una forma unificada de administración que permite a Microsoft 365 administradores de asociados administrar todos los inquilinos que administran desde una sola ubicación. Si es un asociado que tiene un rol de administrador delegado y administra varios inquilinos, puede:
 
 - Muévete rápidamente entre los inquilinos que administras.
-- Evaluar el estado del servicio, los productos y la facturación en varios inquilinos.
-- En la página Todos los **inquilinos,** puede ver rápidamente el estado de todos los servicios de los inquilinos, las solicitudes de servicio abiertos, los productos y la facturación, así como el número de usuarios de ese espacio empresarial.
+- Evalúe el estado del servicio, los productos y la facturación en varios inquilinos.
+- En la página **Todos los inquilinos** , puede ver rápidamente el estado de todos los servicios de los inquilinos, las solicitudes de servicio abiertas, los productos y la facturación, y el número de usuarios de ese inquilino.
 
-## <a name="move-between-tenants"></a>Mover entre inquilinos
+## <a name="move-between-tenants"></a>Traslado entre inquilinos
 
 1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, seleccione el nombre de la organización.
 
     :::image type="content" source="../../media/macorgswitcher.png" alt-text="Conmutador multiinquilino.":::
 
-- Desde el **conmutador de inquilinos,** puede moverse rápidamente entre los inquilinos que administra.
+- Desde el **conmutador de** inquilinos, puede moverse rápidamente entre los inquilinos que administra.
 
-    :::image type="content" source="../../media/yourtenantslist.png" alt-text="La lista de inquilinos con funcionalidad de búsqueda.":::
+    :::image type="content" source="../../media/yourtenantslist.png" alt-text="Lista de inquilinos con funcionalidad de búsqueda.":::
 
-## <a name="view-all-tenants-page"></a>Ver la página Todos los inquilinos
+## <a name="view-all-tenants-page"></a>Página Ver todos los inquilinos
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, en la navegación izquierda, seleccione **Todos los inquilinos**.
-- En la **página Todos los inquilinos,** puede
-  - Evaluar el estado del servicio
-  - Revisar el uso de licencias
-  - Buscar o seleccionar el espacio empresarial que desea administrar
-  - También puede anclar el espacio empresarial más visitado a la parte superior de la lista.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, en el panel de navegación izquierdo, seleccione **Todos los inquilinos**.
+- En la página **Todos los inquilinos** , puede
+  - Evaluación del estado del servicio
+  - Revisión del uso de licencias
+  - Busque o seleccione el inquilino que desea administrar.
+  - También puede anclar el inquilino más visitado al principio de la lista.
 
-Si ha marcado un espacio empresarial como favorito, se expande automáticamente para que pueda ver inmediatamente los detalles de estado.
+Si ha marcado un inquilino como favorito, se expande automáticamente para que pueda ver inmediatamente los detalles del estado.
 
-## <a name="view-service-health-for-all-accounts"></a>Ver el estado del servicio para todas las cuentas
+## <a name="view-service-health-for-all-accounts"></a>Visualización del estado del servicio para todas las cuentas
 
-La vista estado del servicio muestra si algún incidente o aviso está afectando a los inquilinos. Incluso le dirá cuántos de los inquilinos administrados se ven afectados.
+La vista estado del servicio muestra si algún incidente o aviso afecta a los inquilinos. Incluso le indicará cuántos de los inquilinos administrados se ven afectados.
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, en la vista multiinquilino, seleccione **Estado del servicio**.
-2. En la **vista** agregada página Estado del servicio, también puede ver el número total de incidentes, el número total de avisos que afectan a cualquiera de los inquilinos administrados y el número de servicios con incidentes activos. También puede ver cuántos de sus inquilinos se ven afectados por incidentes y avisos.
+1. En la <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>, en la vista multiinquilino, seleccione **Service Health**.
+2. En la vista agregada **Estado del servicio** página, también puede ver el número total de incidentes, el número total de avisos que afectan a cualquiera de los inquilinos administrados y el número de servicios con incidentes activos. También puede ver cuántos de los inquilinos se ven afectados por incidentes y avisos.
 
-    - Puede usar la opción de filtro para ver problemas por tipo de problema o por servicio
+    - Puede usar la opción de filtro para ver los problemas por tipo de problema o por servicio.
 
-    - Puede revisar los problemas en **todas las pestañas** Todos los servicios o Todos **los** problemas.
+    - Puede revisar los problemas en **las pestañas Todos los servicios** o **Todos los problemas** .
 
-    :::image type="content" source="../../media/multitenant-servicehealth.png" alt-text="Página de mantenimiento del servicio multiinquilino.":::
-1. Seleccione un incidente en la **pestaña Todos los servicios** o Todos **los** problemas para obtener más información sobre cualquier incidente en la **pestaña** Información general. Seleccione la **pestaña Inquilinos afectados** para obtener una lista de los inquilinos afectados.
+    :::image type="content" source="../../media/multitenant-servicehealth.png" alt-text="Página de Estado del servicio multiinquilino.":::
+1. Seleccione un incidente en la pestaña **Todos los servicios** o **Todos los problemas** para obtener más información sobre cualquier incidente en la pestaña **Información general** . Seleccione la pestaña **Inquilinos afectados** para obtener una lista de los inquilinos afectados.
 
-    :::image type="content" source="../../media/tenantsaffected.png" alt-text="Lista de inquilinos afectados por un problema de estado del servicio.":::
+    :::image type="content" source="../../media/tenantsaffected.png" alt-text="Lista de inquilinos afectados por un problema de mantenimiento del servicio.":::
 
-La lista de inquilinos afectados se puede exportar al formato CSV para que los administradores puedan compartirla con equipos de soporte técnico.
+La lista de inquilinos afectados se puede exportar al formato CSV para que los administradores puedan compartirla con los equipos de soporte técnico.
 
-## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Ver un único espacio empresarial en el Centro de administración de Microsoft 365
+## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Visualización de un único inquilino en el Centro de administración de Microsoft 365
 
-Puede volver a la Centro de administración de Microsoft 365 para cualquiera de los inquilinos desde la **página Todos los inquilinos.**
+Puede volver a la Centro de administración de Microsoft 365 para cualquiera de los inquilinos desde la página **Todos los inquilinos**.
 
-1. En la **página Todos los inquilinos,** seleccione el nombre del inquilino para el que desea ver el Centro de administración.
-2. Se le dirige al Centro de administración de ese espacio empresarial.
+1. En la página **Todos los inquilinos** , seleccione el nombre del inquilino para el que desea ver el centro de administración.
+2. Se le dirige al centro de administración de ese inquilino.

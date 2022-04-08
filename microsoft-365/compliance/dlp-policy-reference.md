@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: Componente de directiva DLP y referencia de configuración
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: d6bc24f313d1998979a460bcd41e87ccbe8abc5c
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 169fb93f7343fd038af9e7b8ae789dabc871c6aa
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704931"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714007"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>Referencia de directiva de prevención de pérdida de datos
 
@@ -203,8 +203,6 @@ En el ejemplo siguiente, la regla 1 tiene prioridad sobre las demás reglas coin
 
 Todas las demás reglas se evalúan, pero sus acciones no se aplican. Los registros de auditoría mostrarán la regla más restrictiva aplicada en el archivo. Si hay más de una regla que coincide y son igualmente restrictivas, la prioridad de directiva y regla rige qué regla se aplicaría en el archivo.
 
-En el caso de los puntos de conexión, puede configurar las acciones que DLP realiza para todas las actividades admitidas en una sola regla para un conjunto determinado de condiciones de inclusión.
-
 ### <a name="conditions"></a>Condiciones
 
 Las condiciones son inclusivas y son donde se define lo que quiere que busque la regla y el contexto en el que se usan esos elementos. Indican a la regla &#8212; cuando se encuentra un elemento similar a *este* y se *usa así &#8212;* es una coincidencia y el resto de las acciones de la directiva se deben realizar en ella. Puede usar condiciones para asignar acciones diferentes a distintos niveles de riesgo. Por ejemplo, el contenido confidencial compartido internamente podría ser de menor riesgo y necesitar menos acciones que el contenido confidencial compartido con personas de fuera de la organización.
@@ -313,7 +311,7 @@ Las opciones de contexto disponibles cambian en función de la ubicación que el
 - El contenido contiene
 - Consulte las [actividades de punto de conexión en las que puede supervisar y tomar medidas.](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
-##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Condiciones compatibles con Microsoft Defender for Cloud Apps
+##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Condiciones Microsoft Defender for Cloud Apps admite
 
 - El contenido contiene
 - El contenido se comparte desde Microsoft 365
@@ -417,7 +415,7 @@ Para usar esta configuración, debe configurar opciones en **la configuración d
 
 La ubicación de los dispositivos proporciona muchas subactividades (condiciones) y acciones. Para más información, consulte [Actividades de punto de conexión sobre las que puede supervisar y realizar acciones](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
 
-Al seleccionar **Auditar o restringir actividades en dispositivos Windows**, puede restringir las actividades de usuario por dominio de servicio o explorador y limitar las acciones que dlp realiza:
+Al seleccionar **Auditar o restringir actividades en Windows dispositivos**, puede restringir las actividades de usuario por dominio de servicio o explorador y limitar las acciones que dlp realiza:
 
 - Todas las aplicaciones
 - Mediante una lista de aplicaciones restringidas que defina
@@ -435,7 +433,7 @@ Con la opción **Actividades de archivo para todas las aplicaciones** , seleccio
 - **Copia en una unidad extraíble USB** 
 - **Copiar en un recurso compartido de red**
 - **Print**
-- **Copiar o mover mediante una aplicación Bluetooth no permitida**
+- **Copiar o mover mediante una aplicación de Bluetooth no permitida**
 - **Servicios de Escritorio remoto**
 
 
@@ -455,7 +453,7 @@ Al seleccionar cualquiera de las opciones *Aplicar restricciones* y un usuario i
 
 Consulte Aplicaciones [restringidas y grupos de aplicaciones](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) para obtener más información. 
 
-#### <a name="microsoft-defender-for-cloud-apps-actions"></a>Acciones de Microsoft Defender for Cloud Apps
+#### <a name="microsoft-defender-for-cloud-apps-actions"></a>acciones de Microsoft Defender for Cloud Apps
 
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
 - Restricción de aplicaciones de terceros
@@ -496,7 +494,7 @@ Por ejemplo, si selecciona Exchange y Dispositivos como ubicaciones, estas accio
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
 - Auditoría o restricción de actividades en dispositivos Windows
 
-Si selecciona Dispositivos y Microsoft Defender para Aplicaciones en la nube, estas acciones estarán disponibles:
+Si selecciona Dispositivos y Microsoft Defender for Cloud Apps, estas acciones estarán disponibles:
 
 - Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones
 - Auditoría o restricción de actividades en dispositivos Windows
@@ -547,9 +545,9 @@ Puede habilitar o deshabilitar las notificaciones de usuario para varias aplicac
 
 y personalizar el texto del correo electrónico, el asunto y el texto de la sugerencia de directiva.
 
-![Opciones de configuración de sugerencias de directiva y notificación de usuario que están disponibles para Exchange, SharePoint, OneDrive, Teams chat y canal y Defender for Cloud Apps](../media/dlp-user-notification-non-devices.png)
+![Opciones de configuración de sugerencias de directiva y notificación de usuario que están disponibles para Exchange, SharePoint, OneDrive, Teams chat y canal y aplicaciones Defender for Cloud](../media/dlp-user-notification-non-devices.png)
 
-Si seleccionó Solo dispositivos, obtendrá todas las mismas opciones que están disponibles para Exchange, SharePoint, OneDrive, Teams Chat y Channel y Defender for Cloud Apps, además de la opción de personalizar el título y el contenido de la notificación que aparece en el dispositivo Windows 10.
+Si seleccionó Solo dispositivos, obtendrá todas las mismas opciones que están disponibles para Exchange, SharePoint, OneDrive, Teams Chat y Canal y aplicaciones de Defender for Cloud, además de la opción de personalizar el título y el contenido de la notificación que aparece en el dispositivo Windows 10. .
 
 ![Opciones de configuración de sugerencias de directiva y notificación de usuario que están disponibles para dispositivos](../media/dlp-user-notification-devices.png)  
 
