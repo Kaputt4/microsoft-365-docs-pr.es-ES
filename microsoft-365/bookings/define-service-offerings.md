@@ -8,112 +8,115 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
-description: Instrucciones para especificar información sobre ofertas de servicio, incluidos el nombre del servicio, la descripción, la ubicación, la duración y los precios. También puede etiquetar a los empleados que están cualificados para proporcionar el servicio.
-ms.openlocfilehash: 6b276d9ec2d943527f1a6d8ab310fc91406f216c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Instrucciones para especificar información sobre ofertas de servicio, incluidos el nombre del servicio, la descripción, la ubicación, la duración y los precios. También puede etiquetar a los empleados calificados para proporcionar el servicio.
+ms.openlocfilehash: 7d4bd5d8e75610785176f8c527576b0609cf71a4
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60151559"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714403"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Definir las ofertas de servicio en Bookings
 
-Al definir las ofertas de servicio en Microsoft Bookings, establece un nombre de servicio, una descripción, una ubicación (elija si desea reunirse en persona o tener una reunión en línea), la duración, los avisos predeterminados a los clientes y el personal, las notas internas sobre el servicio y los precios. También puede etiquetar a los empleados que están cualificados para proporcionar el servicio. A continuación, cuando los clientes se acercan a su sitio web empresarial para reservar una cita, pueden ver exactamente qué tipos de citas están disponibles, elegir la persona que desean proporcionar el servicio y cuánto costará su servicio.
+> [!NOTE]
+> Este artículo le ayuda a interactuar con la versión más reciente de Microsoft Bookings. Las versiones anteriores se retirarán en los próximos meses.
 
-También puede agregar información personalizada y direcciones URL a la confirmación de correo electrónico y los avisos que envíe cuando alguien reserve un servicio a través de la página de reserva.
+Al definir las ofertas de servicio en Microsoft Bookings, establece un nombre de servicio, una descripción, una ubicación (elija si desea reunirse en persona o tener una reunión en línea), la duración, los avisos predeterminados para los clientes y el personal, las notas internas sobre el servicio y los precios. También puede etiquetar a los empleados calificados para proporcionar el servicio. A continuación, cuando los clientes llegan a su sitio web empresarial para reservar una cita, pueden ver exactamente qué tipos de citas están disponibles, elegir la persona a la que quieren proporcionar el servicio y cuánto costará su servicio.
 
-## <a name="create-the-service-details"></a>Crear los detalles del servicio
+También puede agregar información personalizada y direcciones URL a la confirmación por correo electrónico y recordatorios que envíe cuando alguien reserve un servicio a través de su página de reserva.
 
-1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, **seleccione Bookings**.
+## <a name="create-the-service-details"></a>Creación de los detalles del servicio
 
-2. Vaya a **Configuración**  ->  [página Administrar servicios](https://outlook.office.com/bookings/settings/services) y seleccione Agregar nuevo **servicio**.
+1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **Bookings**.
 
-3. En la **página Detalles básicos,** agregue las selecciones.
+2. Vaya a **Su** **calendarServices** >  y seleccione **Agregar nuevo servicio**.
 
-   **Nombre del servicio:** escriba el nombre del servicio. Este es el nombre que aparecerá en el menú desplegable de la página Calendario. Este nombre también aparecerá cuando alguien agrega manualmente una cita en la página Calendario y aparecerá como un icono en la página Autoservicio.
+3. En la página **Detalles básicos** , agregue las selecciones.
 
-   **Descripción:** la descripción que escriba es la que aparecerá cuando un usuario haga clic en el icono de información en la página Autoservicio.
+   **Nombre del** servicio: escriba el nombre del servicio. Este es el nombre que aparecerá en el menú desplegable de la página Calendario. Este nombre también aparecerá cuando alguien agregue manualmente una cita en la página Calendario y aparecerá como un icono en la página Autoservicio.
 
-   **Ubicación predeterminada:** esta ubicación es la que se mostrará en los correos electrónicos de confirmación y aviso para el personal y los clientes, y se mostrará en el evento de calendario creado para la reserva.
+   **Descripción**: la descripción que escriba es la que aparecerá cuando un usuario haga clic en el icono de información de la página Autoservicio.
 
-   **Agregar** reunión en línea: esta configuración habilita o deshabilita las reuniones en línea para cada cita, ya sea a través de Teams o Skype, según cuál configure como el cliente predeterminado para el miembro del personal.
+   **Ubicación predeterminada**: esta ubicación es la que se mostrará en los correos electrónicos de confirmación y recordatorio para el personal y los clientes, y se mostrará en el evento de calendario creado para la reserva.
+
+   **Agregar reunión en línea**: esta configuración habilita o deshabilita las reuniones en línea para cada cita, ya sea a través de Teams o Skype, dependiendo de cuál configure como cliente predeterminado para el miembro del personal.
 
    - Habilitado:
-     - Un vínculo a una reunión de Teams o Skype, única para la reserva, se agregará al evento de calendario en los calendarios del personal y de los clientes, junto con la información de acceso telefónico.
-     - El vínculo para unirse a la reunión se agregará a todos los correos electrónicos de confirmación y aviso, como se muestra en el siguiente ejemplo:
+     - Se agregará un vínculo a una reunión de Teams o Skype, única para la reserva, al evento de calendario en los calendarios del personal y de los clientes, junto con información de acceso telefónico local.
+     - El vínculo para unirse a la reunión se agregará a todos los correos electrónicos de confirmación y recordatorio, como se muestra en el ejemplo siguiente:
 
-       :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Ejemplo de vínculo para unirse Teams reunión en Bookings.":::
+       :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Ejemplo de vínculo para unirse a Teams reunión en Bookings.":::
 
        > [!NOTE]
-       > Teams reuniones pueden unirse a través de la aplicación móvil de Teams, la aplicación de escritorio de Teams, en un explorador web o a través del acceso telefónico telefónico. Recomendamos encarecidamente habilitar Teams como el servicio de reuniones en línea predeterminado para su inquilino, para obtener la mejor experiencia al reservar citas virtuales.
+       > Teams reuniones se pueden unir a través de la aplicación móvil Teams, la aplicación de escritorio Teams, en un explorador web o mediante el acceso telefónico local. Se recomienda encarecidamente habilitar Teams como el servicio de reuniones en línea predeterminado para su inquilino, para obtener la mejor experiencia en la reserva de citas virtuales.
 
    - Deshabilitado:
-     - Las citas no contendrán una opción de reunión y no  se mostrarán todos los campos relacionados con la reunión que aparecen cuando se habilita Agregar reunión en línea.
+     - Las citas no contendrán una opción de reunión y no se mostrarán todos los campos relacionados con la reunión que aparecen cuando **se habilita Agregar reunión en línea** .
 
-   **Duración:** este es el tiempo durante el que se reservarán todas las reuniones. La hora se bloquea a partir de la hora de inicio, que se selecciona durante la reserva. La hora completa de la cita se bloqueará en los calendarios del personal.
+   **Duración**: es el tiempo durante el que se reservarán todas las reuniones. La hora se bloquea a partir de la hora de inicio, que se selecciona durante la reserva. La hora de la cita completa se bloqueará en los calendarios del personal.
 
-   **Tiempo de búfer:** la habilitación de esta configuración permite agregar tiempo adicional al calendario del personal cada vez que se reserva una cita.
+   **Tiempo de búfer**: habilitar esta configuración permite agregar tiempo adicional al calendario del personal cada vez que se reserva una cita.
 
-   La hora se bloqueará en el calendario del personal y afectará a la información de disponibilidad. Esto significa que si una cita finaliza a las 3:00 p.m. y se han agregado 10 minutos de tiempo de búfer al final de la reunión, el calendario del personal se mostrará como ocupado y no se puede reservar hasta las 3:10 p.m. Esto puede ser útil si el personal necesita tiempo antes de una reunión para prepararse, como un médico que revisa el gráfico de un paciente o un asesor financiero que prepara la información relevante de la cuenta. También puede ser útil después de una reunión, como cuando alguien necesita tiempo para viajar a otra ubicación.
+   El tiempo se bloqueará en el calendario del personal y afectará a la información de disponibilidad. Esto significa que si una cita termina a las 3:00 p.m. y se han agregado 10 minutos de tiempo de búfer al final de la reunión, el calendario del personal se mostrará como ocupado y no reservable hasta las 3:10 p. m. Esto puede ser útil si su personal necesita tiempo antes de una reunión para prepararse, como un médico que revisa el gráfico de un paciente o un asesor financiero que prepara la información pertinente de la cuenta. También puede ser útil después de una reunión, como cuando alguien necesita tiempo para viajar a otra ubicación.
 
-   **Precio no establecido:** seleccione las opciones de precio que se mostrarán en Self-Service página. Si **el precio no establecido** está seleccionado, no aparecerá ningún precio ni referencia al costo o al precio.
+   **Precio no establecido**: seleccione las opciones de precio que se mostrarán en la página de Self-Service. Si **se selecciona Price not set (Precio no establecido** ), no aparecerá ningún precio o referencia al costo o al precio.
 
-   **Notas:** este campo aparece en el evento de reserva para el personal reservado, así como en el evento que aparece en la pestaña Calendario de la aplicación web bookings.
+   **Notas**: Este campo aparece en el evento de reserva del personal reservado, así como en el evento que aparece en la pestaña Calendario de la aplicación web Bookings.
 
-   **Máximo de asistentes por** evento: esta configuración permite crear servicios que requieren la capacidad de varias personas para reservar la misma hora de cita y el mismo personal (como una clase de fitness). La franja horaria de cita para el servicio, el personal y la hora seleccionados estarán disponibles para reservar hasta que se haya alcanzado el número máximo de asistentes, especificado por usted. La capacidad y los asistentes a citas actuales se pueden ver en la pestaña Calendario de la aplicación web de Bookings.
+   **Número máximo de asistentes por evento**: esta configuración le permite crear servicios que requieren la posibilidad de que varias personas reserven la misma hora de cita y el mismo personal (por ejemplo, una clase de fitness). El espacio de tiempo de cita para el servicio, el personal y el tiempo seleccionados estarán disponibles para reservar hasta que se haya alcanzado el número máximo de asistentes, especificado por usted. La capacidad de cita actual y los asistentes se pueden ver en la pestaña Calendario de la aplicación web de Bookings.
 
-   :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Ejemplo de configuración de asistentes máximos en Bookings":::
+   :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Ejemplo de establecimiento del número máximo de asistentes en Bookings":::
 
-   **Permitir que** el cliente administre su reserva: esta configuración determina si el cliente puede modificar o cancelar su reserva, siempre que se haya reservado a través de la pestaña Calendario de la aplicación web de Bookings.
+   **Permitir que el cliente administre su reserva**: esta configuración determina si el cliente puede modificar o cancelar su reserva, siempre que se haya reservado a través de la pestaña Calendario de la aplicación web de Bookings.
 
    - Habilitado:
 
-     El **botón Administrar reserva** aparece en el correo electrónico de confirmación del cliente. Cuando el cliente selecciona este botón, aparecen tres opciones:
+     El botón **Administrar reserva** aparece en el correo electrónico de confirmación del cliente. Cuando el cliente selecciona este botón, aparecen tres opciones:
 
-     - **Reschedule** Al seleccionar esta opción, el usuario llega a una página de Self-Service específica del servicio, donde puede seleccionar una nueva hora o fecha para el mismo servicio y el mismo miembro del personal de la reserva original. Tenga en cuenta que, aunque el miembro del personal original está unido a la reserva reprogramada de forma predeterminada, el usuario también tiene la opción de cambiar el miembro del personal.
-     - **Cancelar reserva** Esto cancela la reserva y la quita del calendario del personal.
-     - **Nueva reserva** Esta opción lleva al usuario a la Self-Service con todos los servicios y el personal enumerados, para programar una nueva reserva.
+     - **Reprogramar** Al seleccionar esta opción, el usuario llega a una página de Self-Service específica del servicio, donde puede seleccionar una nueva hora o fecha para el mismo servicio y el mismo miembro del personal de la reserva original. Tenga en cuenta que, aunque el miembro del personal original está asociado a la reserva reprogramada de forma predeterminada, el usuario también tiene la opción de cambiar el miembro del personal.
+     - **Cancelación de la reserva** Esto cancela la reserva y la quita del calendario del personal.
+     - **Nueva reserva** Esta opción lleva al usuario a la página de Self-Service con todos los servicios y el personal enumerados, para programar una nueva reserva.
 
-        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="El botón Administrar reservas en Bookings.":::
+        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="El botón Administrar Bookings de Bookings.":::
 
-      Solo se recomienda dejar esta configuración habilitada si se siente cómodo con los clientes que acceden a la Self-Service web.
+      Solo se recomienda dejar habilitada esta configuración si se siente cómodo con los clientes que acceden a la página de Self-Service.
 
    - Deshabilitado:
 
-     El usuario no podrá reprogramar o cancelar su reserva cuando reserve a través de la pestaña Calendario de la aplicación web de Bookings. Sin embargo, al reservar en la Self-Service, los  clientes seguirán teniendo el botón Administrar reserva y todas sus opciones, incluso cuando esta configuración esté deshabilitada.
+     El usuario no podrá volver a programar o cancelar su reserva cuando realice la reserva a través de la pestaña Calendario de la aplicación web de Bookings. Sin embargo, al realizar la reserva a través de la página de Self-Service, los clientes seguirán teniendo el botón **Administrar reserva** y todas sus opciones, incluso cuando esta configuración esté deshabilitada.
 
-     Se recomienda deshabilitar esta configuración si desea limitar el acceso a la página Self-Service usuario. Además, se recomienda agregar texto a los correos electrónicos de confirmación y aviso que indiquen a los clientes cómo realizar cambios en su reserva a través de otros medios, como llamar a la oficina o enviar un correo electrónico al servicio de ayuda.
+     Se recomienda deshabilitar esta configuración si desea limitar el acceso a la página de Self-Service. Además, te sugerimos que agregues texto a tus correos electrónicos de confirmación y recordatorio que indiquen a tus clientes cómo realizar cambios en su reserva a través de otros medios, como llamando a la oficina o enviando un correo electrónico al departamento de soporte técnico.
 
-4. En la **página Opciones de** disponibilidad, puede ver  las opciones que ha seleccionado en la página De reserva para la directiva de programación y la disponibilidad de su personal. Para obtener más información, vea [Set your scheduling policies](set-scheduling-policies.md).
+4. En la página **Opciones de disponibilidad** , puede ver las opciones que ha seleccionado en la **página Reserva** para la directiva de programación y la disponibilidad del personal. Para obtener más información, consulte [Establecer las directivas de programación](set-scheduling-policies.md).
 
     :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Ejemplo de configuración del número máximo de asistentes en Bookings.":::
 
-5. **Precio predeterminado**  Este es el precio que se mostrará en la Self-Service página. Si **el precio no establecido** está seleccionado, no aparecerá ningún precio ni referencia al costo o al precio.
+5. **Precio predeterminado**  Este es el precio que se mostrará en la página de Self-Service. Si **se selecciona Price not set (Precio no establecido** ), no aparecerá ningún precio o referencia al costo o al precio.
 
-6. **Notas** Este campo aparece en el evento de reserva para el personal reservado, así como en el evento que aparece en la pestaña Calendario de la aplicación web bookings.
+6. **Notas** Este campo aparece en el evento de reserva del personal reservado, así como en el evento que aparece en la pestaña Calendario de la aplicación web de Bookings.
 
-7. **Los campos personalizados** pueden ser útiles al recopilar información que se necesita cada vez que se reserva la cita específica. Algunos ejemplos incluyen el proveedor de seguros antes de una visita a una clínica, el tipo de préstamo para consultas de préstamo, el principal de estudio para asesoramiento académico o el identificador de solicitante para las entrevistas de candidato. Estos campos aparecerán en la página Booking cuando los clientes reserven citas con usted y su personal.
+7. **Los campos personalizados** pueden ser útiles al recopilar información necesaria cada vez que se reserva la cita específica. Algunos ejemplos son el proveedor de seguros antes de una visita a la clínica, el tipo de préstamo para consultas de préstamos, el mayor de estudio para asesoramiento académico o el identificador del solicitante para las entrevistas de candidatos. Estos campos aparecerán en la página Reserva cuando los clientes reserven citas con usted y su personal.
 
-   El correo electrónico del cliente, el número de teléfono, la dirección y las notas son campos no extraíbles, pero puede hacerlos opcionales anulando la selección obligatorio **junto** a cada campo.
+   El correo electrónico del cliente, el número de teléfono, la dirección y las notas son campos no extraíbles, pero puede convertirlos en opcionales si anula la selección de **Requerido** junto a cada campo.
 
-8. En la **página Avisos y** confirmaciones, puede configurar avisos y notificaciones que envíe. Los avisos y notificaciones se envían a clientes, miembros del personal o ambos, en un momento especificado antes de la cita. Se pueden crear varios mensajes para cada cita, según su preferencia.
+8. En la página **Avisos y confirmaciones** , puede configurar avisos y notificaciones que envíe. Los avisos y las notificaciones se envían a los clientes, miembros del personal o ambos, en un momento especificado antes de la cita. Se pueden crear varios mensajes para cada cita, según sus preferencias.
 
    :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Un correo electrónico de confirmación de Bookings.":::
 
-   Puede incluir cualquier texto adicional que quiera aquí, como información sobre la reprogramación o lo que los clientes deben traer para la cita. A continuación se muestra un ejemplo de texto personalizado agregado al correo electrónico de confirmación original, que se muestra en el **campo Información adicional para** confirmación de correo electrónico:
+   Puede incluir cualquier texto adicional que desee aquí, como información sobre la reprogramación o lo que los clientes deben traer para la cita. A continuación se muestra un ejemplo de texto personalizado agregado al correo electrónico de confirmación original, que se muestra en el campo **Información adicional para confirmación por correo electrónico** :
 
    :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Información adicional en un correo electrónico de Bookings.":::
 
-9. **Habilitar notificaciones de mensajes de texto para el cliente** Si se selecciona, los mensajes SMS se envían al cliente, pero solo si optan por participar.
+9. **Habilitación de notificaciones de mensajes de texto para el cliente** Si se selecciona, los mensajes SMS se envían al cliente, pero solo si optan por participar.
 
-   - Cuadro de suscripción en la página manual de reserva y Self-Service:
+   - Apartado de participación en la reserva manual y Self-Service Página:
 
-     :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="El cuadro de suscripción en Bookings.":::
+     :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Cuadro de participación en Bookings.":::
 
-   - Las notificaciones de mensajes de texto tendrán un aspecto parecido al siguiente (tenga en cuenta que las notificaciones SMS solo están disponibles actualmente en Norteamérica):
+   - Las notificaciones de mensajes de texto tendrán un aspecto similar al siguiente (tenga en cuenta que las notificaciones POR SMS solo están disponibles actualmente en Norteamérica):
 
      :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Una notificación de texto de Bookings.":::
 
-10. De **forma predeterminada, las** opciones de programación predeterminadas están en. Desactiva la alternancia si quieres personalizar la forma en que los clientes reservan a un miembro del personal en particular.
+10. Las **opciones de programación predeterminadas** están activadas de forma predeterminada. Desactive el botón de alternancia si desea personalizar cómo los clientes reservan a un miembro del personal determinado.
 
-11. **Opciones de publicación** Elige si este servicio aparece como reservable en la página Self-Service o para que el servicio se pueda reservar solo en la pestaña Calendario de la aplicación web de Bookings.
+11. **Opciones de publicación** Elija si desea que este servicio aparezca como reservable en la página de Self-Service o haga que el servicio solo se pueda reservar en la pestaña Calendario de la aplicación web de Bookings.

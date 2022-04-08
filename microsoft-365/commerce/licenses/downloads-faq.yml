@@ -1,124 +1,114 @@
 ### YamlMime:FAQ
 metadata:
-  title: Descargas preguntas más frecuentes
+  title: Preguntas más frecuentes sobre descargas
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
-  ms.reviewer: 'racheg, armanv'
+  ms.reviewer: racheg, armanv
   ms.date: 07/22/2021
   audience: Admin
   ms.topic: faq
   ms.service: o365-administration
   ms.custom: commerce_vl
   ms.localizationpriority: medium
-  description: Preguntas más frecuentes acerca de Centro de administración de Microsoft 365 descargas.
+  description: Preguntas más frecuentes sobre Centro de administración de Microsoft 365 descargas.
+  ms.openlocfilehash: 2abf0ad923f19d9891588bedee23c23150c933e3
+  ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 04/08/2022
+  ms.locfileid: "64715239"
 title: Descargas preguntas más frecuentes
 summary: ''
 sections:
-  - name: General
-    questions:
-      - question: |
-          ¿Cuáles son los requisitos para descargar software desde el Centro de administración de Microsoft 365?
-        answer: |
-          Debe comprar una licencia para los productos que tiene previsto descargar y tener acceso a una clave de producto válida para que cada licencia complete la instalación. Compruebe el contrato de licencia antes de descargar productos.
+- name: General
+  questions:
+  - question: >
+      ¿Cuáles son los requisitos para descargar software de la Centro de administración de Microsoft 365?
+    answer: "Debe comprar una licencia para los productos que tiene previsto descargar y tener acceso a una clave de producto válida para cada licencia para completar la instalación. Compruebe el contrato de licencia antes de descargar los productos.\n\nPara encontrar los requisitos del sistema para cada producto, inicie sesión en el centro de administración y vaya a la página Sus **productosDescargar**  >  > **Descripción del producto**. \n\n> [!NOTE]\n> No todos los productos requieren una clave de producto.\n"
+  - question: >
+      ¿Qué productos puedo descargar desde el centro de administración?
+    answer: >
+      Si los derechos de descarga están asociados con el programa Open License, Open Value o Open Value Subscription, solo puede descargar los productos que ya haya comprado. El centro de administración muestra las descargas solo para las licencias que ha comprado.
 
-          Para encontrar los requisitos del sistema para cada producto, inicie sesión en el Centro de administración y vaya a La página Sus **productosDownloads**  >  > **Descripción del producto**. 
 
-          > [!NOTE]
-          > No todos los productos requieren una clave de producto.
-      - question: |
-          ¿Qué productos puedo descargar del Centro de administración?
-        answer: |
-          Si sus derechos de descarga están asociados con el programa Open License, Open Value o Open Value Subscription, solo puede descargar los productos que ya ha comprado. El Centro de administración muestra las descargas solo para las licencias que ha comprado.
+      Otros programas de licencia (Select Plus, Enterprise, Campus o School) le permiten descargar cualquier producto del catálogo antes de comprar licencias.
 
-          Otros programas de licencias (Select Plus, Enterprise, Campus o School) te permiten descargar cualquier producto del catálogo antes de comprar licencias.
 
-          Si el perfil está vinculado tanto a Open como a otros programas de licencias, puede ver todo el catálogo.
+      Si su perfil está vinculado a Open y a otros programas de licencia, puede ver todo el catálogo.
 
-          Para determinar si un producto es apto para la descarga:
 
-            1. Seleccione **Licencias por volumen** y, a continuación, seleccione el producto o **Ver descargas**.
-            2. En **Descargar**, si el producto no está disponible, verá "Este producto no está disponible para su descarga".
-      - question: |
-          ¿Qué es una licencia de acceso de cliente (CAL)?
-        answer: |
-          Una licencia de acceso de cliente (CAL) es una licencia que da a un usuario el derecho de acceder a los servicios del servidor.
+      Para determinar si un producto es apto para su descarga:
 
-          No necesita un archivo de descarga de software ni una clave de producto para activar una CAL. En su lugar, el producto se activa e instala a través del asistente de activación directamente desde el equipo.
+        1. Seleccione **Licencias por volumen** y, a continuación, seleccione el producto o **Ver descargas**.
+        2. En **Descargar**, si el producto no está disponible, verá "Este producto no está disponible para su descarga".
+  - question: >
+      ¿Qué es una licencia de acceso de cliente (CAL)?
+    answer: >
+      Una licencia de acceso de cliente (CAL) es una licencia que concede a un usuario el derecho de acceder a los servicios del servidor.
 
-          Algunos ejemplos de ACL son:
-            - Windows Server
-            - SQL Server
-            - Exchange Server
-            - Skype Empresarial Server
-            - SharePoint Server
-            - System Center
-            - Project Server
-      - question: |
-          ¿Cómo puedo descargar Office para Mac? 
-        answer: |
-          Para ejecutar una versión de licencias por volumen de Office para Mac, debe descargar e instalar los siguientes archivos:
-            - El [paquete serializador de licencia por volumen (VL)](/deployoffice/mac/volume-license-serializer) ubicado en el Office para Mac de descarga.
-            - El [Office para Mac de instalación.](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac) Los archivos de paquete del instalador para aplicaciones individuales también están disponibles en el Centro de administración de Microsoft 365. Office para Mac no requiere una clave de producto porque el serializador VL se usa para activar una versión con licencia por volumen de Office para Mac.
-      - question: |
-          ¿Cómo puedo descargar productos en el Centro de administración?
-        answer: |
-          Para descargar productos en el Centro de administración:
-          1. Seleccione **Licencias por volumen** y, a continuación, seleccione el producto o **Ver descargas**.
-          2. En **Descargar**, seleccione un componente y seleccione una acción de descarga o el icono de descarga. 
 
-          Para acceder a las descargas en el Centro de administración, un administrador de VLSC de la organización puede proporcionar acceso asignándose a uno de estos roles:
-            - Administrador
-            - Descargar
-            - Administrador de Software Assurance
-      - question: |
-          ¿Cómo cambio la configuración de descarga?
-        answer: |
-          Para acceder a la configuración de descarga en el Centro de administración:
-          1. Seleccione **Licencias por volumen** y, a continuación, seleccione el producto o **Ver descargas**.
-          2. En **Descargar**, seleccione **el idioma** y **el tipo de sistema operativo**.
+      No necesita un archivo de descarga de software o una clave de producto para activar una CAL. En su lugar, el producto se activa e instala mediante el asistente de activación directamente desde el equipo.
 
-          > [!NOTE]
-          > Los bloqueadores de elementos emergentes pueden bloquear las descargas. Asegúrese de que los bloqueadores de elementos emergentes están deshabilitados al descargar software desde el Centro de administración.
-      - question: |
-          ¿Qué son los archivos EXE e ISO?
-        answer: |
-          Puede seleccionar dos tipos de archivo al descargar productos del Centro de administración:
-            
-            - **Los archivos ejecutables (EXE)** se pueden descargar e instalar en el mismo sistema, pero no se pueden crear discos de arranque independientes para la instalación en otros equipos.
-            - **Los archivos de imagen ISO (Organización** internacional de estándares) son representaciones exactas del contenido y el formato lógico. Puede instalarlos en el equipo que se usa para descargar el paquete o escribir los archivos en discos para su distribución e instalación en otros equipos.
 
-          > [!NOTE]
-          > No todos los productos están disponibles en todos los idiomas y en todos los formatos.
-      - question: |
-          ¿Cómo se usa el software de archivo de imagen ISO para descargar y guardar el archivo de imagen ISO en un CD-R o un disco DVD-R?
-        answer: |
-          Si usa un equipo con el sistema operativo Windows, no necesita software adicional para grabar un CD-R o DVD-R. Haga doble clic en el archivo ISO que descargó y, a continuación, siga los pasos del Asistente para el grabador de imágenes.
+      Entre los ejemplos de CAL se incluyen:
+        - Windows Server
+        - SQL Server
+        - Exchange Server
+        - Skype Empresarial Server
+        - SharePoint Server
+        - System Center
+        - Project Server
+  - question: "Cómo descargar Office para Mac? \n"
+    answer: >
+      Para ejecutar una versión de licencias por volumen de Office para Mac, debe descargar e instalar los siguientes archivos:
+        - El paquete [serializador de licencia por volumen (VL)](/deployoffice/mac/volume-license-serializer) ubicado en el archivo de descarga Office para Mac.
+        - El [paquete de instalación Office para Mac](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac). Los archivos de paquete del instalador para aplicaciones individuales también están disponibles en la Centro de administración de Microsoft 365. Office para Mac no requiere una clave de producto porque el serializador VL se usa para activar una versión con licencia de volumen de Office para Mac.
+  - question: >
+      Cómo descargar productos en el centro de administración?
+    answer: "Para descargar productos en el centro de administración:\n1. Seleccione **Licencias por volumen** y, a continuación, seleccione el producto o **Ver descargas**.\n2. En **Descargar**, seleccione un componente y seleccione una acción de descarga o el icono de descarga. \n\nPara acceder a las descargas en el centro de administración, un administrador de VLSC de su organización puede proporcionar acceso mediante la asignación de uno de estos roles:\n  - Administrador\n  - Descargar\n  - Administrador de Software Assurance\n"
+  - question: >
+      Cómo cambiar la configuración de descarga?
+    answer: >
+      Para acceder a la configuración de descarga en el centro de administración:
 
-          Si usa cualquier sistema operativo que no Windows, es posible que necesite software adicional. Si el equipo está equipado con un grabador de CD/DVD, es probable que el software se cargue en el equipo. La mayoría del software de escritura de CD-R/DVD-R permite crear un disco a partir de un archivo de imagen. Seleccione un elemento de menú como **Copiar imagen en CD** o **Grabar imagen para** tener acceso a esta característica.
-      - question: |
-          ¿Cómo puedo montar y obtener acceso a archivos ISO como dispositivo virtual?
-        answer: |
-          Si no tiene un grabador de CD/DVD instalado en el equipo o el medio no está disponible, puede montar el archivo ISO como una unidad virtual. Con este método, el equipo cree que el archivo es una unidad de disco real y puede leer archivos de este disco virtual.
+      1. Seleccione **Licencias por volumen** y, a continuación, seleccione el producto o **Ver descargas**.
 
-          > [!NOTE]
-          > Este enfoque es aconsejable solo para instalar aplicaciones como Office actualizaciones secundarias del sistema. No puede instalar un sistema operativo con este enfoque porque la unidad virtual desaparece durante la instalación.
-      - question: |
-          ¿Cómo puedo obtener soporte técnico para productos descargados?
-        answer: |
-          Para obtener una lista de opciones de soporte técnico, consulte [Soporte técnico de Microsoft](https://support.microsoft.com/). Algunos clientes de licencias por volumen pueden usar el soporte de resolución de problemas, una ventaja de Software Assurance. Revise los beneficios de Software Assurance para comprobar su elegibilidad.
-      - question: |
-          ¿Dónde puedo encontrar soporte técnico para los temas que se tratan en estas preguntas más frecuentes?
-        answer: |
-          Para obtener más recursos de aprendizaje, incluidos vídeos, vea [Microsoft Volume Licensing Service Center training and resources](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources).
-      - question: |
-          ¿Cómo puedo ponerse en contacto con el Soporte técnico de Microsoft?
-        answer: |
-          Para obtener soporte técnico para teléfonos de cliente VLSC o formularios web, consulte [Póngase en contacto con nosotros](/licensing/contact-us). Microsoft responde a los envíos de formularios web en un plazo de 24 horas.
-additionalContent: |
+      2. En **Descargar**, **seleccione idioma y** **tipo de sistema operativo**.
 
-  ## <a name="additional-resources"></a>Recursos adicionales
 
-  - [Preguntas más frecuentes sobre claves de producto](product-keys-faq.yml)
+      > [!NOTE]
 
-  - [Preguntas más frecuentes sobre la activación de servicios en línea para programas abiertos](online-service-activation-faq.yml)
+      > Los bloqueadores de elementos emergentes pueden bloquear las descargas. Asegúrese de que los bloqueadores emergentes estén deshabilitados al descargar software del centro de administración.
+  - question: >
+      ¿Qué son los archivos EXE e ISO?
+    answer: "Puede seleccionar dos tipos de archivo al descargar productos desde el centro de administración:\n  \n  - **Los archivos ejecutables (EXE)** se pueden descargar e instalar en el mismo sistema, pero no se pueden crear discos de arranque independientes para su instalación en otros equipos.\n  - Los **archivos de imagen ISO (International Standards Organization)** son representaciones exactas del contenido y el formato lógico. Puede instalarlos en el equipo que se usa para descargar el paquete o escribir los archivos en discos para su distribución e instalación en otros equipos.\n\n> [!NOTE]\n> No todos los productos están disponibles en todos los idiomas y en todos los formatos.\n"
+  - question: >
+      Cómo usar el software de archivos de imagen ISO para descargar y guardar el archivo de imagen ISO en un disco CD-R o DVD-R?
+    answer: >
+      Si usa un equipo con el sistema operativo Windows, no necesita software adicional para grabar un CD-R o DVD-R. Haga doble clic en el archivo ISO que descargó y, a continuación, siga los pasos del Asistente para quemador de imágenes.
+
+
+      Si usa cualquier sistema operativo que no sea Windows, es posible que necesite software adicional. Si su ordenador está equipado con un quemador de CD/DVD, el software probablemente se carga en su PC. La mayoría del software de escritura de CD-R/DVD-R le permite crear un disco a partir de un archivo de imagen. Seleccione un elemento de menú como **Copiar imagen en CD** o **Grabar imagen para acceder** a esta característica.
+  - question: >
+      Cómo montar y acceder a archivos ISO como dispositivo virtual?
+    answer: >
+      Si no tiene instalado un quemador de CD/DVD en el equipo o el medio no está disponible, puede montar el archivo ISO como una unidad virtual. Con este método, el equipo cree que el archivo es una unidad de disco real y puede leer archivos de este disco virtual.
+
+
+      > [!NOTE]
+
+      > Este enfoque solo es aconsejable para instalar aplicaciones como Office o actualizaciones secundarias del sistema. No se puede instalar un sistema operativo mediante este enfoque porque la unidad virtual desaparece durante la instalación.
+  - question: >
+      Cómo obtener soporte técnico para los productos descargados?
+    answer: >
+      Para obtener una lista de las opciones de soporte técnico, consulte [Soporte técnico de Microsoft](https://support.microsoft.com/). Algunos clientes de licencias por volumen pueden usar soporte técnico para la resolución de problemas, una ventaja de Software Assurance. Revise las ventajas de Software Assurance para comprobar su elegibilidad.
+  - question: >
+      ¿Dónde puedo encontrar soporte técnico para los temas tratados en estas preguntas más frecuentes?
+    answer: >
+      Para obtener más recursos de entrenamiento, incluidos vídeos, consulte [Entrenamiento y recursos del Centro de servicios de licencias por volumen de Microsoft](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources).
+  - question: >
+      ¿Cómo puedo ponerme en contacto con Soporte técnico de Microsoft?
+    answer: >
+      Para obtener soporte técnico de formulario web o teléfono de cliente de VLSC, consulte [Contacto con nosotros](/licensing/contact-us). Microsoft responde a los envíos de formularios web en un plazo de 24 horas.
+additionalContent: "\n## <a name=\"additional-resources\"></a>Recursos adicionales\n\n- [Preguntas más frecuentes sobre claves de producto](product-keys-faq.yml)\n\n- [Preguntas más frecuentes sobre la activación de servicios en línea para programas abiertos](online-service-activation-faq.yml)"

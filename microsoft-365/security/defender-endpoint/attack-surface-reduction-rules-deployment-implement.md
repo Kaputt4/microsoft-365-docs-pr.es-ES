@@ -1,5 +1,5 @@
 ---
-title: Implementación de reglas de reducción de superficie expuesta a ataques (ASR)
+title: Habilitar reglas de reducción de superficie expuesta a ataques (ASR)
 description: Proporciona instrucciones para implementar la implementación de reglas de reducción de superficie expuesta a ataques.
 keywords: Implementación de reglas de reducción de superficie expuesta a ataques, implementación de ASR, habilitación de reglas de asr, configuración de ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades de seguridad, protección contra vulnerabilidades de seguridad, reglas de vulnerabilidad de seguridad, reglas de prevención de infecciones, Microsoft Defender para punto de conexión, configurar reglas asr
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 675d881c3737b67cfdc0207be85285f71455d65c
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 19e654c979428e25d1365cbab5b6f75b39adbdb3
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666974"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705524"
 ---
-# <a name="step-3-implement-asr-rules"></a>Paso 3: Implementar reglas de ASR
+# <a name="enable-attack-surface-reduction-asr-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques (ASR)
 
 La implementación de reglas de reducción de superficie expuesta a ataques (ASR) mueve el primer anillo de prueba a un estado funcional habilitado.
 
@@ -99,7 +99,7 @@ Consulte el tema [de referencia de las reglas de reducción de superficie expues
 
 2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y haga clic en **Plantillas administrativas**.
 
-3. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> **Protección contra vulnerabilidades de seguridad de Microsoft Defender** \> **reducción de la superficie expuesta a ataques**.
+3. Expanda el árbol a **componentes** \> de **Windows Antivirus** \> de Microsoft Defender **Reducción de la superficie de ataque** de **Protección contra vulnerabilidades** \> de seguridad de Microsoft Defender.
 
 4. Haga doble clic en la opción **Excluir archivos y rutas de acceso de Reglas de reducción de superficie expuesta a ataques** y establezca la opción **en Habilitado**. Seleccione **Mostrar** y escriba cada archivo o carpeta en la columna **Nombre de valor** . Escriba **0** en la columna **Valor** de cada elemento.
 
@@ -131,10 +131,12 @@ Puede personalizar la notificación para cuando se desencadene una regla y bloqu
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Temas adicionales de esta colección de implementación
 
-[Requisitos previos de implementación de reglas de ASR](attack-surface-reduction-rules-deployment.md)
+[Introducción a la implementación de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md)
 
-[Paso 1: Planear la implementación de reglas de ASR](attack-surface-reduction-rules-deployment-plan.md)
+[Planeación de la implementación de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-plan.md)
 
-[Paso 2: Probar reglas de ASR](attack-surface-reduction-rules-deployment-test.md)
+[Reglas de reducción de superficie expuesta a ataques de prueba (ASR)](attack-surface-reduction-rules-deployment-test.md)
 
-[Paso 4: Operacionalización de reglas de ASR](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operacionalización de las reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+
+[Referencia de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-reference.md)

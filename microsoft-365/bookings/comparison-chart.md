@@ -1,5 +1,5 @@
 ---
-title: 'Gráfico de comparación: aplicación web de Bookings frente a bookings Teams aplicación'
+title: 'Gráfico de comparación: Bookings aplicación web frente a Bookings Teams aplicación'
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,33 +8,36 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
-description: Gráfico de comparación que muestra las diferencias de características entre la aplicación web de Bookings y la aplicación de Teams Bookings.
-ms.openlocfilehash: cd253c41eafe3a478e6a2f12bf94977f81688347
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Gráfico de comparación que muestra las diferencias de características entre la aplicación web Bookings y la aplicación Bookings Teams.
+ms.openlocfilehash: a7f853157378916ade7035898b149a92c8818636
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319747"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64715173"
 ---
-# <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>Gráfico de comparación: aplicación web de Bookings frente a bookings Teams aplicación
+# <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>Gráfico de comparación: Bookings aplicación web frente a Bookings Teams aplicación
 
-La aplicación Bookings en Teams permite a los programadores controlar sus tareas principales y cambiar algunas configuraciones. Sin embargo, la web de Bookings incluye características avanzadas y opciones de configuración que aún no están disponibles en la Teams aplicación.
+> [!NOTE]
+> Este artículo le ayuda a interactuar con la versión más reciente de Microsoft Bookings. Las versiones anteriores se retirarán en los próximos meses.
 
-Teams las características de la aplicación se agregan todo el tiempo y continuaremos actualizando esta lista. Consulta la sección ¿Está disponible toda la funcionalidad de la aplicación **web de Bookings original en Microsoft Teams?** en las preguntas más [frecuentes para obtener](bookings-faq.yml) más información.
+La aplicación Bookings en Teams permite a los programadores controlar sus tareas principales y cambiar algunas opciones de configuración. Sin embargo, la web de Bookings incluye características avanzadas y configuraciones que aún no están disponibles en la aplicación Teams.
 
-| Característica | Aplicación web de Bookings | Bookings Teams app |
+Teams características de la aplicación se agregan todo el tiempo y seguiremos actualizando esta lista. Consulta la sección **¿Está disponible toda la funcionalidad de la aplicación web de Bookings original en Microsoft Teams?** en las [preguntas más frecuentes](bookings-faq.yml) para obtener más información.
+
+| Característica | Bookings aplicación web | Bookings Teams aplicación |
 |:---|:---|:---|
-| Crear nuevos calendarios de reserva | Sí | Sí |
+| Creación de calendarios de reserva | Sí | Sí |
 | Agregar y quitar personal de un calendario de reserva | Sí | Sí |
-| Crear nuevos tipos de citas | Sí | Sí |
+| Creación de nuevos tipos de citas | Sí | Sí |
 | Programar reservas en línea | Sí | Sí |
-| Editar detalles empresariales | Sí | Sí |
-| Agregar personal con permisos de invitado para personas fuera de la organización | Sí | No |
+| Edición de los detalles empresariales | Sí | Sí |
+| Adición de personal con permisos de invitado para personas ajenas a su organización | Sí | No |
 | Programar reservas en persona o sin conexión | Sí | No |
-| Programar reservas de grupos o varios clientes | Sí | No |
-| Establecer un logotipo para su empresa | Sí | No |
-| Establecer horario comercial | Sí | No |
+| Programar reservas de grupos o de varios clientes | Sí | No |
+| Establecimiento de un logotipo para su empresa | Sí | No |
+| Establecimiento del horario comercial | Sí | No |
 | Publicar una página de programación de autoservicio | Sí | No |
-| Administrar contactos de clientes | Sí | No |
-| Establecer el tiempo de espera para el personal | Sí | No |
+| Administración de contactos de clientes | Sí | No |
+| Establecer tiempo de espera para el personal | Sí | No |
 | Vista de cola programada | No | Sí |

@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a5ffc97c6b2cfd1016da1f218ab2a16c153a5528
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a39a0a55592ba8f76403f9e8d9aaf7416cb35228
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666292"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714249"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>Descripción de la configuración de próxima generación en Microsoft Defender para Empresas
 
@@ -88,14 +88,14 @@ En la tabla siguiente se describen los valores preconfigurados para Defender par
 | [Examen de archivos de red](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) | De forma predeterminada, [AllowScanningNetworkFiles](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) no está habilitado y los archivos de red no se examinan. |
 | [Examen de mensajes de correo electrónico](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) | De forma predeterminada, [AllowEmailScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) no está habilitado y los mensajes de correo electrónico no se examinan. |
 | [Número de días (0-90) para mantener el malware en cuarentena](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) | De forma predeterminada, [DaysToRetainCleanedMalware](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) esta configuración se establece en cero (0) días. Artifacts que en cuarentena no se quitan automáticamente.  |
-| [Enviar el consentimiento de ejemplos](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | De forma predeterminada, [SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) es et para enviar muestras seguras automáticamente. Algunos ejemplos de ejemplos seguros son `.bat`, `.scr`, `.dll`y `.exe` archivos que no contienen información de identificación personal (PII). Si un archivo contiene PII, el usuario recibe una solicitud para permitir que continúe el envío de ejemplo.<br/><br/>[Más información sobre la protección en la nube y el envío de ejemplos](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
+| [Enviar el consentimiento de ejemplos](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | De forma predeterminada, [SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) está establecido para enviar muestras seguras automáticamente. Algunos ejemplos de ejemplos seguros son `.bat`, `.scr`, `.dll`y `.exe` archivos que no contienen información de identificación personal (PII). Si un archivo contiene PII, el usuario recibe una solicitud para permitir que continúe el envío de ejemplo.<br/><br/>[Más información sobre la protección en la nube y el envío de ejemplos](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
 | [Examen de unidades extraíbles](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) | De forma predeterminada, [AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) está configurado para examinar unidades extraíbles, como unidades usb en dispositivos.<br/><br/>[Más información sobre la configuración de directivas antimalware](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#list-of-antimalware-policy-settings)   |
 | [Ejecución del tiempo de examen rápido diario](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) | De forma predeterminada, [ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) se establece en 2:00 AM.<br/><br/>[Obtenga más información sobre la configuración del examen](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).   |
 | [Comprobación de actualizaciones de firmas antes de ejecutar el examen](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) | De forma predeterminada, [CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) está configurado para comprobar si hay actualizaciones de inteligencia de seguridad antes de ejecutar exámenes antivirus o antimalware.<br/><br/>[Obtenga más información sobre la configuración de examen](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) y [las actualizaciones de inteligencia de seguridad](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates).   |
 | [Frecuencia (0-24 horas) para comprobar si hay actualizaciones de inteligencia de seguridad](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval) | De forma predeterminada, [SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval) está configurado para comprobar si hay actualizaciones de inteligencia de seguridad cada cuatro horas.<br/><br/>[Obtenga más información sobre la configuración de examen](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) y [las actualizaciones de inteligencia de seguridad](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates). |
 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md)
 

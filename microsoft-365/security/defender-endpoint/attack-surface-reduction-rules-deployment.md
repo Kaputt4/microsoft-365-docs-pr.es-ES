@@ -1,5 +1,5 @@
 ---
-title: Requisitos previos de implementación de reglas de ASR
+title: Introducción a la implementación de reglas de reducción de superficie expuesta a ataques (ASR)
 description: Proporciona información general y instrucciones de requisitos previos sobre la implementación de reglas de reducción de superficie expuesta a ataques (ASR).
 keywords: Implementación de reglas de reducción de superficie expuesta a ataques, implementación de ASR, habilitación de reglas de asr, configuración de ASR, sistema de prevención de intrusiones de host, reglas de protección, reglas contra vulnerabilidades de seguridad, protección contra vulnerabilidades de seguridad, reglas de vulnerabilidad de seguridad, reglas de prevención de infecciones, Microsoft Defender para punto de conexión, configurar reglas asr
 search.product: eADQiWindows 10XVcnh
@@ -20,16 +20,14 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 0180bfcef9d478dcf8e334a180ea3df993585e00
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 8743d13939e73e25cefd08724d9a2f8d5a7fa410
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666424"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705546"
 ---
-# <a name="asr-rules-deployment-prerequisites"></a>Requisitos previos de implementación de reglas de ASR
-
-## <a name="before-you-begin"></a>Antes de empezar
+# <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>Introducción a la implementación de reglas de reducción de superficie expuesta a ataques (ASR)
 
 Las superficies expuestas a ataques son todos los lugares donde su organización es vulnerable a ciberamenazas y ataques. Las superficies expuestas a ataques de su organización incluyen todos los lugares donde un atacante podría poner en peligro los dispositivos o redes de su organización. Reducir la superficie expuesta a ataques significa proteger los dispositivos y la red de su organización, lo que deja a los atacantes con menos formas de atacar. La configuración de reglas de reducción de la superficie expuesta a ataques (ASR), una de las muchas características de seguridad que se encuentran en Microsoft Defender para punto de conexión, puede ayudar.
 
@@ -40,6 +38,8 @@ Las reglas de ASR tienen como destino determinados comportamientos de software, 
 - Comportamientos que las aplicaciones no suelen producirse durante el trabajo diario normal
 
 Al reducir las distintas superficies de ataque, puedes ayudar a evitar que se produzcan ataques en primer lugar.
+
+## <a name="before-you-begin"></a>Antes de empezar
 
 Durante la preparación inicial, es fundamental que comprenda las capacidades de los sistemas que va a poner en marcha. Comprender las funcionalidades le ayudará a determinar qué reglas de ASR son más importantes para proteger su organización. Además, hay varios requisitos previos a los que debe atender para preparar la implementación de ASR.
 
@@ -58,9 +58,9 @@ Como se describe en [Usar reglas de reducción de superficie expuesta a ataques 
 
 | Amenazas polimórficas | Movimiento lateral & robo de credenciales | Reglas de aplicaciones de productividad |  Reglas de correo electrónico | Reglas de script | Reglas incorrectas |
 |:---|:---|:---|:---|:---|:---|
-| Impedir que los archivos ejecutables se ejecuten a menos que cumplan una prevalencia (1000 máquinas), edad (24 horas) o criterios de lista de confianza | Bloquear las creaciones de procesos que se originen a partir de comandos PSExec y WMI | Impedir que las aplicaciones Office creen contenido ejecutable | Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web | Bloquear código JS/VBS/PS/macro ofuscado | Bloquear el abuso de controladores <sup>firmados vulnerables explotados [[1](#fn1)]<sup></sup>  |
-| Bloquear procesos que no son de confianza y no firmados que se ejecutan desde USB | Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Impedir que las aplicaciones Office creen procesos secundarios |  Bloquear solo Office aplicaciones de comunicación de la creación de procesos secundarios | Impedir que JS/VBS inicie el contenido ejecutable descargado | |
-| Uso de protección avanzada contra ransomware | Bloquear la persistencia a través de la suscripción de eventos WMI | Impedir que las aplicaciones de Office inserten código en otros procesos | Impedir que Office aplicaciones de comunicación creen procesos secundarios | | |
+| Impedir que los archivos ejecutables se ejecuten a menos que cumplan una prevalencia (1000 máquinas), edad (24 horas) o criterios de lista de confianza | Bloquear las creaciones de procesos que se originen a partir de comandos PSExec y WMI | Impedir que las aplicaciones de Office creen contenido ejecutable | Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web | Bloquear código JS/VBS/PS/macro ofuscado | Bloquear el abuso de controladores <sup>firmados vulnerables explotados [[1](#fn1)]<sup></sup>  |
+| Bloquear procesos que no son de confianza y no firmados que se ejecutan desde USB | Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Impedir que las aplicaciones de Office creen procesos secundarios |  Impedir que solo las aplicaciones de comunicación de Office creen procesos secundarios | Impedir que JS/VBS inicie el contenido ejecutable descargado | |
+| Uso de protección avanzada contra ransomware | Bloquear la persistencia a través de la suscripción de eventos WMI | Impedir que las aplicaciones de Office inserten código en otros procesos | Impedir que las aplicaciones de comunicación de Office creen procesos secundarios | | |
 | | | Impedir que Adobe Reader cree procesos secundarios | | | |
 
 (<a id="fn1">1</a>) _El abuso de bloqueo de controladores firmados vulnerables explotados_ no está disponible actualmente en la seguridad de los puntos de conexión de MEM. Puede configurar esta regla mediante [MEM OMA-URI](enable-attack-surface-reduction.md#mem).
@@ -74,9 +74,9 @@ Aunque son posibles varios métodos de implementación de reglas ASR, esta guía
 - Azure Active Directory
 - Microsoft Endpoint Management (MEM)
 - dispositivos Windows 10 y Windows 11
-- licencias Microsoft Defender para punto de conexión E5 o Windows E5
+- licencias de Microsoft Defender para punto de conexión E5 o Windows E5
 
-Para aprovechar al máximo las reglas y los informes de ASR, se recomienda usar una licencia Microsoft 365 Defender E5 o Windows E5 y A5. Más información: [Requisitos mínimos para Microsoft Defender para punto de conexión](minimum-requirements.md).
+Para aprovechar al máximo las reglas de ASR y los informes, se recomienda usar una licencia Microsoft 365 Defender E5 o Windows E5 y A5. Más información: [Requisitos mínimos para Microsoft Defender para punto de conexión](minimum-requirements.md).
 
 >[!Note]
 >Hay varios métodos para configurar reglas de ASR. Las reglas de ASR se pueden configurar mediante: Microsoft Endpoint Manager (MEM), PowerShell, directiva de grupo, Microsoft System Center Configuration Manager (SCCM), MEM OMA-URI.
@@ -84,34 +84,34 @@ Para aprovechar al máximo las reglas y los informes de ASR, se recomienda usar 
 
 ### <a name="asr-rules-dependencies"></a>Dependencias de reglas de ASR
 
-Antivirus de Microsoft Defender debe estar habilitada y configurada como solución antivirus principal y debe estar en el modo siguiente:
+Antivirus de Microsoft Defender debe estar habilitado y configurado como solución antivirus principal y debe estar en el modo siguiente:
 
 - Solución antivirus/antimalware principal  
 - Estado: modo activo
 
-Antivirus de Microsoft Defender no debe estar en ninguno de los modos siguientes:
+El Antivirus de Microsoft Defender no debe estar en ninguno de los modos siguientes:
 
 - Pasiva
-- Modo pasivo con detección y respuesta del punto de conexión (EDR) en modo de bloque
+- Modo pasivo con detección y respuesta de puntos de conexión (EDR) en modo de bloque
 - Examen periódico limitado (LPS)
 - Desactivado
 
-Consulte: [Protección y Antivirus de Microsoft Defender entregados en la nube](cloud-protection-microsoft-defender-antivirus.md).
+Consulte: [Protección entregada en la nube y Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
 
 ### <a name="cloud-protection-maps-must-be-enabled"></a>Cloud Protection (MAPS) debe estar habilitado
 
 Antivirus de Microsoft Defender funciona sin problemas con los servicios en la nube de Microsoft. Estos servicios de protección en la nube, también conocidos como Microsoft Advanced Protection Service (MAPS), mejoran la protección estándar en tiempo real, posiblemente proporcionando la mejor defensa antivirus. La protección en la nube es fundamental para evitar infracciones de malware y un componente crítico de las reglas de ASR.
-[Active la protección entregada en la nube en Antivirus de Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
+[Active la protección entregada en la nube en el Antivirus de Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
 
-### <a name="microsoft-defender-antivirus-components-must-be-current-versions"></a>Antivirus de Microsoft Defender componentes deben ser versiones actuales
+### <a name="microsoft-defender-antivirus-components-must-be-current-versions"></a>Los componentes del Antivirus de Microsoft Defender deben ser versiones actuales
 
-Las siguientes versiones de componentes Antivirus de Microsoft Defender no deben tener más de dos versiones anteriores a la versión más disponible actualmente:
+Las siguientes versiones del componente Antivirus de Microsoft Defender no deben tener más de dos versiones anteriores a la versión más disponible actualmente:
 
-- **versión de actualización de Antivirus de Microsoft Defender Platform**: Antivirus de Microsoft Defender plataforma se actualiza mensualmente.
-- **Antivirus de Microsoft Defender versión del motor**: Antivirus de Microsoft Defender motor se actualiza mensualmente.
-- **Antivirus de Microsoft Defender inteligencia de seguridad**: Microsoft actualiza continuamente la inteligencia de seguridad de Microsoft Defender (también conocida como definición y firma) para abordar las amenazas más recientes y para refinar la lógica de detección.
+- **Versión de actualización de la Plataforma antivirus de Microsoft Defender**  : la plataforma Antivirus de Microsoft Defender se actualiza mensualmente.
+- **Versión del motor antivirus de Microsoft Defender** : el motor antivirus de Microsoft Defender se actualiza mensualmente.
+- **Inteligencia de seguridad del Antivirus de Microsoft Defender** : Microsoft actualiza continuamente la inteligencia de seguridad de Microsoft Defender (también conocida como definición y firma) para abordar las amenazas más recientes y para refinar la lógica de detección.
 
-Mantener Antivirus de Microsoft Defender versiones actuales ayuda a reducir los resultados falsos positivos de las reglas de ASR y mejora las capacidades de detección de Antivirus de Microsoft Defender. Para obtener más información sobre las versiones actuales y cómo actualizar los distintos componentes de Antivirus de Microsoft Defender, visite [Antivirus de Microsoft Defender compatibilidad con la plataforma](manage-updates-baselines-microsoft-defender-antivirus.md).
+Mantener actualizadas las versiones del Antivirus de Microsoft Defender ayuda a reducir los resultados falsos positivos de las reglas de ASR y mejora las funcionalidades de detección del Antivirus de Microsoft Defender. Para obtener más información sobre las versiones actuales y cómo actualizar los distintos componentes del Antivirus de Microsoft Defender, visite [Compatibilidad con la plataforma Antivirus de Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ### <a name="caveat"></a>Advertencia
 
@@ -129,13 +129,13 @@ Al igual que con cualquier nueva implementación a gran escala que pueda afectar
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>Temas adicionales de esta colección de implementación
 
-[Fase 1: Planificar](attack-surface-reduction-rules-deployment-plan.md)
+[Reglas de reducción de superficie expuesta a ataques de prueba (ASR)](attack-surface-reduction-rules-deployment-test.md)
 
-[Fase 2: Probar](attack-surface-reduction-rules-deployment-test.md)
+[Habilitar reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-implement.md)
 
-[Fase 3: Implementar](attack-surface-reduction-rules-deployment-implement.md)
+[Operacionalización de las reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[Fase 4: Operar](attack-surface-reduction-rules-deployment-operationalize.md)
+[Referencia de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-reference.md)
 
 ## <a name="reference"></a>Referencia
 
@@ -155,7 +155,7 @@ Al igual que con cualquier nueva implementación a gran escala que pueda afectar
 
 [Usar reglas de reducción de la superficie expuesta a ataques para evitar la infección de malware](attack-surface-reduction.md)
 
-[Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)
+[Habilitación de reglas de reducción de superficie expuesta a ataques: configuraciones alternativas](enable-attack-surface-reduction.md)
 
 [Referencia de reglas de reducción de superficie expuesta a ataques](attack-surface-reduction-rules-reference.md)
 
@@ -167,11 +167,11 @@ Al igual que con cualquier nueva implementación a gran escala que pueda afectar
 
 [Protección proporcionada en la nube y Antivirus de Windows Defender](cloud-protection-microsoft-defender-antivirus.md)
 
-[Activar la protección entregada en la nube en Antivirus de Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md)
+[Activar la protección proporcionada en la nube en el Antivirus de Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 [Configuración y validación de exclusiones basadas en la extensión, el nombre o la ubicación](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
-[compatibilidad con la plataforma Antivirus de Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md)
+[Compatibilidad con la plataforma Antivirus de Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md)
 
 [Introducción al inventario en el centro de administración de Aplicaciones Microsoft 365](/deployoffice/admincenter/inventory)
 

@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: Obtenga información sobre cómo crear un nuevo dominio onmicrosoft.com y convertirlo en el nuevo dominio de reserva.
-ms.openlocfilehash: b6fd1f34b1a01eebe7c6717aa9c27fc91c387cd1
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: 82eca45807405980043b00e8cfe5a221c52fa065
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64690581"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704844"
 ---
 # <a name="add-and-replace-your-onmicrosoftcom-fallback-domain-in-microsoft-365"></a>Agregue y reemplace el dominio de reserva de onmicrosoft.com en Microsoft 365
 
@@ -56,7 +56,7 @@ Aunque puede agregar dominios de onmicrosoft.com adicionales, solo se puede usar
 - Asignarlo como dominio de reserva
 
 > [!NOTE]
-> Está limitado a un total de cinco dominios onmicrosoft.com en el entorno de Microsoft 365. Una vez que se agregan, actualmente no se pueden quitar. 
+> Está limitado a un total de cinco dominios onmicrosoft.com en el entorno de Microsoft 365. Una vez agregados, no se pueden quitar. 
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -65,7 +65,7 @@ Para agregar, modificar o quitar dominios, **debe** ser un administrador **de no
 
 ## <a name="add-a-new-onmicrosoftcom-domain"></a>Adición de un nuevo dominio de onmicrosoft.com
 
-1. En el Centro de administración de Microsoft 365, seleccione **Configuración** y, a continuación, seleccione **Dominios**.
+1. En el Centro de administración de Microsoft 365, seleccione **Configuración** y, después, **dominios**.
 2. Seleccione el onmicrosoft.com dominio predeterminado.
 
     ![Página Dominios.](../../media/onmicrosoft-domains.png)
@@ -93,9 +93,9 @@ Para agregar, modificar o quitar dominios, **debe** ser un administrador **de no
 > [!NOTE]
 > Antes de cambiar el dominio de reserva a un nuevo dominio de onmicrosoft.com, es posible que desee considerar la posibilidad de cambiar el dominio de onmicrosoft.com SharePoint. Al crear un dominio onmicrosoft adicional y usarlo como dominio de reserva, no se cambiará el nombre de SharePoint Online. Las direcciones URL de SharePoint y OneDrive existentes seguirán siendo las mismas.  Puede cambiar el dominio de SharePoint de .onmicrosoft mediante los pasos de PowerShell proporcionados en [SharePoint versión preliminar de cambio de nombre de dominio](/sharepoint/change-your-sharepoint-domain-name) (actualmente disponible para cualquier inquilino con menos de 1000 sitios).
 
-Después de crear el nuevo dominio de onmicrsoft.com, haga lo siguiente para cambiarlo al dominio de reserva.
+Después de crear el nuevo dominio de onmicrosoft.com, haga lo siguiente para cambiarlo al dominio de reserva.
 
-1. En el Centro de administración de Microsoft 365, seleccione **Configuración** y, a continuación, seleccione **Dominios**. 
+1. En el Centro de administración de Microsoft 365, seleccione **Configuración** y, después, **dominios**. 
 
 2. Seleccione el nuevo dominio de onmicrosoft.com que ha creado.
 

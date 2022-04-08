@@ -9,34 +9,39 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Obtenga información sobre cómo obtener acceso a la característica Bookings en Microsoft 365.
-ms.openlocfilehash: f77a2b63b9c8ce88b1f9f7236f748713656d688e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e399540711cdf0f5e9556ac1ac8aeed32d00db52
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173948"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714271"
 ---
 # <a name="get-access-to-microsoft-bookings"></a>Obtener acceso a Microsoft Bookings
 
-En este tema se describe cómo obtener acceso a Bookings por primera vez. También le indica cómo activar o desactivar Bookings en su organización. También explica cómo puede asignar licencias a los usuarios para que puedan acceder y usar Bookings.
+> [!NOTE]
+> Este artículo le ayuda a interactuar con la versión más reciente de Microsoft Bookings. Las versiones anteriores se retirarán en los próximos meses.
 
-## <a name="access-bookings-for-the-first-time"></a>Obtener acceso a Bookings por primera vez
+En este tema se describe cómo obtener acceso a Bookings por primera vez. También le indica cómo activar o desactivar Bookings en su organización. También se explica cómo puede asignar licencias a los usuarios para que puedan acceder y usar Bookings.
 
-Si el administrador de TI te ha concedido acceso a Bookings, puedes acceder a la aplicación a través Office línea.
+## <a name="access-bookings-for-the-first-time"></a>Acceso Bookings por primera vez
 
-La primera vez que use [Bookings,](https://outlook.office.com/bookings/onboarding) creará un calendario y configurará su empresa.
+Si el administrador de TI le ha concedido acceso a Bookings, puede acceder a la aplicación a través de Office en línea.
 
-1. Seleccione **Obtener ahora y** elija Agregar un calendario de **reserva.** Si no es la primera vez que se encuentra en esta página, puede seleccionar otro calendario de reserva o buscar otro calendario de reserva.
+La primera vez que use [Bookings](https://outlook.office.com/bookings/onboarding) creará un calendario y configurará su empresa.
 
-2. Escriba el nombre de la empresa y el tipo de negocio y seleccione **Continuar**.
+1. Seleccione **Comenzar**, escriba el nombre de su empresa y el tipo de negocio y, a continuación, seleccione **Crear calendario**.
 
-Ya está listo para configurar Bookings para su organización. Puedes acceder a la página Bookings con este [vínculo](https://outlook.office.com/bookings/onboarding), desde el iniciador de aplicaciones o desde office.com. Use los siguientes temas para seguir configurando las características de Bookings.
+1. Si esta no es la primera vez en esta página, puede seleccionar otro calendario de reserva o buscar otro calendario de reserva.
+
+2. Escriba el nombre de su empresa y el tipo de negocio y seleccione **Continuar**.
+
+Ya está listo para configurar Bookings para su organización. Puede acceder a la página Bookings con este [vínculo](https://outlook.office.com/bookings/onboarding), desde el iniciador de aplicaciones o desde office.com. Use los temas siguientes para seguir configurando las características de Bookings.
 
 - [Escribir la información de su empresa](enter-business-information.md)
 - [Agregar personal a Bookings](add-staff.md)
 - [Definir las ofertas de servicio](define-service-offerings.md)
-- [Programar cierres de negocios, tiempo libre y tiempo de vacaciones](schedule-closures-time-off-vacation.md)
+- [Programar cierres comerciales, permisos y vacaciones](schedule-closures-time-off-vacation.md)
 - [Establecer las directivas de reservas](set-scheduling-policies.md)
-- [Establecer el horario laboral de los empleados](employee-hours.md)
+- [Establecimiento del horario laboral de los empleados](employee-hours.md)
 - [Personalizar y publicar la página de reserva](customize-booking-page.md)
 - [Crear un manual de reserva](create-a-manual-booking.md)

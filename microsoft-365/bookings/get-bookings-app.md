@@ -1,5 +1,5 @@
 ---
-title: Obtener la aplicación de Microsoft Bookings para iOS y Android
+title: Obtener la aplicación Microsoft Bookings para iOS y Android
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,27 +8,30 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 01b79cb0-e206-4a3a-aaef-b10941770f87
-description: Las aplicaciones móviles de Bookings aún no están disponibles en todo el mundo. En este artículo se enumeran las configuraciones regionales donde las aplicaciones están disponibles ahora.
-ms.openlocfilehash: 3eb13338f933a650d723b749f2e3a1786f82e506
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Las aplicaciones móviles Bookings aún no están disponibles en todo el mundo. En este artículo se enumeran las configuraciones regionales en las que las aplicaciones están disponibles ahora.
+ms.openlocfilehash: ab74c74906a226461354ec3b14f82371dc405d38
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60172844"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714733"
 ---
-# <a name="get-the-microsoft-bookings-app-for-ios-and-android"></a>Obtener la aplicación de Microsoft Bookings para iOS y Android
+# <a name="get-the-microsoft-bookings-app-for-ios-and-android"></a>Obtener la aplicación Microsoft Bookings para iOS y Android
 
-Microsoft Bookings está disponible como una aplicación móvil para iOS y Android. La aplicación Bookings para iOS está disponible en todas las regiones y países compatibles con Apple. Puedes descargar la aplicación desde [iTunes App Store](https://apps.apple.com/app/microsoft-bookings/id1065657468). La aplicación Bookings para Android está disponible para su descarga desde [la Tienda Google Play](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings) en Estados Unidos y Canadá.
+> [!NOTE]
+> Este artículo le ayuda a interactuar con la versión más reciente de Microsoft Bookings. Las versiones anteriores se retirarán en los próximos meses.
+
+Microsoft Bookings está disponible como una aplicación móvil para iOS y Android. La aplicación Bookings para iOS está disponible en todas las regiones y países compatibles con Apple. Puedes descargar la aplicación desde la [App Store de iTunes](https://apps.apple.com/app/microsoft-bookings/id1065657468). La aplicación Bookings para Android está disponible para su descarga desde [Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings) en EE. UU. y Canadá.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Antes de empezar, debes configurar Bookings en la web.
+Antes de empezar, debe configurar Bookings en la web.
 
-1. En el iniciador de aplicaciones, selecciona Todas las aplicaciones para ver una lista alfabética de las Microsoft 365 aplicaciones disponibles para ti. Desde allí, puedes buscar una aplicación específica
+1. En el iniciador de aplicaciones, seleccione Todas las aplicaciones para ver una lista alfabética de las aplicaciones Microsoft 365 disponibles. Desde allí, puede buscar una aplicación específica.
 
    ![Imagen del iniciador de aplicaciones.](../media/bookings-all-apps-launcher.png)
 
-2. Llegó [a la Office principal y,](https://office.com) desde el iniciador de aplicaciones, seleccione **Bookings**.
+2. Llegó a [la página principal de Office](https://office.com) y, desde el iniciador de aplicaciones, seleccione **Bookings**.
 
 3. Seleccione **Obtener ahora**.
 
@@ -36,10 +39,10 @@ Antes de empezar, debes configurar Bookings en la web.
 
 5. Ya está listo para configurar Bookings para su organización. Siga los pasos del tema [Microsoft Bookings](bookings-overview.md) para finalizar la configuración de Bookings.
 
-## <a name="download-the-bookings-app"></a>Descargar la aplicación Bookings
+## <a name="download-the-bookings-app"></a>Descarga de la aplicación Bookings
 
-Una vez que hayas configurado la aplicación web de Bookings, ve a la tienda en línea del dispositivo y descarga la aplicación Bookings e inicia sesión con tu cuenta de administrador.
+Una vez que haya configurado la aplicación web de Bookings, vaya a la tienda en línea del dispositivo y descargue la aplicación Bookings e inicie sesión con su cuenta de administrador.
 
 ## <a name="view-only-mode"></a>Modo de solo vista
 
-Cualquier usuario al que no se le conceda acceso de lectura y escritura en Bookings todavía puede usar la aplicación móvil en modo de solo vista. Cualquier persona con una licencia de Bookings que se agrega a un calendario de reserva puede ver sus propias programaciones y las de sus compañeros, detalles de citas e información empresarial. Un usuario con acceso de solo vista no puede realizar cambios o modificaciones y no puede acceder a la lista de clientes.
+Cualquier usuario al que no se le conceda acceso de lectura y escritura en Bookings puede seguir usando la aplicación móvil en modo de solo vista. Cualquier persona con una licencia de Bookings que se agregue a un calendario de reserva puede ver las programaciones propias y de sus compañeros, los detalles de la cita y la información empresarial. Un usuario con acceso de solo vista no puede realizar cambios ni modificaciones y no puede acceder a la lista de clientes.
