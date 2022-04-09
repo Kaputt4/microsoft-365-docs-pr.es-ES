@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c8df50c6970ed3404283d1911f884057e7db5747
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: c97338121d38650116540564441f3b37051bf05f
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666886"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731193"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -40,9 +40,6 @@ ms.locfileid: "64666886"
 
 **Se aplica a:**
 - Microsoft 365 Defender
-
-> ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
->
 
 Microsoft 365 Defender es un conjunto de aplicaciones unificado de defensa empresarial previa y posterior a la vulneración que coordina de forma nativa la detección, prevención, investigación y respuesta entre extremos, identidades, correo electrónico y aplicaciones para proporcionar protección integrada contra ataques sofisticados.
 
@@ -297,7 +294,7 @@ Con esta ruta de aprendizaje de Microsoft Learn, puede comprender Microsoft 365 
 > [Iniciar >](/learn/paths/defender-detect-respond/)
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Novedades de Microsoft 365 Defender](whats-new.md)
 - [Microsoft Defender para Office 365 en Microsoft 365 Defender](microsoft-365-security-center-mdo.md)

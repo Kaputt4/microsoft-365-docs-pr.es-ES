@@ -20,38 +20,32 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: e64006873c3419b9c6d93d3b367a5753f5478738
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
-ms.translationtype: MT
+ms.openlocfilehash: b8f15212916566e169efa63556b897600f7092a3
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651419"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705262"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Paso 6. Supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad
 
 Después de que su organización haya implementado Microsoft Defender para punto de conexión, puede obtener más información y protección de los dispositivos mediante la integración de Microsoft Intune con Defender para punto de conexión. En el caso de los dispositivos móviles, esto incluye la capacidad de supervisar el riesgo del dispositivo como una condición de acceso. En el caso de los dispositivos Windows, puede supervisar el cumplimiento de estos dispositivos con las líneas base de seguridad. 
 
-Nota: La implementación de Microsoft Defender para punto de conexión incluye puntos de conexión de incorporación. Para obtener más información sobre la incorporación de dispositivos para Microsoft 365 funcionalidades, consulte [Inscripción de dispositivos frente a dispositivos de incorporación](manage-devices-with-intune-overview.md#enrolling-devices-vs-onboarding-devices).  
+La implementación de Microsoft Defender para punto de conexión incluye puntos de conexión de incorporación. Si usó Intune para incorporar puntos de conexión (recomendados), ya ha conectado Microsoft Intune a Defender para punto de conexión. Si usó un método diferente para incorporar puntos de conexión a Defender para punto de conexión, consulte [Configuración de Microsoft Defender para punto de conexión en Intune](/mem/intune/protect/advanced-threat-protection-configure) para asegurarse de que ha configurado la conexión de servicio a servicio entre Intune y Microsoft Defender para punto de conexión. 
+
 
 ![Ilustración de integración de Defender para punto de conexión y Microsoft Intune](../media/devices/devices-defender-for-endpoint-steps.png#lightbox)
 
 En esta ilustración:
 - Microsoft Defender para punto de conexión aumenta en gran medida la sofisticación de la protección contra amenazas para dispositivos. 
 - Aunque Microsoft Intune permite establecer directivas de protección de aplicaciones y administrar dispositivos (incluidos los cambios de configuración), Defender para punto de conexión supervisa continuamente los dispositivos en busca de amenazas y puede tomar medidas automatizadas para corregir los ataques. 
-- Puede usar Intune para incorporar dispositivos a Defender para punto de conexión. Al hacerlo, también permite que estos dispositivos funcionen con las funcionalidades de cumplimiento de Microsoft 365, incluida la prevención de pérdida de datos de punto de conexión (DLP).
+- Puede conectar Microsoft Intune a Defender para punto de conexión para supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad.
 
 En este artículo se incluyen estos pasos:
-- Conectar Microsoft Intune a Defender para punto de conexión
 - Supervisar el riesgo del dispositivo
 - Supervisar el cumplimiento de las líneas base de seguridad
 
 Si Defender para punto de conexión aún no se ha configurado, trabaje con el administrador de protección contra amenazas para [configurar el entorno piloto y de evaluación](../security/defender/eval-defender-endpoint-overview.md). Puede trabajar con el grupo piloto para probar las funcionalidades de este artículo.
-
-## <a name="connect-microsoft-intune-to-defender-for-endpoint"></a>Conectar Microsoft Intune a Defender para punto de conexión
-
-Configurar la integración de Microsoft Intune con Defender para endpoint es sencillo. Use este artículo: [Configurar Microsoft Defender para punto de conexión en Intune](/mem/intune/protect/advanced-threat-protection-configure). 
-
-![Conectar Intune a Microsoft Defender para punto de conexión](../media/devices/connect-intune-to-microsoft-defender.png#lightbox)
 
 ## <a name="monitor-device-risk-as-a-condition-for-access"></a>Supervisar el riesgo del dispositivo como condición para el acceso
 
@@ -81,10 +75,10 @@ Para implementar líneas base de seguridad y supervisar el cumplimiento de esta 
 |Paso  |Descripción  |
 |---------|---------|
 |1     |Revise los conceptos clave y compare Microsoft Defender para punto de conexión y las líneas base de seguridad de Windows Intune. <br><br>Consulte [Aumentar el cumplimiento de la línea de base de seguridad de Microsoft Defender para punto de conexión](../security/defender-endpoint/configure-machines-security-baseline.md) para obtener recomendaciones.<br><br>Consulte [Usar líneas base de seguridad para configurar dispositivos Windows en Intune ](/mem/intune/protect/security-baselines) revisar la lista de líneas base de seguridad disponibles y cómo evitar conflictos.         |
-|2     |  Implemente la configuración de línea de base de seguridad de Windows para Intune. Es posible que ya lo haya hecho si ha seguido las instrucciones del [Paso 5. Implemente perfiles de configuración](manage-devices-with-intune-configuration-profiles.md).        |
+|2     |  Implemente la configuración de línea de base de seguridad de Windows para Intune. Es posible que ya lo haya hecho si ha seguido las instrucciones de [Paso 5. Implementar perfiles de configuración](manage-devices-with-intune-configuration-profiles.md).        |
 |3    |  Implemente la configuración de línea de base de Defender para punto de conexión para Intune. Consulte [Administrar perfiles de línea de base de seguridad en Microsoft Intune](/mem/intune/protect/security-baselines-configure) para crear el perfil y elegir la versión de línea base.<br><br>También puede seguir las instrucciones siguientes: [Revisar y asignar la línea base de seguridad de Microsoft Defender para punto de conexión](../security/defender-endpoint/configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline).     |
 |4     | En Defender para punto de conexión, revise la tarjeta de línea base de seguridad de [en la administración de la configuración de dispositivos](../security/defender-endpoint/configure-machines.md).          |
-| | |
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 Vaya al [Paso 7. Implemente DLP con funcionalidades de protección de la información en puntos de conexión](manage-devices-with-intune-dlp-mip.md).

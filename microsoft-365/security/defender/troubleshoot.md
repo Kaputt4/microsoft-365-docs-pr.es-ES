@@ -1,7 +1,7 @@
 ---
-title: Solucionar problemas Microsoft 365 Defender de servicio
-description: Buscar soluciones y soluciones alternativas a problemas Microsoft 365 Defender conocidos
-keywords: solucionar Microsoft 365 Defender, solucionar problemas, Microsoft Defender para identidad, problemas, complemento, página de configuración
+title: Solución de problemas de Microsoft 365 Defender servicio
+description: Búsqueda de soluciones y soluciones alternativas a problemas conocidos de Microsoft 365 Defender
+keywords: solución de problemas de Microsoft 365 Defender, solución de problemas, Microsoft Defender for Identity, problemas, complemento, página de configuración
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d2d26b58ad26b461f668e4d75f6d4504297ae50c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 656599cf9ec66987119819b2f28f9a8eff1d4e77
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176612"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "64731678"
 ---
-# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Solucionar problemas Microsoft 365 Defender de servicio
+# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Solución de problemas de Microsoft 365 Defender servicio
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,24 +35,24 @@ ms.locfileid: "60176612"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-En esta sección se abordan los problemas que pueden surgir al usar el servicio Microsoft 365 Defender cliente.
+En esta sección se abordan los problemas que pueden surgir al usar el servicio de Microsoft 365 Defender.
 
-## <a name="i-dont-see-microsoft-365-defender-content"></a>No veo contenido Microsoft 365 Defender contenido
+## <a name="i-dont-see-microsoft-365-defender-content"></a>No veo Microsoft 365 Defender contenido
 
-Si no ve funcionalidades en el panel de navegación como incidentes, centro de acciones o búsqueda en el portal, deberá comprobar que el inquilino tiene las licencias adecuadas.
+Si no ve funcionalidades en el panel de navegación, como incidentes, centro de acciones o búsqueda en el portal, tendrá que comprobar que el inquilino tiene las licencias adecuadas.
 
 Para obtener más información, consulte [Requisitos previos](prerequisites.md).
 
-## <a name="microsoft-defender-for-identity-alerts-are-not-showing-up-in-the-microsoft-365-defender-incidents"></a>Las alertas de Identidad de Microsoft Defender no se muestran en los Microsoft 365 Defender de seguridad
+## <a name="microsoft-defender-for-identity-alerts-are-not-showing-up-in-the-microsoft-365-defender-incidents"></a>Microsoft Defender for Identity alertas no se muestran en los incidentes de Microsoft 365 Defender
 
-Si tienes Microsoft Defender para identity implementado en el entorno pero no ves alertas de Defender for Identity como parte de incidentes de Microsoft 365 Defender, tendrás que asegurarte de que la integración de Microsoft Cloud App Security y Defender for Identity está habilitada.
+Si Microsoft Defender for Identity ha implementado en su entorno, pero no ve alertas de Defender for Identity como parte de Microsoft 365 Defender incidentes, deberá asegurarse de que el Microsoft Defender for Cloud Apps  y la integración de Defender for Identity está habilitada.
 
-Para obtener más información, vea [Microsoft Defender for Identity integration](/cloud-app-security/mdi-integration).
+Para obtener más información, consulte [integración Microsoft Defender for Identity](/cloud-app-security/mdi-integration).
 
 ## <a name="where-is-the-settings-page-for-turning-on-the-service"></a>¿Dónde está la página de configuración para activar el servicio?
 
-Para activar el Microsoft 365 Defender, acceda a **Configuración** desde el panel de navegación del portal Microsoft 365 Defender navegación. Este elemento de navegación solo está visible si tiene los permisos [y licencias de requisitos previos.](m365d-enable.md#check-license-eligibility-and-required-permissions)
+Para activar Microsoft 365 Defender, acceda a **Configuración** desde el panel de navegación del portal de Microsoft 365 Defender. Este elemento de navegación solo está visible si tiene los [permisos y licencias de requisitos previos](m365d-enable.md#check-license-eligibility-and-required-permissions).
 
-## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>¿Cómo puedo crear una excepción para mi archivo/dirección URL?
+## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>Cómo crear una excepción para mi archivo o dirección URL?
 
-Un falso positivo es un archivo o dirección URL que se detecta como malintencionado pero no es una amenaza. Puede crear indicadores y definir exclusiones para desbloquear y permitir determinados archivos/direcciones URL. Consulte [Dirección de falsos positivos/negativos en Defender para Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives).
+Un falso positivo es un archivo o dirección URL que se detecta como malintencionado, pero no es una amenaza. Puede crear indicadores y definir exclusiones para desbloquear y permitir determinados archivos o direcciones URL. Consulte [Dirección de falsos positivos o negativos en Defender para punto de conexión](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives).

@@ -10,8 +10,8 @@
           href: defender-for-office-365.md
         - name: Protección contra amenazas paso a paso en Defender para Office 365
           href: protection-stack-microsoft-defender-for-office365.md
-        - name: Evaluar Defender para Office 365
-          href: office-365-evaluation.md
+        - name: Probar Defender para Office 365
+          href: try-microsoft-defender-for-office-365.md
         - name: Novedades de Microsoft Defender para Office 365
           href: whats-new-in-defender-for-office-365.md
         - name: Defender para Office 365 en el portal de Microsoft 365 Defender
@@ -96,6 +96,8 @@
           href: configure-global-settings-for-safe-links.md
         - name: Configurar el filtrado de spam de salida
           href: configure-the-outbound-spam-policy.md
+        - name: Configurar y revisar las cuentas prioritarias
+          href: configure-review-priority-account.md
         - name: Crear listas de remitentes bloqueados
           href: Create-block-sender-lists-in-office-365.md
         - name: Crear listas de remitentes seguros

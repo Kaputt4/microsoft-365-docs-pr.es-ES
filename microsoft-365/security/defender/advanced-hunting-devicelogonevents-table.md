@@ -1,7 +1,7 @@
 ---
 title: Tabla DeviceLogonEvents en el esquema de búsqueda avanzada
-description: Obtenga información sobre la autenticación o los eventos de inicio de sesión en la tabla DeviceLogonEvents del esquema de búsqueda avanzada
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, logonevents, DeviceLogonEvents, autenticación, inicio de sesión, inicio de sesión, inicio de sesión
+description: Obtenga información sobre los eventos de autenticación o inicio de sesión en la tabla DeviceLogonEvents del esquema de búsqueda avanzada.
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernética, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, logonevents, DeviceLogonEvents, autenticación, inicio de sesión, inicio de sesión
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: dbafb4c967bca09195277aa4c79c95dd1dc87afb
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 516b74eb8d1e62194718e0ad3234b3269e07fb83
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530816"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731381"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -36,28 +36,28 @@ ms.locfileid: "61530816"
 
 
 
-La `DeviceLogonEvents` tabla del esquema de [búsqueda](advanced-hunting-overview.md) avanzada contiene información sobre los inicios de sesión del usuario y otros eventos de autenticación en dispositivos. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
+La `DeviceLogonEvents` tabla del esquema [de búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre los inicios de sesión de usuario y otros eventos de autenticación en los dispositivos. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 >[!TIP]
-> Para obtener información detallada acerca de los tipos de eventos ( valores) admitidos por una tabla, use la referencia de esquema integrada `ActionType` disponible en Defender para la nube.
+> Para obtener información detallada sobre los tipos de eventos (`ActionType`valores) admitidos por una tabla, use la referencia de esquema integrada disponible en el Defender for Cloud.
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
-| Nombre de columna | Tipo de datos | Description |
+| Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | `datetime` | Fecha y hora en que se registró el evento. |
 | `DeviceId` | `string` | Identificador único para el equipo en servicio |
 | `DeviceName` | `string` | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
 | `ActionType` | `string` |Tipo de actividad que desencadenó el evento |
-| `LogonType` | `string` | Tipo de sesión de inicio de sesión, específicamente:<br><br> - **Interactivo:** el usuario interactúa físicamente con la máquina con el teclado y la pantalla locales<br><br> - Inicios de sesión interactivos remotos **(RDP):** el usuario interactúa con el equipo de forma remota mediante Escritorio remoto, Terminal Services, Asistencia remota u otros clientes RDP<br><br> - **Red:** sesión iniciada cuando se tiene acceso al equipo mediante PsExec o cuando se tiene acceso a recursos compartidos en el equipo, como impresoras y carpetas compartidas.<br><br> - **Lote:** sesión iniciada por tareas programadas<br><br> - **Servicio:** sesión iniciada por los servicios cuando se inician<br> |
+| `LogonType` | `string` | Tipo de sesión de inicio de sesión, en concreto:<br><br> - **Interactivo** : el usuario interactúa físicamente con la máquina mediante el teclado y la pantalla locales<br><br> - **Inicios de sesión interactivos remotos (RDP** ): el usuario interactúa con la máquina de forma remota mediante Escritorio remoto, Terminal Services, Asistencia remota u otros clientes RDP.<br><br> - **Red** : sesión iniciada cuando se accede a la máquina mediante PsExec o cuando se accede a recursos compartidos en la máquina, como impresoras y carpetas compartidas.<br><br> - **Batch** : sesión iniciada por tareas programadas<br><br> - **Servicio** : sesión iniciada por los servicios a medida que comienzan<br> |
 | `AccountDomain` | `string` | Dominio de la cuenta |
 | `AccountName` | `string` | Nombre de usuario de la cuenta |
 | `AccountSid` | `string` | Identificador de seguridad (SID) de la cuenta |
 | `Protocol` | `string` | Protocolo usado durante la comunicación |
-| `FailureReason` | `string` | Información que explica por qué falló la acción grabada |
+| `FailureReason` | `string` | Información que explica por qué se produjo un error en la acción registrada |
 | `IsLocalAdmin` | `boolean` | Indicador booleano de si el usuario es un administrador local en el equipo |
-| `LogonId` | `string` | Identificador de una sesión de inicio de sesión. Este identificador es único en el mismo equipo solo entre reinicios |
-| `RemoteDeviceName` | `string` | Nombre de la máquina que realizó una operación remota en la máquina afectada. Según el evento notificado, este nombre podría ser un nombre de dominio completo (FQDN), un nombre NetBIOS o un nombre de host sin información de dominio |
+| `LogonId` | `string` | Identificador de una sesión de inicio de sesión. Este identificador es único en la misma máquina solo entre reinicios |
+| `RemoteDeviceName` | `string` | Nombre de la máquina que realizó una operación remota en la máquina afectada. Dependiendo del evento que se notifica, este nombre podría ser un nombre de dominio completo (FQDN), un nombre NetBIOS o un nombre de host sin información de dominio. |
 | `RemoteIP` | `string` | Dirección IP a la que se ha conectado |
 | `RemoteIPType` | `string` | Tipo de dirección IP, por ejemplo Public, Private, Reserved, Loopback, Teredo, FourToSixMapping y Broadcast |
 | `RemotePort` | `int` | Puerto TCP en el dispositivo remoto al que se estaba conectando |
@@ -65,17 +65,17 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InitiatingProcessAccountName` | `string` | Nombre de usuario de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountSid` | `string` | Identificador de seguridad (SID) de la cuenta que ejecutó el proceso responsable del evento |
 | `InitiatingProcessAccountUpn` | `string` | Nombre principal de usuario (UPN) de la cuenta que ejecutó el proceso responsable del evento |
-| ` InitiatingProcessAccountObjectId` | `string` | Azure AD de objeto de la cuenta de usuario que ejecutó el proceso responsable del evento |
-| `InitiatingProcessIntegrityLevel` | `string` | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a los procesos en función de determinadas características, como si se iniciaron desde una descarga de Internet. Estos niveles de integridad influyen en los permisos de los recursos |
-| `InitiatingProcessTokenElevation` | `string` | Tipo de token que indica la presencia o ausencia de elevación de privilegios del Control de acceso de usuario (UAC) aplicada al proceso que inició el evento |
+| ` InitiatingProcessAccountObjectId` | `string` | Azure AD identificador de objeto de la cuenta de usuario que ejecutó el proceso responsable del evento |
+| `InitiatingProcessIntegrityLevel` | `string` | Nivel de integridad del proceso que inició el evento. Windows asigna niveles de integridad a procesos basados en ciertas características, como si se iniciaran desde una descarga de Internet. Estos niveles de integridad influyen en los permisos para los recursos |
+| `InitiatingProcessTokenElevation` | `string` | Tipo de token que indica la presencia o ausencia de elevación de privilegios de Access Control de usuario (UAC) aplicada al proceso que inició el evento |
 | `InitiatingProcessSHA1` | `string` | SHA-1 del proceso (archivo de imagen) que inició el evento |
-| `InitiatingProcessSHA256` | `string` | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo normalmente no está rellenado: use la columna SHA1 cuando esté disponible |
+| `InitiatingProcessSHA256` | `string` | SHA-256 del proceso (archivo de imagen) que inició el evento. Este campo normalmente no se rellena: use la columna SHA1 cuando esté disponible. |
 | `InitiatingProcessMD5` | `string` | Hash MD5 del proceso (archivo de imagen) que inició el evento |
 | `InitiatingProcessFileName` | `string` | Nombre del proceso que inició el evento |
 | `InitiatingProcessFileSize` | `long` | Tamaño del archivo que ejecutó el proceso responsable del evento |
-| `InitiatingProcessVersionInfoCompanyName` | `string` | Nombre de la compañía a partir de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoCompanyName` | `string` | Nombre de la empresa de la información de versión del proceso (archivo de imagen) responsable del evento |
 | `InitiatingProcessVersionInfoProductName` | `string` | Nombre del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
-| `InitiatingProcessVersionInfoProductVersion` | `string` | Versión del producto de la información de versión del proceso (archivo de imagen) responsable del evento |
+| `InitiatingProcessVersionInfoProductVersion` | `string` | Versión del producto a partir de la información de versión del proceso (archivo de imagen) responsable del evento |
 | `InitiatingProcessVersionInfoInternalFileName` | `string` | Nombre de archivo interno de la información de versión del proceso (archivo de imagen) responsable del evento |
 | `InitiatingProcessVersionInfoOriginalFileName` | `string` | Nombre de archivo original de la información de versión del proceso (archivo de imagen) responsable del evento |
 | `InitiatingProcessVersionInfoFileDescription` | `string` | Descripción de la información de versión del proceso (archivo de imagen) responsable del evento |
@@ -86,9 +86,12 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InitiatingProcessParentId` | `int` | Identificador de proceso (PID) del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentFileName` | `string` | Nombre del proceso primario que generó el proceso responsable del evento |
 | `InitiatingProcessParentCreationTime` | `datetime` | Fecha y hora en que se inició el elemento primario del proceso responsable del evento |
-| `ReportId` | `long` | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
+| `ReportId` | `long` | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp. |
 | `AppGuardContainerId` | `string` | Identificador del contenedor virtualizado usado por Application Guard para aislar la actividad del explorador |
 | `AdditionalFields` | `string` | Información adicional sobre el evento en formato de matriz JSON |
+
+>[!NOTE]
+>La colección de DeviceLogonEvents no se admite en dispositivos Windows 7 o Windows Server 2008R2 incorporados a Defender para punto de conexión. Se recomienda actualizar a un sistema operativo más reciente para obtener una visibilidad óptima de la actividad de inicio de sesión del usuario.
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

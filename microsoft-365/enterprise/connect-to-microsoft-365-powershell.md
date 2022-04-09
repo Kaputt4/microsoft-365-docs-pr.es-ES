@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Conéctese a su espacio empresarial de Microsoft 365 mediante PowerShell para Microsoft 365 de forma que pueda realizar tareas desde el Centro de administración desde la línea de comandos.
-ms.openlocfilehash: 67c3a596d1b0d7acec2925f39c2f6bd8025d7d4a
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 4083ffdf240664947b1d35e726a400f292b6d3bf
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354917"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713501"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Conectarse a Microsoft 365 con PowerShell
 
@@ -101,6 +101,12 @@ Are you sure you want to install the modules from 'PSGallery'?
 
 Responda **Sí** o **Sí a todo** para continuar con la instalación.
 
+3.  Ejecute este comando para importar el módulo:
+    
+    ```powershell
+    Import-Module  AzureAD
+    ```
+    
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>Paso 2: Conectarse a Azure AD para la suscripción de Microsoft 365
 
 Para conectarse a Azure AD para la suscripción de Microsoft 365 con un nombre de cuenta y contraseña o con la autenticación multifactor (MFA), ejecute uno de estos comandos desde un símbolo del sistema de Windows PowerShell (no tiene que ser elevado).

@@ -5,12 +5,12 @@ author: dansimp
 ms.prod: m365-security
 ms.topic: include
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: dd348da0895a6cb341aecb7a386609a32d83cb82
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
-ms.translationtype: HT
+ms.openlocfilehash: f20ae3cbec03531ad39adfa99c41891722482ddf
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61112061"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731028"
 ---
-> [!IMPORTANT]
-> El <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Portal de Microsoft 365 Defender</a> mejorado ya está disponible. Esta nueva experiencia incluye Defender para punto de conexión, Defender para Office 365, Microsoft 365 Defender y más en el portal de Microsoft 365 Defender. [Ver las novedades](/microsoft-365/security/mtp/overview-security-center).
+> [!NOTE]
+> ¿Quiere experimentar Microsoft 365 Defender? Obtenga más información sobre cómo puede [evaluar y probar Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview?ocid=cx-docs-MTPtriallab).

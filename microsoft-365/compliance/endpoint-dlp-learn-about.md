@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prevención de pérdida de datos de punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y las acciones de protección de esos archivos a los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento '
-ms.openlocfilehash: 031d1d80dd6700939c9d73cc82350b7abc30c132
-ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
+ms.openlocfilehash: f32e84434258ff4b4c5ea6af24f69c607952b56a
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64520791"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714557"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la Prevención de pérdida de datos de Microsoft 365 de punto de conexión
 
@@ -53,6 +53,16 @@ Microsoft DLP para punto de conexión permite auditar y administrar los siguient
 |copiar en un dispositivo Bluetooth|Detecta cuando un usuario intenta copiar un elemento en una aplicación Bluetooth no permitida (según se define en la lista de aplicaciones de Bluetooth no permitidas en la configuración del punto de conexión DLP).|compatible|no compatible| auditable y restringible|
 |crear un elemento|Detecta cuándo un usuario crea un elemento|compatible | |auditable|
 |cambiar el nombre de un elemento|Detecta cuando un usuario cambia el nombre de un elemento|compatible | |auditable|
+
+## <a name="best-practice-for-endpoint-dlp-policies"></a>Procedimiento recomendado para directivas DLP de punto de conexión
+
+Supongamos que quiere bloquear todos los elementos que contengan números de tarjetas de crédito para que no salgan de los puntos de conexión de los usuarios del departamento de finanzas. Se recomienda lo siguiente:
+
+- Cree una directiva y aplíquela a los puntos finales y a ese grupo de usuarios.
+- Cree una regla en la directiva que detecte el tipo de información que desea proteger. En este caso, el **contenido contiene** la configuración *Tipo de información confidencial** y seleccione **Tarjeta de crédito**.
+- Establezca las acciones de cada actividad en **Bloquear**.
+
+Vea, [Diseñar una directiva de prevención de pérdida de datos](dlp-policy-design.md) para obtener más instrucciones sobre el diseño de las directivas de prevención de la pérdida de datos.
 
 ## <a name="monitored-files"></a>Archivos supervisados
 

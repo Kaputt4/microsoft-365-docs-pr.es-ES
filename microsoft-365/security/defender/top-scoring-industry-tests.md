@@ -15,19 +15,16 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: c12a0dbb56e81c6b2c6d7953cff77e367f2e435d
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: a61590b614631b738198001a56e29096d4a7d957
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419338"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731315"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Puntuaciones más altas en las pruebas del sector
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-> ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
->
 
 Las tecnologías de [Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) consiguen de forma consistente altas puntuaciones en pruebas independientes, lo que demuestra la fuerza de sus capacidades de protección contra amenazas empresariales. Microsoft busca ser transparente respecto a estas puntuaciones de pruebas. En esta página se resumen los resultados y se proporcionan análisis.
 
