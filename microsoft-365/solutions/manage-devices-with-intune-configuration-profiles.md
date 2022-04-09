@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: d44d70c50db5c086e24af575677d5d51e1b33357
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: fe137e626d5199f1709504d025411586965ae9fd
+ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049256"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64737425"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>Paso 5. Implementar perfiles de dispositivo en Microsoft Intune
 
@@ -48,7 +48,7 @@ Por ahora, solo tienes que implementar las líneas base de seguridad de MDM más
 
 Más adelante, cuando Microsoft Defender para punto de conexión esté configurado y hayas conectado Intune, implementa las líneas base de Defender para punto de conexión. Este tema se trata en el siguiente artículo de esta serie: [Paso 6. Supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad](manage-devices-with-intune-monitor-risk.md).
 
-Es importante comprender que estas líneas base de seguridad no son compatibles con CIS o NIST, sino que reflejan estrechamente sus recomendaciones. Para obtener más información, consulta [¿Cumplen las líneas base de seguridad de Intune con CIS o NIST](/mem/intune/protect/security-baselines)?
+Es importante comprender que estas líneas base de seguridad no son compatibles con CIS o NIST, sino que reflejan estrechamente sus recomendaciones. Para obtener más información, consulte [¿Las líneas base de seguridad de Intune cumplen con CIS o NIST?](https://docs.microsoft.com/mem/intune/protect/security-baselines#are-the-intune-security-baselines-cis-or-nist-compliant)
 
 ## <a name="customize-configuration-profiles-for-your-organization"></a>Personalizar perfiles de configuración para su organización
 

@@ -1,7 +1,7 @@
 ---
-title: "Informes de actividad del Centro de administración de Microsoft\_365"
+title: Informes de actividad del Centro de administración de Microsoft 365
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -10,20 +10,25 @@ ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-  - M365-subscription-management
-  - Adm_O365
-  - Adm_TOC
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
 ms.custom:
-  - AdminSurgePortfolio
-  - AdminTemplateSet
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
-  - MET150
-  - MOE150
-  - GEA150
+- MET150
+- MOE150
+- GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
+ms.openlocfilehash: 224ed6ffb0fa44280f1b83d3a0f440d1a8571557
+ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64738325"
 ---
-
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
 Puede ver fácilmente el uso que hacen de los servicios de Microsoft 365 los usuarios de su empresa. Por ejemplo, puede identificar quién los usa con más frecuencia y ha alcanzado el límite o aquellos que no necesiten una licencia de Microsoft 365 en absoluto. El modelo de licencia perpetua no se incluirá en los informes. 
@@ -48,7 +53,7 @@ Los informes están disponibles para los últimos 7, 30, 90 o 180 días. Los dat
 
 ::: moniker-end
 
-2. Haga clic en el botón **Ver más** de la tarjeta de actividad en un vistazo de un servicio (como correo electrónico o OneDrive) para ver la página de detalles del informe. En las pestañas, se proporcionan diferentes informes para el servicio.
+2. Haga clic en el botón **Ver más** de la tarjeta de actividad en un vistazo de un servicio (como correo electrónico o OneDrive) para ver la página de detalles del informe. En esa página, se proporcionan diferentes informes para el servicio.
 
    :::image type="content" alt-text="Panel de utilización." source="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::
 
@@ -96,6 +101,7 @@ Dependiendo de su suscripción, aquí están los informes disponibles en todos l
 |[Actividad de SharePoint](sharepoint-activity-ww.md)|Sí|Sí|Sí|Sí|Sí|
 |[Actividad de los usuarios de Microsoft Teams](microsoft-teams-user-activity-preview.md)|Sí|Sí|Sí|Sí|N/A[^2]|
 |[Uso de dispositivos de Microsoft Teams](microsoft-teams-device-usage-preview.md)|Sí|Sí|Sí|Sí|N/A[^2]|
+|[Actividad de uso de Microsoft Teams](microsoft-teams-usage-activity.md)|Sí|Sí|N/D|N/D|N/D|
 |[Actividad de Yammer](yammer-activity-report-ww.md)|Sí|Sí|N/A[^2]|N/A[^2]|N/A[^2]|
 |[Uso de dispositivos en Yammer](yammer-device-usage-report-ww.md)|Sí|Sí|N/A[^2]|N/A[^2]|N/A[^2]|
 |[Informe de actividad de los grupos de Yammer](yammer-groups-activity-report-ww.md)|Sí|Sí|N/A[^2]|N/A[^2]|N/A[^2]|
@@ -146,7 +152,7 @@ Los administradores globales pueden revertir este cambio para su inquilino y mos
   
 3. Desactive la instrucción **Mostrar nombres ocultos de usuarios, grupos y sitios en todos los informes** y, a continuación, guarde los cambios.  
   
-Aplicar estos cambios a los informes del panel Informes puede tardar unos minutos. Esta configuración también se aplica a los informes de uso de Microsoft 365 en [Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) y [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) y a los [informes de uso en el Centro de administración de Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Mostrar información de usuario identificable es un evento registrado en el Centro de cumplimiento de Microsoft 365 de auditoría.   
+Aplicar estos cambios a los informes del panel Informes puede tardar unos minutos. Esta configuración también se aplica a los informes de uso de Microsoft 365 en [Microsoft Graph](/graph/api/resources/report) y [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) y a los [informes de uso en el Centro de administración de Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Mostrar información de usuario identificable es un evento registrado en el Centro de cumplimiento de Microsoft 365 de auditoría.   
 
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>¿Qué ocurre con los datos de uso cuando se cierra una cuenta de usuario?

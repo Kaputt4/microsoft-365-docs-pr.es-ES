@@ -9,12 +9,12 @@ ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 description: Planee la actualización desde Office servidores y clientes de 2013, ya que el soporte técnico finaliza el 11 de abril de 2023.
-ms.openlocfilehash: 52bc9664831448f1583b8562bf8e8557f7f77739
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 3acce92a419382420b21dee64ce77c196eeb8a42
+ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731865"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64737404"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2013-clients-and-servers"></a>Recursos que le ayudarán a actualizar desde Office servidores y clientes de 2013
 
@@ -32,7 +32,7 @@ En la tabla siguiente se proporcionan vínculos a la planeación de recursos par
 
 |Producto|Recurso de planeamiento|
 |---|---|
-|Office 2013 (aplicaciones de escritorio)<br/>Project 2013<br/>Visio 2013|[Planear una actualización de versiones anteriores de Office a Aplicaciones Microsoft 365](/deployoffice/endofsupport/plan-upgrade-older-versions-office)|
+|Office 2013 (aplicaciones de escritorio)<br/>Project 2013<br/>Visio 2013|[Planear una actualización de versiones anteriores de Office a Aplicaciones Microsoft 365](/deployoffice/endofsupport/plan-upgrade-older-versions-office.md)|
 |Exchange Server 2013|[Exchange hoja de ruta de fin de soporte técnico de 2013](exchange-2013-end-of-support.md)|
 |SharePoint Server 2013 <br/> SharePoint Foundation 2013|[Actualización desde SharePoint 2013](upgrade-from-sharepoint-2013.md)|
 |Project Server 2013|[Project Server 2013 final de la hoja de ruta de soporte técnico](project-server-2013-end-of-support.md)|

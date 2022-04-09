@@ -19,19 +19,19 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: ''
-ms.openlocfilehash: 1db0a3ac8dc67c2ad439972341d28460d0f0a6bb
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 95cc11956dfe597b70f18954723f914e057193a6
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731635"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746710"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Pruebe Microsoft Defender para Office 365
 
 > [!NOTE]
 > La característica que se describe en este artículo está en versión preliminar, no está disponible en todas las organizaciones y está sujeta a cambios.
 
-El portal **de pruebas** unificadas del portal de Microsoft 365 Defender proporciona un único punto de entrada para las experiencias de evaluación y evaluación anteriormente independientes para Microsoft Defender para Office 365. La intención es permitirle probar las características de Defender para Office 365 Plan 2 durante 30 días antes de confirmarlo por completo. Sin embargo, hay diferencias en las experiencias de evaluación basadas en la naturaleza de la organización Microsoft 365:
+El portal **de pruebas** unificadas del portal de Microsoft 365 Defender proporciona un único punto de entrada para las experiencias de evaluación y evaluación anteriormente independientes para Microsoft Defender para Office 365. La intención es permitirle probar las características de Defender para Office 365 Plan 2 durante 90 días antes de confirmarlo por completo. Sin embargo, hay diferencias en las experiencias de evaluación basadas en la naturaleza de la organización Microsoft 365:
 
 - Ya tiene Microsoft 365 buzones, pero actualmente usa un servicio o dispositivo de terceros para la protección de correo electrónico. El correo de Internet fluye a través del servicio de protección antes de la entrega a la organización de Microsoft 365. Microsoft 365 protección es lo más baja posible (nunca está completamente desactivada; por ejemplo, la protección contra malware siempre se aplica).
 

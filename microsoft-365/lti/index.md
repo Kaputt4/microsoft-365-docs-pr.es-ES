@@ -1,5 +1,5 @@
 ---
-title: Información general sobre las aplicaciones de LTI
+title: Introducción a las aplicaciones de Microsoft LTI
 ms.author: heidip
 author: MicrosoftHeidi
 manager: serdars
@@ -12,68 +12,82 @@ search.appverid: ''
 ms.collection:
 - M365-modern-desktop
 ms.localizationpriority: ''
-description: Obtenga información sobre Learning Tools Interoperability (LTI) Office aplicaciones en M365 y cómo ayudarán a los formadores al integrar aplicaciones de Office en su sistema de administración de Learning (LMS).
-ms.openlocfilehash: d6fbce11bf583a168f6b0d71f9aa15f144179515
-ms.sourcegitcommit: b71a8fdda2746f18fde2c94d188be89f9cab45f2
+description: Obtenga información sobre las aplicaciones de Microsoft Learning Tools Interoperability (LTI) y cómo ayudarán a los formadores al integrar aplicaciones de Microsoft en su sistema de administración de Learning (LMS).
+ms.openlocfilehash: 8140b89b4bfeb26f64e8949f6d7835ca59645cbe
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61578072"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746775"
 ---
-# <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Integración de productos de Microsoft con su Learning management system (LMS)
+# <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Integración de productos de Microsoft con el sistema de administración de Learning (LMS)
 
-- [OneDrive LTI con Canvas](#onedrive-lti-with-canvas)
-- [Teams reuniones LTI con Canvas](#teams-meetings-lti-with-canvas)
-- [Teams clases LTI](#teams-classes-lti)
+Microsoft Education y nuestros asociados de terceros entienden que el flujo de enseñanza y aprendizaje cruza invariablemente los límites de la solución. Estamos trabajando para proporcionar experiencias más fluidas, manteniendo a los educadores y aprendices centrados en sus objetivos, en lugar de tener que hacer malabares con las herramientas. Estamos integrando productos de Microsoft dondequiera que se produzca la enseñanza y el aprendizaje, incluidos los sistemas de administración de Learning (LMS) y junto con ellos.
 
-Microsoft Education y nuestros socios externos entienden que el flujo de enseñanza y aprendizaje cruza invariablemente los límites de la solución. Estamos trabajando en proporcionar experiencias más fluidas, manteniendo a los formadores y alumnos centrados en sus objetivos, en lugar de tener que hacer malabares con herramientas. Estamos integrando productos de Microsoft siempre que se produzca la enseñanza y el aprendizaje, incluidos dentro y junto con Learning Management Systems (LMS). Hemos trabajado con nuestros partners de LMS para crear un conjunto de herramientas con el estándar de interoperabilidad [de Learning Tools (LTI)](https://www.imsglobal.org/activity/learning-tools-interoperability) que aporta lo mejor de Microsoft directamente a su LMS.
+Hemos trabajado con nuestros asociados de LMS para crear un conjunto de herramientas mediante el [estándar de interoperabilidad de herramientas de Learning (LTI)](https://www.imsglobal.org/activity/learning-tools-interoperability) que aporta lo mejor de Microsoft directamente a su LMS.
 
-Estas herramientas incluyen una nueva OneDrive LTI, una nueva aplicación LTI de reuniones Teams reuniones y una nueva aplicación LTI Teams clase. Estas nuevas herramientas son altamente seguras y totalmente compatibles con los estándares LTI 1.3 y LTI Advantage. La aplicación OneDrive LTI permite OneDrive profesores y alumnos traer OneDrive almacenamiento en la nube y Office 365 archivos directamente en flujos de trabajo de creación de contenido y asignación dentro de un LMS. La Teams LTI de reuniones de Teams permite a los profesores y alumnos administrar, programar y acceder a sus reuniones de Teams desde un centro de reuniones en su LMS. La aplicación LTI class Teams permite a los profesores crear un equipo para su curso dentro de su LMS con la lista de cursos de LMS con actualizaciones diarias de la lista. A continuación, los alumnos pueden acceder al equipo directamente desde el LMS. Estamos encantados de llevar estas nuevas herramientas a los clientes y seguir mejorando nuestras soluciones de acuerdo con sus comentarios.
+Estas herramientas incluyen:
 
-## <a name="onedrive-lti-with-canvas"></a>OneDrive LTI con Canvas
+- [OneDrive LTI](#onedrive-lti-apps)
+- [LTI de reuniones de Teams](#teams-meetings-lti)
+- [clases LTI de Teams](#teams-classes-lti)
 
-Obtenga más información sobre cómo Microsoft OneDrive con su Learning management system (LMS).
+Para obtener información general sobre la administración de herramientas de Microsoft OneLTI, consulte [Administración de Microsoft OneLTI para cualquier LMS](manage-microsoft-one-lti.md).
 
-- **Incluye Microsoft Office 365 directamente en los flujos de trabajo**
+## <a name="onedrive-lti-apps"></a>OneDrive aplicaciones LTI
 
-La Microsoft OneDrive LTI se integra con tu LMS para incluir Microsoft OneDrive y Microsoft Office 365 directamente en los flujos de trabajo más importantes que incluyen:
+Obtenga más información sobre el uso de Microsoft OneDrive con el sistema de administración de Learning (LMS).
+
+- **Incorpora Microsoft 365 directamente a los flujos de trabajo**
+
+La aplicación Microsoft OneDrive LTI se integra con su LMS para incorporar Microsoft OneDrive y Microsoft 365 directamente en los flujos de trabajo más importantes que incluyen:
 
 - Adjuntar recursos y organizar contenido.
 - Iniciar documentos de colaboración.
-- Creación y calificación de asignaciones.
+- Creación y clasificación de asignaciones.
 
-- **Proteger y cumplir completamente con los estándares LTI más recientes**
+- **Seguro y totalmente compatible con los estándares LTI más recientes**
 
-La Microsoft OneDrive LTI App es compatible con LTI 1.3 y LTI Advantage. Esta ventaja permite una experiencia de usuario altamente segura y estrechamente integrada.
+La Microsoft OneDrive LTI App es compatible con LTI 1.3 y LTI Advantage, lo que permite una experiencia de usuario segura e integrada.
 
-- **Experiencia de usuario moderna y enriquecte**
+- **Experiencia de usuario moderna y enriquecida**
 
-La Microsoft OneDrive LTI App aporta lo mejor de Microsoft directamente a tu experiencia de LMS. Estamos mejorando la integración de Office 365 existente en su LMS al ofrecer una experiencia de usuario más moderna, completa con un selector de archivos de Microsoft OneDrive nuevo y expandido y experiencias de edición más enriqueciendo para Office archivos. Microsoft también será el propietario completo de la Microsoft OneDrive LTI en el futuro, lo que significa que siempre recibirás lo último y lo mejor de Microsoft automáticamente.
+Estamos mejorando la integración de Microsoft 365 existente en su LMS al ofrecer una experiencia de usuario moderna, que se completa con un selector de archivos Microsoft OneDrive expandido y experiencias de edición enriquecidas para Office archivos.
 
-La Microsoft OneDrive LTI app te permite:
+Microsoft posee la OneDrive aplicación LTI, lo que significa que siempre obtendrá las actualizaciones más recientes de Microsoft automáticamente.
 
-- Adjunte Office 365 archivos, incluidos documentos de Word, PowerPoint presentaciones y Excel desde el Editor de contenido enriquecido.
-- Distribuir Office 365 de nube.
-- Vea y organice los archivos personales y Microsoft OneDrive curso.
+La aplicación LTI Microsoft OneDrive le permite:
+
+- Adjunte Microsoft 365 archivos, incluidos documentos de Word, presentaciones PowerPoint y Excel desde el Editor de contenido enriquecido.
+- Distribuir Microsoft 365 asignaciones en la nube.
+- Vea y organice sus archivos personales y de Microsoft OneDrive de curso.
 - Cree colaboraciones donde los miembros del curso puedan trabajar juntos en documentos compartidos en tiempo real.
-- Accede a varias Microsoft OneDrive, incluidas las cuentas personales y educativas.
-- Integre Office 365 archivos con los módulos del curso.
-- Use su cuenta microsoft para el inicio de sesión único con su LMS.
+- Acceda a varias cuentas de Microsoft OneDrive, incluidas las cuentas personales y educativas.
+- Integre Microsoft 365 archivos con los módulos del curso.
+- Use su cuenta Microsoft para el inicio de sesión único con lms.
 
-Para ver los pasos de configuración, [vea Integrar Microsoft OneDrive LTI con Canvas](onedrive-lti.md).
+Para ver los pasos de configuración, consulte:
 
-## <a name="teams-lti-apps"></a>Teams LTI
+- [Microsoft OneDrive LTI con Canvas](onedrive-lti.md).
+- [Microsoft OneDrive LTI con Blackboard](onedrive-lti-blackboard.md).
 
-### <a name="teams-meetings-lti-with-canvas"></a>Teams reuniones LTI con Canvas
+## <a name="teams-lti-apps"></a>Teams aplicaciones LTI
 
-Microsoft Teams de reuniones LTI ayuda a los administradores a incorporar Teams reuniones en el curso LMS de su institución educativa. Los formadores y estudiantes pueden ver reuniones pasadas y próximas, programar reuniones individuales o periódicas y unirse a reuniones de equipo relacionadas con el curso, todo desde su LMS.
+### <a name="teams-meetings-lti"></a>LTI de reuniones de Teams
 
-Para ver los pasos de configuración, [vea Usar Microsoft Teams reuniones con Canvas](teams-meetings-with-canvas.md).
+Microsoft Teams aplicación LTI de reuniones incorpora reuniones Teams en cursos LMS. Los educadores y los alumnos pueden ver reuniones pasadas y futuras, programar reuniones individuales o periódicas, y unirse a reuniones de equipo relacionadas con el curso, todo ello desde su LMS.
+
+Para ver los pasos de configuración, consulte:
+
+- [Microsoft Teams reuniones con Canvas](teams-meetings-with-canvas.md).
+- [Microsoft Teams reuniones con Moodle](teams-classes-meetings-with-moodle.md).
 
 ### <a name="teams-classes-lti"></a>Teams clases LTI
 
-La Microsoft Teams clases de aprendizaje LTI ayuda a los profesores y alumnos a navegar entre su LMS y Teams. Los usuarios pueden acceder a sus equipos de clase asociados con su curso directamente desde su LMS. A continuación encontrará los pasos de configuración:
+La aplicación LTI de clases de Microsoft Teams ayuda a los educadores y alumnos a navegar entre su LMS y Teams. Los usuarios pueden acceder a sus equipos de clase asociados a su curso dentro de su LMS.
 
-- **Teams clases LTI con Canvas** [Use Microsoft Teams clases con Canvas](teams-classes-with-canvas.md).
+Para ver los pasos de configuración, consulte:
 
-- **Teams clases LTI con El** uso de Microsoft Teams [de Blackboard con Blackboard Learn Ultra](teams-classes-with-blackboard.md)
+- [Teams clases LTI con Canvas](teams-classes-with-canvas.md).
+- [Teams clases LTI con Blackboard](teams-classes-with-blackboard.md).
+- [Teams Clases LTI con Moodle](teams-classes-meetings-with-moodle.md).

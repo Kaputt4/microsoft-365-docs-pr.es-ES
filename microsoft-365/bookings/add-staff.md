@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Use esta página para crear la lista de personal y administrar los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico.
-ms.openlocfilehash: 2df48efe321a91c1eb2df712e954033eb28357aa
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: ca938acf4bfb567d366c7ffd684e8bce8c9eea74
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713941"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746805"
 ---
 # <a name="add-staff-to-bookings"></a>Agregar personal a Bookings
 
@@ -58,7 +58,7 @@ Aunque Bookings es una característica de Microsoft 365, no todos los miembros d
 
     Por ejemplo, si un miembro del personal tiene una reunión de equipo o una cita personal programada para las 3 p. m. de un miércoles, Bookings mostrará que el miembro del personal no está disponible para reservarse en esa franja horaria. Ese tiempo aparecerá como ocupado o provisional en la vista de calendario de Bookings, como se muestra en el ejemplo siguiente.
 
-    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="Vista de un calendario de Bookings.":::
+    :::image type="content" source="media/bookings-busy-tentative-view-2.png" alt-text="Vista de un calendario de Bookings.":::
 
 > [!IMPORTANT]
 > Se recomienda encarecidamente dejar esta opción activada (está activada de forma predeterminada) para evitar las reservas dobles y optimizar la disponibilidad de los miembros del personal.

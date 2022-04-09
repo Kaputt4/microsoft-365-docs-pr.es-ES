@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: Cambie la configuración de idioma y zona horaria en Microsoft Bookings. Si las reservas se crean en un momento incorrecto, es posible que Bookings se establezca para la zona horaria incorrecta.
-ms.openlocfilehash: 1f319ae91b635bf7c45542d2872c92763d1426f7
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: cb6735640f85456568f0d0492a265046ab127e9c
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715371"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746979"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Establecer zonas horarias y de idioma en Microsoft Bookings
 
@@ -33,7 +33,7 @@ Para establecer el idioma y la zona horaria del calendario de reserva:
 
 1. Inicie sesión en Microsoft 365 y seleccione el icono de Outlook en la página de aterrizaje (como se muestra en la captura de pantalla siguiente) o en la Selector Microsoft 365 App.
 
-   ![Imagen del icono de Outlook en Microsoft 365 página de aterrizaje.](../media/bookings-outlook-tile.png)
+   :::image type="content" source="../media/bookings-outlook-tile.png" alt-text="Outlook icono en Microsoft 365 página de aterrizaje.":::
 
 1. Después de Outlook se abre, seleccione el **icono de engranaje** en la esquina superior derecha de la pantalla para abrir la configuración personal y de la cuenta y, a continuación, busque "zona horaria" en el cuadro de búsqueda **del panel de Configuración**. El panel se actualizará para mostrar la configuración actual del idioma personal y la zona horaria de esta cuenta. Como se indicó anteriormente, esta configuración también controla el idioma y la zona horaria del calendario de reserva.
 
@@ -49,6 +49,6 @@ Para establecer el idioma y la zona horaria del calendario de reserva:
 
    ![Captura de pantalla: cambiar el idioma y el vínculo de configuración de zona horaria.](../media/bookings-region-language-timezone-settings.png)
 
-1. Seleccione el idioma y la zona horaria actual y elija Aceptar.
+1. Seleccione el idioma y la zona horaria actual y elija **Aceptar**.
 
-   ![Captura de pantalla: Configuración de idioma y zona horaria.](../media/bookings-region-timezone-settings.png)
+   :::image type="content" source="../media/bookings-region-timezone-settings-1.png" alt-text="Configuración de idioma y zona horaria.":::

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 03/15/2022
+ms.date: 04/08/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: d7651e9ec4ec3cfbf3fe8e853b6de1de9e50dae1
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 76e47f1d4ebb7aa32c65f235ee9b2ede9a051a2d
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714689"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746610"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparar Microsoft Defender para Empresas con Microsoft 365 Empresa Premium
 
@@ -87,9 +87,9 @@ En la tabla siguiente se comparan las características y funcionalidades de segu
 | [Protección de última generación](../defender-endpoint/next-generation-protection.md) | Sí | Sí | Sí |
 | [EDR](../defender-endpoint/overview-endpoint-detection-response.md) | Sí <sup>[[2](#fn2)]</sup> | No | Sí |
 | [Investigación y respuesta automatizadas](../defender-endpoint/automated-investigations.md) | Sí <sup>[[2](#fn2)]</sup> | No | Sí |
-| [Búsqueda de amenazas](../defender-endpoint/advanced-hunting-overview.md) y seis meses de retención de datos | No | No | Sí |
+| [Búsqueda de amenazas](../defender-endpoint/advanced-hunting-overview.md) y seis meses de retención de datos <sup>[[3](#fn3)]</sup> | No | No | Sí |
 | [Análisis de amenazas](../defender-endpoint/threat-analytics.md) | Sí <sup>[[2](#fn2)]</sup> | No | Sí |
-| [Compatibilidad multiplataforma](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS y sistema operativo Android) | Sí <sup>[[3](#fn3)]</sup> | Sí | Sí |
+| [Compatibilidad multiplataforma](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS y sistema operativo Android) | Sí <sup>[[4](#fn4)]</sup> | Sí | Sí |
 | [Expertos en amenazas de Microsoft](../defender-endpoint/microsoft-threat-experts.md) | No | No | Sí |
 | API de asociados | Sí | Sí | Sí |
 | [integración Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) <br/>(Para ver los incidentes de seguridad entre los inquilinos del cliente) | Sí | No | No |
@@ -98,9 +98,11 @@ En la tabla siguiente se comparan las características y funcionalidades de segu
 
 (<a id="fn2">2</a>) Estas funcionalidades están optimizadas para pequeñas y medianas empresas.
 
-(<a id="fn3">3</a>) Durante el programa de versión preliminar, se admiten Windows dispositivos cliente en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)).
+(<a id="fn3">3</a>) No hay ninguna pestaña de escala de tiempo en Defender para empresas.
 
-## <a name="next-steps"></a>Pasos siguientes
+(<a id="fn4">4</a>) Durante el programa de versión preliminar, se admiten Windows dispositivos cliente en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)).
+
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Consulte los requisitos de Microsoft Defender para Empresas](mdb-requirements.md)
 - [Obtener Microsoft Defender para Empresas](get-defender-business.md)

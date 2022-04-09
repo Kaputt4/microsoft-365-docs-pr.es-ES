@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Siga estas instrucciones para crear una cita y asignar un empleado a través de la aplicación Microsoft Bookings.
-ms.openlocfilehash: d30d9ba7fe00305ef370a554fc53ebebc5b5d284
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 0428c697def774a67384b14c4d9b2c48e2851794
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715327"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64747256"
 ---
 # <a name="create-a-manual-booking"></a>Crear un manual de reserva
 
@@ -25,7 +25,7 @@ Bookings se puede programar y dotarse de personal de dos maneras distintas. La p
 
 1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **Bookings**.
 
-   ![Imagen de Bookings en el iniciador de aplicaciones.](../media/bookings-applauncher.png)
+    :::image type="content" source="../media/bookings-applauncher.png" alt-text="Bookings en el iniciador de aplicaciones.":::
 
 1. En el panel de navegación, seleccione **Calendario** \> **Nueva reserva**.
 
@@ -49,4 +49,4 @@ Bookings se puede programar y dotarse de personal de dos maneras distintas. La p
 
    Este es un ejemplo de correo electrónico del recordatorio que recibirá el cliente:
 
-:::image type="content" source="../media/bookings-confirmed-email.png" alt-text="Captura de pantalla: Ejemplo de correo electrónico de confirmación de una reserva manual":::
+   :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="Captura de pantalla: Ejemplo de correo electrónico de confirmación de una reserva manual":::

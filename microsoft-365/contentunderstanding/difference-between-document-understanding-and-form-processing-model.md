@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre las diferencias clave entre un modelo de comprensión de documentos y un modelo de procesamiento de formularios.
-ms.openlocfilehash: ee51b60b69bc2ec489f074a73555cbc6f1a17143
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a3f36adbf261ef290aada8efe1c0643ee1ce570f
+ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664643"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64738402"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>Diferencias entre los modelos de comprensión de documentos y procesamiento de formularios 
 
@@ -85,6 +85,7 @@ Use la siguiente tabla para comprender cuándo se usa el procesamiento de formul
 | Gastos transaccionales | Usar créditos de AI Builder.<br>Los créditos se pueden comprar en los de 1 M.<br>Los créditos de 1 M están incluidos en la compra de más de 300 licencias de SharePoint Syntex.<br>Los créditos de 1 M permitirán procesar 2 000 páginas de archivos.<br>| N/D |
 | Capacidad | Usa el entorno de Power Platform predeterminado (entornos personalizados con soporte para la base de datos de Dataverse). | No tiene restricciones de capacidad.|
 | Idiomas admitidos| Compatibilidad con idiomas para más [de 73 idiomas](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | Los modelos funcionan en todos los idiomas del alfabeto latino. Además de inglés: alemán, sueco, francés, español, italiano y portugués.|
+
 
 ## <a name="see-also"></a>Consulte también
 

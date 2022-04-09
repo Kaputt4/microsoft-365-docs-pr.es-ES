@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Establezca el horario laboral y la disponibilidad de empleados en Microsoft Bookings.
-ms.openlocfilehash: 533cf3075c01753061f153d6dcf16bdb02bfa5a3
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: f87a5f13ace9689cd838942e6558529659671238
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714799"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64747278"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Horario laboral de empleados en Microsoft Bookings
 
@@ -27,19 +27,19 @@ En la página **Personal** , puede personalizar las horas de trabajo de los empl
 
 Si desea reservar tiempo libre para los miembros del personal para que los clientes no puedan reservarlos mientras están fuera de la oficina, consulte [Programar cierres de negocios, tiempo libre y tiempo de vacaciones](schedule-closures-time-off-vacation.md) para obtener instrucciones.
 
-## <a name="customize-employee-working-hours"></a>Personalización del horario laboral de los empleados
+## <a name="watch-set-employee-working-hours"></a>Inspección: Establecimiento del horario laboral de los empleados
 
 Vea este vídeo o siga los pasos siguientes para establecer el horario laboral de un empleado.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
 
+## <a name="customize-employee-working-hours"></a>Personalización del horario laboral de los empleados
+
 1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **Bookings**.
 
-1. Elija el calendario. 
+1. Elija el calendario.
 
 1. En el panel de navegación, seleccione **Personal** y, a continuación, seleccione el miembro del personal cuyas horas desea establecer.
-
-   ![Imagen de Bookings pantalla de personal con el nombre resaltado.](../media/bookings-staff-name-highlight.png)
 
 1. En Horas laborables, desactive la casilla **Usar horas laborables** .
 

@@ -25,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: Agregue almacenamiento de archivos en la suscripción de Microsoft 365. Con el almacenamiento de archivos adicional, puede almacenar más contenido en SharePoint.
 ms.date: 04/02/2021
-ms.openlocfilehash: 687233ed91e358c3f48332a0b07aa3213734b71b
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: da66bac2bde52f5bcd899b73e5927008b40227dc
+ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731535"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64737472"
 ---
 # <a name="add-more-sharepoint-storage-to-your-subscription"></a>Agregar más SharePoint almacenamiento a la suscripción
 
@@ -112,4 +112,4 @@ Office 365 Extra File Storage está disponible para las siguientes suscripciones
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Administración de límites de almacenamiento de sitio](/sharepoint/manage-site-collection-storage-limits) (artículo)
+[Administrar límites de almacenamiento de sitio](/sharepoint/manage-site-collection-storage-limits) (artículo)\

@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: Programe cierres de oficinas y permisos de empleados en el calendario de Bookings para que los empleados queden marcados como no disponibles para reservas durante horas especificadas.
-ms.openlocfilehash: 138079643c9fbc86918a071f935ebe96d7989e68
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 1f20a28fa56f57680c547981f1c4d8357d75728e
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714777"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64747308"
 ---
 # <a name="schedule-business-closures-time-off-and-vacation-time"></a>Programar cierres comerciales, permisos y vacaciones
 
@@ -23,9 +23,11 @@ ms.locfileid: "64714777"
 
 En ocasiones, querrás cerrar tu negocio para eventos de vacaciones o de equipo, o tus empleados necesitarán tiempo libre cuando estén enfermos, de vacaciones o no estén disponibles por otros motivos. Puede programar el tiempo de espera del calendario de Microsoft Bookings y el empleado no estará disponible para las reservas durante el tiempo especificado. Una vez que la empresa vuelva a abrirse o los empleados vuelvan al trabajo, todos aparecerán en la página de reserva según sus horarios laborales establecidos.
 
-Vea este vídeo o siga los pasos que se indican a continuación para programar cierres empresariales o cierres de empleados.
+## <a name="watch-enter-business-hours-and-time-off-for-employees"></a>Inspección: Especificar horas de trabajo y tiempo libre para los empleados
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TxDC]
+
+Programe cierres empresariales o cierres de empleados.
 
 ## <a name="schedule-ad-hoc-business-closures"></a>Programar cierres empresariales ad hoc
 
@@ -35,7 +37,7 @@ Vea este vídeo o siga los pasos que se indican a continuación para programar c
 
 1. En el panel de navegación superior, seleccione **Agregar tiempo de expiración**.
 
-   ![Imagen de Bookings vista del calendario y el botón de tiempo de inasecución.](../media/bookings-calendar-timeoff.png)
+   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Bookings botón de vista de calendario y tiempo de expiración.":::
 
 1. Rellene los detalles, incluidos los títulos, la fecha y hora de inicio y finalización, la ubicación y las notas adicionales.
 
@@ -53,13 +55,13 @@ Cuando un cliente intenta programar el servicio un día en que la oficina está 
 
 1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **Bookings**.
 
-   ![Imagen del iniciador de aplicaciones.](../media/bookings-applauncher.png)
+   :::image type="content" source="../media/bookings-applauncher.png" alt-text="Iniciador de aplicaciones":::
 
 1. Elija el calendario.
 
 1. En el panel de navegación superior, seleccione **Agregar tiempo de expiración**.
 
-   ![Imagen de Bookings vista del calendario y el botón de tiempo de inasecución.](../media/bookings-calendar-timeoff.png)
+   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Bookings botón de vista de calendario y tiempo de expiración.":::
 
 1. Rellene los detalles, incluidos un título, una fecha y hora de inicio y finalización, una ubicación y más notas. Si el empleado se va a ir durante un día completo o durante varios días, seleccione **Evento de todo el día**.
 

@@ -1,16 +1,24 @@
-- name: M365 Office LTI
+- name: Microsoft 365 LTI
   href: index.md
-- name: Integraciones de Canvas
+- name: Administración de Microsoft OneLTI
+  href: manage-microsoft-one-lti.md
+- name: Integraciones de Lienzo
   items:
-    - name: Usar Microsoft OneDrive LTI con Canvas
+    - name: Uso de Microsoft OneDrive LTI con Canvas
       href: onedrive-lti.md
-    - name: Usar Microsoft Teams clases con Canvas
+    - name: Uso de clases de Microsoft Teams con Canvas
       href: teams-classes-with-canvas.md
-    - name: Usar Microsoft Teams reuniones con Canvas
+    - name: Uso de reuniones Microsoft Teams con Canvas
       href: teams-meetings-with-canvas.md
 - name: Integraciones de Blackboard
   items:
-    - name: Usar Microsoft OneDrive LTI con Blackboard
+    - name: Uso de Microsoft OneDrive LTI con Blackboard
       href: onedrive-lti-blackboard.md
-    - name: Usar Microsoft Teams clases con Blackboard Learn Ultra
+    - name: Uso de clases Microsoft Teams con Blackboard Learn Ultra
       href: teams-classes-with-blackboard.md
+- name: Integraciones de Moodle
+  items:
+    - name: Configuración y configuración del complemento Moodle
+      href: moodle-plugin-configuration.md
+    - name: Uso de clases y reuniones de Microsoft Teams con Moodle
+      href: teams-classes-meetings-with-moodle.md

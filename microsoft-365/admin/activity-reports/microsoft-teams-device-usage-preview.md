@@ -1,5 +1,5 @@
 ---
-title: Centro de administración de Microsoft 365 Teams de uso de aplicaciones
+title: Centro de administración de Microsoft 365 Teams informes de uso de aplicaciones
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,44 +20,48 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Obtenga información sobre las Microsoft Teams aplicaciones usadas en su organización obteniendo el Microsoft Teams de uso de aplicaciones de Microsoft 365 Informes.
-ms.openlocfilehash: 85f7c824a92840d132cbc97dc37e5fa3fe85ecf1
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: Obtenga información sobre las aplicaciones de Microsoft Teams que se usan en su organización mediante la obtención del informe de uso de Microsoft Teams aplicación de Microsoft 365 Reports.
+ms.openlocfilehash: 158c96772a79d6fb3a4b37f9593087661ea88070
+ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400858"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64738338"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 365 informes en el Centro de administración: Microsoft Teams uso de dispositivos
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>informes de Microsoft 365 en el centro de administración: Microsoft Teams uso del dispositivo
 
-El panel Microsoft 365 informes le muestra la introducción a la actividad en todos los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso de aplicaciones de Microsoft Teams puede obtener estadísticas sobre las aplicaciones de Microsoft Teams que se usan en su organización.
+En el panel informes de Microsoft 365 se muestra la información general sobre la actividad en los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso de aplicaciones de Microsoft Teams puede obtener estadísticas sobre las aplicaciones de Microsoft Teams que se usan en su organización.
   
 ## <a name="how-to-get-to-the-microsoft-teams-app-usage-report"></a>Cómo obtener el informe de uso de aplicaciones de Microsoft Teams
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso. 
-2. En la página principal del panel, haga clic en el botón **Ver más** en la Microsoft Teams de actividad.
+2. En la página principal del panel, haga clic en el botón **Ver más** de la tarjeta de actividad Microsoft Teams.
   
 ## <a name="interpret-the-microsoft-teams-app-usage-report"></a>Interpretar el informe de uso de aplicaciones de Microsoft Teams
 
-Puedes ver el uso del dispositivo en el informe Teams seleccionando la **pestaña Uso del** dispositivo.<br/>![Microsoft 365: Microsoft Teams de dispositivos.](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
+Para ver el uso del dispositivo en el informe de Teams, elija la pestaña **Uso del** dispositivo.<br/>![informes de Microsoft 365: Microsoft Teams uso del dispositivo.](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
 
-Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Teams de dispositivo de usuario: elija columnas.](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
+Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Teams informe de dispositivo de usuario: elija columnas.](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
 
-También puede exportar los datos del informe a un Excel .csv archivo seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
+También puede exportar los datos del informe a un archivo Excel .csv seleccionando el vínculo **Exportar**. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
 
-Puede visualizar el informe **Uso de dispositivos de Microsoft Teams** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
+Puede visualizar el informe **Uso de dispositivos de Microsoft Teams** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
 |Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |El nombre para mostrar del usuario.  <br/> |
-|Windows  <br/> |Se selecciona si el usuario estaba activo en el Teams de escritorio en un equipo Windows equipo basado en el usuario.  <br/> |
-|Mac  <br/> |Se selecciona si el usuario estaba activo en el Teams de escritorio en un equipo macOS.  <br/> |
-|iOS  <br/> |Se selecciona si el usuario estaba activo en el Teams móvil para iOS.  <br/> |
-|Teléfono Android  <br/> | Se selecciona si el usuario estaba activo en el Teams móvil para Android.  <br/> |
-|Chrome OS  <br/> |Se selecciona si el usuario estaba activo en el Teams de escritorio en un equipo ChromeOS.|
-|Linux  <br/> | Se selecciona si el usuario estaba activo en el Teams de escritorio en un equipo Linux.  <br/> |
-|Web  <br/> |Se selecciona si el usuario estaba activo en el Teams cliente web en dispositivos.|
-|Fecha de última actividad (UTC)  <br/> |La última fecha (UTC) en la que el usuario participó en una Teams actividad .  <br/> |
+|Windows  <br/> |Seleccionado si el usuario estaba activo en el cliente de escritorio de Teams en un equipo basado en Windows.  <br/> |
+|Mac  <br/> |Seleccionado si el usuario estaba activo en el cliente de escritorio de Teams en un equipo macOS.  <br/> |
+|iOS  <br/> |Se ha seleccionado si el usuario estaba activo en el cliente móvil de Teams para iOS.  <br/> |
+|Teléfono Android  <br/> | Seleccionado si el usuario estaba activo en el cliente móvil de Teams para Android.  <br/> |
+|Chrome OS  <br/> |Seleccionado si el usuario estaba activo en el cliente de escritorio de Teams en un equipo ChromeOS.|
+|Linux  <br/> | Seleccionado si el usuario estaba activo en el cliente de escritorio de Teams en un equipo Linux.  <br/> |
+|Web  <br/> |Se ha seleccionado si el usuario estaba activo en el cliente web de Teams en los dispositivos.|
+|Fecha de la última actividad (UTC)  <br/> |La última fecha (UTC) en la que el usuario participó en una actividad de Teams.  <br/> |
 |Tiene licencia|Se selecciona si el usuario tiene licencia para usar Teams.|
-|||
+
+## <a name="see-also"></a>Consulte también
+[Informe de actividad de usuario de Microsoft Teams](../activity-reports/microsoft-teams-user-activity-preview.md) 
+
+[Microsoft Teams informe de actividad de uso](../activity-reports/microsoft-teams-usage-activity.md) 

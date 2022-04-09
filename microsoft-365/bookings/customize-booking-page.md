@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Cambie el tema de color de la página de reserva en la aplicación Microsoft Bookings.
-ms.openlocfilehash: 4fd33d39c9fda4588d24b51a70d589965fece28f
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: bd6c3fc601800cdfca93e9e1a6adc494df1bd67e
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713897"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64747200"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Personalizar y publicar la página de reserva
 
@@ -37,7 +37,7 @@ En la sección siguiente se proporciona información sobre cómo configurar la p
 
     La página de reserva interna tiene este aspecto:
 
-    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="Página Bookings.":::
+    :::image type="content" source="media/bookings-internal-page-1.png" alt-text="Página Bookings.":::
 
 - **Control de acceso a la página de reserva: requerir una cuenta de Microsoft 365 de mi organización para reservar** Seleccionar esta opción solo permitirá que los usuarios de su organización vean su página o reserven cualquier servicio. El acceso a la página se autoriza a través de comprobaciones de credenciales para asegurarse de que el visitante pertenece a una cuenta dentro del inquilino.
 
@@ -55,7 +55,7 @@ En la sección siguiente se proporciona información sobre cómo configurar la p
 
 Una vez publicada la página de reservas, los clientes verán su página de reserva donde pueden reservar citas con usted. La página de reserva orientada al cliente tiene este aspecto:
 
-:::image type="content" source="media/bookings-self-service.jpg" alt-text="Página de reserva orientada al cliente.":::
+:::image type="content" source="media/bookings-self-service-2.png" alt-text="Página de reserva orientada al cliente.":::
 
 ## <a name="publish-the-booking-page"></a>Publicar la página de reserva
 
@@ -75,4 +75,4 @@ Vea este vídeo o siga los pasos siguientes para publicar o anular la publicaci�
 
 ## <a name="unpublish-the-booking-page"></a>Anular publicación de la página de reserva
 
- - Para anular la publicación de la página de reserva, vaya a la página Booking (Reserva) y seleccione **Unpublish (Anular publicación**).
+Para anular la publicación de la página de reserva, vaya a la página Booking (Reserva) y seleccione **Unpublish (Anular publicación**).

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: b8f15212916566e169efa63556b897600f7092a3
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: af165f3565e3601ac4e8118535af3913c2cb2af8
+ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705262"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64737435"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Paso 6. Supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad
 
@@ -51,9 +51,9 @@ Si Defender para punto de conexión aún no se ha configurado, trabaje con el ad
 
 Con Microsoft Defender para punto de conexión implementado, puede aprovechar las señales de riesgo de amenazas. Esto le permite bloquear el acceso a los dispositivos en función de su puntuación de riesgo. Microsoft recomienda permitir el acceso a dispositivos con una puntuación de riesgo media o inferior.
 
-Para Android e iOS/iPadOS, se pueden usar señales de amenazas dentro de las directivas de protección de aplicaciones (APP). Para obtener información sobre cómo configurar esto, consulte [Crear y asignar directiva de protección de aplicaciones para establecer el nivel de riesgo del dispositivo](/mem/intune/protect/advanced-threat-protection-configure).
+Para Android e iOS/iPadOS, se pueden usar señales de amenazas dentro de las directivas de protección de aplicaciones (APP). Para obtener información sobre cómo configurar esto, consulte [Crear y asignar directiva de protección de aplicaciones para establecer el nivel de riesgo del dispositivo](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level).
 
-Para todas las plataformas, puede establecer el nivel de riesgo en las directivas de cumplimiento de dispositivos existentes. Consulte [Crear y asignar directivas de cumplimiento para establecer el nivel de riesgo del dispositivo](/mem/intune/protect/advanced-threat-protection-configure).
+Para todas las plataformas, puede establecer el nivel de riesgo en las directivas de cumplimiento de dispositivos existentes. Consulte [Crear una directiva de acceso condicional](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy). 
 
 ## <a name="deploy-security-baselines-and-monitor-compliance-to-these-settings"></a>Implementar líneas base de seguridad y supervisar el cumplimiento de esta configuración
 

@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: Instrucciones para especificar información sobre ofertas de servicio, incluidos el nombre del servicio, la descripción, la ubicación, la duración y los precios. También puede etiquetar a los empleados calificados para proporcionar el servicio.
-ms.openlocfilehash: 7d4bd5d8e75610785176f8c527576b0609cf71a4
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 576babc8a1cc64734c3d11f761b3b848d3fb2639
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714403"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746683"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Definir las ofertas de servicio en Bookings
 
@@ -89,8 +89,6 @@ También puede agregar información personalizada y direcciones URL a la confirm
 
 4. En la página **Opciones de disponibilidad** , puede ver las opciones que ha seleccionado en la **página Reserva** para la directiva de programación y la disponibilidad del personal. Para obtener más información, consulte [Establecer las directivas de programación](set-scheduling-policies.md).
 
-    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Ejemplo de configuración del número máximo de asistentes en Bookings.":::
-
 5. **Precio predeterminado**  Este es el precio que se mostrará en la página de Self-Service. Si **se selecciona Price not set (Precio no establecido** ), no aparecerá ningún precio o referencia al costo o al precio.
 
 6. **Notas** Este campo aparece en el evento de reserva del personal reservado, así como en el evento que aparece en la pestaña Calendario de la aplicación web de Bookings.
@@ -101,7 +99,7 @@ También puede agregar información personalizada y direcciones URL a la confirm
 
 8. En la página **Avisos y confirmaciones** , puede configurar avisos y notificaciones que envíe. Los avisos y las notificaciones se envían a los clientes, miembros del personal o ambos, en un momento especificado antes de la cita. Se pueden crear varios mensajes para cada cita, según sus preferencias.
 
-   :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Un correo electrónico de confirmación de Bookings.":::
+   :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="Un correo electrónico de confirmación de Bookings.":::
 
    Puede incluir cualquier texto adicional que desee aquí, como información sobre la reprogramación o lo que los clientes deben traer para la cita. A continuación se muestra un ejemplo de texto personalizado agregado al correo electrónico de confirmación original, que se muestra en el campo **Información adicional para confirmación por correo electrónico** :
 

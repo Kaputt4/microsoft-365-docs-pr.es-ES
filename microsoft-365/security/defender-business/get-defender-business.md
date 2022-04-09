@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/08/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: cb85f5391a6ee6c25d4f82f6f6819132bb8d3b02
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 830149a1592aa2985b603d2e9f317250c7c2606a
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663058"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746544"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtener Microsoft Defender para Empresas
 
@@ -115,27 +115,16 @@ Cuando reciba el correo electrónico de aceptación, aquí le mostremos cómo ac
 
 3. Cuando inicie sesión por primera vez, irá al Centro de administración de Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)). Consulte [Información general de la Centro de administración de Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
 
-4. Utilice uno de los procedimientos siguientes:
+4. Utilice uno de los procedimientos siguientes:<br/>
 
-   - Si va a configurar una suscripción de Microsoft 365 por primera vez, seleccione **Ir a la configuración guiada** y complete los pasos siguientes:
-
-      a. Instale las aplicaciones de Office ahora o elija **Continuar** para omitir este paso. (Puede instalar las aplicaciones de Office más adelante).
-
-      b. Si su empresa tiene un dominio, puede agregarlo ahora (se recomienda esta opción). Como alternativa, podría optar por usar el dominio predeterminado `.onmicrosoft.com` por ahora.
-
-      c. Agregue usuarios y asigne licencias. A cada usuario que enumere se le asignará automáticamente una licencia. Consulte [Agregar usuarios y asignar licencias al mismo tiempo](../../admin/add-users/add-users.md).
-
-   - Si va a agregar una prueba a un inquilino de Microsoft 365 existente, siga estos pasos para asignar las nuevas licencias a los usuarios:
-
-      a. Vaya al Centro de administración de Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) e inicie sesión.
-
-      b. En el panel de navegación, elija **UsuariosUsuarios** >  **activos**. Revise la lista de usuarios. 
-
-      c. Para asignar licencias, siga las instrucciones de [Asignación de licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md).
+   | Escenario | Procedure |
+   |:---|:---|
+   | Está configurando una suscripción de Microsoft 365 por primera vez. | Seleccione **Ir a la configuración guiada** y complete los pasos siguientes:<br/><br/>1. Instale las aplicaciones de Office ahora o elija **Continuar** para omitir este paso. (Puede instalar las aplicaciones de Office más adelante).<br/><br/>2. Si su empresa tiene un dominio, puede agregarlo ahora (se recomienda esta opción). Como alternativa, podría optar por usar el dominio predeterminado `.onmicrosoft.com` por ahora.<br/><br/>3. Agregar usuarios y asignar licencias. A cada usuario que enumere se le asignará automáticamente una licencia. Consulte [Agregar usuarios y asignar licencias al mismo tiempo](../../admin/add-users/add-users.md). |
+   | Va a agregar una prueba a un inquilino de Microsoft 365 existente. | 1. Vaya al Centro de administración de Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) e inicie sesión.<br/><br/>2. En el panel de navegación, elija **UsuariosUsuarios** >  **activos**. Revise la lista de usuarios. <br/><br/>3. Para asignar licencias, siga las instrucciones de [Asignación de licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md). |
 
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Configure y configure Microsoft Defender para Empresas](mdb-setup-configuration.md).
+1. [Use el asistente para la instalación en Microsoft Defender para Empresas](mdb-use-wizard.md) o [vea el proceso de configuración y configuración de Defender para empresas](mdb-setup-configuration.md).
 
-- [Obtenga ayuda y soporte técnico para Microsoft Defender para Empresas](mdb-get-help.md)
+2. [Vea cómo obtener ayuda y soporte técnico para Defender for Business](mdb-get-help.md) (por si necesita ayuda)
