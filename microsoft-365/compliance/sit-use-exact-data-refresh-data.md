@@ -1,5 +1,5 @@
 ---
-title: Actualizar el archivo de tabla de origen de información que coincide exactamente con los datos
+title: Actualizar el archivo de tabla de origen de información que no distingue coincidencias exactas de datos
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,25 +17,25 @@ search.appverid:
 - MET150
 description: Actualice el archivo de tabla de origen de información confidencial.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 347ff88391a19cb3d8688b1142e524a163159b6f
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: fe72fac43d3cc9a568d8aa1c5d985d34f8477a4d
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525492"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760853"
 ---
-# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Actualizar el archivo de tabla de origen de información confidencial de coincidencia de datos exactos 
+# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>Actualizar el archivo de tabla de origen de información confidencial de coincidencia exacta de datos 
 
-Puede actualizar la base de datos de información confidencial hasta 5 veces en cada período de 24 horas. Tendrás que volver ahajar y cargar la tabla de origen de información confidencial.
+Puede actualizar la base de datos de información confidencial hasta 5 veces en cada período de 24 horas. Tendrá que volver a establecer y cargar la tabla de origen de información confidencial.
 
-1. Vuelva a exportar los datos confidenciales a una aplicación, como Microsoft Excel, y guarde el archivo en un formato delimitado .csv, formato .tsv o canalización (|). Mantenga el mismo nombre de archivo y la misma ubicación que usó cuando ha hashado y cargado previamente el archivo. Vea Export [source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) para obtener información detallada sobre cómo exportar los datos confidenciales y obtenerlos en el formato correcto.
+1. Vuelva a exportar los datos confidenciales a una aplicación, como Microsoft Excel, y guarde el archivo en formato delimitado .csv, formato .tsv o canalización (|). Mantenga el mismo nombre de archivo y ubicación que usó cuando anteriormente ha cargado y ha cargado el archivo con hash. Consulte [Exportación de datos de origen para obtener información confidencial exacta basada en coincidencias de datos](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) para obtener más información sobre cómo exportar los datos confidenciales y obtenerlos en el formato correcto.
 
       > [!NOTE]
-      > Si no hay cambios en la estructura (nombres de campo) del archivo de tabla de origen de información confidencial, no tendrá que realizar cambios en el archivo de esquema de base de datos al actualizar los datos. Pero si necesita realizar cambios, asegúrese de editar el esquema de la base de datos y su paquete de reglas consecuentemente. Consulta Administrar [el esquema exacto de coincidencia de datos](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) para ver los pasos para editar o quitar un esquema. Consulta Crear datos [exactos que coincidan con](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) el tipo de información confidencial/paquete de regla para los pasos para editar o quitar el paquete de reglas/SIT de EDM.
+      > Si no hay cambios en la estructura (nombres de campo) del archivo de tabla de origen de información confidencial, no tendrá que realizar ningún cambio en el archivo de esquema de base de datos al actualizar los datos. Pero si necesita realizar cambios, asegúrese de editar el esquema de la base de datos y su paquete de reglas consecuentemente. Vea [Administrar el esquema de coincidencia de datos exacto](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) para ver los pasos para editar o quitar un esquema. Consulte [Creación de un paquete de reglas o tipo de información confidencial de coincidencia de datos exactos](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) para ver los pasos para editar o quitar el paquete sit/rule de EDM.
 
-2. Use los procedimientos de [Hash y cargue](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) la tabla de origen de información confidencial para obtener datos exactos que coincidan con los tipos de información confidencial para cargar el archivo de origen de la tabla de información confidencial.
+2. Use los procedimientos de [Hash y cargue la tabla de origen de información confidencial para que los datos exactos coincidan con los tipos de información confidencial](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) para cargar el archivo de origen de la tabla de información confidencial.
 
-2. Puede usar el [Programador de tareas para](/windows/desktop/TaskSchd/task-scheduler-start-page) automatizar el [hash y cargar](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) la tabla de origen de información confidencial para el procedimiento de tipos de información confidencial de coincidencia de datos exactos. Puede programar tareas con varios métodos:
+3. Puede usar [el Programador de tareas](/windows/desktop/TaskSchd/task-scheduler-start-page) para automatizar el [hash y cargar la tabla de origen de información confidencial para obtener datos exactos que coincidan con el procedimiento de tipos de información confidencial](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) . Puede programar tareas con varios métodos:
 
    |Método|Qué hacer|
    |---|---|
@@ -47,7 +47,7 @@ Puede actualizar la base de datos de información confidencial hasta 5 veces en 
 
 Esta sección incluye un script de PowerShell de ejemplo que puede usar para programar las tareas de creación de hash para los datos y cargar los datos con hash:
 
-#### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>Programar hash y cargar en un paso combinado
+#### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>Programación de hash y carga en un paso combinado
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -82,7 +82,7 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### <a name="schedule-hashing-and-upload-as-separate-steps"></a>Programar hash y cargar como pasos independientes
+#### <a name="schedule-hashing-and-upload-as-separate-steps"></a>Programación de hash y carga como pasos independientes
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)

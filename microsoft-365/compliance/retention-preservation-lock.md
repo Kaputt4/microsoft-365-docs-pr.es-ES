@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use el Bloqueo de conservación con las directivas de retención y las directivas de etiquetas de retención para ayudar a cumplir los requisitos normativos y protegerse frente a administradores no autorizados.
-ms.openlocfilehash: 64c2bb8f2718ce0da9d638b5b8b6bd4f89d33668
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: ac957475474e1d99dff541ac9a208ae5dc681217
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60432678"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64761735"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>Usar el Bloqueo de conservación para restringir los cambios en las directivas de retención y en las directivas de las etiquetas de retención
 
@@ -68,7 +68,7 @@ Todas las directivas de retención, con cualquier configuración, admiten el Blo
 3. Para colocar un Bloqueo de preservación en la directiva, ejecute el cmdlet [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) con el nombre de la directiva, y con el parámetro *RestrictiveRetention* establecido en true:
     
     ```powershell
-    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
+    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" -RestrictiveRetention $true
     ```
     
     Por ejemplo:

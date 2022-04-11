@@ -1,5 +1,5 @@
 ---
-title: Diseñar una directiva de prevención de pérdida de datos
+title: Diseño de una directiva de prevención de pérdida de datos
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,96 +14,95 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo diseñar una directiva de prevención de pérdida de datos (DLP)
-ms.openlocfilehash: 14e9fbb5efd20ddcf3d0a47da41a0cce89c88cee
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+description: Aprenda a diseñar una directiva de prevención de pérdida de datos (DLP)
+ms.openlocfilehash: af09197784607dd6c8f8d939f4d091b365d51799
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526324"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760611"
 ---
-# <a name="design-a-data-loss-prevention-policy"></a>Diseñar una directiva de prevención de pérdida de datos
+# <a name="design-a-data-loss-prevention-policy"></a>Diseño de una directiva de prevención de pérdida de datos
 
-Tomarse el tiempo para diseñar una directiva antes de implementarla le llevará a los resultados deseados más rápido y con menos problemas no deseados, que crearla y, a continuación, ajustar solo por prueba y error. Tener los diseños de directivas documentados también le ayudará en comunicaciones, revisiones de directivas, solución de problemas y ajuste adicional.
+Tomarse el tiempo necesario para diseñar una directiva antes de implementarla le llevará a los resultados deseados más rápido y con menos problemas no deseados, que crearla y, a continuación, ajustarla solo por prueba y error. La documentación de los diseños de directivas también le ayudará en comunicaciones, revisiones de directivas, solución de problemas y optimización adicional.
 
 <!--, but excessive tuning to get the intended results can be time consuming.
 
  if you have to do a lot of tuning to get a policy to yield the intended results can be time consuming .-->
 
-Si es nuevo en Microsoft 365 DLP, es útil trabajar con estos artículos antes de empezar a diseñar una directiva:
+Si no está familiarizado con Microsoft 365 DLP, es útil trabajar con estos artículos antes de empezar a diseñar una directiva:
 
-- [Obtenga información sobre la prevención de pérdida](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) de datos: este artículo le presenta la disciplina de prevención de pérdida de datos y la implementación de DLP por parte de Microsoft
-- [Planear la prevención de pérdida de datos (DLP):](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) al trabajar con este artículo, podrá:
-    - [Identificar partes interesadas](dlp-overview-plan-for-dlp.md#identify-stakeholders)
-    - [Describir las categorías de información confidencial que se protegerán](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
-    - [Establecer objetivos y estrategia](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
-- [Referencia de directiva de prevención](dlp-policy-reference.md#data-loss-prevention-policy-reference) de pérdida de datos: en este artículo se presentan todos los componentes de una directiva DLP y cómo cada uno influye en el comportamiento de una directiva
+- [Más información sobre la prevención de pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) : en este artículo se presenta la materia de prevención de pérdida de datos y la implementación de DLP por parte de Microsoft.
+- [Planear la prevención de pérdida de datos (DLP):](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) al trabajar en este artículo, podrá:
+  - [Identificación de las partes interesadas](dlp-overview-plan-for-dlp.md#identify-stakeholders)
+  - [Describir las categorías de información confidencial que se van a proteger](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
+  - [Establecer objetivos y estrategias](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
+- Referencia de directiva [de prevención de pérdida de datos](dlp-policy-reference.md#data-loss-prevention-policy-reference): en este artículo se presentan todos los componentes de una directiva DLP y cómo influye cada uno en el comportamiento de una directiva.
 
-## <a name="policy-design-overview"></a>Introducción al diseño de directivas
+## <a name="policy-design-overview"></a>Información general sobre el diseño de directivas
 
-[El diseño de una directiva se](#policy-design-process) trata principalmente de definir claramente sus necesidades empresariales, documentarlas en una instrucción de intención de directiva y, [a](#define-intent-for-the-policy) continuación, [asignarlas a la configuración de directivas](#map-business-needs-to-policy-configuration). Usará las decisiones que ha tomado en la fase de planeación para informar de algunas de las decisiones de diseño de directivas. 
+[Diseñar una directiva](#policy-design-process) consiste principalmente en definir claramente [las necesidades empresariales, documentarlas en una declaración de intención de directiva](#define-intent-for-the-policy) y, a continuación, [asignarlas a la configuración de directivas](#map-business-needs-to-policy-configuration). Usará las decisiones que tomó en la fase de planeación para informar de algunas de las decisiones de diseño de directivas.
 
-### <a name="define-intent-for-the-policy"></a>Definir la intención de la directiva 
+### <a name="define-intent-for-the-policy"></a>Definición de la intención de la directiva
 
-Debería poder resumir la intención empresarial de cada directiva que tenga en una sola instrucción. El desarrollo de esta instrucción impulsará las conversaciones de la organización y, cuando se desarrolle completamente, esta instrucción vincula directamente la directiva con un propósito empresarial y proporciona una guía básica para el diseño de directivas. Los pasos del artículo [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#overview-of-planning-process) le ayudarán a empezar a usar la instrucción de propósito de la directiva.  
+Debería poder resumir la intención empresarial de cada directiva que tenga en una sola instrucción. El desarrollo de esta declaración impulsará las conversaciones en su organización y, cuando se completa, esta declaración vincula directamente la directiva a un propósito empresarial y proporciona una hoja de ruta para el diseño de directivas. Los pasos del artículo [Planear la prevención de pérdida de datos (DLP)](dlp-overview-plan-for-dlp.md#overview-of-planning-process) le ayudarán a empezar a trabajar en la instrucción de intención de directiva.
 
-Recuerde en [dlp policy configuration overview](dlp-learn-about-dlp.md#dlp-policy-configuration-overview) that all DLP policies require that you:
+Recuerde en [la introducción a la configuración de directivas DLP](dlp-learn-about-dlp.md#dlp-policy-configuration-overview) que todas las directivas DLP requieren lo siguiente:
 
-- Elegir lo que desea supervisar
-- Elegir dónde desea supervisar
-- Elija las condiciones que deben coincidir para que una directiva se aplique a un elemento
-- Elegir la acción que se debe realizar cuando se cumplen las condiciones de la directiva 
+- Elegir lo que quiere supervisar
+- Elija dónde desea supervisar
+- Elija las condiciones que deben coincidir para que una directiva se aplique a un elemento.
+- Elija la acción que debe realizarse cuando se cumplan las condiciones de la directiva.
 
-Por ejemplo, este es un primer borrador ficticio de una instrucción intent que proporciona respuestas a las cuatro preguntas: 
+Por ejemplo, este es un primer borrador ficticio de una instrucción de intención que proporciona respuestas a las cuatro preguntas:
 
-*"Somos una organización con sede en Estados Unidos Office y debemos detectar documentos que contienen información confidencial de atención médica cubierta por HIPPA que se almacenan en OneDrive/SharePoint y proteger contra esa información que se comparte en mensajes de chat y canal y restringir Teams que todos compartan con terceros no autorizados".* 
+*"Somos una organización con sede en Ee. UU., y debemos detectar Office documentos que contienen información confidencial de atención médica cubierta por HIPPA que se almacenan en OneDrive/SharePoint y proteger contra esa información que se comparte en Teams mensajes de chat y canal, y impedir que todos los usuarios los compartan con terceros no autorizados".*
 
 A medida que desarrolle un diseño de directiva, es probable que modifique y extienda la instrucción.
 
-### <a name="map-business-needs-to-policy-configuration"></a>Asignar las necesidades empresariales a la configuración de directivas
+### <a name="map-business-needs-to-policy-configuration"></a>Asignación de las necesidades empresariales a la configuración de directivas
 
-Vamos a dividir la instrucción de borrador de ejemplo hacia abajo y asignarla a puntos de configuración de directiva DLP.
+Vamos a desglosar la instrucción de borrador de ejemplo y asignarla a puntos de configuración de directiva DLP.
 
-|Instrucción  |Respuesta a la pregunta de configuración y asignación de configuración  |
+|Instrucción  |Pregunta de configuración respondida y asignación de configuración  |
 |---------|---------|
-| "Somos una organización con sede en Estados Unidos y debemos detectar documentos Office que contienen información confidencial de atención médica cubierta por HIPPA...  |- **Qué supervisar**: Office documentos, use la plantilla ley de seguros de salud [(HIPAA)](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) de Estados Unidos </br>- Condiciones para una coincidencia: (preconfigurada pero editable): el elemento contiene el número del SSN y la Agencia antidrogas (DEA) de ESTADOS UNIDOS, clasificación internacional de las enfermedades (ICD-9-CM), clasificación internacional de las enfermedades (ICD-10-CM), el contenido se comparte con personas ajenas **a** mi organización.  </br> - impulsa las conversaciones para aclarar el umbral de activación para la [detección, como](sensitive-information-type-learn-about.md#more-on-confidence-levels) los niveles de confianza [, y el](dlp-policy-reference.md#content-contains) recuento de instancias (denominado tolerancia a fugas).|
-|... que se almacenan en OneDrive/SharePoint y protegen contra esa información que se comparte Teams chat y mensajes de canal... |- **Dónde supervisar**: [ámbito de](dlp-policy-reference.md#locations) ubicación incluyendo o excluyendo OneDrive y SharePoint sitios y Teams cuentas de chat/canal o grupos de distribución. |
-|... y restringir que todos compartan esos elementos con terceros no autorizados".  | - **Acciones que se deben realizar**: [agregar restringir el](dlp-policy-reference.md#actions) *acceso o cifrar el contenido en Microsoft 365 ubicación* </br> - impulsa la conversación sobre qué acciones tomar cuando se desencadena una directiva, incluidas acciones de protección como restricciones de uso compartido, acciones de reconocimiento como notificaciones y alertas, y acciones de habilitación del usuario como permitir invalidaciones de usuario de una acción de bloqueo |
+| "Somos una organización con sede en Ee. UU., y necesitamos detectar Office documentos que contienen información confidencial de atención médica cubierta por HIPPA...  |- **Qué supervisar**: Office documentos, use la plantilla de la Ley de [seguros de salud (HIPAA) de EE. UU.](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) </br>- **Condiciones para una coincidencia**: (preconfigurado pero modificable): el elemento contiene el número de la SSN estadounidense y la Agencia antidrogas (DEA), clasificación internacional de enfermedades (ICD-9-CM), clasificación internacional de enfermedades (ICD-10-CM), el contenido se comparte con personas ajenas a mi organización.  </br> : impulsa las conversaciones para aclarar el umbral desencadenante para la detección, como [los niveles de confianza](sensitive-information-type-learn-about.md#more-on-confidence-levels), y el [recuento de instancias](dlp-policy-reference.md#content-contains) (denominado tolerancia a fugas).|
+|... que se almacenan en OneDrive/SharePoint y protegen contra esa información que se comparte Teams mensajes de chat y canales... |- **Dónde supervisar**: [ámbito de la ubicación](dlp-policy-reference.md#locations) mediante la inclusión o exclusión de OneDrive y SharePoint sitios y Teams cuentas de chat o canal o grupos de distribución. |
+|... y impedir que todos compartan esos elementos con terceros no autorizados".  | - **Acciones que debe realizar**: [agregue](dlp-policy-reference.md#actions) *Restringir el acceso o cifrar el contenido en Microsoft 365 ubicaciones* </br> : impulsa la conversación sobre las acciones que se deben realizar cuando se desencadena una directiva, incluidas acciones de protección, como restricciones de uso compartido, acciones de reconocimiento como notificaciones y alertas, y acciones de empoderamiento del usuario, como permitir invalidaciones de usuario de una acción de bloqueo. |
 
-En este ejemplo no se cubren todos los puntos de configuración de una directiva DLP, tendría que expandirse. Pero debería hacer que piense en la dirección correcta a medida que desarrolle sus propias instrucciones de propósito de directiva DLP.
+En este ejemplo no se tratan todos los puntos de configuración de una directiva DLP, tendría que expandirse. Pero debería hacer que piense en la dirección correcta a medida que desarrolle sus propias instrucciones de intención de directiva DLP.
 
 > [!IMPORTANT]
-> Ten en cuenta que las ubicación(s) que eliges afectan si puedes usar tipos de información confidencial, etiquetas de confidencialidad y etiquetas de retención, así como las acciones disponibles. Consulte Referencia [de directiva de prevención de pérdida de datos](dlp-policy-reference.md#data-loss-prevention-policy-reference).
+> Tenga en cuenta que las ubicaciones que elija afectarán a si puede usar tipos de información confidencial, etiquetas de confidencialidad y etiquetas de retención, así como las acciones que están disponibles. Consulte referencia de directiva [de prevención de pérdida de datos](dlp-policy-reference.md#data-loss-prevention-policy-reference).
 
 ## <a name="policy-design-process"></a>Proceso de diseño de directivas
 
-1. Complete los pasos descritos en:
-    1. [Planear la prevención de pérdida de datos (DLP):](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) al trabajar con este artículo, podrá:
-        1. [Identifique las partes interesadas](dlp-overview-plan-for-dlp.md#identify-stakeholders)
-        1. [Describir las categorías de información confidencial que se protegerán](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
-        1. [Establecer objetivos y estrategia](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
-        1. [Definir el plan de implementación de directivas](dlp-overview-plan-for-dlp.md#policy-deployment)
+1. Complete los pasos [descritos en Planear la prevención de pérdida de datos (DLP):](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) para ello, siga estos pasos:
+   1. [Identifique las partes interesadas](dlp-overview-plan-for-dlp.md#identify-stakeholders)
+   1. [Describir las categorías de información confidencial que se van a proteger](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
+   1. [Establecer objetivos y estrategias](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
+   1. [Definición del plan de implementación de directivas](dlp-overview-plan-for-dlp.md#policy-deployment)
 
-1. Familiarícese con la [referencia](dlp-policy-reference.md#data-loss-prevention-policy-reference) de directiva de prevención de pérdida de datos para que comprenda todos los componentes de una directiva DLP y cómo cada uno influye en el comportamiento de una directiva.
+2. Familiarícese con la referencia de directiva [de prevención de pérdida de datos](dlp-policy-reference.md#data-loss-prevention-policy-reference) para comprender todos los componentes de una directiva DLP y cómo influye cada uno en el comportamiento de una directiva.
 
-1. Familiarícese con [lo que incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md#what-the-dlp-policy-templates-include).
+3. Familiarícese con [lo que incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md#what-the-dlp-policy-templates-include).
 
-1. Desarrolle la declaración de intenciones de directiva con las partes interesadas clave. Consulte el ejemplo anterior de este artículo.
+4. Desarrolle la declaración de intenciones de la directiva con las partes interesadas clave. Consulte el ejemplo anterior de este artículo.
 
-1. Determine cómo se ajusta esta directiva a su estrategia de directiva DLP general.
+5. Determine cómo encaja esta directiva en su estrategia de directiva DLP general.
 
-> [!IMPORTANT]
-> No se puede cambiar el nombre de las directivas una vez creadas. Si debe cambiar el nombre de una directiva, tendrá que crear una nueva con el nombre deseado y retirar la anterior. Así que decide la estructura de nomenclatura que usarán todas las directivas ahora. 
+   > [!IMPORTANT]
+   > No se puede cambiar el nombre de las directivas una vez creadas. Si debe cambiar el nombre de una directiva, tendrá que crear una nueva con el nombre deseado y retirar la anterior. Por lo tanto, decida la estructura de nomenclatura que todas las directivas usarán ahora.
 
-6. Asigne los elementos de la instrucción de propósito de directiva a las opciones de configuración.
+6. Asigne los elementos de la instrucción de intención de directiva a las opciones de configuración.
 
-7. Decide desde qué plantilla de directiva empezarás, predefinida o personalizada.
+7. Decida desde qué plantilla de directiva va a empezar, predefinida o personalizada.
 
-8. Vaya a través de la plantilla y reúna toda la información necesaria antes de crear la directiva. Es probable que encuentre que hay algunos puntos de configuración que no se tratan en la instrucción de intención de directiva. Eso está bien. Vuelva a las partes interesadas para averiguar los requisitos de los puntos de configuración que faltan. 
+8. Consulte la plantilla y reúna toda la información necesaria antes de crear la directiva. Es probable que descubra que hay algunos puntos de configuración que no se tratan en la instrucción de intención de directiva. Eso está bien. Volver a las partes interesadas para establecer los requisitos de los puntos de configuración que faltan.
 
-9. Documente la configuración de todas las opciones de directiva y repase con las partes interesadas. Puede volver a usar la asignación de la instrucción de propósito de directiva a los puntos de configuración, que ahora está totalmente ensalzado.
+9. Documente la configuración de todas las opciones de directiva y revíselas con las partes interesadas. Puede volver a usar la asignación de la instrucción de intención de directiva a los puntos de configuración, que ahora está totalmente completo.
 
-10. [Cree un borrador](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy) de directiva y vuelva a consultar el plan [de implementación de directivas](dlp-overview-plan-for-dlp.md#policy-deployment) .
+10. [Cree un](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy) borrador de directiva y refiérase al plan de [implementación de directivas](dlp-overview-plan-for-dlp.md#policy-deployment) .
 
 <!--## Policy design examples
 
@@ -134,11 +133,11 @@ En este ejemplo no se cubren todos los puntos de configuración de una directiva
 
 
 - whether the protective actions you need are supported throught the associated location or if you need to compromise to extend coverage
-    - also usefule for identifying the most restrictive actions available 
+    - also usefule for identifying the most restrictive actions available
     - (we shouldn't mention here that the "content contains" condition is the primary staple for a DLP policy and should be utilized as a starting point for policy creation. The other workload-specific conditions can be ustilized as an extended or granular control of company's DLP policy. Useful for when "too much" data is being restricted and known sensitive data typically falls under certain conditions.)
     - (We can mention here that their quantitative goal such as "protect X% of data across all locations while maintaining x productivity" can be monitored throught alerts or reports. If protection is too high of working against their established goals, they can come back to policy and tweak their conditions/actions)
-- Finally, you should have a union of what, hwo and when to be covered which will easily map to generating a live policy via Microsoft DLP. 
-- 
+- Finally, you should have a union of what, hwo and when to be covered which will easily map to generating a live policy via Microsoft DLP.
+-
 5. At this stage you should asses how you should start this policy. ***LINK OUT TO DEPLOYING A POLICY COVERED IN THE PLANNING TOPIC TOO***
     - Test: your company is very large, conservative or the actions established are pretty restrictive
     - Test w/ notifications: same as above, but you get to test out investigation cadence or volume
@@ -165,8 +164,7 @@ Here are some examples of more detailed policy intent statement to configuration
 
 -->
 
-
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Planear la prevención de pérdida de datos (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)

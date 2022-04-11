@@ -15,31 +15,31 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre los tipos exactos de información confidencial basada en coincidencias de datos.
+description: Obtenga información sobre los tipos de información confidencial basados en coincidencias exactas de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 21e6f3c12d7c401562a1ee1915e1e1c266724b1b
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 7f883d2509961ee07045949530f8fbb50629212f
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526926"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759775"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>Obtener información sobre los tipos de información confidencial basados en coincidencias exactas de datos
 
-[](sensitive-information-type-learn-about.md) Los tipos de información confidencial se usan para ayudar a identificar elementos confidenciales de modo que pueda evitar que se compartan de forma involuntaria o inapropiada, para ayudar a localizar datos relevantes en la exhibición de documentos electrónicos y para aplicar acciones de gobierno a determinados tipos de información. Defina un tipo de información confidencial personalizado (SIT) en función de:
+[Los tipos de información confidencial](sensitive-information-type-learn-about.md) se usan para ayudar a identificar elementos confidenciales de modo que pueda evitar que se compartan involuntariamente o de forma inapropiada, para ayudar a localizar los datos pertinentes en eDiscovery y para aplicar acciones de gobernanza a determinados tipos de información. Defina un tipo de información confidencial (SIT) personalizado en función de:
 
 - patrones
-- evidencia de palabras clave *como empleado*, *número de seguro social* o *id*.
+- evidencia de palabras clave como *empleado*, *número de seguro social* o *identificador*
 - proximidad de caracteres a la evidencia en un patrón determinado
 - niveles de confianza
 
-Pero, ¿qué ocurre si desea un tipo de información confidencial personalizado (SIT) que use valores de datos exactos o casi exactos, en lugar de uno que encontró coincidencias basadas en patrones genéricos? Con la clasificación basada en Coincidencia exacta de datos (EDM), puede crear un tipo de información confidencial personalizado diseñado para:
+¿Pero qué ocurre si desea un tipo de información confidencial (SIT) personalizado que use valores de datos exactos o casi exactos, en lugar de uno que encuentre coincidencias basadas en patrones genéricos? Con la clasificación basada en coincidencia exacta de datos (EDM), puede crear un tipo de información confidencial personalizado diseñado para:
 
 - ser dinámico y actualizarse fácilmente
 - ser más escalable
 - generar menos falsos positivos
 - funcionar con datos confidenciales estructurados
-- controlar la información confidencial de forma más segura, sin compartirla con nadie, incluido Microsoft
+- controlar la información confidencial de forma más segura, no compartirla con nadie, incluido Microsoft
 - usarse con varios servicios en la nube de Microsoft.
 
 ![Clasificación basada en EDM.](../media/EDMClassification.png)
@@ -56,59 +56,58 @@ La clasificación basada en EDM le permite crear tipos de información confidenc
 >
 > Este soporte está disponible para tipos de información confidencial. Para más información, consulte [Notas de la versión sobre la compatibilidad de Information Protection con juegos de caracteres de doble byte (vista previa)](mip-dbcs-relnotes.md).
 
-## <a name="whats-different-in-an-edm-sit"></a>Qué es diferente en un SIT de EDM
+## <a name="whats-different-in-an-edm-sit"></a>¿Qué es diferente en un SIT de EDM?
 
-Cuando trabaja con EDM SIT, es útil comprender algunos conceptos que son exclusivos de ellos.  
+Cuando se trabaja con SIT de EDM, resulta útil comprender algunos conceptos que son únicos para ellos.  
 
 ### <a name="schema"></a>Esquema
 
 El esquema es un archivo xml que define:
 
-- El nombre del esquema, más adelante denominado *DataStore*. 
-- Los nombres de campo que contiene la tabla de origen de información confidencial. Hay una asignación 1:1 del nombre del campo de esquema al nombre de columna de la tabla de origen de información confidencial.
+- Nombre del esquema, más adelante denominado *DataStore*. 
+- Los nombres de campo que contiene la tabla de origen de información confidencial. Hay una asignación 1:1 del nombre del campo de esquema al nombre de columna de tabla de origen de información confidencial.
 - Qué campos se pueden buscar.
-- Cualquier parámetro de modificación de búsqueda, denominado *coincidencia configurable*, como ignorar delimitadores y mayúsculas de minúsculas en los valores buscados.
+- Cualquier parámetro de modificación de búsqueda, denominado *coincidencia configurable*, como omitir delimitadores y mayúsculas de minúsculas en los valores buscados.
 
 ### <a name="sensitive-information-source-table"></a>Tabla de origen de información confidencial
 
-La tabla de origen confidencial contiene los valores de información confidencial que buscará EDM SIT. Está hecho de columnas y filas. Los encabezados de columna son los nombres de campo, las filas son una instancia de datos y cada celda contiene los valores de esa instancia para ese campo.
+La tabla de origen confidencial contiene los valores de información confidencial que buscará EDM SIT. Se compone de columnas y filas. Los encabezados de columna son los nombres de campo, las filas son una instancia de datos y cada celda contiene los valores de esa instancia para ese campo.
 
 Este es un ejemplo sencillo de una tabla de origen de información confidencial.
 
-|Nombre  |Apellidos  |Fecha de nacimiento  |
-|---------|---------|---------|
-|Isía   |Langer  | 05-05-1960 |
-|Ana   |Bowman         |11-24-1971 |
-|Óscar   |Ward         |02-12-1998 |
-
+|Nombre|Apellidos|Fecha de nacimiento|
+|---|---|---|
+|Isaías|Langer| 05-05-1960|
+|Ana|Bowman|11-24-1971|
+|Oscar|Ward|02-12-1998|
 
 ### <a name="rule-package"></a>Paquete de reglas
 
-Cada SIT tiene un paquete de reglas. El paquete de reglas se usa en un SIT de EDM para definir:
+Cada SIT tiene un paquete de reglas. Use el paquete de reglas en una SIT de EDM para definir:
 
-- Coincide, que especifica el campo que será el elemento principal que se usará en la búsqueda exacta. Puede ser una expresión regular con o sin una validación de suma de comprobación, una lista de palabras clave, un diccionario de palabras clave o una función.
-- Clasificación, que especifica la coincidencia de tipo confidencial que desencadena la búsqueda de EDM.
-- Elemento de soporte que son elementos que, cuando se encuentran, proporcionan pruebas que ayudan a aumentar la confianza de la coincidencia. Por ejemplo, la palabra clave "SSN" cerca de un número SSN. Puede ser una expresión regular con o sin validación de suma de comprobación, lista de palabras clave, diccionario de palabras clave.
-- Los niveles de confianza (alto, medio, bajo) reflejan la cantidad de pruebas de soporte que se detectó junto con el elemento principal. Cuanto más evidencia de soporte técnico contenga un elemento, mayor será la confianza de que un elemento coincidente contenga la información confidencial que está buscando. Vea, [Partes fundamentales de un tipo de información confidencial](sensitive-information-type-learn-about.md#fundamental-parts-of-a-sensitive-information-type) para obtener más información sobre los niveles de confianza.
-Proximidad: número de caracteres entre el elemento principal y el elemento de soporte técnico
+- Coincide, que especifican el campo que será el elemento principal que se usará en la búsqueda exacta. Puede ser una expresión regular con o sin una validación de suma de comprobación, una lista de palabras clave, un diccionario de palabras clave o una función.
+- Clasificación, que especifica la coincidencia de tipos confidenciales que desencadena la búsqueda de EDM.
+- Elemento auxiliar que son elementos que, cuando se encuentran, proporcionan pruebas auxiliares que ayudan a aumentar la confianza de la coincidencia. Por ejemplo, la palabra clave "SSN" se encuentra cerca de un número SSN. Puede ser una expresión regular con o sin validación de suma de comprobación, lista de palabras clave, diccionario de palabras clave.
+- Los niveles de confianza (alto, medio, bajo) reflejan la cantidad de pruebas auxiliares detectadas junto con el elemento principal. Cuantos más pruebas auxiliares contenga un elemento, mayor será la confianza en que un elemento coincidente contiene la información confidencial que está buscando. Consulte [Partes fundamentales de un tipo de información confidencial](sensitive-information-type-learn-about.md#fundamental-parts-of-a-sensitive-information-type) para obtener más información sobre los niveles de confianza.
+Proximidad: número de caracteres entre el elemento principal y el elemento auxiliar
 
-### <a name="you-supply-your-own-schema-and-data"></a>Proporcionar su propio esquema y datos
+### <a name="you-supply-your-own-schema-and-data"></a>Proporcione su propio esquema y datos.
 
-[Microsoft 365 incluye más de 200 SITS](sensitive-information-type-entity-definitions.md) con esquemas predefinidos, patrones regex, palabras clave y niveles de confianza. Con los SIT de EDM, es responsable de definir el esquema, así como los campos primarios y secundarios que identifican elementos confidenciales. Dado que el esquema y los valores de datos principales y secundarios son altamente confidenciales, los cifrarás mediante una función [hash](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) que incluya un valor de sal generado aleatoriamente o autoaprobado[.](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) A continuación, esos valores hash se cargan en el servicio, por lo que los datos confidenciales nunca están abiertos.
+[Microsoft 365 incluye más de 200 SITS](sensitive-information-type-entity-definitions.md) con esquemas predefinidos, patrones regex, palabras clave y niveles de confianza. Con los SIT de EDM, es responsable de definir el esquema, así como los campos primarios y secundarios que identifican elementos confidenciales. Dado que el esquema y los valores de datos principales y secundarios son muy confidenciales, los cifrará a través de una función [hash](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) que incluya un valor [de sal](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) generado o autosufirmado aleatoriamente. Esos valores hash se cargan en el servicio, por lo que los datos confidenciales nunca están abiertos.
 
-### <a name="primary-and-secondary-support-elements"></a>Elementos de soporte principal y secundario
+### <a name="primary-and-secondary-support-elements"></a>Elementos de soporte técnico principal y secundario
 
-Al crear un SIT de EDM, se define un campo *de elemento* principal en el paquete de reglas. Los campos principales son los elementos para los que se buscará todo el contenido y que deben seguir un patrón definido para poder identificarse. Cuando el elemento principal se encuentra en elementos analizados, EDM buscará los elementos secundarios o  de soporte, que no necesitan seguir un patrón, y su proximidad al elemento principal. EDM requiere que el elemento principal se pueda detectar primero a través de un SIT existente. Vea [Definiciones de entidad de tipo de información confidencial](sensitive-information-type-entity-definitions.md) para obtener una lista completa de los SIT disponibles. Tendrás que encontrar una de las que detecte la clase que quieres que detecte tu SIT de EDM. Por ejemplo, si el esquema SIT de EDM tiene el número de seguridad social de Estados Unidos como elemento principal, al crear el esquema de EDM, lo asociaría con el SIT del número de seguridad [social (SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) de Estados Unidos.
+Al crear una SIT de EDM, se define un campo de *elemento principal* en el paquete de reglas. Los campos principales son los elementos para los que se buscará todo el contenido y que deben seguir un patrón definido para poder identificarse. Cuando se encuentra el elemento principal en elementos examinados, EDM buscará los elementos *secundarios* o auxiliares, que no necesitan seguir un patrón y su proximidad al elemento principal. EDM requiere que el elemento principal se pueda detectar primero a través de una SIT existente. Consulte [Definiciones de entidades de tipo información confidencial](sensitive-information-type-entity-definitions.md) para obtener una lista completa de los SIT disponibles. Tendrá que encontrar uno de los que detecta la clase que quiere que detecte el SIT de EDM. Por ejemplo, si el esquema sit de EDM tiene el número de seguridad social de EE. UU. como elemento principal, al crear el esquema EDM, lo asociaría con el número de [seguridad social (SSN) SIT de EE. UU.](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)
 
 
-## <a name="how-matching-works"></a>Cómo funciona la coincidencia
+## <a name="how-matching-works"></a>Funcionamiento de la coincidencia
 
-EDM busca coincidencias comparando el contenido que encuentra con una tabla de datos confidenciales que defina. Las pruebas de coincidencia se realizan con una combinación de reglas y patrones tradicionales para garantizar que los datos coincidentes son una instancia real de los datos que desea buscar y proteger. En esencia, EDM funciona comparando las cadenas de los documentos y los correos electrónicos con los valores de una tabla de datos confidenciales que proporciona para averiguar si los valores del contenido están presentes en la tabla comparando hashes criptográficos unicos.
+EDM busca coincidencias comparando el contenido que encuentra con una tabla de datos confidenciales que defina. Las pruebas de coincidencia se realizan mediante una combinación de reglas y patrones tradicionales para asegurarse de que los datos coincidentes son una instancia real de los datos que desea buscar y proteger. En esencia, EDM funciona comparando las cadenas de los documentos y los correos electrónicos con los valores de una tabla de datos confidenciales que proporcione para averiguar si los valores del contenido están presentes en la tabla mediante la comparación de hashes criptográficos unidireccionales.
 
 > [!TIP]
-> Una práctica común es combinar el uso de tipos de información confidencial de EDM y los tipos de información confidencial normales en los que se basan en reglas DLP, con umbrales diferentes. Por ejemplo, puede usar un tipo de información confidencial de EDM que busca números de seguridad social y otros datos, con requisitos estrictos y poca tolerancia donde una o más coincidencias provocarán una alerta DLP y usarán el tipo de información confidencial normal, como el número de seguridad social integrado de Estados Unidos para recuentos más altos.  
+> Una práctica común consiste en combinar el uso de tipos de información confidencial de EDM y los tipos de información confidencial normales en los que se basan en reglas DLP, con umbrales diferentes. Por ejemplo, podría usar un tipo de información confidencial de EDM que busque números de seguridad social y otros datos, con requisitos estrictos y tolerancia baja donde una o varias coincidencias provocarán una alerta DLP y usarán el tipo de información confidencial normal, como el número de seguridad social de EE. UU. integrado, para recuentos más altos.  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Introducción a los tipos de información confidencial basados en las coincidencias exactas de datos](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
    

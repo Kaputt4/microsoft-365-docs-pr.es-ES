@@ -13,12 +13,12 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: d2562e52c307fcf251b0b3030219aca68dc96a0a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 8e5664149ef571a8fed3a1aee433fa97c9ed8ca4
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374585"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760435"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Preparación para TLS 1.2 en Office 365 y Office 365 GCC
 
@@ -30,18 +30,18 @@ La [implementación de TLS 1.0 de Microsoft](https://support.microsoft.com/help/
 
 Para obtener información acerca de cómo eliminar las dependencias de TLS 1.0 y 1.1, consulte el siguiente documento técnico: [Resolución del problema con TLS 1.0](https://www.microsoft.com/download/details.aspx?id=55266).
 
-Después de actualizar a TLS 1.2, asegúrese de que los conjuntos de cifrado que está usando son compatibles con Azure Front Door. Microsoft 365 y Azure Front Door tienen ligeras diferencias en la compatibilidad del conjunto de cifrado. Para obtener más información, [vea ¿Cuáles son los conjuntos de cifrado actuales compatibles con Azure Front Door?](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-).
+Después de actualizar a TLS 1.2, asegúrese de que Azure Front Door admite los conjuntos de cifrado que usa. Microsoft 365 y Azure Front Door tienen ligeras diferencias en la compatibilidad con conjuntos de cifrado. Para obtener más información, consulte [¿Cuáles son los conjuntos de cifrado actuales admitidos por Azure Front Door?](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-).
 
 ## <a name="more-information"></a>Más información
 
-Ya hemos comenzado la interrupción de TLS 1.0 y 1.1 a partir de enero de 2020. No se admiten todos los clientes, dispositivos o servicios que se conecten a Office 365 a través de TLS 1.0 o 1.1 en nuestras instancias DoD o GCC High. Para nuestros clientes comerciales de Office 365, el desuso de TLS 1.0 y 1.1 empezará el 15 de octubre de 2020 y el lanzamiento continuará en las siguientes semanas y meses.
+Ya hemos comenzado la interrupción de TLS 1.0 y 1.1 a partir de enero de 2020. No se admiten todos los clientes, dispositivos o servicios que se conecten a Office 365 a través de TLS 1.0 o 1.1 en nuestras instancias DoD o GCC High. Para nuestros clientes comerciales de Office 365, el desuso de TLS 1.0 y 1.1 comenzará el 15 de octubre de 2020 y el lanzamiento continuará durante las siguientes semanas y meses.
 
 Recomendamos que todas las combinaciones de cliente-servidor y navegador-servidor utilicen TLS 1.2 (o una versión posterior) para mantener la conexión con los servicios de Office 365. Es posible que tenga que actualizar ciertas combinaciones cliente-servidor y navegador-servidor.
 
   > [!NOTE]
-  > Para el flujo de correo entrante SMTP, después de desuso de TLS 1.0 y 1.1, solo aceptaremos la conexión TLS 1.2. Sin embargo, seguiremos aceptando la conexión SMTP que no está cifrada sin NINGÚN TLS. Aunque no recomendamos la transmisión de correo electrónico sin cifrado. 
+  > En el caso del flujo de correo de entrada SMTP, después de la desuso de TLS 1.0 y 1.1, solo aceptaremos la conexión TLS 1.2. Sin embargo, seguiremos aceptando la conexión SMTP que no está cifrada sin tls. Aunque no se recomienda la transmisión de correo electrónico sin ningún cifrado.
 
-Deberá actualizar las aplicaciones que llamen Microsoft 365 a través de TLS 1.0 o TLS 1.1 para usar TLS 1.2. .NET 4.5 tiene como valor predeterminado TLS 1.1. Para actualizar la configuración de .NET, vea [How to enable Transport Layer Security (TLS) 1.2 on clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
+Tendrá que actualizar las aplicaciones que llaman a Microsoft 365 API a través de TLS 1.0 o TLS 1.1 para usar TLS 1.2. .NET 4.5 tiene como valor predeterminado TLS 1.1. Para actualizar la configuración de .NET, consulte [Habilitación de seguridad de la capa de transporte (TLS) 1.2 en los clientes](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
 
 Se sabe que los siguientes clientes no pueden usar TLS 1.2. Actualice los clientes para garantizar un acceso ininterrumpido al servicio.
 
@@ -75,12 +75,12 @@ Si está utilizando una infraestructura local para escenarios híbridos o Servic
 Los siguientes recursos proporcionan instrucciones para asegurarse de que los clientes usan TLS 1.2 o una versión posterior y para deshabilitar TLS 1.0 y 1.1.
 
 - Si tiene clientes de Windows 7 que se conecten a Office 365, asegúrese de que TLS 1.2 sea el protocolo seguro predeterminado en WinHTTP en Windows. Para obtener más información, consulte [KB 3140245 - Actualización para habilitar TLS 1.1 y TLS 1.2 como protocolos seguros predeterminados en WinHTTP en Windows](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in).
-- [Conjuntos de cifrado TLS admitidos por Office 365](/microsoft-365/compliance/technical-reference-details-about-encryption#tls-cipher-suites-supported-by-office-365)
+- [Conjuntos de cifrado TLS compatibles con Office 365](/microsoft-365/compliance/technical-reference-details-about-encryption#tls-cipher-suites-supported-by-office-365)
 - Para comenzar a abordar el uso débil de TLS eliminando las dependencias de TLS 1.0 y 1.1, consulte [Compatibilidad con TLS 1.2 en Microsoft](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/).
 - [La nueva funcionalidad IIS](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/) facilita la búsqueda de clientes en [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) y [Windows Server 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334) que se conectan al servicio mediante el uso de protocolos de seguridad débiles.
-- Obtenga más información sobre cómo [resolver el problema tls 1.0](https://www.microsoft.com/download/details.aspx?id=55266).
+- Obtenga más información sobre cómo [resolver el problema de TLS 1.0](https://www.microsoft.com/download/details.aspx?id=55266).
 - Para obtener información general sobre nuestro enfoque de la seguridad, consulte el [Centro de confianza de Office 365](https://www.microsoft.com/trustcenter/cloudservices/office365).
-- Para identificar la versión TLS que usan los clientes SMTP, vea Información e informe de clientes [de autenticación SMTP](../security/office-365-security/mfi-smtp-auth-clients-report.md)en el Centro de seguridad & cumplimiento .
+- Para identificar la versión de TLS que usan los clientes SMTP, consulte [Información e informe de clientes de autenticación SMTP en el Centro de cumplimiento de seguridad &](../security/office-365-security/mfi-smtp-auth-clients-report.md).
 - [Preparación para la degradación de TLS 1.0/1.1: Office 365 Skype Empresarial](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Preparing-for-TLS-1-0-1-1-Deprecation-O365-Skype-for-Business/ba-p/222247)
 - [Guía de TLS de Exchange Server, parte 1: Preparación para TLS 1.2](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/ba-p/607649)
 - [Orientación TLS de Exchange Server Parte 2: Habilitación de TLS 1.2 e identificación de clientes que no lo utilicen](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-2-enabling-tls-1-2-and/ba-p/607761)

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Obtenga información sobre cómo identificar personas críticas en una organización y agregar la etiqueta de cuenta de prioridad para proporcionarles protección adicional.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bf7a21c03764f7dd55b7a63af5b4173606a78188
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: d48b1ec6c3ee0ba5f73d99b097303a8c989d545e
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731857"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759544"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Configuración y revisión de cuentas de prioridad en Microsoft Defender para Office 365
 
@@ -62,7 +62,7 @@ Para obtener más información, consulte [Etiquetas de usuario en Microsoft Defe
 
 El informe de estado de protección contra amenazas es una vista única que reúne información sobre contenido malintencionado y correo electrónico malintencionado detectado y bloqueado por Microsoft Defender para Office 365. 
 
-Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** \> **por correo electrónico & colaboración** \> **Correo electrónico & informes de colaboración**. En la página **Informes de colaboración por correo electrónico &** , busque **Estado de protección contra amenazas** y, a continuación, haga clic en **Ver detalles**.
+Para ver el informe en el portal de Microsoft 365 Defender, vaya a **Informes** \> **por correo electrónico & colaboración** \> **Correo electrónico & informes de colaboración**. En la página **Informes de colaboración de & por correo electrónico** , busque **Estado de protección contra amenazas** y, a continuación, seleccione **Ver detalles**. Vaya a la **vista Spam**, **la vista Phish** o **la vista Malware** y, a continuación, use el icono de filtro para seleccionar **Protección de la cuenta de prioridad**.
 
 ### <a name="threat-explorer"></a>Explorador de amenazas 
 

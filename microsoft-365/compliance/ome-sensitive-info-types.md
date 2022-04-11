@@ -1,5 +1,5 @@
 ---
-title: Crear una directiva de tipo de información confidencial mediante Cifrado de mensajes de Office 365
+title: Creación de una directiva de tipo de información confidencial mediante Office 365 cifrado de mensajes
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,37 +16,37 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: Obtenga información sobre cómo crear una directiva de tipo de información confidencial para su organización mediante Cifrado de mensajes de Office 365.
+description: Obtenga información sobre cómo crear una directiva de tipo de información confidencial para su organización mediante Office 365 cifrado de mensajes.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 8978b1f9faae2e96fa1940bf7663855ec3bb61da
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: a12c3c559fdd9dcc7bd142e5ee7d58d777211bc7
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422152"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759421"
 ---
-# <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Crear una directiva de tipo de información confidencial para su organización mediante cifrado de mensajes
+# <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>Creación de una directiva de tipo de información confidencial para su organización mediante el cifrado de mensajes
 
-Puede usar las reglas Exchange flujo de correo o prevención de pérdida de datos (DLP) para crear una directiva de tipo de información confidencial con Cifrado de mensajes de Office 365. Para crear una regla Exchange flujo de correo electrónico, puede usar el Centro de administración de Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">(EAC)</a> o PowerShell.
+Puede usar Exchange reglas de flujo de correo o prevención de pérdida de datos (DLP) para crear una directiva de tipo de información confidencial con Office 365 cifrado de mensajes. Para crear una regla de flujo de correo Exchange, puede usar el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange (EAC)</a> o PowerShell.
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>Para crear la directiva mediante reglas de flujo de correo en el EAC
 
-Inicie sesión en el centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange administración</a> y vaya a Reglas de **flujo de**  >  **correo**. En la página Reglas, cree una regla que aplique Cifrado de mensajes de Office 365. Puede crear una regla en función de condiciones como la presencia de determinadas palabras clave o tipos de información confidencial en el mensaje o los datos adjuntos.
+Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> y vaya a **Flujo de** >  **correoRules**. En la página Reglas, cree una regla que se aplique Office 365 cifrado de mensajes. Puede crear una regla basada en condiciones como la presencia de ciertas palabras clave o tipos de información confidencial en el mensaje o los datos adjuntos.
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>Para crear la directiva mediante reglas de flujo de correo en PowerShell
 
-Use una cuenta de trabajo o escuela que tenga permisos de administrador global en su organización, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Use los cmdlets Set-IRMConfiguration y New-TransportRule para crear la directiva.
+Use una cuenta profesional o educativa que tenga permisos de administrador global en su organización, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Use los cmdlets Set-IRMConfiguration y New-TransportRule para crear la directiva.
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>Regla de flujo de correo de ejemplo creada con PowerShell
 
-Ejecute los siguientes comandos en PowerShell para crear una regla de flujo de correo de Exchange que cifre automáticamente los correos electrónicos enviados fuera de la organización con la opción de solo cifrado si los correos electrónicos o sus datos adjuntos contienen los siguientes tipos de información confidencial:
+Ejecute los siguientes comandos en PowerShell para crear una Exchange regla de flujo de correo que cifre automáticamente los correos electrónicos enviados fuera de la organización con la opción de solo cifrado si los correos electrónicos o sus datos adjuntos contienen los siguientes tipos de información confidencial:
 
 - Número de enrutamiento de ABA
 - Número de tarjeta de crédito
-- Número de agencia antidrogas (DEA)
-- Ee.UU. / Reino Unido passport number
+- Número de la Agencia antidrogas (DEA)
+- Estados Unidos/ Reino Unido passport number
 - Número de cuenta bancaria de EE. UU.
 - Número de identificación de contribuyente individual (ITIN) de EE. UU.
 - Número de seguridad social (SSN) de EE. UU.
@@ -56,27 +56,27 @@ Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true
 New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -SentToScope  NotInOrganization  -ApplyRightsProtectionTemplate "Encrypt" -MessageContainsDataClassifications @(@{Name="ABA Routing Number"; minCount="1"},@{Name="Credit Card Number"; minCount="1"},@{Name="Drug Enforcement Agency (DEA) Number"; minCount="1"},@{Name="U.S. / U.K. Passport Number"; minCount="1"},@{Name="U.S. Bank Account Number"; minCount="1"},@{Name="U.S. Individual Taxpayer Identification Number (ITIN)"; minCount="1"},@{Name="U.S. Social Security Number (SSN)"; minCount="1"}) -SenderNotificationType "NotifyOnly"
 ```
 
-Para obtener más información, [vea Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) y [New-TransportRule](/powershell/module/exchange/new-transportrule).
+Para obtener más información, vea [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) y [New-TransportRule](/powershell/module/exchange/new-transportrule).
 
-## <a name="how-recipients-access-attachments"></a>Cómo los destinatarios acceden a datos adjuntos
+## <a name="how-recipients-access-attachments"></a>Cómo acceden los destinatarios a los datos adjuntos
 
-Después de que Microsoft cifra un mensaje, los destinatarios tienen acceso sin restricciones a los datos adjuntos cuando acceden y abren su correo electrónico cifrado.
+Una vez que Microsoft cifra un mensaje, los destinatarios tienen acceso sin restricciones a los datos adjuntos cuando acceden y abren su correo electrónico cifrado.
 
 ## <a name="to-prepare-for-this-change"></a>Para prepararse para este cambio
 
-Es posible que desee actualizar cualquier documentación y materiales de aprendizaje del usuario final aplicables para preparar a los usuarios de su organización para este cambio. Comparta estos Cifrado de mensajes de Office 365 recursos con los usuarios según corresponda:
+Es posible que quiera actualizar cualquier documentación de usuario final y materiales de aprendizaje aplicables para preparar a los usuarios de su organización para este cambio. Comparta estos recursos Office 365 cifrado de mensajes con los usuarios según corresponda:
 
-- [Enviar, ver y responder a mensajes cifrados en Outlook para PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
-- [Microsoft 365 Essentials Video: Office message encryption](https://youtu.be/CQR0cG_iEUc)
+- [Envío, visualización y respuesta a mensajes cifrados en Outlook para PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
+- [Vídeo de Microsoft 365 Essentials: cifrado de mensajes Office](https://youtu.be/CQR0cG_iEUc)
 
-## <a name="view-these-changes-in-the-audit-log"></a>Ver estos cambios en el registro de auditoría
+## <a name="view-these-changes-in-the-audit-log"></a>Visualización de estos cambios en el registro de auditoría
 
-Microsoft 365 audita esta actividad y la pone a disposición de los administradores. La operación es "New-TransportRule" y a continuación se muestra un fragmento de código de una entrada de auditoría de ejemplo de la búsqueda de registros de auditoría en el Centro de seguridad & cumplimiento:
+Microsoft 365 audita esta actividad y la pone a disposición de los administradores. La operación es "New-TransportRule" y a continuación se muestra un fragmento de una entrada de auditoría de ejemplo de la búsqueda de registros de auditoría en el Centro de cumplimiento de & de seguridad:
 
 ```text
-*{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications"…etc.*
+*{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications"...etc.*
 ```
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>Para deshabilitar o personalizar la directiva de tipos de información confidencial
 
-Una vez que haya creado la regla de [](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) flujo de correo de Exchange, puede deshabilitar o editar la regla yendo a Reglas de flujo de correo en el Centro de administración de Exchange y deshabilitando la regla " Cifrar correos electrónicos confidenciales salientes (regla de  >   *salida)* <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank"></a> ".
+Una vez que haya creado la regla de flujo de correo Exchange, puede [deshabilitar o editar la regla](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) si va a **Flujo** >  de **correoRules** en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> y deshabilita la regla "*Cifrar los correos electrónicos confidenciales salientes (regla predefinida)*".

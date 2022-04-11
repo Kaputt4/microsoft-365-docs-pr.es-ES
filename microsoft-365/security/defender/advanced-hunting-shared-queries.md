@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d943f91685e3ee9d6bf12c3a47fbf68e5966dc9d
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: 2e86d733304eeaa0e5e16f3ce1bfde87c21258d4
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738494"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64761636"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>Utilice las consultas compartidas en la búsqueda avanzada
 
@@ -39,7 +39,7 @@ Las consultas en la [búsqueda avanzada](advanced-hunting-overview.md) pueden se
 En la pestaña Consultas de la búsqueda avanzada, puede encontrar los menús desplegables para **consultas compartidas**, **Mis consultas** y **Community consultas**. Puede seleccionar una flecha hacia abajo para expandir un menú.
 
 
-:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="La información de consultas compartidas en el portal de Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
+:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="Consultas compartidas, Mis consultas y consultas de Community en el portal de Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
 
 
 
@@ -63,7 +63,7 @@ Puede guardar una consulta nueva o existente para que sólo sea accesible para u
 ## <a name="delete-or-rename-a-query"></a>Eliminar o cambiar el nombre de la consulta
 1. Seleccione los tres puntos situados a la derecha de una consulta que desea cambiar de nombre o eliminar.
 
-    :::image type="content" source="../../media/shared-query-3.png" alt-text="Opciones de una consulta compartida en la página Búsqueda avanzada del portal de Microsoft 365 Defender" lightbox="../../media/shared-query-3.png":::
+    :::image type="content" source="../../media/advanced-hunting-del-save-query.png" alt-text="Cambiar el nombre o eliminar una consulta en la página Búsqueda avanzada del portal de Microsoft 365 Defender" lightbox="../../media/advanced-hunting-del-save-query.png":::
 
 2. Seleccione **Eliminar** y confirme su eliminación. O seleccione **Cambiar el nombre** y proporcione un nombre nuevo para la consulta.
 
@@ -75,7 +75,7 @@ Los investigadores de la seguridad de Microsoft comparten regularmente las consu
 
 Puede encontrar fácilmente estas consultas en el menú desplegable **Community consultas**.
 
-:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="La nueva consulta que está a punto de guardarse en el portal de Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
+:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="Community consultas organizadas por carpeta en el portal de Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
 
 Community consultas se agrupan en carpetas como *Campañas*, *Colección*, *Evasión de defensa* y similares. Se proporciona más información sobre la consulta como comentarios en línea en la propia consulta. 
 

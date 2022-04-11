@@ -19,41 +19,41 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
-description: En este artículo, aprenderá a crear directivas DLP con una de las plantillas incluidas en Office 365.
-ms.openlocfilehash: 965e5198887ec64072efffd35ffa7739c90af6a4
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+description: En este artículo, obtendrá información sobre cómo crear directivas DLP mediante una de las plantillas incluidas en Office 365.
+ms.openlocfilehash: 3617e1f067f4b29470feedcf7381b41a400887f9
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355036"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759111"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Crear una directiva DLP a partir de una plantilla
 
-La forma más sencilla y común de empezar a usar directivas DLP es usar una de las plantillas incluidas en el Centro de Microsoft 365 cumplimiento. Puede usar una de estas plantillas tal como está o personalizar las reglas para cumplir los requisitos de cumplimiento específicos de su organización.
+La manera más fácil y común de empezar a trabajar con directivas DLP es usar una de las plantillas incluidas en el Centro de cumplimiento de Microsoft 365. Puede usar una de estas plantillas tal como está o personalizar las reglas para cumplir los requisitos de cumplimiento específicos de su organización.
 
-Microsoft 365 incluye más de 40 plantillas listas para usar que pueden ayudarle a satisfacer una amplia variedad de necesidades comunes de directivas normativas y empresariales. Vea; [Plantillas de directiva](dlp-policy-reference.md#policy-templates) para una lista completa. 
+Microsoft 365 incluye más de 40 plantillas listas para usar que pueden ayudarle a satisfacer una amplia gama de necesidades comunes de normativas y directivas empresariales. Ver; [Plantillas de directiva](dlp-policy-reference.md#policy-templates) para una lista completa. 
 
-Puede ajustar una plantilla modificando cualquiera de sus reglas existentes o agregando otras nuevas. Por ejemplo, puede agregar nuevos tipos de información confidencial a una regla, modificar los recuentos de una regla para que sea más difícil o más fácil desencadenar, permitir que los usuarios invaliden las acciones de una regla proporcionando una justificación empresarial o cambiar a quién se envían notificaciones e informes de incidentes. Una plantilla de directiva DLP es un punto de partida flexible para muchos escenarios de cumplimiento comunes.
+Puede ajustar una plantilla modificando cualquiera de sus reglas existentes o agregando otras nuevas. Por ejemplo, puede agregar nuevos tipos de información confidencial a una regla, modificar los recuentos de una regla para que sea más difícil o más fácil de desencadenar, permitir que los usuarios invaliden las acciones de una regla proporcionando una justificación empresarial o cambiar a quién se envían las notificaciones y los informes de incidentes. Una plantilla de directiva DLP es un punto de partida flexible para muchos escenarios de cumplimiento comunes.
 
 También puede elegir la plantilla Personalizada, que no tiene reglas predeterminadas, y configurar la directiva DLP desde cero para cumplir los requisitos de cumplimiento específicos de su organización.
 
 ## <a name="permissions"></a>Permisos
 
-Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP necesitan permisos para el centro de cumplimiento. De forma predeterminada, el administrador de inquilinos tendrá acceso a los responsables de cumplimiento y a otras personas. Siga estos pasos:
+Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP necesitan permisos para el centro de cumplimiento. De forma predeterminada, el administrador de inquilinos tendrá acceso para dar acceso a los responsables de cumplimiento y a otras personas. Siga estos pasos:
   
 1. Crear un grupo en Microsoft 365 y adición de responsables de cumplimiento.
     
 2. Crear un grupo de roles en la página **Permisos** del Centro de seguridad y cumplimiento. 
 
-3. Al crear el grupo de roles, use la sección **Elegir roles** para agregar la siguiente función al grupo de roles: **Administración de cumplimiento dlp**.
+3. Al crear el grupo de roles, use la sección **Elegir roles** para agregar el siguiente rol al grupo de roles: **Administración de cumplimiento dlp**.
     
 4. Use la sección **Elegir miembros** para añadir el grupo de Microsoft 365 que creó antes del grupo de roles.
 
-Use el **rol Administración de cumplimiento dlp de** solo vista para crear un grupo de roles con privilegios de solo vista para las directivas DLP y los informes DLP.
+Use el rol **View-Only DLP Compliance Management** para crear un grupo de roles con privilegios de solo vista para las directivas DLP y los informes DLP.
 
 Para más información, vea [Conceder acceso a los usuarios al Centro de cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
-Estos permisos son necesarios para crear y aplicar una directiva DLP para no aplicar directivas.
+Estos permisos son necesarios para crear y aplicar una directiva DLP que no aplique directivas.
 
 ### <a name="roles-and-role-groups-in-preview"></a>Roles y grupos de roles en la versión preliminar
 
@@ -74,17 +74,17 @@ Aquí tiene una lista de grupos de roles de MIP que están en la versión prelim
 - Investigadores de Information Protection
 - Lectores de Information Protection
 
-### <a name="create-the-dlp-policy-from-a-template"></a>Crear la directiva DLP desde una plantilla
+### <a name="create-the-dlp-policy-from-a-template"></a>Creación de la directiva DLP a partir de una plantilla
 
 1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>.
 
-2. En el Centro de cumplimiento de navegación izquierda \> \> **Soluciones** \> **Prevención de pérdida de datos** \> **Directivas** \> **+ Crear directiva**.
+2. En el Centro \> de cumplimiento, a la  izquierda, navegación \> **Soluciones Directivas** \> de prevención \> \> de **pérdida de datos** **+ Crear directiva**.
 
     ![Crear un botón de directiva.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           
-3. Elija la plantilla de directiva DLP que protege los tipos de información confidencial que necesita \> **Next**.
+3. Elija la plantilla de directiva DLP que protege los tipos de información confidencial que necesita \> **a continuación**.
 
-4. Asigne a la directiva el nombre \> **Siguiente**.
+4. Asigne a la directiva \> el nombre **Siguiente**.
  
 <!--In this example, you'll select **Privacy** \> **U.S. Personally Identifiable Information (PII) Data** because it already includes most of the types of sensitive information that you want to protect - you'll add a couple later.
 
@@ -92,38 +92,38 @@ Aquí tiene una lista de grupos de roles de MIP que están en la versión prelim
 
     ![Page for choosing a DLP policy template.](../media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)-->
 
-5. Para elegir las ubicaciones que desea que proteja la directiva DLP y acepte el ámbito predeterminado para cada ubicación o personalice el ámbito. Consulta Ubicaciones [para las](dlp-policy-reference.md#locations) opciones de ámbito.
+5. Para elegir las ubicaciones que desea que la directiva DLP proteja y acepte el ámbito predeterminado para cada ubicación o personalice el ámbito. Consulte [Ubicaciones](dlp-policy-reference.md#locations) para ver las opciones de ámbito.
 
 6. Elija \> **Siguiente**.
  
-1. Realiza una de las siguientes acciones:
+1. Realice una de las siguientes acciones:
 
-   - Elija **Todas las ubicaciones en Office 365** \> **Siguiente**.
-   - Elija **Permitirme elegir ubicaciones específicas** \> **Siguiente**. Para este ejemplo, elija esto.
+   - Elija **Todas las ubicaciones de Office 365** \> **Siguiente**.
+   - Elija **Permitirme elegir ubicaciones** \> específicas **Siguiente**. En este ejemplo, elija esta opción.
 
-   Para incluir o excluir una ubicación completa, como todas las Exchange correo electrónico o todas las cuentas OneDrive, active o despegar el estado de esa ubicación.
+   Para incluir o excluir una ubicación completa, como todas las Exchange correo electrónico o todas las cuentas de OneDrive, active o desactive el **estado** de esa ubicación.
 
-   Para incluir solo sitios SharePoint específicos o cuentas OneDrive para la Empresa, cambie estado a y, a continuación, haga clic en los vínculos en Incluir  para elegir sitios o cuentas específicos. Cuando se aplica una directiva a un sitio, las reglas configuradas en dicha directiva se aplican automáticamente a todos los subsitios de ese sitio.
+   Para incluir solo sitios de SharePoint específicos o cuentas de OneDrive para la Empresa, **cambie estado a** activado y, a continuación, haga clic en los vínculos en **Incluir** para elegir sitios o cuentas específicos. Cuando se aplica una directiva a un sitio, las reglas configuradas en dicha directiva se aplican automáticamente a todos los subsitios de ese sitio.
 
-   ![Opciones de ubicaciones donde se puede aplicar una directiva DLP.](../media/all-locations.png)
+   ![Opciones para las ubicaciones en las que se puede aplicar una directiva DLP.](../media/all-locations.png)
 
-   En este ejemplo, para proteger la información confidencial almacenada en todas las cuentas de OneDrive para la Empresa, desactive el estado  de los sitios  de correo electrónico Exchange y **SharePoint** y deje el estado en para las **cuentas** OneDrive.
+   En este ejemplo, para proteger la información confidencial almacenada en todas las cuentas de OneDrive para la Empresa, desactive el **estado** de **Exchange correo electrónico** y **sitios de SharePoint**, y deje el **estado** activado para **las cuentas de OneDrive**.
 
-7. Elija **Revisar y personalizar la configuración predeterminada de la plantilla** \> **Siguiente**.
+7. Elija **Revisar y personalizar la configuración predeterminada en la plantilla** \> **Siguiente**.
 
 8. Una plantilla de directiva DLP contiene reglas predefinidas con condiciones y acciones que detectan y actúan sobre tipos específicos de información confidencial. Puede editar, eliminar o desactivar cualquiera de las reglas existentes o agregar otras nuevas. Cuando haya terminado, haga clic en **Siguiente**.
 
-    ![Reglas expandida en la plantilla de directiva DE PII de EE. UU.](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
+    ![Reglas expandidas en la plantilla de directiva de PII de EE. UU.](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
 
-9. Elija detectar cuándo se comparte este contenido dentro de la organización o fuera de la organización si ha seleccionado cualquiera de estas ubicaciones:
+9. Elija detectar cuándo se comparte este contenido dentro de su organización o fuera de la organización si ha seleccionado cualquiera de estas ubicaciones:
     1. Exchange
     1. SharePoint
     1. OneDrive
-    1. Teams chat y mensajes de canal 
+    1. mensajes de chat y canales de Teams 
 
 10. Elija **Siguiente**.
 
-11. En la **página Acciones de** protección si lo desea, puede personalizar las notificaciones de sugerencias de directiva y los correos electrónicos de notificación. Habilitar **Cuando el contenido coincide con las condiciones de** la directiva, mostrar sugerencias de directiva a los usuarios y enviarles una notificación de correo electrónico y, a continuación, elija **Personalizar la sugerencia y el correo electrónico**.
+11. En la página **Acciones de protección** , si lo desea, puede personalizar las notificaciones de sugerencias de directiva y los correos electrónicos de notificación. Habilite **Cuando el contenido coincida con las condiciones de la directiva, muestre sugerencias de directiva a los usuarios y envíeles una notificación por correo electrónico** y, a continuación, elija **Personalizar la sugerencia y el correo electrónico**.
 12. Elija **Siguiente**.
 
 
@@ -215,7 +215,7 @@ Here are the different statuses and what they mean.
 
 |Status|Explanation|
 |---|---|
-|**Turning on…**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
+|**Turning on...**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
 |**Testing, with notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are sent to the specified recipients.|
 |**Testing, without notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are not sent to the specified recipients.|
 |**On**|The policy is active and enforced. The policy was successfully deployed to all its content sources.|
