@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Obtenga información sobre los pasos básicos para crear un diccionario de palabras clave en el Centro de seguridad y cumplimiento de Office 365.
-ms.openlocfilehash: ca88c57739c8734f9fcdb5d3356a44dc6a72faa5
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 64e431b5d2ef01e85eff55f39f4436786f45664b
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271783"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64758605"
 ---
 # <a name="create-a-keyword-dictionary"></a>Crear un diccionario de palabras clave
 
@@ -191,11 +191,11 @@ Pegue la identidad en el archivo XML del tipo de información confidencial perso
 > Junto con los caracteres chinos/japoneses y de dos bytes, si la lista de palabras clave o frases también contiene palabras no chinas o no japonesas (solo en inglés), se recomienda crear dos diccionarios o listas de palabras clave. Uno para las palabras clave que contienen caracteres chinos, japoneses o de dos bytes; y otro solo para inglés.
 >
 > - Por ejemplo, si desea crear una lista o diccionario de palabras clave con tres frases "Extremadamente confidencial", "機密性が高い" y "机密的document", deberá crear dos listas de teclado.
->     1. Extremadamente confidencial
->     2. 機密性が高い, 机密的document y 机密的 document
+>   1. Extremadamente confidencial
+>   2. 機密性が高い, 机密的document y 机密的 document
 >
 > Al crear una regex que utilice un guión de doble byte o un punto de doble byte, asegúrese de escapar ambos caracteres como se escaparía un guión o un punto en una regex. A continuación le mostramos un ejemplo de regex a modo de referencia:
 >
-> - `(?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}`
+> - `(?<!\d)([4][0-9]{3}[\-?\-\t]*[0-9]{4}`
 >
 > Se recomienda utilizar una coincidencia de cadenas en lugar de una coincidencia de palabras en una lista de palabras clave.
