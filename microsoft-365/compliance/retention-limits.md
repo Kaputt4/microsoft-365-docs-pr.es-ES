@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Obtener información sobre el número máximo de directivas y elementos por directiva para directivas de retención y directivas de etiquetas de retención
-ms.openlocfilehash: 4c175a9e43440c58f74da334a38bc73dae5b76e4
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 260b99a4519937f962cc1c779a9beb9c6810e7e1
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595024"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782817"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Límites de directivas de retención y directivas de etiqueta de retención.
 
@@ -46,7 +46,7 @@ Un solo espacio empresarial puede tener un máximo de 10 000 directivas (cualqu
 Dentro de este límite de 10 000 directivas, también hay algunos límites en el número máximo de directivas para la retención por carga de trabajo:
 
 - Exchange (cualquier configuración): 1800
-    - Por buzón: 25 es el máximo recomendado antes de que el rendimiento pueda verse afectado; 50 es el límite admitido.
+  - Por buzón: 25 es el máximo recomendado antes de que el rendimiento pueda verse afectado; 50 es el límite admitido.
 - SharePoint o OneDrive (se incluyen automáticamente todos los sitios): 13
 - SharePoint o OneDrive (ubicaciones específicas incluidas o excluidas): 2600
 
@@ -71,7 +71,7 @@ No se admite la agrupación de atributos o propiedades dentro de un grupo. Por t
 > [!IMPORTANT]
 > Solo se aplica si usa [ámbitos estáticos de directiva en lugar de ámbitos adaptables](retention.md#adaptive-or-static-policy-scopes-for-retention).
 
-Si usa ámbitos estáticos y la configuración opcional para incluir o excluir usuarios específicos, grupos específicos de Microsoft 365 o sitios específicos, hay algunos límites por directiva que debe tener en cuenta. 
+Si usa ámbitos estáticos y la configuración opcional para incluir o excluir usuarios específicos, grupos específicos de Microsoft 365 o sitios específicos, hay algunos límites por directiva que debe tener en cuenta.
 
 Número máximo de elementos por directiva para la retención de ámbitos estáticos:
 
@@ -98,10 +98,10 @@ Ejemplo de Exchange:
 
 - **Requisito**: en una organización con más de 40.000 buzones de usuario, la mayoría de los usuarios deben tener su correo electrónico retenido durante 7 años, pero un subconjunto de usuarios identificados (425) debe tener su correo electrónico retenido solo durante 5 años.
 
-- **Solución**: cree una directiva de retención para el correo electrónico de Exchange con un período de retención de 7 años y excluya el subconjunto de usuarios. Luego, cree una segunda directiva de retención para el correo electrónico de Exchange con un período de retención de 5 años e incluya el subconjunto de usuarios. 
-    
+- **Solución**: cree una directiva de retención para el correo electrónico de Exchange con un período de retención de 7 años y excluya el subconjunto de usuarios. Luego, cree una segunda directiva de retención para el correo electrónico de Exchange con un período de retención de 5 años e incluya el subconjunto de usuarios.
+
     En ambos casos, el número incluido y excluido está por debajo del número máximo de buzones especificados para una sola directiva y el subconjunto de usuarios debe excluirse explícitamente de la primera directiva porque tiene un [ período de retención más largo](retention.md#the-principles-of-retention-or-what-takes-precedence) que la segunda directiva. Si el subconjunto de usuarios necesita una directiva de retención más larga, no tendrá que excluirlos de la primera directiva.
-     
+
     Con esta solución, si alguien nuevo se une a la organización, su buzón se incluirá automáticamente en la primera directiva durante 7 años y no hay ningún impacto en el número máximo de admitidos. Pero los nuevos usuarios que requieran el período de retención de 5 años se agregarán a los números de inclusiones y exclusiones, cuyo límite es 1000.
 
 Ejemplo de SharePoint:
@@ -109,7 +109,7 @@ Ejemplo de SharePoint:
 - **Requisito**: una organización tiene varios miles de sitios de SharePoint, pero solo 2000 sitios requieren un período de retención de 10 años y 8000 requieren un período de retención de 4 años.
 
 - **Solución**: cree 20 directivas de retención para SharePoint con un período de retención de 10 años que incluya 100 sitios específicos y cree 80 directivas de retención para SharePoint con un período de retención de 4 años que incluya 100 sitios específicos.
-    
+
     Como es necesario retener todos los sitios de SharePoint, debe crear directivas de retención que especifiquen los sitios específicos. Como una directiva de retención no admite más de 100 sitios específicos, debe crear varias directivas para los dos períodos de retención. Estas directivas de retención tienen el número máximo de sitios incluidos, por lo que el siguiente sitio nuevo que necesita retenerse requerirá una nueva directiva de retención, independientemente del periodo de retención.
 
 ## <a name="maximum-number-of-items-for-disposition"></a>Número máximo de elementos para eliminar
@@ -117,15 +117,11 @@ Ejemplo de SharePoint:
 Para la [eliminación del contenido](disposition.md), hay algunos límites que deben tenerse en cuenta:
 
 - Número máximo por inquilino:
-    
-    - 16 000 000 elementos en cualquiera de los siguientes estados de revisión para eliminación: disposición pendiente o disposición aprobada
-        
-    - 16 000 000 elementos marcados como registros eliminados automáticamente (sin revisión para eliminación)
+  - 16 000 000 elementos en cualquiera de los siguientes estados de revisión para eliminación: disposición pendiente o disposición aprobada
+  - 16 000 000 elementos marcados como registros eliminados automáticamente (sin revisión para eliminación)
 
 - Números máximos para cada etiqueta de retención:
-    
-    - 1 000 000 elementos pendientes de eliminación por fase para cada etiqueta de retención
-    
-    - Prueba de eliminación hasta siete años después de eliminar el elemento, con un límite de 1 000 000 de elementos por etiqueta de retención para ese período. 
-        
-        Si necesita una prueba de eliminación superior a ese límite de 1 000 000 para los elementos que se marcan como registros, póngase en contacto con el [Soporte técnico de Microsoft](../admin/get-help-support.md).
+  - 1 000 000 elementos pendientes de eliminación por fase para cada etiqueta de retención
+  - Prueba de eliminación hasta siete años después de eliminar el elemento, con un límite de 1 000 000 de elementos por etiqueta de retención para ese período.
+
+    Si necesita una prueba de eliminación superior a ese límite de 1 000 000 para los elementos que se marcan como registros, póngase en contacto con el [Soporte técnico de Microsoft](../admin/get-help-support.md).

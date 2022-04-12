@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 49ee543e68ed9f54b0009efeb90bddc9de29c091
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 1eee7e482423e2292e9fe9db42333db481d44175
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761403"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783765"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Referencia de reglas de reducción de superficie expuesta a ataques
 
@@ -45,7 +45,7 @@ En este artículo se proporciona información sobre las reglas de reducción de 
 
 ## <a name="supported-operating-systems"></a>Sistemas operativos compatibles 
 
-En la tabla siguiente se enumeran los sistemas operativos admitidos para las reglas que se publican actualmente para la disponibilidad general. Las reglas se enumeran en orden alfabético.
+En la tabla siguiente se enumeran los sistemas operativos admitidos para las reglas que se publican actualmente para la disponibilidad general. Las reglas se enumeran en orden alfabético en esta tabla.
 
 > [!Note]
 >
@@ -53,26 +53,26 @@ En la tabla siguiente se enumeran los sistemas operativos admitidos para las reg
 >
 > Las reglas de reducción de superficie expuesta a ataques en Windows&nbsp; Server2012R2&nbsp;&nbsp; y Windows&nbsp; Server2016&nbsp; están disponibles para los dispositivos incorporados mediante el paquete de solución unificado moderno. Para obtener más información, consulte [Nueva funcionalidad en la solución unificada moderna para Windows Server 2012 R2 y versión preliminar de 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
-| Nombre de regla|&nbsp;Windows 10 | &nbsp;Windows Server 2019 | &nbsp;Windows Server | &nbsp;Windows Server 2016 <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server 2012R2&nbsp;<sup> [[1, 2](#fn1)]<sup></sup> |
+| Nombre de regla|Windows 10 | Windows Server 2019 | &nbsp;Windows Server | <sup>Windows Server 2016 [[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server 2012 R2 <sup>[[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| [Bloquear el abuso de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | v <br> versión 1803 (canal semianual) o posterior |  v | v |
-| [Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | Versión Y 1809 o posterior | v | v |  v | v |
-| [Impedir que todas las aplicaciones Office creen procesos secundarios](#block-all-office-applications-from-creating-child-processes) | v | v | v |  v | v |
-| [Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v <br> versión 1803 o posterior | v  | v |  v | v |
+| [Bloquear el abuso de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | v <br> versión 1803 (canal semianual) o posterior | v | v |
+| [Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | Versión Y 1809 o posterior | v | v | v | v |
+| [Impedir que todas las aplicaciones Office creen procesos secundarios](#block-all-office-applications-from-creating-child-processes) | v | v | v | v | v |
+| [Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | v <br> versión 1803 o posterior | v | v | v | v |
 | [Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](#block-executable-content-from-email-client-and-webmail) | v | v | v | v | v |
-| [Impedir que los archivos ejecutables se ejecuten a menos que cumplan un criterio de prevalencia, edad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | v <br> versión 1803 o posterior | v | v |  v | v |
-| [Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts) | v | v  | v | v | v |
-| [Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | v | v | v  | N | N |
+| [Impedir que los archivos ejecutables se ejecuten a menos que cumplan un criterio de prevalencia, edad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | v <br> versión 1803 o posterior | v | v | v | v |
+| [Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts) | v | v | v | v | v |
+| [Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | v | v | v | N | N |
 | [Impedir que las aplicaciones Office creen contenido ejecutable](#block-office-applications-from-creating-executable-content) | v | v | v | v | v |
-| [Impedir que las aplicaciones Office inserten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)  | v | v  | v |  v | v |
+| [Impedir que las aplicaciones Office inserten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)  | v | v | v | v | v |
 | [Impedir que Office aplicación de comunicación cree procesos secundarios](#block-office-communication-application-from-creating-child-processes) | v | v | v | v | v |
-| [Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription) <br> \*_No se admiten las exclusiones de archivos y carpetas._ | v <br> versión 1903 (compilación 18362) o posterior | v | v <br> versión 1903 (compilación 18362) o posterior |  N | N |
-| [Bloquear las creaciones de procesos que se originen a partir de comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | v <br> versión 1803 o posterior | v | v  |  v | v |
-| [Bloquear procesos que no son de confianza y no firmados que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v | v |  v | v |
+| [Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription) <br> \*_No se admiten las exclusiones de archivos y carpetas._ | v <br> versión 1903 (compilación 18362) o posterior | v | v <br> versión 1903 (compilación 18362) o posterior | N | N |
+| [Bloquear las creaciones de procesos que se originen a partir de comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | v <br> versión 1803 o posterior | v | v | v | v |
+| [Bloquear procesos que no son de confianza y no firmados que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v | v | v | v | v |
 | [Bloquear llamadas API de Win32 desde macros de Office](#block-win32-api-calls-from-office-macros) | v | v | v | N | N |
 | [Uso de protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | v <br> versión 1803 o posterior | v | v | v | v |
 
-(<a id="fn1">1</a>) Hace referencia a la solución moderna y unificada para Windows Server 2012 y 2016. Para obtener más información, consulte [Incorporación de servidores Windows al servicio Defender para punto de conexión](configure-server-endpoints.md).
+(<a id="fn1">1</a>) Hace referencia a la solución unificada moderna para Windows Server 2012 y 2016. Para obtener más información, consulte [Incorporación de servidores Windows al servicio Defender para punto de conexión](configure-server-endpoints.md).
 
 (<a id="fn1">2</a>) Para Windows&nbsp; Server 2016 y Windows&nbsp; Server 2012R2&nbsp;, la versión mínima necesaria de Microsoft Endpoint Configuration Manager es la versión 2111.
 

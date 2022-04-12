@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las aplicaciones de Microsoft Teams que se usan en su organización mediante la obtención del informe de uso de Microsoft Teams aplicación de Microsoft 365 Reports.
-ms.openlocfilehash: 158c96772a79d6fb3a4b37f9593087661ea88070
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: de12133d16cd2b53140ccf2fafafc76abc064776
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738338"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781783"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>informes de Microsoft 365 en el centro de administración: Microsoft Teams uso del dispositivo
 
@@ -61,7 +61,7 @@ Puede visualizar el informe **Uso de dispositivos de Microsoft Teams** para ver 
 |Fecha de la última actividad (UTC)  <br/> |La última fecha (UTC) en la que el usuario participó en una actividad de Teams.  <br/> |
 |Tiene licencia|Se selecciona si el usuario tiene licencia para usar Teams.|
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 [Informe de actividad de usuario de Microsoft Teams](../activity-reports/microsoft-teams-user-activity-preview.md) 
 
 [Microsoft Teams informe de actividad de uso](../activity-reports/microsoft-teams-usage-activity.md) 

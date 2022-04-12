@@ -1,5 +1,5 @@
 ---
-title: Evaluar el informe Microsoft 365 usuarios activos
+title: Evaluación del informe de usuarios activos de Microsoft 365
 ms.author: efrene
 author: efrene
 manager: scotv
@@ -21,48 +21,46 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
-description: Obtenga información sobre cómo obtener un informe de usuarios activos mediante el panel de informes de Microsoft 365 en el Centro de administración de Microsoft 365 y averiguar cuántas licencias de productos se usan.
-ms.openlocfilehash: 9f8b9f12782727121a878cfa353e42291d340688
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Obtenga información sobre cómo obtener un informe de usuarios activos mediante el panel informes de Microsoft 365 de la Centro de administración de Microsoft 365 y averiguar cuántas licencias de producto se usan.
+ms.openlocfilehash: 65ea3f3624bda4f33a8c5680a53749595dc7aa15
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312899"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782003"
 ---
-# <a name="assess-the-microsoft-365-active-users-report"></a>Evaluar el informe Microsoft 365 usuarios activos
+# <a name="assess-the-microsoft-365-active-users-report"></a>Evaluación del informe de usuarios activos de Microsoft 365
 
-El panel Microsoft 365 informes le muestra la introducción a la actividad en todos los productos de su organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
+En el panel informes de Microsoft 365 se muestra la información general sobre la actividad en los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
   
 Por ejemplo, puede usar el informe **Usuarios activos** para conocer cuántas licencias de productos están en uso por usuarios de la organización y explorar en profundidad la información sobre los productos que usa cada usuario. Este informe puede ayudar a los administradores a identificar productos no usados o usuarios que pueden necesitar aprendizaje o información adicional. 
 
 ## <a name="how-to-get-to-the-active-users-report"></a>Obtener acceso al informe Usuarios activos
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso. 
-2. En la página principal del panel, haga clic en el botón **Ver más** en la tarjeta Usuarios activos - Microsoft 365 servicios.
+2. En la página principal del panel, haga clic en el botón **Ver más** en la tarjeta Usuarios activos Microsoft 365 Servicios.
 
 ## <a name="interpret-the-active-users-report"></a>Interpretar el informe Usuarios activos
 
-Puede ver usuarios activos en el informe de Office 365 seleccionando la **pestaña Usuarios activos**.<br/>![Microsoft 365: Microsoft Office 365 usuarios activos.](../../media/56fe2e54-76ad-49e5-886f-1344c2697258.png)
+Para ver los usuarios activos en el informe de Office 365, elija la pestaña **Usuarios activos**.<br/>![informes de Microsoft 365: Microsoft Office 365 usuarios activos.](../../media/56fe2e54-76ad-49e5-886f-1344c2697258.png)
 
-- El informe Usuarios activos permite ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si ve un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
+- El informe Usuarios activos permite ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si ve un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
 
-- Los datos de cada informe suelen abarcar hasta las últimas 24 a 48 horas.
+- Los datos de cada informe suelen cubrir hasta las últimas 24 a 48 horas.
 
-- El gráfico Usuarios muestra los usuarios activos diarios en el período de informes separados por producto.
-El gráfico Actividad muestra el recuento diario de actividad en el período de informes separado por producto.
+- El gráfico Usuarios muestra los usuarios activos diarios en el período de informes separados por el producto.
+El gráfico Actividad muestra el recuento diario de actividades en el período de informe separado por producto.
 El gráfico Servicios se muestra el número de usuarios por tipo de actividad y servicio.
 
 - En el gráfico Usuarios, el eje x muestra el período de tiempo de informes seleccionado y el eje y muestra los usuarios activos diarios separados y el color codificado por tipo de licencia.
-En el gráfico Actividad, el eje x muestra el período de tiempo de informes seleccionado y el eje y muestra el recuento diario de actividad separado y el color codificado por tipo de licencia.
+En el gráfico De actividad, el eje x muestra el período de tiempo de informes seleccionado y el eje y muestra el recuento de actividad diario separado y el color codificado por tipo de licencia.
 En el gráfico de actividad Servicios, en el eje X se muestran los servicios individuales habilitados para los usuarios en el período especificado y en el eje Y se muestra el número de usuarios por estado de actividad, codificados por colores según el estado de la actividad.
 
-- Puede filtrar la serie que ve en el gráfico seleccionando un elemento en la leyenda. Si cambia esta selección, no cambiará la información en la tabla de cuadrícula.
+- Puede filtrar la serie que ve en el gráfico seleccionando un elemento de la leyenda. Si cambia esta selección, no cambiará la información en la tabla de cuadrícula.
 
-- También puede exportar los datos del informe a un Excel .csv, seleccionando el vínculo Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos.
+- También puede exportar los datos del informe a un archivo Excel .csv; para ello, seleccione el vínculo Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos.
 
 - Puede cambiar la información que se muestra en la tabla de cuadrícula con controles de columna.
-Si su suscripción está operada por 21Vianet, no verá Yammer.
+Si la suscripción está operada por 21Vianet, no verá Yammer.
 
-
-
-Si las directivas de la organización le impiden ver los informes en los que la información del usuario es identificable, puede cambiar la configuración de privacidad de todos estos informes. Consulte la sección **¿Cómo ocultar los detalles del nivel de usuario?** en Informes de actividad [en el Centro de administración de Microsoft 365](activity-reports.md).  
+Si las directivas de la organización le impiden ver los informes en los que la información del usuario es identificable, puede cambiar la configuración de privacidad de todos estos informes. Consulte la sección **Cómo ocultar los detalles de nivel de usuario** en [Informes de actividad en el Centro de administración de Microsoft 365](activity-reports.md).  

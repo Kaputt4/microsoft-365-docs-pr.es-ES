@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3103ab5332045da58609b048d637da30d287ed10
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 0a6f53b0723d7f3e9b4761aa83238e618d947e55
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666578"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783433"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Solución de problemas en Microsoft Defender para punto de conexión en Android
 
@@ -144,24 +144,25 @@ Vuelva a la pantalla de incorporación Microsoft Defender para punto de conexió
 
 Si un usuario se enfrenta a un problema que aún no se ha solucionado en las secciones anteriores o no puede resolverse mediante los pasos enumerados, el usuario puede proporcionar **comentarios desde la aplicación** junto con **datos de diagnóstico**. A continuación, nuestro equipo puede investigar los registros para proporcionar la solución adecuada. Los usuarios pueden seguir estos pasos para hacer lo mismo:
 
-1.  Abra la **aplicación MDE** en el dispositivo y haga clic en el **icono de perfil** de la esquina superior izquierda.
+1. Abra la **aplicación MDE** en el dispositivo y haga clic en el **icono de perfil** de la esquina superior izquierda.
 
     :::image type="content" source="images/select-profile-icon-1.jpg" alt-text="Icono de perfil en el portal de Microsoft Defender para punto de conexión" lightbox="images/select-profile-icon-1.jpg":::
 
-2.  Seleccione "Ayuda & comentarios".
+2. Seleccione "Ayuda & comentarios".
 
     :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="La opción Ayuda & comentarios que se puede seleccionar en el portal de Microsoft Defender para punto de conexión" lightbox="images/selecthelpandfeedback2.png":::
 
-3.  Seleccione "Enviar comentarios a Microsoft".
+3. Seleccione "Enviar comentarios a Microsoft".
 
     :::image type="content" alt-text="Seleccionar enviar comentarios a Microsoft" source="images/send-feedback-to-microsoft-3.jpg":::
 
-4.  Elija entre las opciones especificadas. Para informar de un problema, seleccione "Quiero informar de un problema".
+4. Elija entre las opciones especificadas. Para informar de un problema, seleccione "Quiero informar de un problema".
 
     :::image type="content" source="images/report-issue-4.jpg" alt-text="La opción Quiero informar de un problema" lightbox="images/report-issue-4.jpg":::
 
-5.  Proporcione los detalles del problema al que se enfrenta y compruebe "Enviar datos de diagnóstico". Se recomienda comprobar "Incluir su dirección de correo electrónico" para que el equipo pueda ponerse en contacto con usted con una solución o un seguimiento.
+5. Proporcione los detalles del problema al que se enfrenta y compruebe "Enviar datos de diagnóstico". Se recomienda comprobar "Incluir su dirección de correo electrónico" para que el equipo pueda ponerse en contacto con usted con una solución o un seguimiento.
 
     :::image type="content" source="images/finalsubmit5.png" alt-text="Panel en el que puede agregar detalles y adjuntar datos de diagnóstico" lightbox="images/finalsubmit5.png":::
 
-6.  Haga clic en "Enviar" para enviar correctamente los comentarios.
+6. Haga clic en "Enviar" para enviar correctamente los comentarios.
+

@@ -13,62 +13,62 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-description: Migre Outlook, OneDrive y Teams datos a Microsoft 365 Empresa Estándar
-ms.openlocfilehash: fcd3047014204c1115481dfd411be502a7409fb9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Migre los datos de Outlook, OneDrive y Teams a Microsoft 365 Empresa Estándar
+ms.openlocfilehash: 7868212bbd3d96e71d606fb3df0071018ded1c31
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196166"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783411"
 ---
 # <a name="migrate-data-to-my-microsoft-365-business-standard-subscription"></a>Migrar datos a mi suscripción de Microsoft 365 Empresa Estándar
 
-Siga los pasos de este artículo para mover los datos OneDrive, Outlook y Teams a su Microsoft 365 Empresa Estándar suscripción.
+Siga los pasos de este artículo para mover los datos de OneDrive, Outlook y Teams a la suscripción de Microsoft 365 Empresa Estándar.
 
 > [!IMPORTANT]
-> Todavía puede conservar los datos en su cuenta personal. Los datos de su cuenta personal no expirarán una vez que cree una nueva cuenta de correo electrónico empresarial y migre los datos. Puede mover todos los datos a su nueva cuenta empresarial o puede mover algunos de los datos. Por ejemplo, puedes mover los documentos de trabajo a tu cuenta de empresa, pero mantener tus fotos personales de familia en tu cuenta personal.
+> Todavía puede conservar sus datos en su cuenta personal. Los datos de su cuenta personal no expirarán una vez que cree una nueva cuenta de correo electrónico empresarial y migre los datos. Puede mover todos los datos a su nueva cuenta de negocio o puede mover algunos de los datos. Por ejemplo, puede mover sus documentos de trabajo a su cuenta de negocio, pero mantener las fotos personales de su familia en su cuenta personal.
 
 ## <a name="move-files-to-onedrive-for-business"></a>Mover archivos a OneDrive para empresas
 
-En esta sección se describe cómo mover los archivos almacenados en su Microsoft 365 personal a su cuenta de Microsoft 365 empresa. Con ambas OneDrive cuentas sincronizadas con el dispositivo, puedes arrastrar y colocar fácilmente los archivos entre dos OneDrive carpetas.
+En esta sección se describe cómo mover los archivos almacenados en la cuenta personal de Microsoft 365 a la cuenta de Microsoft 365 empresa. Con ambas cuentas de OneDrive sincronizadas con el dispositivo, puede arrastrar y colocar fácilmente los archivos entre dos carpetas OneDrive.
 
-1. Selecciona el OneDrive de nube blanca en el área de notificación Windows y asegúrate de que OneDrive cuenta personal esté sincronizada con el dispositivo.
+1. Seleccione el icono OneDrive nube blanca en el área de notificación Windows y asegúrese de que la cuenta personal de OneDrive está sincronizada con el dispositivo.
 
-    :::image type="content" source="../../media/ssu-onedrive-icons.png" alt-text="Captura de pantalla: Seleccione el icono de nube blanca en el Windows de notificación":::
-
-    > [!NOTE]
-    > Es posible que deba seleccionar la flecha Mostrar **iconos** ocultos junto al área de notificación para ver el OneDrive. Si el icono no aparece en el área de notificación, es OneDrive no se esté ejecutando. Seleccione **Inicio**, escriba OneDrive en el cuadro de búsqueda y, a continuación, seleccione OneDrive en los resultados de la búsqueda.
-
-2. Para agregar la nueva cuenta de negocio, seleccione **Ayuda & Configuración**  >  **Configuración**.
-
-    :::image type="content" source="../../media/ssu-onedrive-help-settings.png" alt-text="Captura de pantalla: seleccione Ayuda & Configuración para agregar una cuenta":::
-
-3. En **Configuración**, seleccione **Cuenta Agregar** una  >  **cuenta**.
-
-4. Cuando OneDrive se inicie el programa de instalación, escriba su nueva cuenta empresarial y, a continuación, **seleccione Iniciar sesión**.
-
-    :::image type="content" source="../../media/ssu-setup-onedrive.png" alt-text="Captura de pantalla: escriba su dirección de correo electrónico en OneDrive página de configuración":::
+    :::image type="content" source="../../media/ssu-onedrive-icons.png" alt-text="Captura de pantalla: Seleccione el icono de nube blanca en el área de notificación Windows":::
 
     > [!NOTE]
-    > Si no has configurado OneDrive con tu cuenta personal actual de Microsoft 365 antes, sigue los pasos anteriores para configurar tu cuenta personal en el dispositivo y sincronizar los archivos antes de pasar a los pasos siguientes.
+    > Es posible que deba seleccionar la flecha **Mostrar iconos ocultos** junto al área de notificación para ver el icono de OneDrive. Si el icono no aparece en el área de notificación, es posible que OneDrive no se esté ejecutando. Seleccione **Inicio**, escriba OneDrive en el cuadro de búsqueda y, a continuación, seleccione OneDrive en los resultados de la búsqueda.
+
+2. Para agregar la nueva cuenta de negocio, seleccione **Ayuda & Configuración** >  **Configuración**.
+
+    :::image type="content" source="../../media/ssu-onedrive-help-settings.png" alt-text="Captura de pantalla: Seleccione Ayuda & Configuración para agregar una cuenta":::
+
+3. En **Configuración**, seleccione **CuentaAgregar** >  una cuenta.
+
+4. Cuando se inicie OneDrive programa de instalación, escriba la nueva cuenta empresarial y, a continuación, seleccione **Iniciar sesión**.
+
+    :::image type="content" source="../../media/ssu-setup-onedrive.png" alt-text="Captura de pantalla: Escriba su dirección de correo electrónico en la página de configuración de OneDrive":::
+
+    > [!NOTE]
+    > Si no ha configurado OneDrive con su cuenta personal de Microsoft 365 actual antes, siga los pasos anteriores para configurar su cuenta personal en el dispositivo y sincronizar los archivos antes de pasar a los pasos siguientes.
 
 ### <a name="drag-and-drop-files-in-onedrive"></a>Arrastre y coloque archivos en OneDrive
 
-Con tus cuentas Microsoft 365 personales y empresariales sincronizadas con el dispositivo, ahora puedes mover los archivos de tu carpeta personal OneDrive a tu nueva carpeta de OneDrive empresa.
+Con las cuentas personales y empresariales Microsoft 365 sincronizadas con el dispositivo, ahora puede mover los archivos de la carpeta de OneDrive personal a la nueva carpeta de OneDrive empresarial.
 
-1. En el Explorador de archivos, abra la carpeta OneDrive que contiene los archivos.
+1. En Explorador de archivos, abra la carpeta de OneDrive sincronizada que contiene los archivos.
 
-2. Seleccione y arrastre los archivos que desee de su OneDrive personal a la nueva carpeta OneDrive empresa.
+2. Seleccione y arrastre los archivos que desee de la carpeta personal de OneDrive a la nueva carpeta de negocio OneDrive.
 
-    :::image type="content" source="../../media/ssu-onedrive-files-to-work-folder.png" alt-text="Captura de pantalla: arrastre y coloque archivos en la carpeta OneDrive para empresas":::
+    :::image type="content" source="../../media/ssu-onedrive-files-to-work-folder.png" alt-text="Captura de pantalla: Arrastrar y colocar archivos en la nueva carpeta OneDrive para empresas":::
 
-### <a name="notes-about-moving-files-from-onedrive-personal-to-onedrive-for-work"></a>Notas sobre cómo mover archivos de OneDrive personal a OneDrive para el trabajo
+### <a name="notes-about-moving-files-from-onedrive-personal-to-onedrive-for-work"></a>Notas sobre cómo mover archivos de OneDrive personal a OneDrive para trabajar
 
-- Si mueve un gran número de archivos, se recomienda mover archivos en lotes de no más de 100 archivos cada uno.
+- Si va a mover un gran número de archivos, se recomienda mover archivos en lotes de no más de 100 archivos cada uno.
 
-- Los archivos que se mueven de OneDrive personal a OneDrive para el trabajo se reconocen como archivos nuevos y, como resultado, estos archivos no conservan detalles de metadatos como Modificado y Modificado por.
+- Los archivos que se mueven de OneDrive personal a OneDrive para el trabajo se reconocen como archivos nuevos y, como resultado, estos archivos no conservan los detalles de metadatos, como Modificado y Modificado por.
 
-- Si ha compartido archivos en OneDrive, tendrá que volver a compartir estos archivos en el nuevo OneDrive para trabajar después de moverlos. Además, una vez que comparta estos archivos, se recomienda eliminar los archivos originales de OneDrive. De esta forma, los usuarios no podrán hacer referencia a copias des actualizadas de los archivos que había compartido con ellos anteriormente.
+- Si ha compartido archivos en OneDrive anteriormente, tendrá que volver a compartir estos archivos en el nuevo OneDrive para trabajar después de moverlos. Además, una vez que comparta estos archivos, se recomienda eliminar los archivos originales de OneDrive. De este modo, los usuarios no podrán hacer referencia a copias obsoletas de los archivos que había compartido con ellos anteriormente.
 
 ## <a name="step-set-up-outlook-for-email"></a>Paso: configurar Outlook para correo electrónico
 
@@ -112,27 +112,27 @@ Más información en [Importar correo electrónico con Outlook](https://support.
 
 También puede usar el centro de administración de Exchange para importar el correo electrónico de todos los usuarios. Para obtener más información, consulte [Migrar varias cuentas de correo electrónico](/Exchange/mailbox-migration/mailbox-migration).
 
-## <a name="move-data-from-your-personal-microsoft-teams-account-to-new-teams-for-work-account"></a>Mover datos de su cuenta personal Microsoft Teams a nueva cuenta Teams para la cuenta de trabajo
+## <a name="move-data-from-your-personal-microsoft-teams-account-to-new-teams-for-work-account"></a>Mover datos de su cuenta de Microsoft Teams personal a nuevos Teams para la cuenta profesional
 
 1. Abra Microsoft Teams, seleccione el icono de perfil y, a continuación, **Agregar cuenta profesional o educativa**.
 
-2. Siga los pasos para agregar su nueva cuenta a Teams para el trabajo. Consulta [Iniciar sesión y empezar a usar Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937) para obtener más información.
+2. Siga los pasos para agregar la nueva cuenta a Teams para trabajar. Consulte [Inicio de sesión y empiece a trabajar con Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937) para obtener más información.
 
-### <a name="access-teams-chats"></a>Acceder Teams chats
+### <a name="access-teams-chats"></a>Acceso a chats de Teams
 
-Cuando empiece a usar Teams con su nueva cuenta de trabajo, los datos no se migrarán. La mejor manera de ver los chats antiguos es abrir la cuenta Teams y la cuenta de trabajo nueva en paralelo. Para ello, selecciona el icono ME en la parte superior derecha de Teams y elige la cuenta que quieras abrir. Puede empezar a usar Teams con su nueva cuenta de trabajo con sus compañeros. Asegúrese de comunicarle a otros usuarios con los que chatea para empezar a ponerse en contacto con usted con su nueva cuenta de Teams para el trabajo.
+Cuando empiece a usar Teams con la nueva cuenta profesional, los datos no se migrarán. La mejor manera de ver tus chats antiguos es abrir tu antigua cuenta Teams y la nueva cuenta profesional en paralelo. Para ello, seleccione el icono ME en la parte superior derecha de Teams y elija la cuenta que desea abrir. Puede empezar a usar Teams con su nueva cuenta profesional con sus compañeros. Asegúrese de indicar a otros usuarios con los que chatea que empiecen a ponerse en contacto con usted mediante la nueva Teams para la cuenta profesional.
 
-### <a name="microsoft-teams-meetings"></a>Microsoft Teams reuniones
+### <a name="microsoft-teams-meetings"></a>reuniones Microsoft Teams
 
-Una vez que haya configurado Microsoft Teams nueva cuenta de trabajo, puede volver a crear las reuniones en el Teams calendario. Recuerda eliminar las reuniones originales en tu cuenta Teams anterior. Esto le permitirá tener acceso a una funcionalidad más enriqueciendo, por ejemplo, la disponibilidad del calendario al programar y la capacidad de grabar reuniones. Solo puede eliminar reuniones de su propio calendario de Teams, así que asegúrese de permitir que las personas con las que tenga reuniones sepan que va a volver a crear las reuniones. Al realizar la transición para usar su nueva cuenta de Teams para las reuniones, si faltan personas que deberían estar en las reuniones, póngase en contacto con ellos para asegurarse de que no se han unido al vínculo de reunión anterior.
+Una vez configurada la nueva cuenta de Microsoft Teams para el trabajo, puede volver a crear las reuniones en el calendario de Teams. No olvide eliminar las reuniones originales de la cuenta de Teams anterior. Esto le permitirá acceder a una funcionalidad más enriquecida, por ejemplo, la disponibilidad del calendario al programar y la capacidad de registrar reuniones. Solo puede eliminar reuniones de su propio calendario de Teams, así que asegúrese de que las personas con las que tiene reuniones sepan que va a volver a crear las reuniones. A medida que realice la transición para usar la nueva cuenta de Teams para las reuniones, si faltan personas que deben estar en las reuniones, póngase en contacto con ellas para asegurarse de que no se han unido al vínculo de reunión anterior.
 
 ### <a name="migrating-contacts"></a>Migración de contactos
 
-Para migrar los contactos desde su cuenta personal Teams, busque la dirección de correo electrónico del contacto y agregue el usuario a su nueva cuenta de Teams para el trabajo.
+Para migrar tus contactos desde tu cuenta de Teams personal, busca la dirección de correo electrónico del contacto y agrega el usuario a tu nueva cuenta de Teams para trabajar.
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Importar o migrar correo electrónico de Gmail u otro proveedor de correo electrónico a Microsoft 365](../setup/migrate-email-and-contacts-admin.md)
+[Importe o migre el correo electrónico de Gmail u otro proveedor de correo electrónico a Microsoft 365](../setup/migrate-email-and-contacts-admin.md)
 
 <!--## Download desktop apps
 

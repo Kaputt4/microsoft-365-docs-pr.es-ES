@@ -21,21 +21,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
-description: Obtenga información sobre cómo comprobar el dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en web.com microsoft.
-ms.openlocfilehash: 612c22b518402fccaf9ced76b2506aa15c0e89f6
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial En línea y otros servicios en web.com para Microsoft.
+ms.openlocfilehash: 621364bdc0b2e9a2868084f0cb0b8eb8ef61c5b0
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568420"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64780321"
 ---
 # <a name="connect-your-dns-records-at-webcom-to-microsoft-365"></a>Conectar los registros DNS en web.com a Microsoft 365
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca.
 
-Si web.com es su proveedor de hospedaje DNS, siga los pasos de este artículo para comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online, y así sucesivamente.
+Si web.com es el proveedor de hospedaje dns, siga los pasos de este artículo para comprobar el dominio y configurar los registros DNS para el correo electrónico, Skype Empresarial En línea, etc.
 
-Después de agregar estos registros en web.com, el dominio se configurará para que funcione con servicios Microsoft.
+Después de agregar estos registros en web.com, el dominio se configurará para trabajar con servicios Microsoft.
 
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -45,28 +45,28 @@ Después de agregar estos registros en web.com, el dominio se configurará para 
 > [!IMPORTANT]
 > Debe realizar este procedimiento en el registrador de dominios en el que compró y registró su dominio.
 
-Cuando se inscribió en web.com, agregó un dominio mediante el web.com **de instalación** .
+Al registrarse para web.com, agregó un dominio mediante el proceso de **instalación** de web.com.
 
-Para comprobar y crear registros DNS para su dominio en Microsoft, primero debe cambiar los servidores de nombres en el registrador de dominios para que usen los servidores web.com nombres.
+Para comprobar y crear registros DNS para su dominio en Microsoft, primero debe cambiar los servidores de nombres en el registrador de dominios para que usen los servidores de nombres de web.com.
 
 Para cambiar los servidores DNS del dominio en el sitio web del registrador de dominios usted mismo, haga lo siguiente:
 
 1. En el sitio web del registrador de dominios, busque el área donde poder modificar los servidores DNS del dominio.
 
-2. Cree dos registros de servidor de nombres mediante los valores de la tabla siguiente o edite los registros existentes del servidor de nombres para que coincidan con estos valores.
+2. Cree dos registros de servidor de nombres mediante los valores de la tabla siguiente o edite los registros de nameserver existentes para que coincidan con estos valores.
 
     |Tipo|Valor|
     |---|---|
-    |Primer servidor de nombres|Use el valor de servidor de nombres proporcionado por web.com.|
-    |Segundo servidor de nombres|Use el valor de servidor de nombres proporcionado por web.com.|
+    |Primer servidor de nombres|Use el valor nameserver proporcionado por web.com.|
+    |Segundo servidor de nombres|Use el valor nameserver proporcionado por web.com.|
 
     > [!TIP]
-    > You should use at least two name server records. Si hay otros servidores de nombres enumerados, debe eliminarlos.
+    > You should use at least two name server records. Si aparece algún otro servidor de nombres, debe eliminarlos.
 
 3. Guarde los cambios.
 
 > [!NOTE]
-> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. A continuación, el correo electrónico de Microsoft y otros servicios estarán configurados para funcionar con su dominio.
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. A continuación, el correo electrónico de Microsoft y otros servicios estarán configurados para que funcionen con su dominio.
 
 ## <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
 
@@ -79,13 +79,13 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 
 1. En la página de aterrizaje, seleccione **Nombres de dominio**.
 
-1. En **Acciones**, seleccione los tres puntos y, a continuación, **seleccione Administrar** en la lista desplegable.
+1. En **Acciones**, seleccione los tres puntos y, a continuación, seleccione **Administrar** en la lista desplegable.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Seleccione Administrar en la lista desplegable.":::
 
 1. Desplácese hacia abajo para seleccionar **Herramientas avanzadas** y, junto a **Registros DNS avanzados**, seleccione **ADMINISTRAR**.
 
-    Es posible que tenga que **seleccionar Continuar** para ir a la página Administrar registros DNS avanzados.
+    Es posible que tenga que seleccionar **Continuar** para acceder a la página Administrar registros DNS avanzados.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="Junto a Registros DNS avanzados, seleccione ADMINISTRAR.":::
 
@@ -99,23 +99,23 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
 
 1. Seleccione o copie y pegue los valores de la tabla siguiente.
 
-    |Hace referencia a|Valor TXT|TTL|
+    |Se nombra|Valor TXT|TTL|
     |---|---|:----|
     |@|MS=*msXXXXXXXX* <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|1 hora|
 
 1. Seleccione **AGREGAR**.
 
-    Espere unos minutos antes de comprobar el nuevo registro TXT, para que el registro que acaba de crear pueda actualizarse en Internet.
+    Espere unos minutos antes de comprobar el nuevo registro TXT para que el registro que acaba de crear pueda actualizarse a través de Internet.
 
 Ahora que ha agregado el registro en el sitio de su registrador de dominios, deberá volver a Microsoft y solicitar el registro. Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 
 Para comprobar el registro en Microsoft 365:
 
-1. En el Centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**dominios**</a>.
+1. En el centro de administración, vaya a dominios **de Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**.**</a>
 
 1. En la página Dominios, seleccione el dominio que está comprobando y seleccione **Iniciar configuración**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar instalación.":::
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Seleccione Iniciar configuración.":::
 
 1. Seleccione **Continuar**.
 
@@ -130,13 +130,13 @@ Para comprobar el registro en Microsoft 365:
 
 1. En la página de aterrizaje, seleccione **Nombres de dominio**.
 
-1. En **Acciones**, seleccione los tres puntos y, a continuación, **seleccione Administrar** en la lista desplegable.
+1. En **Acciones**, seleccione los tres puntos y, a continuación, seleccione **Administrar** en la lista desplegable.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Seleccione Administrar en la lista desplegable.":::
 
 1. Desplácese hacia abajo para seleccionar **Herramientas avanzadas** y, junto a **Registros DNS avanzados**, seleccione **ADMINISTRAR**.
 
-    Es posible que tenga que **seleccionar Continuar** para ir a la página Administrar registros DNS avanzados.
+    Es posible que tenga que seleccionar **Continuar** para acceder a la página Administrar registros DNS avanzados.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="Junto a Registros DNS avanzados, seleccione ADMINISTRAR.":::
 
@@ -150,13 +150,13 @@ Para comprobar el registro en Microsoft 365:
 
     |Hace referencia a|Servidor de correo|Prioridad|TTL|
     |---|---|---|---|
-    |@|*\<domain-key\>*.mail.protection.outlook.com <br/> **Nota:** Obtener el del *\<domain-key\>* Centro de administración de Microsoft. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/> 1|1 Hour|
+    |@|*\<domain-key\>*.mail.protection.outlook.com <br/> **Nota:** Obtenga el del *\<domain-key\>* Centro de administración de Microsoft. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)|Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/> 1|1 Hour|
 
 1. Seleccione **AGREGAR**.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-mx-add.png" alt-text="Seleccione AGREGAR.":::
 
-1. Si hay otros registros MX, elimínelos todos seleccionando la herramienta de edición y, a continuación, **elimine** para cada registro.
+1. Si hay otros registros MX, elimínelos seleccionando la herramienta de edición y, a continuación, **Eliminar** para cada registro.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-edit.png" alt-text="Seleccione Editar.":::
 
@@ -166,13 +166,13 @@ Para comprobar el registro en Microsoft 365:
 
 1. En la página de aterrizaje, seleccione **Nombres de dominio**.
 
-1. En **Acciones**, seleccione los tres puntos y, a continuación, **seleccione Administrar** en la lista desplegable.
+1. En **Acciones**, seleccione los tres puntos y, a continuación, seleccione **Administrar** en la lista desplegable.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Seleccione Administrar en la lista desplegable.":::
 
 1. Desplácese hacia abajo para seleccionar **Herramientas avanzadas** y, junto a **Registros DNS avanzados**, seleccione **ADMINISTRAR**.
 
-    Es posible que tenga que **seleccionar Continuar** para ir a la página Administrar registros DNS avanzados.
+    Es posible que tenga que seleccionar **Continuar** para acceder a la página Administrar registros DNS avanzados.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="Junto a Registros DNS avanzados, seleccione ADMINISTRAR.":::
 
@@ -190,26 +190,26 @@ Para comprobar el registro en Microsoft 365:
     |---|---|---|---|
     |Otro host|autodescubrir|autodiscover.outlook.com|1 hora|
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="Escriba o copie y pegue los valores CNAME en la ventana.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="Escriba o copie y pegue los valores de CNAME en la ventana.":::
 
 1. Seleccione **AGREGAR**.
 
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Agregar un registro TXT para SPF para ayudar a prevenir el spam de correo electrónico
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga  un único registro SPF que incluya ambos conjuntos de valores.
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un *único* registro SPF que incluya ambos conjuntos de valores.
 
 1. Para empezar, vaya a la página dominios en web.com mediante [este vínculo](https://checkout.web.com/manage-it/index.jsp). Inicie sesión primero.
 
 1. En la página de aterrizaje, seleccione **Nombres de dominio**.
 
-1. En **Acciones**, seleccione los tres puntos y, a continuación, **seleccione Administrar** en la lista desplegable.
+1. En **Acciones**, seleccione los tres puntos y, a continuación, seleccione **Administrar** en la lista desplegable.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Seleccione Administrar en la lista desplegable.":::
 
 1. Desplácese hacia abajo para seleccionar **Herramientas avanzadas** y, junto a **Registros DNS avanzados**, seleccione **ADMINISTRAR**.
 
-    Es posible que tenga que **seleccionar Continuar** para ir a la página Administrar registros DNS avanzados.
+    Es posible que tenga que seleccionar **Continuar** para acceder a la página Administrar registros DNS avanzados.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="Junto a Registros DNS avanzados, seleccione ADMINISTRAR.":::
 
@@ -231,7 +231,7 @@ Para comprobar el registro en Microsoft 365:
 
 ## <a name="advanced-option-skype-for-business"></a>Opción avanzada: Skype Empresarial
 
-Solo seleccione esta opción si su organización usa Skype Empresarial para servicios de comunicación en línea como chat, llamadas de conferencia y videollamadas, además de Microsoft Teams. Skype necesita 4 registros: 2 registros SRV para la comunicación de usuario a usuario y 2 registros CNAME para iniciar sesión y conectar usuarios al servicio.
+Solo seleccione esta opción si su organización usa Skype Empresarial para servicios de comunicación en línea, como chat, llamadas de conferencia y videollamadas, además de Microsoft Teams. Skype necesita 4 registros: 2 registros SRV para la comunicación de usuario a usuario y 2 registros CNAME para iniciar sesión y conectar usuarios al servicio.
 
 ### <a name="add-the-two-required-srv-records"></a>Agregar los dos registros SRV necesarios
 
@@ -239,13 +239,13 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
 1. En la página de aterrizaje, seleccione **Nombres de dominio**.
 
-1. En **Acciones**, seleccione los tres puntos y, a continuación, **seleccione Administrar** en la lista desplegable.
+1. En **Acciones**, seleccione los tres puntos y, a continuación, seleccione **Administrar** en la lista desplegable.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Seleccione Administrar en la lista desplegable.":::
 
 1. Desplácese hacia abajo para seleccionar **Herramientas avanzadas** y, junto a **Registros DNS avanzados**, seleccione **ADMINISTRAR**.
 
-    Es posible que tenga que **seleccionar Continuar** para ir a la página Administrar registros DNS avanzados.
+    Es posible que tenga que seleccionar **Continuar** para acceder a la página Administrar registros DNS avanzados.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="Junto a Registros DNS avanzados, seleccione ADMINISTRAR.":::
 
@@ -261,8 +261,8 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
     |Tipo|Servicio|Protocolo|Peso|Puerto|Target|Prioridad|TTL|
     |---|---|---|---|---|---|---|---|
-    |SRV|_sip|TLS|100|443|sipdir.online.lync.com <br/> **Este valor NO PUEDE finalizar con un punto (.)**|1|1 hora|
-    |SRV|_sipfederationtls|TCP|100|5061|sipfed.online.lync.com <br/> **Este valor NO PUEDE finalizar con un punto (.)**|1|1 Hour|
+    |SRV|_sip|TLS|100|443|sipdir.online.lync.com <br/> **Este valor NO PUEDE terminar con un punto (.)**|1|1 hora|
+    |SRV|_sipfederationtls|TCP|100|5061|sipfed.online.lync.com <br/> **Este valor NO PUEDE terminar con un punto (.)**|1|1 Hour|
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-srv-add.png" alt-text="Escriba o copie y pegue los valores de la tabla en la ventana de registro SRV.":::
 
@@ -273,13 +273,13 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 > [!NOTE]
 > Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, vea [Encontrar y solucionar problemas después de agregar el dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-### <a name="add-the-two-required-cname-records"></a>Agregar los dos registros CNAME necesarios
+### <a name="add-the-two-required-cname-records-for-skype-for-business"></a>Agregue los dos registros CNAME necesarios para Skype Empresarial
 
 1. Para empezar, vaya a la página dominios en web.com mediante [este vínculo](https://checkout.web.com/manage-it/index.jsp). Inicie sesión primero.
 
 1. En la página de aterrizaje, seleccione **Nombres de dominio**.
 
-1. En **Acciones**, seleccione los tres puntos y, a continuación, **seleccione Administrar** en la lista desplegable.
+1. En **Acciones**, seleccione los tres puntos y, a continuación, seleccione **Administrar** en la lista desplegable.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Seleccione Administrar en la lista desplegable.":::
 
@@ -287,7 +287,7 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="Junto a Registros DNS avanzados, seleccione ADMINISTRAR.":::
 
-    Es posible que tenga que **seleccionar Continuar** para ir a la página Administrar registros DNS avanzados.
+    Es posible que tenga que seleccionar **Continuar** para acceder a la página Administrar registros DNS avanzados.
 
 1. En la página Administrar registros DNS avanzados, seleccione **+ AGREGAR REGISTRO**.
 
@@ -301,10 +301,10 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 
     |Tipo|Hace referencia a|Nombre de host|Alias para|TTL|
     |---|---|---|---|---|
-    |CNAME|Otro host|sip|sipdir.online.lync.com <br/> **Este valor NO PUEDE finalizar con un punto (.)**|1 hora|
-    |CNAME|Otro host|lyncdiscover|webdir.online.lync.com <br/> **Este valor NO PUEDE finalizar con un punto (.)**|1 Hour|
+    |CNAME|Otro host|sip|sipdir.online.lync.com <br/> **Este valor NO PUEDE terminar con un punto (.)**|1 hora|
+    |CNAME|Otro host|lyncdiscover|webdir.online.lync.com <br/> **Este valor NO PUEDE terminar con un punto (.)**|1 Hour|
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="Escriba o copie y pegue los valores CNAME en la ventana.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="Escriba o copie y pegue los valores de CNAME en la ventana.":::
 
 1. Seleccione **AGREGAR**.
 
@@ -313,23 +313,23 @@ Solo seleccione esta opción si su organización usa Skype Empresarial para serv
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opción avanzada: Intune y Mobile Administración de dispositivos para Microsoft 365
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>Opción avanzada: Intune y mobile Administración de dispositivos para Microsoft 365
 
-Este servicio le ayuda a proteger y administrar de forma remota dispositivos móviles que se conectan a su dominio. El Administración de dispositivos móvil necesita 2 registros CNAME para que los usuarios puedan inscribir dispositivos en el servicio.
+Este servicio le ayuda a proteger y administrar de forma remota los dispositivos móviles que se conectan a su dominio. Mobile Administración de dispositivos necesita 2 registros CNAME para que los usuarios puedan inscribir dispositivos en el servicio.
 
-### <a name="add-the-two-required-cname-records-for-mobile-device-management"></a>Agregue los dos registros CNAME necesarios para mobile Administración de dispositivos
+### <a name="add-the-two-required-cname-records-for-mobile-device-management"></a>Agregue los dos registros CNAME necesarios para Mobile Administración de dispositivos
 
 1. Para empezar, vaya a la página dominios en web.com mediante [este vínculo](https://checkout.web.com/manage-it/index.jsp). Inicie sesión primero.
 
 1. En la página de aterrizaje, seleccione **Nombres de dominio**.
 
-1. En **Acciones**, seleccione los tres puntos y, a continuación, **seleccione Administrar** en la lista desplegable.
+1. En **Acciones**, seleccione los tres puntos y, a continuación, seleccione **Administrar** en la lista desplegable.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Seleccione Administrar en la lista desplegable.":::
 
 1. Desplácese hacia abajo para seleccionar **Herramientas avanzadas** y, junto a **Registros DNS avanzados**, seleccione **ADMINISTRAR**.
 
-    Es posible que tenga que **seleccionar Continuar** para ir a la página Administrar registros DNS avanzados.
+    Es posible que tenga que seleccionar **Continuar** para acceder a la página Administrar registros DNS avanzados.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="Junto a Registros DNS avanzados, seleccione ADMINISTRAR.":::
 
@@ -345,10 +345,10 @@ Este servicio le ayuda a proteger y administrar de forma remota dispositivos mó
 
     |Tipo|Hace referencia a|Nombre de host|Alias para|TTL|
     |---|---|---|---|---|
-    |CNAME|Otro host|enterpriseregistration|enterpriseregistration.windows.net <br/> **Este valor NO PUEDE finalizar con un punto (.)**|1 hora|
-    |CNAME|Otro host|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com <br/> **Este valor NO PUEDE finalizar con un punto (.)**|1 Hour|
+    |CNAME|Otro host|enterpriseregistration|enterpriseregistration.windows.net <br/> **Este valor NO PUEDE terminar con un punto (.)**|1 hora|
+    |CNAME|Otro host|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com <br/> **Este valor NO PUEDE terminar con un punto (.)**|1 Hour|
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="Escriba o copie y pegue los valores CNAME de la tabla en la ventana.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="Escriba o copie y pegue los valores de CNAME de la tabla en la ventana.":::
 
 1. Seleccione **AGREGAR**.
 

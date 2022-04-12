@@ -13,46 +13,46 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: Quite grupos o directivas para desactivar La movilidad y la seguridad básicas.
-ms.openlocfilehash: ff3fe72e1ca3a6445aa29ac18404aae139a70f8a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Quite grupos o directivas para desactivar Basic Mobility and Security.
+ms.openlocfilehash: c3c82c040e688977a68e06639e87c8f733bc8c38
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165861"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64780773"
 ---
 # <a name="turn-off-basic-mobility-and-security"></a>Desactivar Movilidad y seguridad básicas
 
-Para desactivar de forma eficaz la movilidad y la seguridad básicas, quitas grupos de personas definidos por grupos de seguridad de las directivas de administración de dispositivos o quitas las propias directivas.
+Para desactivar de forma eficaz La movilidad y la seguridad básicas, se quitan los grupos de personas definidos por los grupos de seguridad de las directivas de administración de dispositivos o se quitan las propias directivas.
 
-- Quita grupos de usuarios quitando grupos de seguridad de usuario de las directivas de dispositivo que creaste.
+- Quite grupos de usuarios quitando los grupos de seguridad de usuario de las directivas de dispositivo que ha creado.
 
-- Deshabilite la movilidad y la seguridad básicas para todos los usuarios quitando todas las directivas de dispositivos de movilidad y seguridad básicas.
+- Deshabilite La movilidad y la seguridad básicas para todos quitando todas las directivas de dispositivos de movilidad y seguridad básicas.
 
-Estas opciones quitan el cumplimiento básico de movilidad y seguridad para dispositivos de la organización. Desafortunadamente, no puedes simplemente "desaprovisionar" La movilidad y la seguridad básicas después de configurarla.
+Estas opciones quitan la aplicación básica de movilidad y seguridad para los dispositivos de la organización. Desafortunadamente, no puede simplemente "desaprovisionar" la movilidad y la seguridad básicas después de configurarla.
 
 > [!IMPORTANT]
-> Tenga en cuenta el impacto en los dispositivos de los usuarios al quitar grupos de seguridad de usuarios de las directivas o quitar las propias directivas. Por ejemplo, los perfiles de correo electrónico y los correos electrónicos almacenados en caché pueden quitarse, según el dispositivo. Para obtener más información, consulta  [¿Qué sucede cuando eliminas una directiva o quitas a un usuario de la directiva?](../../admin/basic-mobility-security/create-device-security-policies.md)
+> Tenga en cuenta el impacto en los dispositivos de los usuarios al quitar los grupos de seguridad de usuarios de las directivas o quitar las propias directivas. Por ejemplo, es posible que se quiten los perfiles de correo electrónico y los correos electrónicos almacenados en caché, en función del dispositivo. Para obtener más información, consulte [¿Qué ocurre al eliminar una directiva o quitar un usuario de la directiva?](../../admin/basic-mobility-security/create-device-security-policies.md)
 
-## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a>Quitar grupos de seguridad de usuarios de directivas de dispositivos de movilidad básica y seguridad
+## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a>Eliminación de grupos de seguridad de usuarios de las directivas de dispositivos básicos de movilidad y seguridad
 
-1. En el tipo de explorador:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
+1. En el explorador, escriba: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
 
-2. Selecciona una directiva de dispositivo y selecciona **Editar directiva**.
+2. Seleccione una directiva de dispositivo y seleccione **Editar directiva**.
 
-3. En la  **página Implementación,**   seleccione **Quitar**.
+3. En la página **Implementación** , seleccione **Quitar**.
 
-4. En  **Grupos**, seleccione un grupo de seguridad.
+4. En **Grupos**, seleccione un grupo de seguridad.
 
-5. Seleccione  **Quitar** y seleccione **Guardar**.
+5. Seleccione **Quitar** y seleccione **Guardar**.
 
-## <a name="remove-basic-mobility-and-security-device-policies"></a>Quitar directivas básicas de dispositivos de movilidad y seguridad
+## <a name="remove-basic-mobility-and-security-device-policies"></a>Eliminación de directivas de dispositivos básicos de movilidad y seguridad
 
-1. En el tipo de explorador:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
+1. En el explorador, escriba: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
 
-2. Seleccione una directiva de dispositivo y, a continuación,  **seleccione Eliminar directiva**.
+2. Seleccione una directiva de dispositivo y, a continuación, seleccione **Eliminar directiva**.
 
 3. En el cuadro de diálogo Advertencia, seleccione **Sí**.
 
 > [!NOTE]
-> Para obtener más pasos para desbloquear dispositivos si los dispositivos de la organización siguen en estado [bloqueado,](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)consulta la entrada de blog Quitar control de acceso de Administración de dispositivos móviles para Office 365 .
+> Para obtener más pasos para desbloquear dispositivos si los dispositivos de la organización siguen en un estado bloqueado, consulte la entrada de blog [Eliminación de Access Control de Administración de dispositivos móviles para Office 365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934).

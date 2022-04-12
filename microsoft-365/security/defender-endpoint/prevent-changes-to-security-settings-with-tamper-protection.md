@@ -21,12 +21,12 @@ ms.date: 04/07/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: a9092ebb941806324646fffd86dd00b54fa87cc6
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: ccf72b1f7e5625f3b3b9599a50d734a7316b8659
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714975"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64780267"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
@@ -48,7 +48,8 @@ La protección contra alteraciones está disponible para los dispositivos que ej
 - Windows Server 2012 R2
 
 > [!NOTE]
-> La protección contra alteraciones en Windows Server 2012 R2 está disponible para los dispositivos que se incorporan a Microsoft Defender para punto de conexión mediante el paquete de solución unificado moderno. Para obtener más información, consulte [Nueva funcionalidad en la solución unificada moderna para Windows Server 2012 R2 y versión preliminar de 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
+> La protección contra alteraciones en Windows Server 2012 R2 está disponible para los dispositivos incorporados mediante el paquete de solución unificado moderno. Para obtener más información, consulte [Incorporación de servidores Windows al servicio Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
+
 
 ## <a name="overview"></a>Información general
 
@@ -174,7 +175,7 @@ Si su organización usa Microsoft Endpoint Manager (MEM), puede activar (o desac
 Si usa la [versión 2006 de Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), puede administrar la configuración de protección contra alteraciones en Windows 10, Windows 10 Enterprise sesiones múltiples, Windows 11, Windows 11 Empresas sesiones múltiples, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 y Windows Server 2022 mediante un método denominado *asociación de inquilinos*. La asociación de inquilinos le permite sincronizar los dispositivos de Configuration Manager solo locales en el centro de administración de Microsoft Endpoint Manager y, a continuación, entregar directivas de configuración de seguridad de punto de conexión a colecciones locales & dispositivos.
 
 > [!NOTE]
-> El procedimiento se puede usar para ampliar la protección contra alteraciones a los dispositivos que ejecutan Windows 10, Windows 10 Enterprise sesiones múltiples, Windows 11, Windows 11 Empresas sesiones múltiples, Windows Server 2019 y Windows Server 2022. Asegúrese de revisar los requisitos previos y otra información de los recursos mencionados en este procedimiento.
+> El procedimiento se puede usar para ampliar la protección contra alteraciones a los dispositivos que ejecutan Windows 10, Windows 10 Enterprise sesiones múltiples, Windows 11, Windows 11 Empresas sesiones múltiples, Windows Server 2019 y Windows Server 2022. Asegúrese de revisar los requisitos previos y otra información de los recursos mencionados en este procedimiento. Para Windows Server 2012 R2 se requiere la [versión 2203 de la](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2203) solución unificada moderna de Configuration Manager.
 
 1. Configurar la asociación de inquilinos. Para obtener más información, consulte [Comenzar: Creación e implementación de directivas de seguridad de puntos de conexión desde el Centro de administración](/mem/configmgr/tenant-attach/endpoint-security-get-started).
 
@@ -211,9 +212,9 @@ Esto es lo que se ve en la aplicación de Seguridad de Windows:
 
 3. Establezca **Protección contra alteraciones** **en Activado** o **Desactivado**.
 
-## <a name="are-you-using-windows-server-2016-or-windows-version-1709-1803-or-1809"></a>¿Usa Windows Server 2016 o Windows versión 1709, 1803 o 1809?
+## <a name="are-you-using-windows-server-2012-r2-2016-or-windows-version-1709-1803-or-1809"></a>¿Usa Windows Server 2012 R2, 2016 o Windows versión 1709, 1803 o 1809?
 
-Si usa Windows Server 2016, Windows 10 versión 1709, 1803 o [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), no verá **Protección contra alteraciones** en la aplicación Seguridad de Windows. En su lugar, puede usar PowerShell para determinar si está habilitada la protección contra alteraciones.
+Si usa Windows Server 2012 R2 mediante la solución unificada moderna, Windows Server 2016, Windows 10 versión 1709, 1803 o [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), no verá **Protección contra alteraciones** en la aplicación Seguridad de Windows. En su lugar, puede usar PowerShell para determinar si está habilitada la protección contra alteraciones.
 
 En Windows Server 2016, la aplicación Configuración no reflejará con precisión el estado de la protección en tiempo real cuando se habilita la protección contra alteraciones.
 

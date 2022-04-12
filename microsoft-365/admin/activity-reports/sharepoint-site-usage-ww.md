@@ -1,5 +1,5 @@
 ---
-title: Centro de administración de Microsoft 365 SharePoint de uso del sitio
+title: Centro de administración de Microsoft 365 SharePoint informes de uso del sitio
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,22 +21,22 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Obtenga el SharePoint de uso del sitio para saber cuántos archivos almacenan los usuarios en SharePoint sitios, cuántos se usan activamente y el almacenamiento total consumido.
-ms.openlocfilehash: ae25562924f569431b3a6d7eda3099f69cd912b1
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+description: Obtenga el informe de uso del sitio SharePoint para saber cuántos archivos almacenan los usuarios en SharePoint sitios, cuántos se usan activamente y el almacenamiento total consumido.
+ms.openlocfilehash: afcaa6cd087948c635604dbadeb9d56c6d48c1a9
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754221"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781509"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365 informes en el Centro de administración: SharePoint uso del sitio
+# <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>informes de Microsoft 365 en el centro de administración: SharePoint uso del sitio
 
-Como administrador Microsoft 365, el panel Informes le muestra la introducción a la actividad en varios productos de su organización. Le permite explorar para obtener una visión más detallada de las actividades específicas de cada producto. Por ejemplo, puede obtener una vista de alto nivel del valor que obtiene de SharePoint en términos del número total de archivos que los usuarios almacenan en sitios de SharePoint, cuántos archivos se usan activamente y el almacenamiento consumido en todos estos sitios. Luego, puede explorar el informe de uso del sitio de SharePoint para analizar las tendencias y los detalles de nivel de cada sitio. 
+Como administrador de Microsoft 365, el panel Informes muestra la información general de la actividad en varios productos de la organización. Le permite explorar para obtener una visión más detallada de las actividades específicas de cada producto. Por ejemplo, puede obtener una vista de alto nivel del valor que obtiene de SharePoint en términos del número total de archivos que los usuarios almacenan en SharePoint sitios, cuántos archivos se usan activamente y el almacenamiento consumido en todos estos sitios. Luego, puede explorar el informe de uso del sitio de SharePoint para analizar las tendencias y los detalles de nivel de cada sitio. 
 
 ## <a name="how-to-get-to-the-sharepoint-site-usage-report"></a>Obtener acceso al informe de uso del sitio de SharePoint
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso. 
-2. En la página principal del panel, haga clic en el **botón Ver más** en la SharePoint panel.
+2. En la página principal del panel, haga clic en el botón **Ver más** en la tarjeta SharePoint.
 
 ## <a name="show-user-details-in-the-reports"></a>Mostrar detalles de usuario en los informes
 
@@ -54,40 +54,40 @@ Los administradores globales pueden revertir este cambio para su inquilino y mos
   
 3. Desactive la instrucción **En todos los informes, mostrar nombres sin identificar para usuarios, grupos y sitios** y, a continuación, guarde los cambios. 
   
-## <a name="interpret-the-sharepoint-site-usage-report"></a>Interpretar el informe SharePoint uso del sitio
+## <a name="interpret-the-sharepoint-site-usage-report"></a>Interpretación del informe de uso del sitio SharePoint
 
-Puede ver el uso del sitio en el informe SharePoint mediante la pestaña **Uso del** sitio.
+Para ver el uso del sitio en el informe de SharePoint, elija la pestaña **Uso del sitio**.
 
-:::image type="content" alt-text="Microsoft 365: informe de uso SharePoint sitio de Microsoft." source="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png" lightbox="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png":::
+:::image type="content" alt-text="informes de Microsoft 365: informe de uso del sitio de Microsoft SharePoint." source="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png" lightbox="../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png":::
 
 Seleccione **Elegir columnas** para agregar o quitar columnas del informe.
 
-:::image type="content" alt-text="SharePoint de uso del sitio: elija columnas." source="../../media/71ac3195-c494-40c1-9346-a858125ef6df.png":::
+:::image type="content" alt-text="SharePoint informe de uso del sitio: elija columnas." source="../../media/71ac3195-c494-40c1-9346-a858125ef6df.png":::
 
-También puede exportar los datos del informe a un Excel .csv archivo seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
+También puede exportar los datos del informe a un archivo Excel .csv seleccionando el vínculo **Exportar**. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
 
-El **SharePoint de** uso del sitio web se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará datos hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
+El informe **de uso del sitio SharePoint** se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla mostrará los datos durante un máximo de 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
   
 |Métrica|Descripción|
 |:-----|:-----|
-|Dirección URL del sitio  |La dirección URL completa del sitio. |
-|Eliminada  |El estado de eliminación del sitio. Se tarda como mínimo siete días para que los sitios se marquen como eliminados.  |
+|Dirección URL del sitio  |Dirección URL completa del sitio. |
+|Deleted  |Estado de eliminación del sitio. Se tarda como mínimo siete días para que los sitios se marquen como eliminados.  |
 |Propietario del sitio  |Nombre de usuario del propietario principal del sitio.   |
-|Nombre principal del propietario del sitio  |La dirección de correo electrónico del propietario del sitio. |
-|Fecha de última actividad (UTC)  | La fecha de la última vez que se detectó la actividad del archivo o una página se visualizó en el sitio.  |
-|Id. de etiqueta de confidencialidad del sitio  | La etiqueta de confidencialidad del sitio.  |
+|Nombre principal del propietario del sitio  |Dirección de correo electrónico del propietario del sitio. |
+|Fecha de la última actividad (UTC)  | Fecha de la última vez que se detectó la actividad del archivo o se vio una página en el sitio.  |
+|Identificador de etiqueta de confidencialidad del sitio  | Etiqueta de confidencialidad en el sitio.  |
 |Uso compartido externo  | La configuración externa que se puede compartir en el sitio.  |
-|Directiva de dispositivos no administrados  | La directiva de acceso al sitio para dispositivos no administrados.  |
+|Directiva de dispositivo no administrado  | Directiva de acceso al sitio para dispositivos no administrados.  |
 |Ubicación geográfica  | Ubicación geográfica del sitio.  |
-|Archivos  |El número de archivos del sitio. |
+|Archivos  |Número de archivos en el sitio. |
 |Archivos activos  | Número de archivos activos en el sitio. Un archivo se considera activo si se guardó, sincronizó, modificó o compartió dentro del período de tiempo especificado.<br/> NOTA: Si los archivos se quitaron durante el período de tiempo especificado para el informe, el número de archivos activos que se muestran en el informe puede ser mayor que el número actual de archivos en el sitio.  |
-|Storage usado (MB)  |La cantidad de almacenamiento que se usa actualmente en el sitio.  |
-|Storage asignado (MB)  |La cantidad máxima de almacenamiento asignada al sitio.  |
-|Vistas de página  |El número de veces que se han visto las páginas en el sitio.  |
+|Storage se usa (MB)  |Cantidad de almacenamiento que se usa actualmente en el sitio.  |
+|Storage asignado (MB)  |Cantidad máxima de almacenamiento asignada para el sitio.  |
+|Vistas de página  |Número de veces que se han visto páginas en el sitio.  |
 |Páginas visitadas  |El número de páginas únicas que se visitaron en el sitio.  |
-|Recuento de vínculos anónimos  |El número de veces que se comparten documentos o carpetas con "Cualquiera con el vínculo" en el sitio.  |
-|Recuento de vínculos de empresa  |El número de veces que se comparten documentos o carpetas con "Personas de la organización con el vínculo" en el sitio.  |
-|Vínculo seguro para el recuento de invitados  |El número de veces que se comparten documentos o carpetas con "personas específicas" en el sitio.  |
-|Vínculo seguro para el recuento de miembros  |El número de veces que se comparten documentos o carpetas con "personas específicas" en el sitio.  |
-|Plantilla de web raíz  |Plantilla usada para crear el sitio.  <br/> NOTA: Si desea filtrar los datos por diferentes tipos de sitio, exporte los datos y use la columna Plantilla web raíz. |
+|Recuento de vínculos anónimos  |El número de veces que se comparten documentos o carpetas mediante "Cualquiera con el vínculo" en el sitio.  |
+|Recuento de vínculos de empresa  |El número de veces que se comparten documentos o carpetas mediante "Personas en la organización con el vínculo" en el sitio.  |
+|Vínculo seguro para el recuento de invitados  |El número de veces que se comparten documentos o carpetas mediante "personas específicas" en el sitio.  |
+|Vínculo seguro para el recuento de miembros  |El número de veces que se comparten documentos o carpetas mediante "personas específicas" en el sitio.  |
+|Plantilla de web raíz  |Plantilla usada para crear el sitio.  <br/> NOTA: Si desea filtrar los datos por tipos de sitio diferentes, exporte los datos y use la columna Plantilla web raíz. |
 

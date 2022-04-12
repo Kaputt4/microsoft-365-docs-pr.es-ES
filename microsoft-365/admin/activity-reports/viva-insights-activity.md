@@ -1,5 +1,5 @@
 ---
-title: Centro de administración de Microsoft 365 de actividad Ideas Viva
+title: informes de actividad de Centro de administración de Microsoft 365 Ideas Viva
 ms.author: efrene
 author: efrene
 manager: scotv
@@ -17,34 +17,34 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Obtenga información sobre cómo obtener un informe Aplicaciones Microsoft 365 de uso para la actividad de Viva Ideas en el panel Microsoft 365 informes de Centro de administración de Microsoft 365.
-ms.openlocfilehash: bb7f36c1db632fc1745c9dbe8f63f9e6f20909b4
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: Obtenga información sobre cómo obtener un Aplicaciones Microsoft 365 para el informe de uso de Ideas Viva actividad en el panel informes de Microsoft 365 del Centro de administración de Microsoft 365.
+ms.openlocfilehash: c0b19871db61f37585384766d4e44ccb602a661b
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400676"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781323"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>Microsoft 365 informes en el centro de administración: actividad Ideas Viva
+# <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>informes de Microsoft 365 en el centro de administración: actividad de Ideas Viva
 
-Como administrador Microsoft 365, el panel Informes le muestra la introducción a la actividad en varios productos de su organización. Le permite explorar para obtener una visión más detallada de las actividades específicas de cada producto. Consulte los informes de actividad en el Centro de administración de Microsoft 365. 
+Como administrador de Microsoft 365, el panel Informes muestra la información general de la actividad en varios productos de la organización. Le permite explorar para obtener una visión más detallada de las actividades específicas de cada producto. Consulte los informes de actividad en el Centro de administración de Microsoft 365. 
 
-Por ejemplo, puede comprender la adopción de Viva Ideas mirando a los usuarios activos. Además, puede encontrar una guía de implementación para impulsar aún más la adopción en su organización.
+Por ejemplo, puede comprender la adopción de Ideas Viva examinando los usuarios activos. Además, puede encontrar una guía de implementación para aumentar aún más la adopción en su organización.
 
-## <a name="how-do-i-get-to-the-to-the-viva-insights-activity-report"></a>¿Cómo puedo llegar al informe de actividades Ideas Viva?
+## <a name="how-do-i-get-to-the-to-the-viva-insights-activity-report"></a>Cómo llegar al informe de actividad de Ideas Viva?
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso. 
-2. Busque **Viva Ideas actividad**.
+2. Busque **Ideas Viva actividad**.
 
-## <a name="interpret-the-microsoft-365-apps-usage-report"></a>Interpretar el Aplicaciones Microsoft 365 de uso 
+## <a name="interpret-the-microsoft-365-apps-usage-report"></a>Interpretación del informe de uso de Aplicaciones Microsoft 365 
 
-Puede obtener una vista de la actividad viva Ideas del usuario mirando el  **gráfico Usuarios activos**. El gráfico Ideas usuario activo de Viva se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días.  
+Para obtener una vista de la actividad de Ideas Viva del usuario, consulte el **gráfico Usuarios activos**. El gráfico Ideas Viva usuario activo se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días.  
 
 > [!div class="mx-imgBorder"]
-> ![Aplicaciones Microsoft 365 de uso con Viva Ideas.](../../media/viva-insights-chart.png)
+> ![Aplicaciones Microsoft 365 informe de uso con Ideas Viva.](../../media/viva-insights-chart.png)
 
-**Los usuarios** activos son usuarios que han participado con al menos una característica de Viva Ideas ese día. Esto incluye la permanencia durante más de 20 segundos en cualquier correo electrónico de Viva Insight, hacer clic o realizar una acción en cualquier tabla de Ideas o visitar la aplicación Viva Ideas en Teams, complemento Outlook o paneles web. 
+**Los usuarios activos** son usuarios que han participado con al menos una característica de Ideas Viva ese día. Esto incluye la morada durante más de 20 segundos en cualquier correo electrónico de Viva Insight, hacer clic o realizar una acción en cualquier Ideas surfear o visitar la aplicación de Ideas Viva en Teams, Outlook complemento o paneles web. 
 
-## <a name="view-the-viva-insights-deployment-guide"></a>Ver la guía de implementación de Viva Ideas
-Puedes hacer clic en **Aumentar la adopción de Viva Ideas** para ver la [guía de Ideas implementación de Viva](/viva/insights/personal/setup/deployment-guide).
+## <a name="view-the-viva-insights-deployment-guide"></a>Consulte la guía de implementación de Ideas Viva
+Puede hacer clic en **Impulsar la adopción de Ideas Viva** para ver la [guía de implementación de Ideas Viva](/viva/insights/personal/setup/deployment-guide).
 

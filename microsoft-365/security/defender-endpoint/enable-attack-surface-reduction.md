@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: f8f6865bc65662cbbfd5a9276d95abc405f5a64b
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: dfe5567edbe86279ad5a5b0645cb3ea6c54c1174
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664246"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783617"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie expuesta a ataques
 
@@ -93,7 +93,7 @@ También puede excluir que las reglas de ASR se desencadenen en función de los 
 
 > [!IMPORTANT]
 > La exclusión de archivos o carpetas puede reducir considerablemente la protección proporcionada por las reglas de ASR. Los archivos excluidos podrán ejecutarse y no se registrará ningún informe o evento.
-> Si las reglas de ASR detectan archivos que cree que no deben detectarse, primero debe [usar el modo de auditoría para probar la regla](evaluate-attack-surface-reduction.md).
+> Si las reglas de ASR detectan archivos que cree que no deben detectarse, primero debe [usar el modo de auditoría para probar la regla](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit).
 
 Puede especificar archivos o carpetas individuales (mediante rutas de acceso de carpeta o nombres de recursos completos), pero no puede especificar a qué reglas se aplican las exclusiones. Una exclusión solo se aplica cuando se inicia la aplicación o el servicio excluidos. Por ejemplo, si agrega una exclusión para un servicio de actualización que ya se está ejecutando, el servicio de actualización seguirá desencadenando eventos hasta que el servicio se detenga y reinicie.
 

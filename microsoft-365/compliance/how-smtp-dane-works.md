@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo funciona la autenticación basada en DNS SMTP de entidades con nombre (DANE) para proteger las comunicaciones por correo electrónico entre los servidores de correo.
-ms.openlocfilehash: 2af2a166ff73bbe7888ed9265ec8733105eb2007
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: b5f9337457556dda53b5b2f982480a4c2501fcc9
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759443"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782861"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>Funcionamiento de la autenticación basada en DNS SMTP de entidades con nombre (DANE)
 
@@ -196,8 +196,8 @@ Al solucionar problemas, se pueden generar los siguientes códigos de error:
 
 Esto suele indicar un problema con el servidor de correo de destino. Servidor de correo con el que el Analizador de conectividad remota está probando la conexión. Por lo general, hay dos escenarios que generan este código:
 
-1.  El servidor de correo de destino no admite la comunicación segura en absoluto y se debe usar la comunicación no cifrada sin formato.
-2.  El servidor de destino está configurado incorrectamente y omite el comando STARTTLS.
+1. El servidor de correo de destino no admite la comunicación segura en absoluto y se debe usar la comunicación no cifrada sin formato.
+2. El servidor de destino está configurado incorrectamente y omite el comando STARTTLS.
 
 Después de recibir el mensaje:
 

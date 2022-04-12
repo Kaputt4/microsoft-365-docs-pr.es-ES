@@ -1,31 +1,36 @@
 ---
 title: Ejecutar el analizador de cliente en Windows
-description: Obtenga información sobre cómo ejecutar microsoft defender para endpoint client analyzer en Windows.
-keywords: 'analizador de cliente, sensor de solución de problemas, analizador, mdeanalyzer, windows'
+description: Obtenga información sobre cómo ejecutar el analizador de cliente de Microsoft Defender para punto de conexión en Windows.
+keywords: analizador de cliente, solución de problemas de sensor, analizador, mdeanalyzer, windows
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
+ms.openlocfilehash: 5ac27241297b9943f1559653777b8e1668fe7f89
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783037"
 ---
-
 # <a name="run-the-client-analyzer-on-windows"></a>Ejecutar el analizador de cliente en Windows
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-1. Descargue la [herramienta MDE Client Analyzer](https://aka.ms/mdatpanalyzer) en la Windows que necesita investigar.
+1. Descargue la [herramienta Analizador de cliente de MDE](https://aka.ms/mdatpanalyzer) en la máquina Windows que necesita investigar.
 
 2. Extraiga el contenido de MDEClientAnalyzer.zip en el equipo.
 
@@ -45,67 +50,67 @@ ms.technology: m365d
    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
    ```
 
-Además de lo anterior, también hay una opción para recopilar los registros de soporte [técnico del analizador mediante la respuesta en directo](troubleshoot-collect-support-log.md).
+Además de lo anterior, también hay una opción para [recopilar los registros de soporte técnico del analizador mediante la respuesta en vivo](troubleshoot-collect-support-log.md).
 
 > [!NOTE]
-> En Windows 10/11, Windows Server 2019/2022 o Windows Server 2012R2/2016 con la solución unificada moderna instalada, el script [](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) `MDEClientAnalyzer.exe` del analizador de cliente llama a un archivo ejecutable llamado para ejecutar las pruebas de conectividad a direcciones URL del servicio en la nube.
+> En Windows 10/11, Windows Server 2019/2022 o Windows Server 2012R2/2016 con la [solución unificada moderna](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) instalada, el script del analizador de cliente llama a un archivo ejecutable llamado `MDEClientAnalyzer.exe` para ejecutar las pruebas de conectividad a las direcciones URL del servicio en la nube.
 >
-> En Windows 8.1, Windows Server 2016 o cualquier edición anterior del sistema operativo en la que se usa Microsoft Monitoring Agent (MMA) para la incorporación, el script `MDEClientAnalyzerPreviousVersion.exe` del analizador de cliente llama a un archivo ejecutable llamado para ejecutar pruebas de conectividad para direcciones URL de comando y control (CnC) mientras también llama a Microsoft Monitoring Agent de conectividad para `TestCloudConnection.exe` las direcciones URL del canal de datos cibernéticos.
+> En Windows 8.1, Windows Server 2016 o cualquier edición del sistema operativo anterior en la que se usa Microsoft Monitoring Agent (MMA) para la incorporación, el script del analizador de cliente llama a un archivo ejecutable llamado `MDEClientAnalyzerPreviousVersion.exe` para ejecutar pruebas de conectividad para direcciones URL de comandos y control (CnC) al mismo tiempo que llama a en Microsoft Monitoring Agent herramienta de `TestCloudConnection.exe` conectividad para direcciones URL de canal de cyberdatos.
 
 
-Todos los scripts y módulos de PowerShell incluidos en el analizador están firmados por Microsoft.
+Todos los scripts y módulos de PowerShell incluidos con el analizador están firmados por Microsoft.
 Si los archivos se han modificado de alguna manera, se espera que el analizador salga con el siguiente error:
 
 :::image type="content" source="images/sigerror.png" alt-text="Error del analizador de cliente" lightbox="images/sigerror.png":::
 
 
-Si se muestra este error, el issuerInfo.txt de datos contendrá información detallada sobre el motivo y el archivo afectado:
+Si se muestra este error, la salida de issuerInfo.txt contendrá información detallada sobre por qué ocurrió y qué archivo se ha visto afectado:
 
 :::image type="content" source="images/issuerinfo.png" alt-text="Información del emisor" lightbox="images/issuerinfo.png":::
 
 
-Contenido de ejemplo después MDEClientAnalyzer.ps1 se modifica:
+Contenido de ejemplo después de modificar MDEClientAnalyzer.ps1:
 
 :::image type="content" source="images/modified-ps1.png" alt-text="El archivo ps1 modificado" lightbox="images/modified-ps1.png":::
 
 
 
-## <a name="result-package-contents-on-windows"></a>Contenido del paquete de resultados Windows
+## <a name="result-package-contents-on-windows"></a>Contenido del paquete de resultados en Windows
 
 > [!NOTE]
 > Los archivos exactos capturados pueden cambiar en función de factores como:
 >
-> - La versión de las ventanas en las que se ejecuta el analizador.
-> - Disponibilidad del canal de registro de eventos en el equipo.
-> - El estado de inicio del sensor EDR (Sense se detiene si la máquina aún no está incorporada).
+> - Versión de las ventanas en las que se ejecuta el analizador.
+> - Disponibilidad del canal del registro de eventos en la máquina.
+> - El estado de inicio del sensor de EDR (Sense se detiene si la máquina aún no está incorporada).
 > - Si se usó un parámetro de solución de problemas avanzado con el comando analyzer.
 
-De forma predeterminada, el archivo MDEClientAnalyzerResult.zip descomprimido contendrá los siguientes elementos.
+De forma predeterminada, el archivo MDEClientAnalyzerResult.zip desempaquetado contendrá los siguientes elementos.
 
 - MDEClientAnalyzer.htm
 
-  Este es el archivo de salida HTML principal, que contendrá los resultados y las instrucciones que puede producir el script del analizador en la máquina.
+  Este es el archivo de salida HTML principal, que contendrá los resultados y las instrucciones que puede generar el script del analizador que se ejecuta en la máquina.
 
 - Carpeta SystemInfoLogs \[\]
   - AddRemovePrograms.csv
 
-    Descripción: lista del software instalado x86 en el software del sistema operativo x64 recopilado del Registro.
+    Descripción: Lista de software instalado x86 en el software del sistema operativo x64 recopilado del registro.
 
   - AddRemoveProgramsWOW64.csv
 
-    Descripción: lista del software instalado x86 en el software del sistema operativo x64 recopilado del Registro.
+    Descripción: Lista de software instalado x86 en el software del sistema operativo x64 recopilado del registro.
 
     - CertValidate.log
 
-      Descripción: resultado detallado de la revocación de certificados ejecutada llamando a [CertUtil](/windows-server/administration/windows-commands/certutil).
+      Descripción: resultado detallado de la revocación de certificados ejecutada mediante una llamada a [CertUtil](/windows-server/administration/windows-commands/certutil).
 
     - dsregcmd.txt
 
-      Descripción: salida de la ejecución [de dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). Esto proporciona detalles sobre el Azure AD estado de la máquina.
+      Descripción: salida de la ejecución de [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). Esto proporciona detalles sobre el estado Azure AD de la máquina.
 
     - IFEO.txt
 
-      Descripción: salida de las [opciones de ejecución de archivos de imagen](/previous-versions/windows/desktop/xperf/image-file-execution-options) configuradas en el equipo
+      Descripción: salida de [las opciones de ejecución de archivos de imagen](/previous-versions/windows/desktop/xperf/image-file-execution-options) configuradas en el equipo
 
     - MDEClientAnalyzer.txt
 
@@ -117,25 +122,25 @@ De forma predeterminada, el archivo MDEClientAnalyzerResult.zip descomprimido co
 
     - RegOnboardedInfoCurrent.Json
 
-      Descripción: la información del equipo incorporado recopilada en formato JSON del Registro.
+      Descripción: la información de la máquina incorporada recopilada en formato JSON del registro.
 
   - RegOnboardingInfoPolicy.Json
 
-    Descripción: la configuración de directiva de incorporación recopilada en formato JSON del Registro.
+    Descripción: la configuración de la directiva de incorporación recopilada en formato JSON del registro.
 
     - SCHANNEL.txt
 
-      Descripción: detalles sobre la [configuración de SCHANNEL](/windows-server/security/tls/manage-tls) aplicada a la máquina, tal como se recopila desde el Registro.
+      Descripción: detalles sobre la [configuración de SCHANNEL](/windows-server/security/tls/manage-tls) aplicada a la máquina tal como se recopila del registro.
 
     - SessionManager.txt
 
-      Descripción: la configuración específica del Administrador de sesiones se recopila desde el Registro.
+      Descripción: la configuración específica del Administrador de sesiones se recopila del registro.
 
     - SSL_00010002.txt
 
-      Descripción: detalles sobre la [configuración SSL](/windows-server/security/tls/manage-tls) aplicada a la máquina recopilada desde el Registro.
+      Descripción: detalles sobre la [configuración SSL](/windows-server/security/tls/manage-tls) aplicada a la máquina recopilada del registro.
 
-- EventLogs [Folder]
+- EventLogs [Carpeta]
 
   - utc.evtx
 
@@ -143,15 +148,15 @@ De forma predeterminada, el archivo MDEClientAnalyzerResult.zip descomprimido co
 
   - senseIR.evtx
 
-    Descripción: exportación del registro de eventos de investigación automatizada
+    Descripción: Exportación del registro de eventos de investigación automatizada
 
   - sense.evtx
 
-    Descripción: Exportación del registro de eventos principales del sensor
+    Descripción: Exportación del registro de eventos principal del sensor
 
   - OperationsManager.evtx
 
-    Descripción: exportación del registro Microsoft Monitoring Agent de eventos
+    Descripción: exportación del registro de eventos de Microsoft Monitoring Agent
 
 
 
