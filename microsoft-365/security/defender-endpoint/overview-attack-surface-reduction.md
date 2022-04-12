@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 5b71134f9a7d33880e9762701e825c3fbf708f6b
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 5c3724989db1bd8e6389b8a70ba591ce4e109390
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705097"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787718"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>Descripción y uso de funcionalidades de reducción de superficie expuesta a ataques
 
@@ -35,6 +35,10 @@ ms.locfileid: "64705097"
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Antivirus de Microsoft Defender
+
+**Plataformas**
+- Windows
 
 > [!TIP]
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -72,7 +76,7 @@ Para configurar la reducción de la superficie expuesta a ataques en el entorno,
 > [!TIP]
 > En la mayoría de los casos, al configurar funcionalidades de reducción de superficie expuesta a ataques, puede elegir entre varios métodos:
 >
-> - Microsoft Endpoint Manager (que ahora incluye Microsoft Intune y Configuration Manager de punto de conexión de Microsoft)
+> - Microsoft Endpoint Manager (que ahora incluye Microsoft Intune y Microsoft Endpoint Configuration Manager)
 > - Directiva de grupo
 > - Cmdlets de PowerShell
 
@@ -91,7 +95,7 @@ Puede habilitar el modo de auditoría al probar cómo funcionarán las caracter�
 
 Las características no bloquearán ni impedirán que se modifiquen aplicaciones, scripts o archivos. Sin embargo, el registro de eventos de Windows registrará eventos como si las características estuvieran totalmente habilitadas. Con el modo de auditoría, puede revisar el registro de eventos para ver qué efecto habría tenido la característica si se hubiera habilitado.
 
-Para buscar las entradas auditadas, vaya a **Aplicaciones y servicios** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operativo**.
+Para buscar las entradas auditadas, vaya a **Aplicaciones y servicios** \> **de Microsoft** \> **Windows** \> **Windows Defender** \> **operativo**.
 
 Use Defender para punto de conexión para obtener más detalles para cada evento. Estos detalles son especialmente útiles para investigar las reglas de reducción de superficie expuesta a ataques. El uso de la consola de Defender para punto de conexión le permite [investigar problemas como parte de la escala de tiempo de alertas y los escenarios de investigación](investigate-alerts.md).
 
@@ -114,11 +118,11 @@ Puede habilitar el modo de auditoría mediante directiva de grupo, PowerShell y 
 
 Las reglas de reducción de superficie expuesta a ataques (ASR) están predefinidas para proteger las superficies de ataque comunes conocidas. Hay varios métodos que puede usar para implementar reglas de reducción de superficie expuesta a ataques. El método preferido se documenta en los siguientes temas de implementación de reglas de reducción de la superficie expuesta a ataques (ASR):
 
-- [Introducción a la implementación de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md)
-- [Planeación de la implementación de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-plan.md)
-- [Reglas de reducción de superficie expuesta a ataques de prueba (ASR)](attack-surface-reduction-rules-deployment-test.md)
-- [Habilitar reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-implement.md)
-- [Operacionalización de las reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Introducción a la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md)
+- [Planear la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-plan.md)
+- [Probar las reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-test.md)
+- [Habilitar reglas de la reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-implement.md)
+- [Operacionar reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
 ## <a name="view-attack-surface-reduction-events"></a>Ver eventos de la reducción de la superficie expuesta a ataques
 
@@ -132,7 +136,7 @@ Obtenga informes detallados sobre eventos, bloques y advertencias como parte de 
 
 ### <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>Uso de vistas personalizadas para revisar las funcionalidades de reducción de superficie expuesta a ataques
 
-Cree vistas personalizadas en windows Visor de eventos para ver solo los eventos de funcionalidades y configuraciones específicas. La manera más fácil es importar una vista personalizada como un archivo XML. Puede copiar el XML directamente desde esta página.
+Cree vistas personalizadas en el Windows Visor de eventos para ver solo los eventos de funcionalidades y configuraciones específicas. La manera más fácil es importar una vista personalizada como un archivo XML. Puede copiar el XML directamente desde esta página.
 
 También puede navegar manualmente al área de eventos que corresponde a la característica.
 
@@ -144,7 +148,7 @@ También puede navegar manualmente al área de eventos que corresponde a la cara
     - Vista personalizada de eventos de reducción de superficie expuesta a ataques: *asr-events.xml*
     - Vista personalizada de eventos de red y protección: *np-events.xml*
 
-2. Escriba **visor de eventos** en el menú Inicio y abra **Visor de eventos**.
+2. Escriba **el visor de eventos** en el menú Inicio y abra **Visor de eventos**.
 
 3. Seleccione **Importar acción** \> **vista personalizada...**
 
@@ -159,7 +163,7 @@ También puede navegar manualmente al área de eventos que corresponde a la cara
 
 #### <a name="copy-the-xml-directly"></a>Copiar el XML directamente
 
-1. Escriba **el visor de eventos** en el menú Inicio y abra el **Visor de eventos** de Windows.
+1. Escriba **el visor de eventos** en el menú Inicio y abra el **Visor de eventos de Windows**.
 
 2. En el panel izquierdo, en **Acciones**, seleccione **Crear vista personalizada...**
 
@@ -229,7 +233,7 @@ También puede navegar manualmente al área de eventos que corresponde a la cara
 
 Todos los eventos de reducción de superficie expuesta a ataques se encuentran en **Registros de aplicaciones y servicios > Microsoft > Windows** y, a continuación, la carpeta o el proveedor, como se muestra en la tabla siguiente.
 
-Puede acceder a estos eventos en el Visor de eventos de Windows:
+Puede acceder a estos eventos en Windows Visor de eventos:
 
 1. Abra el menú **Inicio** y escriba **visor de eventos** y, a continuación, seleccione el resultado **Visor de eventos**.
 2. Expanda **Registros de aplicaciones y servicios > Microsoft > Windows** y, a continuación, vaya a la carpeta que aparece en **Proveedor o origen** en la tabla siguiente.
@@ -294,14 +298,14 @@ Como se mencionó en el vídeo, Defender for Endpoint incluye varias funcionalid
 |:---|:---|
 | [Aislamiento basado en hardware](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Proteja y mantenga la integridad de un sistema a medida que se inicia y mientras se ejecuta. Valide la integridad del sistema a través de la atestación local y remota. Use el aislamiento de contenedor para Microsoft Edge para ayudar a protegerse frente a sitios web malintencionados. |
 | [Control de la aplicación](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Use el control de aplicaciones para que las aplicaciones deberán ganar confianza para poder ejecutarse. |
-| [Acceso controlado a carpetas](controlled-folders.md) | Ayuda a evitar que las aplicaciones malintencionadas o sospechosas (incluido el malware ransomware de cifrado de archivos) realicen cambios en los archivos de las carpetas clave del sistema (requiere el Antivirus de Microsoft Defender) |
-| [Protección de red](network-protection.md) | Amplíe la protección al tráfico de red y la conectividad en los dispositivos de la organización. (Requiere el Antivirus de Microsoft Defender) |
+| [Acceso controlado a carpetas](controlled-folders.md) | Ayuda a evitar que las aplicaciones malintencionadas o sospechosas (incluido el malware ransomware de cifrado de archivos) realicen cambios en los archivos de las carpetas clave del sistema (requiere Antivirus de Microsoft Defender). |
+| [Protección de red](network-protection.md) | Amplíe la protección al tráfico de red y la conectividad en los dispositivos de la organización. (Requiere Antivirus de Microsoft Defender). |
 | [Protección contra vulnerabilidades de seguridad](exploit-protection.md) | Ayude a proteger los sistemas operativos y las aplicaciones que usa su organización para que no se aprovechen. La protección contra vulnerabilidades de seguridad también funciona con soluciones antivirus de terceros. |
 | [Control de dispositivos](device-control-report.md) | Protege contra la pérdida de datos mediante la supervisión y el control de los medios que se usan en los dispositivos, como el almacenamiento extraíble y las unidades USB, en la organización. |
-| [ Guía de implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md) | Presenta información general y requisitos previos para implementar reglas de reducción de superficie expuesta a ataques |
-| [Planeación de la implementación de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-plan.md) | Enumera los pasos recomendados para la implementación de reglas de reducción de superficie expuesta a ataques. |
-| [Reglas de reducción de superficie expuesta a ataques de prueba (ASR)](attack-surface-reduction-rules-deployment-test.md) | Proporciona los pasos necesarios para usar el modo de auditoría para probar las reglas de reducción de superficie expuesta a ataques. |
-| [Habilitar reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-implement.md) | Muestra los pasos para realizar la transición de las reglas de reducción de la superficie expuesta a ataques del modo de prueba (auditoría) al modo activo habilitado (bloquear) |
-| [Operacionalización de las reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-operationalize.md) | Proporciona información sobre las actividades diarias de revisión y mantenimiento. |
-| [Referencia de reglas de reducción de superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-reference.md) | Proporciona detalles sobre cada regla de reducción de superficie expuesta a ataques. |
-| [Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction.md) | Reduzca los puntos vulnerables (las superficies de ataque) en sus aplicaciones con reglas inteligentes que le ayudarán a detener el malware. (Requiere antivirus de Microsoft Defender). |
+| [ Guía de implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment.md) | Presenta información general y requisitos previos para implementar reglas de reducción de superficie expuesta a ataques. |
+| [Planear la implementación de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-plan.md) | Enumera los pasos recomendados para la implementación de reglas de reducción de superficie expuesta a ataques. |
+| [Probar las reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-test.md) | Proporciona los pasos necesarios para usar el modo de auditoría para probar las reglas de reducción de superficie expuesta a ataques. |
+| [Habilitar reglas de la reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-implement.md) | Muestra los pasos para realizar la transición de las reglas de reducción de la superficie expuesta a ataques del modo de prueba (auditoría) al modo activo y habilitado (bloquear). |
+| [Operacionar reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-deployment-operationalize.md) | Proporciona información sobre las actividades diarias de revisión y mantenimiento. |
+| [Referencia de reglas de reducción de la superficie expuesta a ataques (ASR)](attack-surface-reduction-rules-reference.md) | Proporciona detalles sobre cada regla de reducción de superficie expuesta a ataques. |
+| [Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction.md) | Reduzca los puntos vulnerables (las superficies de ataque) en sus aplicaciones con reglas inteligentes que le ayudarán a detener el malware. (Requiere Antivirus de Microsoft Defender). |

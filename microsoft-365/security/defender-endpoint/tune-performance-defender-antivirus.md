@@ -14,18 +14,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34bf757ee545d45f7faccdefaf1e8aa57e9cb961
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 73afd0751e34fbb020019e6f28056c9f2a935c07
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783455"
+ms.locfileid: "64788598"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analizador de rendimiento para Antivirus de Microsoft Defender
 
 **Se aplica a**
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Antivirus de Microsoft Defender
+
+**Plataformas**
+- Windows
 
 **¿Qué es Antivirus de Microsoft Defender analizador de rendimiento?**
 
@@ -486,3 +490,12 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
+> [!TIP]
+> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
+> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
+> - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
+> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)

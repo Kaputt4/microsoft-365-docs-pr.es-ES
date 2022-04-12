@@ -1,7 +1,7 @@
 ---
-title: Configurar Antivirus de Microsoft Defender con WMI
-description: Obtenga información sobre cómo configurar y administrar Antivirus de Microsoft Defender mediante scripts WMI para recuperar, modificar y actualizar la configuración en Microsoft Defender para endpoint.
-keywords: wmi, scripts, instrumental de administración de windows, configuración
+title: Configuración de Antivirus de Microsoft Defender con WMI
+description: Obtenga información sobre cómo configurar y administrar Antivirus de Microsoft Defender mediante scripts WMI para recuperar, modificar y actualizar la configuración en Microsoft Defender para punto de conexión.
+keywords: wmi, scripts, instrumentación de administración de Windows, configuración
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,33 +17,47 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c8057a971576d5511440ac009acd6eab55b302e9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a525deb526f61f8500f42cc918380fdfa9c52861
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168371"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787652"
 ---
-# <a name="use-windows-management-instrumentation-wmi-to-configure-and-manage-microsoft-defender-antivirus"></a>Use Windows Instrumental de administración de administración (WMI) para configurar y administrar Antivirus de Microsoft Defender
+# <a name="use-windows-management-instrumentation-wmi-to-configure-and-manage-microsoft-defender-antivirus"></a>Use Windows Management Instrumentation (WMI) para configurar y administrar Antivirus de Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- Antivirus de Microsoft Defender
 
-Windows Instrumental de administración (WMI) es una interfaz de scripting que permite recuperar, modificar y actualizar la configuración.
+**Plataformas**
+- Windows
 
-Obtenga más información sobre WMI en la biblioteca de administración del sistema de [Microsoft Developer Network.](/windows/win32/wmisdk/wmi-start-page)
+Windows Management Instrumentation (WMI) es una interfaz de scripting que permite recuperar, modificar y actualizar la configuración.
 
-Antivirus de Microsoft Defender tiene varias clases WMI específicas que se pueden usar para realizar la mayoría de las mismas funciones que la directiva de grupo y otras herramientas de administración. Muchas de las clases son análogas a [los cmdlets de PowerShell de Defender para la nube.](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+Obtenga más información sobre WMI en la [biblioteca administración del sistema de red para desarrolladores de Microsoft](/windows/win32/wmisdk/wmi-start-page).
 
-La biblioteca de Windows Defender referencia del proveedor [WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) de MSDN enumera las clases WMI disponibles para Antivirus de Microsoft Defender e incluye scripts de ejemplo.
+Antivirus de Microsoft Defender tiene una serie de clases WMI específicas que se pueden usar para realizar la mayoría de las mismas funciones que directiva de grupo y otras herramientas de administración. Muchas de las clases son análogas a [Defender for Cloud cmdlets de PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md).
 
-Los cambios realizados con WMI afectarán a la configuración local en el punto de conexión donde se implementan o realizan los cambios. Esto significa que las implementaciones de directivas con directiva de grupo, Microsoft Endpoint Configuration Manager o Microsoft Intune pueden sobrescribir los cambios realizados con WMI. 
+La [biblioteca de referencia del proveedor WMIv2 de MSDN Windows Defender](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) enumera las clases WMI disponibles para Antivirus de Microsoft Defender e incluye scripts de ejemplo.
 
-Puede configurar [qué opciones se pueden invalidar localmente con invalidaciones de directiva local.](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+Los cambios realizados con WMI afectarán a la configuración local en el punto de conexión donde se implementan o realizan los cambios. Esto significa que las implementaciones de directiva con directiva de grupo, Microsoft Endpoint Configuration Manager o Microsoft Intune pueden sobrescribir los cambios realizados con WMI. 
+
+Puede [configurar qué opciones se pueden invalidar localmente con invalidaciones de directiva local](configure-local-policy-overrides-microsoft-defender-antivirus.md).
+
+> [!TIP]
+> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
+> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
+> - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
+> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

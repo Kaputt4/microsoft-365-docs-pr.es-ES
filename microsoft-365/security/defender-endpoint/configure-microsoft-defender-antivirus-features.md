@@ -1,7 +1,7 @@
 ---
 title: Configurar las funciones del Antivirus de Microsoft Defender
-description: Puede configurar las Antivirus de Microsoft Defender con Intune, Microsoft Endpoint Configuration Manager, directiva de grupo y PowerShell.
-keywords: Antivirus de Microsoft Defender, antimalware, seguridad, defender, configurar, configuración, Administrador de configuración, Microsoft Endpoint Configuration Manager, SCCM, Intune, MDM, administración de dispositivos móviles, GP, directiva de grupo, PowerShell
+description: Puede configurar características de Antivirus de Microsoft Defender con Intune, Microsoft Endpoint Configuration Manager, directiva de grupo y PowerShell.
+keywords: Antivirus de Microsoft Defender, antimalware, security, defender, configure, configuration, Config Manager, Microsoft Endpoint Configuration Manager, SCCM, Intune, MDM, administración de dispositivos móviles, GP, directiva de grupo, PowerShell
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ ms.date: 10/14/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 183fedefbbb56411674ff80a9feedc507cff0530
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 8a1aa78a153e11f1a36fe9f7dcbd85322e6f258d
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807529"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787960"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Configurar las funciones del Antivirus de Microsoft Defender
 
@@ -31,6 +31,10 @@ ms.locfileid: "62807529"
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Antivirus de Microsoft Defender
+
+**Plataformas**
+- Windows
 
 Puede configurar Antivirus de Microsoft Defender con una serie de herramientas, como:
 
@@ -42,13 +46,23 @@ Puede configurar Antivirus de Microsoft Defender con una serie de herramientas, 
 
 Se pueden configurar las siguientes categorías generales de características:
 
-- Protección entregada en la nube. Consulte [Cloud-delivered protection and Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
+- Protección entregada en la nube. Consulte [Protección entregada en la nube y Antivirus de Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
 
-- Protección siempre activa en tiempo real, incluida la protección basada en el comportamiento, la heurística y el aprendizaje automático. Consulte [Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md).
+- Protección en tiempo real always-on, incluida la protección basada en comportamiento, heurística y aprendizaje automático. Consulte [Configuración del comportamiento, la heurística y la protección en tiempo real](configure-protection-features-microsoft-defender-antivirus.md).
 
 - Cómo interactúan los usuarios finales con el cliente en puntos de conexión individuales. Vea los siguientes recursos:
-  - [Impedir que los usuarios vean o interactúen con la interfaz Antivirus de Microsoft Defender usuario](prevent-end-user-interaction-microsoft-defender-antivirus.md)
+  - [Impedir que los usuarios vean o interactúen con la interfaz de usuario Antivirus de Microsoft Defender](prevent-end-user-interaction-microsoft-defender-antivirus.md)
   - [Impedir o permitir que los usuarios modifiquen localmente Antivirus de Microsoft Defender configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 
 > [!TIP]
-> Revisar [temas de referencia para herramientas de administración y configuración](configuration-management-reference-microsoft-defender-antivirus.md).
+> Revise [los temas de referencia de las herramientas de administración y configuración](configuration-management-reference-microsoft-defender-antivirus.md).
+
+> [!TIP]
+> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
+> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
+> - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
+> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
