@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: a7498685709dfc24feae61453057d51025ee9168
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 61bd82e3b4012e7e191971faf768cf8d7cbba4f2
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63716307"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64758649"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -31,7 +31,8 @@ ms.locfileid: "63716307"
 
 > [!NOTE]
 > Si ve mensajes sobre directivas de retención en Teams o tiene preguntas sobre etiquetas de retención, póngase en contacto con el departamento de TI para obtener información sobre cómo las han configurado. Mientras tanto, los artículos siguientes pueden serle de utilidad:
-> -  [Mensajes de Teams sobre directivas de retención](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
+>
+> - [Mensajes de Teams sobre directivas de retención](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
 > - [Aplicar etiquetas de retención a archivos en SharePoint o OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)
 >
 > La información de esta página es para administradores de TI que pueden crear directivas y etiquetas de retención por motivos de cumplimiento.
@@ -64,16 +65,16 @@ Use las secciones siguientes para obtener más información sobre cómo funciona
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Cómo funciona la configuración de retención con el contenido local
 
 Cuando el contenido tiene asignada la configuración de retención, ese contenido permanece en su ubicación original. La mayoría de las veces, las personas continúan trabajando con sus documentos o correo como si nada hubiera cambiado. Pero si editan o eliminan contenido incluido en la directiva de retención, se conserva automáticamente una copia del contenido.
-  
+
 - Para sitios de SharePoint y OneDrive: la copia se conserva en la biblioteca de **Suspensión para conservación**.
 
-- Para buzones de Exchange: la copia se conserva en la carpeta **Elementos recuperables**. 
+- Para buzones de Exchange: la copia se conserva en la carpeta **Elementos recuperables**.
 
 - Para mensajes de Teams y Yammer: la copia se conserva en una carpeta oculta llamada **SubstrateHolds** dentro de la carpeta **Elementos recuperables** de Exchange.
 
 > [!NOTE]
 > Dado que la Biblioteca de suspensión para conservación se incluye en la cuota de almacenamiento de un sitio, es posible que deba aumentar el almacenamiento al usar la configuración de retención para los grupos de SharePoint y de Microsoft 365.
-> 
+>
 Ni estas ubicaciones seguras ni el contenido retenido son visibles para la mayoría de los usuarios. En la mayoría de los casos, ni siquiera es necesario que los usuarios sepan que su contenido está sujeto a la configuración de retención.
 
 Para obtener información más detallada sobre cómo funciona la configuración de retención con distintas cargas de trabajo, consulte los artículos siguientes:
@@ -89,23 +90,24 @@ Puede usar tanto las **directivas de retención** como las **etiquetas de retenc
 
 Use una directiva de retención para asignar la misma configuración de retención al contenido en el nivel de sitio o buzón y use una etiqueta de retención para asignar la configuración de retención en el nivel de elemento (carpeta, documento o correo electrónico).
 
-Por ejemplo, si es necesario conservar todos los documentos de un sitio de SharePoint durante cinco años, es más eficaz usar una directiva de retención que aplicar la misma etiqueta de retención a todos los documentos del sitio. Sin embargo, si algunos documentos del sitio se deben conservar durante cinco años y otros durante diez años, no es posible hacerlo con una directiva de retención. Cuando tenga que especificar la configuración de retención en el nivel de elemento, use etiquetas de retención. 
+Por ejemplo, si es necesario conservar todos los documentos de un sitio de SharePoint durante cinco años, es más eficaz usar una directiva de retención que aplicar la misma etiqueta de retención a todos los documentos del sitio. Sin embargo, si algunos documentos del sitio se deben conservar durante cinco años y otros durante diez años, no es posible hacerlo con una directiva de retención. Cuando tenga que especificar la configuración de retención en el nivel de elemento, use etiquetas de retención.
 
-A diferencia de las directivas de retención, la configuración de retención de las etiquetas de retención se mantendrá con el contenido si se copia o se mueve a una ubicación diferente dentro del espacio empresarial de Microsoft 365. Además, las etiquetas de retención tienen las siguientes funcionalidades que no son compatibles con las directivas de retención: 
- 
+A diferencia de las directivas de retención, la configuración de retención de las etiquetas de retención viaja con el contenido si se mueve a una ubicación diferente dentro del inquilino de Microsoft 365. Además, las etiquetas de retención tienen las siguientes funcionalidades que no son compatibles con las directivas de retención:
+
 - Opciones para iniciar el período de retención desde el momento en que se etiquetó el contenido o en función de un evento, en lugar de la antigüedad del contenido o cuando se modificó por última vez.
 
 - Uso de [clasificadores que se pueden entrenar](classifier-learn-about.md) para identificar el contenido que se va a etiquetar.
 
 - Aplicación de una etiqueta predeterminada a los documentos de SharePoint.
 
-- Soporte de [revisión para eliminación](./disposition.md)  para revisar el contenido antes de que se elimine de forma permanente.
+- Soporte técnico de [revisión de eliminación](./disposition.md) para revisar el contenido antes de que se elimine de forma permanente.
 
-- Marcado del contenido como un [registro](records-management.md#records) como parte de la configuración de la etiqueta para disponer siempre de una  [prueba de eliminación](disposition.md#disposition-of-records) cuando el contenido se elimine al final de su período de retención.
+- Marque el contenido como un [registro](records-management.md#records) como parte de la configuración de la etiqueta y siempre tenga una [prueba de eliminación](disposition.md#disposition-of-records) cuando el contenido se elimine al final de su período de retención.
 
 ### <a name="retention-policies"></a>Directivas de retención
 
 Las directivas de retención se pueden aplicar a las siguientes ubicaciones:
+
 - Correo electrónico de Exchange
 - Sitio de SharePoint
 - Cuentas de OneDrive
@@ -130,25 +132,25 @@ Los elementos heredan la configuración de retención de su contenedor especific
 ### <a name="retention-labels"></a>Etiquetas de retención
 
 Use etiquetas de retención para diferentes tipos de contenido que requieran una configuración de retención diferente. Por ejemplo:
-  
-- Formularios fiscales que deben conservarse durante un período mínimo de tiempo. 
-    
-- Materiales de prensa que deben eliminarse de forma permanente cuando alcanzan una antigüedad específica. 
-    
-- Información sobre la competencia que sea necesario conservar durante un determinado período de tiempo y, después, eliminar de forma permanente. 
-    
-- Visados de trabajo que tengan que marcarse como registros para que no se puedan editar ni eliminar. 
-    
+
+- Formularios fiscales que deben conservarse durante un período mínimo de tiempo.
+
+- Materiales de prensa que deben eliminarse de forma permanente cuando alcanzan una antigüedad específica.
+
+- Información sobre la competencia que sea necesario conservar durante un determinado período de tiempo y, después, eliminar de forma permanente.
+
+- Visados de trabajo que tengan que marcarse como registros para que no se puedan editar ni eliminar.
+
 En todos estos casos, las etiquetas de retención le permiten aplicar la configuración de retención para el control de gobernanza en el nivel de elemento (documento o correo electrónico).
-  
+
 Con las etiquetas de retención, puede:
-  
-- **Permitir que los usuarios de la organización apliquen manualmente una etiqueta de retención** a contenido de Outlook, Outlook en la Web, OneDrive, SharePoint y Grupos de Microsoft 365. Con frecuencia, los usuarios son los que mejor saben con qué tipo de contenido están trabajando, por lo que pueden clasificarlo y aplicar la configuración de retención adecuada. 
-    
-- **Aplicar etiquetas de retención al contenido automáticamente** si coincide con condiciones específicas, que incluyen datos adjuntos en la nube que se comparten en el correo electrónico o Teams, o cuando el contenido contiene: 
-    - Tipos específicos de información confidencial.
-    - Palabras clave específicas que coinciden con una consulta que haya creado.
-    - Coincidencias de patrón para un clasificador que se puede entrenar.
+
+- **Permitir que los usuarios de la organización apliquen manualmente una etiqueta de retención** a contenido de Outlook, Outlook en la Web, OneDrive, SharePoint y Grupos de Microsoft 365. Con frecuencia, los usuarios son los que mejor saben con qué tipo de contenido están trabajando, por lo que pueden clasificarlo y aplicar la configuración de retención adecuada.
+
+- **Aplicar etiquetas de retención al contenido automáticamente** si coincide con condiciones específicas, que incluyen datos adjuntos en la nube que se comparten en el correo electrónico o Teams, o cuando el contenido contiene:
+  - Tipos específicos de información confidencial.
+  - Palabras clave específicas que coinciden con una consulta que haya creado.
+  - Coincidencias de patrón para un clasificador que se puede entrenar.
 
 - **Iniciar el período de retención desde el momento en que se etiquetó el contenido** para los documentos de los sitios de SharePoint y las cuentas de OneDrive, así como también para los elementos de correo electrónico.
 
@@ -163,9 +165,9 @@ Las etiquetas de retención, al igual que las [etiquetas de confidencialidad de 
 #### <a name="classifying-content-without-applying-any-actions"></a>Clasificar contenido sin aplicar acciones
 
 Aunque el propósito principal de las etiquetas de retención es conservar o eliminar contenido, también puede usar las etiquetas de retención sin activar la retención u otras acciones. En este caso, se puede utilizar una etiqueta de retención simplemente como una etiqueta de texto, sin imponer ninguna acción.
-  
+
 Por ejemplo, puede crear y aplicar una etiqueta de retención denominada "revisar más adelante" sin acciones y, a continuación, usar esa etiqueta para buscar el contenido posteriormente.
-  
+
 ![Configuración de etiquetas solo para clasificar.](../media/retention-label-retentionoff.png)
 
 #### <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Usar una etiqueta de retención como condición en una directiva DLP
@@ -189,8 +191,8 @@ También puede crear una o varias **directivas de etiquetas de retención de apl
 #### <a name="retention-label-policies-and-locations"></a>Ubicaciones y directivas de etiquetas de retención
 
 Las etiquetas de retención se pueden publicar en diferentes ubicaciones, en función de lo que haga la etiqueta de retención.
-  
-| Si la etiqueta de retención... | Entonces, se puede aplicar la directiva de etiqueta a... |
+
+| Si la etiqueta de retención es... | Entonces, se puede aplicar la directiva de etiqueta a... |
 |:-----|:-----|
 |Se publica para administradores y usuarios finales  |Exchange, SharePoint, OneDrive, Grupos de Microsoft 365  |
 |Se aplica automáticamente en función de los tipos de información confidencial o clasificadores que se pueden entrenar  |Exchange, SharePoint, OneDrive  |
@@ -210,13 +212,14 @@ Solo se puede aplicar una etiqueta de retención al contenido (como un correo el
 
 Para las etiquetas de retención estándar (no marcan los elementos como un [registro o un registro normativo](records-management.md#records)):
 
-- Los administradores y los usuarios finales pueden cambiar o quitar manualmente una etiqueta de retención existente que se aplique al contenido. 
+- Los administradores y los usuarios finales pueden cambiar o quitar manualmente una etiqueta de retención existente que se aplique al contenido.
 
-- Cuando el contenido ya tiene una etiqueta de retención aplicada, la etiqueta existente no se eliminará ni reemplazará automáticamente por otra etiqueta de retención con una posible excepción: si la etiqueta existente se aplicó como etiqueta predeterminada. Cuando se usa una etiqueta predeterminada, hay algunos casos en los que se puede reemplazar por otra etiqueta predeterminada o quitarse automáticamente. 
-    
-    Para más información sobre el comportamiento de la etiqueta cuando se aplica utilizando una etiqueta predeterminada:
-    - Etiqueta predeterminada para SharePoint: [El comportamiento de la etiqueta cuando se usa una etiqueta predeterminada para SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
-    - Etiqueta predeterminada para Outlook: [Aplicar una etiqueta de retención predeterminada a una carpeta de Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+- Cuando el contenido ya tiene una etiqueta de retención aplicada, la etiqueta existente no se eliminará ni reemplazará automáticamente por otra etiqueta de retención con una posible excepción: si la etiqueta existente se aplicó como etiqueta predeterminada. Cuando se usa una etiqueta predeterminada, hay algunos casos en los que se puede reemplazar por otra etiqueta predeterminada o quitarse automáticamente.
+
+  Para más información sobre el comportamiento de la etiqueta cuando se aplica utilizando una etiqueta predeterminada:
+
+  - Etiqueta predeterminada para SharePoint: [El comportamiento de la etiqueta cuando se usa una etiqueta predeterminada para SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+  - Etiqueta predeterminada para Outlook: [Aplicar una etiqueta de retención predeterminada a una carpeta de Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 
 - Si hay varias directivas de etiqueta de aplicación automática que podrían aplicar una etiqueta de retención y el contenido cumple las condiciones de varias directivas, se aplica la etiqueta de retención de la directiva de aplicación automática más antigua (por fecha de creación).
 
@@ -236,9 +239,8 @@ Posteriormente, podrá profundizar en los detalles mediante el [explorador de co
 Después de asignar las etiquetas de retención al contenido (ya sea a través de los usuarios o aplicadas automáticamente), puede usar la Búsqueda de contenido para encontrar todo los elementos clasificados bajo una etiqueta de retención específica.
 
 Al crear una búsqueda de contenido, seleccione la condición de la **Etiqueta de retención** y, después, escriba el nombre completo de la etiqueta o una parte de este y use un carácter comodín. Para obtener más información, vea [Consultas de palabras clave y condiciones de búsqueda para la Búsqueda de contenido](keyword-queries-and-search-conditions.md).
-  
-![Condición de la etiqueta de retención.](../media/retention-label-condition.png)
 
+![Condición de la etiqueta de retención.](../media/retention-label-condition.png)
 
 ## <a name="compare-capabilities-for-retention-policies-and-retention-labels"></a>Comparar las funcionalidades de las directivas de retención y las etiquetas de retención
 
@@ -318,13 +320,13 @@ A menudo, las directivas surtirán efecto y las etiquetas estarán visibles en m
 Al crear una directiva de retención o una directiva de etiqueta de retención, debe elegir entre adaptable y estática para definir el ámbito de la directiva.
 
 - Un **ámbito adaptable** usa una consulta que usted especifique, por lo que la pertenencia no es estática, sino dinámica, ya que se ejecuta diariamente en los atributos o propiedades que especifique para las ubicaciones seleccionadas. Puede usar múltiples ámbitos adaptables con una única directiva.
-    
+
     Ejemplo: los correos electrónicos y los documentos de OneDrive para ejecutivos requieren un período de retención más largo que los usuarios estándares. Cree una directiva de retención con un ámbito adaptable que use el puesto de trabajo del atributo Azure AD de "Ejecutivo" y, a continuación, seleccione las ubicaciones de correo electrónico de Exchange y cuentas de OneDrive para la directiva. No es necesario especificar direcciones de correo electrónico ni direcciones URL de OneDrive para estos usuarios porque el ámbito adaptable recupera automáticamente estos valores. Para los nuevos ejecutivos, no es necesario volver a configurar la directiva de retención porque estos nuevos usuarios con sus valores correspondientes para el correo electrónico y OneDrive se seleccionan automáticamente.
 
 - Un **ámbito estático** no usa consultas y está limitado en la configuración, ya que puede aplicarse a todas las instancias de una ubicación especificada o bien usar la inclusión y las exclusiones para instancias específicas de esa ubicación. Estas tres opciones a veces se conocen como "de toda la organización", "incluyente" y "excluyente" respectivamente.
-    
+
     Ejemplo: los correos electrónicos y los documentos de OneDrive para ejecutivos requieren un período de retención más largo que los usuarios estándares. Crea una directiva de retención con un ámbito estático que selecciona las ubicaciones de correo electrónico de Exchange y cuentas de OneDrive para la directiva. Para la ubicación del correo electrónico de Exchange, puede identificar un grupo que contenga solo los ejecutivos, por lo que debe especificar este grupo para la directiva de retención y la pertenencia al grupo con las direcciones de correo electrónico respectivas se recupera cuando se crea la directiva. Para la ubicación de cuentas OneDrive, debe identificar y, a continuación, especificar direcciones URL de OneDrive individuales para cada ejecutivo. Para los nuevos ejecutivos, debe volver a configurar la directiva de retención para agregar las nuevas direcciones de correo electrónico y direcciones URL de OneDrive. También debe actualizar las direcciones URL de OneDrive siempre que se produzca un cambio en el UPN de un ejecutivo.
-    
+
     Las direcciones URL de OneDrive son especialmente difíciles de especificar de forma confiable porque, de forma predeterminada, estas direcciones URL no se crean hasta que el usuario accede a su OneDrive por primera vez. Y si el UPN de un usuario cambia, lo que es posible que no sepa, su dirección URL OneDrive cambia automáticamente.
 
 Ventajas de usar ámbitos adaptables:
@@ -336,16 +338,16 @@ Ventajas de usar ámbitos adaptables:
 - La pertenencia basada en consultas proporciona resistencia frente a cambios empresariales que podrían no reflejarse de forma confiable en la pertenencia a grupos o en procesos externos que dependen de la comunicación entre departamentos.
 
 - Una sola directiva de retención puede incluir ubicaciones para Microsoft Teams y Yammer, mientras que cuando se usa un ámbito estático, estas ubicaciones requieren su propia directiva de retención.
-    
+
 - Puede aplicar una configuración de retención específica solo a los buzones inactivos. Esta configuración no es posible con un ámbito estático porque, en el momento en que se asigna la directiva, los ámbitos estáticos no admiten la inclusión específica de destinatarios con buzones inactivos.
 
 Ventajas de usar ámbitos estáticos:
 
 - Configuración más sencilla si quiere que todas las instancias se seleccionen automáticamente para una carga de trabajo.
-    
+
     Para "includes" y "excludes", esta opción puede ser una configuración más sencilla inicialmente si el número de instancias que tiene que especificar es bajo y no cambia. Sin embargo, cuando este número de instancias empieza a aumentar y tiene cambios frecuentes en su organización que requieren que vuelva a configurar las directivas, los ámbitos adaptables pueden ser más fáciles de configurar y mucho más fáciles de mantener.
 
-- Las ubicaciones **Skype empresarial** y **las carpetas públicas de Exchange** no admiten ámbitos adaptables. Para esas ubicaciones, debe usar un ámbito estático. 
+- Las ubicaciones **Skype empresarial** y **las carpetas públicas de Exchange** no admiten ámbitos adaptables. Para esas ubicaciones, debe usar un ámbito estático.
 
 Para obtener información de configuración, vea [Configurar ámbitos adaptables](retention-settings.md#configuration-information-for-adaptive-scopes).
 
@@ -390,54 +392,54 @@ Antes de explicar cada principio con más detalle, es importante comprender la d
 Para aplicar los principios en acción con una serie de preguntas Sí y No, también puede usar el [diagrama de flujo de retención](retention-flowchart.md).
 
 Explicación de los cuatro niveles diferentes:
-  
+
 1. **La retención gana a la eliminación.** El contenido no se eliminará permanentemente cuando también tenga configuraciones de retención para conservarlo. Aunque este principio garantiza que el contenido se conserve por motivos de cumplimiento, el proceso de eliminación se puede iniciar (iniciado por el usuario o iniciado por el sistema) y, por tanto, podría quitar el contenido de la vista principal de los usuarios. Sin embargo, se suspende la eliminación permanente. Para obtener más información sobre cómo y dónde se conserva el contenido, use los siguientes vínculos para cada carga de trabajo:
-    
+
     - [Obtenga información acerca de cómo funciona la retención para SharePoint y OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
     - [Cómo funciona la retención con Microsoft Teams](retention-policies-teams.md#how-retention-works-with-microsoft-teams)
     - [Cómo funciona la retención con Yammer](retention-policies-yammer.md#how-retention-works-with-yammer)
     - [Cómo funciona la retención para Exchange](retention-policies-exchange.md#how-retention-works-for-exchange)
-    
+
     **Ejemplo de este primer principio**: un mensaje de correo electrónico está sujeto a una directiva de retención para Exchange que está configurada para eliminar elementos tres años después de su creación y también tiene una etiqueta de retención aplicada que está configurada para conservar los elementos cinco años después de su creación.
-    
+
     El mensaje de correo electrónico se conserva durante cinco años, ya que esta acción de retención tiene prioridad sobre la eliminación. El mensaje de correo electrónico se elimina permanentemente al final de los cinco años debido a la acción de eliminación que se suspendió mientras la acción de retención estaba en vigor.
 
 2. **El período de retención más largo prevalece.** Si el contenido está sujeto a varias configuraciones de retención que conservan contenido durante distintos períodos de tiempo, el contenido se conservará hasta el final del período de retención más largo.
-    
+
     > [!NOTE]
     > Es posible que un período de retención de 5 años en una etiqueta o directiva de retención supere un período de retención de 7 años en una etiqueta o directiva de retención, ya que el período de 5 años está configurado para comenzar en función de cuándo se modificó el archivo por última vez y el período de 7 años se configura para comenzar desde el momento en que se crea el archivo.
-    
+
     **Ejemplo para este segundo principio**: los documentos del sitio de SharePoint de marketing están sujetos a dos directivas de retención. La primera directiva de retención está configurada para que todos los sitios de SharePoint conserven los elementos durante cinco años después de su creación. La segunda directiva de retención está configurada para que ciertos sitios de SharePoint conserven los elementos durante diez años.
-    
+
     Los documentos de este sitio de SharePoint de marketing se conservan durante diez años, ya que este es el período de retención más largo.
 
-3. **El explícito supera al implícito para las eliminaciones.** Con los conflictos de retención ahora resueltos, solo quedan los conflictos por eliminación: 
-    
+3. **El explícito supera al implícito para las eliminaciones.** Con los conflictos de retención ahora resueltos, solo quedan los conflictos por eliminación:
+
     1. Una etiqueta de retención (sin importar cómo se haya aplicado) ofrece una retención explícita en comparación con las directivas de retención, ya que la configuración de retención se aplica a un elemento individual en lugar de asignarse implícitamente desde un contenedor. Esto significa que una acción de eliminación de una etiqueta de retención siempre tiene prioridad sobre una acción de eliminación de cualquier directiva de retención.
-        
+
         **Ejemplo del tercer principio (etiqueta)**: un documento está sujeto a dos directivas de retención que tienen una acción de eliminación de cinco años y diez años respectivamente, y también una etiqueta de retención con una acción de eliminación de siete años.
-        
+
         El documento se elimina permanentemente siete años después porque la acción de eliminación de la etiqueta de retención tiene prioridad.
-    
+
     2. Solo cuando tiene directivas de retención: si una directiva de retención para una ubicación usa un ámbito adaptable o un ámbito estático que incluye instancias específicas (como usuarios específicos para el correo electrónico de Exchange), esa directiva de retención tiene prioridad sobre un ámbito estático configurado para todas las instancias de la misma ubicación.
-        
+
         Un ámbito estático que está configurado para todas las instancias de una ubicación a veces se conoce como una "directiva para toda la organización". Por ejemplo, **correo electrónico de Exchange** y la configuración predeterminada de **todos los destinatarios**. O bien, los **sitios de SharePoint** y la configuración predeterminada de **todos los sitios**. Cuando las directivas de retención no son de toda la organización, pero se han configurado con un ámbito adaptable o un ámbito estático que incluye instancias específicas, tienen la misma prioridad en este nivel.
-        
+
         **Ejemplo 1 para este tercer principio (directivas)**: un mensaje de correo electrónico está sujeto a dos directivas de retención. La primera directiva de retención no tiene ámbito y elimina los elementos después de diez años. La segunda directiva de retención tiene como ámbito buzones específicos y elimina los elementos después de cinco años.
-        
+
         El mensaje de correo electrónico se elimina permanentemente después de cinco años porque la acción de eliminación de la directiva de retención con ámbito tiene prioridad sobre la directiva de retención de toda la organización.
-        
+
         **Ejemplo 2 de este tercer principio (directivas)**: un documento de la cuenta de OneDrive de un usuario está sujeto a dos directivas de retención. La primera directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene la acción de eliminar después de 10 años. La segunda directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene la acción de eliminar después de 7 años.
-        
+
         No se puede determinar cuándo se eliminará permanentemente este documento en este nivel porque ambas directivas de retención tienen como ámbito incluir instancias específicas.
 
 4. **El periodo de eliminación más corto prevalece.** Se aplica para determinar cuándo se eliminarán los elementos de las directivas de retención y el resultado no se haya podido resolver desde el nivel anterior: el contenido se elimina permanentemente al final del período de retención más corto.
-    
+
     > [!NOTE]
     > Es posible que una directiva de retención que tenga un período de retención de 7 años supere a una directiva de retención de 5 años porque la primera directiva está configurada para iniciar el período de retención en función de cuándo se crea el archivo y la segunda directiva de retención desde la última modificación del archivo.
-    
+
     **Ejemplo de este cuarto principio**: un documento de la cuenta de OneDrive de un usuario está sujeto a dos directivas de retención. La primera directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene la acción de eliminar 10 años después de que el archivo es creado. La segunda directiva de retención tiene como ámbito incluir la cuenta de OneDrive de este usuario y tiene una acción de eliminar de 7 años después de su creación.
-    
+
     Este documento se eliminará permanentemente después de siete años ya que este es el período de retención más corto para el elemento desde estas dos directivas de retención.
 
 Tenga en cuenta que los elementos sujetos a la retención de eDiscovery también se incluyen en el primer principio de retención; no se pueden eliminar permanentemente mediante ninguna directiva de retención o etiqueta de retención. Cuando se suspende esa retención, los principios de retención continúan aplicándose a ellos. Por ejemplo, podrían estar sujetos a un período de retención vigente o una acción de eliminación.
@@ -447,61 +449,61 @@ Tenga en cuenta que los elementos sujetos a la retención de eDiscovery también
 Los ejemplos siguientes son más complejos para ilustrar los principios de retención cuando se combinan diferentes acciones de retención y eliminación. Para que los ejemplos sean más fáciles de seguir, todas las directivas y etiquetas de retención usan la configuración predeterminada de iniciar el período de retención cuando se crea el elemento para que el final del período de retención sea el mismo para el elemento.
 
 1. Se aplicó la siguiente configuración de retención a un elemento:
-    
+
     - Una directiva de retención que elimina después de cinco años
     - Una directiva de retención para conservar durante tres años y, después, eliminar
     - Una etiqueta de retención para conservar durante siete años
-    
-    **Resultado**: el elemento se conserva durante siete años porque la retención tiene prioridad sobre la eliminación y siete años es el período de retención más largo. Al final del período de retención, el elemento se elimina permanentemente por la acción de eliminación de las directivas de retención que se difirió mientras el elemento se conservó.
-    
-    Aunque las dos directivas de retención tienen fechas diferentes para las acciones de eliminación, lo más pronto que se puede eliminar permanentemente el elemento es al final del período de retención más largo, que es más largo que las dos fechas de eliminación. 
 
-2.  Se aplicó la siguiente configuración de retención a un elemento:
-    
+    **Resultado**: el elemento se conserva durante siete años porque la retención tiene prioridad sobre la eliminación y siete años es el período de retención más largo. Al final del período de retención, el elemento se elimina permanentemente por la acción de eliminación de las directivas de retención que se difirió mientras el elemento se conservó.
+
+    Aunque las dos directivas de retención tienen fechas diferentes para las acciones de eliminación, lo más pronto que se puede eliminar permanentemente el elemento es al final del período de retención más largo, que es más largo que las dos fechas de eliminación.
+
+2. Se aplicó la siguiente configuración de retención a un elemento:
+
     - Una directiva de retención para toda la organización que solo se elimina después de diez años
     - Una directiva de retención con ámbito de instancias específicas que se conserva durante cinco años y, a continuación, se elimina.
     - Una etiqueta de retención para conservar durante tres años y, después, eliminar
-    
+
     **Resultado**: el elemento se conserva durante cinco años, ya que este es el período de retención más largo. Al final de ese período de retención, el elemento se eliminará permanentemente debido a la acción de eliminación de tres años a partir de la etiqueta de retención. La acción de eliminar de las etiquetas de retención tiene prioridad sobre la acción de eliminar de todas las directivas de retención. En este ejemplo, todos los conflictos se resuelven antes del tercer nivel.
 
 ## <a name="use-preservation-lock-to-restrict-changes-to-policies"></a>Usar el Bloqueo de conservación para restringir los cambios en las directivas
 
-Algunas organizaciones podrían tener que cumplir con reglas establecidas por los organismos reguladores, como la Regla 17a-4 de la Comisión de intercambio y valores (SEC), la cual exige que, después de activar una directiva de retención, esta no se pueda desactivar ni hacer menos restrictiva. 
+Algunas organizaciones podrían tener que cumplir con reglas establecidas por los organismos reguladores, como la Regla 17a-4 de la Comisión de intercambio y valores (SEC), la cual exige que, después de activar una directiva de retención, esta no se pueda desactivar ni hacer menos restrictiva.
 
 El Bloqueo de conservación garantiza que su organización cumpla con los requisitos normativos, ya que bloquea una directiva de retención o directiva de etiqueta de retención de forma que nadie, ni siquiera el administrador, pueda desactivarla, eliminarla o hacer que sea menos restrictiva.
-  
+
 Usted aplica el Bloqueo de conservación después de crear la directiva o etiqueta de retención. Para obtener más información e instrucciones, consulte [Usar el Bloqueo de conservación para restringir los cambios en las directivas y etiquetas de retención](retention-preservation-lock.md).
 
 ## <a name="releasing-a-policy-for-retention"></a>Lanzamiento de una directiva de retención
 
 Siempre que sus directivas de retención no tengan un bloqueo de conservación, puede eliminar sus directivas en cualquier momento, lo que desactiva efectivamente la configuración de retención para una directiva de retención, y las etiquetas de retención ya no se pueden aplicar desde las directivas de etiquetas de retención. Las etiquetas de retención aplicadas anteriormente permanecen con sus opciones de retención configuradas y, para estas etiquetas, puede actualizar el período de retención cuando no se basa en cuándo se etiquetaron los elementos.
 
-También puede mantener una directiva, pero cambiar el estado de ubicación a desactivado o deshabilitar la directiva. Otra opción es volver a configurar la directiva para que ya no incluya usuarios, sitios, grupos específicos, entre otros. 
+También puede mantener una directiva, pero cambiar el estado de ubicación a desactivado o deshabilitar la directiva. Otra opción es volver a configurar la directiva para que ya no incluya usuarios, sitios, grupos específicos, entre otros.
 
 Información adicional para ubicaciones específicas:
 
 - **Sitios de SharePoint y cuentas de OneDrive:**
-    
+
     Al publicar una directiva de retención para sitios de SharePoint y cuentas de OneDrive, cualquier contenido sujeto a retención de la directiva se conserva durante 30 días para evitar la pérdida accidental de datos. Durante este período de gracia de 30 días, aún se conservarán los archivos eliminados (se seguirán agregando a la Biblioteca de suspensión para conservación), pero el trabajo de temporizador que limpia periódicamente la Biblioteca de suspensión para conservación se suspende para estos archivos para que pueda restaurarlos si es necesario.
-    
+
     Una excepción a este período de gracia de 30 días es cuando actualiza la directiva para excluir uno o varios sitios para SharePoint o cuentas de OneDrive; en este caso, el trabajo de temporizador elimina los archivos de estas ubicaciones en la biblioteca de suspensión para conservación sin el retraso de 30 días.
-    
+
     Para obtener más información sobre la Biblioteca de suspensión para conservación, consulte [Cómo funciona la retención para SharePoint y OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
-    
+
     Debido al comportamiento durante el período de gracia, si vuelve a habilitar la directiva o vuelve a activar el estado de ubicación en un plazo de 30 días, la directiva se reanudará sin pérdida permanente de datos durante este tiempo.
 
 - **Correo electrónico de Exchange y grupos de Microsoft 365**
-    
-    Al liberar una directiva de retención para buzones que están [inactivos](inactive-mailboxes-in-office-365.md) en el momento en que se publica la directiva:
-    
-    - Si la directiva de retención se aplica explícitamente a un buzón, la configuración de retención ya no se aplica. Sin la configuración de retención aplicada, un buzón inactivo se convierte en apto para la eliminación automática de la forma habitual.
-        
-        Una directiva de retención explícita requiere un ámbito de directiva adaptable o un ámbito de directiva estática con una configuración de inclusión que especifique un buzón activo en el momento en que se aplicó la directiva y más tarde quedó inactiva.
-    
-    - Si la directiva de retención se aplica implícitamente a un buzón de correo y la acción de retención configurada es retenerla, la directiva de retención continúa aplicándose y un buzón inactivo nunca podrá eliminarse automáticamente. Cuando la acción de retención ya no se aplica porque ha expirado el período de retención, el administrador de Exchange ahora puede [eliminar manualmente el buzón inactivo](delete-an-inactive-mailbox.md)
-        
-        Una directiva de retención implícita requiere un ámbito de directiva estático con la configuración de **Todos los destinatarios** (para correo electrónico de Exchange) o **Todos los grupos** (para Grupos de Microsoft 365).
-    
+
+  Al liberar una directiva de retención para buzones que están [inactivos](inactive-mailboxes-in-office-365.md) en el momento en que se publica la directiva:
+
+  - Si la directiva de retención se aplica explícitamente a un buzón, la configuración de retención ya no se aplica. Sin la configuración de retención aplicada, un buzón inactivo se convierte en apto para la eliminación automática de la forma habitual.
+
+    Una directiva de retención explícita requiere un ámbito de directiva adaptable o un ámbito de directiva estática con una configuración de inclusión que especifique un buzón activo en el momento en que se aplicó la directiva y más tarde quedó inactiva.
+
+  - Si la directiva de retención se aplica implícitamente a un buzón de correo y la acción de retención configurada es retenerla, la directiva de retención continúa aplicándose y un buzón inactivo nunca podrá eliminarse automáticamente. Cuando la acción de retención ya no se aplica porque ha expirado el período de retención, el administrador de Exchange ahora puede [eliminar manualmente el buzón inactivo](delete-an-inactive-mailbox.md)
+
+        An implicit retention policy requires a static policy scope with the **All recipients** (for Exchange email) or **All groups** (for Microsoft 365 Groups) configuration.
+
     Para obtener más información sobre los buzones inactivos que tienen directivas de retención aplicadas, consulte [Buzones inactivos y directivas de retención de Microsoft 365](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention).
 
 ## <a name="auditing-retention-configuration-and-actions"></a>Auditoría de las acciones y la configuración de retención
@@ -519,19 +521,19 @@ Para obtener la lista completa de los eventos de auditoría, consulte las [Activ
 Las acciones de retención que se registran como eventos de auditoría solo están disponibles para las etiquetas de retención y no para las directivas de retención:
 
 - Cuando se aplica, cambia o quita una etiqueta de retención de un elemento en SharePoint o OneDrive:
-    - En **Actividades de archivos y páginas**, seleccione **Etiqueta de retención cambiada para un archivo**. 
+  - En **Actividades de archivos y páginas**, seleccione **Etiqueta de retención cambiada para un archivo**.
 
 - Cuando un elemento etiquetado en SharePoint se marca como un registro, y un usuario lo desbloquea o bloquea:
-    - En **Actividades de archivos y páginas**, seleccione **Estado de registro cambiado a desbloqueado** y **Estado de registro cambiado a bloqueado**.
+  - En **Actividades de archivos y páginas**, seleccione **Estado de registro cambiado a desbloqueado** y **Estado de registro cambiado a bloqueado**.
 
 - Cuando se aplica una etiqueta de retención que marca el contenido como un registro o un registro normativo a un elemento en Exchange:
-    - En **Actividades del buzón de Exchange**, seleccione **Mensaje etiquetado como un registro**.
+  - En **Actividades del buzón de Exchange**, seleccione **Mensaje etiquetado como un registro**.
 
 - Cuando un elemento etiquetado en SharePoint, OneDrive o Exchange se marca como un registro o registro normativo, y se elimina de manera permanente:
-    - En **Actividades de archivos y páginas**, seleccione **Archivo eliminado marcado como un registro.**
+  - En **Actividades de archivos y páginas**, seleccione **Archivo eliminado marcado como un registro.**
 
 - Cuando un revisor de eliminación realiza una acción para un elemento que ha llegado al final de su período de retención:
-    -  Desde **Actividades de revisión para eliminación**, seleccione **Eliminación aprobada**, **Período de retención extendido**, **Elemento vuelto a etiquetar** o **Revisores agregados**
+  - Desde **Actividades de revisión para eliminación**, seleccione **Eliminación aprobada**, **Período de retención extendido**, **Elemento vuelto a etiquetar** o **Revisores agregados**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Cmdlets de PowerShell para directivas de retención y etiquetas de retención
 
@@ -569,7 +571,6 @@ Para usar los cmdlets de retención, primero debe [conectar al Centro de segurid
 
 - [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule)
 
-
 ## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>Cuándo usar directivas de retención y etiquetas de retención o suspensiones de eDiscovery
 
 Si bien tanto la configuración de retenciones y las suspensiones[ que usted cree con un caso de eDiscovery](create-ediscovery-holds.md) pueden impedir que se eliminen los datos de forma permanente, están diseñados para diferentes escenarios. Para que le resulte más fácil comprender las diferencias y decidir qué usar, siga estas instrucciones:
@@ -593,12 +594,12 @@ Si el contenido está sujeto tanto a la configuración de retención como a una 
 
 Si usa herramientas de eDiscovery antiguas para conservar datos, consulte los siguientes recursos:
 
-- Exchange: 
-    - [Conservación local y retención por juicio](/exchange/security-and-compliance/in-place-and-litigation-holds)
-    - [Cómo identificar el tipo de retención en un buzón de Exchange Online](./identify-a-hold-on-an-exchange-online-mailbox.md)
+- Exchange:
+  - [Conservación local y retención por juicio](/exchange/security-and-compliance/in-place-and-litigation-holds)
+  - [Cómo identificar el tipo de retención en un buzón de Exchange Online](./identify-a-hold-on-an-exchange-online-mailbox.md)
 
-- SharePoint y OneDrive: 
-    - [Agregar contenido a un caso y poner orígenes en espera en el Centro de eDiscovery](/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
+- SharePoint y OneDrive:
+  - [Agregar contenido a un caso y poner orígenes en espera en el Centro de eDiscovery](/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
 
 - [Retirada de herramientas heredadas de eDiscovery](legacy-ediscovery-retirement.md)
 
@@ -611,33 +612,33 @@ Si actualmente usa esas características más antiguas, estas seguirán funciona
 **Características anteriores de Exchange Online:**
 
 - [Etiquetas de retención y directivas de retención](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies), lo que también se conoce como [administración de registros de mensajes (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) (solo eliminación)
-    
-    Sin embargo, si usa las siguientes características de MRM, tenga en cuenta que actualmente no son compatibles con las directivas de retención de Microsoft 365:
-    
-    - Una directiva de archivo para [buzones de archivo](enable-archive-mailboxes.md) para mover automáticamente los correos electrónicos del buzón principal de un usuario a su buzón de archivo después de un período de tiempo especificado. Una directiva de archivo (con cualquier configuración) se puede usar junto con una directiva de retención de Microsoft 365 que se aplica al buzón principal y de archivo de un usuario.
-    
-    - Directivas de retención aplicadas por un administrador a carpetas específicas dentro de un buzón. Una directiva de retención de Microsoft 365 se aplica a todas las carpetas del buzón. Sin embargo, un administrador puede configurar diferentes opciones de retención mediante etiquetas de retención que un usuario puede aplicar a las carpetas de Outlook como una [etiqueta de retención predeterminada](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder).
+
+  Sin embargo, si usa las siguientes características de MRM, tenga en cuenta que actualmente no son compatibles con las directivas de retención de Microsoft 365:
+
+  - Una directiva de archivo para [buzones de archivo](enable-archive-mailboxes.md) para mover automáticamente los correos electrónicos del buzón principal de un usuario a su buzón de archivo después de un período de tiempo especificado. Una directiva de archivo (con cualquier configuración) se puede usar junto con una directiva de retención de Microsoft 365 que se aplica al buzón principal y de archivo de un usuario.
+
+  - Directivas de retención aplicadas por un administrador a carpetas específicas dentro de un buzón. Una directiva de retención de Microsoft 365 se aplica a todas las carpetas del buzón. Sin embargo, un administrador puede configurar diferentes opciones de retención mediante etiquetas de retención que un usuario puede aplicar a las carpetas de Outlook como una [etiqueta de retención predeterminada](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder).
 
 - [Retención por juicio](create-a-litigation-hold.md) (solo retención)
-    
-   Aunque aún se admiten retenciones por juicio, se recomienda usar retención de Microsoft 365 o retención de eDiscovery, [según corresponda](#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds). 
+
+   Aunque aún se admiten retenciones por juicio, se recomienda usar retención de Microsoft 365 o retención de eDiscovery, [según corresponda](#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds).
 
 **Características anteriores de SharePoint y OneDrive:**
 
 - [Directivas de eliminación de documentos](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (solo eliminación)
-    
-- [Configuración de administración de registros local](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (retención) 
-    
+
+- [Configuración de administración de registros local](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (retención)
+
 - [Usar las directivas de cierre y eliminación de sitio](https://support.microsoft.com/en-us/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (solo eliminación)
-    
+
 - [Directivas de administración de información](intro-to-info-mgmt-policies.md) (solo eliminación)
-     
-Si ha configurado los sitios de SharePoint para directivas de tipo de contenido o directivas de administración de información para conservar el contenido de una lista o biblioteca, estas directivas se omiten cuando se aplica una directiva de retención. 
+
+Si ha configurado los sitios de SharePoint para directivas de tipo de contenido o directivas de administración de información para conservar el contenido de una lista o biblioteca, estas directivas se omiten cuando se aplica una directiva de retención.
 
 ## <a name="related-information"></a>Información relacionada
 
 - [Límites de SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
-- [Límites y especificaciones para Microsoft Teams](/microsoftteams/limits-specifications-teams) 
+- [Límites y especificaciones para Microsoft Teams](/microsoftteams/limits-specifications-teams)
 - [Recursos para ayudarle a cumplir los requerimientos reglamentarios para la administración de registros y el gobierno de información](retention-regulatory-requirements.md)
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración

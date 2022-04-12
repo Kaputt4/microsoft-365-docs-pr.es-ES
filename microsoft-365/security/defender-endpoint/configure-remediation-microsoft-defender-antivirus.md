@@ -1,6 +1,6 @@
 ---
 title: Corregir la detección de correcciones para el Antivirus de Windows Defender
-description: Configurar qué Antivirus de Microsoft Defender debe hacer cuando detecta una amenaza y cuánto tiempo deben conservarse los archivos en cuarentena en la carpeta de cuarentena
+description: Configure qué Antivirus de Microsoft Defender debe hacer cuando detecta una amenaza y cuánto tiempo deben conservarse los archivos en cuarentena en la carpeta de cuarentena.
 keywords: corrección, corrección, eliminación, amenazas, cuarentena, examen, restauración
 ms.prod: m365-security
 ms.technology: mde
@@ -16,12 +16,12 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 182e0b39c1a9c7795fbdd716fc2e260d06d5c451
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 257a3bfc4fc9dcb6353bb158bc3cd4296891ae76
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61217427"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790160"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Corregir la detección de correcciones para el Antivirus de Windows Defender
 
@@ -30,18 +30,22 @@ ms.locfileid: "61217427"
 
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Antivirus de Microsoft Defender
 
-Cuando Antivirus de Microsoft Defender un examen, intenta corregir o quitar las amenazas que se detectan. Puede configurar cómo Antivirus de Microsoft Defender deben abordar determinadas amenazas, si se debe crear un punto de restauración antes de corregir y cuándo deben quitarse las amenazas.
+**Plataformas**
+- Windows
 
-En este artículo se describe cómo configurar estas opciones mediante la directiva de grupo, pero también puede usar Microsoft Endpoint Configuration Manager [y](/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings) [Microsoft Intune](/intune/device-restrictions-configure).
+Cuando Antivirus de Microsoft Defender ejecuta un examen, intenta corregir o quitar las amenazas detectadas. Puede configurar cómo Antivirus de Microsoft Defender debe abordar determinadas amenazas, si se debe crear un punto de restauración antes de corregirlo y cuándo se deben quitar las amenazas.
 
-También puede usar el [ `Set-MpPreference` cmdlet de PowerShell](/powershell/module/defender/set-mppreference) o la [ `MSFT_MpPreference` clase WMI](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) para configurar estas opciones.
+En este artículo se describe cómo configurar estas opciones mediante directiva de grupo, pero también puede usar [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings) y [Microsoft Intune](/intune/device-restrictions-configure).
 
-## <a name="configure-remediation-options"></a>Configurar opciones de corrección
+También puede usar el [cmdlet de PowerShell o la`Set-MpPreference` clase](/powershell/module/defender/set-mppreference) WMI para configurar estas opciones.[`MSFT_MpPreference`](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-1. En el equipo de administración de directivas de grupo, abra la Consola de administración de directivas de [grupo,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y haga clic en **Editar**.
+## <a name="configure-remediation-options"></a>Configuración de opciones de corrección
 
-2. En el **Editor de administración de directivas de grupo,** vaya a Configuración del **equipo** y seleccione **Plantillas administrativas.**
+1. En el equipo de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto directiva de grupo que desea configurar y haga clic en **Editar**.
+
+2. En directiva de grupo **Editor de administración**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
 3. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender**.
 
@@ -53,28 +57,38 @@ También puede usar el [ `Set-MpPreference` cmdlet de PowerShell](/powershell/mo
 
 |Ubicación|Configuración|Descripción|Configuración predeterminada (si no está configurada)|
 |---|---|---|---|
-|Examinar|Crear un punto de restauración del sistema|Se creará un punto de restauración del sistema cada día antes de intentar limpiar o examinar|Deshabilitado|
-|Examinar|Activar la eliminación de elementos de la carpeta historial de examen|Especificar cuántos días deben mantenerse los elementos en el historial de examen|30 días|
-|Raíz|Desactivar la corrección rutinaria|Puede especificar si Antivirus de Microsoft Defender corrige automáticamente las amenazas o si debe preguntar al usuario del extremo qué hacer.|Deshabilitado (las amenazas se corrigen automáticamente)|
-|Cuarentena|Configurar la eliminación de elementos de la carpeta cuarentena|Especificar cuántos días deben mantenerse en cuarentena los elementos antes de quitarse|90 días|
-|Amenazas|Especificar niveles de alerta de amenazas en los que no se debe realizar ninguna acción predeterminada cuando se detecte|A todas las amenazas detectadas por Antivirus de Microsoft Defender se le asigna un nivel de amenaza (bajo, medio, alto o grave). Puede usar esta configuración para definir cómo deben corregirse todas las amenazas de cada uno de los niveles de amenaza (en cuarentena, eliminados o omitidos)|No aplicable|
-|Amenazas|Especificar amenazas en las que no se debe realizar una acción predeterminada cuando se detecte|Especifique cómo deben corregirse las amenazas específicas (mediante su identificador de amenaza). Puede especificar si la amenaza específica debe ponerse en cuarentena, quitarse o omitirse.|No aplicable|
+|Examinar|Creación de un punto de restauración del sistema|Se creará un punto de restauración del sistema cada día antes de que se intente limpiar o escanear.|Deshabilitado|
+|Examinar|Activar la eliminación de elementos de la carpeta del historial de exámenes|Especificar cuántos días deben conservarse los elementos en el historial de exámenes|30 días|
+|Raíz|Desactivar la corrección rutinaria|Puede especificar si Antivirus de Microsoft Defender corrige automáticamente las amenazas o si debe preguntar al usuario del punto de conexión qué hacer.|Deshabilitado (las amenazas se corrigen automáticamente)|
+|Cuarentena|Configuración de la eliminación de elementos de la carpeta Cuarentena|Especificar cuántos días deben mantenerse los elementos en cuarentena antes de quitarlos|90 días|
+|Amenazas|Especificar los niveles de alerta de amenaza en los que no se debe realizar una acción predeterminada cuando se detecte|A cada amenaza detectada por Antivirus de Microsoft Defender se le asigna un nivel de amenaza (bajo, medio, alto o grave). Puede usar esta configuración para definir cómo se deben corregir todas las amenazas de cada uno de los niveles de amenazas (ponerlas en cuarentena, quitarlas o omitirlas).|No aplicable|
+|Amenazas|Especificar amenazas en las que no se debe realizar una acción predeterminada cuando se detecte|Especifique cómo deben corregirse amenazas específicas (con su identificador de amenaza). Puede especificar si se debe poner en cuarentena, quitar o omitir la amenaza específica.|No aplicable|
 
 > [!IMPORTANT]
-> Antivirus de Microsoft Defender detecta y corrige los archivos en función de muchos factores. A veces, completar una corrección requiere un reinicio. Incluso si más adelante se determina que la detección es un falso positivo, el reinicio debe completarse para garantizar que se hayan completado todos los pasos de corrección adicionales.
+> Antivirus de Microsoft Defender detecta y corrige los archivos en función de muchos factores. A veces, completar una corrección requiere un reinicio. Incluso si más adelante se determina que la detección es un falso positivo, el reinicio debe completarse para asegurarse de que se han completado todos los pasos de corrección adicionales.
 >
-> Si estás seguro de Antivirus de Microsoft Defender un archivo basado en un falso positivo, puedes restaurar el archivo desde la cuarentena después de reiniciar el dispositivo. Vea [Restaurar archivos en cuarentena en Antivirus de Microsoft Defender](restore-quarantined-files-microsoft-defender-antivirus.md).
+> Si está seguro Antivirus de Microsoft Defender poner en cuarentena un archivo en función de un falso positivo, puede restaurar el archivo de la cuarentena después de reiniciar el dispositivo. Consulte [Restauración de archivos en cuarentena en Antivirus de Microsoft Defender](restore-quarantined-files-microsoft-defender-antivirus.md).
 >
-> Para evitar este problema en el futuro, puede excluir archivos de los exámenes. Consulte [Configure and validate exclusions for Antivirus de Microsoft Defender scans](configure-exclusions-microsoft-defender-antivirus.md).
+> Para evitar este problema en el futuro, puede excluir archivos de los exámenes. Consulte [Configuración y validación de exclusiones para exámenes de Antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md).
 
-Vea también [Configure remediation-required scheduled full Antivirus de Microsoft Defender scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) for more remediation-related settings.
+Consulte también [Configuración de exámenes de Antivirus de Microsoft Defender programados necesarios para la corrección](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) para obtener más opciones relacionadas con la corrección.
 
-## <a name="see-also"></a>Consulte también
+> [!TIP]
+> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
+> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
+> - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
+> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+
+## <a name="see-also"></a>Vea también
 
 - [Configurar opciones de análisis del Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)
-- [Configurar exámenes Antivirus de Microsoft Defender programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+- [Configuración de exámenes de Antivirus de Microsoft Defender programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 - [Configurar y ejecutar análisis bajo petición en el Antivirus de Microsoft Defender](run-scan-microsoft-defender-antivirus.md)
 - [Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)
-- [Configurar la interacción del usuario Antivirus de Microsoft Defender usuario final](configure-end-user-interaction-microsoft-defender-antivirus.md)
-- [Personalizar, iniciar y revisar los resultados de Antivirus de Microsoft Defender análisis y corrección](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Configuración de la interacción Antivirus de Microsoft Defender del usuario final](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [Personalización, inicio y revisión de los resultados de los exámenes y correcciones de Antivirus de Microsoft Defender](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

@@ -15,22 +15,25 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 04/07/2022
+ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 346f806129afc30ec5543c99bce3709af60cee73
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 48ab00c97559ecbbfe430b89c3742b8914c224ba
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64730648"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788488"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administración de actualizaciones Antivirus de Microsoft Defender y aplicación de líneas base
 
 **Se aplica a:**
 - [planes de Microsoft Defender para punto de conexión 1 y 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Antivirus de Microsoft Defender
+
+**Plataformas**
+- Windows
 
 Mantener Antivirus de Microsoft Defender actualizado es fundamental para garantizar que los dispositivos tengan la tecnología y las características más recientes necesarias para protegerse frente a nuevas técnicas de malware y ataques. Asegúrese de actualizar la protección antivirus, incluso si Antivirus de Microsoft Defender se ejecuta en [modo pasivo](microsoft-defender-antivirus-compatibility.md). Hay dos tipos de actualizaciones relacionadas con mantener Antivirus de Microsoft Defender actualizados:
 
@@ -88,7 +91,7 @@ Todas nuestras actualizaciones contienen
 <summary>Marzo de 2022 (Plataforma: 4.18.2203.5 | Motor: 1.1.19100.5)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad: **1.361.1449.0**<br/>
-&ensp;Fecha de publicación: **7 de marzo de 2022**<br/>
+&ensp;Fecha de publicación: **7 de abril de 2022**<br/>
 &ensp;Plataforma: **4.18.2203.5**<br/>
 &ensp;Motor: **1.1.19100.5**<br/>
 &ensp;Fase de soporte técnico: **Actualizaciones críticas y de seguridad**<br/>
@@ -987,3 +990,13 @@ Para obtener más información, consulte [Actualización de Microsoft Defender p
 |[Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md) | Puede establecer que las actualizaciones de protección se descarguen al iniciar o después de determinados eventos de protección entregados en la nube. |
 |[Administrar las actualizaciones de dispositivos móviles y máquinas virtuales](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| Puede especificar la configuración, como si se deben producir actualizaciones en la batería, que son especialmente útiles para dispositivos móviles y máquinas virtuales. |
 | [actualización de Microsoft Defender para punto de conexión para EDR Sensor](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | Puede actualizar el sensor de EDR (MsSense.exe) que se incluye en el nuevo paquete de solución unificada Microsoft Defender para punto de conexión publicado en 2021.   |
+
+> [!TIP]
+> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
+> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
+> - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
+> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)

@@ -1,7 +1,7 @@
 ---
-title: Definir cómo se actualizan los dispositivos móviles Antivirus de Microsoft Defender
-description: Administrar cómo los dispositivos móviles, como los portátiles, deben actualizarse con Antivirus de Microsoft Defender de protección.
-keywords: actualizaciones, protección, actualizaciones de programación, batería, dispositivo móvil, portátil, bloc de notas, opt-in, microsoft update, wsus, override
+title: Definir cómo se actualizan los dispositivos móviles mediante Antivirus de Microsoft Defender
+description: Administre cómo se deben actualizar los dispositivos móviles, como los portátiles, con Antivirus de Microsoft Defender actualizaciones de protección.
+keywords: updates, protection, schedule updates, battery, mobile device, laptop, notebook, opt-in, microsoft update, wsus, override
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3fc6d5a8b8fa7889f65f21111b3af82e124516b4
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f582e33f2d77c8560b773b79d54026e38bcde8c9
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168095"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790380"
 ---
 # <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>Administrar las actualizaciones de dispositivos móviles y máquinas virtuales
 
@@ -29,76 +29,90 @@ ms.locfileid: "61168095"
 
 **Se aplica a:**
 
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Antivirus de Microsoft Defender
 
-Es posible que los dispositivos móviles y las máquinas virtuales requieran más configuración para garantizar que las actualizaciones no afectan al rendimiento.
+**Plataformas**
+- Windows
 
-Hay dos opciones de configuración que son útiles para estos dispositivos:
+Es posible que los dispositivos móviles y las máquinas virtuales requieran más configuración para asegurarse de que el rendimiento no se vea afectado por las actualizaciones.
 
-- Participar en Microsoft Update en equipos móviles sin conexión WSUS
-- Impedir actualizaciones de inteligencia de seguridad al ejecutarse con batería
+Hay dos configuraciones que son útiles para estos dispositivos:
+
+- Participar en Microsoft Update en equipos móviles sin una conexión WSUS
+- Evitar actualizaciones de inteligencia de seguridad al ejecutarse con batería
 
 Los artículos siguientes también pueden ser útiles en estas situaciones:
-- [Configuración de exámenes programados y de actualización](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [Administrar actualizaciones de puntos de conexión que están des actualizadas](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+- [Configuración de exámenes programados y de puesta al día](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+- [Administrar las actualizaciones de los puntos de conexión que están obsoletos](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual](deployment-vdi-microsoft-defender-antivirus.md)
 
-## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>Participar en Microsoft Update en equipos móviles sin conexión WSUS
+## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>Participar en Microsoft Update en equipos móviles sin una conexión WSUS
 
-Puedes usar Microsoft Update para mantener actualizada la inteligencia de seguridad en dispositivos móviles que ejecutan Antivirus de Microsoft Defender cuando no están conectados a la red corporativa o si no tienen una conexión WSUS.
+Puede usar Microsoft Update para mantener la inteligencia de seguridad en dispositivos móviles que ejecutan Antivirus de Microsoft Defender actualizados cuando no están conectados a la red corporativa o no tienen una conexión WSUS.
 
-Esto significa que las actualizaciones de protección se pueden entregar a dispositivos (a través de Microsoft Update) incluso si has establecido WSUS para invalidar Microsoft Update.
+Esto significa que las actualizaciones de protección se pueden entregar a los dispositivos (a través de Microsoft Update), incluso si ha establecido WSUS para invalidar Microsoft Update.
 
-Puedes participar en Microsoft Update en el dispositivo móvil de una de las siguientes maneras:
+Puede participar en Microsoft Update en el dispositivo móvil de una de las siguientes maneras:
 
-- Cambie la configuración con la directiva de grupo.
-- Use un VBScript para crear un script y, a continuación, ejecutarlo en cada equipo de la red.
-- Opte manualmente por todos los equipos de la red a través **del Configuración** menú.
+- Cambie la configuración con directiva de grupo.
+- Use un VBScript para crear un script y, a continuación, ejecútelo en cada equipo de la red.
+- Participar manualmente en todos los equipos de la red a través del menú **Configuración**.
 
-### <a name="use-group-policy-to-opt-in-to-microsoft-update"></a>Usar la directiva de grupo para participar en Microsoft Update
+### <a name="use-group-policy-to-opt-in-to-microsoft-update"></a>Uso de directiva de grupo para participar en Microsoft Update
 
-1. En el equipo de administración de directivas de grupo, abra la Consola de administración de directivas de [grupo,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y **seleccione Editar**.
+1. En la máquina de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto de directiva de grupo que desea configurar y seleccione **Editar**.
 
-2. En el **Editor de administración de directivas de grupo** vaya a Configuración del **equipo.**
+2. En el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
 
-3. Seleccione **Directivas y,** **a continuación, Plantillas administrativas.**
+3. Seleccione **Directivas** y plantillas **administrativas**.
 
-4. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** actualizaciones \>  \> **de firma**.
+4. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> **actualizaciones de firma**.
 
 5. Establezca **Permitir actualizaciones de inteligencia de seguridad de Microsoft Update** en **Habilitado** y, a continuación, seleccione  **Aceptar**.
 
-### <a name="use-a-vbscript-to-opt-in-to-microsoft-update"></a>Usar un VBScript para participar en Microsoft Update
+### <a name="use-a-vbscript-to-opt-in-to-microsoft-update"></a>Uso de VBScript para participar en Microsoft Update
 
-1. Use las instrucciones del artículo de MSDN [Opt-In to Microsoft Update](/windows/win32/wua_sdk/opt-in-to-microsoft-update) para crear vbscript.
+1. Use las instrucciones del artículo de MSDN [Participación en Microsoft Update](/windows/win32/wua_sdk/opt-in-to-microsoft-update) para crear VBScript.
 
 2. Ejecute el VBScript que creó en cada equipo de la red.
 
 ### <a name="manually-opt-in-to-microsoft-update"></a>Participar manualmente en Microsoft Update
 
-1. Abre **Windows actualización en** Actualizar & configuración **de** seguridad en el equipo en el que quieras participar.
+1. Abra **Windows Update** en **Actualizar &** configuración de seguridad en el equipo en el que desea participar.
 
-2. Seleccione **Opciones** avanzadas.
+2. Seleccione **Opciones avanzadas** .
 
 3. Active la casilla **Deme actualizaciones para otros productos de Microsoft cuando actualice Windows**.
 
-## <a name="prevent-security-intelligence-updates-when-running-on-battery-power"></a>Impedir actualizaciones de inteligencia de seguridad al ejecutarse con batería
+## <a name="prevent-security-intelligence-updates-when-running-on-battery-power"></a>Evitar actualizaciones de inteligencia de seguridad al ejecutarse con batería
 
-Puede configurar el Antivirus de Microsoft Defender para descargar solo las actualizaciones de protección cuando el equipo está conectado a una fuente de alimentación cableada.
+Puede configurar Antivirus de Microsoft Defender para descargar solo las actualizaciones de protección cuando el equipo está conectado a una fuente de alimentación cableada.
 
-### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>Usar la directiva de grupo para evitar actualizaciones de inteligencia de seguridad en la batería
+### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>Uso de directiva de grupo para evitar actualizaciones de inteligencia de seguridad en la batería
 
-1. En el equipo de administración de directivas de grupo, abra la Consola de administración de directivas de [grupo,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))elija el objeto de directiva de grupo que desea configurar y ábralo para su edición.
+1. En la máquina de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), elija el objeto de directiva de grupo que desea configurar y ábralo para su edición.
 
-2. En el **Editor de administración de directivas de grupo** vaya a Configuración del **equipo.**
+2. En el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
 
-3. Seleccione **Directivas y,** **a continuación, Plantillas administrativas.**
+3. Seleccione **Directivas** y plantillas **administrativas**.
 
-4. Expanda el árbol para **Windows componentes** Antivirus de Microsoft Defender de firma \>  \> y, a continuación, establezca **Permitir** actualizaciones de inteligencia de seguridad al ejecutar la batería en Deshabilitado . A continuación, seleccione **Aceptar**.
+4. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender** \> **actualizaciones de firma** y, a continuación, establezca **Permitir actualizaciones de inteligencia de seguridad al ejecutar la batería en** **Deshabilitado**. A continuación, seleccione **Aceptar**.
 
-Esta acción impide que las actualizaciones de protección se descarguen cuando el equipo está en batería.
+Esta acción evita que las actualizaciones de protección se descarguen cuando el equipo esté encendido.
+
+> [!TIP]
+> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
+> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
+> - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
+> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Administración de actualizaciones Antivirus de Microsoft Defender y aplicación de líneas base](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Actualizar y administrar Antivirus de Microsoft Defender en Windows 10](deploy-manage-report-microsoft-defender-antivirus.md)

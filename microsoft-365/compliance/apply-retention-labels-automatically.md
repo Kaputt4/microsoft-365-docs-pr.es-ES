@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de retención de etiquetado automático para que se puedan aplicar etiquetas automáticamente y, así, conservar lo que se necesite y eliminar lo que no
-ms.openlocfilehash: 2d141ef349c456b9e8397ea1c96a4e450eaa73fc
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 8c3df81eabb0d67993825d95e390d3e94c7a9bd7
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500446"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64762021"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: f402df53c19da78435e22717577b351fc302d0f4
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 0a3b036a60d3ec24533056b38ff1e68be9875aa0
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679970"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64761381"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
@@ -34,7 +34,7 @@ El explorador de contenido de la clasificación de datos le permite ver de forma
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Para conocer los requisitos de licencia, consulte [Information Protection: Análisis de clasificación de datos: sobre el explorador de contenido y actividades](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)
+Para conocer los requisitos de licencia, consulte [Information Protection: Análisis de clasificación de datos: información general sobre el explorador de contenido y actividades](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)
 
 ### <a name="permissions"></a>Permisos
 
@@ -101,7 +101,7 @@ Una [directiva DLP](dlp-learn-about-dlp.md) puede ayudar a proteger la informaci
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 
-Una [etiqueta de confidencialidad](sensitivity-labels.md) es simplemente una etiqueta que indica el valor que tiene el elemento para su organización. Se puede aplicar manualmente o automáticamente. Una vez aplicada, se inserta en el documento y se adhiere a él dondequiera que vaya. Una etiqueta de confidencialidad habilita varios comportamientos de protección, como, por ejemplo, la marca de agua o el cifrado obligatorios.
+Una [etiqueta de confidencialidad](sensitivity-labels.md) es simplemente una etiqueta que indica el valor que tiene el elemento para su organización. Se puede aplicar manualmente o automáticamente. Una vez aplicada, la etiqueta se inserta en el documento y seguirá el documento dondequiera que vaya. Una etiqueta de confidencialidad habilita varios comportamientos de protección, como, por ejemplo, la marca de agua o el cifrado obligatorios.
 
 Las etiquetas de confidencialidad deben habilitarse para los archivos de SharePoint y OneDrive para que los datos correspondientes aparezcan en la página de clasificación de datos. Para más información, vea [Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 

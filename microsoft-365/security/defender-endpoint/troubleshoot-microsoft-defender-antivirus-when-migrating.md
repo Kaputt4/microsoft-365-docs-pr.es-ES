@@ -1,6 +1,6 @@
 ---
 title: Solucionar problemas del Antivirus de Windows Defender al migrar desde una solución de terceros
-description: Solucionar errores comunes al migrar a Antivirus de Microsoft Defender
+description: Solución de errores comunes al migrar a Antivirus de Microsoft Defender
 keywords: evento, código de error, registro, solución de problemas, antivirus de Microsoft Defender, antivirus de Windows Defender, migración
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -15,86 +15,89 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c1b60b66977c4f93591bce20a5cf6ace0b7fc567
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 74843a71131ae8f10628dac96086e68e25acb2b0
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168011"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788444"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Solucionar problemas del Antivirus de Windows Defender al migrar desde una solución de terceros
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Antivirus de Microsoft Defender
 
+**Plataformas**
+- Windows
 
 Puede encontrar ayuda aquí si encuentra problemas al migrar desde una solución de seguridad de terceros a Antivirus de Microsoft Defender.
 
-## <a name="review-event-logs"></a>Revisar registros de eventos
+## <a name="review-event-logs"></a>Revisión de registros de eventos
 
-1. Abra la aplicación Visor de eventos seleccionando el icono **Buscar** en la barra de tareas y buscando el *visor de eventos.*
+1. Abra la aplicación Visor de eventos seleccionando el icono **Buscar** en la barra de tareas y buscando *visor de eventos*.
 
-    Encontrará información Antivirus de Microsoft Defender en **Registros** de aplicaciones y servicios \> **Microsoft** \> **Windows** \> **Windows Defender**.
+    Puede encontrar información sobre Antivirus de Microsoft Defender en Registros \> de **aplicaciones y servicios** de **Microsoft** \> **Windows** \> **Windows Defender**.
 
-1. Desde allí, seleccione **Abrir debajo** de **Operativo**.
+1. Desde allí, seleccione **Abrir** debajo **de Operativo**.
 
-    Al seleccionar un evento en el panel de detalles, se mostrará más información sobre un evento en el panel inferior, en las pestañas **General** **y** Detalles.
+    Al seleccionar un evento en el panel de detalles, se mostrará más información sobre un evento en el panel inferior, en las pestañas **General** y **Detalles** .
 
 ## <a name="microsoft-defender-antivirus-wont-start"></a>Antivirus de Microsoft Defender no se iniciará
 
-Este problema puede manifestarse en forma de varios IDs de eventos diferentes, todos los cuales tienen la misma causa subyacente.
+Este problema se puede manifestar en forma de varios identificadores de evento diferentes, todos los cuales tienen la misma causa subyacente.
 
-### <a name="associated-event-ids"></a>IDs de eventos asociados
+### <a name="associated-event-ids"></a>Identificadores de eventos asociados
 
-Id. de evento|Nombre de registro|Descripción|Origen
+Identificador de evento|Nombre de registro|Descripción|Origen
 ---|---|---|---
-15 |Aplicación|Se Windows Defender el estado correctamente para SECURITY_PRODUCT_STATE_OFF.|Centro de seguridad
-5007|Microsoft-Windows-Windows Defender/Operational|Antivirus de Windows Defender configuración ha cambiado. Si se trata de un evento inesperado, debes revisar la configuración, ya que puede ser el resultado de malware. <p> **Valor antiguo:** Default\IsServiceRunning = 0x0 <p> **Nuevo valor:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
-5010|Microsoft-Windows-Windows Defender/Operational|Antivirus de Windows Defender está deshabilitado el examen de spyware y otro software potencialmente no deseado.|Windows Defender
+15 |Aplicación|Se ha actualizado Windows Defender estado correctamente para SECURITY_PRODUCT_STATE_OFF.|Security Center
+5007|Microsoft-Windows-Windows Defender/Operational|Antivirus de Windows Defender configuración ha cambiado. Si se trata de un evento inesperado, debe revisar la configuración, ya que puede ser el resultado de malware. <p> **Valor anterior:** Default\IsServiceRunning = 0x0 <p> **Nuevo valor:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
+5010|Microsoft-Windows-Windows Defender/Operational|Antivirus de Windows Defender examen de spyware y otro software potencialmente no deseado está deshabilitado.|Windows Defender
 
 ### <a name="how-to-tell-if-microsoft-defender-antivirus-wont-start-because-a-third-party-antivirus-is-installed"></a>Cómo saber si Antivirus de Microsoft Defender no se iniciará porque está instalado un antivirus de terceros
 
-En un dispositivo Windows 10 o Windows 11, si no usa Microsoft Defender para endpoint y tiene instalado un antivirus de terceros, Antivirus de Microsoft Defender se desactivará automáticamente. Si usa Microsoft Defender para Endpoint con un antivirus de terceros instalado, Antivirus de Microsoft Defender se iniciará en modo pasivo, con funcionalidad reducida.
+En un dispositivo Windows 10 o Windows 11, si no usa Microsoft Defender para punto de conexión y tiene instalado un antivirus de terceros, Antivirus de Microsoft Defender se desactivará automáticamente. Si usa Microsoft Defender para punto de conexión con un antivirus de terceros instalado, Antivirus de Microsoft Defender se iniciará en modo pasivo, con una funcionalidad reducida.
 
 > [!TIP]
-> El escenario descrito solo se aplica a Windows 10 y Windows 11. Otras versiones de Windows [tienen diferentes respuestas](microsoft-defender-antivirus-compatibility.md) a Antivirus de Microsoft Defender se ejecutan junto con software de seguridad de terceros.
+> El escenario que se acaba de describir solo se aplica a Windows 10 y Windows 11. Otras versiones de Windows tienen [respuestas diferentes](microsoft-defender-antivirus-compatibility.md) a Antivirus de Microsoft Defender que se ejecutan junto con software de seguridad de terceros.
 
-#### <a name="use-services-app-to-check-if-microsoft-defender-antivirus-is-turned-off"></a>Usar la aplicación Servicios para comprobar si Antivirus de Microsoft Defender está desactivado
+#### <a name="use-services-app-to-check-if-microsoft-defender-antivirus-is-turned-off"></a>Uso de la aplicación Servicios para comprobar si Antivirus de Microsoft Defender está desactivado
 
-Para abrir la aplicación Servicios, seleccione el icono **Buscar** de la barra de tareas y busque *servicios.* También puedes abrir la aplicación desde la línea de comandos escribiendo *services.msc*.
+Para abrir la aplicación Servicios, seleccione el icono **Buscar** de la barra de tareas y busque *servicios*. También puede abrir la aplicación desde la línea de comandos escribiendo *services.msc*.
 
-La información sobre Antivirus de Microsoft Defender aparecerá en la aplicación Servicios en **Windows Defender** \> **Operativo**. El nombre del servicio antivirus *es Antivirus de Windows Defender servicio*.
+La información sobre Antivirus de Microsoft Defender se mostrará en la aplicación Servicios en **Windows Defender** \> **Operativo**. El nombre del servicio antivirus es *Antivirus de Windows Defender Service*.
 
-Al comprobar la aplicación, es posible que veas que *Antivirus de Windows Defender Service* está establecido en manual, pero cuando intentas iniciar este servicio manualmente, recibes una advertencia que indica: The *Antivirus de Windows Defender  El servicio de servicio en el equipo local se inició y, a continuación, se detuvo. Algunos servicios se detienen automáticamente si otros* servicios o programas no los usan.
+Al comprobar la aplicación, es posible que vea que *Antivirus de Windows Defender Service* está establecido en manual, pero cuando intenta iniciar este servicio manualmente, recibe una advertencia que indica: *El Antivirus de Windows Defender  Se inició el servicio de servicio en el equipo local y, a continuación, se detuvo. Algunos servicios se detienen automáticamente si no están en uso por otros servicios o programas.*
 
 Esto indica que Antivirus de Microsoft Defender se ha desactivado automáticamente para conservar la compatibilidad con un antivirus de terceros.
 
-#### <a name="generate-a-detailed-report"></a>Generar un informe detallado
+#### <a name="generate-a-detailed-report"></a>Generación de un informe detallado
 
-Puede generar un informe detallado sobre las directivas de  grupo activas actualmente abriendo un símbolo del sistema en modo Ejecutar como administrador y, a continuación, escriba el siguiente comando:
+Para generar un informe detallado sobre las directivas de grupo actualmente activas, abra un símbolo del sistema en el modo **Ejecutar como administrador** y escriba el siguiente comando:
 
 ```console
 GPresult.exe /h gpresult.html
 ```
 
-Esto generará un informe ubicado en *./gpresult.html*. Abra este archivo y es posible que vea los siguientes resultados, en función de cómo Antivirus de Microsoft Defender se ha desactivado.
+Esto generará un informe ubicado en *./gpresult.html*. Abra este archivo y es posible que vea los resultados siguientes, en función de cómo se haya desactivado Antivirus de Microsoft Defender.
 
 ##### <a name="group-policy-results"></a>Resultados de la directiva de grupo
 
-##### <a name="if-security-settings-are-implemented-via-group-policy-gpo-at-the-domain-or-local-level-or-though-system-center-configuration-manager-sccm"></a>Si la configuración de seguridad se implementa a través de la directiva de grupo (GPO) en el nivel de dominio o local, o a través de System Center configuration Manager (SCCM)
+##### <a name="if-security-settings-are-implemented-via-group-policy-gpo-at-the-domain-or-local-level-or-though-system-center-configuration-manager-sccm"></a>Si la configuración de seguridad se implementa a través de la directiva de grupo (GPO) en el nivel de dominio o local, o a través de System Center Configuration Manager (SCCM)
 
-En el informe GPResults, bajo el título *Windows Components/Antivirus de Windows Defender*, puede ver algo como la siguiente entrada, que indica que Antivirus de Microsoft Defender está desactivado.
+En el informe GPResults, bajo el encabezado, *Windows Components/Antivirus de Windows Defender*, es posible que vea algo parecido a la siguiente entrada, lo que indica que Antivirus de Microsoft Defender está desactivado.
 
 Policy|Configuración|GPO ganador
 ---|---|---
 Desactivar Antivirus de Windows Defender|Habilitado|Win10-Workstations
 
-###### <a name="if-security-settings-are-implemented-via-group-policy-preference-gpp"></a>Si la configuración de seguridad se implementa mediante la preferencia de directiva de grupo (GPP)
+###### <a name="if-security-settings-are-implemented-via-group-policy-preference-gpp"></a>Si la configuración de seguridad se implementa a través de la preferencia de directiva de grupo (GPP)
 
-Bajo el encabezado, Elemento del Registro (ruta de acceso *clave: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender, Nombre del valor: DisableAntiSpyware),* puede ver algo parecido a la siguiente entrada, que indica que Antivirus de Microsoft Defender está desactivado.
+En el encabezado, *elemento del Registro (Ruta de acceso de clave: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender, Nombre del valor: DisableAntiSpyware)* puede ver algo parecido a la siguiente entrada, lo que indica que Antivirus de Microsoft Defender está desactivado.
 
 DisableAntiSpyware|-
 ---|---
@@ -102,40 +105,51 @@ GPO ganador|Win10-Workstations
 Resultado: Correcto|
 **General**|
 Action|Actualizar
-**Propiedades**|
+**Properties**|
 Hive|HKEY_LOCAL_MACHINE
-Ruta de acceso clave|SOFTWARE\Policies\Microsoft\Windows Defender
+Ruta de acceso de clave|SOFTWARE\Policies\Microsoft\Windows Defender
 Nombre del valor|DisableAntiSpyware
 Tipo de valor|REG_DWORD
 Datos del valor|0x1 (1)
 
 ###### <a name="if-security-settings-are-implemented-via-registry-key"></a>Si la configuración de seguridad se implementa a través de la clave del Registro
 
-El informe puede contener el siguiente texto, que indica que Antivirus de Microsoft Defender está desactivado:
+El informe puede contener el texto siguiente, que indica que Antivirus de Microsoft Defender está desactivado:
 
 > Registro (regedit.exe)
 >
 > HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender DisableAntiSpyware (dword) 1 (hexadecimal)
 
-###### <a name="if-security-settings-are-set-in-windows-or-your-windows-server-image"></a>Si la configuración de seguridad se establece en Windows o en la Windows de servidor
+###### <a name="if-security-settings-are-set-in-windows-or-your-windows-server-image"></a>Si la configuración de seguridad se establece en Windows o en la imagen de Windows Server
 
-El administrador de imaginación puede haber establecido la directiva de seguridad **[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)**, localmente a través de *GPEdit.exe*, *LGPO.exe*, o modificando el Registro en su secuencia de tareas. Puede configurar [un identificador de imagen de confianza](/windows-hardware/manufacture/desktop/configure-a-trusted-image-identifier-for-windows-defender) para Antivirus de Microsoft Defender.
+Es posible que el administrador de creación de imágenes haya establecido la directiva de seguridad **[DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)** localmente a través *deGPEdit.exe*, *LGPO.exe* o modificando el registro en su secuencia de tareas. Puede [configurar un identificador de imagen de confianza](/windows-hardware/manufacture/desktop/configure-a-trusted-image-identifier-for-windows-defender) para Antivirus de Microsoft Defender.
 
-### <a name="turn-microsoft-defender-antivirus-back-on"></a>Volver Antivirus de Microsoft Defender activar
+### <a name="turn-microsoft-defender-antivirus-back-on"></a>Volver a activar Antivirus de Microsoft Defender
 
-Antivirus de Microsoft Defender se activará automáticamente si ningún otro antivirus está activo actualmente. Tendrás que desactivar completamente el antivirus de terceros para garantizar que Antivirus de Microsoft Defender se pueda ejecutar con funcionalidad completa.
+Antivirus de Microsoft Defender se activará automáticamente si no hay ningún otro antivirus activo actualmente. Tendrá que desactivar completamente el antivirus de terceros para asegurarse de que Antivirus de Microsoft Defender se puede ejecutar con funcionalidad completa.
 
 > [!WARNING]
-> Las soluciones que sugieren que edite los valores de inicio de Windows Defender para *wdboot*, *wdfilter*, *wdnisdrv*, *wdnissvc* y *windefend* en HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services no son compatibles y pueden forzarle a volver *a* crear una imagen del sistema.
+> Las soluciones que sugieren que edite los valores *de inicio de Windows Defender* para *wdboot*, *wdfilter*, *wdnisdrv*, *wdnissvc* y *windefend* en HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services no son compatibles y pueden forzarle a volver a crear imágenes del sistema.
 
-El modo pasivo está disponible si empiezas a usar Microsoft Defender para Endpoint y un antivirus de terceros junto con Antivirus de Microsoft Defender. El modo pasivo permite Antivirus de Microsoft Defender archivos y actualizarse, pero no corregirá las amenazas. Además, la supervisión del comportamiento a través de la Protección en tiempo [real](configure-real-time-protection-microsoft-defender-antivirus.md) no está disponible en modo pasivo, a menos que se implemente prevención de pérdida de datos de extremo [(DLP).](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview)
+El modo pasivo está disponible si empieza a usar Microsoft Defender para punto de conexión y un antivirus de terceros junto con Antivirus de Microsoft Defender. El modo pasivo permite Antivirus de Microsoft Defender examinar archivos y actualizarse, pero no corregirá las amenazas. Además, la supervisión del comportamiento a través de [Real Time Protection](configure-real-time-protection-microsoft-defender-antivirus.md) no está disponible en modo pasivo, a menos que se implemente la [prevención de pérdida de datos de punto de conexión (DLP).](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview)
 
-Otra característica, conocida como [examen periódico limitado,](limited-periodic-scanning-microsoft-defender-antivirus.md)está disponible para los usuarios finales cuando Antivirus de Microsoft Defender se configura para desactivarse automáticamente. Esta característica permite Antivirus de Microsoft Defender archivos periódicamente junto con un antivirus de terceros, con un número limitado de detecciones.
+Otra característica, conocida como [examen periódico limitado](limited-periodic-scanning-microsoft-defender-antivirus.md), está disponible para los usuarios finales cuando Antivirus de Microsoft Defender está configurado para desactivarse automáticamente. Esta característica permite Antivirus de Microsoft Defender examinar archivos periódicamente junto con un antivirus de terceros, con un número limitado de detecciones.
 
 > [!IMPORTANT]
-> No se recomienda el examen periódico limitado en entornos empresariales. Las capacidades de detección, administración e informes disponibles al ejecutar Antivirus de Microsoft Defender en este modo se reducen en comparación con el modo activo.
+> No se recomienda el examen periódico limitado en entornos empresariales. Las funcionalidades de detección, administración e informes disponibles al ejecutar Antivirus de Microsoft Defender en este modo se reducen en comparación con el modo activo.
 
-### <a name="see-also"></a>Recursos adicionales
+> [!TIP]
+> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
+> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
+> - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
+> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
 
-- [Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md)
-- [Antivirus de Microsoft Defender en la aplicación Seguridad de Windows aplicación](microsoft-defender-security-center-antivirus.md)
+
+### <a name="see-also"></a>Vea también
+
+- [compatibilidad Antivirus de Microsoft Defender](microsoft-defender-antivirus-compatibility.md)
+- [Antivirus de Microsoft Defender en la aplicación Seguridad de Windows](microsoft-defender-security-center-antivirus.md)

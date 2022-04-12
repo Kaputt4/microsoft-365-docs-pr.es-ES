@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 04cedfa951387274261c3a7a064cf11a4b97db62
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 076b445a6ac129c1debd7cba813798f51aa6f86b
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731469"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789038"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Administrar el original para las actualizaciones de protección del Antivirus de Windows Defender
 
@@ -30,6 +30,10 @@ ms.locfileid: "64731469"
 
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Antivirus de Microsoft Defender
+
+**Plataformas**
+- Windows
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
@@ -90,7 +94,7 @@ Cada origen tiene escenarios típicos que dependen de cómo se configura la red,
 |Windows Server Update Service|Está usando Windows Server Update Service para administrar las actualizaciones de la red.|
 |Microsoft Update|Quiere que los puntos de conexión se conecten directamente a Microsoft Update. Esto puede ser útil para los puntos de conexión que se conectan de forma irregular a la red empresarial o si no usa Windows Server Update Service para administrar las actualizaciones.|
 |Compartir archivos|Tiene dispositivos no conectados a Internet (por ejemplo, máquinas virtuales). Puede usar el host de máquina virtual conectado a Internet para descargar las actualizaciones en un recurso compartido de red, desde el que las máquinas virtuales pueden obtener las actualizaciones. Consulte la [guía de implementación de VDI](deployment-vdi-microsoft-defender-antivirus.md) para ver cómo se pueden usar recursos compartidos de archivos en entornos de infraestructura de escritorio virtual (VDI).|
-|Microsoft Endpoint Manager|Está usando Microsoft Endpoint Manager para actualizar los puntos de conexión.|
+|Administrador de puntos de conexión de Microsoft|Está usando Microsoft Endpoint Manager para actualizar los puntos de conexión.|
 |Actualizaciones de inteligencia de seguridad y actualizaciones de plataforma para Antivirus de Microsoft Defender y otro antimalware de Microsoft (anteriormente conocido como MMPC)|[Asegúrese de que los dispositivos están actualizados para admitir SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Antivirus de Microsoft Defender las actualizaciones de la plataforma e inteligencia de seguridad se entregan a través de Windows Update, y a partir del lunes 21 de octubre de 2019, las actualizaciones de inteligencia de seguridad y las actualizaciones de la plataforma estarán firmadas exclusivamente por SHA-2. <br/>Descargue las últimas actualizaciones de protección debido a una infección reciente o para ayudar a aprovisionar una imagen fuerte y base para la [implementación de VDI](deployment-vdi-microsoft-defender-antivirus.md). Por lo general, esta opción solo se debe usar como origen de reserva final y no como origen principal. Solo se usará si las actualizaciones no se pueden descargar desde Windows Server Update Service o Microsoft Update durante [un número especificado de días](/microsoft-365/security/defender-endpoint/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
 
 Puede administrar el orden en que se usan los orígenes de actualización con directiva de grupo, Microsoft Endpoint Configuration Manager, cmdlets de PowerShell y WMI.
@@ -280,6 +284,16 @@ Configure un recurso compartido de archivos de red (unidad UNC/asignada) para de
 
     > [!NOTE]
     > No agregue la carpeta x64 (o x86) en la ruta de acceso. El proceso de mpcmdrun.exe lo agrega automáticamente.
+
+> [!TIP]
+> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
+> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
+> - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
+> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
 
 ## <a name="related-articles"></a>Artículos relacionados
 

@@ -1,7 +1,7 @@
 ---
-title: Usar investigaciones automatizadas para investigar y corregir amenazas
-description: Comprender el flujo de investigación automatizado en Microsoft Defender para endpoint.
-keywords: automated, investigation, detection, Microsoft Defender for Endpoint
+title: Uso de investigaciones automatizadas para investigar y corregir amenazas
+description: Comprenda el flujo de investigación automatizado en Microsoft Defender para punto de conexión.
+keywords: automatizado, investigación, detección, Microsoft Defender para punto de conexión
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 31b2a7b41c26bdba22e6f364e517471e31e9115c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: eadf9fe7f6112d1219f085662686b2a930b3ff28
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313025"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789808"
 ---
 # <a name="overview-of-automated-investigations"></a>Introducción a las investigaciones automatizadas
 
@@ -33,14 +33,18 @@ ms.locfileid: "63313025"
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Antivirus de Microsoft Defender
 
-¿Quiere ver cómo funciona? Vea el siguiente vídeo:
+**Plataformas**
+- Windows
+
+¿Quieres ver cómo funciona? Vea el siguiente vídeo:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bOeh]
 
-La tecnología de la investigación automatizada usa varios algoritmos de inspección y se basa en procesos que usan los analistas de seguridad. Las capacidades de AIR están diseñadas para examinar alertas y tomar medidas inmediatas para resolver infracciones. Las capacidades de AIR reducen significativamente el volumen de alertas, lo que permite que las operaciones de seguridad se centren en amenazas más sofisticadas y otras iniciativas de alto valor. Todas las acciones de corrección, ya sean pendientes o completadas, se realiza un seguimiento en el [Centro de acciones](auto-investigation-action-center.md). En el Centro de acciones, las acciones pendientes se aprueban (o rechazan) y las acciones completadas se pueden deshacer si es necesario.
+La tecnología de investigación automatizada usa varios algoritmos de inspección y se basa en los procesos que usan los analistas de seguridad. Las funcionalidades de AIR están diseñadas para examinar alertas y tomar medidas inmediatas para resolver las infracciones. Las funcionalidades de AIR reducen significativamente el volumen de alertas, lo que permite que las operaciones de seguridad se centren en amenazas más sofisticadas y otras iniciativas de alto valor. Todas las acciones de corrección, ya sean pendientes o completadas, se realizan en el [Centro de acciones](auto-investigation-action-center.md). En el Centro de acciones, las acciones pendientes se aprueban (o rechazan) y las acciones completadas se pueden deshacer si es necesario.
 
-En este artículo se proporciona información general sobre AIR e incluye vínculos a los siguientes pasos y recursos adicionales.
+En este artículo se proporciona información general sobre AIR e incluye vínculos a los pasos siguientes y recursos adicionales.
 
 > [!TIP]
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-automated-investigations-abovefoldlink)
@@ -55,39 +59,39 @@ Una investigación automatizada puede iniciarse cuando se desencadena una alerta
 
 |Situación|Qué ocurre|
 |---|---|
-|Se desencadena una alerta|En general, una investigación automatizada se inicia cuando se [desencadena una](review-alerts.md) alerta y [se crea](view-incidents-queue.md) un incidente. Por ejemplo, supongamos que un archivo malintencionado reside en un dispositivo. Cuando se detecta ese archivo, se desencadena una alerta y se crea un incidente. Comienza un proceso de investigación automatizado en el dispositivo. Como otras alertas se generan debido al mismo archivo en otros dispositivos, se agregan al incidente asociado y a la investigación automatizada.|
-|Una investigación se inicia manualmente|El equipo de operaciones de seguridad puede iniciar manualmente una investigación automatizada. Por ejemplo, supongamos que un operador de seguridad está revisando una lista de dispositivos y observa que un dispositivo tiene un nivel de riesgo alto. El operador de seguridad puede seleccionar el dispositivo de la lista para abrir su control remoto y, a continuación, seleccionar **Iniciar investigación automatizada**.|
+|Se desencadena una alerta|En general, se inicia una investigación automatizada cuando se desencadena una [alerta](review-alerts.md) y se crea un [incidente](view-incidents-queue.md) . Por ejemplo, supongamos que un archivo malintencionado reside en un dispositivo. Cuando se detecta ese archivo, se desencadena una alerta y se crea un incidente. Se inicia un proceso de investigación automatizado en el dispositivo. A medida que se generan otras alertas debido al mismo archivo en otros dispositivos, se agregan al incidente asociado y a la investigación automatizada.|
+|Una investigación se inicia manualmente|El equipo de operaciones de seguridad puede iniciar manualmente una investigación automatizada. Por ejemplo, supongamos que un operador de seguridad está revisando una lista de dispositivos y observa que un dispositivo tiene un alto nivel de riesgo. El operador de seguridad puede seleccionar el dispositivo de la lista para abrir su control flotante y, a continuación, seleccionar **Iniciar investigación automatizada**.|
 |
 
-## <a name="how-an-automated-investigation-expands-its-scope"></a>Cómo una investigación automatizada expande su ámbito
+## <a name="how-an-automated-investigation-expands-its-scope"></a>Cómo expande su ámbito una investigación automatizada
 
-Mientras se ejecuta una investigación, cualquier otra alerta generada desde el dispositivo se agrega a una investigación automatizada en curso hasta que se complete esa investigación. Además, si se ve la misma amenaza en otros dispositivos, estos dispositivos se agregan a la investigación.
+Mientras se ejecuta una investigación, cualquier otra alerta generada desde el dispositivo se agrega a una investigación automatizada en curso hasta que se completa esa investigación. Además, si se ve la misma amenaza en otros dispositivos, esos dispositivos se agregan a la investigación.
 
-Si se ve una entidad incriminada en otro dispositivo, el proceso de investigación automatizado amplía su ámbito para incluir ese dispositivo y se inicia un libro de juegos de seguridad general en ese dispositivo. Si se encuentran 10 o más dispositivos durante este proceso de expansión desde la misma entidad, esa acción de expansión requiere una aprobación y está visible en la pestaña **Acciones pendientes** .
+Si se ve una entidad incriminada en otro dispositivo, el proceso de investigación automatizada amplía su ámbito para incluir ese dispositivo y se inicia un cuaderno de estrategias de seguridad general en ese dispositivo. Si se encuentran 10 o más dispositivos durante este proceso de expansión desde la misma entidad, esa acción de expansión requiere una aprobación y está visible en la pestaña **Acciones pendientes** .
 
 ## <a name="how-threats-are-remediated"></a>Cómo se corrigen las amenazas
 
-A medida que se desencadenan las alertas y se ejecuta una investigación automatizada, se genera un veredicto para cada parte de prueba investigada. Los veredictos pueden ser:
+A medida que se desencadenan alertas y se ejecuta una investigación automatizada, se genera un veredicto para cada parte de la evidencia investigada. Los veredictos pueden ser:
 
-- *Malintencionado*;
-- *Sospechoso*; o
-- *No se han encontrado amenazas*.
+- *Malintencionada*;
+- *Sospechoso*; O
+- *No se encontraron amenazas*.
 
-A medida que se alcanzan los veredictos, las investigaciones automatizadas pueden dar lugar a una o más acciones de corrección. Entre los ejemplos de acciones de corrección se incluyen el envío de un archivo a la cuarentena, la detención de un servicio, la eliminación de una tarea programada y mucho más. Para obtener más información, vea [Acciones de corrección](manage-auto-investigation.md#remediation-actions).
+A medida que se alcanzan los veredictos, las investigaciones automatizadas pueden dar lugar a una o varias acciones de corrección. Entre los ejemplos de acciones de corrección se incluyen el envío de un archivo a la cuarentena, la detención de un servicio, la eliminación de una tarea programada y mucho más. Para obtener más información, consulte [Acciones de corrección](manage-auto-investigation.md#remediation-actions).
 
-Según el nivel [de](automation-levels.md) automatización establecido para su organización, así como otras opciones de configuración de seguridad, las acciones de corrección pueden producirse automáticamente o solo tras la aprobación del equipo de operaciones de seguridad. La configuración de seguridad adicional que puede afectar a la corrección automática incluye [la protección de aplicaciones potencialmente no deseadas](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) (PUA).
+En función [del nivel de automatización](automation-levels.md) establecido para su organización, así como de otras configuraciones de seguridad, las acciones de corrección pueden producirse automáticamente o solo tras la aprobación del equipo de operaciones de seguridad. La configuración de seguridad adicional que puede afectar a la corrección automática incluye [la protección contra aplicaciones potencialmente no deseadas](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) (PUA).
 
-Todas las acciones de corrección, ya sean pendientes o completadas, se realiza un seguimiento en el [Centro de acciones](auto-investigation-action-center.md). Si es necesario, el equipo de operaciones de seguridad puede deshacer una acción de corrección. Para obtener más información, vea [Revisar y aprobar acciones de corrección después de una investigación automatizada](/microsoft-365/security/defender-endpoint/manage-auto-investigation).
+Todas las acciones de corrección, ya sean pendientes o completadas, se realizan en el [Centro de acciones](auto-investigation-action-center.md). Si es necesario, el equipo de operaciones de seguridad puede deshacer una acción de corrección. Para más información, consulte [Revisar y aprobar acciones de corrección después de una investigación automatizada](/microsoft-365/security/defender-endpoint/manage-auto-investigation).
 
 > [!TIP]
-> Consulte la nueva página de investigación unificada en el Microsoft 365 Defender web. Para obtener más información, vea [(¡NUEVO!) Página de investigación unificada](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
+> Consulte la nueva página de investigación unificada en el portal de Microsoft 365 Defender. Para obtener más información, consulte [(¡NUEVO!) Página de investigación unificada](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
 
-## <a name="requirements-for-air"></a>Requisitos para AIR
+## <a name="requirements-for-air"></a>Requisitos de AIR
 
-Su organización debe tener Defender para endpoint (consulte [Requisitos mínimos para Microsoft Defender para endpoint](minimum-requirements.md)).
+Su organización debe tener Defender para punto de conexión (consulte [Requisitos mínimos para Microsoft Defender para punto de conexión](minimum-requirements.md)).
 
 > [!NOTE]
-> La investigación y la respuesta automatizadas Antivirus de Microsoft Defender para ejecutarse en modo pasivo o en modo activo. Si Antivirus de Microsoft Defender está deshabilitado o desinstalado, la investigación automatizada y la respuesta no funcionarán correctamente.
+> La investigación y la respuesta automatizadas requieren Antivirus de Microsoft Defender para ejecutarse en modo pasivo o en modo activo. Si Antivirus de Microsoft Defender está deshabilitado o desinstalado, la investigación y la respuesta automatizadas no funcionarán correctamente.
 
 Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 
@@ -103,10 +107,10 @@ Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 ## <a name="next-steps"></a>Siguientes pasos
 
 - [Más información sobre los niveles de automatización](automation-levels.md)
-- [Consulta la guía interactiva: Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
-- [Configurar las capacidades automatizadas de investigación y corrección en Microsoft Defender para endpoint](configure-automated-investigations-remediation.md)
+- [Consulte la guía interactiva: Investigación y corrección de amenazas con Microsoft Defender para punto de conexión](https://aka.ms/MDATP-IR-Interactive-Guide)
+- [Configurar funcionalidades automatizadas de investigación y corrección en Microsoft Defender para punto de conexión](configure-automated-investigations-remediation.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Protección PUA](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Investigación y respuesta automatizadas en Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/office-365-air)

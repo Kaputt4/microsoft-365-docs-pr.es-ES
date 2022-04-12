@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: Estamos publicando nuevas directivas de alerta para Microsoft Defender para Office 365. También estamos retirando dos directivas de alerta existentes que se han reemplazado por las nuevas.
-ms.openlocfilehash: 895a1fa51b9db5991bdb5235fd467bbac581d02e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: afdc547fc658b40c2eee7a92ef2043326e159b32
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61109988"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759487"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nuevas directivas de alerta en Microsoft Defender para Office 365
 
@@ -36,43 +36,40 @@ Vamos a introducir cuatro nuevas directivas de alerta predeterminadas relacionad
 
 En la tabla siguiente se enumeran las nuevas directivas de alerta y las directivas de alerta existentes que se quitarán. Consulte la sección[Cómo afectará esto a su organización](#how-this-will-affect-your-organization) para ver más información sobre la implementación.
 
-| Directiva de alerta nueva o existente | Nombre de la directiva de alerta | Id. de directiva de alerta|
-|:-----------------------------|:----------------|:--------------|
-| Nueva| **Mensajes de correo electrónico que contienen direcciones URL malintencionadas quitados después de la entrega**   | 8e6ba277-ef39-404e-aaf1-294f6d9a2b88 |
-| Nueva| **Mensajes de correo electrónico que contienen archivos malintencionados quitados después de la entrega**  | 4b1820ec-39dc-45f3-abf6-5ee80df51fd2 |
-| Nueva| **Mensajes de correo electrónico de una campaña se entregaron y se quitaron más tarde** | c8522cbb-9368-4e25-4ee9-08d8d899dfab |
-| Nuevo|**Mensajes de correo electrónico quitados después de la entrega**                | b8f6b088-5487-4c70-037c-08d8d71a43fe |
-| Existente (se quitará)| **Mensajes de correo electrónico que contienen direcciones URL de cebo quitados después de la entrega**| EA8169FA-0678-4751-8854-AEBEA7ADECEB |
-| Existente (se quitará)| **Mensajes de correo electrónico que contienen malware quitados después de la entrega**| 0179B3F7-3FDA-40C3-8F24-278563978DBB |
-||||
+|Directiva de alerta nueva o existente|Nombre de la directiva de alerta|Id. de directiva de alerta|
+|---|---|---|
+|Nueva|**Mensajes de correo electrónico que contienen direcciones URL malintencionadas quitados después de la entrega**|8e6ba277-ef39-404e-aaf1-294f6d9a2b88|
+|Nueva|**Mensajes de correo electrónico que contienen archivos malintencionados quitados después de la entrega**|4b1820ec-39dc-45f3-abf6-5ee80df51fd2|
+|Nueva|**Mensajes de correo electrónico de una campaña se entregaron y se quitaron más tarde**|c8522cbb-9368-4e25-4ee9-08d8d899dfab|
+|Nuevo|**Mensajes de correo electrónico quitados después de la entrega**|b8f6b088-5487-4c70-037c-08d8d71a43fe|
+|Existente (se quitará)|**Mensajes de correo electrónico que contienen direcciones URL de cebo quitados después de la entrega**|EA8169FA-0678-4751-8854-AEBEA7ADECEB|
+|Existente (se quitará)|**Mensajes de correo electrónico que contienen malware quitados después de la entrega**|0179B3F7-3FDA-40C3-8F24-278563978DBB|
 
 ## <a name="alert-severity-enhancements"></a>Mejoras de gravedad de las alertas
 
 En la tabla siguiente se identifican las directivas de alerta predeterminadas cuyas clasificaciones de gravedad se van a modificar. Estamos cambiando la clasificación de gravedad de estas directivas de alerta para que se alineen mejor con el posible riesgo e impacto en su organización, y para ayudar a sus equipos de seguridad a clasificar por orden de prioridad las alertas generadas por estas directivas.
 
-| Alerta| Id. de directiva de alerta| Gravedad anterior| Nueva gravedad  |
-|:----------|:---------------|:------------|:--------------|
-| **Actividad de reenvío de correo electrónico sospechoso**| BFD48F06-0865-41A6-85FF-ADB746423EBF | Mediano| Alto|
-| **Correo electrónico notificado por el usuario como malware o cebo** | B26A5770-0C38-434A-9380-3A3C2C27BBB3 | Informativo | Bajo|
-| **Aumento inusual en el correo electrónico notificado como cebo** | A00D8C62-9320-4EEA-A7E5-966B9AC09558 | Alto| Medio |
-| **Resultado de envío de administrador completado** | AE9B83DD-6039-4EA9-B675-6B0AC3BF4A41 | Bajo| Informativo |
-| **Creación de una regla de reenvío o redirección** | D59A8FD4-1272-41EE-9408-86F7BCF72479 | Bajo| Informativo |
-| **Búsqueda de eDiscovery iniciada o exportada** | 6FDC5710-3998-47F0-AFBB-57CEFD7378A | Medium | Informativo |
-|||||
+|Alerta|Id. de directiva de alerta|Gravedad anterior|Nueva gravedad|
+|---|---|---|---|
+|**Actividad de reenvío de correo electrónico sospechoso**|BFD48F06-0865-41A6-85FF-ADB746423EBF|Mediano|Alto|
+|**Correo electrónico notificado por el usuario como malware o cebo**|B26A5770-0C38-434A-9380-3A3C2C27BBB3|Informativo|Bajo|
+|**Aumento inusual en el correo electrónico notificado como cebo**|A00D8C62-9320-4EEA-A7E5-966B9AC09558|Alto|Medio|
+|**Resultado de envío de administrador completado**|AE9B83DD-6039-4EA9-B675-6B0AC3BF4A41|Bajo|Informativo|
+|**Creación de una regla de reenvío o redirección**|D59A8FD4-1272-41EE-9408-86F7BCF72479|Bajo|Informativo|
+|**Búsqueda de eDiscovery iniciada o exportada**|6FDC5710-3998-47F0-AFBB-57CEFD7378A|Medium|Informativo|
 
 ## <a name="when-will-these-changes-happen"></a>¿Cuándo se realizarán estos cambios?
 
 En la tabla siguiente se indica cuándo las nuevas directivas de alertas empezarán a desencadenar alertas posteriores a la entrega. La tabla también indica cuándo se quitarán las dos directivas de alerta existentes.
 
-| Directiva de alerta| Fecha |
-|:------------|:-----|
-| **Mensajes de correo electrónico que contienen direcciones URL malintencionadas quitados después de la entrega** (nueva) | Las alertas se empezarán a desencadenar el 11 de abril de 2021|
-| **Mensajes de correo electrónico que contienen archivos malintencionados quitados después de la entrega** (nueva) | Las alertas se empezarán a desencadenar el 11 de abril de 2021 |
-| **Mensajes de correo electrónico de una campaña se entregaron y se quitaron más tarde** (nueva) | Las alertas empezarán a desencadenarse el 28 de mayo de 2021|
-| **Correos electrónicos malintencionados que se entregaron y se quitaron posteriormente** (nueva) | Las alertas empezarán a desencadenarse el 28 de mayo de 2021|
-| **Mensajes de correo electrónico que contienen direcciones URL de cebo quitados después de la entrega** (existente, va a eliminarse)| La directiva de alertas se ha quitado en junio de 2021. Vea la sección [Lo que tiene que hacer para prepararse para estos cambios](#what-you-need-to-do-to-prepare-for-these-changes).|
-| **Mensajes de correo electrónico que contienen malware quitados después de la entrega** (existente, va a eliminarse) | La directiva de alertas se ha quitado en junio de 2021. Vea la sección [Lo que tiene que hacer para prepararse para estos cambios](#what-you-need-to-do-to-prepare-for-these-changes). |
-|||
+|Directiva de alerta|Fecha|
+|---|---|
+|**Mensajes de correo electrónico que contienen direcciones URL malintencionadas quitados después de la entrega** (nueva)|Las alertas se empezarán a desencadenar el 11 de abril de 2021|
+|**Mensajes de correo electrónico que contienen archivos malintencionados quitados después de la entrega** (nueva)|Las alertas se empezarán a desencadenar el 11 de abril de 2021|
+|**Mensajes de correo electrónico de una campaña se entregaron y se quitaron más tarde** (nueva)|Las alertas empezarán a desencadenarse el 28 de mayo de 2021|
+|**Correos electrónicos malintencionados que se entregaron y se quitaron posteriormente** (nueva)|Las alertas empezarán a desencadenarse el 28 de mayo de 2021|
+|**Mensajes de correo electrónico que contienen direcciones URL de cebo quitados después de la entrega** (existente, va a eliminarse)|La directiva de alertas se ha quitado en junio de 2021. Vea la sección [Lo que tiene que hacer para prepararse para estos cambios](#what-you-need-to-do-to-prepare-for-these-changes).|
+|**Mensajes de correo electrónico que contienen malware quitados después de la entrega** (existente, va a eliminarse)|La directiva de alertas se ha quitado en junio de 2021. Vea la sección [Lo que tiene que hacer para prepararse para estos cambios](#what-you-need-to-do-to-prepare-for-these-changes).|
 
 Los cambios de gravedad de las alertas se implantarán en todas las organizaciones antes del 14 de mayo de 2021.
 
@@ -100,7 +97,7 @@ Las nuevas alertas empezarán a activarse y desencadenarán investigaciones de A
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>Lo que tiene que hacer para prepararse para estos cambios
 
-La manera en que su organización utiliza estas alertas determina lo que necesita hacer para prepararse. Si ha puesto en funcionamiento las alertas y las está usando o consumiendo a través de una API, una notificación de correo electrónico de alerta o en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> o el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, deberá modificar los flujos de trabajo.
+La manera en que su organización utiliza estas alertas determina lo que necesita hacer para prepararse. Si ha puesto en funcionamiento las alertas y las utiliza o las consume a través de una API, una notificación de alerta por correo electrónico o en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365 </a> o en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">portal de Microsoft 365 Defender</a>, tendrá que modificar sus flujos de trabajo.
 
 **Si no ha puesto en funcionamiento estas alertas, puede seguir uno de estos procedimientos:**
 

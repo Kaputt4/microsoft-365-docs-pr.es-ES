@@ -1,5 +1,5 @@
 ---
-title: Configurar Antivirus de Microsoft Defender con Microsoft Endpoint Manager
+title: Configuración de Antivirus de Microsoft Defender mediante Microsoft Endpoint Manager
 description: Use Microsoft Endpoint Manager y Microsoft Intune para configurar Antivirus de Microsoft Defender y Endpoint Protection
 keywords: scep, intune, endpoint protection, configuration
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1eb126481cc9872c42906e0311d1c771da44c693
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: b25e57ee28ae0ef3f219a9adda1ff3f860d063db
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560225"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789302"
 ---
 # <a name="use-microsoft-endpoint-manager-to-configure-and-manage-microsoft-defender-antivirus"></a>Use Microsoft Endpoint Manager para configurar y administrar Antivirus de Microsoft Defender
 
@@ -33,32 +33,46 @@ ms.locfileid: "61560225"
 
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- Antivirus de Microsoft Defender
 
-Puede usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para configurar los Antivirus de Microsoft Defender digitalizaciones. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) y [Configuration Manager](/mem/configmgr/core/understand/introduction) ahora forman parte de Endpoint Manager.
+**Plataformas**
+- Windows
 
-## <a name="configure-microsoft-defender-antivirus-scans-in-endpoint-manager"></a>Configurar Antivirus de Microsoft Defender exámenes en Endpoint Manager
+Puede usar [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) para configurar exámenes de Antivirus de Microsoft Defender. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) y [Configuration Manager](/mem/configmgr/core/understand/introduction) ahora forman parte de Endpoint Manager.
 
-1. Vaya al Centro Microsoft Endpoint Manager de administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión.
+## <a name="configure-microsoft-defender-antivirus-scans-in-endpoint-manager"></a>Configuración de exámenes de Antivirus de Microsoft Defender en Endpoint Manager
 
-2. Vaya a **Endpoint Security**.
+1. Vaya al centro de administración de Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) e inicie sesión.
+
+2. Vaya a **Seguridad del punto de conexión**.
 
 3. En **Administrar**, elija **Antivirus**.
 
-4. Seleccione la directiva Antivirus de Microsoft Defender usuario.
+4. Seleccione la directiva de Antivirus de Microsoft Defender.
 
 5. En **Administrar**, elija **Propiedades**.
 
 6. Junto a **Opciones de configuración**, elija **Editar**.
 
    > [!IMPORTANT]
-   > Las opciones de antivirus AllowOnAccessProtection y AllowIntrusionPreventionSystem están oficialmente en desuso y, como tal, no se pueden configurar. 
+   > La configuración del antivirus AllowOnAccessProtection y AllowIntrusionPreventionSystem está oficialmente en desuso y, como tal, no se puede configurar. 
 
-7. Expanda la **sección** Examinar y revise o edite la configuración del examen.
+7. Expanda la sección **Examinar** y revise o edite la configuración de examen.
 
 8. Elija **Revisar y guardar**.
 
 > [!TIP]
-> ¿Necesita ayuda? Consulte [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).
+> ¿Necesita ayuda? Consulte [Administración de la seguridad del punto de conexión en Microsoft Intune](/mem/intune/protect/endpoint-security).
+
+> [!TIP]
+> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
+> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
+> - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
+> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
 
 ## <a name="related-articles"></a>Artículos relacionados
 

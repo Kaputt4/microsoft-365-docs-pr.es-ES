@@ -1,7 +1,7 @@
 ---
-title: Configurar Antivirus de Microsoft Defender con directiva de grupo
-description: Obtenga información sobre cómo usar una directiva de grupo para configurar y administrar Antivirus de Microsoft Defender en los puntos de conexión en Microsoft Defender para endpoint.
-keywords: directiva de grupo, GPO, configuración, configuración, configuración
+title: Configuración de Antivirus de Microsoft Defender con directiva de grupo
+description: Obtenga información sobre cómo usar una directiva de grupo para configurar y administrar Antivirus de Microsoft Defender en los puntos de conexión de Microsoft Defender para punto de conexión.
+keywords: directiva de grupo, GPO, configuración, configuración
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,14 +16,14 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 3659f0f532b14babd256f3310c4e7da8dde67e3c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: e8cda6f387814ed6ec613db8cb53ff030243a92b
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938653"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789436"
 ---
-# <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Usar la configuración de directiva de grupo para configurar y administrar Antivirus de Microsoft Defender
+# <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Use directiva de grupo configuración para configurar y administrar Antivirus de Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,131 +32,144 @@ ms.locfileid: "61938653"
 
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- Antivirus de Microsoft Defender
 
-Puede usar la [directiva de grupo](/windows/win32/srvnodes/group-policy) para configurar y administrar Antivirus de Microsoft Defender en los puntos de conexión.
+**Plataformas**
+- Windows
 
-## <a name="configure-microsoft-defender-antivirus-using-group-policy"></a>Configurar Antivirus de Microsoft Defender con la directiva de grupo
+Puede usar [directiva de grupo](/windows/win32/srvnodes/group-policy) para configurar y administrar Antivirus de Microsoft Defender en los puntos de conexión.
 
-En general, puede usar el siguiente procedimiento para configurar o cambiar la configuración Antivirus de Microsoft Defender de directiva de grupo:
+## <a name="configure-microsoft-defender-antivirus-using-group-policy"></a>Configuración de Antivirus de Microsoft Defender mediante directiva de grupo
 
-1. En el equipo de administración de directivas de grupo, abra la Consola de administración de directivas de [grupo,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))haga clic con el botón secundario en el objeto de directiva de grupo (GPO) que desea configurar y haga clic en **Editar**.
+En general, puede usar el procedimiento siguiente para configurar o cambiar Antivirus de Microsoft Defender configuración de directiva de grupo:
 
-2. Con el **Editor de administración de directivas de grupo,** vaya a Configuración del **equipo**.
+1. En la máquina de administración de directiva de grupo, abra la [consola de administración de directiva de grupo](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), haga clic con el botón derecho en el objeto de directiva de grupo (GPO) que desea configurar y haga clic en **Editar**.
 
-3. Haga clic **en Plantillas administrativas**.
+2. Con el **Editor de administración de directiva de grupo** vaya a **Configuración del equipo**.
+
+3. Haga clic en **Plantillas administrativas**.
 
 4. Expanda el árbol para **Windows componentes** \> **Antivirus de Microsoft Defender**.
 
-5. Expanda la sección (denominada  Ubicación en la tabla de este tema) que contiene la configuración que desea configurar, haga doble clic en la configuración para abrirlo y realice cambios en la configuración.
+5. Expanda la sección (denominada **Ubicación** en la tabla de este tema) que contiene la configuración que desea configurar, haga doble clic en la configuración para abrirla y realice cambios en la configuración.
 
 6. [Implemente el GPO actualizado como lo hace normalmente](/windows/win32/srvnodes/group-policy).
 
-## <a name="group-policy-settings-and-resources"></a>Configuración y recursos de directiva de grupo
+## <a name="group-policy-settings-and-resources"></a>directiva de grupo configuración y recursos
 
-En la tabla siguiente se enumeran las opciones de configuración de directiva de grupo que están disponibles en Windows 10.
+En la tabla siguiente se enumeran las opciones de configuración de directiva de grupo que se usan habitualmente y que están disponibles en Windows 10.
 
 > [!TIP]
-> Descargue la hoja de cálculo de referencia de directiva de grupo, que enumera la configuración de directiva para las configuraciones de equipo y usuario que se incluyen en los archivos de plantilla administrativas entregados para Windows. Puede configurar hacer referencia a la hoja de cálculo al editar objetos de directiva de grupo. <br/><br/> Estas son las versiones más recientes:
-> - [Hoja de cálculo Configuración referencia de directiva de grupo para Windows 10 de mayo de 2020 (2004)](https://www.microsoft.com/download/details.aspx?id=101451)
-> - [Hoja de cálculo Configuración referencia de directiva de grupo para Windows 11 de octubre de 2021 (21H2)](https://www.microsoft.com/download/details.aspx?id=103506)
+> Descargue la hoja de cálculo de referencia de directiva de grupo, que muestra la configuración de directiva para las configuraciones de equipo y usuario que se incluyen en los archivos de plantilla administrativa entregados con para Windows. Puede configurar la referencia a la hoja de cálculo al editar directiva de grupo Objetos. <br/><br/> Estas son las versiones más recientes:
+> - [Hoja de cálculo de referencia de directiva de grupo Configuración para la actualización de mayo de 2020 de Windows 10 (2004)](https://www.microsoft.com/download/details.aspx?id=101451)
+> - [hoja de cálculo de referencia de directiva de grupo Configuración para Windows 11 actualización de octubre de 2021 (21H2)](https://www.microsoft.com/download/details.aspx?id=103506)
 
 <br/><br/>
 
 |Ubicación|Configuración|Artículo|
 |---|---|---|
-|Interfaz de cliente|Habilitar el modo de interfaz de usuario sin cabeza|[Impedir que los usuarios vean o interactúen con la interfaz Antivirus de Microsoft Defender usuario](prevent-end-user-interaction-microsoft-defender-antivirus.md)|
-|Interfaz de cliente|Mostrar texto adicional a los clientes cuando necesitan realizar una acción|[Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)|
+|Interfaz de cliente|Habilitación del modo de interfaz de usuario sin cabeza|[Impedir que los usuarios vean o interactúen con la interfaz de usuario Antivirus de Microsoft Defender](prevent-end-user-interaction-microsoft-defender-antivirus.md)|
+|Interfaz de cliente|Mostrar texto adicional a los clientes cuando necesiten realizar una acción|[Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)|
 |Interfaz de cliente|Suprimir todas las notificaciones|[Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)|
 |Interfaz de cliente|Suprime las notificaciones de reinicio|[Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)|
-|Exclusiones|Exclusiones de extensión|[Configurar y validar exclusiones en Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)|
-|Exclusiones|Exclusiones de ruta de acceso|[Configurar y validar exclusiones en Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)|
-|Exclusiones|Exclusiones de procesos|[Configurar y validar exclusiones en Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)|
-|Exclusiones|Desactivar exclusiones automáticas|[Configurar y validar exclusiones en Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)|
-|MAPAS|Configurar la característica "Bloquear a primera vista"|[Habilitar bloque a primera vista](configure-block-at-first-sight-microsoft-defender-antivirus.md)|
+|Exclusiones|Exclusiones de extensiones|[Configuración y validación de exclusiones en exámenes de Antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)|
+|Exclusiones|Exclusiones de ruta de acceso|[Configuración y validación de exclusiones en exámenes de Antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)|
+|Exclusiones|Exclusiones de procesos|[Configuración y validación de exclusiones en exámenes de Antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)|
+|Exclusiones|Desactivar exclusiones automáticas|[Configuración y validación de exclusiones en exámenes de Antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)|
+|MAPAS|Configuración de la característica "Bloquear a primera vista"|[Habilitación del bloque a primera vista](configure-block-at-first-sight-microsoft-defender-antivirus.md)|
 |MAPAS|Unirse a Microsoft MAPS|[Habilitar la protección proporcionada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)|
-|MAPAS|Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales|[Habilitar la protección proporcionada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)|
-|MAPAS|Configurar la invalidación de configuración local para los informes en Microsoft MAPS|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|MpEngine|Configurar la comprobación de nube extendida|[Configurar el período de espera de bloqueo en la nube](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)|
-|MpEngine|Seleccionar nivel de protección en la nube|[Especificar el nivel de protección proporcionado en la nube](specify-cloud-protection-level-microsoft-defender-antivirus.md)|
-|Sistema de inspección de red|Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red| No se usa (en desuso) |
-|Sistema de inspección de red|Activar la retirada de definiciones| No se usa (en desuso)|
-|Sistema de inspección de red|Activar el reconocimiento de protocolos| No se usa (en desuso)|
-|Cuarentena|Configurar la invalidación de configuración local para la eliminación de elementos de la carpeta cuarentena|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Cuarentena|Configurar la eliminación de elementos de la carpeta cuarentena|[Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md)|
-|Protección en tiempo real|Configurar la invalidación de configuración local para la actividad del programa y el archivo de supervisión en el equipo|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Protección en tiempo real|Configurar la invalidación de configuración local para la supervisión de la actividad de archivos entrantes y salientes|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Protección en tiempo real|Configurar la invalidación de configuración local para examinar todos los archivos y datos adjuntos descargados|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Protección en tiempo real|Configurar la invalidación de configuración local para activar la supervisión del comportamiento|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Protección en tiempo real|Configurar la invalidación de configuración local para activar la protección en tiempo real|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Protección en tiempo real|Definir el tamaño máximo de los archivos y datos adjuntos descargados que se examinarán|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)|
-|Protección en tiempo real|Supervisar la actividad de archivos y programas en el equipo|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)|
-|Protección en tiempo real|Examinar todos los archivos y datos adjuntos descargados|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)|
-|Protección en tiempo real|Desactivar la protección en tiempo real|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)|
-|Protección en tiempo real|Activar la supervisión del comportamiento|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)|
-|Protección en tiempo real|Activar el examen de procesos siempre que esté habilitada la protección en tiempo real|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)|
-|Protección en tiempo real|Activar las notificaciones de escritura por volumen sin procesar|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)|
-|Protección en tiempo real|Configurar la supervisión para la actividad del programa y los archivos entrantes y salientes|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)|
-|Corrección|Configurar la invalidación de configuración local para la hora del día para ejecutar un examen completo programado para completar la corrección|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Corrección|Especificar el día de la semana para ejecutar un examen completo programado para completar la corrección|[Configurar exámenes Antivirus de Microsoft Defender programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
-|Corrección|Especificar la hora del día para ejecutar un examen completo programado para completar la corrección|[Configurar exámenes Antivirus de Microsoft Defender programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
-|Generación de informes|Desactivar las notificaciones mejoradas|[Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)
-|Raíz|Desactivar Antivirus de Microsoft Defender|No se usa. Si está usando o planeando usar un producto antivirus que no es de Microsoft, vea Antivirus de Microsoft Defender [compatibilidad con otros productos de seguridad](microsoft-defender-antivirus-compatibility.md).|
-|Raíz|Definir direcciones para omitir el servidor proxy|[Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
-|Raíz|Definir proxy autoconfig (.pac) para conectarse a la red|[Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
-|Raíz|Definir servidor proxy para conectarse a la red|[Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
-|Raíz|Configurar el comportamiento de combinación de administradores locales para listas|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Raíz|Permitir que el servicio antimalware se inicie con prioridad normal|[Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md)|
-|Raíz|Permitir que el servicio antimalware siga ejecutándose siempre|[Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md)|
-|Raíz|Desactivar la corrección rutinaria|[Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md)|
-|Raíz|Randomize scheduled task times|[Configurar exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
-|Examinar|Permitir a los usuarios pausar el examen|[Impedir que los usuarios vean o interactúen con la interfaz Antivirus de Microsoft Defender usuario](prevent-end-user-interaction-microsoft-defender-antivirus.md) (no se admite en Windows 10)|
-|Examinar|Compruebe las definiciones de virus y spyware más recientes antes de ejecutar un examen programado|[Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)|
-|Examinar|Definir el número de días después de los cuales se fuerza un examen de ponerse al día|[Administrar actualizaciones de puntos de conexión que están des actualizadas](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|Examinar|Activar el examen completo de ponerse al día|[Administrar actualizaciones de puntos de conexión que están des actualizadas](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|Examinar|Activar el examen rápido de ponerse al día|[Administrar actualizaciones de puntos de conexión que están des actualizadas](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|Examinar|Configurar la invalidación de configuración local para el porcentaje máximo de uso de LA CPU|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Examinar|Configurar la invalidación de configuración local para el día de examen de programación|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Examinar|Configurar la invalidación de configuración local para el tiempo de examen rápido programado|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Examinar|Configurar la invalidación de configuración local para el tiempo de examen programado|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Examinar|Configurar la invalidación de configuración local para el tipo de examen que se usará para un examen programado|[Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Examinar|Crear un punto de restauración del sistema|[Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md)|
-|Examinar|Activar la eliminación de elementos de la carpeta historial de examen|[Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md)|
-|Examinar|Activar heurística|[Habilitar y configurar la Antivirus de Microsoft Defender y la supervisión siempre activas](configure-real-time-protection-microsoft-defender-antivirus.md)|
-|Examinar|Activar el examen de correo electrónico|[Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
-|Examinar|Activar el examen de puntos de repetición|[Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
-|Examinar|Ejecutar examen completo en unidades de red asignadas|[Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
-|Examinar|Examinar archivos de archivo|[Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
-|Examinar|Examinar archivos de red|[Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
-|Examinar|Examinar archivos ejecutables empaquetados|[Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
-| Examinar | Examinar scripts | [Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md) <p>Vea también [Defender/AllowScriptScanning](/windows/client-management/mdm/policy-csp-defender).|
-|Examinar|Examinar unidades extraíbles|[Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
-|Examinar|Especificar la profundidad máxima para examinar archivos de archivo|[Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
-|Examinar|Especificar el porcentaje máximo de uso de CPU durante un examen|[Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
-|Examinar|Especificar el tamaño máximo de los archivos de archivo que se examinarán|[Configurar opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
-|Examinar|Especificar el día de la semana para ejecutar un examen programado|[Configurar exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
-|Examinar|Especificar el intervalo para ejecutar exámenes rápidos por día|[Configurar exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
-|Examinar|Especificar el tipo de examen que se usará para un examen programado|[Configurar exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
-|Examinar|Especificar la hora de un examen rápido diario|[Configurar exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
-|Examinar|Especificar la hora del día para ejecutar un examen programado|[Configurar exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
-|Examinar|Iniciar el examen programado solo cuando el equipo está en uso pero no está en uso|[Configurar exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
+|MAPAS|Envío de ejemplos de archivos cuando se requiera un análisis adicional|[Habilitar la protección proporcionada en la nube](enable-cloud-protection-microsoft-defender-antivirus.md)|
+|MAPAS|Configuración de la invalidación de configuración local para informar a Microsoft MAPS|[Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|MpEngine|Configuración de la comprobación de nube extendida|[Configurar el período de espera de bloqueo en la nube](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)|
+|MpEngine|Selección del nivel de protección en la nube|[Especificar el nivel de protección proporcionado en la nube](specify-cloud-protection-level-microsoft-defender-antivirus.md)|
+|Sistema de inspección de red|Especificar conjuntos de definiciones adicionales para la inspección del tráfico de red| No usado (en desuso) |
+|Sistema de inspección de red|Activar la retirada de definiciones| No usado (en desuso)|
+|Sistema de inspección de red|Activar el reconocimiento de protocolos| No usado (en desuso)|
+|Cuarentena|Configuración de la invalidación de configuración local para la eliminación de elementos de la carpeta Cuarentena|[Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Cuarentena|Configuración de la eliminación de elementos de la carpeta Cuarentena|[Configuración de la corrección para exámenes de Antivirus de Microsoft Defender](configure-remediation-microsoft-defender-antivirus.md)|
+|Protección en tiempo real|Configuración de la invalidación de configuración local para supervisar la actividad de archivos y programas en el equipo|[Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Protección en tiempo real|Configuración de la invalidación de configuración local para la supervisión de la actividad de archivo entrante y saliente|[Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Protección en tiempo real|Configuración de la invalidación de configuración local para examinar todos los archivos y datos adjuntos descargados|[Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Protección en tiempo real|Configuración de la invalidación de configuración local para activar la supervisión del comportamiento|[Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Protección en tiempo real|Configuración de la invalidación de configuración local para activar la protección en tiempo real|[Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Protección en tiempo real|Definir el tamaño máximo de los archivos descargados y los datos adjuntos que se van a examinar|[Habilitar y configurar Antivirus de Microsoft Defender protección y supervisión siempre activadas](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Protección en tiempo real|Supervisión de la actividad de archivos y programas en el equipo|[Habilitar y configurar Antivirus de Microsoft Defender protección y supervisión siempre activadas](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Protección en tiempo real|Examinar todos los archivos y datos adjuntos descargados|[Habilitar y configurar Antivirus de Microsoft Defender protección y supervisión siempre activadas](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Protección en tiempo real|Desactivar la protección en tiempo real|[Habilitar y configurar Antivirus de Microsoft Defender protección y supervisión siempre activadas](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Protección en tiempo real|Activar la supervisión del comportamiento|[Habilitar y configurar Antivirus de Microsoft Defender protección y supervisión siempre activadas](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Protección en tiempo real|Activar el examen de procesos siempre que se habilite la protección en tiempo real|[Habilitar y configurar Antivirus de Microsoft Defender protección y supervisión siempre activadas](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Protección en tiempo real|Activar notificaciones de escritura de volumen sin procesar|[Habilitar y configurar Antivirus de Microsoft Defender protección y supervisión siempre activadas](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Protección en tiempo real|Configuración de la supervisión de la actividad de archivos y programas entrantes y salientes|[Habilitar y configurar Antivirus de Microsoft Defender protección y supervisión siempre activadas](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Remediación|Configuración de la invalidación de configuración local para la hora del día para ejecutar un examen completo programado para completar la corrección|[Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Remediación|Especificar el día de la semana para ejecutar un examen completo programado para completar la corrección|[Configuración de exámenes de Antivirus de Microsoft Defender programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
+|Remediación|Especificar la hora del día para ejecutar un examen completo programado para completar la corrección|[Configuración de exámenes de Antivirus de Microsoft Defender programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
+|Generación de informes|Desactivar notificaciones mejoradas|[Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)
+|Raíz|Desactivar Antivirus de Microsoft Defender|No se usa. Si usa o planea usar un producto antivirus que no sea de Microsoft, consulte [compatibilidad Antivirus de Microsoft Defender con otros productos de seguridad](microsoft-defender-antivirus-compatibility.md).|
+|Raíz|Definición de direcciones para omitir el servidor proxy|[Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
+|Raíz|Definición de la configuración automática de proxy (.pac) para conectarse a la red|[Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
+|Raíz|Definición del servidor proxy para conectarse a la red|[Configurar las opciones de proxy de dispositivo y de conectividad a Internet](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus)|
+|Raíz|Configuración del comportamiento de combinación de administrador local para listas|[Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Raíz|Permitir que el servicio antimalware se inicie con prioridad normal|[Configuración de la corrección para exámenes de Antivirus de Microsoft Defender](configure-remediation-microsoft-defender-antivirus.md)|
+|Raíz|Permitir que el servicio antimalware siga ejecutándose siempre|[Configuración de la corrección para exámenes de Antivirus de Microsoft Defender](configure-remediation-microsoft-defender-antivirus.md)|
+|Raíz|Desactivar la corrección rutinaria|[Configuración de la corrección para exámenes de Antivirus de Microsoft Defender](configure-remediation-microsoft-defender-antivirus.md)|
+|Raíz|Aleatorizar los tiempos de las tareas programadas|[Configuración de exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
+|Examinar|Permitir a los usuarios pausar el examen|[Impedir que los usuarios vean o interactúen con la interfaz de usuario de Antivirus de Microsoft Defender](prevent-end-user-interaction-microsoft-defender-antivirus.md) (no se admite en Windows 10)|
+|Examinar|Compruebe las definiciones de virus y spyware más recientes antes de ejecutar un examen programado.|[Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)|
+|Examinar|Definir el número de días después de los cuales se fuerza un examen de puesta al día|[Administrar las actualizaciones de los puntos de conexión que están obsoletos](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Examinar|Activar el examen completo para ponerse al día|[Administrar las actualizaciones de los puntos de conexión que están obsoletos](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Examinar|Activar el examen rápido para ponerse al día|[Administrar las actualizaciones de los puntos de conexión que están obsoletos](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Examinar|Configuración de la invalidación de configuración local para el porcentaje máximo de uso de CPU|[Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Examinar|Configuración de la invalidación de configuración local para el día del examen de programación|[Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Examinar|Configuración de la invalidación de configuración local para el tiempo de examen rápido programado|[Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Examinar|Configuración de la invalidación de configuración local para el tiempo de examen programado|[Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Examinar|Configuración de la invalidación de configuración local para el tipo de examen que se usará para un examen programado|[Impedir o permitir que los usuarios modifiquen localmente la configuración de la directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Examinar|Creación de un punto de restauración del sistema|[Configuración de la corrección para exámenes de Antivirus de Microsoft Defender](configure-remediation-microsoft-defender-antivirus.md)|
+|Examinar|Activar la eliminación de elementos de la carpeta del historial de exámenes|[Configuración de la corrección para exámenes de Antivirus de Microsoft Defender](configure-remediation-microsoft-defender-antivirus.md)|
+|Examinar|Activar la heurística|[Habilitar y configurar Antivirus de Microsoft Defender protección y supervisión siempre activadas](configure-real-time-protection-microsoft-defender-antivirus.md)|
+|Examinar|Activar el examen de correo electrónico|[Configuración de opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
+|Examinar|Activar el examen del punto de reanálisis|[Configuración de opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
+|Examinar|Ejecución del examen completo en unidades de red asignadas|[Configuración de opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
+|Examinar|Examen de archivos de archivo|[Configuración de opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
+|Examinar|Examen de archivos de red|[Configuración de opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
+|Examinar|Examen de archivos ejecutables empaquetados|[Configuración de opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
+| Examinar | Examen de scripts | [Configuración de opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md) <p>Consulte también [Defender/AllowScriptScanning](/windows/client-management/mdm/policy-csp-defender).|
+|Examinar|Examen de unidades extraíbles|[Configuración de opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
+|Examinar|Especificar la profundidad máxima para examinar archivos de archivo|[Configuración de opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
+|Examinar|Especificar el porcentaje máximo de uso de CPU durante un examen|[Configuración de opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
+|Examinar|Especificar el tamaño máximo de los archivos de archivo que se van a examinar|[Configuración de opciones de examen en Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)|
+|Examinar|Especificar el día de la semana para ejecutar un examen programado|[Configuración de exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
+|Examinar|Especificar el intervalo para ejecutar exámenes rápidos al día|[Configuración de exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
+|Examinar|Especificar el tipo de examen que se va a usar para un examen programado|[Configuración de exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
+|Examinar|Especificar la hora de un examen rápido diario|[Configuración de exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
+|Examinar|Especificar la hora del día para ejecutar un examen programado|[Configuración de exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
+|Examinar|Iniciar el examen programado solo cuando el equipo está encendido, pero no en uso|[Configuración de exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |Actualizaciones de inteligencia de seguridad|Permitir actualizaciones de inteligencia de seguridad de Microsoft Update|[Administrar las actualizaciones de dispositivos móviles y máquinas virtuales](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)|
 |Actualizaciones de inteligencia de seguridad|Permitir actualizaciones de inteligencia de seguridad al ejecutarse con batería|[Administrar las actualizaciones de dispositivos móviles y máquinas virtuales](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)|
-|Actualizaciones de inteligencia de seguridad|Permitir que las notificaciones deshabilite informes basados en definiciones en Microsoft MAPS|[Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)|
+|Actualizaciones de inteligencia de seguridad|Permitir que las notificaciones deshabiliten informes basados en definiciones en Microsoft MAPS|[Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)|
 |Actualizaciones de inteligencia de seguridad|Permitir actualizaciones de inteligencia de seguridad en tiempo real basadas en informes de Microsoft MAPS|[Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)|
-|Actualizaciones de inteligencia de seguridad|Buscar las definiciones más recientes de virus y spyware al inicio|[Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)|
-|Actualizaciones de inteligencia de seguridad|Definir recursos compartidos de archivos para descargar actualizaciones de inteligencia de seguridad|[Administrar Antivirus de Microsoft Defender de protección e inteligencia de seguridad](manage-protection-updates-microsoft-defender-antivirus.md)|
-|Actualizaciones de inteligencia de seguridad|Definir el número de días después de los cuales se requiere una actualización de inteligencia de seguridad de ponerse al día|[Administrar actualizaciones de puntos de conexión que están des actualizadas](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|Actualizaciones de inteligencia de seguridad|Definir el número de días antes de que las definiciones de spyware se consideren des actualizadas|[Administrar actualizaciones de puntos de conexión que están des actualizadas](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|Actualizaciones de inteligencia de seguridad|Definir el número de días antes de que las definiciones de virus se consideren des actualizadas|[Administrar actualizaciones de puntos de conexión que están des actualizadas](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|Actualizaciones de inteligencia de seguridad|Definir el orden de los orígenes para descargar actualizaciones de inteligencia de seguridad|[Administrar Antivirus de Microsoft Defender de protección e inteligencia de seguridad](manage-protection-updates-microsoft-defender-antivirus.md)|
-|Actualizaciones de inteligencia de seguridad|Iniciar actualización de inteligencia de seguridad al inicio|[Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)|
+|Actualizaciones de inteligencia de seguridad|Comprobación de las definiciones de virus y spyware más recientes en el inicio|[Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)|
+|Actualizaciones de inteligencia de seguridad|Definición de recursos compartidos de archivos para descargar actualizaciones de inteligencia de seguridad|[Administración de actualizaciones de inteligencia de seguridad y protección Antivirus de Microsoft Defender](manage-protection-updates-microsoft-defender-antivirus.md)|
+|Actualizaciones de inteligencia de seguridad|Definir el número de días después de los cuales se requiere una actualización de inteligencia de seguridad|[Administrar las actualizaciones de los puntos de conexión que están obsoletos](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Actualizaciones de inteligencia de seguridad|Definir el número de días antes de que las definiciones de spyware se consideren obsoletas|[Administrar las actualizaciones de los puntos de conexión que están obsoletos](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Actualizaciones de inteligencia de seguridad|Definir el número de días antes de que las definiciones de virus se consideren obsoletas|[Administrar las actualizaciones de los puntos de conexión que están obsoletos](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|Actualizaciones de inteligencia de seguridad|Definir el orden de los orígenes para descargar las actualizaciones de inteligencia de seguridad|[Administración de actualizaciones de inteligencia de seguridad y protección Antivirus de Microsoft Defender](manage-protection-updates-microsoft-defender-antivirus.md)|
+|Actualizaciones de inteligencia de seguridad|Inicio de la actualización de inteligencia de seguridad|[Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)|
 |Actualizaciones de inteligencia de seguridad|Especificar el día de la semana para comprobar si hay actualizaciones de inteligencia de seguridad|[Administrar cuándo se deben descargar y aplicar las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
 |Actualizaciones de inteligencia de seguridad|Especificar el intervalo para comprobar si hay actualizaciones de inteligencia de seguridad|[Administrar cuándo se deben descargar y aplicar las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
-|Actualizaciones de inteligencia de seguridad|Especificar la hora para comprobar si hay actualizaciones de inteligencia de seguridad|[Administrar cuándo se deben descargar y aplicar las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
-|Actualizaciones de inteligencia de seguridad|Activar el examen después de la actualización de inteligencia de seguridad|[Configurar exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
-|Amenazas|Especificar niveles de alerta de amenazas en los que no se debe realizar ninguna acción predeterminada cuando se detecte|[Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md)|
-|Amenazas|Especificar amenazas en las que no se debe realizar una acción predeterminada cuando se detecte|[Configurar la corrección para Antivirus de Microsoft Defender exámenes](configure-remediation-microsoft-defender-antivirus.md)|
+|Actualizaciones de inteligencia de seguridad|Especificar el tiempo para comprobar si hay actualizaciones de inteligencia de seguridad|[Administrar cuándo se deben descargar y aplicar las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
+|Actualizaciones de inteligencia de seguridad|Activar el examen después de la actualización de Inteligencia de seguridad|[Configuración de exámenes programados para Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
+|Amenazas|Especificar los niveles de alerta de amenaza en los que no se debe realizar una acción predeterminada cuando se detecte|[Configuración de la corrección para exámenes de Antivirus de Microsoft Defender](configure-remediation-microsoft-defender-antivirus.md)|
+|Amenazas|Especificar amenazas en las que no se debe realizar una acción predeterminada cuando se detecte|[Configuración de la corrección para exámenes de Antivirus de Microsoft Defender](configure-remediation-microsoft-defender-antivirus.md)|
 
+> [!TIP]
+> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
+> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
+> - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
+> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Vea también
 

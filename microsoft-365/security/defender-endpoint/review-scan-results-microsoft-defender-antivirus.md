@@ -1,6 +1,6 @@
 ---
-title: Revisar los resultados de Antivirus de Microsoft Defender exámenes
-description: Revisar los resultados de los exámenes mediante Microsoft Endpoint Configuration Manager, Microsoft Intune o la aplicación Seguridad de Windows examen
+title: Revisión de los resultados de los exámenes de Antivirus de Microsoft Defender
+description: Revise los resultados de los exámenes mediante Microsoft Endpoint Configuration Manager, Microsoft Intune o la aplicación de Seguridad de Windows
 keywords: resultados del examen, corrección, examen completo, examen rápido
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,14 +16,14 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8727baa9bb1935a1186907ca5f3d9d4f82dad6d4
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 9ffe10560bb36c8fc1311061510f35396934e3b8
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473659"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790644"
 ---
-# <a name="review-microsoft-defender-antivirus-scan-results"></a>Revisar Antivirus de Microsoft Defender de examen
+# <a name="review-microsoft-defender-antivirus-scan-results"></a>Revisar Antivirus de Microsoft Defender resultados del examen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,17 +31,21 @@ ms.locfileid: "64473659"
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Antivirus de Microsoft Defender
 
-Después de Antivirus de Microsoft Defender examen completo, tanto si se trata de un examen [](run-scan-microsoft-defender-antivirus.md) a petición como [programado, los](scheduled-catch-up-scans-microsoft-defender-antivirus.md) resultados se registran y puede ver los resultados. 
+**Plataformas**
+- Windows
+
+Una vez completado un examen Antivirus de Microsoft Defender, ya sea a [petición](run-scan-microsoft-defender-antivirus.md) o [programado](scheduled-catch-up-scans-microsoft-defender-antivirus.md), los resultados se registran y puede ver los resultados. 
 
 
-## <a name="use-configuration-manager-to-review-scan-results"></a>Usar Configuration Manager para revisar los resultados del examen
+## <a name="use-configuration-manager-to-review-scan-results"></a>Uso de Configuration Manager para revisar los resultados del examen
 
-Consulte [How to monitor Endpoint Protection status](/configmgr/protect/deploy-use/monitor-endpoint-protection).
+Consulte [Supervisión del estado de Endpoint Protection](/configmgr/protect/deploy-use/monitor-endpoint-protection).
 
-## <a name="use-powershell-cmdlets-to-review-scan-results"></a>Usar cmdlets de PowerShell para revisar los resultados del examen
+## <a name="use-powershell-cmdlets-to-review-scan-results"></a>Uso de cmdlets de PowerShell para revisar los resultados del examen
 
-El siguiente cmdlet devolverá cada detección en el extremo. Si hay varias detecciones de la misma amenaza, cada detección se enumerará por separado, en función del tiempo de cada detección:
+El siguiente cmdlet devolverá cada detección en el punto de conexión. Si hay varias detecciones de la misma amenaza, cada detección se mostrará por separado, en función de la hora de cada detección:
 
 ```PowerShell
 Get-MpThreatDetection
@@ -49,7 +53,7 @@ Get-MpThreatDetection
 
 :::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="Los cmdlets y salidas de PowerShell" lightbox="../../media/wdav-get-mpthreatdetection.png":::
 
-Puede especificar limitar `-ThreatID` el resultado para mostrar solo las detecciones de una amenaza específica.
+Puede especificar `-ThreatID` para limitar la salida para mostrar solo las detecciones de una amenaza específica.
 
 Si desea enumerar las detecciones de amenazas, pero combinar las detecciones de la misma amenaza en un solo elemento, puede usar el siguiente cmdlet:
 
@@ -59,14 +63,24 @@ Get-MpThreat
 
 :::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="El código de PowerShell" lightbox="../../media/wdav-get-mpthreat.png":::
 
-Consulte [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender Antivirus cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Antivirus de Microsoft Defender.
+Consulte [Uso de cmdlets de PowerShell para configurar y ejecutar](use-powershell-cmdlets-microsoft-defender-antivirus.md) [cmdlets](/powershell/module/defender/) Antivirus de Microsoft Defender y Antivirus de Defender para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender.
 
-## <a name="use-windows-management-instruction-wmi-to-review-scan-results"></a>Usar Windows de administración de documentos (WMI) para revisar los resultados del examen
+## <a name="use-windows-management-instruction-wmi-to-review-scan-results"></a>Uso de Windows Management Instruction (WMI) para revisar los resultados del examen
 
-Use el [**método Get** de las **MSFT_MpThreat** y **MSFT_MpThreatDetection**](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) clases.
+Use el [método **Get** de las clases **MSFT_MpThreat** y **MSFT_MpThreatDetection**](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+
+> [!TIP]
+> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
+> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
+> - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
+> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
 
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Personalizar, iniciar y revisar los resultados de Antivirus de Microsoft Defender análisis y corrección](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Personalización, inicio y revisión de los resultados de los exámenes y correcciones de Antivirus de Microsoft Defender](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

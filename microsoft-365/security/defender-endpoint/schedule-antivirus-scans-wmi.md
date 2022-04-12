@@ -1,6 +1,6 @@
 ---
-title: Programar exámenes antivirus con Windows Management Instrumentation
-description: Programar exámenes antivirus con WMI
+title: Programación de exámenes antivirus mediante instrumentación de administración de Windows
+description: Programación de exámenes antivirus mediante WMI
 keywords: examen rápido, examen completo, WMI, programación, antivirus
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,24 +16,28 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: be22e59f6d2be30ead354099f2cc168868959752
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 2b25876a43dea3b1598d4bdfa89cf4724c0fca14
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61160287"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788928"
 ---
 # <a name="schedule-antivirus-scans-using-windows-management-instrumentation-wmi"></a>Programar los exámenes de antivirus con Instrumental de administración de Windows (WMI)
 
 **Se aplica a:**
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- Antivirus de Microsoft Defender
 
-En este artículo se describe cómo configurar exámenes programados con WMI. Para obtener más información sobre la programación de exámenes y sobre los tipos de examen, vea [Configure scheduled quick or full Antivirus de Microsoft Defender scans](schedule-antivirus-scans.md). 
+**Plataformas**
+- Windows
 
-## <a name="use-windows-management-instruction-wmi-to-schedule-scans"></a>Usar Windows de administración de documentos (WMI) para programar exámenes
+En este artículo se describe cómo configurar exámenes programados mediante WMI. Para obtener más información sobre la programación de exámenes y sobre los tipos de examen, consulte [Configuración de exámenes programados rápidos o completos Antivirus de Microsoft Defender](schedule-antivirus-scans.md). 
 
-Utilice el [ **método Set** de la **clase MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para las siguientes propiedades:
+## <a name="use-windows-management-instruction-wmi-to-schedule-scans"></a>Uso de instrucciones de administración de Windows (WMI) para programar exámenes
+
+Use el [método **Set** de la clase **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para las siguientes propiedades:
 
 ```WMI
 ScanParameters
@@ -42,40 +46,49 @@ ScanScheduleTime
 RandomizeScheduleTaskTimes
 ```
 
-Para obtener más información y parámetros permitidos, [vea Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+Para obtener más información y los parámetros permitidos, consulte [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="wmi-for-scheduling-scans-when-an-endpoint-is-not-in-use"></a>WMI para programar exámenes cuando un extremo no está en uso
+## <a name="wmi-for-scheduling-scans-when-an-endpoint-is-not-in-use"></a>WMI para la programación de exámenes cuando un punto de conexión no está en uso
 
-Utilice el [método Set de la clase MSFT_MpPreference para](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) las siguientes propiedades:
+Use el [método Set de la clase MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para las siguientes propiedades:
 
 ```WMI
 ScanOnlyIfIdleEnabled
 ```
 
-Para obtener más información acerca de las API y los [parámetros permitidos, vea Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+Para obtener más información sobre las API y los parámetros permitidos, consulte [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 > [!NOTE]
-> Al programar exámenes para las horas en las que los puntos de conexión no están en uso, los exámenes no respetan la configuración de limitación de CPU y aprovechan al máximo los recursos disponibles para completar el examen lo más rápido posible.
+> Al programar exámenes en busca de tiempos en los que los puntos de conexión no están en uso, los exámenes no respetan la configuración de limitación de CPU y aprovecharán al máximo los recursos disponibles para completar el examen lo más rápido posible.
 
 
 ## <a name="wmi-for-scheduling-scans-to-complete-remediation"></a>WMI para programar exámenes para completar la corrección
 
-Utilice el [ **método Set** de la **clase MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para las siguientes propiedades:
+Use el [método **Set** de la clase **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para las siguientes propiedades:
 
 ```WMI
 RemediationScheduleDay
 RemediationScheduleTime
 ```
 
-Para obtener más información y parámetros [permitidos, vea Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+Para obtener más información y parámetros permitidos, consulte [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 ## <a name="wmi-for-scheduling-daily-scans"></a>WMI para programar exámenes diarios
 
-Utilice el [ **método Set** de la **clase MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para las siguientes propiedades:
+Use el [método **Set** de la clase **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para las siguientes propiedades:
 
 ```WMI
 ScanScheduleQuickScanTime
 ```
 
-Para obtener más información y parámetros [permitidos, vea Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+Para obtener más información y parámetros permitidos, consulte [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
+> [!TIP]
+> Si busca información relacionada con antivirus para otras plataformas, consulte:
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
+> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
+> - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
+> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)

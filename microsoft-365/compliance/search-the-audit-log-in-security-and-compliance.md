@@ -21,12 +21,12 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 71b7bb5d5588f19ff4134c133377b3e9ca83c780
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: edf5bfd91313c621707d1bdc35074bfe7fe9585c
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319355"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759929"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -201,7 +201,7 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Microsoft 3
 
 4. Haga clic en **Búsqueda** para ejecutar la búsqueda mediante sus criterios de búsqueda. 
 
-   Los resultados de la búsqueda se cargan y, después de unos minutos, se muestran en una nueva página. Cuando finaliza la búsqueda, se muestra el número de resultados que se ha encontrado. Se mostrará un máximo de 50 000 eventos en incrementos de 150 eventos.
+   Los resultados de la búsqueda se cargan y, después de unos minutos, se muestran en una nueva página. Cuando finaliza la búsqueda, se muestra el número de resultados que se ha encontrado. Se mostrará un máximo de 50 000 eventos en incrementos de 150 eventos. Si más de 50 000 eventos cumplen los criterios de búsqueda, solo se mostrarán los 50 000 eventos sin ordenar devueltos.
 
    ![El número de resultados se muestra al acabar la búsqueda.](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
@@ -430,7 +430,7 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
-|Archivo al que se tiene acceso|FileAccessed|Cuenta de sistema o usuario que tiene acceso al archivo. Una vez que un usuario accede a un archivo, el evento FileAccessed no se vuelve a registrar en el mismo usuario durante los próximos cinco minutos.|
+|Archivo al que se tiene acceso|FileAccessed|El usuario o una cuenta de sistema obtiene acceso a un archivo. Una vez que un usuario accede a un archivo, el evento FileAccessed no se vuelve a registrar para el mismo usuario durante los próximos cinco minutos.|
 |(ninguno)|FileAccessedExtended|Esto está relacionado con la actividad "Archivo accedido" (FileAccessed). Un evento de FileAccessedExtended se registra cuando la misma persona obtiene continuamente un archivo durante un período prolongado (hasta 3 horas). <br/><br/> El objetivo del registro de eventos FileAccessedExtended es reducir el número de eventos FileAccessed que se registran cuando se tiene acceso continuamente a un archivo. Esto ayuda a reducir el ruido de varios registros FileAccessed para lo que básicamente es la misma actividad de usuario y le permite centrarse en el evento FileAccessed inicial (el más importante).|
 |Se ha cambiado la etiqueta de retención de un archivo|ComplianceSettingChanged|Se aplicó o se quitó una etiqueta de retención de un documento. Este evento se activa cuando una etiqueta de retención es aplicada manual o automáticamente a un mensaje.|
 |Estado de registro cambiado a bloqueado|LockRecord|El estado de registro de una etiqueta de retención que clasifica un documento como un registro ha siso bloqueado. Esto significa que el documento no se puede modificar ni eliminar. Solo los usuarios que tengan al menos asignado el permiso de colaborador para un sitio podrán cambiar el estado de registro de un documento.|
@@ -761,7 +761,7 @@ En la siguiente tabla se enumeran las actividades de administración de roles de
 |:-----|:-----|:-----|
 |Agregar miembro a un rol|Agregar miembro a un rol.|Se ha agregado un usuario a un rol de administrador en Microsoft 365.|
 |Se ha removido un usuario de un rol de directorio |Quitar miembro de un rol.|Se ha eliminado un usuario desde un rol de administrador en Microsoft 365.|
-|Establecer la información de contacto de la empresa|Establecer la información de contacto de la empresa.|Se han actualizado las preferencias de contacto a nivel empresarial de la organización. Esto incluye las direcciones de correo electrónico del correo electrónico relacionado con las suscripciones enviado mediante Microsoft 365, así como las notificaciones técnicas sobre los servicios.|
+|Establecer la información de contacto de la empresa|Establecer la información de contacto de la empresa.|Se han actualizado las preferencias de contacto en el nivel de la empresa para su organización. Esto incluye las direcciones de correo electrónico para el correo electrónico relacionado con las suscripciones enviado por Microsoft 365 y notificaciones técnicas sobre los servicios.|
 ||||
 
 ### <a name="directory-administration-activities"></a>Actividades de administración de directorios
