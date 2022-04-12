@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 61bd82e3b4012e7e191971faf768cf8d7cbba4f2
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: e14c438858d5e57dca6ecab0573014171a0c6fb7
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758649"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783323"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -102,7 +102,7 @@ A diferencia de las directivas de retención, la configuración de retención de
 
 - Soporte técnico de [revisión de eliminación](./disposition.md) para revisar el contenido antes de que se elimine de forma permanente.
 
-- Marque el contenido como un [registro](records-management.md#records) como parte de la configuración de la etiqueta y siempre tenga una [prueba de eliminación](disposition.md#disposition-of-records) cuando el contenido se elimine al final de su período de retención.
+- Marcado del contenido como un [registro](records-management.md#records) como parte de la configuración de la etiqueta y tener siempre una [prueba de eliminación](disposition.md#disposition-of-records) cuando el contenido se elimine al final de su período de retención.
 
 ### <a name="retention-policies"></a>Directivas de retención
 
@@ -502,7 +502,7 @@ Información adicional para ubicaciones específicas:
 
   - Si la directiva de retención se aplica implícitamente a un buzón de correo y la acción de retención configurada es retenerla, la directiva de retención continúa aplicándose y un buzón inactivo nunca podrá eliminarse automáticamente. Cuando la acción de retención ya no se aplica porque ha expirado el período de retención, el administrador de Exchange ahora puede [eliminar manualmente el buzón inactivo](delete-an-inactive-mailbox.md)
 
-        An implicit retention policy requires a static policy scope with the **All recipients** (for Exchange email) or **All groups** (for Microsoft 365 Groups) configuration.
+    Una directiva de retención implícita requiere un ámbito de directiva estático con la configuración de **Todos los destinatarios** (para correo electrónico de Exchange) o **Todos los grupos** (para Grupos de Microsoft 365).
 
     Para obtener más información sobre los buzones inactivos que tienen directivas de retención aplicadas, consulte [Buzones inactivos y directivas de retención de Microsoft 365](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention).
 

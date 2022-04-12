@@ -15,18 +15,23 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 94f920d298c5b74eff39290ced4ccdc58031ac0f
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 71cfbfe44525d67362ad7acc2c9d063ef0bb9ffd
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807409"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790358"
 ---
 # <a name="next-generation-protection-overview"></a>Información sobre los servicios de protección de última generación
 
 **Se aplica a**
+
+- Antivirus de Microsoft Defender
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+**Plataformas**
+- Windows
 
 Microsoft Defender para punto de conexión incluye servicios de protección de última generación para reforzar el perímetro de seguridad de la red. Los servicios de protección de última generación se diseñaron para detectar todos los tipos de amenazas emergentes. Además de Antivirus de Windows Defender, los servicios de protección de última generación incluyen las siguientes funcionalidades:
 
@@ -53,4 +58,15 @@ Visite el [sitio de demostración de Microsoft Defender para punto de conexión]
 Para información sobre cómo configurar los servicios de protección de última generación, consulte [Configurar las características del Antivirus de Microsoft Defender](configure-microsoft-defender-antivirus-features.md).
 
 > [!NOTE]
-> La configuración y la administración funcionan en gran medida de la misma manera en Windows Server que en los clientes de Windows. Sin embargo, hay algunas diferencias: 
+> La configuración y administración es, en gran medida, la misma en Windows Server que en los clientes de Windows. Sin embargo, existen algunas diferencias. 
+
+> [!TIP]
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
+> - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
+> - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
+> - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+> - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuaderno de estrategias de prueba para soluciones de Cumplimiento de Microsoft 365.
-ms.openlocfilehash: e0d48ba9c4a5ca50869b64d6312fe845ef9bf50c
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8c5456344a97a0cfc4564c228eeba20067682070
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679904"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759178"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Cumplimiento de Microsoft 365
 
@@ -93,6 +93,7 @@ El Cumplimiento de comunicaciones le ayuda a identificar de forma inteligente la
 > Procedimiento recomendado de prueba: día 1
 
 [Asignar todos los usuarios de cumplimiento al grupo de roles de Cumplimiento de comunicaciones](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance).
+
 ### <a name="step-2-enable-the-audit-log"></a>Paso 2: [Habilitar el registro de auditoría](communication-compliance-configure.md#step-2-required-enable-the-audit-log)
 
 > [!TIP]
@@ -395,8 +396,7 @@ Los clasificadores que se pueden entrenar son herramientas que reconocen varios 
 
 ### <a name="more-information-auto-apply-retention-labels--disposition-review"></a>Más información: Aplicar automáticamente etiquetas de retención y revisión para eliminación
 
-**Etiquetas de aplicación automática para conservar lo que necesita...**
-Las etiquetas de retención se pueden aplicar automáticamente al contenido cuando contiene:
+**Aplicar etiquetas automáticamente para conservar lo que necesita...** Las etiquetas de retención se pueden aplicar automáticamente al contenido cuando contiene:
 
 - [Tipos específicos de información confidencial](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 - [Palabras clave específicas o propiedades que permiten búsquedas que coinciden con una consulta que usted creó](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
@@ -434,6 +434,6 @@ Identifique y proteja de forma proactiva los riesgos para la privacidad, como el
 
 **¿Qué se incluye?**: para obtener una lista completa de las características y soluciones de cumplimiento de Microsoft 365 enumeradas por nivel de producto, vea la [Feature Matrix](https://go.microsoft.com/fwlink/?linkid=2139145).
 
-**Biblioteca de contenido técnico de Seguridad de Microsoft**: explore esta biblioteca para buscar guías interactivas y otro contenido de aprendizaje que se adecue a sus necesidades. [Visitar la biblioteca](/security/content-library).
+**Biblioteca de contenido técnico de Seguridad de Microsoft**: explore esta biblioteca para buscar guías interactivas y otro contenido de aprendizaje que se adecue a sus necesidades. [Visitar la biblioteca](/security).
 
 **Recursos de Seguridad de Microsoft**: desde antimalware hasta Confianza cero, obtenga todos los recursos que se adecuan a las necesidades de seguridad de su organización. [Visitar Recursos](/security/business/resources).
