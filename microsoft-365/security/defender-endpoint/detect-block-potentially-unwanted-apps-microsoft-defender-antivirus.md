@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b193279f9891badc78e639776a57a366a0fa8109
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 67f23d31f50dc20e385f36d4ee4a941db14af7ef
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807085"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790688"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Detectar y bloquear aplicaciones potencialmente no deseadas
 
@@ -29,6 +29,10 @@ ms.locfileid: "62807085"
 
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Edge](/microsoft-edge/deploy/microsoft-edge)
+- Antivirus de Microsoft Defender
+
+**Plataformas**
+- Windows
 
 Las aplicaciones potencialmente no deseadas (PUA) son una categoría de software que puede hacer que su equipo funcione lentamente, muestre anuncios inesperados o, en el peor de los casos, instale otro software que pueda ser inesperado o no deseado. PUA no se considera un virus, malware u otro tipo de amenaza, pero puede realizar acciones en los puntos de conexión que afecten negativamente al rendimiento o al uso de los puntos de conexión. El término *PUA* también puede hacer referencia a una aplicación que tenga mala reputación, según la evaluación de Microsoft Defender para punto de conexión, debido a determinados tipos de comportamiento no deseado.
 
@@ -202,6 +206,16 @@ Para más información sobre la búsqueda avanzada de amenazas, consulte [Buscar
 A veces, la protección contra PUA bloquea un archivo por error, o se requiere una característica de una PUA para completar una tarea. En estos casos, se puede agregar un archivo a una lista de exclusiones.
 
 Para más información, consulte [Configurar y validar exclusiones según la extensión de archivo y la ubicación de carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
+
+> [!TIP]
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
+> - [Configuración de directiva antivirus macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
+> - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+> - [Configurar Defender para punto de conexión en características Android](android-configure.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Vea también
 

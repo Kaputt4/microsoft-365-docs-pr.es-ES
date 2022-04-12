@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 48a411d836669a47479daa68a83a96c3e65b949f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 071bd6fe59a7200e1d16cf94633b0d7b3cb688c5
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473241"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788114"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activar el bloqueo a primera vista
 
@@ -28,6 +28,10 @@ ms.locfileid: "64473241"
 
 - [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Antivirus de Microsoft Defender 
+
+**Plataformas**
+- Windows
 
 En este artículo se describe una característica de antivirus o antimalware conocida como "bloqueo a primera vista" y se describe cómo habilitar el bloqueo a primera vista para la organización.
 
@@ -217,6 +221,15 @@ Si tiene un dispositivo personal que no está administrado por una organización
      > [!CAUTION]
      > Desactivar el bloque a primera vista disminuye el nivel de protección del dispositivo. No se recomienda deshabilitar permanentemente el bloqueo a primera vista.
 
+> [!TIP]
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
+> - [Configuración de directiva antivirus macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
+> - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+> - [Configurar Defender para punto de conexión en características Android](android-configure.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Vea también
 
