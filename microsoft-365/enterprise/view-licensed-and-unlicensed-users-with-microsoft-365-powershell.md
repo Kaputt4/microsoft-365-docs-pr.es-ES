@@ -1,5 +1,5 @@
 ---
-title: Ver usuarios con licencia y sin licencia Microsoft 365 con PowerShell
+title: Visualización de usuarios con licencia y sin licencia Microsoft 365 con PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,45 +19,103 @@ ms.custom:
 - PowerShell
 - seo-marvel-apr2020
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
-description: En este artículo se explica cómo usar PowerShell para ver cuentas de usuario con licencia Microsoft 365 licencia.
-ms.openlocfilehash: 015cb63fd692131d77799fe30fc94c6214bb01d3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: En este artículo se explica cómo usar PowerShell para ver las cuentas de usuario con licencia y sin licencia Microsoft 365.
+ms.openlocfilehash: 1be54b20d3b50985fea8eb665a1b6098a26aa703
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208210"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823639"
 ---
-# <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>Ver usuarios con licencia y sin licencia Microsoft 365 con PowerShell
+# <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>Visualización de usuarios con licencia y sin licencia Microsoft 365 con PowerShell
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Las cuentas de usuario de Microsoft 365 organización pueden tener algunas, todas o ninguna de las licencias disponibles asignadas desde los planes de licencias que están disponibles en su organización. Puede usar PowerShell para Microsoft 365 encontrar rápidamente los usuarios con licencia y sin licencia en su organización.
+Las cuentas de usuario de la organización Microsoft 365 pueden tener algunas, todas o ninguna de las licencias disponibles asignadas desde los planes de licencias que están disponibles en su organización. Puede usar PowerShell para Microsoft 365 para encontrar rápidamente los usuarios con licencia y sin licencia de su organización.
+
+## <a name="use-the-microsoft-graph-powershell-sdk"></a>Uso del SDK de PowerShell de Microsoft Graph
+
+En primer lugar, [conéctese al inquilino de Microsoft 365](/graph/powershell/get-started#authentication).
+
+La lectura de propiedades de usuario, incluidos los detalles de la licencia, requiere el ámbito de permiso User.Read.All o uno de los demás permisos enumerados en la [página de referencia "Obtener un usuario" Graph API](/graph/api/user-get).
+
+El ámbito de permisos Organization.Read.All es necesario para leer las licencias disponibles en el inquilino.
+
+```powershell
+Connect-Graph -Scopes User.Read.All, Organization.Read.All
+```
+
+Para ver los detalles de licencia de una cuenta de usuario específica, ejecute el siguiente comando:
+  
+```powershell
+Get-MgUserLicenseDetail -UserId "<user sign-in name (UPN)>"
+```
+
+Por ejemplo:
+
+```powershell
+Get-MgUserLicenseDetail -UserId "belindan@litwareinc.com"
+```
+
+Para ver la lista de todas las cuentas de usuario de la organización a las que NO se ha asignado ninguno de los planes de licencia (usuarios sin licencia), ejecute el siguiente comando:
+  
+```powershell
+Get-MgUser -Filter 'assignedLicenses/$count eq 0' -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All
+
+Write-Host "Found $unlicensedUserCount unlicensed users."
+```
+
+Para ver la lista de todas las cuentas de usuario miembro (excepto los invitados) de la organización a las que NO se les ha asignado ninguno de los planes de licencia (usuarios sin licencia), ejecute el siguiente comando:
+  
+```powershell
+Get-MgUser -Filter "assignedLicenses/`$count eq 0 and userType eq 'Member'" -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All
+
+Write-Host "Found $unlicensedUserCount unlicensed users (excluding guests)."
+```
+
+Para ver la lista de todas las cuentas de usuario de la organización a las que se ha asignado cualquiera de los planes de licencia (usuarios con licencia), ejecute el siguiente comando:
+  
+```powershell
+Get-MgUser -Filter 'assignedLicenses/$count ne 0' -ConsistencyLevel eventual -CountVariable licensedUserCount -All -Select UserPrincipalName,DisplayName,AssignedLicenses | Format-Table -Property UserPrincipalName,DisplayName,AssignedLicenses
+
+Write-Host "Found $licensedUserCount licensed users."
+```
+
+Para ver la lista de todas las cuentas de usuario de la organización que tienen asignada una licencia E5, ejecute el siguiente comando:
+
+```powershell
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+
+Get-MgUser -Filter "assignedLicenses/any(x:x/skuId eq $($e5sku.SkuId) )" -ConsistencyLevel eventual -CountVariable e5licensedUserCount -All
+
+Write-Host "Found $e5licensedUserCount E5 licensed users."
+```
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
-En primer [lugar, conéctese a su Microsoft 365 inquilino](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+En primer lugar, [conéctese al inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
  
-Para ver la lista de todas las cuentas de usuario de la organización a las que NO se ha asignado ninguno de los planes de licencias (usuarios sin licencia), ejecute el siguiente comando:
+Para ver la lista de todas las cuentas de usuario de la organización a las que NO se ha asignado ninguno de los planes de licencia (usuarios sin licencia), ejecute el siguiente comando:
   
 ```powershell
 Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $false) { Write-Host $_.UserPrincipalName} }
 ```
 
-Para ver la lista de todas las cuentas de usuario de la organización a las que se ha asignado cualquiera de sus planes de licencias (usuarios con licencia), ejecute el siguiente comando:
+Para ver la lista de todas las cuentas de usuario de la organización a las que se ha asignado cualquiera de los planes de licencia (usuarios con licencia), ejecute el siguiente comando:
   
 ```powershell
 Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }
 ```
 
 >[!Note]
->Para enumerar todos los usuarios de la suscripción, use el `Get-AzureAdUser -All $true` comando.
+>Para enumerar todos los usuarios de la suscripción, use el `Get-AzureAdUser -All $true` comando .
 >
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
-En primer [lugar, conéctese a su Microsoft 365 inquilino](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+En primer lugar, [conéctese al inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-Para ver la lista de todas las cuentas de usuario y su estado de licencias en la organización, ejecute el siguiente comando en PowerShell:
+Para ver la lista de todas las cuentas de usuario y su estado de licencia en su organización, ejecute el siguiente comando en PowerShell:
   
 ```powershell
 Get-MsolUser -All

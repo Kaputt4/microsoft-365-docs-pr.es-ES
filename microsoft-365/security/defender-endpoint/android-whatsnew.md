@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 48d6ef27e71f89f6a81ac3c77ea17cf60dc90ee1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 95c4d77014e31c748cc4bd6662a148810c01f79a
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664576"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64825198"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Novedades de Microsoft Defender para punto de conexión en Android
 
@@ -31,9 +31,18 @@ ms.locfileid: "64664576"
 
 ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+>[!NOTE]
+>Microsoft Defender ya no es compatible con versiones inferiores a 1.0.3011.0302. Se solicita a los usuarios que actualicen a las versiones más recientes para proteger sus dispositivos.
+Para actualizar, los usuarios pueden seguir estos pasos:
+>1. En tu perfil de trabajo, ve a Managed Play Store.
+>2. Pulse en el icono de perfil de la esquina superior derecha y seleccione "Administrar aplicaciones y dispositivos".
+>3. Busque MDE en Actualizaciones disponibles y seleccione Actualizar.
+>
+>Si encuentra algún problema, [envíe comentarios desde la aplicación](/security/defender-endpoint/android-support-signin#send-in-app-feedback).
+
 ## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-play-store"></a>Microsoft Defender para punto de conexión ahora es Microsoft Defender en play store
 
-Microsoft Defender para punto de conexión ahora está disponible como **Microsoft Defender** en el almacén de juegos. Con esta actualización, la aplicación estará disponible como versión preliminar para **consumidores en la región de EE. UU.**; en función de cómo inicie sesión en la aplicación con su cuenta profesional o personal, tendrá acceso a características para Microsoft Defender para punto de conexión o a características de Microsoft Defender para personas. Consulte [este blog](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals) para obtener más detalles.
+Microsoft Defender para punto de conexión ahora está disponible como **Microsoft Defender** en el almacén de juegos. Con esta actualización, la aplicación estará disponible como versión preliminar para **consumidores en la región de EE. UU.**; en función de cómo inicie sesión en la aplicación con su cuenta profesional o personal, tendrá acceso a características para Microsoft Defender para punto de conexión o a características de Microsoft Defender para personas. Consulte [este blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals) para obtener más detalles.
 
 ## <a name="threat-and-vulnerability-management"></a>Administración de amenazas y vulnerabilidades
 

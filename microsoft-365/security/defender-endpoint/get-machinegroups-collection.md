@@ -1,7 +1,7 @@
 ---
-title: Obtener LA API de recopilación de grupos de máquinas RBAC
-description: Obtenga información sobre cómo usar la API de la colección Get KB para recuperar una colección de grupos de dispositivos RBAC en Microsoft Defender para endpoint.
-keywords: apis, api de gráficos, api admitidas, get, RBAC, group
+title: Obtención de la API de recopilación de grupos de máquinas RBAC
+description: Obtenga información sobre cómo usar la API de recopilación Get KB para recuperar una colección de grupos de dispositivos RBAC en Microsoft Defender para punto de conexión.
+keywords: api, graph api, api admitidas, get, RBAC, group
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -17,21 +17,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
 ms.custom: api
-ms.openlocfilehash: 699a7e2738f1e0c89977bd152832f45935a06387
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 528b80b3c40fd7df853190788abb347ed90a82e4
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167483"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64825176"
 ---
-# <a name="get-kb-collection-api"></a>Obtener API de colección KB
+# <a name="get-kb-collection-api"></a>Obtención de la API de recopilación de KB
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Se aplica a:** 
-- [Plan 1 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -41,14 +41,14 @@ ms.locfileid: "61167483"
 
 Recupera una colección de grupos de dispositivos RBAC.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 El usuario necesita permisos de lectura.
 
 ## <a name="http-request"></a>Solicitud HTTP
 
 ```http
-GET /testwdatppreview/machinegroups
+GET https://graph.microsoft.com/testwdatppreview/machinegroups
 ```
 
 ## <a name="request-headers"></a>Encabezados de solicitud
@@ -64,7 +64,7 @@ En blanco
 
 ## <a name="response"></a>Respuesta
 
-Si se realiza correctamente: 200 Aceptar.
+Si se ejecuta correctamente: 200 CORRECTO.
 
 ## <a name="example"></a>Ejemplo
 
@@ -80,8 +80,8 @@ Content-type: application/json
 ### <a name="response-example"></a>Ejemplo de respuesta
 
 Aquí tiene un ejemplo de la respuesta.
-El identificador de campo contiene el identificador de **grupo de** dispositivos y es igual al **campo rbacGroupId** en la información de dispositivos.
-El **campo desagrupado** solo se aplica a un grupo para todos los dispositivos que no se han asignado a ningún grupo. Este grupo, como siempre, tiene el nombre "UnassignedGroup".
+El identificador de campo contiene el **identificador** del grupo de dispositivos y es igual al campo **rbacGroupId** en la información de dispositivos.
+El campo **desagrupado** es true solo para un grupo para todos los dispositivos que no se han asignado a ningún grupo. Este grupo, como de costumbre, tiene el nombre "UnssignedGroup".
 
 ```http
 HTTP/1.1 200 OK

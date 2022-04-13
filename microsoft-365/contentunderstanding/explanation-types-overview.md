@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga más información sobre la lista de frases, las expresiones regulares y los tipos de explicación de proximidad en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 71c7379b3a9fcd71b996da5eefd18b6aaaef5016
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: ae31ee3e4d9550c54f884360f3beea960db47b20
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872542"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824792"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Tipos de explicación en Microsoft SharePoint Syntex
 
@@ -119,10 +119,10 @@ Para agregar un tipo de explicación de expresiones regulares:
 
 En la tabla siguiente, se muestran las opciones de caracteres en línea que no están disponibles actualmente para su uso en patrones de expresiones regulares.
 
-|Opción  |Estado  |Funcionalidad actual  |
-|---------|---------|---------|
-|Distinción entre mayúsculas y minúsculas | No se admite actualmente. | No hay distinción entre mayúsculas y minúsculas en todas las coincidencias que se obtienen.  |
-|Anclajes de línea     | No se admite actualmente. | No se puede especificar una posición específica en una cadena en la que debe producirse una coincidencia.   |
+|Opción|Estado|Funcionalidad actual|
+|---|---|---|
+|Distinción entre mayúsculas y minúsculas|No se admite actualmente.|No hay distinción entre mayúsculas y minúsculas en todas las coincidencias que se obtienen.|
+|Anclajes de línea|No se admite actualmente.| No se puede especificar una posición específica en una cadena en la que debe producirse una coincidencia.|
 
 ## <a name="proximity"></a>Proximidad
 
@@ -149,11 +149,11 @@ Para usar el tipo de explicación de proximidad es necesario comprender qué es 
 En la siguiente tabla se muestran algunos ejemplos de cómo determinar el número de tokens en una frase.
 
 |Frase|Número de tokens|Explicación|
-|--|--|--|
+|---|---|---|
 |`Dog`|1|Una sola palabra sin signos de puntuación o espacios.|
 |`RMT33W`|1|Un número de localizador de registros. Puede incluir números y letras, pero no signos de puntuación.|
-|`425-555-5555`|5|Un número de teléfono Cada signo de puntuación es un token único, por lo que `425-555-5555` tiene 5 tokens:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
-|`https://luis.ai`|7 |`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
+|`425-555-5555`|5|Un número de teléfono Cada signo de puntuación es un token único, por lo que `425-555-5555` tiene 5 tokens:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555`|
+|`https://luis.ai`|7 |`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`|
 
 #### <a name="configure-the-proximity-explanation-type"></a>Configurar el tipo de explicación de proximidad
 
@@ -211,17 +211,18 @@ Puede seleccionar una de las siguientes opciones para este valor:
    ![Intervalo personalizado.](../media/content-understanding/custom-file.png)
 
     En el visor, puede ajustar manualmente el cuadro de selección para que incluya la ubicación donde aparezca la fase. Para esta opción, necesita seleccionar una posición **Inicio** y una posición **Fin**. Estos valores representan el número de tokens desde el principio del documento. Aunque puede escribir los valores manualmente, es más fácil ajustarlos en el cuadro de selección en el visor.
-    
-## <a name="considerations-when-configuring-explanations"></a>Consideraciones al configurar explicaciones
-Al entrenar a un clasificador hay que tener en cuenta algunas cosas que producirán resultados más predecibles:
 
-- Entre más documentos entrenes, más preciso será el clasificador.  Cuando sea posible, use más de 5 documentos buenos y use más de 1 documento malo.  Si las bibliotecas con las que está trabajando tienen varios tipos de documentos diferentes, varios de cada tipo llevan a resultados más predecibles.
-- El etiquetado del documento desempeña un papel importante en el proceso de aprendizaje.  Se usan junto con explicaciones para entrenar el modelo.  Es posible que veas algunas anomalías al entrenar a un clasificador con documentos que no tienen mucho contenido en ellos.  Es posible que la explicación no coincida con nada del documento, pero como se ha etiquetado como un documento "bueno", puede que vea que coincide durante el entrenamiento.
-- Al crear explicaciones, usa lógica OR en combinación con la etiqueta para determinar si es una coincidencia.  La expresión regular que usa lógica AND puede ser más predecible.  Esta es una expresión regular de ejemplo para usarla en documentos reales como aprendizaje.  Tenga en cuenta que el texto resaltado en rojo es la frase o frases que estaría buscando.
+## <a name="considerations-when-configuring-explanations"></a>Consideraciones al configurar explicaciones
+
+Al entrenar un clasificador, hay que tener en cuenta algunas cosas que producirán resultados más predecibles:
+
+- Cuantos más documentos entrene, más preciso será el clasificador.  Cuando sea posible, use más de 5 documentos correctos y use más de 1 documento incorrecto.  Si las bibliotecas con las que trabaja tienen varios tipos de documento diferentes, varios de cada tipo dan lugar a resultados más predecibles.
+- El etiquetado del documento desempeña un papel importante en el proceso de entrenamiento.  Se usan junto con explicaciones para entrenar el modelo.  Es posible que vea algunas anomalías al entrenar un clasificador con documentos que no tienen mucho contenido en ellos.  Es posible que la explicación no coincida con nada en el documento, pero dado que se ha etiquetado como un documento "bueno", es posible que vea que es una coincidencia durante el entrenamiento.
+- Al crear explicaciones, usa lógica OR en combinación con la etiqueta para determinar si es una coincidencia.  La expresión regular que usa la lógica AND puede ser más predecible.  Esta es una expresión regular de ejemplo que se usará en documentos reales como entrenamiento.  Tenga en cuenta que el texto resaltado en rojo es la frase que está buscando.
 
     <pre>(?=.*network provider)(?=.*participating providers).*</pre>
-    
-- Las etiquetas y las explicaciones funcionan juntas y se usan para entrenar el modelo.  No es una serie de reglas que se pueden desasoyr y se pueden aplicar ponderaciones precisas o de predicción a cada variable que se haya configurado.  Entre mayor sea la variación de los documentos usados en el aprendizaje, se proporcionará más precisión en el modelo.
+
+- Las etiquetas y explicaciones funcionan conjuntamente y se usan en el entrenamiento del modelo.  No se trata de una serie de reglas que se pueden desa acoplar y aplicar pesos precisos o predicción a cada variable que se haya configurado.  Cuanto mayor sea la variación de los documentos utilizados en el entrenamiento, se proporcionará más precisión en el modelo.
 
 ### <a name="see-also"></a>Ver también
 

@@ -11,13 +11,13 @@ f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo llevar a cabo tareas clave de administración de Microsoft OneLTI, incluida la eliminación, visualización, edición y solución de problemas.
-ms.openlocfilehash: 2b623be8467b50d1682a7bdc63ce603a3ad9a859
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+description: Obtenga información sobre cómo llevar a cabo tareas clave de administración de Microsoft OneLTI, incluida la visualización, eliminación, edición y solución de problemas.
+ms.openlocfilehash: 8b788028a453969f13c31bbe72962c1b7df955a6
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747505"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823464"
 ---
 # <a name="manage-microsoft-onelti-for-any-lms"></a>Administración de Microsoft OneLTI para cualquier LMS
 
@@ -25,11 +25,21 @@ Microsoft OneLTI se integra con varios LMS, como Canvas, Blackboard y Moodle.
 
 En este artículo, los administradores de TI encontrarán instrucciones sobre las tareas clave de administración de OneLTI.
 
-- [Elimine un registro LTI](#delete-an-lti-registration).
 - [Ver un registro LTI](#view-an-lti-registration).
+- [Elimine un registro LTI](#delete-an-lti-registration).
 - [Edite un registro LTI](#edit-an-lti-registration).
 - [Solución de problemas con OneLTI](#troubleshoot-issues-with-onelti).
 - [Informe de problemas con OneLTI](#report-problems-with-onelti).
+
+## <a name="view-an-lti-registration"></a>Visualización de un registro LTI
+
+Si desea ver los detalles de un registro LTI, siga los pasos que se indican a continuación.
+
+1. Visite [el Portal de Microsoft LTI](https://lti.microsoft.com/).
+2. Inicie sesión con una cuenta de administrador de Microsoft 365.
+3. En la lista de registros, busque el registro de LTI que desea ver.
+4. Seleccione el **icono de ojo** situado junto a la lista.
+5. Se abrirá el panel de detalles del registro.
 
 ## <a name="delete-an-lti-registration"></a>Eliminación de un registro LTI
 
@@ -42,23 +52,13 @@ Si desea eliminar un registro de Microsoft OneLTI, siga estos pasos.
 5. En el cuadro de diálogo de confirmación, seleccione **Eliminar** para confirmar la eliminación.
 6. Verá un mensaje correcto una vez que se elimine.
 
-## <a name="view-an-lti-registration"></a>Visualización de un registro LTI
-
-Si desea ver los detalles de un registro LTI, siga los pasos que se indican a continuación.
-
-1. Visite [el Portal de Microsoft LTI](https://lti.microsoft.com/).
-2. Inicie sesión con una cuenta de administrador de Microsoft 365.
-3. En la lista de registros, busque el registro de LTI que desea ver.
-4. Seleccione el **icono de ojo** situado junto a la lista.
-5. Se abrirá el panel de detalles del registro.
-
 ## <a name="edit-an-lti-registration"></a>Edición de un registro LTI
 
 Actualmente, no se admite la edición de un registro LTI existente después de agregarlo.
 
 Para cambiar un registro LTI, deberá hacer lo siguiente:
 
-1. Elimine el registro existente.
+1. [Elimine el registro existente](#delete-an-lti-registration).
 2. Agregue un nuevo registro.
 
 ## <a name="troubleshoot-issues-with-onelti"></a>Solución de problemas con OneLTI

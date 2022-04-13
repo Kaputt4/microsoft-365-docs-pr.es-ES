@@ -12,13 +12,13 @@ ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-description: Obtenga información sobre cómo configurar la búsqueda en un entorno multige geográfico. Solo algunos clientes, como OneDrive, pueden devolver resultados en un entorno multige geográfico.
-ms.openlocfilehash: d6d6895c6dc393bb1f28dff60dea996bf80aad5a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre cómo configurar la búsqueda en un entorno multigeográfico. Solo algunos clientes, como OneDrive, pueden devolver resultados en un entorno multigeográfico.
+ms.openlocfilehash: a6f152a3f226befa8bc060dadd0eed1c0952523c
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204184"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824934"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurar la búsqueda para Microsoft 365 Multi-Geo
 
@@ -66,7 +66,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, f
 <thead>
 <tr class="header">
 <th align="left">Característica</th>
-<th align="left">Funcionamiento</th>
+<th align="left">Cómo funciona</th>
 <th align="left">Solución alternativa</th>
 </tr>
 </thead>
@@ -84,7 +84,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, f
 <tr class="odd">
 <td align="left"></td>
 <td align="left">La búsqueda multigeográfica no admite la creación dinámica de cubos para refinadores numéricos.</td>
-<td align="left">Use el <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">parámetro "Discretize" para</a> refinadores numéricos.</td>
+<td align="left">Use el <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">parámetro "Discretize"</a> para refinadores numéricos.</td>
 </tr>
 <tr class="even">
 <td align="left">Identificadores de documento</td>
@@ -122,7 +122,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, n
 </tr>
 <tr class="even">
 <td align="left">Invitados</td>
-<td align="left">Los invitados solo obtienen resultados de la ubicación geográfica desde la que están buscando.</td>
+<td align="left">Los invitados solo obtienen resultados de la ubicación geográfica desde la que buscan.</td>
 </tr>
 </tbody>
 </table>
@@ -131,7 +131,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, n
 
 Todos los clientes de búsqueda usan la API REST de SharePoint Search existente para interactuar con los índices de búsqueda.
 
-![Diagrama que muestra SharePoint las API de REST de búsqueda interactúan con los índices de búsqueda.](../media/configure-search-for-multi-geo-image1-1.png)
+![Diagrama que muestra cómo interactúan SharePoint API REST de búsqueda con los índices de búsqueda.](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. Un cliente de búsqueda llama al punto de conexión de REST de búsqueda con la propiedad EnableMultiGeoSearch= true.
 2. La consulta se envía a todas las ubicaciones geográficas del espacio empresarial.
@@ -151,7 +151,7 @@ Cada Centro de búsqueda tiene varios sectores verticales y hay que configurar i
 
 3. Seleccione el sector vertical que quiere configurar, haga clic en el icono de engranaje **Configuración** de la esquina superior derecha y luego en **Editar página**. La página de resultados de búsqueda se abre en modo de edición.
 
-   ![Edite la selección de página en Configuración.](../media/configure-search-for-multi-geo-image2.png)
+   ![Editar selección de página en Configuración.](../media/configure-search-for-multi-geo-image2.png)
 
 4. En el elemento web Resultados de búsqueda, mueva el puntero a la esquina superior derecha del elemento web, haga clic en la flecha y, a continuación, haga clic en **Editar elemento web** en el menú. El panel de herramientas del elemento web de resultados de búsqueda se abrirá debajo de la cinta en la parte superior derecha de la página.
 

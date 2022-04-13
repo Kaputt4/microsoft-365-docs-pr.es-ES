@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, ransomware operado por seres humanos, HumOR, ataque de extorsión, ataque ransomware, cifrado, criptovirología, confianza cero
 description: Use las líneas base de seguridad para proteger los recursos de Microsoft 365 frente a ataques de ransomware.
-ms.openlocfilehash: 22092994765e9015421c21f2ee057c63463d594d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 925a64e1d7852aeed6f596e99b20dbff8b34d1be
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320191"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64825110"
 ---
 # <a name="step-1-configure-security-baselines"></a>Paso 1. Configurar las líneas base de seguridad
 
@@ -53,14 +53,14 @@ A continuación, use las [reglas de reducción de la superficie expuesta a ataqu
 - El hurto de credenciales del subsistema de autoridad de seguridad local de Windows (lsass.exe)
 - La creación de procesos procedentes de comandos de PSExec y WMI
 
-## <a name="exchange-email-management-baseline"></a>Línea base de administración de correo electrónico de Exchange 
+## <a name="exchange-email-management-baseline"></a>Línea base de administración de correo electrónico de Exchange
 
 Ayude a evitar el acceso inicial a su espacio empresarial desde un ataque basado en correo electrónico con esta configuración de línea base de correo electrónico de Exchange:
 
 - Habilite el [examen de correo por parte del Antivirus de Windows Defender](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus).
 - Use Microsoft Defender para Office 365 para [mejorar la protección contra suplantación de identidad](/microsoft-365/security/office-365-security/anti-phishing-protection) y la cobertura contra nuevas amenazas y variantes polimórficas.
 - Compruebe la configuración de filtrado de correo electrónico de Office 365 para asegurarse de bloquear correos electrónicos falsificados, correo no deseado y correos electrónicos con malware. Use Defender para Office 365 para mejorar la protección contra suplantación de identidad (phishing) y la cobertura contra nuevas amenazas y variantes polimórficas. Configure Defender para Office 365 para [volver a comprobar los vínculos al hacer clic](/microsoft-365/security/office-365-security/atp-safe-links) y [eliminar los correos entregados](/microsoft-365/security/office-365-security/zero-hour-auto-purge) en respuesta a la inteligencia de amenazas recién adquirida.
-- Revise y actualice a la  [configuración recomendada más reciente para la de seguridad de EOP y Defender para Office 365](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp).
+- Revise y actualice a la [configuración recomendada más reciente para la de seguridad de EOP y Defender para Office 365](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp).
 - Configure Defender para Office 365 para [volver a comprobar los vínculos al hacer clic](/microsoft-365/security/office-365-security/set-up-safe-links-policies) y eliminar los correos entregados en respuesta a la inteligencia de amenazas recién adquirida.
 
 ## <a name="additional-baselines"></a>Líneas base adicionales
@@ -82,7 +82,6 @@ Además, la configuración de línea base de correo electrónico de Exchange pue
 Esta es la protección contra ransomware para el espacio empresarial después de este paso.
 
 ![Protección contra ransomware para su espacio empresarial de Microsoft 365 después del paso 1](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step1.png)
-
 
 ## <a name="next-step"></a>Paso siguiente
 

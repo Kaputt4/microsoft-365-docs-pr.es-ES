@@ -1,5 +1,5 @@
 ---
-title: Ver y administrar usuarios riesgosos
+title: Visualización y administración de usuarios de riesgo
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,64 +15,64 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver y administrar usuarios arriesgados.
-ms.openlocfilehash: 708fc0576c85d9b8511ac6b31ed0398fae1b20d3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver y administrar usuarios de riesgo.
+ms.openlocfilehash: 0b7567404b909927a80b69184299baae131f8eb7
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331236"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824276"
 ---
-# <a name="view-and-manage-risky-users"></a>Ver y administrar usuarios riesgosos
+# <a name="view-and-manage-risky-users"></a>Visualización y administración de usuarios de riesgo
 
-Microsoft recopila y analiza trillones de señales de inicio de sesión de usuario cada día. Estas señales se usan para ayudar a crear buenos patrones de comportamiento de inicio de sesión del usuario e identificar posibles intentos de inicio de sesión de riesgo. Azure Active Directory (Azure AD) Identity Protection usa estas señales para revisar los intentos de inicio de sesión del usuario y tomar medidas si hay actividad sospechosa.
+Microsoft recopila y analiza billones de señales de inicio de sesión de usuario cada día. Estas señales se usan para ayudar a crear buenos patrones de comportamiento de inicio de sesión de usuario e identificar posibles intentos de inicio de sesión de riesgo. Azure Active Directory (Azure AD) Identity Protection usa estas señales para revisar los intentos de inicio de sesión de los usuarios y tomar medidas si hay actividad sospechosa.
 
-Microsoft 365 Lighthouse ayuda a administrar los riesgos detectados por Azure AD Identity Protection proporcionando una única vista de los usuarios de riesgo en todos los inquilinos administrados. Puedes proteger rápidamente a los usuarios arriesgados restablecimiento de su contraseña o bloqueándolos para que no inicien sesión en su Microsoft 365 usuario. También puede ver información para comprender mejor el riesgo de un usuario y determinar los pasos siguientes.
+Microsoft 365 Lighthouse ayuda a administrar los riesgos detectados por Azure AD Identity Protection proporcionando una vista única de los usuarios de riesgo en todos los inquilinos administrados. Para proteger rápidamente a los usuarios de riesgo, restablezca su contraseña o bloquee el inicio de sesión en su cuenta de Microsoft 365. También puede ver información para comprender mejor el riesgo de un usuario y determinar los pasos siguientes.
 
-Azure AD identity protection identifica los riesgos de muchos tipos, incluidos:
+Azure AD Identity Protection identifica los riesgos de muchos tipos, entre los que se incluyen:
 
 - Credenciales filtradas
 - Uso de IP anónima
-- Viajes atípicos
-- Iniciar sesión desde dispositivos infectados
-- Iniciar sesión desde direcciones IP con actividad sospechosa
-- Iniciar sesión desde ubicaciones desconocidas
+- Viaje atípico
+- Inicio de sesión desde dispositivos infectados
+- Inicio de sesión desde direcciones IP con actividad sospechosa
+- Inicio de sesión desde ubicaciones desconocidas
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Se deben cumplir las siguientes condiciones antes de que los usuarios puedan aparecer en la lista de usuarios de riesgo:
+Se deben cumplir las condiciones siguientes para que los usuarios puedan aparecer en la lista de usuarios de riesgo:
 
-- El inquilino del cliente debe tener una Azure AD Premium licencia para cada usuario. Para obtener más información sobre las licencias que admiten Azure AD identidad, vea [¿Qué es la protección de identidades?](/azure/active-directory/identity-protection/overview-identity-protection)
+- El inquilino del cliente debe tener una licencia de Azure AD Premium para cada usuario. Para obtener más información sobre qué licencias admiten Azure AD Identity Protection, consulte [¿Qué es Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection)
 
-- El inquilino del cliente debe estar activo en Microsoft 365 Lighthouse. Para determinar si un espacio empresarial está activo, consulte [Microsoft 365 Lighthouse de la página Inquilinos](m365-lighthouse-tenant-list-overview.md).
+- El inquilino del cliente debe estar activo dentro de Microsoft 365 Lighthouse. Para determinar si un inquilino está activo, consulte [Microsoft 365 Lighthouse información general de la página Inquilinos](m365-lighthouse-tenant-list-overview.md).
 
 ## <a name="review-detected-risks-and-take-action"></a>Revisar los riesgos detectados y tomar medidas
 
-En Azure AD identity protection, las detecciones de riesgos incluyen cualquier acción sospechosa identificada relacionada con cuentas de usuario en Azure AD.
+En Azure AD Identity Protection, las detecciones de riesgo incluyen las acciones sospechosas identificadas relacionadas con las cuentas de usuario de Azure AD.
 
 1. En el panel de navegación izquierdo de Lighthouse, seleccione **Usuarios**.
 
-2. Seleccione la **pestaña Usuarios arriesgados** .
+2. Seleccione la pestaña **Usuarios de riesgo** .
 
-3. Revise los usuarios de la lista con un estado de riesgo en **Riesgo**.
+3. Revise los usuarios de la lista con un estado de riesgo de **En riesgo**.
 
-4. Seleccione **Ver detecciones de riesgos** para obtener información detallada sobre los riesgos detectados para cada usuario. Para obtener más información acerca de los tipos de riesgo y la detección, vea [¿Qué es el riesgo?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
+4. Seleccione **Ver detecciones de riesgos** para obtener información detallada sobre los riesgos detectados para cada usuario. Para obtener más información sobre los tipos de riesgo y la detección, consulte [¿Qué es el riesgo?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
 
-5. Para cada usuario, evalúe las detecciones de riesgos y seleccione una de las siguientes acciones, según corresponda:
+5. Para cada usuario, evalúe las detecciones de riesgo y seleccione una de las siguientes acciones, según corresponda:
 
-    - Restablecer contraseña: cambie o restablezca la contraseña del usuario.
+    - Restablecer contraseña: cambie o restablezca la contraseña de usuario.
 
-    - Bloquear el inicio de sesión: impedir que alguien inicie sesión como este usuario.
+    - Bloquear inicio de sesión: impedir que nadie inicie sesión como este usuario.
 
     - Confirmar que el usuario está en peligro: establezca el estado de riesgo en confirmado en peligro.
 
-    - Descartar riesgo de usuario: establezca el estado de riesgo en descartado.
+    - Descartar el riesgo de usuario: establezca el estado de riesgo en descartado.
 
 ## <a name="take-action-on-multiple-user-accounts-at-once"></a>Realizar acciones en varias cuentas de usuario a la vez
 
-Para tomar medidas en varios usuarios afectados a la vez:
+Para realizar acciones en varios usuarios afectados a la vez:
 
-1. En la **pestaña Usuarios arriesgados** , seleccione el conjunto de usuarios en los que desea realizar acciones.
+1. En la pestaña **Usuarios de riesgo** , seleccione el conjunto de usuarios en los que desea realizar acciones.
 
 2. Elija una de las siguientes acciones para realizar:
 
@@ -82,12 +82,12 @@ Para tomar medidas en varios usuarios afectados a la vez:
 
     - Confirmar que el usuario está en peligro
 
-    - Descartar riesgo de usuario
+    - Descartar el riesgo del usuario
 
 > [!NOTE]
-> Si la organización que está administrando tiene una licencia Azure AD Premium P2, se recomienda habilitar las directivas de acceso condicional basadas en riesgos del usuario. Para obtener más información, [vea Conditional Access: User risk-based Conditional Access](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user).
+> Si la organización que administra tiene una licencia de Azure AD Premium P2, se recomienda habilitar directivas de acceso condicional basadas en riesgos de usuario. Para obtener más información, vea [Acceso condicional: Acceso condicional basado en riesgos del usuario](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user).
 
 ## <a name="related-content"></a>Contenido relacionado
-[Tutorial: Usar detecciones de riesgos para inicios](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) de sesión de usuario para desencadenar Azure AD autenticación multifactor o cambios de contraseña (artículo)\
-[¿Cuál es el riesgo?](/azure/active-directory/identity-protection/concept-identity-protection-risks) (artículo) \
-[Corregir riesgos y desbloquear usuarios](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock) (artículo)
+[Tutorial: Uso de detecciones de riesgo para inicios de sesión de usuario para desencadenar Azure AD cambios de contraseña o multifactor authentication](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) (artículo)\
+[¿Qué es el riesgo?](/azure/active-directory/identity-protection/concept-identity-protection-risks) (artículo) \
+[Corrección de riesgos y desbloqueo de usuarios](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock) (artículo)

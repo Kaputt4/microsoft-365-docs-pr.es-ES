@@ -1,5 +1,5 @@
 ---
-title: Comprender las suscripciones y licencias en Microsoft 365 para empresas
+title: Descripción de las suscripciones y licencias en Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -20,26 +20,26 @@ ms.custom:
 - manage_licenses
 - AdminTemplateSet
 search.appverid: MET150
-description: Las aplicaciones y servicios que reciba dependen del producto Microsoft 365 que haya comprado, como Aplicaciones Microsoft 365 para negocios.
+description: Las aplicaciones y servicios que reciba dependerán de la Microsoft 365 producto que haya comprado, como Aplicaciones Microsoft 365 para negocios.
 ms.date: 07/01/2020
-ms.openlocfilehash: fefdca1b1321e19d76a227ecd313708e700b9c01
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 984b46954ab57391d5f7c1e48e42527e5c95b412
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313319"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824452"
 ---
-# <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprender las suscripciones y licencias en Microsoft 365 para empresas
+# <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Descripción de las suscripciones y licencias en Microsoft 365 para empresas
 
-Cuando compras una suscripción a Microsoft 365 para empresas, te registras para un conjunto de aplicaciones y servicios que pagas mensualmente o anualmente. Las aplicaciones y servicios que reciba como parte de la suscripción dependen del producto que haya comprado, como Aplicaciones Microsoft 365 para negocios o Microsoft 365 Empresa Estándar. Puede ver lo que incluye cada producto en la [Microsoft 365 para pequeñas y medianas empresas](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1).
+Al comprar una suscripción a Microsoft 365 para empresas, se registra para obtener un conjunto de aplicaciones y servicios que paga mensualmente o anualmente. Las aplicaciones y servicios que reciba como parte de su suscripción dependen del producto que haya comprado, como Aplicaciones Microsoft 365 para negocios o Microsoft 365 Empresa Estándar. Puede ver lo que viene con cada producto en la [página Microsoft 365 para pequeñas y medianas empresas](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1).
 
-Cuando compra una suscripción, debe especificar el número de licencias que necesita, en función de cuántos usuarios tiene en su organización. Después de comprar una suscripción, crea cuentas para los usuarios de la organización y, a continuación, asigna una licencia a cada persona. A medida que cambien las necesidades de la organización, puede comprar más licencias para dar cabida a personas nuevas o reasignar licencias a otros usuarios cuando alguien abandone la organización.
+Cuando compra una suscripción, debe especificar el número de licencias que necesita, en función de cuántos usuarios tiene en su organización. Después de comprar una suscripción, crea cuentas para los usuarios de su organización y, a continuación, asigna una licencia a cada persona. A medida que cambian las necesidades de la organización, puede comprar más licencias para dar cabida a nuevas personas o reasignar licencias a otros usuarios cuando alguien deje la organización.
 
-Si tiene más de una suscripción, puede asignar licencias a usuarios diferentes para cada suscripción. Por ejemplo, puede asignar todos los usuarios a todos los Microsoft 365 y servicios como parte de una Microsoft 365 Empresa Estándar suscripción. También puede asignar un subconjunto de usuarios a Visio Online a través de una suscripción Visio independiente.
+Si tiene más de una suscripción, puede asignar licencias a usuarios diferentes para cada suscripción. Por ejemplo, puede asignar todos los usuarios a todas las aplicaciones y servicios Microsoft 365 como parte de una suscripción de Microsoft 365 Empresa Estándar. También puede asignar un subconjunto de usuarios a Visio Online a través de una suscripción Visio independiente.
 
 ## <a name="how-many-devices-can-people-install-office-on"></a>¿En cuántos dispositivos se puede instalar Office?
 
-Si la suscripción incluye cualquiera de los siguientes productos, cada persona puede instalar Office en hasta cinco equipos pc o Mac, cinco tabletas y cinco teléfonos.
+Si su suscripción incluye cualquiera de los siguientes productos, cada persona puede instalar Office en hasta cinco pc o Mac, cinco tabletas y cinco teléfonos.
 
 :::row:::
    :::column span="":::
@@ -50,16 +50,16 @@ Si la suscripción incluye cualquiera de los siguientes productos, cada persona 
    :::column-end:::
 :::row-end:::
 
-## <a name="what-happens-when-you-assign-a-license-to-someone"></a>¿Qué sucede cuando asigna una licencia a alguien?
+## <a name="what-happens-when-you-assign-a-license-to-someone"></a>¿Qué ocurre cuando se asigna una licencia a alguien?
 
 En la tabla siguiente, se muestra una lista con lo que sucede automáticamente al asignar una licencia a un usuario:
   
-|**Si la suscripción tiene este servicio**|**Esto sucede automáticamente**|
+|Si la suscripción tiene este servicio|Esto sucede automáticamente|
 |:-----|:-----|
-|Exchange Online  <br/> |Se crea un buzón para el usuario. <br/> Para obtener información sobre el SLA para que esta tarea se complete, vea ["Setting up..." mensajes en el Centro de administración de Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
-|SharePoint Online  <br/> |Se asignan al usuario permisos de edición para el sitio de grupo predeterminado de SharePoint Online.  <br/> |
-|Skype Empresarial Online  <br/> |La persona tiene acceso a las características asociadas con la licencia.  <br/> |
-|Aplicaciones Microsoft 365 para empresas y Aplicaciones Microsoft 365 para negocios  <br/> |La persona puede descargar Office aplicaciones en hasta cinco Mac o PC, cinco tabletas y cinco smartphones.  <br/> |
+|Exchange Online|Se crea un buzón para el usuario. <br/> Para obtener información sobre el Acuerdo de Nivel de Servicio para que esta tarea se complete, consulte ["Configuración..." mensajes en el Centro de administración de Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
+|SharePoint Online|Se asignan al usuario permisos de edición para el sitio de grupo predeterminado de SharePoint Online.|
+|Skype Empresarial Online|La persona tiene acceso a las características asociadas a la licencia.|
+|Aplicaciones Microsoft 365 para empresas y Aplicaciones Microsoft 365 para negocios|La persona puede descargar Office aplicaciones en hasta cinco Mac o PC, cinco tabletas y cinco smartphones.|
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Información sobre las licencias para los buzones que no son de usuario
 
@@ -67,19 +67,19 @@ No es necesario asignar licencias a buzones de recursos, buzones de sala y buzon
   
 - [Crear un buzón compartido](../../admin/email/create-a-shared-mailbox.md)
 - [Quitar la licencia de un buzón compartido](../../admin/email/remove-license-from-shared-mailbox.md)
-- [Buzones compartidos en Exchange Online](/exchange/collaboration-exo/shared-mailboxes) para todos los demás Microsoft 365 planes.
+- [Buzones compartidos en Exchange Online](/exchange/collaboration-exo/shared-mailboxes) para todos los demás planes de Microsoft 365.
 
-## <a name="who-can-assign-licenses"></a>Quién Puede asignar licencias?
+## <a name="who-can-assign-licenses"></a>Quién puede asignar licencias?
 
 Los distintos tipos de administradores pueden trabajar con las licencias de diferentes maneras, dependiendo de sus roles. Consulte la tabla siguiente para ver un resumen de las opciones más habituales. Para obtener una lista completa de los roles y los privilegios del administrador, vea [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
   
-|**Rol de administrador**|**Asignar una licencia**|**Unassign a license**|**Comprar más licencias**|**Eliminar una cuenta**|
+|Rol de administrador|Asignación de una licencia|Anulación de la asignación de una licencia|Comprar más licencias|Eliminar una cuenta|
 |:-----|:-----|:-----|:-----|:-----|
-|Administrador de facturación  <br/> |No  <br/> |No  <br/> |Sí  <br/> |No  <br/> |
-|Administrador global  <br/> |Sí  <br/> |Sí  <br/> |Sí  <br/> |Sí  <br/> |
-|Administrador de licencias <br/> |Sí <br/>|Sí <br/> |No <br/> |No <br/> |
-|Administrador de soporte técnico del servicio  <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
-|Administrador de usuarios  <br/> |Sí  <br/> |Sí  <br/> |No  <br/> |Sí  <br/> |
+|Administrador de facturación|No|No|Sí|No|
+|Administrador global|Sí|Sí|Sí|Sí|
+|Administrador de licencias|Sí|Sí|No|No|
+|Administrador de soporte técnico del servicio|No|No|No|No|
+|Administrador de usuarios|Sí|Sí|No|Sí|
 
 ## <a name="related-content"></a>Contenido relacionado
 

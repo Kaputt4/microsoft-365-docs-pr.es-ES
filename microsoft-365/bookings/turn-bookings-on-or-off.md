@@ -10,12 +10,12 @@ ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Obtenga información sobre cómo obtener acceso a Microsoft Bookings en Microsoft 365.
-ms.openlocfilehash: a2ab25b3b187ba45dfe460991b91e77d70a2bb70
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 28398faba7c21b6d3cce84063934268dad11fd64
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715283"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823088"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Activa o desactiva Microsoft Bookings
 
@@ -33,7 +33,7 @@ Bookings se pueden activar o desactivar para toda la organización o para usuari
 
 1. Inicie sesión en el Centro de administración de Microsoft 365 como administrador global.
 
-2. En el centro de administración, vaya a  **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Configuración de la organización**</a>.
+2. En el centro de administración, vaya a **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**configuración de la organización**</a>.
 
 3. Active la casilla **Permitir que la organización use Bookings** para habilitar o deshabilitar Bookings para su organización.
 

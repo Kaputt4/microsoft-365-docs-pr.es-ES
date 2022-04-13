@@ -15,97 +15,95 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar la lista de inquilinos.
-ms.openlocfilehash: 3c62761bdb5fbed08be07e909d465aa0a790ff97
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar la lista de inquilinos.
+ms.openlocfilehash: 2f9d38bad24d20c53a1bafe44b1b831369957b71
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330431"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824386"
 ---
 # <a name="manage-your-tenant-list"></a>Administrar la lista de inquilinos
 
-Para ayudarle a administrar la lista de inquilinos en Microsoft 365 Lighthouse, puede aplicar etiquetas personalizadas a los inquilinos. Estas etiquetas se pueden usar para organizar los inquilinos y también pueden ayudarle a filtrar las vistas y los conocimientos existentes disponibles para conjuntos relevantes de inquilinos. Puede administrar las etiquetas desde la página Inquilinos. Una vez creado y asignado, puede filtrar los datos dentro de los inquilinos, usuarios, dispositivos, administración de amenazas y Windows 365 páginas en función de una etiqueta.
+Para ayudarle a administrar la lista de inquilinos en Microsoft 365 Lighthouse, puede aplicar etiquetas personalizadas a los inquilinos. Estas etiquetas se pueden usar para organizar los inquilinos y también pueden ayudarle a filtrar las vistas existentes y la información disponible para los conjuntos de inquilinos pertinentes. Puede administrar las etiquetas desde la página Inquilinos. Una vez creados y asignados, puede filtrar los datos dentro de las páginas Inquilinos, Usuarios, Dispositivos, Administración de amenazas y Windows 365 en función de una etiqueta.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Para administrar etiquetas de inquilino, debe:
+Para administrar las etiquetas de inquilino, debe:
 
-- Cumpla los [requisitos para Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+- Cumpla los [requisitos de Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
-- Complete los procesos descritos en el artículo [Registrarse Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) registro.
+- Complete los procesos descritos en el artículo [Registrarse para Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-- Complete los procesos descritos en el artículo [Configurar Microsoft 365 Lighthouse seguridad del portal](m365-lighthouse-configure-portal-security.md).
+- Complete los procesos descritos en el artículo [Configuración de la seguridad del portal de Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md).
 
-- Ser administrador global del inquilino asociado.
+- Sea administrador global del inquilino del asociado.
 
-## <a name="create-a-tag"></a>Crear una etiqueta
+## <a name="create-a-tag"></a>Creación de una etiqueta
 
-1. En el panel de navegación izquierdo de Faro, seleccione **Inquilinos**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Inquilinos**.
 
 2. Seleccione **Administrar etiquetas**.
 
-3. En el **panel Administrar etiquetas** , seleccione **Agregar etiqueta**.
+3. En el panel **Administrar etiquetas** , seleccione **Agregar etiqueta**.
 
 4. Escriba un nombre y una descripción.
 
 5. Seleccione **Guardar**.
 
-## <a name="edit-a-tag"></a>Editar una etiqueta
+## <a name="edit-a-tag"></a>Edición de una etiqueta
 
-1. En el panel de navegación izquierdo de Faro, seleccione **Inquilinos**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Inquilinos**.
 
 2. Seleccione **Administrar etiquetas**.
 
-3. En el **panel Administrar etiquetas** , seleccione la etiqueta que desea editar.
+3. En el panel **Administrar etiquetas** , seleccione la etiqueta que desea editar.
 
 4. Edite el nombre o la descripción según sea necesario.
 
 5. Seleccione **Guardar**.
 
-## <a name="assign-a-tag"></a>Asignar una etiqueta
+## <a name="assign-a-tag"></a>Asignación de una etiqueta
 
-1. En el panel de navegación izquierdo de Faro, seleccione **Inquilinos**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Inquilinos**.
 
-2. En la lista de inquilinos, seleccione los tres puntos (más acciones) junto al espacio empresarial que desea etiquetar.
+2. En la lista de inquilinos, seleccione los tres puntos (más acciones) junto al inquilino que desea etiquetar.
 
 3. Seleccione **Etiquetas**.
 
 4. Seleccione una etiqueta de la lista. Solo puede seleccionar una etiqueta a la vez.
 
-Las etiquetas que ya están asignadas al inquilino tendrán una marca de verificación a la derecha del nombre de la etiqueta. También puede asignar una etiqueta a varios inquilinos seleccionando la casilla situada junto a cada inquilino de la lista, seleccionando Asignar etiquetas y, a continuación **,** seleccionando una etiqueta de la lista.
+Las etiquetas que ya están asignadas al inquilino tendrán una marca de verificación a la derecha del nombre de la etiqueta. También puede asignar una etiqueta a varios inquilinos seleccionando la casilla situada junto a cada inquilino de la lista, seleccionando **Asignar etiquetas** y, a continuación, seleccionando una etiqueta de la lista.
 
 > [!NOTE]
 > Puede crear hasta 30 etiquetas únicas y asignarlas a tantos inquilinos como sea necesario.
 
-## <a name="delete-a-tag"></a>Eliminar una etiqueta
+## <a name="delete-a-tag"></a>Eliminación de una etiqueta
 
-1. En el panel de navegación izquierdo de Faro, seleccione **Inquilinos**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Inquilinos**.
 
 2. Seleccione **Administrar etiquetas**.
 
-3. En el **panel Administrar etiquetas** , seleccione la etiqueta que desea eliminar.
+3. En el panel **Administrar etiquetas** , seleccione la etiqueta que desea eliminar.
 
 4. Seleccione **Eliminar etiqueta**.
 
 ## <a name="remove-a-tag"></a>Quitar una etiqueta
 
-1. En el panel de navegación izquierdo de Faro, seleccione **Inquilinos**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Inquilinos**.
 
-2. En la lista de inquilinos, seleccione los tres puntos (más acciones) junto al espacio empresarial que desea editar.
+2. En la lista de inquilinos, seleccione los tres puntos (más acciones) junto al inquilino que desea editar.
 
 3. Seleccione **Etiquetas**.
 
 4. Seleccione la etiqueta que desea quitar.
 
-Las etiquetas que están asignadas actualmente tienen una marca de verificación a la derecha del nombre. También puede quitar una etiqueta de varios inquilinos seleccionando la casilla situada junto a cada inquilino de la lista, seleccionando Asignar etiquetas y, a continuación **,** seleccionando una etiqueta activada de la lista.
+Las etiquetas asignadas actualmente tienen una marca de verificación a la derecha del nombre. También puede quitar una etiqueta de varios inquilinos seleccionando la casilla situada junto a cada inquilino de la lista, seleccionando **Asignar etiquetas** y, a continuación, seleccionando una etiqueta activada de la lista.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
-Después de crear y asignar etiquetas, puede usarlas para filtrar los inquilinos. Vaya a cualquiera de las otras páginas (Usuarios, Dispositivos, Administración de amenazas o Windows 365) y seleccione una o más etiquetas en el filtro Inquilino. Puede crear nuevas etiquetas para admitir vistas específicas basadas en cada página.
+Después de crear y asignar etiquetas, puede usarlas para filtrar los inquilinos. Vaya a cualquiera de las otras páginas (Usuarios, Dispositivos, Administración de amenazas o Windows 365) y seleccione una o varias etiquetas en el filtro Inquilino. Puede crear nuevas etiquetas para admitir vistas específicas basadas en cada página.
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Registrarse para obtener Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (artículo)  
-[Microsoft 365 Lighthouse de la página de cumplimiento de dispositivos](m365-lighthouse-device-compliance-page-overview.md) (artículo)  
-[Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)
+[Introducción a la](m365-lighthouse-sign-up.md) [página de cumplimiento](m365-lighthouse-device-compliance-page-overview.md) de dispositivos de Microsoft 365 Lighthouse (artículo) Microsoft 365 Lighthouse (artículo) [Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)

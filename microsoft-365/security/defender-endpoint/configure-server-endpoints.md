@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6e1efe1a5c5f87e0a71c5e96b28498a6faf296c
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: f06ed934f1ba1a24ba16fe3919d37e10526a3a2f
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783741"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823858"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de servidores Windows al servicio Microsoft Defender para punto de conexión
 
@@ -183,7 +183,7 @@ Tendrá que descargar los paquetes de **instalación** e **incorporación** desd
    > [!NOTE]
    > En Windows Server 2012R2, el paquete de instalación instalará Antivirus de Microsoft Defender y estará activo a menos que lo establezca en modo pasivo. En Windows Server 2016, Antivirus de Microsoft Defender debe instalarse como una característica (consulte [Cambiar a MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)) primero y totalmente actualizado antes de continuar con la instalación.
    > 
-   > Si ejecuta una solución antimalware que no es de Microsoft, asegúrese de agregar exclusiones para Antivirus de Microsoft Defender ([de esta lista de procesos de Microsoft Defender en la pestaña Procesos de Defender](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)) a la solución que no es de Microsoft antes de la instalación.  También se recomienda agregar soluciones de seguridad que no sean de Microsoft a la lista de exclusión del Antivirus de Defender.
+   > Si ejecuta una solución antimalware que no es de Microsoft, asegúrese de agregar exclusiones para Antivirus de Microsoft Defender ([de esta lista de procesos de Microsoft Defender en la pestaña Procesos de Defender](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)) a la solución que no es de Microsoft antes de la instalación.  También se recomienda agregar soluciones de seguridad que no sean de Microsoft a la lista de exclusión del Antivirus de Defender.
 
 
 El **paquete de instalación** contiene un archivo MSI que instala el agente de Microsoft Defender para punto de conexión.

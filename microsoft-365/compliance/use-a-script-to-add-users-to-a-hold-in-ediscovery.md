@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
 description: Obtenga información sobre cómo ejecutar un script para agregar buzones & OneDrive para la Empresa sitios a una nueva retención asociada a un caso de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365.
-ms.openlocfilehash: a678649ebd15a34bdfe5765449d41feae1b14901
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 10a605b422178e5006d8a027a697ca6745f82b98
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761249"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824496"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Uso de un script para agregar usuarios a una suspensión en un caso de eDiscovery principal
 
@@ -47,7 +47,7 @@ Estos son los pasos para que esto suceda:
 
 - Debe ser miembro del grupo de roles administrador de eDiscovery en el Centro de cumplimiento de Microsoft 365 y un administrador de SharePoint Online para ejecutar el script en el paso 3. Para obtener más información, vea [Asignar permisos de exhibición de documentos electrónicos en el Centro de cumplimiento de Office 365 Security &](assign-ediscovery-permissions.md).
 
-- Se puede agregar un máximo de 1000 buzones y 100 sitios a una suspensión asociada a un caso de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365. Suponiendo que cada usuario que quiera colocar en espera tenga un sitio OneDrive para la Empresa, puede agregar un máximo de 100 usuarios a una suspensión mediante el script de este artículo.
+- Se puede agregar un máximo de 1000 buzones y 100 sitios a una suspensión asociada a un caso de eDiscovery principal en el Centro de cumplimiento de Microsoft 365. Suponiendo que cada usuario que quiera colocar en espera tenga un sitio OneDrive para la Empresa, puede agregar un máximo de 100 usuarios a una suspensión mediante el script de este artículo.
 
 - Asegúrese de guardar la lista de usuarios que cree en el paso 2 y el script del paso 3 en la misma carpeta. Esto facilitará la ejecución del script.
 

@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender API avanzada de búsqueda
-description: Obtenga información sobre cómo ejecutar consultas de búsqueda avanzadas con la API avanzada de Microsoft 365 Defender de búsqueda de Microsoft 365 Defender
-keywords: Búsqueda avanzada, API, api, M365 Defender, Microsoft 365 Defender
+title: Microsoft 365 Defender API de búsqueda avanzada
+description: Aprenda a ejecutar consultas de búsqueda avanzadas mediante la API de búsqueda avanzada de Microsoft 365 Defender
+keywords: Búsqueda avanzada, API, API, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 05957fcf7cf2b3b03fbc757fc8b21e67156b285a
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: d01cdacc40b58eb940b2773606221b4fdbe18728
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500835"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823198"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender API de búsqueda avanzada
 
@@ -39,36 +39,36 @@ ms.locfileid: "64500835"
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
 
-[La búsqueda avanzada](advanced-hunting-overview.md) es una herramienta de búsqueda de amenazas [](advanced-hunting-query-language.md) que usa consultas especialmente construidas para examinar los últimos 30 días de datos de eventos en Microsoft 365 Defender. Puedes usar consultas avanzadas de búsqueda para inspeccionar actividad inusual, detectar posibles amenazas e incluso responder a ataques. La API de búsqueda avanzada le permite consultar programáticamente los datos de eventos.
+[La búsqueda avanzada](advanced-hunting-overview.md) es una herramienta de búsqueda de amenazas que usa [consultas especialmente construidas](advanced-hunting-query-language.md) para examinar los últimos 30 días de datos de eventos en Microsoft 365 Defender. Puede usar consultas de búsqueda avanzadas para inspeccionar actividades inusuales, detectar posibles amenazas e incluso responder a ataques. La API de búsqueda avanzada permite consultar datos de eventos mediante programación.
 
 ## <a name="quotas-and-resource-allocation"></a>Cuotas y asignación de recursos
 
-Las siguientes condiciones se relacionan con todas las consultas.
+Las condiciones siguientes se relacionan con todas las consultas.
 
 1. Las consultas exploran y devuelven datos de los últimos 30 días.
 2. Los resultados pueden devolver hasta 100 000 filas.
 3. Puede realizar hasta 45 llamadas por minuto por inquilino.
 4. Las consultas se bloquean si el inquilino ha alcanzado el 100 % hasta después del siguiente ciclo de 15 minutos.
-5. Si una sola solicitud se ejecuta durante más de 10 minutos, agotará el tiempo de espera y devolverá un error.
+5. Si una sola solicitud se ejecuta durante más de 10 minutos, se agota el tiempo de espera y se devuelve un error.
 6. Un `429` código de respuesta HTTP indica que ha alcanzado una cuota, ya sea por número de solicitudes enviadas o por tiempo de ejecución asignado. Lea el cuerpo de la respuesta para comprender el límite que ha alcanzado. 
 
 > [!NOTE]
-> Todas las cuotas enumeradas anteriormente (por ejemplo, 15 llamadas por minuto) son por tamaño de espacio empresarial. Estas cuotas son las mínimas.
+> Todas las cuotas enumeradas anteriormente (por ejemplo, 15 llamadas por minuto) son por tamaño de inquilino. Estas cuotas son el mínimo.
 
 ## <a name="permissions"></a>Permisos
 
-Uno de los siguientes permisos es necesario para llamar a la API de búsqueda avanzada. Para obtener más información, incluido cómo elegir permisos, vea [Access the Microsoft 365 Defender Protection API](api-access.md)
+Se requiere uno de los permisos siguientes para llamar a la API de búsqueda avanzada. Para obtener más información, incluido cómo elegir permisos, consulte [Acceso a las API de Microsoft 365 Defender Protection](api-access.md).
 
-Tipo de permiso | Permiso | Nombre para mostrar de permisos
+Tipo de permiso | Permiso | Nombre para mostrar del permiso
 -|-|-
-Aplicación | AdvancedQuery.Read.All| Ejecutar consultas avanzadas
-Delegado (cuenta profesional o educativa) | AdvancedQuery.Read | Ejecutar consultas avanzadas
+Aplicación | AdvancedHunting.Read.All| Ejecución de consultas avanzadas
+Delegado (cuenta profesional o educativa) | AdvancedHunting.Read | Ejecución de consultas avanzadas
 
 >[!Note]
 > Al obtener un token con credenciales de usuario:
 >
->- El usuario debe tener el rol de AD "Ver datos"
->- El usuario debe tener acceso al dispositivo en función de la configuración del grupo de dispositivos.
+>- El usuario debe tener el rol de AD "Ver datos".
+>- El usuario debe tener acceso al dispositivo, en función de la configuración del grupo de dispositivos.
 
 ## <a name="http-request"></a>Solicitud HTTP
 
@@ -85,25 +85,25 @@ Content-Type | application/json
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 
-En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
+En el cuerpo de la solicitud, proporcione un objeto JSON con los parámetros siguientes:
 
 Parámetro | Tipo | Descripción
 -|-|-
-Query | Texto | Consulta que se debe ejecutar. **Nota: obligatorio**
+Query | Texto | Consulta que se va a ejecutar. **Nota: obligatorio**
 
 ## <a name="response"></a>Respuesta
 
-Si se ejecuta correctamente, este método devolverá `200 OK`y un _objeto QueryResponse_ en el cuerpo de la respuesta.
+Si se ejecuta correctamente, este método devolverá `200 OK`y un objeto _QueryResponse_ en el cuerpo de la respuesta.
 
-El objeto response contiene tres propiedades de nivel superior:
+El objeto de respuesta contiene tres propiedades de nivel superior:
 
-1. Estadísticas: diccionario de estadísticas de rendimiento de consulta.
-2. Esquema: el esquema de la respuesta, una lista de Name-Type pares de cada columna.
-3. Resultados: una lista de eventos de búsqueda avanzados.
+1. Estadísticas: diccionario de estadísticas de rendimiento de consultas.
+2. Esquema: esquema de la respuesta, una lista de pares de Name-Type para cada columna.
+3. Resultados: una lista de eventos de búsqueda avanzada.
 
 ## <a name="example"></a>Ejemplo
 
-En el siguiente ejemplo, un usuario envía la consulta siguiente y recibe un objeto de respuesta api que `Stats`contiene , `Schema`y `Results`.
+En el ejemplo siguiente, un usuario envía la consulta siguiente y recibe un objeto de respuesta de API que contiene `Stats`, `Schema`y `Results`.
 
 ### <a name="query"></a>Query
 
@@ -114,7 +114,7 @@ En el siguiente ejemplo, un usuario envía la consulta siguiente y recibe un obj
 
 ```
 
-### <a name="response-object"></a>Response (objeto)
+### <a name="response-object"></a>Objeto Response
 
 ```json
 {
@@ -180,7 +180,7 @@ En el siguiente ejemplo, un usuario envía la consulta siguiente y recibe un obj
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Obtener acceso a Microsoft 365 Defender API de acceso](api-access.md)
-- [Más información sobre los límites de api y las licencias](api-terms.md)
-- [Comprender códigos de error](api-error-codes.md)
+- [Acceso a las API de Microsoft 365 Defender](api-access.md)
+- [Más información sobre los límites de API y las licencias](api-terms.md)
+- [Descripción de los códigos de error](api-error-codes.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Crear y calificar asignaciones, compilar y mantener contenido del curso, y colaborar en archivos en tiempo real con la nueva aplicación de interoperabilidad de herramientas de Microsoft OneDrive Learning para Canvas.
-ms.openlocfilehash: ce02be23d98d1dc54ae02a21f9bf1678d06c3d8f
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 5de027c9d7606ebe546a8dc8e087b91da7f0400e
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747234"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824572"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Integración de Microsoft OneDrive LTI con Canvas
 
@@ -30,6 +30,7 @@ La integración de Microsoft OneDrive LTI con Canvas es un proceso de dos pasos.
 - No se deben bloquear los elementos emergentes para Microsoft OneDrive.
 
 > [!NOTE]
+>
 > - Las cookies no están habilitadas de forma predeterminada en el modo de incógnito del explorador Chrome y tendrán que estar habilitadas.
 > - Microsoft OneDrive LTI funciona en modo privado en Microsoft Edge explorador. Asegúrese de que no ha bloqueado las cookies (que están habilitadas de forma predeterminada).
 
@@ -39,25 +40,25 @@ La integración de Microsoft OneDrive LTI con Canvas es un proceso de dos pasos.
 > La persona que realiza esta integración debe ser administrador de Canvas y administrador del inquilino de Microsoft 365.
 
 1. Inicie sesión en el <a href="https://onedrivelti.microsoft.com/admin" target="_blank">portal de registro de LTI de Microsoft OneDrive</a>
-1. Seleccione el botón **Consentimiento del administrador** y acepte los permisos.
+2. Seleccione el botón **Consentimiento del administrador** y acepte los permisos.
 
-> [!CAUTION]
-> Si no se realiza este paso, el siguiente paso le proporcionará un error y no podrá realizar este paso durante una hora una vez que haya recibido el error.
+   > [!CAUTION]
+   > Si no se realiza este paso, el siguiente paso le proporcionará un error y no podrá realizar este paso durante una hora una vez que haya recibido el error.
 
 3. Seleccione el botón **Crear nuevo inquilino de LTI** . En la página Registro de LTI, seleccione **Lienzo** en la lista desplegable y escriba la dirección URL base de la instancia de Canvas.
 
-> [!NOTE]
-> Si la instancia de Canvas es, por ejemplo, https://contoso.test.instructure.com](https://contoso.test.instructure.com), se debe escribir la dirección URL completa.
+   > [!NOTE]
+   > Si la instancia de Canvas es, por ejemplo, `https://contoso.test.instructure.com`, se debe escribir la dirección URL completa.
 
-:::image type="content" source="media/OneDrive-LTI-07.png" alt-text="Página de administración de inquilinos de LTI, con un campo desplegable para elegir la plataforma de consumidores LTI y un campo de texto de dirección URL.":::
+   :::image type="content" source="media/OneDrive-LTI-07.png" alt-text="Página de administración de inquilinos de LTI, con un campo desplegable para elegir la plataforma de consumidores LTI y un campo de texto de dirección URL.":::
 
 4. Copie el archivo JSON seleccionando el botón **Copiar** (un icono a la derecha que muestra dos páginas una encima de otra). Esto se usará para generar la clave en Canvas.
 
-:::image type="content" source="media/OneDrive-LTI-08.png" alt-text="Imagen que muestra el botón copiar que copiará el texto JSON mostrado y lo hará disponible para la generación de claves en Canvas.":::
+   :::image type="content" source="media/OneDrive-LTI-08.png" alt-text="Imagen que muestra el botón copiar que copiará el texto JSON mostrado y lo hará disponible para la generación de claves en Canvas.":::
 
 5. Inicie sesión en la instancia de Canvas como administrador y seleccione **Claves de desarrollador** en el menú del lado izquierdo de la página. En la lista desplegable, cree una clave para desarrolladores eligiendo **Clave LTI** en la lista desplegable de la esquina superior derecha de la página.
 
-:::image type="content" source="media/OneDrive-LTI-14.png" alt-text="Captura de pantalla que muestra la barra de navegación izquierda con las claves de desarrollador seleccionadas y la entrada de clave LTI seleccionada en una lista desplegable a la derecha de la página.":::
+   :::image type="content" source="media/OneDrive-LTI-14.png" alt-text="Captura de pantalla que muestra la barra de navegación izquierda con las claves de desarrollador seleccionadas y la entrada de clave LTI seleccionada en una lista desplegable a la derecha de la página.":::
 
 6. En la página Configurar, en la lista desplegable **Método** , seleccione **Pegar JSON** como método y pegue el texto JSON que copió en el paso 4 en el campo de texto que aparece.
 
@@ -68,11 +69,11 @@ La integración de Microsoft OneDrive LTI con Canvas es un proceso de dos pasos.
 
 7. Guarde la clave y estará disponible en Canvas en estado **Desactivado** . Active **la clave y** copie la clave especificada en la columna **Detalles** que se usará en el paso siguiente.
 
-:::image type="content" source="media/OneDrive-LTI-19.png" alt-text="Página Lienzo con la clave establecida en un estado desactivado. Tendrá que estar activada y la clave deberá copiarse de la columna de detalles de esta página.":::
+   :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="Página Lienzo con la clave establecida en un estado desactivado. Tendrá que estar activada y la clave deberá copiarse de la columna de detalles de esta página.":::
 
 8. Vuelva al portal de registro de Microsoft OneDrive LTI y pegue la clave en el campo **Id. de cliente de Canvas**. Seleccione **Siguiente** cuando esté listo.
 
-:::image type="content" source="media/OneDrive-LTI-20.png" alt-text="La página de registro del inquilino de LTI, que muestra el texto JSON y el cuadro de texto en el que se debe copiar la clave.":::
+   :::image type="content" source="media/OneDrive-LTI-20.png" alt-text="La página de registro del inquilino de LTI, que muestra el texto JSON y el cuadro de texto en el que se debe copiar la clave.":::
 
 9. Revise y guarde los cambios. Se mostrará un mensaje al registrarse correctamente.
 10. Los detalles del registro también se pueden revisar seleccionando el botón **Ver inquilinos LTI** en la página principal.

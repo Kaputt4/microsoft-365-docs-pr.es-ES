@@ -14,19 +14,19 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre la comprensión de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: c7488fcb44116f030d538b416af1f04b33382519
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 639decf383e534253b014366d9d8c51a83a76675
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507331"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64822746"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Introducción a la comprensión de documentos en Microsoft SharePoint Syntex
 
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSu7] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSu7]
 
 </br>
 
@@ -40,11 +40,11 @@ Los modelos de comprensión mediante documentos se crean y se administran en un 
 > [!NOTE]
 > Los tipos de contenido de solo lectura o sellado no pueden ser actualizados, de manera que no pueden ser usados en un modelo.
 
-Agregue *clasificadores y extractores* *a* los modelos de comprensión de documentos para realizar las siguientes acciones: 
+Agregue *clasificadores* y *extractores a los* modelos de comprensión de documentos para realizar las siguientes acciones:
 
 - Los clasificadores se usan para identificar y clasificar documentos cargados en la biblioteca de documentos. Por ejemplo, un clasificador puede ser "entrenado" para identificar todos los documentos de *renovación de contrato* que se carguen en la biblioteca. El tipo de contenido de renovación de contrato lo define el usuario al crear el clasificador.
 
-- Los extractores extraen información de estos documentos. Por ejemplo, para cada documento de renovación de contrato identificado en la biblioteca de documentos, se mostrarán las columnas que muestran la fecha *de* inicio del servicio y *el cliente* para cada documento. 
+- Los extractores extraen información de estos documentos. Por ejemplo, para cada documento de renovación de contrato identificado en la biblioteca de documentos, se mostrarán columnas que muestran la *fecha de inicio del servicio* y *el cliente* de cada documento. 
 
 Puede usar archivos de ejemplo para entrenarlos y probarlos en el modelo. Los archivos de ejemplo proporcionan ejemplos al modelo de lo que debe buscar al intentar identificar y extraer datos de archivos. Por ejemplo, entrenaría los clasificadores y extracciones de renovación de contrato con ejemplos de documentos de renovación de contratos con los que trabaja su empresa. También puede usar archivos de ejemplo para probar la efectividad del modelo.
 
@@ -52,9 +52,9 @@ Después de publicar el modelo, utilice el centro de contenido para aplicarlo a 
 
 ## <a name="file-limitations"></a>Limitaciones de archivos
 
-Los modelos de comprensión de documentos usan la tecnología de reconocimiento óptico de caracteres (OCR) para examinar archivos PDF, imágenes y TIFF. Los archivos se examinan cuando se entrena un modelo con archivos de ejemplo y cuando se ejecuta el modelo en archivos de una biblioteca de documentos.
+Los modelos de comprensión de documentos usan la tecnología de reconocimiento óptico de caracteres (OCR) para examinar archivos PDF, imágenes y archivos TIFF. Los archivos se examinan al entrenar un modelo con archivos de ejemplo y al ejecutar el modelo en archivos de una biblioteca de documentos.
 
-Tenga en cuenta las siguientes diferencias Microsoft Office archivos basados en texto y archivos examinados por OCR (PDF, imagen o TIFF):
+Tenga en cuenta las siguientes diferencias sobre Microsoft Office archivos basados en texto y archivos escaneados con OCR (PDF, imagen o TIFF):
 
 - Archivos de Office: truncados a 64 000 caracteres (durante el entrenamiento y cuando se ejecuta en archivos de una biblioteca de documentos).
 
@@ -70,10 +70,10 @@ El procesamiento de OCR funciona mejor en documentos que cumplen los siguientes 
 
 - El tamaño de archivo combinado de los documentos usados para el aprendizaje no debe superar los 50 MB por colección y los documentos PDF no deben tener más de 500 páginas.
 
-- Para las imágenes, las dimensiones deben estar entre 50 × 50 y 10 000 × 10 000 píxeles.
+- Para las imágenes, las dimensiones deben estar entre 50 x 50 y 10 000 x 10 000 píxeles.
    > [!NOTE]
    > Es posible que las imágenes muy anchas o con dimensiones inusuales (por ejemplo, planos de planta) se trunquen en el proceso de OCR y pierdan precisión.
- 
+
 - Para los archivos PDF, las dimensiones deben ser como máximo de 17 x 17 pulgadas, que corresponden al tamaño de papel A3 o legal y tamaños menores.
 
 - Si se escanean desde documentos en papel, las digitalizaciones deberían ser imágenes de alta calidad.
@@ -81,7 +81,11 @@ El procesamiento de OCR funciona mejor en documentos que cumplen los siguientes 
 - Debe usar el alfabeto latino (caracteres en inglés).
 
 > [!NOTE]
-> Actualmente, el Generador de AI no admite los siguientes tipos de datos de entrada de procesamiento de formularios:<br>- Casillas o botones de radio<br>- Firmas<br>- Archivos PDF que se pueden rellenar
+> Actualmente, el Generador de AI no admite los siguientes tipos de datos de entrada de procesamiento de formularios:
+>
+> - Casillas o botones de radio
+> - Firmas
+> - Archivos PDF rellenables
 
 ### <a name="supported-file-types"></a>Tipos de archivo compatibles
 
@@ -112,7 +116,7 @@ Los modelos de comprensión mediante documentos admiten los siguientes tipos de 
 
 ### <a name="supported-languages"></a>Idiomas admitidos
 
-Los modelos de comprensión de documentos *admiten* todos los idiomas basados en latín, incluidos:
+Los modelos de comprensión de documentos admiten *todos los* idiomas basados en latín, incluidos:
 
 - Inglés
 - Francés
@@ -120,8 +124,8 @@ Los modelos de comprensión de documentos *admiten* todos los idiomas basados en
 - Italiano
 - Español
 
-
 ## <a name="see-also"></a>Consulte también
+
 [Crear un clasificador](create-a-classifier.md)
 
 [Crear un extractor](create-an-extractor.md)
@@ -130,7 +134,7 @@ Los modelos de comprensión de documentos *admiten* todos los idiomas basados en
 
 [Crear un modelo de procesamiento de formularios](create-a-form-processing-model.md)
 
-[Aplicar un modelo](apply-a-model.md)   
+[Aplicar un modelo](apply-a-model.md)
 
 [Diferencia entre un modelo de comprensión de documentos y un modelo de procesamiento de formularios](difference-between-document-understanding-and-form-processing-model.md)
   

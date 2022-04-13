@@ -1,5 +1,5 @@
 ---
-title: Solucionar problemas y resolver mensajes de error en Microsoft 365 Lighthouse
+title: Solución de problemas y resolución de problemas y mensajes de error en Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,125 +16,124 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga ayuda para solucionar problemas y mensajes de error.
-ms.openlocfilehash: 24f282420bb69188106178cefc6fb89968f4fcf6
-ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
+ms.openlocfilehash: 1126db76129a0f3cf6b65921a6e731f02d7311d3
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64645042"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824078"
 ---
-# <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>Solucionar problemas y resolver mensajes de error en Microsoft 365 Lighthouse
+# <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>Solución de problemas y resolución de problemas y mensajes de error en Microsoft 365 Lighthouse
 
 En este artículo se describen los mensajes de error y los problemas que puede encontrar al usar Microsoft 365 Lighthouse y se proporcionan los pasos de solución de problemas que puede seguir para resolverlos.
 
-## <a name="partner-onboarding"></a>Incorporación de partners
+## <a name="partner-onboarding"></a>Incorporación de asociados
 
-### <a name="message-when-trying-to-access-lighthouse-microsoft-365-lighthouse-doesnt-support-indirect-providers-at-this-time-you-must-be-an-indirect-reseller-or-direct-bill-partner-to-use-this-service"></a>Mensaje al intentar obtener acceso a Lighthouse: "Microsoft 365 Lighthouse no admite proveedores indirectos en este momento, debe ser un revendedor indirecto o socio de facturación directa para usar este servicio"
+### <a name="message-when-trying-to-access-lighthouse-microsoft-365-lighthouse-doesnt-support-indirect-providers-at-this-time-you-must-be-an-indirect-reseller-or-direct-bill-partner-to-use-this-service"></a>Mensaje al intentar acceder a Lighthouse: "Microsoft 365 Lighthouse no admite proveedores indirectos en este momento, debe ser revendedor indirecto o asociado de factura directa para usar este servicio"
 
-**Causa:** Intentó acceder a Lighthouse como socio de factura indirecta. En este momento, Lighthouse solo admite revendedores indirectos y socios de facturación directa.
+**Causa:** Intentó acceder a Lighthouse como asociado de factura indirecta. En este momento, Lighthouse solo admite revendedores indirectos y asociados de factura directa.
 
-**Resolución:** Para obtener una lista completa de cualificaciones y requisitos, consulte [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md). Si no es un proveedor indirecto y cree que recibió este mensaje por error, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+**Resolución:** Para obtener una lista completa de calificaciones y requisitos, consulte [Requisitos para Microsoft 365 Lighthouse](m365-lighthouse-requirements.md). Si no es un proveedor indirecto y cree que ha recibido este mensaje por error, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
-### <a name="message-when-trying-to-access-lighthouse-you-must-be-an-indirect-reseller-or-direct-bill-partner-to-use-this-service"></a>Mensaje al intentar obtener acceso a Lighthouse: "Debe ser un revendedor indirecto o un socio de facturación directa para usar este servicio"
+### <a name="message-when-trying-to-access-lighthouse-you-must-be-an-indirect-reseller-or-direct-bill-partner-to-use-this-service"></a>Mensaje al intentar acceder a Lighthouse: "Debe ser revendedor indirecto o asociado de factura directa para usar este servicio".
 
-**Causa:** Intentó acceder a Lighthouse y no es un socio de Microsoft. Debe estar inscrito en el programa Proveedor de soluciones en la nube (CSP) como revendedor indirecto o socio de facturación directa para usar Lighthouse.
+**Causa:** Intentó acceder a Lighthouse y no es un asociado de Microsoft. Debe estar inscrito en el programa Proveedor de soluciones en la nube (CSP) como revendedor indirecto o asociado de factura directa para usar Lighthouse.
 
-**Resolución:** Para obtener una lista completa de cualificaciones y requisitos, consulte [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md). Si reúne los requisitos para acceder a Lighthouse y cree que recibió este mensaje por error, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+**Resolución:** Para obtener una lista completa de calificaciones y requisitos, consulte [Requisitos para Microsoft 365 Lighthouse](m365-lighthouse-requirements.md). Si cumple los requisitos para acceder a Lighthouse y cree que ha recibido este mensaje por error, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
-### <a name="message-when-signing-in-to-lighthouse-accept-the-partner-amendment"></a>Mensaje al iniciar sesión en Lighthouse: "Aceptar la modificación de partner"
+### <a name="message-when-signing-in-to-lighthouse-accept-the-partner-amendment"></a>Mensaje al iniciar sesión en Lighthouse: "Aceptar la enmienda del asociado"
 
-**Causa:** Intentó obtener acceso a Lighthouse antes de que un administrador global del inquilino asociado firmara la modificación de socio.
+**Causa:** Intentó acceder a Lighthouse antes de que un administrador global del inquilino del asociado haya firmado la modificación del asociado.
 
-**Resolución:** Un administrador global debe iniciar sesión en Lighthouse y aceptar la modificación de socio antes de poder acceder y trabajar en Lighthouse. Si el error persiste después de que un administrador global haya firmado la modificación, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+**Resolución:** Un administrador global debe iniciar sesión en Lighthouse y aceptar la modificación del asociado para poder acceder a Lighthouse y trabajar en este. Si el error persiste después de que un administrador global haya firmado la enmienda, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
-## <a name="customer-tenant-onboarding"></a>Incorporación de inquilinos de clientes  
+## <a name="customer-tenant-onboarding"></a>Incorporación de inquilinos del cliente  
 
 ### <a name="customer-tenants-show-a-status-other-than-active-in-the-tenant-list"></a>Los inquilinos del cliente muestran un estado distinto de "Activo" en la lista de inquilinos  
 
-**Causa:** Los inquilinos de los clientes no cumplen los siguientes criterios:
+**Causa:** Los inquilinos del cliente no cumplen los siguientes criterios:
 
-  - Debe haber configurado el acceso delegado para que el proveedor de servicios administrados (MSP) pueda administrar el inquilino del cliente*
-  - Debe tener al menos una licencia Microsoft 365 Empresa Premium, Microsoft 365 E3 o Windows 365 Business licencia
-  - No debe tener más de 1000 usuarios con licencia 
+- Debe tener el acceso delegado configurado para que el proveedor de servicios administrados (MSP) pueda administrar el inquilino del cliente*
+- Debe tener al menos una licencia de Microsoft 365 Empresa Premium, Microsoft 365 E3 o Windows 365 Business
+- No debe tener más de 1000 usuarios con licencia 
 
 **Resolución:** En la tabla siguiente se describen los distintos estados de inquilino que requieren acción y se explica cómo resolverlos.
 
-*Se requieren privilegios de administrador delegados (DAP) para incorporar clientes a Lighthouse. También se recomienda establecer privilegios de administrador delegados pormenorizados (GDAP) con los clientes para habilitar un acceso delegado más seguro. Mientras QUE DAP y GDAP coexisten, GDAP tendrá prioridad para los clientes en los que ambos modelos estén en su lugar. Pronto, los clientes con solo GDAP (y sin DAP) podrán incorporarse a Lighthouse.
-
+*Se requieren privilegios de administrador delegado (DAP) para incorporar clientes a Lighthouse. También se recomienda establecer privilegios de administración delegados granulares (GDAP) con los clientes para habilitar el acceso delegado más seguro. Aunque DAP y GDAP coexisten, GDAP tendrá prioridad para los clientes en los que ambos modelos están en vigor. Pronto, los clientes con solo GDAP (y sin DAP) podrán incorporarse a Lighthouse.
 
 | Estado | Descripción | Solución |
 |--|--|--|
-| Inactivo | El inquilino se desinbordó a petición del MSP y ya no se está administrando en Lighthouse. | Debe reactivar el espacio empresarial. En la **página Inquilinos** , seleccione los tres puntos (más acciones) junto al espacio empresarial que desea reactivar y, a continuación, **seleccione Activar inquilino**. Los datos iniciales del cliente pueden tardar entre 24 y 48 horas en aparecer en Lighthouse. |
-| Ineligible: DAP o GDAP no están configurados | No tiene privilegios de administrador de DAP o GDAP configurados con el inquilino, lo que necesita Lighthouse. | Configurar privilegios de administrador de DAP o GDAP en el Centro de partners de Microsoft. |
-| Ineligible: falta la licencia necesaria | Al inquilino le falta una licencia necesaria. Necesitan al menos una licencia Microsoft 365 Empresa Premium, Microsoft 365 E3 o Windows 365 Business licencia. | Asegúrese de que el espacio empresarial tenga al menos una Microsoft 365 Empresa Premium, Microsoft 365 E3 o Windows 365 Business licencia asignada. |
-| Ineligible: se ha superado el número de usuarios | El inquilino tiene más del máximo de 1000 usuarios con licencia permitidos por Lighthouse. | Compruebe que el inquilino no tiene más de 1000 usuarios con licencia. |
-| Ineligible: error en la comprobación geográfica | Usted y su cliente no residen en la misma región geográfica, que es requerida por Lighthouse. | Compruebe que el cliente reside en su región geográfica. Si no es así, no puede administrar el espacio empresarial en Lighthouse. |
-| En proceso | Lighthouse descubrió el inquilino, pero aún está en proceso de incorporación. | Permitir a Lighthouse 48 horas completar la incorporación del inquilino. |
+| Inactivo | El inquilino se quitó a petición del MSP y ya no se administra en Lighthouse. | Debe reactivar el inquilino. En la página **Inquilinos** , seleccione los tres puntos (más acciones) junto al inquilino que desea reactivar y, a continuación, seleccione **Activar inquilino**. Los datos iniciales del cliente pueden tardar entre 24 y 48 horas en aparecer en Lighthouse. |
+| Inelegible: DAP o GDAP no está configurado | No tiene privilegios de administrador de DAP o GDAP configurados con el inquilino, lo que Necesita Lighthouse. | Configure los privilegios de administrador de DAP o GDAP en el Centro de partners de Microsoft. |
+| No válido: falta la licencia necesaria | Al inquilino le falta una licencia necesaria. Necesitan al menos una licencia de Microsoft 365 Empresa Premium, Microsoft 365 E3 o Windows 365 Business. | Asegúrese de que el inquilino tenga al menos una licencia de Microsoft 365 Empresa Premium, Microsoft 365 E3 o Windows 365 Business asignada. |
+| No válido: se superó el recuento de usuarios | El inquilino tiene más de 1000 usuarios con licencia permitidos por Lighthouse. | Compruebe que el inquilino no tiene más de 1000 usuarios con licencia. |
+| No válido: error de comprobación geográfica | Usted y su cliente no residen en la misma región geográfica, lo que Lighthouse requiere. | Compruebe que el cliente reside en su región geográfica. Si no es así, no puede administrar el inquilino en Lighthouse. |
+| En proceso | Lighthouse descubrió el inquilino, pero todavía está en proceso de incorporación. | Espere 48 horas a Lighthouse para completar la incorporación del inquilino. |
 
-Si confirmaste que el inquilino del cliente cumple los criterios de incorporación y aún no se muestran como **activos** en Lighthouse, ponte en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+Si ha confirmado que el inquilino del cliente cumple los criterios de incorporación y que todavía no se muestran como **Activos** en Lighthouse, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
 ## <a name="access-and-permissions"></a>Acceso y permisos
 
-### <a name="message-when-trying-to-access-lighthouse-not-authorized-or-insufficient-privileges-or-access-restriction-insufficient-or-lack-of-permissions-is-causing-access-restriction"></a>Mensaje al intentar obtener acceso a Lighthouse: "No autorizado" o "Privilegios insuficientes" o "Restricción de acceso: insuficiente o falta de permisos está provocando restricción de acceso" 
+### <a name="message-when-trying-to-access-lighthouse-not-authorized-or-insufficient-privileges-or-access-restriction-insufficient-or-lack-of-permissions-is-causing-access-restriction"></a>Mensaje al intentar acceder a Lighthouse: "No autorizado" o "Privilegios insuficientes" o "Restricción de acceso: Insuficiente o falta de permisos está causando restricción de acceso" 
 
 **Causa:** No pertenece al grupo de seguridad correcto en Azure AD o no se le ha asignado el rol correcto en el Centro de partners para poder acceder a Lighthouse.
 
-**Resolución:** Asegúrese de que un administrador de su inquilino asociado con los permisos adecuados le haya asignado el grupo de seguridad GDAP correcto en Azure AD y le haya asignado el rol correcto en el Centro de partners. Además, ten en cuenta que algunas acciones de Lighthouse requieren que seas un administrador global. Para obtener más información sobre los roles GDAP y lo que cada función puede hacer, vea [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). Para obtener una descripción detallada de todos Azure AD roles y permisos integrados para GDAP, vea [Azure AD roles integrados](/azure/active-directory/roles/permissions-reference).
+**Resolución:** Asegúrese de que un administrador del inquilino del asociado con los permisos adecuados le haya asignado al grupo de seguridad de GDAP correcto en Azure AD y le haya asignado el rol correcto en el Centro de partners. Además, tenga en cuenta que algunas acciones de Lighthouse requieren que sea administrador global. Para más información sobre los roles de GDAP y lo que puede hacer cada rol, consulte [Introducción a los permisos en Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). Para obtener una descripción detallada de todos los Azure AD roles y permisos integrados para GDAP, consulte [Azure AD roles integrados](/azure/active-directory/roles/permissions-reference).
 
-Para los clientes con relaciones DAP, el administrador del partner tendrá que asignarle el rol Agente de administración o Agente de soporte técnico en el Centro de partners. Para obtener una descripción detallada de todos los roles y permisos del Centro de partners, vea [Asignar roles y permisos a los usuarios](/partner-center/permissions-overview).
+En el caso de los clientes con relaciones dap, el administrador de partners deberá asignarle el rol Agente de administración o Agente del departamento de soporte técnico en el Centro de partners. Para obtener una descripción detallada de todos los roles y permisos del Centro de partners, consulte [Asignación de roles y permisos a los usuarios](/partner-center/permissions-overview).
 
-### <a name="i-dont-see-complete-data-in-certain-areas-of-lighthouse-or-i-cant-perform-certain-tasks-or-i-cant-access-certain-tenants"></a>No veo datos completos en determinadas áreas de Lighthouse, o no puedo realizar determinadas tareas o no puedo acceder a determinados inquilinos
+### <a name="i-dont-see-complete-data-in-certain-areas-of-lighthouse-or-i-cant-perform-certain-tasks-or-i-cant-access-certain-tenants"></a>No veo datos completos en ciertas áreas de Lighthouse, o no puedo realizar ciertas tareas, o no puedo acceder a determinados inquilinos.
 
-**Causa:** Tiene acceso de GDAP limitado en función de los roles asignados al grupo Azure AD seguridad en el que se encuentra.
+**Causa:** Tiene acceso GDAP limitado en función de los roles asignados al grupo de seguridad de Azure AD en el que se encuentra.
 
-**Resolución:** Asegúrese de que un administrador de su inquilino asociado con los permisos adecuados le haya asignado el grupo de seguridad GDAP correcto en Azure AD. Además, ten en cuenta que algunas acciones de Lighthouse requieren que seas un administrador global. Para obtener más información sobre los roles GDAP y lo que cada función puede hacer, vea [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). Para obtener una descripción detallada de todos Azure AD roles y permisos integrados para GDAP, vea [Azure AD roles integrados](/azure/active-directory/roles/permissions-reference).
+**Resolución:** Asegúrese de que un administrador del inquilino del asociado con los permisos adecuados le haya asignado al grupo de seguridad de GDAP correcto en Azure AD. Además, tenga en cuenta que algunas acciones de Lighthouse requieren que sea administrador global. Para más información sobre los roles de GDAP y lo que puede hacer cada rol, consulte [Introducción a los permisos en Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). Para obtener una descripción detallada de todos los Azure AD roles y permisos integrados para GDAP, consulte [Azure AD roles integrados](/azure/active-directory/roles/permissions-reference).
 
-## <a name="customer-tenant-management"></a>Administración de inquilinos de clientes  
+## <a name="customer-tenant-management"></a>Administración de inquilinos del cliente  
 
 ### <a name="customer-tenant-has-no-data-showing-in-lighthouse"></a>El inquilino del cliente no tiene datos que se muestren en Lighthouse
 
 **Causa:** Está intentando ver los datos en Lighthouse antes de que se complete la incorporación de inquilinos.
 
-**Resolución:** Los datos iniciales del cliente pueden tardar entre 24 y 48 horas en aparecer en Lighthouse. Si han pasado más de 48 horas desde que incorporó el inquilino y aún no puede ver o cargar datos de inquilino, o no puede ver o cargar datos que anteriormente había podido, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md). Esté preparado para proporcionar registros de red relevantes y una lista de las opciones que se hayan modificado.
+**Resolución:** Los datos iniciales del cliente pueden tardar entre 24 y 48 horas en aparecer en Lighthouse. Si han pasado más de 48 horas desde que incorporó el inquilino y aún no puede ver ni cargar datos del inquilino, o no puede ver ni cargar los datos que anteriormente había podido, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md). Esté preparado para proporcionar los registros de red pertinentes y una lista de las opciones que se hayan modificado.
 
 ### <a name="customer-tenant-data-isnt-updating-after-making-changes-in-the-customer-tenant"></a>Los datos del inquilino del cliente no se actualizan después de realizar cambios en el inquilino del cliente
 
 **Causa:** Los cambios realizados dentro del inquilino del cliente pueden tardar hasta 4 horas en sincronizarse con los datos del inquilino del cliente en Lighthouse.
 
-**Resolución:** Si han pasado más de 4 horas y los datos del inquilino del cliente aún no se actualizan en Lighthouse, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md). Esté preparado para proporcionar información del inquilino del cliente.
+**Resolución:** Si han pasado más de 4 horas y los datos del inquilino del cliente siguen sin actualizarse en Lighthouse, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md). Prepárese para proporcionar información sobre el inquilino del cliente.
 
-### <a name="message-when-applying-a-baseline-to-a-customer-tenant-process-error-occurred"></a>Mensaje al aplicar una línea base a un inquilino del cliente: "Error de proceso"  
+### <a name="message-when-applying-a-baseline-to-a-customer-tenant-process-error-occurred"></a>Mensaje al aplicar una línea base a un inquilino de cliente: "Error de proceso"  
 
-**Causa:** No ha completado correctamente la configuración de Microsoft Intune dentro del inquilino del cliente.
+**Causa:** No completó correctamente la configuración de Microsoft Intune dentro del inquilino del cliente.
 
-**Resolución:** Compruebe que ha completado los pasos básicos de configuración para Intune dentro del inquilino del cliente. Si el problema persiste después de comprobar que Intune configuración completa para el inquilino del cliente, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+**Resolución:** Compruebe que ha completado los pasos de configuración básicos para Intune dentro del inquilino del cliente. Si el problema persiste después de comprobar que Intune configuración está completa para el inquilino del cliente, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
-### <a name="cant-access-partner-tenant-data-in-lighthouse"></a>No se puede acceder a los datos de inquilinos de partners en Lighthouse
+### <a name="cant-access-partner-tenant-data-in-lighthouse"></a>No se puede acceder a los datos del inquilino del asociado en Lighthouse
 
-**Causa**: Lighthouse solo admite la visualización y administración de *inquilinos* de clientes. Actualmente no es compatible con la visualización y administración de inquilinos *asociados* .
+**Causa**: Lighthouse solo admite la visualización y administración de inquilinos de *clientes* . Actualmente no admite la visualización y *administración de* inquilinos asociados.
 
-**Resolución:** Siga usando cualquier método que haya estado usando para ver y administrar el espacio empresarial del partner.
+**Resolución:** Siga usando cualquier método que haya usado para ver y administrar el inquilino del asociado.
 
 ## <a name="device-and-threat-management"></a>Administración de dispositivos y amenazas 
 
-### <a name="i-dont-see-any-customer-tenant-data-on-the-device-compliance-and-threat-management-pages-of-lighthouse"></a>No veo datos de inquilinos de clientes en las páginas de administración de amenazas y cumplimiento de dispositivos de Lighthouse
+### <a name="i-dont-see-any-customer-tenant-data-on-the-device-compliance-and-threat-management-pages-of-lighthouse"></a>No veo ningún dato de inquilino de cliente en las páginas Cumplimiento de dispositivos y Administración de amenazas de Lighthouse
 
 **Causa 1:** El inquilino del cliente no ha completado la incorporación a Intune. Los datos del inquilino del cliente no estarán disponibles en las páginas Cumplimiento de dispositivos o Administración de amenazas de Lighthouse hasta que el inquilino del cliente haya completado la incorporación a Intune.
 
-**Resolución:** Compruebe que el inquilino del cliente para el que está intentando ver los datos haya completado la incorporación a Intune. Una vez completada la incorporación en Intune, espere 4 horas para que los datos del dispositivo aparezcan en Lighthouse.
+**Resolución:** Compruebe que el inquilino del cliente para el que intenta ver los datos haya completado la incorporación a Intune. Una vez completada la incorporación en Intune, espere 4 horas para que los datos del dispositivo aparezcan en Lighthouse.
 
-**Causa 2:** El inquilino del cliente se incorporó recientemente a Lighthouse y los datos se siguen cargando en Lighthouse.
+**Causa 2:** El inquilino del cliente se ha incorporado recientemente a Lighthouse y los datos se siguen cargando en Lighthouse.
 
-**Resolución:** Una vez que un inquilino del cliente se incorpore a Lighthouse, espere de 24 a 48 horas para que aparezcan los datos de cliente iniciales.
+**Resolución:** Una vez que un inquilino de cliente se incorpore a Lighthouse, permita que aparezcan entre 24 y 48 horas para que aparezcan los datos iniciales del cliente.
 
 **Causa 3:** El dispositivo de inquilino del cliente es nuevo y los datos del dispositivo se siguen cargando en Lighthouse.
 
 **Resolución:** Cuando se agrega un dispositivo de inquilino, espere 4 horas para que los datos del dispositivo aparezcan en Lighthouse.
 
-Si los datos siguen sin aparecer en las páginas de administración de amenazas y cumplimiento de dispositivos después de seguir las instrucciones de resolución, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+Si los datos siguen sin aparecer en las páginas Cumplimiento de dispositivos y Administración de amenazas después de seguir las instrucciones de resolución, póngase en contacto con el soporte técnico. Para obtener más información, consulte [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
 ## <a name="related-content"></a>Contenido relacionado
 
 [Problemas conocidos con Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (artículo)\
-[Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)\
-[Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (article)
+[preguntas más frecuentes sobre Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (artículo)\
+[Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (artículo)

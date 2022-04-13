@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Lighthouse de la página de administración de amenazas
+title: Introducción a la página de administración de amenazas de Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,25 +15,25 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Administración de amenazas.
-ms.openlocfilehash: e57163ba462e241c74a96db78fe701c024a037ff
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Administración de amenazas.
+ms.openlocfilehash: 94e71d648dac3a285ecef81b4dae29305cf7e98c
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329888"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823176"
 ---
-# <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Microsoft 365 Lighthouse de la página de administración de amenazas 
+# <a name="microsoft-365-lighthouse-threat-management-page-overview"></a>Introducción a la página de administración de amenazas de Microsoft 365 Lighthouse 
 
 **Se aplica a:**
 
 - Windows 10
 
-Antivirus de Microsoft Defender los inquilinos, usuarios y dispositivos contra amenazas de software, incluidos virus, malware y spyware. Es una protección sólida y continua que está integrada en Windows 10 y se incluye con Microsoft 365 Empresa Premium y Microsoft365E3&nbsp;&nbsp;.  
+Antivirus de Microsoft Defender protege a los inquilinos, usuarios y dispositivos frente a amenazas de software, incluidos virus, malware y spyware. Es una protección sólida y continua que está integrada en Windows 10 e incluida con Microsoft 365 Empresa Premium y Microsoft365E3&nbsp;&nbsp;.  
   
-Para obtener acceso a la página Administración de amenazas en Microsoft 365 Lighthouse, seleccione **Administración** de amenazas en el panel de navegación izquierdo para ver la posición de seguridad de los inquilinos del cliente frente a las amenazas. Verás inquilinos, usuarios y dispositivos que requieren tu atención y recomendaciones que te ayudarán a reducir el riesgo.  
+Para acceder a la página Administración de amenazas de Microsoft 365 Lighthouse, seleccione **Administración de amenazas** en el panel de navegación izquierdo para ver la posición de seguridad de los inquilinos del cliente frente a amenazas. Verá inquilinos, usuarios y dispositivos que requieren su atención y recomendaciones que le ayudarán a reducir el riesgo.  
   
-## <a name="overview-tab"></a>Ficha Información general  
+## <a name="overview-tab"></a>Pestaña Información general  
   
 En la pestaña Información general de la página Administración de amenazas, puede supervisar el estado del antivirus en todos los inquilinos para identificar las áreas que necesitan atención.
 
@@ -41,11 +41,11 @@ En la pestaña Información general de la página Administración de amenazas, p
 
 ## <a name="threats-tab"></a>Pestaña Amenazas
 
-En la pestaña Amenazas de la página Administración de amenazas, puede ver las amenazas Activas, Mitigadas, Resueltas y Permitidas en todos los inquilinos. También puede corregir varias amenazas al mismo tiempo en todos los inquilinos filtrando y desglosando cada amenaza para saber qué dispositivos, usuarios o inquilinos se ven afectados.
+En la pestaña Amenazas de la página Administración de amenazas, puede ver las amenazas activas, mitigadas, resueltas y permitidas en todos los inquilinos. También puede corregir varias amenazas al mismo tiempo en todos los inquilinos mediante el filtrado y la exploración en profundidad de cada amenaza para saber qué dispositivos, usuarios o inquilinos se ven afectados.
 
-:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-threats-tab.png" alt-text="Captura de pantalla de la página de línea base predeterminada.":::
+:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-threats-tab.png" alt-text="Captura de pantalla de la página Línea base predeterminada.":::
   
-Puede filtrar las amenazas mediante:
+Puede filtrar las amenazas por:
 
 - Estado de la amenaza
 - Gravedad de la amenaza
@@ -55,26 +55,26 @@ Puede filtrar las amenazas mediante:
 En la tabla siguiente se enumeran los distintos estados de amenaza y su definición:<br><br>
 
 | Estado de la amenaza | Definición |
-|--|--|
-| Activa | La amenaza está activa en el dispositivo. |
-| Sin estado | El estado de la amenaza no está disponible. Ejecuta un examen completo en el dispositivo para que Antivirus de Microsoft Defender vuelva a detectar la amenaza. |
-| Error en la acción | El dispositivo no está en riesgo. Se ha fallado una acción, pero se ha detenido una amenaza potencial y no está activa en el dispositivo. Ejecuta un examen completo en el dispositivo. |
-| Pasos manuales necesarios | La amenaza se ha detenido, pero requiere un paso manual para completarse, como un examen completo o un reinicio del dispositivo. |
+|---|---|
+| Activo | La amenaza está activa en el dispositivo. |
+| Sin estado | El estado de la amenaza no está disponible. Ejecute un examen completo en el dispositivo para que Antivirus de Microsoft Defender vuelva a detectar la amenaza. |
+| Error en la acción | El dispositivo no está en riesgo. Se ha producido un error en una acción, pero se ha detenido una amenaza potencial y no está activa en el dispositivo. Ejecute un examen completo en el dispositivo. |
+| Pasos manuales necesarios | La amenaza se ha detenido, pero requiere que se complete un paso manual, como un examen completo o un reinicio del dispositivo. |
 | Examen completo necesario | Se requiere un examen completo del dispositivo. |
-| Se requiere reiniciar | Es necesario reiniciar el dispositivo. |
+| Reinicio necesario | Se requiere un reinicio del dispositivo. |
 | Corregido con errores no críticos | La amenaza se ha corregido y no se necesitan más acciones. |
-| En cuarentena | La amenaza se ha puesto en cuarentena. No se necesitan más acciones. |
+| Cuarentena | La amenaza se ha puesto en cuarentena. No se necesitan más acciones. |
 | Eliminación | La amenaza se ha quitado correctamente del dispositivo. No se necesitan más acciones. |
-| Limpiado | Antivirus de Microsoft Defender archivos recuperados y desinfectados. No se necesitan más acciones. |
+| Limpiado | Antivirus de Microsoft Defender ha recuperado y desinfectado los archivos. No se necesitan más acciones. |
 | Permitido | Un administrador permite que la amenaza permanezca en el dispositivo. | 
 
-## <a name="antivirus-protection-tab"></a>Ficha Protección antivirus
+## <a name="antivirus-protection-tab"></a>Pestaña Protección antivirus
 
-La pestaña Protección antivirus de la página Administración de amenazas muestra los dispositivos en todos los inquilinos y su Antivirus de Microsoft Defender protección. Puedes evaluar el estado y tomar medidas para uno o varios dispositivos que pueden ser vulnerables. También puedes seleccionar un dispositivo para ver más información, como Información general del dispositivo, Amenazas actuales y Estados de acción del dispositivo.
+La pestaña Protección antivirus de la página Administración de amenazas muestra los dispositivos en todos los inquilinos y su estado de protección Antivirus de Microsoft Defender. Puede evaluar el estado y tomar medidas para uno o varios dispositivos que pueden ser vulnerables. También puede seleccionar un dispositivo para ver más información, como Información general del dispositivo, Amenazas actuales y Estados de acción del dispositivo.
 
 :::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-antivirus-tab.png" alt-text="Captura de pantalla de la pestaña Antivirus.":::
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Implementar Microsoft 365 Lighthouse líneas base](m365-lighthouse-deploy-baselines.md) (artículo)\
-[Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)
+[Implementar líneas base Microsoft 365 Lighthouse](m365-lighthouse-deploy-baselines.md) (artículo)\
+[Preguntas más frecuentes sobre Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (artículo)

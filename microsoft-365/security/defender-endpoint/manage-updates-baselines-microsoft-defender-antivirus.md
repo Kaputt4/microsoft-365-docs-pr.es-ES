@@ -19,12 +19,12 @@ ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 48ab00c97559ecbbfe430b89c3742b8914c224ba
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 596616328a02182b39c67f58137d43ab626e1756
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788488"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823320"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administración de actualizaciones Antivirus de Microsoft Defender y aplicación de líneas base
 
@@ -75,7 +75,7 @@ Para obtener más información, vea [Administrar los orígenes para Antivirus de
 > - En este artículo se enumeran los cambios que se incluyen en el amplio canal de versión. [Consulte la versión más reciente del canal amplio aquí](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
 > - Para más información sobre el proceso de implementación gradual y para ver más información sobre la próxima versión, consulte [Administración del proceso de implementación gradual para las actualizaciones de Microsoft Defender](manage-gradual-rollout.md).
 > - Para obtener más información sobre las actualizaciones de inteligencia de seguridad, consulte [Actualizaciones de inteligencia de seguridad para Antivirus de Microsoft Defender y otros antimalware de Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates).
-> - Si busca una lista de procesos de Microsoft Defender, **[descargue el libro mde-urls](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)** y, a continuación, seleccione la hoja **de cálculo Procesos de Microsoft Defender** . El libro mde-urls también enumera los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse, como se describe en [Habilitar el acceso a direcciones URL de servicio Microsoft Defender para punto de conexión en el servidor proxy](configure-proxy-internet.md).
+> - Si busca una lista de procesos de Microsoft Defender, **[descargue el libro mde-urls](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)** y, a continuación, seleccione la hoja **de cálculo Procesos de Microsoft Defender** . El libro mde-urls también enumera los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse, como se describe en [Habilitar el acceso a direcciones URL de servicio Microsoft Defender para punto de conexión en el servidor proxy](configure-proxy-internet.md).
 
 ## <a name="monthly-platform-and-engine-versions"></a>Versiones mensuales de la plataforma y del motor
 
@@ -992,11 +992,11 @@ Para obtener más información, consulte [Actualización de Microsoft Defender p
 | [actualización de Microsoft Defender para punto de conexión para EDR Sensor](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | Puede actualizar el sensor de EDR (MsSense.exe) que se incluye en el nuevo paquete de solución unificada Microsoft Defender para punto de conexión publicado en 2021.   |
 
 > [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
-> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
+> - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
-> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
-> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+> - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
