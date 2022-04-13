@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
-ms.reviewer: anrasto
+ms.reviewer: anrasto, shrganguly
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo crear automáticamente documentos y otro contenido mediante el ensamblado de contenido en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 906118458688d40c392cc9333357f1b8c946910b
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+description: Obtenga información sobre cómo crear automáticamente documentos y otro contenido mediante una plantilla moderna en Microsoft SharePoint Syntex.
+ms.openlocfilehash: 83ef526504073ae739a82c599663a3d284aaf51c
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823220"
+ms.locfileid: "64836333"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Creación de documentos mediante el ensamblado de contenido en Microsoft SharePoint Syntex
 
@@ -55,16 +55,17 @@ Siga estos pasos para crear una plantilla moderna.
 5. Cree marcadores de posición para todo el texto dinámico del documento que los usuarios quieran cambiar de un documento a otro. Por ejemplo, es posible que desee crear un marcador de posición para la entrada, como el nombre de la empresa, el nombre de cliente, la dirección, el número de teléfono o la fecha.
 
     Para crear un marcador de posición, seleccione el texto (por ejemplo, la fecha). Se abrirá el panel **Todos los marcadores de posición** , donde le dará un nombre relevante al marcador de posición y elegirá el tipo de entrada que desea asociar al marcador de posición.
+ 
+   ![Captura de pantalla del visor de plantillas que muestra un campo resaltado y el panel Todos los marcadores de posición.](../media/content-understanding/content-assembly-create-template-4b.png)
 
-   ![Captura de pantalla del visor de plantillas que muestra un campo resaltado y el panel Todos los marcadores de posición.](../media/content-understanding/content-assembly-create-template-4a.png)
-
-   Actualmente, hay dos maneras de que los usuarios rellenen un marcador de posición:
+   Actualmente, hay tres maneras de que los usuarios rellenen un marcador de posición:
 
    - [Escriba texto o seleccione una fecha.](#associate-a-placeholder-by-entering-text-or-selecting-a-date)
    - [Selección de opciones en una columna de una lista o biblioteca](#associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library)
+   - [Selección de un término o conjunto de términos de metadatos administrados](#associate-a-placeholder-by-selecting-from-managed-metadata-term-set-or-term)
 
    > [!NOTE]
-   > Puede crear marcadores de posición solo para texto. Actualmente, no se admiten imágenes, arte inteligente, tablas y listas de viñetas.
+   > Puede crear marcadores de posición solo para texto. Actualmente no se admiten imágenes, arte inteligente, tablas y listas de viñetas.   
 
 ### <a name="associate-a-placeholder-by-entering-text-or-selecting-a-date"></a>Asociar un marcador de posición escribiendo texto o seleccionando una fecha
 
@@ -72,7 +73,7 @@ En el panel **Todos los marcadores de posición** :
 
 1. En el campo **Nombre** , escriba un nombre pertinente para el marcador de posición.
 
-   ![Captura de pantalla del visor de plantillas que muestra el panel Todos los marcadores de posición para la entrada manual.](../media/content-understanding/content-assembly-create-template-5.png)
+   ![Captura de pantalla del visor de plantillas que muestra el panel Todos los marcadores de posición para la entrada manual.](../media/content-understanding/content-assembly-create-template-5a.png)
 
 2. En la sección **How authors fill in this placeholder (Cómo rellenan los autores este marcador de posición** ), seleccione **Entrar texto o seleccione una fecha**.
 
@@ -86,7 +87,7 @@ En el panel **Todos los marcadores de posición** :
 
 1. En el campo **Nombre** , escriba un nombre pertinente para el marcador de posición.
 
-   ![Captura de pantalla del visor de plantillas que muestra el panel Todos los marcadores de posición para la entrada de una lista de SharePoint.](../media/content-understanding/content-assembly-create-template-6.png)
+   ![Captura de pantalla del visor de plantillas que muestra el panel Todos los marcadores de posición para la entrada de una lista de SharePoint.](../media/content-understanding/content-assembly-create-template-6a.png)
 
 2. En la sección **Cómo rellenan los autores este marcador de posición** , elija **Seleccionar entre las opciones de una columna de una lista o biblioteca** y, a continuación, seleccione **Seleccionar**.
 
@@ -106,10 +107,34 @@ En el panel **Todos los marcadores de posición** :
 
 6. Si desea que los usuarios puedan agregar entradas manualmente, además de elegir entre una lista, seleccione **Permitir que los autores agreguen nuevas opciones**. En este caso, el valor predeterminado para el tipo de datos de entrada manual es *Una sola línea de texto*. Además, los valores introducidos por los autores solo se usarán para generar el documento. No se agregarán a la lista de SharePoint.
 
-   Puede crear tantos marcadores de posición como considere necesarios. Cuando haya terminado, puede elegir guardar la plantilla como borrador o publicarla.
+### <a name="associate-a-placeholder-by-selecting-from-managed-metadata-term-set-or-term"></a>Asociación de un marcador de posición mediante la selección de un término o conjunto de términos de metadatos administrados
+
+En el panel **Todos los marcadores de posición** :
+
+1. En el campo **Nombre** , escriba un nombre pertinente para el marcador de posición.
+
+   ![Captura de pantalla del visor de plantillas que muestra el panel Todos los marcadores de posición para la entrada de un conjunto de términos o términos.](../media/content-understanding/content-assembly-create-template-term.png)
+
+2. En la sección **Cómo rellenan los autores este marcador de posición** , elija **Seleccionar entre términos o conjuntos de términos de metadatos administrados** y, a continuación, seleccione **Seleccionar**.
+
+3. En la página **Seleccionar conjuntos de términos o términos** , busque o seleccione el conjunto de términos o el término que desea asociar al marcador de posición y, a continuación, seleccione **Guardar**.
+
+   ![Captura de pantalla de la página Seleccionar conjuntos de términos o términos.](../media/content-understanding/content-assembly-select-term.png)
+
+4. Cuando haya terminado, verá que el término o conjunto de términos seleccionados se ha asociado con el marcador de posición. 
+
+   ![Captura de pantalla del panel Todos los marcadores de posición que muestra el conjunto de términos o el término asociados.](../media/content-understanding/content-assembly-associated-term.png)
+
+5. Si desea que los usuarios puedan agregar varios valores correspondientes al conjunto de términos o al término, seleccione **Permitir varios valores**. Además, si el conjunto de términos está configurado como un conjunto de términos abierto, puede seleccionar **Permitir nuevos valores**. Si habilita esta opción, los usuarios que generan documentos a partir de la plantilla moderna pueden agregar nuevos términos al conjunto de términos y agregar esos términos como valores de marcador de posición.
+
+   > [!TIP]
+   > Al habilitar la opción **Permitir nuevos valores** (solo se permite para conjuntos de términos abiertos), es más probable que los usuarios agreguen términos redundantes en el almacén de términos. Los términos redundantes pueden dificultar que los administradores administren un conjunto de términos.
+
+Puede crear tantos marcadores de posición como considere necesarios. Cuando haya terminado, puede elegir guardar la plantilla como borrador o publicarla.
 
    - **Guardar borrador** : guarda la plantilla como borrador y puede acceder a ella más adelante. Para ver, editar o publicar borradores guardados en la sección **Plantillas modernas**, seleccione el **menú NuevoEditar**  >  nuevo en la biblioteca de documentos.
-   - **Publicar** : publica la plantilla que usarán otros usuarios de la organización para crear documentos. Para ver, editar o anular la publicación de plantillas *publicadas* en la sección **Plantillas modernas**, seleccione **el** **menú NuevoEditar** >  nuevo en la biblioteca de documentos.
+ 
+   - **Publicar** : publica la plantilla que usarán otros usuarios de la organización para crear documentos. Para ver, editar o anular la publicación de plantillas *publicadas* en la sección **Plantillas modernas**, seleccione **el** **menú NuevoEditar** >  nuevo en la biblioteca de documentos. 
 
 ## <a name="edit-a-modern-template"></a>Edición de una plantilla moderna
 
@@ -145,7 +170,7 @@ Puede usar una plantilla moderna *publicada* para crear rápidamente documentos 
 
 3. En el panel **Crear un documento a partir de una plantilla** , escriba la información y, a continuación, seleccione **Crear documento**.
 
-   ![Captura de pantalla de la biblioteca de documentos que muestra el panel Crear un documento a partir de una plantilla.](../media/content-understanding/content-assembly-create-document-2.png)
+   ![Captura de pantalla de la biblioteca de documentos que muestra el panel Crear un documento a partir de una plantilla.](../media/content-understanding/content-assembly-create-document-2b.png)
 
    Para ayudar a reducir el tiempo y el esfuerzo necesarios para rellenar los valores de los marcadores de posición, SharePoint Syntex proporciona:
 
@@ -153,9 +178,13 @@ Puede usar una plantilla moderna *publicada* para crear rápidamente documentos 
       - Autorrellenar los valores de marcador de posición si se puede identificar de forma única un registro de marcadores de posición asociados a la misma lista.
 
 > [!NOTE]
->
-> - Actualmente, solo se admiten Microsoft Word documentos (extensión .docx) para crear una plantilla. Antes de cargar el documento, asegúrese de que el documento de Word no tenga habilitado **El seguimiento de cambios** o los comentarios. Si el documento contiene marcadores de posición de texto para las imágenes, asegúrese de que no están encapsulados en texto. Por el momento, no se admiten **controles de contenido** en Word. Si desea crear una plantilla a partir de un documento de Word con controles de contenido, quítela antes de crear una plantilla moderna.
-> - La plantilla y el documento están asociados a una biblioteca de documentos. Para usar la plantilla en otra biblioteca de documentos, deberá volver a crearla en esa biblioteca de documentos.
-> - El documento cargado que se usa para crear la plantilla moderna se guardará como una copia independiente y se colocará en el directorio /forms de la biblioteca de documentos. El archivo original del disco no se verá afectado.
-> - Puede crear marcadores de posición solo para texto. Actualmente, no se admiten imágenes, arte inteligente, tablas y listas de viñetas.
-> - Una vez que se crea un documento a partir de una plantilla, no está asociado a la plantilla.
+> **Limitaciones actuales de la versión**
+>- Actualmente solo se admiten Microsoft Word documentos (extensión .docx) para crear una plantilla. Antes de cargar un documento de Word, asegúrese de que no incluya comentarios o que tenga habilitado **El seguimiento de cambios** . Si el documento contiene marcadores de posición de texto para imágenes, asegúrese de que no están encapsulados en texto. Actualmente no se admiten los controles de contenido de Word. Si desea crear una plantilla a partir de un documento de Word con controles de contenido, quítelos antes de crear una plantilla moderna.
+>- La plantilla y el documento están asociados a una biblioteca de documentos. Para usar la plantilla en otra biblioteca de documentos, deberá volver a crearla en esa biblioteca de documentos.
+>- El documento cargado que se usa para crear la plantilla moderna se guardará como una copia independiente y se colocará en el directorio /forms de la biblioteca de documentos. El archivo original del disco no se verá afectado.
+>- Puede crear marcadores de posición solo para texto. Actualmente no se admiten imágenes, arte inteligente, tablas y listas de viñetas.
+>- Una vez que se crea un documento a partir de una plantilla, no está asociado a la plantilla.
+
+
+
+ 

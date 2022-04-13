@@ -9,12 +9,12 @@ ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: ad9cb5e69585f0c014050b51b719e539111cf9fa
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: 8c8d79313ee858ebcac8754b96046b517a3f614a
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64687193"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64835982"
 ---
 # <a name="shared-devices"></a>Dispositivos compartidos
 
@@ -31,7 +31,7 @@ Dado que elige usar el modo de dispositivo compartido en el punto de registro en
 
 ## <a name="when-to-use-shared-device-mode"></a>Cuándo usar el modo de dispositivo compartido
 
-Cualquier situación en la que los usuarios cambien con frecuencia los dispositivos.
+Use el modo de dispositivo compartido en situaciones en las que los usuarios cambian con frecuencia de dispositivos.
 
 Por ejemplo, es posible que los cajeros bancarios estén en una ubicación que administre los depósitos, pero que se trasladen a una oficina para ayudar a los clientes con una hipoteca. En cada una de esas ubicaciones, el dispositivo ejecuta diferentes aplicaciones y está optimizado para esas tareas, aunque varias personas las usan.
 
@@ -41,15 +41,33 @@ Por lo general, el personal de enfermería se mueve entre salas y oficinas a med
 
 El modo de dispositivo compartido no es una buena opción en estas situaciones:
 
-- Cuando los archivos de un usuario deben almacenarse localmente en lugar de en la nube
-- Si la experiencia del usuario debe ser diferente para distintos usuarios en el dispositivo
-- Si el conjunto de aplicaciones que necesita cada usuario difiere considerablemente
+- Cuando los archivos de un usuario deben almacenarse localmente en lugar de en la nube.
+- Si la experiencia del usuario debe ser diferente para distintos usuarios en el dispositivo.
+- Si el conjunto de aplicaciones que necesita cada usuario difiere mucho.
 
-## <a name="register-new-devices-in-shared-device-mode"></a>Registro de nuevos dispositivos en modo de dispositivo compartido
+## <a name="register-new-devices-using-the-windows-autopilot-self-deploying-mode-profile-in-microsoft-managed-desktop"></a>Registro de nuevos dispositivos mediante el perfil de modo de implementación automática Windows Autopilot en Microsoft Managed Desktop
 
-A partir de 2203, tanto si usted como un asociado están controlando la inscripción de dispositivos, puede optar por usar el perfil de [modo de implementación automática Windows Autopilot](/mem/autopilot/self-deploying) en Microsoft Managed Desktop.
+Tanto si usted como un asociado están controlando el registro de dispositivos, puede optar por usar el perfil de [modo de implementación automática Windows Autopilot](/mem/autopilot/self-deploying) en Microsoft Managed Desktop.
 
-Si va a inscribir los dispositivos usted mismo, debe importar nuevos dispositivos en la hoja Windows Dispositivos Autopilot.
+### <a name="before-you-begin"></a>Antes de empezar
+
+Revise los requisitos de Windows modo de implementación automática de Autopilot:
+
+> [!IMPORTANT]
+> No se puede volver a inscribir automáticamente un dispositivo a través de Autopilot después de una implementación inicial en modo de implementación automática. En su lugar, elimine el registro del dispositivo en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). Para eliminar el registro de dispositivo del centro de administración, seleccione **DispositivosTodos** >  **los dispositivos** > seleccione los dispositivos que desea eliminar > **Eliminar**.  Para obtener más información, consulte [Actualizaciones de la experiencia de inicio de sesión e implementación de Windows Autopilot](https://techcommunity.microsoft.com/t5/intune-customer-success/updates-to-the-windows-autopilot-sign-in-and-deployment/ba-p/2848452).
+
+#### <a name="trusted-platform-module"></a>Módulo de plataforma segura
+
+El modo de implementación automática usa el hardware TPM 2.0 de un dispositivo para autenticar el dispositivo en el inquilino Azure Active Directory de una organización. Por lo tanto, los dispositivos sin TPM 2.0 no pueden usar este modo. Los dispositivos también deben admitir la atestación de dispositivos TPM. Todos los dispositivos Windows nuevos deben cumplir estos requisitos. El proceso de atestación de TPM también requiere acceso a un conjunto de direcciones URL HTTPS que son únicas para cada proveedor de TPM. Para obtener más información, consulte la entrada para el modo de autoimplementación de Autopilot y el aprovisionamiento previo de Autopilot en [Requisitos de red](/mem/autopilot/self-deploying#requirements). Para obtener más información sobre Windows requisitos de software de Autopilot, consulte [Windows requisitos de software de Autopilot](/mem/autopilot/software-requirements).
+
+> [!TIP]
+> Si intenta implementar el modo de implementación automática en un dispositivo que no tiene compatibilidad con TPM 2.0 o está en una máquina virtual, el proceso producirá un error al comprobar el dispositivo con el siguiente error: 0x800705B4 error de tiempo de espera (no se admiten los TPMs virtuales de Hyper-V). Tenga en cuenta también que Windows 10 versión 1903 o posterior es necesario usar el modo de implementación automática debido a problemas con la atestación de dispositivos TPM en Windows 10 versión 1809. Dado que Windows 10 Enterprise LTSC de 2019 se basa en Windows 10 versión 1809, el modo de implementación automática tampoco se admite en Windows 10 Enterprise LTSC de 2019.
+>
+> Para obtener más información sobre otros problemas conocidos y revisar soluciones, consulte [Windows problemas conocidos de Autopilot](/mem/autopilot/known-issues) y [Solución de problemas de importación e inscripción de dispositivos autopilot](/mem/autopilot/troubleshoot-device-enrollment).
+
+### <a name="steps-to-register-devices-to-use-the-windows-autopilot-self-deploying-mode-profile"></a>Pasos para registrar dispositivos para usar el perfil Windows modo de implementación automática de Autopilot
+
+Si está registrando dispositivos usted mismo, debe importar nuevos dispositivos en la hoja dispositivos Windows Autopilot.
 
 **Para importar nuevos dispositivos en la hoja Windows Dispositivos Autopilot:**
 
@@ -64,7 +82,7 @@ Si va a inscribir los dispositivos usted mismo, debe importar nuevos dispositivo
 | Perfil de dispositivo | Etiqueta de grupo de Autopilot (modo estándar) | Etiqueta de grupo (modo de dispositivo compartido) |
 | ----- | ----- | ----- |
 | Datos confidenciales | Microsoft365Managed_SensitiveData |  Microsoft365Managed_SensitiveData-Shared |
-| Usuario avanzado | Microsoft365Managed_PowerUser | No se admite |
+| Usuario avanzado | Microsoft365Managed_PowerUser | No admitido |
 | Estándar  | Microsoft365Managed_Standard | Microsoft365Managed_Standard-Shared |
 
 > [!WARNING]

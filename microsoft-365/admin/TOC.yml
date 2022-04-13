@@ -171,6 +171,8 @@
               href: create-groups/restore-deleted-group.md
             - name: Administrar el acceso de invitado a grupos
               href: create-groups/manage-guest-access-in-groups.md
+            - name: Administrar grupos y equipos sin propietario
+              href: create-groups/ownerless-groups-teams.md
         - name: Contraseñas
           items:
             - name: Restablecer contraseñas
