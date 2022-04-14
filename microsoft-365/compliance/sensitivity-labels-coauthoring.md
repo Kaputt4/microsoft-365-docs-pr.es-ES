@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: baa2236915d37917e4ed69e5356db31262795d57
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
-ms.translationtype: MT
+ms.openlocfilehash: 0fee934af5e2dfb01c681c9b2e415ef538312367
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64687215"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64836114"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
@@ -74,7 +74,7 @@ Asegúrese de entender los siguientes requisitos previos antes de activar esta c
 - Las etiquetas de confidencialidad deben estar [habilitadas para archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) para el espacio empresarial. Si esta característica no está ya habilitada, se habilitará automáticamente al seleccionar la configuración para activar la coautoría para los archivos con etiquetas de confidencialidad.
 
 - Aplicaciones de Microsoft 365 para empresas:
-    - **Windows**: versión mínima 2107 del canal actual o del canal de Enterprise mensual, o la versión mínima 2202 del canal de Semi-Annual Enterprise
+    - **Windows**: versión mínima 2107 del Canal actual o canal empresarial mensual, o la versión mínima 2202 del Canal semestral para empresas (versión preliminar)
     - **macOS**: versión mínima 16.51
     - **iOS**: ahora en versión preliminar cuando [opta por participar](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) con una versión mínima 2.58
     - **Android**: ahora en versión preliminar cuando [opta por participar](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) con una versión mínima 16.0.14931

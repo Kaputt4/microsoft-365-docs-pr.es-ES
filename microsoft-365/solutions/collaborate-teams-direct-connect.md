@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo usar canales compartidos con personas ajenas a su organización.
-ms.openlocfilehash: 9fa58be15eab0844fa92d408320902c23f36de93
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: e6ee2a6be6ec54c002898e301fbd53eed25a328f
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468886"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64835831"
 ---
 # <a name="collaborate-with-external-participants-in-a-channel"></a>Colaborar con participantes externos en un canal
 
@@ -49,6 +49,12 @@ Para configurar canales compartidos
     - Para permitir que los propietarios del equipo compartan canales compartidos con personas ajenas a la organización, active **Compartir canales compartidos externamente**.
     - Para permitir que se invite a usuarios a canales compartidos de otras organizaciones, active **Permitido invitar a canales compartidos externos**.
 1. Seleccione **Aplicar**.
+
+Para que los participantes del canal externo participen en reuniones, se debe habilitar el acceso externo. Esto también es necesario para poder ver la presencia de los participantes externos en el canal.
+
+Para habilitar el acceso externo
+1. En el [centro de administración de Teams](https://admin.teams.microsoft.com/), expanda **Usuarios** y, a continuación, seleccione **Acceso externo**.
+1. En **Usuarios de Teams y Skype Empresarial en organizaciones externas**, asegúrese de que las organizaciones con las que desea colaborar no estén bloqueadas.
 
 ## <a name="configure-cross-tenant-access-settings-in-azure-ad"></a>Configurar el acceso entre inquilinos en Azure AD
 

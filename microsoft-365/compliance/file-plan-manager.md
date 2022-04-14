@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: El plan de archivos ofrece funciones avanzadas de administración para las etiquetas de retención.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 2e028bae676b949c662a86178bac5e8ccdc557bf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 40c395d609a9a02637b937cafae988578dc6e14f
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317715"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64836180"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Usar el plan de archivos para crear y administrar etiquetas de retención
 
@@ -80,6 +80,10 @@ A excepción de la etiqueta **Nombre**, todas las columnas se pueden mostrar u o
     - No
     - Sí
     - Sí (Normativa)
+
+- **Está desbloqueado de forma predeterminada**, al estar implementado, identifica si el elemento marcado como registro está desbloqueado cuando se aplica la etiqueta. Valores válidos:
+    - No
+    - Sí
 
 - **Duración de la retención** identifica el período de retención. Valores válidos:
     - Días
@@ -212,7 +216,13 @@ Use la siguiente información para rellenar la plantilla descargada e importar n
 |CitationJurisdiction|Cadena|No|Esta propiedad especifica la jurisdicción o agencia que se muestra en el descriptor del plan de archivos **Provision/citation**. Por ejemplo, "Comisión de Bolsa y Valores de Estados Unidos (SEC)". |
 |Regulatory|Cadena|No|Esta propiedad especifica si la etiqueta marca el contenido como un registro normativo, que es [más restrictivo](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) que un registro. Para usar esta configuración de etiqueta, el inquilino debe configurarse para [mostrar la opción de marcar el contenido como un registro normativo](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record) o se producirá un error en la validación de importación. Los valores admitidos son: </br>**TRUE**: la etiqueta marca el elemento como un registro normativo. También debe establecer la propiedad **IsRecordLabel** en TRUE.</br>**FALSE**: la etiqueta no marca el contenido como un registro normativo. Este es el valor predeterminado.|
 |EventType|Cadena|No, a menos que **RetentionType** sea **EventAgeInDays**|Esta propiedad especifica un tipo de evento usado para la [retención basada en eventos](event-driven-retention.md). Especifique un tipo de evento existente que se muestre en **Administración de registros** > **Eventos** > **Administrar tipos de eventos**. Como alternativa, use el cmdlet [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype) para ver los tipos de eventos disponibles. Aunque hay algunos tipos de eventos integrados, como **Actividad de empleado** y **Ciclo de vida del producto**, también puede crear sus propios tipos de eventos. </br> </br> Si especifica su propio tipo de evento, debe existir antes de la importación porque el nombre se valida como parte del proceso de importación.|
-|||
+
+La configuración de etiqueta no se admite actualmente para la importación:
+
+- Revisión para eliminación en varias fases: aunque puede configurar las opciones de una sola fase de revisión para eliminación al importar las etiquetas de retención con una plantilla, no puede especificar las fases de revisión adicionales. En su lugar, configúrelos en el centro de cumplimiento después de que la importación se realice correctamente.
+
+- Desbloquee este registro de forma predeterminada (actualmente se está implementando en versión preliminar): esta configuración no está disponible en la plantilla para importar y no puede seleccionar esta configuración en el centro de cumplimiento después de que la importación se realice correctamente.
+
 
 ## <a name="next-steps"></a>Siguientes pasos
 
