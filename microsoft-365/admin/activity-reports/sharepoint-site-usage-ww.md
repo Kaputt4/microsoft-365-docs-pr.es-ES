@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga el informe de uso del sitio SharePoint para saber cuántos archivos almacenan los usuarios en SharePoint sitios, cuántos se usan activamente y el almacenamiento total consumido.
-ms.openlocfilehash: afcaa6cd087948c635604dbadeb9d56c6d48c1a9
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: a99884863db3ffc1f2577358abef6d287d01e2d1
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781509"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64847001"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>informes de Microsoft 365 en el centro de administración: SharePoint uso del sitio
 
@@ -76,7 +76,7 @@ El informe **de uso del sitio SharePoint** se puede ver para ver las tendencias 
 |Nombre principal del propietario del sitio  |Dirección de correo electrónico del propietario del sitio. |
 |Fecha de la última actividad (UTC)  | Fecha de la última vez que se detectó la actividad del archivo o se vio una página en el sitio.  |
 |Identificador de etiqueta de confidencialidad del sitio  | Etiqueta de confidencialidad en el sitio.  |
-|Uso compartido externo  | La configuración externa que se puede compartir en el sitio.  |
+|Uso compartido externo  | Valor de la configuración de uso compartido externo para el sitio. Este valor no refleja los cambios en la configuración efectiva realizada por las etiquetas de confidencialidad del sitio. Si usa etiquetas de confidencialidad, use los [informes de gobernanza de acceso a datos](/sharepoint/data-access-governance-reports) para obtener los valores correctos.|
 |Directiva de dispositivo no administrado  | Directiva de acceso al sitio para dispositivos no administrados.  |
 |Ubicación geográfica  | Ubicación geográfica del sitio.  |
 |Archivos  |Número de archivos en el sitio. |

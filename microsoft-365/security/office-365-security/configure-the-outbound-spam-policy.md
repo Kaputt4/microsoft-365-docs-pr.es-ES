@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de correo no deseado saliente en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 15dc850046e74c3b42477998fa24a608d0fd0af8
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 9ab8585a0671f9c62ec2015d91486539c84004db
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841728"
+ms.locfileid: "64847473"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configuración del filtrado de correo no deseado saliente en EOP
 
@@ -101,9 +101,11 @@ La creación de una directiva de correo no deseado de salida personalizada en el
 
    Cuando termine, haga clic en **Siguiente**.
 
-4. En la página **Usuarios, grupos y dominios** que aparece, identifique los remitentes internos a los que se aplica la directiva (condiciones del remitente):
-   - **Usuarios**: los buzones, usuarios de correo o contactos de correo especificados de su organización.
-   - **Grupos**: los grupos de distribución, los grupos de seguridad habilitados para correo electrónico o los Grupos de Microsoft 365 especificados de la organización.
+4. En la página **Usuarios, grupos y dominios** que aparece, identifique los remitentes internos a los que se aplica la directiva (condiciones de destinatario):
+   - **Usuarios**: buzones, usuarios de correo o contactos de correo especificados.
+   - **Grupos**:
+     - Miembros de los grupos de distribución especificados o grupos de seguridad habilitados para correo.
+     - El Grupos de Microsoft 365 especificado.
    - **Dominios**: todos los remitentes de los [dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) especificados en su organización.
 
    Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.

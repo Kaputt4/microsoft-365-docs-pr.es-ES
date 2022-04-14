@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Use eDiscovery y herramientas de búsqueda para administrar y responder a un incidente de derrame de datos en su organización.
-ms.openlocfilehash: 55bed2461d48d77e7dbb756402439f394ac55270
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 106a67bff07f76d3ac40798d8bb4e28a254b923d
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760919"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64847341"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Serie de soluciones de eDiscovery: escenario de desbordamiento de datos: búsqueda y purga
 
@@ -50,16 +50,18 @@ Este es un procedimiento para administrar un incidente de derrame de datos:
 
 ## <a name="things-to-know-before-you-start"></a>Cosas que debe saber antes de empezar
 
+- El flujo de trabajo de desbordamiento de datos descrito en este artículo no elimina mensajes de chat en Microsoft Teams. Para buscar y eliminar Teams mensajes de chat, consulte [Buscar y purgar mensajes de chat en Teams](search-and-delete-Teams-chat-messages.md).
+
 - Cuando un buzón está en espera, un mensaje eliminado permanece en la carpeta Elementos recuperables hasta que expire el período de retención o se libere la suspensión. [En el paso 6 se](#step-6-prepare-the-mailboxes) describe cómo quitar la retención de los buzones. Consulte con los departamentos legales o de administración de registros antes de quitar la suspensión. Su organización puede tener una directiva que defina si un buzón en espera o un incidente de derrame de datos tiene prioridad. 
-    
+
 - Para controlar qué buzones de usuario puede buscar y administrar un investigador de derrame de datos que pueda acceder al caso, puede configurar los límites de cumplimiento y crear un grupo de roles personalizado, que se describe en el [paso 1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries). Para ello, debe ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración de roles. Si usted o un administrador de su organización ya ha establecido límites de cumplimiento, puede omitir el paso 1.
-    
+
 - Para crear un caso, debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos o ser miembro de un grupo de roles personalizado al que se haya asignado el rol Administración de casos. Si no es miembro, pida a un administrador de Microsoft 365 [que le agregue al grupo de roles del administrador de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
-    
+
 - Para crear y ejecutar una búsqueda de contenido, tiene que ser miembro del grupo de roles Administrador de eDiscovery o tener asignado el rol de administración Búsqueda de cumplimiento. Para eliminar mensajes, tiene que ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración Búsqueda y eliminación. Para obtener información sobre cómo agregar usuarios a un grupo de roles, vea [Asignar permisos de exhibición de documentos electrónicos](./assign-ediscovery-permissions.md).
-    
-- Para buscar en las actividades de eDiscovery del registro de auditoría en el paso 8, la auditoría debe estar activada para su organización. Puede buscar actividades que se realizaron en los últimos 90 días. Para obtener más información sobre cómo habilitar y usar la auditoría, consulte la sección [Auditoría del proceso de investigación del derrame de datos en el](#auditing-the-data-spillage-investigation-process) paso 8. 
-    
+
+- Para buscar en las actividades de eDiscovery del registro de auditoría en el paso 8, la auditoría debe estar activada para su organización. Puede buscar actividades que se realizaron en los últimos 90 días. Para obtener más información sobre cómo habilitar y usar la auditoría, consulte la sección [Auditoría del proceso de investigación del derrame de datos en el](#auditing-the-data-spillage-investigation-process) paso 8.
+
 ## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a>(Opcional) Paso 1: Administrar quién puede acceder al caso y establecer límites de cumplimiento
 
 En función de la práctica de la organización, debe controlar quién puede acceder al caso de exhibición de documentos electrónicos que se usa para investigar un incidente de derrame de datos y configurar los límites de cumplimiento. La manera más fácil de hacerlo es agregar investigadores como miembros de un grupo de roles existente en el Centro de cumplimiento de Microsoft 365 y, a continuación, agregar el grupo de roles como miembro del caso de eDiscovery. Para obtener información sobre los grupos de roles de eDiscovery integrados y cómo agregar miembros a un caso de exhibición de documentos electrónicos, vea [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).

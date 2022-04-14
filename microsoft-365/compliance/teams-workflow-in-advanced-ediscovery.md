@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo conservar, recopilar, revisar y exportar contenido de Microsoft Teams en Advanced eDiscovery.
-ms.openlocfilehash: ecd114f9ea68cefb03e55453176a0c8b323620cc
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 90c3ece3f6e8218771da9dbbb88fe5c32d9d7d94
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758803"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64847023"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>flujo de trabajo de Advanced eDiscovery para el contenido de Microsoft Teams
 
@@ -274,7 +274,7 @@ En la tabla siguiente se describen las propiedades de metadatos para Teams conte
 |FamilyId|GUID que identifica el archivo de transcripción de una conversación de chat. Los datos adjuntos tendrán el mismo valor para esta propiedad que el archivo de transcripción que contiene el mensaje al que se ha adjuntado el archivo.|
 |FileClass|Indica ese tipo de contenido. Los elementos de Teams chats tienen el valor `Conversation`. Por el contrario, Exchange mensajes de correo electrónico tienen el valor `Email`.|
 |MessageKind|Propiedad de tipo de mensaje. Teams contenido tiene el valor `microsoftteams , im`.|
-|Destinatarios|Lista de todos los usuarios que recibieron un mensaje dentro de la conversación de transcripción.|
+|Recipientes|Lista de todos los usuarios que recibieron un mensaje dentro de la conversación de transcripción.|
 |TeamsChannelName|Nombre del canal Teams de la transcripción.|
 
 Para obtener descripciones de otras propiedades de metadatos de Advanced eDiscovery, consulte [Campos de metadatos del documento en Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
@@ -298,6 +298,10 @@ Estas son algunas sugerencias y procedimientos recomendados para ver Teams conte
 - Las columnas útiles que le ayudarán a revisar Teams contenido incluyen **Custodio**, **Destinatarios** y **Tipo de archivo** o **Tipo de mensaje**.
 
 - Use [filtros](review-set-search.md) para las propiedades relacionadas con Teams para mostrar rápidamente Teams contenido. Hay filtros para la mayoría de las propiedades de metadatos descritas en la sección anterior.
+
+## <a name="deleting-teams-chat-messages"></a>Eliminación de Teams mensajes de chat
+
+Puede usar Advanced eDiscovery y el Explorador de Microsoft Graph para responder a incidentes de derrame de datos, cuando el contenido que contiene información confidencial o malintencionada se publica a través de Teams mensajes de chat. Los administradores de su organización pueden buscar y eliminar mensajes de chat en Microsoft Teams. Esto puede ayudarle a quitar información confidencial o contenido inadecuado en Teams mensajes de chat. Para obtener más información, consulte [Buscar y purgar mensajes de chat en Teams](search-and-delete-Teams-chat-messages.md).
 
 ## <a name="reference-guide"></a>Guía de referencia
 

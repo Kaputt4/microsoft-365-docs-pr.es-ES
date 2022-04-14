@@ -21,12 +21,12 @@ description: Use el centro de cumplimiento de Microsoft 365 para buscar en el re
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: edf5bfd91313c621707d1bdc35074bfe7fe9585c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 1a10bf738562f8fd9a263252d4a56eddf8acee9d
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759929"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841939"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -128,29 +128,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 
 - Azure Active Directory (Azure AD) es el servicio de directorio para Microsoft 365. El registro de auditoría unificado contiene las actividades del usuario, dominio, aplicación, grupo y directorio que se realizaron en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> o en el portal de administración de Azure. Para obtener una lista completa de los eventos de Azure AD, consulte[Eventos del informe de auditoría de Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
-- Después de que se produzca un evento, puede llevar de 30 minutos a 24 horas para que se devuelva el registro de auditoría correspondiente en los resultados de la búsqueda en el registro de auditoría. En la tabla siguiente se muestra el tiempo que tarda para los distintos servicios en Microsoft 365.
-
-  |Característica o servicio de Microsoft 365|30 minutos|24 horas|
-  |---|:---:|:---:|
-  |Microsoft Defender para Microsoft 365 e Inteligencia sobre amenazas|![Marca de verificación.](../media/checkmark.png)||
-  |Azure Active Directory (eventos de inicio de sesión de usuario)||![Marca de verificación.](../media/checkmark.png)|
-  |Azure Active Directory (eventos administrativos)||![Marca de verificación.](../media/checkmark.png)|
-  |Prevención de pérdida de datos|![Marca de verificación.](../media/checkmark.png)||
-  |Dynamics 365 CRM||![Marca de verificación.](../media/checkmark.png)|
-  |eDiscovery|![Marca de verificación.](../media/checkmark.png)||
-  |Exchange Online|![Marca de verificación.](../media/checkmark.png)||
-  |Microsoft Power Automate||![Marca de verificación.](../media/checkmark.png)|
-  |Microsoft Stream|![Marca de verificación.](../media/checkmark.png)||
-  |Microsoft Teams|![Marca de verificación.](../media/checkmark.png)||
-  |Power Apps||![Marca de verificación.](../media/checkmark.png)|
-  |Power BI|![Marca de verificación.](../media/checkmark.png)||
-  |Centro de cumplimiento de Microsoft 365|![Marca de verificación.](../media/checkmark.png)||
-  |Etiquetas de confidencialidad||![Marca de verificación.](../media/checkmark.png)|
-  |SharePoint Online y OneDrive para la Empresa|![Marca de verificación.](../media/checkmark.png)||
-  |Workplace Analytics|![Marca de verificación.](../media/checkmark.png)||
-  |Yammer||![Marca de verificación.](../media/checkmark.png)|
-  |Microsoft Forms|![Marca de verificación.](../media/checkmark.png)||
-  ||||
+- Microsoft no garantiza una hora específica después de que se produzca un evento para que el registro de auditoría correspondiente se devuelva en los resultados de una búsqueda de registros de auditoría. Para los servicios principales (como Exchange, SharePoint, OneDrive y Teams), la disponibilidad de registros de auditoría suele ser de 60 a 90 minutos después de que se produzca un evento. Para otros servicios, la disponibilidad de los registros de auditoría puede ser más larga. Sin embargo, algunos problemas que son inevitables (como una interrupción del servidor) pueden producirse fuera del servicio de auditoría que retrasa la disponibilidad de los registros de auditoría. Por estas razones, Microsoft no se compromete a un tiempo de entrega específico.
 
 - El registro de auditoría de Power BI no está habilitado de forma predeterminada. Para buscar actividades de Power BI en el registro de auditoría, debe habilitar la auditoría en el portal de administración de Power BI. Para obtener instrucciones, consulte la sección "registros de auditoría"[en el portal de administración de Power BI](/power-bi/service-admin-portal#audit-logs).
 
