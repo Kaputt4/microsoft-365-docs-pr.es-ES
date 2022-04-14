@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: 3b2833b2b6293845379f9f5aeffd3bd46610e2a8
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 0ec9ace6d2a2205996baed8cd64ca0e29ac83ed3
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63713083"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64836092"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -341,16 +341,30 @@ Tenga en cuenta que **Historial de conversaciones**, una carpeta de Outlook, es 
 Al elegir las configuraciones para conservar y eliminar contenido, la directiva de retención tendrá una de las siguientes configuraciones durante un período de tiempo especificado:
 
 - Sólo conservar
-
-    Para esta configuración, elija **Conservar elementos durante un período específico** y **Al final del período de retención: no hacer nada**. O bien, seleccione **Conservar elementos para siempre**.
+    
+    Para esta configuración, elija las siguientes opciones:
+    
+    - Para las políticas de retención: en la página **Decidir si quiere retener el contenido, eliminarlo o ambas cosas**, seleccione **Retener elementos durante un período específico**, especifique el período de retención y, a continuación, para **Al finalizar el período de retención**, seleccione **No hacer nada** para que se elimine la configuración de retención.  O bien, para conservar sin una fecha de finalización, seleccione **Conservar elementos para siempre** en esta página.
+    
+    - Para las etiquetas de retención: en la página **Definir configuración de etiquetas**, seleccione **Conservar elementos indefinidamente o durante un período específico** y, a continuación:
+        - Para que la configuración de retención deje de estar en vigor en el contenido etiquetado después de un tiempo específico: en la página **Definir el período de retención**, para **Conservar elementos para**, especifique el período de tiempo. A continuación, en la página **Elegir lo que sucede después del período de retención**, seleccione **Desactivar configuración de retención**. La etiqueta permanece en el contenido, pero sin restricciones, como si fuera una [etiqueta que solo clasifica](retention.md#classifying-content-without-applying-any-actions).
+        - Para conservar sin una fecha de finalización: en la página **Definir el período de retención**, para **Conservar elementos para**, seleccione **Un período indefinido**. La etiqueta permanece en el contenido con las[restricciones existentes](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked ).
 
 - Conservar y luego eliminar
 
-    Para esta configuración, elija **conservar elementos durante un período específico** y **al final del período de retención: eliminar elementos automáticamente**.
+    Para esta configuración, elija las siguientes opciones:
+    
+    - Para las políticas de retención: en la página **Decidir si quiere retener el contenido, eliminarlo o ambas cosas**, seleccione **Retener elementos durante un período específico**, especifique el período de retención y, a continuación, para **Al finalizar el período de retención**, seleccione **Eliminar elementos automáticamente**.
+    
+    - Para las etiquetas de retención: en la página **Definir configuración de etiquetas**, seleccione **Conservar elementos indefinidamente o durante un período específico**, especifique el período de retención y, a continuación, para **Elegir lo que sucede después del período de retención**, seleccione **Eliminar elementos automáticamente** o **Iniciar una revisión para eliminación**. Para obtener información sobre las revisiones para eliminación, vea [Revisión para eliminación](disposition.md#disposition-reviews).
 
 - Solo eliminar
 
-    Para esta configuración, elija **Solo eliminar elementos cuando alcancen una antigüedad determinada**.
+    Para esta configuración, elija las siguientes opciones:
+    
+    - Para las directivas de retención: en la página **Decidir si desea conservar el contenido, eliminarlo o ambas cosas**, seleccione **Eliminar solo los elementos cuando alcancen una determinada antigüedad** y especifique el período de tiempo.
+    
+    - Para las etiquetas de retención: en la página **Definir configuración de etiquetas**, seleccione **Aplicar acciones después de un período específico** y especifique el período de tiempo, que todavía se denomina período de retención. La opción **Elegir lo que sucede después del período** se establece automáticamente en **Eliminar elementos automáticamente**.
 
 ### <a name="retaining-content-for-a-specific-period-of-time"></a>Conservar el contenido durante un período de tiempo determinado
 
@@ -364,7 +378,7 @@ Ejemplos:
 
 - Exchange: si desea retener los elementos de un buzón durante siete años y hay un mensaje que se envió hace seis, este se retendrá solo durante un año. Para elementos de Exchange, la antigüedad se basa en la fecha de recepción (en el caso de correos electrónicos recibidos) o de envío (para correos electrónicos enviados). Conservar el contenido en función de cuándo se modificó por última vez solo se aplica a contenido de sitio de OneDrive y SharePoint.
 
-Al final del período de retención, usted elige si desea que el contenido se elimine de forma permanente:
+Al final del período de retención, usted elige si desea que el contenido se elimine de forma permanente. Por ejemplo, para las directivas de retención:
 
 ![Página de configuración de retenciones.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
@@ -378,11 +392,11 @@ Antes de configurar la retención, familiarícese primero con los límites de ca
 
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>Eliminar el contenido que supera una antigüedad determinada
 
-Una directiva de retención puede conservar y luego eliminar elementos o eliminar elementos antiguos sin conservarlos.
+La configuración de retención puede conservar y luego eliminar elementos o eliminar elementos antiguos sin conservarlos.
 
-En ambos casos, si la directiva elimina elementos, es importante saber que el período de tiempo que especifique no se calcula a partir del momento en que se asignó la directiva, sino según el inicio del período de retención especificado. Por ejemplo, desde el momento en que se creó, modificó o etiquetó el elemento.
+En ambos casos, si la configuración de retención elimina elementos, es importante saber que el período de tiempo que especifique no se calcula a partir del momento en que se asignó la directiva, sino según el inicio del período de retención especificado. Por ejemplo, desde el momento en que se creó, modificó o etiquetó el elemento.
 
-Por lo tanto, primero tenga en cuenta la antigüedad del contenido existente y cuál será el impacto de la directiva. También es recomendable comunicar la nueva directiva a los usuarios antes de asignarla, para que tengan tiempo de evaluar el posible impacto.
+Por este motivo, considere primero la antigüedad del contenido existente y cómo la configuración podría afectar a ese contenido. Considere la posibilidad de comunicar los ajustes elegidos a sus usuarios y al servicio de asistencia antes de que se aplique la configuración al contenido, lo que les da tiempo para evaluar el posible impacto.
 
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Una directiva que se aplica a todas las ubicaciones
 
