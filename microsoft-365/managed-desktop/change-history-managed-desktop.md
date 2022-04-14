@@ -13,12 +13,12 @@ f1.keywords:
 ms.author: tiaraquan
 ms.article: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 99ed659ceae21901deb1625c0b9e65a9a82ea1b4
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: abaca30b4de2638b0c1f7d0522b96fac469760a9
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704744"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841804"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cambiar el historial de la documentación de Escritorio administrado de Microsoft
 
@@ -28,7 +28,7 @@ En este artículo se enumeran los artículos nuevos y actualizados de la [docume
 
 Artículo nuevo o modificado | Descripción
 --- | ---
-| [Dispositivos compartidos](service-description/shared-devices.md) | Se ha agregado la sección Registro de nuevos dispositivos en modo compartido |
+| [Dispositivos compartidos](service-description/shared-devices.md) | Se ha agregado register new devices using Windows Autopilot self-deploying mode profile (Registro de nuevos dispositivos mediante Windows perfil de modo de implementación automática de Autopilot) |
 | [Teams](get-started/teams.md) | Se ha actualizado Microsoft Intune sección de cambios |
 
 ## <a name="march-2022"></a>Marzo de 2022
@@ -137,7 +137,7 @@ Artículo nuevo o modificado | Descripción
 [Microsoft Managed Desktop ciclo de vida del producto](service-description/device-lifecycle.md) | Artículo actualizado
 [dispositivos Microsoft Managed Desktop](service-description/device-list.md) |Artículo actualizado
 
-## <a name="march-2021"></a>Marzo 2021
+## <a name="march-2021"></a>Marzo de 2021
 
 Artículo nuevo o modificado | Descripción
 --- | ---
@@ -168,7 +168,7 @@ Artículo nuevo o modificado | Descripción
 [Solucionar los problemas detectados por la herramienta de evaluación de la preparación](get-ready/readiness-assessment-fix.md) | Artículo actualizado
 [Ajustar la configuración después de la inscripción](get-started/conditional-access.md) | Artículo actualizado
 [Trabajar con informes](working-with-managed-desktop/reports.md) | Artículo actualizado
-[Instalación de Intune Portal de empresa en dispositivos](get-started/company-portal.md) | Artículo actualizado
+[Instalación de Portal de empresa de Intune en dispositivos](get-started/company-portal.md) | Artículo actualizado
 [Requisitos del dispositivo](service-description/device-requirements.md) | Artículo nuevo
 [Cumplimiento](intro/compliance.md) | Artículo actualizado
 [Cómo se controlan las actualizaciones en Microsoft Managed Desktop](service-description/updates.md) | Artículo actualizado
@@ -232,9 +232,9 @@ Trabajar con ideas| Artículo actualizado
 Artículo nuevo o modificado | Descripción
 --- | ---
 [Informe de inventario de dispositivos](working-with-managed-desktop/device-inventory-report.md) | Artículo nuevo
-[Nueva aplicación Microsoft Edge](get-started/edge-browser-app.md) | Artículo actualizado
+[Nueva aplicación de Microsoft Edge](get-started/edge-browser-app.md) | Artículo actualizado
 [Registre nuevos dispositivos usted mismo](get-started/manual-registration.md) | Artículo actualizado
-[Registre los dispositivos existentes usted mismo] (get-started/manual-registration-existing-devices .md) | Artículo actualizado [Requisitos previos para Microsoft Managed Desktop](get-ready/prerequisites.md) | Artículo [actualizado Operaciones de seguridad en Microsoft Managed Desktop](service-description/security-operations.md) | Nuevo artículo [Acceso al portal de administración](get-started/access-admin-portal.md) | Se [ha actualizado el artículo Aplicaciones Microsoft 365 para la | empresarial](get-started/m365-apps.md) Nuevo artículo [Privacidad y datos personales](service-description/privacy-personal-data.md) | Nuevo artículo
+[Registre los dispositivos existentes usted mismo] (get-started/manual-registration-existing-devices .md) | Artículo actualizado [Requisitos previos para Microsoft Managed Desktop](get-ready/prerequisites.md) | Artículo [actualizado Operaciones de seguridad en Microsoft Managed Desktop](service-description/security-operations.md) | Nuevo artículo [Acceso al portal de administración](get-started/access-admin-portal.md) | Artículo actualizado [Aplicaciones Microsoft 365 para empresas](get-started/m365-apps.md) | Nuevo artículo [Privacidad y datos personales](service-description/privacy-personal-data.md) | Nuevo artículo
 
 ## <a name="july-2020"></a>Julio de 2020
 
@@ -247,7 +247,7 @@ Artículo nuevo o modificado | Descripción
 [Requisitos previos del Escritorio administrado de Microsoft](get-ready/prerequisites.md) | Artículo actualizado
 [Control de aplicaciones](service-description/app-control.md) | Artículo actualizado
 [Configuración de red para el Escritorio administrado de Microsoft](get-ready/network.md) | Artículo actualizado
-[Nueva aplicación Microsoft Edge](get-started/edge-browser-app.md) | Artículo actualizado
+[Nueva aplicación de Microsoft Edge](get-started/edge-browser-app.md) | Artículo actualizado
 [Acceso al portal de administración](get-started/access-admin-portal.md) | Artículo nuevo
 [Control de aplicaciones](service-description/app-control.md) | Artículo nuevo
 [Instalar Microsoft Project o Microsoft Visio en dispositivos Microsoft Managed Desktop](get-started/project-visio.md) | Artículo actualizado
@@ -256,7 +256,7 @@ Artículo nuevo o modificado | Descripción
 
 Artículo nuevo o modificado | Descripción
 --- | ---
-[Nueva aplicación Microsoft Edge](get-started/edge-browser-app.md) | Artículo nuevo
+[Nueva aplicación de Microsoft Edge](get-started/edge-browser-app.md) | Artículo nuevo
 [Configuración del dispositivo](service-description/device-policies.md) | Artículo actualizado
 
 ## <a name="may-2020"></a>Mayo de 2020
@@ -392,7 +392,7 @@ Artículo nuevo o modificado | Descripción
 
 Artículo nuevo o modificado | Descripción
 --- | ---
-[Instalación de Intune Portal de empresa en dispositivos Microsoft Managed Desktop](get-started/company-portal.md) | Artículo nuevo
+[Instalación de Portal de empresa de Intune en dispositivos Microsoft Managed Desktop](get-started/company-portal.md) | Artículo nuevo
 [Instalar Microsoft Project y Microsoft Visio en dispositivos Microsoft Managed Desktop](get-started/project-visio.md) | Artículo nuevo
 [Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft](get-ready/authentication.md) | Artículo nuevo
 [Registro de dispositivos en Microsoft Managed Desktop](get-started/manual-registration.md) | Artículo nuevo
@@ -403,7 +403,7 @@ Artículo nuevo o modificado | Descripción
 
 Artículo nuevo o modificado | Descripción
 --- | ---
-[Instalación de Intune Portal de empresa en dispositivos Microsoft Managed Desktop](get-started/company-portal.md) | Artículo nuevo
+[Instalación de Portal de empresa de Intune en dispositivos Microsoft Managed Desktop](get-started/company-portal.md) | Artículo nuevo
 [Instalar Microsoft Project y Microsoft Visio en dispositivos Microsoft Managed Desktop](get-started/project-visio.md) | Artículo nuevo
 
 ## <a name="february-2019"></a>Febrero de 2019

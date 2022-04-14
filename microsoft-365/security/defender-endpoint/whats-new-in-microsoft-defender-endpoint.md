@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3294529a9b86fdc9bdb83de6a3296c9f0d6507d
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 6fb2b8c3e1466c52d707538f46643580c72a6fbf
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782839"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841877"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -60,7 +60,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 - [Novedades de Defender para punto de conexión en iOS](ios-whatsnew.md)
 - [Novedades de Defender para punto de conexión en Linux](linux-whatsnew.md)
 
-## <a name="march-2022"></a>Marzo de 2022
+## <a name="april-2022"></a>Abril de 2022
 - [Incorporación actualizada y paridad de características para Windows Server 2012 R2 y Windows Server 2016)](configure-server-endpoints.md)<br/> El nuevo paquete de solución unificada ya está disponible con carácter general y facilita la incorporación de servidores mediante la eliminación de dependencias y los pasos de instalación. Además, este paquete de solución unificada incluye muchas mejoras de características nuevas.
 
 ## <a name="january-2022"></a>Enero de 2022
@@ -127,7 +127,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 - [Detección de jailbreak en iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> La funcionalidad de detección de jailbreak en Microsoft Defender para punto de conexión en iOS ya está disponible con carácter general. Esto se suma a la protección contra suplantación de identidad (phishing) que ya existe.  Para obtener más información, consulte [Configuración de la directiva de acceso condicional en función de las señales de riesgo del dispositivo](/microsoft-365/security/defender-endpoint/ios-configure-features).
 
 
-## <a name="march-2021"></a>Marzo 2021
+## <a name="march-2021"></a>Marzo de 2021
 - [Administración de la protección contra alteraciones mediante el portal de Microsoft 365 Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> Puede administrar la configuración de protección contra alteraciones en Windows 10, Windows Server 2016, Windows Server 2019 y Windows Server 2022 mediante un método denominado *asociación de inquilinos*.
 
 
