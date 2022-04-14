@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información acerca de los registros para que pueda implementar la solución de administración de registros en Microsoft 365.
-ms.openlocfilehash: 2aabfbf1b3e0aedd8ec7ba54d452cb01ad81776a
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 7fc4f9bb14e9e49c7894e864b8ff9e8f4337149a
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62242052"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64835895"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Usar el control de versiones de registros para actualizar los registros almacenados en SharePoint o OneDrive
 
@@ -37,25 +37,30 @@ La capacidad de marcar un documento como [registro](records-management.md#record
 
 Por ejemplo, podría marcar un contrato de ventas como un registro, pero después tiene que actualizar el contrato con nuevos términos y marcar la versión más reciente como un nuevo registro, manteniendo aún la versión de registro anterior. Para estos tipos de escenarios, SharePoint Online y OneDrive admite el *control de versiones de registros*. Las carpetas del Bloc de notas de OneNote no admiten el control de versiones de registros.
 
-Para usar el control de versiones de registros, primero [etiquete el documento y márquelo como registro](declare-records.md). En ese momento, se mostrará la propiedad de documento, llamada *Estado del registro* junto a la etiqueta de retención, y el estado del registro inicial será **bloqueado**.
+Para usar el control de versiones de registros, primero etiquete el documento con una [etiqueta de retención configurada para marcar los elementos como registro](declare-records.md). En este punto, se muestra una propiedad de documento, denominada *Estado de registro*, junto a la etiqueta de retención. Dependiendo de si la etiqueta está configurada para desbloquear el registro de forma predeterminada (actualmente en implementación), el estado inicial del registro es **Bloqueado** o **Desbloqueado**.
 
 Puede hacer lo siguiente:
 
 - **Editar y retener continuamente versiones individuales del documento como registros, desbloqueando y bloqueando la propiedad Estado del registro**. Solo se retiene una nueva versión del registro cuando la propiedad **Estado del registro** se establece en **Bloqueado**. Esta alternancia de bloqueado y desbloqueado reduce el riesgo de conservar versiones y copias innecesarias del documento.
+    
+    > [!NOTE]
+    > Si la etiqueta está configurada para desbloquear el registro de forma predeterminada, pero el administrador no habilita el control de versiones o lo impide la configuración de administración de registros, los usuarios no podrán desbloquear el documento después de bloquearlo.
 
-- **Hacer que los registros se almacenen automáticamente en un repositorio de registros locales que se encuentra dentro de la colección de sitios**. Todas las colecciones de sitios de SharePoint y OneDrive conserva el contenido en su biblioteca de suspensión para conservación. Las versiones de registro se almacenan en la carpeta registros de esta biblioteca.
+- **Hacer que los registros se almacenen automáticamente en un repositorio de registros local ubicado con el sitio.** Todos los sitios de SharePoint y OneDrive conservan el contenido en su biblioteca de suspensión para conservación. Las versiones de registro se almacenan en la carpeta registros de esta biblioteca. Para obtener más información sobre la Biblioteca de suspensión para conservación, vea [Cómo funciona la retención para SharePoint y OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
 - **Mantenga un documento de hoja perenne que contenga todas las versiones**. De forma predeterminada, todos los documentos de SharePoint y OneDrive tienen un historial de versiones disponible en el menú elemento. En esta historia de versiones, puede ver fácilmente las versiones que son registros y ver esos documentos.
 
 > [!TIP]
 > Al usar el control de versiones de registros con una etiqueta de retención que tiene una acción de eliminación, considere la posibilidad de establecer la configuración de retención **Iniciar el período de retención en función de:** en **Cuando se etiquetaron los elementos**. Con esta configuración de etiqueta, se restablece el inicio del período de retención para cada versión de registro nueva, lo que garantiza que las versiones anteriores se eliminarán antes que las versiones más recientes.
 
-El control de versiones de registros está disponible automáticamente para cualquier documento que tenga aplicada una etiqueta de retención que marque el elemento como un registro y esa etiqueta se [publique en el sitio](create-apply-retention-labels.md). Cuando un usuario ve las propiedades del documento en el panel de detalles, puede cambiar el **Estado del registro** de **bloqueado** a **desbloqueado**. Esta acción crea un registro en la carpeta registros de la biblioteca de suspensión para conservación, donde se encuentra por el resto de su período de retención.
+De forma predeterminada, el control de versiones de registros está disponible automáticamente para cualquier documento que tenga aplicada una etiqueta de retención que marque el elemento como un registro y esa etiqueta se [publique en el sitio](create-apply-retention-labels.md). Cuando un usuario ve las propiedades del documento en el panel de detalles, puede cambiar el **Estado del registro** entre **bloqueado** y **desbloqueado**.
 
 Cuando el documento esté desbloqueado, todos los usuarios con permisos de edición estándar podrán editar el archivo. Sin embargo, los usuarios no pueden eliminar el archivo porque aún es un registro. Cuando termine de editar, el usuario puede cambiar el **Estado de registro** de **Desbloqueado** a **Bloqueado**, lo que impide que se realicen otras modificaciones mientras se encuentre en este estado.
 <br/><br/>
 
 :::image type="content" alt-text="Propiedad de estado de registro en un documento etiquetado como registro." source="../media/recordversioning8.png" lightbox="../media/recordversioning8.png":::
+
+Para obtener más información sobre qué acciones de usuario se permiten cuando un registro está bloqueado o desbloqueado, vea [Comparar las restricciones de las acciones permitidas o bloqueadas](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 ## <a name="locking-and-unlocking-a-record"></a>Bloquear y desbloquear un registro
 
@@ -64,9 +69,9 @@ Cuando se aplica a un documento una etiqueta de retención que marca contenido c
 
 :::image type="content" alt-text="Estado del registro muestra que el documento de registro está desbloqueado." source="../media/recordversioning9.png" lightbox="../media/recordversioning9.png":::
 
-Cuando un usuario desbloquea un registro, tienen lugar las siguientes acciones:
+Cuando se desbloquea un registro, se producen las siguientes acciones:
 
-1. Si la colección de sitios actual no tiene una biblioteca de suspensión para conservación, se crea una.
+1. Si el sitio actual no tiene una biblioteca de suspensión para conservación, se crea una.
 
 2. Si la biblioteca de suspensión para conservación no tiene una carpeta de registros, se crea una.
 
@@ -80,25 +85,12 @@ Cuando un usuario bloquea un registro, no se puede editar el documento original.
 
 ## <a name="record-versions"></a>Versiones de registro
 
-Cada vez que un usuario desbloquea un registro, la versión más reciente se copia en la biblioteca de conservación de documentos y esa versión contiene el valor del **Registro** en el campo **Comentarios** del historial de versiones.
+Cada vez que se desbloquea un registro, la versión más reciente se copia en la biblioteca de suspensión para conservación y esa versión contiene el valor del **Registro** en el campo **Comentarios** del historial de versiones.
 <br/><br/>
 
 :::image type="content" alt-text="Registro que se muestra en la biblioteca de suspensión para conservación." source="../media/recordversioning10.png" lightbox="../media/recordversioning10.png":::
 
 Para ver el historial de versiones, seleccione un documento de la biblioteca de documentos y, a continuación, haga clic en **Historial de versiones** en el menú elemento.
-
-## <a name="where-records-are-stored"></a>Dónde se almacenan los registros
-
-Los registros se almacenan en la carpeta registros de la biblioteca de suspensión para conservación en el sitio de nivel superior de la colección de sitios. En el panel de navegación izquierdo en el sitio de nivel superior, elija **Contenidos del sitio** \> **Biblioteca de suspensión para conservación**.
-<br/><br/>
-
-![Biblioteca de suspensión para conservación.](../media/recordversioning11.png)
-
-<br/><br/>
-
-![La carpeta Registros en la biblioteca de suspensión para conservación.](../media/recordversioning12.png)
-
-Para obtener más información sobre la Biblioteca de suspensión para conservación, vea [Cómo funciona la retención para SharePoint y OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
 ## <a name="searching-the-audit-log-for-record-versioning-events"></a>Buscar en el registro de auditoría los eventos de control de versiones de registros
 
