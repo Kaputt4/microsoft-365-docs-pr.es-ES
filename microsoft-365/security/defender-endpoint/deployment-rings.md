@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-endpointprotect
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 41f47720582f715e6c5d28276ddd87777e9669d5
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: e308b1c1d8c26a4ec3d6b3044501ffe1ce92e1c7
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783389"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862892"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Implementación de Microsoft Defender para punto de conexión en anillos
 
@@ -42,7 +42,7 @@ Los anillos de implementación se pueden aplicar en los siguientes escenarios:
 
 ## <a name="new-deployments"></a>Nuevas implementaciones
 
-:::image type="content" source="images/deployment-rings.png" alt-text="Los anillos de implementación" lightbox="images/deployment-rings.png":::
+:::image type="content" source="images/deployment-rings.png" alt-text="Los anillos de implementación." lightbox="images/deployment-rings.png":::
 
 Un enfoque basado en anillos es un método para identificar un conjunto de puntos de conexión para incorporar y comprobar que se cumplen determinados criterios antes de continuar con la implementación del servicio en un conjunto mayor de dispositivos. Puede definir los criterios de salida para cada anillo y asegurarse de que están satisfechos antes de pasar al siguiente anillo.
 
@@ -52,16 +52,11 @@ En la tabla 1 se proporciona un ejemplo de los anillos de implementación que pu
 
 **Tabla 1**:
 
-<br>
-
-****
-
 |Anillo de implementación|Descripción|
 |---|---|
 |Calcular|Anillo 1: Identificación de 50 sistemas para pruebas piloto|
 |Piloto|Anillo 2: Identificación de los próximos 50-100 puntos de conexión en el entorno de producción|
 |Implementación completa|Anillo 3: Implementación del servicio en el resto del entorno en incrementos mayores|
-|
 
 ### <a name="exit-criteria"></a>Criterios de salida
 
@@ -82,13 +77,13 @@ Microsoft Defender para punto de conexión admite una variedad de puntos de cone
 
 En la tabla siguiente se muestran los puntos de conexión admitidos y la herramienta correspondiente que puede usar para incorporar dispositivos al servicio.
 
-| Punto de conexión     | Herramienta de implementación                       |
-|--------------|------------------------------------------|
-| **Windows**  |  [Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br> NOTA: Si desea implementar más de 10 dispositivos en un entorno de producción, use el método directiva de grupo en su lugar o las demás herramientas admitidas que se enumeran a continuación.<br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Administrador de dispositivos](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts de VDI](configure-endpoints-vdi.md) <br> [Integración con Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
-| **macOS**    | [Script local](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móvil](mac-install-with-other-mdm.md) |
-| **Servidor Linux** | [Script local](linux-install-manually.md) <br> [Marioneta](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
-| **iOS**      | [Microsoft Endpoint Manager](ios-install.md)                                |
-| **Android**  | [Microsoft Endpoint Manager](android-intune.md)               |
+|Punto de conexión|Herramienta de implementación|
+|---|---|
+|**Windows**|[Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br> NOTA: Si desea implementar más de 10 dispositivos en un entorno de producción, use el método directiva de grupo en su lugar o las demás herramientas admitidas que se enumeran a continuación.<br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Administrador de dispositivos](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts de VDI](configure-endpoints-vdi.md) <br> [Integración con Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)|
+|**macOS**|[Script local](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móvil](mac-install-with-other-mdm.md)|
+|**Servidor Linux**|[Script local](linux-install-manually.md) <br> [Marioneta](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
+|**iOS**|[Microsoft Endpoint Manager](ios-install.md)|
+|**Android**|[Microsoft Endpoint Manager](android-intune.md)|
 
 ### <a name="full-deployment"></a>Implementación completa
 
@@ -96,9 +91,9 @@ En esta fase, puede usar el material [plan de implementación](deployment-strate
 
 Use el siguiente material para seleccionar la arquitectura de Microsoft Defender para punto de conexión adecuada que mejor se adapte a su organización.
 
-|**Elemento**|**Descripción**|
-|:-----|:-----|
-|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="La estrategia para la implementación de Microsoft Defender para punto de conexión" lightbox="images/mde-deployment-strategy.png":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li></ul>
+|Item|Descripción|
+|---|---|
+|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="Estrategia para la implementación de Microsoft Defender para punto de conexión." lightbox="images/mde-deployment-strategy.png":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)|El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li></ul>|
 
 ## <a name="existing-deployments"></a>Implementaciones existentes
 
@@ -120,8 +115,7 @@ Con macOS y Linux, podría tomar un par de sistemas y ejecutarse en el canal Bet
 
 La elección del canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen al dispositivo. Los dispositivos beta son los primeros en recibir actualizaciones y nuevas características, seguidos más adelante de la versión preliminar y, por último, de Actual.
 
-:::image type="content" source="images/insider-rings.png" alt-text="Los anillos internos" lightbox="images/insider-rings.png":::
-
+:::image type="content" source="images/insider-rings.png" alt-text="Los anillos internos." lightbox="images/insider-rings.png":::
 
 Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa para que usen beta o versión preliminar.
 

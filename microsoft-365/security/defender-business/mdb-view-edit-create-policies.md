@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,35 +17,30 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 6f8ad1bd1f77bd3e53a1686674984155a7dc8525
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: ba7f6846809009b8bb9df258b8ac18536a910b6d
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665104"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862134"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Ver o editar directivas en Microsoft Defender para Empresas
 
-> [!IMPORTANT]
-> Microsoft Defender para Empresas se está implementando para [Microsoft 365 Empresa Premium](../../business-premium/index.md) clientes, a partir del 1 de marzo de 2022. Defender for Business como una suscripción independiente está en versión preliminar y se implementará gradualmente para los clientes y asociados de TI que [se registren aquí](https://aka.ms/mdb-preview) para solicitarla. La versión preliminar incluye un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
-> 
-> Parte de la información de este artículo se refiere a los productos o servicios preliminares que se pueden modificar sustancialmente antes de que se publiquen comercialmente. Microsoft no ofrece ninguna garantía, expresa o implícita, de la información que se proporciona aquí. 
+> [!NOTE]
+> Microsoft Defender para Empresas ahora se incluye en [Microsoft 365 Empresa Premium](../../business-premium/index.md). 
 
 En Microsoft Defender para Empresas, la configuración de seguridad se configura mediante directivas que se aplican a los dispositivos. Para simplificar la experiencia de configuración y configuración, Defender for Business incluye directivas preconfiguradas para ayudar a proteger los dispositivos de su empresa en cuanto se incorporan. Puede usar las directivas predeterminadas, editar directivas o crear sus propias directivas.
 
 **En este artículo se describe cómo**:
 
 - [Obtenga información general sobre las directivas predeterminadas.](#default-policies-in-defender-for-business)
-
 - [Visualización de las directivas existentes](#view-your-existing-policies)
-
 - [Editar una directiva existente](#edit-an-existing-policy)
-
 - [Crear una nueva directiva](#create-a-new-policy)
 
 >
 > **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre Microsoft Defender para Empresas</a>. Nos encantaría conocer su opinión.
+> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
 >
 
 ## <a name="default-policies-in-defender-for-business"></a>Directivas predeterminadas en Defender para empresas
@@ -53,7 +48,6 @@ En Microsoft Defender para Empresas, la configuración de seguridad se configura
 En Defender para empresas, hay dos tipos principales de directivas para proteger los dispositivos de su empresa:
 
 - **Directivas de protección de última generación**, que determinan cómo se configuran Antivirus de Microsoft Defender y otras características de protección contra amenazas
-
 - **Directivas de firewall**, que determinan qué tráfico de red puede fluir hacia y desde los dispositivos de la empresa
 
 
@@ -138,11 +132,7 @@ En Defender para empresas, hay dos tipos principales de directivas para proteger
 Elija una o varias de las siguientes tareas:
 
 - [Administrar dispositivos](mdb-manage-devices.md)
-
 - [Creación de una nueva directiva en Microsoft Defender para Empresas](mdb-create-new-policy.md)
-
 - [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md)
-
 - [Respuesta y mitigación de amenazas en Microsoft Defender para Empresas](mdb-respond-mitigate-threats.md)
-
 - [Revisión de las acciones de corrección en el Centro de acciones](mdb-review-remediation-actions.md)

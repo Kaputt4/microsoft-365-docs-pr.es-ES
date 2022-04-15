@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Use la taxonomía del almacén de términos al crear un extractor en el modelo de comprensión de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 909f26026ddf26163a12e1d14c1790f4af93a160
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: d3f2acf32231558f9f56a62b18c6dd7ffbc4e20f
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328811"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861496"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Aprovechar la taxonomía del almacén de términos al crear un extractor en Microsoft SharePoint Syntex
 
@@ -37,7 +37,7 @@ Por ejemplo, el modelo identifica y clasifica todos los documentos de **Contrato
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Usar una columna de metadatos administrados en el extractor
 
-Los conjuntos de términos se configuran en el almacén de términos servicios de metadatos administrados (MMS) en el <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">Centro de administración de SharePoint</a>. En el ejemplo siguiente, el *conjunto de términos* de [Servicios de contrato](/sharepoint/managed-metadata#term-set) se configura para incluir varios términos, incluido *Creativo*.  En los detalles, se muestra que el término tiene tres sinónimos (*Diseño*, *Gráficos* y *Topografía*) y los sinónimos se deberían traducir como *Creativo*. 
+Los conjuntos de términos se configuran en el almacén de términos de Servicios de metadatos administrados (MMS) en el <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">centro de administración de SharePoint</a>. En el ejemplo siguiente, el *conjunto de términos* de [Servicios de contrato](/sharepoint/managed-metadata#term-set) se configura para incluir varios términos, incluido *Creativo*.  En los detalles, se muestra que el término tiene tres sinónimos (*Diseño*, *Gráficos* y *Topografía*) y los sinónimos se deberían traducir como *Creativo*. 
 
    ![Conjunto de términos.](../media/content-understanding/term-store.png)</br>
 
@@ -51,6 +51,8 @@ Después de aplicar el modelo a la biblioteca de documentos, cuando los document
 
    ![Columna de servicio de contrato.](../media/content-understanding/creative.png)</br>
 
+> [!NOTE]
+> Si el conjunto de términos está abierto, los valores extraídos que no coincidan con un término preferido o un valor de sinónimo se agregarán como un nuevo término a la raíz del conjunto de términos. Estos nuevos términos se pueden mover, combinar o convertir en sinónimos en el almacén de términos donde reside el conjunto de términos.
 
 ## <a name="see-also"></a>Consulte también
 [Introducción a los metadatos administrados](/sharepoint/managed-metadata#terms)

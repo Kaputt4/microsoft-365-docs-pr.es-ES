@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/08/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,31 +16,29 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 830149a1592aa2985b603d2e9f317250c7c2606a
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: d0364a26fab9e2c496e1208eb5ac4e4275bab3b2
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746544"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861848"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Obtener Microsoft Defender para Empresas
 
-> [!IMPORTANT]
-> Microsoft Defender para Empresas se está implementando para [Microsoft 365 Empresa Premium](../../business-premium/index.md) clientes, a partir del 1 de marzo de 2022. Defender for Business como una suscripción independiente está en versión preliminar y se implementará gradualmente para los clientes y asociados de TI que [se registren aquí](https://aka.ms/mdb-preview) para solicitarla. La versión preliminar incluye un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
-> 
-> Parte de la información de este artículo se refiere a los productos o servicios preliminares que se pueden modificar sustancialmente antes de que se publiquen comercialmente. Microsoft no ofrece ninguna garantía, expresa o implícita, de la información que se proporciona aquí. 
+> [!NOTE]
+> Microsoft Defender para Empresas ahora se incluye en [Microsoft 365 Empresa Premium](../../business-premium/index.md). 
 
 Si aún no tiene Microsoft Defender para Empresas, puede elegir entre varias opciones:
 
 - [Trabajar con un proveedor de soluciones de Microsoft](#work-with-a-microsoft-solution-provider)
 - [Obtención de Microsoft 365 Empresa Premium](#get-microsoft-365-business-premium)
-- [Registrarse para obtener el programa en versión preliminar](#sign-up-for-the-preview-program)
+- [Registrarse en el programa de versión preliminar de Defender for Business](#sign-up-for-the-preview-program)
 
 Si se ha registrado para obtener una evaluación, después de recibir el correo electrónico de aceptación, puede [activar la prueba y asignar licencias de usuario](#activate-your-trial) y, a continuación, continuar con [los pasos siguientes](#next-steps).
 
 >
 > **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre Microsoft Defender para Empresas</a>. Nos encantaría conocer su opinión.
+> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
 >
 
 ## <a name="work-with-a-microsoft-solution-provider"></a>Trabajar con un proveedor de soluciones de Microsoft
@@ -119,7 +117,7 @@ Cuando reciba el correo electrónico de aceptación, aquí le mostremos cómo ac
 
    | Escenario | Procedure |
    |:---|:---|
-   | Está configurando una suscripción de Microsoft 365 por primera vez. | Seleccione **Ir a la configuración guiada** y complete los pasos siguientes:<br/><br/>1. Instale las aplicaciones de Office ahora o elija **Continuar** para omitir este paso. (Puede instalar las aplicaciones de Office más adelante).<br/><br/>2. Si su empresa tiene un dominio, puede agregarlo ahora (se recomienda esta opción). Como alternativa, podría optar por usar el dominio predeterminado `.onmicrosoft.com` por ahora.<br/><br/>3. Agregar usuarios y asignar licencias. A cada usuario que enumere se le asignará automáticamente una licencia. Consulte [Agregar usuarios y asignar licencias al mismo tiempo](../../admin/add-users/add-users.md). |
+   | Está configurando una suscripción de Microsoft 365 por primera vez. | Seleccione **Ir a la configuración guiada** y complete los pasos siguientes:<br/><br/>1. Instale las aplicaciones de Office ahora o elija **Continuar** para omitir este paso. (Puede instalar las aplicaciones de Office más adelante).<br/><br/>2. Si su empresa tiene un dominio, puede agregarlo ahora (se recomienda esta opción). Como alternativa, podría optar por usar el dominio predeterminado `.onmicrosoft.com` por ahora.<br/><br/>3. Agregar usuarios y asignar licencias. A cada usuario que enumere se le asignará automáticamente una licencia. Consulte [Agregar usuarios y asignar licencias al mismo tiempo](mdb-add-users.md). |
    | Va a agregar una prueba a un inquilino de Microsoft 365 existente. | 1. Vaya al Centro de administración de Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) e inicie sesión.<br/><br/>2. En el panel de navegación, elija **UsuariosUsuarios** >  **activos**. Revise la lista de usuarios. <br/><br/>3. Para asignar licencias, siga las instrucciones de [Asignación de licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md). |
 
 

@@ -1,5 +1,5 @@
 ---
-title: Administrar los bloques en la lista de inquilinos permitidos o bloqueados
+title: Administrar los bloques en la lista de permitidos o bloqueados de inquilinos
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4cca466ce4862cc93ec7521bf6bd00fe960f06a9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 1ea87a29d93c43b89bcfb482d185bd4b397dcc5b
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317435"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862464"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>Agregar bloques a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -34,16 +34,16 @@ ms.locfileid: "63317435"
 
 ## <a name="use-the-microsoft-365-defender-portal"></a>Uso del portal de Microsoft 365 Defender 
 
-### <a name="create-block-sender-entries-in-the-tenant-allowblock-list"></a>Crear entradas de remitente de bloques en la lista de inquilinos permitidos o bloqueados
+### <a name="create-block-sender-entries-in-the-tenant-allowblock-list"></a>Creación de entradas de remitente de bloques en la lista de permitidos o bloqueados de inquilinos
 
-1. En el portal Microsoft 365 Defender, vaya a **Directivas &** \>  \>  \> de reglas de amenazas Sección Reglas de directivas de amenazas.
+1. En el portal de Microsoft 365 Defender, vaya a **Directivas & reglas De directivas** \> de amenazas sección **Reglas de directivas** \> de **amenazas** \> **Listas de permitidos o bloques de inquilinos**.
 
-2. En la **página Lista de inquilinos permitidos o** **bloqueados** , compruebe que la pestaña Remitentes está seleccionada y, a continuación, haga clic en ![Bloquear icono.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
+2. En la página **Lista de permitidos o bloqueados de inquilinos** , compruebe que la pestaña **Remitentes** está seleccionada y, a continuación, haga clic en ![el icono Bloquear.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
 
-3. En el **menú desplegable Bloquear remitentes** que aparece, configure las siguientes opciones:
-   - **Direcciones de correo electrónico del** remitente o dominios: escriba un remitente (dirección de correo electrónico o dominio) por línea, hasta un máximo de 20.
+3. En el control flotante **Bloquear remitentes** que aparece, configure los siguientes valores:
+   - **Dominios o direcciones de correo electrónico del remitente**: escriba un remitente (dirección de correo electrónico o dominio) por línea, hasta un máximo de 20.
    - **Nunca expire**: realice uno de los pasos siguientes:
-     - Compruebe que la configuración está desactivada (![Desactivar)](../../media/scc-toggle-off.png) y use el cuadro Quitar  en para especificar la fecha de expiración de las entradas.
+     - Compruebe que la configuración está desactivada (![desactivar)](../../media/scc-toggle-off.png) y use el cuadro **Quitar activado** para especificar la fecha de expiración de las entradas.
 
        o
 
@@ -53,18 +53,18 @@ ms.locfileid: "63317435"
 4. Cuando haya terminado, haga clic en **Agregar**.
 
 > [!NOTE]
-> Los correos electrónicos de estos remitentes se bloquearán como *correo no deseado*. 
+> Los correos electrónicos de estos remitentes se bloquearán como *correo no deseado de alta confianza (SCL = 9)*. 
 
-### <a name="create-block-url-entries-in-the-tenant-allowblock-list"></a>Crear entradas de dirección URL de bloque en la lista de inquilinos permitidos o bloqueados
+### <a name="create-block-url-entries-in-the-tenant-allowblock-list"></a>Creación de entradas de dirección URL de bloque en la lista de permitidos o bloqueados de inquilinos
 
-1. En el portal Microsoft 365 Defender, vaya a **Directivas &** \>  \>  \> de reglas de amenazas Sección Reglas de directivas de amenazas.
+1. En el portal de Microsoft 365 Defender, vaya a **Directivas & reglas De directivas** \> de amenazas sección **Reglas de directivas** \> de **amenazas** \> **Listas de permitidos o bloques de inquilinos**.
 
-2. En la **página Lista de inquilinos permitidos o** bloqueados, compruebe que la pestaña **Direcciones** URL está seleccionada y, a continuación, haga clic en ![Bloquear icono.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
+2. En la página **Lista de permitidos o bloqueados de inquilinos** , compruebe que la pestaña **Direcciones URL** está seleccionada y, a continuación, haga clic en ![icono Bloquear.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
 
-3. En el **menú desplegable Bloquear direcciones URL** que aparece, configure las siguientes opciones:
-   - **Agregar direcciones URL con caracteres comodín**: escriba una dirección URL por línea, hasta un máximo de 20. Para obtener más información sobre la sintaxis de las entradas de dirección URL, consulte la sección Sintaxis de dirección URL en [Administrar la lista de inquilinos permitidos o bloqueados](tenant-allow-block-list.md).
+3. En el control flotante **Bloquear direcciones URL** que aparece, configure los siguientes valores:
+   - **Agregar direcciones URL con caracteres comodín**: escriba una dirección URL por línea, hasta un máximo de 20. Para obtener más información sobre la sintaxis de las entradas de dirección URL, consulte la sección Sintaxis de dirección URL en [Administrar la lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md).
    - **Nunca expire**: realice uno de los pasos siguientes:
-     - Compruebe que la configuración está desactivada (![Desactivar)](../../media/scc-toggle-off.png) y use el cuadro Quitar  en para especificar la fecha de expiración de las entradas.
+     - Compruebe que la configuración está desactivada (![desactivar)](../../media/scc-toggle-off.png) y use el cuadro **Quitar activado** para especificar la fecha de expiración de las entradas.
 
        o
 
@@ -76,16 +76,16 @@ ms.locfileid: "63317435"
 > [!NOTE]
 > Los correos electrónicos que contienen estas direcciones URL se bloquearán como *phish*. 
 
-### <a name="create-block-file-entries-in-the-tenant-allowblock-list"></a>Crear entradas de archivo de bloque en la lista de inquilinos permitidos o bloqueados
+### <a name="create-block-file-entries-in-the-tenant-allowblock-list"></a>Creación de entradas de archivo de bloque en la lista de inquilinos permitidos o bloqueados
 
-1. En el portal Microsoft 365 Defender, vaya a **Directivas &** \>  \>  \> de reglas de amenazas Sección Reglas de directivas de amenazas.
+1. En el portal de Microsoft 365 Defender, vaya a **Directivas & reglas De directivas** \> de amenazas sección **Reglas de directivas** \> de **amenazas** \> **Listas de permitidos o bloques de inquilinos**.
 
-2. En la **página Lista de inquilinos permitidos o** bloqueados, seleccione la **pestaña** Archivos y, a continuación, haga clic en ![Bloquear icono.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
+2. En la página **Lista de permitidos o bloqueados de inquilinos** , seleccione la pestaña **Archivos** y, a continuación, haga clic en ![el icono Bloquear.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
 
-3. En el **menú desplegable Bloquear** archivos que aparece, configure las siguientes opciones:
-   - **Agregar hashes de archivo**: escriba un valor hash SHA256 por línea, hasta un máximo de 20.
+3. En el control flotante **Bloquear archivos** que aparece, configure los siguientes valores:
+   - **Agregar hash de archivo**: escriba un valor hash SHA256 por línea, hasta un máximo de 20.
    - **Nunca expire**: realice uno de los pasos siguientes:
-     - Compruebe que la configuración está desactivada (![Desactivar)](../../media/scc-toggle-off.png) y use el cuadro Quitar  en para especificar la fecha de expiración de las entradas.
+     - Compruebe que la configuración está desactivada (![desactivar)](../../media/scc-toggle-off.png) y use el cuadro **Quitar activado** para especificar la fecha de expiración de las entradas.
 
      o
 
@@ -97,22 +97,22 @@ ms.locfileid: "63317435"
 > [!NOTE]
 > Los correos electrónicos que contienen estos archivos se bloquearán como *malware*. 
 
-### <a name="create-spoofed-sender-block-entries"></a>Crear entradas de bloque de remitente suplantadas
+### <a name="create-spoofed-sender-block-entries"></a>Creación de entradas de bloque de remitentes suplantados
 
 **Notas**:
 
-- Solo se _permite o_ bloquea específicamente la combinación del  usuario suplantado y la infraestructura de envío definida en el par de dominio.
-- Al configurar una entrada de permitir o bloquear para un par de dominio, los mensajes de ese par de dominio ya no aparecen en la información de inteligencia suplantación.
-- Las entradas de remitentes suplantados nunca expiran.
-- La suplantación admite permitir y bloquear.
+- Solo se permite o bloquea específicamente la _combinación_ del usuario suplantado _y_ la infraestructura de envío tal como se define en el par de dominio.
+- Al configurar una entrada de permitir o bloquear para un par de dominio, los mensajes de ese par de dominio ya no aparecen en la información de inteligencia de suplantación de identidad.
+- Las entradas para remitentes suplantados nunca expiran.
+- La suplantación de identidad admite permitir y bloquear.
 
-1. En el portal Microsoft 365 Defender, vaya a **Directivas &** \>  \>  \> de reglas de amenazas Sección Reglas de directivas de amenazas.
+1. En el portal de Microsoft 365 Defender, vaya a **Directivas & reglas De directivas** \> de amenazas sección **Reglas de directivas** \> de **amenazas** \> **Listas de permitidos o bloques de inquilinos**.
 
-2. En la **página Lista de inquilinos permitidos o** bloqueados, seleccione la pestaña **Suplantación** y, a continuación, haga clic en ![Bloquear icono.](../../media/m365-cc-sc-create-icon.png) **Agregar**.
+2. En la página **Lista de permitidos o bloqueados de inquilinos** , seleccione la pestaña **Suplantación** de identidad y, a continuación, haga clic en ![el icono Bloquear.](../../media/m365-cc-sc-create-icon.png) **Agregar**.
 
-3. En el **menú desplegable Agregar nuevos pares de** dominio que aparece, configure las siguientes opciones:
-   - **Agregar nuevos pares de dominio con caracteres comodín**: escriba un par de dominio por línea, hasta un máximo de 20. Para obtener información detallada acerca de la sintaxis de las entradas de remitente suplantadas, vea [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-   - **Tipo de suplantación**: seleccione uno de los siguientes valores:
+3. En el control flotante **Agregar nuevos pares de dominio** que aparece, configure los siguientes valores:
+   - **Agregar nuevos pares de dominio con caracteres comodín**: escriba un par de dominio por línea, hasta un máximo de 20. Para obtener más información sobre la sintaxis de las entradas de remitente suplantadas, consulte [Administrar la lista de permitidos o bloques](tenant-allow-block-list.md) de inquilinos.
+   - **Tipo de suplantación**: seleccione uno de los valores siguientes:
      - **Interno**: el remitente suplantado está en un dominio que pertenece a su organización (un [dominio aceptado](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
      - **Externo**: el remitente suplantado está en un dominio externo.
    - **Acción**: seleccione **Permitir** o **Bloquear**.
@@ -121,9 +121,9 @@ ms.locfileid: "63317435"
 
 ## <a name="use-powershell"></a>Usar PowerShell
 
-### <a name="add-block-sender-file-or-url-entries-to-the-tenant-allowblock-list"></a>Agregar entradas de remitente, archivo o dirección URL de bloque a la lista de inquilinos permitidos o bloqueados
+### <a name="add-block-sender-file-or-url-entries-to-the-tenant-allowblock-list"></a>Agregar entradas de remitente, archivo o dirección URL de bloque a la lista de permitidos o bloqueados de inquilinos
 
-Para agregar entradas de remitente, archivo o dirección URL de bloque en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
+Para agregar entradas de remitente, archivo o dirección URL en la lista de permitidos o bloqueados de inquilinos, use la sintaxis siguiente:
 
 ```powershell
 New-TenantAllowBlockListItems -ListType <Sender | FileHash | Url> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
@@ -147,14 +147,14 @@ En este ejemplo se agrega una entrada de dirección URL de bloque para contoso.c
 New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 ```
 
-Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
+Para obtener información detallada sobre la sintaxis y los [parámetros, vea New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### <a name="add-spoofed-sender-block-entries"></a>Agregar entradas de bloque de remitente suplantadas 
+### <a name="add-spoofed-sender-block-entries"></a>Adición de entradas de bloque de remitentes suplantados 
 
-Para agregar entradas de remitente suplantadas en la lista de inquilinos permitidos o bloqueados, use la sintaxis siguiente:
+Para agregar entradas de remitente suplantadas en la lista de permitidos o bloqueados de inquilinos, use la sintaxis siguiente:
 
 ```powershell
 New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -SendingInfrastructure <Domain | IPAddress/24> -SpoofType <External | Internal> -Action <Allow | Block>
 ```
 
-Para obtener información detallada sobre la sintaxis y los parámetros, [vea New-TenantAllowBlockListSpoofItems](/powershell/module/exchange/new-tenantallowblocklistspoofitems).
+Para obtener información detallada sobre la sintaxis y los [parámetros, vea New-TenantAllowBlockListSpoofItems](/powershell/module/exchange/new-tenantallowblocklistspoofitems).

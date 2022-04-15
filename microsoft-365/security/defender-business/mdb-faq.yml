@@ -1,14 +1,14 @@
 ### YamlMime:FAQ
 metadata:
-  title: Preguntas más frecuentes de Microsoft Defender para empresas
-  description: Obtener respuestas a sus preguntas sobre Microsoft Defender para empresas
+  title: Microsoft Defender para Empresas preguntas más frecuentes
+  description: Obtenga respuestas a sus preguntas sobre Microsoft Defender para Empresas
   search.appverid: MET150
   author: denisebmsft
   ms.author: deniseb
   manager: dansimp
   audience: Admin
   ms.topic: faq
-  ms.date: 03/15/2022
+  ms.date: 04/12/2022
   ms.prod: m365-security
   ms.technology: mdb
   ms.localizationpriority: medium
@@ -17,78 +17,78 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 28e2299b425c815cb40d68c02bfcf119b00e179a
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  ms.openlocfilehash: 482c2fa4d4ef0ee06c88ee85715c7a70eefc52c3
+  ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63675350"
-title: 'Microsoft Defender para empresas: preguntas y respuestas más frecuentes'
-summary: "Microsoft Defender para empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Defender para empresas como suscripción independiente está en versión preliminar y se irá lanzando gradualmente a los clientes y partners de TI que se inscribirán [aquí para](https://aka.ms/mdb-preview) solicitarla. La vista previa incluye [un conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.\n\nParte de la información de este artículo se refiere a productos o servicios predefinidos que podrían modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, de la información proporcionada aquí. \n\nUse este artículo para obtener respuestas a preguntas que pueda tener sobre Defender para empresas.\n"
+  ms.lasthandoff: 04/15/2022
+  ms.locfileid: "64861364"
+title: 'Microsoft Defender para Empresas: preguntas y respuestas más frecuentes'
+summary: "Microsoft Defender para Empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Defender for Business como una suscripción independiente está en versión preliminar y se implementará gradualmente para los clientes y asociados de TI que [se registren aquí](https://aka.ms/mdb-preview) para solicitarla. La versión preliminar incluye un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.\n\nParte de la información de este artículo se refiere a los productos o servicios preliminares que se pueden modificar sustancialmente antes de que se publiquen comercialmente. Microsoft no ofrece ninguna garantía, expresa o implícita, de la información que se proporciona aquí. \n\nUse este artículo para obtener respuestas a las preguntas que puede tener sobre Defender para empresas.\n"
 sections:
 - name: General
   questions:
-  - question: Tengo otra suscripción a Microsoft Cloud. ¿Por qué no veo Microsoft Defender para empresas en mi portal?
+  - question: Tengo otra suscripción a Microsoft Cloud. ¿Por qué no veo Microsoft Defender para Empresas en mi portal?
     answer: >
-      Actualmente, siempre que un cliente tiene varias suscripciones, la suscripción más alta tiene prioridad. Estos son algunos ejemplos:
+      Actualmente, cada vez que un cliente tiene varias suscripciones, la suscripción más alta tiene prioridad. Estos son algunos ejemplos:
 
 
-      - Ejemplo 1: Si tiene [Microsoft Defender para endpoint plan 2](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) (suscripción comprada o de prueba) y obtiene Microsoft Defender para empresas, Defender for Endpoint Plan 2 tiene prioridad. En este caso, no verá la experiencia de Defender para empresas.
+      - Ejemplo 1: si tiene [Microsoft Defender para punto de conexión plan 2](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) (suscripción comprada o de prueba) y obtiene Microsoft Defender para Empresas, el plan 2 de Defender para punto de conexión tiene prioridad. En este caso, no verá la experiencia de Defender para empresas.
 
 
-      - Ejemplo 2: Si tienes [Microsoft Defender para](/azure/defender-for-cloud/defender-for-cloud-introduction) la nube (comprada o suscripción de prueba) y obtienes Defender for Business, Defender for Cloud tiene prioridad. En este caso, no verá la experiencia de Defender para empresas.
+      - Ejemplo 2: Si tiene [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) (suscripción comprada o de prueba) y obtiene Defender para empresas, Defender for Cloud tiene prioridad. En este caso, no verá la experiencia de Defender para empresas.
   - question: ¿Cuáles son las diferencias entre Defender para empresas y Defender para los planes de punto de conexión 1 y 2?
-    answer: "Defender para empresas se diseñó para pequeñas y medianas empresas (hasta 300 empleados). Con un [proceso de](mdb-simplified-configuration.md) configuración simplificado y opciones de incorporación de [dispositivos,](mdb-onboard-devices.md) Defender para empresas permite a los clientes que no tienen necesariamente un fondo de seguridad configurar, configurar y usar Defender para empresas.  \n\nTanto Defender para empresas como Defender para Endpoint proporcionan capacidades de protección contra amenazas sólidas para los puntos de conexión de su empresa. Para obtener más información sobre las diferencias, consulta [Comparar Microsoft Defender para empresas con Microsoft 365 Empresa Premium](compare-mdb-m365-plans.md).\n"
-  - question: ¿Cómo me inscribo en la vista previa de Defender para empresas?
+    answer: "Defender for Business se diseñó para pequeñas y medianas empresas (hasta 300 empleados). Con un [proceso de configuración simplificado](mdb-simplified-configuration.md) y [opciones de incorporación de dispositivos](mdb-onboard-devices.md), Defender for Business permite a los clientes que no tienen necesariamente un fondo de seguridad configurar, configurar y usar Defender para empresas.  \n\nTanto Defender para empresas como Defender para punto de conexión proporcionan funcionalidades de protección contra amenazas sólidas para los puntos de conexión de la empresa. Para más información sobre las diferencias, consulte [Comparación de Microsoft Defender para Empresas con Microsoft 365 Empresa Premium](compare-mdb-m365-plans.md).\n"
+  - question: Cómo registrarse para obtener la versión preliminar de Defender para empresas?
     answer: >
-      Defender for Business se está implementando como parte de Microsoft 365 Empresa Premium, a partir del 1 de marzo de 2022. Si tienes Microsoft 365 Empresa Premium, pronto tendrás funciones de Defender para empresas automáticamente.
+      Defender for Business se está implementando como parte de Microsoft 365 Empresa Premium, a partir del 1 de marzo de 2022. Si tiene Microsoft 365 Empresa Premium, pronto tendrá funcionalidades de Defender para empresas automáticamente.
 
 
-      La versión independiente de Defender para empresas todavía está en versión preliminar. Visita [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) para solicitar el programa de vista previa. Para obtener más información, [vea How to get Microsoft Defender for Business](get-defender-business.md).
-  - question: ¿Existen requisitos previos para la versión preliminar de Defender para empresas?
+      La versión independiente de Defender para empresas sigue en versión preliminar. Visite [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) para solicitar el programa en versión preliminar. Para obtener más información, consulte [Cómo obtener Microsoft Defender para Empresas](get-defender-business.md).
+  - question: ¿Hay algún requisito previo para la versión preliminar de Defender para empresas?
     answer: >
       Su empresa debe ser una de las siguientes:
 
 
-      - Un partner que ofrece servicios de IT a pequeñas y medianas empresas
+      - Un asociado que ofrece servicios de TI a pequeñas y medianas empresas
 
 
       - Una pequeña o mediana empresa con hasta 300 empleados
 
 
-      Todavía no tiene que tener otra suscripción Microsoft 365 usuario. Para obtener más información, consulte [Requisitos de Microsoft Defender para empresas](mdb-requirements.md).
-  - question: ¿Cuál será el modelo de licencias en GA?
+      No es necesario tener otra suscripción Microsoft 365. Para obtener más información, consulte [requisitos de Microsoft Defender para Empresas](mdb-requirements.md).
+  - question: ¿Cuál será el modelo de licencias en disponibilidad general?
     answer: >
-      A partir del 1 de marzo de 2022, Defender para empresas se está implementando como parte de Microsoft 365 Empresa Premium. Defender para empresas está llegando a la disponibilidad general (GA) ahora para Microsoft 365 Empresa Premium clientes.
+      A partir del 1 de marzo de 2022, Defender for Business se está implementando como parte de Microsoft 365 Empresa Premium. Defender for Business está llegando ahora a disponibilidad general (GA) para Microsoft 365 Empresa Premium clientes.
 
 
-      Para los clientes que no tienen Microsoft 365 Empresa Premium, Defender para empresas es una opción como un plan independiente. La versión independiente de Defender para empresas todavía está en versión preliminar y llegará a GA más adelante este año calendario.
+      Para los clientes que no tienen Microsoft 365 Empresa Premium, Defender for Business es una opción como plan independiente. La versión independiente de Defender for Business todavía está en versión preliminar y llegará a disponibilidad general más adelante este año natural.
   - question: Si ya estoy usando Microsoft 365 Empresa Premium, ¿por qué necesito Defender para empresas?
     answer: >
-      Microsoft 365 Empresa Premium incluye capacidades de administración de dispositivos, Defender para Office 365 Plan 1 y Antivirus de Microsoft Defender, protección de última generación para Windows dispositivos. Defender para empresas amplía estas capacidades agregando mayor seguridad para los dispositivos de la empresa. Para obtener más información, consulte los artículos siguientes:
+      Microsoft 365 Empresa Premium incluye actualmente funcionalidades de administración de dispositivos, Defender para Office 365 Plan 1 y Antivirus de Microsoft Defender, protección de próxima generación para dispositivos Windows. Defender for Business amplía estas funcionalidades agregando mayor seguridad para los dispositivos de la empresa. Para más información, consulte los artículos siguientes:
 
 
-      - [Información general sobre Defender para empresas](mdb-overview.md)
+      - [Introducción a Defender para empresas](mdb-overview.md)
 
 
-      - [Comparar Microsoft Defender para empresas con Microsoft 365 Empresa Premium](compare-mdb-m365-plans.md
-  - question: ¿Qué sucede con la vista previa de Defender para empresas si la oferta de prueba de vista previa expira antes de que Defender para empresas alcance la disponibilidad general (GA)?
+      - [Comparar Microsoft Defender para Empresas con Microsoft 365 Empresa Premium](compare-mdb-m365-plans.md
+  - question: ¿Qué ocurre con la versión preliminar de Defender para empresas si la oferta de prueba en versión preliminar expira antes de que Defender for Business alcance la disponibilidad general (GA)?
     answer: >
-      Los partners de Microsoft pueden ampliar las licencias de versión preliminar de prueba hasta el punto de ga. Una vez completada la GA, la versión preliminar de prueba no se extenderá.
-  - question: ¿Qué sucede si un cliente tiene 20 usuarios con una combinación de suscripciones? Por ejemplo, supongamos que tienen 10 usuarios asignados a una licencia de Defender para empresas y 10 usuarios asignados a una licencia de Defender for Endpoint Plan 2.
-    answer: "Actualmente no se admiten licencias mixtas, actualmente no se admiten licencias mixtas. La licencia funcional más alta establece la experiencia del inquilino. Con nuestro ejemplo, la experiencia del inquilino será Defender para el Plan de extremo 2 y requerirá 20 licencias de Defender para endpoint plan 2. \n"
-  - question: ¿Puedo configurar más de una directiva de filtrado de contenido web en Defender para empresas?
-    answer: "Actualmente, Defender para empresas solo admite una directiva uniforme de filtrado web por inquilino de Defender para empresas. \n"
+      Los asociados de Microsoft pueden ampliar las licencias de prueba en versión preliminar hasta el punto de disponibilidad general. Una vez completada la disponibilidad general, no se ampliará la versión preliminar.
+  - question: ¿Qué ocurre si un cliente tiene 20 usuarios con una combinación de suscripciones? Por ejemplo, supongamos que tienen 10 usuarios asignados a una licencia de Defender para empresas y 10 usuarios asignados a una licencia de Defender para punto de conexión 2?
+    answer: "Actualmente no se admiten licencias mixtas, actualmente no se admiten licencias mixtas. La licencia funcional más alta establece la experiencia del inquilino. Con nuestro ejemplo, la experiencia de inquilino será Defender para el plan de punto de conexión 2 y requerirá 20 licencias de Defender para el plan 2 de punto de conexión. \n"
+  - question: ¿Puedo configurar más de una directiva de filtrado de contenido web en Defender for Business?
+    answer: "Actualmente, Defender for Business solo admite una directiva de filtrado web uniforme por inquilino de Defender for Business. \n"
   - question: ¿Cómo puedo ejecutar informes personalizados con Defender para empresas?
     answer: >
-      Defender para empresas actualmente incluye un conjunto de API para admitir informes personalizados robustos y un conector Power BI cliente. Puede programar un script de PowerShell para generar resúmenes ejecutivos con formato HTML y enviar esos resúmenes por correo electrónico.
-  - question: Soy socio de Microsoft. ¿Podré administrar varios inquilinos desde un panel de control o voy a tener que iniciar sesión en cada inquilino individualmente?
+      Defender for Business incluye actualmente un conjunto de API para admitir informes personalizados sólidos y un conector de Power BI. Puede programar un script de PowerShell para generar resúmenes ejecutivos con formato HTML y enviar esos resúmenes por correo electrónico.
+  - question: Soy socio de Microsoft. ¿Podré administrar varios inquilinos desde un panel de control o tendré que iniciar sesión en cada inquilino individualmente?
     answer: >
-      Defender para empresas está habilitado en Microsoft 365 Lighthouse compatibilidad con varios inquilinos en una sola consola. Actualmente, una cola de incidentes de varios inquilinos le proporciona una vista entre inquilinos de incidentes que requieren atención; sin embargo, la configuración y la incorporación se realizan en el inquilino del cliente con las credenciales de socio. Se planean más escenarios de integración.
-  - question: ¿Cómo puedo configurar las funciones y reglas de reducción de superficie de ataque en Defender para empresas?
-    answer: "Todavía no se admite la configuración simplificada para las reglas y capacidades de reducción de superficie de ataque mediante Defender para empresas en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Si tienes Microsoft Endpoint Manager, puedes usar Endpoint Manager para configurar las directivas de reducción de superficie de ataque. \n"
-  - question: Si actualmente no tengo Microsoft Endpoint Manager, ¿necesito una licencia adicional para usar características que se incluyen en Defender para empresas y Endpoint Manager?
-    answer: "Si tienes Defender para empresas como una suscripción independiente y no tienes Microsoft Intune (parte de Endpoint Manager), puedes administrar dispositivos Windows en Defender para empresas mediante el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). También puede administrar las directivas de protección y protección de firewall de próxima generación en el portal de Microsoft 365 Defender con una [experiencia de configuración simplificada](mdb-simplified-configuration.md). Para administrar otras configuraciones, como directivas de reducción de superficie de ataque o para incorporar algunos dispositivos (como dispositivos Android), necesitarás Endpoint Manager.  \n"
+      Defender for Business está habilitado en Microsoft 365 Lighthouse para la compatibilidad multiinquilino en una sola consola. Actualmente, una cola de incidentes multiinquilino proporciona una vista entre inquilinos de los incidentes que requieren atención; sin embargo, la configuración y la incorporación se realizan en el inquilino del cliente con las credenciales de asociado. Se planean más escenarios de integración.
+  - question: Cómo configurar las reglas y funcionalidades de reducción de la superficie expuesta a ataques en Defender for Business?
+    answer: "Todavía no se admite la configuración simplificada para las reglas y funcionalidades de reducción de la superficie expuesta a ataques a través de Defender for Business en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Si tiene Microsoft Endpoint Manager, puede usar Endpoint Manager para configurar las directivas de reducción de superficie expuesta a ataques. \n"
+  - question: Si actualmente no tengo Microsoft Endpoint Manager, ¿necesito una licencia adicional para usar las características que se incluyen en Defender para empresas y Endpoint Manager?
+    answer: "Si tiene Defender para empresas como una suscripción independiente y no tiene Microsoft Intune (parte de Endpoint Manager), puede administrar dispositivos Windows en Defender para empresas mediante el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). También puede administrar las directivas de protección y firewall de última generación en el portal de Microsoft 365 Defender con una [experiencia de configuración simplificada](mdb-simplified-configuration.md). Para administrar otras configuraciones, como directivas de reducción de superficie expuesta a ataques o para incorporar algunos dispositivos (como dispositivos Android), necesitará Endpoint Manager.  \n"
 additionalContent: >
   ## <a name="see-also"></a>Consulte también
 
@@ -99,4 +99,4 @@ additionalContent: >
   - [Información general sobre Microsoft Defender para empresas](mdb-overview.md)
 
 
-  - [Comparar Microsoft Defender para empresas con Microsoft 365 Empresa Premium](compare-mdb-m365-plans.md)
+  - [Comparar Microsoft Defender para Empresas con Microsoft 365 Empresa Premium](compare-mdb-m365-plans.md)

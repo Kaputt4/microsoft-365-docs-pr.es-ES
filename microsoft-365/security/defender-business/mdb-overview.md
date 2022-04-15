@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -18,19 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 0d291f4da7c44a57d12516be364fc36bbb771356
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 93db141d60353c5e3581298a67383718bdf4fe54
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664950"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862574"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>Información general sobre Microsoft Defender para empresas
 
-> [!IMPORTANT]
-> Microsoft Defender para Empresas se está implementando para [Microsoft 365 Empresa Premium](../../business-premium/index.md) clientes, a partir del 1 de marzo de 2022. Defender for Business como una suscripción independiente está en versión preliminar y se implementará gradualmente para los clientes y asociados de TI que [se registren aquí](https://aka.ms/mdb-preview) para solicitarla. La versión preliminar incluye un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
-> 
-> Parte de la información de este artículo se refiere a los productos o servicios preliminares que se pueden modificar sustancialmente antes de que se publiquen comercialmente. Microsoft no ofrece ninguna garantía, expresa o implícita, de la información que se proporciona aquí. 
+> [!NOTE]
+> Microsoft Defender para Empresas ahora se incluye en [Microsoft 365 Empresa Premium](../../business-premium/index.md). 
 
 Microsoft Defender para Empresas es una nueva solución de seguridad de puntos de conexión diseñada especialmente para la pequeña y mediana empresa (hasta 300 empleados). Con esta solución de seguridad de punto de conexión, los dispositivos de su empresa están mejor protegidos contra ransomware, malware, suplantación de identidad (phishing) y otras amenazas. 
 
@@ -44,7 +42,7 @@ En este artículo se describe lo que se incluye en Defender para empresas, con v
 
 >
 > **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre Microsoft Defender para Empresas</a>. Nos encantaría conocer su opinión.
+> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
 >
 
 Con Defender para empresas, puede ayudar a proteger los dispositivos y los datos que usa su empresa con:
@@ -81,5 +79,4 @@ Con Defender para empresas, puede ayudar a proteger los dispositivos y los datos
 ## <a name="next-steps"></a>Siguientes pasos
 
 - [Obtenga más información sobre el proceso de configuración simplificado en Microsoft Defender para Empresas](mdb-simplified-configuration.md)
-
 - [Obtenga información sobre cómo obtener Microsoft Defender para Empresas](get-defender-business.md)

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,28 +17,34 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 5fbf56b4b3c3fc76b863a6839902ad108d1cf8d5
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: e832a06a27d479bcd9ffecaf00e07b20f55d1042
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746588"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862662"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business"></a>Configuración y configuración de Microsoft Defender para Empresas
 
-> [!IMPORTANT]
-> Microsoft Defender para Empresas se está implementando para [Microsoft 365 Empresa Premium](../../business-premium/index.md) clientes, a partir del 1 de marzo de 2022. Defender for Business como una suscripción independiente está en versión preliminar y se implementará gradualmente para los clientes y asociados de TI que [se registren aquí](https://aka.ms/mdb-preview) para solicitarla. La versión preliminar incluye un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
-> 
-> Parte de la información de este artículo se refiere a los productos o servicios preliminares que se pueden modificar sustancialmente antes de que se publiquen comercialmente. Microsoft no ofrece ninguna garantía, expresa o implícita, de la información que se proporciona aquí. 
+> [!NOTE]
+> Microsoft Defender para Empresas ahora se incluye en [Microsoft 365 Empresa Premium](../../business-premium/index.md). 
 
-Microsoft Defender para Empresas proporciona una experiencia de configuración y configuración simplificada, diseñada especialmente para las pequeñas y medianas empresas. Use este artículo como guía.
+Microsoft Defender para Empresas proporciona una experiencia de configuración y configuración simplificada, diseñada especialmente para las pequeñas y medianas empresas. Use este artículo como guía para el proceso general.
+
+> [!TIP]
+> Si usó el [asistente para la instalación](mdb-use-wizard.md), ya ha completado varios pasos del proceso de instalación básico. En este caso, puede:
+> - [Incorporación de más dispositivos](mdb-onboard-devices.md)
+> - [Configuración de directivas y opciones de seguridad](mdb-configure-security-settings.md)
+> - [Visite el panel de administración de vulnerabilidades](mdb-view-tvm-dashboard.md)
 
 >
 > **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre Microsoft Defender para Empresas</a>. Nos encantaría conocer su opinión.
+> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
 >
 
 ## <a name="the-setup-and-configuration-process"></a>Proceso de instalación y configuración
+
+En el diagrama siguiente se muestra el proceso de configuración y configuración general de Defender para empresas. Si usó el asistente para la instalación, es probable que ya haya completado los pasos 1 a 3 y posiblemente el paso 4. 
 
 :::image type="content" source="media/mdb-setup-process-2.png" alt-text="Proceso de configuración y configuración para Microsoft Defender para Empresas.":::
 

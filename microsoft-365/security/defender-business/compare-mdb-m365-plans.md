@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 04/08/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: cf4c209fa274c106c56da59fce78c97ec39839f1
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b1dbe79aadea39bfc737ae9f5457715b669cc79b
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783807"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861826"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparar Microsoft Defender para Empresas con Microsoft 365 Empresa Premium
 
@@ -37,7 +37,7 @@ Microsoft Defender para Empresas está disponible como oferta independiente o co
 
 >
 > **¿Tiene un minuto?**
-> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre Microsoft Defender para Empresas</a>. Nos encantaría conocer su opinión.
+> Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
 >
 
 **Use este artículo para**:
@@ -77,27 +77,35 @@ En la tabla siguiente se comparan las características y funcionalidades de segu
 
 |Característica o funcionalidad|[Defender para Empresas](mdb-overview.md)<br/>(independiente; actualmente en versión preliminar)|[Plan 1 de Defender para punto de conexión](../defender-endpoint/defender-endpoint-plan-1.md)|[Plan 2 de Defender para punto de conexión](../defender-endpoint/microsoft-defender-endpoint.md)|
 |---|---|---|---|
-|[Administración centralizada](../defender-endpoint/manage-atp-post-migration.md) <sup>[[1](#fn1)]</sup>|Sí|Sí|Sí|
+|[Administración centralizada](../defender-endpoint/manage-atp-post-migration.md) |Sí <sup>[[1](#fn1)]</sup>|Sí|Sí|
 |[Configuración de cliente simplificada](mdb-simplified-configuration.md)|Sí|No|No|
 |[Administración de vulnerabilidades y amenazas](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)|Sí|No|Sí|
 |[Capacidades de reducción de superficie expuesta a ataques](../defender-endpoint/overview-attack-surface-reduction.md)|Sí|Sí|Sí|
 |[Protección de última generación](../defender-endpoint/next-generation-protection.md)|Sí|Sí|Sí|
 |[EDR](../defender-endpoint/overview-endpoint-detection-response.md)|Sí <sup>[[2](#fn2)]</sup>|No|Sí|
-|[Investigación y respuesta automatizadas](../defender-endpoint/automated-investigations.md)|Sí <sup>[[2](#fn2)]</sup>|No|Sí|
-|[Búsqueda de amenazas](../defender-endpoint/advanced-hunting-overview.md) y seis meses de retención de datos <sup>[[3](#fn3)]</sup>|No|No|Sí|
-|[Análisis de amenazas](../defender-endpoint/threat-analytics.md)|Sí <sup>[[2](#fn2)]</sup>|No|Sí|
-|[Compatibilidad multiplataforma](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS y sistema operativo Android)|Sí <sup>[[4](#fn4)]</sup>|Sí|Sí|
+|[Investigación y respuesta automatizadas](../defender-endpoint/automated-investigations.md)|Sí <sup>[[3](#fn3)]</sup>|No|Sí|
+|[Búsqueda de amenazas](../defender-endpoint/advanced-hunting-overview.md) y seis meses de retención de datos |No <sup>[[4](#fn4)]</sup>|No|Sí|
+|[Análisis de amenazas](../defender-endpoint/threat-analytics.md)|Sí <sup>[[5](#fn5)]</sup>|No|Sí|
+|[Compatibilidad multiplataforma](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS y sistema operativo Android)|Sí <sup>[[6](#fn6)]</sup>|Sí|Sí|
 |[Expertos en amenazas de Microsoft](../defender-endpoint/microsoft-threat-experts.md)|No|No|Sí|
 |API de asociados|Sí|Sí|Sí|
 |[integración Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) <br/>(Para ver los incidentes de seguridad entre los inquilinos del cliente)|Sí|No|No|
 
-(<a id="fn1">1</a>) Incorporación y administración de dispositivos en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) o con otra herramienta, como Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
+(<a id="fn1">1</a>) Incorporación y administración de dispositivos en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) o con Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
-(<a id="fn2">2</a>) Estas funcionalidades están optimizadas para pequeñas y medianas empresas.
+(<a id="fn2">2</a>) Las funcionalidades de detección y respuesta de puntos de conexión (EDR) en Defender for Business incluyen la detección basada en comportamiento y los cuatro tipos siguientes de acciones de respuesta manual: 
+- Ejecutar examen de antivirus
+- Aislar el dispositivo
+- Detener y poner en cuarentena un archivo
+- Adición de un indicador para bloquear o permitir un archivo
 
-(<a id="fn3">3</a>) No hay ninguna pestaña de escala de tiempo en Defender para empresas.
+(<a id="fn3">3</a>) En Defender para empresas, la investigación y la respuesta automatizadas están activadas de forma predeterminada, en todo el inquilino. Si desactiva la investigación y la respuesta automatizadas, afectará a la protección en tiempo real. Consulte [Revisión de la configuración de las características avanzadas](mdb-configure-security-settings.md#review-settings-for-advanced-features).  
 
-(<a id="fn4">4</a>) Durante el programa de versión preliminar, se admiten Windows dispositivos cliente en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)).
+(<a id="fn4">4</a>) No hay ninguna vista de escala de tiempo en Defender para empresas.
+
+(<a id="fn5">5</a>) En Defender para empresas, el análisis de amenazas está optimizado para pequeñas y medianas empresas.
+
+(<a id="fn6">6</a>) Durante el programa de versión preliminar, se admiten Windows dispositivos cliente para la incorporación en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Puede usar el método de script local. Consulte [Incorporación de dispositivos para Microsoft Defender para Empresas](mdb-onboard-devices.md).
 
 ## <a name="next-steps"></a>Siguientes pasos
 

@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los límites de casos, los límites de indexación y los límites de búsqueda en vigor para la solución de Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: 0f21a78a90eee6069618e2ab35bb011aa870b62c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 93f0a988cb5a5321c8a725a1d678079174eba923
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758583"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861320"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Límites de eDiscovery avanzado
 
@@ -49,9 +49,9 @@ En la tabla siguiente se enumeran los límites de las retenciones asociadas a un
 
 |Descripción del límite|Límite|
 |---|---|
-|Número máximo de directivas de suspensión para una organización. Este límite incluye el total combinado de directivas de suspensión en core eDiscovery y casos de Advanced eDiscovery.|10 <sup>0003</sup>|
-|Número máximo de buzones en una única retención de mayúsculas y minúsculas. Este límite incluye el total combinado de buzones de usuario y los buzones asociados a Grupos de Microsoft 365, Microsoft Teams y grupos de Yammer.|1,000|
-|Número máximo de sitios en una única retención de mayúsculas y minúsculas. Este límite incluye el total combinado de sitios de OneDrive para la Empresa, sitios SharePoint y los sitios asociados con Grupos de Microsoft 365, Microsoft Teams y grupos de Yammer.|100|
+|Número máximo de directivas de suspensión para una organización. Este límite incluye el total combinado de directivas de suspensión en core eDiscovery y casos de Advanced eDiscovery.|10,000|
+|Número máximo de buzones en una única retención de mayúsculas y minúsculas. Este límite incluye el total combinado de buzones de usuario y los buzones asociados a Grupos de Microsoft 365, Microsoft Teams y grupos de Yammer.|10003<sup></sup>|
+|Número máximo de sitios en una única retención de mayúsculas y minúsculas. Este límite incluye el total combinado de sitios de OneDrive para la Empresa, sitios SharePoint y los sitios asociados con Grupos de Microsoft 365, Microsoft Teams y grupos de Yammer.|1003<sup></sup>|
 
 ## <a name="indexing-limits"></a>Límites de indexación
 
