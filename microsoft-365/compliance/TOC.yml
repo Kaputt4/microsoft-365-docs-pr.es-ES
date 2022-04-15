@@ -535,6 +535,8 @@
               href: dlp-chrome-get-started.md
             - name: Introducción al panel de alertas de prevención de pérdida de datos
               href: dlp-alerts-dashboard-get-started.md
+            - name: Introducción a las directivas de prevención de pérdida de datos para Power BI (versión preliminar)
+              href: dlp-powerbi-get-started.md
         - name: Usar DLP
           items:
             - name: DLP y Microsoft Teams
@@ -939,6 +941,8 @@
               href: supported-filetypes-ediscovery20.md
             - name: Campos de metadatos del documento
               href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: Buscar y purgar mensajes de chat de Teams
+              href: search-and-delete-Teams-chat-messages.md
             - name: Configurar versiones históricas
               href: advanced-ediscovery-historical-versions.md
             - name: Configurar la detección de privilegios abogado-cliente

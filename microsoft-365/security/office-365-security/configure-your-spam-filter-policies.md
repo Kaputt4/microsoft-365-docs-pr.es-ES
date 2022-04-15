@@ -18,12 +18,12 @@ ms.custom: ''
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8550d55553b1c406fa21ce362e201a8bbe3d5aea
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 94d6ace6cd5d6fcfd87800053048e84e25d4c153
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681312"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64847420"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -99,8 +99,10 @@ La creación de una directiva contra correo no deseado en el portal de Microsoft
    Cuando termine, haga clic en **Siguiente**.
 
 4. En la página **Usuarios, grupos y dominios** que aparece, identifique los destinatarios internos a los que se aplica la directiva (condiciones de destinatario):
-   - **Usuarios**: los buzones, usuarios de correo o contactos de correo especificados de su organización.
-   - **Grupos**: los grupos de distribución, los grupos de seguridad habilitados para correo electrónico o los Grupos de Microsoft 365 especificados de la organización.
+   - **Usuarios**: los buzones de correo, los usuarios de correo o los contactos de correo especificados.
+   - **Grupos**:
+     - Miembros de los grupos de distribución o grupos de seguridad habilitados para correo especificados.
+     - Los Grupos de Microsoft 365 especificados.
    - **Dominios**: todos los destinatarios de los [dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) especificados en la organización.
 
    Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.

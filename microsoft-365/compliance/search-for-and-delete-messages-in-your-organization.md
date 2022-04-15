@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el Centro de cumplimiento de Microsoft 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: 9361f7dea0e1b12d50733b9b1d1e91ac15577ab9
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 8d283148b0a0cee0aed3d91a6332c96bd31111b4
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400998"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64846979"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Buscar y eliminar mensajes de correo electrónico
 
@@ -41,7 +41,7 @@ Puede usar la característica Búsqueda de contenido para buscar y eliminar un m
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- El flujo de trabajo de búsqueda y purga descrito en este artículo no elimina los mensajes de chat ni ningún otro contenido de Microsoft Teams. Si la búsqueda de contenido que se crea en el paso 2 devuelve elementos de Microsoft Teams, esos elementos no se eliminarán cuando se purguen los elementos en el paso 3.
+- El flujo de trabajo de búsqueda y purga descrito en este artículo no elimina los mensajes de chat ni ningún otro contenido de Microsoft Teams. Si la búsqueda de contenido que se crea en el paso 2 devuelve elementos de Microsoft Teams, esos elementos no se eliminarán cuando se purguen los elementos en el paso 3. Para buscar y eliminar mensajes de chat, vea [Buscar y purgar mensajes de chat en Teams](search-and-delete-Teams-chat-messages.md).
 
 - Para crear y ejecutar una búsqueda de contenido, tiene que ser un miembro del grupo de roles **Administrador de eDiscovery** o que se le asigne el rol **Búsqueda de cumplimiento** en el Centro de cumplimiento de Microsoft 365. Para eliminar mensajes, debe ser miembro del grupo de roles **Administración de la organización** o tener asignado el rol **Buscar y purgar** en el Centro de cumplimiento. Para obtener información sobre cómo agregar usuarios a un grupo de roles, vea [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
 
