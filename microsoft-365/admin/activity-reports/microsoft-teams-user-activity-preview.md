@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener el informe de actividad del usuario Microsoft Teams y obtener información sobre la actividad de Teams en su organización.
-ms.openlocfilehash: a5261261a1a1cb7b2039b646c3dbbd92c5f43688
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: cbd9bdb73dc69da5e36e0fb9c3ff2ff15b5269a4
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781663"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882272"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de usuario de Microsoft Teams
 
@@ -71,7 +71,7 @@ Para garantizar la calidad de los datos, realizamos comprobaciones diarias de va
 |Las reuniones participaron periódicamente programadas  <br/> |Número de reuniones periódicas en las que participó un usuario durante el período de tiempo especificado.  <br/> |
 |Tiene licencia  <br/> |Se selecciona si el usuario tiene licencia para usar Teams. <br/>|
 |Otra actividad  <br/>|El usuario está activo, pero ha realizado otras actividades que los tipos de acción expuestos que se ofrecen en el informe (enviar o responder a mensajes de canal y chat, programar o participar en llamadas y reuniones 1:1). Las acciones de ejemplo son cuando un usuario cambia el estado de Teams o el mensaje de estado Teams o abre una publicación de mensaje de canal, pero no responde.  <br/>|
-|Reuniones sin clasificar <br/>|El que no se puede clasificar como programa o periódico o ad hoc. Estos son cortos en número y, en su mayoría, no se pueden identificar debido a información de telemetría alterada. |
+
 
 ## <a name="make-the-user-specific-data-anonymous"></a>Hacer anónimos los datos específicos del usuario
 
@@ -84,7 +84,7 @@ Para que los datos de Teams informe de actividad de usuario sean anónimos, debe
 3. Seleccione **Guardar cambios**.
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 [Informe de uso de dispositivos de Microsoft Teams](../activity-reports/microsoft-teams-device-usage-preview.md)
 
 [Microsoft Teams informe de actividad de uso](../activity-reports/microsoft-teams-usage-activity.md) 

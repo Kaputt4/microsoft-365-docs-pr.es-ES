@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Aprenda cómo crear un clasificador en Microsoft SharePoint Syntex
-ms.openlocfilehash: 5e9be6065e0328a412e73680a0200ea7929c8011
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6c47d2fe2f7f2b67533587f0956281c2b577dbe0
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324877"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882382"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Crear un clasificador en Microsoft SharePoint Syntex
 
@@ -62,7 +62,7 @@ El primer paso para crear el modelo es nombrarlo:
 
 Cuando se crea un modelo, también se crea un nuevo tipo de contenido para el sitio. Un tipo de contenido representa una categoría de documentos que tienen características comunes y comparten una colección de columnas o propiedades de metadatos para ese contenido en particular. Los tipos de contenido de SharePoint se administran en la [Galería de tipos de contenido](https://support.microsoft.com/office/create-or-customize-a-site-content-type-27eb6551-9867-4201-a819-620c5658a60f). Para este ejemplo, al crear el modelo, va a crear un nuevo *tipo de contenido* Renovación de contrato.
 
-Seleccione **Configuración avanzada** si desea asignar este modelo a un tipo de contenido empresarial existente en la galería de tipos SharePoint contenido <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank"></a> para usar su esquema. Los tipos de contenido de empresa se almacenan en el concentrador de tipo de contenido en el centro de administración de SharePoint y se distribuyen en todos los sitios del espacio empresarial. Tenga en cuenta que, aunque puede usar un tipo de contenido existente para aprovechar su esquema para ayudar con la identificación y la clasificación, aún necesita entrenar el modelo para extraer la información de los archivos que identifica.</br>
+Seleccione **Configuración avanzada** si desea asignar este modelo a un tipo de contenido empresarial existente en la <a href="https://go.microsoft.com/fwlink/?linkid=2185074" target="_blank">galería de tipos de contenido</a> de SharePoint para usar su esquema. Los tipos de contenido de empresa se almacenan en el concentrador de tipo de contenido en el centro de administración de SharePoint y se distribuyen en todos los sitios del espacio empresarial. Tenga en cuenta que, aunque puede usar un tipo de contenido existente para aprovechar su esquema para ayudar con la identificación y la clasificación, aún necesita entrenar el modelo para extraer la información de los archivos que identifica.</br>
 
 ![Configuración avanzada](../media/content-understanding/advanced-settings.png)
 
@@ -147,6 +147,7 @@ Si recibe una coincidencia en sus archivos de muestra etiquetados, ahora puede p
     ![Prueba de archivos sin etiquetar.](../media/content-understanding/test-on-files.png) 
 
 ## <a name="see-also"></a>Consulte también
+
 [Crear un extractor](create-an-extractor.md)
 
 [Información general sobre la comprensión de los documentos](document-understanding-overview.md)

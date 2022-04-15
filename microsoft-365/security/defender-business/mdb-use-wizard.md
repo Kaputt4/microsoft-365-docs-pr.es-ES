@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/12/2022
+ms.date: 04/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 1f128a48e8ee2939b4bfcc270c110e0ec63d6ebe
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 697dfc567eb2719a6e81a7b57df321ba2af40911
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862596"
+ms.locfileid: "64882316"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>Uso del asistente para la instalación en Microsoft Defender para Empresas
 
@@ -36,6 +36,11 @@ Microsoft Defender para Empresas se diseñó para ahorrar tiempo y esfuerzo a la
 > **¿Tiene un minuto?**
 > Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
 >
+
+> [!TIP]
+> El uso del asistente para la instalación es opcional. Puede optar por trabajar manualmente en el proceso de configuración y configuración. Para más información, vea:
+> - [¿Qué ocurre si no uso el asistente?](#what-happens-if-i-dont-use-the-wizard)
+> - [Configuración y configuración de Microsoft Defender para Empresas](mdb-setup-configuration.md)
 
 ## <a name="how-to-start-the-setup-wizard"></a>Cómo iniciar el asistente para la instalación
 

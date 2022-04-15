@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo y por qué duplicar un modelo de descripción de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 979d5b2cddfa7c565abade7ac66c06e3053bbe4d
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+description: Obtenga información sobre cómo y por qué duplicar un modelo de comprensión de documentos en Microsoft SharePoint Syntex.
+ms.openlocfilehash: 56e05389cad4ad9010324a3efd48bf679700be76
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419049"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882250"
 ---
 # <a name="duplicate-a-model-in-microsoft-sharepoint-syntex"></a>Duplicar un modelo en Microsoft SharePoint Syntex
 
@@ -53,6 +53,7 @@ Siga estos pasos para duplicar un modelo de comprensión mediante documentos.
 5. Seleccione **Duplicar**.
 
 ## <a name="see-also"></a>Consulte también
+
 [Crear un clasificador](create-a-classifier.md)
 
 [Cambiar el nombre de un modelo](rename-a-model.md)

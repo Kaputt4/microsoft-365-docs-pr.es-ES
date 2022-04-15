@@ -8,38 +8,38 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo usar el modo de características de accesibilidad al entrenar y trabajar con modelos en SharePoint Syntex.
-ms.openlocfilehash: 09fd16259a44a2aa4d1b82dca49fffa76065690b
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+description: Aprenda a usar el modo de características de accesibilidad al entrenar y trabajar con modelos en SharePoint Syntex.
+ms.openlocfilehash: 567abb862af27457c1eb9395e32bf68d98446887
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419063"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882338"
 ---
 # <a name="accessibility-mode-in-sharepoint-syntex"></a>Modo de accesibilidad en SharePoint Syntex
 
-En [SharePoint Syntex](index.md), los usuarios pueden activar el modo de accesibilidad en todas las etapas del aprendizaje del modelo (etiqueta, aprendizaje, prueba) al trabajar con documentos de ejemplo. El uso del modo de accesibilidad puede ayudar a los usuarios a tener una accesibilidad de teclado más fácil a medida que navegan y etiquetan elementos en el visor de documentos.
+En [SharePoint Syntex](index.md), los usuarios pueden activar el modo de accesibilidad en todas las fases del entrenamiento del modelo (etiqueta, entrenamiento, prueba) al trabajar con documentos de ejemplo. El uso del modo de accesibilidad puede ayudar a los usuarios con poca vista a tener una accesibilidad de teclado más sencilla a medida que navegan y etiquetan elementos en el visor de documentos.
 
-Esto ayuda a los usuarios a usar sus teclados para navegar por el texto en el visor de documentos y escuchar una narración no solo de los valores seleccionados, sino también de acciones (como etiquetar o quitar el etiquetado del texto seleccionado) o valores de etiquetas predichos al entrenar el modelo con documentos de ejemplo adicionales. 
+Esto ayuda a los usuarios a usar sus teclados para navegar por el texto del visor de documentos y escuchar una narración no solo de los valores seleccionados, sino también de acciones (como etiquetar o quitar el etiquetado del texto seleccionado) o valores de etiqueta predichos a medida que entrena el modelo con documentos de ejemplo adicionales. 
 
 
 ![Modo de accesibilidad.](../media/content-understanding/accessibility-mode.png)
 
 ## <a name="requirements"></a>Requisitos
 
-Para escuchar el audio de la narración, asegúrate de activar la aplicación [narrador](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) en la configuración del narrador en el Windows 10 sistema.
+Para escuchar el audio de la narración, asegúrate de activar la [aplicación narrador](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) en la configuración del narrador en el sistema de Windows 10.
 
-![Activar narrador.](../media/content-understanding/narrator-settings.png)
+![Activa narrador.](../media/content-understanding/narrator-settings.png)
 
 ## <a name="labeling-for-keyboard-users"></a>Etiquetado para usuarios de teclado
 
-Para los usuarios de teclado que usan el modo de accesibilidad, si va a etiquetar texto en un documento de ejemplo en el visor, puede usar las siguientes teclas:
+Para los usuarios de teclado que usan el modo de accesibilidad, si está etiquetando texto en un documento de ejemplo en el visor, puede usar las siguientes teclas:
 
-- Tab: te mueve hacia delante y selecciona la siguiente palabra.
-- Tab + Mayús: te mueve hacia atrás y selecciona la palabra anterior.
-- Escriba: Etiqueta o quita una etiqueta de la palabra seleccionada.
-- Flecha derecha: te mueve hacia delante a través de caracteres individuales de una palabra seleccionada.
-- Flecha izquierda: te mueve hacia atrás a través de caracteres individuales de una palabra seleccionada.
+- Pestaña: le mueve hacia delante y selecciona la siguiente palabra.
+- Tab + Mayús: le mueve hacia atrás y selecciona la palabra anterior.
+- Escriba: etiquete o quite una etiqueta de la palabra seleccionada.
+- Flecha derecha: le mueve hacia delante a través de caracteres individuales en una palabra seleccionada.
+- Flecha izquierda: le mueve hacia atrás a través de caracteres individuales en una palabra seleccionada.
 
 > [!NOTE]
 > Si va a etiquetar varias palabras para una sola etiqueta, debe etiquetar cada palabra.
@@ -47,17 +47,17 @@ Para los usuarios de teclado que usan el modo de accesibilidad, si va a etiqueta
 
 ## <a name="narration"></a>Narración
 
-Para los usuarios del narrador que usan el modo de accesibilidad, use la misma navegación del teclado descrita para que los usuarios de teclado puedan pasar por el documento de ejemplo en el visor.
+En el caso de los usuarios del narrador que usan el modo de accesibilidad, use la misma navegación del teclado que se describe para que los usuarios del teclado pasen por el documento de ejemplo en el visor.
 
-A medida que navegue por los documentos de ejemplo y los valores de cadena de etiqueta, narrador le dará al usuario los siguientes mensajes de audio:
+A medida que navegue por los documentos de ejemplo y los valores de cadena de etiqueta, Narrador proporcionará al usuario las siguientes indicaciones de audio:
 
-- Al usar el teclado para navegar por el visor de documentos, el audio del narrador mostrará la cadena seleccionada.
-- Dentro de una cadena seleccionada, el audio del narrador mostrará cada carácter de la cadena al seleccionarlos mediante las teclas de flecha izquierda o derecha.
-- Si selecciona una cadena que se ha etiquetado, narrador mostrará el valor y, a continuación, "etiquetado".  Por ejemplo, si el valor de la etiqueta es "Contoso", se mostrará "Costoso etiquetado". 
-- En la pestaña de aprendizaje, si selecciona una cadena en el visor de documentos que solo se ha predicho, el audio del narrador mostrará el valor y, a continuación, "predijo". Esto ocurre cuando el aprendizaje predice un valor en el archivo que no coincide con lo que ha etiquetado el usuario.
-- En la pestaña de aprendizaje, si selecciona una cadena en el visor de documentos que se ha etiquetado y predicho, el audio del narrador mostrará el valor y, a continuación, "etiquetado y predicho". Esto ocurre cuando el aprendizaje se realiza correctamente y hay una coincidencia entre un valor predicho y la etiqueta de usuario.
+- Cuando se usa el teclado para navegar por el visor de documentos, el audio del narrador indicará la cadena seleccionada.
+- Dentro de una cadena seleccionada, el audio del narrador indicará cada carácter de la cadena mientras los selecciona mediante las teclas de flecha izquierda o derecha.
+- Si selecciona una cadena que se ha etiquetado, narrador indicará el valor y, a continuación, "etiquetado".  Por ejemplo, si el valor de la etiqueta es "Contoso", indicará "Costoso labeled". 
+- En la pestaña entrenamiento, si selecciona una cadena en el visor de documentos que solo se ha predicho, el audio del narrador indicará el valor y, a continuación, se "predecirá". Esto ocurre cuando el entrenamiento predice un valor en el archivo que no coincide con lo que ha etiquetado el usuario.
+- En la pestaña entrenamiento, si selecciona una cadena en el visor de documentos que se ha etiquetado y predicho, el audio del narrador indicará el valor y, a continuación, se "etiquetará y predecirá". Esto ocurre cuando el entrenamiento se realiza correctamente y hay una coincidencia entre un valor de predicción y la etiqueta de usuario.
 
-Después de etiquetar una cadena o de quitar una etiqueta en el visor, el audio del narrador le advertirá que guarde los cambios antes de salir.
+Después de etiquetar una cadena o quitar una etiqueta en el visor, el audio del narrador le advertirá de que guarde los cambios antes de salir.
 
 ## <a name="see-also"></a>Consulte también
 
