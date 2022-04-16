@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a identificar grupos específicos de usuarios con etiquetas de usuario en Microsoft Defender para Office 365 Plan 2. El filtrado de etiquetas está disponible en alertas, informes e investigaciones en Microsoft Defender para Office 365 para identificar rápidamente a los usuarios etiquetados.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9da17b2dfb20746bb48b1ba737968873d4151595
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 1f045e5dcb590c36fd0f3768c472057b07b12b21
+ms.sourcegitcommit: dba1a846ae78ea14240d28efa8d4934fe303f308
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731622"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "64891828"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Etiquetas de usuario en Microsoft Defender para Office 365
 
@@ -41,6 +41,7 @@ Después de aplicar etiquetas del sistema o etiquetas personalizadas a los usuar
 - [Alertas](alerts.md)
 - [Directivas de alertas personalizadas](../../compliance/alert-policies.md#viewing-alerts)
 - [Explorador de amenazas y detecciones en tiempo real](threat-explorer.md)
+- [Informe de usuario en peligro](view-email-security-reports.md#compromised-users-report)
 - [Página de la entidad de correo electrónico](mdo-email-entity-page.md#other-innovations)
 - [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
 - [Simulación de ataque](attack-simulation-training.md#target-users)
@@ -146,4 +147,4 @@ Para ver cómo las etiquetas de usuario forman parte de la estrategia para ayuda
 
 ## <a name="more-information"></a>Más información
 
-- [Configuración y revisión de cuentas de prioridad en Microsoft Defender para Office 365](configure-review-priority-account.md)
+[Configuración y revisión de cuentas de prioridad en Microsoft Defender para Office 365](configure-review-priority-account.md)
