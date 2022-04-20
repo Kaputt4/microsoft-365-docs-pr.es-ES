@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga más información sobre los requisitos de permisos de Lighthouse.
-ms.openlocfilehash: 1ab22fa48bb04673beb8f2b91cbbbaba2cd97804
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 62796df9e5bd5b437d06fe0c8ab6206e070c201b
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822759"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916126"
 ---
 # <a name="overview-of-permissions-in-microsoft-365-lighthouse"></a>Introducción a los permisos en Microsoft 365 Lighthouse
 
@@ -46,7 +46,7 @@ En la tabla siguiente se enumeran las acciones que los niveles de servicio MSP d
 
 | Página de Lighthouse | Acciones permitidas por los administradores de cuentas| Acciones permitidas por los técnicos de Service Desk |Acciones permitidas por los administradores del sistema | Acciones permitidas de los ingenieros de escalación|
 |---|---|---|---|---|
-| Home  | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li></ul> | 
+| Inicio  | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li></ul> | 
 | Espacios empresariales     | <ul><li>Ver lista de inquilinos</li><li>Actualizar los contactos de los clientes y el sitio web</li><li>Ver planes de implementación</li></ul>  | <ul><li>Ver lista de inquilinos</li><li>Actualizar los contactos de los clientes y el sitio web</li><li>Ver planes de implementación</li></ul>   |  <ul><li>Ver lista de inquilinos</li><li>Actualizar los contactos de los clientes y el sitio web</li><li>Ver planes de implementación</li><li>Visualización del uso de servicios de Microsoft 365</li></ul> | <ul><li>Ver lista de inquilinos</li><li>Actualizar los contactos de los clientes y el sitio web</li><li>Ver planes de implementación</li><li>Visualización del uso de servicios de Microsoft 365</li></ul>  |
 | Usuarios   | <ul><li>Visualización de datos de nivel de inquilino (no específicos del usuario)</li><li>Búsqueda de cuentas de usuario entre inquilinos</li><li>Restablecimiento de contraseña para usuarios que no son administradores*</li></ul>  | <ul><li>Ver todos los datos específicos del usuario</li><li>Búsqueda de cuentas de usuario entre inquilinos</li><li>Restablecimiento de contraseña para usuarios que no son administradores*</li></ul>|  <ul><li>Ver todos los datos específicos del usuario</li><li>Búsqueda de cuentas de usuario entre inquilinos</li><li>Restablecimiento de contraseña para usuarios que no son administradores*</i><li>Bloquear inicio de sesión</li></ul>  | <ul><li>Ver todos los datos específicos del usuario</li><li>Búsqueda de cuentas de usuario entre inquilinos</li><li>Restablecimiento de contraseña para usuarios que no son administradores*</li><li>Bloquear inicio de sesión</li><li>Confirmación de usuarios en peligro</li><li>Descartar el riesgo para los usuarios</li></ul> |
 | Dispositivos    | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li><li>Sincronizar dispositivo</li><li>Reiniciar el dispositivo</li><li>Recopilar diagnósticos</li></ul>|
@@ -79,7 +79,7 @@ Para determinadas acciones de Lighthouse, se requieren asignaciones de roles en 
 
 | Roles de inquilino de asociados | Permisos |
 |--|--|
-| Administrador global del inquilino del asociado | <ul><li>Regístrese en Lighthouse en el Centro de administración de Microsoft 365.</li><li>Acepte las modificaciones del contrato de asociado durante la experiencia de primera ejecución.</li><li>Active e inactiva un inquilino.</li><li>Crear, actualizar y eliminar etiquetas.</li><li>Asigne y quite etiquetas de un inquilino de cliente.</li></ul> |
+| Administrador global del inquilino del asociado | <ul><li>Regístrese en Lighthouse en el Centro de administración de Microsoft 365.</li><li>Acepte las modificaciones del contrato de asociado durante la experiencia de primera ejecución.</li><li>Active e inactiva un inquilino.</li><li>Crear, actualizar y eliminar etiquetas.</li><li>Asigne y quite etiquetas de un inquilino de cliente.</li><li>Revisión de los registros de auditoría</li></ul> |
 | Miembro de inquilino asociado con al menos un rol de Azure AD asignado con el siguiente conjunto de propiedades:<br>**microsoft.office365.supportTickets/allEntities/allTasks**<br>(Para obtener una lista completa de Azure AD roles, consulte [Azure AD roles integrados](/azure/active-directory/roles/permissions-reference)). | Cree solicitudes de servicio de Lighthouse. |
 | Miembro del inquilino asociado que cumple *los dos* requisitos siguientes: <ul><li>Tiene al menos un rol de Azure AD asignado con el siguiente conjunto de propiedades:<br>**microsoft.office365.serviceHealth/allEntities/allTasks**<br>(Para obtener una lista completa de Azure AD roles, consulte [Azure AD roles integrados](/azure/active-directory/roles/permissions-reference)).</li><li>Tiene al menos un rol delegado de DAP asignado (agente de administración o agente del departamento de soporte técnico)</li></ul> | Ver la información de estado del servicio. |
 

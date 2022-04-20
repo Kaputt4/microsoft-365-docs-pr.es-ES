@@ -16,62 +16,62 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: Use casos de exhibición de documentos electrónicos en Centro de cumplimiento de Microsoft 365 para administrar la investigación legal de su organización.
-ms.openlocfilehash: fc4e89645ef1912c33ab89ec190c87dc9c8a8965
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Use casos de eDiscovery en el portal de cumplimiento de Microsoft Purview para administrar la investigación legal de su organización.
+ms.openlocfilehash: d218c7d624da837e685929d95e515687f54897ef
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189386"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64932009"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Administración de investigaciones legales en Microsoft 365
 
-Las organizaciones tienen muchas razones para responder a un caso legal que implica a determinados ejecutivos u otros empleados de la organización. Esto puede implicar encontrar y conservar rápidamente información específica de la investigación en correo electrónico, documentos, conversaciones de mensajería instantánea y otras ubicaciones de contenido usadas por las personas en sus tareas diarias de trabajo. Puede realizar estas y muchas otras actividades similares mediante las herramientas de casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento.
+Las organizaciones tienen muchas razones para responder a un caso legal que involucra a ciertos ejecutivos u otros empleados de su organización. Esto puede implicar encontrar y conservar rápidamente información específica de investigación adicional en correo electrónico, documentos, conversaciones de mensajería instantánea y otras ubicaciones de contenido usadas por personas en sus tareas diarias de trabajo. Puede realizar estas y muchas otras actividades similares mediante las herramientas de casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento.
   
-**¿Quiere saber cómo Administra Microsoft sus investigaciones de exhibición de documentos electrónicos?** Esta es una [guía](https://go.microsoft.com/fwlink/?linkid=852161) técnica que puede descargar que explica cómo usamos las mismas herramientas de búsqueda e investigación para administrar nuestro flujo de trabajo interno de exhibición de documentos electrónicos.
+**¿Desea saber cómo Microsoft administra sus investigaciones de exhibición de documentos electrónicos?** Este es un [documento técnico](https://go.microsoft.com/fwlink/?linkid=852161) que puede descargar y que explica cómo usamos las mismas herramientas de búsqueda e investigación para administrar nuestro flujo de trabajo interno de eDiscovery.
 
-## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Administrar investigaciones legales con casos de exhibición de documentos electrónicos
+## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Administración de investigaciones legales con casos de eDiscovery
 
-Los casos de exhibición de documentos electrónicos permiten controlar quién puede crear, acceder y administrar casos de exhibición de documentos electrónicos en su organización. Use casos para agregar miembros y controlar qué tipos de acciones pueden realizar, colocar una retención en ubicaciones de contenido relevantes para un caso legal y usar la herramienta búsqueda de contenido para buscar en las ubicaciones en espera contenido que pueda responder a su caso. A continuación, también puede exportar y descargar esos resultados para una investigación posterior por parte de revisores externos.
+Los casos de eDiscovery permiten controlar quién puede crear, acceder y administrar casos de exhibición de documentos electrónicos en su organización. Use casos para agregar miembros y controlar qué tipos de acciones pueden realizar, colocar una suspensión en las ubicaciones de contenido pertinentes para un caso legal y usar la herramienta Búsqueda de contenido para buscar contenido que pueda responder a su caso en las ubicaciones en espera. A continuación, también puede exportar y descargar esos resultados para una investigación adicional por parte de revisores externos.
   
-- [Administre el flujo de trabajo de exhibición](./get-started-core-ediscovery.md) de documentos electrónicos mediante la creación y el uso de casos de exhibición de documentos electrónicos para cada investigación legal que su organización tenga que llevar a cabo.
+- [Administre el flujo de trabajo de eDiscovery](./get-started-core-ediscovery.md) mediante la creación y el uso de casos de exhibición de documentos electrónicos para cada investigación legal que su organización tenga que realizar.
 
 - [Asigne permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md) para controlar quién puede crear y administrar casos de exhibición de documentos electrónicos en su organización.
 
-- [Configure los límites de cumplimiento para](set-up-compliance-boundaries.md) controlar las ubicaciones de contenido de usuario en las que los administradores de exhibición de documentos electrónicos pueden buscar.
+- [Configure los límites de cumplimiento](set-up-compliance-boundaries.md) para controlar las ubicaciones de contenido del usuario que los administradores de eDiscovery pueden buscar.
 
-- [Busque contenido en](search-for-content.md) su organización.
+- [Busque contenido](search-for-content.md) en su organización.
 
-### <a name="use-scripts-for-advanced-scenarios"></a>Usar scripts para escenarios avanzados
+### <a name="use-scripts-for-advanced-scenarios"></a>Uso de scripts para escenarios avanzados
 
-Al igual que en la sección anterior que enumeraba scripts para escenarios de búsqueda de contenido, también hemos creado algunos scripts de PowerShell del Centro de seguridad & cumplimiento para ayudarle a administrar casos de exhibición de documentos electrónicos.
+Al igual que en la sección anterior que enumeraba scripts para escenarios de búsqueda de contenido, también hemos creado algunos scripts de PowerShell del Centro de cumplimiento de seguridad & para ayudarle a administrar casos de eDiscovery.
   
-- [Cree un informe de retención de exhibición](create-a-report-on-holds-in-ediscovery-cases.md) de documentos electrónicos que contenga información sobre todas las retenciones asociadas con casos de exhibición de documentos electrónicos en su organización.
+- [Cree un informe de suspensión de eDiscovery](create-a-report-on-holds-in-ediscovery-cases.md) que contenga información sobre todas las retenciones asociadas a casos de exhibición de documentos electrónicos en su organización.
 
-- [Agregue buzones y OneDrive para](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) una lista de usuarios a una retención de exhibición de documentos electrónicos.
+- [Agregue buzones de correo y ubicaciones de OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) para una lista de usuarios a una suspensión de eDiscovery.
   
-## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>Administrar investigaciones legales con la solución Advanced eDiscovery en Microsoft 365
+## <a name="manage-legal-investigations-with-the-ediscovery-premium-solution-in-microsoft-365"></a>Administrar investigaciones legales con la solución eDiscovery (Premium) en Microsoft 365
 
-La Advanced eDiscovery en Microsoft 365 se basa en las capacidades de análisis y exhibición de documentos electrónicos existentes en Office 365. Esta nueva solución, denominada *Advanced eDiscovery*, proporciona un flujo de trabajo completo para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de la organización. También permite al equipo legal gestionar todo el flujo de trabajo de notificación de retención legal para comunicarse con los administradores de un caso.
+La solución eDiscovery (Premium) de Microsoft Purview en Microsoft 365 se basa en las funcionalidades de eDiscovery y análisis existentes en Office 365. Esta nueva solución, denominada *eDiscovery (Premium)*, proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. También permite al equipo legal gestionar todo el flujo de trabajo de notificación de retención legal para comunicarse con los administradores de un caso.
 
-Advanced eDiscovery requiere una suscripción de E5 para su Microsoft 365 o Office 365 organización. Para obtener más información acerca de las licencias, [vea Configurar Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
+eDiscovery (Premium) requiere una suscripción A5 para la organización Microsoft 365 o Office 365. Para obtener más información sobre las licencias, vea [Configurar eDiscovery (Premium)](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
-Esta es una introducción rápida del flujo de trabajo integrado en Advanced eDiscovery. Para obtener más información, vea [Manage the Advanced eDiscovery workflow](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow).
+Esta es una introducción rápida al flujo de trabajo integrado en eDiscovery (Premium). Para obtener más información, vea [Administrar el flujo de trabajo de eDiscovery (Premium).](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)
 
 - [Cree un caso](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) para empezar.
 
-- [Administre los custodios](managing-custodians.md) agregándolos a un caso y colocando una retención legal en el contenido de su buzón, OneDrive cuenta y Microsoft Teams de la que son miembros.
+- [Administre los custodios](managing-custodians.md) agregándolos a un caso y colocando una suspensión legal del contenido en su buzón de correo, OneDrive cuenta y Microsoft Teams de los que son miembros.
 
-- [Administre las comunicaciones](managing-custodian-communications.md) con los custodios automatizando el proceso de notificación de retención legal.
+- [Administre las comunicaciones](managing-custodian-communications.md) con los custodios mediante la automatización del proceso de notificación de suspensión legal.
 
-- [Indexe los datos de custodia](processing-data-for-case.md) y corrija los errores de indización para que pueda recopilar datos de forma eficaz para las investigaciones.
+- [Indexe los datos del custodio](processing-data-for-case.md) y corrija los errores de indexación para que pueda recopilar datos de forma eficaz para las investigaciones.
 
-- [Recopilar datos](collecting-data-for-ediscovery.md) para un caso y [agregarlos a un conjunto de revisión para](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) una investigación posterior.
+- [Recopile datos](collecting-data-for-ediscovery.md) para un caso y [agréguelos a un conjunto de revisión](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) para una investigación más detallada.
 
-- [Ver](view-documents-in-review-set.md) documentos, [datos de](review-set-search.md) consulta y [elementos de](tagging-documents.md) etiqueta en un conjunto de revisión.
+- [Ver](view-documents-in-review-set.md) documentos, [consultar](review-set-search.md) datos y [etiquetar](tagging-documents.md) elementos en un conjunto de revisión.
 
-- [Analizar los datos de casos](analyzing-data-in-review-set.md) con herramientas de análisis avanzadas.
+- [Analice los datos de casos](analyzing-data-in-review-set.md) con herramientas de análisis avanzadas.
 
-- [Exportar datos de casos](exporting-data-ediscover20.md) para su revisión por parte de abogados externos.
+- [Exportación de datos de casos](exporting-data-ediscover20.md) para su revisión por parte de un asesor externo.
 
-- [Administrar trabajos de larga](managing-jobs-ediscovery20.md) ejecución en Advanced eDiscovery.
+- [Administrar trabajos de larga duración](managing-jobs-ediscovery20.md) en eDiscovery (Premium).

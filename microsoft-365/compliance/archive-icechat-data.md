@@ -1,5 +1,5 @@
 ---
-title: Configurar un conector para archivar datos de chat ice
+title: Configuración de un conector para archivar datos de ICE Chat
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,69 +11,69 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector para importar y archivar datos de la herramienta de chat ice en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: c29a39c8c398a0d8721931cbcb770aa18d0f3c4b
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+description: Los administradores pueden configurar un conector para importar y archivar datos de la herramienta ICE Chat en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
+ms.openlocfilehash: 51c79127894f506f2f0f59a9c883f1b4c4bb5f24
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568102"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937331"
 ---
-# <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Configurar un conector para archivar datos de chat ice
+# <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Configuración de un conector para archivar datos de ICE Chat
 
-Use un conector nativo en el Centro de cumplimiento de Microsoft 365 importar y archivar datos de chat de servicios financieros desde la herramienta de colaboración de chat ICE. Después de configurar y configurar un conector, se conecta al sitio FTP seguro de chat ICE (SFTP) de su organización una vez al día, convierte el contenido de los mensajes de chat en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de correo en Microsoft 365.
+Use un conector nativo en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de chat de servicios financieros desde la herramienta de colaboración ICE Chat. Después de configurar y configurar un conector, se conecta al sitio FTP seguro de ICE Chat (SFTP) de su organización una vez al día, convierte el contenido de los mensajes de chat a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos en buzones de Microsoft 365.
 
-Una vez que los datos de chat de ICE se almacenan en buzones de usuario, puede aplicar Microsoft 365 características de cumplimiento como retención por juicio, exhibición de documentos electrónicos, archivado, auditoría, cumplimiento de comunicaciones y directivas de retención Microsoft 365 los datos de chat de ICE. Por ejemplo, puede buscar mensajes de chat ice mediante la búsqueda de contenido o asociar el buzón que contiene los datos de chat de ICE con un custodio en un Advanced eDiscovery caso. El uso de un conector de chat ice para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
+Una vez almacenados los datos de chat de ICE en buzones de usuario, puede aplicar las características de Microsoft Purview, como la suspensión por juicio, eDiscovery, archivado, auditoría, cumplimiento de comunicaciones y directivas de retención de Microsoft 365 a los datos de ICE Chat. Por ejemplo, puede buscar mensajes de chat de ICE mediante la búsqueda de contenido o asociar el buzón que contiene los datos de ICE Chat con un custodio en un caso de exhibición de documentos electrónicos (Premium). El uso de un conector ICE Chat para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
 
-## <a name="overview-of-archiving-ice-chat-data"></a>Información general sobre el archivado de datos de chat de ICE
+## <a name="overview-of-archiving-ice-chat-data"></a>Introducción al archivado de datos de ICE Chat
 
-En la siguiente introducción se explica el proceso de uso de un conector para archivar datos de chat ice en Microsoft 365.
+En la información general siguiente se explica el proceso de uso de un conector para archivar los datos de chat de ICE en Microsoft 365.
 
-![Flujo de trabajo de archivado de chat ice.](../media/ICEChatConnectorWorkflow.png)
+![Flujo de trabajo de archivado de ice chat.](../media/ICEChatConnectorWorkflow.png)
 
-1. Su organización trabaja con ice chat para configurar un sitio SFTP de chat ice. También trabajará con ice chat para configurar el chat ice para copiar mensajes de chat en su sitio SFTP de chat ice.
+1. Su organización trabaja con ICE Chat para configurar un sitio de ICE Chat SFTP. También trabajará con ICE Chat para configurar ICE Chat para copiar mensajes de chat en su sitio de ICE Chat SFTP.
 
-2. Una vez cada 24 horas, los mensajes de chat de ICE Chat se copian en el sitio SFTP de chat de ICE.
+2. Una vez cada 24 horas, los mensajes de chat de ICE Chat se copian en su sitio de ICE Chat SFTP.
 
-3. El conector de chat ICE que cree en el Centro de cumplimiento de Microsoft 365 se conecta al sitio SFTP de chat ice todos los días y transfiere los mensajes de chat de las 24 horas anteriores a una ubicación Azure Storage segura en la nube de Microsoft. El conector también convierte el contenido de un masaje de chat a un formato de mensaje de correo electrónico.
+3. El conector ICE Chat que crea en el portal de cumplimiento se conecta al sitio ICE Chat SFTP todos los días y transfiere los mensajes de chat de las 24 horas anteriores a una ubicación de Azure Storage segura en la nube de Microsoft. El conector también convierte el contenido de un masaje de chat en un formato de mensaje de correo electrónico.
 
-4. El conector importa elementos de mensajes de chat a los buzones de usuarios específicos. Se crea una nueva carpeta denominada **Chat ice** en los buzones de usuario y los elementos del mensaje de chat se importan a esa carpeta. El conector lo hace mediante el valor de las *propiedades SenderEmail* y *RecipientEmail* . Cada mensaje de chat contiene estas propiedades, que se rellenan con la dirección de correo electrónico del remitente y todos los destinatarios o participantes del mensaje de chat.
+4. El conector importa elementos de mensaje de chat a los buzones de correo de usuarios específicos. Se crea una nueva carpeta denominada **ICE Chat** en los buzones de usuario y los elementos de mensaje de chat se importan a esa carpeta. El conector usa el valor de las propiedades *SenderEmail* y *RecipientEmail* . Cada mensaje de chat contiene estas propiedades, que se rellenan con la dirección de correo electrónico del remitente y todos los destinatarios o participantes del mensaje de chat.
 
-   Además de la asignación automática de usuarios que usa los valores de la propiedad *SenderEmail* y *RecipientEmail* (lo que significa que el conector importa un mensaje de chat al buzón del remitente y los buzones de cada destinatario), también puede definir la asignación de usuario personalizada cargando un archivo de asignación CSV. Este archivo de asignación contiene el *ImId* de chat ice y la dirección Microsoft 365 buzón de correo correspondiente para todos los usuarios de la organización. Si habilita la asignación automática de usuarios y proporciona un archivo de asignación personalizada, por cada elemento de chat, el conector primero verá el archivo de asignación personalizada. Si no encuentra una cuenta de usuario de Microsoft 365 válida que corresponda al ImId de chat ICE de un usuario, el conector usará las propiedades *SenderEmail* y *RecipientEmail* del elemento de chat para importar el elemento a los buzones de los participantes de chat. Si el conector no encuentra un usuario Microsoft 365 válido en el archivo de asignación personalizada o en las propiedades *SenderEmail* y *RecipientEmail*, el elemento no se importará.
+   Además de la asignación automática de usuarios que usa los valores de la propiedad *SenderEmail* y *RecipientEmail* (lo que significa que el conector importa un mensaje de chat al buzón del remitente y a los buzones de cada destinatario), también puede definir la asignación de usuarios personalizada mediante la carga de un archivo de asignación CSV. Este archivo de asignación contiene el *imId* de chat de ICE y la dirección de buzón de Microsoft 365 correspondiente para cada usuario de la organización. Si habilita la asignación automática de usuarios y proporciona un archivo de asignación personalizada, para cada elemento de chat, el conector examinará primero el archivo de asignación personalizada. Si no encuentra una cuenta de usuario Microsoft 365 válida que se corresponda con el id. de chat ice de un usuario, el conector usará las propiedades *SenderEmail* y *RecipientEmail* del elemento de chat para importar el elemento a los buzones de los participantes del chat. Si el conector no encuentra un usuario Microsoft 365 válido en el archivo de asignación personalizada o en las propiedades *SenderEmail* y *RecipientEmail*, el elemento no se importará.
 
 ## <a name="before-you-set-up-a-connector"></a>Antes de configurar un conector
 
-Algunos de los pasos de implementación necesarios para archivar datos de chat ice son externos a Microsoft 365 y deben completarse antes de poder crear el conector en el centro de cumplimiento.
+Algunos de los pasos de implementación necesarios para archivar los datos de ICE Chat son externos a Microsoft 365 y deben completarse para poder crear el conector en el centro de cumplimiento.
 
-- Ice Chat cobra a sus clientes una tarifa por cumplimiento externo. Su organización debe ponerse en contacto con el grupo de ventas de chat ice para analizar y firmar el contrato de servicios de datos de chat ice, que puede obtener en [https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf](https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf). Este acuerdo es entre ice chat y su organización y no implica a Microsoft. Después de configurar un sitio SFTP de chat ice en el paso 2, el Chat de ICE proporciona las credenciales FTP directamente a su organización. A continuación, usted que proporcionaría esas credenciales a Microsoft al configurar el conector en el paso 3.
+- ICE Chat cobra a sus clientes una tarifa por cumplimiento externo. Su organización debe ponerse en contacto con el grupo de ventas de ICE Chat para analizar y firmar el contrato de servicios de datos de ICE Chat, que puede obtener en [https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf](https://www.theice.com/publicdocs/agreements/ICE\_Data\_Services\_Agreement.pdf). Este acuerdo está entre ICE Chat y su organización y no implica a Microsoft. Después de configurar un sitio de ICE Chat SFTP en el paso 2, ICE Chat proporciona las credenciales FTP directamente a su organización. A continuación, quién proporcionaría esas credenciales a Microsoft al configurar el conector en el paso 3.
 
-- Debe configurar un sitio SFTP de chat ice antes de crear el conector en el paso 3. Después de trabajar con ice chat para configurar el sitio SFTP, los datos del chat ice se cargan en el sitio SFTP todos los días. El conector que cree en el paso 3 se conecta a este sitio SFTP y transfiere los datos de chat a Microsoft 365 buzones de correo. SFTP también cifra los datos de chat ice que se envían a los buzones durante el proceso de transferencia.
+- Debe configurar un sitio de ICE Chat SFTP antes de crear el conector en el paso 3. Después de trabajar con ICE Chat para configurar el sitio SFTP, los datos de ICE Chat se cargan en el sitio SFTP todos los días. El conector que cree en el paso 3 se conecta a este sitio SFTP y transfiere los datos de chat a Microsoft 365 buzones. SFTP también cifra los datos de ICE Chat que se envían a los buzones durante el proceso de transferencia.
 
-- Para configurar un conector de chat ICE, debe usar claves y contraseñas clave para Pretty Good Privacy (PGP) y Secure Shell (SSH). Estas claves se usan para configurar el sitio SFTP de chat ice y las usa el conector para conectarse al sitio SFTP de chat ice para importar datos a Microsoft 365. La clave PGP se usa para configurar el cifrado de los datos que se transfieren desde el sitio SFTP de chat ice a Microsoft 365. La clave SSH se usa para configurar el shell seguro para habilitar un inicio de sesión remoto seguro cuando el conector se conecta al sitio SFTP de chat ice.
+- Para configurar un conector ICE Chat, debe usar claves y frases de contraseña para Pretty Good Privacy (PGP) y Secure Shell (SSH). Estas claves se usan para configurar el sitio ICE Chat SFTP y las usa el conector para conectarse al sitio DE SFTP de ICE Chat para importar datos a Microsoft 365. La clave PGP se usa para configurar el cifrado de datos que se transfieren desde el sitio de ICE Chat SFTP a Microsoft 365. La clave SSH se usa para configurar el shell seguro para habilitar un inicio de sesión remoto seguro cuando el conector se conecta al sitio de ICE Chat SFTP.
 
-  Al configurar un conector, tiene la opción de usar claves públicas y contraseñas de clave proporcionadas por Microsoft o puede usar sus propias claves privadas y contraseñas. Se recomienda usar las claves públicas proporcionadas por Microsoft. Sin embargo, si su organización ya ha configurado un sitio SFTP de chat ice con claves privadas, puede crear un conector con estas mismas claves privadas.
+  Al configurar un conector, tiene la opción de usar claves públicas y contraseñas de clave proporcionadas por Microsoft o puede usar sus propias claves privadas y frases de contraseña. Se recomienda usar las claves públicas proporcionadas por Microsoft. Sin embargo, si su organización ya ha configurado un sitio de ICE Chat SFTP mediante claves privadas, puede crear un conector con estas mismas claves privadas.
 
-- El conector de chat ice puede importar un total de 200 000 elementos en un solo día. Si hay más de 200 000 elementos en el sitio SFTP, ninguno de estos elementos se importará a Microsoft 365.
+- El conector ICE Chat puede importar un total de 200 000 elementos en un solo día. Si hay más de 200 000 elementos en el sitio SFTP, ninguno de esos elementos se importará a Microsoft 365.
 
-- El administrador que crea el conector de chat ice en el paso 3 (y que descarga las claves públicas y la dirección IP en el paso 1) debe tener asignado el rol de administrador del conector de datos. Este rol es necesario para agregar conectores en la **página Conectores de datos** de la Centro de cumplimiento de Microsoft 365. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, vea la sección "Roles en los centros de seguridad y cumplimiento" en Permisos en el [Centro de seguridad & cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de la organización puede crear un grupo de roles personalizado, asignar el rol de administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, vea la sección "Crear un grupo de roles personalizado" en [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al administrador que crea el conector ice chat en el paso 3 (y quién descarga las claves públicas y la dirección IP en el paso 1) se le debe asignar el rol administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-## <a name="set-up-a-connector-using-public-keys"></a>Configurar un conector con claves públicas
+## <a name="set-up-a-connector-using-public-keys"></a>Configuración de un conector mediante claves públicas
 
-Los pasos de esta sección muestran cómo configurar un conector de chat ICE con las claves públicas de Pretty Good Privacy (PGP) y Secure Shell (SSH).
+En los pasos de esta sección se muestra cómo configurar un conector ICE Chat mediante las claves públicas para Pretty Good Privacy (PGP) y Secure Shell (SSH).
 
-### <a name="step-1-obtain-pgp-and-ssh-public-keys"></a>Paso 1: Obtener claves públicas de PGP y SSH
+### <a name="step-1-obtain-pgp-and-ssh-public-keys"></a>Paso 1: Obtener claves públicas PGP y SSH
 
-El primer paso es obtener una copia de las claves públicas de Pretty Good Privacy (PGP) y Secure Shell (SSH). Estas claves se usan en el paso 2 para configurar el sitio SFTP de chat ice para permitir que el conector (que crea en el paso 3) se conecte al sitio SFTP y transfiera los datos del chat ice Microsoft 365 buzones de correo. También obtendrá una dirección IP en este paso, que usará al configurar el sitio SFTP de chat ice.
+El primer paso es obtener una copia de las claves públicas para Pretty Good Privacy (PGP) y Secure Shell (SSH). Estas claves se usan en el paso 2 para configurar el sitio ICE Chat SFTP para permitir que el conector (que se crea en el paso 3) se conecte al sitio SFTP y transfiera los datos de ICE Chat a Microsoft 365 buzones. También obtendrá una dirección IP en este paso, que usará al configurar el sitio de ICE Chat SFTP.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y haga clic **en Conectores de datos** en la navegación izquierda.
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
 
-2. En la **página Conectores de datos** en **Chat ice**, haga clic en **Ver**.
+2. En la página **Conectores de datos** en **Ice Chat**, haga clic en **Ver**.
 
-3. En la página **Chat de ICE** , haga clic **en Agregar conector**.
+3. En la página **Chat de ICE** , haga clic en **Agregar conector**.
 
-4. En la **página Términos de** servicio, haga clic en **Aceptar**.
+4. En la página **Términos de servicio** , haga clic en **Aceptar**.
 
-5. En la **página Agregar credenciales para origen de** contenido, haga clic en Deseo usar las claves públicas **PGP y SSH proporcionadas por Microsoft**.
+5. En la página **Agregar credenciales para el origen de contenido** , haga clic en **Quiero usar las claves públicas PGP y SSH proporcionadas por Microsoft**.
 
    ![Seleccione la opción para usar claves públicas.](../media/ICEChatPublicKeysOption.png)
 
@@ -81,138 +81,138 @@ El primer paso es obtener una copia de las claves públicas de Pretty Good Priva
 
    ![Vínculos para descargar claves públicas y dirección IP.](../media/ICEChatPublicKeyDownloadLinks.png)
 
-   Estos archivos contienen los siguientes elementos que se usan para configurar el sitio SFTP de chat ice en el paso 2:
+   Estos archivos contienen los siguientes elementos que se usan para configurar el sitio de ICE Chat SFTP en el paso 2:
 
-   - Clave pública PGP: esta clave se usa para configurar el cifrado de los datos que se transfieren desde el sitio SFTP de chat ice a Microsoft 365.
+   - Clave pública PGP: esta clave se usa para configurar el cifrado de datos que se transfieren desde el sitio de ICE Chat SFTP a Microsoft 365.
 
-   - Clave pública SSH: esta clave se usa para configurar Ssh seguro para habilitar un inicio de sesión remoto seguro cuando el conector se conecta al sitio SFTP de chat ice.
+   - Clave pública SSH: esta clave se usa para configurar SSH seguro para habilitar un inicio de sesión remoto seguro cuando el conector se conecta al sitio de ICE Chat SFTP.
 
-   - Dirección IP: el sitio SFTP de chat ice está configurado para aceptar una solicitud de conexión solo desde esta dirección IP, que usa el conector de chat ICE que cree en el paso 3.
+   - Dirección IP: el sitio ICE Chat SFTP está configurado para aceptar una solicitud de conexión solo desde esta dirección IP, que usa el conector ice chat que se crea en el paso 3.
 
-7. Haga **clic en** Cancelar para cerrar el asistente. Vuelve a este asistente en el paso 3 para crear el conector.
+7. Haga clic en **Cancelar** para cerrar el asistente. Vuelva a este asistente en el paso 3 para crear el conector.
 
-### <a name="step-2-configure-the-ice-chat-sftp-site"></a>Paso 2: Configurar el sitio SFTP de chat ice
+### <a name="step-2-configure-the-ice-chat-sftp-site"></a>Paso 2: Configurar el sitio de ICE Chat SFTP
 
-El siguiente paso es usar las claves públicas PGP y SSH y la dirección IP que obtuvo en el paso 1 para configurar el cifrado PGP y la autenticación SSH para el sitio SFTP de chat ice. Esto permite que el conector de chat ice que cree en el paso 3 se conecte al sitio SFTP de chat ice y transfiera los datos del chat ice a Microsoft 365. Debe trabajar con el servicio de soporte al cliente de ICE Chat para configurar su sitio SFTP de chat ice.
+El siguiente paso es usar las claves públicas PGP y SSH y la dirección IP que obtuvo en el paso 1 para configurar el cifrado PGP y la autenticación SSH para el sitio ICE Chat SFTP. Esto permite que el conector ICE Chat que crea en el paso 3 se conecte al sitio de ICE Chat SFTP y transfiera los datos de ICE Chat a Microsoft 365. Debe trabajar con el servicio de atención al cliente de ICE Chat para configurar su sitio de ICE Chat SFTP.
 
-### <a name="step-3-create-an-ice-chat-connector"></a>Paso 3: Crear un conector de chat ice
+### <a name="step-3-create-an-ice-chat-connector"></a>Paso 3: Creación de un conector ice chat
 
-El último paso es crear un conector de chat ICE en el Centro de cumplimiento de Microsoft 365. El conector usa la información que proporciona para conectarse al sitio SFTP de chat ice y transferir mensajes de chat a los cuadros de buzón de usuario correspondientes en Microsoft 365.
+El último paso es crear un conector ICE Chat en el portal de cumplimiento. El conector usa la información que proporciona para conectarse al sitio ICE Chat SFTP y transferir mensajes de chat a los cuadros de buzón de usuario correspondientes en Microsoft 365.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y haga clic **en Conectores de datos** en la navegación izquierda.
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
 
-2. En la **página Conectores de datos** en **Chat ice**, haga clic en **Ver**.
+2. En la página **Conectores de datos** en **Ice Chat**, haga clic en **Ver**.
 
-3. En la página **Chat de ICE** , haga clic **en Agregar conector**.
+3. En la página **Chat de ICE** , haga clic en **Agregar conector**.
 
-4. En la **página Términos de** servicio, haga clic en **Aceptar**.
+4. En la página **Términos de servicio** , haga clic en **Aceptar**.
 
-5. En la **página Agregar credenciales para origen de** contenido, haga clic en **Deseo usar claves públicas PGP y SSH**.
+5. En la página **Agregar credenciales para el origen de contenido** , haga clic en **Quiero usar claves públicas PGP y SSH**.
 
-6. En el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, haga clic **en Validar conexión**.
+6. En el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, haga clic en **Validar conexión**.
 
-   - **Código de firma:** El identificador de su organización, que se usa como nombre de usuario para el sitio SFTP de chat ice.
+   - **Código firme:** El identificador de su organización, que se usa como nombre de usuario para el sitio DE SFTP de CHAT DE ICE.
 
-   - **Contraseña:** La contraseña del sitio SFTP de chat ice.
+   - **Contraseña:** La contraseña de su sitio de ICE Chat SFTP.
 
-   - **DIRECCIÓN URL DE SFTP:** La dirección URL del sitio SFTP de chat ice (por ejemplo, `sftp.theice.com`). También puede usar una dirección IP para este valor.
+   - **DIRECCIÓN URL de SFTP:** Dirección URL del sitio de ICE Chat SFTP (por ejemplo, `sftp.theice.com`). También puede usar una dirección IP para este valor.
 
-   - **Puerto SFTP:** El número de puerto del sitio SFTP de chat ice. El conector usa este puerto para conectarse al sitio SFTP.
+   - **Puerto SFTP:** Número de puerto para el sitio de ICE Chat SFTP. El conector usa este puerto para conectarse al sitio SFTP.
 
-7. Después de validar correctamente la conexión, haga clic en **Siguiente**.
+7. Una vez validada correctamente la conexión, haga clic en **Siguiente**.
 
-8. En la **página Definir usuario** , especifique los usuarios para los que se importarán los datos.
+8. En la página **Definir usuario** , especifique los usuarios para los que desea importar datos.
 
      - **Todos los usuarios de la organización**. Seleccione esta opción para importar datos para todos los usuarios.
 
-     - **Solo los usuarios en retención por juicio**. Seleccione esta opción para importar datos solo para los usuarios cuyos buzones se colocan en retención por juicio. Esta opción importa datos a buzones de usuario que tienen la propiedad LitigationHoldEnabled establecida en True. Para obtener más información, vea [Create a Litigation hold](create-a-litigation-hold.md).
+     - **Solo usuarios en suspensión por juicio**. Seleccione esta opción para importar datos solo para los usuarios cuyos buzones están en suspensión por juicio. Esta opción importa datos a buzones de usuario que tienen la propiedad LitigationHoldEnabled establecida en True. Para obtener más información, consulte [Creación de una suspensión por litigio](create-a-litigation-hold.md).
 
-9. En la **página Asignar usuarios externos Microsoft 365 usuarios**, habilite la asignación automática de usuarios y proporcione la asignación de usuarios personalizada según sea necesario. Puede descargar una copia del archivo CSV de asignación de usuario en esta página. Puede agregar las asignaciones de usuario al archivo y, a continuación, cargarlo.
+9. En la página **Asignar usuarios externos a Microsoft 365 usuarios**, habilite la asignación automática de usuarios y proporcione la asignación de usuarios personalizada según sea necesario. Puede descargar una copia del archivo CSV de asignación de usuario en esta página. Puede agregar las asignaciones de usuario al archivo y, a continuación, cargarlo.
 
    > [!NOTE]
-   > Como se explicó anteriormente, el archivo CSV del archivo de asignación personalizado contiene el imid de chat ice y la dirección de buzón de correo Microsoft 365 correspondiente para cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de chat, el conector primero verá el archivo de asignación personalizado. Si no encuentra un usuario de Microsoft 365 válido que corresponda al imid de chat ICE de un usuario, el conector importará el elemento a los buzones de los usuarios especificados en las propiedades *SenderEmail* y *RecipientEmail* del elemento de chat. Si el conector no encuentra un usuario Microsoft 365 mediante una asignación de usuario automática o personalizada, el elemento no se importará.
+   > Como se explicó anteriormente, el archivo CSV del archivo de asignación personalizado contiene el ímido ice chat y la dirección de buzón de Microsoft 365 correspondiente para cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de chat, el conector examinará primero el archivo de asignación personalizado. Si no encuentra un usuario Microsoft 365 válido que se corresponda con el imid ice chat de un usuario, el conector importará el elemento a los buzones de los usuarios especificados en las propiedades *SenderEmail* y *RecipientEmail* del elemento de chat. Si el conector no encuentra un usuario Microsoft 365 válido mediante la asignación automática o personalizada de usuarios, el elemento no se importará.
 
-10. Haga **clic en Siguiente**, revise la configuración y, a continuación, haga clic **en Finalizar** para crear el conector.
+10. Haga clic en **Siguiente**, revise la configuración y, a continuación, haga clic en **Finalizar** para crear el conector.
 
-11. Vaya a la **página Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
+11. Vaya a la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
 
-## <a name="set-up-a-connector-using-private-keys"></a>Configurar un conector con claves privadas
+## <a name="set-up-a-connector-using-private-keys"></a>Configuración de un conector mediante claves privadas
 
-Los pasos de esta sección muestran cómo configurar un conector de chat ICE con claves privadas PGP y SSH. Esta opción de configuración del conector está diseñada para organizaciones que ya han configurado un sitio DE CHAT DE ICE SFTP con claves privadas.
+En los pasos de esta sección se muestra cómo configurar un conector ICE Chat mediante claves privadas PGP y SSH. Esta opción de configuración del conector está pensada para organizaciones que ya han configurado un sitio de ICE Chat SFTP mediante claves privadas.
 
-### <a name="step-1-obtain-an-ip-address-to-configure-the-ice-chat-sftp-site"></a>Paso 1: Obtener una dirección IP para configurar el sitio SFTP de chat ice
+### <a name="step-1-obtain-an-ip-address-to-configure-the-ice-chat-sftp-site"></a>Paso 1: Obtener una dirección IP para configurar el sitio de ICE Chat SFTP
 
-Si su organización ha usado claves privadas PGP y SSH para configurar un sitio DE SFTP de chat ice, debe obtener una dirección IP y proporcionarla al servicio de soporte al cliente del chat ice. El sitio SFTP de chat ice debe configurarse para aceptar solicitudes de conexión desde esta dirección IP. El conector de chat ICE usa la misma dirección IP para conectarse al sitio SFTP y transferir datos de chat ice a Microsoft 365.
+Si su organización ha usado claves privadas PGP y SSH para configurar un sitio de ICE Chat SFTP, tendrá que obtener una dirección IP y proporcionarla al servicio de atención al cliente de ICE Chat. El sitio de ICE Chat SFTP debe configurarse para aceptar solicitudes de conexión de esta dirección IP. El conector ICE Chat usa la misma dirección IP para conectarse al sitio SFTP y transferir datos de ICE Chat a Microsoft 365.
 
 Para obtener la dirección IP:
 
-1. Vaya a <https://compliance.microsoft.com> y haga clic **en Conectores de datos** en la navegación izquierda.
+1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
 
-2. En la **página Conectores de datos** en **Chat ice**, haga clic en **Ver**.
+2. En la página **Conectores de datos** en **Ice Chat**, haga clic en **Ver**.
 
-3. En la página **descripción del producto chat ice** , haga clic **en Agregar conector**
+3. En la página de descripción del producto **ICE Chat** , haga clic en **Agregar conector.**
 
-4. En la **página Términos de** servicio, haga clic en **Aceptar**.
+4. En la página **Términos de servicio** , haga clic en **Aceptar**.
 
-5. En la **página Agregar credenciales para origen de** contenido, haga clic en **Deseo usar claves privadas PGP y SSH**.
+5. En la página **Agregar credenciales para el origen de contenido** , haga clic en **Quiero usar claves privadas PGP y SSH**.
 
    ![Seleccione la opción para usar claves privadas.](../media/ICEChatPrivateKeysOption.png)
 
-6. En el paso 1, haga clic **en Descargar dirección IP** para guardar una copia del archivo de dirección IP en el equipo local.
+6. En el paso 1, haga clic en **Descargar dirección IP** para guardar una copia del archivo de dirección IP en el equipo local.
 
    ![Descargue la dirección IP.](../media/ICEChatConnectorIPAddress.png)
 
-7. Haga **clic en** Cancelar para cerrar el asistente. Vuelve a este asistente en el paso 2 para crear el conector.
+7. Haga clic en **Cancelar** para cerrar el asistente. Vuelva a este asistente en el paso 2 para crear el conector.
 
-Debe trabajar con el servicio de soporte al cliente de chat ice para configurar su sitio SFTP de chat ice para aceptar solicitudes de conexión desde esta dirección IP.
+Debe trabajar con el servicio de atención al cliente de ICE Chat para configurar su sitio de ICE Chat SFTP para aceptar solicitudes de conexión desde esta dirección IP.
 
-### <a name="step-2-create-an-ice-chat-connector"></a>Paso 2: Crear un conector de chat ice
+### <a name="step-2-create-an-ice-chat-connector"></a>Paso 2: Creación de un conector ice chat
 
-Una vez configurado el sitio SFTP de chat ice, el siguiente paso es crear un conector de chat ice en el Centro de cumplimiento de Microsoft 365. El conector usa la información que proporciona para conectarse al sitio SFTP de chat ice y transferir mensajes de correo electrónico a los cuadros de buzón de usuario correspondientes en Microsoft 365. Para completar este paso, asegúrese de tener copias de las mismas claves privadas y contraseñas clave que usó para configurar el sitio SFTP de chat ice.
+Una vez configurado el sitio de ICE Chat SFTP, el siguiente paso consiste en crear un conector ice chat en el portal de cumplimiento. El conector usa la información que proporciona para conectarse al sitio de ICE Chat SFTP y transferir mensajes de correo electrónico a los cuadros de buzón de usuario correspondientes en Microsoft 365. Para completar este paso, asegúrese de tener copias de las mismas claves privadas y contraseñas de clave que usó para configurar el sitio de ICE Chat SFTP.
 
-1. Vaya a <https://compliance.microsoft.com> y haga clic **en Conectores de datos** en la navegación izquierda.
+1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
 
-2. En la **página Conectores de datos** en **Chat ice**, haga clic en **Ver**.
+2. En la página **Conectores de datos** en **Ice Chat**, haga clic en **Ver**.
 
-3. En la página **descripción del producto chat ice** , haga clic **en Agregar conector**
+3. En la página de descripción del producto **ICE Chat** , haga clic en **Agregar conector.**
 
-4. En la **página Términos de** servicio, haga clic en **Aceptar**.
+4. En la página **Términos de servicio** , haga clic en **Aceptar**.
 
-5. En la **página Agregar credenciales para origen de** contenido, haga clic en **Deseo usar claves privadas PGP y SSH**.
+5. En la página **Agregar credenciales para el origen de contenido** , haga clic en **Quiero usar claves privadas PGP y SSH**.
 
-6. En el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, haga clic **en Validar conexión**.
+6. En el paso 3, escriba la información necesaria en los cuadros siguientes y, a continuación, haga clic en **Validar conexión**.
 
-      - **Nombre:** El nombre del conector. Debe ser único en la organización.
+      - **Nombre:** Nombre del conector. Debe ser único en su organización.
 
-      - **Código de firma:** El identificador de su organización que se usa como nombre de usuario para el sitio SFTP de chat ice.
+      - **Código firme:** Identificador de la organización que se usa como nombre de usuario para el sitio de ICE Chat SFTP.
 
-      - **Contraseña:** La contraseña del sitio SFTP de chat ICE de su organización.
+      - **Contraseña:** La contraseña del sitio DE SFTP de ICE Chat de su organización.
 
-      - **DIRECCIÓN URL DE SFTP:** La dirección URL del sitio SFTP de chat ice (por ejemplo, `sftp.theice.com`). También puede usar una dirección IP para este valor.
+      - **DIRECCIÓN URL de SFTP:** Dirección URL del sitio de ICE Chat SFTP (por ejemplo, `sftp.theice.com`). También puede usar una dirección IP para este valor.
 
-      - **Puerto SFTP:** El número de puerto del sitio SFTP de chat ice. El conector usa este puerto para conectarse al sitio SFTP.
+      - **Puerto SFTP:** Número de puerto para el sitio de ICE Chat SFTP. El conector usa este puerto para conectarse al sitio SFTP.
 
-      - **Clave privada PGP:** La clave privada PGP para el sitio SFTP de chat ice. Asegúrese de incluir todo el valor de clave privada, incluidas las líneas inicial y final del bloque de teclas.
+      - **Clave privada PGP:** Clave privada PGP para el sitio de ICE Chat SFTP. Asegúrese de incluir todo el valor de clave privada, incluidas las líneas inicial y final del bloque de claves.
 
-      - **Frase de contraseña de clave PGP:** Frase de contraseña para la clave privada PGP.
+      - **Frase de contraseña de clave PGP:** Frase de contraseña de la clave privada PGP.
 
-      - **Clave privada SSH:** La clave privada SSH para el sitio SFTP de chat ice. Asegúrese de incluir todo el valor de clave privada, incluidas las líneas inicial y final del bloque de teclas.
+      - **Clave privada SSH:** Clave privada SSH para el sitio de ICE Chat SFTP. Asegúrese de incluir todo el valor de clave privada, incluidas las líneas inicial y final del bloque de claves.
 
-      - **Frase de contraseña de clave SSH:** Frase de contraseña para la clave privada SSH.
+      - **Frase de contraseña de clave SSH:** Frase de contraseña de la clave privada SSH.
 
-7. Después de validar correctamente la conexión, haga clic en **Siguiente**.
+7. Una vez validada correctamente la conexión, haga clic en **Siguiente**.
 
-8. En la **página Definir usuario** , especifique los usuarios para los que se importarán los datos.
+8. En la página **Definir usuario** , especifique los usuarios para los que desea importar datos.
 
      - **Todos los usuarios de la organización**. Seleccione esta opción para importar datos para todos los usuarios.
 
-     - **Solo los usuarios en retención por juicio**. Seleccione esta opción para importar datos solo para los usuarios cuyos buzones se colocan en retención por juicio. Esta opción importa datos a buzones de usuario que tienen la propiedad LitigationHoldEnabled establecida en True. Para obtener más información, vea [Create a Litigation hold](create-a-litigation-hold.md).
+     - **Solo usuarios en suspensión por juicio**. Seleccione esta opción para importar datos solo para los usuarios cuyos buzones están en suspensión por juicio. Esta opción importa datos a buzones de usuario que tienen la propiedad LitigationHoldEnabled establecida en True. Para obtener más información, consulte [Creación de una suspensión por litigio](create-a-litigation-hold.md).
 
-9. En la **página Asignar usuarios de chat ICE Microsoft 365 usuarios**, habilite la asignación automática de usuarios y proporcione una asignación de usuario personalizada según sea necesario.
+9. En la página **Asignar usuarios de ICE Chat a Microsoft 365 usuarios**, habilite la asignación automática de usuarios y proporcione la asignación de usuarios personalizada según sea necesario.
 
    > [!NOTE]
-   > Como se explicó anteriormente, el archivo CSV del archivo de asignación personalizado contiene el imid de chat ice y la dirección de buzón de correo Microsoft 365 correspondiente para cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de chat, el conector primero verá el archivo de asignación personalizado. Si no encuentra un usuario de Microsoft 365 válido que corresponda al imid de chat ICE de un usuario, el conector importará el elemento a los buzones de los usuarios especificados en las propiedades *SenderEmail* y *RecipientEmail* del elemento de chat. Si el conector no encuentra un usuario Microsoft 365 mediante una asignación de usuario automática o personalizada, el elemento no se importará.
+   > Como se explicó anteriormente, el archivo CSV del archivo de asignación personalizado contiene el ímido ice chat y la dirección de buzón de Microsoft 365 correspondiente para cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de chat, el conector examinará primero el archivo de asignación personalizado. Si no encuentra un usuario Microsoft 365 válido que se corresponda con el imid ice chat de un usuario, el conector importará el elemento a los buzones de los usuarios especificados en las propiedades *SenderEmail* y *RecipientEmail* del elemento de chat. Si el conector no encuentra un usuario Microsoft 365 válido mediante la asignación automática o personalizada de usuarios, el elemento no se importará.
 
-10. Haga **clic en Siguiente**, revise la configuración y, a continuación, haga clic **en Finalizar** para crear el conector.
+10. Haga clic en **Siguiente**, revise la configuración y, a continuación, haga clic en **Finalizar** para crear el conector.
 
-11. Vaya a la **página Conectores de datos** para ver el progreso del proceso de importación del nuevo conector. Haga clic en el conector para mostrar la página desplegable, que contiene información sobre el conector.
+11. Vaya a la página **Conectores de datos** para ver el progreso del proceso de importación del nuevo conector. Haga clic en el conector para mostrar la página de control flotante, que contiene información sobre el conector.

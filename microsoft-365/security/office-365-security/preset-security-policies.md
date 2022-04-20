@@ -16,12 +16,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2a74fce0242f0206218d6f7f2f13e61d9f0a3b6f
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 01fd969461b47b0208dcfd20ff608e829b6a3336
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847123"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64915981"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad preestablecidas en Exchange Online Protection y Microsoft Defender para Office 365
 
@@ -57,10 +57,10 @@ El perfil determina el nivel de protección. Los perfiles siguientes están disp
 
   Las condiciones y excepciones disponibles son:
 
-  - **Usuarios**: buzones, usuarios de correo o contactos de correo especificados.
+  - **Usuarios**: los buzones de correo, los usuarios de correo o los contactos de correo especificados.
   - **Grupos**:
-    - Miembros de los grupos de distribución especificados o grupos de seguridad habilitados para correo.
-    - El Grupos de Microsoft 365 especificado.
+    - Miembros de los grupos de distribución o grupos de seguridad habilitados para correo especificados.
+    - Los Grupos de Microsoft 365 especificados.
   - **Dominios**: todos los destinatarios de los [dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) especificados en la organización.
 
   Solo puede usar una condición o excepción una vez, pero puede especificar varios valores para la condición o excepción. Varios valores de una misma condición o excepción usan la lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_). Condiciones o excepciones diversas usan la lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_).
@@ -80,6 +80,9 @@ Las directivas de seguridad preestablecidas usan las directivas correspondientes
   - [Directivas contra correo no deseado](configure-your-spam-filter-policies.md) **denominadas Directiva de seguridad preestablecida estándar** y **Directiva de seguridad preestablecida estricta**.
   - [Directivas antimalware](configure-anti-malware-policies.md) **denominadas Directiva de seguridad preestablecida estándar** y **Directiva de seguridad preestablecida estricta**.
   - [Directivas de protección contra suplantación de identidad (EOP)](set-up-anti-phishing-policies.md#spoof-settings) **denominadas Directiva de seguridad preestablecida estándar** y **Directiva de seguridad preestablecida estricta** (configuración de suplantación de identidad).
+
+  > [!NOTE]
+  > Las directivas de correo no deseado saliente no forman parte de las directivas de seguridad preestablecidas. La directiva de correo no deseado saliente predeterminada protege automáticamente a los miembros de las directivas de seguridad preestablecidas. O bien, puede crear directivas de correo no deseado de salida personalizadas para personalizar la protección de los miembros de las directivas de seguridad preestablecidas. Para obtener más información, consulte [Configuración del filtrado de correo no deseado saliente en EOP](configure-the-outbound-spam-policy.md).
 
 - **directivas de Microsoft Defender para Office 365**: esto incluye organizaciones con suscripciones de complemento de Microsoft 365 E5 o Defender para Office 365:
   - Las directivas contra suplantación de identidad en Microsoft Defender para Office 365 **denominadas Directiva de seguridad preestablecida estándar** y **Directiva de seguridad preestablecida estricta**, que incluyen:
@@ -122,7 +125,7 @@ Por ejemplo, si existe una configuración de seguridad en **Protección estánda
   - Para configurar directivas de seguridad preestablecidas, debe ser miembro de los grupos de roles **Administración de la organización** o **Administrador de seguridad** .
   - Para el acceso de solo lectura a las directivas de seguridad preestablecidas, debe ser miembro del grupo de roles **Lector global** .
 
-  Para obtener más información, vea los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Para obtener más información, consulte los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   **Nota**: Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos _y_ permisos necesarios para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 

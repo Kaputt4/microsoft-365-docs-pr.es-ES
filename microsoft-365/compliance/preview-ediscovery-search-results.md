@@ -19,21 +19,21 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga una vista previa de un ejemplo de los resultados devueltos por una búsqueda de contenido o una búsqueda de eDiscovery Core en el Centro de cumplimiento de Microsoft 365.
-ms.openlocfilehash: af0811d0c442d6f064fd336d4261d1f7b2337dc8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga una vista previa de un ejemplo de los resultados devueltos por una búsqueda de contenido o una búsqueda de eDiscovery (Estándar) en el panel de cumplimiento de Microsoft Purview.
+ms.openlocfilehash: 83779ad333d6944b65b92b2032d46b3eaa016479
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189350"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934717"
 ---
-# <a name="preview-ediscovery-search-results"></a>Vista previa de los resultados de búsqueda de eDiscovery
+# <a name="preview-ediscovery-search-results"></a>Vista previa de los resultados de la búsqueda de eDiscovery
 
-Después de ejecutar una búsqueda de contenido o una búsqueda asociada a un caso de eDiscovery Core, puede obtener una vista previa de un ejemplo de los resultados devueltos por la búsqueda. La vista previa de elementos devueltos por la consulta de búsqueda puede ayudarle a determinar si la búsqueda devuelve los resultados que espera o si necesita cambiar la consulta de búsqueda y volver a ejecutar la búsqueda.
+Después de ejecutar una búsqueda de contenido o una búsqueda asociada a un caso de exhibición de documentos electrónicos de Microsoft Purview (Estándar), puede obtener una vista previa de un ejemplo de los resultados devueltos por la búsqueda. La vista previa de elementos devueltos por la consulta de búsqueda puede ayudarle a determinar si la búsqueda devuelve los resultados que espera o si necesita cambiar la consulta de búsqueda y volver a ejecutar la búsqueda.
 
 Para obtener una vista previa de un ejemplo de resultados devuelto por una búsqueda:
 
-1. En el Centro de cumplimiento de Microsoft 365, vaya a la página Búsqueda de contenido o a un caso de eDiscovery Core.
+1. En el portal de cumplimiento de Microsoft Purview, vaya a la página de búsqueda de contenido o a un caso de exhibición de documentos electrónicos (Estándar).
 
 2. Seleccione la búsqueda para mostrar la página de controles flotantes.
 

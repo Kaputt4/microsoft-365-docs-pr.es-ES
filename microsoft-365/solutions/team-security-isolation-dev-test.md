@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkSPO
 description: Configure la infraestructura y seguridad que permita a los empleados trabajar de forma remota desde cualquier lugar y en cualquier momento.
-ms.openlocfilehash: 8ea359f2c0de98ac35b90a379e5a60c4578e66cf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0e54d3840e9207fd7e8b5c50415ad2ca60751059
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323421"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934255"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>Configurar un equipo con aislamiento de seguridad en un entorno de desarrollo y pruebas
 
@@ -141,7 +141,7 @@ Después, debe configurar una etiqueta de confidencialidad aparte con la siguien
 
 Siga estos pasos:
 
-1. Abra el Centro de cumplimiento de Microsoft 365 y, en **Soluciones**, seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information Protection**</a>.
+1. Abra el portal de cumplimiento de Microsoft Purview y, en **Soluciones**, seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information Protection**</a>.
 1. Haga clic en **Crear una etiqueta**.
 1. Escriba **Estrategia de la empresa** en el nombre de la etiqueta.
 1. Escriba **Documentos de estrategia empresarial de la directiva** como información y, después, haga clic en **Siguiente**.
@@ -158,7 +158,7 @@ Siga estos pasos:
 
 Después, publique la nueva etiqueta con estos pasos:
 
-1. En la Centro de cumplimiento de Microsoft 365, en <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information Protection**</a>, elija la pestaña **Directivas de etiqueta**.
+1. En la portal de cumplimiento de Microsoft Purview, en <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information Protection**</a>, elija la pestaña **Directivas de etiqueta**.
 2. Haga clic en **Publicar etiquetas**.
 3. En la página **Elegir etiquetas de confidencialidad para publicar**, haga clic en **Elija las etiquetas de confidencialidad para publicar**.
 4. Seleccione **Estrategia de la empresa** y, después, haga clic en **Agregar**.

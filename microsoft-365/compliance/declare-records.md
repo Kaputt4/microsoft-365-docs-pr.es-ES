@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de retención para declarar registros.
-ms.openlocfilehash: 228ce06cbc646f60703443a00492693019dfa0b8
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 23dd6c61d9da787eecd2e1fa825fe338d961d1d1
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836151"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911463"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usar etiquetas de retención para declarar registros
 
@@ -69,7 +69,7 @@ Ahora puede aplicar esta etiqueta de retención a documentos de SharePoint o One
 
 Instrucciones completas:
 
-- [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
+- [Publicar etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
 
 - [Aplicar una etiqueta de retención a contenido automáticamente](apply-retention-labels-automatically.md) (no es compatible con los registros normativos)
 

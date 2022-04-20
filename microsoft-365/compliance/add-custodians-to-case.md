@@ -1,5 +1,5 @@
 ---
-title: Adición de custodios a un caso de Advanced eDiscovery
+title: Agregar custodios a un caso de exhibición de documentos electrónicos (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Obtenga información sobre cómo usar la herramienta de administración de custodios integrada en Advanced eDiscovery para coordinar los flujos de trabajo e identificar los orígenes de datos pertinentes en un caso.
+description: Obtenga información sobre cómo usar la herramienta de administración de custodios integrada en Microsoft Purview eDiscovery (Premium) para coordinar los flujos de trabajo e identificar los orígenes de datos pertinentes en un caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bbd5bb1955fc0c8ee5917a6827b35a6688928571
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 7da45eca9e57ef64c9272c89e24c21a20dc5af80
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759377"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935816"
 ---
-# <a name="add-custodians-to-an-advanced-ediscovery-case"></a>Adición de custodios a un caso de Advanced eDiscovery
+# <a name="add-custodians-to-an-ediscovery-premium-case"></a>Agregar custodios a un caso de exhibición de documentos electrónicos (Premium)
 
-Use la herramienta de administración de custodios integrada en Advanced eDiscovery para coordinar los flujos de trabajo en torno a la administración de custodios e identificar los orígenes de datos relevantes y custodiales asociados a un caso. Al agregar un custodio, el sistema puede identificar y colocar automáticamente una suspensión en su buzón de Exchange y OneDrive para la Empresa cuenta. Durante el proceso de detección de la investigación, también puede identificar otros orígenes de datos (como buzones, sitios o Teams) a los que un custodio accedió o contribuyó. En esta situación, puede usar la herramienta de administración de custodios para asociar esos orígenes de datos a un custodio específico. Después de agregar custodios a un caso y asociar otro origen de datos con ellos, puede conservar rápidamente los datos y buscar en los datos de custodia.
+Use la herramienta integrada de administración de custodios de Microsoft Purview eDiscovery (Premium) para coordinar los flujos de trabajo en torno a la administración de custodios e identificar orígenes de datos relevantes y custodiales asociados a un caso. Al agregar un custodio, el sistema puede identificar y colocar automáticamente una suspensión en su buzón de Exchange y OneDrive para la Empresa cuenta. Durante el proceso de detección de la investigación, también puede identificar otros orígenes de datos (como buzones, sitios o Teams) a los que un custodio accedió o contribuyó. En esta situación, puede usar la herramienta de administración de custodios para asociar esos orígenes de datos a un custodio específico. Después de agregar custodios a un caso y asociar otro origen de datos con ellos, puede conservar rápidamente los datos y buscar en los datos de custodia.
 
-Puede agregar y administrar custodios en casos de Advanced eDiscovery en cuatro pasos:
+Puede agregar y administrar custodios en casos de eDiscovery (Premium) en cuatro pasos:
 
 1. Identifique a los custodios.
 
@@ -46,7 +46,7 @@ Para agregar custodios a un caso, debe ser miembro del grupo de roles administra
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión con una cuenta de usuario a la que se hayan asignado los permisos de exhibición de documentos electrónicos adecuados.
 
-2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, seleccione **eDiscovery** >  **Advanced eDiscovery** y seleccione la pestaña [**Casos**](https://go.microsoft.com/fwlink/p/?linkid=2173764).
+2. En el panel de navegación izquierdo del portal de cumplimiento de Microsoft Purview, seleccione **eDiscoveryeDiscovery** >  **(Premium)** y seleccione la pestaña [**Casos**](https://go.microsoft.com/fwlink/p/?linkid=2173764).
 
 3. Seleccione el caso al que desea agregar custodios.
 
@@ -83,7 +83,7 @@ Para asociar otros buzones de correo, sitios, Teams o grupos de Yammer a un cust
    > [!NOTE]
    > Puede usar los selectores de ubicación **Exchange** y **SharePoint** para asociar cualquier buzón o sitio de la organización a un custodio. , esto incluye la asociación del buzón de correo y el sitio para un equipo de Microsoft o Yammer grupo del que un custodio no es miembro. Para ello, debe agregar tanto el buzón como el sitio asociados a cada equipo o grupo de Yammer.
 
-2. Puede ver el número total de buzones, sitios, Teams y grupos de Yammer asignados a cada custodio expandiendo cada custodio de la tabla. Cuando haya finalizado las ubicaciones de datos asignadas para cada custodio, estas asociaciones se mantendrán y usarán durante las fases de recopilación, procesamiento y revisión del flujo de trabajo de Advanced eDiscovery.
+2. Puede ver el número total de buzones, sitios, Teams y grupos de Yammer asignados a cada custodio expandiendo cada custodio de la tabla. Cuando haya finalizado las ubicaciones de datos asignadas para cada custodio, estas asociaciones se mantendrán y usarán durante las fases de recopilación, procesamiento y revisión del flujo de trabajo de eDiscovery (Premium).
 
 3. Después de agregar custodios y configurar sus ubicaciones de datos, haga clic en **Siguiente** para ir a la página **Configuración de suspensión** .  
 

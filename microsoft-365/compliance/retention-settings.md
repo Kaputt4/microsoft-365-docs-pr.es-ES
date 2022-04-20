@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: 0ec9ace6d2a2205996baed8cd64ca0e29ac83ed3
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 729c31935ee3ded04a12f7822a17082ef1b52c26
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836092"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911520"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -33,7 +33,7 @@ Varias configuraciones de retención son comunes tanto a las directivas de reten
 Para ver los escenarios que admiten estas directivas para la retención, vea:
 
 - [Crear y configurar directivas de retención](create-retention-policies.md).
-- [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
+- [Publicar etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
 - [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)
 
 La configuración específica de cada escenario se explica en su correspondiente documentación.
@@ -344,7 +344,7 @@ Al elegir las configuraciones para conservar y eliminar contenido, la directiva 
     
     Para esta configuración, elija las siguientes opciones:
     
-    - Para las políticas de retención: en la página **Decidir si quiere retener el contenido, eliminarlo o ambas cosas**, seleccione **Retener elementos durante un período específico**, especifique el período de retención y, a continuación, para **Al finalizar el período de retención**, seleccione **No hacer nada** para que se elimine la configuración de retención.  O bien, para conservar sin una fecha de finalización, seleccione **Conservar elementos para siempre** en esta página.
+    - Para las políticas de retención: en la página **Decidir si quiere retener el contenido, eliminarlo o ambas cosas**, seleccione **Retener elementos durante un período específico**, especifique el período de retención y, a continuación, para **Al finalizar el período de retención**, seleccione **No hacer nada** para que se elimine la configuración de retención o para conservarla sin fecha de finalización, seleccione **Guardar elementos para siempre** en esta página.
     
     - Para las etiquetas de retención: en la página **Definir configuración de etiquetas**, seleccione **Conservar elementos indefinidamente o durante un período específico** y, a continuación:
         - Para que la configuración de retención deje de estar en vigor en el contenido etiquetado después de un tiempo específico: en la página **Definir el período de retención**, para **Conservar elementos para**, especifique el período de tiempo. A continuación, en la página **Elegir lo que sucede después del período de retención**, seleccione **Desactivar configuración de retención**. La etiqueta permanece en el contenido, pero sin restricciones, como si fuera una [etiqueta que solo clasifica](retention.md#classifying-content-without-applying-any-actions).
@@ -356,7 +356,7 @@ Al elegir las configuraciones para conservar y eliminar contenido, la directiva 
     
     - Para las políticas de retención: en la página **Decidir si quiere retener el contenido, eliminarlo o ambas cosas**, seleccione **Retener elementos durante un período específico**, especifique el período de retención y, a continuación, para **Al finalizar el período de retención**, seleccione **Eliminar elementos automáticamente**.
     
-    - Para las etiquetas de retención: en la página **Definir configuración de etiquetas**, seleccione **Conservar elementos indefinidamente o durante un período específico**, especifique el período de retención y, a continuación, para **Elegir lo que sucede después del período de retención**, seleccione **Eliminar elementos automáticamente** o **Iniciar una revisión para eliminación**. Para obtener información sobre las revisiones para eliminación, vea [Revisión para eliminación](disposition.md#disposition-reviews).
+    - Para las etiquetas de retención: en la página **Definir configuración de etiquetas**, seleccione **Conservar elementos indefinidamente o durante un período específico**, especifique el período de retención y, a continuación, para **Elegir lo que sucede después del período de retención**, seleccione **Eliminar elementos automáticamente** o **Iniciar una revisión para eliminación**. Para obtener información sobre las revisiones para eliminación, consulte [Revisión para eliminación](disposition.md#disposition-reviews).
 
 - Solo eliminar
 
@@ -394,7 +394,7 @@ Antes de configurar la retención, familiarícese primero con los límites de ca
 
 La configuración de retención puede conservar y luego eliminar elementos o eliminar elementos antiguos sin conservarlos.
 
-En ambos casos, si la configuración de retención elimina elementos, es importante saber que el período de tiempo que especifique no se calcula a partir del momento en que se asignó la directiva, sino según el inicio del período de retención especificado. Por ejemplo, desde el momento en que se creó, modificó o etiquetó el elemento.
+En ambos casos, si la configuración de retención elimina elementos, es importante saber que el período de tiempo que especifique no se calcula a partir del momento en que se asignó la directiva, sino según el inicio del período de retención especificado. Por ejemplo, desde el momento en que el elemento se creó o modificó, o se etiquetó.
 
 Por este motivo, considere primero la antigüedad del contenido existente y cómo la configuración podría afectar a ese contenido. Considere la posibilidad de comunicar los ajustes elegidos a sus usuarios y al servicio de asistencia antes de que se aplique la configuración al contenido, lo que les da tiempo para evaluar el posible impacto.
 

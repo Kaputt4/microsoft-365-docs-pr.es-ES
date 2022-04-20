@@ -1,5 +1,5 @@
 ---
-title: Configurar etiquetas inteligentes en Advanced eDiscovery
+title: Configuración de etiquetas inteligentes en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,36 +16,36 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: Las etiquetas inteligentes le permiten aplicar las capacidades de aprendizaje automático al revisar el contenido en un Advanced eDiscovery caso. Use grupos de etiquetas inteligentes para mostrar los resultados de los modelos de detección de aprendizaje automático, como el modelo de privilegios abogado-cliente.
-ms.openlocfilehash: 80c946da943e4880dbd82ea6b34d238b80030b4c
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+description: Las etiquetas inteligentes permiten aplicar las funcionalidades de aprendizaje automático al revisar el contenido en un caso de exhibición de documentos electrónicos (Premium). Use grupos de etiquetas inteligentes para mostrar los resultados de los modelos de detección de aprendizaje automático, como el modelo de privilegios abogado-cliente.
+ms.openlocfilehash: 9fd4a53df00bcb096a885ed311e4fb4ed365725e
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807193"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934629"
 ---
-# <a name="set-up-smart-tags-in-advanced-ediscovery"></a>Configurar etiquetas inteligentes en Advanced eDiscovery
+# <a name="set-up-smart-tags-in-ediscovery-premium"></a>Configuración de etiquetas inteligentes en eDiscovery (Premium)
 
-Las funcionalidades de aprendizaje automático (ML) en Advanced eDiscovery pueden ayudarle a hacer que el proceso de decisión sea más eficaz al revisar documentos de casos en un conjunto de opiniones. Las etiquetas inteligentes son una forma de llevar las ML a donde se registran las decisiones: al etiquetar documentos durante la revisión. Al crear un grupo de etiquetas inteligentes, las decisiones que son el resultado del modelo de ML asociado al grupo de etiquetas inteligentes se muestran en línea con las etiquetas del grupo de etiquetas. Esto ayuda a ver la ML de resultados en línea al revisar documentos específicos.
+Las funcionalidades de aprendizaje automático (ML) en microsoft Purview eDiscovery (Premium) pueden ayudarle a hacer que el proceso de decisión sea más eficaz al revisar documentos de casos en un conjunto de revisión. Las etiquetas inteligentes son una manera de llevar las funcionalidades de ML al lugar donde se registran las decisiones: al etiquetar documentos durante la revisión. Al crear un grupo de etiquetas inteligentes, las decisiones que son el resultado del modelo de ML que ha asociado al grupo de etiquetas inteligentes se muestran en línea con las etiquetas del grupo de etiquetas. Esto ayuda a ver la información de resultados de ML en línea al revisar documentos específicos.
 
-## <a name="how-to-set-up-a-smart-tag-group"></a>Cómo configurar un grupo de etiquetas inteligentes
+## <a name="how-to-set-up-a-smart-tag-group"></a>Configuración de un grupo de etiquetas inteligentes
 
-1. En un conjunto de revisión, haga clic **en Administrar conjunto de revisión** y, a continuación, haga clic **en Administrar etiquetas**.
+1. En un conjunto de revisiones, haga clic en **Administrar conjunto de revisión** y, a continuación, haga clic en **Administrar etiquetas**.
 
-2. Haga **clic en Agregar grupo de etiquetas** y, a **continuación, seleccione Agregar grupo de etiquetas inteligentes**.
+2. Haga clic en **Agregar grupo de etiquetas** y, a continuación, seleccione **Agregar grupo de etiquetas inteligentes**.
 
-3. Seleccione el ML que desea asociar al grupo de etiquetas.
+3. Seleccione el modelo de ML que desea asociar al grupo de etiquetas.
     
-   Esto crea un grupo de etiquetas y *N* etiquetas secundarias, donde *N* es el número de salidas posibles del modelo. Por ejemplo, el [modelo de detección de privilegios abogado-cliente](attorney-privilege-detection.md) tiene dos salidas posibles: 
+   Esto crea un grupo de etiquetas y *N* etiquetas secundarias, donde *N* es el número de posibles salidas del modelo. Por ejemplo, el [modelo de detección de privilegios abogado-cliente](attorney-privilege-detection.md) tiene dos salidas posibles: 
 
    - **Positivo** : se usa para etiquetar documentos que contienen contenido con privilegios de abogado-cliente.
    
    - **Negativo** : se usa para etiquetar documentos que no contienen contenido con privilegios de abogado-cliente.
     
-    Si selecciona este modelo, se crea un grupo de etiquetas con dos etiquetas secundarias (una etiqueta secundaria denominada **Positivo** y la otra denominada **Negativo**) para el conjunto de opiniones. En este ejemplo, cada etiqueta secundaria corresponde a uno de los posibles resultados del modelo de detección de privilegios abogado-cliente.
+    Si selecciona este modelo, se crea un grupo de etiquetas con dos etiquetas secundarias (una etiqueta secundaria denominada **Positive** y la otra denominada **Negative**) para el conjunto de revisión. En este ejemplo, cada etiqueta secundaria corresponde a una de las posibles salidas del modelo de detección de privilegios abogado-cliente.
 
-4. Opcionalmente, puede cambiar el nombre del grupo de etiquetas y las etiquetas secundarias. Por ejemplo, puede cambiar el nombre de la **etiqueta Positivo** a **Privileged** y **la etiqueta Negative** a **Not privileged**.
+4. Opcionalmente, puede cambiar el nombre del grupo de etiquetas y las etiquetas secundarias. Por ejemplo, podría cambiar el nombre de la etiqueta **Positive** a **Privileged** y la etiqueta **Negative** a **Not privileged(No con privilegios**).
 
-## <a name="how-to-use-smart-tags"></a>Cómo usar etiquetas inteligentes
+## <a name="how-to-use-smart-tags"></a>Uso de etiquetas inteligentes
 
-Al revisar un documento, los resultados del modelo se muestran junto a la etiqueta secundaria adecuada. Por ejemplo, si tiene un grupo de etiquetas inteligentes para la detección de privilegios de abogado-cliente y revisa un documento potencialmente con privilegios, el motivo de esa conclusión se muestra junto a la etiqueta adecuada. Es importante tener en cuenta que la etiqueta no se aplica automáticamente al documento. El revisor toma la decisión sobre cómo etiquetar el documento.
+Al revisar un documento, los resultados del modelo se muestran junto a la etiqueta secundaria adecuada. Por ejemplo, si tiene un grupo de etiquetas inteligentes para la detección de privilegios abogado-cliente y revisa un documento que tiene potencialmente privilegios, el motivo de esa conclusión se muestra junto a la etiqueta adecuada. Es importante tener en cuenta que la etiqueta no se aplica automáticamente al documento. El revisor toma la decisión sobre cómo etiquetar el documento.

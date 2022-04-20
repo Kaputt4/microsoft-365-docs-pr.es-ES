@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Necesita una solución de administración de registros para Microsoft 365 que administre contenido de alto valor para obligaciones legales, empresariales o reglamentarias, pero no sabe por dónde comenzar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: ba23aed20cbef05272bc33306df5fc1eebc6cb3f
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 02c16f9d1a9d42f59cf8bc27bdee38bcc2d10d73
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241184"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911398"
 ---
 # <a name="get-started-with-records-management"></a>Introducción a la administración de registros
 
@@ -41,7 +41,7 @@ ms.locfileid: "62241184"
 
 4. **Publicar y aplicar las etiquetas de retención**. Las etiquetas de retención son bloques de creación reutilizables que se pueden usar en varias directivas y se pueden incorporar a flujos de trabajo de usuario:
 
-    - [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
+    - [Publicar etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
     - [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)
 
 Independientemente de estos pasos, **Use conectores para importar y archivar datos de terceros** que incluyan datos de plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos. Cuando estos datos se importan a buzones en línea, no solo admite la administración de registros de cumplimiento de Microsoft 365, sino también otras soluciones de cumplimiento, como el cumplimiento de comunicaciones, la administración de riesgos internos y la eDiscovery. Para más información, consulte [Más información sobre los conectores para datos de terceros](archiving-third-party-data.md).
@@ -73,10 +73,10 @@ Ayúdese de la siguiente tabla para asignar los requisitos empresariales a los e
 |----------------|---------------|
 |Declarar un registro |[Use etiquetas de retención para declarar registros](declare-records.md)|
 |Actualizar un registro |[Use el control de versiones de registros para actualizar los registros almacenados en SharePoint o OneDrive](record-versioning.md)|
-|Permitir que los administradores y usuarios apliquen de forma manual acciones de retención y eliminación de documentos y mensajes de correo electrónico: <br />- SharePoint <br />- OneDrive <br />- Outlook y Outlook en la Web|[Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
-|Permita que los administradores del sitio establezcan acciones predeterminadas de retención y eliminación para todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint|[Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
-|Permita a los usuarios aplicar automáticamente acciones de retención y eliminación a los correos electrónicos mediante el uso de las reglas de Outlook|[Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
-|Permitir a los administradores aplicar acciones de retención y eliminación en un documento con información sobre el modelo, para que sean aplicado automáticamente a los documentos identificados en una biblioteca de SharePoint|[Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
+|Permitir que los administradores y usuarios apliquen de forma manual acciones de retención y eliminación de documentos y mensajes de correo electrónico: <br />- SharePoint <br />- OneDrive <br />- Outlook y Outlook en la Web|[Publicar etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
+|Permita que los administradores del sitio establezcan acciones predeterminadas de retención y eliminación para todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint|[Publicar etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
+|Permita a los usuarios aplicar automáticamente acciones de retención y eliminación a los correos electrónicos mediante el uso de las reglas de Outlook|[Publicar etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
+|Permitir a los administradores aplicar acciones de retención y eliminación en un documento con información sobre el modelo, para que sean aplicado automáticamente a los documentos identificados en una biblioteca de SharePoint|[Publicar etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)|
 |Aplicar acciones de retención y eliminación automáticamente a documentos y mensajes de correo electrónico |[Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)|
 |Inicie el período de retención cuando tenga lugar un evento, por ejemplo, cuando:  <br />- Algún empleado abandone la organización <br />- Algún contrato expire <br />- Finalice la duración de un producto| [Inicie la retención cuando se produzca un evento](event-driven-retention.md)|
 |Restrinja los cambios de las directivas para ayudar a cumplir los requisitos reglamentarios o medidas de seguridad frente a administradores no autorizados| [Usar el Bloqueo de conservación para restringir los cambios en las directivas de retención y en las directivas de las etiquetas de retención](retention-preservation-lock.md)

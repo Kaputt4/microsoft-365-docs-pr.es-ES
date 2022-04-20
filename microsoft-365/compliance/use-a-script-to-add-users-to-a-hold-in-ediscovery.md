@@ -1,5 +1,5 @@
 ---
-title: Uso de un script para agregar usuarios a una suspensión en un caso de eDiscovery principal
+title: Uso de un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos (estándar)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,17 +21,17 @@ ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-description: Obtenga información sobre cómo ejecutar un script para agregar buzones & OneDrive para la Empresa sitios a una nueva retención asociada a un caso de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365.
-ms.openlocfilehash: 10a605b422178e5006d8a027a697ca6745f82b98
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+description: Obtenga información sobre cómo ejecutar un script para agregar buzones & OneDrive para la Empresa sitios a una nueva retención asociada a un caso de eDiscovery en el portal de cumplimiento de Microsoft Purview.
+ms.openlocfilehash: 8835e853825786668ba1b7617078d899c0773779
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824496"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934541"
 ---
-# <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Uso de un script para agregar usuarios a una suspensión en un caso de eDiscovery principal
+# <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>Uso de un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos (estándar)
 
-PowerShell del Centro de cumplimiento de & de seguridad proporciona cmdlets que permiten automatizar tareas que requieren mucho tiempo relacionadas con la creación y administración de casos de exhibición de documentos electrónicos. Actualmente, el uso del caso de eDiscovery principal en el Centro de cumplimiento de Microsoft 365 para colocar un gran número de ubicaciones de contenido custodio en espera lleva tiempo y preparación. Por ejemplo, antes de crear una suspensión, debe recopilar la dirección URL de cada sitio de OneDrive para la Empresa que quiera colocar en espera. A continuación, para cada usuario que quiera colocar en espera, debe agregar su buzón de correo y su sitio de OneDrive para la Empresa a la suspensión. Puede usar el script de este artículo para automatizar este proceso.
+PowerShell del Centro de cumplimiento de & de seguridad proporciona cmdlets que permiten automatizar tareas que requieren mucho tiempo relacionadas con la creación y administración de casos de exhibición de documentos electrónicos. Actualmente, el uso del caso de exhibición de documentos electrónicos de Microsoft Purview (estándar) en el portal de cumplimiento de Microsoft Purview para colocar un gran número de ubicaciones de contenido custodio en espera lleva tiempo y preparación. Por ejemplo, antes de crear una suspensión, debe recopilar la dirección URL de cada sitio de OneDrive para la Empresa que quiera colocar en espera. A continuación, para cada usuario que quiera colocar en espera, debe agregar su buzón de correo y su sitio de OneDrive para la Empresa a la suspensión. Puede usar el script de este artículo para automatizar este proceso.
   
 El script le pide el nombre del dominio Mi sitio de su organización (por ejemplo, `contoso` en la dirección URL https://contoso-my.sharepoint.com), el nombre de un caso de exhibición de documentos electrónicos existente, el nombre de la nueva suspensión asociada al caso, una lista de direcciones de correo electrónico de los usuarios que desea poner en espera y una consulta de búsqueda que se usará si desea crear una suspensión basada en consultas. A continuación, el script obtiene la dirección URL del sitio de OneDrive para la Empresa para cada usuario de la lista, crea la nueva suspensión y, a continuación, agrega el buzón y OneDrive para la Empresa sitio para cada usuario de la lista a la suspensión. El script también genera archivos de registro que contienen información sobre la nueva suspensión.
   
@@ -45,9 +45,9 @@ Estos son los pasos para que esto suceda:
   
 ## <a name="before-you-add-users-to-a-hold"></a>Antes de agregar usuarios a una suspensión
 
-- Debe ser miembro del grupo de roles administrador de eDiscovery en el Centro de cumplimiento de Microsoft 365 y un administrador de SharePoint Online para ejecutar el script en el paso 3. Para obtener más información, vea [Asignar permisos de exhibición de documentos electrónicos en el Centro de cumplimiento de Office 365 Security &](assign-ediscovery-permissions.md).
+- Debe ser miembro del grupo de roles administrador de eDiscovery en el portal de cumplimiento y un administrador de SharePoint Online para ejecutar el script en el paso 3. Para obtener más información, vea [Asignar permisos de exhibición de documentos electrónicos en el Centro de cumplimiento de & seguridad de Office 365](assign-ediscovery-permissions.md).
 
-- Se puede agregar un máximo de 1000 buzones y 100 sitios a una suspensión asociada a un caso de eDiscovery principal en el Centro de cumplimiento de Microsoft 365. Suponiendo que cada usuario que quiera colocar en espera tenga un sitio OneDrive para la Empresa, puede agregar un máximo de 100 usuarios a una suspensión mediante el script de este artículo.
+- Se puede agregar un máximo de 1000 buzones y 100 sitios a una suspensión asociada a un caso de exhibición de documentos electrónicos en el portal de cumplimiento. Suponiendo que cada usuario que quiera colocar en espera tenga un sitio OneDrive para la Empresa, puede agregar un máximo de 100 usuarios a una suspensión mediante el script de este artículo.
 
 - Asegúrese de guardar la lista de usuarios que cree en el paso 2 y el script del paso 3 en la misma carpeta. Esto facilitará la ejecución del script.
 
@@ -93,7 +93,7 @@ Al ejecutar el script en este paso, se le pedirá la siguiente información. Ase
 
 - **Consulta de búsqueda de una suspensión basada en consultas:** Puede crear una suspensión basada en consultas para que solo el contenido que cumpla los criterios de búsqueda especificados se coloque en suspensión. Para colocar todo el contenido en espera, solo tiene que presionar **Entrar** cuando se le pida una consulta de búsqueda.
 
-- **Activar la suspensión o no:** Puede hacer que el script active la suspensión después de crearlo o puede hacer que el script cree la suspensión sin habilitarla. Si no tiene el script activado, puede activarlo más adelante en el Centro de cumplimiento de Microsoft 365 o ejecutando los siguientes comandos de PowerShell:
+- **Activar la suspensión o no:** Puede hacer que el script active la suspensión después de crearlo o puede hacer que el script cree la suspensión sin habilitarla. Si no tiene el script activado, puede activarlo más adelante en el portal de cumplimiento o ejecutando los siguientes comandos de PowerShell:
 
   ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -114,7 +114,7 @@ Después de recopilar la información que el script le pedirá, el paso final es
 " "
 write-host "***********************************************"
 write-host "   Security & Compliance Center PowerShell  " -foregroundColor yellow -backgroundcolor darkgreen
-write-host "   Core eDiscovery cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
+write-host "   eDiscovery (Standard) cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
 write-host "***********************************************"
 " "
 # Connect to SCC PowerShell using modern authentication
@@ -283,7 +283,7 @@ Write-host "Script complete!" -foregroundColor Yellow
 
 4. Escriba la información que le pide el script.
 
-   El script se conecta a PowerShell del Centro de cumplimiento de security & y, a continuación, crea la nueva suspensión en el caso de eDiscovery y agrega los buzones y OneDrive para la Empresa para los usuarios de la lista. Puede ir al caso en la página **eDiscovery** de la Centro de cumplimiento de Microsoft 365 para ver la nueva suspensión.
+   El script se conecta a PowerShell del Centro de cumplimiento de security & y, a continuación, crea la nueva suspensión en el caso de eDiscovery y agrega los buzones y OneDrive para la Empresa para los usuarios de la lista. Puede ir al caso en la página **eDiscovery** del portal de cumplimiento para ver la nueva suspensión.
 
 Una vez que el script ha terminado de ejecutarse, crea los siguientes archivos de registro y los guarda en la carpeta donde se encuentra el script.
   

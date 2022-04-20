@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 04/12/2022
+ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: b1dbe79aadea39bfc737ae9f5457715b669cc79b
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: e32018f52f3a45624fcf07ae03e44c662a594297
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861826"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916323"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparar Microsoft Defender para Empresas con Microsoft 365 Empresa Premium
 
@@ -73,9 +73,9 @@ En la tabla siguiente se comparan las características y funcionalidades de segu
 
 Defender for Business ofrece funcionalidades de nivel empresarial de Defender para punto de conexión a pequeñas y medianas empresas.
 
-En la tabla siguiente se comparan las características y funcionalidades de seguridad de Defender para empresas con los planes 1 y 2 de Microsoft Defender para punto de conexión.
+En la tabla siguiente se comparan las características y funcionalidades de seguridad de Defender para empresas con las ofertas empresariales, Microsoft Defender para punto de conexión los planes 1 y 2.
 
-|Característica o funcionalidad|[Defender para Empresas](mdb-overview.md)<br/>(independiente; actualmente en versión preliminar)|[Plan 1 de Defender para punto de conexión](../defender-endpoint/defender-endpoint-plan-1.md)|[Plan 2 de Defender para punto de conexión](../defender-endpoint/microsoft-defender-endpoint.md)|
+|Característica o funcionalidad|[Defender para Empresas](mdb-overview.md)<br/>(independiente; actualmente en versión preliminar)|[Plan 1 de Defender para punto de conexión](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(para clientes empresariales) |[Plan 2 de Defender para punto de conexión](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(para clientes empresariales) |
 |---|---|---|---|
 |[Administración centralizada](../defender-endpoint/manage-atp-post-migration.md) |Sí <sup>[[1](#fn1)]</sup>|Sí|Sí|
 |[Configuración de cliente simplificada](mdb-simplified-configuration.md)|Sí|No|No|
@@ -107,7 +107,7 @@ En la tabla siguiente se comparan las características y funcionalidades de segu
 
 (<a id="fn6">6</a>) Durante el programa de versión preliminar, se admiten Windows dispositivos cliente para la incorporación en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Puede usar el método de script local. Consulte [Incorporación de dispositivos para Microsoft Defender para Empresas](mdb-onboard-devices.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Consulte los requisitos de Microsoft Defender para Empresas](mdb-requirements.md)
 - [Obtener Microsoft Defender para Empresas](get-defender-business.md)

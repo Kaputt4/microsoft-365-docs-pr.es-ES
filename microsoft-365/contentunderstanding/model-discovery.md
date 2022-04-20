@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo hacer que los modelos formados estén disponibles para otros usuarios y cómo aplicar otros modelos formados en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 9645b669c6fd419e8866d415cb5d2b0da56ab0e2
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+description: Obtenga información sobre cómo hacer que los modelos entrenados estén disponibles para otros usuarios y cómo aplicar otros modelos entrenados en Microsoft SharePoint Syntex.
+ms.openlocfilehash: 758f6886af6606c57c50c5c4c88e35f7aeeaefe4
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61072442"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916279"
 ---
 # <a name="publish-and-discover-models-in-microsoft-sharepoint-syntex"></a>Publicación y detección de modelos en Microsoft SharePoint Syntex
 
@@ -47,7 +47,7 @@ Para que el modelo entrenado esté disponible para que otros usuarios lo usen:
     - **Todos los sitios**: el modelo estará disponible en la galería de tipo de contenido para que lo usen otros usuarios.
     - **Solo sitios seleccionados**: puede elegir el sitio o los sitios en los que el modelo estará disponible. Haga clic en el cuadro de texto para buscar y elegir los sitios a los que desea aplicar el modelo. Solo verá los sitios a los que tiene acceso.
 
-    Si no *es un* administrador SharePoint, verá esta vista.
+    Si *no* es un administrador SharePoint, verá esta vista.
 
     ![Captura de pantalla del panel Seleccionar los sitios donde está disponible este modelo que muestra las opciones para los usuarios finales con solo algunos sitios disponibles.](../media/content-understanding/select-site-user.png)
 

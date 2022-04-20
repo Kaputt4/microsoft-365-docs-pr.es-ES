@@ -15,56 +15,56 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Puede corregir un error de procesamiento en un documento en un conjunto de Advanced eDiscovery sin tener que seguir el proceso de corrección masiva de errores.
-ms.openlocfilehash: c816ef1e3fd28299bb316e51aa434a8f08d544a0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Puede corregir un error de procesamiento en un documento en un conjunto de revisión en eDiscovery (Premium) sin tener que seguir el proceso de corrección masiva de errores.
+ms.openlocfilehash: fa4a595a967935241e67b9a88ed158c789075102
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200382"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935662"
 ---
-# <a name="single-item-error-remediation-in-advanced-ediscovery"></a>Corrección de errores de elemento único en Advanced eDiscovery
+# <a name="single-item-error-remediation-in-ediscovery-premium"></a>Corrección de errores de un solo elemento en eDiscovery (Premium)
 
-La corrección de errores proporciona a Advanced eDiscovery usuarios la capacidad de corregir problemas de datos que impiden Advanced eDiscovery procesar correctamente el contenido. Por ejemplo, los archivos protegidos con contraseña no se pueden procesar porque están bloqueados o cifrados. Anteriormente, solo podía corregir errores en masa mediante [este flujo de trabajo](error-remediation-when-processing-data-in-advanced-ediscovery.md). Pero a veces, no tiene sentido corregir errores en varios archivos cuando no está seguro de si alguno de esos archivos responde al caso que está investigando. También puede que no tenga sentido corregir errores antes de que haya tenido la oportunidad de revisar los metadatos del archivo (como la ubicación del archivo o quién tuvo acceso) para ayudarle a tomar decisiones previas acerca de la capacidad de respuesta. Una nueva característica denominada corrección de *errores* de elemento único ofrece a los administradores de exhibición de documentos electrónicos la capacidad de ver los metadatos de los archivos con un error de procesamiento y, si es necesario, corregir el error directamente en el conjunto de revisión. En el artículo se describe cómo identificar, omitir y corregir archivos con errores de procesamiento en un conjunto de revisión.
+La corrección de errores ofrece a los usuarios de Microsoft Purview eDiscovery (Premium) la capacidad de corregir los problemas de datos que impiden que eDiscovery (Premium) procese correctamente el contenido. Por ejemplo, los archivos protegidos con contraseña no se pueden procesar porque esos archivos están bloqueados o cifrados. Anteriormente, solo podía corregir errores de forma masiva mediante [este flujo de trabajo](error-remediation-when-processing-data-in-advanced-ediscovery.md). Pero a veces, no tiene sentido corregir errores en varios archivos cuando no está seguro de si alguno de esos archivos responde al caso que está investigando. También podría no tener sentido corregir errores antes de que haya tenido la oportunidad de revisar los metadatos del archivo (como la ubicación del archivo o quién tenía acceso) para ayudarle a tomar decisiones iniciales sobre la capacidad de respuesta. Una nueva característica denominada *corrección de errores de elemento único* proporciona a los administradores de exhibición de documentos electrónicos la capacidad de ver los metadatos de los archivos con un error de procesamiento y, si es necesario, corregir el error directamente en el conjunto de revisión. En el artículo se describe cómo identificar, omitir y corregir archivos con errores de procesamiento en un conjunto de revisión.
 
-## <a name="identify-documents-with-errors"></a>Identificar documentos con errores
+## <a name="identify-documents-with-errors"></a>Identificación de documentos con errores
 
-Los documentos con errores de procesamiento en un conjunto de revisión ahora se identifican (con un banner). Puede corregir o omitir el error. La siguiente captura de pantalla muestra el banner de error de procesamiento de un documento de Word en un conjunto de revisión protegido con contraseña. Observe también que puede ver los metadatos de archivo de documentos con errores de procesamiento.
+Ahora se identifican los documentos con errores de procesamiento en un conjunto de revisión (con un banner). Puede corregir o omitir el error. En la captura de pantalla siguiente se muestra el banner de error de procesamiento de un documento de Word en un conjunto de revisión protegido con contraseña. Observe también que puede ver los metadatos de archivo de los documentos con errores de procesamiento.
 
-![Banner que se muestra para el documento con error de procesamiento.](../media/SIERimage1.png)
+![Banner mostrado para el documento con error de procesamiento.](../media/SIERimage1.png)
 
-También puede buscar documentos con errores de  procesamiento mediante la condición Estado de procesamiento al consultar los [documentos de un conjunto de revisión.](review-set-search.md)
+También puede buscar documentos que tengan errores de procesamiento mediante la condición **De estado de procesamiento** al [consultar los documentos de un conjunto de revisión](review-set-search.md).
 
-![Use la condición Estado de procesamiento para buscar documentos de error.](../media/SIERimage2.png)
+![Use la condición de estado de procesamiento para buscar documentos de error.](../media/SIERimage2.png)
 
 ### <a name="ignore-errors"></a>Omitir errores
 
-Puede omitir un error de procesamiento haciendo clic en **Omitir** en el banner de error de procesamiento. Cuando se omite un error, el documento se quita del flujo [de trabajo de corrección](error-remediation-when-processing-data-in-advanced-ediscovery.md)masiva de errores . Después de omitir un error, el banner del documento cambia de color e indica que se ha omitido el error de procesamiento. En cualquier momento, puede revertir la decisión de omitir el error haciendo clic en **Revertir**.
+Para omitir un error de procesamiento, haga clic en **Omitir** en el banner de error de procesamiento. Cuando se omite un error, el documento se quita del [flujo de trabajo de corrección de errores en masa](error-remediation-when-processing-data-in-advanced-ediscovery.md). Una vez que se omite un error, el banner del documento cambia de color e indica que se omitió el error de procesamiento. En cualquier momento, puede revertir la decisión de omitir el error haciendo clic en **Revertir**.
 
 ![Haga clic en Omitir para omitir el error de procesamiento.](../media/SIERimage3.png)
 
-También puede buscar todos los documentos que tenían un error de procesamiento que se omitió mediante la condición *Omitir* errores de procesamiento al consultar documentos de un conjunto de revisión.
+También puede buscar todos los documentos que tenían un error de procesamiento que se omitió mediante la condición *Errores de procesamiento omitidos* al consultar documentos en un conjunto de revisión.
 
-![Use la condición Errores de procesamiento omitido para buscar documentos de error omitido.](../media/SIERimage4.png)
+![Use la condición Errores de procesamiento omitidos para buscar documentos de error omitidos.](../media/SIERimage4.png)
 
-## <a name="remediate-a-document-with-errors"></a>Corregir un documento con errores
+## <a name="remediate-a-document-with-errors"></a>Corrección de un documento con errores
 
-En ocasiones, es posible que deba corregir un error de procesamiento en documentos (quitando una contraseña, descifrando un archivo cifrado o recuperando un documento dañado) y, a continuación, agregue el documento corregido al conjunto de revisión. Esto le permite revisar y exportar el documento de error junto con los demás documentos del conjunto de revisión. 
+En ocasiones, es posible que tenga que corregir un error de procesamiento en documentos (quitando una contraseña, descifrando un archivo cifrado o recuperando un documento dañado) y, a continuación, agregue el documento corregido al conjunto de revisión. Esto le permite revisar y exportar el documento de error junto con los demás documentos del conjunto de revisión. 
 
-Para corregir un solo documento, siga estos pasos:
+Para corregir un único documento, siga estos pasos:
 
-1. Haga **clic en** Descargar descargar  >  **original** para descargar una copia del archivo en un equipo local.
+1. Haga clic en **DescargarDescargar**  >  original para descargar una copia del archivo en un equipo local.
 
    ![Descargue el documento con el error de procesamiento.](../media/SIERimage5.png)
 
 2. Corrija el error en el archivo sin conexión. Para los archivos cifrados, que requerirían software de descifrado, para quitar la protección con contraseña, proporcione la contraseña y guarde el archivo o use un descifrador de contraseñas. Después de corregir el archivo, vaya al paso siguiente.
 
-3. En el conjunto de revisión, seleccione el archivo con el error de procesamiento que ha corregido y, a continuación, haga clic en **Corrección**.
+3. En el conjunto de revisión, seleccione el archivo con el error de procesamiento que corrigió y, a continuación, haga clic en **Corregir**.
 
-   ![Haga clic en Corrección en el banner del documento con error de procesamiento.](../media/SIERimage6.png)
+   ![Haga clic en Corrección en el banner del documento con un error de procesamiento.](../media/SIERimage6.png)
 
 
-4. Haga **clic en** Examinar, vaya a la ubicación del archivo corregido en el equipo local y, a continuación, seleccione el archivo.
+4. Haga clic en **Examinar**, vaya a la ubicación del archivo corregido en el equipo local y, a continuación, seleccione el archivo.
 
    ![Haga clic en Examinar y seleccione el archivo corregido en el equipo local.](../media/SIERimage7.png)
 
@@ -74,10 +74,10 @@ Para corregir un solo documento, siga estos pasos:
 
    Una vez completado el procesamiento, puede ver el documento corregido.
 
-    ![Puede ver el archivo corregido en el formato nativo en el conjunto de revisión.](../media/SIERimage9.png)
+    ![Puede ver el archivo corregido en el formato nativo del conjunto de revisión.](../media/SIERimage9.png)
 
-Para obtener más información acerca de lo que sucede cuando se corrige un documento, vea [What happens when files are remediated](error-remediation-when-processing-data-in-advanced-ediscovery.md#what-happens-when-files-are-remediated).
+Para obtener más información sobre lo que sucede cuando se corrige un documento, consulte [Qué ocurre cuando se corrigen los archivos](error-remediation-when-processing-data-in-advanced-ediscovery.md#what-happens-when-files-are-remediated).
 
-## <a name="search-for-remediated-documents"></a>Buscar documentos corregidos
+## <a name="search-for-remediated-documents"></a>Búsqueda de documentos corregidos
 
-Puede buscar todos los documentos de un conjunto de revisión corregidos mediante la condición **Keywords** y especificando el siguiente par property:value: **IsFromErrorRemediation:true**. Esta propiedad también está disponible en el archivo de carga de exportación al exportar documentos de un conjunto de revisión.
+Puede buscar todos los documentos de un conjunto de revisión que se corrigieron mediante la condición **Keywords** y especificando el siguiente par property:value: **IsFromErrorRemediation:true**. Esta propiedad también está disponible en el archivo de carga de exportación al exportar documentos desde un conjunto de revisión.

@@ -1,34 +1,39 @@
 ---
-title: Tipos de archivo admitidos en Advanced eDiscovery
+title: Tipos de archivo admitidos en eDiscovery (Premium)
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: null
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
-  - MOE150
-  - MET150
-description: 'Una lista de tipos de archivo admitidos en Microsoft 365 Advanced eDiscovery, incluidos los tipos de archivo de imagen admitidos por la funcionalidad OCR en Advanced eDiscovery.'
+- MOE150
+- MET150
+description: Lista de tipos de archivo admitidos en Microsoft 365 eDiscovery (Premium), incluidos los tipos de archivo de imagen compatibles con la funcionalidad OCR en eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ce0d44a2d3e887c6278af1ed9a35039c74d6a0a9
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934585"
 ---
+# <a name="supported-file-types-in-ediscovery-premium"></a>Tipos de archivo admitidos en eDiscovery (Premium)
 
-# <a name="supported-file-types-in-advanced-ediscovery"></a>Tipos de archivo admitidos en Advanced eDiscovery
+Microsoft Purview eDiscovery (Premium) admite muchos tipos de archivo en muchos niveles diferentes. Los tipos de archivos de soporte técnico se describen en las tablas siguientes de este artículo. Esta lista no está finalizada y agregaremos nuevos tipos de archivo mientras continuamos nuestras pruebas de validación. Estas tablas indican si se admite un tipo de archivo para la extracción de texto (y reconocimiento óptico de caracteres o extracción de texto OCR para archivos de imagen), visible en el visor nativo y también compatible con el visor de anotación en eDiscovery (Premium).
 
-Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes. Los tipos de archivos de soporte técnico se describen en las tablas siguientes de este artículo. Esta lista no se ha finalizado y agregaremos nuevos tipos de archivo a medida que continuamos las pruebas de validación. Estas tablas indican si se admite un tipo de archivo para la extracción de texto (y reconocimiento óptico de caracteres o extracción de texto OCR para archivos de imagen), que se puede ver en el visor nativo y también se admite en el visor anotado de Advanced eDiscovery.
-
-## <a name="archive--container"></a>Archivo /contenedor
+## <a name="archive--container"></a>Archivo o contenedor
 
 <br>
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de contenedores|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de contenedores|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|
 |application/x-7z-compressed|Sí|Sí|Sí|.7z|
 |application/x-rar-compressed|Sí|Sí|Sí|.rar|
@@ -36,20 +41,20 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 |application/zip|Sí|Sí|Sí|.zip|
 |
 
-## <a name="audio--video"></a>Audio y vídeo
+## <a name="audio--video"></a>Audio/vídeo
 
 <br>
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/mp4|Sí|Sí|No|Sí|No|.f4v; .m4a; .m4v; .mp4; .mp4v; .mpeg; .mpeg4|
 |audio/mpeg|Sí|Sí|No|Sí|No|.mpeg|
 |video/3gpp|Sí|Sí|No|Sí|No|.3gp|
 |video/3gpp2|Sí|Sí|No|Sí|No|.3g2; .3gp2|
 |vídeo/quicktime|Sí|Sí|No|Sí|No|.moov; .mov; .qt|
-|vídeo/x-m4v|Sí|Sí|No|Sí|No|.m4v|
+|video/x-m4v|Sí|Sí|No|Sí|No|.m4v|
 |
 
 ## <a name="database"></a>Base de datos
@@ -58,7 +63,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/x-msaccess|Sí|Sí|Sí|No|No|.mdb|
 |
@@ -69,7 +74,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/vnd.ms-outlook|Sí|Sí|Sí|Sí|Sí|.msg|
 |message/rfc822|Sí|Sí|Sí|Sí|Sí|.eml|
@@ -82,7 +87,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de contenedores|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de contenedores|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|
 |application/mbox|Sí|Sí|Sí|.mbox|
 |application/vnd.ms-outlook-pst|Sí|Sí|Sí|.pst|
@@ -94,7 +99,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/xhtml+xml|Sí|Sí|Sí|Sí|Sí|.xhtml|
 |application/xml|Sí|Sí|Sí|Sí|Sí|.xml|
@@ -107,7 +112,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto OCR|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto OCR|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |image/bmp|Sí|Sí|Sí|Sí|Sí|.bmp|
 |image/emf|Sí|Sí|Sí|Sí|Sí|.emf|
@@ -126,7 +131,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/vnd.ms-excel|Sí|Sí|Sí|Sí|Sí|.dat; .xls|
 |application/vnd.ms-excel.sheet.binary.macroenabled.12|Sí|Sí|Sí|Sí|No|.xlsb|
@@ -142,7 +147,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/onenote|Sí|Sí|Sí|No|No|.one|
 |
@@ -153,7 +158,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/vnd.ms-powerpoint|Sí|Sí|Sí|Sí|Sí|.pot; .pps; .ppt|
 |application/vnd.openxmlformats-officedocument.presentationml.presentation|Sí|Sí|Sí|Sí|Sí|.pptx|
@@ -167,7 +172,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/vnd.ms-project|Sí|Sí|Sí|No|Sí|.mpp|
 |
@@ -178,7 +183,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/x-mspublisher|Sí|Sí|Sí|Sí|Sí|.pub|
 |
@@ -189,7 +194,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/vnd.ms-visio.drawing|Sí|Sí|Sí|Sí|No||
 |application/vnd.visio|Sí|Sí|Sí|Sí|Sí|.vsd|
@@ -201,7 +206,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/msword|Sí|Sí|Sí|Sí|Sí|.dat; .doc|
 |application/rtf|Sí|Sí|Sí|Sí|Sí|.doc; .rtf|
@@ -217,7 +222,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/vnd.ms-works-ss|Sí|Sí|No|No|No|.wps|
 |application/vnd.ms-works-wp|Sí|Sí|No|No|No|.wps|
@@ -229,18 +234,18 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/vnd.oasis.opendocument.text|Sí|Sí|Sí|Sí|Sí|.odt|
 |
 
-## <a name="other"></a>Otro
+## <a name="other"></a>Other
 
 <br>
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/json|Sí|Sí|Sí|Sí|Sí|No aplicable|
 |application/octet-stream|Sí|No|No|No|No|.fluid|
@@ -255,7 +260,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |text/csv|Sí|Sí|Sí|Sí|Sí|.csv|
 |texto/sin formato|Sí|Sí|Sí|Sí|Sí|.con; .css; .csv; .dat; .pl; .txt|
@@ -267,18 +272,18 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/pdf|Sí|Sí|Sí|Sí|Sí|.pdf|
 |
 
-## <a name="word-perfect"></a>Word Perfect
+## <a name="word-perfect"></a>Palabra perfecta
 
 <br>
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/vnd.wordperfect; version=5.0|Sí|Sí|Sí|No|No|.wpd|
 |application/vnd.wordperfect; version=5.1|Sí|Sí|Sí|No|No|.wpd|
@@ -291,7 +296,7 @@ Advanced eDiscovery admite muchos tipos de archivo en muchos niveles diferentes.
 
 ****
 
-|Tipo Mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Visor de anotaciones|Posibles extensiones|
+|Tipo mime|Identificación de archivos|Extracción de metadatos|Extracción de texto|Visor nativo|Anotación del visor|Posibles extensiones|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/vnd.lotus-wordpro|Sí|Sí|No|No|No|.lwp|
 |

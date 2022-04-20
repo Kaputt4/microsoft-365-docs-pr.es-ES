@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga información sobre cómo y por qué cambiar el nombre de un modelo de descripción de documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: b1ced765d7a69fdf8b9fe9eb44d6716a840bf8a0
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+description: Obtenga información sobre cómo y por qué cambiar el nombre de un modelo de comprensión de documentos en Microsoft SharePoint Syntex.
+ms.openlocfilehash: 0044b237705e6a716efb6133db392c68b82c7a25
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450302"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916147"
 ---
 # <a name="rename-a-model-in-microsoft-sharepoint-syntex"></a>Cambiar el nombre de un modelo en Microsoft SharePoint Syntex
 
@@ -53,7 +53,7 @@ Siga estos pasos para cambiar el nombre a un modelo de comprensión mediante doc
 
 5. Seleccione **Cambiar nombre**.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 [Crear un clasificador](create-a-classifier.md)
 
 [Crear un extractor](create-an-extractor.md)

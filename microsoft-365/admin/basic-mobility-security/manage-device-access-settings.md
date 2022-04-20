@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security puede ayudarle a proteger y administrar dispositivos móviles.
-ms.openlocfilehash: fbd8df7bff6ffa24d2a951d86a85d699e0b1699f
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: aa5c6bb757604763e9ba7348d1d4f952a6555865
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781037"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935267"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Administración de la configuración de acceso a dispositivos en Basic Mobility and Security
 
@@ -38,7 +38,7 @@ Siga estos pasos:
     > [!IMPORTANT]
     > Si es la primera vez que usa Basic Mobility and Security para Microsoft 365 Empresa Estándar, actívelo aquí: [Activar seguridad y movilidad básicas](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Después de activarlo, administre los dispositivos con [Office 365 Security & Compliance](https://protection.office.com/).
 
-3. Vaya a Prevención de pérdida de datos > **Administración** >  de **dispositivosDispositivos** Directivas de dispositivo y seleccione **Administrar la configuración de acceso a dispositivos de toda la organización**.
+3. Vaya a Prevención>  de  **pérdida de datosAdministración**>  de  **dispositivosAdministración** de dispositivos y seleccione  **Administrar la configuración de acceso a dispositivos de toda la organización**. ****
 
 4. Seleccione **Bloquear**. 
 

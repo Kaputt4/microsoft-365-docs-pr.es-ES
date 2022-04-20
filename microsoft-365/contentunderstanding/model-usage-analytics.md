@@ -1,5 +1,5 @@
 ---
-title: Analizar cómo se usan los modelos en Microsoft SharePoint Syntex
+title: Analice cómo se usan los modelos en Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: Obtenga más información sobre cómo funcionan los modelos de procesamiento de formularios y descripción de documentos.
-ms.openlocfilehash: ddd4d602deae0fb871989e4739470a19b97b0238
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+description: Obtenga información sobre cómo encontrar más información sobre el rendimiento de los modelos de procesamiento de formularios y comprensión de documentos.
+ms.openlocfilehash: e9586bbbd8510611747b81424f1fbe494f212cc5
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450526"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916191"
 ---
-# <a name="analyze-how-your-models-are-used-in-microsoft-sharepoint-syntex"></a>Analizar cómo se usan los modelos en Microsoft SharePoint Syntex
+# <a name="analyze-how-your-models-are-used-in-microsoft-sharepoint-syntex"></a>Analice cómo se usan los modelos en Microsoft SharePoint Syntex
 
 </br>
 
@@ -77,7 +77,7 @@ Cada modelo de la lista de uso del modelo mostrará los datos de uso:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 [Crear un clasificador](create-a-classifier.md)
 
 [Crear un extractor](create-an-extractor.md)

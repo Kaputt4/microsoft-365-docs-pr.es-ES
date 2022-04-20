@@ -26,17 +26,17 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
-ms.openlocfilehash: f8a7f725e029021626bf408a3797ac6bfbb16215
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 38e7e1c1371c83fd5b55105bbd91485e2b6c26a3
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765641"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64915959"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 
 > [!NOTE]
-> Si su organización usa un entorno Exchange híbrido, debe usar <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">el Centro de administración de Exchange</a> local para crear y administrar buzones compartidos. Consulte [Crear buzones compartidos en el centro de administración de Exchange](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
+> Si su organización usa un entorno híbrido de Exchange, debe usar el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a> local para crear y administrar buzones compartidos. Consulte [Crear buzones compartidos en el Centro de administración de Exchange](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
 >
 > Si no está seguro de si debería crear un buzón compartido o un grupo de Microsoft 365 para Outlook, vea [Comparar grupos](../create-groups/compare-groups.md) para tener más clara su decisión. Tenga en cuenta que no es posible migrar un buzón compartido a un grupo de Microsoft 365 en este momento. Si esto le interesaría, indíquelo [votando aquí](https://go.microsoft.com/fwlink/?linkid=871518).
 
@@ -91,13 +91,13 @@ Puede usar los siguientes permisos con un buzón compartido:
 
 - **Enviar como**: el permiso Enviar como permite al usuario suplantar el buzón compartido al enviar correo. Por ejemplo, si Katerina inicia sesión en el buzón compartido del departamento de marketing y envía un correo electrónico, parecerá que el departamento de marketing envió el correo electrónico.
 
-- **Enviar en nombre de**: el permiso Enviar en nombre de le permite al usuario enviar mensajes en nombre del buzón compartido. Por ejemplo, si Sergio inicia sesión en el buzón compartido del Edificio de recepción 32 y envía un mensaje de correo electrónico, los destinatarios verán el mensaje como enviado por “Sergio en nombre del Edificio de recepción 32”. No puede usar el CEF para conceder permisos de Enviar en nombre de. En este caso, debe utilizar el cmdlet **Set-Mailbox** con el parámetro _GrantSendonBehalf_.
+- **Enviar en nombre de**: el permiso Enviar en nombre de permite a los usuarios enviar correo electrónico en nombre del buzón compartido. Por ejemplo, si Juan inicia sesión en el buzón compartido de la recepción del edificio n.º 32 y envía un correo electrónico, el remitente será "Juan en nombre de la recepción del edificio n.º 32". No puede usar el CEF para conceder permisos Enviar en nombre de. En este caso, debe utilizar el cmdlet **Set-Mailbox** con el parámetro _GrantSendonBehalf_.
 
 ### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>Usar el EAC para editar la delegación de buzones compartidos
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>, vaya a **Destinatarios** \> **Compartidos**. Seleccione el buzón de correo compartido y, después, **Editar** ![Icono de edición](../../media/ITPro-EAC-EditIcon.png).
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>, vaya a **Destinatarios** \> **Buzones**. Seleccione el buzón de correo compartido y, después, **Editar** ![Icono de edición](../../media/ITPro-EAC-EditIcon.png).
 
-2. Seleccione **Delegación de buzón**.
+2. En **Permisos de buzón** de correo, seleccione **Administrar delegación de buzones**.
 
 3. Para conceder o quitar los permisos de Acceso total y Enviar como, seleccione **Agregar** ![Icono Agregar](../../media/ITPro-EAC-AddIcon.png) o **Quitar** ![Icono de Quitar](../../media/ITPro-EAC-RemoveIcon.gif), y luego seleccione los usuarios a los que quiera conceder los permisos.
 
@@ -169,7 +169,7 @@ Puede obtener acceso a un buzón compartido en un dispositivo móvil de dos mane
 
 ## <a name="use-the-shared-calendar"></a>Usar el calendario compartido.
 
-Cuando creó el buzón compartido, creó automáticamente un calendario compartido. Preferimos usar el calendario de buzón de correo compartido, en lugar de un calendario de SharePoint, para realizar el seguimiento de las citas y de la ubicación de los usuarios. Hay un calendario compartido integrado en Outlook y es mucho más fácil de crear y usar que un calendario de SharePoint.
+Al crear el buzón compartido, creó automáticamente un calendario compartido. Preferimos usar el calendario de buzón compartido, en lugar de un calendario de SharePoint, para realizar el seguimiento de las citas y de la ubicación de los usuarios. En Outlook está integrado un calendario compartido y es mucho más fácil de usar que un calendario de SharePoint.
 
 1. En la aplicación de Outlook, vaya a la vista de calendario y seleccione el buzón compartido.
 

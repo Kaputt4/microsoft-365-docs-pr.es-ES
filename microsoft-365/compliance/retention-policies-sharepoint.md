@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información acerca de cómo funciona la retención para SharePoint y OneDrive.
-ms.openlocfilehash: a553945fdb0b0034d8f3182164749b06badfe503
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: ed9cc45218dde112baec8fbca997abc6e82b4d72
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346086"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911498"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Obtenga más información sobre la retención para SharePoint y OneDrive
 
@@ -70,7 +70,7 @@ Cuando un usuario cambia o elimina un elemento sujeto a retención, se comprueba
 
 Un trabajo de temporizador se ejecuta periódicamente en la biblioteca de suspensión para conservación. Para el contenido que ha estado en la biblioteca de suspensión para conservación durante más de 30 días, este trabajo compara el contenido con todas las consultas utilizadas por la configuración de retención para ese contenido. El contenido que es más antiguo que su período de retención configurado se elimina de la biblioteca de suspensión para conservación, así como de la ubicación original si todavía está allí. Este trabajo de temporizador se ejecuta cada siete días, lo que significa que, con el mínimo de 30 días, el contenido puede tardar hasta 37 días en eliminarse de la biblioteca de suspensión para conservación.
 
-Este comportamiento para copiar archivos en la Biblioteca de suspensión para conservación se aplica al contenido que existe cuando se aplica la configuración de retención. Además, en el caso de las directivas de retención, el contenido nuevo que se cree o agregue a la colección de sitios después de que se incluya en la directiva se conservará en la Biblioteca de suspensión para conservación. Sin embargo, el contenido nuevo no se copia en la biblioteca de suspensión para conservación la primera vez que se edita, solo cuando se elimina. Para conservar todas las versiones de un archivo, [control de versiones](#how-retention-works-with-document-versions) debe estar activado para el sitio original.
+Este comportamiento para copiar archivos en la biblioteca de suspensión para conservación se aplica al contenido que existe cuando se aplicó la configuración de retención. Además, para las directivas de retención, cualquier contenido nuevo que se cree o agregue al sitio después de incluirlo en la directiva se conservará en la biblioteca de conservación de documentos. Sin embargo, el nuevo contenido no se copia en la biblioteca de conservación de documentos la primera vez que se edita, solo cuando se elimina. Para conservar todas las versiones de un archivo el [control de versiones](#how-retention-works-with-document-versions) debe estar activado para el sitio original.
   
 Los usuarios ven un mensaje de error si intentan eliminar una biblioteca, lista, carpeta o sitio sujeto a retención. Pueden eliminar una carpeta si primero se mueven o eliminan los archivos en la carpeta que están sujetos a retención.
 
@@ -174,5 +174,5 @@ Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Int
 
 Si está listo para configurar una directiva de retención o etiqueta de retención para Exchange, consulte las siguientes instrucciones:
 - [Crear y configurar directivas de retención](create-retention-policies.md)
-- [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
+- [Publicar etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
 - [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)

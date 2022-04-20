@@ -15,31 +15,31 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Cuando se agrega un custodio a un caso Advanced eDiscovery, cualquier contenido que se consideró parcialmente indizado se vuelve a procesar para que sea totalmente posible realizar búsquedas.
-ms.openlocfilehash: 1c43f55f399f69d58e05c073e688170d53480b42
-ms.sourcegitcommit: efb333ce0772265da91632110acba39acfbe0bde
+description: Cuando se agrega un custodio a un caso de exhibición de documentos electrónicos (Premium), cualquier contenido que se considere parcialmente indexado se vuelve a procesar para que sea totalmente de búsqueda.
+ms.openlocfilehash: 3c6f0079f87dbc4711fed7d776204c287d5b5865
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241169"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64932005"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Clasificación avanzada de los datos de administración
 
-Cuando se agrega un custodio a un caso Advanced eDiscovery, se vuelve a indizar cualquier contenido que se consideró parcialmente indizado o que tenía errores de indización. Este proceso de reindexación se denomina *Indexación avanzada*. Hay muchas razones por las que el contenido está parcialmente indizado o tiene errores de indización. Esto incluye archivos de imagen o la presencia de imágenes en un archivo, tipos de archivo no admitidos o límites de indización de tamaño de archivo. Para SharePoint, la indización avanzada solo se ejecuta en elementos que se marcan como parcialmente indizados o que tienen errores de indización. En Exchange, los mensajes de correo electrónico que tienen datos adjuntos de imagen no se marcan como parcialmente indizados o con errores de indización. Esto significa que el proceso de indización avanzada no volverá a indizar esos archivos.
+Cuando se agrega un custodio a un caso de exhibición de documentos electrónicos (Premium), se vuelve a indexar cualquier contenido que se haya considerado parcialmente indexado o que haya tenido errores de indexación. Este proceso de reindexación se denomina *indexación avanzada*. Hay muchas razones por las que el contenido se indexa parcialmente o tiene errores de indexación. Esto incluye archivos de imagen o la presencia de imágenes en un archivo, tipos de archivos no admitidos o límites de indexación de tamaño de archivo. Para SharePoint archivos, la indexación avanzada solo se ejecuta en elementos marcados como parcialmente indizados o que tienen errores de indexación. En Exchange, los mensajes de correo electrónico que tienen datos adjuntos de imagen no se marcan como indizados parcialmente o con errores de indexación. Esto significa que el proceso de indexación avanzada no volverá a indexar esos archivos.
 
-Para obtener más información sobre el procesamiento de soporte técnico y elementos parcialmente indizados, vea:
+Para obtener más información sobre la compatibilidad con el procesamiento y los elementos parcialmente indexados, consulte:
 
-- [Tipos de archivo admitidos en Advanced eDiscovery](supported-filetypes-ediscovery20.md)
+- [Tipos de archivo admitidos en eDiscovery (Premium)](supported-filetypes-ediscovery20.md)
 
-- [Elementos parcialmente indizados en eDiscovery](partially-indexed-items-in-content-search.md)
+- [Elementos indizados parcialmente en eDiscovery](partially-indexed-items-in-content-search.md)
 
 - [Formatos de archivo indizados por la búsqueda de Exchange](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
 - [Extensiones de nombres de archivo rastreados y tipos de archivo analizados de forma predeterminada en SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
-## <a name="viewing-advanced-indexing-results"></a>Visualización de resultados de indización avanzada
+## <a name="viewing-advanced-indexing-results"></a>Visualización de resultados de indexación avanzada
 
-Una vez completado el proceso de indización avanzada, puede comprender la eficacia del reprocesamiento.  En la vista Resultados  de indización avanzada de la ficha Procesamiento de un caso, el gráfico enumera el número de elementos agregados al *índice híbrido*.  El índice híbrido es donde eDiscovery avanzado almacena el contenido que se ha vuelto a procesar.
+Una vez completado el proceso de indexación avanzada, puede comprender la eficacia del reprocesamiento.  En la vista Resultados de indexación avanzada de la pestaña **Procesamiento** de un caso, el gráfico muestra el número de elementos agregados al *índice híbrido*.  El índice híbrido es donde eDiscovery (Premium) almacena el contenido reprocesado.
 
 Esta vista también incluye el número de elementos que requieren corrección y otro gráfico de errores por tipo de archivo. Para más información, vea:
 
@@ -47,9 +47,9 @@ Esta vista también incluye el número de elementos que requieren corrección y 
 
 - [Corrección de errores de un único elemento](single-item-error-remediation.md)
 
-## <a name="updating-the-advanced-index-for-custodians"></a>Actualización del índice avanzado para custodios
+## <a name="updating-the-advanced-index-for-custodians"></a>Actualización del índice avanzado para los custodios
 
-Cuando se agrega un custodio a un Advanced eDiscovery caso, todos los elementos parcialmente indizados se reprocesamienton. Sin embargo, a medida que pasa el tiempo, se pueden agregar elementos más indizados parcialmente al buzón de un usuario o a OneDrive cuenta.  Si es necesario, puede actualizar el índice para un custodio específico. Para obtener más información, vea [Manage custodians in an Advanced eDiscovery case](manage-new-custodians.md#reindex-custodian-data). También puede actualizar el índice de todos los custodios en un caso haciendo clic en el **índice Actualizar** de la **ficha** Procesamiento.
+Cuando se agrega un custodio a un caso de exhibición de documentos electrónicos (Premium), se vuelven a procesar todos los elementos indizados parcialmente. Sin embargo, a medida que pasa el tiempo, se pueden agregar elementos más parcialmente indizados al buzón de correo de un usuario o a OneDrive cuenta.  Si es necesario, puede actualizar el índice para un custodio específico. Para obtener más información, vea [Administrar custodios en un caso de exhibición de documentos electrónicos (Premium).](manage-new-custodians.md#reindex-custodian-data) También puede actualizar el índice de todos los custodios en un caso haciendo clic en el **índice Actualizar** de la pestaña **Procesamiento** .
 
 > [!NOTE]
-> La actualización de índices de custodia es un proceso de larga ejecución. Se recomienda no actualizar índices más de una vez al día en un caso.
+> La actualización de índices de custodios es un proceso de larga duración. Se recomienda no actualizar los índices más de una vez al día en un caso.

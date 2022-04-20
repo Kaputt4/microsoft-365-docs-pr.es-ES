@@ -1,5 +1,5 @@
 ---
-title: Trabajar con errores de procesamiento en Advanced eDiscovery
+title: Trabajar con errores de procesamiento en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,21 +17,21 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Información general sobre el procesamiento de diversas formas de datos en Advanced eDiscovery.
-ms.openlocfilehash: 9f44593983256079150ad48954c5f1883f836083
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Información general sobre el procesamiento de varias formas de datos en eDiscovery (Premium).
+ms.openlocfilehash: 043e1b2b023fdd4e379116109069674515153524
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179036"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64936321"
 ---
-# <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Trabajar con errores de procesamiento en Advanced eDiscovery
+# <a name="work-with-processing-errors-in-ediscovery-premium"></a>Trabajar con errores de procesamiento en eDiscovery (Premium)
 
-*El* procesamiento es el proceso de identificación de archivos, expansión de documentos y datos adjuntos incrustados, extracción de texto y reconocimiento óptico de caracteres (OCR) de archivos de imagen y la indización posterior de ese contenido.  
+*El procesamiento* es el proceso de identificación de archivos, expansión de documentos y datos adjuntos incrustados, extracción de texto y reconocimiento óptico de caracteres (OCR) de archivos de imagen y la indexación posterior de ese contenido.  
 
-Cuando se agregan custodios y orígenes de  datos no custodios a un caso en la pestaña Orígenes, todos los elementos parcialmente indizados de Microsoft 365 se procesan para que se realicen búsquedas por completo. Del mismo modo, cuando se agrega contenido a un conjunto de revisión de orígenes de datos Microsoft 365 y no Microsoft 365, este contenido también se procesa.
+Cuando se agregan custodios y orígenes de datos que no son custodios a un caso de la pestaña **Orígenes**, todos los elementos indizados parcialmente de Microsoft 365 se procesan para que se puedan buscar por completo. Del mismo modo, cuando se agrega contenido a un conjunto de revisión desde orígenes de datos Microsoft 365 y no Microsoft 365, también se procesa este contenido.
 
-La pestaña **Procesamiento** en "eDiscovery avanzado" proporciona información sobre el estado de la indexación avanzada para los diferentes escenarios de procesamiento.
+La pestaña **Procesamiento** de eDiscovery (Premium) proporciona información sobre el estado de la indexación avanzada para diferentes escenarios de procesamiento.
 
 Para más información, consulte los siguientes artículos:
 

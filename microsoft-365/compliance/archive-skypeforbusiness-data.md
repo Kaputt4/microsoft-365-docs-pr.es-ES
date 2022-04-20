@@ -11,19 +11,19 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: Obtenga información sobre cómo configurar y usar un conector en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos de Skype Empresarial a Microsoft 365.
-ms.openlocfilehash: fc31371717425c06c08cf43a25a2422c1a235060
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Obtenga información sobre cómo configurar y usar un conector en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de Skype Empresarial a Microsoft 365.
+ms.openlocfilehash: 406c8db8a28303657b6c475bf826ee501c9e7620
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759089"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937199"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>Configuración de un conector para archivar datos Skype Empresarial
 
-Use un conector de Veritas en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos de la plataforma de Skype Empresarial a buzones de usuario de la organización de Microsoft 365. Veritas proporciona un conector [de Skype Empresarial](https://www.veritas.com/en/au/insights/merge1/skype-for-business) que está configurado para capturar elementos del origen de datos de terceros (de forma periódica) e importarlos a Microsoft 365. El conector convierte el contenido, como mensajes entre usuarios, chats persistentes y mensajes de conferencia de Skype Empresarial a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
+Use un conector veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de la plataforma de Skype Empresarial a buzones de usuario de la organización de Microsoft 365. Veritas proporciona un conector [de Skype Empresarial](https://www.veritas.com/en/au/insights/merge1/skype-for-business) que está configurado para capturar elementos del origen de datos de terceros (de forma periódica) e importarlos a Microsoft 365. El conector convierte el contenido, como mensajes entre usuarios, chats persistentes y mensajes de conferencia de Skype Empresarial a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 
-Después de almacenar Skype Empresarial datos en buzones de usuario, puede aplicar Microsoft 365 características de cumplimiento, como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención. El uso de un conector de Skype Empresarial para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+Después de Skype Empresarial datos se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención. El uso de un conector de Skype Empresarial para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
 
 ## <a name="overview-of-archiving-skype-for-business-data"></a>Introducción al archivado de datos Skype Empresarial
 
@@ -35,7 +35,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 2. Una vez cada 24 horas, Skype Empresarial elementos se copian en el sitio de Veritas Merge1. El conector también convierte Skype Empresarial elementos en un formato de mensaje de correo electrónico.
 
-3. El conector de Skype Empresarial que se crea en el Centro de cumplimiento de Microsoft 365, se conecta al sitio Veritas Merge1 todos los días y transfiere el contenido Skype Empresarial a una ubicación de Azure Storage segura en la nube de Microsoft.
+3. El conector de Skype Empresarial que se crea en el portal de cumplimiento, se conecta al sitio Veritas Merge1 todos los días y transfiere el contenido de Skype Empresarial a una ubicación de Azure Storage segura en la nube de Microsoft.
 
 4. El conector importa los elementos convertidos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* de la asignación automática de usuarios, tal como se describe en [el paso 3](#step-3-map-users-and-complete-the-connector-setup). Se crea una subcarpeta de la carpeta Bandeja de entrada denominada **Skype Empresarial** en los buzones de usuario y los elementos se importan a esa carpeta. Para ello, el conector usa el valor de la propiedad *Email* . Cada elemento Skype Empresarial contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del elemento.
 
@@ -43,13 +43,13 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 - Cree una cuenta de Merge1 para los conectores de Microsoft. Para ello, póngase en contacto con [el servicio de atención al cliente de Veritas](https://www.veritas.com/form/requestacall/ms-connectors-contact.html). Debe iniciar sesión en esta cuenta al crear el conector en el paso 1.
 
-- Al usuario que crea el conector de Skype Empresarial en el paso 1 (y lo completa en el paso 3) se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** de la Centro de cumplimiento de Microsoft 365. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que crea el conector de Skype Empresarial en el paso 1 (y lo completa en el paso 3) se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Este conector de datos de Veritas está en versión preliminar pública en entornos de GCC en la nube Microsoft 365 administración pública de EE. UU. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de cumplimiento y protección de datos Microsoft 365. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
+- Este conector de datos de Veritas está en versión preliminar pública en entornos de GCC en la nube Microsoft 365 administración pública de EE. UU. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
 ## <a name="step-1-set-up-the-skype-for-business-connector"></a>Paso 1: Configurar el conector de Skype Empresarial
 
-El primer paso consiste en acceder a la página **Conectores de datos** de la Centro de cumplimiento de Microsoft 365 y crear un conector para Skype Empresarial datos.
+El primer paso consiste en acceder a la página **Conectores de datos** del portal de cumplimiento y crear un conector para Skype Empresarial datos.
 
 1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores** >  **de datos Skype Empresarial**.
 
@@ -65,11 +65,11 @@ El primer paso consiste en acceder a la página **Conectores de datos** de la Ce
 
 El segundo paso es configurar el conector de Skype Empresarial en el sitio de Veritas Merge1. Para obtener información sobre cómo configurar el conector de Skype Empresarial, consulte [la Guía del usuario de conectores de terceros Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Skype%20for%20Business%20%20User%20Guide.pdf).
 
-Después de hacer clic en **Guardar & finalizar**, se muestra la página **Asignación** de usuarios en el Asistente para conectores de la Centro de cumplimiento de Microsoft 365.
+Después de hacer clic en **Guardar & finalizar**, se muestra la página **Asignación** de usuarios del asistente del conector en el portal de cumplimiento.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: Asignar usuarios y completar la configuración del conector
 
-Para asignar usuarios y completar la configuración del conector en el Centro de cumplimiento de Microsoft 365, siga estos pasos:
+Para asignar usuarios y completar la configuración del conector en el portal de cumplimiento, siga estos pasos:
 
 1. En la página **Asignar Skype Empresarial usuarios a Microsoft 365 usuarios**, habilite la asignación automática de usuarios. Los elementos Skype Empresarial incluyen una propiedad denominada *Email*, que contiene direcciones de correo electrónico para los usuarios de la organización. Si el conector puede asociar esta dirección a un usuario Microsoft 365, los elementos se importan al buzón de ese usuario.
 
@@ -77,7 +77,7 @@ Para asignar usuarios y completar la configuración del conector en el Centro de
 
 ## <a name="step-4-monitor-the-skype-for-business-connector"></a>Paso 4: Supervisión del conector de Skype Empresarial
 
-Después de crear el conector de Skype Empresarial, puede ver el estado del conector en el Centro de cumplimiento de Microsoft 365.
+Después de crear el conector de Skype Empresarial, puede ver el estado del conector en el portal de cumplimiento.
 
 1. Vaya a <https://compliance.microsoft.com/> y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
 

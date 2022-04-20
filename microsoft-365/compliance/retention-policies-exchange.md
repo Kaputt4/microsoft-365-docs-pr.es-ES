@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información acerca de cómo funciona la retención para Exchange.
-ms.openlocfilehash: f92df4bd25ddeff44472865c9ae221014050afaa
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 66b7ad888e62ff84b6a2de49714bbbdf96268312
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62242028"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911432"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Más información sobre la retención para Exchange
 
@@ -101,5 +101,5 @@ Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Int
 
 Si está listo para configurar una directiva de retención o etiqueta de retención para Exchange, consulte las siguientes instrucciones:
 - [Crear y configurar directivas de retención](create-retention-policies.md)
-- [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
+- [Publicar etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
 - [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)

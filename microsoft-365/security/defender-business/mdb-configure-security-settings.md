@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
+ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ff24d246172337923b145a8dbd64db58a671aa9e
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 22c2de998f4d4cfadb0262ccedf04decc01ce226
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861804"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916301"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Ver y editar las directivas de seguridad y la configuración en Microsoft Defender para Empresas
 
@@ -31,7 +31,12 @@ ms.locfileid: "64861804"
 
 ## <a name="overview"></a>Información general
 
-Después de incorporar los dispositivos de la empresa a Microsoft Defender para Empresas, el siguiente paso es ver y, si es necesario, editar las directivas y la configuración de seguridad. Las directivas de seguridad que se van a configurar incluyen:
+Después de incorporar los dispositivos de la empresa a Microsoft Defender para Empresas, el siguiente paso es revisar las directivas de seguridad. Si es necesario, puede editar las directivas de seguridad y la configuración. 
+
+> [!TIP]
+> Defender for Business incluye directivas de seguridad preconfiguradas que usan la configuración recomendada. Sin embargo, puede editar la configuración para satisfacer sus necesidades empresariales.
+
+Las directivas de seguridad que se van a revisar y configurar incluyen:
 
 - **[Directivas de protección de última generación](#view-or-edit-your-next-generation-protection-policies)**, que determinan la protección antivirus y antimalware para los dispositivos de la empresa
 - **[Protección y reglas de firewall](#view-or-edit-your-firewall-policies-and-custom-rules)**, que determinan qué tráfico de red puede fluir hacia o desde los dispositivos de la empresa
@@ -73,7 +78,7 @@ La tabla siguiente puede ayudarle a elegir dónde administrar las directivas de 
 
 | Opción | Descripción |
 |:---|:---|
-| **Uso del portal de Microsoft 365 Defender** (*recomendado*) | El portal de Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) puede ser tu tienda integral para administrar los dispositivos, las directivas de seguridad y la configuración de seguridad de tu empresa. Puede acceder a las directivas de seguridad y la configuración, usar el [panel de administración de vulnerabilidades de Threat &](mdb-view-tvm-dashboard.md) y [ver y administrar incidentes](mdb-view-manage-incidents.md) en un solo lugar. <br/><br/>Si usa Microsoft Endpoint Manager, los dispositivos que incorpore a Defender for Business y las directivas de seguridad estarán visibles en Endpoint Manager. Para más información, consulte los artículos siguientes:<br/><br/>- [Configuración predeterminada de Defender for Business y Microsoft Endpoint Manager](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/><br/>- [Firewall en Microsoft Defender para Empresas](mdb-firewall.md)   |
+| **Uso del portal de Microsoft 365 Defender** (*recomendado*) | El portal de Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) puede ser tu tienda integral para administrar los dispositivos, las directivas de seguridad y la configuración de seguridad de tu empresa. Puede acceder a las directivas de seguridad y la configuración, usar el [panel de administración de vulnerabilidades de Threat &](mdb-view-tvm-dashboard.md) y [ver y administrar incidentes](mdb-view-manage-incidents.md) en un solo lugar. <br/><br/>Si usa Microsoft Endpoint Manager, los dispositivos que incorpore a Defender for Business y las directivas de seguridad estarán visibles en Endpoint Manager. Para más información, consulte los artículos siguientes:<br/>- [Configuración predeterminada de Defender for Business y Microsoft Endpoint Manager](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/>- [Firewall en Microsoft Defender para Empresas](mdb-firewall.md)   |
 | **Uso de Microsoft Endpoint Manager** | Si su empresa ya usa Endpoint Manager (que incluye Microsoft Intune) para administrar directivas de seguridad, puede seguir usando Endpoint Manager para administrar dispositivos y directivas de seguridad. Para más información, consulte [Administración de la seguridad de dispositivos con directivas de seguridad de punto de conexión en Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Si decide cambiar al [proceso de configuración simplificado en Defender for Business](mdb-simplified-configuration.md), se le pedirá que elimine las directivas de seguridad existentes en Endpoint Manager para evitar [conflictos de directivas](mdb-troubleshooting.yml) más adelante. |
 
 > [!IMPORTANT]
@@ -141,7 +146,7 @@ En la tabla siguiente se describe la configuración de las características avan
 | Configuración | Descripción |
 |:---|:---|
 | Investigación automatizada <br/>(activado de forma predeterminada) | A medida que se generan alertas, pueden producirse investigaciones automatizadas. Cada investigación automatizada determina si una amenaza detectada requiere acción y, a continuación, realiza (o recomienda) acciones de corrección (como enviar un archivo a cuarentena, detener un proceso, aislar un dispositivo o bloquear una dirección URL). Durante la ejecución de una investigación, todas las demás alertas relacionadas que puedan surgir se agregarán a la investigación hasta que se finalice. Si ve una entidad afectada en otro lugar, la investigación automatizada expande su ámbito para incluir esa entidad, y el proceso de investigación se repite.<br/><br/>Puede ver las investigaciones en la página **Incidentes** . Seleccione un incidente y, a continuación, seleccione la pestaña **Investigaciones** .<br/><br/>[Obtenga más información sobre las investigaciones automatizadas](../defender-endpoint/automated-investigations.md).   |
-| Respuesta dinámica <br/>(activado de forma predeterminada) | Defender for Business incluye los siguientes tipos de acciones de respuesta manual: <br/>- Ejecución del examen antivirus<br/>- Aislar el dispositivo<br/>- Detener y poner en cuarentena un archivo<br/>- Agregar un indicador para bloquear o permitir un archivo <br/><br/>[Obtenga más información sobre las acciones de respuesta](../defender-endpoint/respond-machine-alerts.md). |
+| Respuesta dinámica  | Defender for Business incluye los siguientes tipos de acciones de respuesta manual: <br/>- Ejecución del examen antivirus<br/>- Aislar el dispositivo<br/>- Detener y poner en cuarentena un archivo<br/>- Agregar un indicador para bloquear o permitir un archivo <br/><br/>[Obtenga más información sobre las acciones de respuesta](../defender-endpoint/respond-machine-alerts.md). |
 | Respuesta dinámica para servidores | (Esta configuración no está disponible actualmente en Defender para empresas)   |
 | Ejecución de script sin firmar de Respuesta dinámica | (Esta configuración no está disponible actualmente en Defender para empresas)  | 
 | Habilitar EDR en modo de bloque<br/>(activado de forma predeterminada) | Proporciona protección adicional contra artefactos malintencionados cuando Antivirus de Microsoft Defender no es el producto antivirus principal y se ejecuta en modo pasivo en un dispositivo. EDR en modo de bloque funciona en segundo plano para corregir artefactos malintencionados detectados por las funcionalidades de EDR. Es posible que el producto antivirus principal que no es de Microsoft haya perdido estos artefactos. En el caso de los dispositivos que ejecutan Antivirus de Microsoft Defender como antivirus principal, EDR en modo de bloque proporciona una capa adicional de defensa, ya que permite a Antivirus de Microsoft Defender realizar acciones automáticas en detecciones posteriores a la vulneración, comportamiento EDR.<br/><br/>[Obtenga más información sobre EDR en modo de bloque](../defender-endpoint/edr-in-block-mode.md). |
@@ -172,7 +177,7 @@ En la tabla siguiente se describe la configuración que se va a ver (y, si es ne
 | **Security Center** | **Zona horaria** | Seleccione la zona horaria que se usará para las fechas y horas que se muestran en incidentes, amenazas detectadas e investigación automatizada & corrección. Puede usar UTC o la zona horaria local (*recomendado*).  |
 | **Microsoft 365 Defender** | **Account** | Vea los detalles, como dónde se almacenan los datos, el identificador de inquilino y el identificador de la organización (organización). |
 | **Microsoft 365 Defender**  | **Versión preliminar de las características**  | Active las características en versión preliminar para probar las próximas características y nuevas funcionalidades. Puede estar entre las primeras en obtener una vista previa de las nuevas características y proporcionar comentarios. |
-| **Puntos de conexión**  | **Notificaciones de correo electrónico** | Configure o edite las reglas de notificación por correo electrónico. Cuando se detectan vulnerabilidades o se crea una alerta, los destinatarios especificados en las reglas de notificación por correo electrónico recibirán un correo electrónico. [Obtenga más información sobre las notificaciones por correo electrónico](mdb-email-notifications.md). |
+| **Puntos de conexión**  | **Notificaciones por correo electrónico** | Configure o edite las reglas de notificación por correo electrónico. Cuando se detectan vulnerabilidades o se crea una alerta, los destinatarios especificados en las reglas de notificación por correo electrónico recibirán un correo electrónico. [Obtenga más información sobre las notificaciones por correo electrónico](mdb-email-notifications.md). |
 | **Puntos de conexión**   | **Administración de dispositivos** >  **Incorporación** | Incorporación de dispositivos a Defender for Business mediante un script descargable. Para más información, consulte [Incorporación de dispositivos para Microsoft Defender para Empresas](mdb-onboard-devices.md).   |  
 | **Puntos de conexión**  |  **Administración de dispositivos** >  **Offboarding** | Dispositivos offboard (quitar) de Defender for Business. Al desconectar un dispositivo, ya no envía datos a Defender for Business, pero se conservan los datos recibidos antes de la retirada. Para obtener más información, consulte [Offboarding a device (Offboarding a device](mdb-offboard-devices.md)).  |
 
@@ -184,7 +189,7 @@ En la tabla siguiente se describe la configuración que se va a ver (y, si es ne
 
 3. En la lista de configuraciones, seleccione un elemento para ver o editar.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Continúe con una o varias de las siguientes tareas:
 

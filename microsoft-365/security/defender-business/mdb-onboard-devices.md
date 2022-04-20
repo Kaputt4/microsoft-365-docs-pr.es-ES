@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/14/2022
+ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ba816430521db2848273a4f7c6ca7d1a61703690
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 77eb8c0aa4d0ebd78788e9701e4933788af2e46c
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862286"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64915915"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>Incorporación de dispositivos a Microsoft Defender para Empresas
 
@@ -41,7 +41,6 @@ Con Microsoft Defender para Empresas, tiene varias opciones entre las que elegir
 1. Seleccione la pestaña del sistema operativo: 
 
    - clientes Windows
-   - Windows Server (versión preliminar)
    - equipos macOS
    - dispositivos móviles
 
@@ -56,6 +55,7 @@ Con Microsoft Defender para Empresas, tiene varias opciones entre las que elegir
 Elija una de las siguientes opciones para incorporar Windows dispositivos cliente a Defender for Business:
 
 - [Script local](#local-script-for-windows-clients) (para la incorporación manual de dispositivos en el portal de Microsoft 365 Defender)
+- [Directiva de grupo](#group-policy-for-windows-clients)
 - [Microsoft Endpoint Manager](#endpoint-manager-for-windows-clients) (incluido en [Microsoft 365 Empresa Premium](../../business-premium/index.md))
 
 
@@ -81,6 +81,10 @@ Puede usar un script local para incorporar Windows dispositivos cliente. Al ejec
 7. Escriba la ubicación del archivo de script. Por ejemplo, si copió el archivo en la carpeta Escritorio, escriba `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`y, a continuación, presione la tecla Entrar (o seleccione **Aceptar**).
 
 8. Después de ejecutar el script, vaya a [Ejecutar una prueba de detección](#running-a-detection-test-on-a-windows-client).
+
+### <a name="group-policy-for-windows-clients"></a>directiva de grupo para clientes Windows
+
+Si prefiere usar directiva de grupo para incorporar clientes Windows, siga las instrucciones de [Incorporación de dispositivos Windows mediante directiva de grupo](../defender-endpoint/configure-endpoints-gp.md). En este artículo se describen los pasos para la incorporación a Microsoft Defender para punto de conexión; sin embargo, los pasos para la incorporación a Defender for Business son similares.
 
 ### <a name="endpoint-manager-for-windows-clients"></a>Endpoint Manager para clientes Windows
 
@@ -148,68 +152,7 @@ Una vez ejecutado el comando, la ventana del símbolo del sistema se cerrará au
 
 Para ver la lista de dispositivos que se incorporan a Defender for Business, en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), en el panel de navegación, en **Puntos de conexión**, elija **Dispositivo invetory**.
 
-## <a name="next-steps"></a>Siguientes pasos
-
-- Si tiene otros dispositivos que incorporar, seleccione la pestaña correspondiente al sistema operativo de los dispositivos [(Windows clientes, Windows Server, macOS o dispositivos móviles](#what-to-do)) y siga las instrucciones de esa pestaña.
-- Si ha terminado de incorporar dispositivos, vaya al [Paso 5: Configurar las directivas y las opciones de seguridad en Microsoft Defender para Empresas](mdb-configure-security-settings.md)
-- Consulte [Comenzar con Microsoft Defender para Empresas](mdb-get-started.md).
-
-## <a name="windows-server"></a>[**Windows Server**](#tab/WindowsServerEndpoints)
-
-## <a name="windows-server-preview"></a>Windows Server (versión preliminar)
-
-Puede incorporar un dispositivo Windows Server mediante un script local. 
-
-> [!IMPORTANT]
-> La capacidad de incorporar puntos de conexión de Windows Server está actualmente en versión preliminar.
-
-1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
-
-2. En el panel de navegación, elija **Configuración** >  **Endpoints** y, a continuación, en **Administración** de dispositivos, elija **Incorporación**.
-
-3. Seleccione un sistema operativo, como **Windows Server 1803, 2019 y 2022**, y, a continuación, en la sección **Método de implementación**, elija **Script local**. 
-
-   Si selecciona **Windows Server 2012 R2 y 2016**, tendrá dos paquetes para descargar y ejecutar: un paquete de instalación y un paquete de incorporación. El paquete de instalación contiene un archivo MSI que instala el agente de Microsoft Defender para Empresas. El paquete de incorporación contiene el script para incorporar el punto de conexión de Windows Server a Defender for Business. 
-
-4. Seleccione **Descargar paquete de incorporación**. Se recomienda guardar el paquete de incorporación en una unidad extraíble.
-
-   Si seleccionó **Windows Server 2012 R2 y 2016**, seleccione también **Descargar paquete de instalación** y guárdelo en una unidad extraíble.
-
-5. En el punto de conexión de Windows Server, extraiga el contenido de los paquetes de instalación o incorporación a una ubicación, como la carpeta Escritorio. Debe tener un archivo denominado `WindowsDefenderATPLocalOnboardingScript.cmd`. 
-
-   Si va a incorporar Windows Server 2012 R2 o Windows Server 2016, extraiga primero el paquete de instalación.
-
-6. Abra el símbolo del sistema como administrador.
-
-7. Si va a incorporar Windows Server 2012R2 o Windows Server 2016, ejecute el siguiente comando: `Msiexec /i md4ws.msi /quiet`. 
-
-   Si va a incorporar Windows Server 1803, 2019 o 2022, omita este paso y continúe con el paso 8.
-
-8. Escriba la ubicación del archivo de script. Por ejemplo, si copió el archivo en la carpeta Escritorio, escriba `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`y, a continuación, presione la tecla Entrar (o seleccione **Aceptar**).
-
-9. Continúe con [Ejecutar una prueba de detección en Windows Server](#running-a-detection-test-on-windows-server)
-
-### <a name="running-a-detection-test-on-windows-server"></a>Ejecución de una prueba de detección en Windows Server
-
-Después de incorporar el punto de conexión de Windows Server a Defender for Business, puede ejecutar una prueba de detección para asegurarse de que todo funciona correctamente.
-
-1. En el dispositivo Windows Server, cree una carpeta: `C:\test-MDATP-test`.
-
-2. Abra el símbolo del sistema como administrador.
-
-3. En la ventana símbolo del sistema, ejecute el siguiente comando de PowerShell:
-
-   ```powershell
-   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
-   ```
-
-Una vez ejecutado el comando, la ventana del símbolo del sistema se cerrará automáticamente. Si se realiza correctamente, la prueba de detección se marcará como completada y aparecerá una nueva alerta en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) para el dispositivo recién incorporado en unos 10 minutos.
-
-## <a name="view-a-list-of-onboarded-devices"></a>Ver una lista de dispositivos incorporados
-
-Para ver la lista de dispositivos que se incorporan a Defender for Business, en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), en el panel de navegación, en **Puntos de conexión**, elija **Dispositivo invetory**.
-
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si tiene otros dispositivos que incorporar, seleccione la pestaña correspondiente al sistema operativo de los dispositivos [(Windows clientes, Windows Server, macOS o dispositivos móviles](#what-to-do)) y siga las instrucciones de esa pestaña.
 - Si ha terminado de incorporar dispositivos, vaya al [Paso 5: Configurar las directivas y las opciones de seguridad en Microsoft Defender para Empresas](mdb-configure-security-settings.md)
@@ -296,7 +239,7 @@ Si su empresa prefiere que las personas inscriban sus propios dispositivos en In
 
 Para ver la lista de dispositivos que se incorporan a Defender for Business, en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)), en el panel de navegación, en **Puntos de conexión**, elija **Inventario de dispositivos**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si tiene otros dispositivos que incorporar, seleccione la pestaña correspondiente al sistema operativo de los dispositivos ([Windows clientes, Windows Server, macOS o dispositivos móviles](#what-to-do)) y siga las instrucciones de esa pestaña.
 - Si ha terminado de incorporar dispositivos, vaya al [Paso 5: Configurar las directivas y las opciones de seguridad en Microsoft Defender para Empresas](mdb-configure-security-settings.md)
@@ -315,7 +258,7 @@ Consulte los siguientes recursos para obtener ayuda para inscribir estos disposi
 
 Después de inscribir un dispositivo en Intune, puede agregarlo a un grupo de dispositivos. [Obtenga más información sobre los grupos de dispositivos en Microsoft Defender para Empresas](mdb-create-edit-device-groups.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - Si tiene otros dispositivos que incorporar, seleccione la pestaña correspondiente al sistema operativo de los dispositivos ([Windows clientes, Windows Server, macOS o dispositivos móviles](#what-to-do)) y siga las instrucciones de esa pestaña.
 - Si ha terminado de incorporar dispositivos, vaya al [Paso 5: Configurar las directivas y las opciones de seguridad en Microsoft Defender para Empresas](mdb-configure-security-settings.md)

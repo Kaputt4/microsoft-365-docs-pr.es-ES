@@ -1,5 +1,5 @@
 ---
-title: Importar un modelo de información de documentos de ejemplo para Microsoft SharePoint Syntex
+title: Importación de un modelo de comprensión de documentos de ejemplo para Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre los modelos de comprensión de documentos a través del modelo de ejemplo.
-ms.openlocfilehash: 6e7c680bcb136b52e0b3c9821471d922d43b614b
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 210d5865a6e3208faff16fe1ce14748ee66d63c8
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281175"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916213"
 ---
-# <a name="import-a-sample-document-understanding-model-for-microsoft-sharepoint-syntex"></a>Importar un modelo de información de documentos de ejemplo para Microsoft SharePoint Syntex
+# <a name="import-a-sample-document-understanding-model-for-microsoft-sharepoint-syntex"></a>Importación de un modelo de comprensión de documentos de ejemplo para Microsoft SharePoint Syntex
 
-SharePoint Syntex le proporciona un modelo de ejemplo que puede usar para examinar, lo que le ofrece una mejor comprensión de cómo crear sus propios modelos. El modelo de ejemplo también le permite examinar los componentes del modelo, como su clasificador, extractores y explicaciones. Además, puede usar los archivos de ejemplo para entrenar el modelo.
+SharePoint Syntex proporciona un modelo de ejemplo que puede usar para examinar, lo que le proporciona una mejor comprensión de cómo crear sus propios modelos. El modelo de ejemplo también le permite examinar los componentes del modelo, como su clasificador, extractores y explicaciones. Además, puede usar los archivos de ejemplo para entrenar el modelo.
 
 ## <a name="import-the-sample-model"></a>Importar el modelo de ejemplo
 
@@ -45,9 +45,9 @@ No solo puede analizar el modelo de ejemplo para comprender mejor cómo se crea 
 
 ## <a name="get-sample-models"></a>Obtener modelos de ejemplo
 
-Puede obtener acceso al repositorio [SharePoint Syntex samples](https://github.com/pnp/syntex-samples), que contiene ejemplos de comunidad que muestran diferentes patrones de uso de modelos de comprensión de documentos. Los ejemplos de este repositorio contienen tanto los archivos del modelo de descripción del documento como los archivos usados para entrenar el modelo. Una vez importados, puede usar estos modelos para procesar archivos y para ver y editar el clasificador y los extractores.
+Puede acceder al [repositorio de ejemplos de SharePoint Syntex](https://github.com/pnp/syntex-samples), que contiene ejemplos de la comunidad que muestran diferentes patrones de uso de modelos de comprensión de documentos. Los ejemplos de este repositorio contienen los archivos de modelo de comprensión de documentos y los archivos usados para entrenar el modelo. Una vez importados, puede usar estos modelos para procesar archivos y ver y editar el clasificador y los extractores.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Ver también
 [Crear un clasificador](create-a-classifier.md)
 
 [Crear un extractor](create-an-extractor.md)

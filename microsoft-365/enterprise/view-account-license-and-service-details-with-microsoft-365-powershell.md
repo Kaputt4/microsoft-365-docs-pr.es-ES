@@ -19,12 +19,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Explica cómo usar PowerShell para determinar los servicios de Microsoft 365 que se han asignado a los usuarios.
-ms.openlocfilehash: 2789026e2e22bbae3e84e91ada7ad21af2252f03
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 7e5724acbff571825f1496db5d59e04e11ba3a67
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823968"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916003"
 ---
 # <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>Ver Microsoft 365 detalles de licencia de cuenta y servicio con PowerShell
 
@@ -41,7 +41,7 @@ En primer lugar, [conéctese al inquilino de Microsoft 365](/graph/powershell/ge
 La lectura de propiedades de usuario, incluidos los detalles de la licencia, requiere el ámbito de permiso User.Read.All o uno de los demás permisos enumerados en la [página de referencia "Obtener un usuario" Graph API](/graph/api/user-get).
 
 ```powershell
-Connect-Graph -Scopes User.Read.All
+Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 ```
 
 A continuación, enumere los planes de licencia del inquilino con este comando.
@@ -199,7 +199,7 @@ $licArray +=  ""
 $licArray
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

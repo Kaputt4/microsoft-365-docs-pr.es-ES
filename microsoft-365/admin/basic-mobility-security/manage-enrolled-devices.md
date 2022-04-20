@@ -19,18 +19,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security puede ayudarle a proteger y administrar los dispositivos móviles de las organizaciones.
-ms.openlocfilehash: 02c8efbed8f781dfdb0e9abfaa2af3a2c92733ff
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: f2da9a20c496d5229d62e477fcf4cc0024436788
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780817"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935245"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Administración de dispositivos inscritos en Mobile Administración de dispositivos en Microsoft 365
 
 La administración integrada de dispositivos móviles para Microsoft 365 le ayuda a proteger y administrar los dispositivos móviles de los usuarios, como iPhones, iPads, Android y teléfonos Windows. El primer paso consiste en iniciar sesión en Microsoft 365 y configurar Basic Mobility and Security. Para obtener más información, consulte [Configuración de Basic Mobility and Security](set-up.md).
 
-Después de configurarlo, los usuarios de la organización deben inscribir sus dispositivos en el servicio. Para obtener más información, consulta [Inscribir tu dispositivo móvil con Basic Mobility and Security](enroll-your-mobile-device.md). A continuación, puede usar Basic Mobility and Security para ayudar a administrar los dispositivos de su organización. Por ejemplo, puede usar directivas de seguridad de dispositivos para ayudar a limitar el acceso al correo electrónico u otros servicios, ver informes de dispositivos y borrar un dispositivo de forma remota. Normalmente, irá al Centro de cumplimiento de seguridad & para realizar estas tareas. Para obtener más información, consulta [Centro de cumplimiento de Microsoft 365](../../compliance/microsoft-365-compliance-center.md).
+Después de configurarlo, los usuarios de la organización deben inscribir sus dispositivos en el servicio. Para obtener más información, consulta [Inscribir tu dispositivo móvil con Basic Mobility and Security](enroll-your-mobile-device.md).A continuación, puede usar Basic Mobility and Security para ayudar a administrar los dispositivos de su organización. Por ejemplo, puede usar directivas de seguridad de dispositivos para ayudar a limitar el acceso al correo electrónico u otros servicios, ver informes de dispositivos y borrar un dispositivo de forma remota. Normalmente, irá al Centro de cumplimiento de seguridad & para realizar estas tareas. Para obtener más información, consulte [El portal de cumplimiento de Microsoft Purview](../../compliance/microsoft-365-compliance-center.md).
 
 ## <a name="device-management-tasks"></a>Tareas de administración de dispositivos
 

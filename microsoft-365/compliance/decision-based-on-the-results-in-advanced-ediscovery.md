@@ -1,5 +1,5 @@
 ---
-title: Decisión basada en los resultados de Advanced eDiscovery
+title: Decisión basada en los resultados de eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: Obtenga información sobre cómo la pestaña Decidir en Advanced eDiscovery proporciona datos que pueden ayudarle a determinar el tamaño correcto del conjunto de revisión de archivos de casos.
+description: Obtenga información sobre cómo la pestaña Decidir en eDiscovery (Premium) proporciona datos que pueden ayudarle a determinar el tamaño correcto del conjunto de revisión de archivos de casos.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 32682690c6febac247d67e3b78f56d1f71b9a2fb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6c8759db2445b8d98c47cc1103deda058d2f3508
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207360"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64932428"
 ---
-# <a name="decisions-based-on-relevance-results-in-advanced-ediscovery"></a>Las decisiones basadas en relevancia se traducen en Advanced eDiscovery
+# <a name="decisions-based-on-relevance-results-in-ediscovery-premium"></a>Decisiones basadas en resultados de relevancia en eDiscovery (Premium)
   
-En el módulo Relevancia de Advanced eDiscovery, la pestaña Decidir proporciona información adicional para ver y usar estadísticas de compatibilidad con decisiones para determinar el tamaño del conjunto de revisión de archivos de casos.
+En el módulo Relevancia de eDiscovery (Premium), la pestaña Decidir proporciona información adicional para ver y usar estadísticas de compatibilidad con decisiones para determinar el tamaño del conjunto de revisión de archivos de casos.
   
 ## <a name="using-the-decide-tab"></a>Uso de la pestaña Decidir
 
@@ -34,20 +34,20 @@ En el módulo Relevancia de Advanced eDiscovery, la pestaña Decidir proporciona
   
 Esta pestaña incluye los siguientes componentes:
   
-- **Problema:** desde aquí, puede seleccionar el problema de interés de la lista.
+- **Problema**: desde aquí, puede seleccionar el problema de interés de la lista.
 
-- **Relación revisión-recuperación:** comparaciones de Advanced eDiscovery de acuerdo con las puntuaciones de relevancia. El punto de corte del gráfico representa el porcentaje de archivos que se revisarán, asignados a una puntuación de relevancia. Esto se usa en la fase de prueba de relevancia y como umbral de exportación para la selección. El punto de corte predeterminado, para el número de archivos que se va a revisar es en el punto en el que el equilibrio entre Recall y Precision es óptimo. El usuario debe determinar el punto de límite real en función de los objetivos y la negociación de costos (%review) y el riesgo (%recall). Con el control deslizante, puede ajustar el punto de corte y ver el efecto en el gráfico y los parámetros, al ajustar el porcentaje de archivos relevantes que se recuperarán y antes de validar una decisión.
+- **Relación de revisión y recuperación**: comparaciones de la revisión de eDiscovery (Premium) según las puntuaciones de relevancia. El punto de corte del gráfico representa el porcentaje de archivos que se van a revisar, asignados a una puntuación de relevancia. Esto se usa en la fase de prueba de relevancia y como umbral de exportación para la selección. El punto de corte predeterminado para el número de archivos que se van a revisar es en el punto en el que el equilibrio entre recuperación y precisión es óptimo. El usuario debe determinar el punto de límite real en función de los objetivos y el equilibrio de costos (%revisión) y riesgo (%recuperación). Con el control deslizante, puede ajustar el punto de corte y ver el efecto en el gráfico y los parámetros, al ajustar el porcentaje de archivos pertinentes que se van a recuperar y antes de validar una decisión.
 
-- **Parameters**: Review, Recall, Next relevant and Total cost parameters are cumulative calculated statistics pertaining to the review set in relation to the collection for the entire case. Las definiciones de estos parámetros son las siguientes:
+- **Parámetros: los parámetros** Review, Recall, Next relevant y Total cost son estadísticas calculadas acumulativas relacionadas con el conjunto de revisión en relación con la colección para todo el caso. Las definiciones de estos parámetros son las siguientes:
 
-  - **Review**: Percentage of files to review based on this cutoff.
+  - **Revisión**: porcentaje de archivos que se van a revisar en función de este límite.
 
-  - **Recall**: Porcentaje de archivos relevantes en el conjunto de revisión.
+  - **Recuperación**: porcentaje de archivos relevantes en el conjunto de revisión.
 
-  - **Siguiente relevante:** costo para revisar e identificar otro archivo relevante que no está actualmente en el conjunto de revisión.
+  - **Siguiente pertinente**: costo para revisar e identificar otro archivo pertinente que no está actualmente en el conjunto de revisión.
 
-  - **Costo total:** costo para revisar este porcentaje de los archivos de caso. El administrador de casos puede establecer la configuración de parámetros de costo.
+  - **Costo total**: costo por revisar este porcentaje de los archivos de caso. El administrador de casos puede establecer la configuración del parámetro de costo.
 
-  - **Distribución por puntuación de relevancia:** los archivos de la pantalla gris oscuro a la izquierda están por debajo de la puntuación de límite. Una sugerencia de herramienta muestra la puntuación relevancia y el porcentaje relacionado de archivos en el conjunto de archivos de revisión en relación con el total de archivos.
+  - **Distribución por puntuación de relevancia**: los archivos de la pantalla gris oscuro a la izquierda están por debajo de la puntuación de límite. Una sugerencia de herramienta muestra la puntuación de relevancia y el porcentaje relacionado de archivos en el conjunto de archivos de revisión en relación con el total de archivos.
 
-El panel **Detalles expandido** muestra más detalles. Los archivos de las figuras de colección no incluyen archivos vacíos o nebulosos. Las figuras de archivos de familia representan archivos que no se cargan en Relevancia, pero que aún se cuentan como parte de la familia.
+El panel **Detalles** expandido muestra más detalles. Los archivos de las figuras de colección no incluyen archivos vacíos o nebulosos. Las figuras de archivos de familia representan archivos que no se cargan en relevancia, pero que todavía se cuentan como parte de la familia.

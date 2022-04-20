@@ -1,18 +1,26 @@
-- name: Documentación de Base de pruebas
+- name: Documentación base de prueba
   href: index.yml
 - name: Información general
   items:
-    - name: ¿Qué es Test Base?
+    - name: ¿Qué es la base de pruebas?
       href: overview.md
 - name: Guías de inicio rápido
   items:
-    - name: Crear cuenta base de prueba
+    - name: Crear cuenta base de pruebas
       href: createAccount.md
-    - name: Crear un paquete
+    - name: Prueba de la aplicación en test base
+      items:
+        - name: Información general
+          href: testoverview.md
+        - name: Paquete de archivos binarios de prueba en Test Base
+          href: testapplication.md
+        - name: Prueba de la aplicación de Intune en Test Base
+          href: testintuneapplication.md
+        - name: Upload el paquete base de prueba (Zip)
+          href: uploadApplication.md
+    - name: Compilar un paquete
       href: buildpackage.md
-    - name: Cargar un paquete
-      href: uploadApplication.md
-    - name: Upload archivos binarios & dependencias
+    - name: dependencias & binarios de Upload
       href: binaries.md
     - name: Establecer tareas de prueba
       href: testtask.md
@@ -22,7 +30,7 @@
       href: review.md
     - name: Guía del paquete
       href: contentguideline.md
-    - name: Reglas de aplicación y prueba
+    - name: Reglas de aplicación o prueba
       href: rules.md
 - name: Guías de procedimientos
   items:
