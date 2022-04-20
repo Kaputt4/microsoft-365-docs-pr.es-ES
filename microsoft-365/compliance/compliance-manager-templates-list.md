@@ -1,5 +1,5 @@
 ---
-title: Lista de plantillas de Microsoft Compliance Manager
+title: Lista de plantillas del Administrador de cumplimiento de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,24 +16,26 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Compliance Manager proporciona plantillas para crear evaluaciones que se ajustan a las normativas, estándares y leyes nacionales, regionales y del sector.
-ms.openlocfilehash: 484363636906bbf599a18b3cf6d3484d53177e75
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: El Administrador de cumplimiento de Microsoft Purview proporciona plantillas para crear evaluaciones que se ajustan a las normativas, estándares y leyes nacionales, regionales y del sector.
+ms.openlocfilehash: cc07d7aa6fc385fc1066f35c8d20bbe7e2152b93
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761009"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971503"
 ---
 # <a name="compliance-manager-templates-list"></a>Lista de plantillas del Administrador de cumplimiento
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **En este artículo:** Vea la lista completa de **plantillas** disponibles para crear evaluaciones en el Administrador de cumplimiento.
 
 > [!IMPORTANT]
-> Las plantillas de evaluación que están disponibles para su organización dependen del contrato de licencia. [Revise los detalles](compliance-manager-templates.md#template-availability-and-licensing).
+> Las plantillas de evaluación que están disponibles para su organización dependen del contrato de licencia. [Revise los detalles](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## <a name="overview"></a>Información general
 
-[Microsoft Compliance Manager](compliance-manager.md) proporciona un conjunto completo de plantillas para crear evaluaciones. Estas plantillas pueden ayudar a su organización a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos.
+[El Administrador de cumplimiento de Microsoft Purview](compliance-manager.md) proporciona un conjunto completo de plantillas para crear evaluaciones. Estas plantillas pueden ayudar a su organización a cumplir con los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos.
 
 Las plantillas se agregan al Administrador de cumplimiento a medida que se promulgan nuevas leyes y regulaciones. El Administrador de cumplimiento también actualiza sus plantillas cuando cambian las leyes o regulaciones subyacentes. Obtenga más información sobre cómo [revisar y aceptar actualizaciones](compliance-manager-assessments.md#accept-updates-to-assessments).
 

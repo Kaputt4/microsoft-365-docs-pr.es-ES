@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Use búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para realizar una colección de destino, que busca elementos en un buzón o carpeta de sitio específico.
-ms.openlocfilehash: b01197ebc942b13f1b3806d2ad3b5a564b609098
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9638a0870f1d97d2bcea73215509d269576c4ecd
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947063"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991784"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Uso de la búsqueda de contenido para colecciones de destino
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La herramienta de búsqueda de contenido del portal de cumplimiento de Microsoft Purview no proporciona una forma directa en la interfaz de usuario de buscar carpetas específicas en buzones de Exchange o SharePoint y sitios de OneDrive para la Empresa. Sin embargo, es posible buscar carpetas específicas ( *denominadas colección de destino*) especificando la propiedad id. de carpeta para el correo electrónico o la propiedad path (DocumentLink) para los sitios en la sintaxis de consulta de búsqueda real. El uso de búsqueda de contenido para realizar una colección de destino es útil cuando está seguro de que los elementos que responden a un caso o elementos con privilegios se encuentran en un buzón de correo o carpeta de sitio específico. Puede usar el script de este artículo para obtener el identificador de carpeta de las carpetas de buzón o la ruta de acceso (DocumentLink) para las carpetas de un sitio SharePoint y OneDrive para la Empresa. A continuación, puede usar el identificador de carpeta o la ruta de acceso en una consulta de búsqueda para devolver los elementos ubicados en la carpeta.
 

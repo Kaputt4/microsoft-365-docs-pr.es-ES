@@ -19,14 +19,16 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Hay muchos tipos de información confidencial que están listos para su uso en las directivas DLP. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo.
-ms.openlocfilehash: 69c47a717b63f8d9ac4e30f3b97fd228399bf21c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 6074082812853469e0513d67ec68519eb2a89563
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760413"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64970667"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En este artículo se enumeran todas las definiciones de entidad de tipo de información confidencial. Cada definición muestra lo que busca una directiva DLP para detectar cada tipo. Para más información sobre los tipos de información confidencial, consulte [Tipos de información confidencial](sensitive-information-type-learn-about.md).
 
@@ -510,7 +512,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -575,7 +577,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -1126,7 +1128,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -1262,7 +1264,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="austria-social-security-number"></a>Número de seguro social de Austria
 
@@ -1413,7 +1415,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -2329,7 +2331,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con direccione
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="belgium-value-added-tax-number"></a>Número de impuestos sobre el valor añadido de Bélgica
 
@@ -2337,7 +2339,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -2623,7 +2625,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="bulgaria-drivers-license-number"></a>Número de licencia de conducir de Bulgaria
 
@@ -2872,14 +2874,14 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="bulgaria-uniform-civil-number"></a>Número civil uniforme de Bulgaria
 Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -3472,7 +3474,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="canada-social-insurance-number"></a>Número de seguro social de Canadá
 
@@ -3728,7 +3730,7 @@ Sí, la comprobación de Luhn
 Una directiva DLP tiene una gran confianza en que se detecta este tipo de información confidencial si, dentro de una proximidad de 300 caracteres:
 
 - La función Func_credit_card encuentra contenido que coincide con el patrón.
-- Una de las siguientes opciones es verdadera:
+- Se cumple una de las condiciones siguientes:
   - Se encuentra una palabra clave de Keyword_cc_verification.
   - Se encuentra una palabra clave de Keyword_cc_name.
   - La función Func_expiration_date encuentra una fecha en el formato de fecha correcto.
@@ -4402,7 +4404,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="cyprus-drivers-license-number"></a>Número de licencia de conducir de Chipre
 
@@ -4573,7 +4575,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -4708,7 +4710,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="cyprus-tax-identification-number"></a>Número de identificación fiscal de Chipre
 
@@ -4716,7 +4718,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -5147,7 +5149,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="denmark-drivers-license-number"></a>Número de licencia de conducir de Dinamarca
 
@@ -5514,7 +5516,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="diseases"></a>Enfermedades
 
@@ -5832,7 +5834,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -5922,7 +5924,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="eu-debit-card-number"></a>Número de tarjeta de débito de la UE
 
@@ -6387,7 +6389,7 @@ Estas entidades están en el número de pasaporte de la UE y son tipos de inform
 
 ## <a name="eu-social-security-number-or-equivalent-identification"></a>Número de seguridad social de la UE o identificación equivalente
 
-Estas son las entidades que se encuentran en el número de seguridad social de la UE o una identificación equivalente y son tipos de información confidencial.
+Estas entidades se encuentran en el número de seguridad social de la UE o en una identificación equivalente y son tipos de información confidencial.
 
 - [Austria](#austria-social-security-number)
 - [Bélgica](#belgium-national-number)
@@ -6616,7 +6618,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -6857,7 +6859,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="france-drivers-license-number"></a>Número de licencia de conducir de Francia
 
@@ -7027,7 +7029,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -7220,7 +7222,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="france-social-security-number-insee"></a>Número de seguridad social de Francia (INSEE)
 
@@ -7386,7 +7388,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -7653,7 +7655,7 @@ Una directiva DLP tiene confianza media en que se detecta este tipo de informaci
 
 ### <a name="format"></a>Formato
 
-desde el 1 de noviembre de 2010: de nueve a once letras y dígitos
+desde el 1 de noviembre de 2010: de nueve a 11 letras y dígitos
 
 del 1 de abril de 1987 al 31 de octubre de 2010: 10 dígitos
 
@@ -7821,7 +7823,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="germany-tax-identification-number"></a>Número de identificación fiscal de Alemania
 
@@ -7904,7 +7906,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -8269,7 +8271,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="greece-social-security-number-amka"></a>Número de seguro social de Grecia (AMKA)
 
@@ -8277,7 +8279,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -8338,7 +8340,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -8736,7 +8738,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -8803,7 +8805,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="hungary-social-security-number-taj"></a>Número de seguro social de Hungría (TAJ)
 
@@ -8871,7 +8873,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -8953,7 +8955,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -9019,7 +9021,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="impairments-listed-in-the-us-disability-evaluation-under-social-security"></a>Discapacidades enumeradas en la evaluación de discapacidad de EE. UU. en el Seguro Social
 
@@ -10169,7 +10171,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="israel-bank-account-number"></a>Número de cuenta bancaria de Israel
 
@@ -10455,7 +10457,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -10630,7 +10632,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="italy-value-added-tax-number"></a>Número de impuestos sobre el valor añadido de Italia
 
@@ -10638,7 +10640,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -10878,7 +10880,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -10942,7 +10944,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -11609,7 +11611,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="liechtenstein-physical-addresses"></a>Direcciones físicas de Liechtenstein
 
@@ -11617,7 +11619,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="lifestyles-that-relate-to-medical-conditions"></a>Estilos de vida relacionados con condiciones médicas
 
@@ -11796,7 +11798,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -11888,7 +11890,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="lithuania-passport-number"></a>Número de pasaporte de Lituania
 
@@ -12135,7 +12137,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -12394,7 +12396,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="malaysia-identification-card-number"></a>Número de la tarjeta de identificación de Malasia
 
@@ -12638,7 +12640,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -12780,7 +12782,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="malta-tax-identification-number"></a>Número de identificación fiscal de Malta
 
@@ -13316,7 +13318,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="netherlands-tax-identification-number"></a>Número de identificación fiscal de Los Países Bajos
 
@@ -13324,7 +13326,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -13410,7 +13412,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -13475,7 +13477,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -13540,7 +13542,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -13658,7 +13660,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -13772,7 +13774,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="new-zealand-social-welfare-number"></a>Número de bienestar social de Nueva Zelanda
 
@@ -13780,7 +13782,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -13898,7 +13900,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="philippines-unified-multi-purpose-identification-number"></a>Número de identificación multiuso unificado de Filipinas
 
@@ -14313,7 +14315,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="poland-regon-number"></a>Número DE REGON de Polonia
 
@@ -14321,7 +14323,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -14390,7 +14392,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -14785,7 +14787,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="portugal-tax-identification-number"></a>Número de identificación fiscal de Portugal
 
@@ -15106,7 +15108,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -15208,7 +15210,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="russia-passport-number-domestic"></a>Número de pasaporte de Rusia nacional
 
@@ -15216,7 +15218,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -15280,7 +15282,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -15687,7 +15689,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -15786,7 +15788,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="slovenia-drivers-license-number"></a>Número de licencia de conducir de Eslovenia
 
@@ -16043,7 +16045,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="slovenia-tax-identification-number"></a>Número de identificación fiscal de Eslovenia
 
@@ -16051,7 +16053,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -16125,7 +16127,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -16243,7 +16245,7 @@ Una directiva DLP tiene una gran confianza en que se detecta este tipo de inform
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - tarjeta de identidad
-- ID
+- Id.
 - Identificación
 
 ## <a name="south-korea-resident-registration-number"></a>Número de registro de residente de Corea del Sur
@@ -16309,7 +16311,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -16674,7 +16676,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="spain-social-security-number-ssn"></a>Número de seguridad social de España (SSN)
 
@@ -16739,7 +16741,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -17271,7 +17273,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="sweden-tax-identification-number"></a>Número de identificación fiscal de Suecia
 
@@ -17279,7 +17281,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -17439,7 +17441,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="switzerland-ssn-ahv-number"></a>Número de AHV de SSN de Suiza
 
@@ -17447,7 +17449,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -17790,7 +17792,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="types-of-medication"></a>Tipos de medicamentos
 
@@ -18166,7 +18168,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="uk-unique-taxpayer-reference-number"></a>ESPAÑA. Número de referencia de contribuyente único
 
@@ -18174,7 +18176,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -18350,7 +18352,7 @@ Una directiva DLP tiene poca confianza en que se detecta este tipo de informaci�
 - DLS
 - CDL
 - CDL
-- ID
+- Id.
 - Identificadores
 - DL #
 - DLS #
@@ -18535,7 +18537,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Medio
+Mediano
 
 ## <a name="us-social-security-number-ssn"></a>Número de seguro social (SSN) de EE. UU.
 
@@ -18690,7 +18692,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 
@@ -18740,7 +18742,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicación
-- gobernanza de la información
+- administración del ciclo de vida de los datos
 - administración de registros
 - Microsoft Defender for Cloud Apps
 

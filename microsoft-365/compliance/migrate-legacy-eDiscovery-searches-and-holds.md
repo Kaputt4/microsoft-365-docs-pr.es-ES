@@ -15,21 +15,23 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 5de25b0b1385e709a818b1ff797910ec4ee4ddfc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 28f110c6b236721debdb5585263dd835f2a5a658
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949639"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993148"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>Migración de búsquedas y retenciones de eDiscovery heredadas al portal de cumplimiento
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 El portal de cumplimiento de Microsoft Purview proporciona una experiencia mejorada para el uso de eDiscovery, lo que incluye: mayor confiabilidad, mejor rendimiento y muchas características adaptadas a flujos de trabajo de eDiscovery, incluidos casos para organizar el contenido por cuestión, conjuntos de revisión para revisar contenido y análisis para ayudar a eliminar datos para su revisión, como agrupación casi duplicada, subprocesos de correo electrónico, análisis de temas y codificación predictiva.
 
 Para ayudar a los clientes a aprovechar las ventajas de la funcionalidad nueva y mejorada, en este artículo se proporcionan instrucciones básicas sobre cómo migrar In-Place búsquedas y retenciones de eDiscovery desde el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a> al portal de cumplimiento.
 
 > [!NOTE]
-> Dado que hay muchos escenarios diferentes, en este artículo se proporcionan instrucciones generales para realizar la transición de búsquedas y retenciones a un caso principal de eDiscovery en el portal de cumplimiento. El uso de casos de eDiscovery no siempre es necesario, pero agregan una capa adicional de seguridad, ya que permiten asignar permisos para controlar quién tiene acceso a los casos de eDiscovery en su organización.
+> Dado que hay muchos escenarios diferentes, en este artículo se proporcionan instrucciones generales para realizar búsquedas de transición y mantener un caso de exhibición de documentos electrónicos (estándar) en el portal de cumplimiento. El uso de casos de eDiscovery no siempre es necesario, pero agregan una capa adicional de seguridad, ya que permiten asignar permisos para controlar quién tiene acceso a los casos de eDiscovery en su organización.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 

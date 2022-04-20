@@ -21,18 +21,18 @@ ms.custom:
 - manage_licenses
 - AdminTemplateSet
 search.appverid: MET150
-description: El método que use para desasignación de licencias de productos depende de si desasigna licencias de usuarios específicos o de un producto específico.
+description: El método que use para anular la asignación de licencias de productos depende de si anula la asignación de licencias de usuarios específicos o de un producto específico.
 ms.date: 09/16/2021
-ms.openlocfilehash: 7308888c54a30cdd11618cb07a233f8bd55f27c2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8d0fd6f89802111bdb2afbc2586392251d393e4e
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321213"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971094"
 ---
 # <a name="unassign-licenses-from-users"></a>Cancelar la asignación de licencias a usuarios
 
-Puede desasignación de licencias de usuarios en la **página Usuarios** activos o en la **página Licencias** . El método que use depende de si desea desasignación de licencias de productos de usuarios específicos o desasignación de licencias de usuarios de un producto específico.
+Puede anular la asignación de licencias de los usuarios en la página **Usuarios activos** o en la página **Licencias** . El método que use dependerá de si desea anular la asignación de licencias de productos de usuarios específicos o de anular la asignación de licencias de usuarios de un producto específico.
 
 > [!NOTE]
 > 
@@ -42,13 +42,13 @@ Puede desasignación de licencias de usuarios en la **página Usuarios** activos
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser un administrador global, de licencia y de usuario para desasignación de licencias. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../add-users/about-admin-roles.md).
+- Debe ser un administrador global, de licencia y de usuario para anular la asignación de licencias. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../add-users/about-admin-roles.md).
 - Puede [quitar licencias de cuentas de usuario con PowerShell de Office 365](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md).
-- También puede eliminar [cuentas de usuario a](../add-users/delete-a-user.md) las que se asignó una licencia para que su licencia esté disponible para otros usuarios. Al eliminar una cuenta de usuario, su licencia está disponible inmediatamente para asignarla a otra persona.
+- También puede [eliminar las cuentas de usuario a las](../add-users/delete-a-user.md) que se asignó una licencia para que su licencia esté disponible para otros usuarios. Al eliminar una cuenta de usuario, su licencia está disponible inmediatamente para asignarla a otra persona.
 
-## <a name="use-the-licenses-page-to-unassign-licenses"></a>Usar la página Licencias para desasignación de licencias
+## <a name="use-the-licenses-page-to-unassign-licenses"></a>Uso de la página Licencias para anular la asignación de licencias
 
-Al usar la página **Licencias** para desasignar licencias, se desasigna licencias para un producto específico para un máximo de 20 usuarios.
+Al usar la página **Licencias** para anular la asignación de licencias, anula la asignación de licencias para un producto específico para un máximo de 20 usuarios.
 
 ::: moniker range="o365-worldwide"
 
@@ -62,19 +62,19 @@ Al usar la página **Licencias** para desasignar licencias, se desasigna licenci
 
 ::: moniker-end
 
-2. Seleccione el producto para el que desea desasignación de licencias.
+2. Seleccione el producto para el que desea anular la asignación de licencias.
 
-3. Seleccione los usuarios para los que desea desasignación de licencias.
+3. Seleccione los usuarios para los que desea anular la asignación de licencias.
 
-4. Seleccione **Unassign licenses**.
+4. Seleccione **Anular la asignación de licencias**.
 
-5. En el **cuadro Unassign licenses** , seleccione **Unassign**.
+5. En el cuadro **Unassign licenses (Anular la asignación de licencias** ), seleccione **Unassign (Quitar la asignación**).
 
-## <a name="use-the-active-users-page-to-unassign-licenses"></a>Usar la página Usuarios activos para desasignación de licencias
+## <a name="use-the-active-users-page-to-unassign-licenses"></a>Uso de la página Usuarios activos para anular la asignación de licencias
 
-Al usar la página **Usuarios activos** para desasignación de licencias, se desasigna licencias de productos a los usuarios.
+Cuando se usa la página **Usuarios activos** para anular la asignación de licencias, se anula la asignación de licencias de productos de los usuarios.
 
-### <a name="unassign-licenses-from-one-user"></a>Unassign licenses from one user
+### <a name="unassign-licenses-from-one-user"></a>Anulación de la asignación de licencias de un usuario
 
 ::: moniker range="o365-worldwide"
 
@@ -88,13 +88,13 @@ Al usar la página **Usuarios activos** para desasignación de licencias, se des
 
 ::: moniker-end
 
-2. Seleccione la fila del usuario para el que desea desasignación de una licencia.
+2. Seleccione la fila del usuario para el que desea anular la asignación de una licencia.
 
 3. En el panel derecho, seleccione **licencias y aplicaciones**.
 
-4. Expanda la **sección Licencias** , desactive los cuadros de las licencias que desea desasignación y, a continuación, **seleccione Guardar cambios**.
+4. Expanda la sección **Licencias** , desactive las casillas de las licencias que desea anular la asignación y, a continuación, seleccione **Guardar cambios**.
 
-### <a name="unassign-licenses-from-multiple-users"></a>Unassign licenses from multiple users
+### <a name="unassign-licenses-from-multiple-users"></a>Anulación de la asignación de licencias de varios usuarios
 
 ::: moniker range="o365-worldwide"
 
@@ -108,26 +108,26 @@ Al usar la página **Usuarios activos** para desasignación de licencias, se des
 
 ::: moniker-end
 
-2. Seleccione los círculos junto a los nombres de los usuarios para los que desea desasignar licencias.
+2. Seleccione los círculos junto a los nombres de los usuarios para los que desea anular la asignación de licencias.
 
 3. En la parte superior, seleccione **Administrar licencias de producto**.
 
-4. En el **panel Administrar licencias de productos**, seleccione **Unassign allSave** >  **changes**.
+4. En el panel **Administrar licencias de producto**, seleccione **Anular la asignación de todosGuardar** >  **cambios**.
 
 5. En la parte inferior del panel, seleccione **Listo**.  
 
-## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>¿Qué sucede con los datos de un usuario al quitar su licencia?
+## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>¿Qué ocurre con los datos de un usuario al quitar su licencia?
 
-- Cuando se quita una licencia de un usuario, Exchange datos en línea asociados con esa cuenta se mantienen durante 30 días. Después del período de gracia de 30 días, los datos se eliminan y no se pueden recuperar.
-- Los archivos guardados en OneDrive para la Empresa no se eliminan a menos que el usuario se elimine del Centro de administración de Microsoft 365 o se quite a través de la sincronización de Active Directory. Para obtener más información, [vea OneDrive retención y eliminación](/onedrive/retention-and-deletion).
-- Cuando se quita la licencia, el buzón del usuario ya no se puede buscar mediante una herramienta de exhibición de documentos electrónicos, como búsqueda de contenido o Advanced eDiscovery. Para obtener más información, vea "Buscar buzones desconectados o sin licencia" en Búsqueda de contenido [en Microsoft 365](../../compliance/content-search.md).
-- Si tiene una suscripción Enterprise, como Office 365 Enterprise E3, Exchange Online permite conservar los datos del buzón de una cuenta de usuario eliminada mediante buzones [inactivos](../../compliance/inactive-mailboxes-in-office-365.md). Para obtener más información, vea [Create and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
-- Para obtener información sobre cómo bloquear el acceso de un usuario Microsoft 365 datos después de quitar su licencia y cómo obtener acceso a los datos después, consulte [Remove a former employee](../add-users/remove-former-employee.md).
-- Si quitas la licencia de un usuario y aún tienen Office aplicaciones instaladas, verán Errores de activación y producto sin licencia en [Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) cuando usen Office aplicaciones.
+- Cuando se quita una licencia de un usuario, Exchange datos en línea asociados a esa cuenta se mantienen durante 30 días. Después del período de gracia de 30 días, los datos se eliminan y no se pueden recuperar.
+- Los archivos guardados en OneDrive para la Empresa no se eliminan a menos que el usuario se elimine de la Centro de administración de Microsoft 365 o se quite mediante la sincronización de Active Directory. Para obtener más información, consulte [OneDrive retención y eliminación](/onedrive/retention-and-deletion).
+- Cuando se quita la licencia, el buzón del usuario ya no se puede buscar mediante una herramienta de exhibición de documentos electrónicos como Búsqueda de contenido o eDiscovery (Premium). Para obtener más información, vea "Buscar buzones desconectados o sin licencia" en [Búsqueda de contenido en Microsoft 365](../../compliance/content-search.md).
+- Si tiene una suscripción Enterprise, como Office 365 Enterprise E3, Exchange Online le permite conservar los datos de buzón de una cuenta de usuario eliminada mediante [buzones inactivos](../../compliance/inactive-mailboxes-in-office-365.md). Para obtener más información, consulte [Creación y administración de buzones inactivos en Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
+- Para obtener información sobre cómo bloquear el acceso de un usuario a Microsoft 365 datos después de quitar su licencia y cómo obtener acceso a los datos posteriormente, consulte [Eliminación de un empleado anterior](../add-users/remove-former-employee.md).
+- Si quita la licencia de un usuario y sigue teniendo instaladas Office aplicaciones, verá [errores de activación y producto sin licencia en Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) cuando usan aplicaciones Office.
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-Si no va a reasignar las licencias no [usadas](../../managed-desktop/get-started/assign-licenses.md) a otros usuarios, considere la posibilidad [](../../commerce/licenses/buy-licenses.md) de quitar las licencias de la suscripción para que no pague más licencias de las que necesita.
+Si no va a [reasignar las licencias sin usar a otros usuarios](../../managed-desktop/get-started/assign-licenses.md), considere la posibilidad [de quitar las licencias de la suscripción](../../commerce/licenses/buy-licenses.md) para que no pague más licencias de las que necesita.
 
 ## <a name="related-content"></a>Contenido relacionado
 

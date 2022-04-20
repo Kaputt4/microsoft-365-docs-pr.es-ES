@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre la diferencia entre la colaboración de invitados y los canales compartidos en Teams y cómo elegir cuál usar.
-ms.openlocfilehash: 85eac4fb8315947e2bb8e088d31bb25a2cdeef5e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c1cf57aa2125638d9155c209d85360a5154b3606
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945262"
+ms.locfileid: "64953370"
 ---
 # <a name="plan-external-collaboration-with-channel-conversations-file-collaboration-and-shared-apps"></a>Planear la colaboración externa con conversaciones de canal, colaboración de archivos y aplicaciones compartidas
 
@@ -51,7 +51,7 @@ En este artículo se describe la cuarta opción, la colaboración en grupos con 
 
 Al colaborar en un equipo con personas ajenas a su organización, hay dos opciones para cómo esas personas acceden a los recursos que comparte con ellos.
 
-**Uso compartido de invitados**
+### <a name="guest-sharing"></a>Uso compartido de invitados
 
 El uso compartido de invitados usa Azure AD colaboración B2B para permitir el uso compartido y la colaboración con personas ajenas a su organización mediante la adición de una cuenta de invitado en Azure AD para cada persona. Las cuentas de invitado se pueden usar para lo siguiente:
 
@@ -60,7 +60,7 @@ El uso compartido de invitados usa Azure AD colaboración B2B para permitir el u
 
 Los invitados de un equipo tienen funcionalidades similares a las de los miembros normales del equipo.
 
-**Participantes externos en canales compartidos**
+### <a name="external-participants-in-shared-channels"></a>Participantes externos en canales compartidos
 
 Los participantes externos acceden a los recursos compartidos de su organización mediante su propia identidad de Azure AD o Microsoft 365. Esto se habilita mediante Azure AD conexión directa B2B a través de una relación organizativa configurada por ambas organizaciones. Las cuentas de invitado no se usan en esta relación.
 
@@ -81,14 +81,15 @@ En la tabla siguiente se describen las experiencias disponibles en función del 
 |Uso de canales privados|v|v|N|
 |Cuenta en el directorio|v|v|N|
 |Revisiones de acceso|v|v|v|
-            
+
 ## <a name="planning-considerations"></a>Consideraciones de planeación
 
-La mayoría de las organizaciones usarán tanto el uso compartido de invitados como los canales compartidos con participantes externos. 
+La mayoría de las organizaciones usarán tanto el uso compartido de invitados como los canales compartidos con participantes externos.
 
 El uso compartido de invitados está habilitado de forma predeterminada en Azure AD y en Microsoft 365 (Teams, Grupos de Microsoft 365 y SharePoint). Esto permite a los usuarios invitar a los invitados a equipos y sitios y compartir archivos con ellos sin tener que solicitar asistencia de TI.
 
 Debe usar el uso compartido de invitados si:
+
 - Quiere invitar a personas de fuera de la organización al equipo en lugar de canales individuales
 - Quiere compartir archivos o carpetas en un canal con personas ajenas a la organización que no están en el canal.
 - Quiere colaborar con personas ajenas a su organización que no tengan una cuenta profesional o educativa.
@@ -104,49 +105,48 @@ Si tiene previsto usar canales compartidos con otras organizaciones, puede elegi
 
 Los canales compartidos se integran con las características de Microsoft Purview.
 
-##### <a name="communications-compliance"></a>Cumplimiento de comunicaciones
+### <a name="communications-compliance"></a>Cumplimiento de comunicaciones
 
 Los administradores pueden establecer directivas para supervisar el contenido de todos los usuarios del canal. Todo el contenido de los mensajes de los canales, incluidos los canales compartidos, está cubierto por [las directivas de cumplimiento de comunicaciones](/microsoft-365/compliance/communication-compliance). Los canales compartidos heredan la directiva de la organización host.
 
-##### <a name="conditional-access"></a>Acceso condicional
+### <a name="conditional-access"></a>Acceso condicional
 
 Las [directivas de acceso condicional](/azure/active-directory/conditional-access/overview) de la organización host se aplican a los participantes externos, incluidos los usuarios de conexión directa B2B. No se usan las directivas de la organización externa. Los siguientes tipos de directivas de acceso condicional se admiten con canales compartidos:
 
 - Directivas con ámbito para todos los invitados, participantes externos y SharePoint aplicaciones en la nube en línea.
-- Conceda controles de acceso que requieran MFA, un dispositivo compatible o un dispositivo híbrido Azure AD unido. 
+- Conceda controles de acceso que requieran MFA, un dispositivo compatible o un dispositivo híbrido Azure AD unido.
 
 Las directivas basadas en IP se admiten en el nivel de archivo SharePoint. Por lo tanto, un participante externo podría acceder al canal compartido desde una ubicación restringida, pero bloquearse al intentar abrir un archivo.
 
-##### <a name="data-loss-prevention-dlp"></a>Prevención de pérdida de datos (DLP)
+### <a name="data-loss-prevention-dlp"></a>Prevención de pérdida de datos (DLP)
 
 Los administradores pueden aplicar [directivas DLP de Microsoft Purview](/microsoft-365/compliance/dlp-policy-design) a un equipo donde todos los canales, incluidos los canales compartidos, heredan la directiva. Los canales compartidos heredan la directiva de la organización host.
 
-##### <a name="retention-policy"></a>Directiva de retención
+### <a name="retention-policy"></a>Directiva de retención
 
 Los administradores pueden aplicar una [directiva de retención](/microsoft-365/compliance/retention) en un equipo donde todos los canales, incluidos los canales compartidos, heredan la directiva de retención. Los canales compartidos heredan la directiva del equipo primario.
 
-##### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 
 [Las etiquetas de confidencialidad](/microsoft-365/compliance/sensitivity-labels) disponibles en la organización host son las únicas etiquetas que se pueden aplicar a los documentos de un sitio de canal compartido. Los participantes externos no pueden abrir un archivo cifrado mediante una etiqueta de confidencialidad. No se usa el etiquetado automático.
 
 Los canales compartidos y sus sitios de SharePoint asociados heredan la etiqueta del equipo primario.
 
-##### <a name="information-barriers"></a>Barreras de información
+### <a name="information-barriers"></a>Barreras de información
 
 Los usuarios que no pueden comunicarse por [directivas de barrera de información](/microsoftteams/information-barriers-in-teams) no pueden formar parte del canal compartido. Las directivas de barrera de información solo son eficaces para los usuarios de la organización host. Si los usuarios son participantes externos en el canal compartido de otra organización, no se aplican directivas de barrera de información.
 
-##### <a name="ediscovery"></a>eDiscovery
+### <a name="ediscovery"></a>eDiscovery
 
 Los administradores pueden realizar búsquedas de todos los usuarios del canal. Todos los canales, incluido el canal compartido, se pueden detectar. El administrador de cumplimiento puede detectar todos los datos de mensaje del canal independientemente de quién haya agregado los datos.
 
-##### <a name="legal-hold"></a>Suspensión legal
+### <a name="legal-hold"></a>Suspensión legal
 
 Los administradores pueden poner en espera a los miembros de solo canal de la organización host que no formen parte del equipo. También pueden [poner a todo el equipo en espera](/MicrosoftTeams/legal-hold). Los administradores no pueden poner a un participante externo en espera.
 
-##### <a name="audit-logs"></a>Registros de auditoría
+### <a name="audit-logs"></a>Registros de auditoría
 
 Todas las acciones realizadas para [los eventos de auditoría existentes](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log) se auditan en canales compartidos.
-
 
 ## <a name="related-topics"></a>Temas relacionados
 

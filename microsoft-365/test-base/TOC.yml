@@ -8,11 +8,11 @@
   items:
     - name: Crear cuenta base de pruebas
       href: createAccount.md
-    - name: Prueba de la aplicación en test base
+    - name: Probar la aplicación en Test Base
       items:
         - name: Información general
           href: testoverview.md
-        - name: Paquete de archivos binarios de prueba en Test Base
+        - name: Prueba de los archivos binarios en la base de prueba
           href: testapplication.md
         - name: Prueba de la aplicación de Intune en Test Base
           href: testintuneapplication.md

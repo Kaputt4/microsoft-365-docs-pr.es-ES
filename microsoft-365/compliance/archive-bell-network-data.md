@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector TeleMessage para importar y archivar datos SMS y MMS desde Bell Network. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: ad1426d6e0aa52a23719d024e4cad649baad3db4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dc23e3788958270712bab493cd0364a80a0377f9
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937265"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992796"
 ---
 # <a name="set-up-a-connector-to-archive-bell-network-data"></a>Configuración de un conector para archivar datos de Bell Network
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector de TeleMessage en el portal de cumplimiento de Microsoft Purview para importar y archivar mensajes de Servicio de mensajería breve (SMS) y Servicio de mensajería multimedia (MMS) de Bell Network. Después de configurar y configurar un conector, se conecta a bell network de la organización una vez al día e importa mensajes SMS y MMS a buzones de Microsoft 365.
 

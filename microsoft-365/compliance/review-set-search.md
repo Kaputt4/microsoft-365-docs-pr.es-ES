@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo crear y ejecutar una consulta en un conjunto de revisión para organizar el contenido para una revisión más eficaz en un caso de exhibición de documentos electrónicos (Premium) de Microsoft Purview.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ead066428d5c2404da5bf863ad428784b3c3a30c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: aad8cd7461c795f8ecba03edab76e81e8384430d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936299"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991938"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>Consultar y filtrar el contenido de un conjunto de revisión
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En la mayoría de los casos, será útil profundizar en el contenido de un conjunto de revisión y organizarlo para facilitar una revisión más eficaz. El uso de filtros y consultas en un conjunto de revisión le ayuda a centrarse en un subconjunto de documentos que cumplen los criterios de la revisión.
 

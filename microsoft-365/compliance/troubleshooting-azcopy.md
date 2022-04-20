@@ -19,14 +19,16 @@ description: Solución de problemas de errores de Azure AzCopy al cargar datos q
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: ed9910df4da310034320ea030c8b5da1c5918e52
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ff8f69e6efeab3e0f0e9d8ee2f739caaa40d7c85
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943499"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991806"
 ---
 # <a name="troubleshoot-azcopy-in-ediscovery-premium"></a>Solución de problemas de AzCopy en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Al cargar datos o documentos que no son de Microsoft 365 para la corrección de errores en microsoft Purview eDiscovery (Premium), la interfaz de usuario proporciona un comando de Azure AzCopy que contiene parámetros con la ubicación en la que se almacenan los archivos que desea cargar y la ubicación de almacenamiento de Azure en la que se cargarán los archivos. Para cargar los documentos, copie este comando y ejecútelo en un símbolo del sistema en el equipo local.  En la captura de pantalla siguiente se muestra un ejemplo de un comando azcopy:
 

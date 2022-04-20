@@ -18,20 +18,22 @@ search.appverid:
 - MOE150
 ms.custom: admindeeplinkMAC
 description: Obtenga información sobre las solicitudes de caja de seguridad del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede acceder a los datos cuando se produce un problema.
-ms.openlocfilehash: 8f875f485830d59af733c6c76a5a3d297bedb2cc
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: cf9a2a6d682ca87e97986389f640a536775ca014
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759951"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953834"
 ---
-# <a name="customer-lockbox-in-office-365"></a>Caja de seguridad del cliente en Office 365
+# <a name="microsoft-purview-customer-lockbox"></a>Caja de seguridad del cliente de Microsoft Purview
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En este artículo se proporcionan instrucciones de implementación y configuración para la Caja de seguridad del cliente. La Caja de seguridad del cliente admite solicitudes de acceso a datos en Exchange Online, SharePoint Online, OneDrive para la Empresa y Teams. Para recomendar soporte técnico para otros servicios, envíe una solicitud en el [Portal de comentarios](https://feedbackportal.microsoft.com).
 
-Para ver las opciones para obtener licencias para que los usuarios se beneficien de Microsoft 365 ofertas de cumplimiento, consulte la [guía de licencias de Microsoft 365 para el cumplimiento de & de seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Para ver las opciones para obtener licencias para que los usuarios se beneficien de las ofertas de Microsoft Purview, consulte la [guía de licencias de Microsoft 365 para el cumplimiento de & seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-La Caja de seguridad del cliente garantiza que Microsoft no puede acceder a su contenido para realizar operaciones de servicio sin su aprobación explícita. La Caja de seguridad del cliente le lleva al proceso de flujo de trabajo de aprobación que Microsoft usa para asegurarse de que solo las solicitudes autorizadas permiten el acceso al contenido. Para más información sobre el proceso de flujo de trabajo de Microsoft, consulte [Administración de acceso con privilegios en Microsoft 365](privileged-access-management-solution-overview.md).
+La Caja de seguridad del cliente garantiza que Microsoft no puede acceder a su contenido para realizar operaciones de servicio sin su aprobación explícita. La Caja de seguridad del cliente le lleva al proceso de flujo de trabajo de aprobación que Microsoft usa para asegurarse de que solo las solicitudes autorizadas permiten el acceso al contenido. Para más información sobre el proceso de flujo de trabajo de Microsoft, consulte [Administración de acceso con privilegios](privileged-access-management-solution-overview.md).
 
 En ocasiones, los ingenieros de Microsoft ayudan a solucionar los problemas que surgen con el servicio. Por lo general, los ingenieros corrigen los problemas con amplias herramientas de telemetría y depuración que Microsoft tiene para sus servicios. Sin embargo, algunos casos requieren que un ingeniero de Microsoft acceda a su contenido para determinar la causa principal y corregir el problema. Caja de seguridad del cliente requiere que el ingeniero le solicite acceso como paso final en el flujo de trabajo de aprobación. Esto le ofrece la opción de aprobar o denegar la solicitud para su organización y proporcionar control de acceso directo al contenido.
 
@@ -102,15 +104,15 @@ Puede activar los controles de Caja de seguridad del cliente en el Centro de adm
     ![Denegar solicitudes de caja de seguridad del cliente.](../media/CustomerLockbox8.png)
 
 > [!NOTE]
-> Use el cmdlet Set-AccessToCustomerDataRequest para aprobar, rechazar o cancelar solicitudes de caja de seguridad del cliente de Microsoft 365 que controlan el acceso a los datos por parte de los ingenieros de soporte técnico de Microsoft. Para obtener más información, vea [Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
+> Use el cmdlet Set-AccessToCustomerDataRequest para aprobar, denegar o cancelar solicitudes de caja de seguridad del cliente de Microsoft Purview que controlan el acceso a los datos por parte de los ingenieros de soporte técnico de Microsoft. Para obtener más información, vea [Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
 
 ## <a name="auditing-customer-lockbox-requests"></a>Solicitudes de auditoría de caja de seguridad del cliente
 
-Los registros de auditoría correspondientes a las solicitudes de caja de seguridad del cliente se registran en el registro de auditoría de Microsoft 365. Puede acceder a estos registros mediante la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) en el Centro de cumplimiento de Microsoft 365. Las acciones relacionadas con la aceptación o denegación de una solicitud de caja de seguridad del cliente y las acciones realizadas por ingenieros de Microsoft (cuando se aprueban las solicitudes de acceso) también se registran en el registro de auditoría. Puede buscar y revisar estos registros de auditoría.
+Los registros de auditoría correspondientes a las solicitudes de caja de seguridad del cliente se registran en el registro de auditoría de Microsoft 365. Puede acceder a estos registros mediante la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) en el portal de cumplimiento de Microsoft Purview. Las acciones relacionadas con la aceptación o denegación de una solicitud de caja de seguridad del cliente y las acciones realizadas por ingenieros de Microsoft (cuando se aprueban las solicitudes de acceso) también se registran en el registro de auditoría. Puede buscar y revisar estos registros de auditoría.
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>Busque en el registro de auditoría la actividad relacionada con las solicitudes de caja de seguridad del cliente.
 
-Antes de poder usar el registro de auditoría para realizar un seguimiento de las solicitudes de la Caja de seguridad del cliente, hay algunos pasos que debe seguir para configurar el registro de auditoría, incluida la asignación de permisos para buscar en el registro de auditoría. Para obtener más información, vea [Configurar la auditoría básica en Microsoft 365](set-up-basic-audit.md). Una vez completada la instalación, siga estos pasos para crear una consulta de búsqueda de registros de auditoría para devolver registros de auditoría relacionados con la caja de seguridad del cliente:
+Antes de poder usar el registro de auditoría para realizar un seguimiento de las solicitudes de la Caja de seguridad del cliente, hay algunos pasos que debe seguir para configurar el registro de auditoría, incluida la asignación de permisos para buscar en el registro de auditoría. Para obtener más información, vea [Configurar Microsoft Purview Audit (Estándar).](set-up-basic-audit.md) Una vez completada la instalación, siga estos pasos para crear una consulta de búsqueda de registros de auditoría para devolver registros de auditoría relacionados con la caja de seguridad del cliente:
 
 1. Ve a <https://compliance.microsoft.com>.
   
@@ -159,7 +161,7 @@ Después de descargar el archivo, puede abrirlo en Excel y, a continuación, fil
 
 ### <a name="use-powershell-to-search-and-export-audit-records"></a>Uso de PowerShell para buscar y exportar registros de auditoría
 
-Una alternativa al uso de la herramienta de búsqueda de auditoría en el Centro de cumplimiento de Microsoft 365 es ejecutar el cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell. Una ventaja del uso de PowerShell es que puede buscar específicamente actividades **set-accessToCustomerDataRequest** o actividades realizadas por ingenieros de Microsoft relacionadas con una solicitud de caja de seguridad del cliente.
+Una alternativa al uso de la herramienta de búsqueda de auditoría en el portal de cumplimiento de Microsoft Purview es ejecutar el cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell. Una ventaja del uso de PowerShell es que puede buscar específicamente actividades **set-accessToCustomerDataRequest** o actividades realizadas por ingenieros de Microsoft relacionadas con una solicitud de caja de seguridad del cliente.
 
 Después de [conectarse a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), ejecute uno de los siguientes comandos. Reemplace los marcadores de posición por un intervalo de fechas específico.
 

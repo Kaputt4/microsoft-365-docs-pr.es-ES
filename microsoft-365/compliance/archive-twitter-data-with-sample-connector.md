@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo los administradores pueden configurar y usar un conector nativo para importar datos de Twitter a Microsoft 365.
-ms.openlocfilehash: d025de04060184a6bd39fcef5ab68acdde65bc01
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 95a6a3abd9bed908172ea41b33e4fd60376bea01
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940563"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993521"
 ---
 # <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>Configuración de un conector de Microsoft para archivar datos de Twitter (versión preliminar)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de Twitter a Microsoft 365. Después de configurar y configurar el conector, se conecta a la cuenta de Twitter de su organización (de forma programada), convierte el contenido de un elemento en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a un buzón de correo en Microsoft 365.
 

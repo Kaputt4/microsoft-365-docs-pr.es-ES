@@ -1,5 +1,5 @@
 ---
-title: Administración de incidentes y alertas desde Defender para Office 365 en Microsoft 365 Defender
+title: Administrar incidentes y alertas de Defender para Office 365 en Microsoft 365 Defender
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,12 +18,12 @@ ms.custom: ''
 description: El personal de SecOps puede aprender a usar la cola incidentes de Microsoft 365 Defender para administrar incidentes en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 97e3235a0b5d03961f87ba3110f71031f60824d3
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 04a65591e96e11f2e949ce161fd592d313af2a66
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747465"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64970768"
 ---
 # <a name="manage-incidents-and-alerts-from-microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Administrar incidentes y alertas desde Microsoft Defender para Office 365 en Microsoft 365 Defender
 

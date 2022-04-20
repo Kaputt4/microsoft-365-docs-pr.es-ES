@@ -1,5 +1,5 @@
 ---
-title: Obtenga más información sobre la Prevención de pérdida de datos de Microsoft 365 de punto de conexión
+title: Obtener información sobre la Prevención de pérdida de datos en punto de conexión
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,31 +18,33 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'La prevención de pérdida de datos de punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y las acciones de protección de esos archivos a los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento '
-ms.openlocfilehash: f32e84434258ff4b4c5ea6af24f69c607952b56a
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+description: 'La prevención de pérdida de datos en punto de conexión amplía la supervisión de las actividades de archivo y las acciones de protección de esos archivos a los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento '
+ms.openlocfilehash: e84d2de72e05991a7d8374a2e5214df90fb939d9
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714557"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953313"
 ---
-# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la Prevención de pérdida de datos de Microsoft 365 de punto de conexión
+# <a name="learn-about-endpoint-data-loss-prevention"></a>Obtener información sobre la Prevención de pérdida de datos en punto de conexión
 
-Puede usar la prevención de pérdida de datos (DLP) de Microsoft 365 para supervisar las acciones que se realizan en los elementos que ha determinado que son confidenciales y para ayudar a evitar el uso compartido involuntario de esos elementos. Para obtener más información sobre la DLP, vea [Obtener información sobre la prevención de pérdida de datos](dlp-learn-about-dlp.md).
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-**La Prevención de pérdida de datos en puntos finales** (DLP para punto de conexión) amplía las capacidades de supervisión y protección de la actividad de DLP a los elementos sensibles almacenados físicamente en dispositivos Windows 10, Windows 11 y macOS (Catalina 10.15 y superior). Una vez que los dispositivos están incorporados en las soluciones del Centro de cumplimiento de Microsoft 365, la información sobre las acciones de los usuarios relacionadas con los elementos confidenciales se hace visible en el[explorador de actividades](data-classification-activity-explorer.md), y se pueden aplicar acciones de protección a estos elementos mediante [directivas DLP](create-test-tune-dlp-policy.md).
+Puede usar la prevención de pérdida de datos (DLP) de Microsoft Purview para supervisar las acciones que se realizan en los elementos que ha determinado que son confidenciales y para ayudar a evitar el uso compartido involuntario de esos elementos. Para más información sobre la DLP, vea [Obtener información sobre la prevención de pérdida de datos](dlp-learn-about-dlp.md).
+
+**La Prevención de pérdida de datos en puntos finales** (DLP para punto de conexión) amplía las capacidades de supervisión y protección de la actividad de DLP a los elementos sensibles almacenados físicamente en dispositivos Windows 10, Windows 11 y macOS (Catalina 10.15 y superior). Una vez que los dispositivos están incorporados en las soluciones del Centro de cumplimiento de Microsoft Purview, la información sobre las acciones de los usuarios relacionadas con los elementos confidenciales se hace visible en el [explorador de actividades](data-classification-activity-explorer.md), y se pueden aplicar acciones de protección a estos elementos mediante [directivas DLP](create-test-tune-dlp-policy.md).
 
 > [!TIP]
 > Si está buscando el control de dispositivos para el almacenamiento extraíble, consulte [Control de dispositivo de Microsoft Defender para punto de conexión extraíble en el control de acceso de almacenamiento](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
 
 > [!NOTE]
-> En el cumplimiento de Microsoft 365, la evaluación de directivas DLP de elementos confidenciales se produce de forma centralizada, por lo que no hay retraso temporal para que las directivas y las actualizaciones de las directivas se distribuyan a dispositivos individuales. Cuando una directiva se actualiza en el centro de cumplimiento, tarda aproximadamente una hora en sincronizarse en todo el servicio. Una vez sincronizadas las actualizaciones de directivas, los elementos de los dispositivos de destino se vuelven a evaluar automáticamente la próxima vez que se accede a ellos o se modifican.
+> En Microsoft Purview, la evaluación de directivas DLP de elementos confidenciales se produce de forma centralizada, por lo que no hay retraso temporal para que las directivas y las actualizaciones de las directivas se distribuyan a dispositivos individuales. Cuando una directiva se actualiza en el centro de cumplimiento, tarda aproximadamente una hora en sincronizarse en todo el servicio. Una vez sincronizadas las actualizaciones de directivas, los elementos de los dispositivos de destino se vuelven a evaluar automáticamente la próxima vez que se accede a ellos o se modifican.
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Actividades en punto de conexión que puede supervisar y sobre las que puede tomar medidas
 
-Microsoft DLP para punto de conexión permite auditar y administrar los siguientes tipos de actividades que los usuarios realizan en elementos confidenciales almacenados físicamente en dispositivos Windows 10, Windows 11 y macOS.
+DLP en punto de conexión permite auditar y administrar los siguientes tipos de actividades que los usuarios realizan en elementos confidenciales almacenados físicamente en dispositivos Windows 10, Windows 11 y macOS.
 
-|Actividad |Descripción  |Windows 10 1809 y versiones posteriores/Windows 11| macOS Catalina 10.15 (versión preliminar) | Auditable/restringible|
+|Actividad |Descripción  |Windows 10 1809 y versiones posteriores/Windows 11| macOS Catalina 10.15| Auditable/restringible|
 |---------|---------|---------|---------|---------|
 |cargar en el servicio en la nube o acceso por exploradores no permitidos    | Detecta cuándo un usuario intenta cargar un elemento en un dominio de servicio restringido o tener acceso a un elemento con un explorador.  Si usa un explorador que se muestra en DLP como un explorador que no es el permitido, la actividad de carga se bloqueará y se redirigirá al usuario para usar la arista de Microsoft Edge. Por último, Microsoft Edge puede permitir o bloquear la carga o el acceso en función de la configuración de la directiva DLP.         |compatible | compatible|auditable y restringible|
 |copiar a otra aplicación    |Se detecta cuando un usuario intenta copiar información de un elemento protegido y, a continuación, lo pega en otra aplicación, proceso o elemento. Esta actividad no detecta la copia y el pegado de información dentro de la misma aplicación, proceso o elemento.|compatible|compatible         | auditable y restringible|
@@ -56,7 +58,7 @@ Microsoft DLP para punto de conexión permite auditar y administrar los siguient
 
 ## <a name="best-practice-for-endpoint-dlp-policies"></a>Procedimiento recomendado para directivas DLP de punto de conexión
 
-Supongamos que quiere bloquear todos los elementos que contengan números de tarjetas de crédito para que no salgan de los puntos de conexión de los usuarios del departamento de finanzas. Se recomienda lo siguiente:
+Supongamos que quiere bloquear todos los elementos que contengan números de tarjetas de crédito para que no salgan de los puntos de conexión de los usuarios del departamento de finanzas. Se recomienda:
 
 - Cree una directiva y aplíquela a los puntos finales y a ese grupo de usuarios.
 - Cree una regla en la directiva que detecte el tipo de información que desea proteger. En este caso, el **contenido contiene** la configuración *Tipo de información confidencial** y seleccione **Tarjeta de crédito**.
@@ -125,7 +127,7 @@ Debe tener en cuenta algunos conceptos adicionales antes de profundizar en DLP e
 
 ### <a name="enabling-device-management"></a>Habilitar la administración de dispositivos
 
-La administración de dispositivos es la funcionalidad que permite la colección de telemetría desde dispositivos y la incluye en las soluciones de cumplimiento de Microsoft 365 como DLP en punto de conexión y la [administración de riesgos internos](insider-risk-management.md). Necesitará incorporar todos los dispositivos que quiera usar como ubicaciones en directivas DLP.
+La administración de dispositivos es la funcionalidad que permite la colección de telemetría desde dispositivos y la incluye en las soluciones de cumplimiento de Microsoft Purview como DLP en punto de conexión y la [administración de riesgos internos](insider-risk-management.md). Necesitará incorporar todos los dispositivos que quiera usar como ubicaciones en directivas DLP.
 
 > [!div class="mx-imgBorder"]
 > ![habilitar la administración de dispositivos.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
@@ -201,10 +203,10 @@ Por ejemplo, si se copia un archivo a un medio USB extraíble, vería estos atri
 
 Ahora que ya conoce DLP en punto de conexión, estos son los pasos siguientes:
 
-1. [Incorporar dispositivos Windows 10 o Windows 11 en la información general de Microsoft 365](device-onboarding-overview.md)
-1. [Incorporar dispositivos macOS en la información general de Microsoft 365 (versión preliminar)](device-onboarding-macos-overview.md)
+1. [Introducción a la incorporación de dispositivos Windows 10 y Windows 11 a Microsoft Purview](device-onboarding-overview.md)
+1. [introducción a la incorporación de dispositivos macOS a Microsoft Purview](device-onboarding-macos-overview.md)
 1. [Configuración de la prevención de pérdida de datos de punto de conexión](dlp-configure-endpoint-settings.md)
-1. [Uso de la prevención de pérdida de datos en punto de conexión de Microsoft](endpoint-dlp-using.md)
+1. [Uso de la prevención de pérdida de datos en punto de conexión](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Consulte también
 

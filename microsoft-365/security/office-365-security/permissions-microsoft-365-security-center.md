@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4e819a9de9d5ccd66caab4bc13d8b11c1a95ab03
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 3381d3eb823b818aec01a181f176cb56f6af310c
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681730"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939199"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Permisos en el portal de Microsoft 365 Defender
 
@@ -43,7 +43,7 @@ El portal de Microsoft 365 Defender en <https://security.microsoft.com> admite l
 Para administrar permisos en el portal de Microsoft 365 Defender, vaya a **Permisos y roles** o <https://security.microsoft.com/securitypermissions>. Debe ser **administrador global** o un miembro del grupo de roles de **Administración de la organización** en el portal de Microsoft 365 Defender. En concreto, el rol de **Administración de roles** permite a los usuarios ver, crear y modificar grupos de roles en el portal de Microsoft 365 Defender y, de forma predeterminada, ese rol solo se asigna al grupo de roles **Administración de la organización**.
 
 > [!NOTE]
-> Para obtener información sobre los permisos en el Centro de cumplimiento de Microsoft 365, consulte [Permisos en el Centro de cumplimiento de Microsoft 365](../../compliance/microsoft-365-compliance-center-permissions.md).
+> Para obtener información sobre los permisos en el portal de cumplimiento de Microsoft Purview, consulte [Permisos en el portal de cumplimiento de Microsoft Purview](../../compliance/microsoft-365-compliance-center-permissions.md).
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>Relación de los miembros, los roles y los grupos de roles
 
@@ -55,7 +55,7 @@ Un **grupo de roles** es un conjunto de roles que permite a las personas hacer s
 
 El portal de Microsoft 365 Defender> incluye grupos de roles predeterminados para las tareas y funciones más comunes que deberá asignar. Por lo general, le recomendamos que simplemente agregue usuarios individuales como **miembros** a los grupos de roles predeterminados.
 
-![Diagrama que muestra la relación de los grupos de roles con los roles y miembros.](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+:::image type="content" source="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png" alt-text="La relación de un grupo de roles con sus roles y miembros" lightbox="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png":::
 
 ## <a name="roles-and-role-groups-in-the-microsoft-365-defender-portal"></a>Roles y grupos de roles en el portal de Microsoft 365 Defender
 
@@ -63,9 +63,9 @@ Los siguientes tipos de roles y grupos de roles están disponibles en la página
 
 - **Roles de Azure AD**: puede ver los roles y los usuarios asignados, pero no puede administrarlos directamente en el portal de Microsoft 365 Defender. Los roles de Azure AD son roles centrales que asignan permisos para **todos** los servicios de Microsoft 365.
 
-- **Roles de colaboración y correo electrónico**: son los mismos grupos de roles que están disponibles en el Centro de seguridad y cumplimiento, pero puede administrarlos directamente en el portal de Microsoft 365 Defender. Los permisos que asigna aquí son específicos del portal de Microsoft 365 Defender, el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad y cumplimiento, y no cubren todos los permisos necesarios en otras cargas de trabajo de Microsoft 365.
+- **Roles de colaboración y correo electrónico**: son los mismos grupos de roles que están disponibles en el Centro de seguridad y cumplimiento, pero puede administrarlos directamente en el portal de Microsoft 365 Defender. Los permisos que asigna aquí son específicos del portal de Microsoft 365 Defender, el portal de cumplimiento de Microsoft Purview y el Centro de seguridad y cumplimiento, y no cubren todos los permisos necesarios en otras cargas de trabajo de Microsoft 365.
 
-![Página Permisos y roles en el portal de Microsoft 365 Defender.](../../media/m365-sc-permissions-and-roles-page.png)
+:::image type="content" source="../../media/m365-sc-permissions-and-roles-page.png" alt-text="la página Permisos y roles del portal de Microsoft 365 Defender" lightbox="../../media/m365-sc-permissions-and-roles-page.png":::
 
 ### <a name="azure-ad-roles-in-the-microsoft-365-defender-portal"></a>Roles de Azure AD en el portal de Microsoft 365 Defender
 
@@ -73,7 +73,7 @@ Al abrir el portal de Microsoft 365 Defender en <https://security.microsoft.com>
 
 Al seleccionar un rol, se muestra un desplegable con detalles que contiene la descripción del rol y las asignaciones de usuario. Para administrar esas asignaciones, debe hacer clic en **Administrar miembros en Azure AD** en el desplegable de detalles.
 
-![Vincular a administrar permisos en Azure Active Directory.](../../media/permissions-manage-in-azure-ad-link.png)
+:::image type="content" source="../../media/permissions-manage-in-azure-ad-link.png" alt-text="El vínculo para administrar permisos en Azure Active Directory" lightbox="../../media/permissions-manage-in-azure-ad-link.png":::
 
 Para más información, consulte [Visualización y asignación de roles de administrador en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal).
 

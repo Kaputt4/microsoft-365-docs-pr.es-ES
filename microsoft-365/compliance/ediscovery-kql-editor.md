@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede usar el editor de KQL para configurar consultas de búsqueda de exhibición de documentos electrónicos en Búsqueda de contenido, eDiscovery (estándar) y eDiscovery (Premium).
-ms.openlocfilehash: f1339b064c736d19bb428f812429cf0620cb3f53
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cbd7adb02c926477fd81568ed950ebd16110c79b
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949969"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993806"
 ---
 # <a name="use-the-kql-editor-to-build-search-queries"></a>Uso del editor de KQL para crear consultas de búsqueda
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La nueva experiencia de consulta KQL en Microsoft 365 búsqueda de herramientas de exhibición de documentos electrónicos proporciona comentarios e instrucciones al compilar consultas de búsqueda en Búsqueda de contenido, Exhibición de documentos electrónicos de Microsoft Purview (estándar) y eDiscovery (Premium). Al escribir consultas en el editor, proporciona autocompletar para las propiedades y condiciones que se pueden buscar admitidas y proporciona listas de valores admitidos para las propiedades y condiciones estándar. Por ejemplo, si especifica la propiedad email en la `kind` consulta, el editor presentará una lista de valores admitidos que puede seleccionar. El editor de KQL también muestra posibles errores de consulta en tiempo real que puede corregir antes de ejecutar la búsqueda. Lo mejor de todo es que puede pegar consultas complejas directamente en el editor sin tener que compilar manualmente consultas mediante las tarjetas de palabras clave y condiciones del generador de condiciones estándar.
   

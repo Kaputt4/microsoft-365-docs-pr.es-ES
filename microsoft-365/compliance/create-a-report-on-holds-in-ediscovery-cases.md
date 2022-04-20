@@ -20,14 +20,16 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo generar un informe que contenga información sobre todas las retenciones asociadas a casos de exhibición de documentos electrónicos.
-ms.openlocfilehash: b0460b725359e2953c0a27b517a362327ae504f5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 98cdad3d125fbeab9afd9d7d99b572e5f0bf7386
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946471"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993214"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>Uso de un script para crear un informe sobre retenciones en casos de exhibición de documentos electrónicos
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 El script de este artículo permite a los administradores de exhibición de documentos electrónicos y administradores de exhibición de documentos electrónicos generar un informe que contiene información sobre todas las retenciones asociadas a los casos de Core y eDiscovery (Premium) en el portal de cumplimiento de Microsoft Purview. El informe contiene información como el nombre del caso al que está asociada una retención, las ubicaciones de contenido que se colocan en suspensión y si la suspensión está basada en consultas. Si hay casos que no tienen retenciones, el script creará un informe adicional con una lista de casos sin retenciones.
 

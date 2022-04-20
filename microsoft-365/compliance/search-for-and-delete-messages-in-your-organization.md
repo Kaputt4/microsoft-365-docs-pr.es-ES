@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Use la característica de búsqueda y depuración en el Centro de cumplimiento de Microsoft 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: 8d283148b0a0cee0aed3d91a6332c96bd31111b4
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+description: Use la característica de búsqueda y depuración en el portal de cumplimiento de Microsoft Purview para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
+ms.openlocfilehash: 23eeff8078dbd7ab65b0bddb9684aa81d65aab94
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64846979"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64936255"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Buscar y eliminar mensajes de correo electrónico
 
@@ -43,10 +43,10 @@ Puede usar la característica Búsqueda de contenido para buscar y eliminar un m
 
 - El flujo de trabajo de búsqueda y purga descrito en este artículo no elimina los mensajes de chat ni ningún otro contenido de Microsoft Teams. Si la búsqueda de contenido que se crea en el paso 2 devuelve elementos de Microsoft Teams, esos elementos no se eliminarán cuando se purguen los elementos en el paso 3. Para buscar y eliminar mensajes de chat, vea [Buscar y purgar mensajes de chat en Teams](search-and-delete-Teams-chat-messages.md).
 
-- Para crear y ejecutar una búsqueda de contenido, tiene que ser un miembro del grupo de roles **Administrador de eDiscovery** o que se le asigne el rol **Búsqueda de cumplimiento** en el Centro de cumplimiento de Microsoft 365. Para eliminar mensajes, debe ser miembro del grupo de roles **Administración de la organización** o tener asignado el rol **Buscar y purgar** en el Centro de cumplimiento. Para obtener información sobre cómo agregar usuarios a un grupo de roles, vea [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
+- Para crear y ejecutar una búsqueda de contenido, tiene que ser un miembro del grupo de roles **Administrador de eDiscovery** o que se le asigne el rol **Búsqueda de cumplimiento** en el portal de cumplimiento de Microsoft Purview. Para eliminar mensajes, debe ser miembro del grupo de roles **Administración de la organización** o tener asignado el rol **Buscar y purgar** en el Centro de cumplimiento. Para obtener información sobre cómo agregar usuarios a un grupo de roles, vea [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
 
   > [!NOTE]
-  > El rol **Administración de la organización** existe en Exchange Online y en el Centro de cumplimiento de Microsoft 365. Se trata de grupos de roles independientes que conceden permisos diferentes. Ser miembro de la **Administración de la organización** en Exchange Online no concede los permisos necesarios para eliminar mensajes de correo electrónico. Si no se le asigna el rol **Buscar y purgar** en el Centro de cumplimiento (ya sea directamente o a través de un grupo de roles como la **Administración de la organización**), recibirá un error en el Paso 3 cuando ejecute el cmdlet **New-ComplianceSearchAction** con el mensaje "No se puede encontrar un parámetro que coincida con el nombre de parámetro 'Purge'".
+  > El rol **Administración de la organización** existe en Exchange Online y en el portal de cumplimiento. Se trata de grupos de roles independientes que conceden permisos diferentes. Ser miembro de la **Administración de la organización** en Exchange Online no concede los permisos necesarios para eliminar mensajes de correo electrónico. Si no se le asigna el rol **Buscar y purgar** en el Centro de cumplimiento (ya sea directamente o a través de un grupo de roles como la **Administración de la organización**), recibirá un error en el Paso 3 cuando ejecute el cmdlet **New-ComplianceSearchAction** con el mensaje "No se puede encontrar un parámetro que coincida con el nombre de parámetro 'Purge'".
 
 - Debe usar el PowerShell del Centro de seguridad y cumplimiento para eliminar mensajes. Vea el [paso 1](#step-1-connect-to-security--compliance-center-powershell) para obtener instrucciones sobre cómo conectarse.
 
@@ -56,7 +56,7 @@ Puede usar la característica Búsqueda de contenido para buscar y eliminar un m
 
 - El procedimiento descrito en este artículo solo se puede usar para eliminar elementos de buzones y carpetas públicas de Exchange Online. No se puede usar para eliminar el contenido de los sitios de SharePoint o OneDrive para la Empresa.
 
-- Los elementos de correo electrónico en un conjunto de revisiones en un caso de eDiscovery avanzado no se pueden eliminar utilizando los procedimientos de este artículo. Esto se debe a que los elementos de un conjunto de revisiones se almacenan en una ubicación de almacenamiento de Azure y no en el servicio activo. Esto significa que no se devolverán por la búsqueda de contenido que creó en el paso 1. Para eliminar elementos en un conjunto de revisiones, tiene que eliminar el caso de eDiscovery avanzado que contiene el conjunto de revisiones. Para más información, consulte [Cerrar o eliminar un caso de eDiscovery avanzado](close-or-delete-case.md).
+- Los elementos de correo electrónico en un conjunto de revisiones en un caso de eDiscovery (Premium) no se pueden eliminar utilizando los procedimientos de este artículo. Esto se debe a que los elementos de un conjunto de revisiones se almacenan en una ubicación de almacenamiento de Azure y no en el servicio activo. Esto significa que no se devolverán por la búsqueda de contenido que creó en el paso 1. Para eliminar elementos en un conjunto de revisiones, tiene que eliminar el caso de eDiscovery (Premium) que contiene el conjunto de revisiones. Para más información, consulte [Cerrar o eliminar un caso de eDiscovery (Premium)](close-or-delete-case.md).
 
 ## <a name="step-1-connect-to-security--compliance-center-powershell"></a>Paso 1: Conectarse al PowerShell del Centro de seguridad y cumplimiento
 
@@ -64,7 +64,7 @@ El siguiente paso es conectarse al PowerShell del Centro de seguridad y cumplimi
 
 ## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>Paso 2: Crear una búsqueda de contenido para encontrar el mensaje que se desea eliminar
 
-El segundo paso consiste en crear y ejecutar una búsqueda de contenido para buscar el mensaje que desee quitar de los buzones de la organización. Puede crear la búsqueda mediante el Centro de cumplimiento de Microsoft 365 o ejecutando los cmdlets **New-ComplianceSearch** y **Start-ComplianceSearch** en Seguridad y cumplimiento de PowerShell. Los mensajes que coincidan con la consulta de esta búsqueda se eliminarán al ejecutar el cmdlet **New-ComplianceSearchAction -Purge** en el [Paso 3](#step-3-delete-the-message). Para obtener información sobre cómo crear una búsqueda de contenido y configurar consultas de búsqueda, vea los temas siguientes:
+El segundo paso es crear y ejecutar una búsqueda de contenido para encontrar el mensaje que desea quitar de los buzones de la organización. Para crear la búsqueda, puede usar el portal de cumplimiento o ejecutar los cmdlets **New-ComplianceSearch** y **Start-ComplianceSearch** en el PowerShell del Centro de seguridad y cumplimiento. Los mensajes que coincidan con la consulta de esta búsqueda se eliminarán al ejecutar el comando **New-ComplianceSearchAction-Purge** en el [paso 3](#step-3-delete-the-message). Para obtener información sobre cómo crear una búsqueda de contenido y configurar consultas de búsqueda, vea los temas siguientes:
 
 - [Búsqueda de contenido en Office 365](content-search.md)
 
@@ -89,7 +89,7 @@ El objetivo de la consulta de búsqueda es limitar los resultados de la búsqued
 
 - Obtenga una vista previa de los resultados de la búsqueda para comprobar que la búsqueda solo devolvió el mensaje (o los mensajes) que quiere eliminar.
 
-- Use las estadísticas de estimación de búsqueda (que se muestran en el panel de detalles de la búsqueda en el Centro de cumplimiento de Microsoft 365 o mediante el cmdlet [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)) para obtener un recuento del total de resultados.
+- Use las estadísticas de estimación de búsqueda (que se muestran en el panel de detalles de la búsqueda en el portal de cumplimiento o mediante el cmdlet [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)) para obtener un recuento del número total de resultados.
 
 Estos son dos ejemplos de consultas para buscar mensajes de correo electrónico sospechosos.
 

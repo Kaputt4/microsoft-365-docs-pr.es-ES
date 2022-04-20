@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo administrar casos de exhibición de documentos electrónicos (estándar). Esto incluye el cierre de un caso, la reapertura de un caso cerrado y la eliminación de un caso.
-ms.openlocfilehash: 3ceb23f3ec215f3e9a7e5db036e71e5fe2842191
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ee18a169ace43f03a0407b87c8ae70705af2f43c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940365"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992378"
 ---
 # <a name="close-reopen-and-delete-a-ediscovery-standard-case"></a>Cerrar, volver a abrir y eliminar un caso de exhibición de documentos electrónicos (estándar)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En este artículo se describe cómo cerrar, volver a abrir y eliminar casos de exhibición de documentos electrónicos (estándar) de Microsoft Purview en Microsoft 365.
 

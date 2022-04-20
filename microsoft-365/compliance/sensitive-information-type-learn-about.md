@@ -16,16 +16,18 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: En este artículo se proporciona información general sobre los tipos de información confidencial y cómo detectan información confidencial, como el seguro social, la tarjeta de crédito o los números de cuenta bancaria para identificar elementos confidenciales.
-ms.openlocfilehash: aef78c5ab3348b7a0b00a649f94fa5e50a99a397
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0e154e0ee578b9a182cb7cd5b43cafba466f9bcd
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760325"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971359"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
-La identificación y clasificación de elementos confidenciales que están bajo el control de las organizaciones es el primer paso en la [materia de Information Protection](./information-protection.md).  Microsoft 365 proporciona tres formas de identificar elementos para que se puedan clasificar:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+La identificación y clasificación de elementos confidenciales que están bajo el control de las organizaciones es el primer paso en la [materia de Information Protection](./information-protection.md).  Microsoft Purview proporciona tres formas de identificar elementos para que se puedan clasificar:
 
 - manualmente por los usuarios
 - reconocimiento automatizado de patrones, como los tipos de información confidencial
@@ -37,7 +39,7 @@ Microsoft proporciona un gran número de SIT preconfigurados o puede crear los s
 
 ## <a name="sensitive-information-types-are-used-in"></a>Los tipos de información confidencial se usan en
 
-- [Directivas de prevención de pérdida de datos](dlp-learn-about-dlp.md)
+- [Directivas de prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md)
 - [Etiquetas de confidencialidad](sensitivity-labels.md)
 - [Etiquetas de retención](retention.md)
 - [Administración de riesgos internos](insider-risk-management.md)
@@ -53,7 +55,7 @@ Microsoft crea estos SIT en la consola de cumplimiento de forma predeterminada. 
 
 ### <a name="named-entity-sensitive-information-types"></a>Tipos de información confidencial de entidades con nombre
 
-Los SIT de entidad con nombre también se muestran en la consola de cumplimiento de forma predeterminada. Detectan nombres de personas, direcciones físicas y términos y condiciones médicos. No se pueden editar ni copiar. Consulte [Más información sobre las entidades con nombre (versión preliminar)](named-entities-learn.md#learn-about-named-entities-preview) para obtener más información. Los SIT de entidad con nombre se incluyen en dos tipos:
+Los SIT de entidad con nombre también se muestran en la consola de cumplimiento de forma predeterminada. Detectan nombres de personas, direcciones físicas y términos y condiciones médicos. No se pueden editar ni copiar. Consulte [Más información sobre las entidades con nombre ](named-entities-learn.md#learn-about-named-entities) para obtener más información. Los SIT de entidad con nombre se incluyen en dos tipos:
 
 **un-bundled**
 
@@ -172,9 +174,8 @@ Puede elegir entre varias opciones para crear tipos de información confidencial
 - **Usar PowerShell** : puede configurar tipos de información confidencial personalizados mediante PowerShell. Aunque este método es más complejo que utilizar la interfaz de usuario, tendrá más opciones de configuración. Vea [Crear un tipo de información confidencial en el centro de cumplimiento y seguridad PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 > [!NOTE]
-> Los niveles de confianza mejorados están disponibles para su uso inmediato en prevención de pérdida de datos para los servicios de Microsoft 365, Microsoft Information Protection para los servicios de Microsoft 365, cumplimiento de comunicaciones, gobernanza de la información y administración de registros.
-> Microsoft 365 Information Protection ahora admite idiomas de juego de caracteres de doble byte para:
->
+> Los niveles de confianza mejorados están disponibles para su uso inmediato en los servicios de prevención de pérdida de datos de Microsoft Purview, protección de la información, cumplimiento de comunicaciones, administración del ciclo de vida de datos y administración de registros.
+> Information Protection ahora admite idiomas de juego de caracteres de doble byte para:
 > - Chino (simplificado)
 > - Chino (tradicional)
 > - Coreano

@@ -1,5 +1,5 @@
 ---
-title: Búsqueda de contenido en un caso principal de exhibición de documentos electrónicos
+title: Buscar contenido en un caso de exhibición de documentos electrónicos (estándar)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Busque contenido que pueda ser relevante para un caso de exhibición de documentos electrónicos (estándar).
-ms.openlocfilehash: b6c53c1f87f0d2783b2d6d3cc765a8fd3ed2f6cf
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d97acf066914a7dee0059f27aa0127efe52ea5f3
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949363"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971613"
 ---
 # <a name="search-for-content-in-a-ediscovery-standard-case"></a>Buscar contenido en un caso de exhibición de documentos electrónicos (estándar)
 

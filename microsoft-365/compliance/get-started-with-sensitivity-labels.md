@@ -19,14 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Se ha decidido a implementar etiquetas de confidencialidad para proteger los datos de su organización, pero no sabe por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: adc939d44715bcfaeb97cdbfa530f55a5aeecd4e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3f163c19cfd6e627887f0e34b81bc99d2e86cb6c
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322091"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971052"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -45,7 +47,7 @@ Cuando esté listo para empezar a proteger los datos de la organización mediant
 3. **Publique las etiquetas.** Una vez configuradas las etiquetas de sensibilidad, publíquelas mediante una directiva de etiqueta. Decida qué usuarios y grupos deben tener las etiquetas y qué configuración de directiva usar. Una sola etiqueta es reutilizable: se define una vez y, después, se puede incluir en varias directivas de etiquetas asignadas a diferentes usuarios. Por ejemplo, puede crear una prueba de las etiquetas de confidencialidad asignando una directiva de etiqueta a solo algunos usuarios. Cuando esté listo para implementar las etiquetas en la organización, puede crear una nueva directiva para sus etiquetas y, esta vez, especificar todos los usuarios.
 
 
-> Es posible que sea apto para la creación automática de etiquetas predeterminadas y una directiva de etiquetas predeterminada que se encarga de los pasos 1 a 3. Para más información, vea [Etiquetas y directivas predeterminadas para Microsoft Information Protection](mip-easy-trials.md).
+> Es posible que sea apto para la creación automática de etiquetas predeterminadas y una directiva de etiquetas predeterminada que se encarga de los pasos 1 a 3. Para obtener más información, consulte [Etiquetas y directivas predeterminadas para Microsoft Purview Information Protection](mip-easy-trials.md).
 
 Flujo básico para la implementación y aplicación de etiquetas de confidencialidad:
 
@@ -55,11 +57,11 @@ Flujo básico para la implementación y aplicación de etiquetas de confidencial
 
 Distintas suscripciones admiten diferentes etiquetas de confidencialidad y los requisitos de licencias para los usuarios dependen de las características que use.
 
-Para ver las opciones para que los usuarios puedan beneficiarse de las características de cumplimiento de Microsoft 365, consulte la [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Para obtener etiquetas de confidencialidad, consulte la [sección Protección de la información: etiquetado de confidencialidad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-sensitivity-labeling) y la descarga [de PDF](https://go.microsoft.com/fwlink/?linkid=2139145) relacionada para los requisitos de licencias de nivel de característica.
+Para ver las opciones para que los usuarios puedan beneficiarse de las características de Microsoft Purview, consulte la [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Para obtener etiquetas de confidencialidad, consulte la sección [Microsoft Purview Information Protection: etiquetado de confidencialidad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-information-protection-sensitivity-labeling) y la [descarga de PDF](https://go.microsoft.com/fwlink/?linkid=2139145) relacionada para los requisitos de licencias de nivel de características.
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>Permisos necesarios para crear y administrar etiquetas de confidencialidad
 
-Los miembros del equipo de cumplimiento que vayan a crear etiquetas de confidencialidad necesitarán permisos para el Centro de cumplimiento de Microsoft 365.
+Los miembros del equipo de cumplimiento que vayan a crear etiquetas de confidencialidad necesitarán permisos para el Portal de cumplimiento de Microsoft Purview.
 
 De forma predeterminada, los administradores globales de su espacio empresarial tienen acceso a este centro de administración y pueden dar acceso a los oficiales de cumplimiento y a otras personas, sin darles todos los permisos de un administrador de espacio empresarial. Para este acceso administrativo limitado y delegado, agregue usuarios al grupo de roles **Administrador de datos de cumplimiento**, **Administrador de cumplimiento** o **Administrador de seguridad**. 
 
@@ -73,9 +75,9 @@ Como alternativa al uso de los roles predeterminados, puede crear un nuevo grupo
 > - **Investigadores de Information Protection**
 > - **Lectores de Information Protection**
 >
-> Para obtener una explicación de cada uno de ellos y de los nuevos roles que contienen, seleccione un grupo de roles en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> > **Permisos y roles** > **Centro de cumplimiento** > **Roles** y, a continuación, revise la descripción en el panel desplegable. También puede consultar [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
+> Para obtener una explicación de cada uno de ellos y de los nuevos roles que contienen, seleccione un grupo de roles en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Portal de cumplimiento de Microsoft Purview</a> > **Permisos y roles** > **Centro de cumplimiento** > **Roles** y, a continuación, revise la descripción en el panel desplegable. También puede consultar [Grupos de roles en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
 
-Para obtener instrucciones sobre cómo agregar usuarios al grupo de roles predeterminado, roles o crear sus propios grupos de roles, consulte [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md).
+Para obtener instrucciones sobre cómo agregar usuarios al grupo de roles predeterminado, roles o crear sus propios grupos de roles, consulte [Permisos en el Portal de cumplimiento de Purview](microsoft-365-compliance-center-permissions.md).
 
 Estos permisos son necesarios solo para crear y configurar etiquetas de confidencialidad y sus directivas de etiquetado. No son necesarios para aplicar las etiquetas en aplicaciones o servicios. Si se necesitan permisos adicionales para configuraciones específicas relacionadas con las etiquetas de confidencialidad, estos permisos se especificarán en las instrucciones de la documentación correspondientes.
 
@@ -83,8 +85,6 @@ Estos permisos son necesarios solo para crear y configurar etiquetas de confiden
 Una estrategia exitosa para implementar etiquetas de carácter para una organización consiste en crear un equipo virtual de trabajo en el que se identifiquen y administren los requisitos técnicos de la empresa, pruebas de concepto, controles internos y aprobaciones, y implementación final para el entorno de producción.
 
 Con la tabla de la siguiente sección, le recomendamos que identifique uno o dos escenarios principales que se correspondan con los requisitos empresariales más impactantes. Después de implementar estos escenarios, vuelva a la lista para identificar la siguiente o las dos prioridades para la implementación.
-
-Encontrará instrucciones generales de implementación adicionales y procedimientos recomendados en la [Guía de aceleración de implementación para la Protección de la información de Microsoft y prevención de pérdida de datos](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/), uno de los recursos del sitio [Customer Acceleration Team (CAT)](https://microsoft.github.io/ComplianceCxE/).
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>Escenarios comunes de etiquetas de confidencialidad
 
@@ -108,8 +108,7 @@ Todos los escenarios requieren que [Crear y configurar etiquetas de confidencial
 |Aplicar y ver las etiquetas de confidencialidad en Power BI y proteger los datos cuando se guarden fuera del servicio.|[Etiquetas de confidencialidad en Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|
 |Supervisar y comprender cómo se usan las etiquetas de confidencialidad en la organización|[Obtenga información sobre la clasificación de datos](data-classification-overview.md)|
 |Amplíe las etiquetas de confidencialidad a los servicios y aplicaciones de terceros.|[SDK de Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk)|
-|Extender las etiquetas de confidencialidad a través del contenido de mis recursos de Azure Purview, como Azure Blob Storage, Azure Files, Azure Data Lake Storage y orígenes de datos de varias nubes|[Etiquetado en Azure Purview](/azure/purview/create-sensitivity-label) |
-
+|Extender las etiquetas de confidencialidad a través del contenido de mis recursos del Mapa de datos de Microsoft Purview, como Azure Blob Storage, Azure Files, Azure Data Lake Storage y orígenes de datos de varias nubes|[Etiquetado en el mapa de datos de Microsoft Purview](/azure/purview/create-sensitivity-label) |
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Documentación de usuario final para las etiquetas de confidencialidad
 

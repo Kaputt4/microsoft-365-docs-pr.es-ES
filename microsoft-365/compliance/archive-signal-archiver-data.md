@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector TeleMessage para importar y archivar datos de comunicaciones de Signal en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 3dc2e2cd194f7aa82acc42f806605a682465a684
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 5e075b643cf4e9ba339f1f30f968f935336c07c3
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944005"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992642"
 ---
 # <a name="set-up-a-connector-to-archive-signal-communications-data"></a>Configuración de un conector para archivar datos de comunicaciones de Signal
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use el conector TeleMessage en el portal de cumplimiento de Microsoft Purview para importar y archivar chats de Signal, datos adjuntos, archivos y mensajes y llamadas eliminados. Después de configurar y configurar un conector, se conecta a la cuenta de TeleMessage de su organización e importa la comunicación móvil de los empleados que usan El archivador de señales de TeleMessage a buzones de Microsoft 365.
 

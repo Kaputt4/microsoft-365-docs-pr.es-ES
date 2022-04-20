@@ -12,12 +12,12 @@ metadata:
   ms.custom: commerce_vl
   ms.localizationpriority: medium
   description: Preguntas más frecuentes sobre los contratos de licencia de Centro de administración de Microsoft 365.
-  ms.openlocfilehash: 16b6abd5d49b1b72fb93f981762140a98105b297
-  ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+  ms.openlocfilehash: bcc97969b283d51194dd8f1eb213340bd8f0334e
+  ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 04/08/2022
-  ms.locfileid: "64714161"
+  ms.lasthandoff: 04/19/2022
+  ms.locfileid: "64953691"
 title: Preguntas más frecuentes sobre contratos
 summary: ''
 sections:
@@ -66,7 +66,30 @@ sections:
       Para obtener más información sobre los roles de permisos VL y sus acciones permitidas, consulte las [preguntas más frecuentes sobre permisos](https://docs.microsoft.com/licensing/permissions-faq).
   - question: >
       ¿Cuánto tiempo tardan los nuevos pedidos de licencia en aparecer en la lista de contratos?
-    answer: "Las licencias compradas recientemente se muestran normalmente en la lista en un plazo de 10 horas después de que Microsoft reciba el pedido del asociado de Microsoft. Pueden producirse retrasos de unos días a unas semanas si el partner retrasa el reenvío del pedido de compra a Microsoft. Las licencias se muestran en el resumen cuando se cumple el período de inicio de cobertura para el pedido para todos los programas excepto open license.\n\nLos siguientes datos están disponibles en la lista de contactos:\n\n|**Nombre de la columna**|**Descripción**|\n|:-----|:-----|\n|Identificador de licencia |Contactos clave y licencias relacionadas de su organización por identificador de licencia específico |\n|Detalles del programa primario |Contactos clave e identificadores de licencia relacionados para su organización por programa de licencias |\n|Detalles de MBSA |Contactos clave y identificadores de licencia relacionados para su organización, como asociados a un Contrato de Negocio y Servicios de Microsoft (MBSA) | \n|Organización | La organización de licencias|\n|Ubicación |La combinación de ciudad y condado de la organización de licencias |\n|Fecha de finalización |Fecha de finalización de la licencia |    \n|Estado |Estado de la licencia| \n"
+    answer: >
+      Las licencias compradas recientemente se muestran normalmente en la lista en un plazo de 10 horas después de que Microsoft reciba el pedido del asociado de Microsoft. Pueden producirse retrasos de unos días a unas semanas si el partner retrasa el reenvío del pedido de compra a Microsoft. Las licencias se muestran en el resumen cuando se cumple el período de inicio de cobertura para el pedido para todos los programas excepto open license.
+
+
+      Los siguientes datos están disponibles en la lista de contactos:
+
+
+      |Nombre de la columna|Descripción|
+
+      |---|---|
+
+      |Identificador de licencia|Contactos clave y licencias relacionadas de su organización por identificador de licencia específico|
+
+      |Detalles del programa primario|Contactos clave e identificadores de licencia relacionados para su organización por programa de licencias|
+
+      |Detalles de MBSA|Contactos clave y identificadores de licencia relacionados para su organización, como asociados a un Contrato de Negocio y Servicios de Microsoft (MBSA)|
+
+      |Organización|La organización de licencias|
+
+      |Ubicación|La combinación de ciudad y condado de la organización de licencias|
+
+      |Fecha de finalización|Fecha de finalización de la licencia|
+
+      |Estado|Estado de la licencia|
   - question: >
       ¿Qué es el resumen de licencias?
     answer: >
@@ -81,16 +104,18 @@ sections:
 
       Acceso y creación del resumen de licencias
 
-      1.  Inicie sesión en el Centro de administración de Microsoft 365.
 
-      2.  Vaya a **FacturaciónSu** >  **productosVolume** >  **licensingContracts** > .
+      1. Inicie sesión en el Centro de administración de Microsoft 365.
+
+      2. Vaya a **FacturaciónSu** >  **productosVolume** >  **licensingContracts** > .
 
 
       Filtrar los identificadores de licencia para mostrarlos en el resumen de licencias
 
-      1.  Use las casillas para seleccionar los identificadores de licencia que se incluirán en este resumen.
 
-      2.  Seleccione **Create License Summary (Crear resumen de licencia).** El resumen de licencias solo se genera para los identificadores de licencia seleccionados.
+      1. Use las casillas para seleccionar los identificadores de licencia que se incluirán en este resumen.
+
+      2. Seleccione **Create License Summary (Crear resumen de licencia).** El resumen de licencias solo se genera para los identificadores de licencia seleccionados.
 - name: Descripción del resumen de licencias
   questions:
   - question: >
@@ -113,12 +138,25 @@ sections:
       - SA Step-Up
   - question: >
       ¿Por qué veo cantidad efectiva o cantidad de SA activa como "0"?
-    answer: "El resumen de licencias está pensado para mostrar las licencias que su organización tiene derecho a implementar y usar. \n\nSi la cantidad efectiva en la instrucción de licencia generada se muestra como cero, significa que su organización no tiene derecho a usar la licencia según los términos del conjunto de identificadores de licencia seleccionado para esa declaración. \n\nSi la cantidad de SA activa se muestra como cero, significa que las licencias del conjunto de identificadores de licencia que se usan para generar la instrucción no tienen ninguna cobertura de Software Assurance válida o activa. \n\n>[!NOTE]\n>En el caso de las licencias de Online Services, la cantidad de SA activa siempre es cero porque Los servicios en línea no tienen entidades de certificación asociadas a ellas. \n"
+    answer: >
+      El resumen de licencias está pensado para mostrar las licencias que su organización tiene derecho a implementar y usar.
+
+
+      Si la cantidad efectiva en la instrucción de licencia generada se muestra como cero, significa que su organización no tiene derecho a usar la licencia según los términos del conjunto de identificadores de licencia seleccionado para esa declaración.
+
+
+      Si la cantidad de SA activa se muestra como cero, significa que las licencias del conjunto de identificadores de licencia que se usan para generar la instrucción no tienen ninguna cobertura de Software Assurance válida o activa.
+
+
+      > [!NOTE]
+
+      > En el caso de las licencias de Online Services, la cantidad de SA activa siempre es cero porque Los servicios en línea no tienen entidades de certificación asociadas a ellas.
   - question: >
       ¿Incluye el resumen de licencias información de fabricante de equipos originales (OEM) o licencia comercial?
     answer: >
       No. El resumen de licencias solo muestra las licencias adquiridas por su organización a través de programas de licencias por volumen.
-  - question: "¿Muestra el resumen de licencias qué software se implementa en mi organización? \n"
+  - question: >
+      ¿Muestra el resumen de licencias qué software se implementa en mi organización?
     answer: >
       No. No es posible que Microsoft proporcione una lista de detalles de implementación de productos en el Resumen de licencias. El resumen de licencias muestra el software que su organización tiene derecho a instalar y usar, pero no lo que está implementado actualmente.
   - question: >
@@ -134,7 +172,21 @@ sections:
       - Servidores (por ejemplo, Exchange Server, SQL Server y Windows Server)
   - question: >
       ¿Qué es una concesión de licencia?
-    answer: "En ocasiones, las licencias por volumen de Microsoft ofrecen una promoción en la que la compra de un producto específico da derecho al cliente al uso de otro producto. Las promociones suelen estar condicionales en la cobertura activa de Software Assurance o Upgrade Advantage en el producto comprado. Por ejemplo:\n\n- Un cliente compra una licencia para Exchange Server 2016.\n- La transacción tiene cobertura activa de Software Assurance o Upgrade Advantage durante la oferta.\n- Microsoft ofrece una promoción para 1 licencia de Skype Empresarial Server con una compra de Exchange Server 2016.\n\nLa concesión de licencias es lo que da derecho al cliente a usar el producto promocional, o \"concesiones\". En el ejemplo anterior, se concede al cliente el uso de Skype Empresarial Server.\n\nPara obtener más información sobre las concesiones de licencia, consulte los [Términos de producto de Microsoft](https://www.microsoft.com/licensing/terms/welcome/welcomepage). \n"
+    answer: >
+      En ocasiones, las licencias por volumen de Microsoft ofrecen una promoción en la que la compra de un producto específico da derecho al cliente al uso de otro producto. Las promociones suelen estar condicionales en la cobertura activa de Software Assurance o Upgrade Advantage en el producto comprado. Por ejemplo:
+
+
+      - Un cliente compra una licencia para Exchange Server 2016.
+
+      - La transacción tiene cobertura activa de Software Assurance o Upgrade Advantage durante la oferta.
+
+      - Microsoft ofrece una promoción para 1 licencia de Skype Empresarial Server con una compra de Exchange Server 2016.
+
+
+      La concesión de licencias es lo que da derecho al cliente a usar el producto promocional, o "concesiones". En el ejemplo anterior, se concede al cliente el uso de Skype Empresarial Server.
+
+
+      Para obtener más información sobre las concesiones de licencia, consulte los [Términos de producto de Microsoft](https://www.microsoft.com/licensing/terms/welcome/welcomepage).
   - question: >
       ¿Cómo puedo ver mis concesiones de licencia?
     answer: >

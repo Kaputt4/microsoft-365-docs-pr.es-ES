@@ -1,5 +1,5 @@
 ---
-title: Uso de la prevención de pérdida de datos en punto de conexión
+title: Uso de DLP de punto de conexión
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -17,22 +17,24 @@ ms.collection:
 - SPO_Content
 search.appverid:
 - MET150
-description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: aeb85b883738e94f2d7161cb2bc3434edbb16428
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de punto de conexión.
+ms.openlocfilehash: 5ca57dfad74dea26e16fa415eead8a0a85eb9673
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680036"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952806"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]  
 
 Para ayudarle a familiarizarse con las características de DLP de los puntos de conexión y cómo se muestran en las directivas DLP, hemos recopilado algunos escenarios para que los siga.
 
 > [!IMPORTANT]
 > Estos escenarios DLP de los puntos de conexión no son los procedimientos oficiales para crear y optimizar directivas DLP. Consulte los temas siguientes cuando necesite trabajar con directivas DLP en situaciones generales:
 >
->- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
+>- [Información sobre la prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md)
 >- [Introducción a la directiva predeterminada de DLP](get-started-with-the-default-dlp-policy.md)
 >- [Crear una directiva DLP a partir de una plantilla](create-a-dlp-policy-from-a-template.md)
 >- [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
@@ -257,7 +259,7 @@ Esta configuración garantizará que sus datos estén seguros, evitando así las
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
 - [Microsoft Defender para punto de conexión](/windows/security/threat-protection/)
-- [Incorporar dispositivos Windows 10 y Windows 11 en la información general de Microsoft 365](/microsoft-365/compliance/device-onboarding-overview)
+- [Introducción a la incorporación de dispositivos Windows 10 y Windows 11 a Microsoft Purview](/microsoft-365/compliance/device-onboarding-overview)
 - [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Unido a Azure Active Directory (AAD)](/azure/active-directory/devices/concept-azure-ad-join)
 - [Descargue el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

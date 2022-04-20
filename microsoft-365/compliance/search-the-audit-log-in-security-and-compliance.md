@@ -1,5 +1,5 @@
 ---
-title: Buscar el registro de auditoría en el Centro de cumplimiento de Microsoft 365
+title: Búsqueda del registro de auditoría en el portal de cumplimiento de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Use el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización.
+description: Use el portal de cumplimiento de Microsoft Purview para buscar en el registro de auditoría unificado para ver la actividad de usuario y administrador en su organización.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 1a10bf738562f8fd9a263252d4a56eddf8acee9d
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: f35bfbbe299495e912d018bd00615964f883031e
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841939"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64936277"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
-¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? De ser así, puede usar la herramienta de búsqueda del registro de auditoría en el Centro de cumplimiento de Microsoft 365 para buscar el registro de auditoría unificado para ver la actividad de los usuarios y administradores en su organización. Miles de operaciones de usuarios y administradores que se realizan en docenas de servicios y soluciones de Microsoft 365 se capturan, graban y retienen en el registro de auditoría unificado de su organización. Los usuarios de tu organización pueden usar la herramienta de búsqueda de registro de auditoría para buscar, ver y exportar (a un archivo CSV) los registros de auditoría de estas operaciones.
+¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? De ser así, puede usar la herramienta de búsqueda del registro de auditoría en el portal de cumplimiento de Microsoft Purview para buscar el registro de auditoría unificado para ver la actividad de los usuarios y administradores en su organización. Miles de operaciones de usuarios y administradores que se realizan en docenas de servicios y soluciones de Microsoft 365 se capturan, graban y retienen en el registro de auditoría unificado de su organización. Los usuarios de tu organización pueden usar la herramienta de búsqueda de registro de auditoría para buscar, ver y exportar (a un archivo CSV) los registros de auditoría de estas operaciones.
 
 ## <a name="microsoft-365-services-that-support-auditing"></a>Servicios de Microsoft 365 que admiten la auditoría
 
@@ -92,7 +92,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 - Usted debe tener asignado el rol de Registros de auditoría o Registros de auditoría de solo lectura en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página de **permisos** del centro de administración de Exchange. Los administradores globales de Office 365 y Microsoft 365 se agregan automáticamente como miembros del grupo de roles de administración de la organización en Exchange Online. Para darle a un usuario la capacidad de buscar en el registro de auditoría con el mínimo nivel de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol de Registros de auditoría o Registros de auditoría de solo lectura y, después, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](/Exchange/permissions-exo/role-groups).
 
   > [!IMPORTANT]
-  > Si asigna a un usuario el rol de Registros de auditoría o Registros de auditoría de solo lectura en la página de **Permisos** del Centro de cumplimiento de Microsoft 365, no podrán buscar en el registro de auditoría. Tiene que asignar los permisos en Exchange en línea. Esto se debe a que el cmdlet subyacente que se usa para buscar en el registro de auditoría es un cmdlet Exchange en línea.
+  > Si asigna a un usuario el rol Registros de auditoría o Registros de auditoría de solo lectura en la página **Permisos** del portal de cumplimiento, no podrá buscar el registro de auditoría. Tiene que asignar los permisos en Exchange en línea. Esto se debe a que el cmdlet subyacente que se usa para buscar en el registro de auditoría es un cmdlet Exchange en línea.
 
 - Cuando un usuario o administrador realiza una actividad auditada, se genera un registro de auditoría y se almacena en el registro de auditoría de la organización. La cantidad de tiempo que se retiene un registro de auditoría (y que se puede buscar en el registro de auditoría) depende de la suscripción a Office 365 o Microsoft 365 Enterprise y, específicamente, del tipo de licencia que se ha asignado a usuarios específicos.
 
@@ -104,7 +104,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
   - Para los usuarios que tengan asignadas otras licencias de Office 365 o Microsoft 365 (que no sean E5), los registros de auditoría se conservarán durante 90 días. Para obtener una lista de las suscripciones de Office 365 y Microsoft 365 que admiten el registro de auditoría unificado, consulte [la descripción del servicio del centro de seguridad y cumplimiento](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
-    > Incluso si la auditoría de buzón está activada de forma predeterminada, es posible que observe que los eventos de auditoría del buzón de algunos usuarios no se encuentran en búsquedas de registro de auditoría en el Cumplimiento de Microsoft 365 o a través de la API de Actividad de administración de Office 365. Para obtener más información, consulte [Más información sobre el registro de auditoría del buzón](enable-mailbox-auditing.md#more-information).
+    > Incluso si la auditoría de buzón está activada de forma predeterminada, es posible que observe que los eventos de auditoría del buzón de algunos usuarios no se encuentran en búsquedas de registro de auditoría en el centro de cumplimiento o a través de la API de Actividad de administración de Office 365. Para más información, consulte [Más información sobre el registro de auditoría del buzón](enable-mailbox-auditing.md#more-information).
 
 - Si desea desactivar la búsqueda en el registro de auditoría de su organización, puede ejecutar el comando siguiente en el PowerShell remoto conectado a su organización de Exchange Online:
 
@@ -120,7 +120,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 
   Para obtener más información, consulte[Desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
 
-- Como se indicó anteriormente, el cmdlet subyacente que se ha usado para buscar en el registro de auditoría es un cmdlet de Exchange en línea, que es **Search-UnifiedAuditLog**. Esto significa que puede usar este cmdlet para buscar en el registro de auditoría en lugar de usar la herramienta de búsqueda en la página **Auditoría** del Centro de cumplimiento de Microsoft 365. Tiene que ejecutar este cmdlet en Exchange Online PowerShell.  Para obtener más información, consulte [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
+- Como se indicó anteriormente, el cmdlet subyacente que se ha usado para buscar en el registro de auditoría es un cmdlet de Exchange en línea, que es **Search-UnifiedAuditLog**. Esto significa que puede usar este cmdlet para buscar en el registro de auditoría en lugar de usar la herramienta de búsqueda en la página **Auditoría** del portal de cumplimiento. Tiene que ejecutar este cmdlet en Exchange Online PowerShell.  Para obtener más información, consulte [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
 
   Para obtener información sobre cómo exportar los resultados de búsqueda devueltos por el cmdlet **Search-UnifiedAuditLog** a un archivo CSV, consulte la sección "sugerencias para exportar y ver el registro de auditoría" [exportar, configurar y ver el registro de auditoría registros](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -147,9 +147,9 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Microsoft 3
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión.
 
     > [!TIP]
-    > Use una sesión de exploración privada (que no sea una sesión regular) para obtener acceso al Centro de cumplimiento de Microsoft 365, ya que así se evita que se puedan usar las credenciales con las que ha iniciado sesión actualmente. Para abrir una sesión de exploración de InPrivate en Microsoft Edge o una sesión privada en Google Chrome (llamada ventana de incógnito), pulse **CTRL + MAYÚS + N**.
+    > Use una sesión de exploración privada (que no sea una sesión regular) para obtener acceso al portal de cumplimiento, ya que así se evita que se puedan usar las credenciales con las que ha iniciado sesión actualmente. Para abrir una sesión de exploración de InPrivate en Microsoft Edge o una sesión privada en Google Chrome (llamada ventana de incógnito), pulse **CTRL + MAYÚS + N**.
 
-2. En el panel izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Auditoría**.
+2. En el panel izquierdo del portal de cumplimiento, haga clic en **Auditoría**.
 
     Aparecerá la página **Auditoría**.
 
@@ -314,7 +314,7 @@ Haga clic en uno de los vínculos siguientes para ir a una tabla en particular.
         [Actividades de eDiscovery](#ediscovery-activities)
     :::column-end:::
     :::column:::
-        [Actividades de eDiscovery avanzado](#advanced-ediscovery-activities)
+        [Actividades de eDiscovery (Premium)](#ediscovery-premium-activities)
     :::column-end:::
 :::row-end:::
 
@@ -644,7 +644,7 @@ La siguiente tabla enumera las actividades que pueden registrarse mediante el re
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
-|Elementos de buzón a los que se ha accedido|MailItemsAccessed|Se han leído mensajes o se obtuvo acceso a los mensajes del buzón. Los registros de auditoría de esta actividad se activan de una de estas dos maneras: cuando un cliente de correo (por ejemplo, Outlook) realiza una operación de vinculación en mensajes o cuando los protocolos de correo (como Exchange ActiveSync o IMAP) sincronizan elementos en una carpeta de correo. Esta actividad solo se registra para los usuarios que tengan una licencia de Office 365 o Microsoft 365 E5. Analizar los registros de auditoría de esta actividad es útil al investigar cuentas de correo electrónico vulnerables. Para obtener más información, vea la sección "Eventos de Auditoría avanzada" en [Auditoría avanzada](advanced-audit.md#advanced-audit-events). |
+|Elementos de buzón a los que se ha accedido|MailItemsAccessed|Se han leído mensajes o se obtuvo acceso a los mensajes del buzón. Los registros de auditoría de esta actividad se activan de una de estas dos maneras: cuando un cliente de correo (por ejemplo, Outlook) realiza una operación de vinculación en mensajes o cuando los protocolos de correo (como Exchange ActiveSync o IMAP) sincronizan elementos en una carpeta de correo. Esta actividad solo se registra para los usuarios que tengan una licencia de Office 365 o Microsoft 365 E5. Analizar los registros de auditoría de esta actividad es útil al investigar cuentas de correo electrónico vulnerables. Para más información, vea la sección "Eventos de auditoría (Premium)" en[Auditoría (Premium)](advanced-audit.md#audit-premium-events). |
 |Permisos de buzón de delegado agregados|Add-MailboxPermission|Un administrador asignó el permiso de FullAccess del buzón a un usuario (conocido como delegado) para el buzón de otra persona. El permiso FullAccess permite al delegado abrir el buzón de la otra persona, así como leer y administrar el contenido del buzón. El registro de auditoría de esta actividad también se genera cuando una cuenta del sistema del servicio Microsoft 365 realiza tareas de mantenimiento periódicamente en nombre de su organización. Una tarea común que realiza una cuenta del sistema es actualizar los permisos de los buzones del sistema. Para obtener más información, vea Cuentas del sistema en [Cuentas del sistema en los registros de auditoría del buzón de correo de Exchange](#system-accounts-in-exchange-mailbox-audit-records).|
 |Se ha agregado o quitado un usuario con acceso delegado a la carpeta calendario|UpdateCalendarDelegation|Se ha agregado o quitado un usuario como delegado hacia el calendario del buzón de otro usuario. La delegación de calendario otorga a otra persona en la misma organización permisos para administrar el calendario del propietario del buzón.|
 |Se agregaron permisos a la carpeta|AddFolderPermissions|Se ha agregado un permiso de carpeta. Los permisos de carpetas controlan qué usuarios de la organización pueden tener acceso a las carpetas de un buzón de correo y los mensajes ubicados en esas carpetas.|
@@ -660,7 +660,7 @@ La siguiente tabla enumera las actividades que pueden registrarse mediante el re
 |Mensajes que se han purgado del buzón|HardDelete|Un mensaje se ha purgado de la carpeta Elementos recuperables (eliminado permanentemente del buzón).|
 |Permisos de buzón de delegado quitados|Remove-MailboxPermission|Un administrador quitó el permiso FullAccess (que se asignó a un delegado) del buzón de una persona. Una vez que se haya quitado el permiso FullAccess, el delegado no podrá abrir el buzón de la otra persona ni acceder a ningún contenido.|
 |Permisos quitados de la carpeta|RemoveFolderPermissions|Se ha quitado un permiso de carpeta. Los permisos de carpetas controlan qué usuarios de la organización pueden tener acceso a las carpetas de un buzón de correo y los mensajes ubicados en esas carpetas.|
-|Enviar mensaje|Enviar|Un mensaje ha sido enviado, respondido o reenviado. Esta actividad solo se registra para los usuarios que tengan una licencia de Office 365 o Microsoft 365 E5. Para obtener más información, vea la sección "Eventos de Auditoría avanzada" en [Auditoría avanzada](advanced-audit.md#advanced-audit-events).|
+|Enviar mensaje|Enviar|Un mensaje ha sido enviado, respondido o reenviado. Esta actividad solo se registra para los usuarios que tengan una licencia de Office 365 o Microsoft 365 E5. Para más información, vea la sección "Eventos de auditoría (Premium)" en[Auditoría (Premium)](advanced-audit.md#audit-premium-events).|
 |Mensaje enviado mediante los permisos de Enviar como|SendAs|Un mensaje se ha enviado con el permiso enviar como. Esto significa que otro usuario ha enviado el mensaje como si proviniera del propietario del buzón.|
 |Mensaje enviado mediante los permisos en nombre de|SendOnBehalf|Un mensaje se envió mediante el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje en nombre del propietario del buzón. El mensaje indica el destinatario en nombre de quien se envió el mensaje y quién lo envió realmente.|
 |Reglas de la bandeja de entrada actualizadas desde el cliente de Outlook|UpdateInboxRules|El propietario de un buzón u otro usuario con acceso al buzón creó, modificó o quitó una regla de la bandeja de entrada mediante el cliente de Outlook.|
@@ -782,11 +782,11 @@ Las actividades de búsqueda de contenido y relacionadas con la exhibición de d
 Para obtener una lista y una descripción detallada de las actividades de eDiscovery que están registradas, vea [Buscar actividades de eDiscovery en el registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md).
 
 > [!NOTE]
-> Lleva un máximo de 30 minutos para eventos que resultan de las actividades indicadas en **Actividades de eDiscovery** y **Actividades de eDiscovery avanzado** en la lista desplegable **Actividades** que se muestra en los resultados de búsqueda. Por el contrario, lleva hasta 24 horas para los eventos correspondientes de actividades cmdlet de eDiscovery que aparezcan en los resultados de búsqueda.
+> Los eventos resultantes de las actividades enumeradas en **Actividades de Discovery** y **Actividades de eDiscovery (Premium)** en la lista desplegable de **Actividades** pueden tardan hasta 30 minutos en aparecer en los resultados de búsqueda. Por el contrario, lleva hasta 24 horas para los eventos correspondientes de actividades cmdlet de eDiscovery que aparezcan en los resultados de búsqueda.
 
-### <a name="advanced-ediscovery-activities"></a>Actividades de eDiscovery avanzado
+### <a name="ediscovery-premium-activities"></a>Actividades de eDiscovery (Premium)
 
-Puede buscar también en el registro de auditoría para actividades en eDiscovery avanzado. Para obtener una descripción de estas actividades, consulte la sección "Actividades de eDiscovery avanzado" en [Buscar actividades de eDiscovery en el registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md#advanced-ediscovery-activities).
+También puede buscar actividades en el registro de auditoría en eDiscovery de Microsoft Purview (Premium). Para obtener una descripción de estas actividades, vea la sección "Actividades de eDiscovery (Premium)" en [Buscar actividades de eDiscovery en el registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-premium-activities).
 
 ### <a name="power-bi-activities"></a>Actividades de Power BI
 
@@ -840,7 +840,7 @@ Para obtener una descripción de las actividades de la aplicación Turnos, consu
 En la siguiente tabla, se enumeran las actividades de usuario y de administrador de Yammer que se registran en el registro de auditoría. Para devolver las actividades relacionadas con Yammer del registro de auditoría, tiene que seleccionar **Mostrar resultados de todas las actividades** en la lista **Actividades**. Use los cuadros de intervalo de fecha y la lista **Usuarios** para restringir los resultados de la búsqueda.
 
 > [!NOTE]
-> Algunas actividades de auditoría de Yammer solo están disponibles en Auditoría avanzada. Esto significa que los usuarios deben tener asignada la licencia adecuada antes de que estas actividades se registren en el registro de auditoría. Para obtener más información acerca de las actividades que solo se encuentran disponibles en Auditoría avanzada, vea [Auditoría avanzada en Microsoft 365](advanced-audit.md#advanced-audit-events). Para conocer los requisitos de licencia de Auditoría avanzada, consulte [Soluciones de auditoría en Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>En la siguiente tabla se resaltan las actividades de Auditoría avanzada con un asterisco (*).
+> Algunas actividades de auditoría de Yammer solo están disponibles en Auditoría (Premium). Esto significa que los usuarios deben tener asignada la licencia adecuada antes de que estas actividades se registren en el registro de auditoría. Para más información sobre las actividades que solo están disponibles en Auditoría (Premium), vea [Auditoría (Premium) en Microsoft 365](advanced-audit.md#audit-premium-events). Para conocer los requisitos de licencia de Auditoría (Premium), consulte [Soluciones de auditoría en Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>En la siguiente tabla se resaltan las actividades de Auditoría (Premium) con un asterisco (*).
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
@@ -871,7 +871,7 @@ En la siguiente tabla, se enumeran las actividades de usuario y de administrador
 
 ### <a name="microsoft-power-automate-activities"></a>Actividades en Microsoft Power Automate 
 
-Puede buscar el registro de auditoría para actividades en Power Automate (antes llamado Microsoft Flow). Entre estas actividades se incluyen la creación, edición y eliminación de flujos, y cambios en los permisos de flujo. Para más información sobre las auditorías de actividades de Power Automate, consulte el blog [Eventos de auditoría de Power Automate ahora disponible en el Centro de cumplimiento de Microsoft 365](https://flow.microsoft.com/blog/security-and-compliance-center).
+Puede buscar el registro de auditoría para actividades en Power Automate (antes llamado Microsoft Flow). Entre estas actividades se incluyen la creación, edición y eliminación de flujos, y cambios en los permisos de flujo. Para más información sobre las auditorías de actividades de Power Automate, consulte el blog [Eventos de auditoría de Power Automate ahora disponible en el portal de cumplimiento](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-power-apps-activities"></a>Actividades en Microsoft Power Apps
 
@@ -883,7 +883,7 @@ Puede buscar el registro de auditoría para actividades en Microsoft Stream. Ent
 
 ### <a name="content-explorer-activities"></a>Actividades del explorador de contenido
 
-En la tabla siguiente, se enumeran las actividades del explorador de contenido que se registran en el registro de auditoría. El explorador de contenido, al que se accede en la herramienta de clasificación de datos en el Centro de cumplimiento de Microsoft 365. Para obtener más información, consulte [Usar el explorador de contenido de clasificación de datos](data-classification-content-explorer.md).
+En la tabla siguiente, se enumeran las actividades del explorador de contenido que se registran en el registro de auditoría. El explorador de contenido, al que se accede en la herramienta de clasificación de datos en el portal de cumplimiento. Para obtener más información, consulte [Usar el explorador de contenido de clasificación de datos](data-classification-content-explorer.md).
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
@@ -910,7 +910,7 @@ En las tablas de esta sección se indican las actividades de usuario y administr
 Si se lleva a cabo una actividad de Forms por parte de un coautor o alguien que responde anónimamente, se registrará de forma ligeramente distinta. Para obtener más información, consulte la sección [actividades de Forms que realizan los coautores y las personas que responden anónimamente](#forms-activities-performed-by-coauthors-and-anonymous-responders).
 
 > [!NOTE]
-> Algunas actividades de auditoría de Forms solo están disponibles en Auditoría avanzada. Esto significa que los usuarios deben tener asignada la licencia adecuada antes de que estas actividades se registren en el registro de auditoría. Para obtener más información acerca de las actividades que solo se encuentran disponibles en Auditoría avanzada, vea [Auditoría avanzada en Microsoft 365](advanced-audit.md#advanced-audit-events). Para conocer los requisitos de licencia de Auditoría avanzada, consulte [Soluciones de auditoría en Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>En la siguiente tabla se resaltan las actividades de Auditoría avanzada con un asterisco (*).
+> Algunas actividades de auditoría de Forms solo están disponibles en Auditoría (Premium). Esto significa que los usuarios deben tener asignada la licencia adecuada antes de que estas actividades se registren en el registro de auditoría. Para más información sobre las actividades que solo están disponibles en Auditoría (Premium), vea [Auditoría (Premium) en Microsoft 365](advanced-audit.md#audit-premium-events). Para conocer los requisitos de licencia de Auditoría (Premium), consulte [Soluciones de auditoría en Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>En la siguiente tabla se resaltan las actividades de Auditoría (Premium) con un asterisco (*).
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|

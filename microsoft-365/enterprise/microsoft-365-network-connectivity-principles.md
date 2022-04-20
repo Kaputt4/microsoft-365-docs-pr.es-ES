@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Este artículo proporciona las instrucciones más recientes para optimizar de forma segura la conectividad de red de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1cea07745295f945f472dfeaa7042d3b027eea85
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: e92f30c356ae782ba7d4d3bb779b744bccebf320
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111680"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944489"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Principios de conectividad de red de Microsoft 365
 
@@ -143,7 +143,7 @@ Los administradores de Microsoft 365 pueden crear scripts PAC (configuración au
 #### <a name="microsoft-365-security-features"></a>Características de seguridad de Microsoft 365
 <a name="BKMK_WebSvc"> </a>
 
-Microsoft es transparente en relación con la seguridad de centros de datos, la seguridad operacional y la reducción de riesgos relacionados con los servidores de Microsoft 365 y con los puntos de conexión de red que representan. Las características de seguridad integradas de Microsoft 365 están disponibles para reducir los riesgos de seguridad de la red. Dichas características incluyen la prevención de pérdida de datos, antivirus, autenticación multifactor, Caja de seguridad del cliente, Microsoft Defender para Office 365, Inteligencia sobre amenazas de Microsoft 365, Puntuación de seguridad de Microsoft 365, Exchange Online Protection y seguridad de la red contra DDoS.
+Microsoft es transparente en relación con la seguridad de centros de datos, la seguridad operacional y la reducción de riesgos relacionados con los servidores de Microsoft 365 y con los puntos de conexión de red que representan. Las características de seguridad integradas de Microsoft 365 están disponibles para reducir los riesgos de seguridad de la red. Dichas características incluyen la prevención de pérdida de datos de Microsoft Purview, antivirus, autenticación multifactor, Caja de seguridad del cliente, Defender para Office 365, Inteligencia sobre amenazas de Microsoft 365, Puntuación de seguridad de Microsoft 365, Exchange Online Protection y seguridad de la red contra DDoS.
   
 Para más información sobre el centro de datos de Microsoft y la seguridad de la Red Global, consulte el [Centro de confianza de Microsoft](https://www.microsoft.com/trustcenter/security).
   
@@ -206,7 +206,7 @@ Microsoft ofrece una amplia gama de características de seguridad de Microsoft 3
   
 - **Usar la autenticación multifactor (MFA)** MFA agrega una capa adicional de protección a una estrategia de contraseña segura al obligar a los usuarios a confirmar una llamada telefónica, un mensaje de texto o una notificación de aplicación en el smartphone después de escribir la contraseña correcta.
 
-- **Usar Microsoft Defender for Cloud Apps** Configurar directivas para realizar un seguimiento de la actividad anómala y tomar medidas. Configure alertas con Microsoft Defender for Cloud Apps para que los administradores puedan revisar actividades de usuario inusuales o de riesgo, como descargar grandes cantidades de datos, varios intentos de inicio de sesión fallidos o conexiones desde direcciones IP desconocidas o peligrosas.
+- **Usar Microsoft Defender for Cloud Apps** Configure directivas para realizar un seguimiento de la actividad anómala y actuar al respecto. Configure alertas con Microsoft Defender for Cloud Apps para que los administradores puedan revisar la actividad inusual o arriesgada de los usuarios, como descargar grandes cantidades de datos, varios intentos de inicio de sesión erróneos o conexiones desde direcciones IP desconocidas o peligrosas.
 
 - **Configurar la prevención de la pérdida de datos (DLP)** DLP le permite identificar datos confidenciales y crear directivas que contribuyen a evitar que los usuarios compartan los datos por error o de forma deliberada. DLP funciona en Microsoft 365, incluido en Exchange Online, SharePoint Online y OneDrive, de modo que los usuarios puedan cumplir las normativas sin interrumpir el flujo de trabajo.
 
@@ -228,7 +228,7 @@ Para lograr un enfoque holístico de seguridad mejorada, se debería tener en cu
   - Garantiza la salida local para el tráfico de Microsoft 365
 - Las mejoras se pueden abordar de forma incremental, tal como se describe en la sección [Optimización incremental](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt). Algunas técnicas de optimización pueden ofrecer mejores relaciones costo-beneficio en función de la arquitectura de red, y debe elegir las optimizaciones que tengan más sentido para su organización.
 
-Para más información sobre la seguridad y el cumplimiento de Microsoft 365, consulte el artículo [Seguridad de Microsoft 365](../security/index.yml) y [Seguridad de Microsoft 365](../compliance/index.yml).
+Para más información sobre la seguridad y el cumplimiento de Microsoft 365, consulte el artículo [Seguridad de Microsoft 365](../security/index.yml) y [Microsoft Purview](../compliance/index.yml).
   
 ## <a name="incremental-optimization"></a>Optimización incremental
 <a name="BKMK_IncOpt"> </a>

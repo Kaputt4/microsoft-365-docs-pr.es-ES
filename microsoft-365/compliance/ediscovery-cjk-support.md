@@ -16,14 +16,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo Microsoft Purview eDiscovery (Premium) en Microsoft 365 admite idiomas chino, japonés y coreano (CJK), que usan un juego de caracteres de doble byte.
-ms.openlocfilehash: 70081341499f348f1bb8e226b4d3b5e9c0bab031
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e6221d37a3ebb07414f87f349b020365c80990e3
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934805"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992224"
 ---
 # <a name="cjk-language-support-for-ediscovery-premium"></a>Compatibilidad del lenguaje CJK con eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview eDiscovery (Premium) admite idiomas de juego de caracteres de doble byte (estos incluyen chino simplificado, chino tradicional, japonés y coreano, que se conocen colectivamente como lenguajes *CJK*) para los siguientes escenarios avanzados en un conjunto de revisión:
 

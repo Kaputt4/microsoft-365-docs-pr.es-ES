@@ -20,14 +20,16 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Cómo activar o desactivar la característica de búsqueda de registros de auditoría en el portal de cumplimiento de Microsoft Purview para habilitar o deshabilitar la capacidad de los administradores de buscar en el registro de auditoría.
-ms.openlocfilehash: 587c7f98cd04eef618508e096f290d1d299ec096
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e74effad1803b9a55167d1cd3bb5725bd042616a
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944533"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991828"
 ---
 # <a name="turn-auditing-on-or-off"></a>Activar o desactivar la auditoría
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 El registro de auditoría se activará de forma predeterminada para Microsoft 365 y Office 365 organizaciones empresariales. Sin embargo, al configurar una nueva Microsoft 365 o Office 365 organización, debe comprobar el estado de auditoría de la organización. Para obtener instrucciones, consulte [la sección Verify the auditing status for your organization (Comprobar el estado de auditoría de su organización](#verify-the-auditing-status-for-your-organization) ) de este artículo. 
 

@@ -18,14 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar la herramienta de administración de custodios en eDiscovery (Premium) para administrar los datos de un caso legal.
-ms.openlocfilehash: 75655b48cf0061879edf5ea559712daa29ce4893
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0c529b339c79789072cf160916db8c21acff7d86
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948449"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992202"
 ---
 # <a name="work-with-custodians-and-non-custodial-data-sources-in-ediscovery-premium"></a>Trabajar con custodios y orígenes de datos que no son de custodia en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cuando una organización responde a una investigación legal, el flujo de trabajo en torno a la identificación, conservación y recopilación de contenido potencialmente relevante se basa en las personas de la organización que son los custodios de los datos pertinentes. En eDiscovery, estas personas se *denominan custodios de datos* (o simplemente *custodios*) y se definen como "personas que tienen control administrativo de un documento o archivo electrónico". Por ejemplo, el administrador de un mensaje de correo electrónico podría ser el propietario del buzón que contiene el mensaje correspondiente.
 

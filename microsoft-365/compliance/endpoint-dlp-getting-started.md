@@ -1,5 +1,5 @@
 ---
-title: Introducción a la prevención de pérdida de datos de Microsoft 365 Endpoint
+title: Introducción a la prevención de pérdida de datos en punto de conexión
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,19 +19,21 @@ ms.collection:
 search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
-description: Configure la Prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
-ms.openlocfilehash: e29db57c42081349064fd690c5c9fcebee0f8045
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+description: Configure la prevención de pérdida de datos de punto de conexión para supervisar las actividades de archivo e implementar acciones de protección para esos archivos en los puntos de conexión.
+ms.openlocfilehash: 097ad2ab08d31482413285d3b3d82e6b43255281
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950658"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952762"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introducción a la prevención de pérdida de datos en punto de conexión
 
-La prevención de pérdida de datos de Microsoft Endpoint (Endpoint DLP) es parte de la serie de características de prevención de pérdida de datos (DLP) de Microsoft 365 que se pueden usar para detectar y proteger elementos confidenciales en los servicios de Microsoft 365. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md). Para más información sobre la DLP de punto de conexión, consulte [Obtener información sobre la prevención de pérdida de datos de punto de conexión](endpoint-dlp-learn-about.md)
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-DLP de punto de conexión de Microsoft le permite supervisar dispositivos [de Windows 10 y Windows 11 incorporados](device-onboarding-overview.md) y [dispositivos macOS incorporados *(versión preliminar)*](device-onboarding-macos-overview.md) que ejecutan Catalina 10.15 y versiones posteriores. Una vez incorporado un dispositivo, DLP detectará si se usan y comparten elementos confidenciales. Esto le proporciona la visibilidad y el control que necesita para asegurarse de que se usan y protegen correctamente, así como para ayudar a evitar algún comportamiento peligroso que podría comprometerlos.
+La Prevención de pérdida de datos de punto de conexión (DLP de punto de conexión) forma parte del conjunto de características de prevención de pérdida de datos (DLP) de Microsoft Purview que puede usar para detectar y proteger elementos confidenciales en Microsoft 365 servicios. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md). Para más información sobre la DLP de punto de conexión, consulte [Obtener información sobre la prevención de pérdida de datos de punto de conexión](endpoint-dlp-learn-about.md)
+
+El Punto de conexión DLP de Microsoft permite supervisar [Windows 10 incorporados, y Windows 11](device-onboarding-overview.md) y [dispositivos macOS incorporados](device-onboarding-macos-overview.md) que ejecutan Catalina 10.15 y versiones posteriores. Una vez incorporado un dispositivo, DLP detectará si se usan y comparten elementos confidenciales. Esto le proporciona la visibilidad y el control que necesita para asegurarse de que se usan y protegen correctamente, así como para ayudar a evitar algún comportamiento peligroso que podría comprometerlos.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -56,32 +58,32 @@ Si va a incorporar dispositivos Windows 10 o Windows 11, asegúrese de que el 
 
 Para obtener una introducción general a la incorporación de dispositivos Windows, consulte:
 
-- [Incorporar dispositivos Windows 10 y Windows 11 en la información general de Microsoft 365](device-onboarding-overview.md#onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview)
+- [Introducción a la incorporación de dispositivos Windows 10 y Windows 11 a Microsoft Purview](device-onboarding-overview.md#onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview)
 
 Para obtener instrucciones específicas sobre la incorporación de dispositivos Windows, consulte:
 
 Tema | Descripción
 :---|:---
-[Incorporar dispositivos Windows 10 u 11 mediante directiva de grupo](device-onboarding-gp.md) | Utilice la directiva de grupo para implementar el paquete de configuración en los dispositivos.
-[Incorporar dispositivos Windows 10 u 11 mediante Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md) | Puede usar Microsoft Endpoint Configuration Manager (rama actual) versión 1606 o Microsoft Endpoint Configuration Manager (rama actual) versión 1602 o anterior para implementar el paquete de configuración en los dispositivos.
-[Incorporación de dispositivos Windows 10 u 11 mediante herramientas de administración de dispositivos móviles](device-onboarding-mdm.md) | Use herramientas de administración de dispositivos móviles o Microsoft Intune para implementar el paquete de configuración en el dispositivo.
-[Incorporación de dispositivos Windows 10 u 11 mediante un script local](device-onboarding-script.md) | Obtenga información sobre cómo usar el script local para implementar el paquete de configuración en puntos de conexión.
+[Incorporación de dispositivos Windows 10 o 11 con directiva de grupo](device-onboarding-gp.md) | Utilice Directiva de grupo para implementar el paquete de configuración en los dispositivos.
+[Incorpore dispositivos Windows 10 o 11 con Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md) | Puede usar Microsoft Endpoint Configuration Manager (rama actual) versión 1606 o Microsoft Endpoint Configuration Manager (rama actual) versión 1602 o anterior para implementar el paquete de configuración en dispositivos.
+[Incorpore los dispositivos Windows 10 o 11 con herramientas de administración de dispositivos móviles](device-onboarding-mdm.md) | Usa las herramientas de administración de dispositivos móviles o Microsoft Intune para implementar el paquete de configuración en el dispositivo.
+[Incorpore los dispositivos Windows 10 o 11 con un script local](device-onboarding-script.md) | Obtenga información sobre cómo usar el script local para implementar el paquete de configuración en puntos de conexión.
 [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](device-onboarding-vdi.md) | Obtenga información sobre cómo usar el paquete de configuración para configurar dispositivos VDI.
 
 ## <a name="macos-onboarding-procedures"></a>Procedimientos de incorporación de macOS
 
 Para obtener una introducción general a la incorporación de dispositivos macOS, vea:
  
-- [Incorporar dispositivos macOS en la información general de Microsoft 365 (versión preliminar)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+- [Incorporar dispositivos macOS a Microsoft Purview](device-onboarding-macos-overview.md)
 
 Para obtener instrucciones específicas sobre la incorporación de dispositivos macOS, vea:
 
 Tema | Descripción
 :---|:---
-|[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante Intune (versión preliminar)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)|Para dispositivos macOS administrados a través de Intune
-|[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante Intune para clientes de Microsoft Defender para punto de conexión (versión preliminar)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) |Para dispositivos macOS que se administran a través de Intune y que tienen implementado Microsoft Defender para punto de conexión (MDE)
-|[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante JAMF Pro (versión preliminar)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview) | Para dispositivos macOS que se administran a través de JAMF Pro
-|[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión (versión preliminar)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|Para dispositivos macOS que se administran a través de JAMF Pro y que tienen implementado Microsoft Defender para punto de conexión (MDE)
+|[Incorporar y desactivar dispositivos macOS en soluciones de Microsoft Purview mediante Intune](device-onboarding-offboarding-macos-intune.md)|Para dispositivos macOS administrados a través de Intune
+|[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento con Intune para clientes de Microsoft Defender para punto de conexión](device-onboarding-offboarding-macos-intune-mde.md) |Para dispositivos macOS que se administran a través de Intune y que tienen implementado Microsoft Defender para punto de conexión (MDE)
+|[Incorporar y retirar dispositivos macOS en soluciones de Microsoft Purview con JAMF Pro)](device-onboarding-offboarding-macos-jamfpro.md) | Para dispositivos macOS que se administran a través de JAMF Pro
+|[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento con JAMF Pro para clientes de Microsoft Defender para punto de conexión)](device-onboarding-offboarding-macos-jamfpro-mde.md)|Para dispositivos macOS que se administran a través de JAMF Pro y que tienen implementado Microsoft Defender para punto de conexión (MDE)
 
 Una vez incorporado el dispositivo, debería aparecer en la lista de dispositivos y empezar a informar de la actividad de auditoría al Explorador de actividades.
 
@@ -156,7 +158,7 @@ See, [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboar
 
 <!--## Onboarding Windows 10 and Windows 11 devices into device management
 
-You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft 365 Compliance portal.
+You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft Purview compliance portal.
 
 When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy it to those devices. Follow the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).
 
@@ -166,7 +168,7 @@ If you already have devices onboarded into [Microsoft Defender for Endpoint](/wi
 
 In this deployment scenario, you'll onboard devices that have not been onboarded yet, and you just want to monitor and protect sensitive items from unintentional sharing on Windows 10 or Windows 11 devices.
 
-1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 
 2. Choose **Settings** > **Device onboarding**.
 
@@ -199,7 +201,7 @@ Once done and endpoint is onboarded, it should be visible in the devices list an
 
 In this scenario, Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in. All these endpoints will appear in the managed devices list. You can continue to onboard new devices into Endpoint DLP to expand coverage by using the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).
 
-1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 
 2. Open the Compliance Center settings page and choose **Enable device monitoring**.
 
@@ -227,13 +229,13 @@ Once done and endpoint is onboarded, it should be visible under the **Devices** 
 
 ### Viewing Endpoint DLP alerts in DLP Alerts Management dashboard
 
-1. Open the Data loss prevention page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and choose Alerts.
+1. Open the Data loss prevention page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and choose Alerts.
 
 2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
 
 ### Viewing Endpoint DLP data in activity explorer
 
-1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft 365 Compliance center and choose Activity explorer.
+1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft Purview compliance portal and choose Activity explorer.
 
 2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your Endpoint devices.
 

@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 description: Elija cómo ver el contenido en eDiscovery (Premium), como texto, anotación, conversión o vista nativa.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 775804bd8e69e11bdacd1fee141234b07462dbef
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8248eaa1fd8bce5c34bb8c936b9fecc0dd29deba
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945811"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992840"
 ---
 # <a name="view-documents-in-a-review-set-in-ediscovery-premium"></a>Ver documentos en un conjunto de revisión en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 eDiscovery (Premium) muestra contenido a través de varios visores cada uno con diferentes propósitos. Puede usar varios visores haciendo clic en cualquier documento de un conjunto de revisión. Los visores proporcionados actualmente son:
 

@@ -1,5 +1,5 @@
 ---
-title: Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante JAMF Pro (versión preliminar)
+title: Incorporación y apagado de dispositivos macOS en soluciones de Microsoft Purview mediante JAMF Pro
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,32 +13,34 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo incorporar y desconectar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante JAMF Pro (versión preliminar)
-ms.openlocfilehash: 44e57e482c08b486563200010671b5c79329f7b2
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Obtenga información sobre cómo incorporar y desconectar dispositivos macOS en soluciones de Microsoft Purview mediante JAMF Pro
+ms.openlocfilehash: bf15868b865afa80146df2b16199caf360a55ce2
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783829"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953435"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>Incorporar y retirar dispositivos macOS en soluciones de cumplimiento de Microsoft 365 mediante JAMF Pro (versión preliminar)
+# <a name="onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>Incorporación y apagado de dispositivos macOS en soluciones de Microsoft Purview mediante JAMF Pro
 
-Puede usar JAMF Pro para incorporar dispositivos macOS a soluciones de cumplimiento de Microsoft 365, como la prevención de pérdida de datos de punto de conexión.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Puede usar JAMF Pro para incorporar dispositivos macOS a soluciones de Microsoft Purview, como la prevención de pérdida de datos de punto de conexión.
 
 > [!IMPORTANT]
 > Use este procedimiento si ***no*** tiene Microsoft Defender para punto de conexión (MDE) implementados en los dispositivos macOS.
 
 **Se aplica a:**
 
-- [Prevención de pérdida de datos en punto de conexión en Microsoft 365 (DLP)](./endpoint-dlp-learn-about.md)
-- [Administración de riesgos internos](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Prevención de perdida de datos en el punto de conexión (DLP)](./endpoint-dlp-learn-about.md)
+- [Administración de riesgos internos](insider-risk-management.md)
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
 - Asegúrese de que [los dispositivos macOS se administran a través de JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) y que están asociados a una identidad (UPN Azure AD unida) a través de JAMF Conectar o Intune.
 - Instalar el explorador v95+ Edge en los dispositivos macOS
 
-## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>Incorporación de dispositivos a soluciones de cumplimiento de Microsoft 365 mediante JAMF Pro
+## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>Incorporación de dispositivos a soluciones de Microsoft Purview mediante JAMF Pro
 
 1. Necesitará estos archivos para este procedimiento.
 

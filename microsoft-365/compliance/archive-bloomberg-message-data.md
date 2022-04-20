@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar y archivar datos desde la herramienta de correo electrónico bloomberg message en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 497e0e5e3f99c5776d872ef522107cb29ba0fd33
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 781378ba30ccb7db44191764e050277fa4a239aa
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938761"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992837"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Configuración de un conector para archivar los datos del mensaje de Bloomberg
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector de datos en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de correo electrónico de servicios financieros desde la herramienta [de colaboración de mensajes de Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) . Después de configurar y configurar un conector, se conecta al sitio ftp seguro (SFTP) de Bloomberg de su organización una vez al día e importa elementos de correo electrónico a buzones de correo en Microsoft 365.
 

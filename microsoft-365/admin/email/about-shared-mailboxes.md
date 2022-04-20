@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Los buzones compartidos se usan cuando varias personas necesitan acceder al mismo buzón. Obtenga información sobre lo que debe saber antes de crear un buzón compartido.
-ms.openlocfilehash: 7b2632d8fde1b898fb9f2f425ef26a2eec28abb0
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: a384440b64b84618831b8065bd40d89200ea47d0
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63675358"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971545"
 ---
 # <a name="about-shared-mailboxes"></a>Acerca de los buzones compartidos
 
@@ -58,15 +58,15 @@ Antes de [crear un buzón compartido](create-a-shared-mailbox.md), estas son alg
 
 - **Iniciar sesión:** No se espera un inicio de sesión directo en el buzón compartido por la cuenta de usuario asociada. Siempre debe bloquear el inicio de sesión de la cuenta de buzón compartido y mantenerlo bloqueado.
 
-- **Demasiados usuarios:** Cuando hay demasiados usuarios designados que acceden simultáneamente a un buzón compartido (no se recomienda más de 25), pueden no conectarse intermitentemente a este buzón o tener incoherencias como que los mensajes se dupliquen en la bandeja de salida. En este caso, puede considerar reducir el número de usuarios o usar una carga de trabajo diferente, como un grupo Microsoft 365 o una carpeta pública.
+- **Demasiados usuarios:** Cuando hay demasiados usuarios designados que acceden simultáneamente a un buzón compartido (se recomienda no más de 25), es posible que no puedan conectarse de forma intermitente a este buzón o que tengan incoherencias como mensajes duplicados en la bandeja de salida. En este caso, puede considerar la posibilidad de reducir el número de usuarios o usar una carga de trabajo diferente, como un grupo de Microsoft 365 o una carpeta Pública.
 
-- **Eliminación de mensajes:** Lamentablemente, no es posible impedir que los miembros eliminen los mensajes en un buzón compartido. La única forma de evitar esto es [crear un grupo Microsoft 365](/microsoft-365/admin/create-groups/create-groups) en lugar de un buzón compartido. Los grupos de Outlook son similares al buzón compartido. Para ver una comparación, consulte [Comparar grupos](../create-groups/compare-groups.md). Para obtener más información acerca de los grupos, vea [Learn about Microsoft 365 groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+- **Eliminación de mensajes:** Lamentablemente, no es posible impedir que los miembros eliminen los mensajes en un buzón compartido. La única manera de evitar esto es [crear un grupo de Microsoft 365](/microsoft-365/admin/create-groups/create-groups) en lugar de un buzón compartido. Los grupos de Outlook son similares al buzón compartido. Para ver una comparación, consulte [Comparar grupos](../create-groups/compare-groups.md). Para más información sobre los grupos, consulte [Más información sobre los grupos de Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
-- **Multi-Geo** En un entorno multige geográfico, los buzones compartidos deben tener una licencia del mismo modo que se concede una licencia a un buzón de usuario. Tenga en cuenta que no se admite la auditoría entre buzones de correo. Por ejemplo, si se asignan permisos a un usuario para tener acceso a un buzón compartido en una ubicación geográfica diferente, las acciones de buzón que realiza el usuario no se registran en el registro de auditoría del buzón de correo compartido. 
+- **Multigeográfica** En un entorno multigeográfico, los buzones compartidos deben tener la misma licencia que un buzón de usuario. Tenga en cuenta que no se admite la auditoría de buzones entre zonas geográficas. Por ejemplo, si se asignan permisos a un usuario para tener acceso a un buzón compartido en una ubicación geográfica diferente, las acciones de buzón que realiza el usuario no se registran en el registro de auditoría del buzón de correo compartido. 
 
 
 > [!NOTE]
-> Para acceder a un buzón de correo compartido, el usuario debe tener una licencia de Exchange Online, aunque el buzón de correo compartido no requiere ninguna licencia independiente. Cada buzón compartido tiene una cuenta de usuario correspondiente. ¿Ha notado que no se le pidió que proporcionase una contraseña cuando creó el buzón de correo compartido? La cuenta tiene una contraseña, pero se ha generado por el sistema (desconocida). No debe usar la cuenta para iniciar sesión en el buzón compartido. Sin una licencia, los buzones compartidos están limitados a 50 GB. Para aumentar el límite de tamaño a 100 GB, el buzón compartido debe tener asignada una licencia de Exchange Online Plan 2. La Exchange Online de plan 1 con una Archivado de Exchange Online de complemento solo aumentará el tamaño del buzón de archivo. Esto también le permitirá habilitar el archivado de expansión automática para una capacidad de almacenamiento de archivo adicional. Del mismo modo, si desea colocar un buzón compartido en retención por litigio, el buzón compartido debe tener una licencia de Exchange Online Plan 2 o una licencia de Exchange Online Plan 1 con una licencia complementaria de Exchange Online Archiving. Si desea aplicar funciones avanzadas como Microsoft Defender para Office 365, eDiscovery avanzado o directivas de retención automática, el buzón de correo compartido debe tener licencia para esas características.
+> Para acceder a un buzón de correo compartido, el usuario debe tener una licencia de Exchange Online, aunque el buzón de correo compartido no requiere ninguna licencia independiente. Cada buzón compartido tiene una cuenta de usuario correspondiente. ¿Ha notado que no se le pidió que proporcionase una contraseña cuando creó el buzón de correo compartido? La cuenta tiene una contraseña, pero se ha generado por el sistema (desconocida). No debe usar la cuenta para iniciar sesión en el buzón compartido. Sin una licencia, los buzones compartidos están limitados a 50 GB. Para aumentar el límite de tamaño a 100 GB, el buzón compartido debe tener asignada una licencia de Exchange Online Plan 2. La licencia Exchange Online Plan 1 con una licencia de complemento Archivado de Exchange Online solo aumentará el tamaño del buzón de archivo. Esto también le permitirá habilitar el archivado de expansión automática para una capacidad de almacenamiento de archivo adicional. Del mismo modo, si desea colocar un buzón compartido en retención por litigio, el buzón compartido debe tener una licencia de Exchange Online Plan 2 o una licencia de Exchange Online Plan 1 con una licencia complementaria de Exchange Online Archiving. Si desea aplicar características avanzadas como Microsoft Defender para Office 365, eDiscovery (Premium) o directivas de retención automática, el buzón compartido debe tener licencia para esas características.
 
 ## <a name="related-content"></a>Contenido relacionado
 

@@ -16,16 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Use el nuevo formato de caso en eDiscovery (Premium) para que pueda agregar más elementos para revisar conjuntos y aprovechar otros límites aumentados y nuevas funciones.
-ms.openlocfilehash: 36650a369d2bac2742eb7f0d5ea76b3a530a1a03
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6c3e9f86cac5424ae9d9610a9c715c2f86563f64
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947437"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993565"
 ---
 # <a name="use-the-new-case-format-in-ediscovery-premium"></a>Usar el nuevo formato de caso en eDiscovery (Premium)
 
-Más organizaciones usan la solución eDiscovery (Premium) en Microsoft 365 para procesos críticos de eDiscovery. Esto incluye responder a solicitudes normativas, investigaciones y litigios. A medida que aumenta el uso de eDiscovery (Premium), un requisito común del cliente es expandir la cantidad total de contenido que se puede administrar en un único caso de exhibición de documentos electrónicos (Premium). Para ayudar a dar cabida a aumentos significativos en el tamaño de los casos, tanto para el volumen total de datos como para el número total de elementos, ahora puede elegir el nuevo formato de caso al crear un caso de exhibición de documentos electrónicos (Premium).  
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Más organizaciones usan la solución eDiscovery (Premium) en Microsoft Purview para los procesos críticos de eDiscovery. Esto incluye responder a solicitudes normativas, investigaciones y litigios. A medida que aumenta el uso de eDiscovery (Premium), un requisito común del cliente es expandir la cantidad total de contenido que se puede administrar en un único caso de exhibición de documentos electrónicos (Premium). Para ayudar a dar cabida a aumentos significativos en el tamaño de los casos, tanto para el volumen total de datos como para el número total de elementos, ahora puede elegir el nuevo formato de caso al crear un caso de exhibición de documentos electrónicos (Premium).  
 
 ## <a name="create-a-case"></a>Crear un caso
 

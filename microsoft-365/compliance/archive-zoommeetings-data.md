@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de Veritas Zoom Meetings en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: f8239b1c624712b1eafe0bdce7250143c80610a5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e31f6a4af31f150143ba5e44e57c198756547f93
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934915"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993302"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>Configuración de un conector para archivar los datos de Zoom Meetings
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de Reuniones de Zoom a buzones de correo de usuario de la organización de Microsoft 365. Veritas proporciona un conector [de Reuniones de Zoom](https://globanet.com/zoom/) que está configurado para capturar elementos del origen de datos de terceros (de forma regular) e importarlos a Microsoft 365. El conector convierte el contenido de las reuniones (incluidos chats, archivos grabados y metadatos) de la cuenta de Zoom Meetings a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
 

@@ -20,16 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: El registro de auditoría de buzones está activado de forma predeterminada en Microsoft 365 (también denominado "auditoría predeterminada de buzones" o "auditoría de buzones de correo de forma predeterminada"). Esta configuración significa que ciertas acciones realizadas por propietarios, delegados y administradores de buzones de correo se registran automáticamente en un registro de auditoría de buzones, donde puede buscar actividades realizadas en el buzón.
-ms.openlocfilehash: e869c705df2943c1781c02362c2c38b6713affc5
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: bb8170b603bc72459e3bbd55fa256df188f42f65
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841911"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952894"
 ---
 # <a name="manage-mailbox-auditing"></a>Administrar la auditoría de buzones de correo
 
-En enero de 2019, Microsoft activaba el registro de auditoría de buzones de correo de forma predeterminada para todas las organizaciones. Esta configuración significa que determinadas acciones de los propietarios, delegados y administradores del buzón de correo se registran automáticamente. También significa que los registros de auditoría de buzón correspondientes estarán disponibles al buscarlos en el registro de auditoría del buzón. Antes de que la auditoría de buzones se activara de forma predeterminada, tenía que habilitarla manualmente para cada buzón de correo de usuario de la organización.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+A partir de enero de 2019, Microsoft activa el registro de auditoría de buzones de forma predeterminada para todas las organizaciones. Esto significa que ciertas acciones realizadas por los propietarios, delegados y administradores del buzón de correo se registran automáticamente y los registros de auditoría de buzón correspondientes estarán disponibles al buscarlos en el registro de auditoría del buzón. Antes de que la auditoría de buzones se activara de forma predeterminada, tenía que habilitarla manualmente para cada buzón de correo de usuario de la organización.
 
 Estas son algunas ventajas de la auditoría de buzones de correo en de forma predeterminada:
 
@@ -41,8 +43,7 @@ Estas son algunas ventajas de la auditoría de buzones de correo en de forma pre
 > [!NOTE]
 >
 > - Lo importante que debe recordar sobre la versión de auditoría de buzones de correo en de forma predeterminada es: no es necesario hacer nada para administrar la auditoría de buzones. Sin embargo, para obtener más información, personalizar la auditoría de buzones de correo desde la configuración predeterminada o desactivarla por completo, este artículo puede ayudarle.
-> - De forma predeterminada, solo los eventos de auditoría de buzones de correo para los usuarios con licencias que incluyen la característica [Auditoría avanzada](advanced-audit.md) están disponibles en las búsquedas de registros de auditoría en el Centro de cumplimiento de Microsoft 365 o a través de la API de actividad de administración de Office 365. Estas licencias se describen [aquí](auditing-solutions-overview.md#advanced-audit-1). Para mayor brevedad, este artículo hará referencia colectivamente a las licencias que incluyen auditoría avanzada como *licencias E5/A5/G5*.
->   Para obtener más información sobre cómo afectan las licencias a los eventos de auditoría de buzones en el Centro de cumplimiento de M365, consulte la sección [Más información](#more-information) más adelante en este artículo.
+> - De forma predeterminada, solo los eventos de auditoría de buzones de correo para los usuarios de E5 están disponibles en las búsquedas de registros de auditoría en el portal de cumplimiento de Microsoft Purview o a través de la API de actividad de administración de Office 365. Para obtener más información, consulte la sección [Más información](#more-information) de este artículo.
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Comprobar que la auditoría del buzón está activada de forma predeterminada
 
@@ -103,15 +104,15 @@ En la tabla siguiente se describen las acciones de buzón que están disponibles
 |**FolderBind**|Se tuvo acceso a una carpeta de buzón de correo. Esta acción también se registra cuando el administrador o un delegado abren el buzón de correo.<br/><br/> **Nota**: Se consolidan los registros de auditoría de las acciones de enlace de carpeta realizadas por los delegados. Se genera un registro de auditoría para el acceso a carpetas individuales en un período de 24 horas.|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación.](../media/checkmark.png)||
 |**HardDelete**|Un mensaje se purgó de la carpeta Elementos recuperables.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|
 |**MailboxLogin**|El usuario ha iniciado sesión en su buzón de correo.|||![Marca de verificación](../media/checkmark.png)|
-|**MailItemsAccessed**|**Nota**: Este valor solo está disponible para los usuarios con licencias E5/A5/G5. Para obtener más información, vea [Configurar auditoría avanzada en Microsoft 365](set-up-advanced-audit.md). <br/><br/> Los clientes y protocolos de correo acceden a los datos de correo.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
+|**MailItemsAccessed**|**Nota**: Este valor solo está disponible para los usuarios con licencias E5/A5/G5. Para obtener más información, vea [Configurar microsoft Purview Audit (Premium)](set-up-advanced-audit.md). <br/><br/> Los clientes y protocolos de correo acceden a los datos de correo.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
 |**MessageBind**|**Nota**: Este valor solo está disponible para los usuarios *sin* licencias E5/A5/G5. <br/><br/> Un administrador ha visto un mensaje en el panel de vista previa o lo ha abierto.|![Marca de verificación](../media/checkmark.png)|||
 |**ModifyFolderPermissions**|Aunque este valor se acepta como una acción de buzón de correo, ya se incluye en la acción **UpdateFolderPermissions** y no se audita por separado. En otras palabras, no use este valor.||||
 |**Mover**|Un mensaje se movió a otra carpeta.|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|
 |**MoveToDeletedItems**|Un mensaje se eliminó y se movió a la carpeta Elementos eliminados.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|Un elemento etiquetado como registro se eliminó temporalmente (se movió a la carpeta Elementos recuperables). Los elementos etiquetados como registros no se pueden eliminar permanentemente (se purgan de la carpeta Elementos recuperables).|![Marca de verificación.](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|
 |**RemoveFolderPermissions**|Aunque este valor se acepta como una acción de buzón de correo, ya se incluye en la acción **UpdateFolderPermissions** y no se audita por separado. En otras palabras, no use este valor.||||
-|**SearchQueryInitiated**|**Nota**: Este valor solo está disponible para los usuarios con licencias E5/A5/G5. Para obtener más información, vea [Configurar auditoría avanzada en Microsoft 365](set-up-advanced-audit.md). <br/><br/> Una persona usa Outlook (Windows, Mac, iOS, Android o Outlook en la Web) o la aplicación Mail para Windows 10 para buscar elementos en un buzón.|||![Marca de verificación](../media/checkmark.png)|
-|**Send**|**Nota**: Este valor solo está disponible para los usuarios con licencias E5/A5/G5. Para obtener más información, vea [Configurar auditoría avanzada en Microsoft 365](set-up-advanced-audit.md). <br/><br/> El usuario envía un mensaje de correo electrónico, responde a un mensaje de correo electrónico o reenvía un mensaje de correo electrónico.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>||![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
+|**SearchQueryInitiated**|**Nota**: Este valor solo está disponible para los usuarios con licencias E5/A5/G5. Para obtener más información, vea [Configurar microsoft Purview Audit (Premium)](set-up-advanced-audit.md). <br/><br/> Una persona usa Outlook (Windows, Mac, iOS, Android o Outlook en la Web) o la aplicación Mail para Windows 10 para buscar elementos en un buzón.|||![Marca de verificación](../media/checkmark.png)|
+|**Send**|**Nota**: Este valor solo está disponible para los usuarios con licencias E5/A5/G5. Para obtener más información, vea [Configurar microsoft Purview Audit (Premium)](set-up-advanced-audit.md). <br/><br/> El usuario envía un mensaje de correo electrónico, responde a un mensaje de correo electrónico o reenvía un mensaje de correo electrónico.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>||![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|Un mensaje se envió mediante el permiso SendAs. Esto significa que otro usuario envió el mensaje como si procediera del propietario del buzón.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|Un mensaje se envió mediante el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje en nombre del propietario del buzón. El mensaje indica el destinatario en nombre de quien se envió el mensaje y quién lo envió realmente.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|Un mensaje se eliminó permanentemente o se eliminó de la carpeta Elementos eliminados. Los elementos eliminados de forma temporal se mueven a la carpeta Elementos recuperables.|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación.](../media/checkmark.png)<sup>\*</sup>|![Marca de verificación](../media/checkmark.png)<sup>\*</sup>|
@@ -321,11 +322,11 @@ El valor **True** indica que el registro de auditoría del buzón se omite para 
 
 ## <a name="more-information"></a>Más información
 
-- Aunque el registro de auditoría de buzones está habilitado de forma predeterminada para todas las organizaciones, solo los usuarios con [licencias que incluyan la característica Auditoría avanzada](auditing-solutions-overview.md#advanced-audit-1) (denominadas colectivamente *licencias E5/A5/G5*) devolverán eventos de registro de auditoría de buzones [en las búsquedas de registros de auditoría en el Centro de cumplimiento de Microsoft 365](search-the-audit-log-in-security-and-compliance.md) o a través de [la API de actividad de administración de Office 365.](/office/office-365-management-api/office-365-management-activity-api-reference) **de forma predeterminada**.
+- Aunque el registro de auditoría de buzones de correo está habilitado de forma predeterminada para todas las organizaciones, solo los usuarios con licencias E5 devolverán eventos de registro de auditoría de buzones en [las búsquedas de registros de auditoría en el portal de cumplimiento de Microsoft Purview](search-the-audit-log-in-security-and-compliance.md) o a través de [la API de actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference) **de forma predeterminada**.
 
   Para recuperar entradas de registro de auditoría de buzones para usuarios sin licencias E5/A5/G5, puede usar cualquiera de las siguientes soluciones alternativas:
 
-  - Habilite manualmente la auditoría de buzones en los buzones de usuario afectados mediante la ejecución del siguiente comando: `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`. Después de habilitar la auditoría de buzones en el buzón, puede usar búsquedas de registros de auditoría en el Centro de cumplimiento de Microsoft 365 o a través de la API de actividad de administración de Office 365.
+  - Habilite manualmente la auditoría de buzones en buzones individuales (ejecute el comando , `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`). Después de hacerlo, puede usar búsquedas de registros de auditoría en el portal de cumplimiento de Microsoft Purview o a través de la API de actividad de administración de Office 365.
 
     > [!NOTE]
     > Si la auditoría de buzones ya parece estar habilitada en el buzón de correo, pero las búsquedas no devuelven resultados, cambie el valor del parámetro *AuditEnabled* a `$false` y vuelva a `$true`.

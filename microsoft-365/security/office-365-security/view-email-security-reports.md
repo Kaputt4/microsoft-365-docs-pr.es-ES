@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 44d09eefb065ee204dd90980dfe710d6b3ddb88e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: d97442fc2c3767a30c1ea98dc4a1ee7a38e56b45
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666798"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971009"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Visualización de informes de seguridad de correo electrónico en el portal de Microsoft 365 Defender
 
@@ -110,7 +110,6 @@ En la página **Exchange informe de reglas de transporte**, los gráficos y los 
 > [!NOTE]
 > El **informe Exchange regla de transporte** ya está disponible en el EAC. Para obtener más información, vea [Exchange informe de reglas de transporte en el nuevo EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
-
 ### <a name="chart-breakdown-by-direction"></a>Desglose del gráfico por dirección
 
 :::image type="content" source="../../media/transport-rule-report-etr-direction-view.png" alt-text="La vista Dirección de las reglas de transporte de Exchange en el informe de reglas de transporte de Exchange" lightbox="../../media/transport-rule-report-etr-direction-view.png":::
@@ -125,7 +124,7 @@ La siguiente información se muestra en la tabla de detalles debajo del gráfico
 - **Date**
 - **Directiva DLP** (solo **ver datos mediante reglas de transporte Exchange DLP**)
 - **Regla de transporte**
-- **Asunto**
+- **Subject**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Gravedad**
@@ -156,7 +155,7 @@ La siguiente información se muestra en la tabla de detalles debajo del gráfico
 - **Date**
 - **Directiva DLP** (solo **ver datos mediante reglas de transporte Exchange DLP**)
 - **Regla de transporte**
-- **Asunto**
+- **Subject**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Gravedad**
@@ -398,7 +397,7 @@ Para ver el informe en el portal de Microsoft 365 Defender en <https://security.
 
 El gráfico muestra la siguiente información:
 
-- **Pending**
+- **Pendiente**
 - **Completed**
 
 Para filtrar el gráfico y la tabla de detalles, haga clic en **Filtrar** y seleccione uno o varios de los siguientes valores en el control flotante que aparece:
@@ -419,7 +418,7 @@ Para filtrar el gráfico y la tabla de detalles, haga clic en **Filtrar** y sele
   - **Malware**
   - **Correo no deseado**
 - **Estado de reescaneo**:
-  - **Pending**
+  - **Pendiente**
   - **Completed**
 
 La tabla de detalles debajo del gráfico muestra la misma información y tiene las mismas opciones **De grupo** o **Personalizar columnas** que en la pestaña **Enviado para análisis** en **Envíos** de **correo electrónico & colaboración**\>. Para obtener más información, consulte [Ver envíos de administradores a Microsoft](admin-submission.md#view-admin-submissions-to-microsoft).
@@ -626,7 +625,7 @@ En la vista **Ver datos por correo electrónico \> Malware** y **Desglose del gr
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Date**
-- **Subject**
+- **Asunto**
 - **Remitente**
 - **Destinatarios**
 - **Tecnología de detección**
@@ -819,7 +818,7 @@ En la tabla de detalles debajo del gráfico, está disponible la siguiente infor
 - **Nombres de archivos adjuntos**
 - **Carga de trabajo**
 - **Tecnología de detección**
-- **Tamaño del archivo**
+- **Tamaño de archivos**
 - **Última modificación del usuario**
 
 Si hace clic en **Filtrar**, están disponibles los siguientes filtros:
@@ -852,7 +851,7 @@ En la vista **Ver datos por invalidación del sistema** y **Desglose del gráfic
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Date**
-- **Asunto**
+- **Subject**
 - **Remitente**
 - **Destinatarios**
 - **Invalidación del sistema**

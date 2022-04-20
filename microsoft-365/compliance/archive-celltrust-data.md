@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de CellTrust desde Veritas a Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 2ba6a10b04c0b4444c0c6e8908089293552d7540
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c32e81d1e9909d691a1adf04ea90669817992060
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938739"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992752"
 ---
 # <a name="set-up-a-connector-to-archive-celltrust-data"></a>Configuración de un conector para archivar datos de CellTrust
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de la plataforma CellTrust en buzones de correo de usuario de la organización de Microsoft 365. Veritas proporciona un conector [CellTrust](https://globanet.com/celltrust/) que captura elementos del origen de datos de terceros e importa esos elementos a Microsoft 365. El conector convierte el contenido de los mensajes SMS de las cuentas de CellTrust en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 

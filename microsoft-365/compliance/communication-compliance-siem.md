@@ -1,6 +1,7 @@
 ---
 title: Cumplimiento de comunicaciones con soluciones de SIEM
 description: Obtenga información sobre la integración de cumplimiento de comunicaciones con soluciones SIEM.
+keywords: Microsoft 365, Microsoft Purview, cumplimiento, cumplimiento de comunicaciones
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,20 +19,22 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d957b5fec4341cd7335f5c5a49b6654ffaf51f68
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: f111fbd831f36cd8f1647e4b99565a24372387b8
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111440"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953878"
 ---
 # <a name="communication-compliance-with-siem-solutions"></a>Cumplimiento de comunicaciones con soluciones de SIEM
 
-[El cumplimiento de](communication-compliance.md) la comunicación es una solución de riesgo interno en Microsoft 365 que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar sobre mensajes inapropiados en su organización. La información de seguridad y las soluciones de administración de eventos (SIEM), como [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) o [Splunk,](https://www.splunk.com/) se usan normalmente para agregar y realizar un seguimiento de las amenazas dentro de una organización.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Una necesidad común de las organizaciones es integrar las alertas de cumplimiento de comunicaciones y estas soluciones SIEM. Con esta integración, las organizaciones pueden ver las alertas de cumplimiento de comunicaciones en su solución SIEM y, a continuación, corregir las alertas dentro del flujo de trabajo de cumplimiento de comunicaciones y la experiencia del usuario. Por ejemplo, un empleado envía un mensaje ofensivo a otro empleado y ese mensaje se detecta mediante una supervisión de directivas de cumplimiento de comunicaciones para el contenido inadecuado. La solución de cumplimiento de comunicaciones realiza un seguimiento de estos eventos Microsoft 365 auditar (también conocido como "registro de auditoría unificado") y se importan a la solución SIEM. A continuación, se desencadena una alerta en la solución SIEM para la organización a partir de eventos supervisados en Microsoft 365 auditoría asociadas con alertas de cumplimiento de comunicaciones. Los investigadores son notificados de la alerta en las soluciones SIEM y, a continuación, investigan y corrigen la alerta en la solución de cumplimiento de comunicaciones.
+[El cumplimiento de comunicaciones](communication-compliance.md) es una solución de riesgo interno en Microsoft Purview que ayuda a minimizar los riesgos de comunicación al ayudarle a detectar, capturar y actuar sobre mensajes inadecuados en su organización. Las soluciones de administración de eventos e información de seguridad (SIEM), como [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) o [Splunk](https://www.splunk.com/) , se usan normalmente para agregar y realizar un seguimiento de las amenazas dentro de una organización.
 
-## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>Alertas de cumplimiento de comunicación en Microsoft 365 Auditoría
+Una necesidad común para las organizaciones es integrar las alertas de cumplimiento de comunicaciones y estas soluciones SIEM. Con esta integración, las organizaciones pueden ver las alertas de cumplimiento de comunicaciones en su solución SIEM y, a continuación, corregir las alertas dentro del flujo de trabajo de cumplimiento de comunicaciones y la experiencia del usuario. Por ejemplo, un empleado envía un mensaje ofensivo a otro empleado y ese mensaje lo detecta una supervisión de directivas de cumplimiento de comunicaciones para contenido inadecuado. La solución de cumplimiento de comunicaciones realiza un seguimiento de estos eventos en Microsoft 365 Audit (también conocido como "registro de auditoría unificado") e importa en la solución SIEM. A continuación, se desencadena una alerta en la solución SIEM para la organización a partir de eventos supervisados en Microsoft 365 Audit que están asociados a las alertas de cumplimiento de comunicaciones. Los investigadores reciben una notificación de la alerta en las soluciones SIEM y, a continuación, investigan y corrigen la alerta en la solución de cumplimiento de comunicaciones.
+
+## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>Alertas de cumplimiento de comunicaciones en Microsoft 365 Audit
 
 Todas las coincidencias de directivas de cumplimiento de comunicaciones se capturan en Microsoft 365 Auditoría. En los ejemplos siguientes se muestran los detalles disponibles para las actividades de coincidencia de directivas de cumplimiento de comunicaciones seleccionadas:
 
@@ -51,7 +54,7 @@ IsValid: True
 ObjectState: Unchanged
 ```
 
-**Ejemplo de una entrada Microsoft 365 registro de auditoría para una directiva con coincidencia de palabras clave personalizadas (tipo de información confidencial personalizada):**
+**Ejemplo de una entrada de registro de auditoría de Microsoft 365 para una directiva con coincidencia de palabra clave personalizada (tipo de información confidencial personalizada):**
 
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
@@ -68,64 +71,64 @@ ObjectState: Unchanged
 ```
 
 > [!NOTE]
-> Actualmente, puede haber un retraso de hasta 24 horas entre el momento en que se registra una coincidencia de directiva en la auditoría de Microsoft 365 y la hora en que puede investigar coincidencias de directivas en el cumplimiento de la comunicación.
+> Actualmente, puede haber un retraso de hasta 24 horas entre el momento en que se registra una coincidencia de directiva en Microsoft 365 Audit y la hora en la que puede investigar las coincidencias de directiva en el cumplimiento de la comunicación.
 
-## <a name="configure-communication-compliance-and-microsoft-sentinel-integration"></a>Configurar el cumplimiento de las comunicaciones y la integración de Microsoft Sentinel
+## <a name="configure-communication-compliance-and-microsoft-sentinel-integration"></a>Configuración del cumplimiento de comunicaciones y la integración de Microsoft Sentinel
 
-Cuando usa Microsoft Sentinel para agregar coincidencias de directiva de cumplimiento de comunicaciones, Sentinel usa Microsoft 365 Audit como origen de datos. Para integrar las alertas de cumplimiento de comunicaciones con Sentinel, siga estos pasos:
+Cuando se usa Microsoft Sentinel para agregar coincidencias de directivas de cumplimiento de comunicaciones, Sentinel usa Microsoft 365 Audit como origen de datos. Para integrar alertas de cumplimiento de comunicaciones con Sentinel, siga estos pasos:
 
 1. [Incorporación a Microsoft Sentinel](/azure/sentinel/quickstart-onboard). Como parte del proceso de incorporación, configurará los orígenes de datos.
-2. Configure el conector de datos Microsoft Office 365 Microsoft Sentinel [y,](/azure/sentinel/data-connectors-reference#microsoft-office-365) en configuración del conector, *seleccione Exchange*.
-3. Configurar la consulta de búsqueda para recuperar alertas de cumplimiento de comunicaciones. Por ejemplo:
+2. Configure el conector de [datos de Microsoft Sentinel Microsoft Office 365](/azure/sentinel/data-connectors-reference#microsoft-office-365) y, en Configuración del conector, seleccione *Exchange*.
+3. Configure la consulta de búsqueda para recuperar las alertas de cumplimiento de comunicaciones. Por ejemplo:
 
-    *| OfficeActivity | donde OfficeWorkload == "Exchange" y Operation == "SupervisionRuleMatch" | ordenar por TimeGenerated*
+    *| OfficeActivity | where OfficeWorkload == "Exchange" y Operation == "SupervisionRuleMatch" | ordenar por TimeGenerated*
 
     Para filtrar por un usuario específico, usaría el siguiente formato de consulta:
 
-    *| OfficeActivity | donde OfficeWorkload == "Exchange" y Operation == "SupervisionRuleMatch" y UserId == "User1@Contoso.com" | ordenar por TimeGenerated*
+    *| OfficeActivity | where OfficeWorkload == "Exchange" y Operation == "SupervisionRuleMatch" y UserId == "User1@Contoso.com" | ordenar por TimeGenerated*
 
-Para obtener más información acerca de los Microsoft 365 de auditoría de Office 365 recopilados por Microsoft Sentinel, consulte [Azure Monitor Logs reference](/azure/azure-monitor/reference/tables/OfficeActivity).
+Para obtener más información sobre los registros de auditoría de Microsoft 365 para Office 365 recopilados por Microsoft Sentinel, consulte [Referencia de registros de Azure Monitor](/azure/azure-monitor/reference/tables/OfficeActivity).
 
-## <a name="configure-communication-compliance-and-splunk-integration"></a>Configurar el cumplimiento de la comunicación y la integración de Splunk
+## <a name="configure-communication-compliance-and-splunk-integration"></a>Configuración del cumplimiento de comunicaciones y la integración de Splunk
 
-Para integrar las alertas de cumplimiento de comunicaciones con Splunk, siga estos pasos:
+Para integrar alertas de cumplimiento de comunicaciones con Splunk, siga estos pasos:
 
-1. Instalar el [complemento Splunk para Microsoft Office 365](https://docs.splunk.com/Documentation/AddOns/released/MSO365/ConfigureinputsmanagementAPI)
-2. Configurar una aplicación de integración Azure AD para el complemento Splunk para Microsoft Office 365
-3. Configure las consultas de búsqueda en la solución splunk. Use el siguiente ejemplo de búsqueda para identificar todas las alertas de cumplimiento de comunicaciones:
+1. Instale el [complemento Splunk para Microsoft Office 365](https://docs.splunk.com/Documentation/AddOns/released/MSO365/ConfigureinputsmanagementAPI)
+2. Configuración de una aplicación de integración en Azure AD para el complemento Splunk para Microsoft Office 365
+3. Configure las consultas de búsqueda en la solución Splunk. Use el ejemplo de búsqueda siguiente para identificar todas las alertas de cumplimiento de comunicaciones:
 
-    *index= \* sourcetype="o365:management:activity" Workload=Exchange Operation=SupervisionRuleMatch*
+    *index=\* sourcetype="o365:management:activity" Workload=Exchange Operation=SupervisionRuleMatch*
 
-Para filtrar los resultados de una directiva de cumplimiento de comunicación específica, puede usar el parámetro *SRPolicyMatchDetails.SRPolicyName.*
+Para filtrar los resultados de una directiva de cumplimiento de comunicaciones específica, puede usar el parámetro *SRPolicyMatchDetails.SRPolicyName* .
 
-Por ejemplo, el siguiente ejemplo de búsqueda devolvería alertas de coincidencias a una directiva de cumplimiento de comunicaciones denominada *Contenido inadecuado:*
+Por ejemplo, el siguiente ejemplo de búsqueda devolvería alertas de coincidencias a una directiva de cumplimiento de comunicaciones denominada *Contenido inadecuado*:
 
-  *index= \* sourcetype='o365:management:activity' Workload=Exchange Operation=SupervisionRuleMatch SRPolicyMatchDetails.SRPolicyName=\<Inappropriate content\>*
+  *index=\* sourcetype='o365:management:activity' Workload=Exchange Operation=SupervisionRuleMatch SRPolicyMatchDetails.SRPolicyName=\<Inappropriate content\>*
 
-En la tabla siguiente se muestran resultados de búsqueda de ejemplo para distintos tipos de directiva:
+En la tabla siguiente se muestran resultados de búsqueda de ejemplo para diferentes tipos de directiva:
 
 | Tipos de directivas | Resultados de búsqueda de ejemplo |
 | :------------------ | :--------------------------------------- |
-| Directiva que detecta una lista de palabras clave de tipo de información confidencial personalizada | { <br> CreationTime: 2021-09-17T16:29:57 <br> ID: 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit: true <br> ObjectId: <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> Operación: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM. Nota","CcsiResults":"leak"} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.OnMicrosoft.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Versión: 1 <br> Carga de trabajo: Exchange <br> } |
-| Directiva que detecta un idioma inadecuado | { <br> CreationTime: 2021-09-17T23:44:35 <br> Id.: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> ObjectId: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> Operación: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM.Yammer. Message","CcsiResults":""} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Versión: 1 <br> }  |
+| Directiva que detecta una lista personalizada de palabras clave de tipo de información confidencial | { <br> CreationTime: 2021-09-17T16:29:57 <br> Identificador: 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit: true <br> Idobjeto: <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> Operación: SupervisiónRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM. Nota","CcsiResults":"leak"} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.OnMicrosoft.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Versión: 1 <br> Carga de trabajo: Exchange <br> } |
+| Directiva que detecta un lenguaje inadecuado | { <br> CreationTime: 2021-09-17T23:44:35 <br> Identificador: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> Idobjeto: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> Operación: SupervisiónRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM.Yammer. Message","CcsiResults":""} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> Versión: 1 <br> }  |
 
-## <a name="configure-communication-compliance-with-other-siem-solutions"></a>Configurar el cumplimiento de la comunicación con otras soluciones SIEM
+## <a name="configure-communication-compliance-with-other-siem-solutions"></a>Configuración del cumplimiento de las comunicaciones con otras soluciones SIEM
 
-Para recuperar las coincidencias de directivas de cumplimiento de comunicaciones de Microsoft 365 Audit, puede usar PowerShell o la API de administración [Office 365.](/office/office-365-management-api/office-365-management-activity-api-reference)
+Para recuperar las coincidencias de directivas de cumplimiento de comunicaciones de Microsoft 365 Audit, puede usar PowerShell o la [API de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-Al usar PowerShell, puede usar cualquiera de estos parámetros con el cmdlet **Search-UnifiedAuditLog** para filtrar eventos de registro de auditoría para actividades de cumplimiento de comunicaciones.
+Al usar PowerShell, puede usar cualquiera de estos parámetros con el cmdlet **Search-UnifiedAuditLog** para filtrar los eventos de registro de auditoría para las actividades de cumplimiento de comunicaciones.
 
 | Parámetro de registro de auditoría | Valor del parámetro de cumplimiento de comunicaciones |
 | :------------------ | :--------------------------------------- |
 | Operaciones          | SupervisionRuleMatch                     |
 | RecordType          | ComplianceSupervisionExchange            |
 
-Por ejemplo, la siguiente es una búsqueda de ejemplo con el **parámetro Operations** y el *valor SupervisionRuleMatch:*
+Por ejemplo, a continuación se muestra una búsqueda de ejemplo con el parámetro **Operations** y el valor *SupervisionRuleMatch* :
 
 ```powershell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch | ft CreationDate,UserIds,AuditData
 ```
-A continuación se muestra una búsqueda de ejemplo con el **parámetro RecordsType** y el *valor ComplianceSupervisionExchange:*
+A continuación se muestra una búsqueda de ejemplo con el parámetro **RecordsType** y el valor *ComplianceSupervisionExchange* :
 
 ```powershell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType ComplianceSuperVisionExchange | ft CreationDate,UserIds,AuditData
@@ -133,5 +136,5 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Compl
 ## <a name="resources"></a>Recursos
 
 - [Auditoría de cumplimiento de comunicaciones](communication-compliance-reports-audits.md#audit)
-- [Auditoría avanzada en Microsoft 365](advanced-audit.md)
+- [Auditoría de Microsoft Purview (Premium)](advanced-audit.md)
 - [Referencia de las API de Actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference)

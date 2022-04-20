@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar Cisco Jabber en MS SQL datos de Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 691b27b59b6ade98523f0324e22e0e0cb533fabd
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0ef885db2ac3ede779092d3145ed49860fbd9dd1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946756"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992708"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-ms-sql-data"></a>Configurar un conector para archivar Cisco Jabber en datos de SQL MS
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de la plataforma Cisco Jabber a los buzones de usuario de su organización Microsoft 365. Veritas le proporciona un conector [del Jabber de Cisco](https://globanet.com/jabber/) que se configura para capturar los elementos de la SQL Database MS del Jabber, tales como mensajes de chat 1:1 y chats de grupo y luego importar esos elementos a Microsoft 365. El conector recupera los datos de la SQL Database MS del Cisco Jabber, los procesa, y convierte el contenido de la cuenta del Cisco Jabber de un usuario a un formato de mensaje de correo electrónico y luego importa esos elementos al buzón del usuario en Microsoft 365.
 

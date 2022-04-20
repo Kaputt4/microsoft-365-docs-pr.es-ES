@@ -19,14 +19,16 @@ description: Use la herramienta administración de custodios de eDiscovery (Prem
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 35b622e00caeeca78c85849f03b3a21f8a28b443
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e2de6209e08d6e8dd6f853724f26d026aec1c33f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943521"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993718"
 ---
 # <a name="view-custodian-audit-activity"></a>Ver la actividad de auditoría de custodio
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? Microsoft Purview eDiscovery (Premium) ahora se integra con la herramienta de búsqueda de registros de auditoría existente en el portal de cumplimiento de Microsoft Purview. Con esta experiencia insertada, puede usar la herramienta de administración de custodias de eDiscovery (Premium) para facilitar la investigación mediante el acceso y la búsqueda de la actividad en busca de custodios dentro de su caso.
 
@@ -35,7 +37,7 @@ ms.locfileid: "64943521"
 Usted debe tener asignado el rol de Registros de auditoría o Registros de auditoría de solo lectura en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles Administración de cumplimiento normativo y Administración de la organización en la página Permisos del <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">centro de administración de Exchange</a>. Para proporcionar a un usuario la capacidad de buscar en el registro de auditoría de eDiscovery (Premium) con el nivel mínimo de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol registros de auditoría o registros de auditoría de View-Only y, a continuación, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, consulteAdministrar grupos de roles en Exchange en línea.
 
 > [!IMPORTANT]
-> Si asigna a un usuario el rol Registros de auditoría View-Only o Registros de auditoría en la página Permisos del portal de cumplimiento, no podrá buscar en el registro de auditoría. Tiene que asignar los permisos en Exchange en línea. Esto se debe a que el cmdlet subyacente que se usa para buscar en el registro de auditoría es un cmdlet Exchange en línea.
+> Si asigna a un usuario el rol Registros de auditoría o Registros de auditoría de solo lectura en la página Permisos del portal de cumplimiento, no podrá buscar el registro de auditoría. Tiene que asignar los permisos en Exchange en línea. Esto se debe a que el cmdlet subyacente que se usa para buscar en el registro de auditoría es un cmdlet Exchange en línea.
 
 ## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>Paso 1: Buscar en el registro de auditoría las actividades realizadas por un custodio
 

@@ -20,53 +20,55 @@ ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo eliminar resultados de búsqueda de exhibición de documentos electrónicos duplicados para que solo se exporte una copia de un mensaje de correo electrónico.
-ms.openlocfilehash: d09a0e09166928627be01d623963146cfd416bd2
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1632f0179479d7a2e283f0ebcf3fdab06751cdc7
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938930"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992246"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Desduplicación en los resultados de búsqueda de eDiscovery
 
-En este artículo se describe cómo funciona la desduplicación de los resultados de búsqueda de exhibición de documentos electrónicos y se explican las limitaciones del algoritmo de desduplicación.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+En este artículo se describe cómo funciona la desduplicación de los resultados de búsqueda de eDiscovery y se explican las limitaciones del algoritmo de desduplicación.
   
-Al usar herramientas de exhibición de documentos electrónicos para exportar los resultados de una búsqueda de exhibición de documentos electrónicos, tiene la opción de desduplicar los resultados exportados. ¿Qué significa esto? Cuando habilita la desduplicación (de forma predeterminada, la desduplicación no está habilitada), solo se exporta una copia de un mensaje de correo electrónico aunque se hayan encontrado varias instancias del mismo mensaje en los buzones que se buscaron. La desduplicación le ayuda a ahorrar tiempo al reducir el número de elementos que debe revisar y analizar después de exportar los resultados de la búsqueda. Pero es importante comprender cómo funciona la desduplicación y tener en cuenta que hay limitaciones en el algoritmo que pueden hacer que un elemento único se marque como duplicado durante el proceso de exportación.
+Al usar herramientas de eDiscovery para exportar los resultados de una búsqueda de exhibición de documentos electrónicos, tiene la opción de desduplicar los resultados que se exportan. ¿Qué significa esto? Al habilitar la desduplicación (de forma predeterminada, la desduplicación no está habilitada), solo se exporta una copia de un mensaje de correo electrónico aunque se hayan encontrado varias instancias del mismo mensaje en los buzones de correo en los que se ha buscado. La desduplicación le ayuda a ahorrar tiempo al reducir el número de elementos que tiene que revisar y analizar después de exportar los resultados de la búsqueda. Pero es importante comprender cómo funciona la desduplicación y tener en cuenta que hay limitaciones en el algoritmo que pueden hacer que un elemento único se marque como duplicado durante el proceso de exportación.
   
 ## <a name="how-duplicate-messages-are-identified"></a>Cómo se identifican los mensajes duplicados
 
-Las herramientas de exhibición de documentos electrónicos usan una combinación de las siguientes propiedades de correo electrónico para determinar si un mensaje es un duplicado:
+Las herramientas de eDiscovery usan una combinación de las siguientes propiedades de correo electrónico para determinar si un mensaje es duplicado:
   
-- **InternetMessageId:** esta propiedad especifica el identificador de mensaje de Internet de un mensaje de correo electrónico, que es un identificador único global que hace referencia a una versión específica de un mensaje específico. Este identificador lo genera el programa de cliente de correo electrónico del remitente o el sistema de correo electrónico host que envía el mensaje. Si una persona envía un mensaje a más de un destinatario, el identificador de mensaje de Internet será el mismo para cada instancia del mensaje. Las revisiones posteriores del mensaje original recibirán un identificador de mensaje diferente. 
+- **InternetMessageId** : esta propiedad especifica el identificador de mensaje de Internet de un mensaje de correo electrónico, que es un identificador único global que hace referencia a una versión específica de un mensaje específico. Este identificador lo genera el programa cliente de correo electrónico del remitente o el sistema de correo electrónico host que envía el mensaje. Si una persona envía un mensaje a más de un destinatario, el identificador de mensaje de Internet será el mismo para cada instancia del mensaje. Las revisiones posteriores del mensaje original recibirán un identificador de mensaje diferente. 
 
-- **ConversationTopic:** esta propiedad especifica el asunto del subproceso de conversación de un mensaje. El valor de la **propiedad ConversationTopic** es la cadena que describe el tema general de la conversación. Una conversación consta de un mensaje inicial y todos los mensajes enviados en respuesta al mensaje inicial. Los mensajes de la misma conversación tienen el mismo valor para la **propiedad ConversationTopic.** El valor de esta propiedad suele ser la línea Subject del mensaje inicial que generó la conversación. 
+- **ConversationTopic** : esta propiedad especifica el asunto del subproceso de conversación de un mensaje. El valor de la propiedad **ConversationTopic** es la cadena que describe el tema general de la conversación. Una conversación consta de un mensaje inicial y todos los mensajes enviados en respuesta al mensaje inicial. Los mensajes de la misma conversación tienen el mismo valor para la propiedad **ConversationTopic** . El valor de esta propiedad suele ser la línea Subject del mensaje inicial que generó la conversación. 
 
-- **BodyTagInfo:** se trata de una propiedad Exchange store interna. El valor de esta propiedad se calcula comprobando varios atributos en el cuerpo del mensaje. Esta propiedad se usa para identificar diferencias en el cuerpo de los mensajes. 
+- **BodyTagInfo**: se trata de una propiedad de almacén de Exchange interna. El valor de esta propiedad se calcula comprobando varios atributos en el cuerpo del mensaje. Esta propiedad se usa para identificar las diferencias en el cuerpo de los mensajes. 
 
-Durante el proceso de exportación de exhibición de documentos electrónicos, estas tres propiedades se comparan por cada mensaje que coincida con los criterios de búsqueda. Si estas propiedades son idénticas para dos (o más) mensajes, estos mensajes se determinan como duplicados y el resultado es que solo se exportará una copia del mensaje si la desduplicación está habilitada. El mensaje que se exporta se conoce como "elemento de origen". La información sobre los mensajes duplicados se incluye en los **Results.csv** y **Manifest.xml** que se incluyen con los resultados de búsqueda exportados. En el **Results.csv,** se identifica un mensaje duplicado al tener un valor en la **columna Duplicado a elemento.** El valor de esta columna coincide con el valor de la columna **Identidad** del elemento para el mensaje que se exportó. 
+Durante el proceso de exportación de eDiscovery, estas tres propiedades se comparan para cada mensaje que coincida con los criterios de búsqueda. Si estas propiedades son idénticas para dos (o más) mensajes, se determina que esos mensajes son duplicados y el resultado es que solo se exportará una copia del mensaje si se habilita la desduplicación. El mensaje que se exporta se conoce como "elemento de origen". La información sobre los mensajes duplicados se incluye en los informes **deResults.csv** y **Manifest.xml** que se incluyen con los resultados de búsqueda exportados. En el archivo **Results.csv** , un mensaje duplicado se identifica con un valor en la columna **Duplicar en elemento** . El valor de esta columna coincide con el valor de la columna **Identidad del elemento** del mensaje que se exportó. 
   
-Los siguientes gráficos muestran cómo se muestran los mensajes duplicados en los informes **Results.csv** y **Manifest.xml** que se exportan con los resultados de búsqueda. Estos informes no incluyen las propiedades de correo electrónico descritas anteriormente, que se usan en el algoritmo de desduplicación. En su lugar, los informes incluyen la **propiedad Item Identity** que el almacén de Exchange asigna a los elementos. 
+Los gráficos siguientes muestran cómo se muestran los mensajes duplicados en los informes **deResults.csv** y **Manifest.xml** que se exportan con los resultados de la búsqueda. Estos informes no incluyen las propiedades de correo electrónico descritas anteriormente, que se usan en el algoritmo de desduplicación. En su lugar, los informes incluyen la propiedad **Item Identity** asignada a los elementos por el almacén de Exchange. 
   
- ### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv (se ve en Excel)
+ ### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv informe (visto en Excel)
   
-![Ver información sobre elementos duplicados en el informe Results.csv datos.](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
+![Ver información sobre elementos duplicados en el informe de Results.csv.](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
- ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml (se ve en Excel)
+ ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml informe (visto en Excel)
   
-![Ver información sobre elementos duplicados en el informe Manifest.xml datos.](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
+![Ver información sobre elementos duplicados en el informe de Manifest.xml.](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
-Además, otras propiedades de mensajes duplicados se incluyen en los informes de exportación. Esto incluye el buzón en el que se encuentra el mensaje duplicado, si el mensaje se envió a un grupo de distribución y si el mensaje era Cc'd o CCO'd a otro usuario.
+Además, se incluyen otras propiedades de mensajes duplicados en los informes de exportación. Esto incluye el buzón en el que se encuentra el mensaje duplicado, si el mensaje se envió a un grupo de distribución y si el mensaje fue Cc'd o CCO a otro usuario.
   
 ## <a name="limitations-of-the-de-duplication-algorithm"></a>Limitaciones del algoritmo de desduplicación
 
-Existen algunas limitaciones conocidas del algoritmo de desduplicación que pueden hacer que los elementos únicos se marquen como duplicados. Es importante comprender estas limitaciones para que pueda decidir si desea o no usar la característica de desduplicación opcional.
+Hay algunas limitaciones conocidas del algoritmo de desduplicación que pueden hacer que los elementos únicos se marquen como duplicados. Es importante comprender estas limitaciones para que pueda decidir si desea usar o no la característica opcional de desduplicación.
   
-Hay una situación en la que la característica de desduplicación puede identificar erróneamente un mensaje como duplicado y no exportarlo (pero seguir citando como duplicado en los informes de exportación). Se trata de mensajes que un usuario edita pero no envía. Por ejemplo, supongamos que un usuario selecciona un mensaje en Outlook, copia el contenido del mensaje y, a continuación, lo pega en un nuevo mensaje. A continuación, el usuario cambia una de las copias quitando o agregando datos adjuntos, o cambiando la línea de asunto o el propio cuerpo. Si estos dos mensajes coinciden con la consulta de una búsqueda de exhibición de documentos electrónicos, solo se exportará uno de los mensajes si la desduplicación está habilitada cuando se exporten los resultados de la búsqueda. Por lo tanto, aunque se cambió el mensaje original o el mensaje copiado, ninguno de los mensajes revisados se envió y, por lo tanto, los valores de las propiedades **InternetMessageId**, **ConversationTopic** y **BodyTagInfo** no se actualizaron. Pero, como se explicó anteriormente, ambos mensajes aparecerán en los informes de exportación 
+Hay una situación en la que la característica de desduplicación podría identificar erróneamente un mensaje como duplicado y no exportarlo (pero aún así citarlo como duplicado en los informes de exportación). Se trata de mensajes que un usuario edita pero no envía. Por ejemplo, supongamos que un usuario selecciona un mensaje en Outlook, copia el contenido del mensaje y, a continuación, lo pega en un mensaje nuevo. A continuación, el usuario cambia una de las copias quitando o agregando datos adjuntos, o cambiando la línea del asunto o el propio cuerpo. Si estos dos mensajes coinciden con la consulta de una búsqueda de exhibición de documentos electrónicos, solo se exportará uno de los mensajes si la desduplicación está habilitada cuando se exportan los resultados de la búsqueda. Por lo tanto, aunque se cambió el mensaje original o el mensaje copiado, no se envió ninguno de los mensajes revisados y, por lo tanto, no se actualizaron los valores de **las propiedades InternetMessageId**, **ConversationTopic** y **BodyTagInfo** . Pero como se explicó anteriormente, ambos mensajes se mostrarán en los informes de exportación. 
   
-Los mensajes únicos también se pueden marcar como duplicados cuando se habilita la característica de protección de página Copiar en escritura, como en el caso de que un buzón esté en retención por juicio o en retención In-Place escritura. La característica Copiar en escritura copia el mensaje original (y lo guarda en la carpeta Versiones de la carpeta Elementos recuperables del usuario) antes de guardar la revisión del elemento original. En este caso, la copia revisada y el mensaje original (en la carpeta Elementos recuperables) podrían considerarse mensajes duplicados y, por lo tanto, solo se exportaría uno de ellos.
+Los mensajes únicos también se pueden marcar como duplicados cuando está habilitada la característica de protección de página Copiar en escritura, como en el caso de que un buzón esté en suspensión por juicio o In-Place suspensión. La característica Copiar en escritura copia el mensaje original (y lo guarda en la carpeta Versiones de la carpeta Elementos recuperables del usuario) antes de guardar la revisión en el elemento original. En este caso, la copia revisada y el mensaje original (en la carpeta Elementos recuperables) podrían considerarse mensajes duplicados y, por tanto, solo se exportaría uno de ellos.
   
 > [!IMPORTANT]
-> Si las limitaciones del algoritmo de desduplicación pueden afectar a la calidad de los resultados de búsqueda, no debería habilitar la desduplicación al exportar elementos. Si es poco probable que las situaciones descritas en esta sección sean un factor en los resultados de la búsqueda y desea reducir el número de elementos que probablemente sean duplicados, debería considerar la posibilidad de habilitar la desduplicación. 
+> Si las limitaciones del algoritmo de desduplicación pueden afectar a la calidad de los resultados de búsqueda, no debe habilitar la desduplicación al exportar elementos. Si es poco probable que las situaciones descritas en esta sección sean un factor en los resultados de la búsqueda y quiera reducir el número de elementos con más probabilidad de que sean duplicados, considere la posibilidad de habilitar la desduplicación. 
   
 ## <a name="more-information"></a>Más información
 
@@ -78,12 +80,12 @@ Los mensajes únicos también se pueden marcar como duplicados cuando se habilit
 
   - Centro de exhibición de documentos electrónicos en SharePoint Online
 
-- Para obtener más información acerca de la exportación de resultados de búsqueda, vea:
+- Para obtener más información sobre la exportación de resultados de búsqueda, consulte:
 
   - [Exportar búsqueda de contenido](export-search-results.md)
 
   - [Exportar un informe de búsqueda de contenido](export-a-content-search-report.md)
 
-  - [Exportar In-Place de búsqueda de exhibición de documentos electrónicos a un archivo PST](/exchange/security-and-compliance/in-place-ediscovery/export-search-results)
+  - [Exportar In-Place resultados de búsqueda de exhibición de documentos electrónicos a un archivo PST](/exchange/security-and-compliance/in-place-ediscovery/export-search-results)
 
   - [Exportar contenido y crear informes en el Centro de eDiscovery](/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center)

@@ -21,19 +21,19 @@ ms.collection:
 ms.custom: ''
 keywords: ''
 description: Implemente DLP para punto de conexión trabajando con el equipo de gobernanza y protección de la información para crear directivas DLP para su organización.
-ms.openlocfilehash: ab0be14f0a20f35044489e7f3ad0ba3f60180bcd
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 3670dd7e204562d2974ae815babe541c608bfacf
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705213"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943225"
 ---
 # <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>Paso 7. Implementar la prevención de pérdida de datos (DLP) con funcionalidades de protección de la información
 
 
-Si su organización usa Microsoft 365 Information Protection y ha dedicado tiempo a comprender los datos, a desarrollar un esquema de confidencialidad de datos y a aplicar el esquema, es posible que esté listo para extender los elementos de este esquema a los puntos de conexión mediante directivas de prevención de pérdida de datos (DLP). 
+Si su organización ya ha puesto el tiempo en comprender los datos, desarrollar un esquema de confidencialidad de datos y aplicar el esquema, es posible que esté listo para extender elementos de este esquema a los puntos de conexión mediante directivas de prevención de pérdida de datos (DLP) de Microsoft Purview. 
 
-La prevención de pérdida de datos de Microsoft Endpoint (DLP de punto de conexión) se aplica actualmente a:
+La prevención de pérdida de datos en punto de conexión (DLP de punto de conexión) se aplica actualmente a:
 - Windows 10, Windows 11
 - macOS
 
@@ -53,6 +53,6 @@ Siga estos pasos para trabajar con el equipo de protección de la información.
 
 |Paso  |Descripción  |
 |---------|---------|
-|1     |  [Obtenga información sobre Microsoft 365 prevención de pérdida de datos de punto de conexión](../compliance/endpoint-dlp-learn-about.md).        |
-|2     | Incorporar dispositivos para DLP de punto de conexión. Si ha incorporado dispositivos a Microsoft Defender para punto de conexión, los dispositivos ya están incorporados para Microsoft 365 Compliance, incluido punto de conexión de DLP. Si los dispositivos no están incorporados a Defender para punto de conexión, consulte [Introducción a la prevención de pérdida de datos en punto de conexión](../compliance/endpoint-dlp-getting-started.md) para obtener instrucciones. Para obtener más información sobre cómo funciona la incorporación, consulte [Inscripción de dispositivos frente a dispositivos de incorporación](manage-devices-with-intune-overview.md#enrolling-devices-vs-onboarding-devices)|
+|1     |  [Obtener información sobre la Prevención de pérdida de datos en punto de conexión](../compliance/endpoint-dlp-learn-about.md).        |
+|2     | Habilitar dispositivos para DLP de punto de conexión. Si ha incorporado dispositivos a Microsoft Defender para punto de conexión, los dispositivos ya están habilitados para DLP de punto de conexión. Si los dispositivos no están incorporados a Defender para punto de conexión, consulte [Introducción a la prevención de pérdida de datos en punto de conexión](../compliance/endpoint-dlp-getting-started.md) para obtener instrucciones.|
 |3     |   Trabaje con su equipo de gobernanza y protección de la información para definir, probar y ajustar directivas. Esto incluye la supervisión de los resultados. Consulte estos recursos:<br>- [Uso de la prevención de pérdida de datos de punto de conexión](../compliance/endpoint-dlp-using.md)<br>- [Ver los informes para la prevención de pérdida de datos](../compliance/view-the-dlp-reports.md)      |

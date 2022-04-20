@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cuando se agrega un custodio a un caso de exhibición de documentos electrónicos (Premium), cualquier contenido que se considere parcialmente indexado se vuelve a procesar para que sea totalmente de búsqueda.
-ms.openlocfilehash: 3c6f0079f87dbc4711fed7d776204c287d5b5865
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8b7dbbb13b9a667a7b5a50a5535634414c0caec5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932005"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993630"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Clasificación avanzada de los datos de administración
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cuando se agrega un custodio a un caso de exhibición de documentos electrónicos (Premium), se vuelve a indexar cualquier contenido que se haya considerado parcialmente indexado o que haya tenido errores de indexación. Este proceso de reindexación se denomina *indexación avanzada*. Hay muchas razones por las que el contenido se indexa parcialmente o tiene errores de indexación. Esto incluye archivos de imagen o la presencia de imágenes en un archivo, tipos de archivos no admitidos o límites de indexación de tamaño de archivo. Para SharePoint archivos, la indexación avanzada solo se ejecuta en elementos marcados como parcialmente indizados o que tienen errores de indexación. En Exchange, los mensajes de correo electrónico que tienen datos adjuntos de imagen no se marcan como indizados parcialmente o con errores de indexación. Esto significa que el proceso de indexación avanzada no volverá a indexar esos archivos.
 
@@ -41,7 +43,7 @@ Para obtener más información sobre la compatibilidad con el procesamiento y lo
 
 Una vez completado el proceso de indexación avanzada, puede comprender la eficacia del reprocesamiento.  En la vista Resultados de indexación avanzada de la pestaña **Procesamiento** de un caso, el gráfico muestra el número de elementos agregados al *índice híbrido*.  El índice híbrido es donde eDiscovery (Premium) almacena el contenido reprocesado.
 
-Esta vista también incluye el número de elementos que requieren corrección y otro gráfico de errores por tipo de archivo. Para más información, vea:
+Esta vista también incluye el número de elementos que requieren corrección y otro gráfico de errores por tipo de archivo. Para más información, consulte lo siguiente:
 
 - [Corrección de errores al procesar los datos](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 

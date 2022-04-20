@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Use un filtro de puntuación de predicción para mostrar los elementos que un modelo de codificación predictiva predijo como pertinentes o no pertinentes.
-ms.openlocfilehash: 261c77031eb0831db11878c2ce0c573eb3b9db6e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ab97c91196456b69f7f420ccd317747f638b4ee5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942301"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993082"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>Aplicar un filtro de puntuación de predicción a un conjunto de revisión (versión preliminar)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Después de crear un modelo de codificación predictiva en Microsoft Purview eDiscovery (Premium) y entrenarlo hasta el punto en que sea estable, puede aplicar el filtro de puntuación de predicción para mostrar los elementos de conjunto de revisión que el modelo ha determinado son pertinentes (o no pertinentes). Al crear un modelo, también se crea un filtro de puntuación de predicción correspondiente. Puede usar este filtro para mostrar los elementos asignados a una puntuación de predicción dentro de un intervalo especificado. En general, las puntuaciones de predicción entre **0** y **.5** se asignan a elementos que el modelo ha predicho no son pertinentes. Las puntuaciones de predicción asignadas a elementos entre **.5** y **1.0** son elementos que el modelo ha predicho que son pertinentes.
 

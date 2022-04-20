@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de ServiceNow desde Veritas a Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 21775200f318612ba8f79d6c783713f759d04452
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3a8859fad4b15d0e9cf4ce50701da64c2c6100b6
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946515"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992686"
 ---
 # <a name="set-up-a-connector-to-archive-servicenow-data"></a>Configuración de un conector para archivar datos de ServiceNow
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector de Veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de la plataforma ServiceNow a buzones de usuario de la organización Microsoft 365. Veritas proporciona un conector [de ServiceNow](https://globanet.com/servicenow/) que captura elementos del origen de datos de terceros e importa esos elementos en Microsoft 365. El conector convierte el contenido, como mensajes en directo, datos adjuntos y publicaciones de ServiceNow en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
 

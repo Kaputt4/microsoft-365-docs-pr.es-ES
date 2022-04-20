@@ -1,5 +1,5 @@
 ---
-title: Soluciones de auditoría de Microsoft 365
+title: Soluciones de auditoría de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,32 +19,32 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo auditar las actividades de los usuarios y administradores de su organización de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 92fb008e7fe03b4871b8838d78965c1508a20fdc
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: c7c6461868ee212e6b332181b9dea1560ce49558
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494532"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953747"
 ---
-# <a name="auditing-solutions-in-microsoft-365"></a>Soluciones de auditoría en Microsoft 365
+# <a name="auditing-solutions-in-microsoft-purview"></a>Soluciones de auditoría en Microsoft Purview
 
-Las soluciones de auditoría de Microsoft 365 proporcionan una solución integrada que permite a las organizaciones responder de forma eficaz a eventos de seguridad, investigaciones forenses, investigaciones internas y obligaciones de cumplimiento. Miles de operaciones de usuarios y administradores que se realizan en docenas de servicios y soluciones de Microsoft 365 se capturan, graban y retienen en el registro de auditoría unificado de su organización. Los registros de auditoría de estos eventos pueden ser objeto de búsqueda por las operaciones de seguridad, los administradores de TI, los equipos de riesgos de Insider, así como por los investigadores del cumplimiento y la legislación legal de la organización. Esta funcionalidad permite ver las actividades que se realizan en toda la organización de Microsoft 365.
+Las soluciones de auditoría de Microsoft Purview proporcionan una solución integrada para ayudar a las organizaciones a responder eficazmente a eventos de seguridad, investigaciones forenses, investigaciones internas y obligaciones de cumplimiento. Miles de operaciones de usuarios y administradores que se realizan en docenas de servicios y soluciones de Microsoft 365 se capturan, graban y retienen en el registro de auditoría unificado de su organización. Los registros de auditoría de estos eventos pueden ser objeto de búsqueda por las operaciones de seguridad, los administradores de TI, los equipos de riesgos de Insider, así como por los investigadores del cumplimiento y la legislación legal de la organización. Esta funcionalidad permite ver las actividades que se realizan en toda la organización de Microsoft 365.
 
-## <a name="microsoft-365-auditing-solutions"></a>Soluciones de auditoría de Microsoft 365
+## <a name="microsoft-purview-auditing-solutions"></a>Soluciones de auditoría de Microsoft Purview
 
-Microsoft 365 ofrece dos soluciones de auditoría: auditoría básica y auditoría avanzada.
+Microsoft Purview proporciona dos soluciones de auditoría: Auditoría (Estándar) y Auditoría (Premium).
 
-![Funcionalidades clave de auditoría básica y auditoría avanzada.](..\media\AuditingSolutionsComparison.png)
+![Funcionalidades clave de Auditoría (Estándar) y Auditoría (Premium).](..\media\AuditingSolutionsComparison.png)
 
-### <a name="basic-audit"></a>Auditoría básica
+### <a name="audit-standard"></a>Auditoría (estándar)
 
-La auditoría básica le proporciona la capacidad de registrar y buscar actividades auditadas y reforzar su análisis forense, TI, cumplimiento e investigaciones legales.
+Auditoría de Microsoft Purview (Estándar) le proporciona la capacidad de registrar y buscar actividades auditadas y potenciar sus investigaciones forenses, de TI, de cumplimiento y legales.
 
-- **Habilitado de forma predeterminada**. La auditoría básica está activada de forma predeterminada para todas las organizaciones con la suscripción adecuada. Eso significa que los registros de las actividades auditadas se capturarán y podrán ser objeto de búsqueda. La única configuración necesaria es asignar los permisos necesarios para tener acceso a la herramienta de búsqueda de registros de auditoría (y el cmdlet correspondiente) y asegurarse de que a los usuarios se les ha asignado la licencia adecuada para las características de auditoría avanzada.
+- **Habilitado de forma predeterminada**. Auditoría (Estándar) está activada de forma predeterminada para todas las organizaciones con la suscripción adecuada. Eso significa que los registros de las actividades auditadas se capturarán y podrán ser objeto de búsqueda. La única configuración necesaria es asignar los permisos necesarios para acceder a la herramienta de búsqueda de registros de auditoría (y el cmdlet correspondiente) y asegurarse de que a los usuarios se les asigna la licencia adecuada para las características de Auditoría de Microsoft Purview (Premium).
 - **Miles de eventos de auditoría que se pueden buscar**. Puede buscar una amplia gama de actividades auditadas que se producen en la mayoría de los servicios de Microsoft 365 de la organización. Para obtener una lista parcial de las actividades que puede buscar, vea [Actividades auditadas](search-the-audit-log-in-security-and-compliance.md#audited-activities). Para obtener una lista de los servicios y características compatibles con actividades auditadas, vea [Tipos de registros de auditoría](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).
-- **Herramienta de búsqueda de auditorías del Centro de cumplimiento de Microsoft 365**. Use la herramienta de búsqueda de registros de auditoría del Centro de cumplimiento de Microsoft 365 para buscar registros de auditoría. Puede buscar actividades específicas, actividades realizadas por usuarios específicos y actividades realizadas en un intervalo de fechas. Aquí tiene una captura de pantalla de la herramienta de búsqueda de auditorías del Centro de cumplimiento.
+- **Herramienta de búsqueda de Auditoría en el portal de cumplimiento de Microsoft Purview**. Use la herramienta de búsqueda de registros de Auditoría en el portal de cumplimiento para buscar registros de auditoría. Puede buscar actividades específicas, actividades realizadas por usuarios específicos y actividades realizadas en un intervalo de fechas. Aquí tiene una captura de pantalla de la herramienta de búsqueda de auditorías del Centro de cumplimiento.
 
-   ![Herramienta de búsqueda de registros de auditoría del Centro de cumplimiento de Microsoft 365.](../media/AuditLogSearchToolMCC.png)
+   ![Herramienta de búsqueda de registros de auditoría en el portal de cumplimiento.](../media/AuditLogSearchToolMCC.png)
 
 - **cmdlet Search-UnifiedAuditLog**. También puede usar el cmdlet **Search-UnifiedAudtLog** en PowerShell de Exchange Online (el cmdlet subyacente de la herramienta de búsqueda) para buscar eventos de auditoría o para usarlo en un script. Para obtener más información, consulte:
 
@@ -55,31 +55,31 @@ La auditoría básica le proporciona la capacidad de registrar y buscar activida
 
 - **Acceso a registros de auditoría a través de la API de Actividad de administración de Office 365**. Un tercer método para obtener acceso y encontrar registros de auditoría es usar la API de Actividad de administración de Office 365. Esto permite a las organizaciones conservar los datos de auditoría durante períodos superiores a los 90 días predeterminados, y les permite importar sus datos de auditoría a una solución SIEM. Para obtener más información, consulte la [referencia de la API de Actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- **Retención de registros de auditoría de 90 días**. Cuando un usuario o administrador realiza una actividad auditada, se genera un registro de auditoría y se almacena en el registro de auditoría de la organización. En la auditoría básica los registros se conservan durante 90 días, lo que significa que puede buscar actividades que se produjeron en los últimos tres meses.
+- **Retención de registros de auditoría de 90 días**. Cuando un usuario o administrador realiza una actividad auditada, se genera un registro de auditoría y se almacena en el registro de auditoría de la organización. En Auditoría (Estándar), los registros se conservan durante 90 días, lo que significa que puede buscar actividades que se hayan producido en los últimos tres meses.
 
-### <a name="advanced-audit"></a>Auditoría avanzada
+### <a name="audit-premium"></a>Auditoría (Premium)
 
-La auditoría avanzada se desarrolla a partir de las funcionalidades de la auditoría básica proporcionando directivas de retención de registros de auditoría, una retención más larga de los registros de auditoría, eventos cruciales de alto valor y un acceso con mayor ancho de banda a la API de Actividad de administración de Office 365.
+Auditoría (Premium) se basa en las capacidades de Auditoría (Estándar) al proporcionar directivas de retención de registros de auditoría, una retención más prolongada de registros de auditoría, eventos cruciales de alto valor y un mayor acceso de ancho de banda a la API de actividad de administración de Office 365.
 
 - **Directivas de retención de registros de auditoría**. Puede crear directivas de retención de registros de auditoría personalizadas para conservar los registros de auditoría durante períodos de tiempo de hasta un año (y hasta 10 años para los usuarios con la licencia de complemento necesaria). Puede crear una directiva para conservar los registros de auditoría según el servicio donde se producen las actividades auditadas, según actividades auditadas específicas o en función el usuario que realiza una actividad auditada.
 
 - **Retención prolongada de registros de auditoría**. Los registros de auditoría de Exchange, SharePoint y Azure Active Directory se conservan durante un año de forma predeterminada. Los registros de auditoría del resto de las actividades se conservan durante 90 días de forma predeterminada, pero puede usar directivas de retención de registros de auditoría para configurar períodos de retención más largos.
 
-- **Eventos fundamentales, de alto valor, de auditoría avanzada**. Los registros de auditoría para los eventos fundamentales pueden ayudar a la organización a dirigir investigaciones forenses y de cumplimiento al proporcionar visibilidad a los eventos como cuando se accede a un elemento del correo o cuando se responde o se reenvían determinados elementos del correo, o el momento y el usuario que realizó la búsqueda en Exchange Online y SharePoint Online. Estos eventos fundamentales pueden ayudarle a investigar las posibles brechas y determinar el alcance de la intromisión.
+- **Eventos de Auditoría (Premium) cruciales y de alto valor**. Los registros de auditoría de eventos cruciales pueden ayudar a su organización a llevar a cabo investigaciones forenses y de cumplimiento al proporcionar visibilidad a eventos como cuándo se accedió a los elementos de correo, cuándo se respondieron y reenviaron elementos de correo, o cuándo y qué busca un usuario en Exchange Online y SharePoint Online. Estos eventos cruciales pueden ayudarle a investigar posibles infracciones y a determinar el ámbito del compromiso.
 
-- **Mayor ancho de banda para la API de Actividad de administración de Office 365** La auditoría avanzada proporciona a las organizaciones más ancho de banda para tener acceso a los registros de auditoría a través de la API de Actividad de administración de Office 365. Aunque inicialmente todas las organizaciones (que tienen auditoría básica o auditoría avanzada) asignan una línea base de 2 000 solicitudes por minuto, este límite aumentará dinámicamente según el recuento de puestos de una organización y su suscripción a las licencias. El resultado es que las organizaciones con auditoría avanzada pueden obtener aproximadamente el doble de ancho de banda que las organizaciones con auditoría básica.
+- **Mayor ancho de banda para la API de Actividad de administración de Office 365** Auditoría (Premium) proporciona a las organizaciones más ancho de banda para acceder a los registros de auditoría a través de la API de actividad de administración de Office 365. Aunque a todas las organizaciones, que tienen Auditoría (Estándar) o Auditoría (Premium), se les asigna inicialmente una línea base de 2 000 solicitudes por minuto, este límite aumentará dinámicamente según el número de puestos de una organización y su suscripción de licencia. Esto hace que las organizaciones con Auditoría (Premium) obtengan aproximadamente el doble de ancho de banda que las organizaciones con Auditoría (Estándar).
 
-Para obtener más información sobre las características de la auditoría avanzada vea [auditoría avanzada en Microsoft 365](advanced-audit.md).
+Para obtener información más detallada sobre las características de Auditoría (Premium), vea [Auditoría (Premium) en Microsoft 365](advanced-audit.md).
 
 ## <a name="comparison-of-key-capabilities"></a>Comparación de funcionalidades clave
 
-En la tabla siguiente se comparan las funcionalidades clave disponibles en auditoría básica y en auditoría avanzada. Todas las funciones de auditoría básica se incluyen en la auditoría avanzada.
+En la tabla siguiente se comparan las funcionalidades clave disponibles en Auditoría (Estándar) y Auditoría (Premium). Toda la funcionalidad de Auditoría (estándar) se incluye en Auditoría (Premium).
 
-|Funcionalidad|Auditoría básica|Auditoría avanzada|
+|Funcionalidad|Auditoría (estándar)|Auditoría (Premium)|
 |:------|:-------------|:-------------|
 |Habilitado de forma predeterminada|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
 |Miles de eventos de auditoría que se pueden buscar|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
-|Herramienta de búsqueda de auditorías del Centro de cumplimiento de Microsoft 365|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
+|Herramienta de búsqueda de Auditoría en el portal de cumplimiento|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
 |Cmdlet Search-UnifiedAuditLog|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
 |Exportar registros de auditoría a un archivo CSV|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
 |Acceso a registros de auditoría a través de la API de Actividad de administración de Office 365 <sup>1</sup>|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)</sup>|
@@ -90,13 +90,13 @@ En la tabla siguiente se comparan las funcionalidades clave disponibles en audit
 |Eventos cruciales de gran valor||![Compatible](../media/check-mark.png)|
 ||||
 > [!NOTE]
-> <sup>1</sup> La auditoría avanzada incluye un acceso con mayor ancho de banda a la API de Actividad de administración de Office 365, lo que proporciona un acceso más rápido a los datos de auditoría.<br/><sup>2</sup> Además de las licencias necesarias para auditoría avanzada (que se describen en la sección siguiente), a un usuario se le debe asignar una licencia de complemento de retención de registro de auditoría de 10 años para conservar sus registros de auditoría durante 10 años.
+> <sup>1</sup> Auditoría (Premium) incluye un mayor acceso de ancho de banda a la API de actividad de administración de Office 365, lo que proporciona un acceso más rápido a los datos de auditoría.<br/><sup>2</sup> Además de las licencias necesarias para Auditoría (Premium) (descritas en la sección siguiente), a un usuario se le debe asignar una licencia de complemento de retención de registros de auditoría de 10 años para conservar sus registros de auditoría durante 10 años.
 
 ## <a name="licensing-requirements"></a>Requisitos de licencias
 
-En las secciones siguientes se identifican los requisitos de licencia para auditoría básica y auditoría avanzada. La auditoría avanzada incluye las funcionalidades de la auditoría básica.
+En las secciones siguientes se identifican los requisitos de licencia para Auditoría (Estándar) y Auditoría (Premium). La funcionalidad de Auditoría (Estándar) se incluye con Auditoría (Premium).
 
-### <a name="basic-audit"></a>Auditoría básica
+### <a name="audit-standard"></a>Auditoría (estándar)
 
 - Suscripción a Microsoft 365 Empresa Básico
 - Suscripción a Aplicaciones de Microsoft 365 para negocios
@@ -111,7 +111,7 @@ En las secciones siguientes se identifican los requisitos de licencia para audit
 - Suscripción a Office 365 Educación A1
 - Suscripción a Office 365 Educación A3
 
-### <a name="advanced-audit"></a>Auditoría avanzada
+### <a name="audit-premium"></a>Auditoría (Premium)
 
 - Suscripción a Microsoft 365 Enterprise E5
 - Suscripción a Microsoft 365 Enterprise E3 y complemento de Cumplimiento de Microsoft 365 E5
@@ -126,46 +126,46 @@ En las secciones siguientes se identifican los requisitos de licencia para audit
 - Suscripción a Office 365 Enterprise E5
 - Suscripción a Office 365 Educación A5
 
-## <a name="set-up-microsoft-365-auditing-solutions"></a>Configurar soluciones de auditoría en Microsoft 365
+## <a name="set-up-microsoft-purview-auditing-solutions"></a>Configuración de soluciones de Auditoría de Microsoft Purview
 
-Para empezar a usar las soluciones de auditoría de Microsoft 365 vea las siguientes instrucciones de configuración.
+Para empezar a usar las soluciones de Auditoría de Microsoft Purview, consulte las siguientes instrucciones de configuración.
 
-### <a name="set-up-basic-audit"></a>Configurar la auditoría básica
+### <a name="set-up-audit-standard"></a>Configurar Auditoría (estándar)
 
-El primer paso es configurar la auditoría básica y, después, empezar a ejecutar las búsquedas de registros de auditoría.
+El primer paso es configurar Auditoría (Estándar) y, a continuación, iniciar la ejecución de búsquedas de registros de auditoría.
 
-![Flujo de trabajo para configurar la auditoría básica.](../media/BasicAuditingWorkflow.png)
+![Flujo de trabajo para configurar Auditoría (Estándar).](../media/BasicAuditingWorkflow.png)
 
-1. Compruebe que su organización tiene una suscripción compatible con auditoría básica y, si procede, una suscripción que admita auditoría avanzada.
+1. Compruebe que su organización tiene una suscripción que admita Auditoría (Estándar) y, si procede, una suscripción que admita Auditoría (Premium).
 
-2. Asigne permisos en Exchange Online a las personas de su organización que usarán la herramienta de búsqueda de registros de auditoría del Centro de cumplimiento de Microsoft 365 o el cmdlet **Search-UnifiedAsignlog**. Concretamente, deberá asignar a los usuarios el rol de registros de auditoría de solo lectura o registros de auditoría en Exchange Online.
+2. Asigne permisos en Exchange Online a las personas de su organización que usarán la herramienta de búsqueda de registros de auditoría en el portal de cumplimiento o usarán el cmdlet **Search-UnifiedAuditLog**. Concretamente, deberá asignar a los usuarios el rol de registros de auditoría de solo lectura o registros de auditoría en Exchange Online.
 
 3. Búsquedas en el registro de auditoría. Después de completar los pasos 1 y 2, los usuarios de la organización pueden usar la herramienta de búsqueda en el registro de auditoría (o el cmdlet correspondiente) para buscar actividades auditadas.
 
-Para obtener instrucciones más detalladas, consulte [Configurar la auditoría básica](set-up-basic-audit.md).
+Para obtener instrucciones más detalladas, vea [Configurar Auditoría (Estándar)](set-up-basic-audit.md).
 
-### <a name="set-up-advanced-audit"></a>Configurar la auditoría avanzada
+### <a name="set-up-audit-premium"></a>Configurar Auditoría (Premium)
 
-Si su organización tiene una suscripción compatible con la auditoría avanzada, realice los pasos siguientes para configurar y usar las funcionalidades adicionales de auditoría avanzada.
+Si su organización tiene una suscripción que admite Auditoría (Premium), realice los pasos siguientes para configurar y usar las funcionalidades adicionales de Auditoría (Premium).
 
-![Flujo de trabajo para configurar la auditoría avanzada.](../media/AdvancedAuditWorkflow.png)
+![Flujo de trabajo para configurar Auditoría (Premium).](../media/AdvancedAuditWorkflow.png)
 
-1. Configurar la auditoría avanzada para usuarios Este paso consta de las siguientes tareas:
+1. Configurar Auditoría (Premium) para los usuarios. Este paso consta de las siguientes tareas:
 
-   - Comprobar que los usuarios tienen asignada la licencia o la licencia del complemento adecuada para la auditoría avanzada.
+   - Comprobando que a los usuarios se les asigna la licencia o la licencia de complemento adecuada para Auditoría (Premium).
   
-   - Activar el plan de aplicación/servicio de auditoría avanzada para esos usuarios.
+   - La activación del plan de servicio o aplicación de Auditoría (Premium) debe ser para esos usuarios.
   
    - Habilitar la auditoría de eventos cruciales y, después, activar el plan de servicio/aplicación de auditoría avanzada para esos usuarios.
 
-2. Habilitar los eventos de auditoría avanzada para que se registren cuando los usuarios realicen búsquedas en Exchange Online y SharePoint Online.
+2. Habilite los eventos de Auditoría (Premium) para que se registren cuando los usuarios realicen búsquedas en Exchange Online y SharePoint Online.
 
 3. Configurar las directivas de retención de registros de auditoría. Además de la directiva predeterminada que conserva los registros de auditoría de Exchange, SharePoint y Azure AD durante un año, puede crear otras directivas de retención de registros de auditoría para cumplir los requisitos de los equipos de operaciones de seguridad, TI y cumplimiento de su organización.
 
-4. Busque eventos fundamentales de auditoría avanzada y otras actividades al realizar investigaciones exhaustivas. Después de completar los pasos 1 y 2, puede buscar en el registro de auditoría eventos de auditoría avanzada y otras actividades durante investigaciones exhaustivas de cuentas comprometidas y otros tipos de investigaciones de seguridad o cumplimiento.
+4. Busque eventos de Auditoría (Premium) cruciales y otras actividades al realizar investigaciones forenses. Después de completar los pasos 1 y 2, puede buscar en el registro de auditoría eventos de Auditoría (Premium) y otras actividades durante investigaciones forenses de cuentas en peligro y otros tipos de investigaciones de seguridad o cumplimiento.
 
-Para obtener instrucciones más detalladas, consulte [Configurar la auditoría avanzada](set-up-advanced-audit.md).
+Para obtener instrucciones más detalladas, vea [Configurar Auditoría (Premium)](set-up-advanced-audit.md).
 
 ## <a name="training"></a>Formación
 
-La formación de su equipo de operaciones de seguridad, de los administradores de TI y del equipo de investigadores de cumplimiento en los fundamentos de la Auditoría básica y la Auditoría avanzada puede ayudar a su organización a empezar a utilizar más rápidamente la auditoría para ayudar en sus investigaciones. Microsoft 365 proporciona el siguiente recurso para ayudar a estos usuarios de su organización a iniciarse en la auditoría: [describir las capacidades de eDiscovery y auditoría de Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Entrenar al equipo de operaciones de seguridad, a los administradores de TI y al equipo de investigadores de cumplimiento en los aspectos básicos de Auditoría (estándar) y Auditoría (Premium) puede ayudar a su organización a empezar a usar la auditoría más rápidamente para ayudar con sus investigaciones. Microsoft 365 proporciona el siguiente recurso para ayudar a estos usuarios de su organización a iniciarse en la auditoría: [describir las capacidades de eDiscovery y auditoría de Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).

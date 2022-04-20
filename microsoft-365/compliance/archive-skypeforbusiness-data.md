@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de Skype Empresarial a Microsoft 365.
-ms.openlocfilehash: 406c8db8a28303657b6c475bf826ee501c9e7620
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 510eea94519b6f2278b9319da8c37b683639680c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937199"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992422"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>Configuración de un conector para archivar datos Skype Empresarial
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de la plataforma de Skype Empresarial a buzones de usuario de la organización de Microsoft 365. Veritas proporciona un conector [de Skype Empresarial](https://www.veritas.com/en/au/insights/merge1/skype-for-business) que está configurado para capturar elementos del origen de datos de terceros (de forma periódica) e importarlos a Microsoft 365. El conector convierte el contenido, como mensajes entre usuarios, chats persistentes y mensajes de conferencia de Skype Empresarial a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 

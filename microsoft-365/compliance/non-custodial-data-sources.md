@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede agregar orígenes de datos sin custodia a un caso de exhibición de documentos electrónicos (Premium) y colocar una suspensión en el origen de datos. Los orígenes de datos sin custodia se vuelven a indexar, por lo que cualquier contenido marcado como parcialmente indexado se vuelve a procesar para que se pueda buscar de forma completa y rápida.
-ms.openlocfilehash: cc093b60de055fe8b762f6c141921cd274233af2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2f5825f514dfc8f99fc7a6006d1fd30028515c7b
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945921"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991894"
 ---
 # <a name="add-non-custodial-data-sources-to-an-ediscovery-premium-case"></a>Adición de orígenes de datos sin custodia a un caso de eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En los casos de exhibición de documentos electrónicos de Microsoft Purview (Premium), no siempre satisface sus necesidades para asociar un origen de datos Microsoft 365 a un custodio en el caso. Pero es posible que todavía necesite asociar esos datos a un caso para poder buscarlos, agregarlos a un conjunto de revisión y analizarlos y revisarlos. La característica de eDiscovery (Premium) se denomina *orígenes de datos sin custodia* y permite agregar datos a un caso sin tener que asociarlos a un custodio. También aplica la misma funcionalidad de exhibición de documentos electrónicos (Premium) a los datos que no son de custodia que están disponibles para los datos asociados con el custodio. Dos de las cosas más útiles que puede aplicar a los datos que no son de custodia es colocarlos en espera y procesarlos mediante [la indexación avanzada](indexing-custodian-data.md).
 

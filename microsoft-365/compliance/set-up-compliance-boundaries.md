@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Obtenga información sobre cómo usar límites de cumplimiento para crear límites lógicos que controlen las ubicaciones de contenido del usuario que un administrador de exhibición de documentos electrónicos puede buscar en Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6eab4528cb399f880d40c8edcea16814ad9b7ade
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: adfdc0284983c6efb91f076be1a203734deb038e
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941883"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993982"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configuración de límites de cumplimiento para las investigaciones de eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Las instrucciones de este artículo se pueden aplicar cuando se usa Microsoft Purview eDiscovery (Estándar) o Microsoft Purview eDiscovery (Premium) para administrar las investigaciones.
 
@@ -202,7 +204,7 @@ Los filtros de permisos de búsqueda también permiten controlar dónde se enrut
     |NAM  <br/> |Norteamérica (los centros de datos están en EE. UU.)  <br/> |
     |EUR  <br/> |Europa  <br/> |
     |APC  <br/> |Asia Pacífico  <br/> |
-    |CAN <br/> |Canadá|
+    |CAN <br/> |Canada|
     |||
 
 - **Enrutar búsquedas de contenido:** Puede enrutar las búsquedas de contenido de SharePoint sitios y cuentas de OneDrive a un centro de datos satélite. Esto significa que puede especificar la ubicación del centro de datos donde se ejecutarán las búsquedas.

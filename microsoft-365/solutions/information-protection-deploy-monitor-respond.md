@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Use directivas de auditoría y alertas y solicitudes de interesados para supervisar y responder a incidentes de datos personales.
-ms.openlocfilehash: 5f4dd6a59ae361cbef042bfc3587203b34620746
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 730eb42fdf6aed66f5beac69621981848ffa6510
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945349"
+ms.locfileid: "64953335"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Supervisión y respuesta a incidentes de privacidad de datos en su organización
 
@@ -67,7 +67,7 @@ Consulte estos artículos para configurar directivas de auditoría, auditoría a
 
 - [Auditoría unificada](../compliance/search-the-audit-log-in-security-and-compliance.md)
 - [Auditoría de buzones](../compliance/enable-mailbox-auditing.md)
-- [Auditoría avanzada](../compliance/advanced-audit.md)
+- [Auditoría (Premium)](../compliance/advanced-audit.md)
 - [Directivas de alerta](../compliance/alert-policies.md)
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Solicitudes de interesados para el RGPD y CCPA

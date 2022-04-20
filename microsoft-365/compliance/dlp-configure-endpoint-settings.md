@@ -1,5 +1,5 @@
 ---
-title: Configuración de la prevención de pérdida de datos de punto de conexión
+title: Configurar las opciones de DLP de punto de conexión
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,14 +18,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo definir la configuración central de prevención de pérdida de datos en el punto de conexión (DLP).
-ms.openlocfilehash: ebe995512769275999e7ec4837e16542ffce7100
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: f76f6ec18464229fa50ad54a06fc7969abb3dd23
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680313"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952828"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>Configuración de la prevención de pérdida de datos de punto de conexión
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Muchos aspectos del comportamiento de prevención de pérdida de datos (DLP) en el punto de conexión se controlan mediante opciones configuradas de forma centralizada. La configuración se aplica a todas las directivas DLP para dispositivos.
 
@@ -46,7 +48,7 @@ Antes de empezar, debe configurar la configuración de DLP.
 
 ### <a name="endpoint-dlp-windows-1011-and-macos-settings"></a>Configuración de Windows 10/11 DLP de punto de conexión y macOS
 
-|Setting |Windows 10, 1809 y versiones posteriores, Windows 11  |macOS Catalina 10.15 o posterior (versión preliminar)  |Notas  |
+|Setting |Windows 10, 1809 y versiones posteriores, Windows 11  |macOS Catalina 10.15 o posterior |Notas  |
 |---------|---------|---------|---------|
 |Exclusiones de ruta de archivo     |Compatible         |Compatible         |macOS incluye una lista recomendada de exclusiones que está predeterminada          |
 |Aplicaciones restringidas     |Compatible         |Compatible         |         |
@@ -61,9 +63,9 @@ Antes de empezar, debe configurar la configuración de DLP.
 
 ### <a name="advanced-classification-scanning-and-protection"></a>Escaneo y protección de clasificación avanzada
 
-La protección y el examen de clasificación avanzada permiten que el servicio de clasificación de datos basado en la nube Microsoft 365 más avanzado examine los elementos, los clasifique y devuelva los resultados al equipo local. Esto significa que puede aprovechar técnicas de clasificación como la clasificación de [coincidencia exacta de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md), [entidades con nombre (versión preliminar)](named-entities-learn.md#learn-about-named-entities-preview) y [clasificadores capacitados](classifier-learn-about.md#learn-about-trainable-classifiers) en las directivas de DLP.
+El escaneo y la protección de clasificación avanzada permiten que el servicio de clasificación de datos basado en la nube de Microsoft Purview, más avanzado, escanee elementos, los clasifique y devuelva los resultados a la máquina local. Esto significa que puede aprovechar técnicas de clasificación como [coincidencia exacta de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) clasificación, [entidades con nombre](named-entities-learn.md)y [clasificadores capacitados](classifier-learn-about.md) en las directivas DLP.
 
-Cuando se activa la clasificación avanzada, el contenido se envía desde el dispositivo local a los servicios en la nube para su examen y clasificación. Si el uso de ancho de banda supone un problema, puede establecer un límite en lo que concierne a cuánto se puede usar en un período de 24 horas. El límite se define en la configuración de DLP de punto de conexión y se aplica por dispositivo. Si establece un límite de uso de ancho de banda y se supera, DLP deja de enviar el contenido del usuario a la nube. En este momento, la clasificación de datos continúa localmente en el dispositivo, pero no están disponibles la clasificación con coincidencia exacta de datos, entidades con nombre (versión preliminar) y clasificadores capacitados. Cuando el uso del ancho de banda acumulado se encuentre por debajo del límite de 24 horas, se reanudará la comunicación con los servicios en la nube.
+Cuando se activa la clasificación avanzada, el contenido se envía desde el dispositivo local a los servicios en la nube para su examen y clasificación. Si el uso de ancho de banda supone un problema, puede establecer un límite en lo que concierne a cuánto se puede usar en un período de 24 horas. El límite se define en la configuración de DLP de punto de conexión y se aplica por dispositivo. Si establece un límite de uso de ancho de banda y se supera, DLP deja de enviar el contenido del usuario a la nube. En este momento, la clasificación de datos continúa localmente en el dispositivo, pero la clasificación con coincidencia exacta de datos, entidades con nombre y clasificadores capacitados no está disponible. Cuando el uso del ancho de banda acumulado se encuentre por debajo del límite de 24 horas, se reanudará la comunicación con los servicios en la nube.
 
 Si el uso del ancho de banda no supone un problema, seleccione **Sin límite** para permitir el uso ilimitado del ancho de banda.
 
@@ -81,7 +83,7 @@ Estas versiones de Windows admiten la protección y el escaneo de clasificación
 
 ### <a name="file-path-exclusions"></a>Exclusiones de ruta de archivo
 
-Abra [Centro de cumplimiento](https://compliance.microsoft.com) > **Prevención de pérdida de datos** > **Configuración de DLP de punto de conexión** > **Exclusiones de ruta de acceso del archivo**.
+Abra el [Portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com) > **Prevención de pérdida de datos** > **Configuración DLP de punto de conexión** > **Exclusiones de ruta de acceso de archivo**.
 
 Es posible que quiera excluir determinadas rutas de supervisión DLP, alertas DLP y la aplicación de directivas DLP en sus dispositivos, ya sea porque provocan demasiado ruido o no contienen archivos que le interesan. Los archivos en esas ubicaciones no se auditarán y los archivos que se creen o modifiquen en esas ubicaciones no se someterán a la aplicación de directivas DLP. Puede configurar exclusiones de ruta en configuración DLP.
 
@@ -103,7 +105,7 @@ Puede usar esta lógica para crear sus rutas de exclusión para dispositivos Win
 
 - Una combinación de todas las anteriores. <br/>Por ejemplo: `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
 
-#### <a name="macos-devices-preview"></a>macOS devices (preview)
+#### <a name="macos-devices"></a>dispositivos macOS
 
 Al igual que los dispositivos Windows 10, puede agregar sus propias exclusiones para dispositivos macOS.
 
@@ -127,7 +129,7 @@ Por motivos de rendimiento, DLP de punto de conexión incluye una lista de exclu
 
 #### <a name="restricted-apps"></a>Aplicaciones restringidas
 
-Las **aplicaciones restringidas** (anteriormente denominadas **aplicaciones no permitidas**) son una lista de aplicaciones que crea. Configure las acciones que realizará DLP cuando un usuario use una aplicación de la lista para **_acceder_** a un archivo protegido de DLP en un dispositivo. Está disponible para dispositivos Windows 10 y macOS (versión preliminar).
+Las **aplicaciones restringidas** (anteriormente denominadas **aplicaciones no permitidas**) son una lista de aplicaciones que crea. Configure las acciones que realizará DLP cuando un usuario use una aplicación de la lista para **_acceder_** a un archivo protegido de DLP en un dispositivo. Está disponible para dispositivos Windows 10 y macOS.
 
 Cuando se selecciona **Acceso por aplicaciones restringidas** en una directiva y un usuario usa una aplicación que se encuentra en la lista de aplicaciones restringidas para acceder a un archivo protegido, la actividad se `audited`, `blocked` o `blocked with override` en función de cómo la haya configurado. Es decir, a menos que la misma aplicación sea miembro de un **grupo de aplicaciones restringidas**, las acciones configuradas para las actividades del **Grupo de aplicaciones restringidas** invalidan las acciones configuradas para la actividad de acceso de la lista de **Aplicaciones restringidas**. Toda actividad es auditada y está disponible para su revisión en el explorador de actividades.
 
@@ -185,7 +187,7 @@ El usuario A abre un archivo DLP protegido mediante el bloc de notas. DLP permit
 
 Si una aplicación no está en **Actividades de archivo para aplicaciones en grupos de aplicaciones restringidos (versión preliminar)** o no está en la lista **Actividades de aplicaciones restringidas** o bien está en la lista **Actividades de aplicaciones restringidas** con una acción de `Audit only` o "Bloquear con invalidación", las restricciones definidas en **Actividades de archivo para todas las aplicaciones** se aplican en la misma regla.  
 
-#### <a name="macos-devices-preview"></a>macOS devices (preview)
+#### <a name="macos-devices"></a>dispositivos macOS
 
 Al igual que en los dispositivos Windows, ahora podrá impedir que las aplicaciones macOS accedan a datos confidenciales definiéndolos en la **Lista de actividades de aplicaciones restringidas**. 
 
@@ -236,7 +238,7 @@ Para dispositivos macOS, debe agregar la ruta de acceso de archivo completa. Par
 #### <a name="service-domains"></a>Dominios de servicio
 
 > [!NOTE]
-> La configuración **Dominios de servicio** solo se aplica a los archivos cargados mediante Microsoft Edge o Google Chrome con la [Extensión de cumplimiento de Microsoft](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension) instalada.
+> La configuración de **Dominios de servicio** solo se aplica a los archivos cargados con Microsoft Edge o Google Chrome con la [extensión Microsoft Purview](dlp-chrome-learn-about.md#learn-about-the-microsoft-purview-extension) instalada.
 
 Puede controlar si los archivos confidenciales protegidos por sus directivas se pueden cargar en dominios de servicio específicos de Microsoft Edge.
 
@@ -292,7 +294,7 @@ La actividad de archivo se auditará siempre en los dispositivos integrados, ind
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
 - [Microsoft Defender para punto de conexión](/windows/security/threat-protection/)
-- [Incorporar dispositivos Windows 10 y Windows 11 en la información general de Microsoft 365](/microsoft-365/compliance/device-onboarding-overview)
+- [Introducción a la incorporación de dispositivos Windows 10 y Windows 11 a Microsoft Purview](/microsoft-365/compliance/device-onboarding-overview)
 - [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Unido a Azure Active Directory (AAD)](/azure/active-directory/devices/concept-azure-ad-join)
 - [Descargue el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

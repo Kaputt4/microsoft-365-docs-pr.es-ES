@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre lo que sucede cuando se cierra o elimina una investigación o caso legal compatible con un caso de exhibición de documentos electrónicos (Premium) de Microsoft Purview.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c3ea769fe6c1e01a14e6a552170da8421a03cf07
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 45bf34450b430d7d33316fe0e6c6a21d12be2937
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940431"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993258"
 ---
 # <a name="close-or-delete-an-ediscovery-premium-case"></a>Cerrar o eliminar un caso de exhibición de documentos electrónicos (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cuando se complete el caso legal o la investigación compatible con un caso de exhibición de documentos electrónicos (Premium) de Microsoft Purview, puede cerrar o eliminar un caso. También puede volver a abrir un caso cerrado.
 
@@ -44,7 +46,7 @@ Para cerrar un caso:
 
 1. En la página **eDiscovery (Premium),** seleccione el caso que desea cerrar.
 
-2. En la pestaña **Configuración**, en **Información del**, haga clic en **Seleccionar**.
+2. En la pestaña **Configuración**, en **Información de caso**, haga clic en **Seleccionar**.
 
    ![Acceda a la página de control flotante de información del caso en un caso de eDiscovery (Premium).](..\media\AeDSelectCaseInformation.png) 
 
@@ -87,7 +89,7 @@ Para eliminar un caso:
 
 1. En la página **eDiscovery (Premium),** seleccione el caso que desea eliminar.
 
-2. En la pestaña **Configuración**, en **Información del**, haga clic en **Seleccionar**.
+2. En la pestaña **Configuración**, en **Información de caso**, haga clic en **Seleccionar**.
 
 3. En la parte inferior de la página desplegable **Información** del caso, haga clic en **Accionesy**, a continuación, haga clic en **Eliminar caso**.
 

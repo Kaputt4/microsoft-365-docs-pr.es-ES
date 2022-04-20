@@ -1,5 +1,5 @@
 ---
-title: Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión (versión preliminar)
+title: Incorporación y eliminación de dispositivos macOS en soluciones de cumplimiento mediante jamf Pro para clientes Microsoft Defender para punto de conexión
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,91 +13,93 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo incorporar y quitar dispositivos macOS en soluciones de cumplimiento Microsoft 365 con JAMF Pro para clientes de Microsoft Defender para endpoints (versión preliminar)
-ms.openlocfilehash: f260d901f8f02c2c02007b2cc0d49ab9ee57dafd
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+description: Aprenda a incorporar y desconectar dispositivos macOS en soluciones de Microsoft Purview mediante JAMF Pro para clientes Microsoft Defender para punto de conexión
+ms.openlocfilehash: ba2ff7723e54451ace46823fafb5323dcb35069e
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63716329"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953391"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión (versión preliminar)
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers"></a>Incorporación y eliminación de dispositivos macOS en soluciones de cumplimiento mediante jamf Pro para clientes Microsoft Defender para punto de conexión
 
-Puede usar jamf Pro para incorporar dispositivos macOS en Microsoft 365 de cumplimiento.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Puede usar JAMF Pro para incorporar dispositivos macOS a soluciones de Microsoft Purview.
 
 > [!IMPORTANT]
-> Use este procedimiento ***si ha implementado*** Microsoft Defender para endpoint (MDE) en los dispositivos macOS
+> Use este procedimiento ***si ha*** implementado Microsoft Defender para punto de conexión (MDE) en los dispositivos macOS.
 
 **Se aplica a:**
 
 - Clientes que tienen MDE implementado en sus dispositivos macOS.
-- [Prevención de pérdida de datos en punto de conexión en Microsoft 365 (DLP)](./endpoint-dlp-learn-about.md)
-- [Administración de riesgos internos](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Prevención de perdida de datos en el punto de conexión (DLP)](./endpoint-dlp-learn-about.md)
+- [Administración de riesgos internos](insider-risk-management.md)
 
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Asegúrese de que los [dispositivos macOS](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) se administran a través de JAMF pro y que están asociados con una identidad (Azure AD UPN unida) a través de JAMF Conectar o Intune.
-- Instalar el explorador perimetral v95+ en los dispositivos macOS
+- Asegúrese de que [los dispositivos macOS se administran a través de JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) y que están asociados a una identidad (UPN Azure AD unida) a través de JAMF Conectar o Intune.
+- Instalar el explorador v95+ Edge en los dispositivos macOS
 
-## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>Incorporar dispositivos a Microsoft 365 de cumplimiento con jamf Pro
+## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>Incorporación de dispositivos a soluciones de Microsoft Purview mediante JAMF Pro
 
 La incorporación de un dispositivo macOS a las soluciones de cumplimiento es un proceso de varias fases.
 
-### <a name="download-the-configuration-files"></a>Descargar los archivos de configuración
+### <a name="download-the-configuration-files"></a>Descarga de los archivos de configuración
 
 1. Necesitará estos archivos para este procedimiento.
 
 |archivo necesario para |source |
 |---------|---------|
-|accesibilidad |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
-acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
+|Accesibilidad |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
+acceso completo al disco     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |Preferencia de MDE |[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/schema/schema.json)
 
 > [!TIP]
-> Puede descargar los archivos *.mobileconfig* individualmente o [en un único archivo combinado](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) que contenga:
+> Puede descargar los archivos *.mobileconfig* individualmente o en [un único archivo combinado](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) que contenga:
 > - accessibility.mobileconfig
 > - fulldisk.mobileconfig
 >
 >Si alguno de estos archivos individuales se actualiza, deberá descargar el archivo combinado de nuevo o el archivo actualizado individualmente.
 
-### <a name="update-the-existing-mde-preference-domain-profile-using-the-jamf-pro-console"></a>Actualizar el perfil de dominio de preferencia MDE existente con la consola JAMF PRO
+### <a name="update-the-existing-mde-preference-domain-profile-using-the-jamf-pro-console"></a>Actualización del perfil de dominio de preferencia de MDE existente mediante la consola de JAMF PRO
 
-1. Actualice el schema.xml con el **archivo schema.json** que acaba de descargar.
+1. Actualice el perfil de schema.xml con el archivo **schema.json** que acaba de descargar.
 
-1. En **Propiedades de dominio de preferencia MDE** , elija esta configuración
+1. En **Propiedades de dominio de preferencia de MDE** , elija esta configuración.
     - Características 
-        - Use System Extensions: `enabled` - required for network extensions on Catalina
-        - Usar prevención de pérdida de datos: `enabled`
+        - Uso de extensiones del sistema: `enabled` necesario para las extensiones de red en Catalina
+        - Usar la prevención de pérdida de datos: `enabled`
 
-1. Elija la **pestaña** Ámbito.
+1. Elija la pestaña **Ámbito** .
 
-1. Elija los grupos en los que desea implementar este perfil de configuración.
+1. Elija los grupos en los que implementar este perfil de configuración.
 
 1. Seleccione **Guardar**. 
 
-### <a name="update-the-configuration-profile-for-grant-full-disk-access"></a>Actualizar el perfil de configuración para conceder acceso a disco completo
+### <a name="update-the-configuration-profile-for-grant-full-disk-access"></a>Actualización del perfil de configuración para conceder acceso completo al disco
 
-1. Actualice el perfil de acceso a disco completo existente con el **archivo fulldisk.mobileconfig** .
+1. Actualice el perfil de acceso al disco completo existente con el archivo **fulldisk.mobileconfig** .
 
-1. Upload el **archivo fulldisk.mobileconfig** a JAMF. Consulte [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
+1. Upload el archivo **fulldisk.mobileconfig** a JAMF. Consulte [Implementación de perfiles de configuración personalizados mediante jamf Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
-### <a name="grant-accessibility-access-to-dlp"></a>Conceder acceso de accesibilidad a DLP
+### <a name="grant-accessibility-access-to-dlp"></a>Concesión de acceso de accesibilidad a DLP
 
 1. Use el archivo accessibility.mobileconfig que descargó anteriormente.
 
-1. Upload a JAMF como se describe en [Implementar perfiles de configuración personalizados con Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+1. Upload a JAMF como se describe en [Implementación de perfiles de configuración personalizados mediante Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
-### <a name="check-the-macos-device"></a>Comprobar el dispositivo macOS 
+### <a name="check-the-macos-device"></a>Comprobación del dispositivo macOS 
 
 1. Reinicie el dispositivo macOS.
 
-1. Abra **Preferencias** >  **del sistemaProfiles**.
+1. Abra **Preferencias** >  del **sistemaPerfiles**.
 
-1. Debería ver:
-    - Accessiblity
-    - Acceso en disco completo
-    - Perfil de extensión kernel
+1. Debería ver lo siguiente:
+    - Accesibilidad
+    - Acceso completo al disco
+    - Perfil de extensión del kernel
     - MAU
     - Incorporación de MDATP
     - Preferencias de MDE
@@ -106,16 +108,16 @@ acceso en disco completo     |[fulldisk.mobileconfig](https://github.com/microso
     - Notificaciones
     - Perfil de extensión del sistema
 
-## <a name="offboard-macos-devices-using-jamf-pro"></a>Dispositivos macOS fuera de la pantalla con JAMF Pro
+## <a name="offboard-macos-devices-using-jamf-pro"></a>Dispositivos macOS fuera del panel con JAMF Pro
 
 > [!IMPORTANT]
-> Offboarding hace que el dispositivo deje de enviar datos del sensor al portal, pero los datos del dispositivo, incluida la referencia a las alertas que ha tenido, se conservarán durante un máximo de 6 meses.
+> La retirada hace que el dispositivo deje de enviar datos del sensor al portal, pero los datos del dispositivo, incluida la referencia a las alertas que haya tenido, se conservarán durante un máximo de 6 meses.
 
-Para salir de un dispositivo macOS, siga estos pasos
+Para desconectar un dispositivo macOS, siga estos pasos.
 
- 1. En **Propiedades de dominio de preferencia MDE** , quita los valores de esta configuración
+ 1. En **Propiedades de dominio de preferencia de MDE** , quite los valores de esta configuración.
     - Características 
-        - Usar extensiones del sistema
-        - Usar prevención de pérdida de datos
+        - Uso de extensiones del sistema
+        - Uso de la prevención de pérdida de datos
 
 1. Seleccione **Guardar**.

@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo conservar, recopilar, revisar y exportar contenido de Microsoft Teams en eDiscovery (Premium).
-ms.openlocfilehash: 21f6149d8a1c1114ab0d2d293af710690f74c6e5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4dc516037e1ccad41c7ed93f280d698ca6bd164c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948405"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991916"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Flujo de trabajo de eDiscovery (Premium) para el contenido de Microsoft Teams
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En este artículo se proporciona un conjunto completo de procedimientos, directrices y procedimientos recomendados para usar microsoft Purview eDiscovery (Premium) con el fin de conservar, recopilar, revisar y exportar contenido de Microsoft Teams. El objetivo de este artículo es ayudarle a optimizar el flujo de trabajo de eDiscovery para Teams contenido.
 
@@ -301,7 +303,7 @@ Estas son algunas sugerencias y procedimientos recomendados para ver Teams conte
 
 ## <a name="deleting-teams-chat-messages"></a>Eliminación de Teams mensajes de chat
 
-Puede usar Advanced eDiscovery y el Explorador de Microsoft Graph para responder a incidentes de derrame de datos, cuando el contenido que contiene información confidencial o malintencionada se publica a través de Teams mensajes de chat. Los administradores de su organización pueden buscar y eliminar mensajes de chat en Microsoft Teams. Esto puede ayudarle a quitar información confidencial o contenido inadecuado en Teams mensajes de chat. Para obtener más información, consulte [Buscar y purgar mensajes de chat en Teams](search-and-delete-Teams-chat-messages.md).
+Puede usar eDiscovery (Premium) y el Explorador de Microsoft Graph para responder a incidentes de derrame de datos, cuando el contenido que contiene información confidencial o malintencionada se publica a través de Teams mensajes de chat. Los administradores de su organización pueden buscar y eliminar mensajes de chat en Microsoft Teams. Esto puede ayudarle a quitar información confidencial o contenido inadecuado en Teams mensajes de chat. Para obtener más información, consulte [Buscar y purgar mensajes de chat en Teams](search-and-delete-Teams-chat-messages.md).
 
 ## <a name="reference-guide"></a>Guía de referencia
 

@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Necesita una solución de administración de registros para Microsoft 365 que administre contenido de alto valor para obligaciones legales, empresariales o reglamentarias, pero no sabe por dónde comenzar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: 02c16f9d1a9d42f59cf8bc27bdee38bcc2d10d73
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: e73cb1a118235082978ee93efcdb77f5e5135f8c
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911398"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971481"
 ---
 # <a name="get-started-with-records-management"></a>Introducción a la administración de registros
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -44,21 +46,19 @@ ms.locfileid: "64911398"
     - [Publicar etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
     - [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)
 
-Independientemente de estos pasos, **Use conectores para importar y archivar datos de terceros** que incluyan datos de plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos. Cuando estos datos se importan a buzones en línea, no solo admite la administración de registros de cumplimiento de Microsoft 365, sino también otras soluciones de cumplimiento, como el cumplimiento de comunicaciones, la administración de riesgos internos y la eDiscovery. Para más información, consulte [Más información sobre los conectores para datos de terceros](archiving-third-party-data.md).
-
 ## <a name="subscription-and-licensing-requirements"></a>Requisitos de suscripción y licencias
 
 Distintas suscripciones admiten diferentes administraciones de registros y los requisitos de licencias para los usuarios dependen de las características que use.
 
-Para ver las opciones para que los usuarios puedan beneficiarse de las características de cumplimiento de Microsoft 365, consulte la [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Para la administración de registros, vea la sección de [Administración de registros](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) y las descargas relacionadas en PDF para obtener más información sobre los requisitos de licencias de nivel de características.
+Para ver las opciones para que los usuarios puedan beneficiarse de las características de Microsoft Purview, consulte la [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Para la administración de registros, consulte la sección de [Administración de registros de Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management) y las descargas relacionadas en PDF para obtener más información sobre los requisitos de licencias de nivel de características.
 
 ## <a name="permissions"></a>Permisos
 
-Los miembros del equipo de cumplimiento que son responsables de la administración de registros necesitan permisos para el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>. De forma predeterminada, el administrador de inquilinos (administrador global) tiene acceso a esta ubicación y puede conceder acceso a los responsables de cumplimiento y a otras personas sin concederles todos los permisos de un administrador de inquilinos. Para conceder permisos para esta administración limitada, recomendamos agregar usuarios al grupo de roles de administrador de **Administración de registros**, que concede permisos para todas las características relacionadas con la administración de registros, incluida [revisión de eliminación y comprobación](disposition.md).
+Los miembros de su equipo de cumplimiento responsables de la administración de registros necesitan permisos en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Portal de cumplimiento de Microsoft Purview</a>. De forma predeterminada, el administrador del espacio empresarial (administrador global) tiene acceso a esta ubicación y puede dar acceso a los oficiales de cumplimiento y a otras personas sin otorgarles todos los permisos de un administrador de espacio empresarial. Para otorgar permisos para esta administración limitada, recomendamos que agregue usuarios al grupo de funciones de administrador de **Administración de registros**, que otorga permisos para todas las funciones relacionadas con la administración de registros, incluida la [revisión y verificación de la disposición](disposition.md).
 
 En el caso de los roles de solo lectura, puede crear un nuevo grupo de roles y agregar el rol de **Administración de registros de solo vista** a este grupo.
 
-Para obtener instrucciones sobre cómo agregar usuarios a los roles predeterminados o crear sus propios grupos de roles, consulte [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md).
+Para obtener instrucciones sobre cómo agregar usuarios a los roles predeterminados o crear sus propios grupos de roles, consulte [Permisos en el Portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 Estos permisos son necesarios solo para crear, configurar y aplicar etiquetas de retención para declarar registros y administrar la eliminación. La persona que configura estas etiquetas no requiere acceso al contenido.
 
@@ -67,7 +67,7 @@ Estos permisos son necesarios solo para crear, configurar y aplicar etiquetas de
 Ayúdese de la siguiente tabla para asignar los requisitos empresariales a los escenarios admitidos por la administración de registros.
 
 > [!TIP]
-> ¿Necesita cumplir con una normativa específica del sector? Consulte [Requisitos normativos para el gobierno de la información y la administración de registros](retention-regulatory-requirements.md) para obtener instrucciones específicas de la normativa.
+> ¿Necesita cumplir con una normativa específica del sector? Consulte [Requisitos normativos para la gestión del ciclo de vida de los datos y la administración de registros](retention-regulatory-requirements.md) para obtener instrucciones específicas de la normativa.
 
 |Quiero...|Documentación|
 |----------------|---------------|

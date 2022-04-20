@@ -11,16 +11,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: Use la herramienta eDiscovery de búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para encontrar rápidamente correo electrónico en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype Empresarial.
-ms.openlocfilehash: b339d2f4ebe738407c42eda86f18a5167af03921
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4efe2f4b4735005c10fd59e618bb6ecc8be51ec0
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941949"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993669"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Búsqueda de contenido mediante la herramienta de búsqueda de contenido
 
-Use la herramienta búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para encontrar rápidamente correo electrónico en buzones de Exchange, documentos en sitios SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype Empresarial. Puede usar la herramienta Búsqueda de contenido para buscar correos electrónicos, documentos y conversaciones de mensajería instantánea en herramientas de colaboración como Microsoft Teams y Grupos de Microsoft 365.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Use la herramienta Búsqueda de contenido del portal de cumplimiento de Microsoft Purview para encontrar rápidamente correos electrónicos en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype Empresarial. Puede usar la herramienta Búsqueda de contenido para buscar correos electrónicos, documentos y conversaciones de mensajería instantánea en herramientas de colaboración como Microsoft Teams y Grupos de Microsoft 365.
   
 ## <a name="search-for-content"></a>Buscar contenido
 

@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de registros médicos electrónicos (EHR) de su sistema sanitario a Microsoft 365. Esto le permite usar los datos de EHR en directivas de administración de riesgos internos para ayudarle a detectar la actividad de acceso no autorizado a los datos de los pacientes por parte de los empleados.
-ms.openlocfilehash: dfb02e5f6fb8625d31554c6dbc11179b1dddb6c2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b1745d8f91253132748fe08d724386d2e6633a4c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949727"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993170"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configuración de un conector para importar datos de auditoría de EHR de atención sanitaria (versión preliminar)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede configurar un conector de datos en el portal de cumplimiento de Microsoft Purview para importar datos de auditoría para la actividad del usuario en el sistema de Registros electrónicos de atención sanitaria (EHR) de su organización. Los datos de auditoría del sistema ehr sanitario incluyen datos para eventos relacionados con el acceso a los registros de salud de un paciente. La [solución de administración de riesgos](insider-risk-management.md) internos de Microsoft 365 puede usar los datos de auditoría de EHR de atención sanitaria para ayudar a proteger su organización frente al acceso no autorizado a la información de los pacientes.
 

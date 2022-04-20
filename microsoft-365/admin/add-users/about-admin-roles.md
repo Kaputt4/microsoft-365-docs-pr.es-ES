@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Los roles de administrador, como los administradores de servicios, se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración.
-ms.openlocfilehash: 5bea496ca24f3aef97a780d48c74b84aaa46176b
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 8a1df118b5dfe1ad484f3a8048cce9cf748ab54b
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765461"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937683"
 ---
 # <a name="about-admin-roles"></a>Acerca de los roles de administrador
 
@@ -89,7 +89,7 @@ Probablemente solo necesitará asignar los siguientes roles en su organización.
 |Administrador de aplicaciones de Office    |   Asigne el rol de administrador de aplicaciones de Office a los usuarios que necesiten hacer lo siguiente: <br> - Usar el servicio de directivas en la nube de Office para crear y administrar directivas basadas en la nube para Office <br> - Crear y administrar solicitudes de servicio <br> - Administrar el contenido de Novedades que los usuarios ven en sus aplicaciones de Office   <br> - Supervisar el estado del servicio  |
 |Administrador de contraseñas  |   Asigne el rol de administrador de contraseñas a un usuario que necesite restablecer las contraseñas de los no administradores y los administradores de contraseñas.   |
 |Lector del Centro de mensajes |   Asigne el rol de Lector del Centro de mensajes a los usuarios que necesiten hacer lo siguiente: <br> - Supervisar las notificaciones del Centro de mensajes <br> - Obtener resúmenes semanales por correo electrónico de las publicaciones y actualizaciones del Centro de mensajes <br> - Compartir publicaciones del Centro de mensajes <br> - Tener acceso de solo lectura a servicios de Azure AD, como usuarios y grupos|
-|Administrador de Power Platform |   Asigne el rol de administrador de Power Platform a los usuarios que necesiten hacer lo siguiente: <br> - Administrar todas las características de administración de Power Apps, Power Automate y prevención de pérdida de datos <br> - Crear y administrar solicitudes de servicio <br> - Supervisar el estado del servicio  |
+|Administrador de Power Platform |   Asigne el rol de administrador de Power Platform a los usuarios que necesiten hacer lo siguiente: <br> - Administrar todas las características de administración de Power Apps, Power Automate y prevención de pérdida de datos de Microsoft Purview <br> - Crear y administrar solicitudes de servicio <br> - Supervisar el estado del servicio  |
 |Lector de informes |   Asigne el rol de lector de informes a los usuarios que necesiten hacer lo siguiente: <br> - Ver datos de uso e informes de actividad en el Centro de administración de Microsoft 365 <br> - Obtener acceso al paquete de contenido de adopción de Power BI <br> - Obtener acceso a los informes de inicio de sesión y a la actividad en Azure AD <br> - Ver datos devueltos por la API de informes de Microsoft Graph|
 |Administrador de soporte técnico del servicio   |   Asigne el rol de administrador de soporte técnico de servicio como un rol adicional a los administradores o usuarios que necesiten hacer, además de su rol de administrador habitual, lo siguiente: <br> - Abrir y administrar solicitudes de servicio <br> - Ver y compartir publicaciones del centro de mensajes <br> - Supervisar el estado del servicio   |
 |Administrador de SharePoint    |   Asigne el rol de administrador de SharePoint a los usuarios que necesiten acceder y administrar el centro de administración de SharePoint Online. <br><br>Los administradores de SharePoint también pueden: <br> - Crear y eliminar sitios <br> - Administrar colecciones de sitios y la configuración global de SharePoint   |
@@ -106,7 +106,7 @@ Un partner puede asignar estos roles:
 
 - **Agente del departamento de soporte técnico** Tiene privilegios equivalentes a los de un administrador del departamento de soporte técnico.
 
-Antes de que el partner pueda asignar estos roles a los usuarios, usted debe agregarlo como un administrador delegado a su cuenta. Este proceso puede iniciarlo un partner autorizado. El partner le envía un correo electrónico para preguntarle si quiere concederle permiso para actuar como administrador delegado. Para obtener instrucciones, consulte [Autorizar o quitar relaciones de partner](../misc/add-partner.md).
+Antes de que el partner pueda asignar estos roles a los usuarios, tendrá que agregar al partner como administrador delegado a su cuenta. Este proceso lo iniciará el partner autorizado. Le enviará un correo electrónico para preguntarle si quiere concederle permiso para actuar como administrador delegado. Para obtener instrucciones, consulte [Autorizar o quitar relaciones de partner](../misc/add-partner.md).
   
 ## <a name="related-content"></a>Contenido relacionado
 

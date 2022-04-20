@@ -21,14 +21,16 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Obtenga información sobre los elementos sin indexar en Exchange y SharePoint que puede incluir en una búsqueda de eDiscovery que ejecute en el portal de cumplimiento de Microsoft Purview.
-ms.openlocfilehash: 3e4f9521151755f97f3ad4b824c763f3ab5d807f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b88e7d0f6651ecaa31849343db066295af1f5e84
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932053"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993104"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Elementos indizados parcialmente en eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Una búsqueda de exhibición de documentos electrónicos de Microsoft Purview que se ejecuta desde el portal de cumplimiento de Microsoft Purview incluye automáticamente elementos parcialmente indexados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indizados parcialmente son Exchange elementos y documentos de buzón de correo en sitios SharePoint y OneDrive para la Empresa que, por alguna razón, no estaban completamente indizados para la búsqueda. En Exchange, un elemento parcialmente indexado normalmente contiene un archivo (de un tipo de archivo que no se puede indexar) que está asociado a un mensaje de correo electrónico. Estas son algunas otras razones por las que los elementos no se pueden indexar para la búsqueda y se devuelven como elementos indizados parcialmente al ejecutar una búsqueda de exhibición de documentos electrónicos:
   
@@ -168,6 +170,6 @@ Para obtener una lista de los límites de indexación de SharePoint documentos, 
 
 - Si crea una suspensión basada en consultas asociada a un caso de exhibición de documentos electrónicos, todos los elementos indizados parcialmente se colocan en suspensión. Esto incluye elementos parcialmente indexados que no coinciden con los criterios de consulta de búsqueda para la suspensión. Para obtener más información sobre cómo crear retenciones de exhibición de documentos electrónicos basadas en consultas, vea [Crear una suspensión de eDiscovery](create-ediscovery-holds.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Investigación de elementos parcialmente indexados en eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)

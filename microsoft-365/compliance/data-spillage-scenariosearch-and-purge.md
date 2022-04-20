@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Use eDiscovery y herramientas de búsqueda para administrar y responder a un incidente de derrame de datos en su organización.
-ms.openlocfilehash: e9e81ae81c344bfc8773174c8650a1808faddd5e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 875c63f264e750603c4ad8a0b5bf1df2b6e45217
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948075"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993236"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Serie de soluciones de eDiscovery: escenario de desbordamiento de datos: búsqueda y purga
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  **¿Qué es el derrame de datos y por qué debe preocuparse?** El derrame de datos se produce cuando un documento confidencial se libera en un entorno que no es de confianza. Cuando se detecta un incidente de derrame de datos, es importante evaluar rápidamente el tamaño y las ubicaciones del derrame, examinar las actividades del usuario a su alrededor y, a continuación, purgar permanentemente los datos derramados del sistema.
   
@@ -183,7 +185,7 @@ Tenga en cuenta los siguientes límites al eliminar los datos derramados:
 - Se puede eliminar un máximo de 10 elementos por buzón a la vez. Como la función de buscar y quitar mensajes está diseñada para ser una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes se quitan rápidamente de los buzones. Esta característica no está diseñada para limpiar buzones de usuarios.
 
 > [!IMPORTANT]
-> Los elementos de correo electrónico de un conjunto de revisión en un caso de exhibición de documentos electrónicos (Premium) no se pueden eliminar mediante los procedimientos de este artículo. Esto se debe a que los elementos de un conjunto de revisión son copias de elementos del servicio en directo que se copian y almacenan en una ubicación Azure Storage. Esto significa que no se devolverán mediante una búsqueda de contenido que cree en el paso 3. Para eliminar elementos de un conjunto de revisión, debe eliminar el caso de exhibición de documentos electrónicos (Premium) que contiene el conjunto de revisión. Para obtener más información, vea [Cerrar o eliminar un caso de exhibición de documentos electrónicos (Premium).](close-or-delete-case.md)
+> Los elementos de correo electrónico en un conjunto de revisiones en un caso de eDiscovery (Premium) no se pueden eliminar utilizando los procedimientos de este artículo. Esto se debe a que los elementos de un conjunto de revisión son copias de elementos del servicio en directo que se copian y almacenan en una ubicación Azure Storage. Esto significa que no se devolverán mediante una búsqueda de contenido que cree en el paso 3. Para eliminar elementos en un conjunto de revisiones, tiene que eliminar el caso de eDiscovery (Premium) que contiene el conjunto de revisiones. Para más información, consulte [Cerrar o eliminar un caso de eDiscovery (Premium)](close-or-delete-case.md).
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Paso 8: Comprobar, proporcionar una prueba de eliminación y auditoría
 
@@ -205,7 +207,7 @@ Si las palabras clave de la consulta de búsqueda que creó y usó en el paso 3 
 
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Auditoría del proceso de investigación del derrame de datos
 
-Puede buscar en el registro de auditoría las actividades de exhibición de documentos electrónicos que se realizaron durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría del comando **New-ComplianceSearchAction -Purge** que ejecutó en el paso 7 para eliminar los datos derramados. Para más información, vea:
+Puede buscar en el registro de auditoría las actividades de exhibición de documentos electrónicos que se realizaron durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría del comando **New-ComplianceSearchAction -Purge** que ejecutó en el paso 7 para eliminar los datos derramados. Para más información, consulte lo siguiente:
 
 - [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md)
 
