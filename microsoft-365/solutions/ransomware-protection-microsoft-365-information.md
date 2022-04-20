@@ -16,13 +16,13 @@ ms.collection:
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, ransomware operado por humanos, HumOR, ataque de extorsión, ataque de ransomware, cifrado, criptovirología, confianza cero
-description: Use el acceso controlado a carpetas, MIP, DLP y Microsoft Defender for Cloud Apps para proteger sus datos confidenciales de Microsoft 365.
-ms.openlocfilehash: 0011a3c9fc0d24815818b67906b8f404a191563e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Use acceso controlado a carpetas, Microsoft Purview Information Protection, DLP y Microsoft Defender for Cloud Apps para proteger sus datos confidenciales de Microsoft 365.
+ms.openlocfilehash: e32c214688adb60fa39fc3c392512f46ec94aecf
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325101"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945139"
 ---
 # <a name="step-5-protect-information"></a>Paso 5. Proteger información
 
@@ -88,9 +88,9 @@ Para proteger la información confidencial en caso de que un atacante de ransomw
 
 - Use el [acceso controlado a carpetas](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) para que sea más difícil para las aplicaciones no autorizadas modificar los datos en carpetas controladas.
 
-- Use [Microsoft Information Protection](/microsoft-365/compliance/information-protection) y etiquetas de confidencialidad y aplíquelas a la información confidencial. Las etiquetas de confidencialidad se pueden configurar para cifrado y permisos adicionales con cuentas de usuario definidas y acciones permitidas. Un archivo etiquetado con este tipo de etiqueta de confidencialidad que se filtre desde su espacio empresarial solo se podrá usar por parte de una cuenta de usuario definida en la etiqueta.
+- Use [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) y las etiquetas de confidencialidad de Microsoft Purview y aplíquelos a información confidencial. Las etiquetas de confidencialidad se pueden configurar para cifrado y permisos adicionales con cuentas de usuario definidas y acciones permitidas. Un archivo etiquetado con este tipo de etiqueta de confidencialidad que se filtre desde su espacio empresarial solo se podrá usar por parte de una cuenta de usuario definida en la etiqueta.
 
-- Use la [prevención de pérdida de datos (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) de Microsoft 365 para detectar, advertir y bloquear el uso compartido riesgoso, involuntario o inapropiado de los datos que contienen información personal o confidencial en función de las etiquetas de confidencialidad, tanto interna como externamente.
+- Use la [prevención de pérdida de datos (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) de Microsoft Purview para detectar, advertir y bloquear el uso compartido riesgoso, involuntario o inapropiado de los datos que contienen información personal o confidencial en función de las etiquetas de confidencialidad, tanto interna como externamente.
 
 - Use [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) para bloquear descargas de información confidencial, como archivos. También puede usar las [directivas de detección de anomalías de Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy#ransomware-activity) para detectar una alta tasa de cargas de archivos o actividades de eliminación de archivos.
 

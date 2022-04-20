@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Determine las regulaciones de privacidad de datos, los escenarios pertinentes, su preparación y los tipos de información confidencial que se encuentran en el entorno de Microsoft 365.
-ms.openlocfilehash: ea151577f31ad8ea9454addf171c1079f334d377
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 967c64dee2d99f41b3c2a1b6a193730dcd75811a
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822702"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947525"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Evaluar los riesgos de privacidad de los datos e identificar elementos confidenciales con Microsoft 365
 
@@ -60,7 +60,7 @@ Para una referencia posterior en los artículos de esta solución general, en es
 
 |Regulación|Artículo/sección|Extracto|Categorías de control técnico aplicables|
 |---|---|---|---|
-|RGPD|Artículo 5, apartado 1, letra f)|Los datos personales se procesarán de forma que garantice la seguridad adecuada de los datos personales, incluida la protección contra el procesamiento no autorizado o ilegal y contra la pérdida accidental, la destrucción o el daño, utilizando las medidas técnicas u organizativas adecuadas («integridad y confidencialidad».|(Todos) <br> Identidad <br> Dispositivo <br> Protección contra amenazas <br> Protección de la información <br> Gobernanza de la información <br> Detección y respuesta|
+|RGPD|Artículo 5, apartado 1, letra f)|Los datos personales se procesarán de forma que garantice la seguridad adecuada de los datos personales, incluida la protección contra el procesamiento no autorizado o ilegal y contra la pérdida accidental, la destrucción o el daño, utilizando las medidas técnicas u organizativas adecuadas («integridad y confidencialidad».|(Todos) <br> Identidad <br> Device <br> Protección contra amenazas <br> Protección de la información <br> Gobernanza de la información <br> Detección y respuesta|
 ||Artículo 32)(1)(a)|Teniendo en cuenta el estado de la técnica, los costos de ejecución y la naturaleza, el ámbito, el contexto y los fines del tratamiento, así como el riesgo de variación de probabilidad y gravedad para los derechos y libertades de las personas físicas, el responsable y el encargado de la tratamiento aplicarán las medidas técnicas y organizativas adecuadas para garantizar un nivel de seguridad adecuado al riesgo,  incluyendo, entre otras cosas, según corresponda: (a) la seudónimo y el cifrado de datos personales.|Protección de la información|
 ||Artículo 13)(2)(a)|"... en el momento en que se obtengan los datos personales, el responsable del tratamiento proporcionará al interesado la siguiente información adicional necesaria para garantizar un tratamiento justo y transparente: (a) el período durante el cual se almacenarán los datos personales, o si no es posible, los criterios utilizados para determinar dicho período.|Gobernanza de la información|
 ||Artículo 15)(1)(e)|El interesado tendrá derecho a obtener de la confirmación del responsable de la tratamiento si se están procesando o no los datos personales que le conciernen, y en su caso, el acceso a los datos personales y la siguiente información: (e) la existencia del derecho a solicitar al responsable la rectificación o eliminación de datos personales o la restricción del tratamiento de datos personales relativos al interesado o a oponerse a dichos datos Tratamiento|Detección y respuesta|
@@ -192,11 +192,11 @@ Este paso implica la identificación de determinados tipos de información confi
 
 La búsqueda de contenido en el entorno que contiene personal puede ser una tarea formidable, que anteriormente implicaba una combinación de búsqueda de cumplimiento, exhibición de documentos electrónicos, Advanced eDiscovery, DLP y auditoría.
 
-Con la nueva solución **de clasificación de datos** en el Centro de administración de cumplimiento de Microsoft, esto se ha vuelto mucho más fácil con la funcionalidad [Explorador de contenido](../compliance/data-classification-content-explorer.md) , que funciona con tipos de información confidencial integrados o personalizados, incluidos los relacionados con los datos personales.
+Con la nueva solución **de clasificación de datos** en el portal de cumplimiento de Microsoft Purview, esto se ha vuelto mucho más fácil con la funcionalidad [Explorador de contenido](../compliance/data-classification-content-explorer.md) , que funciona con tipos de información confidencial integrados o personalizados, incluidos los relacionados con los datos personales.
 
 ### <a name="sensitive-information-types"></a>Tipos de información confidencial
 
-El Centro de administración de cumplimiento de Microsoft viene cargado previamente con más de 100 tipos de información confidencial, la mayoría relacionados con la identificación y localización de datos personales. Estos tipos de información confidencial integrados pueden ayudar a identificar y proteger los números de tarjeta de crédito, los números de cuenta bancaria, los números de pasaporte, etc., en función de los patrones definidos por una expresión regular (regex) o una función. Para obtener más información, consulte [Qué buscan los tipos de información confidencial](../compliance/sensitive-information-type-entity-definitions.md).
+El portal de cumplimiento de Microsoft Purview viene cargado previamente con más de 100 tipos de información confidencial, la mayoría relacionados con la identificación y localización de datos personales. Estos tipos de información confidencial integrados pueden ayudar a identificar y proteger los números de tarjeta de crédito, los números de cuenta bancaria, los números de pasaporte, etc., en función de los patrones definidos por una expresión regular (regex) o una función. Para obtener más información, consulte [Qué buscan los tipos de información confidencial](../compliance/sensitive-information-type-entity-definitions.md).
 
 Si necesita identificar y proteger un tipo de elementos confidenciales específico de la organización o regional, como un formato personalizado para identificadores de empleado u otra información personal que aún no esté cubierta por un tipo de información confidencial integrado, puede crear un tipo de información confidencial personalizado con estos métodos:
 
@@ -216,7 +216,7 @@ Consulte estos artículos para obtener más información:
 
 ### <a name="content-explorer"></a>Explorador de contenido
 
-Una herramienta importante que para determinar la aparición de elementos confidenciales en el entorno es el nuevo [Explorador de contenido](../compliance/data-classification-content-explorer.md) en el Centro de administración de cumplimiento de Microsoft 365. Se trata de una herramienta automatizada para el examen inicial y continuo de toda la suscripción de Microsoft 365 para la aparición de tipos de información confidencial y la visualización de los resultados.
+Una herramienta importante que para determinar la aparición de elementos confidenciales en el entorno es el nuevo [Explorador de contenido](../compliance/data-classification-content-explorer.md) en el Centro de administración de Microsoft Purview. Se trata de una herramienta automatizada para el examen inicial y continuo de toda la suscripción de Microsoft 365 para la aparición de tipos de información confidencial y la visualización de los resultados.
 
 La nueva herramienta Explorador de contenido permite identificar rápidamente las ubicaciones de los elementos confidenciales de su entorno, ya sea mediante tipos de información confidencial integrados o personalizados. Esto puede implicar el establecimiento de un proceso y la responsabilidad asignada de investigar periódicamente la presencia y ubicación de elementos confidenciales.
 

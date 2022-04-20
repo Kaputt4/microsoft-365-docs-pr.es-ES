@@ -22,76 +22,76 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
-description: Obtén información sobre cómo empezar a recopilar datos para el inquilino mediante la aplicación de plantilla Microsoft 365 de análisis de uso en Power BI.
-ms.openlocfilehash: b547acc5adf312458e82108a36bbd9c0cbf60f10
-ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
+description: Obtenga información sobre cómo empezar a recopilar datos para el inquilino mediante la aplicación de plantilla análisis de uso de Microsoft 365 en Power BI.
+ms.openlocfilehash: cc2b74696dbdab416493be1909f1781b31f201a6
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62487316"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946954"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Habilitar análisis de uso de Microsoft 365
 
-Para habilitar Microsoft 365 análisis de uso en un Microsoft 365 de Government Community Cloud ee.UU. (GCC), vea [Conectar to Microsoft 365 Government Community Cloud (GCC) con Análisis de uso](connect-to-gcc-data-with-usage-analytics.md).
+Para habilitar el análisis de uso de Microsoft 365 en un inquilino de Microsoft 365 us Government Community Cloud (GCC), consulte [Conectar para Microsoft 365 Government Community Cloud (GCC) datos con Usage Analytics](connect-to-gcc-data-with-usage-analytics.md).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Para empezar con el Microsoft 365 de uso, primero debes hacer que los datos estén disponibles en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365 y,</a> a continuación, iniciar la aplicación de plantilla en Power BI.
+Para empezar a trabajar con Microsoft 365 análisis de uso, primero debe hacer que los datos estén disponibles en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> y, a continuación, iniciar la aplicación de plantilla en Power BI.
 
 ## <a name="get-power-bi"></a>Obtener Power BI
 
-Si aún no tiene Power BI, puede [registrarse](https://go.microsoft.com/fwlink/p/?linkid=845347) para obtener Power BI Pro. Selecciona **Probar gratis** para suscribirte a una versión de prueba o Comprar **ahora** para obtener Power BI Pro.
+Si aún no tiene Power BI, puede [registrarse para obtener Power BI Pro](https://go.microsoft.com/fwlink/p/?linkid=845347). Seleccione **Probar gratis** para registrarse para obtener una evaluación o **Comprar ahora** para obtener Power BI Pro.
 
 
 También puede expandir la sección **Productos** para comprar una versión de Power BI.
 
 > [!NOTE]
-> Necesitas una licencia Power BI Pro para instalar, personalizar y distribuir una aplicación de plantilla. Para obtener más información, consulte [Requisitos previos](/power-bi/service-template-apps-install-distribute?source=docs#prerequisites).
+> Necesita una licencia de Power BI Pro para instalar, personalizar y distribuir una aplicación de plantilla. Para obtener más información, consulte [Requisitos previos](/power-bi/service-template-apps-install-distribute?source=docs#prerequisites).
 
-Para compartir los datos, tanto usted como las personas con las que comparte los datos, necesitan una licencia de Power BI Pro o el contenido debe estar en un área de trabajo en un servicio [Power BI premium](/power-bi/service-premium-what-is).
+Para compartir los datos, tanto usted como las personas con las que comparte los datos, necesitan una licencia de Power BI Pro o el contenido debe estar en un área de trabajo en un [servicio premium de Power BI](/power-bi/service-premium-what-is).
 
-## <a name="enable-the-template-app"></a>Habilitar la aplicación de plantilla
+## <a name="enable-the-template-app"></a>Habilitación de la aplicación de plantilla
 
-Para habilitar la aplicación de plantilla, debes ser un **administrador global**.
+Para habilitar la aplicación de plantilla, debe ser un **Administrador global**.
 
-Vea [acerca de los roles de administrador](../add-users/about-admin-roles.md) para obtener más información.
+Consulte [acerca de los roles de administrador](../add-users/about-admin-roles.md) para obtener más información.
 
-1. En el Centro de administración, vaya a la **pestaña Configuración** \> **configuración de** \> **la organización**.
+1. En el centro de administración, vaya a la pestaña **Servicios** de **configuración** \> de **Configuración** \> organización.
 
-2. En la **pestaña Servicios** , seleccione  **Informes**.
+2. En la pestaña **Servicios** , seleccione  **Informes**.
 
-3. En el panel Informes que se abre, establece Hacer que los datos del informe estén **disponibles para Microsoft 365 análisis de uso para Power BI** en **Al** \> **guardar**.
+3. En el panel Informes que se abre, establezca **Hacer que los datos del informe estén disponibles para Microsoft 365 análisis de uso para Power BI** **en Al** \> **guardar**.
 
-El proceso de recopilación de datos se completará en dos o 48 horas según el tamaño del espacio empresarial. El **botón Ir a Power BI** se habilitará (ya no será gris) cuando se complete la recopilación de datos. Una vez hecho esto, la aplicación proporciona datos de uso históricos a nivel de la organización. 
+El proceso de recopilación de datos se completará en dos o 48 horas, dependiendo del tamaño del inquilino. El botón **Ir a Power BI** se habilitará (ya no estará gris) cuando se complete la recopilación de datos. Una vez hecho esto, la aplicación proporciona datos de uso históricos en el nivel de la organización. 
 
 > [!NOTE]
-> Los datos de la pestaña **"Actividad** de usuario" solo se actualizan después del decimoquinto día del mes actual y del primer día del mes siguiente, por lo que permanecerán vacíos inicialmente hasta que se complete la primera actualización.
+> Los datos de la pestaña **"Actividad de usuario"** solo se actualizan después del decimoquinto día del mes actual y el primer día del mes siguiente, por lo que permanecerán vacíos inicialmente hasta que se complete la primera actualización.
 
-## <a name="start-the-template-app"></a>Iniciar la aplicación de plantilla
+## <a name="start-the-template-app"></a>Inicio de la aplicación de plantilla
 
-Para iniciar la aplicación de plantilla, debes ser un administrador **global****, un** lector de **informes, un** **Exchange, un** Skype Empresarial o un **SharePoint.**
+Para iniciar la aplicación de plantilla, debe ser **administrador global**, **lector de informes**, **administrador de Exchange**, **administrador de Skype Empresarial** o **administrador de SharePoint**.
 
-1. Copie el identificador de inquilino y **seleccione Ir a Power BI**.
+1. Copie el identificador de inquilino y seleccione **Ir a Power BI**.
 
-2. Cuando llegue a Power BI, inicie sesión. A **continuación, selecciona AplicacionesGet**-> **aplicaciones** en el menú de navegación.
+2. Cuando llegue a Power BI, inicie sesión. A continuación, **seleccione** **AplicacionesObtener**-> aplicaciones en el menú de navegación.
 
-3. En la **pestaña Aplicaciones**, escriba Microsoft 365 en el cuadro de búsqueda y, a continuación **, seleccione Microsoft 365 análisis de uso** \> **Obtener ahora**.
+3. En la pestaña **Aplicaciones**, escriba Microsoft 365 en el cuadro de búsqueda y, a continuación, seleccione **Microsoft 365 análisis** \> de uso **Obtenerlo ahora**.
 
-    [![Selecciona Obtener ahora.](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
+    [![Seleccione Obtener ahora.](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
 
 4. Una vez instalada la aplicación. Seleccione el icono para abrirlo.
 
-5. Selecciona **Explorar aplicación** para ver la aplicación con datos de ejemplo. Elige **Conectar** para conectar la aplicación a los datos de tu organización.
+5. Seleccione **Explorar aplicación** para ver la aplicación con datos de ejemplo. Elija **Conectar** para conectar la aplicación a los datos de su organización.
 
-6. Elija **Conectar**, en la pantalla Conectar para Microsoft 365 análisis de uso, **escriba** el identificador de inquilino (sin guiones) que copió en el paso (1) y seleccione **Siguiente**.
+6. Elija **Conectar**, en la **pantalla Conectar para Microsoft 365** análisis de uso, escriba el identificador de inquilino (sin guiones) que copió en el paso (1) y seleccione **Siguiente**.
 
-7. En la siguiente pantalla, seleccione **OAuth2** como el **método de autenticación** \> **Iniciar sesión**. Si eliges cualquier otro método de autenticación, se producirá un error en la conexión a la aplicación de plantilla.
+7. En la siguiente pantalla, seleccione **OAuth2** como **método** \> de autenticación **Iniciar sesión**. Si elige cualquier otro método de autenticación, se producirá un error en la conexión a la aplicación de plantilla.
 
-    ![Elija Cuenta de Microsoft como método de autenticación.](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
+    ![Elija Cuenta microsoft como método de autenticación.](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
 
-8. Después de crear una instancia de la aplicación de plantilla, Microsoft 365 panel de análisis de uso estará disponible en Power BI en la web. La carga inicial del panel llevará entre 2 y 30 minutos.
+8. Una vez creada la instancia de la aplicación de plantilla, el panel de análisis de uso de Microsoft 365 estará disponible en Power BI en la web. La carga inicial del panel tardará entre 2 y 30 minutos.
 
-Los agregados de nivel de inquilino estarán disponibles en todos los informes después de participar. **Los detalles de nivel de usuario solo estarán disponibles alrededor del 5 del mes siguiente después de participar**. Esto afectará a todos los informes en Actividad del usuario (consulte Navegar y usar los informes de análisis de uso de [Microsoft 365](navigate-and-utilize-reports.md) para obtener sugerencias sobre cómo ver y usar estos informes).
+Los agregados de nivel de inquilino estarán disponibles en todos los informes después de participar. **Los detalles de nivel de usuario solo estarán disponibles alrededor del 5 del próximo mes natural después de participar**. Esto afectará a todos los informes en Actividad de usuario (consulte [Navegación y uso de los informes en Microsoft 365 análisis de uso](navigate-and-utilize-reports.md) para obtener sugerencias sobre cómo ver y usar estos informes).
 
 ## <a name="make-the-collected-data-anonymous"></a>Establecer que los datos recopilados sean anónimos
 
@@ -105,10 +105,10 @@ Los administradores globales pueden revertir este cambio para su inquilino y mos
   
 3. Desactive la instrucción **En todos los informes, mostrar nombres sin identificar para usuarios, grupos y sitios** y, a continuación, guarde los cambios.  
   
-Estos cambios tardarán unos minutos en tener efecto. Mostrar información de usuario identificable es un evento registrado en el Centro de cumplimiento de Microsoft 365 de auditoría.   
+Estos cambios tardarán unos minutos en surtir efecto. Mostrar información de usuario identificable es un evento registrado en el registro de auditoría del portal de cumplimiento de Microsoft Purview.   
 
 ## <a name="related-content"></a>Contenido relacionado
 
 [Acerca del análisis de uso](usage-analytics.md) (artículo)\
-[Obtener la versión más reciente de análisis de uso](get-the-latest-version-of-usage-analytics.md) (artículo)\
-[Navegar y usar los informes en Microsoft 365 análisis de uso (](navigate-and-utilize-reports.md)artículo)
+[Obtener la versión más reciente del análisis de uso](get-the-latest-version-of-usage-analytics.md) (artículo)\
+[Navegación y uso de los informes en Microsoft 365 análisis de uso](navigate-and-utilize-reports.md) (artículo)

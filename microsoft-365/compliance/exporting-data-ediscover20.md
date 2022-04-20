@@ -1,5 +1,5 @@
 ---
-title: Exportar datos de casos en Advanced eDiscovery
+title: Exportar datos de casos en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Obtenga información sobre cómo exportar o descargar contenido de un conjunto de revisiones para presentaciones o revisiones externas en un Advanced eDiscovery caso.
+description: Obtenga información sobre cómo exportar o descargar contenido de un conjunto de revisiones para presentaciones o revisiones externas en un caso de exhibición de documentos electrónicos (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5d61ce10e7ff0c9a419310bef3425fefa654d0dc
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f94062bee378a408e1a04240b09c5ae05f53c5f8
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201138"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64948647"
 ---
-# <a name="export-case-data-in-advanced-ediscovery"></a>Exportar datos de casos en Advanced eDiscovery
+# <a name="export-case-data-in-ediscovery-premium"></a>Exportar datos de casos en eDiscovery (Premium)
 
-Hay tres formas de exportar datos de un conjunto de revisión:
+Hay tres maneras de exportar datos de un conjunto de revisión:
 
-**Descargar:** Descargue (mediante un explorador) un pequeño conjunto de archivos nativos. Esta es la forma más rápida de exportar un pequeño conjunto de datos. Este método conserva los nombres de archivo nativos. Para obtener más información, vea [Descargar documentos de un conjunto de revisión.](download-documents-from-review-set.md)
+**Descargar:** Descargue (mediante un explorador) un pequeño conjunto de archivos nativos. Esta es la forma más rápida de exportar un pequeño conjunto de datos. Este método conserva los nombres de archivo nativos. Para obtener más información, consulte [Descarga de documentos de un conjunto de revisión](download-documents-from-review-set.md).
 
-**Exportar:** Personalice los datos que se exportan. Esto incluye la exportación de metadatos de archivo, archivos nativos, archivos de texto y documentos redactados que se han guardado en un archivo PDF. Una vez que se preparen los datos exportados, puede descargar los datos de la **pestaña** Exportar a un equipo local. Para obtener más información, vea [Exportar documentos de un conjunto de revisión](export-documents-from-review-set.md)
+**Exportar:** Personalice qué datos se exportan. Esto incluye la exportación de metadatos de archivo, archivos nativos, archivos de texto y documentos redactados que se han guardado en un archivo PDF. Una vez preparados los datos exportados, puede descargar los datos de la pestaña **Exportar** a un equipo local. Para obtener más información, consulte [Exportación de documentos desde un conjunto de revisión](export-documents-from-review-set.md).
 
-**Agregar a otro conjunto de revisión:** Copie los datos de un conjunto de revisión en un conjunto de revisión diferente. Para obtener más información, vea [Agregar datos de un conjunto de revisión a otro conjunto de revisión.](add-data-to-review-set-from-another-review-set.md)
+**Agregue a otro conjunto de revisión:** Copie los datos de un conjunto de revisión en un conjunto de revisión diferente. Para obtener más información, vea [Agregar datos de un conjunto de revisión a otro conjunto de revisión](add-data-to-review-set-from-another-review-set.md).
 
 > [!NOTE]
-> En Microsoft 365, los datos se hash y esos hashes se proporcionan en el archivo de salida con fines de comprobación. Esto se complementa con registros de auditoría y funciones de informes, como estadísticas de colección, informes de conjunto de carga e informes de exportación (incluido el archivo de carga de exportación).
+> En Microsoft 365, se aplica un hash a los datos y esos hashes se proporcionan en el archivo de salida con fines de comprobación. Esto se complementa con los registros de auditoría y la funcionalidad de informes, como estadísticas de recopilación, informes de conjuntos de carga e informes de exportación (incluido el archivo de carga de exportación).

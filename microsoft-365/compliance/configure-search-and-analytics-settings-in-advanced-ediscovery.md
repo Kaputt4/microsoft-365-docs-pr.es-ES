@@ -1,5 +1,5 @@
 ---
-title: 'Configuración de búsqueda y análisis: Advanced eDiscovery'
+title: 'Configuración de búsqueda y análisis: eDiscovery (Premium)'
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,17 +16,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
-description: Configure Advanced eDiscovery que se aplican a todos los conjunto de revisión en un caso. Esto incluye la configuración de análisis y reconocimiento óptico de caracteres.
-ms.openlocfilehash: 65175950a430dd6b43cac207e16a17cf02d1bbbf
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Configure los valores de Microsoft Purview eDiscovery (Premium) que se aplican a todos los conjuntos de revisión en un caso. Esto incluye la configuración para el análisis y el reconocimiento óptico de caracteres.
+ms.openlocfilehash: f6cae054f111aa3aa4f8c7d4ab3c3323ce0498ff
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60153203"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949683"
 ---
-# <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Configurar las opciones de búsqueda y análisis en Advanced eDiscovery
+# <a name="configure-search-and-analytics-settings-in-ediscovery-premium"></a>Configuración de búsqueda y análisis en eDiscovery (Premium)
 
-Puede configurar las opciones de cada Advanced eDiscovery caso para controlar la siguiente funcionalidad.
+Puede configurar las opciones para cada caso de exhibición de documentos electrónicos (Premium) de Microsoft Purview para controlar la siguiente funcionalidad.
 
 - Casi duplicados y subprocesos de correo electrónico
 
@@ -40,27 +40,27 @@ Puede configurar las opciones de cada Advanced eDiscovery caso para controlar la
 
 Para configurar las opciones de búsqueda y análisis de un caso:
 
-1. En la página **eDiscovery avanzado**, seleccione el caso.
+1. En la página **eDiscovery (Premium),** seleccione el caso.
 
 2. En la pestaña **Configuración**, en **Búsqueda y análisis**, haga clic en **Seleccionar**.
 
    Se muestra la página de configuración del caso. Esta configuración se aplica a todos los conjuntos de revisión en un caso.
 
-   ![Configure las opciones de análisis y búsqueda para un Advanced eDiscovery caso.](../media/AeDCaseSettings.png)
+   ![Configure los valores de análisis y búsqueda para un caso de exhibición de documentos electrónicos (Premium).](../media/AeDCaseSettings.png)
 
 ## <a name="near-duplicates-and-email-threading"></a>Casi duplicados y subprocesos de correo electrónico
 
-En esta sección, puede establecer parámetros para la detección de duplicados, la detección cercana a duplicados y el subproceso de correo electrónico. Para obtener más información, vea [Near duplicate detection](near-duplicate-detection-in-advanced-ediscovery.md) and Email [threading](email-threading-in-advanced-ediscovery.md).
+En esta sección, puede establecer parámetros para la detección de duplicados, la detección de duplicados cercana y el subproceso de correo electrónico. Para obtener más información, vea [Near duplicate detection (Detección de duplicados cercanos)](near-duplicate-detection-in-advanced-ediscovery.md) y [Email threading (Subprocesos de correo electrónico](email-threading-in-advanced-ediscovery.md)).
 
-- **Cerca de duplicados/subprocesos de correo electrónico:** Cuando se activa, la detección de duplicados, la detección cercana a duplicados y el subproceso de correo electrónico se incluyen como parte del flujo de trabajo al ejecutar análisis en los datos de un conjunto de revisión.
+- **Subprocesos de correo electrónico o duplicados cercanos:** Cuando está activado, la detección de duplicados, la detección casi duplicada y el subproceso de correo electrónico se incluyen como parte del flujo de trabajo al ejecutar análisis en los datos de un conjunto de revisión.
 
-- **Umbral de similitud de documento y correo electrónico:** Si el nivel de similitud de dos documentos está por encima del umbral, ambos documentos se colocarán en el mismo conjunto casi duplicado.
+- **Umbral de similitud de documentos y correo electrónico:** Si el nivel de similitud de dos documentos está por encima del umbral, ambos documentos se colocan en el mismo conjunto casi duplicado.
 
-- **Número mínimo/máximo de palabras:** Esta configuración especifica que los duplicados cercanos y el análisis de subprocesos de correo electrónico solo se realizan en documentos que tienen al menos el número mínimo de palabras y, como mucho, el número máximo de palabras.
+- **Número mínimo o máximo de palabras:** Esta configuración especifica que los análisis de subprocesos de correo electrónico y duplicados cercanos solo se realizan en documentos que tienen al menos el número mínimo de palabras y, como máximo, el número máximo de palabras.
 
 ## <a name="themes"></a>Temas
 
-En esta sección, puede establecer parámetros para temas. Para obtener más información, vea [Temas](themes-in-advanced-ediscovery.md).
+En esta sección, puede establecer parámetros para los temas. Para obtener más información, vea [Temas](themes-in-advanced-ediscovery.md).
 
 - **Temas:** Cuando está activado, la agrupación en clústeres de temas se realiza como parte del flujo de trabajo al ejecutar análisis en los datos de un conjunto de revisión.
 
@@ -68,32 +68,32 @@ En esta sección, puede establecer parámetros para temas. Para obtener más inf
 
 - **Incluir números en temas:** Cuando está activado, los números (que identifican un tema) se incluyen al generar temas. 
 
-- **Ajustar el número máximo de temas dinámicamente:** En determinadas situaciones, es posible que no haya suficientes documentos en un conjunto de revisión para producir el número deseado de temas. Cuando se habilita esta configuración, la exhibición avanzada de documentos electrónicos ajusta el número máximo de temas dinámicamente en lugar de intentar exigir el número máximo de temas.
+- **Ajuste el número máximo de temas dinámicamente:** En determinadas situaciones, es posible que no haya suficientes documentos en un conjunto de revisión para generar el número deseado de temas. Cuando esta configuración está habilitada, eDiscovery (Premium) ajusta el número máximo de temas dinámicamente en lugar de intentar aplicar el número máximo de temas.
 
 ## <a name="review-set-query"></a>Consulta de un conjunto de revisión
 
-Si selecciona la casilla **Crear** automáticamente una búsqueda guardada para revisión después de análisis, Advanced eDiscovery genera automáticamente una consulta de conjunto de revisión denominada **Para revisión.** 
+Si activa la casilla **Crear automáticamente una búsqueda guardada después del análisis**, eDiscovery (Premium) genera automáticamente una consulta de conjunto de revisión denominada **For Review.** 
 
-![Consulta de generación automática Para revisión.](../media/AeDForReviewQuery.png)
+![Consulta generada automáticamente para la revisión.](../media/AeDForReviewQuery.png)
 
-Esta consulta filtra básicamente los elementos duplicados del conjunto de revisión. Esto le permite revisar los elementos únicos del conjunto de revisión. Esta consulta se crea solo al ejecutar análisis para un conjunto de revisión en el caso. Para obtener más información, acerca de las consultas de conjunto de revisión, vea [Consultar los datos de un conjunto de revisión](review-set-search.md).
+Esta consulta filtra básicamente los elementos duplicados del conjunto de revisión. Esto le permite revisar los elementos únicos del conjunto de revisión. Esta consulta se crea solo al ejecutar análisis para un conjunto de revisión en el caso. Para obtener más información, sobre las consultas de conjuntos de revisión, consulte [Consulta de los datos de un conjunto de revisión](review-set-search.md).
 
 ## <a name="ignore-text"></a>Omitir texto
 
-Hay situaciones en las que cierto texto disminuirá la calidad de los análisis, como los largos avisos de declinación de responsabilidades que se agregan a los mensajes de correo electrónico independientemente del contenido del correo electrónico. Si sabe de texto que debe omitirse, puede excluirlo del análisis especificando la cadena de texto y la función de análisis (casi duplicados, conversación por correo electrónico, temas y relevancia) para las que se debe excluir el texto. También se admite el uso de expresiones regulares (RegEx) como texto omitido.
+Hay situaciones en las que cierto texto disminuirá la calidad del análisis, como largas declinaciones de responsabilidades que se agregan a los mensajes de correo electrónico independientemente del contenido del correo electrónico. Si sabe de texto que debe omitirse, puede excluirlo del análisis especificando la cadena de texto y la función de análisis (casi duplicados, conversación por correo electrónico, temas y relevancia) para las que se debe excluir el texto. También se admite el uso de expresiones regulares (RegEx) como texto omitido.
 
 ## <a name="optical-character-recognition-ocr"></a>Reconocimiento óptico de caracteres (OCR)
 
-Cuando esta configuración está activada, el procesamiento ocr se ejecutará en archivos de imagen. El procesamiento de OCR se ejecuta en las siguientes situaciones:
+Cuando esta configuración está activada, el procesamiento de OCR se ejecutará en archivos de imagen. El procesamiento de OCR se ejecuta en las siguientes situaciones:
 
-- Cuando los custodios y [los orígenes](non-custodial-data-sources.md) de datos no custodiados se agregan a un caso. Cuando se aplica OCR a los archivos de imagen, el texto de esos archivos se puede buscar durante una colección. El procesamiento de OCR se realiza durante el [proceso de indización](indexing-custodian-data.md) avanzada. OCR solo se ejecuta en los elementos que se procesan durante la indización avanzada. Por ejemplo, si se procesa un archivo PDF de gran tamaño que se indexó parcialmente o que tuvo otros errores de indización durante la indización avanzada, el archivo también tendrá ocr aplicado. En otras palabras, el procesamiento de OCR solo se produce en archivos que se indizan de nuevo durante el proceso de indización avanzada. Esto significa que puede haber situaciones en las que los custodios se agregan a un caso, pero algunos datos adjuntos de correo electrónico no se procesarán para OCR porque esos archivos no se procesan durante la indización avanzada.
+- Cuando los custodios y los [orígenes de datos que no son de custodia](non-custodial-data-sources.md) se agregan a un caso. Cuando se aplica OCR a los archivos de imagen, el texto de esos archivos se puede buscar durante una colección. El procesamiento de OCR se realiza durante el proceso [de indexación avanzada](indexing-custodian-data.md) . OCR solo se ejecuta en elementos que se procesan durante la indexación avanzada. Por ejemplo, si durante la indexación avanzada se procesa un archivo PDF de gran tamaño parcialmente indexado o que tenía otros errores de indexación, el archivo también tendrá aplicado OCR. En otras palabras, el procesamiento de OCR solo se produce en los archivos que se vuelven a indexar durante el proceso de indexación avanzada. Esto significa que puede haber situaciones en las que los custodios se agregan a un caso, pero algunos datos adjuntos de correo electrónico no se procesarán para OCR porque esos archivos no se procesan durante la indexación avanzada.
 
-- Cuando se agrega contenido de otros orígenes de datos (que no están asociados con un custodio y se agregan al caso en un origen de datos que no es de custodia) a un conjunto de opiniones.
+- Cuando el contenido de otros orígenes de datos (que no están asociados a un custodio y que se agregan al caso en un origen de datos que no es de custodia) se agrega a un conjunto de revisión.
 
-Después de agregar datos a un conjunto de revisión, el texto de la imagen se puede revisar, buscar, etiquetar y analizar. Puede ver el texto extraído en el visor de texto del archivo de imagen seleccionado en el conjunto de revisión. Para más información vea:
+Una vez agregados los datos a un conjunto de revisión, se puede revisar, buscar, etiquetar y analizar el texto de la imagen. Puede ver el texto extraído en el Visor de texto del archivo de imagen seleccionado en el conjunto de revisión. Para más información, vea:
 
 - [Clasificación avanzada de los datos de administración](indexing-custodian-data.md)
 
 - [Agregar los resultados de búsqueda a un conjunto de revisión](add-data-to-review-set.md#optical-character-recognition)
 
-- [Tipos de archivo de imagen compatibles](supported-filetypes-ediscovery20.md#image)
+- [Tipos de archivo de imagen admitidos](supported-filetypes-ediscovery20.md#image)

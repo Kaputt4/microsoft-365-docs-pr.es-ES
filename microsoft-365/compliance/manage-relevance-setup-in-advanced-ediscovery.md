@@ -1,5 +1,5 @@
 ---
-title: Administrar la configuración de la relevancia en eDiscovery avanzado
+title: Administrar la configuración de Relevancia en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,22 +15,22 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 ROBOTS: NOINDEX, NOFOLLOW
-description: Lea las recomendaciones para configurar el entrenamiento de Relevancia en eDiscovery avanzado con el fin de puntuar archivos según su relevancia y generar resultados de análisis.
-ms.openlocfilehash: bed912c0631511e9d3d4839e5d6925de79554163
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Lea las recomendaciones para configurar el entrenamiento de Relevancia en eDiscovery (Premium) con el fin de puntuar archivos según su relevancia y generar resultados de análisis.
+ms.openlocfilehash: 66afbb3b8e7d8c2a4e266aa7fb63dc8434f9c8a6
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60194422"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946031"
 ---
-# <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>Gestionar la configuración de la relevancia en Advanced eDiscovery (clásico)
+# <a name="manage-relevance-setup-in-ediscovery-premium-classic"></a>Administrar la configuración de Relevancia en eDiscovery (Premium) (clásico)
 
 > [!NOTE]
-> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Para usar eDiscovery (Premium) de Microsoft Purview, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery (Premium), puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
- La tecnología Relevancia de eDiscovery avanzado usa software guiado por expertos para puntuar archivos según su relevancia. Relevancia de eDiscovery avanzado puede usarse para la evaluación temprana de casos, la selección y la revisión de archivos de muestra. 
+ La tecnología Relevancia de eDiscovery (Premium) utiliza software guiado por expertos para puntuar archivos según su relevancia. Relevancia de eDiscovery (Premium) puede usarse para la evaluación temprana de casos (ECA), la selección y la revisión de archivos de muestra. 
   
- En eDiscovery avanzado, se incluyen componentes para el entrenamiento de Relevancia y para el etiquetado de archivos relevantes para un caso. eDiscovery avanzado aprende de las muestras entrenadas de archivos relevantes y no relevantes para asignar puntuaciones de relevancia a cada archivo y, además, genera resultados de análisis que pueden usarse durante y después del proceso de revisión de archivos. 
+ En eDiscovery (Premium), se incluyen componentes para el entrenamiento de Relevancia y para el etiquetado de archivos relevantes para un caso. eDiscovery (Premium) aprende de las muestras entrenadas de archivos relevantes y no relevantes para asignar puntuaciones de relevancia a cada archivo y, además, genera resultados de análisis que pueden usarse durante y después del proceso de revisión de archivos. 
   
 ## <a name="guidelines-for-setting-up-relevance-training"></a>Directrices para configurar el entrenamiento de Relevancia
 
@@ -44,17 +44,17 @@ ms.locfileid: "60194422"
   
   - Determine si cada grupo de archivos es relevante solo para un asunto específico.
 
-  - Si se describe un problema de forma demasiado amplia, es posible que eDiscovery avanzado muestre demasiados archivos que no sean relevantes. Si se describe un problema de forma demasiado reducida, es posible que el proceso de entrenamiento de Relevancia tarde más tiempo en completarse. 
+  - Si se describe un problema de forma demasiado amplia, es posible que eDiscovery (Premium) muestre demasiados archivos que no sean relevantes. Si se describe un problema de forma demasiado reducida, es posible que el proceso de entrenamiento de Relevancia tarde más tiempo en completarse. 
 
-  - Durante cada ciclo de entrenamiento de Relevancia, eDiscovery avanzado se centra en un único asunto activo y, en consecuencia, muestra los resultados de ejemplo provisionales.
+  - Durante cada ciclo de entrenamiento de Relevancia, eDiscovery (Premium) se centra en un único asunto activo y, en consecuencia, muestra los resultados de ejemplo provisionales.
 
   - En un escenario de varios asuntos, el modo Muestreo permite seleccionar los archivos que se incluirán en el procesamiento. Los asuntos definidos como “Desactivados” no se procesarán hasta que se cambie el modo de Muestreo. Un asunto puede estar “inactivo” o “activo” para solo un experto.
 
-  - eDiscovery avanzado puede usarse para generar archivos de privilegios de candidatos. Configure un asunto separado por privilegio. Si es posible, entrene y seleccione primero para relevancia y, después, realice el entrenamiento para privilegios solo en el conjunto seleccionado (vuelva a cargar el conjunto seleccionado como un caso separado). 
+  - eDiscovery (Premium) puede usarse para generar archivos de privilegios de candidatos. Configure un asunto separado por privilegio. Si es posible, entrene y seleccione primero para relevancia y, después, realice el entrenamiento para privilegios solo en el conjunto seleccionado (vuelva a cargar el conjunto seleccionado como un caso separado). 
 
   - El cálculo por lotes solo puede realizarse cuando no haya muestras abiertas (al hacer clic en Cálculo por lotes, se mostrará una lista de usuarios con muestras abiertas). Para “cerrar” las muestras de otros usuarios (esto solo puede realizarse si los usuarios no están etiquetando esas muestras), un administrador puede usar la utilidad “Modificar relevancia” con la opción “Muestra de todos los usuarios”.
 
-- **Metadatos**: eDiscovery avanzado se centra en el contenido. No tiene en cuenta los metadatos como parte de los criterios de relevancia.
+- **Metadatos**: eDiscovery (Premium) se centra en el contenido. No tiene en cuenta los metadatos como parte de los criterios de relevancia.
 
 - **Riqueza**: si la riqueza de un asunto es inferior al 3 % después de la evaluación, puede inicializar el entrenamiento de Relevancia con archivos conocidos que sean relevantes y no relevantes.
 
@@ -62,7 +62,7 @@ ms.locfileid: "60194422"
 
 ## <a name="setting-up-case-issues"></a>Configurar asuntos de casos
 
-Los parámetros descritos en esta sección están disponibles en eDiscovery avanzado **Relevancia** \> **Configuración de Relevancia**.
+Los parámetros descritos en esta sección están disponibles en **Relevancia** \> **Configuración de Relevancia** de eDiscovery (Premium).
   
 - Los asuntos tienen que asignarse a un usuario que entrenará los archivos.
 

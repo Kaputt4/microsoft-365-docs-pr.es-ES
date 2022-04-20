@@ -1,5 +1,5 @@
 ---
-title: 'Detección casi duplicada: exhibición de documentos electrónicos'
+title: Detección casi duplicada en eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Use la detección casi duplicada para agrupar documentos textualmente similares al analizar datos de casos en Advanced eDiscovery.
+description: Use la detección casi duplicada para agrupar documentos textualmente similares al analizar datos de casos en eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: cbd01bd38f45a397a82a8db3774997349f4eec88
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f7976f5fdf023c30f7f96264ecc2b744656e9091
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193212"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949419"
 ---
-# <a name="near-duplicate-detection-in-advanced-ediscovery"></a>Casi detección de duplicados en Advanced eDiscovery
+# <a name="near-duplicate-detection-in-ediscovery-premium"></a>Detección de duplicados casi en eDiscovery (Premium)
 
-Considere la posibilidad de revisar un conjunto de documentos en el que un subconjunto se basa en la misma plantilla y tiene principalmente el mismo lenguaje reutilizable, con algunas diferencias aquí y allá. Si un revisor pudiera identificar este subconjunto, revisar uno de ellos exhaustivamente y revisar las diferencias para el resto, no se habría perdido ninguna información única mientras se tardaba solo una fracción de tiempo en leer todos los documentos que se cubren. La detección de casi duplicados agrupa documentos textualmente similares para ayudarlo a que su proceso de revisión sea más eficiente.
+Considere la posibilidad de revisar un conjunto de documentos en el que un subconjunto se basa en la misma plantilla y tiene principalmente el mismo lenguaje reutilizable, con algunas diferencias aquí y allí. Si un revisor pudiera identificar este subconjunto, revisar uno de ellos exhaustivamente y revisar las diferencias del resto, no habrían perdido ninguna información única mientras tardaban solo una fracción de tiempo que les habría llevado a leer todos los documentos que cubrir. La detección de casi duplicados agrupa documentos textualmente similares para ayudarlo a que su proceso de revisión sea más eficiente.
 
 ## <a name="how-does-it-work"></a>¿Cómo funciona?
 

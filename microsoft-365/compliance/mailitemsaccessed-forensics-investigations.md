@@ -1,5 +1,5 @@
 ---
-title: Usar auditoría avanzada para investigar cuentas comprometidas
+title: Usar Auditoría (Premium) para investigar cuentas en peligro
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use la acción de auditoría del buzón MailItemsAccessed para realizar investigaciones forenses de cuentas de usuarios comprometidas.
-ms.openlocfilehash: 8bfba164bf3bfb0f4fa4bea687d0fe040cff4836
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 658a4b079bd7909f8436867efd86d3ac04d61aa2
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806029"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946207"
 ---
-# <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Usar auditoría avanzada para investigar cuentas comprometidas
+# <a name="use-microsoft-purview-audit-premium-to-investigate-compromised-accounts"></a>Usar Auditoría de Microsoft Purview (Premium) para investigar cuentas en peligro
 
 Una cuenta de usuario comprometida (también denominada *adquisición de cuenta*) es un tipo de ataque en el que un atacante obtiene acceso a una cuenta de usuario y opera como el usuario. En ocasiones, estos tipos de ataques provocan más daño de lo que el atacante podría haber planeado. Al investigar cuentas de correo electrónico comprometidas, tiene que asumir que se han comprometido más datos de correo de los que se indican mediante el seguimiento de la presencia real del atacante. Según el tipo de datos de los mensajes de correo electrónico, tiene que asumir que la información confidencial se ha visto comprometida o puede enfrentarse a sanciones, a menos que pueda demostrar que la información confidencial no se ha expuesto. Por ejemplo, las organizaciones reguladas por HIPAA se enfrentan a multas considerables si hay evidencia de que la información sanitaria del paciente (PHI) se ha expuesto. En estos casos, es poco probable que los atacantes estén interesados en la PHI, pero las organizaciones deben informar de las vulneraciones de datos, a menos que puedan probar lo contrario.
 
@@ -31,7 +31,7 @@ Para ayudarle a investigar las cuentas de correo electrónico en peligro, estamo
 
 ## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>La acción de auditoría de buzones MailItemsAccessed
 
-La nueva acción MailItemsAccessed forma parte de la nueva función de [Auditoría avanzada](advanced-audit.md). Forma parte de las [auditorías del buzón de Exchange](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) y está habilitada de forma predeterminada para los usuarios que tienen asignada una licencia de Office 365 o Microsoft 365 E5 o para las organizaciones con una suscripción al complemento de Cumplimiento de Microsoft 365 E5.
+La nueva acción MailItemsAccessed forma parte de la nueva funcionalidad de [Auditoría (Premium)](advanced-audit.md). Forma parte de las [auditorías del buzón de Exchange](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) y está habilitada de forma predeterminada para los usuarios que tienen asignada una licencia de Office 365 o Microsoft 365 E5 o para las organizaciones con una suscripción al complemento de Cumplimiento de Microsoft 365 E5.
 
 La acción de auditoría de buzones MailItemsAccessed abarca todos los protocolos de correo: POP, IMAP, MAPI, EWS, Exchange ActiveSync y REST. También cubre los dos tipos de acceso al correo: *sincronización* y *enlace*.
 

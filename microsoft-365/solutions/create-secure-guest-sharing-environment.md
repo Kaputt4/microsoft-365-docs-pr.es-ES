@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga más información sobre las opciones disponibles para crear un entorno seguro de uso compartido para invitados en Microsoft 365, al proporcionar accesos de invitado para mejorar la colaboración.
-ms.openlocfilehash: 13190f2dba0f2cb1f4817a1a831b8d78359e1b81
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 5b6f27bd81a47a92926cebeef89de11ed78fcd3d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63715149"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64948361"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Crear un entorno seguro de uso compartido para invitados
 
@@ -208,13 +208,13 @@ Cómo configurar una directiva de tiempo de espera de sesión para invitado
 
 ## <a name="create-a-sensitive-information-type-for-a-highly-sensitive-project"></a>Crear un tipo de información confidencial para un proyecto altamente confidencial.
 
-Los tipos de información confidencial son cadenas predefinidas que se pueden usar en flujos de trabajo de directiva para aplicar requisitos de cumplimiento. El Centro de cumplimiento de Microsoft 365 incluye más de 100 tipos de información confidencial, como números de licencia de conducir, números de tarjeta de crédito, números de cuentas bancarias, etc.
+Los tipos de información confidencial son cadenas predefinidas que se pueden usar en flujos de trabajo de directiva para aplicar requisitos de cumplimiento. El portal de cumplimiento de Microsoft Purview incluye más de cien tipos de información confidencial, tales como números de permisos de conducir, de tarjetas de crédito, de cuentas bancarias, etc.
 
 Puede crear tipos de información confidencial personalizados para ayudar a administrar el contenido específico de su organización. En este ejemplo, vamos a crear un tipo de información confidencial personalizado para un proyecto altamente confidencial. Podemos usar este tipo de información confidencial para aplicar automáticamente una etiqueta de confidencialidad.
 
 Cómo crear un tipo de información confidencial
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), en el panel de navegación izquierdo, expanda **Clasificación** y, a continuación, haga clic en **Tipos de información confidencialidad**.
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), en el panel de navegación izquierdo, expanda **Clasificación** y, a continuación, haga clic en **Tipos de información confidencialidad**.
 2. Haga clic en **Crear**.
 3. En **Nombre** y **Descripción**, escriba **Proyecto Saturno** y haga clic en **Siguiente**.
 4. Haga clic en **Agregar un elemento**.
@@ -232,7 +232,7 @@ Si utiliza etiquetas de confidencialidad en la organización, puede aplicar auto
 
 Crear una directiva de etiquetado automático
 
-1. Abra el [Centro de administración de Cumplimiento de Microsoft 365](https://compliance.microsoft.com).
+1. Abra el [centro de administración de Microsoft Purview](https://compliance.microsoft.com).
 2. En el panel de navegación izquierdo, haga clic en **Protección de la información**.
 3. En la pestaña **Etiquetado automático**, haga clic en **Crear una directiva de etiquetado automático**.
 4. En la página **Elegir la información a la que desea aplicar esta etiqueta**, elija **Personalizado** y haga clic en **Siguiente**.
@@ -258,11 +258,11 @@ Con la directiva en vigor, cuando un usuario escriba "Proyecto Saturno" en un do
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Crear una directiva DLP para retirar el acceso de un invitado a archivos altamente confidenciales
 
-Puede usar la [prevención de pérdida de datos (DLP)](../compliance/dlp-learn-about-dlp.md) para evitar que los invitados realicen un uso compartido no deseado de contenido confidencial. La prevención de pérdida de datos puede actuar en función de la etiqueta de confidencialidad de un archivo y eliminar el acceso de invitado.
+Puede usar [Prevención de pérdida de datos (DLP) de Microsoft Purview](../compliance/dlp-learn-about-dlp.md) para evitar que los invitados compartan contenido confidencial. La prevención de pérdida de datos puede actuar en función de la etiqueta de confidencialidad de un archivo y eliminar el acceso de invitado.
 
 Crear una regla DLP
 
-1. En el centro de administración del centro de cumplimiento de Microsoft 365, vaya a [Prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention).
+1. En el centro de administración de Microsoft Purview, vaya a la [página de prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention).
 2. Haga clic en **Crear directiva**.
 3. Elija **Personalizado** y haga clic en **Siguiente**.
 4. Escriba el nombre de la directiva y haga clic en **Siguiente**.

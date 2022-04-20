@@ -19,12 +19,12 @@ search.appverid:
 description: Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4024640173d6cbbf6817d3fa2b1c24cb7264833c
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 3b16e96e85d6ee154912535ecf0bac4ac5ba6fac
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64470865"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947767"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Supervisar pérdidas de datos personales
 
@@ -37,7 +37,7 @@ Existen muchas herramientas que pueden usarse para supervisar el uso y transport
 
 En la ilustración:
 
-- Comience con los informes de prevención de pérdida de datos de Microsoft 365 para supervisar datos personales en SharePoint Online, OneDrive para la Empresa y correo electrónico en tránsito. Estos informes proporcionan mayor nivel de detalle de supervisión de datos personales. No obstante, estos informes no incluyen todos los servicios de Office 365.
+- Comience con los informes de prevención de pérdida de datos de Microsoft Purview para supervisar datos personales en SharePoint Online, OneDrive para la Empresa y correo electrónico en tránsito. Estos informes proporcionan mayor nivel de detalle para la supervisión de datos personales. No obstante, los informes no incluyen todos los servicios de Office 365.
 
 - Después, use directivas de alerta y el registro de auditoría para supervisar la actividad de los servicios. Configure la supervisión continua o busque el registro de auditoría para investigar un incidente. El registro de auditoría funciona en todos los servicios: Sway, Power BI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, actividad administrativa, OneDrive para la Empresa, SharePoint Online, correo electrónico en tránsito, y buzones de correo en reposo. Las conversaciones de Skype se incluyen en los buzones en reposo.
 
@@ -58,7 +58,7 @@ Puede usar los informes DLP para lo siguiente:
 
 Además, puede usar los informes DLP para ajustar las directivas DLP a medida que las ejecuta en modo de prueba.
 
-Los informes DLP están en el Centro de cumplimiento de Microsoft 365. Vaya a **Informes**\>**sección** de datos de la organización para encontrar **las coincidencias de la directiva DLP**, **los incidentes** y **falsos positivos e invalidaciones de informes** DLP.
+Los informes DLP se encuentran en el portal de cumplimiento de Microsoft Purview. Vaya a **Informes** \> en la sección de **datos de la organización** para encontrar los informes de **coincidencias con la directiva de DLP**, **incidentes de DLP** y **falsos positivos e invalidaciones de DLP**.
 
 Para obtener más información, consulte [Ver los informes de prevención de pérdida de datos](../../compliance/view-the-dlp-reports.md).
 
@@ -68,9 +68,9 @@ Para obtener más información, consulte [Ver los informes de prevención de pé
 
 El registro de auditoría contiene eventos de Exchange Online, SharePoint Online, OneDrive para la Empresa, Azure Active Directory, Microsoft Teams, Power BI, Sway y otros servicios.
 
-El portal de Microsoft 365 Defender y el Centro de cumplimiento de Microsoft 365 ofrecen dos formas de supervisar e informar en el registro de auditoría:
+El portal de Microsoft 365 Defender y el portal de cumplimiento de Microsoft Purview ofrecen dos formas de supervisar e informar en el registro de auditoría:
 
-- Configurar directivas de alerta, ver alertas y supervisar tendencias: Use la directiva de alerta y las herramientas del panel de alertas en el portal de Microsoft 365 Defender o el Centro de cumplimiento de Microsoft 365.
+- Configurar directivas de alerta, ver alertas y supervisar tendencias: use las herramientas de directiva de alertas y del panel de alertas en el portal de Microsoft 365 Defender o en el portal de cumplimiento de Microsoft Purview.
 - Buscar el registro de auditoría directamente: Busque todos los eventos en un intervalo de fechas definido, o filtre los resultados basándose en criterios específicos, como la acción, el usuario que la realizó o el objeto de destino.
 
 Los equipos de cumplimiento y seguridad de la información pueden usar estas herramientas para revisar proactivamente las actividades realizadas por los usuarios finales y los administradores en los servicios. Pueden configurarse alertas automáticas para enviar notificaciones por correo electrónico cuando se producen ciertas actividades en colecciones de sitios específicos, por ejemplo, cuando se comparte el contenido de los sitios que se sabe que contienen información relacionada con RGPD. Esto permite que los equipos contacten con usuarios para asegurarse de que se siguen directivas de seguridad corporativa, o que proporcionen aprendizaje adicional.

@@ -1,5 +1,5 @@
 ---
-title: Importar custodios a un Advanced eDiscovery caso
+title: Importar custodios a un caso de exhibición de documentos electrónicos (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,58 +14,86 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Use la herramienta de importación dto agregar rápidamente varios custodios y sus orígenes de datos asociados a un caso en Advanced eDiscovery.
-ms.openlocfilehash: 5e2ce53a227462a1fddd7785faf83355ca70611c
-ms.sourcegitcommit: 2e05865beeb2051fd9ece212a46179310b946a46
+description: Use la herramienta de importación masiva para agregar rápidamente varios custodios y sus orígenes de datos asociados a un caso en Microsoft Purview eDiscovery (Premium).
+ms.openlocfilehash: 7913c8674dc5560539196f34e323f05955a6850e
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "61148736"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64950365"
 ---
-# <a name="import-custodians-to-an-advanced-ediscovery-case"></a>Importar custodios a un Advanced eDiscovery caso
+# <a name="import-custodians-to-an-ediscovery-premium-case"></a>Importar custodios a un caso de exhibición de documentos electrónicos (Premium)
 
-Para Advanced eDiscovery casos en los que participan muchos custodios, puede importar varios custodios a la vez mediante un archivo CSV que contiene la información necesaria para agregarlos a un caso.
+Para los casos de exhibición de documentos electrónicos (Premium) de Microsoft Purview que implican a muchos custodios, puede importar varios custodios a la vez mediante un archivo CSV que contenga la información necesaria para agregarlos a un caso. La herramienta importar custodios también validará el archivo CSV antes de crear el trabajo de importación. Esto significa que puede corregir los errores en el archivo CSV en lugar de tener que esperar a que se complete el trabajo de importación antes de aprender que hay errores que impiden que un custodio se agregue al caso.
+
+## <a name="before-you-import-custodians"></a>Antes de importar custodios
+
+- Puede importar un máximo de 1000 custodios (filas) por archivo CSV.
+
+- Puede asociar hasta 500 orígenes de datos para cada custodio.  
+
+- Solo puede importar custodios que formen parte de la Azure Active Directory de su organización.
+
+- Cada custodio debe tener una dirección de correo electrónico única.
+
+- Para importar un buzón inactivo como custodio o para asociar un buzón inactivo a otro custodio, agregue un prefijo "." a la dirección de correo electrónico del buzón inactivo (por ejemplo, .sarad@contoso.onmmicrosoft.com).
 
 ## <a name="import-custodians"></a>Importar custodios
 
-1. Abra el Advanced eDiscovery y seleccione la **pestaña Orígenes de** datos.
+1. Abra el caso de eDiscovery (Premium) y seleccione la pestaña **Orígenes de datos**.
 
-2. Haga **clic en Agregar orígenes de datos** Importar  >  **custodios**.
+2. Haga clic en **Agregar origen de** >  **datosImportar custodios**.
 
-3. En la página desplegable Importar **custodios,** haga clic en **Descargar una** plantilla en blanco para descargar un archivo CSV de plantilla de custodia.
+3. En la página Obtener asistente para **plantillas** , haga clic en **Descargar la plantilla CSV** para descargar un archivo CSV de plantilla de custodio.
 
-   ![Descargue una plantilla CSV de la página desplegable Importar custodios.](../media/ImportCustodians1.png)
+   ![Descargue una plantilla CSV desde la página desplegable Importar custodios.](../media/ImportCustodians1.png)
 
-4. Agregue la información de custodia al archivo CSV y guárdela en el equipo local. Consulte la [sección Archivo CSV de](#custodian-csv-file) custodia para obtener información sobre las propiedades necesarias en el archivo CSV.
+4. Agregue la información de custodia al archivo CSV y guárdela en el equipo local. Consulte la sección [Archivo CSV del custodio](#custodian-csv-file) para obtener información detallada sobre las propiedades necesarias en el archivo CSV.
 
-5. Después de preparar el archivo CSV con la información  de custodia, vuelva a la pestaña Orígenes de datos y haga clic en **Agregar** orígenes de datos  >  **Importar custodios** de nuevo.
+5. Después de preparar el archivo CSV con la información del custodio, vuelva a la pestaña **Orígenes de datos** y haga clic en **Agregar origen** >  de **datosImportar custodios** de nuevo.
 
-6. En la página desplegable Importar **custodios,** haga clic en **Examinar** y, a continuación, cargue el archivo CSV que contiene la información del custodio.
+6. En la página Upload asistente para **archivos CSV**, haga clic en **Upload archivo csv** y, a continuación, cargue el archivo CSV que contiene la información del custodio.
 
-   Después de cargar el archivo CSV, se crea un trabajo denominado **BulkAddCustodian** y se muestra en la **pestaña** Trabajos. El trabajo valida a los custodios y sus orígenes de datos asociados y, a continuación, los agrega a la **página Orígenes** de datos del caso.
+   Después de cargar el archivo CSV, el asistente para importación valida el archivo CSV. Si existen errores de validación, el asistente muestra un banner de error con un vínculo para ver los errores.
 
-## <a name="custodian-csv-file"></a>Archivo CSV de custodia
+   ![Banner de error de validación con vínculo a más información.](../media/ImportCustodians2.png)
 
-Después de descargar la plantilla de custodia CSV, puede agregar custodios y su origen de datos en cada fila. Asegúrese de no cambiar los nombres de columna de la fila de encabezado. Use el tipo de carga de trabajo y las columnas de ubicación de carga de trabajo para asociar otros orígenes de datos a un administrador.
+   La información de error identifica la fila y la columna de la celda que contiene el error y sugiere una acción de corrección. Tiene que corregir cualquier error de validación y, a continuación, volver a cargar el archivo CSV fijo. El archivo CSV debe validarse correctamente para poder crear el trabajo de custodio de importación.
+
+7. Una vez que el archivo CSV se haya validado correctamente, haga clic en **Siguiente** y, a continuación, haga clic en **Importar** para iniciar el trabajo de importación.
+
+Después de iniciar el trabajo de importación, eDiscovery (Premium) hace lo siguiente:
+
+- Crea un trabajo denominado **BulkAddCustodian** en la pestaña **Trabajos** del caso.
+
+- Realiza la indexación avanzada de todos los orígenes de datos para cada custodio.
+
+- Coloca todos los orígenes de datos custodios en suspensión (si la propiedad **Is OnHold** del archivo CSV está establecida en TRUE)
+
+Una vez completado el trabajo del custodio de importación, los custodios y sus orígenes de datos asociados se agregan a la página **Orígenes de datos** del caso.
+
+## <a name="custodian-csv-file"></a>Archivo CSV de custodio
+
+Después de descargar la plantilla de custodio CSV, puede agregar custodios y sus orígenes de datos en cada fila. Asegúrese de no cambiar los nombres de columna de la fila de encabezado. Use el tipo de carga de trabajo y las columnas de ubicación de la carga de trabajo para asociar otros orígenes de datos a un custodio.
 
 | Nombre de columna|Descripción|
 |:------- |:------------------------------------------------------------|
-|**Contacto de custodiaEmail**     |Dirección de correo electrónico UPN del custodio. Por ejemplo, sarad@contoso.onmicrosoft.com.           |
-|**Exchange habilitado** | Valor TRUE/FALSE para incluir o no incluir el buzón del custodio.      |
-|**OneDrive habilitado** | Valor TRUE/FALSE para incluir o no incluir la cuenta OneDrive para la Empresa custodia. |
-|**Is OnHold**        | Valor TRUE/FALSE para indicar si se deben poner en espera los orígenes de datos de custodia. <sup>1</sup>     |
-|**Tipo Workload1**         |Valor de cadena que indica el tipo de origen de datos que se asociará con el custodio. Los valores posibles son: <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<sup>2</sup><br/>- YammerMailbox<sup>2</sup>| 
-|**Ubicación workload1**     | Según el tipo de carga de trabajo, esta sería la ubicación del origen de datos. Por ejemplo, la dirección de correo electrónico de un buzón Exchange o la dirección URL de un SharePoint sitio. |
+|**Contacto del custodioEmail**     |Dirección de correo electrónico UPN del custodio. Por ejemplo, sarad@contoso.onmicrosoft.com.           |
+|**Exchange habilitado** | Valor TRUE/FALSE para incluir o no el buzón del custodio.      |
+|**OneDrive habilitado** | Valor TRUE/FALSE para incluir o no la cuenta de OneDrive para la Empresa del custodio. |
+|**Is OnHold**        | Valor TRUE/FALSE para indicar si se van a poner en espera los orígenes de datos del custodio. <sup>1</sup>     |
+|**Tipo Workload1**         |Valor de cadena que indica el tipo de origen de datos que se va a asociar al custodio. Los valores posibles son: <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- <sup>TeamsMailbox2</sup><br/>- YammerMailbox2.<sup></sup> Los valores anteriores de estos tipos de carga de trabajo distinguen mayúsculas de minúsculas. El archivo CSV contiene columnas para tres tipos de carga de trabajo y sus ubicaciones de carga de trabajo correspondientes. Puede agregar un total de 500 tipos de carga de trabajo y ubicaciones.|
+|**Ubicación de Workload1**     | En función del tipo de carga de trabajo, esta sería la ubicación del origen de datos. Por ejemplo, la dirección de correo electrónico de un buzón de Exchange o la dirección URL de un sitio de SharePoint. |
 |||
 
 > [!NOTE]
-> <sup>1</sup> Cuando ponga más de 1.000 buzones o 100 sitios en espera, el sistema escalará automáticamente la retención de exhibición de documentos electrónicos según sea necesario. Esto significa que el sistema agregará automáticamente ubicaciones de datos a varias retenciones, en lugar de agregarlas a una sola retención. Sin embargo, todavía se aplica el límite de 10 000 retenciones de casos por organización. Para obtener más información acerca de los límites de retención, vea [Limits in Advanced eDiscovery](limits-ediscovery20.md#hold-limits).
+> <sup>1</sup> Si coloca más de 1000 buzones o 100 sitios en espera en un caso, el sistema escalará automáticamente la suspensión de eDiscovery según sea necesario. Esto significa que el sistema agrega automáticamente ubicaciones de datos a varias directivas de suspensión, en lugar de agregarlas a una sola directiva. Sin embargo, todavía se aplica el límite de 10 000 directivas de suspensión de casos por organización. Para obtener más información sobre los límites de suspensión, vea [Límites en eDiscovery (Premium)](limits-ediscovery20.md#hold-limits).
 <br>
-> <sup>2</sup> Cuando se incluyen las cargas de trabajo de TeamsMailbox y YammerMailbox en el archivo CSV, el sitio de grupo (TeamSite y YammerSite) se agregan automáticamente de forma predeterminada. No es necesario especificar TeamsSite y YammerSite por separado en el archivo CSV.
+> <sup>2</sup> Al incluir las cargas de trabajo TeamsMailbox y YammerMailbox en el archivo CSV, el sitio de grupo (TeamSite y YammerSite) se agrega automáticamente de forma predeterminada. No es necesario especificar TeamsSite y YammerSite por separado en el archivo CSV.
 
-Este es un ejemplo de un archivo CSV con información de custodia:<br/><br/>
+Este es un ejemplo de un archivo CSV con información del custodio:<br/><br/>
 
-|Contacto de custodiaEmail      | Exchange habilitado | OneDrive habilitado | Is OnHold | Tipo Workload1 | Ubicación workload1             |
+|Contacto del custodioEmail      | Exchange habilitado | OneDrive habilitado | Is OnHold | Tipo Workload1 | Ubicación de Workload1             |
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
 |robinc@contoso.onmicrosoft.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
 |pillarp@contoso.onmicrosoft.com | TRUE             | TRUE             | TRUE      | |  |
@@ -74,46 +102,4 @@ Este es un ejemplo de un archivo CSV con información de custodia:<br/><br/>
 ||||||
 
 > [!NOTE]
-> Para importar un buzón inactivo como custodio o asociar un buzón inactivo con otro custodio, agregue un prefijo "." a la dirección UPN del buzón inactivo.
-
-## <a name="custodian-and-data-source-validation"></a>Validación de custodia y origen de datos
-
-Después de cargar el archivo CSV de custodia, Advanced eDiscovery las siguientes acciones:
-
-1. Valida los custodios y sus orígenes de datos.
-
-2. Indiza todos los orígenes de datos de cada custodio y los pone en espera (si la propiedad **Is OnHold** del archivo CSV está establecida en TRUE).
-
-### <a name="custodian-validation"></a>Validación de custodia
-
-Actualmente, solo se admite la importación de custodios que se incluyen en el Azure Active Directory de la organización (Azure AD).
-
-La herramienta de importación de custodia busca y valida a los custodios mediante el valor UPN de la columna **ContactEmail** de custodia del archivo CSV. Los custodios validados se agregan automáticamente al caso y se enumeran en la **pestaña Orígenes de** datos del caso. Si no se puede validar un custodio, aparecen en el registro de errores  del trabajo BulkAddCustodian que aparece en la pestaña Trabajos en el caso. Los custodios no confirmados no se agregan al caso ni aparecen en la **pestaña Orígenes de** datos.
-
-### <a name="data-source-validation"></a>Validación del origen de datos
-
-Después de que los custodios se validan y se agregan al caso, se agregan cada buzón principal y OneDrive cuenta asociada a un custodio.
-
-Sin embargo, si no se encuentra ninguno de los otros orígenes de datos (como sitios de SharePoint, Microsoft Teams, grupos de Microsoft 365 o grupos de Yammer) asociados con  un custodio, ninguno de ellos se  asigna al custodio y el valor No validado se muestra en la columna Estado junto al custodio en los orígenes de datos   tab.
-
-Para agregar orígenes de datos validados para un custodio:
-
-1. En la **pestaña Orígenes de** datos, seleccione un custodio que contenga orígenes de datos que no se validan.
-
-2. En la página desplegable de custodia, desplácese hasta la sección Ubicaciones de custodia para ver los orígenes de datos validados y no validados asociados con el custodio. 
-
-3. Haga **clic en** Editar en la parte superior de la página desplegable para quitar orígenes de datos no válidos o agregar otros nuevos.
-
-4. Después de quitar orígenes de datos sin validar o agregar uno  nuevo, el valor **Active** se muestra en la columna Estado del custodio en la **pestaña Orígenes de** datos. Para agregar orígenes que anteriormente parecían no válidos, siga los pasos de corrección siguientes para agregarlos manualmente a un custodio.
-
-### <a name="remediating-invalid-data-sources"></a>Corrección de orígenes de datos no válidos
-
-Para agregar y asociar manualmente un origen de datos que no era válido anteriormente:
-
-1. En la **pestaña Orígenes de** datos, seleccione un custodio para agregar y asociar manualmente un origen de datos que no era válido anteriormente.
-
-2. Haga **clic en** Editar en la parte superior de la página desplegable para asociar buzones, sitios, Teams o Yammer grupos al custodio. Para ello, haga clic **en Editar** junto al tipo de ubicación de datos correspondiente.
-
-3. Haga **clic en** Siguiente para mostrar la página Configuración **de** retención y configurar la configuración de retención para los orígenes de datos que agregó.
-
-4. Haga **clic en** Siguiente para mostrar la página Revisar **custodios** y, a continuación, haga clic en **Enviar** para guardar los cambios.
+> Como se explicó anteriormente, agregue un prefijo "." a la dirección UPN de un buzón inactivo para importar un buzón inactivo como custodio o para asociar un buzón inactivo a otro custodio.

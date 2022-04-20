@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
+ms.date: 04/05/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,41 +17,41 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre cómo usar Advanced eDiscovery enviar y hacer un seguimiento de las notificaciones de retención legal a través del correo electrónico, así como supervisar el estado de las obligaciones.
-ms.openlocfilehash: 57cda6e88968fc90845965a8554f55d80bd3ded0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre cómo usar eDiscovery (Premium) para enviar y realizar un seguimiento de las notificaciones de suspensión legal a través del correo electrónico, así como supervisar el estado de las obligaciones.
+ms.openlocfilehash: 4be0781a273f842c043276a19688f36b96cfdb28
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175580"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947415"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Confirmar una notificación de retención
 
-Al responder a una solicitud o investigación reglamentaria, es posible que deba informar a los custodios de su obligación de conservar la información almacenada electrónicamente (ESI) y cualquier material que pueda ser relevante para un asunto legal activo o inminente. Una vez enviado, los equipos legales deben saber que cada custodio ha recibido, leído, comprendido y aceptado seguir las instrucciones dadas.
+Al responder a una solicitud o investigación reglamentaria, es posible que tenga que informar a los custodios de su obligación de conservar la información almacenada electrónicamente (ESI) y cualquier material que pueda ser relevante para un asunto legal activo o inminente. Una vez enviados, los equipos legales deben saber que cada custodio ha recibido, leído, entendido y aceptado seguir las instrucciones dadas.
 
-Para ayudar a reducir el tiempo, el costo y el esfuerzo de realizar un seguimiento con sus custodios, Advanced eDiscovery permite enviar y realizar un seguimiento de las notificaciones de retención legal a través del correo electrónico. Además de los avisos por correo electrónico, cada custodio tendrá acceso a un Portal de cumplimiento individualizado, lo que permite a los custodios mantenerse informados de los cambios en su estado de obligación.
+Para ayudar a reducir el tiempo, el costo y el esfuerzo de seguimiento con los custodios, eDiscovery (Premium) le permite enviar y realizar un seguimiento de las notificaciones de suspensión legal a través del correo electrónico. Además de los avisos por correo electrónico, cada custodio tendrá acceso a un portal de cumplimiento individualizado, lo que permite a los custodios mantenerse informados de los cambios en su estado de obligación.
 
 ## <a name="email-notifications"></a>Notificaciones de correo electrónico
 
-Una vez emitida una notificación de retención legal, cada custodio recibirá un correo electrónico único y personalizado que contiene el aviso de retención legal definido y las instrucciones agregadas. 
+Una vez emitida una notificación de suspensión legal, cada custodio recibirá un correo electrónico único y personalizado que contiene su notificación de suspensión legal definida e instrucciones agregadas. 
 
 > [!TIP]
-> Vea cómo puede usar el  [Editor](using-communications-editor.md) de comunicaciones integrado para permitir que los custodios reconozcan su aviso o accedan a su Portal de cumplimiento directamente desde su correo electrónico.
+> Vea cómo puede usar el  [Editor de comunicación](using-communications-editor.md) integrado para permitir que los custodios confirmen su notificación o accedan a su Portal de cumplimiento directamente desde su correo electrónico.
 
-En función de la configuración de la notificación de retención legal, los custodios pueden recibir los siguientes avisos: 
+En función de la configuración de la notificación de suspensión legal, los custodios pueden recibir los siguientes avisos: 
 
-- **Aviso de emisión:** El primer aviso enviado a su custodio. Este aviso contendrá las instrucciones de emisión y el aviso de retención anexado al final del mensaje.
+- **Aviso de emisión:** El primer aviso enviado a su custodio. Este aviso contendrá las instrucciones de emisión y el aviso de suspensión anexado al final del mensaje.
 
-- **Aviso de aviso:** Si está habilitada, se enviará un aviso a los custodios en función de la frecuencia e intervalo especificados. Los avisos seguirán en envío hasta que el custodio haya reconocido su aviso o hasta que se haya agotado el número de avisos.
+- **Aviso de aviso:** Si está habilitado, se enviará un aviso a los custodios en función de la frecuencia e intervalo especificados. Los avisos seguirán siendo enviados hasta que el custodio haya confirmado su aviso o hasta que se haya agotado el número de avisos.
 
-- **Aviso de escalación:** Si se habilita, se enviará un aviso de escalación a su administrador y a su administrador después de que se hayan agotado los avisos de aviso. El sistema enviará automáticamente avisos de escalamiento hasta que se haya completado el número especificado de escalaciones o hasta que el custodio reconozca su notificación de retención.
+- **Aviso de escalación:** Si está habilitado, se enviará un aviso de escalación a su custodio y a su administrador una vez agotados los avisos de aviso. El sistema enviará automáticamente avisos de escalación hasta que se haya completado el número especificado de escalaciones o hasta que el custodio confirme su notificación de suspensión.
 
-- **Aviso de reedición:** Durante el transcurso de una investigación, si el contenido del aviso de retención se actualiza, el aviso actualizado se enviará automáticamente al custodio.
+- **Notificación de reedición:** Durante el transcurso de una investigación, si se actualiza el contenido del aviso de suspensión, el aviso actualizado se enviará automáticamente al custodio.
 
-- **Aviso de lanzamiento:** Cuando un custodio se libere del caso, se le enviará el aviso de liberación. 
+- **Aviso de versión:** Cuando un custodio se libere del caso, se le enviará el aviso de liberación. 
 
 ## <a name="compliance-portal"></a>Portal de cumplimiento
 
-Además de las notificaciones por correo electrónico, cada custodio tendrá acceso a un portal de cumplimiento único. A través del portal, cada custodio puede ver, acceder y confirmar sus notificaciones de retención activas.
+Además de las notificaciones por correo electrónico, cada custodio tendrá acceso a un portal de cumplimiento único. A través del portal, cada custodio puede ver, acceder y confirmar sus notificaciones de suspensión activas.
 
 ![Portal de cumplimiento para un custodio.](../media/CustodianPortal.jpg)

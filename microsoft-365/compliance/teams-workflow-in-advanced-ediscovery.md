@@ -1,5 +1,5 @@
 ---
-title: Flujo de trabajo de Teams en eDiscovery avanzado
+title: flujo de trabajo de Teams en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,19 +13,19 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Obtenga información sobre cómo conservar, recopilar, revisar y exportar contenido de Microsoft Teams en Advanced eDiscovery.
-ms.openlocfilehash: 90c3ece3f6e8218771da9dbbb88fe5c32d9d7d94
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+description: Obtenga información sobre cómo conservar, recopilar, revisar y exportar contenido de Microsoft Teams en eDiscovery (Premium).
+ms.openlocfilehash: 21f6149d8a1c1114ab0d2d293af710690f74c6e5
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847023"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64948405"
 ---
-# <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>flujo de trabajo de Advanced eDiscovery para el contenido de Microsoft Teams
+# <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Flujo de trabajo de eDiscovery (Premium) para el contenido de Microsoft Teams
 
-En este artículo se proporciona un conjunto completo de procedimientos, directrices y procedimientos recomendados para usar Advanced eDiscovery para conservar, recopilar, revisar y exportar contenido de Microsoft Teams. El objetivo de este artículo es ayudarle a optimizar el flujo de trabajo de eDiscovery para Teams contenido.
+En este artículo se proporciona un conjunto completo de procedimientos, directrices y procedimientos recomendados para usar microsoft Purview eDiscovery (Premium) con el fin de conservar, recopilar, revisar y exportar contenido de Microsoft Teams. El objetivo de este artículo es ayudarle a optimizar el flujo de trabajo de eDiscovery para Teams contenido.
 
-Hay cinco categorías de contenido Teams que puede recopilar y procesar mediante Advanced eDiscovery:
+Hay cinco categorías de contenido Teams que puede recopilar y procesar mediante eDiscovery (Premium):
 
 - **Teams chats 1:1**. Mensajes de chat, publicaciones y datos adjuntos compartidos en una conversación Teams entre dos personas.  Teams chats 1:1 también se denominan *conversaciones*.
 
@@ -39,7 +39,7 @@ Hay cinco categorías de contenido Teams que puede recopilar y procesar mediante
 
 ## <a name="where-teams-content-is-stored"></a>Dónde se almacena Teams contenido
 
-Un requisito previo para administrar Teams contenido en Advanced eDiscovery es comprender el tipo de contenido de Teams que puede recopilar, procesar y revisar en Advanced eDiscovery y dónde se almacena ese contenido en Microsoft 365. En la tabla siguiente se enumeran Teams tipo de contenido y dónde se almacena cada uno.
+Un requisito previo para administrar Teams contenido en eDiscovery (Premium) es comprender el tipo de contenido de Teams que puede recopilar, procesar y revisar en eDiscovery (Premium) y dónde se almacena ese contenido en Microsoft 365. En la tabla siguiente se enumeran Teams tipo de contenido y dónde se almacena cada uno.
 
 |&nbsp;|Ubicación de mensajes y publicaciones de chat|Ubicación de archivos y datos adjuntos|
 |---|---|---|
@@ -54,7 +54,7 @@ Un requisito previo para administrar Teams contenido en Advanced eDiscovery es c
 
 ## <a name="create-a-case-for-teams-content"></a>Creación de un caso para Teams contenido
 
-El primer paso para administrar Teams contenido en Advanced eDiscovery es crear un caso con el nuevo formato de caso optimizado para administrar Teams contenido. Estas son las ventajas de usar el nuevo formato de caso para Teams contenido:
+El primer paso para administrar Teams contenido en eDiscovery (Premium) es crear un caso con el nuevo formato de caso optimizado para administrar Teams contenido. Estas son las ventajas de usar el nuevo formato de caso para Teams contenido:
 
 - Compatibilidad con el subproceso de conversación, en el que los mensajes adicionales de la misma conversación que incluyen elementos con capacidad de respuesta se recopilan y agregan automáticamente a los conjuntos de revisión.
 
@@ -62,15 +62,15 @@ El primer paso para administrar Teams contenido en Advanced eDiscovery es crear 
 
 - Las colecciones de hasta 1 TB se pueden agregar a conjuntos de revisión, lo que le permite recopilar e importe grandes cantidades de Teams contenido en un caso.
 
-Para obtener más información sobre el aumento de los límites de casos, consulte [Uso del nuevo formato de caso en Advanced eDiscovery](advanced-ediscovery-new-case-format.md).
+Para obtener más información sobre el aumento de los límites de casos, vea [Uso del nuevo formato de caso en eDiscovery (Premium)](advanced-ediscovery-new-case-format.md).
 
 Para crear un caso:
 
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión.
 
-2. En el panel de navegación izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **eDiscovery > Avanzadas**.
+2. En el panel de navegación izquierdo del portal de cumplimiento de Microsoft Purview, haga clic en **eDiscovery > Avanzado**.
 
-3. En la página **Advanced eDiscovery**, haga clic en la pestaña **Casos** y, a continuación, haga clic en **Crear un caso**.
+3. En la página **eDiscovery (Premium),** haga clic en la pestaña **Casos** y, a continuación, haga clic en **Crear un caso**.
 
    Se muestra la página de control flotante **Nuevo caso de exhibición de** documentos electrónicos. La sección **Formato de** caso proporciona la opción de crear un caso con el nuevo formato de mayúsculas y minúsculas.
 
@@ -84,7 +84,7 @@ El siguiente paso es identificar a los usuarios que son los custodios de datos d
 
 Para agregar custodios a un caso y conservar orígenes de datos de custodia:
 
-1. Vaya al caso de Advanced eDiscovery que creó en la sección anterior y, a continuación, haga clic en **Orígenes de datos**.
+1. Vaya al caso de eDiscovery (Premium) que creó en la sección anterior y, a continuación, haga clic en **Orígenes de datos**.
 
 2. En la página **Orígenes de datos**, haga clic en **Agregar origen de** >  **datosAgregar nuevos custodios**.
 
@@ -113,11 +113,11 @@ Para agregar custodios a un caso y conservar orígenes de datos de custodia:
 
 7. En la página **Configuración de suspensión** , haga clic en **Siguiente** para revisar la configuración de los custodios. Haga clic en **Enviar** para agregar los custodios al caso.
 
-Para obtener más información sobre cómo agregar y conservar orígenes de datos en un caso de Advanced eDiscovery, consulte:
+Para obtener más información sobre cómo agregar y conservar orígenes de datos en un caso de exhibición de documentos electrónicos (Premium), vea:
 
-- [Adición de custodios a un caso de Advanced eDiscovery](add-custodians-to-case.md)
+- [Agregar custodios a un caso de exhibición de documentos electrónicos (Premium)](add-custodians-to-case.md)
 
-- [Adición de orígenes de datos sin custodia a un caso de Advanced eDiscovery](non-custodial-data-sources.md)
+- [Adición de orígenes de datos sin custodia a un caso de eDiscovery (Premium)](non-custodial-data-sources.md)
 
 ## <a name="collect-teams-content-and-add-to-review-set"></a>Recopilar Teams contenido y agregarlo al conjunto de revisión
 
@@ -133,7 +133,7 @@ También tiene la opción de no ejecutar una colección de borradores y agregar 
 
 Para crear una colección de contenido Teams:
 
-1. Vaya al caso de Advanced eDiscovery al que agregó los custodios en la sección anterior y, a continuación, haga clic en **Colecciones**.
+1. Vaya al caso de eDiscovery (Premium) al que agregó los custodios en la sección anterior y, a continuación, haga clic en **Colecciones**.
 
 2. En la página **Colecciones**, seleccione **Nueva** **colecciónStandard** > .
 
@@ -177,15 +177,15 @@ Para crear una colección de contenido Teams:
 
 ## <a name="review-teams-content-in-a-review-set"></a>Revisar Teams contenido de un conjunto de revisión
 
-Después de agregar colecciones de contenido de Teams a un conjunto de revisión, el siguiente paso es revisar el contenido por su relevancia para la investigación y seleccionarlo si es necesario. Un requisito previo importante para revisar Teams contenido es comprender cómo Advanced eDiscovery procesa Teams conversaciones de chat y datos adjuntos al agregarlos a un conjunto de revisión. Este procesamiento de Teams contenido da como resultado tres cosas:
+Después de agregar colecciones de contenido de Teams a un conjunto de revisión, el siguiente paso es revisar el contenido por su relevancia para la investigación y seleccionarlo si es necesario. Un requisito previo importante para revisar Teams contenido es comprender cómo eDiscovery (Premium) procesa Teams conversaciones de chat y datos adjuntos al agregarlos a un conjunto de revisión. Este procesamiento de Teams contenido da como resultado tres cosas:
 
 - **[Agrupación](#grouping)**. Cómo se agrupan y presentan los mensajes, las publicaciones y las respuestas Teams conversaciones en el conjunto de revisión. Esto también incluye datos adjuntos en conversaciones de chat que se extraen y agrupan dentro de la conversación.
 
-- **[Subprocesos de conversación de transcripción](#transcript-conversation-threading)**. Cómo Advanced eDiscovery determina el contenido adicional de una conversación que se va a recopilar para proporcionar contexto en torno a los elementos que coincidieron con los criterios de la colección.
+- **[Subprocesos de conversación de transcripción](#transcript-conversation-threading)**. Cómo eDiscovery (Premium) determina qué contenido adicional de una conversación se va a recopilar para proporcionar contexto en torno a los elementos que coincidieron con los criterios de colección.
 
-- **[Desduplicación](#deduplication-of-teams-content)**. Cómo Advanced eDiscovery controla el contenido de Teams duplicado.
+- **[Desduplicación](#deduplication-of-teams-content)**. Cómo eDiscovery (Premium) controla el contenido duplicado Teams.
 
-- **[Metadatos](#metadata-for-teams-content)**. Propiedades de metadatos que Advanced eDiscovery agrega a Teams contenido después de recopilarlo y agregarlo a un conjunto de revisión.
+- **[Metadatos](#metadata-for-teams-content)**. Propiedades de metadatos que eDiscovery (Premium) agrega a Teams contenido después de recopilarlo y agregarlo a un conjunto de revisión.
 
 Comprender la agrupación, el subproceso de conversación, la desduplicación y los metadatos de Teams le ayudarán a optimizar la revisión y el análisis del contenido de Teams. Esta sección también tiene [sugerencias para ver Teams contenido en un conjunto de revisión](#tips-for-viewing-teams-content-in-a-review-set).
 
@@ -227,9 +227,9 @@ En las capturas de pantalla siguientes se muestra un ejemplo de conversación en
 
 ### <a name="transcript-conversation-threading"></a>Subprocesos de conversación de transcripción
 
-La funcionalidad de subprocesos de conversación en el nuevo formato de caso en Advanced eDiscovery le ayuda a identificar el contenido contextual relacionado con los elementos que pueden ser relevantes para la investigación. Esta característica genera distintas vistas de conversación que incluyen mensajes de chat que preceden y siguen los elementos que coinciden con la consulta de búsqueda durante la recopilación. Esta funcionalidad le permite revisar de forma eficaz y rápida las conversaciones de chat completas (*llamadas conversaciones en subprocesos*) en Microsoft Teams. Como se explicó anteriormente, las conversaciones de chat se reconstruyen en archivos de transcripción HTML cuando Advanced eDiscovery agrega Teams contenido a un conjunto de revisión.
+La funcionalidad de subprocesos de conversación en el nuevo formato de caso en eDiscovery (Premium) le ayuda a identificar el contenido contextual relacionado con los elementos que pueden ser relevantes para la investigación. Esta característica genera distintas vistas de conversación que incluyen mensajes de chat que preceden y siguen los elementos que coinciden con la consulta de búsqueda durante la recopilación. Esta funcionalidad le permite revisar de forma eficaz y rápida las conversaciones de chat completas (*llamadas conversaciones en subprocesos*) en Microsoft Teams. Como se explicó anteriormente, las conversaciones de chat se reconstruyen en archivos de transcripción HTML cuando eDiscovery (Premium) agrega Teams contenido a un conjunto de revisión.
 
-Esta es la lógica usada por Advanced eDiscovery para incluir mensajes adicionales y respuestas a los archivos de transcripción que proporcionan contexto alrededor de los elementos que coinciden con la consulta de colección (denominada *elementos con capacidad de respuesta*) que usó al recopilar Teams contenido. Los distintos comportamientos de subprocesos se basan en los tipos de chats y en la consulta de búsqueda que se usa para recopilar los elementos con capacidad de respuesta. Hay dos escenarios comunes de recopilación:
+Esta es la lógica que usa eDiscovery (Premium) para incluir mensajes adicionales y archivos de transcripción de respuestas que proporcionan contexto alrededor de los elementos que coinciden con la consulta de colección (denominada *elementos con capacidad de respuesta*) que usó al recopilar Teams contenido. Los distintos comportamientos de subprocesos se basan en los tipos de chats y en la consulta de búsqueda que se usa para recopilar los elementos con capacidad de respuesta. Hay dos escenarios comunes de recopilación:
 
 - Consultas que usan parámetros de búsqueda, como palabras clave y pares property:value
 
@@ -244,7 +244,7 @@ Esta es la lógica usada por Advanced eDiscovery para incluir mensajes adicional
 
 En la lista siguiente se describe el comportamiento de desduplicación (y duplicación) al recopilar Teams contenido en un conjunto de revisión.
 
-- Cada archivo de transcripción agregado a un conjunto de revisión debe ser una asignación uno a uno al contenido almacenado en ubicaciones de datos. Esto significa que Advanced eDiscovery no recopila ningún contenido Teams que ya se haya agregado al conjunto de revisión. Si un mensaje de chat ya está recopilado en un conjunto de revisión, Advanced eDiscovery no agrega el mismo mensaje desde la misma ubicación de datos al conjunto de revisión en colecciones posteriores.
+- Cada archivo de transcripción agregado a un conjunto de revisión debe ser una asignación uno a uno al contenido almacenado en ubicaciones de datos. Esto significa que eDiscovery (Premium) no recopila ningún contenido Teams que ya se haya agregado al conjunto de revisión. Si un mensaje de chat ya está recopilado en un conjunto de revisión, eDiscovery (Premium) no agrega el mismo mensaje desde la misma ubicación de datos al conjunto de revisión en colecciones posteriores.
 
 - Para los chats de grupo y 1:1, las copias de los mensajes se almacenan en el buzón de cada participante de la conversación. Las copias de la misma conversación que existen en los buzones de los distintos participantes se recopilan con metadatos diferentes. Como resultado, cada instancia de la conversación se trata como única y se incluye en el conjunto de revisión en archivos de transcripción independientes. Por lo tanto, si todos los participantes de un chat 1:1 o grupo se agregan como custodios en un caso y se incluyen en el ámbito de una colección, las copias de cada transcripción (para la misma conservación) se agregan al conjunto de revisión y se agruparán junto con el mismo **ConversationId**. Cada una de estas copias está asociada a un custodio correspondiente. **Sugerencia**: La columna **Custodio** de la lista de conjuntos de revisión identifica al custodio del archivo de transcripción correspondiente.
 
@@ -260,7 +260,7 @@ En la lista siguiente se describe el comportamiento de desduplicación (y duplic
 
 ### <a name="metadata-for-teams-content"></a>Metadatos del contenido de Teams
 
-En grandes conjuntos de revisiones con miles o millones de elementos, puede ser difícil restringir el ámbito de la revisión a Teams contenido. Para ayudarle a centrar la revisión en Teams contenido, hay propiedades de metadatos específicas de Teams contenido. Puede usar estas propiedades para organizar las columnas de la lista de revisión y [configurar filtros y consultas](review-set-search.md) para optimizar la revisión de Teams contenido. Estas propiedades de metadatos también se incluyen al exportar Teams contenido de Advanced eDiscovery, para ayudarle a organizar y ver el contenido después de la exportación o en herramientas de exhibición de documentos electrónicos de terceros.
+En grandes conjuntos de revisiones con miles o millones de elementos, puede ser difícil restringir el ámbito de la revisión a Teams contenido. Para ayudarle a centrar la revisión en Teams contenido, hay propiedades de metadatos específicas de Teams contenido. Puede usar estas propiedades para organizar las columnas de la lista de revisión y [configurar filtros y consultas](review-set-search.md) para optimizar la revisión de Teams contenido. Estas propiedades de metadatos también se incluyen al exportar Teams contenido de eDiscovery (Premium), para ayudarle a organizar y ver el contenido después de la exportación o en herramientas de eDiscovery de terceros.
 
 En la tabla siguiente se describen las propiedades de metadatos para Teams contenido.
 
@@ -277,7 +277,7 @@ En la tabla siguiente se describen las propiedades de metadatos para Teams conte
 |Recipientes|Lista de todos los usuarios que recibieron un mensaje dentro de la conversación de transcripción.|
 |TeamsChannelName|Nombre del canal Teams de la transcripción.|
 
-Para obtener descripciones de otras propiedades de metadatos de Advanced eDiscovery, consulte [Campos de metadatos del documento en Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+Para obtener descripciones de otras propiedades de metadatos de eDiscovery (Premium), vea [Campos de metadatos del documento en eDiscovery (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md).
 
 ## <a name="export-teams-content"></a>Exportación de contenido Teams
 
@@ -305,8 +305,8 @@ Puede usar Advanced eDiscovery y el Explorador de Microsoft Graph para responder
 
 ## <a name="reference-guide"></a>Guía de referencia
 
-Esta es una guía de referencia rápida para usar Advanced eDiscovery para Microsoft Teams. En esta guía se resumen los puntos clave para usar Advanced eDiscovery para conservar, recopilar, revisar y exportar contenido de Microsoft Teams.
+Esta es una guía de referencia rápida para usar eDiscovery (Premium) para Microsoft Teams. En esta guía se resumen los puntos clave para usar eDiscovery (Premium) para conservar, recopilar, revisar y exportar contenido de Microsoft Teams.
 
-![Miniatura de la guía de referencia para usar Advanced eDiscovery para Microsoft Teams.](../media/AeDTeamsReferenceGuide-thumbnail.png)
+![Miniatura de la guía de referencia para usar eDiscovery (Premium) para Microsoft Teams.](../media/AeDTeamsReferenceGuide-thumbnail.png)
 
 [Descargar como un archivo PDF](https://download.microsoft.com/download/9/e/4/9e4eec6f-c476-452f-b414-4bd4b5c39dca/AeDTeamsReferenceGuide.pdf)

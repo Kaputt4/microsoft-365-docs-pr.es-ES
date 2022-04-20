@@ -46,7 +46,7 @@
       href: ../enterprise/index.yml
     - name: Microsoft 365 para empresas
       href: ./index.yml
-    - name: Cumplimiento de Microsoft 365
+    - name: Microsoft Purview
       href: ../compliance/index.yml
     - name: Administrar contenido activo en documentos de Office
       href: active-content-in-trusted-docs.md

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Los administradores pueden usar las herramientas de eDiscovery en Microsoft 365 para buscar y exportar datos de chat de Teams para usuarios locales en una implementación híbrida de Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fdd142783313418c8c65c04f9b5e344ff325ec2c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 7b77a5178237e7ae25f710c8cc9574449f67a4f2
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61871459"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945877"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Buscar los datos de chat de Teams de usuarios locales
 
@@ -44,7 +44,7 @@ A continuación, se presentan los requisitos y limitaciones para habilitar el al
   
 ## <a name="how-it-works"></a>Cómo funciona
 
-Si un usuario habilitado para Microsoft Teams tiene un buzón en el entorno local y su cuenta de usuario o identidad se ha sincronizado en la nube, Microsoft crea un almacenamiento basado en la nube para asociarlo a los datos de chat 1xN de Teams del usuario local. Los datos de chat de Teams de los usuarios locales se indexan para la búsqueda. Esto le permite utilizar la Búsqueda de contenido (y las búsquedas asociadas a los casos de Core eDiscovery y eDiscovery avanzado) para buscar, previsualizar y exportar los datos de chat de Teams de los usuarios locales. También puede usar los cmdlets de **\*ComplianceSearch** en el PowerShell del Centro de cumplimiento y seguridad para buscar los datos de charts de Teams de usuarios locales.
+Si un usuario habilitado para Microsoft Teams tiene un buzón en el entorno local y su cuenta de usuario o identidad se ha sincronizado en la nube, Microsoft crea un almacenamiento basado en la nube para asociarlo a los datos de chat 1xN de Teams del usuario local. Los datos de chat de Teams de los usuarios locales se indexan para la búsqueda. Esto le permite utilizar Búsqueda de contenido (y las búsquedas asociadas a los casos de eDiscovery de Microsoft Purview [Estándar] y eDiscovery de Microsoft Purview [Premium]) para buscar, obtener una vista previa y exportar los datos de chat de Teams de los usuarios locales. También puede usar los cmdlets de **\*ComplianceSearch** en el PowerShell del Centro de cumplimiento y seguridad para buscar los datos de charts de Teams de usuarios locales.
   
 El siguiente gráfico muestra el flujo de trabajo de cómo los datos del chat de Teams para los usuarios locales están disponibles para buscar, previsualizar y exportar.
   
@@ -54,9 +54,9 @@ Además de esta nueva capacidad, también puede usar las herramientas de eDiscov
 
 ## <a name="searching-for-teams-chat-content-for-on-premises-users"></a>Buscar el contenido de chat de Teams de los usuarios locales
 
-Aquí le explicamos cómo usar la Búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para buscar datos de chat de Teams para usuarios locales. También puede usar la herramienta de búsqueda en el Centro de eDiscovery para buscar datos de chat para usuarios locales.
+Aquí le explicamos cómo usar Búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para buscar datos de chat de Teams de los usuarios locales. También puede usar la herramienta de búsqueda en eDiscovery (Estándar) para buscar datos de chat de los usuarios locales.
   
-1. En el Centro de cumplimiento de Microsoft 365, vaya a **Búsqueda de contenido**.
+1. En el portal de cumplimiento, vaya a **Búsqueda de contenido**.
 
 2. En la pestaña **Búsquedas**, haga clic en **Nueva búsqueda** y asigne un nombre a la nueva búsqueda.
 
@@ -112,7 +112,7 @@ Para más información sobre el uso de estos cmdlets, consulte:
 
 ## <a name="known-issues"></a>Problemas conocidos
 
-- Actualmente, puede buscar, previsualizar y exportar los datos de chat de Teams de usuarios locales. También puede poner en retención los datos de chat de Teams de usuarios locales asociados con un caso de Core eDiscovery o eDiscovery avanzado, y aplicar una directiva de retención para los chats o mensajes de canales de Teams de usuarios locales. Sin embargo, en este momento, no se puede aplicar una directiva de retención para otras ubicaciones de contenido (como los buzones de Exchange y los sitios de SharePoint) para los usuarios locales.
+- Actualmente, puede buscar, previsualizar y exportar los datos de chat de Teams de usuarios locales. También puede colocar los datos de chat de Teams de un usuario local en suspensión asociada a un caso de Core o eDiscovery (Premium) y aplicar una directiva de retención para chats de Teams o mensajes de canal de usuarios locales. Sin embargo, en este momento, no se puede aplicar una directiva de retención para otras ubicaciones de contenido (como los buzones de Exchange y los sitios de SharePoint) para los usuarios locales.
 
 ## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 

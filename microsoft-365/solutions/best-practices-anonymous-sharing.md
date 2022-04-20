@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: En este artículo, obtendrá información sobre los procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados.
-ms.openlocfilehash: 4541f1b6021c5d58f27366bb508ccdaa216010d9
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: ca6b75ba036aac826d657c8c907b512fe9d1f87a
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512340"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64948383"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados.
 
@@ -101,10 +101,10 @@ Para establecer el vínculo de uso compartido de archivos y carpetas predetermin
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>Impida el uso compartido no autenticado de contenido confidencial
 
-Puede usar la [prevención de pérdida de datos (DLP)](../compliance/dlp-learn-about-dlp.md) para evitar el uso compartido no autenticado de contenido confidencial. La prevención de pérdida de datos puede actuar basándose en la etiqueta de confidencialidad, en la etiqueta de retención o en la información confidencial del archivo en sí.
+Puede usar la [prevención de pérdida de datos (DLP) de Microsoft Purview](../compliance/dlp-learn-about-dlp.md) para evitar el uso compartido no autenticado de contenido confidencial. La prevención de pérdida de datos puede actuar basándose en la etiqueta de confidencialidad, en la etiqueta de retención o en la información confidencial del archivo en sí.
 
 Crear una regla DLP
-1. En el centro de administración del centro de cumplimiento de Microsoft 365, vaya a [Prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention).
+1. En el centro de administración de Microsoft Purview, vaya a la [página de prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention).
 2. Haga clic en **Crear directiva**.
 3. Elija **Personalizado** y haga clic en **Siguiente**.
 4. Escriba el nombre de la directiva y haga clic en **Siguiente**.
@@ -142,11 +142,11 @@ Consulte [ATP para SharePoint, OneDrive y Microsoft Teams](../security/office-36
 
 ## <a name="add-copyright-information-to-your-files"></a>Agregar información de copyright a los archivos
 
-Si usa etiquetas de confidencialidad en el centro de administración de Cumplimiento de Microsoft 365, puede configurar las etiquetas para agregar automáticamente una marca de agua, un encabezado o un pie de página a los documentos de Office de su organización. De esta forma, puede asegurarse de que los archivos compartidos contengan derechos de autor u otra información de propiedad.
+Si usa etiquetas de confidencialidad en el centro de administración de Microsoft Purview, puede configurar las etiquetas para agregar automáticamente una marca de agua, un encabezado o un pie de página a los documentos de Office de su organización. De esta forma, puede asegurarse de que los archivos compartidos contengan derechos de autor u otra información de propiedad.
 
 Para agregar un pie de página a un archivo con etiqueta
 
-1. Abra el [Centro de administración de Cumplimiento de Microsoft 365](https://compliance.microsoft.com).
+1. Abra el [centro de administración de Microsoft Purview](https://compliance.microsoft.com).
 2. En el panel de navegación izquierdo, en **Soluciones**, haga clic en **Protección de la información**.
 3. Haga clic en la etiqueta que desea que agregue un pie de página y, a continuación, haga clic en **Editar etiqueta**.
 4. Haga clic en **Siguiente** para ampliar la pestaña **Marcado de contenido** y, a continuación, seleccione **Activar** el marcado de contenido.

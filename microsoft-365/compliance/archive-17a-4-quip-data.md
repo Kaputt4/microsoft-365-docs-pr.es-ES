@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector Quip DataParser de 17a-4 para importar y archivar datos quip en Microsoft 365.
-ms.openlocfilehash: cdd9ed5675d6b352d21ba80841efdd7f16888d5c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 7379c092b6d00c023198636fd022ef65e5b17724
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761779"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947349"
 ---
 # <a name="set-up-a-connector-to-archive-quip-data"></a>Configuración de un conector para archivar datos quip
 
 Use [Quip DataParser](https://www.17a-4.com/quip-dataparser/) de 17a-4 LLC para importar y archivar datos de Quip a buzones de usuario de su organización Microsoft 365. DataParser incluye un conector Quip configurado para capturar elementos de un origen de datos de terceros e importarlos a Microsoft 365. El conector Quip DataParser convierte los datos quip en un formato de mensaje de correo electrónico y, a continuación, los importa a buzones de usuario en Microsoft 365.
 
-Una vez almacenados los datos de Quip en buzones de usuario, puede aplicar Microsoft 365 características de cumplimiento, como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector quip para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+Una vez almacenados los datos de Quip en buzones de usuario, puede aplicar características de Microsoft Purview como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector quip para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
 
 ## <a name="overview-of-archiving-quip-data"></a>Información general sobre el archivado de datos quip
 
@@ -35,7 +35,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 2. De forma periódica, los elementos Quip los recopila DataParser. DataParser también convierte el contenido de un mensaje en un formato de mensaje de correo electrónico.
 
-3. El conector Quip DataParser que se crea en el Centro de cumplimiento de Microsoft 365 se conecta a DataParser y transfiere los mensajes a una ubicación de Azure Storage segura en la nube de Microsoft.
+3. El conector Quip DataParser que se crea en el portal de cumplimiento de Microsoft Purview se conecta a DataParser y transfiere los mensajes a una ubicación de Azure Storage segura en la nube de Microsoft.
 
 4. Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **Quip DataParser en los buzones** de usuario y los elementos Quip se importan a esa carpeta. El conector determina a qué buzón se van a importar elementos mediante el valor de la propiedad *Email* . Cada elemento Quip contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante.
 
@@ -43,13 +43,13 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 - Cree una cuenta de DataParser para los conectores de Microsoft. Para ello, póngase en contacto con [17a-4 LLC](https://www.17a-4.com/contact/). Debe iniciar sesión en esta cuenta al crear el conector en el paso 1.
 
-- Al usuario que crea el conector Quip DataParser en el paso 1 (y lo completa en el paso 3) se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** de la Centro de cumplimiento de Microsoft 365. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que crea el conector Quip DataParser en el paso 1 (y lo completa en el paso 3) se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Este conector de datos 17a-4 está disponible en entornos de GCC en la nube Microsoft 365 us Government. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de cumplimiento y protección de datos Microsoft 365. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
+- Este conector de datos 17a-4 está disponible en entornos de GCC en la nube Microsoft 365 us Government. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
 ## <a name="step-1-set-up-a-quip-dataparser-connector"></a>Paso 1: Configurar un conector Quip DataParser
 
-El primer paso consiste en acceder a la página Conectores de datos de la Centro de cumplimiento de Microsoft 365 y crear un conector 17a-4 para los datos quip.
+El primer paso consiste en acceder a la página Conectores de datos del portal de cumplimiento y crear un conector 17a-4 para los datos quip.
 
 1. Vaya a y, a <https://compliance.microsoft.com> continuación, haga clic en **Conectores** >  de **datosQuip DataParser**.
 
@@ -71,7 +71,7 @@ El conector Quip DataParser asignará automáticamente los usuarios a sus direcc
 
 ## <a name="step-4-monitor-the-quip-dataparser-connector"></a>Paso 4: Supervisión del conector Quip DataParser
 
-Después de crear un conector Quip DataParser, puede ver el estado del conector en el Centro de cumplimiento de Microsoft 365.
+Después de crear un conector Quip DataParser, puede ver el estado del conector en el portal de cumplimiento.
 
 1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
 

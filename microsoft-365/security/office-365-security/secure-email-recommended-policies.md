@@ -1,5 +1,5 @@
 ---
-title: 'Directivas recomendadas de correo electrónico seguro: Microsoft 365 para empresas | Microsoft Docs'
+title: 'Directivas de correo electrónico seguras recomendadas: Microsoft 365 para la | empresarial Microsoft Docs'
 description: Describe las directivas recomendadas por Microsoft para aplicar directivas y configuraciones de correo electrónico.
 ms.author: dansimp
 author: dansimp
@@ -20,95 +20,95 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: b4b47b5cd5b7f345d21f2fa60deec736d931c62f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: a355ed4c31cf2355ee6166987651da092c7afb33
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473439"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945481"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
-En este artículo se describe cómo implementar las directivas recomendadas de acceso a dispositivos y identidades de confianza cero para proteger los clientes de correo electrónico y correo electrónico de la organización que admiten la autenticación moderna y el acceso condicional. Esta guía se basa en las [directivas comunes de identidad y acceso a dispositivos](identity-access-policies.md) y también incluye algunas recomendaciones adicionales.
+En este artículo se describe cómo implementar las directivas de acceso a dispositivos e identidades de Confianza cero recomendadas para proteger los clientes de correo electrónico y correo electrónico de la organización que admiten la autenticación moderna y el acceso condicional. Esta guía se basa en las [directivas de acceso a dispositivos e identidades comunes](identity-access-policies.md) y también incluye algunas recomendaciones adicionales.
 
-Estas recomendaciones se basan en tres niveles diferentes de seguridad y protección que se pueden aplicar en función de la granularidad de sus **necesidades: punto** de **partida, empresa** y **seguridad especializada**. Puede aprender más sobre estos niveles de seguridad y los sistemas operativos de cliente recomendados, a los que hacen referencia estas recomendaciones, en la [introducción a las directivas y configuraciones de seguridad recomendadas](microsoft-365-policies-configurations.md).
+Estas recomendaciones se basan en tres niveles diferentes de seguridad y protección que se pueden aplicar en función de la granularidad de sus necesidades: **punto de partida**, **empresa** y **seguridad especializada**. Puede aprender más sobre estos niveles de seguridad y los sistemas operativos de cliente recomendados, a los que hacen referencia estas recomendaciones, en la [introducción a las directivas y configuraciones de seguridad recomendadas](microsoft-365-policies-configurations.md).
 
-Estas recomendaciones requieren que los usuarios usen clientes de correo electrónico modernos, incluidos Outlook para iOS y Android en dispositivos móviles. Outlook para iOS y Android proporcionan compatibilidad con las mejores características de Office 365. Estas aplicaciones Outlook móviles también están diseñadas con capacidades de seguridad que admiten el uso móvil y funcionan junto con otras funcionalidades de seguridad en la nube de Microsoft. Para obtener más información, [consulta Outlook preguntas más frecuentes sobre iOS y Android](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
+Estas recomendaciones requieren que los usuarios usen clientes de correo electrónico modernos, incluidos Outlook para iOS y Android en dispositivos móviles. Outlook para iOS y Android proporcionan compatibilidad con las mejores características de Office 365. Estas aplicaciones de Outlook móviles también están diseñadas con funcionalidades de seguridad que admiten el uso móvil y funcionan junto con otras funcionalidades de seguridad en la nube de Microsoft. Para obtener más información, consulte [preguntas más frecuentes sobre Outlook para iOS y Android](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq).
 
-## <a name="update-common-policies-to-include-email"></a>Actualizar directivas comunes para incluir correo electrónico
+## <a name="update-common-policies-to-include-email"></a>Actualización de directivas comunes para incluir correo electrónico
 
-Para proteger el correo electrónico, en el siguiente diagrama se muestran las directivas que se actualizarán a partir de las directivas comunes de acceso a dispositivos y identidades.
+Para proteger el correo electrónico, en el diagrama siguiente se muestran las directivas que se van a actualizar a partir de las directivas comunes de acceso a dispositivos e identidades.
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="Resumen de las actualizaciones de directivas para proteger el acceso a Microsoft Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
 
 Tenga en cuenta la adición de una nueva directiva para Exchange Online bloquear clientes de ActiveSync. Esto fuerza el uso de Outlook móvil.
 
-Si ha incluido Exchange Online y Outlook en el ámbito de las directivas al configurarlas, solo necesita crear la nueva directiva para bloquear los clientes de ActiveSync. Revise las directivas enumeradas en la tabla siguiente y realice las adiciones recomendadas o confirme que ya están incluidas. Cada directiva se vincula a las instrucciones de configuración asociadas [en Identidad común y directivas de acceso a dispositivos](identity-access-policies.md).
+Si incluyó Exchange Online y Outlook en el ámbito de las directivas al configurarlas, solo tendrá que crear la nueva directiva para bloquear los clientes de ActiveSync. Revise las directivas enumeradas en la tabla siguiente y realice las adiciones recomendadas o confirme que ya están incluidas. Cada directiva se vincula a las instrucciones de configuración asociadas en [Directivas comunes de acceso a dispositivos e identidades](identity-access-policies.md).
 
 |Nivel de protección|Directivas|Más información|
 |---|---|---|
-|**Punto de inicio**|[Requerir MFA cuando el riesgo de inicio de sesión *es medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
+|**Punto de inicio**|[Requerir MFA cuando el riesgo de inicio de sesión es *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
 ||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
-||[Aplicar directivas de protección de datos de APP](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrate de Outlook está incluido en la lista de aplicaciones. Asegúrese de actualizar la directiva para cada plataforma (iOS, Android, Windows)|
-||[Requerir aplicaciones aprobadas y protección de APLICACIONES](identity-access-policies.md#require-approved-apps-and-app-protection)|Incluir Exchange Online en la lista de aplicaciones en la nube|
+||[Aplicación de directivas de protección de datos de APLICACIONES](identity-access-policies.md#apply-app-data-protection-policies)|Asegúrese de que Outlook está incluido en la lista de aplicaciones. Asegúrese de actualizar la directiva para cada plataforma (iOS, Android, Windows)|
+||[Requerir aplicaciones aprobadas y protección de aplicaciones](identity-access-policies.md#require-approved-apps-and-app-protection)|Incluir Exchange Online en la lista de aplicaciones en la nube|
 ||[Bloquear clientes de ActiveSync](#block-activesync-clients)|Agregar esta nueva directiva|
-|**Empresarial**|[Requerir MFA cuando el riesgo de inicio de sesión *es bajo*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
-||[Requerir equipos y *dispositivos móviles* compatibles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Incluir Exchange Online en la lista de aplicaciones en la nube|
-|**Seguridad especializada**|[*Requerir* siempre MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
+|**Empresarial**|[Requerir MFA cuando el riesgo de inicio de sesión es *bajo*, *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
+||[Requerir equipos *compatibles y* dispositivos móviles](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Incluir Exchange Online en la lista de aplicaciones en la nube|
+|**Seguridad especializada**|[*Siempre* se requiere MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Incluir Exchange Online en la asignación de aplicaciones en la nube|
 
 ## <a name="block-activesync-clients"></a>Bloquear clientes de ActiveSync
 
-Exchange ActiveSync puede usarse para sincronizar la mensajería y los datos de calendario en dispositivos móviles y de escritorio.
+Exchange ActiveSync se pueden usar para sincronizar datos de mensajería y calendario en dispositivos móviles y de escritorio.
 
-Para dispositivos móviles, los clientes Exchange ActiveSync modernos que admiten autenticación que no admiten directivas de protección de aplicaciones de Intune (o clientes compatibles que no están definidos en la directiva de protección de aplicaciones) y los clientes de Exchange ActiveSync que usan autenticación básica se bloquean en función de la directiva de acceso condicional creada en Requerir aplicaciones aprobadas y protección de [aplicaciones](identity-access-policies.md#require-approved-apps-and-app-protection).
+En el caso de los dispositivos móviles, los clientes de Exchange ActiveSync compatibles con la autenticación moderna que no admiten directivas de protección de aplicaciones Intune (o clientes admitidos que no están definidos en la directiva de protección de aplicaciones) y Exchange ActiveSync clientes que usan la autenticación básica se bloquean en función de la directiva de acceso condicional creada en [ Requerir aplicaciones aprobadas y protección de aplicaciones](identity-access-policies.md#require-approved-apps-and-app-protection).
 
-Para bloquear Exchange ActiveSync mediante autenticación básica en otros dispositivos, siga los pasos descritos en [Bloquear Exchange ActiveSync](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#block-exchange-activesync-on-all-devices) en todos los dispositivos, lo que impide que los clientes de Exchange ActiveSync que usan autenticación básica en dispositivos no móviles se conecten a Exchange Online.
+Para bloquear Exchange ActiveSync mediante la autenticación básica en otros dispositivos, siga los pasos descritos en [Bloquear Exchange ActiveSync en todos los dispositivos](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#block-exchange-activesync-on-all-devices), lo que impide que Exchange ActiveSync clientes que usan la autenticación básica en dispositivos no móviles se conecten a Exchange Online.
 
-También puede usar directivas de autenticación para [deshabilitar la autenticación básica](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), lo que fuerza a todas las solicitudes de acceso de cliente a usar la autenticación moderna.
+También puede usar directivas de autenticación para [deshabilitar la autenticación básica](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), lo que obliga a todas las solicitudes de acceso de cliente a usar la autenticación moderna.
 
 ## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>Limitar el acceso a Exchange Online desde Outlook en la Web
 
-Puede restringir la capacidad de los usuarios para descargar datos adjuntos Outlook en la Web dispositivos no administrados. Los usuarios de estos dispositivos pueden ver y editar estos archivos mediante Office Online sin tener que filtrar y almacenar los archivos en el dispositivo. También puedes impedir que los usuarios vean datos adjuntos en un dispositivo no administrado.
+Puede restringir la capacidad de los usuarios para descargar datos adjuntos de Outlook en la Web en dispositivos no administrados. Los usuarios de estos dispositivos pueden ver y editar estos archivos mediante Office Online sin tener que filtrar ni almacenar los archivos en el dispositivo. También puede impedir que los usuarios vean datos adjuntos en un dispositivo no administrado.
 
 Estos son los pasos:
 
-1. [Conectar a una sesión Exchange Online PowerShell remoto](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. [Conectar a una sesión de PowerShell remota de Exchange Online](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 2. Si aún no tiene una directiva de buzón de OWA, cree una con el cmdlet [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy) .
-3. Si desea permitir la visualización de datos adjuntos pero no descargarlos, use este comando:
+3. Si desea permitir la visualización de datos adjuntos pero sin descarga, use este comando:
 
    ```powershell
    Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnly
    ```
 
-4. Si desea bloquear datos adjuntos, use este comando:
+4. Si desea bloquear los datos adjuntos, use este comando:
 
    ```powershell
    Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
    ```
 
-5. En Azure Portal, cree una nueva directiva de acceso condicional con esta configuración:
+5. En el Azure Portal, cree una nueva directiva de acceso condicional con esta configuración:
 
    **Asignaciones** \> **Usuarios y grupos**: seleccione los usuarios y grupos adecuados para incluir y excluir.
 
-   **Asignaciones** \> **Acciones o aplicaciones en la nube** \> **Aplicaciones en la nube** \> **Incluir** \> **Seleccionar aplicaciones**: seleccione **Office 365 Exchange Online**
+   **Asignaciones** \> **Aplicaciones o acciones** \> en la nube **Aplicaciones en la nube** \> **Incluír** \> **Seleccionar aplicaciones**: seleccione **Office 365 Exchange Online**
 
-   **Controles de acceso** \> **Sesión**: seleccione **Usar restricciones aplicadas por la aplicación**
+   \> **Controles de acceso** **Sesión**: seleccione **Usar restricciones aplicadas por la aplicación**
 
-## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>Requerir que los dispositivos iOS y Android deben usar Outlook
+## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>Requerir que los dispositivos iOS y Android usen Outlook
 
-Para garantizar que los usuarios de dispositivos iOS y Android solo puedan acceder al contenido laboral o educativo mediante Outlook para iOS y Android, necesita una directiva de acceso condicional dirigida a esos usuarios potenciales.
+Para asegurarse de que los usuarios de dispositivos iOS y Android solo puedan acceder a contenido profesional o educativo mediante Outlook para iOS y Android, necesita una directiva de acceso condicional destinada a esos usuarios potenciales.
 
-Consulta los pasos para configurar esta directiva en [Manage messaging collaboration access by using Outlook for iOS and Android](/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access).
+Consulte los pasos para configurar esta directiva en [Administración del acceso de colaboración de mensajería mediante Outlook para iOS y Android](/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access).
 
-## <a name="set-up-message-encryption"></a>Configurar el cifrado de mensajes
+## <a name="set-up-message-encryption"></a>Configuración del cifrado de mensajes
 
-Con las nuevas Cifrado de mensajes de Office 365 (OME), que aprovechan las características de protección de Azure Information Protection, su organización puede compartir fácilmente correo electrónico protegido con cualquier usuario en cualquier dispositivo. Los usuarios pueden enviar y recibir mensajes protegidos con otras organizaciones de Microsoft 365, así como con no clientes mediante Outlook.com, Gmail y otros servicios de correo electrónico.
+Con Microsoft Purview Message Encryption, que aprovecha las características de protección de Azure Information Protection, su organización puede compartir fácilmente el correo electrónico protegido con cualquier usuario de cualquier dispositivo. Los usuarios pueden enviar y recibir mensajes protegidos con otras organizaciones de Microsoft 365, así como con otros clientes mediante Outlook.com, Gmail y otros servicios de correo electrónico.
 
-Para obtener más información, vea [Set up new Cifrado de mensajes de Office 365 capabilities](../../compliance/set-up-new-message-encryption-capabilities.md).
+Para obtener más información, vea [Configurar nuevas funcionalidades de cifrado de mensajes Office 365](../../compliance/set-up-new-message-encryption-capabilities.md).
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Directivas para aplicaciones Microsoft 365 nube" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Directivas para Microsoft 365 aplicaciones en la nube" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 Configurar directivas de acceso condicional para:
 

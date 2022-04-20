@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: 17675917a737717c352125d23a32b432e681a77f
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 76e1c0c4ed9a4a8b9c0971d58f26fd07d3d28ce9
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634567"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947019"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 
@@ -59,7 +59,7 @@ El rendimiento de Microsoft 365 no solo es proporcional a la distancia de un usu
 
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>¿Cómo me ayuda Microsoft a cumplir los reglamentos nacionales, regionales y específicos del sector?
 
-Con el fin de ayudarle a cumplir los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos de personas, Microsoft 365 le ofrece el conjunto más completo de ofertas de cumplimiento que cualquier proveedor de productividad global en la nube. Consulte [nuestras ofertas de cumplimiento](/compliance/regulatory/offering-home) y más detalles en la sección [Cumplimiento de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=862317) en el centro de confianza de Microsoft. Asimismo, algunos planes de Microsoft 365 ofrecen soluciones de cumplimiento adicionales para ayudarle a administrar sus datos, cumplir los requisitos legales y regulatorios, y supervisar las acciones realizadas en sus datos.
+Con el fin de ayudarle a cumplir los requisitos nacionales, regionales y específicos del sector que rigen la recopilación y el uso de datos de personas, Microsoft 365 le ofrece el conjunto más completo de ofertas de cumplimiento que cualquier proveedor de productividad global en la nube. Revise [nuestras ofertas de cumplimiento](/compliance/regulatory/offering-home) y más detalles en la sección [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) del Centro de confianza de Microsoft. Asimismo, algunos planes de Microsoft 365 ofrecen soluciones de cumplimiento adicionales para ayudarle a administrar sus datos, cumplir los requisitos legales y regulatorios, y supervisar las acciones realizadas en sus datos.
 
 ### <a name="who-can-access-your-data-and-according-to-what-rules"></a>¿Quién puede obtener acceso a los datos y en función de qué reglas?
 

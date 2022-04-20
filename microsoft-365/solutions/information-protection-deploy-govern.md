@@ -1,5 +1,5 @@
 ---
-title: Regulación de la información sujeta a la regulación de privacidad de datos
+title: Regulación de la información sujeta a la normativa de privacidad de datos
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,78 +16,78 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Use Microsoft 365 directivas y etiquetas de retención para administrar los datos personales en su Microsoft 365 de retención.
-ms.openlocfilehash: b131c90e83a2ce211d51af444dd570f71f3b8263
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Use Microsoft 365 etiquetas y directivas de retención para administrar datos personales en el entorno de Microsoft 365.
+ms.openlocfilehash: 05aad5b26f65dc66543afb29834e7cc4514e3366
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60176312"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947393"
 ---
-# <a name="govern-information-subject-to-data-privacy-regulation"></a>Regulación de la información sujeta a la regulación de privacidad de datos
+# <a name="govern-information-subject-to-data-privacy-regulation"></a>Regulación de la información sujeta a la normativa de privacidad de datos
 
-Los controles de gobierno de la información se pueden usar en su entorno para ayudar a satisfacer las necesidades de cumplimiento de privacidad de datos, incluido un número específico del Reglamento general de protección de datos (RGPD), HIPAA-HITECH (la ley de privacidad del cuidado de la salud de los Estados Unidos), la Ley de protección de consumidores de California (CCPA) y la Ley de protección de datos de Brasil (LGPD). 
+Los controles de gobernanza de la información se pueden emplear en su entorno para ayudar a abordar las necesidades de cumplimiento de la privacidad de los datos, incluido un número específico del Reglamento General de Protección de Datos (RGPD), HIPAA-HITECH (el Estados Unidos ley de privacidad del cuidado de la salud), la Ley de protección del consumidor de California (CCPA) y la Ley de protección de datos de Brasil (LGPD). 
 
-Estos controles están principalmente en las siguientes áreas de solución:
+Estos controles se dividen principalmente en las siguientes áreas de solución:
 
 - Directivas de retención
 - Etiquetas de retención
 - Administración de registros
 
-## <a name="data-privacy-regulations-impacting-information-governance-controls"></a>Normativas de privacidad de datos que afectan a los controles de gobierno de la información
+## <a name="data-privacy-regulations-impacting-information-governance-controls"></a>Normativas de privacidad de datos que afectan a los controles de gobernanza de la información
 
-Esta es una lista de ejemplo de las normativas de privacidad de datos que pueden estar relacionadas con los controles de gobierno de la información:
+Esta es una lista de ejemplo de las regulaciones de privacidad de datos que pueden estar relacionadas con los controles de gobernanza de la información:
 
 - Artículo del RGPD (13)(2)(a)
 - Artículo del RGPD (5)(1)(f)
 - HIPAA-HITECH (45 CFR 164.312(c)(2))
 - HIPAA-HITECH (45 CFR 164.316(b)(1)(i))
 - HIPAA-HITECH (45 CFR 164.316(b)(1)(ii))
-- Artículo 46 de LGPD
+- Artículo 46 de la LGPD
 
-Para obtener más información sobre estas [normativas,](information-protection-deploy-assess.md)vea el artículo evaluar los riesgos de privacidad de datos e identificar información confidencial.
+Para obtener más información sobre estas regulaciones, consulte el [artículo evaluación de riesgos de privacidad de datos e identificación de información confidencial](information-protection-deploy-assess.md).
 
-Para el gobierno de la información, las normativas de privacidad de datos suelen llamar a lo siguiente:
+Para la gobernanza de la información, las regulaciones de privacidad de datos suelen llamar a lo siguiente:
 
 - Debe emplear un esquema técnico para la retención y eliminación de datos personales almacenados en Microsoft 365.
-- Si va a almacenar datos personales, informe al interesado de cuánto tiempo se almacenarán los datos, que es una práctica estándar ahora en sistemas front-end web.
-- Los datos personales deben protegerse contra el procesamiento accidental, la pérdida o la alteración mediante métodos verificables.
-- Cualquier acción ejecutada con datos personales debe documentarse y esa documentación debe conservarse durante un período especificado.
+- Si va a almacenar datos personales, informe al interesado de cuánto tiempo se almacenarán los datos, lo que es una práctica estándar ahora en los sistemas front-end web.
+- Los datos personales deben protegerse contra el procesamiento, la pérdida o la alteración accidentales mediante métodos verificables.
+- Cualquier acción ejecutada en los datos personales debe documentarse y esa documentación debe conservarse durante un período especificado.
 
-Dado que las normativas de privacidad de datos no son muy específicas en lo que respecta a la retención y eliminación de datos, es necesario tener en cuenta otros factores que pueden dictar directrices de gobierno de la información para la información personal almacenada en su suscripción Microsoft 365 datos. Estos son algunos ejemplos:
+Dado que las regulaciones de privacidad de datos no son muy específicas en lo que respecta a la retención y eliminación de datos, es necesario tener en cuenta otros factores que pueden dictar directrices de gobernanza de la información para la información personal almacenada en su suscripción de Microsoft 365. Estos son algunos ejemplos:
 
-- El envejecimiento de las cuentas de consumidor después de 5 años de inactividad y requiere la eliminación o anonimización de los datos de la cuenta después de ese punto, lo que requiere una orquestación entre el sistema que almacena los datos y los flujos de trabajo relacionados con las notificaciones y otras automatizacións.
-- Configurar reglas para mantener las directivas y procedimientos relacionados con el RGPD durante tres años después de su sustitución, lo que se alinea con la programación de retención de la organización para las directivas y procedimientos.
-- Mantener una suscripción independiente para comunicarse con los consumidores a través de su organización de soporte técnico. Todas las comunicaciones de correo electrónico se conservaron y eliminaron después de dos semanas para reducir cualquier acumulación de la deuda de privacidad en el sistema.
+- El envejecimiento de las cuentas de consumidor después de 5 años de inactividad y requiere la eliminación o anonimización de los datos de la cuenta después de ese punto, lo que requiere la orquestación entre el sistema que almacena los datos y los flujos de trabajo relacionados con las notificaciones y otras automatizaciones.
+- Configurar reglas para mantener directivas y procedimientos relacionados con el RGPD durante tres años después de su sustitución, lo que se alinea con la programación de retención de directivas y procedimientos de la organización.
+- Mantener una suscripción independiente para comunicarse con los consumidores a través de su organización de soporte técnico. Todas las comunicaciones por correo electrónico se conservaron y eliminaron después de dos semanas para reducir la acumulación de deudas de privacidad en el sistema.
 
-Una pregunta clave para responder es: 
+Una pregunta clave a responder es: 
 
-- ¿Durante cuánto tiempo es necesario mantener la información que contiene datos personales por motivos empresariales válidos para evitar prácticas de "mantenerla para siempre"? Esto debe equilibrarse con las necesidades de retención para la continuidad empresarial.
+- ¿Cuánto tiempo necesita mantenerse la información que contiene datos personales por motivos empresariales válidos para evitar prácticas de "conservarlos para siempre"? Esto debe equilibrarse con las necesidades de retención para la continuidad empresarial.
 
-Independientemente de los motivos legales y empresariales para mantener la información personal o eliminarla, Microsoft proporciona una serie de capacidades para implementar el esquema de gobierno de datos en Microsoft 365.
+Independientemente de las razones legales y empresariales para mantener la información personal o eliminarla, Microsoft proporciona una serie de funcionalidades para implementar el esquema de gobernanza de datos en Microsoft 365.
 
-## <a name="managing-information-governance-in-microsoft-365"></a>Administración del gobierno de la información en Microsoft 365
+## <a name="managing-information-governance-in-microsoft-365"></a>Administración de la gobernanza de la información en Microsoft 365
 
-Para empezar, vea [Manage information governance](../compliance/manage-information-governance.md) and Data [Retention, Deletion and Destruction in Microsoft 365](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview).
+Para empezar, consulte [Control de los datos con Microsoft Purview](../compliance/manage-data-governance.md) y [Retención, eliminación y destrucción de datos en Microsoft 365](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview).
 
-### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>Desarrollar programaciones de retención de datos para contenedores, correo electrónico y contenido
+### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>Desarrollo de programaciones de retención de datos para contenedores, correo electrónico y contenido
 
 Tenga en cuenta lo siguiente:
 
-- Establecer una programación de retención de datos para tipos de información definidos debe considerarse un requisito previo para implementar cualquier esquema de retención o eliminación.
+- El establecimiento de una programación de retención de datos para los tipos de información definidos debe considerarse un requisito previo para implementar cualquier esquema de retención o eliminación.
 
-- Dado el número de tipos de información que la mayoría de las organizaciones consideran importantes y las programaciones de retención de registros grandes correspondientes que van con ellos, la implementación de una estrategia de administración de registros y retención de datos requiere planeación. 
+- Dado el número de tipos de información que la mayoría de las organizaciones consideran importantes y las programaciones de retención de registros grandes correspondientes que acompañan a ellos, la implementación de una estrategia de retención de datos y administración de registros requiere planeamiento. 
 
-- La clave para establecer una estrategia de gobierno de datos eficaz de este tipo es centrarse en las funciones empresariales de mayor prioridad y los tipos de información que requieren una administración más formal. Algunos ejemplos son contratos legales, estados financieros y documentación de cumplimiento normativo. Intente evitar tener una programación de retención independiente para cada tipo de información. Intente usar las categorías generales tanto como sea posible, por ejemplo, con programaciones de retención de 7 años para contenido empresarial general.
+- La clave para establecer una estrategia de gobernanza de datos eficaz de este tipo es centrarse en las funciones empresariales y los tipos de información más prioritarios que requieren una administración más formal. Algunos ejemplos son los contratos legales, los estados financieros y la documentación de cumplimiento normativo. Intente evitar tener una programación de retención independiente para cada tipo de información. Intente usar categorías generales tanto como sea posible, por ejemplo, con programaciones de retención de 7 años para el contenido empresarial general.
 
-- Una vez que se conozcan mejor los tipos de información personal de su entorno, establezca programaciones de retención y eliminación para este tipo de contenido y ajuste la arquitectura de la información para facilitar el gobierno de este tipo de información. Por ejemplo, aísla información personal en sitios, bibliotecas o carpetas independientes con acceso controlado.
+- Una vez que se conozcan mejor los tipos de información personal de su entorno, establezca programaciones de retención y eliminación para este tipo de contenido y ajuste la arquitectura de información para facilitar la gobernanza de este tipo de información. Por ejemplo, aísle la información personal en sitios, bibliotecas o carpetas independientes con acceso controlado.
 
-### <a name="retention-policies-and-retention-labels"></a>Directivas de retención y etiquetas de retención
+### <a name="retention-policies-and-retention-labels"></a>Directivas y etiquetas de retención
 
-Use [directivas de retención y etiquetas de](../compliance/retention.md) retención para retener o eliminar contenido Microsoft 365 que contiene o se espera que contenga datos personales.
+Use [directivas de retención y etiquetas de retención](../compliance/retention.md) para conservar o eliminar contenido en Microsoft 365 que contenga o se espera que contenga datos personales.
 
 ### <a name="records-management"></a>Administración de registros
 
-Use etiquetas de retención que declaren el contenido un registro para implementar [una](../compliance/records-management.md) solución de administración de registros para los datos de Microsoft 365.
+Use etiquetas de retención que declaren contenido de un registro para implementar una [solución de administración de registros](../compliance/records-management.md) para los datos de Microsoft 365.
 
-Para la privacidad de los datos, las solicitudes de interesados (DSR) recibidas por el departamento legal se declaran un registro y se pueden almacenar indefinidamente o eliminarse con pruebas, para cumplir con las especificaciones de retención de actividades reglamentarias.
+Para la privacidad de los datos, las solicitudes de interesados (DSR) recibidas por el departamento legal se declaran un registro y se pueden almacenar indefinidamente o eliminarse con prueba, para cumplir con las especificaciones de retención de actividad normativa.

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use Advanced eDiscovery y el Explorador de Microsoft Graph para buscar y purgar mensajes de chat en Microsoft Teams y responder a incidentes de desbordamiento de datos en Teams.
-ms.openlocfilehash: e0a95007c96bd60b655d455d432a774f6ace0817
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 79f04c513733151099f5b45192a84738065e42aa
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847576"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949376"
 ---
 # <a name="search-and-purge-chat-messages-in-teams"></a>Buscar y purgar mensajes de chat en Teams
 
@@ -32,7 +32,7 @@ Puede usar Advanced eDiscovery y el Explorador de Microsoft Graph para buscar y 
 
 ## <a name="before-you-search-and-purge-chat-messages"></a>Antes de buscar y purgar mensajes de chat
 
-- Para crear un caso de Advanced eDiscovery y usar colecciones para buscar mensajes de chat, debe ser miembro del grupo de roles **administrador de exhibición de documentos electrónicos** en el Centro de cumplimiento de Microsoft 365. Para eliminar mensajes de chat, debe tener asignado el rol **Buscar y purgar** . Este rol se asigna a los grupos de roles Investigador de datos y Administración de la organización de forma predeterminada. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
+- Para crear un caso de Advanced eDiscovery y usar colecciones para buscar mensajes de chat, debe ser miembro del grupo de roles administrador de **exhibición de documentos electrónicos** en el portal de cumplimiento de Microsoft Purview. Para eliminar mensajes de chat, debe tener asignado el rol **Buscar y purgar** . Este rol se asigna a los grupos de roles Investigador de datos y Administración de la organización de forma predeterminada. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
 - La búsqueda y purga se admiten para las conversaciones dentro del inquilino. La compatibilidad con las conversaciones de Teams Conectar Chat (acceso externo o federación) está habilitada en la interfaz en algunos casos, pero no funciona según lo previsto.
 - Se puede eliminar un máximo de 10 elementos por buzón a la vez. Dado que la capacidad de buscar y quitar mensajes de chat está pensada para ser una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes de chat se quiten rápidamente.
 
@@ -107,7 +107,7 @@ Para obtener información sobre el uso de Graph Explorer, consulte [Uso del Expl
 
 ### <a name="get-the-case-id"></a>Obtener el identificador del caso
 
-1. Vaya e <https://developer.microsoft.com/graph/graph-explorer> inicie sesión en el Explorador de Graph con una cuenta que tenga asignado el rol **Buscar y purgar** en el Centro de cumplimiento de Microsoft 365.
+1. Vaya e <https://developer.microsoft.com/graph/graph-explorer> inicie sesión en el Explorador de Graph con una cuenta que tenga asignado el rol **Buscar y purgar** en el portal de cumplimiento de Microsoft Purview.
 
 2. Ejecute la siguiente solicitud GET para recuperar el identificador del caso de Advanced eDiscovery. Use el valor `https://graph.microsoft.com/beta/compliance/ediscovery/cases` en la barra de direcciones de la consulta de solicitud. Asegúrese de seleccionar **v1.0** en la lista desplegable Versión de API.
 
@@ -122,7 +122,7 @@ Para obtener información sobre el uso de Graph Explorer, consulte [Uso del Expl
 4. Copie el identificador correspondiente (o cópielo y péguelo en un archivo de texto). Usará este identificador en la siguiente tarea para obtener el identificador de la colección.
 
 > [!TIP]
-> En lugar de usar el procedimiento anterior para obtener el identificador de caso, puede abrir el caso en el Centro de cumplimiento de Microsoft 365 y copiar el identificador de caso de la dirección URL.
+> En lugar de usar el procedimiento anterior para obtener el identificador de caso, puede abrir el caso en el portal de cumplimiento de Microsoft Purview y copiar el identificador de caso de la dirección URL.
 
 ### <a name="get-the-collection-id"></a>Obtención del identificador de la colección
 

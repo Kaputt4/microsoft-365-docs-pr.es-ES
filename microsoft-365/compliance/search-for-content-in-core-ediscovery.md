@@ -1,5 +1,5 @@
 ---
-title: Buscar contenido en un caso principal de exhibición de documentos electrónicos
+title: Búsqueda de contenido en un caso principal de exhibición de documentos electrónicos
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,31 +16,31 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Busque contenido que pueda ser relevante para un caso de exhibición de documentos electrónicos principal.
-ms.openlocfilehash: 57ea95458df568de3687e1b0d38a70991b09a850
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+description: Busque contenido que pueda ser relevante para un caso de exhibición de documentos electrónicos (estándar).
+ms.openlocfilehash: b6c53c1f87f0d2783b2d6d3cc765a8fd3ed2f6cf
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643373"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949363"
 ---
-# <a name="search-for-content-in-a-core-ediscovery-case"></a>Buscar contenido en un caso de exhibición de documentos electrónicos principal
+# <a name="search-for-content-in-a-ediscovery-standard-case"></a>Buscar contenido en un caso de exhibición de documentos electrónicos (estándar)
 
-Después de crear un caso de exhibición de documentos electrónicos principal y de que los interesados en el caso estén en espera, puede crear y ejecutar una o más búsquedas de contenido relevante para el caso. Las búsquedas asociadas con un caso de exhibición de documentos electrónicos principales no aparecen en la página **Búsqueda** de contenido en el Centro de cumplimiento de Microsoft 365. Estas búsquedas se enumeran en la **página Búsquedas** del caso de exhibición de documentos electrónicos principales al que están asociadas las búsquedas. Esto también significa que los miembros del caso solo pueden acceder a las búsquedas asociadas a un caso.
+Después de crear un caso de exhibición de documentos electrónicos (Estándar) de Microsoft Purview y de que las personas de interés en el caso se colocan en espera, puede crear y ejecutar una o varias búsquedas de contenido relevante para el caso. Las búsquedas asociadas a un caso de exhibición de documentos electrónicos (estándar) no aparecen en la página **Búsqueda de contenido** del portal de cumplimiento de Microsoft Purview. Estas búsquedas se muestran en la página **Búsquedas** del caso principal de eDiscover al que están asociadas las búsquedas. Esto también significa que solo los miembros del caso pueden acceder a las búsquedas asociadas a un caso.
 
-Para crear una búsqueda de exhibición de documentos electrónicos principal:
+Para crear una búsqueda de eDiscovery (estándar):
   
-1. Vaya a e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado los permisos de exhibición de documentos electrónicos adecuados y es miembro <https://compliance.microsoft.com> del caso.
+1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado los permisos de exhibición de documentos electrónicos adecuados y es miembro del caso.
 
-2. En el panel de navegación izquierdo de la Centro de cumplimiento de Microsoft 365, haga clic en Mostrar todo y, a continuación, haga clic en **Exhibición de documentos electrónicos > Core**.
+2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Mostrar todo** y, a continuación, haga clic en **eDiscovery > Core**.
 
-3. En la **página Exhibición de** documentos electrónicos principal, seleccione el caso en el que desea crear una búsqueda asociada y, a continuación, haga clic **en Abrir caso**.
+3. En la página **eDiscovery (Estándar),** seleccione el caso en el que desea crear una búsqueda asociada y, a continuación, haga clic en **Abrir caso**.
 
-4. En la **página principal** del caso, haga clic en la **pestaña Búsquedas** y, a continuación, haga clic **en Nueva búsqueda**.
+4. En la página **Inicio** del caso, haga clic en la pestaña **Búsquedas** y, a continuación, haga clic en **Nueva búsqueda**.
 
-   ![Haga clic en Nueva búsqueda para crear una búsqueda de eDiscovery principal.](../media/CoreeDiscoverySearch1.png)
+   ![Haga clic en Nueva búsqueda para crear una búsqueda de exhibición de documentos electrónicos (estándar).](../media/CoreeDiscoverySearch1.png)
 
-5. En el **Asistente para nueva** búsqueda, escriba un nombre para la búsqueda y una descripción opcional que ayude a identificar la búsqueda. El nombre de la búsqueda debe ser único en la organización.
+5. En el Asistente para **nueva búsqueda** , escriba un nombre para la búsqueda y una descripción opcional que ayude a identificar la búsqueda. El nombre de la búsqueda debe ser único en la organización.
 
 6. En la página **Ubicaciones**, elija las ubicaciones de contenido que quiere buscar. Puede buscar en buzones, sitios y carpetas públicas.
 
@@ -71,12 +71,12 @@ Para crear una búsqueda de exhibición de documentos electrónicos principal:
 
 8. Revise la configuración de búsqueda (y edítela si es necesario) y envíe la búsqueda para iniciarla.
 
-Una vez finalizada la búsqueda, puede obtener una vista previa de los resultados de la búsqueda. Si es necesario, haga **clic en Actualizar** en la página **Búsquedas** para mostrar la búsqueda que creó.
+Una vez finalizada la búsqueda, puede obtener una vista previa de los resultados de la búsqueda. Si es necesario, haga clic en **Actualizar** en la página **Búsquedas** para mostrar la búsqueda que ha creado.
 
-## <a name="more-information-about-searching-content-locations"></a>Más información sobre la búsqueda de ubicaciones de contenido
+## <a name="more-information-about-searching-content-locations"></a>Más información sobre cómo buscar ubicaciones de contenido
 
-- Al hacer clic **en Elegir usuarios, grupos** o equipos para especificar buzones de correo en los que buscar, el selector de buzones que se muestra está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar destinatarios a esta lista, haga clic en Elegir **usuarios,** grupos o equipos , escriba un nombre (un mínimo de tres caracteres) en el cuadro de búsqueda, active la casilla situada junto al nombre y, a continuación, haga clic en **Elegir**.
+- Al hacer clic en **Elegir usuarios, grupos o equipos** para especificar los buzones de correo que se van a buscar, el selector de buzones que se muestra está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar destinatarios a esta lista, haga clic en **Elegir usuarios, grupos o equipos**, escriba un nombre (un mínimo de tres caracteres) en el cuadro de búsqueda, active la casilla situada junto al nombre y, a continuación, haga clic en **Elegir**.
 
-- Puede agregar buzones inactivos, Microsoft Teams, grupos de Yammer, grupos de Office 365 y grupos de distribución a la lista de buzones para buscar. No se admiten grupos de distribución dinámicos. Si agrega Microsoft Teams, grupos de Yammer o grupos de Office 365, se busca en el buzón de grupo o de grupo; no se buscarán los buzones de los miembros del grupo.
+- Puede agregar buzones inactivos, Microsoft Teams, grupos de Yammer, grupos de Office 365 y grupos de distribución a la lista de buzones que se van a buscar. No se admiten grupos de distribución dinámicos. Si agrega Microsoft Teams, grupos de Yammer o grupos de Office 365, se busca el buzón de grupo o de equipo; no se busca en los buzones de los miembros del grupo.
 
-- Para agregar sitios a la búsqueda, active la alternancia y, a continuación, haga clic **en Elegir sitios**. Escriba la dirección URL de cada sitio en el que desea buscar. También puede agregar la dirección URL del sitio SharePoint para un equipo de Microsoft, un grupo de Yammer o un grupo Office 365 grupo.
+- Para agregar sitios a la búsqueda, active el botón de alternancia y, a continuación, haga clic en **Elegir sitios**. Escriba la dirección URL de cada sitio en el que desee buscar. También puede agregar la dirección URL del sitio de SharePoint para un equipo de Microsoft, un grupo de Yammer o un grupo de Office 365.

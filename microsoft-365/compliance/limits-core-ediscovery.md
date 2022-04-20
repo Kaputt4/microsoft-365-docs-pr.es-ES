@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describen los límites en el caso principal de eDiscovery en Microsoft 365.
-ms.openlocfilehash: 2d920fbe5973d07b7da656d6247038ab785bbe5c
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 67f15bb39ed75f40a8ef42747c0d4e2dfcb1297d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822658"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949617"
 ---
-# <a name="limits-in-core-ediscovery"></a>Límites en eDiscovery principal
+# <a name="limits-in-ediscovery-standard"></a>Límites en eDiscovery (estándar)
 
-En la tabla siguiente se enumeran los límites de los casos principales de eDiscovery y las retenciones asociadas a un caso principal de eDiscovery. Para obtener más información sobre core eDiscovery, vea [Información general de eDiscovery](./get-started-core-ediscovery.md) principal.
+En la tabla siguiente se enumeran los límites de los casos principales de eDiscovery y las retenciones asociadas a un caso principal de eDiscovery. Para obtener más información sobre la exhibición de documentos electrónicos de Microsoft Purview (estándar), vea [Información general sobre eDiscovery (Estándar).](./get-started-core-ediscovery.md)
     
   | Descripción del límite | Límite |
   |:-----|:-----|
@@ -44,4 +44,4 @@ En la tabla siguiente se enumeran los límites de los casos principales de eDisc
    > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
    > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)
 
-Para obtener más información sobre los límites relacionados con las búsquedas y las exportaciones asociadas a un caso de eDiscovery principal, vea [Límites para la búsqueda de contenido y eDiscovery principal](limits-for-content-search.md).
+Para obtener más información sobre los límites relacionados con las búsquedas y las exportaciones asociadas a un caso de exhibición de documentos electrónicos (estándar[), vea Límites de búsqueda de contenido y exhibición de documentos electrónicos (estándar).](limits-for-content-search.md)

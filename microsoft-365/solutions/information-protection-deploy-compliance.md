@@ -1,5 +1,5 @@
 ---
-title: Usar el Administrador de cumplimiento para administrar acciones de mejora
+title: Uso del Administrador de cumplimiento para administrar acciones de mejora
 ms.author: chvukosw
 author: chvukosw
 f1.keywords:
@@ -16,87 +16,87 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: admindeeplinkCOMPLIANCE
-description: Obtenga información sobre cómo usar el Administrador de cumplimiento y puntuación de cumplimiento para mejorar el nivel de protección de los datos personales.
-ms.openlocfilehash: 5a655d504551e42398cdabbcf7a3f651d788c0ad
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+description: Obtenga información sobre cómo usar la puntuación de cumplimiento y el Administrador de cumplimiento para mejorar el nivel de protección de los datos personales.
+ms.openlocfilehash: 469584abbf784fe6c556aab14a49a5ed44280a69
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786019"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947459"
 ---
-# <a name="use-compliance-manager-to-manage-improvement-actions"></a>Usar el Administrador de cumplimiento para administrar acciones de mejora
+# <a name="use-compliance-manager-to-manage-improvement-actions"></a>Uso del Administrador de cumplimiento para administrar acciones de mejora
 
-El Administrador de cumplimiento de Microsoft puede ayudarle a administrar mejoras relacionadas con las normativas de privacidad de datos, como el Reglamento general de protección de datos [(RGPD)](/compliance/regulatory/gdpr)de la Unión Europea, la Ley de protección de consumidores de [California CCPA),](/compliance/regulatory/ccpa-faq)hipaa-hitech (ley de privacidad del cuidado de la salud de Estados Unidos) y la Ley de protección de datos de Brasil (LGPD).
+Microsoft Purview Compliance Manager puede ayudarle a administrar mejoras relacionadas con las regulaciones de privacidad de datos, como el [Reglamento General de Protección de Datos (RGPD)](/compliance/regulatory/gdpr) de la Unión Europea, la [Ley de Protección del Consumidor de California (CCPA)](/compliance/regulatory/ccpa-faq), HIPAA-HITECH (ley de privacidad del cuidado de salud de EE. UU.) y la Ley de protección de datos de Brasil (LGPD).
 
 En este artículo se proporcionan instrucciones sobre el uso de esta herramienta con fines de privacidad de datos.
 
 > [!NOTE]
-> Las recomendaciones del Administrador de cumplimiento no deberán interpretarse como una garantía de cumplimiento. Debe evaluar y validar la eficacia de los controles de los clientes según su entorno normativo. Estos servicios están sujetos a los términos y condiciones de los Términos [de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910). Vea también Microsoft 365 [de licencias para seguridad y cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+> Las recomendaciones del Administrador de cumplimiento no deberán interpretarse como una garantía de cumplimiento. Depende de usted evaluar y validar la eficacia de los controles de los clientes según su entorno normativo. Estos servicios están sujetos a los términos y condiciones de los [Términos de servicios en línea](https://go.microsoft.com/fwlink/?linkid=2108910). Consulte también [Microsoft 365 guía de licencias para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 ## <a name="getting-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
-#### <a name="what-is-compliance-manager"></a>Qué es el Administrador de cumplimiento
+#### <a name="what-is-compliance-manager"></a>¿Qué es el Administrador de cumplimiento?
 
-[Compliance Manager](../compliance/compliance-manager.md) es una herramienta de evaluación de riesgos basada en flujos de trabajo en el Centro de cumplimiento de Microsoft 365 para administrar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft. Como parte de la suscripción Microsoft 365 o Azure Active Directory (Azure AD), el Administrador de cumplimiento le ayuda a administrar el cumplimiento normativo dentro del modelo de responsabilidad compartida para los servicios en la nube de Microsoft.
+[El Administrador de cumplimiento](../compliance/compliance-manager.md) es una herramienta de evaluación de riesgos basada en flujos de trabajo en el portal de cumplimiento de Microsoft Purview para administrar las actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft. Como parte de la suscripción de Microsoft 365 o Azure Active Directory (Azure AD), el Administrador de cumplimiento le ayuda a administrar el cumplimiento normativo dentro del modelo de responsabilidad compartida para los servicios en la nube de Microsoft.
 
 **Evaluaciones listas para usar**
 
-El Administrador de cumplimiento proporciona plantillas predefinidas para crear evaluaciones alineadas con las [normativas](../compliance/compliance-manager-assessments.md) relacionadas con la privacidad de datos, como RGPD e HIPAA/HITECH. Las plantillas tienen asignación de control integrada para ayudarle a tomar medidas de mejora para cumplir los requisitos del reglamento. Cada evaluación proporciona información sobre los controles que cada reglamento llama para específicos del servicio de destino, desglosados por los controles que administra y los controles que administra Microsoft.
+El Administrador de cumplimiento proporciona plantillas pregeneradas para [crear evaluaciones](../compliance/compliance-manager-assessments.md) que están alineadas con las regulaciones relacionadas con la privacidad de los datos, como RGPD e HIPAA/HITECH. Las plantillas tienen una asignación de control integrada para ayudarle a realizar acciones de mejora para cumplir los requisitos del reglamento. Cada evaluación proporciona información sobre los controles que cada regulación llama a para específico del servicio de destino, desglosados por los controles que administra y controla Microsoft.
 
-El uso de una plantilla predefinida le ayuda a empezar rápidamente con las evaluaciones de riesgos. A medida que sea más competente en el uso del Administrador de cumplimiento, puede personalizar una plantilla predefinida agregando sus propios controles y acciones de mejora, o puede crear sus propias evaluaciones personalizadas para satisfacer las necesidades de su organización.
+El uso de una plantilla pregenerada le ayuda a empezar a trabajar rápidamente con las evaluaciones de riesgos. A medida que se vuelve más experto en el uso del Administrador de cumplimiento, puede personalizar una plantilla pregenerada agregando sus propios controles y acciones de mejora, o bien puede crear sus propias evaluaciones personalizadas para satisfacer las necesidades de su organización.
 
-Vea la [lista completa de plantillas de evaluación proporcionadas](../compliance/compliance-manager-templates-list.md) por el Administrador de cumplimiento.
+Vea la [lista completa de plantillas de evaluación](../compliance/compliance-manager-templates-list.md) proporcionadas por el Administrador de cumplimiento.
 
 **Puntuación de cumplimiento en tiempo real**
 
-El Administrador de cumplimiento también le proporciona una puntuación de cumplimiento que mide su progreso en la realización de acciones de mejora recomendadas dentro de los controles. Puedes usar esta puntuación para ayudar a supervisar el progreso y priorizar las acciones en función de su potencial para reducir el riesgo.
+El Administrador de cumplimiento también proporciona una puntuación de cumplimiento que mide el progreso al completar las acciones de mejora recomendadas dentro de los controles. Puede usar esta puntuación para ayudar a supervisar el progreso y priorizar las acciones en función de su potencial para reducir el riesgo.
 
-#### <a name="use-the-compliance-manager-quickstart-guide"></a>Usar la guía de inicio rápido del Administrador de cumplimiento
+#### <a name="use-the-compliance-manager-quickstart-guide"></a>Uso de la guía de inicio rápido del Administrador de cumplimiento
 
-La [guía de inicio rápido del Administrador](../compliance/compliance-manager-quickstart.md) de cumplimiento proporciona pasos graduados y vínculos a recursos clave para ayudarle a trabajar con el Administrador de cumplimiento:
+La guía de [inicio rápido del Administrador](../compliance/compliance-manager-quickstart.md) de cumplimiento proporciona pasos graduados y vínculos a recursos clave para ayudarle a trabajar con el Administrador de cumplimiento:
 
 - [Primera visita: familiarizarse con el Administrador de cumplimiento](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
     - Trabajar con el panel del Administrador de cumplimiento
     - Descripción de la puntuación de cumplimiento
-    - Learning sobre acciones de mejora
-    - Descripción de evaluaciones y plantillas
-- [Aceleración: configurar el Administrador de cumplimiento para administrar las actividades de cumplimiento](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
-    - Crear y administrar la primera evaluación
-    - Realizar trabajos de implementación y pruebas en acciones de mejora para completar controles en las evaluaciones
-    - Comprender cómo afectan las distintas acciones a la puntuación de cumplimiento
+    - Learning sobre las acciones de mejora
+    - Descripción de las evaluaciones y plantillas
+- [Aumento: configuración del Administrador de cumplimiento para administrar las actividades de cumplimiento](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
+    - Creación y administración de la primera evaluación
+    - Realización de trabajos de implementación y pruebas en acciones de mejora para completar controles en las evaluaciones
+    - Descripción de cómo afectan las distintas acciones a la puntuación de cumplimiento
 - [Escalado vertical: use la funcionalidad avanzada para satisfacer sus necesidades personalizadas](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
-    - Creación de evaluaciones personalizadas para realizar un seguimiento de productos que no Microsoft 365 datos
+    - Creación de evaluaciones personalizadas para realizar un seguimiento de productos que no son Microsoft 365
     - Modificación de plantillas existentes para agregar o quitar controles
     - Configuración de pruebas automatizadas de acciones de mejora
 
 ## <a name="how-your-compliance-score-is-calculated"></a>Cómo se calcula su puntuación de cumplimiento
 
-La puntuación de cumplimiento se calcula en función de una combinación de implementaciones de control administradas por el cliente y Microsoft. Vea [cálculo de puntuación de cumplimiento](../compliance/compliance-score-calculation.md) para obtener una explicación detallada.
+La puntuación de cumplimiento se calcula en función de una combinación de implementaciones de control administradas por el cliente y Microsoft. Consulte [el cálculo de la puntuación de cumplimiento](../compliance/compliance-score-calculation.md) para obtener una explicación detallada.
 
-A los controles se les asigna un valor de puntuación en función de si son obligatorios o discrecionales, y si son preventivos, detectives o correctivos. Estos representan colectivamente el riesgo de no implementarlo en relación con otros controles.
+A los controles se les asigna un valor de puntuación en función de si son obligatorios o discrecionales, y de si son preventivos, detectives o correctivos. Estos representan colectivamente el riesgo de no implementarla en relación con otros controles.
 
-Como se muestra en el artículo de cálculo de puntuación de cumplimiento, los controles preventivos obtienen una puntuación mayor que los de detective y correctivo, y los controles obligatorios obtienen una puntuación mayor que los discrecionales.
+Como se presenta en el artículo de cálculo de la puntuación de cumplimiento, los controles preventivos obtienen una puntuación más alta que los controles de detectives y correctivos, y los controles obligatorios obtienen una puntuación más alta que los discrecionales.
 
 La interfaz de usuario de administrador de puntuación de cumplimiento no enumera estos parámetros ni proporciona la capacidad de filtrar por ellos. Sin embargo, si descarga la plantilla asociada del Administrador de cumplimiento, el conjunto de datos resultante enumera estos parámetros para la mayoría de las regulaciones.
 
-Para los controles técnicos, el Administrador de cumplimiento actualiza automáticamente la puntuación de acción de mejora una vez que la acción se ha implementado y probado correctamente. Otras acciones de control no técnicas, como las que están operativas o relacionadas con la documentación, deben registrarse manualmente como implementadas antes de que los puntos cuenten &mdash; &mdash; para su puntuación.
+En el caso de los controles técnicos, el Administrador de cumplimiento actualiza automáticamente la puntuación de acción de mejora una vez que la acción se ha implementado y probado correctamente. Otras acciones&mdash; de control no técnicas, como las que están operativas o relacionadas con la documentación&mdash;, deben registrarse manualmente como implementadas antes de que los puntos cuenten para la puntuación.
 
-You many also be implementing certain improvement actions for other purposes for example using retention labels for reasons &mdash; other than data privacy regulation compliance so you would get credit for using such a feature even if &mdash; it is being used for other purposes, and not part of a deliberate compliance action.
+Muchos también están implementando ciertas acciones de mejora para otros fines&mdash;, por ejemplo, usando etiquetas de retención por motivos distintos del cumplimiento de&mdash; la normativa de privacidad de datoso obtendría crédito para usar dicha característica incluso si se usa para otros fines y no forma parte de una acción deliberada de cumplimiento.
 
-La puntuación de cumplimiento debe considerarse una medida relativa para realizar un seguimiento de la mejora a gran escala. No debe buscar una puntuación perfecta.
+La puntuación de cumplimiento debe considerarse una medida relativa para realizar un seguimiento de la mejora a gran escala. No deberías buscar una puntuación perfecta.
 
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 
-Estos son algunos consejos importantes para usar el Administrador de cumplimiento para ayudarle a lograr el cumplimiento de la normativa de privacidad de datos:
+Estas son algunas sugerencias importantes para usar el Administrador de cumplimiento para ayudarle a lograr el cumplimiento de la normativa de privacidad de datos:
 
-- Cada reglamento de privacidad de datos tiene una combinación de controles técnicos, especificaciones de documentación y requisitos operativos, de proceso e informes. Todas estas acciones se muestran en las acciones de mejora.
+- Cada reglamento de privacidad de datos tiene una combinación de controles técnicos, especificaciones de documentación y requisitos operativos, de procesos e informes. Todas estas se muestran en las acciones de mejora.
 
-- Para centrar la vista de las acciones de mejora en su  área de interés, puede filtrar por tipo de acción en la pestaña Soluciones en el administrador del Administrador de cumplimiento. Obtenga más información sobre [cómo filtrar la vista de panel del Administrador de cumplimiento.](../compliance/compliance-manager-setup.md#filtering-your-dashboard-view)
+- Para centrar la vista de las acciones de mejora en su área de interés, puede filtrar por tipo de acción en la pestaña **Soluciones** del administrador de cumplimiento. Obtenga más información sobre [el filtrado de la vista del panel del Administrador de cumplimiento](../compliance/compliance-manager-setup.md#filtering-your-dashboard-view).
 
-- La importancia relativa y la prioridad de las acciones de mejora identificadas en el Administrador de cumplimiento deben considerarse como parte de una revisión de riesgos más amplia junto con el riesgo de privacidad de datos que ha determinado que su organización debe administrar.
+- La importancia relativa y la prioridad de las acciones de mejora identificadas en el Administrador de cumplimiento deben considerarse como parte de una revisión de riesgos más amplia junto con el riesgo de privacidad de datos que ha determinado que su organización necesita administrar.
 
-- Incluso con la agregación de acciones de mejora en varios requisitos normativos, si se seleccionan las plantillas de evaluación de normativas para RGPD, LGPD, CCPA y HIPAA-HITECH, por ejemplo, se mostrarán casi 400 acciones de mejora en el Administrador de cumplimiento. Para abordar mejor esta lista larga, use el filtro de acción de mejora para reducir el conjunto de resultados a una lista más manejable.
+- Incluso con la agregación de acciones de mejora en varios requisitos normativos, si se seleccionan las plantillas de evaluación de regulación para RGPD, LGPD, CCPA e HIPAA-HITECH, por ejemplo, casi 400 acciones de mejora aparecerán en el Administrador de cumplimiento. Para abordar mejor esta lista larga, use el filtro de acción de mejora para reducir el conjunto de resultados a una lista más fácil de administrar.
 
-- El filtro Categorías proporciona un medio para filtrar acciones de mejora por agrupación lógica, a las que se alinean los artículos Track, Prevent, Protect, Retain e Investigate de esta solución general.
+- El filtro Categorías proporciona un medio para filtrar las acciones de mejora mediante la agrupación lógica, a la que se alinean los artículos Seguimiento, Impedir, Proteger, Conservar e Investigar de esta solución general.
 
-- Algunos de los controles enumerados en las acciones de mejora pueden considerarse más directamente vinculados a un artículo normativo específico, mientras que otros controles pueden asociarse más indirectamente con el ánimo de un reglamento y muchas veces son simplemente actividades recomendadas o procedimientos recomendados.
+- Algunos de los controles enumerados en las acciones de mejora pueden considerarse más directamente vinculados a un artículo normativo específico, mientras que otros controles pueden estar más asociados indirectamente con el espíritu de un reglamento y muchas veces son simplemente actividades recomendadas o procedimientos recomendados.

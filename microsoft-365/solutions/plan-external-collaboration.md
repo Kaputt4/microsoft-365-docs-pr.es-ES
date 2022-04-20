@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre la diferencia entre la colaboración de invitados y los canales compartidos en Teams y cómo elegir cuál usar.
-ms.openlocfilehash: fd658de9df03071ecbe3de92834f8c48b8873bdb
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: 85eac4fb8315947e2bb8e088d31bb25a2cdeef5e
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911411"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945262"
 ---
 # <a name="plan-external-collaboration-with-channel-conversations-file-collaboration-and-shared-apps"></a>Planear la colaboración externa con conversaciones de canal, colaboración de archivos y aplicaciones compartidas
 
@@ -102,7 +102,7 @@ Si tiene previsto usar canales compartidos con otras organizaciones, puede elegi
 
 ## <a name="compliance-in-shared-channels"></a>Cumplimiento en canales compartidos
 
-Los canales compartidos se integran con las características de cumplimiento de Microsoft 365.
+Los canales compartidos se integran con las características de Microsoft Purview.
 
 ##### <a name="communications-compliance"></a>Cumplimiento de comunicaciones
 
@@ -119,7 +119,7 @@ Las directivas basadas en IP se admiten en el nivel de archivo SharePoint. Por l
 
 ##### <a name="data-loss-prevention-dlp"></a>Prevención de pérdida de datos (DLP)
 
-Los administradores pueden aplicar [directivas DLP](/microsoft-365/compliance/dlp-policy-design) a un equipo donde todos los canales, incluidos los canales compartidos, heredan la directiva. Los canales compartidos heredan la directiva de la organización host.
+Los administradores pueden aplicar [directivas DLP de Microsoft Purview](/microsoft-365/compliance/dlp-policy-design) a un equipo donde todos los canales, incluidos los canales compartidos, heredan la directiva. Los canales compartidos heredan la directiva de la organización host.
 
 ##### <a name="retention-policy"></a>Directiva de retención
 

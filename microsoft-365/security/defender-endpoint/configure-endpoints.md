@@ -1,7 +1,7 @@
 ---
-title: Herramientas y métodos de incorporación para Windows dispositivos
-description: Incorporar Windows dispositivos para que puedan enviar datos del sensor al sensor de Microsoft Defender para endpoint
-keywords: Incorporación Windows, directiva de grupo, administrador de configuración de puntos de conexión, administración de dispositivos móviles, script local, gp, sccm, mdm, intune
+title: Incorporación de herramientas y métodos para dispositivos Windows
+description: Incorporación de dispositivos Windows para que puedan enviar datos del sensor al sensor de Microsoft Defender para punto de conexión
+keywords: Incorporación de dispositivos Windows, directiva de grupo, administrador de configuración de puntos de conexión, administración de dispositivos móviles, script local, gp, sccm, mdm, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 035a47f904029e839e3fe19393e4b152515aa808
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: fbc5a0981a6318d767252e968e45874d889aee85
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64471906"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949109"
 ---
-# <a name="onboarding-tools-and-methods-for-windows-devices-in-defender-for-endpoint"></a>Herramientas y métodos de incorporación para Windows dispositivos en Defender para endpoint
+# <a name="onboarding-tools-and-methods-for-windows-devices-in-defender-for-endpoint"></a>Incorporación de herramientas y métodos para dispositivos Windows en Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,40 +33,40 @@ ms.locfileid: "64471906"
 
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- [Prevención de pérdida de datos en punto de conexión en Microsoft 365 (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
-- [Microsoft 365 de riesgos de Insider](/microsoft-365/compliance/insider-risk-management)
+- [Prevención de perdida de datos en el punto de conexión (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Administración de riesgos internos](/microsoft-365/compliance/insider-risk-management)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Los dispositivos de la organización deben configurarse para que el servicio Defender for Endpoint pueda obtener datos de sensores de ellos. Existen varios métodos y herramientas de implementación que puede usar para configurar los dispositivos de la organización.
+Los dispositivos de su organización deben configurarse para que el servicio Defender para punto de conexión pueda obtener datos del sensor de ellos. Hay varios métodos y herramientas de implementación que puede usar para configurar los dispositivos de su organización.
 
-En general, identificarás el dispositivo Windows que estás incorporando y, a continuación, seguirás la herramienta correspondiente adecuada para el dispositivo o el entorno.
+En general, identificará el dispositivo Windows que va a incorporar y, a continuación, seguirá la herramienta correspondiente adecuada para el dispositivo o el entorno.
 
 :::image type="content" source="images/onboarding-config-tools.png" alt-text="Herramientas y métodos de incorporación" lightbox="images/onboarding-config-tools.png":::
 
 ## <a name="endpoint-onboarding-tools"></a>Herramientas de incorporación de puntos de conexión
 
-Según el punto de conexión Windows que desee incorporar, use la herramienta o método correspondiente descrito en la tabla siguiente.
+En función del punto de conexión de Windows que quiera incorporar, use la herramienta o el método correspondiente descritos en la tabla siguiente.
 
-Windows dispositivo | Herramienta o método de incorporación
+dispositivo Windows | Herramienta o método de incorporación
 :---|:---
-|<ul><li> Windows 10</li> <li>Windows Server 1803 y 2019 y 2022</li> <li>Windows Server 2012 R2 y 2016<sup>[[1](#fn1)]<sup></li></ul>  |   [Script local (hasta 10 dispositivos)](configure-endpoints-script.md)<br>   [Directiva de grupo](configure-endpoints-gp.md)<br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Microsoft Endpoint Manager/ Administración de dispositivos móviles (Intune)](configure-endpoints-mdm.md)<br>    [Scripts VDI](configure-endpoints-vdi.md) <br><br> **NOTA**: Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo, Microsoft Endpoint Configuration Manager o Intune.
-|<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br>[Incorporar versiones anteriores de Windows](onboard-downlevel.md) o [Microsoft Defender para la nube](/azure/security-center/security-center-wdatp) <br><br> **NOTA**: Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulta [Introducción al agente de Log Analytics](/azure/azure-monitor/platform/log-analytics-agent).  
-|<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 Pro </li> <li> Windows 8,1 Enterprise</li></ul>  | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **NOTA**: Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulta [Introducción al agente de Log Analytics](/azure/azure-monitor/platform/log-analytics-agent).
+|<ul><li> Windows 10</li> <li>Windows Server 1803 y 2019 y 2022</li> <li>Windows Server 2012 R2 y 2016<sup>[[1](#fn1)]<sup></li></ul>  |   [Script local (hasta 10 dispositivos)](configure-endpoints-script.md)<br>   [Directiva de grupo](configure-endpoints-gp.md)<br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Microsoft Endpoint Manager/Mobile Administración de dispositivos (Intune)](configure-endpoints-mdm.md)<br>    [Scripts de VDI](configure-endpoints-vdi.md) <br><br> **NOTA**: Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar directiva de grupo, Microsoft Endpoint Configuration Manager o Intune.
+|<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br>[Incorporación de versiones anteriores de Windows](onboard-downlevel.md) o [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br><br> **NOTA**: Microsoft Monitoring Agent ahora es agente de Azure Log Analytics. Para más información, consulte [Introducción al agente de Log Analytics](/azure/azure-monitor/platform/log-analytics-agent).  
+|<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 Pro </li> <li> Windows 8,1 Enterprise</li></ul>  | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **NOTA**: Microsoft Monitoring Agent ahora es agente de Azure Log Analytics. Para más información, consulte [Introducción al agente de Log Analytics](/azure/azure-monitor/platform/log-analytics-agent).
 
-(<a id="fn1">1</a>) Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse con las instrucciones de [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
+(<a id="fn1">1</a>) Windows Server 2016 y Windows Server 2012 R2 tendrán que incorporarse mediante las instrucciones de [Incorporación de servidores Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
 >[!IMPORTANT]
->Para poder comprar Microsoft Defender para SKU de Endpoint Server, ya debe haber adquirido un mínimo combinado de cualquiera de las siguientes licencias de suscripción, Windows E5/A5, Microsoft 365 E5/A5 o Seguridad de Microsoft 365 E5.  Para obtener más información sobre las licencias, consulte [los Términos del producto](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).  
+>Para poder comprar Microsoft Defender para punto de conexión SKU de servidor, debe haber adquirido ya un mínimo combinado de cualquiera de los siguientes elementos, Windows E5/A5, Microsoft 365 E5/A5 o Seguridad de Microsoft 365 E5 licencias de suscripción.  Para obtener más información sobre las licencias, consulte los [Términos del producto](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).  
 
 Tema|Descripción
 :---|:---
 [Incorporar dispositivos con la directiva de grupo](configure-endpoints-gp.md)|Utilice Directiva de grupo para implementar el paquete de configuración en los dispositivos.
-[Incorporar dispositivos con el Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)|Puede usar Microsoft Endpoint Manager (rama actual) versión 1606 o Microsoft Endpoint Manager (rama actual) versión 1602 o anterior para implementar el paquete de configuración en dispositivos.
+[Incorporar dispositivos con el Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)|Puede usar Microsoft Endpoint Manager (rama actual) versión 1606 o Microsoft Endpoint Manager (rama actual) versión 1602 o anterior para implementar el paquete de configuración en los dispositivos.
 [Incorporar dispositivos con las herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)|Usa las herramientas de administración de dispositivos móviles o Microsoft Intune para implementar el paquete de configuración en el dispositivo.
 [Incorporar dispositivos con un script local](configure-endpoints-script.md)|Obtenga información sobre cómo usar el script local para implementar el paquete de configuración en puntos de conexión.
 [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)|Obtenga información sobre cómo usar el paquete de configuración para configurar dispositivos VDI.
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpoints-belowfoldlink)
+> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpoints-belowfoldlink)
 
-Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que un dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado](run-detection-test.md).
+Después de incorporar el dispositivo, puede optar por ejecutar una prueba de detección para comprobar que un dispositivo está incorporado correctamente al servicio. Para obtener más información, consulte [Ejecución de una prueba de detección en un dispositivo Microsoft Defender para punto de conexión recién incorporado](run-detection-test.md).

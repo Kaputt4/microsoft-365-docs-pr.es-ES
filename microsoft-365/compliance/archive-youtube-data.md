@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de YouTube desde Veritas a Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la exhibición de documentos electrónicos y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 20343411a77210845bfad22e34dfcada6f8ca9b9
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 7b6dd6360713f7ee23bdc90e56e12a9193c9252f
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759465"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64950563"
 ---
 # <a name="set-up-a-connector-to-archive-youtube-data"></a>Configuración de un conector para archivar datos de YouTube
 
-Use un conector de Veritas en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos de YouTube en buzones de usuario de su organización Microsoft 365. Veritas proporciona un conector configurado para capturar elementos de un origen de datos de terceros e importarlos a Microsoft 365. El conector convierte contenido como chats, datos adjuntos, tareas, notas y publicaciones de YouTube en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a los buzones de usuario en Microsoft 365.
+Use un conector veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de YouTube en buzones de usuario de su organización de Microsoft 365. Veritas proporciona un conector configurado para capturar elementos de un origen de datos de terceros e importarlos a Microsoft 365. El conector convierte contenido como chats, datos adjuntos, tareas, notas y publicaciones de YouTube en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a los buzones de usuario en Microsoft 365.
 
-Una vez que los datos de YouTube se almacenan en buzones de usuario, puede aplicar Microsoft 365 características de cumplimiento, como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención. El uso de un conector de YouTube para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+Una vez que los datos de YouTube se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview, como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención. El uso de un conector de YouTube para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
 
 ## <a name="overview-of-archiving-youtube-data"></a>Introducción al archivado de datos de YouTube
 
@@ -35,7 +35,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 2. Una vez cada 24 horas, los elementos de YouTube se copian en el sitio de Veritas Merge1. El conector también convierte los elementos de YouTube en un formato de mensaje de correo electrónico.
 
-3. El conector de YouTube que crea en el Centro de cumplimiento de Microsoft 365 se conecta al sitio de Veritas Merge1 todos los días y transfiere el contenido de YouTube a una ubicación segura Azure Storage en la nube de Microsoft.
+3. El conector de YouTube que crea en el portal de cumplimiento se conecta al sitio de Veritas Merge1 todos los días y transfiere el contenido de YouTube a una ubicación de Azure Storage segura en la nube de Microsoft.
 
 4. El conector importa los elementos convertidos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* de la asignación automática de usuarios, tal como se describe en [el paso 3](#step-3-map-users-and-complete-the-connector-setup). Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **YouTube** en los buzones de usuario y los elementos se importan a esa carpeta. El conector determina a qué buzón se van a importar elementos mediante el valor de la propiedad *Email* . Cada elemento de YouTube contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del elemento.
 
@@ -45,11 +45,11 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 - Crea una aplicación de YouTube para capturar datos de tu cuenta de YouTube. Para obtener instrucciones paso a paso sobre cómo crear la aplicación, consulte [La Guía del usuario de conectores de terceros Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20YouTube%20User%20Guide.pdf).
 
-- Al usuario que crea el conector de YouTube en el paso 1 (y lo completa en el paso 3) se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** de la Centro de cumplimiento de Microsoft 365. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que crea el conector de YouTube en el paso 1 (y lo completa en el paso 3) se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="step-1-set-up-the-youtube-connector"></a>Paso 1: Configurar el conector de YouTube
 
-El primer paso consiste en acceder a la página **Conectores de datos** de la Centro de cumplimiento de Microsoft 365 y crear un conector para los datos de YouTube.
+El primer paso consiste en acceder a la página **Conectores de datos** del portal de cumplimiento y crear un conector para los datos de YouTube.
 
 1. Vaya a y, a <https://compliance.microsoft.com> continuación, haga clic en **Conectores de** >  **datosYouTube**.
 
@@ -65,11 +65,11 @@ El primer paso consiste en acceder a la página **Conectores de datos** de la Ce
 
 El segundo paso es configurar el conector de YouTube en el sitio de Veritas Merge1. Para obtener información sobre cómo configurar el conector de YouTube, consulte [la Guía del usuario de Conectores de terceros Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20YouTube%20User%20Guide.pdf).
 
-Después de hacer clic en **Guardar & finalizar,** se muestra la página **Asignación** de usuarios en el Asistente para conectores de la Centro de cumplimiento de Microsoft 365.
+Después de hacer clic en **Guardar & finalizar,** se muestra la página **Asignación** de usuarios en el asistente del conector en el portal de cumplimiento.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: Asignar usuarios y completar la configuración del conector
 
-Para asignar usuarios y completar la configuración del conector en el Centro de cumplimiento de Microsoft 365, siga estos pasos:
+Para asignar usuarios y completar la configuración del conector en el portal de cumplimiento, siga estos pasos:
 
 1. En la página **Asignar usuarios de YouTube a Microsoft 365 usuarios**, habilite la asignación automática de usuarios. Los elementos de YouTube incluyen una propiedad denominada *Email*, que contiene direcciones de correo electrónico para los usuarios de su organización. Si el conector puede asociar esta dirección a un usuario Microsoft 365, los elementos se importan al buzón de ese usuario.
 
@@ -77,7 +77,7 @@ Para asignar usuarios y completar la configuración del conector en el Centro de
 
 ## <a name="step-4-monitor-the-youtube-connector"></a>Paso 4: Supervisión del conector de YouTube
 
-Después de crear el conector de YouTube, puede ver el estado del conector en el Centro de cumplimiento de Microsoft 365.
+Después de crear el conector de YouTube, puede ver el estado del conector en el portal de cumplimiento.
 
 1. Vaya a <https://compliance.microsoft.com/> y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
 

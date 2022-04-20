@@ -1,5 +1,5 @@
 ---
-title: Trabajar con custodios en Advanced eDiscovery
+title: Trabajar con custodios en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,23 +17,23 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre cómo usar la herramienta de administración de custodia Advanced eDiscovery administrar los datos de un caso legal.
-ms.openlocfilehash: d621e511f0607c77d05b27f5deae2b5f85d09eaa
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre cómo usar la herramienta de administración de custodios en eDiscovery (Premium) para administrar los datos de un caso legal.
+ms.openlocfilehash: 75655b48cf0061879edf5ea559712daa29ce4893
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192216"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64948449"
 ---
-# <a name="work-with-custodians-and-non-custodial-data-sources-in-advanced-ediscovery"></a>Trabajar con orígenes de datos de custodios y no custodios en eDiscovery avanzado
+# <a name="work-with-custodians-and-non-custodial-data-sources-in-ediscovery-premium"></a>Trabajar con custodios y orígenes de datos que no son de custodia en eDiscovery (Premium)
 
-Cuando una organización responde a una investigación legal, el flujo de trabajo en torno a la identificación, conservación y recopilación de contenido potencialmente relevante se basa en las personas de la organización que son los custodios de los datos relevantes. En la exhibición de documentos electrónicos, estos individuos se denominan *custodios* de datos (o simplemente *custodios)* y se definen como "personas que tienen control administrativo de un documento o archivo electrónico". Por ejemplo, el administrador de un mensaje de correo electrónico podría ser el propietario del buzón que contiene el mensaje correspondiente.
+Cuando una organización responde a una investigación legal, el flujo de trabajo en torno a la identificación, conservación y recopilación de contenido potencialmente relevante se basa en las personas de la organización que son los custodios de los datos pertinentes. En eDiscovery, estas personas se *denominan custodios de datos* (o simplemente *custodios*) y se definen como "personas que tienen control administrativo de un documento o archivo electrónico". Por ejemplo, el administrador de un mensaje de correo electrónico podría ser el propietario del buzón que contiene el mensaje correspondiente.
 
-Además, puede haber contenido ubicado en buzones y sitios que no están asociados con un custodio, pero que es relevante para el caso. Las ubicaciones de contenido en las que los custodios de casos no tienen control administrativo pero pueden ser propietarios de datos relevantes, se conocen como orígenes de datos *sin custodia.*
+Además, puede haber contenido ubicado en buzones y sitios que no están asociados a un custodio, pero que es relevante para el caso. Las ubicaciones de contenido en las que los custodios de casos no tienen control administrativo, pero pueden ser propietarios de datos pertinentes, se conocen como *orígenes de datos no custodios*.
 
-En un caso Advanced eDiscovery, los equipos legales pueden agregar personas en su organización como custodios e identificar y conservar orígenes de datos de custodia, como buzones de Exchange, cuentas de OneDrive y sitios SharePoint y Teams. También pueden identificar y conservar orígenes de datos sin custodia. Al usar la herramienta de administración de orígenes de datos y custodia integrada en Advanced eDiscovery, las organizaciones pueden proteger la información almacenada electrónicamente de eliminación involuntaria (o intencionada). Esto le permite eliminar el proceso lento y propenso a errores de tener que realizar manualmente los procesos de retención legal.
+En un caso de exhibición de documentos electrónicos (Premium), los equipos legales pueden agregar personas de su organización como custodios e identificar y conservar orígenes de datos custodiales, como buzones de Exchange, cuentas de OneDrive y sitios de SharePoint y Teams. También pueden identificar y conservar orígenes de datos que no son de custodia. Al usar la herramienta integrada de administración de custodios y orígenes de datos en eDiscovery (Premium), las organizaciones pueden proteger la información almacenada electrónicamente de la eliminación involuntaria (o intencionada). Esto le permite eliminar el proceso lento y propenso a errores de tener que realizar manualmente los procesos de suspensión legal.
 
-Para obtener más información sobre cómo trabajar con custodios, vea los siguientes artículos:
+Para obtener más información sobre cómo trabajar con custodios, consulte los artículos siguientes:
 
 - [Agregar administradores a un caso](add-custodians-to-case.md)
 
