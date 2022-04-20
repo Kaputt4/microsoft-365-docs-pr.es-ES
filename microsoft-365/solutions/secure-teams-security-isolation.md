@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: Obtenga información acerca de cómo crear un equipo con una etiqueta de confidencialidad exclusiva para la seguridad.
-ms.openlocfilehash: 2ca2e6320ddd119c4dcb20db2f816c9e9a4453ae
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cfea35dccd09e0eea361e56f1914700660b7fdd4
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324401"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943137"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configuración de un equipo con aislamiento de seguridad
 
@@ -111,7 +111,7 @@ Si tiene un partner interno o un grupo de accionistas que debería poder ver los
 
 Crear una etiqueta de confidencialidad
 
-1. Abra el Centro de cumplimiento de Microsoft 365 y, en **Soluciones**, seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information Protection**</a>.
+1. Abra el portal de cumplimiento de Microsoft Purview y, en **Soluciones**, seleccione <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information Protection**</a>.
 1. Haga clic en **Crear una etiqueta**.
 1. Asigne un nombre a la etiqueta. Para ello, le recomendamos que use el nombre del equipo con la que lo vaya a emplear.
 1. Escriba un nombre y una descripción para el complemento y, a continuación, haga clic en **Siguiente**.
@@ -143,7 +143,7 @@ Una vez que haya creado la etiqueta, debe comunicarla a los usuarios que la van 
 
 Para publicar una etiqueta de confidencialidad:
 
-1. En la Centro de cumplimiento de Microsoft 365, en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**,</a> elija la pestaña **Directivas de etiqueta**.
+1. En la portal de cumplimiento de Microsoft Purview, en la página de <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information Protection**</a>, elija la pestaña **Directivas de etiqueta**.
 2. Haga clic en **Publicar etiquetas**.
 3. En la página **Elegir etiquetas de confidencialidad para publicar**, haga clic en **Elija las etiquetas de confidencialidad para publicar**.
 4. Seleccione la etiqueta que ha creado y haga clic en **Agregar**.

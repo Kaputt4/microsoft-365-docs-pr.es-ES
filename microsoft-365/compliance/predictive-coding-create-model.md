@@ -1,5 +1,5 @@
 ---
-title: Crear un modelo de codificación predictiva en Advanced eDiscovery
+title: Creación de un modelo de codificación predictiva en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,54 +13,54 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Obtenga información sobre cómo crear un modelo de codificación predictiva en Advanced eDiscovery. Este es el primer paso para usar las capacidades de aprendizaje automático de Advanced eDiscovery para ayudarle a identificar contenido relevante y no relevante en un conjunto de revisión.
-ms.openlocfilehash: 4366c5779aaca6973f5a2c0cc526086d0742d069
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre cómo crear un modelo de codificación predictiva en eDiscovery (Premium). Este es el primer paso para usar las funcionalidades de aprendizaje automático en eDiscovery (Premium) para ayudarle a identificar contenido relevante y no relevante en un conjunto de revisión.
+ms.openlocfilehash: 86fc72ae73faf25184c5b137a0e433af8125eb54
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170588"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64942279"
 ---
-# <a name="create-a-predictive-coding-model-preview"></a>Crear un modelo de codificación predictiva (versión preliminar)
+# <a name="create-a-predictive-coding-model-preview"></a>Creación de un modelo de codificación predictiva (versión preliminar)
 
-El primer paso para usar las capacidades de aprendizaje automático de la codificación predictiva en Advanced eDiscovery es crear un modelo de codificación predictiva. Después de crear un modelo, puede entrenarlo para identificar el contenido relevante y no relevante de un conjunto de revisión.
+El primer paso para usar las funcionalidades de aprendizaje automático de la codificación predictiva en eDiscovery (Premium) es crear un modelo de codificación predictiva. Después de crear un modelo, puede entrenarlo para identificar el contenido relevante y no relevante de un conjunto de revisión.
 
-Para revisar el flujo de trabajo de codificación predictiva, vea [Learn about predictive coding in Advanced eDiscovery](predictive-coding-overview.md#the-predictive-coding-workflow)
+Para revisar el flujo de trabajo de codificación predictiva, consulte [Información sobre la codificación predictiva en eDiscovery (Premium)](predictive-coding-overview.md#the-predictive-coding-workflow)
 
 ## <a name="before-you-create-a-model"></a>Antes de crear un modelo
 
-- Debe haber un mínimo de 2.000 elementos en un conjunto de revisión para crear un modelo de codificación predictiva.
+- Debe haber un mínimo de 2000 elementos en un conjunto de revisión para crear un modelo de codificación predictiva.
 
 - Asegúrese de confirmar todas las colecciones en el conjunto de revisión antes de crear un modelo. Los elementos agregados a un conjunto de revisión después de crear el modelo no se procesarán y se les asignará una puntuación de predicción generada por el modelo.
 
-- El modelo no procesará ningún elemento del conjunto de revisión que no contenga texto ni se le asignará una puntuación de predicción. Los elementos con texto se incluirán en el conjunto de controles o en un conjunto de aprendizaje.
+- El modelo no procesará ningún elemento del conjunto de revisión que no contenga texto ni se le asignará una puntuación de predicción. Los elementos con texto se incluirán en el conjunto de control o en un conjunto de entrenamiento.
 
 ## <a name="create-a-model"></a>Crear un modelo
 
-1. En el Centro de cumplimiento de Microsoft 365, abra un Advanced eDiscovery y, a continuación, seleccione la **pestaña Conjuntos de** revisión.
+1. En el portal de cumplimiento de Microsoft Purview, abra un caso de exhibición de documentos electrónicos (Premium) y, a continuación, seleccione la pestaña **Conjuntos de revisión**.
 
-2. Abra un conjunto de opiniones y, a continuación, haga clic **en Analytics Administrar**  >  **codificación predictiva (versión preliminar).**
+2. Abra un conjunto de revisión y, a continuación, haga clic en **AnálisisAdministrar** >  **codificación predictiva (versión preliminar).**
 
    ![Haga clic en el menú desplegable Analizar del conjunto de revisión para ir a la página Codificación predictiva.](..\media\ManagePredictiveCoding.png)
 
-3. En la **página Modelos de codificación predictiva (versión preliminar),** haga clic **en Nuevo modelo**.
+3. En la página **Modelos de codificación predictiva (versión preliminar),** haga clic en **Nuevo modelo**.
 
-4. En la página desplegable, escriba un nombre para el modelo y una descripción opcional.
+4. En la página de control flotante, escriba un nombre para el modelo y una descripción opcional.
 
-5. Opcionalmente, puede configurar opciones avanzadas  (haciendo clic en Opciones avanzadas en la página desplegable) relacionadas con el nivel de confianza y el margen de error. Esta configuración afecta al número de elementos incluidos en el conjunto de controles. El *conjunto de controles* se usa durante el proceso de aprendizaje para evaluar las puntuaciones de predicción que el modelo asigna a los elementos con el etiquetado que se realiza durante las rondas de aprendizaje. Si su organización tiene directrices sobre el nivel de confianza y el margen de error para la revisión de documentos, es necesario especificarlas en los cuadros correspondientes. De lo contrario, use la configuración predeterminada.
+5. Opcionalmente, puede configurar opciones avanzadas (haciendo clic en **Opciones avanzadas** en la página de control flotante) relacionadas con el nivel de confianza y el margen de error. Esta configuración afecta al número de elementos incluidos en el conjunto de controles. El *conjunto de controles* se usa durante el proceso de entrenamiento para evaluar las puntuaciones de predicción que el modelo asigna a los elementos con el etiquetado que se realiza durante las rondas de entrenamiento. Si su organización tiene instrucciones sobre el nivel de confianza y el margen de error para la revisión de documentos, especifíquelos en los cuadros adecuados. De lo contrario, use la configuración predeterminada.
 
-6. Haga **clic en** Guardar para crear el modelo.
+6. Haga clic en **Guardar** para crear el modelo.
 
-   El sistema tardaría un par de minutos en preparar el modelo. Después de que esté listo, puedes realizar la primera ronda de aprendizaje.
+   El sistema tardará un par de minutos en preparar el modelo. Una vez listo, puede realizar la primera ronda de entrenamiento.
 
-## <a name="what-happens-after-you-create-a-model"></a>Qué sucede después de crear un modelo
+## <a name="what-happens-after-you-create-a-model"></a>Qué ocurre después de crear un modelo
 
-Después de crear un modelo, se producen lo siguiente en segundo plano durante la creación y preparación del modelo:
+Después de crear un modelo, se producen las siguientes cosas en segundo plano durante la creación y preparación del modelo:
 
-- El sistema calcula el número de elementos para el conjunto de controles. Este tamaño se basa en el número de elementos del conjunto de revisión y la configuración del nivel de confianza y el margen de error. Los elementos del conjunto de controles se seleccionan aleatoriamente y se designan como elementos del conjunto de controles. El sistema incluye 10 elementos del conjunto de controles de la primera ronda de aprendizaje.
+- El sistema calcula el número de elementos para el conjunto de control. Este tamaño se basa en el número de elementos del conjunto de revisión y en la configuración del nivel de confianza y el margen de error. Los elementos del conjunto de controles se seleccionan aleatoriamente y se designan como elementos del conjunto de controles. El sistema incluye 10 elementos del conjunto de control en la primera ronda de entrenamiento.
 
-- El sistema selecciona aleatoriamente 40 elementos del conjunto de opiniones que se incluirán en el conjunto de aprendizaje de la primera ronda de aprendizaje. Por lo tanto, la primera ronda de aprendizaje incluye 50 elementos para el etiquetado: 40 elementos del conjunto de aprendizaje y 10 elementos del conjunto de control.
+- El sistema selecciona aleatoriamente 40 elementos del conjunto de revisión que se incluirán en el conjunto de entrenamiento para la primera ronda de entrenamiento. Por lo tanto, la primera ronda de entrenamiento incluye 50 elementos para el etiquetado: 40 elementos del conjunto de entrenamiento y 10 elementos del conjunto de control.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
-Después de crear un modelo para un conjunto de revisión, el siguiente paso es realizar rondas de aprendizaje para "enseñar" el modelo para identificar el contenido que es relevante para la investigación. Para obtener más información, vea [Train a predictive coding model](predictive-coding-train-model.md).
+Después de crear un modelo para un conjunto de revisión, el siguiente paso es realizar rondas de entrenamiento para "enseñar" el modelo a fin de identificar el contenido que es relevante para la investigación. Para obtener más información, consulte [Entrenamiento de un modelo de codificación predictiva](predictive-coding-train-model.md).

@@ -1,5 +1,5 @@
 ---
-title: Aplicar el filtro de puntuación de predicción a los elementos de un conjunto de revisión
+title: Aplicación del filtro de puntuación de predicción a un conjunto de revisión
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,59 +13,59 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Use un filtro de puntuación de predicción para mostrar los elementos que un modelo de codificación predictiva predice como relevantes o no relevantes.
-ms.openlocfilehash: 04d0881e36c28a70df58a1aa7b054c641dfeeb2a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Use un filtro de puntuación de predicción para mostrar los elementos que un modelo de codificación predictiva predijo como pertinentes o no pertinentes.
+ms.openlocfilehash: 261c77031eb0831db11878c2ce0c573eb3b9db6e
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200466"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64942301"
 ---
-# <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>Aplicar un filtro de puntuación de predicción a un conjunto de opiniones (versión preliminar)
+# <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>Aplicar un filtro de puntuación de predicción a un conjunto de revisión (versión preliminar)
 
-Después de crear un modelo de codificación predictiva en Advanced eDiscovery y entrenarlo hasta el punto en que es estable, puede aplicar el filtro de puntuación de predicción para mostrar los elementos del conjunto de revisión que el modelo ha determinado que son relevantes (o no son relevantes). Al crear un modelo, también se crea un filtro de puntuación de predicción correspondiente. Puede usar este filtro para mostrar los elementos asignados a una puntuación de predicción dentro de un intervalo especificado. En general, las puntuaciones de predicción **entre 0** y **.5** se asignan a los elementos que el modelo ha predicho no son relevantes. Los elementos asignados a puntuaciones de predicción entre **.5** y **1,0** son elementos que el modelo ha predicho son relevantes.
+Después de crear un modelo de codificación predictiva en Microsoft Purview eDiscovery (Premium) y entrenarlo hasta el punto en que sea estable, puede aplicar el filtro de puntuación de predicción para mostrar los elementos de conjunto de revisión que el modelo ha determinado son pertinentes (o no pertinentes). Al crear un modelo, también se crea un filtro de puntuación de predicción correspondiente. Puede usar este filtro para mostrar los elementos asignados a una puntuación de predicción dentro de un intervalo especificado. En general, las puntuaciones de predicción entre **0** y **.5** se asignan a elementos que el modelo ha predicho no son pertinentes. Las puntuaciones de predicción asignadas a elementos entre **.5** y **1.0** son elementos que el modelo ha predicho que son pertinentes.
 
 Estas son dos maneras de usar el filtro de puntuación de predicción:
 
-- Priorizar la revisión de los elementos de un conjunto de revisión que el modelo ha predicho son relevantes.
+- Priorice la revisión de los elementos de un conjunto de revisión que el modelo ha predicho que son pertinentes.
 
-- Los elementos Cull del conjunto de revisión que ha predicho el modelo no son relevantes. Como alternativa, puede usar el filtro de puntuación de predicción para des priorizar la revisión de elementos no relevantes.
+- Los elementos del conjunto de revisión que el modelo ha predicho no son pertinentes. Como alternativa, puede usar el filtro de puntuación de predicción para anular la prioridad de la revisión de elementos no relevantes.
 
 ## <a name="before-you-apply-a-prediction-score-filter"></a>Antes de aplicar un filtro de puntuación de predicción
 
 - Cree un modelo de codificación predictiva para que se cree un filtro de puntuación de predicción correspondiente.
 
-- Puedes aplicar un filtro de puntuación de predicción después de cualquiera de las rondas de entrenamiento. Pero es posible que desee esperar después de realizar varias rondas o hasta que el modelo sea estable antes de usar el filtro de puntuación de predicción.
+- Puede aplicar un filtro de puntuación de predicción después de cualquiera de las rondas de entrenamiento. Pero es posible que desee esperar después de realizar varias rondas o hasta que el modelo sea estable antes de usar el filtro de puntuación de predicción.
 
-## <a name="apply-a-prediction-score-filter"></a>Aplicar un filtro de puntuación de predicción
+## <a name="apply-a-prediction-score-filter"></a>Aplicación de un filtro de puntuación de predicción
 
-1. En el Centro de cumplimiento de Microsoft 365, abra el Advanced eDiscovery, seleccione la pestaña **Conjuntos** de revisión y, a continuación, abra el conjunto de revisión.
+1. En el portal de cumplimiento de Microsoft Purview, abra el caso de eDiscovery (Premium), seleccione la pestaña **Conjuntos de revisión** y, a continuación, abra el conjunto de revisiones.
 
    ![Haga clic en Filtros para mostrar la página desplegable Filtros.](..\media\PredictionScoreFilter0.png)   
 
-   Los filtros predeterminados precargados se muestran en la parte superior de la página del conjunto de revisión. Puede dejar estos establecidos en **Any**.
+   Los filtros predeterminados cargados previamente se muestran en la parte superior de la página del conjunto de revisiones. Puede dejar estos valores establecidos en **Cualquiera**.
 
-2. Haga **clic en** Filtros para mostrar la **página** desplegable Filtros.
+2. Haga clic en **Filtros** para mostrar la página desplegable **Filtros** .
 
-3. Expanda la **sección & de codificación predictiva** de Analytics para mostrar un conjunto de filtros.
+3. Expanda la sección **Análisis & codificación predictiva** para mostrar un conjunto de filtros.
 
-      ![Filtro de puntuación de predicción en la & de codificación predictiva de Analytics.](..\media\PredictionScoreFilter1.png)
+      ![Filtro de puntuación de predicción en la sección De analytics & codificación predictiva.](..\media\PredictionScoreFilter1.png)
 
-   La convención de nomenclatura para los filtros de puntuación de predicción es **Puntuación de predicción (nombre del modelo).** Por ejemplo, el nombre del filtro de puntuación de predicción de un modelo denominado **Modelo A** es **Puntuación de predicción (modelo A).**
+   La convención de nomenclatura para los filtros de puntuación de predicción es **Puntuación de predicción (nombre del modelo).** Por ejemplo, el nombre del filtro de puntuación de predicción para un modelo denominado **Modelo A** es **Puntuación de predicción (modelo A).**
 
-4. Seleccione el filtro de puntuación de predicción que desea usar y, a continuación, haga clic **en Listo**.
+4. Seleccione el filtro de puntuación de predicción que desea usar y, a continuación, haga clic en **Listo**.
 
-5. En la página conjunto de revisión, haga clic en el desplegable del filtro de puntuación de predicción y escriba los valores mínimos y máximos para el intervalo de puntuación de predicción. Por ejemplo, la siguiente captura de pantalla muestra un intervalo de puntuación de predicción entre **.5** y **1,0**.
+5. En la página conjunto de revisión, haga clic en la lista desplegable del filtro de puntuación de predicción y escriba los valores mínimo y máximo para el intervalo de puntuación de predicción. Por ejemplo, en la captura de pantalla siguiente se muestra un intervalo de puntuación de predicción entre **.5** y **1.0**.
 
    ![Valores mínimos y máximos para el filtro de puntuación de predicción.](..\media\PredictionScoreFilter2.png)
 
 6. Haga clic fuera del filtro para aplicar automáticamente el filtro al conjunto de revisión.
 
-  Se muestra una lista de documentos con una puntuación de predicción dentro del intervalo especificado en la página del conjunto de revisión. 
+  En la página del conjunto de revisiones se muestra una lista de documentos con una puntuación de predicción dentro del intervalo especificado. 
 
   > [!TIP]
-  > Para ver la puntuación de predicción real que se asigna a un documento, puede hacer clic en la pestaña **Metadatos** del panel de lectura. Las puntuaciones de predicción de todos los modelos del conjunto de revisión se muestran en la **propiedad de metadatos RelevanceScores.**
+  > Para ver la puntuación de predicción real que se asigna a un documento, puede hacer clic en la pestaña **Metadatos** del panel de lectura. Las puntuaciones de predicción de todos los modelos del conjunto de revisión se muestran en la propiedad de **metadatos RelevanceScores** .
 
 ## <a name="more-information"></a>Más información
 
-- Para obtener más información acerca del uso de filtros, vea [Consulta y contenido de filtro en un conjunto de revisión.](review-set-search.md)
+- Para obtener más información sobre el uso de filtros, consulte [Consulta y filtrado de contenido en un conjunto de revisión](review-set-search.md).

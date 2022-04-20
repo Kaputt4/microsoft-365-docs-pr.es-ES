@@ -14,28 +14,28 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: ff681793a86d9953088c2c4da65553e1d2c54d22
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2f70039d3e55c429bf175d850db907eb7dc5b598
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170576"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64942169"
 ---
 # <a name="predictive-coding-reference-preview"></a>Referencia de codificación predictiva (versión preliminar)
 
-En este artículo se describen los conceptos y métricas clave de la herramienta de codificación predictiva en Advanced eDiscovery. Las secciones del artículo se enumeran en orden alfabético.
+En este artículo se describen los conceptos clave y las métricas de la herramienta de codificación predictiva en Microsoft Purview eDiscovery (Premium). Las secciones del artículo se enumeran en orden alfabético.
 
 ## <a name="confidence-level"></a>Nivel de confianza
 
-El nivel de confianza es una configuración avanzada al crear un modelo de codificación predictiva. Define que las métricas de rendimiento del modelo (por ejemplo, riqueza, precisión y recuperación) se encuentran dentro de un intervalo especificado (que determina el margen de error definido para el modelo) que representa los valores verdaderos de las puntuaciones de predicción que el modelo asigna a los elementos del conjunto de revisión. Los valores del nivel de confianza y el margen de error también ayudan a determinar cuántos elementos se incluyen en el conjunto de controles. El valor predeterminado del nivel de confianza es 0,95 o 95%.
+El nivel de confianza es una configuración avanzada al crear un modelo de codificación predictiva. Define que las métricas de rendimiento del modelo (por ejemplo, riqueza, precisión y recuperación) se encuentran dentro de un intervalo especificado (que determina el margen de error definido para el modelo) que es representativo de los valores verdaderos de las puntuaciones de predicción que el modelo asigna a los elementos del conjunto de revisión. Los valores del nivel de confianza y el margen de error también ayudan a determinar cuántos elementos se incluyen en el conjunto de controles. El valor predeterminado para el nivel de confianza es 0,95 o 95 %.
 
 ## <a name="control-set"></a>Conjunto de controles
 
-Se usa un conjunto de controles durante el proceso de aprendizaje de un modelo de codificación predictiva. El conjunto de controles es evaluar las puntuaciones de predicción que el modelo asigna a los elementos con el etiquetado que se realiza durante las rondas de aprendizaje. El tamaño del conjunto de controles se basa en el número de elementos del conjunto de revisión y el nivel de confianza y el margen de error que se establecen al crear el modelo. Los elementos del conjunto de controles nunca cambian y no son identificables para los usuarios. El número total de elementos del conjunto de controles se muestra en la página desplegable de una ronda de aprendizaje.
+Un conjunto de controles se usa durante el proceso de entrenamiento de un modelo de codificación predictiva. El conjunto de controles consiste en evaluar las puntuaciones de predicción que el modelo asigna a los elementos con el etiquetado que se realiza durante las rondas de entrenamiento. El tamaño del conjunto de controles se basa en el número de elementos del conjunto de revisión y en el nivel de confianza y el margen de los valores de error que se establecen al crear el modelo. Los elementos del conjunto de controles nunca cambian y no son identificables para los usuarios. El número total de elementos del conjunto de controles se muestra en la página de control flotante de una ronda de entrenamiento.
 
-## <a name="control-set-confusion-matrix"></a>Matriz de confusión de conjunto de controles
+## <a name="control-set-confusion-matrix"></a>Matriz de confusión del conjunto de controles
 
-Después de completar una ronda de aprendizaje, el modelo asigna una puntuación de predicción a los 10 elementos del conjunto de control que etiquetaste durante la ronda de entrenamiento. El modelo compara la puntuación de predicción de estos 10 elementos con la etiqueta real que asignó al elemento durante la ronda de entrenamiento. Basándose en esta comparación, el modelo identifica las siguientes clasificaciones para evaluar el rendimiento de predicción del modelo:
+Después de completar una ronda de entrenamiento, el modelo asigna una puntuación de predicción a los 10 elementos del conjunto de controles etiquetados durante la ronda de entrenamiento. El modelo compara la puntuación de predicción de estos 10 elementos con la etiqueta real que asignó al elemento durante la ronda de entrenamiento. En función de esta comparación, el modelo identifica las siguientes clasificaciones para evaluar el rendimiento de predicción del modelo:
 
 <br>
 
@@ -43,52 +43,52 @@ Después de completar una ronda de aprendizaje, el modelo asigna una puntuación
 
 |Etiqueta|El modelo predice que el elemento es relevante|El modelo predice que el elemento no es relevante|
 |---|---|---|
-|**Elemento de etiquetas de revisor como relevante**|Verdadero positivo|Falso positivo|
-|**Elemento de etiquetas de revisor como no relevante**|Falso negativo|True negativo|
+|**Elemento de etiquetas de revisor según corresponda**|Verdadero positivo|Falso positivo|
+|**El elemento de etiquetas del revisor no es relevante**|Falso negativo|Verdadero negativo|
 |
 
-Basándose en estas comparaciones, el modelo deriva valores para las métricas de puntuación F, precisión y recuperación y el margen de error de cada una de ellas. El número de cada uno de los tipos de confusión de la matriz se muestra en la página desplegable de una ronda de entrenamiento.
+En función de estas comparaciones, el modelo deriva valores para las métricas de puntuación F, precisión y recuperación y el margen de error de cada una de ellas. El número de cada uno de los tipos de confusión de la matriz se muestra en la página de control flotante de una ronda de entrenamiento.
 
 ## <a name="f-score"></a>Puntuación F
 
-La puntuación F es un promedio ponderado de las puntuaciones de las métricas de precisión y recuperación.  El intervalo de puntuaciones de esta métrica va de **0** a **1**. Una puntuación más cercana a **1** indica que el modelo detectará con mayor precisión los elementos relevantes. La métrica de puntuación F se muestra en el panel del modelo y en la página desplegable de cada ronda de aprendizaje.
+La puntuación F es un promedio ponderado de las puntuaciones para las métricas de precisión y recuperación.  El intervalo de puntuaciones de esta métrica es de **0** a **1**. Una puntuación más cercana a **1** indica que el modelo detectará con mayor precisión los elementos pertinentes. La métrica de puntuación F se muestra en el panel del modelo y en la página flotante de cada ronda de entrenamiento.
 
 ## <a name="margin-of-error"></a>Margen de error
 
-El margen de error es una configuración avanzada al crear un modo de codificación predictiva. Especifica el grado de error en las métricas de rendimiento (por ejemplo, riqueza, precisión y recuperación) que se deriva del muestreo aleatorio de elementos del conjunto de controles. Un margen de error inferior requiere un conjunto de control más grande para garantizar que las métricas de rendimiento del modelo se encuentran dentro de un intervalo más pequeño. Los valores del margen de error y el nivel de confianza también ayudan a determinar cuántos elementos se incluyen en el conjunto de controles. El valor predeterminado del margen de error es 0,05 o 5%.
+El margen de error es una configuración avanzada al crear un modo de codificación predictiva. Especifica el grado de error en las métricas de rendimiento (por ejemplo, riqueza, precisión y recuperación) que se deriva del muestreo aleatorio de elementos del conjunto de control. Un margen de error inferior requiere un conjunto de control mayor para asegurarse de que las métricas de rendimiento del modelo se encuentran dentro de un intervalo más pequeño. Los valores del margen de error y el nivel de confianza también ayudan a determinar cuántos elementos se incluyen en el conjunto de controles. El valor predeterminado del margen de error es 0,05 o 5 %.
 
 ## <a name="model-stability"></a>Estabilidad del modelo
 
-La estabilidad del modelo indica la capacidad del modelo para predecir con precisión si un documento de un conjunto de revisión es relevante o no es relevante. Cuando un modelo es inestable, es posible que deba realizarse más rondas de aprendizaje para incluir la estabilidad del modelo. Cuando el modelo es estable, no es necesario realizar más rondas de aprendizaje. El panel del modelo indica el estado actual de la estabilidad del modelo. Cuando un modelo es estable, las métricas de rendimiento han alcanzado un nivel que coincide con la configuración del nivel de confianza y el margen de error.
+La estabilidad del modelo indica la capacidad del modelo para predecir con precisión si un documento de un conjunto de revisión es relevante o no. Cuando un modelo es inestable, es posible que sea necesario realizar más rondas de entrenamiento para incluir la estabilidad del modelo. Cuando el modelo es estable, es posible que no sea necesario realizar más rondas de entrenamiento. El panel del modelo indica el estado actual de la estabilidad del modelo. Cuando un modelo es estable, las métricas de rendimiento han alcanzado un nivel que coincide con la configuración del nivel de confianza y el margen de error.
 
-## <a name="overturn-rate"></a>Tasa de vuelco
+## <a name="overturn-rate"></a>Velocidad de vuelco
 
-La tasa de volcado es el porcentaje de elementos del conjunto de revisión donde la puntuación de predicción cambió entre rondas de entrenamiento. Un modelo se considera estable cuando la tasa de vuelco es inferior al 5 %. La métrica de velocidad de vuelco se muestra en el panel del modelo y en la página desplegable de cada ronda de aprendizaje. La tasa de vuelco de la primera ronda de entrenamiento es cero porque no hay una puntuación de predicción anterior para volcar.
+La tasa de vuelco es el porcentaje de elementos del conjunto de revisión donde la puntuación de predicción cambió entre las rondas de entrenamiento. Un modelo se considera estable cuando la tasa de vuelco es inferior al 5 %. La métrica de velocidad de vuelco se muestra en el panel del modelo y en la página de control flotante de cada ronda de entrenamiento. La tasa de vuelco de la primera ronda de entrenamiento es cero porque no hay una puntuación de predicción anterior que revertir.
 
 ## <a name="precision"></a>Precisión
 
-La métrica de precisión mide la proporción de elementos que son realmente relevantes entre los elementos que el modelo predijo eran relevantes. Esto significa que los elementos del conjunto de controles donde la etiqueta es relevante para el revisor y se predicen como relevantes para el modelo. El intervalo de puntuaciones de esta métrica va de **0** a **1**. Una puntuación más cercana a **1** indica que el modelo identificará menos elementos no relevantes. La métrica de precisión se muestra en el panel del modelo y en la página flotante de cada ronda de aprendizaje.
+La métrica de precisión mide la proporción de elementos que son realmente pertinentes entre los elementos que el modelo predicho era relevante. Esto significa que los elementos del conjunto de controles donde el revisor etiqueta como pertinente y predichos como pertinentes por el modelo. El intervalo de puntuaciones de esta métrica es de **0** a **1**. Una puntuación más cercana a **1** indica que el modelo identificará menos elementos no relevantes. La métrica de precisión se muestra en el panel del modelo y en la página de control flotante de cada ronda de entrenamiento.
 
 ## <a name="prediction-score"></a>Puntuación de predicción
 
-Esta es la puntuación que un modelo asigna a cada documento de un conjunto de revisión. La puntuación se basa en la relevancia del documento en comparación con el aprendizaje del modelo de las rondas de aprendizaje. En general, los elementos con puntuaciones de predicción entre **0** y **0,5** se consideran no relevantes y los elementos con puntuaciones de predicción entre **0,5** y **1** se consideran relevantes. La puntuación de predicción se encuentra en un campo de metadatos de documento. Puede usar un filtro de predicción para mostrar los elementos de un conjunto de revisión que se encuentran dentro de un intervalo de predicción especificado.
+Esta es la puntuación que un modelo asigna a cada documento de un conjunto de revisión. La puntuación se basa en la relevancia del documento en comparación con el aprendizaje del modelo de las rondas de entrenamiento. En general, los elementos con puntuaciones de predicción entre **0** y **0,5** se consideran no pertinentes y los elementos con puntuaciones de predicción entre **0,5** y **1** se consideran pertinentes. La puntuación de predicción está contenida en un campo de metadatos del documento. Puede usar un filtro de predicción para mostrar los elementos de un conjunto de revisión que se encuentran dentro de un intervalo de predicción especificado.
 
-## <a name="recall"></a>Recuperación
+## <a name="recall"></a>Recordar
 
-La métrica de recuperación mide la proporción de elementos que predijo que el modelo era relevante entre los elementos que son realmente relevantes. Esto significa que los elementos del conjunto de controles que el modelo pronosticado eran relevantes también se etiquetaron como relevantes para el revisor. El intervalo de puntuaciones de esta métrica va de **0** a **1**. Una puntuación más cercana a **1** indica que el modelo identificará una parte mayor de los elementos relevantes. La métrica de recuperación se muestra en el panel del modelo y en la página desplegable de cada ronda de aprendizaje.
+La métrica de recuperación mide la proporción de elementos que el modelo predicho era relevante entre los elementos que son realmente pertinentes. Esto significa que los elementos del conjunto de control que predice el modelo eran pertinentes también se etiquetaron como pertinentes por el revisor. El intervalo de puntuaciones de esta métrica es de **0** a **1**. Una puntuación más cercana a **1** indica que el modelo identificará una parte mayor de los elementos pertinentes. La métrica de recuperación se muestra en el panel del modelo y en la página de control flotante de cada ronda de entrenamiento.
 
 ## <a name="review-set"></a>Conjunto de revisión:
 
-Un conjunto de revisión proporciona el ámbito de un modelo de codificación predictiva. Al crear un nuevo modelo para el conjunto de revisión, los elementos del conjunto de controles y los conjuntos de aprendizaje se seleccionan del conjunto de revisión. Cuando el modelo asigna puntuaciones de predicción, asigna a esas puntuaciones los elementos de la revisión. Debe agregar todos los elementos al conjunto de revisión antes de crear un modelo de codificación predictiva. Si agrega elementos después de crear un modelo, no se asignará una puntuación de predicción a esos elementos.
+Un conjunto de revisión proporciona el ámbito de un modelo de codificación predictiva. Al crear un nuevo modelo para el conjunto de revisión, los elementos del conjunto de control y los conjuntos de entrenamiento se seleccionan en el conjunto de revisión. Cuando el modelo asigna puntuaciones de predicción, asigna esas puntuaciones a los elementos de la revisión. Debe agregar todos los elementos al conjunto de revisión antes de crear un modelo de codificación predictiva. Si agrega elementos después de crear un modelo, a esos elementos no se les asignará una puntuación de predicción.
 
 ## <a name="richness"></a>Riqueza
 
-La métrica de riqueza mide el porcentaje de elementos del conjunto de revisión que el modelo predice como relevantes. El intervalo de puntuaciones de esta métrica va de **0** a **1**. La métrica de riqueza se muestra en el panel del modelo.
+La métrica de riqueza mide el porcentaje de elementos del conjunto de revisión que el modelo predice como pertinentes. El intervalo de puntuaciones de esta métrica es de **0** a **1**. La métrica de riqueza se muestra en el panel del modelo.
 
 ## <a name="sampled-items"></a>Elementos muestreados
 
-El término *elementos* muestreados es una referencia a una muestra aleatoria de elementos de un conjunto de revisión (que contienen texto) que se seleccionan y se asocian con el conjunto de controles al crear un modelo de codificación predictiva. También se selecciona una muestra aleatoria de elementos para cada ronda de aprendizaje. Los elementos seleccionados para el conjunto de controles de un modelo nunca se incluyen en un conjunto de aprendizaje para ese mismo modelo. Lo contrario también es cierto: los elementos del conjunto de aprendizaje nunca se incluyen en el conjunto de controles.
+El término *elementos muestreados* es una referencia a una muestra aleatoria de elementos de un conjunto de revisión (que contienen texto) seleccionados y asociados al conjunto de controles al crear un modelo de codificación predictiva. También se selecciona un ejemplo aleatorio de elementos para cada ronda de entrenamiento. Los elementos seleccionados para el conjunto de control de un modelo nunca se incluyen en un conjunto de entrenamiento para ese mismo modelo. Lo contrario también es cierto: los elementos del conjunto de entrenamiento nunca se incluyen en el conjunto de controles.
 
-## <a name="training-set"></a>Conjunto de aprendizaje
+## <a name="training-set"></a>Conjunto de entrenamiento
 
-El modelo selecciona aleatoriamente los elementos del conjunto de revisión y los agrega a un conjunto de aprendizaje. Durante una ronda de aprendizaje, se presentan los elementos del conjunto de aprendizaje (además de los elementos del conjunto de control) para que pueda etiquetar cada uno como "relevante" o "no relevante". Este proceso de etiquetado o "aprendizaje" ayuda al modelo a aprender a predecir qué elementos de la revisión son relevantes o no relevantes. Cada vez que realiza una ronda de aprendizaje, el modelo selecciona más elementos de la revisión y los agrega al conjunto de aprendizaje para esa ronda de aprendizaje. Los elementos del conjunto de controles nunca se seleccionan para un conjunto de aprendizaje.
+El modelo selecciona aleatoriamente los elementos del conjunto de revisión y los agrega a un conjunto de entrenamiento. Durante una ronda de entrenamiento, se le presentan elementos del conjunto de entrenamiento (además de los elementos del conjunto de control) para que pueda etiquetar cada uno de ellos como "pertinente" o "no relevante". Este proceso de etiquetado o "entrenamiento" ayuda al modelo a aprender a predecir qué elementos de la revisión son pertinentes o no pertinentes. Cada vez que se realiza una ronda de entrenamiento, el modelo selecciona más elementos de la revisión y los agrega al conjunto de entrenamiento para esa ronda de entrenamiento. Los elementos del conjunto de controles nunca se seleccionan para un conjunto de entrenamiento.

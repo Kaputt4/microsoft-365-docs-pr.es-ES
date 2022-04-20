@@ -1,5 +1,5 @@
 ---
-title: Diferencias entre los resultados de búsqueda de eDiscovery estimados y reales
+title: Resultados de búsqueda de eDiscovery estimados y reales
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,21 +19,21 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Comprenda por qué los resultados de búsqueda estimados y reales pueden variar en las búsquedas que se ejecutan con las herramientas de exhibición de documentos electrónicos en Office 365.
-ms.openlocfilehash: 5ec234ed698e621a629aecf7adf34fb675b29034
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b1e4ba4938e418d8364dfb06b24b6f7a58d6a463
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783851"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938167"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Diferencias entre los resultados de búsqueda de eDiscovery estimados y reales
 
 Este artículo se aplica a las búsquedas que puede ejecutar mediante una de las siguientes herramientas Microsoft 365 eDiscovery: 
 
 - Búsqueda de contenido
-- Core eDiscovery
+- eDiscovery (estándar)
 
-Al ejecutar una búsqueda de exhibición de documentos electrónicos, la herramienta que usa devolverá una estimación del número de elementos (y su tamaño total) que coincidan con los criterios de búsqueda. Por ejemplo, al ejecutar una búsqueda en el Centro de cumplimiento de Microsoft 365, los resultados de búsqueda estimados se muestran en la página de control flotante de la búsqueda seleccionada.
+Al ejecutar una búsqueda de exhibición de documentos electrónicos, la herramienta que usa devolverá una estimación del número de elementos (y su tamaño total) que coincidan con los criterios de búsqueda. Por ejemplo, al ejecutar una búsqueda en el portal de cumplimiento de Microsoft Purview, los resultados de búsqueda estimados se muestran en la página de control flotante de la búsqueda seleccionada.
   
 ![Estimación de los resultados mostrados en la página de control flotante de búsqueda.](../media/EstimatedSearchResults1.png)
   

@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft Defender para Office 365 incluye archivos adjuntos seguros, vínculos seguros, herramientas avanzadas antiphishing, herramientas de creación de informes y funciones de inteligencia sobre amenazas.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b8041962ca1a696146f9a5828c66b1a6800c4b01
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: a181f8ef6bb7ca018fb9ddf0f0adc4fe565b73e1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683743"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941553"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365
 
@@ -147,7 +147,7 @@ Para obtener acceso a las características de Microsoft Defender para Office 365
 |administrador global (administración de organización)|Puede asignar este rol en Azure Active Directory o en el portal de Microsoft 365 Defender. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).|
 |Administrador de seguridad|Puede asignar este rol en Azure Active Directory o en el portal de Microsoft 365 Defender. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md).|
 |Administración de la organización en Exchange Online|[Permisos de Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
-|Buscar y purgar|Este rol solo está disponible en el portal de Microsoft 365 Defender o en el Centro de cumplimiento de Microsoft 365. Para obtener más información, consulte [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md) y [Permisos en el Centro de cumplimiento de Microsoft 365](../../compliance/microsoft-365-compliance-center-permissions.md).|
+|Buscar y purgar|Este rol solo está disponible en el portal de Microsoft 365 Defender o en el portal de cumplimiento de Microsoft Purview. Para más información, vea [Permisos en el portal de Microsoft 365 Defender](permissions-microsoft-365-security-center.md) y [Permisos en el portal de cumplimiento de Microsoft Purview](../../compliance/microsoft-365-compliance-center-permissions.md).|
 |||
 
 ## <a name="get-microsoft-defender-for-office-365"></a>Obtener Microsoft Defender para Office 365

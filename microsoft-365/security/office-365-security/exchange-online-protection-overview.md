@@ -1,5 +1,5 @@
 ---
-title: Exchange Online Protection (EOP)
+title: Introducción a Exchange Online Protection (EOP)
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,15 +13,15 @@ ms.localizationpriority: medium
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre Exchange Online Protection (EOP) puede ayudar a proteger su organización de correo electrónico local en entornos independientes e híbridos.
+description: Obtenga información sobre cómo Exchange Online Protection (EOP) puede ayudar a proteger su organización de correo electrónico local en entornos independientes e híbridos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 319b20d548ad83cbf57043909a8dc2ce840db5cd
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 19bf82a530cd61b253047261bb44893266a240d8
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682667"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941575"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
@@ -32,87 +32,87 @@ ms.locfileid: "63682667"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online Protection (EOP) es el servicio de filtrado basado en la nube que protege su organización contra correo no deseado, malware y otras amenazas de correo electrónico. EOP se incluye en todas las Microsoft 365 con Exchange Online buzones de correo.
+Exchange Online Protection (EOP) es el servicio de filtrado basado en la nube que protege a su organización contra el correo no deseado, el malware y otras amenazas de correo electrónico. EOP se incluye en todas las organizaciones Microsoft 365 con buzones Exchange Online.
 
 > [!NOTE]
-> EOP también está disponible por sí mismo para proteger los buzones locales y en entornos híbridos para proteger los buzones Exchange locales. Para obtener más información, vea [Standalone Exchange Online Protection](/exchange/standalone-eop/standalone-eop).
+> EOP también está disponible por sí mismo para proteger los buzones locales y en entornos híbridos para proteger los buzones locales Exchange. Para obtener más información, vea [Exchange Online Protection independiente](/exchange/standalone-eop/standalone-eop).
 
-Los pasos para configurar las características de seguridad de EOP y una comparación con la seguridad agregada que obtiene en Microsoft Defender para Office 365, consulte [Protect against threats](protect-against-threats.md). La configuración recomendada para las características de EOP está disponible en [Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad](recommended-settings-for-eop-and-office365.md).
+Los pasos para configurar las características de seguridad de EOP y una comparación con la seguridad agregada que obtiene en Microsoft Defender para Office 365, consulte [Protección contra amenazas](protect-against-threats.md). La configuración recomendada para las características de EOP está disponible en [Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad](recommended-settings-for-eop-and-office365.md).
 
-El resto de este artículo explica cómo funciona EOP y las características disponibles en EOP.
+En el resto de este artículo se explica cómo funciona EOP y las características que están disponibles en EOP.
 
 ## <a name="how-eop-works"></a>Cómo funciona EOP
 
 Para comprender el funcionamiento de EOP, es muy útil ver cómo se procesa el correo entrante:
 
-:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Gráfico del correo electrónico de Internet o los comentarios del cliente que pasan a EOP y a través de la conexión, antimalware, el filtrado de reglas de barras diagonales de flujo de correo y el filtrado de contenido, antes del veredicto de correo no deseado o cuarentena, o la entrega de correo del usuario final.":::
+:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Gráfico de correo electrónico de Internet o comentarios del cliente que pasan a EOP y a través de Conexión, Antimalware, Reglas de flujo de correo-barra diagonal-Filtrado de directivas y Filtrado de contenido, antes del veredicto de correo no deseado o cuarentena, o entrega de correo del usuario final" lightbox="../../media/tp_emailprocessingineopt3.png":::
 
-1. Cuando un mensaje entrante entra en EOP, pasa inicialmente a través del filtrado de conexiones, lo que comprueba la reputación del remitente. La mayoría del correo no deseado se detiene en este momento y EOP lo rechaza. Para obtener más información, consulte [Configurar filtrado de la conexión](configure-the-connection-filter-policy.md).
+1. Cuando un mensaje entrante entra en EOP, pasa inicialmente por el filtrado de conexiones, lo que comprueba la reputación del remitente. La mayoría del correo no deseado se detiene en este momento y el EOP lo rechaza. Para obtener más información, consulte [Configurar filtrado de la conexión](configure-the-connection-filter-policy.md).
 
-2. A continuación, se inspecciona el mensaje en busca de malware. Si se encuentra malware en el mensaje o en los datos adjuntos, el mensaje se entrega en cuarentena. De forma predeterminada, solo los administradores pueden ver e interactuar con mensajes en cuarentena de malware. Sin embargo, los administradores pueden crear y usar directivas [de cuarentena](quarantine-policies.md) para especificar qué pueden hacer los usuarios en los mensajes en cuarentena. Para obtener más información sobre la protección contra malware, consulte [Protección contra malware en EOP](anti-malware-protection.md).
+2. A continuación, se inspecciona el mensaje en busca de malware. Si se encuentra malware en el mensaje o los datos adjuntos, el mensaje se entrega en cuarentena. De forma predeterminada, solo los administradores pueden ver e interactuar con mensajes en cuarentena de malware. Sin embargo, los administradores pueden crear y usar [directivas de cuarentena](quarantine-policies.md) para especificar qué usuarios pueden hacer en los mensajes en cuarentena. Para obtener más información sobre la protección contra malware, consulte [Protección contra malware en EOP](anti-malware-protection.md).
 
-3. El mensaje continúa a través del filtrado de directivas, donde se evalúa con las reglas de flujo de correo (también conocidas como reglas de transporte) que haya creado. Por ejemplo, una regla puede enviar una notificación a un administrador cuando un mensaje llega de un remitente específico.
+3. El mensaje continúa a través del filtrado de directivas, donde se evalúa con respecto a las reglas de flujo de correo (también conocidas como reglas de transporte) que haya creado. Por ejemplo, una regla puede enviar una notificación a un administrador cuando llega un mensaje de un remitente específico.
 
-   En la organización local con Exchange Enterprise CAL con licencias de servicios, las comprobaciones de prevención de pérdida de datos [(DLP)](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) en EOP también se realizan en este momento.
+   En la organización local con Exchange Enterprise CAL con licencias de servicios, las [comprobaciones de prevención de pérdida de datos (DLP) de Microsoft Purview](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) en EOP también se producen en este momento.
 
-4. El mensaje pasa a través del filtrado de contenido (antispam y contra la suplantación de identidad) donde los mensajes dañinos se identifican como correo no deseado, correo no deseado de elevada confianza, phishing, phishing de elevada confianza o masivo (directivas contra correo no deseado) o suplantación de identidad (configuración de suplantación de identidad en directivas contra suplantación de identidad). Puede configurar la acción para realizar el mensaje en función del veredicto de filtrado (cuarentena, traslado a la carpeta correo no deseado, etc.) y lo que los usuarios pueden hacer con los mensajes en cuarentena mediante directivas de [cuarentena.](quarantine-policies.md) Para obtener más información, vea [Configure anti-spam policies](configure-your-spam-filter-policies.md) y [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+4. El mensaje pasa por el filtrado de contenido (antispam y contra la suplantación de identidad) donde los mensajes dañinos se identifican como correo no deseado, spam de alta confianza, phishing, suplantación de identidad de alta confianza o en masa (directivas contra correo no deseado) o suplantación de identidad (configuración de suplantación de identidad en directivas contra suplantación de identidad). Puede configurar la acción para realizar el mensaje en función del veredicto de filtrado (cuarentena, traslado a la carpeta Correo no deseado, etc.) y lo que los usuarios pueden hacer a los mensajes en cuarentena mediante [directivas de cuarentena](quarantine-policies.md). Para obtener más información, vea [Configurar directivas contra correo no deseado](configure-your-spam-filter-policies.md) y [Configurar directivas contra suplantación de identidad en EOP](configure-anti-phishing-policies-eop.md).
 
-Un mensaje que pasa correctamente todas estas capas de protección se entrega a los destinatarios.
+Se entrega a los destinatarios un mensaje que pasa correctamente todas estas capas de protección.
 
-Para obtener más información, vea [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+Para obtener más información, vea [Orden y prioridad de la protección por correo electrónico](how-policies-and-protections-are-combined.md).
 
 ### <a name="eop-datacenters"></a>Centros de datos de EOP
 
 EOP se ejecuta en una red mundial de centros de datos que están diseñados para proporcionar la mejor disponibilidad. Por ejemplo, si un centro de datos no está disponible, los mensajes de correo electrónico se enrutan automáticamente a otro centro de datos sin interrupciones del servicio. Los servidores de cada centro de datos aceptan mensajes en su nombre, lo que proporciona una capa de separación entre su organización e Internet, lo que reduce la carga en los servidores. Gracias a esta red de alta disponibilidad, Microsoft se asegura que el correo llegue a la organización de manera puntual.
 
-EOP realiza el equilibrio de carga entre los centros de datos, pero solo dentro de una región. Si está aprovisionado en una región, todos los mensajes se procesarán mediante el enrutamiento de correo para esa región.
+EOP realiza el equilibrio de carga entre los centros de datos, pero solo dentro de una región. Si se aprovisiona en una región, todos los mensajes se procesarán mediante el enrutamiento de correo de esa región.
 
 ### <a name="eop-features"></a>Características de EOP
 
-En esta sección se proporciona una descripción general de alto nivel de las características principales que están disponibles en EOP.
+En esta sección se proporciona información general de alto nivel de las características principales que están disponibles en EOP.
 
-Para obtener información sobre los requisitos, los límites importantes y la disponibilidad de características en todos los planes de suscripción de EOP, consulte [la descripción Exchange Online Protection servicio.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
+Para obtener información sobre los requisitos, los límites importantes y la disponibilidad de características en todos los planes de suscripción de EOP, consulte la [descripción del servicio Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
 **Notas**:
 
 - EOP usa varias listas de bloqueo de URL que ayudan a detectar vínculos malintencionados conocidos dentro de los mensajes.
 - EOP usa una amplia lista de dominios que se sabe que envían correo no deseado.
-- EOP usa varios motores antimalware para proteger automáticamente a nuestros clientes en todo momento.
-- EOP inspecciona la carga activa en el cuerpo del mensaje y todos los datos adjuntos del mensaje en busca de malware.
-- Para obtener los valores recomendados para las directivas de protección, consulte [Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad](recommended-settings-for-eop-and-office365.md).
-- Para obtener instrucciones rápidas para configurar directivas de protección, consulte [Protect against threats](protect-against-threats.md).
+- EOP usa varios motores antimalware que ayudan a proteger automáticamente a nuestros clientes en todo momento.
+- EOP inspecciona la carga activa en el cuerpo del mensaje y todos los datos adjuntos del mensaje para detectar malware.
+- Para ver los valores recomendados para las directivas de protección, consulte [Configuración recomendada para EOP y Microsoft Defender para Office 365 seguridad](recommended-settings-for-eop-and-office365.md).
+- Para obtener instrucciones rápidas para configurar directivas de protección, consulte [Protección contra amenazas](protect-against-threats.md).
 
 |Característica|Comentarios|
 |---|---|
 |**Protection**||
-|Antimalware|[Protección contra malware en EOP](anti-malware-protection.md) <p> [Preguntas más frecuentes sobre la protección antimalware](anti-malware-protection-faq-eop.yml) <p> [Configurar directivas antimalware en EOP](configure-anti-malware-policies.md)|
-|Correo no deseado entrante|[Protección contra correo no deseado en EOP](anti-spam-protection.md) <p> [Preguntas más frecuentes sobre la protección contra correo electrónico no deseado](anti-spam-protection-faq.yml) <p> [Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
-|Correo no deseado saliente|[Protección contra correo no deseado saliente en EOP](outbound-spam-controls.md) <p> [Configurar el filtrado de correo no deseado saliente en EOP](configure-the-outbound-spam-policy.md) <p> [Controlar el reenvío automático de correo electrónico externo en Microsoft 365](external-email-forwarding.md)|
+|Antimalware|[Protección contra malware en EOP](anti-malware-protection.md) <p> [Preguntas más frecuentes sobre la protección antimalware](anti-malware-protection-faq-eop.yml) <p> [Configuración de directivas antimalware en EOP](configure-anti-malware-policies.md)|
+|Antispam entrante|[Protección contra correo no deseado en EOP](anti-spam-protection.md) <p> [Preguntas más frecuentes sobre la protección contra correo electrónico no deseado](anti-spam-protection-faq.yml) <p> [Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
+|Antispam saliente|[Protección contra correo no deseado saliente en EOP](outbound-spam-controls.md) <p> [Configuración del filtrado de correo no deseado saliente en EOP](configure-the-outbound-spam-policy.md) <p> [Controlar el reenvío automático de correo electrónico externo en Microsoft 365](external-email-forwarding.md)|
 |Filtrado de la conexión|[Configurar el filtrado de la conexión](configure-the-connection-filter-policy.md)|
-|Protección contra la suplantación de identidad (anti-phishing)|[Directivas contra la suplantación de identidad en Microsoft 365](set-up-anti-phishing-policies.md) <p> [Configuración de directivas contra phishing en EOP](configure-anti-phishing-policies-eop.md)|
-|Protección contra la suplantación de identidad|[Suplantación de información de inteligencia en EOP](learn-about-spoof-intelligence.md) <p> [Administrar la lista de bloqueados y permitidos del espacio empresarial](tenant-allow-block-list.md)|
-|Purga automática de hora cero (ZAP) para mensajes de malware, correo no deseado y phishing entregados|[ZAP en Exchange Online](zero-hour-auto-purge.md)|
-|Directivas de seguridad predefinidas|[Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365](preset-security-policies.md) <p> [Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365](configuration-analyzer-for-security-policies.md)|
+|Protección contra la suplantación de identidad (anti-phishing)|[Directivas contra suplantación de identidad en Microsoft 365](set-up-anti-phishing-policies.md) <p> [Configuración de directivas contra phishing en EOP](configure-anti-phishing-policies-eop.md)|
+|Protección contra la suplantación de identidad|[Información de inteligencia sobre suplantación de identidad en EOP](learn-about-spoof-intelligence.md) <p> [Administrar la lista de bloqueados y permitidos del espacio empresarial](tenant-allow-block-list.md)|
+|Purga automática de cero horas (ZAP) para mensajes de malware, spam y phishing entregados|[ZAP en Exchange Online](zero-hour-auto-purge.md)|
+|Directivas de seguridad predefinidas|[Directivas de seguridad preestablecidas en Exchange Online Protection y Microsoft Defender para Office 365](preset-security-policies.md) <p> [Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365](configuration-analyzer-for-security-policies.md)|
 |Lista de bloqueados y permitidos del espacio empresarial|[Administrar la lista de bloqueados y permitidos del espacio empresarial](tenant-allow-block-list.md)|
-|Bloquear listas para remitentes de mensajes|[Crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md)|
-|Permitir listas para remitentes de mensajes|[Crear listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md)|
+|Listas de bloques para remitentes de mensajes|[Creación de listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md)|
+|Permitir listas para remitentes de mensajes|[Creación de listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md)|
 |Directory Based Edge Blocking (DBEB)|[Usar bloqueo perimetral basado en directorios para rechazar mensajes enviados a destinatarios no válidos](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|
 |**Cuarentena y envíos**||
-|Envío de administrador|[Usar el envío de administrador para enviar correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft](admin-submission.md)|
-|Envíos de usuario (buzón personalizado)|[Directiva de envíos de usuarios](user-submission.md)|
-|Cuarentena: administradores|[Administración de mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md) <p> [Preguntas más frecuentes sobre mensajes en cuarentena](quarantine-faq.yml) <p> [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md) <p> [Encabezados de mensajes de correo no deseado en Microsoft 365](anti-spam-message-headers.md) <p> Puede analizar los encabezados de mensaje de los mensajes en cuarentena mediante el Analizador [de encabezados de mensaje en](https://mha.azurewebsites.net/).|
-|Cuarentena: usuarios finales|[Búsqueda y liberación de mensajes en cuarentena como usuario en EOP](find-and-release-quarantined-messages-as-a-user.md) <p> [Usar notificaciones de cuarentena para liberar e informar de mensajes en cuarentena](use-spam-notifications-to-release-and-report-quarantined-messages.md) <p> [Directivas de cuarentena](quarantine-policies.md)|
+|Envío de administrador|[Uso del envío de administrador para enviar sospechas de correo no deseado, fish, direcciones URL y archivos a Microsoft](admin-submission.md)|
+|Envíos de usuarios (buzón personalizado)|[Directiva de envíos de usuarios](user-submission.md)|
+|Cuarentena: administradores|[Administración de mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md) <p> [Preguntas más frecuentes sobre mensajes en cuarentena](quarantine-faq.yml) <p> [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md) <p> [Encabezados de mensajes de correo no deseado en Microsoft 365](anti-spam-message-headers.md) <p> Puede analizar los encabezados de mensaje de los mensajes en cuarentena mediante el [Analizador de encabezados](https://mha.azurewebsites.net/) de mensaje en .|
+|Cuarentena: usuarios finales|[Búsqueda y liberación de mensajes en cuarentena como usuario en EOP](find-and-release-quarantined-messages-as-a-user.md) <p> [Uso de notificaciones de cuarentena para liberar e informar de mensajes en cuarentena](use-spam-notifications-to-release-and-report-quarantined-messages.md) <p> [Directivas de cuarentena](quarantine-policies.md)|
 |**Flujo de correo**||
-|Reglas de flujo de correo|[Reglas de flujo de correo (reglas de transporte) en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) <p> [Condiciones y excepciones de regla de flujo de correo (predicados) en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) <p> [Acciones de reglas de flujo de correo en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) <p> [Administrar reglas de flujo de correo en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) <p> [Procedimientos de regla de flujo de correo Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures)|
+|Reglas de flujo de correo|[Reglas de flujo de correo (reglas de transporte) en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) <p> [Condiciones y excepciones de regla de flujo de correo (predicados) en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) <p> [Acciones de reglas de flujo de correo en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) <p> [Administrar reglas de flujo de correo en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) <p> [Procedimientos de regla de flujo de correo en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures)|
 |Dominios aceptados|[Administrar dominios aceptados en Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)|
-|Conectores|[Configurar el flujo de correo mediante conectores en Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)|
+|Conectores|[Configuración del flujo de correo mediante conectores en Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)|
 |Filtrado avanzado para conectores|[Filtrado mejorado para conectores en Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)|
 |**Supervisión**||
-|Seguimiento de mensajes|[Seguimiento de mensajes](message-trace-scc.md) <p> [Seguimiento de mensajes en el centro Exchange administración](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
-|Informes de colaboración & correo electrónico|[Ver informes de seguridad de correo electrónico](view-email-security-reports.md)|
-|Informes de flujo de correo|[Ver informes de flujo de correo](view-mail-flow-reports.md) <p> [Informes de flujo de correo en el centro Exchange administración](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|Información sobre el flujo de correo|[Información sobre el flujo de correo](mail-flow-insights-v2.md) <p> [Información sobre el flujo de correo en el Centro Exchange administración](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
-|Informes de auditoría|[Informes de auditoría en el Centro Exchange administración](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)|
+|Seguimiento de mensajes|[Seguimiento de mensajes](message-trace-scc.md) <p> [Seguimiento de mensajes en el centro de administración de Exchange](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
+|Informes de colaboración de & por correo electrónico|[Ver informes de seguridad de correo electrónico](view-email-security-reports.md)|
+|Informes de flujo de correo|[Ver informes de flujo de correo](view-mail-flow-reports.md) <p> [Informes de flujo de correo en el centro de administración de Exchange](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
+|Conclusiones de flujo de correo|[Conclusiones de flujo de correo](mail-flow-insights-v2.md) <p> [Información del flujo de correo en el centro de administración de Exchange](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
+|Informes de auditoría|[Informes de auditoría en el centro de administración de Exchange](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)|
 |Directivas de alerta|[Directivas de alerta](../../compliance/alert-policies.md)|
 |**Acuerdos de nivel de servicio (SLA) y soporte técnico**||
 |SLA de efectividad en cuanto a correo no deseado|\> 99%|
@@ -121,7 +121,7 @@ Para obtener información sobre los requisitos, los límites importantes y la di
 |SLA sobre el tiempo de actividad mensual|99,999%|
 |Soporte técnico por web y teléfono 24 horas al día, siete días a la semana|[Ayuda y soporte técnico para EOP](help-and-support-for-eop.md).|
 |**Otras características**||
-|Una red mundial georredundante de servidores|EOP se ejecuta en una red mundial de centros de datos que están diseñados para ayudar a proporcionar la mejor disponibilidad. Para obtener más información, vea la sección [centros de datos de EOP](#eop-datacenters) anterior en este artículo.|
-|Puesta en cola de los mensajes cuando el servidor local no puede aceptar correo|Los mensajes en aplazamiento permanecen en nuestras colas durante un día. Los reintentos de envío de mensajes se basan en el error que se obtiene del sistema de correo del destinatario. Los mensajes se reintentan cada 5 minutos, como valor promedio. Para obtener más información, vea [Preguntas más frecuentes sobre mensajes devueltos, aplazados y en cola de EOP](eop-queued-deferred-and-bounced-messages-faq.yml).|
-|Cifrado de mensajes de Office 365 disponible como complemento|Para obtener más información, vea [Cifrado en Office 365](../../compliance/encryption.md).|
+|Una red mundial georredundante de servidores|EOP se ejecuta en una red mundial de centros de datos que están diseñados para ayudar a proporcionar la mejor disponibilidad. Para obtener más información, consulte la sección [Centros de datos de EOP](#eop-datacenters) anteriormente en este artículo.|
+|Puesta en cola de los mensajes cuando el servidor local no puede aceptar correo|Los mensajes aplazados permanecen en nuestras colas durante un día. Los reintentos de envío de mensajes se basan en el error que se obtiene del sistema de correo del destinatario. Los mensajes se reintentan cada 5 minutos, como valor promedio. Para obtener más información, vea [Preguntas más frecuentes sobre mensajes devueltos, aplazados y en cola de EOP](eop-queued-deferred-and-bounced-messages-faq.yml).|
+|Office 365 cifrado de mensajes disponible como complemento|Para obtener más información, vea [Cifrado en Office 365](../../compliance/encryption.md).|
 |||

@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security puede ayudarle a proteger y administrar sus dispositivos móviles.
-ms.openlocfilehash: 78cfa4582aa2e25a3b47a12d2e067082e8b41d07
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b0e303af27d731cf3dba3af13019b3b993e52bfe
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781235"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937771"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Capacidades de Movilidad y seguridad básicas
 
@@ -230,7 +230,7 @@ Puede establecer esta configuración de directiva adicional mediante cmdlets de 
 
 ## <a name="remotely-wipe-a-mobile-device"></a>Borrar de forma remota un dispositivo móvil
 
-Si se pierde o se roba un dispositivo, puede quitar datos confidenciales de la organización y ayudar a evitar el acceso a los recursos de la organización Microsoft 365 realizando un borrado del Centro de cumplimiento de seguridad & > **prevención de pérdida de datosConfiguración** >  **de dispositivos**. Puede realizar un borrado selectivo para quitar solo los datos de la organización o un borrado completo para eliminar toda la información de un dispositivo y restaurar la configuración original.
+Si se pierde o se roba un dispositivo, puede quitar datos confidenciales de la organización y ayudar a evitar el acceso a los recursos de la organización Microsoft 365 realizando un borrado del portal  >  de **cumplimiento de Microsoft PurviewAdministración** de dispositivos de **pérdida** >  de **datos.** Puede realizar un borrado selectivo para quitar solo los datos de la organización o un borrado completo para eliminar toda la información de un dispositivo y restaurar la configuración original.
 
 Para obtener más información, consulte [Borrado de un dispositivo móvil en Basic Mobility and Security](wipe-mobile-device.md).
 

@@ -1,6 +1,6 @@
 ---
-title: Introducción a la adopción de Microsoft SharePoint Syntex
-description: Obtenga información sobre cómo usar e implementar SharePoint Syntex en su organización para ayudarle a simplificar los procesos empresariales.
+title: Comenzar impulsar la adopción de Microsoft SharePoint Syntex
+description: Aprenda a usar e implementar SharePoint Syntex en su organización para ayudarle a simplificar los procesos empresariales.
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,88 +14,88 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: 40af6061029785705d262f3b8c5134531e76885f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 9b11c5077551aad666d565b0f3c077b3e43dc78e
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467651"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937837"
 ---
-# <a name="get-started-driving-adoption-of-microsoft-sharepoint-syntex"></a>Introducción a la adopción de Microsoft SharePoint Syntex
+# <a name="get-started-driving-adoption-of-microsoft-sharepoint-syntex"></a>Comenzar impulsar la adopción de Microsoft SharePoint Syntex
 
-Piense en los servicios de contenido inteligente disponibles en SharePoint Syntex tiene tres partes:
+Considere que los servicios de contenido inteligente disponibles en SharePoint Syntex tienen tres partes:
 
-- **Descripción del contenido:** Cree modelos de IA sin código para clasificar y extraer información del contenido para aplicar automáticamente metadatos para la detección y reutilización de conocimientos. Obtenga más información sobre [la comprensión del contenido](document-understanding-overview.md).
-- **Procesamiento de contenido:** Automatice la captura, la ingesta y la categorización del contenido y optimice los procesos centrados en el contenido mediante Power Automate. Obtenga más información sobre [el procesamiento de contenido](form-processing-overview.md).
-- **Cumplimiento de contenido:** Controle y administre el contenido para mejorar la seguridad y el gobierno con la integración Microsoft Information Protection.
+- **Comprensión del contenido:** Cree modelos de inteligencia artificial sin código para clasificar y extraer información del contenido para aplicar automáticamente metadatos para la detección y reutilización de conocimientos. Obtenga más información sobre la [comprensión del contenido](document-understanding-overview.md).
+- **Procesamiento de contenido:** Automatice la captura, ingesta y categorización del contenido y optimice los procesos centrados en el contenido mediante Power Automate. Obtenga más información sobre el [procesamiento de contenido](form-processing-overview.md).
+- **Cumplimiento de contenido:** Controlar y administrar el contenido para mejorar la seguridad y la gobernanza con la integración en Microsoft Purview Information Protection.
 
-Con los nuevos servicios y capacidades de IA, puedes crear aplicaciones de clasificación y comprensión de contenido directamente en el flujo de administración de contenido mediante SharePoint Syntex. Hay dos formas diferentes de comprender el contenido. El tipo de modelo que usa se basa en el formato de archivo y el caso de uso.
+Con los nuevos servicios y funcionalidades de inteligencia artificial, puede crear aplicaciones de clasificación y comprensión de contenido directamente en el flujo de administración de contenido mediante SharePoint Syntex. Hay dos maneras diferentes de entender el contenido. El tipo de modelo que se usa se basa en el formato de archivo y el caso de uso.
 
 | Procesamiento de formularios | Comprensión mediante documentos |
 |:-------|:-------|
-| Creado a partir de la biblioteca de documentos. | Creado en el centro de contenido, forma parte de SharePoint Syntex. |
-| Modelo creado en el generador de IA. | Modelo creado en interfaz nativa. |
+| Creado a partir de la biblioteca de documentos. | Creado en el centro de contenido, parte de SharePoint Syntex. |
+| Modelo creado en el generador de inteligencia artificial. | Modelo creado en la interfaz nativa. |
 | Se usa para formatos de archivo semiestructurados. | Se usa para formatos de archivo no estructurados. |
-| Clasificador configurable. | Clasificador entrenable con extractores opcionales. |
+| Clasificador settable. | Clasificador entrenable con extractores opcionales. |
 | Restringido a una sola biblioteca. | Se puede aplicar a múltiples bibliotecas. |
-| Train on PDF, JPG, PNG format, total 50 MB/500 pp. | Entrenado en 5-10 archivos de PDF, Office o correo electrónico, incluyendo ejemplos negativos. |
+| Entrenar en formato PDF, JPG, PNG, total 50 MB/500 pp. | Entrenado en 5-10 archivos de PDF, Office o correo electrónico, incluyendo ejemplos negativos. |
 
-Para obtener una comparación más completa de las capacidades, vea Diferencia entre la comprensión [de documentos y los modelos de procesamiento de formularios](difference-between-document-understanding-and-form-processing-model.md).
+Para obtener una comparación más completa de las funcionalidades, consulte [Diferencia entre la comprensión de documentos y los modelos de procesamiento de formularios](difference-between-document-understanding-and-form-processing-model.md).
 
-## <a name="identify-pilot-business-scenarios-to-optimize"></a>Identificar escenarios empresariales piloto para optimizar
+## <a name="identify-pilot-business-scenarios-to-optimize"></a>Identificación de escenarios empresariales piloto para optimizar
 
-Para prepararse para usar SharePoint Syntex en la organización, primero debe comprender los escenarios en los que será útil. El "por qué" ayuda a determinar qué modelo se necesita y cómo estructurar la organización en función de dónde se aplicará el modelo. Estos son algunos escenarios en los que la comprensión de documentos puede ayudar a su organización:
+Para prepararse para usar SharePoint Syntex en su organización, primero debe comprender los escenarios en los que será útil. El "por qué" ayuda a determinar qué modelo se necesitará y cómo estructurar la organización en función de dónde se aplicará el modelo. Estos son algunos escenarios en los que la comprensión de documentos puede ayudar a su organización:
 
-- **Procesamiento de contenido:** Procesar contratos, instrucciones de trabajo y otros documentos con formato. Admisión de formularios, entrenar al modelo para comprender y asignar los campos y, a continuación, ejecutar los formularios para recopilar automáticamente los datos. Para obtener más información, vea [Información general sobre el procesamiento de formularios](form-processing-overview.md).
-- **Análisis de facturas:** Extrae los detalles relevantes de tus facturas y asegúrate de que cumplen con la directiva o se están procesando correctamente.
+- **Procesamiento de contenido:** Procesar contratos, instrucciones de trabajo y otros documentos similares a formularios. Admisión de los formularios, entrenamiento del modelo para comprender y asignar los campos y, a continuación, ejecute los formularios a través de para recopilar automáticamente los datos. Para obtener más información, vea [Información general sobre el procesamiento de formularios](form-processing-overview.md).
+- **Análisis de facturas:** Extraiga los detalles pertinentes de las facturas y asegúrese de que cumplen con la directiva o que se están procesando correctamente.
 
 Piense en las formas en que SharePoint Syntex puede ayudar a su organización:
 
 - Automatizar procesos de negocio
-- Mejorar la precisión de búsqueda
+- Mejora de la precisión de la búsqueda
 - Administración del riesgo de cumplimiento
 
-Cuando piense en qué escenarios empresariales debe tener en cuenta, haga las siguientes preguntas:
+Cuando piense en qué escenarios empresariales debe tener en cuenta, hágase las siguientes preguntas:
 
-- ¿Resuelve un problema real?
-- ¿Se usará ampliamente o tendrá un impacto general?
+- ¿Soluciona un problema real?
+- ¿Se usará ampliamente o tendrá un impacto amplio?
 - ¿Se puede obtener?
 - ¿Puede medir el éxito?
 
-Priorizar escenarios en función del impacto y la facilidad de implementación. Haga que el área de enfoque inicial tenga un mayor impacto en escenarios que también se puedan implementar fácilmente. Des priorizar escenarios de menor impacto que son difíciles de implementar.
+Priorice los escenarios en función del impacto y la facilidad de implementación. Haga que el área de enfoque inicial tenga escenarios de mayor impacto que también se puedan implementar fácilmente. Desescen los escenarios de menor impacto que son difíciles de implementar.
 
 Use los [escenarios de ejemplo y los casos de uso](adoption-scenarios.md) para preguntar ideas sobre cómo puede usar SharePoint Syntex en su organización.
 
 ## <a name="identify-roles--responsibilities"></a>Identificar roles & responsabilidades
 
-Determine quién en su organización compilará y administrará los modelos. Los siguientes roles podrían estar implicados.
+Determine quién en su organización compilará y administrará los modelos. Los siguientes roles pueden estar implicados.
 
 | Administrador de conocimiento/SharePoint | Administrador de Power Platform | Responsable de la información | Propietario del modelo |
 |:-------|:-------|:-------|:-------|
-| AAD rol| AAD rol | AAD rol | Expertos: |
-| Configurar el procesamiento de formularios | Configurar el entorno de Dataverse para el procesamiento de formularios | Recopilar casos de uso | Recopilar casos de uso empresarial |
-| Administrar centros de contenido y permisos| Comprar y asignar créditos AIB | Establecer procedimientos recomendados y revisar análisis de modelos | Crear y aplicar modelos |
+| rol AAD| rol AAD | rol AAD | Expertos: |
+| Configurar el procesamiento de formularios | Configuración del entorno de Dataverse para el procesamiento de formularios | Recopilación de casos de uso | Recopilación de casos de uso empresarial |
+| Administración de centros de contenido y permisos| Compra y asignación de créditos de AIB | Establecimiento de procedimientos recomendados y revisión del análisis de modelos | Creación y aplicación de modelos |
 
-El administrador de conocimientos, el propietario de procesos empresariales y el propietario del modelo de contenido crean modelos de ejemplo y la adopción de campeones en la organización.
+El administrador de conocimiento, el propietario de procesos empresariales y el propietario del modelo de contenido crean modelos de ejemplo y abogan por la adopción en la organización.
 Otros que pueden estar implicados: administrador de cumplimiento, administradores de taxonomía.
 
-¿Dónde crearán y aplicarán los modelos? ¿Hay procesos o repositorios existentes que podrían mejorarse?
+¿Dónde compilarán y aplicarán los modelos? ¿Hay procesos o repositorios existentes que se puedan mejorar?
 
-- Procesamiento de formularios: decida qué sitios recibirán acción de procesamiento de formularios.
-- Descripción del documento: puede crear varios centros de contenido para distintas áreas de negocio.
+- Procesamiento de formularios: decida qué sitios obtendrán la acción de procesamiento de formularios.
+- Comprensión de documentos: puede crear varios centros de contenido para diferentes áreas de negocio.
 
 ## <a name="strategic-positioning"></a>Posicionamiento estratégico
 
-Trabaje con las partes interesadas para asegurarse de que están alineados con la estrategia para usar SharePoint Syntex. Investigue y proporcione los siguientes recursos para ayudarle con este posicionamiento:
+Trabaje con las partes interesadas para asegurarse de que están alineadas en la estrategia para usar SharePoint Syntex. Investigue y proporcione los siguientes recursos para ayudar con este posicionamiento:
 
 - Resultados empresariales:
   - Posibles resultados fiscales
   - Posibles resultados de agilidad
   - Plantilla de resultados empresariales
-- Stakeholders/Exec sponsor buy-in/alignment
-  - Barajas de casos profesionales
+- Participación/alineación de patrocinadores de stakeholders/Exec
+  - Cubiertas de casos empresariales
   - Modelos financieros
-  - Preparación de la empresa: cultura
+  - Preparación de la empresa: referencia cultural
 
 ## <a name="identify-stakeholders"></a>Identificación de las partes interesadas
 
@@ -105,18 +105,18 @@ Identifique las partes interesadas del proyecto.
 |:-------|:-------|:--------|
 | Patrocinadores ejecutivos   | Comunicar a la empresa valores y visión de alto nivel   |  Liderazgo ejecutivo   |
 | Project clientes potenciales | Supervisar todo el proceso de ejecución e implementación del lanzamiento | Administración de proyectos |
-| Administradores de información| Crear y administrar los centros de contenido | TI u otro departamento|
-| Administradores de contenido y propietarios de modelos| Recopilar casos de uso y crear y aplicar modelos | Cualquier departamento|
+| Administradores de información| Creación y administración de centros de contenido | TI u otro departamento|
+| Administradores de contenido y propietarios de modelos| Recopilación de casos de uso y creación y aplicación de modelos | Cualquier departamento|
 | Expertos: | Ayudar a promocionar y administrar el tratamiento de objeción | Cualquier departamento (personal) |
 | Administrador de inquilinos | Configurar la configuración de nivel de inquilino | Departamento de TI|
-| Administrador de Power Platform| Configurar el entorno de Dataverse | Departamento de TI|
+| Administrador de Power Platform| Configuración del entorno de Dataverse | Departamento de TI|
 
 > [!NOTE]
-> Aunque se recomienda que cada uno de estos roles se cumpla a lo largo de la implementación, es posible que no necesite todos ellos para empezar con la solución identificada.
+> Aunque se recomienda que cada uno de estos roles se cumpla a lo largo de la implementación, es posible que no los necesite para empezar a trabajar con la solución identificada.
 
 ## <a name="readiness-checklist"></a>Lista de comprobación de preparación
 
-Para prepararse para la implementación de SharePoint Syntex, debe:
+Para prepararse para implementar SharePoint Syntex, debe:
 
 ![Preparación para la comprensión del contenido.](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
@@ -128,21 +128,21 @@ Para prepararse para la implementación de SharePoint Syntex, debe:
       - Cumplimiento
       - Automatización
 2. Identificación
-    - Comprender la arquitectura de la información existente y el uso de características de administración de contenido.
+    - Descripción de la arquitectura de información existente y el uso de características de administración de contenido.
     - ¿Los tipos de contenido existentes son buenos candidatos para los modelos?
-    - ¿Qué procesos existentes se mejorarían con los metadatos?
+    - ¿Qué procesos existentes mejorarían los metadatos?
 3. Diseño
     - Diseñe el enfoque de la arquitectura de la información, los metadatos administrados y los tipos de contenido.
-    - Diseñe el proceso de definición, creación, administración.
+    - Diseñe el proceso de definición, creación y administración.
 
-## <a name="engage-your-organization"></a>Interactuar con su organización
+## <a name="engage-your-organization"></a>Interacción con la organización
 
-1. Identificar a los poseedores de participación, confirmar escenarios y desarrollar un plan de proyecto.
-1. Configure la configuración y aplique licencias.
-1. Comenzar a concienciar y entrenar: reclutar a los campeones.
-1. Roll out in stages.  
+1. Identifique a los titulares de participación, confirme los escenarios y desarrolle el plan de proyecto.
+1. Configure los valores y aplique licencias.
+1. Comience a concienciar y entrenar: Recluta a campeones.
+1. Implementación en fases.  
 1. Recopilar comentarios e iterar.
-1. A medida que aumenta el uso, planee los créditos de AI Builder según sea necesario.
+1. A medida que aumenta el uso, planifique los créditos de AI Builder según sea necesario.
 
 ## <a name="see-also"></a>Vea también
 

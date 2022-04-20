@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Obtenga información sobre cómo Microsoft 365 para empresas puede ayudarle con el proceso de reglamento general de protección de datos (RGPD).
-ms.openlocfilehash: d5c24fe2f2295e99798fcc5382dc284cec01d385
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 4f900b8694acb97be3449072a2ccf5ac7d89ff1f
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64632413"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934145"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplificado: Una guía para su pequeña empresa
 
@@ -101,7 +101,7 @@ Por ejemplo, es posible que necesite los datos personales de su empleado en func
 Como otro ejemplo, puede administrar listas de clientes individuales para enviarles avisos sobre ofertas especiales, si han dado su consentimiento a esto.
 
 #### <a name="microsoft-365-features-that-can-help"></a>Características de Microsoft 365 que pueden ayudar
-[Microsoft Information Protection en Microsoft 365](/microsoft-365/compliance/information-protection) puede ayudar a descubrir, clasificar y proteger la información confidencial en su empresa. Puede usar clasificadores capacitados para ayudarle a identificar y etiquetar los tipos de documento que contienen datos personales. 
+[Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) puede ayudarle a descubrir, clasificar y proteger información confidencial en su empresa. Puede usar clasificadores capacitados para ayudarle a identificar y etiquetar los tipos de documento que contienen datos personales. 
 
 ### <a name="step-2-inform-your-customers-employees-and-other-individuals-when-you-need-to-collect-their-personal-data"></a>Paso 2: Informar a sus clientes, empleados y otras personas cuando necesite recopilar sus datos personales
 

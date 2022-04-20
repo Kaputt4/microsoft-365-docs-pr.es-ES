@@ -1,5 +1,5 @@
 ---
-title: Configurar Advanced eDiscovery en Microsoft 365
+title: Configuración de eDiscovery (Premium) en Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,57 +19,57 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: En este artículo se describe cómo configurar Advanced eDiscovery para que pueda empezar a crear y administrar casos. También describe las suscripciones y licencias de Microsoft necesarias. Después de completar algunos pasos rápidos, la Advanced eDiscovery está lista para usarse.
-ms.openlocfilehash: cf2d7c6bc770dd6125777c895771b3b61c8ee593
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+description: En este artículo se describe cómo configurar eDiscovery (Premium) para que pueda empezar a crear y administrar casos. También describe las suscripciones y licencias de Microsoft necesarias. Después de completar algunos pasos rápidos, la herramienta eDiscovery (Premium) está lista para usarse.
+ms.openlocfilehash: 29805066c2db26aca6992dc34ad8bf8c0966ceb7
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60786967"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939925"
 ---
-# <a name="set-up-microsoft-365-advanced-ediscovery"></a>Configurar Microsoft 365 Advanced eDiscovery
+# <a name="set-up-microsoft-purview-ediscovery-premium"></a>Configuración de microsoft Purview eDiscovery (Premium)
 
-Advanced eDiscovery en Microsoft 365 proporciona un flujo de trabajo completo para conservar, recopilar, revisar, analizar y exportar datos que responden a las investigaciones internas y externas de la organización. No se necesita nada para implementar Advanced eDiscovery, pero hay algunas tareas de requisitos previos que un administrador de TI y un administrador de exhibición de documentos electrónicos deben completar antes de que su organización pueda empezar a crear y usar casos Advanced eDiscovery para administrar las investigaciones.
+Microsoft Purview eDiscovery (Premium) proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar datos que respondan a las investigaciones internas y externas de su organización. No se necesita nada para implementar eDiscovery (Premium), pero hay algunas tareas de requisitos previos que un administrador de TI y un administrador de eDiscovery deben completar antes de que la organización pueda empezar a crear y usar casos de eDiscovery (Premium) para administrar las investigaciones.
 
-En este artículo se analizan los siguientes pasos necesarios para configurar Advanced eDiscovery.
+En este artículo se describen los pasos siguientes necesarios para configurar eDiscovery (Premium).
 
-![Pasos para configurar Advanced eDiscovery.](../media/set-up-advanced-ediscovery.png)
+![Pasos para configurar eDiscovery (Premium).](../media/set-up-advanced-ediscovery.png)
 
-Esto incluye garantizar la licencia adecuada necesaria para tener acceso a Advanced eDiscovery y agregar custodios a los casos, y asignar permisos al equipo legal e investigador para que puedan acceder y administrar los casos.
+Esto incluye garantizar las licencias adecuadas necesarias para acceder a eDiscovery (Premium) y agregar custodios a los casos, y asignar permisos al equipo legal y de investigación para que puedan acceder a los casos y administrarlos.
 
-## <a name="step-1-verify-and-assign-appropriate-licenses"></a>Paso 1: Comprobar y asignar licencias adecuadas
+## <a name="step-1-verify-and-assign-appropriate-licenses"></a>Paso 1: Comprobar y asignar las licencias adecuadas
 
-Las licencias Advanced eDiscovery requieren la suscripción de la organización adecuada y las licencias por usuario. Para obtener una lista de los requisitos de licencia Advanced eDiscovery, vea [Suscripciones y licencias](overview-ediscovery-20.md#subscriptions-and-licensing).
+Las licencias para eDiscovery (Premium) requieren la suscripción de la organización adecuada y las licencias por usuario. Para obtener una lista de los requisitos de licencia para eDiscovery (Premium), consulte [Suscripciones y licencias](overview-ediscovery-20.md#subscriptions-and-licensing).
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Paso 2: Asignar permisos de exhibición de documentos electrónicos
 
-Para obtener Advanced eDiscovery o agregar como miembro de un Advanced eDiscovery caso, se deben asignar los permisos adecuados a un usuario. Específicamente, un usuario debe agregarse como miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365. Los miembros de este grupo de roles pueden crear y administrar Advanced eDiscovery casos. Pueden agregar y quitar miembros, poner a los custodios y ubicaciones de contenido en espera, administrar notificaciones de retención legal, crear y editar búsquedas asociadas en un caso, agregar resultados de búsqueda a un conjunto de revisión, analizar datos de un conjunto de revisión y exportar y descargar desde un caso Advanced eDiscovery.
+Para acceder a eDiscovery (Premium) o agregarse como miembro de un caso de exhibición de documentos electrónicos (Premium), se deben asignar a un usuario los permisos adecuados. En concreto, se debe agregar un usuario como miembro del grupo de roles administrador de exhibición de documentos electrónicos en el portal de cumplimiento de Microsoft Purview. Los miembros de este grupo de roles pueden crear y administrar casos de exhibición de documentos electrónicos (Premium). Pueden agregar y quitar miembros, colocar custodios y ubicaciones de contenido en espera, administrar notificaciones de suspensión legal, crear y editar búsquedas asociadas en un caso, agregar resultados de búsqueda a un conjunto de revisión, analizar datos en un conjunto de revisión y exportar y descargar desde un caso de exhibición de documentos electrónicos (Premium).
 
-Siga estos pasos para agregar usuarios al grupo de roles administrador de exhibición de documentos electrónicos:
+Complete los pasos siguientes para agregar usuarios al grupo de roles del Administrador de exhibición de documentos electrónicos:
 
-1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Centro de cumplimiento de Microsoft 365</a>e inicie sesión con las credenciales de una cuenta de administrador en su Microsoft 365 organización.
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">portal de cumplimiento</a> e inicie sesión con las credenciales de una cuenta de administrador en la organización Microsoft 365.
 
-2. En la **página Permisos,** seleccione el grupo de **roles** Administrador de exhibición de documentos electrónicos.
+2. En la página **Permisos** , seleccione el grupo **de roles administrador de exhibición de documentos electrónicos** .
 
-3. En la página desplegable administrador de exhibición de documentos electrónicos, haga clic **en Editar** junto a la sección Administrador de **exhibición de documentos** electrónicos.
+3. En la página desplegable Administrador de exhibición de documentos electrónicos, haga clic en **Editar** junto a la sección **Administrador de exhibición de documentos electrónicos** .
 
-4. En la página **Elegir administrador de exhibición** de documentos electrónicos en el asistente para editar grupos de roles, haga clic **en Elegir administrador de exhibición de documentos electrónicos.**
+4. En la página **Elegir administrador de exhibición de documentos electrónicos** del Asistente para editar grupos de roles, haga clic en **Elegir administrador de exhibición de documentos electrónicos**.
 
-5. Haga **clic en** Agregar y seleccione la casilla para todos los usuarios que desee agregar al grupo de roles.
+5. Haga clic en **Agregar** y seleccione la casilla para todos los usuarios que quiera agregar al grupo de roles.
 
-6. Haga **clic en** Agregar para agregar los usuarios seleccionados y, a continuación, haga clic en **Listo**.
+6. Haga clic en **Agregar** para agregar los usuarios seleccionados y, a continuación, haga clic en **Listo**.
 
-7. Haga **clic en** Guardar para agregar los usuarios al grupo de roles y, a continuación, haga clic **en** Cerrar para completar el paso.
+7. Haga clic en **Guardar** para agregar los usuarios al grupo de roles y, a continuación, haga clic en **Cerrar** para completar el paso.
 
-### <a name="more-information-about-the-ediscovery-manager-role-group"></a>Más información sobre el grupo de roles administrador de exhibición de documentos electrónicos
+### <a name="more-information-about-the-ediscovery-manager-role-group"></a>Más información sobre el grupo de roles del Administrador de exhibición de documentos electrónicos
 
-Hay dos subgrupos en el grupo de roles administrador de exhibición de documentos electrónicos. La diferencia entre estos subgrupos se basa en el ámbito.
+Hay dos subgrupos en el grupo de roles del Administrador de exhibición de documentos electrónicos. La diferencia entre estos subgrupos se basa en el ámbito.
 
-- **Administrador de exhibición de** documentos electrónicos: puede ver y administrar los Advanced eDiscovery de los que crean o son miembros. Si otro administrador de exhibición de documentos electrónicos crea un caso pero no agrega un segundo administrador de exhibición de documentos electrónicos como miembro de ese caso, el segundo administrador de exhibición de documentos electrónicos no podrá ver ni abrir el caso en la página Advanced eDiscovery del centro de cumplimiento. En general, la mayoría de las personas de la organización se pueden agregar al subgrupo del Administrador de exhibición de documentos electrónicos.
+- **Administrador de exhibición de documentos** electrónicos: puede ver y administrar los casos de eDiscovery (Premium) de los que crean o son miembros. Si otro Administrador de exhibición de documentos electrónicos crea un caso pero no agrega un segundo Administrador de exhibición de documentos electrónicos como miembro de ese caso, el segundo Administrador de exhibición de documentos electrónicos no podrá ver ni abrir el caso en la página eDiscovery (Premium) del centro de cumplimiento. En general, la mayoría de las personas de la organización se pueden agregar al subgrupo administrador de exhibición de documentos electrónicos.
 
-- **Administrador de exhibición de documentos electrónicos:** puede realizar todas las tareas de administración de casos que un administrador de exhibición de documentos electrónicos puede realizar. Además, un administrador de exhibición de documentos electrónicos puede:
+- **Administrador de eDiscovery**: puede realizar todas las tareas de administración de casos que un Administrador de exhibición de documentos electrónicos puede realizar. Además, un administrador de exhibición de documentos electrónicos puede:
 
-  - Ver todos los casos que se enumeran en la página Exhibición de documentos electrónicos.
+  - Vea todos los casos que aparecen en la página eDiscovery (Premium).
   
   - Administre cualquier caso en la organización después de que se agreguen como miembro del caso.
 
@@ -77,17 +77,17 @@ Hay dos subgrupos en el grupo de roles administrador de exhibición de documento
 
   Debido a la amplia gama de acceso que tiene que tener una organización, solo unos pocos administradores que sean miembros del subgrupo de administradores de eDiscovery.
 
-Para obtener más información acerca de los permisos de exhibición de documentos electrónicos y una descripción de cada función asignada al grupo de roles administrador de exhibición de documentos electrónicos, vea Asignar permisos de exhibición [de documentos electrónicos](assign-ediscovery-permissions.md).
+Para obtener más información sobre los permisos de eDiscovery y una descripción de cada rol asignado al grupo de roles del Administrador de exhibición de documentos electrónicos, vea [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
 
-## <a name="step-3-configure-global-settings-for-advanced-ediscovery"></a>Paso 3: Configurar la configuración global para Advanced eDiscovery
+## <a name="step-3-configure-global-settings-for-ediscovery-premium"></a>Paso 3: Configurar la configuración global para eDiscovery (Premium)
 
-El último paso que se debe completar antes de que los usuarios de la organización comiencen a crear y usar casos es configurar las opciones globales que se aplican a todos los casos de la organización. En este momento, la única configuración global es *la detección* de privilegios de abogado y cliente (habrá más opciones globales disponibles en el futuro). Esta configuración permite que el modelo de privilegios abogado-cliente se ejecute al analizar los datos de un conjunto de revisión. El modelo usa el aprendizaje automático para determinar la probabilidad de que un documento contenga contenido de naturaleza legal. También compara los participantes de los documentos con una lista de abogados (que envía al configurar el modelo) para determinar si un documento tiene al menos un participante que sea abogado.
+El último paso que debe completarse antes de que los usuarios de su organización empiecen a crear y usar casos es configurar las opciones globales que se aplican a todos los casos de la organización. En este momento, la única configuración global es *detección de privilegios entre abogado y cliente* (habrá más configuraciones globales disponibles en el futuro). Esta configuración permite que el modelo de privilegios abogado-cliente se ejecute al analizar los datos de un conjunto de revisión. El modelo usa el aprendizaje automático para determinar la probabilidad de que un documento contenga contenido de naturaleza legal. También compara a los participantes de los documentos con una lista de abogados (que usted envía al configurar el modelo) para determinar si un documento tiene al menos un participante que es un abogado.
 
-Para obtener más información acerca de cómo configurar y usar el modelo de detección de privilegios [abogado-cliente,](attorney-privilege-detection.md)vea Configurar la detección de privilegios de abogado-cliente en Advanced eDiscovery .
+Para obtener más información sobre cómo configurar y usar el modelo de detección de privilegios abogado-cliente, vea [Configurar la detección de privilegios de abogado-cliente en eDiscovery (Premium)](attorney-privilege-detection.md).
 
 > [!NOTE]
-> Este es un paso opcional que puede realizar en cualquier momento. No implementar el modelo de detección de privilegios abogado-cliente no le impide crear y usar Advanced eDiscovery casos.
+> Este es un paso opcional que puede realizar en cualquier momento. No implementar el modelo de detección de privilegios abogado-cliente no impide crear y usar casos de exhibición de documentos electrónicos (Premium).
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-Después de configurar Advanced eDiscovery, está listo para [crear un caso](create-and-manage-advanced-ediscoveryv2-case.md).
+Después de configurar eDiscovery (Premium), está listo para [crear un caso](create-and-manage-advanced-ediscoveryv2-case.md).

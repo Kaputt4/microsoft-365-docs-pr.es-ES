@@ -1,5 +1,5 @@
 ---
-title: Creación de retenciones de eDiscovery en un caso de eDiscovery principal
+title: Creación de retenciones de eDiscovery en un caso de exhibición de documentos electrónicos (estándar)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,17 +17,17 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
-description: Puede crear una suspensión asociada a un caso de eDiscovery principal en Microsoft 365 para conservar el contenido relevante para una investigación o caso legal.
-ms.openlocfilehash: f732bf1c9b85804a8a3814bf578a719d854725e5
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+description: Puede crear una suspensión asociada a un caso de exhibición de documentos electrónicos (estándar) en Microsoft 365 para conservar el contenido relevante para una investigación o caso legal.
+ms.openlocfilehash: 4448c9b8a55466c0cf626deff6e69acd247a5814
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824912"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938277"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
-Puede usar un caso de eDiscovery básico para crear suspensiones con el fin de conservar el contenido que pueda ser relevante para el caso. Puede colocar una suspensión en los buzones de Exchange y OneDrive para la Empresa cuentas de las personas que está investigando en el caso. También puede colocar una suspensión en los buzones y sitios asociados a Microsoft Teams, grupos de Office 365 y grupos de Yammer. Al colocar ubicaciones de contenido en espera, el contenido se conserva hasta que se quita la ubicación del contenido de la suspensión o hasta que se elimina la suspensión.
+Puede usar un caso de exhibición de documentos electrónicos (estándar) de Microsoft Purview para crear retenciones para conservar el contenido que podría ser relevante para el caso. Puede colocar una suspensión en los buzones de Exchange y OneDrive para la Empresa cuentas de las personas que está investigando en el caso. También puede colocar una suspensión en los buzones y sitios asociados a Microsoft Teams, grupos de Office 365 y grupos de Yammer. Al colocar ubicaciones de contenido en espera, el contenido se conserva hasta que se quita la ubicación del contenido de la suspensión o hasta que se elimina la suspensión.
 
 Después de crear una suspensión de eDiscovery, la suspensión puede tardar hasta 24 horas en surtir efecto.
 
@@ -39,13 +39,13 @@ Al crear una suspensión, tiene las siguientes opciones para limitar el contenid
   
 ## <a name="how-to-create-an-ediscovery-hold"></a>Cómo crear una suspensión de eDiscovery
 
-Para crear una suspensión de eDiscovery asociada a un caso de eDiscovery básico:
+Para crear una suspensión de eDiscovery asociada a un caso de exhibición de documentos electrónicos (estándar):
   
-1. Vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado los permisos de exhibición de documentos electrónicos adecuados.
+1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento de Microsoft Purview</a> e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado los permisos de eDiscovery adecuados.
 
 2. En el panel de navegación izquierdo, haga clic en **Mostrar todo** y, a continuación, haga clic en **eDiscovery > Core**.
 
-3. En la página **Exhibición de documentos electrónicos principal** , haga clic en el nombre del caso en el que desea crear la suspensión.
+3. En la página **eDiscovery (Estándar),** haga clic en el nombre del caso en el que desea crear la suspensión.
 
 4. En la página **Inicio** del caso, haga clic en la pestaña **Mantener** .
   
@@ -113,7 +113,7 @@ Tenga en cuenta lo siguiente sobre las estadísticas de suspensión de exhibici�
 
 ## <a name="search-locations-on-ediscovery-hold"></a>Ubicaciones de búsqueda en suspensión de eDiscovery
 
-Al [buscar contenido](search-for-content-in-core-ediscovery.md) en un caso de eDiscovery principal, puede configurar rápidamente la búsqueda para que solo busque en las ubicaciones de contenido que se han colocado en una suspensión asociada al caso.
+Al [buscar contenido](search-for-content-in-core-ediscovery.md) en un caso de exhibición de documentos electrónicos (estándar), puede configurar rápidamente la búsqueda para buscar solo las ubicaciones de contenido que se han colocado en una suspensión asociada al caso.
 
 Seleccione la opción **Ubicaciones en espera** para buscar en todas las ubicaciones de contenido que se han colocado en espera. Si el caso contiene varias retenciones de eDiscovery, se buscarán las ubicaciones de contenido de todas las retenciones al seleccionar esta opción. Además, si se ha colocado una ubicación de contenido en una retención basada en consultas, solo se buscarán los elementos que coincidan con la consulta de suspensión al ejecutar la búsqueda. En otras palabras, solo el contenido que coincide con los criterios de retención y los criterios de búsqueda se devuelve con los resultados de la búsqueda. Por ejemplo, si un usuario se colocaba en la retención de mayúsculas y minúsculas basada en consultas que conserva los elementos que se enviaron o crearon antes de una fecha específica, solo se buscarían esos elementos. Esto se logra conectando la consulta de retención de casos y la consulta de búsqueda mediante un operador **AND** .
 
@@ -215,7 +215,7 @@ Después de quitar un buzón de correo, SharePoint sitio o OneDrive cuenta de un
 
    Para obtener más información, consulte [Publicación de una directiva para la retención](retention.md#releasing-a-policy-for-retention).
 
-También se aplica una suspensión de retraso a las ubicaciones de contenido en espera al cerrar un caso de eDiscovery principal porque las retenciones se desactivan cuando se cierra un caso. Para obtener más información sobre cómo cerrar un caso, vea [Cerrar, volver a abrir y eliminar un caso de eDiscovery principal](close-reopen-delete-core-ediscovery-cases.md).
+También se aplica una suspensión de retraso a las ubicaciones de contenido en espera cuando se cierra un caso de exhibición de documentos electrónicos (estándar), ya que las retenciones se desactivan cuando se cierra un caso. Para obtener más información sobre cómo cerrar un caso, vea [Cerrar, volver a abrir y eliminar un caso de exhibición de documentos electrónicos (estándar).](close-reopen-delete-core-ediscovery-cases.md)
 
 ## <a name="ediscovery-hold-limits"></a>Límites de suspensión de eDiscovery
 
@@ -224,7 +224,7 @@ En la tabla siguiente se enumeran los límites de los casos de eDiscovery y las 
   | Descripción del límite | Límite |
   |:-----|:-----|
   |Número máximo de casos para una organización.  <br/> |Sin límite  <br/> |
-  |Número máximo de directivas de suspensión de eDiscovery para una organización. Este límite incluye el total combinado de directivas de suspensión en core eDiscovery y casos de Advanced eDiscovery.  <br/> |10,000  <br/> |
+  |Número máximo de directivas de suspensión de eDiscovery para una organización. Este límite incluye el total combinado de directivas de suspensión en casos de eDiscovery (Estándar) y eDiscovery (Premium).  <br/> |10 <sup>0001</sup>  <br/> |
   |Número máximo de buzones en una única suspensión de eDiscovery. Este límite incluye el total combinado de buzones de usuario y los buzones asociados a Grupos de Microsoft 365, Microsoft Teams y grupos de Yammer.  <br/> |1,000  <br/> |
   |Número máximo de sitios en una única suspensión de eDiscovery. Este límite incluye el total combinado de sitios de OneDrive para la Empresa, sitios SharePoint y los sitios asociados con Grupos de Microsoft 365, Microsoft Teams y grupos de Yammer.  <br/> |100  <br/> |
   |Número máximo de casos que se muestran en la página principal de eDiscovery y el número máximo de elementos que se muestran en las pestañas Holds, Searches y Export dentro de un caso.  |10001<sup></sup>|

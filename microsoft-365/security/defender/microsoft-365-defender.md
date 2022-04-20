@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c97338121d38650116540564441f3b37051bf05f
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 99549ba8077d966c4d5649e144fa0259f9178629
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731193"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944357"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -101,7 +101,7 @@ Microsoft 365 Defender características entre productos incluyen:
 - **Recuperación automática para dispositivos en peligro, identidades de usuario y buzones**: Microsoft 365 Defender usa acciones automáticas con inteligencia artificial y cuadernos de estrategias para corregir los recursos afectados de nuevo a un estado seguro. Microsoft 365 Defender aprovecha las funcionalidades de corrección automática de los productos del conjunto de aplicaciones para asegurarse de que todos los recursos afectados relacionados con un incidente se corrigen automáticamente siempre que sea posible.
 - **Búsqueda de amenazas entre productos** : los equipos de seguridad pueden aprovechar sus conocimientos organizativos únicos para buscar signos de peligro mediante la creación de sus propias consultas personalizadas sobre los datos sin procesar recopilados por los distintos productos de protección. Microsoft 365 Defender proporciona acceso basado en consultas a 30 días de señales sin procesar históricas y datos de alerta en el punto de conexión y Defender para Office 365 datos.
 
-## <a name="get-started"></a>Comenzar
+## <a name="get-started"></a>Introducción
 
 Microsoft 365 Defender requisitos de licencia deben cumplirse para poder habilitar el servicio en el portal de Microsoft 365 Defender en <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> Para obtener más información, consulte:
 
@@ -176,7 +176,7 @@ Los controles y el contenido comunes aparecen en el mismo lugar o se condensan e
 
 :::image type="content" source="../../media/converged-roles-5.png" alt-text="Los roles de puntos de conexión & grupos que se muestran en la página Permisos & roles" lightbox="../../media/converged-roles-5.png":::
 
-El acceso a Microsoft 365 Defender se configura con Azure AD roles globales o mediante roles personalizados. Para Defender para punto de conexión, consulte [Asignación de acceso de usuario al portal de Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/assign-portal-access). Para obtener Defender para Office 365, consulte [Permisos en el Centro de cumplimiento de Microsoft 365 y Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
+El acceso a Microsoft 365 Defender se configura con Azure AD roles globales o mediante roles personalizados. Para Defender para punto de conexión, consulte [Asignación de acceso de usuario al portal de Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/assign-portal-access). Para obtener Defender para Office 365, consulte [Permisos en el portal de cumplimiento de Microsoft Purview y Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
 
 - Más información sobre cómo [administrar el acceso a Microsoft 365 Defender](m365d-permissions.md)
 - Obtenga más información sobre cómo [crear roles personalizados](custom-roles.md) en Microsoft 365 Defender
@@ -294,7 +294,7 @@ Con esta ruta de aprendizaje de Microsoft Learn, puede comprender Microsoft 365 
 > [Iniciar >](/learn/paths/defender-detect-respond/)
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Novedades de Microsoft 365 Defender](whats-new.md)
 - [Microsoft Defender para Office 365 en Microsoft 365 Defender](microsoft-365-security-center-mdo.md)

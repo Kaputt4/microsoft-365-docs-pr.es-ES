@@ -1,5 +1,5 @@
 ---
-title: 'Codificación predictiva en Advanced eDiscovery: inicio rápido'
+title: 'Codificación predictiva en eDiscovery (Premium): inicio rápido'
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,104 +13,104 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Obtenga información sobre cómo empezar a usar el módulo de codificación predictiva en Advanced eDiscovery. Este artículo le guiará por el proceso completo de usar la codificación predictiva para identificar el contenido de un conjunto de revisión que sea más relevante para la investigación.
-ms.openlocfilehash: 2266f44e7b95c118314d76fe019a97b2db24f07c
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+description: Obtenga información sobre cómo empezar a usar el módulo de codificación predictiva en eDiscovery (Premium). Este artículo le guiará por el proceso de un extremo a otro de usar la codificación predictiva para identificar el contenido de un conjunto de revisión que es más relevante para la investigación.
+ms.openlocfilehash: 449ef5446ee5a4da87081774037c9b5e2a8d440d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449476"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64942323"
 ---
-# <a name="quick-start-predictive-coding-in-advanced-ediscovery-preview"></a>Inicio rápido: codificación predictiva en Advanced eDiscovery (versión preliminar)
+# <a name="quick-start-predictive-coding-in-ediscovery-premium-preview"></a>Inicio rápido: Codificación predictiva en eDiscovery (Premium) (versión preliminar)
 
-En este artículo se presenta un inicio rápido para usar la codificación predictiva en Advanced eDiscovery. El módulo de codificación predictiva usa capacidades inteligentes de aprendizaje automático para ayudarle a obtener grandes volúmenes de contenido de casos que no son relevantes para la investigación. Esto se logra creando y entrenando sus propios modelos de codificación predictiva que le ayudarán a priorizar los elementos más relevantes para su revisión.
+En este artículo se presenta un inicio rápido para usar la codificación predictiva en Microsoft Purview eDiscovery (Premium). El módulo de codificación predictiva usa funcionalidades inteligentes de aprendizaje automático para ayudarle a eliminar grandes volúmenes de contenido de casos que no son relevantes para la investigación. Esto se logra mediante la creación y el entrenamiento de sus propios modelos de codificación predictiva que le ayudan a priorizar los elementos más relevantes para su revisión.
 
-Este es un resumen rápido del proceso de codificación predictiva:
+Esta es una introducción rápida al proceso de codificación predictiva:
 
 ![Proceso de inicio rápido para la codificación de predicción.](..\media\PredictiveCodingQuickStartProcess.png)
 
-Para empezar, cree un modelo, etiquete como pocos 50 elementos como relevantes o no relevantes. A continuación, el sistema usa este aprendizaje para aplicar puntuaciones de predicción a todos los elementos del conjunto de revisión. Esto le permite filtrar elementos en función de la puntuación de predicción, lo que le permite revisar primero los elementos más relevantes (o no relevantes). Si desea entrenar modelos con tasas de recuperación y acutracaciones más altas, puede seguir etiquetando elementos en rondas de aprendizaje posteriores hasta que el modelo se estabilice. Una vez estabilizado el modelo, puede aplicar el filtro de predicción final para priorizar los elementos que se deben revisar.
+Para empezar, cree un modelo, etiquete tan solo 50 elementos como pertinentes o no pertinentes. A continuación, el sistema usa este entrenamiento para aplicar puntuaciones de predicción a cada elemento del conjunto de revisión. Esto le permite filtrar los elementos en función de la puntuación de predicción, lo que le permite revisar primero los elementos más relevantes (o no relevantes). Si desea entrenar modelos con mayores precisiónes y tasas de recuperación, puede seguir etiquetando elementos en rondas de entrenamiento posteriores hasta que el modelo se estabilice. Una vez estabilizado el modelo, puede aplicar el filtro de predicción final para priorizar los elementos que se van a revisar.
 
-Para obtener una introducción detallada a la codificación predictiva, vea [Learn about predictive coding in Advanced eDiscovery](predictive-coding-overview.md).
+Para obtener información general detallada sobre la codificación predictiva, consulte [Información sobre la codificación predictiva en eDiscovery (Premium)](predictive-coding-overview.md).
 
 ## <a name="step-1-create-a-new-predictive-coding-model"></a>Paso 1: Crear un nuevo modelo de codificación predictiva
 
-El primer paso es crear un nuevo modelo de codificación predictiva en el conjunto de revisión
+El primer paso consiste en crear un nuevo modelo de codificación predictiva en el conjunto de revisión.
 
-1. En el Centro de cumplimiento de Microsoft 365, abra un Advanced eDiscovery y, a continuación, seleccione la **pestaña Conjuntos de** revisión.
+1. En el portal de cumplimiento de Microsoft Purview, abra un caso de exhibición de documentos electrónicos (Premium) y, a continuación, seleccione la pestaña **Conjuntos de revisión**.
 
-2. Abra un conjunto de opiniones y, a continuación, haga clic en **AnalyticsManage** >  **predictive coding (preview)**.
+2. Abra un conjunto de revisión y, a continuación, haga clic en **AnálisisAdministrar** >  **codificación predictiva (versión preliminar).**
 
    ![Haga clic en el menú desplegable Analizar del conjunto de revisión para ir a la página Codificación predictiva.](..\media\ManagePredictiveCoding.png)
 
-3. En la **página Modelos de codificación predictiva (versión preliminar** ), haga clic **en Nuevo modelo**.
+3. En la página **Modelos de codificación predictiva (versión preliminar),** haga clic en **Nuevo modelo**.
 
-4. En la página desplegable, escriba un nombre para el modelo y una descripción opcional.
+4. En la página de control flotante, escriba un nombre para el modelo y una descripción opcional.
 
-5. Haga **clic en** Guardar para crear el modelo.
+5. Haga clic en **Guardar** para crear el modelo.
 
-   El sistema tardaría un par de minutos en preparar el modelo. Después de que esté listo, puedes realizar la primera ronda de aprendizaje.
+   El sistema tardará un par de minutos en preparar el modelo. Una vez listo, puede realizar la primera ronda de entrenamiento.
 
-Para obtener instrucciones más detalladas, vea [Crear un modelo de codificación predictiva](predictive-coding-create-model.md).
+Para obtener instrucciones más detalladas, consulte [Creación de un modelo de codificación predictiva](predictive-coding-create-model.md).
 
 ## <a name="step-2-perform-the-first-training-round"></a>Paso 2: Realizar la primera ronda de entrenamiento
 
-Después de crear el modelo, el siguiente paso es completar la primera ronda de aprendizaje etiquetando los elementos como relevantes o no relevantes.
+Después de crear el modelo, el siguiente paso es completar la primera ronda de entrenamiento etiquetando los elementos como pertinentes o no pertinentes.
 
-1. Abra el conjunto de opiniones y, a continuación, haga clic en **AnalyticsManage** >  **predictive coding (preview)**.
+1. Abra el conjunto de revisión y, a continuación, haga clic en **AnálisisAdministrar** >  **codificación predictiva (versión preliminar).**
 
-2. En la **página Modelos de codificación predictiva (** versión preliminar), seleccione el modelo que desea entrenar.
+2. En la página **Modelos de codificación predictiva (versión preliminar),** seleccione el modelo que desea entrenar.
 
-3. En la **pestaña Información** general, en **Ronda 1**, haga clic **en Iniciar siguiente ronda de aprendizaje**.
+3. En la pestaña **Información general** , en **Ronda 1**, haga clic en **Iniciar siguiente ronda de entrenamiento**.
 
-   Se **muestra la** pestaña Aprendizaje y contiene 50 elementos para etiquetar.
+   Se muestra la pestaña **Entrenamiento** y contiene 50 elementos para etiquetar.
 
-4. Revise cada documento y, a continuación **, seleccione el** botón Relevante o **No relevante en** la parte inferior del panel de lectura para etiquetar.
+4. Revise cada documento y, a continuación, seleccione el botón **Pertinente** o **No relevante** en la parte inferior del panel de lectura para etiquetarlo.
 
-   ![Etiquete cada documento como relevante o no relevante.](..\media\TrainModel1.png)
+   ![Etiquete cada documento como pertinente o no relevante.](..\media\TrainModel1.png)
 
 5. Después de etiquetar los 50 elementos, haga clic en **Finalizar**.
 
-    El sistema tardaría un par de minutos en "aprender" del etiquetado y actualizar el modelo. Una vez completado este proceso, se muestra el estado **Listo** para el modelo en la página Modelos de codificación **predictiva (versión** preliminar).
+    El sistema tardará un par de minutos en "aprender" del etiquetado y actualizar el modelo. Una vez completado este proceso, se muestra un estado **Listo** para el modelo en la página **Modelos de codificación predictiva (versión preliminar).**
 
-Para obtener instrucciones más detalladas, vea [Train a predictive coding model](predictive-coding-train-model.md).
+Para obtener instrucciones más detalladas, consulte [Entrenamiento de un modelo de codificación predictiva](predictive-coding-train-model.md).
 
 ## <a name="step-3-apply-the-prediction-score-filter-to-items-in-review-set"></a>Paso 3: Aplicar el filtro de puntuación de predicción a los elementos del conjunto de revisión
 
-Después de realizar la concesión de una ronda de aprendizaje, puede aplicar el filtro de puntuación de predicción a los elementos del conjunto de revisión. Esto le permite revisar los elementos que el modelo ha predicho como relevantes o no relevantes.   
+Después de realizar durante la concesión una ronda de entrenamiento, puede aplicar el filtro de puntuación de predicción a los elementos del conjunto de revisión. Esto le permite revisar los elementos que el modelo ha predicho como pertinentes o no pertinentes.   
 
 1. Abra el conjunto de revisión.
 
    ![Haga clic en Filtros para mostrar la página desplegable Filtros.](..\media\PredictionScoreFilter0.png)
 
-   Los filtros predeterminados precargados se muestran en la parte superior de la página del conjunto de revisión. Puede dejar estos establecidos en **Cualquiera**.
+   Los filtros predeterminados cargados previamente se muestran en la parte superior de la página del conjunto de revisiones. Puede dejar estos valores establecidos en **Cualquiera**.
 
-2. Haga **clic en** Filtros para mostrar la **página** desplegable Filtros.
+2. Haga clic en **Filtros** para mostrar la página desplegable **Filtros** .
 
-3. Expanda la **sección & de codificación predictiva de Analytics** para mostrar un conjunto de filtros.
+3. Expanda la sección **Análisis & codificación predictiva** para mostrar un conjunto de filtros.
 
-      ![Filtro de puntuación de predicción en la & de codificación predictiva de Analytics.](..\media\PredictionScoreFilter1.png)
+      ![Filtro de puntuación de predicción en la sección De analytics & codificación predictiva.](..\media\PredictionScoreFilter1.png)
 
-   La convención de nomenclatura para los filtros de puntuación de predicción es **Puntuación de predicción (nombre del modelo)**. Por ejemplo, el nombre del filtro de puntuación de predicción de un modelo denominado **Modelo A** es **Puntuación de predicción (modelo A).**.
+   La convención de nomenclatura para los filtros de puntuación de predicción es **Puntuación de predicción (nombre del modelo).** Por ejemplo, el nombre del filtro de puntuación de predicción para un modelo denominado **Modelo A** es **Puntuación de predicción (modelo A).**
 
 4. Seleccione el filtro de puntuación de predicción que desea usar y, a continuación, haga clic en **Listo**.
 
-5. En la página conjunto de revisión, haga clic en el desplegable del filtro de puntuación de predicción y escriba los valores mínimos y máximos para el intervalo de puntuación de predicción. Por ejemplo, la siguiente captura de pantalla muestra un intervalo de puntuación de predicción entre **.5** y **1.0**.
+5. En la página conjunto de revisión, haga clic en la lista desplegable del filtro de puntuación de predicción y escriba los valores mínimo y máximo para el intervalo de puntuación de predicción. Por ejemplo, en la captura de pantalla siguiente se muestra un intervalo de puntuación de predicción entre **.5** y **1.0**.
 
    ![Valores mínimos y máximos para el filtro de puntuación de predicción.](..\media\PredictionScoreFilter2.png)
 
 6. Haga clic fuera del filtro para aplicar automáticamente el filtro al conjunto de revisión.
 
-  Se muestra una lista de documentos con una puntuación de predicción dentro del intervalo especificado en la página del conjunto de revisión.
+  En la página del conjunto de revisiones se muestra una lista de documentos con una puntuación de predicción dentro del intervalo especificado.
 
 Para obtener instrucciones más detalladas, vea [Aplicar un filtro de predicción a un conjunto de revisión](predictive-coding-apply-prediction-filter.md).
 
-## <a name="step-4-perform-more-training-rounds"></a>Paso 4: Realizar más rondas de aprendizaje
+## <a name="step-4-perform-more-training-rounds"></a>Paso 4: Realizar más rondas de entrenamiento
 
-Lo más probable es que tenga que realizar más rondas de aprendizaje para entrenar al módulo para predecir mejor los elementos relevantes y no relevantes del conjunto de revisión. En general, entrenarás el modelo suficientes veces hasta que se estabilice lo suficiente como para satisfacer tus requisitos.
+Lo más probable es que tenga que realizar más rondas de entrenamiento para entrenar el módulo con el fin de predecir mejor los elementos pertinentes y no pertinentes del conjunto de revisión. En general, entrenará el modelo los tiempos suficientes hasta que se estabilice lo suficiente para satisfacer sus requisitos.
 
-Para obtener más información, vea [Realizar rondas de aprendizaje adicionales](predictive-coding-train-model.md#perform-additional-training-rounds)
+Para obtener más información, vea [Realizar rondas de entrenamiento adicionales](predictive-coding-train-model.md#perform-additional-training-rounds).
 
 ## <a name="step-5-apply-the-final-prediction-score-filter-to-prioritize-review"></a>Paso 5: Aplicar el filtro de puntuación de predicción final para priorizar la revisión
 
-Repita las instrucciones del paso 3 para aplicar la puntuación de predicción final al conjunto de revisión para priorizar la revisión de elementos relevantes y no relevantes después de completar todas las rondas de aprendizaje y estabilizar el modelo.
+Repita las instrucciones del paso 3 para aplicar la puntuación de predicción final al conjunto de revisión para priorizar la revisión de elementos pertinentes y no relevantes después de completar todas las rondas de entrenamiento y estabilizar el modelo.

@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector de datos CellTrust SL2 para importar y archivar datos de comunicaciones móviles.
-ms.openlocfilehash: e5e07e4138445e46cdd21edc0cfb01d871dd3b6e
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 286546950c29732e1d33738ffbe7a74f2f6dcca2
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761161"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64940695"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>Archivar datos de CellTrust SL2 en Microsoft 365
 
 CellTrust SL2 captura datos de comunicaciones móviles e se integra con las tecnologías de archivado líderes para cumplir los requisitos de detección electrónica de normativas como FINRA, HIPAA, FOIA y TCPA. El conector de datos SL2 importa elementos de comunicación móviles a Microsoft 365. En este artículo se describe el proceso de integración de SL2 con Microsoft 365 mediante CellTrust SL2 Data Connector para el archivado. Al completar este proceso, se supone que se ha suscrito al servicio CellTrust SL2 y que está familiarizado con la arquitectura SL2. Para obtener información sobre CellTrust SL2, vea <https://www.celltrust.com>.
 
-Una vez importados los datos a buzones de usuario en Microsoft 365, puede aplicar características de cumplimiento de Microsoft 365, como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención de Microsoft 365 y cumplimiento de comunicaciones. El uso de CellTrust SL2 Data Connector para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+Después de importar datos a buzones de usuario en Microsoft 365, puede aplicar características de Microsoft Purview como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención de Microsoft 365 y cumplimiento de comunicaciones. El uso de CellTrust SL2 Data Connector para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
 
 ## <a name="overview-of-archiving-with-the-celltrust-sl2-data-connector"></a>Introducción al archivado con CellTrust SL2 Data Connector
 
@@ -45,13 +45,13 @@ La plataforma SL2 de CellTrust captura datos de comunicación de varios orígene
 
 - Obtenga las credenciales para acceder a la cuenta de administrador del dominio SL2.
 
-- Al usuario que crea el conector de datos CellTrust SL2 en el paso 1 (y lo completa en el paso 3) se le debe asignar el rol administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** de la Centro de cumplimiento de Microsoft 365. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que crea el conector de datos CellTrust SL2 en el paso 1 (y lo completa en el paso 3) se le debe asignar el rol administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento de Microsoft Purview. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Este conector de datos CellTrust está disponible en entornos de GCC en la nube de Microsoft 365 administración pública de EE. UU. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de cumplimiento y protección de datos Microsoft 365. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
+- Este conector de datos CellTrust está disponible en entornos de GCC en la nube de Microsoft 365 administración pública de EE. UU. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
 ## <a name="step-1-create-a-celltrust-sl2-connector"></a>Paso 1: Crear un conector CellTrust SL2
 
-El primer paso consiste en crear un conector de datos en el Centro de cumplimiento de Microsoft 365.
+El primer paso consiste en crear un conector de datos en el portal de cumplimiento.
 
 1. Vaya a <https://compliance.microsoft.com> y haga clic en **Conectores de datos** en el panel de navegación izquierdo.
 
@@ -85,11 +85,11 @@ El siguiente paso consiste en iniciar sesión en una cuenta de administrador par
 
    ![Habilite las unidades organizativas para archivar.](../media/EnableCellTrustOUs.png)
 
-4. Cuando haya terminado con las selecciones, cierre la ventana del explorador y vuelva a la página del asistente en Centro de cumplimiento de Microsoft 365. Después de unos segundos, el asistente avanza automáticamente al siguiente paso de asignación de usuarios.
+4. Cuando haya terminado con las selecciones, cierre la ventana del explorador y vuelva a la página del asistente en el portal de cumplimiento. Después de unos segundos, el asistente avanza automáticamente al siguiente paso de asignación de usuarios.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: Asignar usuarios y completar la configuración del conector
 
-El último paso es asignar usuarios y completar la configuración del conector en el Centro de cumplimiento de Microsoft 365.
+El último paso es asignar usuarios y completar la configuración del conector en el portal de cumplimiento.
 
 1. En la página **Asignación de** usuarios, seleccione **Habilitar asignación automática de usuarios** si la dirección de correo electrónico de los usuarios es la misma en SL2 y Microsoft 365. De lo contrario, debe cargar manualmente las direcciones de correo electrónico del usuario mediante la carga de un archivo CSV que asigne la dirección SL2 de los usuarios a su dirección de Microsoft 365.
 

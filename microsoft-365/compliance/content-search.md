@@ -1,5 +1,5 @@
 ---
-title: Crear y ejecutar una búsqueda de contenido en el Centro de cumplimiento de Microsoft 365
+title: Creación y ejecución de una búsqueda de contenido en el portal de cumplimiento de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,16 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Utilice la herramienta de búsqueda de contenido de eDiscovery en el centro de cumplimiento de Microsoft para buscar contenido en diferentes servicios de Microsoft 365.
-ms.openlocfilehash: 68270466625cc5f9b76359ae7697536956c727aa
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 374a9ce119c0e4563c14ae4eda15ce562dc8643d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61643389"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938387"
 ---
 # <a name="create-a-content-search"></a>Crear una búsqueda de contenido
 
-Puede usar la herramienta de eDiscovery de búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para buscar contenido local como correo electrónico, documentos y conversaciones de mensajería instantánea en su organización. Use esta herramienta para buscar contenido en estos orígenes de datos de Microsoft 365 basados en la nube:
+Puede usar la herramienta de eDiscovery de búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para buscar contenido local como correo electrónico, documentos y conversaciones de mensajería instantánea en su organización. Use esta herramienta para buscar contenido en estos orígenes de datos de Microsoft 365 basados en la nube:
   
 - Buzones de correo de Exchange Online
 
@@ -46,7 +46,7 @@ Después de ejecutar una búsqueda, se mostrará el número de ubicaciones de co
 
 ## <a name="before-you-run-a-search"></a>Antes de ejecutar una búsqueda
 
-- Para acceder a la página de herramienta de Búsqueda de contenido en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> (para ejecutar búsquedas y obtener una vista previa de los resultados y exportar resultados), un administrador, responsable de cumplimiento o administrador de exhibición de documentos electrónicos debe ser miembro del grupo de roles Administrador de exhibición de documentos electrónicos en el Centro de cumplimiento de Microsoft 365. Para más información, vea [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
+- Para acceder a la página de herramienta de Búsqueda de contenido en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento</a> (para ejecutar búsquedas y obtener una vista previa de los resultados y exportar resultados), un administrador, responsable de cumplimiento o supervisor de eDiscovery debe ser miembro del grupo de roles Supervisor de eDiscovery en el portal de cumplimiento. Para más información, vea [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
 
 - En una implementación de Exchange híbrida, no puede usar la herramienta de búsqueda de contenido para buscar buzones locales. Solo puede usar la herramienta para buscar buzones basados en la nube.
 
@@ -54,7 +54,7 @@ Después de ejecutar una búsqueda, se mostrará el número de ubicaciones de co
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta a la que se han asignado los permisos adecuados.
 
-2. En el panel de navegación izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en **Búsqueda de contenido**.
+2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Búsqueda de contenido**.
 
 3. En la página **Búsqueda de contenido**, haga clic en **Nueva búsqueda**.
 

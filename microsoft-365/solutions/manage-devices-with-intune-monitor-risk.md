@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: af165f3565e3601ac4e8118535af3913c2cb2af8
-ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
+ms.openlocfilehash: 68ce5f263f24d4ab3271425815834870c71f2a4a
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64737435"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938980"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>Paso 6. Supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad
 
@@ -39,7 +39,7 @@ La implementación de Microsoft Defender para punto de conexión incluye puntos 
 En esta ilustración:
 - Microsoft Defender para punto de conexión aumenta en gran medida la sofisticación de la protección contra amenazas para dispositivos. 
 - Aunque Microsoft Intune permite establecer directivas de protección de aplicaciones y administrar dispositivos (incluidos los cambios de configuración), Defender para punto de conexión supervisa continuamente los dispositivos en busca de amenazas y puede tomar medidas automatizadas para corregir los ataques. 
-- Puede conectar Microsoft Intune a Defender para punto de conexión para supervisar el riesgo del dispositivo y el cumplimiento de las líneas base de seguridad.
+- Puede usar Intune para incorporar dispositivos a Defender para punto de conexión. Al hacerlo, también habilita estos dispositivos para que funcionen con la Prevención de pérdida de datos en punto de conexión de Microsoft Purview (DLP de punto de conexión).
 
 En este artículo se incluyen estos pasos:
 - Supervisar el riesgo del dispositivo
@@ -51,9 +51,9 @@ Si Defender para punto de conexión aún no se ha configurado, trabaje con el ad
 
 Con Microsoft Defender para punto de conexión implementado, puede aprovechar las señales de riesgo de amenazas. Esto le permite bloquear el acceso a los dispositivos en función de su puntuación de riesgo. Microsoft recomienda permitir el acceso a dispositivos con una puntuación de riesgo media o inferior.
 
-Para Android e iOS/iPadOS, se pueden usar señales de amenazas dentro de las directivas de protección de aplicaciones (APP). Para obtener información sobre cómo configurar esto, consulte [Crear y asignar directiva de protección de aplicaciones para establecer el nivel de riesgo del dispositivo](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level).
+Para Android e iOS/iPadOS, se pueden usar señales de amenazas dentro de las directivas de protección de aplicaciones (APP). Para obtener información sobre cómo configurar esto, consulte [Crear y asignar directiva de protección de aplicaciones para establecer el nivel de riesgo del dispositivo](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level).
 
-Para todas las plataformas, puede establecer el nivel de riesgo en las directivas de cumplimiento de dispositivos existentes. Consulte [Crear una directiva de acceso condicional](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy). 
+Para todas las plataformas, puede establecer el nivel de riesgo en las directivas de cumplimiento de dispositivos existentes. Consulte [Crear una directiva de acceso condicional](/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy).
 
 ## <a name="deploy-security-baselines-and-monitor-compliance-to-these-settings"></a>Implementar líneas base de seguridad y supervisar el cumplimiento de esta configuración
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-get-started
-ms.openlocfilehash: 68315c6cf7947c2d42e58e34b4496e0ef790c8b0
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: d332cbf32f5423fb16abb158f9a30a18c2391a22
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665500"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939353"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Comenzar con Microsoft Defender para punto de conexión Plan 1
 
@@ -81,7 +81,7 @@ La barra de navegación del lado izquierdo de la pantalla le permite moverse fá
 | **Salud** >  **Centro de mensajes** | Navega al Centro de mensajes en el Centro de administración de Microsoft 365. El Centro de mensajes proporciona información sobre los cambios planeados. Cada mensaje describe lo que viene, cómo puede afectar a los usuarios y cómo administrar los cambios. |  
 | **Permisos & roles** | Permite conceder permisos para usar el portal de Microsoft 365 Defender. Los permisos se conceden a través de roles en Azure Active Directory (Azure AD). Seleccione un rol y aparecerá un panel flotante. El control flotante contiene un vínculo a Azure AD donde puede agregar o quitar miembros de un grupo de roles. <br/><br/> Para más información, consulte [Administración del acceso al portal mediante el control de acceso basado en rol](rbac.md).  |
 | **Configuración** | Navega a la configuración general del portal de Microsoft 365 Defender (que aparece como Centro de **seguridad**) y Defender para punto de conexión (que aparece como **puntos de conexión**). <br/><br/> Para obtener más información, consulte [Configuración](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal). |
-| **Más recursos** | Muestra una lista de más portales y centros, como Azure Active Directory y el Centro de cumplimiento de Microsoft 365. <br/><br/> Para más información, consulte [Portales de seguridad y centros de administración de Microsoft](../defender/portals.md). |
+| **Más recursos** | Muestra una lista de más portales y centros, como Azure Active Directory y el portal de cumplimiento de Microsoft Purview. <br/><br/> Para más información, consulte [Portales de seguridad y centros de administración de Microsoft](../defender/portals.md). |
 
 > [!TIP]
 > Para más información, consulte la [introducción al portal de Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).

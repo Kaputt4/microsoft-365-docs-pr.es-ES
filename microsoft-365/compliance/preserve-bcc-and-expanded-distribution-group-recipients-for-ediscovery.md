@@ -12,23 +12,23 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place directivas de suspensión, suspensión por juicio y retención de Microsoft 365 le permiten conservar el contenido del buzón para cumplir los requisitos normativos y de exhibición de documentos electrónicos.
-ms.openlocfilehash: 1477fbb2425138dc428fe348fbe85cac1f12183b
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: a088407277f7ebced3aa69ee9ff807913f9b0c85
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758566"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64942125"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conservar los destinatarios de grupos de distribución expandidos y CCO para la exhibición de documentos electrónicos
-
-Las retenciones por litigio, las retenciones de eDiscovery y [las directivas de retención de Microsoft 365](./retention.md) (creadas en el Centro de cumplimiento de Microsoft 365) le permiten conservar el contenido del buzón para cumplir los requisitos normativos y de eDiscovery. De forma predeterminada, la información sobre los destinatarios que se abordan directamente en los campos To y Cc de un mensaje se incluye en todos los mensajes. Pero su organización puede requerir la capacidad de buscar y reproducir detalles sobre todos los destinatarios de un mensaje. Incluye lo siguiente:
-
-- **Destinatarios abordados mediante el campo CCO de un mensaje:** Los destinatarios CCO se almacenan en el mensaje en el buzón del remitente, pero no se incluyen en los encabezados del mensaje entregado a los destinatarios.
-
-- **Destinatarios de grupos de distribución expandidos:** Destinatarios que reciben el mensaje porque son miembros de un grupo de distribución al que se ha dirigido el mensaje, ya sea en los campos To, Cc o Bcc.
-
-Exchange Online y Exchange Server 2013 (actualización acumulativa 7 y versiones posteriores) conservan información sobre Bcc y los destinatarios de grupos de distribución expandidos. Puede buscar esta información mediante una herramienta eDiscovery en el Centro de cumplimiento de Microsoft 365.
-
+  
+Las retenciones por litigio, las retenciones de eDiscovery y [las directivas de retención de Microsoft 365](./retention.md) (creadas en el portal de cumplimiento de Microsoft Purview) le permiten conservar el contenido del buzón para cumplir los requisitos normativos y de eDiscovery. De forma predeterminada, la información sobre los destinatarios que se abordan directamente en los campos To y Cc de un mensaje se incluye en todos los mensajes. Pero su organización puede requerir la capacidad de buscar y reproducir detalles sobre todos los destinatarios de un mensaje. Incluye lo siguiente:
+  
+- **Destinatarios abordados mediante el campo CCO de un mensaje:** Los destinatarios CCO se almacenan en el mensaje en el buzón del remitente, pero no se incluyen en los encabezados del mensaje entregado a los destinatarios. 
+    
+- **Destinatarios de grupos de distribución expandidos:** Destinatarios que reciben el mensaje porque son miembros de un grupo de distribución al que se ha dirigido el mensaje, ya sea en los campos To, Cc o Bcc. 
+    
+Exchange Online y Exchange Server 2013 (actualización acumulativa 7 y versiones posteriores) conservan información sobre Bcc y los destinatarios de grupos de distribución expandidos. Puede buscar esta información mediante una herramienta eDiscovery en el portal de cumplimiento.
+  
 ## <a name="how-bcc-recipients-and-expanded-distribution-group-recipients-are-preserved"></a>Forma de conservación de los destinatarios CCO y los destinatarios del grupo de distribución expandido
 
 Tal como se mencionó anteriormente, la información los destinatarios CCO se almacena con el mensaje en el buzón de correo del remitente. Esta información se indexa y está disponible para las búsquedas y retenciones de eDiscovery.
@@ -84,7 +84,7 @@ R. No. Esta información no se incluye en los encabezados del mensaje y no está
 
  **Q. ¿Cómo puedo asegurarme de que los destinatarios del grupo de distribución expandido siempre se conserven?**
 
-A. Para asegurarse de que los miembros del grupo de distribución expandido siempre se conservan con un mensaje, [coloque todos los buzones en espera](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold) o cree una directiva de retención de Microsoft 365 para toda la organización.
+R. Para asegurarse de que los miembros del grupo de distribución expandido siempre se conservan con un mensaje, [coloque todos los buzones en espera](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold) o cree una directiva de retención de Microsoft 365 para toda la organización.
 
  **P. ¿Qué tipos de grupos se admiten?**
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilice los servicios de seguridad y cumplimiento de Microsoft 365 para proteger sus aplicaciones, datos y dispositivos para los trabajadores híbridos.
-ms.openlocfilehash: 5ae369ffa41444e0cd2d3c6d28be470ede170b01
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 08771de0f9e833405da308fb645b5fb5c906c543
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314061"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937793"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>Paso 3: implementar la seguridad y el cumplimiento de la normativa para los trabajadores híbridos
 
@@ -72,14 +72,14 @@ Cumpla los requisitos reglamentarios o las directivas internas con estas caracte
 |Protección de pérdida de datos (DLP)|Detecte, advierta y bloquee el uso compartido riesgoso, involuntario o inadecuado, como el de los datos que contengan información personal, tanto interna como externamente.|Microsoft 365 E3 o E5|
 |Control de aplicaciones de acceso condicional|Evite la descarga de datos confidenciales en los dispositivos personales de los usuarios.|Microsoft 365 E3 o E5|
 |Directivas y etiquetas de retención de datos|Implemente controles de gobierno de la información, como cuánto tiempo se conservan los datos y los requisitos de almacenamiento de datos personales sobre los clientes, para cumplir con las directivas de la organización o las regulaciones de datos.|Microsoft 365 E3 o E5|
-|Cifrado de mensajes de Office (OME)|Envíe y reciba mensajes de correo electrónico cifrado entre las personas de dentro y fuera de la organización que contengan datos regulados, como los datos personales sobre clientes.|Microsoft 365 E3 o E5|
+|Cifrado de mensajes de Microsoft Purview|Envíe y reciba mensajes de correo electrónico cifrado entre las personas de dentro y fuera de la organización que contengan datos regulados, como los datos personales sobre clientes.|Microsoft 365 E3 o E5|
 |Administrador de cumplimiento|Administre las actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft con esta herramienta de evaluación de riesgos basada en flujos de trabajo en el portal de confianza del servicio de Microsoft.|Microsoft 365 E3 o E5|
-|Administrador de cumplimiento|Vea una calificación general de la configuración de cumplimiento actual y las recomendaciones para mejorarla en el Centro de cumplimiento de Microsoft 365.|Microsoft 365 E3 o E5|
+|Administrador de cumplimiento|Vea una puntuación general de la configuración de cumplimiento actual y las recomendaciones para mejorarla en el portal de cumplimiento de Microsoft Purview.|Microsoft 365 E3 o E5|
 |Cumplimiento de la comunicación|Detectar, capturar y llevar a cabo acciones correctivas para los mensajes no adecuados de su organización.|Microsoft 365 E5 o Microsoft 365 E3 con el complemento de cumplimiento o administración de riesgos de Insider|
 |Administración de riesgos de Insider|Detecte, investigue y actúe ante riesgos malintencionados e involuntarios en su organización. Microsoft 365 puede detectar estos tipos de riesgos, incluso cuando un trabajador usa un dispositivo no administrado.|Microsoft 365 E5 o Microsoft 365 E3 con el complemento de cumplimiento o administración de riesgos de Insider|
 ||||
 
-Para obtener más información, consulte [Tareas rápidas para comenzar con el Centro de cumplimiento de Microsoft 365](../compliance/compliance-quick-tasks.md).
+Consulte [Tareas rápidas para empezar a trabajar con Microsoft Purview](../compliance/compliance-quick-tasks.md) para más información.
 
 ## <a name="results-of-step-3"></a>Resultados del paso 3
 

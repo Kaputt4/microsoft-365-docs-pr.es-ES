@@ -14,16 +14,16 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 04/14/2022
+ms.date: 04/19/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 6d0e9b00e7044145f7ca03d492a5bd32e726c38d
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: 08f9f3e127246b361cd76000967ae22991335338
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911476"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943477"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Antivirus de Microsoft Defender compatibilidad con otros productos de seguridad
 
@@ -176,7 +176,7 @@ En la tabla de esta sección se resumen las características y funcionalidades q
 (<a id="fn8">8</a>) Cuando Antivirus de Microsoft Defender está en modo pasivo, el filtrado de contenido web solo funciona con el explorador Microsoft Edge. 
 
 > [!NOTE]
-> Microsoft 365 protección contra [la pérdida de datos de punto de conexión](/microsoft-365/compliance/endpoint-dlp-learn-about) sigue funcionando normalmente cuando Antivirus de Microsoft Defender está en modo activo o pasivo.
+> La protección contra [la pérdida de datos de punto de conexión](/microsoft-365/compliance/endpoint-dlp-learn-about) sigue funcionando normalmente cuando Antivirus de Microsoft Defender está en modo activo o pasivo.
 
 ## <a name="important-notes"></a>Notas importantes
 
@@ -194,7 +194,6 @@ Puede usar uno de varios métodos para confirmar el estado de Antivirus de Micro
  | Administrador de tareas |  1. En un dispositivo Windows, abra la aplicación Administrador de tareas.<br/>2. Seleccione la pestaña **Detalles** .<br/>3. Busque **MsMpEng.exe** en la lista. | 
  | Windows PowerShell <br/> (Para confirmar que Antivirus de Microsoft Defender se está ejecutando) |  1. En un dispositivo Windows, abra Windows PowerShell. <br/>2. Ejecute el siguiente cmdlet de PowerShell: `Get-Process`.<br/>3. Revise los resultados. Debería ver **MsMpEng.exe** si Antivirus de Microsoft Defender está habilitado. | 
  | Windows PowerShell <br/>(Para confirmar que la protección antivirus está en su lugar) |  Puede usar el [cmdlet De PowerShell Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).<br/>1. En un dispositivo Windows, abra Windows PowerShell.<br/>2. Ejecute el siguiente cmdlet de PowerShell:<br/> \|Get-MpComputerStatus seleccionar AMRunningMode <br/>3. Revise los resultados. Debería ver El **modo de bloque** **normal**, **pasivo** o EDR si Antivirus de Microsoft Defender está habilitado en el punto de conexión.  | 
- | Símbolo del sistema |  1. En un dispositivo Windows, abra el símbolo del sistema.<br/>2. Escriba `sc query windefend`y presione Entrar.<br/>3. Revise los resultados para confirmar que Antivirus de Microsoft Defender se está ejecutando en modo pasivo.  | 
 
 ## <a name="more-details-about-microsoft-defender-antivirus-states"></a>Más detalles sobre los estados de Antivirus de Microsoft Defender
 
@@ -221,4 +220,4 @@ En la tabla de esta sección se describen varios estados que puede ver con Antiv
 - [Antivirus de Microsoft Defender en clientes Windows](microsoft-defender-antivirus-in-windows-10.md)
 - [Antivirus de Microsoft Defender en Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 - [EDR en modo bloqueo](edr-in-block-mode.md)
-- [Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](/microsoft-365/compliance/endpoint-dlp-learn-about)

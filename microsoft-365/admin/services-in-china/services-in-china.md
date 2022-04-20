@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Obtenga más información sobre Office 365 operados por 21Vianet que está diseñado para satisfacer las necesidades de servicios en la nube seguros, confiables y escalables en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7608be301accfb99e03683240108be5eaa7529a6
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 16b40c0cb03d14915ccb89f7d34be5110b4c0849
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782641"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938936"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 operado por 21Vianet
 
@@ -174,9 +174,9 @@ Para más información sobre cómo configurar una implementación híbrida con i
 |Uso compartido de calendarios|Exchange 2013 SP1 y versiones posteriores admite la configuración manual del uso compartido de calendarios de Internet con otras organizaciones locales Exchange o Exchange Online. Para obtener más información sobre cómo configurar esta característica manualmente, vea [Habilitar la publicación de calendarios de Internet](/exchange/enable-internet-calendar-publishing-exchange-2013-help).|
 Compartir Exchange datos de contacto en dispositivos móviles de Apple en Apple iCloud.|Esta configuración o característica está habilitada de forma predeterminada. Los administradores deben desactivar esta característica para evitar que los usuarios compartan Exchange datos fuera de su organización.|
 |Cifrado de Exchange Hosted Email|No disponible.|
-|Cifrado de mensajes de Office 365|Próximamente.|
+|Cifrado de mensajes de Microsoft Purview|Próximamente.|
 
-## <a name="office"></a>Office
+## <a name="office"></a>Oficina
 
 |Función|Disponibilidad|
 |---|---|

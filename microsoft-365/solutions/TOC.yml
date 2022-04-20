@@ -306,13 +306,13 @@
           href: /onedrive/plan-onedrive-enterprise
     - name: Cumplimiento
       items:
-        - name: Soluciones de riesgos internos en Microsoft 365
+        - name: Soluciones de riesgo interno en Microsoft Purview
           href: ../compliance/insider-risk-solution-overview.md
         - name: Soluciones de auditoría
           href: ../compliance/auditing-solutions-overview.md
         - name: Soluciones de eDiscovery en Microsoft 365
           href: ../compliance/ediscovery.md
-        - name: eDiscovery avanzado de Microsoft 365
+        - name: Exhibición de documentos electrónicos de Microsoft Purview (Premium)
           href: ../compliance/overview-ediscovery-20.md
         - name: Planes de acción de cumplimiento de normativas
           items:

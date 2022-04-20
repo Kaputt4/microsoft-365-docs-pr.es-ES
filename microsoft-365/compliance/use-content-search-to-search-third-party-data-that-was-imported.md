@@ -1,5 +1,5 @@
 ---
-title: Usar búsqueda de contenido para buscar datos importados de terceros
+title: Uso de búsqueda de contenido para buscar datos importados de terceros
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,55 +15,55 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: Use la herramienta de exhibición de documentos electrónicos de búsqueda de contenido para buscar elementos importados a buzones de correo en Microsoft 365 desde un origen de datos de terceros mediante la creación de consultas.
+description: Use la herramienta eDiscovery de búsqueda de contenido para buscar elementos importados a buzones de Microsoft 365 desde un origen de datos de terceros mediante la creación de consultas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 068a6e3164154129ba9148b41138d50c518042ed
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 29c033f7d31aca14b527aa6b7fd83d533a5875e7
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202984"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939463"
 ---
-# <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Usar la búsqueda de contenido para buscar datos de terceros importados por un conector de asociado personalizado
+# <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Uso de búsqueda de contenido para buscar datos de terceros importados por un conector de asociado personalizado
 
-Puede usar la herramienta [de](content-search.md) exhibición de documentos electrónicos de búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para buscar elementos importados a buzones de correo en Microsoft 365 de un origen de datos de terceros. Puede crear una consulta para buscar en todos los elementos de datos de terceros importados o puede crear una consulta para buscar elementos de datos de terceros específicos. Además, también puede crear una directiva de retención basada en consultas o una retención de exhibición de documentos electrónicos basada en consultas para conservar datos de terceros.
+Puede usar la [herramienta eDiscovery de búsqueda de contenido](content-search.md) en el portal de cumplimiento de Microsoft Purview para buscar elementos importados a buzones de Microsoft 365 desde un origen de datos de terceros. Puede crear una consulta para buscar en todos los elementos de datos importados de terceros o puede crear una consulta para buscar elementos de datos de terceros específicos. Además, también puede crear una directiva de retención basada en consultas o una suspensión de exhibición de documentos electrónicos basada en consultas para conservar datos de terceros.
   
-Para obtener más información sobre cómo trabajar con un partner para importar datos de terceros y una lista de los tipos de datos de terceros que puede importar a Microsoft 365, vea Trabajar con un partner para archivar datos de terceros en [Office 365](work-with-partner-to-archive-third-party-data.md).
+Para obtener más información sobre cómo trabajar con un asociado para importar datos de terceros y una lista de los tipos de datos de terceros que puede importar a Microsoft 365, consulte [Trabajo con un asociado para archivar datos de terceros en Office 365](work-with-partner-to-archive-third-party-data.md).
 
 > [!IMPORTANT]
-> Las instrucciones de este artículo solo se aplican a los datos de terceros importados por un conector de asociado personalizado. Este artículo no se aplica a los datos de terceros que se importan mediante los conectores de datos de terceros [en](archiving-third-party-data.md#third-party-data-connectors) el Centro de cumplimiento de Microsoft.
+> Las instrucciones de este artículo solo se aplican a datos de terceros importados por un conector de asociado personalizado. Este artículo no se aplica a los datos de terceros que se importan mediante los [conectores de datos de terceros](archiving-third-party-data.md#third-party-data-connectors) en el Centro de cumplimiento de Microsoft.
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>Creación de una consulta para buscar en todos los datos de terceros
 
-Para buscar (o poner en espera) cualquier tipo de datos de terceros que haya importado a Office 365, puede usar el par de propiedades y valores del mensaje en el cuadro de palabra clave de una búsqueda de contenido o al crear una retención basada en `kind:externaldata` consultas. Por ejemplo, para buscar elementos importados desde cualquier origen de datos de terceros y contener la palabra "contoso" en la propiedad Subject del elemento importado, se usaría la siguiente consulta: 
+Para buscar (o colocar en suspensión) cualquier tipo de datos de terceros que haya importado a Office 365, puede usar el par propiedad-valor del `kind:externaldata` mensaje en el cuadro de palabra clave para una búsqueda de contenido o al crear una retención basada en consultas. Por ejemplo, para buscar elementos importados desde cualquier origen de datos de terceros y contener la palabra "contoso" en la propiedad Subject del elemento importado, usaría la consulta siguiente: 
   
 ```powershell
 kind:externaldata AND subject:contoso
 ```
 
-El ejemplo de consulta de palabra clave anterior incluye la propiedad subject. Para obtener una lista de otras propiedades para elementos de datos de terceros que pueden incluirse en una consulta de palabras clave, vea la sección "Más información" en Trabajar con un partner para archivar datos de terceros en [Office 365](work-with-partner-to-archive-third-party-data.md#more-information).
+El ejemplo de consulta de palabra clave anterior incluye la propiedad subject. Para obtener una lista de otras propiedades para elementos de datos de terceros que pueden incluirse en una consulta de palabras clave, consulte la sección "Más información" en [Trabajar con un asociado para archivar datos de terceros en Office 365](work-with-partner-to-archive-third-party-data.md#more-information).
   
-Al crear consultas para buscar y retener datos de terceros, también puede usar condiciones para restringir los resultados de la búsqueda. Para obtener más información acerca de cómo crear consultas de búsqueda de contenido, vea Consultas de palabras clave y condiciones [de búsqueda para búsqueda de contenido](keyword-queries-and-search-conditions.md).
+Al crear consultas para buscar y contener datos de terceros, también puede usar condiciones para restringir los resultados de la búsqueda. Para obtener más información sobre cómo crear consultas de búsqueda de contenido, vea [Consultas de palabras clave y condiciones de búsqueda para búsqueda de contenido](keyword-queries-and-search-conditions.md).
   
 ## <a name="creating-a-query-to-search-specific-types-of-third-party-data"></a>Creación de una consulta para buscar tipos específicos de datos de terceros
 
-En lugar de buscar en todos los tipos de datos de terceros, puede crear consultas que solo busquen un tipo especificado de datos de terceros mediante la siguiente propiedad *message: value* pair en el cuadro de palabras clave de una búsqueda de contenido:
+En lugar de buscar en todos los tipos de datos de terceros, puede crear consultas que solo busquen un tipo especificado de datos de terceros mediante la *siguiente propiedad de mensaje: par de valores* en el cuadro palabra clave para una búsqueda de contenido:
   
 ```powershell
 itemclass:ipm.externaldata.<third-party data type>* 
 ```
 
-Por ejemplo, para buscar datos de Facebook que contengan la palabra "contoso" en la propiedad Subject, use la siguiente consulta:
+Por ejemplo, para buscar datos de Facebook que contengan la palabra "contoso" en la propiedad Subject, usaría la siguiente consulta:
   
 ```powershell
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-En la tabla siguiente se enumeran los tipos de datos de terceros que puede buscar y el valor que se usará para la propiedad message para buscar específicamente ese tipo de datos  `itemclass:` de terceros. La sintaxis de consulta no distingue mayúsculas de minúsculas. 
+En la tabla siguiente se enumeran los tipos de datos de terceros que se pueden buscar y el valor que se va a usar para que la propiedad message  `itemclass:` busque específicamente ese tipo de datos de terceros. La sintaxis de consulta no distingue mayúsculas de minúsculas. 
   
 |**Tipo de datos de terceros**|**Valor de la  `itemclass:` propiedad**|
 |:-----|:-----|
-|AIM  <br/> | `ipm.externaldata.AIM*` <br/> |
+|OBJETIVO  <br/> | `ipm.externaldata.AIM*` <br/> |
 |American Idol  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
 |AOL con cliente Pivot  <br/> | `ipm.externaldata.Pivot.IM` <br/> |
 |Apple Juice  <br/> | `ipm.externaldata.AppleJuice*` <br/> |
@@ -75,7 +75,7 @@ En la tabla siguiente se enumeran los tipos de datos de terceros que puede busca
 |Axs Signed  <br/> | `ipm.externaldata.AxsSigned*` <br/> |
 |Bazaarvoice  <br/> | `ipm.externaldata.Bazaarvoice*` <br/> |
 |Bearshare  <br/> | `ipm.externaldata.Bearshare*` <br/> |
-|BitTorrent  <br/> | `ipm.externaldata.BitTorrent*` <br/> |
+|Bittorrent  <br/> | `ipm.externaldata.BitTorrent*` <br/> |
 |Blackberry  <br/> | `ipm.externaldata.Blackberry*` <br/> |
 |Registros de llamadas de BlackBerry  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
 |BlackBerry Messenger  <br/> | `ipm.externaldata.BlackBerryMessenger*` <br/> |
@@ -84,7 +84,7 @@ En la tabla siguiente se enumeran los tipos de datos de terceros que puede busca
 |Bloomberg  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
 |Mensaje de Bloomberg  <br/> | `ipm.externaldata.conversation.Bloomberg Message*` <br/> |
 |Mensajería de Bloomberg  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
-|Box  <br/> | `ipm.externaldata.Box*` <br/> |
+|Cuadro  <br/> | `ipm.externaldata.Box*` <br/> |
 |Cisco IM &amp; Presence Server  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
 |CipherCloud para Salesforce Chatter  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |
@@ -100,7 +100,7 @@ En la tabla siguiente se enumeran los tipos de datos de terceros que puede busca
 |HipChat  <br/> | `ipm.externaldata.HipChat*` <br/> |
 |Hopster  <br/> | `ipm.externaldata.Hopster*` <br/> |
 |HubConnex  <br/> | `ipm.externaldata.HubConnex*` <br/> |
-|IBM Connections  <br/> | `ipm.externaldata.Connections*` <br/> |
+|CONEXIONES DE IBM  <br/> | `ipm.externaldata.Connections*` <br/> |
 |IBM SameTime  <br/> | `ipm.externaldata.Sametime*` <br/> |
 |Chat ICE  <br/> | `ipm.externaldata.conversation.Ice Chat*` <br/> |
 |Indii Messenger  <br/> | `ipm.externaldata.Indii*` <br/> |
@@ -114,10 +114,10 @@ En la tabla siguiente se enumeran los tipos de datos de terceros que puede busca
 |LinkedIn  <br/> | `ipm.externaldata.LinkedIn*` <br/> |
 |MFTP  <br/> | `ipm.externaldata.MFTP*` <br/> |
 |Microsoft UC  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
-|Alineación de la mente  <br/> | `ipm.externaldata.MindAlign*` <br/> |
+|Alineación mental  <br/> | `ipm.externaldata.MindAlign*` <br/> |
 |Mobile Guard  <br/> | `ipm.externaldata.MobileGuard*` <br/> |
 |MSN  <br/> | `ipm.externaldata.MSN*` <br/> |
-|MySpace  <br/> | `ipm.externaldata.MySpace*` <br/> |
+|Myspace  <br/> | `ipm.externaldata.MySpace*` <br/> |
 |NEONetwork  <br/> | `ipm.externaldata.NEONetwork*` <br/> |
 |OpenNap  <br/> | `ipm.externaldata.OpenNap*` <br/> |
 |Pinterest  <br/> | `ipm.externaldata.Pinterest*` <br/> |
@@ -137,9 +137,9 @@ En la tabla siguiente se enumeran los tipos de datos de terceros que puede busca
 |Twitter  <br/> | `ipm.externaldata.Twitter*` <br/> |
 |UBS Chat  <br/> | `ipm.externaldata.UBS*` <br/> |
 |Vimeo  <br/> | `ipm.externaldata.Vimeo*` <br/> |
-|WinMX  <br/> | `ipm.externaldata.WinMX*` <br/> |
+|Winmx  <br/> | `ipm.externaldata.WinMX*` <br/> |
 |Winny  <br/> | `ipm.externaldata.Winny*` <br/> |
-|Yahoo!  <br/> | `ipm.externaldata.Yahoo!*` <br/> |
+|¡Yahoo!  <br/> | `ipm.externaldata.Yahoo!*` <br/> |
 |Yammer  <br/> | `ipm.externaldata.Yammer*` <br/> |
 |YellowJacket  <br/> | `ipm.externaldata.YellowJacket*` <br/> |
 |YouTube  <br/> | `ipm.externaldata.YouTube*` <br/> |
