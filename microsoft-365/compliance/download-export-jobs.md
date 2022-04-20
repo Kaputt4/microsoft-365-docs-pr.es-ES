@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Exporte documentos de un conjunto de revisión a una cuenta de Azure Storage y, a continuación, use Explorador de Azure Storage para descargarlos en un equipo local.
-ms.openlocfilehash: babac7d0289eee2384c12acfe05223bfceba1ce1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6c8709fe1540393164e00222b728b10d5f809012
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934849"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994906"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>Exportación de documentos en un conjunto de revisión a una cuenta de Azure Storage
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Al exportar documentos desde un conjunto de revisión en un caso de exhibición de documentos electrónicos (Premium), tiene la opción de exportarlos a una cuenta de Azure Storage administrada por su organización. Si usa esta opción, los documentos se cargan en la ubicación de Azure Storage. Después de exportarlos, puede acceder a los documentos (y descargarlos en un equipo local u otra ubicación) mediante el Explorador de Azure Storage. En este artículo se proporcionan instrucciones sobre cómo exportar documentos a la cuenta de Azure Storage y cómo usar el Explorador de Azure Storage para conectarse a una ubicación Azure Storage para descargar los documentos exportados. Para obtener más información sobre Explorador de Azure Storage, consulte [Uso de Explorador de Azure Storage](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 

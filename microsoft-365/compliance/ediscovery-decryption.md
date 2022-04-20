@@ -16,14 +16,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo Microsoft 365 herramientas de exhibición de documentos electrónicos controlan documentos cifrados adjuntos a mensajes de correo electrónico y almacenados en SharePoint Online y OneDrive para la Empresa.
-ms.openlocfilehash: 91eef14c1cb4dc91657a1d9a26ab00b1eb6f6d92
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e010ef1ff169467b442e137bc31d3640aa5a8cb4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948779"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994466"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Descifrado en Microsoft 365 herramientas de exhibición de documentos electrónicos
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 El cifrado es una parte importante de la estrategia de protección de archivos y protección de la información. Las organizaciones de todos los tipos usan tecnología de cifrado para proteger el contenido confidencial dentro de su organización y garantizar que solo las personas adecuadas tengan acceso a ese contenido.
 
@@ -44,7 +46,7 @@ Las herramientas de eDiscovery de Microsoft admiten elementos cifrados con tecno
 
 En la tabla siguiente se identifican las tareas admitidas que se pueden realizar en Microsoft 365 herramientas de exhibición de documentos electrónicos en archivos cifrados adjuntos a mensajes de correo electrónico y documentos cifrados en SharePoint y OneDrive. Estas tareas admitidas se pueden realizar en archivos cifrados que coincidan con los criterios de una búsqueda. Un valor de `N/A` indica que la funcionalidad no está disponible en la herramienta de exhibición de documentos electrónicos correspondiente.
 
-|Tarea eDiscovery  |Búsqueda de contenido  |eDiscovery (estándar)  |eDiscovery (Premium)  |
+|Tarea eDiscovery  |Búsqueda de contenido  |eDiscovery (Estándar)  |eDiscovery (Premium)  |
 |:---------|:---------|:---------|:---------|
 |Búsqueda de contenido en archivos cifrados en sitios y datos adjuntos <sup>de correo electrónico1</sup>     |No      |No      |Sí      |
 |Vista previa de los archivos cifrados adjuntos al correo electrónico     |Sí      |Sí     |Sí       |

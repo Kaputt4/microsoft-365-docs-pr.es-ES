@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use el panel de Microsoft Purview eDiscovery (Premium) para los conjuntos de revisión para analizar rápidamente el corpus con el fin de identificar tendencias o estadísticas clave que le ayudarán a desarrollar su estrategia de revisión.
-ms.openlocfilehash: 8814bbf645686529aec43f710519c1bd4891c1b3
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1412df381fff228c37052a6d75113c3a4c4cfcba
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943115"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995896"
 ---
 # <a name="ediscovery-premium-dashboard-for-review-sets"></a>Panel de eDiscovery (Premium) para conjuntos de revisión
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En algunos casos en microsoft Purview eDiscovery (Premium), es posible que tenga un gran volumen de documentos y mensajes de correo electrónico que deben revisarse. Antes de iniciar el proceso de revisión, es posible que desee analizar rápidamente el corpus para identificar tendencias o estadísticas clave que le ayudarán a desarrollar su estrategia de revisión. Para ello, puede usar el panel eDiscovery (Premium) para revisar los conjuntos con el fin de analizar rápidamente el corpus.
 

@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Use Temas en eDiscovery (Premium) para organizar los conjuntos de revisión mediante la búsqueda del tema dominante en cada documento.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e019c103114630411a7d13ae619827a2e83a890c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 8067048c1dedeb6c70a887ec1fb41094bad35666
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991762"
+ms.locfileid: "64970391"
 ---
 # <a name="themes-in-ediscovery-premium"></a>Temas en eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ¿Cómo escribe una persona un documento? Por lo general, comienzan con una o más ideas que quieren transmitir en el documento y redactan con palabras que se alinean con las ideas. Cuanto más frecuente sea una idea, más frecuentes suelen ser las palabras relacionadas con esa idea. Esto también informa de cómo las personas consumen documentos. Lo importante que hay que entender al leer un documento son las ideas que el documento intenta transmitir, qué ideas aparecen donde y cuáles son las relaciones entre las ideas.
 

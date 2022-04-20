@@ -22,14 +22,16 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre las propiedades de correo electrónico y documentos que puede buscar mediante las herramientas de búsqueda de exhibición de documentos electrónicos de Microsoft 365.
-ms.openlocfilehash: 09c939f7d92bf06a9eab89d8ac45fec78bd424a8
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f00d257a558d252ca0176166d42d02cd72dad0aa
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936651"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995390"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Consultas de palabras clave y condiciones de búsqueda para eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En este artículo se describen las propiedades de correo electrónico y documento que puede buscar en elementos de correo electrónico y Microsoft Teams conversaciones de chat en Exchange Online y documentos almacenados en sitios de SharePoint y OneDrive para la Empresa mediante las herramientas de búsqueda de eDiscovery en el cumplimiento de Microsoft Purview. Portal. Esto incluye búsqueda de contenido, eDiscovery de Microsoft Purview (estándar) y Microsoft Purview eDiscovery (Premium) (las búsquedas de eDiscovery en eDiscovery (Premium) se denominan *colecciones*). También puede usar los **\*cmdlets -ComplianceSearch** en PowerShell del Centro de cumplimiento de seguridad & para buscar estas propiedades. En el artículo también se describe lo siguiente:
 

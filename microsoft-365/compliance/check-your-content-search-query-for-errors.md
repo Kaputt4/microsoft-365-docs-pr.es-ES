@@ -16,14 +16,16 @@ search.appverid:
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo detectar errores y errores tipográficos en la consulta de palabras clave para búsquedas de exhibición de documentos electrónicos antes de ejecutar la búsqueda.
-ms.openlocfilehash: 440cd9c54d839173e8eeb6022a840f90305a1a92
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dd09efd162ce8647fecbd7d5c4740588ada4a396
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938541"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996308"
 ---
 # <a name="check-your-search-query-for-errors"></a>Comprobar errores en la consulta de búsqueda
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 Esta es una lista de los caracteres no admitidos que se comprueban en las consultas de búsqueda de búsqueda de contenido y microsoft Purview eDiscovery (estándar). Los caracteres no admitidos suelen estar ocultos y suelen provocar un error de búsqueda o devolver resultados no deseados.
   

@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo acceder y usar estadísticas e informes para borradores de colecciones y colecciones que se han confirmado en un conjunto de revisión en eDiscovery de Microsoft Purview (Premium).
-ms.openlocfilehash: 12152e0b81df6c61732fda068c593a91578861ee
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 140a6aa2ac0a0ebbff7cf2ab2ee8618cd45cdf07
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940321"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995764"
 ---
 # <a name="collection-statistics-and-reports-in-microsoft-purview-ediscovery-premium"></a>Estadísticas e informes de recopilación en eDiscovery de Microsoft Purview (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Después de crear una colección de borradores, puede ver estadísticas sobre los elementos recuperados, como las ubicaciones de contenido que contienen la mayoría de los elementos que coincidieron con los criterios de búsqueda y el número de elementos devueltos por la consulta de búsqueda. También puede obtener una vista previa de un subconjunto de los resultados.
 

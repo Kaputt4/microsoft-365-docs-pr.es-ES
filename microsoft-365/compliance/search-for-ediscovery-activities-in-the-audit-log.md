@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Obtenga información sobre los eventos que se registran cuando los usuarios asignados a los permisos de exhibición de documentos electrónicos realizan tareas de búsqueda de contenido, eDiscovery (estándar) y eDiscovery (Premium) en el portal de cumplimiento de Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 519347ed8f074fc15c8618f6ceb84159314c5915
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1e21fcff71d050e09a60a6708678d46f2b894bdc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941839"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995874"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Buscar actividades de eDiscovery en el registro de auditoría
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Las actividades relacionadas con la búsqueda de contenido y eDiscovery (para microsoft Purview eDiscovery (estándar) y microsoft Purview eDiscovery (Premium)) que se realizan en el portal de cumplimiento de Microsoft Purview o mediante la ejecución de los cmdlets de PowerShell correspondientes se registran en el registro de auditoría. Los eventos se registran cuando los administradores o administradores de eDiscovery (o los permisos de exhibición de documentos electrónicos asignados por el usuario) realizan las siguientes tareas de búsqueda de contenido y exhibición de contenido (estándar) en el portal de cumplimiento:
   

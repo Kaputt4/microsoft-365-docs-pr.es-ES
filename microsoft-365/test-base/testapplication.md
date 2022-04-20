@@ -1,6 +1,6 @@
 ---
-title: Paquete de archivos binarios de prueba en Test Base
-description: Cómo probar el paquete de archivos binarios en Test Base
+title: Prueba de los archivos binarios en la base de prueba
+description: Cómo probar los archivos binarios en la base de pruebas
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen
@@ -14,14 +14,14 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 808adad8a661d163014dd89c7e587fea3a02e9a2
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 8474631edfe580dfc269b2d02c1a113351c6ba6d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953704"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995303"
 ---
-# <a name="test-binaries-package-on-test-base"></a>Paquete de archivos binarios de prueba en Test Base
+# <a name="test-your-binary-files-on-test-base"></a>Prueba de los archivos binarios en la base de prueba
 
 > [!NOTE]
 > Esta guía le guiará para crear un nuevo paquete base de prueba desde cero. Si ya tiene un paquete de Test Base (.zip) en la mano, puede cambiar para usar nuestra experiencia de carga heredada [Upload el paquete base de prueba (Zip).](uploadApplication.md)

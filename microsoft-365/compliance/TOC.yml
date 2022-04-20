@@ -318,7 +318,7 @@
               href: sit-learn-about-exact-data-match-based-sits.md
             - name: Creación de huella digital de documento
               href: document-fingerprinting.md
-            - name: Más información sobre las entidades con nombre (versión preliminar)
+            - name: Más información sobre las entidades con nombre
               href: named-entities-learn.md
         - name: Introducción a los tipos de información confidencial
           items:
@@ -362,7 +362,7 @@
               href: sit-use-exact-data-manage-schema.md
             - name: Actualizar el archivo de tabla de origen de información confidencial
               href: sit-use-exact-data-refresh-data.md
-            - name: Uso de entidades con nombre en las directivas de prevención de pérdida de datos (versión preliminar)
+            - name: Uso de entidades con nombre en las directivas de prevención de pérdida de datos
               href: named-entities-use.md
             - name: Escenarios de uso comunes para tipos de información confidencial
               href: sit-common-scenarios.md

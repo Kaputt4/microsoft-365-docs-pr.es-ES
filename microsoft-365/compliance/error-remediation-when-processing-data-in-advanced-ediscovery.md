@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo usar la corrección de errores para corregir problemas de datos en eDiscovery (Premium) que podrían impedir el procesamiento adecuado del contenido.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d1331e595f661e1e69f114058579ab9163074b41
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1f56ad34cb295103178c5f244ccd78d7ad3757b0
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932186"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994554"
 ---
 # <a name="error-remediation-when-processing-data"></a>Corrección de errores al procesar los datos
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La corrección de errores permite a los administradores de eDiscovery corregir los problemas de datos que impiden que microsoft Purview eDiscovery (Premium) procese correctamente el contenido. Por ejemplo, los archivos protegidos con contraseña no se pueden procesar, ya que los archivos están bloqueados o cifrados. Mediante la corrección de errores, los administradores de eDiscovery pueden descargar archivos con estos errores, quitar la protección con contraseña y, a continuación, cargar los archivos corregidos.
 

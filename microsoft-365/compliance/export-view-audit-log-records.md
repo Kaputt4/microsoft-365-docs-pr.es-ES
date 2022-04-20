@@ -18,14 +18,16 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: En este artículo, aprenderá a exportar, configurar y ver Microsoft 365 registros de auditoría.
-ms.openlocfilehash: ed9844ac7a5b7dc62b4d0ba8eb7311f76d28aace
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9403ead4c7fd6bd27bcc3848d367749e00beed3c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948757"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994400"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exportar, configurar y ver registros de registro de auditoría
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Después de buscar en el registro de auditoría y descargar los resultados de la búsqueda en un archivo CSV, el archivo contiene una columna denominada **AuditData**, que contiene información adicional sobre cada evento. Los datos de esta columna tienen el formato de un objeto JSON, que contiene varias propiedades que se configuran como pares *property:value* separados por comas. Puede usar la característica de transformación JSON en el Editor de Power Query de Excel para dividir cada propiedad del objeto JSON de la columna **AuditData** en varias columnas para que cada propiedad tenga su propia columna. Esto le permite ordenar y filtrar una o varias de estas propiedades, lo que puede ayudarle a localizar rápidamente los datos de auditoría específicos que está buscando.
 

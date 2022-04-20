@@ -22,14 +22,16 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exporte los resultados de la búsqueda desde una búsqueda de contenido en el portal de cumplimiento de Microsoft Purview a un equipo local. Los resultados del correo electrónico se exportan como archivos PST. El contenido de los sitios SharePoint y OneDrive para la Empresa se exporta como documentos nativos Office.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cdd80829e76bce37bc55b5375597729df947b61b
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 38faaf29087e67aef161e46a1fbc6c338d9c33e4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934827"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995478"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Una vez que una búsqueda de contenido se ejecuta correctamente, puede exportar los resultados de la búsqueda a un equipo local. Cuando exporta los resultados de correo electrónico, estos se descargan en su equipo como archivos PST. Al exportar contenido de sitios SharePoint y OneDrive para la Empresa, se exportan copias de documentos nativos Office. Hay otros documentos e informes incluidos en los resultados de búsqueda exportados.
   

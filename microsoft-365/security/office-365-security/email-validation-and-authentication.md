@@ -19,12 +19,12 @@ ms.localizationpriority: high
 description: Los administradores pueden obtener información sobre cómo EOP usa la autenticación de correo electrónico (SPF, DKIM y DMARC) para ayudar a evitar la suplantación de identidad, el phishing y el correo no deseado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c0e7bc2ddd620b454979418735fb6982b71501c3
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 5368be5bbecde45d341a737a283a7461a2302dc4
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934038"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973385"
 ---
 # <a name="email-authentication-in-eop"></a>Autenticación de correo electrónico en EOP
 
@@ -34,7 +34,6 @@ ms.locfileid: "61934038"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 
 La autenticación de correo electrónico (conocida también como validación de correo electrónico) es un grupo de normas que intentan detener la suplantación (mensajes de correo electrónico de remitentes falsos). En todas las organizaciones de Microsoft 365, EOP usa estos estándares para comprobar el correo electrónico entrante:
 
@@ -87,7 +86,7 @@ Depender solo de los registros de autenticación de correo electrónico para det
 
 Las autenticaciones compuestas pueden superar estas limitaciones pasando mensajes que, de otra forma, no superarían las comprobaciones de autenticación de correo electrónico.
 
-Para simplificar, los ejemplos siguientes se centran en los resultados de la autenticación de correo electrónico. Otros factores de inteligencia de back-end podrían identificar mensajes que pasan la autenticación de correo electrónico como suplantados o mensajes que la pasan como legítimos.
+Para simplificar, los ejemplos siguientes se centran en los resultados de la autenticación de correo electrónico. Otros factores de inteligencia de back-end podrían identificar mensajes que pasan la autenticación de correo electrónico como suplantados o mensajes que la suspenden como legítimos.
 
 Por ejemplo, el dominio fabrikam.com no tiene registros SPF, DKIM o DMARC. Los mensajes de los remitentes del dominio fabrikam.com pueden producir un error en la autenticación compuesta (tenga en cuenta que el valor  y razón de `compauth`):
 

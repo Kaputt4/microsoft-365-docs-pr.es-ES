@@ -16,16 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Use el nuevo formato de caso en eDiscovery (Premium) para que pueda agregar más elementos para revisar conjuntos y aprovechar otros límites aumentados y nuevas funciones.
-ms.openlocfilehash: 6c3e9f86cac5424ae9d9610a9c715c2f86563f64
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 55a5fdc2493fe046ebb8952fcbcb382750f511a5
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993565"
+ms.locfileid: "64973429"
 ---
 # <a name="use-the-new-case-format-in-ediscovery-premium"></a>Usar el nuevo formato de caso en eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Más organizaciones usan la solución eDiscovery (Premium) en Microsoft Purview para los procesos críticos de eDiscovery. Esto incluye responder a solicitudes normativas, investigaciones y litigios. A medida que aumenta el uso de eDiscovery (Premium), un requisito común del cliente es expandir la cantidad total de contenido que se puede administrar en un único caso de exhibición de documentos electrónicos (Premium). Para ayudar a dar cabida a aumentos significativos en el tamaño de los casos, tanto para el volumen total de datos como para el número total de elementos, ahora puede elegir el nuevo formato de caso al crear un caso de exhibición de documentos electrónicos (Premium).  
 

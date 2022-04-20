@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describen los límites en el caso de exhibición de documentos electrónicos (estándar) en Microsoft 365.
-ms.openlocfilehash: 4eb43687e92d90179ff24d69827c3c2889d82b47
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 29d1ef4d017ebf26a0c5ed1cc03fcf4361266e94
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971544"
+ms.locfileid: "64994114"
 ---
 # <a name="limits-in-ediscovery-standard"></a>Límites en eDiscovery (estándar)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En la tabla siguiente se enumeran los límites de los casos de exhibición de documentos electrónicos (estándar) y las retenciones asociadas a un caso de exhibición de documentos electrónicos (estándar). Para obtener más información sobre la exhibición de documentos electrónicos de Microsoft Purview (estándar), vea [Información general sobre eDiscovery (Estándar).](./get-started-core-ediscovery.md)
     

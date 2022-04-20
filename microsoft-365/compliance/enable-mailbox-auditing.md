@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: El registro de auditoría de buzones está activado de forma predeterminada en Microsoft 365 (también denominado "auditoría predeterminada de buzones" o "auditoría de buzones de correo de forma predeterminada"). Esta configuración significa que ciertas acciones realizadas por propietarios, delegados y administradores de buzones de correo se registran automáticamente en un registro de auditoría de buzones, donde puede buscar actividades realizadas en el buzón.
-ms.openlocfilehash: bb8170b603bc72459e3bbd55fa256df188f42f65
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: d5d966cf4d5b7c58c15df4ce8d4039331ebca8c4
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952894"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972637"
 ---
 # <a name="manage-mailbox-auditing"></a>Administrar la auditoría de buzones de correo
 
@@ -83,7 +83,7 @@ Los tipos de inicio de sesión clasifican al usuario que realizó las acciones a
 - **Administrador**:
   - El buzón de correo se busca con una de las siguientes herramientas de Exhibición de documentos electrónicos de Microsoft:
     - Búsqueda de contenido en el Centro de cumplimiento.
-    - eDiscovery o Advanced eDiscovery en el Centro de cumplimiento.
+    - eDiscovery o eDiscovery (Premium) en el Centro de cumplimiento.
     - In-Place eDiscovery en Exchange Online.
   - Se obtiene acceso al buzón mediante el editor de MAPI de Microsoft Exchange Server.
 

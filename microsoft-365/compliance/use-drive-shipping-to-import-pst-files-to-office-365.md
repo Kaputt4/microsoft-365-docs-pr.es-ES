@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: El administrador puede aprender a importar archivos PST de forma masiva a Microsoft 365 buzones copiando archivos PST en un disco duro y luego enviándolo a Microsoft.
-ms.openlocfilehash: 53022477b034c0620177b00c0c171c8d6c36e250
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d2255a01c49e3837365735e1c3300b7f6b34c42c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934651"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996028"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Uso del envío de unidades para importar archivos PST de la organización
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Este artículo está destinado a administradores. ¿Está intentando importar archivos PST a su propio buzón de correo? Consulte [Importación de correo electrónico, contactos y calendario desde un archivo .pst de Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
@@ -53,7 +55,7 @@ Para ver las preguntas más frecuentes sobre el uso del envío de unidades para 
   
 ## <a name="before-you-import-pst-files"></a>Antes de importar archivos PST
 
-- Debe tener asignado el rol Exportación de importación de buzones en Exchange Online para crear trabajos de importación en el portal de cumplimiento de Microsoft Purview e importar archivos PST a buzones de usuario. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Mailbox Import Export al grupo de roles Administración de la organización. También puede crear un grupo de roles, asignarle el rol Mailbox Import Export y agregarse a sí mismo como miembro. Para obtener más información, vea las secciones "Agregar un rol a un grupo de roles" o "Crear un grupo de roles" en [Administrar grupos de roles](/Exchange/permissions-exo/role-groups).
+- Debe tener asignado el rol de exportación e importación de buzón en Exchange Online para crear trabajos de importación en el portal de cumplimiento de Microsoft Purview e importar archivos PST a los buzones de usuario. De forma predeterminada, este rol no está asignado a ningún grupo de roles en Exchange Online. Puede agregar el rol de exportación e importación de buzón en el grupo de rol de administración de la organización. O puede crear un nuevo grupo de rol, asignar el rol de exportación e importación de buzón y, después, agregarse o agregar a otros usuarios como miembro. Para obtener más información, consulte las secciones "Agregar un rol a un grupo de roles" o "Crear un grupo de roles" en [Administrar grupos de roles](/Exchange/permissions-exo/role-groups).
 
     Además del rol de Importación y exportación de buzones de correo, también debe tener asignado el rol Destinatarios de correo en Exchange Online. De forma predeterminada, este rol se asigna a los grupos de roles Administración de la organización y Administración de destinatarios en Exchange Online.
 
@@ -390,7 +392,7 @@ Para instalar el Explorador de Azure Storage y conectarse al área de Azure Stor
 
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
-2. En el panel izquierdo del portal de cumplimiento, haga clic en **Gobernanza de la información > Importar**.
+2. En el panel izquierdo del portal de cumplimiento, haga clic en **gobernanza de información > Importar**.
 
 3. En la pestaña **Importar**, haga clic en ![Agregar icono](../media/ITPro-EAC-AddIcon.gif). **Nuevo trabajo de importación**.
 

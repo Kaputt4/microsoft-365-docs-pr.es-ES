@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el portal de cumplimiento de Microsoft Purview para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: 23eeff8078dbd7ab65b0bddb9684aa81d65aab94
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 67a1c6758a5030897afbde07a0803cad348eca0c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936255"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993674"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Buscar y eliminar mensajes de correo electrónico
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Este artículo es para los administradores. ¿Está intentando buscar elementos que quiere eliminar en el buzón? Vea [Buscar un mensaje o elemento con la Búsqueda instantánea](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**.
 
@@ -64,7 +66,7 @@ El siguiente paso es conectarse al PowerShell del Centro de seguridad y cumplimi
 
 ## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>Paso 2: Crear una búsqueda de contenido para encontrar el mensaje que se desea eliminar
 
-El segundo paso es crear y ejecutar una búsqueda de contenido para encontrar el mensaje que desea quitar de los buzones de la organización. Para crear la búsqueda, puede usar el portal de cumplimiento o ejecutar los cmdlets **New-ComplianceSearch** y **Start-ComplianceSearch** en el PowerShell del Centro de seguridad y cumplimiento. Los mensajes que coincidan con la consulta de esta búsqueda se eliminarán al ejecutar el comando **New-ComplianceSearchAction-Purge** en el [paso 3](#step-3-delete-the-message). Para obtener información sobre cómo crear una búsqueda de contenido y configurar consultas de búsqueda, vea los temas siguientes:
+El segundo paso consiste en crear y ejecutar una búsqueda de contenido para buscar el mensaje que desee quitar de los buzones de la organización. Puede crear la búsqueda mediante el portal de cumplimiento o ejecutando los cmdlets **New-ComplianceSearch** y **Start-ComplianceSearch** en Seguridad y cumplimiento de PowerShell. Los mensajes que coincidan con la consulta de esta búsqueda se eliminarán al ejecutar el cmdlet **New-ComplianceSearchAction -Purge** en el [Paso 3](#step-3-delete-the-message). Para obtener información sobre cómo crear una búsqueda de contenido y configurar consultas de búsqueda, vea los temas siguientes:
 
 - [Búsqueda de contenido en Office 365](content-search.md)
 

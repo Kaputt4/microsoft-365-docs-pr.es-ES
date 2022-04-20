@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Use Advanced eDiscovery y el Explorador de Microsoft Graph para buscar y purgar mensajes de chat en Microsoft Teams y responder a incidentes de desbordamiento de datos en Teams.
-ms.openlocfilehash: 79f04c513733151099f5b45192a84738065e42aa
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: Use eDiscovery (Premium) y el Explorador de Microsoft Graph para buscar y purgar mensajes de chat en Microsoft Teams y responder a incidentes de desbordamiento de datos en Teams.
+ms.openlocfilehash: b76f235fdfaee6f6836eb3d21385181a74aee904
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949376"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971803"
 ---
 # <a name="search-and-purge-chat-messages-in-teams"></a>Buscar y purgar mensajes de chat en Teams
 
-Puede usar Advanced eDiscovery y el Explorador de Microsoft Graph para buscar y eliminar mensajes de chat en Microsoft Teams. Esto puede ayudarle a encontrar y quitar información confidencial o contenido inadecuado. Este flujo de trabajo de búsqueda y purga también le ayudará a responder a un incidente de derrame de datos, cuando el contenido que contiene información confidencial o malintencionada se publica a través de Teams mensajes de chat.
+Puede usar eDiscovery (Premium) y el Explorador de Microsoft Graph para buscar y eliminar mensajes de chat en Microsoft Teams. Esto puede ayudarle a encontrar y quitar información confidencial o contenido inadecuado. Este flujo de trabajo de búsqueda y purga también le ayudará a responder a un incidente de derrame de datos, cuando el contenido que contiene información confidencial o malintencionada se publica a través de Teams mensajes de chat.
 
 > [!NOTE]
 > Este artículo se aplica a las organizaciones Microsoft 365 Enterprise. El soporte técnico para la nube del Gobierno de EE. UU. (incluidos GCC, GCC High y DoD) estará disponible próximamente.
 
 ## <a name="before-you-search-and-purge-chat-messages"></a>Antes de buscar y purgar mensajes de chat
 
-- Para crear un caso de Advanced eDiscovery y usar colecciones para buscar mensajes de chat, debe ser miembro del grupo de roles administrador de **exhibición de documentos electrónicos** en el portal de cumplimiento de Microsoft Purview. Para eliminar mensajes de chat, debe tener asignado el rol **Buscar y purgar** . Este rol se asigna a los grupos de roles Investigador de datos y Administración de la organización de forma predeterminada. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
+- Para crear un caso de eDiscovery (Premium) y usar colecciones para buscar mensajes de chat, debe ser miembro del grupo de roles administrador de **eDiscovery** en el portal de cumplimiento de Microsoft Purview. Para eliminar mensajes de chat, debe tener asignado el rol **Buscar y purgar** . Este rol se asigna a los grupos de roles Investigador de datos y Administración de la organización de forma predeterminada. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
 - La búsqueda y purga se admiten para las conversaciones dentro del inquilino. La compatibilidad con las conversaciones de Teams Conectar Chat (acceso externo o federación) está habilitada en la interfaz en algunos casos, pero no funciona según lo previsto.
 - Se puede eliminar un máximo de 10 elementos por buzón a la vez. Dado que la capacidad de buscar y quitar mensajes de chat está pensada para ser una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes de chat se quiten rápidamente.
 
@@ -42,15 +42,15 @@ Este es el proceso para buscar y purgar Teams mensajes de chat:
 
 ![Flujo de trabajo para buscar y purgar Teams mensajes de chat.](../media/TeamsSearchAndPurgeWorkflow.png)
 
-## <a name="step-1-create-a-case-in-advanced-ediscovery"></a>Paso 1: Crear un caso en Advanced eDiscovery
+## <a name="step-1-create-a-case-in-ediscovery-premium"></a>Paso 1: Crear un caso en eDiscovery (Premium)
 
-El primer paso es crear un caso en Advanced eDiscovery para administrar el proceso de búsqueda y purga. Para obtener información sobre cómo crear un caso, consulte [Uso del nuevo formato de caso](advanced-ediscovery-new-case-format.md). 
+El primer paso es crear un caso en eDiscovery (Premium) para administrar el proceso de búsqueda y purga. Para obtener información sobre cómo crear un caso, consulte [Uso del nuevo formato de caso](advanced-ediscovery-new-case-format.md). 
 
 ## <a name="step-2-create-a-draft-collection"></a>Paso 2: Crear una colección de borradores
 
 Después de crear un caso, el siguiente paso es crear una colección de borradores para buscar los mensajes de chat Teams que desea purgar. El proceso de purga que realice es que el paso 5 purgará todos los elementos que se encuentran en la colección de borradores.
 
-En Advanced eDiscovery, una *colección* es una búsqueda de exhibición de documentos electrónicos de las ubicaciones de contenido Teams que contienen los mensajes de chat que desea purgar. Cree la colección de borradores en el caso que creó en el paso anterior. Para obtener más información, consulte [Creación de una colección de borradores](create-draft-collection.md).
+En eDiscovery (Premium), una *colección* es una búsqueda de exhibición de documentos electrónicos de las ubicaciones de contenido Teams que contienen los mensajes de chat que desea purgar. Cree la colección de borradores en el caso que creó en el paso anterior. Para obtener más información, consulte [Creación de una colección de borradores](create-draft-collection.md).
 
 ### <a name="data-sources-for-chat-messages"></a>Orígenes de datos para mensajes de chat
 
@@ -94,7 +94,7 @@ Para obtener instrucciones sobre cómo identificar y quitar las directivas de re
 
 Ahora ya está listo para purgar realmente los mensajes de chat de Teams. Usará el Explorador de Microsoft Graph para realizar las tres tareas siguientes:
 
-1. Obtenga el identificador del caso de Advanced eDiscovery que creó en el paso 1. Este es el caso que contiene la colección creada en el paso 2.
+1. Obtenga el identificador del caso de eDiscovery (Premium) que creó en el paso 1. Este es el caso que contiene la colección creada en el paso 2.
 
 2. Obtenga el identificador de la colección que creó en el paso 2 y comprobó los resultados de la búsqueda en el paso 3. La consulta de búsqueda de esta colección devuelve los mensajes de chat que se purgarán.
 
@@ -109,13 +109,13 @@ Para obtener información sobre el uso de Graph Explorer, consulte [Uso del Expl
 
 1. Vaya e <https://developer.microsoft.com/graph/graph-explorer> inicie sesión en el Explorador de Graph con una cuenta que tenga asignado el rol **Buscar y purgar** en el portal de cumplimiento de Microsoft Purview.
 
-2. Ejecute la siguiente solicitud GET para recuperar el identificador del caso de Advanced eDiscovery. Use el valor `https://graph.microsoft.com/beta/compliance/ediscovery/cases` en la barra de direcciones de la consulta de solicitud. Asegúrese de seleccionar **v1.0** en la lista desplegable Versión de API.
+2. Ejecute la siguiente solicitud GET para recuperar el identificador del caso de eDiscovery (Premium). Use el valor `https://graph.microsoft.com/beta/compliance/ediscovery/cases` en la barra de direcciones de la consulta de solicitud. Asegúrese de seleccionar **v1.0** en la lista desplegable Versión de API.
 
    ![Solicitud GET para el identificador de caso.](..\media\GraphGetRequestForCaseId.png)
 
    Esta solicitud devuelve información sobre todos los casos de la organización en la pestaña **Vista previa de** respuesta.
 
-3. Desplácese por la respuesta para buscar el caso de Advanced eDiscovery. Use la propiedad **displayName** para identificar el caso.
+3. Desplácese por la respuesta para buscar el caso de eDiscovery (Premium). Use la propiedad **displayName** para identificar el caso.
 
    ![Respuesta con el identificador de caso.](..\media\GraphResponseForCaseId.png)
 

@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo crear un modelo de codificación predictiva en eDiscovery (Premium). Este es el primer paso para usar las funcionalidades de aprendizaje automático en eDiscovery (Premium) para ayudarle a identificar contenido relevante y no relevante en un conjunto de revisión.
-ms.openlocfilehash: 86fc72ae73faf25184c5b137a0e433af8125eb54
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f5636defbd4bc004a4732ff1d956f8b879daea2d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942279"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994048"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>Creación de un modelo de codificación predictiva (versión preliminar)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 El primer paso para usar las funcionalidades de aprendizaje automático de la codificación predictiva en eDiscovery (Premium) es crear un modelo de codificación predictiva. Después de crear un modelo, puede entrenarlo para identificar el contenido relevante y no relevante de un conjunto de revisión.
 

@@ -17,14 +17,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo configurar un conector personalizado para importar datos de terceros desde orígenes de datos como Salesforce Chatter, Yahoo Messenger o Yammer.
-ms.openlocfilehash: 72159d88cdeb8c573f1a71342ca7cbd015099568
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: eb557f43b97f343c45a7eaf21268ac6218d2e1c0
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944511"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995324"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Trabajar con un socio para archivar datos de terceros
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede trabajar con un asociado de Microsoft para importar y archivar datos de un origen de datos de terceros para Microsoft 365. Un asociado puede proporcionarle un conector personalizado que esté configurado para extraer elementos del origen de datos de terceros (de forma periódica) y, a continuación, importarlos. El conector de asociado convierte el contenido de un elemento del origen de datos en un formato de mensaje de correo electrónico y, a continuación, almacena los elementos en buzones de correo. Una vez importados los datos de terceros, puede aplicar a estos datos características de Microsoft Purview, como suspensión por juicio, exhibición de documentos electrónicos, archivado de In-Place, auditoría y Microsoft 365 directivas de retención.
 

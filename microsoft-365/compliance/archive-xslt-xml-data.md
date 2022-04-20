@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos XSLT/XML desde Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: e1537bce351c2dd98286f82e134cb5779742b1f2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 92932e3e18c8f43c46cf71e43ec02306d78a2f60
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936893"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995742"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>Configuración de un conector para archivar datos XSLT/XML
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector de Veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos desde el origen de la página web a los buzones de usuario de la organización de Microsoft 365. Veritas proporciona un [conector XSLT/XML](https://globanet.com/xslt-xml) que permite el desarrollo rápido de archivos creados mediante transformacións de lenguaje de hoja de estilos extensibles (XSLT) para transformar archivos XML en otros formatos de archivo (como HTML o texto) que se pueden importar a Microsoft 365. El conector convierte el contenido de un elemento del origen XSLT/XML en un formato de mensaje de correo electrónico y, a continuación, importa el elemento convertido a Microsoft 365 buzones.
 

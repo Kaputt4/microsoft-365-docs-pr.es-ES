@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Este artículo contiene información de referencia sobre la herramienta de exhibición de documentos electrónicos de búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para ayudarle a obtener información sobre la búsqueda de contenido.
-ms.openlocfilehash: 1e1b64583769bbfc815f6b8635e5334936a3b3b7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 72088b1a1bd2e3f3ba2c38ee827c6eb46b7c893a
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938453"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995720"
 ---
 # <a name="feature-reference-for-content-search"></a>Referencia de características para la búsqueda de contenido
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En este artículo se describen las características y funciones de la búsqueda de contenido.
 

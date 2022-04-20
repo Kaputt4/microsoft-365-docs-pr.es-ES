@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: In-Place eDiscovery y In-Place Hold (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en el primer semestre de 2020. El cmdlet Search-Mailbox y microsoft Purview eDiscovery (Premium) v1.0 también se están retirando en el mismo período de tiempo.
-ms.openlocfilehash: 228827ec405165bf8308d89fba350eb2192f6723
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0a5a5c5a22aefbb0ad5abe6846915e1da653ee6b
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936607"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973275"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas heredadas de eDiscovery
 
@@ -102,7 +102,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <tr class="odd">
 <td>Búsqueda, exportación y retención con fines legales</td>
 <td>Casos de eDiscovery (Estándar) en el portal de cumplimiento </td>
-<td><p>El uso de las funcionalidades de los casos principales de eDiscovery proporciona la paridad funcional para In-Place eDiscovery y In-Place Holds. Esto incluye lo siguiente:</p>
+<td><p>El uso de las capacidades de los casos de exhibición de documentos electrónicos (estándar) proporciona la paridad funcional para In-Place eDiscovery y In-Place retenciones. Esto incluye lo siguiente:</p>
 <ul>
 <li>
 <p>La búsqueda se escala a millones de ubicaciones</p>
@@ -208,9 +208,9 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>Los cmdlets ComplianceSearch y ComplianceSearchAction funcionan juntos para ayudarle a buscar y exportar contenido. Puede crear una nueva búsqueda y ver la estimación de búsqueda mediante los cmdlets <strong>New-</strong>, <strong>Get-y Start-ComplianceSearch</strong>. <strong></strong> A continuación, puede usar el cmdlet <strong>New-ComplianceSearchAction</strong> para exportar los resultados de la búsqueda. Seguirá teniendo que usar la herramienta eDiscovery principal en el portal de cumplimiento para descargar esos resultados de búsqueda en el equipo local.</p>
+<td><p>Los cmdlets ComplianceSearch y ComplianceSearchAction funcionan juntos para ayudarle a buscar y exportar contenido. Puede crear una nueva búsqueda y ver la estimación de búsqueda mediante los cmdlets <strong>New-</strong>, <strong>Get-y Start-ComplianceSearch</strong>. <strong></strong> A continuación, puede usar el cmdlet <strong>New-ComplianceSearchAction</strong> para exportar los resultados de la búsqueda. Seguirá teniendo que usar la herramienta eDiscovery (Estándar) en el portal de cumplimiento para descargar esos resultados de búsqueda en el equipo local.</p>
 <p>
-<p><strong>Nota:</strong> Si usa estos cmdlets para crear búsquedas que no están asociadas a un caso principal de exhibición de documentos electrónicos, estas búsquedas se ubicarán en la página <strong>Búsqueda de contenido</strong> del portal de cumplimiento.</p></td>
+<p><strong>Nota:</strong> Si usa estos cmdlets para crear búsquedas que no están asociadas a un caso de exhibición de documentos electrónicos (estándar), estas búsquedas se ubicarán en la página <strong>Búsqueda de contenido</strong> del portal de cumplimiento.</p></td>
 </tr>
 <tr class="even">
 <td>Mantener contenido en un buzón</td>
@@ -286,7 +286,7 @@ En la tabla siguiente se describen otras herramientas que puede usar para reempl
 <td><p><a href="/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></a></p></td>
-<td><p>Los cmdlets ComplianceSearch y ComplianceSearchAction funcionan juntos para ayudarle a buscar y exportar contenido. Puede crear una nueva búsqueda y ver la estimación de búsqueda mediante los cmdlets <strong>New-</strong>, <strong>Get-y Start-ComplianceSearch</strong>. <strong></strong> A continuación, puede usar el comando <strong>New-ComplianceSearchAction -Export</strong> para exportar los resultados de la búsqueda. Seguirá teniendo que usar la herramienta eDiscovery principal en el portal de cumplimiento para descargar esos resultados de búsqueda en el equipo local.</p></p>
+<td><p>Los cmdlets ComplianceSearch y ComplianceSearchAction funcionan juntos para ayudarle a buscar y exportar contenido. Puede crear una nueva búsqueda y ver la estimación de búsqueda mediante los cmdlets <strong>New-</strong>, <strong>Get-y Start-ComplianceSearch</strong>. <strong></strong> A continuación, puede usar el comando <strong>New-ComplianceSearchAction -Export</strong> para exportar los resultados de la búsqueda. Seguirá teniendo que usar la herramienta eDiscovery (Estándar) en el portal de cumplimiento para descargar esos resultados de búsqueda en el equipo local.</p></p>
 </td>
 </tr>
 <tr class="even">
@@ -342,7 +342,7 @@ Estas operaciones en la API de servicios web de Exchange las usa la característ
 
 ## <a name="ediscovery-premium-v10"></a>eDiscovery (Premium) v1.0
 
-eDiscovery (Premium) v1.0, que es la versión de eDiscovery (Premium) disponible en un caso principal de eDiscovery haciendo clic en **Cambiar a eDiscovery (Premium)**, se está retirando. Su funcionalidad se ha reemplazado por la nueva [solución eDiscovery (Premium)](./ediscovery.md) en el portal de cumplimiento.
+eDiscovery (Premium) v1.0, que es la versión de eDiscovery (Premium) disponible en un caso de eDiscovery (Estándar) haciendo clic en **Cambiar a eDiscovery (Premium)**, se está retirando. Su funcionalidad se ha reemplazado por la nueva [solución eDiscovery (Premium)](./ediscovery.md) en el portal de cumplimiento.
 
 Para determinar si su organización usa eDiscovery (Premium) v1.0:
 

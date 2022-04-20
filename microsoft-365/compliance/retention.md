@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: e14c438858d5e57dca6ecab0573014171a0c6fb7
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 5c9a88b27814b89077a013b03d25b4d53ef3f125
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783323"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972082"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -60,7 +62,7 @@ Con estas dos acciones de retención, puede establecer la configuración de rete
 
 Esta configuración de retención funciona con contenido local y le ahorra los costes generales adicionales de crear y configurar almacenamiento añadido cuando necesita conservar contenido por motivos de cumplimiento. Además, no es necesario implementar procesos personalizados para copiar y sincronizar estos datos.
 
-Use las secciones siguientes para obtener más información sobre cómo funcionan las directivas y las etiquetas de retención, cuándo usarlas y cómo se complementan entre sí. Pero si está listo para empezar e implementar la configuración de retención para algunos escenarios comunes, consulte [Introducción a la gobernanza de la información](get-started-with-information-governance.md).
+Use las secciones siguientes para obtener más información sobre cómo funcionan las directivas y las etiquetas de retención, cuándo usarlas y cómo se complementan entre sí. Pero si está listo para empezar e implementar la configuración de retención para algunos escenarios comunes, consulte [Introducción a la administración del ciclo de vida de los datos](get-started-with-data-lifecycle-management.md).
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Cómo funciona la configuración de retención con el contenido local
 
@@ -172,7 +174,7 @@ Por ejemplo, puede crear y aplicar una etiqueta de retención denominada "revisa
 
 #### <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>Usar una etiqueta de retención como condición en una directiva DLP
 
-Puede especificar una etiqueta de retención como condición en una directiva de prevención de pérdida de datos (DLP) para los documentos de SharePoint. Por ejemplo, configure una directiva DLP para evitar que los documentos se compartan fuera de la organización si se les aplicó una etiqueta de retención específica.
+Puede especificar una etiqueta de retención como condición en una directiva de prevención de pérdida de datos (DLP) de Microsoft Purview para los documentos de SharePoint. Por ejemplo, configure una directiva DLP para evitar que los documentos se compartan fuera de la organización si se les aplicó una etiqueta de retención específica.
 
 Para obtener más información, vea [Usar una etiqueta de retención como condición en una directiva DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 
@@ -227,7 +229,7 @@ Cuando las etiquetas de retención marcan los elementos como un registro o un re
 
 #### <a name="monitoring-retention-labels"></a>Supervisar las etiquetas de retención
 
-En el Centro de cumplimiento de Microsoft 365, seleccione **Clasificación de datos** y en la página de **Información general** para supervisar cómo se usan las etiquetas de retención en el inquilino e identificar dónde se encuentran los elementos etiquetados. Para obtener más información, incluidos los requisitos previos importantes, consulte [Más información sobre la clasificación de datos](data-classification-overview.md).
+En el portal de cumplimiento de Microsoft Purview, seleccione **Clasificación de datos** y en la página de **Información general** para supervisar cómo se usan las etiquetas de retención en el inquilino e identificar dónde se encuentran los elementos etiquetados. Para obtener más información, incluidos los requisitos previos importantes, consulte [Más información sobre la clasificación de datos](data-classification-overview.md).
 
 Posteriormente, podrá profundizar en los detalles mediante el [explorador de contenido](data-classification-content-explorer.md) y el [explorador de actividades](data-classification-activity-explorer.md).
 
@@ -358,11 +360,13 @@ Para ver un seminario web grabado (requiere registro), visite [Deep Dive on Adap
 
 ## <a name="policy-lookup"></a>Búsqueda de directiva
 
-Puede configurar varias directivas de retención para Microsoft 365, así como varias directivas de etiquetas de retención que publique o aplique automáticamente. Para buscar las directivas de retención que se asignan a usuarios, sitios y grupos de Microsoft 365 específicos, use **búsqueda de directivas** en la solución **Información de gobierno** del Centro de cumplimiento de Microsoft 365:
+Puede configurar varias directivas de retención para Microsoft 365, así como varias directivas de etiquetas de retención que publique o aplique automáticamente. Para buscar las directivas de retención que se asignan a usuarios, sitios y grupos de Microsoft 365 específicos, use **búsqueda de directivas** de la **administración del ciclo de vida de datos** o las soluciones de **administración de registros** en el portal de cumplimiento de Microsoft Purview.
+
+Por ejemplo:
 
 ![Búsqueda de directivas para buscar las directivas de retención asignadas a usuarios, sitios y grupos de Microsoft 365 específicos ](../media/policy-lookup.png)
 
-Debe especificar la dirección de correo electrónico exacta de un usuario, la dirección URL exacta de un sitio o la dirección de correo electrónico exacta de un grupo de Microsoft 365.
+Debe especificar la dirección de correo electrónico exacta de un usuario, la dirección URL exacta de un sitio o la dirección de correo electrónico exacta de un grupo de Microsoft 365. Por ejemplo, no puede usar caracteres comodín o coincidencias parciales 
 
 La opción para sitios incluye cuentas de OneDrive. Para obtener información sobre cómo especificar la dirección URL de la cuenta de OneDrive de un usuario, consulte [Obtener una lista de todas las direcciones URL de OneDrive de usuario de su organización](/onedrive/list-onedrive-urls).
 
@@ -575,9 +579,9 @@ Para usar los cmdlets de retención, primero debe [conectar al Centro de segurid
 
 Si bien tanto la configuración de retenciones y las suspensiones[ que usted cree con un caso de eDiscovery](create-ediscovery-holds.md) pueden impedir que se eliminen los datos de forma permanente, están diseñados para diferentes escenarios. Para que le resulte más fácil comprender las diferencias y decidir qué usar, siga estas instrucciones:
 
-- La configuración de retenciones que especifique en directivas de retención y etiquetas de retención está diseñada para que una estrategia de control de información a largo plazo pueda conservar o eliminar datos a efectos de requisitos de cumplimiento. Por lo general, el ámbito es amplio y el enfoque principal lo constituyen la ubicación y el contenido, en lugar de los usuarios individuales. El inicio y el final del período de retención es configurable y se incluye la opción de eliminar automáticamente contenido sin ninguna intervención adicional por parte del administrador.
+- La configuración de retenciones que especifique en directivas de retención y etiquetas de retención está diseñada para que una estrategia de administración del ciclo de vida de datos a largo plazo pueda conservar o eliminar datos a efectos de requisitos de cumplimiento. Por lo general, el ámbito es amplio y el enfoque principal lo constituyen la ubicación y el contenido, en lugar de los usuarios individuales. El inicio y el final del período de retención es configurable y se incluye la opción de eliminar automáticamente contenido sin ninguna intervención adicional por parte del administrador.
 
-- Las suspensiones para eDiscovery (tanto casos de Core eDiscovery como de eDiscovery avanzado) están diseñadas para una duración limitada, para conservar datos para una investigación legal. El ámbito es específico y se centra en el contenido propiedad de los usuarios identificados. El inicio y el final del período de conservación no se pueden configurar, sino que dependen de las acciones individuales del administrador y no existe ninguna opción para eliminar el contenido automáticamente al liberar la suspensión.
+- Las suspensiones para eDiscovery, tanto casos de eDiscovery (Estándar) como de eDiscovery (Premium), están diseñadas para una duración limitada, para conservar datos para una investigación legal. El ámbito es específico y se centra en el contenido propiedad de los usuarios identificados. El inicio y el final del período de conservación no se pueden configurar, sino que dependen de las acciones individuales del administrador y no existe ninguna opción para eliminar el contenido automáticamente al liberar la suspensión.
 
 Resumen para comparar la retención con suspensiones:
 
@@ -590,7 +594,7 @@ Resumen para comparar la retención con suspensiones:
 |Eliminación de contenido: |Sí (opcional) |No |
 |Gastos generales de administración: |Bajo |Alto |
 
-Si el contenido está sujeto tanto a la configuración de retención como a una suspensión de eDiscovery, tendrá prioridad conservar el contenido de la suspensión de eDiscovery. De esta forma, los [principios de retención](#the-principles-of-retention-or-what-takes-precedence) se amplían a las suspensiones de eDiscovery, ya que conservan los datos hasta que un administrador libera manualmente la suspensión. Sin embargo, aún con esta precedencia, no use suspensiones de eDiscovery para el control de la información a largo plazo. Si le preocupa la eliminación automática de datos, puede configurar las opciones de retención para que se conserven los elementos de forma indefinida, o usar la [revisión para eliminación](disposition.md#disposition-reviews) con etiquetas de retención.
+Si el contenido está sujeto tanto a la configuración de retención como a una suspensión de eDiscovery, tendrá prioridad conservar el contenido de la suspensión de eDiscovery. De esta forma, los [principios de retención](#the-principles-of-retention-or-what-takes-precedence) se amplían a las suspensiones de eDiscovery, ya que conservan los datos hasta que un administrador libera manualmente la suspensión. Sin embargo, aún con esta precedencia, no use suspensiones de eDiscovery para la administración del ciclo de vida de datos a largo plazo. Si le preocupa la eliminación automática de datos, puede configurar las opciones de retención para que se conserven los elementos de forma indefinida, o usar la [revisión para eliminación](disposition.md#disposition-reviews) con etiquetas de retención.
 
 Si usa herramientas de eDiscovery antiguas para conservar datos, consulte los siguientes recursos:
 
@@ -605,7 +609,7 @@ Si usa herramientas de eDiscovery antiguas para conservar datos, consulte los si
 
 ## <a name="use-retention-policies-and-retention-labels-instead-of-older-features"></a>Usar directivas de retención y etiquetas de retención en lugar de características más antiguas
 
-Si tiene que conservar o eliminar contenido en 365 Microsoft de manera proactiva para la gobernanza de la información, le recomendamos que use las directivas de retención y las etiquetas de retención en lugar de las siguientes características antiguas.
+Si tiene que conservar o eliminar contenido en 365 Microsoft de manera proactiva para la administración del ciclo de vida de datos, le recomendamos que use las directivas de retención y las etiquetas de retención en lugar de las siguientes características antiguas.
 
 Si actualmente usa esas características más antiguas, estas seguirán funcionando en paralelo con las etiquetas de retención y directivas de Microsoft 365. Sin embargo, se recomienda que, a partir de ahora, use directivas y etiquetas de retención de Microsoft 365 para beneficiarse de una única solución para administrar tanto la retención como la eliminación de contenido en distintas cargas de trabajo en Microsoft 365.
 
@@ -638,9 +642,9 @@ Si ha configurado los sitios de SharePoint para directivas de tipo de contenido 
 ## <a name="related-information"></a>Información relacionada
 
 - [Límites de SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
-- [Límites y especificaciones para Microsoft Teams](/microsoftteams/limits-specifications-teams)
-- [Recursos para ayudarle a cumplir los requerimientos reglamentarios para la administración de registros y el gobierno de información](retention-regulatory-requirements.md)
+- [Límites y especificaciones para Microsoft Teams](/microsoftteams/limits-specifications-teams) 
+- [Recursos para ayudarle a cumplir los requerimientos reglamentarios para la administración del ciclo de vida de datos y de registros](retention-regulatory-requirements.md)
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
-Consulte [Introducción a Information Governance](get-started-with-information-governance.md). Este artículo contiene información sobre suscripciones, permisos y vínculos a instrucciones de configuración de un extremo a otro para escenarios de retención.
+Consulte [Introducción a la administración del ciclo de vida de datos](get-started-with-data-lifecycle-management.md). Este artículo contiene información sobre suscripciones, permisos y vínculos a instrucciones de configuración de un extremo a otro para escenarios de retención.

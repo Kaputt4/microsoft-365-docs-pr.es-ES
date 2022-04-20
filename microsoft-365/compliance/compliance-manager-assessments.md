@@ -1,5 +1,5 @@
 ---
-title: Compilación y administración de evaluaciones en el Administrador de cumplimiento de Microsoft
+title: Compilación y administración de evaluaciones en el Administrador de cumplimiento de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,15 +16,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Cree evaluaciones en el Administrador de cumplimiento de Microsoft para ayudarle a cumplir los requisitos de las regulaciones y certificaciones que son importantes para su organización.
-ms.openlocfilehash: 9fbea59eae103e2ce9715fda6c7b7a97d38eb855
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Cree evaluaciones en el Administrador de cumplimiento de Microsoft Purview para ayudarle a cumplir los requisitos de las regulaciones y certificaciones que son importantes para su organización.
+ms.openlocfilehash: 841d48951eebf0d04bf5c97a708a250218b44c65
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759023"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972571"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Compilación y administración de evaluaciones en el Administrador de cumplimiento
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **En este artículo:** Obtenga información sobre cómo personalizar el Administrador de cumplimiento para su organización mediante la creación y administración de **evaluaciones**. En este artículo se explica cómo crear evaluaciones, cómo organizarlas en **grupos**, trabajar con **controles**, aceptar **actualizaciones** y exportar **informes** de evaluación.
 
@@ -35,7 +37,7 @@ El Administrador de cumplimiento le ayuda a crear evaluaciones que evalúen el c
 Todas las evaluaciones se muestran en la pestaña evaluaciones del Administrador de cumplimiento. Obtenga más información sobre [cómo filtrar la vista de las evaluaciones e interpretar los estados de estado](compliance-manager-setup.md#assessments-page).
 
 > [!IMPORTANT]
-> Las plantillas disponibles para su organización para crear evaluaciones dependen del contrato de licencia. [Revise los detalles de las licencias](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> Las plantillas disponibles para su organización para crear evaluaciones dependen del contrato de licencia. [Revise los detalles de las licencias](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## <a name="data-protection-baseline-default-assessment"></a>Evaluación predeterminada de la línea de base de protección de datos
 

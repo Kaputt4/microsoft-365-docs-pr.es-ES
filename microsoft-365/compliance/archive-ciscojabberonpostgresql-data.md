@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Aprenda a configurar y usar un conector en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de Cisco Jabber en PostgreSQL a Microsoft 365.
-ms.openlocfilehash: 42c0af8274a29a162af7dc0023ce57e78ef7704f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2e573bcc6c39e9188ec09f05190c124bd904ef98
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946712"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996336"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-postgresql-data"></a>Configuración de un conector para archivar cisco jabber en datos de PostgreSQL
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de la plataforma Cisco Jabber a los buzones de usuario de su organización Microsoft 365. Veritas proporciona un [conector Cisco Jabber en PostgreSQL](https://www.veritas.com/insights/merge1/jabber) que está configurado para capturar elementos del origen de datos de terceros (de forma regular) e importar esos elementos a Microsoft 365. El conector convierte el contenido como mensajes, chats y contenido compartido de Cisco Jabber en PostgreSQL a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 

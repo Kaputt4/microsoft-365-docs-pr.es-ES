@@ -1,5 +1,5 @@
 ---
-title: Cuaderno de estrategias de prueba para soluciones de Cumplimiento de Microsoft 365
+title: Cuaderno de estrategias de prueba de soluciones de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -14,26 +14,28 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MOE150
 - MET150
-description: Cuaderno de estrategias de prueba para soluciones de Cumplimiento de Microsoft 365.
-ms.openlocfilehash: 8c5456344a97a0cfc4564c228eeba20067682070
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Cuaderno de estrategias de prueba de soluciones de Microsoft Purview.
+ms.openlocfilehash: 4544e07baa5b8d2b89991d9a31c84a2d7cefb7f8
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759178"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973781"
 ---
-# <a name="trial-playbook-microsoft-365-compliance-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Cumplimiento de Microsoft 365
+# <a name="trial-playbook-microsoft-purview-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Microsoft Purview
 
-Le damos la bienvenida al cuaderno de estrategias de la prueba de soluciones de cumplimiento de Microsoft 365. Este cuaderno le ayudará a sacar el máximo partido de su evaluación gratuita de 90 días, ya que le permitirá descubrir funcionalidades sólidas y completas de los productos de cumplimiento y seguridad de Microsoft 365.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Le damos la bienvenida al cuaderno de estrategias de la prueba de soluciones de Microsoft Purview. Este cuaderno le ayudará a sacar el máximo partido de su evaluación gratuita de 90 días, ya que le permitirá descubrir funcionalidades sólidas y completas de Microsoft Purview y los productos de seguridad.
 
 Probar cada solución le ayudará a tomar decisiones informadas para satisfacer las necesidades de cumplimiento de su organización.
 
 Características:
 
-- [Auditoría avanzada](#advanced-audit)
+- [Auditoría (Premium)](#audit-premium)
 - [Cumplimiento de comunicaciones](#communication-compliance)
 - [Administrador de cumplimiento](#compliance-manager)
-- [Prevención de pérdida de datos](#data-loss-prevention)
+- [Prevención de pérdida de datos de Microsoft Purview](#data-loss-prevention)
 - [eDiscovery](#ediscovery)
 - [Protección de información](#information-protection)
 - [Administración de riesgos internos](#insider-risk-management)
@@ -44,48 +46,48 @@ Complementos opcionales:
 - [Evaluaciones premium del Administrador de cumplimiento](#compliance-manager-premium-assessments)
 - [Administración de riesgo de privacidad Priva y Solicitudes de los interesados Priva](#microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests)
 
-## <a name="compliance-actions-with-microsoft-365"></a>Acciones de cumplimiento con Microsoft 365
+## <a name="compliance-actions-with-microsoft-purview"></a>Acciones de cumplimiento con Microsoft Purview
 
 Comience a probar las soluciones de cumplimiento de Microsoft de forma fácil y rápida sin cambiar los metadatos de su organización. En función de sus prioridades, puede empezar con cualquiera de estas áreas de solución para ver el valor inmediato. A continuación se muestran las cinco principales preocupaciones de la organización que comunican nuestros clientes y las soluciones recomendadas para empezar.
 
 :::image type="content" source="../media/compliance-trial/workflow.png" alt-text="Acciones de cumplimiento con Microsoft 365":::
 
-## <a name="advanced-audit"></a>Auditoría avanzada
+## <a name="audit-premium"></a>Auditoría (Premium)
 
 **Realizar investigaciones**
 
-La Auditoría avanzada permite a las organizaciones dirigir investigaciones forenses y de cumplimiento incrementando la retención necesaria de registros de auditoría para dirigir una investigación, ofreciendo acceso a eventos fundamentales que ayuden a determinar el alcance del compromiso y proporcionar un acceso más rápido a la API de Actividad de administración de Office 365.
+La auditoría de Microsoft Purview (Premium) permite a las organizaciones dirigir investigaciones forenses y de cumplimiento incrementando la retención necesaria de registros de auditoría para dirigir una investigación, ofreciendo acceso a eventos fundamentales que ayuden a determinar el alcance del compromiso y proporcionar un acceso más rápido a la API de Actividad de administración de Office 365.
 
-### <a name="step-1-apply-the-e5-license-to-each-user-for-which-youd-like-to-generate-e5-events"></a>Paso 1: [Aplicar la licencia de E5 a cada usuario para el que quiera generar eventos E5](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users)
+### <a name="step-1-apply-the-e5-license-to-each-user-for-which-youd-like-to-generate-e5-events"></a>Paso 1: [Aplicar la licencia de E5 a cada usuario para el que quiera generar eventos E5](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users)
 
 > [!TIP]
 > Procedimiento recomendado de prueba: día 1
 
-Las características de Auditoría avanzada, como la capacidad para registrar eventos fundamentales, como MailItemsAccessed y Send, requieren una licencia adecuada de E5 asignada a los usuarios. Además, se debe habilitar la aplicación o el plan de servicio de Auditoría avanzada para estos usuarios.
+Las características de auditoría (Premium) como la capacidad para registrar eventos fundamentales, como MailItemsAccessed y Send, requieren una licencia adecuada de E5 asignada a los usuarios. Además, se debe habilitar la aplicación o el plan de servicio de Auditoría avanzada para estos usuarios.
 
-Configurar la auditoría avanzada para los usuarios: para comprobar que la aplicación Auditoría avanzada está asignada a los usuarios, [realice los pasos siguientes para cada usuario](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users).
+Configurar la auditoría (Premium) para los usuarios: para comprobar que la aplicación Auditoría avanzada está asignada a los usuarios, [realice los pasos siguientes para cada usuario](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users).
 
-1. Habilitar eventos de Auditoría avanzada: [habilitar searchQueryInitiatedExchange y SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-advanced-audit-events) para que se auditen para cada usuario en [PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Habilitar eventos de auditoría (Premium): [habilitar searchQueryInitiatedExchange y SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-audit-premium-events) para que se auditen para cada usuario en [PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 1. Configurar directivas de retención de auditoría: [crear directivas de retención de registros de auditoría adicionales](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) para satisfacer los requisitos de los equipos de cumplimiento, TI y operaciones de seguridad de la organización.
-1. Buscar eventos de auditoría avanzada: [buscar eventos cruciales de Auditoría avanzada](set-up-advanced-audit.md#step-4-search-for-advanced-audit-events) y otras actividades al realizar investigaciones forenses.
+1. Buscar eventos de auditoría (Premium): [buscar eventos cruciales de auditoría (Premium)](set-up-advanced-audit.md#step-4-search-for-audit-premium-events) y otras actividades al realizar investigaciones forenses.
 
 ### <a name="step-2-create-new-audit-log-policies-to-specify-how-long-to-retain-audit-logs-in-your-org-for-activities-performed-by-users-and-define-priority-levels-for-your-policies"></a>Paso 2: [Crear nuevas directivas de registro de auditoría para especificar cuánto tiempo se conservarán los registros de Auditoría en la organización para las actividades realizadas por los usuarios y definir los niveles de prioridad de las directivas](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)
 
 > [!TIP]
 > Procedimiento recomendado de prueba: crear en los primeros 30 días
 
-Las directivas de retención de registros de auditoría forman parte de las nuevas capacidades de Auditoría avanzada en Microsoft 365. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización.
+Las directivas de retención de registros de auditoría forman parte de las nuevas funcionalidades de auditoría (Premium) en Microsoft 365. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización.
 
 1. Antes de crear una directiva de retención de registros de auditoría: [aspectos clave que debe conocer](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) antes de crear la directiva.
 1. [Crear una directiva de retención de registros de auditoría](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
-1. [Administrar directivas de retención de registros de auditoría en el Centro de cumplimiento de Microsoft 365](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center): las directivas de retención de registros de Auditoría se muestran en la pestaña Directivas de retención de Auditoría (también denominada panel). Puede usar el panel para ver, editar y eliminar directivas de retención de auditoría.
+1. [Administrar directivas de retención de registros de auditoría en el portal de cumplimiento de Microsoft Purview](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal): las directivas de retención de registros de Auditoría se muestran en la pestaña Directivas de retención de Auditoría (también denominada panel). Puede usar el panel para ver, editar y eliminar directivas de retención de auditoría.
 1. Creación y administración de directivas de retención de registros de auditoría en PowerShell: también puede usar el Centro de seguridad y cumplimiento de PowerShell para [crear y administrar directivas de retención de registros de auditoría](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell). Uno de los motivos para usar PowerShell es crear una directiva para un tipo de registro o actividad que no esté disponible en la interfaz de usuario.
 
 ## <a name="communication-compliance"></a>Cumplimiento de la comunicación
 
 **Identifique y actúe según las infracciones de la directiva de código de conducta**
 
-El Cumplimiento de comunicaciones le ayuda a identificar de forma inteligente las infracciones de comunicación para promover un entorno de trabajo compatible y correcto, ya que le ayuda a detectar mensajes inadecuados, investigar posibles infracciones de directivas y tomar medidas para corregirlas.
+El cumplimiento de comunicaciones de Microsoft Purview le ayuda a identificar de forma inteligente las infracciones de comunicación para promover un entorno de trabajo compatible y correcto, ya que le ayuda a detectar mensajes inadecuados, investigar posibles infracciones de directivas y tomar medidas para corregirlas.
 
 ### <a name="step-1-enable-permissions-for-communication-compliance"></a>Paso 1: [Habilitación de permisos para el cumplimiento de comunicaciones](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
 
@@ -113,7 +115,7 @@ Para utilizar esta característica, active la auditoría para que su organizaci�
 
 **Administrar fácilmente el cumplimiento de la organización**
 
-El Administrador de cumplimiento puede ayudarle a lo largo del proceso de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, estar al corriente de las normativas y certificaciones e informar a los auditores.
+El Administrador de cumplimiento de Microsoft Purview puede ayudarle a lo largo del proceso de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, estar al corriente de las normativas y certificaciones e informar a los auditores.
 
 ### <a name="step-1-get-to-know-compliance-manager"></a>Paso 1: [Conocer el Administrador de cumplimiento](compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
 
@@ -171,7 +173,7 @@ Las evaluaciones personalizadas son útiles para:
 
 **Proteger los datos confidenciales**
 
-Para cumplir con los estándares de la empresa y las normativas del sector, las organizaciones han de proteger la información confidencial e impedir su divulgación involuntaria. Configure directivas de prevención de pérdida de datos para identificar, supervisar y proteger automáticamente la información confidencial en Microsoft 365.
+Para cumplir con los estándares de la empresa y las normativas del sector, las organizaciones han de proteger la información confidencial e impedir su divulgación involuntaria. Configure directivas de prevención de pérdida de datos de Microsoft Purview para identificar, supervisar y proteger automáticamente la información confidencial en Microsoft 365.
 
 ### <a name="step-1-protect-data-loss-on-teams-locations"></a>Paso 1: [Proteger la pérdida de datos en ubicaciones de Teams](dlp-microsoft-teams.md#dlp-licensing-for-microsoft-teams)
 
@@ -192,7 +194,7 @@ Si su organización tiene prevención de pérdida de datos (DLP), puede definir 
 Microsoft Endpoint DLP le permite supervisar dispositivos con Windows 10 y detectar cuándo se usan y comparten elementos confidenciales.
 
 1. Prepare los puntos de conexión: asegúrese de que los dispositivos Windows 10 y macOS en los que planea implementar DLP de punto de conexión [cumplan estos requisitos](endpoint-dlp-getting-started.md)
-1. [Incorporar dispositivos a la administración de dispositivos](endpoint-dlp-getting-started.md)  - Para poder supervisar y proteger los elementos confidenciales de un dispositivo, es necesario que habilite la supervisión del dispositivo y que incorpore los puntos de conexión. Ambas acciones se realizan en el portal de cumplimiento de Microsoft 365.
+1. [Incorporar dispositivos a la administración de dispositivos](endpoint-dlp-getting-started.md)  - Para poder supervisar y proteger los elementos confidenciales de un dispositivo, es necesario que habilite la supervisión del dispositivo y que incorpore los puntos de conexión. Ambas acciones se realizan en el portal de cumplimiento de Microsoft Purview.
    - Escenario 1 – [Incorporación de dispositivos](endpoint-dlp-getting-started.md) que aún no se han incorporado.
    - Escenario 2 - [En este escenario, Microsoft Defender para punto de conexión ya está implementado y existen puntos de conexión que informan.](endpoint-dlp-getting-started.md) Todos estos puntos de conexión aparecerán en la lista de dispositivos administrados.
 1. [Configurar nuestra directiva DLP predeterminada para dispositivos](mip-easy-trials.md#dlp-for-devices) o [Definir una nueva directiva DLP para dispositivos](endpoint-dlp-learn-about.md).
@@ -210,7 +212,7 @@ Tiene flexibilidad en la configuración de las directivas DLP. Puede empezar con
       - [Evitar el acceso externo a documentos confidenciales](dlp-microsoft-teams.md#prevent-external-access-to-sensitive-documents)
       - [Obtener sugerencias de directiva para ayudar a educar a los usuarios e instrucciones para personalizar las sugerencias de directiva](dlp-microsoft-teams.md#policy-tips-help-educate-users)
    - Dispositivos: cambiar de solo auditoría a bloquear
-1. [Configurar y ver alertas de directivas de prevención de pérdida de datos: Cumplimiento de Microsoft 365 | Microsoft Docs](dlp-configure-view-alerts-policies.md)
+1. [Configurar y ver alertas de directivas de prevención de pérdida de datos: Microsoft Purview | Microsoft Docs](dlp-configure-view-alerts-policies.md)
 
 ## <a name="ediscovery"></a>eDiscovery
 
@@ -223,9 +225,9 @@ Aproveche un flujo de trabajo de un extremo a otro para conservar, recopilar, an
 > [!TIP]
 > Procedimiento recomendado de prueba: día 1
 
-Para acceder a eDiscovery avanzado o ser agregado como miembro de un caso de eDiscovery avanzado, un usuario deben tener asignados los permisos adecuados.
+Para acceder a eDiscovery (Premium) o ser agregado como miembro de un caso de eDiscovery (Premium), un usuario deben tener asignados los permisos adecuados.
 
-1. [Configurar eDiscovery avanzado – Asignar permisos de eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
+1. [Configurar eDiscovery (Premium): Asignar permisos de eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
 1. [Agregar o quitar miembros de un caso](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
 ### <a name="step-2-required-create-a-case"></a>Paso 2 (obligatorio): crear un caso
@@ -233,9 +235,9 @@ Para acceder a eDiscovery avanzado o ser agregado como miembro de un caso de eDi
 > [!TIP]
 > Procedimiento recomendado de prueba: crear en los primeros 30 días
 
-Más organizaciones usan la solución eDiscovery avanzado en Microsoft 365 para los procesos críticos de eDiscovery. Esto incluye responder a solicitudes normativas, investigaciones y litigios.
+Más organizaciones usan la solución eDiscovery (Premium) en Microsoft 365 para los procesos críticos de eDiscovery. Esto incluye responder a solicitudes normativas, investigaciones y litigios.
 
-1. Administrar eDiscovery avanzado: [aprender a configurar eDiscovery avanzado, administrar casos mediante el Centro de seguridad y cumplimiento, administrar un flujo de trabajo en eDiscovery avanzado y analizar los resultados de búsqueda de eDiscovery avanzado](/learn/modules/manage-advanced-ediscovery).
+1. Administrar eDiscovery (Premium): [aprender a configurar eDiscovery (Premium), administrar casos mediante el Centro de seguridad y cumplimiento, administrar un flujo de trabajo en eDiscovery (Premium) y analizar los resultados de búsqueda de eDiscovery (Premium)](/learn/modules/manage-advanced-ediscovery).
 1. [Crear un caso de eDiscovery con el nuevo formato de caso de eDiscovery avanzado](advanced-ediscovery-new-case-format.md)
 1. [Cerrar o eliminar un caso](close-or-delete-case.md): cuando el caso o la investigación hayan terminado, puede cerrarlos o eliminarlos. También puede volver a abrir un caso cerrado.
 
@@ -243,9 +245,9 @@ Más organizaciones usan la solución eDiscovery avanzado en Microsoft 365 para 
 
 Para permitir que los usuarios de su organización empiecen a crear y usar casos, debe configurar opciones globales que se apliquen a todos los casos de su organización. En este momento, la única configuración global es **detección de privilegios entre abogado y cliente** (habrá más configuraciones globales disponibles en el futuro).
 
-1. [Configurar eDiscovery avanzado – Configuración global](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-advanced-ediscovery)
+1. [Configurar eDiscovery (Premium): Configuración global](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
 1. [Establecer la configuración de búsqueda y análisis](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
-1. [Administrar trabajos en eDiscovery avanzado](managing-jobs-ediscovery20.md)
+1. [Administrar trabajos en eDiscovery (Premium)](managing-jobs-ediscovery20.md)
 
 ### <a name="step-4-optional-compliance-boundaries"></a>Paso 4 (opcional): [límites de cumplimiento](set-up-compliance-boundaries.md)
 
@@ -262,22 +264,22 @@ Configurar los límites de cumplimiento para investigaciones de eDiscovery:
 
 ### <a name="step-5-optional-learn-about-content-search-tool"></a>Paso 5 (opcional): [obtener información sobre la herramienta de Búsqueda de contenido](search-for-content.md)
 
-Use la herramienta Búsqueda de contenido del Centro de cumplimiento de Microsoft 365 para encontrar rápidamente correos electrónicos en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype Empresarial. Puede usar la herramienta Búsqueda de contenido para buscar correos electrónicos, documentos y conversaciones de mensajería instantánea en herramientas de colaboración como Microsoft Teams y Grupos de Microsoft 365.
+Use la herramienta Búsqueda de contenido del portal de cumplimiento de Microsoft Purview para encontrar rápidamente correos electrónicos en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype Empresarial. Puede usar la herramienta Búsqueda de contenido para buscar correos electrónicos, documentos y conversaciones de mensajería instantánea en herramientas de colaboración como Microsoft Teams y Grupos de Microsoft 365.
 
-- [Más información sobre la búsqueda avanzada de eDiscovery avanzado](search-for-content.md#search-for-content)
+- [Más información sobre la búsqueda de eDiscovery (Premium)](search-for-content.md#search-for-content)
 
 ## <a name="information-protection"></a>Protección de la información
 
 **Detectar, clasificar y proteger su información confidencial**
 
-Implemente Microsoft Information Protection y etiquetas de confidencialidad para ayudarle a descubrir, clasificar y proteger su contenido confidencial dondequiera que éste se encuentre o viaje.
+Implemente Microsoft Purview Information Protection y etiquetas de confidencialidad para ayudarle a descubrir, clasificar y proteger su contenido confidencial dondequiera que este se encuentre o viaje.
 
 ### <a name="step-1-start-your-information-protection-trial"></a>Paso 1: [Iniciar la prueba de Information Protection](mip-easy-trials.md)
 
 > [!TIP]
 > Procedimiento recomendado de prueba: día 1
 
-Los clientes aptos pueden activar etiquetas y directivas predeterminadas para Microsoft Information Protection. Al habilitar la configuración predeterminada en la versión de prueba, tardará unos 2 minutos en configurar todas las directivas del espacio empresarial y hasta 24 horas en ver los resultados de estas directivas predeterminadas.
+Los clientes aptos pueden activar etiquetas y directivas predeterminadas para Microsoft Purview Information Protection. Al habilitar la configuración predeterminada en la versión de prueba, tardará unos 2 minutos en configurar todas las directivas del espacio empresarial y hasta 24 horas en ver los resultados de estas directivas predeterminadas.
 
 Al elegir la configuración predeterminada, con 1 clic, se configura automáticamente lo siguiente:
 
@@ -356,7 +358,7 @@ Para habilitar el Análisis de riesgos internos, debe ser miembro o administrado
 
 **Automatizar la programación de retención de registros críticos para la empresa**
 
-Use características integradas de administración de registros para automatizar la programación de retención para los registros normativos, legales y empresariales de la organización. Obtenga ayuda con el ciclo de vida completo del contenido, desde la creación hasta la colaboración, la declaración de registros, la retención y la eliminación.
+Use características integradas de administración de registros de Microsoft Purview para automatizar la programación de retención para los registros normativos, legales y empresariales de la organización. Obtenga ayuda con el ciclo de vida completo del contenido, desde la creación hasta la colaboración, la declaración de registros, la retención y la eliminación.
 
 ### <a name="step-1-dynamically-target-retention-policies-with-adaptive-policy-scopes"></a>Paso 1: Dirigir dinámicamente las directivas de retención con ámbitos de directiva adaptables
 
@@ -418,7 +420,7 @@ Ayude a su organización a evaluar los riesgos y a responder eficazmente a los r
 
 [Más información sobre la evaluación premium del Administrador de cumplimiento](compliance-easy-trials-compliance-manager-assessments.md).
 
-[Cuaderno de estrategias: evaluaciones premium del Administrador de cumplimiento de Microsoft](compliance-easy-trials-compliance-manager-assessment-playbook.md)
+[Cuaderno de estrategias: evaluaciones premium del Administrador de cumplimiento de Microsoft Purview](compliance-easy-trials-compliance-manager-assessment-playbook.md)
 
 ### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>Administración de riesgo de privacidad Priva y Solicitudes de los interesados Priva
 
@@ -432,7 +434,7 @@ Identifique y proteja de forma proactiva los riesgos para la privacidad, como el
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
-**¿Qué se incluye?**: para obtener una lista completa de las características y soluciones de cumplimiento de Microsoft 365 enumeradas por nivel de producto, vea la [Feature Matrix](https://go.microsoft.com/fwlink/?linkid=2139145).
+**¿Qué se incluye?**: para obtener una lista completa de las características y soluciones de Microsoft Purview enumeradas por nivel de producto, vea la [Matriz de característica](https://go.microsoft.com/fwlink/?linkid=2139145).
 
 **Biblioteca de contenido técnico de Seguridad de Microsoft**: explore esta biblioteca para buscar guías interactivas y otro contenido de aprendizaje que se adecue a sus necesidades. [Visitar la biblioteca](/security).
 

@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Use palabras clave y condiciones para restringir el ámbito de la búsqueda al buscar datos mediante eDiscovery (Premium) en Microsoft 365.
-ms.openlocfilehash: 7a3c3747e38667eca40032511209af964ffb165a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cceac6974bacb066201120ac4972393f2323353c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950343"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995016"
 ---
 # <a name="build-search-queries-for-collections-in-ediscovery-premium"></a>Compilación de consultas de búsqueda para colecciones en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Al configurar la consulta de búsqueda al crear una [colección](collections-overview.md) en un caso de exhibición de documentos electrónicos (Premium), puede usar palabras clave para buscar contenido y condiciones específicos para restringir el ámbito de la búsqueda y devolver los elementos más relevantes para la investigación legal.
 

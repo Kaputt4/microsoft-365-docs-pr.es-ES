@@ -10,15 +10,15 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre cómo notificar falsos positivos y falsos negativos en Outlook la característica Mensaje de informe.
+description: Obtenga información sobre cómo notificar falsos positivos y falsos negativos en Outlook mediante la característica Mensaje de informe.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f2181df44f8d193f8c19c508451733773bd20708
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 8f52b4d085c13f2e1e1a48c2a8a12e6782f13960
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473512"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974111"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Informar de falsos positivos y falsos negativos en Outlook
 
@@ -30,27 +30,27 @@ ms.locfileid: "64473512"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Si es administrador de una organización Microsoft 365 con buzones de correo Exchange Online, le recomendamos que use la página **Envíos** en el portal Microsoft 365 Defender correo. Para obtener más información, vea [Use the Submissions portal to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> Si es administrador de una organización Microsoft 365 con buzones de Exchange Online, se recomienda usar la página **Envíos** en el portal de Microsoft 365 Defender. Para obtener más información, consulte [Uso del portal envíos para enviar sospechas de correo no deseado, direcciones URL y archivos a Microsoft](admin-submission.md).
 
-En las organizaciones de Microsoft 365 con buzones en buzones de Exchange Online o en buzones locales con autenticación moderna híbrida, puede enviar falsos positivos (correo electrónico bueno bloqueado o enviado a la carpeta no deseado) y falsos negativos (correo electrónico no deseado o suplantación de identidad que se entregó a la bandeja de entrada) a Exchange Online Protection (EOP).
+En Microsoft 365 organizaciones con buzones de correo en buzones de Exchange Online o locales mediante la autenticación moderna híbrida, puede enviar falsos positivos (buen correo electrónico que se bloqueó o envió a la carpeta de correo no deseado) y falsos negativos (correo electrónico no deseado o phish que se entregó a la bandeja de entrada) para Exchange Online Protection (EOP).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Para obtener la mejor experiencia de envío de usuario, use el complemento Report Message o el complemento Report Phishing.
+- Para obtener la mejor experiencia de envío de usuario, use el complemento Mensaje de informe o el complemento De suplantación de identidad de informe.
 
-- El complemento Report Message y el complemento Report Phishing funcionan para Outlook en todas las plataformas (Outlook en la Web, iOS, Android y Escritorio).
+- El complemento Mensaje de informe y el complemento De suplantación de identidad de informe funcionan para Outlook en todas las plataformas (Outlook en la Web, iOS, Android y Escritorio).
 
-- Si es administrador de una organización con buzones de correo Exchange Online, use el portal de envíos del portal Microsoft 365 Defender correo electrónico. Para obtener más información, consulta [Usar el envío de administrador para enviar correo no deseado, phish, direcciones URL y archivos sospechosos a Microsoft](admin-submission.md).
+- Si es administrador de una organización con buzones de Exchange Online, use el portal Envíos en el portal de Microsoft 365 Defender. Para obtener más información, consulte [Uso del envío de administrador para enviar sospechas de correo no deseado, fish, direcciones URL y archivos a Microsoft](admin-submission.md).
 
-- Puede configurar para enviar mensajes directamente a Microsoft, un buzón que especifique o ambos. Para obtener más información, vea [Directivas de envío de usuarios](user-submission.md).
+- Puede configurar para enviar mensajes directamente a Microsoft, un buzón que especifique o ambos. Para obtener más información, consulte [Directivas de envío de usuarios](user-submission.md).
 
-- Para obtener más información sobre cómo obtener y habilitar el mensaje de informe o los complementos de suplantación de identidad de informes, vea Habilitar el mensaje de informe o los complementos de suplantación [de identidad de informes](enable-the-report-message-add-in.md).
+- Para obtener más información sobre cómo obtener y habilitar el mensaje de informe o los complementos de suplantación de identidad de informe, vea [Habilitar el mensaje de informe o los complementos de suplantación de identidad de informe](enable-the-report-message-add-in.md).
 
-- Para obtener más información acerca de cómo notificar mensajes a Microsoft, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
+- Para obtener más información sobre cómo informar de mensajes a Microsoft, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
-### <a name="turn-off-the-built-in-reporting-experience"></a>Desactivar la experiencia de informes integrada
+### <a name="turn-off-the-built-in-reporting-experience"></a>Desactivar la experiencia de generación de informes integrada
 
-No recomendamos la experiencia de informes integrada en Outlook porque no puede usar la directiva [de envío de usuarios](./user-submission.md). Se recomienda usar el complemento Report Message o el complemento Report Phishing en su lugar.
+No se recomienda la experiencia de informes integrada en Outlook porque no puede usar la [directiva de envío de usuarios](./user-submission.md). En su lugar, se recomienda usar el complemento Mensaje de informe o el complemento De suplantación de identidad de informe.
 
 Deberá tener asignados permisos antes de poder ejecutar este cmdlet. Para obtener los permisos necesarios para ejecutar cualquier cmdlet o parámetro en su organización, consulte [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions).
 
@@ -60,36 +60,35 @@ Ejecute el siguiente comando de PowerShell para deshabilitar la experiencia de i
 Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
 ```
 
+## <a name="use-the-report-message-feature"></a>Uso de la característica Mensaje de informe
 
-## <a name="use-the-report-message-feature"></a>Usar la característica Mensaje de informe
+### <a name="report-junk-and-phishing-messages"></a>Informar de mensajes no deseados y de suplantación de identidad
 
-### <a name="report-junk-and-phishing-messages"></a>Notificar mensajes de correo no deseado y suplantación de identidad
+Para los mensajes de la Bandeja de entrada o de cualquier otra carpeta de correo electrónico excepto correo no deseado, use el siguiente método para notificar mensajes de spam y phishing:
 
-Para los mensajes de la Bandeja de entrada o cualquier otra carpeta de correo electrónico excepto correo no deseado, use el siguiente método para notificar mensajes de correo no deseado y suplantación de identidad:
+1. Seleccione los puntos suspensivos **Más acciones** en la esquina superior derecha del mensaje seleccionado, seleccione **Mensaje** de informe en el menú desplegable y, a continuación, seleccione **Correo no deseado** o **Phishing**.
 
-1. Selecciona los **puntos suspensivos** Más acciones en la esquina superior derecha del mensaje seleccionado, selecciona  Informar del mensaje en el menú desplegable y, a continuación, selecciona Correo no **deseado o** **Suplantación de identidad**.
+   :::image type="content" source="../../media/report-message-more-actions.png" alt-text="Icono Más acciones" lightbox="../../media/report-message-more-actions.png":::
 
-   :::image type="content" source="../../media/report-message-more-actions.png" alt-text="El icono Más acciones" lightbox="../../media/report-message-more-actions.png":::
-
-   :::image type="content" source="../../media/report-message-junk-phishing.png" alt-text="La opción Correo no deseado y suplantación de identidad en el panel Mensaje de informe" lightbox="../../media/report-message-junk-phishing.png":::
+   :::image type="content" source="../../media/report-message-junk-phishing.png" alt-text="Opción Correo no deseado y suplantación de identidad en el panel Mensaje de informe" lightbox="../../media/report-message-junk-phishing.png":::
 
 2. Los mensajes seleccionados se enviarán a Microsoft para su análisis y:
-   - Se ha movido a la carpeta correo no deseado si se han notificado como correo no deseado.
-   - Se elimina si se han notificado como suplantación de identidad.
+   - Se ha movido a la carpeta Correo no deseado si se notificaron como correo no deseado.
+   - Se eliminaron si se notificaron como suplantación de identidad (phishing).
 
 ### <a name="report-messages-that-are-not-junk"></a>Informar de mensajes que no son correo no deseado
 
-1. Selecciona los **puntos suspensivos** Más acciones en la esquina superior derecha del mensaje seleccionado, selecciona  Informar del mensaje en el menú desplegable y, a continuación, selecciona **No deseado**.
+1. Seleccione los puntos suspensivos **Más acciones** en la esquina superior derecha del mensaje seleccionado, seleccione **Mensaje** de informe en el menú desplegable y, a continuación, seleccione **No deseado**.
 
-   :::image type="content" source="../../media/report-message-more-actions.png" alt-text="El icono que proporciona más acciones" lightbox="../../media/report-message-more-actions.png":::
+   :::image type="content" source="../../media/report-message-more-actions.png" alt-text="Icono que proporciona más acciones" lightbox="../../media/report-message-more-actions.png":::
 
-   :::image type="content" source="../../media/report-message-not-junk.png" alt-text="La opción No deseado en el panel Mensaje de informe" lightbox="../../media/report-message-not-junk.png":::
+   :::image type="content" source="../../media/report-message-not-junk.png" alt-text="La opción No no deseado en el panel Mensaje de informe" lightbox="../../media/report-message-not-junk.png":::
 
-2. El mensaje seleccionado se enviará a Microsoft para su análisis y se trasladará a la Bandeja de entrada o a cualquier otra carpeta especificada.
+2. El mensaje seleccionado se enviará a Microsoft para su análisis y se moverá a la Bandeja de entrada o a cualquier otra carpeta especificada.
 
-## <a name="view-and-review-reported-messages"></a>Ver y revisar los mensajes notificados
+## <a name="view-and-review-reported-messages"></a>Visualización y revisión de los mensajes notificados
 
 Para revisar los mensajes que los usuarios informan a Microsoft, tiene estas opciones:
 
-- Use la **página Envíos** en el Microsoft 365 Defender portal. Para obtener más información, vea [Ver envíos de usuarios a Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
-- Cree una regla de flujo de correo (también conocida como regla de transporte) para enviar copias de los mensajes notificados. Para obtener instrucciones, consulte [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).
+- Use la página **Envíos** del portal de Microsoft 365 Defender. Para obtener más información, vea [Ver envíos de usuarios a Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
+- Cree una regla de flujo de correo (también conocida como regla de transporte) para enviar copias de los mensajes notificados. Para obtener instrucciones, consulte [Uso de reglas de flujo de correo para ver qué usuarios informan a Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).

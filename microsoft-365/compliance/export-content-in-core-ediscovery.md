@@ -18,14 +18,16 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Describe cómo exportar y descargar contenido de un caso de exhibición de documentos electrónicos (estándar) en Microsoft 365.
-ms.openlocfilehash: a0ea33d599ed609c24cf63f1df4c68b882364b1b
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2a63d22c8b4cb20e2c0f1317a8496e1cf517b2da
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937969"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995456"
 ---
 # <a name="export-content-from-a-ediscovery-standard-case"></a>Exportación de contenido desde un caso de exhibición de documentos electrónicos (estándar)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Una vez que una búsqueda asociada a un caso de exhibición de documentos electrónicos (estándar) de Microsoft Purview se ejecuta correctamente, puede exportar los resultados de la búsqueda. Al exportar los resultados de búsqueda, los elementos de buzón se descargan en archivos PST o como mensajes individuales. Al exportar contenido de sitios SharePoint y OneDrive para la Empresa, se exportan copias de documentos nativos Office y otros documentos. También se exporta un archivo Results.csv que contiene información sobre cada elemento exportado y un archivo de manifiesto (en formato XML) que contiene información sobre cada resultado de búsqueda.
   

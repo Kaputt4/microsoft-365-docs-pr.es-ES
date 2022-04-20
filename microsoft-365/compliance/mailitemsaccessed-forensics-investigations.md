@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use la acción de auditoría del buzón MailItemsAccessed para realizar investigaciones forenses de cuentas de usuarios comprometidas.
-ms.openlocfilehash: 658a4b079bd7909f8436867efd86d3ac04d61aa2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2256e331075074348e2a72d6528bed1944567b94
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946207"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996204"
 ---
 # <a name="use-microsoft-purview-audit-premium-to-investigate-compromised-accounts"></a>Usar Auditoría de Microsoft Purview (Premium) para investigar cuentas en peligro
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Una cuenta de usuario comprometida (también denominada *adquisición de cuenta*) es un tipo de ataque en el que un atacante obtiene acceso a una cuenta de usuario y opera como el usuario. En ocasiones, estos tipos de ataques provocan más daño de lo que el atacante podría haber planeado. Al investigar cuentas de correo electrónico comprometidas, tiene que asumir que se han comprometido más datos de correo de los que se indican mediante el seguimiento de la presencia real del atacante. Según el tipo de datos de los mensajes de correo electrónico, tiene que asumir que la información confidencial se ha visto comprometida o puede enfrentarse a sanciones, a menos que pueda demostrar que la información confidencial no se ha expuesto. Por ejemplo, las organizaciones reguladas por HIPAA se enfrentan a multas considerables si hay evidencia de que la información sanitaria del paciente (PHI) se ha expuesto. En estos casos, es poco probable que los atacantes estén interesados en la PHI, pero las organizaciones deben informar de las vulneraciones de datos, a menos que puedan probar lo contrario.
 

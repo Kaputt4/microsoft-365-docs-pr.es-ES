@@ -20,14 +20,16 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Cree directivas de alerta en el portal de cumplimiento de Microsoft Purview o en el portal de Microsoft 365 Defender para supervisar posibles amenazas, pérdida de datos y problemas de permisos.
-ms.openlocfilehash: ad7099ddcbc99fd6cf852b1bb7f564c0caf444a7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: beecaf86a013480e0c5546e07189e8be5b622b17
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944269"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995918"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Directivas de alerta en Microsoft 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede usar directivas de alerta y el panel de alertas en el portal de cumplimiento de Microsoft Purview o en el portal de Microsoft 365 Defender para crear directivas de alerta y, a continuación, ver las alertas generadas cuando los usuarios realizan actividades que coinciden con las condiciones de una directiva de alerta. Hay varias directivas de alerta predeterminadas que le ayudan a supervisar actividades como la asignación de privilegios de administrador en Exchange Online, ataques de malware, campañas de phishing y niveles inusuales de eliminaciones de archivos y uso compartido externo.
 
@@ -64,7 +66,7 @@ Una directiva de alerta consta de un conjunto de reglas y condiciones que define
 
 Para ver y crear directivas de alertas:
 
-### <a name="microsoft-purview-compliance-portal"></a>Portal de cumplimiento de Microsoft Purview
+### <a name="microsoft-purview-compliance-portal"></a>Portal de cumplimiento de Microsoft Purview.
 
 Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento</a> y, a continuación, seleccione DirectivasAlertAlert policies (**Directivas** >  **deAlertAlert** > ).
 
@@ -186,7 +188,7 @@ Cuando una actividad realizada por los usuarios de su organización coincide con
 
 Para ver las alertas:
 
-### <a name="microsoft-purview-compliance-portal"></a>Portal de cumplimiento de Microsoft Purview
+### <a name="microsoft-purview-compliance-portal"></a>Portal de cumplimiento de Microsoft Purview.
 
  Vaya a y, a <https://compliance.microsoft.com> continuación, seleccione **Alertas**. Como alternativa, puede ir directamente a <https://compliance.microsoft.com/compliancealerts>.
 
@@ -260,7 +262,7 @@ En la tabla siguiente se enumeran los roles necesarios para ver las alertas de l
 
 Para ver a qué categoría se asigna una directiva de alerta predeterminada, consulte la tabla en [Directivas de alertas predeterminadas](#default-alert-policies).
 
-|Role|Información de gobierno|Prevención de pérdida de datos|Flujo del correo|Permissions|Administración de amenazas|Otros|
+|Función|Información de gobierno|Prevención de pérdida de datos|Flujo del correo|Permissions|Administración de amenazas|Otros|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registros de auditoría|||||||
 |Administración de casos|||||||

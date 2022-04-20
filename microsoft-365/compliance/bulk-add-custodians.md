@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Use la herramienta de importación masiva para agregar rápidamente varios custodios y sus orígenes de datos asociados a un caso en Microsoft Purview eDiscovery (Premium).
-ms.openlocfilehash: 7913c8674dc5560539196f34e323f05955a6850e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a6ad413c65b3b8afaa0cbf10df1a595730914405
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950365"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994532"
 ---
 # <a name="import-custodians-to-an-ediscovery-premium-case"></a>Importar custodios a un caso de exhibición de documentos electrónicos (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Para los casos de exhibición de documentos electrónicos (Premium) de Microsoft Purview que implican a muchos custodios, puede importar varios custodios a la vez mediante un archivo CSV que contenga la información necesaria para agregarlos a un caso. La herramienta importar custodios también validará el archivo CSV antes de crear el trabajo de importación. Esto significa que puede corregir los errores en el archivo CSV en lugar de tener que esperar a que se complete el trabajo de importación antes de aprender que hay errores que impiden que un custodio se agregue al caso.
 

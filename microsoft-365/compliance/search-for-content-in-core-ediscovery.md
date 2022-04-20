@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Busque contenido que pueda ser relevante para un caso de exhibición de documentos electrónicos (estándar).
-ms.openlocfilehash: d97acf066914a7dee0059f27aa0127efe52ea5f3
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 00a7c7bdd565a5fc184281fa467db3c56b1c6288
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971613"
+ms.locfileid: "64995346"
 ---
 # <a name="search-for-content-in-a-ediscovery-standard-case"></a>Buscar contenido en un caso de exhibición de documentos electrónicos (estándar)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Después de crear un caso de exhibición de documentos electrónicos (Estándar) de Microsoft Purview y de que las personas de interés en el caso se colocan en espera, puede crear y ejecutar una o varias búsquedas de contenido relevante para el caso. Las búsquedas asociadas a un caso de exhibición de documentos electrónicos (estándar) no aparecen en la página **Búsqueda de contenido** del portal de cumplimiento de Microsoft Purview. Estas búsquedas se muestran en la página **Búsquedas** del caso principal de eDiscover al que están asociadas las búsquedas. Esto también significa que solo los miembros del caso pueden acceder a las búsquedas asociadas a un caso.
 

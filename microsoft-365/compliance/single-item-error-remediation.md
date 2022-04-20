@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Puede corregir un error de procesamiento en un documento en un conjunto de revisión en eDiscovery (Premium) sin tener que seguir el proceso de corrección masiva de errores.
-ms.openlocfilehash: fa4a595a967935241e67b9a88ed158c789075102
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d3b90f0f2d396b6304bb85b46bc5b018802101eb
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935662"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994004"
 ---
 # <a name="single-item-error-remediation-in-ediscovery-premium"></a>Corrección de errores de un solo elemento en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La corrección de errores ofrece a los usuarios de Microsoft Purview eDiscovery (Premium) la capacidad de corregir los problemas de datos que impiden que eDiscovery (Premium) procese correctamente el contenido. Por ejemplo, los archivos protegidos con contraseña no se pueden procesar porque esos archivos están bloqueados o cifrados. Anteriormente, solo podía corregir errores de forma masiva mediante [este flujo de trabajo](error-remediation-when-processing-data-in-advanced-ediscovery.md). Pero a veces, no tiene sentido corregir errores en varios archivos cuando no está seguro de si alguno de esos archivos responde al caso que está investigando. También podría no tener sentido corregir errores antes de que haya tenido la oportunidad de revisar los metadatos del archivo (como la ubicación del archivo o quién tenía acceso) para ayudarle a tomar decisiones iniciales sobre la capacidad de respuesta. Una nueva característica denominada *corrección de errores de elemento único* proporciona a los administradores de exhibición de documentos electrónicos la capacidad de ver los metadatos de los archivos con un error de procesamiento y, si es necesario, corregir el error directamente en el conjunto de revisión. En el artículo se describe cómo identificar, omitir y corregir archivos con errores de procesamiento en un conjunto de revisión.
 

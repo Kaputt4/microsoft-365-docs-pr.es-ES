@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Los administradores pueden configurar un conector de datos para importar datos del sistema de badging físico de su organización a Microsoft 365. Esto le permite usar estos datos en directivas de administración de riesgos internos para ayudarle a detectar el acceso a los edificios físicos por parte de usuarios específicos que pueden indicar una posible amenaza interna para su organización.
-ms.openlocfilehash: 7b6161cfc8f712082303641f9da7345edf5e24df
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a55874b9f920919c16a094d32c4edcde394600d4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937947"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994884"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Configurar un conector para importar datos físicos incorrectos (versión preliminar)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede configurar un conector de datos en el portal de cumplimiento de Microsoft Purview para importar datos físicos incorrectos, como los eventos de acceso físico sin procesar de los empleados o las alarmas de acceso físico generadas por el sistema de badging de su organización. Algunos ejemplos de puntos de acceso físicos son una entrada a un edificio o una entrada a la sala de servidores o al centro de datos. La [solución de administración de riesgos](insider-risk-management.md) internos de Microsoft 365 puede usar los datos de falsificación física para ayudar a proteger su organización frente a actividades malintencionadas o robo de datos dentro de la organización.
 

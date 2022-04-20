@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 64d1284b315b7d565a924499ef5af2b815263dac
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0aee30dff19f6d1127e63d14fa69e5d72232e305
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945205"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972541"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Ilustraciones de productividad de Microsoft 365
 
@@ -107,13 +107,13 @@ Recommended Zero Trust capabilities for protecting identities and devices that a
 --> 
 <a name="BKMK_ediscovery"></a>
 
-## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>arquitectura de Advanced eDiscovery en Microsoft 365
+## <a name="ediscovery-premium-architecture-in-microsoft-365"></a>Arquitectura de eDiscovery (Premium) en Microsoft 365
 
-Advanced eDiscovery flujo de trabajo y flujo de datos de un extremo a otro, incluidos Microsoft 365 entornos multigeográficos.
+Flujo de trabajo y flujo de datos de un extremo a otro de eDiscovery (Premium), incluidos Microsoft 365 entornos multigeográficos.
 
 | Item | Descripción |
 |:-----|:-----|
-|[![Póster del modelo: arquitectura de Advanced eDiscovery en Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Visualización como imagen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Descargar como PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)\| [Descargar como Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Actualizado en octubre de 2020|Incluye: <ul><li>  Flujo de trabajo de un extremo a otro en un único entorno</li><li>Flujo de trabajo de un extremo a otro en un entorno multigeográfico de Microsoft 365 </li><li>Flujo de datos de un extremo a otro que admite el flujo de trabajo de EDRM</li> |
+|[![Póster del modelo: arquitectura de eDiscovery (Premium) en Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Visualización como imagen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Descargar como PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)\| [Descargar como Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Actualizado en octubre de 2020|Incluye: <ul><li>  Flujo de trabajo de un extremo a otro en un único entorno</li><li>Flujo de trabajo de un extremo a otro en un entorno multigeográfico de Microsoft 365 </li><li>Flujo de datos de un extremo a otro que admite el flujo de trabajo de EDRM</li> |
 
 ## <a name="microsoft-telephony-solutions"></a>Soluciones de telefonía de Microsoft
 
@@ -124,7 +124,7 @@ Microsoft es compatible con varias opciones cuando empieza a utilizar Teams en l
 |[![Póster de Soluciones de telefonía de Microsoft.](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>Actualizado en marzo de 2021 | Para obtener más información, vea [Planear la solución de voz de Teams](/microsoftteams/cloud-voice-landing-page).|
 
 
-## <a name="set-up-your-infrastructure-for-hybrid-work"></a>Configure su infraestructura para el trabajo híbrido
+## <a name="set-up-your-infrastructure-for-hybrid-work"></a>Configure la infraestructura para el trabajo híbrido
 
 Con Microsoft 365 y otras tecnologías en la nube de Microsoft, puede proporcionar a los trabajadores acceso seguro a la información, las herramientas y los recursos locales y basados en la nube de su organización desde sus hogares.
 

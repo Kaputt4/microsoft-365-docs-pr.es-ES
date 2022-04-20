@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de Red tail Speak desde Veritas a Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: af568495cd7ee8b1bf003da71a4582462fbd5c4c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 46b9646fee78fa0589a9af41db35cf79a71e508f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950658"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994576"
 ---
 # <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>Configuración de un conector para archivar datos de Redtail Speak
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos desde los buzones de Redtail Speak to user en su organización Microsoft 365. Veritas proporciona un conector [Redtail Speak](https://globanet.com/redtail/) configurado para capturar elementos del servidor SFTP de su organización donde se reciben los elementos de Redtail. El conector convierte el contenido de Redtail Speak a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 

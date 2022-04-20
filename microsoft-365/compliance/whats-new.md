@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes en función de sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayuda a mantenerse al tanto del panorama de cumplimiento en constante cambio. Averigüe lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5c1e48f1cd9d4a73e703e4d5d93d6d1354d57366
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: b5f231abfbfe943f0b2ab0cf33a14267f0940820
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953725"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972483"
 ---
 # <a name="whats-new-in-microsoft-purview"></a>Novedades de Microsoft Purview
 
@@ -51,8 +51,8 @@ Para satisfacer los desafíos del área de trabajo descentralizada y rica en dat
 
 | **Nombre anterior** | **Nombre nuevo** | **Descripción** |
 |:----------------|:-------------|:----------------|
-| Microsoft 365 auditoría avanzada | Auditoría de Microsoft Purview (Premium) | Las soluciones de auditoría proporcionan una solución integrada para ayudar a las organizaciones a responder eficazmente a eventos de seguridad, investigaciones forenses, investigaciones internas y obligaciones de cumplimiento. Para más información, consulte [Auditoría avanzada de Microsoft Purview (Premium).](advanced-audit.md) |
-| Cumplimiento de Microsoft 365 comunicación | Cumplimiento de la comunicación de Microsoft Purview | El cumplimiento de comunicaciones ayuda a minimizar los riesgos, ya que le ayuda a detectar, capturar y tomar medidas correctivas rápidamente para los canales de comunicación de la empresa y las infracciones de directivas. Para obtener más información, consulte [Cumplimiento de comunicación de Microsoft Purview](communication-compliance-solution-overview.md). |
+| Microsoft 365 auditoría avanzada <br><br> auditoría básica de Microsoft 365 | Auditoría de Microsoft Purview (Premium) <br><br> Auditoría de Microsoft Purview (estándar)| Las soluciones de auditoría proporcionan una solución integrada para ayudar a las organizaciones a responder eficazmente a eventos de seguridad, investigaciones forenses, investigaciones internas y obligaciones de cumplimiento. Para obtener más información, consulte [Auditoría avanzada de Microsoft Purview (Premium)](advanced-audit.md) y [Auditoría avanzada de Microsoft Purview (estándar).](set-up-basic-audit.md) |
+| Cumplimiento de Microsoft 365 comunicación | Cumplimiento de comunicaciones de Microsoft Purview | El cumplimiento de comunicaciones ayuda a minimizar los riesgos, ya que le ayuda a detectar, capturar y tomar medidas correctivas rápidamente para los canales de comunicación de la empresa y las infracciones de directivas. Para obtener más información, consulte [Cumplimiento de comunicación de Microsoft Purview](communication-compliance-solution-overview.md). |
 | Administrador de cumplimiento de Microsoft | Administrador de cumplimiento de Microsoft Purview | El Administrador de cumplimiento puede ayudarle a lo largo del proceso de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, estar al corriente de las normativas y certificaciones e informar a los auditores. Para más información, consulte [Administrador de cumplimiento de Microsoft Purview](compliance-manager.md). |
 | Microsoft 365 clave de cliente | Clave de cliente de Microsoft Purview | La clave de cliente proporciona protección adicional contra la visualización de datos por parte de sistemas o personal no autorizados, y complementa el cifrado de disco de BitLocker en centros de datos de Microsoft. Para obtener más información, consulte [Clave de cliente de Microsoft Purview](customer-key-overview.md). |
 | Caja de seguridad del cliente de Office 365 | Caja de seguridad del cliente de Microsoft Purview | La Caja de seguridad del cliente garantiza que Microsoft no puede acceder a su contenido para realizar operaciones de servicio sin su aprobación explícita. La Caja de seguridad del cliente le lleva al proceso de flujo de trabajo de aprobación que Microsoft usa para asegurarse de que solo las solicitudes autorizadas permiten el acceso al contenido. Para más información, consulte [Caja de seguridad del cliente de Microsoft Purview](customer-lockbox-requests.md). |
@@ -63,17 +63,17 @@ Para satisfacer los desafíos del área de trabajo descentralizada y rica en dat
 | Gobernanza de información de Microsoft | Administración del ciclo de vida de datos de Microsoft Purview | La administración del ciclo de vida de los datos proporciona herramientas y funcionalidades para conservar el contenido que necesita conservar y eliminar el contenido que no. Para más información, consulte [Administración del ciclo de vida de datos de Microsoft Purview](data-lifecycle-management.md). |
 | Administración de riesgos internos de Microsoft 365 | Administración de riesgos internos de Microsoft Purview | La administración de riesgos internos usa toda la amplitud del servicio y los indicadores de terceros para ayudarle a identificar, evaluar prioridades y actuar rápidamente en la actividad de usuario de riesgo. Para obtener más información, consulte [Administración de riesgos internos de Microsoft Purview](insider-risk-management.md). |
 | Cifrado de mensajes de Office 365 | Cifrado de mensajes de Microsoft Purview | Con el cifrado de mensajes, su organización puede enviar y recibir mensajes de correo electrónico cifrados entre personas dentro y fuera de la organización. Para más información, consulte [Cifrado de mensajes de Microsoft Purview](ome.md). |
-| Privileged Access Management en Microsoft 365 | Administración de acceso con privilegios de Microsoft Purview | Privileged Access Management ayuda a proteger su organización frente a infracciones y ayuda a cumplir los procedimientos recomendados de cumplimiento limitando el acceso permanente a datos confidenciales o el acceso a la configuración crítica. Para más información, consulte [Administración de acceso con privilegios de Microsoft Purview](privileged-access-management-solution-overview.md). |
+| Privileged Access Management en Microsoft 365 | Privileged Access Management de Microsoft Purview | Privileged Access Management ayuda a proteger su organización frente a infracciones y ayuda a cumplir los procedimientos recomendados de cumplimiento limitando el acceso permanente a datos confidenciales o el acceso a la configuración crítica. Para más información, consulte [Administración de acceso con privilegios de Microsoft Purview](privileged-access-management-solution-overview.md). |
 | Conectores de datos de Microsoft | Conectores de datos de Microsoft Purview | Microsoft 365 permite a los administradores usar conectores de datos para importar y archivar datos que no son de Microsoft, datos de terceros de plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos, en buzones de su organización Microsoft 365. Para más información, consulte [Conectores de datos de Microsoft Purview](compliance-extensibility.md). |
-| eDiscovery avanzado de Microsoft 365 | Microsoft Purview eDiscovery Premium | La exhibición de documentos electrónicos, o eDiscovery, es el proceso de identificación y entrega de información electrónica que se puede usar como prueba en casos legales. Para más información, consulte [Microsoft Purview eDiscovery Premium](overview-ediscovery-20.md). |
-| Centro de cumplimiento de Microsoft 365 | Portal de cumplimiento de Microsoft Purview | Portal de administración para acceder a soluciones y catálogo de soluciones dentro del conjunto de Cumplimiento de Microsoft 365 E5. Para más información, consulte [El portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center.md). |
+| eDiscovery avanzado de Microsoft 365 <br><br> eDiscovery principal de Microsoft 365 | Exhibición de documentos electrónicos de Microsoft Purview (premium) <br><br> Exhibición de documentos electrónicos de Microsoft Purview (estándar) | La exhibición de documentos electrónicos, o eDiscovery, es el proceso de identificación y entrega de información electrónica que se puede usar como prueba en casos legales. Para obtener más información, consulte [Exhibición de documentos electrónicos de Microsoft Purview (Premium)](overview-ediscovery-20.md) y [Exhibición de documentos electrónicos de Microsoft Purview (estándar).](get-started-core-ediscovery.md) |
+| Centro de cumplimiento de Microsoft 365 | Portal de cumplimiento de Microsoft Purview. | Portal de administración para acceder a soluciones y catálogo de soluciones dentro del conjunto de Cumplimiento de Microsoft 365 E5. Para más información, consulte [El portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center.md). |
 
 ## <a name="february-2022"></a>Febrero de 2022
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [Administrar plantillas de comunicaciones de custodio en Advanced eDiscovery](advanced-ediscovery-communications-library.md): los administradores de exhibición de documentos electrónicos ahora pueden crear plantillas de comunicaciones de custodio que se pueden usar en cualquier caso de Advanced eDiscovery de la organización.
-- [Administrar oficiales emisores en Advanced eDiscovery](advanced-ediscovery-issuing-officers.md): los administradores de exhibición de documentos electrónicos pueden agregar una lista de oficiales emisores que se pueden asignar a las comunicaciones del custodio en cualquier caso Advanced eDiscovery de la organización.
+- [Administrar plantillas de comunicaciones de custodios en eDiscovery (Premium):](advanced-ediscovery-communications-library.md) los administradores de eDiscovery ahora pueden crear plantillas de comunicaciones custodios que se pueden usar en cualquier caso de exhibición de documentos electrónicos (Premium) de la organización.
+- [Administrar oficiales emisores en eDiscovery (Premium):](advanced-ediscovery-issuing-officers.md) los administradores de exhibición de documentos electrónicos pueden agregar una lista de oficiales emisores que se pueden asignar a las comunicaciones del custodio en cualquier caso de exhibición de documentos electrónicos (Premium) de la organización.
 
 ### <a name="data-lifecycle-management-and-records-management"></a>Administración del ciclo de vida de los datos y administración de registros
 
@@ -120,7 +120,7 @@ Para satisfacer los desafíos del área de trabajo descentralizada y rica en dat
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [Advanced eDiscovery flujo de trabajo de contenido en Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#reference-guide): se ha actualizado con una nueva guía de referencia rápida descargable para administrar Teams contenido en Advanced eDiscovery
+- [Flujo de trabajo de eDiscovery (Premium) para el contenido de Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#reference-guide): se ha actualizado con una nueva guía de referencia rápida descargable para administrar Teams contenido en eDiscovery (Premium)
 
 ### <a name="data-lifecycle-management"></a>Administración del ciclo de vida de los datos
 
@@ -159,7 +159,7 @@ Se agregaron los siguientes artículos para la incorporación de dispositivos:
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [Use el nuevo formato de caso en Advanced eDiscovery](advanced-ediscovery-new-case-format.md) nuevo formato de caso se publicó a disponibilidad general y se cambió el nombre de "formato de mayúsculas y minúsculas"
+- [Usar el nuevo formato de caso en eDiscovery (Premium)](advanced-ediscovery-new-case-format.md) el nuevo formato de caso se publicó a disponibilidad general y se cambió el nombre de "formato de mayúsculas y minúsculas grandes"
 
 ### <a name="retention-and-records-management"></a>Retención y administración de registros
 - Implementación: los usuarios pueden eliminar la nueva configuración de administración de registros que controla si los usuarios pueden eliminar los elementos etiquetados en SharePoint y OneDrive. Anteriormente, las etiquetas de retención configuradas para conservar contenido y que no marcaban elementos como registros impedían a los usuarios eliminar contenido etiquetado en SharePoint cuando se permitía esta acción en OneDrive. Para obtener más información, consulte [Funcionamiento de la retención para SharePoint y OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
@@ -213,8 +213,8 @@ Se han agregado los siguientes artículos nuevos:
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [Recopile datos adjuntos en la nube en Advanced eDiscovery](advanced-ediscovery-cloud-attachments.md) además de recopilar la versión más reciente de los datos adjuntos en la nube, puede recopilar la versión compartida en un mensaje de correo electrónico o Teams conversación de chat; la nueva funcionalidad de aplicar automáticamente una etiqueta de retención a los datos adjuntos en la nube permite recopilar la versión compartida.
-- [Configure versiones históricas en Advanced eDiscovery](advanced-ediscovery-historical-versions.md) nueva funcionalidad que indexe todas las versiones de los documentos almacenados en un sitio de SharePoint para la búsqueda; esto significa que las versiones de documento que contienen contenido que coincide con una consulta de colección se devuelven en los resultados de la búsqueda.
+- [Recopilar datos adjuntos en la nube en eDiscovery (Premium)](advanced-ediscovery-cloud-attachments.md) además de recopilar la versión más reciente de un archivo adjunto en la nube, puede recopilar la versión que se ha compartido en un mensaje de correo electrónico o Teams conversación de chat; recopilar la versión compartida es posible gracias a la nueva funcionalidad de aplicar automáticamente una etiqueta de retención a los datos adjuntos en la nube.
+- [Configure versiones históricas en la nueva funcionalidad de eDiscovery (Premium)](advanced-ediscovery-historical-versions.md) que indexe todas las versiones de documentos almacenados en un sitio de SharePoint para la búsqueda; esto significa que las versiones de documento que contienen contenido que coinciden con una consulta de colección se devuelven en los resultados de la búsqueda.
 
 ### <a name="encryption"></a>Cifrado
 
@@ -275,7 +275,7 @@ Se han agregado los siguientes artículos nuevos:
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [Use el editor de KQL para compilar consultas de búsqueda](ediscovery-kql-editor.md) en versión preliminar pública de una nueva manera de crear consultas de búsqueda en búsqueda de contenido, eDiscovery principal y Advanced eDiscovery; el editor de KQL proporciona autocompletar para las propiedades y condiciones que se pueden buscar admitidas y muestra listas de valores admitidos para las propiedades y condiciones estándar; el KQL  editor también proporciona detección de errores y sugerencias para correcciones de posibles errores en las consultas de búsqueda
+- [Use el editor de KQL para crear consultas de búsqueda](ediscovery-kql-editor.md) en versión preliminar pública de una nueva manera de crear consultas de búsqueda en Búsqueda de contenido, eDiscovery (estándar) y eDiscovery (Premium); el editor de KQL proporciona autocompletar para las propiedades y condiciones admitidas que se pueden buscar y muestra listas de valores admitidos para las propiedades y condiciones estándar; el KQL  editor también proporciona detección de errores y sugerencias para correcciones de posibles errores en las consultas de búsqueda
 
 ### <a name="information-barriers"></a>Barreras de información
 

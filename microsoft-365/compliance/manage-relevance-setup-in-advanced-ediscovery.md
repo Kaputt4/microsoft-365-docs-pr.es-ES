@@ -16,14 +16,16 @@ search.appverid:
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lea las recomendaciones para configurar el entrenamiento de Relevancia en eDiscovery (Premium) con el fin de puntuar archivos según su relevancia y generar resultados de análisis.
-ms.openlocfilehash: 66afbb3b8e7d8c2a4e266aa7fb63dc8434f9c8a6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f1a4f1ca9ad9fbf2b63439d463e83723dc2a0e0a
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946031"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994862"
 ---
 # <a name="manage-relevance-setup-in-ediscovery-premium-classic"></a>Administrar la configuración de Relevancia en eDiscovery (Premium) (clásico)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Para usar eDiscovery (Premium) de Microsoft Purview, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery (Premium), puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

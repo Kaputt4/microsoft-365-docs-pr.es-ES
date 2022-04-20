@@ -16,16 +16,18 @@ search.appverid:
 ms.assetid: ''
 description: Durante una investigación, puede usar el botón Reintentar para resolver las búsquedas de contenido que tienen errores de ubicación de contenido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3c433dfa6bf842f1d62350e3b518177d1bdca6d7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9ded77dedc2c304e8a51b165ab6b5324cc5e78e3
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192168"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994026"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Reintentar una búsqueda de contenido para resolver un error de ubicación de contenido
 
-Al usar la búsqueda de contenido en el Centro de seguridad y cumplimiento para buscar en un gran número de buzones, puede obtener errores de búsqueda similares al error:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Al usar búsqueda de contenido en el centro de seguridad y cumplimiento para buscar un gran número de buzones de correo, puede obtener errores de búsqueda similares al error:
 
 ```text
 Error
@@ -38,35 +40,35 @@ User1@contoso.com: Problem in processing the request. Please try again later. If
 User2@contoso.com: Application error occurred. Please try again later. (CS012-002)
 ```
 
-Estos errores (con códigos de error de CS001-002, CS003-002, CS008-009, CS012-002 y otros errores del formulario CS0XX-0XX) indican que la búsqueda de contenido no pudo buscar ubicaciones de contenido específicas; en este ejemplo, no se buscaron dos buzones. Estos errores se muestran en la página desplegable de detalles de estado de la búsqueda de contenido.
+Estos errores (con códigos de error de CS001-002, CS003-002, CS008-009, CS012-002 y otros errores del formulario CS0XX-0XX) indican que búsqueda de contenido no pudo buscar ubicaciones de contenido específicas; en este ejemplo, no se buscaron dos buzones. Estos errores se muestran en la página desplegable detalles de estado de la búsqueda de contenido.
 
 ## <a name="cause-of-content-location-errors"></a>Causa de errores de ubicación de contenido
 
-Al buscar un gran número de buzones, la búsqueda se distribuye entre miles de servidores en un centro de datos de Microsoft. En cualquier momento, servidores específicos podrían estar en estado de reinicio o en el proceso de con error a copias redundantes. En cualquiera de estos casos, la solicitud de búsqueda de contenido para recuperar datos dará tiempo de espera. En el ejemplo anterior, los errores de los buzones que fallaron fueron el resultado del tiempo de ejecución de la búsqueda.
+Al buscar un gran número de buzones, la búsqueda se distribuye entre miles de servidores en un centro de datos de Microsoft. En cualquier momento, los servidores específicos podrían estar en estado de reinicio o en proceso de conmutación por error a copias redundantes. En cualquiera de estos casos, se agotará el tiempo de espera de la solicitud de búsqueda de contenido para recuperar datos. En el ejemplo anterior, los errores de los buzones con errores eran el resultado del tiempo de espera de la búsqueda.
 
 ## <a name="resolving-content-location-errors"></a>Resolución de errores de ubicación de contenido
 
-Reiniciar la búsqueda suele provocar errores similares en diferentes servidores. En lugar de reiniciar la búsqueda, haga clic en el **botón Reintentar** que se muestra en la parte superior de la página de resultados de búsqueda.
+Al reiniciar la búsqueda, a menudo se producirán errores similares en distintos servidores. En lugar de reiniciar la búsqueda, haga clic en el botón **Reintentar** que se muestra en la parte superior de la página de resultados de la búsqueda.
 
 ![Haga clic en el botón Reintentar para resolver errores de ubicación de contenido.](../media/retrycontentsearch3.png)
 
-Esto dará como resultado reintentar la búsqueda solo para los buzones que han fallado. Al reintentar la búsqueda, se conservan los demás resultados que se devolvieron correctamente.
+Esto dará lugar a que vuelva a intentar la búsqueda solo de los buzones con errores. Al reintentar la búsqueda, se conservan los demás resultados que se devolvieron correctamente.
 
-## <a name="tips-to-avoid-content-location-errors"></a>Sugerencias evitar errores de ubicación de contenido
+## <a name="tips-to-avoid-content-location-errors"></a>Sugerencias para evitar errores de ubicación de contenido
 
-Estas son algunas causas adicionales de errores de ubicación de contenido y algunas sugerencias para ayudarle a evitarlos al buscar grandes cantidades de buzones.
+Estas son algunas causas adicionales de errores de ubicación de contenido y algunas sugerencias que le ayudarán a evitarlos al buscar un gran número de buzones.
 
-- El buzón que se está buscando puede estar ocupado debido a la actividad del usuario. En este caso, el servicio de búsqueda puede limitarse a sí mismo para evitar que el buzón no esté disponible. Para evitar esto, intente ejecutar búsquedas durante el horario no comercial.
+- El buzón que se busca puede estar ocupado debido a la actividad del usuario. En este caso, el servicio de búsqueda podría limitarse a sí mismo para evitar que el buzón deje de estar disponible. Para evitarlo, intente ejecutar búsquedas durante horas no laborables.
 
-- Es posible que la consulta de búsqueda recupere demasiado contenido del buzón. Si es posible, intente restringir el ámbito de la búsqueda mediante palabras clave, intervalos de fechas y condiciones de búsqueda.
+- Es posible que la consulta de búsqueda esté recuperando demasiado contenido del buzón. Si es posible, intente restringir el ámbito de la búsqueda mediante palabras clave, intervalos de fechas y condiciones de búsqueda.
 
-- Demasiadas palabras clave o frases de palabras clave al crear una consulta de búsqueda con la lista [de palabras clave](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-searches). Cuando se ejecuta una consulta de búsqueda que usa la lista de palabras clave, el servicio ejecuta básicamente una búsqueda independiente para cada fila de la lista de palabras clave para que se puedan generar estadísticas. Si usa la lista de palabras clave en las consultas de búsqueda, minimice el número de filas de la lista de palabras clave o divida las palabras clave de número en listas más pequeñas y cree una búsqueda diferente para cada lista de palabras clave.
+- Demasiadas palabras clave o frases de palabras clave al crear una consulta de búsqueda mediante la [lista de palabras clave](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-searches). Al ejecutar una consulta de búsqueda que usa la lista de palabras clave, el servicio ejecuta básicamente una búsqueda independiente para cada fila de la lista de palabras clave para que se puedan generar estadísticas. Si usa la lista de palabras clave en consultas de búsqueda, minimice el número de filas de la lista de palabras clave o divida las palabras clave numéricas en listas más pequeñas y cree una búsqueda diferente para cada lista de palabras clave.
 
   > [!NOTE]
   > Para ayudar a reducir los problemas causados por listas de palabras clave grandes, ahora está limitado a un máximo de 20 filas en la lista de palabras clave de una consulta de búsqueda.
 
-- Se están realizando demasiadas búsquedas en el mismo buzón al mismo tiempo. Si es posible, intente ejecutar una búsqueda a la vez en cualquier buzón.
+- Se están realizando demasiadas búsquedas en el mismo buzón al mismo tiempo. Si es posible, intente ejecutar una búsqueda a la vez en cualquier buzón de correo.
 
-- Buscar demasiados buzones en una sola búsqueda. La probabilidad de errores de ubicación de contenido aumenta al buscar un gran número de buzones. Si es posible, intente ejecutar varias búsquedas para que cada búsqueda incluya un subconjunto de buzones en su organización.
+- Buscar demasiados buzones en una sola búsqueda. La probabilidad de errores de ubicación de contenido aumenta al buscar un gran número de buzones. Si es posible, intente ejecutar varias búsquedas para que cada búsqueda incluya un subconjunto de buzones de su organización.
 
-- Se está realizando el mantenimiento necesario en el buzón. Aunque esta causa probablemente se produzca con poca frecuencia, espere un poco después de recibir el error de ubicación de contenido y vuelva a intentar la búsqueda.
+- El mantenimiento necesario se realiza en el buzón de correo. Aunque esta causa probablemente se produzca con poca frecuencia, espere un poco después de recibir el error de ubicación de contenido y vuelva a intentar la búsqueda.

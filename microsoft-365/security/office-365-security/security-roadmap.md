@@ -19,17 +19,16 @@ ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: Recomendaciones principales del equipo de ciberseguridad de Microsoft para implementar funcionalidades de seguridad para proteger el entorno de Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e6174da5a9cbac779c147fb0ea091080bf4338a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3b39edc8adbe16d7f085ca9fec9f30d45f484838
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945437"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974265"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Hoja de ruta de seguridad: prioridades principales para los primeros 30 días, 90 días y posteriores
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 En este artículo se incluyen las principales recomendaciones del equipo de ciberseguridad de Microsoft para implementar funcionalidades de seguridad para proteger el entorno de Microsoft 365. Este artículo está adaptado a partir de una sesión de Microsoft Ignite: [Microsoft 365 segura como un profesional de ciberseguridad: prioridades principales para los primeros 30 días, 90 días y posteriores](https://www.youtube.com/watch?v=luignzNyR-o). Esta sesión fue desarrollada y presentada por Mark Simos y Matt Kemelhar, Enterprise Cybersecurity Architects.
 

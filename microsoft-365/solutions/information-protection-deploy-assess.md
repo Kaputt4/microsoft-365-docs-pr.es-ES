@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Determine las regulaciones de privacidad de datos, los escenarios pertinentes, su preparación y los tipos de información confidencial que se encuentran en el entorno de Microsoft 365.
-ms.openlocfilehash: 967c64dee2d99f41b3c2a1b6a193730dcd75811a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e2d87599315e7bb43b289d74b5f192b29aecd965
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947525"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973482"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Evaluar los riesgos de privacidad de los datos e identificar elementos confidenciales con Microsoft 365
 
@@ -60,22 +60,22 @@ Para una referencia posterior en los artículos de esta solución general, en es
 
 |Regulación|Artículo/sección|Extracto|Categorías de control técnico aplicables|
 |---|---|---|---|
-|RGPD|Artículo 5, apartado 1, letra f)|Los datos personales se procesarán de forma que garantice la seguridad adecuada de los datos personales, incluida la protección contra el procesamiento no autorizado o ilegal y contra la pérdida accidental, la destrucción o el daño, utilizando las medidas técnicas u organizativas adecuadas («integridad y confidencialidad».|(Todos) <br> Identidad <br> Device <br> Protección contra amenazas <br> Protección de la información <br> Gobernanza de la información <br> Detección y respuesta|
+|RGPD|Artículo 5, apartado 1, letra f)|Los datos personales se procesarán de forma que garantice la seguridad adecuada de los datos personales, incluida la protección contra el procesamiento no autorizado o ilegal y contra la pérdida accidental, la destrucción o el daño, utilizando las medidas técnicas u organizativas adecuadas («integridad y confidencialidad».|(Todos) <br> Identidad <br> Device <br> Protección contra amenazas <br> Protección de la información <br> Gobernanza de la información <br> Detectar y responder|
 ||Artículo 32)(1)(a)|Teniendo en cuenta el estado de la técnica, los costos de ejecución y la naturaleza, el ámbito, el contexto y los fines del tratamiento, así como el riesgo de variación de probabilidad y gravedad para los derechos y libertades de las personas físicas, el responsable y el encargado de la tratamiento aplicarán las medidas técnicas y organizativas adecuadas para garantizar un nivel de seguridad adecuado al riesgo,  incluyendo, entre otras cosas, según corresponda: (a) la seudónimo y el cifrado de datos personales.|Protección de la información|
 ||Artículo 13)(2)(a)|"... en el momento en que se obtengan los datos personales, el responsable del tratamiento proporcionará al interesado la siguiente información adicional necesaria para garantizar un tratamiento justo y transparente: (a) el período durante el cual se almacenarán los datos personales, o si no es posible, los criterios utilizados para determinar dicho período.|Gobernanza de la información|
-||Artículo 15)(1)(e)|El interesado tendrá derecho a obtener de la confirmación del responsable de la tratamiento si se están procesando o no los datos personales que le conciernen, y en su caso, el acceso a los datos personales y la siguiente información: (e) la existencia del derecho a solicitar al responsable la rectificación o eliminación de datos personales o la restricción del tratamiento de datos personales relativos al interesado o a oponerse a dichos datos Tratamiento|Detección y respuesta|
-|LGPD|Artículo 46|Los agentes encargados del tratamiento adoptarán medidas de seguridad, técnicas y administrativas que puedan proteger los datos personales frente a accesos no autorizados y situaciones accidentales o ilegales de destrucción, pérdida, alteración, comunicación o cualquier tipo de tratamiento inadecuado o ilegal.|Protección de la información <br> Gobernanza de la información <br> Detección y respuesta|
-||Artículo 48|El responsable debe comunicar a la autoridad nacional y al interesado todo incidente de seguridad que pueda dar lugar a riesgos o daños relevantes a los interesados.|Detección y respuesta|
+||Artículo 15)(1)(e)|El interesado tendrá derecho a obtener de la confirmación del responsable de la tratamiento si se están procesando o no los datos personales que le conciernen, y en su caso, el acceso a los datos personales y la siguiente información: (e) la existencia del derecho a solicitar al responsable la rectificación o eliminación de datos personales o la restricción del tratamiento de datos personales relativos al interesado o a oponerse a dichos datos Tratamiento|Detectar y responder|
+|LGPD|Artículo 46|Los agentes encargados del tratamiento adoptarán medidas de seguridad, técnicas y administrativas que puedan proteger los datos personales frente a accesos no autorizados y situaciones accidentales o ilegales de destrucción, pérdida, alteración, comunicación o cualquier tipo de tratamiento inadecuado o ilegal.|Protección de la información <br> Gobernanza de la información <br> Detectar y responder|
+||Artículo 48|El responsable debe comunicar a la autoridad nacional y al interesado todo incidente de seguridad que pueda dar lugar a riesgos o daños relevantes a los interesados.|Detectar y responder|
 |HIPPA-HITECH|45 CFR 164.312(e)(1)|Implementar medidas técnicas de seguridad para protegerse contra el acceso no autorizado a información de salud protegida electrónicamente que se transmite a través de una red de comunicaciones electrónicas.|Protección de la información|
 ||45 C.F.R. 164.312(e)(2)(ii)|Implementar un mecanismo para cifrar información de salud protegida electrónicamente cuando se considere necesario.|Protección de la información|
 ||45 CFR 164.312(c)(2)|Implementar mecanismos electrónicos para corroborar que la información de salud protegida electrónicamente no se ha modificado o destruido de forma no autorizada.|Gobernanza de la información|
 ||45 CFR 164.316(b)(1)(i)|Si esta subparte requiere que se documente una acción, actividad o evaluación, mantenga un registro escrito (que puede ser electrónico) de la acción, actividad o evaluación.|Gobernanza de la información|
 ||45 CFR 164.316(b)(1)(ii)|Conservar la documentación exigida por el párrafo (b)(1) de esta sección durante 6 años a partir de la fecha de creación o la fecha en que fue efectiva por última vez, la que sea posterior.|Gobernanza de la información|
-||45 C.F.R. 164.308(a)(1)(ii)(D)|Implementar procedimientos para revisar periódicamente los registros de actividad del sistema de información, como registros de auditoría, informes de acceso e informes de seguimiento de incidentes de seguridad|Detección y respuesta|
-||45 C.F.R. 164.308(a)(6)(ii)|Identificar y responder a incidentes de seguridad sospechosos o conocidos; mitigar, en la medida de lo posible, efectos negativos de los incidentes de seguridad que se conozcan en la entidad cubierta o la empresa asociada y documentar incidencias de seguridad y sus resultados.|Detección y respuesta|
-||45 C.F.R. 164.312(b)|Implemente mecanismos de hardware, software y procedimientos que registren y examinen la actividad en sistemas de información que contienen o usan información de salud protegida electrónicamente.|Detección y respuesta|
-|CCPA|1798.105(c)|Una empresa que reciba una solicitud verificable de un consumidor para eliminar la información personal del consumidor de conformidad con la subdivisión (a) de esta sección eliminará la información personal del consumidor de sus registros y dirigirá a los proveedores de servicios que eliminen la información personal del consumidor de sus registros.|Detección y respuesta|
-||1798.105(d)|(excepciones a 1798.105(c) <br> Una empresa o un proveedor de servicios no estarán obligados a cumplir con la solicitud de un consumidor de eliminar la información personal del consumidor si es necesario que la empresa o el proveedor de servicios mantengan la información personal del consumidor para: (consulte el reglamento actual para obtener información adicional).|Detección y respuesta|
+||45 C.F.R. 164.308(a)(1)(ii)(D)|Implementar procedimientos para revisar periódicamente los registros de actividad del sistema de información, como registros de auditoría, informes de acceso e informes de seguimiento de incidentes de seguridad|Detectar y responder|
+||45 C.F.R. 164.308(a)(6)(ii)|Identificar y responder a incidentes de seguridad sospechosos o conocidos; mitigar, en la medida de lo posible, efectos negativos de los incidentes de seguridad que se conozcan en la entidad cubierta o la empresa asociada y documentar incidencias de seguridad y sus resultados.|Detectar y responder|
+||45 C.F.R. 164.312(b)|Implemente mecanismos de hardware, software y procedimientos que registren y examinen la actividad en sistemas de información que contienen o usan información de salud protegida electrónicamente.|Detectar y responder|
+|CCPA|1798.105(c)|Una empresa que reciba una solicitud verificable de un consumidor para eliminar la información personal del consumidor de conformidad con la subdivisión (a) de esta sección eliminará la información personal del consumidor de sus registros y dirigirá a los proveedores de servicios que eliminen la información personal del consumidor de sus registros.|Detectar y responder|
+||1798.105(d)|(excepciones a 1798.105(c) <br> Una empresa o un proveedor de servicios no estarán obligados a cumplir con la solicitud de un consumidor de eliminar la información personal del consumidor si es necesario que la empresa o el proveedor de servicios mantengan la información personal del consumidor para: (consulte el reglamento actual para obtener información adicional).|Detectar y responder|
 |||||
 
 > [!IMPORTANT]
@@ -190,7 +190,7 @@ La evaluación del RGPD consta de estas secciones:
 
 Este paso implica la identificación de determinados tipos de información confidencial que están sujetos a controles normativos específicos, así como la aparición de ellos en el entorno de Microsoft 365.
 
-La búsqueda de contenido en el entorno que contiene personal puede ser una tarea formidable, que anteriormente implicaba una combinación de búsqueda de cumplimiento, exhibición de documentos electrónicos, Advanced eDiscovery, DLP y auditoría.
+Buscar contenido en el entorno que contiene personal puede ser una tarea formidable, que anteriormente implicaba una combinación de búsqueda de cumplimiento, exhibición de documentos electrónicos, exhibición de documentos electrónicos (Premium), DLP y auditoría.
 
 Con la nueva solución **de clasificación de datos** en el portal de cumplimiento de Microsoft Purview, esto se ha vuelto mucho más fácil con la funcionalidad [Explorador de contenido](../compliance/data-classification-content-explorer.md) , que funciona con tipos de información confidencial integrados o personalizados, incluidos los relacionados con los datos personales.
 

@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bcbacc886c57257e5c4b067b278c7736ae403390
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d8515ce2bccb90478f11fa4a1813c7cb4ab7fb7d
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945525"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973847"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Búsqueda de amenazas en el Explorador de amenazas para Microsoft Defender para Office 365
 
@@ -35,7 +35,6 @@ En este artículo:
 
 > [!NOTE]
 > Esto forma parte de una **serie de 3 artículos** sobre **el Explorador de amenazas (Explorer),** **la seguridad del correo electrónico** **y las detecciones del Explorador y en tiempo real** (como las diferencias entre las herramientas y los permisos necesarios para operarlas). Los otros dos artículos de esta serie son [Seguridad de correo electrónico con explorador de amenazas](email-security-in-microsoft-defender.md) y [Explorador de amenazas y detecciones en tiempo real](real-time-detections.md).
-
 
 **Se aplica a**
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
@@ -69,7 +68,6 @@ Una vez que una persona de operaciones de seguridad (s ops) selecciona los datos
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/sender-drop-down.png" alt-text="Botón Remitente en el Explorador de amenazas" lightbox="../../media/sender-drop-down.png":::
-
 
 El enfoque de refinamiento en el Explorador o la detección en tiempo real se puede considerar en capas. El primero es **Ver**. El segundo se puede considerar como un *foco filtrado*. Por ejemplo, puede volver a rastrear los pasos que tomó para encontrar una amenaza registrando sus decisiones como esta: Para encontrar el problema en el Explorador, **he elegido la vista Malware con un foco de filtro Destinatario**. Esto facilita la reanudación de los pasos.
 

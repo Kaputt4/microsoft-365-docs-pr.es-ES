@@ -14,18 +14,20 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 9ee299c0972ed4e286e5a660f5082dd5632167e4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cd0d463e234c439d8b57576375fd6a91e512f753
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934277"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995289"
 ---
 # <a name="upload-your-test-base-package-zip"></a>Upload el paquete base de prueba (Zip) 
 
-En la página Probar base del portal, vaya a la opción **Upload nuevo paquete** de la barra de navegación izquierda, como se muestra a continuación:
+En la página Probar base del portal, vaya a la opción **Nuevo paquete** de la barra de navegación izquierda y, a continuación, haga clic en **Experiencia de carga heredada** para habilitar la experiencia de carga zip como se muestra a continuación:
 
-:::image type="content" alt-text="Upload un nuevo paquete." source="Media/Upload-New-Package.png" lightbox="Media/Upload-New-Package.png":::
+:::image type="content" alt-text="Upload un nuevo paquete." source="Media/testapplication01.png" lightbox="Media/testapplication01.png":::
+
+:::image type="content" alt-text="Aplique la operación." source="Media/testapplication21.png" lightbox="Media/testapplication21.png":::
 
 Una vez allí, siga los pasos siguientes para cargar un nuevo paquete.
 

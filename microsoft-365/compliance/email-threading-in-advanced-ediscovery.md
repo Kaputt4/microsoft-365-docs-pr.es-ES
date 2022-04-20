@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 description: Al realizar un análisis de eDiscovery (Premium), el subproceso de correo electrónico analiza una conversación de correo electrónico y separa cada mensaje en categorías diferentes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 51cc9ce09f1f2c9c95c3ab5a7f2175516c9ed199
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f2cdd3a10250a256179ce3fe959a88e0cbef01ba
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948713"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995500"
 ---
 # <a name="email-threading-in-ediscovery-premium"></a>Subprocesos de correo electrónico en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Considere la posibilidad de una conversación de correo electrónico que ha estado ocurriendo durante un tiempo. En la mayoría de los casos, el último mensaje del subproceso de correo electrónico incluirá el contenido de todos los mensajes anteriores. Por lo tanto, revisar el último mensaje proporcionará un contexto completo de la conversación que se produjo en el subproceso. El subproceso de correo electrónico identifica estos mensajes para que los revisores puedan revisar una fracción de los documentos recopilados sin perder ningún contexto.
 

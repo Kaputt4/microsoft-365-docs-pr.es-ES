@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo agregar resultados de búsqueda o ejemplos de esos resultados de búsqueda a un conjunto de revisión de casos de eDiscovery (Premium).
-ms.openlocfilehash: 1649b766c0e7f39122505d3a73574e478373f5b2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 7b754aa09390d041de44cd2e82ed9d1f93eede7e
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941135"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973759"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Agregar los resultados de búsqueda a un conjunto de revisión
 
@@ -37,7 +37,7 @@ Al agregar los resultados de una búsqueda a un conjunto de revisión (los conju
 
 - Todos los elementos (incluidos el contenido y los metadatos) se vuelven a indexar para que todos los datos del conjunto de revisión se puedan buscar completamente durante la revisión de los datos del caso. La reindexación de los datos da como resultado búsquedas exhaustivas y rápidas al buscar los datos en el conjunto de revisión durante la investigación del caso.
 
-- Un archivo cifrado con una [tecnología de cifrado de Microsoft](encryption.md) y se adjunta a un mensaje de correo electrónico que se devuelve en los resultados de la búsqueda se descifra cuando el mensaje de correo electrónico y el archivo adjunto se agregan al conjunto de revisión. Puede revisar y consultar el archivo descifrado en el conjunto de revisión. Debe tener asignado el rol Descifrado de RMS para agregar datos adjuntos de correo electrónico descifrados a un conjunto de revisión. Para obtener más información, vea [Descifrado en Microsoft 365 herramientas de exhibición de documentos electrónicos](ediscovery-decryption.md).
+- Un archivo cifrado con una [tecnología de cifrado de Microsoft](encryption.md) y se adjunta a un mensaje de correo electrónico que se devuelve en los resultados de la búsqueda se descifra cuando el mensaje de correo electrónico y el archivo adjunto se agregan al conjunto de revisión. Puede revisar y consultar el archivo descifrado en el conjunto de revisión. Debe tener asignado el rol Descifrado de RMS para agregar datos adjuntos de correo electrónico descifrados a un conjunto de revisión. Para obtener más información, vea [Descifrado en herramientas de exhibición de documentos electrónicos de Microsoft Purview](ediscovery-decryption.md).
 
 Para agregar datos a un conjunto de revisión, haga clic en una búsqueda en la pestaña **Búsquedas** y, a continuación, haga clic en **Agregar resultados para revisar establecidos** en la página de control flotante.
 

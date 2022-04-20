@@ -1,5 +1,5 @@
 ---
-title: Cómo funciona la investigación automatizada y la respuesta en Microsoft Defender para Office 365
+title: Funcionamiento de la investigación y respuesta automatizadas en Microsoft Defender para Office 365
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -14,22 +14,22 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-keywords: respuesta automatizada a incidentes, investigación, corrección, protección contra amenazas
+keywords: respuesta a incidentes automatizada, investigación, corrección, protección contra amenazas
 ms.date: 01/29/2021
-description: Vea cómo funcionan las capacidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365
+description: Vea cómo funcionan las funcionalidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365
 ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7173d45fed25fe1d0d1e93dbcc259046c1f221cd
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 78dc31c055f563f0f9f03bcf12642296459de491
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474275"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974243"
 ---
-# <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Cómo funciona la investigación automatizada y la respuesta en Microsoft Defender para Office 365
+# <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Funcionamiento de la investigación y respuesta automatizadas en Microsoft Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,66 +37,65 @@ ms.locfileid: "64474275"
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-A medida que se desencadenan las alertas de seguridad, el equipo de operaciones de seguridad debe buscar esas alertas y tomar medidas para proteger su organización. A veces, los equipos de operaciones de seguridad pueden sentirse abrumados por el volumen de alertas que se desencadenan. Las capacidades automatizadas de investigación y respuesta (AIR) en Microsoft Defender para Office 365 pueden ayudar.
+A medida que se desencadenan alertas de seguridad, depende del equipo de operaciones de seguridad examinar esas alertas y tomar medidas para proteger su organización. A veces, los equipos de operaciones de seguridad pueden sentirse abrumados por el volumen de alertas que se desencadenan. Las funcionalidades de investigación y respuesta automatizadas (AIR) en Microsoft Defender para Office 365 pueden ayudar.
 
-AIR permite que el equipo de operaciones de seguridad funcione de forma más eficaz y eficaz. Las capacidades de AIR incluyen procesos de investigación automatizados en respuesta a amenazas conocidas que existen actualmente. Las acciones de corrección apropiadas esperan su aprobación, lo que permite al equipo de operaciones de seguridad responder a las amenazas detectadas.
+AIR permite al equipo de operaciones de seguridad operar de forma más eficaz y eficaz. Las funcionalidades de AIR incluyen procesos de investigación automatizados en respuesta a amenazas conocidas que existen actualmente. Las acciones de corrección adecuadas esperan la aprobación, lo que permite al equipo de operaciones de seguridad responder a las amenazas detectadas.
 
-En este artículo se describe cómo funciona AIR a través de varios ejemplos. Cuando estés listo para empezar a usar AIR, consulta [Investigar y responder automáticamente a las amenazas](office-365-air.md).
+En este artículo se describe cómo funciona AIR a través de varios ejemplos. Cuando esté listo para empezar a usar AIR, consulte [Investigación automática y respuesta a amenazas](office-365-air.md).
 
-- [Ejemplo 1: Un mensaje de suplantación de identidad notificado por el usuario inicia un libro de reproducción de investigación](#example-a-user-reported-phish-message-launches-an-investigation-playbook)
+- [Ejemplo 1: Un mensaje de phish notificado por el usuario inicia un cuaderno de estrategias de investigación](#example-a-user-reported-phish-message-launches-an-investigation-playbook)
 - [Ejemplo 2: Un administrador de seguridad desencadena una investigación desde el Explorador de amenazas](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
-- [Ejemplo 3: un equipo de operaciones de seguridad integra AIR con su SIEM mediante la API de actividad de Office 365 administración](#example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api)
+- [Ejemplo 3: Un equipo de operaciones de seguridad integra AIR con su SIEM mediante la API de actividad de administración de Office 365](#example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api)
 
-## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Ejemplo: un mensaje de suplantación de identidad notificado por el usuario inicia un libro de reproducción de investigación
+## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Ejemplo: Un mensaje de phish notificado por el usuario inicia un cuaderno de estrategias de investigación
 
-Supongamos que un usuario de su organización recibe un correo electrónico que cree que es un intento de suplantación de identidad. El usuario, formado para informar de estos mensajes, usa el complemento Report [Message](enable-the-report-message-add-in.md) o el complemento [Report Phishing](enable-the-report-phish-add-in.md) para enviarlo a Microsoft para su análisis. El envío también se envía al sistema y está visible en el Explorador en la vista **Envíos** (anteriormente denominada vista **de notificación de** usuario). Además, el mensaje notificado por el usuario ahora desencadena una alerta de información basada en el sistema, que inicia automáticamente el libro de juegos de investigación.
+Supongamos que un usuario de su organización recibe un correo electrónico que cree que es un intento de suplantación de identidad (phishing). El usuario, entrenado para notificar dichos mensajes, usa el [complemento Mensaje](enable-the-report-message-add-in.md) de informe o el [complemento De suplantación de identidad](enable-the-report-phish-add-in.md) de informe para enviarlo a Microsoft para su análisis. El envío también se envía al sistema y está visible en el Explorador en la vista **Envíos** (anteriormente denominada vista **Notificada** por el usuario). Además, el mensaje notificado por el usuario ahora desencadena una alerta informativa basada en el sistema, que inicia automáticamente el cuaderno de estrategias de investigación.
 
 Durante la fase de investigación raíz, se evalúan varios aspectos del correo electrónico. Estos aspectos incluyen:
 
 - Determinación sobre el tipo de amenaza que podría ser;
 - Quién lo envió;
 - Desde dónde se envió el correo electrónico (infraestructura de envío);
-- Si otras instancias del correo electrónico se entregaron o bloquearon;
+- Si se entregaron o bloquearon otras instancias del correo electrónico;
 - Una evaluación de nuestros analistas;
 - Si el correo electrónico está asociado a campañas conocidas;
-- y más.
+- y mucho más.
 
-Una vez completada la investigación raíz, el libro de reproducción proporciona una lista de acciones recomendadas para realizar en el correo electrónico original y las entidades asociadas a ella.
+Una vez completada la investigación raíz, el cuaderno de estrategias proporciona una lista de las acciones recomendadas para realizar el correo electrónico original y las entidades asociadas a él.
 
 A continuación, se ejecutan varios pasos de investigación y búsqueda de amenazas:
 
 - Los mensajes de correo electrónico similares se identifican mediante búsquedas en clústeres de correo electrónico.
-- La señal se comparte con otras plataformas, como [Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
+- La señal se comparte con otras plataformas, como [Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - Se determina si los usuarios han hecho clic a través de vínculos malintencionados en mensajes de correo electrónico sospechosos.
-- Se realiza una comprobación en Exchange Online Protection ([EOP](exchange-online-protection-overview.md) y ([Microsoft Defender para](defender-for-office-365.md) Office 365 para ver si hay otros mensajes similares notificados por los usuarios.
-- Se realiza una comprobación para ver si un usuario se ha visto comprometido. Esta comprobación aprovecha las señales de Office 365, [Microsoft Defender para](/cloud-app-security) aplicaciones en la nube y [Azure Active Directory,](/azure/active-directory) correlacionando las anomalías relacionadas con la actividad del usuario.
+- Se realiza una comprobación en Exchange Online Protection ([EOP](exchange-online-protection-overview.md) y ([Microsoft Defender para Office 365](defender-for-office-365.md) para ver si hay otros mensajes similares notificados por los usuarios.
+- Se realiza una comprobación para ver si un usuario ha estado en peligro. Esta comprobación aprovecha las señales entre Office 365, [Microsoft Defender for Cloud Apps](/cloud-app-security) y [Azure Active Directory](/azure/active-directory), correlacionando las anomalías relacionadas con la actividad del usuario.
 
 Durante la fase de búsqueda, los riesgos y las amenazas se asignan a varios pasos de búsqueda.
 
-La corrección es la fase final del libro de juegos. Durante esta fase, se toman medidas de corrección, en función de las fases de investigación y de búsqueda.
+La corrección es la fase final del cuaderno de estrategias. Durante esta fase, se realizan los pasos de corrección, en función de las fases de investigación y búsqueda.
 
-## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Ejemplo: un administrador de seguridad desencadena una investigación desde el Explorador de amenazas
+## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Ejemplo: Un administrador de seguridad desencadena una investigación desde el Explorador de amenazas
 
-Además de las investigaciones automatizadas desencadenadas por una alerta, el equipo de operaciones de seguridad de la organización puede desencadenar una investigación automatizada desde una vista en [el Explorador de amenazas](threat-explorer.md).  Esta investigación también crea una alerta, de modo que Microsoft 365 Defender incidentes y herramientas SIEM externas puedan ver que esta investigación se desencadenó.
+Además de las investigaciones automatizadas desencadenadas por una alerta, el equipo de operaciones de seguridad de la organización puede desencadenar una investigación automatizada desde una vista en [el Explorador de amenazas](threat-explorer.md). Esta investigación también crea una alerta, por lo que Microsoft 365 Defender incidentes y herramientas SIEM externas pueden ver que se desencadenó esta investigación.
 
-Por ejemplo, supongamos que está usando la **vista Malware** en el Explorador. Con las pestañas debajo del gráfico, seleccione la **pestaña Correo** electrónico. Si selecciona uno o más elementos de la lista, se activa el **botón +** Acciones.
+Por ejemplo, supongamos que usa la vista **Malware** en el Explorador. Con las pestañas debajo del gráfico, seleccione la pestaña **Correo electrónico** . Si selecciona uno o varios elementos de la lista, se activa el botón **+ Acciones** .
 
-:::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="El Explorador con mensajes seleccionados" lightbox="../../media/Explorer-Malware-Email-ActionsInvestigate.png":::
+:::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="Explorador con mensajes seleccionados" lightbox="../../media/Explorer-Malware-Email-ActionsInvestigate.png":::
 
-
-Con el **menú** Acciones, puede seleccionar **Activar investigación**.
+Con el menú **Acciones** , puede seleccionar **Desencadenar investigación**.
 
 :::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="Menú Acciones para los mensajes seleccionados" lightbox="../../media/explorer-malwareview-selectedemails-actions.jpg":::
 
-Al igual que los libros de reproducción desencadenados por una alerta, las investigaciones automáticas que se desencadenan desde una vista en el Explorador incluyen una investigación raíz, pasos para identificar y correlacionar amenazas y acciones recomendadas para mitigar esas amenazas.
+De forma similar a los cuadernos de estrategias desencadenados por una alerta, las investigaciones automáticas que se desencadenan desde una vista en el Explorador incluyen una investigación raíz, pasos para identificar y correlacionar amenazas y acciones recomendadas para mitigar esas amenazas.
 
-## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>Ejemplo: un equipo de operaciones de seguridad integra AIR con su SIEM mediante la API de actividad de Office 365 administración
+## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>Ejemplo: Un equipo de operaciones de seguridad integra AIR con su SIEM mediante la API de actividad de administración de Office 365
 
-Las funcionalidades de AIR en Microsoft Defender para Office 365 [incluyen informes &](air-view-investigation-results.md) detalles que los equipos de operaciones de seguridad pueden usar para supervisar y abordar las amenazas. Pero también puede integrar las capacidades de AIR con otras soluciones. Algunos ejemplos incluyen un sistema de administración de eventos y de información de seguridad (SIEM), un sistema de administración de casos o una solución de informes personalizada. Estos tipos de integraciones se pueden realizar mediante la API Office 365 [actividad de administración](/office/office-365-management-api/office-365-management-activity-api-reference).
+Las funcionalidades de AIR en Microsoft Defender para Office 365 incluyen [informes & detalles](air-view-investigation-results.md) que los equipos de operaciones de seguridad pueden usar para supervisar y abordar las amenazas. Pero también puede integrar las funcionalidades de AIR con otras soluciones. Entre los ejemplos se incluyen un sistema de administración de eventos e información de seguridad (SIEM), un sistema de administración de casos o una solución de informes personalizada. Estos tipos de integraciones se pueden realizar mediante la [API de actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-Por ejemplo, recientemente, una organización estableció una forma de que su equipo de operaciones de seguridad vea alertas de suplantación de identidad notificadas por el usuario que air ya ha procesado. Su solución integra alertas relevantes con el servidor SIEM de la organización y su sistema de administración de casos. La solución reduce en gran medida el número de falsos positivos para que su equipo de operaciones de seguridad pueda centrar su tiempo y esfuerzo en amenazas reales. Para obtener más información acerca de esta solución personalizada, consulte tech [Community blog: Improve the Effectiveness of your SOC with Microsoft Defender for Office 365 and the O365 Management API](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
+Por ejemplo, recientemente, una organización ha configurado una forma para que su equipo de operaciones de seguridad vea las alertas de phish notificadas por el usuario que AIR ya ha procesado. Su solución integra alertas pertinentes con el servidor SIEM de la organización y su sistema de administración de casos. La solución reduce en gran medida el número de falsos positivos para que su equipo de operaciones de seguridad pueda centrar su tiempo y esfuerzo en amenazas reales. Para obtener más información sobre esta solución personalizada, consulte [el blog tech Community: Mejora de la eficacia del SOC con Microsoft Defender para Office 365 y la API de administración de O365](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-- [Introducción al uso de AIR](office-365-air.md)
+- [Comenzar mediante AIR](office-365-air.md)
 - [Ver acciones de corrección pendientes o completadas](air-review-approve-pending-completed-actions.md)

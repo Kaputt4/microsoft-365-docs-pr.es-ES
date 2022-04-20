@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Obtenga lo último en aislamiento basado en hardware. Evite que ataques actuales y emergentes, como vulnerabilidades de seguridad o vínculos malintencionados, interrumpan la productividad de los empleados y la seguridad empresarial.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c8e24b61b7f800b7c27a57bcec5c127adb032bf5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 98d23a814ac2af8d9dedc4f163923e67c9ca7dc2
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939265"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973253"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Protección de aplicaciones para Office para administradores
 
@@ -39,7 +39,7 @@ Protección de aplicaciones de Microsoft Defender para Office (Protección de ap
 
 ### <a name="minimum-software-requirements"></a>Requisitos mínimos de software
 
-* **Windows**: edición Windows 10 Enterprise, compilación de cliente 2004 (20H1) compilación 19041 o posterior. Se admiten todas las versiones de Windows 11. 
+* **Windows**: edición Windows 10 Enterprise, compilación de cliente 2004 (20H1) compilación 19041 o posterior. Se admiten todas las versiones de Windows 11.
 * **Office**: Office canal actual y canal de Enterprise mensual, versión de compilación 2011 16.0.13530.10000 o posterior. canal Office Semi-Annual Enterprise, versión de compilación 2108 o posterior. Se admiten versiones de 32 y 64 bits de Office.
 * **Paquete de actualización**: Windows 10 actualización de seguridad mensual acumulativa [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
@@ -124,7 +124,6 @@ Al abrirse, el archivo debe mostrar algunos indicadores visuales de que el archi
 
 Office admite las siguientes directivas para que pueda configurar las funcionalidades de Application Guard para Office. Estas directivas se pueden configurar a través de directivas de grupo o a través del [servicio de directivas en la nube Office](/DeployOffice/overview-office-cloud-policy-service).
 
-
 > [!NOTE]
 > La configuración de estas directivas puede deshabilitar algunas funcionalidades para los archivos abiertos en Application Guard para Office.
 
@@ -198,7 +197,7 @@ También puede configurar Microsoft Defender para Office 365 para que funcionen 
 
 ## <a name="limitations-and-considerations"></a>Limitaciones y consideraciones
 
-* Protección de aplicaciones para Office es un modo protegido que aísla documentos que no son de confianza para que no puedan acceder a recursos corporativos de confianza, una intranet, la identidad del usuario y archivos arbitrarios en el equipo. Como resultado, si un usuario intenta acceder a una característica que tiene una dependencia de dicho acceso, como insertar una imagen de un archivo local en el disco, el acceso produce un error y genera un mensaje similar al ejemplo siguiente. Para habilitar un documento que no es de confianza para acceder a recursos de confianza, los usuarios deben quitar la protección de Application Guard del documento. 
+* Protección de aplicaciones para Office es un modo protegido que aísla documentos que no son de confianza para que no puedan acceder a recursos corporativos de confianza, una intranet, la identidad del usuario y archivos arbitrarios en el equipo. Como resultado, si un usuario intenta acceder a una característica que tiene una dependencia de dicho acceso, como insertar una imagen de un archivo local en el disco, el acceso produce un error y genera un mensaje similar al ejemplo siguiente. Para habilitar un documento que no es de confianza para acceder a recursos de confianza, los usuarios deben quitar la protección de Application Guard del documento.
 
   :::image type="content" source="../../media/ag09-confirm.png" alt-text="Cuadro de diálogo que indica el mensaje de seguridad y el estado de la característica" lightbox="../../media/ag09-confirm.png":::
 
@@ -206,7 +205,7 @@ También puede configurar Microsoft Defender para Office 365 para que funcionen 
   > Aconseje a los usuarios que solo quiten la protección si confían en el archivo y su origen o de dónde procede.
 
 * Cuando un documento que no es de confianza se almacena en una ubicación de confianza, el documento hereda la confianza de la ubicación. Normalmente, el almacenamiento en la nube de una organización se identifica como una ubicación de confianza.
-  
+
 * El contenido activo de documentos como macros y controles de ActiveX está deshabilitado en Application Guard para Office. Los usuarios deben quitar la protección de Application Guard para habilitar el contenido activo.
 
 * Archivos que no son de confianza de recursos compartidos de red o archivos compartidos desde OneDrive, OneDrive para la Empresa o SharePoint En línea de una organización diferente abierta como de solo lectura en Application Guard. Los usuarios pueden guardar una copia local de dichos archivos para seguir trabajando en el contenedor o quitar la protección para trabajar directamente con el archivo original.
@@ -242,4 +241,4 @@ Cuando se cumpla esta heurística, Office creará previamente un contenedor de A
 * Los archivos CSV y HTML no se admiten en este momento.
 * Protección de aplicaciones para Office actualmente no funciona con volúmenes comprimidos NTFS. Si ve un error "ERROR_VIRTUAL_DISK_LIMITATION", intente descomprimir el volumen.
 * Las actualizaciones de .NET pueden provocar que los archivos no se abran en Application Guard. Como solución alternativa, los usuarios pueden reiniciar su dispositivo cuando se den cuenta de este error. Obtenga más información sobre el problema en [Recepción de un mensaje de error al intentar abrir Protección de aplicaciones de Windows Defender o Espacio aislado de Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
-* Consulte [Preguntas más frecuentes: Protección de aplicaciones de Microsoft Defender para obtener información adicional.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 
+* Consulte [Preguntas más frecuentes: Protección de aplicaciones de Microsoft Defender para obtener información adicional.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard)

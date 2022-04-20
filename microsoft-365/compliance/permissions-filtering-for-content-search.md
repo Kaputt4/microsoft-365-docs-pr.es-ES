@@ -20,14 +20,16 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Use el filtrado de permisos de búsqueda para permitir que los administradores de eDiscovery busquen solo un subconjunto de buzones y sitios de la organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5c746c5a608c06adab92f98b1bf4790675659fdc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 20a13b99e7ec851669aaab483a049bdea95973bd
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942235"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994092"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>Configuración del filtrado de permisos para eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede usar el filtrado de permisos de búsqueda para permitir que un administrador de exhibición de documentos electrónicos busque solo un subconjunto de buzones y sitios de su organización. También puede utilizar el filtrado de permisos para permitir que ese mismo administrador de exhibición de documentos electrónicos busque solo contenido de los buzones o los sitios que cumpla unos criterios concretos de búsqueda. Por ejemplo, puede permitir que un administrador de exhibición de documentos electrónicos busque solo en los buzones de usuarios de un departamento o una ubicación en concreto. Para ello, cree un filtro que use un filtro de destinatario compatible para limitar qué buzones puede buscar un usuario o grupo de usuarios específicos. También puede crear un filtro que especifique qué contenido de buzón de correo puede buscar un usuario. Para ello, debe crear un filtro que utilice una propiedad de mensaje que pueda buscarse. De forma similar, puede permitir que un administrador de exhibición de documentos electrónicos busque solo sitios SharePoint específicos de su organización. Para hacerlo, debe crear un filtro que limite en qué sitio puede buscarse. También puede crear un filtro que especifique qué contenido del sitio puede buscarse. Para ello, debe crear un filtro que utilice una propiedad de sitio que pueda buscarse.
 

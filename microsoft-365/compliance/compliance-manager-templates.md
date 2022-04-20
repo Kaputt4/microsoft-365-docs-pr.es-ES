@@ -1,5 +1,5 @@
 ---
-title: Trabajar con plantillas de evaluación en el Administrador de cumplimiento de Microsoft
+title: Trabajar con plantillas de evaluación en el Administrador de cumplimiento de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,20 +17,22 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Comprenda cómo usar y administrar plantillas para crear evaluaciones en Microsoft Compliance Manager. Cree y modifique plantillas mediante un archivo Excel con formato.
-ms.openlocfilehash: 0dc28eb3058e3b929da47d947b29c7ba7be41111
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Comprenda cómo usar y administrar plantillas para compilar evaluaciones en Microsoft Purview Compliance Manager. Cree y modifique plantillas mediante un archivo Excel con formato.
+ms.openlocfilehash: 009b2d742ab135abcde7c3ab73f9ec15c05c8f29
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759001"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972791"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>Más información sobre las plantillas de evaluación en el Administrador de cumplimiento
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **En este artículo:** Comprenda **cómo funcionan las plantillas** y **cómo administrarlas** desde la página de plantillas de evaluación. Obtenga instrucciones para **crear** nuevas plantillas, **ampliar** y **modificar** plantillas existentes, **dar formato a los datos de plantilla con Excel** y exportar **informes** de plantillas.
 
 > [!IMPORTANT]
-> Las plantillas de evaluación que están disponibles para su organización dependen del contrato de licencia. [Revise los detalles](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> Las plantillas de evaluación que están disponibles para su organización dependen del contrato de licencia. [Revise los detalles](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## <a name="templates-overview"></a>Introducción a las plantillas
 
@@ -78,7 +80,7 @@ GCC cuentas high y DOD deben comprar licencias de plantilla a través de [licenc
 
 Para probar las plantillas Premium antes de realizar una compra, también puede adquirir versiones de prueba de las licencias. Las licencias de prueba son válidas para hasta 25 plantillas durante 90 días. Una vez que obtenga la licencia de prueba, las plantillas deben estar disponibles en el inquilino en un plazo de 48 horas.
 
-Si su organización tiene una licencia comercial para el Administrador de cumplimiento, puede aprender a iniciar la evaluación en [Acerca de la evaluación gratuita para las evaluaciones premium de Microsoft Compliance Manager](compliance-easy-trials-compliance-manager-assessments.md).
+Si su organización tiene una licencia comercial para el Administrador de cumplimiento, puede aprender a iniciar la evaluación en [Acerca de la evaluación gratuita para las evaluaciones premium de Microsoft Purview Compliance Manager](compliance-easy-trials-compliance-manager-assessments.md).
 
 Si su organización tiene una licencia de GCC o DOD, elija el vínculo de prueba adecuado para su organización:
 

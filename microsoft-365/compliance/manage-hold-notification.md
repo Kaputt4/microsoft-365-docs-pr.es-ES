@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use el flujo de trabajo de comunicaciones en eDiscovery (Premium) para realizar un seguimiento del estado de las notificaciones de suspensión legal y, si es necesario, actualizarlas y reenviarlas.
-ms.openlocfilehash: 3e0ab93b469d2ae80d9416137425b7f2876442c1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 83e5331aaea59893f06cfa0629d627e500cfe1b1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946141"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996182"
 ---
 # <a name="manage-hold-notifications"></a>Administrar las notificaciones de retención
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Después de iniciar el flujo de trabajo de notificación de suspensión legal, puede usar el flujo de trabajo de comunicaciones en Microsoft Purview eDiscovery (Premium) para realizar un seguimiento del estado de las comunicaciones. La pestaña Comunicaciones contiene una lista de todas las notificaciones dentro del caso de eDiscovery (Premium). Puede ver detalles como el número de custodios que se han asignado o que han confirmado el aviso.
 

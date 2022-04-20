@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de Salesforce Chatter desde Veritas a Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 695702d33817fce96cd54e7abf646e1687834f0d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bfaf6de15da6707f9ce5a3ff15c255e8a605af87
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950619"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994598"
 ---
 # <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>Configuración de un conector para archivar datos de Salesforce Chatter
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos desde la plataforma Salesforce Chatter a buzones de correo de usuario de su organización Microsoft 365. Veritas proporciona un conector de [Salesforce Chatter](http://globanet.com/chatter/) que captura elementos del origen de datos de terceros e importa esos elementos a Microsoft 365. El conector convierte el contenido, como chats, datos adjuntos y publicaciones de Salesforce Chatter, en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 
