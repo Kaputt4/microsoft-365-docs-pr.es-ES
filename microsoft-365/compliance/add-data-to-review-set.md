@@ -18,14 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo agregar resultados de búsqueda o ejemplos de esos resultados de búsqueda a un conjunto de revisión de casos de eDiscovery (Premium).
-ms.openlocfilehash: 7b754aa09390d041de44cd2e82ed9d1f93eede7e
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: d41697f18360b277b060dd537020f9e04ef341ec
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973759"
+ms.locfileid: "64997744"
 ---
 # <a name="add-search-results-to-a-review-set"></a>Agregar los resultados de búsqueda a un conjunto de revisión
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cuando esté satisfecho con los resultados de una búsqueda y esté listo para revisar y analizar esos resultados de búsqueda, puede agregarlos a un conjunto de revisión en el caso. Copiar los datos originales en el conjunto de revisión también facilita el proceso de revisión y análisis, ya que proporciona herramientas de análisis avanzadas, como la detección de temas, la detección casi duplicada y la identificación de subprocesos de correo electrónico. También puede agregar datos de orígenes de datos que no son Microsoft 365 a un conjunto de revisión para que pueda revisar esos datos, además de los datos que recopila de Microsoft 365.
 

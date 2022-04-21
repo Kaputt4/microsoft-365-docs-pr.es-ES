@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de Reuters Dealing de Veritas a Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: 75b44a6ed76908a566edf8cb39c27f25788ce2c1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bbcc148b3e7176975be5e4e5624202a170c90f28
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950707"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999352"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-dealing-data"></a>Configuración de un conector para archivar datos de negociación de Reuters
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector de Veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos desde la plataforma de negociación de Reuters a buzones de usuario de la organización Microsoft 365. Veritas proporciona un conector [de Reuters Dealing](https://globanet.com/reuters-dealing/) configurado para capturar elementos del origen de datos de terceros (de forma regular) y, a continuación, importar esos elementos a Microsoft 365. El conector convierte las comunicaciones de negociación de la cuenta de negociación de Reuters en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 

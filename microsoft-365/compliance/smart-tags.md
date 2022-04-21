@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Las etiquetas inteligentes permiten aplicar las funcionalidades de aprendizaje automático al revisar el contenido en un caso de exhibición de documentos electrónicos (Premium). Use grupos de etiquetas inteligentes para mostrar los resultados de los modelos de detección de aprendizaje automático, como el modelo de privilegios abogado-cliente.
-ms.openlocfilehash: 9fd4a53df00bcb096a885ed311e4fb4ed365725e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1adea2404192b9e715ad021f70ba07f7e64a89d5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934629"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999748"
 ---
 # <a name="set-up-smart-tags-in-ediscovery-premium"></a>Configuración de etiquetas inteligentes en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Las funcionalidades de aprendizaje automático (ML) en microsoft Purview eDiscovery (Premium) pueden ayudarle a hacer que el proceso de decisión sea más eficaz al revisar documentos de casos en un conjunto de revisión. Las etiquetas inteligentes son una manera de llevar las funcionalidades de ML al lugar donde se registran las decisiones: al etiquetar documentos durante la revisión. Al crear un grupo de etiquetas inteligentes, las decisiones que son el resultado del modelo de ML que ha asociado al grupo de etiquetas inteligentes se muestran en línea con las etiquetas del grupo de etiquetas. Esto ayuda a ver la información de resultados de ML en línea al revisar documentos específicos.
 

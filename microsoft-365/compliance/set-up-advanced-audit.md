@@ -20,22 +20,24 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo configurar auditoría (Premium) para que pueda realizar investigaciones forenses cuando las cuentas de usuario están en peligro o para investigar otros incidentes relacionados con la seguridad.
-ms.openlocfilehash: 9e758ce6a830569b007ee024e17abdddbce01f13
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6f4f9953c88b1d994d4f033629cc89a6529fb9de
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945855"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998846"
 ---
 # <a name="set-up-microsoft-purview-audit-premium"></a>Configuración de Microsoft Purview Audit (Premium)
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Si su organización tiene una suscripción y licencias de usuario final que admiten Auditar (Premium), realice los pasos siguientes para configurar y usar las funcionalidades adicionales de Auditoría (Premium).
 
-![Flujo de trabajo para configurar la auditoría (Premium).](../media/AdvancedAuditWorkflow.png)
+![Flujo de trabajo para configurar Auditoría (Premium).](../media/AdvancedAuditWorkflow.png)
 
 ## <a name="step-1-set-up-audit-premium-for-users"></a>Paso 1: Configurar la auditoría (Premium) para los usuarios
 
-Las características de auditoría (Premium), como la capacidad de registrar eventos cruciales como MailItemsAccessed y Send, requieren una licencia E5 adecuada asignada a los usuarios. Además, se debe habilitar la aplicación o el plan de servicio de Auditoría avanzada para estos usuarios. Para comprobar que la aplicación de Auditoría avanzada está asignada a los usuarios, realice estos pasos para cada usuario:
+Las características de auditoría (Premium) como la capacidad para registrar eventos fundamentales, como MailItemsAccessed y Send, requieren una licencia adecuada de E5 asignada a los usuarios. Además, se debe habilitar la aplicación o el plan de servicio de Auditoría avanzada para estos usuarios. Para comprobar que la aplicación de Auditoría avanzada está asignada a los usuarios, realice estos pasos para cada usuario:
 
 1. En el Centro de administración de Microsoft 365, vaya a **UsuariosUsuarios** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**activos**</a> y seleccione un usuario.
 

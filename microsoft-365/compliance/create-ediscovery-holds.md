@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede crear una suspensión asociada a un caso de exhibición de documentos electrónicos (estándar) en Microsoft 365 para conservar el contenido relevante para una investigación o caso legal.
-ms.openlocfilehash: 4448c9b8a55466c0cf626deff6e69acd247a5814
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 87a75923ccc270e7b9802ae5d366dd2930a84d82
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938277"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001244"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede usar un caso de exhibición de documentos electrónicos (estándar) de Microsoft Purview para crear retenciones para conservar el contenido que podría ser relevante para el caso. Puede colocar una suspensión en los buzones de Exchange y OneDrive para la Empresa cuentas de las personas que está investigando en el caso. También puede colocar una suspensión en los buzones y sitios asociados a Microsoft Teams, grupos de Office 365 y grupos de Yammer. Al colocar ubicaciones de contenido en espera, el contenido se conserva hasta que se quita la ubicación del contenido de la suspensión o hasta que se elimina la suspensión.
 
@@ -134,7 +136,7 @@ Las conversaciones que forman parte de un canal de Microsoft Teams se almacenan 
 Como alternativa, las conversaciones que forman parte de la lista chat en Teams (*llamadas chats 1:1 o chats* de *grupo 1:N*) se almacenan en los buzones de los usuarios que participan en el chat. Y los archivos que los usuarios comparten en las conversaciones de chat se almacenan en la cuenta de OneDrive del usuario que comparte el archivo. Por lo tanto, tiene que agregar los buzones de usuario individuales y las cuentas de OneDrive a una suspensión de eDiscovery para conservar las conversaciones y los archivos de la lista de chat. Es una buena idea colocar una suspensión en los buzones de los miembros de un equipo de Microsoft, además de colocar el buzón de equipo y el sitio en espera.
 
 > [!NOTE]
-> Si su organización tiene una implementación híbrida Exchange (o su organización sincroniza una organización de Exchange local con Office 365) y ha habilitado Microsoft Teams, los usuarios locales pueden usar la aplicación de chat Teams y participar en chats 1:1 y chats de grupo 1:N. Estas conversaciones se almacenan en un almacenamiento basado en la nube asociado a un usuario local. Si un usuario local se coloca en una suspensión de eDiscovery, se conservará el contenido de chat Teams en el almacenamiento basado en la nube. Para obtener más información, consulte [Buscar los datos de chat de Teams de usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
+> Si su organización tiene una implementación híbrida Exchange (o su organización sincroniza una organización de Exchange local con Office 365) y ha habilitado Microsoft Teams, los usuarios locales pueden usar la aplicación de chat Teams y participar en chats 1:1 y chats de grupo 1:N. Estas conversaciones se almacenan en un almacenamiento basado en la nube asociado a un usuario local. Si un usuario local se coloca en una suspensión de eDiscovery, se conservará el contenido de chat Teams en el almacenamiento basado en la nube. Para más información, consulte [Buscar los datos de chat de Teams de usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Para obtener más información sobre cómo conservar Teams contenido, consulte [Colocación de un usuario o equipo de Microsoft Teams en suspensión legal](/MicrosoftTeams/legal-hold).
 

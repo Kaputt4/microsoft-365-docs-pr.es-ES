@@ -18,14 +18,16 @@ ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Obtenga información general sobre la fase de evaluación y su rol en la determinación de la riqueza de los problemas durante el entrenamiento de relevancia en Microsoft Purview eDiscovery (Premium).
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 29376b8c71947b1f09bd86de90facef6f73e0fdd
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0fd7a4f23aa2f69dfa598faaa0c75df533356efc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943961"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001332"
 ---
 # <a name="assessment-in-the-relevance-module-in-ediscovery-premium"></a>Evaluación en el módulo Relevancia en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 Microsoft Purview eDiscovery (Premium) permite una evaluación temprana, por ejemplo, para los problemas definidos y los datos importados para un caso. eDiscovery (Premium) permite al experto tomar decisiones sobre un enfoque adoptado y aplicar estas decisiones al proyecto de revisión de documentos.
   

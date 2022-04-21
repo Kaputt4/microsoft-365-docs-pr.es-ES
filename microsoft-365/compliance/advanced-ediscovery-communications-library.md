@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Puede agregar plantillas de comunicaciones de custodio (como una plantilla para la notificación de suspensión) en eDiscovery (Premium) para que se puedan usar en cualquier caso en su organización.
-ms.openlocfilehash: be8311a9687eb4edb9cc44e15264808a2a05a69a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9ac944a3d845a770e35a84adcdc2f1f1dbefd172
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945161"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000606"
 ---
 # <a name="manage-custodian-communications-templates-in-ediscovery-premium"></a>Administrar plantillas de comunicaciones de custodio en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cuando usted u otros usuarios crean una notificación de suspensión u otros tipos de comunicaciones de custodio, tuvo que crear el documento de comunicación desde cero mediante el editor de comunicaciones de la pestaña **Comunicaciones** en un caso de exhibición de documentos electrónicos (Premium). Ahora, hemos publicado una nueva característica que le permite crear plantillas de comunicaciones que se pueden usar para crear comunicaciones en cualquier caso en su organización. Una vez creadas las plantillas de comunicación, están disponibles para usarse en un caso. Esto significa que los asistentes u otros usuarios que crean comunicaciones de custodio no tienen que empezar desde cero para crear una notificación. En su lugar, pueden seleccionar una plantilla para compilar la notificación que se envía a un custodio.
 

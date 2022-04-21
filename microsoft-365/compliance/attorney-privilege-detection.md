@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use el modelo de detección de privilegios abogado-cliente para usar la detección basada en aprendizaje automático de contenido con privilegios al revisar el contenido en un caso de exhibición de documentos electrónicos (Premium) de Microsoft Purview.
-ms.openlocfilehash: ce5cabad4a5487f6e18c1054f5c4d143bac4325e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 477b741cf617179ffd9eb1a4c38230faf5a0fce0
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947173"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997304"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-ediscovery-premium"></a>Configuración de la detección de privilegios de abogado-cliente en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Un aspecto importante y costoso de la fase de revisión de cualquier proceso de exhibición de documentos electrónicos es revisar los documentos para obtener contenido con privilegios. Microsoft Purview eDiscovery (Premium) proporciona detección basada en aprendizaje automático de contenido con privilegios para que este proceso sea más eficaz. Esta característica se denomina *detección de privilegios de abogado-cliente*.
 

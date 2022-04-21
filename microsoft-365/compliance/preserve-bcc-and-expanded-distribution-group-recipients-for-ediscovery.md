@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: In-Place directivas de suspensión, suspensión por juicio y retención de Microsoft 365 le permiten conservar el contenido del buzón para cumplir los requisitos normativos y de exhibición de documentos electrónicos.
-ms.openlocfilehash: a088407277f7ebced3aa69ee9ff807913f9b0c85
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4c3c7b7be98959011473eeafc85f40b19be82fdc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942125"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998516"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conservar los destinatarios de grupos de distribución expandidos y CCO para la exhibición de documentos electrónicos
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 Las retenciones por litigio, las retenciones de eDiscovery y [las directivas de retención de Microsoft 365](./retention.md) (creadas en el portal de cumplimiento de Microsoft Purview) le permiten conservar el contenido del buzón para cumplir los requisitos normativos y de eDiscovery. De forma predeterminada, la información sobre los destinatarios que se abordan directamente en los campos To y Cc de un mensaje se incluye en todos los mensajes. Pero su organización puede requerir la capacidad de buscar y reproducir detalles sobre todos los destinatarios de un mensaje. Incluye lo siguiente:
   
@@ -84,7 +86,7 @@ R. No. Esta información no se incluye en los encabezados del mensaje y no está
 
  **Q. ¿Cómo puedo asegurarme de que los destinatarios del grupo de distribución expandido siempre se conserven?**
 
-R. Para asegurarse de que los miembros del grupo de distribución expandido siempre se conservan con un mensaje, [coloque todos los buzones en espera](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold) o cree una directiva de retención de Microsoft 365 para toda la organización.
+A. Para asegurarse de que los miembros del grupo de distribución expandido siempre se conservan con un mensaje, [coloque todos los buzones en espera](/Exchange/policy-and-compliance/holds/place-all-mailboxes-on-hold) o cree una directiva de retención de Microsoft 365 para toda la organización.
 
  **P. ¿Qué tipos de grupos se admiten?**
 

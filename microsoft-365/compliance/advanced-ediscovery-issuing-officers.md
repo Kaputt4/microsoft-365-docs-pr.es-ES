@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Puede agregar oficiales emisores de toda la organización en eDiscovery (Premium) para que se puedan agregar a cualquier comunicación de custodia en cualquier caso en su organización.
-ms.openlocfilehash: 076e6ea8b8dbef18c6c34221937a039fc43fad75
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f82d5359a90e21203c2ff882ceb831cc1630e008
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943005"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000562"
 ---
 # <a name="manage-issuing-officers-in-ediscovery-premium"></a>Administración de agentes emisores en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cuando usted u otros usuarios crean una notificación de suspensión u otro tipo de comunicación que se envía a un usuario que es un custodio en caso de que, en caso, tiene que especificar un oficial emisor. La notificación se envía al custodio en nombre del oficial emisor especificado. Por ejemplo, un asistente legal de su organización podría ser responsable de crear y enviar notificaciones de suspensión a los custodios en un caso. En este escenario, el asistente legal puede especificar un abogado de la organización como oficial emisor. Quién se puede especificar como oficial emisor? Hay dos tipos de usuarios que se pueden seleccionar como emisores para una comunicación de custodio:
 

@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo ver e interpretar el estado de entrenamiento de relevancia y los resultados de los problemas de casos en eDiscovery (Premium).
-ms.openlocfilehash: 53f1fa12849651cd01172a320eaa014614634e92
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 72e12fe54b30c3d766f7a198e5e3417ff9d48a22
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935530"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000958"
 ---
 # <a name="track-relevance-analysis-in-ediscovery-premium"></a>Seguimiento del análisis de relevancia en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 En Microsoft Purview eDiscovery (Premium), la pestaña Seguimiento de relevancia muestra la validez calculada del entrenamiento de relevancia realizado en la pestaña Etiqueta e indica el siguiente paso que se debe realizar en el proceso de entrenamiento iterativo en Relevancia. 
   

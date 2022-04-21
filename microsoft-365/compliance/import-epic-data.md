@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de registros electrónicos de atención sanitaria (EHR) del sistema Epic de su organización a Microsoft 365. Esto le permite usar datos de EPIC EHR en directivas de administración de riesgos internos para ayudarle a detectar la actividad de acceso no autorizado a los datos de los pacientes por parte de los empleados.
-ms.openlocfilehash: ce1e56d61d7930d5f604f52edc68cf480f6daa1a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1dfcedbc6242f16ce476dddd642567bef69c966f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932031"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000144"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Configuración de un conector para importar datos de auditoría de Epic EHR (versión preliminar)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede configurar un conector de datos en el portal de cumplimiento de Microsoft Purview para importar registros de auditoría para la actividad del usuario en el sistema Epic Electronic Healthcare Records (EHR) de su organización. Los registros de auditoría del sistema EPIC EHR incluyen registros de eventos relacionados con el acceso a los registros de salud de un paciente. Los registros de auditoría de EPIC EHR pueden ser utilizados por la [Microsoft 365 solución de administración de riesgos internos](insider-risk-management.md) para ayudar a proteger su organización frente al acceso no autorizado a la información del paciente.
 

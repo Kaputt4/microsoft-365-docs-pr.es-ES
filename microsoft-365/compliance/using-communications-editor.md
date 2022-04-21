@@ -15,28 +15,30 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Use el Editor de comunicaciones para cambiar el texto y combinar variables de campo al dar formato al contenido.
+description: Use el Editor de comunicaciones para cambiar el texto y combinar variables de campo al aplicar formato al contenido.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: aceebf9f8a19448c05c137f668c2bca5db2d99bd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6377da0dbb89963fdf25610c638e6f5ce4ccfd70
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205982"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999660"
 ---
 # <a name="use-the-communications-editor"></a>Usar el editor de comunicaciones
 
-A medida que defina el contenido del portal, las notificaciones de retención legal y los avisos o escalaciones relacionados, puede usar el Editor de comunicaciones para dar formato y personalizar dinámicamente el contenido.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+A medida que defina el contenido del portal, las notificaciones de suspensión legal y los avisos o escalaciones relacionados, puede usar el Editor de comunicaciones para dar formato y personalizar dinámicamente el contenido.
 
 ## <a name="rich-text-editor"></a>Editor de texto enriquecido
 
-El Editor de comunicaciones permite al usuario personalizar el texto con las opciones del editor. Por ejemplo, los usuarios pueden cambiar tipos de fuentes, crear listas con viñetas, resaltar contenido y mucho más.
+El Editor de comunicaciones permite al usuario personalizar el texto mediante las opciones del editor. Por ejemplo, los usuarios pueden cambiar los tipos de fuente, crear listas con viñetas, resaltar contenido y mucho más.
 
 ## <a name="merge-field-variables"></a>Combinar variables de campo
 
-Puede usar variables de combinación de correo electrónico desde el Editor de comunicaciones para insertar atributos de custodia personalizados en el texto del cuerpo de una comunicación. Cuando se envía al custodio, el campo de combinación se rellenará con el campo correspondiente. Por ejemplo, cuando se envía al custodio John Smith, el campo de combinación [Nombre del custodio] se traduciría con el nombre correspondiente.
+Puede usar variables de combinación de correo electrónico desde el Editor de comunicaciones para insertar atributos de custodio personalizados en el texto del cuerpo de una comunicación. Cuando se envía al custodio, el campo de combinación se rellenará con el campo correspondiente. Por ejemplo, cuando se envía al custodio John Smith, el campo de combinación [Nombre del custodio] se traduciría con el nombre correspondiente.
 
-Puede usar los campos de combinación de correo electrónico seleccionando los **iconos** del campo Combinar en la parte superior del control del editor de texto enriquecido. El marcador de posición se agregará en función de la ubicación del cursor de los usuarios.
+Para usar los campos de combinación de correo electrónico, seleccione los iconos **De combinar campos** en la parte superior del control del editor de texto enriquecido. El marcador de posición se agregará en función de la ubicación del cursor de los usuarios.
 
 ### <a name="list-of-merge-field-variables"></a>Lista de variables de campo de combinación
 
@@ -46,9 +48,9 @@ Puede usar los campos de combinación de correo electrónico seleccionando los *
 
 |Nombre del campo|Detalles del campo|
 |---|---|
-|Nombre para mostrar|Nombre y apellidos del custodio.|
-|Vínculo de confirmación|Un vínculo personalizado para registrar el acuse de recibo de cada custodio.|
-|Vínculo portal|Vínculo personalizado para el Portal de cumplimiento del custodio.|
-|Oficial emisor|La dirección de correo electrónico del oficial emisor especificado.|
-|Fecha de emisión|La fecha en que se emitió el aviso (UTC).|
+|Nombre para mostrar|El nombre y apellidos del custodio.|
+|Vínculo de confirmación|Un vínculo personalizado para registrar la confirmación de cada custodio.|
+|Vínculo del portal|Un vínculo personalizado para el portal de cumplimiento del custodio.|
+|Oficial emisor|Dirección de correo electrónico del emisor especificado.|
+|Fecha de emisión|Fecha en que se emitió el aviso (UTC).|
 |

@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo administrar conjuntos de revisión para poder analizar, consultar, ver, etiquetar y exportar datos en un caso de eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 60e43d4d4983dd5171ed38f26096fba979c0f98c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 64970cb3302c47dbab394b974bf1df8358ad3755
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935596"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999063"
 ---
 # <a name="manage-review-sets-in-ediscovery-premium"></a>Administrar conjuntos de revisión en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Los conjuntos de revisión son un conjunto estático de documentos donde puede analizar, consultar, ver, etiquetar y exportar datos en un caso. Para obtener más información sobre cómo realizar estas tareas, consulte:
 
@@ -59,4 +61,4 @@ Hay tres maneras diferentes de agregar datos a un conjunto de revisión en un ca
 3. [Agregar datos a un conjunto de revisión desde otro conjunto de revisión](add-data-to-review-set-from-another-review-set.md)
 
 > [!NOTE]
-> No puede eliminar elementos de un conjunto de revisión y no puede eliminar conjuntos de revisión de un caso. Para eliminar un conjunto de revisión (y eliminar los datos del mismo), debe eliminar el caso de exhibición de documentos electrónicos (Premium) en el que se encuentra el conjunto de revisión. Para obtener más información, vea [Cerrar o eliminar un caso de exhibición de documentos electrónicos (Premium).](close-or-delete-case.md)
+> No puede eliminar elementos de un conjunto de revisión y no puede eliminar conjuntos de revisión de un caso. Para eliminar un conjunto de revisión (y eliminar los datos del mismo), debe eliminar el caso de exhibición de documentos electrónicos (Premium) en el que se encuentra el conjunto de revisión. Para más información, consulte [Cerrar o eliminar un caso de eDiscovery (Premium)](close-or-delete-case.md).

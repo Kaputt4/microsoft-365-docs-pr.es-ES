@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Los administradores pueden configurar un conector de datos para importar datos de empleados desde el sistema de recursos humanos (RR. HH.) de su organización para Microsoft 365. Esto le permite usar datos de RR. HH. en directivas de administración de riesgos internos para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: e1539661c987de8642639df777602fbcf05bdcc4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 81ee1ae3841c4b30f7159d344a195d924d49030c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944819"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999968"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Configurar un conector para importar datos de RR.HH.
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede configurar un conector de datos en el portal de cumplimiento de Microsoft Purview para importar datos de recursos humanos (RR. HH.) relacionados con eventos como la renuncia de un usuario o un cambio en el nivel de trabajo de un usuario. A continuación, la [solución de administración de riesgos internos](insider-risk-management.md) puede usar los datos de RR. HH. para generar indicadores de riesgo que pueden ayudarle a identificar posibles actividades malintencionadas o robos de datos por parte de los usuarios de su organización.
 

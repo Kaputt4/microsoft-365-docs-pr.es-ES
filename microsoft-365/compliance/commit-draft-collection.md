@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Después de crear e iterar en una colección de borradores, puede confirmarla en un conjunto de revisión. Al confirmar una colección de borradores, los elementos recopilados se agregan a la revisión establecida en el caso. Una vez que los elementos recopilados están en el conjunto de revisión, puede analizarlos, revisarlos y exportarlos.
-ms.openlocfilehash: 5637d97020d7fb086914a6debdaffc8050772828
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f908d17d804487cd5e7e93085e418f9a94915c8e
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940299"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997942"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-ediscovery-premium"></a>Confirmación de una colección de borradores en un conjunto de revisión en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cuando esté satisfecho con los elementos que ha recopilado en una colección de borradores y esté listo para analizarlos, etiquetarlos y revisarlos, puede agregar una colección a un conjunto de revisión en el caso. Al confirmar una colección de borradores en un conjunto de revisión, los elementos recopilados se copian de su ubicación de contenido original en Microsoft 365 a un conjunto de revisión. Un conjunto de revisión es una ubicación Azure Storage segura y proporcionada por Microsoft en la nube de Microsoft.
 

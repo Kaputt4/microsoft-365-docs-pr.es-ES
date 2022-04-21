@@ -21,14 +21,16 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo importar y archivar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos para Microsoft 365 buzones.
-ms.openlocfilehash: 0588ab242f2d198c486b7ce0318939e204076421
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 820c4e2fb92720940a8b4f207d43aea649ef16e7
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934959"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997260"
 ---
 # <a name="learn-about-connectors-for-third-party-data"></a>Más información sobre los conectores para datos de terceros
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365 permite a los administradores usar conectores de datos para importar y archivar datos que no son de Microsoft, datos de terceros de plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos, en buzones de su organización Microsoft 365. Una ventaja principal del uso de conectores de datos para importar y archivar datos de terceros en Microsoft 365 es que puede aplicar varias soluciones de Microsoft Purview a los datos después de importarlos. Esto le ayuda a asegurarse de que los datos de su organización que no son de Microsoft cumplen con las regulaciones y estándares que afectan a su organización.
 
@@ -205,7 +207,7 @@ Puede aplicar una [directiva de retención](retention.md) a los buzones de usuar
 
 La característica [de administración de registros](records-management.md) de Microsoft 365 permite declarar datos de terceros como un registro. Esto lo pueden hacer manualmente los usuarios que aplican una etiqueta de retención que marca los datos de terceros en su buzón como registro. También puede aplicar automáticamente etiquetas de retención mediante la identificación de información confidencial, palabras clave o tipos de contenido en datos de terceros.
 
-### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
+### <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
 
 Puede usar [cumplimiento de comunicaciones](communication-compliance.md) para examinar datos de terceros a fin de asegurarse de que cumplen los estándares de datos de su organización. Para ello, detecte, capture y tome medidas correctivas para los mensajes inadecuados de su organización. Por ejemplo, puede supervisar los datos de terceros que importa para el lenguaje ofensivo, la información confidencial y el cumplimiento normativo.
 

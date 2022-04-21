@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de MS SQL Database. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: d1c33a57fbbf9fba5a097b0affbb7e5fcea21a55
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0da93ade15c8cf5ddf758f16da89b46553fb3c83
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937221"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997521"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-ms-sql-database"></a>Configuración de un conector para archivar datos de MS SQL Database
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector de Veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de MS SQL Database a buzones de usuario de su organización de Microsoft 365. Veritas proporciona un conector MS SQL Database Importer configurado para capturar elementos de una base de datos mediante un archivo de configuración XML e importarlos a Microsoft 365. El conector convierte el contenido de MS SQL Database a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
 

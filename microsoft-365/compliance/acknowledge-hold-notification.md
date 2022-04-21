@@ -18,14 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar eDiscovery (Premium) para enviar y realizar un seguimiento de las notificaciones de suspensión legal a través del correo electrónico, así como supervisar el estado de las obligaciones.
-ms.openlocfilehash: 4be0781a273f842c043276a19688f36b96cfdb28
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: db13ed4a148238dbb677ece55999fd3fb907a1a1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947415"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999594"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Confirmar una notificación de retención
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Al responder a una solicitud o investigación reglamentaria, es posible que tenga que informar a los custodios de su obligación de conservar la información almacenada electrónicamente (ESI) y cualquier material que pueda ser relevante para un asunto legal activo o inminente. Una vez enviados, los equipos legales deben saber que cada custodio ha recibido, leído, entendido y aceptado seguir las instrucciones dadas.
 

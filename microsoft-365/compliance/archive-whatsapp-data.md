@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos de WhatsApp en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 507927fb2dd19eb9c1bef745db8e85e1d4e017e8
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e473e9a83bd035209cbc2cb07aa3fb93386e47d9
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934937"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000452"
 ---
 # <a name="set-up-a-connector-to-archive-whatsapp-data"></a>Configuración de un conector para archivar datos de WhatsApp
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use el conector TeleMessage en el portal de cumplimiento de Microsoft Purview para importar y archivar llamadas de WhatsApp, chats, datos adjuntos, archivos y mensajes eliminados. Después de configurar y configurar un conector, se conecta a la cuenta de TeleMessage de su organización una vez al día e importa la comunicación móvil de los empleados mediante TeleMessage WhatsApp Teléfono Archiver o TeleMessage WhatsApp Cloud Archiver a buzones de Microsoft 365.
 

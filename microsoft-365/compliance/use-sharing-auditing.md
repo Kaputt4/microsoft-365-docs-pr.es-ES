@@ -21,14 +21,16 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: El administrador puede aprender a usar la auditoría de uso compartido en el registro de auditoría de Microsoft 365 para identificar los recursos compartidos con usuarios fuera de su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7643dfae2e7e9fa871976cfe92bdf7028e756d3e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 785fdd2628a1e0bea9fd0361e7843939bf7b84a3
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934497"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999682"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>Usar el uso compartido de auditoría en el registro de auditoría
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 El uso compartido es una actividad clave en SharePoint Online y OneDrive para la Empresa, y se usa ampliamente en las organizaciones. Los administradores pueden usar la auditoría de uso compartido en el registro de auditoría para determinar cómo se usa el uso compartido en su organización. 
   

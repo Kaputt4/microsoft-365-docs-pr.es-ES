@@ -20,14 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo configurar eDiscovery (Premium) para que pueda empezar a crear y administrar casos. También describe las suscripciones y licencias de Microsoft necesarias. Después de completar algunos pasos rápidos, la herramienta eDiscovery (Premium) está lista para usarse.
-ms.openlocfilehash: 29805066c2db26aca6992dc34ad8bf8c0966ceb7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dff99ab432ce5f2380a6fd5a81e855c946146c8c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939925"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997722"
 ---
 # <a name="set-up-microsoft-purview-ediscovery-premium"></a>Configuración de microsoft Purview eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview eDiscovery (Premium) proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, revisar, analizar y exportar datos que respondan a las investigaciones internas y externas de su organización. No se necesita nada para implementar eDiscovery (Premium), pero hay algunas tareas de requisitos previos que un administrador de TI y un administrador de eDiscovery deben completar antes de que la organización pueda empezar a crear y usar casos de eDiscovery (Premium) para administrar las investigaciones.
 

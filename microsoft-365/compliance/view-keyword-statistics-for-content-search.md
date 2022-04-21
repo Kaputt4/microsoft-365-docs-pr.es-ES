@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar la característica de estadísticas de búsqueda para mostrar estadísticas de búsquedas de contenido y búsquedas asociadas a un caso de exhibición de documentos electrónicos (estándar) en el portal de cumplimiento de Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e057a6e4997240dbaa4b9b7975274c5f3eab7589
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 5d35616823988562b3b075e7a513c8a98a4e3281
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947107"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000826"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>Ver estadísticas de los resultados de búsqueda de eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Después de crear y ejecutar una búsqueda de contenido o una búsqueda asociada a un caso de exhibición de documentos electrónicos (estándar) de Microsoft Purview, puede ver estadísticas sobre los resultados de búsqueda estimados. Esto incluye un resumen de los resultados de la búsqueda (similar al resumen de los resultados de búsqueda estimados que se muestran en la página de control flotante de búsqueda), las estadísticas de consulta, como el número de ubicaciones de contenido con elementos que coinciden con la consulta de búsqueda y la identidad de las ubicaciones de contenido que tienen los elementos más coincidentes.
   

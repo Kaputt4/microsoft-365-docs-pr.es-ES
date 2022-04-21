@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Use la herramienta de comunicaciones en un caso de exhibición de documentos electrónicos (Premium) para enviar, recopilar y realizar un seguimiento de las notificaciones de suspensión legal.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f82e61b618c351f4dac05ce2559eab047f0e70a7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ca5c895ca98aafb67fd728e137f0d69dd8b98f8f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945073"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997964"
 ---
 # <a name="create-a-legal-hold-notice"></a>Creación de un aviso de suspensión legal
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Mediante las comunicaciones de custodios de eDiscovery (Premium), las organizaciones pueden administrar su flujo de trabajo en torno a la comunicación con los custodios. A través de la herramienta de comunicaciones, los equipos legales pueden enviar, recopilar y realizar un seguimiento sistemático de las notificaciones de suspensión legal. El proceso de creación flexible también permite a los equipos personalizar el flujo de trabajo de notificación de suspensión y el contenido de los avisos enviados a los custodios.
 

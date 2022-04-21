@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo usar la herramienta de administración de custodios integrada en Microsoft Purview eDiscovery (Premium) para coordinar los flujos de trabajo e identificar los orígenes de datos pertinentes en un caso.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7da45eca9e57ef64c9272c89e24c21a20dc5af80
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 46277524f616e91e89e9bccce1fdd3c3109b3d86
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935816"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999484"
 ---
 # <a name="add-custodians-to-an-ediscovery-premium-case"></a>Agregar custodios a un caso de exhibición de documentos electrónicos (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use la herramienta integrada de administración de custodios de Microsoft Purview eDiscovery (Premium) para coordinar los flujos de trabajo en torno a la administración de custodios e identificar orígenes de datos relevantes y custodiales asociados a un caso. Al agregar un custodio, el sistema puede identificar y colocar automáticamente una suspensión en su buzón de Exchange y OneDrive para la Empresa cuenta. Durante el proceso de detección de la investigación, también puede identificar otros orígenes de datos (como buzones, sitios o Teams) a los que un custodio accedió o contribuyó. En esta situación, puede usar la herramienta de administración de custodios para asociar esos orígenes de datos a un custodio específico. Después de agregar custodios a un caso y asociar otro origen de datos con ellos, puede conservar rápidamente los datos y buscar en los datos de custodia.
 

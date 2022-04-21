@@ -16,14 +16,16 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector nativo para importar y archivar datos de Twitter en Microsoft 365. Después de importar estos datos a Microsoft 365, puede usar características de cumplimiento, como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar la gobernanza de los datos de Twitter de su organización.
-ms.openlocfilehash: e1ae371d59ef21955612c89b9e0bffc5c24d5950
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6bf801d7c3443385ee0a2656753dcf069ac6aebc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950211"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997150"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Implementación de un conector para archivar datos de Twitter
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Este artículo contiene el proceso paso a paso para implementar un conector que usa el servicio de importación de Office 365 para importar datos de la cuenta de Twitter de la organización a Microsoft 365. Para obtener información general de alto nivel de este proceso y una lista de los requisitos previos necesarios para implementar un conector de Twitter, consulte [Configuración de un conector para archivar datos de Twitter ](archive-twitter-data-with-sample-connector.md).
 

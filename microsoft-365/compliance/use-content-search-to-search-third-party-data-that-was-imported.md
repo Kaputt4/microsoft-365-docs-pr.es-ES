@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Use la herramienta eDiscovery de búsqueda de contenido para buscar elementos importados a buzones de Microsoft 365 desde un origen de datos de terceros mediante la creación de consultas.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 29c033f7d31aca14b527aa6b7fd83d533a5875e7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9a6a7bcdf0cbd7f14e20cc8400e5d834dc7da0a1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939463"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000914"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>Uso de búsqueda de contenido para buscar datos de terceros importados por un conector de asociado personalizado
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede usar la [herramienta eDiscovery de búsqueda de contenido](content-search.md) en el portal de cumplimiento de Microsoft Purview para buscar elementos importados a buzones de Microsoft 365 desde un origen de datos de terceros. Puede crear una consulta para buscar en todos los elementos de datos importados de terceros o puede crear una consulta para buscar elementos de datos de terceros específicos. Además, también puede crear una directiva de retención basada en consultas o una suspensión de exhibición de documentos electrónicos basada en consultas para conservar datos de terceros.
   

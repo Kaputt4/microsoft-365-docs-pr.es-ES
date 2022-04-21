@@ -21,14 +21,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 17f0cbbd62d45a3e9b2b41d1baf72224b9433d70
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: bd7ab3040b261fb7c664d92b73a069cc8ba6e3b5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973671"
+ms.locfileid: "64997326"
 ---
 # <a name="learn-about-communication-compliance"></a>Obtener más información sobre el cumplimiento de las comunicaciones
+
+> [!TIP]
+> *¿Sabía que puede probar las versiones premium de las nueve soluciones de Microsoft Purview de forma gratuita?* Use la prueba de soluciones de Purview de 90 días para explorar cómo las sólidas funcionalidades de Purview pueden ayudar a su organización a satisfacer sus necesidades de cumplimiento. Microsoft 365 E3 y Office 365 E3 los clientes pueden empezar ahora en el centro de pruebas del [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Obtenga información sobre [quién puede registrarse y los términos de prueba](compliance-easy-trials.md).
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 

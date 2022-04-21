@@ -21,14 +21,16 @@ description: Obtenga información sobre cómo colocar retenciones en los custodi
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkMAC
-ms.openlocfilehash: 16a4932993a652d8d7d71be78fd23a238fc90759
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6ec8e31fddba430a7a148eea5c8b07eb35872641
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939661"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996776"
 ---
 # <a name="manage-holds-in-ediscovery-premium"></a>Administrar retenciones en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede usar un caso de exhibición de documentos electrónicos de Microsoft Purview (Premium) para crear retenciones para conservar el contenido que podría ser relevante para su caso. Con las funcionalidades de suspensión de eDiscovery (Premium), puede colocar retenciones en los custodios y sus orígenes de datos. Además, puede colocar una suspensión sin custodia en buzones y sitios de OneDrive para la Empresa. También puede colocar una suspensión en el buzón de grupo, SharePoint sitio y OneDrive para la Empresa sitio para un grupo de Microsoft 365. Del mismo modo, puede colocar una suspensión en el buzón de correo y el sitio asociados a Microsoft Teams. Cuando coloca las ubicaciones de contenido en espera, el contenido se mantiene hasta que libera al custodio, quita una ubicación de datos específica o elimina por completo la directiva de retención.
 

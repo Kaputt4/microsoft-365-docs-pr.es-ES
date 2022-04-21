@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 37c0ae081223f321c87cafa18d0acbbbc6adb511
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3335e437a659eab984943adda31abdb344908c1c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942147"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997656"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Entrenamiento de un modelo de codificación predictiva (versión preliminar)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Después de crear un modelo de codificación predictiva en Microsoft Purview eDiscovery (Premium), el siguiente paso consiste en realizar la primera ronda de entrenamiento para entrenar el modelo sobre el contenido relevante y no relevante del conjunto de revisión. Después de completar la primera ronda de entrenamiento, puede realizar rondas de entrenamiento posteriores para mejorar la capacidad del modelo de predecir contenido relevante y no relevante.
 

@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Use búsqueda de contenido y el script de este artículo para buscar un grupo de usuarios en los buzones y OneDrive para la Empresa sitios.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14c518c4450b01e387f84b4211da8d0eb346fe7a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1bbfc26c2193c1bf31e081b8ded9e2e2baf56743
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949275"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998824"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Usar búsqueda de contenido para buscar una lista de usuarios en el buzón y el sitio de OneDrive para la Empresa
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 PowerShell del Centro de cumplimiento de seguridad & proporciona una serie de cmdlets que permiten automatizar tareas relacionadas con eDiscovery que consumen mucho tiempo. Actualmente, la creación de una búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para buscar un gran número de ubicaciones de contenido del custodio tarda tiempo y preparación. Antes de crear una búsqueda, debe recopilar la dirección URL de cada sitio OneDrive para la Empresa y, a continuación, agregar cada buzón y OneDrive para la Empresa sitio a la búsqueda. En futuras versiones, esto será más fácil de hacer en el portal de cumplimiento. Hasta entonces, puede usar el script de este artículo para automatizar este proceso. Este script le pide el nombre del dominio MySite de su organización (por ejemplo, **contoso** en la dirección URL `https://contoso-my.sharepoint.com`), una lista de direcciones de correo electrónico de usuario, el nombre de la nueva búsqueda de contenido y la consulta de búsqueda que se va a usar. El script obtiene la dirección URL de OneDrive para la Empresa para cada usuario de la lista y, a continuación, crea e inicia una búsqueda de contenido que busca en el buzón y OneDrive para la Empresa sitio para cada usuario de la lista, mediante la consulta de búsqueda que proporcione.
   

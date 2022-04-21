@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: El etiquetado de documentos en un conjunto de revisión ayuda a quitar contenido innecesario e identificar contenido relevante en un caso de exhibición de documentos electrónicos (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c1d30cdefe0ae93fe7c87a1c5ecc9712d80bc3fb
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6130a50c966fe23b1218c98efde381dc64fcb009
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64931613"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996723"
 ---
 # <a name="tag-documents-in-a-review-set-in-ediscovery-premium"></a>Etiquetar documentos en un conjunto de revisión en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La organización del contenido en un conjunto de revisión es importante para completar varios flujos de trabajo en el proceso de exhibición de documentos electrónicos. Incluye lo siguiente:
 

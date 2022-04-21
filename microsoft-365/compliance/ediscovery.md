@@ -1,5 +1,5 @@
 ---
-title: Soluciones de eDiscovery de Microsoft Purview
+title: Soluciones de exhibición de documentos electrónicos de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,14 +20,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview ofrece tres herramientas de exhibición de documentos electrónicos que puede usar para buscar y exportar contenido que se encuentra en diferentes ubicaciones, como buzones de Exchange, SharePoint y sitios de OneDrive para la Empresa, Grupos de Microsoft 365, Microsoft Teams y Skype Empresarial conversaciones. eDiscovery (estándar) y eDiscovery (Premium) proporcionan muchas características adicionales para ayudarle a administrar las investigaciones.
-ms.openlocfilehash: efa7f12ec20377713598edc54f032e7c2a27d706
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4c146e2eea1c0c462491444102365cb5c611e78d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932230"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001156"
 ---
-# <a name="microsoft-purview-ediscovery-solutions"></a>Soluciones de eDiscovery de Microsoft Purview
+# <a name="microsoft-purview-ediscovery-solutions"></a>Soluciones de exhibición de documentos electrónicos de Microsoft Purview
+
+> [!TIP]
+> *¿Sabía que puede probar las versiones premium de las nueve soluciones de Microsoft Purview de forma gratuita?* Use la prueba de soluciones de Purview de 90 días para explorar cómo las sólidas funcionalidades de Purview pueden ayudar a su organización a satisfacer sus necesidades de cumplimiento. Microsoft 365 E3 y Office 365 E3 los clientes pueden empezar ahora en el centro de pruebas del [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Obtenga información sobre [quién puede registrarse y los términos de prueba](compliance-easy-trials.md).
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La exhibición de documentos electrónicos, o eDiscovery, es el proceso de identificación y entrega de información electrónica que se puede usar como prueba en casos legales. Puede usar las herramientas de eDiscovery en Microsoft Purview para buscar contenido en Exchange Online, OneDrive para la Empresa, SharePoint Online, Microsoft Teams, Grupos de Microsoft 365 y Yammer equipos. Puede buscar buzones y sitios en la misma búsqueda de exhibición de documentos electrónicos y, a continuación, exportar los resultados de la búsqueda. Puede usar casos de exhibición de documentos electrónicos (estándar) de Microsoft Purview para identificar, retener y exportar el contenido que se encuentra en buzones y sitios. Si su organización tiene una suscripción de Office 365 E5 o Microsoft 365 E5 (o suscripciones de complementoS5 relacionadas), puede administrar aún más a los custodios y analizar el contenido mediante la solución microsoft Purview eDiscovery (Premium) enriquecida con características en Microsoft 365.
 
@@ -47,7 +52,7 @@ Microsoft Purview proporciona tres soluciones de exhibición de documentos elect
 
 En la tabla siguiente se comparan las funcionalidades clave disponibles en búsqueda de contenido, exhibición de documentos electrónicos (estándar) y exhibición de documentos electrónicos (Premium).
 
-|Funcionalidad|Búsqueda de contenido|eDiscovery (estándar)|eDiscovery (Premium)|
+|Funcionalidad|Búsqueda de contenido|eDiscovery (Estándar)|eDiscovery (Premium)|
 |:------|:-------------|:-------------|:-------------|
 |Buscar contenido|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
 |Consultas de palabras clave y condiciones de búsqueda|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|![Se admite.](../media/check-mark.png)|
@@ -138,7 +143,7 @@ En las secciones siguientes se muestran los requisitos mínimos de suscripción 
 - Office 365 E1 suscripción
 
 
-### <a name="ediscovery-standard"></a>eDiscovery (estándar)
+### <a name="ediscovery-standard"></a>eDiscovery (Estándar)
 
 - Microsoft 365 E3 suscripción
 - Microsoft 365 G3 suscripción
@@ -168,15 +173,15 @@ Consulte los artículos siguientes para obtener más información y empezar a us
 
 - [Crear una búsqueda](content-search.md)
 
-### <a name="ediscovery-standard"></a>eDiscovery (estándar)
+### <a name="ediscovery-standard"></a>eDiscovery (Estándar)
 
-- [Comenzar con eDiscovery (estándar)](get-started-core-ediscovery.md)
+- [Introducción a eDiscovery (Estándar)](get-started-core-ediscovery.md)
 
 ### <a name="ediscovery-premium"></a>eDiscovery (Premium)
 
 - [Información general sobre eDiscovery (Premium)](overview-ediscovery-20.md)
 
-- [Configuración de eDiscovery (Premium)](get-started-with-advanced-ediscovery.md)
+- [Configurar eDiscovery (Premium)](get-started-with-advanced-ediscovery.md)
 
 - [Creación y administración de un caso de eDiscovery (Premium)](create-and-manage-advanced-ediscoveryv2-case.md)
 

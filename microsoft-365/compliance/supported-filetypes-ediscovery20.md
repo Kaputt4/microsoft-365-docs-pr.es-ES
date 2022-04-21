@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 description: Lista de tipos de archivo admitidos en Microsoft 365 eDiscovery (Premium), incluidos los tipos de archivo de imagen compatibles con la funcionalidad OCR en eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce0d44a2d3e887c6278af1ed9a35039c74d6a0a9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 95adaf84f5281b943720be595b0e0e4aababd91f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934585"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996754"
 ---
 # <a name="supported-file-types-in-ediscovery-premium"></a>Tipos de archivo admitidos en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview eDiscovery (Premium) admite muchos tipos de archivo en muchos niveles diferentes. Los tipos de archivos de soporte técnico se describen en las tablas siguientes de este artículo. Esta lista no está finalizada y agregaremos nuevos tipos de archivo mientras continuamos nuestras pruebas de validación. Estas tablas indican si se admite un tipo de archivo para la extracción de texto (y reconocimiento óptico de caracteres o extracción de texto OCR para archivos de imagen), visible en el visor nativo y también compatible con el visor de anotación en eDiscovery (Premium).
 

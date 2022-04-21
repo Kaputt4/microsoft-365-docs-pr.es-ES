@@ -17,14 +17,16 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: Use casos de eDiscovery en el portal de cumplimiento de Microsoft Purview para administrar la investigación legal de su organización.
-ms.openlocfilehash: d218c7d624da837e685929d95e515687f54897ef
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 28dead35cce2102cfd826fa1505cdd620e4a1b25
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932009"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999793"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Administración de investigaciones legales en Microsoft 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Las organizaciones tienen muchas razones para responder a un caso legal que involucra a ciertos ejecutivos u otros empleados de su organización. Esto puede implicar encontrar y conservar rápidamente información específica de investigación adicional en correo electrónico, documentos, conversaciones de mensajería instantánea y otras ubicaciones de contenido usadas por personas en sus tareas diarias de trabajo. Puede realizar estas y muchas otras actividades similares mediante las herramientas de casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento.
   

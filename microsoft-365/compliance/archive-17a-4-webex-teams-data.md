@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Aprenda a configurar y usar un conector DataParser de Cisco Webex DataParser 17a-4 para importar y archivar datos de Cisco Webex en Microsoft 365.
-ms.openlocfilehash: 57a991f4a6d808dbcd22cb1d3466f10417e8d8e9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 67cd7007d19ba37b20da4ea961e3ec16e3b63840
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944137"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996600"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-webex-data"></a>Configuración de un conector para archivar datos de Cisco Webex
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Utilice Cisco [Webex DataParser](https://www.17a-4.com/webex-dataparser/) de 17a-4 LLC para importar y archivar datos de la plataforma Cisco Cisco Webex a los buzones de usuario en su organización de Microsoft 365. DataParser incluye un conector Cisco Webex configurado para capturar elementos de un origen de datos de terceros e importarlos a Microsoft 365. El conector DataParser de Cisco Webex convierte los datos de Cisco Webex en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
 

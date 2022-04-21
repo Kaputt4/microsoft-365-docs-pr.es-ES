@@ -18,14 +18,16 @@ ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
 description: Use el script de PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente en el centro de cumplimiento de Office 365 o Microsoft 365.
-ms.openlocfilehash: 782620d3693f4659c135d2a52aa7062a490a7cd0
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 82994bcc87b76efe21bb1c68877b2bb8a5926424
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940497"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998670"
 ---
 # <a name="clone-a-content-search"></a>Clonar una búsqueda de contenido
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La creación de una búsqueda de contenido en el centro de cumplimiento en Office 365 o Microsoft 365 que busca en muchos buzones de correo o SharePoint y OneDrive para la Empresa sitios puede tardar un tiempo. Especificar los sitios que se van a buscar también puede ser propenso a errores si escribe mal una dirección URL. Para evitar estos problemas, puede usar el script Windows PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente. Al clonar una búsqueda, se crea una nueva búsqueda (con un nombre diferente) que contiene las mismas propiedades (como las ubicaciones de contenido y la consulta de búsqueda) que la búsqueda original. A continuación, puede editar la nueva búsqueda cambiando la consulta de palabras clave o el intervalo de fechas y ejecútela.
   
@@ -141,7 +143,7 @@ Para clonar una búsqueda:
   
 ## <a name="step-2-edit-and-run-the-cloned-search-in-the-compliance-center"></a>Paso 2: Editar y ejecutar la búsqueda clonada en el centro de cumplimiento
 
-Después de ejecutar el script para clonar una búsqueda de contenido existente, el siguiente paso es ir al centro de cumplimiento para editar y ejecutar la nueva búsqueda. Como se indicó anteriormente, puede editar una búsqueda cambiando la consulta de búsqueda de palabras clave y agregando o quitando condiciones de búsqueda. Para más información, vea:
+Después de ejecutar el script para clonar una búsqueda de contenido existente, el siguiente paso es ir al centro de cumplimiento para editar y ejecutar la nueva búsqueda. Como se indicó anteriormente, puede editar una búsqueda cambiando la consulta de búsqueda de palabras clave y agregando o quitando condiciones de búsqueda. Para más información, consulte lo siguiente:
   
 - [Búsqueda de contenido de Office 365](content-search.md)
     

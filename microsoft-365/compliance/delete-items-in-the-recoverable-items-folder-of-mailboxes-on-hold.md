@@ -20,14 +20,16 @@ description: Obtenga información sobre cómo los administradores pueden elimina
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 29519b61d4a32b03772cfddba9183d3568afc209
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b421be087980c7878b79e3dbc03759ec45c546d8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950255"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001200"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>Eliminar elementos de la carpeta de elementos recuperables de buzones en retención en la nube
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La carpeta Elementos recuperables de un buzón de Exchange Online existe para protegerse de eliminaciones accidentales o malintencionadas. También se usa para almacenar elementos a los que se conserva y al que acceden las características de cumplimiento, como las retenciones y las búsquedas de eDiscovery. Sin embargo, en algunas situaciones, las organizaciones pueden tener datos que se han conservado involuntariamente en la carpeta Elementos recuperables que deben eliminar. Por ejemplo, un usuario podría enviar o reenviar sin saberlo un mensaje de correo electrónico que contenga información confidencial o información que pueda tener consecuencias empresariales graves. Incluso si el mensaje se elimina permanentemente, puede conservarse indefinidamente porque se ha colocado una suspensión legal en el buzón. Este escenario se conoce como *derrame de datos* porque los datos se han *derramado* involuntariamente en Office 365. En estas situaciones, puede eliminar elementos de la carpeta Elementos recuperables de un usuario para un buzón de Exchange Online, incluso si ese buzón está en suspensión con una de las distintas características de suspensión de Office 365. Estos tipos de retenciones incluyen retenciones por litigio, retenciones de In-Place, retenciones de exhibición de documentos electrónicos y directivas de retención creadas en el centro de seguridad y cumplimiento en Office 365 o Microsoft 365.
 
@@ -237,7 +239,7 @@ Para ver el valor de la propiedad *ComplianceTagHoldApplied*, ejecute el siguien
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-Una vez que haya identificado que un buzón está en espera porque se aplica una etiqueta de retención a una carpeta o elemento, puede usar la herramienta búsqueda de contenido en el portal de cumplimiento para buscar elementos etiquetados mediante la condición **Etiqueta de retención** . Para más información, vea:
+Una vez que haya identificado que un buzón está en espera porque se aplica una etiqueta de retención a una carpeta o elemento, puede usar la herramienta búsqueda de contenido en el portal de cumplimiento para buscar elementos etiquetados mediante la condición **Etiqueta de retención** . Para más información, consulte lo siguiente:
 
 - La sección "Uso de búsqueda de contenido para buscar todo el contenido con una etiqueta de retención específica" en [Información sobre las directivas de retención y las etiquetas de retención](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
 

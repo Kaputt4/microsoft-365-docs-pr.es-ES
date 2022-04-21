@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de Twitter desde Veritas a Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la exhibición de documentos electrónicos y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: bb632448a2acab4e776a3d608659c165dfd6be9f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 7b6e26696796c75764900123b5babbd47def4631
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935091"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000412"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>Configuración de un conector para archivar datos de Twitter (versión preliminar)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de la plataforma Twitter en buzones de usuario de la organización Microsoft 365. Veritas proporciona un conector de [Twitter](https://www.veritas.com/insights/merge1/twitter) configurado para capturar elementos de un origen de datos de terceros e importarlos a Microsoft 365. El conector convierte contenido como tweets, retweets y comentarios de Twitter en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a los buzones de usuario en Microsoft 365.
 

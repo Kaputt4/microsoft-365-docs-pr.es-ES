@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use eDiscovery (Premium) y el Explorador de Microsoft Graph para buscar y purgar mensajes de chat en Microsoft Teams y responder a incidentes de desbordamiento de datos en Teams.
-ms.openlocfilehash: b76f235fdfaee6f6836eb3d21385181a74aee904
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: a692af67b486b4bb353df8ce8be1653d17f26be8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971803"
+ms.locfileid: "64998473"
 ---
 # <a name="search-and-purge-chat-messages-in-teams"></a>Buscar y purgar mensajes de chat en Teams
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede usar eDiscovery (Premium) y el Explorador de Microsoft Graph para buscar y eliminar mensajes de chat en Microsoft Teams. Esto puede ayudarle a encontrar y quitar información confidencial o contenido inadecuado. Este flujo de trabajo de búsqueda y purga también le ayudará a responder a un incidente de derrame de datos, cuando el contenido que contiene información confidencial o malintencionada se publica a través de Teams mensajes de chat.
 

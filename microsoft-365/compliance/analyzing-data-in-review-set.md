@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre las herramientas disponibles para organizar conjuntos de documentos al analizar un caso de exhibición de documentos electrónicos (Premium) de Microsoft Purview.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c12b71d4bc2ddbf39df4e9414689cafeb4f4f785
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 72be5cf0cd6e4d52200f1167b525aa354192672e
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935706"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998714"
 ---
 # <a name="analyze-data-in-a-review-set-in-ediscovery-premium"></a>Análisis de datos en un conjunto de revisión en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Cuando el número de documentos recopilados es grande, puede ser difícil revisarlos todos. Microsoft Purview eDiscovery (Premium) proporciona una serie de herramientas para analizar los documentos con el fin de reducir el volumen de documentos que se van a revisar sin pérdida de información y para ayudarle a organizar los documentos de forma coherente. Para obtener más información sobre estas funcionalidades, consulte:
 

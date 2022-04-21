@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos delimitados por texto de Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: b7772143bef1f6b00d17f05c4bff76ba8692d7ee
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b2039c3b850f7d266425d464235b62d0ce4a78ad
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942983"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997238"
 ---
 # <a name="set-up-a-connector-to-archive-text-delimited-data"></a>Configuración de un conector para archivar datos delimitados por texto
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector de Veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos delimitados por texto en buzones de usuario de la organización de Microsoft 365. Veritas proporciona un [conector delimitado por texto](https://globanet.com/text-delimited) que está configurado para capturar elementos de un origen de datos de terceros (de forma regular) e importarlos a Microsoft 365. El conector convierte el contenido del origen de datos delimitado por texto a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 

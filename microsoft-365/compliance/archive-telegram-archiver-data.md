@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector TeleMessage para importar y archivar datos de comunicaciones de Telegram en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: b18d05fa697f3d23e57444d5757d14dff7acfc23
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6bee4eb9be5cf8c0d2719f391d89e268c5041b7f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947129"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997458"
 ---
 # <a name="set-up-a-connector-to-archive-telegram-communications-data"></a>Configuración de un conector para archivar datos de comunicaciones de Telegram
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use el conector TeleMessage en el portal de cumplimiento de Microsoft Purview para importar y archivar chats, datos adjuntos, archivos y mensajes y llamadas eliminados de Telegram. Después de configurar y configurar un conector, se conecta a la cuenta de TeleMessage de su organización e importa la comunicación móvil de los empleados que usan Telegram Archiver a los buzones de Microsoft 365.
 

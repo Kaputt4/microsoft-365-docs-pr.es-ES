@@ -16,20 +16,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Una colección de borradores es una búsqueda de exhibición de documentos electrónicos de orígenes de datos custodiales y no custodiales en un caso de eDiscovery (Premium) que devuelve una estimación de búsqueda que coincide con la consulta de búsqueda de la colección. Puede revisar las estadísticas de búsqueda, obtener una vista previa de un muestreo de elementos y revisar y volver a ejecutar la colección antes de confirmar los resultados en un conjunto de revisión.
-ms.openlocfilehash: 248e95f928c818dfb4eb5b864c2d34304893281c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2178e836809a24edec6d3d184ef8b699bec87bb5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934893"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997084"
 ---
 # <a name="create-a-draft-collection-in-ediscovery-premium"></a>Crear una colección de borradores en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Después de identificar a los custodios y los orígenes de datos que no son custodios para el caso, está listo para identificar y localizar un conjunto de documentos que son pertinentes. Para ello, use la herramienta Colecciones para buscar contenido relevante en los orígenes de datos. Para ello, cree una colección que busque contenido en los orígenes de datos especificados que coincida con los criterios de búsqueda. Tiene la opción de crear una *colección de borradores*, que es una estimación de los elementos que se encuentran o puede crear una colección que agregue automáticamente los elementos a un conjunto de revisión. Al crear una colección de borradores, puede ver información sobre los resultados estimados que coincidían con la consulta de búsqueda, como el número total y el tamaño de los elementos encontrados, los distintos orígenes de datos donde se encontraron y las estadísticas sobre la consulta de búsqueda. También puede obtener una vista previa de un ejemplo de elementos devueltos por la colección. Con estas estadísticas, puede cambiar la consulta de búsqueda y volver a ejecutar la colección de borradores para restringir los resultados. Una vez que esté satisfecho con los resultados de la colección, puede confirmar la colección en un conjunto de revisión. Al confirmar una colección de borradores, los elementos devueltos por la colección se agregan a un conjunto de revisión para su revisión, análisis y exportación.
 
 ## <a name="before-you-create-a-draft-collection"></a>Antes de crear una colección de borradores
 
-- Agregue custodios y orígenes de datos que no sean de custodia al caso antes de crear una colección de borradores. Esto es necesario para que pueda seleccionar los orígenes de datos al crear una colección de borradores. Para más información, vea:
+- Agregue custodios y orígenes de datos que no sean de custodia al caso antes de crear una colección de borradores. Esto es necesario para que pueda seleccionar los orígenes de datos al crear una colección de borradores. Para más información, consulte lo siguiente:
 
   - [Agregar administradores a un caso](add-custodians-to-case.md)
 

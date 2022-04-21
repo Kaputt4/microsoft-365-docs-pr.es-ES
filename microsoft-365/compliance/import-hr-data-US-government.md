@@ -16,14 +16,16 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores de la nube del Gobierno de EE. UU. pueden configurar un conector de datos para importar datos de empleados desde el sistema de recursos humanos (RR. HH.) de su organización para Microsoft 365. Esto le permite usar datos de RR. HH. en directivas de administración de riesgos internos para ayudarle a detectar la actividad de usuarios específicos que pueden suponer una amenaza interna para su organización.
-ms.openlocfilehash: 76de79cd856c9f114d219ffefbc45cf5e7692d40
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3f3873830caea109cf09987a21791bb299a4bdaf
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934761"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000034"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>Configuración de un conector para importar datos de RR. HH. en el Gobierno de EE. UU.
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede configurar un conector de datos en el portal de cumplimiento de Microsoft Purview para importar datos de recursos humanos (RR. HH.) a su organización del Gobierno de EE. UU. Los datos relacionados con RR. HH. incluyen la fecha en que un empleado presentó su renuncia y la fecha del último día del empleado. A continuación, las soluciones de protección de la información de Microsoft pueden usar estos datos de RR. HH., como la [solución de administración de riesgos internos](insider-risk-management.md), para ayudar a proteger su organización frente a actividades malintencionadas o robo de datos dentro de su organización. La configuración de un conector de RR. HH. consiste en crear una aplicación en Azure Active Directory que se usa para la autenticación mediante el conector, crear un archivo de asignación CSV que contenga los datos de RR. HH., crear un conector de datos en el centro de cumplimiento y, a continuación, ejecutar un script (de forma programada) que ingiera los datos de RR. HH. en el archivo CSV en la nube de Microsoft. A continuación, la herramienta de administración de riesgos internos usa el conector de datos para acceder a los datos de RR. HH. que se importaron a su Microsoft 365 organización gubernamental de EE. UU.
 

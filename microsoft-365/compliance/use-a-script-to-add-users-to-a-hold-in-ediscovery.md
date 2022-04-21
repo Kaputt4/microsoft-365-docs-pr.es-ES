@@ -22,14 +22,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
 description: Obtenga información sobre cómo ejecutar un script para agregar buzones & OneDrive para la Empresa sitios a una nueva retención asociada a un caso de eDiscovery en el portal de cumplimiento de Microsoft Purview.
-ms.openlocfilehash: 8835e853825786668ba1b7617078d899c0773779
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 70ec2481e8fa352be47544cd2fe6a772c2fbb325
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934541"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000895"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>Uso de un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos (estándar)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 PowerShell del Centro de cumplimiento de & de seguridad proporciona cmdlets que permiten automatizar tareas que requieren mucho tiempo relacionadas con la creación y administración de casos de exhibición de documentos electrónicos. Actualmente, el uso del caso de exhibición de documentos electrónicos de Microsoft Purview (estándar) en el portal de cumplimiento de Microsoft Purview para colocar un gran número de ubicaciones de contenido custodio en espera lleva tiempo y preparación. Por ejemplo, antes de crear una suspensión, debe recopilar la dirección URL de cada sitio de OneDrive para la Empresa que quiera colocar en espera. A continuación, para cada usuario que quiera colocar en espera, debe agregar su buzón de correo y su sitio de OneDrive para la Empresa a la suspensión. Puede usar el script de este artículo para automatizar este proceso.
   

@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: El contenido generado por las aplicaciones basadas en la nube en Microsoft 365 se almacena o asocia con el buzón Exchange Online de un usuario. Este contenido se puede buscar mediante las herramientas de Exhibición de documentos electrónicos de Microsoft.
-ms.openlocfilehash: b37295783883d689acc34dbff88e5a94186eb4a6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b5e8434f5345cda8ef4f637b3dff2d3cf704f748
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947855"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000804"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>Contenido almacenado en buzones de Exchange Online para eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Un buzón de Exchange Online se usa principalmente para almacenar elementos relacionados con el correo electrónico, como mensajes, elementos de calendario, tareas y notas. Pero eso cambia a medida que más aplicaciones basadas en la nube también almacenan sus datos en el buzón de un usuario. Una ventaja de almacenar datos en un buzón es que puede usar las herramientas de búsqueda en búsqueda de contenido, Microsoft Purview eDiscovery (Estándar) y Microsoft Purview eDiscovery (Premium) para buscar, ver y exportar los datos de estas aplicaciones basadas en la nube. Los datos de algunas de estas aplicaciones se almacenan en carpetas ocultas ubicadas en un subárbol de mensajes no predictivos (no IPM) en el buzón. Es posible que los datos de otras aplicaciones basadas en la nube no se almacenen _en_ el buzón, pero están _asociados al_ buzón y se devuelven en búsquedas (si esos datos coinciden con la consulta de búsqueda). Independientemente de si los datos basados en la nube se almacenan en o están asociados a un buzón de usuario, los datos no suelen ser visibles en un cliente de correo electrónico cuando un usuario abre su buzón.
 

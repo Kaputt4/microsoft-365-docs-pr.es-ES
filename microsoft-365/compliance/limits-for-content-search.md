@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Obtenga información sobre los límites vigentes para las características búsqueda de contenido y exhibición de documentos electrónicos (estándar) en el portal de cumplimiento de Microsoft Purview.
-ms.openlocfilehash: 53ecc3ceb879bc72040c5525e6bacc8d9802c5c9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8cba04c7ed3257d5a168d7754b2964eb4aa97b0d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944731"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999066"
 ---
 # <a name="limits-for-ediscovery-search"></a>Límites de búsqueda de eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Se aplican varios límites a las herramientas de búsqueda de exhibición de documentos electrónicos en el portal de cumplimiento de Microsoft Purview. Esto incluye las búsquedas que se ejecutan en la página **Búsqueda de contenido** y las búsquedas asociadas a un caso de exhibición de documentos electrónicos en la página **eDiscovery (estándar).** Estos límites ayudan a mantener la salud y la calidad de los servicios proporcionados a las organizaciones. También hay límites relacionados con la indexación de mensajes de correo electrónico en Exchange Online para la búsqueda. No se pueden modificar los límites de las búsquedas de exhibición de documentos electrónicos o la indexación de correo electrónico, pero debe tenerlos en cuenta para que pueda tener estos límites en cuenta al planear, ejecutar y solucionar problemas de búsquedas de eDiscovery.
 

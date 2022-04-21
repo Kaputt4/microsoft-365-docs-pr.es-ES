@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre los pasos para etiquetar y, a continuación, trabajar con un ejemplo de entrenamiento de 40 archivos durante la fase de entrenamiento de relevancia de eDiscovery (Premium).
-ms.openlocfilehash: 9744fd06548b4a0956db63cf200bc0a443deed9e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9078bf36e1434cad0362c4584b5c61fd49e86c14
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935574"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996688"
 ---
 # <a name="tagging-and-relevance-training-in-ediscovery-premium"></a>Etiquetado y formación de relevancia en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 En este artículo se describe el procedimiento para trabajar con el módulo de entrenamiento Relevancia en Microsoft Purview eDiscovery (Premium).
   

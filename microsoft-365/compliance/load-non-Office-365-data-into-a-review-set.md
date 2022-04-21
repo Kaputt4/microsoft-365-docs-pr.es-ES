@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo importar datos que no son Microsoft 365 a un conjunto de revisión para su análisis en un caso de exhibición de documentos electrónicos (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9d27e2d1e306c189aa28a2c331a60c5b4d0c5dc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d7167f85760d0c1cc05e130413dbcdae9e0e3973
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944753"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996864"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Cargar datos que no son de Microsoft 365 en un conjunto de revisión
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 No todos los documentos que necesita analizar en Microsoft Purview eDiscovery (Premium) se encuentran en Microsoft 365. Con la característica de importación de datos que no es Microsoft 365 en eDiscovery (Premium), puede cargar documentos que no se encuentran en Microsoft 365 en un conjunto de revisión. En este artículo se muestra cómo incluir los documentos que no son Microsoft 365 en eDiscovery (Premium) para su análisis.
 

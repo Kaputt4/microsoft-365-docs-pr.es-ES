@@ -20,14 +20,16 @@ search.appverid:
 - MET150
 description: Obtenga información sobre la solución eDiscovery (Premium) en Microsoft Purview. En este artículo se proporciona información general sobre eDiscovery (Premium) en Microsoft Purview, una herramienta que le ayudará a administrar investigaciones internas y externas. También enmarca los motivos empresariales para usar eDiscovery (Premium) para administrar las investigaciones legales.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7283adbf179f2d3dd04f45e2be808043e86ff88f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1a26d1abe9965ad71383a6d07e277999d85e31ef
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932075"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999088"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>Introducción a la exhibición de documentos electrónicos de Microsoft Purview (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La solución eDiscovery (Premium) de Microsoft Purview se basa en las funcionalidades existentes de Microsoft eDiscovery y análisis. eDiscovery (Premium) proporciona un flujo de trabajo de un extremo a otro para conservar, recopilar, analizar, revisar y exportar contenido que responda a las investigaciones internas y externas de la organización. También permite al equipo legal gestionar todo el flujo de trabajo de notificación de retención legal para comunicarse con los administradores de un caso.
 
@@ -134,7 +136,7 @@ Hay dos pasos rápidos y sencillos para empezar a trabajar con eDiscovery (Premi
 
 |Pasos  |Descripción  |
 |:---------|:---------|
-|[Configuración de eDiscovery (Premium)](get-started-with-advanced-ediscovery.md)| Después de comprobar los requisitos de suscripción y licencia, puede asignar permisos y configurar la configuración de toda la organización para empezar a usar eDiscovery (Premium).|
+|[Configurar eDiscovery (Premium)](get-started-with-advanced-ediscovery.md)| Después de comprobar los requisitos de suscripción y licencia, puede asignar permisos y configurar la configuración de toda la organización para empezar a usar eDiscovery (Premium).|
 |[Creación y administración de casos](create-and-manage-advanced-ediscoveryv2-case.md) | Cree casos para administrar el flujo de trabajo de eDiscovery (Premium) para todos los tipos legales y otros tipos de investigaciones de su organización.|
 |||
 

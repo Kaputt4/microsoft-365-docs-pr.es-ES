@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: El nuevo módulo de codificación predictiva de eDiscovery (Premium) usa el aprendizaje automático para analizar los elementos de un conjunto de revisión para predecir qué elementos son relevantes para su caso o investigación.
-ms.openlocfilehash: 2cf8541e3ca3928b1206eb824c21e21e49c4caa9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 7d45c995fafe5b802713e101ad36a362ab77fa37
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936563"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999000"
 ---
 # <a name="learn-about-predictive-coding-in-ediscovery-premium-preview"></a>Más información sobre la codificación predictiva en eDiscovery (Premium) (versión preliminar)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 El módulo de codificación predictiva de eDiscovery (Premium) usa las funcionalidades de aprendizaje automático inteligentes para ayudarle a reducir la cantidad de contenido que se va a revisar. La codificación predictiva le ayuda a reducir y seleccionar grandes volúmenes de contenido de casos en un conjunto pertinente de elementos que puede priorizar para su revisión. Esto se logra mediante la creación y el entrenamiento de sus propios modelos de codificación predictiva que le ayudan a priorizar la revisión de los elementos más relevantes de un conjunto de revisión.
 

@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: eDiscovery (Premium) facilita la administración del flujo de trabajo de notificaciones de suspensión legal en torno a la notificación a los custodios en investigaciones legales.
-ms.openlocfilehash: 9ee915cc9955b343d76ae1314c27a86421d37332
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bf47522809b61e377abffd742b9a4d84f7b650aa
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944665"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998560"
 ---
 # <a name="work-with-communications-in-ediscovery-premium"></a>Trabajar con comunicaciones en eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview eDiscovery (Premium) permite a los departamentos legales simplificar sus procesos en torno al seguimiento y distribución de notificaciones de suspensión legal. La herramienta de comunicaciones de custodios permite a los departamentos legales administrar y automatizar todo el proceso de suspensión legal, desde notificaciones iniciales, recordatorios y escalaciones, todo en una sola ubicación.
 

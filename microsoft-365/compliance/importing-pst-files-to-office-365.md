@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Obtenga información sobre cómo usar el servicio de importación en el portal de cumplimiento de Microsoft Purview para importar datos de correo electrónico (archivos PST) de forma masiva a los buzones de usuario.
-ms.openlocfilehash: ba517359d54c698abd2ce50f07fe76d87fba472c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a1720b51a57569d676aeac37933f1dce3075e7ed
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946229"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001024"
 ---
 # <a name="learn-about-importing-your-organizations-pst-files"></a>Obtenga información sobre la importación de archivos PST de su organización
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Este artículo está dirigido a administradores. ¿Está intentando importar archivos PST a su propio buzón? Consulte [Importar el correo electrónico, los contactos y el calendario desde un archivo .pst de Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075).

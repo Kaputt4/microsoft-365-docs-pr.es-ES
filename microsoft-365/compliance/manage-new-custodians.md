@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo ver los detalles, editar y editar en bloque la lista de custodios en un caso de exhibición de documentos electrónicos (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 905773ac500a394b4a2394eb221e23a51a5c197e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2ab30e1343acd4718f80f816abc6ef850acf7215
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942499"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996842"
 ---
 # <a name="manage-custodians-in-an-ediscovery-premium-case"></a>Administrar custodios en un caso de exhibición de documentos electrónicos (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La página **Custodios** de la pestaña **Orígenes de datos** de un caso de exhibición de documentos electrónicos (Premium) de Microsoft Purview contiene una lista de todos los custodios que se han agregado al caso. Después de agregar custodios a un caso, los detalles sobre cada custodio se recopilan automáticamente de Azure Active Directory y se pueden ver en eDiscovery (Premium).
 
@@ -121,7 +123,7 @@ Para desencadenar el proceso de reindexación para abordar elementos parcialment
 
 La reindexación de datos de custodios es un proceso de ejecución prolongada; El trabajo correspondiente que se crea se denomina **Volver a indexar datos de custodios**. Puede realizar un seguimiento del progreso en la pestaña **Trabajos** o en la pestaña **Custodios** supervisando el estado en la columna **Estado del trabajo de indexación** .
 
-Para más información, vea:
+Para más información, consulte lo siguiente:
 
 - [Trabajar con errores de proceso](processing-data-for-case.md)
 

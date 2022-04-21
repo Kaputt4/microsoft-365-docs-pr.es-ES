@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: Use estos procedimientos para aprovechar las entidades con nombre en las directivas de prevención de pérdida de datos.
-ms.openlocfilehash: 108b21e7c5a6708a01a712dcd44788f489df0e73
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 6b00c45b95436e2425aedadd57a178fcb01ab50e
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971591"
+ms.locfileid: "65001002"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies"></a>Uso de entidades con nombre en las directivas de prevención de pérdida de datos
 
@@ -83,7 +83,7 @@ Para crear o editar una directiva DLP, use los procedimientos de [Creación, pru
 |SharePoint datos en reposo en línea     |Compatible         |
 |Teams datos en reposo     |Compatible         |
 |Datos en reposo de mensajes de correo electrónico     |Compatible con inquilinos con el plan de servicio de privacidad         |
-|Microsoft Defender for Cloud Apps     |compatible         |
+<!--|Microsoft Defender for Cloud Apps     |compatible         |-->
 
 ### <a name="autolabeling"></a>Etiquetado automático
 

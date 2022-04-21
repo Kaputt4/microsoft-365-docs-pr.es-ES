@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos desde el conector webex Teams de Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 1aa1a0ddd94aa2308c4884921138b12b0c152bab
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6b879e62d2c94d9b61c47674be364927ea9dc1cc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942873"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999330"
 ---
 # <a name="set-up-a-connector-to-archive-webex-teams-data"></a>Configuración de un conector para archivar datos de Webex Teams
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de Webex Teams a buzones de usuario de su organización de Microsoft 365. Veritas proporciona un conector [de Teams Webex](https://globanet.com/webex-teams/) que está configurado para capturar elementos de comunicación Teams Webex e importarlos a Microsoft 365. El conector convierte el contenido de webex Teams, como chats 1:1, conversaciones de grupo, conversaciones de canal y datos adjuntos de la cuenta de webex Teams de su organización, a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 

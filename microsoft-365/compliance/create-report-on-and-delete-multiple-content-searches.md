@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Obtenga información sobre cómo automatizar tareas de búsqueda de contenido, como la creación de búsquedas y la ejecución de informes mediante PowerShell del Centro de cumplimiento de seguridad &.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 06ea7655348851cbd457b527a3ee36f72d78e562
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c6e84641fef819503349803cdd54d5aaa860fc50
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936871"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000232"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Crear, informar sobre y eliminar varias búsquedas de contenido
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  La creación rápida y la generación de informes de búsquedas de detección suele ser un paso importante en eDiscovery e investigaciones cuando se intenta obtener información sobre los datos subyacentes y la riqueza y calidad de las búsquedas. Para ayudarle a hacerlo, PowerShell security & Compliance Center ofrece un conjunto de cmdlets para automatizar tareas de búsqueda de contenido que consumen mucho tiempo. Estos scripts proporcionan una manera rápida y sencilla de crear una serie de búsquedas y, a continuación, ejecutar informes de los resultados de búsqueda estimados que pueden ayudarle a determinar la cantidad de datos en cuestión. También puede usar los scripts para crear diferentes versiones de búsquedas con el fin de comparar los resultados que genera cada uno. Estos scripts pueden ayudarle a identificar y eliminar los datos de forma rápida y eficaz.
 
