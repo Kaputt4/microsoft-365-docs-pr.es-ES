@@ -1,5 +1,5 @@
 ---
-title: Auditoría (Premium) en Microsoft 365
+title: Auditoría de Microsoft Purview (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,14 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: La Auditoría de Microsoft Purview (Premium) proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: 5e224d4d7073f96f4dc17d48f6caf19840905d06
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4f936977c71a933dd05e5c0b2e0d2111b03bc8f7
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941069"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999506"
 ---
 # <a name="microsoft-purview-audit-premium"></a>Auditoría de Microsoft Purview (Premium)
+
+> [!TIP]
+> *¿Sabía que puede probar las versiones premium de las nueve soluciones de Microsoft Purview de forma gratuita?* Utilice la prueba de 90 días de las soluciones Purview para explorar cómo las sólidas capacidades de Purview pueden ayudar a su organización a satisfacer sus necesidades de cumplimiento. Los clientes Microsoft 365 E3 y Office 365 E3 pueden empezar ahora en el [Centro de pruebas del portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Obtenga información sobre [las personas que pueden registrarse y los términos de la prueba](compliance-easy-trials.md).
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La [funcionalidad de Auditoría](search-the-audit-log-in-security-and-compliance.md) en Microsoft Purview proporciona a las organizaciones la visibilidad de muchos tipos de actividades auditadas a través de los distintos servicios de Microsoft 365. La Auditoría de Microsoft Purview (Premium) ayuda a las organizaciones a llevar a cabo investigaciones forenses y de cumplimiento mediante el aumento de la retención de registros de auditoría necesarios para llevar a cabo una investigación. Esto se logra proporcionando acceso a eventos esenciales (mediante la búsqueda de registros de auditoría en el portal de cumplimiento de Microsoft Purview y la API de actividad de administración de Office 365) que ayudan a determinar el área que ha sido comprometida y un acceso más rápido a la API de actividad de administración de Office 365.
 

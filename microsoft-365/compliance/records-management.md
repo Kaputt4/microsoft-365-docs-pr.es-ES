@@ -1,5 +1,5 @@
 ---
-title: Administración de registros en Microsoft 365
+title: Más información sobre la administración de registros de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -20,21 +20,26 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: Con la administración de registros de Microsoft 365, puede aplicar programaciones de retención en un plan de archivos para administrar la retención, la declaración de registros y la eliminación.
-ms.openlocfilehash: ce00fdfc6db90b9c65051a31e8768d6cd661072d
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+description: Obtenga información sobre cómo la administración de registros de Microsoft Purview admite elementos de alto valor para requisitos empresariales, legales o de mantenimiento de registros normativos.
+ms.openlocfilehash: dd554b4369a1f721d306bc301519ce3ef59e4569
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755668"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998538"
 ---
-# <a name="learn-about-records-management-in-microsoft-365"></a>Aprenda sobre la administración de registros en Microsoft 365
+# <a name="learn-about-records-management"></a>Más información sobre la administración de registros
+
+> [!TIP]
+> *¿Sabía que puede probar las versiones premium de las nueve soluciones de Microsoft Purview de forma gratuita?* Utilice la prueba de 90 días de las soluciones Purview para explorar cómo las sólidas capacidades de Purview pueden ayudar a su organización a satisfacer sus necesidades de cumplimiento. Los clientes Microsoft 365 E3 y Office 365 E3 pueden empezar ahora en el [Centro de pruebas del portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Obtenga información sobre [las personas que pueden registrarse y los términos de la prueba](compliance-easy-trials.md).
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Las organizaciones de todo tipo requieren una solución de administración de registros para administrar los registros reglamentarios, legales y críticos para el negocio en sus datos corporativos. La administración de registros de Microsoft 365 ayuda a las organizaciones a administrar sus obligaciones legales, ofrece la posibilidad de demostrar el cumplimiento de las normativas y aumenta la eficiencia con la eliminación regular de elementos que ya no se necesitan retener, no son de gran valor o ya no son necesarios para fines empresariales.
+Las organizaciones de todo tipo requieren una solución de administración de registros para administrar los registros reglamentarios, legales y críticos para el negocio en sus datos corporativos. La administración de registros para Microsoft Purview ayuda a las organizaciones a administrar sus obligaciones legales, ofrece la posibilidad de demostrar el cumplimiento de las normativas y aumenta la eficiencia con la eliminación regular de elementos que ya no se necesitan retener, no son de gran valor o ya no son necesarios para fines empresariales.
 
-Use las siguientes funciones para dar soporte a la solución de administración de registros en Microsoft 365:
+Use las siguientes funcionalidades para admitir la solución de administración de registros para los servicios y aplicaciones de Microsoft 365:
 
 - **Etiquetar contenido como registro**. Cree y configure etiquetas de retención para marcar el contenido como [registro](#records) que los usuarios pueden aplicar o aplicar automáticamente mediante la identificación de información confidencial, palabras clave o tipos de contenido.
 
@@ -92,9 +97,9 @@ Una etiqueta de retención estándar tiene opciones de retención y acciones, pe
 
 Notas al pie:
 
-<sup>1</sup> De forma predeterminada, está permitida la edición de las propiedades de un registro bloqueado, pero se puede bloquear mediante una opción de configuración de espacio empresarial en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/) > **Administración de registros** > **Configuración de administración de registros** > **Etiquetas de retención** > **Permitir la edición de propiedades del registro**.
+<sup>1</sup> De forma predeterminada, está permitida la edición de las propiedades de un registro bloqueado, pero se puede bloquear mediante una opción de configuración de espacio empresarial en el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/) > **Administración de registros** > **Configuración de administración de registros** > **Etiquetas de retención** > **Permitir la edición de propiedades del registro**.
 
-<sup>2</sup> En SharePoint y OneDrive, el borrado de elementos etiquetados se puede bloquear como una opción de configuración de espacio empresarial en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/) > **Administración de registros** > **Configuración de administración de registros** > **Etiquetas de retención** > **Borrado de elementos**.
+<sup>2</sup> En SharePoint y OneDrive, el borrado de elementos etiquetados se puede bloquear como una opción de configuración de espacio empresarial en el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/) > **Administración de registros** > **Configuración de administración de registros** > **Etiquetas de retención** > **Borrado de elementos**.
 
 Cuando se aplica una etiqueta de retención a un elemento de lista que tiene datos adjuntos de documento, ese documento no hereda la configuración de retención y se puede eliminar del elemento de lista. En cambio, si se declara un registro con una etiqueta de retención, los datos adjuntos del documento heredarán la configuración de retención y no se podrán eliminar.
 

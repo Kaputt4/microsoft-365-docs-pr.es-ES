@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Utilice la herramienta de búsqueda de contenido de eDiscovery en el centro de cumplimiento de Microsoft para buscar contenido en diferentes servicios de Microsoft 365.
-ms.openlocfilehash: 374a9ce119c0e4563c14ae4eda15ce562dc8643d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f5d8a398f36c1ab3c0f83234718346e8dd20434e
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938387"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994522"
 ---
 # <a name="create-a-content-search"></a>Crear una búsqueda de contenido
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede usar la herramienta de eDiscovery de búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para buscar contenido local como correo electrónico, documentos y conversaciones de mensajería instantánea en su organización. Use esta herramienta para buscar contenido en estos orígenes de datos de Microsoft 365 basados en la nube:
   
@@ -85,7 +87,7 @@ Después de ejecutar una búsqueda, se mostrará el número de ubicaciones de co
       > [!NOTE]
       > Existe un límite máximo de 20 filas en la lista de palabras clave, con el fin de reducir los problemas causados por listas de palabras clave demasiado grandes.
 
-   3. Puede agregar condiciones de búsqueda para recibir un conjunto de resultados más selecto. Cada condición agrega una cláusula a la consulta de búsqueda que se crea y se ejecuta cuando se inicia la búsqueda. Una condición se conecta lógicamente a la consulta de palabras clave (especificada en el cuadro de palabras clave) mediante el operador **c:c**, que tiene una función parecida al operador **Y**. Eso significa que los elementos tienen que satisfacer la consulta de palabra clave y una o más condiciones para que se incluyan en los resultados. De esta manera, las condiciones permiten restringir los resultados. Para obtener una lista y una descripción de las condiciones que puede usar en una consulta de búsqueda, consulte [Condiciones de búsqueda](keyword-queries-and-search-conditions.md#search-conditions).
+   3. Puede agregar condiciones de búsqueda para recibir un conjunto de resultados más selecto. Cada condición agrega una cláusula a la consulta de búsqueda que se crea y se ejecuta cuando se inicia la búsqueda. Una condición se conecta lógicamente a la consulta de palabras clave (especificada en el cuadro de palabras clave) mediante el operador **c:c**, que tiene una función parecida al operador **Y**. Eso significa que los elementos tienen que satisfacer la consulta de palabra clave y una o más condiciones para que se incluyan en los resultados. De esta manera, las condiciones permiten restringir los resultados. Para obtener una lista y una descripción de las condiciones que puede usar en una consulta de búsqueda, vea [Condiciones de búsqueda](keyword-queries-and-search-conditions.md#search-conditions).
 
 7. Revise la configuración de búsqueda (y edítela si es necesario) y envíe la búsqueda para iniciarla.
   
