@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Más información sobre la incorporación de dispositivos macOS a soluciones de cumplimiento
-ms.openlocfilehash: 6cc3323a94ee609c3c6674c12eb99fad3f18f3b4
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 09a35e47a237639a722047b11c24f9b2d09cf51d
+ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952738"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65014988"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview"></a>Introducción a la incorporación de dispositivos macOS a Microsoft 365
 
@@ -54,7 +54,16 @@ Los dispositivos macOS ya deben administrarse a través de Intune o JAMF Pro.
  
 - Para incorporarse a Intune, consulte [Guía de implementación: Administración de dispositivos macOS en Microsoft Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) e [Inscripción de su Mac con Portal de empresa de Intune](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - Para incorporarse a JAMF Pro consulte la guía de [administradores de JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) y la Guía de [instalación y configuración de JAMF Pro para Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/).
-- Instalar el explorador v95+ Edge en los dispositivos macOS 
+<!--- Install the v95+ Edge browser on your macOS devices--> 
+
+### <a name="supported-browsers"></a>Exploradores compatibles
+
+DLP de punto de conexión admite estos exploradores en macOS Catalina 10.15 o posterior:
+
+- Microsoft Edge (última versión)
+- Safari (versión más reciente, solo macOS)
+- Chrome (última versión)
+- Firefox (última versión)
 
 ## <a name="licensing-guidance"></a>Guía de licencias
 
@@ -97,8 +106,8 @@ La incorporación de dispositivos a las soluciones de Microsoft Purview es neces
 
 Tema | Descripción
 :---|:---
-|[Incorporación y descarga de dispositivos macOS en soluciones de Microsoft Purview mediante Intune](device-onboarding-offboarding-macos-intune.md)|Para dispositivos macOS administrados a través de Intune
-|[Incorporación y eliminación de dispositivos macOS en soluciones de cumplimiento mediante Intune para clientes Microsoft Defender para punto de conexión](device-onboarding-offboarding-macos-intune-mde.md) |Para dispositivos macOS que se administran a través de Intune y que tienen implementado Microsoft Defender para punto de conexión (MDE)
+|[Incorporar y desactivar dispositivos macOS en soluciones de Microsoft Purview mediante Intune](device-onboarding-offboarding-macos-intune.md)|Para dispositivos macOS administrados a través de Intune
+|[Incorporar y retirar dispositivos macOS en soluciones de cumplimiento con Intune para clientes de Microsoft Defender para punto de conexión](device-onboarding-offboarding-macos-intune-mde.md) |Para dispositivos macOS que se administran a través de Intune y que tienen implementado Microsoft Defender para punto de conexión (MDE)
 |[Incorporación y apagado de dispositivos macOS en soluciones de Microsoft Purview mediante JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) | Para dispositivos macOS que se administran a través de JAMF Pro
 |[Incorporación y eliminación de dispositivos macOS en soluciones de cumplimiento mediante jamf Pro para clientes Microsoft Defender para punto de conexión](device-onboarding-offboarding-macos-jamfpro-mde.md)|Para dispositivos macOS que se administran a través de JAMF Pro y que tienen implementado Microsoft Defender para punto de conexión (MDE)
 

@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de Reuters Eikon desde Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: c296e77023b893f63e5dbd8488c08374e855840d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3f5996b81668f917dfc566829733fe95eed04fb2
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940607"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001640"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-eikon-data"></a>Configuración de un conector para archivar datos de Reuters Eikon
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use un conector de Veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos desde la plataforma de Reuters Eikon a buzones de usuario de su organización Microsoft 365. Veritas proporciona un conector [de Reuters Eikon](https://globanet.com/eikon/) que está configurado para capturar elementos del origen de datos de terceros (de forma regular) e importarlos a Microsoft 365. El conector convierte el contenido, como mensajes de persona a persona, chats de grupo, datos adjuntos y declinaciones de responsabilidades de la cuenta de Reuters Eikon de un usuario en un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón de correo del usuario en Microsoft 365.
 

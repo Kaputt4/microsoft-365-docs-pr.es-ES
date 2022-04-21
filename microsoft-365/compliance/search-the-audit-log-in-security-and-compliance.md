@@ -21,14 +21,16 @@ description: Use el portal de cumplimiento de Microsoft Purview para buscar en e
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: f35bfbbe299495e912d018bd00615964f883031e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6c0f26bbda2ba28b98fc80b80ce4a520d9fb39c3
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936277"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998912"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? De ser así, puede usar la herramienta de búsqueda del registro de auditoría en el portal de cumplimiento de Microsoft Purview para buscar el registro de auditoría unificado para ver la actividad de los usuarios y administradores en su organización. Miles de operaciones de usuarios y administradores que se realizan en docenas de servicios y soluciones de Microsoft 365 se capturan, graban y retienen en el registro de auditoría unificado de su organización. Los usuarios de tu organización pueden usar la herramienta de búsqueda de registro de auditoría para buscar, ver y exportar (a un archivo CSV) los registros de auditoría de estas operaciones.
 
@@ -428,7 +430,7 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |(ninguno)|FileModifiedExtended|Esto está relacionado con la actividad "Archivo modificado" (FileModified). Un evento de FileModifiedExtended se registra cuando la misma persona modifica continuamente un archivo durante un período prolongado (hasta 3 horas). <br/><br/> El objetivo del registro de eventos FileModifiedExtended es reducir el número de eventos FileModified que se registran cuando se modifica continuamente un archivo. Esto ayuda a reducir el ruido de varios registros de FileModified para lo que básicamente es la misma actividad de usuario, y le permite centrarse en el evento FileModified inicial (el más importante).|
 |Archivo movido|FileMoved|El usuario mueve un documento de su ubicación actual en un sitio a una nueva ubicación.|
 |(ninguno)|FilePreviewed|El usuario obtiene la vista previa de un documento de SharePoint o de OneDrive para un sitio de Empresas. Estos sucesos suelen producirse en grandes volúmenes basándose en una sola actividad, como ver una galería de imágenes.|
-|Consulta de búsqueda realizada|SearchQueryPerformed|La cuenta del sistema o el usuario lleva a cabo una búsqueda en SharePoint o OneDrive para la Empresa. Entre los escenarios comunes en los que una cuenta de servicio lleva a cabo una consulta de búsqueda se incluye aplicar una directiva de retención de eDiscovery a los sitios y cuentas de OneDrive, y aplicar automáticamente etiquetas de retención o confidencialidad al contenido del sitio.|
+|Consulta de búsqueda realizada|SearchQueryPerformed|La cuenta de usuario o de sistema realiza una búsqueda en SharePoint o OneDrive para la Empresa. Entre los escenarios comunes en los que una cuenta de servicio realiza una consulta de búsqueda se incluyen la aplicación de suspensiones de eDiscovery y de una directiva de retención a sitios y cuentas de OneDrive, y la aplicación automática de las etiquetas de retención o sensibilidad al contenido del sitio.|
 |Se ha reciclado un archivo | FileRecycled | El usuario mueve un archivo a la Papelera de reciclaje de SharePoint. |
 |Se ha reciclado una carpeta | FolderRecycled | El usuario mueve una carpeta a la Papelera de reciclaje de SharePoint. |
 |Todas las versiones menores del archivo recicladas|FileVersionsAllMinorsRecycled|El usuario elimina todas las versiones secundarias del historial de versiones de un archivo. Las versiones eliminadas se mueven a la Papelera de reciclaje del sitio.|

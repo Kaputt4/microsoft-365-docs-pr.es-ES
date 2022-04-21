@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos de Rogers Network en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 790a41ce3d505e6381bb9d02ed9014132fe8f9f0
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 966810ba4cedb782fb860ebff72b4fc7b4e7248c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944027"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001552"
 ---
 # <a name="set-up-a-connector-to-archive-rogers-network-data"></a>Configuración de un conector para archivar datos de Rogers Network
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use el conector TeleMessage en el portal de cumplimiento de Microsoft Purview para importar y archivar datos DE SMS y MMS desde la red móvil de Rogers. Después de configurar y configurar un [conector de Rogers Network Archiver](https://www.telemessage.com/mobile-archiver/network-archiver/rogers/), se conecta a la red móvil de Rogers de su organización e importa datos SMS y MMS a buzones de Microsoft 365.
 

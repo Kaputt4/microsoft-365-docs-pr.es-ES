@@ -20,14 +20,16 @@ description: Asigne los permisos necesarios para realizar tareas relacionadas co
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 1f19c43e65993652628703f002b9537c71066013
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3fef13fe96297b426dda4d72231846a99fb03179
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946537"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001376"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>Asignación de permisos de eDiscovery en el portal de cumplimiento
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Si desea que los usuarios usen cualquiera de las [herramientas relacionadas con eDiscovery](ediscovery.md) en el portal de cumplimiento de Microsoft Purview, debe asignarles los permisos adecuados. La manera más fácil de hacerlo es agregar a la persona el grupo de roles adecuado en la página **Permisos** del centro de cumplimiento. En este tema se describen los permisos necesarios para realizar tareas de exhibición de documentos electrónicos.
   
@@ -81,7 +83,7 @@ En la página **Permisos** del portal de cumplimiento, también puede asignar a 
 
 En la tabla siguiente se enumeran los roles RBAC relacionados con eDiscovery en el portal de cumplimiento e indican los grupos de roles integrados a los que se asigna cada rol de forma predeterminada.
   
-| Role | Administrador de cumplimiento | Administrador de eDiscovery & Administrador | Administración de la organización | Reviewer |
+| Función | Administrador de cumplimiento | Administrador de eDiscovery & Administrador | Administración de la organización | Reviewer |
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Administración de casos <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> |
 |Comunicación <br/> | <br/> |![Marca de verificación.](../media/checkmark.png) <br/> | <br/> | <br/> |
@@ -101,9 +103,9 @@ En las secciones siguientes se describen cada uno de los roles de RBAC relaciona
 
 Este rol permite a los usuarios crear, editar, eliminar y controlar el acceso a casos de exhibición de documentos electrónicos (estándar) y exhibición de documentos electrónicos (Premium) en el portal de cumplimiento. Como se explicó anteriormente, se debe asignar a un usuario el rol Administración de casos para poder usar el cmdlet **Add-eDiscoveryCaseAdmin** para convertirlo en administrador de eDiscovery.
 
-Para más información, vea:
+Para más información, consulte lo siguiente:
 
-- [Comenzar con eDiscovery (estándar)](get-started-core-ediscovery.md)
+- [Introducción a eDiscovery (Estándar)](get-started-core-ediscovery.md)
 
 - [Comenzar con eDiscovery (Premium)](get-started-with-advanced-ediscovery.md)
 
@@ -165,7 +167,7 @@ Este rol permite a los usuarios realizar la eliminación masiva de datos que coi
 
 Puede agregar grupos de roles como miembros de casos de eDiscovery (Estándar) y eDiscovery (Premium) para que los miembros de los grupos de roles puedan acceder a los grupos de roles y realizar tareas en los casos asignados. Los roles asignados al grupo de roles definen lo que pueden hacer los miembros del grupo de roles. A continuación, agregar un grupo de roles como miembro del caso permite a los miembros acceder a esas tareas y realizarlas en un caso específico. Para obtener más información sobre cómo agregar grupos de roles como miembros de casos, consulte:
 
-- [Comenzar con eDiscovery (estándar)](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
+- [Introducción a eDiscovery (Estándar)](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
 
 - [Agregar o quitar miembros de un caso de exhibición de documentos electrónicos (Premium)](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 

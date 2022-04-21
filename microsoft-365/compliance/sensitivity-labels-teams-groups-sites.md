@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 759f7a6403eb41a6a853ed1f9b844ebd1ef679cc
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 0c8462333a3b3fd0c062c72fce0f673977c54b9b
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500021"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916257"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -37,6 +37,7 @@ Además de usar [etiquetas de confidencialidad](sensitivity-labels.md) para clas
 - Acceso desde dispositivos no administrados
 - Contextos de autenticación (en versión preliminar)
 - Vínculo de uso compartido predeterminado para un sitio de SharePoint (configuración solo de PowerShell)
+- En versión preliminar: configuración de uso compartido de sitios (configuración solo de PowerShell)
 
 > [!IMPORTANT]
 > La configuración para dispositivos no administrados y contextos de autenticación funciona junto con el acceso condicional de Azure Active Directory. Debe configurar esta característica dependiente si desea usar una etiqueta de confidencialidad para esta configuración. Se incluye información adicional en las instrucciones siguientes.
@@ -124,7 +125,7 @@ Una vez habilitadas las etiquetas de confidencialidad para los contenedores como
             
              - Elija un contexto de autenticación que esté configurado para requerir la [autenticación multifactor (MFA)](/azure/active-directory/conditional-access/untrusted-networks). Después, esta etiqueta se aplica a un sitio de SharePoint que contiene elementos altamente confidenciales. Como resultado, cuando los usuarios de una red que no son de confianza intentan acceder a un documento de este sitio, ven la solicitud de MFA que deben completar para poder acceder al documento.
              
-             - Elija un contexto de autenticación que esté configurado para las [directivas de condiciones de uso](/azure/active-directory/conditional-access/terms-of-use). Después, esta etiqueta se aplica a un sitio de SharePoint que contiene elementos que requieren la aceptación de términos de uso por motivos legales o de cumplimiento. Como resultado, cuando los usuarios intentan acceder a un documento de este sitio, ven un documento de términos de uso que deben aceptar para poder acceder al documento original.
+             - Elija un contexto de autenticación configurado para [directivas de condiciones de uso (ToU)](/azure/active-directory/conditional-access/terms-of-use). A continuación, esta etiqueta se aplica a un sitio de SharePoint que contiene elementos que requieren una aceptación de las condiciones de uso por motivos legales o de conformidad normativa. Como resultado, cuando los usuarios intentan acceder a un documento en este sitio, ven un documento de condiciones de uso que deben aceptar para poder acceder al documento original.
 
 > [!IMPORTANT]
 > La configuración de sitio y grupo solo surte efecto al aplicar la etiqueta a un equipo, grupo o sitio. Si el [ámbito de la etiqueta](sensitivity-labels.md#label-scopes) incluye archivos y mensajes de correo electrónico, otras opciones de configuración de etiqueta, como el cifrado y la marcación de contenido, no se aplicarán a todo el contenido del equipo, grupo o sitio.
@@ -183,6 +184,31 @@ Limitaciones conocidas de esta versión preliminar:
 Además de la configuración de etiquetas para sitios y grupos que puede configurar desde el centro de cumplimiento, también puede configurar el tipo de vínculo de uso compartido predeterminado para un sitio. Las etiquetas de confidencialidad de los documentos también se pueden configurar para un tipo de vínculo de uso compartido predeterminado. Esta configuración, que ayuda a evitar el uso compartido excesivo, se selecciona automáticamente cuando los usuarios seleccionan el botón **Compartir** en sus aplicaciones de Office. 
 
 Para obtener más información e instrucciones, vea [Uso de las etiquetas de confidencialidad para configurar el tipo de vínculo de uso compartido predeterminado para sitios y documentos en SharePoint y OneDrive](sensitivity-labels-default-sharing-link.md).
+
+### <a name="configure-site-sharing-permissions-by-using-powershell-advanced-settings"></a>Configuración de permisos de uso compartido de sitios mediante la configuración avanzada de PowerShell
+
+> [!NOTE]
+> Esta configuración de etiqueta está actualmente en versión preliminar.
+
+Otra configuración avanzada de PowerShell que puede configurar para que la etiqueta de confidencialidad se aplique a un sitio de SharePoint es **MembersCanShare**. Esta configuración es la configuración equivalente que puede establecer desde el Centro de administración de SharePoint > **Permisos del sitio** > **Uso compartido de sitios** > **Cambiar la forma en que los miembros pueden compartir** > **Permisos de uso compartido**. 
+
+Las tres opciones se muestran con los valores equivalentes para la configuración avanzada de PowerShell **MembersCanShare**:
+
+|Opción del Centro de administración de SharePoint |Valor de PowerShell equivalente para MembersCanShare |
+|----------------------------------------|------------------------------------------------|
+|**Los propietarios y miembros del sitio pueden compartir archivos, carpetas y el sitio. Las personas con permisos de edición pueden compartir archivos y carpetas.**| MemberShareAll|
+|**los propietarios y miembros del sitio, y las personas con permisos de edición pueden compartir archivos y carpetas, pero solo los propietarios del sitio pueden compartir el sitio.**|MemberShareFileAndFolder|
+|**Solo los propietarios del sitio pueden compartir archivos, carpetas y el sitio.**|MemberShareNone|
+
+Para obtener más información sobre estas opciones de configuración, vea [Cambiar el modo en que los miembros pueden compartir](/microsoft-365/community/sharepoint-security-a-team-effort#change-how-members-can-share) desde la documentación de la comunidad de SharePoint.
+
+Ejemplo, en que el GUID de la etiqueta de confidencialidad es **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
+
+````powershell
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{MembersCanShare="MemberShareNone"}
+````
+
+Para obtener más ayuda sobre cómo especificar la configuración avanzada de PowerShell, consulte [Sugerencias de PowerShell para especificar la configuración avanzada](sensitivity-labels-default-sharing-link.md#powershell-tips-for-specifying-the-advanced-settings).
 
 ## <a name="sensitivity-label-management"></a>Administración de etiquetas de confidencialidad
 

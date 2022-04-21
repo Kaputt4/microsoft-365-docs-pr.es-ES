@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener el informe de actividad del usuario Microsoft Teams y obtener información sobre la actividad de Teams en su organización.
-ms.openlocfilehash: cbd9bdb73dc69da5e36e0fb9c3ff2ff15b5269a4
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: ad2701e10e6b71f6fdb6a7d9ccf4a6b795a38b94
+ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882272"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65015010"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de usuario de Microsoft Teams
 
@@ -33,6 +33,7 @@ En el panel informes de Microsoft 365 se muestra la información general sobre l
 ## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>Cómo obtener el informe de actividad de los usuarios de Microsoft Teams
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso.
+
 2. En la página principal del panel, haga clic en el botón **Ver más** de la tarjeta de actividad Microsoft Teams.
 
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Interpretar el informe de actividad de los usuarios de Microsoft Teams
@@ -47,13 +48,13 @@ Puede visualizar el informe **Actividad de los usuarios en Microsoft Teams** par
 
 Para garantizar la calidad de los datos, realizamos comprobaciones diarias de validación de datos durante los últimos tres días y rellenaremos las brechas detectadas. Es posible que observe diferencias en los datos históricos durante el proceso.
 
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo.   <br/> |
 |Nombre del inquilino  <br/> |Nombre de un inquilino interno o externo al que pertenece un usuario.   <br/> <br/> Si un usuario pertenece a un inquilino externo, las métricas de datos correspondientes (por ejemplo, mensajes de publicación, mensajes de respuesta, etc.) se calculan en función de sus interacciones en canales compartidos del inquilino del administrador. Las interacciones realizadas por el usuario en su propio inquilino (fuera de los canales compartidos del inquilino determinado) no se tienen en cuenta para el informe de uso del administrador de un inquilino determinado.  |
 |Nombres de inquilino de canal compartido   <br/> |Nombres de inquilinos internos o externos de canales compartidos en los que participó el usuario.   <br/> |
-|Mensajes del canal   <br/> |Número de mensajes únicos que el usuario publicó en un chat de equipo durante el período de tiempo especificado.  <br/> |
+|Mensajes del canal   <br/> |Número de mensajes únicos que el usuario publicó en un chat de equipo durante el período de tiempo especificado.   <br/> |
 |Posts   <br/> |Número de mensajes de publicación en todos los canales durante el período de tiempo especificado <br/> |
 |Responde   <br/> |Número de mensajes respondidos en todos los canales durante el período de tiempo especificado. <br/> |
 |Mensajes urgentes    <br/> |Número de mensajes urgentes durante el período de tiempo especificado. <br/> |

@@ -1,6 +1,7 @@
 ---
 title: Directivas de Cumplimiento de comunicaciones
 description: Obtenga más información sobre las directivas de cumplimiento de comunicaciones.
+keywords: Microsoft 365, Microsoft Purview, cumplimiento, cumplimiento de comunicaciones
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,21 +19,23 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 25a8a25497485932ce0aeb12700af1557b4cea29
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 47c7ddbc5ce935e8b9fedb7682daa6af468b66b4
+ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705438"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65015032"
 ---
 # <a name="communication-compliance-policies"></a>Directivas de Cumplimiento de comunicaciones
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## <a name="policies"></a>Directivas
 
 > [!IMPORTANT]
-> No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas en la [solución de cumplimiento de comunicaciones Microsoft 365](https://compliance.microsoft.com/supervisoryreview).
+> No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas en la [solución de cumplimiento de comunicaciones](https://compliance.microsoft.com/supervisoryreview).
 
-Puede crear directivas de cumplimiento de comunicaciones para organizaciones de Microsoft 365 en el Centro de cumplimiento de Microsoft 365. Las directivas de cumplimiento de comunicaciones definen qué comunicaciones y usuarios están sujetos a revisión en su organización, definen qué condiciones personalizadas deben cumplir las comunicaciones y especifican quién debe realizar revisiones. Los usuarios asignados al rol *Administrador de cumplimiento de comunicaciones* pueden configurar directivas y cualquier persona que tenga asignado este rol puede acceder a la página **Cumplimiento de comunicaciones** y a la configuración global de la Centro de cumplimiento de Microsoft 365. Si es necesario, puede exportar el historial de modificaciones a una directiva a un archivo .csv (valores separados por comas) que también incluya el estado de las alertas pendientes de revisión, elementos escalados y elementos resueltos. No se puede cambiar el nombre de las directivas y se pueden eliminar cuando ya no se necesiten.
+Las directivas de cumplimiento de comunicaciones se crean para Microsoft 365 organizaciones en el portal de cumplimiento de Microsoft Purview. Las directivas de cumplimiento de comunicaciones definen qué comunicaciones y usuarios están sujetos a revisión en su organización, definen qué condiciones personalizadas deben cumplir las comunicaciones y especifican quién debe realizar revisiones. Los usuarios asignados al rol *administrador de cumplimiento de comunicaciones* pueden configurar directivas y cualquier persona que tenga asignado este rol puede acceder a la página **Cumplimiento de comunicaciones** y a la configuración global en el portal de cumplimiento de Microsoft Purview. Si es necesario, puede exportar el historial de modificaciones a una directiva a un archivo .csv (valores separados por comas) que también incluya el estado de las alertas pendientes de revisión, elementos escalados y elementos resueltos. No se puede cambiar el nombre de las directivas y se pueden eliminar cuando ya no se necesiten.
 
 ## <a name="policy-templates"></a>Plantillas de directiva
 
@@ -103,15 +106,18 @@ Los mensajes notificados por el usuario de Teams chats son los únicos mensajes 
 
 Los administradores deben asignar inmediatamente revisores personalizados a esta directiva según corresponda para su organización. Esto puede incluir revisores como el oficial de cumplimiento, el responsable de riesgos o los miembros del departamento de recursos humanos. Para personalizar los revisores de los mensajes de chat enviados como mensajes notificados por el usuario, complete los pasos siguientes:
 
-1. Inicie sesión en [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/) con las credenciales de una cuenta de administrador de la organización Microsoft 365.
-2. En el Centro de cumplimiento de Microsoft 365, vaya a **Cumplimiento de comunicaciones**.
+1. Inicie sesión en el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/) con las credenciales de una cuenta de administrador en su organización de Microsoft 365.
+2. En el portal de cumplimiento, vaya a **Cumplimiento de comunicaciones**.
 3. En la pestaña **Directiva** , seleccione la directiva *Mensajes notificados* por el usuario y seleccione **Editar**.
 4. En el panel **Supervisión de mensajes notificados por el usuario** , asigne revisores para la directiva. Los revisores deben tener buzones hospedados en Exchange Online. Cuando los revisores se agregan a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la directiva y proporciona vínculos a información sobre el proceso de revisión.
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
-Para deshabilitar que los usuarios informen Teams mensajes con la *opción Notificar una preocupación*, deshabilite la opción **Informes de usuario final** en el [Centro de administración de Teams](/microsoftteams/manage-teams-in-modern-portal).
+Para deshabilitar que los usuarios informen Teams mensajes con la *opción Notificar una preocupación*, deshabilite la opción **Informes de usuario final** en el [Centro de administración de Teams](/microsoftteams/manage-teams-in-modern-portal). 
 
-## <a name="storage-limit-notification-preview"></a>Notificación de límite de almacenamiento (versión preliminar)
+>[!IMPORTANT]
+>Si usa PowerShell para deshabilitar la opción Informes de **usuario final** en Teams Centro de administración, debe usar [Microsoft Teams módulo cmdlets versión 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) o posterior.
+
+## <a name="storage-limit-notification-preview"></a>Storage notificación de límite (versión preliminar)
 
 Cada directiva de cumplimiento de comunicaciones tiene un tamaño de límite de almacenamiento de 100 GB o 1 millón de mensajes, lo que se alcance primero. A medida que la directiva se acerca a estos límites, los correos electrónicos de notificación se envían automáticamente a los usuarios asignados a los grupos de roles *De* cumplimiento de *comunicaciones o Administrador de cumplimiento de comunicaciones* . Los mensajes de notificaciones se envían cuando el tamaño de almacenamiento o el recuento de mensajes alcanzan el 80, el 90 y el 95 por ciento del límite. Cuando se alcanza el límite de directivas, la directiva se desactiva automáticamente y la directiva deja de procesar mensajes para las alertas.
 
@@ -140,7 +146,7 @@ De forma predeterminada, se muestra la condición **Direction is (Dirección)** 
 
 ### <a name="sensitive-information-types"></a>Tipos de información confidencial
 
-Tiene la opción de incluir tipos de información confidencial como parte de la directiva de cumplimiento de comunicaciones. Los tipos de información confidencial son tipos de datos predefinidos o personalizados que pueden ayudar a identificar y proteger los números de tarjeta de crédito, los números de cuenta bancaria, los números de pasaporte y mucho más. Como parte de [Información sobre la prevención de pérdida de datos](dlp-learn-about-dlp.md), la configuración de información confidencial puede usar patrones, proximidad de caracteres, niveles de confianza e incluso tipos de datos personalizados para ayudar a identificar y marcar el contenido que puede ser confidencial. Los tipos de información confidencial predeterminados son:
+Tiene la opción de incluir tipos de información confidencial como parte de la directiva de cumplimiento de comunicaciones. Los tipos de información confidencial son tipos de datos predefinidos o personalizados que pueden ayudar a identificar y proteger los números de tarjeta de crédito, los números de cuenta bancaria, los números de pasaporte y mucho más. Como parte de [Información sobre la prevención de pérdida de datos de Microsoft Purview](dlp-learn-about-dlp.md), la configuración de información confidencial puede usar patrones, proximidad de caracteres, niveles de confianza e incluso tipos de datos personalizados para ayudar a identificar y marcar el contenido que puede ser confidencial. Los tipos de información confidencial predeterminados son:
 
 - Financiera
 - Medicina y salud
@@ -179,14 +185,14 @@ Los clasificadores globales y entrenables integrados de cumplimiento de comunica
 - **Acoso dirigido**: busca conductas ofensivas dirigidas a personas relacionadas con la raza, el color, la religión, el origen nacional.
 - **Amenaza**: busca amenazas para cometer violencia o daños físicos a una persona o propiedad.
 
-Los clasificadores de imágenes *Adult*, *Racy* y *Gory* examinan los archivos en formatos .jpeg, .png, .gif y .bmp. El tamaño de los archivos de imagen debe ser inferior a 4 megabytes (MB) y las dimensiones de las imágenes deben ser mayores que 50x50 píxeles y mayores que 50 kilobytes (KB) para que la imagen pueda calificar para la evaluación. La identificación de imágenes se admite para Exchange mensajes de correo electrónico en línea y canales de Microsoft Teams y chats.
+Los clasificadores de imágenes *Adult*, *Racy* y *Gory* examinan los archivos en formatos .jpeg, .png, .gif y .bmp. El tamaño de los archivos de imagen debe ser inferior a 4 megabytes (MB) y las dimensiones de las imágenes deben ser mayores que 50x50 píxeles y mayores que 50 kilobytes (KB) para que la imagen pueda calificar para la evaluación. La identificación de imágenes se admite para Exchange Online mensajes de correo electrónico y canales de Microsoft Teams y chats.
 
 Los clasificadores integrados y globales que se pueden entrenar no proporcionan una lista exhaustiva de términos o imágenes en estas áreas. Además, los estándares lingüísticos y culturales cambian continuamente y, a la luz de estas realidades, Microsoft se reserva el derecho de actualizar clasificadores a su discreción. Aunque los clasificadores pueden ayudar a su organización a supervisar estas áreas, los clasificadores no están diseñados para proporcionar el único medio de su organización de supervisar o abordar dicho lenguaje o imágenes. Su organización, no Microsoft, sigue siendo responsable de todas las decisiones relacionadas con la supervisión, el examen y el bloqueo del lenguaje y las imágenes en estas áreas, incluido el cumplimiento de la privacidad local y otras leyes aplicables. Microsoft anima a consultar con el asesor legal antes de la implementación y el uso.
 
 > [!NOTE]
 > Las directivas que usan clasificadores inspeccionarán y evaluarán los mensajes con un recuento de palabras de seis o más. Los mensajes que contienen menos de seis palabras no se evalúan en las directivas mediante clasificadores. Para identificar y tomar medidas en los mensajes más cortos que contienen contenido inadecuado, se recomienda incluir un diccionario de palabras clave personalizado para la supervisión de directivas de cumplimiento de comunicaciones para este tipo de contenido.
 
-Para obtener información sobre los clasificadores entrenables en Microsoft 365, consulte [Introducción a los clasificadores entrenables](classifier-get-started-with.md).
+Para obtener información sobre los clasificadores entrenables, consulte [Introducción a los clasificadores entrenables](classifier-get-started-with.md).
 
 ### <a name="optical-character-recognition-ocr"></a>Reconocimiento óptico de caracteres (OCR)
 
@@ -269,15 +275,15 @@ En el caso de las directivas de cumplimiento de comunicaciones, los siguientes v
 > [!NOTE]
 > La configuración del desencadenador de umbral de directiva de alerta para las actividades admite un valor mínimo de 3 o superior para las directivas de cumplimiento de comunicaciones.
 
-Puede cambiar la configuración predeterminada de los desencadenadores en el número de actividades, el período de las actividades y para usuarios específicos de las directivas de alertas en la página **Directivas de alerta** de la Centro de cumplimiento de Microsoft 365.
+Puede cambiar la configuración predeterminada de los desencadenadores en el número de actividades, el período de las actividades y los usuarios específicos de las directivas de alerta en la página **Directivas de alerta** del portal de cumplimiento de Microsoft Purview.
 
 ### <a name="change-the-severity-level-for-an-alert-policy"></a>Cambio del nivel de gravedad de una directiva de alerta
 
 Si desea cambiar el nivel de gravedad asignado en una directiva de alertas para una directiva de cumplimiento de comunicaciones específica, siga estos pasos:
 
-1. Inicie sesión en [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de la organización Microsoft 365.
+1. Inicie sesión en el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en su organización de Microsoft 365.
 
-2. En el Centro de cumplimiento de Microsoft 365, vaya a **Directivas**.
+2. En el portal de cumplimiento de Microsoft Purview, vaya a **Directivas**.
 
 3. Seleccione **Office 365 alerta** en la página **Directivas** para abrir la página **Directivas de alertas**.
 

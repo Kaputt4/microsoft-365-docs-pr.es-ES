@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo agregar o quitar los miembros que pueden acceder a un caso al administrar un caso de exhibición de documentos electrónicos (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9586fd0f606c3f95cda19ca9d6ae036bc23763dc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ae0404199506d5da18fb1579fbe6a125350afcde
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943203"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001684"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Agregar o quitar miembros de un caso
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Puede agregar o quitar miembros para administrar quién tiene acceso al caso. Sin embargo, antes de que un miembro pueda acceder a un caso de exhibición de documentos electrónicos (Premium) (y realizar tareas en el caso), debe agregar el usuario al grupo de roles del Administrador de exhibición de documentos electrónicos en la página **Permisos** del portal de cumplimiento de Microsoft Purview. Para más información, consulte [Asignar permisos de eDiscovery](./assign-ediscovery-permissions.md).
 
