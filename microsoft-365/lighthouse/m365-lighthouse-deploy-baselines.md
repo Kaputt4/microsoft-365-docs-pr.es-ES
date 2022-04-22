@@ -1,5 +1,5 @@
 ---
-title: Implementar Microsoft 365 Lighthouse base
+title: Implementación de líneas base de Microsoft 365 Lighthouse
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -15,184 +15,184 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo implementar Microsoft 365 Lighthouse líneas base.
-ms.openlocfilehash: 0e19843ee6cfebaf9b37e10929884d0671608451
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo implementar líneas base Microsoft 365 Lighthouse.
+ms.openlocfilehash: 2649094f36903e5607fee28862fa0af683d0986e
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504501"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022875"
 ---
-# <a name="deploy-microsoft-365-lighthouse-baselines"></a>Implementar Microsoft 365 Lighthouse base
+# <a name="deploy-microsoft-365-lighthouse-baselines"></a>Implementación de líneas base de Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse permite implementar configuraciones estándar de inquilino administrado para proteger usuarios, dispositivos y datos dentro de los inquilinos de clientes. Hay siete [configuraciones de línea base predeterminadas](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) que vienen de serie con Lighthouse. Con la característica plan de implementación de Lighthouse, puede ver, probar e implementar configuraciones de seguridad en todos los inquilinos. Un plan de implementación solo está disponible para los inquilinos activos. Una vez incorporado un inquilino, puede comparar la configuración actual de los clientes con la configuración de línea base predeterminada y realizar las acciones adecuadas.
+Microsoft 365 Lighthouse permite implementar configuraciones estándar de inquilinos administrados para proteger usuarios, dispositivos y datos dentro de los inquilinos del cliente. Hay siete [configuraciones de línea base predeterminadas](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) que vienen estándar con Lighthouse. Con la característica de plan de implementación de Lighthouse, puede ver, probar e implementar configuraciones de seguridad en todos los inquilinos. Un plan de implementación solo está disponible para los inquilinos activos. Una vez que se incorpora un inquilino, puede comparar la configuración actual de los clientes con la configuración de línea base predeterminada y realizar las acciones adecuadas.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Asegúrese de que usted y sus inquilinos de clientes cumplen los requisitos enumerados en [Requisitos para Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+Asegúrese de que usted y los inquilinos de sus clientes cumplen los requisitos enumerados en [Requisitos para Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
-## <a name="view-a-deployment-plan"></a>Ver un plan de implementación
+## <a name="view-a-deployment-plan"></a>Visualización de un plan de implementación
 
 1. En la página de navegación izquierda, seleccione **Inquilinos**.
 
-2. En la lista de inquilinos, seleccione el espacio empresarial que desea ver.
+2. En la lista de inquilinos, seleccione el inquilino que desea ver.
 
-3. Seleccione la **pestaña Plan de** implementación.
+3. Seleccione la pestaña **Plan de implementación** .
 
-    La pestaña Plan de implementación proporciona una lista exportable y de búsqueda de cada paso de implementación que se incluye en el plan de implementación del inquilino que incluye la siguiente información para cada paso de implementación:
+    La pestaña Plan de implementación proporciona una lista de cada paso de implementación que se puede buscar y exportar que se incluye en el plan de implementación del inquilino que incluye la siguiente información para cada paso de implementación:
 
     | Columna            | Descripción |
     |-----------------|-------------------------------------------------------------------------------------|
     | Paso de implementación | Descripción del paso de implementación.                                                     |
-    | Estado          | El estado del paso de implementación.                                                  |
+    | Estado          | Estado del paso de implementación.                                                  |
     | Línea base        | Línea base desde la que se deriva el paso de implementación.                             |
-    | Categoría        | Si el paso de implementación está asociado con la administración de dispositivos, identidad o datos. |
-    | Actualizado por última vez    | La fecha en la que se actualizó por última vez el paso de implementación.                             |
+    | Categoría        | Si el paso de implementación está asociado a la administración de dispositivos, identidades o datos. |
+    | Actualizado por última vez    | Fecha en la que se actualizó por última vez el paso de implementación.                             |
 
-4. En la lista, seleccione un paso de implementación que desee revisar.
+4. En la lista, seleccione un paso de implementación que quiera revisar.
 
     La página Paso de implementación proporciona la siguiente información:
 
     | Columna            | Descripción |
     |-------------------|-----------------------------------------------------------------------------------------------|
-    | Resumen        | Un resumen del propósito del paso de implementación.                                         |
+    | Resumen        | Resumen del propósito del paso de implementación.                                         |
     | Línea base       | Línea base desde la que se deriva el paso de implementación.                             |
-    | Categoría       | Si el paso de implementación está asociado con la administración de dispositivos, identidad o datos. |
+    | Categoría       | Si el paso de implementación está asociado a la administración de dispositivos, identidades o datos. |
     | SKU necesaria   | SKU necesarias para completar el paso de implementación.                                      |
-    | Impacto en el usuario    | El impacto de implementar el paso para los usuarios del espacio empresarial.                             |
-    | Para los usuarios | Los vínculos a recursos que los usuarios del inquilino pueden resultar útiles.                             |
-    | Pasos siguientes     | Vínculos e instrucciones sobre los pasos siguientes aplicables.                                |
+    | Impacto en el usuario    | Impacto de la implementación del paso en los usuarios del inquilino.                             |
+    | Para los usuarios | Vínculos a recursos que los usuarios del inquilino pueden resultar útiles.                             |
+    | Siguientes pasos     | Vínculos e instrucciones sobre los pasos siguientes aplicables.                                |
 
-    Los pasos de implementación se componen de uno o varios procesos que deben completarse para cumplir los requisitos del paso de implementación. La página Paso de implementación incluye la tabla de proceso que enumera cada proceso incluido en el paso de implementación y proporciona la siguiente información:
+    Los pasos de implementación incluyen uno o varios procesos que deben completarse. La página Paso de implementación incluye una tabla que enumera cada proceso incluido en el paso de implementación y proporciona la siguiente información:
 
     | Columna            | Descripción |
     |-------------------|-------------------------------------------------------------|
-    | Nombre del proceso      | Nombre del proceso, que, cuando se selecciona, abrirá la pestaña Proceso correspondiente.          |
-    | Estado            | Estado detectado de estas configuraciones de configuración incluidas en el proceso de implementación.           |
-    | Portal de administración | Portal a través del cual se administran las opciones de configuración asociadas con el proceso. |
+    | Nombre del proceso      | Nombre del proceso, que, cuando se selecciona, abrirá la pestaña Proceso aplicable.          |
+    | Estado            | Se detectó el estado de estas configuraciones de configuración incluidas en el proceso de implementación.           |
+    | Portal de administración | Portal a través del cual se administran las configuraciones asociadas al proceso. |
 
-## <a name="deploy-a-deployment-step"></a>Implementar un paso de implementación
-
-1. En la página de navegación izquierda, seleccione **Inquilinos**.
-
-2. En la lista de inquilinos, seleccione el espacio empresarial que desea ver.
-
-3. Seleccione la **pestaña Plan de** implementación.
-
-4. En la lista Paso de implementación, seleccione el paso de implementación que desea implementar.
-
-5. Seleccione **Revisar e implementar**.
-
-6. En el **panel Confirmar configuraciones** , seleccione **Implementar**.
-
-## <a name="test-a-deployment-step"></a>Probar un paso de implementación
-
-Para los pasos de implementación implementados a través de directivas de acceso condicional, puede comparar las opciones de configuración del paso de implementación con las opciones de las directivas existentes sin implementar la configuración en el espacio empresarial.
+## <a name="deploy-a-deployment-step"></a>Implementación de un paso de implementación
 
 1. En la página de navegación izquierda, seleccione **Inquilinos**.
 
-2. En la lista de inquilinos, seleccione el espacio empresarial que desea ver.
+2. En la lista de inquilinos, seleccione el inquilino que desea ver.
 
-3. Seleccione la **pestaña Plan de** implementación.
+3. Seleccione la pestaña **Plan de implementación** .
 
-4. En la lista Paso de implementación, seleccione el paso de implementación que desea implementar.
+4. En la lista Paso de implementación, seleccione un paso de implementación que quiera implementar.
 
 5. Seleccione **Revisar e implementar**.
 
-6. En el **panel Confirmar configuraciones** , seleccione **Probar esta configuración sin una implementación**.
+6. En el panel **Confirmar configuraciones** , seleccione **Implementar**.
+
+## <a name="test-a-deployment-step"></a>Prueba de un paso de implementación
+
+Para los pasos de implementación implementados a través de directivas de acceso condicional, puede comparar la configuración del paso de implementación con la configuración de las directivas existentes sin implementar la configuración en el inquilino.
+
+1. En la página de navegación izquierda, seleccione **Inquilinos**.
+
+2. En la lista de inquilinos, seleccione el inquilino que desea ver.
+
+3. Seleccione la pestaña **Plan de implementación** .
+
+4. En la lista Paso de implementación, seleccione un paso de implementación que quiera implementar.
+
+5. Seleccione **Revisar e implementar**.
+
+6. En el panel **Confirmar configuraciones** , seleccione **Probar esta configuración sin una implementación**.
 
 7. Seleccione **Probar**.
 
-El panel Confirmar configuraciones se cerrará y mostrará la comparación de directivas. Cada directiva dentro del espacio empresarial existente aparecerá en la tabla Configuración detectada.
+El panel Confirmar configuraciones se cerrará y mostrará la comparación de directivas. Cada directiva del inquilino existente se mostrará en la tabla Configuración detectada.
 
 La tabla Configuración detectada enumera cada directiva existente y resume el número de configuraciones y, entre paréntesis, el número de usuarios que se encuentran en uno de los siguientes estados:
 
 | Estado         | Descripción
 |-------------|------------------------------------------------------------|
-| Configuración igual       | Número total de opciones de configuración en el plan de implementación con un valor equivalente en el espacio empresarial.      |
-| Falta configuración     | Número total de opciones de configuración en el plan de implementación a las que falta un valor en el espacio empresarial.      |
-| Configuración en conflicto | Número total de opciones de configuración del plan de implementación que tienen un valor en conflicto en el espacio empresarial. |
+| Configuración igual       | Número total de opciones de configuración en el plan de implementación con un valor equivalente en el inquilino.      |
+| Configuración que falta     | Número total de opciones de configuración en el plan de implementación que faltan un valor en el inquilino.      |
+| Configuración en conflicto | Número total de opciones de configuración del plan de implementación que tienen un valor en conflicto en el inquilino. |
 
-La configuración detectada también se puede ver en una tabla modular que proporciona detalles de configuración para cada directiva en el nivel de configuración y usuario y se puede ordenar por cada uno de los siguientes estados de configuración:
+La configuración detectada también se puede ver en una tabla modular que proporciona detalles de configuración para cada directiva en el nivel de configuración y de usuario y se puede ordenar por cada uno de los siguientes estados de configuración:
 
 | Estado         | Descripción
 |-------------|------------------------------------------------------------|
 | Configuración total       | Número total de opciones de configuración que se incluyen en el proceso de implementación.                        |
-| Configuración igual       | Número total de opciones de configuración en el plan de implementación con un valor equivalente en el espacio empresarial.      |
-| Falta configuración     | Número total de opciones de configuración en el plan de implementación a las que falta un valor en el espacio empresarial.      |
-| Configuración en conflicto | Número total de opciones de configuración del plan de implementación que tienen un valor en conflicto en el espacio empresarial. |
-| Configuración adicional       | Número total de opciones de configuración con un valor en el espacio empresarial, pero ningún valor en el plan de implementación.     |
+| Configuración igual       | Número total de opciones de configuración en el plan de implementación con un valor equivalente en el inquilino.      |
+| Configuración que falta     | Número total de opciones de configuración en el plan de implementación que faltan un valor en el inquilino.      |
+| Configuración en conflicto | Número total de opciones de configuración del plan de implementación que tienen un valor en conflicto en el inquilino. |
+| Configuración adicional       | Número total de opciones de configuración con un valor en el inquilino, pero sin valor en el plan de implementación.     |
 
-Cuando se realiza esta comparación, Lighthouse actualizará automáticamente el estado Detectado, el estado de implementación y el estado paso de implementación.
+Cuando se realice esta comparación, Lighthouse actualizará automáticamente el estado Detectado, El estado de implementación y El paso de implementación.
 
 Si no hay directivas existentes que comparar, seleccione Revisar e implementar para volver a abrir el panel Confirmar configuraciones y seleccione Implementar.
 
-Si hay directivas existentes con las que comparar, puede:
+Si hay directivas existentes con las que comparar, puede hacer lo siguiente:
 
-- Edite las opciones de configuración del plan de implementación y vuelva a probarlas con las directivas  existentes, seleccione Revisar e implementar para volver a abrir el panel Confirmar configuraciones, ajustar las opciones de configuración deseadas, volver a seleccionar la casilla y seleccionar Probar en la parte inferior del panel.
+- Edite la configuración del plan de implementación y vuelva a probarlas con las directivas existentes, seleccione **Revisar e implementar** para volver a abrir el panel Confirmar configuraciones, ajustar los valores de configuración deseados, volver a seleccionar la casilla y seleccionar **Probar** en la parte inferior del panel.
 
 - Edite las directivas existentes en el portal de administración aplicable para conciliar las diferencias:
-  - Aplicar la configuración que falta
-  - Edición de configuraciones en conflicto
+  - Aplicación de la configuración que falta
+  - Edición de la configuración en conflicto
   - Eliminación de directivas existentes
 
 Para cada proceso de implementación que se puede automatizar a través de Lighthouse, hay un estado de implementación y un estado detectado.
 
-- El estado detectado indica en qué medida se implementa actualmente la configuración de este proceso.
-- El estado de implementación es el estado de la última implementación en el espacio empresarial.
+- El estado detectado indica hasta qué punto la configuración de este proceso está implementada actualmente.
+- El estado de la implementación es el estado de la última implementación en el inquilino.
 
-Los pasos de implementación se pueden implementar independientemente de las directivas existentes, pero no se considerarán completados hasta que no haya ninguna configuración en conflicto. Si no se resuelve esta configuración en conflicto, puede afectar a la experiencia del usuario. 
+Los pasos de implementación se pueden implementar independientemente de las directivas existentes, pero no se considerarán completos hasta que no haya ninguna configuración en conflicto. El error al resolver esta configuración en conflicto puede afectar a la experiencia del usuario. 
 
-La implementación del paso de implementación en instancias en las que hay configuraciones iguales presentes en el espacio empresarial desde una directiva existente dará como resultado la duplicación de la configuración existente dentro del espacio empresarial, pero no afectará a la experiencia del usuario. 
+La implementación del paso de implementación en instancias en las que hay valores iguales presentes en el inquilino a partir de una directiva existente dará lugar a la duplicación de la configuración existente dentro del inquilino, pero no afectará a la experiencia del usuario. 
 
-Se proporciona una configuración adicional para el conocimiento, pero no es necesario que tomes medidas.
+Se proporcionan configuraciones adicionales para su reconocimiento, pero no es necesario que tome medidas.
 
-Para obtener más información sobre la administración de conflictos de directivas, [Azure AD documentación sobre acceso condicional](/azure/active-directory/conditional-access/).
+Para obtener más información sobre la administración de conflictos de directivas, consulte [Azure AD documentación de acceso condicional](/azure/active-directory/conditional-access/).
 
-## <a name="update-deployment-step-status"></a>Actualizar el estado del paso de implementación
+## <a name="update-deployment-step-status"></a>Actualización del estado del paso de implementación
 
 1. En la página de navegación izquierda, seleccione **Inquilinos**.
 
-2. En la lista de inquilinos, seleccione el espacio empresarial que desea ver.
+2. En la lista de inquilinos, seleccione el inquilino que desea ver.
 
-3. Seleccione la **pestaña Plan de** implementación.
+3. Seleccione la pestaña **Plan de implementación** .
 
-4. En la lista de pasos de implementación, seleccione el paso de implementación que desea actualizar.
+4. En la lista de pasos de implementación, seleccione un paso de implementación que quiera actualizar.
 
-5. En la **lista desplegable** Dirección para, seleccione un estado de acción.
+5. En la lista desplegable **To address (Para dirección** ), seleccione un estado de acción.
 
     | Estado de la acción                        | Descripción      |
     |---------------------------------------|----------------------------------------|
-    | Para dirección                        | El estado predeterminado de todos los pasos de implementación que NO incluyen varios procesos de pasos de implementación.      |
-    | Planeado                           | El paso de implementación se ha planeado pero aún no se ha completado.                                      |
-    | Riesgo aceptado                     | El usuario ha aceptado el riesgo que de lo contrario se habría evitado aplicando el paso de implementación. |
+    | Para solucionarlo                        | Estado predeterminado de todos los pasos de implementación que NO incluyen varios procesos de paso de implementación.      |
+    | Planeado                           | El paso de implementación se ha planeado, pero aún no se ha completado.                                      |
+    | Riesgo aceptado                     | El usuario ha aceptado el riesgo que, de lo contrario, se habría evitado aplicando el paso de implementación. |
     | Riesgo resuelto a través de terceros | El riesgo se ha resuelto mediante la implementación de una aplicación o software de terceros.             |
     | Resuelto a través de medios alternativos  | El riesgo se ha resuelto a través de medios alternativos, como la implementación de una herramienta interna.    |
     | Configuración manual aplicada      | La configuración prescrita en el plan de implementación se ha aplicado manualmente.                         |
 
-## <a name="share-deployment-step"></a>Paso de implementación de share
+## <a name="share-deployment-step"></a>Paso de implementación para compartir
 
 1. En la página de navegación izquierda, seleccione **Inquilinos**.
 
-2. En la lista de inquilinos, seleccione el espacio empresarial que desea ver.
+2. En la lista de inquilinos, seleccione el inquilino que desea ver.
 
-3. Seleccione la **pestaña Plan de** implementación.
+3. Seleccione la pestaña **Plan de implementación** .
 
-4. En la lista Paso de implementación, seleccione el paso de implementación que desea compartir.
+4. En la lista Paso de implementación, seleccione un paso de implementación que quiera compartir.
 
-5. En la **lista** desplegable Compartir, seleccione una de las siguientes opciones.
+5. En la lista desplegable **Compartir** , seleccione una de las siguientes opciones.
 
     | Opción  | Descripción |
     |-----------|-------------------------------------------------------------------------|
     | Copiar  | Copia un vínculo al paso de implementación en el Portapapeles.                                     |
     | Correo electrónico | Abre el nuevo mensaje de correo electrónico en el equipo local e inserta un vínculo al paso de implementación. |
 
-    El vínculo permitirá a cualquier persona con permisos de la organización ver el plan de implementación del inquilino.
+    El vínculo permitirá a cualquier usuario con permisos de su organización ver el plan de implementación del inquilino.
 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Introducción al uso de líneas base para implementar configuraciones de inquilino estándar](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (artículo)\
-[Microsoft 365 de la página faro Inquilinos](m365-lighthouse-tenants-page-overview.md) (artículo)\
-[Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)\
-[Configurar Microsoft 365 Lighthouse seguridad del portal](m365-lighthouse-configure-portal-security.md) (artículo) 
+[Información general sobre el uso de líneas base de Microsoft 365 Lighthouse para implementar configuraciones de inquilino estándar](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (artículo)\
+[Información general de la página Windows 365 (PC en la nube) de Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md) (artículo)\
+[preguntas más frecuentes sobre Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (artículo)\
+[Configuración de la seguridad del portal de Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md) (artículo) 

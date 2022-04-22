@@ -1,5 +1,5 @@
 ---
-title: Visualización y administración de usuarios de riesgo
+title: Visualización y administración de usuarios de riesgo en Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver y administrar usuarios de riesgo.
-ms.openlocfilehash: 0b7567404b909927a80b69184299baae131f8eb7
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: dad86fedeb27f13752bcd1c07efd0d51aa33cf2a
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824276"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022941"
 ---
-# <a name="view-and-manage-risky-users"></a>Visualización y administración de usuarios de riesgo
+# <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Visualización y administración de usuarios de riesgo en Microsoft 365 Lighthouse
 
 Microsoft recopila y analiza billones de señales de inicio de sesión de usuario cada día. Estas señales se usan para ayudar a crear buenos patrones de comportamiento de inicio de sesión de usuario e identificar posibles intentos de inicio de sesión de riesgo. Azure Active Directory (Azure AD) Identity Protection usa estas señales para revisar los intentos de inicio de sesión de los usuarios y tomar medidas si hay actividad sospechosa.
 
@@ -44,7 +44,7 @@ Se deben cumplir las condiciones siguientes para que los usuarios puedan aparece
 
 - El inquilino del cliente debe tener una licencia de Azure AD Premium para cada usuario. Para obtener más información sobre qué licencias admiten Azure AD Identity Protection, consulte [¿Qué es Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection)
 
-- El inquilino del cliente debe estar activo dentro de Microsoft 365 Lighthouse. Para determinar si un inquilino está activo, consulte [Microsoft 365 Lighthouse información general de la página Inquilinos](m365-lighthouse-tenant-list-overview.md).
+- El inquilino del cliente debe estar activo dentro de Microsoft 365 Lighthouse. Para determinar si un inquilino está activo, consulte [Información general de la página Windows 365 (PC en la nube) en Microsoft 365 Lighthouse](m365-lighthouse-tenant-list-overview.md).
 
 ## <a name="review-detected-risks-and-take-action"></a>Revisar los riesgos detectados y tomar medidas
 

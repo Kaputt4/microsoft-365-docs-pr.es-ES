@@ -1,5 +1,5 @@
 ---
-title: Mitigación de amenazas con Antivirus de Microsoft Defender
+title: Mitigación de amenazas en Microsoft 365 Lighthouse con Antivirus de Microsoft Defender
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la mitigación de amenazas con Antivirus de Microsoft Defender.
-ms.openlocfilehash: 428370ce5e49bba0bc9489143864f9b88b2e8c3f
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: da8a10b1ffc1932a6b4f84447028d2fa9b865e64
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824352"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023665"
 ---
-# <a name="mitigate-threats-with-microsoft-defender-antivirus"></a>Mitigación de amenazas con Antivirus de Microsoft Defender
+# <a name="mitigate-threats-in-microsoft-365-lighthouse-with-microsoft-defender-antivirus"></a>Mitigación de amenazas en Microsoft 365 Lighthouse con Antivirus de Microsoft Defender
 
 Microsoft 365 Lighthouse permite a los partners investigar y mitigar las amenazas en todos los inquilinos. También puede iniciar exámenes antivirus en dispositivos, asegurarse de que los dispositivos obtienen las actualizaciones más recientes de Antivirus de Microsoft Defender y revisar las acciones pendientes después de los exámenes antivirus. Lighthouse solo admite dispositivos que ejecutan Windows 10 o posterior.
 
@@ -130,7 +130,7 @@ También puede reiniciar varios dispositivos si selecciona la casilla situada ju
 ## <a name="related-content"></a>Contenido relacionado
 
 [Requisitos para Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (artículo)\
-[Introducción a la página de administración de amenazas](m365-lighthouse-threat-management-page-overview.md) (artículo)\
+[Información general de la página Administración de amenazas en Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (artículo)\
 [Crear una directiva de cumplimiento en Microsoft Intune](/mem/intune/protect/create-compliance-policy) (artículo)\
 [Activar Antivirus de Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows) (artículo)\
 [Inteligencia de seguridad de Microsoft](https://www.microsoft.com/wdsi/threats) (página web)

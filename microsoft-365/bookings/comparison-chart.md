@@ -1,5 +1,5 @@
 ---
-title: 'Gráfico de comparación: Bookings aplicación web frente a Bookings Teams aplicación'
+title: 'Comparación: Bookings aplicación web frente a Bookings Teams aplicación'
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
 description: Gráfico de comparación que muestra las diferencias de características entre la aplicación web Bookings y la aplicación Bookings Teams.
-ms.openlocfilehash: a7f853157378916ade7035898b149a92c8818636
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 190278e662ff596d681aa8d0160de3c706089593
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715173"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023753"
 ---
 # <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>Gráfico de comparación: Bookings aplicación web frente a Bookings Teams aplicación
 

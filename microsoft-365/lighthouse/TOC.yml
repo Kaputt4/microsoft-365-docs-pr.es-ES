@@ -1,6 +1,6 @@
 - name: Microsoft 365 Lighthouse
   items:
-    - name: Información general sobre Microsoft 365 Lighthouse
+    - name: Introducción a Microsoft 365 Lighthouse
       href: m365-lighthouse-overview.md
     - name: Requisitos para Microsoft 365 Lighthouse
       href: m365-lighthouse-requirements.md
@@ -8,57 +8,57 @@
   items:
     - name: Registrarse
       href: m365-lighthouse-sign-up.md
-- name: Seguridad Microsoft 365 Lighthouse
+- name: Protección de Microsoft 365 Lighthouse
   items:
-    - name: Configurar la seguridad del portal
+    - name: Configuración de la seguridad del portal
       href: m365-lighthouse-configure-portal-security.md
     - name: Introducción a los permisos
       href: m365-lighthouse-overview-of-permissions.md
-    - name: Revisar registros de auditoría
+    - name: Revisión de los registros de auditoría
       href: m365-lighthouse-review-audit-logs.md
-- name: Proteger clientes con líneas base
+- name: Protección de clientes con líneas base
   items:
-    - name: Introducción al uso de líneas base para implementar configuraciones de inquilino estándar
+    - name: Información general sobre el uso de líneas base para implementar configuraciones de inquilino estándar
       href: m365-lighthouse-deploy-standard-tenant-configurations-overview.md
-    - name: Implementar líneas base
+    - name: Implementación de líneas base
       href: m365-lighthouse-deploy-baselines.md
-- name: Administrar inquilinos
+- name: Administración de inquilinos
   items:
-    - name: Introducción a la página Inquilinos
+    - name: Información general de la página Inquilinos
       href: m365-lighthouse-tenants-page-overview.md
     - name: Administrar la lista de inquilinos
       href: m365-lighthouse-manage-tenant-list.md
-    - name: Ver el estado del servicio de inquilino
+    - name: Visualización del estado del servicio de inquilino
       href: m365-lighthouse-view-service-health.md
-- name: Administrar usuarios dentro de los inquilinos
+- name: Administración de usuarios dentro de inquilinos
   items:
-    - name: Introducción a la página de usuarios
+    - name: Información general de la página Usuarios
       href: m365-lighthouse-users-page-overview.md
     - name: Bloquear el inicio de sesión de usuario
       href: m365-lighthouse-block-user-signin.md
-    - name: Administrar la autenticación multifactor
+    - name: Administración de la autenticación multifactor
       href: m365-lighthouse-manage-mfa.md
-    - name: Administrar el restablecimiento de contraseñas de autoservicio
+    - name: Administración del autoservicio de restablecimiento de contraseña
       href: m365-lighthouse-manage-sspr.md
-    - name: Restablecer una contraseña de usuario
+    - name: Restablecimiento de una contraseña de usuario
       href: m365-lighthouse-reset-user-password.md
-    - name: Buscar usuarios
+    - name: Búsqueda de usuarios
       href: m365-lighthouse-search-for-users.md
-    - name: Ver y administrar usuarios riesgosos
+    - name: Visualización y administración de usuarios de riesgo
       href: m365-lighthouse-view-manage-risky-users.md
-- name: Administrar dispositivos
+- name: Administración de dispositivos
   items:
-    - name: Introducción a la página de cumplimiento de dispositivos
+    - name: Información general de la página Cumplimiento de dispositivos
       href: m365-lighthouse-device-compliance-page-overview.md
-    - name: Comparar la configuración de directiva de cumplimiento de dispositivos
+    - name: Comparación de la configuración de la directiva de cumplimiento de dispositivos
       href: m365-lighthouse-compare-compliance-policies.md
-    - name: Windows 365 de página (equipos en la nube)
+    - name: Información general de la página Windows 365 (PC en la nube)
       href: m365-lighthouse-win365-page-overview.md
 - name: Administrar amenazas
   items:
-    - name: Introducción a la página de administración de amenazas
+    - name: Información general de la página Administración de amenazas
       href: m365-lighthouse-threat-management-page-overview.md
-    - name: Mitigar amenazas con Antivirus de Microsoft Defender
+    - name: Mitigación de amenazas con Antivirus de Microsoft Defender
       href: m365-lighthouse-mitigate-threats.md
 - name: Obtener ayuda y soporte técnico
   items:
@@ -66,7 +66,7 @@
       href: m365-lighthouse-get-help-and-support.md
     - name: Problemas conocidos
       href: m365-lighthouse-known-issues.md
-    - name: Solucionar problemas y resolver mensajes de error
+    - name: Solución de problemas y mensajes de error
       href: m365-lighthouse-troubleshoot.md
-    - name: Preguntas más frecuentes (preguntas frecuentes)
+    - name: Preguntas más frecuentes (P+F)
       href: m365-lighthouse-faq.yml

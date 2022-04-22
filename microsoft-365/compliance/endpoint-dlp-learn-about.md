@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prevención de pérdida de datos en punto de conexión amplía la supervisión de las actividades de archivo y las acciones de protección de esos archivos a los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento '
-ms.openlocfilehash: e84d2de72e05991a7d8374a2e5214df90fb939d9
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 76649559b1110c02f29584afdfb7e48f57a41f1e
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953313"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023379"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>Obtener información sobre la Prevención de pérdida de datos en punto de conexión
 
@@ -95,7 +95,7 @@ Si solo quiere supervisar los datos de las coincidencias de directivas, puede de
 
 DLP en punto de conexión supervisa la actividad basada en un tipo de extensiones multipropósito de correo Internet (MIME), por lo que las actividades se capturan incluso si se cambia la extensión de archivo.
 
-### <a name="file-types-preview"></a>Tipos de archivo (versión preliminar)
+### <a name="file-types"></a>Tipos de archivo
 
 Los tipos de archivo son una agrupación de formatos de archivo que se usan para proteger flujos de trabajo o áreas de negocio específicos. Puede usar uno o varios tipos de archivo como condiciones en las directivas DLP.
 
@@ -107,7 +107,7 @@ Los tipos de archivo son una agrupación de formatos de archivo que se usan para
 |archivar  |herramientas de compresión y archivo de archivos | .zip, .zipx, .rar, .7z, .tar, .gz        |
 |correo electrónico    |Outlook |.pst, .ost, .msg         |
 
-### <a name="file-extensions-preview"></a>Extensiones de archivo (versión preliminar)
+### <a name="file-extensions"></a>Extensiones de archivo
 
 Si los tipos de archivo no cubren las extensiones de archivo que necesita enumerar como una condición en una directiva, puede usar extensiones de archivo separadas por comas en su lugar.
 

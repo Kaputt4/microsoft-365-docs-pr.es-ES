@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, consulte una lista de problemas conocidos de Lighthouse por área de características.
-ms.openlocfilehash: 3be71d225f1aa9974bb73e3b2e9d421ea81e16fa
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: aa3b5980b60e966b4edfbac4a6e8d706c399e943
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824364"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022787"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Problemas conocidos con Microsoft 365 Lighthouse
 
@@ -91,5 +91,5 @@ Actualmente, DAP es necesario para incorporar clientes a Lighthouse. También se
 ## <a name="related-content"></a>Contenido relacionado
 
 [preguntas más frecuentes sobre Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (artículo)\
-[Solución de problemas y resolución de problemas y mensajes de error en Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (artículo)\
+[Solución de problemas y mensajes de error en Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (artículo)\
 [Obtener ayuda y soporte técnico para Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (artículo)

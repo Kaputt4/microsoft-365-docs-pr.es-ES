@@ -1,5 +1,5 @@
 ---
-title: Visualización del estado del servicio de inquilino
+title: Visualización del estado del servicio de inquilino en Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo ver el estado del servicio de inquilino.
-ms.openlocfilehash: 5c15e004108606ce00a90e0fa3d675d00806b430
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: c5cfed4449fbdbb6cb63bc80dfd8e23ca4d5c4bb
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822724"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023621"
 ---
-# <a name="view-tenant-service-health"></a>Visualización del estado del servicio de inquilino
+# <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>Visualización del estado del servicio de inquilino en Microsoft 365 Lighthouse
 
 Puede ver el estado del servicio de los inquilinos que administra en Microsoft 365 Lighthouse. Estado del servicio incluye incidentes y avisos para varios servicios, incluidos Microsoft Intune, servicios de identidad de Azure Active Directory (Azure AD) y servicios en la nube de administración de dispositivos móviles (MDM). También puede ver cuántos de los inquilinos administrados se ven afectados por incidentes. Por ejemplo, si uno de los inquilinos tiene problemas, puede comprobar la página de Estado del servicio para determinar si se trata de un problema conocido con una resolución en curso o si un cambio reciente puede afectar a ellos. Esto podría ahorrarle tiempo para solucionar problemas y reducir las llamadas de soporte técnico.
 

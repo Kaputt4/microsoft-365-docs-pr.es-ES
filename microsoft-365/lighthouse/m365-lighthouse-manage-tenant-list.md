@@ -1,5 +1,5 @@
 ---
-title: Administrar la lista de inquilinos
+title: Administrar la lista de inquilinos en Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo administrar la lista de inquilinos.
-ms.openlocfilehash: 2f9d38bad24d20c53a1bafe44b1b831369957b71
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: b4bffcfd5b8962253e68938a956949ca8470f818
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824386"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022435"
 ---
-# <a name="manage-your-tenant-list"></a>Administrar la lista de inquilinos
+# <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>Administrar la lista de inquilinos en Microsoft 365 Lighthouse
 
 Para ayudarle a administrar la lista de inquilinos en Microsoft 365 Lighthouse, puede aplicar etiquetas personalizadas a los inquilinos. Estas etiquetas se pueden usar para organizar los inquilinos y también pueden ayudarle a filtrar las vistas existentes y la información disponible para los conjuntos de inquilinos pertinentes. Puede administrar las etiquetas desde la página Inquilinos. Una vez creados y asignados, puede filtrar los datos dentro de las páginas Inquilinos, Usuarios, Dispositivos, Administración de amenazas y Windows 365 en función de una etiqueta.
 
@@ -106,4 +106,4 @@ Después de crear y asignar etiquetas, puede usarlas para filtrar los inquilinos
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Introducción a la](m365-lighthouse-sign-up.md) [página de cumplimiento](m365-lighthouse-device-compliance-page-overview.md) de dispositivos de Microsoft 365 Lighthouse (artículo) Microsoft 365 Lighthouse (artículo) [Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)
+[Registrarse para obtener Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (artículo) [Introducción a la página Cumplimiento de dispositivos en Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (artículo) [Microsoft 365 Lighthouse P+F](m365-lighthouse-faq.yml) (artículo)

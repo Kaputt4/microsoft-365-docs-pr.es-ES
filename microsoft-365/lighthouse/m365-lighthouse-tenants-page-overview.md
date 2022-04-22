@@ -1,5 +1,5 @@
 ---
-title: Introducción a la página de inquilinos de Microsoft 365 Lighthouse
+title: Información general de la página Inquilinos de Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Inquilinos.
-ms.openlocfilehash: 44111d62a9b8df9bf3b05ddbaa9cb4f3937159a4
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 7b8e26ddbe68059a9c5ecf4d5e396fd11c49be71
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823529"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023291"
 ---
-# <a name="microsoft-365-lighthouse-tenants-page-overview"></a>Introducción a la página de inquilinos de Microsoft 365 Lighthouse
+# <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>Información general de la página Inquilinos de Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse permite administrar cuentas de inquilino seleccionando **Inquilinos** en el panel de navegación izquierdo para abrir la página Inquilinos. La página Inquilinos contiene una lista de todos los inquilinos. Puede seleccionar un inquilino para ver información detallada, incluidos los detalles de contacto y el estado de la implementación.
 
@@ -70,7 +70,7 @@ Una vez que inactiva un inquilino, no puede realizar ninguna acción en el inqui
 
 ## <a name="tenant-tags"></a>Etiquetas de inquilino
 
-Para ayudar a organizar los inquilinos y filtrar fácilmente las vistas existentes, puede crear y asignar etiquetas a los inquilinos. Para más información, consulte [Administrar la lista de inquilinos](m365-lighthouse-manage-tenant-list.md).
+Para ayudar a organizar los inquilinos y filtrar fácilmente las vistas existentes, puede crear y asignar etiquetas a los inquilinos. Para más información, consulte [Administración de la lista de inquilinos en Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md).
 
 > [!NOTE]
 > Puede crear hasta 30 etiquetas en todo el inquilino.
@@ -135,6 +135,6 @@ La pestaña Planes de implementación también incluye las siguientes opciones:
 
 [Requisitos para Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (artículo)\
 [preguntas más frecuentes sobre Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (artículo)\
-[Administrar la lista de inquilinos](m365-lighthouse-manage-tenant-list.md) (artículo)\
-[Información general sobre el uso de líneas base para implementar configuraciones de inquilino estándar](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (artículo)\
+[Administrar la lista de inquilinos en Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md) (artículo)\
+[Información general sobre el uso de líneas base de Microsoft 365 Lighthouse para implementar configuraciones de inquilino estándar](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (artículo)\
 [Implementación Microsoft 365 Lighthouse líneas base](m365-lighthouse-deploy-baselines.md) (artículo)

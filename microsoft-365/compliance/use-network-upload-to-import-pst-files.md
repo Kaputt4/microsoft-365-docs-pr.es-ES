@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Para administradores: obtenga información sobre cómo usar la carga en la red para importar en bloque varios archivos PST a buzones de usuario en Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8d63b83f8052fdd3ce973bba15df72ee4c7d6989
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 10a0b2e076c3a8d4fc6910e16ba89c3ce75d2d2d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935443"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999814"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Usar la carga en la red para importar los archivos PST de su organización a Microsoft 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Este artículo está dirigido a administradores. ¿Está intentando importar archivos PST a su propio buzón? Consulte [Importar el correo electrónico, los contactos y el calendario desde un archivo .pst de Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)
@@ -142,7 +144,7 @@ Ahora está listo para usar la herramienta AzCopy para cargar archivos PST en Mi
     |:-----|:-----|
     | Origen |El primer campo especifica el directorio de origen de la organización que contiene los archivos PST que se cargarán en Microsoft 365. Como alternativa, puede especificar una ubicación de Azure Storage como ubicación de origen de los archivos PST que se van a cargar. <br/> Asegúrese de incluir el valor de este campo entre comillas dobles (" ").  <br/> <br/>**Ejemplos**: <br/>`"\\FILESERVER01\PSTs"` <br/> O bien  <br/>`"https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&st=2021-09-21T07:25:53Z&se=2021-09-21T15:25:53Z&sv=2020-08-04&sr=c&sig=xxxxxx"`|  
     | Destino |Especifica la URL de SAS que ha obtenido en el paso 1.  <br/> No olvide incluir el valor de este parámetro entre comillas dobles (" ").<br/><br/>**Nota:** Si usa la dirección URL de SAS en un script o archivo por lotes, tenga cuidado con determinados caracteres que necesitan escapar. Por ejemplo, debe cambiar `%` a `%%` y debe cambiar `&` a `^&`.<br/><br/>**Sugerencia:** (opcional) puede especificar una subcarpeta en la ubicación de Azure Storage en la que cargar los archivos PST. Para ello, agregue una ubicación de subcarpeta (después de "ingestiondata") en la dirección URL de SAS. En el primer ejemplo no se especifica una subcarpeta. Esto significa que los PST se cargan en la raíz (denominada *ingestiondata*) de la ubicación de Azure Storage. El segundo ejemplo carga los archivos PST en una subcarpeta (denominada *PSTFiles*) en la raíz de la ubicación de Azure Storage.  <br/><br/>**Ejemplos**: <br/> `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> O bien  <br/>  `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
-    | `--recursive` |Esta marca opcional especifica el modo recursivo para que la herramienta AzCopy copie los archivos PST que se encuentran en subcarpetas del directorio de origen especificado por el campo de origen. El valor predeterminado de esta marca es `true`.<br/>**Nota:** Si incluye esta marca, los archivos PST de las subcarpetas tendrán un nombre de ruta de acceso de archivo diferente en la ubicación Azure Storage después de cargarlos. Tendrá que especificar el nombre exacto de la ruta de acceso de archivo en el archivo CSV que cree en el paso 4.|
+    | `--recursive` |Esta marca opcional especifica el modo recursivo para que la herramienta AzCopy copie los archivos PST que se encuentran en subcarpetas del directorio de origen especificado por el campo de origen. El valor predeterminado de esta marca es `true`.<br/>**Note:** si incluye esta marca, los archivos PST de las subcarpetas tendrán un nombre de ruta de archivo diferente en la ubicación de Azure Storage una vez cargados. Tendrá que especificar el nombre exacto de la ruta de acceso de archivo en el archivo CSV que cree en el paso 4.  |
     | `--s2s-preserve-access-tier` | Esta marca opcional solo es necesaria cuando la ubicación de origen es una ubicación Azure Storage de uso general v2 que admite niveles de acceso. Para el escenario de importación de PST, no es necesario conservar el nivel de acceso al copiar archivos PST de su cuenta de Azure Storage a la ubicación de Azure Storage proporcionada por Microsoft. En este caso, puede incluir esta marca y usar un valor de `false`. No es necesario usar esta marca al copiar archivos PST desde una cuenta de Azure Storage clásica, que no admite niveles de acceso.|
    |||
 

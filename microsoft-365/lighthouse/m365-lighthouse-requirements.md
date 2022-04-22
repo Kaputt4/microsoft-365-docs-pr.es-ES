@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP), obtenga una lista de los requisitos para usar Microsoft 365 Lighthouse.
-ms.openlocfilehash: d5f04c39cbce9726fefa4b410be63cd5ee4e959d
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 06d5c5bb0de76ecc8ba9fc28677f480f5f4d5561
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823682"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023269"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Requisitos para Microsoft 365 Lighthouse
 
@@ -62,7 +62,7 @@ Antivirus de Microsoft Defender forma parte del sistema operativo Windows y est�
 ## <a name="related-content"></a>Contenido relacionado
 
 [Configuración de la seguridad del portal de Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md) (artículo)\
-[introducción a la página de cumplimiento de dispositivos Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (artículo)\
-[introducción a la página Microsoft 365 Lighthouse Users](m365-lighthouse-users-page-overview.md) (artículo)\
-[introducción a la página de administración de amenazas de Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (artículo)\
+[Información general de la página Cumplimiento de dispositivos en Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (artículo)\
+[Información general de la página Usuarios de Microsoft 365 Lighthouse](m365-lighthouse-users-page-overview.md) (artículo)\
+[Información general de la página Administración de amenazas en Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (artículo)\
 [Preguntas más frecuentes sobre Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (artículo)

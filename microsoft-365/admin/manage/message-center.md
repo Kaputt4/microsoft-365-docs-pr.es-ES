@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenga información general sobre Microsoft 365 Centro de mensajes y su rol en el seguimiento de características nuevas y modificadas y otros anuncios importantes.
-ms.openlocfilehash: 6fabb66407eb21dc97880eaf2532b89ce02f9281
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2d2f76d401e68fb7494cd74b169bcfe6cd6e6758
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935289"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022919"
 ---
 # <a name="message-center"></a>Centro de mensajes
 
@@ -270,7 +270,7 @@ Al abrir un mensaje en un panel de lectura, puede usar las flechas de **arriba**
 
 En el Centro de mensajes de Microsoft 365 no deja de llegarle información útil sobre los cambios en los servicios de Microsoft 365. Puede resultar difícil hacer un seguimiento de los cambios que requieren tareas, cuándo y por quién, y seguir cada tarea hasta su finalización. También puede anotar algo y etiquetarlo para comprobarlo más adelante. Puede hacer todo esto y más si sincroniza sus mensajes del Centro de administración de Microsoft 365 con Microsoft Planner. Para obtener más información, vea [Seguir sus tareas del centro de mensajes en Planner](/office365/planner/track-message-center-tasks-planner).
 
-Para obtener información general sobre el Centro de mensajes, vea [Centro de mensajes en Microsoft 365](message-center.md). O bien, para obtener información sobre cómo establecer sus preferencias de idioma para habilitar la traducción automática para publicaciones del Centro de mensajes, vea [Traducción de idioma para publicaciones del Centro de mensajes](language-translation-for-message-center-posts.md). Si desea programar una manera alternativa de obtener información de estado del servicio en tiempo real y comunicaciones del Centro de mensajes, consulte [Trabajar con la API de comunicaciones de servicio en Microsoft Graph](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta).
+Para obtener información general sobre el Centro de mensajes, vea [Centro de mensajes en Microsoft 365](message-center.md). O bien, para obtener información sobre cómo establecer sus preferencias de idioma para habilitar la traducción automática para publicaciones del Centro de mensajes, vea [Traducción de idioma para publicaciones del Centro de mensajes](language-translation-for-message-center-posts.md). Si desea programar una manera alternativa de obtener información de estado del servicio en tiempo real y comunicaciones del Centro de mensajes, consulte [Trabajar con la API de comunicaciones de servicio en Microsoft Graph](/graph/api/resources/service-communications-api-overview).
 
 ## <a name="unsubscribe-from-message-center-emails"></a>Cancelación de la suscripción a los correos electrónicos del Centro de mensajes
 
