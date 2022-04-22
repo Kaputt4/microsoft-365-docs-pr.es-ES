@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información sobre la prueba de soluciones de Microsoft Purview y sobre cómo registrarse.
-ms.openlocfilehash: a019ac3a2e16dfd6ae83ba1564f0031f77757b62
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ed7848a12483062c2873f4735ecb2188cad373a1
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971999"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023687"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>Acerca de la prueba de soluciones de Microsoft Purview
 
@@ -70,7 +70,7 @@ Use nuestro [cuaderno de estrategias de prueba](compliance-easy-trials-complianc
 
 #### <a name="finding-support"></a>Búsqueda de soporte
 
-Las organizaciones pueden usar FastTrack para la compatibilidad con la implementación de la prueba si el inquilino tiene al menos 150 licencias. Obtenga más [información sobre FastTrack](https://docs.microsoft.com/fasttrack/introduction).
+Las organizaciones pueden usar FastTrack para la compatibilidad con la implementación de la prueba si el inquilino tiene al menos 150 licencias. Obtenga más [información sobre FastTrack](/fasttrack/introduction).
 
 #### <a name="extending-the-trial"></a>Ampliación de la prueba
 
@@ -98,6 +98,10 @@ Si decide no actualizar a las soluciones de nivel E5, a menos que se indique lo 
 
   El Administrador de cumplimiento de Microsoft Purview puede ayudarle a lo largo del proceso de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, estar al corriente de las normativas y certificaciones e informar a los auditores. Más información sobre el [Administrador de cumplimiento](compliance-manager.md).
 
+- **Administración del ciclo de vida de los datos**
+
+  Automatice la cobertura de retención mediante ámbitos de directivas adaptables. Esta característica le permite dirigir dinámicamente las directivas de retención a usuarios, grupos o sitios específicos. Estas directivas se actualizan automáticamente cuando se producen cambios en la organización. Además, las directivas de retención que usan ámbitos adaptables no están sujetas a límites de ubicación. Más información sobre los [ámbitos de directivas adaptables](retention.md#adaptive-or-static-policy-scopes-for-retention).
+
 - **Prevención de pérdida de datos**
 
   La prevención de pérdida de datos (DLP) de Microsoft Purview le ayuda a controlar el uso compartido y la utilización de información confidencial en dispositivos, aplicaciones y servicios. Con las pruebas, puede ampliar la cobertura de las directivas DLP a Teams y a dispositivos, proteger el contenido incluso más confidencial mediante clasificadores entrenables y coincidencia exacta de datos (EDM) y empezar a trabajar rápidamente con nuestras directivas DLP recomendadas.  [Obtener más información acerca de la prevención de pérdida de datos](dlp-learn-about-dlp.md)
@@ -106,10 +110,6 @@ Si decide no actualizar a las soluciones de nivel E5, a menos que se indique lo 
 
   - Las directivas existentes permanecerán activadas a menos que las desactive.
   - Si edita directivas DLP que incluyen las ubicaciones de Teams o Dispositivos después de que finalice la prueba, dichas ubicaciones se quitarán de la directiva.
-
-- **Administración del ciclo de vida de los datos**
-
-  Automatice la cobertura de retención mediante ámbitos de directivas adaptables. Esta característica le permite dirigir dinámicamente las directivas de retención a usuarios, grupos o sitios específicos. Estas directivas se actualizan automáticamente cuando se producen cambios en la organización. Además, las directivas de retención que usan ámbitos adaptables no están sujetas a límites de ubicación. Más información sobre los [ámbitos de directivas adaptables](retention.md#adaptive-or-static-policy-scopes-for-retention).
 
 - **eDiscovery**
 
@@ -144,6 +144,7 @@ Si decide no actualizar a las soluciones de nivel E5, a menos que se indique lo 
 - **Administración de registros**
 
   Use las características integradas de Administración de registros de Microsoft Purview para:
+
   - Clasificar el contenido como un registro para evitar que los usuarios editen, según lo requieran las normativas, las leyes o la directiva de la organización
   - Aplicar etiquetas de retención al contenido automáticamente cuando coincida con los criterios especificados mediante directivas de etiquetas de aplicación automática
   - Usar directivas de ámbito adaptable para dirigir dinámicamente las directivas de etiquetas de retención a ubicaciones, sin límite en el número de ubicaciones que se incluyen
