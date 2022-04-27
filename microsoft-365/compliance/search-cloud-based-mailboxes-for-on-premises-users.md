@@ -2,8 +2,8 @@
 title: Buscar los datos de chat de Teams de usuarios locales
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Los administradores pueden usar las herramientas de eDiscovery en Microsoft 365 para buscar y exportar datos de chat de Teams para usuarios locales en una implementación híbrida de Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e1f15922e84a68538e20ccb3ad0030bd5c2bd5f1
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e532dc629df1ddc2e3ceaa94a639723dae483714
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995368"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077806"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Buscar los datos de chat de Teams de usuarios locales
 

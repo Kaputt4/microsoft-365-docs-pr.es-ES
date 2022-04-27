@@ -2,7 +2,7 @@
 title: Usar los cmdlets de PowerShell de Implementación centralizada para administrar complementos
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 1/24/2020
 audience: Admin
 ms.topic: article
@@ -19,17 +19,17 @@ f1.keywords:
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
-description: Use los cmdlets de PowerShell de implementación centralizada para ayudarle a implementar y administrar complementos de Office para su organización de Microsoft 365.
-ms.openlocfilehash: 9f9a3e36c6e1c76d99d8abb7dc47f97a04541322
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+description: Use los cmdlets de PowerShell de implementación centralizada para ayudarle a implementar y administrar complementos de Office para su organización Microsoft 365.
+ms.openlocfilehash: 07e0f69cd95bc1553adea96242bf44eb9f1217f1
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824748"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078474"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Usar los cmdlets de PowerShell de Implementación centralizada para administrar complementos
 
-Como administrador global Microsoft 365, puede implementar complementos de Office a los usuarios a través de la característica Implementación centralizada (consulte [Implementación de complementos Office en el Centro de administración](../admin/manage/manage-deployment-of-add-ins.md). Además de implementar Office complementos a través de la Centro de administración de Microsoft 365, también puede usar Microsoft PowerShell. Instale el [módulo de implementación de Add-In centralizado de O365 para Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).
+Como administrador global Microsoft 365, puede implementar complementos de Office en los usuarios a través de la característica Implementación centralizada (consulte [Implementación de complementos de Office en el centro de administración](../admin/manage/manage-deployment-of-add-ins.md). Además de implementar Office complementos a través de la Centro de administración de Microsoft 365, también puede usar Microsoft PowerShell. Instale el [módulo de implementación de Add-In centralizado de O365 para Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).
 
 Después de descargar el módulo, abra una ventana de Windows PowerShell normal y ejecute el siguiente cmdlet:
 

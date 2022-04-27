@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 recommendations: false
 description: más información sobre las condiciones y excepciones de la directiva dlp
-ms.openlocfilehash: f4a3521d0e5aab73cc16d97e0aea9c5830d9ddec
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: cd252002f2fcef3e3935dd44b1333e801bcba46d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64762065"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090459"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>Condiciones, excepciones y acciones de directiva DLP
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Las condiciones y excepciones de las directivas DLP identifican los elementos confidenciales a los que se aplica la directiva. Las acciones definen lo que sucede como consecuencia de una condición de excepción que se cumple.
 
@@ -78,7 +80,7 @@ Para configurar la ubicación de la dirección del remitente en un nivel de regl
 |Las propiedades especificadas del remitente incluyen cualquiera de estas palabras|condición: *SenderADAttributeContainsWords* <br/><br/> excepción: *ExceptIfSenderADAttributeContainsWords*|Primera propiedad:  `ADAttribute` <br/><br/> Segunda propiedad: `Words`|Mensajes en los que el atributo Active Directory especificado del remitente contiene alguna de las palabras especificadas.|
 |Las propiedades especificadas del remitente coinciden con estos patrones de texto|condición: *SenderADAttributeMatchesPatterns* <br/><br/> exception: *ExceptIfSenderADAttributeMatchesPatterns*|Primera propiedad:  `ADAttribute` <br/><br/> Segunda propiedad: `Patterns`|Mensajes en los que el atributo Active Directory especificado del remitente contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
 
-### <a name="recipients"></a>Destinatarios
+### <a name="recipients"></a>Recipientes
 
 |condición o excepción en DLP|parámetros de condición o excepción en Microsoft 365 PowerShell|tipo de propiedad|description|
 |---|---|---|---|
@@ -94,11 +96,12 @@ Para configurar la ubicación de la dirección del remitente en un nivel de regl
 
 |condición o excepción en DLP|parámetros de condición o excepción en Microsoft 365 PowerShell|tipo de propiedad|description|
 |---|---|---|---|
-|El asunto contiene palabras o frases|condición: *SubjectContainsWords* <br/><br/> excepción: *ExceptIf SubjectContainsWords*|Words|Mensajes que contengan las palabras especificadas en el campo Subject.|
-|El asunto coincide con patrones|condición: *SubjectMatchesPatterns* <br/><br/> exception: *ExceptIf SubjectMatchesPatterns*|Patrones|Mensajes en los que el campo Asunto contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
-|El contenido contiene|condición: *ContentContainsSensitiveInformation* <br/><br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Mensajes o documentos que contienen información confidencial según lo definido por las directivas de prevención de pérdida de datos (DLP).|
-|El asunto o el cuerpo coinciden con el patrón|condición: *SubjectOrBodyMatchesPatterns* <br/><br/> excepción: *ExceptIfSubjectOrBodyMatchesPatterns*|Patrones|Los mensajes en los que el campo de asunto o el cuerpo del mensaje contienen patrones de texto que coinciden con las expresiones regulares especificadas.|
-|Subject o Body contiene palabras|condición: *SubjectOrBodyContainsWords* <br/><br/> excepción: *ExceptIfSubjectOrBodyContainsWords*|Words|Mensajes que tienen las palabras especificadas en el campo de asunto o el cuerpo del mensaje|
+|El asunto contiene palabras o frases|condición: *SubjectContainsWords* <br/> excepción: *ExceptIf SubjectContainsWords*|Words|Mensajes que contengan las palabras especificadas en el campo Subject.|
+|El asunto coincide con patrones|condición: *SubjectMatchesPatterns* <br/> exception: *ExceptIf SubjectMatchesPatterns*|Patrones|Mensajes en los que el campo Asunto contiene patrones de texto que coinciden con las expresiones regulares especificadas.|
+|El contenido contiene|condición: *ContentContainsSensitiveInformation* <br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Mensajes o documentos que contienen información confidencial según lo definido por las directivas de prevención de pérdida de datos (DLP) de Microsoft Purview.|
+|El asunto o el cuerpo coinciden con el patrón|condición: *SubjectOrBodyMatchesPatterns* <br/> excepción: *ExceptIfSubjectOrBodyMatchesPatterns*|Patrones|Los mensajes en los que el campo de asunto o el cuerpo del mensaje contienen patrones de texto que coinciden con las expresiones regulares especificadas.|
+|Subject o Body contiene palabras|condición: *SubjectOrBodyContainsWords* <br/> excepción: *ExceptIfSubjectOrBodyContainsWords*|Words|Mensajes que tienen las palabras especificadas en el campo de asunto o el cuerpo del mensaje|
+|
 
 ### <a name="attachments"></a>Datos adjuntos
 
@@ -147,7 +150,6 @@ En esta tabla se describen las acciones que están disponibles en DLP.
 |Agregar el administrador del remitente como destinatario|AddRecipients|Primera propiedad: *AddedManagerAction*<br/><br/>Segunda propiedad: *Field*|Agrega el administrador del remitente al mensaje como el tipo de destinatario especificado (To, Cc o Bcc) o redirige el mensaje al administrador del remitente sin notificar al remitente ni al destinatario. Esta acción solo funciona si el atributo Manager del remitente se define en Active Directory. Este parámetro usa la sintaxis @{AddManagerAsRecipientType = "\<To \| Cc \| Bcc\>"}|
 Anteponer asunto|PrependSubject|Cadena|Agrega el texto especificado al principio del campo Subject del mensaje. Considere la posibilidad de usar un espacio o un signo de dos puntos (:) como último carácter del texto especificado para diferenciarlo del texto del asunto original.  <br/><br/>Para evitar que se agregue la misma cadena a los mensajes que ya contienen el texto del asunto (por ejemplo, respuestas), agregue la excepción "The subject contains words" (ExceptIfSubjectContainsWords) a la regla.|
 |Aplicación de declinación de responsabilidades de HTML|ApplyHtmlDisclaimer|Primera propiedad: *Text*<br/><br/>Segunda propiedad: *Location*<br/><br/>Tercera propiedad: *Acción de reserva*|Aplica la declinación de responsabilidades HTML especificada a la ubicación necesaria del mensaje.<br/><br/>Este parámetro usa la sintaxis : @{ Text = " " ; Location = \<Append \| Prepend\>; FallbackAction = \<Wrap \| Ignore \| Reject\> }|
-|Eliminación de Office 365 cifrado de mensajes y protección de derechos|RemoveRMSTemplate|No aplicable|Quita Office 365 cifrado aplicado en un correo electrónico|
+|Eliminación del cifrado de mensajes y la protección de derechos|RemoveRMSTemplate|No aplicable|Quita el cifrado de mensajes aplicado en un correo electrónico|
 |Entrega del mensaje a la cuarentena hospedada |*Quarantine*|N/D| Esta acción se encuentra actualmente en **versión preliminar pública**. Durante esta fase, los correos electrónicos en cuarentena por directivas DLP mostrarán el tipo de directiva como ExchangeTransportRule.<br/><br/> Entrega el mensaje a la cuarentena en EOP. Para obtener más información, vea [Mensajes de correo electrónico en cuarentena en EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
-
-<!--|Modify Subject|ModifySubject|PswsHashTable | Remove text from the subject line that matches a specific pattern and replace it with different text. See the example below. You can: <br/><br/>- **Replace** all matches in the subject with the replacement text <br/><br/>- **Append** to remove all matches in the subject and inserts the replacement text at the end of the subject. <br/><br/>- **Prepend** to remove all matches and inserts the replacement text at the beginning of the subject. See ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|-->
+|Modificar asunto|ModifySubject|PswsHashTable | Quite el texto de la línea de asunto que coincida con un patrón específico y reemplácelo por otro texto. Consulte el ejemplo siguiente. Puede: <br/><br/>- **Reemplazar** todas las coincidencias del asunto por el texto de reemplazo <br/><br/>- **Anexar** para quitar todas las coincidencias en el asunto e inserta el texto de reemplazo al final del asunto. <br/><br/>- **Anteponga** para quitar todas las coincidencias e inserte el texto de reemplazo al principio del asunto. Consulte ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|

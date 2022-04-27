@@ -2,8 +2,8 @@
 title: Configuración de un conector para importar datos de Epic EHR
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de registros electrónicos de atención sanitaria (EHR) del sistema Epic de su organización a Microsoft 365. Esto le permite usar datos de EPIC EHR en directivas de administración de riesgos internos para ayudarle a detectar la actividad de acceso no autorizado a los datos de los pacientes por parte de los empleados.
-ms.openlocfilehash: 1dfcedbc6242f16ce476dddd642567bef69c966f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 55f33358af7b53dc6042fce94b1ddc92e9f130fa
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000144"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078008"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>Configuración de un conector para importar datos de auditoría de Epic EHR (versión preliminar)
 

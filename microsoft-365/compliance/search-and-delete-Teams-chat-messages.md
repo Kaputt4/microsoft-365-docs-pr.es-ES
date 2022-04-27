@@ -2,8 +2,8 @@
 title: Busque y elimine mensajes de chat en Teams
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use eDiscovery (Premium) y el Explorador de Microsoft Graph para buscar y purgar mensajes de chat en Microsoft Teams y responder a incidentes de desbordamiento de datos en Teams.
-ms.openlocfilehash: a692af67b486b4bb353df8ce8be1653d17f26be8
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 1d161da18e6bc7fa1c19b0a8c720171dd9d23adc
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998473"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090882"
 ---
 # <a name="search-and-purge-chat-messages-in-teams"></a>Buscar y purgar mensajes de chat en Teams
 

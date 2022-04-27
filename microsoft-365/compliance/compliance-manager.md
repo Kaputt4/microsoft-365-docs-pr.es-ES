@@ -18,17 +18,17 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Compliance Manager ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos, y sugiere acciones recomendadas para ayudar a abordar los riesgos.
-ms.openlocfilehash: 1d5f036b8bc97da431ed6e41017d59e01db749a4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: deb3c3755a8afbab0071b8f829da620676f926ff
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997106"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078234"
 ---
 # <a name="microsoft-purview-compliance-manager"></a>Administrador de cumplimiento de Microsoft Purview
 
 > [!TIP]
-> *¿Sabía que puede probar las versiones premium de las nueve soluciones de Microsoft Purview de forma gratuita?* Use la prueba de soluciones de Purview de 90 días para explorar cómo las sólidas funcionalidades de Purview pueden ayudar a su organización a satisfacer sus necesidades de cumplimiento. Microsoft 365 E3 y Office 365 E3 los clientes pueden empezar ahora en el centro de pruebas del [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Obtenga información sobre [quién puede registrarse y los términos de prueba](compliance-easy-trials.md).
+> *¿Sabía que puede probar las versiones premium de las nueve soluciones de Microsoft Purview de forma gratuita?* Utilice la prueba de 90 días de las soluciones Purview para explorar cómo las sólidas capacidades de Purview pueden ayudar a su organización a satisfacer sus necesidades de cumplimiento. Los clientes Microsoft 365 E3 y Office 365 E3 pueden empezar ahora en el [Centro de pruebas del portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Obtenga información sobre [las personas que pueden registrarse y los términos de la prueba](compliance-easy-trials.md).
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -41,7 +41,7 @@ ms.locfileid: "64997106"
 Vea el vídeo siguiente para obtener información sobre cómo el Administrador de cumplimiento puede ayudar a simplificar la forma en que su organización administra el cumplimiento:
 <br>
 <br>
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VdoO]
 
 El Administrador de cumplimiento ayuda a simplificar el cumplimiento y reducir el riesgo proporcionando lo siguiente:
 

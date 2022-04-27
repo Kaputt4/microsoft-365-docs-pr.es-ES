@@ -2,8 +2,8 @@
 title: Confirmar una colección de borrador en un conjunto de revisión
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: ''
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Después de crear e iterar en una colección de borradores, puede confirmarla en un conjunto de revisión. Al confirmar una colección de borradores, los elementos recopilados se agregan a la revisión establecida en el caso. Una vez que los elementos recopilados están en el conjunto de revisión, puede analizarlos, revisarlos y exportarlos.
-ms.openlocfilehash: f908d17d804487cd5e7e93085e418f9a94915c8e
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: c798981d485b6128e76ea3f0c0fbf189b4f9634a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997942"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090481"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-ediscovery-premium"></a>Confirmación de una colección de borradores en un conjunto de revisión en eDiscovery (Premium)
 

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: 63684384f8f9d496767ef66ee6628653945ad8c9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: aa1cdf4b8fa6c1d558b005eb80031a20be4872af
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935947"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65088854"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -37,7 +37,7 @@ Los informes están disponibles para los últimos 7, 30, 90 o 180 días. Los dat
   
 ## <a name="watch-act-on-a-usage-report-in-office-365"></a>Mirar: Actuar sobre un informe de uso de Office 365
   
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/fb726f8e-aead-43b2-ba0f-53ba5b886bf7?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
   
 ## <a name="how-to-get-to-the-reports-dashboard"></a>Cómo obtener acceso al panel de informes
 

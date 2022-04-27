@@ -2,8 +2,8 @@
 title: Buscar contenido en un caso de exhibición de documentos electrónicos (estándar)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Busque contenido que pueda ser relevante para un caso de exhibición de documentos electrónicos (estándar).
-ms.openlocfilehash: 00a7c7bdd565a5fc184281fa467db3c56b1c6288
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 372f8beba2567c24e8af75acf4d11e3fe6220f2c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995346"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090415"
 ---
 # <a name="search-for-content-in-a-ediscovery-standard-case"></a>Buscar contenido en un caso de exhibición de documentos electrónicos (estándar)
 
@@ -69,7 +69,7 @@ Para crear una búsqueda de eDiscovery (estándar):
       > [!NOTE]
       > Existe un límite máximo de 20 filas en la lista de palabras clave, con el fin de reducir los problemas causados por listas de palabras clave demasiado grandes.
 
-   3. Puede agregar condiciones de búsqueda para recibir un conjunto de resultados más selecto. Cada condición agrega una cláusula a la consulta de búsqueda que se crea y se ejecuta cuando se inicia la búsqueda. Una condición se conecta lógicamente a la consulta de palabras clave (especificada en el cuadro de palabras clave) mediante el operador **c:c**, que tiene una función parecida al operador **Y**. Eso significa que los elementos tienen que satisfacer la consulta de palabra clave y una o más condiciones para que se incluyan en los resultados. De esta manera, las condiciones permiten restringir los resultados. Para obtener una lista y una descripción de las condiciones que puede usar en una consulta de búsqueda, consulte [Condiciones de búsqueda](keyword-queries-and-search-conditions.md#search-conditions).
+   3. Puede agregar condiciones de búsqueda para recibir un conjunto de resultados más selecto. Cada condición agrega una cláusula a la consulta de búsqueda que se crea y se ejecuta cuando se inicia la búsqueda. Una condición se conecta lógicamente a la consulta de palabras clave (especificada en el cuadro de palabras clave) mediante el operador **c:c**, que tiene una función parecida al operador **Y**. Eso significa que los elementos tienen que satisfacer la consulta de palabra clave y una o más condiciones para que se incluyan en los resultados. De esta manera, las condiciones permiten restringir los resultados. Para obtener una lista y una descripción de las condiciones que puede usar en una consulta de búsqueda, vea [Condiciones de búsqueda](keyword-queries-and-search-conditions.md#search-conditions).
 
 8. Revise la configuración de búsqueda (y edítela si es necesario) y envíe la búsqueda para iniciarla.
 

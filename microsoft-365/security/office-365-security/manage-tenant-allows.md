@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar los permisos en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad2a55d19f60bf310b62ac13dfbe2563709673d2
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ad2ef693848b664be6ec9b48cc4fc320a8b4b9c2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970951"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090152"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Agregar permisos a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -117,7 +117,7 @@ Permitir archivos en la página **Envíos** de Microsoft 365 Defender.
    - **Tipo de suplantación**: seleccione uno de los valores siguientes:
      - **Interno**: el remitente suplantado está en un dominio que pertenece a su organización (un [dominio aceptado](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
      - **Externo**: el remitente suplantado está en un dominio externo.
-   - **Acción**: seleccione **Permitir** o **Bloquear**.
+   - **Acción**: seleccione **Permitir**.
 
 4. Cuando haya terminado, haga clic en **Agregar**.
 

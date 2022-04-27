@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe de uso del explorador de Microsoft mediante el panel informes de Microsoft 365 del Centro de administración de Microsoft 365.
-ms.openlocfilehash: 29b4161b9bb6cbc509d6541e13fa9222628534b4
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 5515c00b5c7fc64a6f0295bdce724e5b798fb018
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782025"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078309"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 informes en el Centro de administración: uso del explorador microsoft
 
-El panel informes de Microsoft 365 muestra información general sobre la actividad en los productos de la organización. Le permite profundizar en informes individuales de nivel de producto para proporcionarle información más detallada sobre las actividades dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso del explorador microsoft, puede obtener información sobre Internet Explorer, Microsoft Edge (versión anterior) y el nuevo uso de Microsoft Edge. Los informes de uso se basan en Microsoft 365 servicios en línea a los que se accede mediante un explorador microsoft.
+El panel informes de Microsoft 365 muestra información general sobre la actividad en los productos de la organización. Le permite profundizar en informes individuales de nivel de producto para proporcionarle información más detallada sobre las actividades dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de uso del explorador microsoft, puede obtener información sobre Internet Explorer, Microsoft Edge (versión anterior) y el nuevo uso de Microsoft Edge. Los informes de uso se basan en Microsoft 365 servicios en línea a los que se accede mediante un explorador Microsoft en cualquier dispositivo que use una cuenta de Microsoft 365.
 
 ## <a name="how-to-get-to-the-microsoft-browser-usage-report"></a>Cómo acceder al informe de uso del explorador Microsoft
 
@@ -49,7 +49,7 @@ Se trata de una característica de tiempo limitado que actualmente solo está di
 
 :::image type="content" alt-text="Informe de uso del explorador Microsoft." source="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png" lightbox="../../media/95557c88-24ee-417d-a828-96ba00b17aaf.png":::
 
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |1. |El informe **de uso del explorador Microsoft** se puede ver para ver las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. |
 |2. |Los datos de cada informe suelen cubrir hasta los últimos siete días. |

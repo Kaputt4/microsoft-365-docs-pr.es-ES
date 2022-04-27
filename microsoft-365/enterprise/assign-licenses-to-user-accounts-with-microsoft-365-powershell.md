@@ -2,7 +2,7 @@
 title: Asignación de licencias de Microsoft 365 a cuentas de usuario con PowerShell
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
@@ -21,16 +21,16 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: En este artículo, aprenderá a usar PowerShell para asignar una licencia de Microsoft 365 a usuarios sin licencia.
-ms.openlocfilehash: 3c92b3baaa0b8d67a5d5a626951b296be2516436
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 7f01ac335941c2f7b0ba425f5aff963056ce0da8
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941707"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091443"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Asignación de licencias de Microsoft 365 a cuentas de usuario con PowerShell
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Los usuarios no pueden usar ningún Microsoft 365 servicios hasta que su cuenta tenga asignada una licencia de un plan de licencias. Puede usar PowerShell para asignar rápidamente licencias a cuentas sin licencia. 
 

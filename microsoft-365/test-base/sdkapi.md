@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 14bfa8711d5cff46b8cce02950c087844384b9f9
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 6ae0fdf9cc49faaaff84eb3f96e076d1efba8a4c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953790"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077445"
 ---
 # <a name="manage-your-resource-with-sdk--apis"></a>Administración del recurso con LAS API de & del SDK
 
@@ -108,7 +108,7 @@ Consulte los vínculos siguientes para obtener más información sobre la API de
 
 - [Prueba de la documentación base del SDK de Python](/python/api/overview/azure/mgmt-testbase-readme)
 - [Prueba del ejemplo base del SDK de Python](https://aka.ms/testbase-sample-py)
-- [Patrón de uso general de Azure del SDK de Python](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries)
+- [Patrón de uso general de Azure del SDK de Python](/azure/developer/python/sdk/azure-sdk-library-usage-patterns)
 
 **API REST**:
 

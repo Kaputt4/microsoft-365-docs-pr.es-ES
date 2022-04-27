@@ -2,8 +2,8 @@
 title: Configuración de un conector para archivar Skype Empresarial datos en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de Skype Empresarial a Microsoft 365.
-ms.openlocfilehash: 510eea94519b6f2278b9319da8c37b683639680c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 5fa8b0ddaa46a181fca4d2539a3ff4778e47c632
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992422"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078277"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>Configuración de un conector para archivar datos Skype Empresarial
 
