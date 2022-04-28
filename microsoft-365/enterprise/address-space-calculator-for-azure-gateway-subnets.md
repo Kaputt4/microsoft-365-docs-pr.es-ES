@@ -2,7 +2,7 @@
 title: Calculadora de espacio de direcciones para subredes de puerta de enlace de Azure
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 01/07/2021
 audience: ITPro
 ms.topic: landing-page
@@ -16,27 +16,27 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 description: 'Resumen: calcule el espacio de direcciones de una subred de puerta de enlace de Azure con C3, Python o PowerShell.'
-ms.openlocfilehash: 129c64e4484110517edf3640861636324e59de57
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: a19233b6ec68c92dbf65ecb6a73fc1a0a16e6d31
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681796"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094888"
 ---
 # <a name="address-space-calculator-for-azure-gateway-subnets"></a>Calculadora de espacio de direcciones para subredes de puerta de enlace de Azure
 
-Una red virtual (VNet) en servicios de infraestructura de Azure que esté conectada a otras redes debe tener una subred de puerta de enlace. Los procedimientos recomendados para definir la subred de puerta de enlace son:
+Una red virtual (VNet) en los servicios de infraestructura de Azure que está conectada a otras redes debe tener una subred de puerta de enlace. Los procedimientos recomendados para definir la subred de puerta de enlace son:
 
 - La longitud del prefijo de la subred de puerta de enlace puede tener una longitud máxima de prefijo de 29 (por ejemplo, 10.119.255.248/29), pero la recomendación actual es que use una longitud de prefijo de 27 (por ejemplo, 10.119.255.224/27).
 - Al definir el espacio de direcciones de la subred de puerta de enlace, use la última parte del espacio de direcciones de la red virtual.
 
-Para la segunda recomendación, puede determinar el espacio de direcciones de la subred de puerta de enlace estableciendo los bits usados para la subred de puerta de enlace en 0 y los bits restantes en el espacio de direcciones de la red virtual en 1. Para calcular rápidamente el espacio de direcciones de subred de puerta de enlace sin tener que convertir a binario y volver a decimal, puede usar una aplicación de consola escrita en C# o Python o con un bloque de comandos de PowerShell.
+Para la segunda recomendación, puede determinar el espacio de direcciones de la subred de puerta de enlace estableciendo los bits usados para la subred de puerta de enlace en 0 y los bits restantes en el espacio de direcciones de la red virtual en 1. Para calcular rápidamente el espacio de direcciones de subred de puerta de enlace sin tener que convertir en binario y volver a decimal, puede usar una aplicación de consola escrita en C# o Python o con un bloque de comandos de PowerShell.
 
-Este artículo contiene C#, Python y bloques de código de PowerShell que calculan el espacio de direcciones de subred de puerta de enlace en función de los valores de w.x.y.z/n para el prefijo de dirección de red virtual y la longitud del prefijo de subred de puerta de enlace.
+Este artículo contiene bloques de código de C#, Python y PowerShell que calculan el espacio de direcciones de subred de puerta de enlace en función de los valores de w.x.y.z/n para el prefijo de dirección de red virtual y la longitud del prefijo de subred de puerta de enlace.
 
-## <a name="c-code-block"></a>C# de código
+## <a name="c-code-block"></a>Bloque de código de C#
 
-Usa este bloque de código para crear una aplicación de consola en C#.
+Use este bloque de código para crear una aplicación de consola en C#.
 
 ```c#
 using System; 
@@ -110,7 +110,7 @@ namespace ConsoleApplication1
 
 ## <a name="python-code-block"></a>Bloque de código de Python
 
-Usa este bloque de código para crear una aplicación de consola en Python.
+Use este bloque de código para crear una aplicación de consola en Python.
 
 ```python
 import math 
@@ -149,7 +149,7 @@ print(gwAddrPref)
 
 ## <a name="powershell-command-block"></a>Bloque de comandos de PowerShell
 
-Rellene los valores y ejecute el bloque de comandos resultante en una ventana de PowerShell o en el Entorno de script integrado (ISE) de PowerShell.
+Rellene los valores y ejecute el bloque de comandos resultante en una ventana de PowerShell o en el entorno de script integrado (ISE) de PowerShell.
 
 ```powershell
 # Specify the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet: 

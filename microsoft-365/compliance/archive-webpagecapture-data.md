@@ -2,8 +2,8 @@
 title: Configuración de un conector para archivar datos de páginas web en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos de captura de páginas web de Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: f4ba343d8c1a06f8c1eaf88189cae5e013a76414
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 1e8fdc71a2d37a80488db4d2a62ae1ab77aeb123
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001530"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094083"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>Configuración de un conector para archivar datos de páginas web
 

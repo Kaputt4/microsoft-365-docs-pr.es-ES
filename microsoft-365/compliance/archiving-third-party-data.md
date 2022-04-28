@@ -2,8 +2,8 @@
 title: Uso de conectores de datos para importar y archivar datos de terceros en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo importar y archivar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos para Microsoft 365 buzones.
-ms.openlocfilehash: 820c4e2fb92720940a8b4f207d43aea649ef16e7
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 75a1136c38c0b893babd1cd349dbe34aa9bbf8cd
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997260"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093578"
 ---
 # <a name="learn-about-connectors-for-third-party-data"></a>Más información sobre los conectores para datos de terceros
 
@@ -207,7 +207,7 @@ Puede aplicar una [directiva de retención](retention.md) a los buzones de usuar
 
 La característica [de administración de registros](records-management.md) de Microsoft 365 permite declarar datos de terceros como un registro. Esto lo pueden hacer manualmente los usuarios que aplican una etiqueta de retención que marca los datos de terceros en su buzón como registro. También puede aplicar automáticamente etiquetas de retención mediante la identificación de información confidencial, palabras clave o tipos de contenido en datos de terceros.
 
-### <a name="communication-compliance"></a>Cumplimiento de las comunicaciones
+### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
 
 Puede usar [cumplimiento de comunicaciones](communication-compliance.md) para examinar datos de terceros a fin de asegurarse de que cumplen los estándares de datos de su organización. Para ello, detecte, capture y tome medidas correctivas para los mensajes inadecuados de su organización. Por ejemplo, puede supervisar los datos de terceros que importa para el lenguaje ofensivo, la información confidencial y el cumplimiento normativo.
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0bfec0b56a67b1242d8dfd76b845aa273a76d27e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: cb17e2a3624471031eb4f72199705d6b8fe06979
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667260"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092875"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Trabajar con resultados de consulta de búsqueda avanzada
 
@@ -42,7 +42,7 @@ Aunque puede crear consultas [de búsqueda avanzadas](advanced-hunting-overview.
 - Visualización de resultados como tabla o gráfico
 - Exportar tablas y gráficos
 - Explorar en profundidad la información detallada de la entidad
-- Ajustar las consultas directamente desde los resultados o aplicar filtros
+- Ajustar las consultas directamente desde los resultados
 
 ## <a name="view-query-results-as-a-table-or-chart"></a>Visualización de los resultados de la consulta como tabla o gráfico
 
@@ -52,12 +52,12 @@ De forma predeterminada, la búsqueda avanzada muestra los resultados de la cons
 |--|--|
 | **Table** | Muestra los resultados de la consulta en formato tabular |
 | **Gráfico de columnas** | Representa una serie de elementos únicos en el eje X como barras verticales cuyos altos representan valores numéricos de otro campo. |
-| **Gráfico de columnas apiladas** | Representa una serie de elementos únicos en el eje X como barras verticales apiladas cuyo alto representa valores numéricos de uno o varios campos |
 | **Gráfico circular** | Representa los pasteles seccionales que representan elementos únicos. El tamaño de cada gráfico circular representa valores numéricos de otro campo. |
-| **Gráfico de anillos** | Representa arcos seccionales que representan elementos únicos. La longitud de cada arco representa valores numéricos de otro campo. |
 | **Gráfico de líneas** | Traza valores numéricos para una serie de elementos únicos y conecta los valores trazados |
 | **Gráfico de dispersión** | Traza valores numéricos para una serie de elementos únicos |
 | **Gráfico de áreas** | Traza valores numéricos para una serie de elementos únicos y rellena las secciones debajo de los valores trazados. |
+| **Gráfico de áreas apiladas** | Traza valores numéricos para una serie de elementos únicos y apila las secciones rellenas debajo de los valores trazados.  |
+| **Gráfico de tiempo** | Traza valores por recuento en una escala de tiempo lineal |
 
 ### <a name="construct-queries-for-effective-charts"></a>Construcción de consultas para gráficos efectivos
 

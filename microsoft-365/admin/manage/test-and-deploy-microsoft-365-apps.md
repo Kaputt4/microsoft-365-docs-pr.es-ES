@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Busque, pruebe e implemente aplicaciones de asociados de Microsoft y Microsoft para usuarios y grupos de su organización desde el portal aplicaciones integradas de la Centro de administración de Microsoft 365.
-ms.openlocfilehash: 2baf6aea136736b1239df9a4da7b7e6a5b456ea6
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 491315b36a7698399bcd22c60173db8cec482148
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782399"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094668"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Prueba e implementación de Aplicaciones Microsoft 365 por parte de los asociados en el portal de aplicaciones integradas
 
@@ -31,10 +31,10 @@ Para obtener más información sobre cómo los asociados crean estas aplicacione
 
 El portal de aplicaciones integradas solo es accesible para los administradores globales y solo está disponible para los clientes de todo el mundo. Esta característica no está disponible en nubes soberanas y gubernamentales.
 
-El portal aplicaciones integradas muestra una lista de aplicaciones, que incluye aplicaciones únicas y aplicaciones Microsoft 365 de asociados que se implementan en su organización. Solo se enumeran las aplicaciones web, las aplicaciones SPFx, los complementos de Office y las aplicaciones de Teams. En el caso de las aplicaciones web, puede ver dos tipos de aplicaciones.
+El portal aplicaciones integradas muestra una lista de aplicaciones, que incluye aplicaciones únicas y aplicaciones Microsoft 365 de asociados que se implementan en su organización. Solo se muestran aplicaciones web, aplicaciones SPFx, complementos de Office y aplicaciones de Teams. En el caso de las aplicaciones web, puede ver dos tipos de aplicaciones.
 
 - Aplicaciones SaaS que están disponibles en appsource.microsoft.com y que los administradores pueden implementar dando su consentimiento en nombre de la organización.
-- Aplicaciones de la galería saml que están vinculadas a complementos de Office.
+- Aplicaciones de la galería saml que están vinculadas con complementos de Office.
 
 ## <a name="manage-apps-in-the-integrated-apps-portal"></a>Administración de aplicaciones en el portal de aplicaciones integradas
 
@@ -107,7 +107,7 @@ No podrá implementar una sola aplicación de tienda ni Aplicaciones Microsoft 3
 
 ## <a name="prepare-to-deploy-add-ins-in-integrated-apps"></a>Preparación para implementar complementos en aplicaciones integradas
 
-Los complementos de Office le ayudan a personalizar los documentos y simplificar la forma en que accede a la información en la web (vea Empezar a usar el complemento de Office). 
+Office Complementos le ayudan a personalizar los documentos y a simplificar la forma en que accede a la información en la web (consulte Inicio del uso del complemento de Office). 
 
 Los complementos proporcionan las siguientes ventajas: 
 
@@ -179,7 +179,7 @@ Puede realizar la consulta opuesta para comprobar si un grupo es miembro de cual
 
 Tenga en cuenta que puede usar el Azure Active Directory Graph API para ejecutar consultas para buscar la lista de grupos dentro de un grupo. Para obtener más información, vea [Operaciones en grupos | Referencia de API de Graph](/previous-versions/azure/ad/graph/api/groups-operations). 
 
-## <a name="recommended-approach-for-deploying-office-add-ins"></a>Enfoque recomendado para implementar los Complementos de Office 
+## <a name="recommended-approach-for-deploying-office-add-ins"></a>Enfoque recomendado para implementar complementos de Office 
 Para implementar complementos mediante un enfoque por fases, se recomienda lo siguiente: 
 1. Implemente el complemento en un pequeño conjunto de participantes y miembros del departamento de TI. Puede activar la marca **¿Se trata de una implementación de prueba**? Si la implementación se realiza correctamente, vaya al paso 2. 
 
@@ -189,7 +189,7 @@ Para implementar complementos mediante un enfoque por fases, se recomienda lo si
 
 En función del tamaño de la audiencia de destino, puede agregar o quitar pasos de implementación.  
 
-## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Implementar un Complemento de Office con el Centro de administración 
+## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Implementación de un complemento de Office mediante el Centro de administración 
 
 1. En el centro de administración, seleccione **Configuración** y, a continuación, seleccione **Aplicaciones integradas**. 
 
@@ -225,12 +225,12 @@ Los administradores globales y los administradores de Exchange pueden asignar un
 La opción adecuada para su organización depende de la configuración. Sin embargo, se recomienda realizar asignaciones mediante grupos. Como administrador, es posible que le resulte más fácil administrar complementos mediante el uso de grupos y el control de la pertenencia de esos grupos en lugar de asignar usuarios individuales cada vez. En algunas situaciones, es posible que quiera restringir el acceso a un pequeño conjunto de usuarios mediante la realización de asignaciones a usuarios específicos mediante la asignación manual de usuarios. 
 
 ### <a name="more-about-office-add-ins-security"></a>Más información sobre Office seguridad de complementos 
-Los complementos de Office combinan un archivo de manifiesto XML que contiene algunos metadatos sobre el complemento, pero lo más importante es que apunta a una aplicación web que contiene todo el código y la lógica. Las funcionalidades de los complementos pueden variar. Estos son algunos ejemplos de las acciones que pueden realizar los complementos:
+Office complementos combinan un archivo de manifiesto XML que contiene algunos metadatos sobre el complemento, pero lo más importante apunta a una aplicación web que contiene todo el código y la lógica. Las funcionalidades de los complementos pueden variar. Estos son algunos ejemplos de las acciones que pueden realizar los complementos:
 - Mostrar datos. 
 - Leer el documento de un usuario para proporcionar servicios contextuales. 
 - Leer datos del documento de un usuario y escribir datos en él para proporcionar valor a ese usuario.  
 
-Para obtener más información sobre los tipos y las funcionalidades de los complementos de Office, consulte [Información general sobre la plataforma de complementos de Office](/office/dev/add-ins/overview/office-add-ins), especialmente la sección "Anatomía de un complemento de Office". 
+Para obtener más información sobre los tipos y funcionalidades de los complementos de Office, consulte [Office introducción a la plataforma de complementos](/office/dev/add-ins/overview/office-add-ins), especialmente la sección "Anatomía de un complemento de Office". 
 
 Para poder interactuar con el documento del usuario, el complemento debe declarar qué permisos necesita en el manifiesto. Un modelo de permisos de acceso de la API de JavaScript de cinco niveles proporciona la base para la privacidad y la seguridad de los usuarios de los complementos de panel de tareas. La mayoría de los complementos de la Tienda Office son del nivel ReadWriteDocument y casi todos los complementos admiten, como mínimo, el nivel ReadDocument. Para obtener más información sobre los niveles de permisos, consulte [Solicitar permisos para el uso de la API en los complementos del panel de tareas y de contenido](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins). 
 
@@ -289,7 +289,7 @@ Hay dos casos en los que un administrador de Exchange no podrá implementar un c
 - Si un complemento está vinculado a dos o más complementos y aplicaciones web, y al menos uno de estos complementos lo implementa otro administrador (exchange/global) y la asignación de usuario no es uniforme. Solo se permite la implementación de complementos cuando la asignación de usuario es la misma para todas las aplicaciones ya implementadas.  
 
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="which-administrator-role-do-i-need-to-access-integrated-apps"></a>¿Qué rol de administrador necesito para acceder a las aplicaciones integradas?
 

@@ -1,5 +1,5 @@
 ---
-title: Elija el etiquetado integrado de Microsoft Information Protection (MIP) para las aplicaciones de Office en lugar del complemento de Azure Information Protection (AIP).
+title: Elija el etiquetado integrado de Microsoft Purview Information Protection para las aplicaciones de Office en lugar del complemento de Azure Information Protection (AIP).
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -17,22 +17,24 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuando use el cliente de etiquetado unificado de Azure Information Protection (AIP), comprenda las ventajas de usar el etiquetado integrado para aplicaciones Office en lugar del complemento AIP.
-ms.openlocfilehash: 38aee57720f38793f4f61cc871a9bee556e28690
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 99710520b1b687fe6fc2469badb3ad18e6070371
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498613"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093512"
 ---
-# <a name="why-choose-mip-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Por qué elegir el etiquetado integrado de MIP en lugar del complemento de AIP para aplicaciones de Office
+# <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Por qué elegir el etiquetado integrado en lugar del complemento de AIP para aplicaciones de Office
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Al usar [etiquetas de confidencialidad](sensitivity-labels.md) en aplicaciones de Microsoft 365 en equipos Windows, tiene la opción de utilizar el etiquetado integrado en las aplicaciones de Office o un complemento del [cliente de etiquetado unificado de Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2). 
 
-El etiquetado integrado constituye la piedra angular de una [implementación de Microsoft Information Protection (MIP)](information-protection-solution.md), ya que esta tecnología de etiquetado se extiende entre plataformas (Windows, macOS, iOS, Android y la Web), así como en todas las aplicaciones y servicios de Microsoft, y mucho más.. El etiquetado integrado también está diseñado para funcionar con otras capacidades de MIP, como la clasificación de datos y la prevención de pérdida de datos (DLP).
+El etiquetado integrado constituye la piedra angular de una [implementación de Microsoft Purview Information Protection](information-protection-solution.md), ya que esta tecnología de etiquetado se extiende entre plataformas (Windows, macOS, iOS, Android y la Web), así como en todas las aplicaciones y servicios de Microsoft, y mucho más. El etiquetado integrado también está diseñado para funcionar con otras funcionalidades de Microsoft Purview, como la clasificación de datos y la prevención de pérdida de datos (DLP) de Microsoft Purview.
 
-Dado que las etiquetas integradas no usan un complemento de Office, se benefician de una mayor estabilidad y un mejor rendimiento. También admiten las características más recientes, como clasificadores avanzados.
+Dado que las etiquetas integradas no usan un complemento de Office, se benefician de una mayor estabilidad y un mejor rendimiento. También admiten las características más recientes de Microsoft Purview, como los clasificadores avanzados.
 
 De forma predeterminada, el etiquetado integrado está desactivado en las aplicaciones de Office para Windows cuando se instala el cliente de AIP. Puede cambiar este comportamiento predeterminado siguiendo las instrucciones de la sección siguiente, [Cómo deshabilitar el complemento de AIP para usar el etiquetado integrado para aplicaciones de Office](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
 
@@ -84,7 +86,7 @@ Ejemplo que muestra cómo los usuarios pueden revisar y, opcionalmente, quitar c
 
 ![Números de tarjeta de crédito identificados para los usuarios como contenido de confidencialidad con una opción para quitarlo.](../media/detect-sensitive-content.png)
 
-Para estar a la última con las nuevas funcionalidades de etiquetado disponibles para el etiquetado integrado, consulte las secciones [Novedades de cumplimiento de Microsoft 365](whats-new.md) y **Etiquetas de confidencialidad**.
+Para estar a la última con las nuevas funcionalidades de etiquetado disponibles para el etiquetado integrado, consulte las secciones [Novedades en Microsoft Purview](whats-new.md) y **Etiquetas de confidencialidad**.
 
 ## <a name="how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps"></a>Cómo deshabilitar el complemento de AIP para usar el etiquetado integrado para las aplicaciones de Office
 
@@ -127,7 +129,7 @@ Use la siguiente información para identificar si usa una característica del co
 |**Categoría: General** ||
 |Informes y auditorías centrales|![Se admite.](../media/yes-icon.png) <br>[Más información](sensitivity-labels-office-apps.md#auditing-labeling-activities) |
 |Nube de administración pública|![Se admite.](../media/yes-icon.png)|
-|El administrador puede deshabilitar el etiquetado <br> - Todas las aplicaciones|  ![Se admite.](../media/yes-icon.png) <br>[Más información](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-other-labeling-solutions)|
+|El administrador puede deshabilitar el etiquetado <br> - Todas las aplicaciones|  ![Se admite.](../media/yes-icon.png) <br>[Más información](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows)|
 |El administrador puede deshabilitar el etiquetado <br> - Por aplicación|  En planificación o desarrollo|
 |**Categoría: Experiencia del usuario** ||
 |Botón Etiquetado de la cinta de opciones|![Se admite.](../media/yes-icon.png)|
@@ -157,7 +159,7 @@ Use la siguiente información para identificar si usa una característica del co
 
 El cliente AIP admite muchas personalizaciones mediante la [configuración avanzada de PowerShell](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell). Algunas de estas opciones avanzadas ahora son compatibles con el etiquetado integrado, tal como se documenta en [New-Label](/powershell/module/exchange/new-label) o [Set-Label](/powershell/module/exchange/set-label), y [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) o [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy).
 
-Sin embargo, es posible que no necesite usar PowerShell para configurar las opciones admitidas porque se incluyen en la configuración estándar del Centro de cumplimiento de Microsoft 365. Por ejemplo, la capacidad de desactivar el etiquetado obligatorio para Outlook y establecer una etiqueta predeterminada diferente.
+Sin embargo, es posible que no necesite usar PowerShell para configurar las opciones admitidas porque se incluyen en la configuración estándar del Centro de cumplimiento de Microsoft Purview. Por ejemplo, la capacidad de desactivar el etiquetado obligatorio para Outlook y establecer una etiqueta predeterminada diferente.
 
 Las siguientes configuraciones del complemento AIP aún no son compatibles con el etiquetado integrado:
 
@@ -169,7 +171,7 @@ Las siguientes configuraciones del complemento AIP aún no son compatibles con e
 
 ## <a name="features-not-planned-to-be-supported-by-built-in-labeling-for-office-apps"></a>Características no planeadas para ser compatibles con el etiquetado integrado para las aplicaciones de Office
 
-Aunque se agregan nuevas funcionalidades para el etiquetado integrado continuamente, el complemento de Office AIP admite las siguientes funcionalidades que no están planificadas para estar disponibles en futuras versiones para el etiquetado integrado:
+Aunque se agregan nuevas funcionalidades para el etiquetado integrado continuamente, el complemento de Office AIP admite las siguientes funcionalidades que no se planea que estén disponibles en futuras versiones para el etiquetado integrado:
 
 - Aplicación de etiquetas a formatos de Microsoft Office 97-2003, como archivos .doc
 - Equipos desconectados permanentemente
@@ -180,4 +182,4 @@ Aunque se agregan nuevas funcionalidades para el etiquetado integrado continuame
 Si desea obtener instrucciones para crear y configurar estas capacidades de etiquetado, vea [Crear y configurar etiquetas de confidencialidad y sus directivas](create-sensitivity-labels.md).
 
 > [!TIP]
-> Si ya tiene etiquetas de confidencialidad en el Centro de cumplimiento de Microsoft 365, no podrá optar a la creación automática de etiquetas predeterminadas. Sin embargo, es posible que considere útil hacer referencia a su configuración: [Etiquetas de confidencialidad predeterminadas](mip-easy-trials.md#default-sensitivity-labels). 
+> Si ya tiene etiquetas de confidencialidad en el Centro de cumplimiento de Microsoft Purview, no podrá optar a la creación automática de etiquetas predeterminadas. Sin embargo, es posible que considere útil hacer referencia a su configuración: [Etiquetas de confidencialidad predeterminadas](mip-easy-trials.md#default-sensitivity-labels). 

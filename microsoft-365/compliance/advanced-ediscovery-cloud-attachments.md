@@ -2,8 +2,8 @@
 title: Recopilación de datos adjuntos en la nube en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: 04/05/2022
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use colecciones en eDiscovery de Microsoft Purview (Premium) para recopilar datos adjuntos en la nube para su revisión en una investigación o caso.
-ms.openlocfilehash: 1dd48f343f9df43edf8553e73395d756eb6713a4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4a9db59f8e8b997cdd04934c9dac161369964229
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000716"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094127"
 ---
 # <a name="collect-cloud-attachments-in-microsoft-purview-ediscovery-premium-preview"></a>Recopilación de datos adjuntos en la nube en Microsoft Purview eDiscovery (Premium) (versión preliminar)
 

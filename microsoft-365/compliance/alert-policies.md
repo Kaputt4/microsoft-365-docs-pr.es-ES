@@ -2,8 +2,8 @@
 title: directivas de alertas de Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Cree directivas de alerta en el portal de cumplimiento de Microsoft Purview o en el portal de Microsoft 365 Defender para supervisar posibles amenazas, pérdida de datos y problemas de permisos.
-ms.openlocfilehash: beecaf86a013480e0c5546e07189e8be5b622b17
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: b0f7d037731bc1073ac177667927ca4f691e9904
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995918"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094600"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Directivas de alerta en Microsoft 365
 
@@ -105,7 +105,7 @@ También puede definir etiquetas de usuario como condición de una directiva de 
 
   - Prevención de pérdida de datos
 
-  - Información de gobierno
+  - Administración del ciclo de vida de los datos
 
   - Flujo del correo
 
@@ -128,7 +128,7 @@ También puede definir etiquetas de usuario como condición de una directiva de 
 
 ## <a name="default-alert-policies"></a>Directivas de alerta predeterminadas
 
-Microsoft proporciona directivas de alertas integradas que ayudan a identificar Exchange abuso de permisos de administrador, actividad de malware, posibles amenazas externas e internas y riesgos de gobernanza de la información. En la página **Directivas de alerta** , los nombres de estas directivas integradas están en negrita y el tipo de directiva se define como **Sistema**. Estas directivas están activadas de forma predeterminada. Puede desactivar estas directivas (o volver a activarlas), configurar una lista de destinatarios a los que enviar notificaciones por correo electrónico y establecer un límite diario de notificaciones. La otra configuración de estas directivas no se puede editar.
+Microsoft proporciona directivas de alertas integradas que ayudan a identificar Exchange abuso de permisos de administrador, actividad de malware, posibles amenazas externas e internas y riesgos de administración del ciclo de vida de los datos. En la página **Directivas de alerta** , los nombres de estas directivas integradas están en negrita y el tipo de directiva se define como **Sistema**. Estas directivas están activadas de forma predeterminada. Puede desactivar estas directivas (o volver a activarlas), configurar una lista de destinatarios a los que enviar notificaciones por correo electrónico y establecer un límite diario de notificaciones. La otra configuración de estas directivas no se puede editar.
 
 En la tabla siguiente se enumeran y describen las directivas de alerta predeterminadas disponibles y la categoría a la que se asigna cada directiva. La categoría se usa para determinar qué alertas puede ver un usuario en la página Alertas. Para obtener más información, consulte [Permisos de RBAC necesarios para ver las alertas](#rbac-permissions-required-to-view-alerts).
 
@@ -166,9 +166,9 @@ La tabla también indica el Office 365 Enterprise y Office 365 plan del Gobierno
 |**La entrada de lista de permitidos o bloqueados de inquilinos está a punto de expirar**|Genera una alerta cuando se va a quitar una entrada de lista de permitidos o bloqueados de inquilinos. Este evento se desencadena tres días antes de la fecha de expiración, que se basa en el momento en que se creó o actualizó por última vez la entrada. Esta directiva de alerta tiene una configuración de gravedad **informativa** . Se trata de informar a los administradores de los próximos cambios en los filtros, ya que la opción permitir o bloquear podría desaparecer. En el caso de los bloques, puede ampliar la fecha de expiración para mantener el bloque en su lugar. Para permitir, debe volver a enviar el elemento para que nuestros analistas puedan echar otro vistazo. Sin embargo, si el permiso ya se ha calificado como falso positivo, la entrada solo expirará cuando se hayan actualizado los filtros del sistema para permitir la entrada de forma natural. Para obtener más información sobre los eventos que desencadenan esta alerta, consulte [Administrar la lista de permitidos o bloqueados de inquilinos](../security/office-365-security/tenant-allow-block-list.md).|Administración de amenazas|No|Suscripción del complemento E5/G5 o Defender para Office 365 P2|
 |**Inquilino restringido al envío de correo electrónico**|Genera una alerta cuando la mayor parte del tráfico de correo electrónico de su organización se ha detectado como sospechoso y Microsoft ha restringido el envío de correo electrónico a su organización. Investigue las cuentas de usuario y administrador potencialmente en peligro, los nuevos conectores o las retransmisiones abiertas y, a continuación, póngase en contacto con Soporte técnico de Microsoft para desbloquear la organización. Esta directiva tiene una configuración de gravedad **alta** . Para obtener más información sobre por qué se bloquean las organizaciones, consulte [Corrección de problemas de entrega de correo electrónico para el código de error 5.7.7xx en Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750).|Administración de amenazas|No|E1/F1/G1, E3/F3/G3 o E5/G5|
 |**Inquilino restringido al envío de correo electrónico no aprovisionado**|Genera una alerta cuando se envía demasiado correo electrónico desde dominios no registrados (también conocidos como dominios *no aprovisionados* ). Office 365 permite una cantidad razonable de correo electrónico de dominios no registrados, pero debe configurar todos los dominios que use para enviar correo electrónico como un dominio aceptado. Esta alerta indica que todos los usuarios de la organización ya no pueden enviar correo electrónico. Esta directiva tiene una configuración de gravedad **alta** . Para obtener más información sobre por qué se bloquean las organizaciones, consulte [Corrección de problemas de entrega de correo electrónico para el código de error 5.7.7xx en Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750).|Administración de amenazas|No|E1/F1/G1, E3/F3/G3 o E5/G5|
-|**Actividad de archivo de usuario externo inusual**|Genera una alerta cuando se realiza un número inusualmente grande de actividades en archivos de SharePoint o OneDrive por usuarios fuera de la organización. Esto incluye actividades como el acceso a archivos, la descarga de archivos y la eliminación de archivos. Esta directiva tiene una configuración de gravedad **alta** .|Información de gobierno|No|E5/G5, Microsoft Defender para Office 365 P2 o Microsoft 365 E5 suscripción de complemento|
-|**Volumen inusual de uso compartido de archivos externos**|Genera una alerta cuando un número inusualmente grande de archivos en SharePoint o OneDrive se comparten con usuarios fuera de la organización. Esta directiva tiene una configuración de gravedad **media** .|Información de gobierno|No|E5/G5, Defender para Office 365 P2 o Microsoft 365 E5 suscripción de complemento|
-|**Volumen inusual de eliminación de archivos**|Genera una alerta cuando se elimina un número inusualmente grande de archivos en SharePoint o OneDrive en un breve período de tiempo. Esta directiva tiene una configuración de gravedad **media** .|Información de gobierno|No|E5/G5, Defender para Office 365 P2 o Microsoft 365 E5 suscripción de complemento|
+|**Actividad de archivo de usuario externo inusual**|Genera una alerta cuando se realiza un número inusualmente grande de actividades en archivos de SharePoint o OneDrive por usuarios fuera de la organización. Esto incluye actividades como el acceso a archivos, la descarga de archivos y la eliminación de archivos. Esta directiva tiene una configuración de gravedad **alta** .|Administración del ciclo de vida de los datos|No|E5/G5, Microsoft Defender para Office 365 P2 o Microsoft 365 E5 suscripción de complemento|
+|**Volumen inusual de uso compartido de archivos externos**|Genera una alerta cuando un número inusualmente grande de archivos en SharePoint o OneDrive se comparten con usuarios fuera de la organización. Esta directiva tiene una configuración de gravedad **media** .|Administración del ciclo de vida de los datos|No|E5/G5, Defender para Office 365 P2 o Microsoft 365 E5 suscripción de complemento|
+|**Volumen inusual de eliminación de archivos**|Genera una alerta cuando se elimina un número inusualmente grande de archivos en SharePoint o OneDrive en un breve período de tiempo. Esta directiva tiene una configuración de gravedad **media** .|Administración del ciclo de vida de los datos|No|E5/G5, Defender para Office 365 P2 o Microsoft 365 E5 suscripción de complemento|
 |**Aumento inusual en el correo electrónico notificado como cebo**|Genera una alerta cuando hay un aumento significativo en el número de personas de su organización mediante el complemento Mensaje de informe en Outlook para notificar mensajes como correo de suplantación de identidad ( phishing). Esta directiva tiene una configuración de gravedad **media** . Para obtener más información sobre este complemento, vea [Usar el complemento de mensaje](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) de informe.|Administración de amenazas|No|Suscripción del complemento E5/G5 o Defender para Office 365 P2|
 |**Phish de suplantación de usuario entregado a la bandeja de entrada/**<sup>carpeta1,2</sup><sup></sup>|Genera una alerta cuando Microsoft detecta que un administrador o una invalidación de usuario ha permitido la entrega de un mensaje de suplantación de identidad de usuario a la bandeja de entrada (u otra carpeta accesible por el usuario) de un buzón. Algunos ejemplos de invalidaciones son una regla de flujo de correo o bandeja de entrada que permite mensajes de un remitente o dominio específico, o una directiva antispam que permite mensajes de remitentes o dominios específicos. Esta directiva tiene una configuración de gravedad **media** .|Administración de amenazas|No|Suscripción del complemento E5/G5 o Defender para Office 365 P2|
 |**Usuario solicitado para liberar un mensaje en cuarentena**|Genera una alerta cuando un usuario solicita la liberación de un mensaje en cuarentena. Para solicitar la liberación de mensajes en cuarentena, se requiere el permiso **Permitir a los destinatarios solicitar que un mensaje se libere de la cuarentena** (_PermissionToRequestRelease_) en la directiva de cuarentena (por ejemplo, desde el grupo permisos preestablecidos **de acceso limitado** ). Para obtener más información, vea [Permitir que los destinatarios soliciten que se libere un mensaje del permiso de cuarentena](../security/office-365-security/quarantine-policies.md#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission). Esta directiva tiene una configuración de gravedad **informativa** .|Administración de amenazas|No|E1/F1/G1, E3/F3/G3 o E5/G5|
@@ -250,7 +250,7 @@ Tenga en cuenta lo siguiente sobre la agregación de alertas:
 
 Los permisos de Access Control basado en rol (RBAC) asignados a los usuarios de su organización determinan qué alertas puede ver un usuario en la página **Alertas**. ¿Cómo se logra esto? Los roles de administración asignados a los usuarios (en función de su pertenencia a grupos de roles en el portal de cumplimiento o en el portal de Microsoft 365 Defender) determinan qué categorías de alerta puede ver un usuario en la página **Alertas**. Estos son algunos ejemplos:
 
-- Los miembros del grupo de rol Administración de registros solo pueden ver las alertas generadas por las directivas de alerta a las que se asigna la categoría **Gobierno de información**.
+- Los miembros del grupo de roles Administración de registros solo pueden ver las alertas generadas por las directivas de alertas a las que se asigna la categoría **Administración del ciclo de vida de** datos.
 
 - Los miembros del grupo de roles Administrador de cumplimiento no pueden ver las alertas generadas por las directivas de alertas a las que se asigna la categoría **Administración de amenazas** .
 
@@ -262,7 +262,7 @@ En la tabla siguiente se enumeran los roles necesarios para ver las alertas de l
 
 Para ver a qué categoría se asigna una directiva de alerta predeterminada, consulte la tabla en [Directivas de alertas predeterminadas](#default-alert-policies).
 
-|Función|Información de gobierno|Prevención de pérdida de datos|Flujo del correo|Permissions|Administración de amenazas|Otros|
+|Función|Administración del ciclo de vida de los datos|Prevención de pérdida de datos|Flujo del correo|Permissions|Administración de amenazas|Otros|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registros de auditoría|||||||
 |Administración de casos|||||||

@@ -2,8 +2,8 @@
 title: Configuración de un conector para archivar datos XSLT/XML en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos XSLT/XML desde Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 92932e3e18c8f43c46cf71e43ec02306d78a2f60
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: fbc7c170d31c1278b58a63953864ab6b1457db86
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995742"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093600"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>Configuración de un conector para archivar datos XSLT/XML
 

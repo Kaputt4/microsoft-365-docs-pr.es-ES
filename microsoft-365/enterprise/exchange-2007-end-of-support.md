@@ -2,7 +2,7 @@
 title: Plan de fin del soporte técnico de Exchange 2007
 ms.author: dstrome
 author: dstrome
-manager: laurawi
+manager: scotv
 ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
@@ -14,16 +14,16 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre las opciones después de Exchange Server finalización del soporte técnico de 2007 y comience a planear la migración a Microsoft 365, Office 365 o Exchange 2016.
-ms.openlocfilehash: 8aecc835fbdde21f6651946acd15c4c70788b3da
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 7b8cad31c04d5cd1cd9e618e8e38e872a1b32634
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824408"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092677"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Plan de fin del soporte técnico de Exchange 2007
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Exchange Server 2007 llegó a su fin en abril de 2017. Si no ha iniciado la migración de Exchange 2007 a Microsoft 365, Office 365 o Exchange 2016, ahora es el momento de empezar a planear.
 

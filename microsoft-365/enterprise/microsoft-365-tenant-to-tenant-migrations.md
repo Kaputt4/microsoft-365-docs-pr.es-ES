@@ -1,8 +1,8 @@
 ---
-title: Microsoft 365 de inquilino a inquilino
+title: Microsoft 365 migraciones de inquilino a inquilino
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -19,22 +19,22 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo migrar Microsoft 365 inquilinos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 38450433538b667e1d1b54a53a27d21847d5337b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 51a9f518b3cd98330b5749886f31dbe260f578d9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60198414"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094844"
 ---
-# <a name="microsoft-365-tenant-to-tenant-migrations"></a>Microsoft 365 de inquilino a inquilino
+# <a name="microsoft-365-tenant-to-tenant-migrations"></a>Microsoft 365 migraciones de inquilino a inquilino
 
-Existen varios enfoques de arquitectura para fusiones, adquisiciones, desinstituras y otros escenarios que pueden llevar a migrar un inquilino de Microsoft 365 existente a un nuevo inquilino. La mayoría de los clientes trabajan con Microsoft Consulting Services o un partner de Microsoft para migrar inquilinos, incluido el uso de herramientas de terceros para migrar contenido. 
+Hay varios enfoques de arquitectura para fusiones, adquisiciones, desinversiones y otros escenarios que pueden llevar a migrar un inquilino Microsoft 365 existente a un nuevo inquilino. La mayoría de los clientes trabajan con Servicios de consultoría de Microsoft o con un asociado de Microsoft para migrar inquilinos, incluido el uso de herramientas de terceros para migrar contenido. 
 
-Use el [modelo de arquitectura de](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) migración de inquilino a inquilino para comprender cómo planear Microsoft 365 de inquilino a inquilino y los pasos de una migración.
+Use el [modelo de arquitectura de migración de inquilino a inquilino](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) para comprender cómo planear Microsoft 365 migraciones de inquilino a inquilino y los pasos de una migración.
 
 [![Modelo de migración de inquilino a inquilino.](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 
 
-Puede descargar este modelo en [formato PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) e imprimirlo en papel de tamaño carta, legal o tabloide (11 x 17).
+Descargue este modelo en formato [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) e imprímalo en papel de tamaño carta, legal o tabloide (11 x 17).
 
 Este modelo proporciona instrucciones y un punto de partida para planear con secciones sobre:
 
@@ -43,6 +43,6 @@ Este modelo proporciona instrucciones y un punto de partida para planear con sec
 
 Este modelo también contiene ejemplos detallados de:
 
-- Flujo de migración de un solo evento
-- Flujo de migración por fases
-- Movimiento de inquilino o flujo dividido
+- Un único flujo de migración de eventos
+- Un flujo de migración por fases
+- Un flujo de movimiento o división de inquilinos

@@ -1,10 +1,10 @@
 ---
-title: Inscribir dispositivos iOS/iPadOS y Android en su Microsoft 365 entorno de prueba empresarial
+title: Inscripción de dispositivos iOS/iPadOS y Android en el entorno de prueba de Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
@@ -13,71 +13,71 @@ ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
-description: Usa esta Guía del laboratorio de pruebas para inscribir dispositivos Microsoft 365 entorno de prueba y administrarlos de forma remota.
-ms.openlocfilehash: 7610348febcc8c2054c50d7f7a6f1433e9b62306
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Use esta guía de laboratorio de pruebas para inscribir dispositivos en el entorno de prueba de Microsoft 365 y administrarlos de forma remota.
+ms.openlocfilehash: 5cefabf6b995754f6febe117776ad2de97443df0
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60189122"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092941"
 ---
-# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>Inscribir dispositivos iOS y Android en su Microsoft 365 entorno de prueba empresarial
+# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>Inscripción de dispositivos iOS y Android en el entorno de prueba de Microsoft 365 para empresas
 
-*Esta Guía del laboratorio de pruebas solo se puede usar Microsoft 365 entornos de prueba empresariales.*
+*Esta Guía de laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
 
-En este artículo se describe cómo inscribir y probar las capacidades básicas de administración de dispositivos móviles para dispositivos iOS/iPadOS y Android en el entorno de pruebas Microsoft 365 para empresas.
+En este artículo se describe cómo inscribir y probar funcionalidades básicas de administración de dispositivos móviles para dispositivos iOS/iPadOS y Android en el entorno de prueba de Microsoft 365 para empresas.
 
-Inscribir dispositivos iOS/iPadOS y Android en el entorno de prueba implica tres fases:
-- [Fase 1: Crear su Microsoft 365 entorno de prueba empresarial](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
-- [Fase 2: Inscribir los dispositivos iOS/iPadOS y Android](#phase-2-enroll-your-ios-and-android-devices)
-- [Fase 3: Administrar los dispositivos iOS/iPadOS y Android de forma remota](#phase-3-manage-your-ios-and-android-devices-remotely)
+La inscripción de dispositivos iOS/iPadOS y Android en el entorno de prueba implica tres fases:
+- [Fase 1: Compilación de la Microsoft 365 para el entorno de prueba empresarial](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Fase 2: Inscripción de dispositivos iOS/iPadOS y Android](#phase-2-enroll-your-ios-and-android-devices)
+- [Fase 3: Administración remota de dispositivos iOS/iPadOS y Android](#phase-3-manage-your-ios-and-android-devices-remotely)
 
-![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías de laboratorio de prueba para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vaya a Microsoft 365 enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Para obtener un mapa visual de todos los artículos de la pila Microsoft 365 para la pila guía del laboratorio de pruebas empresarial, vaya a [Microsoft 365 para la pila de la guía del laboratorio de pruebas empresarial](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: Crear su Microsoft 365 entorno de prueba empresarial
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: Compilación de la Microsoft 365 para el entorno de prueba empresarial
 
-Si quieres inscribir dispositivos iOS/iPadOS y Android de forma ligera con los requisitos mínimos, sigue las instrucciones de [Configuración base ligera.](lightweight-base-configuration-microsoft-365-enterprise.md)
+Si desea inscribir dispositivos iOS/iPadOS y Android de forma ligera con los requisitos mínimos, siga las instrucciones de [Configuración base ligera](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Si quieres inscribir dispositivos iOS/iPadOS y Android en una empresa simulada, sigue las instrucciones de [autenticación de paso a través.](pass-through-auth-m365-ent-test-environment.md)
+Si desea inscribir dispositivos iOS/iPadOS y Android en una empresa simulada, siga las instrucciones de [Autenticación de paso a través](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Las pruebas de licencias automatizadas y pertenencia a grupos no requieren el entorno de prueba de empresa simulado, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de Servicios de dominio de Active Directory (AD DS). Se proporciona aquí como una opción para que pueda probar las licencias automatizadas y la pertenencia a grupos, y puede experimentar con ella en un entorno que representa una organización típica.
+> La prueba de licencias automatizadas y la pertenencia a grupos no requiere el entorno de prueba empresarial simulado, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de Servicios de dominio de Active Directory (AD DS). Se proporciona aquí como una opción para que pueda probar las licencias automatizadas y la pertenencia a grupos, y puede experimentar con ella en un entorno que representa una organización típica.
 
-## <a name="phase-2-enroll-your-ios-and-android-devices"></a>Fase 2: Inscribir los dispositivos iOS y Android
+## <a name="phase-2-enroll-your-ios-and-android-devices"></a>Fase 2: Inscripción de dispositivos iOS y Android
 
-Si estás considerando una solución de administración de dispositivos móviles (MDM) para administrar tus dispositivos, puedes usar Microsoft Intune. Cuando se trabaja con cualquier proveedor de MDM, incluido Intune, los dispositivos se "inscriben". Cuando se inscriba, recibirán las características y la configuración que configure. 
+Si está pensando en una solución de administración de dispositivos móviles (MDM) para administrar los dispositivos, puede usar Microsoft Intune. Cuando se trabaja con cualquier proveedor de MDM, incluidos los Intune, los dispositivos se "inscriben". Cuando se inscriben, reciben las características y la configuración que se configuran. 
 
-En Intune, hay algunas formas de inscribir los dispositivos iOS/iPadOS y Android. Puede elegir la opción de inscripción que mejor funcione para su organización. Para obtener más información e instrucciones, consulte los artículos siguientes:
+En Intune, hay varias maneras de inscribir los dispositivos iOS/iPadOS y Android. Puede elegir la opción de inscripción que mejor funcione para su organización. Para obtener más información e instrucciones, consulte los artículos siguientes:
 
-- [Guía de implementación: Inscribir dispositivos iOS y iPadOS en Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-ios-ipados)
-- [Guía de implementación: Inscribir dispositivos Android en Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-android)
+- [Guía de implementación: inscripción de dispositivos iOS y iPadOS en Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-ios-ipados)
+- [Guía de implementación: Inscripción de dispositivos Android en Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-android)
 
-Si estás listo para usar Intune para la administración de dispositivos y quieres algunas instrucciones, la siguiente información puede ayudar:
+Si está listo para usar Intune para la administración de dispositivos y quiere alguna guía, puede que la siguiente información le ayude:
 
-- [Introducción a la administración de dispositivos](/mem/intune/fundamentals/what-is-device-management)
+- [Información sobre la administración de dispositivos](/mem/intune/fundamentals/what-is-device-management)
 - [Tutorial: Paso a paso de Intune en Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
-- [Guía de implementación: configurar o mover a Microsoft Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
+- [Guía de implementación: Cómo configurar o pasar a Microsoft Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 
-## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>Fase 3: Administrar los dispositivos iOS y Android de forma remota
+## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>Fase 3: Administración remota de dispositivos iOS y Android
 
-Microsoft Intune proporciona la característica de bloqueo remoto y restablecimiento de código de acceso. Si alguien pierde su dispositivo, puedes bloquearlo de forma remota. Si alguien olvida su código de acceso, puedes restablecerlo de forma remota.
+Microsoft Intune proporciona la característica de restablecimiento de código de acceso y bloqueo remoto. Si alguien pierde su dispositivo, puede bloquearlo de forma remota. Si alguien olvida su código de acceso, puede restablecerlo de forma remota.
 
-- Para bloquear de forma remota un dispositivo iOS/iPadOS o Android, consulta Bloqueo remoto de [dispositivos con Intune](/mem/intune/remote-actions/device-remote-lock).
-- Para restablecer el código de acceso de forma remota, consulta Restablecer o quitar un código de acceso de [dispositivo en Intune](/mem/intune/remote-actions/device-passcode-reset).
+- Para bloquear de forma remota un dispositivo iOS/iPadOS o Android, consulte [Bloqueo remoto de dispositivos con Intune](/mem/intune/remote-actions/device-remote-lock).
+- Para restablecer de forma remota el código de acceso, consulte [Restablecer o quitar un código de acceso de dispositivo en Intune](/mem/intune/remote-actions/device-passcode-reset).
 
-Para otras tareas que puedes ejecutar de forma remota, consulta [acciones de dispositivo disponibles.](/mem/intune/remote-actions/device-management#available-device-actions)
+Para ver tareas adicionales que puede ejecutar de forma remota, consulte [acciones de dispositivo disponibles](/mem/intune/remote-actions/device-management#available-device-actions).
     
 ## <a name="next-step"></a>Paso siguiente
 
-Explore características [y capacidades adicionales](m365-enterprise-test-lab-guides.md#mobile-device-management) de administración de dispositivos móviles en el entorno de prueba.
+Explore características y funcionalidades adicionales de [administración de dispositivos móviles](m365-enterprise-test-lab-guides.md#mobile-device-management) en el entorno de prueba.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
   
-[Directivas de cumplimiento de dispositivos para Microsoft 365 entorno de prueba empresarial](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+[Directivas de cumplimiento de dispositivos para el entorno de prueba de Microsoft 365 para empresas](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)

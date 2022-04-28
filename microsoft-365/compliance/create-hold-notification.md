@@ -2,8 +2,8 @@
 title: Creación de un aviso de suspensión legal
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Use la herramienta de comunicaciones en un caso de exhibición de documentos electrónicos (Premium) para enviar, recopilar y realizar un seguimiento de las notificaciones de suspensión legal.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ca5c895ca98aafb67fd728e137f0d69dd8b98f8f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 21090274f385d6a3354852134764a1f53a311f10
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997964"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094998"
 ---
 # <a name="create-a-legal-hold-notice"></a>Creación de un aviso de suspensión legal
 

@@ -2,8 +2,8 @@
 title: Seguimiento del análisis de relevancia en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 titleSuffix: Office 365
 ms.date: ''
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo ver e interpretar el estado de entrenamiento de relevancia y los resultados de los problemas de casos en eDiscovery (Premium).
-ms.openlocfilehash: 72e12fe54b30c3d766f7a198e5e3417ff9d48a22
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: dd2eecbcd347125b1728851d873068b37f82aced
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000958"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093995"
 ---
 # <a name="track-relevance-analysis-in-ediscovery-premium"></a>Seguimiento del análisis de relevancia en eDiscovery (Premium)
 

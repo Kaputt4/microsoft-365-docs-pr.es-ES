@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
+ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 3e2b6c8258f6a08c4cbb727c234871788242c6c2
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 5b3a21a45e1b9e90cf5a8a7f666861502205552e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862156"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093270"
 ---
 # <a name="reports-in-microsoft-defender-for-business"></a>Informes en Microsoft Defender para Empresas
 
@@ -45,7 +45,7 @@ Hay varios informes disponibles en el portal de Microsoft 365 Defender ([https:/
 > Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
 >
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Comenzar mediante Microsoft Defender para Empresas](mdb-get-started.md)
 - [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md)

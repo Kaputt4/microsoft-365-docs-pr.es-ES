@@ -2,7 +2,7 @@
 title: Optimizar las extensiones personalizadas en las páginas de sitio modernas de SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo optimizar el rendimiento de extensiones personalizadas en páginas de sitio modernas de SharePoint Online.
-ms.openlocfilehash: 6493f140a1335b5439707fed94372760ac6fab50
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: a31b6e68227d433359537b9655d68c63b5893cce
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60200034"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093863"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimizar el rendimiento de extensiones personalizadas en páginas del sitio modernas de SharePoint Online
 
@@ -45,18 +45,18 @@ Puede encontrarse con los siguientes resultados:
 - **Posibilidades de mejora** (amarillo) Si se usan **cinco** o más extensiones, se mostrarán en esta sección como una advertencia hasta que se utilicen siete o más, lo que se mostrará como Atención necesaria.
 - **No es necesario realizar ninguna acción** (en verde): No hay ninguna extensión que tarde más de un segundo en cargarse.
 
-Si una extensión afecta al tiempo de carga de la página o hay  demasiadas extensiones en la página, el resultado aparece en la sección Atención requerida de los resultados. Haga clic en el resultado para ver los detalles sobre la extensión que está demorando en cargar o la advertencia sobre la existencia de demasiadas extensiones. Las actualizaciones futuras de la herramienta Diagnóstico de páginas para SharePoint pueden incluir actualizaciones de las reglas de análisis, así que asegúrese de que siempre tiene la versión más reciente de la herramienta.
+Si una extensión afecta al tiempo de carga de la página o hay demasiadas extensiones en la página, el resultado aparece en la sección **Atención requerida** de los resultados. Haga clic en el resultado para ver los detalles sobre la extensión que está demorando en cargar o la advertencia sobre la existencia de demasiadas extensiones. Las actualizaciones futuras de la herramienta Diagnóstico de páginas para SharePoint pueden incluir actualizaciones de las reglas de análisis, así que asegúrese de que siempre tiene la versión más reciente de la herramienta.
 
-![Resultados de tiempo de carga de página.](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
+![Resultados del tiempo de carga de la página.](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
 La información disponible en los resultados incluye lo siguiente:
 
 - **Nombre e identificador** muestra información de identificación que puede ayudarle a encontrar la extensión en la página
-- **Total** muestra el tiempo total de la extensión a la carga e inicialización del módulo. Es el tiempo relativo total que la extensión ha tomado para ejecutarse en la página, desde el principio hasta el final.
-- **Carga de** módulos muestra el tiempo que se necesita para descargar, evaluar y cargar las extensiones de archivos JavaScript y CSS. A continuación, se iniciará el proceso Init.
-- **Init** muestra el tiempo que ha tomado la extensión para inicializar los datos.
+- **Total** muestra el tiempo total de carga e inicialización del módulo de la extensión. Es el tiempo relativo total que tarda la extensión en ejecutarse en la página, de principio a fin.
+- **Carga del módulo** muestra el tiempo necesario para descargar, evaluar y cargar los archivos JavaScript y CSS de las extensiones. A continuación, iniciará el proceso init.
+- **Init** muestra el tiempo necesario para que la extensión inicialice los datos.
 
-  Es una llamada asincrónica y el tiempo de init es el cálculo del tiempo de la función onInit cuando se resuelve la promesa devuelta.
+  Se trata de una llamada asincrónica y el tiempo de inicialización es el cálculo del tiempo de la función onInit cuando se resuelve la promesa devuelta.
 
 Se proporciona esta información para que los diseñadores y desarrolladores puedan solucionar problemas. Debe proporcionar esta información a su equipo de diseño y desarrollo.
 
@@ -105,7 +105,7 @@ Los autores de páginas también pueden usar el resultado de auditoría para ver
 
 Antes de realizar revisiones de página para corregir problemas de rendimiento, anote el tiempo de carga de la página en los resultados del análisis. Ejecute la herramienta de nuevo después de la revisión y compruebe si los nuevos resultados están en línea con su valor de referencia. Luego, compruebe el nuevo tiempo de carga de la página para ver si se ha producido alguna mejora.
 
-![Resultados de tiempo de carga de página.](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Resultados del tiempo de carga de la página.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >El tiempo de carga de la página puede variar en función de varios factores, como la carga de la red, la hora del día y otras condiciones transitorias. Debe probar el tiempo de carga de la página varias veces, antes y después de realizar cambios, para obtener un promedio.

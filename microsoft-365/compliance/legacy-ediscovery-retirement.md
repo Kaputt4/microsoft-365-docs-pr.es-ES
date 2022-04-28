@@ -2,8 +2,8 @@
 title: Herramientas de exhibición de documentos electrónicos heredadas retiradas
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: In-Place eDiscovery y In-Place Hold (y los cmdlets de PowerShell correspondientes) en Exchange Online se retirarán en el primer semestre de 2020. El cmdlet Search-Mailbox y microsoft Purview eDiscovery (Premium) v1.0 también se están retirando en el mismo período de tiempo.
-ms.openlocfilehash: 19809b96574bf8d703264e0bedaada10f177ef31
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 367b020a5804ac120f226962ea48a49b73dd70e6
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999220"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094490"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retirada de herramientas heredadas de eDiscovery
 

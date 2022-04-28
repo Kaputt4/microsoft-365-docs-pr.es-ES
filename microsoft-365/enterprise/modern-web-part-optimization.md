@@ -2,7 +2,7 @@
 title: Optimizar el rendimiento de elementos web en páginas del sitio modernas de SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
@@ -20,13 +20,13 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo usar diagnósticos de página para optimizar el rendimiento de los elementos web en SharePoint páginas de sitio modernas en línea.
-ms.openlocfilehash: 15b15e56a1c490cab86f225c5784d8bb9adcb36e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre cómo usar diagnósticos de página para optimizar el rendimiento de los elementos web en SharePoint páginas de sitio modernos en línea.
+ms.openlocfilehash: 543ee889831d08b2b465c077cc391a653fa0b9a9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152675"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093358"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimizar el rendimiento de elementos web en páginas del sitio modernas de SharePoint Online
 
@@ -52,20 +52,20 @@ Puede encontrarse con los siguientes resultados:
 
 Si el resultado **Los elementos web afectan al tiempo de carga de la página** aparece en la sección de los resultados **Se necesita atención** u **Oportunidades de mejora**, haga clic en el resultado para ver los detalles de los elementos web que se cargan despacio. Las actualizaciones futuras de la herramienta Diagnóstico de páginas para SharePoint pueden incluir actualizaciones de las reglas de análisis, así que asegúrese de que siempre tiene la versión más reciente de la herramienta.
 
-![Resultados de la herramienta diagnóstico de página.](../media/modern-portal-optimization/pagediag-web-part.png)
+![Resultados de la herramienta Diagnóstico de páginas.](../media/modern-portal-optimization/pagediag-web-part.png)
 
 La información disponible en los resultados incluye lo siguiente:
 
-- **Made by** muestra si el elemento web es personalizado o Microsoft OOTB.
+- **Hecho por** muestra si el elemento web es personalizado o Microsoft OOTB.
 - **El nombre y el identificador** muestran información de identificación que puede ayudarle a encontrar el elemento web en la página.
-- **Total** muestra el tiempo total para que el elemento web cargue, inicialice y represente el módulo. Es el tiempo relativo total que el elemento web debe representar en la página, desde el principio hasta el final.
-- **Carga de** módulos muestra el tiempo que se necesita para descargar, evaluar y cargar las extensiones de archivos JavaScript y CSS. A continuación, se iniciará el proceso Init.
-- **Carga diferida** muestra el tiempo para la carga diferida de elementos web no vistos en la sección principal de la página. Hay ciertas condiciones en las que hay demasiados elementos web para representar y se ponen en cola para representarse para minimizar el tiempo de carga de la página.
-- **Init** muestra el tiempo que el elemento web ha necesitado para inicializar los datos.
+- **Total** muestra el tiempo total para que el elemento web cargue, inicialice y represente el módulo. Es el tiempo relativo total que tarda el elemento web en representarse en la página, de principio a fin.
+- **Carga del módulo** muestra el tiempo necesario para descargar, evaluar y cargar los archivos JavaScript y CSS de las extensiones. A continuación, iniciará el proceso init.
+- **Carga diferida** muestra el tiempo de carga diferida de elementos web que no se ve en la sección principal de la página. Hay ciertas condiciones en las que hay demasiados elementos web para representar y se ponen en cola para representarse para minimizar el tiempo de carga de la página.
+- **Init** muestra el tiempo necesario para que el elemento web inicialice los datos.
 
-  Es una llamada asincrónica y el tiempo de init es el cálculo del tiempo de la función onInit cuando se resuelve la promesa devuelta.
+  Se trata de una llamada asincrónica y el tiempo de inicialización es el cálculo del tiempo de la función onInit cuando se resuelve la promesa devuelta.
 
-- **Render** muestra el tiempo que se necesita para representar la interfaz de usuario (interfaz de usuario) una vez completada la carga del módulo e Init.
+- **Representación** muestra el tiempo necesario para representar la interfaz de usuario (interfaz de usuario) una vez completada la carga del módulo e Init.
 
   Es el tiempo de ejecución de JavaScript para montar el DOM en el documento (página).
   La representación de recursos asincrónicos, por ejemplo, imágenes, puede tardar más tiempo en completarse.
@@ -86,7 +86,7 @@ Existen tres tipos de causas por las que el elemento web puede tener problemas d
   - Reutilice marcos como _importaciones de Fabric_ y _React_ que forman parte de SharePoint Framework (SPFx). Para más información, vea [Información general de SharePoint Framework](/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Asegúrese de que está usando la versión más reciente de SharePoint Framework y actualice a las nuevas versiones a medida que estén disponibles.
 - Búsqueda y almacenamiento en caché de datos
-  - Si el elemento web se basa en llamadas de servidor adicionales para capturar datos para mostrar, asegúrese de que dichas API de servidor sean rápidas o implemente el almacenamiento en caché del lado cliente (por ejemplo, usar _localStorage_ o _IndexedDB_ para conjuntos más grandes).
+  - Si el elemento web se basa en llamadas de servidor adicionales para capturar datos para su visualización, asegúrese de que esas API de servidor sean rápidas o implemente el almacenamiento en caché del lado cliente (como el uso de _localStorage_ o _IndexedDB_ para conjuntos más grandes).
   - Si se necesitan varias llamadas para representar datos fundamentales, considere la posibilidad de realizar el procesamiento por lotes en el servidor u otros métodos de consolidación de solicitudes en una sola llamada.
   - Por otra parte, si algunos elementos de datos requieren una API más lenta, pero no son fundamentales para la representación inicial, desacóplelos en una llamada diferente que se ejecuta después de que se representen los datos fundamentales.
   - Si varios elementos usan los mismos datos, utilice una capa de datos común para evitar las llamadas duplicadas.
@@ -99,7 +99,7 @@ Existen tres tipos de causas por las que el elemento web puede tener problemas d
 
 Antes de realizar revisiones de página para corregir problemas de rendimiento, anote el tiempo de carga de la página en los resultados del análisis. Ejecute la herramienta de nuevo después de la revisión y compruebe si los nuevos resultados están en línea con su valor de referencia. Luego, compruebe el nuevo tiempo de carga de la página para ver si se ha producido alguna mejora.
 
-![Resultados de tiempo de carga de página.](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Resultados del tiempo de carga de la página.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >El tiempo de carga de la página puede variar en función de varios factores, como la carga de la red, la hora del día y otras condiciones transitorias. Debe probar el tiempo de carga de la página varias veces, antes y después de realizar cambios, para obtener un promedio.

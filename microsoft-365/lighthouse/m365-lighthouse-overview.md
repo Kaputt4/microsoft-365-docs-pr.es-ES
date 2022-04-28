@@ -17,25 +17,23 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP), obtenga información sobre cómo Microsoft 365 Lighthouse puede ayudarle a proteger y administrar los inquilinos de los clientes en una ubicación.
-ms.openlocfilehash: 96ae7647107a1be89d9fe4d800374ce8a8970cb8
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 9a75cd43ac09d63c4524495a3146bf0b860627a4
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023643"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094690"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Introducción a Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse es un portal de administración que ayuda a los proveedores de servicios administrados (CSP) a proteger y administrar dispositivos, datos y usuarios a escala para clientes de pequeñas y medianas empresas (SMB) que usan Microsoft 365 Empresa Premium, Microsoft 365 E3 o Windows 365 Business. 
+Microsoft 365 Lighthouse es un portal de administración que ayuda a los proveedores de servicios administrados (CSP) a proteger y administrar dispositivos, datos y usuarios a escala para clientes de pequeñas y medianas empresas (SMB) que usan Microsoft 365 Empresa Premium o Microsoft 365 E3.
 
-Lighthouse simplifica la incorporación de inquilinos de Microsoft 365 Empresa Premium, Microsoft 365 E3 y Windows 365 Business mediante la recomendación de líneas base de configuración de seguridad adaptadas a los clientes SMB y el suministro de vistas multiinquilino en todos los entornos de cliente. Con Lighthouse, los MSP pueden escalar la administración de sus clientes, centrarse en lo más importante, buscar e investigar rápidamente los riesgos y tomar medidas para que sus clientes se encuentren en un estado seguro y correcto.
+Lighthouse simplifica la incorporación de inquilinos de clientes al recomendar líneas base de configuración de seguridad adaptadas a los clientes SMB y proporcionar vistas multiinquilino en todos los entornos de cliente. Con Lighthouse, los MSP pueden escalar la administración de sus clientes, centrarse en lo más importante, buscar e investigar rápidamente los riesgos y tomar medidas para que sus clientes se encuentren en un estado seguro y correcto.
 
-No hay costos adicionales asociados con el uso de Lighthouse para administrar Microsoft 365 servicios y dispositivos conectados. Lighthouse está disponible para los MSP inscritos en el programa Proveedor de soluciones en la nube (CSP) y para clientes SMB con una suscripción de Microsoft 365 Empresa Premium, Microsoft 365 E3 o Windows 365 Business .
-
-Se admite el uso de Lighthouse por parte de asociados del canal CSP de Microsoft que tienen clientes que usan Microsoft 365 Empresa Premium, Microsoft 365 E3 o Windows 365 Business. Esto incluye los asociados de CSP que realizan transacciones directamente con Microsoft y los que realizan transacciones a través de un proveedor indirecto (distribuidor). 
+No hay costos adicionales asociados con el uso de Lighthouse para administrar Microsoft 365 servicios y dispositivos conectados. Lighthouse está disponible para los MSP inscritos en el programa Proveedor de soluciones en la nube (CSP) que presta servicio a los clientes SMB. Esto incluye los asociados de CSP que realizan transacciones directamente con Microsoft y los que realizan transacciones a través de un proveedor indirecto (distribuidor).
 
 > [!IMPORTANT] 
-> Para usar Lighthouse, los MSP y sus inquilinos de cliente deben cumplir los requisitos enumerados en [Microsoft 365 Lighthouse requisitos](m365-lighthouse-requirements.md).     
+> Para usar Lighthouse, los MSP y sus inquilinos de cliente deben cumplir los requisitos enumerados en [Microsoft 365 Lighthouse requisitos](m365-lighthouse-requirements.md).
 
 Para obtener más información sobre el programa CSP, consulte la [introducción al programa Proveedor de soluciones en la nube](/partner-center/csp-overview).
 

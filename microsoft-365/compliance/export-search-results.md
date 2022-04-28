@@ -2,8 +2,8 @@
 title: Exportar resultados de la búsqueda de contenido
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exporte los resultados de la búsqueda desde una búsqueda de contenido en el portal de cumplimiento de Microsoft Purview a un equipo local. Los resultados del correo electrónico se exportan como archivos PST. El contenido de los sitios SharePoint y OneDrive para la Empresa se exporta como documentos nativos Office.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 38faaf29087e67aef161e46a1fbc6c338d9c33e4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 5550bb8ebe7f90bbcbb87df8ca04ff4d83e76c2c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995478"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094534"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 

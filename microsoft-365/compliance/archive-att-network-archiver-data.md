@@ -2,8 +2,8 @@
 title: Configuración de un conector para archivar datos de red de AT&T SMS/MMS
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector TeleMessage para importar y archivar datos DE SMS y MMS desde AT&T Mobile Network. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft Purview para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 87b933117fae134572ccf4a152a83ec4165b1caf
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 7d73e6a5e5a5190609cd50bd055af8b7aec969b7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992774"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093183"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>Configuración de un conector para archivar datos de AT&T SMS/MMS
 

@@ -2,7 +2,7 @@
 title: Redes de entrega de contenido
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/15/2020
 audience: ITPro
 ms.topic: conceptual
@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Use esta información para obtener información sobre cómo Office 365 usa las redes de entrega de contenido (CDN) para mejorar el rendimiento.
-ms.openlocfilehash: 86f2e621bee00dcb72048300ed1088f7966720a8
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b2809a524088b3cb53e415d3d83d1f8a02b27dc1
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934321"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092743"
 ---
 # <a name="content-delivery-networks-cdns"></a>Redes de entrega de contenido (CDN)
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Las redes CDN ayudan a mantener Office 365 rápido y confiable para los usuarios finales. Los servicios en la nube como Office 365 usan redes CDN para almacenar en caché los recursos estáticos más cerca de los exploradores que les solicitan que acelere las descargas y reduzca la latencia percibida del usuario final. La información de este tema le ayudará a obtener información sobre las redes de entrega de contenido (CDN) y cómo las usan Office 365.
 

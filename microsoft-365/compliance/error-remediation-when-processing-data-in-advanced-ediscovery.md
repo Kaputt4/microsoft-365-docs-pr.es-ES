@@ -2,8 +2,8 @@
 title: Corrección de errores al procesar los datos
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo usar la corrección de errores para corregir problemas de datos en eDiscovery (Premium) que podrían impedir el procesamiento adecuado del contenido.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1f56ad34cb295103178c5f244ccd78d7ad3757b0
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e119458281a81ab41f8034ce76e65a5946536204
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994554"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093117"
 ---
 # <a name="error-remediation-when-processing-data"></a>Corrección de errores al procesar los datos
 
@@ -119,7 +119,7 @@ Cuando se cargan los archivos corregidos, se conservan los metadatos originales,
 - LoadId
 - ProcessingErrorMessage
 - ProcessingStatus
-- Texto
+- Text
 - WordCount
 - WorkingsetId
 

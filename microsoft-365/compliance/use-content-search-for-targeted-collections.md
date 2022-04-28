@@ -2,8 +2,8 @@
 title: Uso de la búsqueda de contenido para colecciones de destino
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Use búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para realizar una colección de destino, que busca elementos en un buzón o carpeta de sitio específico.
-ms.openlocfilehash: 9638a0870f1d97d2bcea73215509d269576c4ecd
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 396c42183667e59e738779f618ca077d909db419
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991784"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094932"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Uso de la búsqueda de contenido para colecciones de destino
 
@@ -238,7 +238,7 @@ Después de ejecutar el script para recopilar una lista de identificadores de ca
 
     - Junto a **Exchange correo electrónico**, haga clic en **Elegir usuarios, grupos o equipos y agregue** el mismo buzón que especificó al ejecutar el script en el paso 1.
 
-      O bien:
+      O bien
 
     - Junto a **SharePoint sitios**, haga clic en **Elegir sitios** y agregue la misma dirección URL de sitio que especificó al ejecutar el script en el paso 1.
 

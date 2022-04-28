@@ -2,8 +2,8 @@
 title: Cerrar, volver a abrir y eliminar casos de exhibición de documentos electrónicos (estándar)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo administrar casos de exhibición de documentos electrónicos (estándar). Esto incluye el cierre de un caso, la reapertura de un caso cerrado y la eliminación de un caso.
-ms.openlocfilehash: ee18a169ace43f03a0407b87c8ae70705af2f43c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 27dc46fcfe65b6a39c3a217fd72fcc97037ccb99
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992378"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094017"
 ---
 # <a name="close-reopen-and-delete-a-ediscovery-standard-case"></a>Cerrar, volver a abrir y eliminar un caso de exhibición de documentos electrónicos (estándar)
 
