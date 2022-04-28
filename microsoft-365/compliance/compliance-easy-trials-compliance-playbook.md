@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cuaderno de estrategias de prueba de soluciones de Microsoft Purview.
-ms.openlocfilehash: 4544e07baa5b8d2b89991d9a31c84a2d7cefb7f8
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 3ff103a2e6ebc260f5f00964ae09c6b6bbc1fd69
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973781"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098898"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>Cuaderno de estrategias de prueba: soluciones de Microsoft Purview
 
@@ -35,6 +35,7 @@ Características:
 - [Auditoría (Premium)](#audit-premium)
 - [Cumplimiento de comunicaciones](#communication-compliance)
 - [Administrador de cumplimiento](#compliance-manager)
+- [Administración del ciclo de vida de los datos](#data-lifecycle-management)
 - [Prevención de pérdida de datos de Microsoft Purview](#data-loss-prevention)
 - [eDiscovery](#ediscovery)
 - [Protección de información](#information-protection)
@@ -168,6 +169,31 @@ Las evaluaciones personalizadas son útiles para:
 1. [Modificar una plantilla existente para agregar o quitar controles y acciones](compliance-manager-templates-modify.md)
 1. [Configurar pruebas automatizadas de acciones de mejora](compliance-manager-setup.md#set-up-automated-testing)
 1. [Asignar acciones de mejora a otro usuario](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)
+
+## <a name="data-lifecycle-management"></a>Administración del ciclo de vida de los datos
+
+**Gobernar a escala con la automatización**
+
+Mejore su capacidad para adaptarse a los cambios de su organización con ámbitos de directiva que se actualizan automáticamente. Automatice el etiquetado de contenido para reducir los esfuerzos manuales y mejorar la posición de cumplimiento.
+
+### <a name="step-1-dynamically-target-retention-policies-with-adaptive-policy-scopes"></a>Paso 1: Dirigir dinámicamente las directivas de retención con ámbitos de directiva adaptables
+> [!TIP]
+> Procedimiento recomendado de prueba: día 1
+
+Los ámbitos de directiva adaptables permiten dirigir dinámicamente una directiva a determinados usuarios, grupos o sitios en función de sus atributos de AD.  Los atributos de los ámbitos se pueden seleccionar en una lista o personalizarse mediante un generador de consultas avanzado.
+
+Las directivas que usan ámbitos de directiva adaptables permanecen actualizadas a medida que la organización cambia con nuevos empleados que se unen o la abandonan. Además, no están sujetas a los límites anteriores de 100/1000 ubicaciones incluidas en una directiva.
+
+- Crear un  Ámbito de directiva adaptable y usarlo con una directiva de retención
+
+### <a name="step-2-automate-labeling-to-apply-a-label-to-all-items-by-default"></a>Paso 2: Automatizar el etiquetado para aplicar una etiqueta a todos los elementos de forma predeterminada
+
+> [!TIP]
+> Procedimiento recomendado de prueba: configuración en los primeros 30 días
+
+Las etiquetas predeterminadas le permiten aplicar automáticamente una etiqueta de retención a todos los elementos de una biblioteca, carpeta o conjunto de documentos especificados en SharePoint.
+
+- Publicar una etiqueta y aplicarla como predeterminada en SharePoint
 
 ## <a name="data-loss-prevention"></a>Prevención de pérdida de datos
 
@@ -356,59 +382,38 @@ Para habilitar el Análisis de riesgos internos, debe ser miembro o administrado
 
 ## <a name="records-management"></a>Records Management
 
-**Automatizar la programación de retención de registros críticos para la empresa**
+**Administre los elementos de gran valor para los requisitos de mantenimiento de registros empresariales, legales o normativos**
 
-Use características integradas de administración de registros de Microsoft Purview para automatizar la programación de retención para los registros normativos, legales y empresariales de la organización. Obtenga ayuda con el ciclo de vida completo del contenido, desde la creación hasta la colaboración, la declaración de registros, la retención y la eliminación.
+Use características de administración de registros de Microsoft Purview para automatizar la programación de retención para los registros normativos, legales y empresariales de la organización. Aproveche las funcionalidades de automatización, desde la creación hasta la colaboración, para declarar los registros, conservar los contenidos y eliminarlos al final.
 
-### <a name="step-1-dynamically-target-retention-policies-with-adaptive-policy-scopes"></a>Paso 1: Dirigir dinámicamente las directivas de retención con ámbitos de directiva adaptables
+### <a name="step-1-mark-contents-as-records"></a>Paso 1: Marcar los contenidos como registros  
 
 > [!TIP]
 > Procedimiento recomendado de prueba: día 1
 
-Los ámbitos de directiva adaptables permiten dirigir dinámicamente una directiva a determinados usuarios, grupos o sitios en función de sus atributos de AD.
+Cuando el contenido se declara como un registro, se aplican restricciones en el elemento en cuanto a las acciones permitidas o bloqueadas, se registran actividades adicionales sobre los elementos y se obtiene una prueba de disposición si los elementos se eliminan al final de su período de retención.
 
-Los atributos de los ámbitos se pueden seleccionar en una lista o personalizarse mediante un generador de consultas avanzado.
+- Crear una etiqueta de retención que declara el contenido como un registro o un registro normativo
 
-Las directivas que usan ámbitos de directiva adaptables permanecen actualizadas a medida que la organización cambia con nuevos empleados que se unen o la abandonan. Además, no están sujetas a los límites anteriores de 100/1000 ubicaciones incluidas en una directiva.
+### <a name="step-2-review-content-to-approve-before-its-permanently-deleted"></a>Paso 2: Revisar el contenido que se debe aprobar antes de que se elimine de forma permanente
 
-- Crear un [ Ámbito de directiva adaptable](retention.md#adaptive-or-static-policy-scopes-for-retention) y usarlo con una directiva de retención
+> [!TIP]
+> Procedimiento recomendado de prueba: día 1
 
-### <a name="step-2-automate-labeling-of-sensitive-information-with-the-ability-to-review-before-disposal"></a>Paso 2: Automatizar el etiquetado de información confidencial con la capacidad de revisar antes de la eliminación
+Al final del período de retención, los usuarios que especifique ("revisores") pueden ser notificados para revisar el contenido y aprobar la acción de eliminación permanente. Esto apoya si una acción diferente a la eliminación es más apropiada, como asignar un período de retención diferente al contenido o suspender la eliminación para una auditoría.
+
+- Crear una etiqueta de retención que use la revisión para eliminación
+
+### <a name="step-3-apply-labels-automatically-to-content-that-matches-specific-conditions"></a>Paso 3: Aplicar etiquetas automáticamente al contenido que coincida con condiciones específicas
 
 > [!TIP]
 > Procedimiento recomendado de prueba: configuración en los primeros 30 días
 
-Las etiquetas de retención se pueden configurar para aplicarse automáticamente al contenido cuando se detecta información confidencial, como un número de tarjeta de crédito. Esto elimina la necesidad de que los usuarios realicen manualmente la actividad de etiquetado.
+La aplicación automática de etiquetas elimina la necesidad de que los usuarios realicen manualmente las actividades de etiquetado. Puede aplicar etiquetas de retención al contenido automáticamente cuando ese contenido aún no tiene aplicada una etiqueta de retención y contiene información confidencial, palabras clave o propiedades que permiten búsquedas, o una coincidencia para clasificadores entrenables.
 
-Al final del período de retención, los usuarios que especifique ("revisores") recibirán una notificación para revisar el contenido y aprobar la acción de eliminación permanente. De este modo, si es necesario conservar algo durante más tiempo, puede hacerse.
-
-Tanto la actividad de la aplicación de etiquetas como la actividad de revisión para eliminación se pueden ver en la pantalla Información general de administración de registros.
-
-1. [Aplicar automáticamente etiquetas de retención a contenido con información confidencial](retention.md#retention-labels)
-1. Crear y aplicar una etiqueta de retención con [revisión para eliminación](disposition.md#disposition-reviews) al final del período de retención
-
-### <a name="step-3-label-content-as-records-automatically-using-trainable-classifiers"></a>Paso 3: Etiquetar el contenido como registros automáticamente mediante clasificadores capacitados
-
-Cuando el contenido se declara como un registro, se aplican restricciones en el elemento en cuanto a las acciones permitidas o bloqueadas, se registran actividades adicionales sobre los elementos y se obtiene una prueba de disposición si los elementos se eliminan al final de su período de retención.
-
-Los clasificadores que se pueden entrenar son herramientas que reconocen varios tipos de contenido, en función de las muestras que se les han proporcionado. Elija entre una variedad de opciones integradas o configure un clasificador personalizado para satisfacer sus necesidades específicas.
-
-1. Crear una etiqueta de retención que [declara el contenido como un registro o un registro normativo](records-management.md#records)
-1. [Aplicar automáticamente etiquetas al contenido con clasificadores que se pueden entrenar](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
-
-### <a name="more-information-auto-apply-retention-labels--disposition-review"></a>Más información: Aplicar automáticamente etiquetas de retención y revisión para eliminación
-
-**Aplicar etiquetas automáticamente para conservar lo que necesita...** Las etiquetas de retención se pueden aplicar automáticamente al contenido cuando contiene:
-
-- [Tipos específicos de información confidencial](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
-- [Palabras clave específicas o propiedades que permiten búsquedas que coinciden con una consulta que usted creó](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
-- [Una coincidencia para clasificadores que se pueden entrenar](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
-
-**…y al final desechar el resto de forma segura.**
-
-Cuando se desencadena una revisión para eliminación al final del período de retención, los revisores que elija recibirán una notificación por correo electrónico de que tienen contenido para revisar.
-
-El contenido pendiente de una revisión para eliminación se elimina permanentemente solo después de que un revisor para la fase final de eliminación elija eliminar el contenido de forma permanente.
+- Aplicar automáticamente etiquetas de retención a contenido con tipos específicos de información confidencial
+- Aplicar automáticamente etiquetas al contenido con clasificadores que se pueden entrenar
+- Aplicar automáticamente etiquetas de retención con palabras clave o propiedades que se pueden buscar
 
 ## <a name="additional-trials-and-add-ons"></a>Pruebas y complementos adicionales
 

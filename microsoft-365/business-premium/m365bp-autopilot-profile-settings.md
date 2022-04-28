@@ -10,7 +10,7 @@ f1.keywords:
 - O365E_ZTDProfileSettings
 - BCS365_ZTDProfileSettings
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -28,38 +28,38 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: Los perfiles de AutoPilot te ayudan a controlar Windows se instala en dispositivos de usuario. Los perfiles contienen configuraciones predeterminadas y opcionales, como omitir Cortana instalación.
-ms.openlocfilehash: 16675317136af9dc03c3bddf88fca954ff72bce1
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: MT
+description: Los perfiles de AutoPilot le ayudan a controlar cómo se instala Windows en los dispositivos de usuario. Los perfiles contienen opciones predeterminadas y opcionales, como omitir la instalación de Cortana.
+ms.openlocfilehash: 9cfacb4ca69f8a674a50cfd5946e6a095433aed9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64635478"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090650"
 ---
 # <a name="about-autopilot-profile-settings"></a>Información sobre la configuración de los perfiles de AutoPilot
 
-## <a name="autopilot-profile-settings"></a>Configuración del perfil de AutoPilot
+## <a name="autopilot-profile-settings"></a>Configuración de perfiles de Autopilot
 
 > [!NOTE]
-> Microsoft Defender für Unternehmen se está implementando para Microsoft 365 Business Premium clientes, a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para dispositivos. [Obtenga más información sobre Defender para empresas](../security/defender-business/mdb-overview.md).
+> Microsoft Defender para empresas se está implementando para los clientes de Microsoft 365 Empresa Premium a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para los dispositivos. [Más información sobre Defender para empresas](../security/defender-business/mdb-overview.md).
 
-Puedes usar los perfiles de AutoPilot para controlar cómo Windows se instala en dispositivos de usuario. Los perfiles contienen la siguiente configuración.
+Puede usar perfiles de AutoPilot para controlar cómo se instala Windows en los dispositivos de usuario. Los perfiles contienen la siguiente configuración.
   
 ## <a name="autopilot-default-features-required-that-are-set-automatically"></a>Características predeterminadas de AutoPilot (necesarias) que se establecen automáticamente
   
-| Valor | Descripción |
+| Configuración | Descripción |
 |:-----|:-----|
-|Omitir Cortana, OneDrive y registro OEM  |Omite la instalación de aplicaciones de consumidor como Cortana y personal OneDrive. El usuario del dispositivo puede instalar estos más adelante siempre que el usuario sea un administrador local en el dispositivo. El registro del fabricante original se omite porque el dispositivo se administrará Microsoft 365 Business Premium.  |
-|Experiencia de inicio de sesión con la marca de su empresa  |Si tu empresa tiene una [página](../admin/setup/customize-sign-in-page.md) Agregar la personal de marca de tu empresa Microsoft 365 inicio de sesión, el usuario del dispositivo tendrá esa experiencia al iniciar sesión.  |
-|Inscripción automática mdm con cuentas AAD configuradas.  |La identidad de usuario la administrará Azure Active Directory y los usuarios iniciarán sesión en Windows y Microsoft 365 con sus Microsoft 365 Business Premium credenciales.  |
+|Omitir el registro de Cortana, OneDrive y OEM  |Omite la instalación de aplicaciones de consumidor como Cortana y OneDrive personal. El usuario del dispositivo puede instalarlos más adelante siempre y cuando el usuario sea un administrador local en el dispositivo. Se omite el registro del fabricante original porque el dispositivo se administrará mediante Microsoft 365 Empresa Premium.  |
+|Experiencia de inicio de sesión con su marca de empresa  |Si su empresa tiene un [Agregue la marca de su empresa a la página de inicio de sesión de Microsoft 365](../admin/setup/customize-sign-in-page.md), el usuario del dispositivo obtendrá esa experiencia al iniciar sesión.  |
+|Inscripción automática de MDM con cuentas de AAD configuradas.  |La identidad de usuario se administrará mediante Azure Active Directory y los usuarios iniciarán sesión en Windows y Microsoft 365 con sus credenciales de Microsoft 365 Empresa Premium.  |
 
 ## <a name="optional-settings"></a>Configuración opcional
   
-| Valor | Descripción |
+| Configuración | Descripción |
 |:-----|:-----|
-|Omitir la configuración de privacidad (desactivado de forma predeterminada)  |Si esta opción está establecida en **On**, el usuario del dispositivo no verá el contrato de licencia para el dispositivo y Windows cuando inicia sesión por primera vez.  |
-|No permitir que el usuario se convierta en el administrador local  |Si esta opción está establecida en **On**, el usuario del dispositivo no podrá instalar ninguna aplicación personal, como Cortana.|
+|Omitir la configuración de privacidad (desactivado de forma predeterminada)  |Si esta opción está establecida en **Activado**, el usuario no verá el contrato de licencia del dispositivo y Windows cuando inicie sesión por primera vez.  |
+|No permitir que el usuario se convierta en el administrador local  |Si esta opción está establecida en **Activado**, el usuario del dispositivo no podrá instalar ninguna aplicación personal, como Cortana.|
 
 ## <a name="see-also"></a>Vea también
 
-[Principales 10 formas de proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)
+[Las 10 mejores formas de proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)

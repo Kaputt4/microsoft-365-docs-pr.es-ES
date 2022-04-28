@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -26,20 +26,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: Obtén información sobre los distintos estados del dispositivo en la lista Acciones del dispositivo en la página Principal de administración Microsoft 365 para empresas.
-ms.openlocfilehash: a0651f0f0b104c243115dc86a72cf3e363bdb9a4
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: MT
+description: Obtenga información sobre los distintos estados del dispositivo en la lista Acciones de dispositivo en la página principal de administración de Microsoft 365 para empresas.
+ms.openlocfilehash: 72a923b366d73d0ceb708abfb6ab96e2562b6e49
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64635473"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095199"
 ---
 # <a name="device-states"></a>Estados de dispositivo
 
-Este artículo se aplica a Microsoft 365 Business Premium.
+Este artículo aplica a Microsoft 365 Empresa Premium.
 
 > [!NOTE]
-> Microsoft Defender für Unternehmen se está implementando para Microsoft 365 Business Premium clientes, a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para dispositivos. [Obtenga más información sobre Defender para empresas](../security/defender-business/mdb-overview.md).
+> Microsoft Defender para Empresas se está implementando para los clientes de Microsoft 365 Empresa Premium desde el 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para los dispositivos. [Más información sobre Defender para Empresas](../security/defender-business/mdb-overview.md).
 
 Los dispositivos de la lista **Acciones de dispositivo** (página principal del administrador \> **Acciones de dispositivo**) pueden tener los estados siguientes.
   
@@ -47,20 +47,20 @@ Los dispositivos de la lista **Acciones de dispositivo** (página principal del 
   
 |**Estado**|**Descripción**|
 |:-----|:-----|
-|Administrado por Intune  |Administrado por Microsoft 365 Business Premium.  |
-|Pendiente de retirada  |Microsoft 365 Business Premium está preparándose para quitar los datos de la empresa del dispositivo.  |
-|Retirada en curso  |Microsoft 365 Business Premium está quitando datos de la compañía del dispositivo.  |
+|Administrado por Intune  |Administrado por Microsoft 365 Empresa Premium.  |
+|Pendiente de retirada  |Microsoft 365 Empresa Premium se está preparando para quitar los datos de la empresa del dispositivo.  |
+|Retirada en curso  |Microsoft 365 Empresa Premium está quitando los datos de la empresa del dispositivo.  |
 |Error de retirada  | No se pudo completar la acción para quitar los datos de la compañía.  |
-|Retirada cancelada  |Se canceló la acción Retirar.  |
+|Retirada cancelada  |Se ha cancelado la acción de retirar.  |
 |Borrado pendiente  |Esperando a que se inicie el restablecimiento de fábrica.  |
 |Borrado en curso  |Se emitió el restablecimiento de fábrica.  |
-|No se pudo completar el borrado  |No se pudo restablecer la fábrica.  |
-|Borrado cancelado  |Se canceló la eliminación de fábrica.  |
-|Incorrecto  |Una acción está pendiente (o en curso), pero el dispositivo no se ha registrado durante más de 30 días.  |
+|No se pudo completar el borrado  |No se ha podido realizar el restablecimiento de fábrica.  |
+|Borrado cancelado  |Se ha cancelado el borrado de fábrica.  |
+|Incorrecto  |Hay una acción pendiente (o en curso), pero el dispositivo no se ha comprobado en más de 30 días.  |
 |Pendiente de eliminación  |La acción de eliminación está pendiente.  |
-|Detectado  |Microsoft 365 Business Premium ha detectado el dispositivo.  |
+|Detectado  |Microsoft 365 Empresa Premium ha detectado el dispositivo.  |
    
 
 ## <a name="see-also"></a>Vea también
 
-[Principales 10 formas de proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)
+[10 formas de proteger con planes de Microsoft 365 para empresas](../admin/security-and-compliance/secure-your-business-data.md)
