@@ -1,16 +1,16 @@
 ---
-title: Dispositivos Windows seguros
+title: Proteger dispositivos Windows
 f1.keywords:
 - CSH
-ms.author: sharik
-author: skjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - O365E_BCSSetup4WindowsConfig
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -27,19 +27,19 @@ search.appverid:
 - MOE150
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: Obtén información sobre cómo configurar la configuración de la directiva de dispositivo predeterminada que cualquier dispositivo Windows recibirá al iniciar sesión en su cuenta laboral o educativa.
-ms.openlocfilehash: b58e63abf19c3078eb5d4356b155df13804c95d5
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: MT
+description: Obtenga información sobre cómo configurar las opciones de la directiva de dispositivo predeterminada que recibirá cualquier dispositivo Windows al iniciar sesión en su cuenta profesional o educativa.
+ms.openlocfilehash: d8a32dd5378ed1b16e6126e9091f2bd2bb8515f5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331200"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094646"
 ---
-# <a name="secure-windows-devices"></a>Dispositivos Windows seguros
+# <a name="secure-windows-devices"></a>Proteger dispositivos Windows
 
-Este artículo se aplica a Microsoft 365 Empresa Premium.
+Este artículo aplica a Microsoft 365 Empresa Premium.
 
-Las opciones que configuras aquí forman parte de la directiva de dispositivo predeterminada para Windows 10 o 11. Todos los usuarios que conecten un Windows, incluidos los dispositivos móviles y los equipos, al iniciar sesión con su cuenta de trabajo recibirán automáticamente esta configuración. Recomendamos que acepte la directiva predeterminada durante la configuración y que, posteriormente, agregue directivas para grupos de usuarios específicos.
+Las opciones que configure aquí forman parte de la directiva de dispositivo predeterminada para Windows 10 y 11. Todos los usuarios que se conecten a un dispositivo Windows, incluidos dispositivos móviles y equipos PC, recibirán automáticamente esta configuración al iniciar sesión con su cuenta profesional. Recomendamos que acepte la directiva predeterminada durante la configuración y que, posteriormente, agregue directivas para grupos de usuarios específicos.
   
 ## <a name="settings-to-secure-windows-10-devices"></a>Configuración para proteger dispositivos con Windows 10
 
@@ -49,5 +49,5 @@ De forma predeterminada, todas las opciones de configuración están **activadas
 |:-----|:-----|
 |Proteger los equipos PC de virus y otras amenazas con el antivirus Windows Defender  <br/> |Es necesario que el antivirus Windows Defender esté activado para proteger los equipos PC de los peligros de estar conectados a Internet.  <br/> |
 |Proteger los equipos PC de amenazas basadas en web en Microsoft Edge  <br/> |Activa opciones de configuración en Edge para proteger a los usuarios de sitios y descargas malintencionados.  <br/> |
-|Ayudar a proteger archivos y carpetas en equipos PC ante el acceso no autorizado con BitLocker  <br/> |BitLocker protege los datos mediante el cifrado de las unidades de disco duro del equipo y protege contra la exposición a datos si se pierde o se roba un equipo. Para obtener más información, consulta [Preguntas más frecuentes de BitLocker](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions).  <br/> |
+|Ayudar a proteger archivos y carpetas en equipos PC ante el acceso no autorizado con BitLocker  <br/> |BitLocker protege los datos al cifrar los discos duros del equipo y proteger ante la exposición de datos en caso de robo o pérdida de un equipo. Para más información, vea [Preguntas más frecuentes sobre BitLocker](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions).  <br/> |
 |Apagar la pantalla del dispositivo cuando esté inactivo durante esta cantidad de tiempo  <br/> |Garantiza que los datos de la compañía estén protegidos si un usuario está inactivo. Puede que un usuario trabaje en una ubicación pública, como una cafetería, y se aparte o se distraiga durante un momento, lo que dejaría su dispositivo vulnerable ante miradas indiscretas. Esta configuración le permite controlar cuánto tiempo puede estar inactivo un usuario antes de que se apague la pantalla.  <br/> |
