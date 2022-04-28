@@ -2,8 +2,8 @@
 title: Configuración de un conector para archivar los datos de InvestEdge en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector 17a-4 InvestEdge DataParser para importar y archivar datos investEdge en Microsoft 365.
-ms.openlocfilehash: cc10c5a798e9e85da7f95769926df8446187434c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 434363cfb2cc66003fa3c900ec58d3ba38b71a0e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998112"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097214"
 ---
 # <a name="set-up-a-connector-to-archive-investedge-data"></a>Configuración de un conector para archivar datos de InvestEdge
 

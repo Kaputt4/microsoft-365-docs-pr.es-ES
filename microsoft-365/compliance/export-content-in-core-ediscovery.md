@@ -2,8 +2,8 @@
 title: Exportación y descarga de contenido desde un caso de exhibición de documentos electrónicos (estándar)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Describe cómo exportar y descargar contenido de un caso de exhibición de documentos electrónicos (estándar) en Microsoft 365.
-ms.openlocfilehash: 2a63d22c8b4cb20e2c0f1317a8496e1cf517b2da
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: fb142a735d30a59735bd4f9a6370543a92f3d926
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995456"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095848"
 ---
 # <a name="export-content-from-a-ediscovery-standard-case"></a>Exportación de contenido desde un caso de exhibición de documentos electrónicos (estándar)
 

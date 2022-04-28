@@ -2,8 +2,8 @@
 title: Crear una colección de borrador
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: ''
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Una colección de borradores es una búsqueda de exhibición de documentos electrónicos de orígenes de datos custodiales y no custodiales en un caso de eDiscovery (Premium) que devuelve una estimación de búsqueda que coincide con la consulta de búsqueda de la colección. Puede revisar las estadísticas de búsqueda, obtener una vista previa de un muestreo de elementos y revisar y volver a ejecutar la colección antes de confirmar los resultados en un conjunto de revisión.
-ms.openlocfilehash: 2178e836809a24edec6d3d184ef8b699bec87bb5
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 50fb63658541c07a312a502dbbe7d68a26467d14
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997084"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096102"
 ---
 # <a name="create-a-draft-collection-in-ediscovery-premium"></a>Crear una colección de borradores en eDiscovery (Premium)
 
@@ -31,7 +31,7 @@ Después de identificar a los custodios y los orígenes de datos que no son cust
 
 ## <a name="before-you-create-a-draft-collection"></a>Antes de crear una colección de borradores
 
-- Agregue custodios y orígenes de datos que no sean de custodia al caso antes de crear una colección de borradores. Esto es necesario para que pueda seleccionar los orígenes de datos al crear una colección de borradores. Para más información, consulte lo siguiente:
+- Agregue custodios y orígenes de datos que no sean de custodia al caso antes de crear una colección de borradores. Esto es necesario para que pueda seleccionar los orígenes de datos al crear una colección de borradores. Para más información, vea:
 
   - [Agregar administradores a un caso](add-custodians-to-case.md)
 

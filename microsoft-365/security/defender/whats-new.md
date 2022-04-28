@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 053326cacaeb2b4110f71edaa290ed10454aa720
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 56e22e0525324c59d2d62adaf2325edc3317ccd6
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731656"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096058"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
@@ -46,10 +46,13 @@ Para obtener más información sobre las novedades de otros productos de segurid
 También puede obtener actualizaciones de productos y notificaciones importantes a través del [centro de mensajes](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
 
+## <a name="april-2022"></a>Abril de 2022
+- (versión preliminar) [Ahora](advanced-hunting-take-action.md) se pueden realizar acciones en los mensajes de correo electrónico directamente desde los resultados de la consulta de búsqueda. Los correos electrónicos se pueden mover a otras carpetas o eliminarse de forma permanente. 
 
 ## <a name="march-2022"></a>Marzo de 2022
 
 - (versión preliminar) La cola de incidentes se ha mejorado con varias características diseñadas para ayudar a las investigaciones. Entre las mejoras se incluyen funcionalidades como la capacidad de buscar incidentes por identificador o nombre, especificar un intervalo de tiempo personalizado y otros.
+
 
 ## <a name="december-2021"></a>Diciembre de 2021
 
@@ -131,7 +134,7 @@ También puede obtener actualizaciones de productos y notificaciones importantes
 
   El análisis de amenazas le ayuda a responder y minimizar el impacto de los ataques activos. También puede obtener información sobre los intentos de ataque bloqueados por Microsoft 365 Defender soluciones y tomar medidas preventivas que mitigan el riesgo de una mayor exposición y aumentan la resistencia. Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible para Microsoft Defender para punto de conexión y Microsoft Defender para los titulares de licencias de Office E5.
 
-## <a name="march-2021"></a>Marzo 2021
+## <a name="march-2021"></a>Marzo de 2021
 
 - [Tabla CloudAppEvents](advanced-hunting-cloudappevents-table.md)
 

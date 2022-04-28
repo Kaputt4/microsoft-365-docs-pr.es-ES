@@ -9,12 +9,12 @@ metadata:
   ms.service: bookings
   ms.localizationpriority: medium
   description: Microsoft Bookings preguntas más frecuentes.
-  ms.openlocfilehash: c904a60fafd980de7bc8559e5025538957fdd7b4
-  ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+  ms.openlocfilehash: 6a61179849e01f60e46a53f12f1ad5c125987527
+  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 04/13/2022
-  ms.locfileid: "64822824"
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "65096036"
 title: Microsoft Bookings preguntas más frecuentes
 summary: ''
 sections:
@@ -25,17 +25,16 @@ sections:
     answer: >
       Microsoft Bookings es una aplicación Microsoft 365 que facilita la programación y administración de citas. Bookings incluye un calendario de reservas basado en web e se integra con Outlook para optimizar el calendario del personal, lo que proporciona a los clientes la flexibilidad de reservar una hora que les resulte más adecuada. Los correos electrónicos de notificación automatizados reducen la cantidad de mensajes no enviados y las organizaciones ahorran tiempo con una reducción en las tareas de programación repetitivas. Bookings le ayuda a realizar fácilmente citas virtuales a través de Skype o Microsoft Teams, y le ayuda a administrar la programación diaria a través de la aplicación de Bookings en Teams. Con la capacidad integrada de personalizar, Bookings está diseñado para satisfacer las necesidades de varias partes de cualquier organización.
   - question: >
+      ¿Está Bookings disponible para mi suscripción?
+    answer: "Bookings está disponible con las siguientes suscripciones: \n- Office 365: A3, A5, E1, E3, E5, F1, F3, Office 365 operado por 21Vianet.\n- Microsoft 365: A3, A5, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium. Puede usar Bookings con una aplicación complementaria de iOS y Android. Bookings no está disponible como una aplicación independiente. Outlook Web App o Outlook en la Web deben estar habilitados para usar Bookings, ya que almacenan datos dentro de Outlook.\n\nUna licencia de Bookings proporciona funcionalidad completa, incluida la creación y administración de calendarios. Los usuarios pueden ver y editar calendarios existentes, cuando esos usuarios se agregan como personal en un rol Administrador o Visor.\n"
+  - question: >
       Cómo usar Microsoft Bookings?
     answer: >
       Bookings es un servicio en línea, por lo que no es necesario descargar nada. Solo tiene que ir al selector de aplicaciones dentro de la experiencia web de Microsoft 365. Los administradores también pueden usar la aplicación complementaria Bookings para mantenerse al día con la información más reciente sobre los clientes y sus citas.
   - question: >
-      Quién tiene acceso a Microsoft Bookings?
-    answer: >
-      Bookings está disponible y activa de forma predeterminada para clientes de Microsoft 365 Empresa Premium, Microsoft 365 Empresa Estándar, F1, F3, A3, A5, E3 y E5 en todo el mundo. Bookings también está disponible en Office 365 operado por 21Vianet.
-  - question: >
       ¿Verán mis clientes mi calendario personal o empresarial?
     answer: >
-      Los clientes solo verán el calendario de Bookings que publique en línea para los servicios, horas y personal que elija registrar.
+      Los clientes solo verán el calendario Bookings que publique en línea para los servicios, horas y personal que elija.
   - question: >
       Cómo cambiar un atributo que se puede reservar en Administrar personal?
     answer: >
@@ -43,7 +42,7 @@ sections:
   - question: >
       ¿Cómo acceden los usuarios finales a la aplicación Bookings?
     answer: >
-      Cualquier persona con licencia para Microsoft 365 Empresa Premium, Microsoft 365 Empresa Estándar, A3, A5, E3, E5, F1, F3 o se agregue como miembro del personal en los roles Administrador o Visor puede acceder a Bookings en el selector de aplicaciones dentro de Microsoft 365 Web Experiencia. También hay una aplicación complementaria disponible para iOS y Android.
+      Cualquier persona con licencia para una suscripción compatible o que se agregue como miembro del personal en los roles Administrador o Visor puede acceder a Bookings en el selector de aplicaciones dentro de la experiencia web de Microsoft 365. También hay una aplicación complementaria disponible para iOS y Android.
   - question: >
       ¿Puedo usar Bookings en mi propio sitio web?
     answer: >
@@ -55,7 +54,7 @@ sections:
   - question: >
       ¿Puede nuestro departamento de TI controlar si los usuarios finales pueden acceder a Bookings?
     answer: >
-      Bookings está disponible en los inquilinos de Microsoft 365 Empresa Premium, Microsoft 365 Empresa Estándar, M365 A3/A5 y E3/E5 de forma predeterminada, pero los administradores pueden desactivarlo en el Centro de administración de Microsoft 365 si lo prefieren. Para ello, [siga estas instrucciones](turn-bookings-on-or-off.md).
+      Los administradores pueden desactivar Bookings en el Centro de administración de Microsoft 365 si lo prefieren. Para ello, [siga estas instrucciones](turn-bookings-on-or-off.md).
 
 
       Si un cliente quiere deshabilitar el acceso a Bookings para determinadas licencias aptas en su inquilino, puede usar una directiva de grupo para restringir las licencias o implementar una directiva de buzón de OWA que restrinja quién puede crear nuevos calendarios de Bookings.
@@ -118,11 +117,8 @@ sections:
           - soporte técnico
           - revisiones legales
           - Instalaciones
-- name: Precios y licencias
+- name: Información de la cuenta
   questions:
-  - question: >
-      Cómo Microsoft Bookings?
-    answer: "Bookings está disponible con las siguientes suscripciones: \n- Office 365: A3, A5, E3, E5, F1, F3\n- Microsoft 365: A3, A5, E3, E5, F1, F3, Business Standard, Business Premium. Puede usar Bookings con una aplicación complementaria de iOS y Android. Bookings no está disponible como una aplicación independiente. Outlook Web App o Outlook en la Web deben estar habilitados para usar Bookings, ya que almacenan datos dentro de Outlook.\n\nUna licencia de Bookings proporciona funcionalidad completa al producto, incluida la creación y administración de calendarios. También permite a los usuarios ver y editar calendarios existentes, cuando esos usuarios se agregan como personal en un rol administrador o visor.\n"
   - question: >
       ¿Es necesario migrar mi cuenta de correo electrónico de mi proveedor actual a Microsoft 365?
     answer: >
@@ -288,11 +284,6 @@ sections:
       El calendario de este miembro del personal no se puede sincronizar
     answer: >
       Si recibe el error "No se puede sincronizar el calendario de este miembro del personal", esta sección contiene varios procedimientos de solución de problemas para ayudarle a resolver el error.
-
-
-      > [!NOTE]
-
-      > Bookings está activado de forma predeterminada para los clientes que tienen las suscripciones de Microsoft 365 Empresa Estándar, Microsoft 365 A3 o Microsoft 365 A5. Bookings también está disponible para los clientes que tienen Office 365 Enterprise E3 y Office 365 Enterprise E5, pero está desactivado de forma predeterminada. Para empezar, consulte [Obtención de acceso a Microsoft Bookings](get-access.md). Para activar o desactivar Bookings, consulte [Activar o desactivar Bookings para su organización](turn-bookings-on-or-off.md).
 
 
       Si busca información sobre cómo sincronizar el calendario del personal, consulte [Agregar personal a Bookings](add-staff.md). Asegúrese de que en la página **Detalles del personal** , se comprueba la **disponibilidad de eventos en el calendario** .

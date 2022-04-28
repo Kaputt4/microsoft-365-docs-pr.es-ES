@@ -1,5 +1,5 @@
 ---
-title: Configurar dispositivos Windows para Microsoft 365 Empresa Premium usuarios
+title: Configuración de dispositivos Windows para usuarios Microsoft 365 Empresa Premium
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -29,56 +29,57 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: Configure dispositivos Windows que ejecuten Windows 10 Pro para Microsoft 365 Empresa Premium usuarios, lo que habilita controles de seguridad y administración centralizados.
-ms.openlocfilehash: f64114ac6a117ac3eacc9b6aa9de31366e847f33
-ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
+description: Configure Windows dispositivos que ejecutan Windows 10 Pro para Microsoft 365 Empresa Premium usuarios, lo que permite controles de administración y seguridad centralizados.
+ms.openlocfilehash: 57db37f73d2b9145f7c4fb9c1ee1005318c629d7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64403597"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096234"
 ---
-# <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configurar dispositivos Windows para Microsoft 365 Empresa Premium usuarios
+# <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configuración de dispositivos Windows para usuarios Microsoft 365 Empresa Premium
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Antes de configurar dispositivos Windows para usuarios de Microsoft 365 Empresa Premium, asegúrese de que todos los dispositivos de Windows ejecutan Windows 10 Pro, versión 1703 (Actualización de creadores) o Windows 11 Pro. 
+Antes de configurar dispositivos Windows para Microsoft 365 Empresa Premium usuarios, asegúrese de que todos los dispositivos Windows ejecutan Windows 10 Pro, versión 1703 (Creators Update) o Windows 11 Pro. 
 
-Windows 10 Pro (o Windows 11 Pro) es un requisito previo para implementar Windows 10 Business, que es un conjunto de servicios en la nube y capacidades de administración de dispositivos que complementan Windows 10 Pro y Windows 11 Pro , y habilitar los controles de seguridad y administración centralizados de Microsoft 365 Empresa Premium.
+Windows 10 Pro (o Windows 11 Pro) es un requisito previo para implementar Windows 10 Business, que es un conjunto de servicios en la nube y funcionalidades de administración de dispositivos que complementan Windows 10 Pro y Windows 11 Pro y habilite los controles centralizados de administración y seguridad de Microsoft 365 Empresa Premium.
 
-[Obtenga más información sobre los requisitos Microsoft 365 Empresa Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:techspecstab).
+[Obtenga más información sobre los requisitos de Microsoft 365 Empresa Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:techspecstab).
 
 ## <a name="windows-10-pro-and-windows-11-pro"></a>Windows 10 Pro y Windows 11 Pro
 
-Si tienes dispositivos Windows que ejecutan versiones anteriores de Windows, como Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, la suscripción Microsoft 365 Empresa Premium te da derecho a actualizar esos dispositivos a Windows 10 Pro o Windows 11 Pro.
+Si tiene Windows dispositivos que ejecutan versiones anteriores de Windows, como Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, la suscripción de Microsoft 365 Empresa Premium le da derecho a actualizar esos dispositivos a Windows 10 Pro o Windows 11 Pro.
   
-Para obtener más información sobre cómo actualizar Windows dispositivos, consulte los siguientes artículos:
+Para obtener más información sobre cómo actualizar Windows dispositivos, consulte los artículos siguientes:
 
-- [Actualizar Windows inicio a Windows Pro](https://support.microsoft.com/windows/upgrade-windows-home-to-windows-pro-ef34d520-e73f-3198-c525-d1a218cc2818)
+- [Actualice Windows Inicio a Windows Pro](https://support.microsoft.com/windows/upgrade-windows-home-to-windows-pro-ef34d520-e73f-3198-c525-d1a218cc2818)
 - [Actualizar a Windows 10 Pro](https://support.microsoft.com/windows/upgrade-to-windows-10-pro-71ecc746-0f81-a4c0-bd4b-0db8559e0796)
   
-Después de actualizar, consulta Comprobar que el dispositivo está conectado a [Azure AD](#verify-the-device-is-connected-to-azure-ad) para comprobar que tienes la actualización o para asegurarte de que la actualización ha funcionado.
+Después de actualizar, consulte [Comprobar que el dispositivo está conectado a Azure AD](#verify-the-device-is-connected-to-azure-ad) para comprobar que tiene la actualización o para asegurarse de que la actualización funciona.
 
-## <a name="join-windows-devices-to-your-organizations-azure-ad"></a>Unirse Windows dispositivos a la organización Azure AD
+## <a name="join-windows-devices-to-your-organizations-azure-ad"></a>Unir dispositivos Windows a la Azure AD de la organización
 
-Cuando todos los dispositivos de Windows de tu empresa ejecutan Windows 10 Pro o Windows 11 Pro, puedes unir estos dispositivos al Azure Active Directory de la organización (Azure AD). 
+Cuando todos los dispositivos Windows de la empresa ejecutan Windows 10 Pro o Windows 11 Pro, puede unir estos dispositivos a la Azure Active Directory de su organización (Azure AD). 
 
-1. En un Windows, seleccione el logotipo Windows y, a continuación, el Configuración.
+1. En un dispositivo Windows, seleccione el logotipo de Windows y, a continuación, el icono de Configuración.
   
-2. En **Configuración**, vaya a **AccountsAccess** >  **work or school** \> **Conectar**.
+2. En **Configuración**, vaya a **CuentasAcceso** >  a **la Conectar** **profesional o educativa**\>.
   
-3. Escriba su dirección de correo electrónico y, a continuación, **elija Siguiente**.
+3. Escriba su dirección de correo electrónico y, a continuación, elija **Siguiente**.
 
 4. Siga las indicaciones para completar el proceso.
 
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>Comprobar que un dispositivo está conectado a Azure AD
 
-Para comprobar el estado de sincronización, en  la página Acceso al trabajo o escuela de **Configuración, seleccione** el área Conectado **a _** \<organization name\> _ para exponer los botones **Información** y **Desconectar**. Elige **Información** para obtener el estado de sincronización. 
+Para comprobar el estado de sincronización, en la página **Access work or school** **de Configuración**, seleccione el área **Conectado a** _ \<organization name\> _ para exponer los botones **Información** y **Desconectar**. Elija **Información** para obtener el estado de sincronización. 
   
-En la **página Estado de sincronización** , elija **Sincronizar** para obtener las directivas de administración de dispositivos móviles más recientes en el equipo.  
+En la página **Estado de sincronización** , elija **Sincronizar** para obtener las directivas de administración de dispositivos móviles más recientes en el equipo.  
   
 ## <a name="next-steps"></a>Siguientes pasos
 
-Para configurar los dispositivos móviles, consulte [Configurar dispositivos móviles para Microsoft 365 Empresa Premium usuarios](set-up-mobile-devices.md), 
+Para configurar los dispositivos móviles, consulte [Configuración de dispositivos móviles para Microsoft 365 Empresa Premium usuarios](set-up-mobile-devices.md), 
 
-Para aumentar la protección, consulte [Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md).
+Para aumentar la protección, consulte [Las 10 principales formas de proteger Microsoft 365 para planes empresariales](../security-and-compliance/secure-your-business-data.md).
   
+

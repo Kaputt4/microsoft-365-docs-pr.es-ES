@@ -2,8 +2,8 @@
 title: Configure un conector para archivar los datos de Cisco Jabber en PostgreSQL en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Aprenda a configurar y usar un conector en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de Cisco Jabber en PostgreSQL a Microsoft 365.
-ms.openlocfilehash: 2e573bcc6c39e9188ec09f05190c124bd904ef98
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 8b7500e97681233af6921902f2676d589a0670f5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996336"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096190"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-postgresql-data"></a>Configuración de un conector para archivar cisco jabber en datos de PostgreSQL
 

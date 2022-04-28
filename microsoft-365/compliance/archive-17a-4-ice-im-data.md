@@ -2,8 +2,8 @@
 title: Configurar un conector para archivar los datos de ICE Conectar Chat en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector ICE Conectar Chat DataParser de 17a-4 para importar y archivar datos de ICE Conectar Chat en Microsoft 365.
-ms.openlocfilehash: fcc700546a15c6dad39b9ebcaeb7385194727016
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 106b425886b6294f7c96ead439be30c5e61030a0
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998115"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097236"
 ---
 # <a name="set-up-a-connector-to-archive-ice-connect-chat-data"></a>Configuración de un conector para archivar datos de ICE Conectar Chat
 

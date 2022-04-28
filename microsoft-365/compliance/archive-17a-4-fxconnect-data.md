@@ -2,8 +2,8 @@
 title: Configuración de un conector DataParser 17a-4 para archivar los datos de FX Conectar en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector DataParser de 17a-4 FX Conectar para importar y archivar datos de FX Conectar en Microsoft 365.
-ms.openlocfilehash: 1b4bd9c6dd68364db13d5e9795277bf6d91fdced
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: f0c480b01f8ef782f238f5a6b49a5d7eff927b4d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998184"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097258"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-fx-connect"></a>Configuración de un conector para archivar datos de FX Conectar
 

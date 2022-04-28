@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener el informe de actividad del usuario Microsoft Teams y obtener información sobre la actividad de Teams en su organización.
-ms.openlocfilehash: ad2701e10e6b71f6fdb6a7d9ccf4a6b795a38b94
-ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
+ms.openlocfilehash: a2bfa434d5a564307498f621cb5105f411daff4d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65015010"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65087225"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de usuario de Microsoft Teams
 
@@ -54,8 +54,8 @@ Para garantizar la calidad de los datos, realizamos comprobaciones diarias de va
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo.   <br/> |
 |Nombre del inquilino  <br/> |Nombre de un inquilino interno o externo al que pertenece un usuario.   <br/> <br/> Si un usuario pertenece a un inquilino externo, las métricas de datos correspondientes (por ejemplo, mensajes de publicación, mensajes de respuesta, etc.) se calculan en función de sus interacciones en canales compartidos del inquilino del administrador. Las interacciones realizadas por el usuario en su propio inquilino (fuera de los canales compartidos del inquilino determinado) no se tienen en cuenta para el informe de uso del administrador de un inquilino determinado.  |
 |Nombres de inquilino de canal compartido   <br/> |Nombres de inquilinos internos o externos de canales compartidos en los que participó el usuario.   <br/> |
-|Mensajes del canal   <br/> |Número de mensajes únicos que el usuario publicó en un chat de equipo durante el período de tiempo especificado.   <br/> |
-|Posts   <br/> |Número de mensajes de publicación en todos los canales durante el período de tiempo especificado <br/> |
+|Mensajes del canal   <br/> |Número de mensajes únicos que el usuario publicó en un chat de equipo durante el período de tiempo especificado. Esto incluye entradas y respuestas originales.   <br/> |
+|Posts   <br/> |Número de mensajes de publicación en todos los canales durante el período de tiempo especificado. Una publicación es el mensaje original en un chat de teams.<br/> |
 |Responde   <br/> |Número de mensajes respondidos en todos los canales durante el período de tiempo especificado. <br/> |
 |Mensajes urgentes    <br/> |Número de mensajes urgentes durante el período de tiempo especificado. <br/> |
 |Mensajes de chat   <br/> |Número de mensajes únicos que el usuario publicó en un chat privado durante el período de tiempo especificado.  <br/> |
@@ -85,7 +85,7 @@ Para que los datos de Teams informe de actividad de usuario sean anónimos, debe
 3. Seleccione **Guardar cambios**.
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 [Informe de uso de dispositivos de Microsoft Teams](../activity-reports/microsoft-teams-device-usage-preview.md)
 
 [Microsoft Teams informe de actividad de uso](../activity-reports/microsoft-teams-usage-activity.md) 

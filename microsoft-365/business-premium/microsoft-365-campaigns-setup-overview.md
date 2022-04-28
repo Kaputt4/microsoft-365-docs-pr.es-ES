@@ -1,15 +1,15 @@
 ---
-title: Introducción a la configuración Microsoft 365 para campañas
+title: Información general sobre la configuración de Microsoft 365 for Campaigns
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 03/02/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,45 +24,31 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Introducción a la configuración Microsoft 365 Empresa Premium para campañas u otras empresas
-ms.openlocfilehash: 324a4f994b4c28ea6636d280d0dfa0e0bd1fa758
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: MT
+description: Introducción a la configuración de Microsoft 365 Empresa Premium para campañas u otras empresas
+ms.openlocfilehash: 0dc5fcda0d2f3ece91e294fea3a59d5e536c8088
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316623"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65086983"
 ---
-# <a name="set-up-microsoft-365-for-campaigns"></a>Configurar Microsoft 365 campañas
+# <a name="set-up-microsoft-365-for-campaigns"></a>Configurar Microsoft 365 for Campaigns
 
-En este artículo se describe el proceso de configuración de Microsoft 365. Cualquier persona Microsoft 365 Empresa Premium puede usar esta guía para dar un paso más en la seguridad.
+## <a name="overview"></a>Información general
 
-## <a name="admins-set-up-microsoft-365"></a>Administradores: configurar Microsoft 365
+Le damos la bienvenida a su primera misión. Las siguientes medidas de seguridad mejoradas son especialmente útiles para las campañas, pero es posible que desee usarlas con cualquier organización como parte de su misión para lograr una mayor seguridad.
 
-En el siguiente diagrama se describe cómo los administradores se Microsoft 365.
+Para esta primera misión, va a configurar las defensas de seguridad iniciales para proteger y defender los sistemas y las redes de su organización. Inicie sesión e inicie el [asistente de instalación](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) para configurar la seguridad general y las licencias de los equipos. 
 
-![Pasos para configurar Microsoft 365.](../media/M365-democracy-SetUpProcess.png)
+Sus objetivos son:
 
-Para las campañas que califican para precios especiales, empieza solicitando una invitación de [Microsoft](https://m365forcampaigns.microsoft.com/) y, a continuación, [insccribiendo Microsoft 365 campañas](m365-campaigns-sign-up.md). Para completar la instalación, [ejecute el Asistente para la](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) instalación para configurar la configuración principal.
+- Registrarse e iniciar sesión en Microsoft 365 Empresa Premium
+- Configurar el entorno de Microsoft 365 Empresa Premium
 
-Para todas las demás organizaciones, después de que te hayas registrado en [Microsoft 365 Empresa Premium](../admin/admin-overview/sign-up-for-office-365.md)), completa la configuración ejecutando el [](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) asistente para configurar la configuración principal.
-
-Para todas las organizaciones, aumente la protección de [seguridad: proteger](m365bp-protect-admin-accounts.md) las cuentas de [administrador, proteger](m365bp-conditional-access.md) el acceso al correo y los datos y aumentar [la protección contra amenazas](m365bp-increase-protection.md).
-
-## <a name="everyone-set-up-your-devices"></a>Todos: configurar los dispositivos
-
-Los usuarios tendrán que tardar unos minutos en configurar dispositivos para que funcionen con este entorno. Para los usuarios clave (aquellos que son los destinos de mayor valor para los hackers), puedes configurar y configurar previamente nuevos dispositivos. Esto les ayuda a empezar a iniciar sesión con sus Microsoft 365 credenciales.
-
-:::image type="content" source="../media/m365-democracy-user-device-setup.png" alt-text="Proceso de configuración del dispositivo de usuario.":::
-  
-Para configurar dispositivos de usuario:
-
-1. Cada usuario [configura sus dispositivos móviles](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json).
-2. Para dispositivos no administrados, los usuarios establecen [sus equipos y Mac](m365bp-protect-pcs-macs.md).
-Para el personal clave, se recomienda usar dispositivos [administrados](../business/set-up-windows-devices.md) para una protección aún mejor. Para todos los dispositivos, querrás configurar la autenticación [multifactor](m365bp-multifactor-authentication.md).
-3. Todos los usuarios deben aprender a protegerse a sí mismos y a su campaña al aprender sobre [la suplantación de identidad (phishing) y otros ataques](m365-campaigns-phishing-and-attacks.md). Esta [infografía también](m365-campaigns-protect-campaign-infographic.md) puede ayudar a los usuarios a comprender cómo proteger la campaña de las amenazas en línea.
+Una vez que haya logrado estos objetivos, puede pasar a la [siguiente misión](m365bp-security-overview.md).
 
 ## <a name="contact-support"></a>Contactar soporte
 
  **Si necesita ponerse en contacto con soporte técnico:**
   
-Como administrador Microsoft 365, tiene acceso a nuestro equipo de soporte al cliente, Póngase en contacto con el soporte técnico para productos **[empresariales: Ayuda para administradores](../business-video/get-help-support.md)**
+Como administrador de Microsoft 365, tiene acceso a nuestro equipo de soporte al cliente, **[Póngase en contacto con el soporte técnico para productos empresariales: Ayuda para administradores](../business-video/get-help-support.md)**

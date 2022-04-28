@@ -2,8 +2,8 @@
 title: Cerrar o eliminar un caso
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre lo que sucede cuando se cierra o elimina una investigación o caso legal compatible con un caso de exhibición de documentos electrónicos (Premium) de Microsoft Purview.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 45bf34450b430d7d33316fe0e6c6a21d12be2937
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: f6428360c76862a0c4ff0c81b1cb83fb8760d789
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993258"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096086"
 ---
 # <a name="close-or-delete-an-ediscovery-premium-case"></a>Cerrar o eliminar un caso de exhibición de documentos electrónicos (Premium)
 
@@ -46,7 +46,7 @@ Para cerrar un caso:
 
 1. En la página **eDiscovery (Premium),** seleccione el caso que desea cerrar.
 
-2. En la pestaña **Configuración**, en **Información de caso**, haga clic en **Seleccionar**.
+2. En la pestaña **Configuración**, en **Información del**, haga clic en **Seleccionar**.
 
    ![Acceda a la página de control flotante de información del caso en un caso de eDiscovery (Premium).](..\media\AeDSelectCaseInformation.png) 
 
@@ -89,7 +89,7 @@ Para eliminar un caso:
 
 1. En la página **eDiscovery (Premium),** seleccione el caso que desea eliminar.
 
-2. En la pestaña **Configuración**, en **Información de caso**, haga clic en **Seleccionar**.
+2. En la pestaña **Configuración**, en **Información del**, haga clic en **Seleccionar**.
 
 3. En la parte inferior de la página desplegable **Información** del caso, haga clic en **Accionesy**, a continuación, haga clic en **Eliminar caso**.
 

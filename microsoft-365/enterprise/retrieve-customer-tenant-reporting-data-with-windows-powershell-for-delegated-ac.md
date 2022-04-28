@@ -1,8 +1,8 @@
 ---
-title: Recuperar datos de informes de inquilinos de clientes con Windows PowerShell para partners de DAP
+title: Recuperación de datos de informes de inquilinos de clientes con Windows PowerShell para asociados de DAP
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,22 +15,22 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: 'Resumen: use el modo remoto de Windows PowerShell para Microsoft Exchange Online para recuperar informes de espacios empresariales de clientes individuales.'
-ms.openlocfilehash: cc9046ab5c90dcb40cbf012772fd80b56f71ec79
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8529e95e8aefbd45cf381ff21bec49e669fd7c6a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60163257"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096708"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Retrieve customer tenant reporting data with Windows PowerShell for Delegated Access Permissions (DAP) partners
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
-Use el Windows PowerShell remoto para Microsoft Exchange Online para recuperar informes de inquilinos de clientes individuales.
+Use Windows PowerShell remotas para Microsoft Exchange Online para recuperar informes de inquilinos de clientes individuales.
 
-Los partners de distribución Proveedor de soluciones en la nube (CSP) pueden tener acceso a los datos que forma parte de los informes de inquilino del cliente directamente a través de Windows PowerShell remoto para Exchange Online PowerShell. Esto permite a los asociados recopilar y guardar los datos de los informes para luego realizar otras operaciones con ellos. Después de abrir una conexión remota, recuperar datos de informes sobre un arrendamiento de cliente es igual que ejecutar cualquier cmdlet en un arrendamiento de cliente..
+Los asociados de distribución y Proveedor de soluciones en la nube (CSP) pueden acceder a los datos que componen los informes de inquilinos del cliente directamente a través de Windows PowerShell remotas para Exchange Online PowerShell. Esto permite a los asociados recopilar y guardar los datos de los informes para luego realizar otras operaciones con ellos. Después de abrir una conexión remota, recuperar datos de informes sobre un arrendamiento de cliente es igual que ejecutar cualquier cmdlet en un arrendamiento de cliente..
 
-En este artículo, se usa Windows PowerShell remoto para Exchange Online conectarse a un solo arrendamiento de cliente y recuperar un informe. De forma predeterminada, Windows PowerShell no admite agregar datos de informes de varios arrendamientos de cliente. Los informes que recupera con este procedimiento son solo para el  _DelegatedOrg_ al que se conecta.
+En este artículo, usará Windows PowerShell remotas para Exchange Online para conectarse a un único inquilino de cliente y recuperar un informe. De forma predeterminada, Windows PowerShell no admite agregar datos de informes de varios arrendamientos de cliente. Los informes que recupera con este procedimiento son solo para el  _DelegatedOrg_ al que se conecta.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 

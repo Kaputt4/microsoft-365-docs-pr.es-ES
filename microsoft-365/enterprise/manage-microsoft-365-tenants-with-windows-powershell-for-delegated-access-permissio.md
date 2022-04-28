@@ -1,8 +1,8 @@
 ---
-title: Administrar Microsoft 365 inquilinos con Windows PowerShell para partners de DAP
+title: Administración de inquilinos Microsoft 365 con Windows PowerShell para asociados de DAP
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,24 +16,24 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
-description: En este artículo, obtenga información sobre cómo usar PowerShell para Microsoft 365 administrar las tenencias de los clientes.
-ms.openlocfilehash: ff74cc0ec710996c66a659034f4fb4a49ee57ab1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: En este artículo, aprenderá a usar PowerShell para Microsoft 365 para administrar las dependencias del cliente.
+ms.openlocfilehash: 11869157a5ed106d1aea0a4ce0e21716be1cc78f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150623"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096796"
 ---
-# <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Administrar Microsoft 365 inquilinos con Windows PowerShell para asociados de permisos de acceso delegado (DAP)
+# <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Administración de inquilinos Microsoft 365 con Windows PowerShell para asociados de permisos de acceso delegado (DAP)
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
-Windows PowerShell permite a los partners de Syndication y Proveedor de soluciones en la nube (CSP) administrar e informar fácilmente sobre la configuración de arrendamiento de clientes que no están disponibles en el Centro de administración de Microsoft 365. Tenga en cuenta que los permisos Administrar en nombre de (AOBO) son necesarios para que la cuenta de administrador del asociado se conecte a los inquilinos del cliente.
+Windows PowerShell permite a los asociados de distribución y Proveedor de soluciones en la nube (CSP) administrar e informar fácilmente sobre la configuración de inquilinos de clientes que no están disponibles en el Centro de administración de Microsoft 365. Tenga en cuenta que los permisos Administrar en nombre de (AOBO) son necesarios para que la cuenta de administrador del asociado se conecte a los inquilinos del cliente.
 
-Los asociados con permiso de acceso delegado (DAP) son asociados de sindicación y proveedor de soluciones en la nube (CSP). Con frecuencia son los proveedores de red o de telecomunicaciones para otras compañías. Agrupan Microsoft 365 suscripciones en sus ofertas de servicio a sus clientes. Cuando venden una suscripción Microsoft 365, se les conceden automáticamente permisos Administrar en nombre de (AOBO) a las tenencias del cliente para que puedan administrar e informar sobre las tenencias del cliente.
+Los asociados con permiso de acceso delegado (DAP) son asociados de sindicación y proveedor de soluciones en la nube (CSP). Con frecuencia son los proveedores de red o de telecomunicaciones para otras compañías. Agrupan Microsoft 365 suscripciones en sus ofertas de servicio a sus clientes. Cuando venden una suscripción Microsoft 365, se les conceden automáticamente permisos de administración en nombre de (AOBO) a las tenencias del cliente para que puedan administrar e informar sobre las tenencias del cliente.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-Los procedimientos de este tema requieren que se conecte a [Conectar a Microsoft 365 con PowerShell](connect-to-microsoft-365-powershell.md).
+Los procedimientos de este tema requieren que se conecte a [Conectar para Microsoft 365 con PowerShell](connect-to-microsoft-365-powershell.md).
 
 Necesita también las credenciales del administrador de inquilinos del asociado.
 
@@ -76,7 +76,7 @@ Si registró dominios adicionales, se devolverán todos los dominios asociados a
 
 ### <a name="get-a-mapping-of-all-tenants-and-registered-domains"></a>Obtener una asignación de todos los inquilinos y los dominios registrados
 
-Los comandos anteriores de PowerShell para Microsoft 365 le mostraron cómo recuperar los identificadores de inquilino o los dominios, pero no ambos al mismo tiempo y sin una asignación clara entre todos ellos. Este comando genera una lista de todos los identificadores de inquilinos de clientes y sus dominios.
+En los comandos anteriores de PowerShell para Microsoft 365 se mostró cómo recuperar identificadores o dominios de inquilino, pero no ambos al mismo tiempo, y sin una asignación clara entre todos ellos. Este comando genera una lista de todos los identificadores de inquilinos de clientes y sus dominios.
 
 ```powershell
 $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.TenantId; Get-MsolDomain -TenantId $Domains | fl @{Label="TenantId";Expression={$Domains}},name}
@@ -100,7 +100,7 @@ Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user princi
 
 ### <a name="add-users-set-options-and-assign-licenses"></a>Agregar usuarios, establecer opciones y asignar licencias
 
-La creación en masa, la configuración y las licencias de Microsoft 365 usuarios son especialmente eficientes mediante PowerShell para Microsoft 365. En este proceso de dos pasos, primero se crean entradas para todos los usuarios que desea agregar en un archivo de valores separados por comas (CSV) y, a continuación, se importa ese archivo mediante PowerShell para Microsoft 365.
+La creación, configuración y licencias masivas de Microsoft 365 usuarios es especialmente eficaz mediante PowerShell para Microsoft 365. En este proceso de dos pasos, primero creará entradas para todos los usuarios que quiera agregar en un archivo de valores separados por comas (CSV) y, a continuación, importará ese archivo mediante PowerShell para Microsoft 365.
 
 #### <a name="create-a-csv-file"></a>Crear un archivo CSV
 

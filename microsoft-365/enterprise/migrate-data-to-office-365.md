@@ -1,8 +1,8 @@
 ---
-title: Migrar los datos de la organización a Microsoft 365 Enterprise
+title: Migración de los datos de la organización a Microsoft 365 Enterprise
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,30 +16,30 @@ ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: En este artículo, se mostrarán los recursos que le ayudarán a migrar los datos de la organización a Microsoft 365.
-ms.openlocfilehash: 800b4ad97508c447b747bd6cba48b08b12d6f4b5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: En este artículo, obtendrá los recursos que le ayudarán a migrar los datos de la organización a Microsoft 365.
+ms.openlocfilehash: d0cf1aa5e744dc545f5a037b63f7cc1981f0e23c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60166951"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096422"
 ---
-# <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>Migrar los datos de la organización a Microsoft 365 Enterprise
+# <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>Migración de los datos de la organización a Microsoft 365 Enterprise
 
-## <a name="ready-to-migrate-your-data-to-microsoft-365"></a>¿Listo para migrar los datos a Microsoft 365?
+## <a name="ready-to-migrate-your-data-to-microsoft-365"></a>¿Está listo para migrar los datos a Microsoft 365?
 
-Nuestras [instrucciones básicas de configuración](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) le ayudan a obtener todos los usuarios que usan Microsoft 365 servicios y aplicaciones en el menor tiempo posible. Esto omite los escenarios híbridos y los métodos más avanzados para migrar a Microsoft 365. 
+Nuestras [instrucciones básicas de configuración](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) le ayudan a conseguir que todos los usuarios usen sus servicios y aplicaciones de Microsoft 365 en el menor tiempo posible. Esto omite los escenarios híbridos y los métodos más avanzados para migrar a Microsoft 365. 
   
-Si desea obtener ayuda para configurar Microsoft 365, [FastTrack](https://fasttrack.microsoft.com/office) es la forma más sencilla de implementar Microsoft 365, también puede iniciar sesión y usar las guías de instalación para Microsoft 365 [servicios](setup-guides-for-microsoft-365.md).
+Si desea ayuda para configurar Microsoft 365, [FastTrack](https://fasttrack.microsoft.com/office) es la manera más fácil de implementar Microsoft 365, también puede iniciar sesión y usar las [guías de configuración para los servicios de Microsoft 365](setup-guides-for-microsoft-365.md).
 
-## <a name="migrate-email-to-microsoft-365"></a>Migrar correo electrónico a Microsoft 365
+## <a name="migrate-email-to-microsoft-365"></a>Migración de correo electrónico a Microsoft 365
 - Migrar con Exchange híbrido con el [Asistente de implementación de Exchange](https://technet.microsoft.com/exdeploy2013). (Administrador)
-- Obtenga más información sobre las diferentes [formas de migrar el correo electrónico a Microsoft 365](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842).
+- Obtenga más información sobre las [distintas formas de migrar el correo electrónico a Microsoft 365](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842).
 - Buscar formas alternativas para que las [personas de su organización puedan migrar su propio correo electrónico, sus contactos y calendarios](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e).
 
 ## <a name="migrate-files-and-folders"></a>Migrar archivos y carpetas
-- [Migrar a SharePoint Online y OneDrive](/sharepointmigration/migrate-to-sharepoint-online). (Administrador)
-- [SharePoint rutas de configuración híbrida del servidor](/SharePoint/hybrid/configuration-roadmaps). (Administrador)
+- [Migre a SharePoint Online y OneDrive](/sharepointmigration/migrate-to-sharepoint-online). (Administrador)
+- [hojas de ruta de configuración híbrida de SharePoint Server](/SharePoint/hybrid/configuration-roadmaps). (Administrador)
 
 ## <a name="migrate-skype-for-business-users"></a>Migrar a los usuarios de Skype Empresarial
 - [Migrar a Skype Empresarial Online](/SkypeForBusiness/hybrid/move-users-between-on-premises-and-cloud?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json). (Administrador)

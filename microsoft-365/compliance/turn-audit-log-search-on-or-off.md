@@ -2,8 +2,8 @@
 title: Activar o desactivar la auditoría
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Cómo activar o desactivar la característica de búsqueda de registros de auditoría en el portal de cumplimiento de Microsoft Purview para habilitar o deshabilitar la capacidad de los administradores de buscar en el registro de auditoría.
-ms.openlocfilehash: e74effad1803b9a55167d1cd3bb5725bd042616a
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 3602a35169670b61a124cda40c9ab50b481571d8
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991828"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078875"
 ---
 # <a name="turn-auditing-on-or-off"></a>Activar o desactivar la auditoría
 

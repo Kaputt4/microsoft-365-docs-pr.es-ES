@@ -2,8 +2,8 @@
 title: 'Configuración de búsqueda y análisis: eDiscovery (Premium)'
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configure los valores de Microsoft Purview eDiscovery (Premium) que se aplican a todos los conjuntos de revisión en un caso. Esto incluye la configuración para el análisis y el reconocimiento óptico de caracteres.
-ms.openlocfilehash: c5b542f224e35a6505dca9cbfacb5f1095fa2dbe
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 0ef76833d18b44a2a1c39db41f7d6fa31f99293e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992312"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097148"
 ---
 # <a name="configure-search-and-analytics-settings-in-ediscovery-premium"></a>Configuración de búsqueda y análisis en eDiscovery (Premium)
 
@@ -92,7 +92,7 @@ Cuando esta configuración está activada, el procesamiento de OCR se ejecutará
 
 - Cuando el contenido de otros orígenes de datos (que no están asociados a un custodio y que se agregan al caso en un origen de datos que no es de custodia) se agrega a un conjunto de revisión.
 
-Una vez agregados los datos a un conjunto de revisión, se puede revisar, buscar, etiquetar y analizar el texto de la imagen. Puede ver el texto extraído en el Visor de texto del archivo de imagen seleccionado en el conjunto de revisión. Para más información, consulte lo siguiente:
+Una vez agregados los datos a un conjunto de revisión, se puede revisar, buscar, etiquetar y analizar el texto de la imagen. Puede ver el texto extraído en el Visor de texto del archivo de imagen seleccionado en el conjunto de revisión. Para más información, vea:
 
 - [Clasificación avanzada de los datos de administración](indexing-custodian-data.md)
 

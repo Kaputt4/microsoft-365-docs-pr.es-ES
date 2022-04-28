@@ -2,7 +2,7 @@
 title: Guías de configuración para los servicios de Office 365 y Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Obtenga herramientas paso a paso para planear, migrar e implementar las características de las licencias del inquilino. Busque una guía para configurar un servicio o una aplicación que necesite ejecutar.
-ms.openlocfilehash: b5ac1347870a7e49d0bbf0a277524647d046a312
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6018a490cf77498b1767e7e269b17937f11ae011
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934299"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097368"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guías de configuración para los servicios de Office 365 y Microsoft 365
 
@@ -51,7 +51,7 @@ Las guías de instalación son accesibles desde la página [Guía de instalació
 
 ## <a name="guides-for-initial-setup"></a>Guías para la configuración inicial
 
-### <a name="prepare-your-environment"></a>Prepare el entorno
+### <a name="prepare-your-environment"></a>Preparar el entorno
 
 La guía [Preparar el entorno](https://aka.ms/prepareyourenvironment) le ayuda a preparar el entorno de su organización para los servicios de Microsoft 365 y Office 365. Sea cual sea el objetivo, hay tareas que deberá completar para garantizar una implementación correcta. Para evitar errores al preparar el entorno, se proporcionan instrucciones paso a paso para conectar el dominio, agregar usuarios, asignar licencias, configurar el correo electrónico con Exchange Online e instalar o implementar aplicaciones Office.
 
