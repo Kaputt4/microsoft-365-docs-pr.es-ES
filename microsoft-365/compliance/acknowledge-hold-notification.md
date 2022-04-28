@@ -2,8 +2,8 @@
 title: Confirmar una notificación de retención
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 04/05/2022
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar eDiscovery (Premium) para enviar y realizar un seguimiento de las notificaciones de suspensión legal a través del correo electrónico, así como supervisar el estado de las obligaciones.
-ms.openlocfilehash: db13ed4a148238dbb677ece55999fd3fb907a1a1
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 21f02f25518fe2ff1c2e4bf80e43de476d381595
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999594"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100619"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Confirmar una notificación de retención
 

@@ -2,7 +2,7 @@
 title: Administrar grupos de Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
@@ -21,39 +21,39 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Obtenga información sobre cómo administrar Microsoft 365 grupos.
-ms.openlocfilehash: 28d8bae8aaed6d02fe082824c07afe03bdc0ce5a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre cómo administrar grupos de Microsoft 365.
+ms.openlocfilehash: 0e7cef7d1b55f695af9a33f22393172f6eee6485
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150767"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100509"
 ---
 # <a name="manage-microsoft-365-groups"></a>Administrar grupos de Microsoft 365
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
-Puede administrar los Microsoft 365 de varias maneras, según la configuración. Puede administrar cuentas de usuario en [Centro de administración de Microsoft 365](/admin), PowerShell, en Servicios de dominio de Active Directory (AD DS) o en el Centro de administración de [Azure Active Directory (Azure AD).](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) 
+Puede administrar Microsoft 365 grupos de varias maneras diferentes, en función de la configuración. Puede administrar cuentas de usuario en el [Centro de administración de Microsoft 365](/admin), PowerShell, en Servicios de dominio de Active Directory (AD DS) o en el [Azure Active Directory (Azure AD) centro de administración](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>Planear dónde y cómo administrará los grupos
 
-Dónde y cómo puede administrar sus cuentas de usuario depende del modelo de identidad que desee usar para su Microsoft 365. Los dos modelos generales son híbridos y solo en la nube.
+Dónde y cómo puede administrar las cuentas de usuario depende del modelo de identidad que quiera usar para la Microsoft 365. Los dos modelos generales son solo en la nube e híbridos.
   
 ### <a name="cloud-only"></a>Solo de nube
 
-Puede crear y administrar grupos con:
+Cree y administre grupos con:
 
-- [Centro de administración de Microsoft 365](/admin)
+- [El Centro de administración de Microsoft 365](/admin)
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Centro de administración de Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
     
 ### <a name="hybrid"></a>Híbrido
 
-Los grupos de AD DS se sincronizan con Microsoft 365 de AD DS, por lo que debes usar las herramientas locales de AD DS para administrar estos grupos.
+Los grupos de AD DS se sincronizan con Microsoft 365 de AD DS, por lo que debe usar herramientas de AD DS locales para administrar estos grupos.
 
-También puede crear y administrar grupos de Azure AD independientes de los grupos de AD DS, pero que pueden contener usuarios y grupos de AD DS. En este caso, puede usar:
+También puede crear y administrar Azure AD grupos que son independientes de los grupos de AD DS, pero que pueden contener usuarios y grupos de AD DS. En este caso, puede usar:
 
-- [Centro de administración de Microsoft 365](/admin)
+- [El Centro de administración de Microsoft 365](/admin)
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Centro de administración de Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
@@ -96,6 +96,6 @@ Asegúrese de que tiene suficientes licencias para todos los miembros del grupo.
 >No configure las licencias basadas en grupos para los grupos que contengan cuentas entre empresas (B2B) de Azure.
 >
 
-Para obtener más información, vea Conceptos básicos de licencias [basadas](/azure/active-directory/active-directory-licensing-whatis-azure-portal)en grupos en Azure AD .
+Para obtener más información, consulte [Conceptos básicos de licencias basadas en grupos en Azure AD](/azure/active-directory/active-directory-licensing-whatis-azure-portal).
 
-Vea las [instrucciones para configurar las licencias basadas en grupos para un grupo de seguridad de Azure](/azure/active-directory/active-directory-licensing-group-assignment-azure-portal).
+Consulte las [instrucciones para configurar licencias basadas en grupos para un grupo de seguridad de Azure](/azure/active-directory/active-directory-licensing-group-assignment-azure-portal).

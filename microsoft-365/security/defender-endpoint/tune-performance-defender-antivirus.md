@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 73afd0751e34fbb020019e6f28056c9f2a935c07
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 3c517d9adcdc2181b43c430a92be3de9ac889dd6
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788598"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101125"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Analizador de rendimiento para Antivirus de Microsoft Defender
 
@@ -31,7 +31,7 @@ ms.locfileid: "64788598"
 **Plataformas**
 - Windows
 
-**¿Qué es Antivirus de Microsoft Defender analizador de rendimiento?**
+## <a name="what-is-microsoft-defender-antivirus-performance-analyzer"></a>¿Qué es Antivirus de Microsoft Defender analizador de rendimiento?
 
 En algunos casos, es posible que tenga que ajustar el rendimiento de Antivirus de Microsoft Defender a medida que examina archivos y carpetas específicos. El analizador de rendimiento es una herramienta de línea de comandos de PowerShell que ayuda a determinar qué archivos, extensiones de archivo y procesos podrían estar causando problemas de rendimiento en puntos de conexión individuales. Esta información se puede usar para evaluar mejor los problemas de rendimiento y aplicar acciones de corrección.
 
@@ -74,28 +74,30 @@ Para obtener más información sobre los parámetros y las opciones de la línea
 > [!NOTE]
 > Al ejecutar una grabación, si recibe el error "No se puede iniciar la grabación de rendimiento porque Windows Grabador de rendimiento ya está grabando", ejecute el siguiente comando para detener el seguimiento existente con el nuevo comando: **wpr -cancel -instancename MSFT_MpPerformanceRecording**
 
-### <a name="performance-tuning-data-and-information"></a>Datos e información de optimización del rendimiento
+## <a name="performance-tuning-data-and-information"></a>Datos e información de optimización del rendimiento
 
 En función de la consulta, el usuario podrá ver los datos de los recuentos de exámenes, la duración (total/min/average/max/median), la ruta de acceso, el proceso y el motivo del examen. En la imagen siguiente se muestra la salida de ejemplo de una consulta simple de los 10 archivos principales para el impacto en el examen.
 
 :::image type="content" source="images/example-output.png" alt-text="Salida de ejemplo para una consulta TopFiles básica" lightbox="images/example-output.png":::
 
-### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>Funcionalidad adicional: exportación y conversión a CSV y JSON
+## <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>Funcionalidad adicional: exportación y conversión a CSV y JSON
 
 Los resultados del analizador de rendimiento también se pueden exportar y convertir a un archivo CSV o JSON.
 Para obtener ejemplos que describen el proceso de "exportación" y "conversión" a través de códigos de ejemplo, vea a continuación.
 
-#### <a name="for-csv"></a>Para CSV
+### <a name="for-csv"></a>Para CSV
 
 - **Para exportar**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | Export-CSV -Path:.\Repro-Install-Scans.csv -Encoding:UTF8 -NoTypeInformation`
 
 - **Para convertir**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100). TopScans | ConvertTo-Csv -NoTypeInformation`
 
-#### <a name="for-json"></a>Para JSON
+### <a name="for-json"></a>Para JSON
 
 - **Para convertir**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
-### <a name="requirements"></a>Requisitos
+Para garantizar una salida legible para la máquina para la exportación con otros sistemas de procesamiento de datos, se recomienda usar el parámetro -Raw para Get-MpPerformanceReport. Consulte a continuación para obtener más información.
+
+## <a name="requirements"></a>Requisitos
 
 Antivirus de Microsoft Defender analizador de rendimiento tiene los siguientes requisitos previos:
 
@@ -157,6 +159,12 @@ New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $
 
 El comando anterior recopila una grabación de rendimiento en Server02 (según lo especificado por el argumento $s del parámetro Session) y lo guarda en la ruta de acceso especificada: **C:\LocalPathOnServer02\trace.etl** en Server02.
 
+##### <a name="example-3-collect-a-performance-recording-in-non-interactive-mode"></a>Ejemplo 3: Recopilación de una grabación de rendimiento en modo no interactivo
+```powershell
+New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60 
+```
+El comando anterior recopila una grabación de rendimiento durante los segundos especificados por el parámetro -Seconds. Esto se recomienda para los usuarios que realizan colecciones por lotes que no requieren ninguna interacción o solicitud.
+
 #### <a name="parameters-new-mpperformancerecording"></a>Parámetros: New-MpPerformanceRecording
 
 ##### <a name="-recordto"></a>-RecordTo
@@ -179,6 +187,17 @@ Especifica el objeto PSSession en el que se va a crear y guardar el Antivirus de
 Type: PSSession[]
 Position: 0
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+##### <a name="-seconds"></a>-Seconds
+Especifica la duración de la grabación de rendimiento en segundos. Esto se recomienda para los usuarios que realizan colecciones por lotes que no requieren ninguna interacción o solicitud.
+
+```yaml
+Type: Int32
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -218,6 +237,7 @@ Get-MpPerformanceReport    [-Path] <String>
     [-TopScansPerFilePerProcess <Int32>]
 ]
 [-MinDuration <String>]
+[-Raw]
 ```
 
 #### <a name="description-get-mpperformancereport"></a>Descripción: Get-MpPerformanceReport
@@ -260,6 +280,12 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensio
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:100ms
 ```
+##### <a name="example-5-using--raw-parameter"></a>Ejemplo 5: Uso del parámetro -Raw
+
+```powershell
+Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10 -Raw | ConvertTo-Json
+```
+El uso de -Raw en el comando anterior especifica que la salida debe ser legible y fácilmente convertible a formatos de serialización como JSON.
 
 #### <a name="parameters-get-mpperformancereport"></a>Parámetros: Get-MpPerformanceReport
 
@@ -286,8 +312,19 @@ Default value: None
 Accept pipeline input: True
 Accept wildcard characters: False
 ```
+##### <a name="-raw"></a>-Raw
 
-### <a name="-topextensions"></a>-TopExtensions
+Especifica que la salida de la grabación de rendimiento debe ser legible y fácilmente convertible a formatos de serialización como JSON (por ejemplo, mediante el comando Convertir a JSON). Esto se recomienda para los usuarios interesados en el procesamiento por lotes con otros sistemas de procesamiento de datos. 
+
+```yaml
+Type: <SwitchParameter>
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+##### <a name="-topextensions"></a>-TopExtensions
 
 Especifica cuántas extensiones superiores se van a generar, ordenadas por "Duración".
 
@@ -299,7 +336,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topextensionsperprocess"></a>-TopExtensionsPerProcess
+##### <a name="-topextensionsperprocess"></a>-TopExtensionsPerProcess
 
 Especifica cuántas extensiones superiores se van a generar para cada proceso superior, ordenados por "Duración".
 
@@ -311,7 +348,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topfiles"></a>-TopFiles
+##### <a name="-topfiles"></a>-TopFiles
 
 Solicita un informe de archivos superiores y especifica cuántos archivos principales se van a generar, ordenados por "Duración".
 
@@ -323,7 +360,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topfilesperextension"></a>-TopFilesPerExtension
+##### <a name="-topfilesperextension"></a>-TopFilesPerExtension
 
 Especifica cuántos archivos superiores se van a generar para cada extensión superior, ordenados por "Duración".
 
@@ -335,7 +372,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topfilesperprocess"></a>-TopFilesPerProcess
+##### <a name="-topfilesperprocess"></a>-TopFilesPerProcess
 
 Especifica cuántos archivos principales se van a generar para cada proceso superior, ordenados por "Duración".
 
@@ -347,7 +384,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topprocesses"></a>-TopProcesses
+##### <a name="-topprocesses"></a>-TopProcesses
 
 Solicita un informe de procesos superiores y especifica cuántos de los procesos principales se van a generar, ordenados por "Duración".
 
@@ -359,7 +396,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topprocessesperextension"></a>-TopProcessesPerExtension
+##### <a name="-topprocessesperextension"></a>-TopProcessesPerExtension
 
 Especifica cuántos procesos superiores se van a generar para cada extensión superior, ordenados por "Duración".
 
@@ -371,7 +408,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topprocessesperfile"></a>-TopProcessesPerFile
+##### <a name="-topprocessesperfile"></a>-TopProcessesPerFile
 
 Especifica cuántos procesos superiores se van a generar para cada archivo superior, ordenados por "Duración".
 
@@ -383,7 +420,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscans"></a>-TopScans
+##### <a name="-topscans"></a>-TopScans
 
 Solicita un informe de exámenes superiores y especifica cuántos exámenes superiores se van a generar, ordenados por "Duración".
 
@@ -395,7 +432,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperextension"></a>-TopScansPerExtension
+##### <a name="-topscansperextension"></a>-TopScansPerExtension
 
 Especifica cuántos exámenes superiores se van a generar para cada extensión superior, ordenados por "Duración".
 
@@ -407,7 +444,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperextensionperprocess"></a>-TopScansPerExtensionPerProcess
+##### <a name="-topscansperextensionperprocess"></a>-TopScansPerExtensionPerProcess
 
 Especifica cuántos exámenes superiores se van a generar para cada extensión superior de cada proceso superior, ordenados por "Duración".
 
@@ -419,7 +456,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperfile"></a>-TopScansPerFile
+##### <a name="-topscansperfile"></a>-TopScansPerFile
 
 Especifica cuántos exámenes superiores se van a generar para cada archivo superior, ordenados por "Duración".
 
@@ -431,7 +468,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperfileperextension"></a>-TopScansPerFilePerExtension
+##### <a name="-topscansperfileperextension"></a>-TopScansPerFilePerExtension
 
 Especifica cuántos exámenes superiores se van a generar para cada archivo superior de cada extensión superior, ordenados por "Duración".
 
@@ -443,7 +480,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess
+##### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess
 
 Especifica cuántos exámenes superiores de salida hay para cada archivo superior de cada proceso superior, ordenados por "Duración".
 
@@ -455,7 +492,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperprocess"></a>-TopScansPerProcess
+##### <a name="-topscansperprocess"></a>-TopScansPerProcess
 
 Especifica cuántos exámenes superiores se van a generar para cada proceso superior en el informe Procesos principales, ordenados por "Duración".
 
@@ -467,7 +504,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperprocessperextension"></a>-TopScansPerProcessPerExtension
+##### <a name="-topscansperprocessperextension"></a>-TopScansPerProcessPerExtension
 
 Especifica cuántos exámenes superiores de salida hay para cada proceso superior de cada extensión superior, ordenados por "Duración".
 
@@ -479,7 +516,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperprocessperfile"></a>-TopScansPerProcessPerFile
+##### <a name="-topscansperprocessperfile"></a>-TopScansPerProcessPerFile
 
 Especifica cuántos exámenes superiores de salida hay para cada proceso superior de cada archivo superior, ordenados por "Duración".
 
@@ -490,12 +527,14 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-> [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
-> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
-> - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
-> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
-> - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
-> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+
+## <a name="additional-resources"></a>Recursos adicionales
+
+Si busca información relacionada con antivirus para otras plataformas, consulte:
+
+- [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+- [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
+- [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+- [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
+- [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+- [Configuración de características de Defender para punto de conexión en Android](android-configure.md)-  [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)

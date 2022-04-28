@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes en función de sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayuda a mantenerse al tanto del panorama de cumplimiento en constante cambio. Averigüe lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b5f231abfbfe943f0b2ab0cf33a14267f0940820
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: b79015ce0ca55bf9a74b6acac8f38f09b9e5e984
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972483"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100553"
 ---
 # <a name="whats-new-in-microsoft-purview"></a>Novedades de Microsoft Purview
 
@@ -68,6 +68,58 @@ Para satisfacer los desafíos del área de trabajo descentralizada y rica en dat
 | eDiscovery avanzado de Microsoft 365 <br><br> eDiscovery principal de Microsoft 365 | Exhibición de documentos electrónicos de Microsoft Purview (premium) <br><br> Exhibición de documentos electrónicos de Microsoft Purview (estándar) | La exhibición de documentos electrónicos, o eDiscovery, es el proceso de identificación y entrega de información electrónica que se puede usar como prueba en casos legales. Para obtener más información, consulte [Exhibición de documentos electrónicos de Microsoft Purview (Premium)](overview-ediscovery-20.md) y [Exhibición de documentos electrónicos de Microsoft Purview (estándar).](get-started-core-ediscovery.md) |
 | Centro de cumplimiento de Microsoft 365 | Portal de cumplimiento de Microsoft Purview. | Portal de administración para acceder a soluciones y catálogo de soluciones dentro del conjunto de Cumplimiento de Microsoft 365 E5. Para más información, consulte [El portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center.md). |
 
+## <a name="march-2022"></a>Marzo de 2022
+
+### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
+
+- [Investigar y corregir alertas de cumplimiento de comunicaciones](communication-compliance-investigate-remediate.md) : se han quitado las instrucciones para la vista de anotación en desuso.
+
+### <a name="compliance-manager"></a>Administrador de cumplimiento
+
+- [Trabajando con acciones de mejora](compliance-manager-improvement-actions.md), [Comenzar con el Administrador de cumplimiento](compliance-manager-setup.md): se ha agregado información sobre más acciones de mejora que se pueden supervisar y probar automáticamente ("evaluación de cumplimiento continuo"). Esto incluye nuevas capacidades para mejorar el estado de las pruebas de una acción a la de otra acción.
+
+### <a name="data-classification"></a>Clasificación de datos
+
+- [Introducción con el Explorador de contenido](data-classification-content-explorer.md): Teams instrucciones agregadas, sección de licencias que apunta a descripciones del servicio.
+
+### <a name="data-lifecycle-management-and-records-management"></a>Administración del ciclo de vida de los datos y administración de registros
+
+- [Las directivas de retención para Yammer](create-retention-policies.md#retention-policy-for-yammer-locations) ahora están disponibles con carácter general (GA).
+- Compatibilidad con canales compartidos, actualmente en versión preliminar. Al configurar una directiva de retención para la ubicación del mensaje de canal Teams, los canales compartidos heredan la configuración de retención de su equipo primario.
+- [Límites por inquilino para la eliminación de contenido](retention-limits.md#maximum-number-of-items-for-disposition).
+
+### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
+
+- [Prevención y Microsoft Teams de pérdida de datos](dlp-microsoft-teams.md): versión preliminar pública del contenido de Share Teams Channels.
+- [Comenzar con la extensión de cumplimiento de Microsoft](dlp-chrome-get-started.md): versión preliminar pública de grupos de aplicaciones restringidos, quite las instrucciones de clave del Registro y la configuración ahora está habilitada de forma predeterminada.
+- [Configuración de las opciones de prevención de pérdida de datos del punto de conexión](dlp-configure-endpoint-settings.md) : novedades de la versión preliminar pública de grupos de aplicaciones restringidos.
+- Referencia de directiva [de prevención de pérdida de datos](dlp-policy-reference.md): se ha actualizado para la versión preliminar pública de los grupos de aplicaciones restringidos.
+- [Comenzar con prevención de pérdida de datos para Power BI](dlp-powerbi-get-started.md): nuevo para la versión preliminar pública.
+
+### <a name="insider-risk-management"></a>Administración de riesgos internos
+
+- [Comenzar con la administración de riesgos internos](insider-risk-management-configure.md): se han agregado nuevas tareas para la guía acciones recomendadas.
+- [Comenzar con la configuración de administración de riesgos internos](insider-risk-management-settings.md): nuevas actualizaciones para las características de notificaciones y alertas por correo electrónico, nuevas actualizaciones para las notificaciones de análisis.
+
+### <a name="microsoft-information-protection"></a>Microsoft Information Protection
+
+- [Compatibilidad con notas de la versión del juego de caracteres de doble byte](mip-dbcs-relnotes.md) : se han agregado instrucciones para macOS.
+
+### <a name="microsoft-priva"></a>Microsoft Priva
+
+- [Configurar la configuración de Priva](/privacy/priva/priva-settings) : se ha actualizado información aclarante sobre los períodos de retención de datos para las solicitudes de derechos del interesado; se agregaron detalles sobre cómo administrar y aplicar etiquetas de revisión de datos para solicitudes de derechos del interesado.
+- [Crear una solicitud de derechos de sujeto](/privacy/priva/subject-rights-requests-create): se han agregado detalles sobre cómo refinar búsquedas y elegir condiciones y atributos; se ha agregado información sobre la nueva funcionalidad que permite a los usuarios seleccionar todas las versiones de SharePoint elementos en su búsqueda (frente a la configuración predeterminada, que solo devuelve la versión actual de SharePoint elementos).
+- [Revisar los datos de una solicitud de derechos del interesado](/privacy/priva/subject-rights-requests-data-review) : se han agregado detalles en el paso 3 para revisar elementos durante la fase de revisión de datos, incluido el marcado de archivos como inclusión o exclusión, la anotación de archivos para aplicar censuras, la aplicación de etiquetas y la introducción de notas.
+- [Generación de informes y cumplimiento de una solicitud de derechos de sujeto](/privacy/priva/subject-rights-requests-reports) : se han agregado detalles sobre cómo comprender los informes; aclarado cuando se genera un paquete de exportación y cómo trabajar con su contenido; se ha agregado información sobre los registros de auditoría, los informes de archivos etiquetados y los períodos de retención de los datos e informes de SRR.
+
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+
+- [Etiquetas de confidencialidad para Teams](sensitivity-labels-teams-groups-sites.md):
+  - Compatibilidad con canales compartidos, actualmente en versión preliminar. Si un equipo tiene canales compartidos, hereda automáticamente la configuración de etiqueta de confidencialidad de su equipo primario y esa etiqueta no se puede quitar ni reemplazar con una etiqueta diferente.
+  - Compatibilidad con plantillas, enumeradas anteriormente como [no compatibles con las API de Teams Graph y los cmdlets de PowerShell]( /microsoftteams/sensitivity-labels#limitations).  
+- Para auditar Word, Excel y PowerPoint en la Web, el texto de justificación ahora está totalmente implementado.
+- La aplicación de una etiqueta predeterminada a documentos existentes para Word, Excel y PowerPoint en la Web ahora está totalmente implementado.
+
 ## <a name="february-2022"></a>Febrero de 2022
 
 ### <a name="ediscovery"></a>eDiscovery
@@ -109,7 +161,7 @@ Para satisfacer los desafíos del área de trabajo descentralizada y rica en dat
 
 - Compatibilidad con nuevos [roles y grupos de roles](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels), ahora en versión preliminar.
 - Nuevas [funcionalidades de supervisión](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) para directivas de etiquetado automático.
-- Implementación ahora: etiqueta predeterminada para documentos existentes en canal actual (versión preliminar) y texto de justificación para Office en la Web.
+- Implementación ahora: etiqueta predeterminada para documentos existentes y texto de justificación para Office en la Web.
 - Anunciado para el canal de Semi-Annual Enterprise de julio con la versión 2202+: Coautoría y auditoría para Outlook.
 
 ## <a name="december-2021"></a>Diciembre de 2021

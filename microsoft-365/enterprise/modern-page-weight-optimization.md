@@ -2,7 +2,7 @@
 title: Optimizar el peso de la página en páginas de sitio modernas de SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
@@ -20,13 +20,13 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo usar la herramienta Diagnóstico de página para optimizar el peso de la página SharePoint páginas de sitio modernas en línea.
-ms.openlocfilehash: 2c7221befc89fd0385b3e96a31fc7721f012628d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre cómo usar la herramienta Diagnóstico de páginas para optimizar el peso de página en SharePoint páginas de sitio modernos en línea.
+ms.openlocfilehash: 01a1976972983cccf3e93006e395f789d5882eff
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210286"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101213"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Optimizar el peso de la página en páginas de sitio modernas de SharePoint Online
 
@@ -53,7 +53,7 @@ Puede encontrarse con los siguientes resultados:
 
 Si el resultado **Peso de página inferior a 500KB** aparece en la sección **Requiere atención**, puede hacer clic en el resultado para obtener detalles.
 
-![Solicitudes para obtener SharePoint resultados.](../media/modern-portal-optimization/pagediag-page-weight.png)
+![Solicitudes para SharePoint resultados.](../media/modern-portal-optimization/pagediag-page-weight.png)
 
 ## <a name="remediate-page-weight-issues"></a>Corrección de problemas de peso de página
 
@@ -72,7 +72,7 @@ Puede encontrar más información para limitar el peso de la página en el artí
 
 Antes de realizar revisiones de página para corregir problemas de rendimiento, anote el tiempo de carga de la página en los resultados del análisis. Ejecute la herramienta de nuevo después de la revisión y compruebe si los nuevos resultados están en línea con su valor de referencia. Luego, compruebe el nuevo tiempo de carga de la página para ver si se ha producido alguna mejora.
 
-![Resultados de tiempo de carga de página.](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Resultados del tiempo de carga de la página.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >El tiempo de carga de la página puede variar en función de varios factores, como la carga de la red, la hora del día y otras condiciones transitorias. Debe probar el tiempo de carga de la página varias veces, antes y después de realizar cambios, para obtener un promedio.

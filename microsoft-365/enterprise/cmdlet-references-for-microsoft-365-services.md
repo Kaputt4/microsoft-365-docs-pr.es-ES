@@ -2,7 +2,7 @@
 title: Referencias de cmdlets para los servicios de Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/16/2020
 audience: ITPro
 ms.topic: reference
@@ -15,57 +15,57 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: Busque Microsoft 365 de cmdlet de PowerShell para Azure AD, Exchange Online, SharePoint Online, Skype Empresarial Online y Seguridad & Cumplimiento.
-ms.openlocfilehash: ab1452ffafd3d5a095063903fab6a9423705c08d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Busque Microsoft 365 referencias de cmdlet de PowerShell para Azure AD, Exchange Online, SharePoint Online, Skype Empresarial Online y Security & Compliance.
+ms.openlocfilehash: 96c03bed9275d3e48164ac5ac5ba57d78b36c634
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204172"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101389"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Referencias de cmdlets para los servicios de Microsoft 365
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
-En este artículo se proporcionan referencias de cmdlet para los distintos servicios de Microsoft 365 y las instrucciones de conexión para cada Microsoft 365 servicio compatible con PowerShell.
+En este artículo se proporcionan referencias de cmdlet para los distintos servicios de Microsoft 365 e instrucciones de conexión para cada servicio de Microsoft 365 compatible con PowerShell.
 
 > [!NOTE]
-> Para conectarse a todos los servicios a la vez, vea Conectar a todos [los Microsoft 365 en una sola Windows PowerShell ventana](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md).
+> Para conectarse a todos los servicios a la vez, consulte [Conectar a todos los servicios de Microsoft 365 en una sola ventana Windows PowerShell](connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md).
 
-## <a name="azure-active-directory-powershell-cmdlets"></a>Azure Active Directory Cmdlets de PowerShell
+## <a name="azure-active-directory-powershell-cmdlets"></a>Azure Active Directory cmdlets de PowerShell
 
-Los Azure Active Directory de referencia de PowerShell para Graph cmdlet se encuentran en la sección Referencia de [Azure Active Directory PowerShell para](/powershell/azure/active-directory/install-adv2)Graph documentación .
+Los temas de referencia de Azure Active Directory PowerShell para Graph cmdlet se encuentran en la sección Referencia de la [documentación de PowerShell de Azure Active Directory para Graph](/powershell/azure/active-directory/install-adv2).
 
-El Azure Active Directory módulo para Windows PowerShell temas de referencia del cmdlet se encuentra en la sección Referencia de la [documentación Azure Active Directory (MSOnline).](/powershell/azure/active-directory/overview)
+El módulo de Azure Active Directory para Windows PowerShell temas de referencia de cmdlets se encuentra en la sección Referencia de la [documentación de Azure Active Directory (MSOnline).](/powershell/azure/active-directory/overview)
 
-Para Microsoft 365 de conexión de PowerShell, vea [Conectar para Microsoft 365 con PowerShell](connect-to-microsoft-365-powershell.md).
+Para obtener Microsoft 365 instrucciones de conexión de PowerShell, consulte [Conectar para Microsoft 365 con PowerShell](connect-to-microsoft-365-powershell.md).
 
 ## <a name="exchange-online-powershell-cmdlets"></a>Cmdlets de Exchange Online PowerShell
 
-Exchange Online temas de referencia del cmdlet se encuentran en la sección Referencia de la [Exchange Online de PowerShell](/powershell/exchange/exchange-online-powershell).
+Exchange Online temas de referencia de cmdlets se encuentran en la sección Referencia de la [documentación de Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).
 
-Para obtener instrucciones de conexión Exchange Online PowerShell, [vea Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Para obtener instrucciones de conexión para Exchange Online PowerShell, consulte [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 > [!NOTE]
-> Los cmdlets de informes para otros servicios, como SharePoint Online, Skype Empresarial Online y Microsoft 365 de usuario, están disponibles en Exchange Online PowerShell. Para obtener más información, consulte [Cmdlets de informes en Exchange Online](/powershell/exchange/exchange-online-powershell).
+> Los cmdlets de informes para otros servicios, como SharePoint Online, Skype Empresarial Online y Microsoft 365 actividad de usuario, están disponibles en Exchange Online PowerShell. Para obtener más información, consulte [Cmdlets de informes en Exchange Online](/powershell/exchange/exchange-online-powershell).
 
 ## <a name="sharepoint-online-powershell-cmdlets"></a>Cmdlets de PowerShell de SharePoint Online
 
-Para SharePoint en línea, vea [Index of Windows PowerShell for SharePoint Online cmdlets](/powershell/module/sharepoint-online/).
+Para ver los cmdlets de SharePoint Online, consulte [Index of Windows PowerShell for SharePoint Online cmdlets (Índice de Windows PowerShell para cmdlets de SharePoint Online](/powershell/module/sharepoint-online/)).
 
-Para obtener instrucciones de conexión SharePoint PowerShell en línea, vea Configurar el SharePoint de administración [en línea Windows PowerShell entorno](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+Para obtener instrucciones de conexión para SharePoint PowerShell en línea, consulte [Configuración del entorno de Windows PowerShell del Shell de administración en línea de SharePoint](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 ## <a name="skype-for-business-online-powershell-cmdlets"></a>Cmdlets de PowerShell de Skype Empresarial Online
 
-Para Skype Empresarial temas de referencia de cmdlets en línea, [vea Skype Empresarial Cmdlets online](/previous-versions//mt228132(v=technet.10)).
+Para obtener Skype Empresarial temas de referencia de cmdlets en línea, consulte [cmdlets de Skype Empresarial Online](/previous-versions//mt228132(v=technet.10)).
 
-Para obtener instrucciones de conexión Skype Empresarial PowerShell en línea, [vea Manage Skype Empresarial Online with PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md).
+Para obtener instrucciones de conexión para Skype Empresarial PowerShell en línea, consulte [Administración de Skype Empresarial en línea con PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md).
 
-## <a name="security--compliance-center-powershell-cmdlets"></a>Cmdlets & PowerShell del Centro de seguridad y cumplimiento
+## <a name="security--compliance-center-powershell-cmdlets"></a>Cmdlets de PowerShell del Centro de cumplimiento de seguridad &
 
-Las referencias del cmdlet & Centro de seguridad y cumplimiento se encuentran en la sección Referencia de la documentación de [PowerShell de seguridad & cumplimiento.](/powershell/exchange/scc-powershell)
+Las referencias de cmdlet de Security & Compliance Center se encuentran en la sección Referencia de la [documentación de PowerShell de cumplimiento de seguridad &](/powershell/exchange/scc-powershell).
 
-Para obtener instrucciones de conexión para PowerShell & Centro de seguridad y cumplimiento, vea Conectar [el PowerShell](/powershell/exchange/connect-to-scc-powershell)del Centro de seguridad & cumplimiento .
+Para obtener instrucciones de conexión para PowerShell del Centro de cumplimiento de & de seguridad, consulte [Conectar a PowerShell del Centro de cumplimiento de & de seguridad](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="see-also"></a>Consulte también
 

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Windows 365 (PC en la nube).
-ms.openlocfilehash: 843e241c796d626ecca2180b0bce1372059701a2
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 325fe39c144227052c966b81a8a2109a07fb0cf2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022897"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100289"
 ---
 # <a name="overview-of-the-windows-365-cloud-pcs-page-in-microsoft-365-lighthouse"></a>Información general de la página Windows 365 (PC en la nube) en Microsoft 365 Lighthouse  
   
@@ -57,22 +57,25 @@ En la pestaña Todos los equipos en la nube, la barra de anotaciones de recuento
 Puede ver todos los equipos en la nube y su estado de aprovisionamiento en la lista debajo de la barra de anotación. Se proporciona la siguiente información:
 
 - **Nombre del equipo en la nube:** Nombre asignado al equipo en la nube.
-- **Inquilino:** Inquilino del cliente en el que se aprovisionó un equipo en la nube.
-- **Nombre del dispositivo:** Intune nombre del dispositivo, un identificador único para un equipo en la nube.
-- **Tipo de equipo:** Tipo de PC en la nube según las SKU estándar.
-- **Estado:** Estado de aprovisionamiento del equipo en la nube.
 - **Usuario:** Usuario para el que se ha aprovisionado o intentado aprovisionar un equipo en la nube.
+- **Nombre del dispositivo:** Intune nombre del dispositivo, un identificador único para un equipo en la nube.
+- **Inquilino:** Inquilino del cliente en el que se aprovisionó un equipo en la nube.
+- **Estado:** Estado de aprovisionamiento del equipo en la nube.
+- **Tipo de licencia:** Enterprise o Business.
+- **Especificaciones:** Configuración de hardware de PC en la nube.
 
 Para ver qué inquilinos tienen equipos en la nube con un estado de aprovisionamiento específico, seleccione ese estado en la barra count-annotation para filtrar la lista. Para ver los estados de aprovisionamiento de equipos en la nube para uno o más inquilinos de clientes específicos, use el menú desplegable **Inquilinos** para filtrar la lista.
 
-Seleccione cualquier equipo en la nube en la lista para ver más detalles. Si necesita realizar acciones en el equipo en la nube, hay opciones para ver las directivas de aprovisionamiento de inquilinos y los detalles del dispositivo en Microsoft Endpoint Manager.
+Seleccione cualquier equipo en la nube en la lista para ver más detalles y ejecutar acciones de administración como:
+- **Reiniciar:** Seleccione esta opción para reiniciar el dispositivo. 
+- **Reprovision:** Seleccione esta opción para restablecer el dispositivo. También puede ver la directiva de aprovisionamiento en el vínculo Microsoft Endpoint Manager.
+- **Renombrar:** Seleccione esta opción para cambiar el nombre del dispositivo asignado a un usuario.
 
 La pestaña Todos los equipos en la nube también incluye las siguientes opciones:
 
-- **Actualizar:** Seleccione esta opción para recuperar los datos de PC en la nube más actuales.
 - **Exportar:** Seleccione esta opción para exportar los datos del equipo en la nube a un archivo de valores separados por comas (.csv) Excel.
+- **Actualizar:** Seleccione esta opción para recuperar los datos de PC en la nube más actuales.
 - **Búsqueda:** Escriba palabras clave para localizar rápidamente un equipo en la nube específico en la lista.
-- **Reintentar el aprovisionamiento:** Seleccione de 1 a 20 equipos en la nube en la lista que tengan un estado de **error de aprovisionamiento** y, a continuación, seleccione esta opción para volver a intentar el aprovisionamiento de esos equipos en la nube.
 
 Para ver una lista completa de los estados de aprovisionamiento de EQUIPOS en la nube y lo que significan, consulte [Información general sobre la administración de dispositivos para equipos](/windows-365/enterprise/device-management-overview#column-details) en la nube en la biblioteca de documentación de Windows 365.
 
@@ -80,7 +83,7 @@ Para ver una lista completa de los estados de aprovisionamiento de EQUIPOS en la
 
 ## <a name="azure-network-connections-tab"></a>Pestaña Conexiones de red de Azure
 
-En la pestaña Conexiones de red de Azure, la barra de anotaciones de recuento de colores muestra el número total de conexiones de red de Azure en todos los inquilinos de cliente que tienen los siguientes estados: Conexiones correctas y Conexiones con errores.
+En la pestaña Conexiones de red de Azure, la barra de anotaciones de recuento de colores muestra el número total de conexiones de red de Azure en todos los inquilinos de cliente que tienen Windows 365 Enterprise equipos en la nube y pueden tener los siguientes estados: Conexiones correctas y Conexiones con errores.
 
 En la lista debajo de la barra de anotación de recuento, puede ver todas las conexiones de red de Azure y su estado de conexión.
 
@@ -90,8 +93,8 @@ Si necesita realizar acciones o solucionar problemas de una conexión en la list
 
 La pestaña Conexiones de red de Azure también incluye las siguientes opciones:
 
-- **Actualizar:** Seleccione esta opción para recuperar los datos de conexión más actuales.
 - **Exportar:** Seleccione esta opción para exportar los datos de conexión a un archivo Excel valores separados por comas (.csv).
+- **Actualizar:** Seleccione esta opción para recuperar los datos de conexión más actuales.
 - **Búsqueda:** Escriba palabras clave para localizar rápidamente una conexión específica.
 
 :::image type="content" source="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png" alt-text="Captura de pantalla de la pestaña Conexiones de red de Azure." lightbox="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png":::

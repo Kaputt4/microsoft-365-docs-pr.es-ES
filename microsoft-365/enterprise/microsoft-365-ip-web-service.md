@@ -2,7 +2,7 @@
 title: El servicio web de URL y dirección IP de Office 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 8/6/2019
 audience: ITPro
 ms.topic: conceptual
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Aprenda a usar la dirección IP de Office 365 y el servicio web URL para identificar y diferenciar mejor el tráfico de red de Office 365.
-ms.openlocfilehash: e4976bafbedc8f5289e2992569bbd5de28e9de75
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: b13377c6230c869231b7cecda8375f663cbcd33b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494490"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100641"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>El servicio web de URL y dirección IP de Office 365
 
@@ -63,8 +63,8 @@ Para obtener más información, vea:
 
 Estos parámetros son comunes a todos los métodos de servicio web:
 
-- **format=\<JSON \| CSV\>**: de forma predeterminada, el formato de datos devuelto es JSON. Use este parámetro opcional para devolver los datos en formato de valores separados por comas (CSV).
-- **ClientRequestId=\<guid\>**: GUID obligatorio que se genera para la asociación de cliente. Genere un GUID único para cada equipo que llama al servicio web (los scripts que se incluyen en esta página generan un GUID por usted). No use los GUID que se muestran en los ejemplos siguientes, puesto que el servicio web puede bloquearlos en el futuro. El formato GUID es _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, donde x representa un número hexadecimal.
+- **format=\<JSON \| CSV\>** —De forma predeterminada, el formato de los datos devueltos es JSON. Use este parámetro opcional para devolver los datos en formato de valores separados por comas (CSV).
+- **ClientRequestId=\<guid\>** —Un GUID necesario que se genera para la asociación de clientes. Debe generar un GUID para cada equipo que llama al servicio web. No use los GUID que se muestran en los ejemplos siguientes, porque el servicio web podría bloquearlos en el futuro. El formato de GUID es _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, donde x representa un número hexadecimal.
 
   Para generar un GUID, puede usar el comando de PowerShell [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) o usar un servicio en línea como el [Generador GUID en línea](https://www.guidgenerator.com/).
 
@@ -77,8 +77,8 @@ Los datos de cada instancia publicada se asignan a un número de versión y el m
 Los parámetros del método web de versión son:
 
 - **AllVersions=\<true \| false\>**: de forma predeterminada, la versión devuelta es la más reciente. Incluya este parámetro opcional para solicitar todas las versiones publicadas desde la primera publicación del servicio web.
-- **Format=\<JSON \| CSV \| RSS\>**: además de los formatos JSON y CSV, el método web de versión también admite RSS. Puede usar este parámetro opcional con el parámetro _AllVersions=true_ para solicitar una fuente RSS que pueda usarse con Outlook u otros lectores de RSS.
-- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>**: este parámetro opcional especifica la instancia para la que se devolverá la versión. Si se omite, se devuelven todas las instancias. Las instancias válidas son: Worldwide, China, USGovDoD, USGovGCCHigh.
+- **Format=\<JSON \| CSV \| RSS\>** —Además de los formatos JSON y CSV, el método web de versión también es compatible con RSS. Puede usarlo junto con el parámetro _AllVersions=true_ para solicitar una fuente RSS, que se puede usar con Outlook y otros lectores RSS.
+- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>** —Este parámetro opcional especifica la instancia para la que se devolverá la versión. Si se omite, se devolverán todas las instancias. Las instancias válidas son: Worldwide, China, USGovDoD, USGovGCCHigh.
 
 El método web de versión no tiene una tasa limitada y no devuelve nunca códigos de respuesta HTTP 429. La respuesta al método web de versión incluye un encabezado de control de caché que recomienda el almacenamiento en caché de los datos durante una hora. El resultado del método web de versión puede ser un registro único o una matriz de registros. Los elementos de cada registro son:
 
@@ -176,10 +176,10 @@ El método web de puntos de conexión devuelve todos los registros de intervalos
 
 Los parámetros del método web de puntos de conexión son:
 
-- **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>**: una lista de áreas de servicio separada por comas. Los elementos válidos son _Common_, _Exchange_, _SharePoint_ y _Skype_. Como los elementos del área de servicio _Common_ son un requisito previo de todas las demás áreas de servicio, el servicio web siempre los incluye. Si no incluye este parámetro, se devolverán todas las áreas de servicio.
-- **TenantName=\<tenant_name\>**: el nombre de espacio empresarial de Office 365. El servicio web toma el nombre que usted proporciona y lo inserta en las partes de URL que incluyen el nombre de inquilino. Si no proporciona un nombre de inquilino, los elementos de las direcciones URL tendrán el carácter comodín (\*).
+- **ServiceAreas=\<Common \| Exchange \| SharePoint \| Skype\>** —Una lista de valores separados por comas de áreas de servicio. Los elementos válidos son _Common_, _Exchange_, _SharePoint_ y _Skype_. Como los elementos del área de servicio _Common_ son un requisito previo para todas las demás áreas de servicio, el servicio web siempre los incluirá. Si no incluye este parámetro, se devolverán todas las áreas de servicio.
+- **TenantName=\<tenant_name\>** —El nombre de la cuenta empresarial de Office 365. El servicio web tiene el nombre especificado y lo inserta en partes de las direcciones URL que incluyen el nombre del inquilino. Si no proporciona un nombre de cuenta empresarial, esas partes de las direcciones URL tienen el carácter comodín (\*).
 - **NoIPv6=\<true \| false\>**: establezca el valor en _true_ para excluir direcciones IPv6 del resultado si no usa IPv6 en la red.
-- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>**: este parámetro obligatorio especifica la instancia desde la que se devuelven los puntos de conexión. Las instancias válidas son: _Worldwide_, _China_, _USGovDoD_ y _USGovGCCHigh_.
+- **Instance=\<Worldwide \| China \| USGovDoD \| USGovGCCHigh\>** —Este parámetro obligatorio especifica la instancia para la que se devolverán los extremos. Las instancias válidas son: _Worldwide_, _China_, _USGovDoD_ y _USGovGCCHigh_.
 
 Si llama al método web de puntos de conexión demasiadas veces desde la misma dirección IP de cliente, es posible que reciba el código de respuesta HTTP _429 (Demasiadas solicitudes)_. Si recibe este código de respuesta, espere 1 hora antes de repetir la solicitud o genere un nuevo GUID. Como recomendación general, solo debe llamar al método web de puntos de conexión cuando el método web de versión indica que hay una nueva versión disponible.
 
@@ -264,8 +264,8 @@ El resultado del método web de cambios es una matriz de registros en la que cad
   RemovedDuplicateIpOrUrl: se ha eliminado una dirección IP o URL duplicada, pero aún está publicada para Office 365. Por lo general, no es necesario realizar ninguna acción.
   OtherNonPriorityChanges: se ha cambiado algo menos importante que todas las demás opciones, como el contenido de un campo de nota.
 - version: la versión del conjunto de puntos de conexión publicado en la cual se introdujo el cambio. Los números de versión están en el formato _AAAAMMDDNN_, donde _NN_ es un número natural que se incrementa si hay varias versiones que deben publicarse en un solo día.
-- previous: una subestructura en la que se detallan los valores anteriores de los elementos que se modificaron en el conjunto de puntos de conexión. Esto no se incluye para los conjuntos de extremos recién añadidos.  Incluye _ExpressRoute_, _serviceArea_, _category,_, _required_, _tcpPorts_, _udpPorts_ y _notes_.
-- current: una subestructura en la que se detallan los valores actualizados de los elementos de los cambios en el conjunto de puntos de conexión. Incluye _ExpressRoute_, _serviceArea_, _category,_, _required_, _tcpPorts_, _udpPorts_ y _notes_.
+- anterior—Una subestructura en la que se detallan los valores anteriores de los elementos modificados en el conjunto de extremos. Esto no se incluye para los conjuntos de extremos recién añadidos. Incluye _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ y _notes_.
+- current—Una subestructura en la que se detallan los valores actualizados de los elementos de cambios en el conjunto de extremos. Incluye _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ y _notes_.
 - add: una subestructura en la que se detallan los elementos que se agregarán a colecciones de conjuntos de puntos de conexión. Se omite si no hay adiciones.
   effectiveDate: define la fecha en que las adiciones estarán disponibles en el servicio.
   ips: los elementos que se agregarán a la matriz _ips_.

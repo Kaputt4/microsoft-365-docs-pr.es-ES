@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ea87a29d93c43b89bcfb482d185bd4b397dcc5b
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 60038a2b82ea452ed921d16042cb81d4f0e023a9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862464"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100663"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>Agregar bloques a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -115,9 +115,11 @@ ms.locfileid: "64862464"
    - **Tipo de suplantación**: seleccione uno de los valores siguientes:
      - **Interno**: el remitente suplantado está en un dominio que pertenece a su organización (un [dominio aceptado](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
      - **Externo**: el remitente suplantado está en un dominio externo.
-   - **Acción**: seleccione **Permitir** o **Bloquear**.
+   - **Acción**: seleccione **Bloquear**.
 
 4. Cuando haya terminado, haga clic en **Agregar**.
+> [!NOTE]
+> Los correos electrónicos de estos remitentes se bloquearán como *phish*. 
 
 ## <a name="use-powershell"></a>Usar PowerShell
 

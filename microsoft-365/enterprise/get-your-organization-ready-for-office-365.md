@@ -1,8 +1,8 @@
 ---
-title: Planeación de Microsoft 365 Enterprise
+title: Planeamiento de Microsoft 365 Enterprise
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 08/12/2019
 audience: Admin
 ms.topic: conceptual
@@ -21,44 +21,44 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
-description: En este artículo se proporcionan listas de comprobación y otros recursos para planear la Microsoft 365 Enterprise implementación.
-ms.openlocfilehash: 7cec2c8eebb35d215bb46370de5a2019118d6310
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: En este artículo se proporcionan listas de comprobación y otros recursos para planear la implementación de Microsoft 365 Enterprise.
+ms.openlocfilehash: 9c9ae59e1a54935d62c014d435e34984f0c24415
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201690"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100993"
 ---
-# <a name="plan-for-microsoft-365-enterprise"></a>Planeación de Microsoft 365 Enterprise
+# <a name="plan-for-microsoft-365-enterprise"></a>Planeamiento de Microsoft 365 Enterprise
 
-Al mover una organización empresarial a Microsoft 365, es importante planear con antelación y tomar las decisiones clave de diseño que simplificarán la implementación de TI y la adopción de usuarios. 
+Al mover una organización empresarial a Microsoft 365, es importante planear con antelación y tomar las decisiones de diseño clave que simplificarán la implementación de TI y la adopción de usuarios. 
 
-## <a name="planning-with-microsoft-365-fasttrack"></a>Planeación con Microsoft 365 FastTrack
+## <a name="planning-with-microsoft-365-fasttrack"></a>Planeamiento con Microsoft 365 FastTrack
 
-[FastTrack para Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) es el mejor método para obtener ayuda de Microsoft para planear la Microsoft 365 implementación. FastTrack puede ayudarle a través de las consideraciones de diseño más comunes y puede responder preguntas en el camino. 
+[FastTrack para Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) es el mejor método para obtener ayuda de Microsoft para planear la implementación de Microsoft 365. FastTrack puede ayudarle a través de las consideraciones de diseño más comunes y puede responder preguntas a lo largo del camino. 
 
 >[!Note]
->También puede obtener ayuda de un partner [de Microsoft](https://www.microsoft.com/solution-providers/home).
+>También puede obtener ayuda de un [asociado de Microsoft](https://www.microsoft.com/solution-providers/home).
 >
 
-## <a name="do-it-yourself-planning-for-microsoft-365"></a>Planeación de hacerlo usted mismo para Microsoft 365
+## <a name="do-it-yourself-planning-for-microsoft-365"></a>Planeamiento de Microsoft 365
 
-Para planear Microsoft 365 por su cuenta, pase por las decisiones de planeación y diseño de estas áreas:
+Para planear Microsoft 365 por su cuenta, siga las decisiones de planeamiento y diseño de estas áreas:
 
 - Su inquilino de Microsoft 365
 
-  Incluye la planeación de las conexiones de red a Internet, Microsoft 365 identidades e integración con aplicaciones, locales, Azure y otros elementos. Vaya a [Suscripciones, licencias, cuentas](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md) e inquilinos para las ofertas en la nube de Microsoft para obtener más información.
+  Incluye la planeación de las conexiones de red a Internet, las identidades de Microsoft 365 y la integración con aplicaciones, locales, Azure y otros elementos. Vaya a [Suscripciones, licencias, cuentas e inquilinos para obtener más información sobre las ofertas en la nube de Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md) .
 
-- Compatibilidad con sus clientes
+- Compatibilidad con los clientes
 
-  Incluye autenticación basada en certificados, administración de dispositivos móviles, opciones de autenticación y colaboración entre inquilinos. Vaya a [Autenticación basada en certificados](microsoft-365-client-support-certificate-based-authentication.md) para obtener más información.
+  Incluye la autenticación basada en certificados, la administración de dispositivos móviles, las opciones de autenticación y la colaboración entre inquilinos. Vaya a [Autenticación basada en certificados](microsoft-365-client-support-certificate-based-authentication.md) para obtener más información.
 
 - Compatibilidad con la autenticación moderna híbrida
 
-  Incluye la planeación de la autenticación moderna al usar configuraciones híbridas de aplicaciones de productividad Microsoft 365 clave. Vaya a [Introducción a la autenticación moderna híbrida y requisitos previos](hybrid-modern-auth-overview.md) para obtener más información.
+  Incluye la planeación de la autenticación moderna al usar configuraciones híbridas de aplicaciones clave Microsoft 365 productividad. Vaya a [Introducción a la autenticación moderna híbrida y requisitos previos](hybrid-modern-auth-overview.md) para obtener más información.
 
-- Clientes y servidores Office anteriores
+- Servidores y clientes de Office anteriores
 
-  Incluye información de migración para Office 2007 y Office de cliente y servidor de 2010. Vaya a [Planear la actualización](plan-upgrade-previous-versions-office.md) para obtener más información.
+  Incluye información de migración para los productos de cliente y servidor de Office 2007 y Office 2010. Vaya a [Planear la actualización](plan-upgrade-previous-versions-office.md) para obtener más información.
 
-También puede iniciar sesión en su suscripción Microsoft 365 y usar las guías de instalación para Microsoft 365 [y Office 365 servicios](setup-guides-for-microsoft-365.md).
+También puede iniciar sesión en su suscripción de Microsoft 365 y usar las [guías de configuración para los servicios de Microsoft 365 y Office 365](setup-guides-for-microsoft-365.md).
