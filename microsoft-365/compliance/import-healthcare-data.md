@@ -2,8 +2,8 @@
 title: Configuración de un conector para importar datos genéricos de auditoría sanitaria
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de datos para importar datos de registros médicos electrónicos (EHR) de su sistema sanitario a Microsoft 365. Esto le permite usar los datos de EHR en directivas de administración de riesgos internos para ayudarle a detectar la actividad de acceso no autorizado a los datos de los pacientes por parte de los empleados.
-ms.openlocfilehash: b1745d8f91253132748fe08d724386d2e6633a4c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 90f50628e255267baeff7d39c776f9a6bf8cc426
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993170"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077891"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>Configuración de un conector para importar datos de auditoría de EHR de atención sanitaria (versión preliminar)
 
@@ -101,7 +101,7 @@ El siguiente paso es crear un conector de Healthcare en el portal de cumplimient
 
    - **Upload un archivo de ejemplo**. Si selecciona esta opción, haga clic en **Upload archivo de ejemplo** para cargar el archivo que preparó en el paso 2. Esta opción le permite seleccionar rápidamente los nombres de columna en el archivo de texto de una lista desplegable para asignar las columnas al esquema necesario para el conector de atención sanitaria. 
 
-    O bien:
+    O bien
 
    - **Proporcione manualmente los detalles de la asignación**. Si selecciona esta opción, debe escribir el nombre de las columnas en el archivo de texto para asignar las columnas al esquema necesario para el conector de atención sanitaria.
 

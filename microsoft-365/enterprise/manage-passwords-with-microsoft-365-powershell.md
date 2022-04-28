@@ -1,8 +1,8 @@
 ---
-title: Administrar contraseñas con PowerShell
+title: Administración de contraseñas con PowerShell
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,21 +16,21 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - O365ITProTrain
-description: Obtenga información sobre cómo usar PowerShell para administrar contraseñas.
-ms.openlocfilehash: 64c46f774db2ae2153ea336b8afb1f1aa7536d94
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Aprenda a usar PowerShell para administrar contraseñas.
+ms.openlocfilehash: e980e9c4c2511ea1f84df870c790a61a047c3a90
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150539"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091575"
 ---
-# <a name="manage-passwords-with-powershell"></a>Administrar contraseñas con PowerShell
+# <a name="manage-passwords-with-powershell"></a>Administración de contraseñas con PowerShell
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Puede usar PowerShell para Microsoft 365 como alternativa a la Centro de administración de Microsoft 365 para administrar contraseñas en Microsoft 365. 
 
-Cuando un bloque de comandos de este artículo requiera que especifique valores de variables, siga estos pasos.
+Cuando un bloque de comandos de este artículo requiera que especifique valores de variable, siga estos pasos.
 
 1. Copie el bloque de comandos en el Portapapeles y péguelo en Bloc de notas o en el entorno de script integrado (ISE) de PowerShell.
 2. Rellene los valores de variable y quite los caracteres "<" y ">".
@@ -38,9 +38,9 @@ Cuando un bloque de comandos de este artículo requiera que especifique valores 
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
-En primer [lugar, conéctese a su Microsoft 365 inquilino](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+En primer lugar, [conéctese al inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
-### <a name="set-a-password"></a>Establecer una contraseña
+### <a name="set-a-password"></a>Establecimiento de una contraseña
 
 Use estos comandos para especificar una contraseña para una cuenta de usuario.
 
@@ -72,9 +72,9 @@ Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword -ForceChangeP
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
-En primer [lugar, conéctese a su Microsoft 365 inquilino](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+En primer lugar, [conéctese al inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-### <a name="set-a-password"></a>Establecer una contraseña
+### <a name="set-a-password"></a>Establecimiento de una contraseña
 
 Use estos comandos para especificar una contraseña para una cuenta de usuario.
 

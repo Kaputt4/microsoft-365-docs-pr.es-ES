@@ -2,27 +2,32 @@
 title: Acceso de dispositivos e identidades en el entorno de prueba de Microsoft 365
 author: kelleyvice-msft
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
-  - M365-subscription-management
-  - Strat_O365_Enterprise
-ms.custom: null
+- M365-subscription-management
+- Strat_O365_Enterprise
+ms.custom: ''
 description: Crear un entorno de Microsoft 365 para probar el acceso de dispositivos e identidades.
+ms.openlocfilehash: 09c7bf9ecb6aaadc89cedfd881e66a5fd19f28d7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091223"
 ---
-
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Acceso de dispositivos e identidades en el entorno de prueba de Microsoft 365
 
-*Esta Guía del laboratorio de pruebas solo se puede usar Microsoft 365 entornos de prueba empresariales.*
+*Esta Guía de laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
 
-[Las configuraciones de acceso a dispositivos](../security/office-365-security/microsoft-365-policies-configurations.md) y identidades son un conjunto de configuraciones recomendadas y directivas de acceso condicional para proteger el acceso a todos los servicios integrados con Azure Active Directory (Azure AD).
+[Las configuraciones de acceso a dispositivos e identidades](../security/office-365-security/microsoft-365-policies-configurations.md) son un conjunto de configuraciones recomendadas y directivas de acceso condicional para proteger el acceso a todos los servicios integrados con Azure Active Directory (Azure AD).
 
-Para crear un entorno de prueba que tenga las configuraciones comunes de acceso a dispositivos y identidades:
+Para crear un entorno de prueba que tenga las configuraciones comunes de acceso a dispositivos e identidades en su lugar:
 
 1. Configurar el entorno de prueba con las características de seguridad y la identidad de requisitos previos en función de la elección del método de autenticación y el modelo de identidad:
 
@@ -30,13 +35,13 @@ Para crear un entorno de prueba que tenga las configuraciones comunes de acceso 
   - [Sincronización de hash de contraseña (PHS)](phs-prereqs-m365-test-environment.md)
   - [Autenticación de paso a través (PTA)](pta-prereqs-m365-test-environment.md)
 
-2. Use [Directivas comunes de acceso](../security/office-365-security/identity-access-policies.md) a dispositivos y identidades para configurar las directivas que se basen en los requisitos previos configurados para el entorno de prueba y explorar y comprobar la protección de identidades y dispositivos.
+2. Use [directivas comunes de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md) para configurar las directivas que se basan en los requisitos previos configurados para el entorno de prueba y explorar y comprobar la protección de identidades y dispositivos.
 
 ## <a name="see-also"></a>Ver también
 
 [Guías de laboratorio de pruebas de identidad adicionales](m365-enterprise-test-lab-guides.md#identity)
 
-[Implementar identidad](deploy-identity-solution-overview.md)
+[Implementación de la identidad](deploy-identity-solution-overview.md)
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 

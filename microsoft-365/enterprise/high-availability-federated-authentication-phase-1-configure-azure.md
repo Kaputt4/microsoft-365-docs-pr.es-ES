@@ -1,8 +1,8 @@
 ---
-title: Fase 1 de autenticación federada de alta disponibilidad Configurar Azure
+title: Autenticación federada de alta disponibilidad Fase 1 Configuración de Azure
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
@@ -10,15 +10,20 @@ ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
-  - CSH
+- CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: 'Resumen: configure la infraestructura Microsoft Azure para hospedar la autenticación federada de alta disponibilidad para Microsoft 365.'
+description: 'Resumen: configure la infraestructura de Microsoft Azure para hospedar la autenticación federada de alta disponibilidad para Microsoft 365.'
+ms.openlocfilehash: f83aa494fcdead8f29810dea06193934b8ef26b9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098392"
 ---
-
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 de la autenticación federada de alta disponibilidad: Configurar Azure
 
-En esta fase, se crean los grupos de recursos, la red virtual (VNet) y los conjuntos de disponibilidad en Azure que hospedarán las máquinas virtuales en las fases 2, 3 y 4. Debe completar esta fase para poder pasar a la [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Consulte [Deploy high availability federated authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) para todas las fases.
+En esta fase, creará los grupos de recursos, la red virtual (VNet) y los conjuntos de disponibilidad en Azure que hospedarán las máquinas virtuales en las fases 2, 3 y 4. Debe completar esta fase para poder pasar a la [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Consulte Implementación de la [autenticación federada de alta disponibilidad para Microsoft 365 en Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) para todas las fases.
   
 Azure debe aprovisionarse con estos componentes básicos:
   
@@ -36,11 +41,11 @@ Antes de empezar a configurar los componentes de Azure, rellene las tablas sigui
   
 |**Elemento**|**Opción de configuración**|**Descripción**|**Valor**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Nombre de VNET  <br/> |Nombre que se asignará a la red virtual (por ejemplo, FedAuthNet).  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |Ubicación de la VNET  <br/> |Centro de datos regional de Azure que contendrá la red virtual.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Dirección IP del dispositivo VPN  <br/> |Dirección IPv4 pública de la interfaz del dispositivo VPN en Internet.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Espacio de direcciones de la VNET  <br/> |El espacio de direcciones de la red virtual. Colabore con su departamento de TI para determinar este espacio de direcciones.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Clave compartida IPsec  <br/> |Cadena alfanumérica aleatoria de 32 caracteres que se usará para autenticar ambos lados de la conexión VPN de sitio a sitio. Colabore con su departamento de TI o de seguridad para determinar el valor de la clave y, después, guárdelo en una ubicación segura. También puede ver [Crear una cadena aleatoria para una clave precompartida IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Nombre de VNET  <br/> |Nombre que se asignará a la red virtual (por ejemplo, FedAuthNet).  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Ubicación de la VNET  <br/> |Centro de datos regional de Azure que contendrá la red virtual.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Dirección IP del dispositivo VPN  <br/> |Dirección IPv4 pública de la interfaz del dispositivo VPN en Internet.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Espacio de direcciones de la VNET  <br/> |El espacio de direcciones de la red virtual. Colabore con su departamento de TI para determinar este espacio de direcciones.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Clave compartida IPsec  <br/> |Cadena alfanumérica aleatoria de 32 caracteres que se usará para autenticar ambos lados de la conexión VPN de sitio a sitio. Colabore con su departamento de TI o de seguridad para determinar el valor de la clave y, después, guárdelo en una ubicación segura. También puede ver [Crear una cadena aleatoria para una clave precompartida IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Tabla V: Configuración de la red virtual entre locales**
   
@@ -52,16 +57,16 @@ Para las primeras tres subredes, especifique un nombre y un espacio de direccion
     
 2. Convierta los bits resultantes a decimales y expréselo como un espacio de direcciones con la longitud de prefijo establecida en el tamaño de la subred de puerta de enlace.
     
-Consulte [Calculadora de espacio de](address-space-calculator-for-azure-gateway-subnets.md) direcciones para subredes de puerta de enlace de Azure para obtener un bloque de comandos de PowerShell y una aplicación de consola C# o Python que realice este cálculo por usted.
+Consulte [Calculadora de espacio de direcciones para subredes de puerta de enlace de Azure](address-space-calculator-for-azure-gateway-subnets.md) para obtener un bloque de comandos de PowerShell y una aplicación de consola de C# o Python que realice este cálculo de forma automática.
   
 Trabaje con su departamento de TI para determinar estos espacios de direcciones a partir del espacio de direcciones de la red virtual.
   
 |**Elemento**|**Nombre de la subred**|**Espacio de direcciones de la subred**|**Finalidad**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |La subred usada por el controlador de dominio de Servicios de dominio de Active Directory (AD DS) y las máquinas virtuales (VM) del servidor de sincronización de directorios.  <br/> |
-|2.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |Subred usada por las máquinas virtuales de AD FS.  <br/> |
-|3.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |Subred usada por las máquinas virtuales del proxy de aplicación web.  <br/> |
-|4.  <br/> |GatewaySubnet  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |Subred usada por las máquinas virtuales de la puerta de enlace de Azure.  <br/> |
+|1.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |Subred usada por el controlador de dominio Servicios de dominio de Active Directory (AD DS) y las máquinas virtuales (VM) del servidor de sincronización de directorios.  <br/> |
+|2.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |Subred usada por las máquinas virtuales de AD FS.  <br/> |
+|3.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |Subred usada por las máquinas virtuales del proxy de aplicación web.  <br/> |
+|4.  <br/> |GatewaySubnet  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |Subred usada por las máquinas virtuales de la puerta de enlace de Azure.  <br/> |
    
  **Tabla S: Subredes de la red virtual**
   
@@ -69,14 +74,14 @@ Ahora, rellene la Tabla I para las direcciones IP estáticas asignadas a las má
   
 |**Elemento**|**Objetivo**|**Dirección IP en la subred**|**Valor**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Dirección IP estática del primer controlador de dominio  <br/> |La cuarta dirección IP posible del espacio de direcciones de la subred definida en el elemento 1 de la Tabla S.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |Dirección IP estática del segundo controlador de dominio  <br/> |La quinta dirección IP posible del espacio de direcciones de la subred definida en el elemento 1 de la Tabla S.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Dirección IP estática del servidor de sincronización de directorios  <br/> |La sexta dirección IP posible del espacio de direcciones de la subred definida en el elemento 1 de la Tabla S.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Dirección IP estática del equilibrador de carga interno para los servidores de AD FS  <br/> |La cuarta dirección IP posible del espacio de direcciones de la subred definida en el elemento 2 de la Tabla S.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Dirección IP estática del primer servidor de AD FS  <br/> |La quinta dirección IP posible del espacio de direcciones de la subred definida en el elemento 2 de la Tabla S.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
-|6.  <br/> |Dirección IP estática del segundo servidor de AD FS  <br/> |La sexta dirección IP posible del espacio de direcciones de la subred definida en el elemento 2 de la Tabla S.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
-|7.  <br/> |Dirección IP estática del primer servidor proxy de aplicación web  <br/> |La cuarta dirección IP posible del espacio de direcciones de la subred definida en el elemento 3 de la Tabla S.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
-|8.  <br/> |Dirección IP estática del segundo servidor proxy de aplicación web  <br/> |La quinta dirección IP posible del espacio de direcciones de la subred definida en el elemento 3 de la Tabla S.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Dirección IP estática del primer controlador de dominio  <br/> |La cuarta dirección IP posible del espacio de direcciones de la subred definida en el elemento 1 de la Tabla S.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Dirección IP estática del segundo controlador de dominio  <br/> |La quinta dirección IP posible del espacio de direcciones de la subred definida en el elemento 1 de la Tabla S.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Dirección IP estática del servidor de sincronización de directorios  <br/> |La sexta dirección IP posible del espacio de direcciones de la subred definida en el elemento 1 de la Tabla S.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Dirección IP estática del equilibrador de carga interno para los servidores de AD FS  <br/> |La cuarta dirección IP posible del espacio de direcciones de la subred definida en el elemento 2 de la Tabla S.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Dirección IP estática del primer servidor de AD FS  <br/> |La quinta dirección IP posible del espacio de direcciones de la subred definida en el elemento 2 de la Tabla S.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
+|6.  <br/> |Dirección IP estática del segundo servidor de AD FS  <br/> |La sexta dirección IP posible del espacio de direcciones de la subred definida en el elemento 2 de la Tabla S.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
+|7.  <br/> |Dirección IP estática del primer servidor proxy de aplicación web  <br/> |La cuarta dirección IP posible del espacio de direcciones de la subred definida en el elemento 3 de la Tabla S.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
+|8.  <br/> |Dirección IP estática del segundo servidor proxy de aplicación web  <br/> |La quinta dirección IP posible del espacio de direcciones de la subred definida en el elemento 3 de la Tabla S.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Tabla I: Direcciones IP estáticas en la red virtual**
   
@@ -84,8 +89,8 @@ Para dos servidores de Sistema de nombres de dominio (DNS) en la red local que q
   
 |**Elemento**|**Nombre descriptivo del servidor DNS**|**Dirección IP del servidor DNS**|
 |:-----|:-----|:-----|
-|1.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Tabla D: Servidores DNS locales**
   
@@ -95,16 +100,16 @@ Para el conjunto de espacios de direcciones de la red local, rellene la Tabla L.
   
 |**Elemento**|**Espacio de direcciones de la red local**|
 |:-----|:-----|
-|1.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Tabla L: Prefijos de direcciones para la red local**
   
-Ahora empecemos a crear la infraestructura de Azure para hospedar la autenticación federada para Microsoft 365.
+Ahora vamos a empezar a compilar la infraestructura de Azure para hospedar la autenticación federada para Microsoft 365.
   
 > [!NOTE]
-> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Consulte [Introducción a Azure PowerShell](/powershell/azure/get-started-azureps). 
+> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Consulte [Comenzar con Azure PowerShell](/powershell/azure/get-started-azureps). 
   
 Primero, abra un símbolo del sistema de Azure PowerShell e inicie sesión con su cuenta.
   
@@ -113,7 +118,7 @@ Connect-AzAccount
 ```
 
 > [!TIP]
-> Para generar bloques de comandos de PowerShell listos para ejecutarse en función de la configuración personalizada, use [este Microsoft Excel de configuración](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
+> Para generar bloques de comandos de PowerShell listos para ejecutarse en función de la configuración personalizada, use este [libro de configuración Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
 
 Obtenga su nombre de suscripción mediante el comando siguiente.
   
@@ -144,10 +149,10 @@ Rellene la tabla siguiente para el conjunto de nombres de grupos de recursos ún
   
 |**Elemento**|**Nombre del grupo de recursos**|**Finalidad**|
 |:-----|:-----|:-----|
-|1.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |Controladores de dominio  <br/> |
-|2.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |Servidores de AD FS  <br/> |
-|3.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |Servidores proxy de aplicación web  <br/> |
-|4.  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |Elementos de la infraestructura  <br/> |
+|1.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |Controladores de dominio  <br/> |
+|2.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |Servidores de AD FS  <br/> |
+|3.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |Servidores proxy de aplicación web  <br/> |
+|4.  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |Elementos de la infraestructura  <br/> |
    
  **Tabla R: Grupos de recursos**
   
@@ -194,7 +199,7 @@ New-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locNa
 
 ```
 
-A continuación, se crean grupos de seguridad de red para cada subred que tenga máquinas virtuales. Para realizar el aislamiento de la subred, puede agregar reglas para tipos específicos de tráfico permitido o denegado para el grupo de seguridad de red de una subred.
+A continuación, creará grupos de seguridad de red para cada subred que tenga máquinas virtuales. Para realizar el aislamiento de la subred, puede agregar reglas para tipos específicos de tráfico permitido o denegado para el grupo de seguridad de red de una subred.
   
 ```powershell
 # Create network security groups
@@ -248,7 +253,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> La autenticación federada de los usuarios individuales no se basa en los recursos locales. Sin embargo, si esta conexión VPN de sitio a sitio deja de estar disponible, los controladores de dominio de la red virtual no recibirán actualizaciones de cuentas de usuario y grupos realizados en los Servicios de dominio de Active Directory locales. Para asegurarse de que esto no sucede, puede configurar la alta disponibilidad para la conexión VPN de sitio a sitio. Para obtener más información, consulte [Conectividad de red virtual a red virtual y con alta disponibilidad entre locales](/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> La autenticación federada de los usuarios individuales no se basa en los recursos locales. Sin embargo, si esta conexión VPN de sitio a sitio deja de estar disponible, los controladores de dominio de la red virtual no recibirán actualizaciones de las cuentas de usuario y los grupos realizados en Active Directory local Domain Services. Para asegurarse de que esto no sucede, puede configurar la alta disponibilidad para la conexión VPN de sitio a sitio. Para obtener más información, consulte [Conectividad de red virtual a red virtual y con alta disponibilidad entre locales](/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 El paso siguiente es anotar la dirección IPv4 pública de Azure VPN Gateway para la red virtual después de ejecutar este comando:
   
@@ -270,9 +275,9 @@ Después, defina los nombres de los tres conjuntos de disponibilidad. Rellene la
   
 |**Elemento**|**Objetivo**|**Nombre del conjunto de disponibilidad**|
 |:-----|:-----|:-----|
-|1.  <br/> |Controladores de dominio  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |Servidores de AD FS  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Servidores proxy de aplicación web  <br/> |![línea.](../media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Controladores de dominio  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Servidores de AD FS  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Servidores proxy de aplicación web  <br/> |![Línea.](../media/Common-Images/TableLine.png)  <br/> |
    
  **Tabla A: Conjuntos de disponibilidad**
   
@@ -301,14 +306,14 @@ Esta es la configuración que se muestra después de la finalización correcta d
   
 ## <a name="next-step"></a>Paso siguiente
 
-Usar [la fase 2: Configurar controladores de dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) para continuar con la configuración de esta carga de trabajo.
+Use [Fase 2: Configurar controladores de dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) para continuar con la configuración de esta carga de trabajo.
   
 ## <a name="see-also"></a>Vea también
 
 [Implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Identidad federada para el entorno Microsoft 365 de desarrollo y pruebas](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[Identidad federada para el entorno de desarrollo y pruebas de Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Centro de soluciones y arquitectura de Microsoft 365](../solutions/index.yml)
 
-[Descripción de Microsoft 365 de identidad](deploy-identity-solution-identity-model.md)
+[Descripción de los modelos de identidad de Microsoft 365](deploy-identity-solution-identity-model.md)

@@ -2,8 +2,8 @@
 title: Auditoría de Microsoft Purview (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La Auditoría de Microsoft Purview (Premium) proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: 4f936977c71a933dd05e5c0b2e0d2111b03bc8f7
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 07a441557cacdbb92e9442370210b88d898ccd3b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999506"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099002"
 ---
 # <a name="microsoft-purview-audit-premium"></a>Auditoría de Microsoft Purview (Premium)
 

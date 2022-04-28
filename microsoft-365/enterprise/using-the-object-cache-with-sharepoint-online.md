@@ -2,7 +2,7 @@
 title: Usar la memoria caché de objetos con SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 4/20/2015
 audience: Admin
 ms.topic: troubleshooting
@@ -18,41 +18,41 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
-description: En este artículo se explica la diferencia entre usar la memoria caché de objetos en SharePoint Server 2013 local y SharePoint Online.
-ms.openlocfilehash: c763ebb1603ade7fdc98f7728fb03697c5e7425c
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+description: En este artículo se explica la diferencia entre el uso de la memoria caché de objetos en SharePoint Server 2013 local y SharePoint Online.
+ms.openlocfilehash: db0a150927bc3a2078d4dc0ca7491471b7973f2d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807001"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077796"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>Usar la memoria caché de objetos con SharePoint Online
 
-En este artículo se explica la diferencia entre usar la memoria caché de objetos en SharePoint Server 2013 local y SharePoint Online.
+En este artículo se explica la diferencia entre el uso de la memoria caché de objetos en SharePoint Server 2013 local y SharePoint Online.
   
-Hay un impacto negativo significativo de confiar en la memoria caché de objetos en SharePoint implementación en línea. Cualquier dependencia de la memoria caché de objetos en SharePoint Online reducirá la confiabilidad de la página. 
+Hay un impacto negativo significativo en la confianza en la memoria caché de objetos en SharePoint implementación en línea. Cualquier dependencia de la caché de objetos en SharePoint Online reducirá la confiabilidad de la página. 
   
-## <a name="how-the-sharepoint-online-and-sharepoint-server-2013-object-cache-works"></a>Cómo funciona SharePoint caché de objetos SharePoint Server 2013
+## <a name="how-the-sharepoint-online-and-sharepoint-server-2013-object-cache-works"></a>Funcionamiento de la memoria caché de objetos de SharePoint Online y SharePoint Server 2013
 
-Cuando SharePoint Server 2013 se hospeda localmente, el cliente tiene servidores front-end web privados que hospedan la memoria caché de objetos. Esto significa que la memoria caché está dedicada a un cliente y solo está limitada por la cantidad de memoria disponible y asignada a la memoria caché de objetos. Dado que solo se sirve a un cliente en el escenario local, los servidores front-end web suelen tener usuarios que hacen solicitudes a los mismos sitios una y otra vez. Esto significa que la memoria caché se completa rápidamente y permanece llena de los resultados de la consulta de lista y SharePoint objetos que los usuarios solicitan periódicamente.
+Cuando SharePoint Server 2013 se hospeda en el entorno local, el cliente tiene servidores front-end web privados que hospedan la caché de objetos. Esto significa que la memoria caché está dedicada a un cliente y solo está limitada por la cantidad de memoria disponible y asignada a la memoria caché de objetos. Dado que solo se atiende a un cliente en el escenario local, los servidores front-end web suelen tener usuarios que realizan solicitudes a los mismos sitios una y otra vez. Esto significa que la memoria caché se llena rápidamente y permanece llena de los resultados de la consulta de lista y SharePoint objetos que los usuarios solicitan con regularidad.
   
 ![Muestra el tráfico y la carga en servidores front-end web locales.](../media/a0d38b36-4909-4abb-8d4e-4930814bb3de.png)
   
 Como resultado, la segunda vez que un usuario visita una página, el tiempo de carga de la página mejora. Después de un mínimo de cuatro cargas de la misma página, la página se almacena en caché en todos los servidores front-end web.
   
-En cambio, en SharePoint Online hay muchos más servidores, pero también muchos más sitios. Cada usuario puede conectarse a un servidor front-end web diferente que no tenga la memoria caché rellenada. O bien, quizás la memoria caché se llene para un servidor, pero el siguiente usuario de ese servidor front-end web solicita una página de un sitio diferente. O bien, incluso si el siguiente usuario solicita la misma página que en su visita anterior, se equilibra la carga en un servidor front-end web diferente que no tenga esa página en la memoria caché. En este último caso, el almacenamiento en caché no ayuda en absoluto a los usuarios.
+Por el contrario, en SharePoint Online hay muchos más servidores, pero también muchos más sitios. Cada usuario puede conectarse a un servidor front-end web diferente que no tenga rellenada la memoria caché. O bien, quizás la memoria caché se rellene para un servidor, pero el siguiente usuario de ese servidor front-end web solicita una página de otro sitio. O bien, incluso si el siguiente usuario solicita la misma página que en su visita anterior, se carga con equilibrio de carga en un servidor front-end web diferente que no tiene esa página en su memoria caché. En este último caso, el almacenamiento en caché no ayuda a los usuarios en absoluto.
   
-En la siguiente figura, cada punto representa una página que un usuario está solicitando y donde se almacena en caché. Diferentes colores representan a diferentes clientes que hacen uso compartido de la infraestructura SaaS.
+En la ilustración siguiente, cada punto representa una página que un usuario solicita y donde se almacena en caché. Los distintos colores representan a los diferentes clientes que hacen uso compartido de la infraestructura de SaaS.
   
 ![Muestra los resultados del almacenamiento en caché de objetos en SharePoint Online.](../media/25d04011-ef83-4cb7-9e04-a6ed490f63c3.png)
   
-Como puede ver en el diagrama, las posibilidades de que un usuario determinado golpee a un servidor con la versión almacenada en caché de su página son escasas. Además, debido al gran rendimiento y al hecho de que los servidores se comparten entre muchos sitios, la memoria caché no dura mucho, ya que solo hay tanto espacio disponible para el almacenamiento en caché.
+Como puede ver en el diagrama, las posibilidades de que un usuario determinado alcance un servidor con la versión almacenada en caché de su página son escasas. Además, debido al gran rendimiento y al hecho de que los servidores se comparten entre muchos sitios, la memoria caché no dura mucho tiempo, ya que solo hay mucho espacio para el almacenamiento en caché disponible.
   
-Por todas estas razones, confiar en los usuarios que tienen objetos almacenados en caché no es una forma eficaz de garantizar una experiencia de usuario de calidad y tiempos de carga de página en SharePoint Online.
+Por todas estas razones, confiar en que los usuarios obtengan objetos almacenados en caché no es una manera eficaz de garantizar una experiencia de usuario de calidad y tiempos de carga de página en SharePoint Online.
   
 ## <a name="if-we-cant-rely-on-the-object-cache-to-improve-performance-in-sharepoint-online-what-do-we-use-instead"></a>Si no podemos confiar en la memoria caché de objetos para mejorar el rendimiento en SharePoint Online, ¿qué usamos en su lugar?
 
-Dado que no debe confiar en el almacenamiento en caché en SharePoint Online, debe evaluar métodos de diseño alternativos para SharePoint personalizaciones que usan la memoria caché de objetos. Esto significa usar métodos para problemas de rendimiento, que no se basan en el almacenamiento en caché de objetos para producir buenos resultados para los usuarios. Esto se describe en algunos de los otros artículos de esta serie e incluye:
+Dado que no debe basarse en el almacenamiento en caché en SharePoint Online, debe evaluar enfoques de diseño alternativos para las personalizaciones de SharePoint que usan la memoria caché de objetos. Esto significa usar enfoques para problemas de rendimiento, que no se basan en el almacenamiento en caché de objetos para generar buenos resultados para los usuarios. Esto se describe en algunos de los otros artículos de esta serie e incluye:
   
 - [Opciones de navegación para SharePoint Online](navigation-options-for-sharepoint-online.md)
     

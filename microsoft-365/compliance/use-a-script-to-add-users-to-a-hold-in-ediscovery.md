@@ -2,8 +2,8 @@
 title: Uso de un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos (estándar)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
 description: Obtenga información sobre cómo ejecutar un script para agregar buzones & OneDrive para la Empresa sitios a una nueva retención asociada a un caso de eDiscovery en el portal de cumplimiento de Microsoft Purview.
-ms.openlocfilehash: 70ec2481e8fa352be47544cd2fe6a772c2fbb325
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: c652cd7d553faa5a7f85c59127e4aa2acfd7df4b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000895"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097918"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>Uso de un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos (estándar)
 

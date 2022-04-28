@@ -2,8 +2,8 @@
 title: Elementos parcialmente indizados en la búsqueda de contenido
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Obtenga información sobre los elementos sin indexar en Exchange y SharePoint que puede incluir en una búsqueda de eDiscovery que ejecute en el portal de cumplimiento de Microsoft Purview.
-ms.openlocfilehash: b88e7d0f6651ecaa31849343db066295af1f5e84
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: ff21f04456d6886e7849a8d9a0770640897a62ac
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993104"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091509"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Elementos indizados parcialmente en eDiscovery
 
@@ -170,6 +170,6 @@ Para obtener una lista de los límites de indexación de SharePoint documentos, 
 
 - Si crea una suspensión basada en consultas asociada a un caso de exhibición de documentos electrónicos, todos los elementos indizados parcialmente se colocan en suspensión. Esto incluye elementos parcialmente indexados que no coinciden con los criterios de consulta de búsqueda para la suspensión. Para obtener más información sobre cómo crear retenciones de exhibición de documentos electrónicos basadas en consultas, vea [Crear una suspensión de eDiscovery](create-ediscovery-holds.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Investigación de elementos parcialmente indexados en eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)

@@ -2,8 +2,8 @@
 title: Extensibilidad de Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre la ampliación de soluciones de Microsoft Purview mediante conectores de datos de terceros y API de Microsoft Graph.
-ms.openlocfilehash: 9d2c3235a29e2d25e24656a4ff94216cde925b6c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 1be4ae739681e9c694c6f30097c62de3f5627d06
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992268"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098854"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>Extensibilidad de Microsoft Purview y Microsoft Priva
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los roles y permisos de usuario del Administrador de cumplimiento de Microsoft Purview y configure pruebas automatizadas de acciones. Administre el historial de usuarios y filtre la vista del panel.
-ms.openlocfilehash: e691aefdeaf3c2e1c1398bf71b74006aff4d1f6f
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: c7920a9eac06128f3cf9bfb54645a83296ca7e53
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973649"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091035"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -137,7 +137,7 @@ El administrador global de su organización puede cambiar la configuración de l
 
 2. En la página de configuración, seleccione **Administrador de cumplimiento**.
 
-3. Seleccione **Pruebas automatizadas** en el panel de navegación izquierdo.
+3. Seleccione **Probar origen** en el panel de navegación izquierdo.
 
 4. Seleccione el botón correspondiente para activar las pruebas automáticas de todas las acciones de mejora, desactivarla para todas las acciones o activarla por acción individual.
 

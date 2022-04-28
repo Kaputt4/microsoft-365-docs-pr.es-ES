@@ -2,8 +2,8 @@
 title: Propiedades detalladas del registro de auditoría
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: En este artículo se proporcionan descripciones de propiedades adicionales incluidas al exportar los resultados de un registro de auditoría de Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2342a64deaa2787e534a09b3d874ed3795d82ea8
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 82fd42fc44d5738c47ec022de2bb1b5f53396ae2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996226"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098832"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>Propiedades detalladas del registro de auditoría
 
@@ -87,7 +87,7 @@ En la tabla siguiente se describen las propiedades que se incluyen (en función 
 |TeamName|Nombre de un equipo en Microsoft Teams.|Microsoft Teams|
 |UserAgent|Información sobre el explorador del usuario. Esta información la proporciona el explorador.|SharePoint|
 |UserDomain|Información de identidad sobre la organización del inquilino del usuario (actor) que realizó la acción.|Azure Active Directory|
-|UserId|El usuario que realizó la acción (especificada en la propiedad **Operation** ) que provocó que se registrara el registro. Los registros de auditoría de la actividad realizada por las cuentas del sistema (como SHAREPOINT\system o NT AUTHORITY\SYSTEM) también se incluyen en el registro de auditoría. Otro valor común para la propiedad UserId es app@sharepoint. Esto indica que el "usuario" que llevó a cabo esta actividad era una aplicación que tiene los permisos necesarios en SharePoint para realizar acciones en toda la organización (como buscar en un sitio de SharePoint o en una cuenta de OneDrive) en nombre de un usuario, un administrador o un servicio. <br/><br/>Para más información, consulte lo siguiente:<br/> [El usuario de appsharepoint\@ en los registros de auditoría](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)<br/> o <br/>[Cuentas del sistema en Exchange registros de auditoría de buzones de correo](search-the-audit-log-in-security-and-compliance.md#system-accounts-in-exchange-mailbox-audit-records). |Todo|
+|UserId|El usuario que realizó la acción (especificada en la propiedad **Operation** ) que provocó que se registrara el registro. Los registros de auditoría de la actividad realizada por las cuentas del sistema (como SHAREPOINT\system o NT AUTHORITY\SYSTEM) también se incluyen en el registro de auditoría. Otro valor común para la propiedad UserId es app@sharepoint. Esto indica que el "usuario" que llevó a cabo esta actividad era una aplicación que tiene los permisos necesarios en SharePoint para realizar acciones en toda la organización (como buscar en un sitio de SharePoint o en una cuenta de OneDrive) en nombre de un usuario, un administrador o un servicio. <br/><br/>Para más información, vea:<br/> [El usuario de appsharepoint\@ en los registros de auditoría](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)<br/> o <br/>[Cuentas del sistema en Exchange registros de auditoría de buzones de correo](search-the-audit-log-in-security-and-compliance.md#system-accounts-in-exchange-mailbox-audit-records). |Todo|
 |UserKey|Un identificador alternativo para el usuario identificado en la propiedad **UserID** . Por ejemplo, esta propiedad se rellena con el identificador único de passport (PUID) para los eventos realizados por los usuarios en SharePoint. Esta propiedad también puede especificar el mismo valor que la propiedad **UserID** para los eventos que se producen en otros servicios y eventos realizados por cuentas del sistema.|Todo|
 |UserSharedWith|El usuario con el que se compartió un recurso. Esta propiedad se incluye si el valor de la propiedad **Operation** es **SharingSet**. Este usuario también aparece en la columna **Compartido con** del informe.|SharePoint|
 |UserType|El tipo de usuario que llevó a cabo la operación. Los siguientes valores indican el tipo de usuario. <br/> <br/> **0** : un usuario normal. <br/>**2**: administrador de la organización Microsoft 365.<sup> 1</sup> <br/>**3** : una cuenta de sistema de centro de datos o administrador del centro de datos de Microsoft. <br/>**4** - Una cuenta del sistema. <br/>**5** - Una aplicación. <br/>**6** - Una entidad de servicio.<br/>**7** - Una directiva personalizada.<br/>**8** - Una directiva del sistema.|Todo|

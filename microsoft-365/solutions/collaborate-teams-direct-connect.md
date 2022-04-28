@@ -1,5 +1,5 @@
 ---
-title: Colaborar con participantes externos en un canal
+title: Colaborar con participantes externos en un canal compartido
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -16,19 +16,19 @@ ms.custom: ''
 localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
-description: Obtenga información sobre cómo usar canales compartidos con personas ajenas a su organización.
-ms.openlocfilehash: e6ee2a6be6ec54c002898e301fbd53eed25a328f
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+description: Obtenga información sobre cómo habilitar canales compartidos en Microsoft Teams para la colaboración con personas ajenas a su organización.
+ms.openlocfilehash: 2d439bc3056555daf9bfa9b07131d521e4ee3b4e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835831"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098151"
 ---
-# <a name="collaborate-with-external-participants-in-a-channel"></a>Colaborar con participantes externos en un canal
+# <a name="collaborate-with-external-participants-in-a-shared-channel"></a>Colaborar con participantes externos en un canal compartido
 
 Si desea permitir que los usuarios colaboren con personas ajenas a la organización en [canales compartidos](/MicrosoftTeams/shared-channels), debe configurar la conexión directa B2B para cada organización con la que quiera colaborar. (Como alternativa, puede [Habilitar canales compartidos con todas las organizaciones externas](/microsoft-365/solutions/allow-direct-connect-with-all-organizations)).
 
-Al habilitar canales compartidos con otra organización:
+Al habilitar canales compartidos en Teams con otra organización:
 
 - Los propietarios de equipos de su organización podrán invitar a personas de otras organizaciones a participar en canales compartidos.
 - Las aplicaciones personalizadas (línea de negocio) de su organización estarán disponibles en los canales compartidos y los participantes externos podrán acceder a ellas.
@@ -46,8 +46,8 @@ Para configurar canales compartidos
 1. Seleccione la directiva para la que desea habilitar los canales compartidos y, a continuación, seleccione **Editar**.
 1. Seleccione las opciones que desea habilitar:
     - Para permitir que los propietarios del equipo creen canales compartidos, active **Crear canales compartidos**.
-    - Para permitir que los propietarios del equipo compartan canales compartidos con personas ajenas a la organización, active **Compartir canales compartidos externamente**.
-    - Para permitir que se invite a usuarios a canales compartidos de otras organizaciones, active **Permitido invitar a canales compartidos externos**.
+    - Para permitir que los propietarios del equipo compartan canales compartidos con personas ajenas a la organización, active **Invitar a usuarios externos a canales compartidos**.
+    - Para permitir que se invite a usuarios a canales compartidos de otras organizaciones, active **Unirse a canales compartidos externos**.
 1. Seleccione **Aplicar**.
 
 Para que los participantes del canal externo participen en reuniones, se debe habilitar el acceso externo. Esto también es necesario para poder ver la presencia de los participantes externos en el canal.
@@ -78,9 +78,9 @@ Para agregar una organización
 1. Seleccione **Identidades externas** y, a continuación, seleccione **Configuración de acceso entre inquilinos (versión preliminar)**.
 1. Seleccione **Configuración de la organización**.
 1. Seleccione **Agregar organización**.
-1. En el panel **Agregar organización**, escriba el nombre de dominio completo (o id. de inquilino) de la organización.
-1. Seleccione la organización en los resultados de la búsqueda y, a continuación, seleccione **Agregar**.
-1. La organización aparece en la lista **Configuración de la organización**. En este momento, toda la configuración de acceso de esta organización se hereda de la configuración predeterminada.
+1. En el panel **Agregar organización**, escriba el nombre de dominio completo (o id. de inquilino) de la organización y presione Entrar.
+1. Seleccione **Agregar**.
+1. La organización aparece en la lista de organizaciones. En este momento, toda la configuración de acceso de esta organización se hereda de la configuración predeterminada.
 
 ### <a name="configure-inbound-settings"></a>Configurar opciones de entrada
 
@@ -90,7 +90,7 @@ Para configurar las opciones de entrada de una organización
 1. En [Azure Active Directory](https://aad.portal.azure.com), seleccione **Identidades externas** y, a continuación, seleccione **Configuración de acceso entre inquilinos (versión preliminar)**.
 1. Seleccione el vínculo de acceso de entrada para la organización que desea modificar.
 1. En la pestaña **Conexión directa B2B**, elija **Personalizar configuración**.
-1. En la pestaña **Usuarios y grupos externos**, elija **Permitir acceso** y **Todos los usuarios y grupos**. (Puede elegir **Seleccionar usuarios y grupos externos** si desea limitar el acceso a usuarios y grupos específicos, por ejemplo, los que hayan firmado un acuerdo de confidencialidad).
+1. En la pestaña **Usuarios y grupos externos**, elija **Permitir acceso** y **Todos los usuarios y grupos externos**. (Puede elegir **Seleccionar usuarios y grupos externos** si desea limitar el acceso a usuarios y grupos específicos, por ejemplo, los que hayan firmado un acuerdo de confidencialidad).
 1. En la pestaña **Aplicaciones**, elija **Permitir acceso** y **Seleccionar aplicaciones**.
 1. Seleccione **Agregar aplicaciones de Microsoft**.
 1. Seleccione la aplicación **Office 365** y, a continuación, elija **Seleccionar**.
@@ -104,7 +104,7 @@ Para configurar las opciones de salida de una organización
 1. En [Azure Active Directory](https://aad.portal.azure.com), seleccione **Identidades externas** y, a continuación, seleccione **Configuración de acceso entre inquilinos (versión preliminar)**.
 1. Seleccione el vínculo de acceso de salida de la organización que desea modificar.
 1. En la pestaña **Conexión directa B2B**, elija **Personalizar configuración**.
-1. En la pestaña **Usuarios y grupos externos**, elija **Permitir acceso** y establezca un **Destino** de todos los usuarios.
+1. En la pestaña **Usuarios y grupos externos**, elija **Permitir acceso** y establezca un **Aplicabl a** de todos los usuarios.
 1. En la pestaña **Aplicaciones externas**, elija **Permitir acceso** y **Seleccionar aplicaciones externas**.
 1. Seleccione **Agregar aplicaciones de Microsoft**.
 1. Seleccione la aplicación **Office 365** y, a continuación, elija **Seleccionar**.

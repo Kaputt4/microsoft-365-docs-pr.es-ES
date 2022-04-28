@@ -2,7 +2,7 @@
 title: Deshabilitar el acceso a Sway con PowerShell para Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
@@ -17,23 +17,23 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 7221a4c9-ae03-4598-81fe-a655c02f40ab
-description: Obtenga información sobre dónde descargar ManageSway.ps1 script de PowerShell que le permite deshabilitar el acceso a Sway en su Microsoft 365 organización.
-ms.openlocfilehash: b7222ebca92d9ae154d8930f800d49d5f0f61ace
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Obtenga información sobre dónde descargar el script de PowerShell ManageSway.ps1 que le permite deshabilitar el acceso a Sway en la organización de Microsoft 365.
+ms.openlocfilehash: 99fc0d34d05767dc227d97ae1cc4cd545cb61ae3
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173444"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097698"
 ---
 # <a name="disable-access-to-sway-with-powershell-for-microsoft-365"></a>Deshabilitar el acceso a Sway con PowerShell para Microsoft 365
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
-El ManageSway.ps1 script de PowerShell le permite ver y deshabilitar servicios en su Microsoft 365, incluido Sway. Este script automatiza los procedimientos que se describen en los siguientes temas:
+El script de PowerShell ManageSway.ps1 permite ver y deshabilitar los servicios de la organización de Microsoft 365, incluidos los Sway. Este script automatiza los procedimientos que se describen en los siguientes temas:
   
-- [Ver licencias y servicios con PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
+- [Visualización de licencias y servicios con PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
     
-- [Deshabilitar el acceso a servicios con PowerShell](disable-access-to-services-with-microsoft-365-powershell.md)
+- [Deshabilitación del acceso a servicios con PowerShell](disable-access-to-services-with-microsoft-365-powershell.md)
     
 Debe descargar los dos archivos que están asociados con el script:
   

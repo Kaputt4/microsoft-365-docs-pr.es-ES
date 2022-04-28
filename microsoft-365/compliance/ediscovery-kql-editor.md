@@ -2,8 +2,8 @@
 title: Uso del editor de KQL para crear consultas de búsqueda
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: ''
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede usar el editor de KQL para configurar consultas de búsqueda de exhibición de documentos electrónicos en Búsqueda de contenido, eDiscovery (estándar) y eDiscovery (Premium).
-ms.openlocfilehash: cbd7adb02c926477fd81568ed950ebd16110c79b
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: d97beb6cf8df95aa5112537c75caf4f548f7658d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993806"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098590"
 ---
 # <a name="use-the-kql-editor-to-build-search-queries"></a>Uso del editor de KQL para crear consultas de búsqueda
 

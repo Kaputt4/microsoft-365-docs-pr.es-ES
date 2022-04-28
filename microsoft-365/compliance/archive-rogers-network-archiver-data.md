@@ -2,8 +2,8 @@
 title: Configurar un conector para archivar los datos de Rogers Network en Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos de Rogers Network en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 966810ba4cedb782fb860ebff72b4fc7b4e7248c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: c8688966f867fbc01527a3a3fe1c5672d0071ec8
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001552"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090547"
 ---
 # <a name="set-up-a-connector-to-archive-rogers-network-data"></a>Configuración de un conector para archivar datos de Rogers Network
 

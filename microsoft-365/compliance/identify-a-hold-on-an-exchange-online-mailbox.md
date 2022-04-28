@@ -2,8 +2,8 @@
 title: Cómo identificar la suspensión en un buzón de Exchange Online
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: ITPro
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Obtenga información sobre cómo identificar los diferentes tipos de retención que se pueden colocar en un buzón de Exchange Online en Microsoft 365.
-ms.openlocfilehash: 2e62d8f6fd0dc6352b4bf6fc5766b9cd33f8ffb4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4b4ff5064f59285412c4c20108df9dbbae992f7e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994180"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097764"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
@@ -210,7 +210,7 @@ Para quitar la suspensión de retraso antes de que expire, puede ejecutar uno (o
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-O bien:
+O bien
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -224,7 +224,7 @@ Para quitar la suspensión de retraso en un buzón inactivo, ejecute uno de los 
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
-O bien:
+O bien
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied
@@ -288,7 +288,7 @@ Use la tabla siguiente para ayudarle a comprender cada uno de los valores anteri
 
 Cuando una directiva de retención ya no se aplique a un buzón de correo, colocaremos una suspensión temporal en el usuario para evitar purgar contenido. Se puede deshabilitar una suspensión de retraso mediante la ejecución del `Set-Mailbox -RemoveDelayHoldApplied` comando .
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de identificar las retenciones que se aplican a un buzón de correo, puede realizar tareas como cambiar la duración de la suspensión, quitar temporal o permanentemente la suspensión o excluir un buzón inactivo de una directiva de retención de Microsoft 365. Para obtener más información sobre cómo realizar tareas relacionadas con las retenciones, consulte uno de los temas siguientes:
 

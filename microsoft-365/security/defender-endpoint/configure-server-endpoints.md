@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1709597d10b140124501fd0dc7349e8fc4342bb6
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 14ec731eebe21f6b399e03d445fef248b8675026
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841746"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098766"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de servidores Windows al servicio Microsoft Defender para punto de conexión
 
@@ -174,6 +174,11 @@ Si tiene previsto usar una solución antimalware de terceros, tendrá que ejecut
 **Paquete de actualización para Microsoft Defender para punto de conexión en Windows Server 2012 R2 y 2016**
 
 Para recibir mejoras y correcciones periódicas del producto para el componente sensor de EDR, asegúrese de que Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) se aplique o apruebe. Además, para mantener actualizados los componentes de protección, consulte [Administración de actualizaciones Antivirus de Microsoft Defender y aplicación de líneas base](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
+
+
+Si usa Windows Server Update Services (WSUS) o Microsoft Endpoint Configuration Manager, esta nueva "actualización de Microsoft Defender para punto de conexión para EDR Sensor" está disponible en la categoría "Microsoft Defender para punto de conexión".
+
+
 
 ### <a name="onboarding-steps-summary"></a>Resumen de los pasos de incorporación
 

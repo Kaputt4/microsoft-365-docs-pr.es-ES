@@ -2,8 +2,8 @@
 title: Campos de metadatos de documentos en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se definen los campos de metadatos de los documentos de un conjunto de revisión en un caso en Microsoft Purview eDiscovery (Premium) en Microsoft 365.
-ms.openlocfilehash: 4e1efbf48cf4313682095b69eb97f52d00b9ceaf
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: d0e188d227e3000ba6811204c74cf746b00bc0e2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001112"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097786"
 ---
 # <a name="document-metadata-fields-in-ediscovery-premium"></a>Campos de metadatos de documentos en eDiscovery (Premium)
 

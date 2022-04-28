@@ -2,7 +2,7 @@
 title: Deshabilitar el acceso a Microsoft 365 servicios con PowerShell
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/27/2020
 audience: Admin
 ms.topic: article
@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: En este artículo, aprenderá a usar PowerShell para deshabilitar el acceso a Microsoft 365 servicios para los usuarios.
-ms.openlocfilehash: d6754cc2de6208b9dc4bce03ef6477939f8d530a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0acd174fce25e0332aa8f927595657e4d0a464b9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939441"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097720"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>Deshabilitar el acceso a Microsoft 365 servicios con PowerShell
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Cuando a una cuenta de Microsoft 365 se le asigna una licencia de un plan de licencias, Microsoft 365 servicios están disponibles para el usuario a partir de esa licencia. Sin embargo, puede controlar los servicios de Microsoft 365 a los que el usuario puede acceder. Por ejemplo, aunque la licencia permite el acceso al servicio SharePoint Online, puede deshabilitar el acceso a él. Puede usar PowerShell para deshabilitar el acceso a cualquier número de servicios para un plan de licencias específico para:
 
