@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
@@ -24,38 +24,38 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: Descubra cómo usar Microsoft 365 para empresas para quitar los datos de la empresa que los usuarios tienen en sus dispositivos o Windows equipos.
-ms.openlocfilehash: 673026b0fdadcf4b7d6b3bac71904cd1afc1d60d
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: MT
+description: Descubre cómo usar Microsoft 365 para empresas para quitar los datos de la empresa que los usuarios tienen en sus dispositivos o equipos Windows.
+ms.openlocfilehash: cda772b3d14b80f3836ef22c4fa941c1636ee0a2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64635425"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094184"
 ---
 # <a name="remove-company-data-from-devices"></a>Eliminar datos de la empresa de dispositivos
 
-Este artículo se aplica a Microsoft 365 Business Premium.
+Este artículo aplica a Microsoft 365 Empresa Premium.
 
 > [!NOTE]
-> Microsoft Defender für Unternehmen se está implementando para Microsoft 365 Business Premium clientes, a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para dispositivos. [Obtenga más información sobre Defender para empresas](../security/defender-business/mdb-overview.md).
+> Microsoft Defender para Empresas se está implementando para los clientes de Microsoft 365 Empresa Premium desde el 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para los dispositivos. [Más información sobre Defender para Empresas](../security/defender-business/mdb-overview.md).
 
 ## <a name="remove-company-data"></a>Quitar datos de la empresa
 
-Puede usar Microsoft 365 para empresas para quitar los datos de la empresa que los usuarios tienen en sus dispositivos o [](m365bp-protection-settings-for-windows-10-devices.md) Windows equipos protegidos por Microsoft 365.[](m365bp-app-protection-settings-for-android-and-ios.md) **Si elimina los datos de la empresa de un dispositivo, no los podrá restaurar más adelante**. 
+Puede usar Microsoft 365 para empresas para eliminar los datos de la empresa que los usuarios tienen en sus [dispositivos](m365bp-app-protection-settings-for-android-and-ios.md) o [PC Windows](m365bp-protection-settings-for-windows-10-devices.md) protegidos por Microsoft 365. **Si elimina los datos de la empresa de un dispositivo, no los podrá restaurar más adelante**. 
   
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
-2. En la navegación izquierda, elija **Administrar**  \> **dispositivos**.
+2. En el panel de navegación izquierdo, elija **Dispositivos**  \> **Administrar**.
   
-3. En la **página** Administrar, elija o busque un usuario que desee quitar los datos y elija el nombre. 
+3. En la página **Administrar**, elija o busque un usuario que tenga los datos que desea quitar y elija el nombre. 
     
-4. En el siguiente panel, selecciona el dispositivo o los dispositivos de la **lista Dispositivos** . En el panel del dispositivo que se abre, puedes elegir restablecer el dispositivo a la configuración de fábrica o quitar datos de la compañía, según el tipo de dispositivo. 
+4. En el panel siguiente, seleccione el dispositivo o los dispositivos de la lista **Dispositivos**. En el panel de dispositivos que se abre, puede optar por restablecer el dispositivo a la configuración de fábrica o quitar los datos de la empresa, según el tipo de dispositivo. 
     
-    ![En el panel quitar datos de la empresa, selecciona el dispositivo del que quieres quitar los datos.](./../media/resetorremove.png)
+    ![On the remove comapany data pane, select the device from which you want to remove the data.](./../media/resetorremove.png)
   
-5. En el panel de confirmación, elija **Confirmar** \> **cerrar**.
+5. En el panel de confirmación, elija **Confirmar** \> **Cerrar**.
     
 
 ## <a name="see-also"></a>Vea también
 
-[Principales 10 formas de proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)
+[10 formas de proteger los planes de Microsoft 365 para empresas](../admin/security-and-compliance/secure-your-business-data.md)
