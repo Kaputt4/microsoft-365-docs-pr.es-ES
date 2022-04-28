@@ -1,6 +1,6 @@
 ---
-title: Revisar acciones de corrección en Microsoft 365 Empresa Premium
-description: Vea cómo ver las correcciones que se tomaron automáticamente o que están a la espera de su aprobación en el Centro de acciones
+title: Revisar las acciones de corrección en Microsoft 365 Empresa Premium
+description: Vea cómo ver las correcciones que se realizaron automáticamente o que están en espera de aprobación en el Centro de acción
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -10,51 +10,53 @@ ms.topic: how-to
 ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 160cef2ec7691fbc9debad809b20461a0d3efe23
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
-ms.translationtype: MT
+ms.openlocfilehash: df99f73275e0aa83216bd1de101638dee628f0f2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526641"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091905"
 ---
-# <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>Revisar acciones de corrección en Microsoft 365 Empresa Premium
+# <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>Revisar las acciones de corrección en Microsoft 365 Empresa Premium
 
-A medida que se detectan las amenazas, las acciones de corrección se reproducen. Según la amenaza en particular y la configuración de la configuración de seguridad, las acciones de corrección pueden realizarse automáticamente o solo después de su aprobación. Entre los ejemplos de acciones de corrección se incluyen el envío de un archivo a la cuarentena, la detención de la ejecución de un proceso y la eliminación de una tarea programada. Todas las acciones de corrección se realiza un seguimiento en el Centro de acciones, que se encuentra en [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center).
+Bien, ha descubierto una vulneración de seguridad, pero ¿qué hacer? Depende de la naturaleza de ella. 
 
-:::image type="content" source="../media/defender-business/mdb-actioncenter.png" alt-text="Captura de pantalla del Centro de acciones en M365.":::
+Entre los ejemplos de acciones de corrección se incluyen el envío de un archivo en cuarentena, la detención de la ejecución de un proceso o la eliminación completa de una tarea programada. Se realiza un seguimiento de todas las acciones de corrección en el Centro de acción que se encuentra en [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center).
 
-**En este artículo se describe lo siguiente**:
+:::image type="content" source="../media/defender-business/mdb-actioncenter.png" alt-text="Captura de pantalla del Centro de acción en M365.":::
 
-- [Cómo usar el Centro de acciones](#how-to-use-your-action-center)
+**En este artículo se describe**:
+
+- [Uso del Centro de acción](#how-to-use-your-action-center)
 
 - [Tipos de acciones de corrección](#types-of-remediation-actions)
 
 
-## <a name="how-to-use-your-action-center"></a>Cómo usar el Centro de acciones
+## <a name="how-to-use-your-action-center"></a>Cómo usar el Centro de acción
 
 1. Vaya al portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) e inicie sesión.
 
 2. En el panel de navegación, elija **Centro de actividades**.
 
-3. Seleccione la **pestaña** Pendiente para ver y aprobar (o rechazar) cualquier acción pendiente. Estas acciones pueden surgir de la protección antivirus/antimalware, las investigaciones automatizadas, las actividades de respuesta manual o las sesiones de respuesta en directo.
+3. Seleccione la pestaña **Pendiente** para ver y aprobar (o rechazar) las acciones pendientes. Estas acciones pueden surgir de la protección antivirus/antimalware, las investigaciones automatizadas, las actividades de contestación manual o las sesiones de respuesta inmediata.
 
-4. Seleccione la **pestaña** Historial para ver una lista de acciones completadas. 
+4. Seleccione la pestaña **Historial** para ver una lista de las acciones completadas. 
 
 ## <a name="types-of-remediation-actions"></a>Tipos de acciones de corrección
 
-La suscripción incluye varios tipos diferentes de acciones de corrección para las amenazas detectadas. Estas acciones incluyen acciones de respuesta manual, acciones tras investigación automatizada y acciones de respuesta en directo.
+La suscripción incluye varios tipos diferentes de acciones de corrección para las amenazas detectadas. Estas acciones incluyen acciones de contestación manual, acciones después de la investigación automatizada y acciones de respuesta inmediata.
 
-En la tabla siguiente se enumeran las acciones de corrección disponibles:
+En la tabla siguiente se enumeran las acciones de corrección que están disponibles:
 
 | Origen  | Acciones  |
 |---------|---------|
-| [Investigaciones automatizadas](../security/defender-endpoint/automated-investigations.md)      | - Poner en cuarentena un archivo <br/>- Quitar una clave del Registro <br/>- Eliminación de un proceso <br/>- Detener un servicio <br/>- Deshabilitar un controlador <br/>- Quitar una tarea programada        |
-| [Acciones de respuesta manuales](../security/defender-endpoint/respond-machine-alerts.md)   | - Ejecutar examen antivirus <br/>- Aislar dispositivo <br/>- Detener y poner en cuarentena <br/>- Agregar un indicador para bloquear o permitir un archivo       |
-| [Respuesta en directo](../security/defender-endpoint/live-response.md)   | - Recopilar datos forenses <br/>- Analizar un archivo <br/>- Ejecutar un script <br/>- Enviar una entidad sospechosa a Microsoft para su análisis <br/>- Corregir un archivo <br/>- Búsqueda proactiva de amenazas         |
+| [Investigaciones automatizadas](../security/defender-endpoint/automated-investigations.md)      | - Poner en cuarentena un archivo <br/>- Quitar una clave del registro <br/>- Eliminación de un proceso <br/>- Detener un servicio <br/>- Deshabilitar un controlador <br/>- Quitar una tarea programada        |
+| [Acciones de contestación manual](../security/defender-endpoint/respond-machine-alerts.md)   | - Ejecutar examen de antivirus <br/>- Aislar el dispositivo <br/>- Detener y poner en cuarentena <br/>- Agregar un indicador para bloquear o permitir un archivo       |
+| [Respuesta inmediata](../security/defender-endpoint/live-response.md)   | - Recopilación de datos forenses <br/>- Análisis de un archivo <br/>- Ejecutar un script <br/>- Envío de una entidad sospechosa a Microsoft para su análisis <br/>- Corrección de un archivo <br/>- Buscar amenazas de forma proactiva         |
