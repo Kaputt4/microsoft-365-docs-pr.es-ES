@@ -1,14 +1,14 @@
 ---
-title: 'Infografía: ayuda a proteger la campaña'
+title: 'Infografía: ayudar a proteger la campaña'
 f1.keywords:
 - NOCSH
 ms.author: samanro
 author: samanro
-manager: scotv
+manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,18 +23,18 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Qué puedes hacer para proteger tu campaña de ataques digitales.
-ms.openlocfilehash: 531dd980054d407f10ab0bc8d8e24dc6a7fdd9f9
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
-ms.translationtype: MT
+description: Qué puede hacer para ayudar a proteger la campaña frente a ataques digitales.
+ms.openlocfilehash: 508387313ebe0cb7255073f73d7b646f2fa12a2f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62768018"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099991"
 ---
-# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>Infografía: Ayuda a protegerte a ti mismo y a tu campaña de las amenazas digitales
+# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>Infografía: ayuda para protegerse a sí mismo y a la campaña frente a amenazas digitales
 
-Los siguientes vínculos para PowerPoint y PDF se pueden descargar e imprimir en formato tabloide (también conocido como libro mayor, 11 x 17 o A3).
+Los siguientes vínculos para PowerPoint y PDF se pueden descargar e imprimir en formato tabloide (también conocido como libro de contabilidad, 11 x 17 o A3).
 
-[![Imagen para proteger tu ayuda para proteger el gráfico de información de la campaña.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[![Imagen de gráfico de ayudar a proteger la campaña.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
-[PDF](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) |  [PowerPoint](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)
+[PDF](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)

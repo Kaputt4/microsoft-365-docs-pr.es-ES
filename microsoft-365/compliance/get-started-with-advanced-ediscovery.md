@@ -2,8 +2,8 @@
 title: Configuración de eDiscovery (Premium) en Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo configurar eDiscovery (Premium) para que pueda empezar a crear y administrar casos. También describe las suscripciones y licencias de Microsoft necesarias. Después de completar algunos pasos rápidos, la herramienta eDiscovery (Premium) está lista para usarse.
-ms.openlocfilehash: dff99ab432ce5f2380a6fd5a81e855c946146c8c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: b23203d374b7ecf2f447c2f6b906345537ec6cf4
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997722"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092423"
 ---
 # <a name="set-up-microsoft-purview-ediscovery-premium"></a>Configuración de microsoft Purview eDiscovery (Premium)
 

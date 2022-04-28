@@ -2,8 +2,8 @@
 title: Configuración de un conector para archivar datos del archivador de números Enterprise TeleMessage
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos SMS y MMS desde TeleMessage Enterprise Number Archiver. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft Purview para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: b3f429af6caa4d650688b27f5157a212e348ffe8
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: dc9b0220a53332c3493acc4bb3217f4b782442a7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995060"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095064"
 ---
 # <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Configuración de un conector para archivar Enterprise datos de número
 

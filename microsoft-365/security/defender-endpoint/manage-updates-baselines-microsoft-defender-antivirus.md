@@ -15,18 +15,20 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: cc2032c547cbd9c75a73da2f47f7baed21e7438e
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 6822f736cae73d7d4654f8b4310e0e397cffa677
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835939"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077482"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Para obtener más información, consulte Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar bases de referencia.
+
+> [!IMPORTANT]
+> Los clientes que aplicaron la actualización del motor de Microsoft Defender de marzo de 2022 (**1.1.19100.5**) podrían haber encontrado un uso elevado de recursos (CPU o memoria). Microsoft ha publicado una actualización (**1.1.19200.5**) que resuelve los errores introducidos en la versión anterior. Se recomienda a los clientes actualizar a esta nueva compilación de motor de Antivirus Engine (**1.1.19200.5**). Para asegurarse de que los problemas de rendimiento están totalmente corregidos, se recomienda reiniciar las máquinas después de aplicar la actualización. Consulte [Versiones mensuales de la plataforma y del motor](#monthly-platform-and-engine-versions) (en este artículo).
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión, planes 1 y 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -37,8 +39,8 @@ ms.locfileid: "64835939"
 
 Mantener Antivirus de Microsoft Defender actualizados es fundamental para garantizar que los dispositivos tengan la tecnología y las características más recientes necesarias para protegerse frente a nuevas técnicas de ataque y malware. Asegúrese de actualizar la protección antivirus, incluso si Antivirus de Microsoft Defender se ejecuta en [ modo pasivo](microsoft-defender-antivirus-compatibility.md). Existen dos tipos de actualizaciones vinculadas a mantener el Antivirus de Microsoft Defender al día:
 
-- Actualizaciones de inteligencia de seguridad
-- Actualizaciones de productos
+- [Actualizaciones de inteligencia de seguridad](#security-intelligence-updates)
+- [Actualizaciones de productos](#product-updates)
 
 > [!TIP]
 > Para ver el motor, la plataforma y la fecha de la firma más recientes, visite las [Actualizaciones de inteligencia de seguridad para Antivirus de Microsoft Defender y otros antimalware de Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates) 
@@ -88,6 +90,29 @@ Todas nuestras actualizaciones contienen
 - Mejoras de integración (nube, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>Marzo 2022 *ACTUALIZACIÓN* (plataforma: 4.18.2203.5 | Motor: 1.1.19200.5)</summary>
+
+*Los clientes que aplicaron la actualización del motor de Microsoft Defender de marzo de 2022 (**1.1.19100.5**) podrían haber encontrado un uso elevado de recursos (CPU o memoria). Microsoft ha publicado una actualización (**1.1.19200.5**) que resuelve los errores introducidos en la versión anterior. Se recomienda a los clientes actualizar a esta nueva compilación de motor de Antivirus Engine (**1.1.19200.5**). Para asegurarse de que los problemas de rendimiento están totalmente corregidos, se recomienda reiniciar los equipos después de aplicar la actualización.*
+
+&ensp;Versión de actualización de inteligencia de seguridad: **1.363.817.0**<br/>
+&ensp;Publicación:**22 de abril de 2022**<br/>
+&ensp;Plataforma: **4.18.2203.5**<br/>
+&ensp;Motor: **1.1.19200.5**<br/>
+&ensp;Fase de soporte técnico: **Actualizaciones críticas y de seguridad**<br/>
+
+Versión del motor: 1.1.19200.5 <br/>
+Versión de actualización de inteligencia de seguridad: 1.363.817.0<br/>
+
+### <a name="whats-new"></a>Novedades
+
+- Resuelve problemas con un uso elevado de recursos (CPU o memoria) relacionados con la actualización anterior del motor de Microsoft Defender de marzo de 2022 (1.1.19100.5)
+
+### <a name="known-issues"></a>Problemas conocidos
+
+No hay problemas conocidos
+
+<br/><br/>
+</details><details>
 <summary>Marzo-2022 (plataforma: 4.18.2203.5 | Motor: 1.1.19100.5)</summary>
 
 &ensp;Versión de actualización de inteligencia de seguridad de: **1.361.1449.0**<br/>
@@ -191,7 +216,7 @@ Versión del motor: 1.1.18800.4 Versión de actualización de inteligencia de se
 
 - Mejora de la eficiencia del uso de CPU en determinados escenarios intensivos en servidores de Exchange
 - Se agregaron nuevos campos de estado de control de dispositivo en Get-MpComputerStatus en el módulo de PowerShell de Defender. Para obtener más información, consulte [Control de acceso de almacenamiento extraíble de Control de dispositivos de Microsoft Defender para punto de conexión, medios de almacenamiento extraíbles](device-control-removable-storage-access-control.md).
-- Se ha corregido un error en el que no se podía quitar el valor `SharedSignatureRoot` cuando se establece con PowerShell.
+- Se ha corregido un error en el que no se podía quitar el valor `SharedSignatureRoot` cuando se establecía con PowerShell.
 - Se ha corregido un error en el que [protección contra alteraciones](prevent-changes-to-security-settings-with-tamper-protection.md) no se habilitaba, aunque Microsoft Defender para punto de conexión indicaba que la protección contra alteraciones estaba activada
 - Se ha agregado compatibilidad y corrección de errores al analizador de rendimiento de la herramienta de Antivirus de Microsoft Defender. Para obtener más información, consulte [Analizador de rendimiento para el Antivirus de Microsoft Defender](tune-performance-defender-antivirus.md).   
    - Se ha agregado soporte con PowerShell ISE para `New-MpPerformanceRecording`
@@ -465,7 +490,7 @@ No hay problemas conocidos
 - Supervisión de comportamiento mejorada para exploración de memoria
 - Análisis mejorado de secuencias de macros
 - Se agregó `AMRunningMode` to Get-MpComputerStatus PowerShell cmdlet
-- [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) se ignora. Antivirus de Microsoft Defender se desactiva automáticamente cuando detecta otro programa antivirus.
+- [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) se ignora. El antivirus de Microsoft Defender se desactiva automáticamente cuando detecta otro programa antivirus.
 
 
 ### <a name="known-issues"></a>Problemas conocidos
@@ -661,7 +686,7 @@ Cuando se instala esta actualización, el dispositivo necesita el paquete de sal
 
 Las actualizaciones de la plataforma y del motor se proporcionan cada mes. Para ser totalmente compatible, manténgase al día con las últimas actualizaciones de la plataforma. Nuestra estructura de soporte técnico es dinámica y evoluciona en dos fases en función de la disponibilidad de la versión más reciente de la plataforma:
 
-- **fase de mantenimiento de actualizaciones críticas y de seguridad** : al ejecutar la versión más reciente de la plataforma, podrá recibir actualizaciones críticas y de seguridad para la plataforma antimalware.
+- **Fase de mantenimiento de actualizaciones críticas y de seguridad** : al ejecutar la versión más reciente de la plataforma, podrá recibir actualizaciones críticas y de seguridad para la plataforma antimalware.
 
 - **Fase de soporte técnico (únicamente)**: Después de publicar una nueva versión de la plataforma, el soporte técnico para versiones anteriores (N-2) se reducirá solo al soporte técnico. Ya no se admitirán las versiones de plataforma anteriores a N-2.*
 

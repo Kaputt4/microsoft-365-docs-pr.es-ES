@@ -2,7 +2,7 @@
 title: Visualización de licencias y servicios de Microsoft 365 con PowerShell
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
@@ -20,16 +20,16 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explica cómo usar PowerShell para ver información sobre los planes de licencia, los servicios y las licencias que están disponibles en la organización Microsoft 365.
-ms.openlocfilehash: 8b5ff01f15e4dea7a44b423609b6533cc5729a5f
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 1d0d514cc0d821e8958a35c3598b41554260716d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823902"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091949"
 ---
 # <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>Visualización de licencias y servicios de Microsoft 365 con PowerShell
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Cada suscripción Microsoft 365 consta de los siguientes elementos:
 
@@ -210,7 +210,7 @@ En la tabla siguiente se muestran los planes de servicio Microsoft 365 y sus nom
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Aplicaciones Microsoft 365 para empresas *(anteriormente denominado Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype Empresarial Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office  <br/> |
+| `SHAREPOINTWAC` <br/> |Oficina  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Plan 2 de Exchange Online  <br/> |
    

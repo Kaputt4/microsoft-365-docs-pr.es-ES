@@ -1,9 +1,9 @@
 ---
-title: flujo de trabajo de Teams en eDiscovery (Premium)
+title: Flujo de trabajo de Teams en eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo conservar, recopilar, revisar y exportar contenido de Microsoft Teams en eDiscovery (Premium).
-ms.openlocfilehash: 043cfb070c008b4c58e48df40dfbb069ca859edd
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 36bfcde1b2ee5ad9b088db008249cdeb1cf90eb4
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972395"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092279"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Flujo de trabajo de eDiscovery (Premium) para el contenido de Microsoft Teams
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En este artículo se proporciona un conjunto completo de procedimientos, directrices y procedimientos recomendados para usar microsoft Purview eDiscovery (Premium) con el fin de conservar, recopilar, revisar y exportar contenido de Microsoft Teams. El objetivo de este artículo es ayudarle a optimizar el flujo de trabajo de eDiscovery para Teams contenido.
 

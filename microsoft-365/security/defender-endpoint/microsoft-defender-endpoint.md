@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3a67d73475301096df8be691f2c5e0dc6db23db8
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 77766c153582f519aa0ba9853d18c216092747bc
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862200"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092313"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
@@ -81,8 +81,8 @@ Microsoft Defender para punto de conexión usa la siguiente combinación de tecn
 > - Microsoft Defender para punto de conexión mostró funcionalidades de detección y óptica líderes del sector en la reciente evaluación de MITRE. Lea: [Conclusiones de la evaluación basada en ATT&CK de MITRE](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 
->[!IMPORTANT]
->Las funcionalidades de las plataformas que no son de Windows pueden ser diferentes de las de Windows. Para obtener más información sobre qué funcionalidades están disponibles para plataformas que no son de Windows, consulte [Microsoft Defender para punto de conexión para plataformas que no son de Windows](/security/defender-endpoint/non-windows).
+> [!IMPORTANT]
+> Las funcionalidades de las plataformas que no son de Windows pueden ser diferentes de las de Windows. Para obtener más información sobre qué funcionalidades están disponibles para plataformas que no son de Windows, consulte [Microsoft Defender para punto de conexión para plataformas que no son de Windows](/microsoft-365/security/defender-endpoint/non-windows).
 
 <a name="tvm"></a>
 

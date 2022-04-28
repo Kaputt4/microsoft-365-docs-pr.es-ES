@@ -2,8 +2,8 @@
 title: Migración de búsquedas y retenciones de eDiscovery heredadas al portal de cumplimiento de Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,14 +15,16 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 07740a6569f67b04db22351f4b4e1214ccfbc787
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 416baed923884d9cbabbd6ee7607a48b0a19ab62
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973715"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092385"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>Migración de búsquedas y retenciones de eDiscovery heredadas al portal de cumplimiento
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 El portal de cumplimiento de Microsoft Purview proporciona una experiencia mejorada para el uso de eDiscovery, lo que incluye: mayor confiabilidad, mejor rendimiento y muchas características adaptadas a flujos de trabajo de eDiscovery, incluidos casos para organizar el contenido por cuestión, conjuntos de revisión para revisar contenido y análisis para ayudar a eliminar datos para su revisión, como agrupación casi duplicada, subprocesos de correo electrónico, análisis de temas y codificación predictiva.
 

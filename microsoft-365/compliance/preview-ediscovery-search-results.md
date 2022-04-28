@@ -2,8 +2,8 @@
 title: Vista previa de los resultados de una búsqueda de eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga una vista previa de un ejemplo de los resultados devueltos por una búsqueda de contenido o una búsqueda de eDiscovery (Estándar) en el panel de cumplimiento de Microsoft Purview.
-ms.openlocfilehash: 3397b82f088f9aff480b6893edbf7aa664d91dc4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: acbfebc5935666299dc6a717d70f9c426a6d61cd
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999022"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099639"
 ---
 # <a name="preview-ediscovery-search-results"></a>Vista previa de los resultados de la búsqueda de eDiscovery
 

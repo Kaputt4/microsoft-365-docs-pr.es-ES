@@ -17,14 +17,14 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: e32018f52f3a45624fcf07ae03e44c662a594297
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: d14215c7c648bafd4d21f765848f20a391a13a2f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916323"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100245"
 ---
-# <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Comparar Microsoft Defender para Empresas con Microsoft 365 Empresa Premium
+# <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>Comparación de características de seguridad en planes de Microsoft 365 para pequeñas y medianas empresas
 
 > [!IMPORTANT]
 > Microsoft Defender para Empresas se está implementando para [Microsoft 365 Empresa Premium](../../business-premium/index.md) clientes, a partir del 1 de marzo de 2022. Defender for Business como una suscripción independiente está en versión preliminar y se implementará gradualmente para los clientes y asociados de TI que [se registren aquí](https://aka.ms/mdb-preview) para solicitarla. La versión preliminar incluye un [conjunto inicial de escenarios](mdb-tutorials.md#try-these-preview-scenarios) y vamos a agregar funcionalidades con regularidad.
@@ -107,7 +107,7 @@ En la tabla siguiente se comparan las características y funcionalidades de segu
 
 (<a id="fn6">6</a>) Durante el programa de versión preliminar, se admiten Windows dispositivos cliente para la incorporación en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). Puede usar el método de script local. Consulte [Incorporación de dispositivos para Microsoft Defender para Empresas](mdb-onboard-devices.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Consulte los requisitos de Microsoft Defender para Empresas](mdb-requirements.md)
 - [Obtener Microsoft Defender para Empresas](get-defender-business.md)

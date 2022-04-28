@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: d36d05a4abe36ffe63e53eb8e164e248755de0ec
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 104bc9f10838be782ea70e3efe567ddee714d0a9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665918"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100223"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para punto de conexión en Mac
 
@@ -31,6 +31,13 @@ ms.locfileid: "64665918"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1016415-20122032164150"></a>101.64.15 (20.122032.16415.0)
+
+- Se ha corregido una regresión introducida en la versión 101.61.69 en la que el icono del menú de estado a veces mostraba un icono de error, aunque no se requería ninguna acción del usuario final.
+- Se ha mejorado el `conflicting_applications` campo en `mdatp health` para mostrar solo los 10 procesos más recientes y también para incluir los nombres de los procesos. Esto facilita la identificación de los procesos que pueden entrar en conflicto con Microsoft Defender para punto de conexión para Mac.
+- Se ha corregido un error en el `mdatp device-control removable-media policy list` que el identificador de proveedor y el identificador de producto se mostraban como decimales en lugar de hexadecimales.
+- Mejoras de rendimiento & otras correcciones de errores
 
 ## <a name="1016169-20122022161690"></a>101.61.69 (20.122022.16169.0)
 

@@ -1,10 +1,10 @@
 ---
-title: Directivas de cumplimiento de dispositivos para Microsoft 365 entorno de prueba empresarial
+title: Directivas de cumplimiento de dispositivos para el entorno de prueba de Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
@@ -13,71 +13,71 @@ ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Use esta Guía del laboratorio de pruebas para agregar directivas de cumplimiento de dispositivos de Intune a Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: ec73211a21e9e064b729b93d9e88b7c5c69b21fe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Use esta Guía del laboratorio de pruebas para agregar directivas de cumplimiento de dispositivos Intune a la Microsoft 365 para el entorno de prueba empresarial.
+ms.openlocfilehash: 3037ca846fe74fb8de51c78799e69c510821a034
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60150815"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099463"
 ---
-# <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>Directivas de cumplimiento de dispositivos para Microsoft 365 entorno de prueba empresarial
+# <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>Directivas de cumplimiento de dispositivos para el entorno de prueba de Microsoft 365 para empresas
 
-*Esta Guía del laboratorio de pruebas solo se puede usar Microsoft 365 entornos de prueba empresariales.*
+*Esta Guía de laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
 
-En este artículo se describe cómo agregar una directiva de cumplimiento de dispositivos de Intune para Windows 10 dispositivos y Aplicaciones Microsoft 365 para empresas a su entorno Microsoft 365 de prueba empresarial.
+En este artículo se describe cómo agregar una directiva de cumplimiento de dispositivos de Intune para dispositivos Windows 10 y Aplicaciones Microsoft 365 para empresas al entorno de prueba de Microsoft 365 para empresas.
 
-Agregar una directiva de cumplimiento de dispositivos de Intune implica dos fases:
-- [Fase 1: Crear su Microsoft 365 entorno de prueba empresarial](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
-- [Fase 2: Crear una directiva de cumplimiento de dispositivos para Windows 10 dispositivos](#phase-2-create-a-device-compliance-policy-for-windows-10-devices)
+Agregar una directiva de cumplimiento de dispositivos Intune implica dos fases:
+- [Fase 1: Compilación de la Microsoft 365 para el entorno de prueba empresarial](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Fase 2: Creación de una directiva de cumplimiento de dispositivos para dispositivos Windows 10](#phase-2-create-a-device-compliance-policy-for-windows-10-devices)
 
-![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías de laboratorio de prueba para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vaya a Microsoft 365 enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Para obtener un mapa visual de todos los artículos de la pila Microsoft 365 para la pila guía del laboratorio de pruebas empresarial, vaya a [Microsoft 365 para la pila de la guía del laboratorio de pruebas empresarial](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: Crear su Microsoft 365 entorno de prueba empresarial
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: Compilación de la Microsoft 365 para el entorno de prueba empresarial
 
 Si desea configurar directivas MAM solo de forma ligera con los requisitos mínimos, siga las instrucciones de [Configuración base ligera](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Si desea configurar directivas MAM en una empresa simulada, siga las instrucciones de [autenticación de paso a través](pass-through-auth-m365-ent-test-environment.md).
+Si desea configurar directivas MAM en una empresa simulada, siga las instrucciones de [Autenticación de paso a través](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Las pruebas de licencias automatizadas y pertenencia a grupos no requieren el entorno de prueba de empresa simulado, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de Servicios de dominio de Active Directory (AD DS). Se proporciona aquí como una opción para que pueda probar las licencias automatizadas y la pertenencia a grupos y experimentar con ella en un entorno que representa una organización típica.
+> La prueba de licencias automatizadas y la pertenencia a grupos no requiere el entorno de prueba empresarial simulado, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de Servicios de dominio de Active Directory (AD DS). Se proporciona aquí como una opción para que pueda probar las licencias automatizadas y la pertenencia a grupos y experimentar con ella en un entorno que representa una organización típica.
 >  
 
-## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>Fase 2: Crear una directiva de cumplimiento de dispositivos para Windows 10 dispositivos
+## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>Fase 2: Creación de una directiva de cumplimiento de dispositivos para dispositivos Windows 10
 
-En esta fase, creas una directiva de cumplimiento de dispositivos para Windows 10 dispositivos. Esta fase usa Microsoft Intune y el [centro Microsoft Endpoint Manager administración](https://go.microsoft.com/fwlink/?linkid=2109431) para agregar un grupo y crear una directiva de cumplimiento.
+En esta fase, creará una directiva de cumplimiento de dispositivos para Windows 10 dispositivos. Esta fase usa Microsoft Intune y el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) para agregar un grupo y crear una directiva de cumplimiento.
 
-1. Vaya a la [Centro de administración de Microsoft 365](https://admin.microsoft.com), inicie sesión en su suscripción Microsoft 365 laboratorio de pruebas con su cuenta de administrador global y seleccione el centro de administración Endpoint Manager <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank">prueba.</a>
+1. Vaya a la [Centro de administración de Microsoft 365](https://admin.microsoft.com), inicie sesión en la suscripción del laboratorio de pruebas de Microsoft 365 con su cuenta de administrador global y seleccione el <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank">centro de administración de Endpoint Manager</a>.
 
-    Si se muestra un mensaje similar a **You haven't enabled device management yet** message, seleccione Intune como entidad de mdma. Para obtener los pasos específicos, consulte [Set the mobile device management authority](/mem/intune/fundamentals/mdm-authority-set).
+    Si se muestra un mensaje similar a **No ha habilitado la administración de dispositivos,** seleccione Intune como entidad de MDM. Para conocer los pasos específicos, consulte [Establecer la entidad de administración de dispositivos móviles](/mem/intune/fundamentals/mdm-authority-set).
 
-    El Endpoint Manager de administración se centra en la administración de dispositivos y la administración de aplicaciones. Para obtener un recorrido por este centro de administración, [vea Tutorial: Tutorial de Intune en Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager).
+    El centro de administración de Endpoint Manager se centra en la administración de dispositivos y la administración de aplicaciones. Para ver un recorrido por este centro de administración, consulte [Tutorial: Tutorial: Tutorial Intune en Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager).
 
-2. En **Grupos,** agregue un nuevo **Microsoft 365** **o** grupo de seguridad denominado Managed Windows 10 **device users**, con un **tipo de** pertenencia asignado. En los pasos siguientes, asignará la directiva de cumplimiento a este grupo. 
+2. En **Grupos**, agregue un nuevo **Microsoft 365** o grupo **de seguridad** denominado **Usuarios de dispositivos Windows 10 administrados**, con un tipo de pertenencia **asignado**. En los pasos siguientes, asignará la directiva de cumplimiento a este grupo. 
 
-    Para obtener los pasos específicos y  para obtener información sobre **Microsoft 365** o grupos de seguridad, vea [Agregar grupos para organizar usuarios y dispositivos.](/mem/intune/fundamentals/groups-add)
+    Para conocer los pasos específicos y obtener información sobre **Microsoft 365** o grupos **de seguridad**, consulte [Agregar grupos para organizar usuarios y dispositivos](/mem/intune/fundamentals/groups-add).
 
-3. En **Dispositivos,** cree una Windows 10 de cumplimiento. Asigna esta directiva al **grupo de usuarios Windows 10 dispositivos administrados** que creaste.
+3. En **Dispositivos**, cree una directiva de cumplimiento de Windows 10. Asigne esta directiva al grupo **de usuarios de dispositivos Windows 10 administrados** que ha creado.
 
-    En la directiva, puede bloquear contraseñas sencillas, requerir un firewall, requerir que se ejecute el servicio antimalware de Microsoft Defender y mucho más. Normalmente, una directiva de cumplimiento incluye la configuración base o el mínimo mínimo que debe tener cada dispositivo.
+    En la directiva, puede bloquear contraseñas sencillas, requerir un firewall, requerir que se ejecute el servicio Antimalware de Microsoft Defender y mucho más. Normalmente, una directiva de cumplimiento incluye la configuración base o el mínimo que debe tener cada dispositivo.
 
-    Para ver los pasos específicos y para obtener información sobre las opciones de cumplimiento disponibles que puede configurar, vea Usar directivas de cumplimiento para establecer reglas para los dispositivos [que administra.](/mem/intune/protect/device-compliance-get-started)
+    Para conocer los pasos específicos y obtener información sobre la configuración de cumplimiento disponible que puede configurar, consulte [Uso de directivas de cumplimiento para establecer reglas para los dispositivos que administra](/mem/intune/protect/device-compliance-get-started).
 
-Cuando termines, tienes una directiva de cumplimiento de dispositivos para probar miembros en el **grupo Usuarios Windows 10 dispositivo** administrado.
+Cuando haya terminado, tendrá una directiva de cumplimiento de dispositivos para probar miembros en el grupo **Usuarios de dispositivos Windows 10 administrados**.
   
 ## <a name="next-step"></a>Paso siguiente
 
-Explore características [y capacidades adicionales](m365-enterprise-test-lab-guides.md#mobile-device-management) de administración de dispositivos móviles en el entorno de prueba.
+Explore características y funcionalidades adicionales de [administración de dispositivos móviles](m365-enterprise-test-lab-guides.md#mobile-device-management) en el entorno de prueba.
 
 ## <a name="see-also"></a>Vea también
 
-[Microsoft 365 guías del laboratorio de pruebas empresariales](m365-enterprise-test-lab-guides.md).
+[Microsoft 365 para guías de laboratorio de pruebas empresariales](m365-enterprise-test-lab-guides.md).
   
-[Inscribir dispositivos iOS y Android en su Microsoft 365 entorno de prueba empresarial](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+[Inscripción de dispositivos iOS y Android en el entorno de prueba de Microsoft 365 para empresas](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Enterprise Mobility + Security (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)

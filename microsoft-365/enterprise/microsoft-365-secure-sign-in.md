@@ -1,23 +1,28 @@
 ---
 title: 'Paso 3: Proteger las cuentas de usuario de Microsoft 365'
 f1.keywords:
-  - NOCSH
+- NOCSH
 author: kelleyvice-msft
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-  - M365-security-compliance
-  - Strat_O365_Enterprise
-  - m365initiative-coredeploy
-ms.custom: null
+- M365-security-compliance
+- Strat_O365_Enterprise
+- m365initiative-coredeploy
+ms.custom: ''
 description: Requerir que los usuarios inicien sesión de forma segura con la autenticación multifactor (MFA) y otras características.
+ms.openlocfilehash: 4566b2c8c73ce258899e1de6ef621715092e50a5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090283"
 ---
-
 # <a name="step-3-protect-your-microsoft-365-user-accounts"></a>Paso 3: Proteger las cuentas de usuario de Microsoft 365
 
 Para aumentar la seguridad de los inicios de sesión de los usuarios:
@@ -119,7 +124,7 @@ Microsoft recomienda la configuración e implementación de directivas de acceso
 
 ## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-En esta sección, aprenderá a configurar las directivas que protejan credenciales en peligro, donde un atacante determine el nombre de una cuenta de usuario y la contraseña para acceder a servicios en la nube y los datos de una organización. La protección de identidad de Azure AD ofrece varias maneras de evitar que un atacante acceda a las credenciales de una cuenta de usuario.
+En este paso, obtendrá información sobre cómo configurar directivas para proteger contra credenciales en peligro, donde un atacante determina el nombre de la cuenta y la contraseña de un usuario para obtener acceso a los servicios y datos en la nube de una organización. Azure AD Identity Protection ofrece distintas formas de impedir que un atacante comprometa las credenciales de una cuenta de usuario.
 
 Con Azure AD Identity Protection, puede:
 

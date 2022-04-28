@@ -2,8 +2,8 @@
 title: Usar el envío de unidades para importar los archivos PST
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: El administrador puede aprender a importar archivos PST de forma masiva a Microsoft 365 buzones copiando archivos PST en un disco duro y luego enviándolo a Microsoft.
-ms.openlocfilehash: d2255a01c49e3837365735e1c3300b7f6b34c42c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4f3c38c203b98fd4448657edfac6ee9b72a515be
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996028"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095452"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Uso del envío de unidades para importar archivos PST de la organización
 
@@ -115,7 +115,7 @@ El primer paso es descargar la herramienta y que se usa en el paso 2 para copiar
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
-2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Importación de gobernanza** \> de la información.
+2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Importar** **administración del ciclo de vida de** \> datos.
     
     > [!NOTE]
     > Como se indicó anteriormente, debe tener asignados los permisos adecuados para acceder a la página **Importar** en el portal de cumplimiento.
@@ -243,7 +243,7 @@ El siguiente paso consiste en crear el trabajo de importación de PST en el serv
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
-2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Importación de gobernanza** \> de la información.
+2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Importar** **administración del ciclo de vida de** \> datos.
 
 3. En la pestaña **Importar**, haga clic en ![Agregar icono](../media/ITPro-EAC-AddIcon.gif). **Nuevo trabajo de importación**.
 
@@ -327,7 +327,7 @@ Cuando haya enviado la unidad de disco duro a Microsoft, lleve a cabo el procedi
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
-2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Gobernanza de la información > Importar**.
+2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Administración del ciclo de vida de** >  **datosImportar**.
 
 3. En la pestaña **Importar** , haga clic en el trabajo del envío de unidad para el que desea especificar el número de seguimiento.
 
@@ -353,7 +353,7 @@ Una vez cargados los archivos PST en Azure, el estado cambia a **Análisis en cu
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
-2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Gobernanza de** \> la información **Importar****.
+2. En el panel de navegación izquierdo del portal de cumplimiento, haga clic en **Administración del ciclo de vida de** \> datos **Importar****.
 
 3. En la pestaña **Importar**, seleccione el trabajo de importación que creó en el paso 4 y haga clic en **Importar para Office 365**.
   
@@ -392,7 +392,7 @@ Para instalar el Explorador de Azure Storage y conectarse al área de Azure Stor
 
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
-2. En el panel izquierdo del portal de cumplimiento, haga clic en **gobernanza de información > Importar**.
+2. En el panel izquierdo del portal de cumplimiento, haga clic en **Administración del ciclo de vida de** >  **datosImportar**.
 
 3. En la pestaña **Importar**, haga clic en ![Agregar icono](../media/ITPro-EAC-AddIcon.gif). **Nuevo trabajo de importación**.
 

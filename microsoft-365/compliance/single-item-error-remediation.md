@@ -2,8 +2,8 @@
 title: Corrección de errores en un único elemento
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Puede corregir un error de procesamiento en un documento en un conjunto de revisión en eDiscovery (Premium) sin tener que seguir el proceso de corrección masiva de errores.
-ms.openlocfilehash: d3b90f0f2d396b6304bb85b46bc5b018802101eb
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e8ace66eefadf5ce959bc01150ba21e232429131
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994004"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092357"
 ---
 # <a name="single-item-error-remediation-in-ediscovery-premium"></a>Corrección de errores de un solo elemento en eDiscovery (Premium)
 

@@ -2,7 +2,7 @@
 title: Plan de final del soporte técnico de Exchange 2010
 ms.author: dstrome
 author: dstrome
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -12,16 +12,16 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 ha llegado al final del soporte técnico. Use este plan de planificación para prepararse para actualizar a Exchange Online o a una versión más reciente de Exchange Server local.
-ms.openlocfilehash: 24834a600a14c46287434f8f273fcd139d117376
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: f8515aa6f743927f25bf3dffa3c5bed0306816ac
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822780"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095298"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Plan de final del soporte técnico de Exchange 2010
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 Exchange Server 2010 llegó a su fin el **13 de octubre de 2020**. Si aún no ha iniciado la migración de Exchange 2010 a Microsoft 365, Office 365 o Exchange 2016, ahora es el momento de empezar a planear.
 

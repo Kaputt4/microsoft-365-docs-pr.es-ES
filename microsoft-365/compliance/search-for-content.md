@@ -2,8 +2,8 @@
 title: Buscar contenido
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -11,12 +11,12 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: Use la herramienta eDiscovery de búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para encontrar rápidamente correo electrónico en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype Empresarial.
-ms.openlocfilehash: 4efe2f4b4735005c10fd59e618bb6ecc8be51ec0
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 30398f91a0ab7807ea3438e6bfdde3606e918a4d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993669"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092257"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Búsqueda de contenido mediante la herramienta de búsqueda de contenido
 

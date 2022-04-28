@@ -1,5 +1,5 @@
 ---
-title: Usar la guía paso a paso para agregar perfiles y dispositivos de AutoPilot
+title: Usar esta guía paso a paso para agregar perfiles y dispositivos de AutoPilot
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -12,7 +12,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - Adm_TOC
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -26,81 +26,78 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: Aprende a usar Windows AutoPilot para configurar nuevos dispositivos Windows 10 para tu empresa para que estén listos para el uso de los empleados.
-ms.openlocfilehash: a50fb8276ad8edd0106cbc123d05fd720808de81
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: MT
+description: Obtenga información sobre cómo usar Windows AutoPilot para configurar nuevos dispositivos de Windows 10 para su empresa para que estén listos para su uso por parte de los empleados.
+ms.openlocfilehash: 6bedb478d0ef8f961c7b75eb7013b2b5e51ce2c9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64635518"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092612"
 ---
-# <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Usar la guía paso a paso para agregar perfiles y dispositivos de AutoPilot
+# <a name="use-this-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Usar esta guía paso a paso para agregar perfiles y dispositivos de AutoPilot
 
 > [!NOTE]
-> Microsoft Defender für Unternehmen se está implementando para Microsoft 365 Business Premium clientes, a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para dispositivos. [Información general sobre Microsoft Defender für Unternehmen](../security/defender-business/mdb-overview.md).
+> Microsoft Defender para Empresas se está implementando para los clientes de Microsoft 365 Empresa Premium desde el 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para los dispositivos. [Información general sobre Microsoft Defender para empresas](../security/defender-business/mdb-overview.md).
 
-Puedes usar Windows AutoPilot para configurar nuevos dispositivos **Windows 10 para** tu empresa para que estén listos para su uso cuando se los des a tus empleados.
+Puede usar Windows AutoPilot para configurar **nuevos** dispositivos de Windows 10 en su empresa para que estén listos para su uso productivo en cuanto se los proporcione a sus empleados.
   
 ## <a name="device-requirements"></a>Requisitos del dispositivo
 
-Los dispositivos deben cumplir estos requisitos:
+Los dispositivos tienen que cumplir estos requisitos:
   
-- Windows 10 versión 1703 o posterior
-    
-- Nuevos dispositivos que no han pasado por Windows experiencia lista para su uso
-    
-## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>Usar la guía de configuración para crear perfiles y dispositivos
+- Windows 10, versión 1703 o posterior
 
-Si aún no has creado grupos de dispositivos o perfiles, la mejor manera de empezar es usando la guía paso a paso. También puedes agregar [dispositivos AutoPilot](m365bp-create-and-edit-autopilot-devices.md) y [asignarles perfiles](../admin/devices/create-and-edit-autopilot-profiles.md) sin usar la guía. 
+- Los nuevos dispositivos que no han pasado por una configuración rápida de Windows.
+
+## <a name="use-the-setup-guide-to-add-devices-and-profiles"></a>Usar la guía de configuración para crear perfiles y dispositivos
+
+Si todavía no ha creado grupos de dispositivos ni perfiles, la mejor forma de empezar es mediante la guía paso a paso. También se pueden [agregar dispositivos AutoPilot](m365bp-create-and-edit-autopilot-devices.md) y [asignar perfiles](../admin/devices/create-and-edit-autopilot-profiles.md) sin usar la guía.
   
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
-2. En el panel de navegación izquierdo, elija **Dispositivos** \> **AutoPilot**.
+1. En el panel de navegación izquierdo, elija **Dispositivos** \> **AutoPilot**.
 
-    ![En el Centro de administración, elija dispositivos y, a continuación, AutoPilot.](../media/AutoPilot.png)
+    ![En el centro de administración, elija dispositivos y, a continuación, AutoPilot.](../media/AutoPilot.png)
   
-2. En la **página AutoPilot** , haga clic o pulse **en Guía de inicio**.
-    
+1. En la página **AutoPilot**, pulse o haga clic en **Guía de inicio**.
+
     ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. En la **Upload .csv con lista** de dispositivos, vaya a una ubicación donde tenga el archivo de .CSV preparado y, a continuación, **abra** \> **Siguiente**. El archivo debe tener tres encabezados:
-    
+1. En la página **Cargar archivo .csv con la lista de dispositivos**, vaya a la ubicación donde tenga el archivo .CSV preparado y haga clic en **Abrir** \> **Siguiente**. El archivo debe tener tres encabezados:
+
     - Columna A: Número de serie del dispositivo
-    
     - Columna B: Id. del producto de Windows
-    
     - Columna C: Hash de hardware
-    
-    Puede obtener esta información del proveedor de hardware o puede usar el [script de PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) para generar un archivo CSV. 
-    
-    Para más información, vea [Device list CSV-file](../admin/misc/device-list.md) (Archivo CSV de lista de dispositivos). También puede descargar un archivo de ejemplo en la página **Upload .csv file with list of devices** (Cargar archivo .csv con la lista de dispositivos). 
-    
+
+Puede obtener esta información de su proveedor de hardware o puede usar el [script de PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo), que generará un archivo CSV.
+
+Para más información, vea [Device list CSV-file](../admin/misc/device-list.md) (Archivo CSV de lista de dispositivos). También puede descargar un archivo de ejemplo en la página **Upload .csv file with list of devices** (Cargar archivo .csv con la lista de dispositivos).
+
 > [!NOTE]
-> Este script usa WMI para recuperar las propiedades necesarias para que un cliente registre un dispositivo con Windows Autopilot. Tenga en cuenta que es normal que el archivo CSV resultante no recopile un valor de id. de producto (PKID) de Windows, ya que esto no es necesario para registrar un dispositivo y PKID siendo NULL en el CSV de salida está totalmente bien. Solo se rellenarán el número de serie y el hash de hardware.
-    
-4. En la **página Asignar un perfil** , puede elegir un perfil existente o crear uno nuevo. Si aún no tiene uno, se le pedirá que cree uno. 
-    
+> Este script usa WMI para recuperar las propiedades necesarias para que un cliente registre un dispositivo con Windows Autopilot. Tenga en cuenta que es normal que el archivo CSV resultante no recopile un valor de id. de producto (PKID) de Windows, ya que esto no es necesario para registrar un dispositivo y que PKID sea NULL en el CSV de salida está bien. Solo se rellenarán el número de serie y el hash de hardware.
+
+4. En la página **Asignar un perfil**, puede seleccionar un perfil existente o crear uno nuevo. Si todavía no tiene ninguno, se le pedirá que cree uno.
+
     Un perfil es una colección de valores que puede aplicar a un solo dispositivo o un grupo de dispositivos.
-    
-    Las características predeterminadas son necesarias y se establecen automáticamente. Las características predeterminadas son:
-    
-    - Omita Cortana, OneDrive y registro OEM.
-    
+
+    Las características predeterminadas son obligatorias y se configurarán automáticamente. Las características predeterminadas son:
+
+    - Se omite el registro de OEM, OneDrive y Cortana.
+
     - Se crea la experiencia de inicio de sesión con la marca de la compañía.
-    
-    - Conectar dispositivos para Azure Active Directory cuentas e inscribirlas automáticamente para que las administra Microsoft 365 Business Premium.
-    
-    Para obtener más información, consulta [Acerca de la configuración del perfil de AutoPilot](m365bp-autopilot-profile-settings.md). 
-    
-5. Las otras opciones son **Skip privacy settings** (Omitir la configuración de privacidad) y **Don't allow user to become the local admin** (No permitir que el usuario se convierta en administrador local). De manera predeterminada, se establecen ambas en **Desactivado**. 
-    
+
+    - Conectar los dispositivos a cuentas de Azure Active Directory e inscribirlos automáticamente para que los administre Microsoft 365 Empresa Premium.
+
+    Para obtener más información, consulte [Acerca de la configuración del perfil de AutoPilot](m365bp-autopilot-profile-settings.md).
+
+5. Las otras opciones son **Skip privacy settings** (Omitir la configuración de privacidad) y **Don't allow user to become the local admin** (No permitir que el usuario se convierta en administrador local). De manera predeterminada, se establecen ambas en **Desactivado**.
+
     Elija **Siguiente**.
-    
-6. **Si has terminado,** indica que el perfil que creaste (o elegiste) se aplicará al grupo de dispositivos que creaste cargando la lista de dispositivos. La configuración estará en vigor cuando los usuarios del dispositivo inicien sesión a continuación. Elija **Cerrar**.
+
+6. La página **Ha terminado** indica que el perfil que ha creado (o elegido) se aplicará al grupo de dispositivos que ha creado cargando la lista de dispositivos. Esta configuración estará vigente cuando los usuarios del dispositivo inicien sesión de nuevo. Elija **Cerrar**.
 
 ## <a name="related-content"></a>Contenido relacionado
 
-- [Acerca de la configuración de perfil de AutoPilot](../business-premium/m365bp-autopilot-profile-settings.md) (artículo)\
-
+- [Información sobre la configuración de los perfiles de AutoPilot](../business-premium/m365bp-autopilot-profile-settings.md) (artículo)\\
 - [Opciones para proteger los dispositivos y los datos de la aplicación](../admin/devices/choose-device-security.md) (artículo)
-- [Principales 10 formas de proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)
+- [Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)

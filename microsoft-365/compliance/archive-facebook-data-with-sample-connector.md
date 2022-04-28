@@ -2,8 +2,8 @@
 title: Configurar un conector para archivar datos de Facebook
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar & usar un conector en el portal de cumplimiento de Microsoft Purview para importar & datos de archivo de las páginas de Facebook Business a Microsoft 365.
-ms.openlocfilehash: 58d1f0efd26d892a4bf206c71dc5ee55c653abfb
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 2d732352d8b6eebaee304a030736f35bcf32b84c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994950"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099331"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Configuración de un conector para archivar datos de Facebook (versión preliminar)
 

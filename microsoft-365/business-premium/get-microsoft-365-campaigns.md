@@ -1,14 +1,14 @@
 ---
-title: Obtener Microsoft 365 para campañas
+title: Cómo obtener Microsoft 365 para Campañas
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,60 +23,58 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Obtén Microsoft 365 campañas para proteger tu campaña de las amenazas de ciberseguridad al correo electrónico, los datos y las comunicaciones.
-ms.openlocfilehash: f612fa2d47e8085fa79773bbea139d6b67f45130
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: MT
+description: Obtenga Microsoft 365 para Campañas para que pueda proteger su campaña frente a amenazas de ciberseguridad al correo electrónico, los datos y las comunicaciones.
+ms.openlocfilehash: 945948b378bc67bf52f04740fb00220b4606b294
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634281"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100123"
 ---
-# <a name="get-microsoft-365-for-campaigns"></a>Obtener Microsoft 365 para campañas
+# <a name="how-to-get-microsoft-365-for-campaigns"></a>Cómo obtener Microsoft 365 para Campañas
 
-Cualquier persona con Microsoft 365 Business Premium puede usar esta guía para configurar la seguridad adicional para el correo electrónico y la colaboración. Sin embargo, las campañas y los partidos políticos en los Estados Unidos son elegibles para precios especiales para Microsoft 365. Actualmente, este precio especial está disponible para:
+Las campañas y los partidos políticos en los Estados Unidos son aptos para precios especiales de Microsoft 365 Empresa Premium. Actualmente, este precio especial está disponible para:
 
 - Partidos políticos de nivel nacional en el Estados Unidos, Canadá y Nueva Zelanda
+- Campañas políticas nacionales o federales en el Estados Unidos y Nueva Zelanda
+- Partidos políticos de nivel estatal en el Estados Unidos
+- Campañas políticas para todo el estado de EE. UU. (p. ej.: campañas que buscan un cargo de gobernador, legislador estatal o fiscal general)
 
-- Campañas políticas nacionales o federales en Estados Unidos y Nueva Zelanda
+   > [!IMPORTANT]
+   > Debido a las regulaciones locales, no podemos ofrecer Microsoft 365 para Campañas en los siguientes estados en este momento: CO, DE, IL, OK, WI & WY. Animamos a las campañas de esos estados a explorar ofertas adicionales en [Microsoft 365 para empresas](https://www.office.com/business).
 
-- Campañas políticas en todo el estado de Estados Unidos (por ejemplo, campañas que buscan un cargo para gobernador, legislatura estatal o fiscal general)*
+Si su campaña o partido político cumple los requisitos, Microsoft 365 para Campañas es el plan menos costoso disponible a través de Microsoft. Consulte [Registrarse para obtener Microsoft 365 para Campañas](m365-campaigns-sign-up.md).  
 
-    *Debido a las normativas locales, no podemos ofrecer Microsoft 365 para campañas en los siguientes estados en este momento: CO, DE, IL, OK, WI & WY. Animamos a las campañas de esos estados a explorar ofertas adicionales [en Microsoft 365 para empresas](https://www.office.com/business).
+> [!TIP]
+> Si no es apto para los precios especiales, Microsoft 365 Empresa Premium sigue siendo la forma más rentable de obtener una seguridad completa para un entorno de colaboración. Consulte [Cómo obtener Microsoft 365 Empresa Premium](get-microsoft-365-business-premium.md).
 
-- Partidos políticos de nivel de estado en el Estados Unidos
+## <a name="what-does-microsoft-365-for-campaigns-include"></a>¿Qué incluye Microsoft 365 para Campañas?
 
-Si tu campaña o partido político cumple los requisitos, Microsoft 365 para Campañas es el plan menos costoso disponible a través de Microsoft. Consulta [Registrarse para obtener Microsoft 365 campañas](m365-campaigns-sign-up.md).  
+Microsoft 365 para campañas incluye controles sencillos que le ayudan a usted y a su personal a trabajar juntos de forma segura:
 
-Si no es elegible para precios especiales, Microsoft 365 Business Premium es la forma más rentable de obtener una seguridad completa para un entorno de colaboración. Consulta [Configurar Microsoft 365 Business Premium](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json) y, a continuación, usa esta biblioteca para configurar la seguridad adicional y para ayudar a tu equipo a colaborar de forma segura.
-
-## <a name="what-does-microsoft-365-for-campaigns-include"></a>¿Qué Microsoft 365 para campañas?
-
-Esta configuración de Microsoft 365 Business Premium incluye controles simples que le ayudarán a usted y a su personal a trabajar juntos de forma segura:
-
-- **Proteger la identidad de** usuario: asegúrese de que los usuarios son quienes dicen que son cuando inician sesión para enviar correo electrónico o para acceder a archivos (autenticación multifactor).
-
-- **Proteger la información confidencial**: proteja la información confidencial para supervisar la información que se comparte fuera de la organización (prevención de pérdida de datos).
-
-- **Proteger dispositivos móviles**: proteger los datos de dispositivos móviles (directiva de protección de aplicaciones móviles).
-
-- **Proteger contra contenido malintencionado**: impedir el acceso a contenido malintencionado mediante el examen de datos adjuntos de correo electrónico (Defender pre Office 365).
-
-- **Proteger contraseñas**: establezca las contraseñas para que nunca expiren, lo que es más seguro y ayuda a evitar las detenciones de trabajo (directiva de contraseñas).
-
-- **AccountGuard acceso al** programa: Microsoft AccountGuard es un servicio de seguridad ofrecido sin costo adicional a los clientes en el espacio político. El servicio está diseñado para informar y ayudar a estos clientes altamente dirigidos a protegerse de las amenazas de ciberseguridad en sus cuentas de correo electrónico personales y organizativas de Microsoft. Vea más información en [Microsoft AccountGuard](https://www.microsoftaccountguard.com/).
+- **Proteger la identidad de usuario**: asegúrese de que los usuarios son quienes dicen ser cuando inician sesión para enviar correos electrónicos o para acceder a archivos (autenticación multifactor).
+- **Proteger la información confidencial**: proteja la información confidencial para supervisar la información que se comparte fuera de su organización (prevención de pérdida de datos).
+- **Proteger dispositivos móviles**: proteja los datos en dispositivos móviles (directiva de protección de aplicaciones móviles).
+- **Protección contra contenido malintencionado**: evite el acceso a contenido malintencionado mediante el examen de datos adjuntos de correo electrónico (Defender para Office 365).
+- **Proteger contraseñas**: establezca las contraseñas para que nunca expiren, lo que es más seguro y ayuda a evitar las paradas de trabajo (directiva de contraseñas).
+- **Acceso al programa AccountGuard**: Microsoft AccountGuard es un servicio de seguridad que se ofrece sin costo adicional a los clientes en el espacio político. El servicio está diseñado para informar y ayudar a estos clientes altamente dirigidos a protegerse de las amenazas de ciberseguridad en sus cuentas de correo electrónico de Microsoft personales y organizativas. Vea más información en [Microsoft AccountGuard](https://www.microsoftaccountguard.com/).
 
 ## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>¿Qué cuesta, quién lo necesita y cuál es el compromiso?
 
-Si tu campaña cumple los requisitos para precios especiales Microsoft 365 para campañas cuesta 5 USD por usuario y mes.
-Para proteger la campaña, recomendamos una licencia para el candidato, el jefe de campaña, todo el personal de alto nivel que forme parte de la campaña o del partido y, por lo general, todo el personal a tiempo completo. Es posible que algunos empleados voluntarios también necesiten una licencia. En general, asigne una licencia a cualquier persona de la campaña que necesite correo electrónico y dispositivos protegidos.
-No hay un compromiso de tiempo mínimo al registrarse para Microsoft 365 campañas. Puede pagar mensualmente las licencias que necesita y dejar de usar el servicio en cualquier momento.
+Si su campaña cumple los requisitos para precios especiales, Microsoft 365 para Campañas cuesta 5 USD por usuario y mes.
 
-## <a name="how-do-i-qualify-for-special-pricing"></a>Cómo Calificar para precios especiales
+Para proteger su campaña, recomendamos una licencia para el candidato, el jefe de campaña, todo el personal sénior que forma parte de la campaña o partido y normalmente todo el personal a tiempo completo. Es posible que algunos empleados voluntarios también necesiten una licencia. En general, asigne una licencia a cualquier persona de la campaña que necesite un correo electrónico y dispositivos protegidos.
 
-1. Vaya a [aka.ms/m365forcampaigns](https://aka.ms/m365forcampaigns/) y proporcione algunos detalles sobre su organización. Los detalles que proporciona nos ayudan a comprobar que representa una campaña política o un partido a nivel nacional en el Estados Unidos. No hay ningún compromiso al completar este formulario.
+No hay ningún compromiso de tiempo mínimo cuando te suscribes a Microsoft 365 para Campañas. Puede pagar mensualmente las licencias que necesita y dejar de usar el servicio en cualquier momento.
 
-2. Después de completar el formulario, nos lleva unos días revisar la información.
+## <a name="how-do-i-qualify-for-special-pricing"></a>¿Cómo optar a precios especiales?
 
-3. Una vez que hayamos comprobado que representa una campaña política o un partido a nivel nacional, recibirá una invitación por correo electrónico de Microsoft. La invitación incluye un vínculo de registro específico de su organización.
+1. Vaya a [aka.ms/m365forcampaigns](https://aka.ms/m365forcampaigns/) y proporcione algunos detalles sobre su organización. Los detalles que usted nos proporciona nos ayudan a comprobar que usted representa una campaña política de nivel nacional o partido en Estados Unidos. No hay ningún compromiso cuando completa este formulario.
 
-Cuando recibas la invitación, [regístrate para Microsoft 365 campañas](m365-campaigns-sign-up.md).
+2. Una vez que haya completado el formulario, nos llevará unos días revisar su información.
+
+3. Una vez que hayamos comprobado que representa a una campaña política o a un partido a nivel nacional, recibirá una invitación de Microsoft por correo electrónico. La invitación incluye un vínculo de registro específico de su organización.
+
+## <a name="next-steps"></a>Siguientes pasos
+
+Cuando reciba la invitación, [regístrese para obtener Microsoft 365 para Campañas](m365-campaigns-sign-up.md).

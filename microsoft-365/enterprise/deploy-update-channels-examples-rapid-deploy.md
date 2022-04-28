@@ -4,7 +4,7 @@ author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Cómo una organización que implementa la versión más reciente usa canales para las aplicaciones de Windows 10 y Microsoft 365.
-ms.openlocfilehash: 6b0226a226742a89dc65ca0d32792db03c77e465
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6f52bc8fc55fe94361961585aacae1f48c4fbce5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60193092"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092147"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>Ejemplo de una amplia implementación para las versiones más recientes
 
@@ -103,12 +103,12 @@ Proceso de actualización continuada:
 
 Estos son los productos, sus canales y los grupos de implementación utilizados por esta organización de ejemplo. 
 
-![Grupos de implementación para la implementación general de las versiones más recientes.](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
+![Grupos de implementación para una amplia implementación de las versiones más recientes.](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
 
 ## <a name="see-also"></a>Vea también
 
 [Configuraciones de ejemplo de canal de implementación y actualización](deploy-update-channels-examples.md)
 
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
 [Guías del laboratorio de pruebas](m365-enterprise-test-lab-guides.md)

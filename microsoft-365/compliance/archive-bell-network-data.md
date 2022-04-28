@@ -2,8 +2,8 @@
 title: Configuración de un conector para archivar datos de red SMS/MMS de Bell
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector TeleMessage para importar y archivar datos SMS y MMS desde Bell Network. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: dc23e3788958270712bab493cd0364a80a0377f9
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 5d1b44df9a343020419d684c9a91a982a0f0df57
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992796"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095086"
 ---
 # <a name="set-up-a-connector-to-archive-bell-network-data"></a>Configuración de un conector para archivar datos de Bell Network
 

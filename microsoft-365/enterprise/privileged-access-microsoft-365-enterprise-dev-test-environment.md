@@ -1,10 +1,10 @@
 ---
-title: Administración de acceso con privilegios para Microsoft 365 entorno de prueba de empresa
+title: Administración de acceso con privilegios para su Microsoft 365 para el entorno de prueba empresarial
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,97 +14,97 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 ms.custom: Ent_TLGs
-description: Use esta Guía del laboratorio de pruebas para habilitar la administración de acceso con privilegios Microsoft 365 entorno de prueba empresarial.
-ms.openlocfilehash: 424b7c09a89b20d134654293a1e9c9abd69d6ff2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Use esta guía de laboratorio de pruebas para habilitar la administración de acceso con privilegios en el entorno de prueba de Microsoft 365 para empresas.
+ms.openlocfilehash: 0c92cbd398e4c388fe3c5999c5e0aa9973c4ee06
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60208234"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092103"
 ---
-# <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Administración de acceso con privilegios para Microsoft 365 entorno de prueba de empresa
+# <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Administración de acceso con privilegios para su Microsoft 365 para el entorno de prueba empresarial
 
-*Esta Guía del laboratorio de pruebas se puede usar tanto Microsoft 365 entornos de prueba empresariales como Office 365 Enterprise de prueba.*
+*Esta guía de laboratorio de pruebas se puede usar para Microsoft 365 para entornos de prueba empresariales y Office 365 Enterprise.*
 
-En este artículo se describe cómo configurar la administración de acceso con privilegios para aumentar la seguridad Microsoft 365 entorno de prueba empresarial.
+En este artículo se describe cómo configurar la administración de acceso con privilegios para aumentar la seguridad en el entorno de prueba de Microsoft 365 para empresas.
 
 La configuración de la administración de acceso con privilegios implica tres fases:
 
-- [Fase 1: Crear su Microsoft 365 entorno de prueba empresarial](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
-- [Fase 2: Configurar la administración de acceso con privilegios](#phase-2-configure-privileged-access-management)
-- [Fase 3: Comprobar que la aprobación es necesaria para tareas con privilegios y privilegios elevados](#phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks)
+- [Fase 1: Compilación de la Microsoft 365 para el entorno de prueba empresarial](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Fase 2: Configuración de la administración de acceso con privilegios](#phase-2-configure-privileged-access-management)
+- [Fase 3: Comprobar que la aprobación es necesaria para tareas con privilegios elevados y con privilegios](#phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks)
 
-![Guías del laboratorio de pruebas para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías de laboratorio de prueba para la nube de Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Para obtener una asignación visual a todos los artículos de la pila Microsoft 365 guía del laboratorio de pruebas de empresa, vaya a Microsoft 365 enterprise [Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Para obtener un mapa visual de todos los artículos de la pila Microsoft 365 para la pila guía del laboratorio de pruebas empresarial, vaya a [Microsoft 365 para la pila de la guía del laboratorio de pruebas empresarial](../downloads/Microsoft365EnterpriseTLGStack.pdf).
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: Crear su Microsoft 365 entorno de prueba empresarial
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fase 1: Compilación de la Microsoft 365 para el entorno de prueba empresarial
 
 Si desea configurar la administración de acceso con privilegios de forma ligera con los requisitos mínimos, siga las instrucciones de [Configuración base ligera](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-Si desea configurar la administración de acceso con privilegios en una empresa simulada, siga las instrucciones de [autenticación de paso a través](pass-through-auth-m365-ent-test-environment.md).
+Si desea configurar la administración de acceso con privilegios en una empresa simulada, siga las instrucciones de [Autenticación de paso a través](pass-through-auth-m365-ent-test-environment.md).
   
 >[!NOTE]
->Probar la administración de acceso con privilegios no requiere el entorno de prueba de empresa simulado, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de Servicios de dominio de Active Directory. Se proporciona aquí como una opción para que pueda probar la administración de acceso con privilegios y experimentar con ella en un entorno que representa una organización típica.
+>La prueba de la administración de acceso con privilegios no requiere el entorno de prueba empresarial simulado, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de Servicios de dominio de Active Directory. Se proporciona aquí como una opción para que pueda probar la administración de acceso con privilegios y experimentar con ella en un entorno que representa una organización típica.
 
-## <a name="phase-2-configure-privileged-access-management"></a>Fase 2: Configurar la administración de acceso con privilegios
+## <a name="phase-2-configure-privileged-access-management"></a>Fase 2: Configuración de la administración de acceso con privilegios
 
-En esta fase, configure un grupo de aprobadores y habilite la administración de acceso con privilegios para su Microsoft 365 entorno de prueba empresarial. Para obtener más información y una introducción a la administración de acceso con privilegios, vea [Privileged access management](../compliance/privileged-access-management-overview.md).
+En esta fase, configure un grupo de aprobadores y habilite la administración de acceso con privilegios para su Microsoft 365 para el entorno de prueba empresarial. Para más información y información general sobre la administración de acceso con privilegios, consulte [Administración de acceso con privilegios](../compliance/privileged-access-management-overview.md).
 
-Para configurar y usar el acceso con privilegios en la organización, siga estos pasos.
+Para configurar y usar el acceso con privilegios en su organización, siga estos pasos.
 
-#### <a name="step-1-create-an-approvers-group"></a>[Paso 1: Crear un grupo de aprobadores](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
+#### <a name="step-1-create-an-approvers-group"></a>[Paso 1: Crear el grupo de un aprobador](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
 
-Antes de empezar a usar el acceso con privilegios, determine quién tendrá autoridad de aprobación para las solicitudes entrantes de acceso a tareas con privilegios y privilegios elevados. Todos los usuarios que forman parte del grupo aprobadores pueden aprobar solicitudes de acceso. Para usar el acceso con privilegios, debe crear un grupo de seguridad habilitado para correo en Microsoft 365. En el entorno de prueba, asigne al nuevo grupo de seguridad el nombre "Aprobadores de acceso privilegiado" y agregue el "Usuario 3" que se creó anteriormente en los pasos de guía del laboratorio de pruebas anteriores.
+Antes de empezar a usar el acceso con privilegios, determine quién tendrá autoridad de aprobación para las solicitudes entrantes de acceso a tareas con privilegios elevados y con privilegios. Todos los usuarios que forman parte del grupo de aprobadores pueden aprobar solicitudes de acceso. Para usar el acceso con privilegios, debe crear un grupo de seguridad habilitado para correo en Microsoft 365. En el entorno de prueba, asigne al nuevo grupo de seguridad el nombre "Aprobadores de acceso con privilegios" y agregue el "Usuario 3" que se creó anteriormente en los pasos anteriores de la guía del laboratorio de pruebas.
 
 #### <a name="step-2-enable-privileged-access"></a>[Paso 2: Habilitar el acceso con privilegios](../compliance/privileged-access-management-configuration.md#step-2-enable-privileged-access)
 
-El acceso con privilegios debe estar activado explícitamente en Microsoft 365 con el grupo de aprobadores predeterminado y debe incluir un conjunto de cuentas del sistema que desee excluir del control de acceso de administración de acceso con privilegios. Asegúrese de habilitar el acceso con privilegios en su organización antes de iniciar la fase 3 de esta guía.
+El acceso con privilegios debe activarse explícitamente en Microsoft 365 con el grupo de aprobadores predeterminado y debe incluir un conjunto de cuentas del sistema que quiera excluir del control de acceso de administración de acceso con privilegios. Asegúrese de habilitar el acceso con privilegios en su organización antes de iniciar la fase 3 de esta guía.
 
-## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>Fase 3: Comprobar que la aprobación es necesaria para tareas con privilegios y privilegios elevados
+## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>Fase 3: Comprobar que la aprobación es necesaria para tareas con privilegios elevados y con privilegios
 
-En esta fase, compruebe que la directiva de acceso con privilegios funciona y que los usuarios necesitan la aprobación para ejecutar tareas definidas con privilegios y privilegios.
+En esta fase, compruebe que la directiva de acceso con privilegios funciona y que los usuarios necesitan aprobación para ejecutar tareas definidas con privilegios elevados y con privilegios.
 
 ### <a name="test-the-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>Probar la capacidad de ejecutar una tarea NO definida en una directiva de acceso con privilegios
 
-En primer lugar, conéctese a Exchange Management PowerShell con las credenciales de un usuario configurado con el rol de administración de roles Exchange en el entorno de prueba e intente crear una nueva regla de diario. La [tarea New-JournalRule](/powershell/module/exchange/new-journalrule) no está definida actualmente en una directiva de acceso con privilegios para su organización.
+En primer lugar, conéctese a PowerShell de administración de Exchange con las credenciales de un usuario configurado con el rol de administración de roles Exchange en el entorno de prueba e intente crear una nueva regla de diario. La tarea [New-JournalRule](/powershell/module/exchange/new-journalrule) no está definida actualmente en una directiva de acceso con privilegios para su organización.
 
-1. En el equipo local, abra e inicie sesión en el módulo de PowerShell remoto de Exchange Online en **Microsoft Corporation** Microsoft Exchange Online  >  **Remote PowerShell Module** con credenciales con el rol de administración de roles Exchange para el entorno de prueba.
-2. En Exchange PowerShell de administración, cree una nueva regla de diario para su organización:
+1. En el equipo local, abra e inicie sesión en el módulo de PowerShell remoto de Exchange Online en **Microsoft Corporation** >  **Microsoft Exchange Online módulo de PowerShell remoto** con credenciales con el rol de administración de roles Exchange para el entorno de prueba.
+2. En powerShell de administración de Exchange, cree una nueva regla de diario para su organización:
 
    ```ExchangeManagementPowerShell
    New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
    ```
 
-3. Vea que la nueva regla de diario se creó correctamente en powerShell Exchange administración.
+3. Vea que la nueva regla de diario se creó correctamente en PowerShell de administración de Exchange.
 
-### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>Crear una nueva directiva de acceso con privilegios para la New-JournalRule de acceso
+### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>Creación de una nueva directiva de acceso con privilegios para la tarea New-JournalRule
 
 >[!NOTE]
->Si aún no ha completado los pasos 1 y 2 de la fase 2 de esta guía, asegúrese de seguir los pasos para crear un grupo de aprobadores denominado "Aprobadores de acceso de privilegios" para habilitar el acceso con privilegios en el entorno de prueba.
+>Si aún no ha completado los pasos 1 y 2 de la fase 2 de esta guía, asegúrese de seguir los pasos para crear un grupo de aprobadores denominado "Aprobadores de acceso con privilegios" para habilitar el acceso con privilegios en el entorno de prueba.
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con credenciales con el Exchange de administración de roles para el entorno de prueba.
-2. En el Centro de administración, vaya **a Configuración** Seguridad &  >  **Acceso con**  >  **privilegios de privacidad.**
-3. Seleccione **Administrar directivas y solicitudes de acceso.**
-4. Seleccione **Configurar directivas** y, a continuación, seleccione Agregar una **directiva**.
-5. En los campos desplegables, seleccione o escriba los siguientes valores:
+1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales con el rol de administración de roles Exchange para el entorno de prueba.
+2. En el Centro de administración, vaya a **Configuración** >  **Seguridad & Acceso con** **privilegios de privacidad**. > 
+3. Seleccione **Administrar directivas y solicitudes de acceso**.
+4. Seleccione **Configurar directivas** y, a continuación, **agregar una directiva**.
+5. En los campos desplegables, seleccione o escriba los valores siguientes:
 
-    **Tipo de directiva**: Ámbito **de** directiva de tarea : Exchange **nombre de** directiva : Nuevo tipo de aprobación de regla de diario **:** **Grupo** de aprobación manual : Aprobadores de acceso con privilegios  
+    **Tipo de directiva**: **Ámbito de la directiva** de tarea: Exchange **Nombre de directiva**: Nuevo **tipo de aprobación** de regla de diario: **Grupo de aprobación** manual: Aprobadores de acceso con privilegios  
 
-6. Seleccione **Crear** y, a continuación, seleccione **Cerrar**. La directiva puede tardar unos minutos en estar totalmente configurada y habilitada. Asegúrese de permitir que la directiva esté totalmente habilitada antes de probar el requisito de aprobación en el siguiente paso.
+6. Seleccione **Crear** y, a continuación, seleccione **Cerrar**. La directiva puede tardar unos minutos en configurarse y habilitarse completamente. Asegúrese de permitir el tiempo necesario para que la directiva esté totalmente habilitada antes de probar el requisito de aprobación en el paso siguiente.
 
-### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>Requisito de aprobación de prueba para la New-JournalRule definida en una directiva de acceso con privilegios
+### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>Requisito de aprobación de pruebas para la tarea de New-JournalRule definida en una directiva de acceso con privilegios
 
-1. En el equipo local, abra e inicie sesión en el módulo de PowerShell remoto de Exchange Online en **Microsoft Corporation** Microsoft Exchange Online  >  **Remote PowerShell Module** con credenciales con el rol de administración de roles Exchange para el entorno de prueba.
+1. En el equipo local, abra e inicie sesión en el módulo de PowerShell remoto de Exchange Online en **Microsoft Corporation** >  **Microsoft Exchange Online módulo de PowerShell remoto** con credenciales con el rol de administración de roles Exchange para el entorno de prueba.
 
-2. En Exchange PowerShell de administración, cree una nueva regla de diario para su organización:
+2. En powerShell de administración de Exchange, cree una nueva regla de diario para su organización:
 
    ```ExchangeManagementPowerShell
    New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
    ```
 
-3. Vea el error "Permisos insuficientes" Exchange PowerShell de administración:
+3. Vea el error "Permisos insuficientes" en powerShell de administración de Exchange:
 
    ```ExchangeManagementPowerShell
    Insufficient permissions. Please raise an elevated access request for this task.
@@ -114,48 +114,48 @@ En primer lugar, conéctese a Exchange Management PowerShell con las credenciale
        + PSComputerName        : outlook.office365.com
    ```
 
-### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>Solicitar acceso para crear una nueva regla de diario mediante la New-JournalRule de registro
+### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>Solicitar acceso para crear una nueva regla de diario mediante la tarea New-JournalRule
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con credenciales con el Exchange de administración de roles para el entorno de prueba.
+1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales con el rol de administración de roles Exchange para el entorno de prueba.
 
-2. En el Centro de administración, vaya **a Configuración** Seguridad &  >  **Acceso con**  >  **privilegios de privacidad.**
+2. En el Centro de administración, vaya a **Configuración** >  **Seguridad & Acceso con** **privilegios de privacidad**. > 
 
-3. Seleccione **Administrar directivas y solicitudes de acceso.**
+3. Seleccione **Administrar directivas y solicitudes de acceso**.
 
 4. Seleccione **Nueva solicitud**. En los campos desplegables, seleccione los valores adecuados para su organización:
 
-    **Tipo de** solicitud : Ámbito **de** solicitud de tarea : Exchange **solicitud** de : Nueva duración de regla de diario **(horas)**: 2 **Comentarios**: Solicitar permiso para crear una nueva regla de diario  
+    **Tipo de solicitud**: **Ámbito de solicitud** de tarea: Exchange **Request for**: New Journal Rule **Duration (hours)**: 2 **Comments**: Request permission to create a new Journal Rule  
 
-5. Seleccione **Guardar** y, a continuación, **seleccione Cerrar**. La solicitud se enviará al grupo del aprobador por correo electrónico.
+5. Seleccione **Guardar** y, después, **Cerrar**. La solicitud se enviará al grupo del aprobador por correo electrónico.
 
-### <a name="approve-privileged-access-request-for-the-creation-of-a-new-journal-rule"></a>Aprobar la solicitud de acceso con privilegios para la creación de una nueva regla de diario
+### <a name="approve-privileged-access-request-for-the-creation-of-a-new-journal-rule"></a>Aprobación de una solicitud de acceso con privilegios para la creación de una nueva regla de diario
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales del usuario 3 en el entorno de prueba (miembro del grupo de seguridad "Aprobadores de acceso privilegiado" en el entorno de prueba).
+1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales del usuario 3 en el entorno de prueba (miembro del grupo de seguridad "Aprobadores de acceso con privilegios" en el entorno de prueba).
 
-2. En el Centro de administración, vaya **a Configuración** Seguridad &  >  **Acceso con**  >  **privilegios de privacidad.**
+2. En el Centro de administración, vaya a **Configuración** >  **Seguridad & Acceso con** **privilegios de privacidad**. > 
 
-3. Seleccione **Administrar directivas y solicitudes de acceso.**
+3. Seleccione **Administrar directivas y solicitudes de acceso**.
 
-4. Seleccione la solicitud pendiente y, a continuación, seleccione **Aprobar** para conceder acceso a la cuenta de usuario para crear una nueva regla de diario. La cuenta (el usuario solicitante) recibirá una confirmación por correo electrónico de que se concedió la aprobación.
+4. Seleccione la solicitud pendiente y, a continuación, seleccione **Aprobar** para conceder acceso a la cuenta de usuario para crear una nueva regla de diario. La cuenta (el usuario solicitante) recibirá una confirmación por correo electrónico de que se ha concedido la aprobación.
 
-### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Probar la creación de una nueva regla de diario con acceso con privilegios aprobado para la New-JournalRule trabajo
+### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Prueba de la creación de una nueva regla de diario con acceso con privilegios aprobado para la tarea New-JournalRule
 
-1. En el equipo local, abra e inicie sesión en el módulo de PowerShell remoto de Exchange Online en **Microsoft Corporation** Microsoft Exchange Online  >  **Remote PowerShell Module** con credenciales con el rol de administración de roles Exchange para el entorno de prueba.
+1. En el equipo local, abra e inicie sesión en el módulo de PowerShell remoto de Exchange Online en **Microsoft Corporation** >  **Microsoft Exchange Online módulo de PowerShell remoto** con credenciales con el rol de administración de roles Exchange para el entorno de prueba.
 
-2. En Exchange PowerShell de administración, cree una nueva regla de diario para su organización:
+2. En powerShell de administración de Exchange, cree una nueva regla de diario para su organización:
 
    ```ExchangeManagementPowerShell
    New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
    ```
 
-3. Vea que la nueva regla de diario se creó correctamente en powerShell Exchange administración.
+3. Vea que la nueva regla de diario se creó correctamente en PowerShell de administración de Exchange.
 
 ## <a name="next-step"></a>Paso siguiente
 
-Explore características [y capacidades adicionales](m365-enterprise-test-lab-guides.md#information-protection) de protección de la información en el entorno de prueba.
+Explore características y funcionalidades adicionales de [protección de la información](m365-enterprise-test-lab-guides.md#information-protection) en el entorno de prueba.
 
 ## <a name="see-also"></a>Vea también
 
 - [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
-- [Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+- [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 - [Documentación para Microsoft 365 Enterprise](/microsoft-365-enterprise/)

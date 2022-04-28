@@ -2,8 +2,8 @@
 title: Usar la carga en la red para importar archivos PST
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Para administradores: obtenga información sobre cómo usar la carga en la red para importar en bloque varios archivos PST a buzones de usuario en Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 10a0b2e076c3a8d4fc6910e16ba89c3ce75d2d2d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: cd025adb7100e6dff0d8cb97c195e851414afd81
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999814"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095430"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Usar la carga en la red para importar los archivos PST de su organización a Microsoft 365
 
@@ -92,7 +92,7 @@ El primer paso es descargar la herramienta AzCopy, que es la herramienta que se 
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
-2. En el panel izquierdo del portal de cumplimiento, haga clic en **gobernanza de información** \> **Importar**.
+2. En el panel izquierdo del portal de cumplimiento, haga clic en **Administración del ciclo de vida de los datos** \> **Importar**.
 
     > [!NOTE]
     > Debe tener asignados los permisos adecuados para acceder a la página **Importar** en el portal de cumplimiento. Consulte la sección **Antes de comenzar** para obtener más información. 
@@ -150,7 +150,7 @@ Ahora está listo para usar la herramienta AzCopy para cargar archivos PST en Mi
 
 Para obtener más información acerca del comando **azcopy.exe copiar** vea [azcopy copy](/azure/storage/common/storage-ref-azcopy-copy).
 
-Estos son ejemplos de la sintaxis de la herramienta AzCopy con valores reales para cada parámetro.
+A continuación se muestran ejemplos de la sintaxis de la herramienta AzCopy, en el que se usan valores reales para cada parámetro.
 
 ### <a name="example-1"></a>Ejemplo 1
 
@@ -260,7 +260,7 @@ El siguiente paso consiste en crear el trabajo de importación de PST en el serv
   
 1. Vaya a <https://compliance.microsoft.com> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
 
-2. En el panel izquierdo del portal de cumplimiento, haga clic en **gobernanza de información > Importar**.
+2. En el panel izquierdo del portal de cumplimiento, haga clic en **Management del ciclo de vida de los datos > Importar**.
 
 3. En la pestaña **Importar**, haga clic en ![Agregar icono](../media/ITPro-EAC-AddIcon.gif). **Nuevo trabajo de importación**.
 

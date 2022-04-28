@@ -1,15 +1,15 @@
 ---
-title: Cómo se asignan las características de protección Microsoft 365 Business Premium a Intune configuración
+title: Cómo se asignan las características de protección de Microsoft 365 Empresa Premium a la configuración de Intune
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: scotv
-ms.date: 04/01/2022
+ms.date: 04/21/2022
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -26,30 +26,30 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
-description: Obtenga información sobre cómo las características de protección Microsoft 365 Business Premium se asignan a Intune configuración. La suscripción le proporciona una licencia para modificar la Intune configuración.
-ms.openlocfilehash: cd3bf2c9db6379b70e02a14b6f07d56b3552cbd2
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: MT
+description: Obtenga más información sobre cómo se asignan las características de protección de Microsoft 365 Empresa Premium a la configuración de Intune. La suscripción proporciona una licencia para modificar la configuración de Intune.
+ms.openlocfilehash: b5493199b7a2593097d3e4efbf1d4a405fc1ae4b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64635434"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090638"
 ---
-# <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Cómo se asignan las características de protección Microsoft 365 Business Premium a Intune configuración
+# <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Cómo se asignan las características de protección de Microsoft 365 Empresa Premium a la configuración de Intune
 
 > [!NOTE]
-> Microsoft Defender für Unternehmen se está implementando para Microsoft 365 Business Premium clientes, a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para dispositivos. [Obtenga más información sobre Defender para empresas](../security/defender-business/mdb-overview.md).
+> Microsoft Defender para Empresas se está implementando para los clientes de Microsoft 365 Empresa Premium desde el 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para los dispositivos. [Más información sobre Defender para Empresas](../security/defender-business/mdb-overview.md).
 
 ## <a name="android-and-ios-application-protection-settings"></a>Configuración de protección de aplicación Android o iOS
 
 En la siguiente tabla, se detalla cómo se asigna a la configuración de Intune la configuración de directiva de aplicaciones de Android o iOS.
   
-Para buscar la configuración Intune, inicie sesión con sus credenciales de administrador de Microsoft 365 Business Premium y vaya a Centros de administración **y, a** continuación **, Intune**.
+Para buscar la configuración de Intune, inicie sesión con las credenciales de administrador de Microsoft 365 Empresa Premium, vaya a **centros de administración** y, a continuación, **Intune**.
   
  > [!IMPORTANT]
  > 
- > Una Microsoft 365 Business Premium suscripción le da una licencia para modificar todas las Intune configuración. Consulte [Introducción a Intune para empezar.](/intune/introduction-intune)
+ > La suscripción de Microsoft 365 Empresa Premium le ofrece una licencia para modificar toda la configuración de Intune. Consulte [Introducción a Intune.](/intune/introduction-intune)
   
-Seleccione el nombre de directiva que desee, &mdash; por ejemplo, Directiva de aplicación para Android &mdash; y, a continuación, elija **Configuración de directiva**.
+Haga clic en el nombre de la directiva que desea &mdash;, por ejemplo, la directiva de aplicación para Android &mdash; y luego elija **Configuración de la directiva**.
   
 En **Proteger los archivos de trabajo cuando los dispositivos se extravían por pérdida o robo**
   
@@ -67,48 +67,48 @@ En **Administrar la forma en la que los usuarios obtienen acceso a los archivos 
 |Cifrar los archivos de trabajo  |Cifrar los datos de la aplicación  |
 |En **Administrar la forma en la que los usuarios obtienen acceso a los archivos de Office desde dispositivos móviles** ||
 |Requerir una huella digital o un PIN para obtener acceso a las aplicaciones de Office  | Requiere un PIN para acceder  <br/>  Esto también establece:  <br/> **Permitir PIN simple** en **Sí** <br/> **Longitud del pin** en 4  <br/> **Permitir la firma digital en lugar de PIN** en **Sí** <br/> **Deshabilitar el PIN de aplicación cuando se administra el PIN del dispositivo** en **No** |
-|Restablecer el PIN cuando se produce un error de inicio de sesión muchas veces (esto está deshabilitado si el PIN no es necesario)  |Número de intentos antes de restablecimiento del PIN  |
-|Requerir a los usuarios que inicien sesión de nuevo después Office que las aplicaciones hayan estado inactivas (esto está deshabilitado si el PIN no es necesario)  | Volver a revisar los requisitos de acceso después (minutos)  <br/>  Esto también establece:  <br/> **El tiempo de espera** se establece en minutos  <br/>  Este es el mismo número de minutos que estableció en Microsoft 365 Business.  <br/> **El período de gracia sin conexión** se establece en 720 minutos de forma predeterminada  |
+|Restablecer el PIN cuando no se pueda iniciar sesión este número de veces (esta opción está deshabilitada si el PIN no es necesario)  |Número de intentos antes de restablecimiento del PIN  |
+|Requerir que los usuarios inicien sesión de nuevo si las aplicaciones de Office han estado inactivas durante (esta opción está deshabilitada si el PIN no es necesario)  | Volver a revisar los requisitos de acceso después (minutos)  <br/>  Esto también establece:  <br/> **El tiempo de espera** se establece en minutos  <br/>  Este es el mismo número de minutos que estableció en Microsoft 365 Business.  <br/> **El período de gracia sin conexión** se establece en 720 minutos de forma predeterminada  |
 |Denegar el acceso a los archivos de trabajo en dispositivos con jailbreak o rooting  |Bloquear la ejecución de aplicaciones administradas en dispositivos con Jailbreak o rooting  |
-|Permitir a los usuarios copiar contenido de aplicaciones de Office en aplicaciones personales  | Restringir cortar, copiar y pegar con otras aplicaciones  <br/>  Si la Microsoft 365 Business Premium está establecida en **On**, estas tres opciones también se establecen en **Todas** las aplicaciones en Intune:  <br/> **Permitir a la aplicación transferir datos a otras aplicaciones** <br/> **Permitir a la aplicación recibir datos de otras aplicaciones** <br/> **Restringir cortar, copiar y pegar con otras aplicaciones** <br/>  Si la opción Microsoft 365 Business se establece en **Activar**, a continuación, todas las opciones de Intune se establecen en:  <br/> **Permitir a la aplicación transferir datos a otras aplicaciones** se establece en **Aplicaciones administradas de la directiva** <br/> **Permitir a la aplicación recibir datos de otras aplicaciones** se establece en **Todas las aplicaciones** <br/> **Restringir cortar, copiar y pegar con otras aplicaciones** se establece en **Aplicaciones administradas de la directiva con pegado en** |
+|Permitir a los usuarios copiar contenido de aplicaciones de Office en aplicaciones personales  | Restringir cortar, copiar y pegar con otras aplicaciones  <br/>  Si la opción Microsoft 365 Empresa Premium se establece en **Activada**, a continuación, estas tres opciones también se establecen en **Todas las aplicaciones** en Intune:  <br/> **Permitir a la aplicación transferir datos a otras aplicaciones** <br/> **Permitir a la aplicación recibir datos de otras aplicaciones** <br/> **Restringir cortar, copiar y pegar con otras aplicaciones** <br/>  Si la opción Microsoft 365 Business se establece en **Activar**, a continuación, todas las opciones de Intune se establecen en:  <br/> **Permitir a la aplicación transferir datos a otras aplicaciones** se establece en **Aplicaciones administradas de la directiva** <br/> **Permitir a la aplicación recibir datos de otras aplicaciones** se establece en **Todas las aplicaciones** <br/> **Restringir cortar, copiar y pegar con otras aplicaciones** se establece en **Aplicaciones administradas de la directiva con pegado en** |
    
 ## <a name="windows-10-app-protection-settings"></a>Configuración de protección de la aplicación de Windows 10
 
 La siguiente tabla detalla cómo se asigna a la configuración de Intune la configuración de directiva de aplicaciones de Windows 10.
   
-Para buscar la configuración Intune, inicie sesión con las Microsoft 365 Business Premium de administrador y vaya [a Azure Portal](https://portal.azure.com). Seleccione **Más servicios** y escriba Intune en el **filtro**. Selecciona **Intune de aplicaciones de App Protection**\>.
+Para buscar la configuración de Intune, inicie sesión con sus credenciales de administrador de Microsoft 365 Empresa Premium, vaya al [portal de Azure](https://portal.azure.com), selecciome **Más servicios** y escriba Intune en el **Filtro**; seleccione **Intune App Protection** \> **Directiva de la aplicación**.
   
  > [!IMPORTANT]
  >
- >Una Microsoft 365 Business Premium suscripción le da una licencia para modificar solo la configuración de Intune que se asignan a la configuración disponible en Microsoft 365 Business Premium. 
+ >La suscripción de Microsoft 365 Empresa Premium le proporciona una licencia para modificar solo la configuración de Intune que se asigna a la configuración disponible en Microsoft 365 Empresa Premium. 
   
-Para explorar la configuración disponible, seleccione el nombre de directiva que desee y, a continuación, elija **General, Asignaciones****, Aplicaciones** permitidas **, Aplicaciones** exentas **, Configuración** requerida o Configuración avanzada en el panel de navegación izquierdo. 
+Haga clic en el nombre de la directiva que desea seleccionar y, a continuación, elija **General, asignaciones**, **Aplicaciones permitidas**, **Aplicaciones excluidas**, **Configuración necesaria** o **Configuración avanzada** en la barra de navegación izquierda. 
   
 |**Configuración de directiva de aplicación de Windows 10**|**Configuración de Intune**|
 |:-----|:-----|
 |Cifrar los archivos de trabajo  |**Configuración avanzada** \> **Protección de datos**: **Revocar las claves de cifrado en la inscripción** y **Revocar acceso al dispositivo de datos protegidos inscrito a MDM** se establecen en **Activar**.  |
-|Impedir que los usuarios copien datos de la empresa en archivos personales.  |**Configuración necesaria** \> **Modo de protección de la información de Windows**. **On** in Microsoft 365 Business Premium maps to: **Hide Overrides**, **Off** in Microsoft 365 Business Premium maps to: **Off**.  |
-|Control de acceso a documentos de Office  | Si se establece en **On en Microsoft 365 Business Premium**, a continuación,  <br/> **Configuración avanzada** \> **Acceso**, **Usar Windows Hello para empresas como método para iniciar sesión en Windows** se establece en **Activar**, con la siguiente configuración adicional:  <br/> **Establecer el número mínimo de caracteres necesarios para el PIN** se establece en **4**.  <br/> **Configurar el uso de mayúsculas en el PIN de Windows Hello para empresas** se establece en **No se permite el uso de mayúsculas para el PIN**.  <br/> **Configurar el uso de minúsculas en el PIN de Windows Hello para empresas** se establece en **No se permite el uso de minúsculas para el PIN**.  <br/> **Configurar el uso de caracteres especiales en el PIN de Windows Hello para empresas** se establece en **No se permite el uso de caracteres especiales para el PIN**.  <br/> **Especifique el período de tiempo (en días)** que se puede usar un PIN antes de que el sistema requiera que el usuario cambie se establece en **0**.  <br/> **Especificar el número de PIN anteriores que pueden estar asociados a una cuenta de usuario que no se puede volver a utilizar** se establece en **0**.  <br/> **Número de errores de autenticación permitidos antes de que el dispositivo se borre** se establece en el mismo que en Microsoft 365 Business (5 de forma predeterminada).  <br/> **Cantidad máxima de tiempo (en minutos) permitido después de que el dispositivo esté inactivo que hará que el dispositivo se bloquee con la contraseña o el PIN** se establece en el mismo que en Microsoft 365 Business.  |
+|Impedir que los usuarios copien datos de la empresa en archivos personales.  |**Configuración necesaria** \> **Modo de protección de la información de Windows**. **Activado** en Microsoft 365 Empresa Premium se asigna a: **Ocultar reemplazo**, **Desactivado** en Microsoft 365 Business se asigna a: **Desactivado**.    |
+|Control de acceso a documentos de Office  | Si se establece en **Activado** en Microsoft 365 Empresa Premium, entonces  <br/> **Configuración avanzada** \> **Acceso**, **Usar Windows Hello para empresas como método para iniciar sesión en Windows** se establece en **Activar**, con la siguiente configuración adicional:  <br/> **Establecer el número mínimo de caracteres necesarios para el PIN** se establece en **4**.  <br/> **Configurar el uso de mayúsculas en el PIN de Windows Hello para empresas** se establece en **No se permite el uso de mayúsculas para el PIN**.  <br/> **Configurar el uso de minúsculas en el PIN de Windows Hello para empresas** se establece en **No se permite el uso de minúsculas para el PIN**.  <br/> **Configurar el uso de caracteres especiales en el PIN de Windows Hello para empresas** se establece en **No se permite el uso de caracteres especiales para el PIN**.  <br/> **Especificar el período de tiempo (en días) que se puede usar el PIN antes de que el sistema necesite que el usuario lo cambie** se establece en **0**.  <br/> **Especificar el número de PIN anteriores que pueden estar asociados a una cuenta de usuario que no se puede volver a utilizar** se establece en **0**.  <br/> **Número de errores de autenticación permitidos antes de que el dispositivo se borre** se establece en el mismo que en Microsoft 365 Business (5 de forma predeterminada).  <br/> **Cantidad máxima de tiempo (en minutos) permitido después de que el dispositivo esté inactivo que hará que el dispositivo se bloquee con la contraseña o el PIN** se establece en el mismo que en Microsoft 365 Business.  |
 |Habilitar la recuperación de datos protegidos  |**Configuración avanzada** \> **Protección de datos**: **Mostrar el icono de protección de datos de empresa** y **Usar Azure RMS para el trabajo en curso** se establecen en **Activar**.  |
 |Proteger las ubicaciones de la empresa y de la nube adicionales  |**Configuración avanzada** \> **Dominios protegidos** y **Recursos en nube** muestran los sitios de SharePoint y los dominios.  |
 |Los archivos que usan estas aplicaciones están protegidos  |La lista de aplicaciones protegidas aparece en **Aplicaciones permitidas**.  |
    
 ## <a name="windows-10-device-protection-settings"></a>Configuración de protección del dispositivo de Windows 10
 
-En la tabla siguiente se detalla cómo se asignan las Windows 10 configuración del dispositivo a Intune configuración.
+La siguiente tabla detalla cómo se asigna a la configuración de Intune los valores de configuración del dispositivo de Windows 10.
   
-Para buscar la configuración de Intune, inicie sesión con sus credenciales de administrador de Microsoft 365 Business Premium y vaya a Azure Portal, [seleccione](https://portal.azure.com) Más servicios y escriba Intune en el **filtro,** \>  \> seleccione configuración de dispositivo Intune **Perfiles**. A **continuación, selecciona Directiva de dispositivo Windows 10** \> **Propiedades Configuración**\>.
+Para buscar la configuración de Intune, inicie sesión con sus credenciales de administrador de Microsoft 365 Empresa Premium, vaya al [portal de Azure](https://portal.azure.com), seleccione **Más servicios** y escriba Intune en el **Filtro**; seleccione **Intune** \> **Configuración del dispositivo** \> **Perfiles**. A continuación, seleccione **Directiva del dispositivo para Windows 10** \> **Propiedades** \> **Configuración**.
   
-|**Windows 10 de directiva de dispositivo**|**Configuración de Intune**|
+|**Configuración de la directiva de dispositivo de Windows 10**|**Configuración de Intune**|
 |:-----|:-----|
-|Proteger los equipos PC de virus y otras amenazas con el antivirus Windows Defender  |Permitir supervisión en tiempo real = ON  <br/> Permitir protección en la nube = ON  <br/> Solicitar a los usuarios el envío de muestras = enviar Caja fuerte automáticamente (envío automático predeterminado no PII)  |
-|Proteger los equipos PC de amenazas basadas en web en Microsoft Edge  |**SmartScreen en** **la configuración del Explorador perimetral** está **establecido en Obligatorio**.  |
-|Desactivar la pantalla del dispositivo cuando esté inactivo durante (minutos)  |Minutos máximos de inactividad hasta que se bloquea la pantalla (minutos)  |
-|Permitir a los usuarios descargar aplicaciones desde la Microsoft Store  |Directiva uri personalizada  |
-|Permitir a los usuarios acceder a Cortana  |**General** \> **Cortana** se establece en **bloquear en Intune** cuando se establece en **desactivado** en Microsoft 365 Business Premium.  |
-|Permitir a los usuarios recibir sugerencias de Windows y anuncios de Microsoft  |**Windows destacado**, todo bloqueado si se establece en **desactivado** en Microsoft 365 Business Premium.  |
-|Mantener actualizados automáticamente los dispositivos con Windows 10  | Esta configuración se encuentra en **Microsoft Intune** \> **de servicio: Windows 10** anillos de actualización, elija Directiva de actualización para dispositivos Windows 10 **y, a** continuación, **Propiedades** \> **Configuración**.  <br/>  Cuando la Microsoft 365 Business Premium está establecida en **On**, se establecen todas las opciones siguientes:  <br/> **La rama** de servicio se establece en **CB** (CBB cuando está desactivada en Microsoft 365 Business Premium).  <br/> **Las actualizaciones de productos de Microsoft** se establecen en **Permitir**.  <br/> **Windows controladores está** establecido en **Permitir**.  <br/> **El comportamiento de actualización** automática se establece en **Instalación automática en tiempo de mantenimiento** con:  <br/> **El inicio después de las** horas se establece en **6 a. m**.  <br/> **El fin de las** horas activas se establece en **10 p. m**.  <br/> **El período de aplazamiento de actualización de calidad (días)** se establece en **0**.  <br/> **El período de aplazamiento de actualización de características (días)** se establece en **0**.  <br/> **El modo de descarga de optimización de** distribución se establece en **HTTP combinado con emparejamiento detrás del mismo NAT**.  |
+|Proteger los equipos PC de virus y otras amenazas con el antivirus Windows Defender  |Permitir la supervisión en tiempo real = Activado  <br/> Permitir la protección de la nube = Activado  <br/> Solicitar a los usuarios el envío de ejemplos = Enviar ejemplos seguros automáticamente (envío automático de DCP predeterminada)  |
+|Proteger los equipos PC de amenazas basadas en web en Microsoft Edge  |**SmartScreen** en **Configuración del Explorador de Edge** se establece en **Requerir**.  |
+|Desactivar la pantalla del dispositivo cuando haya estado inactivo durante (minutos)  |Número máximo de minutos de inactividad hasta que se bloquea la pantalla (minutos)  |
+|Permitir a los usuarios descargar aplicaciones desde la Microsoft Store  |Directiva URI personalizada  |
+|Permitir a los usuarios acceder a Cortana  |**General** \> **Cortana** se establece como **bloqueado** en Intune cuando se establece en **desactivado** en Microsoft 365 Empresa Premium.  |
+|Permitir a los usuarios recibir sugerencias de Windows y anuncios de Microsoft  |**Destacados de Windows**, todo bloqueado si está **desactivado** en Microsoft 365 Empresa Premium.  |
+|Mantener actualizados automáticamente los dispositivos con Windows 10  | Esta configuración está en **Microsoft Intune** \> **Actualizaciones del servicio: Windows 10 anillos de actualización**, elija **Actualizar directiva para dispositivos Windows 10** y, a continuación, **Propiedades** \> **Configuración**.  <br/>  Cuando la configuración de Microsoft 365 Empresa Premium está establecida en **Activado**, se establecen todas las opciones siguientes:  <br/> La **rama de servicio** se establece en **CB** (CBB cuando se desactiva en Microsoft 365 Empresa Premium).  <br/> **Actualizaciones de productos de Microsoft** se establece en **Permitir**.  <br/> **Controladores de Windows** se establece en **Permitir**.  <br/> **Comportamiento de la actualización automática** se establece en **Instalar automáticamente en el momento de mantenimiento** con:  <br/> **El inicio fuera del horario laboral** se establece en **6 a.m.**.  <br/> **El final de las horas activas** se establece en **10 p.m.**.  <br/> **El período de aplazamiento de la actualización de calidad (días)** se establece en **0**.  <br/> **El período de aplazamiento de la actualización de características (días)** se establece en **0**.  <br/> **El modo de descarga de optimización de entrega** se establece en **HTTP combinado con el emparejamiento que se encuentra en la misma NAT**.  |
 
 ## <a name="see-also"></a>Vea también
 
-[Principales 10 formas de proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)
+[10 formas principales de proteger los planes de Microsoft 365 for Business](../admin/security-and-compliance/secure-your-business-data.md)

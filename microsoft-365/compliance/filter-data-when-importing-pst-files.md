@@ -2,8 +2,8 @@
 title: Filtrar datos al importar archivos PST
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Obtenga información sobre cómo filtrar datos mediante la característica de importación inteligente en el servicio de importación de Microsoft 365 al importar archivos PST a Microsoft 365.
-ms.openlocfilehash: dc60baf45be97e438875e0b045d9e8f3b6208d3f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 5ff78126f9e2d02181635433d7a94ede0e191c8d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997920"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099749"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrar datos al importar archivos PST
 
@@ -70,7 +70,7 @@ Después de crear un trabajo de importación PST, siga estos pasos para filtrar 
   
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento de Microsoft Purview</a> e inicie sesión con las credenciales de una cuenta de administrador de su organización.
     
-2. En el panel izquierdo del portal de cumplimiento, haga clic en **gobernanza de información** \> **Importar**.
+2. En el panel izquierdo del portal de cumplimiento, haga clic en **Importación** **de administración del ciclo de vida de** \> datos.
     
     Los trabajos de importación de su organización aparecen en la pestaña **Importar**. El valor **Análisis completado** de la columna **Estado** indica los trabajos de importación que ha analizado Microsoft 365 y que están listos para importar.
     
@@ -123,7 +123,7 @@ Después de crear un trabajo de importación PST, siga estos pasos para filtrar 
   
     e. Haga clic en **Importar datos** para iniciar la importación. Se muestra la cantidad total de datos que se importarán. 
   
-    O bien:
+    O bien
   
     a. Haga clic en **No, quiero importar todo para** importar todos los datos de los archivos PST para Office 365 y, a continuación, haga clic en **Siguiente**.
   

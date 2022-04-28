@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: cd0d463e234c439d8b57576375fd6a91e512f753
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 23c21eae9ad149aea5442c0c8a00f716f3d22506
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995289"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099485"
 ---
 # <a name="upload-your-test-base-package-zip"></a>Upload el paquete base de prueba (Zip) 
 
@@ -112,13 +112,107 @@ Los pasos siguientes proporcionan una guía sobre cómo rellenar los detalles de
 
     :::image type="content" alt-text="Visualización de los detalles de la prueba." source="Media/TestDetails.png":::
 
+
+
+## <a name="upload-your-binaries-dependencies-and-scripts"></a>Upload los archivos binarios, las dependencias y los scripts
+
+En esta pestaña, cargará un único paquete zip que contiene los archivos binarios, las dependencias y los scripts usados para ejecutar el conjunto de pruebas.
+
+> [!NOTE]
+> El tamaño del paquete zip debe estar comprendido entre un mínimo de 10 MB y un máximo de 2 GB.
+
+**Upload archivo zip del paquete**
+
+:::image type="content" alt-text="Upload los archivos binarios." source="Media/AddBinaries.png":::
+
+  - Las dependencias cargadas pueden incluir marcos de pruebas, motores de scripting o datos a los que se accederá para ejecutar la aplicación o los casos de prueba. Por ejemplo, puede cargar Selenium y un instalador de controlador web para ayudar a ejecutar pruebas basadas en explorador.
+  - Se recomienda asegurarse de que las actividades de script se mantienen modulares, es decir, 
+    - El `Install` script solo realiza operaciones de instalación.
+    - El `Launch` script solo inicia la aplicación.
+    - El `Close` script solo cierra la aplicación.
+    - El script opcional `Uninstall` solo desinstala la aplicación.
+
+**Actualmente, el portal solo admite scripts de PowerShell.**
+
+
+
+## <a name="the-tasks-tab"></a>Pestaña Tareas
+
+En la pestaña tareas, se espera que proporcione las rutas de acceso a los scripts de prueba que se encuentran en la carpeta zip que cargó en la pestaña archivos binarios.
+
+  - **Scripts de prueba de fábrica:** Escriba las rutas de acceso relativas a los scripts de instalación, inicio, cierre y desinstalación. También tiene la opción de seleccionar opciones adicionales para el script de instalación.
+  - **Scripts de prueba funcionales:** Escriba la ruta de acceso relativa a cada script de prueba funcional cargado. Se pueden agregar scripts de prueba funcionales adicionales con el ```Add Script``` botón . Necesita un script mínimo de (1) y puede agregar hasta ocho (8) scripts de prueba funcionales. 
+  
+    Los scripts se ejecutan en la secuencia en la que aparecen. Un error en un script determinado impide que se ejecuten scripts posteriores.
+    También tiene la opción de seleccionar opciones adicionales para cada script proporcionado.
+
+**Establecer ruta de acceso de script**
+
+:::image type="content" alt-text="Imagen de la tarea de prueba." source="Media/testtask.png":::
+
+A continuación se muestra un ejemplo de cómo proporcionar la ruta de acceso relativa en una estructura de carpetas:
+
+_**Zip_file_uploaded**_
+~~~
+├── file1.exe
+
+├── ScriptX.ps1
+
+├── folder1
+
+│   ├── file3.exe
+
+│   ├── script.ps1
+~~~
+  - **ScriptX.ps1** lo habría hecho. _ScriptX.ps1_ como ruta de acceso relativa.
+  - **Script.ps1** tendría _folder1/script.ps1_ como ruta de acceso relativa.
+
+
+
+## <a name="choose-your-test-options"></a>Elija las opciones de prueba. 
+
+La ```Test Options``` pestaña está destinada a los usuarios que desean realizar pruebas funcionales para indicar cuándo se debe aplicar la revisión de Windows Update en la secuencia de ejecución de sus scripts de prueba funcionales.
+
+:::image type="content" alt-text="Imagen de las opciones de prueba. Pruebas integradas o funcionales." source="Media/testoptions.png":::
+
+Seleccione _**Revisar**_ para ir a la pestaña siguiente y revisar las opciones de prueba seleccionadas.
+
+
+
+## <a name="review-your-selections-to-create-your-package"></a>Revise las selecciones para crear el paquete.
+
+1. En esta pestaña, el servicio muestra los detalles de la prueba y ejecuta una comprobación de integridad rápida.
+
+    Un mensaje **Validación pasada** o **Error de validación** muestra si puede continuar con los pasos siguientes o no.
+
+2. Revise los detalles de la prueba y, si está satisfecho, haga clic en el botón **Crear** .
+
+    :::image type="content" alt-text="Ver validación." source="Media/validation.png" lightbox="Media/validation.png":::
+
+3. Esto incorporará el paquete al entorno base de prueba. Si el paquete se crea correctamente, se desencadenará una prueba automatizada que compruebe si el paquete se puede ejecutar correctamente en Azure.
+
+    :::image type="content" alt-text="Resultado correcto." source="Media/successful.png":::
+
+    > [!NOTE]
+    > Recibirá una notificación de la Azure Portal para notificarle si la comprobación del paquete se ha realizado correctamente o no.
+    >
+    > Tenga en cuenta que el proceso puede tardar hasta 24 horas, por lo que es probable que su página web agote el tiempo de espera si no está activo en ella y, por lo tanto, la notificación no le informará de la finalización de esta ejecución a petición.
+
+    - Si esto sucede, puede ver el estado del paquete en la pestaña **Administrar paquetes** .
+
+      :::image type="content" alt-text="Imagen para administrar paquetes." source="Media/managepackages.png" lightbox="Media/managepackages.png":::
+
+    - En el caso de las pruebas correctas, sus resultados se pueden ver a través de las páginas **Resumen de pruebas**, **Resultados de actualizaciones de seguridad** y Resultados de **actualizaciones de características** a intervalos programados, a menudo a partir de unos días después de la carga.
+  
+    - Aunque se han producido errores en las pruebas, es necesario cargar un nuevo paquete. 
+
+      Puede descargar los **registros de prueba** para realizar un análisis posterior desde las páginas **Resultados de la actualización de seguridad** y **Resultados de actualizaciones de características** .
+
+    - Si experimenta errores de prueba repetidos, póngase en contacto con testbasepreview@microsoft.com con detalles del error.
+
 ## <a name="next-steps"></a>Siguientes pasos
 
-Nuestro siguiente artículo trata sobre la carga de archivos binarios en nuestro servicio.
+Descubra nuestras directrices de contenido a través del vínculo siguiente.
 
 > [!div class="nextstepaction"]
-> [Paso siguiente](binaries.md)
-
-<!---
-Add button for next page
--->
+> [Paso siguiente](contentguideline.md)
