@@ -453,6 +453,8 @@
               href: ome-sensitive-info-types.md
             - name: Administrar el cifrado de mensajes
               href: manage-office-365-message-encryption.md
+            - name: Registro de actividades del portal de mensajes cifrados
+              href: ome-message-access-logs.md
             - name: Cifrado avanzado de mensajes
               href: ome-advanced-message-encryption.md
             - name: Establecer una fecha de expiración para el correo electrónico cifrado mediante cifrado de mensajes avanzado de Microsoft Purview
@@ -467,6 +469,8 @@
               href: exchange-online-secures-email-secrets.md
             - name: Empleo de TLS por parte de Exchange Online para proteger las conexiones de correo electrónico en Office 365
               href: exchange-online-uses-tls-to-secure-email-connections.md
+            - name: Mejora del flujo de correo con MTA-STS
+              href: enhancing-mail-flow-with-mta-sts.md
             - name: Cómo funciona SMTP DANE
               href: how-smtp-dane-works.md
             - name: BitLocker y Administrador de claves distribuidas (DKM) para el cifrado

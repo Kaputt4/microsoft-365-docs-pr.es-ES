@@ -302,12 +302,20 @@
           href: air-report-false-positives-negatives.md
         - name: Revisión del administrador para los mensajes de los que se informe
           href: admin-review-reported-message.md
-        - name: Recuperación de un ataque de ransonmware
+        - name: Recuperarse de un ataque de ransomware
           href: recover-from-ransomware.md
         - name: Corregir correo electrónico malintencionado
           href: remediate-malicious-email-delivered-office-365.md
         - name: Responder a una cuenta de correo electrónico en peligro en Office 365
           href: responding-to-a-compromised-email-account.md
+        - name: Responder a un conector en peligro
+          href: respond-compromised-connector.md
+        - name: Quitar entidades bloqueadas
+          items:
+            - name: Quitar usuarios bloqueados
+              href: removing-user-from-restricted-users-portal-after-spam.md
+            - name: Quitar conectores bloqueados
+              href: remove-blocked-connectors.md
         - name: Revisar y aprobar (o rechazar) acciones pendientes
           href: air-review-approve-pending-completed-actions.md
         - name: Ajustar protección contra phishing
@@ -320,8 +328,6 @@
           href: quarantine-policies.md
         - name: Liberar mensajes en cuarentena de buzones compartidos
           href: view-and-release-quarantined-messages-from-shared-mailboxes.md
-        - name: Quitar usuarios bloqueados del portal de Usuarios restringidos
-          href: removing-user-from-restricted-users-portal-after-spam.md
         - name: Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados
           href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
     - name: Preguntas más frecuentes

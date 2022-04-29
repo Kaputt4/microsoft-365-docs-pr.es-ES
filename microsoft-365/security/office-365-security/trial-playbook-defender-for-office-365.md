@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Soluciones para la versión de prueba del cuaderno de estrategias de Microsoft Defender para Office 365
-ms.openlocfilehash: 1e943cc36d7a8787a41e16d61b15fe9e2eea129c
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: f23c45d117735997c219278621be7f314602cd8f
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474891"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130700"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>Versión de prueba del cuaderno de estrategias: Microsoft Defender para Office 365
 
@@ -38,8 +38,9 @@ Después de iniciar la prueba y completar el proceso de configuración, los camb
 
 Hemos configurado automáticamente las [Directivas de seguridad preestablecidas](preset-security-policies.md) en tu entorno. Estas directivas representan un perfil de protección de línea base adecuado para la mayoría de los usuarios. La protección estándar incluye:
 
-- Vínculos seguros, datos adjuntos seguros y directivas contra la suplantación de identidad que engloban a todo el espacio empresarial o al subconjunto de usuarios que hayas elegido durante el proceso de configuración de prueba.
-- Protección para SharePoint, OneDrive, aplicaciones de Office y Microsoft Teams.
+- Vínculos seguros, datos adjuntos seguros y directivas contra la suplantación de identidad que engloban todo el espacio empresarial o el subconjunto de usuarios que hayas elegido durante el proceso de configuración de prueba.
+- Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams.
+- Protección de vínculos seguros para aplicaciones de Office 365 compatibles.
 
 Mira este vídeo para obtener más información: [Protección contra vínculos malintencionados con Vínculos seguros en Microsoft Defender para Office 365 - YouTube](https://www.youtube.com/watch?v=vhIJ1Veq36Y&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=9).
 
@@ -75,7 +76,7 @@ Protege a los principales usuarios de destino y a los usuarios más visibles con
 
 Mira este vídeo para obtener más información: [Proteger las cuentas de prioridad en Microsoft Defender para Office 365 - YouTube](https://www.youtube.com/watch?v=tqnj0TlzQcI&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=11).
 
-:::image type="content" source="../../media/mdo-trial-playbook-alerts.png" alt-text="Alertas en el portal de Microsoft 365 Defender" lightbox="../../media/mdo-trial-playbook-alerts.png":::
+:::image type="content" source="../../media/mdo-trial-playbook-alerts.png" alt-text="Alertas en el portal de Microsoft 365 Defender." lightbox="../../media/mdo-trial-playbook-alerts.png":::
 
 ### <a name="avoid-costly-breaches-by-preventing-user-compromise"></a>Evita infracciones costosas al impedir que el usuario se vea en peligro
 
@@ -84,13 +85,13 @@ Recibe alertas sobre posibles peligros y limita automáticamente el impacto de e
 - Revisa las [alertas de usuarios en peligro](address-compromised-users-quickly.md#compromised-user-alerts).
 - [Investigar y responder](address-compromised-users-quickly.md) a usuarios en peligro.
 
-:::image type="content" source="../../media/mdo-trial-playbook-investigation.png" alt-text="Investigación de usuarios en peligro" lightbox="../../media/mdo-trial-playbook-investigation.png":::
+:::image type="content" source="../../media/mdo-trial-playbook-investigation.png" alt-text="Investigación de usuarios en peligro." lightbox="../../media/mdo-trial-playbook-investigation.png":::
 
 Mira este vídeo para obtener más información: [Detectar y responder a un peligro en Microsoft Defender para Office 365 - YouTube](https://www.youtube.com/watch?v=Pc7y3a-wdR0&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=5).
 
 ### <a name="use-threat-explorer-to-investigate-malicious-email"></a>Usa el Explorador de amenazas para investigar el correo electrónico malintencionado
 
-Defender para Office 365 permite investigar las actividades que ponen en peligro a las personas de la organización y tomar medidas para proteger la organización. Puedes hacerlo con el [Explorador de amenazas o (detecciones en tiempo real).](threat-explorer.md)
+Defender para Office 365 permite investigar las actividades que ponen en peligro a las personas de la organización y tomar medidas para proteger la organización. Puedes hacerlo con el [Explorador de amenazas o (detecciones en tiempo real)](threat-explorer.md)
 
 - [Buscar correo electrónico sospechoso que haya sido entregado](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered): buscar y eliminar mensajes, identificar la dirección IP de un remitente de correo electrónico malintencionado o abrir un incidente para una investigación posterior.
 - [Comprobar la acción de entrega y la ubicación](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): esta comprobación te permite conocer la ubicación de los mensajes de correo electrónico problemáticos.
@@ -104,7 +105,7 @@ Consulta la imagen más grande con Vistas de campaña en Defender para Office 36
 - [Visualizar el alcance](campaigns.md#campaign-views-in-the-microsoft-365-defender-portal) del ataque.
 - [Realizar un seguimiento de la interacción del usuario](campaigns.md#campaign-details) con estos mensajes.
 
-  :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="Detalles de la campaña en el portal de Microsoft 365 Defender" lightbox="../../media/mdo-trial-playbook-campaign-details.png":::
+  :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="Detalles de la campaña en el portal de Microsoft 365 Defender." lightbox="../../media/mdo-trial-playbook-campaign-details.png":::
 
 Mira este vídeo para obtener más información: [Vistas de campaña en Microsoft Defender para Office 365 - YouTube](https://www.youtube.com/watch?v=DvqzzYKu7cQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=14).
 
@@ -116,7 +117,7 @@ Responde de forma eficaz mediante la investigación y respuesta automatizadas (A
 - [Ver los detalles y resultados](email-analysis-investigations.md) de una investigación.
 - Elimina las amenazas [mediante la aprobación de acciones de corrección](air-remediation-actions.md).
 
-:::image type="content" source="../../media/mdo-trial-playbook-investigation-results.png" alt-text="Resultados de la investigación" lightbox="../../media/mdo-trial-playbook-investigation-results.png":::
+:::image type="content" source="../../media/mdo-trial-playbook-investigation-results.png" alt-text="Resultados de la investigación." lightbox="../../media/mdo-trial-playbook-investigation-results.png":::
 
 ## <a name="step-3-advanced-content"></a>Paso 3: Contenido avanzado
 
@@ -137,7 +138,7 @@ Proporciona los conocimientos adecuados a los usuarios para que identifiquen ame
 - [Asigna formación](attack-simulation-training.md#assign-training) a los usuarios en función de los resultados de la simulación.
 - [Realiza un seguimiento del progreso](attack-simulation-training-insights.md) de la organización en las simulaciones y la finalización de aprendizaje.
 
-  :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="Información sobre el aprendizaje mediante la simulación de ataques en el portal de Microsoft 365 Defender" lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
+  :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="Información sobre el aprendizaje mediante la simulación de ataques en el portal de Microsoft 365 Defender." lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
