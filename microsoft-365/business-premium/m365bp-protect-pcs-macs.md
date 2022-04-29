@@ -1,14 +1,14 @@
 ---
-title: Proteger equipos Windows 10 no administrados y Mac en Microsoft 365 Empresa Premium
+title: Protección de equipos Mac y Windows 10 no administrados en Microsoft 365 Empresa Premium
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,58 +23,54 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Proteja dispositivos no administrados o bring-your-own (BYOD) con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: b3d783ba498337af7ff867fe749366abe1734da5
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: MT
+description: Proteja dispositivos no administrados o sus propios dispositivos (BYOD) frente a ciberataques con Microsoft 365 Empresa Premium. Cómo configurar la ciberseguridad para equipos Windows y Mac.
+ms.openlocfilehash: a8b0fb278e4fb005d6e31d92521791134395b811
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331271"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094171"
 ---
-# <a name="protect-unmanaged-windows-10-pcs-and-macs-in-microsoft-365-business-premium"></a>Proteger equipos Windows 10 no administrados y Mac en Microsoft 365 Empresa Premium
+# <a name="protect-unmanaged-windows-10-pcs-and-macs-in-microsoft-365-business-premium"></a>Protección de equipos Mac y Windows 10 no administrados en Microsoft 365 Empresa Premium
 
-Puede administrar Windows 10 equipos y Mac inscribándolos en Microsoft Intune, lo que le permite asegurarse de que están en buen estado y seguros antes de acceder a los datos del entorno. Sin embargo, muchas campañas y pequeñas empresas incluyen personal que trae sus propios dispositivos (BYOD), que la organización no administrará. Para estos equipos y Mac no administrados, use este artículo para asegurarse de que se configuran las capacidades de seguridad mínimas.
+Este objetivo se centra en la creación de protección para los equipos Mac y Windows 10 no administrados que no estén inscritos en Microsoft Intune. Es muy probable que su pequeña empresa o campaña tenga personal que lleve sus propios dispositivos (BYOD) y estos dispositivos no estén administrados. Los BYOD incluyen teléfonos, tabletas y PC de propiedad personal. 
 
-<!--A Windows 10 PC is considered managed after you have completed the following two steps:
+>[!NOTE]
+>Cada usuario BYOD debe instalar y ejecutar la aplicación Portal de empresa de Intune para inscribir estos dispositivos y recibir acceso a los recursos de la empresa.
 
-1. You (or the admin) set up device and data protection policies in the [setup  wizard](../business/set-up.md).
-
-2. You have [connected your computer to Azure Active Directory](../business/set-up-windows-devices.md) and use your Microsoft 365 username and password to sign in.
-3. --> 
-
-## <a name="protect-a-computer-running-windows-10-or-a-mac"></a>Proteger un equipo que Windows 10 o un Mac
-
-<!--If you have a PC that is running Windows 10 that is not connected to Microsoft 365, or a Mac, the Microsoft 365 protections do not apply to it, but here are some things you can do to keep your data secure on these devices as well:
--->
-Si su Windows 10 pc o Mac no está administrado por su organización, asegúrese de configurar estas capacidades de seguridad.
+Es fundamental garantizar que los usuarios de primera línea siguen estas directrices para que las funcionalidades de seguridad mínimas estén configuradas en todos los dispositivos BYOD.
 
 ## <a name="windows-10"></a>[Windows 10](#tab/Windows10)
 
 **Activar el cifrado de dispositivos**<p>
+El cifrado de dispositivos está disponible en una amplia gama de dispositivos Windows y ayuda a proteger los datos cifrándolos. Si activa el cifrado de dispositivos, solo los usuarios autorizados podrán acceder al dispositivo y a los datos. Consulte [activar el cifrado de dispositivos](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) para obtener instrucciones.
 
-El cifrado de dispositivos está disponible en una amplia variedad de Windows dispositivos y ayuda a proteger los datos al cifrarlos. Si activas el cifrado de dispositivos, solo las personas autorizadas podrán acceder al dispositivo y a los datos. Consulta [Activar el cifrado de dispositivos](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) para obtener instrucciones.
-
- Si el cifrado de dispositivo no está disponible en el dispositivo, puedes activar el cifrado [estándar de BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) en su lugar. (BitLocker no está disponible en Windows 10 Home edición). 
+ Si el cifrado de dispositivos no está disponible en el dispositivo, puede activar el [cifrado BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) estándar en su lugar. (BitLocker no está disponible en la edición Windows 10 Home). 
 
 **Proteger el dispositivo con Seguridad de Windows**<p>
-Si tienes Windows 10, tendrás la protección antivirus más reciente con Seguridad de Windows. Cuando se inicia Windows 10 por primera vez, Seguridad de Windows activa y ayuda activamente a proteger el equipo mediante el examen de malware (software malintencionado), virus y amenazas de seguridad. Seguridad de Windows la protección en tiempo real para examinar todo lo que descarga o ejecuta en el equipo.
+Si tiene Windows 10, obtendrá la protección antivirus más reciente con Seguridad de Windows. Al iniciar Windows 10 por primera vez, Seguridad de Windows estará activado y ayudando constantemente a proteger el equipo mediante la detección de malware (software malintencionado), virus y amenazas de seguridad. Seguridad de Windows usa protección en tiempo real para analizar todo lo que descargue o ejecute en su equipo.
 
 Windows Update descarga automáticamente las actualizaciones de Seguridad de Windows para ayudar a mantener su equipo seguro y protegerlo contra amenazas.
 
-Si tienes una versión anterior de Windows y estás usando Microsoft Security Essentials, es una buena idea pasar a Seguridad de Windows. Para obtener más información, [consulta ayuda a proteger mi dispositivo con Seguridad de Windows](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security).
+Si tiene una versión anterior de Windows y usa Microsoft Security Essentials, es una buena idea pasar a Seguridad de Windows. Para obtener más información, consulte [ayuda proteger mi dispositivo con Seguridad de Windows](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security).
 
 **Activar el Firewall de Windows**<p>
-Siempre debe ejecutar el firewall Windows aunque tenga otro firewall activado. Desactivar Windows firewall podría hacer que el dispositivo (y la red, si tienes uno) sean más vulnerables al acceso no autorizado. Consulta [Activar o desactivar Windows firewall](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) para obtener instrucciones.
+Siempre debería ejecutar el Firewall de Windows aunque tenga otro firewall activado. Desactivar el Firewall de Windows puede hacer que su dispositivo (y la red, si tiene una) sea más vulnerable al acceso no autorizado. Consulte [Activar o desactivar Firewall de Windows](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) para obtener instrucciones.
+
+¡De acuerdo, misión completada! Ahora, vamos a trabajar en [proteger el sistema de correo electrónico](m365bp-protect-email-overview.md) contra la suplantación de identidad (phishing) y otros ataques.
 
 ## <a name="mac"></a>[Mac](#tab/Mac)
 
-**Usar FileVault para cifrar el disco mac**<p>
-El cifrado de disco protege los datos cuando se pierden o se roban dispositivos. El cifrado de disco completo de FileVault ayuda a evitar el acceso no autorizado a la información del disco de inicio. Consulta [Usar FileVault para cifrar el disco de inicio en tu Mac](https://support.apple.com/HT204837) para obtener instrucciones.
+**Usar FileVault para cifrar el disco Mac**<p>
+El cifrado de disco protege los datos cuando los dispositivos se extravían por pérdida o robo. El cifrado de disco completo de FileVault ayuda a impedir el acceso no autorizado a la información en el disco de inicio. Consulte [usar FileVault para cifrar el disco de inicio en su Mac](https://support.apple.com/HT204837) para obtener instrucciones.
 
-**Proteger el mac contra malware**<p>
-Microsoft recomienda instalar y usar software antivirus confiable en su Mac. Consulta el siguiente artículo para obtener una lista de opciones: [Best Mac antivirus 2019](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
+**Proteger su Mac frente al malware**<p>
+Microsoft le recomienda instalar y usar software antivirus fiable en su Mac. Consulte el siguiente artículo para obtener una lista de opciones: [Mejores antivirus Mac 2019](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
 
-También puede reducir el riesgo de malware mediante el uso de software solo desde orígenes confiables. La configuración de seguridad & Preferencias de privacidad te permiten especificar los orígenes de software instalados en tu Mac. Para obtener más información, [consulta Proteger tu Mac contra malware](https://support.apple.com/kb/PH25087).
+También puede reducir el riesgo de malware usando solo software de orígenes fiables. La configuración de preferencias de Seguridad y privacidad le permite especificar los orígenes del software instalado en su Mac. Para obtener más información, consulte [proteger el equipo Mac contra malware](https://support.apple.com/kb/PH25087).
 
 **Activar la protección de firewall**<p>
-Usa la configuración del firewall para proteger tu Mac de contactos no deseados iniciados por otros equipos cuando estás conectado a Internet o a una red. Sin esta protección, es posible que tu Mac sea más vulnerable al acceso no autorizado. Consulte [sobre el firewall de aplicaciones](https://support.apple.com/HT201642) para obtener instrucciones.
+Use la configuración de firewall para impedir contactos no deseados con su Mac iniciados por otros equipos cuando esté conectado a Internet o a una red. Sin esta protección su Mac podría ser más vulnerable al acceso no autorizado. Consulte [sobre la aplicación firewall](https://support.apple.com/HT201642) para obtener instrucciones.
+
+¡De acuerdo, misión completada! Ahora, vamos a trabajar en [proteger el sistema de correo electrónico](m365bp-protect-email-overview.md) contra la suplantación de identidad (phishing) y otros ataques.
+

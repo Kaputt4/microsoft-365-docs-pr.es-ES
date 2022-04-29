@@ -4,11 +4,11 @@ f1.keywords:
 - NOCSH
 ms.author: twerner
 author: twerner
-manager: scotv
+manager: dansimp
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,37 +24,37 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Comparte archivos y vídeos dentro de la campaña con Microsoft Teams y SharePoint.
-ms.openlocfilehash: fa76261377f4ae52a53a4ff2375afc670086a449
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
-ms.translationtype: MT
+description: Comparta archivos y vídeos dentro de su campaña con Microsoft Teams y SharePoint.
+ms.openlocfilehash: 5c371dea1c1e9d5768743072052825f0810938b9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62768066"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095130"
 ---
 # <a name="share-files-and-videos"></a>Compartir archivos y vídeos
 
-Cuando necesite controlar quién puede ver y quién puede editar los archivos, debe almacenar los archivos en una ubicación segura, donde puede asegurarse de que los permisos se aplican correctamente. Puede usar Microsoft Teams para almacenar los archivos y, a continuación, compartir los archivos dentro o fuera de su empresa, práctica o campaña mediante Microsoft Teams o enviando SharePoint vínculos. Enviar un vínculo en lugar de un archivo adjunto de correo electrónico significa que sabe quién está viendo y modificando los archivos, y no se pueden ver ni modificar sin su permiso.
+Otra cosa a la que hay que prestar atención es garantizar que todos los miembros de la organización controlan quién puede ver y editar archivos, y que se almacenan en una ubicación segura con los permisos adecuados aplicados. Los usuarios pueden usar Microsoft Teams para almacenar archivos y, a continuación, compartir los archivos dentro o fuera de la empresa, clínica o campaña mediante Microsoft Teams o enviando vínculos de SharePoint. El envío de un vínculo en lugar de datos adjuntos de correo electrónico significa que sabe quién está viendo y modificando los archivos, y no se pueden ver ni modificar sin permiso.
 
-![Diagrama de una ventana Microsoft Teams, que muestra la pestaña Archivos y el vínculo Obtener en el menú.](../media/m365-democracy-teams-sharefiles.png)
+![Diagrama de una ventana de Microsoft Teams, que muestra la pestaña Archivos y Obtener vínculo en el menú.](../media/m365-democracy-teams-sharefiles.png)
 
-Con los archivos en Microsoft Teams y SharePoint, también puede trabajar en los archivos juntos y revisar los cambios entre sí. Usa Microsoft Teams para compartir archivos dentro de una empresa, práctica o campaña. Si necesita compartir externamente con personas fuera de su organización, puede agregarlas como invitados a un equipo o enviarles un vínculo de SharePoint seguridad.
+Con los archivos de Microsoft Teams y SharePoint, los archivos también se pueden trabajar y revisar juntos, incluso realizar un seguimiento de los cambios según sea necesario. En Teams, los archivos se comparten dentro de una empresa, clínica médica o campaña. Si necesita compartirlos externamente con personas ajenas a su organización, puede agregarlos como invitados a un equipo o enviarles un vínculo seguro de SharePoint.
 
-También puedes usar Microsoft Stream para almacenar y compartir vídeos internamente. Estos vídeos no se pueden ver al público, por lo que son ideales para la mensajería de campaña interna.
+También puede usar Microsoft Stream para almacenar y compartir vídeos internamente. Estos vídeos no son visibles para el público, por lo que son ideales para la mensajería interna de la empresa o de la campaña.
 
 ## <a name="best-practices"></a>Procedimientos recomendados
 
-Use estos métodos para compartir archivos y vídeos de forma segura:
+Asegúrese de que los usuarios usan estos métodos para compartir archivos y vídeos de forma segura:
 
-1. Almacena archivos en Microsoft Teams o SharePoint y asegúrate de que solo las personas que necesitan acceso a esos archivos los tengan.
-2. Cuando quiera compartir, no adjunte archivos a un correo electrónico. En su lugar, elija **Obtener vínculo** Microsoft Teams o SharePoint y envíe el vínculo por correo electrónico.
+1. Almacene archivos en Microsoft Teams o SharePoint y asegúrese de que solo los usuarios que necesitan acceso a esos archivos los tengan.
+2. Cuando quiera compartir, no adjunte archivos a un correo electrónico. En su lugar, elija **Obtener vínculo** desde Microsoft Teams o SharePoint y envíe el vínculo por correo electrónico.
 3. Para compartir un archivo externamente, agregue el usuario como invitado a su equipo o use SharePoint para obtener un vínculo seguro para compartir solo ese archivo.
-4. Usa Microsoft Stream para hospedar vídeos que quieras que vea la campaña.
-5. Usa Microsoft Teams o SharePoint para almacenar archivos de vídeo que necesites que tu equipo colabore o comparta.
+4. Use Microsoft Stream para hospedar vídeos que quiera que vea su campaña.
+5. Use Microsoft Teams o SharePoint para almacenar archivos de vídeo en los que necesite que su equipo colabore o comparta.
 
 ## <a name="set-up"></a>Configurar
 
-Para crear un equipo y agregar invitados, como anunciantes o socios de financiación, siga estos pasos.
+Los miembros de la organización pueden crear un equipo y agregarle invitados como anunciantes o socios colaboradores, con los pasos siguientes.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
@@ -66,6 +66,11 @@ Para crear y compartir vídeos, siga estos pasos.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
 
-Descargue una infografía en [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) [o PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) obtener una introducción rápida de las formas de compartir sus archivos.
+Descargue una infografía en [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) o [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) para obtener información general rápida sobre las formas de compartir los archivos.
 
-[![Ilustración de compartir archivos con diferentes usuarios.](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)
+[![Ilustración del uso compartido de archivos con distintos usuarios.](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)
+
+## <a name="next-objective"></a>Siguiente objetivo
+
+Tras la finalización de este objetivo, [cree un sitio de comunicación](create-communications-site.md) para su equipo.
+
