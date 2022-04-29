@@ -16,12 +16,12 @@ ms.date: 06/10/2021
 description: Obtenga información sobre cómo acelerar el proceso de detección y direccionamiento de cuentas de usuario en peligro con funcionalidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fdbb88d38b94ac48b2bbd2a447c76ee7d79d24a
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: a8c78847e36d4a4887c4f7a3c54904cc26a012e5
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974177"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131160"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Abordar las cuentas de usuario en peligro con una investigación y respuesta automatizadas
 
@@ -91,7 +91,7 @@ Para más información, consulte [Visualización de los detalles de una investig
 
 - **No confíe en una alerta de inicio de sesión sospechosa como único indicador**. Cuando una cuenta de usuario está en peligro, es posible que desencadene o no una alerta de inicio de sesión sospechosa. A veces es la serie de actividades que se producen después de que una cuenta está en peligro lo que desencadena una alerta. ¿Desea obtener más información sobre las alertas? Consulte [Directivas de alerta](../../compliance/alert-policies.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Revisión de los permisos necesarios para usar las funcionalidades de AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 

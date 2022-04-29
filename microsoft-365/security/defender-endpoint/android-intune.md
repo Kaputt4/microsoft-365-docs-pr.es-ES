@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 461664cc72486a49e5b7bd9be44235559409adff
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: e5f38f701c865ad337bd04cb731ba40e00bf6118
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825294"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130463"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Implementar Microsoft Defender para punto de conexión en Android con Microsoft Intune
 
@@ -261,6 +261,63 @@ El perfil de configuración del dispositivo ahora se asigna al grupo de usuarios
 4. En esta fase, el dispositivo se incorpora correctamente a Defender para punto de conexión en Android. Para comprobarlo en el [portal de Microsoft 365 Defender](https://security.microsoft.com), vaya a la página **Inventario** de dispositivos.
 
     :::image type="content" source="images/9fe378a1dce0f143005c3aa53d8c4f51.png" alt-text="El portal de Microsoft Defender para punto de conexión" lightbox="images/9fe378a1dce0f143005c3aa53d8c4f51.png":::
+
+## <a name="set-up-microsoft-defender-in-personal-profile-on-android-enterprise-in-byod-mode"></a>Configuración de Microsoft Defender en perfil personal en Android Enterprise en modo BYOD
+
+>[!NOTE]
+>La compatibilidad con Microsoft Defender en perfil personal en Android Enterprise (AE) en el modo Bring-Your-Own-Device (BYOD) está ahora en versión preliminar pública. La siguiente información se refiere al producto preliminar que puede modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+
+Con la compatibilidad con Microsoft Defender en perfiles personales de Android, los dispositivos de usuario se pueden proteger contra ataques de phishing y malware en un perfil personal que podría poner en peligro los recursos corporativos en el perfil de trabajo. 
+
+**Configuración de Microsoft Defender en perfil personal**
+
+Los administradores pueden ir al [Centro de administración de Microsoft Endpoint Management](https://endpoint.microsoft.com) para configurar y configurar la compatibilidad con Microsoft Defender en perfiles personales siguiendo estos pasos:
+1. Vaya a **Aplicaciones> Directivas de configuración de aplicaciones** y haga clic en **Agregar**. Seleccione **Dispositivos administrados**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Imagen de la adición de la directiva de configuración de aplicaciones.](images/addpolicy.png)
+
+1.  Escriba **Name (Nombre** ) y **Description (Descripción** ) para identificar de forma única la directiva de configuración. Seleccione plataforma como **"Android Enterprise"**, Tipo de perfil como **"Solo perfil de trabajo de propiedad personal"** y Aplicación dirigida como **"Microsoft Defender"**.
+ 
+    > [!div class="mx-imgBorder"]
+    > ![Imagen de la directiva de configuración de nomenclatura.](images/selectapp.png)
+
+1. En la página de configuración, en **"Formato de configuración"**, seleccione **"Usar diseñador de configuración"** y haga clic en **Agregar**. En la lista de configuraciones que se muestran, seleccione **"Microsoft Defender en perfil personal"**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Imagen de la configuración del perfil personal.](images/addconfiguration.png)
+
+1. Se mostrará la configuración seleccionada. Cambie el **valor de configuración a 1** para habilitar los perfiles personales de soporte técnico de Microsoft Defender. Aparecerá una notificación informando al administrador sobre lo mismo. Haga clic en **Siguiente**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Imagen del cambio del valor de configuración.](images/changeconfigvalue.png)
+
+1. **Asigne** la directiva de configuración a un grupo de usuarios. **Revise y cree** la directiva.
+
+    > [!div class="mx-imgBorder"]
+    > ![Imagen de revisión y creación de directivas.](images/savepolicy.png)
+
+Los administradores también pueden configurar **controles de privacidad** desde el centro de administración de Microsoft Endpoint Manager para controlar qué datos puede enviar el cliente móvil de Defender al portal de seguridad. Para obtener más información, consulte [configuración de controles de privacidad](android-configure.md).
+
+Las organizaciones pueden comunicarse con sus usuarios para proteger el perfil personal con Microsoft Defender en sus dispositivos BYOD inscritos.
+- Requisito previo: Microsoft Defender ya debe estar instalado y activo en el perfil de trabajo para habilitar Microsoft Defender en perfiles personales.
+
+**Para completar la incorporación de un dispositivo**
+1.  Instale la aplicación de Microsoft Defender en un perfil personal con una cuenta personal de Google Play Store.
+2.  Instale la aplicación portal de empresa en el perfil personal. No se requiere ningún inicio de sesión.
+3.  Cuando un usuario inicie la aplicación, verá la pantalla de inicio de sesión. **Inicie sesión solo con una cuenta corporativa**.
+4.  En un inicio de sesión correcto, los usuarios verán las siguientes pantallas:
+
+    a.  **Pantalla EULA**: solo se presenta si el usuario no ha dado su consentimiento en el perfil de trabajo.
+
+    b.  **Pantalla de aviso**: los usuarios deben proporcionar consentimiento en esta pantalla para avanzar con la incorporación de la aplicación. Esto solo es necesario durante la primera ejecución de la aplicación.
+5.  Proporcione los permisos necesarios para completar la incorporación.
+
+>[!NOTE]
+>**Requisito previo:**
+ >1. El portal de empresa debe estar habilitado en el perfil personal.
+ >2. Microsoft Defender debe estar ya instalado y activo en el perfil de trabajo.
+
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Obtenga información sobre cómo usar límites de cumplimiento para crear límites lógicos que controlen las ubicaciones de contenido del usuario que un administrador de exhibición de documentos electrónicos puede buscar en Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36a7f1e679f404a77b61c30b8efef7875558fee9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 52f4a66ffbab37109e7503181548b1de4ffac87a
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099199"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128791"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configuración de límites de cumplimiento para las investigaciones de eDiscovery
 
@@ -286,8 +286,6 @@ Tenga en cuenta las siguientes limitaciones al administrar casos e investigacion
 
 - Los límites de cumplimiento no se aplican a las retenciones en casos de exhibición de documentos electrónicos. Eso significa que un administrador de eDiscovery en una agencia puede poner a un usuario en una agencia distinta en espera. Sin embargo, se aplicará el límite de cumplimiento si el administrador de eDiscovery busca las ubicaciones de contenido del usuario que se ha colocado en espera. Esto significa que el administrador de eDiscovery no podrá buscar en las ubicaciones de contenido del usuario, incluso aunque colocaron al usuario en espera.
 
-    Además, las estadísticas de retención solo se aplicarán a las ubicaciones de contenido de la agencia.
-
 - Si se le asigna un filtro de permisos de búsqueda (un buzón o un filtro de sitio) e intenta exportar elementos sin indexar para una búsqueda que incluye todos los sitios SharePoint de su organización, recibirá el siguiente mensaje de error: `Unable to execute the task. Reason: The scope options UnindexedItemsOnly or BothIndexedandUnindexedItems are not allowed when the executing user has a compliance security filter applied`. Si se le asigna un filtro de permisos de búsqueda y desea exportar elementos sin indexar desde SharePoint, tendrá que volver a ejecutar la búsqueda e incluir sitios de SharePoint específicos para buscar. De lo contrario, solo podrá exportar elementos indizados desde una búsqueda que incluya todos los sitios SharePoint. Para obtener más información sobre las opciones al exportar resultados de búsqueda, vea [Exportar resultados de búsqueda de contenido](export-search-results.md#step-1-prepare-search-results-for-export).
 
 - Los filtros de permisos de búsqueda no se aplican a las carpetas públicas de Exchange.
@@ -302,7 +300,7 @@ Tenga en cuenta las siguientes limitaciones al administrar casos e investigacion
 
 - No se recomienda usar filtros de exclusión (como usar `-not()` en un filtro de permisos de búsqueda) para un límite de cumplimiento basado en contenido. El uso de un filtro de exclusión puede tener resultados inesperados si no se ha indexado el contenido con atributos actualizados recientemente.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **Quién puede crear y administrar filtros de permisos de búsqueda (mediante cmdlets de New-ComplianceSecurityFilter y Set-ComplianceSecurityFilter)?**
   

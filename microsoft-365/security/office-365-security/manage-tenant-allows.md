@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar los permisos en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad2ef693848b664be6ec9b48cc4fc320a8b4b9c2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 413209bdecef19c4d101162f0e23f24ff1a2903e
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090152"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129252"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Agregar permisos a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -57,6 +57,13 @@ Permitir remitentes (o dominios) en la página **Envíos** de Microsoft 365 Defe
 
 > ![Envíe malware a Microsoft para el ejemplo de análisis.](../../media/admin-submission-allow-messages.png)
 
+
+> [!NOTE]
+>
+> - En función de los filtros que determinaron que el correo fuera malintencionado, durante el flujo de correo, se agregan las permite. Por ejemplo, si los filtros encontraron que el remitente y la dirección URL son incorrectos, se agregará un permiso para cada uno. 
+> - Cuando esa entidad (remitente, dominio, dirección URL, archivo) vuelve a encontrarse, se omiten todos los filtros asociados a esa entidad.
+> - Por lo tanto, para un correo electrónico (que contiene esta entidad), durante el flujo de correo, si el resto de los filtros encuentran que el correo electrónico está limpio, se entregará el correo electrónico.
+
 ## <a name="add-url-allows-using-the-submissions-portal"></a>Agregar dirección URL permite usar el portal envíos
 
 Permitir direcciones URL en la página **Envíos** de Microsoft 365 Defender.
@@ -78,6 +85,13 @@ Permitir direcciones URL en la página **Envíos** de Microsoft 365 Defender.
 > [!div class="mx-imgBorder"]
 > ![Envíe la dirección URL para su análisis.](../../media/submit-url-for-analysis.png)
 
+
+> [!NOTE]
+>
+> -  Cuando se vuelve a encontrar la dirección URL, la dirección URL no se envía para las comprobaciones de detonación o reputación y se omiten todos los demás filtros basados en direcciones URL.
+> -  Por lo tanto, para un correo electrónico (que contiene esta dirección URL), durante el flujo de correo, si el resto de los filtros encuentran que el correo electrónico está limpio, se entregará el correo electrónico.
+
+
 ## <a name="add-file-allows-using-the-submissions-portal"></a>Agregar archivo permite usar el portal envíos
 
 Permitir archivos en la página **Envíos** de Microsoft 365 Defender.
@@ -98,6 +112,12 @@ Permitir archivos en la página **Envíos** de Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
 > ![Enviar correo electrónico para su análisis.](../../media/submit-email-for-analysis.png)
+
+
+> [!NOTE]
+>
+> - Cuando se vuelve a encontrar el archivo, no se envía para las comprobaciones de detonación o reputación y se omiten todos los demás filtros basados en archivos.
+> - Por lo tanto, para un correo electrónico (que contiene este archivo), durante el flujo de correo, si el resto de los filtros encuentran que el correo electrónico está limpio, se entregará el correo electrónico. 
 
 ## <a name="create-spoofed-sender-allow-entries-using-microsoft-365-defender"></a>Creación de entradas permitidas del remitente suplantado mediante Microsoft 365 Defender
 

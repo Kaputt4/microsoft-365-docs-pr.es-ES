@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Inquilinos.
-ms.openlocfilehash: 7b8e26ddbe68059a9c5ecf4d5e396fd11c49be71
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 0f25f8bb02c6957598b2b328bc7832c429ca1e7a
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023291"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128382"
 ---
 # <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>Información general de la página Inquilinos de Microsoft 365 Lighthouse
 
@@ -52,9 +52,11 @@ La lista de inquilinos le permite:
 
 Para desactivar el inquilino o ver y administrar etiquetas, seleccione los tres puntos (más acciones) junto al nombre del inquilino. Puede ver inquilinos individuales seleccionando el nombre del inquilino o seleccionando una de las etiquetas asignadas al inquilino.
 
+Para obtener información sobre cómo agregar inquilinos, consulte [Agregar y administrar varios inquilinos en la cuenta del Centro](/partner-center/multi-tenant-account) de partners.
+
 ## <a name="tenant-status"></a>Estado de espacio empresarial
 
-En la tabla siguiente se muestran los distintos estados y su significado.<br><br>
+En la tabla siguiente se muestran los distintos estados y su significado. Para obtener información sobre cómo solucionar problemas de estado de inquilino de cliente, consulte [Solución de problemas y mensajes de error en Microsoft 365 Lighthouse: Incorporación de inquilinos del cliente](m365-lighthouse-troubleshoot.md#customer-tenant-onboarding).<br><br>
 
 | Estado                                   | Descripción                                                                                             |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------|

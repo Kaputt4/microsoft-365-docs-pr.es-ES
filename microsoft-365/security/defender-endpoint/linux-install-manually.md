@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a0f499a08288735d5f0d75e7111ec0b6360908a8
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: b467d87f16900375ca2db2f8478bf001780c9059
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664532"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130349"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementación manual de Microsoft Defender para punto de conexión en Linux
 
@@ -302,7 +302,7 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal.
 
 1. En el portal de Microsoft 365 Defender, vaya a **Configuración > Puntos de conexión > Administración de dispositivos > Incorporación**.
 2. En el primer menú desplegable, seleccione **Servidor Linux** como sistema operativo. En el segundo menú desplegable, seleccione **Script local** como método de implementación.
-3. Seleccione **Descargar paquete de incorporación**. Guarde el archivo como WindowsDefenderATPOnboardingPackage.zip.
+3. Seleccione **Descargar el paquete de incorporación** Guarde el archivo como WindowsDefenderATPOnboardingPackage.zip.
 
    :::image type="content" source="images/portal-onboarding-linux.png" alt-text="Descarga de un paquete de incorporación en el portal de Microsoft 365 Defender" lightbox="images/portal-onboarding-linux.png":::
 
@@ -323,12 +323,12 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal.
 
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
+    inflating: MicrosoftDefenderATPOnboardingLinuxServer.sh
     ```
 
 ## <a name="client-configuration"></a>Configuración de clientes
 
-1. Copie MicrosoftDefenderATPOnboardingLinuxServer.py en el dispositivo de destino.
+1. Copie MicrosoftDefenderATPOnboardingLinuxServer.sh en el dispositivo de destino.
 
     > [!NOTE]
     > Inicialmente, el dispositivo cliente no está asociado a una organización y el atributo *orgId* está en blanco.
@@ -337,21 +337,10 @@ Descargue el paquete de incorporación desde Microsoft 365 Defender portal.
     mdatp health --field org_id
     ```
 
-2. Ejecute MicrosoftDefenderATPOnboardingLinuxServer.py.
-
-    > [!NOTE]
-    > Para ejecutar este comando, debe tener `python`  o `python3` instalar en el dispositivo en función de la versión y la disto. Si es necesario, consulte [Instrucciones paso a paso para instalar Python en Linux](https://opensource.com/article/20/4/install-python-linux).
-    
-    Si ejecuta RHEL 8.x o Ubuntu 20.04 o posterior, deberá usar `python3`.
+2. Ejecute MicrosoftDefenderATPOnboardingLinuxServer.sh.
 
     ```bash
-    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
-    ```
-
-    Para el resto de distribuciones y versiones, deberá usar `python`.
-    
-    ```bash
-    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
+    sudo bash MicrosoftDefenderATPOnboardingLinuxServer.sh
     ```
     
 3. Compruebe que el dispositivo ahora está asociado a su organización e informa de un identificador de organización válido:
@@ -466,6 +455,6 @@ Consulte [Problemas de instalación](linux-resources.md#log-installation-issues)
 
 Consulte [Desinstalación](linux-resources.md#uninstall) para obtener más información sobre cómo quitar Defender para punto de conexión en Linux de los dispositivos cliente.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Investigar problemas de estado del agente](health-status.md)

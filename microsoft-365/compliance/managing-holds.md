@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 04/27/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -21,12 +21,12 @@ description: Obtenga información sobre cómo colocar retenciones en los custodi
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkMAC
-ms.openlocfilehash: c2213c34e111989f0de6fccf886f44dd0f45841b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: bc69481c8d59408ce22c238fc80d8ceb67685cf9
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098502"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128398"
 ---
 # <a name="manage-holds-in-ediscovery-premium"></a>Administrar retenciones en eDiscovery (Premium)
 
@@ -46,7 +46,7 @@ Para ver la directiva de suspensión del custodio:
 
 3. Vaya a la pestaña **Retenciones** y haga clic en **CustodianHold\<HoldId>**.
 
-4. En la página de control flotante, puede ver las estadísticas de suspensión de la directiva. También puede realizar acciones como aplicar una consulta a la suspensión basada en el custodio. Para obtener más información sobre cómo crear una consulta de suspensión y usar condiciones, vea [Consultas de palabras clave y condiciones de búsqueda para búsqueda de contenido](keyword-queries-and-search-conditions.md).
+4. En la página de control flotante, puede realizar acciones como aplicar una consulta a la suspensión basada en el custodio. Para obtener más información sobre cómo crear una consulta de suspensión y usar condiciones, vea [Consultas de palabras clave y condiciones de búsqueda para búsqueda de contenido](keyword-queries-and-search-conditions.md).
 
 ## <a name="manage-non-custodial-holds"></a>Administración de retenciones sin custodia
 
@@ -105,24 +105,6 @@ Para crear una suspensión sin custodia para un caso de exhibición de documento
 
 > [!NOTE]
 > Si la dirección SMTP del usuario cambia después de colocar el buzón del usuario en espera, el buzón permanecerá en espera. Para usar la nueva dirección SMTP para colocar la suspensión, cree una nueva suspensión.
-
-## <a name="view-hold-statistics"></a>Visualización de estadísticas de retención
-
-Después de algún tiempo, la información sobre la nueva suspensión se muestra en el panel de detalles de la pestaña **Retenciones** de la retención seleccionada. Esta información incluye el número de buzones y sitios en espera y estadísticas sobre el contenido que se ha colocado en suspensión, como el número total y el tamaño de los elementos colocados en espera y la última vez que se calcularon las estadísticas de retención. Estas estadísticas de retención le ayudan a identificar la cantidad de contenido relacionado con el caso de eDiscovery que se mantiene.
-
-Tenga en cuenta lo siguiente sobre las estadísticas de retención:
-
-- El número total de elementos en espera indica el número de elementos de todos los orígenes de contenido que se colocan en suspensión. Si ha creado una retención basada en consultas, esta estadística indica el número de elementos que coinciden con la consulta.
-  
-- El número de elementos en espera también incluye los elementos no indexados que se encuentran en las ubicaciones de contenido. Si crea una suspensión basada en consultas, todos los elementos no indexados de las ubicaciones de contenido se colocan en suspensión. Esto incluye elementos sin indexar que no coinciden con los criterios de búsqueda de una retención basada en consultas y elementos sin indexar que podrían estar fuera de una condición de intervalo de fechas. Esto es diferente de lo que sucede cuando se ejecuta una búsqueda de contenido, en la que los elementos sin indexar que no coinciden con la consulta de búsqueda o que están excluidos por una condición de intervalo de fechas no se incluyen en los resultados de la búsqueda. Para obtener más información sobre los elementos sin indexar, vea [Elementos indizados parcialmente en búsqueda de contenido en Office 365](partially-indexed-items-in-content-search.md).
-
-- Para obtener las estadísticas de retención más recientes, haga clic en Actualizar estadísticas para volver a ejecutar una estimación de búsqueda que calcule el número actual de elementos en espera.
-
-- Si es necesario, haga clic en Actualizar en la barra de herramientas para actualizar las estadísticas de suspensión en el panel de detalles.
-
-- Es normal que el número de elementos en espera aumente con el tiempo porque los usuarios cuyo buzón de correo o sitio está en espera suelen enviar o recibir nuevos mensajes de correo electrónico y crear nuevos documentos SharePoint y OneDrive para la Empresa.
-
-- Si un sitio de SharePoint o una cuenta de OneDrive se mueve a una región diferente en un entorno multigeográfico, las estadísticas de ese sitio no se incluirán en las estadísticas de suspensión. Sin embargo, el contenido del sitio seguirá en espera. Además, si un sitio se mueve a otra región, la dirección URL que se muestra en la suspensión no se actualizará. Tendrá que editar la suspensión y actualizar la dirección URL.
 
 ## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>Mantener Microsoft Teams y Office 365 Grupos
 

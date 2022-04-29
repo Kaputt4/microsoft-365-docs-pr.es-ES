@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Use la movilidad básica y la seguridad integradas para quitar información de los dispositivos inscritos.
-ms.openlocfilehash: 932380b735e3fea2543832417e7911e9216f70fc
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 959e785958dd6d447713507ee9c48763b814db78
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780806"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129098"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Borrado de un dispositivo móvil en Basic Mobility and Security
 
@@ -46,7 +46,7 @@ Los dispositivos móviles pueden almacenar información confidencial de la organ
 
 ## <a name="wipe-a-mobile-device"></a>Borrar un dispositivo móvil
 
-1. Ve al [Centro de administración de Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
+1. Ve al [Centro de administración de Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
 
 2. Escriba Mobile Administración de dispositivos en el campo de búsqueda y seleccione **Mobile Administración de dispositivos** en la lista de resultados.
 

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Obtenga información sobre cómo configurar la opción de versión para nuevas actualizaciones de productos y características en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 67c6fe3f08549424c725589a50c647a876c151af
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 176558448f31fadea0b0cf865bca5d1156e3eefe
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022457"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129428"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configuración de las opciones de versión estándar o de destino
 
@@ -47,7 +47,7 @@ Cualquier nueva versión se prueba y valida primero por el equipo de caracterís
 En el caso de actualizaciones significativas, la hoja de [ruta de Microsoft 365](https://products.office.com/business/office-365-roadmap) notifica inicialmente a los clientes. A medida que una actualización se acerca a la implementación, se comunica a través del [centro de mensajes de Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
 > [!NOTE]
-> Necesita una cuenta de Microsoft 365 o Azure AD para acceder al Centro de mensajes a través del [centro de administración](/office365/admin/admin-overview/about-the-admin-center). Microsoft 365 los usuarios del plan principal no tienen un centro de administración.
+> Necesita una cuenta de Microsoft 365 o Azure AD para acceder al Centro de mensajes a través del [centro de administración](/office365/admin/admin-overview/admin-center-overview). Microsoft 365 los usuarios del plan principal no tienen un centro de administración.
 
 ## <a name="standard-release"></a>Versión estándar
 
@@ -110,7 +110,7 @@ Para cambiar la forma en que la organización recibe actualizaciones Microsoft 3
     
 9. Cuando haya terminado de agregar usuarios, seleccione **Guardar cambios**.
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Descubra cómo [administrar mensajes](/office365/admin/manage/message-center) en [el centro de mensajes de Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) para obtener notificaciones sobre las próximas actualizaciones y versiones de Microsoft 365.
 

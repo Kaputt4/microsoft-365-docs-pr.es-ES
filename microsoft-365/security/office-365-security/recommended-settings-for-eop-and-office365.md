@@ -19,12 +19,12 @@ ms.collection:
 description: ¿Cuáles son los procedimientos recomendados para Exchange Online Protection (EOP) y Defender para Office 365 configuración de seguridad? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué se debe usar si desea ser más estricto? ¿Y qué extras obtienes si también usas Defender para Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a5e18547a26d688238f5d4be94520d4e68c9ff4
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 72d4f64ca00defe26ddaff7fe27d641cb65f13be
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916345"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130525"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada de seguridad para EOP y Microsoft Defender para Office 365
 
@@ -43,10 +43,16 @@ Para aplicar automáticamente la configuración estándar o estricta a los usuar
 
 En este artículo se describen la configuración predeterminada y también la configuración estándar y estricta recomendada para ayudar a proteger a los usuarios. Las tablas contienen la configuración del portal de Microsoft 365 Defender y PowerShell (Exchange Online PowerShell o PowerShell Exchange Online Protection independiente para organizaciones sin buzones de Exchange Online).
 
-> [!TIP]
-> No puede cambiar la configuración estándar y estricta recomendada en el portal de Microsoft 365 Defender. Para cambiar los valores recomendados, como **Habilitar la protección de los usuarios**, debe usar [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
->
+> [!NOTE]
 > El módulo Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) para PowerShell puede ayudarle (los administradores) a encontrar los valores actuales de esta configuración. En concreto, el cmdlet **Get-ORCAReport** genera una evaluación de la configuración de protección contra el correo no deseado, la suplantación de identidad (phishing) y otras configuraciones de higiene de mensajes. Puede descargar el módulo ORCA en <https://www.powershellgallery.com/packages/ORCA/>.
+>
+> En Microsoft 365 organizaciones, se recomienda dejar el filtro de correo no deseado en Outlook establecido en **Sin filtrado automático** para evitar conflictos innecesarios (positivos y negativos) con los veredictos de filtrado de correo no deseado de EOP. Para más información, consulte los siguientes artículos:
+>
+> - [Configurar las opciones del correo no deseado en buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md)
+> - [Acerca de la configuración del correo no deseado en Outlook](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)
+> - [Cambiar el nivel de protección en el filtro correo no deseado](https://support.microsoft.com/en-us/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
+> - [Creación de listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md)
+> - [Creación de listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md)
 
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>Protección contra correo no deseado, antimalware y contra suplantación de identidad (phishing) en EOP
 
@@ -117,8 +123,8 @@ Para obtener más información sobre los límites de envío predeterminados en e
 |Nombre de la característica de seguridad|Predeterminada|Recomendado<br/>Estándar|Recomendado<br/>Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Establecimiento de un límite de mensajes externos** <br/><br/> _RecipientLimitExternalPerHour_|0|500|400|El valor predeterminado 0 significa usar los valores predeterminados del servicio.|
-|**Establecimiento de un límite de mensajes interno** <br/><br/> _RecipientLimitInternalPerHour_|0|1000|800|El valor predeterminado 0 significa usar los valores predeterminados del servicio.|
-|**Establecer un límite de mensajes diario** <br/><br/> _RecipientLimitPerDay_|0|1000|800|El valor predeterminado 0 significa usar los valores predeterminados del servicio.|
+|**Establecimiento de un límite de mensajes interno** <br/><br/> _RecipientLimitInternalPerHour_|0|1 000|800|El valor predeterminado 0 significa usar los valores predeterminados del servicio.|
+|**Establecer un límite de mensajes diario** <br/><br/> _RecipientLimitPerDay_|0|1 000|800|El valor predeterminado 0 significa usar los valores predeterminados del servicio.|
 |**Restricción impuesta a los usuarios que alcanzan el límite de mensajes** <br/><br/> _ActionWhenThresholdReached_|**Restringir al usuario el envío de correo hasta el día siguiente** <br/><br/> `BlockUserForToday`|**Restricción del envío de correo por parte del usuario** <br/><br/> `BlockUser`|**Restricción del envío de correo por parte del usuario** <br/><br/> `BlockUser`||
 |**Reglas de reenvío automático** <br/><br/> _AutoForwardingMode_|**Automático: controlado por el sistema** <br/><br/> `Automatic`|**Automático: controlado por el sistema** <br/><br/> `Automatic`|**Automático: controlado por el sistema** <br/><br/> `Automatic`|
 |**Enviar una copia de mensajes salientes que superen estos límites a estos usuarios y grupos** <br/><br/> _BccSuspiciousOutboundMail_ <br/><br/> _BccSuspiciousOutboundAdditionalRecipients_|No seleccionada <br/><br/> `$false` <br/><br/> En blanco|No seleccionada <br/><br/> `$false` <br/><br/> En blanco|No seleccionada <br/><br/> `$false` <br/><br/> En blanco|No tenemos ninguna recomendación específica para esta configuración. <br/><br/> Esta configuración solo funciona en la directiva de correo no deseado saliente predeterminada. No funciona en las directivas de correo no deseado saliente personalizadas que cree.|
@@ -147,7 +153,7 @@ Para crear y configurar directivas antimalware, consulte [Configurar directivas 
 |**Nombre De** <br/><br/> _CustomFromName_|En blanco <br/><br/> `$null`|En blanco <br/><br/> `$null`|En blanco <br/><br/> `$null`||
 |**Dirección de origen** <br/><br/> _CustomFromAddress_|En blanco <br/><br/> `$null`|En blanco <br/><br/> `$null`|En blanco <br/><br/> `$null`||
 |**Personalización de notificaciones para mensajes de remitentes internos**||||Esta configuración solo se usa si se selecciona **Notificar a los remitentes internos cuando los mensajes se ponen en cuarentena como malware** o **Notificar a un administrador acerca de los mensajes no entregados de remitentes internos** .|
-|**Subject** <br/><br/> _CustomInternalSubject_|En blanco <br/><br/> `$null`|En blanco <br/><br/> `$null`|En blanco <br/><br/> `$null`||
+|**Asunto** <br/><br/> _CustomInternalSubject_|En blanco <br/><br/> `$null`|En blanco <br/><br/> `$null`|En blanco <br/><br/> `$null`||
 |**Mensaje** <br/><br/> _CustomInternalBody_|En blanco <br/><br/> `$null`|En blanco <br/><br/> `$null`|En blanco <br/><br/> `$null`||
 |**Personalización de notificaciones para mensajes de remitentes externos**||||Esta configuración solo se usa si se selecciona **Notificar a remitentes externos cuando los mensajes se ponen en cuarentena como malware** o **Notificar a un administrador acerca de los mensajes no entregados de remitentes externos** .|
 |**Asunto** <br/><br/> _CustomExternalSubject_|En blanco <br/><br/> `$null`|En blanco <br/><br/> `$null`|En blanco <br/><br/> `$null`||

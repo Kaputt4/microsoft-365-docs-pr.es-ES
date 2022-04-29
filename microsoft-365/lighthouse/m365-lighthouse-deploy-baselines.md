@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo implementar líneas base Microsoft 365 Lighthouse.
-ms.openlocfilehash: 2649094f36903e5607fee28862fa0af683d0986e
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 550ded1383cb402da0943bdfeb6707cbd12b02d1
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022875"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131138"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Implementación de líneas base de Microsoft 365 Lighthouse
 
@@ -33,7 +33,7 @@ Asegúrese de que usted y los inquilinos de sus clientes cumplen los requisitos 
 
 ## <a name="view-a-deployment-plan"></a>Visualización de un plan de implementación
 
-1. En la página de navegación izquierda, seleccione **Inquilinos**.
+1. En el panel de navegación izquierdo de Lighthouse, seleccione **Inquilinos**.
 
 2. En la lista de inquilinos, seleccione el inquilino que desea ver.
 
@@ -61,7 +61,7 @@ Asegúrese de que usted y los inquilinos de sus clientes cumplen los requisitos 
     | SKU necesaria   | SKU necesarias para completar el paso de implementación.                                      |
     | Impacto en el usuario    | Impacto de la implementación del paso en los usuarios del inquilino.                             |
     | Para los usuarios | Vínculos a recursos que los usuarios del inquilino pueden resultar útiles.                             |
-    | Siguientes pasos     | Vínculos e instrucciones sobre los pasos siguientes aplicables.                                |
+    | Pasos siguientes     | Vínculos e instrucciones sobre los pasos siguientes aplicables.                                |
 
     Los pasos de implementación incluyen uno o varios procesos que deben completarse. La página Paso de implementación incluye una tabla que enumera cada proceso incluido en el paso de implementación y proporciona la siguiente información:
 

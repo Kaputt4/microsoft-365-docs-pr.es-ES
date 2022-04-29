@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: En este artículo se proporciona información para solucionar problemas relacionados con el envío de correo electrónico a bandejas de Microsoft 365 & procedimientos recomendados para el envío masivo de correo a Microsoft 365 clientes.
+description: En este artículo se proporciona información para solucionar problemas relacionados con el envío de correo electrónico a bandejas de entrada en Microsoft 365 & procedimientos recomendados para el envío masivo de correo a Microsoft 365 clientes.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f5fe128989b66f110899e6af08180e830319b739
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: 37703ccb0ffb37163033bb2fdca24566a33bb275
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61121404"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128442"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Correo de solución de problemas enviado a Microsoft 365
 
@@ -34,11 +34,11 @@ ms.locfileid: "61121404"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
-En este artículo se proporciona información de solución de problemas para los remitentes que tienen problemas al intentar enviar correo electrónico a las bandejas de entrada en Microsoft 365 y procedimientos recomendados para el envío masivo de correo a los clientes.
+En este artículo se proporciona información de solución de problemas para los remitentes que experimentan problemas al intentar enviar correo electrónico a bandejas de entrada en Microsoft 365 y procedimientos recomendados para el envío masivo de correo a los clientes.
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>¿Está administrando la reputación de envío de dominios e IP?
 
-Las tecnologías de filtrado de EOP están diseñadas para proporcionar protección contra correo no deseado para Microsoft 365 y otros productos de Microsoft como Exchange Server. También usamos SPF, DKIM y DMARC; tecnologías de autenticación de correo electrónico que ayudan a solucionar el problema de suplantación de identidad y suplantación de identidad comprobando que el dominio que envía el correo electrónico está autorizado a hacerlo. El filtrado de EOP está influenciado por muchos factores relacionados con el envío de IP, dominio, autenticación, precisión de lista, tasas de quejas, contenido y mucho más. De estos factores, uno de los que más empeora la reputación del remitente y su capacidad para entregar correo electrónico es su tasa de denuncia de correo electrónico no deseado.
+Las tecnologías de filtrado de EOP están diseñadas para proporcionar protección contra correo no deseado para Microsoft 365 y otros productos de Microsoft, como Exchange Server. También usamos SPF, DKIM y DMARC; tecnologías de autenticación por correo electrónico que ayudan a solucionar el problema de suplantación de identidad y suplantación de identidad mediante la comprobación de que el dominio que envía el correo electrónico está autorizado para hacerlo. El filtrado de EOP está influenciado por muchos factores relacionados con la dirección IP de envío, el dominio, la autenticación, la precisión de la lista, las tasas de quejas, el contenido y mucho más. De estos factores, uno de los que más empeora la reputación del remitente y su capacidad para entregar correo electrónico es su tasa de denuncia de correo electrónico no deseado.
 
 ## <a name="are-you-sending-email-from-new-ip-addresses"></a>¿Está enviando correo electrónico desde direcciones IP nuevas?
 
@@ -62,13 +62,13 @@ No podemos aceptar correo electrónico de los remitentes que no logran una búsq
 
 Algunos problemas de entrega se deben a que Microsoft ha bloqueado la dirección IP del remitente o a que la cuenta de usuario se identifica como remitente prohibido debido a una actividad precedente de correo no deseado. Si cree que ha recibido el NDR por error, en primer lugar, siga las instrucciones del mensaje de NDR para resolver el problema.
 
-Para obtener más información sobre el error que recibió, vea la lista de códigos de error en Informes de no entrega de correo electrónico [en Exchange Online](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+Para obtener más información sobre el error que ha recibido, consulte la lista de códigos de error en [Informes de no entrega por correo electrónico en Exchange Online](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
  Por ejemplo, si recibe el siguiente NDR, indica que Microsoft bloqueó la dirección IP de envío:
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
-Para solicitar la eliminación de esta lista, puede usar el portal de deslist para quitarse [de la lista de remitentes bloqueados.](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
+Para solicitar la eliminación de esta lista, puede [usar el portal de deslist para quitarse de la lista de remitentes bloqueados](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>Mi correo electrónico aterrizó en la carpeta correo no deseado del destinatario
 
@@ -82,25 +82,25 @@ Si recibe un NDR de EOP que indica que EOP está limitando su dirección IP, por
 
 Ha recibido el NDR porque se ha detectado actividad sospechosa procedente de la dirección IP en cuestión y se ha restringido temporalmente mientras se analiza el caso en profundidad. Si después del análisis, la dirección deja de ser sospechosa, la restricción se levantará en breve.
 
-## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>No puedo recibir correo electrónico de remitentes en Microsoft 365
+## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>No puedo recibir correo electrónico de los remitentes en Microsoft 365
 
- Para recibir mensajes de nuestros usuarios, asegúrese de que la red permite conexiones desde las direcciones IP que EOP usa en nuestros centros de datos. Para obtener más información, [vea Exchange Online Protection ip addresses](../../enterprise/urls-and-ip-address-ranges.md).
+ Para recibir mensajes de nuestros usuarios, asegúrese de que la red permite conexiones desde las direcciones IP que EOP usa en nuestros centros de datos. Para obtener más información, consulte [Exchange Online Protection direcciones IP](../../enterprise/urls-and-ip-address-ranges.md).
 
-## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Procedimientos recomendados para el envío masivo de correo electrónico Microsoft 365 usuarios
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Procedimientos recomendados para enviar correo electrónico masivo a usuarios Microsoft 365
 
-Si suele realizar campañas masivas de correo electrónico Microsoft 365 usuarios y desea asegurarse de que los correos electrónicos lleguen de forma segura y oportuna, siga las sugerencias de esta sección.
+Si a menudo realiza campañas de correo electrónico masivas para Microsoft 365 usuarios y desea asegurarse de que los correos electrónicos llegan de forma segura y oportuna, siga las sugerencias de esta sección.
 
-### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Asegúrese de que el nombre De refleja quién envía el mensaje
+### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Asegúrese de que el nombre De refleja quién envía el mensaje.
 
 El Asunto debe ser un breve resumen del contenido del mensaje y el cuerpo del mensaje debe indicar clara y sucintamente de qué trata la oferta, servicio o producto. Por ejemplo:
 
 Correcto:
 
-> From: marketing@shoppershandbag.com <br> Asunto: Catálogo actualizado para la temporada de Navidad.
+> Desde: marketing@shoppershandbag.com <br> Asunto: ¡Se ha actualizado el catálogo para la temporada navideña!
 
 Incorrecto:
 
-> From: someone@outlook.com <br> Asunto: Catálogos
+> Desde: someone@outlook.com <br> Asunto: Catálogos
 
 Cuanto más fácil sea que las personas sepan quién es usted y lo que hace, menos problemas tendrá para entregar correctamente sus mensajes a través de la mayoría de los filtros de correo electrónico no deseado.
 
@@ -120,7 +120,7 @@ Se aconseja optar por esta práctica recomendada si su empresa requiere o anima 
 
 Durante el proceso de registro, si la casilla de verificación "Sí, por favor, envíame el boletín" o "Sí, envíenme ofertas especiales" está seleccionada por defecto, los usuarios que no presten atención pueden suscribirse involuntariamente a correo electrónico de marketing o boletines de noticias que no quieren recibir.
 
- Microsoft recomienda la opción de doble suscripción en su lugar, lo que significa que la casilla de correo electrónico de marketing o boletines está desactivada de forma predeterminada. Además, una vez que se ha enviado el formulario de registro, se envía al usuario un correo electrónico de verificación con una dirección URL que le permite confirmar su decisión de recibir correos electrónicos de marketing.
+ Microsoft recomienda la opción de participación doble en su lugar, lo que significa que la casilla de correos electrónicos de marketing o boletines de noticias está desactivada de forma predeterminada. Además, una vez que se ha enviado el formulario de registro, se envía al usuario un correo electrónico de verificación con una dirección URL que le permite confirmar su decisión de recibir correos electrónicos de marketing.
 
  Esto ayuda a garantizar que solo aquellos usuarios que quieren recibir correo electrónico de marketing se registraron para mensajes de correo electrónico, lo que libera a la empresa de envío de ser acusada de hacer uso de cualquier práctica de marketing de correo electrónico cuestionable.
 

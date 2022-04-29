@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f4456dc29f4d62703041b9c386aa7c9fa132695a
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: b34ac5538a2c38261f7da0a0cd3a75452660ef6e
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667370"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128813"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -32,6 +32,7 @@ ms.locfileid: "64667370"
 **Se aplica a:**
 
 - Microsoft 365 Defender
+- Microsoft Defender para Office 365
 
 La `EmailEvents` tabla del esquema [de búsqueda avanzada](advanced-hunting-overview.md) contiene información sobre eventos que implican el procesamiento de correos electrónicos en Microsoft Defender para Office 365. Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede crear una suspensión asociada a un caso de exhibición de documentos electrónicos (estándar) en Microsoft 365 para conservar el contenido relevante para una investigación o caso legal.
-ms.openlocfilehash: e91e67b39a160de99856d73af8da6ab17d1d6fba
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ddd1b2e62c2ec63dbd2303cadcef6a1d12f4dfc7
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095020"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130919"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
@@ -66,7 +66,7 @@ Para crear una suspensión de eDiscovery asociada a un caso de exhibición de do
    3. **Carpetas públicas de Exchange**: establezca la opción de alternancia en **Activado** para poner todas las carpetas públicas en su organización de Exchange Online en suspensión. No puede elegir carpetas públicas específicas para poner en suspensión. Deje el botón de alternancia desactivado si no quiere establecer una suspensión en las carpetas públicas.
 
    > [!IMPORTANT]
-   > Al agregar Exchange buzones o sitios de SharePoint a una suspensión, debe agregar explícitamente al menos una ubicación de contenido a la suspensión. En otras palabras, si establece el botón de alternancia **en Activado** para buzones o sitios, debe seleccionar buzones o sitios específicos para agregarlos a la suspensión. De lo contrario, se creará la suspensión de eDiscovery, pero no se agregarán buzones ni sitios a la suspensión y las estadísticas mostrarán que no hay ubicaciones o elementos de contenido en espera.
+   > Al agregar Exchange buzones o sitios de SharePoint a una suspensión, debe agregar explícitamente al menos una ubicación de contenido a la suspensión. En otras palabras, si establece el botón de alternancia **en Activado** para buzones o sitios, debe seleccionar buzones o sitios específicos para agregarlos a la suspensión. De lo contrario, se creará la suspensión de eDiscovery, pero no se agregarán buzones ni sitios a la suspensión.
 
 8. Cuando haya terminado de agregar ubicaciones a la suspensión, haga clic en **Siguiente**.
 
@@ -94,24 +94,6 @@ Tenga en cuenta lo siguiente al colocar una suspensión de exhibición de docume
 - Una retención basada en consultas conserva inicialmente todos los documentos de un sitio durante un breve período de tiempo después de su eliminación. Esto significa que cuando se elimina un documento, se moverá a la biblioteca de suspensión de conservación aunque no coincida con los criterios de la retención basada en consultas. Sin embargo, los documentos eliminados que no coinciden con una retención basada en consultas se quitarán mediante un trabajo de temporizador que procesa la biblioteca de suspensión de conservación. El trabajo del temporizador se ejecuta periódicamente y compara todos los documentos de la biblioteca de suspensión de conservación con las retenciones de exhibición de documentos electrónicos basadas en consultas (y otros tipos de retenciones y directivas de retención). El trabajo del temporizador elimina los documentos que no coinciden con una retención basada en consultas y conserva los documentos que lo hacen.
 
 - Las retenciones basadas en consultas no deben usarse para realizar la conservación de destino, como conservar documentos en una carpeta o sitio específicos o mediante otros criterios de retención basados en la ubicación. Si lo hace, puede tener resultados no deseados. Se recomienda usar criterios de retención no basados en ubicaciones, como palabras clave, intervalos de fechas u otras propiedades de documento para conservar los documentos del sitio.
-
-## <a name="ediscovery-hold-statistics"></a>Estadísticas de suspensión de eDiscovery
-
-Después de crear una suspensión de eDiscovery, se muestra información sobre la nueva suspensión en la página de control flotante de la suspensión seleccionada. Esta información incluye el número de buzones y sitios en espera y estadísticas sobre el contenido que se ha colocado en suspensión, como el número total y el tamaño de los elementos colocados en espera y la última vez que se calcularon las estadísticas de retención. Estas estadísticas de retención ayudan a identificar la cantidad de contenido relacionado con el caso que se conserva.
-  
-![Mantenga las estadísticas.](../media/eDiscoveryHoldStatistics.png)
-  
-Tenga en cuenta lo siguiente sobre las estadísticas de suspensión de exhibición de documentos electrónicos:
-  
-- El número total de elementos en espera indica el número de elementos de todos los orígenes de contenido que se colocan en suspensión. Si ha creado una retención basada en consultas, esta estadística indica el número de elementos que coinciden con la consulta.
-
-- El número de elementos en espera también incluye los elementos no indexados que se encuentran en las ubicaciones de contenido. Si crea una suspensión basada en consultas, todos los elementos no indexados de las ubicaciones de contenido se colocan en suspensión. Esto incluye elementos sin indexar que no coinciden con los criterios de búsqueda de una retención basada en consultas y elementos sin indexar que podrían estar fuera de una condición de intervalo de fechas. Esto es diferente de lo que sucede al ejecutar una búsqueda, en la que los elementos sin indexar que no coinciden con la consulta de búsqueda o que están excluidos por una condición de intervalo de fechas no se incluyen en los resultados de la búsqueda. Para obtener más información sobre los elementos sin indexar, vea [Elementos indizados parcialmente](partially-indexed-items-in-content-search.md).
-
-- Para obtener las estadísticas de retención más recientes, haga clic en **Actualizar estadísticas** para volver a ejecutar una estimación de búsqueda que calcule el número actual de elementos en espera.
-
-- Es normal que el número de elementos en espera aumente con el tiempo porque los usuarios cuyo buzón de correo o sitio está en espera suelen enviar o recibir nuevos mensajes de correo electrónico y crear nuevos documentos en SharePoint y OneDrive.
-
-- Si un buzón de Exchange, SharePoint sitio o OneDrive cuenta se mueve a una región diferente en un entorno multigeográfico, las estadísticas de ese sitio no se incluirán en las estadísticas de retención. Pero el contenido de esas ubicaciones se conservará. Además, si un buzón de correo o sitio se mueve a otra región, la dirección SMTP o la dirección URL que se muestran en la suspensión no se actualizarán automáticamente. Tendrá que editar la suspensión y actualizar la dirección URL o SMTP para que las ubicaciones de contenido se incluyan de nuevo en las estadísticas de retención.
 
 ## <a name="search-locations-on-ediscovery-hold"></a>Ubicaciones de búsqueda en suspensión de eDiscovery
 

@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security puede ayudarle a proteger y administrar los dispositivos móviles de las organizaciones.
-ms.openlocfilehash: f2da9a20c496d5229d62e477fcf4cc0024436788
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cb724a4f7d5b4118bb50b0aeaf1138a4a1aebfb6
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935245"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129142"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Administración de dispositivos inscritos en Mobile Administración de dispositivos en Microsoft 365
 
@@ -36,7 +36,7 @@ Después de configurarlo, los usuarios de la organización deben inscribir sus d
 
 Para acceder al panel de administración de dispositivos, siga estos pasos:
 
-1. Ve al [Centro de administración de Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
+1. Ve al [Centro de administración de Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
 
 2. Escriba Mobile Administración de dispositivos en el campo de búsqueda y seleccione **Mobile Administración de dispositivos** en la lista de resultados.
 

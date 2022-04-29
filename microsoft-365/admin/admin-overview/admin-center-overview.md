@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Use una vista simplificada en Microsoft 365 para administrar tareas comunes o la vista de panel para configuraciones y tareas más complejas.
-ms.openlocfilehash: 92d6188ee843d9c3148e1036894ab9a3819247af
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b75a4e63b313654be68d9569daa497a738520bbc
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315937"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128835"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Información general del Centro de administración de Microsoft 365
 
@@ -106,6 +106,41 @@ Si no tiene idea de con quién ponerse en contacto en su trabajo o centro educat
 > [!NOTE]
 > Los administradores de versiones dirigidas tienen acceso primero a las nuevas características. Las nuevas características se implementarán más adelante para todos los administradores. Esto significa que es posible que no vea el centro de administración o que tenga un aspecto diferente al que se describe en los artículos de ayuda. Para estar entre los primeros en ver nuevas características, consulte Participar en el centro de administración, a continuación.
 
+## <a name="admin-center-features-and-settings"></a>Características y configuración del centro de administración
+
+A continuación se muestran las características y la configuración que encontrará en la navegación de la izquierda del centro de administración. Obtenga más información sobre las tareas de administración en [ayuda para administradores](Información general sobre el Centro de administración de Microsoft 365](admin-center-overview.md).
+
+<br>
+
+****
+
+|Menú|Para qué sirve|
+|-----|-----|
+|**Inicio**|Esta es la página de aterrizaje del Centro de administración. Verá dónde administrar a los usuarios, la facturación, el estado del servicio y los informes.|
+|**Users**|Puede crear y administrar usuarios de su organización, como empleados o estudiantes. También puede establecer su nivel de permisos o restablecer sus contraseñas.|
+|**Grupos**|Puede crear y administrar grupos en su organización, como un grupo de Microsoft 365, un grupo de distribución, un grupo de seguridad o un buzón compartido. Obtenga información sobre cómo [crear](../create-groups/create-groups.md) y [administrar](../create-groups/manage-groups.md) grupos.  |
+|**Recursos**|Cree y administre recursos, como una colección de sitios de SharePoint. Obtenga información sobre cómo [crear colecciones de sitios](/sharepoint/create-site-collection).  |
+|**Facturación**|Vea, compre o cancele suscripciones para su organización. Vea extractos de facturación anteriores o vea la cantidad de licencias asignadas a usuarios individuales. Aprenda a [administrar la facturación](../../commerce/index.yml).  |
+|**Soporte técnico**|Vea las solicitudes de servicio existentes o cree otras nuevas. Obtenga más información en [póngase en contacto con el soporte técnico para productos para empresas: ayuda de administración](../../business-video/get-help-support.md).|
+|**Configuración**|Administre la configuración global de aplicaciones, como correo electrónico, sitios y el conjunto de aplicaciones de Office. Cambie la directiva y la fecha de expiración de su contraseña. Agregue y actualice nombres de dominio, como contoso.com. Cambie las preferencias de perfil y versión de su organización. Decida si los socios pueden acceder a su Centro de administración.|
+|**Instalación**|Administre los dominios existentes, active y administre la autenticación multifactorial, administre el acceso de administrador, migre los buzones de correo de los usuarios a Office 365, administre las actualizaciones de funciones y ayude a los usuarios a instalar sus aplicaciones de Office.|
+|**Informes**|Consulte de un vistazo cómo está usando su organización Microsoft 365 con informes detallados sobre el uso del correo electrónico, activaciones de Office y mucho más. Aprenda a usar los nuevos [informes de actividades](../activity-reports/activity-reports.md).  |
+|**Estado**|Vea de un vistazo el estado. También puede consultar detalles adicionales y el historial del estado. Consulte [Cómo comprobar el estado del servicio](../../enterprise/view-service-health.md) y [Cómo comprobar el estado de la versión de Windows](/windows/deployment/update/check-release-health) para obtener más información. <p>Use el Centro de mensajes para realizar un seguimiento de los próximos cambios en las características y servicios. Publicaremos anuncios allí con información que le permitirá planear los cambios y comprender cómo afectarán a los usuarios. Para obtener más información, vea [Centro de mensajes](../manage/message-center.md).|
+|**Centros de administración**|Puede abrir centros de administración independientes de Exchange, Skype Empresarial, SharePoint, Yammer y Azure AD. Cada centro de administración incluye toda la configuración disponible para ese servicio.  <p> Por ejemplo, en el centro de administración de Exchange, configure y administre el correo electrónico, los calendarios, los grupos de distribución, etc. En el centro de administración de SharePoint, cree y administre colecciones de sitios, la configuración del sitio y OneDrive para la Empresa. En el centro de administración de Skype Empresarial, configure las notificaciones de mensajería instantánea, las conferencias de acceso telefónico y la presencia en línea.  <p> Obtenga más información sobre el [centro de administración de Exchange](/exchange/exchange-admin-center) y el [centro de administración de SharePoint](/sharepoint/sharepoint-online). <p> **Nota:** Los centros de administración disponibles dependen de su plan y su región.|
+|
+
+## <a name="common-tasks-in-the-admin-center"></a>Tareas comunes del centro de administración
+
+- Administrar usuarios: [agregar usuarios y asignar licencias al mismo tiempo](../add-users/add-users.md), [eliminar o restaurar usuarios](../add-users/delete-a-user.md)o [Restablecer la contraseña de un usuario](../add-users/reset-passwords.md).
+
+- Obtenga ayuda con la facturación: [Facturación](../../commerce/index.yml)
+
+- Ver informes de actividad: [informes de actividad de](../activity-reports/activity-reports.md)
+
+- [Crear un Grupo de Microsoft 365 ](../create-groups/create-groups.md)
+
+- [Administrar un Grupo de Microsoft 365](../create-groups/manage-groups.md)
+
 ## <a name="turn-on-targeted-release"></a>Activar la versión dirigida
 
 1. Inicie sesión en [admin.microsoft.com](https://admin.microsoft.com), vaya al panel de navegación y seleccione **configuración** > **configuración de la organización**\><a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**pestaña** del perfil de la organización</a>.
@@ -130,7 +165,7 @@ Microsoft 365 es una solución completa e inteligente que incluye Office 365, Wi
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
 
-Para obtener más información, vea [Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md). 
+Para obtener más información, consulte [Probar o comprar una suscripción de Microsoft 365 para empresas](../../commerce/try-or-buy-microsoft-365.md). 
 
 ### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>He encontrado un error o quiero solicitar una mejora de características. Cómo puedo informar a Microsoft?
 

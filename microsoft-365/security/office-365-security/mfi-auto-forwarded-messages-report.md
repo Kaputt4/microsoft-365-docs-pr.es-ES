@@ -9,18 +9,18 @@ audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
-description: Los administradores pueden obtener información sobre el informe de mensajes reenviados automáticamente en el panel flujo de correo del Centro de & cumplimiento.
+description: Los administradores pueden obtener información sobre el informe de mensajes reenviados automáticamente en el panel Flujo de correo del Centro de cumplimiento de seguridad &.
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4603e7d895c847513a41dc52764070f970a50d15
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 2f102f4fbea558f0972fbd4f3e8f4a4bea257bf4
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64476387"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131050"
 ---
-# <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Información de mensajes reenviados automáticamente en el Centro de seguridad & cumplimiento
+# <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Información de mensajes reenviados automáticamente en el Centro de cumplimiento de seguridad &
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -29,38 +29,38 @@ ms.locfileid: "64476387"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-La **información de mensajes** reenviados automáticamente [](mail-flow-insights-v2.md) en el panel flujo de correo del Centro de seguridad [& cumplimiento](https://protection.office.com) muestra información sobre los mensajes que se reenvía automáticamente desde su organización a los destinatarios de dominios externos.
+La información de **mensajes reenviados** automáticamente en el [panel Flujo de correo](mail-flow-insights-v2.md) del [Centro de cumplimiento de seguridad &](https://protection.office.com) muestra información sobre los mensajes que se reenvía automáticamente desde su organización a los destinatarios de dominios externos.
 
-:::image type="content" source="../../media/mfi-auto-forwarded-messages.png" alt-text="El widget, es el caso de los mensajes reenviados automáticamente en el Centro de seguridad & cumplimiento" lightbox="../../media/mfi-auto-forwarded-messages.png":::
+:::image type="content" source="../../media/mfi-auto-forwarded-messages.png" alt-text="El widget es decir, mensajes reenviados automáticamente en el Centro de cumplimiento de seguridad &" lightbox="../../media/mfi-auto-forwarded-messages.png":::
 
 ## <a name="auto-forwarded-messages-details"></a>Detalles de mensajes reenviados automáticamente
 
 Al hacer clic en el número de mensajes del widget, aparece un panel flotante que muestra más información sobre los mensajes reenviados automáticamente:
 
-- **Reenviar automáticamente los mensajes mediante métodos de reenvío**:
+- **Mensajes reenviados automáticamente mediante métodos de reenvío**:
 
   - **Por reglas de flujo de correo**
-  - **Por reglas de la Bandeja de entrada**
-  - **Mediante reenvío SMTP**: este método indica el reenvío automático que los administradores pueden configurar en un buzón, tal como se describe en [Configure email forwarding for a mailbox](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
-  - Un vínculo al informe [de reenvío](view-mail-flow-reports.md#forwarding-report) para obtener más información.
+  - **Por reglas de bandeja de entrada**
+  - **Por reenvío SMTP**: este método indica el reenvío automático que los administradores pueden configurar en un buzón, como se describe en [Configuración del reenvío de correo electrónico para un buzón](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
+  - Vínculo al [informe de reenvío](view-mail-flow-reports.md#forwarding-report) para obtener más detalles.
 
 - **Mensajes reenviados automáticamente por dominios y usuarios**:
 
-  - **Principales 5 dominios reenviados a**
+  - **5 dominios principales reenviados a**
   - **Nuevos dominios (la semana pasada)**
-  - **Principales 5 usuarios de reenvío**
+  - **Los 5 principales usuarios de reenvío**
   - **Nuevos usuarios (la semana pasada)**
-  - Un vínculo al informe [de modificaciones de reenvío](mfi-new-users-forwarding-email.md#forwarding-modifications-report) para obtener más información.
+  - Vínculo al [informe de modificaciones de reenvío](mfi-new-users-forwarding-email.md#forwarding-modifications-report) para obtener más detalles.
 
-:::image type="content" source="../../media/mfi-auto-forwarded-messages-details.png" alt-text="El widget Mensajes reenviados automáticamente en el Centro de seguridad & cumplimiento" lightbox="../../media/mfi-auto-forwarded-messages-details.png":::
+:::image type="content" source="../../media/mfi-auto-forwarded-messages-details.png" alt-text="Widget Mensajes reenviados automáticamente en el Centro de cumplimiento de seguridad &" lightbox="../../media/mfi-auto-forwarded-messages-details.png":::
 
 ## <a name="insights"></a>Insights
 
-Se generan dos perspectivas en función de los datos del informe:
+Se generan dos conclusiones basadas en los datos del informe:
 
-- [Nuevos usuarios reenviar correo electrónico](mfi-new-users-forwarding-email.md)
-- [Nuevos dominios que se reenvía correo electrónico](mfi-new-domains-being-forwarded-email.md)
+- [Nuevos usuarios que reenvía correo electrónico](mfi-new-users-forwarding-email.md)
+- [Nuevos dominios que se reenvía por correo electrónico](mfi-new-domains-being-forwarded-email.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-Para obtener información sobre otras perspectivas en el panel flujo de correo, vea Información sobre el flujo de correo en el [Centro de seguridad & cumplimiento](mail-flow-insights-v2.md).
+Para obtener información sobre otras conclusiones en el panel Flujo de correo, consulte [Información de flujo de correo en el Centro de cumplimiento de seguridad &](mail-flow-insights-v2.md).

@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Hay muchos tipos de información confidencial que están listos para su uso en las directivas DLP. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo.
-ms.openlocfilehash: 6074082812853469e0513d67ec68519eb2a89563
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: af2cbd03de426aa34b9db82691a22684c4c1df0b
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970667"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130810"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
@@ -9608,9 +9608,9 @@ Una directiva DLP tiene confianza media en que se detecta este tipo de informaci
 
 ### <a name="keywords"></a>Palabras clave
 
-Cualquier término del diccionario de palabras clave Dictionary_icd_10_updated, que se basa en la [Clasificación Internacional de Enfermedades, Décima Revisión, Modificación Clínica (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo solo busca el término, no los códigos de seguro.
+Cualquier término del diccionario de palabras clave Dictionary_icd_10_updated, que se basa en la [Clasificación Internacional de Enfermedades, Décima Revisión, Modificación Clínica (ICD-10-CM)](https://icd10cmtool.cdc.gov/). Este tipo solo busca el término, no los códigos de seguro.
 
-Cualquier término del diccionario de palabras clave Dictionary_icd_10_codes, que se basa en la [Clasificación Internacional de Enfermedades, Décima Revisión, Modificación Clínica (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo solo busca códigos de seguro, no la descripción.
+Cualquier término del diccionario de palabras clave Dictionary_icd_10_codes, que se basa en la [Clasificación Internacional de Enfermedades, Décima Revisión, Modificación Clínica (ICD-10-CM)](https://icd10cmtool.cdc.gov/). Este tipo solo busca códigos de seguro, no la descripción.
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>Clasificación internacional de enfermedades (ICD-9-CM)
 
@@ -11619,7 +11619,7 @@ Esta entidad con nombre desagregada detecta patrones relacionados con la direcci
 
 ### <a name="confidence-level"></a>Nivel de confianza
 
-Mediano
+Medio
 
 ## <a name="lifestyles-that-relate-to-medical-conditions"></a>Estilos de vida relacionados con condiciones médicas
 
