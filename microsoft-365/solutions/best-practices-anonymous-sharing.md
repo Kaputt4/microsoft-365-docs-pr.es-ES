@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: En este artículo, obtendrá información sobre los procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados.
-ms.openlocfilehash: 43db59e0380f99a2312fd803970a73013445504a
-ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
+ms.openlocfilehash: bd153d34e6e9ddc4a4b627a79df90286661353d3
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65015054"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128596"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados.
 
@@ -61,7 +61,11 @@ Establezca una fecha de expiración para los vínculos para Cualquiera de un sit
 
 Tenga en cuenta que una vez que el vínculo para *Cualquiera* expire, el archivo o la carpeta se podrá volver a compartir con un nuevo vínculo para *Cualquiera*.
 
-Puede establecer la caducidad del vínculo para *Cualquiera* para un OneDrive específico con [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite).
+Puede establecer la caducidad de los vínculos de un sitio específico o OneDrive en *Cualquiera* con [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite). 
+
+```powershell
+Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTenantAnonymousLinkExpirationPolicy $true -AnonymousLinkExpirationInDays 15
+```
 
 ## <a name="set-link-permissions"></a>Establezca permisos de vínculos
 
