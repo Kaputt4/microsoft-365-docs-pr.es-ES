@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c375d77c3aa64d996a8d8d2f8dce538829eaa3b2
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 229dfbb7a0441f4a6cb6632432c0032f4ce4308e
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568322"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130744"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>Quitar usuarios bloqueados del portal de Usuarios restringidos en Microsoft 365
 
@@ -44,6 +44,16 @@ El usuario se agrega a la página **Usuarios restringidos** en el portal de Micr
 > "No se pudo entregar el mensaje porque el remitente no es válido. La razón más común para este caso es que la dirección de correo electrónico sea sospechosa de que está enviando correo no deseado y ya no se le permite enviar correo.  Póngase en contacto con su administrador, para obtener ayuda. El servidor remoto devolvió "550 5.1.8 acceso denegado, remitente incorrecto de correo saliente".
 
 Los administradores pueden quitar usuarios de la página **Usuarios restringidos** en Microsoft 365 Defender o en PowerShell de Exchange Online.
+
+## <a name="learn-more-on-restricted-entities"></a>Más información sobre las entidades restringidas
+
+Una entidad restringida es una entidad a la que se le ha bloqueado el envío de correo electrónico porque se ha puesto en peligro o ha superado el límite de envío.
+
+Hay 2 tipos de entidades restringidas: 
+
+- **Usuario restringido**: obtenga información sobre por qué se puede restringir un usuario y cómo controlar usuarios restringidos (este artículo).  
+
+- **Conector restringido**: para obtener más información sobre por qué se puede restringir un conector y cómo controlar conectores restringidos, consulte [Eliminación de conectores bloqueados del portal de entidades restringidas](remove-blocked-connectors.md). 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
