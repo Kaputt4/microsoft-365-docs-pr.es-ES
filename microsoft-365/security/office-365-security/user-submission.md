@@ -18,12 +18,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad (phishing) que notifican los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a2e57c5dbfb8738eb9e554a3207679bfd48c6f60
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 8b73144b678140cd30917b4fd687663ff0a455a3
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970928"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144803"
 ---
 # <a name="user-reported-message-settings"></a>Configuración de mensajes notificados por el usuario
 
@@ -95,7 +95,7 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
           > [!IMPORTANT]
           > Las organizaciones gubernamentales de Estados Unidos (GCC, GCC High y DoD) solo pueden configurar el **buzón de mi organización**. Las otras dos opciones están deshabilitadas.
           >
-          > Si las organizaciones están configuradas para enviar solo al buzón personalizado, los mensajes notificados no se enviarán para volver a examinarse y los resultados en el portal mensajes notificados por el usuario siempre estarán vacíos.
+          > Si las organizaciones están configuradas para enviar mensajes notificados por el usuario solo al buzón personalizado, los mensajes notificados aparecerán en **Mensajes notificados** por el usuario, pero sus resultados siempre estarán vacíos (ya que no se habrían vuelto a examinar).
 
        Independientemente del valor que haya seleccionado para **Enviar los mensajes notificados a**, están disponibles los siguientes valores:
 

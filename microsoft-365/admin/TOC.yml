@@ -29,6 +29,8 @@
               href: ../admin/setup/setup-business-standard.md
             - name: Invitar a usuarios a Microsoft 365 Empresa Estándar
               href: ../admin/simplified-signup/admin-invite-business-standard.md
+            - name: Qué es Microsoft 365 para empresas
+              href: ../admin/admin-overview/what-is-microsoft-365-for-business.md
             - name: Aceptar invitación por correo electrónico a Microsoft 365 Empresa Estándar
               href: ../admin/simplified-signup/user-invite-business-standard.md
             - name: 'Aceptar una invitación por correo electrónico a una organización de suscripción de Microsoft 365 Empresa Estándar con una cuenta de Outlook, Yahoo, Gmail u otra.'

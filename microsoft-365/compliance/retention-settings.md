@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: 729c31935ee3ded04a12f7822a17082ef1b52c26
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: c0214476494e024247b76911475df88bdfbfa4ff
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911520"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129230"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
@@ -83,13 +85,13 @@ Antes de configurar el ámbito adaptable, use la sección anterior para identifi
 
 Específicamente para los sitios de SharePoint, es posible que se necesite una configuración adicional de SharePoint si planea usar [propiedades de sitio personalizadas](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), desplácese hasta una de las siguientes ubicaciones:
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), navegue a una de las siguientes ubicaciones:
     
     - Si usa la solución de administración de registros:
         - **Soluciones** > **Administración de registros** > **Pestaña Ámbitos adaptables** > + **Crear ámbito**
         
-    - Si usa la solución de gobernanza de la información:
-       - **Soluciones** > **Gobierno de información** > **Pestaña Ámbitos adaptables** > + **Crear ámbito**
+    - Si utiliza la solución de administración del ciclo de vida de los datos:
+       - **Soluciones** > **Administración del ciclo de vida de los datos** > Pestaña **Ámbitos de aplicación adaptables**> + **Crear ámbito de aplicación**
     
     ¿No encuentra inmediatamente la solución en el panel de navegación? Primero, seleccione **Mostrar todo**. 
 
@@ -368,7 +370,7 @@ Al elegir las configuraciones para conservar y eliminar contenido, la directiva 
 
 ### <a name="retaining-content-for-a-specific-period-of-time"></a>Conservar el contenido durante un período de tiempo determinado
 
-Cuando se configura una etiqueta de retención o una directiva de retención, debe elegir si el contenido se conservará durante un número determinado de días, meses o años. Como alternativa, conserve siempre los elementos. El período de retención no se calcula a partir del momento en que se asignó la directiva, sino según el inicio del período de retención especificado.
+Cuando se configura una etiqueta o directiva de retención de contenidos, se elige retener los elementos durante un número específico de días, meses (se asume que 30 días para un mes) o años. Como alternativa, conserve siempre los elementos. El período de retención no se calcula a partir del momento en que se asignó la directiva, sino según el inicio del período de retención especificado.
 
 Para iniciar el período de retención, puede elegir cuándo se creó el contenido o, solo en el caso de los archivos y los grupos de SharePoint, OneDrive y Microsoft 365, cuándo se modificó el contenido por última vez. En el caso de las etiquetas de retención, puede iniciar el período de retención desde que se etiquetó el contenido y cuándo se produce un evento.
 
@@ -426,7 +428,7 @@ Algunas opciones de configuración no se pueden cambiar después de haber creado
 
 Si edita una directiva de retención y el contenido ya está sujeto a la configuración original de su directiva de retención, la configuración actualizada se aplicará automáticamente a estos elementos, además de los elementos identificados recientemente.
 
-Normalmente, esta actualización es bastante rápida, pero puede llevar varios días. Cuando la replicación de la directiva en todas las ubicaciones de Microsoft 365 se haya completado, verá que el estado de la directiva de retención en el Centro de cumplimiento de Microsoft 365 cambia de **Activado (Pendiente)** a **Activado (Éxito)**.
+Normalmente esta actualización es bastante rápida, pero puede tardar varios días. Cuando la replicación de la directiva en todas las ubicaciones de Microsoft 365 se haya completado, verá que el estado de la directiva de retención en el portal de cumplimiento de Microsoft Purview cambia de **Activado (pendiente)** a **Activado (proceso realizado correctamente)**.
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>Bloquear la directiva para impedir que se realicen cambios
 

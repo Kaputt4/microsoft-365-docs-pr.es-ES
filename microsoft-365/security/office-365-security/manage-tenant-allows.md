@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar los permisos en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 413209bdecef19c4d101162f0e23f24ff1a2903e
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: af5f8ae1d3c172f4bf77bdca14625fe2440769ef
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129252"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144767"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Agregar permisos a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -57,12 +57,11 @@ Permitir remitentes (o dominios) en la página **Envíos** de Microsoft 365 Defe
 
 > ![Envíe malware a Microsoft para el ejemplo de análisis.](../../media/admin-submission-allow-messages.png)
 
-
 > [!NOTE]
 >
 > - En función de los filtros que determinaron que el correo fuera malintencionado, durante el flujo de correo, se agregan las permite. Por ejemplo, si los filtros encontraron que el remitente y la dirección URL son incorrectos, se agregará un permiso para cada uno. 
-> - Cuando esa entidad (remitente, dominio, dirección URL, archivo) vuelve a encontrarse, se omiten todos los filtros asociados a esa entidad.
-> - Por lo tanto, para un correo electrónico (que contiene esta entidad), durante el flujo de correo, si el resto de los filtros encuentran que el correo electrónico está limpio, se entregará el correo electrónico.
+> - Cuando se vuelve a encontrar esa entidad (remitente, dominio, dirección URL, archivo), se omiten todos los filtros asociados a esa entidad.
+> - Para un correo electrónico (que contiene esta entidad) durante el flujo de correo, si el resto de los filtros encuentran que el correo electrónico está limpio, se entregará el correo electrónico. Por ejemplo, un remitente permite (cuando se supera la autenticación) omitirá todos los veredictos excepto el malware y la suplantación de identidad de alta confianza asociadas a un archivo adjunto o una dirección URL.
 
 ## <a name="add-url-allows-using-the-submissions-portal"></a>Agregar dirección URL permite usar el portal envíos
 
@@ -85,12 +84,10 @@ Permitir direcciones URL en la página **Envíos** de Microsoft 365 Defender.
 > [!div class="mx-imgBorder"]
 > ![Envíe la dirección URL para su análisis.](../../media/submit-url-for-analysis.png)
 
-
 > [!NOTE]
 >
-> -  Cuando se vuelve a encontrar la dirección URL, la dirección URL no se envía para las comprobaciones de detonación o reputación y se omiten todos los demás filtros basados en direcciones URL.
-> -  Por lo tanto, para un correo electrónico (que contiene esta dirección URL), durante el flujo de correo, si el resto de los filtros encuentran que el correo electrónico está limpio, se entregará el correo electrónico.
-
+> - Cuando se vuelve a encontrar la dirección URL, la dirección URL no se envía para las comprobaciones de detonación o reputación y se omiten todos los demás filtros basados en direcciones URL.
+> - Por lo tanto, para un correo electrónico (que contiene esta dirección URL), durante el flujo de correo, si el resto de los filtros encuentran que el correo electrónico está limpio, se entregará el correo electrónico.
 
 ## <a name="add-file-allows-using-the-submissions-portal"></a>Agregar archivo permite usar el portal envíos
 
@@ -113,7 +110,6 @@ Permitir archivos en la página **Envíos** de Microsoft 365 Defender.
 > [!div class="mx-imgBorder"]
 > ![Enviar correo electrónico para su análisis.](../../media/submit-email-for-analysis.png)
 
-
 > [!NOTE]
 >
 > - Cuando se vuelve a encontrar el archivo, no se envía para las comprobaciones de detonación o reputación y se omiten todos los demás filtros basados en archivos.
@@ -126,7 +122,7 @@ Permitir archivos en la página **Envíos** de Microsoft 365 Defender.
 > - Solo se permite o bloquea específicamente la _combinación_ del usuario suplantado _y_ la infraestructura de envío tal como se define en el par de dominio.
 > - Al configurar una entrada de permitir o bloquear para un par de dominio, los mensajes de ese par de dominio ya no aparecen en la información de inteligencia de suplantación de identidad.
 > - Las entradas para remitentes suplantados nunca expiran.
-> - La suplantación de identidad admite permitir y bloquear. La dirección URL solo admite permitir.
+> - La suplantación de identidad admite permitir y bloquear. La dirección URL solo admite bloques.
 
 1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Correo electrónico &** directivas de colaboración \> **& reglas Directivas** \> de **amenazas** \> Listas de **inquilinos permitidos o bloqueados** en la sección **Reglas**. O bien, para ir directamente a la página **Permitir o bloquear listas de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
 

@@ -17,19 +17,21 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: 'Un requisito para todas las soluciones de Microsoft Information Protection: crear, configurar y publicar etiquetas de confidencialidad para clasificar y proteger los datos de su organización.'
-ms.openlocfilehash: 5c80147c18cff8c27f8c205ab1ed600e892f7335
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+description: 'Un requisito para todas las soluciones de Microsoft Purview Information Protection: cree, configure y publique etiquetas de confidencialidad para clasificar y proteger los datos de su organización.'
+ms.openlocfilehash: 036835e77ca1e1d7c15435050d4577f5352f0ebd
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499581"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131282"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Todas las soluciones de Microsoft Information Protection (a veces abreviado como MIP) se implementan con [etiquetas de confidencialidad](sensitivity-labels.md). Para crear y publicar estas etiquetas, vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>.
+Todas las soluciones de Microsoft Purview Information Protection se implementan usando [etiquetas de confidencialidad](sensitivity-labels.md). Para crear y publicar estas etiquetas, vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento de Microsoft Purview</a>.
 
 En primer lugar, cree y configure las etiquetas de confidencialidad que quiera que estén disponibles para las aplicaciones y otros servicios. Por ejemplo, las etiquetas que quiere que vean los usuarios para que se apliquen desde las aplicaciones de Office.
 
@@ -41,14 +43,12 @@ El administrador global de su organización tiene permisos totales para crear y 
 
 ## <a name="create-and-configure-sensitivity-labels"></a>Crear y configurar etiquetas de confidencialidad
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Protección de información** > **Soluciones**
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), seleccione **Soluciones** > **Protección de la información**
     
     Si no ve esta opción inmediatamente, primero seleccione **Mostrar todo**.
 
-2. En la página **Etiquetas**, seleccione **+Crear una etiqueta** para iniciar la Nueva etiqueta de confidencialidad. 
-
-    Por ejemplo, desde el centro de cumplimiento de Microsoft 365:
-
+2. En la página **Etiquetas**, seleccione **+ Crear una etiqueta** para iniciar la configuración de la nueva etiqueta de confidencialidad: 
+    
     ![Cree una etiqueta de confidencialidad.](../media/create-sensitivity-label-full.png)
 
     > [!NOTE]
@@ -62,7 +62,7 @@ El administrador global de su organización tiene permisos totales para crear y 
 
     - Si está seleccionada la opción **Grupos y sitios**, puede configurar las opciones que se apliquen a los Grupos de Microsoft 365 y a los sitios de Teams y SharePoint. Si esta opción no está seleccionada, verá la primera página de esta configuración, pero no podrá configurarla y las etiquetas no estarán disponibles para que los usuarios las seleccionen para grupos y sitios.
 
-    Para obtener información sobre el ámbito de los **Recursos de datos esquematizados**, consulte [Etiquete automáticamente el contenido en Azure Purview](/azure/purview/create-sensitivity-label).
+    Para obtener información sobre el **ámbito de los activos de datos esquematizados**, consulte [Etiquetar automáticamente su contenido en Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
 
 4. Siga las indicaciones de configuración para la configuración de la etiqueta.
 
@@ -128,16 +128,14 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Publicar etiquetas de sensibilidad mediante la creación de una directiva de etiqueta
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Protección de información** > **Soluciones**
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), seleccione **Soluciones** > **Protección de la información**
     
     Si no ve esta opción inmediatamente, primero seleccione **Mostrar todo**.
 
 2. Seleccione la pestaña **Directivas de etiqueta** y, después, **Publicar etiquetas** para iniciar la configuración de **Creación de directivas**:
-
-    Por ejemplo, desde el centro de cumplimiento de Microsoft 365:
-
+    
     ![Publique etiquetas.](../media/publish-sensitivity-labels-full.png)
-
+    
     > [!NOTE]
     > De forma predeterminada, los inquilinos no tienen directivas de etiquetas, por lo que deben crearse. 
 
@@ -154,7 +152,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     Para obtener más información acerca de esta configuración, consulte [Qué pueden hacer las directivas de etiqueta](sensitivity-labels.md#what-label-policies-can-do) en la parte de información general. Use la ayuda en la interfaz de usuario para la configuración individual.
 
-    Para etiquetas configuradas para **activos de Azure Purview (versión preliminar)**: estas etiquetas no tienen ninguna configuración de directiva asociada.
+    Para las etiquetas configuradas para los **activos de Microsoft Purview Data Map (versión preliminar)**: estas etiquetas no tienen ninguna configuración de directiva asociada.
 
 6. Repita estos pasos si necesita distintas configuraciones de directiva para diferentes usuarios o ámbitos. Por ejemplo, puede que desee usar etiquetas adicionales para un grupo de usuarios, u otra etiqueta predeterminada para un subconjunto de usuarios. O bien, si ha configurado etiquetas para tener distintos ámbitos.
 

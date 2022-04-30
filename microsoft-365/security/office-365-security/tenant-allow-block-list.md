@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a administrar permisos y bloques en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0ed23cf7bfe8db25ed216859c434e86f14710db8
-ms.sourcegitcommit: 363bdc517bd2564c6420cf21f352e97079f950e0
+ms.openlocfilehash: 62116022c14af67b4589e4ee8479d294755fcc80
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2022
-ms.locfileid: "65031849"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144717"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
@@ -32,12 +32,6 @@ ms.locfileid: "65031849"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!NOTE]
->
-> Algunas de las características descritas en este artículo están en versión preliminar, están sujetas a cambios y no están disponibles en todas las organizaciones.
->
-> Si su organización no tiene las características de suplantación como se describe en este artículo, consulte la experiencia de administración de suplantación anterior en [Administración de remitentes suplantados mediante la directiva de inteligencia sobre suplantación de identidad y la información de inteligencia sobre suplantación de identidad en EOP](walkthrough-spoof-intelligence-insight.md).
 
 En Microsoft 365 organizaciones con buzones de correo en organizaciones Exchange Online o independientes de Exchange Online Protection (EOP) sin Exchange Online buzones, es posible que no esté de acuerdo con el veredicto de filtrado de EOP. Por ejemplo, un buen mensaje podría marcarse como incorrecto (un falso positivo) o un mensaje incorrecto podría permitirse a través de (un falso negativo).
 
@@ -81,10 +75,10 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
 - Debe tener permisos asignados en el portal de Microsoft 365 Defender para poder realizar los procedimientos de este artículo:
   - **Remitentes, direcciones URL y archivos**:
-    - Para agregar y quitar valores de la lista de permitidos o bloqueados de inquilinos, debe ser miembro de 
-      -   **Grupo de roles Administración de la organización** o **Administrador de seguridad** (**rol administrador de seguridad**)
-      -    **Grupo de roles Operador de seguridad** (**Administrador de listas de permitidos de inquilinos**).
-    - Para obtener acceso de solo lectura a la lista de permitidos o bloqueados de inquilinos, debe ser miembro de 
+    - Para agregar y quitar valores de la lista de permitidos o bloqueados de inquilinos, debe ser miembro de
+      - **Grupo de roles Administración de la organización** o **Administrador de seguridad** (**rol administrador de seguridad**)
+      - **Grupo de roles Operador de seguridad** (**Administrador de listas de permitidos de inquilinos**).
+    - Para obtener acceso de solo lectura a la lista de permitidos o bloqueados de inquilinos, debe ser miembro de
       - **Grupo de roles lector global**
       - **Grupo de roles lector de seguridad**
   - **Suplantación de identidad**: una de las siguientes combinaciones:
@@ -95,7 +89,7 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
 
   > [!NOTE]
   >
-  > - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  > - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios *y* los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
   >
   > - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
@@ -182,7 +176,7 @@ Para administrar todos los bloques y permitidos, vea [Agregar bloques en la list
 
    Cuando haya terminado, haga clic en **Aplicar**. Para borrar los filtros existentes, haga clic en **Filtrar** y, en el control flotante **Filtro** que aparece, haga clic en **Borrar filtros**.
 
-4. Cuando haya terminado, haga clic en **Agregar**.
+3. Cuando haya terminado, haga clic en **Agregar**.
 
 ## <a name="view-sender-file-or-url-entries-in-the-tenant-allowblock-list"></a>Visualización de entradas de remitente, archivo o dirección URL en la lista de permitidos o bloqueados de inquilinos
 
@@ -490,7 +484,7 @@ Estos son algunos ejemplos de pares de dominio válidos para identificar remiten
 
 El número máximo de entradas de remitente suplantadas es 1000.
 
-Agregar un par de dominio solo permite o bloquea la *combinación* del usuario suplantado *y* la infraestructura de envío. No permite el correo electrónico del usuario suplantado de ningún origen ni permite el correo electrónico del origen de la infraestructura de envío para cualquier usuario suplantado. 
+Agregar un par de dominio solo permite o bloquea la *combinación* del usuario suplantado *y* la infraestructura de envío. No permite el correo electrónico del usuario suplantado de ningún origen ni permite el correo electrónico del origen de la infraestructura de envío para cualquier usuario suplantado.
 
 Por ejemplo, agrega una entrada allow para el siguiente par de dominio:
 

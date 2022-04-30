@@ -251,7 +251,8 @@
 ##### [Línea de tiempo de eventos](threat-and-vuln-mgt-event-timeline.md)
 ##### [Informe de dispositivos vulnerables](tvm-vulnerable-devices-report.md)
 ##### [Buscar dispositivos expuestos](tvm-hunt-exposed-devices.md)
-
+#### [Guía para amenazas y campañas activas]()
+##### [Administrar la vulnerabilidad de Log4Shell](tvm-manage-log4shell-guidance.md)
 ### [Detección de dispositivo]()
 #### [Información general de la detección de dispositivo](device-discovery.md)
 #### [Configuración de la detección de dispositivo](configure-device-discovery.md)

@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: Los administradores pueden aprender a usar el portal Envíos en el portal de Microsoft 365 Defender para enviar correos electrónicos sospechosos, correos electrónicos sospechosos de suplantación de identidad (phishing), correo no deseado y otros mensajes, direcciones URL y datos adjuntos de correo electrónico potencialmente dañinos a Microsoft para volver a examinarlos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a21c9e6655c01e2d2229e957f79b2342895ac4e4
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 5d16cae309a90b8ffe10c90fea8ca3a359ece33b
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971977"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144825"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Uso del portal envíos para enviar sospechas de correo no deseado, direcciones URL y archivos a Microsoft
 
@@ -278,7 +278,7 @@ Si ha implementado el [complemento Mensaje](enable-the-report-message-add-in.md)
    - Para exportar las entradas, haga clic en **Exportar**. En el cuadro de diálogo que aparece, guarde el archivo .csv.
 
 > [!NOTE]
-> Si las organizaciones están configuradas para enviar solo mensajes notificados por el usuario al buzón personalizado, los mensajes notificados no se enviarán para volver a examinarlos y los resultados en **Mensajes notificados** por el usuario siempre estarán vacíos.
+> Si las organizaciones están configuradas para enviar mensajes notificados por el usuario solo al buzón personalizado, los mensajes notificados aparecerán en **Mensajes notificados** por el usuario, pero sus resultados siempre estarán vacíos (ya que no se habrían vuelto a examinar).
 
 ### <a name="undo-user-submissions"></a>Deshacer envíos de usuarios
 

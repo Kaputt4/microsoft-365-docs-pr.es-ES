@@ -19,21 +19,21 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre las propuestas que le ayudarán a comprar productos y servicios de Microsoft.
 ROBOTS: NOINDEX
-ms.date: 03/17/2021
-ms.openlocfilehash: 6ba1f27901795a1e473165c0b6ac65d90ca1c0af
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.date: 04/28/2022
+ms.openlocfilehash: 8dc80bfaadcbee236f282796dcdb37f59360ebe4
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824890"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144869"
 ---
 # <a name="understand-the-proposal-workflow"></a>Descripción del flujo de trabajo de la propuesta
 
 Una propuesta es una oferta formal de Microsoft para que su organización compre productos y servicios de Microsoft. Trabaja directamente con un representante de Microsoft para determinar los productos, servicios y términos específicos de su propuesta.
 
-Un representante de Microsoft redacta una propuesta que contiene los elementos que usted y su representante han analizado. El representante le envía un correo electrónico que tiene un vínculo al sitio de la propuesta. El sitio contiene la propuesta preparada específicamente para usted y su organización.
+Un representante de Microsoft redacta una propuesta que contiene los elementos que usted y su representante han analizado. El representante le envía un correo electrónico que tiene un vínculo al portal de Azure Marketplace. El sitio contiene la propuesta preparada específicamente para usted y su organización.
 
-Después de recibir el correo electrónico de notificación, siga el vínculo al sitio de la propuesta. Después de iniciar sesión en el sitio, puede iniciar el proceso de revisión de la propuesta.
+Después de recibir el correo electrónico de notificación, siga el vínculo al sitio de la propuesta. Después de iniciar sesión en el sitio, puede iniciar el proceso de revisión de propuestas.
 
 ## <a name="prerequisites-for-buying-items-with-a-proposal"></a>Requisitos previos para comprar artículos con una propuesta
 
@@ -53,13 +53,29 @@ El Contrato de cliente de Microsoft (MCA) permite a una organización comprar pr
 
 ## <a name="permissions-needed-to-sign-an-agreement-or-pay-for-items"></a>Permisos necesarios para firmar un contrato o pagar por artículos
 
-Si no tiene un rol asignado en la cuenta de facturación, cuando vea la propuesta, se le asignará el rol de lector básico. Este rol le permite ver, pero no realizar ninguna acción sobre, la propuesta. Debe tener asignado el rol de propietario de la cuenta de facturación o colaborador de la cuenta de facturación para poder firmar un contrato o comprar productos y servicios. El propietario de la cuenta de facturación puede asignarle este rol.
+Debe ser propietario de la cuenta de facturación o colaborador de la cuenta de facturación para firmar correctamente un contrato o comprar productos y servicios. Si es un administrador global pero no tiene uno de esos roles, puede asignar los roles a sí mismo. Si no es un administrador global, pida al administrador global o al propietario de la cuenta de facturación que le asigne uno de los roles.
+
+El propietario de la cuenta de facturación y los roles de colaborador de la cuenta de facturación se asignan mediante cualquiera de los métodos siguientes.
+
+### <a name="assign-roles-in-the-microsoft-365-admin-center"></a>Asignación de roles en el Centro de administración de Microsoft 365
+
+1. En el Centro de administración de Microsoft 365, vaya a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">FacturaciónCuentas de facturación</a> > .
+2. En la página **Cuentas de facturación** , en la sección **Roles de cuenta de facturación** , seleccione **Asignar roles**.
+3. En el panel **Asignar roles** , busque el nombre de la persona a la que desea asignar un rol.
+4. Seleccione el cuadro del nombre de rol que desea que tenga la persona y, a continuación, seleccione **Asignar**.
+
+### <a name="assign-roles-in-the-azure-portal"></a>Asignar roles en el Azure Portal
+
+1. En el Azure Portal, vaya a la página Control de <a href="https://portal.azure.com/#blade/Microsoft_Azure_GTM/ModernBillingMenuBlade/Overview" target="_blank">acceso (IAM).</a>
+2. En la página **Control de acceso (IAM),** seleccione **Agregar**.
+3. En el panel **Agregar permiso** , seleccione el **rol** que se va a asignar al usuario.
+4. Seleccione el usuario y, a continuación, seleccione **Guardar**.
 
 Para obtener más información sobre los roles de cuenta de facturación, consulte [Descripción del acceso a las cuentas de facturación](manage-billing-accounts.md#understand-access-to-billing-accounts).
 
 Si se trata de una nueva cuenta de facturación y nadie ha aceptado un contrato, se convierte automáticamente en el propietario de la cuenta de facturación, siempre que:
 
-- ¿Es la persona nombrada en la propuesta **, o**
+- ¿Es la persona nombrada en la propuesta **o**
 - Ya es un [administrador global Azure Active Directory](/azure/active-directory/roles/permissions-reference#global-administrator) para su organización
 
 ## <a name="what-is-the-overall-workflow"></a>¿Cuál es el flujo de trabajo general?
@@ -154,6 +170,9 @@ En esta sección se muestra una lista de todos los elementos incluidos en la pro
 - **Comprar ahora** Una lista de los elementos que paga durante la compra al final del flujo de trabajo de aceptación de la propuesta.
 - **Descuentos (aplicados a cargos futuros)** Una lista de descuentos que recibe como parte de la propuesta.
 - **Incluido** Una lista de los elementos incluidos como parte del paquete de propuestas sin cargo adicional. Algunos de estos artículos podrían tener un costo asociado a ellos en el futuro.
+
+> [!NOTE]
+> La propuesta puede incluir suscripciones con una fecha de inicio futura. Para obtener más información, consulte [Descripción de la facturación para futuras fechas de inicio](billing-and-payments/future-start-date.md).
 
 ### <a name="summary"></a>Resumen
 

@@ -21,12 +21,12 @@ description: Use el portal de cumplimiento de Microsoft Purview para buscar en e
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: fa397ec1ce7dea253367dfb917166a9a43655896
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e6754601aca5dda74ee59ed2c6c52b3f8b1eb2a3
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098480"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128508"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -1107,6 +1107,21 @@ Aquí se muestran algunas sugerencias para buscar actividades de administrador d
   - [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog)
 
    Tenga en cuenta que las mismas actividades de administrador de Exchange se registran tanto en el registro de auditoría de administración de Exchange como en el registro de auditoría.
+
+### <a name="encrypted-message-portal-activities"></a>Actividades del portal de mensajes cifrados
+
+Los registros de acceso están disponibles para los mensajes encriptados a través del portal de mensajes encriptados que permite a su organización determinar cuándo los mensajes son leídos, y reenviados por sus destinatarios externos. Para obtener más información sobre la activación y el uso de los registros de actividad del portal de mensajes cifrados, consulte [Registro de actividad del portal de mensajes cifrado](ome-message-access-logs.md).
+
+Cada entrada de auditoría para un mensaje rastreado contendrá los siguientes campos:
+
+- MessageID: contiene el ID del mensaje que está siendo rastreando. Es el identificador clave utilizado para seguir un mensaje a través del sistema.
+- Destinatario: lista de todas las direcciones de correo electrónico de los destinatarios.
+- Remitente: dirección de correo electrónico de origen.
+- AuthenticationMethod: describe el método de autenticación para acceder al mensaje, por ejemplo OTP, Yahoo, Gmail o Microsoft..
+- AuthenticationStatus: contiene un valor que indica que la autenticación tuvo éxito o falló.
+- OperationStatus : indica si la operación señalada tuvo éxito o fracasó.
+- AttachmentName: nombre del archivo adjunto.
+- OperationProperties: una lista de propiedades opcionales, por ejemplo el número de códigos de acceso OTP enviados, o el asunto del correo electrónico.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 

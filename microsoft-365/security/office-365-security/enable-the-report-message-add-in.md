@@ -17,12 +17,12 @@ ms.collection:
 description: Obtenga información sobre cómo habilitar el mensaje de informe o los complementos de suplantación de identidad de informe para Outlook y Outlook en la Web, para usuarios individuales o para toda la organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14d59cbe6f3f98aabc231da88e4f0919a3974c97
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: a4166b36888c96b12a8aa410848c392c2afdaeb5
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973231"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144847"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Habilitar los complementos Informar sobre el mensaje o Informar sobre suplantación de identidad
 
@@ -61,7 +61,7 @@ Si es un administrador global o un administrador de Exchange Online y Exchange e
 
 - Ambos complementos no están disponibles para buzones compartidos.
 
-- Ambos complementos no están disponibles para los buzones de correo de Exchange locales. 
+- Ambos complementos no están disponibles para los buzones de correo de Exchange locales.
 
 - El explorador web existente debe funcionar con los complementos Mensaje de informe y Suplantación de identidad de informe. Sin embargo, si observa que el complemento no está disponible o no funciona según lo esperado, pruebe con otro explorador.
 
@@ -81,7 +81,7 @@ Si es un administrador global o un administrador de Exchange Online y Exchange e
 
 2. Haga clic en **OBTENERLO AHORA**.
 
-   :::image type="content" source="../../media/ReportMessageGETITNOW.png" alt-text="El mensaje de informe Obtener ahora" lightbox="../../media/ReportMessageGETITNOW.png":::
+   :::image type="content" source="../../media/ReportMessageGETITNOW.png" alt-text="Mensaje de informe Obtener ahora." lightbox="../../media/ReportMessageGETITNOW.png":::
 
 3. En el cuadro de diálogo que aparece, revise los términos de uso y la directiva de privacidad y, a continuación, haga clic en **Continuar**.
 
@@ -92,7 +92,7 @@ Una vez instalado y habilitado el complemento, verá los iconos siguientes:
 - En Outlook, el icono tiene este aspecto:
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="Icono del complemento Mensaje de informe para Outlook" lightbox="../../media/OutlookReportMessageIcon.png":::
+    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="Icono del complemento Mensaje de informe para Outlook." lightbox="../../media/OutlookReportMessageIcon.png":::
 
 - En Outlook en la Web, el icono tiene este aspecto:
 
@@ -107,21 +107,21 @@ Una vez instalado y habilitado el complemento, verá los iconos siguientes:
 1. En el [Centro de administración de Microsoft 365](https://admin.microsoft.com/AdminPortal/Home?#/homepage), vaya a **Configuración** \> **Aplicaciones integradas**. Haga clic en **Obtener aplicaciones**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Las aplicaciones integradas de Centro de administración de Microsoft 365" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Las aplicaciones integradas de Centro de administración de Microsoft 365." lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
 
-2. En la página **Aplicaciones Microsoft 365** que aparece, haga clic en el cuadro **Buscar**, escriba Mensaje de **informe** y, a continuación, haga clic en el icono **Buscar** ![búsqueda.](../../media/search-icon.png) En la lista de resultados, busque y seleccione **Mensaje de informe**. 
+2. En la página **Aplicaciones Microsoft 365** que aparece, haga clic en el cuadro **Buscar**, escriba Mensaje de **informe** y, a continuación, haga clic en el icono **Buscar** ![búsqueda.](../../media/search-icon.png) En la lista de resultados, busque y seleccione **Mensaje de informe**.
 
-3. Se abre la página de detalles de la aplicación. Seleccione **Obtener ahora**. 
-
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message.png" alt-text="Complemento Mensaje de informe" lightbox="../../media/microsoft-365-admin-center-report-message.png":::
-
-4. Complete la información básica del perfil y, a continuación, haga clic en **Continuar**. 
+3. Se abre la página de detalles de la aplicación. Seleccione **Obtener ahora**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-profile-info.png" alt-text="Configuración del perfil del complemento mensaje de informe" lightbox="../../media/microsoft-365-admin-center-profile-info.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message.png" alt-text="Complemento Mensaje de informe." lightbox="../../media/microsoft-365-admin-center-report-message.png":::
 
-5. Se abre el control flotante **Implementar nueva aplicación** . Configure los siguientes valores. Haga clic en **Siguiente** para ir a la página siguiente para completar la configuración. 
+4. Complete la información básica del perfil y, a continuación, haga clic en **Continuar**.
+
+    > [!div class="mx-imgBorder"]
+    > :::image type="content" source="../../media/microsoft-365-admin-center-profile-info.png" alt-text="Configuración del perfil del complemento de mensaje de informe." lightbox="../../media/microsoft-365-admin-center-profile-info.png":::
+
+5. Se abre el control flotante **Implementar nueva aplicación** . Configure los siguientes valores. Haga clic en **Siguiente** para ir a la página siguiente para completar la configuración.
 
    - **Agregar usuarios**: seleccione uno de los valores siguientes:
      - **Sólo yo**
@@ -132,13 +132,13 @@ Una vez instalado y habilitado el complemento, verá los iconos siguientes:
      - **Aceptar solicitudes de permisos**: lea detenidamente los permisos y funcionalidades de la aplicación antes de ir a la página siguiente.
 
         > [!div class="mx-imgBorder"]
-        > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app.png" alt-text="Página Aceptar solicitudes de permisos" lightbox="../../media/microsoft-365-admin-center-deploy-new-app.png":::
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app.png" alt-text="La página Aceptar solicitudes de permisos." lightbox="../../media/microsoft-365-admin-center-deploy-new-app.png":::
 
-     - **Finalizar la implementación**: revise y termine de implementar el complemento. 
-     - **Implementación completada**: seleccione **Listo** para completar la instalación. 
+     - **Finalizar la implementación**: revise y termine de implementar el complemento.
+     - **Implementación completada**: seleccione **Listo** para completar la instalación.
 
         > [!div class="mx-imgBorder"]
-        > :::image type="content" source="../../media/microsoft-365-admin-center-deployment-complete.png" alt-text="Mensaje de notificación de la implementación completada" lightbox="../../media/microsoft-365-admin-center-deployment-complete.png":::
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deployment-complete.png" alt-text="Mensaje de notificación de la implementación completada." lightbox="../../media/microsoft-365-admin-center-deployment-complete.png":::
 
 ## <a name="edit-settings-for-the-report-message-add-in"></a>Editar la configuración del complemento Mensaje de informe
 
@@ -147,9 +147,9 @@ Una vez instalado y habilitado el complemento, verá los iconos siguientes:
 2. En el control flotante que aparece, seleccione **Editar usuarios** para editar la configuración del usuario.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message-edit.png" alt-text="El control flotante Mensaje de informe" lightbox="../../media/microsoft-365-admin-center-report-message-edit.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message-edit.png" alt-text="El control flotante Mensaje de informe." lightbox="../../media/microsoft-365-admin-center-report-message-edit.png":::
 
-3. Para quitar el complemento, seleccione **Quitar aplicación** en **Acciones** en el mismo control flotante. 
+3. Para quitar el complemento, seleccione **Quitar aplicación** en **Acciones** en el mismo control flotante.
 
 ## <a name="get-the-report-phishing-add-in"></a>Obtención del complemento de suplantación de identidad de informe
 
@@ -182,15 +182,15 @@ Una vez instalado y habilitado el complemento, verá los iconos siguientes:
 1. En el [Centro de administración de Microsoft 365](https://admin.microsoft.com/AdminPortal/Home?#/homepage), vaya a **Configuración** \> **Aplicaciones integradas**. Haga clic en **Obtener aplicaciones**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Las aplicaciones integradas de Centro de administración de Microsoft 365" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="Las aplicaciones integradas de Centro de administración de Microsoft 365." lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
 
-2. En la página **Aplicaciones Microsoft 365** que aparece, haga clic en el cuadro **Buscar**, escriba **Suplantación de identidad** de informe y, a continuación, haga clic en el icono **Buscar** ![búsqueda.](../../media/search-icon.png) En la lista de resultados, busque y seleccione **Suplantación de identidad de** informe. 
- 
+2. En la página **Aplicaciones Microsoft 365** que aparece, haga clic en el cuadro **Buscar**, escriba **Suplantación de identidad** de informe y, a continuación, haga clic en el icono **Buscar** ![búsqueda.](../../media/search-icon.png) En la lista de resultados, busque y seleccione **Suplantación de identidad de** informe.
+
 3. Se abre la página de detalles de la aplicación. Seleccione **Obtener ahora**.
 
 4. Complete la información básica del perfil y, a continuación, haga clic en **Continuar**.
 
-5. Se abre el control flotante **Implementar nueva aplicación** . Siga los pasos [descritos anteriormente](enable-the-report-message-add-in.md#get-the-report-message-add-in-for-your-organization) para completar la configuración. 
+5. Se abre el control flotante **Implementar nueva aplicación** . Siga los pasos [descritos anteriormente](enable-the-report-message-add-in.md#get-the-report-message-add-in-for-your-organization) para completar la configuración.
 
 ## <a name="edit-settings-for-the-report-phishing-add-in"></a>Editar la configuración del complemento de suplantación de identidad de informe
 
@@ -199,6 +199,6 @@ Una vez instalado y habilitado el complemento, verá los iconos siguientes:
 2. En el control flotante que aparece, seleccione **Editar usuarios** para editar la configuración del usuario.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="Control flotante De suplantación de identidad" lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="Control flotante De suplantación de identidad de informe." lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
 
-3. Para quitar el complemento, seleccione **Quitar aplicación** en **Acciones** en el mismo control flotante. 
+3. Para quitar el complemento, seleccione **Quitar aplicación** en **Acciones** en el mismo control flotante.

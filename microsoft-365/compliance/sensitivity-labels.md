@@ -18,18 +18,20 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Use etiquetas de confidencialidad de Microsoft Information Protection para clasificar y proteger contenido confidencial.
+description: Utilice las etiquetas de confidencialidad de Microsoft Purview Information Protection para clasificar y proteger el contenido confidencial.
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 1c7ec0f9411d767e588e391eb7eb94ec95a219fb
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 7bac33f19b51e2a5c6d6f234ba5e692cedd62c2b
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312213"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128464"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -40,7 +42,7 @@ ms.locfileid: "63312213"
 
 Para realizar su trabajo, las personas de su organización colaboran con otras tanto dentro como fuera de la organización. Esto significa que el contenido ya no se queda detrás de un firewall, sino que puede desplazarse a todas partes, a través de dispositivos, aplicaciones y servicios. Y cuando se desplaza, usted quiere que lo haga de una forma segura y protegida que cumpla con las directivas empresariales y de cumplimiento de normas de su organización.
 
-Las etiquetas de confidencial de la solución de Microsoft Information Protection le permiten clasificar y proteger los datos de la organización, a la vez que se asegura de que no se obstaculice la productividad de los usuarios y su capacidad de colaboración.
+Las etiquetas de confidencialidad de Microsoft Purview Information Protection le permiten clasificar y proteger los datos de su organización, a la vez que se asegura de que la productividad de los usuarios y su capacidad de colaboración no se vean obstaculizadas.
 
 Ejemplo que muestra las etiquetas de confidencialidad disponibles en Excel, en la pestaña **Inicio** de la cinta de opciones. En este ejemplo, la etiqueta aplicada se muestra en la barra de estado:
 
@@ -65,7 +67,7 @@ Puede usar etiquetas de confidencialidad para:
 
 - **Extender las etiquetas de confidencialidad a Power BI**: al activar esta función, puede aplicar y ver etiquetas en Power BI y proteger los datos cuando se guarden fuera del servicio.
 
-- Extender las etiquetas de confidencialidad a recursos de **Azure Purview**: al activar esta funcionalidad, actualmente en versión preliminar, se pueden aplicar las etiquetas de confidencialidad a archivos y recursos de datos esquematizados en Azure Purview. Los recursos de datos esquematizados incluyen SQL, Azure SQL, Azure Synapse, Azure Cosoms y AWS RDS.
+- **Extender las etiquetas de confidencialidad a los recursos en la asignación de datos de Microsoft Purview**: cuando se activa esta capacidad, actualmente en versión preliminar, se pueden aplicar las etiquetas de confidencialidad a los archivos y activos de datos esquematizados en la asignación de datos de Microsoft Purview. Los recursos de datos esquematizados incluyen SQL, Azure SQL, Azure Synapse, Azure Cosmos y AWS RDS.
 
 - **Extienda las etiquetas de confidencialidad a los servicios y aplicaciones de terceros.** Con el SDK de Microsoft Information Protection, las aplicaciones de terceros pueden leer las etiquetas de confidencialidad y aplicar la configuración de protección.
 
@@ -108,7 +110,7 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
     
     ¿Necesita comprobar cuándo se aplican marcas de contenido? Consulte [Cuándo las aplicaciones de Office aplican marcado de contenido y cifrado](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption).
     
-    Si tiene plantillas o flujos de trabajo basados en documentos específicos, pruebe esos documentos con las marcas de contenido elegidas antes de que la etiqueta esté disponible para los usuarios. Algunas restricciones de longitud de cadena que deben tenerse en cuenta:
+    Si tiene plantillas o flujos de trabajo que se basan en documentos específicos, pruebe esos documentos con las marcas de contenido elegidas antes de poner la etiqueta a disposición de los usuarios. Hay que tener en cuenta algunas restricciones de longitud de las cadenas:
     
     Las marcas de agua están limitadas a 255 caracteres. Los encabezados y pies de página tienen un límite de 1024 caracteres, excepto en Excel. Excel tiene un límite total de 255 caracteres para encabezados y pies de página, pero este límite incluye caracteres que no son visibles, como códigos de formato. Si se alcanza ese límite, la cadena que escriba no se mostrará en Excel.
 
@@ -120,7 +122,7 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
     
     ![Aviso para asignar una etiqueta necesaria.](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    Para más información sobre la configuración del **Etiquetado automático de archivos y correos electrónicos** cuando se crea o edita una etiqueta de confidencialidad, consulte [Aplicar automáticamente una etiqueta de confidencialidad al contenido](apply-sensitivity-label-automatically.md) para las aplicaciones de Office y [Etiquetado en Azure Purview](/azure/purview/create-sensitivity-label).
+    Para obtener más información sobre la configuración del **etiquetado automático para archivos y correos electrónicos** cuando se crea o edita una etiqueta de confidencialidad, consulte [Aplicar una etiqueta de confidencialidad al contenido automáticamente](apply-sensitivity-label-automatically.md) para las aplicaciones de Office y [Etiquetado en la asignación de datos de Microsoft Purview](/azure/purview/create-sensitivity-label).
 
 - **Establezca el tipo de vínculo de uso compartido predeterminado** para los sitios y documentos individuales de SharePoint. Para ayudar a evitar que los usuarios compartan demasiado, establezca el [ámbito y los permisos predeterminados](sensitivity-labels-default-sharing-link.md) para cuando los usuarios compartan documentos desde SharePoint y OneDrive.
 
@@ -130,7 +132,7 @@ Cuando cree una etiqueta de confidencialidad, se le pedirá que configure el ám
 - Las opciones de etiqueta que puede configurar para esa etiqueta
 - El lugar en el que los usuarios verán la etiqueta
 
-Esta configuración de ámbito le permite tener etiquetas de confidencialidad únicamente para documentos y mensajes de correo electrónico, y no se pueden seleccionar para contenedores. De la misma forma, las etiquetas de confidencialidad que son solo para contenedores, no pueden seleccionarse para documentos y mensajes de correo electrónico. También puede seleccionar el ámbito de recursos de Azure Purview:
+Esta configuración de ámbito le permite tener etiquetas de confidencialidad únicamente para documentos y mensajes de correo electrónico, y no se pueden seleccionar para contenedores. De la misma forma, las etiquetas de confidencialidad que son solo para contenedores, no pueden seleccionarse para documentos y mensajes de correo electrónico. También puede seleccionar el ámbito de los recursos de la asignación de datos de Microsoft Purview:
 
 ![Opciones de ámbito para etiquetas de confidencialidad.](../media/sensitivity-labels-scopes.png)
 
@@ -138,7 +140,7 @@ De forma predeterminada, el ámbito de **Archivos y correo electrónico** siempr
 
 - **Grupos y sitios**: [habilitar etiquetas de confidencialidad para contenedores y sincronizarlas](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **Recursos de datos esquematizados**: [etiquetar automáticamente el contenido en Azure Purview](/azure/purview/create-sensitivity-label)
+- **Recursos de datos esquematizados**: [etiquetar automáticamente su contenido en la asignación de datos de Microsoft Purview](/azure/purview/create-sensitivity-label)
 
 Si cambia los valores predeterminados, de modo que no se seleccionen todos los ámbitos, verá la primera página de la configuración de los ámbitos que no ha seleccionado, pero no podrá establecer la configuración. Por ejemplo, si el ámbito para archivos y mensajes de correo electrónico no está seleccionado, no podrá seleccionar las opciones en la página siguiente:
 
@@ -243,7 +245,7 @@ Si no ve la etiqueta o el comportamiento del valor de la directiva de etiquetas 
 
 Las etiquetas de confidencialidad integradas en Aplicaciones de Microsoft 365 en Windows, macOS, iOS y Android se ven y se comportan de forma muy similar en estos dispositivos para proporcionar a los usuarios una experiencia de etiquetado coherente. Sin embargo, en equipos de Windows, también puede usar el [cliente de Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2). Este cliente está ahora en [modo de mantenimiento](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613).
 
-Si usa el cliente AIP, consulte [Por qué elegir el etiquetado integrado de MIP en lugar del complemento de AIP para las aplicaciones de Office](sensitivity-labels-aip.md) para comprender y administrar las opciones de etiquetado para los equipos de Windows.
+Si utiliza el cliente AIP, consulte [Por qué elegir el etiquetado integrado en lugar del complemento AIP para las aplicaciones de Office](sensitivity-labels-aip.md) para comprender y administrar sus opciones de etiquetado para los ordenadores Windows.
 
 ### <a name="azure-information-protection-labels"></a>Etiquetas de Azure Information Protection
 
@@ -256,7 +258,7 @@ Si su espacio empresarial aún no está en la [plataforma de etiquetas unificada
 
 Como las etiquetas de confidencialidad se almacenan en los metadatos de un documento, las aplicaciones y los servicios de terceros pueden leer y escribir en los metadatos de etiqueta para complementar la implementación de la etiqueta. Además, los desarrolladores de software pueden usar el [SDK de Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk) para admitir por completo las características de etiquetado y cifrado en varias plataformas. Para obtener más información, consulte el [anuncio de disponibilidad general en el blog de la comunidad tecnológica](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). 
 
-También puede obtener más información sobre [las soluciones de asociados que se integran con la protección de la información de Microsoft](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657).
+También puede conocer las [soluciones de los socios que se integran con Microsoft Purview Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657).
 
 ## <a name="deployment-guidance"></a>Instrucciones de implementación
 

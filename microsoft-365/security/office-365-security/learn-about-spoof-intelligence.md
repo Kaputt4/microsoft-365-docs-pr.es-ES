@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la información de inteligencia sobre suplantación de identidad en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 30a9a7a9714ed5e071c53a6b1641204fd8c4fafe
-ms.sourcegitcommit: 363bdc517bd2564c6420cf21f352e97079f950e0
+ms.openlocfilehash: c147396ff47f924d7dd4b2ebd3a0cac106de94b2
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2022
-ms.locfileid: "65031840"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144737"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Información de inteligencia sobre suplantación de identidad en EOP
 
@@ -35,9 +35,6 @@ ms.locfileid: "65031840"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!NOTE]
-> Las características descritas en este artículo están en versión preliminar, están sujetas a cambios y no están disponibles en todas las organizaciones. Si su organización no tiene las características descritas en este artículo, consulte la experiencia de administración de suplantación de identidad anterior en [Administración de remitentes suplantados mediante la directiva de inteligencia sobre suplantación de identidad y la información de inteligencia sobre suplantación de identidad en EOP](walkthrough-spoof-intelligence-insight.md).
 
 En Microsoft 365 organizaciones con buzones de correo en organizaciones Exchange Online o independientes de Exchange Online Protection (EOP) sin Exchange Online buzones, los mensajes de correo electrónico entrantes se protegen automáticamente contra la suplantación de identidad. EOP usa **inteligencia de suplantación de identidad** como parte de la defensa general de su organización contra la suplantación de identidad (phishing). Para obtener más información, vea [Protección contra la suplantación de identidad en EOP](anti-spoofing-protection.md).
 
