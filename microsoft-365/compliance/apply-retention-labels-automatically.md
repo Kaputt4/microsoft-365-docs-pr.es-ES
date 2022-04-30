@@ -1,5 +1,5 @@
 ---
-title: Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
+title: Aplicar automáticamente una etiqueta de retención
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de retención de etiquetado automático para que se puedan aplicar etiquetas automáticamente y, así, conservar lo que se necesite y eliminar lo que no
-ms.openlocfilehash: 8c3df81eabb0d67993825d95e390d3e94c7a9bd7
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 2c1ea20f9b663ca8cee59043bbe6399f5bae66f1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64762021"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "65145293"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -63,7 +65,7 @@ Utilice las siguientes instrucciones para los dos pasos de administrador.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-El administrador global de su organización tiene permisos totales para crear y modificar etiquetas de retención y las directivas de las mismas. Si no inicia sesión como administrador global, consulte la información de permisos para la [administración de registros](get-started-with-records-management.md#permissions) o la [gobernanza de la información](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels), en función de la solución que use.
+El administrador global de su organización tiene permisos totales para crear y modificar etiquetas de retención y las directivas de las mismas. Si no inicia sesión como administrador global, consulte la información de permisos para la [administración de registros](get-started-with-records-management.md#permissions) o la [administración del ciclo de vida de los datos](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels), en función de la solución que use.
 
 Asegúrese de que ha [creado las etiquetas de retención](file-plan-manager.md#create-retention-labels) que desea aplicar a los elementos.
 
@@ -73,13 +75,13 @@ Antes de crear la directiva de etiqueta de retención, decida si será **adaptab
 
 Cuando se crea una directiva de aplicación automática, se selecciona una etiqueta de retención para aplicarla automáticamente a contenido, en función de las condiciones especificadas.
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), desplácese hasta una de las siguientes locaciones:
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), navegue a una de las siguientes ubicaciones:
     
     - Si utiliza la administración de registros:
         - **Soluciones** > **Administración de registros** > > pestaña **Directivas de etiquetas** > **Aplicar automáticamente una etiqueta**
     
-    - Si usa el gobierno de la información:
-        - **Soluciones** > **Gobierno de información** > pestaña de **Directivas de etiquetas** > **Aplicar etiqueta automáticamente**
+    - Si utiliza la solución de administración del ciclo de vida de los datos:
+        - **Soluciones** > **Administración del ciclo de vida de los datos** > **Directivas de etiquetas** pestaña > **Aplicar una etiqueta automáticamente**
     
     ¿No encuentra inmediatamente la solución en el panel de navegación? Primero, seleccione **Mostrar todo**.
 
@@ -147,7 +149,7 @@ Además, los elementos de SharePoint que están en borrador o que nunca se han p
 > 
 > Aunque los buzones de grupo normalmente se incluirían seleccionando la ubicación **Grupos de Microsoft 365**, para esta configuración de directiva específica, la ubicación de grupos solo incluye sitios de SharePoint conectados a un grupo de Microsoft 365.
 
-Al crear directivas de etiquetas de retención de aplicación automática para información confidencial, verá la misma lista de plantillas de directiva que cuando se crea una directiva de prevención de pérdida de datos (DLP). Cada plantilla está preconfigurada para buscar determinados tipos de información confidencial. En el siguiente ejemplo, los tipos de información confidencial son de la categoría **Privacidad**, y **la plantilla de datos de información personal identificable (PII) de Estados Unidos** :
+Al crear directivas de etiquetas de retención de aplicación automática para información confidencial, verá la misma lista de plantillas de directiva que cuando se crea una directiva de prevención de pérdida de datos de Microsoft Purview (DLP). Cada plantilla está preconfigurada para buscar determinados tipos de información confidencial. En el siguiente ejemplo, los tipos de información confidencial son de la categoría **Privacidad**, y **la plantilla de datos de información personal identificable (PII) de Estados Unidos** :
 
 ![Plantillas de directiva con tipos de información confidencial.](../media/sensitive-info-configuration.png)
 
@@ -341,7 +343,7 @@ Al aplicar automáticamente etiquetas de retención basadas en información conf
   
 ![Diagrama de cuándo entran en vigor las etiquetas de aplicación automática.](../media/retention-labels-autoapply-timings.png)
 
-Si las etiquetas que esperaba no aparecen después de siete días, compruebe el **Estado** de la directiva de aplicación automática seleccionándola en la página **Directivas de etiqueta** en el Centro de cumplimiento. Si ve el estado como **Desactivado (error)** y, en los detalles de las ubicaciones, un mensaje indica que se está tardando más de lo esperado en implementar la directiva (para SharePoint) o en probar la implementación de la directiva (para OneDrive), pruebe a ejecutar el comando [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) en PowerShell para volver a intentar la distribución de la directiva:
+Si las etiquetas que esperaba no aparecen después de siete días, compruebe el **Estado** de la directiva de aplicación automática seleccionándola en la página **Directivas de etiqueta** en el portal del Centro de cumplimiento de Microsoft Purview. Si ve el estado como **Desactivado (error)** y, en los detalles de las ubicaciones, un mensaje indica que se está tardando más de lo esperado en implementar la directiva (para SharePoint) o en probar la implementación de la directiva (para OneDrive), pruebe a ejecutar el comando [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) en PowerShell para volver a intentar la distribución de la directiva:
 
 1. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
 

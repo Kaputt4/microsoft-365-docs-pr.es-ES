@@ -2,8 +2,8 @@
 title: Referencia de características para la búsqueda de contenido
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Este artículo contiene información de referencia sobre la herramienta de exhibición de documentos electrónicos de búsqueda de contenido en el portal de cumplimiento de Microsoft Purview para ayudarle a obtener información sobre la búsqueda de contenido.
-ms.openlocfilehash: 72088b1a1bd2e3f3ba2c38ee827c6eb46b7c893a
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 8d7f1497a0dbd400536dd74c5abd4b9e3be7e29f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995720"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097126"
 ---
 # <a name="feature-reference-for-content-search"></a>Referencia de características para la búsqueda de contenido
 
@@ -192,7 +192,7 @@ Para buscar elementos de conversación específicos en los Grupos Yammer puede u
 
 ## <a name="searching-inactive-mailboxes"></a>Buscar en buzones inactivos
 
-Puede buscar en buzones inactivos en una búsqueda de contenido. Para obtener una lista de los buzones inactivos de la organización, ejecute el comando `Get-Mailbox -InactiveMailboxOnly` en Exchange Online PowerShell. Como alternativa, puede ir a **Gobernanza de la información** \> **Retención** en el Centro de seguridad y cumplimiento y, a continuación, haga clic en **Más**![Puntos suspensivos en la barra de navegación](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif). \> **Buzones de correo inactivos**.
+Puede buscar en buzones inactivos en una búsqueda de contenido. Para obtener una lista de los buzones inactivos de la organización, ejecute el comando `Get-Mailbox -InactiveMailboxOnly` en Exchange Online PowerShell. Como alternativa, puede ir a **administración del ciclo de vida de los datos**\>**Retención** en el portal de cumplimiento normativo de Microsoft Purview y, a continuación, hacer clic en **más**![ en los puntos suspensivos de la barra de navegación.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Buzones de correo inactivos**.
 
 A continuación, se detallan algunos aspectos que se deben tener en cuenta al buscar buzones inactivos:
 

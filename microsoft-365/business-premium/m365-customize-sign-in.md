@@ -2,13 +2,13 @@
 title: Personalizar la página de inicio de sesión con un aviso de privacidad y consentimiento
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
+ms.author: v-kcirillo
+author: cirilk
 manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -22,31 +22,34 @@ search.appverid:
 - BCS160
 - MET150
 description: Personalice la página de inicio de sesión con un aviso de privacidad y consentimiento para Microsoft 365.
-ms.openlocfilehash: 8beff76721ce622d5e1943aea1c16fda90b052f1
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
-ms.translationtype: MT
+ms.openlocfilehash: 84c7a488d8a6ba854e3ac8b09067fd350c9ae4fc
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634699"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097896"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>Personalizar la página de inicio de sesión con un aviso de privacidad y consentimiento
 
-Su empresa o campaña puede facilitar a las agencias de seguridad presentar cargos legales contra los criminales en línea agregando un aviso de privacidad y consentimiento a la página de inicio de sesión.
+Su empresa o campaña puede facilitar a los organismos de cumplimiento de la ley la presentación de cargos legales contra delincuentes que operan por internet mediante la adición de un aviso de privacidad y consentimiento a la página de inicio de sesión.
 
-Puede personalizar la página de inicio de sesión con la personalización de marca. También puede agregar texto para ayudar a los usuarios a iniciar sesión o para señalar requisitos legales o restricciones para obtener acceso a Microsoft 365 recursos.
+Puede personalizar la página de inicio de sesión con la personalización de marca. También puede agregar texto para ayudar a los usuarios a iniciar sesión o para indicar requisitos legales o restricciones para obtener acceso a recursos de Microsoft 365.
 
-## <a name="design-customization-the-text-on-your-sign-in-page"></a>Personalización de diseño del texto de la página de inicio de sesión
+## <a name="design-customization-the-text-on-your-sign-in-page"></a>Personalización del diseño del texto en la página de inicio de sesión
 
-Para actualizar los elementos personalizables en la página de inicio de sesión, debe ser un administrador global. Para obtener instrucciones específicas, consulte [Agregar artículo de personal de marca de](/azure/active-directory/fundamentals/customize-branding) la empresa.
+Para actualizar los elementos personalizables en la página de inicio de sesión, debe ser administrador global. Para obtener instrucciones específicas, consulte el artículo [agregar personalización de marca de empresa](/azure/active-directory/fundamentals/customize-branding).
 
 Los elementos que puede actualizar son:
 
-- **Texto de página de inicio de sesión** Un lugar fácil para agregar la declaración de privacidad y consentimiento.
-
-- Imagen de fondo de página de inicio de sesión
-
+- Texto de la página de inicio de sesión (un fácil lugar para agregar la declaración de privacidad y consentimiento)
+- Imagen de fondo de la página de inicio de sesión
 - Logotipo de banner
-
 - Sugerencia de nombre de usuario
 
-Para obtener ejemplos de avisos de privacidad y consentimiento, vea el Apéndice A en [Searching and Seizing Computers y Obtaining Electronic Evidence in Criminal Investigations](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).
+Para obtener ejemplos de avisos de privacidad y consentimiento, consulte el Apéndice A [Buscar y tomar el control equipos y obtener evidencias electrónicas en investigaciones penales](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).
+
+## <a name="next-steps"></a>Siguientes pasos
+
+1. [Utilizar el proceso guiado para la configuración básica](m365bp-setup.md#use-the-guided-process-for-basic-setup).
+
+2. [Configurar las funcionalidades de seguridad](m365bp-security-overview.md).

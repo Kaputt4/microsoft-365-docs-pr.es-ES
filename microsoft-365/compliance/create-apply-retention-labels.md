@@ -1,5 +1,5 @@
 ---
-title: Publicar etiquetas de retención y aplicarlas en aplicaciones para conservar o eliminar contenido
+title: Publique y aplique etiquetas de retención.
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para publicar etiquetas de retención para poder aplicarlas en aplicaciones para conservar lo que necesita y eliminar lo que no.
-ms.openlocfilehash: a1d8a32a9190ddb645160fc475fb72a9d1dcd72e
-ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
+ms.openlocfilehash: c2088afd895b47945bea056c940e564b4dd770fb
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64638407"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "65145403"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publicar etiquetas de retención y aplicarlas en aplicaciones
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -48,7 +50,7 @@ Utilice las siguientes instrucciones para los dos pasos de administrador.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-El administrador global de su organización tiene permisos totales para crear y modificar etiquetas de retención y las directivas de las mismas. Si no inicia sesión como administrador global, consulte la información de permisos para la [administración de registros](get-started-with-records-management.md#permissions) o la [gobernanza de la información](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels), en función de la solución que use.
+El administrador global de su organización tiene permisos totales para crear y modificar etiquetas de retención y las directivas de las mismas. Si no inicia sesión como administrador global, consulte la información de permisos para la [administración de registros](get-started-with-records-management.md#permissions) o la [administración del ciclo de vida de los datos](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels), en función de la solución que use.
 
 Asegúrese de que ha [creado las etiquetas de retención](file-plan-manager.md#create-retention-labels) que desea aplicar a los elementos.
 
@@ -56,13 +58,13 @@ Asegúrese de que ha [creado las etiquetas de retención](file-plan-manager.md#c
 
 Antes de crear la directiva de etiqueta de retención, decida si será **adaptable** o **estática**. Para obtener más información, vea [Ámbitos de directivas adaptables o estáticas para retención](retention.md#adaptive-or-static-policy-scopes-for-retention). Si decide usar una directiva adaptable, debe crear uno o más ámbitos adaptables antes de crear la directiva de etiqueta de retención. Luego deberá seleccionarlos durante el proceso de creación de directivas de etiqueta de retención. Para obtener instrucciones, vea [Información de configuración para ámbitos adaptables](retention-settings.md#configuration-information-for-adaptive-scopes).
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a una de las siguientes ubicaciones:
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento de Microsoft Purview</a>, vaya a una de las siguientes ubicaciones:
     
     - Si utiliza la administración de registros:
         - **Soluciones** > **Administración de registros** > > pestaña **Directivas de etiquetas** > **Etiquetas publicadas**
     
-    - Si usa la gobernanza de la información:
-        - **Soluciones** > **Gobierno de información** > pestaña **Directivas de etiquetas** > **Publicar etiquetas**
+    - Si utiliza la administración del ciclo de vida de los datos:
+        - **Soluciones** > **Administración del ciclo de vida de los datos** > **Directivas de etiquetas** pestaña > **Publicar etiquetas**
     
     ¿No encuentra inmediatamente la solución en el panel de navegación? Primero, seleccione **Mostrar todo**. 
 
@@ -90,7 +92,7 @@ Si publica etiquetas de retención en Exchange, las etiquetas de retención pued
 
 ![Diagrama de cuándo las etiquetas publicadas surten efecto.](../media/retention-labels-published-timings.png)
 
-Si las etiquetas no aparecen después de siete días, compruebe el **Estado** de la directiva de etiqueta seleccionándola en la página **Directivas de etiqueta** en el centro de cumplimiento. Si el estado es **(Error)** y en los detalles de las ubicaciones aparece un mensaje que indica que se está tardando más de lo esperado en implementar la directiva o en intentar volver a implementarla, intente ejecutar el comando de PowerShell [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) o [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) para volver a intentar la distribución de directivas:
+Si las etiquetas no aparecen después de siete días, compruebe el **Estado** de la directiva de etiquetas seleccionándola en la página **Directivas de etiquetas** en el portal del Centro de cumplimiento de Microsoft Purview. Si el estado es **(Error)** y en los detalles de las ubicaciones aparece un mensaje que indica que se está tardando más de lo esperado en implementar la directiva o en intentar volver a implementarla, intente ejecutar el comando de PowerShell [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) o [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) para volver a intentar la distribución de directivas:
 
 1. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
 

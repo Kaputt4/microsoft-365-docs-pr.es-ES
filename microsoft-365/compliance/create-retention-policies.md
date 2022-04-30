@@ -1,5 +1,5 @@
 ---
-title: Cree y configure directivas de retención para retener o eliminar automáticamente el contenido
+title: Conservar o eliminar contenido automáticamente mediante directivas de retención
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 5a57093ed4ecd5b87a62701e3c055888ed16a5ca
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 22373fddf6a4ccac718f9fede9d1bbc40b92681d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595332"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "65145337"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -40,7 +42,7 @@ Para obtener más información sobre las directivas de retención y cómo funcio
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-El administrador global de su organización tiene permisos totales para crear y modificar directivas de retención. Si no está iniciando sesión como administrador global, consulte la [información de permisos de gobernanza de la información](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels).
+El administrador global de su organización tiene permisos totales para crear y modificar directivas de retención. Si no está iniciando sesión como administrador global, consulte la [información de permisos de administración del ciclo de vida de datos](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels).
 
 Antes de crear la directiva de retención, decida si será **adaptable** o **estática**. Para obtener más información, vea [Ámbitos de directivas adaptables o estáticas para retención](retention.md#adaptive-or-static-policy-scopes-for-retention). Si decide usar una directiva adaptable, debe crear uno o más ámbitos adaptables antes de crear la directiva de retención. Luego deberá seleccionarlos durante el proceso de creación de directivas de retención. Para obtener instrucciones, vea [Información de configuración para ámbitos adaptables](retention-settings.md#configuration-information-for-adaptive-scopes).
 
@@ -76,7 +78,7 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
 > [!NOTE]
 > Las directivas de retención ahora admiten [canales compartidos](/MicrosoftTeams/shared-channels), actualmente en versión preliminar. Al configurar las opciones de retención para la ubicación de **mensajes del canal de** Teams, si un equipo tiene canales compartidos, heredan la configuración de retención de su equipo primario.
 
-1. Desde el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Información de gobernanza** > **Directivas de retención**.
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), seleccione **Administración del ciclo de vida de datos** > **Directivas de retención**.
 
 2. Seleccione **Nueva directiva de retención** para iniciar la configuración de **Crear directiva de retención** y asigne un nombre a la nueva directiva de retención.
 
@@ -132,7 +134,7 @@ Es posible que una directiva de retención que se aplique a los grupos de Micros
 >
 > Para usar esta característica, la red de Yammer debe estar en [Modo nativo](/yammer/configure-your-yammer-network/overview-native-mode), en lugar de en Modo híbrido.
 
-1. Desde el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Información de gobernanza** > **Directivas de retención**.
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), seleccione **Administración del ciclo de vida de datos** > **Directivas de retención**.
 
 2. Seleccione **Nueva directiva de retención** para crear una nueva directiva de retención.
 
@@ -180,7 +182,7 @@ Use las siguientes instrucciones para crear directivas de retención que aplique
 - Grupos de Microsoft 365
 - Skype Empresarial
 
-1. Desde el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Información de gobernanza** > **Directivas de retención**.
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), seleccione **Administración del ciclo de vida de datos** > **Directivas de retención**.
 
 2. Seleccione **Nueva directiva de retención** para iniciar la configuración de **Crear directiva de retención** y asigne un nombre a la nueva directiva de retención.
 
@@ -210,7 +212,7 @@ Cuando se crea y envía una directiva de retención, ésta puede tardar hasta si
   
 ![Diagrama de cuándo surte efecto la directiva de retención.](../media/retention-policy-timings.png)
 
-En primer lugar, la directiva de retención debe distribuirse a las ubicaciones seleccionadas y luego aplicarse al contenido. Se puede comprobar el estado de distribución de la directiva de retención seleccionándola en la página **Directivas de retención** del centro de cumplimiento. En el panel flotante, si el estado es **(Error)** y en los detalles de las ubicaciones aparece un mensaje que indica que se está tardando más de lo esperado en implementar la directiva o en intentar volver a implementarla, intente ejecutar el comando de PowerShell [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy)o el [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) para volver a intentar la distribución de directivas:
+En primer lugar, la directiva de retención debe distribuirse a las ubicaciones seleccionadas y luego aplicarse al contenido. Se puede comprobar el estado de distribución de la directiva de retención seleccionándola en la página **Directivas de retención** del portal del centro de cumplimiento de Microsoft Purview. En el panel flotante, si el estado es **(Error)** y en los detalles de las ubicaciones aparece un mensaje que indica que se está tardando más de lo esperado en implementar la directiva o en intentar volver a implementarla, intente ejecutar el comando de PowerShell [Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy)o el [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) para volver a intentar la distribución de directivas:
 
 1. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
@@ -236,6 +238,6 @@ Algunas opciones de configuración no se pueden cambiar después de crear y guar
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Si algunos elementos de Exchange, SharePoint, OneDrive o Grupos de Microsoft 365 necesitan una configuración de retención diferente de la configuración de directiva de retención que ha configurado, [crear etiquetas de retención para estas excepciones](create-retention-labels-information-governance.md).
+Si algunos elementos de Exchange, SharePoint, OneDrive o Grupos de Microsoft 365 necesitan una configuración de retención diferente de la configuración de directiva de retención que ha configurado, [crear etiquetas de retención para estas excepciones](create-retention-labels-data-lifecycle-management.md).
 
-Sin embargo, si busca la administración del ciclo de vida de elementos de gran valor para requisitos empresariales, legales o de mantenimiento de registros normativos, [use el plan de archivos para crear y administrar etiquetas de retención](file-plan-manager.md).
+Sin embargo, si busca gestionar elementos de gran valor para requisitos empresariales, legales o de mantenimiento de registros normativos, [use el plan de archivos para crear y administrar etiquetas de retención](file-plan-manager.md).

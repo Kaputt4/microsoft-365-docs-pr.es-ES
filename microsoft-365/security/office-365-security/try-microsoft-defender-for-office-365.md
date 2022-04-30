@@ -19,17 +19,14 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: ''
-ms.openlocfilehash: c65d5b9c73204de1ad537ce5bb1c05b09bc8df32
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 716a3a0255074a1180d01bbe0e3ef5067e7a31cf
+ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847036"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65145233"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Pruebe Microsoft Defender para Office 365
-
-> [!NOTE]
-> La característica que se describe en este artículo está en versión preliminar, no está disponible en todas las organizaciones y está sujeta a cambios.
 
 El portal **de pruebas** unificadas del portal de Microsoft 365 Defender proporciona un único punto de entrada para las experiencias de evaluación y evaluación anteriormente independientes para Microsoft Defender para Office 365. La intención es permitirle probar las características de Defender para Office 365 Plan 2 durante 90 días antes de confirmarlo por completo. Sin embargo, hay diferencias en las experiencias de evaluación basadas en la naturaleza de la organización Microsoft 365:
 
@@ -48,6 +45,8 @@ El portal **de pruebas** unificadas del portal de Microsoft 365 Defender proporc
 Se le invita a iniciar la prueba en varias ubicaciones de características de Defender para Office 365 en el portal de Microsoft 365 Defender en <https://security.microsoft.com>. La ubicación centralizada para iniciar la prueba se encuentra en la página **Pruebas** en <https://security.microsoft.com/atpEvaluation>.
 
 En el resto de este artículo se explica la diferencia entre el modo de bloqueo del modo de auditoría, cómo configurar las evaluaciones y otros detalles.
+
+Para obtener una guía complementaria sobre cómo usar la prueba, consulte Cuaderno de estrategias de [prueba: Microsoft Defender para Office 365](trial-playbook-defender-for-office-365.md).
 
 ## <a name="overview-of-defender-for-office-365"></a>Introducción a Defender para Office 365
 
@@ -99,10 +98,10 @@ Al evaluar Defender para Office 365, están presentes las directivas que control
 
    - **Todos los usuarios**: esta es la opción predeterminada y recomendada.
    - **Seleccionar usuarios**: si selecciona esta opción, debe seleccionar los destinatarios internos a los que se aplica la evaluación:
-     - **Usuarios**: buzones, usuarios de correo o contactos de correo especificados.
+     - **Usuarios**: los buzones de correo, los usuarios de correo o los contactos de correo especificados.
      - **Grupos**:
-       - Miembros de los grupos de distribución especificados o grupos de seguridad habilitados para correo.
-       - El Grupos de Microsoft 365 especificado.
+       - Miembros de los grupos de distribución o grupos de seguridad habilitados para correo especificados.
+       - Los Grupos de Microsoft 365 especificados.
        - **Dominios**: todos los destinatarios de los [dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) especificados en la organización.
 
      Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
@@ -170,10 +169,10 @@ Al evaluar Defender para Office 365, están presentes las directivas que control
 
    - **Todos los usuarios**: esta es la opción predeterminada y recomendada.
    - **Seleccionar usuarios**: si selecciona esta opción, debe seleccionar los destinatarios internos a los que se aplica la evaluación:
-     - **Usuarios**: buzones, usuarios de correo o contactos de correo especificados.
+     - **Usuarios**: los buzones de correo, los usuarios de correo o los contactos de correo especificados.
      - **Grupos**:
-       - Miembros de los grupos de distribución especificados o grupos de seguridad habilitados para correo.
-       - El Grupos de Microsoft 365 especificado.
+       - Miembros de los grupos de distribución o grupos de seguridad habilitados para correo especificados.
+       - Los Grupos de Microsoft 365 especificados.
      - **Dominios**: todos los destinatarios de los [dominios aceptados](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) especificados en la organización.
 
      Haga clic en el cuadro correspondiente, comience a escribir un valor y seleccione el valor que desee de los resultados. Repita este proceso tantas veces como sea necesario. Para quitar un valor existente, haga clic en Quitar ![Icono Quitar.](../../media/m365-cc-sc-remove-selection-icon.png) junto al valor.
@@ -234,22 +233,22 @@ La configuración de la Defender para Office 365 creada específicamente para la
 |AdminDisplayName|Directiva de evaluación|
 |AuthenticationFailAction|MoveToJmf|
 |Habilitado|Verdadero|
-|EnableFirstContactSafetyTips|Falso|
+|EnableFirstContactSafetyTips|False|
 |EnableMailboxIntelligence|Verdadero|
 |EnableMailboxIntelligenceProtection|Verdadero|
-|EnableOrganizationDomainsProtection|Falso|
-|EnableSimilarDomainsSafetyTips|Falso|
-|EnableSimilarUsersSafetyTips|Falso|
+|EnableOrganizationDomainsProtection|False|
+|EnableSimilarDomainsSafetyTips|False|
+|EnableSimilarUsersSafetyTips|False|
 |EnableSpoofIntelligence|Verdadero|
 |EnableSuspiciousSafetyTip|Falso|
 |EnableTargetedDomainsProtection|False|
 |EnableTargetedUserProtection|False|
 |EnableUnauthenticatedSender|Verdadero|
-|EnableUnusualCharactersSafetyTips|Falso|
+|EnableUnusualCharactersSafetyTips|False|
 |EnableViaTag|Verdadero|
 |Guid|Valor DE GUID|
 |ImpersonationProtectionState|Manual|
-|IsDefault|Falso|
+|IsDefault|False|
 |MailboxIntelligenceProtectionAction|NoAction|
 |MailboxIntelligenceProtectionActionRecipients|{}|
 |MailboxIntelligenceQuarantineTag|DefaultFullAccessPolicy|
@@ -268,7 +267,7 @@ La configuración de la Defender para Office 365 creada específicamente para la
 |AntiSpoofEnforcementType|Alto|
 |AuthenticationSafetyTipText|Blanco|
 |AuthenticationSoftPassSafetyTipText|Blanco|
-|EnableAuthenticationSafetyTip|Falso|
+|EnableAuthenticationSafetyTip|False|
 |EnableAuthenticationSoftPassSafetyTip|False|
 |PolicyTag|Blanco|
 |SimilarUsersSafetyTipsCustomText|Blanco|
@@ -292,12 +291,12 @@ La configuración de la Defender para Office 365 creada específicamente para la
 |EnableOrganizationBranding|False|
 |Guid|Valor DE GUID|
 |IsBuiltInProtection|False|
-|IsDefault|Falso|
+|IsDefault|False|
 |Nombre|Directiva de evaluación|
 |OperationMode|Delay|
 |QuarantineTag|AdminOnlyAccessPolicy|
 |RecommendedPolicyType|Evaluation|
-|Redirect|Falso|
+|Redirect|False|
 |RedirectAddress|{}|
 |ScanTimeout|30|
 
@@ -306,7 +305,7 @@ La configuración de la Defender para Office 365 creada específicamente para la
 |Configuración|Valor|
 |---|---|
 |AdminDisplayName|Directiva de evaluación|
-|AllowClickThrough|Falso|
+|AllowClickThrough|False|
 |CustomNotificationText|Blanco|
 |DeliverMessageAfterScan|Verdadero|
 |DisableUrlRewrite|Verdadero|

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo auditar las actividades de los usuarios y administradores de su organización de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cc70060872c9f416120e859673ad9a3799322048
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4dd26229e5ca29344524238903dd2e972ac09ad7
+ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100883"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65145363"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Soluciones de auditoría en Microsoft Purview
 
@@ -53,7 +53,7 @@ Auditoría de Microsoft Purview (Estándar) le proporciona la capacidad de regis
   - [Referencia del cmdlet Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
   - [Usar un script de PowerShell para buscar en el registro de auditoría](audit-log-search-script.md)
 
-- **Exportar registros de auditoría a un archivo CSV**. Después de ejecutar la herramienta de búsqueda de registros de auditoría del Centro de cumplimiento, puede exportar los registros de auditoría encontrados a un archivo CSV. Esto le permite usar Microsoft Excel para ordenar y filtrar según diferentes propiedades de los registro de auditoría. También puede usar la funcionalidad de transformación de Power Query de Excel para dividir cada propiedad del objeto JSON de AuditData en su propia columna. Esto le permite ver y comparar eficazmente datos similares de diferentes eventos. Para más información, consulte[Exportar, configurar y ver registros de auditoría](export-view-audit-log-records.md).
+- **Exportar registros de auditoría a un archivo CSV**. Después de ejecutar la herramienta de búsqueda de registros de auditoría del Portal de cumplimiento, puede exportar los registros de auditoría encontrados a un archivo CSV. Esto le permite usar Microsoft Excel para ordenar y filtrar según diferentes propiedades de los registro de auditoría. También puede usar la funcionalidad de transformación de Power Query de Excel para dividir cada propiedad del objeto JSON de AuditData en su propia columna. Esto le permite ver y comparar eficazmente datos similares de diferentes eventos. Para más información, consulte[Exportar, configurar y ver registros de auditoría](export-view-audit-log-records.md).
 
 - **Acceso a registros de auditoría a través de la API de Actividad de administración de Office 365**. Un tercer método para obtener acceso y encontrar registros de auditoría es usar la API de Actividad de administración de Office 365. Esto permite a las organizaciones conservar los datos de auditoría durante períodos superiores a los 90 días predeterminados, y les permite importar sus datos de auditoría a una solución SIEM. Para obtener más información, consulte la [referencia de la API de Actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
@@ -90,7 +90,7 @@ En la tabla siguiente se comparan las funcionalidades clave disponibles en Audit
 |Retención de 10 años de registros de auditoría <sup>2</sup>||![Compatible](../media/check-mark.png)|
 |Directivas de retención de los registros de auditoría||![Compatible](../media/check-mark.png)|
 |Eventos cruciales de gran valor||![Compatible](../media/check-mark.png)|
-||||
+
 > [!NOTE]
 > <sup>1</sup> Auditoría (Premium) incluye un mayor acceso de ancho de banda a la API de actividad de administración de Office 365, lo que proporciona un acceso más rápido a los datos de auditoría.<br/><sup>2</sup> Además de las licencias necesarias para Auditoría (Premium) (descritas en la sección siguiente), a un usuario se le debe asignar una licencia de complemento de retención de registros de auditoría de 10 años para conservar sus registros de auditoría durante 10 años.
 
@@ -100,14 +100,14 @@ En las secciones siguientes se identifican los requisitos de licencia para Audit
 
 ### <a name="audit-standard"></a>Auditoría (estándar)
 
-- Suscripción a Microsoft 365 Empresa Básico
-- Suscripción a Aplicaciones de Microsoft 365 para negocios
-- Suscripción a Microsoft 365 Enterprise E3
-- Microsoft 365 Empresa Premium
-- Suscripción a Microsoft 365 Educación A3
-- Suscripción a Microsoft 365 Administración Pública G3
-- Suscripción a Microsoft 365 Administración Pública G1
-- Suscripción a Microsoft 365 Frontline F1 o F3, o al complemento F5 Security
+- Suscripción a Microsoft Purview Empresa Básico
+- Suscripción a Aplicaciones de Microsoft Purview para negocios
+- Suscripción a Microsoft Purview Enterprise E3
+- Microsoft Purview Empresa Premium
+- Suscripción a Microsoft Purview Educación A3
+- Suscripción a Microsoft Purview Administración Pública G3
+- Suscripción a Microsoft Purview Administración Pública G1
+- Suscripción a Microsoft Purview Frontline F1 o F3, o al complemento F5 Security
 - Suscripción a Office 365 Enterprise E3
 - Suscripción a Office 365 Enterprise E1
 - Suscripción a Office 365 Educación A1
@@ -158,7 +158,7 @@ Si su organización tiene una suscripción que admite Auditoría (Premium), real
   
    - La activación del plan de servicio o aplicación de Auditoría (Premium) debe ser para esos usuarios.
   
-   - Habilitar la auditoría de eventos cruciales y, después, activar el plan de servicio/aplicación de auditoría avanzada para esos usuarios.
+   - Habilitar la auditoría de eventos cruciales y, después, activar el plan de servicio/aplicación Auditoria (Premium) para esos usuarios.
 
 2. Habilite los eventos de Auditoría (Premium) para que se registren cuando los usuarios realicen búsquedas en Exchange Online y SharePoint Online.
 
@@ -168,6 +168,15 @@ Si su organización tiene una suscripción que admite Auditoría (Premium), real
 
 Para obtener instrucciones más detalladas, vea [Configurar Auditoría (Premium)](set-up-advanced-audit.md).
 
+## <a name="encrypt-audit-records-using-customer-key"></a>Cifrado de registros de auditoría mediante la clave de cliente
+
+Puede habilitar el cifrado de claves de cliente para los registros de auditoría. La auditoría se basa en el [cifrado del servicio con clave de cliente](customer-key-overview.md) para cifrar información confidencial de los datos de auditoría de la organización. La implementación de la clave de cliente proporcionará protección adicional al impedir que los sistemas no autorizados o el personal del centro de datos de Microsoft vean los datos de auditoría en la canalización de auditoría y en reposo. El uso de la clave de cliente para cifrar los datos de auditoría también le ayudará a cumplir las obligaciones normativas o de cumplimiento, ya que su organización proporcionará y controlará las claves de cifrado.
+
+Para implementar la clave de cliente para la auditoría, deberá crear una directiva de cifrado de datos (DEP) de varias cargas de trabajo que defina la jerarquía de cifrado. Para obtener instrucciones detalladas paso a paso, consulte [Configuración de la clave de cliente](customer-key-set-up.md).
+
+> [!NOTE]
+> No todos los registros de auditoría de su organización están cifrados. El servicio Microsoft Purview, que genera registros de auditoría específicos para la actividad de ese servicio, define si el registro de auditoría está cifrado o no.
+
 ## <a name="training"></a>Formación
 
-Entrenar al equipo de operaciones de seguridad, a los administradores de TI y al equipo de investigadores de cumplimiento en los aspectos básicos de Auditoría (estándar) y Auditoría (Premium) puede ayudar a su organización a empezar a usar la auditoría más rápidamente para ayudar con sus investigaciones. Microsoft 365 proporciona el siguiente recurso para ayudar a estos usuarios de su organización a iniciarse en la auditoría: [describir las capacidades de eDiscovery y auditoría de Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Entrenar al equipo de operaciones de seguridad, a los administradores de TI y al equipo de investigadores de cumplimiento en los aspectos básicos de Auditoría (estándar) y Auditoría (Premium) puede ayudar a su organización a empezar a usar la auditoría más rápidamente para ayudar con sus investigaciones. Microsoft Purview proporciona el siguiente recurso para ayudar a estos usuarios de su organización a iniciarse en las auditorías: [describir las capacidades de eDiscovery y auditoría de Microsoft Purview](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).

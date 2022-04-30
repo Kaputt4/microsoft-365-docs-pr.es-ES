@@ -1,5 +1,5 @@
 ---
-title: Cifrado de servicio con clave de cliente
+title: Cifrado de servicio con clave de cliente de Microsoft Purview
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,15 +14,17 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
-description: En este artículo, obtendrá información sobre cómo funciona el cifrado del servicio con la clave de cliente en Microsoft 365.
-ms.openlocfilehash: 65098994a6883fdadd3106b74b25a2251239fb3a
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: En este artículo, obtendrá información sobre cómo funciona el cifrado de servicio con la clave de cliente de Microsoft Purview.
+ms.openlocfilehash: efb82a38c2f3a2e07d695425f36a17eebdbdf5ec
+ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761095"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65145220"
 ---
-# <a name="service-encryption-with-customer-key"></a>Cifrado de servicio con clave de cliente
+# <a name="service-encryption-with-microsoft-purview-customer-key"></a>Cifrado de servicio con clave de cliente de Microsoft Purview
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365 proporciona cifrado de nivel de volumen y línea base habilitado a través de BitLocker y el Administrador de claves distribuidas (DKM). Microsoft 365 ofrece una capa de cifrado adicional para el contenido. Este contenido incluye datos de Exchange Online, Skype Empresarial, SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 
@@ -40,7 +42,7 @@ Customer Key solo cifra los datos en reposo en la nube. La clave de cliente no f
 
 ## <a name="about-data-encryption-policies"></a>Acerca de las directivas de cifrado de datos
 
-Una directiva de cifrado de datos (DEP) define la jerarquía de cifrado. El servicio usa esta jerarquía para cifrar los datos mediante cada una de las claves que administra y la clave de disponibilidad protegida por Microsoft. Los DEP se crean mediante cmdlets de PowerShell y, a continuación, se asignan esos DEP para cifrar los datos de la aplicación. Hay tres tipos de DEP admitidos por Microsoft 365 clave de cliente, cada tipo de directiva usa cmdlets diferentes y proporciona cobertura para un tipo de datos diferente. Los DEP que puede definir incluyen:
+Una directiva de cifrado de datos (DEP) define la jerarquía de cifrado. El servicio usa esta jerarquía para cifrar los datos mediante cada una de las claves que administra y la clave de disponibilidad protegida por Microsoft. Los DEP se crean mediante cmdlets de PowerShell y, a continuación, se asignan esos DEP para cifrar los datos de la aplicación. Hay tres tipos de DEP compatibles con la clave de cliente; cada tipo de directiva usa cmdlets diferentes y proporciona cobertura para un tipo de datos diferente. Los DEP que puede definir incluyen:
 
 **DEP para varias cargas de trabajo de Microsoft 365** Estos DEP cifran los datos en varias cargas de trabajo M365 para todos los usuarios del inquilino. Estas cargas de trabajo incluyen:
 
@@ -52,7 +54,8 @@ Una directiva de cifrado de datos (DEP) define la jerarquía de cifrado. El serv
 - Teams mensajes de estado
 - Información de usuario y señal para Exchange Online
 - Exchange Online buzones que aún no están cifrados por los DEP de buzón
-- Microsoft Information Protection:
+- Almacenamiento de registros de auditoría unificado
+- Microsoft Purview Information Protection:
 
   - Datos exactos de coincidencia de datos (EDM), incluidos esquemas de archivos de datos, paquetes de reglas y las sales que se usan para aplicar hash a la información confidencial. Para EDM y Microsoft Teams, el DEP de varias cargas de trabajo cifra los nuevos datos desde el momento en que asigna el DEP al inquilino. Por Exchange Online, Clave de cliente cifra todos los datos existentes y nuevos.
 
