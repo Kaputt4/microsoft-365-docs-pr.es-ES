@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
-ms.openlocfilehash: aa1cdf4b8fa6c1d558b005eb80031a20be4872af
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4757cf72653ffad2caeba45c99d3aabe61517ee4
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65088854"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144649"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -87,35 +87,35 @@ Dependiendo de su suscripción, aquí están los informes disponibles en todos l
 
 |**Report**|**Public**|**GCC**|**GCC-High**|**DoD**|**Office 365 operado por 21Vianet**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|[Uso del examinador de Microsoft](browser-usage-report.md)|Sí|No[^1]|No[^1]|No[^1]|No[^1]|
+|[Uso del examinador de Microsoft](browser-usage-report.md)|Sí|No<sup>1</sup>|No<sup>1</sup>|No<sup>1</sup>|No<sup>1</sup>|
 |[Actividad de correo electrónico](email-activity-ww.md)|Sí|Sí|Sí|Sí|Sí|
 |[Uso de aplicaciones de correo electrónico](email-apps-usage-ww.md)|Sí|Sí|Sí|Sí|Sí|
 |[Uso del buzón](mailbox-usage.md)|Sí|Sí|Sí|Sí|Sí|
 |[Activaciones de Office](microsoft-office-activations-ww.md)|Sí|Sí|Sí|Sí|Sí|
 |[Usuarios activos](active-users-ww.md)|Sí|Sí|Sí|Sí|Sí|
 |[Grupos de Microsoft 365](office-365-groups-ww.md)|Sí|Sí|Sí|Sí|Sí|
-|[Uso de las aplicaciones de Microsoft 365](microsoft365-apps-usage-ww.md)|Sí|Sí|No[^1]|No[^1]|Sí
+|[Uso de las aplicaciones de Microsoft 365](microsoft365-apps-usage-ww.md)|Sí|Sí|No<sup>1</sup>|No<sup>1</sup>|Sí
 |[Actividad de los usuarios de OneDrive para la Empresa](onedrive-for-business-activity-ww.md)|Sí|Sí|Sí|Sí|Sí|
 |[Uso de OneDrive para la Empresa](onedrive-for-business-usage-ww.md)|Sí|Sí|Sí|Sí|Sí|
 |[Uso del sitio de SharePoint](sharepoint-site-usage-ww.md)|Sí|Sí|Sí|Sí|Sí|
 |[Actividad de SharePoint](sharepoint-activity-ww.md)|Sí|Sí|Sí|Sí|Sí|
-|[Actividad de los usuarios de Microsoft Teams](microsoft-teams-user-activity-preview.md)|Sí|Sí|Sí|Sí|N/A[^2]|
-|[Uso de dispositivos de Microsoft Teams](microsoft-teams-device-usage-preview.md)|Sí|Sí|Sí|Sí|N/A[^2]|
-|[Actividad de uso de Microsoft Teams](microsoft-teams-usage-activity.md)|Sí|Sí|N/D|N/D|N/D|
-|[Actividad de Yammer](yammer-activity-report-ww.md)|Sí|Sí|N/A[^2]|N/A[^2]|N/A[^2]|
-|[Uso de dispositivos en Yammer](yammer-device-usage-report-ww.md)|Sí|Sí|N/A[^2]|N/A[^2]|N/A[^2]|
-|[Informe de actividad de los grupos de Yammer](yammer-groups-activity-report-ww.md)|Sí|Sí|N/A[^2]|N/A[^2]|N/A[^2]|
-|[Actividad de formularios](forms-activity-ww.md)|Sí|Sí|No[^1]|No[^1]|No[^1]|
-|[Actividad de voz de clientes de Dynamics 365](forms-pro-activity-ww.md)|Sí|Sí|N/A[^2]|N/A[^2]|N/A[^2]|
-|[Actividad de Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|Sí|Sí|No[^1]|No[^1]|Sí|
-|[Actividad de conferencias organizada de Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Sí|Sí|No[^1]|No[^1]|Sí|
-|[Actividad de participantes de conferencias de Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Sí|Sí|No[^1]|No[^1]|Sí|
-|[Actividad punto a punto de Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Sí|Sí|No[^1]|No[^1]|Sí|
-|[Actividades de aprendizaje Viva](viva-learning-activity.md)|Sí|N/D|N/D|N/D|N/D|
+|[Actividad de los usuarios de Microsoft Teams](microsoft-teams-user-activity-preview.md)|Sí|Sí|Sí|Sí|N/D<sup>2</sup>|
+|[Uso de dispositivos de Microsoft Teams](microsoft-teams-device-usage-preview.md)|Sí|Sí|Sí|Sí|N/D<sup>2</sup>|
+|[Actividad de uso de Microsoft Teams](microsoft-teams-usage-activity.md)|Sí|Sí|Sí|Sí|N/D<sup>2</sup>|
+|[Actividad de Yammer](yammer-activity-report-ww.md)|Sí|Sí|N/D<sup>2</sup>|N/D<sup>2</sup>|N/D<sup>2</sup>|
+|[Uso de dispositivos en Yammer](yammer-device-usage-report-ww.md)|Sí|Sí|N/D<sup>2</sup>|N/D<sup>2</sup>|N/D<sup>2</sup>|
+|[Informe de actividad de los grupos de Yammer](yammer-groups-activity-report-ww.md)|Sí|Sí|N/D<sup>2</sup>|N/D<sup>2</sup>|N/D<sup>2</sup>|
+|[Actividad de formularios](forms-activity-ww.md)|Sí|Sí|No<sup>1</sup>|No<sup>1</sup>|No<sup>1</sup>|
+|[Actividad de voz de clientes de Dynamics 365](forms-pro-activity-ww.md)|Sí|Sí|N/D<sup>2</sup>|N/D<sup>2</sup>|N/D<sup>2</sup>|
+|[Actividad de Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|Sí|Sí|No<sup>1</sup>|No<sup>1</sup>|Sí|
+|[Actividad de conferencias organizada de Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Sí|Sí|No<sup>1</sup>|No<sup>1</sup>|Sí|
+|[Actividad de participantes de conferencias de Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Sí|Sí|No<sup>1</sup>|No<sup>1</sup>|Sí|
+|[Actividad punto a punto de Skype Empresarial Online](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Sí|Sí|No<sup>1</sup>|No<sup>1</sup>|Sí|
+|[Actividades de aprendizaje Viva](viva-learning-activity.md)|Sí|N/D|N/D|No aplicable|N/D|
 |[Actividad de Viva Insights](viva-insights-activity.md)|Sí|Sí|N/D|N/D|N/D|
 
-[^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
-[^2]: The service is not available in the environment so no plan to release the report.
+N/D<sup>1</sup>: El informe está previsto que se publique en el futuro. El <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Plan de desarrollo de Microsoft 365</a> se actualizará antes del lanzamiento.
+N/D<sup>2</sup>: El servicio no está disponible en el entorno, por lo que no tiene previsto publicar el informe.
 
 ## <a name="how-to-view-licensing-information"></a>Cómo ver la información de las licencias
 
