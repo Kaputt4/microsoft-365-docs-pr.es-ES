@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar bloques en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 60038a2b82ea452ed921d16042cb81d4f0e023a9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 03c56e5e7e540766bb4a6048fba15b494c46d815
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100663"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65182725"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>Agregar bloques a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -32,11 +32,11 @@ ms.locfileid: "65100663"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-## <a name="use-the-microsoft-365-defender-portal"></a>Uso del portal de Microsoft 365 Defender 
+## <a name="use-the-microsoft-365-defender-portal"></a>Uso del portal de Microsoft 365 Defender
 
 ### <a name="create-block-sender-entries-in-the-tenant-allowblock-list"></a>Creación de entradas de remitente de bloques en la lista de permitidos o bloqueados de inquilinos
 
-1. En el portal de Microsoft 365 Defender, vaya a **Directivas & reglas De directivas** \> de amenazas sección **Reglas de directivas** \> de **amenazas** \> **Listas de permitidos o bloques de inquilinos**.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas De directivas** \> de amenazas sección \> **Reglas de directivas** de **amenazas** \> **Listas de permitidos o bloques de inquilinos**. O bien, para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. En la página **Lista de permitidos o bloqueados de inquilinos** , compruebe que la pestaña **Remitentes** está seleccionada y, a continuación, haga clic en ![el icono Bloquear.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
 
@@ -53,11 +53,11 @@ ms.locfileid: "65100663"
 4. Cuando haya terminado, haga clic en **Agregar**.
 
 > [!NOTE]
-> Los correos electrónicos de estos remitentes se bloquearán como *correo no deseado de alta confianza (SCL = 9)*. 
+> Los correos electrónicos de estos remitentes se bloquearán como _correo no deseado de alta confianza_ (SCL = 9).
 
 ### <a name="create-block-url-entries-in-the-tenant-allowblock-list"></a>Creación de entradas de dirección URL de bloque en la lista de permitidos o bloqueados de inquilinos
 
-1. En el portal de Microsoft 365 Defender, vaya a **Directivas & reglas De directivas** \> de amenazas sección **Reglas de directivas** \> de **amenazas** \> **Listas de permitidos o bloques de inquilinos**.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas De directivas** \> de amenazas sección \> **Reglas de directivas** de **amenazas** \> **Listas de permitidos o bloques de inquilinos**. O bien, para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. En la página **Lista de permitidos o bloqueados de inquilinos** , compruebe que la pestaña **Direcciones URL** está seleccionada y, a continuación, haga clic en ![icono Bloquear.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
 
@@ -74,11 +74,11 @@ ms.locfileid: "65100663"
 4. Cuando haya terminado, haga clic en **Agregar**.
 
 > [!NOTE]
-> Los correos electrónicos que contienen estas direcciones URL se bloquearán como *phish*. 
+> Los correos electrónicos que contienen estas direcciones URL se bloquearán como _phish_.
 
 ### <a name="create-block-file-entries-in-the-tenant-allowblock-list"></a>Creación de entradas de archivo de bloque en la lista de inquilinos permitidos o bloqueados
 
-1. En el portal de Microsoft 365 Defender, vaya a **Directivas & reglas De directivas** \> de amenazas sección **Reglas de directivas** \> de **amenazas** \> **Listas de permitidos o bloques de inquilinos**.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas De directivas** \> de amenazas sección \> **Reglas de directivas** de **amenazas** \> **Listas de permitidos o bloques de inquilinos**. O bien, para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. En la página **Lista de permitidos o bloqueados de inquilinos** , seleccione la pestaña **Archivos** y, a continuación, haga clic en ![el icono Bloquear.](../../media/m365-cc-sc-create-icon.png) **Bloquear**.
 
@@ -95,7 +95,7 @@ ms.locfileid: "65100663"
 4. Cuando haya terminado, haga clic en **Agregar**.
 
 > [!NOTE]
-> Los correos electrónicos que contienen estos archivos se bloquearán como *malware*. 
+> Los correos electrónicos que contienen estos archivos se bloquearán como _malware_.
 
 ### <a name="create-spoofed-sender-block-entries"></a>Creación de entradas de bloque de remitentes suplantados
 
@@ -118,8 +118,9 @@ ms.locfileid: "65100663"
    - **Acción**: seleccione **Bloquear**.
 
 4. Cuando haya terminado, haga clic en **Agregar**.
+
 > [!NOTE]
-> Los correos electrónicos de estos remitentes se bloquearán como *phish*. 
+> Los correos electrónicos de estos remitentes se bloquearán como _phish_.
 
 ## <a name="use-powershell"></a>Usar PowerShell
 
@@ -151,7 +152,7 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 
 Para obtener información detallada sobre la sintaxis y los [parámetros, vea New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### <a name="add-spoofed-sender-block-entries"></a>Adición de entradas de bloque de remitentes suplantados 
+### <a name="add-spoofed-sender-block-entries"></a>Adición de entradas de bloque de remitentes suplantados
 
 Para agregar entradas de remitente suplantadas en la lista de permitidos o bloqueados de inquilinos, use la sintaxis siguiente:
 

@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a modificar y quitar entradas en la lista de inquilinos permitidos o bloqueados en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7da986c42421c797f2d01b1e61d50c06933e373f
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ac612b51cab9069e50c4eec05948b3aa840b9cc9
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970945"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65182703"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>Modificar y quitar entradas a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -38,7 +38,7 @@ Puede usar el portal de Microsoft 365 Defender o PowerShell para modificar y qui
 
 ### <a name="modify-entries-in-the-tenant-allowblock-list"></a>Modificar entradas en la lista de permitidos o bloqueados de inquilinos
 
-1. En el portal de Microsoft 365 Defender, vaya a **Directivas & reglas De directivas** \> de amenazas sección **Reglas de directivas** \> de **amenazas** \> **Listas de permitidos o bloques de inquilinos**.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas De directivas** \> de amenazas sección \> **Reglas de directivas** de **amenazas** \> **Listas de permitidos o bloques de inquilinos**. O bien, para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Seleccione la pestaña que contiene el tipo de entrada que desea modificar:
    - **Remitentes**
@@ -66,7 +66,7 @@ Puede usar el portal de Microsoft 365 Defender o PowerShell para modificar y qui
 
 ### <a name="remove-entries-from-the-tenant-allowblock-list"></a>Eliminación de entradas de la lista de permitidos o bloqueados de inquilinos
 
-1. En el portal de Microsoft 365 Defender, vaya a **Directivas & reglas De directivas** \> de amenazas sección **Reglas de directivas** \> de **amenazas** \> **Listas de permitidos o bloques de inquilinos**.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas De directivas** \> de amenazas sección \> **Reglas de directivas** de **amenazas** \> **Listas de permitidos o bloques de inquilinos**. O bien, para ir directamente a la página **Permitir o bloquear lista de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Seleccione la pestaña que contiene el tipo de entrada que desea quitar:
    - **Remitentes**

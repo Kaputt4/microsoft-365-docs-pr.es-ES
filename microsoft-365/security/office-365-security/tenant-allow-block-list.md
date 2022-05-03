@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a administrar permisos y bloques en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a067672a013f3e0ed7b9009604f8a4fe000ea47f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 64b9c044a463e940b0d9862221ca854fe0eebfdc
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172831"
+ms.locfileid: "65182658"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Administrar la lista de bloqueados y permitidos del espacio empresarial
 
@@ -90,7 +90,6 @@ En este artículo se describe cómo configurar entradas en la lista de inquilino
   > [!NOTE]
   >
   > - La adición de usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios *y* los permisos para otras características de Microsoft 365. Para obtener más información, consulte [Acerca de los roles de administrador](../../admin/add-users/about-admin-roles.md).
-  >
   > - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 ## <a name="configure-the-tenant-allowblock-list"></a>Configuración de la lista de permitidos o bloqueados de inquilinos
@@ -111,7 +110,7 @@ Para administrar todos los bloques y permitidos, vea [Agregar bloques en la list
 
 ## <a name="view-entries-in-the-tenant-allowblock-list"></a>Visualización de entradas en la lista de permitidos o bloqueados de inquilinos
 
-1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas** \> **Directivas** \> de amenazas Listas **de inquilinos permitidos o bloqueados** en la sección **Reglas**. Para ir directamente a la página **Permitir o bloquear listas de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
+1. En el portal de Microsoft 365 Defender en <https://security.microsoft.com>, vaya a **Directivas & reglas** \> **Directivas** \> de amenazas Listas **de inquilinos permitidos o bloqueados** en la sección **Reglas**. O bien, para ir directamente a la página **Permitir o bloquear listas de inquilinos** , use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Seleccione la pestaña que desee. Las columnas que están disponibles dependen de la pestaña seleccionada:
 
@@ -122,6 +121,11 @@ Para administrar todos los bloques y permitidos, vea [Agregar bloques en la list
      - **Actualizado por última vez**
      - **Quitar activado**
      - **Notas**
+   - **Spoofing**
+     - **Usuario suplantado**
+     - **Infraestructura de envío**
+     - **Tipo de suplantación:** el valor **Interno** o **Externo**.
+     - **Acción**: el valor **Bloquear** o **Permitir**.
    - **Direcciones URL**:
      - **Valor**: la dirección URL.
      - **Acción**: el valor **Permitir** o **Bloquear**.
@@ -136,20 +140,15 @@ Para administrar todos los bloques y permitidos, vea [Agregar bloques en la list
      - **Actualizado por última vez**
      - **Quitar activado**
      - **Notas**
-   - **Spoofing**
-     - **Usuario suplantado**
-     - **Infraestructura de envío**
-     - **Tipo de suplantación:** el valor **Interno** o **Externo**.
-     - **Acción**: el valor **Bloquear** o **Permitir**.
 
    Puede hacer clic en un encabezado de columna para ordenar en orden ascendente o descendente.
 
    Puede hacer clic en **Agrupar** para agrupar los resultados. Los valores que están disponibles dependen de la pestaña seleccionada:
 
    - **Remitentes**: puede agrupar los resultados por **acción**.
+   - **Suplantación de identidad**: puede agrupar los resultados por **tipo de acción** o **suplantación de identidad**.
    - **Direcciones URL**: puede agrupar los resultados por **acción**.
    - **Archivos**: puede agrupar los resultados por **acción**.
-   - **Suplantación de identidad**: puede agrupar los resultados por **tipo de acción** o **suplantación de identidad**.
 
    Haga clic en **Buscar**, escriba todo o parte de un valor y, a continuación, presione ENTRAR para buscar un valor específico. Cuando haya terminado, haga clic en ![el icono Borrar búsqueda.](../../media/m365-cc-sc-close-icon.png) **Borrar búsqueda**.
 
@@ -160,6 +159,9 @@ Para administrar todos los bloques y permitidos, vea [Agregar bloques en la list
      - **Nunca expirar**
      - **Fecha de última actualización**
      - **Quitar activado**
+   - **Spoofing**
+     - **Action**
+     - **Tipo de suplantación de identidad**
    - **Url**
      - **Action**
      - **Nunca expirar**
@@ -170,9 +172,6 @@ Para administrar todos los bloques y permitidos, vea [Agregar bloques en la list
      - **Nunca expirar**
      - **Actualizado por última vez**
      - **Quitar activado**
-   - **Spoofing**
-     - **Action**
-     - **Tipo de suplantación de identidad**
 
    Cuando haya terminado, haga clic en **Aplicar**. Para borrar los filtros existentes, haga clic en **Filtrar** y, en el control flotante **Filtro** que aparece, haga clic en **Borrar filtros**.
 

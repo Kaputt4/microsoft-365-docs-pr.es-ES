@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Conéctese a su espacio empresarial de Microsoft 365 mediante PowerShell para Microsoft 365 de forma que pueda realizar tareas desde el Centro de administración desde la línea de comandos.
-ms.openlocfilehash: a7f493bd0073762d995a232918d732e999a85777
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a69fa6885e254e0c15cd65833a4f8368ec239c4f
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093929"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174816"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Conectarse a Microsoft 365 con PowerShell
 
@@ -204,6 +204,13 @@ Para conectarse y usar el Azure Cloud Shell del Centro de administración de Mic
 Necesitará una suscripción de Azure activa para su organización que esté vinculada a su suscripción de Microsoft 365. Si aún no tiene una, puede crearla. Una vez que tenga una suscripción de Azure, se abrirá una ventana de PowerShell desde la que ejecutar comandos y scripts de PowerShell.
 
 Para obtener más información, consulte [Azure Cloud Shell](/azure/cloud-shell/overview).
+
+
+## <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Introducción al SDK de Microsoft Graph de Powershell
+
+Puede usar el SDK de PowerShell de Microsoft Graph para acceder a todas las API de Microsoft Graph.
+
+Para obtener más información, consulte [Información al SDK de PowerShell de Microsoft Graph](/powershell/microsoftgraph/get-started?view=graph-powershell-beta)
 
 ## <a name="see-also"></a>Consulte también
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0f24e707bef05b541f301a41596737c17b4ed587
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 792b87c8d045002ebec27dc5de38177cec0ae647
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098436"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172310"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -31,7 +31,7 @@ ms.locfileid: "65098436"
 
 Cuando haya [publicado](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) etiquetas de confidencialidad desde el portal de cumplimiento de Microsoft Purview, empezarán a aparecer en las aplicaciones de Office para que los usuarios clasifiquen y protejan los datos a medida que se creen o editen.
 
-Use la información de este artículo para ayudarle a administrar correctamente las etiquetas de confidencialidad en las aplicaciones de Office. Por ejemplo, identifique las versiones mínimas de las aplicaciones que necesita para admitir características específicas de etiquetado integrado, cualquier información de configuración adicional para estas características y comprenda las interacciones con el cliente de etiquetado unificado de Azure Information Protection y otras aplicaciones y servicios.
+Use la información de este artículo como ayuda para administrar correctamente las etiquetas de confidencialidad en las aplicaciones de Office. Por ejemplo, identifique las versiones mínimas de las aplicaciones que necesitará para admitir características específicas de etiquetado integrado, cualquier información de configuración adicional para estas características y, además, comprenda las interacciones con el cliente de etiquetado unificado de Azure Information Protection y otras aplicaciones y servicios.
 
 ## <a name="labeling-client-for-desktop-apps"></a>Cliente de etiquetado para aplicaciones de escritorio
 
@@ -115,8 +115,7 @@ Si los usuarios tienen el [cliente de Azure Information Protection (AIP)](/azu
 > [!NOTE]
 > Si no ve las características de etiquetado que se espera en equipos Windows, a pesar de confirmar las versiones mínimas admitidas para el canal de actualización de Office, puede deberse a que necesita [deshabilitar el complemento de AIP](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
 
-Para obtener más información sobre la compatibilidad de etiquetado con el cliente de AIP, consulte [Por qué elegir el etiquetado integrado en lugar del complemento de AIP para las aplicaciones de Office](sensitivity-labels-aip.md).
-
+Para obtener más información sobre la compatibilidad de etiquetado con el cliente de AIP, y cómo deshabilitar este cliente justamente en las aplicaciones de Office, consulte [Por qué elegir el etiquetado integrado en lugar del complemento de AIP para las aplicaciones de Office](sensitivity-labels-aip.md).
 
 ## <a name="if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows"></a>Si necesita desactivar el etiquetado integrado en las aplicaciones de Office en Windows
 
@@ -135,12 +134,6 @@ Si más adelante necesita revertir esta configuración, cambie el valor a **1**.
 Implementar esta configuración mediante la directiva de grupo o mediante el [Servicio de directiva de la nube de Office](/DeployOffice/overview-office-cloud-policy-service). La configuración tiene efecto cuando se reinician estas aplicaciones de Office. 
 
 Dado que esta configuración es específica de las aplicaciones de Windows Office, no tiene ningún impacto en otras aplicaciones de Windows que admiten etiquetas de confidencialidad (como Power BI) u otras plataformas (como macOS, dispositivos móviles y Office para la Web). Si no quiere que algunos o que todos los usuarios vean y usen etiquetas de confidencialidad en todas las aplicaciones y plataformas, no asigne una directiva de etiquetas de confidencialidad a esos usuarios.
-
-### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>El cliente de etiquetado integrado de Office y el cliente de Azure Information Protection
-
-Si los usuarios tienen el [cliente de Azure Information Protection (AIP)](/azure/information-protection/rms-client/aip-clientv2) instalado en sus equipos Windows, de forma predeterminada, las etiquetas integradas se desactivan en [Aplicaciones de Windows Office que las admiten](#labeling-client-for-desktop-apps). Dado que las etiquetas integradas no usan un complemento de Office, tal y como las usa el cliente de AIP, tienen la ventaja de una mayor estabilidad y un mejor rendimiento. También admiten las características más recientes, como clasificadores avanzados.
-
-Para obtener más información sobre las opciones de etiquetado con el cliente de AIP, vea [Por qué elegir el etiquetado integrado en lugar del complemento de AIP para aplicaciones de Office](sensitivity-labels-aip.md).
 
 ## <a name="office-file-types-supported"></a>Tipos de archivos compatibles con Office
 

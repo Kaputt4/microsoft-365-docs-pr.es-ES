@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Siga estas instrucciones para crear una cita y asignar un empleado a través de la aplicación Microsoft Bookings.
-ms.openlocfilehash: 0428c697def774a67384b14c4d9b2c48e2851794
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 488b390c6446693ffa6bf63dce9c84920a629f0b
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747256"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65182681"
 ---
 # <a name="create-a-manual-booking"></a>Crear un manual de reserva
 
@@ -24,8 +24,6 @@ ms.locfileid: "64747256"
 Bookings se puede programar y dotarse de personal de dos maneras distintas. La primera forma es que el cliente use una página de reserva independiente o una página de reserva incrustada que agregue a su sitio web. La otra es que usted o alguno de sus empleados introduzcan las reservas manualmente, como cuando un cliente llama para hacer una cita. En este artículo se describe el escenario manual.
 
 1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **Bookings**.
-
-    :::image type="content" source="../media/bookings-applauncher.png" alt-text="Bookings en el iniciador de aplicaciones.":::
 
 1. En el panel de navegación, seleccione **Calendario** \> **Nueva reserva**.
 
