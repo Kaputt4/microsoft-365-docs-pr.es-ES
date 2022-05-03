@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 77766c153582f519aa0ba9853d18c216092747bc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9211597ec8a0e25130b010a6049832ac151840fc
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092313"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173708"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
@@ -37,7 +37,7 @@ ms.locfileid: "65092313"
 Microsoft Defender para punto de conexión es una plataforma empresarial para la seguridad de puntos de conexión concebida para ayudar a impedir, detectar e investigar las amenazas avanzadas, y responder a ellas.
 
 > [!TIP]
-> Próximamente, Microsoft Defender para punto de conexión estará disponible en dos planes. En este artículo se describen las características y capacidades que se incluyen en el plan 2 de Microsoft Defender para punto de conexión. [Obtenga más información sobre Microsoft Defender para punto de conexión plan 1 y plan 2](defender-endpoint-plan-1-2.md).
+> Microsoft Defender para punto de conexión está disponible en dos planes: Defender para punto de conexión Plan 1 y Plan 2. En este artículo se describen las características y funcionalidades que se incluyen en cada plan. [Obtenga más información sobre Microsoft Defender para punto de conexión plan 1 y plan 2](defender-endpoint-plan-1-2.md).
 > 
 
 <p><p>
