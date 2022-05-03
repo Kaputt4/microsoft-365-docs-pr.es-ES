@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre cómo habilitar canales compartidos en Microsoft Teams para la colaboración con personas ajenas a su organización.
-ms.openlocfilehash: 2d439bc3056555daf9bfa9b07131d521e4ee3b4e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: fe9ad8673b381206149abb4d8e6fb14a5a563dd0
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098151"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65182628"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>Colaborar con participantes externos en un canal compartido
 
@@ -108,7 +108,7 @@ Para configurar las opciones de salida de una organización
 1. En la pestaña **Aplicaciones externas**, elija **Permitir acceso** y **Seleccionar aplicaciones externas**.
 1. Seleccione **Agregar aplicaciones de Microsoft**.
 1. Seleccione la aplicación **Office 365** y, a continuación, elija **Seleccionar**.
-1. Seleccione **Guardar** y cierre la hoja **Configuración de acceso de salida**.
+1. Seleccione **Guardar**, elija **Sí** para confirmar y cierre la hoja **Configuración de acceso de salida**.
 
 ## <a name="see-also"></a>Vea también
 
