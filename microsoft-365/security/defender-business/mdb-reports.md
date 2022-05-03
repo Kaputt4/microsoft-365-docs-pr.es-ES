@@ -1,13 +1,12 @@
 ---
 title: Informes en Microsoft Defender para Empresas
-description: Obtenga información general de los informes disponibles en Microsoft Defender para Empresas
+description: Obtenga información general sobre los informes de seguridad en Defender para empresas. Los informes mostrarán las amenazas detectadas, las alertas, las vulnerabilidades y el estado del dispositivo.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,17 +15,14 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5b3a21a45e1b9e90cf5a8a7f666861502205552e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a4fbfc830c349df69180524305339582f444a609
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093270"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174830"
 ---
 # <a name="reports-in-microsoft-defender-for-business"></a>Informes en Microsoft Defender para Empresas
-
-> [!NOTE]
-> Microsoft Defender para Empresas ahora se incluye en [Microsoft 365 Empresa Premium](../../business-premium/index.md). 
 
 Hay varios informes disponibles en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). En este artículo se describen estos informes, cómo puede usarlos y cómo encontrarlos.
 
@@ -45,7 +41,7 @@ Hay varios informes disponibles en el portal de Microsoft 365 Defender ([https:/
 > Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
 >
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Comenzar mediante Microsoft Defender para Empresas](mdb-get-started.md)
 - [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md)

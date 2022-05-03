@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 47c7ddbc5ce935e8b9fedb7682daa6af468b66b4
-ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
+ms.openlocfilehash: 9be1c581edb1b9564349ae8c3a659d226d6ef312
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65015032"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173785"
 ---
 # <a name="communication-compliance-policies"></a>Directivas de Cumplimiento de comunicaciones
 
@@ -110,12 +110,12 @@ Los administradores deben asignar inmediatamente revisores personalizados a esta
 2. En el portal de cumplimiento, vaya a **Cumplimiento de comunicaciones**.
 3. En la pestaña **Directiva** , seleccione la directiva *Mensajes notificados* por el usuario y seleccione **Editar**.
 4. En el panel **Supervisión de mensajes notificados por el usuario** , asigne revisores para la directiva. Los revisores deben tener buzones hospedados en Exchange Online. Cuando los revisores se agregan a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la directiva y proporciona vínculos a información sobre el proceso de revisión.
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
-Para deshabilitar que los usuarios informen Teams mensajes con la *opción Notificar una preocupación*, deshabilite la opción **Informes de usuario final** en el [Centro de administración de Teams](/microsoftteams/manage-teams-in-modern-portal). 
+La opción *Notificar un problema* está habilitada de forma predeterminada y se puede controlar mediante Teams directivas de mensajería en el [Centro de administración de Teams](/microsoftteams/manage-teams-in-modern-portal). Los usuarios de su organización obtendrán automáticamente la directiva global, a menos que cree y asigne una directiva personalizada. Edite la configuración de la directiva global o cree y asigne una o varias directivas personalizadas para activar o desactivar la opción *Notificar una preocupación* . Para más información, consulte [Administración de directivas de mensajería en Teams](/microsoftteams/messaging-policies-in-teams).  
 
 >[!IMPORTANT]
->Si usa PowerShell para deshabilitar la opción Informes de **usuario final** en Teams Centro de administración, debe usar [Microsoft Teams módulo cmdlets versión 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) o posterior.
+>Si usa PowerShell para activar o desactivar la opción **Informes de usuario final** en Teams Centro de administración, debe usar [Microsoft Teams módulo cmdlets versión 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) o posterior.
 
 ## <a name="storage-limit-notification-preview"></a>Storage notificación de límite (versión preliminar)
 

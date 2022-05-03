@@ -1,39 +1,33 @@
 ---
 title: Configuración de notificaciones por correo electrónico para el equipo de seguridad
-description: Configurar notificaciones por correo electrónico para informar a los usuarios sobre alertas y vulnerabilidades con Microsoft Defender para Empresas
+description: Configure notificaciones por correo electrónico para informar al equipo de seguridad sobre alertas y vulnerabilidades en Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a65634a5827e60d710cec56ca10835c73053cb10
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: b6381f5bfa8ebe4f7c23a16d9a214cadb4e511e6
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862860"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174494"
 ---
 # <a name="set-up-email-notifications"></a>Configuración de notificaciones por correo electrónico
-
-> [!NOTE]
-> Microsoft Defender para Empresas ahora se incluye en [Microsoft 365 Empresa Premium](../../business-premium/index.md). 
 
 Puede configurar notificaciones por correo electrónico para el equipo de seguridad. A continuación, a medida que se generan alertas o se detectan nuevas vulnerabilidades, se notificará automáticamente a las personas del equipo de seguridad. 
 
 ## <a name="what-to-do"></a>Qué hacer
 
 1. [Obtenga información sobre los tipos de notificaciones por correo electrónico](#types-of-email-notifications).
-
 2. [Ver y editar la configuración de notificaciones por correo electrónico](#view-and-edit-email-notifications).
-
 3. [Continúe con los pasos siguientes](#next-steps).
 
 

@@ -1,8 +1,8 @@
 ---
-title: Usar Microsoft Defender para las API de punto de conexión
-ms.reviewer: null
-description: Obtén información sobre cómo diseñar una aplicación Windows nativa para obtener acceso mediante programación a Microsoft Defender para Endpoint sin un usuario.
-keywords: 'apis, api de gráfico, api admitidas, actor, alertas, dispositivo, usuario, dominio, ip, archivo, búsqueda avanzada, consulta'
+title: Uso de api de Microsoft Defender para punto de conexión
+ms.reviewer: ''
+description: Obtenga información sobre cómo diseñar una aplicación de Windows nativa para obtener acceso mediante programación a Microsoft Defender para punto de conexión sin un usuario.
+keywords: api, graph api, api admitidas, actor, alertas, dispositivo, usuario, dominio, ip, archivo, búsqueda avanzada, consulta
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,15 +16,25 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
+ms.openlocfilehash: aec4c7bdc0da76a6a52a8b8f19d89b8b54f3df9f
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173485"
 ---
-
-# <a name="use-microsoft-defender-for-endpoint-apis"></a>Usar Microsoft Defender para las API de punto de conexión
+# <a name="use-microsoft-defender-for-endpoint-apis"></a>Uso de api de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para Empresas](../defender-business/index.yml)
+
+> [!IMPORTANT]
+> Las funcionalidades avanzadas de búsqueda no se incluyen en Defender para empresas. Consulte [Comparar Microsoft Defender para Empresas con los planes 1 y 2 de Microsoft Defender para punto de conexión](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -34,34 +44,34 @@ ms.custom: api
 
 En esta página se describe cómo crear una aplicación para obtener acceso mediante programación a Defender for Endpoint en nombre de un usuario.
 
-Si necesita acceso mediante programación a Microsoft Defender para Endpoint sin un usuario, consulte [Access Microsoft Defender for Endpoint with application context](exposed-apis-create-app-webapp.md).
+Si necesita acceso mediante programación Microsoft Defender para punto de conexión sin un usuario, consulte [Acceso a Microsoft Defender para punto de conexión con el contexto de la aplicación](exposed-apis-create-app-webapp.md).
 
 Si no está seguro de qué acceso necesita, lea la [página Introducción](apis-intro.md).
 
-Microsoft Defender para endpoint expone gran parte de sus datos y acciones a través de un conjunto de API programáticas. Estas API te permitirán automatizar los flujos de trabajo e innovar en función de las capacidades de Microsoft Defender para puntos de conexión. El acceso a la API requiere autenticación de OAuth2.0. Para obtener más información, vea [Código de autorización de OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender para punto de conexión expone gran parte de sus datos y acciones a través de un conjunto de API mediante programación. Estas API le permitirán automatizar los flujos de trabajo e innovar en función de las capacidades de Microsoft Defender para punto de conexión. El acceso a la API requiere la autenticación de OAuth2.0. Para obtener más información, vea [Código de autorización de OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
-En general, deberá seguir los pasos siguientes para usar las API:
+En general, deberá realizar los pasos siguientes para usar las API:
 
-- Crear una AAD aplicación
-- Obtener un token de acceso con esta aplicación
-- Usar el token para obtener acceso a la API de Defender for Endpoint
+- Creación de una aplicación de AAD
+- Obtención de un token de acceso mediante esta aplicación
+- Uso del token para acceder a Defender for Endpoint API
 
-En esta página se explica cómo crear una aplicación AAD, obtener un token de acceso a Microsoft Defender para Endpoint y validar el token.
+En esta página se explica cómo crear una aplicación AAD, obtener un token de acceso para Microsoft Defender para punto de conexión y validar el token.
 
 > [!NOTE]
-> Al obtener acceso a la API de Microsoft Defender para endpoint en nombre de un usuario, necesitará el permiso de aplicación y el permiso de usuario correctos.
-> Si no está familiarizado con los permisos de usuario en Microsoft Defender para endpoint, consulte [Manage portal access using role-based access control](rbac.md).
+> Al acceder a Microsoft Defender para punto de conexión API en nombre de un usuario, necesitará el permiso de aplicación y el permiso de usuario correctos.
+> Si no está familiarizado con los permisos de usuario en Microsoft Defender para punto de conexión, consulte [Administración del acceso al portal mediante el control de acceso basado en rol](rbac.md).
 
 > [!TIP]
-> Si tiene permiso para realizar una acción en el portal, tiene permiso para realizar la acción en la API.
+> Si tiene permiso para realizar una acción en el portal, tiene el permiso para realizar la acción en la API.
 
 ## <a name="create-an-app"></a>Crear una aplicación
 
 1. Inicie sesión en [Azure](https://portal.azure.com) con una cuenta de usuario que tenga el rol **Administrador global** .
 
-2. Vaya a **Azure Active Directory** \> **registros de aplicaciones** \> **Nuevo registro**.
+2. Vaya a **Azure Active Directory** \> **Registros de aplicaciones** \> **Nuevo registro**.
 
-   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="La página Registros de aplicaciones en el portal Microsoft Azure aplicación" lightbox="images/atp-azure-new-app2.png":::
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Página Registros de aplicaciones del portal de Microsoft Azure" lightbox="images/atp-azure-new-app2.png":::
 
 3. Cuando aparezca la página **Registrar una aplicación**, escriba la información de registro de la aplicación:
    - **Nombre**: escriba un nombre significativo para la aplicación, que se mostrará a los usuarios de la aplicación.
@@ -85,49 +95,49 @@ En esta página se explica cómo crear una aplicación AAD, obtener un token de 
 
      Cuando termine, seleccione **Registrar**.
 
-4. Permitir que la aplicación tenga acceso a Microsoft Defender para endpoint y asignarle el permiso "Leer alertas":
+4. Permita que la aplicación acceda a Microsoft Defender para punto de conexión y asígnele el permiso "Leer alertas":
 
-   - En la página de la aplicación, seleccione Permisos de **API** \>  \> Agregar API de permisos que mi organización **usa > tipo** **WindowsDefenderATP** y seleccione **en WindowsDefenderATP**.
+   - En la página de la aplicación, seleccione **Permisos** \> de API **Agregar API de permisos** \> **Que mi organización usa** > escriba **WindowsDefenderATP** y seleccione en **WindowsDefenderATP**.
 
      > [!NOTE]
-     > *WindowsDefenderATP* no aparece en la lista original. Comience a escribir su nombre en el cuadro de texto para verlo aparecer.
+     > *WindowsDefenderATP* no aparece en la lista original. Empiece a escribir su nombre en el cuadro de texto para verlo aparecer.
 
      :::image type="content" alt-text="agregar permiso." source="images/add-permission.png" lightbox="images/add-permission.png":::
 
-   - Elija **Permisos delegados** \> **Alert.Read >** **seleccione Agregar permisos**.
+   - Elija **Permisos** \> delegados **Alert.Read** > seleccione **Agregar permisos**.
 
       :::image type="content" source="images/application-permissions-public-client.png" alt-text="El tipo de aplicación y los paneles de permisos" lightbox="images/application-permissions-public-client.png":::
 
    > [!IMPORTANT]
-   > Seleccione los permisos pertinentes. Las alertas de lectura solo son un ejemplo.
+   > Seleccione los permisos pertinentes. Las alertas de lectura son solo un ejemplo.
 
      Por ejemplo:
 
-     - Para [ejecutar consultas avanzadas](run-advanced-query-api.md), seleccione **Ejecutar permisos de consultas avanzadas** .
-     - Para [aislar un dispositivo](isolate-machine.md), selecciona **Aislar permiso de máquina** .
-     - Para determinar qué permiso necesita, vea la **sección Permisos** en la API a la que está interesado llamar.
+     - Para [ejecutar consultas avanzadas](run-advanced-query-api.md), seleccione **El permiso Ejecutar consultas avanzadas** .
+     - Para [aislar un dispositivo](isolate-machine.md), seleccione **Aislar permiso de máquina** .
+     - Para determinar qué permiso necesita, consulte la sección **Permisos** de la API a la que está interesado llamar.
 
    - Seleccione **Conceder consentimiento**.
 
       > [!NOTE]
-      > Cada vez que agregues permisos, debes seleccionar conceder **el consentimiento** para que el nuevo permiso suba a efecto.
+      > Cada vez que agregue permiso, debe seleccionar en **Conceder consentimiento** para que el nuevo permiso surta efecto.
 
-      :::image type="content" source="images/grant-consent.png" alt-text="La opción de consentimiento de administrador general" lightbox="images/grant-consent.png":::
+      :::image type="content" source="images/grant-consent.png" alt-text="Opción de consentimiento del gran administrador" lightbox="images/grant-consent.png":::
 
-5. Anote el identificador de aplicación y el identificador de inquilino.
+5. Anote el identificador de la aplicación y el identificador de inquilino.
 
-    En la página de la aplicación, vaya **a Información general** y copie la siguiente información:
+    En la página de la aplicación, vaya a **Información general** y copie la siguiente información:
 
-    :::image type="content" source="images/app-and-tenant-ids.png" alt-text="El identificador de aplicación creado"  lightbox="images/app-and-tenant-ids.png":::
+    :::image type="content" source="images/app-and-tenant-ids.png" alt-text="Identificador de la aplicación creada"  lightbox="images/app-and-tenant-ids.png":::
 
 ## <a name="get-an-access-token"></a>Obtener un token de acceso
 
-Para obtener más información sobre AAD tokens, [consulte Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+Para obtener más información sobre los tokens de AAD, consulte [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### <a name="using-c"></a>Uso de C\#
 
 - Copie o pegue la clase siguiente en la aplicación.
-- Usa **el método AcquireUserTokenAsync** con el identificador de aplicación, el identificador de inquilino, el nombre de usuario y la contraseña para adquirir un token.
+- Use **el método AcquireUserTokenAsync** con el identificador de aplicación, el identificador de inquilino, el nombre de usuario y la contraseña para adquirir un token.
 
     ```csharp
     namespace WindowsDefenderATP
@@ -171,19 +181,19 @@ Para obtener más información sobre AAD tokens, [consulte Azure AD tutorial](/a
 
 Compruebe para asegurarse de que tiene un token correcto:
 
-- Copie y pegue en [JWT](https://jwt.ms) el token que obtuvo en el paso anterior para descodificarlo.
+- Copie o pegue en [JWT](https://jwt.ms) el token que obtuvo en el paso anterior para descodificarlo.
 - Valide que obtiene una notificación "scp" con los permisos de aplicación deseados.
-- En la siguiente captura de pantalla, puedes ver un token descodificado adquirido desde la aplicación en el tutorial:
+- En la captura de pantalla siguiente, puede ver un token descodificado adquirido de la aplicación en el tutorial:
 
   :::image type="content" source="images/nativeapp-decoded-token.png" alt-text="Página de validación de tokens" lightbox="images/nativeapp-decoded-token.png":::
 
-## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>Usar el token para obtener acceso a la API de Microsoft Defender para endpoint
+## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>Uso del token para acceder a Microsoft Defender para punto de conexión API
 
-- Elija la API que desea usar: [Compatible con Microsoft Defender para las API de punto de conexión](exposed-apis-list.md).
+- Elija la API que desea usar: API [de Microsoft Defender para punto de conexión admitidas](exposed-apis-list.md).
 - Establezca el encabezado Authorization en la solicitud HTTP que envíe a "Bearer {token}" (Bearer es el esquema de autorización).
-- El tiempo de expiración del token es de 1 hora (puede enviar más de una solicitud con el mismo token).
+- La hora de expiración del token es de 1 hora (puede enviar más de una solicitud con el mismo token).
 
-- Ejemplo de envío de una solicitud para obtener una lista de **alertas mediante C#**:
+- Ejemplo de envío de una solicitud para obtener una lista de alertas **mediante C#**:
 
     ```csharp
     var httpClient = new HttpClient();
@@ -197,7 +207,7 @@ Compruebe para asegurarse de que tiene un token correcto:
     // Do something useful with the response
     ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Microsoft Defender para api de punto de conexión](exposed-apis-list.md)
-- [Access Microsoft Defender for Endpoint with application context](exposed-apis-create-app-webapp.md)
+- [API de Microsoft Defender para punto de conexión](exposed-apis-list.md)
+- [Acceso a Microsoft Defender para punto de conexión con contexto de aplicación](exposed-apis-create-app-webapp.md)

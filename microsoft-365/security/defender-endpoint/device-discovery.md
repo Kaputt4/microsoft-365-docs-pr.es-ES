@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f6046576fcea2fe961e73e88168c6254a2d95a40
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 7b76fff060b46cbe13c11eb90f521af61e8900f5
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665060"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172935"
 ---
 # <a name="device-discovery-overview"></a>Información general de la detección de dispositivo
 
@@ -116,19 +116,43 @@ Busque recomendaciones de seguridad relacionadas con "SSH" para buscar vulnerabi
 
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>Uso de la búsqueda avanzada en dispositivos detectados
 
-Puede usar consultas de búsqueda avanzada para obtener visibilidad en los dispositivos detectados.
-Busque detalles sobre los puntos de conexión detectados en la tabla DeviceInfo o información relacionada con la red sobre esos dispositivos en la tabla DeviceNetworkInfo.
+Puede usar consultas de búsqueda avanzadas para obtener visibilidad en los dispositivos detectados. Busque detalles sobre los dispositivos detectados en la tabla DeviceInfo o información relacionada con la red sobre esos dispositivos en la tabla DeviceNetworkInfo.
 
 :::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="Página Búsqueda avanzada en la que se pueden usar consultas" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
-La detección de dispositivos aprovecha Microsoft Defender para punto de conexión dispositivos incorporados como origen de datos de red para atribuir actividades a dispositivos no incorporados. Esto significa que si un Microsoft Defender para punto de conexión dispositivo incorporado se comunica con un dispositivo no incorporado, las actividades del dispositivo no incorporado se pueden ver en la escala de tiempo y a través de la tabla DeviceNetworkEvents de búsqueda avanzada.
+### <a name="query-discovered-devices-details"></a>Consulta de los detalles de los dispositivos detectados
 
-Los nuevos eventos se basan en conexiones de Protocolo de control de transmisión (TCP) y se ajustarán al esquema DeviceNetworkEvents actual. Entrada TCP al dispositivo habilitado para Microsoft Defender para punto de conexión desde un dispositivo que no está habilitado para Microsoft Defender para punto de conexión.
+Ejecute esta consulta, en la tabla DeviceInfo, para devolver todos los dispositivos detectados junto con la mayoría de los detalles de cada dispositivo:
 
-También se han agregado los siguientes tipos de acción:
+```query
+DeviceInfo
+| summarize arg_max(Timestamp, *) by DeviceId  // Get latest known good per device Id
+| where isempty(MergedToDeviceId) // Remove invalidated/merged devices
+| where OnboardingStatus != "Onboarded" 
+```
+
+Al invocar la función **SeenBy** , en la consulta de búsqueda avanzada, puede obtener detalles sobre qué dispositivo incorporado ha visto un dispositivo detectado.Esta información puede ayudar a determinar la ubicación de red de cada dispositivo detectado y, posteriormente, ayudar a identificarlo en la red.  
+
+```query
+DeviceInfo
+| where OnboardingStatus != "Onboarded" 
+| summarize arg_max(Timestamp, *) by DeviceId  
+| where isempty(MergedToDeviceId)  
+| limit 100 
+| invoke SeenBy() 
+| project DeviceId, DeviceName, DeviceType, SeenBy  
+```
+
+Para obtener más información, vea la función [SeenBy().](/microsoft-365/security/defender/advanced-hunting-seenby-function)
+
+### <a name="query-network-related-information"></a>Consulta de información relacionada con la red
+
+La detección de dispositivos aprovecha Microsoft Defender para punto de conexión dispositivos incorporados como origen de datos de red para atribuir actividades a dispositivos no incorporados. El sensor de red del dispositivo incorporado Microsoft Defender para punto de conexión identifica dos nuevos tipos de conexión:
 
 - ConnectionAttempt: intento de establecer una conexión TCP (syn)
 - ConnectionAcknowledged: confirmación de que se aceptó una conexión TCP (syn\ack)
+
+Esto significa que cuando un dispositivo no incorporado intenta comunicarse con un dispositivo Microsoft Defender para punto de conexión incorporado, el intento generará un DeviceNetworkEvent y las actividades de dispositivo no incorporadas se pueden ver en la escala de tiempo del dispositivo incorporado y a través de la tabla DeviceNetworkEvents de búsqueda avanzada.
 
 Puede probar esta consulta de ejemplo:
 

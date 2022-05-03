@@ -1,7 +1,7 @@
 ---
-title: Guía avanzada de la API de PowerShell
+title: Guía de búsqueda avanzada con la API de PowerShell
 ms.reviewer: ''
-description: Use estos ejemplos de código y consulte varias API de Punto de conexión de Microsoft Defender.
+description: Use estos ejemplos de código para consultar varias API de Microsoft Defender para punto de conexión.
 keywords: apis, api admitidas, búsqueda avanzada, consulta
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,22 +15,26 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 09/24/2018
+ms.date: 04/27/2022
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6b1f501b942512500c11c7f9fe1e9308d67706e9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c23bf15a188527b2b4c24270fbc1312537da4154
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165323"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174879"
 ---
-# <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>API de Microsoft Defender para endpoints con PowerShell
+# <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>API de Microsoft Defender para punto de conexión con PowerShell
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:** 
-- [Plan 2 de Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para Empresas](../defender-business/index.yml)
+
+> [!IMPORTANT]
+> Las funcionalidades avanzadas de búsqueda no se incluyen en Defender para empresas. Consulte [Comparar Microsoft Defender para Empresas con los planes 1 y 2 de Microsoft Defender para punto de conexión](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -40,14 +44,14 @@ ms.locfileid: "61165323"
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Escenario completo con varias API de Microsoft Defender para endpoint.
+Escenario completo con varias API de Microsoft Defender para punto de conexión.
 
-En esta sección, compartimos ejemplos de PowerShell 
-- Recuperar un token 
-- Usar token para recuperar las alertas más recientes en Microsoft Defender para endpoint
-- Para cada alerta, si la alerta tiene prioridad media o alta y aún está en curso, comprueba cuántas veces el dispositivo se ha conectado a una dirección URL sospechosa.
+En esta sección, compartimos ejemplos de PowerShell para 
+- Recuperación de un token 
+- Use el token para recuperar las alertas más recientes de Microsoft Defender para punto de conexión
+- Para cada alerta, si la alerta tiene prioridad media o alta y sigue en curso, compruebe cuántas veces el dispositivo se ha conectado a una dirección URL sospechosa.
 
-**Requisito** previo: primero debes [crear una aplicación](apis-intro.md).
+**Requisito previo**: primero debe [crear una aplicación](apis-intro.md).
 
 ## <a name="preparation-instructions"></a>Instrucciones de preparación
 
@@ -57,15 +61,15 @@ En esta sección, compartimos ejemplos de PowerShell
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-Para obtener más información, consulte [documentación de PowerShell](/powershell/module/microsoft.powershell.security/set-executionpolicy)
+Para obtener más información, consulte [la documentación de PowerShell](/powershell/module/microsoft.powershell.security/set-executionpolicy).
 
 ## <a name="get-token"></a>Obtener token
 
 Ejecute lo siguiente:
 
-- $tenantId: identificador del inquilino en nombre del cual desea ejecutar la consulta (es decir, la consulta se ejecutará en los datos de este inquilino)
-- $appId: identificador de la aplicación AAD (la aplicación debe tener el permiso "Ejecutar consultas avanzadas" en Defender para endpoint)
-- $appSecret: secreto de la aplicación Azure AD aplicación
+- $tenantId: identificador del inquilino en nombre del que desea ejecutar la consulta (es decir, la consulta se ejecutará en los datos de este inquilino)
+- $appId: identificador de la aplicación de AAD (la aplicación debe tener el permiso "Ejecutar consultas avanzadas" en Defender para punto de conexión)
+- $appSecret: Secreto de la aplicación de Azure AD
 
 - $suspiciousUrl: la dirección URL
 
@@ -131,7 +135,7 @@ $response
 ```
 
 
-## <a name="see-also"></a>Recursos adicionales
-- [Microsoft Defender para api de punto de conexión](apis-intro.md)
+## <a name="see-also"></a>Consulte también
+- [API de Microsoft Defender para punto de conexión](apis-intro.md)
 - [API de Búsqueda avanzada de amenazas](run-advanced-query-api.md)
 - [Búsqueda avanzada de amenazas con Python](run-advanced-query-sample-python.md)

@@ -1,40 +1,36 @@
 ---
 title: Descripción de las opciones de configuración de protección de próxima generación en Microsoft Defender para Empresas
-description: Descripción de los valores de configuración para la protección de próxima generación en Microsoft Defender para Empresas
+description: Descripción de la configuración de protección antivirus y de próxima generación en Defender para empresas, seguridad de puntos de conexión para pequeñas y medianas empresas.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: eee272798be5396ad9ad15177fcd29a0180bc448
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 34cbd422cafe5c171f47e8e6470c4b12f9e1700d
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862728"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174469"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>Descripción de la configuración de próxima generación en Microsoft Defender para Empresas
 
-> [!NOTE]
-> Microsoft Defender para Empresas ahora se incluye en [Microsoft 365 Empresa Premium](../../business-premium/index.md). 
+La protección de última generación en Defender for Business incluye antivirus sólidos y protección antimalware. Las directivas predeterminadas están diseñadas para proteger los dispositivos y los usuarios sin obstaculizar la productividad; sin embargo, también puede personalizar las directivas para satisfacer sus necesidades empresariales. Además, si usa Microsoft Intune, puede usar el centro de administración de Microsoft Endpoint Manager para administrar las directivas de seguridad.
 
-La protección de última generación en Defender for Business incluye antivirus sólidos y protección antimalware. Las directivas predeterminadas están diseñadas para proteger los dispositivos y los usuarios sin obstaculizar la productividad; sin embargo, también puede personalizar las directivas para satisfacer sus necesidades empresariales. Y, si usa Microsoft Endpoint Manager, puede usarlo para administrar las directivas de seguridad.
-
-**En este artículo se describe lo siguiente**:
+**En este artículo se describe**:
 
 - [Configuración y opciones de protección de última generación](#next-generation-protection-settings-and-options)
 - [Otras configuraciones preconfiguradas en Defender para empresas](#other-preconfigured-settings-in-defender-for-business) 
-- [Configuración predeterminada de Defender for Business y Microsoft Endpoint Manager](#defender-for-business-default-settings-and-microsoft-endpoint-manager)
+- [Configuración predeterminada de Defender for Business y Microsoft Intune](#defender-for-business-default-settings-and-microsoft-intune)
 
 ## <a name="next-generation-protection-settings-and-options"></a>Configuración y opciones de protección de última generación
 
@@ -69,9 +65,9 @@ La siguiente configuración de seguridad está preconfigurada en Defender para e
 - Las actualizaciones de inteligencia de seguridad se comprueban antes de que se ejecute un examen antivirus ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan))
 - Las comprobaciones de inteligencia de seguridad se producen cada cuatro horas ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval))
 
-## <a name="defender-for-business-default-settings-and-microsoft-endpoint-manager"></a>Configuración predeterminada de Defender for Business y Microsoft Endpoint Manager
+## <a name="defender-for-business-default-settings-and-microsoft-intune"></a>Configuración predeterminada de Defender for Business y Microsoft Intune
 
-En la tabla siguiente se describen los valores preconfigurados para Defender para empresas y cómo se corresponden con lo que puede ver en Microsoft Endpoint Manager (o Microsoft Intune). Si usa el [proceso de configuración simplificado en Defender for Business](mdb-simplified-configuration.md) (versión preliminar), no es necesario editar esta configuración.
+En la tabla siguiente se describen los valores preconfigurados para Defender para empresas y cómo se corresponden con lo que puede ver en Intune (administrado en el centro de administración de Microsoft Endpoint Manager). Si usa el [proceso de configuración simplificado en Defender for Business](mdb-simplified-configuration.md), no es necesario editar esta configuración.
 
 | Configuración  | Descripción  |
 |---------|---------|
@@ -96,6 +92,6 @@ En la tabla siguiente se describen los valores preconfigurados para Defender par
 
 ## <a name="see-also"></a>Consulte también
 
-- [Visite el portal de Microsoft 365 Defender](mdb-get-started.md)
+- [Visitar el portal de Microsoft 365 Defender](mdb-get-started.md)
 - [Administración de la configuración del firewall en Microsoft Defender para Empresas](mdb-custom-rules-firewall.md)
 - [CSP de directiva: Defender](/windows/client-management/mdm/policy-csp-defender)

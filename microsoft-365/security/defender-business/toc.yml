@@ -5,8 +5,10 @@
       items:
         - name: ¿Qué es Microsoft Defender para Empresas?
           href: mdb-overview.md
-        - name: El proceso de configuración simplificado
+        - name: Configuración simplificada
           href: mdb-simplified-configuration.md
+        - name: 'Cuaderno de estrategias de prueba: Defender para empresas'
+          href: trial-playbook-defender-business.md
         - name: Comparar planes para pequeñas y medianas empresas
           href: compare-mdb-m365-plans.md
         - name: Integración con Microsoft 365 Lighthouse
@@ -17,7 +19,7 @@
           href: get-defender-business.md
         - name: Agregar usuarios y asignar licencias
           href: mdb-add-users.md
-        - name: Visite el portal de Microsoft 365 Defender
+        - name: Visitar el portal de Microsoft 365 Defender
           href: mdb-get-started.md
         - name: Ejecutar el asistente para la instalación
           href: mdb-use-wizard.md
@@ -49,7 +51,7 @@
           href: mdb-review-remediation-actions.md
         - name: Visualización y uso de los informes
           href: mdb-reports.md
-    - name: Administración de directivas de seguridad
+    - name: Visualización o edición de directivas de seguridad
       items:
         - name: 'Ver, editar y crear directivas'
           href: mdb-view-edit-create-policies.md
@@ -61,7 +63,7 @@
           href: mdb-firewall.md
         - name: Administrar reglas para directivas de firewall
           href: mdb-custom-rules-firewall.md
-    - name: Administrar dispositivos
+    - name: Supervisión o administración de dispositivos
       items:
         - name: Ver y administrar dispositivos
           href: mdb-manage-devices.md
@@ -71,6 +73,8 @@
           href: mdb-offboard-devices.md
     - name: Información de referencia
       items:
+        - name: Información de referencia de API
+          href: /microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners
         - name: Cómo obtener ayuda o ponerse en contacto con el soporte técnico
           href: mdb-get-help.md
         - name: Preguntas frecuentes

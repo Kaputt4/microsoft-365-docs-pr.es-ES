@@ -1,7 +1,7 @@
 ---
 title: API compatibles de Microsoft Defender para punto de conexión
 ms.reviewer: ''
-description: Obtenga información sobre las entidades específicas admitidas de Microsoft Defender para puntos de conexión a las que puede crear llamadas a la API.
+description: Obtenga información sobre las entidades de Microsoft Defender para punto de conexión admitidas específicas en las que puede crear llamadas API.
 keywords: apis, api admitidas, actor, alertas, dispositivo, usuario, dominio, ip, archivo, consultas avanzadas, búsqueda avanzada
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 94c5698845f556936373ee4548d9aa137f03867b
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: fe43d4df71b0801ae89149797068873577c77c38
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283058"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174690"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>API compatibles de Microsoft Defender para punto de conexión
 
@@ -29,16 +29,21 @@ ms.locfileid: "61283058"
 
 **Se aplica a:** 
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender para Empresas](../defender-business/index.yml)
+
+> [!IMPORTANT]
+> Las funcionalidades avanzadas de búsqueda no se incluyen en Defender para empresas. Consulte [Comparar Microsoft Defender para Empresas con los planes 1 y 2 de Microsoft Defender para punto de conexión](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+
 
 > ¿Quiere experimentar Microsoft Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="endpoint-uri-and-versioning"></a>URI de extremo y control de versiones
+## <a name="endpoint-uri-and-versioning"></a>Uri de punto de conexión y control de versiones
 
 ### <a name="endpoint-uri"></a>URI del extremo
 
-> El URI de base de servicio es: [https://api.securitycenter.microsoft.com](https://api.securitycenter.microsoft.com)
+> El URI base del servicio es: [https://api.securitycenter.microsoft.com](https://api.securitycenter.microsoft.com)
 >
-> Las consultas basadas en OData tienen el prefijo '/api'. Por ejemplo, para obtener alertas, puede enviar una solicitud GET a [https://api.securitycenter.microsoft.com/api/alerts](https://api.securitycenter.microsoft.com/api/alerts)
+> Las consultas basadas en OData tienen el prefijo "/api". Por ejemplo, para obtener alertas, puede enviar una solicitud GET a [https://api.securitycenter.microsoft.com/api/alerts](https://api.securitycenter.microsoft.com/api/alerts)
 
 ### <a name="versioning"></a>Control de versiones
 
@@ -46,39 +51,39 @@ ms.locfileid: "61283058"
 >
 > La versión actual es **V1.0**.
 >
-> Para usar una versión específica, use este formato: `https://api.securitycenter.microsoft.com/api/{Version}` . Por ejemplo: `https://api.securitycenter.microsoft.com/api/v1.0/alerts`
+> Para usar una versión específica, use este formato: `https://api.securitycenter.microsoft.com/api/{Version}`. Por ejemplo: `https://api.securitycenter.microsoft.com/api/v1.0/alerts`
 >
-> Si no especifica ninguna versión (por ejemplo, ) llegará a `https://api.securitycenter.microsoft.com/api/alerts` la versión más reciente.
+> Si no especifica ninguna versión (por ejemplo, `https://api.securitycenter.microsoft.com/api/alerts`) llegará a la versión más reciente.
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Obtenga más información sobre las entidades admitidas individualmente en las que puede ejecutar llamadas API y detalles como valores de solicitud HTTP, encabezados de solicitud y respuestas esperadas.
+Obtenga más información sobre las entidades admitidas individuales en las que puede ejecutar llamadas API y detalles como valores de solicitud HTTP, encabezados de solicitud y respuestas esperadas.
 
 ## <a name="in-this-section"></a>En esta sección
 
 Tema | Descripción
 :---|:---
-[Búsqueda avanzada de amenazas](run-advanced-query-api.md) | Ejecutar consultas desde la API.
-[Propiedades y métodos de alerta](alerts.md) | Ejecute llamadas API como \- obtener alertas, crear alertas, actualizar alertas y mucho más.
-[Exportar métodos de evaluación y propiedades por dispositivo](get-assessment-methods-properties.md) | Ejecute llamadas api para recopilar evaluaciones de vulnerabilidades por dispositivo, como: evaluación de configuración segura de exportación, evaluación de inventario de software de exportación, evaluación de vulnerabilidades de software de exportación y evaluación de vulnerabilidades de software de exportación \- delta.
-[Propiedades y métodos de investigación automatizada](investigation.md) | Ejecute llamadas API como \- obtener la colección de Investigación.
-[Obtener alertas relacionadas con dominios](get-domain-related-alerts.md) | Ejecute llamadas API como obtener dispositivos relacionados con \- el dominio, estadísticas de dominio y mucho más.
-[Propiedades y métodos de archivo](files.md) | Ejecute llamadas API como obtener información de archivos, alertas relacionadas con \- archivos, dispositivos relacionados con archivos y estadísticas de archivos.
-[Propiedades y métodos de indicadores](ti-indicator.md) | Ejecute una llamada a la API como \- obtener indicadores, crear indicadores y eliminar indicadores.
-[Obtener alertas relacionadas con IP](get-ip-related-alerts.md) | Ejecute llamadas API como \- obtener alertas relacionadas con IP y obtener estadísticas de IP.
-[Propiedades y métodos de máquina](machine.md) | Ejecute llamadas API como obtener dispositivos, obtener dispositivos por identificador, información sobre usuarios que han iniciado \- sesión, editar etiquetas y mucho más.
-[Métodos y propiedades de acción de máquina](machineaction.md) | Ejecute una llamada API como \- Aislamiento, Ejecutar examen antivirus y mucho más.
-[Propiedades y métodos estáticos](recommendation.md) | Ejecute llamadas API como \- obtener recomendación por identificador.
-[Propiedades y métodos de la actividad de corrección](get-remediation-methods-properties.md) | Ejecute una llamada API como obtener todas las tareas de corrección, obtener la tarea de corrección de dispositivos expuestos y \- obtener una tarea de corrección por identificador.
-[Propiedades y métodos de puntuación](score.md) | Ejecuta llamadas API como obtener \- puntuación de exposición o obtener puntuación segura del dispositivo.
-[Propiedades y métodos de software](software.md) | Ejecute llamadas API como, \- por ejemplo, enumerar vulnerabilidades por software.
-[Métodos de usuario](user.md) | Ejecute llamadas API como obtener alertas relacionadas con \- el usuario y dispositivos relacionados con el usuario.
-[Propiedades y métodos de vulnerabilidad](vulnerability.md) | Ejecute llamadas API, como \- los dispositivos de lista por vulnerabilidad.
+[Búsqueda avanzada de amenazas](run-advanced-query-api.md) | Ejecute consultas desde la API.<p>*Las funcionalidades avanzadas de búsqueda no se incluyen en [Defender para empresas](../defender-business/mdb-overview.md)*.
+[Propiedades y métodos de alerta](alerts.md) | Ejecute llamadas API, como \- obtener alertas, crear alertas, actualizar alertas, etc.
+[Exportación de métodos de evaluación y propiedades por dispositivo](get-assessment-methods-properties.md) | Ejecute llamadas API para recopilar evaluaciones de vulnerabilidades por dispositivo, como: \- evaluación de configuración segura de exportación, evaluación del inventario de software de exportación, evaluación de vulnerabilidades de software de exportación y evaluación de vulnerabilidades de software de exportación diferencial.
+[Propiedades y métodos de investigación automatizados](investigation.md) | Ejecute llamadas API, como \- get collection of Investigation.
+[Obtener alertas relacionadas con dominios](get-domain-related-alerts.md) | Ejecute llamadas API, como \- obtener dispositivos relacionados con el dominio, estadísticas de dominio, etc.
+[Propiedades y métodos de archivo](files.md) | Ejecute llamadas API, como \- obtener información de archivos, alertas relacionadas con archivos, dispositivos relacionados con archivos y estadísticas de archivos.
+[Propiedades y métodos de indicadores](ti-indicator.md) | Ejecute una llamada API, como \- obtener indicadores, crear indicador y eliminar indicadores.
+[Obtener alertas relacionadas con IP](get-ip-related-alerts.md) | Ejecute llamadas API, como \- obtener alertas relacionadas con IP y obtener estadísticas de IP.
+[Propiedades y métodos de máquina](machine.md) | Ejecute llamadas API, como \- obtener dispositivos, obtener dispositivos por identificador, información sobre los usuarios que han iniciado sesión, editar etiquetas, etc.
+[Métodos y propiedades de acción de máquina](machineaction.md) | Ejecute una llamada API, como \- Aislamiento, Ejecutar examen antivirus y mucho más.
+[Propiedades y métodos estáticos](recommendation.md) | Ejecute llamadas API, como \- obtener una recomendación por identificador.
+[Propiedades y métodos de la actividad de corrección](get-remediation-methods-properties.md) | Ejecute una llamada API, como \- obtener todas las tareas de corrección, obtener la tarea de corrección de dispositivos expuestos y obtener una tarea de corrección por identificador.
+[Propiedades y métodos de puntuación](score.md) | Ejecute llamadas API, como \- obtener la puntuación de exposición o obtener la puntuación de seguridad del dispositivo.
+[Propiedades y métodos de software](software.md) | Ejecute llamadas API, como \- enumerar vulnerabilidades por software.
+[Métodos de usuario](user.md) | Ejecute llamadas API, como \- obtener alertas relacionadas con el usuario y dispositivos relacionados con el usuario.
+[Propiedades y métodos de vulnerabilidad](vulnerability.md) | Ejecute llamadas API, como \- enumerar dispositivos por vulnerabilidad.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Microsoft Defender para api de punto de conexión](apis-intro.md)
+- [API de Microsoft Defender para punto de conexión](apis-intro.md)
 
-- [Notas de la versión de api de Microsoft Defender para endpoint](api-release-notes.md)
+- [notas de la versión de la API de Microsoft Defender para punto de conexión](api-release-notes.md)

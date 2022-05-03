@@ -1,34 +1,30 @@
 ---
 title: Uso del Asistente para instalación en Microsoft Defender para Empresas
-description: Defender para empresas incluye un proceso de configuración y configuración similar a un asistente. Use el asistente para ahorrar tiempo y esfuerzo.
+description: Defender for Business facilita la configuración con un asistente que se ejecuta la primera vez que usa Defender para empresas. Vea cómo funciona el asistente para la instalación.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 697dfc567eb2719a6e81a7b57df321ba2af40911
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 042f20cce0e0d30195ed241b376bf304abeaa2aa
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882316"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172786"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>Uso del asistente para la instalación en Microsoft Defender para Empresas
-
-> [!NOTE]
-> Microsoft Defender para Empresas ahora se incluye en [Microsoft 365 Empresa Premium](../../business-premium/index.md). 
 
 Microsoft Defender para Empresas se diseñó para ahorrar tiempo y esfuerzo a las pequeñas y medianas empresas. Por ejemplo, puede realizar la configuración y la configuración iniciales con un asistente para la instalación. El asistente para la configuración le guía a través de la concesión de acceso al equipo de seguridad, la configuración de notificaciones por correo electrónico para el equipo de seguridad y la incorporación de los dispositivos de Windows de su empresa.
 
@@ -69,30 +65,30 @@ El asistente para la instalación está diseñado para ayudarle a configurar Def
 
    [Obtenga más información sobre los roles y permisos](mdb-roles-permissions.md). 
 
-2. **Configurar notificaciones por correo electrónico**. En este paso, puede configurar notificaciones por correo electrónico para el equipo de seguridad. A continuación, cuando se genera una alerta o se detecta una nueva vulnerabilidad, el equipo de seguridad no lo hará aunque esté fuera de su escritorio. [Obtenga más información sobre las notificaciones por correo electrónico](mdb-email-notifications.md). 
+2. **Configurar notificaciones por correo electrónico**. En este paso, puede configurar notificaciones por correo electrónico para el equipo de seguridad. A continuación, cuando se genera una alerta o se detecta una nueva vulnerabilidad, el equipo de seguridad no la perderá aunque esté fuera de su escritorio. [Obtenga más información sobre las notificaciones por correo electrónico](mdb-email-notifications.md). 
 
 3. **Incorporación y configuración de dispositivos Windows**. En este paso, puede incorporar rápidamente los dispositivos Windows de su empresa a Defender for Business. La incorporación de dispositivos de inmediato ayuda a proteger esos dispositivos desde el primer día. 
 
-   - **Si ya usa Microsoft Endpoint Manager** (que incluye Microsoft Intune) y su empresa tiene dispositivos inscritos en Endpoint Manager, se le preguntará si desea usar la [incorporación automática](#what-is-automatic-onboarding) para algunos o todos los dispositivos Windows inscritos. La incorporación automática configura una conexión entre Endpoint Manager y Defender for Business y, a continuación, incorpora Windows dispositivos a Defender for Business sin problemas. 
-   - **Si aún no usa Endpoint Manager**, puede [incorporar dispositivos a Defender for Business](mdb-onboard-devices.md). 
+   - **Si ya usa Microsoft Intune** y su empresa tiene dispositivos inscritos en Intune, se le preguntará si desea usar la [incorporación automática](#what-is-automatic-onboarding) para algunos o todos los dispositivos Windows inscritos. La incorporación automática configura una conexión entre Intune y Defender for Business y, a continuación, incorpora Windows dispositivos a Defender for Business sin problemas. 
+   - **Si aún no usa Intune**, puede [incorporar dispositivos a Defender for Business](mdb-onboard-devices.md). 
    
    [Obtenga más información sobre la incorporación de dispositivos a Microsoft Defender para Empresas](mdb-onboard-devices.md).
    
-4. **Configure las directivas de seguridad**. Defender for Business incluye directivas de seguridad predeterminadas para la protección de próxima generación y la protección de firewall que se pueden aplicar a los dispositivos de la empresa. Estas directivas predeterminadas usan la configuración recomendada y están diseñadas para proporcionar una protección segura para los dispositivos. También puede crear sus propias directivas de seguridad. Y, si ya usa Endpoint Manager, puede seguir usándolo para administrar las directivas de seguridad.
+4. **Configure las directivas de seguridad**. Defender for Business incluye directivas de seguridad predeterminadas para la protección de próxima generación y la protección de firewall que se pueden aplicar a los dispositivos de la empresa. Estas directivas predeterminadas usan la configuración recomendada y están diseñadas para proporcionar una protección segura para los dispositivos. También puede crear sus propias directivas de seguridad. Además, si ya usa Intune, puede seguir usando el centro de administración de Microsoft Endpoint Manager para administrar las directivas de seguridad.
 
    [Vea y edite las directivas de seguridad y la configuración](mdb-configure-security-settings.md).
 
 ## <a name="what-is-automatic-onboarding"></a>¿Qué es la incorporación automática?
 
-La incorporación automática es una manera simplificada de incorporar dispositivos Windows a Defender for Business. La incorporación automática solo está disponible para Windows dispositivos que ya están inscritos en Microsoft Endpoint Manager (o Microsoft Intune). 
+La incorporación automática es una manera simplificada de incorporar dispositivos Windows a Defender for Business. La incorporación automática solo está disponible para dispositivos Windows que ya están inscritos en Microsoft Intune. 
 
-Mientras usa el asistente para la instalación, el sistema detectará si Windows dispositivos ya están inscritos en Endpoint Manager. Se le preguntará si desea usar la incorporación automática para todos o algunos de esos dispositivos. Puede incorporar todos los dispositivos Windows a la vez, o seleccionar dispositivos específicos con los que empezar y, a continuación, agregar más dispositivos más adelante. 
+Mientras usa el asistente para la instalación, el sistema detectará si Windows dispositivos ya están inscritos en Intune. Se le preguntará si desea usar la incorporación automática para todos o algunos de esos dispositivos. Puede incorporar todos los dispositivos Windows a la vez o seleccionar dispositivos específicos con los que empezar y, a continuación, agregar más dispositivos más adelante. 
 
 Para incorporar otros dispositivos, consulte [Incorporación de dispositivos a Microsoft Defender para Empresas](mdb-onboard-devices.md).
 
 > [!TIP]
-> - Se recomienda seleccionar la opción "todos los dispositivos inscritos". De este modo, cuando Windows dispositivos se inscriban en Endpoint Manager más adelante, se incorporarán automáticamente a Defender for Business. 
-> - Si ha estado administrando las directivas de seguridad y la configuración en Endpoint Manager, se recomienda cambiar al portal de Microsoft 365 Defender para administrar los dispositivos, las directivas y la configuración. Para más información, consulte [Elegir dónde administrar directivas y dispositivos de seguridad](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
+> - Se recomienda seleccionar los "todos los dispositivos inscritos". Opción. De este modo, cuando Windows dispositivos se inscriban en Intune más adelante, se incorporarán automáticamente a Defender for Business. 
+> - Si ha estado administrando directivas y configuraciones de seguridad en el centro de administración de Endpoint Manager, se recomienda cambiar al portal de Microsoft 365 Defender para administrar los dispositivos, las directivas y la configuración. Para más información, consulte [Elegir dónde administrar directivas y dispositivos de seguridad](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
 
 ## <a name="what-happens-if-i-dont-use-the-wizard"></a>¿Qué ocurre si no uso el asistente?
 

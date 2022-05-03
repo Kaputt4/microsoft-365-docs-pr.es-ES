@@ -1,40 +1,39 @@
 ---
 title: Microsoft 365 Lighthouse y Microsoft Defender para Empresas
-description: Obtenga información sobre cómo se integra Microsoft Defender para Empresas con Microsoft 365 Lighthouse
+description: Vea cómo Microsoft Defender para Empresas se integra con Microsoft 365 Lighthouse, una solución de seguridad para asociados de Microsoft.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 7068d74cf1ca91e0c6584552f833f4704eab8173
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 6dcc0ad7d03031ed0cc41aadeba901eff666943b
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862816"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174196"
 ---
 # <a name="microsoft-365-lighthouse-and-microsoft-defender-for-business"></a>Microsoft 365 Lighthouse y Microsoft Defender para Empresas
 
-> [!NOTE]
-> Microsoft Defender para Empresas ahora se incluye en [Microsoft 365 Empresa Premium](../../business-premium/index.md). 
-
 ## <a name="microsoft-defender-for-business-integrates-with-microsoft-365-lighthouse"></a>Microsoft Defender para Empresas se integra con Microsoft 365 Lighthouse
 
-Si es un Proveedor de soluciones en la nube de Microsoft (CSP) y tiene [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), puede administrar la seguridad de los clientes (pequeñas y medianas empresas). Microsoft Defender para Empresas está diseñado para integrarse con Microsoft 365 Lighthouse. Cuando estas funcionalidades estén disponibles, podrá ver los incidentes de seguridad entre inquilinos en el portal de Microsoft 365 Lighthouse ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). 
+Si es un Proveedor de soluciones en la nube de Microsoft (CSP) y tiene [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), puede administrar la seguridad de los clientes (pequeñas y medianas empresas). Microsoft Defender para Empresas está diseñado para integrarse con Microsoft 365 Lighthouse, de modo que pueda ver incidentes de seguridad entre inquilinos en el portal de Microsoft 365 Lighthouse ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). 
 
 :::image type="content" source="media/lighthouse-incidents.png" alt-text="captura de pantalla de la lista de incidentes en Microsoft 365 Lighthouse":::
 
 Para acceder a la lista de incidentes, en Microsoft 365 Lighthouse, en la página principal, busque la tarjeta Incidentes de **seguridad** y, a continuación, seleccione **Ver todos los incidentes**.
+
+> [!IMPORTANT]
+> Las funcionalidades todavía se están implementando. Si aún no tiene estas funcionalidades, debería tenerlas pronto.
 
 ## <a name="learn-more-about-microsoft-365-lighthouse"></a>Más información sobre Microsoft 365 Lighthouse
 

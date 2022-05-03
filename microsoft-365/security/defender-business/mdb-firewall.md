@@ -1,38 +1,34 @@
 ---
 title: Firewall en Microsoft Defender para Empresas
-description: Obtenga información sobre Windows Defender Firewall en Microsoft Defender para Empresas, incluida la configuración
+description: Obtenga información sobre Windows Defender configuración del firewall en Defender para empresas. El firewall puede ayudar a evitar que el tráfico de red no deseado fluya a los dispositivos de la empresa.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 77c2042ace89a133b9be8995ef817c1fe3766a07
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 9a22af2e1ef047de0deaf98c6eea37cda15dcc5f
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861415"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172673"
 ---
 # <a name="firewall-in-microsoft-defender-for-business"></a>Firewall en Microsoft Defender para Empresas
-
-> [!NOTE]
-> Microsoft Defender para Empresas ahora se incluye en [Microsoft 365 Empresa Premium](../../business-premium/index.md). 
 
 Microsoft Defender para Empresas incluye funcionalidades de firewall con [Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). La protección del firewall ayuda a proteger los dispositivos con reglas que determinan qué tráfico de red puede entrar o fluir desde los dispositivos. 
 
 Puede usar la protección de firewall para especificar si desea permitir o bloquear conexiones en dispositivos en varias ubicaciones. Por ejemplo, la configuración del firewall puede permitir conexiones entrantes en dispositivos que están conectados a la red interna de la empresa, pero evitar esas conexiones cuando el dispositivo está en una red con dispositivos que no son de confianza.
 
-**En este artículo se describe lo siguiente**:
+**En este artículo se describe**:
 
 - [Configuración predeterminada del firewall en Defender para empresas](#default-firewall-settings-in-defender-for-business)
 - [Configuración de firewall que puede configurar en Defender para empresas](#firewall-settings-you-can-configure-in-defender-for-business)

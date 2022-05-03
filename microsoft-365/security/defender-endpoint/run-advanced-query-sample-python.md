@@ -1,7 +1,7 @@
 ---
-title: Guía avanzada de la API de Python
+title: Guía de búsqueda avanzada con API de Python
 ms.reviewer: ''
-description: Obtenga información sobre cómo consultar con la API de Microsoft Defender para endpoint mediante Python, con ejemplos.
+description: Obtenga información sobre cómo consultar mediante la API de Microsoft Defender para punto de conexión, mediante Python, con ejemplos.
 keywords: apis, api admitidas, búsqueda avanzada, consulta
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 73be2b3c2aa40bb88ac6ccff60eec5cb7f55338c
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 99fc848088725f7b28d91eebc78327c688059de8
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300782"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174778"
 ---
 # <a name="advanced-hunting-using-python"></a>Búsqueda avanzada de amenazas con Python
 
@@ -40,7 +40,7 @@ Ejecute consultas avanzadas con Python, consulte [Advanced Hunting API](run-adva
 
 En esta sección, compartimos ejemplos de Python para recuperar un token y usarlo para ejecutar una consulta.
 
-> **Requisito** previo: primero debes [crear una aplicación](apis-intro.md).
+> **Requisito previo**: primero debe [crear una aplicación](apis-intro.md).
 
 ## <a name="get-token"></a>Obtener token
 
@@ -74,18 +74,18 @@ jsonResponse = json.loads(response.read())
 aadToken = jsonResponse["access_token"]
 ```
 
-donde
+Dónde
 
-- tenantId: identificador del espacio empresarial en nombre del que desea ejecutar la consulta (es decir, la consulta se ejecutará en los datos de este espacio empresarial)
-- appId: id. de la aplicación Azure AD (la aplicación debe tener permiso "Ejecutar consultas avanzadas" en Microsoft Defender para endpoint)
-- appSecret: secreto de la aplicación Azure AD aplicación
+- tenantId: identificador del inquilino en nombre del que desea ejecutar la consulta (es decir, la consulta se ejecutará en los datos de este inquilino).
+- appId: identificador de la aplicación de Azure AD (la aplicación debe tener el permiso "Ejecutar consultas avanzadas" para Microsoft Defender para punto de conexión)
+- appSecret: secreto de la aplicación Azure AD
 
 ## <a name="run-query"></a>Ejecutar consulta
 
- Ejecute la siguiente consulta:
+ Ejecute la consulta siguiente:
 
 ```python
-query = 'RegistryEvents | limit 10' # Paste your own query here
+query = 'DeviceRegistryEvents | limit 10' # Paste your own query here
 
 url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
 headers = { 
@@ -103,7 +103,7 @@ schema = jsonResponse["Schema"]
 results = jsonResponse["Results"]
 ```
 
-- schema contiene el esquema de los resultados de la consulta
+- esquema contiene el esquema de los resultados de la consulta
 - los resultados contienen los resultados de la consulta
 
 ### <a name="complex-queries"></a>Consultas complejas
@@ -142,7 +142,7 @@ for result in results:
 outputFile.close()
 ```
 
-Para generar los resultados de la consulta en formato JSON en file file1.json, haga lo siguiente:
+Para generar los resultados de la consulta en formato JSON en el archivo file1.json, haga lo siguiente:
 
 ```python
 outputFile = open("D:\\Temp\\file1.json", 'w')
@@ -152,6 +152,6 @@ outputFile.close()
 
 ## <a name="related-topic"></a>Tema relacionado
 
-- [Microsoft Defender para api de punto de conexión](apis-intro.md)
+- [API de Microsoft Defender para punto de conexión](apis-intro.md)
 - [API de Búsqueda avanzada de amenazas](run-advanced-query-api.md)
 - [Búsqueda avanzada de amenazas con PowerShell](run-advanced-query-sample-powershell.md)

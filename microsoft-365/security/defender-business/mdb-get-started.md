@@ -1,40 +1,35 @@
 ---
-title: Visite el portal de Microsoft 365 Defender
-description: Consulte cómo empezar a usar el portal de Microsoft 365 Defender. Obtenga información sobre cómo navegar por el portal y ver el estado de seguridad y las recomendaciones actuales.
+title: Visitar el portal de Microsoft 365 Defender
+description: El centro de seguridad de Defender para empresas es el portal de Microsoft 365 Defender. Obtenga información sobre cómo navegar por el portal y ver los pasos siguientes.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 4af2986a3c1c726e9bf963752d53fe6ef098c19e
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 7e4f22634756b931a6136f57b1938d12d36bc988
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861474"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172809"
 ---
-# <a name="visit-the-microsoft-365-defender-portal"></a>Visite el portal de Microsoft 365 Defender
-
-> [!NOTE]
-> Microsoft Defender para Empresas ahora se incluye en [Microsoft 365 Empresa Premium](../../business-premium/index.md). 
+# <a name="visit-the-microsoft-365-defender-portal"></a>Visitar el portal de Microsoft 365 Defender
 
 El portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) es tu tienda integral para usar y administrar Microsoft Defender para Empresas. Incluye un banner de bienvenida y llamadas que te ayudarán a empezar, tarjetas que exponen información relevante y una barra de navegación para que puedas acceder fácilmente a las distintas características y funcionalidades. 
 
 :::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Portal de Microsoft 365 Defender":::
 
- 
 >
 > **¿Tiene un minuto?**
 > Realice nuestra <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">breve encuesta sobre seguridad</a>. Nos encantaría conocer su opinión.
@@ -44,7 +39,7 @@ El portal de Microsoft 365 Defender ([https://security.microsoft.com](https://se
 
 Use la barra de navegación del lado izquierdo de la pantalla para acceder a los incidentes, ver informes y administrar las directivas de seguridad. En la tabla siguiente se describen los elementos que verá en la barra de navegación.
 
-| Item | Descripción |
+| Elemento | Descripción |
 |:---|:---|
 | **Inicio** | Le lleva a la página principal en Microsoft 365 Defender. La página principal incluye tarjetas que resaltan las amenazas activas que se detectaron, junto con recomendaciones para ayudar a proteger los datos y los dispositivos de su empresa. <br/><br/>Recomendaciones se incluyen en Defender for Business puede ahorrar tiempo y esfuerzo al equipo de seguridad. Recomendaciones se basan en los procedimientos recomendados del sector. Para obtener más información sobre las recomendaciones, consulte [Recomendaciones de seguridad: Administración de amenazas y vulnerabilidades](../defender-endpoint/tvm-security-recommendation.md). |
 | **Incidentes** | Le lleva a la lista de incidentes recientes. A medida que se desencadenan alertas, se crean incidentes. Un incidente puede incluir varias alertas. Asegúrese de revisar los incidentes con regularidad. <br/><br/>Para más información sobre los incidentes, consulte [Visualización y administración de incidentes en Microsoft Defender para Empresas](mdb-view-manage-incidents.md).|

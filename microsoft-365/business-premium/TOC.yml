@@ -6,7 +6,7 @@
       href: m365bp-secure-users.md
     - name: "Obtención de Microsoft\_365 Empresa Premium"
       href: get-microsoft-365-business-premium.md
-    - name: Obtener Microsoft 365 para campañas
+    - name: Obtenga Microsoft 365 para Campañas
       href: get-microsoft-365-campaigns.md
 - name: Fortificar su entorno
   items:
@@ -16,7 +16,7 @@
           href: m365bp-setup-overview.md
         - name: Configuración de Microsoft 365 Empresa Premium
           href: m365bp-setup.md
-        - name: Configuración de Microsoft 365 para campañas
+        - name: Configurar Microsoft 365 for Campaigns
           items:
             - name: Registrarse
               href: m365-campaigns-sign-up.md
@@ -36,7 +36,7 @@
           href: m365bp-increase-protection.md
 - name: Entrenamiento de su equipo
   items:
-    - name: Configuración de dispositivos no administrados (BYOD)
+    - name: 'Configuración de dispositivos (BYOD) no administrados '
       items:
         - name: Información general
           href: m365bp-devices-overview.md
@@ -74,11 +74,11 @@
           href: m365bp-protect-devices.md
         - name: Configurar dispositivos administrados
           href: m365bp-managed-devices-setup.md
-        - name: Incorporación de dispositivos inscritos y aplicación de directivas
+        - name: Abordar dispositivos inscritos y aplicar directivas
           href: m365bp-onboard-devices-mdb.md
-        - name: Revisión y edición de directivas de dispositivos
+        - name: Revista y edita las directivas de dispositivo
           href: m365bp-view-edit-create-mdb-policies.md
-        - name: Administración de grupos de dispositivos
+        - name: Administrar grupos de dispositivos
           href: m365bp-device-groups-mdb.md
 - name: Administración de incidentes de seguridad
   items:
@@ -96,7 +96,7 @@
       href: m365bp-maintain-environment.md
     - name: Quitar usuarios
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Eliminación de datos de dispositivos
+    - name: Quitar datos de dispositivos
       href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Restablecer dispositivos a la configuración de fábrica
       href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
@@ -104,6 +104,8 @@
   items:
     - name: Glosario de términos
       href: m365bp-glossary.md
+    - name: Preguntas más frecuentes de Microsoft 365 Empresa Premium
+      href: microsoft-365-business-faqs.yml
     - name: Microsoft 365 contenido de administrador
       href: /microsoft-365/admin/
     - name: Microsoft Defender para Empresas

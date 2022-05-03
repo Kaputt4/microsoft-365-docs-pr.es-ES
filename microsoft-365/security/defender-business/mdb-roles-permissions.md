@@ -1,13 +1,12 @@
 ---
 title: Asignación de roles y permisos en Microsoft Defender para Empresas
-description: Aprenda a asignar roles y permisos en Microsoft Defender para Empresas
+description: Asigne roles al equipo de ciberseguridad. Obtenga información sobre estos roles y permisos en Defender para empresas.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,26 +15,21 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: e4a3be91ff46626654f0c0f7b027557958429b33
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 03295989e1ee44ab43fe0cc53e4029a6c4307ea8
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862684"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172641"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>Asignación de roles y permisos en Microsoft Defender para Empresas
-
-> [!NOTE]
-> Microsoft Defender para Empresas ahora se incluye en [Microsoft 365 Empresa Premium](../../business-premium/index.md). 
 
 Para realizar tareas en el portal de Microsoft 365 Defender, como configurar Microsoft Defender para Empresas, ver informes o realizar acciones de respuesta sobre amenazas detectadas, se deben asignar permisos adecuados al equipo de seguridad. Los permisos se conceden a través de roles asignados en el portal de Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) o en [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
 
 ## <a name="what-to-do"></a>Qué hacer
 
 1. [Obtenga información sobre los roles en Defender para empresas](#roles-in-defender-for-business).
-
 2. [Vea o edite las asignaciones de roles para el equipo de seguridad](#view-or-edit-role-assignments).
-
 3. [Continúe con los pasos siguientes](#next-steps).
 
 >

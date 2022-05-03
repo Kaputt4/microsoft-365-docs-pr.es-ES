@@ -1,33 +1,29 @@
 ---
 title: Administración de dispositivos en Microsoft Defender para Empresas
-description: Aprenda a administrar dispositivos en Microsoft Defender para Empresas
+description: Obtenga información sobre cómo agregar, quitar y administrar dispositivos en Defender para empresas, endpoint protection para pequeñas y medianas empresas.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 453cce2c52902116bc3eaa71f5e6c998ab4164a1
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: e08c53dd949858a1fcc9af9c8553c5d0eed07cef
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862838"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173096"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business"></a>Administración de dispositivos en Microsoft Defender para Empresas
-
-> [!NOTE]
-> Microsoft Defender para Empresas ahora se incluye en [Microsoft 365 Empresa Premium](../../business-premium/index.md). 
 
 En Microsoft Defender para Empresas, puede administrar los dispositivos de la siguiente manera:
 
@@ -69,7 +65,7 @@ En Microsoft Defender para Empresas, puede administrar los dispositivos de la si
 
 Consulte [Incorporación de dispositivos para Microsoft Defender para Empresas](mdb-onboard-devices.md).
 
-## <a name="offboard-a-device"></a>Fuera de bordo de un dispositivo
+## <a name="offboard-a-device"></a>Retirar un dispositivo
 
 Consulte [Offboarding a device (Offboarding a device](mdb-offboard-devices.md)).
 

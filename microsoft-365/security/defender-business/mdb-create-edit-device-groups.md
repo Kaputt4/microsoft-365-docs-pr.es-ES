@@ -1,37 +1,33 @@
 ---
 title: Grupos de dispositivos en Microsoft Defender para Empresas
-description: Obtenga información sobre los grupos de dispositivos en Microsoft Defender para Empresas
+description: Las directivas de seguridad se aplican a los dispositivos a través de grupos de dispositivos en Defender para empresas.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 6c02a92132f7f5249f2ba67ca2841902b889d52b
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: abb1c694f98ace7595f1389e3270ca3479d0c745
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861753"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172220"
 ---
 # <a name="device-groups-in-microsoft-defender-for-business"></a>Grupos de dispositivos en Microsoft Defender para Empresas
 
-> [!NOTE]
-> Microsoft Defender para Empresas ahora se incluye en [Microsoft 365 Empresa Premium](../../business-premium/index.md). 
-
 En Microsoft Defender para Empresas, las directivas se aplican a los dispositivos a través de ciertas colecciones que se denominan grupos de dispositivos. 
 
-**En este artículo se describe lo siguiente**:  
+**En este artículo se describe**:  
 
 - [Qué son los grupos de dispositivos](#what-is-a-device-group)   
 - [Creación de grupos de dispositivos en Defender para empresas](#create-a-new-device-group)
@@ -45,9 +41,9 @@ En Microsoft Defender para Empresas, las directivas se aplican a los dispositivo
 
 ## <a name="what-is-a-device-group"></a>¿Qué es un grupo de dispositivos?
 
-Un grupo de dispositivos es una colección de dispositivos que se agrupan debido a determinados criterios especificados, como la versión del sistema operativo. Los dispositivos que cumplen los criterios se incluyen en ese grupo de dispositivos, a menos que los excluya. En Microsoft Defender para Empresas, las directivas se aplican a los dispositivos mediante grupos de dispositivos.
+Un grupo de dispositivos es una colección de dispositivos que se agrupan por determinados criterios especificados, como la versión del sistema operativo. Los dispositivos que cumplen los criterios se incluyen en ese grupo de dispositivos, a menos que se excluyan. En Microsoft Defender para Empresas, las directivas se aplican a los dispositivos mediante grupos de dispositivos.
 
-Defender for Business incluye grupos de dispositivos predeterminados que puede usar. Los grupos de dispositivos predeterminados incluyen todos los dispositivos incorporados a Defender for Business. Por ejemplo, hay un grupo de dispositivos predeterminado para Windows dispositivos. Cada vez que incorpore Windows dispositivos, se agregan automáticamente al grupo de dispositivos predeterminado.
+Defender for Business incluye grupos de dispositivos predeterminados que puede usar. Los grupos de dispositivos predeterminados incluyen todos los dispositivos que se incorporan a Defender para Empresas. Por ejemplo, hay un grupo de dispositivos predeterminado para Windows dispositivos. Cada vez que incorpore Windows dispositivos, se agregan automáticamente al grupo de dispositivos predeterminado.
 
 También puede crear nuevos grupos de dispositivos para asignar directivas con una configuración específica a determinados dispositivos. Por ejemplo, puede tener una directiva de firewall asignada a un conjunto de dispositivos Windows y una directiva de firewall diferente asignada a otro conjunto de dispositivos Windows. Puede definir grupos de dispositivos específicos para usarlos con las directivas.
 
@@ -64,27 +60,27 @@ Actualmente, en Defender para empresas, puede crear un nuevo grupo de dispositiv
 
 2. En el panel de navegación, elija **Configuración del dispositivo**. 
 
-3. Realice una de las siguientes acciones:
+3. Realice una de las acciones siguientes:
 
     1. Seleccione una directiva existente y, a continuación, elija **Editar**.
     2. Elija **+ Agregar** para crear una nueva directiva.
 
     > [!TIP]
-    > Para obtener ayuda para crear o editar una directiva, consulte [Ver o editar directivas en Microsoft Defender para Empresas](mdb-view-edit-policies.md).
+    > Para obtener ayuda para crear o editar una directiva, vea [Ver o editar directivas en Microsoft Defender para Empresas](mdb-view-edit-policies.md).
 
-4. En el paso **Información general** , revise la información, edite si es necesario y, a continuación, elija **Siguiente**.
+4. En el paso **Información general**, revise la información, edítela si es necesario y, a continuación, elija **Siguiente**.
 
 5. Elija **+ Crear nuevo grupo**. 
 
 6. Especifique un nombre y una descripción para el grupo de dispositivos y, a continuación, elija **Siguiente**.
 
-7. Seleccione los dispositivos que se van a incluir en el grupo y, a continuación, elija **Crear grupo**.
+7. Seleccione los dispositivos que desea incluir en el grupo y, a continuación, elija **Crear grupo**.
 
-8. En el paso **Grupos de dispositivos** , revise la lista de grupos de dispositivos de la directiva. Si es necesario, quite un grupo de la lista. A continuación, elija **Siguiente**.
+8. En el paso **Grupos de dispositivos**, revise la lista de grupos de dispositivos de la directiva. Si es necesario, quite un grupo de la lista. A continuación, elija **Siguiente**.
 
-9. En la página **Configuración** , revise y edite la configuración según sea necesario y, a continuación, elija **Siguiente**. Para obtener más información sobre estas opciones, consulte [Configuración](mdb-next-gen-configuration-settings.md).
+9. En la página **Opciones de configuración**, revise y edite la configuración según sea necesario y, a continuación, elija **Siguiente**. Para obtener más información sobre estas opciones, consulte [Configuración](mdb-next-gen-configuration-settings.md).
 
-10. En el paso **Revisar la directiva** , revise toda la configuración, realice las modificaciones necesarias y, a continuación, elija **Crear directiva** o **Actualizar directiva**.
+10. En el paso **Revisar la directiva**, revise toda la configuración, realice las modificaciones necesarias y, a continuación, elija **Crear directiva** o **Actualizar directiva**.
 
 ## <a name="view-an-existing-device-group"></a>Visualización de un grupo de dispositivos existente
 
@@ -94,15 +90,15 @@ Actualmente, en Defender para empresas, puede ver los grupos de dispositivos exi
 
 2. En el panel de navegación, elija **Configuración del dispositivo**. 
 
-3. Realice una de las siguientes acciones:
+3. Realice una de las acciones siguientes:
 
     1. Seleccione una directiva existente y, a continuación, elija **Editar**.
     2. Elija **+ Agregar** para crear una nueva directiva.
 
     > [!TIP]
-    > Para obtener ayuda para crear o editar una directiva, consulte [Ver o editar directivas en Microsoft Defender para Empresas](mdb-view-edit-policies.md).
+    > Para obtener ayuda para crear o editar una directiva, vea [Ver o editar directivas en Microsoft Defender para Empresas](mdb-view-edit-policies.md).
 
-4. En el paso **Información general** , revise la información, edite si es necesario y, a continuación, elija **Siguiente**.
+4. En el paso **Información general**, revise la información, edítela si es necesario y, a continuación, elija **Siguiente**.
 
 5. Elija **Usar grupo existente**. Se abre un control flotante y muestra los grupos de dispositivos. Si aún no tiene ningún grupo de dispositivos, se le pedirá que cree un nuevo grupo de dispositivos.
 
@@ -112,7 +108,7 @@ Al crear o editar una directiva, es posible que vea la opción **Agregar todos l
 
 :::image type="content" source="media/add-all-devices-option.png" alt-text="Captura de pantalla de la opción Agregar todos los dispositivos.":::
 
-Si selecciona esta opción, todos los dispositivos inscritos en Microsoft Endpoint Manager (lo que incluye Microsoft Intune) recibirán la directiva que está creando o editando de forma predeterminada. 
+Si selecciona esta opción, todos los dispositivos inscritos en Microsoft Intune recibirán la directiva que está creando o editando de forma predeterminada. 
 
 ## <a name="next-steps"></a>Siguientes pasos
 

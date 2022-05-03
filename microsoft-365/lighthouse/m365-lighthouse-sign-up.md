@@ -1,5 +1,5 @@
 ---
-title: Regístrate para Microsoft 365 Lighthouse
+title: Regístrese para obtener Microsoft 365 Lighthouse
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -17,26 +17,26 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP), obtenga información sobre cómo registrarse para Microsoft 365 Lighthouse.
-ms.openlocfilehash: 25ad88edc63d53e3c9110062a64285bbb759a775
-ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
+ms.openlocfilehash: 8d845ed454a672b1480ca0b6fe6f471cc30a37a6
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64645188"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172189"
 ---
-# <a name="sign-up-for-microsoft-365-lighthouse"></a>Regístrate para Microsoft 365 Lighthouse
+# <a name="sign-up-for-microsoft-365-lighthouse"></a>Regístrese para obtener Microsoft 365 Lighthouse
 
-En este artículo se proporcionan instrucciones sobre cómo registrarse para Microsoft 365 Lighthouse. Microsoft 365 Lighthouse es un portal de administración que ayuda a los proveedores de servicios administrados (MSP) a proteger y administrar dispositivos, datos y usuarios a escala para clientes de pequeñas y medianas empresas (SMB) que usan Microsoft 365 Empresa Premium, Microsoft 365 E3 o Windows 365 Business. 
+En este artículo se proporcionan instrucciones sobre cómo registrarse para Microsoft 365 Lighthouse. Microsoft 365 Lighthouse es un portal de administración que ayuda a los proveedores de servicios administrados (CSP) a proteger y administrar dispositivos, datos y usuarios a escala para clientes de pequeñas y medianas empresas (SMB). 
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Microsoft 365 Lighthouse se implementa&mdash; en el espacio empresarial asociado solo en los inquilinos del cliente, pero asegúrese de que usted y los inquilinos del cliente cumplen los requisitos que se enumeran [en Microsoft 365 Lighthouse requisitos](m365-lighthouse-requirements.md).
+- Microsoft 365 Lighthouse solo se implementa en el inquilino&mdash; del asociado, no en los inquilinos del cliente, pero asegúrese de que usted y los inquilinos del cliente cumplen los requisitos enumerados en [Microsoft 365 Lighthouse requisitos](m365-lighthouse-requirements.md).
 
-- Debe ser un administrador global en el espacio empresarial asociado al que está iniciando sesión.
+- Debe ser administrador global en el inquilino de asociado en el que está iniciando sesión.
 
 ## <a name="steps-to-sign-up-for-microsoft-365-lighthouse"></a>Pasos para registrarse en Microsoft 365 Lighthouse
 
-1. Vaya a la Centro de administración de Microsoft 365 y <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> inicie sesión con las credenciales de inquilino de su partner. 
+1. Vaya a la Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> e inicie sesión con sus credenciales de inquilino de asociado. 
 
 1. Vaya a **BillingPurchase** >  **ServicesOther** >  Services.
 
@@ -49,23 +49,23 @@ En este artículo se proporcionan instrucciones sobre cómo registrarse para Mic
 1. Seleccione **Comprar**.
 
     > [!NOTE]
-    > Lighthouse requiere una licencia solo para el inquilino asociado. No se requieren licencias adicionales por usuario para el partner y no se requieren licencias de Lighthouse en ningún inquilino del cliente. 
+    > Lighthouse solo requiere una licencia para el inquilino del asociado. No se requieren licencias adicionales por usuario para el asociado y no se requieren licencias de Lighthouse en ningún inquilino de cliente. 
 
-    Para comprobar que Lighthouse se agregó correctamente a su inquilino, busque Microsoft 365 Lighthouse **en Facturación >** Sus productos en el Centro de administración de Microsoft 365.
+    Para comprobar que Lighthouse se agregó correctamente al inquilino, busque Microsoft 365 Lighthouse en **Facturación > sus productos** en el Centro de administración de Microsoft 365.
 
 1. Si no se le redirige al portal de Lighthouse, vaya a <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
 
-1. Seleccione **Aceptar & Continuar** para completar la modificación del contrato de socio.
+1. Seleccione **Aceptar & Continuar** para completar la modificación del contrato de asociado.
 
     > [!NOTE]
     > Después de completar el registro, los datos del cliente pueden tardar hasta 48 horas en aparecer en Lighthouse.
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-[Configurar Microsoft 365 Lighthouse seguridad del portal](m365-lighthouse-configure-portal-security.md) 
+[Configuración de la seguridad del portal de Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md) 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Introducción a Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (artículo)   
-[Microsoft 365 Lighthouse preguntas más frecuentes](m365-lighthouse-faq.yml) (artículo)   
+[Información general de Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (artículo)   
+[Preguntas más frecuentes sobre Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (artículo)   
 [Microsoft 365 Lighthouse y Microsoft Defender para Empresas](../security/defender-business/mdb-lighthouse-integration.md) (artículo)

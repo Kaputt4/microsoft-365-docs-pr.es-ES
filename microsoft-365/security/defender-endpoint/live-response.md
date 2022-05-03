@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e5d2b2bd47ba30aaf152171605947bb9a627480
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 1f387696797d52805495777be0850ebe135fd38a
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666358"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173118"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigación de entidades en dispositivos mediante respuesta dinámica
 
@@ -165,7 +165,7 @@ Los siguientes comandos están disponibles para los roles de usuario a los que s
 | Conexiones  | Muestra todas las conexiones activas.  | v  | N  | N  |
 | Dir  | Muestra una lista de archivos y subdirectorios en un directorio.  | v  | v  | v  |
 | Controladores  | Muestra todos los controladores instalados en el dispositivo.  | v  | N  | N  |
-| Fg `<command ID>`  | Coloque el trabajo especificado en primer plano en primer plano, lo que lo convierte en el trabajo actual.  NOTA: fg toma un "identificador de comando" disponible en los trabajos, no en un PID  | v  | v  | v  |
+| Fg `<command ID>`  | Coloque el trabajo especificado en primer plano, convirtiéndolo en el trabajo actual.  NOTA: fg toma un "identificador de comando" disponible en los trabajos, no en un PID  | v  | v  | v  |
 | Fileinfo  | Obtener información acerca de un archivo.  | v  | v  | v  |
 | findfile  | Busca archivos por un nombre determinado en el dispositivo.  | v  | v  | v  |
 | getfile <file_path>  | Descarga un archivo.  | v  | v  | v  |
@@ -346,7 +346,7 @@ Seleccione la pestaña **Registro de comandos** para ver los comandos usados en 
 - Un dispositivo solo puede estar en una sesión a la vez.
 - Se aplican los siguientes límites de tamaño de archivo:
   - `getfile` límite: 3 GB
-  - `fileinfo` límite: 10 GB
+  - `fileinfo` límite: 30 GB
   - `library` límite: 250 MB
 
 ## <a name="related-article"></a>Artículo relacionado

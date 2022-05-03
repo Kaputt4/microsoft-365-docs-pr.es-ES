@@ -16,20 +16,20 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre la página Administración de amenazas.
-ms.openlocfilehash: fea297845446bd8cbb14c81851afb5d51ce33717
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 6e6a49cd1e31132881f45877bc00801d91aff492
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023357"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173766"
 ---
 # <a name="overview-of-the-threat-management-page-in-microsoft-365-lighthouse"></a>Información general de la página Administración de amenazas en Microsoft 365 Lighthouse 
 
 **Se aplica a:**
 
-- Windows 10
+- Windows
 
-Antivirus de Microsoft Defender protege a los inquilinos, usuarios y dispositivos frente a amenazas de software, incluidos virus, malware y spyware. Es una protección sólida y continua que está integrada en Windows 10 e incluida con Microsoft 365 Empresa Premium y Microsoft365E3&nbsp;&nbsp;.  
+Antivirus de Microsoft Defender protege a los inquilinos, usuarios y dispositivos frente a amenazas de software, incluidos virus, malware y spyware. Es una protección sólida y continua que está integrada en Windows.  
   
 Para acceder a la página Administración de amenazas de Microsoft 365 Lighthouse, seleccione **Administración de amenazas** en el panel de navegación izquierdo para ver la posición de seguridad de los inquilinos del cliente frente a amenazas. Verá inquilinos, usuarios y dispositivos que requieren su atención y recomendaciones que le ayudarán a reducir el riesgo.  
   
