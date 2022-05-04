@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para publicar etiquetas de retención para poder aplicarlas en aplicaciones para conservar lo que necesita y eliminar lo que no.
-ms.openlocfilehash: c2088afd895b47945bea056c940e564b4dd770fb
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dd20de86b17460d5b150b5bb576ae811e40eed32
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "65145403"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187808"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publicar etiquetas de retención y aplicarlas en aplicaciones
 
@@ -88,7 +88,7 @@ Para editar una directiva de etiqueta de retención existente (el tipo de direct
 
 Si publica etiquetas de retención en SharePoint o OneDrive, aparecerán normalmente en un día para que los usuarios puedan seleccionarlas. Sin embargo, tenga en cuenta que pueden tardar en aparecer hasta siete días. 
 
-Si publica etiquetas de retención en Exchange, las etiquetas de retención pueden tardar hasta siete días en aparecer para los usuarios y el buzón debe contener al menos 10 MB de datos.
+Si publica etiquetas de retención en Exchange, las etiquetas de retención pueden tardar hasta siete días en aparecer para los usuarios. Al igual que con toda la configuración de retención de Exchange, el buzón debe contener al menos 10 MB de datos.
 
 ![Diagrama de cuándo las etiquetas publicadas surten efecto.](../media/retention-labels-published-timings.png)
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo la Puntuación de productividad de Microsoft refleja los resultados en cuanto a las experiencias de los usuarios y la tecnología. Estos resultados se comparan con los de otras organizaciones de tamaño similar.
-ms.openlocfilehash: 24a84c3780ec3787b76f78acbe9c0c109a27c639
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 094d5de77db6bffb4a2d5981268b364a6f9e690f
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327075"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188358"
 ---
 # <a name="microsoft-productivity-score"></a>Puntuación de productividad de Microsoft 
 
@@ -135,9 +135,9 @@ Las páginas de detalles son:
 - [Estado de Aplicaciones de Microsoft 365: experiencias tecnológicas](apps-health.md)
 - [Análisis de puntos de conexión](/mem/analytics/productivity-score)
 
-## <a name="business-continuity-special-report"></a>Informe especial de continuidad empresarial
+## <a name="business-resilience-special-report"></a>Informe especial de resiliencia empresarial
 
-El Informe de continuidad empresarial es un informe de inteligencia laboral que está disponible por un tiempo limitado para todos los clientes de Microsoft 365 para guiarles en estos momentos difíciles.  
+El Informe de resiliencia empresarial es un informe de inteligencia laboral que está disponible por un tiempo limitado para todos los clientes de Microsoft 365 para guiarles en estos momentos difíciles.  
 
 Este informe permite a las organizaciones entender: 
 
@@ -147,7 +147,7 @@ Este informe permite a las organizaciones entender:
 
 - Si las reuniones remotas permiten una toma de decisiones eficaz.
 
-[Más información sobre el Informe de continuidad empresarial](/Workplace-Analytics/tutorials/bcrps)
+[Más información sobre el Informe de resistencia empresarial](/Workplace-Analytics/tutorials/bcrps)
 
 [Más información sobre Microsoft Graph](/graph/)
 

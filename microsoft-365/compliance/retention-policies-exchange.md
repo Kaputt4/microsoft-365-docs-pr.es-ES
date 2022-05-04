@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información acerca de cómo funciona la retención para Exchange.
-ms.openlocfilehash: 66b7ad888e62ff84b6a2de49714bbbdf96268312
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: d5c961c733dd757c1f2b8179793b43991e71b4d8
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911432"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188754"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Más información sobre la retención para Exchange
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 La información de este artículo complementa el contenido de [Más información sobre la retención](retention.md) porque tiene información que es específica de Exchange. Para otras cargas de trabajo, consulte:
 
@@ -41,6 +43,8 @@ Los elementos de calendario que tienen una fecha de finalización son compatible
 Los contactos y las tareas y elementos del calendario que no tienen una fecha de finalización no son compatibles.
 
 Otros elementos almacenados en un buzón de correo, como los mensajes de Skype y Teams, no están incluidos en las directivas ni etiquetas de retención de Exchange. Estos elementos tienen sus propias directivas de retención.
+
+Los buzones deben tener al menos 10 MB de datos antes de que se les aplique la configuración de retención, y las etiquetas de retención se puedan publicar en ellos.
 
 ## <a name="how-retention-works-for-exchange"></a>Cómo funciona la retención para Exchange
 
@@ -97,7 +101,7 @@ Cuando la configuración de retención ya no aplique porque los datos se elimina
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
-Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción al gobierno de la información](get-started-with-information-governance.md).
+Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a la administración del ciclo de vida de los datos](get-started-with-data-lifecycle-management.md).
 
 Si está listo para configurar una directiva de retención o etiqueta de retención para Exchange, consulte las siguientes instrucciones:
 - [Crear y configurar directivas de retención](create-retention-policies.md)

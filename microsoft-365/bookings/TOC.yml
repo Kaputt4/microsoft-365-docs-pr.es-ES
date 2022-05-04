@@ -27,6 +27,8 @@
           href: add-questions.md
         - name: Establecer tiempo de margen
           href: set-buffer-time.md
+        - name: Gestionar asistentes de grupos en Bookings
+          href: manage-attendees-bookings.md
         - name: Seguimiento de las métricas y de las actividades
           href: metrics-and-activity-tracking.md
         - name: Establecer idioma y zona horaria
