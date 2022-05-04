@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Para los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga más información sobre los requisitos de permisos de Lighthouse.
-ms.openlocfilehash: 62796df9e5bd5b437d06fe0c8ab6206e070c201b
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: e03ae77f6997d3d34f926285cf7aab5cdd682c9c
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916126"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188315"
 ---
 # <a name="overview-of-permissions-in-microsoft-365-lighthouse"></a>Introducción a los permisos en Microsoft 365 Lighthouse
 
@@ -46,7 +46,7 @@ En la tabla siguiente se enumeran las acciones que los niveles de servicio MSP d
 
 | Página de Lighthouse | Acciones permitidas por los administradores de cuentas| Acciones permitidas por los técnicos de Service Desk |Acciones permitidas por los administradores del sistema | Acciones permitidas de los ingenieros de escalación|
 |---|---|---|---|---|
-| Inicio  | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li></ul> | 
+| Home  | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li></ul> | 
 | Espacios empresariales     | <ul><li>Ver lista de inquilinos</li><li>Actualizar los contactos de los clientes y el sitio web</li><li>Ver planes de implementación</li></ul>  | <ul><li>Ver lista de inquilinos</li><li>Actualizar los contactos de los clientes y el sitio web</li><li>Ver planes de implementación</li></ul>   |  <ul><li>Ver lista de inquilinos</li><li>Actualizar los contactos de los clientes y el sitio web</li><li>Ver planes de implementación</li><li>Visualización del uso de servicios de Microsoft 365</li></ul> | <ul><li>Ver lista de inquilinos</li><li>Actualizar los contactos de los clientes y el sitio web</li><li>Ver planes de implementación</li><li>Visualización del uso de servicios de Microsoft 365</li></ul>  |
 | Usuarios   | <ul><li>Visualización de datos de nivel de inquilino (no específicos del usuario)</li><li>Búsqueda de cuentas de usuario entre inquilinos</li><li>Restablecimiento de contraseña para usuarios que no son administradores*</li></ul>  | <ul><li>Ver todos los datos específicos del usuario</li><li>Búsqueda de cuentas de usuario entre inquilinos</li><li>Restablecimiento de contraseña para usuarios que no son administradores*</li></ul>|  <ul><li>Ver todos los datos específicos del usuario</li><li>Búsqueda de cuentas de usuario entre inquilinos</li><li>Restablecimiento de contraseña para usuarios que no son administradores*</i><li>Bloquear inicio de sesión</li></ul>  | <ul><li>Ver todos los datos específicos del usuario</li><li>Búsqueda de cuentas de usuario entre inquilinos</li><li>Restablecimiento de contraseña para usuarios que no son administradores*</li><li>Bloquear inicio de sesión</li><li>Confirmación de usuarios en peligro</li><li>Descartar el riesgo para los usuarios</li></ul> |
 | Dispositivos    | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li></ul> | <ul><li>Ver todos los datos</li><li>Sincronizar dispositivo</li><li>Reiniciar el dispositivo</li><li>Recopilar diagnósticos</li></ul>|
@@ -87,6 +87,7 @@ Para determinadas acciones de Lighthouse, se requieren asignaciones de roles en 
 
 [Requisitos para Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (artículo)  
 [Preguntas más frecuentes sobre privilegios de administración delegados (DAP)](/partner-center/dap-faq) (artículo)  
+[Ver los roles de Azure Active Directory en Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (artículo)  
 [Asignación de roles y permisos a los usuarios](/partner-center/permissions-overview) (artículo)  
 [Información general de Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (artículo)  
 [Registrarse para obtener Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (artículo)  

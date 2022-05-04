@@ -1,8 +1,8 @@
 ---
-title: Implementación basada en aplicaciones para Microsoft Defender para endpoint en iOS
+title: Implementación basada en aplicaciones para Microsoft Defender para punto de conexión en iOS
 ms.reviewer: ''
-description: Describe cómo implementar Microsoft Defender para endpoint en iOS con una aplicación
-keywords: microsoft, defender, Microsoft Defender para Endpoint, ios, app, installation, deploy, uninstallation, intune
+description: Describe cómo implementar Microsoft Defender para punto de conexión en iOS mediante una aplicación
+keywords: microsoft, defender, Microsoft Defender para punto de conexión, ios, app, installation, deploy, uninstallation, intune
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,14 +16,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 239d16bdbdb3fd7770061a91d77a3f190cfb8f4a
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: ed4b69aae3a29478a2b8bfb98d8ab605e5af28a8
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64476189"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188666"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Implementar Microsoft Defender para endpoint en iOS
+# <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Implementación de Microsoft Defender para punto de conexión en iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,84 +32,84 @@ ms.locfileid: "64476189"
 - [Microsoft Defender para punto de conexión Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Defender for Endpoint? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> ¿Desea experimentar Defender para punto de conexión? [Regístrese para obtener una prueba gratuita.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-En este tema se describe la implementación de Defender for Endpoint en iOS en Portal de empresa de Intune dispositivos inscritos. Para obtener más información acerca de la inscripción de dispositivos de Intune, consulta [Inscribir dispositivos iOS/iPadOS en Intune](/mem/intune/enrollment/ios-enroll).
+En este tema se describe la implementación de Defender para punto de conexión en iOS en Portal de empresa de Intune dispositivos inscritos. Para obtener más información sobre Intune inscripción de dispositivos, consulte [Inscripción de dispositivos iOS/iPadOS en Intune](/mem/intune/enrollment/ios-enroll).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Asegúrese de tener acceso al [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+- Asegúrese de que tiene acceso al [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-- Asegúrese de que la inscripción de iOS se realiza para los usuarios. Los usuarios deben tener asignada una licencia de Defender for Endpoint para poder usar Defender para Endpoint en iOS. Consulte [Asignar licencias a los usuarios para](/azure/active-directory/users-groups-roles/licensing-groups-assign) obtener instrucciones sobre cómo asignar licencias.
+- Asegúrese de que la inscripción de iOS se realiza para los usuarios. Los usuarios deben tener asignada una licencia de Defender para punto de conexión para poder usar Defender para punto de conexión en iOS. Consulte [Asignación de licencias a usuarios](/azure/active-directory/users-groups-roles/licensing-groups-assign) para obtener instrucciones sobre cómo asignar licencias.
 
 > [!NOTE]
-> Microsoft Defender para Endpoint en iOS está disponible en [la Apple App Store](https://aka.ms/mdatpiosappstore).
+> Microsoft Defender para punto de conexión en iOS está disponible en apple [App Store](https://aka.ms/mdatpiosappstore).
 
 ## <a name="deployment-steps"></a>Pasos para la implementación
 
-Implemente Defender para endpoint en iOS mediante Portal de empresa de Intune.
+Implemente Defender para punto de conexión en iOS a través de Portal de empresa de Intune.
 
-### <a name="add-ios-store-app"></a>Agregar aplicación de la tienda iOS
+### <a name="add-ios-store-app"></a>Incorporación de una aplicación de la Tienda iOS
 
-1. En [el Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), ve **a AppsiOS** -> **/iPadOSAddiOS** ->  ->  **store app** y haz clic en **Seleccionar**.
+1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **AplicacionesiOS** -> **/iPadOSAgregar** ->  ->  **aplicación de la tienda** y haga clic en **Seleccionar**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ios-deploy-1.png" alt-text="La pestaña Agregar aplicaciones en el Centro Microsoft Endpoint Manager administración" lightbox="images/ios-deploy-1.png":::
+    > :::image type="content" source="images/ios-deploy-1.png" alt-text="La pestaña Agregar aplicaciones en el Centro de administración de Microsoft Endpoint Manager" lightbox="images/ios-deploy-1.png":::
 
-1. En la **página Agregar aplicación** , haga clic en **Buscar en la Tienda de** aplicaciones y escriba **Microsoft Defender para Endpoint** en la barra de búsqueda. En la sección resultados de búsqueda, haga clic en *Microsoft Defender para endpoint* y haga clic en **Seleccionar**.
+1. En la página **Agregar aplicación**, haga clic en **Buscar en el App Store** y escriba **Microsoft Defender para punto de conexión** en la barra de búsqueda. En la sección de resultados de búsqueda, haga clic en *Microsoft Defender para punto de conexión* y haga clic en **Seleccionar**.
 
-1. Seleccione **iOS 11.0** como sistema operativo Mínimo. Revisa el resto de información sobre la aplicación y haz clic en **Siguiente**.
+1. Seleccione **iOS 11.0** como sistema operativo mínimo. Revise el resto de la información sobre la aplicación y haga clic en **Siguiente**.
 
-1. En la **sección Asignaciones** , vaya a la **sección Obligatorio** y seleccione **Agregar grupo**. A continuación, puedes elegir los grupos de usuarios a los que quieres dirigirte Defender para Endpoint en la aplicación iOS. Haga clic **en Seleccionar** y, a **continuación, en Siguiente**.
+1. En la sección **Asignaciones** , vaya a la sección **Requerido** y seleccione **Agregar grupo**. A continuación, puede elegir los grupos de usuarios que desea que tengan como destino Defender para punto de conexión en la aplicación iOS. Haga clic en **Seleccionar** y, a continuación, **en Siguiente**.
 
     > [!NOTE]
-    > El grupo de usuarios seleccionado debe estar formado por usuarios inscritos en Intune.
+    > El grupo de usuarios seleccionado debe constar de Intune usuarios inscritos.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ios-deploy-2.png" alt-text="La pestaña Agregar grupo en el Centro Microsoft Endpoint Manager administración" lightbox="images/ios-deploy-2.png":::
+    > :::image type="content" source="images/ios-deploy-2.png" alt-text="Pestaña Agregar grupo en el Centro de administración de Microsoft Endpoint Manager" lightbox="images/ios-deploy-2.png":::
 
-1. En la *sección Revisar y crear* , compruebe que toda la información especificada es correcta y, a continuación, **seleccione Crear**. En unos instantes, la aplicación Defender for Endpoint debe crearse correctamente y una notificación debe aparecer en la esquina superior derecha de la página.
+1. En la sección *Revisar y crear* , compruebe que toda la información especificada es correcta y, a continuación, seleccione **Crear**. En unos instantes, la aplicación Defender para punto de conexión debe crearse correctamente y debe aparecer una notificación en la esquina superior derecha de la página.
 
-1. En la página de información de la aplicación que se muestra, en la sección **Supervisar**, seleccione Estado de instalación del dispositivo para comprobar que la instalación del dispositivo se ha completado correctamente.
+1. En la página de información de la aplicación que se muestra, en la sección **Monitor** , seleccione **Estado de instalación** del dispositivo para comprobar que la instalación del dispositivo se ha completado correctamente.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ios-deploy-3.png" alt-text="La página Estado de instalación del dispositivo" lightbox="images/ios-deploy-3.png":::
+    > :::image type="content" source="images/ios-deploy-3.png" alt-text="Página Estado de instalación del dispositivo" lightbox="images/ios-deploy-3.png":::
 
 ## <a name="complete-deployment-for-supervised-devices"></a>Implementación completa para dispositivos supervisados
 
-La aplicación Microsoft Defender para endpoint en iOS tiene capacidad especializada en dispositivos iOS/iPadOS supervisados, dadas las capacidades de administración mejoradas que proporciona la plataforma en estos tipos de dispositivos. También puede proporcionar Protección web **sin configurar una VPN local en el dispositivo**. Esto proporciona a los usuarios finales una experiencia perfecta mientras siguen estando protegidos contra la suplantación de identidad (phishing) y otros ataques basados en web.
+La Microsoft Defender para punto de conexión en la aplicación iOS tiene una capacidad especializada en dispositivos iOS/iPadOS supervisados, dadas las mayores funcionalidades de administración que proporciona la plataforma en estos tipos de dispositivos. También puede proporcionar protección web **sin configurar una VPN local en el dispositivo**. Esto proporciona a los usuarios finales una experiencia sin problemas mientras siguen protegidos contra suplantación de identidad (phishing) y otros ataques basados en web.
 
-### <a name="configure-supervised-mode-via-intune"></a>Configurar el modo supervisado a través de Intune
+### <a name="configure-supervised-mode-via-intune"></a>Configuración del modo supervisado mediante Intune
 
-A continuación, configura el modo supervisado para la aplicación Defender for Endpoint a través de una directiva de configuración de aplicaciones.
+A continuación, configure el modo supervisado para la aplicación Defender para punto de conexión mediante una directiva de App Configuration.
 
    > [!NOTE]
-   > Esta directiva de configuración de aplicaciones para dispositivos supervisados solo se aplica a dispositivos administrados y debe estar dirigida a todos los dispositivos iOS administrados como procedimiento recomendado.
+   > Esta directiva de configuración de aplicaciones para dispositivos supervisados solo se aplica a los dispositivos administrados y debe tener como destino todos los dispositivos iOS administrados como procedimiento recomendado.
 
-1. Inicie sesión en el Centro [Microsoft Endpoint Manager administración](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas de** configuración de **aplicaciones** \> \> **Agregar**. Selecciona **Dispositivos administrados**.
+1. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas** \> de **configuración** \> de aplicaciones **Agregar**. Seleccione **Dispositivos administrados**.
 
     > [!div class="mx-imgBorder"]
-    > ![Imagen de Microsoft Endpoint Manager Admin Center4.](images/ios-deploy-4.png)
+    > ![Imagen de Microsoft Endpoint Manager Centro de administración4.](images/ios-deploy-4.png)
 
-1. En la *página Crear directiva de configuración de aplicaciones* , proporcione la siguiente información:
+1. En la página Crear directiva de *configuración de aplicaciones* , proporcione la siguiente información:
     - Nombre de directiva
     - Plataforma: seleccione iOS/iPadOS
-    - Aplicación dirigida: seleccione **Microsoft Defender para endpoint** en la lista
+    - Aplicación de destino: seleccione **Microsoft Defender para punto de conexión** de la lista
 
     > [!div class="mx-imgBorder"]
-    > ![Imagen de Microsoft Endpoint Manager Admin Center5.](images/ios-deploy-5.png)
+    > ![Imagen de Microsoft Endpoint Manager Centro de administración5.](images/ios-deploy-5.png)
 
-1. En la siguiente pantalla, seleccione **Usar diseñador de configuraciones** como formato. Especifique la siguiente propiedad:
-    - Clave de configuración: se supervisa
+1. En la siguiente pantalla, seleccione **Usar diseñador de configuración** como formato. Especifique la siguiente propiedad:
+    - Clave de configuración: issupervised
     - Tipo de valor: String
     - Valor de configuración: {{issupervised}}
 
     > [!div class="mx-imgBorder"]
-    > ![Imagen de Microsoft Endpoint Manager Admin Center6.](images/ios-deploy-6.png)
+    > ![Imagen de Microsoft Endpoint Manager Centro de administración6.](images/ios-deploy-6.png)
 
 1. Seleccione **Siguiente** para abrir la página **Etiquetas de ámbito**. Las etiquetas de ámbito son opcionales. Seleccione **Siguiente** para continuar.
 
-1. En la página **Asignaciones**, seleccione los grupos que recibirán este perfil. Para este escenario, es más recomendado dirigirse a **Todos los dispositivos**. Para obtener más información sobre la asignación de perfiles, vea [Asignación de perfiles de usuario y dispositivo](/mem/intune/configuration/device-profile-assign).
+1. En la página **Asignaciones**, seleccione los grupos que recibirán este perfil. En este escenario, se recomienda dirigirse a **Todos los dispositivos**. Para obtener más información sobre la asignación de perfiles, vea [Asignación de perfiles de usuario y dispositivo](/mem/intune/configuration/device-profile-assign).
 
    Al implementar en grupos de usuarios, un usuario debe iniciar sesión en un dispositivo antes de que se aplique la directiva.
 
@@ -117,132 +117,131 @@ A continuación, configura el modo supervisado para la aplicación Defender for 
 
 1. Cuando haya terminado, elija **Crear** en la página **Revisar y crear**. El nuevo perfil se muestra en la lista de perfiles de configuración.
 
-1. A continuación, debes implementar un perfil personalizado en dispositivos iOS supervisados. Esto es para funcionalidades mejoradas contra la suplantación de identidad. Siga los pasos siguientes:
+1. A continuación, debe implementar un perfil personalizado en dispositivos iOS supervisados. Esto es para funcionalidades mejoradas de anti-phishing. Siga estos pasos:
 
     - Descargar el perfil de configuración desde [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
-    - Vaya a **DevicesiOS** -> **/iPadOSConfiguration** ->  **profilesCreate** ->  **Profile**
+    - Vaya a **DispositivosPerfiles** ->  **de configuración de iOS/iPadOSCrear** ->  **perfil** -> 
 
     > [!div class="mx-imgBorder"]
     > ![Imagen de Microsoft Endpoint Manager Centro de administración7.](images/ios-deploy-7.png)
     
-    - Proporcione un nombre del perfil. Cuando se le pida que importe un archivo de perfil de configuración, seleccione el que se descargó del paso anterior.
-    - En la **sección Asignación** , selecciona el grupo de dispositivos al que quieres aplicar este perfil. Como práctica recomendada, esto debe aplicarse a todos los dispositivos iOS administrados. Seleccione **Siguiente**.
+    - Proporcione un nombre del perfil. Cuando se le pida que importe un archivo de perfil de configuración, seleccione el descargado del paso anterior.
+    - En la sección **Asignación** , seleccione el grupo de dispositivos al que desea aplicar este perfil. Como procedimiento recomendado, esto debe aplicarse a todos los dispositivos iOS administrados. Seleccione **Siguiente**.
     - Cuando haya terminado, elija **Crear** en la página **Revisar y crear**. El nuevo perfil se muestra en la lista de perfiles de configuración.
 
 
-## <a name="auto-onboarding-of-vpn-profile-simplified-onboarding"></a>Incorporación automática del perfil vpn (incorporación simplificada)
+## <a name="auto-onboarding-of-vpn-profile-simplified-onboarding"></a>Incorporación automática del perfil de VPN (incorporación simplificada)
 
-Para dispositivos sin supervisión, se usa una VPN para proporcionar la característica de protección web. No se trata de una VPN normal y es una VPN local o auto-looping que no toma tráfico fuera del dispositivo.
+En el caso de los dispositivos sin supervisión, se usa una VPN para proporcionar la característica de protección web. No es una VPN normal y es una VPN local o de bucle automático que no toma tráfico fuera del dispositivo.
 
 >[!NOTE]
->Para dispositivos supervisados, una VPN no es necesaria para la funcionalidad de Protección web y requiere que los administradores configuren un perfil de configuración en dispositivos supervisados. Para configurar dispositivos supervisados, siga los pasos de la [sección Completar implementación para dispositivos supervisados](#complete-deployment-for-supervised-devices) .
+>En el caso de los dispositivos supervisados, una VPN no es necesaria para la funcionalidad de protección web y requiere que los administradores configuren un perfil de configuración en dispositivos supervisados. Para configurar para dispositivos supervisados, siga los pasos de la sección [Completar implementación para dispositivos supervisados](#complete-deployment-for-supervised-devices) .
 
-Los administradores pueden configurar automáticamente el perfil de VPN. Esto configurará automáticamente el perfil de DEFENDER para ENDPOINT VPN sin que el usuario lo haga durante la incorporación. 
+Los administradores pueden configurar la configuración automática del perfil de VPN. Esto configurará automáticamente el perfil de VPN de Defender para punto de conexión sin que el usuario lo haga durante la incorporación. 
 
-Este paso simplifica el proceso de incorporación configurando el perfil de VPN. Para obtener una experiencia de incorporación silenciosa o táctil cero, consulta la siguiente sección: [Incorporación sin contacto](#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview).
+Este paso simplifica el proceso de incorporación mediante la configuración del perfil de VPN. Para obtener una experiencia de incorporación sin contacto o silenciosa, consulte la sección siguiente: [Incorporación de cero toques](#zero-touch-onboarding-of-microsoft-defender-for-endpoint).
 
-1. En [el Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **DevicesConfiguration** ->  **ProfilesCreate** ->  **Profile**.
+1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **DispositivosPerfiles** ->  ->  de **configuraciónCrear perfil**.
 1. Elija **Plataforma** como **iOS/iPadOS** y **Tipo de perfil** como **VPN**. Haga clic en **Crear**.
 1. Escriba un nombre para el perfil y haga clic en **Siguiente**.
-1. Seleccione **VPN personalizada para** tipo de conexión y, en la **sección Vpn base** , escriba lo siguiente:
-    - Connection Name = Microsoft Defender for Endpoint
+1. Seleccione **VPN personalizada** para Tipo de conexión y, en la sección **VPN base** , escriba lo siguiente:
+    - Nombre de conexión = Microsoft Defender para punto de conexión
     - Dirección del servidor VPN = 127.0.0.1
-    - Método Auth = "Nombre de usuario y contraseña"
-    - Túnel dividido = Deshabilitar
+    - Método de autenticación = "Nombre de usuario y contraseña"
+    - Tunelización dividida = Deshabilitar
     - Identificador de VPN = com.microsoft.scmx
     - En los pares clave-valor, escriba la clave **AutoOnboard** y establezca el valor en **True**.
     - Tipo de VPN automática = VPN a petición
-    - Haga **clic en** **Agregar para reglas a** petición y seleccione Quiero hacer lo **siguiente = Establecer VPN**, **Quiero restringir a = Todos los dominios**.
+    - Haga clic en **Agregar** para **reglas a petición** y seleccione **Quiero hacer lo siguiente = Establecer VPN**, **quiero restringir a = Todos los dominios**.
 
-    :::image type="content" source="images/ios-deploy-8.png" alt-text="Pestaña Configuración de perfil VPN" lightbox="images/ios-deploy-8.png":::
+    :::image type="content" source="images/ios-deploy-8.png" alt-text="Pestaña Configuración del perfil de VPN" lightbox="images/ios-deploy-8.png":::
 
 1. Haga clic en Siguiente y asigne el perfil a los usuarios de destino.
-1. En la *sección Revisar y crear* , compruebe que toda la información especificada es correcta y, a continuación, **seleccione Crear**.
+1. En la sección *Revisar y crear* , compruebe que toda la información especificada es correcta y, a continuación, seleccione **Crear**.
 
-## <a name="zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview"></a>Incorporación sin contacto de Microsoft Defender para endpoint (versión preliminar)
+## <a name="zero-touch-onboarding-of-microsoft-defender-for-endpoint"></a>Incorporación sin toque de Microsoft Defender para punto de conexión
 
-> [!IMPORTANT]
-> Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
+
 
 > [!NOTE]
-> Zero-touch no se puede configurar en dispositivos iOS inscritos sin afinidad de usuario (dispositivos sin usuarios o dispositivos compartidos).
+> No se puede configurar Sin intervención táctil en dispositivos iOS inscritos sin afinidad de usuario (dispositivos sin usuario o dispositivos compartidos).
 
-Los administradores pueden configurar Microsoft Defender para endpoint para implementar y activar de forma silenciosa. En este flujo, el administrador crea un perfil de implementación y simplemente se notifica al usuario de la instalación. Defender for Endpoint se instala automáticamente sin necesidad de que el usuario abra la aplicación. Siga los pasos que se indican a continuación para configurar la implementación silenciosa o táctil de Defender para Endpoint en dispositivos iOS inscritos:
+Los administradores pueden configurar Microsoft Defender para punto de conexión para implementar y activar de forma silenciosa. En este flujo, el administrador crea un perfil de implementación y el usuario simplemente recibe una notificación de la instalación. Defender para punto de conexión se instala automáticamente sin necesidad de que el usuario abra la aplicación. Siga los pasos siguientes para configurar la implementación sin intervención o silenciosa de Defender para punto de conexión en dispositivos iOS inscritos:
 
-1. En [el Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **DevicesConfiguration** >  **ProfilesCreate** >  **Profile**.
+1. En el [Centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), vaya a **DispositivosPerfiles** >  >  de **configuraciónCrear perfil**.
 1. Elija **Plataforma** como **iOS/iPadOS** y **Tipo de perfil** como **VPN**. Seleccione **Crear**.
 1. Escriba un nombre para el perfil y seleccione **Siguiente**.
-1. Seleccione **VPN personalizada para** tipo de conexión y, en la **sección Vpn base** , escriba lo siguiente:
-    - Connection Name = Microsoft Defender for Endpoint
+1. Seleccione **VPN personalizada** para Tipo de conexión y, en la sección **VPN base** , escriba lo siguiente:
+    - Nombre de conexión = Microsoft Defender para punto de conexión
     - Dirección del servidor VPN = 127.0.0.1
-    - Método Auth = "Nombre de usuario y contraseña"
-    - Túnel dividido = Deshabilitar
+    - Método de autenticación = "Nombre de usuario y contraseña"
+    - Tunelización dividida = Deshabilitar
     - Identificador de VPN = com.microsoft.scmx
     - En los pares clave-valor, escriba la clave **SilentOnboard** y establezca el valor en **True**.
     - Tipo de VPN automática = VPN a petición
-    - Seleccione **Agregar** para **Reglas a** petición y seleccione Quiero hacer lo **siguiente = Establecer VPN**, Quiero restringir **a = Todos los dominios**.
+    - Seleccione **Agregar** para **reglas a petición** y seleccione **Quiero hacer lo siguiente = Establecer VPN**, **quiero restringir a = Todos los dominios**.
 
-    :::image type="content" source="images/ios-deploy-9.png" alt-text="La página Configuración del perfil VPN" lightbox="images/ios-deploy-9.png":::
+    :::image type="content" source="images/ios-deploy-9.png" alt-text="Página Configuración del perfil de VPN" lightbox="images/ios-deploy-9.png":::
 
-1. Seleccione **Siguiente** y asigne el perfil a los usuarios dirigidos.
-1. En la *sección Revisar y crear* , compruebe que toda la información especificada es correcta y, a continuación, **seleccione Crear**.
+1. Seleccione **Siguiente** y asigne el perfil a los usuarios de destino.
+1. En la sección *Revisar y crear* , compruebe que toda la información especificada es correcta y, a continuación, seleccione **Crear**.
 
-Una vez realizada la configuración anterior y sincronizada con el dispositivo, se llevan a cabo las siguientes acciones en los dispositivos iOS de destino:
-    - Microsoft Defender para endpoint se implementará y se incorporará silenciosamente y el dispositivo se verá en el portal de Defender for Endpoint.
+Una vez realizada y sincronizada la configuración anterior con el dispositivo, se llevan a cabo las siguientes acciones en los dispositivos iOS de destino:
+    - Microsoft Defender para punto de conexión se implementarán y incorporarán de forma silenciosa y el dispositivo se verá en el portal de Defender para punto de conexión.
     - Se enviará una notificación provisional al dispositivo de usuario.
-    - Se activará Protección web y otras características.
+    - Protección web y otras características se activarán.
 
    > [!NOTE]
-   > Para dispositivos supervisados, aunque no es necesario tener un perfil VPN, los administradores aún pueden configurar la incorporación sin contacto configurando el perfil de Defender for Endpoint VPN a través de Intune. El perfil vpn se implementará en el dispositivo, pero solo estará presente en el dispositivo como un perfil de paso a través y se puede eliminar después de la incorporación inicial.
+   > En el caso de los dispositivos supervisados, aunque no se requiere un perfil de VPN, los administradores pueden configurar la incorporación de Zero-touch mediante la configuración del perfil de VPN de Defender para punto de conexión a través de Intune. El perfil de VPN se implementará en el dispositivo, pero solo estará presente en el dispositivo como perfil de paso a través y se puede eliminar después de la incorporación inicial.
 
-## <a name="complete-onboarding-and-check-status"></a>Completar la incorporación y comprobar el estado
+## <a name="complete-onboarding-and-check-status"></a>Incorporación completa y comprobación del estado
 
-1. Una vez que Defender para Endpoint en iOS se haya instalado en el dispositivo, verás el icono de la aplicación.
+1. Una vez instalado Defender para punto de conexión en iOS en el dispositivo, verá el icono de aplicación.
 
-    :::image type="content" source="images/41627a709700c324849bf7e13510c516.png" alt-text="Una descripción de teléfono inteligente generada automáticamente" lightbox="images/41627a709700c324849bf7e13510c516.png":::
+    :::image type="content" source="images/41627a709700c324849bf7e13510c516.png" alt-text="Una descripción del teléfono inteligente generada automáticamente" lightbox="images/41627a709700c324849bf7e13510c516.png":::
 
-2. Pulsa el icono de la aplicación Defender para endpoint (MSDefender) y sigue las instrucciones en pantalla para completar los pasos de incorporación. Los detalles incluyen la aceptación por parte del usuario final de los permisos de iOS requeridos por Defender para endpoint en iOS.
+2. Pulse el icono de la aplicación Defender para punto de conexión (MSDefender) y siga las instrucciones en pantalla para completar los pasos de incorporación. Los detalles incluyen la aceptación por parte del usuario final de los permisos de iOS requeridos por Defender para punto de conexión en iOS.
 
-3. Tras la incorporación correcta, el dispositivo empezará a aparecer en la lista dispositivos del portal Microsoft 365 Defender dispositivos.
+3. Tras la incorporación correcta, el dispositivo comenzará a aparecer en la lista Dispositivos del portal de Microsoft 365 Defender.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/device-inventory-screen.png" alt-text="La página Inventario de dispositivos" lightbox="images/device-inventory-screen.png":::
+    > :::image type="content" source="images/device-inventory-screen.png" alt-text="Página Inventario de dispositivos" lightbox="images/device-inventory-screen.png":::
 
-## <a name="configure-microsoft-defender-for-endpoint-for-supervised-mode"></a>Configurar Microsoft Defender para el punto de conexión para el modo supervisado
+## <a name="configure-microsoft-defender-for-endpoint-for-supervised-mode"></a>Configuración de Microsoft Defender para punto de conexión para el modo supervisado
 
-La aplicación Microsoft Defender para endpoint en iOS tiene capacidad especializada en dispositivos iOS/iPadOS supervisados, dadas las capacidades de administración mejoradas que proporciona la plataforma en estos tipos de dispositivos. Para aprovechar estas capacidades, la aplicación Defender for Endpoint debe saber si un dispositivo está en modo supervisado.
+La Microsoft Defender para punto de conexión en la aplicación iOS tiene una capacidad especializada en dispositivos iOS/iPadOS supervisados, dadas las mayores funcionalidades de administración que proporciona la plataforma en estos tipos de dispositivos. Para aprovechar estas funcionalidades, la aplicación Defender para punto de conexión debe saber si un dispositivo está en modo supervisado.
 
-### <a name="configure-supervised-mode-via-intune"></a>Configurar el modo supervisado a través de Intune
+### <a name="configure-supervised-mode-via-intune"></a>Configuración del modo supervisado mediante Intune
 
-Intune te permite configurar la aplicación Defender para iOS a través de una directiva de configuración de aplicaciones.
+Intune permite configurar la aplicación Defender para iOS mediante una directiva de App Configuration.
 
    > [!NOTE]
-   > Esta directiva de configuración de aplicaciones para dispositivos supervisados solo se aplica a dispositivos administrados y debe estar dirigida a todos los dispositivos iOS administrados como procedimiento recomendado.
+   > Esta directiva de configuración de aplicaciones para dispositivos supervisados solo se aplica a los dispositivos administrados y debe tener como destino todos los dispositivos iOS administrados como procedimiento recomendado.
 
-1. Inicie sesión en el Centro [Microsoft Endpoint Manager administración](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas de** configuración de **aplicaciones** \> \> **Agregar**. Haga clic en **Dispositivos administrados**.
+1. Inicie sesión en el [centro de administración de Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) y vaya a **Directivas** \> de **configuración** \> de aplicaciones **Agregar**. Haga clic en **Dispositivos administrados**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/ios-deploy-4.png" alt-text="La opción Dispositivos administrados" lightbox="images/ios-deploy-4.png":::
 
-1. En la *página Crear directiva de configuración de aplicaciones* , proporcione la siguiente información:
+1. En la página Crear directiva de *configuración de aplicaciones* , proporcione la siguiente información:
     - Nombre de directiva
     - Plataforma: seleccione iOS/iPadOS
-    - Aplicación dirigida: seleccione **Microsoft Defender para endpoint** en la lista
+    - Aplicación de destino: seleccione **Microsoft Defender para punto de conexión** de la lista
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/ios-deploy-5.png" alt-text="Los campos básicos de la directiva de configuración de la aplicación" lightbox="images/ios-deploy-5.png":::
 
-1. En la siguiente pantalla, seleccione **Usar diseñador de configuraciones** como formato. Especifique la siguiente propiedad:
-    - Clave de configuración: se supervisa
+1. En la siguiente pantalla, seleccione **Usar diseñador de configuración** como formato. Especifique la siguiente propiedad:
+    - Clave de configuración: issupervised
     - Tipo de valor: String
     - Valor de configuración: {{issupervised}}
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ios-deploy-6.png" alt-text="La página desde la que se debe elegir el formato para la configuración de la directiva" lightbox="images/ios-deploy-6.png":::
+    > :::image type="content" source="images/ios-deploy-6.png" alt-text="Página desde la que elegir el formato para la configuración de la directiva" lightbox="images/ios-deploy-6.png":::
 
-1. Haga **clic en** Siguiente para abrir la **página Etiquetas de ámbito** . Las etiquetas de ámbito son opcionales. Haga clic en **Siguiente** para continuar.
+1. Haga clic en **Siguiente** para abrir la página **Etiquetas de ámbito** . Las etiquetas de ámbito son opcionales. Haga clic en **Siguiente** para continuar.
 
-1. En la página **Asignaciones**, seleccione los grupos que recibirán este perfil. Para este escenario, es más recomendado dirigirse a **Todos los dispositivos**. Para obtener más información sobre la asignación de perfiles, vea [Asignación de perfiles de usuario y dispositivo](/mem/intune/configuration/device-profile-assign).
+1. En la página **Asignaciones**, seleccione los grupos que recibirán este perfil. En este escenario, se recomienda dirigirse a **Todos los dispositivos**. Para obtener más información sobre la asignación de perfiles, vea [Asignación de perfiles de usuario y dispositivo](/mem/intune/configuration/device-profile-assign).
 
    Al implementar en grupos de usuarios, un usuario debe iniciar sesión en un dispositivo antes de que se aplique la directiva.
 
@@ -250,7 +249,7 @@ Intune te permite configurar la aplicación Defender para iOS a través de una d
 
 1. Cuando haya terminado, elija **Crear** en la página **Revisar y crear**. El nuevo perfil se muestra en la lista de perfiles de configuración.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-- [Configurar la directiva de protección de aplicaciones para incluir las señales de riesgo de Defender for Endpoint (MAM)](ios-install-unmanaged.md)
-- [Configurar Defender para endpoint en características de iOS](ios-configure-features.md)
+- [Configuración de la directiva de protección de aplicaciones para incluir señales de riesgo de Defender para punto de conexión (MAM)](ios-install-unmanaged.md)
+- [Configuración de Defender para punto de conexión en características de iOS](ios-configure-features.md)

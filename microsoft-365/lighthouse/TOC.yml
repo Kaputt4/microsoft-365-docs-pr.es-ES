@@ -26,6 +26,8 @@
   items:
     - name: Información general de la página Inquilinos
       href: m365-lighthouse-tenants-page-overview.md
+    - name: Visualización de los roles de Azure AD entre inquilinos
+      href: m365-lighthouse-view-your-roles.md
     - name: Administrar la lista de inquilinos
       href: m365-lighthouse-manage-tenant-list.md
     - name: Visualización del estado del servicio de inquilino

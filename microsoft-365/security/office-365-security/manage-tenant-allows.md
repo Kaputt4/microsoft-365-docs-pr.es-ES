@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar los permisos en la lista de permitidos o bloqueados de inquilinos en el portal de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: af5f8ae1d3c172f4bf77bdca14625fe2440769ef
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: f1dffb7fd6b13fc1999e51666717dc464e694d0c
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144767"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188143"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>Agregar permisos a la lista de bloqueados y permitidos del espacio empresarial
 
@@ -59,9 +59,9 @@ Permitir remitentes (o dominios) en la página **Envíos** de Microsoft 365 Defe
 
 > [!NOTE]
 >
-> - En función de los filtros que determinaron que el correo fuera malintencionado, durante el flujo de correo, se agregan las permite. Por ejemplo, si los filtros encontraron que el remitente y la dirección URL son incorrectos, se agregará un permiso para cada uno. 
+> - Durante el flujo de correo, en función de los filtros que determinaron que el correo fuera malintencionado, se agregan las permite. Por ejemplo, se determina que el remitente y la dirección URL son incorrectos; se agregará un permiso para cada uno.
 > - Cuando se vuelve a encontrar esa entidad (remitente, dominio, dirección URL, archivo), se omiten todos los filtros asociados a esa entidad.
-> - Para un correo electrónico (que contiene esta entidad) durante el flujo de correo, si el resto de los filtros encuentran que el correo electrónico está limpio, se entregará el correo electrónico. Por ejemplo, un remitente permite (cuando se supera la autenticación) omitirá todos los veredictos excepto el malware y la suplantación de identidad de alta confianza asociadas a un archivo adjunto o una dirección URL.
+> - Durante el flujo de correo, si el resto de los filtros encuentran que el correo electrónico que contiene esta entidad está limpio, se entregará el correo electrónico. Por ejemplo, un remitente permite (cuando se supera la autenticación) omitirá todos los veredictos excepto el malware y la suplantación de identidad de alta confianza asociadas a un archivo adjunto o una dirección URL.
 
 ## <a name="add-url-allows-using-the-submissions-portal"></a>Agregar dirección URL permite usar el portal envíos
 
@@ -112,8 +112,7 @@ Permitir archivos en la página **Envíos** de Microsoft 365 Defender.
 
 > [!NOTE]
 >
-> - Cuando se vuelve a encontrar el archivo, no se envía para las comprobaciones de detonación o reputación y se omiten todos los demás filtros basados en archivos.
-> - Por lo tanto, para un correo electrónico (que contiene este archivo), durante el flujo de correo, si el resto de los filtros encuentran que el correo electrónico está limpio, se entregará el correo electrónico. 
+> Cuando se vuelve a encontrar el archivo, no se envía para las comprobaciones de detonación o reputación, y se omiten todos los demás filtros basados en archivos. Durante el flujo de correo, si el resto de los filtros encuentran el correo electrónico que contiene el archivo que se va a limpiar, se entregará el correo electrónico.
 
 ## <a name="create-spoofed-sender-allow-entries-using-microsoft-365-defender"></a>Creación de entradas permitidas del remitente suplantado mediante Microsoft 365 Defender
 

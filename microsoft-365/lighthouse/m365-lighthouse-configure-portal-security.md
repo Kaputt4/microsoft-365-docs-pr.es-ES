@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo configurar la seguridad del portal.
-ms.openlocfilehash: de93ebfff03241500bb1788fc282c4b2bb747ea2
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 60e0d2f1ba61e5def3979358f338da0846914543
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823573"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188688"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>Configuración de la seguridad del portal de Microsoft 365 Lighthouse
 
@@ -72,6 +72,8 @@ Los CSP pueden usar el acceso condicional basado en riesgos para asegurarse de q
 ## <a name="related-content"></a>Contenido relacionado
 
 [Permisos de restablecimiento de contraseña](/azure/active-directory/roles/permissions-reference#password-reset-permissions) (artículo)\
+[Introducción a los permisos en Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (artículo)\
+[Ver los roles de Azure Active Directory en Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (artículo)\
 [Requisitos para Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (artículo)\
 [Introducción a Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (artículo)\
 [Registrarse para obtener Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (artículo)\

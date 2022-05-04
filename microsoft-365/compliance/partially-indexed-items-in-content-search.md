@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Obtenga información sobre los elementos sin indexar en Exchange y SharePoint que puede incluir en una búsqueda de eDiscovery que ejecute en el portal de cumplimiento de Microsoft Purview.
-ms.openlocfilehash: ff21f04456d6886e7849a8d9a0770640897a62ac
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 27f59ac9bf6a580fa0a3193ee91f66a4ac58ab1e
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091509"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188798"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Elementos indizados parcialmente en eDiscovery
 
@@ -162,7 +162,10 @@ Para obtener una lista de los límites de indexación de SharePoint documentos, 
 
 - Aunque se admite un tipo de archivo para la indexación y se indexa, puede haber errores de indexación o búsqueda que harán que un archivo se devuelva como un elemento indizado parcialmente. Por ejemplo, la búsqueda de un archivo de Excel grande podría ser parcialmente correcto (porque los primeros 4 MB están indizados), pero, a continuación, se produce un error porque se supera el límite de tamaño del archivo. En este caso, es posible que se devuelva el mismo archivo con los resultados de búsqueda y como un elemento parcialmente indexado.
 
-- Los archivos que se cifran con [tecnologías de cifrado de Microsoft](encryption.md) y se adjuntan a un mensaje de correo electrónico que coincide con los criterios de una búsqueda se pueden obtener en versión preliminar y se descifrarán cuando se exporten. En este momento, los archivos cifrados con tecnologías de cifrado de Microsoft (y almacenados en SharePoint o OneDrive para la Empresa) se indizan parcialmente.
+- Los archivos que se cifran con [tecnologías de cifrado de Microsoft](encryption.md) y se adjuntan a un mensaje de correo electrónico que coincide con los criterios de una búsqueda se pueden obtener en versión preliminar y se descifrarán cuando se exporten. En este momento, los archivos cifrados con tecnologías de cifrado de Microsoft (y almacenados en SharePoint o OneDrive para la Empresa) se indizan parcialmente. 
+
+   > [!NOTE]
+   > Los archivos cifrados mediante etiquetas de confidencialidad no se descifrarán.
 
 - Los mensajes de correo electrónico cifrados con S/MIME se indizan parcialmente. Esto incluye los mensajes cifrados con o sin datos adjuntos.
 

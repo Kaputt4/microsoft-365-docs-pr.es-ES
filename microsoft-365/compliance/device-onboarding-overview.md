@@ -19,25 +19,27 @@ ms.collection:
 search.appverid:
 - MET150
 description: Incorporación de dispositivos Windows 10 y Windows 11 a Microsoft 365
-ms.openlocfilehash: ea1038554349b6c035c52bd3d3429d71d7d866bc
-ms.sourcegitcommit: 9d563faeaa50b59b0b468dbb373d886e5270f58e
+ms.openlocfilehash: 876bd3f2d825fc1b698d3c7b9a76b1c7f115aedf
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64387141"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187907"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Introducción a la incorporación de dispositivos Windows 10 y Windows 11 a Microsoft 365 
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Se aplica a:**
 
 - [Prevención de perdida de datos en el punto de conexión (DLP)](./endpoint-dlp-learn-about.md)
-- [Administración de riesgos internos](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Administración de riesgos internos](insider-risk-management.md)
 
 Prevención de pérdida de datos en punto de conexión (punto de conexión DLP) y administración de riesgos internos requieren que los dispositivos Windows 11 y Windows 10 se incorporen al servicio para que puedan enviar datos de supervisión a los servicios.
  
 La DLP de punto de conexión permite supervisar dispositivos Windows 10 o Windows 11 y detectar cuándo se usan y comparten elementos confidenciales. Esto le proporciona la visibilidad y el control que necesita para asegurarse de que se usan y protegen correctamente, así como para ayudar a evitar algún comportamiento peligroso que podría comprometerlos. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md). Para obtener más información sobre el punto de conexión DLP, consulte [Obtener información sobre la prevención de pérdida de datos del punto de conexión](endpoint-dlp-learn-about.md).
 
-La administración de riesgos internos usa toda la amplitud del servicio y los indicadores de terceros para ayudarle a identificar, evaluar prioridades y actuar rápidamente en la actividad de usuario de riesgo. Al usar registros de Microsoft 365 y Microsoft Graph, la administración de riesgos internos le permite definir directivas específicas para identificar indicadores de riesgo y tomar medidas para mitigar estos riesgos. Para obtener más información, consulte [Obtenga información sobre la administración de riesgos internos en Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365).
+La administración de riesgos internos usa toda la amplitud del servicio y los indicadores de terceros para ayudarle a identificar, evaluar prioridades y actuar rápidamente en la actividad de usuario de riesgo. Al usar registros de Microsoft 365 y Microsoft Graph, la administración de riesgos internos le permite definir directivas específicas para identificar indicadores de riesgo y tomar medidas para mitigar estos riesgos. Para obtener más información, consulte [Más información sobre la administración de riesgos internos](insider-risk-management.md).
 
 La incorporación de dispositivos se comparte en Microsoft 365 y Microsoft Defender para punto de conexión (MDE). Si ya has incorporado dispositivos a MDE, aparecerán en la lista de dispositivos administrados y no se necesitan pasos adicionales para incorporar esos dispositivos específicos. Los dispositivos de incorporación en el Centro de cumplimiento también se incorporan a MDE.
 
@@ -107,7 +109,7 @@ Asegúrese de que los dispositivos Windows que necesite incorporar cumplan estos
 
 ## <a name="onboarding-windows-10-or-windows-11-devices"></a>Incorporación de dispositivos Windows 10 o Windows 11 
 
-Para poder supervisar y proteger los elementos confidenciales de un dispositivo, es necesario que habilite la supervisión del dispositivo y que incorpore los puntos de conexión. Ambas acciones se realizan en el portal de cumplimiento de Microsoft 365.
+Para poder supervisar y proteger los elementos confidenciales de un dispositivo, es necesario que habilite la supervisión del dispositivo y que incorpore los puntos de conexión. Ambas acciones se realizan en el portal de cumplimiento de Microsoft Purview.
 
 Cuando quiera incorporar dispositivos que todavía no hayan sido incorporados, descargue el script apropiado y, luego, impleméntelo en esos dispositivos. Siga los procedimientos de incorporación de dispositivos que se indican a continuación.
 
@@ -115,7 +117,7 @@ Si ya tiene dispositivos incorporados en [ Microsoft Defender para punto de cone
 
 En este escenario de implementación, incorporarás dispositivos Windows 10 o Windows 11 que aún no se han incorporado.
 
-1. Abra el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com). Elija **Configuración**  >  **Habilitar la supervisión de dispositivos**.
+1. Abra el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com). Elija **Configuración**  >  **Habilitar la supervisión de dispositivos**.
 
    > [!NOTE]
    > Aunque, por lo general, habilitar la incorporación de dispositivos tarda aproximadamente 60 segundos, espere 30 minutos antes de ponerse en contacto con el soporte técnico de Microsoft.
@@ -141,27 +143,9 @@ Tema | Descripción
 [Incorpore los dispositivos Windows 10 o 11 con un script local](device-onboarding-script.md) | Obtenga información sobre cómo usar el script local para implementar el paquete de configuración en puntos de conexión.
 [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](device-onboarding-vdi.md) | Obtenga información sobre cómo usar el paquete de configuración para configurar dispositivos VDI.
 
-Una vez que un dispositivo está incorporado, debe estar visible en la lista de dispositivos y también empezar a informar de los registros de actividad de auditoría en el Explorador de actividades.
+## <a name="see-also"></a>Vea también
 
-### <a name="viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard"></a>Visualizar alertas de DLP del punto de conexión en el panel de administración de alertas de DLP
-
-1. Abra la página Prevención de pérdida de datos en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a> y elija Alertas.
-
-2. Consulte los procedimientos descritos en [Cómo configurar y ver las alertas de las directivas DLP](dlp-configure-view-alerts-policies.md) para ver las alertas de las directivas DLP del punto de conexión.
-
-### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Visualizar datos de Endpoint DLP en el explorador de actividad
-
-1. Abra la [Página clasificación de datos](https://compliance.microsoft.com/dataclassification?viewid=overview) del dominio en el Centro de cumplimiento de Microsoft 365 y elija Explorador de actividad.
-
-2. Consulte los procedimientos descritos en [Introducción al explorador de actividad](data-classification-activity-explorer.md) para tener acceso a todos los datos de los dispositivos con Endpoint y filtrarlos.
-
-   > [!div class="mx-imgBorder"]
-   > ![filtro de explorador de actividad para dispositivos de punto de conexión.](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
-
-
-## <a name="see-also"></a>Consulte también
-
-- [Obtenga información sobre la administración de riesgos internos en Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Información sobre riesgos internos de Microsoft](insider-risk-management.md)
 - [Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)
 - [Uso de la prevención de pérdida de datos en punto de conexión](endpoint-dlp-using.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)

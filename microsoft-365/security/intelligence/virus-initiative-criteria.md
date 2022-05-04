@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 51d5814d718c1422d493f5227b311a58f99f7a82
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 7b7586a75c95202e2737bab857ab1ffebd04d6c4
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783279"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187742"
 ---
 # <a name="microsoft-virus-initiative"></a>Iniciativa de virus de Microsoft
 
@@ -53,6 +53,7 @@ Para calificar para el programa MVI, su organización debe cumplir todos los req
 |SKD Labs|Productos de requisitos de certificación: Antivirus o Antimalware </br> <http://www.skdlabs.com/html/english/> </br> <http://www.skdlabs.com/cert/>|Los requisitos de certificación de comprobación de estrella de SKD Labs pasan >= 98,5 % con pruebas a petición, de acceso a petición y de detección total|
 |VB 100|VB100 Certification Test V1.1 </br> <https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1/>|Certificación VB100|
 |West Coast Labs|Marca de verificación certificada </br> <http://www.checkmarkcertified.com/sme/>|Clasificación "A" sobre el rendimiento de seguridad del producto|
+|laboratorios de SE|Protección, pequeña empresa o Enterprise prueba de protección de EP  </br> <https://selabs.uk/en/reports/consumers/>|Protección Una clasificación o una clasificación de EP para pequeñas empresas Una clasificación o Enterprise clasificación de protección de EP A |
 
 ## <a name="apply-now"></a>Aplicar ahora
 

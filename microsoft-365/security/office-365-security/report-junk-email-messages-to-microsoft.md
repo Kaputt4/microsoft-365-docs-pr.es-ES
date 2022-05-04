@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre las distintas formas de notificar mensajes y archivos correctos y incorrectos a Microsoft para su análisis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2ddd9c0d96355af1ccdbb40cdd5c7542d9852c1
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: 56ef5cd5a376f4d10af1ad8c592dad02dbc8ef0a
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144727"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188446"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Notificar mensajes y archivos a Microsoft
 
@@ -46,4 +46,4 @@ En Microsoft 365 organizaciones con buzones de correo en Exchange Online o organ
 > [!NOTE]
 > Al informar de una entidad de correo electrónico a Microsoft, hacemos una copia de todo lo asociado al correo electrónico para incluirla en nuestras revisiones continuas del algoritmo. Esta copia incluye el contenido del correo electrónico, los encabezados de correo electrónico y los datos relacionados sobre el enrutamiento de correo electrónico. También se incluyen los datos adjuntos del mensaje.
 >
-> Microsoft trata sus comentarios como el permiso de su organización para que analicemos toda la información descrita anteriormente y trabajemos para ajustar los algoritmos de higiene de mensajes. Guardamos su mensaje en nuestros centros de datos auditados seguros en LOS EE. UU. hasta que eliminemos su envío no más tarde de 30 días después de que nos lo haya proporcionado. El personal de Microsoft puede leer el mensaje enviado y los datos adjuntos, que normalmente no se permiten para el correo electrónico en Office 365. Sin embargo, su correo electrónico sigue siendo tratado como confidencial entre usted y Microsoft, y le proporcionaremos su envío a cualquier otra parte para leer el correo electrónico o sus datos adjuntos para este proceso de revisión.
+> Microsoft trata sus comentarios como el permiso de su organización para que analicemos toda la información descrita anteriormente y trabajemos para ajustar los algoritmos de higiene de mensajes. Guardamos su mensaje en nuestros centros de datos auditados seguros en LOS EE. UU. hasta que eliminemos su envío no más tarde de 30 días después de que nos lo haya proporcionado. El personal de Microsoft puede leer el mensaje enviado y los datos adjuntos, que normalmente no se permiten para el correo electrónico en Office 365. Sin embargo, su correo electrónico sigue siendo tratado como confidencial entre usted y Microsoft, y no proporcionaremos su envío a ninguna otra parte para leer el correo electrónico o sus datos adjuntos para este proceso de revisión.

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: En el caso de los proveedores de servicios administrados (MSP) que usan Microsoft 365 Lighthouse, obtenga información sobre cómo revisar los registros de auditoría.
-ms.openlocfilehash: ca4d1e9941e0c15fee169def7be0c2d801f522c2
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 59e45f33b1c6708b4743605bda6ac4c93499bf59
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022853"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188776"
 ---
 # <a name="review-audit-logs-in-microsoft-365-lighthouse"></a>Revisión de los registros de auditoría en Microsoft 365 Lighthouse
 
@@ -96,8 +96,9 @@ En la tabla siguiente se enumeran las actividades capturadas en los registros de
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-Si necesita más información, use Microsoft Graph API para acceder a más eventos de auditoría. Para obtener más información, consulte [Información general sobre la administración multiinquilino mediante la API de Microsoft 365 Lighthouse](/graph/managedtenants-concept-overview).
+Use Microsoft Graph API para acceder a más eventos de auditoría, si es necesario. Para obtener más información, consulte [Información general sobre la administración multiinquilino mediante la API de Microsoft 365 Lighthouse](/graph/managedtenants-concept-overview).
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Preguntas más frecuentes sobre Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (artículo)
+[preguntas más frecuentes sobre Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (artículo)\
+[Ver los roles de Azure Active Directory en Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (artículo)

@@ -1,5 +1,5 @@
 ---
-title: Establecer una fecha de expiración para el correo electrónico cifrado con el Cifrado de mensajes avanzado de Office 365
+title: Establecer una fecha de expiración para el correo electrónico cifrado mediante cifrado de mensajes avanzado de Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,30 +15,34 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Use Cifrado de mensajes avanzado de Office 365 para ampliar la seguridad del correo electrónico estableciendo una fecha de expiración en los correos electrónicos a través de una plantilla personalizada de marca.
+description: Use Cifrado avanzado de mensajes de Microsoft Purview para ampliar la seguridad del correo electrónico estableciendo una fecha de expiración en los correos electrónicos a través de una plantilla personalizada de marca.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1213ecf48ee9bd2e04accdd13aaf3ecd74d3faba
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e8689820adc3158ae2a36a4d52ebad0959097b49
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60152939"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188402"
 ---
-# <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Establecer una fecha de expiración para el correo electrónico cifrado con el Cifrado de mensajes avanzado de Office 365
+# <a name="set-an-expiration-date-for-email-encrypted-by-microsoft-purview-advanced-message-encryption"></a>Establecer una fecha de expiración para el correo electrónico cifrado mediante cifrado de mensajes avanzado de Microsoft Purview
 
-Cifrado de mensajes avanzado de Office 365 se incluye en [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (precios de personal sin ánimo de lucro), Office 365 Enterprise E5 (precios de personal sin ánimo de lucro) y Office 365 Educación A5. Si su organización tiene una suscripción que no incluye Cifrado de mensajes avanzado de Office 365, puede comprarla con el complemento SKU de Cumplimiento de Microsoft 365 E5 para Microsoft 365 E3, Microsoft 365 E3 (precios de personal sin ánimo de lucro) o el complemento sku de Cumplimiento avanzado de Office 365 para Microsoft 365 E3, Microsoft 365 E3 (precios de personal sin ánimo de lucro) o SKU de Office 365.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Puede usar la expiración de mensajes en los correos electrónicos que los usuarios envían a destinatarios externos que usan el Portal de OME para obtener acceso a correos electrónicos cifrados. Obliga a los destinatarios a usar el portal de OME para ver y responder a los correos electrónicos cifrados enviados por su organización mediante una plantilla personalizada de marca que especifica una fecha de expiración en Windows PowerShell.
+El cifrado avanzado de mensajes de Microsoft Purview se incluye en [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), Office 365 E5, Microsoft 365 E5 (precios del personal sin ánimo de lucro), Office 365 Enterprise E5 (precios del personal sin ánimo de lucro) y Office 365 Educación A5. Cumplimiento de Microsoft 365 E5 complemento de SKU para Microsoft 365 E3, Microsoft 365 E3 (precios del personal sin ánimo de lucro) o el complemento de SKU de Cumplimiento avanzado de Office 365 para Microsoft 365 E3, Microsoft 365 E3 (precios del personal sin ánimo de lucro) o SKU de Office 365.
 
-Como administrador Office 365 global, al aplicar la marca de la empresa para personalizar la apariencia de los mensajes de correo electrónico de su organización, también puede especificar una expiración para estos mensajes de correo electrónico. Con Cifrado de mensajes avanzado de Office 365, puede crear varias plantillas para correos electrónicos cifrados que se originan en su organización. Con una plantilla, puede controlar cuánto tiempo los destinatarios tienen acceso al correo enviado por los usuarios.
+Si su organización tiene una suscripción que no incluye el cifrado avanzado de mensajes de Microsoft Purview, puede comprarlo con el complemento de SKU de Cumplimiento de Microsoft 365 E5 para Microsoft 365 E3, Microsoft 365 E3 (precios del personal sin ánimo de lucro) o el Cumplimiento avanzado de Office 365 complemento de SKU para Microsoft 365 E3, Microsoft 365 E3 (precios del personal sin ánimo de lucro) o SKU de Office 365.
 
-Cuando un usuario final recibe correo que tiene una fecha de expiración establecida, el usuario ve la fecha de expiración en el correo electrónico contenedor. Si un usuario intenta abrir un correo expirado, aparecerá un error en el portal de OME.
+Puede usar la expiración de mensajes en los correos electrónicos que los usuarios envían a destinatarios externos que usan el Portal de OME para acceder a correos electrónicos cifrados. Obliga a los destinatarios a usar el portal de OME para ver y responder a los correos electrónicos cifrados enviados por su organización mediante una plantilla de marca personalizada que especifica una fecha de expiración en Windows PowerShell.
 
-Solo puede establecer las fechas de expiración de los mensajes de correo electrónico a destinatarios externos.
+Como administrador global Office 365, al aplicar la marca de la empresa para personalizar el aspecto de los mensajes de correo electrónico de la organización, también puede especificar una expiración para estos mensajes de correo electrónico. Con el cifrado avanzado de mensajes de Microsoft Purview, puede crear varias plantillas para correos electrónicos cifrados que se originan en su organización. Con una plantilla, puede controlar cuánto tiempo los destinatarios tienen acceso al correo enviado por los usuarios.
 
-Con Cifrado de mensajes avanzado de Office 365, cada vez que aplique la personalización de marca personalizada, el Office 365 aplica el contenedor al correo electrónico que se ajusta a la regla de flujo de correo a la que aplica la plantilla. Además, solo puedes usar la expiración si usas personalización de marca personalizada.
+Cuando un usuario final recibe correo que tiene establecida una fecha de expiración, el usuario ve la fecha de expiración en el correo electrónico contenedor. Si un usuario intenta abrir un correo expirado, aparece un error en el portal de OME.
 
-## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>Crear una plantilla de personalización de marca personalizada para forzar la expiración del correo mediante PowerShell
+Solo puede establecer fechas de expiración de los correos electrónicos a destinatarios externos.
+
+Con el cifrado avanzado de mensajes de Microsoft Purview, cada vez que aplique personalización de marca, el Office 365 aplica el contenedor al correo electrónico que se ajusta a la regla de flujo de correo a la que se aplica la plantilla. Además, solo puede usar la expiración si usa personalización de marca.
+
+## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>Creación de una plantilla de personalización de marca personalizada para forzar la expiración del correo mediante PowerShell
 
 1. [Conectar para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) con una cuenta que tenga permisos de administrador global en su organización.
 
@@ -54,10 +58,10 @@ Donde:
 
 - `ExternalMailExpiryInDays` identifica el número de días que los destinatarios pueden conservar el correo antes de que expire. Puede usar cualquier valor entre 1 y 730 días.
 
-## <a name="more-information-about-office-365-advanced-message-encryption"></a>Más información sobre Cifrado de mensajes avanzado de Office 365
+## <a name="more-information-about-microsoft-purview-advanced-message-encryption"></a>Más información sobre el cifrado avanzado de mensajes de Microsoft Purview
 
-- [Cifrado avanzado de mensajes de Office 365](ome-advanced-message-encryption.md)
+- [Cifrado avanzado de mensajes](ome-advanced-message-encryption.md)
 
-- [Revocar el correo electrónico cifrado por el cifrado avanzado de mensajes de Office 365](revoke-ome-encrypted-mail.md)
+- [Revocar el correo electrónico cifrado mediante el cifrado de mensajes avanzado de Microsoft Purview](revoke-ome-encrypted-mail.md)
 
-- [Descripción del servicio de cumplimiento y directiva de mensajes](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)
+- [Descripción de la directiva de mensaje y del servicio de cumplimiento](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)
