@@ -1,7 +1,7 @@
 ---
 title: Directivas de administración de riesgos internos
-description: Obtenga más información sobre las directivas de administración de riesgos internos en Microsoft 365
-keywords: Microsoft 365, administración de riesgos internos, administración de riesgos, cumplimiento
+description: Más información sobre las directivas de administración de riesgos internos en Microsoft Purview
+keywords: Microsoft 365, Microsoft Purview, riesgo interno, administración de riesgos, cumplimiento
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -13,14 +13,16 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 7f77ca2f53e05291533395d3de5a860e9444732c
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 8277c962b149cb105dd8e08e983594610618bdd4
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824034"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217428"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos internos
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Las directivas de administración de riesgos internos determinan qué usuarios deben estar dentro del ámbito de búsqueda y qué tipos de indicadores de riesgo están configurados para las alertas. Puede crear rápidamente una directiva que se aplique a todos los usuarios de su organización o definir usuarios o grupos individuales para su administración en una directiva. Las directivas son compatibles con las prioridades de contenido para centrar las condiciones de las directivas en varios o determinados Microsoft Teams, sitios de SharePoint, tipos de confidencialidad de datos y etiquetas de datos. Mediante el uso de plantillas, puede seleccionar indicadores de riesgo específicos y personalizar los umbrales de los eventos para los indicadores de directivas, personalizando eficazmente las puntuaciones de riesgo y el nivel y la frecuencia de las alertas. Además, los impulsores de la puntuación de riesgo y las detecciones de anomalías ayudan a identificar la actividad del usuario que es de mayor importancia o más inusual. Las ventanas de la directiva permiten definir el marco temporal para aplicar la directiva a las actividades de alerta y se usan para determinar la duración de la directiva una vez activada.
 
@@ -58,7 +60,7 @@ Cuando los usuarios abandonan su organización, existen indicadores de riesgo es
 
 ### <a name="general-data-leaks"></a>Filtraciones de datos generales
 
-La protección de los datos y la prevención de las filtraciones es un reto constante para la mayoría de las organizaciones, especialmente con el rápido crecimiento de los nuevos datos creados por los usuarios, los dispositivos y los servicios. Los usuarios tienen la posibilidad de crear, almacenar y compartir información a través de servicios y dispositivos que hacen que la administración de las filtraciones de datos sea cada vez más compleja y difícil. Las filtraciones de datos pueden incluir la divulgación accidental de información fuera de su organización o el robo de datos con fines malintencionados. Con una directiva de prevención de pérdida de datos (DLP) asignada, eventos desencadenantes integrados o personalizables, esta plantilla comienza a puntuar las detecciones en tiempo real de las descargas de datos sospechosas SharePoint Online, el uso compartido de archivos y carpetas, la impresión de archivos y la copia de datos en servicios de almacenamiento y mensajería en la nube personales.
+La protección de los datos y la prevención de las filtraciones es un reto constante para la mayoría de las organizaciones, especialmente con el rápido crecimiento de los nuevos datos creados por los usuarios, los dispositivos y los servicios. Los usuarios tienen la posibilidad de crear, almacenar y compartir información a través de servicios y dispositivos que hacen que la administración de las filtraciones de datos sea cada vez más compleja y difícil. Las filtraciones de datos pueden incluir la divulgación accidental de información fuera de su organización o el robo de datos con fines malintencionados. Con una directiva de prevención de pérdida de datos (DLP) de Microsoft Purview asignada, eventos desencadenantes integrados o personalizables, esta plantilla comienza a puntuar las detecciones en tiempo real de descargas de datos sospechosas SharePoint en línea, el uso compartido de archivos y carpetas, la impresión de archivos y la copia de datos en servicios de almacenamiento y mensajería en la nube personales.
 
 Al usar una plantilla de *Filtración de datos*, puede asignar una directiva DLP para activar indicadores en la directiva de riesgo interno para alertas de alta gravedad en su organización. Cada vez que una regla de directiva DLP genera una alerta de alta gravedad que se agrega al registro de auditoría de Office 365, las directivas de riesgo interno creadas con esta plantilla examinan automáticamente la alerta de DLP de alta gravedad. Si la alerta contiene un usuario dentro del ámbito definido en la directiva de riesgo interno, la alerta es procesada por la directiva de riesgo interno como una nueva alerta y se le asigna una gravedad de riesgo interno y una puntuación de riesgo. También puede optar por asignar indicadores seleccionados como eventos desencadenantes de una directiva. Esta flexibilidad y personalización ayuda a limitar la directiva solo a las actividades cubiertas por los indicadores. Esta directiva le permite evaluar esta alerta en contexto con otras actividades incluidas en el caso.
 
@@ -84,7 +86,7 @@ Vea el artículo [Crear, probar y ajustar una directiva DLP](create-test-tune-dl
 
 ### <a name="data-leaks-by-priority-users-preview"></a>Filtración de datos por parte de usuarios prioritarios (versión preliminar)
 
-La protección de los datos y la prevención de las filtraciones de datos para los usuarios de su organización puede depender de su posición, del nivel de acceso a la información confidencial o del historial de riesgos. Las filtraciones de datos pueden incluir la divulgación accidental de información altamente confidencial fuera de su organización o el robo de datos con fines malintencionados. Con una directiva de prevención de pérdida de datos (DLP) asignada como opción de evento desencadenante, esta plantilla comienza a puntuar las detecciones en tiempo real de actividad sospechosa y da lugar a una mayor probabilidad de alertas y alertas de riesgo interno con niveles de gravedad más altos. Los usuarios prioritarios se definen en [grupos de usuarios prioritarios](insider-risk-management-settings.md#priority-user-groups-preview) configurados en el área de configuración de la administración de riesgos internos.
+La protección de los datos y la prevención de las filtraciones de datos para los usuarios de su organización puede depender de su posición, del nivel de acceso a la información confidencial o del historial de riesgos. Las filtraciones de datos pueden incluir la divulgación accidental de información altamente confidencial fuera de su organización o el robo de datos con fines malintencionados. Con una directiva de prevención de pérdida de datos asignada (DLP) como opción de evento desencadenante, esta plantilla comienza a puntuar las detecciones en tiempo real de actividad sospechosa y da como resultado una mayor probabilidad de alertas y alertas de riesgo interno con niveles de gravedad más altos. Los usuarios prioritarios se definen en [grupos de usuarios prioritarios](insider-risk-management-settings.md#priority-user-groups-preview) configurados en el área de configuración de la administración de riesgos internos.
 
 Al igual que con la **plantilla Pérdidas de datos generales**, puede elegir una directiva DLP para desencadenar indicadores en la directiva de riesgo interno para alertas de gravedad alta en su organización. Siga las directrices de directiva de pérdida de datos para las directivas DLP al crear una directiva con la opción DLP al usar esta plantilla. También puede optar por asignar indicadores seleccionados como eventos desencadenantes de una directiva. Esta flexibilidad y personalización ayudan a limitar la directiva solo a las actividades cubiertas por los indicadores. Además, deberá asignar grupos de usuarios prioritarios creados en **Administración** >  de riesgos internos **Configuración** >  **Grupos de usuarios** de Prioridad a la directiva.
 
@@ -134,21 +136,21 @@ Dependiendo de la plantilla que elija para una directiva de administración de r
 
 La siguiente tabla enumera los eventos desencadenantes y los requisitos previos para las directivas creadas a partir de cada plantilla de directivas de administración de riesgos internos:
 
-|Plantilla de directiva|Desencadenar eventos para directivas|Requisitos previos|
-|---|---|---|
-|**Robo de datos por parte de los usuarios que abandonan la organización**|Indicador de fecha de renuncia o finalización del conector de RR. HH. o Azure Active Directory eliminación de la cuenta|(opcional) Conector de recursos humanos de Microsoft 365 configurado para los indicadores de fecha de finalización y renuncia.|
-|**Filtraciones de datos generales**|La actividad de la directiva de filtración de datos que crea una alerta de *Alta gravedad* o desencadena un evento de filtración incorporado|Directiva DLP configurada para *alertas de gravedad alta* <br><br> OR <br><br> Indicadores desencadenadores personalizados|
-|**Filtraciones de datos por parte de usuarios prioritarios**|La actividad de la directiva de filtración de datos que crea una alerta de *Alta gravedad* o desencadena un evento de filtración incorporado|Directiva DLP configurada para *alertas de gravedad alta* <br><br> OR <br><br> Indicadores desencadenadores personalizados <br><br> Grupos de usuarios prioritarios configurados en la configuración de riesgo interno|
-|**Filtraciones de datos por parte de usuarios inconformes**|Indicadores de mejora del rendimiento, bajo rendimiento o cambio de nivel de trabajo del conector de recursos humanos|Conector de recursos humanos de Microsoft 365 configurado para los indicadores de inconformidad|
-|**Infracciones generales de la directiva de seguridad**|La evasión de defensa de los controles de seguridad o el software no deseado detectado por Microsoft Defender para punto de conexión|Suscripción activa a ATP de Microsoft Defender <br><br> Integración de ATP de Microsoft Defender con el Centro de cumplimiento de Microsoft 365 configurado|
-|**Uso indebido de los datos generales de los pacientes**|Evasión de la defensa de los controles de seguridad de los sistemas EMR <br><br> Indicadores de coincidencia de direcciones de usuario y paciente de sistemas de RR. HH.|Indicadores de acceso sanitario seleccionados en la configuración de riesgo interno o de directiva <br><br> Microsoft 365 conector de RR. HH. configurado para la coincidencia de direcciones <br><br> Conector de Microsoft Healthcare o Epic configurado|
-|**Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización**|Indicadores de la fecha de renuncia o finalización del contrato desde el conector de recursos humanos o la eliminación de la cuenta de Azure Active Directory|(opcional) Conector de recursos humanos de Microsoft 365 configurado para los indicadores de fecha de finalización y renuncia. <br><br> Suscripción activa a ATP de Microsoft Defender <br><br> Integración de ATP de Microsoft Defender con el Centro de cumplimiento de Microsoft 365 configurado|
-|**Infracciones de la directiva de seguridad por parte de los usuarios prioritarios**|La evasión de defensa de los controles de seguridad o el software no deseado detectado por Microsoft Defender para punto de conexión|Suscripción activa a ATP de Microsoft Defender <br><br> Integración de ATP de Microsoft Defender con el Centro de cumplimiento de Microsoft 365 configurado <br><br> Grupos de usuarios prioritarios configurados en la configuración de riesgo interno|
-|**Infracciones de la directiva de seguridad por parte de un usuario inconforme**|Indicadores de mejora del rendimiento, bajo rendimiento o cambio de nivel de trabajo del conector de recursos humanos|Conector de recursos humanos de Microsoft 365 configurado para los indicadores de inconformidad <br><br> Suscripción activa a ATP de Microsoft Defender <br><br> Integración de ATP de Microsoft Defender con el Centro de cumplimiento de Microsoft 365 configurado|
+| **Plantilla de directiva** | **Desencadenar eventos para directivas** | **Requisitos previos** |
+| :------------------ | :--------------------------------- | :---------------- |
+| **Robo de datos por parte de los usuarios que abandonan la organización** | Indicador de fecha de renuncia o finalización del conector de RR. HH. o Azure Active Directory eliminación de la cuenta | (opcional) Conector de recursos humanos de Microsoft 365 configurado para los indicadores de fecha de finalización y renuncia. |
+| **Filtraciones de datos generales** | La actividad de la directiva de filtración de datos que crea una alerta de *Alta gravedad* o desencadena un evento de filtración incorporado | Directiva DLP configurada para *alertas de gravedad alta* <br><br> O <br><br> Indicadores desencadenadores personalizados |
+| **Filtraciones de datos por parte de usuarios prioritarios** | La actividad de la directiva de filtración de datos que crea una alerta de *Alta gravedad* o desencadena un evento de filtración incorporado | Directiva DLP configurada para *alertas de gravedad alta* <br><br> O <br><br> Indicadores desencadenadores personalizados <br><br> Grupos de usuarios prioritarios configurados en la configuración de riesgo interno |
+| **Filtraciones de datos por parte de usuarios inconformes** | Indicadores de mejora del rendimiento, bajo rendimiento o cambio de nivel de trabajo del conector de recursos humanos | Conector de recursos humanos de Microsoft 365 configurado para los indicadores de inconformidad |
+| **Infracciones generales de la directiva de seguridad** | La evasión de defensa de los controles de seguridad o el software no deseado detectado por Microsoft Defender para punto de conexión | Suscripción activa a ATP de Microsoft Defender <br><br> Microsoft Defender para punto de conexión integración con el portal de cumplimiento de Microsoft Purview configurado |
+| **Uso indebido de los datos generales de los pacientes** | Evasión de la defensa de los controles de seguridad de los sistemas EMR <br><br> Indicadores de coincidencia de direcciones de usuario y paciente de sistemas de RR. HH. | Indicadores de acceso sanitario seleccionados en la configuración de riesgo interno o de directiva <br><br> Microsoft 365 conector de RR. HH. configurado para la coincidencia de direcciones <br><br> Conector de Microsoft Healthcare o Epic configurado |
+| **Infracciones de la directiva de seguridad por parte de los usuarios que abandonan la organización** | Indicadores de la fecha de renuncia o finalización del contrato desde el conector de recursos humanos o la eliminación de la cuenta de Azure Active Directory | (opcional) Conector de recursos humanos de Microsoft 365 configurado para los indicadores de fecha de finalización y renuncia. <br><br> Suscripción activa a ATP de Microsoft Defender <br><br> Microsoft Defender para punto de conexión integración con el portal de cumplimiento de Microsoft Purview configurado |
+| **Infracciones de la directiva de seguridad por parte de los usuarios prioritarios** | La evasión de defensa de los controles de seguridad o el software no deseado detectado por Microsoft Defender para punto de conexión | Suscripción activa a ATP de Microsoft Defender <br><br> Microsoft Defender para punto de conexión integración con el portal de cumplimiento de Microsoft Purview configurado <br><br> Grupos de usuarios prioritarios configurados en la configuración de riesgo interno |
+| **Infracciones de la directiva de seguridad por parte de un usuario inconforme** | Indicadores de mejora del rendimiento, bajo rendimiento o cambio de nivel de trabajo del conector de recursos humanos | Conector de recursos humanos de Microsoft 365 configurado para los indicadores de inconformidad <br><br> Suscripción activa a ATP de Microsoft Defender <br><br> Microsoft Defender para punto de conexión integración con el portal de cumplimiento de Microsoft Purview configurado |
 
 ## <a name="prioritize-content-in-policies"></a>Priorizar los contenidos en las directivas
 
-Las directivas de administración de riesgos internos admiten la especificación de una prioridad más alta para el contenido en función de dónde se almacene o cómo se clasifique. Especificar el contenido como prioritario aumenta la puntuación de riesgo de cualquier actividad asociada, lo que a su vez aumenta la posibilidad de generar una alerta de alta gravedad. Sin embargo, algunas actividades no generarán ninguna alerta a menos que el contenido relacionado contenga tipos de información confidencial incorporados o personalizados o se haya especificado como prioridad en la directiva.
+Las directivas de administración de riesgos internos admiten la especificación de una prioridad más alta para el contenido en función de dónde se almacene, el tipo de contenido o cómo se clasifique. Especificar el contenido como prioritario aumenta la puntuación de riesgo de cualquier actividad asociada, lo que a su vez aumenta la posibilidad de generar una alerta de alta gravedad. Sin embargo, algunas actividades no generarán ninguna alerta a menos que el contenido relacionado contenga tipos de información confidencial incorporados o personalizados o se haya especificado como prioridad en la directiva.
 
 Por ejemplo, su organización tiene un sitio de SharePoint dedicado a un proyecto altamente confidencial. Las filtraciones de información en este sitio de SharePoint podrían comprometer el proyecto y tendrían un impacto significativo en su éxito. Al priorizar este sitio de SharePoint en una directiva de filtración de datos, las puntuaciones de riesgo para las actividades puntuadas se incrementan automáticamente. Esta priorización aumenta la probabilidad de que estas actividades generen una alerta de riesgo interno y eleva el nivel de gravedad de la alerta.
 
@@ -157,6 +159,7 @@ Cuando se crea una directiva de administración de riesgos internos en el asiste
 - **Sitios de SharePoint**: cualquier actividad asociada a todos los tipos de archivo en sitios de SharePoint definidos se asigna una mayor puntuación de riesgo. Los usuarios que configuran la directiva y seleccionan sitios de Share Point prioritarios pueden seleccionar SharePoint sitios a los que tienen permiso de acceso. Si SharePoint sitios no están disponibles para su selección en la directiva por el usuario actual, otro usuario con los permisos necesarios puede seleccionar los sitios para la directiva más adelante o el usuario actual debe tener acceso a los sitios necesarios.
 - **Tipos de información confidencial**: cualquier actividad asociada a un contenido que contenga [tipos de información confidencial](sensitive-information-type-entity-definitions.md) se le asigna una puntuación de riesgo más alta.
 - **Etiquetas de confidencialidad**: a cualquier actividad asociada a un contenido que tenga aplicadas [etiquetas de confidencialidad](sensitivity-labels.md) específicas se le asigna una puntuación de riesgo más alta.
+- **Extensiones de archivo**: cualquier actividad asociada al contenido que tenga extensiones de archivo específicas. Los usuarios que configuran una directiva de robo/pérdida de datos que selecciona **Extensiones de archivo para priorizar** en el asistente para directivas pueden definir hasta 50 extensiones de archivo para priorizar en la directiva. Las extensiones especificadas pueden incluir o omitir un "." como primer carácter de la extensión con prioridad.
 
 ## <a name="sequence-detection-preview"></a>Detección de secuencias (versión preliminar)
 
@@ -185,7 +188,7 @@ Para obtener más información sobre la administración de la detección de secu
 
 Los indicadores de riesgo interno ayudan a identificar niveles inusuales de actividades de riesgo cuando se evalúan diariamente para los usuarios que están dentro del ámbito de búsqueda de las directivas de riesgo interno. La detección acumulativa de filtraciones usa modelos de aprendizaje automático para ayudarle a identificar cuándo las actividades de filtración que realiza un usuario durante un tiempo determinado superan la cantidad normal realizada por los usuarios de su organización durante los últimos 30 días en varios tipos de actividad de filtración. Por ejemplo, si un usuario compartiese más archivos que la mayoría de los usuarios durante el mes pasado, esta actividad se detectaría y clasificaría como una actividad de filtración acumulativa.
 
-Los analistas e investigadores de administración de riesgos internos pueden utilizar los conocimientos de detección de filtración acumulada para ayudar a identificar las actividades de filtración que no suelen generar alertas, pero que están por encima de lo que es típico para su organización. Algunos ejemplos pueden ser que los usuarios que abandonan la organización filtren lentamente los datos durante varios días, o que los usuarios compartan repetidamente los datos a través de múltiples canales más de lo habitual para el uso compartido de datos de su organización.  Las puntuaciones de riesgo más altas se asignan a actividades de filtración acumulativas para sitios SharePoint, tipos de información confidencial y contenido con [etiquetas de confidencialidad configuradas](/microsoft-365/compliance/sensitivity-labels#label-priority-order-matters) como contenido de prioridad en una directiva o para la actividad que implica etiquetas configuradas como de alta prioridad en Microsoft Information Protection.
+Los analistas e investigadores de administración de riesgos internos pueden utilizar los conocimientos de detección de filtración acumulada para ayudar a identificar las actividades de filtración que no suelen generar alertas, pero que están por encima de lo que es típico para su organización. Algunos ejemplos pueden ser que los usuarios que abandonan la organización filtren lentamente los datos durante varios días, o que los usuarios compartan repetidamente los datos a través de múltiples canales más de lo habitual para el uso compartido de datos de su organización.  Las puntuaciones de riesgo más altas se asignan a actividades de filtración acumulativas para sitios SharePoint, tipos de información confidencial y contenido con [etiquetas de confidencialidad configuradas](/microsoft-365/compliance/sensitivity-labels#label-priority-order-matters) como contenido de prioridad en una directiva o para la actividad que implica etiquetas configuradas como de alta prioridad en Microsoft Purview Information Protection.
 
 La detección de filtración acumulada está activada de forma predeterminada cuando se utilizan las siguientes plantillas de directivas:
 
@@ -268,11 +271,11 @@ Use la siguiente tabla para determinar el número máximo de usuarios dentro del
 
 ## <a name="create-a-new-policy"></a>Crear una nueva directiva
 
-Para crear una nueva directiva de administración de riesgos internos, usará el asistente de directivas en la solución de **Administración de riesgos internos** en el Centro de cumplimiento de Microsoft 365.
+Para crear una nueva directiva de administración de riesgos internos, usará el asistente para directivas en la solución **de administración de riesgos insider** en el portal de cumplimiento de Microsoft Purview.
 
 Siga los siguientes pasos para crear una nueva directiva:
 
-1. En [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya **Administración de riesgos internos** y seleccione la pestaña **Directivas**.
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **Directivas** .
 2. Seleccione **Crear directiva** para abrir el asistente de directivas.
 3. En la página **Plantilla de directiva**, elija una categoría de directiva y luego seleccione la plantilla para la nueva directiva. Estas plantillas están compuestas por condiciones y señales que definen las actividades de riesgo que desea detectar e investigar. Revise los requisitos previos de la plantilla, los eventos desencadenantes y las actividades detectadas para confirmar que esta plantilla de directiva se ajusta a sus necesidades.
 
@@ -294,11 +297,12 @@ Siga los siguientes pasos para crear una nueva directiva:
 
 10. Seleccione **Siguiente** para continuar.
 
-11. Si ha seleccionado **I want to specify SharePoint sites, sensitivity labels, and/or sensitive information types as priority content** in the previous step, you'll see the detail pages for *SharePoint sites*, *Sensitive info types*, and *Sensitivity labels*. Use estas páginas detalladas para definir el SharePoint, los tipos de información confidencial y las etiquetas de confidencialidad para priorizar en la directiva.
+11. Si ha seleccionado **I want to specify SharePoint sites, sensitivity labels, sensitive information types, and/or file extensions as priority content** in the previous step, you'll see the detail pages for *SharePoint sites*, *sensitive info types*, *sensitivity labels* and *file extensions*. Use estas páginas detalladas para definir el SharePoint, los tipos de información confidencial y las etiquetas de confidencialidad para priorizar en la directiva.
 
     - **Sitios de SharePoint**: seleccione **Agregar sitio de SharePoint** y seleccione los sitios de SharePoint a los que tiene acceso y desea priorizar. Por ejemplo, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Tipo de información confidencial**: seleccione **Agregar tipo de información confidencial** y seleccione los tipos de confidencialidad que desea priorizar. Por ejemplo, *"Número de cuenta bancaria de EE. UU."* y *"Número de tarjeta de crédito"*.
     - **Etiquetas de confidencialidad**: seleccione **Agregar etiquetas de confidencialidad** y seleccionar las etiquetas que desea priorizar. Por ejemplo, *"Confidencial"* y *"Secreto"*.
+    - **Extensiones de archivo**: agregue hasta 50 extensiones de archivo. Puede incluir u omitir '.' con la extensión de archivo. Por ejemplo, *.py* o *py* daría prioridad a los archivos de Python.
 
     >[!NOTE]
     >Los usuarios que configuran la directiva y seleccionan sitios de Share Point prioritarios pueden seleccionar SharePoint sitios a los que tienen permiso de acceso. Si SharePoint sitios no están disponibles para su selección en la directiva por el usuario actual, otro usuario con los permisos necesarios puede seleccionar los sitios para la directiva más adelante o el usuario actual debe tener acceso a los sitios necesarios.
@@ -330,11 +334,11 @@ Siga los siguientes pasos para crear una nueva directiva:
 
 ## <a name="update-a-policy"></a>Actualizar una directiva
 
-Para actualizar una directiva de administración de riesgos internos existente, utilizará el asistente de directivas en la solución de **Administración de riesgos internos** en el Centro de cumplimiento de Microsoft 365.
+Para actualizar una directiva de administración de riesgos internos existente, usará el Asistente para directivas en la solución **de administración de riesgos insider** en el portal de cumplimiento de Microsoft Purview.
 
 Siga los siguientes pasos para administrar una directiva existente:
 
-1. En [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya **Administración de riesgos internos** y seleccione la pestaña **Directivas**.
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **Directivas** .
 2. En el panel de directivas, seleccione la directiva que desea administrar.
 3. En la página de detalles de la directiva, seleccione **Editar directiva**
 4. En el Asistente para directivas, no puede editar lo siguiente:
@@ -346,16 +350,17 @@ Siga los siguientes pasos para administrar una directiva existente:
 8. Seleccione **Siguiente** para continuar.
 9. En la página **Contenido a priorizar**, puede asignar (si es necesario) las fuentes a priorizar, lo que aumenta la posibilidad de generar una alerta de alta gravedad para estas fuentes. Seleccione una de las siguientes opciones:
 
-    - **Deseo especificar sitios de SharePoint, etiquetas de confidencialidad, y/o tipos de información confidencial como contenido prioritario**. Al seleccionar esta opción se habilitarán las páginas de detalles del asistente para configurar estos canales.
+    - **Quiero especificar sitios SharePoint, etiquetas de confidencialidad, tipos de información confidencial o extensiones de archivo como contenido prioritario**. Al seleccionar esta opción se habilitarán las páginas de detalles del asistente para configurar estos canales.
     - **No deseo especificar el contenido prioritario en este momento (podrá hacerlo una vez que se haya creado la directiva)**. Al seleccionar esta opción, se omitirán las páginas de detalles del canal en el asistente.
 
 10. Seleccione **Siguiente** para continuar.
 
-11. Si ha seleccionado **I want to specify SharePoint sites, sensitivity labels, and/or sensitive information types as priority content** in the previous step, you'll see the detail pages for *SharePoint sites*, *Sensitive info types*, and *Sensitivity labels*. Use estas páginas detalladas para definir el SharePoint, los tipos de información confidencial y las etiquetas de confidencialidad para priorizar en la directiva.
+11. Si ha seleccionado **I want to specify SharePoint sites, sensitivity labels, and/or sensitive information types as priority content** in the previous step, you'll see the detail pages for *SharePoint sites*, *sensitive info types*, and *sensitivity labels*. Use estas páginas detalladas para definir el SharePoint, los tipos de información confidencial y las etiquetas de confidencialidad para priorizar en la directiva.
 
     - **Sitios de SharePoint**: seleccione **Agregar sitio de SharePoint** y seleccione los sitios de SharePoint a los que tiene acceso y desea priorizar. Por ejemplo, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Tipo de información confidencial**: seleccione **Agregar tipo de información confidencial** y seleccione los tipos de confidencialidad que desea priorizar. Por ejemplo, *"Número de cuenta bancaria de EE. UU."* y *"Número de tarjeta de crédito"*.
     - **Etiquetas de confidencialidad**: seleccione **Agregar etiquetas de confidencialidad** y seleccionar las etiquetas que desea priorizar. Por ejemplo, *"Confidencial"* y *"Secreto"*.
+    - **Extensiones de archivo**: agregue hasta 50 extensiones de archivo. Puede incluir u omitir '.' con la extensión de archivo. Por ejemplo, *.py* o *py* daría prioridad a los archivos de Python.
 
     >[!NOTE]
     >Los usuarios que configuran la directiva y seleccionan sitios de Share Point prioritarios pueden seleccionar SharePoint sitios a los que tienen permiso de acceso. Si SharePoint sitios no están disponibles para su selección en la directiva por el usuario actual, otro usuario con los permisos necesarios puede seleccionar los sitios para la directiva más adelante o el usuario actual debe tener acceso a los sitios necesarios.
@@ -391,7 +396,7 @@ Es posible que tenga que crear una nueva directiva que sea similar a una directi
 
 Siga los siguientes pasos para copiar una directiva existente:
 
-1. En [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya **Administración de riesgos internos** y seleccione la pestaña **Directivas**.
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **Directivas** .
 2. En el panel de directivas, seleccione la directiva que desea copiar.
 3. En la página de detalles de la directiva, seleccione Copiar.
 4. En el asistente de directivas, asigne un nombre a la nueva directiva y actualice la configuración de la misma según sea necesario.
@@ -411,7 +416,7 @@ Algunos escenarios en los que puede querer empezar inmediatamente a puntuar las 
 
 Para iniciar manualmente la actividad de puntuación de los usuarios en una o más directivas de administración de riesgos internos, siga los siguientes pasos:
 
-1. En [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya **Administración de riesgos internos** y seleccione la pestaña **Directivas**.
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **Directivas** .
 2. En el panel de directivas, seleccione la directiva o directivas a las que desea agregar usuarios.
 3. Seleccione **Iniciar la actividad de puntuación para los usuarios**.
 4. En el campo **Razón del panel** y luego en el panel **Agregar usuarios a múltiples directivas**, agregue una razón para agregar los usuarios.
@@ -438,7 +443,7 @@ Para dejar de puntuar a los usuarios en una directiva, vea el artículo [Usuario
 
 Para eliminar una directiva de administración de riesgos internos existente, siga estos pasos:
 
-1. En [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya **Administración de riesgos internos** y seleccione la pestaña **Directivas**.
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **Directivas** .
 2. En el panel de directivas, seleccione la directiva que desea eliminar.
 3. Seleccione **Eliminar** la barra de herramientas del panel.
 4. En el cuadro de dialogo **Eliminar**, seleccione **Sí** para eliminar la directiva o **Cancelar** para cerrarlo.

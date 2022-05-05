@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 5b941cf40a220f2d9298a4918d334349f784dd13
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: ba9102f96ea08bf33f72a260779b4b37d6a6f0f4
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789896"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217384"
 ---
 # <a name="customize-controlled-folder-access"></a>Personalizar el acceso controlado a carpetas
 
@@ -160,7 +160,7 @@ Una aplicación o servicio permitidos solo tiene acceso de escritura a una carpe
 
 ### <a name="use-mdm-csps-to-allow-specific-apps"></a>Uso de CSP de MDM para permitir aplicaciones específicas
 
-Use el proveedor de servicios de configuración [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersAllowedApplications](/windows/client-management/mdm/policy-csp-defender#defender-guardedfoldersallowedapplications) (CSP) para permitir que las aplicaciones realicen cambios en carpetas protegidas.
+Use el proveedor de servicios de configuración [./Vendor/MSFT/Policy/Config/Defender/ControlledFolderAccessAllowedApplications](/windows/client-management/mdm/policy-csp-defender#defender-guardedfoldersallowedapplications) (CSP) para permitir que las aplicaciones realicen cambios en carpetas protegidas.
 
 ## <a name="allow-signed-executable-files-to-access-protected-folders"></a>Permitir que los archivos ejecutables firmados accedan a carpetas protegidas
 
@@ -173,7 +173,7 @@ Microsoft Defender para punto de conexión indicadores de certificado y archivo 
 
 Para obtener más información sobre cómo personalizar la notificación cuando se desencadena una regla y bloquea una aplicación o un archivo, consulte [Configurar notificaciones de alerta en Microsoft Defender para punto de conexión](configure-email-notifications.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 - [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 - [Habilitar el acceso controlado a carpetas](enable-controlled-folders.md)

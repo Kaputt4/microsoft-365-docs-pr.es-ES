@@ -18,12 +18,12 @@ ms.custom: ''
 description: Un cuaderno de estrategias prescriptivo para que el personal de SecOps administre Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01c857d96fe461c91c459704f4572191f37ef016
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 557e1288e4f2b39938b4da381664b58ed4c7e6c7
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747498"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217319"
 ---
 # <a name="microsoft-defender-for-office-365-security-operations-guide"></a>Guía de operaciones de seguridad de Microsoft Defender para Office 365
 
@@ -63,7 +63,7 @@ La administración de colas de incidentes y los roles responsables se describen 
 |Valore los incidentes en la cola incidentes en <https://security.microsoft.com/incidents-queue>.|Diario|Compruebe que todos los incidentes de gravedad **media** y **alta** de Defender para Office 365 están evaluados.|Equipo de operaciones de seguridad|
 |Investigue y tome medidas de respuesta sobre incidentes.|Diario|Investigue todos los incidentes y realice activamente las acciones de respuesta recomendadas o manuales.|Equipo de operaciones de seguridad|
 |Resolución de incidentes.|Diario|Si el incidente se ha corregido, resuelva el incidente. La resolución del incidente resuelve todas las alertas activas vinculadas y relacionadas.|Equipo de operaciones de seguridad|
-|Clasificar incidentes.|Diario|Clasifique los incidentes como true o false. Para las alertas verdaderas, especifique el tipo de amenaza. Estas clasificaciones ayudan al equipo de seguridad a ver los patrones de amenazas y a defender su organización de ellos.|Equipo de operaciones de seguridad|
+|Clasificar incidentes.|Diario|Clasifique los incidentes como true o false. Para las alertas verdaderas, especifique el tipo de amenaza. Esta clasificación ayuda al equipo de seguridad a ver los patrones de amenazas y a defender su organización de ellos.|Equipo de operaciones de seguridad|
 
 ### <a name="manage-false-positive-and-false-negative-detections"></a>Administración de detecciones de falsos positivos y falsos negativos
 
@@ -80,7 +80,7 @@ La administración de falsos positivos y falsos negativos y las personas respons
 |Actividad|Cadencia|Descripción|Persona|
 |---|---|---|---|
 |Envíe falsos positivos y falsos negativos a Microsoft en <https://security.microsoft.com/reportsubmission>.|Diario|Proporcione señales a Microsoft mediante la notificación de detecciones incorrectas de correo electrónico, dirección URL y archivos.|Equipo de operaciones de seguridad|
-|Analice los detalles del envío del administrador.|Diario|Comprenda los siguientes factores para los envíos que realiza a Microsoft: <ul><li>Lo que causó el falso positivo de falso negativo.</li><li>Estado de la configuración de Defender para Office 365 en el momento del envío.</li><li>Si necesita realizar cambios en la configuración de Defender para Office 365.</li></ul>|Equipo de operaciones de seguridad <br/><br/> Administración de seguridad|
+|Analice los detalles del envío del administrador.|Diario|Comprenda los siguientes factores para los envíos que realiza a Microsoft: <ul><li>¿Qué causó el falso positivo o falso negativo?</li><li>Estado de la configuración de Defender para Office 365 en el momento del envío.</li><li>Si necesita realizar cambios en la configuración de Defender para Office 365.</li></ul>|Equipo de operaciones de seguridad <br/><br/> Administración de seguridad|
 |Agregue entradas de bloque en la lista de permitidos o bloqueados de inquilinos en <https://security.microsoft.com/tenantAllowBlockList>.|Diario|Use la lista de permitidos o bloqueados de inquilinos para agregar entradas de bloque para las detecciones de direcciones URL negativas falsas, archivos o remitentes según sea necesario.|Equipo de operaciones de seguridad|
 |Libere los falsos negativos de la cuarentena.|Diario|Después de que el destinatario confirme que el mensaje se puso en cuarentena incorrectamente, puede liberar o aprobar solicitudes de versión para los usuarios. <br/><br/> Para controlar lo que los usuarios pueden hacer con sus propios mensajes en cuarentena (incluida la versión o la solicitud de lanzamiento), consulte [Directivas de cuarentena](quarantine-policies.md).|Equipo de operaciones de seguridad <br/><br/> Equipo de mensajería|
 
@@ -147,7 +147,7 @@ Las vistas de campaña revelan ataques de malware y suplantación de identidad (
 
 |Actividad|Cadencia|Descripción|Persona|
 |---|---|---|---|
-|Revise la configuración de las directivas de Defender para Office 365 en <https://security.microsoft.com/configurationAnalyzer>.|Ad hoc <br/><br/> Mensualmente|Use el [Analizador de configuración](configuration-analyzer-for-security-policies.md) para comparar la configuración de directiva existente con los [valores Estándar o Estricto recomendados para Defender para Office 365](recommended-settings-for-eop-and-office365.md). El analizador de configuración identifica cambios accidentales o malintencionados que pueden reducir la posición de seguridad de su organización. <br/><br/> O yu puede usar la [herramienta ORCA](https://aka.ms/getorca) basada en PowerShell.|Administración de seguridad <br/><br/> Equipo de mensajería|
+|Revise la configuración de las directivas de Defender para Office 365 en <https://security.microsoft.com/configurationAnalyzer>.|Ad hoc <br/><br/> Mensualmente|Use el [Analizador de configuración](configuration-analyzer-for-security-policies.md) para comparar la configuración de directiva existente con los [valores Estándar o Estricto recomendados para Defender para Office 365](recommended-settings-for-eop-and-office365.md). El analizador de configuración identifica cambios accidentales o malintencionados que pueden reducir la posición de seguridad de la organización. <br/><br/> O yu puede usar la [herramienta ORCA](https://aka.ms/getorca) basada en PowerShell.|Administración de seguridad <br/><br/> Equipo de mensajería|
 |Revisión de las invalidaciones de detección en Defender para Office 365 en<https://security.microsoft.com/reports/TPSMessageOverrideReportATP>|Ad hoc <br/><br/> Mensualmente|Use la [vista Ver datos por invalidación \> del sistema Desglose del gráfico por motivo](view-email-security-reports.md#view-data-by-system-override-and-chart-breakdown-by-reason) en el **informe de estado de Protección contra amenazas** para revisar el correo electrónico que se detectó como suplantación de identidad (phishing) pero que se entregó debido a la configuración de invalidación de usuario o directiva. <br/><br/> Investigue, quite o ajuste de forma activa las invalidaciones para evitar la entrega de correo electrónico que se determinó que era malintencionado.|Administración de seguridad <br/><br/> Equipo de mensajería|
 
 ### <a name="review-spoof-and-impersonation-detections"></a>Revisión de las detecciones de suplantación y suplantación
@@ -186,7 +186,7 @@ Los siguientes permisos (roles y grupos de roles) están disponibles en Defender
   - **Operador de seguridad**
   - **Lector de seguridad**
 
-- **Roles de colaboración de & por correo electrónico**: roles y grupos de roles que conceden permiso específico para Microsoft Defender para Office 365. El siguiente rol no está disponible en Azure AD, pero puede ser importante para los equipos de seguridad:
+- **Roles de colaboración de & por correo electrónico**: roles y grupos de roles que conceden permiso específico para Microsoft Defender para Office 365. Los siguientes roles no están disponibles en Azure AD, pero pueden ser importantes para los equipos de seguridad:
 
   - **Rol de vista previa** : asigne este rol a los miembros del equipo que necesiten obtener una vista previa o descargar mensajes de correo electrónico como parte de las actividades de investigación. Permite a los usuarios [obtener una vista previa y descargar](investigate-malicious-email-that-was-delivered.md#preview-role-permissions) mensajes de correo electrónico en buzones de correo en la nube mediante la [página de entidad de correo electrónico](mdo-email-entity-page.md#email-preview-for-cloud-mailboxes).
 
@@ -269,9 +269,9 @@ Los miembros del equipo de seguridad pueden realizar envíos desde varias ubicac
 
   Puede seleccionar hasta 10 mensajes para realizar un envío masivo. Los envíos de administradores creados de esta manera también se pueden ver en el portal de envío.
 
-Para la mitigación a corto plazo de falsos positivos, los equipos de seguridad pueden administrar directamente [entradas de bloque](manage-tenant-blocks.md) para archivos, direcciones URL y remitentes en la [lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md).
+Para la mitigación a corto plazo de falsos negativos, los equipos de seguridad pueden administrar directamente [entradas de bloque](manage-tenant-blocks.md) para archivos, direcciones URL y remitentes en la [lista de permitidos o bloqueados de inquilinos](tenant-allow-block-list.md).
 
-Para la mitigación a corto plazo de falsos negativos, los equipos de seguridad no pueden administrar directamente [las entradas permitidas](manage-tenant-allows.md) en la lista de permitidos o bloqueados de inquilinos. En su lugar, deben usar [envíos de administrador](admin-submission.md) y la opción **Permitir mensajes como esta** .
+Para la mitigación a corto plazo de falsos positivos, los equipos de seguridad no pueden administrar directamente [las entradas permitidas](manage-tenant-allows.md) en la lista de permitidos o bloqueados de inquilinos. En su lugar, deben usar [envíos de administrador](admin-submission.md) y la opción **Permitir mensajes como esta** .
 
 [La cuarentena](manage-quarantined-messages-and-files.md) en Defender para Office 365 contiene mensajes y archivos potencialmente peligrosos o no deseados. Los equipos de seguridad pueden ver, liberar y eliminar todos los tipos de mensajes en cuarentena para todos los usuarios. Esta funcionalidad permite a los equipos de seguridad responder de forma eficaz cuando se pone en cuarentena un mensaje o archivo falso positivo.
 

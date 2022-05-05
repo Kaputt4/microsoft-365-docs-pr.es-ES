@@ -353,7 +353,7 @@
         - name: Habilitar la autenticación moderna para Office 2013
           href: security-and-compliance/enable-modern-authentication.md
         - name: Requisitos previos para la protección de datos
-          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection.md
+          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection
         - name: Aumentar la protección contra amenazas
           href: security-and-compliance/increase-threat-protection.md
         - name: Amenazas detectadas por Antivirus de Microsoft Defender
@@ -373,13 +373,13 @@
         - name: Documentación de Microsoft Intune
           href: /mem/intune/
         - name: Ver y editar directivas y dispositivos
-          href: /microsoft-365/business-premium/view-policies-and-devices.md
+          href: /microsoft-365/business-premium/m365bp-view-policies-and-devices
         - name: Quitar datos de la empresa
-          href: /microsoft-365/business-premium/m365bp-remove-company-data.md
+          href: /microsoft-365/business-premium/m365bp-remove-company-data
         - name: Restablecer dispositivos a la configuración de fábrica
           href: devices/reset-devices-to-factory-settings.md
         - name: Asignar funciones de protección a la configuración de Intune
-          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings.md
+          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings
         - name: Estados de dispositivo
           href: devices/device-states.md
         - name: Configuración de protección de la app para equipos con Windows 10
@@ -391,7 +391,7 @@
         - name: Autopilot
           items:
             - name: Crear y editar perfiles de Autopilot
-              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles.md
+              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles
             - name: Crear y editar dispositivos de Autopilot
               href: devices/create-and-edit-autopilot-devices.md
         - name: Documentación para Microsoft 365 Enterprise

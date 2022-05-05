@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5e474505eecca0c42aa919b42364a1ad54c27e17
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9bca10cf946a7e812064f07cc3be6fa658edf39
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094765"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217406"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Conozca el lenguaje de consulta de búsqueda avanzada
 
@@ -175,14 +175,14 @@ Puede usar el editor de consultas para experimentar con varias consultas. Para u
 
 Para un área de trabajo más eficaz, también puede usar varias pestañas en la misma página de búsqueda. Seleccione **Nueva consulta** para abrir una pestaña para la nueva consulta.
 
-:::image type="content" source="../../media/multitab.png" alt-text="Ejemplo de ejecución de varias consultas en la página **Nueva consulta** del portal de Microsoft 365 Defender" lightbox="../../media/multitab.png":::
+:::image type="content" source="../../media/multitab.png" alt-text="Para abrir una nueva pestaña, seleccione Crear nuevo en búsqueda avanzada en el portal de Microsoft 365 Defender" lightbox="../../media/multitab.png":::
 
 A continuación, puede ejecutar consultas diferentes sin abrir nunca una nueva pestaña del explorador. 
 
-:::image type="content" source="../../media/multitab-examples.png" alt-text="Ejemplo de ejecución de varias consultas en la página **Nueva consulta** del portal de Microsoft 365 Defender" lightbox="../../media/multitab-examples.png":::
+:::image type="content" source="../../media/multitab-examples.png" alt-text="Ejecutar consultas diferentes sin salir nunca de la página de búsqueda avanzada en el portal de Microsoft 365 Defender" lightbox="../../media/multitab-examples.png":::
 
 >[!NOTE] 
-> Corre el riesgo de perder consultas no guardadas si abre una nueva pestaña del explorador para una nueva consulta.
+> El uso de varias pestañas del explorador con búsqueda avanzada puede hacer que pierda las consultas no guardadas. Para evitar que esto suceda, use la característica de tabulación dentro de la búsqueda avanzada en lugar de pestañas de explorador independientes.
 
 ## <a name="use-sample-queries"></a>Usar las consultas de ejemplo
 

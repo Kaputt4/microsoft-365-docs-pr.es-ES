@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 04/15/2022
 ms.technology: mde
-ms.openlocfilehash: 78d22772ccc9713b968347de5dee4c3a9699fe26
-ms.sourcegitcommit: dba1a846ae78ea14240d28efa8d4934fe303f308
+ms.openlocfilehash: b3f27f0fc5b4b6d0a8d23c7fac112597fed381ad
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "64891874"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217450"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Incorporación de dispositivos de infraestructura de escritorio virtual (VDI) no persistente en Microsoft 365 Defender
 
@@ -148,6 +148,21 @@ Con la capacidad de implementar fácilmente actualizaciones en máquinas virtual
 
 Para obtener más información, siga las instrucciones de la [Guía de implementación para Antivirus de Microsoft Defender en un entorno de Infraestructura de escritorio virtual (VDI).](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)
 
+   > [!NOTE]
+   > Si ha incorporado la imagen maestra del entorno de VDI no persistente (se está ejecutando el servicio SENSE), debe desconectar y borrar algunos datos antes de volver a poner la imagen en producción.
+   > 1. Asegúrese de que el sensor se detiene ejecutando el siguiente comando en una ventana CMD:
+   >  ```console
+   >  sc query sense
+   >  ```
+   > 2. Ejecute los comandos siguientes mediante PsExec.exe (que se pueden descargar desde https://download.sysinternals.com/files/PSTools.zip)
+   >
+   >  ```console
+   >  PsExec.exe -s cmd.exe
+   >  cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
+   >  del *.* /f /s /q
+   >  REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+   >  exit
+   >  ```
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Incorporar dispositivos Windows mediante directiva de grupo](configure-endpoints-gp.md)

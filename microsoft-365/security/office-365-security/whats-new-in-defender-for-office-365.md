@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c5b1d501f0d33e5b837abcd81f7b228cdc74d943
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 557b81db3c211b294166af8e5f8aaa783fc563a6
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973033"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65215801"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -50,7 +50,10 @@ Para obtener más información sobre las novedades de otros productos de segurid
 - [Novedades de Microsoft Defender para punto de conexión](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [Novedades de Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [Novedades de Microsoft Cloud App Security](/cloud-app-security/release-notes)
+## <a name="april-2022"></a>Abril de 2022
 
+- [Mejoras de corrección manual del correo electrónico](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365): llevar las acciones de purga de correo electrónico manual realizadas en Microsoft Defender para Office 365 al Centro de acciones unificado de Microsoft 365 Defender (M365D) mediante una nueva investigación centrada en la acción.
+ 
 ## <a name="march-2022"></a>Marzo de 2022
 
 - [Simplifica la experiencia de envío en Microsoft Defender para Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/streamlining-the-submissions-experience-in-microsoft-defender/ba-p/3152080): Presentamos el nuevo proceso de envío unificado y simplificado para simplificar tu experiencia.
@@ -117,7 +120,7 @@ Para obtener más información sobre las novedades de otros productos de segurid
 
 ¿Sabías que Microsoft Defender para Office 365 está disponible en dos planes? [Obtenga más información sobre lo que incluye cada plan](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Microsoft 365 hoja de ruta](https://www.microsoft.com/microsoft-365/roadmap)
 

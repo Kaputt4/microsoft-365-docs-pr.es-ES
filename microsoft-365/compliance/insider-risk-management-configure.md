@@ -1,7 +1,7 @@
 ---
 title: Introducción a la administración de riesgos internos
 description: Configure la administración de riesgos internos en su organización.
-keywords: Microsoft 365, administración de riesgos internos, administración de riesgos, cumplimiento
+keywords: Microsoft 365, Microsoft Purview, riesgo interno, administración de riesgos, cumplimiento
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -16,21 +16,23 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: ca858aaf10c453a3fa333288fd5e44c62d20cb08
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 3a72f5399ac295dac199c816fc68fbec74a7fe23
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783917"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217550"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introducción a la administración de riesgos internos
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use directivas de administración de riesgos internos para identificar las actividades de riesgo y las herramientas de administración para actuar sobre alertas de riesgo en su organización. Complete los pasos siguientes para configurar los requisitos previos y configurar una directiva de administración de riesgos internos.
 
 > [!IMPORTANT]
-> La solución de administración de riesgos internos Microsoft 365 proporciona una opción de nivel de inquilino para ayudar a los clientes a facilitar la gobernanza interna en el nivel de usuario. Los administradores de nivel de inquilino pueden configurar permisos para proporcionar acceso a esta solución a los miembros de la organización y configurar conectores de datos en el Centro de cumplimiento de Microsoft 365 para importar datos pertinentes para admitir la identificación a nivel de usuario de actividad potencialmente arriesgada. Los clientes reconocen que el administrador puede calcular información relacionada con el comportamiento, el carácter o el rendimiento del usuario individual relacionada materialmente con el empleo y ponerla a disposición de otros usuarios de la organización. Además, los clientes reconocen que deben llevar a cabo su propia investigación completa relacionada con el comportamiento, el carácter o el rendimiento del usuario individual materialmente relacionados con el empleo, y no solo confiar en información del servicio de administración de riesgos internos. Los clientes son los únicos responsables de usar el Microsoft 365 servicio de administración de riesgos internos y cualquier característica o servicio asociado de conformidad con todas las leyes aplicables, incluidas las leyes relacionadas con la identificación individual del usuario y las acciones correctivas.
+> La solución de administración de riesgos internos proporciona una opción de nivel de inquilino para ayudar a los clientes a facilitar la gobernanza interna en el nivel de usuario. Los administradores de nivel de inquilino pueden configurar permisos para proporcionar acceso a esta solución a los miembros de su organización y configurar conectores de datos en el portal de cumplimiento de Microsoft Purview para importar datos pertinentes para admitir la identificación de nivel de usuario de actividad potencialmente arriesgada. Los clientes reconocen que el administrador puede calcular información relacionada con el comportamiento, el carácter o el rendimiento del usuario individual relacionada materialmente con el empleo y ponerla a disposición de otros usuarios de la organización. Además, los clientes reconocen que deben llevar a cabo su propia investigación completa relacionada con el comportamiento, el carácter o el rendimiento del usuario individual materialmente relacionados con el empleo, y no solo confiar en información del servicio de administración de riesgos internos. Los clientes son los únicos responsables de usar el servicio de administración de riesgos internos y cualquier característica o servicio asociado de conformidad con todas las leyes aplicables, incluidas las leyes relacionadas con la identificación individual del usuario y las acciones de corrección.
 
-Para obtener más información sobre cómo las directivas de riesgo internos pueden ayudarle a administrar los riesgos en su organización, consulte [Administración de riesgos internos en Microsoft 365](insider-risk-management.md).
+Para obtener más información sobre cómo las directivas de riesgo internos pueden ayudarle a administrar los riesgos en su organización, consulte [Información sobre la administración de riesgos](insider-risk-management.md) internos.
 
 ## <a name="subscriptions-and-licensing"></a>Suscripciones y licencias
 
@@ -77,12 +79,12 @@ Seleccione una recomendación de la lista para empezar a configurar la administr
 > [!IMPORTANT]
 > Después de configurar los grupos de roles, los permisos del grupo de roles pueden tardar hasta 30 minutos en aplicarse a los usuarios asignados en toda la organización.
 
-Hay seis grupos de roles que se usan para configurar las características de administración de riesgos internos. Para que **la administración de riesgos de Insider** esté disponible como opción de menú en Centro de cumplimiento de Microsoft 365 y para continuar con estos pasos de configuración, debe estar asignado a uno de los siguientes roles o grupos de roles:
+Hay seis grupos de roles que se usan para configurar las características de administración de riesgos internos. Para que **la administración de riesgos de Insider** esté disponible como una opción de menú en el portal de cumplimiento de Microsoft Purview y para continuar con estos pasos de configuración, debe estar asignado a uno de los siguientes roles o grupos de roles:
 
 - Azure Active Directory rol [*de administrador global*](/azure/active-directory/roles/permissions-reference#global-administrator)
 - rol [*de administrador de cumplimiento de*](/azure/active-directory/roles/permissions-reference#compliance-administrator) Azure Active Directory
-- Centro de cumplimiento de Microsoft 365 grupo [*de roles de administración de la organización*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
-- Centro de cumplimiento de Microsoft 365 grupo [*de roles administrador de cumplimiento*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+- Grupo de roles [*de administración de organización*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) del portal de cumplimiento de Microsoft Purview
+- Grupo de roles [*de administrador de cumplimiento*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) del portal de cumplimiento de Microsoft Purview
 - *Grupo de roles de Administración de riesgos* internos
 - *Grupo de roles de administrador de Administración de riesgos internos*
 
@@ -107,8 +109,8 @@ Los miembros de los siguientes roles pueden asignar usuarios a grupos de roles d
 
 - *administrador global* de Azure Active Directory
 - *Administrador de cumplimiento de* Azure Active Directory
-- administración de la *organización* Centro de cumplimiento de Microsoft 365
-- *Administrador de cumplimiento de* Centro de cumplimiento de Microsoft 365
+- Portal de cumplimiento de Microsoft Purview *Administración de la organización*
+- *Administrador de cumplimiento del portal de cumplimiento de* Microsoft Purview
 
 > [!NOTE]
 > Estos grupos de roles no se admiten actualmente en Privileged Identity Management (PIM). Para más información sobre PIM, consulte [Asignación de roles Azure AD en Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
@@ -117,7 +119,7 @@ Los miembros de los siguientes roles pueden asignar usuarios a grupos de roles d
 
 Complete los pasos siguientes para agregar usuarios a un grupo de roles de administración de riesgos internos:
 
-1. Inicie sesión en [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de la organización Microsoft 365.
+1. Inicie sesión en el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en su organización de Microsoft 365.
 
 2. En el Centro de cumplimiento de seguridad &amp; , vaya a **Permisos**. Seleccione el vínculo para ver y administrar roles en Office 365.
 
@@ -147,7 +149,7 @@ Para habilitar análisis de riesgos internos, debe ser miembro del grupo de role
 
 Complete los pasos siguientes para habilitar el análisis de riesgos internos:
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de riesgos internos**.
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider**.
 2. Seleccione **Ejecutar examen** en la tarjeta **Buscar riesgos internos en** la tarjeta de la organización en la pestaña **Información general sobre** la administración de riesgos internos. Esta acción activa el análisis de la organización. También puede activar el examen en su organización; para ello, vaya a Configuración  >  de **riesgo de InsiderAnalytics** y habilite Examinar la **actividad de usuario del inquilino para identificar posibles riesgos** internos.
 3. En el panel **Detalles de Analytics** , seleccione **Ejecutar examen para iniciar el examen de su organización**. Los resultados del análisis pueden tardar hasta 48 horas antes de que la información esté disponible como informes para su revisión.
 
@@ -235,7 +237,7 @@ Consulte el artículo [Configuración de características avanzadas en Defender 
 
 Antes de configurar una directiva, defina los siguientes valores de riesgo internos:
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya a **Administración de riesgos** internos y seleccione **Configuración de riesgos** internos en la esquina superior derecha de cualquier página.
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione **Configuración de riesgos** internos en la esquina superior derecha de cualquier página.
 2. En la página **Privacidad** , seleccione una configuración de privacidad para mostrar los nombres de usuario de las alertas de directiva.
 3. En la página **Indicadores** , seleccione los indicadores de alerta que desea aplicar a todas las directivas de riesgo internos.
 
@@ -260,7 +262,7 @@ Antes de configurar una directiva, defina los siguientes valores de riesgo inter
 
 Las directivas de administración de riesgos internos incluyen usuarios asignados y definen los tipos de indicadores de riesgo que se configuran para las alertas. Para que las actividades puedan desencadenar alertas, es necesario configurar una directiva. Use el asistente para directivas para crear nuevas directivas de administración de riesgos internos.
 
-1. En [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com), vaya **Administración de riesgos internos** y seleccione la pestaña **Directivas**.
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com), vaya a **Administración de riesgos de Insider** y seleccione la pestaña **Directivas** .
 2. Seleccione **Crear directiva** para abrir el asistente de directivas.
 3. En la página **Plantilla de directiva**, elija una categoría de directiva y luego seleccione la plantilla para la nueva directiva. Estas plantillas están compuestas por condiciones y señales que definen las actividades de riesgo que desea detectar e investigar. Revise los requisitos previos de la plantilla, los eventos desencadenantes y las actividades detectadas para confirmar que esta plantilla de directiva se ajusta a sus necesidades.
 
@@ -277,16 +279,17 @@ Las directivas de administración de riesgos internos incluyen usuarios asignado
 8. Seleccione **Siguiente** para continuar.
 9. En la página **Contenido a priorizar**, puede asignar (si es necesario) las fuentes a priorizar, lo que aumenta la posibilidad de generar una alerta de alta gravedad para estas fuentes. Seleccione una de las siguientes opciones:
 
-    - **Deseo especificar sitios de SharePoint, etiquetas de confidencialidad, y/o tipos de información confidencial como contenido prioritario**. Al seleccionar esta opción se habilitarán las páginas de detalles del asistente para configurar estos canales.
+    - **Quiero especificar sitios SharePoint, etiquetas de confidencialidad, tipos de información confidencial o extensiones de archivo como contenido prioritario**. Al seleccionar esta opción se habilitarán las páginas de detalles del asistente para configurar estos canales.
     - **No deseo especificar el contenido prioritario en este momento (podrá hacerlo una vez que se haya creado la directiva)**. Al seleccionar esta opción, se omitirán las páginas de detalles del canal en el asistente.
 
 10. Seleccione **Siguiente** para continuar.
 
-11. Si ha seleccionado **I want to specify SharePoint sites, sensitivity labels, and/or sensitive information types as priority content** in the previous step, you'll see the detail pages for *SharePoint sites*, *Sensitive info types*, and *Sensitivity labels*. Use estas páginas detalladas para definir el SharePoint, los tipos de información confidencial y las etiquetas de confidencialidad para priorizar en la directiva.
+11. Si ha seleccionado **I want to specify SharePoint sites, sensitivity labels, sensitive information types and/or file extensions as priority content** in the previous step, you'll see the detail pages for *SharePoint sites*, *sensitive info types*, *sensitivity labels* and *file extensions*. Use estas páginas de detalles para definir el SharePoint, los tipos de información confidencial, las etiquetas de confidencialidad y las extensiones de archivo para priorizar en la directiva.
 
     - **Sitios de SharePoint**: seleccione **Agregar sitio de SharePoint** y seleccione los sitios de SharePoint a los que tiene acceso y desea priorizar. Por ejemplo, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Tipo de información confidencial**: seleccione **Agregar tipo de información confidencial** y seleccione los tipos de confidencialidad que desea priorizar. Por ejemplo, *"Número de cuenta bancaria de EE. UU."* y *"Número de tarjeta de crédito"*.
     - **Etiquetas de confidencialidad**: seleccione **Agregar etiquetas de confidencialidad** y seleccionar las etiquetas que desea priorizar. Por ejemplo, *"Confidencial"* y *"Secreto"*.
+    - Extensiones de archivo: agregue hasta 50 extensiones de archivo. Puede incluir u omitir '.' con la extensión de archivo. Por ejemplo, *.py* o *py* daría prioridad a los archivos de Python.
 
     > [!NOTE]
     > Los usuarios que configuran la directiva y seleccionan sitios de Share Point prioritarios pueden seleccionar SharePoint sitios a los que tienen permiso de acceso. Si SharePoint sitios no están disponibles para su selección en la directiva por el usuario actual, otro usuario con los permisos necesarios puede seleccionar los sitios para la directiva más adelante o el usuario actual debe tener acceso a los sitios necesarios.
@@ -302,7 +305,7 @@ Las directivas de administración de riesgos internos incluyen usuarios asignado
 14. Seleccione **Siguiente** para continuar.
 15. Si ha seleccionado las plantillas *General data leaks* or *Data leaks by priority users (Pérdidas de datos generales o pérdidas de datos por parte de usuarios prioritarios* ) y ha seleccionado **el usuario realiza una actividad de filtración e indicadores asociados**, puede elegir umbrales personalizados o predeterminados para el indicador que desencadena los eventos que ha seleccionado. Elija **Usar umbrales predeterminados (recomendados)** o **Usar umbrales personalizados para los eventos desencadenantes**.
 16. Seleccione **Siguiente** para continuar.
-17. Si ha seleccionado **Usar umbrales personalizados para los eventos desencadenantes**, para cada indicador de evento desencadenante que haya seleccionado en el paso 13, elija el nivel adecuado para generar el nivel deseado de alertas de actividad.
+17. Si ha seleccionado **Usar umbrales personalizados para los eventos desencadenantes**, para cada indicador de evento desencadenante que haya seleccionado en el paso 13, elija el nivel adecuado para generar el nivel deseado de alertas de actividad. Puede usar los umbrales recomendados, umbrales personalizados o umbrales basados en actividades anómalas (para determinados indicadores) por encima de la norma diaria para los usuarios.
 18. Seleccione **Siguiente** para continuar.
 19. En la página **Indicadores** de directiva, verá los [indicadores](insider-risk-management-settings.md#indicators) que ha definido como disponibles en la página **Configuración de** >  riesgos **internosIndicators**. Seleccione los indicadores que desea aplicar a la directiva.
 
