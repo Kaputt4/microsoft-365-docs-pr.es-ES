@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear directivas de retención de etiquetado automático para que se puedan aplicar etiquetas automáticamente y, así, conservar lo que se necesite y eliminar lo que no
-ms.openlocfilehash: 2c1ea20f9b663ca8cee59043bbe6399f5bae66f1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1895669c20d06bdae13ed2d25183dff92862d44f
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "65145293"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188864"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido
 
@@ -279,7 +279,7 @@ Al elegir la opción de un clasificador que se puede entrenar, puede seleccionar
 > [!CAUTION]
 > Estamos desaprobando el clasificador **de lenguaje ofensivo** entrenado previamente porque ha estado produciendo un gran número de falsos positivos. No use este clasificador y, si lo usa actualmente, le recomendamos que desactive los procesos empresariales y, en su lugar, use los clasificadores preentrenados **de acoso dirigido**, **blasfemias** y **amenazas**.
 
-Para aplicar una etiqueta automáticamente usando esta opción, los buzones y sitios de SharePoint deben tener al menos 10 MB de datos.
+Para aplicar una etiqueta automáticamente usando esta opción, tanto los buzones como los sitios de SharePoint deben tener al menos 10 MB de datos.
 
 Para más información sobre los clasificadores que se pueden entrenar, consulte [Información sobre los clasificadores que se pueden entrenar (versión preliminar)](classifier-learn-about.md).
 

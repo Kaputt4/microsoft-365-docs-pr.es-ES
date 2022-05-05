@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga más información sobre la prueba de soluciones de Microsoft Purview y sobre cómo registrarse.
-ms.openlocfilehash: ed7848a12483062c2873f4735ecb2188cad373a1
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 653c80e7c8b412ac1d9c14a021519ca80baab6e9
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023687"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188842"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>Acerca de la prueba de soluciones de Microsoft Purview
 
@@ -31,7 +31,7 @@ La prueba de soluciones de Microsoft Purview es la manera más sencilla de proba
 
 ## <a name="terms-and-conditions"></a>Términos y condiciones
 
-Consulte los [términos y condiciones](terms-conditions.md) para obtener pruebas gratuitas de Microsoft Purview.
+Consulte los [términos y condiciones](/legal/microsoft-365/microsoft-365-trial) de las pruebas gratuitas de Microsoft 365.
 
 ## <a name="eligibility"></a>Requisitos de idoneidad
 
