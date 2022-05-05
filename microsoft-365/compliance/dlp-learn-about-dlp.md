@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo proteger su información confidencial mediante las directivas y herramientas de prevención de pérdida de datos de Microsoft Purview y realice un recorrido por el ciclo de vida de DLP.
-ms.openlocfilehash: 755593830b489b268c81e722bd35a5984f2d1d93
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: aa32eba1111f4a119652ba88b59062581bb6cc4b
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953413"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231799"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Obtenga más información acerca de la prevención contra la pérdida de datos
 
@@ -183,7 +183,7 @@ Después de que la directiva se sincroniza en las ubicaciones adecuadas, empieza
 
 ## <a name="viewing-policy-application-results"></a>Visualización de los resultados de la aplicación de directiva
 
-DLP informa a Microsoft Purview de una gran cantidad de información sobre la supervisión, las coincidencias de directivas y las acciones, y las actividades del usuario. Tendrá que consumir y actuar sobre esa información para ajustar las directivas y evaluar las acciones realizadas en elementos confidenciales. La telemetría entra primero en los [registros de auditoría del portal de cumplimiento de Microsoft Purview](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) , se procesa y se dirige a diferentes herramientas de informes. Cada herramienta de generación de informes tiene un propósito diferente.
+DLP informa a Microsoft Purview de una gran cantidad de información sobre la supervisión, las coincidencias de directivas y las acciones, y las actividades del usuario. Tendrá que consumir y actuar sobre esa información para ajustar las directivas y evaluar las acciones realizadas en elementos confidenciales. La telemetría entra primero en los [registros de auditoría del portal de cumplimiento de Microsoft Purview](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal) , se procesa y se dirige a diferentes herramientas de informes. Cada herramienta de generación de informes tiene un propósito diferente.
 
 ### <a name="dlp-alerts-dashboard"></a>Panel de alertas DLP
 
@@ -217,7 +217,7 @@ Para obtener más información sobre DLP de Microsoft Purview, consulte:
 
 - [Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)
 - [Obtenga información sobre la directiva de prevención de pérdida de datos predeterminada en Microsoft Teams (versión preliminar)](dlp-teams-default-policy.md)
-- [Más información sobre el analizador local de prevención de pérdida de datos](dlp-on-premises-scanner-learn.md)
+- [Más información sobre el escáner local de prevención de pérdida de datos](dlp-on-premises-scanner-learn.md)
 - [Obtenga información sobre el Centro de cumplimiento de Microsoft](dlp-chrome-learn-about.md)
 - [Obtenga información sobre el panel de alertas de prevención de pérdida de datos](dlp-alerts-dashboard-learn.md)
 

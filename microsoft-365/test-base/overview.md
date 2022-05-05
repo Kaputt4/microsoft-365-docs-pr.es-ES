@@ -14,55 +14,50 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 8d7539dfeecf1e34a639bc506f312c35a4243323
-ms.sourcegitcommit: a9266e4e7470e8c1e8afd31fef8d266f7849d781
+ms.openlocfilehash: 13eaea1e62dd030f86e08d885ad743d673d6142c
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63405929"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231701"
 ---
 # <a name="what-is-test-base-for-microsoft-365"></a>¿Qué es Test Base para Microsoft 365?
 
-Test Base for Microsoft 365 (Test Base) es el servicio de validación de Microsoft basado en el entorno seguro de Azure.
-Con Test Base, los proveedores de software (SVs) y los integradores de sistemas (SIs) pueden acelerar la validación de sus aplicaciones frente a las compilaciones de características y seguridad Windows versión anterior. Se trata de una colaboración muy comprometida entre socios SV y Microsoft que permite pruebas conjuntas, validación y corrección.
+Test Base es un servicio de Azure que permite realizar pruebas de aplicaciones controladas por datos al tiempo que proporciona a los usuarios acceso a pruebas inteligentes desde cualquier lugar del mundo.
 
-Test Base ofrece una gran oportunidad para crear y mantener un servicio de validación seguro en Azure, donde los clientes y partners pueden realizar pruebas y fases de las cargas de trabajo de su aplicación con nuestras actualizaciones de seguridad publicadas previamente.
+Se recomienda que las siguientes entidades incorporen sus aplicaciones, archivos binarios y scripts de prueba a la base de pruebas para Microsoft 365 servicio: proveedores de software independientes (ISV), integradores de sistemas (SIs) para validar sus aplicaciones y profesionales de TI que quieran validar sus aplicaciones de línea de negocio (LOB) mediante la integración con Microsoft Intune.
 
-Con Test Base, se proporciona a los SV más visibilidad de posibles problemas que podrían impedir que sus aplicaciones realicen su mejor rendimiento en la nueva versión del sistema operativo antes de que Microsoft libere la actualización al mercado.
+## <a name="why-test-your-application-with-test-base"></a>¿Por qué probar la aplicación con Test Base?
 
-Este nuevo servicio ayudará a los SV a hacer más sencillos y eficientes los esfuerzos de prueba. Enterprise clientes se beneficiarán de las pruebas de SV y Microsoft juntos en un entorno de colaboración y obtendrán más confianza en que sus aplicaciones funcionarán según lo esperado.
+La base de pruebas para Microsoft 365 servicio puede adaptarse a la expansión de la matriz de pruebas según sea necesario, por lo que tendrá confianza en la integridad, compatibilidad y facilidad de uso de las aplicaciones.
 
-**Ventajas La base de pruebas ofrece a las empresas y sus socios sv:**
+Test Base permite que la aplicación siga funcionando según lo esperado, incluso cuando las dependencias de la plataforma varían y el servicio de actualización de Windows aplica nuevas actualizaciones. Con Test Base, puede evitar el agravamiento, los compromisos de tiempo prolongados y los gastos de configuración y mantenimiento de un entorno de laboratorio complejo para probar las aplicaciones.
 
-- Implementación más rápida de actualizaciones de seguridad para proteger los dispositivos;
-- Se han reducido los costos de validación de actualización hospedando los cambios del sistema operativo y la aplicación en el mismo entorno;
-- Informe de inteligencia de clase mundial de Microsoft sobre sus aplicaciones (cobertura de código, análisis de impacto de api, entre otros);
-- Experiencia de Microsoft en el cambio de contenido de prueba y aprovechamientos a Azure.
+Además, puede probar automáticamente la compatibilidad con las actualizaciones de seguridad y características para Windows mediante máquinas virtuales seguras (VM) y, al mismo tiempo, obtener acceso a inteligencia de primer nivel para probar las aplicaciones. También puede probar la compatibilidad de las aplicaciones con las actualizaciones de seguridad de Windows de versión preliminar mediante el envío de una solicitud para obtener el acceso.
 
-## <a name="guide-to-navigating-the-test-base-portal"></a>Guía para navegar por el portal base de pruebas
+## <a name="how-does-test-base-work"></a>¿Cómo funciona Test Base?
 
-Esta guía se divide en cuatro (4) partes para garantizar una experiencia libre de enganches al usar nuestro servicio:
+Para registrarse en el servicio Base de pruebas, consulte [Creación de una nueva cuenta de Base de prueba](createAccount.md).
 
-1. Información **general** que proporciona instrucciones detalladas y paso a paso sobre cómo cargar la aplicación a través de nuestro portal de incorporación de autoservicio.
+Una vez que un cliente se ha inscrito en el servicio Base de pruebas, es muy sencillo empezar a cargar paquetes de aplicación para realizar pruebas.
 
-2. La **sección Inicios rápidos** , que proporciona información sobre el formato de la estructura de carpetas comprimida y lo que necesita saber al preparar los scripts de prueba.
+Después de una carga correcta, los paquetes se prueban con Windows actualizaciones de versión preliminar.
 
-3. Guía **de procedimientos que proporciona** un esquema detallado sobre cómo usar La base de pruebas para deducir los resultados de la prueba.
+Una vez completadas correctamente las pruebas iniciales, el cliente puede profundizar con información sobre el rendimiento y el análisis de regresión para detectar si las actualizaciones de contenido de versión preliminar han degradado el rendimiento de las aplicaciones de alguna manera.
 
-4. La **sección** Referencia que proporciona respuestas a las preguntas típicas que recibimos de nuestros clientes.
+Sin embargo, si el paquete no pudo realizar ninguna prueba, el cliente también puede aprovechar Ideas de regresiones de memoria o CPU para corregir el error y, a continuación, actualizar el paquete según sea necesario.
 
-## <a name="test-base-has-reached-general-availability"></a>Base de pruebas ha alcanzado la disponibilidad general
+Con Test Base, el cliente puede usar una única ubicación para administrar todos los paquetes que se prueban, lo que también puede facilitar la carga y actualización de paquetes para generar nuevas versiones de la aplicación según sea necesario.
 
-Test Base se ha declarado oficialmente disponibilidad general durante la conferencia de Microsoft Ignite en noviembre de 2021. 
+> [!NOTE]
+> **Para que los clientes puedan aprovechar el contenido de actualización de versión preliminar, deben solicitar específicamente acceso a él. Una vez aprobada la solicitud de acceso a las actualizaciones de versión preliminar, los paquetes cargados se programarán automáticamente para que se prueben con la versión preliminar Windows actualizaciones de las versiones del sistema operativo seleccionadas durante la incorporación**.
 
-Esto significa que cualquier persona con una cuenta de Azure empresarial válida puede incorporar su garantía de prueba y empezar a probar rápidamente sus aplicaciones en el servicio.
+A continuación, a medida que están disponibles nuevas Windows actualizaciones de versión preliminar, los paquetes de aplicación se prueban automáticamente con nuevo contenido de versión preliminar. A partir de entonces, puede ser necesaria una ronda adicional de información. Si los clientes no solicitan acceso específicamente, los paquetes de aplicación se probarán solo con la versión publicada actual de Windows.
 
-## <a name="who-should-onboard"></a>Quién Debe incorporarse?
+Una vez que los paquetes se prueban correctamente, los clientes pueden entregarlos a sus clientes de software y a los usuarios finales con confianza y la garantía de que Test Base hizo su trabajo.
 
-Estamos animando a todos los proveedores de software (SVs), integradores de sistemas (SIs) a incorporar sus aplicaciones, archivos binarios y scripts de prueba en el servicio.
+## <a name="next-steps"></a>Siguientes pasos
 
-## <a name="next-steps"></a>Pasos siguientes
-
-Siga el vínculo para empezar
+Siga el vínculo para empezar.
 > [!div class="nextstepaction"]
-> [Paso siguiente](createaccount.md)
+> [Creación de una nueva cuenta base de prueba | Microsoft Docs](createaccount.md)

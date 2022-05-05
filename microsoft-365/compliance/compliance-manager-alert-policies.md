@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo crear alertas para actividades en el Administrador de cumplimiento de Microsoft Purview que pueden afectar a la puntuación de cumplimiento.
-ms.openlocfilehash: b1e5630e20ace4835f8651d1878e731e423f58b1
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 32ab22f47d35d64fa72dcc4898f5fff06d20c13c
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129164"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231745"
 ---
 # <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Alertas y directivas de alertas del Administrador de cumplimiento de Microsoft Purview
 
@@ -36,8 +36,7 @@ El Administrador de cumplimiento puede alertarle de los cambios en cuanto se pro
 
 Para crear alertas, primero configure una directiva de alertas para describir las condiciones que desencadenan una alerta y la frecuencia de las notificaciones. Cuando detectemos una coincidencia con las condiciones de la directiva, recibirá una notificación por correo electrónico con detalles para que pueda determinar si quiere investigar o realizar más acciones.
 
-
-Todas las alertas se muestran en la pestaña **Alertas** del Administrador de cumplimiento y todas las directivas de alertas se muestran en la **pestaña Directivas de alerta**.
+Todas las alertas se muestran en la pestaña **Alertas** del Administrador de cumplimiento y todas las directivas de alertas se muestran en la **pestaña Directivas de alerta**.  Todas las organizaciones ya tienen configurada una [directiva de cambio de puntuación predeterminada](#default-score-change-policy) .
 
 ## <a name="understanding-the-alerts-and-alert-policies-pages"></a>Descripción de las páginas alertas y directivas de alertas
 
@@ -95,6 +94,28 @@ Puede crear directivas para alertarle cuando se produzcan determinados cambios o
 - **Cambio de estado de implementación**: un usuario ha cambiado el estado de implementación de una acción de mejora.
 - **Cambio de estado de prueba**: un usuario ha cambiado el estado de prueba de una acción de mejora.
 - **Cambio de evidencia**: un usuario ha cargado o eliminado un documento de evidencia en la pestaña **Documentos** de la acción de mejora.
+
+#### <a name="default-score-change-policy"></a>Directiva de cambio de puntuación predeterminada
+
+El Administrador de cumplimiento configura una directiva de alertas predeterminada para supervisar los cambios de puntuación en las acciones de mejora. La directiva predeterminada generará una alerta cuando cambie la puntuación de una acción de mejora. La mayoría de la configuración de la directiva predeterminada no se puede editar, pero puede agregar destinatarios adicionales para las notificaciones.
+
+Esta es la configuración de la directiva predeterminada:
+
+- Todas las coincidencias que se detecten en un intervalo de 60 minutos se agruparán en una sola alerta para reducir las notificaciones excesivas. Por ejemplo, si cinco acciones de mejora experimentan un cambio de puntuación en una hora, se generará una alerta.
+
+- El nivel de gravedad de estas alertas es **medio**.
+
+- El administrador global de su organización es el destinatario predeterminado de las notificaciones de alerta.
+
+- Puede agregar más destinatarios de alertas siguiendo estos pasos:
+    - En la página **Directivas de alerta** , busque la **directiva de alertas predeterminada del Administrador de cumplimiento**.
+    - Active la casilla situada a la izquierda de su nombre y seleccione el botón **Editar** situado cerca de la parte superior, encima de los filtros.
+    - Seleccione el botón **Siguiente** hasta que llegue a la página **Destinatarios** de alertas.
+    - Seleccione **+Seleccionar destinatarios** y active las casillas situadas junto a cada nombre de usuario del panel flotante al que desea recibir la notificación por correo electrónico. Cuando haya terminado, seleccione **Agregar destinatario** y, a continuación, **seleccione Siguiente**.
+    - En la página **Revisar y finalizar** , seleccione **Actualizar** para guardar los cambios.
+
+- La directiva predeterminada no se puede eliminar, pero puede deshabilitarla [siguiendo los pasos descritos a continuación](#activate-or-inactivate-a-policy).
+
 
 ### <a name="policy-creation-steps"></a>Pasos de creación de directivas
 

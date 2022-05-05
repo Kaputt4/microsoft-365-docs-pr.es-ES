@@ -1,5 +1,5 @@
 ---
-title: Registro de actividad del portal de mensajes cifrado
+title: Registro de actividades del portal de mensajes cifrados
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -9,23 +9,23 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 04/21/2022
+ms.date: 05/04/2022
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: Los registros de acceso están disponibles para los mensajes cifrados recuperados a través del portal de mensajes cifrados.
-ms.openlocfilehash: 0eb7225401b0e33a43d0ee535aba13539d1c020d
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 778d4a72c505f9a5be453b740a2fab13d2674249
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131461"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231680"
 ---
 # <a name="encrypted-message-portal-activity-log-preview"></a>Registro de actividad del portal de mensajes cifrado (versión preliminar)
 
-Los registros de acceso están disponibles para los mensajes cifrados a través del portal de mensajes cifrados que permite a su organización determinar cuándo leen y reenvía los mensajes los destinatarios externos. Para asegurarse de que los registros están disponibles para los destinatarios externos, debe aplicar una plantilla de personalización de marca personalizada a los correos electrónicos protegidos enviados por su organización a destinatarios externos que exijan una experiencia de portal. Consulte [Incorporación de la marca de su organización a los mensajes cifrados](add-your-organization-brand-to-encrypted-messages.md).
+Los registros de acceso están disponibles para los mensajes encriptados a través del portal de mensajes encriptados que permite a su organización determinar cuándo los mensajes son leídos, y reenviados por sus destinatarios externos. Para asegurarse de que los registros están disponibles para los destinatarios externos, debe aplicar una plantilla de personalización de marca personalizada a los correos electrónicos protegidos enviados por su organización a destinatarios externos que exijan una experiencia de portal. Consulte [Incorporación de la marca de su organización a los mensajes cifrados](add-your-organization-brand-to-encrypted-messages.md).
 
 ## <a name="enabling-message-access-audit-logs-in-powershell"></a>Habilitación de registros de auditoría de acceso a mensajes en PowerShell
 
@@ -46,6 +46,8 @@ El registro de acceso contiene entradas para los mensajes enviados a través del
 - El usuario externo lee mensajes o datos adjuntos
 - Descarga de datos adjuntos
 - respuestas de correo y reenvío
+
+Para obtener más información sobre el esquema de registro de acceso a mensajes, vea [Buscar en el registro de auditoría en el portal de cumplimiento](search-the-audit-log-in-security-and-compliance.md#encrypted-message-portal-activities).
 
 ## <a name="search-for-events-in-the-message-access-logs"></a>Búsqueda de eventos en los registros de acceso a mensajes
 
