@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Utilice la herramienta de búsqueda de contenido de eDiscovery en el centro de cumplimiento de Microsoft para buscar contenido en diferentes servicios de Microsoft 365.
-ms.openlocfilehash: 418bdffd71e83aea548c21589c6b8c08ae2419e8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 90b1ce142b5d629be86ba058071af906485e765f
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097104"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231727"
 ---
 # <a name="create-a-content-search"></a>Crear una búsqueda de contenido
 
@@ -50,7 +50,9 @@ Después de ejecutar una búsqueda, se mostrará el número de ubicaciones de co
 
 - Para acceder a la página de herramienta de Búsqueda de contenido en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento</a> (para ejecutar búsquedas y obtener una vista previa de los resultados y exportar resultados), un administrador, responsable de cumplimiento o supervisor de eDiscovery debe ser miembro del grupo de roles Supervisor de eDiscovery en el portal de cumplimiento. Para más información, vea [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
 
-- En una implementación de Exchange híbrida, no puede usar la herramienta de búsqueda de contenido para buscar buzones locales. Solo puede usar la herramienta para buscar buzones basados en la nube.
+- En una implementación de Exchange híbrida, no puede usar la herramienta de búsqueda de contenido para buscar correos en buzones locales. Solo puede usar la herramienta para buscar buzones basados en la nube.
+
+- En una implementación híbrida de Exchange, puede buscar datos de chat de Teams en buzones locales. Para más información, vea [Datos de chat de Teams para usuarios locales](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users?view=o365-worldwide).
 
 ## <a name="create-and-run-a-search"></a>Crear y ejecutar una búsqueda
   

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9be1c581edb1b9564349ae8c3a659d226d6ef312
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 8418683577ffe3bf63fe7fe3bf4aff2ef55007f5
+ms.sourcegitcommit: c33af120921d3c4fb5c362dac3e74f0ab3d1e58d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173785"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65249639"
 ---
 # <a name="communication-compliance-policies"></a>Directivas de Cumplimiento de comunicaciones
 
@@ -35,7 +35,7 @@ ms.locfileid: "65173785"
 > [!IMPORTANT]
 > No se admite el uso de PowerShell para crear y administrar directivas de cumplimiento de comunicaciones. Para crear y administrar estas directivas, debe usar los controles de administración de directivas en la [solución de cumplimiento de comunicaciones](https://compliance.microsoft.com/supervisoryreview).
 
-Las directivas de cumplimiento de comunicaciones se crean para Microsoft 365 organizaciones en el portal de cumplimiento de Microsoft Purview. Las directivas de cumplimiento de comunicaciones definen qué comunicaciones y usuarios están sujetos a revisión en su organización, definen qué condiciones personalizadas deben cumplir las comunicaciones y especifican quién debe realizar revisiones. Los usuarios asignados al rol *administrador de cumplimiento de comunicaciones* pueden configurar directivas y cualquier persona que tenga asignado este rol puede acceder a la página **Cumplimiento de comunicaciones** y a la configuración global en el portal de cumplimiento de Microsoft Purview. Si es necesario, puede exportar el historial de modificaciones a una directiva a un archivo .csv (valores separados por comas) que también incluya el estado de las alertas pendientes de revisión, elementos escalados y elementos resueltos. No se puede cambiar el nombre de las directivas y se pueden eliminar cuando ya no se necesiten.
+Puede crear directivas de cumplimiento de comunicaciones para organizaciones de Microsoft 365 en el portal de cumplimiento de Microsoft Purview. Las directivas de cumplimiento de comunicaciones definen qué comunicaciones y usuarios están sujetos a revisión en su organización, definen qué condiciones personalizadas deben cumplir las comunicaciones y especifican quién debe realizar revisiones. Los usuarios asignados al rol *administrador de cumplimiento de comunicaciones* pueden configurar directivas y cualquier persona que tenga asignado este rol puede acceder a la página **Cumplimiento de comunicaciones** y a la configuración global en el portal de cumplimiento de Microsoft Purview. Si es necesario, puede exportar el historial de modificaciones a una directiva a un archivo .csv (valores separados por comas) que también incluya el estado de las alertas pendientes de revisión, elementos escalados y elementos resueltos. No se puede cambiar el nombre de las directivas y se pueden eliminar cuando ya no se necesiten.
 
 ## <a name="policy-templates"></a>Plantillas de directiva
 
@@ -166,11 +166,15 @@ Configure diccionarios de palabras clave personalizadas (o léxicos) para propor
 
 Los clasificadores integrados y globales examinan los mensajes enviados o recibidos en todos los canales de comunicación de la organización para detectar diferentes tipos de problemas de cumplimiento. Los clasificadores usan una combinación de inteligencia artificial y de palabras clave para identificar lenguaje en los mensajes que es probable que infrinja las directivas contra el acoso. Los clasificadores integrados admiten actualmente la identificación de palabras clave del mensaje en varios idiomas:
 
+- Árabe
 - Chino (simplificado)
+- Chino (tradicional)
+- Neerlandés
 - Inglés
 - Francés
 - Alemán
 - Italiano
+- Coreano
 - Japonés
 - Portugués
 - Español

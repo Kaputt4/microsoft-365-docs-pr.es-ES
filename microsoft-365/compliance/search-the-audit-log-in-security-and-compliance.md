@@ -21,14 +21,14 @@ description: Use el portal de cumplimiento de Microsoft Purview para buscar en e
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: e6754601aca5dda74ee59ed2c6c52b3f8b1eb2a3
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: b3ad71878f6d0c766cbcf5ba435bc61396f45ed6
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128508"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231780"
 ---
-# <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
+# <a name="search-the-audit-log-in-the-compliance-portal"></a>Búsqueda del registro de auditoría en el portal de cumplimiento
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -93,7 +93,6 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 
 - Usted debe tener asignado el rol de Registros de auditoría o Registros de auditoría de solo lectura en Exchange Online para buscar en el registro de auditoría. De forma predeterminada, estos roles se asignan a los grupos de roles de Administración de la organización y Administración de cumplimiento en la página de **permisos** del centro de administración de Exchange. Los administradores globales de Office 365 y Microsoft 365 se agregan automáticamente como miembros del grupo de roles de administración de la organización en Exchange Online. Para darle a un usuario la capacidad de buscar en el registro de auditoría con el mínimo nivel de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol de Registros de auditoría o Registros de auditoría de solo lectura y, después, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, consulte[Administrar grupos de roles en Exchange en línea](/Exchange/permissions-exo/role-groups).
 
-  > [!IMPORTANT]
   > Si asigna a un usuario el rol Registros de auditoría o Registros de auditoría de solo lectura en la página **Permisos** del portal de cumplimiento, no podrá buscar el registro de auditoría. Tiene que asignar los permisos en Exchange en línea. Esto se debe a que el cmdlet subyacente que se usa para buscar en el registro de auditoría es un cmdlet Exchange en línea.
 
 - Cuando un usuario o administrador realiza una actividad auditada, se genera un registro de auditoría y se almacena en el registro de auditoría de la organización. La cantidad de tiempo que se retiene un registro de auditoría (y que se puede buscar en el registro de auditoría) depende de la suscripción a Office 365 o Microsoft 365 Enterprise y, específicamente, del tipo de licencia que se ha asignado a usuarios específicos.
@@ -103,7 +102,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
     > [!NOTE]
     > Si su organización ha participado en el programa de vista previa privado para la retención de registros de auditoría de un año, la duración de la retención de los registros de auditoría que se generaron antes de la fecha de lanzamiento de disponibilidad general no se restablecerá.
 
-  - Para los usuarios que tengan asignadas otras licencias de Office 365 o Microsoft 365 (que no sean E5), los registros de auditoría se conservarán durante 90 días. Para obtener una lista de las suscripciones de Office 365 y Microsoft 365 que admiten el registro de auditoría unificado, consulte [la descripción del servicio del centro de seguridad y cumplimiento](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+  - Para los usuarios que tengan asignadas otras licencias de Office 365 o Microsoft 365 (que no sean E5), los registros de auditoría se conservarán durante 90 días. Para obtener una lista de las suscripciones de Office 365 y Microsoft 365 que admiten el registro de auditoría unificado, consulte la [descripción del servicio del portal de seguridad y cumplimiento](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
     > Incluso si la auditoría de buzón está activada de forma predeterminada, es posible que observe que los eventos de auditoría del buzón de algunos usuarios no se encuentran en búsquedas de registro de auditoría en el centro de cumplimiento o a través de la API de Actividad de administración de Office 365. Para más información, consulte [Más información sobre el registro de auditoría del buzón](enable-mailbox-auditing.md#more-information).
@@ -244,7 +243,7 @@ Puede exportar los resultados de una búsqueda de registro de auditoría a un ar
 
 #### <a name="more-information-about-exporting-and-viewing-audit-log-search-results"></a>Obtener más información sobre exportar y visualizar resultados de la búsqueda del registro de auditoría
 
-- Al descargar todos los resultados de la búsqueda, el archivo CSV contiene las columnas **CreationDate**, **UserIds**, **Operations** y **AuditData**. La columna **AuditData** contiene información adicional sobre cada evento (similar a la información detallada que se muestra en la página de control flotante al ver los resultados de la búsqueda en el centro de cumplimiento). Los datos en esta columna se componen de un objeto JSON que contiene varias propiedades del registro de auditoría. Cada *propiedad: valor* par del objeto JSON es separado por una coma. Puede usar la herramienta de transformación de JSON en el editor de Power Query en Excel para dividir la columna **AuditData** en columnas múltiples de forma que cada propiedad del objeto JSON tenga su propia columna. Esto le permitirá ordenar y filtrar en una o más de estas propiedades. Para obtener instrucciones paso a paso para usar el editor de Power Query para transformar el objeto JSON, consulte[exportar, configurar y ver los archivos de registros de auditoría](export-view-audit-log-records.md). 
+- Al descargar todos los resultados de la búsqueda, el archivo CSV contiene las columnas **CreationDate**, **UserIds**, **Operations** y **AuditData**. La columna **AuditData** contiene información adicional sobre cada evento (similar a la información detallada que se muestra en la página de control flotante al ver los resultados de la búsqueda en el portal de cumplimiento). Los datos en esta columna se componen de un objeto JSON que contiene varias propiedades del registro de auditoría. Cada *propiedad: valor* par del objeto JSON es separado por una coma. Puede usar la herramienta de transformación de JSON en el editor de Power Query en Excel para dividir la columna **AuditData** en columnas múltiples de forma que cada propiedad del objeto JSON tenga su propia columna. Esto le permitirá ordenar y filtrar en una o más de estas propiedades. Para obtener instrucciones paso a paso para usar el editor de Power Query para transformar el objeto JSON, consulte[exportar, configurar y ver los archivos de registros de auditoría](export-view-audit-log-records.md). 
 
   Después de que divida la columna **AuditData**, puede filtrar en la columna de **Operaciones** para mostrar las propiedades detalladas de un tipo de actividad específico.
 
@@ -254,7 +253,7 @@ Puede exportar los resultados de una búsqueda de registro de auditoría a un ar
 
 ## <a name="audited-activities"></a>Actividades auditadas
 
-Las tablas de esta sección describen las actividades que se auditan en Microsoft 365. Puede buscar estos eventos al buscar el registro de auditoría en el centro de seguridad y cumplimiento.
+Las tablas de esta sección describen las actividades que se auditan en Microsoft 365. Puede buscar estos eventos al buscar el registro de auditoría en el portal de seguridad y cumplimiento.
 
 En estas tablas se agrupan actividades relacionadas o las actividades de un servicio específico. La tabla incluye el nombre sencillo que se muestra en la lista desplegable de **Actividades** y el nombre de la operación correspondiente que aparece en la información detallada de una grabación de auditoría y en el archivo CSV cuando exporta los resultados de búsqueda. Para ver descripciones de la información detallada, consulte [ Propiedades detalladas del registro de auditoría](detailed-properties-in-the-office-365-audit-log.md)
 
@@ -401,6 +400,18 @@ Haga clic en uno de los vínculos siguientes para ir a una tabla en particular.
     :::column-end:::
     :::column:::
         [Actividades de administración de Exchange](#exchange-admin-audit-log)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Actividades del portal de mensajes cifrados](#encrypted-message-portal-activities)
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+    :::column:::
+        
     :::column-end:::
 :::row-end:::
 
@@ -769,7 +780,7 @@ En la siguiente tabla se enumeran las actividades relacionadas con los dominios 
 
 ### <a name="ediscovery-activities"></a>Actividades de eDiscovery
 
-Las actividades de búsqueda de contenido y relacionadas con la exhibición de documentos electrónicos que se llevan a cabo en el centro de seguridad y cumplimiento o mediante la ejecución de los cmdlets de PowerShell correspondientes se registran en el registro de auditoría. Esto incluye las siguientes actividades:
+Las actividades de búsqueda de contenido y relacionadas con la exhibición de documentos electrónicos que se llevan a cabo en el portal de seguridad y cumplimiento o mediante la ejecución de los cmdlets de PowerShell correspondientes se registran en el registro de auditoría. Esto incluye las siguientes actividades:
 
 - Crear y administrar casos de exhibición de documentos electrónicos
 
@@ -1145,7 +1156,7 @@ Como se ha explicado anteriormente, los registros de auditoría para las activid
 
 Sí. La API de Actividad de administración de Office 365 se usa para capturar los registros de auditoría mediante programación.  Para empezar, consulte [Empezar con el APÏ de Office 365 Management](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-**¿Hay otras formas de obtener registros de auditoría que no sean en el centro de seguridad y cumplimiento o con la API de Actividad de administración de Office 365?**
+**¿Hay otras formas de obtener registros de auditoría que no sean en el portal de seguridad y cumplimiento o con la API de Actividad de administración de Office 365?**
 
 No. Éstas son las dos únicas formas de obtener datos del servicio de auditoría.
 
