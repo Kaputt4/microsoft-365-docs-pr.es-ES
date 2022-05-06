@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Implemente funcionalidades de Administración del ciclo de vida de los datos de Microsoft Purview y Administración de registros de Microsoft Purview para controlar los datos según los requisitos normativos o de cumplimiento.
-ms.openlocfilehash: d79396b9489bc21f899eaa6ab1ef89b175831095
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 0b507fad6b4455755a3a0036bff15a7973b906ee
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973358"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217638"
 ---
 # <a name="govern-your-data-with-microsoft-purview"></a>Controlar los datos con Microsoft Purview
 
@@ -29,6 +29,9 @@ ms.locfileid: "64973358"
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Use las capacidades de **Administración del ciclo de vida de los datos de Microsoft Purview** (anteriormente, Microsoft Information Governance) y **Administración de registros de Microsoft Purview** para controlar los datos según los requisitos normativos o de cumplimiento.
+
+> [!TIP]
+> ¿Quiere asignar y administrar sus datos en todo el patrimonio de datos, incluidas varias nubes y software como servicio (SaaS)? Use [Microsoft Purview Mapa de datos, Microsoft Purview Catálogo de datos y Microsoft Purview Información de recursos en los datos](/azure/purview/overview).
 
 Desde el [punto de vista de las licencias](#licensing-requirements), puede haber una superposición considerable entre la administración del ciclo de vida de los datos y la administración de registros. Ambas soluciones admiten la retención y eliminación de datos para aplicaciones y servicios de Microsoft 365.
 
