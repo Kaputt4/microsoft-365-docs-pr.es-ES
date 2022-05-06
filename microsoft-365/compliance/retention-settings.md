@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: ab3adee8275f6c64dd7ad3b21547e8205b00ff7d
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: ddfa921c8dae22bbe091e2c0f66fc9ae42aeea41
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187786"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231811"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -73,7 +73,7 @@ Los nombres de atributo de los usuarios y grupos se basan en [propiedades de des
 Los atributos y propiedades enumerados en la tabla se pueden especificar fácilmente al configurar un ámbito adaptable mediante el generador de consultas simple. Los atributos y propiedades adicionales se admiten con el generador de consultas avanzado, como se describe en la sección siguiente.
 
 > [!TIP]
-> Para obtener información adicional sobre el uso del generador de consultas avanzado, consulte los siguientes seminarios web: 
+> Para obtener más información sobre el uso del generador de consultas avanzado, consulte los siguientes seminarios web: 
 > - [Compilar consultas avanzadas para usuarios y grupos con ámbitos de directiva adaptables](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
 > - [Compilar consultas avanzadas para sitios SharePoint con ámbitos de directiva adaptable](https://aka.ms/AdaptivePolicyScopes-AdvancedSharePoint)
 
@@ -90,7 +90,7 @@ Específicamente para los sitios de SharePoint, es posible que se necesite una c
     - Si usa la solución de administración de registros:
         - **Soluciones** > **Administración de registros** > **Pestaña Ámbitos adaptables** > + **Crear ámbito**
         
-    - Si utiliza la solución de administración del ciclo de vida de los datos:
+    - Si usa la solución de administración del ciclo de vida de los datos:
        - **Soluciones** > **Administración del ciclo de vida de los datos** > Pestaña **Ámbitos de aplicación adaptables**> + **Crear ámbito de aplicación**
     
     ¿No encuentra inmediatamente la solución en el panel de navegación? Primero, seleccione **Mostrar todo**. 
@@ -130,11 +130,11 @@ Específicamente para los sitios de SharePoint, es posible que se necesite una c
     - Para ámbitos de **sitios de SharePoint**, use Lenguaje de consulta de palabras clave (KQL). Es posible que ya esté familiarizado con el uso de KQL para búsquedas en SharePoint mediante propiedades de sitio indexadas. Para ayudarle a especificar estas consultas KQL, vea [Referencia de sintaxis del lenguaje de consulta de palabras clave (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
         
         Por ejemplo, dado que los ámbitos de los sitios de SharePoint incluyen todos los tipos de sitio de SharePoint de manera automática, que incluyen sitios de OneDrive y sitios conectados a grupos de Microsoft 365, puede usar la propiedad de sitio indexado **SiteTemplate** para incluir o excluir tipos de sitio específicos. Las plantillas que puede especificar:
-        - SITEPAGEPUBLISHING para sitios de comunicación modernos
-        - GROUP para sitios conectados a grupos de Microsoft 365
-        - TEAMCHANNEL para sitios de canal privado de Microsoft Teams
-        - STS para un sitio de grupo clásico de SharePoint
-        - SPSPERS para sitios de OneDrive
+        - `SITEPAGEPUBLISHING` para sitios de comunicación modernos
+        - `GROUP` para sitios conectados a grupos de Microsoft 365
+        - `TEAMCHANNEL` para sitios de canal privado de Microsoft Teams
+        - `STS` para un sitio de grupo clásico de SharePoint
+        - `SPSPERS` para sitios de OneDrive
         
         Por lo tanto, para crear un ámbito adaptable que incluya solo sitios de comunicación modernos y excluya sitios de OneDrive y conectados a grupos de Microsoft 365, especifique la siguiente consulta de KQL:
         ````console
@@ -175,19 +175,19 @@ Para ejecutar una consulta con PowerShell:
 
 1. [Conectarse a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) usando una cuenta con [permisos de administrador de Exchange Online adecuados](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet)
 
-2. Use [Get-Recipient](/powershell/module/exchange/get-recipient) o [Get-Mailbox](/powershell/module/exchange/get-mailbox) con el parámetro *-Filter* y la [consulta OPATH](/powershell/exchange/filter-properties) para el ámbito adaptable entre corchetes (`{`, `}`). Si los valores de atributo son cadenas, escríbalos entre comillas dobles o simples.  
+2. Use [Get-Recipient](/powershell/module/exchange/get-recipient), [Get-Mailbox](/powershell/module/exchange/get-mailbox) o [Get-User](/powershell/module/exchange/get-user) con el parámetro *-Filtro* y la [consulta OPATH](/powershell/exchange/filter-properties) para el ámbito adaptativo encerrado entre corchetes (`{`,`}`). Si los valores de atributo son cadenas, escríbalos entre comillas dobles o simples.
 
-    Puede determinar si desea usar `Get-Mailbox` o `Get-Recipient` para la validación mediante la identificación del cmdlet que admite la [propiedad OPATH](/powershell/exchange/filter-properties) que elija para su consulta.
+    Puede determinar si desea usar Get-Mailbox, Get-Recipient o Get-User para la validación mediante la identificación del cmdlet que admite la [propiedad OPATH](/powershell/exchange/filter-properties) que elija para su consulta.
 
     > [!IMPORTANT]
-    > `Get-Mailbox` no admite el tipo de destinatario *MailUser*, por lo que `Get-Recipient` debe usarse para validar consultas que incluyan buzones locales en un entorno híbrido.
+    > Get-Mailbox no admite el tipo de destinatario *MailUser*, por lo que se debe usar Get-Recipient o Get-User para validar consultas que incluyan buzones locales en un entorno híbrido.
 
-    Para validar un ámbito de **usuario**, use cualquiera de las dos opciones:
-    - `Get-Mailbox` con `-RecipientTypeDetails UserMailbox` o
-    - `Get-Recipient` con `-RecipientTypeDetails UserMailbox,MailUser`
+    Para validar un ámbito **Usuario**, use el comando adecuado:
+    - `Get-Mailbox` con *-RecipientTypeDetails UserMailbox,SharedMailbox,RoomMailbox,EquipmentMailbox*
+    - `Get-Recipient` con *-RecipientTypeDetails UserMailbox,MailUser,SharedMailbox,RoomMailbox,EquipmentMailbox*
     
     Para validar un ámbito de **grupo de Microsoft 365**, use:
-    - `Get-Mailbox` o `Get-Recipient` con `-RecipientTypeDetails GroupMailbox`
+    - `Get-Mailbox` con *-GroupMailbox* o `Get-Recipient` con *-RecipientTypeDetails GroupMailbox*
 
     Por ejemplo, para validar un ámbito de **usuario,** puede usar:
     
@@ -200,6 +200,11 @@ Para ejecutar una consulta con PowerShell:
     ```PowerShell
     Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Marketing"} -ResultSize Unlimited
     ```
+    
+    > [!TIP]
+    > Cuando se usan estos comandos para validar un ámbito de usuario, si el número de destinatarios devuelto es mayor de lo esperado, puede deberse a que incluye usuarios que no tienen una licencia válida para ámbitos adaptables. A estos usuarios no se les aplicará la configuración de retención.
+    > 
+    > Por ejemplo, en un entorno híbrido, es posible que tenga cuentas de usuario sincronizadas sin licencia sin un buzón de Exchange en el entorno local o en Exchange Online. Puede identificar a estos usuarios mediante la ejecución del siguiente comando: `Get-User -RecipientTypeDetails User`
 
 3. Compruebe que el resultado coincide con los usuarios o grupos previstos en el ámbito adaptable. Si no es así, compruebe la consulta y los valores con el administrador correspondiente para Azure AD o Exchange.
  
@@ -242,9 +247,9 @@ Las ubicaciones en las directivas de retención identifican servicios Microsoft�
 
 Tanto la ubicación del **correo electrónico de Exchange** como la ubicación de las **carpetas públicas de Exchange** requieren que los buzones tengan al menos 10 MB de datos antes de que se les aplique la configuración de retención.
 
-La ubicación del **correo electrónico de Exchange** admite la retención para el correo electrónico, el calendario y otros elementos del buzón de correo del usuario al aplicar la configuración de retención en el nivel de buzón. Los buzones compartidos también son compatibles.
+La ubicación del **correo electrónico de Exchange** admite la retención para el correo electrónico, el calendario y otros elementos del buzón de correo del usuario al aplicar la configuración de retención en el nivel de buzón. También son compatibles los buzones compartidos y los buzones de recursos para equipos y salas.
 
-Los buzones de recursos, los contactos y los grupos de Microsoft 365 no son compatibles con el correo electrónico de Exchange. Para los buzones de grupo de Microsoft 365, seleccione en su lugar la ubicación de **Microsoft 365 Groups**. Aunque la ubicación de Exchange inicialmente permite seleccionar un buzón de correo de grupo para un ámbito estático, cuando intenta guardar la directiva de retención, recibe un error que indica que "RemoteGroupMailbox" no es una selección válida para esta ubicación.
+Los contactos de correo electrónico y los grupos de Microsoft 365 no son compatibles con el correo electrónico de Exchange. Para los buzones de grupo de Microsoft 365, seleccione en su lugar la ubicación de **Microsoft 365 Groups**. Aunque la ubicación de Exchange inicialmente permite seleccionar un buzón de correo de grupo para un ámbito estático, cuando intenta guardar la directiva de retención, recibe un error que indica que "RemoteGroupMailbox" no es una selección válida para esta ubicación.
 
 Según la configuración de directivas, los [buzones de correo inactivos](inactive-mailboxes-in-office-365.md) pueden incluirse o no:
 
@@ -306,7 +311,7 @@ Si usa ámbitos estáticos: aunque la ubicación del **Correo electrónico de Ex
 
 De manera predeterminada, una directiva de retención aplicada a un grupo de Microsoft 365 incluye el buzón de grupo y el sitio de equipos de SharePoint. Los archivos almacenados en el sitio de equipos de SharePoint se tratan en esta ubicación, pero no los mensajes de chats ni canales de Teams que tienen sus propias ubicaciones de directivas de retención.
 
-Para cambiar el valor predeterminado porque quiere que la directiva de retención se aplique solo a los buzones de Microsoft 365 o solo a los sitios de equipos de SharePoint conectados, use el cmdlet de PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) con el parámetro *Applications* con uno de los siguientes valores:
+Para cambiar el valor predeterminado porque quiere que la directiva de retención se aplique solo a los buzones de Microsoft 365 o solo a los sitios de equipos de SharePoint conectados, use el cmdlet de PowerShell [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) y el parámetro *Applications* con uno de los siguientes valores:
 
 - `Group:Exchange` solo para los buzones de Microsoft 365 conectados al grupo.
 - `Group:SharePoint` solo para sitios de SharePoint conectados al grupo.
@@ -325,7 +330,7 @@ Cuando se aplica una directiva de retención (ámbito de directiva estática o a
 
 - El sitio de grupo de SharePoint conectado se conserva y continúa siendo administrado por la directiva de retención con la ubicación **Grupos de Microsoft 365**. El sitio sigue siendo accesible para las personas que tenían acceso a él antes de eliminar el grupo y los nuevos permisos ahora deben administrarse a través de SharePoint.
     
-    En este momento, no puede excluir el sitio de la ubicación Grupos de Microsoft 365, ya que no puede especificar el grupo eliminado. Si necesita liberar la directiva de retención de este sitio, póngase en contacto con el Soporte técnico de Microsoft. Por ejemplo, abra una [solicitud de servicio en el Centro de Administración de Microsoft 365](https://admin.microsoft.com/Adminportal/Home#/support).
+    En este momento, no puede excluir el sitio de la ubicación Grupos de Microsoft 365, ya que no puede especificar el grupo eliminado. Si necesita liberar la directiva de retención de este sitio, póngase en contacto con el Soporte técnico de Microsoft. Por ejemplo, [abra una solicitud de soporte técnico en el Centro de Administración de Microsoft 365](/microsoft-365/admin/get-help-support#online-support).
 
 - El buzón del grupo eliminado se vuelve inactivo y, al igual que el sitio de SharePoint, permanece sujeto a la configuración de retención. Para obtener más información, consulte [Buzones de correo inactivos en Exchange Online](inactive-mailboxes-in-office-365.md).
 
@@ -406,7 +411,7 @@ Por este motivo, considere primero la antigüedad del contenido existente y cóm
 
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Una directiva que se aplica a todas las ubicaciones
 
-Al elegir las ubicaciones, con la excepción de Skype Empresarial, la configuración predeterminada es **Todo** cuando el estado de la ubicación está **Activado**.
+Al elegir ubicaciones, excepto Skype Empresarial, la configuración predeterminada es **Todo** cuando el estado de la ubicación está **Activado**.
 
 Cuando una directiva de retención se aplica a cualquier combinación de todas las ubicaciones, no hay ningún límite en el número de destinatarios, sitios, cuentas, grupos, etc. que la directiva pueda incluir.
 
