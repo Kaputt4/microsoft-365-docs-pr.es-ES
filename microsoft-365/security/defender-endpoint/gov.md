@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a27cb75a9bace821e20a914bc3c63b571079f9db
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 67ae082e61c3322c28031b2d20e99f4070389dd2
+ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188424"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65243038"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU
 
@@ -107,8 +107,8 @@ Windows 10, versión 1709|![No.](images/svg/check-no.svg) <br /> Nota: No se adm
 Windows 10, versión 1703 y anteriores|![No.](images/svg/check-no.svg) <br /> Nota: No se admitirá|![No](images/svg/check-no.svg) <br /> Nota: No se admitirá|![No](images/svg/check-no.svg) <br /> Nota: No se admitirá
 Windows Server 2022|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2019 (con [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
-Windows Server 2016 (moderno) <sup>2</sup>|![Sí.](images/svg/check-yes.svg) <br /> Versión preliminar pública|![Sí](images/svg/check-yes.svg) <br /> Versión preliminar pública|![Sí](images/svg/check-yes.svg) <br /> Versión preliminar pública
-Windows Server 2012 R2 (moderno) <sup>2</sup>|![Sí.](images/svg/check-yes.svg) <br /> Versión preliminar pública|![Sí](images/svg/check-yes.svg) <br /> Versión preliminar pública|![Sí](images/svg/check-yes.svg) <br /> Versión preliminar pública
+Windows Server 2016 (moderno) <sup>2</sup>|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
+Windows Server 2012 R2 (moderno) <sup>2</sup>|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2016 (heredado) <sup>3</sup>|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2012 R2 (heredado) <sup>3</sup>|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 (heredado) <sup>3</sup>|![Sí.](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)|![Sí](images/svg/check-yes.svg)

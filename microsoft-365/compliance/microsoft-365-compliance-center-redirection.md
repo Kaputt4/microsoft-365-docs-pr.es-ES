@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 description: Obtenga información sobre el redireccionamiento automático de los usuarios desde los usuarios del Centro de seguridad y cumplimiento de Office 365 al portal de cumplimiento de Microsoft Purview.
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b65f2521afd3802274a9c6e605ced16a66c0a76d
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: b88c5f5915944c813f5c803e3526f1bf42040159
+ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973004"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65243016"
 ---
 # <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-purview-compliance-portal"></a>Redirección de usuarios desde el Centro de seguridad y cumplimiento de Office 365 al portal de cumplimiento de Microsoft Purview
 
@@ -34,14 +34,14 @@ El redireccionamiento automático está habilitado de forma predeterminada para 
 - [Búsqueda de contenido](search-for-content.md)
 - [eDiscovery (Estándar)](get-started-core-ediscovery.md)
 - [Clasificación de datos](data-classification-overview.md)
-- [Prevención de pérdida de datos de Microsoft Purview (DLP)](dlp-learn-about-dlp.md)
+- [Prevención de pérdida de datos (DLP)](dlp-learn-about-dlp.md)
 - [Solicitudes de interesados](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool)
-- [Gobierno de información](manage-data-governance.md)
+- [Administración del ciclo de vida de los datos](manage-data-governance.md) (anteriormente **Gobernanza de la información**)
 - [Administración de registros](records-management.md)
 
 Los usuarios se enrutan automáticamente a las mismas soluciones de cumplimiento en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">portal de cumplimiento</a>.
 
-Esta característica y los controles asociados no habilitan el redireccionamiento automático de las características de seguridad para Microsoft Defender para Office 365. Para habilitar el redireccionamiento de las características de seguridad, consulte [Redirigir cuentas de Microsoft Defender para Office 365 al portal de Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) para obtener más información.
+Esta característica y los controles asociados no habilitan el redireccionamiento automático de las características de seguridad para Microsoft Defender para Office 365. Para obtener más información, consulte [Microsoft Defender para Office 365 en Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-mdo).
 
 ## <a name="related-information"></a>Información relacionada
 

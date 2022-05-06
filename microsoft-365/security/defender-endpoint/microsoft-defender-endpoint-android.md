@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea1c551c216dffe8d9ac4e0cedd5679146483e5e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 51f4915da08920018526ac7eb17372247e28de6d
+ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666248"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65243104"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender para punto de conexión en Android
 
@@ -45,7 +45,8 @@ En este tema se describe cómo instalar, configurar, actualizar y usar Defender 
 ### <a name="prerequisites"></a>Requisitos previos
 
 - **Para los usuarios finales**:
-  - Microsoft Defender para punto de conexión licencia asignada a los usuarios finales de la aplicación. Consulte [Microsoft Defender para punto de conexión requisitos de licencia](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
+  - Microsoft Defender para punto de conexión licencia asignada a los usuarios finales de la aplicación. Consulte [Microsoft Defender para punto de conexión requisitos de licencia](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements).
+  - Intune licencia es necesaria antes de incorporar dispositivos Android.
   - Portal de empresa de Intune aplicación se puede descargar desde [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) y está disponible en el dispositivo Android.
   - Además, los dispositivos se pueden [inscribir](/mem/intune/user-help/enroll-device-android-company-portal) a través de la aplicación Portal de empresa de Intune para aplicar Intune directivas de cumplimiento de dispositivos. Esto requiere que al usuario final se le asigne una licencia de Microsoft Intune.
   - Para obtener más información sobre cómo asignar licencias, consulte [Asignación de licencias a usuarios](/azure/active-directory/users-groups-roles/licensing-groups-assign).

@@ -1,7 +1,7 @@
 ---
-title: Búsqueda avanzada con conceptos básicos de api de PowerShell
+title: Búsqueda avanzada con conceptos básicos de la API de PowerShell
 ms.reviewer: ''
-description: Obtenga información básica sobre cómo consultar la API de Microsoft Defender para endpoints con PowerShell.
+description: Obtenga información sobre los conceptos básicos de la consulta de la API de Microsoft Defender para punto de conexión mediante PowerShell.
 keywords: apis, api admitidas, búsqueda avanzada, consulta
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5de8778f1da44f8a9453616dc1e3b6f2af948397
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: fc0cae0ff8c45f4c32213130773e3c118d779ed6
+ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300772"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65243148"
 ---
 # <a name="advanced-hunting-using-powershell"></a>Búsqueda avanzada de amenazas con PowerShell
 
@@ -36,12 +36,12 @@ ms.locfileid: "61300772"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Ejecute consultas avanzadas con PowerShell, vea [Advanced Hunting API](run-advanced-query-api.md).
+Ejecute consultas avanzadas con PowerShell, consulte [Advanced Hunting API( API de búsqueda avanzada](run-advanced-query-api.md)).
 
 En esta sección, compartimos ejemplos de PowerShell para recuperar un token y usarlo para ejecutar una consulta.
 
 ## <a name="before-you-begin"></a>Antes de empezar
-Primero debes crear [una aplicación](apis-intro.md).
+Primero debe [crear una aplicación](apis-intro.md).
 
 ## <a name="preparation-instructions"></a>Instrucciones de preparación
 
@@ -53,7 +53,7 @@ Primero debes crear [una aplicación](apis-intro.md).
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-Para obtener más información, consulte [documentación de PowerShell](/powershell/module/microsoft.powershell.security/set-executionpolicy)
+Para obtener más información, consulte [la documentación de PowerShell](/powershell/module/microsoft.powershell.security/set-executionpolicy).
 
 ## <a name="get-token"></a>Obtener token
 
@@ -76,17 +76,17 @@ $response = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $body -ErrorActi
 $aadToken = $response.access_token
 ```
 
-donde
-- $tenantId: identificador del espacio empresarial en nombre del que desea ejecutar la consulta (es decir, la consulta se ejecutará en los datos de este inquilino)
-- $appId: identificador de la aplicación Azure AD (la aplicación debe tener permiso "Ejecutar consultas avanzadas" en Defender para endpoint)
-- $appSecret: secreto de la aplicación Azure AD aplicación
+Dónde
+- $tenantId: identificador del inquilino en nombre del que desea ejecutar la consulta (es decir, la consulta se ejecutará en los datos de este inquilino)
+- $appId: identificador de la aplicación de Azure AD (la aplicación debe tener el permiso "Ejecutar consultas avanzadas" para Defender para punto de conexión)
+- $appSecret: Secreto de la aplicación de Azure AD
 
 ## <a name="run-query"></a>Ejecutar consulta
 
-Ejecute la siguiente consulta:
+Ejecute la consulta siguiente:
 
 ```powershell
-$query = 'RegistryEvents | limit 10' # Paste your own query here
+$query = 'DeviceRegistryEvents | limit 10' # Paste your own query here
 
 $url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
 $headers = @{ 
@@ -101,12 +101,12 @@ $results = $response.Results
 $schema = $response.Schema
 ```
 
-- $results los resultados de la consulta
+- $results contienen los resultados de la consulta
 - $schema contiene el esquema de los resultados de la consulta
 
 ### <a name="complex-queries"></a>Consultas complejas
 
-Si desea ejecutar consultas complejas (o consultas de varias líneas), guarde la consulta en un archivo y, en lugar de la primera línea del ejemplo anterior, ejecute el siguiente comando:
+Si desea ejecutar consultas complejas (o consultas multilínea), guarde la consulta en un archivo y, en lugar de la primera línea del ejemplo anterior, ejecute el siguiente comando:
 
 ```powershell
 $query = [IO.File]::ReadAllText("C:\myQuery.txt"); # Replace with the path to your file
@@ -116,13 +116,13 @@ $query = [IO.File]::ReadAllText("C:\myQuery.txt"); # Replace with the path to yo
 
 Ahora puede usar los resultados de la consulta.
 
-Para generar los resultados de la consulta en formato CSV en el archivo file1.csv, ejecute el siguiente comando:
+Para generar los resultados de la consulta en formato CSV en file1.csv de archivos, ejecute el siguiente comando:
 
 ```powershell
 $results | ConvertTo-Csv -NoTypeInformation | Set-Content file1.csv
 ```
 
-Para generar los resultados de la consulta en formato JSON en file file1.json, ejecute el siguiente comando:
+Para generar los resultados de la consulta en formato JSON en el archivo file1.json, ejecute el siguiente comando:
 
 ```powershell
 $results | ConvertTo-Json | Set-Content file1.json
@@ -130,6 +130,6 @@ $results | ConvertTo-Json | Set-Content file1.json
 
 
 ## <a name="related-topic"></a>Tema relacionado
-- [Microsoft Defender para api de punto de conexión](apis-intro.md)
+- [API de Microsoft Defender para punto de conexión](apis-intro.md)
 - [API de Búsqueda avanzada de amenazas](run-advanced-query-api.md)
 - [Búsqueda avanzada de amenazas con Python](run-advanced-query-sample-python.md)
