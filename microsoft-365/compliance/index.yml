@@ -14,74 +14,64 @@ metadata:
   ms.author: robmazz
   ms.date: 04/22/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: 465f54a97d099611d6a03c857a5c4e754bb45cf3
-  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+  ms.openlocfilehash: b848abdb739d09595e9be91b8217acf09b01dbd2
+  ms.sourcegitcommit: c33af120921d3c4fb5c362dac3e74f0ab3d1e58d
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 04/27/2022
-  ms.locfileid: "65077866"
+  ms.lasthandoff: 05/06/2022
+  ms.locfileid: "65249605"
 landingContent:
-- title: Administrar el gobierno y la protección de la información
+- title: Protección de datos confidenciales en nubes, aplicaciones y dispositivos
   linkLists:
   - linkListType: overview
     links:
     - text: Conocer los datos
-      url: information-protection.md#know-your-data
+      url: /microsoft-365/compliance/information-protection#know-your-data
     - text: Proteger los datos
-      url: information-protection.md#protect-your-data
+      url: /microsoft-365/compliance/information-protection#protect-your-data
     - text: Prevenir la pérdida de datos
-      url: information-protection.md#prevent-data-loss
-    - text: Administrar los datos
-      url: manage-data-governance.md
-    - text: 'Ruta de aprendizaje: administrar el gobierno y la protección de la información'
-      url: /learn/paths/m365-compliance-information
-- title: Administrar riesgos internos
+      url: /microsoft-365/compliance/information-protection#prevent-data-loss
+    - text: Administrar el ciclo de vida de los datos
+      url: /microsoft-365/compliance/manage-data-governance#microsoft-purview-data-lifecycle-management
+    - text: Cifrar los datos y controlar las claves de cifrado
+      url: /microsoft-365/compliance/encryption
+    - text: Importar y archivar los datos que no son de Microsoft
+      url: /microsoft-365/compliance/archiving-third-party-data
+- title: Identificar los riesgos relacionados con los datos y administrar los requisitos de cumplimiento normativo
   linkLists:
   - linkListType: overview
     links:
-    - text: Administración de riesgos internos de Microsoft Purview
-      url: insider-risk-management.md
-    - text: Cumplimiento de comunicaciones de Microsoft Purview
-      url: communication-compliance.md
-    - text: Barreras de información de Microsoft Purview
-      url: information-barriers.md
-    - text: Privileged Access Management de Microsoft Purview
-      url: privileged-access-management-overview.md
-    - text: Caja de seguridad del cliente
-      url: customer-lockbox-requests.md
-- title: Detectar y responder
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Exhibición de documentos electrónicos de Microsoft Purview (premium)
-      url: overview-ediscovery-20.md
-    - text: Exhibición de documentos electrónicos de Microsoft Purview (estándar)
-      url: ./get-started-core-ediscovery.md
-    - text: Búsqueda de contenido
-      url: search-for-content.md
-    - text: Soluciones de auditoría de Microsoft Purview
-      url: auditing-solutions-overview.md
+    - text: Detectar y actuar en actividades de riesgo
+      url: /microsoft-365/compliance/insider-risk-management
+    - text: Detectar y actuar en mensajes inadecuados y confidenciales
+      url: /microsoft-365/compliance/communication-compliance
+    - text: Restringir la comunicación y la colaboración entre usuarios
+      url: /microsoft-365/compliance/information-barriers
+    - text: Administrar los requisitos de mantenimiento de registros empresariales, legales o normativos
+      url: /microsoft-365/compliance/manage-data-governance#microsoft-purview-records-management
+    - text: Registrar y buscar actividades auditadas en SharePoint y OneDrive
+      url: /microsoft-365/compliance/auditing-solutions-overview
+    - text: Identificar y administrar datos para casos legales
+      url: /microsoft-365/compliance/ediscovery
 - title: Introducción al cumplimiento normativo
   linkLists:
   - linkListType: get-started
     links:
-    - text: Administrador de cumplimiento
-      url: compliance-manager.md
-    - text: Plan de acción de cumplimiento de RGPD
+    - text: Introducción al Administrador de cumplimiento
+      url: /microsoft-365/compliance/compliance-manager
+    - text: Implementar un plan de acción de cumplimiento RGPD
       url: /compliance/regulatory/gdpr-action-plan
-    - text: Plan de acción de cumplimiento de ISO
-      url: /compliance/regulatory/iso-action-plan
-    - text: Plan de acción de cumplimiento de NIST
-      url: /compliance/regulatory/nist-action-plan
-- title: Implementar soluciones de cumplimiento
+    - text: Más información sobre las ofertas de cumplimiento normativo Microsoft
+      url: /compliance/regulatory/offering-home
+- title: Implementar soluciones de cumplimiento Purview
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Protección de datos con Confianza cero
       url: /security/zero-trust/data
     - text: Implementar una solución de protección de información de Microsoft Purview
-      url: information-protection-solution.md
+      url: /microsoft-365/compliance/information-protection-solution
     - text: Implementación de protección de la información para las normativas de privacidad de datos
-      url: ../solutions/information-protection-deploy.md
-    - text: Protección de la información e ilustraciones de cumplimiento
-      url: ../solutions/productivity-illustrations.md#microsoft-365-information-protection-and-compliance-capabilities
+      url: /microsoft-365/solutions/information-protection-deploy
+    - text: Explore las ilustraciones relativas a la protección de la información y al cumplimiento
+      url: /microsoft-365/solutions/productivity-illustrations
