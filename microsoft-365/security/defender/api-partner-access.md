@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: ccd92b38937bcb64fdcf738b803160119c0a025a
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 612cbb4005285f46594bc900cbbc14497b72ffec
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665588"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268837"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>Creación de una aplicación con acceso de asociado a Microsoft 365 Defender API
 
@@ -185,6 +185,9 @@ return $token
 > [!NOTE]
 > El código siguiente se ha probado con Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
 
+> [!IMPORTANT]
+> El paquete [de NuGet Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) y la Biblioteca de Autenticación de Azure AD (ADAL) han quedado en desuso. No se han agregado nuevas características desde el 30 de junio de 2020.   Le recomendamos encarecidamente que actualice, consulte la [guía de migración](/azure/active-directory/develop/msal-migration) para obtener más detalles.
+
 1. Cree una nueva aplicación de consola.
 1. Instale NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
 1. Agregue la línea siguiente:
@@ -247,7 +250,7 @@ aadToken = jsonResponse["access_token"]
 1. Abra un símbolo del sistema y establezca CLIENT_ID en el identificador de aplicación de Azure.
 1. Establezca CLIENT_SECRET en el secreto de aplicación de Azure.
 1. Establezca TENANT_ID en el identificador de inquilino de Azure del usuario que quiere usar la aplicación para acceder a Microsoft 365 Defender.
-1. Ejecute el comando siguiente:
+1. Ejecute el siguiente comando:
 
 ```bash
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
