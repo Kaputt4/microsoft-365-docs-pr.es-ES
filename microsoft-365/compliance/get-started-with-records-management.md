@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Necesita una solución de administración de registros para Microsoft 365 que administre contenido de alto valor para obligaciones legales, empresariales o reglamentarias, pero no sabe por dónde comenzar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: e73cb1a118235082978ee93efcdb77f5e5135f8c
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: bbba24a2627c6040873da8d01185e4e6bdfdbfc8
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971481"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268757"
 ---
 # <a name="get-started-with-records-management"></a>Introducción a la administración de registros
 
@@ -81,6 +81,7 @@ Ayúdese de la siguiente tabla para asignar los requisitos empresariales a los e
 |Inicie el período de retención cuando tenga lugar un evento, por ejemplo, cuando:  <br />- Algún empleado abandone la organización <br />- Algún contrato expire <br />- Finalice la duración de un producto| [Inicie la retención cuando se produzca un evento](event-driven-retention.md)|
 |Restrinja los cambios de las directivas para ayudar a cumplir los requisitos reglamentarios o medidas de seguridad frente a administradores no autorizados| [Usar el Bloqueo de conservación para restringir los cambios en las directivas de retención y en las directivas de las etiquetas de retención](retention-preservation-lock.md)
 |Administrar el ciclo de vida de los distintos tipos de documentos en SharePoint| [Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint](auto-apply-retention-labels-scenario.md)|
+|Aplicar una etiqueta de retención a un archivo cuando reciba una alerta que indica que el contenido que contiene datos personales se está almacenando o permanece intacto durante demasiado tiempo| [Investigación y corrección de alertas en la administración de riesgos de privacidad](/privacy/priva/risk-management-alerts)|
 |Antes de eliminar contenido al final de su período de retención, asegúrese de que alguien revise el contenido y dé su aprobación|[Revisiones para eliminación](disposition.md#disposition-reviews) |
 |Compruebe si el contenido se elimina de forma permanente al final de su período de retención|[Eliminación de registros](disposition.md#disposition-of-records) |
 | Supervise cómo y cuándo se aplican las opciones de conservar y eliminar la configuración de los elementos | [Supervisar las etiquetas de retención](retention.md#monitoring-retention-labels) |

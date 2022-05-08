@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Se ha decidido a implementar etiquetas de confidencialidad para proteger los datos de su organización, pero no sabe por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: 3f163c19cfd6e627887f0e34b81bc99d2e86cb6c
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: b0fcf435d7805440e93f0d1248723f4b5599d4a9
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971052"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268779"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
@@ -102,6 +102,7 @@ Todos los escenarios requieren que [Crear y configurar etiquetas de confidencial
 |Usar etiquetas de confidencialidad para configurar el tipo de vínculo de uso compartido predeterminado para los sitios y documentos individuales en SharePoint y OneDrive |[Usar etiquetas de confidencialidad para establecer el vínculo de uso compartido predeterminado para sitios y documentos en SharePoint y OneDrive](sensitivity-labels-default-sharing-link.md)|
 |Aplicar una etiqueta de confidencialidad a un modelo de comprensión de documentos, de modo que los documentos identificados en una biblioteca SharePoint se clasifiquen y se protejan automáticamente |[Aplicar una etiqueta de confidencialidad a un modelo en Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)|
 |Prevenir o advertir a los usuarios sobre el uso compartido de archivos o correos electrónicos con una etiqueta de confidencialidad específica |[Usar etiquetas de confidencialidad como condiciones en las directivas de DLP](dlp-sensitivity-label-as-condition.md) |
+|Aplicar una etiqueta de confidencialidad a un archivo cuando reciba una alerta que indica que hay contenido que contiene datos personales se comparte y necesita protección| [Investigación y corrección de alertas en la administración de riesgos de privacidad](/privacy/priva/risk-management-alerts)|
 |Aplicar una etiqueta de retención para conservar o eliminar archivos o correos electrónicos que tengan una etiqueta de confidencialidad específica|[Aplicar una etiqueta de retención automáticamente para conservar o eliminar contenido](apply-retention-labels-automatically.md) |
 |Detecte, etiquete y proteja los archivos almacenados en almacenes de datos locales |[Implementación del escáner de Azure Information Protection para clasificar y proteger los archivos automáticamente](/azure/information-protection/deploy-aip-scanner)|
 |Detecte, etiquete y proteja los archivos almacenados en almacenes de datos que están en la nube|[Descubrir, clasificar, etiquetar y proteger la información regulada y confidencialidad almacenada en la nube](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|

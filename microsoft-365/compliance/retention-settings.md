@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: ddfa921c8dae22bbe091e2c0f66fc9ae42aeea41
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+ms.openlocfilehash: 90a048cf96bb2414a42d803bcd2f15deab4e711b
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231811"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268801"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
@@ -278,6 +278,9 @@ Al configurar una directiva de aplicación automática que usa tipos de informac
 ### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>Información de configuración para los sitios de SharePoint y las cuentas de OneDrive
 
 Cuando elige la ubicación de los **sitios de SharePoint**, la directiva de retención puede conservar y eliminar documentos en los sitios de comunicación de SharePoint, en los sitios de equipo no conectados mediante grupos de Microsoft 365 y en los sitios clásicos. A menos que use [ámbitos de directiva adaptables](#exceptions-for-adaptive-policy-scopes), los sitios de equipo conectados por grupos de Microsoft 365 no son compatibles con esta opción y, en su lugar, use la ubicación **Grupos de Microsoft 365** que se corresponda con el contenido del buzón, el sitio y los archivos del grupo.
+
+> [!TIP]
+> Puede usar un [filtro en el Centro de administración de SharePoint](/sharepoint/customize-admin-center-site-list) o un [comando de PowerShell de SharePoint](/powershell/module/sharepoint-online/get-sposite#example-10) para confirmar si un sitio está conectado a un grupo. Para ámbitos estáticos, estos sitios son compatibles con la ubicación **Grupos de Microsoft 365**.
 
 Para obtener información detallada sobre lo que se incluye y excluye al configurar las opciones de retención para SharePoint y OneDrive, consulte [¿Qué se incluye para la retención y eliminación?](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion)
 
