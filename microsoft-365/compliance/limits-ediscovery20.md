@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los límites de casos, los límites de indexación y los límites de búsqueda en vigor para la solución eDiscovery (Premium) en Microsoft 365.
-ms.openlocfilehash: 3d0204eb452b669937d30fe5519e5af073b64d6d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7aa9dcd65cb047914a8b1b68de3340bb9d7b728f
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099221"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294631"
 ---
 # <a name="limits-in-ediscovery-premium"></a>Límites en eDiscovery (Premium)
 
@@ -64,7 +64,8 @@ En la tabla siguiente se enumeran los límites de indexación en eDiscovery (Pre
 |Número máximo de caracteres extraídos de un único archivo.|10 <sup>millones4</sup>|
 |Tamaño máximo de un solo archivo.|150 <sup>MB4</sup>|
 |Profundidad máxima de los elementos incrustados en un documento.|<sup>254</sup>|
-|Tamaño máximo de los archivos procesados por reconocimiento óptico de caracteres (OCR).|24 <sup>MB4</sup> <br/>  
+|Tamaño máximo de los archivos procesados por reconocimiento óptico de caracteres (OCR).|24 <sup>MB4</sup> <br/> |
+|Rendimiento máximo de indexación avanzada | 2 GB por hora |
 
 ## <a name="search-limits"></a>Límites de búsqueda
 

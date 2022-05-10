@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes en función de sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayuda a mantenerse al tanto del panorama de cumplimiento en constante cambio. Averigüe lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b79015ce0ca55bf9a74b6acac8f38f09b9e5e984
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3bfa6ce581b0bd4846ebe27b95cf27d1228b10b2
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100553"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294630"
 ---
 # <a name="whats-new-in-microsoft-purview"></a>Novedades de Microsoft Purview
 
@@ -44,6 +44,81 @@ Ya sea que agregue nuevas soluciones al portal de [cumplimiento de Microsoft Pur
 > Y visite la [hoja de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para obtener información sobre Microsoft 365 características que se lanzaron, se están implementando, están en desarrollo, han sido canceladas o publicadas anteriormente.
 
 ## <a name="april-2022"></a>Abril de 2022
+
+### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
+
+- [Crear y administrar directivas de cumplimiento de comunicaciones](communication-compliance-policies.md): se ha actualizado con las instrucciones agregadas para la nueva característica de directiva de mensajes notificada por el usuario para la integración Microsoft Teams.
+- [Comenzar con cumplimiento de comunicaciones](communication-compliance-configure.md): se ha actualizado para agregar aclaraciones para la suscripción a F5 y las licencias.
+
+### <a name="compliance-manager"></a>Administrador de cumplimiento
+
+- [Lista de plantillas del Administrador](compliance-manager-templates-list.md) de cumplimiento: se han agregado 6 nuevas plantillas y vínculos de navegación en la página para saltar más fácilmente a las categorías de plantillas.
+- [Información general del Administrador de cumplimiento](compliance-manager.md) : vídeo de información general del producto actualizado.
+
+### <a name="compliance-offerings--service-assurance"></a>Ofertas de cumplimiento & garantía de servicio
+
+- [Ofertas de cumplimiento](/compliance/regulatory/offering-home) : actualizaciones para la cobertura de servicios e informes de auditoría para las ofertas de VPATS, SOC, ISO y FedRAMP.
+
+### <a name="data-lifecycle-management-and-records-management"></a>Administración del ciclo de vida de los datos y administración de registros
+
+- [Controlar los datos con Microsoft Purview](manage-data-governance.md) : los conectores de datos se quitan de esta página y la solución de administración de registros se presenta como un producto del mismo nivel.
+- [Configuración común para directivas de retención y etiquetas de retención](retention-settings.md) : refleja nuevas referencias de navegación e interfaz de usuario para el asistente para etiquetas de retención recién diseñado.
+- [Declare registros mediante etiquetas de retención](declare-records.md) y [use el control de versiones de registros para actualizar los registros almacenados en SharePoint o OneDrive](record-versioning.md): nueva información sobre la nueva configuración de etiqueta "Desbloquear este registro de forma predeterminada" que se está implementando actualmente en versión preliminar.
+- [Usar el plan de archivo para crear y administrar etiquetas de retención](file-plan-manager.md#information-about-the-label-properties-for-import)  : la sección de importación ahora revela la configuración de etiquetas que no se admiten actualmente para la importación (revisión de eliminación de varias fases y desbloqueo de este registro de forma predeterminada).
+
+### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
+
+- Artículos actualizados para la disponibilidad general de incorporación de dispositivos macOS:
+  - [Más información sobre dlp de punto de conexión](endpoint-dlp-learn-about.md)
+  - [Configuración de la prevención de pérdida de datos de punto de conexión](dlp-configure-endpoint-settings.md)
+  - [Planear la prevención de pérdida de datos (DLP)](dlp-overview-plan-for-dlp.md)
+  - [Referencia de directiva de prevención de pérdida de datos](dlp-policy-reference.md)
+  - [Introducción a la prevención de pérdida de datos en punto de conexión](endpoint-dlp-getting-started.md)
+- [Condiciones, excepciones y acciones de directiva DLP:](dlp-conditions-and-exceptions.md) se han agregado instrucciones para modificar la acción del sujeto.
+- Referencia de directiva [de prevención de pérdida de datos: predicados](dlp-policy-reference.md) de SPO/ODB de GA; se ha actualizado con nuevas instrucciones sobre el procesamiento de reglas en puntos de conexión.
+
+### <a name="device-onboarding"></a>Incorporación de dispositivos
+
+- Artículos actualizados para la disponibilidad general de incorporación de dispositivos macOS:
+  - [Introducción a la incorporación de dispositivos macOS en a Microsoft 365](device-onboarding-macos-overview.md)
+  - [Incorporar y retirar dispositivos macOS en soluciones de cumplimiento con Intune para clientes de Microsoft Defender para punto de conexión](device-onboarding-offboarding-macos-intune-mde.md)
+  - [Incorporar y desactivar dispositivos macOS en soluciones de Microsoft Purview mediante Intune](device-onboarding-offboarding-macos-intune.md)
+  - [Incorporación y retirada de dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión](device-onboarding-offboarding-macos-jamfpro-mde.md)
+  - [Incorporación y apagado de dispositivos macOS en soluciones de Microsoft Purview mediante JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md)
+
+### <a name="information-barriers"></a>Barreras de información
+
+- [Usar barreras de información con SharePoint: instrucciones agregadas](/sharepoint/information-barriers) para la nueva compatibilidad con canales privados en SharePoint.
+- [Administrar directivas de barreras de información](information-barriers-edit-segments-policies.md) : guía agregada para quitar segmentos y directivas o segmentos juntos.
+
+### <a name="microsoft-priva"></a>Microsoft Priva
+
+- [Directivas de administración de riesgos de privacidad](/privacy/priva/risk-management) : nuevas páginas, actualizaciones significativas y reestructuración del contenido de las directivas; detalles siguientes:
+  - [Directivas de administración de riesgos de privacidad](/privacy/priva/risk-management-policies) : se han agregado detalles significativos sobre la configuración y administración de directivas que se aplican a todas las directivas; se han agregado vínculos a páginas nuevas para cada uno de los tres tipos de directiva.
+  - [Directivas de sobreexposición de datos](/privacy/priva/risk-management-policy-data-overexposure) : articula la necesidad y los usos de la directiva; explica la configuración predeterminada para la creación inmediata y las instrucciones detalladas para personalizar la configuración.
+  - [Directivas de transferencia de datos](/privacy/priva/risk-management-policy-data-transfer) : resalta la nueva condición para que la directiva detecte transferencias fuera de la organización; articula la necesidad y los usos de la directiva; explica la configuración predeterminada para la creación inmediata y las instrucciones detalladas para personalizar la configuración.
+  - [Directivas de minimización de datos](/privacy/priva/risk-management-policy-data-minimization) : articula la necesidad y los usos de la directiva; explica la configuración predeterminada para la creación inmediata y las instrucciones detalladas para personalizar la configuración.
+  - [Investigar y corregir alertas](/privacy/priva/risk-management-alerts) : se han agregado detalles aclarantes y cambios de formato para mejorar la legibilidad.
+  - [Notificaciones de usuario](/privacy/priva/risk-management-notifications) : se ha agregado información sobre la funcionalidad para obtener una vista previa y personalizar el contenido de las notificaciones por correo electrónico.
+- [Creación de una solicitud de derechos de sujeto](/privacy/priva/subject-rights-requests-create) : se ha agregado una sección para empezar a trabajar con la primera solicitud con la configuración predeterminada para explorar la funcionalidad.
+- [Revisar los datos de una solicitud de derechos del interesado](/privacy/priva/subject-rights-requests-data-review) : se han agregado detalles que explican los elementos de prioridad que se deben revisar y cómo encontrarlos, y la necesidad de configurar la coincidencia de datos para obtener esta información.
+- [Búsqueda y visualización de datos personales](/privacy/priva/priva-data-profile) : se ha aclarado que los usuarios deben configurar la coincidencia de datos con el fin de recibir información sobre "Elementos con el contenido del interesado más importante" en "Información clave".
+- [Coincidencia de datos para solicitudes de derechos del interesado](/privacy/priva/subject-rights-requests-data-match) : aclaró la progresión del paso en este proceso y agregó el segundo paso para crear tipos de información confidencial.
+
+### <a name="sensitive-information-types"></a>Tipos de información confidencial
+
+- [Usar entidades con nombre en directivas DLP](named-entities-use.md) : disponibilidad general de entidades con nombre.
+- [Obtenga información sobre las entidades con nombre](named-entities-learn.md) : disponibilidad general de entidades con nombre.
+- [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md) : disponibilidad general de entidades con nombre y actualizaciones de patrones.
+- [Obtenga información sobre los tipos de información confidencial](sensitive-information-type-learn-about.md) : disponibilidad general de entidades con nombre.
+
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+
+- [Use etiquetas de confidencialidad para proteger el contenido de Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings): nueva configuración ahora en versión preliminar para los permisos de uso compartido de sitios mediante la configuración avanzada de PowerShell.
+- [Restringir el acceso al contenido mediante etiquetas de confidencialidad para aplicar el cifrado](encryption-sensitivity-labels.md) : se ha agregado el problema conocido para especificar un grupo que contiene contactos de correo, con un vínculo a la KB publicada para obtener detalles y soluciones alternativas.
+- [Aplicar una etiqueta de confidencialidad al contenido automáticamente](apply-sensitivity-label-automatically.md): se ha quitado el problema conocido con sitios OneDrive eliminados que se muestran incorrectamente en los resultados de la simulación para las directivas de etiquetado automático).
+- [Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md): como resultado de los comentarios del cliente, se quitó la llamada en la sección Requisitos previos de que esta característica aún no es compatible con el canal de Semi-Annual Enterprise y, en su lugar, se agregó Semi-Annual Enterprise Canal (versión preliminar) con la versión mínima 2202.
+- [Administrar etiquetas de confidencialidad en Office aplicaciones](sensitivity-labels-office-apps.md): los detalles de soporte técnico para aplicar una etiqueta predeterminada a los documentos existentes se actualizan para corregir que, en Windows, esta versión se sigue implementando en el canal Beta y ahora está totalmente implementado para la web.
 
 ### <a name="changes-to-product-names"></a>Cambios en los nombres de producto
 
@@ -232,122 +307,3 @@ Se han agregado los siguientes artículos nuevos:
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 - El nombre del ámbito de [las etiquetas de Mapa de datos de Microsoft Purview](/azure/purview/create-sensitivity-label) ahora es "Recursos de datos esquematizados".
-
-## <a name="october-2021"></a>Octubre de 2021
-
-### <a name="app-governance"></a>Gobernanza de aplicaciones
-
-- [El complemento de gobernanza de aplicaciones para Defender for Cloud Apps se ha publicado para la disponibilidad general](/cloud-app-security/app-governance-manage-app-governance). La documentación de gobernanza de aplicaciones se ha movido para unirse a la documentación de aplicaciones de Defender for Cloud.
-
-### <a name="compliance--service-assurance"></a>Cumplimiento & garantía de servicio
-
-- [Service Assurance](/compliance) : revisión trimestral de actualizaciones de contenido para certificaciones e instrucciones de aplicabilidad) Administración de recursos del centro de datos
-  - Arquitectura e infraestructura del centro de datos
-  - Continuidad empresarial del centro de datos y recuperación ante desastres
-  - Medidas de seguridad del entorno del centro de datos
-  - Seguridad de acceso físico del centro de datos
-  - Microsoft 365 programa de cumplimiento de SDL
-  - Control de acceso de los ingenieros de servicio de Microsoft 365
-  - Guía de evaluación de riesgos para MS Cloud
-
-### <a name="data-loss-prevention"></a>Prevención de pérdida de datos
-
-- [Obtenga información sobre La prevención de pérdida de datos de Microsoft Purview](endpoint-dlp-learn-about.md) se actualizó para la compatibilidad con macOS y la clasificación avanzada; se ha actualizado para crear una directiva DLP personalizada para auditar la actividad de todos los tipos de archivo admitidos.
-- [Comenzar con Microsoft 365 prevención de pérdida de datos de punto de conexión](endpoint-dlp-getting-started.md) se actualizó para la compatibilidad con macOS y la clasificación avanzada.
-- [El uso de la prevención de pérdida de datos de punto de conexión](endpoint-dlp-using.md) se actualizó para la compatibilidad con macOS y la clasificación avanzada.
-- Se ha actualizado la [referencia de sugerencias de directiva de prevención de pérdida de datos](dlp-policy-tips-reference.md) para la compatibilidad con macOS y la clasificación avanzada.
-- Se ha actualizado [la incorporación de dispositivos macOS a Microsoft 365 (versión preliminar)](device-onboarding-macos-overview.md) para la compatibilidad con macOS y la clasificación avanzada.
-- Se han agregado las siguientes páginas nuevas para la incorporación de dispositivos:
-  - [Incorporación y eliminación de dispositivos macOS en soluciones de Microsoft Purview mediante Intune (versión preliminar)](device-onboarding-offboarding-macos-intune.md)
-  - [Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante Intune para clientes de Microsoft Defender para punto de conexión (versión preliminar)](device-onboarding-offboarding-macos-intune-mde.md)
-  - [Incorporación y eliminación de dispositivos macOS en soluciones de Microsoft Purview mediante JAMF Pro (versión preliminar)](device-onboarding-offboarding-macos-jamfpro.md)
-  - [Incorporar y retirar dispositivos macOS en soluciones de cumplimiento mediante JAMF Pro para clientes de Microsoft Defender para punto de conexión (versión preliminar)](device-onboarding-offboarding-macos-jamfpro-mde.md)
-
-### <a name="ediscovery"></a>eDiscovery
-
-- [Recopilar datos adjuntos en la nube en eDiscovery (Premium)](advanced-ediscovery-cloud-attachments.md) además de recopilar la versión más reciente de un archivo adjunto en la nube, puede recopilar la versión que se ha compartido en un mensaje de correo electrónico o Teams conversación de chat; recopilar la versión compartida es posible gracias a la nueva funcionalidad de aplicar automáticamente una etiqueta de retención a los datos adjuntos en la nube.
-- [Configure versiones históricas en la nueva funcionalidad de eDiscovery (Premium)](advanced-ediscovery-historical-versions.md) que indexe todas las versiones de documentos almacenados en un sitio de SharePoint para la búsqueda; esto significa que las versiones de documento que contienen contenido que coinciden con una consulta de colección se devuelven en los resultados de la búsqueda.
-
-### <a name="encryption"></a>Cifrado
-
-- [Use el cifrado de un extremo a otro para las llamadas de Microsoft Teams uno a uno (versión preliminar pública)](/microsoftteams/teams-end-to-end-encryption) Nuevo contenido para la versión preliminar pública.
-
-### <a name="data-lifecycle-management"></a>Administración del ciclo de vida de los datos
-
-- [Configurar un conector para importar datos de auditoría de Epic EHR](import-epic-data.md) nuevo conector le permite importar datos desde el sistema de registros electrónicos de atención sanitaria epic para admitir un nuevo escenario general de uso indebido de datos de pacientes para la administración de riesgos internos.
-- [Configurar un conector para importar datos de auditoría de EHR de atención sanitaria](import-healthcare-data.md) Nuevo conector le permite importar datos de un sistema electrónico de registros sanitarios para admitir un nuevo escenario general de uso indebido de datos de pacientes para la administración de riesgos internos.
-
-### <a name="retention-and-records-management"></a>Retención y administración de registros
-- [Los ámbitos de directiva adaptables](retention.md#adaptive-or-static-policy-scopes-for-retention) se publican en versión preliminar para las directivas de retención y las directivas de etiqueta de retención.
-- Ahora puede [aplicar automáticamente una etiqueta de retención basada en una etiqueta de confidencialidad](apply-retention-labels-automatically.md#identify-files-and-emails-that-have-a-sensitivity-label).
-- El plan de archivos tiene un nuevo [proceso de importación](file-plan-manager.md#import-retention-labels-into-your-file-plan).
-- [Configuración común para directivas de retención y directivas de etiquetas de retención](retention-settings.md): nuevo artículo para obtener información detallada sobre la configuración de ámbitos adaptables y otras opciones tanto en directivas de retención como en directivas de etiquetas de retención.
-
-### <a name="sensitive-information-types"></a>Tipos de información confidencial
-
-- [Obtenga información sobre el nuevo contenido de entidades con nombre (versión preliminar)](named-entities-learn.md) para entidades con nombre.
-- [Use entidades con nombre en el contenido nuevo de las directivas de prevención de pérdida de datos (versión preliminar)](named-entities-use.md) en el uso de entidades con nombre.
-
-### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
-
-- [Las etiquetas predeterminadas y las directivas predeterminadas](mip-easy-trials.md) se implementan para los clientes aptos.
-
-## <a name="september-2021"></a>Septiembre de 2021
-
-### <a name="app-governance"></a>Gobernanza de aplicaciones
-
-- [La información de introducción a la gobernanza de aplicaciones simplificada](app-governance-get-started.md) tiene un flujo de trabajo modificado y se han agregado nuevos vínculos a la suscripción a la versión preliminar pública.
-- [Nueva definición de alertas de detección](app-governance-anomaly-detection-alerts.md#app-made-high-volume-of-importance-mail-read-and-created-inbox-rule) agregada (actualizada; nueva definición agregada para las alertas de recopilación)
-
-### <a name="auditing"></a>Auditoría
-
-- [Activar o desactivar la auditoría](turn-audit-log-search-on-or-off.md) Se ha agregado una nueva sección sobre cómo se auditan los cambios en el estado de auditoría de una organización; Esto significa que los registros de auditoría se registran cuando la auditoría está activada o desactivada; puede buscar estos registros de auditoría en el registro de auditoría del administrador de Exchange.
-
-### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
-
-- [Cumplimiento de la comunicación con](communication-compliance-siem.md) la guía de soluciones SIEM para la integración de cumplimiento de comunicaciones con soluciones SIEM)
-
-### <a name="compliance-offerings"></a>Ofertas de cumplimiento
-
-- [Seguridad en la nube de varios niveles (MTCS)](/compliance/regulatory/offering-mtcs-singapore) Actualizaciones estándar de Singapur para la cobertura de Dynamics 365
-- [Sector de tarjetas de pago (PCI)](/compliance/regulatory/offering-pci-dss) Actualizaciones del Estándar de seguridad de datos (DSS) para SharePoint cobertura en línea
-- Guía de software de cliente nueva [de la sección 508 de EE. UU.](/compliance/regulatory/offering-section-508-vpats)
-- [Guía de accesibilidad de contenido web](/compliance/regulatory/offering-wcag-2-1) nueva guía de software de cliente
-
-### <a name="compliance--service-assurance"></a>Cumplimiento & garantía de servicio
-
-- [Service Assurance](/compliance/) revisa trimestralmente las actualizaciones de contenido para obtener certificaciones e instrucciones de aplicabilidad
-  - Destrucción de dispositivos que contienen datos
-  - Ataques DDOS
-
-### <a name="data-connectors"></a>Conectores de datos
-
-- [Archivado de datos de terceros en conectores de datos Microsoft 365](archiving-third-party-data.md#data-connectors-in-the-us-government-cloud) de CellTrust y 17a-4 LLC ahora disponibles en organizaciones GCC en la nube del Gobierno de EE. UU.
-- [Configurar un conector para archivar datos de YouTube](archive-youtube-data.md) proporciona nuevas instrucciones para esta característica en versión preliminar pública.
-
-### <a name="ediscovery"></a>eDiscovery
-
-- [Use el editor de KQL para crear consultas de búsqueda](ediscovery-kql-editor.md) en versión preliminar pública de una nueva manera de crear consultas de búsqueda en Búsqueda de contenido, eDiscovery (estándar) y eDiscovery (Premium); el editor de KQL proporciona autocompletar para las propiedades y condiciones admitidas que se pueden buscar y muestra listas de valores admitidos para las propiedades y condiciones estándar; el KQL  editor también proporciona detección de errores y sugerencias para correcciones de posibles errores en las consultas de búsqueda
-
-### <a name="information-barriers"></a>Barreras de información
-
-- [Comenzar con barreras de información](information-barriers-policies.md#step-6-information-barriers-modes) nueva característica de vista previa para los modos de barreras de información
-- [Barreras de información con Microsoft Teams](/microsoftteams/information-barriers-in-teams) nueva característica de vista previa para los modos de barreras de información
-- [Barreras de información con OneDrive](/onedrive/information-barriers) nueva característica de vista previa para los modos de barreras de información
-- [Barreras de información con SharePoint](/sharepoint/information-barriers) nueva característica de vista previa en línea para los modos de barreras de información
-
-### <a name="insider-risk-management"></a>Administración de riesgos internos
-
-- Comenzar con la nueva característica de versión preliminar [de administración de riesgos](insider-risk-management-configure.md#recommended-actions-preview) internos para iniciar las acciones recomendadas
-- [Investigación de las actividades de riesgo internos](insider-risk-management-activities.md#get-help-managing-your-insider-risk-alert-queue) nueva sección de guía "Obtener ayuda para administrar la cola de alertas de riesgo internos"
-- [Comenzar con la configuración de administración de riesgos internos](insider-risk-management-settings.md#admin-notifications) nueva característica de vista previa de la configuración de notificaciones de administración
-
-### <a name="retention-and-records-management"></a>Retención y administración de registros
-- [La revisión de eliminación de varias fases](disposition.md) ya está disponible con carácter general (GA), con nuevos [eventos de auditoría](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities). La revisión de eliminación de varias fases le permite especificar hasta cinco fases consecutivas de revisión de eliminación para una etiqueta de retención, y los revisores pueden agregar otros usuarios a su fase de revisión de eliminación. También puede personalizar las notificaciones por correo electrónico y los avisos.
-- Los canales privados para [las directivas de retención de Teams](create-retention-policies.md#retention-policy-for-teams-locations) ahora están disponibles con carácter general (GA).
-
-### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
-- [La coautoría y autoguardado](sensitivity-labels-coauthoring.md) ahora están disponibles con carácter general (GA) para Windows (versión mínima de 2107 desde canal actual o canal de Enterprise mensual) y macOS (versión mínima de 16.51).
-- Implementación para Office aplicaciones que usan etiquetas integradas: la configuración de etiqueta predeterminada ahora admite documentos existentes, así como nuevos documentos. Este cambio de comportamiento proporciona paridad con el cliente de unificación de etiquetado de Azure Information Protection. Para obtener más información sobre el lanzamiento por aplicación y las versiones mínimas, vea la [tabla de funciones](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) para Word, Excel y PowerPoint.
-- Las etiquetas de contenedor ahora admiten [la configuración predeterminada del vínculo de uso compartido mediante la configuración avanzada de PowerShell](sensitivity-labels-teams-groups-sites.md#configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings).
-- Las [tablas de funcionalidades](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) que enumeran las versiones mínimas admitidas para el etiquetado integrado ahora tienen versiones para el canal actual, el canal de Enterprise mensual y el canal de Semi-Annual Enterprise.

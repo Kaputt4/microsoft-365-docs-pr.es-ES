@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 64162b83376facddbdeffd1c3079baa49f9d8924
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 2f76a8ec53d6f7c809ed9f6612f2c8abf7388d1b
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788026"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294786"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>Referencia de reglas de reducción de superficie expuesta a ataques
 
@@ -33,7 +33,8 @@ ms.locfileid: "64788026"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Antivirus de Microsoft Defender
 
-**Plataformas**
+**Plataformas:**
+
 - Windows
 
 En este artículo se proporciona información sobre las reglas de reducción de ataques:
@@ -57,7 +58,7 @@ En la tabla siguiente se enumeran los sistemas operativos admitidos para las reg
 >
 > Las reglas de reducción de superficie expuesta a ataques en Windows&nbsp; Server2012R2&nbsp;&nbsp; y Windows&nbsp; Server2016&nbsp; están disponibles para los dispositivos incorporados mediante el paquete de solución unificado moderno. Para obtener más información, consulte [Nueva funcionalidad en la solución unificada moderna para Windows Server 2012 R2 y versión preliminar de 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
-| Nombre de regla|Windows 10 | Windows Server 2019 | &nbsp;Windows Server | <sup>Windows Server 2016 [[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server 2012 R2 <sup>[[1, 2](#fn1)]<sup></sup> |
+| Nombre de regla| &nbsp;Windows 11 <br>y<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>y<br>  &nbsp;Windows Server <br> 2019 | Windows Server | &nbsp;Windows Server <br> 2016 <br> <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012R2&nbsp; <br> <sup>[[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | [Bloquear el abuso de controladores firmados vulnerables explotados](#block-abuse-of-exploited-vulnerable-signed-drivers) | v | v | v <br> versión 1803 (canal semianual) o posterior | v | v |
 | [Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | Versión Y 1809 o posterior | v | v | v | v |
@@ -102,7 +103,6 @@ Debajo de esta tabla se enumeran vínculos a información sobre las versiones de
 |[Bloquear procesos que no son de confianza y no firmados que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | v |   |v <br><br> CB 1802  | v  | v  |
 |[Bloquear llamadas API de Win32 desde macros de Office](#block-win32-api-calls-from-office-macros) | v |   | v <br><br> CB 1710  | v  |  v |
 |[Uso de protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | v |   | v <br><br> CB 1802 | v  | v  |
-|  |  |  |  |  |  |
 
   (<a id="fn1">1</a>) Puede configurar reglas de reducción de superficie expuesta a ataques por regla mediante el GUID de cualquier regla.
 
@@ -139,7 +139,6 @@ Para las reglas con el "estado de regla" especificado:
 |[Bloquear procesos que no son de confianza y no firmados que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta  | N \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta |
 |[Bloquear llamadas API de Win32 desde macros de Office](#block-win32-api-calls-from-office-macros) |   | N | v |
 |[Uso de protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta  | N \| Y <br> Requiere un dispositivo en el nivel de bloque de nube alta |
-|   |   |   |   |
   
 ## <a name="asr-rules-and-guids-matrix"></a>Matriz de reglas y GUID de ASR
 
