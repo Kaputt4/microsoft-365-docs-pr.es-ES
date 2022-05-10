@@ -1,7 +1,7 @@
 ---
-title: Solucionar problemas de incorporación relacionados con administración de seguridad para Microsoft Defender para endpoint
-description: Solucionar problemas que pueden surgir durante la incorporación de dispositivos mediante Administración de seguridad para Microsoft Defender para endpoint.
-keywords: solucionar problemas de incorporación, incorporación, visor de eventos, recopilación de datos y compilaciones de vista previa, datos de sensor y diagnósticos
+title: Solución de problemas de incorporación relacionados con la administración de seguridad para Microsoft Defender para punto de conexión
+description: Solucione los problemas que puedan surgir durante la incorporación de dispositivos mediante Security Management para Microsoft Defender para punto de conexión.
+keywords: solución de problemas de incorporación, incorporación, visor de eventos, recopilación de datos y compilaciones de versión preliminar, datos y diagnósticos del sensor
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,49 +14,49 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 8d18d0dd193e720f7f91ae0c3a9d384a3715be82
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: e7b9e757f15663338f2e12c645cc3cb0b63ef34b
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467937"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302253"
 ---
-# <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Solucionar problemas de incorporación relacionados con administración de seguridad para Microsoft Defender para endpoint
+# <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Solución de problemas de incorporación relacionados con la administración de seguridad para Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Se aplica a:**
 
-- [Administrar Microsoft Defender para endpoint en dispositivos con Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)
+- [Administración de Microsoft Defender para punto de conexión en dispositivos con Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Administración de seguridad para Microsoft Defender para endpoint es una funcionalidad para dispositivos que no están administrados por una Microsoft Endpoint Manager, ya sea Microsoft Intune o Microsoft Endpoint Configuration Manager , para recibir configuraciones de seguridad para Microsoft Defender para endpoint directamente desde Endpoint Manager.
-Para obtener más información sobre administración de seguridad para Microsoft Defender para endpoint, consulte [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
+Administración de seguridad para Microsoft Defender para punto de conexión es una funcionalidad para dispositivos que no están administrados por un Microsoft Endpoint Manager, ya sea Microsoft Intune o Microsoft Endpoint Configuration Manager, para recibir configuraciones de seguridad para Microsoft Defender para punto de conexión directamente desde Endpoint Manager.
+Para obtener más información sobre la administración de seguridad para Microsoft Defender para punto de conexión, consulte [Administración de Microsoft Defender para punto de conexión en dispositivos con Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
 
-Para obtener instrucciones de administración de seguridad para Microsoft Defender para la incorporación de puntos de conexión, consulte [Microsoft Defender for Endpoint Security Configuration Management](security-config-management.md)
+Para obtener instrucciones de incorporación de security management para Microsoft Defender para punto de conexión, consulte [Microsoft Defender para punto de conexión Security Configuration Management](security-config-management.md)
 
-Esta incorporación de un extremo a otro está diseñada para que no tenga fricción y no requiere la entrada del usuario. Sin embargo, si se producen problemas durante la incorporación, puede ver y solucionar errores en la plataforma de Microsoft Defender para endpoints.
+Esta incorporación de un extremo a otro está diseñada para no tener fricción y no requiere la entrada del usuario. Sin embargo, si encuentra problemas durante la incorporación, puede ver y solucionar errores dentro de la plataforma de Microsoft Defender para punto de conexión.
 
 > [!NOTE]
-> Si tiene problemas con el flujo de incorporación de nuevos dispositivos, revise los [requisitos previos de Microsoft Defender para endpoint y](/mem/intune/protect/mde-security-integration#prerequisites) asegúrese de que se siguen las instrucciones de incorporación.
+> Si tiene problemas con el flujo de incorporación para nuevos dispositivos, revise los [requisitos previos de Microsoft Defender para punto de conexión](/mem/intune/protect/mde-security-integration#prerequisites) y asegúrese de que se siguen las instrucciones de incorporación.
 
-Para obtener más información acerca del analizador de cliente, consulte [Troubleshoot sensor health using Microsoft Defender for Endpoint Client Analyzer](/microsoft-365/security/defender-endpoint/overview-client-analyzer).
+Para obtener más información sobre el analizador de cliente, consulte [Solución de problemas de estado del sensor mediante Microsoft Defender para punto de conexión Analizador de cliente](/microsoft-365/security/defender-endpoint/overview-client-analyzer).
 
-## <a name="registering-domain-joined-computers-with-azure-active-directory"></a>Registrar equipos unidos a un dominio con Azure Active Directory
+## <a name="registering-domain-joined-computers-with-azure-active-directory"></a>Registro de equipos unidos a un dominio con Azure Active Directory
 
-Para registrar correctamente dispositivos en Azure Active Directory, tendrás que asegurarte de lo siguiente:
+Para registrar correctamente los dispositivos en Azure Active Directory, deberá asegurarse de lo siguiente:
 
 - Los equipos pueden autenticarse con el controlador de dominio
 - Los equipos tienen acceso a los siguientes recursos de Microsoft desde la red de su organización:
   - https://enterpriseregistration.windows.net
   - https://login.microsoftonline.com
   - https://device.login.microsoftonline.com
-- Azure AD connect está configurado para sincronizar los objetos del equipo. De forma predeterminada, las us del equipo están Azure AD ámbito de sincronización de conexión. Si los objetos de equipo pertenecen a unidades organizativas (UNIDADES organizativas específicas), configure las unidades organizativas para que se sincronicen en Azure AD Conectar. Para obtener más información sobre cómo sincronizar objetos de equipo mediante Azure AD Conectar, consulte [Filtrado basado en unidades organizativas](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering).
+- Azure AD conectarse está configurado para sincronizar los objetos de equipo. De forma predeterminada, las unidades organizativas del equipo están en Azure AD ámbito de sincronización de conexión. Si los objetos de equipo pertenecen a unidades organizativas (OU) específicas, configure las unidades organizativas para que se sincronicen en Azure AD Conectar. Para más información sobre cómo sincronizar objetos de equipo mediante Azure AD Conectar, consulte [Filtrado basado en unidades organizativas](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering).
 
 > [!IMPORTANT]
-> Azure AD connect no se sincroniza Windows Server 2012 objetos de equipo R2. Si necesita registrarlos con Azure AD para administración de seguridad para Microsoft Defender para endpoint, deberá personalizar una regla de sincronización de conexión Azure AD incluir esos objetos de equipo en el ámbito de sincronización. Consulta [Instrucciones para aplicar la regla de combinación de equipos en Azure Active Directory Conectar]().
+> Azure AD connect no sincroniza Windows Server 2012 objetos de equipo R2. Si necesita registrarlos con Azure AD para Security Management para Microsoft Defender para punto de conexión, deberá personalizar Azure AD regla de sincronización de conexión para incluir esos objetos de equipo en el ámbito de sincronización. Consulte [Instrucciones para aplicar la regla de combinación de equipos en Azure Active Directory Conectar]().
 
 > [!NOTE]
 > Para completar correctamente el flujo de incorporación e independientemente del sistema operativo de un dispositivo, el estado Azure Active Directory de un dispositivo puede cambiar en función del estado inicial de los dispositivos:
@@ -65,54 +65,54 @@ Para registrar correctamente dispositivos en Azure Active Directory, tendrás qu
 >
 >|Inicio del estado del dispositivo|Nuevo estado del dispositivo|
 >|---|---|
->|Ya AADJ o HAADJ|Permanece tal como está|
->|No AADJ o Hybrid Azure Active Directory Join (HAADJ) + Domain joined|El dispositivo es HAADJ'd|
->|Not AADJ or HAADJ + Not domain joined|El dispositivo es AADJ'd|
+>|Ya AADJ o HAADJ|Permanece tal y como está|
+>|No AADJ ni Hybrid Azure Active Directory Join (HAADJ) + Domain joined|El dispositivo es HAADJ'd|
+>|No AADJ o HAADJ + No unido a un dominio|El dispositivo es AADJ'd|
 >
-> Donde AADJ representa Azure Active Directory Joined y HAADJ representa hybrid Azure Active Directory Joined.
+> Donde AADJ representa Azure Active Directory Unido y HAADJ representa Azure Active Directory híbrido unido.
 
-## <a name="troubleshoot-errors-from-the-microsoft-defender-for-endpoint-portal"></a>Solucionar errores del portal de Microsoft Defender para endpoint
+## <a name="troubleshoot-errors-from-the-microsoft-defender-for-endpoint-portal"></a>Solución de problemas de errores del portal de Microsoft Defender para punto de conexión
 
-A través del portal de Microsoft Defender para endpoints, los administradores de seguridad ahora pueden solucionar problemas de administración de seguridad para Microsoft Defender para la incorporación de puntos de conexión.
+A través del portal de Microsoft Defender para punto de conexión, los administradores de seguridad ahora pueden solucionar problemas de administración de seguridad para la incorporación de Microsoft Defender para punto de conexión.
 
-En **el inventario de dispositivos** \> **de** puntos de conexión, la columna **Administrado** por se ha agregado para filtrar por canal de administración (por ejemplo, MEM).
+En Inventario **de** dispositivos de **puntos de conexión**\>, la columna **Administrado por** se ha agregado para filtrar por canal de administración (por ejemplo, MEM).
 
-:::image type="content" source="./images/device-inventory-mde-error.png" alt-text="La página de inventario de dispositivos" lightbox="./images/device-inventory-mde-error.png":::
+:::image type="content" source="./images/device-inventory-mde-error.png" alt-text="Página de inventario de dispositivos" lightbox="./images/device-inventory-mde-error.png":::
 
-Para ver una lista de todos los dispositivos que han fallado en el proceso de incorporación de microsoft defender para puntos de conexión, filtre la tabla **por MDE-Error**.
+Para ver una lista de todos los dispositivos que han producido un error en la administración de seguridad para Microsoft Defender para punto de conexión proceso de incorporación, filtre la tabla por **MDE-Error**.
 
-En la lista, seleccione un dispositivo específico para ver los detalles de solución de problemas en el panel lateral, apuntando a la causa raíz del error y la documentación correspondiente.
+En la lista, seleccione un dispositivo específico para ver los detalles de la solución de problemas en el panel lateral, señalando la causa principal del error y la documentación correspondiente.
 
 
 :::image type="content" source="./images/secconfig-mde-error.png" alt-text="Criterios de filtro aplicados en la página de inventario de dispositivos" lightbox="./images/secconfig-mde-error.png":::
 
-## <a name="run-microsoft-defender-for-endpoint-client-analyzer-on-windows"></a>Ejecute Microsoft Defender para Endpoint Client Analyzer en Windows
+## <a name="run-microsoft-defender-for-endpoint-client-analyzer-on-windows"></a>Ejecute Microsoft Defender para punto de conexión Client Analyzer en Windows
 
-Considere la posibilidad de ejecutar el Analizador de cliente en puntos de conexión que no puedan completar el flujo de incorporación de administración de seguridad para Microsoft Defender para puntos de conexión. Para obtener más información acerca del analizador de cliente, consulte [Troubleshoot sensor health using Microsoft Defender for Endpoint Client Analyzer](overview-client-analyzer.md).
+Considere la posibilidad de ejecutar el Analizador de cliente en puntos de conexión que no pueden completar la administración de seguridad para Microsoft Defender para punto de conexión flujo de incorporación. Para obtener más información sobre el analizador de cliente, consulte [Solución de problemas de estado del sensor mediante Microsoft Defender para punto de conexión Analizador de cliente](overview-client-analyzer.md).
 
-El archivo de salida del analizador de cliente (MDE Client Analyzer Results.htm) puede proporcionar información clave para solucionar problemas:
+El archivo de salida de Client Analyzer (MDE Client Analyzer Results.htm) puede proporcionar información clave de solución de problemas:
 
-- Compruebe que el sistema operativo del dispositivo está en el ámbito del flujo de incorporación de Administración de seguridad para Microsoft Defender para endpoints en la **sección Detalles generales del** dispositivo
-- Comprobar que el dispositivo se ha registrado correctamente para Azure Active Directory en **Detalles de administración de configuración de dispositivos**
+- Compruebe que el sistema operativo del dispositivo está en el ámbito de Administración de seguridad para Microsoft Defender para punto de conexión flujo de incorporación en la sección **Detalles generales del dispositivo**.
+- Compruebe que el dispositivo se ha registrado correctamente en Azure Active Directory en **Detalles de administración de configuración de dispositivos**.
 
   :::image type="content" source="images/client-analyzer-results.png" alt-text="Resultados del analizador de cliente" lightbox="images/client-analyzer-results.png":::
 
-En la **sección Resultados detallados** del informe, el analizador de cliente también proporciona instrucciones que se pueden usar.
+En la sección **Resultados detallados** del informe, el Analizador de cliente también proporciona instrucciones accionables.
 
 > [!TIP]
-> Asegúrese de que la sección Resultados detallados del informe no incluye ningún "error" y asegúrese de revisar todos los mensajes de "Advertencia".
+> Asegúrese de que la sección Resultados detallados del informe no incluya ningún "Error" y asegúrese de revisar todos los mensajes de "Advertencia".
 
-Por ejemplo, como parte del flujo de incorporación de administración de seguridad, es necesario que el identificador de inquilino de Azure Active Directory en el inquilino de Microsoft Defender para endpoint coincida con el identificador de inquilino scp que aparece en la sección  Detalles de administración de configuración de dispositivos de los informes. Si es relevante, el resultado del informe recomendará realizar esta comprobación.
+Por ejemplo, como parte del flujo de incorporación de Security Management, es necesario que el identificador de inquilino de Azure Active Directory del inquilino de Microsoft Defender para punto de conexión coincida con el identificador de inquilino de SCP que aparece en la sección **Detalles de administración de configuración de** dispositivos de los informes. Si procede, la salida del informe le recomendará realizar esta comprobación.
 
-:::image type="content" source="images/detailed-results.png" alt-text="The page showing the detailed results" lightbox="images/detailed-results.png"
+:::image type="content" source="images/detailed-results.png" alt-text="La página que muestra los resultados detallados" lightbox="images/detailed-results.png"
 
 ## <a name="general-troubleshooting"></a>Solución de problemas generales
 
-Si no pudo identificar el dispositivo incorporado en AAD o MEM y no recibió un error durante la inscripción, `Computer\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SenseCM\\EnrollmentStatus` comprobar la clave del Registro puede proporcionar información adicional de solución de problemas.
+Si no pudo identificar el dispositivo incorporado en AAD o MEM y no recibió un error durante la inscripción, comprobar la clave `Computer\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SenseCM\\EnrollmentStatus` del Registro puede proporcionar información adicional sobre la solución de problemas.
 
-:::image type="content" source="images/enrollment-status.png" alt-text="La página que muestra el estado de inscripción" lightbox="images/enrollment-status.png":::
+:::image type="content" source="images/enrollment-status.png" alt-text="Página que muestra el estado de la inscripción" lightbox="images/enrollment-status.png":::
 
-En la tabla siguiente se enumeran los errores y las instrucciones sobre lo que se debe probar y comprobar para solucionar el error. Tenga en cuenta que la lista de errores no está completa y se basa en errores comunes y típicos encontrados por los clientes en el pasado:
+En la tabla siguiente se enumeran los errores y las instrucciones sobre lo que se debe intentar o comprobar para solucionar el error. Tenga en cuenta que la lista de errores no está completa y se basa en los errores típicos o comunes encontrados por los clientes en el pasado:
 
 <br>
 
@@ -120,53 +120,53 @@ En la tabla siguiente se enumeran los errores y las instrucciones sobre lo que s
 
 |Código de error|Estado de inscripción|Acciones de administrador|
 |---|---|---|
-|`5-9`,`11-12`, `26-33`|Error general|El dispositivo se incorporó correctamente a Microsoft Defender para Endpoint. Sin embargo, se produjo un error en el flujo de administración de configuración de seguridad. Esto podría deberse a que el dispositivo no cumple los [requisitos previos del canal de administración de Microsoft Defender para endpoints](security-config-management.md). La ejecución [del analizador de](https://aka.ms/BetaMDEAnalyzer) cliente en el dispositivo puede ayudar a identificar la causa raíz del problema. Si esto no ayuda, póngase en contacto con el soporte técnico.|
-|`13-14`,`20`,`24`,`25`|Problema de conectividad|El dispositivo se incorporó correctamente a Microsoft Defender para Endpoint. Sin embargo, se produjo un error en el flujo de administración de configuración de seguridad que podría deberse a un problema de conectividad. Compruebe que los [Azure Active Directory y Microsoft Endpoint Manager están](security-config-management.md#connectivity-requirements) abiertos en el firewall.|
-|`10`,`42`|Error de combinación híbrida general|El dispositivo se incorporó correctamente a Microsoft Defender para Endpoint. Sin embargo, se produjo un error en el flujo de administración de configuración de seguridad y el sistema operativo no pudo realizar la combinación híbrida. Usa [Solucionar problemas de Azure Active Directory unidos a dispositivos](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current) híbridos para solucionar errores de unión híbrida a nivel del sistema operativo.|
-|`15`|Error de coincidencia del espacio empresarial|El dispositivo se incorporó correctamente a Microsoft Defender para Endpoint. Sin embargo, se produjo un error en el flujo de administración de configuración de seguridad porque el identificador de inquilino de Microsoft Defender para el punto de conexión no coincide con el Azure Active Directory inquilino. Asegúrese de que el Azure Active Directory de inquilino de defender para el punto de conexión coincida con el identificador del inquilino en la entrada SCP del dominio. Para obtener más información, [solucionar problemas de incorporación relacionados con administración de seguridad para Microsoft Defender para endpoint](troubleshoot-security-config-mgt.md).|
-|`16`,`17`|Error híbrido: punto de conexión de servicio|El dispositivo se incorporó correctamente a Microsoft Defender para Endpoint. Sin embargo, el registro de punto de conexión de servicio (SCP) no está configurado correctamente y el dispositivo no se pudo unir a Azure AD. Esto podría deberse a que el SCP está configurado para unirse Enterprise DRS. Asegúrese de que el registro SCP señala a AAD y SCP está configurado siguiendo los procedimientos recomendados. Para obtener más información, vea [Configurar un punto de conexión de servicio](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point).|
-|`18`|Error de certificado|El dispositivo se incorporó correctamente a Microsoft Defender para Endpoint. Sin embargo, se produjo un error en el flujo de administración de configuración de seguridad debido a un error de certificado de dispositivo. El certificado de dispositivo pertenece a un inquilino diferente. Compruebe que se siguen los procedimientos [recomendados al crear perfiles de certificado de confianza](/mem/intune/protect/certificates-trusted-root#create-trusted-certificate-profiles).|
-|`36`|Error de API LDAP|El dispositivo se incorporó correctamente a Microsoft Defender para Endpoint. Sin embargo, se produjo un error en el flujo de administración de configuración de seguridad. Compruebe la topología de red y asegúrese de que la API ldap está disponible para completar las solicitudes de unión híbrida.|
-|`37`|Problema de sincronización local|El dispositivo se incorporó correctamente a Microsoft Defender para Endpoint. Sin embargo, se produjo un error en el flujo de administración de configuración de seguridad. Inténtelo de nuevo más tarde. Si eso no ayuda, consulte Solucionar problemas [de sincronización de objetos Azure AD Conectar sincronización](/azure/active-directory/hybrid/tshoot-connect-objectsync).|
-|`38`,`41`|Error dns|El dispositivo se incorporó correctamente a Microsoft Defender para Endpoint. Sin embargo, se produjo un error en el flujo de administración de configuración de seguridad debido a un error dns. Comprueba la conexión a Internet o la configuración de DNS en el dispositivo. La configuración dns no válida puede estar del lado de la estación de trabajo. Active Directory requiere que use DNS de dominio para funcionar correctamente (y no la dirección del enrutador). Para obtener más información, vea [Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint](troubleshoot-security-config-mgt.md).|
-|`40`|Problema de sincronización de reloj|El dispositivo se incorporó correctamente a Microsoft Defender para Endpoint. Sin embargo, se produjo un error en el flujo de administración de configuración de seguridad. Compruebe que el reloj está configurado correctamente y que está sincronizado en el dispositivo donde se produce el error.|
+|`5-9`,`11-12`, `26-33`|Error general|El dispositivo se incorporó correctamente a Microsoft Defender para punto de conexión. Sin embargo, se produjo un error en el flujo de administración de la configuración de seguridad. Esto podría deberse a que el dispositivo no cumple [los requisitos previos para Microsoft Defender para punto de conexión canal de administración](security-config-management.md). La ejecución del [Analizador de cliente](https://aka.ms/BetaMDEAnalyzer) en el dispositivo puede ayudar a identificar la causa principal del problema. Si esto no ayuda, póngase en contacto con el soporte técnico.|
+|`13-14`,`20`,`24`,`25`|Problema de conectividad|El dispositivo se incorporó correctamente a Microsoft Defender para punto de conexión. Sin embargo, se produjo un error en el flujo de administración de la configuración de seguridad que podría deberse a un problema de conectividad. Compruebe que los [puntos de conexión de Azure Active Directory y Microsoft Endpoint Manager](security-config-management.md#connectivity-requirements) están abiertos en el firewall.|
+|`10`,`42`|Error general de unión híbrida|El dispositivo se incorporó correctamente a Microsoft Defender para punto de conexión. Sin embargo, se produjo un error en el flujo de administración de la configuración de seguridad y el sistema operativo no pudo realizar la unión híbrida. Use [Solución de problemas de dispositivos híbridos unidos a Azure Active Directory](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current) para solucionar errores de unión híbrida de nivel de sistema operativo.|
+|`15`|Error de coincidencia del inquilino|El dispositivo se incorporó correctamente a Microsoft Defender para punto de conexión. Sin embargo, se produjo un error en el flujo de administración de configuración de seguridad porque el identificador de inquilino de Microsoft Defender para punto de conexión no coincide con el identificador de inquilino de Azure Active Directory. Asegúrese de que el identificador de inquilino de Azure Active Directory del inquilino de Defender para punto de conexión coincide con el identificador de inquilino en la entrada SCP del dominio. Para obtener más información, [solucione los problemas de incorporación relacionados con la administración de seguridad para Microsoft Defender para punto de conexión](troubleshoot-security-config-mgt.md).|
+|`16`,`17`|Error híbrido: punto de conexión de servicio|El dispositivo se incorporó correctamente a Microsoft Defender para punto de conexión. Sin embargo, el registro de punto de conexión de servicio (SCP) no está configurado correctamente y el dispositivo no se pudo unir a Azure AD. Esto podría deberse a que el SCP se configura para unirse a Enterprise DRS. Asegúrese de que el registro SCP apunta a AAD y scp está configurado siguiendo los procedimientos recomendados. Para obtener más información, vea [Configurar un punto de conexión de servicio](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point).|
+|`18`|Error de certificado|El dispositivo se incorporó correctamente a Microsoft Defender para punto de conexión. Sin embargo, se produjo un error en el flujo de administración de configuración de seguridad debido a un error de certificado de dispositivo. El certificado de dispositivo pertenece a un inquilino diferente. Compruebe que se siguen los procedimientos recomendados al crear [perfiles de certificado de confianza](/mem/intune/protect/certificates-trusted-root#create-trusted-certificate-profiles).|
+|`36`|Error de LA API DE LDAP|El dispositivo se incorporó correctamente a Microsoft Defender para punto de conexión. Sin embargo, se produjo un error en el flujo de administración de la configuración de seguridad debido a una configuración incorrecta en AAD Conectar. Para identificar lo que impide que el dispositivo se registre en AAD, considere la posibilidad de ejecutar la [herramienta solucionador de problemas de registro de dispositivos](/samples/azure-samples/dsregtool/dsregtool). Para Windows Server 2012 R2, ejecute las [instrucciones de solución de problemas dedicadas](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-legacy).  |
+|`37`|Problema de sincronización local|El dispositivo se incorporó correctamente a Microsoft Defender para punto de conexión. Sin embargo, se produjo un error en el flujo de administración de la configuración de seguridad debido a una configuración incorrecta en AAD Conectar. Para identificar lo que impide que el dispositivo se registre en AAD, considere la posibilidad de ejecutar la [herramienta solucionador de problemas de registro de dispositivos](/samples/azure-samples/dsregtool/dsregtool). Para Windows Server 2012 R2, ejecute las [instrucciones de solución de problemas dedicadas](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-legacy). |
+|`38`,`41`|Error de DNS|El dispositivo se incorporó correctamente a Microsoft Defender para punto de conexión. Sin embargo, se produjo un error en el flujo de administración de la configuración de seguridad debido a un error de DNS. Compruebe la conexión a Internet o la configuración de DNS en el dispositivo. La configuración de DNS no válida podría estar en el lado de la estación de trabajo. Active Directory requiere que use DNS de dominio para funcionar correctamente (y no la dirección del enrutador). Para obtener más información, consulte [Solución de problemas de incorporación relacionados con la administración de seguridad para Microsoft Defender para punto de conexión](troubleshoot-security-config-mgt.md).|
+|`40`|Problema de sincronización de reloj|El dispositivo se incorporó correctamente a Microsoft Defender para punto de conexión. Sin embargo, se produjo un error en el flujo de administración de la configuración de seguridad. Compruebe que el reloj está configurado correctamente y que se sincroniza en el dispositivo donde se produce el error.|
 
-## <a name="azure-active-directory-runtime-troubleshooting"></a>Azure Active Directory solución de problemas en tiempo de ejecución
+## <a name="azure-active-directory-runtime-troubleshooting"></a>solución de problemas de Azure Active Directory Runtime
 
-### <a name="azure-active-directory-runtime"></a>Azure Active Directory runtime
+### <a name="azure-active-directory-runtime"></a>tiempo de ejecución de Azure Active Directory
 
-El mecanismo principal para solucionar Azure Active Directory Runtime (AADRT) es recopilar seguimientos de depuración. Azure Active Directory Runtime en Windows usa el proveedor **ETW con id. bd67e65c-9cc2-51d8-7399-0bb9899e75c1**. Los seguimientos etw deben capturarse con la reproducción del error (por ejemplo, si se produce un error de unión, los seguimientos deben habilitarse durante el tiempo que cubre las llamadas a las API de AADRT para realizar la unión).
+El mecanismo principal para solucionar problemas de Azure Active Directory Runtime (AADRT) es recopilar seguimientos de depuración. Azure Active Directory runtime en Windows usa **el proveedor ETW con el identificador bd67e65c-9cc2-51d8-7399-0bb9899e75c1**. Los seguimientos ETW deben capturarse con la reproducción del error (por ejemplo, si se produce un error de combinación, los seguimientos deben estar habilitados durante el tiempo que se cubren las llamadas a las API de AADRT para realizar la unión).
 
-Vea a continuación un error típico en el registro de AADRT y cómo leerlo:
+Consulte a continuación un error típico en el registro de AADRT y cómo leerlo:
 
 :::image type="content" source="images/event-properties.png" alt-text="Página de propiedades del evento" lightbox="images/event-properties.png":::
 
-A partir de la información del mensaje, en la mayoría de los casos es posible comprender qué error se encontró, qué API de Win32 devolvió el error (si corresponde), qué dirección URL (si corresponde) se usó y qué error de API de tiempo de ejecución de AAD se encontró.
+A partir de la información del mensaje, es posible en la mayoría de los casos comprender qué error se encontró, qué API win32 devolvió el error (si procede), qué dirección URL (si procede) se usó y qué AAD error de API en tiempo de ejecución se encontró.
 
 ## <a name="instructions-for-applying-computer-join-rule-in-aad-connect"></a>Instrucciones para aplicar la regla de combinación de equipos en AAD Conectar
 
-Para administración de seguridad para Microsoft Defender para endpoint en equipos unidos Windows Server 2012 dominio R2, se necesita una actualización Azure AD Conectar la regla de sincronización "In from AD-Computer Join". Esto se puede lograr mediante la clonación y modificación de la regla, que deshabilitará la regla original "Entrada desde AD - Combinación de equipos". Azure AD Conectar ofrece esta experiencia de forma predeterminada para realizar cambios en las reglas integradas.
+Para la administración de seguridad para Microsoft Defender para punto de conexión en equipos unidos a Windows Server 2012 dominio R2, se necesita una actualización a Azure AD Conectar regla de sincronización "In from AD-Computer Join". Esto se puede lograr mediante la clonación y modificación de la regla, que deshabilitará la regla original "In from AD - Computer Join". Azure AD Conectar de forma predeterminada ofrece esta experiencia para realizar cambios en las reglas integradas.
 
 > [!NOTE]
->Estos cambios deben aplicarse en el servidor donde AAD Conectar se está ejecutando. Si tiene varias instancias de AAD Conectar implementadas, estos cambios deben aplicarse a todas las instancias.
+>Estos cambios deben aplicarse en el servidor donde se ejecuta AAD Conectar. Si tiene varias instancias de AAD Conectar implementadas, estos cambios se deben aplicar a todas las instancias.
 
-1. Abra la aplicación Editor de reglas de sincronización desde el menú inicio. En la lista de reglas, busque la regla denominada **In from AD – Computer Join**. **Tome nota del valor de la columna "Precedencia" de esta regla.**
+1. Abra la aplicación Editor de reglas de sincronización desde el menú inicio. En la lista de reglas, busque la regla denominada **In from AD – Computer Join (In from AD – Computer Join).** **Tome nota del valor de la columna "Precedencia" de esta regla.**
 
    :::image type="content" source="images/57ea94e2913562abaf93749d306dd6cf.png" alt-text="Editor de reglas de sincronización" lightbox="images/57ea94e2913562abaf93749d306dd6cf.png":::
 
-2. Con la **regla In from AD – Computer Join** resaltada, selecciona **Editar**. En el **cuadro de diálogo Editar confirmación de** regla reservada, seleccione **Sí**.
+2. Con la regla **In from AD – Computer Join (In from AD – Computer Join** ) resaltada, seleccione **Editar**. En el cuadro de diálogo **Editar confirmación de regla reservada** , seleccione **Sí**.
 
-   :::image type="content" source="images/8854440d6180a5580efda24110551c68.png" alt-text="Página de confirmación de regla reservada de edición" lightbox="images/8854440d6180a5580efda24110551c68.png":::
+   :::image type="content" source="images/8854440d6180a5580efda24110551c68.png" alt-text="Página de confirmación de la regla reservada de edición" lightbox="images/8854440d6180a5580efda24110551c68.png":::
 
-3. Se **mostrará la ventana Editar regla de sincronización** de entrada. Actualice la descripción de la regla para tener en cuenta que Windows Server 2012R2 se sincronizará con esta regla. Deje todas las demás opciones sin cambios excepto el valor De prioridad. Escriba un valor para Precedence que sea mayor que el valor de la regla original (como se ve en la lista de reglas).
+3. Se mostrará la ventana **Editar regla de sincronización de entrada** . Actualice la descripción de la regla para tener en cuenta que Windows Server 2012R2 se sincronizará con esta regla. Deje todas las demás opciones sin modificar, excepto el valor precedencia. Escriba un valor para Precedencia que sea mayor que el valor de la regla original (como se muestra en la lista de reglas).
 
    :::image type="content" source="images/ee0f29162bc3f2fbe666c22f14614c45.png" alt-text="Página Editar regla de sincronización de entrada en la que se escriben valores" lightbox="images/ee0f29162bc3f2fbe666c22f14614c45.png":::
 
-4. Seleccione **Siguiente** tres veces. Esto navegará a la sección "Transformaciones" de la regla. No realice ningún cambio en las secciones "Filtro de ámbito" y "Reglas de unión" de la regla. Ahora se debe mostrar la sección "Transformaciones".
+4. Seleccione **Siguiente** tres veces. Esto navegará a la sección "Transformaciones" de la regla. No realice ningún cambio en las secciones "Filtro de ámbito" y "Reglas de combinación" de la regla. Ahora se debe mostrar la sección "Transformaciones".
 
-   :::image type="content" source="images/296f2c2a705e41233631c3784373bc23.png" alt-text="La regla de sincronización de entrada" lightbox="images/296f2c2a705e41233631c3784373bc23.png":::
+   :::image type="content" source="images/296f2c2a705e41233631c3784373bc23.png" alt-text="Regla de sincronización de entrada" lightbox="images/296f2c2a705e41233631c3784373bc23.png":::
 
-5. Desplácese hasta la parte inferior de la lista de transformaciones. Busque la transformación del atributo **cloudFiltered** . En el cuadro de texto de la **columna Origen** , seleccione todo el texto (Control-A) y elimínelo. El cuadro de texto ahora debe estar vacío.
+5. Desplácese hasta la parte inferior de la lista de transformaciones. Busque la transformación del atributo **cloudFiltered** . En el cuadro de texto de la columna **Origen** , seleccione todo el texto (Control-A) y elimínelo. El cuadro de texto ahora debe estar vacío.
 
 6. Pegue el contenido de la nueva regla en el cuadro de texto.
 
@@ -203,8 +203,8 @@ Para administración de seguridad para Microsoft Defender para endpoint en equip
 7. Seleccione **Guardar** para guardar la nueva regla.
 
 > [!NOTE]
-> Después de realizar este cambio de regla, se requiere una sincronización completa de Active Directory. Para entornos grandes, se recomienda programar este cambio de regla y la sincronización completa durante períodos de silencio de Active Directory local.
+> Una vez realizado este cambio de regla, se necesitará una sincronización completa de Active Directory. En entornos grandes, se recomienda programar este cambio de regla y la sincronización completa durante los períodos de silencio de Active Directory local.
 
 ## <a name="related-topic"></a>Tema relacionado
 
-- [Administrar Microsoft Defender para endpoint en dispositivos con Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)
+- [Administración de Microsoft Defender para punto de conexión en dispositivos con Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)

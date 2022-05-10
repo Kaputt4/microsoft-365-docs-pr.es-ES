@@ -1,3 +1,7 @@
-- name: Microsoft 365 Empresa Premium
-  tocHref: /business-premium/
-  topicHref: /microsoft-365/business-premium/
+- name: Microsoft 365 para empresas
+  tocHref: /business/
+  topicHref: /business/index
+  items:
+    - name: Microsoft 365 Empresa Premium
+      tocHref: /microsoft-365/business-premium/index
+      topicHref: /business-premium/index

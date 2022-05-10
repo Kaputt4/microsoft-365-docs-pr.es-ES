@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b428a1c8131286f04456a217b284a9bc0fe17413
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 4c4b4e1310d56969b52de11ba51dd0f5f5ea62f9
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285644"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302375"
 ---
 # <a name="microsoft-defender-experts-for-hunting-preview"></a>Microsoft Defender Experts for Hunting preview
 
@@ -41,13 +41,13 @@ Expertos en búsqueda de Microsoft Defender (expertos de Defender para la búsqu
 
 [Vea este breve vídeo](https://youtu.be/4t1JgE0X0jc) para obtener más información sobre cómo los expertos de Microsoft Defender para la búsqueda pueden ayudarle a realizar un seguimiento de las amenazas avanzadas más recientes en su entorno.
 
-Expertos de Defender para la búsqueda proporciona notificaciones de ataque dirigidas directamente a través del portal de Microsoft 365 Defender. Estas notificaciones le ayudarán a proteger los puntos de conexión, el correo electrónico, las identidades y las aplicaciones en la nube de su organización. También recibirá acceso a Expertos a petición, que le permite hacer clic en un botón en el portal de Microsoft 365 Defender para obtener consejos expertos sobre las amenazas a las que se enfrenta su organización. Puede consultar a expertos y buscar ayuda con las amenazas a las que se enfrenta su organización. En esta versión preliminar, puede probar el servicio de forma gratuita y disfrutar de las siguientes funcionalidades:
+Expertos de Defender para la búsqueda proporciona notificaciones de ataque dirigidas directamente a través del portal de Microsoft 365 Defender. Estas notificaciones le ayudarán a proteger los puntos de conexión, el correo electrónico, las aplicaciones en la nube y las identidades de su organización. También recibirá acceso a Expertos a petición que le permite hacer clic en un botón en el portal de Microsoft 365 Defender para obtener consejos expertos sobre las amenazas a las que se enfrenta su organización. Puede consultar a expertos y buscar ayuda con las amenazas a las que se enfrenta su organización. En esta versión preliminar, puede probar el servicio de forma gratuita y disfrutar de las siguientes funcionalidades:
 
-- **Búsqueda y análisis de amenazas** : los expertos de Defender para la búsqueda buscan más detalles para exponer amenazas avanzadas e identificar el ámbito y el impacto de la actividad malintencionada asociada a adversarios humanos o ataques prácticos con teclado. 
-- **Notificación de ataque de destino**: las notificaciones se muestran como incidentes en Microsoft 365 Defender, lo que ayuda a mejorar la respuesta a incidentes de las operaciones de seguridad con información específica sobre el ámbito, el método de entrada y las instrucciones de corrección. 
-- **Expertos a petición** : consulte a un experto en amenazas sobre un incidente específico, un actor de estado de nación o un vector de ataque. 
-- **IA entrenada por cazadores** : nuestros expertos de Defender para la caza comparten su aprendizaje en las herramientas automatizadas que usan para mejorar la detección y priorización de amenazas. 
-- **Informes** : un informe interactivo que resume lo que hemos buscado, lo que hemos encontrado y lo que se recomienda
+- **Búsqueda y análisis de amenazas** : los expertos de Defender para la búsqueda buscan más detalles para exponer amenazas avanzadas e identificar el ámbito y el impacto de la actividad malintencionada asociada a adversarios humanos o ataques prácticos con teclado.
+- **Notificación de ataque de destino**: las notificaciones se muestran como incidentes en Microsoft 365 Defender, lo que ayuda a mejorar la respuesta a incidentes de las operaciones de seguridad con información específica sobre el ámbito, el método de entrada y las instrucciones de corrección.
+- **Expertos a petición** : consulte a un experto en amenazas sobre un incidente específico, un actor de estado de nación o un vector de ataque.
+- **IA entrenada por cazadores** : nuestros expertos de Defender para la caza comparten su aprendizaje en las herramientas automatizadas que usan para mejorar la detección y priorización de amenazas.
+- **Informes** : un informe interactivo que resume lo que hemos buscado, lo que hemos encontrado y lo que se recomienda.
 
 ## <a name="apply-for-microsoft-defender-experts-for-hunting-service-preview"></a>Solicitud para la versión preliminar del servicio Expertos de Microsoft Defender para la búsqueda
 
@@ -57,10 +57,7 @@ Expertos de Defender para la búsqueda proporciona notificaciones de ataque diri
 Si aún no lo ha hecho, puede solicitar expertos de Defender para la búsqueda:
 
 1. Haga clic en [**Aplicar**](https://aka.ms/expandedMTEprev). Solo los administradores globales pueden registrar y completar el proceso de aplicación. Si no es un administrador global, póngase en contacto con el administrador global para rellenar el formulario de aplicación.
-2. Escriba el **identificador de correo electrónico** y el **identificador de inquilino de** la empresa.
-    - Para buscar el identificador de inquilino, haga clic en El identificador de **inquilino donde encuentro mi identificador de inquilino** para ir al portal de Microsoft 365 Defender.
-    - En el panel de navegación, vaya a **Configuración > Defender 365** para ver el identificador de inquilino.
-    - Copie el identificador de inquilino y péguelo en el formulario.
+2. Escriba el **identificador de correo electrónico de su empresa**.
 3. Seleccione **Enviar**. Recibirá un mensaje de confirmación de que se ha recibido la aplicación.  
 4. Tras la aprobación, recibirá un correo electrónico para registrarse.
 
@@ -71,9 +68,9 @@ Debe seguir estos pasos para unirse a la versión preliminar:
 1. En el correo electrónico de aceptación de la aplicación que ha recibido, haga clic en **Registrar.** Se abrirá el cuadro de diálogo de inicio de sesión en la cuenta de Microsoft 365.
 2. Pida al administrador global que registre su empresa (el vínculo se proporcionará en el correo electrónico que recibirá). Inicia sesión. Se abre **la página Configuración**.
 3. Vaya a **Configuración > Expertos de Microsoft Defender**.
-4. Lea los **términos y condiciones de la versión preliminar de Expertos de Microsoft Defender para la búsqueda**. Si tiene alguna pregunta o duda, póngase en contacto con el equipo de expertos de Microsoft Defender en defenderexpertsphelp@microsoft.com.
+4. Lea los **términos y condiciones de la versión preliminar de Expertos de Microsoft Defender para la búsqueda**. Si tiene alguna pregunta o duda, póngase en contacto con el equipo de expertos de Microsoft Defender en defenderexpertshelp@microsoft.com.
 5. Haga clic en **Aceptar** para aceptar los términos y condiciones.
-6. Obtenga su versión preliminar gratuita en [Centro de administración de Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/business/office-365-administration). Solo puede realizar el pedido una vez que haya aceptado los términos y condiciones. Seleccione **Obtener licencia** para iniciar el aprovisionamiento en el Centro de administración. Esto le llevará a la página de finalización de la compra para comprobar los detalles del pedido. El servicio podría estar disponible comercialmente menos de 6 meses después de comenzar la versión preliminar gratuita.  Microsoft se reserva el derecho de finalizar la versión preliminar en ese momento.
+6. Obtenga su versión preliminar gratuita en [Centro de administración de Microsoft 365](https://www.microsoft.com/microsoft-365/business/office-365-administration). Solo puede realizar el pedido una vez que haya aceptado los términos y condiciones. Seleccione **Obtener licencia** para iniciar el aprovisionamiento en el Centro de administración. Esto le llevará a la página de finalización de la compra para comprobar los detalles del pedido. El servicio podría estar disponible comercialmente menos de seis meses después de comenzar la versión preliminar gratuita.  Microsoft se reserva el derecho de finalizar la versión preliminar en ese momento.
 7. En la página **Desprotección** , seleccione **Realizar pedido**.  
 
 ## <a name="start-using-your-microsoft-defender-experts-for-hunting-service-preview"></a>Empezar a usar la versión preliminar del servicio Expertos de Microsoft Defender para la búsqueda

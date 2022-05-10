@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use eDiscovery (Premium) y el Explorador de Microsoft Graph para buscar y purgar mensajes de chat en Microsoft Teams y responder a incidentes de desbordamiento de datos en Teams.
-ms.openlocfilehash: 2a1c0bcda3c406f33edcacd77aba359437655ced
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: c2202c45cc5e3caaa0af429439d44b1dfed3ac86
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294578"
+ms.locfileid: "65302077"
 ---
 # <a name="search-and-purge-chat-messages-in-teams-preview"></a>Buscar y purgar mensajes de chat en Teams (versión preliminar)
 
@@ -103,6 +103,9 @@ Ahora ya está listo para purgar realmente los mensajes de chat de Teams. Usará
 3. Purgar los mensajes de chat devueltos por la colección.
 
 Para obtener información sobre el uso de Graph Explorer, consulte [Uso del Explorador de Graph para probar las API de Microsoft Graph](/graph/graph-explorer/graph-explorer-overview).
+
+> [!IMPORTANT]
+> Las API de la versión /beta de Microsoft Graph están sujetas a cambios. No se admite el uso de estas API en aplicaciones de producción. Para determinar si una API está disponible en la versión 1.0, use el selector de versiones.
 
 > [!IMPORTANT]
 > Para realizar estas tres tareas en Graph Explorador, es posible que tenga que dar su consentimiento a los permisos eDiscovery.Read.All y eDiscovery.ReadWrite.All. Para obtener más información, consulte la sección "Consentimiento para permisos" en [Trabajar con Graph Explorer](/graph/graph-explorer/graph-explorer-features#consent-to-permissions).

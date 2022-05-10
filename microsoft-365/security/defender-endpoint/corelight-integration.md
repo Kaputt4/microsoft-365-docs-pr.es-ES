@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bf3095b9178b4ff2e71d4ee5f652d9316f233746
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a3d7548dc71c3a9d588d2a77fae5c4ed71f139f4
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664598"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302325"
 ---
 # <a name="enable-corelight-data-integration"></a>Habilitar la integración de datos de Corelight
 
@@ -67,52 +67,41 @@ Para habilitar la integración de Corelight, deberá realizar los pasos siguient
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>Paso 3: Configuración del dispositivo Corelight para enviar datos a Microsoft 365 Defender
 
 > [!NOTE]
->  La integración será pública en el software Corelight Sensor v24 y versiones posteriores. 
-
-Para obtener una vista previa en v23 o v22.1, debe ejecutar `corelight-client configuration update --enable.adfiot 1` para habilitar la sección de configuración en la GUI.
-
-Además de esto, la validación de la GUI requiere que un agente esté configurado en la sección de configuración en todas las versiones v23.  El agente que proporcione es necesario, pero no se usará realmente. Escriba `127.0.0.1:1234` en el campo _agente kafka_ para garantizar una validación correcta antes de seguir los pasos siguientes para habilitar el envío de datos a Microsoft 365 Defender.
-
-> [!NOTE]
+> La integración está disponible en el software Corelight Sensor v24 y versiones posteriores.
+> 
 > Necesitará conectividad a Internet para que el sensor llegue a los servicios en la nube de Defender y Corelight para que la solución funcione.
 
-#### <a name="enabling-in-the-corelight-sensor-gui"></a>Habilitación en la GUI de Corelight Sensor
+#### <a name="enable-the-integration-in-the-corelight-web-interface"></a>Habilitación de la integración en la interfaz web de Corelight
 
-1. En la sección Configuración de la GUI del sensor corelight, seleccione **Exportación** **de sensor**\>.
-2. En la lista, vaya a **EXPORTAR A KAFKA** y seleccione el modificador para activarlo.
+1. En la interfaz web de Corelight, vaya a **Exportación de sensor**\>.
 
-   :::image type="content" source="images/exporttokafka.png" alt-text="Exportación de kafka" lightbox="images/exporttokafka.png":::
+   :::image type="content" source="images/exporttodefender.png" alt-text="Exportación de kafka" lightbox="images/exporttodefender.png":::
 
-3. A continuación, active **EXPORTAR A AZURE DEFENDER FOR IOT** y escriba el identificador de inquilino, que se indica en el paso 1, en el campo IDENTIFICADOR DE INQUILINO.
+2. Habilite **Exportar a Microsoft Defender**.
+3. Escriba el identificador de inquilino de Microsoft 356 Defender.
+4. Opcionalmente, puede:
+    - establezca los **registros de Zeek en Excluir**. El conjunto mínimo de registros que debe incluir son: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp y notice.
+    - elija crear un **filtro de registro de Microsoft Defender**.
+5. Seleccione **Aplicar cambios**.
 
-   :::image type="content" source="images/exporttodiot.png" alt-text="Exportación de iot" lightbox="images/exporttodiot.png":::
+#### <a name="enable-the-integration-in-the-corelight-client"></a>Habilitación de la integración en corelight-client
 
-4. Seleccione **Aplicar cambios**.
+1. Habilite **Exportar a Microsoft Defender** mediante el siguiente comando en corelight-client:
 
-   :::image type="content" source="images/corelightapply.png" alt-text="Icono Aplicar cambios" lightbox="images/corelightapply.png":::
+    ``` command
+    corelight-client configuration update \
+    --bro.export.defender.enable True
+    ```
 
-> [!NOTE]
-> Las opciones de configuración de Kafka (excepto la exclusión de registros y los filtros) no deben cambiarse. Los cambios realizados se omitirán.
+2. Establecimiento del identificador de inquilino
 
-#### <a name="enabling-in-the-corelight-client"></a>Habilitación en corelight-client
+3. Opcionalmente, puede usar el siguiente comando para excluir determinados registros o para crear un filtro de registro de Microsoft Defender. El conjunto mínimo de registros que debe incluir son: dns, conn, files, http, ssl, ssh, x509, snmp, smtp, ftp, sip, dhcp y notice.
 
-Puede activar **EXPORT TO KAFKA** y **EXPORT TO AZURE DEFENDER FOR IOT** mediante el siguiente comando en corelight-client:
-
-`corelight-client configuration update --bro.export.kafka.defender.enable true --bro.export.kafka.defender.tenant\_id <your tenant>`.
-
-> [!IMPORTANT]
-> Si ya usa la exportación de Kafka, póngase en contacto con el soporte técnico de Corelight para obtener una configuración alternativa.
-
-Para configurar solo el envío del conjunto mínimo de registros:
-
-1. En la GUI de Corelight Sensor, vaya a la sección Kafka.
-2. Vaya a **Registros de Zeek para excluir**
-3. Seleccionar **todo**
-4. A continuación, seleccione **x** junto a los registros siguientes para asegurarse de que continúan fluyendo a Microsoft:  
-    `dns  conn  files  http  ssl  ssh  x509  snmp  smtp  ftp  sip  dhcp  notice`
-5. Seleccione **Aplicar cambios.**
-
-La lista de registros que fluyen a Microsoft puede expandirse con el tiempo.
+   ``` command
+     corelight-client configuration update \
+    --bro.export.defender.exclude=<logs_to_exclude> \
+    --bro.export.defender.filter=<logs_to_filter>
+   ```
 
 ## <a name="see-also"></a>Vea también
 
