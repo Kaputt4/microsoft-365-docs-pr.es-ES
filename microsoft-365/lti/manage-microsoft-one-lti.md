@@ -12,12 +12,12 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo llevar a cabo tareas clave de administración de Microsoft OneLTI, incluida la visualización, eliminación, edición y solución de problemas.
-ms.openlocfilehash: 8b788028a453969f13c31bbe72962c1b7df955a6
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 04d6921d9ed9c4963e2bff8287e79f83bd6807fe
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823464"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65287121"
 ---
 # <a name="manage-microsoft-onelti-for-any-lms"></a>Administración de Microsoft OneLTI para cualquier LMS
 
@@ -74,6 +74,7 @@ Si es así, estos son algunos problemas comunes y cómo resolverlos.
 - **No se pueden encontrar cookies**
   - Las cookies de terceros deben permitirse para la **dirección URL de LMS** en la configuración del explorador.
   - Estas cookies son necesarias para completar el protocolo de enlace LTI 1.3 según las especificaciones de IMS.
+  - Para obtener información sobre cómo actualizar la configuración de cookies del explorador, consulte [Permitir cookies para direcciones URL lms en el explorador](browser-cookies.md).
 
 - **No se encontraron detalles de registro**
   - Este problema se produce cuando no se completó el registro de la herramienta LTI o si el registro se eliminó en el portal de administración de OneLTI.

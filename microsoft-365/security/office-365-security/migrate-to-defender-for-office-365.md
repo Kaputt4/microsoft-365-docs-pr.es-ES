@@ -19,12 +19,12 @@ ms.custom: ''
 description: Obtenga información sobre la manera correcta de migrar desde dispositivos o servicios de protección de terceros como Google Postini, Barracuda Spam y Virus Firewall o Cisco IronPort para Microsoft Defender para Office 365 protección.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2f67135e2b8a3700a2fb6a6e24fc4f66696db2e3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 87100c2faa071075b9658591dad821d240b60b84
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098722"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65284982"
 ---
 # <a name="migrate-from-a-third-party-protection-service-or-device-to-microsoft-defender-for-office-365"></a>Migración desde un dispositivo o servicio de protección de terceros a Microsoft Defender para Office 365
 
@@ -32,6 +32,9 @@ ms.locfileid: "65098722"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
 Si ya tiene un dispositivo o servicio de protección de terceros existente que se encuentra delante de Microsoft 365, puede usar esta guía para migrar la protección a Microsoft Defender para Office 365 para obtener las ventajas de una experiencia de administración consolidada, un costo potencialmente reducido (con productos que ya paga) y un producto maduro con seguridad integrada.  Protección. Para obtener más información, consulte [Microsoft Defender para Office 365](https://www.microsoft.com/security/business/threat-protection/office-365-defender).
+
+Vea este breve vídeo para obtener más información sobre la migración a Defender para Office 365.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfH]
 
 En esta guía se proporcionan pasos específicos y accionables para la migración y se asumen los siguientes hechos:
 

@@ -1,5 +1,5 @@
 ---
-title: Usar el Bloqueo de conservación para restringir los cambios en las directivas de retención y en las directivas de las etiquetas de retención
+title: Usar el Bloqueo de conservación para restringir los cambios en las directivas de retención
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,16 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Use el Bloqueo de conservación con las directivas de retención y las directivas de etiquetas de retención para ayudar a cumplir los requisitos normativos y protegerse frente a administradores no autorizados.
-ms.openlocfilehash: ac957475474e1d99dff541ac9a208ae5dc681217
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: cf72f0b2eed6328244bf78c9e365447c9f38edeb
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761735"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286020"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>Usar el Bloqueo de conservación para restringir los cambios en las directivas de retención y en las directivas de las etiquetas de retención
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
 > Actualmente, los [ámbitos de directiva adaptables](retention.md#adaptive-or-static-policy-scopes-for-retention) no admiten el Bloqueo de conservación.
@@ -91,4 +93,4 @@ Debería ver **restrictRetention** está establecido en **True**. Por ejemplo:
 
 ## <a name="see-also"></a>Consulte también
 
-[Recursos para ayudarle a cumplir los requisitos normativos para la gobernanza de información y la administración de registros](retention-regulatory-requirements.md)
+[Recursos para ayudarle a cumplir los requerimientos reglamentarios para la administración del ciclo de vida de datos y de registros](retention-regulatory-requirements.md)

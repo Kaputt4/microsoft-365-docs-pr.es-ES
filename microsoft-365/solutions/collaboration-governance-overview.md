@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Conozca los procedimientos recomendados de gobernanza para las herramientas de colaboración Microsoft 365, incluidos Grupos de Microsoft 365, Teams, SharePoint y Yammer.
-ms.openlocfilehash: 130342725e8c43b4aeaac116b94704db3046e059
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f4afed27fa6d40f7f6967583bcfd3f43c69c7963
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941399"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285004"
 ---
 # <a name="what-is-collaboration-governance"></a>¿Qué es la gobernanza de la colaboración?
 
@@ -58,7 +58,7 @@ Microsoft 365 grupos incluyen un conjunto de recursos vinculados que los usuario
 |:------|:----------|
 |[Calendario](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)|Para programar eventos relacionados con el grupo|
 |[Bandeja de entrada](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|Para las conversaciones por correo electrónico entre miembros del grupo. Esta bandeja de entrada tiene una dirección de correo electrónico y se puede establecer para aceptar mensajes de personas ajenas al grupo e incluso fuera de su organización, de forma muy similar a una lista de distribución tradicional.|
-|[Bloc de notas de OneNote](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|Para recopilar ideas, investigación e información|
+|[cuaderno de OneNote](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|Para recopilar ideas, investigación e información|
 |[Planificador](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|Para asignar y administrar tareas de proyecto entre los miembros del grupo|
 |[área de trabajo de Power BI](/power-bi/collaborate-share/service-new-workspaces)|Un espacio de colaboración de datos con paneles e informes|
 |[Project y hoja de ruta](https://support.microsoft.com/project)|Herramientas de administración de proyectos basadas en web|
@@ -182,7 +182,7 @@ Estos módulos de entrenamiento de Microsoft Learn pueden ayudarle a aprender la
 
 |Aprendizaje:|Proteger la información de la empresa con Microsoft 365|
 |:---|:---|
-|![Teams icono de entrenamiento.](../media/protect-enterprise-information-microsoft-365.svg)|Proteger y asegurar la información de su organización es más difícil que nunca. La ruta de aprendizaje Proteger la información de la empresa con Microsoft 365 analiza cómo proteger su información confidencial de un uso excesivo o indebido accidental, cómo descubrir y clasificar los datos, cómo protegerlos con etiquetas de sensibilidad y cómo supervisar y analizar su información confidencial para protegerla contra su pérdida. Esta ruta de aprendizaje puede ayudarle a prepararse para las certificaciones Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<br><br>1 h - ruta de acceso Learning - 5 módulos|
+|![Teams icono de entrenamiento.](../media/protect-enterprise-information-microsoft-365.svg)|Proteger y asegurar la información de su organización es más difícil que nunca. La ruta de aprendizaje Proteger la información de la empresa con Microsoft 365 analiza cómo proteger su información confidencial de un uso excesivo o indebido accidental, cómo descubrir y clasificar los datos, cómo protegerlos con etiquetas de confidencialidad y cómo supervisar y analizar su información confidencial para protegerla contra su pérdida. Esta ruta de aprendizaje puede ayudarle a prepararse para las certificaciones Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<br><br>1 h - ruta de acceso Learning - 5 módulos|
 
 > [!div class="nextstepaction"]
 > [Iniciar >](/learn/modules/m365-security-info-overview/introduction/)
@@ -205,7 +205,7 @@ Lo que necesitan saber los arquitectos de TI sobre los grupos en Microsoft 365
 
 |**Item**|**Descripción**|
 |:-----|:-----|
-|[![Imagen del pulgar para la infografía de grupos.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Actualizado en junio de 2019|Estas ilustraciones detallan los diferentes tipos de grupos, cómo se crean y administran, y algunas recomendaciones para el gobierno de estos.|
+|[![Imagen del pulgar para la infografía de grupos.](../downloads/msft-m365-groups-architecture-thumb.png)](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) <br/> [PDF](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) \| [Visio](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.vsdx) <br> Actualizado en mayo de 2022|Estas ilustraciones detallan los diferentes tipos de grupos, cómo se crean y administran, y algunas recomendaciones para el gobierno de estos.|
 
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams y servicios de productividad relacionados de Microsoft 365 para arquitectos de TI
 La arquitectura lógica de los servicios de productividad en Microsoft 365, una de las más destacadas gracias a Microsoft Teams.
@@ -221,7 +221,7 @@ Microsoft 365 incluye un amplio conjunto de funcionalidades de cumplimiento y pr
 Este conjunto de ilustraciones usa uno de los sectores más regulados, los servicios financieros, para demostrar cómo se pueden aplicar estas capacidades para abordar los requisitos normativos comunes. Siéntase libre de adaptar estas ilustraciones para su propio uso. 
 
 
-| Elemento | Descripción |
+| Elemento | Description |
 |:-----|:-----|
 |[![Póster del modelo: Funcionalidades de cumplimiento y protección de la información de Microsoft Purview.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Inglés: [Descargar como PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Descargar como Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japonés: [Descargar como PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Descargar como Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Actualizado en noviembre de 2020|Incluye: <ul><li>  Prevención de pérdida de datos de Microsoft Purview Information Protection y Microsoft Purview</li><li>Directivas y etiquetas de retención </li><li>Barreras de información</li><li>Cumplimiento de comunicaciones</li><li>Riesgo de Insider</li><li>Ingesta de datos de terceros</li>|
 
@@ -245,9 +245,9 @@ Obtenga información sobre cómo configurar el ciclo de vida de expiración de l
 
 Vea un ejemplo en segundo plano de cómo Grupos de Microsoft 365, SharePoint, Teams y Yammer funcionan juntos para proporcionar una plataforma de colaboración global.
 
-- [Encontrar el punto ideal de colaboración con grupos de Office 365, SharePoint, Teams y Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
+- [Encontrar el punto ideal de colaboración con Grupos de Microsoft 365, SharePoint, Teams y Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Documentación de Seguridad de Microsoft 365](../security/index.yml)
 

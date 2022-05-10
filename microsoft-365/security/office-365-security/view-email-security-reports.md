@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d97442fc2c3767a30c1ea98dc4a1ee7a38e56b45
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: c83213278c7f9bc3b63c141e4d964475d64599d1
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971009"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286634"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Visualización de informes de seguridad de correo electrónico en el portal de Microsoft 365 Defender
 
@@ -124,7 +124,7 @@ La siguiente información se muestra en la tabla de detalles debajo del gráfico
 - **Date**
 - **Directiva DLP** (solo **ver datos mediante reglas de transporte Exchange DLP**)
 - **Regla de transporte**
-- **Subject**
+- **Asunto**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Gravedad**
@@ -155,7 +155,7 @@ La siguiente información se muestra en la tabla de detalles debajo del gráfico
 - **Date**
 - **Directiva DLP** (solo **ver datos mediante reglas de transporte Exchange DLP**)
 - **Regla de transporte**
-- **Subject**
+- **Asunto**
 - **Dirección del remitente**
 - **Dirección del destinatario**
 - **Gravedad**
@@ -518,7 +518,7 @@ En la vista **Ver datos por correo electrónico \> y** **Desglose del gráfico p
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Date**
-- **Subject**
+- **Asunto**
 - **Remitente**
 - **Destinatarios**
 - **Tecnología de detección**
@@ -570,7 +570,7 @@ En la vista **Ver datos por correo no deseado por correo electrónico \>** y **D
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Date**
-- **Subject**
+- **Asunto**
 - **Remitente**
 - **Destinatarios**
 - **Tecnología de detección**
@@ -675,7 +675,7 @@ En **Las vistas Ver datos por correo electrónico \> phish**, **Ver datos por co
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Date**
-- **Subject**
+- **Asunto**
 - **Remitente**
 - **Destinatarios**
 - **Tecnología de detección**
@@ -748,7 +748,7 @@ En **Las vistas Ver datos por correo electrónico \> phish**, **Ver datos por co
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Date**
-- **Subject**
+- **Asunto**
 - **Remitente**
 - **Destinatarios**
 - **Tecnología de detección**
@@ -851,7 +851,7 @@ En la vista **Ver datos por invalidación del sistema** y **Desglose del gráfic
 En la tabla de detalles debajo del gráfico, está disponible la siguiente información:
 
 - **Date**
-- **Subject**
+- **Asunto**
 - **Remitente**
 - **Destinatarios**
 - **Invalidación del sistema**
@@ -986,7 +986,7 @@ Al mantener el puntero sobre una cuña en el gráfico circular, puede ver el rec
 
 En la tabla de detalles debajo del gráfico se muestran los remitentes o destinatarios y los recuentos de mensajes en función de la vista seleccionada.
 
-Para filtrar el gráfico y la tabla de detalles, haga clic en **Filtrar** y seleccione **Fecha de inicio** y **Fecha de finalización**.
+Para filtrar el gráfico y la tabla de detalles, haga clic en **Filtrar** y seleccione **Fecha de inicio** y **Fecha de finalización**. Los usuarios también pueden filtrar por etiquetas de usuario. 
 
 Cuando haya terminado de configurar los filtros, haga clic en **Aplicar**, **Cancelar** o **Borrar filtros**.
 

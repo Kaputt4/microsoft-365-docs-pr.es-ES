@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: Use esta página para crear la lista de personal y administrar los detalles de los miembros del personal, como el nombre, el número de teléfono y la dirección de correo electrónico.
-ms.openlocfilehash: ca938acf4bfb567d366c7ffd684e8bce8c9eea74
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: b6ceee7c4464daf050f6e6626628c9cb3d94960f
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746805"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285464"
 ---
 # <a name="add-staff-to-bookings"></a>Agregar personal a Bookings
 
@@ -45,10 +45,11 @@ Aunque Bookings es una característica de Microsoft 365, no todos los miembros d
     > [!NOTE]
     > El personal de fuera de su inquilino no podrá compartir información de disponibilidad con Bookings.
 
-5. Para cada miembro del personal, seleccione un rol: Administrador, Visor o Invitado.
-    - **Los administradores** pueden editar toda la configuración, agregar y quitar personal, y crear, editar o eliminar reservas.
-    - **Los espectadores** pueden ver todas las reservas en el calendario, pero no pueden modificarlas ni eliminarlas. Tienen acceso de solo lectura a la configuración.
-    - **Los huéspedes** pueden ser asignados a reservas, pero no pueden abrir el buzón de reserva.
+5. Para cada miembro del personal, seleccione un rol: Miembro del equipo, Programador, Visor o Invitado.
+    - **Los miembros del equipo** pueden administrar las reservas en su propio calendario y su disponibilidad en el buzón de reserva. Al agregar o editar una reserva en su calendario, se les asignará como personal.
+    - **Scheduler** puede administrar las reservas en el calendario y los detalles del cliente. Tienen acceso de solo lectura a la configuración, al personal y a los servicios.
+    - **El visor** puede ver todas las reservas en el calendario, pero no pueden modificarlas ni eliminarlas. Tienen acceso de solo lectura a la configuración.
+    - **Los huéspedes** pueden ser asignados a las reservas, pero no pueden abrir el buzón de reserva.
 
 6. Seleccione **Notificar a todo el personal por correo electrónico cuando se cree o cambie una reserva asignada a ellos** para habilitar los correos electrónicos del personal. A continuación se muestra un correo electrónico de ejemplo:
 

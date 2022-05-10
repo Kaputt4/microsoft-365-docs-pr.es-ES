@@ -2,6 +2,8 @@
   href: index.md
 - name: Administración de Microsoft OneLTI
   href: manage-microsoft-one-lti.md
+- name: Permitir cookies de explorador para direcciones URL lms
+  href: browser-cookies.md
 - name: Integraciones de Lienzo
   items:
     - name: Uso de Microsoft OneDrive LTI con Canvas

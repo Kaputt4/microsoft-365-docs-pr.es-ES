@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Sepa qué ajustes puede configurar en una directiva de retención o directiva de etiqueta de retención para conservar lo que desea y deshacerse de lo que no quiera.
-ms.openlocfilehash: 90a048cf96bb2414a42d803bcd2f15deab4e711b
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: 39c0258cb4b471e05bae24d0d35c708a42252219
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268801"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285388"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>Configuración normal para directivas de retención y directivas de etiquetas de retención
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Varias configuraciones de retención son comunes tanto a las directivas de retención como a las directivas de etiquetas de retención. Use la siguiente información para que le ayude a configurar estas opciones y conservar de forma proactiva el contenido, eliminar contenido o ambas cosas, es decir, conservar y luego eliminar el contenido.
 

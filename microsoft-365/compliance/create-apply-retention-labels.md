@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para publicar etiquetas de retención para poder aplicarlas en aplicaciones para conservar lo que necesita y eliminar lo que no.
-ms.openlocfilehash: dd20de86b17460d5b150b5bb576ae811e40eed32
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 110115cad46e819ac32d482ab6ecd1eba2129201
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187808"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285530"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>Publicar etiquetas de retención y aplicarlas en aplicaciones
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Este escenario es compatible con todas las configuraciones de la etiqueta de retención, incluyendo los [registros normativos](records-management.md#records).

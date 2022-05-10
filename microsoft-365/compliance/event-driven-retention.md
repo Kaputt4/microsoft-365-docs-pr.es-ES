@@ -20,16 +20,18 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Por lo general, como parte de una solución de administración de registros, puede configurar una etiqueta para iniciar el período de retención en función de un evento identificado.
-ms.openlocfilehash: ad5fb2ef567525fa021acb0388ebc5cc98b1148c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 65a3c2088974398abb6ddbeb205cfb66541629e2
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313305"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285114"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Iniciar la retención cuando se produzca un evento
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Al conservar contenido, el período de retención suele basarse en la antigüedad del contenido. Por ejemplo, puede conservar documentos durante siete años después de su creación y eliminarlos cuando transcurra ese período. Pero cuando configura [etiquetas de retención](retention.md#retention-labels), también puede hacer que un período de retención se base en el momento en que se produzca un tipo específico de evento. El evento desencadena el inicio del período de retención y se exigirán las acciones de retención de etiqueta en todo el contenido que tenga aplicada una etiqueta de retención para ese tipo de evento.
   
@@ -89,7 +91,7 @@ Flujo de trabajo general para la retención controlada por eventos:
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Paso 1: Crear una etiqueta cuyo período de retención se base en un evento
 
-Para crear y configurar la etiqueta de retención, vea las instrucciones para [Crear etiquetas de retención](file-plan-manager.md#create-retention-labels) para la administración de registros o [Cómo crear etiquetas de retención para el gobierno de la información](create-retention-labels-information-governance.md). Sin embargo, específicamente para la retención basada en eventos, en la página **Definir configuración de retención** al crear la etiqueta de retención, después de **Iniciar el período de retención según**, seleccione uno de los tipos de eventos predeterminados de la lista desplegable o cree el suyo propio seleccionando **Crear nuevo tipo de evento**:
+Para crear y configurar la etiqueta de retención, vea las instrucciones para [Crear etiquetas de retención](file-plan-manager.md#create-retention-labels) para la administración de registros o [Cómo crear etiquetas de retención para la administración del ciclo de vida de los datos](create-retention-labels-data-lifecycle-management.md). Sin embargo, específicamente para la retención basada en eventos, en la página **Definir configuración de retención** al crear la etiqueta de retención, después de **Iniciar el período de retención según**, seleccione uno de los tipos de eventos predeterminados de la lista desplegable o cree el suyo propio seleccionando **Crear nuevo tipo de evento**:
 
 ![Crear un nuevo tipo de evento para una etiqueta de retención.](../media/SPRetention6.png)
 
@@ -139,7 +141,7 @@ Id. de activo es simplemente otra propiedad de documento que está disponible en
   
 ### <a name="step-5-create-an-event"></a>Paso 5: Crear un evento
 
-Cuando se produzca una instancia específica de ese tipo de evento, como cuando un producto llega al final de su vida útil, vaya a la página **Administración de registros** > **Eventos** en el Centro de cumplimiento de Microsoft 365 y seleccione **+Crear** para crear un evento. El evento se activa al crearlo aquí.
+Cuando se produzca una instancia determinada de ese tipo de evento, como que un producto llegue al final de su ciclo de vida, vaya a la página **Administración de registros** > **Eventos** en el portal de cumplimiento de Microsoft Purview y seleccione **+ Crear** para crear un evento. Para desencadenar el evento, debe crearlo aquí.
 
 ![Crear un evento para desencadenar el inicio de la retención para las etiquetas de retención basadas en eventos.](../media/create-event-records-management.png)
 
@@ -220,7 +222,7 @@ https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentio
 
 Compruebe el código de respuesta. Si es 302, obtenga la dirección URL redirigida de la propiedad Ubicación del encabezado de respuesta y use esa dirección URL en lugar de `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` en las instrucciones siguientes.
 
-Los eventos que se crean automáticamente se pueden visualizar y confirmar en el Centro de cumplimiento de Microsoft 365 > **Administración de registros** >  **Eventos**.
+Los eventos que se crean automáticamente se pueden confirmar mediante su visualización en el portal de cumplimiento de Microsoft Purview > **Administración de registros** >  **Eventos**.
 
 ### <a name="use-microsoft-power-automate-to-create-the-event"></a>Usar Microsoft Power Automate para crear el evento
 

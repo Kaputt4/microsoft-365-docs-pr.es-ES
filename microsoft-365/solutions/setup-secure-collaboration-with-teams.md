@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Obtenga información sobre los procedimientos recomendados para configurar la colaboración y el uso compartido de archivos seguros en Teams para proteger los datos en función de su confidencialidad.
-ms.openlocfilehash: aadc2bf092713ffde68cd8fb9824d837c2f14acf
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 54bfe4bce20687474526916fe7b11ca0e5bb1b72
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935421"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286546"
 ---
 # <a name="set-up-secure-file-sharing-and-collaboration-with-microsoft-teams"></a>Configuración del uso compartido de archivos seguro y la colaboración con Microsoft Teams
 
@@ -189,7 +189,7 @@ Lo que necesitan saber los arquitectos de TI sobre los grupos en Microsoft 365
 
 |**Item**|**Descripción**|
 |---|---|
-|[![Imagen del pulgar para la infografía de grupos.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Actualizado en junio de 2019|Estas ilustraciones detallan los diferentes tipos de grupos, cómo se crean y administran, y algunas recomendaciones para el gobierno de estos.|
+|[![Imagen del pulgar para la infografía de grupos.](../downloads/msft-m365-groups-architecture-thumb.png)](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) <br/> [PDF](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) \| [Visio](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.vsdx) <br> Actualizado en mayo de 2022|Estas ilustraciones detallan los diferentes tipos de grupos, cómo se crean y administran, y algunas recomendaciones para el gobierno de estos.|
 
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams y servicios de productividad relacionados de Microsoft 365 para arquitectos de TI
 
@@ -206,7 +206,7 @@ Cuando esté listo para implementar esta solución, continúe con estos pasos:
 1. Configure los [tres niveles diferentes de protección para Teams](configure-teams-three-tiers-protection.md).
 2. Configure las opciones para [compartir información de cualquier confidencialidad con personas ajenas a su organización](collaborate-with-people-outside-your-organization.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Documentación de Seguridad de Microsoft 365](../security/index.yml)
 

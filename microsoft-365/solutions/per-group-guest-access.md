@@ -1,5 +1,5 @@
 ---
-title: Impedir que los invitados se agregó a un grupo específico
+title: Impedir que los invitados se agreguen a un grupo específico
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -15,23 +15,23 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: Obtenga información sobre cómo evitar que los invitados se agregó a un grupo específico
-ms.openlocfilehash: 4b9ebc6366934db52c30d51091ac9991ff82d8c3
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+description: Aprenda a evitar que los invitados se agreguen a un grupo específico.
+ms.openlocfilehash: f050011427ceeeff8347c2acd5b6d3fbbcf11bec
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64570071"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285322"
 ---
-# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Impedir que los invitados se agregó a un grupo Microsoft 365 grupo o Microsoft Teams grupo específico
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Impedir que los invitados se agreguen a un grupo de Microsoft 365 específico o a un equipo de Microsoft Teams
 
-Si desea permitir el acceso de invitado a la mayoría de grupos y equipos, pero tiene algunos en los que desea impedir el acceso de invitado, puede bloquear el acceso de invitado para grupos y equipos individuales. (Bloquear el acceso de invitado a un equipo se realiza bloqueando el acceso de invitado al grupo asociado). Esto evita que se agregó invitados nuevos, pero no quita los invitados que ya están en el grupo o el equipo.
+Si desea permitir el acceso de invitado a la mayoría de los grupos y equipos, pero tiene algún lugar donde quiera impedir el acceso de invitado, puede bloquear el acceso de invitado para grupos y equipos individuales. (Bloquear el acceso de invitado a un equipo se realiza bloqueando el acceso de invitado al grupo asociado). Esto impide que se agreguen nuevos invitados, pero no quita a los invitados que ya están en el grupo o en el equipo.
 
-Si usa etiquetas de confidencialidad en su organización, se recomienda usarlas para controlar el acceso de invitados por grupo. Para obtener información sobre cómo hacerlo, use etiquetas de confidencialidad para proteger el contenido Microsoft Teams[, Microsoft 365 grupos y SharePoint web](../compliance/sensitivity-labels-teams-groups-sites.md). Este es el método recomendado.
+Si usa etiquetas de confidencialidad en su organización, se recomienda usarlas para controlar el acceso de invitado por grupo. Para obtener información sobre cómo hacerlo, [use etiquetas de confidencialidad para proteger el contenido de Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md). Este es el método recomendado.
 
-## <a name="change-group-settings-using-microsoft-powershell"></a>Cambiar la configuración de grupo con Microsoft PowerShell
+## <a name="change-group-settings-using-microsoft-powershell"></a>Cambio de la configuración del grupo mediante Microsoft PowerShell
 
-También puede evitar la adición de nuevos invitados a grupos individuales mediante PowerShell. (Recuerde que el sitio asociado del equipo SharePoint cuenta con [controles de uso compartido de invitados independientes](/sharepoint/change-external-sharing-site)).
+También puede evitar la adición de nuevos invitados a grupos individuales mediante PowerShell. (Recuerde que el sitio de SharePoint asociado del equipo tiene [controles de uso compartido de invitados independientes](/sharepoint/change-external-sharing-site)).
 
 Debe usar la versión preliminar de [Azure Active Directory PowerShell para Graph](/powershell/azure/active-directory/install-adv2) (nombre de módulo **AzureADPreview**) para cambiar la configuración de acceso de invitado de nivel de grupo:
 
@@ -44,7 +44,7 @@ Debe usar la versión preliminar de [Azure Active Directory PowerShell para Grap
 > [!NOTE]
 > Debe tener derechos de administrador global para ejecutar estos comandos. 
 
-Ejecute el siguiente script, cambiando *\<GroupName\>* por el nombre del grupo en el que desea bloquear el acceso de invitado.
+Ejecute el siguiente script y cambie *\<GroupName\>* al nombre del grupo donde desea bloquear el acceso de invitado.
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -64,11 +64,11 @@ Para comprobar la configuración, ejecute este comando:
 Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 ```
 
-La comprobación tiene este aspecto:
+La comprobación tiene el siguiente aspecto:
     
-![Captura de pantalla de la ventana de PowerShell que muestra que el acceso de grupo invitado se ha establecido en false.](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
+![Captura de pantalla de la ventana de PowerShell que muestra que el acceso al grupo invitado se ha establecido en false.](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
 
-Si desea alternar la configuración de nuevo para permitir el acceso de invitado a un grupo determinado, ejecute el siguiente script, ```<GroupName>``` cambiando al nombre del grupo en el que desea permitir el acceso de invitado.
+Si desea volver a alternar la configuración para permitir el acceso de invitado a un grupo determinado, ejecute el siguiente script y cambie ```<GroupName>``` al nombre del grupo en el que desea permitir el acceso de invitado.
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -85,18 +85,18 @@ Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectoryS
 
 ## <a name="allow-or-block-guest-access-based-on-their-domain"></a>Permitir o bloquear el acceso de invitado en función de su dominio
 
-Puede permitir o bloquear invitados que usan un dominio específico. Por ejemplo, si su empresa (Contoso) tiene una asociación con otra empresa (Fabrikam), puede agregar Fabrikam a la lista de permitidos para que los usuarios puedan agregar esos invitados a sus grupos.
+Puede permitir o bloquear invitados que usen un dominio específico. Por ejemplo, si su empresa (Contoso) tiene una asociación con otra empresa (Fabrikam), puede agregar Fabrikam a la lista de permitidos para que los usuarios puedan agregar esos invitados a sus grupos.
 
 Para obtener más información, vea [Permitir o bloquear invitaciones a usuarios B2B de organizaciones específicas](/azure/active-directory/b2b/allow-deny-list).
 
 ## <a name="add-guests-to-the-global-address-list"></a>Agregar invitados a la lista global de direcciones
 
-De forma predeterminada, los invitados no están visibles en la Exchange global de direcciones. Siga los pasos que se indican a continuación para que un invitado sea visible en la lista global de direcciones.
+De forma predeterminada, los invitados no están visibles en la lista global de direcciones de Exchange. Siga los pasos que se indican a continuación para que un invitado sea visible en la lista global de direcciones.
 
-Para buscar el ObjectID del invitado, ejecute:
+Busque el ObjectID del invitado mediante la ejecución de:
 
 ```PowerShell
-Get-AzureADUser -Filter "userType eq 'Guest'"
+get-AzureADUser -all $true | ?{$_.CreationType -eq "Invitation"}
 ```
 
 A continuación, ejecute lo siguiente con los valores adecuados para ObjectID, GivenName, Surname, DisplayName y TelephoneNumber.
@@ -107,12 +107,12 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Recomendaciones de planeación de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
+[Recomendaciones de planeamiento de gobernanza de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
-[Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
+[Creación del plan de gobernanza de colaboración](collaboration-governance-first.md)
 
-[Administrar la pertenencia a grupos en el Centro de administración de Microsoft 365](../admin/create-groups/add-or-remove-members-from-groups.md)
+[Administración de la pertenencia a grupos en el Centro de administración de Microsoft 365](../admin/create-groups/add-or-remove-members-from-groups.md)
   
-[Azure Active Directory de acceso](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
+[Azure Active Directory revisiones de acceso](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser)
