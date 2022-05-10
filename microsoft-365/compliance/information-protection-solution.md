@@ -1,5 +1,5 @@
 ---
-title: Implementar una solución de Microsoft Information Protection
+title: Implementación de una solución de protección de la información con Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,41 +17,43 @@ ms.collection:
 - m365solution-overview
 - m365solution-mip
 - m365initiative-compliance
-description: Guía prescriptiva para implementar Microsoft Information Protection (MIP) en su organización.
-ms.openlocfilehash: d70f7356909b0aa0ec663a641e1bc76926db72f0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Guía prescriptiva para implementar Microsoft Purview Information Protection en su organización.
+ms.openlocfilehash: d672e113e4f1bdaca155881afba6262878d0ecb3
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328197"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294764"
 ---
-# <a name="deploy-a-microsoft-information-protection-solution"></a>Implementar una solución de Microsoft Information Protection
+# <a name="deploy-an-information-protection-solution-with-microsoft-purview"></a>Implementación de una solución de protección de la información con Microsoft Purview
 
 >*[Licencias para el Centro de seguridad y cumplimiento de Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Su estrategia de protección de la información se basa en sus necesidades empresariales. Muchas organizaciones deben cumplir los reglamentos, las leyes y las prácticas empresariales. Además, las organizaciones deben proteger la información de su propiedad, como los datos de proyectos específicos.
 
-Microsoft Information Protection (MIP) proporciona un marco, un proceso y funcionalidades que puede usar para lograr sus objetivos de negocio específicos. 
+Microsoft Purview Information Protection (anteriormente conocida como Information Protection) proporciona un marco, un proceso y funcionalidades que puede usar para lograr sus objetivos de negocio específicos. 
 
-## <a name="microsoft-information-protection-framework"></a>Marco de Microsoft Information Protection
+## <a name="microsoft-purview-information-protection-framework"></a>Marco de Microsoft Purview Information Protection
 
-Utilice Microsoft Information Protection para descubrir, clasificar, proteger y controlar la información confidencial donde esta resida o hacia donde se transfiera.
+Utilice Microsoft Purview Information Protection para descubrir, clasificar, proteger y controlar la información confidencial donde esta resida o hacia donde se transfiera.
 
-![Información general sobre la solución de MIP](../media/mip-solution-overview-extended.png)
+![Introducción a la implementación de una solución de Microsoft Purview Information Protection](../media/mip-solution-overview-extended.png)
 
 Vea la siguiente sesión de Ignite para consultar cómo estas funcionalidades se admiten y se basan entre sí: [Conozca sus datos, protéjalos y evite su pérdida con Microsoft Information Protection](https://myignite.microsoft.com/archives/IG20-OD273).
 
-Para obtener información sobre la gobernanza de los datos, consulte [Gobernanza de información de Microsoft en Microsoft 365](manage-Information-governance.md).
+Para el gobierno de datos, consulte [Implementación de una solución de gobierno de datos con Microsoft Purview](data-governance-solution.md).
 
 ## <a name="licensing"></a>Licencias
 
-Las funcionalidades de MIP se incluyen con el Cumplimiento de Microsoft 365. Los requisitos de licencia pueden variar incluso dentro de las funcionalidades, en función de las opciones de configuración. Para identificar los requisitos y las opciones de licencia, consulte la [guía de Microsoft 365 para el cumplimiento y la seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Las funcionalidades de Microsoft Purview Information Protection se incluyen con Microsoft Purview. Los requisitos de licencia pueden variar incluso dentro de las funcionalidades, en función de las opciones de configuración. Para identificar los requisitos y las opciones de licencia, consulte la [guía de Microsoft 365 para el cumplimiento y la seguridad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="know-your-data"></a>Conocer los datos
 
-![Información general sobre el conocimiento de datos para la solución MIP](../media/knowyourdata-mipsolution.png)
+![Introducción a la información sobre la solución Microsoft Purview Information Protection](../media/knowyourdata-mipsolution.png)
 
-Saber dónde residen los datos confidenciales suele ser el mayor desafío de muchas organizaciones. La clasificación de datos de MIP le ayuda a descubrir y clasificar con precisión las cantidades cada vez mayores de datos que crea su organización. Las representaciones gráficas le ayudan a obtener información sobre estos datos para que pueda configurar y supervisar directivas con las que protegerlos y controlarlos.
+Saber dónde residen los datos confidenciales suele ser el mayor desafío de muchas organizaciones. La clasificación de datos de Microsoft Purview Information Protection le ayuda a descubrir y clasificar con precisión las cantidades cada vez mayores de datos que crea su organización. Las representaciones gráficas le ayudan a obtener información sobre estos datos para que pueda configurar y supervisar directivas con las que protegerlos y controlarlos.
 
 
 |Paso|Descripción|Más información|
@@ -62,7 +64,7 @@ Saber dónde residen los datos confidenciales suele ser el mayor desafío de muc
 
 ## <a name="protect-your-data"></a>Proteger los datos
 
-![Información general sobre la protección de los datos para la solución de MIP](../media/protect-mipsolution.png)
+![Introducción a la protección de datos para la solución Microsoft Purview Information Protection](../media/protect-mipsolution.png)
 
 Con la información que obtuvo al saber dónde residen los datos confidenciales, puede protegerlos de forma más eficaz. Sin embargo, no es necesario esperar, puede empezar a protegerlos inmediatamente con una combinación de etiquetado manual, predeterminado y automático. A continuación, use el [Explorador de contenido](data-classification-content-explorer.md) y el [explorador de actividad](data-classification-activity-explorer.md) de la sección anterior para confirmar qué elementos se etiquetan y cómo se usan las etiquetas.
 
@@ -72,21 +74,21 @@ Con la información que obtuvo al saber dónde residen los datos confidenciales,
 | 2|Etiquete y proteja los elementos de aplicaciones y servicios de Microsoft 365. <br /><br />Las etiquetas de confidencialidad son compatibles con Word, Excel, PowerPoint, Outlook y los contenedores de Microsoft 365 que incluyen sitios de SharePoint y OneDrive, y grupos de Microsoft 365. Use una combinación de métodos de etiquetado, como el etiquetado manual, el etiquetado automático, una etiqueta predeterminada y el etiquetado obligatorio.| [Administrar etiquetas de confidencialidad en las aplicaciones de Office](sensitivity-labels-office-apps.md) <br /><br /> [Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) <br /><br /> [Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md) <br /><br /> [Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md) <br /><br /> [Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](sensitivity-labels-teams-groups-sites.md) <br /><br /> [Usar etiquetas de confidencialidad para establecer el vínculo de uso compartido predeterminado para sitios y documentos en SharePoint y OneDrive](sensitivity-labels-default-sharing-link.md) <br /><br /> [Aplicar una etiqueta de confidencialidad a un modelo en Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model) <br /><br /> [Etiquetas de confidencialidad en Power BI](/power-bi/admin/service-security-sensitivity-label-overview) |
 |3|Descubra, etiquete y proteja los elementos confidenciales que residen en almacenes de datos en la nube mediante [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) con las etiquetas de confidencialidad.| [Descubrir, clasificar, etiquetar y proteger la información regulada y confidencialidad almacenada en la nube](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |4|Descubra, etiquete y proteja los elementos confidenciales que residen en almacenes de datos locales mediante la implementación del [escáner de etiquetado unificado de Azure Information Protection](/azure/information-protection/deploy-aip-scanner) con las etiquetas de confidencialidad.| [Configuración e instalación del escáner de etiquetas unificado de Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install)|
-|5|Amplíe las etiquetas de confidencialidad a Azure mediante [Azure Purview](/azure/purview/overview), para descubrir y etiquetar elementos de Azure Blob Storage, archivos de Azure, Azure Data Lake Storage Gen1 y Azure Data Lake Storage Gen12. | [Etiquetado en Azure Purview](/azure/purview/create-sensitivity-label)|
+|5|Amplíe las etiquetas de confidencialidad a Azure mediante [Mapa de datos de Microsoft Purview](/azure/purview/overview) para descubrir y etiquetar elementos de Azure Blob Storage, archivos de Azure, Azure Data Lake Storage Gen1 y Azure Data Lake Storage Gen12. | [Etiquetado en el mapa de datos de Microsoft Purview](/azure/purview/create-sensitivity-label)|
 
 Si es un desarrollador que quiere extender las etiquetas de confidencialidad a aplicaciones de línea de negocio o aplicaciones SaaS de terceros, consulte la [instalación y configuración del SDK de Microsoft Information Protection (MIP)](/information-protection/develop/setup-configure-mip). 
 
 ### <a name="additional-protection-capabilities"></a>Funcionalidades de protección adicionales
 
-Microsoft 365 incluye estas funcionalidades para ayudar a proteger los datos. No todos los clientes necesitan estas funcionalidades, y algunas podrían sustituirse por versiones más recientes.
+Microsoft Purview incluye funcionalidades adicionales para ayudar a proteger los datos. No todos los clientes necesitan estas funcionalidades, y algunas podrían sustituirse por versiones más recientes.
 
-En la página de [Microsoft Information Protection en Microsoft 365](information-protection.md), puede obtener la lista completa de funcionalidades de protección.
+Use la página [Proteger los datos con Microsoft Purview](information-protection.md) para obtener la lista completa de funcionalidades de protección.
 
 ## <a name="prevent-data-loss"></a>Prevenir la pérdida de datos
 
-![Información general sobre la prevención de pérdida de datos para la solución MIP](../media/dlp-mipsolution.png)
+![Introducción a la prevención de la pérdida de datos de la solución Microsoft Purview Information Protection](../media/dlp-mipsolution.png)
 
-Implemente directivas de prevención de pérdida de datos (DLP) para regular y evitar el uso compartido, la transferencia o el uso inadecuado de datos confidenciales entre aplicaciones y servicios. Estas directivas ayudan a los usuarios a tomar las decisiones correctas y las medidas adecuadas cuando se usan datos confidenciales.
+Implemente directivas de prevención de pérdida de datos (DLP) para regular y evitar el uso compartido, la transferencia o el uso inadecuados de datos confidenciales entre aplicaciones y servicios. Estas directivas ayudan a los usuarios a tomar las decisiones correctas y las medidas adecuadas cuando se usan datos confidenciales.
 
 |Paso|Descripción|Más información|
 |:---|:----------|:---------------|

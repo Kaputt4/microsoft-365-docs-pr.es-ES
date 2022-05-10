@@ -577,6 +577,8 @@
   items:
     - name: Gobierno de datos
       href: manage-data-governance.md
+    - name: Implementación de una solución de gobierno de datos
+      href: data-governance-solution.md
     - name: Descripción de la conservación y eliminación de datos
       items:
         - name: Más información sobre las directivas de retención y las etiquetas de retención

@@ -1,5 +1,5 @@
 ---
-title: Recursos para ayudarle a cumplir los requisitos normativos para la gobernanza de información y la administración de registros
+title: Recursos para ayudarle a cumplir los requerimientos reglamentarios para la administración del ciclo de vida de datos y de registros
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,19 +14,21 @@ ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
-description: Recursos para ayudarle a cumplir los requisitos normativos para la gobernanza de información y la administración de registros.
-ms.openlocfilehash: d5f0c2d405d35147a7868635520521134d0ee8f0
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Recursos para ayudarle a cumplir los requerimientos reglamentarios para la administración del ciclo de vida de datos y de los registros
+ms.openlocfilehash: 2d66aa6ac7eee3fab0718e2850f62730d0bd66f1
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759827"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286436"
 ---
-# <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Requisitos normativos para la gobernanza de información y la administración de registros
+# <a name="regulatory-requirements-for-data-lifecycle-management-and-records-management"></a>Requisitos reglamentarios para la administración del ciclo de vida de los datos y de los registros
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Use los recursos de esta página como ayuda para cumplir los requisitos normativos específicos para la gobernanza de información y la administración de registros en Microsoft 365. Todas las secciones de este documento se centran en una o varias normativas relacionadas y en ellas se incluyen las evaluaciones de terceros o instrucciones existentes sobre cómo configurar Microsoft 365 para ayudarle a cumplir los requisitos descritos.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Use los recursos de esta página como ayuda para cumplir los requisitos reglamentarios específicos para la administración del ciclo de vida de los datos y de los registros en Microsoft 365. Todas las secciones de este documento se centran en una o varias normativas relacionadas y en ellas se incluyen las evaluaciones de terceros o instrucciones existentes sobre cómo configurar Microsoft 365 para ayudarle a cumplir los requisitos descritos.
 
 Puede descargar esos recursos en la página [Recursos de protección de datos, preguntas frecuentes y notas del producto](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) del Portal de confianza de servicios.
 

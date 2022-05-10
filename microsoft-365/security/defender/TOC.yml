@@ -328,6 +328,10 @@
               href: microsoft-threat-experts.md
             - name: Configurar y administrar las funcionalidades de Expertos en amenazas de Microsoft
               href: configure-microsoft-threat-experts.md
+        - name: Colaborar con expertos de Microsoft Defender para la búsqueda
+          items:
+            - name: Información general
+              href: defenderexpertsforhuntingprev.md
     - name: Guía de operaciones de seguridad
       items:
         - name: Información general

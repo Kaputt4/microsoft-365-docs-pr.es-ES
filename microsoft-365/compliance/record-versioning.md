@@ -1,5 +1,5 @@
 ---
-title: Usar el control de versiones de registros para actualizar los registros almacenados en SharePoint o OneDrive
+title: Usar el control de versiones de registros en SharePoint o OneDrive
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,21 +17,23 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información acerca de los registros para que pueda implementar la solución de administración de registros en Microsoft 365.
-ms.openlocfilehash: 7fc4f9bb14e9e49c7894e864b8ff9e8f4337149a
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 9515622af6a6ddb5abe28d6fb920eed72f487f41
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835895"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285070"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Usar el control de versiones de registros para actualizar los registros almacenados en SharePoint o OneDrive
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 > [!NOTE]
 > Dado que los registros reglamentarios bloquean la edición, el control de versiones de registros no está disponible para los registros reglamentarios.
 >
-> También puede impedir el control de versiones de registros para el inquilino, incluso si no usa registros normativos: vaya al nodo de **Administración de registros** en el centro de cumplimiento de Microsoft 365 > **Configuración de administración de registros** > **Etiquetas de retención** > **Configurar el control de versiones de registros** y, a continuación, desactive la configuración para **Habilitar el control de versiones de registros**.
+> También puede impedir el control de versiones de registros para el espacio empresarial, incluso si no usa registros normativos: vaya a **Administración de registros** en el Portal de cumplimiento de Microsoft Purview > **Configuración de administración de registros** > **Etiquetas de retención** > **Configurar el control de versiones de registros** y, después, desactive la configuración para **Habilitar el control de versiones de registros**.
 
 La capacidad de marcar un documento como [registro](records-management.md#records) y restringir las acciones que se pueden realizar en el registro es un objetivo esencial para cualquier solución de administración de registros. Sin embargo, también puede ser necesaria la colaboración para que los usuarios creen versiones posteriores.
 
