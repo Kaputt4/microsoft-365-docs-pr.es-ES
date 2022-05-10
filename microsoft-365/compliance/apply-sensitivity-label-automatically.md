@@ -1,5 +1,5 @@
 ---
-title: Aplicar automáticamente una etiqueta de confidencialidad al contenido de Microsoft 365
+title: Aplicar automáticamente una etiqueta de confidencialidad en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,19 +17,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 21ee443ba9bab0ac7071377befee5d6e6143a398
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 69a36789e4143e3e8852976eb5e41c12ab6872f8
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634633"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65287230"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-> [!NOTE]
-> Para obtener información sobre cómo aplicar automáticamente una etiqueta de confidencialidad en Azure Purview, consulte [Etiquetado en Azure Purview](/azure/purview/create-sensitivity-label).
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+> [!TIP]
+> Para obtener información sobre cómo aplicar automáticamente una etiqueta de confidencialidad en el mapa de datos, consulte [Etiquetado en el mapa de datos de Microsoft Purview](/azure/purview/create-sensitivity-label).
 
 Cuando crea una etiqueta de confidencialidad, puede asignar automáticamente dicha etiqueta a archivos o correos electrónicos cuando se cumplan las condiciones especificadas.
 
@@ -70,9 +72,9 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
     Específico para el etiquetado automático para Exchange:
     
     - A diferencia del etiquetado manual o el etiquetado automático con las aplicaciones de Office, tanto los datos adjuntos de PDF como los datos adjuntos de Office también se analizan en función de las condiciones que especifique en la directiva de etiquetado automático. Cuando haya una coincidencia, el correo electrónico se etiquetará, pero no los datos adjuntos.
-        - En el caso de los archivos PDF, si la etiqueta aplica cifrado, estos archivos se cifran mediante el [Cifrado de mensajes de Office 365 (OME)](ome.md) cuando el espacio empresarial está [habilitado para los datos adjuntos de PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
-        - Para estos archivos de Office, son compatibles Word, PowerPoint y Excel. Si la etiqueta aplica cifrado, se cifran mediante el [Cifrado de mensajes de Office 365 (OME)](ome.md).
-    - Si tiene reglas de flujo de correo de Exchange o directivas de prevención de pérdida de datos (DLP) que aplican el cifrado IRM: cuando estas reglas o directivas y una directiva de etiquetado automático identifican contenido, se aplica la etiqueta. Si esa etiqueta aplica el cifrado, la configuración de IRM de las reglas de flujo de correo de Exchange o de las directivas DLP se pasa por alto. Sin embargo, si esa etiqueta no aplica el cifrado, la configuración de IRM de las reglas de flujo de correo o de las directivas DLP se aplica además de la etiqueta.
+        - En el caso de los archivos PDF, si la etiqueta aplica cifrado, estos archivos se cifran mediante el [Cifrado de mensajes](ome.md) cuando el espacio empresarial está [habilitado para datos adjuntos de PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
+        - Para estos archivos de Office, son compatibles Word, PowerPoint y Excel. Si la etiqueta aplica cifrado, se cifran mediante el [Cifrado de mensajes](ome.md).
+    - Si tiene reglas de flujo de correo de Exchange o directivas de prevención de pérdida de datos (DLP) de Microsoft Purview que aplican el cifrado IRM: cuando estas reglas o directivas y una directiva de etiquetado automático identifican contenido, se aplica la etiqueta. Si esa etiqueta aplica el cifrado, la configuración de IRM de las reglas de flujo de correo de Exchange o de las directivas DLP se pasa por alto. Sin embargo, si esa etiqueta no aplica el cifrado, la configuración de IRM de las reglas de flujo de correo o de las directivas DLP se aplica además de la etiqueta.
     - El correo electrónico que tiene cifrado IRM sin etiqueta se reemplazará por una etiqueta con cualquier configuración de cifrado cuando haya una coincidencia mediante el etiquetado automático.
     - El correo electrónico entrante se etiquetará cuando haya una coincidencia con las condiciones de etiquetado automático. Si esta etiqueta está configurada para [cifrado](encryption-sensitivity-labels.md), ese cifrado siempre se aplica cuando el remitente es de su organización. De forma predeterminada, ese cifrado no se aplica cuando el remitente está fuera de la organización, pero se puede aplicar configurando **opciones adicionales para el** de correo electrónico y especificando un propietario de Rights Management.
     - Cuando la etiqueta aplica el cifrado, el emisor de [propietario de Rights Management y Rights Management ](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) es la persona que envía el correo electrónico cuando el remitente es de su propia organización. Cuando el remitente está fuera de la organización, puede especificar un propietario de Rights Management para el correo electrónico entrante etiquetado y cifrado por la directiva.
@@ -98,7 +100,7 @@ Use la siguiente tabla para ayudarle a identificar las diferencias en el comport
 |Asignar un propietario de Rights Management para los correos electrónicos enviados desde otra organización |No |Sí|
 |En el caso de los correos electrónicos, reemplace la etiqueta ya existente que tenga la misma o menor prioridad. |No |Sí (configurable)|
 
-El etiquetado automático \* no está disponible actualmente en todas las regiones debido a una dependencia del backend de Azure. Si su cuenta empresarial no admite esta funcionalidad, la pestaña de **Etiquetado automático** no está visible en el centro de cumplimiento. Para obtener más información, vea [Disponibilidad de dependencia de Azure por país.](/troubleshoot/azure/general/dependency-availability-by-country)
+El etiquetado automático \* no está disponible actualmente en todas las regiones debido a una dependencia del backend de Azure. Si su cuenta empresarial no admite esta funcionalidad, la pestaña de **Etiquetado automático** no está visible en el Portal de cumplimiento de Microsoft Purview. Para obtener más información, vea [Disponibilidad de dependencia de Azure por país.](/troubleshoot/azure/general/dependency-availability-by-country)
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Forma en que se evalúan varias condiciones cuando se aplican en más de una etiqueta
 
@@ -124,7 +126,7 @@ Comportamiento predeterminado si el etiquetado automático invalidará una etiqu
 - El etiquetado automático reemplazará una [etiqueta de confidencialidad de menor prioridad](sensitivity-labels.md#label-priority-order-matters) que se aplicó automáticamente, pero no una etiqueta de prioridad más alta.
     
     > [!TIP]
-    > Por ejemplo, la etiqueta de confidencialidad en la parte superior de la lista del centro de cumplimiento se denomina **Público** con un criterio de ordenación (prioridad) de 0, y la etiqueta de confidencialidad de la parte inferior de la lista se denomina **Extremadamente confidencial** con un criterio de ordenación (prioridad de 4). La etiqueta **Extremadamente confidencial** puede invalidar la etiqueta **Público** pero no al revés.
+    > Por ejemplo, la etiqueta de confidencialidad en la parte superior de la lista del Portal de cumplimiento de Microsoft Purview se denomina **Público** con un criterio de ordenación (prioridad) de 0, y la etiqueta de confidencialidad de la parte inferior de la lista se denomina **Extremadamente confidencial** con un criterio de ordenación (prioridad de 4). La etiqueta **Extremadamente confidencial** puede invalidar la etiqueta **Público** pero no al revés.
 
 Solo para las directivas de etiquetado automático de correo electrónico, puede seleccionar una configuración para invalidar siempre una etiqueta de confidencialidad existente, independientemente de cómo se haya aplicado.
 
@@ -278,7 +280,7 @@ Por último, puede usar el modo de simulación para ofrecer una aproximación de
 
 ### <a name="creating-an-auto-labeling-policy"></a>Creación de una directiva de etiquetado automático
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, desplácese hasta las etiquetas de confidencialidad:
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Portal de cumplimiento de Microsoft Purview</a>, vaya a las etiquetas de confidencialidad:
 
     - **Soluciones** > **Protección de la información**
 

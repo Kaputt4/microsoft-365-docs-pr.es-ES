@@ -17,18 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, cuando usa una revisión para eliminación o los elementos marcados como registros se eliminan automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: dbc713c665367bb973fb8faded24015ad6c2d5c3
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: c8a9db05367dd7007ad164bbfe95e4a190253f85
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64594826"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285136"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Use la página **Eliminación** de **Administración de registros** en el Centro de cumplimiento de Microsoft 365 para administrar las revisiones de eliminación y ver los metadatos de los [registros](records-management.md#records) que se hayan eliminado automáticamente al final de su período de retención.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Use la página **Eliminación** de **Administración de registros** en el Portal de cumplimiento de Microsoft Purview para administrar las revisiones de eliminación y ver los metadatos de los [registros](records-management.md#records) que se hayan eliminado automáticamente al final de su período de retención.
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>Requisitos previos para ver las eliminaciones de contenido
 
@@ -36,31 +38,31 @@ Para administrar las revisiones para eliminación y confirmar que los registros 
 
 ### <a name="permissions-for-disposition"></a>Permisos para la eliminación
 
-Para acceder correctamente a la pestaña **Eliminación** en el Centro de cumplimiento de Microsoft 365, los usuarios deben tener el rol de **Administración de eliminación**. Desde diciembre de 2020, este rol está ahora incluido en el grupo de roles predeterminado **Administración de registros**.
+Para acceder correctamente a la pestaña **Eliminación** en el Portal de cumplimiento de Microsoft Purview, los usuarios deben tener el rol de **Administración de eliminación**. Desde diciembre de 2020, este rol está ahora incluido en el grupo de roles predeterminado **Administración de registros**.
 
 > [!NOTE]
 > De manera predeterminada, un administrador global no tiene concedido el rol de **Administración de eliminación**. 
 
 Para conceder a los usuarios solo los permisos que necesitan para las revisiones de disposición sin concederles permisos para ver y configurar otras características para la retención y la gestión de registros, cree un grupo de funciones personalizado (por ejemplo, denominado "Revisores de disposición") y conceda a este grupo la función de **Administración de eliminación**.
 
-Para obtener instrucciones sobre cómo agregar usuarios a los roles predeterminados o crear sus propios grupos de roles, consulte [Permisos en el Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center-permissions.md).
+Para obtener instrucciones sobre cómo agregar usuarios a los roles predeterminados o crear sus propios grupos de roles, consulte [Permisos en el Portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 Además:
 
-- Para ver el contenido de los elementos durante el proceso de eliminación, agregue usuarios al grupo de roles **visor de contenido del Explorador de contenido**. Si los usuarios no tienen los permisos de este grupo de roles, todavía pueden seleccionar una acción de revisión para eliminación para completar la revisión para eliminación, pero deben hacerlo sin poder ver el contenido del elemento desde el panel de vista previa mínima del centro de cumplimiento.
+- Para ver el contenido de los elementos durante el proceso de eliminación, agregue usuarios al grupo de roles **Visor de contenido del Explorador de contenido**. Si los usuarios no tienen los permisos de este grupo de roles, aún pueden seleccionar una acción de revisión para eliminación para completar la revisión para eliminación, pero deben hacerlo sin poder ver el contenido del elemento desde el panel de vista previa en miniatura del Portal de cumplimiento de Microsoft Purview.
 
 - De forma predeterminada, cada persona que tiene acceso a la página **Eliminación** solo ve los elementos que están asignados para revisar. Para que un administrador de administración de registros vea todos los elementos asignados a todos los usuarios y todas las etiquetas de retención configuradas para revisión de eliminación: vaya a **Configuración de administración de registros** > **Eliminación** para seleccionar y habilitar un grupo de seguridad habilitado para correo que contenga las cuentas de administrador.
     
     Los grupos de Microsoft 365 y los grupos de seguridad que no están habilitados para correo no admiten esta característica y no se muestran en la lista para seleccionar. Si necesita crear un grupo de seguridad habilitado para un correo nuevo, use el vínculo al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> para crear el grupo nuevo. 
     
     > [!IMPORTANT]
-    > Una vez habilitado el grupo, no puede cambiarlo en el centro de cumplimiento. Vea la sección siguiente sobre cómo habilitar un grupo diferente mediante PowerShell.
+    > Después de habilitar el grupo, no puede cambiarlo en el Portal de cumplimiento de Microsoft Purview. Vea la sección siguiente sobre cómo habilitar un grupo diferente mediante PowerShell.
 
 - La opción **Configuración de administración de registros** solo está visible para los administradores de administración de registros. 
 
 #### <a name="enabling-another-security-group-for-disposition"></a>Habilitar otro grupo de seguridad para su eliminación
 
-Después de habilitar un grupo de seguridad para su eliminación desde la **configuración de administración de registros** en el Centro de cumplimiento de Microsoft 365, no puede deshabilitar este permiso para el grupo ni reemplazar el grupo seleccionado en el centro de cumplimiento. Sin embargo, puede habilitar otro grupo de seguridad habilitado para correo mediante el cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
+Después de habilitar un grupo de seguridad para su eliminación de la **Configuración de administración de registros** en el Portal de cumplimiento de Microsoft Purview, no puede deshabilitar este permiso para el grupo ni reemplazar el grupo seleccionado en el portal de cumplimiento de Microsoft Purview. Sin embargo, puede habilitar otro grupo de seguridad habilitado para correo si usa el cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
 
 Por ejemplo: 
 
@@ -70,7 +72,7 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 ### <a name="enable-auditing"></a>Habilitar auditoría
 
-Asegúrese de que la auditoría está activada al menos un día antes de la primera acción de eliminación. Para más información, vea [Buscar en el registro de auditoría en el centro de cumplimiento](search-the-audit-log-in-security-and-compliance.md). 
+Asegúrese de que la auditoría está activada al menos un día antes de la primera acción de eliminación. Para más información, consulte [Buscar en el registro de auditoría en el Portal de cumplimiento de Microsoft Purview](search-the-audit-log-in-security-and-compliance.md). 
 
 ## <a name="disposition-reviews"></a>Revisiones para eliminación
 
@@ -86,7 +88,7 @@ Cuando se desencadena una revisión para eliminación al final del período de r
 
 Puede personalizar el correo electrónico de notificación que reciben los revisores, incluidas las instrucciones en distintos idiomas. Para obtener compatibilidad con varios idiomas, debe especificar las traducciones usted mismo y este texto personalizado se mostrará a todos los revisores, con independencia de su configuración regional.
 
-Los usuarios reciben una notificación por correo electrónico inicial por etiqueta al final del periodo de retención del elemento, con un aviso por etiqueta una vez por semana de todas las revisiones para eliminación que se les han asignado. Pueden hacer clic en el vínculo de los correos electrónicos de notificación y aviso para ir directamente a la página **Administración de registros** > **Disposición** en el Centro de cumplimiento de Microsoft 365 para revisar el contenido y tomar medidas. De forma alternativa, los revisores pueden navegar a la página **Disposición** en el centro de cumplimiento. Luego:
+Los usuarios reciben una notificación por correo electrónico inicial por etiqueta al final del periodo de retención del elemento, con un aviso por etiqueta una vez por semana de todas las revisiones para eliminación que se les han asignado. Pueden hacer clic en el vínculo de los correos electrónicos de notificación y aviso para ir directamente a la página **Administración de registros** > **Eliminación** en el Portal de cumplimiento de Microsoft Purview para revisar el contenido y tomar medidas. De forma alternativa, los revisores pueden navegar a la página **Eliminación** en el Portal de cumplimiento de Microsoft Purview. Luego:
 
 - Los revisores solo ven las revisiones para eliminación que se les han asignado, mientras que los administradores agregados al grupo de seguridad del administrador de registros seleccionado ven todas las revisiones para eliminación.
 
@@ -107,7 +109,7 @@ Los administradores pueden ver información general de todas las eliminaciones p
 
 Al seleccionar  **Ver todas las eliminaciones pendientes**, se le dirigirá a la página **Eliminación**. Por ejemplo:
 
-![Página Eliminaciones en el Centro de cumplimiento de Microsoft 365.](../media/disposition-tab.png)
+![Página de Eliminaciones en el Portal de cumplimiento de Microsoft Purview.](../media/disposition-tab.png)
 
 
 ### <a name="workflow-for-a-disposition-review"></a>Flujo de trabajo para una revisión para eliminación
@@ -155,7 +157,7 @@ Ejemplo de notificación de correo electrónico predeterminada que se envía a u
 
 Puede personalizar los mensajes de correo electrónico que se envían a los revisores para eliminación para la notificación inicial y los avisos.
 
-En cualquiera de las páginas de Administración de registros en el Centro de cumplimiento, seleccione **Configuración de administración de registros**:  
+En cualquiera de las páginas de Administración de registros en el Portal de cumplimiento de Microsoft Purview, seleccione **Configuración de administración de registros**:  
 
 ![Configuración de administración de registros.](../media/record-management-settings.png)
 
@@ -173,7 +175,7 @@ Seleccione **Guardar** para guardar los cambios.
 
 ### <a name="viewing-and-disposing-of-content"></a>Visualización y eliminación de contenido
 
-Cuando un revisor recibe una notificación por correo electrónico de que el contenido está listo para revisar, puede hacer clic en un vínculo del correo electrónico que le lleve directamente a la página **Eliminación** de **Administración de registros** en el Centro de cumplimiento de Microsoft 365. Los revisores pueden ver cuántos elementos para cada etiqueta de retención están pendientes de eliminación con el **Tipo** que muestra **Eliminación pendiente**. Después, seleccionan una etiqueta de retención y **Abrir en ventana nueva** para ver todo el contenido con esa etiqueta:
+Cuando un revisor recibe una notificación por correo electrónico de que el contenido está listo para revisar, puede hacer clic en un vínculo del correo electrónico que le lleve directamente a la página **Eliminación** de **Administración de registros** en el Portal de cumplimiento de Microsoft Purview. Los revisores pueden ver cuántos elementos para cada etiqueta de retención están pendientes de eliminación con el **Tipo** que muestra **Eliminación pendiente**. Después, seleccionan una etiqueta de retención y **Abrir en ventana nueva** para ver todo el contenido con esa etiqueta:
 
 ![Abrir en una nueva ventana para revisión para eliminación.](../media/open-in-new-window.png)
 

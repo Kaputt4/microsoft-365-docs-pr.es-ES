@@ -1,5 +1,5 @@
 ---
-title: Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint
+title: Usar etiquetas de retención para administrar el ciclo de vida de los documentos de SharePoint
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -19,16 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Cómo puede usar las etiquetas de retención para administrar el ciclo de vida de los documentos en SharePoint con metadatos para clasificar el contenido, aplicar las etiquetas automáticamente y usar la retención basada en eventos para iniciar el período de retención.
-ms.openlocfilehash: 35c43a96e07fe52d9e5e0cc0a72195353b6f5da6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ad8d4f48aa104db18256d62fc5034d1fb38b2817
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327173"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286524"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Usar las etiquetas de retención para administrar el ciclo de vida de los documentos almacenados en SharePoint
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 En este artículo se describe cómo puede administrar el ciclo de vida de los documentos que se almacenan en SharePoint mediante el uso de etiquetas de retención aplicadas automáticamente y la retención basada en eventos.
 
@@ -86,7 +88,7 @@ Las directivas de cumplimiento y gobierno de datos de la empresa de fabricación
 | Cualquier otro tipo de documento | No conservar activamente  | Eliminar cuando el documento tenga una antigüedad de más de 3 años <br /><br /> Se considera que un documento tiene una antigüedad de más de 3 años si no se ha modificado en los últimos 3 años. |
 |||
 
-Se usa el Centro de cumplimiento de Microsoft 365 para crear las siguientes [etiquetas de retención](retention.md#retention-labels):
+Se usa el Portal de cumplimiento de Microsoft Purview para crear las siguientes [etiquetas de retención](retention.md#retention-labels):
 
   - Especificaciones del producto
 
@@ -114,7 +116,7 @@ Este es el [plan de archivo](file-plan-manager.md) para la etiqueta de retenció
 
 - **Descriptores del plan de archivos:** para simplificar el escenario, no se proporcionan descriptores de archivo opcionales.
 
-La siguiente captura de pantalla muestra la configuración al crear la etiqueta de retención Especificaciones del producto en el Centro de cumplimiento de Microsoft 365. Cuando cree la etiqueta de retención, puede crear el tipo de evento *Cese de producción*. Vea el procedimiento en la sección siguiente.
+La siguiente captura de pantalla muestra la configuración al crear la etiqueta de retención Especificaciones del producto en el Portal de cumplimiento de Microsoft Purview. Cuando cree la etiqueta de retención, puede crear el tipo de evento *Cese de producción*. Vea el procedimiento en la sección siguiente.
 
 ![Configuración de retención para la etiqueta Especificaciones del producto.](../media/SPRetention5.png)
 
@@ -218,7 +220,7 @@ Ahora, en el cuadro de búsqueda, escriba **RefinableString00:"Especificaciones 
 
 Ahora que hemos comprobado que la consulta de KQL funciona, crearemos una directiva de etiqueta aplicable automáticamente que usa una consulta de KQL para aplicar de manera automática la etiqueta de retención Especificaciones del producto en los documentos correspondientes.
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Centro de cumplimiento de Microsoft 365</a>, vaya a **Administración de registros** > **Directivas de etiqueta** > **Aplicar automáticamente una etiqueta**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Portal de cumplimiento de Microsoft Purview</a>, vaya a **Administración de registros** > **Directivas de etiqueta** > **Aplicar automáticamente una etiqueta**.
 
    [ ![Seleccione "Aplicar automáticamente una etiqueta" en la página Etiquetas](../media/SPRetention16.png) ](../media/SPRetention16.png#lightbox)
 
@@ -256,7 +258,7 @@ Ahora que hemos comprobado que la consulta de KQL funciona, crearemos una direct
 
 ### <a name="verify-that-the-retention-label-was-automatically-applied"></a>Compruebe que la etiqueta de retención se aplicó automáticamente
 
-Después de 7 días, utilice el [Explorador de actividad](data-classification-activity-explorer.md) del centro de cumplimiento para comprobar que la directiva de etiqueta aplicable automáticamente que creamos aplicó de manera automática las etiquetas de retención a los documentos de producto.
+Después de 7 días, utilice el [Explorador de actividad](data-classification-activity-explorer.md) del Portal de cumplimiento de Microsoft Purview para comprobar que la directiva de etiqueta aplicable automáticamente que creamos aplicó de manera automática las etiquetas de retención a los documentos de producto.
 
 También examine las propiedades de los documentos en la biblioteca de documentos. En el panel de información, puede ver que la etiqueta de retención se ha aplicado a un documento seleccionado.
 
@@ -270,7 +272,7 @@ Puesto que las etiquetas de retención se aplicaron automáticamente a los docum
 
 Ahora que se aplicaron las etiquetas de retención, pasemos al evento que indicará el final de producción para un producto en particular. Este evento desencadena el inicio del período de retención definido en las etiquetas de retención. Por ejemplo, para los documentos de especificaciones de producto, el período de retención de 5 años comienza cuando se activa el evento "fin de producción".
 
-Puede crear manualmente el evento en el Centro de cumplimiento de Microsoft 365 en **Administración de registros** > **Eventos**. Elija el tipo de evento, configure los Id. de activo correctos y escriba la fecha del evento. Para obtener más información, consulte [Iniciar la retención cuando se produzca un evento](event-driven-retention.md).
+Puede crear manualmente el evento en el Portal de cumplimiento de Microsoft Purview en **Administración de registros** > **Eventos**. Elija el tipo de evento, configure los Id. de activo correctos y escriba la fecha del evento. Para obtener más información, consulte [Iniciar la retención cuando se produzca un evento](event-driven-retention.md).
 
 Pero para este escenario, generaremos automáticamente el evento desde un sistema de producción externo. El sistema es una lista de SharePoint simple que indica si un producto está en producción. Un flujo de [Power Automate](/power-automate/getting-started) que está asociado a la lista desencadenará el evento. En un escenario real, puede usar varios sistemas para generar el evento, como un sistema de RRHH o CRM. Power Automate contiene muchas interacciones listas para usarse y un bloque de creación para cargas de trabajo de Microsoft 365 como Microsoft Exchange, SharePoint, Teams y Dynamics 365, así como para aplicaciones de terceros como Twitter, Box, Salesforce y Workdays. Esta característica hace que sea fácil integrar Power Automate con varios sistemas. Para obtener más información, consulte [Retención automática controlada por eventos](./event-driven-retention.md#automate-events-by-using-a-rest-api).
 
@@ -309,7 +311,7 @@ Para crear este flujo, parta de un conector de SharePoint y seleccione el desenc
 
 Esta lista describe los parámetros de la propiedad **Body** de la acción que debe configurarse para este escenario:
 
-- **Name**: este parámetro especifica el nombre del evento que se creará en el Centro de cumplimiento de Microsoft 365. Para este escenario, el nombre es "Cese de producción *xxx*", donde *xxx* es el valor de la propiedad administrada **NombreProducto** que creamos anteriormente.
+- **Name**: este parámetro especifica el nombre del evento que se creará en el Portal de cumplimiento de Microsoft Purview. Para este escenario, el nombre es "Cese de producción *xxx*", donde *xxx* es el valor de la propiedad administrada **NombreProducto** que creamos anteriormente.
 - **EventType**: el valor de este parámetro corresponde al tipo de evento al que se aplicará el evento creado. Este tipo de evento se definió al crear la etiqueta de retención. Para este escenario, el tipo de evento es "Cese de producción".
 - **SharePointAssetIdQuery**: este parámetro define el Id. de activo del evento. La retención basada en eventos necesita un identificador único para el documento. Podemos usar Id. de activo para identificar los documentos a los que se aplica un evento determinado, o bien, como se hace para este escenario, la columna de metadatos **NombreProducto**. Para ello, debemos crear una propiedad administrada **NombreProducto** nueva que pueda usarse en la consulta KQL. (También podríamos usar **RefinableString00** en lugar de crear una nueva propiedad administrada). También necesitamos asignar esta nueva propiedad administrada a la propiedad rastreada **ows_Product_x0020_Name**. Esta es una captura de pantalla de esta propiedad administrada.
 
@@ -319,9 +321,9 @@ Esta lista describe los parámetros de la propiedad **Body** de la acción que d
 
 ### <a name="putting-it-all-together"></a>En conclusión
 
-Ahora la etiqueta de retención se crea y se aplica automáticamente, y el flujo se configura y crea. Cuando el valor de la columna **En producción** del producto Spinning Widget en la lista de productos se cambia de **_Sí_*_ a _*_No_*_, el flujo se activa para crear el evento. Para ver este evento en el centro de cumplimiento, vaya a _* Administración de registros** > **Eventos**.
+Ahora la etiqueta de retención se crea y se aplica automáticamente, y el flujo se configura y crea. Cuando el valor de la columna **En producción** del producto Spinning Widget en la lista de productos se cambia de **_Sí_*_ a _*_No_*_, el flujo se activa para crear el evento. Para ver este evento en el Portal de cumplimiento de Microsoft Purview, vaya a _* Administración de registros** > **Eventos**.
 
-[ ![El evento desencadenado por el flujo se muestra en la página Eventos en el centro de cumplimiento.](../media/SPRetention28.png) ](../media/SPRetention28.png#lightbox)
+[ ![El evento desencadenado por el flujo se muestra en la página Eventos en el Portal de cumplimiento de Microsoft Purview.](../media/SPRetention28.png) ](../media/SPRetention28.png#lightbox)
 
 Seleccione el evento para ver los detalles en la página de control flotante. Observe que, aunque se creó el evento, el estado del evento muestra que no se han procesado documentos o sitios de SharePoint.
 

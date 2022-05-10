@@ -1,5 +1,5 @@
 ---
-title: Usar el plan de archivos para administrar las etiquetas de retención durante el ciclo de vida del contenido
+title: Use el plan de archivos para administrar las etiquetas de retención
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,18 +17,20 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: El plan de archivos ofrece funciones avanzadas de administración para las etiquetas de retención.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 40c395d609a9a02637b937cafae988578dc6e14f
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 5ed2ccfa1c26efc8e55f048e24de005701417576
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836180"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286086"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>Usar el plan de archivos para crear y administrar etiquetas de retención
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Aunque puede crear y administrar las etiquetas de retención desde **Gobierno de la información** en el centro de cumplimiento de Microsoft 365, el plan de archivos de **Administración de registros** tiene capacidades de administración adicionales:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Aunque puede crear y administrar las etiquetas de retención desde **Administración del ciclo de vida de los datos** en el Portal de cumplimiento de Microsoft Purview, el plan de archivos de **Administración de registros** tiene capacidades de administración adicionales:
 
 - Puede crear una etiqueta de retención en masa al importar la información relevante desde una hoja de cálculo.
 
@@ -50,7 +52,7 @@ Para acceder al plan de archivos, debe tener uno de los siguientes roles de admi
 
 - Administrador de retención con permiso de vista
 
-En el Centro de cumplimiento de Microsoft 365, vaya a **Soluciones** > **Administración de registros** > **Plan de archivos**:
+En el Portal de cumplimiento de Microsoft Purview, vaya a **Soluciones** > **Administración de registros** > **Plan de archivos**:
 
 ![Página del plan de archivos](../media/compliance-file-plan.png). 
 
@@ -58,9 +60,9 @@ Si **Administración de registros** no se muestra en el panel de navegación, de
 
 ## <a name="navigating-your-file-plan"></a>Navegar por el plan de archivos
 
-Si ya ha creado las etiquetas de retención desde **Gobierno de la información** en el centro de cumplimiento de Microsoft 365, estas etiquetas se mostrarán automáticamente en su plan de archivos. 
+Si ya ha creado las etiquetas de retención desde **Administración del ciclo de vida de los datos** en el Portal de cumplimiento de Microsoft Purview, estas etiquetas se mostrarán automáticamente en su plan de archivos. 
 
-De forma similar, si ahora crea etiquetas de retención en el plan de archivos, también estarán disponibles en **Gobierno de la información** si no se configuran para marcar el contenido como un registro.
+De forma similar, si ahora crea etiquetas de retención en el plan de archivos, también estarán disponibles en **Administración del ciclo de vida de los datos** si no se configuran para marcar el contenido como un registro.
 
 En la página **Plan de archivos**, verá todas sus etiquetas con el estado y la configuración, los descriptores opcionales del plan de archivos, una opción de exportación para analizar o habilitar las revisiones sin conexión de sus etiquetas, y una opción de importación para crear etiquetas de retención. 
 
@@ -199,7 +201,7 @@ Use la siguiente información para rellenar la plantilla descargada e importar n
 |Propiedad|Tipo|Obligatorio|Valores válidos|
 |:-----|:-----|:-----|:-----|
 |LabelName|Cadena|Sí|Esta propiedad especifica el nombre de la etiqueta de retención y debe ser única en el inquilino. Caracteres admitidos para la importación: a-z, A-Z, 0-9, guión (-) y el carácter de espacio.|
-|Comentario|Cadena|No|Use esta propiedad para agregar una descripción sobre la etiqueta de retención para administradores. Esta descripción solo se mostrará a los administradores que administren la etiqueta de retención en el centro de cumplimiento.|
+|Comentario|Cadena|No|Use esta propiedad para agregar una descripción sobre la etiqueta de retención para administradores. Esta descripción solo se mostrará a los administradores que administren la etiqueta de retención en el Portal de cumplimiento de Microsoft Purview.|
 |Notas|Cadena|No|Use esta propiedad para agregar una descripción sobre la etiqueta de retención para usuarios. Esta descripción aparece cuando los usuarios mueven el puntero sobre la etiqueta en aplicaciones como Outlook, SharePoint y OneDrive. Si deja esta propiedad en blanco, se muestra una descripción predeterminada que explica la configuración de retención de la etiqueta. |
 |IsRecordLabel|Cadena|No, a menos que **Regulatory** esté establecido en **TRUE**|Esta propiedad especifica si la etiqueta marca el contenido como un registro. Los valores válidos son:</br>**TRUE**: la etiqueta marca el elemento como un registro y, por lo tanto, no se puede eliminar el elemento. </br>**FALSE**: la etiqueta no marca el contenido como un registro. Este es el valor predeterminado.</br> </br> Dependencias de grupo: cuando se especifica esta propiedad, también se deben especificar RetentionAction, RetentionDuration y RetentionType.|
 |RetentionAction|Cadena|No, a menos que se especifiquen **RetentionDuration**, **RetentionType** o **ReviewerEmail**|Esta propiedad especifica la acción que se llevará a cabo cuando expire el valor especificado por la propiedad RetentionDuration (si está especificado). Los valores válidos son:</br>**Delete**: se eliminan los elementos anteriores al valor especificado por la propiedad RetentionDuration.</br>**Keep**: se conservan los elementos durante el tiempo que especifica la propiedad RetentionDuration y no se ejecuta ninguna acción cuando expira el período de duración. </br>**KeepAndDelete**: se conservan los elementos durante el tiempo que especifica la propiedad RetentionDuration y, al expirar el período de duración, se eliminan </br> </br> Dependencias de grupo: cuando se especifica esta propiedad, también se deben especificar RetentionDuration y RetentionType. |
@@ -219,7 +221,7 @@ Use la siguiente información para rellenar la plantilla descargada e importar n
 
 La configuración de etiqueta no se admite actualmente para la importación:
 
-- Revisión para eliminación en varias fases: aunque puede configurar las opciones de una sola fase de revisión para eliminación al importar las etiquetas de retención con una plantilla, no puede especificar las fases de revisión adicionales. En su lugar, configúrelos en el centro de cumplimiento después de que la importación se realice correctamente.
+- Revisión para eliminación en varias fases: aunque puede configurar las opciones de una sola fase de revisión para eliminación al importar las etiquetas de retención con una plantilla, no puede especificar las fases de revisión adicionales. En su lugar, configúrelas en el centro de cumplimiento después de que la importación se realice correctamente.
 
 - Desbloquee este registro de forma predeterminada (actualmente se está implementando en versión preliminar): esta configuración no está disponible en la plantilla para importar y no puede seleccionar esta configuración en el centro de cumplimiento después de que la importación se realice correctamente.
 

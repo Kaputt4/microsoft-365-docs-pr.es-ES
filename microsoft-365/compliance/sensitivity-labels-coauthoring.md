@@ -1,5 +1,5 @@
 ---
-title: Habilitar la coautoría para documentos cifrados por etiquetas de confidencialidad en Microsoft 365
+title: Habilitación de la coautoría para documentos cifrados
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -13,16 +13,18 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: 0fee934af5e2dfb01c681c9b2e415ef538312367
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 72935a58931c1458466f145c17a9e423e6b6d31c
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836114"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286998"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Habilite la configuración para admitir la [coautoría](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) para las aplicaciones de escritorio de Office de modo que cuando las [etiquetas de confidencialidad](sensitivity-labels.md) etiquetan y cifran documentos, varios usuarios puedan editar estos documentos al mismo tiempo.
 
@@ -136,7 +138,7 @@ Antes de habilitar la configuración de espacio empresarial para la coautoría d
 
 Si ya ha activado esta configuración durante el período de versión preliminar, no es necesario realizar ninguna otra acción y puede saltarse este procedimiento.
 
-1. Inicie sesión en el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) como administrador global de su espacio empresarial.
+1. Inicie sesión en el [Portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com) como administrador global de su espacio empresarial.
 
 2. En el panel de navegación, seleccione **Configuración** > **Coautoría para archivos con archivos de confidencialidad**.
 

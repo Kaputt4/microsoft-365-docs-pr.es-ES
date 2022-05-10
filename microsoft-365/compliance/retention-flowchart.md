@@ -1,5 +1,5 @@
 ---
-title: Diagrama de flujo para determinar cuándo se conservará o eliminará permanentemente un elemento
+title: Diagrama de flujo para determinar cuándo se conserva o elimina un elemento
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,16 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar un diagrama de flujo para determinar el resultado cuando un elemento tenga varias directivas de retención o una etiqueta de retención y directivas de retención
-ms.openlocfilehash: b9c3b94dcb50499b6af72fd124da384f90d16da9
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: cf35a89faf3ed526c94acf362f1a927eb36420f0
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935830"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286810"
 ---
 # <a name="flowchart-to-determine-when-an-item-will-be-retained-or-permanently-deleted"></a>Diagrama de flujo para determinar cuándo se conservará o eliminará permanentemente un elemento
 
 >*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use el siguiente diagrama de flujo para aplicar los [principios de retención](retention.md#the-principles-of-retention-or-what-takes-precedence) para un elemento y así determinar si el sistema lo conservará o lo eliminará permanentemente como resultado de una etiqueta de retención o directiva de retención.
 

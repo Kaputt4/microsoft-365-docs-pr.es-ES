@@ -17,16 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de retención para declarar registros.
-ms.openlocfilehash: 23dd6c61d9da787eecd2e1fa825fe338d961d1d1
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: 75445d1cd61bd86dd41d6325efc6e71fac20ddc0
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911463"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286064"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usar etiquetas de retención para declarar registros
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Para declarar documentos y correos electrónicos como [registros](records-management.md#records), use las [etiquetas de retención](retention.md#retention-labels) que marcan el contenido como **registro** o como **registro normativo**.
 
@@ -55,11 +57,7 @@ Si cambia de opinión sobre cómo ver esta opción en el asistente de etiquetas 
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Configurar etiquetas de retención para declarar registros
 
-Al crear una etiqueta de retención a partir de la solución **Administración de registros** del Centro de cumplimiento de Microsoft 365, puede seleccionar la opción **Marcar los elementos como un registro**. A continuación, como opción adicional que se está implementando actualmente en versión preliminar, desbloquee el registro de forma predeterminada para SharePoint y OneDrive.
-
-La opción adicional de **Desbloquear este registro de forma predeterminada** permite a los usuarios declarar registros ellos mismos porque bloquean el registro cuando han terminado de editar el contenido. Para obtener más información sobre este escenario admitido, vea [Usar el control de versiones de registros para actualizar los registros almacenados en SharePoint o OneDrive](record-versioning.md).
-
-Si ha ejecutado el comando de PowerShell de la sección anterior, como alternativa puede marcar los elementos como un registro normativo.
+Al crear una etiqueta de retención desde la solución **Administración de registros** del Portal de cumplimiento de Microsoft Purview, tiene la opción de marcar los elementos como un registro. Si ha ejecutado el comando de PowerShell de la sección anterior, como alternativa puede marcar los elementos como un registro normativo.
 
 Por ejemplo:
 
@@ -77,7 +75,7 @@ Instrucciones completas:
 
 Si va a usar etiquetas de retención para declarar elementos como registros (en lugar de registros normativos) en SharePoint y OneDrive, considere si necesita cambiar la configuración predeterminada del espacio empresarial que permite a los usuarios editar las propiedades de un [registro bloqueado](record-versioning.md) cuando los archivos tengan más de 0 bytes.
 
-Para cambiar este valor predeterminado, vaya al [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/) > **Administración de registros** > **Configuración de la administración de registros** > **Etiquetas de retención** > **Permitir la edición de las propiedades del registro** y, a continuación, deshabilite el ajuste **Permitir a los usuarios editar las propiedades del registro**.
+Para cambiar este valor predeterminado, vaya al [Portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/) > **Administración de registros** > **Configuración de la administración de registros** > **Etiquetas de retención** > **Permitir la edición de las propiedades del registro** y, después, deshabilite el ajuste **Permitir a los usuarios editar las propiedades del registro**.
 
 ## <a name="applying-the-configured-retention-label-to-content"></a>Aplicar una etiqueta de retención configurada al contenido
 

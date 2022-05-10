@@ -1,5 +1,5 @@
 ---
-title: Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
+title: Usar etiquetas de confidencialidad con Microsoft Teams, Grupos de Microsoft 365 y sitios de SharePoint
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,16 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 0c8462333a3b3fd0c062c72fce0f673977c54b9b
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 9b9427fc736dfee3ea326b8c523d3f872ad98c70
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916257"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286108"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Además de usar [etiquetas de confidencialidad](sensitivity-labels.md) para clasificar y proteger documentos y mensajes de correo electrónico, también puede usarlas para proteger el contenido en los siguientes contenedores: sitios de Microsoft Teams, grupos de Microsoft 365 ([anteriormente grupos de Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)), y sitios de SharePoint. Para esta clasificación y protección de etiquetas, use la siguiente configuración de etiquetas:
 
@@ -181,7 +183,7 @@ Limitaciones conocidas de esta versión preliminar:
 
 ### <a name="configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings"></a>Configuración de las opciones del tipo de vínculo de uso compartido predeterminado para un sitio mediante la configuración avanzada de PowerShell
 
-Además de la configuración de etiquetas para sitios y grupos que puede configurar desde el centro de cumplimiento, también puede configurar el tipo de vínculo de uso compartido predeterminado para un sitio. Las etiquetas de confidencialidad de los documentos también se pueden configurar para un tipo de vínculo de uso compartido predeterminado. Esta configuración, que ayuda a evitar el uso compartido excesivo, se selecciona automáticamente cuando los usuarios seleccionan el botón **Compartir** en sus aplicaciones de Office. 
+Además de la configuración de etiquetas para sitios y grupos que puede configurar desde el Portal de cumplimiento de Microsoft Purview, también puede configurar el tipo de vínculo de uso compartido predeterminado para un sitio. Las etiquetas de confidencialidad de los documentos también se pueden configurar para un tipo de vínculo de uso compartido predeterminado. Esta configuración, que ayuda a evitar el uso compartido excesivo, se selecciona automáticamente cuando los usuarios seleccionan el botón **Compartir** en sus aplicaciones de Office. 
 
 Para obtener más información e instrucciones, vea [Uso de las etiquetas de confidencialidad para configurar el tipo de vínculo de uso compartido predeterminado para sitios y documentos en SharePoint y OneDrive](sensitivity-labels-default-sharing-link.md).
 
@@ -367,8 +369,7 @@ Las siguientes aplicaciones y servicios son compatibles con etiquetas de confide
   - Centro de administración de SharePoint
   - Centro de administración de Teams
   - Centro de administración de Microsoft 365
-  - Centro de cumplimiento de Microsoft 365
-  - Portal de Azure Active Directory
+  - Portal de cumplimiento de Microsoft Purview.
 
 - Servicios y aplicaciones de usuario:
 
