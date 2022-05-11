@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo crear un modelo de procesamiento de formularios en SharePoint Syntex.
-ms.openlocfilehash: 3eb14a76bd597f1f382b87813c7e4bd2a4518e19
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: bf0a15894e7b9bbc4905a0372d557e1880650e84
+ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882360"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65349811"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Crear un modelo de procesamiento de formularios en Microsoft SharePoint Syntex
 
@@ -43,7 +43,7 @@ La creación de un modelo de procesamiento de formularios implica los pasos sigu
 
 Solo puede crear un modelo de procesamiento de formularios en las bibliotecas de documentos de SharePoint para las que está habilitado. Si el procesamiento de formularios está habilitado, puede ver el menú **Automatizar** > **AI Builder** > **Crear un modelo para procesar formularios** en la biblioteca de documentos. Si necesita el procesamiento habilitado en la biblioteca de documentos, póngase en contacto con el Administrador de SharePoint.
 
- ![Captura de pantalla que muestra el modelo de AI Builder.](../media/content-understanding/create-ai-builder-model2.png)
+![Captura de pantalla que muestra el modelo de AI Builder.](../media/content-understanding/create-ai-builder-model2.png)
 
 ## <a name="step-1-create-a-form-processing-model"></a>Paso 1: crear un modelo de procesamiento de formularios
 
@@ -114,11 +114,9 @@ Debe etiquetar los documentos para enseñar al modelo a comprender los campos y 
 
 2. Una vez publicado el modelo, seleccione **Usar modelo** y seleccione **Crear flujo**. Esto crea un flujo de Power Automate que puede ejecutarse en la biblioteca de documentos de SharePoint y extrae los campos que se han identificado en el modelo.
 
-    ![Captura de pantalla de AI Builder que muestra el panel Crear un flujo.](../media/content-understanding/ai-builder-create-a-flow.png)
+    ![Captura de pantalla de AI Builder que muestra el panel Crear un flujo.](../media/content-understanding/ai-builder-create-a-flow-1.png)
  
 3. Cuando finalice, verá el mensaje: *Su flujo se ha creado correctamente*.
-
-    ![Captura de pantalla de AI Builder que muestra que el flujo se creó correctamente.](../media/content-understanding/ai-builder-flow-created.png)
 
 4. Seleccione el botón **Ir a SharePoint** para ver la biblioteca de documentos actualizada con el modelo.
 
@@ -170,7 +168,7 @@ Para ejecutar el flujo:
 
     ![Captura de pantalla que muestra la opción Crear un panel de flujo y flujo resaltada.](../media/content-understanding/integrate-create-flow.png) 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
   
 [Documentación de Power Automate](/power-automate/)
 

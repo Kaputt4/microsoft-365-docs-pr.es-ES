@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Obtenga información sobre cómo aplicar una etiqueta de retención a un modelo en SharePoint Syntex.
-ms.openlocfilehash: 281ff940377f033690f1ed1e7146c8aefe645bf1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 362b370fa34193e66802e9b0d2c5788785ea92c5
+ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941817"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65349794"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>Puede aplicar fácilmente una etiqueta de retención a un modelo en SharePoint Syntex.
 
@@ -28,7 +28,6 @@ ms.locfileid: "64941817"
 
 </br>
 
-
 Puede aplicar fácilmente una [etiqueta de retención](../compliance/retention.md) a un modelo en Microsoft SharePoint Syntex. Puede hacerlo tanto para modelos de comprensión de documentos como para modelos de procesamiento de formularios
 
 Las etiquetas de retención le permiten aplicar la configuración de retención a los documentos que identifican sus modelos.  Por ejemplo, si desea que el modelo no solo identifique cualquier documento de *Notificación de seguros* cargados en la biblioteca de documentos, sino que también pueda aplicar una etiqueta de retención de *negocios* para que estos documentos no se puedan eliminar de la biblioteca de documentos durante el período de tiempo especificado (por ejemplo, los próximos cinco meses).
@@ -36,7 +35,7 @@ Las etiquetas de retención le permiten aplicar la configuración de retención 
 Puede aplicar una etiqueta de retención preexistente al modelo en la página principal del modelo. 
 
 > [!Important]
-> Para que las etiquetas de retención estén disponibles para aplicarlas a los modelos de comprensión de documentos, deben [crearse](../compliance/file-plan-manager.md#create-retention-labels) y [publicarse](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) en el portal de cumplimiento de Microsoft Purview.
+> Para que las etiquetas de retención estén disponibles para aplicarlas a los modelos de comprensión de documentos, deben [crearse](../compliance/file-plan-manager.md#create-retention-labels) y [publicarse](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) en el portal de cumplimiento Microsoft Purview.
 
 ## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>Aplicar una etiqueta de retención a un modelo de comprensión mediante documentos
 
@@ -74,7 +73,7 @@ Por ejemplo, todos los documentos de *Avisos de seguros* que su modelo identifiq
 ## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>Agregar una etiqueta de retención a un modelo de comprensión mediante documentos
 
 > [!Important]
-> Para que las etiquetas de retención estén disponibles para aplicarlas al modelo de procesamiento de formularios, deben [crearse](../compliance/file-plan-manager.md#create-retention-labels) y [publicarse](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) en el portal de cumplimiento de Microsoft Purview.
+> Para que las etiquetas de retención estén disponibles para aplicarlas al modelo de procesamiento de formularios, deben [crearse](../compliance/file-plan-manager.md#create-retention-labels) y [publicarse](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) en el portal de cumplimiento Microsoft Purview.
 
 Puede aplicar una etiqueta de retención a un modelo de procesamiento de formularios cuando cree el modelo, o bien aplicarlo a un modelo ya existente.
 
