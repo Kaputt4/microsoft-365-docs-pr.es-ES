@@ -1,5 +1,5 @@
 ---
-title: Obtenga información sobre las etiquetas y directivas predeterminadas para Microsoft Information Protection
+title: Información sobre etiquetas y directivas predeterminadas para proteger los datos
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -10,32 +10,34 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
-description: Obtenga información sobre las etiquetas y directivas predeterminadas para Microsoft Information Protection (MIP) para clasificar y proteger el contenido confidencial.
-ms.openlocfilehash: a0634a8f67e28d84334cfadd4be7d9694084af6c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Obtenga información sobre las etiquetas y directivas predeterminadas para que Microsoft Purview Information Protection clasifique y proteja el contenido confidencial.
+ms.openlocfilehash: 486286780eaa3a2deedb2c3df837a93814280f39
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938631"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286458"
 ---
-# <a name="default-labels-and-policies-for-microsoft-information-protection"></a>Etiquetas y directivas predeterminadas para Microsoft Information Protection
+# <a name="default-labels-and-policies-to-protect-your-data"></a>Etiquetas y directivas predeterminadas para proteger los datos
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Los clientes elegibles pueden activar las etiquetas y directivas predeterminadas para Microsoft Information Protection (MIP): 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Los clientes elegibles pueden activar las etiquetas y directivas predeterminadas para Microsoft Purview Information Protection: 
 
 - Etiquetas de confidencialidad y una directiva de etiquetas de confidencialidad
 - Etiquetado automático del lado cliente
 - Etiquetado automático del lado servicio
 - Directivas de prevención de pérdida de datos (DLP) para Teams y dispositivos
 
-Estas configuraciones predeterminadas le ayudarán a comenzar a trabajar rápidamente con Microsoft Information Protection del Centro de cumplimiento de Microsoft 365. Puede usarlos tal y como están, realizar solo algunos cambios o personalizarlos completamente para que se adapten mejor a sus requisitos empresariales. 
+Estas configuraciones predeterminadas le ayudarán a comenzar a trabajar rápidamente con Microsoft Purview Information Protection para Microsoft 365. Puede usarlos tal y como están, realizar solo algunos cambios o personalizarlos completamente para que se adapten mejor a sus requisitos empresariales. 
 
-La elegibilidad incluye a aquellos clientes que tengan una [prueba gratuita del Centro de cumplimiento de Microsoft 365](compliance-easy-trials.md) y a algunos clientes que ya tengan un plan de Microsoft 365 E5:
+La elegibilidad incluye a aquellos clientes que tengan una [prueba gratuita de Microsoft Purview](compliance-easy-trials.md) y a algunos clientes que ya tengan un plan de Microsoft 365 E5:
 
-- **Nuevos clientes**: si ha tenido el Centro de cumplimiento de Microsoft 365 durante menos de 30 días, el inquilino puede activar todas las configuraciones predeterminadas listadas. Siempre puede deshabilitarlas, quitarlas o editarlas.
+- **Nuevos clientes**: si ha tenido Microsoft Purview por menos de 30 días, su espacio empresarial puede activar todas las configuraciones predeterminadas enumeradas. Siempre puede deshabilitarlas, quitarlas o editarlas.
 
-- **Clientes existentes**: si ha tenido el Centro de cumplimiento de Microsoft 365 durante más de 30 días, puede activar las configuraciones predeterminadas si aún no ha configurado una equivalente:
+- **Clientes existentes**: si ha tenido Microsoft Purview durante más de 30 días, puede activar las configuraciones predeterminadas si aún no ha configurado una equivalente:
 
     | Configuración predeterminada| Equivalente |
     |:-----|:-----|
@@ -49,17 +51,17 @@ La elegibilidad incluye a aquellos clientes que tengan una [prueba gratuita del 
 
 Para obtener estas directivas y etiquetas preconfiguradas: 
 
-1. En el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com/), seleccione **Soluciones** > **Protección de información**
+1. En el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com/), seleccione **Soluciones** > **Protección de la información**
     
     Si no ve esta opción inmediatamente, seleccione primero **Mostrar todo** en el panel de navegación. 
     
-2. Si es elegible para las etiquetas y directivas predeterminadas de Microsoft Information Protection, verá la siguiente información, donde puede activar las etiquetas y directivas predeterminadas. Por ejemplo:
+2. Si es elegible para las etiquetas y directivas predeterminadas de Microsoft Purview Information Protection, verá la siguiente información, donde puede activar las etiquetas y directivas predeterminadas. Por ejemplo:
     
-    :::image type="content" alt-text="Activación de Microsoft Information Protection para etiquetas y directivas preconfiguradas." source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
+    :::image type="content" alt-text="Activación de Microsoft Purview Information Protection para etiquetas y directivas preconfiguradas." source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
     
     Si no ve esta información mostrada con la opción de activación, actualmente no es apto para la creación automática de etiquetas y directivas de confidencialidad. Puede intentar volver a comprobarlo más tarde para ver si este estado ha cambiado o puede usar la información de configuración siguiente para crear manualmente las mismas etiquetas y directivas.
 
-3. Ahora, habilite las etiquetas de confidencialidad para SharePoint y OneDrive. Este paso es un requisito previo para usar etiquetas de confidencialidad en Office para la Web y directivas de etiquetado automático para SharePoint y OneDrive.
+3. Ahora habilite las etiquetas de confidencialidad para SharePoint y OneDrive. Este paso es un requisito previo para usar etiquetas de confidencialidad en Office para la Web y directivas de etiquetado automático para SharePoint y OneDrive.
    
     Use el siguiente banner en la parte superior de la pestaña **Información general de Information Protection** y seleccione **Activar ahora**. Si no ve este banner, las etiquetas de confidencialidad para SharePoint y OneDrive ya se han habilitado para su espacio empresarial.
     
@@ -84,7 +86,7 @@ Cuando no tenga etiquetas de confidencialidad que estén publicadas, le crearemo
 |Confidencial <br /> \ Todos los empleados|Datos confidenciales que necesitan protección, lo que concede a todos los empleados permisos totales. Los propietarios de datos pueden realizar un seguimiento del contenido y revocarlo.|Esta etiqueta está seleccionada para el [etiquetado automático del lado cliente](#client-side-auto-labeling) y el [etiquetado automático del lado servicio](#service-side-auto-labeling).<br /><br /> **Ámbito**: archivo, correo electrónico <br /><br />**Cifrado**: todos los usuarios y grupos de la organización: trabajar en coautoría<br /><br />**Marcado de contenido**: Pie de página: clasificado como confidencial<br /><br />**Etiquetado automático**: se recomienda que los usuarios apliquen la etiqueta <br /><br />**Configuración de grupo**: no<br /><br />**Configuración del sitio**: no <br /><br />**Etiquetado automático para las columnas de base de datos**: no |
 |Confidencial <br /> \ Personas de confianza|Datos confidenciales que se pueden compartir con personas de confianza dentro y fuera de la organización. Estas personas también pueden volver a compartir los datos según sea necesario.|**Ámbito**: archivo, correo electrónico <br /><br />**Cifrado**: permite a los usuarios asignar permisos: <br /> - Solo cifrar para Outlook <br />- Solicitar a los usuarios en Word, PowerPoint y Excel<br /><br />**Marcado de contenido**: Pie de página: clasificado como confidencial<br /><br />**Etiquetado automático**: no <br /><br />**Configuración de grupo**: no<br /><br />**Configuración del sitio**: no <br /><br />**Etiquetado automático para las columnas de base de datos**: no|
 |Extremadamente confidencial|Datos empresariales extremadamente confidenciales que podrían provocar daños a la empresa si se comparten con personas no autorizadas. Algunos ejemplos son: información de empleados y clientes, contraseñas, código fuente e informes financieros previamente anunciados.|**Ámbito**: archivo, correo electrónico <br /><br />**Marcado de contenido**: marca de agua: ALTAMENTE CONFIDENCIAL<br /><br />**Etiquetado automático**: no <br /><br />**Configuración de grupo**: no<br /><br />**Configuración del sitio**: no <br /><br />**Etiquetado automático para las columnas de base de datos**: no|
-|Extremadamente confidencial <br /> \ Todos los empleados|Datos extremadamente confidenciales que permiten a todos los empleados ver, editar y responder permisos a este contenido. Los propietarios de datos pueden realizar un seguimiento del contenido y revocarlo.|**Ámbito**: archivo, correo electrónico <br /><br />**Cifrado**: todos los usuarios y grupos de la organización: trabajar en coautoría<br /><br />**Marcado de contenido**: pie de página: clasificado como extremadamente confidencial<br /><br />**Etiquetado automático**: no <br /><br />**Configuración de grupo**: no<br /><br />**Configuración del sitio**: no <br /><br />**Etiquetado automático para las columnas de base de datos**: no|
+|Extremadamente confidencial <br /> \ Todos los empleados|Datos extremadamente confidenciales que permiten a todos los empleados ver, editar y responder a este contenido. Los propietarios de los datos pueden hacer un seguimiento y revocar el contenido.|**Ámbito**: archivo, correo electrónico <br /><br />**Cifrado**: todos los usuarios y grupos de la organización: trabajar en coautoría<br /><br />**Marcado de contenido**: pie de página: clasificado como extremadamente confidencial<br /><br />**Etiquetado automático**: no <br /><br />**Configuración de grupo**: no<br /><br />**Configuración del sitio**: no <br /><br />**Etiquetado automático para las columnas de base de datos**: no|
 |Extremadamente confidencial <br /> \ Personas específicas |Datos extremadamente confidenciales que requieren protección y que solo pueden ser vistos por las personas que especifique y con el nivel de permisos que elija.|**Ámbito**: archivo, correo electrónico <br /><br />**Cifrado**: permite a los usuarios asignar permisos: <br />- No reenviar para Outlook <br />- Solicitar a los usuarios en Word, PowerPoint y Excel<br /><br />**Marcado de contenido**: pie de página: clasificado como extremadamente confidencial<br /><br />**Etiquetado automático**: no <br /><br />**Configuración de grupo**: no<br /><br />**Configuración del sitio**: no <br /><br />**Etiquetado automático para las columnas de base de datos**: no|
 
 > [!NOTE]
@@ -108,7 +110,7 @@ Para obtener más información acerca de estas configuraciones de directiva y ot
 
 Si necesita editar esta configuración de directivas predeterminadas, consulte [Publicar etiquetas de confidencialidad mediante la creación de una directiva de etiquetas](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
-Al usar estas etiquetas en aplicaciones de Office en Windows, macOS, iOS y Android, los usuarios verán nuevas etiquetas en un plazo de cuatro horas y en una hora para Word, Excel y PowerPoint en la Web al actualizar el explorador. Sin embargo, podría necesitar dar un margen de 24 horas para que los cambios realizados se apliquen a los usuarios y servicios.
+Al usar estas etiquetas en aplicaciones de Office en Windows, macOS, iOS y Android, los usuarios verán las nuevas etiquetas en un plazo de cuatro horas, y en una hora para Word, Excel y PowerPoint en la Web al actualizar el explorador. Sin embargo, es posible que deba esperar hasta 24 horas para que los cambios se repliquen en todas las aplicaciones y servicios.
 
 ## <a name="client-side-auto-labeling"></a>Etiquetado automático del lado cliente
 
@@ -158,7 +160,7 @@ Si desea editar la directiva DLP, consulte [Crear, probar y ajustar una directiv
 
 ## <a name="dlp-for-devices"></a>DLP para dispositivos
 
-La directiva DLP predeterminada para dispositivos detecta la presencia de números de tarjeta de crédito en dispositivos Windows 10 que se hayan incorporado al Centro de cumplimiento de Microsoft 365. A continuación, audita (no bloquea) las siguientes acciones: 
+La directiva DLP predeterminada para dispositivos detecta la presencia de números de tarjeta de crédito en dispositivos con Windows 10 que se han incorporado a Microsoft Purview. A continuación, audita (no bloquea) las siguientes acciones: 
 
 - Cargar en dominios de servicios en la nube o acceder a través de exploradores no permitidos
 
@@ -182,8 +184,8 @@ Si desea editar la directiva DLP, consulte [Crear, probar y ajustar una directiv
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
-Para obtener más información sobre las etiquetas de confidencialidad, la prevención de pérdida de datos y todas las funcionalidades disponibles de Microsoft Information Protection, consulte los siguientes recursos:
+Para obtener más información sobre las etiquetas de confidencialidad, la prevención de pérdida de datos y todas las funcionalidades disponibles de Microsoft Purview Information Protection, consulte los siguientes recursos:
 
 - [Obtener más información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
 - [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
-- [Microsoft Information Protection en Microsoft 365.](information-protection.md)
+- [Protección de los datos con Microsoft Purview](information-protection.md)
