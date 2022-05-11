@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar y usar un conector de datos de Slack eDiscovery proporcionado por Microsoft para importar y archivar datos de mensajería instantánea.
-ms.openlocfilehash: dc63673ae51d4ea47931a8a27acd7ef2191397d7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 65d7b666390c132995882ca4e8d027064482df13
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093095"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320692"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Configuración de un conector para archivar datos de Slack eDiscovery (versión preliminar)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-El conector de datos de eDiscovery de Slack proporcionado por Microsoft le ayuda a importar y archivar datos de mensajería instantánea (como mensajes, datos adjuntos, vínculos y revisiones) desde las áreas de trabajo de Slack de su organización para Microsoft 365. El conector de datos extrae datos de la API de Slack, los convierte a un formato de mensaje de correo electrónico y, a continuación, los importa a buzones de usuario en Microsoft 365. Una vez importados los datos de Slack, puede aplicar soluciones de cumplimiento, como suspensión por juicio, exhibición de documentos electrónicos de Microsoft Purview (Premium), cumplimiento de comunicaciones y configuración de retención al contenido de Slack. El uso de un conector de datos de Slack eDiscovery para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+El conector de datos de eDiscovery de Slack proporcionado por Microsoft le ayuda a importar y archivar datos de mensajería instantánea (como mensajes, datos adjuntos, vínculos y revisiones) desde las áreas de trabajo de Slack de su organización para Microsoft 365. El conector de datos extrae datos de la API de Slack, los convierte a un formato de mensaje de correo electrónico y, a continuación, los importa a buzones de usuario en Microsoft 365. Una vez importados los datos de Slack, puede aplicar soluciones de cumplimiento, como suspensión por juicio, Microsoft Purview eDiscovery (Premium), cumplimiento de comunicaciones y configuración de retención al contenido de Slack. El uso de un conector de datos de Slack eDiscovery para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
 
 ## <a name="overview-of-archiving-slack-ediscovery-data"></a>Información general sobre el archivado de datos de eDiscovery de Slack
 
@@ -45,7 +45,7 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 - Obtenga el nombre de usuario y la contraseña de la cuenta empresarial de Slack de su organización. Estas credenciales se usan para iniciar sesión en esta cuenta al crear el conector de datos. También se recomienda que haya configurado el aprovisionamiento de usuarios automatizado en su organización de Slack para usar el inicio de sesión único (SSO). [Roles en el Centro de cumplimiento de & de seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- Al usuario que crea el conector de Slack eDiscovery se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento de Microsoft Purview. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que crea el conector de Slack eDiscovery se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** de la portal de cumplimiento Microsoft Purview. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="step-1-create-a-slack-ediscovery-connector"></a>Paso 1: Crear un conector de eDiscovery de Slack
 
@@ -121,7 +121,7 @@ Después de crear el conector de Slack eDiscovery, puede ver el estado del conec
 
 2. Haga clic en la pestaña **Conectores** y, a continuación, seleccione el conector **de Slack eDiscovery** para mostrar la página de control flotante, que contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene datos que se han importado a la nube de Microsoft.
+3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problemas conocidos
 

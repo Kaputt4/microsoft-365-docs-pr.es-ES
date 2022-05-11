@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un requisito para todas las soluciones de Microsoft Purview Information Protection: cree, configure y publique etiquetas de confidencialidad para clasificar y proteger los datos de su organización.'
-ms.openlocfilehash: 7dc8cfc095167021df2cec093734ab9c1b101868
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: e35d6e317abc3fb32bb11a6bdf937f303212fc23
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286954"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302362"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Crear y configurar etiquetas de confidencialidad y sus directivas
 
@@ -70,7 +70,7 @@ El administrador global de su organización tiene permisos totales para crear y 
 
 5. Repita estos pasos para crear más etiquetas. Sin embargo, si desea crear una subetiqueta, primero seleccione la etiqueta principal y seleccione **...** para **Más acciones** y, a continuación, seleccione **Agregar subetiqueta**.
 
-6. Cuando haya creado todas las etiquetas que necesita, revise el pedido y, si es necesario, muévalos hacia arriba o hacia abajo. Para cambiar el orden de una etiqueta, seleccione **...** para **Más acciones** y, a continuación, seleccione **Subir** o **Bajar**. Para obtener más información, consulte [Prioridad de etiquetas (el orden importa)](sensitivity-labels.md#label-priority-order-matters) en la parte de información general.
+6. Cuando haya creado todas las etiquetas que necesite, revise el pedido y, si es necesario, muévalas hacia arriba o hacia abajo. Para cambiar el orden de una etiqueta, seleccione **...** para **Más acciones** y, a continuación, seleccione **Subir** o **Bajar**. Para obtener más información, consulte [Prioridad de etiquetas (el orden importa)](sensitivity-labels.md#label-priority-order-matters) en la parte de información general.
 
 Para editar una etiqueta existente, selecciónela, y luego seleccione el botón **Editar etiqueta**:
 
@@ -195,23 +195,23 @@ Asimismo, puede usar [Remove-Label](/powershell/module/exchange/remove-label) y 
 
 En un entorno de producción, es poco probable que deba quitar las etiquetas de confidencialidad de una directiva de etiqueta, o eliminar las etiquetas de confidencialidad. Es más probable que deba realizar una o varias de estas acciones durante una fase de prueba inicial. Asegúrese de comprender las consecuencias de cualquiera de estas acciones.
 
-Quitar una etiqueta de una directiva de etiqueta es menos peligroso que eliminarla, y siempre puede volver a agregarla a una directiva de etiqueta más adelante si es necesario:
+Quitar una etiqueta de una directiva de etiquetas es menos arriesgado que borrarla y siempre se puede volver a añadir más tarde si es necesario. No podrá eliminar una etiqueta si todavía está en una directiva de etiqueta.
 
-- Al quitar una etiqueta de una directiva de etiqueta —de forma que ya no esté publicada para los usuarios especificados originalmente— la próxima vez que se actualice la directiva de etiqueta, los usuarios ya no podrán ver dicha etiqueta en la aplicación de Office. Sin embargo, si se aplicó la etiqueta a documentos o correos electrónicos, esta no se eliminará del contenido. El cifrado aplicado por la etiqueta permanece y la plantilla de protección subyacente sigue publicada. 
-
-- Para las etiquetas que se han quitado pero que, anteriormente, se habían aplicado al contenido, los usuarios que usan las etiquetas integradas de Word, Excel y PowerPoint aún verán el nombre de etiqueta aplicado en la barra de estado. De forma similar, las etiquetas quitadas que se habían aplicado a los sitios de SharePoint siguen mostrando el nombre de la etiqueta en la columna **Confidencialidad**.
+Al quitar una etiqueta de una directiva de etiqueta —de forma que ya no esté publicada para los usuarios especificados originalmente— la próxima vez que se actualice la directiva de etiqueta, los usuarios ya no podrán ver dicha etiqueta en las aplicaciones de Office. Si esa etiqueta ya está aplicada, la etiqueta no se quita del contenido o contenedor. Por ejemplo, los usuarios que usan las etiquetas integradas en aplicaciones de escritorio para Word, Excel y PowerPoint aún verán el nombre de etiqueta aplicado en la barra de estado. Una etiqueta de contenedor aplicada continúa protegiendo el sitio de Teams o SharePoint.
 
 En comparación, al eliminar una etiqueta:
 
 - Si la etiqueta aplicó el cifrado, la plantilla de protección subyacente se archiva para que se pueda seguir abriendo el contenido protegido previamente. Debido a esta plantilla de protección archivada, no podrá crear una etiqueta nueva con el mismo nombre. Aunque se puede eliminar una plantilla de protección con [PowerShell](/powershell/module/aipservice/remove-aipservicetemplate), no lo haga, a menos que esté seguro de que no necesitará abrir el contenido que fue cifrado con la plantilla archivada.
 
-- En las aplicaciones de escritorio, la información de la etiqueta de los metadatos se mantiene, pero, debido a que ya no es posible tener un identificador de etiqueta para la asignación de nombres, los usuarios no ven el nombre de la etiqueta que se aplicó (por ejemplo, en la barra de estado) por lo que asumen que el contenido no tiene etiqueta. Si la etiqueta aplicó el cifrado, este permanecerá y cuando se abra el contenido, los usuarios seguirán viendo el nombre y la descripción de la plantilla de protección ahora archivada.
+- En el caso de los documentos almacenados en SharePoint o OneDrive y que hayas [habilitado las etiquetas de confidencialidad para los archivos de Office](sensitivity-labels-sharepoint-onedrive-files.md): Cuando abra el documento en Office para la web, no verá la etiqueta aplicada en la aplicación, y el nombre de la etiqueta ya no se mostrará en la columna **Confidencialidad** en SharePoint. Si la etiqueta eliminada aplicó el cifrado y los servicios pueden procesar el contenido cifrado, se quita el cifrado. Las acciones de salida de estos servicios dan como resultado el mismo resultado. Por ejemplo, descargar, copiar en, mover a y abrir con una aplicación móvil o de escritorio de Office. Aunque la información de la etiqueta permanece en los metadatos del archivo, las aplicaciones ya no pueden asignar el identificador de etiqueta a un nombre para mostrar, por lo que los usuarios asumirán que un archivo no está etiquetado.
 
-- Para Office en la Web: los usuarios no podrán ver el nombre de la etiqueta en la barra de estado ni en la columna de **Confidencialidad**. La información de etiqueta de los metadatos solo permanece si la etiqueta no aplicó el cifrado. Si la etiqueta aplicó el cifrado y ha habilitado las [etiquetas de confidencialidad para SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), se quitará la información de la etiqueta de los metadatos y se quitará el cifrado. 
+- Para los documentos almacenados fuera de SharePoint y OneDrive o que no hayan habilitado las etiquetas de sensibilidad para los archivos de Office, y para los correos electrónicos: al abrir el contenido, la información de la etiqueta en los metadatos permanece, pero sin la asignación del ID de la etiqueta al nombre, los usuarios no ven el nombre de la etiqueta aplicada que se muestra (por ejemplo, en la barra de estado de las aplicaciones de escritorio). Si la etiqueta eliminada aplicó el cifrado, este permanece y los usuarios siguen viendo el nombre y la descripción de la plantilla de protección ahora archivada.
 
-Cuando quita una etiqueta de confidencialidad de una directiva de etiqueta, o elimina una etiqueta de confidencialidad, estos cambios pueden tardar hasta 24 horas en replicarse en todos los usuarios y servicios.
+- Para los contenedores, como los sitios en SharePoint y Teams, la etiqueta se elimina y cualquier ajuste que se haya configurado con esa etiqueta ya no se aplica. Esta acción suele tardar entre 48 y 72 horas en los sitios de SharePoint y puede ser más rápida para Teams y Grupos de Microsoft 365.
 
-## <a name="next-steps"></a>Pasos siguientes
+Al igual que con todos los cambios de etiqueta, quitar una etiqueta de confidencialidad de una directiva de etiqueta o eliminar una etiqueta de confidencialidad tarda tiempo en replicarse en todos los usuarios y servicios.
+
+## <a name="next-steps"></a>Siguientes pasos
 
 Para configurar y usar las etiquetas de confidencialidad en escenarios específicos, use los artículos siguientes:
 

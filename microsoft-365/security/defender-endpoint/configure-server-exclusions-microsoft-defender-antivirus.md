@@ -14,14 +14,13 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 02/04/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 487c253adc422d69be5ce011ffef1fc1a014474b
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 890be814be75c303aa42feb5cb7a16cb4f5c3bd9
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789786"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320648"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configuración de exclusiones de Antivirus de Microsoft Defender en Windows Server
 
@@ -42,12 +41,12 @@ Además de las exclusiones automáticas definidas por rol del servidor, puede ag
 
 ## <a name="a-few-points-to-keep-in-mind"></a>Algunos puntos a tener en cuenta
 
-Tenga en cuenta los siguientes puntos importantes:
-
 - Las exclusiones personalizadas tienen prioridad sobre las exclusiones automáticas.
-- Las exclusiones automáticas solo se aplican al examen de protección en tiempo real (RTP). Las exclusiones automáticas no se respetan durante un examen completo, rápido o a petición.
+- Las exclusiones automáticas solo se aplican al examen [de protección en tiempo real (RTP](configure-protection-features-microsoft-defender-antivirus.md) ). 
+- Las exclusiones automáticas no se respetan durante un [examen completo, rápido o a petición](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan).
 - Las exclusiones personalizadas y duplicadas no entran en conflicto con las exclusiones automáticas.
 - Antivirus de Microsoft Defender usa las herramientas de administración y mantenimiento de imágenes de implementación (DISM) para determinar qué roles están instalados en el equipo.
+- Se deben establecer exclusiones adecuadas para el software que no se incluye con el sistema operativo.
 - Windows Server 2012 R2 no tiene Antivirus de Microsoft Defender como característica instalable. Al incorporar esos servidores a Defender para punto de conexión, instalará Antivirus de Windows Defender y se aplicarán exclusiones predeterminadas para los archivos del sistema operativo. Sin embargo, las exclusiones de los roles de servidor (como se especifica a continuación) no se aplican automáticamente y debe configurar estas exclusiones según corresponda. Para obtener más información, consulte [Incorporación de servidores Windows al servicio de Microsoft Defender para punto de conexión](configure-server-endpoints.md).
 
 En este artículo se proporciona información general sobre las exclusiones de Antivirus de Microsoft Defender en Windows Server 2016 o versiones posteriores.
@@ -55,8 +54,6 @@ En este artículo se proporciona información general sobre las exclusiones de A
 Dado que Antivirus de Microsoft Defender está integrado en Windows Server 2016 y versiones posteriores, las exclusiones de los archivos del sistema operativo y los roles de servidor se producen automáticamente. Sin embargo, puede definir exclusiones personalizadas. También puede optar por no participar en exclusiones automáticas si es necesario.
 
 En este artículo se incluyen las siguientes secciones:
-
-<br/><br/>
 
 |Sección|Descripción|
 |---|---|
@@ -87,8 +84,9 @@ Las secciones siguientes contienen las exclusiones que se entregan con las rutas
 
 En esta sección se enumeran las exclusiones predeterminadas de todos los roles de Windows Server 2016, Windows Server 2019 y Windows Server 2022.
 
-> [!NOTE]
-> Las ubicaciones predeterminadas podrían ser diferentes de las que se enumeran en este artículo.
+> [!IMPORTANT]
+> - Las ubicaciones predeterminadas podrían ser diferentes de las ubicaciones que se describen en este artículo.
+> - Para establecer exclusiones de software que no se incluye como una característica de Windows o rol de servidor, consulte la documentación del fabricante del software.
 
 ##### <a name="windows-tempedb-files"></a>Windows archivos "temp.edb"
 
@@ -171,8 +169,6 @@ En esta sección se enumeran las exclusiones predeterminadas de todos los roles 
 ##### <a name="hyper-v-exclusions"></a>Exclusiones de Hyper-V
 
 En la tabla siguiente se enumeran las exclusiones de tipos de archivo, las exclusiones de carpetas y las exclusiones de procesos que se entregan automáticamente al instalar el rol de Hyper-V.
-
-<br><br/>
 
 |Tipo de exclusión|Detalles|
 |---|---|
@@ -381,14 +377,14 @@ Si es necesario, puede agregar o quitar exclusiones personalizadas. Para ello, c
 - [Configuración y validación de exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!TIP]
-> Si busca información relacionada con antivirus para otras plataformas, consulte:
-> - [Establecer preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
+> Si busca información relacionada con el antivirus para otras plataformas, consulte:
+> - [Establecer las preferencias para Microsoft Defender para punto de conexión en macOS](mac-preferences.md)
 > - [Microsoft Defender para punto de conexión en Mac](microsoft-defender-endpoint-mac.md)
-> - [Configuración de directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Configuración de las directivas de antivirus de macOS para Antivirus de Microsoft Defender para Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [Establecer preferencias para Microsoft Defender para punto de conexión en Linux](linux-preferences.md)
 > - [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-> - [Configuración de características de Defender para punto de conexión en Android](android-configure.md)
-> - [Configuración de Microsoft Defender para punto de conexión en las características de iOS](ios-configure-features.md)
+> - [Configurar Defender para punto de conexión en características de Android](android-configure.md)
+> - [Configurar Microsoft Defender para punto de conexión en las características iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>Vea también
 

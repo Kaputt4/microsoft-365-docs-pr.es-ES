@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Aprenda a configurar y utilizar un conector dataparser del Jabber de Cisco 17a-4 para importar y archivar datos del Cisco Jabber en Microsoft 365.
-ms.openlocfilehash: 54c4bcc8af10ff7a8449cba4a7712fa6f895208e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3e7bcd9a85293d1516da8070fa39e2545d4fbc22
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097852"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319968"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-data"></a>Configuración de un conector para archivar datos de Cisco Jabber
 
@@ -25,7 +25,7 @@ ms.locfileid: "65097852"
 
 Utilice el [Cisco Jabber DataParser](https://www.17a-4.com/jabber-dataparser/) de 17a-4 LLC para importar y archivar los datos del Cisco Jabber a los buzones de usuario en su organización Microsoft 365. DataParser incluye un conector Cisco Jabber que está configurado para capturar elementos de un origen de datos de terceros e importar esos elementos a Microsoft 365. El conector DataParser del Jabber de Cisco convierte los datos del Cisco Jabber a un formato de mensaje de correo electrónico y luego importa esos elementos a los buzones de usuario en Microsoft 365.
 
-Una vez que los datos del Cisco Jabber se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención, y cumplimiento de la comunicación. El uso de un conector Cisco Jabber para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
+Después de que los datos del Cisco Jabber se almacenan en buzones de usuario, puede aplicar Microsoft Purview características tales como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención, y cumplimiento de la comunicación. El uso de un conector Cisco Jabber para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
 ## <a name="overview-of-archiving-cisco-jabber-data"></a>Introducción al archivado de datos de Cisco Jabber
 
@@ -37,7 +37,7 @@ La siguiente información general explica el proceso de uso de un conector de da
 
 2. De forma regular, los elementos del Cisco Jabber son recopilados por el DataParser. DataParser también convierte el contenido de un mensaje en un formato de mensaje de correo electrónico.
 
-3. El conector DataParser del Jabber de Cisco que usted crea en el portal de cumplimiento de Microsoft Purview se conecta a DataParser y transfiere los mensajes a una ubicación segura Azure Storage en la nube de Microsoft.
+3. El conector DataParser del Jabber de Cisco que usted crea en el portal de cumplimiento Microsoft Purview conecta con DataParser y transfiere los mensajes a una ubicación segura Azure Storage en la nube de Microsoft.
 
 4. Una subcarpeta en la carpeta bandeja de entrada denominada **Cisco Jabber DataParser** se crea en los buzones de usuario, y los elementos del Jabber de Cisco se importan a esa carpeta. El conector determina a qué buzón se van a importar elementos mediante el valor de la propiedad *Email* . Cada elemento del Jabber de Cisco contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante.
 
@@ -45,9 +45,9 @@ La siguiente información general explica el proceso de uso de un conector de da
 
 - Cree una cuenta de DataParser para los conectores de Microsoft. Para ello, póngase en contacto con [17a-4 LLC](https://www.17a-4.com/contact/). Debe iniciar sesión en esta cuenta al crear el conector en el paso 1.
 
-- El usuario que crea el conector dataparser del Jabber de Cisco en el paso 1 (y lo completa en el paso 3) debe ser asignado el rol de administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- El usuario que crea el conector dataparser del Jabber de Cisco en el paso 1 (y lo completa en el paso 3) debe ser asignado el rol de administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Este conector de datos 17a-4 está disponible en entornos de GCC en la nube Microsoft 365 us Government. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
+- Este conector de datos 17a-4 está disponible en entornos de GCC en la nube Microsoft 365 us Government. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
 ## <a name="step-1-set-up-a-cisco-jabber-dataparser-connector"></a>Paso 1: Configurar un conector DataParser de Cisco Jabber
 
@@ -79,7 +79,7 @@ Después de crear un conector DataParser de Cisco Jabber, puede ver el estado de
 
 2. Haga clic en la pestaña **Conectores** y después seleccione el conector DataParser del Jabber de Cisco que creó para mostrar la página de control flotante, que contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene datos que se han importado a la nube de Microsoft.
+3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problemas conocidos
 

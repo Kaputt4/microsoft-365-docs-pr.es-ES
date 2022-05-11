@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo administrar casos de exhibición de documentos electrónicos (estándar). Esto incluye el cierre de un caso, la reapertura de un caso cerrado y la eliminación de un caso.
-ms.openlocfilehash: 27dc46fcfe65b6a39c3a217fd72fcc97037ccb99
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f527d206e7112534db557928daf6ab8942c60d1c
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094017"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318324"
 ---
 # <a name="close-reopen-and-delete-a-ediscovery-standard-case"></a>Cerrar, volver a abrir y eliminar un caso de exhibición de documentos electrónicos (estándar)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-En este artículo se describe cómo cerrar, volver a abrir y eliminar casos de exhibición de documentos electrónicos (estándar) de Microsoft Purview en Microsoft 365.
+En este artículo se describe cómo cerrar, volver a abrir y eliminar Microsoft Purview casos de exhibición de documentos electrónicos (estándar) en Microsoft 365.
 
 ## <a name="close-a-case"></a>Cerrar un caso
 
@@ -38,13 +38,13 @@ Cuando se complete el caso legal o la investigación compatible con un caso de e
 
 - Cerrar un caso solo desactiva las retenciones que están asociadas a ese caso. Si otras retenciones se colocan en una ubicación de contenido (como una suspensión por juicio, una directiva de retención o una suspensión de un caso de exhibición de documentos electrónicos (estándar) diferente), esas retenciones se mantendrán.
 
-- El caso sigue aparecen en la página eDiscovery (Estándar) del portal de cumplimiento de Microsoft Purview. Se conservan los detalles, las retenciones, las búsquedas y los miembros de un caso cerrado.
+- El caso sigue aparecen en la página eDiscovery (Estándar) de la portal de cumplimiento Microsoft Purview. Se conservan los detalles, las suspensiones, las búsquedas y los miembros de un caso cerrado.
 
 - Puede editar un caso después de cerrarlo. Por ejemplo, puede agregar o quitar miembros, crear búsquedas y exportar resultados de búsqueda. La principal diferencia entre los casos activos y cerrados es que las retenciones de eDiscovery se desactivan cuando se cierra un caso.
 
 Para cerrar un caso:
   
-1. En el portal de cumplimiento, haga clic en **eDiscoveryCore** >  para mostrar la lista de casos de exhibición de documentos electrónicos (estándar) de la organización.
+1. En el portal de cumplimiento, haga clic en **eDiscoveryeDiscovery** >  **(Estándar)** para mostrar la lista de casos de exhibición de documentos electrónicos (estándar) de su organización.
 
 2. Haga clic en el nombre del caso que desea cerrar.
 
@@ -104,7 +104,7 @@ Para eliminar una suspensión de eDiscovery:
 
 Para eliminar un caso:
 
-1. En el portal de cumplimiento, haga clic en **eDiscoveryCore** >  para mostrar la lista de casos de exhibición de documentos electrónicos (estándar) de la organización.
+1. En el portal de cumplimiento, haga clic en **eDiscoveryeDiscovery** >  **(Estándar)** para mostrar la lista de casos de exhibición de documentos electrónicos (estándar) de su organización.
 
 2. Haga clic en el nombre del caso que desea eliminar.
 

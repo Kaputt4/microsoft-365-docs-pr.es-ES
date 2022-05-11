@@ -19,12 +19,12 @@ description: Los administradores pueden obtener información sobre los tipos de 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 92b7072e3127da71f423648c83fc94c17bed7caa
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: c8b9fb5c9e2b67a656948684838b61b4a9c33a8d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131072"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319558"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Cómo EOP valida la dirección Desde para evitar la suplantación de identidad (phishing)
 
@@ -136,4 +136,4 @@ No puede invalidar los requisitos de direcciones From para el correo electrónic
 
 ## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Otras formas de prevenir y proteger contra los ciberdelincuentes en Microsoft 365
 
-Para obtener más información sobre cómo puede fortalecer su organización contra phishing, spam, infracciones de datos y otras amenazas, consulte [Las 10 principales formas de proteger Microsoft 365 para planes empresariales](../../admin/security-and-compliance/secure-your-business-data.md).
+Para obtener más información sobre cómo puede fortalecer su organización contra phishing, spam, infracciones de datos y otras amenazas, consulte [Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../../admin/security-and-compliance/secure-your-business-data.md).

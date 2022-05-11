@@ -12,20 +12,20 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar Cisco Jabber en MS SQL datos de Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: ef9586c0e860db727bea53651d70777e7c606498
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 8df9c0b0ec7f69a45578ac91d14315730059d864
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099793"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320226"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-ms-sql-data"></a>Configurar un conector para archivar Cisco Jabber en datos de SQL MS
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Use un conector veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos de la plataforma Cisco Jabber a los buzones de usuario de su organización Microsoft 365. Veritas le proporciona un conector [del Jabber de Cisco](https://globanet.com/jabber/) que se configura para capturar los elementos de la SQL Database MS del Jabber, tales como mensajes de chat 1:1 y chats de grupo y luego importar esos elementos a Microsoft 365. El conector recupera los datos de la SQL Database MS del Cisco Jabber, los procesa, y convierte el contenido de la cuenta del Cisco Jabber de un usuario a un formato de mensaje de correo electrónico y luego importa esos elementos al buzón del usuario en Microsoft 365.
+Utilice un conector veritas en el portal de cumplimiento Microsoft Purview para importar y archivar datos de la plataforma cisco jabber a los buzones de usuario en su organización Microsoft 365. Veritas le proporciona un conector [del Jabber de Cisco](https://globanet.com/jabber/) que se configura para capturar los elementos de la SQL Database MS del Jabber, tales como mensajes de chat 1:1 y chats de grupo y luego importar esos elementos a Microsoft 365. El conector recupera los datos de la SQL Database MS del Cisco Jabber, los procesa, y convierte el contenido de la cuenta del Cisco Jabber de un usuario a un formato de mensaje de correo electrónico y luego importa esos elementos al buzón del usuario en Microsoft 365.
 
-Una vez que los datos del Cisco Jabber se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención, y cumplimiento de la comunicación. El uso de un conector Cisco Jabber para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
+Después de que los datos del Cisco Jabber se almacenan en buzones de usuario, puede aplicar Microsoft Purview características tales como suspensión por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención, y cumplimiento de la comunicación. El uso de un conector Cisco Jabber para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
 ## <a name="overview-of-archiving-cisco-jabber-data"></a>Introducción al archivado de datos de Cisco Jabber
 
@@ -47,9 +47,9 @@ La siguiente información general explica el proceso de uso de un conector para 
 
 - Configure una SQL Database MS para recuperar elementos del Jabber antes de crear el conector en el paso 1. Usted especificará las configuraciones de conexión para el MS SQL Database al configurar el conector del Jabber de Cisco en el paso 2. Para obtener más información, consulte la [Guía del usuario de conectores de terceros merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20MS%20SQL%20User%20Guide%20.pdf).
 
-- El usuario que crea el conector del Jabber de Cisco en el paso 1 (y lo completa en el paso 3) debe ser asignado el rol de administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- El usuario que crea el conector del Jabber de Cisco en el paso 1 (y lo completa en el paso 3) debe ser asignado el rol de administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Este conector de datos de Veritas está en versión preliminar pública en entornos de GCC en la nube Microsoft 365 administración pública de EE. UU. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
+- Este conector de datos de Veritas está en versión preliminar pública en entornos de GCC en la nube Microsoft 365 administración pública de EE. UU. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
 ## <a name="step-1-set-up-the-cisco-jabber-on-ms-sql-connector"></a>Paso 1: Configurar el Cisco Jabber en el conector de SQL MS
 
@@ -87,7 +87,7 @@ Después de que usted cree el Jabber de Cisco en el conector del SQL MS, usted p
 
 2. Haga clic en la pestaña **Conectores** y después seleccione el **Cisco Jabber en el conector de SQL MS** para mostrar la página de control flotante. Esta página contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene datos que se han importado a la nube de Microsoft.
+3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problemas conocidos
 

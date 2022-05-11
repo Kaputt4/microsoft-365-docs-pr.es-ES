@@ -1,5 +1,5 @@
 ---
-title: introducción a Microsoft 365 Empresa Premium
+title: Información general sobre Microsoft 365 Empresa Premium
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Aprenda a implementar la ciberseguridad para pequeñas o medianas empresas con Microsoft 365 Empresa Premium. Las funcionalidades y características de ciberseguridad están optimizadas para evitar ciberataques y infracciones de seguridad, y ayudar a proteger los datos, los dispositivos y la información con ciberdefensas de alto nivel.
-ms.openlocfilehash: ac152ca67e7bdf62931b64e008669ca60b0a8031
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2d6ffd452e04c755fd60fcf7cad0d228005c5510
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100085"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320102"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>&mdash; Microsoft 365 Empresa Premium ciberseguridad para pequeñas empresas
 
@@ -52,7 +52,7 @@ En estas primeras misiones, inicie sesión y configure sus muros iniciales de de
 
 ## <a name="cybersecurity-playbook"></a>Cuaderno de estrategias sobre ciberseguridad
 
-La guía de estas misiones ayuda a su negocio a lograr los objetivos descritos en el Cuaderno de estrategias de la  [campaña de ciberseguridad](https://go.microsoft.com/fwlink/p/?linkid=2015598) de la Escuela Kennedy de Harvard. Puede descargar un resumen.
+La guía de estas misiones se basa en la metodología de confianza cero y ayuda a su negocio a lograr los objetivos descritos en el Cuaderno de estrategias de la  [campaña de ciberseguridad](https://go.microsoft.com/fwlink/p/?linkid=2015598) de la Escuela Kennedy de Harvard. Puede descargar un resumen.
 
 Haga clic en la infografía para ver una versión más grande o [descargue una copia del póster del cuaderno de estrategias de ciberseguridad](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf).
 
@@ -85,7 +85,7 @@ Hemos incluido un conjunto de misiones aquí con algunos objetivos que su equipo
 
 ## <a name="cybersecurity-playbook"></a>Cuaderno de estrategias sobre ciberseguridad
 
-La guía de estas misiones ayuda a su negocio a lograr los objetivos descritos en el Cuaderno de estrategias de la  [campaña de ciberseguridad](https://go.microsoft.com/fwlink/p/?linkid=2015598) de la Escuela Kennedy de Harvard. Puede descargar un resumen.
+La guía de estas misiones se basa en la metodología de confianza cero y ayuda a su negocio a lograr los objetivos descritos en el Cuaderno de estrategias de la  [campaña de ciberseguridad](https://go.microsoft.com/fwlink/p/?linkid=2015598) de la Escuela Kennedy de Harvard. Puede descargar un resumen.
 
 Haga clic en la infografía para ver una versión más grande o [descargue una copia del póster del cuaderno de estrategias de ciberseguridad](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf).
 
@@ -114,7 +114,7 @@ Un dispositivo seguro es aquel que supervisa la organización. En esta última m
 
 ## <a name="cybersecurity-playbook"></a>Cuaderno de estrategias sobre ciberseguridad
 
-La guía de estas misiones ayuda a su negocio a lograr los objetivos descritos en el Cuaderno de estrategias de la  [campaña de ciberseguridad](https://go.microsoft.com/fwlink/p/?linkid=2015598) de la Escuela Kennedy de Harvard. Puede descargar un resumen.
+La guía de estas misiones se basa en la metodología de confianza cero y ayuda a su negocio a lograr los objetivos descritos en el Cuaderno de estrategias de la  [campaña de ciberseguridad](https://go.microsoft.com/fwlink/p/?linkid=2015598) de la Escuela Kennedy de Harvard. Puede descargar un resumen.
 
 Haga clic en la infografía para ver una versión más grande o [descargue una copia del póster del cuaderno de estrategias de ciberseguridad](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf).
 

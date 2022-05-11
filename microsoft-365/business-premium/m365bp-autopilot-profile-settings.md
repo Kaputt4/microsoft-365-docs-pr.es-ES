@@ -29,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: Los perfiles de AutoPilot le ayudan a controlar cómo se instala Windows en los dispositivos de usuario. Los perfiles contienen opciones predeterminadas y opcionales, como omitir la instalación de Cortana.
-ms.openlocfilehash: 9cfacb4ca69f8a674a50cfd5946e6a095433aed9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b4528e52c555f17c19f6548cbd9d7cabf4d9cbf5
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090650"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320329"
 ---
 # <a name="about-autopilot-profile-settings"></a>Información sobre la configuración de los perfiles de AutoPilot
 
@@ -62,4 +62,4 @@ Puede usar perfiles de AutoPilot para controlar cómo se instala Windows en los 
 
 ## <a name="see-also"></a>Vea también
 
-[Las 10 mejores formas de proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)
+[Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)

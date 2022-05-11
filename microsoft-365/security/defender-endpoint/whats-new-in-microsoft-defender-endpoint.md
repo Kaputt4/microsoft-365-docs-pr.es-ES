@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 351a403923df8e12d63051e30518b5c254abccb8
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 8a3d8caa02aa04412925b4d0648d166194df0548
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188820"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319207"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -60,6 +60,10 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 - [Novedades de Defender para punto de conexión en iOS](ios-whatsnew.md)
 - [Novedades de Defender para punto de conexión en Linux](linux-whatsnew.md)
 
+## <a name="may-2022"></a>Mayo de 2022
+- [Protección contra alteraciones para macOS (versión preliminar)](tamperprotection-macos.md)<br>La protección contra alteraciones ayuda a evitar la eliminación no autorizada de Microsoft Defender para punto de conexión en macOS.
+
+
 ## <a name="april-2022"></a>Abril de 2022
 - [Incorporación actualizada y paridad de características para Windows Server 2012 R2 y Windows Server 2016)](configure-server-endpoints.md)<br/> El nuevo paquete de solución unificada ya está disponible con carácter general y facilita la incorporación de servidores mediante la eliminación de dependencias y los pasos de instalación. Además, este paquete de solución unificada incluye muchas mejoras de características nuevas.
 - Integración con Tunnel. Microsoft Defender para punto de conexión en iOS ahora se puede integrar con Microsoft Tunnel, una solución de puerta de enlace de VPN para habilitar la seguridad y la conectividad en una sola aplicación. Esta característica solo estaba disponible anteriormente en Android. [Más información](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
@@ -68,7 +72,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 
 - Mejoras del laboratorio de evaluación: ahora puede agregar dispositivos Windows 11 y Linux al laboratorio. 
 
-- Amenazas y administración de vulnerabilidades para Android e iOS ya están disponibles con carácter general. [Más información](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+- Amenazas y administración de vulnerabilidades para Android y iOS ahora está disponible con carácter general. [Más información](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
 ## <a name="december-2021"></a>Diciembre de 2021
 
@@ -125,7 +129,7 @@ Para obtener más información sobre Microsoft Defender para punto de conexión 
 
 - [Microsoft Tunnel integración de VPN](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel funcionalidades de VPN ahora se integra con Microsoft Defender para punto de conexión aplicación para Android. Esta unificación permite a las organizaciones ofrecer una experiencia de usuario final simplificada con una aplicación de seguridad, lo que ofrece tanto la defensa contra amenazas móviles como la capacidad de acceder a los recursos locales desde su dispositivo móvil, mientras que los equipos de seguridad y TI pueden mantener las mismas experiencias de administración con las que están familiarizados.
 
-- [Detección de jailbreak en iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> La funcionalidad de detección de jailbreak en Microsoft Defender para punto de conexión en iOS ya está disponible con carácter general. Esto se suma a la protección contra suplantación de identidad (phishing) que ya existe.  Para obtener más información, consulte [Configuración de la directiva de acceso condicional en función de las señales de riesgo del dispositivo](/microsoft-365/security/defender-endpoint/ios-configure-features).
+- [Detección de jailbreak en iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> La funcionalidad de detección de jailbreak en Microsoft Defender para punto de conexión en iOS ahora está disponible con carácter general. Esto se suma a la protección contra suplantación de identidad (phishing) que ya existe.  Para obtener más información, consulte [Configuración de la directiva de acceso condicional en función de las señales de riesgo del dispositivo](/microsoft-365/security/defender-endpoint/ios-configure-features).
 
 
 ## <a name="march-2021"></a>Marzo de 2021

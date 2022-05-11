@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Configure Windows dispositivos que ejecutan Windows 10 Pro para Microsoft 365 Empresa Premium usuarios, lo que permite controles de administración y seguridad centralizados.
-ms.openlocfilehash: 57db37f73d2b9145f7c4fb9c1ee1005318c629d7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9c8a5eb724a74959983e86dcdcb8f2f8f96b540
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096234"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318588"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configuración de dispositivos Windows para usuarios Microsoft 365 Empresa Premium
 
@@ -56,9 +56,9 @@ Para obtener más información sobre cómo actualizar Windows dispositivos, cons
 - [Actualice Windows Inicio a Windows Pro](https://support.microsoft.com/windows/upgrade-windows-home-to-windows-pro-ef34d520-e73f-3198-c525-d1a218cc2818)
 - [Actualizar a Windows 10 Pro](https://support.microsoft.com/windows/upgrade-to-windows-10-pro-71ecc746-0f81-a4c0-bd4b-0db8559e0796)
   
-Después de actualizar, consulte [Comprobar que el dispositivo está conectado a Azure AD](#verify-the-device-is-connected-to-azure-ad) para comprobar que tiene la actualización o para asegurarse de que la actualización funciona.
+Después de actualizar, consulte [Comprobación de que el dispositivo está conectado a Azure AD](#verify-the-device-is-connected-to-azure-ad) para comprobar que tiene la actualización o para asegurarse de que la actualización ha funcionado.
 
-## <a name="join-windows-devices-to-your-organizations-azure-ad"></a>Unir dispositivos Windows a la Azure AD de la organización
+## <a name="join-windows-devices-to-your-organizations-azure-ad"></a>Unión de dispositivos Windows a Azure AD de la organización
 
 Cuando todos los dispositivos Windows de la empresa ejecutan Windows 10 Pro o Windows 11 Pro, puede unir estos dispositivos a la Azure Active Directory de su organización (Azure AD). 
 
@@ -80,6 +80,6 @@ En la página **Estado de sincronización** , elija **Sincronizar** para obtener
 
 Para configurar los dispositivos móviles, consulte [Configuración de dispositivos móviles para Microsoft 365 Empresa Premium usuarios](set-up-mobile-devices.md), 
 
-Para aumentar la protección, consulte [Las 10 principales formas de proteger Microsoft 365 para planes empresariales](../security-and-compliance/secure-your-business-data.md).
+Para aumentar la protección, consulte [Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../security-and-compliance/secure-your-business-data.md).
   
 

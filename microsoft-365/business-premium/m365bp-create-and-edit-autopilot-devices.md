@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: Obtenga información sobre cómo cargar dispositivos con AutoPilot en Microsoft 365 Empresa Premium. Puede asignar un perfil a un dispositivo o un grupo de dispositivos.
-ms.openlocfilehash: 2ae149744198803e7cd5441421b93147c965f256
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cd5862dab5ff53d52311e7420388cf93b0af63dc
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095233"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317869"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>Crear y editar dispositivos de Autopilot
 
@@ -69,4 +69,4 @@ Los dispositivos deben cumplir estos requisitos:
 
 ## <a name="see-also"></a>Vea también
 
-[10 formas de proteger los planes de Microsoft 365 para empresas](../admin/security-and-compliance/secure-your-business-data.md)
+[Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)

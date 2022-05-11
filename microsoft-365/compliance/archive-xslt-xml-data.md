@@ -12,20 +12,20 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector para importar y archivar datos XSLT/XML desde Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como la suspensión legal, la búsqueda de contenido y las directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: fbc7c170d31c1278b58a63953864ab6b1457db86
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 450294107ce9ef7d138a60e4fcc5de47bce47ef1
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093600"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319404"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>Configuración de un conector para archivar datos XSLT/XML
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Use un conector de Veritas en el portal de cumplimiento de Microsoft Purview para importar y archivar datos desde el origen de la página web a los buzones de usuario de la organización de Microsoft 365. Veritas proporciona un [conector XSLT/XML](https://globanet.com/xslt-xml) que permite el desarrollo rápido de archivos creados mediante transformacións de lenguaje de hoja de estilos extensibles (XSLT) para transformar archivos XML en otros formatos de archivo (como HTML o texto) que se pueden importar a Microsoft 365. El conector convierte el contenido de un elemento del origen XSLT/XML en un formato de mensaje de correo electrónico y, a continuación, importa el elemento convertido a Microsoft 365 buzones.
+Use un conector de Veritas en el portal de cumplimiento Microsoft Purview para importar y archivar datos desde el origen de la página web a los buzones de usuario de la organización de Microsoft 365. Veritas proporciona un [conector XSLT/XML](https://globanet.com/xslt-xml) que permite el desarrollo rápido de archivos creados mediante transformacións de lenguaje de hoja de estilos extensibles (XSLT) para transformar archivos XML en otros formatos de archivo (como HTML o texto) que se pueden importar a Microsoft 365. El conector convierte el contenido de un elemento del origen XSLT/XML en un formato de mensaje de correo electrónico y, a continuación, importa el elemento convertido a Microsoft 365 buzones.
 
-Una vez que los datos XSLT/XML se almacenan en buzones de usuario, puede aplicar características de Microsoft Purview, como la suspensión por juicio, la exhibición de documentos electrónicos y las directivas de retención y las etiquetas de retención. El uso de un conector XSLT/XML para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
+Una vez que los datos XSLT/XML se almacenan en buzones de usuario, puede aplicar Microsoft Purview características como la suspensión por juicio, la exhibición de documentos electrónicos y las directivas de retención y las etiquetas de retención. El uso de un conector XSLT/XML para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y normativas.
 
 ## <a name="overview-of-archiving-xsltxml-data"></a>Introducción al archivado de datos XSLT/XML
 
@@ -45,9 +45,9 @@ En la información general siguiente se explica el proceso de uso de un conector
 
 - Cree una cuenta de Veritas Merge1 para los conectores de Microsoft. Para crear esta cuenta, póngase en contacto con [el servicio de atención al cliente de Veritas](https://www.veritas.com/content/support/). Iniciará sesión en esta cuenta al crear el conector en el paso 1.
 
-- Al usuario que crea el conector XSLT/XML en el paso 1 (y lo completa en el paso 3) se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento de Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- Al usuario que crea el conector XSLT/XML en el paso 1 (y lo completa en el paso 3) se le debe asignar el rol Administrador del conector de datos. Este rol es necesario para agregar conectores en la página **Conectores de datos** del portal de cumplimiento. Este rol se agrega de forma predeterminada a varios grupos de roles. Para obtener una lista de estos grupos de roles, consulte la sección "Roles en los centros de seguridad y cumplimiento" de [Permisos en el Centro de cumplimiento de & seguridad](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Como alternativa, un administrador de su organización puede crear un grupo de roles personalizado, asignar el rol Administrador del conector de datos y, a continuación, agregar los usuarios adecuados como miembros. Para obtener instrucciones, consulte la sección "Crear un grupo de roles personalizado" en [Permisos en el portal de cumplimiento Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- Este conector de datos de Veritas está en versión preliminar pública en entornos de GCC en la nube Microsoft 365 administración pública de EE. UU. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
+- Este conector de datos de Veritas está en versión preliminar pública en entornos de GCC en la nube Microsoft 365 administración pública de EE. UU. Las aplicaciones y servicios de terceros pueden implicar almacenar, transmitir y procesar los datos de clientes de su organización en sistemas de terceros que están fuera de la infraestructura de Microsoft 365 y, por lo tanto, no están cubiertos por los compromisos de protección de datos y Microsoft Purview. Microsoft no hace ninguna representación de que el uso de este producto para conectarse a aplicaciones de terceros implica que esas aplicaciones de terceros son compatibles con FEDRAMP.
 
 ## <a name="step-1-set-up-an-xsltxml-connector"></a>Paso 1: Configurar un conector XSLT/XML
 
@@ -85,7 +85,7 @@ Después de crear el conector XSLT/XML, puede ver el estado del conector en el p
 
 2. Haga clic en la pestaña **Conectores** y, a continuación, seleccione el conector **XSLT/XML** para mostrar la página de control flotante. Esta página contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene datos que se han importado a la nube de Microsoft.
+3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft. Para obtener más información, consulte [Visualización de registros de administración para conectores de datos](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>Problemas conocidos
 

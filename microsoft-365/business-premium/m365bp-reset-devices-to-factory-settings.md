@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: Obtenga información sobre cómo usar Microsoft 365 para empresas para restablecer de fábrica dispositivos Windows 10 que administre y revertirlos a su configuración original.
-ms.openlocfilehash: ef91a761202989afabd0ac2478250d4311eae664
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a43ebd545ca16dc846e02b485a8c087c4cb87bac
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095187"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320261"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Restablecer dispositivos Windows 10 a la configuración de fábrica
 
@@ -52,4 +52,4 @@ El restablecimiento de fábrica revierte un dispositivo a la configuración orig
   
 ## <a name="see-also"></a>Vea también
 
-[10 formas de proteger con planes de Microsoft 365 para empresas](../admin/security-and-compliance/secure-your-business-data.md)
+[Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)

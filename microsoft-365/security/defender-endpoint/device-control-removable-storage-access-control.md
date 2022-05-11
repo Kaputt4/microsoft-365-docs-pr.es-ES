@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 04/11/2022
-ms.openlocfilehash: b176f7a89c46e016f7eb25cdf4cd6b0d6beb3966
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.date: 05/09/2022
+ms.openlocfilehash: a472a2183d642ca8c3231e6ca5129fdf79cad8fd
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130613"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317634"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender para punto de conexión control de dispositivo Storage Access Control extraíble
 
@@ -267,7 +267,7 @@ Microsoft Endpoint Manager centro de administración (<https://endpoint.microsof
 
 5. Establezca la ubicación de una copia del archivo: si desea tener una copia del archivo cuando se produzca el acceso de escritura, debe establecer la ubicación donde el sistema puede guardar la copia.
 
-    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation;**username**;**password**`
+    - OMA-URI: './Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation
 
     - Tipo de datos: String
 

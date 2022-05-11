@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Aprenda a crear un perfil de AutoPilot y aplicarlo a un dispositivo, así como a editar o eliminar un perfil o quitar un perfil de un dispositivo.
-ms.openlocfilehash: a0b90bdeb69f1baefb96a09c8d7f8f38a3fec9e8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 231f3f762e1266b5529f36e792d1b4e4a5f11f03
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100202"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320627"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Crear y editar perfiles de Autopilot
 
@@ -90,4 +90,4 @@ Después de asignar un perfil a un dispositivo, puede actualizarlo, aunque ya le
 
 ## <a name="see-also"></a>Vea también
 
-[10 formas de proteger con planes de Microsoft 365 para empresas](../admin/security-and-compliance/secure-your-business-data.md)
+[Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../admin/security-and-compliance/secure-your-business-data.md)

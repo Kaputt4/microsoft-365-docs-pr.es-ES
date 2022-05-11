@@ -24,17 +24,17 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Obtenga información sobre cómo validar la configuración de protección de aplicaciones Microsoft 365 Empresa Premium en los dispositivos Android o iOS.
-ms.openlocfilehash: 98b3110516d074fe945e1bb68652b40e93fa7fb7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7e1355f71e9757e1055999e1951b4f093b0d21a0
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090693"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317924"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Validación de la configuración de protección de aplicaciones en dispositivos Android o iOS
 
 > [!NOTE]
-> Microsoft Defender para Empresas se está implementando para Microsoft 365 Empresa Premium clientes, a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para los dispositivos. [Más información sobre Defender para empresas](../../security/defender-business/mdb-overview.md)
+> Microsoft Defender para Empresas se implementará para los clientes de Microsoft 365 Empresa Premium a partir del 1 de marzo de 2022. Esta oferta proporciona características de seguridad adicionales para los dispositivos. [Más información sobre Defender para empresas](../../security/defender-business/mdb-overview.md)
 
 Siga las instrucciones de las secciones siguientes para validar la configuración de protección de aplicaciones en dispositivos Android o iOS.
   
@@ -42,7 +42,7 @@ Siga las instrucciones de las secciones siguientes para validar la configuració
   
 ### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>Compruebe que la configuración de protección de aplicaciones funciona en dispositivos de usuario.
 
-Después de [establecer la configuración de protección de aplicaciones para dispositivos Android o iOS](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) para proteger las aplicaciones, puede seguir estos pasos para validar que la configuración elegida funciona. 
+Después de [establecer la configuración de protección de aplicaciones para Android o iOS dispositivos](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) para proteger las aplicaciones, puede seguir estos pasos para validar que la configuración elegida funciona. 
   
 En primer lugar, asegúrese de que la directiva se aplica a la aplicación en la que va a validarla.
   
@@ -208,4 +208,4 @@ En el panel **Editar directiva**, elija **Editar** junto a **Protección ante la
 
 ## <a name="see-also"></a>Vea también
 
-[10 formas principales de proteger Microsoft 365 para planes empresariales](../security-and-compliance/secure-your-business-data.md)
+[Procedimientos recomendados para proteger Microsoft 365 para planes empresariales](../security-and-compliance/secure-your-business-data.md)

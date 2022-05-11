@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Busque contenido que pueda ser relevante para un caso de exhibición de documentos electrónicos (estándar).
-ms.openlocfilehash: 372f8beba2567c24e8af75acf4d11e3fe6220f2c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d0c565e46860329c4dc6dac741fb0312ddccfd2c
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090415"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318932"
 ---
 # <a name="search-for-content-in-a-ediscovery-standard-case"></a>Buscar contenido en un caso de exhibición de documentos electrónicos (estándar)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Después de crear un caso de exhibición de documentos electrónicos (Estándar) de Microsoft Purview y de que las personas de interés en el caso se colocan en espera, puede crear y ejecutar una o varias búsquedas de contenido relevante para el caso. Las búsquedas asociadas a un caso de exhibición de documentos electrónicos (estándar) no aparecen en la página **Búsqueda de contenido** del portal de cumplimiento de Microsoft Purview. Estas búsquedas se muestran en la página **Búsquedas** del caso principal de eDiscover al que están asociadas las búsquedas. Esto también significa que solo los miembros del caso pueden acceder a las búsquedas asociadas a un caso.
+Después de crear un caso Microsoft Purview eDiscovery (Estándar) y de que las personas de interés en el caso estén en espera, puede crear y ejecutar una o varias búsquedas de contenido relevante para el caso. Las búsquedas asociadas a un caso de exhibición de documentos electrónicos (estándar) no aparecen en la página **Búsqueda de contenido** del portal de cumplimiento Microsoft Purview. Estas búsquedas aparecen en la página **Búsquedas** del caso de exhibición de documentos electrónicos (estándar) al que están asociadas las búsquedas. Esto también significa que solo los miembros del caso pueden acceder a las búsquedas asociadas a un caso.
 
 Para crear una búsqueda de eDiscovery (estándar):
   

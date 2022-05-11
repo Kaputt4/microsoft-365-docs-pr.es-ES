@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: ee73b5a83a669653087bf787061e8ad59b23ed18
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2c218cd2b0f04201f46155a72a916cc7676aaddb
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095220"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320826"
 ---
 # <a name="device-groups-in-microsoft-365-business-premium"></a>Grupos de dispositivos en Microsoft 365 Empresa Premium
 
@@ -70,6 +70,8 @@ Puede crear un nuevo grupo de dispositivos mientras está creando o editando una
 9. En la página **Opciones de configuración**, revise y edite la configuración según sea necesario y, a continuación, elija **Siguiente**. Para obtener más información acerca de esta configuración, consulte [Comprender las opciones de configuración de última generación en Microsoft Defender para Empresas](../security/defender-business/mdb-next-gen-configuration-settings.md).
 
 10. En el paso **Revisar la directiva**, revise toda la configuración, realice las modificaciones necesarias y, a continuación, elija **Crear directiva** o **Actualizar directiva**.
+
+## <a name="next-steps"></a>Siguientes pasos
 
 Ahora que ha completado las misiones principales, configure sus [equipos de respuesta](m365bp-security-incident-management.md) y [administre su entorno](m365bp-maintain-environment.md).
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,20 +14,20 @@ ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo usar la característica de estadísticas de búsqueda para mostrar estadísticas de búsquedas de contenido y búsquedas asociadas a un caso de exhibición de documentos electrónicos (estándar) en el portal de cumplimiento de Microsoft Purview.
+description: Obtenga información sobre cómo usar la característica de estadísticas de búsqueda para mostrar estadísticas de búsquedas de contenido y búsquedas asociadas a un caso de exhibición de documentos electrónicos (estándar) en el portal de cumplimiento Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d96ad67a638ab3917743e64462debd9f2c94ef4d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cc8e249f62b0dbfbeaa6bcf32e7873ca2ff5b36d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092213"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318080"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>Ver estadísticas de los resultados de búsqueda de eDiscovery
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Después de crear y ejecutar una búsqueda de contenido o una búsqueda asociada a un caso de exhibición de documentos electrónicos (estándar) de Microsoft Purview, puede ver estadísticas sobre los resultados de búsqueda estimados. Esto incluye un resumen de los resultados de la búsqueda (similar al resumen de los resultados de búsqueda estimados que se muestran en la página de control flotante de búsqueda), las estadísticas de consulta, como el número de ubicaciones de contenido con elementos que coinciden con la consulta de búsqueda y la identidad de las ubicaciones de contenido que tienen los elementos más coincidentes.
+Después de crear y ejecutar una búsqueda de contenido o una búsqueda asociada a un caso Microsoft Purview eDiscovery (estándar), puede ver estadísticas sobre los resultados de búsqueda estimados. Esto incluye un resumen de los resultados de la búsqueda (similar al resumen de los resultados de búsqueda estimados que se muestran en la página de control flotante de búsqueda), las estadísticas de consulta, como el número de ubicaciones de contenido con elementos que coinciden con la consulta de búsqueda y la identidad de las ubicaciones de contenido que tienen los elementos más coincidentes.
   
 Además, puede usar la lista de palabras clave para configurar una búsqueda para devolver estadísticas de cada palabra clave en una consulta de búsqueda. Esto le permite comparar el número de resultados devueltos por cada palabra clave en una consulta.
   
@@ -37,13 +37,13 @@ También puede descargar estadísticas de búsqueda en un archivo CSV. Así, una
 
 Para mostrar estadísticas de una búsqueda de contenido o una búsqueda asociada a un caso de exhibición de documentos electrónicos (estándar).
   
-1. En el portal de cumplimiento de Microsoft Purview, haga clic en **Mostrar todo** y, a continuación, realice una de las siguientes acciones:
+1. En el portal de cumplimiento Microsoft Purview, haga clic en **Mostrar todo** y, a continuación, realice una de las siguientes acciones:
 
    - Haga clic en **Búsqueda de contenido** y, a continuación, seleccione una búsqueda para mostrar la página de control flotante.
 
-     OR
+     O
 
-   - Haga clic en **eDiscoveryCore** > , seleccione un caso y, a continuación, seleccione una búsqueda en la pestaña **Búsquedas** para mostrar la página de control flotante.
+   - Haga clic en **eDiscoveryeDiscovery** >  **(Estándar),** seleccione un caso y, a continuación, seleccione una búsqueda en la pestaña **Búsquedas** para mostrar la página de control flotante.
 
 2. En la página flotante de la búsqueda seleccionada, haga clic en la pestaña **Estadísticas de búsqueda** .
   

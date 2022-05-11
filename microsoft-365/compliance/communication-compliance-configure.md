@@ -22,12 +22,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b5752d0ebeb0095defe47f52529392e4b9c01212
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: c4e28c91cc7e7fe441d000553e9099ad39420991
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973737"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317082"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -71,12 +71,12 @@ La actividad que implica [tipos de información confidencial](/microsoft-365/com
 > [!IMPORTANT]
 > Después de configurar los grupos de roles, los permisos del grupo de roles pueden tardar hasta 30 minutos en aplicarse a los usuarios asignados en toda la organización.
 
-Hay seis grupos de roles que se usan para configurar los permisos iniciales para administrar las características de cumplimiento de comunicaciones. Para que **el cumplimiento de comunicaciones** esté disponible como una opción de menú en el portal de cumplimiento de Microsoft Purview y para continuar con estos pasos de configuración, debe estar asignado a uno de los siguientes roles o grupos de roles:
+Hay seis grupos de roles que se usan para configurar los permisos iniciales para administrar las características de cumplimiento de comunicaciones. Para que **el cumplimiento de la comunicación** esté disponible como una opción de menú en portal de cumplimiento Microsoft Purview y para continuar con estos pasos de configuración, debe estar asignado a uno de los siguientes roles o grupos de roles:
 
 - Azure Active Directory rol [*de administrador global*](/azure/active-directory/roles/permissions-reference#global-administrator)
 - rol [*de administrador de cumplimiento de*](/azure/active-directory/roles/permissions-reference#compliance-administrator) Azure Active Directory
-- Grupo de roles [*de administración de organización*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) del portal de cumplimiento de Microsoft Purview
-- Grupo de roles [*de administrador de cumplimiento*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) del portal de cumplimiento de Microsoft Purview
+- portal de cumplimiento Microsoft Purview grupo [*de roles De administración de la organización*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+- portal de cumplimiento Microsoft Purview grupo de roles [*administrador de cumplimiento*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
 - *Grupo de roles de cumplimiento de comunicaciones*
 - *Grupo de roles de administrador de cumplimiento de comunicaciones*
 
@@ -84,8 +84,8 @@ Los miembros de los siguientes roles tienen los mismos permisos de solución inc
 
 - *administrador global* de Azure Active Directory
 - *Administrador de cumplimiento de* Azure Active Directory
-- Portal de cumplimiento de Microsoft Purview *Administración de la organización*
-- *Administrador de cumplimiento del portal de cumplimiento de* Microsoft Purview
+- administración de la *organización* portal de cumplimiento Microsoft Purview
+- *Administrador de cumplimiento de* portal de cumplimiento Microsoft Purview
 
 > [!IMPORTANT]
 > Asegúrese de que siempre tiene al menos un usuario en los grupos de roles De cumplimiento de *comunicaciones* o *Administrador de cumplimiento de comunicaciones* (según la opción que elija) para que la configuración de cumplimiento de comunicaciones no entre en un escenario de "administrador cero" si determinados usuarios abandonan la organización.
@@ -122,7 +122,7 @@ Elija entre estas opciones de grupo de roles de solución al configurar y admini
 
 Use esta opción para asignar usuarios a grupos de roles específicos para segmentar el acceso y las responsabilidades de cumplimiento de la comunicación entre los distintos usuarios de la organización.
 
-1. Inicie sesión en el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de la organización Microsoft 365 y, a continuación, vaya a **Permisos**</a>.
+1. Inicie sesión en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en la organización Microsoft 365 y, a continuación, vaya a **Permisos**</a>.
 
 2. Seleccione el vínculo para ver y administrar roles en Office 365.
 
@@ -201,7 +201,7 @@ Para obtener más información sobre cómo configurar grupos, consulte:
 
 ## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>Paso 4 (opcional): compruebe que el inquilino de Yammer está en modo nativo
 
-En modo nativo, todos los usuarios Yammer están en Azure Active Directory (Azure AD), todos los grupos son grupos Office 365 y todos los archivos se almacenan en SharePoint Online. El inquilino de Yammer debe estar en modo nativo para que las directivas de cumplimiento de comunicaciones examinen e identifiquen conversaciones de riesgo en mensajes privados y conversaciones de la comunidad en Yammer.
+En el modo nativo, todos los usuarios Yammer están en Azure Active Directory (Azure AD), todos los grupos son grupos Office 365 y todos los archivos se almacenan en SharePoint Online. El inquilino de Yammer debe estar en modo nativo para que las directivas de cumplimiento de comunicaciones examinen e identifiquen conversaciones de riesgo en mensajes privados y conversaciones de la comunidad en Yammer.
 
 Para obtener más información sobre cómo configurar Yammer en modo nativo, consulte:
 
@@ -216,9 +216,9 @@ Para obtener más información sobre cómo configurar Yammer en modo nativo, con
 >[!TIP]  
 >¿Desea ver un tutorial detallado sobre cómo configurar una nueva directiva de cumplimiento de comunicaciones y corregir una alerta? Consulte [este vídeo de 15 minutos](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) para ver una demostración de cómo las directivas de cumplimiento de comunicaciones pueden ayudarle a detectar mensajes inadecuados, investigar posibles infracciones y corregir problemas de cumplimiento.
 
-1. Inicie sesión en el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de la organización de Microsoft 365.
+1. Inicie sesión en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de la organización Microsoft 365.
 
-2. En el portal de cumplimiento de Microsoft Purview, seleccione **Cumplimiento de comunicaciones**.
+2. En el portal de cumplimiento Microsoft Purview, seleccione **Cumplimiento de la comunicación**.
 
 3. Seleccione la pestaña **Directivas**.
 
@@ -288,9 +288,9 @@ Si desea tener la opción de responder a una alerta de directiva mediante el env
 
 También puede optar por habilitar la anonimización de los nombres de usuario mostrados al investigar las coincidencias de directivas y tomar medidas en los mensajes.
 
-1. Inicie sesión en el [portal de cumplimiento de Microsoft Purview](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de la organización de Microsoft 365.
+1. Inicie sesión en el [portal de cumplimiento Microsoft Purview](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador de la organización Microsoft 365.
 
-2. En el portal de cumplimiento de Microsoft Purview, vaya a **Cumplimiento de comunicaciones**.
+2. En el portal de cumplimiento Microsoft Purview, vaya a **Cumplimiento de comunicaciones**.
 
 3. Para configurar la anonimización de los nombres de usuario, seleccione la pestaña **Privacidad** .
 
@@ -312,7 +312,7 @@ También puede optar por habilitar la anonimización de los nombres de usuario m
 
 ## <a name="step-8-optional-test-your-communication-compliance-policy"></a>Paso 8 (opcional): Prueba de la directiva de cumplimiento de comunicaciones
 
-Después de crear una directiva de cumplimiento de comunicaciones, es recomendable probarla para asegurarse de que la directiva aplica correctamente las condiciones definidas. También puede probar [las directivas de prevención de pérdida de datos (DLP) de Microsoft Purview si las directivas](create-test-tune-dlp-policy.md) de cumplimiento de comunicaciones incluyen tipos de información confidencial. Asegúrese de dar tiempo a las directivas para que se activen para que se capturen las comunicaciones que desea probar.
+Después de crear una directiva de cumplimiento de comunicaciones, es recomendable probarla para asegurarse de que la directiva aplica correctamente las condiciones definidas. También puede probar las [directivas de Prevención de pérdida de datos de Microsoft Purview (DLP)](create-test-tune-dlp-policy.md) si las directivas de cumplimiento de comunicaciones incluyen tipos de información confidencial. Asegúrese de dar tiempo a las directivas para que se activen para que se capturen las comunicaciones que desea probar.
 
 Siga estos pasos para probar la directiva de cumplimiento de comunicaciones:
 
@@ -321,7 +321,7 @@ Siga estos pasos para probar la directiva de cumplimiento de comunicaciones:
 2. Envíe un correo electrónico, Microsoft Teams chat o Yammer mensaje que cumpla los criterios que ha definido en la directiva de cumplimiento de comunicaciones. Esta prueba puede ser una palabra clave, un tamaño de datos adjuntos, un dominio, etc. Asegúrese de determinar si la configuración condicional configurada en la directiva es demasiado restrictiva o demasiado indulgente.
 
     > [!NOTE]
-    > Los mensajes de correo electrónico pueden tardar hasta 24 horas en procesarse completamente en una directiva. Las comunicaciones en Microsoft Teams, Yammer y plataformas de terceros pueden tardar hasta 48 horas en procesarse completamente en una directiva.
+    > Los mensajes de correo electrónico pueden tardar aproximadamente 24 horas en procesarse completamente en una directiva. Las comunicaciones en Microsoft Teams, Yammer y plataformas de terceros pueden tardar aproximadamente 48 horas en procesarse completamente en una directiva.
 
 3. Inicie sesión en Microsoft 365 como revisor designado en la directiva de cumplimiento de comunicaciones. Vaya a **Cumplimiento de** >  **comunicacionesAlerts** para ver las alertas de las directivas.
 

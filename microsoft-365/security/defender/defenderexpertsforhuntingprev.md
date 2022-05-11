@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4c4b4e1310d56969b52de11ba51dd0f5f5ea62f9
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: be44a55774d1b201d2f1d99fe78994905d671e80
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302375"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320396"
 ---
 # <a name="microsoft-defender-experts-for-hunting-preview"></a>Microsoft Defender Experts for Hunting preview
 
